@@ -1,5 +1,6 @@
 // Time Complexity: O(n)
 // Space Complexity: O(1)
+// One-Pass Algorithm
 class Solution {
     public:
         void sortColors(int A[], int n) {
