@@ -1,5 +1,5 @@
 // Time Complexity: O(m+n) (Akra-Bazzi theorem)
-// Time Complexity: O(log(mn))
+// Space Complexity: O(log(mn))
 
 class Solution {
     public:
