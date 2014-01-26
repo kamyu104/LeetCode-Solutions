@@ -1,4 +1,4 @@
-// Time Complexity: O(m+n)
+// Time Complexity: O(m+n) (Akra-Bazzi theorem)
 // Time Complexity: O(log(mn))
 
 class Solution {
