@@ -32,6 +32,7 @@ class Solution {
                 return slow->next;
 
             pre->next = slow->next;
+            delete slow;
 
             return head;
         }
