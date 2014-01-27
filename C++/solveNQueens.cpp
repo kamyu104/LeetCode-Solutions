@@ -3,10 +3,22 @@
 
 class Solution {
     public:
+        void addAnswer(int n) {
+            vector<string> v;
+
+            for(int i = 0; i < n; i++) {
+                string s(n, '.');
+                s[chess[i]] = 'Q';
+                v.push_back(s);
+            }
+
+            ans.push_back(v);
+        }
+
         void dfs(int row) {
             const int N = chess.size();
             if(row == N) {
-                ans++;
+                addAnswer(N);
                 return;
             }
 
@@ -20,8 +32,7 @@ class Solution {
             }
         }
 
-        int totalNQueens(int n) {
-            ans = 0;
+        vector<vector<string> > solveNQueens(int n) {
             cols = vector<int>(n, 0);
             main_diag = vector<int>(2 * n, 0);
             anti_diag = vector<int>(2 * n, 0);
@@ -33,7 +44,7 @@ class Solution {
         }
 
     private:
-        int ans;
+        vector<vector<string> > ans;
         vector<int> cols;
         vector<int> main_diag;
         vector<int> anti_diag;
