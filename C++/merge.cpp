@@ -1,4 +1,4 @@
-// Time Complexity: O(n)
+// Time Complexity: O(n^2)
 // Space Complexity: O(1)
 
 /**
@@ -12,6 +12,14 @@
  */
 class Solution {
     public:
+        vector<Interval> merge(vector<Interval> &intervals) {
+            vector<Interval> ans;
+            for(auto i : intervals) {
+                ans = insert(ans, i);
+            }
+            return ans;
+        }
+    private:
         vector<Interval> insert(vector<Interval> &intervals, Interval newInterval) {
             vector<Interval> ans;
             auto n = intervals.size();
