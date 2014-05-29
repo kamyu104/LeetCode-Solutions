@@ -5,4 +5,4 @@ class Solution:
 		return ' '.join(reversed(s.split()))
 
 if __name__ == '__main__':
-	print Solution().reverseWords('hello world')
+	print (Solution().reverseWords('hello world'))
