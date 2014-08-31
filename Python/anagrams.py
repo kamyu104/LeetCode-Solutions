@@ -12,7 +12,7 @@ class Solution:
         for s in strs:
             sorted_str = ("").join(sorted(s))
             if sorted_str in anagrams_map:
-                anagrams_map[sorted_str].append(sorted_str)
+                anagrams_map[sorted_str].append(s)
             else:
                 anagrams_map[sorted_str] = [s]
         for anagram in anagrams_map.values():
