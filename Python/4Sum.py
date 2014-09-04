@@ -1,4 +1,4 @@
-# Time: O(n^2)
+# Time:  O(n^2)
 # Space: O(n^2)
 #
 # Given an array S of n integers, 
@@ -14,6 +14,7 @@
 #    (-1,  0, 0, 1)
 #    (-2, -1, 1, 2)
 #    (-2,  0, 0, 2)
+#
 
 class Solution:
     # @return a list of lists of length 4, [[val1,val2,val3,val4]]

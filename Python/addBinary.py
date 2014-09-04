@@ -1,4 +1,4 @@
-# Time: O(n)
+# Time:  O(n)
 # Space: O(1)
 #
 # Given two binary strings, return their sum (also a binary string).
@@ -7,6 +7,7 @@
 # a = "11"
 # b = "1"
 # Return "100".
+#
 
 class Solution:
     # @param a, a string

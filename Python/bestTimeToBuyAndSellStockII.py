@@ -1,4 +1,4 @@
-# Time: O(n)
+# Time:  O(n)
 # Space: O(1)
 #
 # Say you have an array for which the ith element is 
@@ -9,6 +9,7 @@
 # (ie, buy one and sell one share of the stock multiple times). 
 # However, you may not engage in multiple transactions at the same time 
 # (ie, you must sell the stock before you buy again).
+#
 
 class Solution:
     # @param prices, a list of integer

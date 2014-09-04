@@ -1,4 +1,4 @@
-# Time: O(n^2)
+# Time:  O(n^2)
 # Space: O(1)
 #
 # Given an array S of n integers,
@@ -13,6 +13,7 @@
 #    A solution set is:
 #    (-1, 0, 1)
 #    (-1, -1, 2)
+#
 
 class Solution:
     # @return a list of lists of length 3, [[val1,val2,val3]]

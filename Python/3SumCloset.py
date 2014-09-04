@@ -1,4 +1,4 @@
-# Time: O(n^2)
+# Time:  O(n^2)
 # Space: O(1)
 #
 # Given an array S of n integers, 
@@ -9,6 +9,7 @@
 # For example, given array S = {-1 2 1 -4}, and target = 1.
 #
 # The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
+#
 
 class Solution:
     # @return an integer

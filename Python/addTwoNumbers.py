@@ -1,4 +1,4 @@
-# Time: O(n)
+# Time:  O(n)
 # Space: O(1)
 #
 # You are given two linked lists representing two non-negative numbers. 

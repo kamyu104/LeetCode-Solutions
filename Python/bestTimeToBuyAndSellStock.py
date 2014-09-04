@@ -1,4 +1,4 @@
-# Time: O(n)
+# Time:  O(n)
 # Space: O(1)
 #
 # Say you have an array for which the ith element 
@@ -7,6 +7,7 @@
 # If you were only permitted to complete at most one transaction 
 # (ie, buy one and sell one share of the stock), 
 # design an algorithm to find the maximum profit.
+#
 
 class Solution:
     # @param prices, a list of integer
