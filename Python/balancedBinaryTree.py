@@ -1,3 +1,6 @@
+# Time:  O(n)
+# Space: O(logn)
+#
 # Given a binary tree, determine if it is height-balanced.
 #
 # For this problem, a height-balanced binary tree is defined as a binary tree 
