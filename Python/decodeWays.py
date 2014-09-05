@@ -31,7 +31,6 @@ class Solution:
             prev, prev_prev = current, prev
         return prev
             
-
 if __name__ == "__main__":
     for i in ["0", "10", "10", "103", "1032", "10323"]:
         print Solution().numDecodings(i)
