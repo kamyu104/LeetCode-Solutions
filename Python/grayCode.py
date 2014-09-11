@@ -28,6 +28,8 @@ class Solution:
                 result.append(1 << i | n)
         return result
 
+# proof of closed form formula could be found here:
+# http://math.stackexchange.com/questions/425894/proof-of-closed-form-formula-to-convert-a-binary-number-to-its-gray-code
 class Solution2:
     # @return a list of integers
     def grayCode(self, n):
