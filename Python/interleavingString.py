@@ -65,8 +65,8 @@ class Solution3:
         return self.isInterleaveRecu(s1, s2, s3, 0, 0, 0)
     
     def isInterleaveRecu(self, s1, s2, s3, a, b, c):
-        if repr([a, b, c]) in self.match.keys():
-            return self.match[repr([a, b, c])]
+        if repr([a, b]) in self.match.keys():
+            return self.match[repr([a, b])]
         
         if c == len(s3):
             return True
@@ -77,7 +77,7 @@ class Solution3:
         if b < len(s2) and s2[b] == s3[c]:
             result = result or self.isInterleaveRecu(s1, s2, s3, a, b + 1, c + 1)
             
-        self.match[repr([a, b, c])] = result 
+        self.match[repr([a, b])] = result 
         
         return result
 
