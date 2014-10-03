@@ -52,11 +52,13 @@ class Solution2:
         
     def partitionRecur(self, result, cur, s, i):
         if i == len(s):
-            result.append(cur)
+            result.append(list(cur))
         else:
-            for j in range(i, len(s)):
+            for j in xrange(i, len(s)):
                 if self.isPalindrome(s[i: j + 1]):
-                    self.partitionRecur(result, cur + [s[i: j + 1]], s, j + 1)
+                    cur.append(s[i: j + 1])
+                    self.partitionRecur(result, cur, s, j + 1)
+                    cur.pop()
                 
     def isPalindrome(self, s):
         for i in range(len(s) / 2):
