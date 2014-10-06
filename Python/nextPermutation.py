@@ -37,7 +37,6 @@ if __name__ == "__main__":
     num = Solution().nextPermutation(num)
     print num
     num = Solution().nextPermutation(num)
-    a = "01234"
     print num
     num = Solution().nextPermutation(num)
     print num
