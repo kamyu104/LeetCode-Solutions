@@ -21,7 +21,7 @@ class InputType:
     DOT        = 4
     EXPONENT   = 5
 
-# regular expression: \s*[\+\-]?(([0-9]+(\.[0-9]*)?)|\.[0-9]+)([eE][+-]?[0-9]+)?\s*
+# regular expression: "^\s*[\+\-]?((\d+(\.\d*)?)|\.\d+)([eE][+-]?\d+)?\s*$"
 # automata: http://images.cnitblog.com/i/627993/201405/012016243309923.png
 class Solution:
     # @param s, a string
@@ -57,9 +57,15 @@ class Solution:
                 return False;
         
         return state == 1 or state == 4 or state == 7 or state == 8
+
+class Solution2:
+    # @param s, a string
+    # @return a boolean
+    def isNumber(self, s):
+        import re
+        return bool(re.match("^\s*[\+\-]?((\d+(\.\d*)?)|\.\d+)([eE][+-]?\d+)?\s*$", s))
     
 if __name__ == "__main__":
-    print Solution().isNumber("0")
     print Solution().isNumber(" 0.1 ")
     print Solution().isNumber("abc")
     print Solution().isNumber("1 a")
