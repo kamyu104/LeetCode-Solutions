@@ -16,19 +16,17 @@ class Solution:
     # @param dict, a set of string
     # @return a boolean
     def wordBreak(self, s, dict):
-        possible = []
-        for i in xrange(len(s)):
-            if s[:i + 1] in dict:
-                possible.append(True)
-            else:
-                found = False
-                for j in xrange(i):
-                    if possible[j] == True and s[j + 1: i + 1] in dict:
-                        found = True
-                        break
-                possible.append(found)
+        n = len(s)
+        possible = [False for _ in xrange(n)]
+        for i in xrange(n):
+            if s[:i+1] in dict:
+                possible[i] = True
+            for j in xrange(i):
+                if possible[j] and s[j+1:i+1] in dict:
+                    possible[i] = True
+                    break
                 
-        return possible[len(s) - 1]
-
+        return possible[n-1]
+    
 if __name__ == "__main__":
     print Solution().wordBreak("leetcode", ["leet", "code"])
