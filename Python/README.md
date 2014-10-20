@@ -2,12 +2,9 @@ LeetCode
 ======== 
 
 Up to date, there are total 153 problems on [LeetCode Online Judge](https://oj.leetcode.com/).
-
 The number of problems is increasing recently.
-
-I'll keep updating for better solutions.
-
 Here is the classification and summary of all 153 problems.
+I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
 ##Array
@@ -27,3 +24,5 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [3 Sum Closest - Python]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum-closest.py
 [4 Sum]: https://oj.leetcode.com/problems/4sum/
 [4 Sum - Python]:https://github.com/kamyu104/LeetCode/blob/master/Python/4Sum.py
+
+##Under Construction ...
