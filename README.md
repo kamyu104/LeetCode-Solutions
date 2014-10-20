@@ -11,9 +11,9 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-[3 Sum]         | [3sum.py]       | O ( n ^ 2 )     | O ( 1 )         | Medium         |
-[3 Sum Closest] | [3sum-closest.py]| O ( n ^ 2 )| O ( 1 )     | Medium         |
-[4 Sum]         |[4sum.py]        | O ( n ^ 2 )     | O ( 1 )         | Medium         |
+[3 Sum]         | [3sum.py]       | _O(n^2)_        | _O(1)_          | Medium         |
+[3 Sum Closest] | [3sum-closest.py]| _O(n^2)_       | _O(1)_          | Medium         |
+[4 Sum]         |[4sum.py]        | _O(n^2)_        | _O(n^2)_         | Medium         |
 
 [3 Sum]: https://oj.leetcode.com/problems/3sum/
 [3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum.py
