@@ -9,7 +9,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 --- 
 ##Array
 
-Problem         |  C++            | Java            | Python         |  Time           | Space           | Difficulty     | Notes
+Problem         |  C++            | Java            | Python         |  Time Complexity| Space Complexity| Difficulty     | Notes
 --------------- | --------------- |---------------- |--------------- | --------------- | --------------- | -------------- | -----
 [3 Sum]         |                 |                 | [3 Sum - Python]| O ( n ^ 2 )    | O ( 1 )         | Medium         |
 [3 Sum Closest] |                 |                 | [3 Sum Closest - Python]| O ( n ^ 2 )| O ( 1 )     | Medium         |
