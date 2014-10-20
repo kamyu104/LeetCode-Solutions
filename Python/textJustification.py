@@ -1,5 +1,5 @@
 # Time:  O(n)
-# SpacE: O(1)
+# Space: O(1)
 #
 # Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.
 # 
