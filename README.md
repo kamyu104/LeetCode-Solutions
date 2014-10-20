@@ -9,14 +9,11 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 --- 
 ##Array
 
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[3 Sum]         | [3 Sum - Python]| O ( n ^ 2 )     | O ( 1 )         | Medium         |
-[3 Sum Closest] | [3 Sum Closest - Python]  | O ( n ^ 2 )      | O ( 1 )          | Medium     |
-[4 Sum]         | [4 Sum - Python]| O ( n ^ 2 )     | O ( 1 )          | Medium     |
-
-
-
+Problem         |  C++            | Java            | Python         |  Time           | Space           | Difficulty     | Notes
+--------------- | --------------- |---------------- |--------------- | --------------- | --------------- | -------------- | -----
+[3 Sum]         |                 |                 | [3 Sum - Python]| O ( n ^ 2 )    | O ( 1 )         | Medium         |
+[3 Sum Closest] |                 |                 | [3 Sum Closest - Python]| O ( n ^ 2 )| O ( 1 )     | Medium         |
+[4 Sum]         |                 |                 |[4 Sum - Python]| O ( n ^ 2 )     | O ( 1 )         | Medium         |
 
 [3 Sum]: https://oj.leetcode.com/problems/3sum/
 [3 Sum - Python]:https://github.com/kamyu104/LeetCode/blob/master/Python/3Sum.py
