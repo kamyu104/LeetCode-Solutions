@@ -14,7 +14,7 @@
 class Solution:
     # @return an integer
     def threeSumClosest(self, nums, target):
-        nums, result, min_diff, i = sorted(nums), 2147483647, 2147483647, 0
+        nums, result, min_diff, i = sorted(nums), float("inf"), float("inf"), 0
         while i < len(nums) - 2:
             j, k = i + 1, len(nums) - 1
             while j < k:
