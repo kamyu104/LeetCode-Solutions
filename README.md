@@ -9,17 +9,17 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 --- 
 ##Array
 
-Problem         |  C++            | Java            | Python         |  Time Complexity| Space Complexity| Difficulty     | Notes
---------------- | --------------- |---------------- |--------------- | --------------- | --------------- | -------------- | -----
-[3 Sum]         |                 |                 | [3 Sum - Python]| O ( n ^ 2 )    | O ( 1 )         | Medium         |
-[3 Sum Closest] |                 |                 | [3 Sum Closest - Python]| O ( n ^ 2 )| O ( 1 )     | Medium         |
-[4 Sum]         |                 |                 |[4 Sum - Python]| O ( n ^ 2 )     | O ( 1 )         | Medium         |
+Problem         |  Solution       |  Time Complexity| Space Complexity| Difficulty     | Notes
+--------------- | --------------- | --------------- | --------------- | -------------- | -----
+[3 Sum]         | [3sum.py]       | O ( n ^ 2 )     | O ( 1 )         | Medium         |
+[3 Sum Closest] | [3sum-closest.py]| O ( n ^ 2 )| O ( 1 )     | Medium         |
+[4 Sum]         |[4sum.py]        | O ( n ^ 2 )     | O ( 1 )         | Medium         |
 
 [3 Sum]: https://oj.leetcode.com/problems/3sum/
-[3 Sum - Python]:https://github.com/kamyu104/LeetCode/blob/master/Python/3Sum.py
+[3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3Sum.py
 [3 Sum Closest]: https://oj.leetcode.com/problems/3sum-closest/
-[3 Sum Closest - Python]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum-closest.py
+[3sum-closest.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum-closest.py
 [4 Sum]: https://oj.leetcode.com/problems/4sum/
-[4 Sum - Python]:https://github.com/kamyu104/LeetCode/blob/master/Python/4Sum.py
+[4sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/4sum.py
 ===
 ##Under Construction
