@@ -10,7 +10,7 @@ public:
         
         while (start < end) {
             if (num[start] <= num[end - 1])
-            return num[start];
+                return num[start];
             
             int mid = start + (end - start)/2;
             
@@ -18,9 +18,9 @@ public:
                 start = mid + 1;
             } else {
                 if (mid == end - 1)
-                return num[mid];
+                    return num[mid];
                 else
-                end = mid + 1;
+                    end = mid + 1;
             }
         }
         
