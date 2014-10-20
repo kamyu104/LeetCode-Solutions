@@ -16,7 +16,7 @@ Problem         |  Solution       |  Time Complexity| Space Complexity| Difficul
 [4 Sum]         |[4sum.py]        | O ( n ^ 2 )     | O ( 1 )         | Medium         |
 
 [3 Sum]: https://oj.leetcode.com/problems/3sum/
-[3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3Sum.py
+[3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum.py
 [3 Sum Closest]: https://oj.leetcode.com/problems/3sum-closest/
 [3sum-closest.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum-closest.py
 [4 Sum]: https://oj.leetcode.com/problems/4sum/
