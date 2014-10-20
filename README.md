@@ -9,7 +9,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 --- 
 ##Array
 
-Problem         |  Solution       |  Time Complexity| Space Complexity| Difficulty     | Notes
+Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [3 Sum]         | [3sum.py]       | O ( n ^ 2 )     | O ( 1 )         | Medium         |
 [3 Sum Closest] | [3sum-closest.py]| O ( n ^ 2 )| O ( 1 )     | Medium         |
