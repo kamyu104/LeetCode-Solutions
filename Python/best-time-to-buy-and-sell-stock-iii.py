@@ -16,7 +16,7 @@ class Solution:
     # @param prices, a list of integer
     # @return an integer
     def maxProfit(self, prices):
-        min_price, max_profit_from_left, max_profits_from_left = 9223372036854775807, 0, []
+        min_price, max_profit_from_left, max_profits_from_left = float("inf"), 0, []
         for price in prices:
             min_price = min(min_price, price)
             max_profit_from_left = max(max_profit_from_left, price - min_price)

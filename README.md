@@ -14,6 +14,9 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [3 Sum]         | [3sum.py]       | _O(n^2)_        | _O(1)_          | Medium         |
 [3 Sum Closest] | [3sum-closest.py]| _O(n^2)_       | _O(1)_          | Medium         |
 [4 Sum]         |[4sum.py]        | _O(n^2)_ ~ _O(n^4)_ | _O(n^2)_         | Medium         |
+[Best Time to Buy and Sell Stock]| [best-time-to-buy-and-sell-stock.py] | _O(n)_ | _O(1)_ | Medium |
+[Best Time to Buy and Sell Stock II]| [best-time-to-buy-and-sell-stock-ii.py] | _O(n)_ | _O(1)_ | Medium |
+[Best Time to Buy and Sell Stock III]| [best-time-to-buy-and-sell-stock-iii.py] | _O(n)_ | _O(1)_ | Hard |
 
 [3 Sum]: https://oj.leetcode.com/problems/3sum/
 [3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum.py
@@ -21,5 +24,12 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [3sum-closest.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum-closest.py
 [4 Sum]: https://oj.leetcode.com/problems/4sum/
 [4sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/4sum.py
+[Best Time to Buy and Sell Stock]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/
+[best-time-to-buy-and-sell-stock.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock.py
+[Best Time to Buy and Sell Stock II]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+[best-time-to-buy-and-sell-stock-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-ii.py
+[Best Time to Buy and Sell Stock III]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+[best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
+
 ===
 ##Under Construction
