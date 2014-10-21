@@ -1,4 +1,4 @@
-# Time:  O(n^2)
+# Time:  O(n^2) ~ O(n^4)
 # Space: O(n^2)
 #
 # Given an array S of n integers, 
