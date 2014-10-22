@@ -15,6 +15,10 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Stack](https://github.com/kamyu104/LeetCode#stack)
 * [Heap](https://github.com/kamyu104/LeetCode#heap)
 * [Tree](https://github.com/kamyu104/LeetCode#tree)
+* [Graph](https://github.com/kamyu104/LeetCode#graph)
+* [Hash Table](https://github.com/kamyu104/LeetCode#hash-table)
+* [Data Structure](https://github.com/kamyu104/LeetCode#data-structure)
+* [Math](https://github.com/kamyu104/LeetCode#math)
 * [Divide and Conquer](https://github.com/kamyu104/LeetCode#divide-and-conquer)
 * [Binary Search](https://github.com/kamyu104/LeetCode#binary-search)
 * [Breadth-First Search](https://github.com/kamyu104/LeetCode#breadth-first-search)
@@ -97,10 +101,42 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
 [balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
 
+--- 
+
+##Graph
+Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
+--------------- | --------------- | --------------- | --------------- | -------------- | -----
+|||||
+
+--- 
+
+##Hash Table
+Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
+--------------- | --------------- | --------------- | --------------- | -------------- | -----
+|||||
+
+--- 
+
+##Data Structure
+Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
+--------------- | --------------- | --------------- | --------------- | -------------- | -----
+|||||
+
+--- 
+
+##Math
+Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
+--------------- | --------------- | --------------- | --------------- | -------------- | -----
+|||||
+
+--- 
+
 ##Divide and Conquer
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 |||||
+
+--- 
 
 ##Binary Search
 
