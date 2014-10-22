@@ -19,6 +19,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Hash Table](https://github.com/kamyu104/LeetCode#hash-table)
 * [Data Structure](https://github.com/kamyu104/LeetCode#data-structure)
 * [Math](https://github.com/kamyu104/LeetCode#math)
+* [Sort](https://github.com/kamyu104/LeetCode#sort)
 * [Divide and Conquer](https://github.com/kamyu104/LeetCode#divide-and-conquer)
 * [Binary Search](https://github.com/kamyu104/LeetCode#binary-search)
 * [Breadth-First Search](https://github.com/kamyu104/LeetCode#breadth-first-search)
@@ -125,6 +126,13 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --- 
 
 ##Math
+Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
+--------------- | --------------- | --------------- | --------------- | -------------- | -----
+|||||
+
+--- 
+
+##Sort
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 |||||
