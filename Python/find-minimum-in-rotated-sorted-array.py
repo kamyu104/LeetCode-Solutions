@@ -14,17 +14,23 @@ class Solution:
     # @param num, a list of integer
     # @return an integer
     def findMin(self, num):
-        low, high = 0, len(num) - 1
+        low, high = 0, len(num)
            
         while low < high:
-            if num[low] < num[high]:
+            if num[low] < num[high - 1] or low == high - 1:
                 return num[low]
             
             mid = low + (high - low) / 2
-            if num[mid] >= num[low]:
+                
+            if num[mid] > num[low]:
                 low = mid + 1
+            elif num[mid] < num[low]:
+                if mid == high - 1:
+                    return num[mid]
+                else:
+                    high = mid + 1
             else:
-                high = mid
+                return num[mid]
 
         return num[low]
 
