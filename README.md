@@ -31,5 +31,18 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Best Time to Buy and Sell Stock III]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 [best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
 
+
+##Binary Search
+
+Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
+--------------- | --------------- | --------------- | --------------- | -------------- | -----
+[Search in Rotated Sorted Array]         | [find-minimum-in-rotated-sorted-array.py]       | _O(logn)_        | _O(1)_          | Medium         |
+[Search in Rotated Sorted Array II]      | [find-minimum-in-rotated-sorted-array-ii.py]       | _O(logn)_ ~ _O(n)_        | _O(1)_          | Hard         |
+
+[Search in Rotated Sorted Array]:https://oj.leetcode.com/problems/search-in-rotated-sorted-array/
+[find-minimum-in-rotated-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-minimum-in-rotated-sorted-array.py
+[Search in Rotated Sorted Array II]:https://oj.leetcode.com/problems/search-in-rotated-sorted-array-ii/
+[find-minimum-in-rotated-sorted-array-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-minimum-in-rotated-sorted-array-ii.py
+
 ===
 ##Under Construction
