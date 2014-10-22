@@ -1,4 +1,4 @@
-# Time:  O(logn)
+# Time:  O(logn) ~ O(n)
 # Space: O(1)
 #
 # Follow up for "Find Minimum in Rotated Sorted Array":
