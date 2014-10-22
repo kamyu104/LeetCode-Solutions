@@ -32,6 +32,22 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
 
 
+##String
+Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
+--------------- | --------------- | --------------- | --------------- | -------------- | -----
+[Add Binary]    | [add-binary.py] | _O(n)_          | _O(1)_          | Easy           |
+
+[Add Binary]:https://oj.leetcode.com/problems/add-binary/
+[add-binary.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-binary.py
+
+##Linked List
+Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
+--------------- | --------------- | --------------- | --------------- | -------------- | -----
+[Add Two Numbers] | [add-two-numbers.py] | _O(n)_   | _O(1)_          | Normal         |
+
+[Add Two Numbers]:https://oj.leetcode.com/problems/add-two-numbers/
+[add-two-numbers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-two-numbers.py
+
 ##Binary Search
 
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
@@ -43,6 +59,5 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [find-minimum-in-rotated-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-minimum-in-rotated-sorted-array.py
 [Search in Rotated Sorted Array II]:https://oj.leetcode.com/problems/search-in-rotated-sorted-array-ii/
 [find-minimum-in-rotated-sorted-array-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-minimum-in-rotated-sorted-array-ii.py
-
 ===
 ##Under Construction
