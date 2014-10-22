@@ -9,31 +9,18 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 --- 
 
 * [Bit Manipulation](https://github.com/kamyu104/LeetCode#bit-manipulation)
-
 * [Array](https://github.com/kamyu104/LeetCode#array)
-
 * [String](https://github.com/kamyu104/LeetCode#string)
-
 * [Linked List](https://github.com/kamyu104/LeetCode#linked-list)
-
 * [Stack](https://github.com/kamyu104/LeetCode#stack)
-
 * [Heap](https://github.com/kamyu104/LeetCode#heap)
-
 * [Tree](https://github.com/kamyu104/LeetCode#tree)
-
 * [Divide and Conquer](https://github.com/kamyu104/LeetCode#divide-and-conquer)
-
 * [Binary Search](https://github.com/kamyu104/LeetCode#binary-search)
-
 * [Breadth-First Search](https://github.com/kamyu104/LeetCode#breadth-first-search)
-
 * [Depth-Fist Search](https://github.com/kamyu104/LeetCode#depth-first-search)
-
 * [Dynamic Programming](https://github.com/kamyu104/LeetCode#dynamic-programming)
-
 * [Backtracking](https://github.com/kamyu104/LeetCode#backtracking)
-
 * [Greedy](https://github.com/kamyu104/LeetCode#greedy)
 
 ---
