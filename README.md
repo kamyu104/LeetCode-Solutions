@@ -36,17 +36,28 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Add Binary]    | [add-binary.py] | _O(n)_          | _O(1)_          | Easy           |
+[Anagrams]      | [anagrams.py]   | _O(n)_          | _O(n)_          | Medium         |
 
 [Add Binary]:https://oj.leetcode.com/problems/add-binary/
 [add-binary.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-binary.py
+[Anagrams]:https://oj.leetcode.com/problems/anagrams/
+[anagrams.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/anagrams.py
 
 ##Linked List
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Add Two Numbers] | [add-two-numbers.py] | _O(n)_   | _O(1)_          | Normal         |
+[Add Two Numbers] | [add-two-numbers.py] | _O(n)_   | _O(1)_          | Medium         |
 
 [Add Two Numbers]:https://oj.leetcode.com/problems/add-two-numbers/
 [add-two-numbers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-two-numbers.py
+
+##Tree
+Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
+--------------- | --------------- | --------------- | --------------- | -------------- | -----
+[Balanced Binary Tree] | [balanced-binary-tree.py] | _O(n)_| _O(logn)_| Easy           |
+
+[Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
+[balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
 
 ##Binary Search
 
