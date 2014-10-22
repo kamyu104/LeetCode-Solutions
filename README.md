@@ -13,6 +13,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 |||||
 
+--- 
+
 ##Array
 
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
@@ -31,6 +33,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Best Time to Buy and Sell Stock]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/
 [best-time-to-buy-and-sell-stock.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock.py
 
+--- 
+
 ##String
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
@@ -42,6 +46,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Anagrams]:https://oj.leetcode.com/problems/anagrams/
 [anagrams.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/anagrams.py
 
+--- 
+
 ##Linked List
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
@@ -50,15 +56,21 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Add Two Numbers]:https://oj.leetcode.com/problems/add-two-numbers/
 [add-two-numbers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-two-numbers.py
 
+--- 
+
 ##Stack
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 |||||
 
+--- 
+
 ##Heap
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 |||||
+
+--- 
 
 ##Tree
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
@@ -85,15 +97,21 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Search in Rotated Sorted Array II]:https://oj.leetcode.com/problems/search-in-rotated-sorted-array-ii/
 [find-minimum-in-rotated-sorted-array-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-minimum-in-rotated-sorted-array-ii.py
 
+--- 
+
 ##Breadth-First Search
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 |||||
 
+--- 
+
 ##Depth-Fist Search
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 |||||
+
+--- 
 
 ##Dynamic Prgramming
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
@@ -103,10 +121,14 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Best Time to Buy and Sell Stock III]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 [best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
 
+--- 
+
 ##Backtracking
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 |||||
+
+--- 
 
 ##Greedy
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
