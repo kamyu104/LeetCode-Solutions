@@ -18,7 +18,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Divide and Conquer](https://github.com/kamyu104/LeetCode#divide-and-conquer)
 * [Binary Search](https://github.com/kamyu104/LeetCode#binary-search)
 * [Breadth-First Search](https://github.com/kamyu104/LeetCode#breadth-first-search)
-* [Depth-Fist Search](https://github.com/kamyu104/LeetCode#depth-first-search)
+* [Depth-First Search](https://github.com/kamyu104/LeetCode#depth-first-search)
 * [Dynamic Programming](https://github.com/kamyu104/LeetCode#dynamic-programming)
 * [Backtracking](https://github.com/kamyu104/LeetCode#backtracking)
 * [Greedy](https://github.com/kamyu104/LeetCode#greedy)
@@ -123,7 +123,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 --- 
 
-##Depth-Fist Search
+##Depth-First Search
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 |||||
