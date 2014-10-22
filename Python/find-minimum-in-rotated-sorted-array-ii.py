@@ -21,8 +21,8 @@ class Solution:
     def findMin(self, num):
         low, high = 0, len(num)
            
-        while low < high:
-            if num[low] < num[high - 1] or low == high - 1:
+        while low < high - 1:
+            if num[low] < num[high - 1]:
                 return num[low]
             
             mid = low + (high - low) / 2
@@ -35,22 +35,37 @@ class Solution:
                 else:
                     high = mid + 1
             else:
-                for i in reversed(xrange(low, mid)):
-                    if num[i] > num[mid]:
-                        return num[i + 1]
-                    if num[i] < num[mid]:
+                for i in xrange(low, mid):
+                    if num[i] < num[low]:
                         return num[i]
-                for i in xrange(mid + 1, high):
-                    if num[i] > num[mid]:
-                        if i == high - 1:
-                            return num[0]
-                        else:
-                            return num[i + 1]
-                    if num[i] < num[mid]:
+                low = mid
+
+        return num[low]
+
+class Solution2:
+    # @param num, a list of integer
+    # @return an integer
+    def findMin(self, num):
+        low, high = 0, len(num) - 1
+           
+        while low < high:
+            if num[low] < num[high]:
+                return num[low]
+            
+            mid = low + (high - low) / 2
+            
+            if num[mid] > num[low]:
+                low = mid + 1
+            elif num[mid] < num[low]:
+                high = mid
+            else:
+                for i in xrange(low, mid):
+                    if num[i] < num[low]:
                         return num[i]
-                return num[mid]
+                low = mid + 1
 
         return num[low]
 
 if __name__ == "__main__":
-    print Solution().findMin([3, 1, 1, 2, 2, 3])
+#    print Solution2().findMin([3, 1, 1, 2, 2, 3])
+    print Solution2().findMin([2, 2, 2, 3, 3, 1])

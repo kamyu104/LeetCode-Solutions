@@ -16,8 +16,8 @@ class Solution:
     def findMin(self, num):
         low, high = 0, len(num)
            
-        while low < high:
-            if num[low] < num[high - 1] or low == high - 1:
+        while low < high - 1:
+            if num[low] < num[high - 1]:
                 return num[low]
             
             mid = low + (high - low) / 2
@@ -38,20 +38,17 @@ class Solution2:
     # @param num, a list of integer
     # @return an integer
     def findMin(self, num):
-        low, high = 0, len(num)
+        low, high = 0, len(num) - 1
            
         while low < high:
-            if num[low] <= num[high - 1]:
+            if num[low] < num[high]:
                 return num[low]
             
             mid = low + (high - low) / 2
             if num[mid] >= num[low]:
                 low = mid + 1
             else:
-                if mid == high - 1:
-                    return num[mid]
-                else:
-                    high = mid + 1
+                high = mid
 
         return num[low]
 
