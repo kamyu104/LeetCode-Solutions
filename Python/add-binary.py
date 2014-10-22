@@ -15,7 +15,7 @@ class Solution:
     # @return a string
     def addBinary(self, a, b):
         result, carry, val, len_a, len_b, i = "", 0, 0, len(a), len(b), 0
-        for i in range(max(len_a, len_b)):
+        for i in xrange(max(len_a, len_b)):
             val = carry
             if i < len_a:
                 sum += int(a[-(i + 1)])
