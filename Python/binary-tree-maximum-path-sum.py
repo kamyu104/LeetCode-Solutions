@@ -21,7 +21,7 @@ class TreeNode:
         self.right = None
 
 class Solution:
-    maxSum = -2147483648
+    maxSum = float("-inf")
     # @param root, a tree node
     # @return an integer
     def maxPathSum(self, root):

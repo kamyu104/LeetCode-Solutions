@@ -173,18 +173,24 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Binary Tree Level Order Traversal]| [binary-tree-level-order-traversal.py] | _O(n)_| _O(n)_| Easy  |  
 [Binary Tree Level Order Traversal II]| [binary-tree-level-order-traversal-ii.py] | _O(n)_| _O(n)_| Easy  |       
-
+[Binary Tree Zigzag Level Order Traversal]| [binary-tree-zigzag-level-order-traversal.py] | _O(n)_| _O(n)_| Medium  |  
 
 [Binary Tree Level Order Traversal]:https://oj.leetcode.com/problems/binary-tree-level-order-traversal/
 [binary-tree-level-order-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-level-order-traversal.py
 [Binary Tree Level Order Traversal II]:https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/
 [binary-tree-level-order-traversal-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-level-order-traversal-ii.py
+[Binary Tree Zigzag Level Order Traversal]:https://oj.leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+[binary-tree-zigzag-level-order-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-zigzag-level-order-traversal.py
+
 --- 
 
 ##Depth-First Search
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-|||||
+[Binary Tree Maximum Path Sum]| [binary-tree-maximum-path-sum.py] | _O(n)_| _O(logn)_| Hard  |  
+
+[Binary Tree Maximum Path Sum]:https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/
+[binary-tree-maximum-path-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-maximum-path-sum.py
 
 --- 
 
