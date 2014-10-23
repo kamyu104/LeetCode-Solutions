@@ -104,11 +104,11 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 [Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
 [balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
-[Binary Tree Preorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
+[Binary Tree Preorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
 [binary-tree-preorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-preoder-traversal.py
-[Binary Tree Inorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
+[Binary Tree Inorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
 [binary-tree-inorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-inorder-traversal.py
-[Binary Tree Postorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
+[Binary Tree Postorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
 [binary-tree-postorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-postorder-traversal.py
 --- 
 
@@ -171,8 +171,14 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Breadth-First Search
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-|||||
+[Binary Tree Level Order Traversal]| [binary-tree-level-order-traversal.py] | _O(n)_| _O(n)_| Easy  |  
+[Binary Tree Level Order Traversal II]| [binary-tree-level-order-traversal-ii.py] | _O(n)_| _O(n)_| Easy  |       
 
+
+[Binary Tree Level Order Traversal]:https://oj.leetcode.com/problems/binary-tree-level-order-traversal/
+[binary-tree-level-order-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-level-order-traversal.py
+[Binary Tree Level Order Traversal II]:https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/
+[binary-tree-level-order-traversal-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-level-order-traversal-ii.py
 --- 
 
 ##Depth-First Search
