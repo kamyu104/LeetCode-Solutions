@@ -16,7 +16,7 @@ class Solution:
     # @param ratings, a list of integer
     # @return an integer
     def candy(self, ratings):
-        candies = [1 for i in range(len(ratings))]
+        candies = [1 for _ in xrange(len(ratings))]
         for i in xrange(1, len(ratings)):
             if ratings[i] > ratings[i - 1]:
                 candies[i] = candies[i - 1] + 1
