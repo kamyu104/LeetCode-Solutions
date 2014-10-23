@@ -97,13 +97,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Tree
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Balanced Binary Tree] | [balanced-binary-tree.py] | _O(n)_| _O(logn)_| Easy           |
 [Binary Tree Preorder Traversal] | [binary-tree-preorder-traversal.py] | _O(n)_| _O(n)_| Medium |
 [Binary Tree Inorder Traversal]  | [binary-tree-inorder-traversal.py] | _O(n)_| _O(n)_| Medium           |
 [Binary Tree Postorder Traversal]| [binary-tree-postorder-traversal.py] | _O(n)_| _O(n)_| Hard  |       
 
-[Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
-[balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
 [Binary Tree Preorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
 [binary-tree-preorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-preoder-traversal.py
 [Binary Tree Inorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
@@ -190,8 +187,11 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Depth-First Search
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
+[Balanced Binary Tree] | [balanced-binary-tree.py] | _O(n)_| _O(logn)_| Easy           |
 [Binary Tree Maximum Path Sum]| [binary-tree-maximum-path-sum.py] | _O(n)_| _O(logn)_| Hard  |  
 
+[Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
+[balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
 [Binary Tree Maximum Path Sum]:https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/
 [binary-tree-maximum-path-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-maximum-path-sum.py
 
