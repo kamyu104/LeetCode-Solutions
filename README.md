@@ -98,10 +98,18 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Balanced Binary Tree] | [balanced-binary-tree.py] | _O(n)_| _O(logn)_| Easy           |
+[Binary Tree Preorder Traversal] | [binary-tree-preorder-traversal.py] | _O(n)_| _O(n)_| Medium |
+[Binary Tree Inorder Traversal]  | [binary-tree-inorder-traversal.py] | _O(n)_| _O(n)_| Medium           |
+[Binary Tree Postorder Traversal]| [binary-tree-postorder-traversal.py] | _O(n)_| _O(n)_| Hard  |       
 
 [Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
 [balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
-
+[Binary Tree Preorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
+[binary-tree-preorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-preoder-traversal.py
+[Binary Tree Inorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
+[binary-tree-inorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-inorder-traversal.py
+[Binary Tree Postorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
+[binary-tree-postorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-postorder-traversal.py
 --- 
 
 ##Graph
