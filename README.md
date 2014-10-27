@@ -147,7 +147,14 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Divide and Conquer
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-|||||
+[Construct Binary Tree from Inorder and Postorder Traversal] | [construct-binary-tree-from-inorder-and-postorder-traversal.py] | _O(n)_        | _O(n)_          | Medium         |
+[Construct Binary Tree from Preorder and Inorder Traversal] | [construct-binary-tree-from-preorder-and-inorder-traversal.py] | _O(n)_        | _O(n)_          | Medium   
+
+[Construct Binary Tree from Inorder and Postorder Traversal]:https://oj.leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+[construct-binary-tree-from-inorder-and-postorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/construct-binary-tree-from-inorder-and-postorder-traversal.py
+[Construct Binary Tree from Preorder and Inorder Traversal]:https://oj.leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+[construct-binary-tree-from-preorder-and-inorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/construct-binary-tree-from-preorder-and-inorder-traversal.py
+
 
 --- 
 
@@ -189,8 +196,9 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Balanced Binary Tree] | [balanced-binary-tree.py] | _O(n)_| _O(logn)_| Easy           |
 [Binary Tree Maximum Path Sum]| [binary-tree-maximum-path-sum.py] | _O(n)_| _O(logn)_| Hard  |  
-[Combination Sum]| [combination-sum.py] | _O(n)_    | _O(n)_          | Medium         |
+[Combination Sum]| [combination-sum.py] | _O(n)_     | _O(n)_         | Medium         |
 [Combination Sum II]| [combination-sum-ii.py]| _O(n)_| _O(n)_         | Medium         |
+[Combinations]| [combinations.py]  | _O(n!)_          | _O(n)_         | Medium         |
 
 [Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
 [balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
@@ -200,6 +208,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [combination-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/combination-sum.py
 [Combination Sum II]:https://oj.leetcode.com/problems/combination-sum-ii/
 [combination-sum-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/combination-sum-ii.py
+[Combinations]:https://oj.leetcode.com/problems/combinations/
+[combinations.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/combinations.py
 
 --- 
 
