@@ -25,9 +25,11 @@ class Solution:
     
     def combineDFS(self, n, result, start, intermediate, k):
         if k == 0:
-            result.append(intermediate)
-        for i in range(start, n):
-            self.combineDFS(n, result, i + 1, intermediate + [i + 1], k - 1)
+            result.append(intermediate[:])
+        for i in xrange(start, n):
+            intermediate.append(i + 1)
+            self.combineDFS(n, result, i + 1, intermediate, k - 1)
+            intermediate.pop()
 
 if __name__ == "__main__":
     result = Solution().combine(4, 2)
