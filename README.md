@@ -230,12 +230,15 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Best Time to Buy and Sell Stock III]| [best-time-to-buy-and-sell-stock-iii.py] | _O(n)_ | _O(1)_ | Hard |
-[Climbing Stairs]| [climbing-stairs.py] | _O(n)_ | _O(1)_ | Easy |
+[Climbing Stairs]| [climbing-stairs.py] | _O(n)_    | _O(1)_          | Easy           |
+[Decode Ways]   | [decode-ways.py]| _O(n)_          | _O(1)_          | Medium         |
 
 [Best Time to Buy and Sell Stock III]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 [best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
 [Climbing Stairs]:https://oj.leetcode.com/problems/climbing-stairs/
 [climbing-stairs.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/climbing-stairs.py
+[Decode Ways]:https://oj.leetcode.com/problems/decode-ways/
+[decode-ways.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/decode-ways.py
 
 --- 
 
