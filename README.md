@@ -45,7 +45,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [3 Sum Closest] | [3sum-closest.py]| _O(n^2)_       | _O(1)_          | Medium         |
 [4 Sum]         |[4sum.py]        | _O(n^2)_ ~ _O(n^4)_ | _O(n^2)_         | Medium         |
 [Best Time to Buy and Sell Stock]| [best-time-to-buy-and-sell-stock.py] | _O(n)_ | _O(1)_ | Medium |
-[First Missing Positive]| [first-missing-positive.py] | _O(n)_ | _O(1)_ | Medium |
+[First Missing Positive]| [first-missing-positive.py] | _O(n)_ | _O(1)_ | Hard         |
 
 [3 Sum]: https://oj.leetcode.com/problems/3sum/
 [3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum.py
@@ -164,6 +164,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Construct Binary Tree from Preorder and Inorder Traversal] | [construct-binary-tree-from-preorder-and-inorder-traversal.py] | _O(n)_        | _O(n)_          | Medium   
 [Convert Sorted Array to Binary Search Tree] | [convert-sorted-array-to-binary-search-tree.py] | _O(n)_        | _O(logn)_          | Medium         |
 [Convert Sorted List to Binary Search Tree] | [convert-sorted-list-to-binary-search-tree.py] | _O(n)_        | _O(logn)_          | Medium         |
+[Flatten Binary Tree to Linked List]|[flatten-binary-tree-to-linked-list.py]| _O(n)_        | _O(logn)_          | Medium         |
 
 [Construct Binary Tree from Inorder and Postorder Traversal]:https://oj.leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 [construct-binary-tree-from-inorder-and-postorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/construct-binary-tree-from-inorder-and-postorder-traversal.py
@@ -173,6 +174,9 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [convert-sorted-array-to-binary-search-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/convert-sorted-array-to-binary-search-tree.py
 [Convert Sorted List to Binary Search Tree]:https://oj.leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
 [convert-sorted-list-to-binary-search-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/convert-sorted-list-to-binary-search-tree.py
+[Flatten Binary Tree to Linked List]:https://oj.leetcode.com/problems/flatten-binary-tree-to-linked-list/
+[flatten-binary-tree-to-linked-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/flatten-binary-tree-to-linked-list.py
+
 
 
 --- 
@@ -268,6 +272,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Best Time to Buy and Sell Stock II]| [best-time-to-buy-and-sell-stock-ii.py] | _O(n)_ | _O(1)_ | Medium |
 [Candy]| [candy.py] | _O(n)_ | _O(n)_ | Hard |
 [Container With Most Water]| [container-with-most-water.py] | _O(n)_ | _O(1)_ | Medium |
+[Gas Station]| [gas-station.py]   | _O(n)_          | _O(1)_          | Medium         |
 
 [Best Time to Buy and Sell Stock II]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 [best-time-to-buy-and-sell-stock-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-ii.py
@@ -275,4 +280,5 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [candy.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/candy.py
 [Container With Most Water]:https://oj.leetcode.com/problems/container-with-most-water/
 [container-with-most-water.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/container-with-most-water.py
-
+[Gas Station]:https://oj.leetcode.com/problems/gas-station/
+[gas-station]:https://github.com/kamyu104/LeetCode/blob/master/Python/gas-station.py
