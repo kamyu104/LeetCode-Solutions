@@ -209,9 +209,9 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Balanced Binary Tree] | [balanced-binary-tree.py] | _O(n)_| _O(logn)_| Easy           |
 [Binary Tree Maximum Path Sum]| [binary-tree-maximum-path-sum.py] | _O(n)_| _O(logn)_| Hard  |  
-[Combination Sum]| [combination-sum.py] | _O(n)_     | _O(n)_         | Medium         |
+[Combination Sum]| [combination-sum.py] | _O(n)_    | _O(n)_          | Medium         |
 [Combination Sum II]| [combination-sum-ii.py]| _O(n)_| _O(n)_         | Medium         |
-[Combinations]| [combinations.py]  | _O(n!)_          | _O(n)_         | Medium         |
+[Combinations]| [combinations.py]  | _O(n!)_        | _O(n)_          | Medium         |
 
 [Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
 [balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
@@ -232,6 +232,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Best Time to Buy and Sell Stock III]| [best-time-to-buy-and-sell-stock-iii.py] | _O(n)_ | _O(1)_ | Hard |
 [Climbing Stairs]| [climbing-stairs.py] | _O(n)_    | _O(1)_          | Easy           |
 [Decode Ways]   | [decode-ways.py]| _O(n)_          | _O(1)_          | Medium         |
+[Distinct Subsequences]|[distinct-subsequences.py]| _O(n^2)_ | _O(n)_ | Medium         |
 
 [Best Time to Buy and Sell Stock III]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 [best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
@@ -239,6 +240,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [climbing-stairs.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/climbing-stairs.py
 [Decode Ways]:https://oj.leetcode.com/problems/decode-ways/
 [decode-ways.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/decode-ways.py
+[Distinct Subsequences]:https://oj.leetcode.com/problems/distinct-subsequences/
+[distinct-subsequences.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/distinct-subsequences.py
 
 --- 
 
