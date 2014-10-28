@@ -146,7 +146,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Math
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-|||||
+[Gray Code]     | [gray-code.py]  | _O(2^n)_        | _O(1)_          | Medium         |
+
+[Gray Code]:https://oj.leetcode.com/problems/gray-code/
+[gray-code.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/gray-code.py
 
 --- 
 

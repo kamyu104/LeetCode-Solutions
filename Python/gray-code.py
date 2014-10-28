@@ -23,7 +23,7 @@ class Solution:
     # @return a list of integers
     def grayCode(self, n):
         result = [0]
-        for i in range(0, n):
+        for i in xrange(0, n):
             for n in reversed(result):
                 result.append(1 << i | n)
         return result
@@ -33,7 +33,7 @@ class Solution:
 class Solution2:
     # @return a list of integers
     def grayCode(self, n):
-        return [i >> 1 ^ i for i in range(1 << n)]
+        return [i >> 1 ^ i for i in xrange(1 << n)]
 
 if __name__ == "__main__":
     print Solution().grayCode(0)
