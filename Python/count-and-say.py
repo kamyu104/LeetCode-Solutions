@@ -16,7 +16,7 @@ class Solution:
     # @return a string
     def countAndSay(self, n):
         seq = "1"
-        for i in range(n - 1):
+        for i in xrange(n - 1):
             seq = self.getNext(seq)
         return seq
     
@@ -32,7 +32,7 @@ class Solution:
         return next_seq
 
 if __name__ == "__main__":
-    for i in range(1, 4):
+    for i in xrange(1, 4):
         print Solution().countAndSay(i)
 
         

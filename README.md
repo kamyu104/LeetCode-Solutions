@@ -62,11 +62,14 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Add Binary]    | [add-binary.py] | _O(n)_          | _O(1)_          | Easy           |
 [Anagrams]      | [anagrams.py]   | _O(n)_          | _O(n)_          | Medium         |
+[Count and Say] | [count-and-say.py]| _O(n^2)_      | _O(n)_          | Easy           |
 
 [Add Binary]:https://oj.leetcode.com/problems/add-binary/
 [add-binary.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-binary.py
 [Anagrams]:https://oj.leetcode.com/problems/anagrams/
 [anagrams.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/anagrams.py
+[Count and Say]:https://oj.leetcode.com/problems/count-and-say/
+[count-and-say.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/count-and-say.py
 
 --- 
 
@@ -74,7 +77,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Add Two Numbers] | [add-two-numbers.py] | _O(n)_   | _O(1)_          | Medium         |
-[Copy List with Random Pointer] | [copy-list-with-random-pointer.py] | _O(n)_   | _O(1)_          | Medium         |
+[Copy List with Random Pointer] | [copy-list-with-random-pointer.py] | _O(n)_   | _O(1)_          | Hard         |
 
 [Add Two Numbers]:https://oj.leetcode.com/problems/add-two-numbers/
 [add-two-numbers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-two-numbers.py
