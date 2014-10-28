@@ -225,6 +225,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Combination Sum]| [combination-sum.py] | _O(n)_    | _O(n)_          | Medium         |
 [Combination Sum II]| [combination-sum-ii.py]| _O(n)_| _O(n)_         | Medium         |
 [Combinations]| [combinations.py]  | _O(n!)_        | _O(n)_          | Medium         |
+[Generate Parentheses]| [generate-parentheses.py]| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         |
 
 [Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
 [balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
@@ -236,6 +237,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [combination-sum-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/combination-sum-ii.py
 [Combinations]:https://oj.leetcode.com/problems/combinations/
 [combinations.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/combinations.py
+[Generate Parentheses]:https://oj.leetcode.com/problems/generate-parentheses/
+[generate-parentheses.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/generate-parentheses.py
 
 --- 
 
