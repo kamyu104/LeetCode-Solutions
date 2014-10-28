@@ -45,6 +45,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [3 Sum Closest] | [3sum-closest.py]| _O(n^2)_       | _O(1)_          | Medium         |
 [4 Sum]         |[4sum.py]        | _O(n^2)_ ~ _O(n^4)_ | _O(n^2)_         | Medium         |
 [Best Time to Buy and Sell Stock]| [best-time-to-buy-and-sell-stock.py] | _O(n)_ | _O(1)_ | Medium |
+[First Missing Positive]| [first-missing-positive.py] | _O(n)_ | _O(1)_ | Medium |
 
 [3 Sum]: https://oj.leetcode.com/problems/3sum/
 [3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum.py
@@ -54,6 +55,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [4sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/4sum.py
 [Best Time to Buy and Sell Stock]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/
 [best-time-to-buy-and-sell-stock.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock.py
+[First Missing Positive]:https://oj.leetcode.com/problems/first-missing-positive/
+[first-missing-positive.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/first-missing-positive.py
 
 --- 
 
@@ -90,7 +93,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Stack
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-|||||
+[Evaluate Reverse Polish Notation]| [evaluate-reverse-polish-notation.py]| _O(n)_| _O(n)_| Medium          |
+
+[Evaluate Reverse Polish Notation]:https://oj.leetcode.com/problems/evaluate-reverse-polish-notation/
+[evaluate-reverse-polish-notation.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/evaluate-reverse-polish-notation.py
 
 --- 
 
