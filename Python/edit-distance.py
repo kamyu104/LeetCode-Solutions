@@ -17,12 +17,12 @@ class Solution:
         if len(word1) < len(word2):
             return self.minDistance(word2, word1)
         
-        distance = [i for i in range(len(word2) + 1)]
+        distance = [i for i in xrange(len(word2) + 1)]
         
-        for i in range(1, len(word1) + 1):
+        for i in xrange(1, len(word1) + 1):
             pre_distance_i_j = distance[0]
             distance[0] = i
-            for j in range(1, len(word2) + 1):
+            for j in xrange(1, len(word2) + 1):
                 insert = distance[j - 1] + 1
                 delete = distance[j] + 1
                 replace = pre_distance_i_j
@@ -38,11 +38,11 @@ class Solution:
 class Solution2:
     # @return an integer
     def minDistance(self, word1, word2):        
-        distance = [[i] for i in range(len(word1) + 1)]
-        distance[0] = [i for i in range(len(word2) + 1)]
+        distance = [[i] for i in xrange(len(word1) + 1)]
+        distance[0] = [j for j in xrange(len(word2) + 1)]
         
-        for i in range(1, len(word1) + 1):
-            for j in range(1, len(word2) + 1):
+        for i in xrange(1, len(word1) + 1):
+            for j in xrange(1, len(word2) + 1):
                 insert = distance[i][j - 1] + 1
                 delete = distance[i - 1][j] + 1
                 replace = distance[i - 1][j - 1]
