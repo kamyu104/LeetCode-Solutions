@@ -48,6 +48,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [4 Sum]         |[4sum.py]        | _O(n^2)_ ~ _O(n^4)_ | _O(n^2)_         | Medium         |
 [Best Time to Buy and Sell Stock]| [best-time-to-buy-and-sell-stock.py] | _O(n)_ | _O(1)_ | Medium |
 [First Missing Positive]| [first-missing-positive.py] | _O(n)_ | _O(1)_ | Hard         |
+[Longest Consecutive Sequence]| [longest-consecutive-sequence.py] | _O(n)_ | _O(n)_ | Easy         | Tricky
 
 [3 Sum]: https://oj.leetcode.com/problems/3sum/
 [3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum.py
@@ -59,6 +60,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [best-time-to-buy-and-sell-stock.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock.py
 [First Missing Positive]:https://oj.leetcode.com/problems/first-missing-positive/
 [first-missing-positive.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/first-missing-positive.py
+[Longest Consecutive Sequence]:https://oj.leetcode.com/problems/longest-consecutive-sequence/
+[longest-consecutive-sequence.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-consecutive-sequence.py
 
 --- 
 
@@ -70,6 +73,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Count and Say] | [count-and-say.py]| _O(n^2)_      | _O(n)_          | Easy           |
 [Implement strStr()] | [implement-strstr.py] | _O(n + m)_   | _O(m)_  | Easy           | KMP Algorithm
 [Length of Last Word] | [length-of-last-word.py] | _O(n)_   | _O(1)_  | Easy           |
+[Longest Common Prefix] | [longest-common-prefix.py] | _O(n1 + n2 + ...)_   | _O(1)_  | Easy           |
 
 [Add Binary]:https://oj.leetcode.com/problems/add-binary/
 [add-binary.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-binary.py
@@ -81,6 +85,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [implement-strstr.py]:https://oj.leetcode.com/problems/implement-strstr.py
 [Length of Last Word]:https://oj.leetcode.com/problems/length-of-last-word/
 [length-of-last-word.py]:https://oj.leetcode.com/problems/length-of-last-word.py
+[Longest Common Prefix]:https://oj.leetcode.com/problems/longest-common-prefix/
+[longest-common-prefix.py]:https://oj.leetcode.com/problems/longest-common-prefix.py
 
 --- 
 
