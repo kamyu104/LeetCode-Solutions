@@ -159,7 +159,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Sort
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-|||||
+[Insert Interval]| [insert-interval.py] | _O(n)_    | _O(1)_          | Hard           |
+
+[Insert Interval]:https://oj.leetcode.com/problems/insert-interval/
+[insert-interval.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insert-interval.py
 
 --- 
 
