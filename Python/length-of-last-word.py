@@ -10,6 +10,7 @@
 # For example, 
 # Given s = "Hello World",
 # return 5.
+#
 
 class Solution:
     # @param s, a string
