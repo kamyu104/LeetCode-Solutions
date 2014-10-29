@@ -216,7 +216,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Brute Force Search
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Letter Combinations of a Phone Number]| [letter-combinations-of-a-phone-number.py] | _O(4^n)_ | _O(1)_ | 
+[Letter Combinations of a Phone Number]| [letter-combinations-of-a-phone-number.py] | _O(4^n)_ | _O(1)_ | Medium |
 
 [Letter Combinations of a Phone Number]:https://oj.leetcode.com/problems/letter-combinations-of-a-phone-number/
 [letter-combinations-of-a-phone-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/letter-combinations-of-a-phone-number.py
