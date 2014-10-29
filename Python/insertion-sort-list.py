@@ -23,7 +23,7 @@ class Solution:
         if head is None or self.isSorted(head):
             return head
         
-        dummy = ListNode(float("-inf"))
+        dummy = ListNode(-2147483648)
         dummy.next = head
         cur, sorted_tail = head.next, head
         while cur:
