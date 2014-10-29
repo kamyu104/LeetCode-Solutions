@@ -1,4 +1,4 @@
-# Time:  O(4 ^ n)
+# Time:  O(4^n)
 # Space: O(1)
 #
 # Given a digit string, return all possible letter combinations that the number could represent.
@@ -29,7 +29,7 @@ class Solution:
             
         return result
 
-# Time:  O(4 ^ n)
+# Time:  O(4^n)
 # Space: O(n)
 # Recursive Solution
 class Solution2:
