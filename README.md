@@ -149,7 +149,11 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Hash Table
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-|||||
+[Longest Substring Without Repeating Characters] | [longest-substring-without-repeating-characters.py] | _O(n)_ | _O(1)_ | Medium |
+
+
+[Longest Substring Without Repeating Characters]:https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/
+[longest-substring-without-repeating-characters.py]:longest-substring-without-repeating-characters.py
 
 --- 
 
