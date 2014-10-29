@@ -153,7 +153,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 
 [Longest Substring Without Repeating Characters]:https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/
-[longest-substring-without-repeating-characters.py]:longest-substring-without-repeating-characters.py
+[longest-substring-without-repeating-characters.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-substring-without-repeating-characters.py
 
 --- 
 
