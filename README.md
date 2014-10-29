@@ -163,7 +163,11 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Data Structure
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-|||||
+[LRU Cache]     | [lru-cache.py]  | _O(1)_          | _O(n)_          | Hard         |
+
+
+[LRU Cache]:https://oj.leetcode.com/problems/lru-cache/
+[lru-cache.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/lru-cache.py
 
 --- 
 
