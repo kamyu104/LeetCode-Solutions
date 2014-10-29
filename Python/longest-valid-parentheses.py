@@ -46,7 +46,7 @@ class Solution2:
     # @return an integer
     def longestValidParentheses(self, s):
         longest, last, indices = 0, -1, []
-        for i in range(len(s)):
+        for i in xrange(len(s)):
             if s[i] == '(':
                 indices.append(i)
             elif len(indices) == 0:

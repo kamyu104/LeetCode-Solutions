@@ -111,9 +111,12 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Evaluate Reverse Polish Notation]| [evaluate-reverse-polish-notation.py]| _O(n)_| _O(n)_| Medium          |
+[Longest Valid Parentheses]| [longest-valid-parentheses.py] | _O(n)_ | _O(1)_ | Hard   |
 
 [Evaluate Reverse Polish Notation]:https://oj.leetcode.com/problems/evaluate-reverse-polish-notation/
 [evaluate-reverse-polish-notation.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/evaluate-reverse-polish-notation.py
+[Longest Valid Parentheses]:https://oj.leetcode.com/problems/longest-valid-parentheses/
+[longest-valid-parentheses.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-valid-parentheses.py
 
 --- 
 
