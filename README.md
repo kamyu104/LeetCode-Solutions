@@ -20,6 +20,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Data Structure](https://github.com/kamyu104/LeetCode#data-structure)
 * [Math](https://github.com/kamyu104/LeetCode#math)
 * [Sort](https://github.com/kamyu104/LeetCode#sort)
+* [Brute Force Search](https://github.com/kamyu104/LeetCode#brute-force-search)
 * [Divide and Conquer](https://github.com/kamyu104/LeetCode#divide-and-conquer)
 * [Binary Search](https://github.com/kamyu104/LeetCode#binary-search)
 * [Breadth-First Search](https://github.com/kamyu104/LeetCode#breadth-first-search)
@@ -173,6 +174,16 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Insertion Sort List]:https://oj.leetcode.com/problems/insertion-sort-list/
 [insertion-sort-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insertion-sort-list.py
 
+---
+
+##Brute Force Search
+Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
+--------------- | --------------- | --------------- | --------------- | -------------- | -----
+[Letter Combinations of a Phone Number]| [letter-combinations-of-a-phone-number.py] | _O(4^n)_ | _O(1)_ | 
+
+[Letter Combinations of a Phone Number]:https://oj.leetcode.com/problems/letter-combinations-of-a-phone-number/
+[letter-combinations-of-a-phone-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/letter-combinations-of-a-phone-number.py
+
 --- 
 
 ##Divide and Conquer
@@ -194,8 +205,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [convert-sorted-list-to-binary-search-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/convert-sorted-list-to-binary-search-tree.py
 [Flatten Binary Tree to Linked List]:https://oj.leetcode.com/problems/flatten-binary-tree-to-linked-list/
 [flatten-binary-tree-to-linked-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/flatten-binary-tree-to-linked-list.py
-
-
 
 --- 
 
