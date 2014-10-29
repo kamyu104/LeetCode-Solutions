@@ -296,6 +296,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Gas Station]| [gas-station.py]   | _O(n)_          | _O(1)_          | Medium         |
 [Jump Game]     | [jump-game.py]  | _O(n)_          | _O(1)_          | Medium         |
 [Jump Game II]  | [jump-game-ii.py] | _O(n^2)_      | _O(1)_          | Hard           |
+[Largest Rectangle in Histogram] | [largest-rectangle-in-histogram.py] | _O(n)_ | _O(n)_ | Hard |
 
 [Best Time to Buy and Sell Stock II]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 [best-time-to-buy-and-sell-stock-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-ii.py
@@ -309,3 +310,5 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [jump-game.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/jump-game.py
 [Jump Game II]:https://oj.leetcode.com/problems/jump-game-ii/
 [jump-game-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/jump-game-ii.py
+[Largest Rectangle in Histogram]:https://oj.leetcode.com/problems/largest-rectangle-in-histogram/
+[largest-rectangle-in-histogram.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/largest-rectangle-in-histogram.py
