@@ -66,6 +66,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Add Binary]    | [add-binary.py] | _O(n)_          | _O(1)_          | Easy           |
 [Anagrams]      | [anagrams.py]   | _O(n)_          | _O(n)_          | Medium         |
 [Count and Say] | [count-and-say.py]| _O(n^2)_      | _O(n)_          | Easy           |
+[Implement strStr()] | [implement-strstr.py] | _O(n + m)_   | _O(m)_  | Easy           | KMP Algorithm
 
 [Add Binary]:https://oj.leetcode.com/problems/add-binary/
 [add-binary.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-binary.py
@@ -73,6 +74,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [anagrams.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/anagrams.py
 [Count and Say]:https://oj.leetcode.com/problems/count-and-say/
 [count-and-say.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/count-and-say.py
+[Implement strStr()]:https://oj.leetcode.com/problems/implement-strstr/
+[implement-strstr.py]:https://oj.leetcode.com/problems/implement-strstr.py
 
 --- 
 

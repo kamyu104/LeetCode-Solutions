@@ -29,7 +29,7 @@ class Solution:
     def KMP(self, text, pattern):
         prefix = self.getPrefix(pattern)
         j = -1
-        for i in range(len(text)):
+        for i in xrange(len(text)):
             while j > -1 and pattern[j + 1] != text[i]:
                 j = prefix[j]
             if pattern[j + 1] == text[i]:
@@ -41,7 +41,7 @@ class Solution:
     def getPrefix(self, pattern):
         prefix = [-1] * len(pattern)
         j = - 1
-        for i in range(1, len(pattern)):
+        for i in xrange(1, len(pattern)):
             while j > -1 and pattern[j + 1] != pattern[i]:
                 j = prefix[j]
             if pattern[j + 1] == pattern[i]:
@@ -56,7 +56,7 @@ class Solution2:
     # @param needle, a string
     # @return a string or None
     def strStr(self, haystack, needle):
-        for i in range(len(haystack) - len(needle) + 1):
+        for i in xrange(len(haystack) - len(needle) + 1):
             if haystack[i : i + len(needle)] == needle:
                 return haystack[i:]
         return None
