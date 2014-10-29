@@ -1,4 +1,4 @@
-# Time:  O(n * n)
+# Time:  O(n^2)
 # Space: O(1)
 #
 # Given an array of non-negative integers, you are initially positioned at the first index of the array.

@@ -294,6 +294,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Candy]| [candy.py] | _O(n)_ | _O(n)_ | Hard |
 [Container With Most Water]| [container-with-most-water.py] | _O(n)_ | _O(1)_ | Medium |
 [Gas Station]| [gas-station.py]   | _O(n)_          | _O(1)_          | Medium         |
+[Jump Game]     | [jump-game.py]  | _O(n)_          | _O(1)_          | Medium         |
+[Jump Game II]  | [jump-game-ii.py] | _O(n^2)_      | _O(1)_          | Hard           |
 
 [Best Time to Buy and Sell Stock II]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 [best-time-to-buy-and-sell-stock-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-ii.py
@@ -303,3 +305,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [container-with-most-water.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/container-with-most-water.py
 [Gas Station]:https://oj.leetcode.com/problems/gas-station/
 [gas-station.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/gas-station.py
+[Jump Game]:https://oj.leetcode.com/problems/jump-game/
+[jump-game.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/jump-game.py
+[Jump Game II]:https://oj.leetcode.com/problems/jump-game-ii/
+[jump-game-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/jump-game-ii.py
