@@ -283,8 +283,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Balanced Binary Tree] | [balanced-binary-tree.py] | _O(n)_| _O(logn)_| Easy           |
 [Binary Tree Maximum Path Sum]| [binary-tree-maximum-path-sum.py] | _O(n)_| _O(logn)_| Hard  |  
-[Combination Sum]| [combination-sum.py] | _O(n)_    | _O(n)_          | Medium         |
-[Combination Sum II]| [combination-sum-ii.py]| _O(n)_| _O(n)_         | Medium         |
+[Combination Sum]| [combination-sum.py] | _O(n^m)_    | _O(m)_          | Medium         |
+[Combination Sum II]| [combination-sum-ii.py]| _O(n! / m!(n-m)!)_| _O(m)_         | Medium         |
 [Combinations]| [combinations.py]  | _O(n!)_        | _O(n)_          | Medium         |
 [Generate Parentheses]| [generate-parentheses.py]| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         |
 

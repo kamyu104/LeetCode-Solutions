@@ -1,5 +1,5 @@
-# # Time:  O(n)
-# # Space: O(n)
+# Time:  O(n! / m!(n-m)!)
+# Space: O(m)
 # 
 # Given a collection of candidate numbers (C) and a target number (T), 
 # find all unique combinations in C where the candidate numbers sums to T.
