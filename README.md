@@ -290,6 +290,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Insert Interval]| [insert-interval.py] | _O(n)_    | _O(1)_          | Hard           |
 [Insertion Sort List]|[insertion-sort-list.py] | _O(n^2))_ | _O(1)_   | Medium         |
 [Merge Intervals]| [merge-intervals.py] | _O(n^2)_  | _O(1)_          | Hard           |
+[Merge Sorted Array]| [merge-sorted-array.py] | _O(n)_ | _O(1)_       | Easy           |
 [Merge Two Sorted Lists]| [merge-two-sorted-lists.py] | _O(n)_ | _O(1)_ | Easy         |
 [Sort Colors]   | [sort-colors.py] | _O(n)_         | _O(1)_          | Medium         |
 [Sort List]     | [sort-list.py]  | _O(nlogn)_      | _O(1)_          | Medium         |
@@ -301,6 +302,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [insertion-sort-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insertion-sort-list.py
 [Merge Intervals]:https://oj.leetcode.com/problems/merge-intervals/
 [merge-intervals.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-intervals.py
+[Merge Sorted Array]:https://oj.leetcode.com/problems/merge-sorted-array/
+[merge-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-sorted-array.py
 [Merge Two Sorted Lists]:https://oj.leetcode.com/problems/merge-two-sorted-lists/
 [merge-two-sorted-lists.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-two-sorted-lists.py
 [Sort Colors]:https://oj.leetcode.com/problems/sort-colors/
@@ -315,7 +318,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Linked List Cycle]| [linked-list-cycle.py] | _O(n)_ | _O(1)_         | Medium         | 
 [Linked List Cycle II]| [linked-list-cycle-ii.py] | _O(n)_ | _O(1)_   | Medium         |
-[Merge Sorted Array]| [merge-sorted-array.py] | _O(n)_ | _O(1)_       | Easy           |
 [Partition List]| [partition-list.py] | _O(n)_       | _O(1)_         | Medium         | 
 [Remove Nth Node From End of List]| [remove-nth-node-from-end-of-list.py] | _O(n)_       | _O(1)_         | Easy         | 
 [Reorder List]| [reorder-list.py] | _O(n)_          |  _O(1)_         | Medium         |  
@@ -324,8 +326,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [linked-list-cycle.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/linked-list-cycle.py
 [Linked List Cycle II]:https://oj.leetcode.com/problems/linked-list-cycle-ii/
 [linked-list-cycle-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/linked-list-cycle-ii.py
-[Merge Sorted Array]:https://oj.leetcode.com/problems/merge-sorted-array/
-[merge-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-sorted-array.py
 [Partition List]:https://oj.leetcode.com/problems/partition-list/
 [partition-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/partition-list.py
 [Remove Nth Node From End of List]:https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/
