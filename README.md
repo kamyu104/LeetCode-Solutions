@@ -372,6 +372,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Populating Next Right Pointers in Each Node]|[populating-next-right-pointers-in-each-node.py]| _O(n)_ | _O(logn)_ | Medium |
 [Same Tree]      |[same-tree.py]  | _O(n)_          | _O(logn)_        | Easy          |
 [Sum Root to Leaf Numbers] | [sum-root-to-leaf-numbers.py] | _O(n)_ | _O(logn)_ | Medium |
+[Unique Binary Search Trees II] | [unique-binary-search-trees-ii.py] | _O(4^n / n^(3/2))_      | _O(4^n / n^(3/2))_         | Medium         |
 
 [Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
 [balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
@@ -397,6 +398,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [same-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/same-tree.py
 [Sum Root to Leaf Numbers]:https://oj.leetcode.com/problems/sum-root-to-leaf-numbers/
 [sum-root-to-leaf-numbers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sum-root-to-leaf-numbers.py
+[Unique Binary Search Trees II]:https://oj.leetcode.com/problems/unique-binary-search-trees-ii/
+[unique-binary-search-trees-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/unique-binary-search-trees-ii.py
 
 
 --- 
@@ -525,6 +528,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Regular Expression Matching] | [regular-expression-matching.py] | _O(m * n)_ | _O(n)_ | Hard |
 [Scramble String] | [scramble-string.py] | _O(n^4)_ | _O(n^3)_        | Hard           |
 [Triangle]       | [triangle.py]   | _O(m * n)_      | _O(n)_         | Medium         |
+[Unique Binary Search Trees] | [unique-binary-search-trees.py] | _O(n^2)_      | _O(n)_         | Medium         |
 
 [Best Time to Buy and Sell Stock III]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 [best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
@@ -554,7 +558,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [scramble-string.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/scramble-string.py
 [Triangle]:https://oj.leetcode.com/problems/triangle/
 [triangle.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/triangle.py
-
+[Unique Binary Search Trees]:https://oj.leetcode.com/problems/unique-binary-search-trees/
+[unique-binary-search-trees.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/unique-binary-search-trees.py
 
 --- 
 
