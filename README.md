@@ -53,6 +53,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Pascal's Triangle]| [pascals-triangle.py] | _O(n^2)_ | _O(n)_        | Easy           | 
 [Pascal's Triangle II]| [pascals-triangle-ii.py] | _O(n^2)_ | _O(n)_  | Easy           | 
 [Plus One]      | [plus-one.py]   | _O(n)_           | _O(1)_         | Easy           | 
+[Remove Duplicates from Sorted Array]| [remove-duplicates-from-sorted-array.py] | _O(n)_       | _O(1)_         | Easy           |
+[Remove Duplicates from Sorted Array II]| [remove-duplicates-from-sorted-array-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
 
 [3 Sum]: https://oj.leetcode.com/problems/3sum/
 [3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum.py
@@ -74,6 +76,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [pascals-triangle-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/pascals-triangle-ii.py
 [Plus One]:https://oj.leetcode.com/problems/plus-one/
 [plus-one.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/plus-one.py
+[Remove Duplicates from Sorted Array]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/
+[remove-duplicates-from-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-array.py
+[Remove Duplicates from Sorted Array II]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+[remove-duplicates-from-sorted-array-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-array-ii.py
 
 --- 
 
@@ -115,11 +121,17 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Add Two Numbers] | [add-two-numbers.py] | _O(n)_   | _O(1)_          | Medium         |
 [Copy List with Random Pointer] | [copy-list-with-random-pointer.py] | _O(n)_   | _O(1)_          | Hard         |
+[Remove Duplicates from Sorted List]| [remove-duplicates-from-sorted-list.py] | _O(n)_       | _O(1)_         | Easy           |
+[Remove Duplicates from Sorted List II]| [remove-duplicates-from-sorted-list-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
 
 [Add Two Numbers]:https://oj.leetcode.com/problems/add-two-numbers/
 [add-two-numbers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-two-numbers.py
 [Copy List with Random Pointer]:https://oj.leetcode.com/problems/copy-list-with-random-pointer/
 [copy-list-with-random-pointer.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/copy-list-with-random-pointer.py
+[Remove Duplicates from Sorted List]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/
+[remove-duplicates-from-sorted-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-list.py
+[Remove Duplicates from Sorted List II]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+[remove-duplicates-from-sorted-list-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-list-ii.py
 
 
 --- 
@@ -225,8 +237,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Insert Interval]| [insert-interval.py] | _O(n)_    | _O(1)_          | Hard           |
 [Insertion Sort List]|[insertion-sort-list.py] | _O(n^2))_ | _O(1)_   | Medium         |
-[Merge Intervals]]| [merge-intervals.py] | _O(n^2)_    | _O(1)_       | Hard           |
-[Merge Two Sorted Lists]]| [merge-two-sorted-lists.py] | _O(n)_ | _O(1)_ | Easy        |
+[Merge Intervals]| [merge-intervals.py] | _O(n^2)_    | _O(1)_       | Hard           |
+[Merge Two Sorted Lists]| [merge-two-sorted-lists.py] | _O(n)_ | _O(1)_ | Easy        |
 
 [Insert Interval]:https://oj.leetcode.com/problems/insert-interval/
 [insert-interval.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insert-interval.py
@@ -246,8 +258,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Linked List Cycle II]| [linked-list-cycle-ii.py] | _O(n)_ | _O(1)_   | Medium         |
 [Merge Sorted Array]| [merge-sorted-array.py] | _O(n)_ | _O(1)_       | Easy           |
 [Partition List]| [partition-list.py] | _O(n)_       | _O(1)_         | Medium         |  
-[Remove Duplicates from Sorted Array]| [remove-duplicates-from-sorted-array.py] | _O(n)_       | _O(1)_         | Easy           |
-[Remove Duplicates from Sorted Array II]| [remove-duplicates-from-sorted-array-ii.py] | _O(n)_       | _O(1)_         | Medium         |  
 
 [Linked List Cycle]:https://oj.leetcode.com/problems/linked-list-cycle/
 [linked-list-cycle.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/linked-list-cycle.py
@@ -257,10 +267,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [merge-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-sorted-array.py
 [Partition List]:https://oj.leetcode.com/problems/partition-list/
 [partition-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/partition-list.py
-[Remove Duplicates from Sorted Array]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/
-[remove-duplicates-from-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-array.py
-[Remove Duplicates from Sorted Array II]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
-[remove-duplicates-from-sorted-array-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-array-ii.py
 
 ---
 
