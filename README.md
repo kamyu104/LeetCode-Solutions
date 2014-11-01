@@ -326,7 +326,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Letter Combinations of a Phone Number]| [letter-combinations-of-a-phone-number.py] | _O(4^n)_ | _O(1)_ | Medium |
 [Permutations]| [permutations.py] | _O(n!)_         | _O(n)_          | Medium         |
 [Permutations II]| [permutations-ii.py] | _O(n!)_   | _O(n)_          | Hard           |
-[Subsets]| [subsets.py] | _O(2^n)_         | _O(n)_          | Medium         |
+[Subsets]       | [subsets.py]    | _O(2^n)_        | _O(1)_          | Medium         |
+[Subsets II]    | [subsets-ii.py] | _O(2^n)_        | _O(1)_          | Medium         |
 
 [Letter Combinations of a Phone Number]:https://oj.leetcode.com/problems/letter-combinations-of-a-phone-number/
 [letter-combinations-of-a-phone-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/letter-combinations-of-a-phone-number.py
@@ -334,6 +335,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [permutations.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/permutations.py
 [Permutations II]:https://oj.leetcode.com/problems/permutations-ii/
 [permutations-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/permutations-ii.py
+[Subsets]:https://oj.leetcode.com/problems/subsets/
+[subsets.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/subsets.py
+[Subsets II]:https://oj.leetcode.com/problems/subsets-ii/
+[subsets-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/subsets-ii.py
 
 --- 
 
