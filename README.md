@@ -522,6 +522,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Palindrome Partitioning II] | [palindrome-partitioning-ii.py] | _O(n^2)_ | _O(n^2)_ | Hard |
 [Regular Expression Matching] | [regular-expression-matching.py] | _O(m * n)_ | _O(n)_ | Hard |
 [Scramble String] | [scramble-string.py] | _O(n^4)_ | _O(n^3)_        | Hard           |
+[Triangle]       | [triangle.py]   | _O(m * n)_      | _O(n)_         | Medium         |
 
 [Best Time to Buy and Sell Stock III]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 [best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
@@ -549,6 +550,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [regular-expression-matching.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/regular-expression-matching.py
 [Scramble String]:https://oj.leetcode.com/problems/scramble-string/
 [scramble-string.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/scramble-string.py
+[Triangle]:https://oj.leetcode.com/problems/triangle/
+[triangle.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/triangle.py
 
 
 --- 
