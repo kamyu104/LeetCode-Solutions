@@ -393,6 +393,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Search in Rotated Sorted Array] | [search-in-rotated-sorted-array.py] | _O(logn)_ | _O(1)_   | Hard         |
 [Search in Rotated Sorted Array II] | [search-in-rotated-sorted-array-ii.py] | _O(logn)_ | _O(1)_   | Medium         |
 [Search Insert Position] | [search-insert-position.py] | _O(logn)_ | _O(1)_   | Medium         |
+[Sqrt(x)]       | [sqrtx.py]      | _O(logn)_        | _O(1)_         | Medium         |
 
 [Search in Rotated Sorted Array]:https://oj.leetcode.com/problems/search-in-rotated-sorted-array/
 [find-minimum-in-rotated-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-minimum-in-rotated-sorted-array.py
@@ -412,7 +413,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [search-in-rotated-sorted-array-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/search-in-rotated-sorted-array-ii.py
 [Search Insert Position]:https://oj.leetcode.com/problems/search-insert-position/
 [search-insert-position.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/search-insert-position.py
-
+[Sqrt(x)]:https://oj.leetcode.com/problems/sqrtx/
+[sqrtx.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sqrtx.py
 
 
 --- 
