@@ -123,7 +123,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Heap
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-|||||
+[Merge k Sorted Lists] | [merge-k-sorted-lists.py] | _O(nlogk)_| _O(1)_| Hard          |  
+
+[Merge k Sorted Lists]:https://oj.leetcode.com/problems/merge-k-sorted-lists/
+[merge-k-sorted-lists.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-k-sorted-lists.py
 
 --- 
 
@@ -192,7 +195,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Insert Interval]| [insert-interval.py] | _O(n)_    | _O(1)_          | Hard           |
 [Insertion Sort List]|[insertion-sort-list.py] | _O(n^2))_ | _O(1)_   | Medium         |
-[Merge Intervals]]| [merge-intervals.py] | _O(n^2)_    | _O(1)_          | Hard           |
+[Merge Intervals]]| [merge-intervals.py] | _O(n^2)_    | _O(1)_       | Hard           |
+[Merge Two Sorted Lists]]| [merge-two-sorted-lists.py] | _O(n)_ | _O(1)_ | Easy        |
 
 [Insert Interval]:https://oj.leetcode.com/problems/insert-interval/
 [insert-interval.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insert-interval.py
@@ -200,6 +204,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [insertion-sort-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insertion-sort-list.py
 [Merge Intervals]:https://oj.leetcode.com/problems/merge-intervals/
 [merge-intervals.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-intervals.py
+[Merge Two Sorted Lists]:https://oj.leetcode.com/problems/merge-two-sorted-lists/
+[merge-two-sorted-lists.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-two-sorted-lists.py
 
 ---
 
@@ -207,12 +213,15 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Linked List Cycle]| [linked-list-cycle.py] | _O(n)_ | _O(1)_         | Medium         | 
-[Linked List Cycle II]| [linked-list-cycle-ii.py] | _O(n)_ | _O(1)_   | Medium         | 
+[Linked List Cycle II]| [linked-list-cycle-ii.py] | _O(n)_ | _O(1)_   | Medium         |
+[Merge Sorted Array]| [merge-sorted-array.py] | _O(n)_ | _O(1)_       | Easy           |  
 
 [Linked List Cycle]:https://oj.leetcode.com/problems/linked-list-cycle/
 [linked-list-cycle.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/linked-list-cycle.py
 [Linked List Cycle II]:https://oj.leetcode.com/problems/linked-list-cycle-ii/
 [linked-list-cycle-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/linked-list-cycle-ii.py
+[Merge Sorted Array]:https://oj.leetcode.com/problems/merge-sorted-array/
+[merge-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-sorted-array.py
 
 ---
 
