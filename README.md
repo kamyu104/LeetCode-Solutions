@@ -364,6 +364,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Pow(x, n)]     | [powx-n.py]     | _O(logn)_       | _O(logn)_       | Medium         |
 [Search a 2D Matrix] | [search-a-2d-matrix.py] | _O(log m + logn)_ | _O(1)_ | Medium   |
 [Search for a Range] | [search-for-a-range.py] | _O(logn)_ | _O(1)_   | Medium         |
+[Search in Rotated Sorted Array] | [search-in-rotated-sorted-array.py] | _O(logn)_ | _O(1)_   | Hard         |
+[Search in Rotated Sorted Array II] | [search-in-rotated-sorted-array-ii.py] | _O(logn)_ | _O(1)_   | Medium         |
 
 [Search in Rotated Sorted Array]:https://oj.leetcode.com/problems/search-in-rotated-sorted-array/
 [find-minimum-in-rotated-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-minimum-in-rotated-sorted-array.py
@@ -377,6 +379,12 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [search-a-2d-matrix.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/search-a-2d-matrix.py
 [Search for a Range]:https://oj.leetcode.com/problems/search-for-a-range/
 [search-for-a-range.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/search-for-a-range.py
+[Search in Rotated Sorted Array]:https://oj.leetcode.com/problems/search-in-rotated-sorted-array/
+[search-in-rotated-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/search-in-rotated-sorted-array.py
+[Search in Rotated Sorted Array II]:https://oj.leetcode.com/problems/search-in-rotated-sorted-array-ii/
+[search-in-rotated-sorted-array-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/search-in-rotated-sorted-array-ii.py
+
+
 
 --- 
 
