@@ -266,6 +266,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Permutation Sequence] | [permutation-sequence.py] | _O(n)_ | _O(1)_  | Medium         | `Cantor Ordering`
 [Reverse Integer] | [reverse-integer.py] | _O(logn)_ | _O(1)_         | Easy           |
 [Roman to Integer] | [roman-to-integer.py] | _O(n)_ | _O(1)_          | Easy           |
+[Valid Number] | [valid-number.py] | _O(n)_ | _O(1)_          | Easy           | `Automata`
 
 [Gray Code]:https://oj.leetcode.com/problems/gray-code/
 [gray-code.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/gray-code.py
@@ -279,7 +280,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [reverse-integer.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-integer.py
 [Roman to Integer]:https://oj.leetcode.com/problems/roman-to-integer/
 [roman-to-integer.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/roman-to-integer.py
-
+[Valid Number]:https://oj.leetcode.com/problems/valid-number/
+[valid-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/valid-number.py
 
 
 --- 
