@@ -224,6 +224,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Integer to Roman] | [integer-to-roman.py] | _O(n)_ | _O(1)_          | Medium         |
 [Palindrome Number] | [palindrome-number.py] | _O(1)_ | _O(1)_        | Easy           |
 [Permutation Sequence] | [permutation-sequence.py] | _O(n)_ | _O(1)_  | Medium         | `Cantor Ordering`
+[Reverse Integer] | [reverse-integer.py] | _O(logn)_ | _O(1)_         | Easy           |
 
 [Gray Code]:https://oj.leetcode.com/problems/gray-code/
 [gray-code.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/gray-code.py
@@ -233,6 +234,9 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [palindrome-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/palindrome-number.py
 [Permutation Sequence]:https://oj.leetcode.com/problems/permutation-sequence/
 [permutation-sequence.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/permutation-sequence.py
+[Reverse Integer]:https://oj.leetcode.com/problems/reverse-integer/
+[reverse-integer.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-integer.py
+
 
 --- 
 
