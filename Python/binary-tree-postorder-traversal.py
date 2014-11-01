@@ -32,7 +32,6 @@ class Solution:
         result, cur = [], dummy
         while cur:
             if cur.left is None:
-                prev = cur
                 cur = cur.right
             else:
                 node = cur.left
@@ -41,12 +40,10 @@ class Solution:
             
                 if node.right is None:
                     node.right = cur
-                    prev = cur
                     cur = cur.left
                 else:
                     result += self.traceBack(cur.left, node)
                     node.right = None
-                    prev = cur
                     cur = cur.right
         
         return result
