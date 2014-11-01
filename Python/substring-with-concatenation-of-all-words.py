@@ -26,7 +26,7 @@ class Solution:
             else:
                 words[i] += 1
 
-        for i in range(len(S) + 1 - word_len * word_num):
+        for i in xrange(len(S) + 1 - word_len * word_num):
             cur, j = {}, 0
             while j < word_num:
                 word = S[i + j * word_len:i + j * word_len + word_len]
