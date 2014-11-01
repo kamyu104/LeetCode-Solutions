@@ -518,8 +518,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Climbing Stairs]| [climbing-stairs.py] | _O(n)_    | _O(1)_          | Easy           |
 [Decode Ways]   | [decode-ways.py]| _O(n)_          | _O(1)_          | Medium         |
 [Distinct Subsequences]|[distinct-subsequences.py]| _O(n^2)_ | _O(n)_ | Medium         |
-[Edit Distance]|[edit-distance.py]| _O(n * m)_      | _O(n + m)_      | Medium         |
-[Interleaving String]|[interleaving-string.py]| _O(n * m)_ | _O(n + m)_ | Hard         |
+[Edit Distance]|[edit-distance.py]| _O(m * n)_      | _O(m + n)_      | Medium         |
+[Interleaving String]|[interleaving-string.py]| _O(m * n)_ | _O(m + n)_ | Hard         |
 [Maximal Rectangle]|[maximal-rectangle.py]| _O(n^2)_ | _O(n)_         | Hard           |
 [Maximum Product Subarray]|[maximum-product-subarray.py]| _O(n)_ | _O(1)_ | Medium     |
 [Maximum Subarray]|[maximum-subarray.py]| _O(n)_     | _O(1)_         | Medium         |
@@ -529,6 +529,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Scramble String] | [scramble-string.py] | _O(n^4)_ | _O(n^3)_        | Hard           |
 [Triangle]       | [triangle.py]   | _O(m * n)_      | _O(n)_         | Medium         |
 [Unique Binary Search Trees] | [unique-binary-search-trees.py] | _O(n^2)_      | _O(n)_         | Medium         |
+[Unique Paths]    | [unique-paths.py]| _O(m * n)_      | _O(m + n)_   | Medium         |
+[Unique Paths II] | [unique-paths-ii.py] |  _O(m * n)_ | _O(m + n)_   | Medium         |
 
 [Best Time to Buy and Sell Stock III]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 [best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
@@ -560,6 +562,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [triangle.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/triangle.py
 [Unique Binary Search Trees]:https://oj.leetcode.com/problems/unique-binary-search-trees/
 [unique-binary-search-trees.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/unique-binary-search-trees.py
+[Unique Paths]:https://oj.leetcode.com/problems/unique-paths/
+[unique-paths.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/unique-paths.py
+[Unique Paths II]:https://oj.leetcode.com/problems/unique-paths-ii/
+[unique-paths-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/unique-paths-ii.py
 
 --- 
 
