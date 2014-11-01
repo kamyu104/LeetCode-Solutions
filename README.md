@@ -51,7 +51,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [3 Sum]         | [3sum.py]       | _O(n^2)_        | _O(1)_          | Medium         |
 [3 Sum Closest] | [3sum-closest.py]| _O(n^2)_       | _O(1)_          | Medium         |
 [Best Time to Buy and Sell Stock]| [best-time-to-buy-and-sell-stock.py] | _O(n)_ | _O(1)_ | Medium |
-[First Missing Positive]| [first-missing-positive.py] | _O(n)_ | _O(1)_ | Hard         |
+[First Missing Positive]| [first-missing-positive.py] | _O(n)_ | _O(1)_ | Hard         | Tricky
 [Longest Consecutive Sequence]| [longest-consecutive-sequence.py] | _O(n)_ | _O(n)_ | Easy         | Tricky
 [Next Permutation]| [next-permutation.py] | _O(n)_ | _O(1)_ | Medium       | Tricky
 [Pascal's Triangle]| [pascals-triangle.py] | _O(n^2)_ | _O(n)_        | Easy           | 
