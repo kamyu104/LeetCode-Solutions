@@ -150,9 +150,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Tree
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Binary Tree Preorder Traversal] | [binary-tree-preorder-traversal.py] | _O(n)_| _O(n)_| Medium |
-[Binary Tree Inorder Traversal]  | [binary-tree-inorder-traversal.py] | _O(n)_| _O(n)_| Medium           |
-[Binary Tree Postorder Traversal]| [binary-tree-postorder-traversal.py] | _O(n)_| _O(n)_| Hard  |       
+[Binary Tree Preorder Traversal] | [binary-tree-preorder-traversal.py] | _O(n)_| _O(1)_| Medium | `Morris Traversal` 
+[Binary Tree Inorder Traversal]  | [binary-tree-inorder-traversal.py] | _O(n)_| _O(1)_| Medium           | `Morris Traversal` 
+[Binary Tree Postorder Traversal]| [binary-tree-postorder-traversal.py] | _O(n)_| _O(1)_| Hard  | `Morris Traversal` 
+[Recover Binary Search Tree]| [recover-binary-search-tree.py] | _O(n)_| _O(1)_| Hard  | `Morris Traversal`      
 
 [Binary Tree Preorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
 [binary-tree-preorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-preoder-traversal.py
@@ -160,6 +161,9 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [binary-tree-inorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-inorder-traversal.py
 [Binary Tree Postorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
 [binary-tree-postorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-postorder-traversal.py
+[Recover Binary Search Tree]:https://oj.leetcode.com/problems/recover-binary-search-tree/
+[recover-binary-search-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/recover-binary-search-tree.py
+
 --- 
 
 ##Graph
