@@ -199,7 +199,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Gray Code]     | [gray-code.py]  | _O(2^n)_        | _O(1)_          | Medium         |
 [Integer to Roman] | [integer-to-roman.py] | _O(n)_ | _O(1)_          | Medium         |
-[Palindrome Number] | [palindrome-number.py] | _O(1)_ | _O(1)_       | Easy           |
+[Palindrome Number] | [palindrome-number.py] | _O(1)_ | _O(1)_        | Easy           |
+[Permutation Sequence] | [permutation-sequence.py] | _O(n)_ | _O(1)_  | Medium         | `Cantor Ordering`
 
 [Gray Code]:https://oj.leetcode.com/problems/gray-code/
 [gray-code.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/gray-code.py
@@ -207,6 +208,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [integer-to-roman.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/integer-to-roman.py
 [Palindrome Number]:https://oj.leetcode.com/problems/palindrome-number/
 [palindrome-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/palindrome-number.py
+[Permutation Sequence]:https://oj.leetcode.com/problems/permutation-sequence/
+[permutation-sequence.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/permutation-sequence.py
 
 --- 
 
