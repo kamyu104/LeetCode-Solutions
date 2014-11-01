@@ -330,7 +330,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Maximum Depth of Binary Tree]|[maximum-depth-of-binary-tree.py]| _O(n)_ | _O(logn)_ | Easy |
 [Minimum Depth of Binary Tree]|[minimum-depth-of-binary-tree.py]| _O(n)_ | _O(logn)_ | Easy |
 [Populating Next Right Pointers in Each Node]|[populating-next-right-pointers-in-each-node.py]| _O(n)_ | _O(logn)_ | Medium |
-[Same Tree]      |[same-tree.py]  | _O(n)_          | _O(logn)_        | Medium        |
+[Same Tree]      |[same-tree.py]  | _O(n)_          | _O(logn)_        | Easy          |
 
 [Construct Binary Tree from Inorder and Postorder Traversal]:https://oj.leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 [construct-binary-tree-from-inorder-and-postorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/construct-binary-tree-from-inorder-and-postorder-traversal.py
