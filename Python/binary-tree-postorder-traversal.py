@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(n)
+# Space: O(1)
 #
 # Given a binary tree, return the postorder traversal of its nodes' values.
 #
