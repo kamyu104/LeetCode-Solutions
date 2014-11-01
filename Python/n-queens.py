@@ -59,7 +59,7 @@ class Solution2:
             self.solutions.append(map(lambda x: '.' * x + "Q" + '.' * (n - x - 1), solution))
         else:
             for i in xrange(n):
-                if i not in solution and reduce(lambda acc, j: abs(row - j) != abs(i - solution[j]) and acc, range(len(solution)), True):
+                if i not in solution and reduce(lambda acc, j: abs(row - j) != abs(i - solution[j]) and acc, xrange(len(solution)), True):
                     self.solveNQueensRecu(solution + [i], row + 1, n)
 
 if __name__ == "__main__":

@@ -315,8 +315,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Binary Tree Maximum Path Sum]| [binary-tree-maximum-path-sum.py] | _O(n)_| _O(logn)_| Hard  |  
 [Combination Sum]| [combination-sum.py] | _O(n^m)_    | _O(m)_          | Medium         |
 [Combination Sum II]| [combination-sum-ii.py]| _O(n! / m!(n-m)!)_| _O(m)_         | Medium         |
-[Combinations]| [combinations.py]  | _O(n!)_        | _O(n)_          | Medium         |
+[Combinations]  | [combinations.py] | _O(n!)_       | _O(n)_          | Medium         |
 [Generate Parentheses]| [generate-parentheses.py]| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         |
+[N-Queens]      | [n-queens.py]   | _O(n!)_         | _O(n)_          | Hard           |
+[N-Queens-II]   | [n-queens-ii.py] | _O(n!)_        | _O(n)_          | Hard           |
 
 [Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
 [balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
@@ -330,6 +332,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [combinations.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/combinations.py
 [Generate Parentheses]:https://oj.leetcode.com/problems/generate-parentheses/
 [generate-parentheses.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/generate-parentheses.py
+[N-Queens]:https://oj.leetcode.com/problems/n-queens/
+[n-queens.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/n-queens.py
+[N-Queens-II]:https://oj.leetcode.com/problems/n-queens-ii/
+[n-queens-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/n-queens-ii.py
 
 --- 
 
