@@ -155,8 +155,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Binary Tree Postorder Traversal]| [binary-tree-postorder-traversal.py] | _O(n)_| _O(1)_| Hard  | `Morris Traversal` 
 [Recover Binary Search Tree]| [recover-binary-search-tree.py] | _O(n)_| _O(1)_| Hard  | `Morris Traversal`      
 
-[Binary Tree Preorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
-[binary-tree-preorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-preoder-traversal.py
+[Binary Tree Preorder Traversal]:https://oj.leetcode.com/problems/binary-tree-preorder-traversal/
+[binary-tree-preorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-preorder-traversal.py
 [Binary Tree Inorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
 [binary-tree-inorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-inorder-traversal.py
 [Binary Tree Postorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
