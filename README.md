@@ -49,6 +49,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Best Time to Buy and Sell Stock]| [best-time-to-buy-and-sell-stock.py] | _O(n)_ | _O(1)_ | Medium |
 [First Missing Positive]| [first-missing-positive.py] | _O(n)_ | _O(1)_ | Hard         |
 [Longest Consecutive Sequence]| [longest-consecutive-sequence.py] | _O(n)_ | _O(n)_ | Easy         | Tricky
+[Next Permutation]| [next-permutation.py] | _O(n)_ | _O(1)_ | Medium       | Tricky
 
 [3 Sum]: https://oj.leetcode.com/problems/3sum/
 [3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum.py
@@ -62,6 +63,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [first-missing-positive.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/first-missing-positive.py
 [Longest Consecutive Sequence]:https://oj.leetcode.com/problems/longest-consecutive-sequence/
 [longest-consecutive-sequence.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-consecutive-sequence.py
+[Next Permutation]:https://oj.leetcode.com/problems/next-permutation/
+[next-permutation.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/next-permutation.py
 
 --- 
 
