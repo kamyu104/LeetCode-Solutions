@@ -337,7 +337,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Maximal Rectangle]|[maximal-rectangle.py]| _O(n^2)_ | _O(n)_         | Hard           |
 [Maximum Product Subarray]|[maximum-product-subarray.py]| _O(n)_ | _O(1)_ | Medium     |
 [Maximum Subarray]|[maximum-subarray.py]| _O(n)_     | _O(1)_         | Medium         |
-[Minimum Path Sum]|[minimum-path-sum.py]| _O(n)_     | _O(1)_         | Medium         |
+[Minimum Path Sum]|[minimum-path-sum.py]| _O(m * n)_ | _O(m + n)_     | Medium         |
 
 [Best Time to Buy and Sell Stock III]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 [best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
