@@ -335,6 +335,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [N-Queens]      | [n-queens.py]   | _O(n!)_         | _O(n)_          | Hard           |
 [N-Queens-II]   | [n-queens-ii.py] | _O(n!)_        | _O(n)_          | Hard           |
 [Palindrome Partitioning] | [palindrome-partitioning.py] | _O(n^2)_ ~ _O(2^n)_) | _O(n^2)_ | Medium |
+[Path Sum]      | [path-sum.py]   | _O(n)_          | _O(logn)_       | Easy           |
+[Path Sum II]   | [path-sum-ii.py] | _O(n)_         | _O(logn)_       | Medium         |
 
 [Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
 [balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
@@ -354,6 +356,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [n-queens-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/n-queens-ii.py
 [Palindrome Partitioning]:https://oj.leetcode.com/problems/palindrome-partitioning/
 [palindrome-partitioning.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/palindrome-partitioning.py
+[Path Sum]:https://oj.leetcode.com/problems/path-sum/
+[path-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/path-sum.py
+[Path Sum II]:https://oj.leetcode.com/problems/path-sum-ii/
+[path-sum-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/path-sum-ii.py
 
 --- 
 
