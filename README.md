@@ -35,7 +35,13 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ##Bit Manipulation
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-|||||
+[Single Number] | [single-number.py] | _O(n)_       | _O(1)_          | Medium         |
+[Single Number II] | [single-number-ii.py] | _O(n)_ | _O(1)_          | Medium         |
+
+[Single Number]: https://oj.leetcode.com/problems/single-number/
+[single-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/single-number.py
+[Single Number II]: https://oj.leetcode.com/problems/single-number-ii/
+[single-number-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/single-number-ii.py
 
 --- 
 
