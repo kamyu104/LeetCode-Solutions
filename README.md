@@ -231,6 +231,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Convert Sorted Array to Binary Search Tree] | [convert-sorted-array-to-binary-search-tree.py] | _O(n)_        | _O(logn)_          | Medium         |
 [Convert Sorted List to Binary Search Tree] | [convert-sorted-list-to-binary-search-tree.py] | _O(n)_        | _O(logn)_          | Medium         |
 [Flatten Binary Tree to Linked List]|[flatten-binary-tree-to-linked-list.py]| _O(n)_        | _O(logn)_          | Medium         |
+[Maximum Depth of Binary Tree]|[maximum-depth-of-binary-tree.py]| _O(n)_        | _O(logn)_          | Easy         |
 
 [Construct Binary Tree from Inorder and Postorder Traversal]:https://oj.leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 [construct-binary-tree-from-inorder-and-postorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/construct-binary-tree-from-inorder-and-postorder-traversal.py
@@ -242,6 +243,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [convert-sorted-list-to-binary-search-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/convert-sorted-list-to-binary-search-tree.py
 [Flatten Binary Tree to Linked List]:https://oj.leetcode.com/problems/flatten-binary-tree-to-linked-list/
 [flatten-binary-tree-to-linked-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/flatten-binary-tree-to-linked-list.py
+[Maximum Depth of Binary Tree]:https://oj.leetcode.com/problems/maximum-depth-of-binary-tree/
+[maximum-depth-of-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/maximum-depth-of-binary-tree.py
 
 --- 
 
