@@ -24,16 +24,16 @@ class Solution:
     # @return a list of lists of integers
     def combinationSum2(self, candidates, target):
         result = []
-        self.combinationSumDFS(sorted(candidates), result, 0, [], target)
+        self.combinationSumRecu(sorted(candidates), result, 0, [], target)
         return result
     
-    def combinationSumDFS(self, candidates, result, start, intermediate, target):
+    def combinationSumRecu(self, candidates, result, start, intermediate, target):
         if target == 0:
             result.append(intermediate)
         prev = 0
         while start < len(candidates) and candidates[start] <= target:
             if prev != candidates[start]:
-                self.combinationSumDFS(candidates, result, start + 1, intermediate + [candidates[start]], target - candidates[start])
+                self.combinationSumRecu(candidates, result, start + 1, intermediate + [candidates[start]], target - candidates[start])
                 prev = candidates[start]
             start += 1
 
