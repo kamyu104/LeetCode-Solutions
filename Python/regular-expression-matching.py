@@ -21,7 +21,7 @@
 # isMatch("aab", "c*a*b") -> true
 #
 
-# dp
+# dp with rolling window
 class Solution:
     # @return a boolean
     def isMatch(self, s, p):
