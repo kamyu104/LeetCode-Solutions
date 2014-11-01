@@ -15,7 +15,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Stack](https://github.com/kamyu104/LeetCode#stack)
 * [Heap](https://github.com/kamyu104/LeetCode#heap)
 * [Tree](https://github.com/kamyu104/LeetCode#tree)
-* [Graph](https://github.com/kamyu104/LeetCode#graph)
 * [Hash Table](https://github.com/kamyu104/LeetCode#hash-table)
 * [Data Structure](https://github.com/kamyu104/LeetCode#data-structure)
 * [Math](https://github.com/kamyu104/LeetCode#math)
@@ -216,13 +215,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 --- 
 
-##Graph
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-|||||
-
---- 
-
 ##Hash Table
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
@@ -334,6 +326,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Letter Combinations of a Phone Number]| [letter-combinations-of-a-phone-number.py] | _O(4^n)_ | _O(1)_ | Medium |
 [Permutations]| [permutations.py] | _O(n!)_         | _O(n)_          | Medium         |
 [Permutations II]| [permutations-ii.py] | _O(n!)_   | _O(n)_          | Hard           |
+[Subsets]| [subsets.py] | _O(2^n)_         | _O(n)_          | Medium         |
 
 [Letter Combinations of a Phone Number]:https://oj.leetcode.com/problems/letter-combinations-of-a-phone-number/
 [letter-combinations-of-a-phone-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/letter-combinations-of-a-phone-number.py
