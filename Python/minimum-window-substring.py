@@ -23,7 +23,6 @@ class Solution:
         for char in T:
             expected_count[ord(char) - ord('a')] += 1
         
-        
         i, count, start, min_width, min_start = 0, 0, 0, float("inf"), 0
         while i < len(S):
             current_count[ord(S[i]) - ord('a')] += 1

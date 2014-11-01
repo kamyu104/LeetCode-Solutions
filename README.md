@@ -157,12 +157,15 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Longest Substring Without Repeating Characters] | [longest-substring-without-repeating-characters.py] | _O(n)_ | _O(1)_ | Medium |
 [Max Points on a Line] | [max-points-on-a-line.py] | _O(n^2)_ | _O(n)_ | hard          |
+[Minimum Window Substring] | [minimum-window-substring.py] | _O(n^2)_ | _O(n)_ | hard          |
 
 
 [Longest Substring Without Repeating Characters]:https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/
 [longest-substring-without-repeating-characters.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-substring-without-repeating-characters.py
 [Max Points on a Line]:https://oj.leetcode.com/problems/max-points-on-a-line/
 [max-points-on-a-line.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/max-points-on-a-line.py
+[Minimum Window Substring]:https://oj.leetcode.com/problems/minimum-window-substring/
+[minimum-window-substring.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/minimum-window-substring.py
 
 --- 
 
