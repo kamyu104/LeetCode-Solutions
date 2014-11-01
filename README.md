@@ -255,9 +255,15 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Letter Combinations of a Phone Number]| [letter-combinations-of-a-phone-number.py] | _O(4^n)_ | _O(1)_ | Medium |
+[Permutations]| [permutations.py] | _O(n!)_         | _O(n)_          | Medium         |
+[Permutations II]| [permutations-ii.py] | _O(n!)_   | _O(n)_          | Hard           |
 
 [Letter Combinations of a Phone Number]:https://oj.leetcode.com/problems/letter-combinations-of-a-phone-number/
 [letter-combinations-of-a-phone-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/letter-combinations-of-a-phone-number.py
+[Permutations]:https://oj.leetcode.com/problems/permutations/
+[permutations.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/permutations.py
+[Permutations II]:https://oj.leetcode.com/problems/permutations-ii/
+[permutations-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/permutations-ii.py
 
 --- 
 
