@@ -55,6 +55,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Plus One]      | [plus-one.py]   | _O(n)_           | _O(1)_         | Easy           | 
 [Remove Duplicates from Sorted Array]| [remove-duplicates-from-sorted-array.py] | _O(n)_       | _O(1)_         | Easy           |
 [Remove Duplicates from Sorted Array II]| [remove-duplicates-from-sorted-array-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
+[Remove Element] | [remove-element.py] | _O(n)_      | _O(1)_         | Easy           | 
 
 [3 Sum]: https://oj.leetcode.com/problems/3sum/
 [3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum.py
@@ -80,6 +81,9 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [remove-duplicates-from-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-array.py
 [Remove Duplicates from Sorted Array II]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
 [remove-duplicates-from-sorted-array-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-array-ii.py
+[Remove Element]:https://oj.leetcode.com/problems/remove-element/
+[remove-element.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-element.py
+
 
 --- 
 
