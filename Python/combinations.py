@@ -20,15 +20,15 @@ class Solution:
     # @return a list of lists of integers
     def combine(self, n, k):
         result = []
-        self.combineDFS(n, result, 0, [], k)
+        self.combineRecu(n, result, 0, [], k)
         return result
     
-    def combineDFS(self, n, result, start, intermediate, k):
+    def combineRecu(self, n, result, start, intermediate, k):
         if k == 0:
             result.append(intermediate[:])
         for i in xrange(start, n):
             intermediate.append(i + 1)
-            self.combineDFS(n, result, i + 1, intermediate, k - 1)
+            self.combineRecu(n, result, i + 1, intermediate, k - 1)
             intermediate.pop()
 
 if __name__ == "__main__":
