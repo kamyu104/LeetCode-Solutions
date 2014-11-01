@@ -1,4 +1,4 @@
-# Time:  O(n * n)
+# Time:  O(n^2)
 # Space: O(1)
 #
 # Given a collection of intervals, merge all overlapping intervals.
