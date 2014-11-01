@@ -276,8 +276,9 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Insert Interval]| [insert-interval.py] | _O(n)_    | _O(1)_          | Hard           |
 [Insertion Sort List]|[insertion-sort-list.py] | _O(n^2))_ | _O(1)_   | Medium         |
-[Merge Intervals]| [merge-intervals.py] | _O(n^2)_    | _O(1)_       | Hard           |
-[Merge Two Sorted Lists]| [merge-two-sorted-lists.py] | _O(n)_ | _O(1)_ | Easy        |
+[Merge Intervals]| [merge-intervals.py] | _O(n^2)_  | _O(1)_          | Hard           |
+[Sort Colors]   | [sort-colors.py] | _O(n)_         | _O(1)_          | Medium         |
+
 
 [Insert Interval]:https://oj.leetcode.com/problems/insert-interval/
 [insert-interval.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insert-interval.py
@@ -287,6 +288,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [merge-intervals.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-intervals.py
 [Merge Two Sorted Lists]:https://oj.leetcode.com/problems/merge-two-sorted-lists/
 [merge-two-sorted-lists.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-two-sorted-lists.py
+[Sort Colors]:https://oj.leetcode.com/problems/sort-colors/
+[sort-colors.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sort-colors.py
 
 ---
 
