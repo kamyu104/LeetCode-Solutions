@@ -22,14 +22,14 @@ class Solution:
     # @return a list of lists of integers
     def combinationSum(self, candidates, target):
         result = []
-        self.combinationSumDFS(sorted(candidates), result, 0, [], target)
+        self.combinationSumRecu(sorted(candidates), result, 0, [], target)
         return result
     
-    def combinationSumDFS(self, candidates, result, start, intermediate, target):
+    def combinationSumRecu(self, candidates, result, start, intermediate, target):
         if target == 0:
             result.append(intermediate)
         while start < len(candidates) and candidates[start] <= target:
-            self.combinationSumDFS(candidates, result, start, intermediate + [candidates[start]], target - candidates[start])
+            self.combinationSumRecu(candidates, result, start, intermediate + [candidates[start]], target - candidates[start])
             start += 1
 
 if __name__ == "__main__":
