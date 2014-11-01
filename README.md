@@ -279,6 +279,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Insert Interval]| [insert-interval.py] | _O(n)_    | _O(1)_          | Hard           |
 [Insertion Sort List]|[insertion-sort-list.py] | _O(n^2))_ | _O(1)_   | Medium         |
 [Merge Intervals]| [merge-intervals.py] | _O(n^2)_  | _O(1)_          | Hard           |
+[Merge Two Sorted Lists]| [merge-two-sorted-lists.py] | _O(n)_ | _O(1)_ | Easy         |
 [Sort Colors]   | [sort-colors.py] | _O(n)_         | _O(1)_          | Medium         |
 [Sort List]     | [sort-list.py]  | _O(nlogn)_      | _O(1)_          | Medium         |
 
