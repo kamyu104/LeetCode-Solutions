@@ -325,6 +325,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Generate Parentheses]| [generate-parentheses.py]| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         |
 [N-Queens]      | [n-queens.py]   | _O(n!)_         | _O(n)_          | Hard           |
 [N-Queens-II]   | [n-queens-ii.py] | _O(n!)_        | _O(n)_          | Hard           |
+[Palindrome Partitioning] | [palindrome-partitioning.py] | _O(n^2)_ ~ _O(2^n)_) | _O(n^2)_ | Medium |
 
 [Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
 [balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
@@ -342,6 +343,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [n-queens.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/n-queens.py
 [N-Queens-II]:https://oj.leetcode.com/problems/n-queens-ii/
 [n-queens-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/n-queens-ii.py
+[Palindrome Partitioning]:https://oj.leetcode.com/problems/palindrome-partitioning/
+[palindrome-partitioning.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/palindrome-partitioning.py
 
 --- 
 
@@ -358,6 +361,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Maximum Product Subarray]|[maximum-product-subarray.py]| _O(n)_ | _O(1)_ | Medium     |
 [Maximum Subarray]|[maximum-subarray.py]| _O(n)_     | _O(1)_         | Medium         |
 [Minimum Path Sum]|[minimum-path-sum.py]| _O(m * n)_ | _O(m + n)_     | Medium         |
+[Palindrome Partitioning II] | [palindrome-partitioning-ii.py] | _O(n^2)_ | _O(n^2)_ | Hard |
 
 [Best Time to Buy and Sell Stock III]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 [best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
@@ -379,6 +383,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [maximum-subarray.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/maximum-subarray.py
 [Minimum Path Sum]:https://oj.leetcode.com/problems/minimum-path-sum/
 [minimum-path-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/minimum-path-sum.py
+[Palindrome Partitioning II]:https://oj.leetcode.com/problems/palindrome-partitioning-ii/
+[palindrome-partitioning-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/palindrome-partitioning-ii.py
 
 
 --- 

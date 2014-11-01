@@ -47,21 +47,21 @@ class Solution2:
     # @return a list of lists of string
     def partition(self, s):
         result = []
-        self.partitionRecur(result, [], s, 0)
+        self.partitionRecu(result, [], s, 0)
         return result
         
-    def partitionRecur(self, result, cur, s, i):
+    def partitionRecu(self, result, cur, s, i):
         if i == len(s):
             result.append(list(cur))
         else:
             for j in xrange(i, len(s)):
                 if self.isPalindrome(s[i: j + 1]):
                     cur.append(s[i: j + 1])
-                    self.partitionRecur(result, cur, s, j + 1)
+                    self.partitionRecu(result, cur, s, j + 1)
                     cur.pop()
                 
     def isPalindrome(self, s):
-        for i in range(len(s) / 2):
+        for i in xrange(len(s) / 2):
             if s[i] != s[-(i + 1)]:
                 return False
         return True
