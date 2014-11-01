@@ -156,8 +156,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Longest Substring Without Repeating Characters] | [longest-substring-without-repeating-characters.py] | _O(n)_ | _O(1)_ | Medium |
-[Max Points on a Line] | [max-points-on-a-line.py] | _O(n^2)_ | _O(n)_ | hard          |
-[Minimum Window Substring] | [minimum-window-substring.py] | _O(n^2)_ | _O(n)_ | hard          |
+[Max Points on a Line] | [max-points-on-a-line.py] | _O(n^2)_ | _O(n)_ | Hard          |
+[Minimum Window Substring] | [minimum-window-substring.py] | _O(n^2)_ | _O(n)_ | Hard          |
 
 
 [Longest Substring Without Repeating Characters]:https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/
