@@ -1,4 +1,4 @@
-# Time:  O(n^2)
+# Time:  O(n)
 # Space: O(1)
 #
 # The set [1,2,3,...,n] contains a total of n! unique permutations.
@@ -16,6 +16,7 @@
 # 
 # Note: Given n will be between 1 and 9 inclusive.
 #
+
 import math
 
 # Cantor ordering solution
