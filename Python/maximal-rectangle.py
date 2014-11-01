@@ -15,9 +15,9 @@ class Solution:
         result = 0
         m = len(matrix)
         n = len(matrix[0])
-        L = [0 for i in xrange(n)]
-        H = [0 for i in xrange(n)]
-        R = [n for i in xrange(n)]
+        L = [0 for _ in xrange(n)]
+        H = [0 for _ in xrange(n)]
+        R = [n for _ in xrange(n)]
 
         for i in xrange(m):
             left = 0
