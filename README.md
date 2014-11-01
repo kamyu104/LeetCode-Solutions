@@ -162,7 +162,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Remove Duplicates from Sorted List II]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
 [remove-duplicates-from-sorted-list-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-list-ii.py
 [Reverse Linked List II]:https://oj.leetcode.com/problems/reverse-linked-list-ii/
-[reverse-linked-list-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-linked-list-ii.pyii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-linked-list-ii.py
+[reverse-linked-list-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-linked-list-ii.py
 [Reverse Nodes in k-Group]:https://oj.leetcode.com/problems/reverse-nodes-in-k-group/
 [reverse-nodes-in-k-group.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-nodes-in-k-group.py
 [Rotate List]:https://oj.leetcode.com/problems/rotate-list/
