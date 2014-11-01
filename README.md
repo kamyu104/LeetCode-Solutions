@@ -348,6 +348,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Divide and Conquer
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
+[Balanced Binary Tree] | [balanced-binary-tree.py] | _O(n)_| _O(logn)_| Easy           |
+[Binary Tree Maximum Path Sum]| [binary-tree-maximum-path-sum.py] | _O(n)_| _O(logn)_| Hard  |  
 [Construct Binary Tree from Inorder and Postorder Traversal] | [construct-binary-tree-from-inorder-and-postorder-traversal.py] | _O(n)_        | _O(n)_          | Medium         |
 [Construct Binary Tree from Preorder and Inorder Traversal] | [construct-binary-tree-from-preorder-and-inorder-traversal.py] | _O(n)_        | _O(n)_          | Medium   
 [Convert Sorted Array to Binary Search Tree] | [convert-sorted-array-to-binary-search-tree.py] | _O(n)_        | _O(logn)_          | Medium         |
@@ -357,7 +359,12 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Minimum Depth of Binary Tree]|[minimum-depth-of-binary-tree.py]| _O(n)_ | _O(logn)_ | Easy |
 [Populating Next Right Pointers in Each Node]|[populating-next-right-pointers-in-each-node.py]| _O(n)_ | _O(logn)_ | Medium |
 [Same Tree]      |[same-tree.py]  | _O(n)_          | _O(logn)_        | Easy          |
+[Sum Root to Leaf Numbers] | [sum-root-to-leaf-numbers.py] | _O(n)_ | _O(logn)_ | Medium |
 
+[Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
+[balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
+[Binary Tree Maximum Path Sum]:https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/
+[binary-tree-maximum-path-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-maximum-path-sum.py
 [Construct Binary Tree from Inorder and Postorder Traversal]:https://oj.leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 [construct-binary-tree-from-inorder-and-postorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/construct-binary-tree-from-inorder-and-postorder-traversal.py
 [Construct Binary Tree from Preorder and Inorder Traversal]:https://oj.leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
@@ -376,6 +383,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [populating-next-right-pointers-in-each-node.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/populating-next-right-pointers-in-each-node.py
 [Same Tree]:https://oj.leetcode.com/problems/same-tree/
 [same-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/same-tree.py
+[Sum Root to Leaf Numbers]:https://oj.leetcode.com/problems/sum-root-to-leaf-numbers/
+[sum-root-to-leaf-numbers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sum-root-to-leaf-numbers.py
 
 
 --- 
@@ -444,8 +453,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Depth-First Search
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Balanced Binary Tree] | [balanced-binary-tree.py] | _O(n)_| _O(logn)_| Easy           |
-[Binary Tree Maximum Path Sum]| [binary-tree-maximum-path-sum.py] | _O(n)_| _O(logn)_| Hard  |  
 [Combination Sum]| [combination-sum.py] | _O(n^m)_    | _O(m)_          | Medium         |
 [Combination Sum II]| [combination-sum-ii.py]| _O(n! / m!(n-m)!)_| _O(m)_         | Medium         |
 [Combinations]  | [combinations.py] | _O(n!)_       | _O(n)_          | Medium         |
@@ -458,10 +465,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Restore IP Addresses] | [restore-ip-addresses.py] | _O(n^m)_ ~ _O(3^4)_ | _O(n * m)_ ~ _O(3 * 4)_ | Medium         |
 [Sudoku Solver] | [sudoku-solver.py] | _O((9!)^9)_  | _O(1)_          | Hard           |
 
-[Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
-[balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
-[Binary Tree Maximum Path Sum]:https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/
-[binary-tree-maximum-path-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-maximum-path-sum.py
 [Combination Sum]:https://oj.leetcode.com/problems/combination-sum/
 [combination-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/combination-sum.py
 [Combination Sum II]:https://oj.leetcode.com/problems/combination-sum-ii/
