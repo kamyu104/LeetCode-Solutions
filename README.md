@@ -75,6 +75,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Length of Last Word] | [length-of-last-word.py] | _O(n)_   | _O(1)_  | Easy           |
 [Longest Common Prefix] | [longest-common-prefix.py] | _O(n1 + n2 + ...)_   | _O(1)_  | Easy           |
 [Longest Palindromic Substring] | [longest-palindromic-substring.py] | _O(n)_ | _O(n)_ |  Medium | `Manacher's Algorithm`
+[Multiply Strings] | [multiply-strings.py] | _O(m * n)_ | _O(m + n)_  | Medium         |
+
 
 [Add Binary]:https://oj.leetcode.com/problems/add-binary/
 [add-binary.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-binary.py
@@ -83,13 +85,16 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Count and Say]:https://oj.leetcode.com/problems/count-and-say/
 [count-and-say.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/count-and-say.py
 [Implement strStr()]:https://oj.leetcode.com/problems/implement-strstr/
-[implement-strstr.py]:https://oj.leetcode.com/problems/implement-strstr.py
+[implement-strstr.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/implement-strstr.py
 [Length of Last Word]:https://oj.leetcode.com/problems/length-of-last-word/
-[length-of-last-word.py]:https://oj.leetcode.com/problems/length-of-last-word.py
+[length-of-last-word.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/length-of-last-word.py
 [Longest Common Prefix]:https://oj.leetcode.com/problems/longest-common-prefix/
-[longest-common-prefix.py]:https://oj.leetcode.com/problems/longest-common-prefix.py
+[longest-common-prefix.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-common-prefix.py
 [Longest Palindromic Substring]:https://oj.leetcode.com/problems/longest-palindromic-substring/
-[longest-palindromic-substring.py]:longest-palindromic-substring.py
+[longest-palindromic-substring.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-palindromic-substring.py
+[Multiply Strings]:https://oj.leetcode.com/problems/multiply-strings/
+[multiply-strings.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/multiply-strings.py
+
 
 --- 
 
