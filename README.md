@@ -50,6 +50,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [First Missing Positive]| [first-missing-positive.py] | _O(n)_ | _O(1)_ | Hard         |
 [Longest Consecutive Sequence]| [longest-consecutive-sequence.py] | _O(n)_ | _O(n)_ | Easy         | Tricky
 [Next Permutation]| [next-permutation.py] | _O(n)_ | _O(1)_ | Medium       | Tricky
+[Pascal's Triangle]| [pascals-triangle.py] | _O(n^2)_ | _O(n)_        | Easy           | 
+[Pascal's Triangle II]| [pascals-triangle-ii.py] | _O(n^2)_ | _O(n)_  | Easy           | 
 
 [3 Sum]: https://oj.leetcode.com/problems/3sum/
 [3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum.py
@@ -65,6 +67,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [longest-consecutive-sequence.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-consecutive-sequence.py
 [Next Permutation]:https://oj.leetcode.com/problems/next-permutation/
 [next-permutation.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/next-permutation.py
+[Pascal's Triangle]:https://oj.leetcode.com/problems/pascals-triangle/
+[pascals-triangle.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/pascals-triangle.py
+[Pascal's Triangle II]:https://oj.leetcode.com/problems/pascals-triangle-ii/
+[pascals-triangle-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/pascals-triangle-ii.py
 
 --- 
 
