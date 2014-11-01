@@ -50,7 +50,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [3 Sum]         | [3sum.py]       | _O(n^2)_        | _O(1)_          | Medium         |
 [3 Sum Closest] | [3sum-closest.py]| _O(n^2)_       | _O(1)_          | Medium         |
-[4 Sum]         |[4sum.py]        | _O(n^2)_ ~ _O(n^4)_ | _O(n^2)_         | Medium         |
 [Best Time to Buy and Sell Stock]| [best-time-to-buy-and-sell-stock.py] | _O(n)_ | _O(1)_ | Medium |
 [First Missing Positive]| [first-missing-positive.py] | _O(n)_ | _O(1)_ | Hard         |
 [Longest Consecutive Sequence]| [longest-consecutive-sequence.py] | _O(n)_ | _O(n)_ | Easy         | Tricky
@@ -71,8 +70,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum.py
 [3 Sum Closest]: https://oj.leetcode.com/problems/3sum-closest/
 [3sum-closest.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum-closest.py
-[4 Sum]: https://oj.leetcode.com/problems/4sum/
-[4sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/4sum.py
 [Best Time to Buy and Sell Stock]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/
 [best-time-to-buy-and-sell-stock.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock.py
 [First Missing Positive]:https://oj.leetcode.com/problems/first-missing-positive/
@@ -227,12 +224,15 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Hash Table
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
+[4 Sum]         |[4sum.py]        | _O(n^2)_ ~ _O(n^4)_ | _O(n^2)_    | Medium         |
 [Longest Substring Without Repeating Characters] | [longest-substring-without-repeating-characters.py] | _O(n)_ | _O(1)_ | Medium |
 [Max Points on a Line] | [max-points-on-a-line.py] | _O(n^2)_ | _O(n)_ | Hard          |
 [Minimum Window Substring] | [minimum-window-substring.py] | _O(n^2)_ | _O(n)_ | Hard          |
 [Substring with Concatenation of All Words] | [substring-with-concatenation-of-all-words.py] | _O(m * n * k)_ | _O(n * k)_ | Hard          |
 [Two Sum]      | [two-sum.py]      | _O(n)_         | _O(n)_          | Medium         |
 
+[4 Sum]: https://oj.leetcode.com/problems/4sum/
+[4sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/4sum.py
 [Longest Substring Without Repeating Characters]:https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/
 [longest-substring-without-repeating-characters.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-substring-without-repeating-characters.py
 [Max Points on a Line]:https://oj.leetcode.com/problems/max-points-on-a-line/
