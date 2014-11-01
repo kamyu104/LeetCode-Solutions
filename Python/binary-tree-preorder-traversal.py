@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(n)
+# Space: O(1)
 #
 # Given a binary tree, return the preorder traversal of its nodes' values.
 #
@@ -22,7 +22,37 @@ class TreeNode:
         self.left = None
         self.right = None
 
+# Morris Traversal Solution
 class Solution:
+    # @param root, a tree node
+    # @return a list of integers
+    def preorderTraversal(self, root):
+        result, prev, cur = [], None, root
+        while cur:
+            if cur.left is None:
+                result.append(cur.val)
+                prev = cur
+                cur = cur.right
+            else:
+                node = cur.left
+                while node.right and node.right != cur:
+                    node = node.right
+            
+                if node.right is None:
+                    result.append(cur.val)
+                    node.right = cur
+                    prev =cur
+                    cur = cur.left
+                else:
+                    node.right = None
+                    cur = cur.right
+                
+        return result
+
+# Time:  O(n)
+# Space: O(n)
+# Stack Solution     
+class Solution2:
     # @param root, a tree node
     # @return a list of integers
     def preorderTraversal(self, root):

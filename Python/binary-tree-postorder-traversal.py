@@ -22,7 +22,48 @@ class TreeNode:
         self.left = None
         self.right = None
 
+# Morris Traversal Solution
 class Solution:
+    # @param root, a tree node
+    # @return a list of integers
+    def postorderTraversal(self, root):
+        dummy = TreeNode(0)
+        dummy.left = root
+        result, cur = [], dummy
+        while cur:
+            if cur.left is None:
+                prev = cur
+                cur = cur.right
+            else:
+                node = cur.left
+                while node.right and node.right != cur:
+                    node = node.right
+            
+                if node.right is None:
+                    node.right = cur
+                    prev = cur
+                    cur = cur.left
+                else:
+                    result += self.traceBack(cur.left, node)
+                    node.right = None
+                    prev = cur
+                    cur = cur.right
+        
+        return result
+    
+    def traceBack(self, frm, to):
+        result, cur = [], frm
+        while cur is not to:
+            result.append(cur.val)
+            cur = cur.right
+        result.append(to.val)
+        result.reverse()
+        return result
+
+# Time:  O(n)
+# Space: O(n)
+# Stack Solution 
+class Solution2:
     # @param root, a tree node
     # @return a list of integers
     def postorderTraversal(self, root):
