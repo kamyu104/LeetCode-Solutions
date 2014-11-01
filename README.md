@@ -118,6 +118,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Multiply Strings] | [multiply-strings.py] | _O(m * n)_ | _O(m + n)_  | Medium         |
 [Reverse Words in a String] | [reverse-words-in-a-string.py] | _O(n)_ | _O(n)_ | Medium         |
 [String to Integer (atoi)] | [string-to-integer-atoi.py] | _O(n)_ | _O(1)_ | Easy      |
+[Text Justification] | [text-justification.py] | _O(n)_ | _O(1)_      | Hard           |
 
 [Add Binary]:https://oj.leetcode.com/problems/add-binary/
 [add-binary.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-binary.py
@@ -139,6 +140,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [reverse-words-in-a-string.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-words-in-a-string.py
 [String to Integer (atoi)]:https://oj.leetcode.com/problems/string-to-integer-atoi/
 [string-to-integer-atoi.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/string-to-integer-atoi.py
+[Text Justification]:https://oj.leetcode.com/problems/text-justification/
+[text-justification.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/text-justification.py
 
 --- 
 
