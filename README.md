@@ -384,6 +384,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Palindrome Partitioning] | [palindrome-partitioning.py] | _O(n^2)_ ~ _O(2^n)_) | _O(n^2)_ | Medium |
 [Path Sum]      | [path-sum.py]   | _O(n)_          | _O(logn)_       | Easy           |
 [Path Sum II]   | [path-sum-ii.py] | _O(n)_         | _O(logn)_       | Medium         |
+[Restore IP Addresses] | [restore-ip-addresses.py] | _O(n^m)_ ~ _O(3^4)_ | _O(n * m)_ ~ _O(3 * 4)_ | Medium         |
 
 [Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
 [balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
@@ -407,7 +408,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [path-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/path-sum.py
 [Path Sum II]:https://oj.leetcode.com/problems/path-sum-ii/
 [path-sum-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/path-sum-ii.py
-
+[Restore IP Addresses]:https://oj.leetcode.com/problems/restore-ip-addresses/
+[restore-ip-addresses.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/restore-ip-addresses.py
 --- 
 
 ##Dynamic Programming

@@ -1,4 +1,4 @@
-# Time:  O(n ^ m) = O(3 ^ 4)
+# Time:  O(n^m) = O(3^4)
 # Space: O(n * m) = O(3 * 4)
 #
 # Given a string containing only digits, restore it by returning all possible valid IP address combinations.
