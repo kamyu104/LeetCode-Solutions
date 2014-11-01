@@ -52,6 +52,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Next Permutation]| [next-permutation.py] | _O(n)_ | _O(1)_ | Medium       | Tricky
 [Pascal's Triangle]| [pascals-triangle.py] | _O(n^2)_ | _O(n)_        | Easy           | 
 [Pascal's Triangle II]| [pascals-triangle-ii.py] | _O(n^2)_ | _O(n)_  | Easy           | 
+[Plus One]      | [plus-one.py]   | _O(n)_           | _O(1)_         | Easy           | 
 
 [3 Sum]: https://oj.leetcode.com/problems/3sum/
 [3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum.py
@@ -71,6 +72,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [pascals-triangle.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/pascals-triangle.py
 [Pascal's Triangle II]:https://oj.leetcode.com/problems/pascals-triangle-ii/
 [pascals-triangle-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/pascals-triangle-ii.py
+[Plus One]:https://oj.leetcode.com/problems/plus-one/
+[plus-one.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/plus-one.py
 
 --- 
 
@@ -277,6 +280,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Flatten Binary Tree to Linked List]|[flatten-binary-tree-to-linked-list.py]| _O(n)_        | _O(logn)_          | Medium         |
 [Maximum Depth of Binary Tree]|[maximum-depth-of-binary-tree.py]| _O(n)_ | _O(logn)_ | Easy |
 [Minimum Depth of Binary Tree]|[minimum-depth-of-binary-tree.py]| _O(n)_ | _O(logn)_ | Easy |
+[Populating Next Right Pointers in Each Node]|[populating-next-right-pointers-in-each-node.py]| _O(n)_ | _O(logn)_ | Medium |
 
 [Construct Binary Tree from Inorder and Postorder Traversal]:https://oj.leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 [construct-binary-tree-from-inorder-and-postorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/construct-binary-tree-from-inorder-and-postorder-traversal.py
@@ -292,6 +296,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [maximum-depth-of-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/maximum-depth-of-binary-tree.py
 [Minimum Depth of Binary Tree]:https://oj.leetcode.com/problems/minimum-depth-of-binary-tree/
 [minimum-depth-of-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/minimum-depth-of-binary-tree.py
+[Populating Next Right Pointers in Each Node]:https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node/
+[populating-next-right-pointers-in-each-node.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/populating-next-right-pointers-in-each-node.py
 
 --- 
 
@@ -319,7 +325,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Binary Tree Level Order Traversal]| [binary-tree-level-order-traversal.py] | _O(n)_| _O(n)_| Easy  |  
 [Binary Tree Level Order Traversal II]| [binary-tree-level-order-traversal-ii.py] | _O(n)_| _O(n)_| Easy  |       
 [Binary Tree Zigzag Level Order Traversal]| [binary-tree-zigzag-level-order-traversal.py] | _O(n)_| _O(n)_| Medium  |  
-[Clone Graph]| [clone-graph.py] | _O(n)_| _O(n)_| Medium  |
+[Clone Graph]| [clone-graph.py]   | _O(n)_          | _O(n)_          | Medium         |
+[Populating Next Right Pointers in Each Node II]|[populating-next-right-pointers-in-each-node-ii.py]| _O(n)_ | _O(1)_ | Hard |
 
 [Binary Tree Level Order Traversal]:https://oj.leetcode.com/problems/binary-tree-level-order-traversal/
 [binary-tree-level-order-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-level-order-traversal.py
@@ -329,6 +336,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [binary-tree-zigzag-level-order-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-zigzag-level-order-traversal.py
 [Clone Graph]:https://oj.leetcode.com/problems/clone-graph/
 [clone-graph.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/clone-graph.py
+[Populating Next Right Pointers in Each Node II]:https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
+[populating-next-right-pointers-in-each-node-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/populating-next-right-pointers-in-each-node-ii.py
 
 --- 
 
