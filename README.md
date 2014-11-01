@@ -193,11 +193,14 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Gray Code]     | [gray-code.py]  | _O(2^n)_        | _O(1)_          | Medium         |
 [Integer to Roman] | [integer-to-roman.py] | _O(n)_ | _O(1)_          | Medium         |
+[Palindrome Number] | [palindrome-number.py] | _O(1)_ | _O(1)_       | Easy           |
 
 [Gray Code]:https://oj.leetcode.com/problems/gray-code/
 [gray-code.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/gray-code.py
 [Integer to Roman]:https://oj.leetcode.com/problems/integer-to-roman/
 [integer-to-roman.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/integer-to-roman.py
+[Palindrome Number]:https://oj.leetcode.com/problems/palindrome-number/
+[palindrome-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/palindrome-number.py
 
 --- 
 
