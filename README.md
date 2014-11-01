@@ -456,6 +456,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Path Sum]      | [path-sum.py]   | _O(n)_          | _O(logn)_       | Easy           |
 [Path Sum II]   | [path-sum-ii.py] | _O(n)_         | _O(logn)_       | Medium         |
 [Restore IP Addresses] | [restore-ip-addresses.py] | _O(n^m)_ ~ _O(3^4)_ | _O(n * m)_ ~ _O(3 * 4)_ | Medium         |
+[Sudoku Solver] | [sudoku-solver.py] | _O((9!)^9)_  | _O(1)_          | Hard           |
 
 [Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
 [balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
@@ -481,6 +482,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [path-sum-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/path-sum-ii.py
 [Restore IP Addresses]:https://oj.leetcode.com/problems/restore-ip-addresses/
 [restore-ip-addresses.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/restore-ip-addresses.py
+[Sudoku Solver]:https://oj.leetcode.com/problems/sudoku-solver/
+[sudoku-solver.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sudoku-solver.py
 --- 
 
 ##Dynamic Programming

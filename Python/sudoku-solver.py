@@ -1,5 +1,5 @@
-# Time:  ((9!) ^ 9)
-# Space: (9 ^ 2)
+# Time:  ((9!)^9)
+# Space: (1)
 #
 # Write a program to solve a Sudoku puzzle by filling the empty cells.
 # 
