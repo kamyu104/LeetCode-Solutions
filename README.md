@@ -316,6 +316,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Edit Distance]|[edit-distance.py]| _O(n * m)_      | _O(n + m)_      | Medium         |
 [Interleaving String]|[interleaving-string.py]| _O(n * m)_ | _O(n + m)_ | Hard         |
 [Maximal Rectangle]|[maximal-rectangle.py]| _O(n^2)_ | _O(n)_         | Hard           |
+[Maximum Product Subarray]|[maximum-product-subarray.py]| _O(n)_ | _O(1)_ | Medium     |
+[Maximum Subarray]|[maximum-subarray.py]| _O(n)_     | _O(1)_         | Medium         |
 
 [Best Time to Buy and Sell Stock III]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 [best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
@@ -331,7 +333,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [interleaving-string.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/interleaving-string.py
 [Maximal Rectangle]:https://oj.leetcode.com/problems/maximal-rectangle/
 [maximal-rectangle.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/maximal-rectangle.py
-
+[Maximum Product Subarray]:https://oj.leetcode.com/problems/maximum-product-subarray/
+[maximum-product-subarray.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/maximum-product-subarray.py
+[Maximum Subarray]:https://oj.leetcode.com/problems/maximum-subarray/
+[maximum-subarray.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/maximum-subarray.py
 
 --- 
 
