@@ -231,7 +231,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Max Points on a Line] | [max-points-on-a-line.py] | _O(n^2)_ | _O(n)_ | Hard          |
 [Minimum Window Substring] | [minimum-window-substring.py] | _O(n^2)_ | _O(n)_ | Hard          |
 [Substring with Concatenation of All Words] | [substring-with-concatenation-of-all-words.py] | _O(m * n * k)_ | _O(n * k)_ | Hard          |
-
+[Two Sum]      | [two-sum.py]      | _O(n)_         | _O(n)_          | Hard           |
 
 [Longest Substring Without Repeating Characters]:https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/
 [longest-substring-without-repeating-characters.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-substring-without-repeating-characters.py
@@ -241,6 +241,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [minimum-window-substring.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/minimum-window-substring.py
 [Substring with Concatenation of All Words]:https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/
 [substring-with-concatenation-of-all-words.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/substring-with-concatenation-of-all-words.py
+[Two Sum]:https://oj.leetcode.com/problems/two-sum.py/
+[two-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/two-sum.py
 
 --- 
 
