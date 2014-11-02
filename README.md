@@ -183,6 +183,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Longest Valid Parentheses]| [longest-valid-parentheses.py] | _O(n)_ | _O(1)_ | Hard   |
 [Simplify Path]| [simplify-path.py] | _O(n)_        | _O(n)_          | Medium         |
 [Symmetric Tree]| [symmetric-tree.py] | _O(n)_      | _O(logn)_       | Easy           |
+[Valid Parentheses]| [valid-parentheses.py] | _O(n)_        | _O(n)_          | Easy           |
 
 [Evaluate Reverse Polish Notation]:https://oj.leetcode.com/problems/evaluate-reverse-polish-notation/
 [evaluate-reverse-polish-notation.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/evaluate-reverse-polish-notation.py
@@ -192,6 +193,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [simplify-path.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/simplify-path.py
 [Symmetric Tree]:https://oj.leetcode.com/problems/symmetric-tree/
 [symmetric-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/symmetric-tree.py
+[Valid Parentheses]:https://oj.leetcode.com/problems/valid-parentheses/
+[valid-parentheses.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/valid-parentheses.py
 
 --- 
 
