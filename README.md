@@ -116,7 +116,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Reverse Words in a String] | [reverse-words-in-a-string.py] | _O(n)_ | _O(n)_ | Medium         |
 [String to Integer (atoi)] | [string-to-integer-atoi.py] | _O(n)_ | _O(1)_ | Easy      |
 [Text Justification] | [text-justification.py] | _O(n)_ | _O(1)_      | Hard           |
-[Valid Palindrome]    | [valid-palindrome.py] | _O(n)_          | _O(1)_          | Easy           |
+[Valid Palindrome] | [valid-palindrome.py] | _O(n)_  | _O(1)_         | Easy           |
+[ZigZag Conversion] | [zigzag-conversion.py] | _O(n)_ | _O(1)_        | Easy           |
 
 [Add Binary]:https://oj.leetcode.com/problems/add-binary/
 [add-binary.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-binary.py
@@ -142,6 +143,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [text-justification.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/text-justification.py
 [Valid Palindrome]:https://oj.leetcode.com/problems/valid-palindrome/
 [valid-palindrome.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/valid-palindrome.py
+[ZigZag Conversion]:https://oj.leetcode.com/problems/zigzag-conversion/
+[zigzag-conversion.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/zigzag-conversion.py
 
 --- 
 
