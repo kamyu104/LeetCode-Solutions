@@ -541,7 +541,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Climbing Stairs]| [climbing-stairs.py] | _O(n)_    | _O(1)_          | Easy           |
 [Decode Ways]   | [decode-ways.py]| _O(n)_          | _O(1)_          | Medium         |
 [Distinct Subsequences]|[distinct-subsequences.py]| _O(n^2)_ | _O(n)_ | Hard           |
-[Edit Distance]|[edit-distance.py]| _O(m * n)_      | _O(m + n)_      | Medium         |
+[Edit Distance]|[edit-distance.py]| _O(m * n)_      | _O(m + n)_      | Hard           |
 [Interleaving String]|[interleaving-string.py]| _O(m * n)_ | _O(m + n)_ | Hard         |
 [Maximal Rectangle]|[maximal-rectangle.py]| _O(n^2)_ | _O(n)_         | Hard           |
 [Maximum Product Subarray]|[maximum-product-subarray.py]| _O(n)_ | _O(1)_ | Medium     |
