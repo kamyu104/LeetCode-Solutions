@@ -545,6 +545,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Unique Binary Search Trees] | [unique-binary-search-trees.py] | _O(n^2)_      | _O(n)_         | Medium         |
 [Unique Paths]    | [unique-paths.py]| _O(m * n)_      | _O(m + n)_   | Medium         |
 [Unique Paths II] | [unique-paths-ii.py] |  _O(m * n)_ | _O(m + n)_   | Medium         |
+[Word Break]     | [word-break.py] |  _O(n^2)_         | _O(n)_       | Medium         |
+[Word Break II]  | [word-break-ii.py] |  _O(n^2)_      | _O(n)_       | Hard           |
 
 [Best Time to Buy and Sell Stock III]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 [best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
@@ -580,6 +582,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [unique-paths.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/unique-paths.py
 [Unique Paths II]:https://oj.leetcode.com/problems/unique-paths-ii/
 [unique-paths-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/unique-paths-ii.py
+[Word Break]:https://oj.leetcode.com/problems/word-break/
+[word-break.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/word-break.py
+[Word Break II]:https://oj.leetcode.com/problems/word-break-ii/
+[word-break-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/word-break-ii.py
 
 --- 
 
