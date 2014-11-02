@@ -502,6 +502,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Path Sum II]   | [path-sum-ii.py] | _O(n)_         | _O(logn)_       | Medium         |
 [Restore IP Addresses] | [restore-ip-addresses.py] | _O(n^m)_ ~ _O(3^4)_ | _O(n * m)_ ~ _O(3 * 4)_ | Medium         |
 [Sudoku Solver] | [sudoku-solver.py] | _O((9!)^9)_  | _O(1)_          | Hard           |
+[Word Search] | [word-search.py] | _O(m * n * 3^p)_ | _O(m * n * p)_  | Medium         |
 
 [Combination Sum]:https://oj.leetcode.com/problems/combination-sum/
 [combination-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/combination-sum.py
@@ -525,6 +526,9 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [restore-ip-addresses.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/restore-ip-addresses.py
 [Sudoku Solver]:https://oj.leetcode.com/problems/sudoku-solver/
 [sudoku-solver.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sudoku-solver.py
+[Word Search]:https://oj.leetcode.com/problems/word-search/
+[word-search.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/word-search.py
+
 --- 
 
 ##Dynamic Programming
