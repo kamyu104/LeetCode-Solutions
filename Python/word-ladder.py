@@ -1,5 +1,5 @@
-# Time:  O((25n) ^ n)
-# Space: O((25n) ^ n)
+# Time:  O((25n)^n)
+# Space: O((25n)^n)
 #
 # Given two words (start and end), and a dictionary, find the length of shortest transformation sequence from start to end, such that:
 # 
