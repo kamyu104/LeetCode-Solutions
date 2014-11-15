@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date, there are total 154 problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date, there are total 155 problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all 154 problems.
+Here is the classification of all 155 problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -184,6 +184,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Evaluate Reverse Polish Notation]| [evaluate-reverse-polish-notation.py]| _O(n)_| _O(n)_| Medium          |
 [Longest Valid Parentheses]| [longest-valid-parentheses.py] | _O(n)_ | _O(1)_ | Hard   |
+[Min Stack]     | [min-stack.py]  | _O(n)_          | _O(1)_          | Easy           |
 [Simplify Path]| [simplify-path.py] | _O(n)_        | _O(n)_          | Medium         |
 [Symmetric Tree]| [symmetric-tree.py] | _O(n)_      | _O(logn)_       | Easy           |
 [Valid Parentheses]| [valid-parentheses.py] | _O(n)_        | _O(n)_          | Easy           |
@@ -192,6 +193,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [evaluate-reverse-polish-notation.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/evaluate-reverse-polish-notation.py
 [Longest Valid Parentheses]:https://oj.leetcode.com/problems/longest-valid-parentheses/
 [longest-valid-parentheses.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-valid-parentheses.py
+[Min Stack]:https://oj.leetcode.com/problems/min-stack/
+[min-stack.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/min-stack.py
 [Simplify Path]:https://oj.leetcode.com/problems/simplify-path/
 [simplify-path.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/simplify-path.py
 [Symmetric Tree]:https://oj.leetcode.com/problems/symmetric-tree/
