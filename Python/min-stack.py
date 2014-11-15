@@ -30,7 +30,6 @@ class MinStack:
         x = self.stack.pop()
         if x < 0:
             self.min = self.min - x
-        
 
     # @return an integer
     def top(self):
