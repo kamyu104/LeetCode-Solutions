@@ -21,10 +21,7 @@ class Solution:
     def findMin(self, num):
         low, high = 0, len(num)
            
-        while low < high - 1:
-            if num[low] < num[high - 1]:
-                return num[low]
-            
+        while low < high - 1 and num[low] >= num[high - 1]:
             mid = low + (high - low) / 2
                 
             if num[mid] > num[low]:
@@ -35,10 +32,7 @@ class Solution:
                 else:
                     high = mid + 1
             else:
-                for i in xrange(low, mid):
-                    if num[i] < num[low]:
-                        return num[i]
-                low = mid
+                low += 1
 
         return num[low]
 
@@ -48,10 +42,7 @@ class Solution2:
     def findMin(self, num):
         low, high = 0, len(num) - 1
            
-        while low < high:
-            if num[low] < num[high]:
-                return num[low]
-            
+        while low < high and num[low] >= num[high]:
             mid = low + (high - low) / 2
             
             if num[mid] > num[low]:
@@ -59,10 +50,7 @@ class Solution2:
             elif num[mid] < num[low]:
                 high = mid
             else:
-                for i in xrange(low, mid):
-                    if num[i] < num[low]:
-                        return num[i]
-                low = mid + 1
+                low += 1
 
         return num[low]
 
