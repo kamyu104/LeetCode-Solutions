@@ -503,7 +503,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Generate Parentheses]| [generate-parentheses.py]| _O(4^n / n^(3/2)_ | _O(n)_   | Medium         |
 [N-Queens]      | [n-queens.py]   | _O(n!)_         | _O(n)_          | Hard           |
 [N-Queens-II]   | [n-queens-ii.py] | _O(n!)_        | _O(n)_          | Hard           |
-[Palindrome Partitioning] | [palindrome-partitioning.py] | _O(n^2)_ ~ _O(2^n)_) | _O(n^2)_ | Medium |
+[Palindrome Partitioning] | [palindrome-partitioning.py] | _O(n^2)_ ~ _O(2^n)_ | _O(n^2)_ | Medium |
 [Path Sum]      | [path-sum.py]   | _O(n)_          | _O(logn)_       | Easy           |
 [Path Sum II]   | [path-sum-ii.py] | _O(n)_         | _O(logn)_       | Medium         |
 [Restore IP Addresses] | [restore-ip-addresses.py] | _O(n^m)_ ~ _O(3^4)_ | _O(n * m)_ ~ _O(3 * 4)_ | Medium         |
