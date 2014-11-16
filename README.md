@@ -305,7 +305,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Insert Interval]| [insert-interval.py] | _O(n)_    | _O(1)_          | Hard           |
-[Insertion Sort List]|[insertion-sort-list.py] | _O(n^2))_ | _O(1)_   | Medium         |
+[Insertion Sort List]|[insertion-sort-list.py] | _O(n^2)_ | _O(1)_   | Medium         |
 [Merge Intervals]| [merge-intervals.py] | _O(n^2)_  | _O(1)_          | Hard           |
 [Merge Sorted Array]| [merge-sorted-array.py] | _O(n)_ | _O(1)_       | Easy           |
 [Merge Two Sorted Lists]| [merge-two-sorted-lists.py] | _O(n)_ | _O(1)_ | Easy         |
@@ -389,7 +389,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Populating Next Right Pointers in Each Node]|[populating-next-right-pointers-in-each-node.py]| _O(n)_ | _O(logn)_ | Medium |
 [Same Tree]      |[same-tree.py]  | _O(n)_          | _O(logn)_        | Easy          |
 [Sum Root to Leaf Numbers] | [sum-root-to-leaf-numbers.py] | _O(n)_ | _O(logn)_ | Medium |
-[Unique Binary Search Trees II] | [unique-binary-search-trees-ii.py] | _O(4^n / n^(3/2))_      | _O(4^n / n^(3/2))_         | Medium         |
+[Unique Binary Search Trees II] | [unique-binary-search-trees-ii.py] | _O(4^n / n^(3/2)_      | _O(4^n / n^(3/2)_         | Medium         |
 [Validate Binary Search Tree]|[validate-binary-search-tree.py]| _O(n)_ | _O(logn)_ | Medium |
 
 [Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
@@ -431,7 +431,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Divide Two Integers] | [divide-two-integers.py]    | _O(logn)_       | _O(1)_         | Medium         |
 [Find Minimum in Rotated Sorted Array]         | [find-minimum-in-rotated-sorted-array.py]       | _O(logn)_        | _O(1)_          | Medium         |
 [Find Minimum in Rotated Sorted Array II]      | [find-minimum-in-rotated-sorted-array-ii.py]       | _O(logn)_ ~ _O(n)_        | _O(1)_          | Hard         |
-[Median of Two Sorted Arrays] | [median-of-two-sorted-arrays.py] | _O(log(m + n))_ | _O(log(m + n))_ | Hard         |
+[Median of Two Sorted Arrays] | [median-of-two-sorted-arrays.py] | _O(log(m + n)_ | _O(log(m + n)_ | Hard         |
 [Pow(x, n)]     | [powx-n.py]     | _O(logn)_       | _O(logn)_       | Medium         |
 [Search a 2D Matrix] | [search-a-2d-matrix.py] | _O(log m + logn)_ | _O(1)_ | Medium   |
 [Search for a Range] | [search-for-a-range.py] | _O(logn)_ | _O(1)_   | Medium         |
@@ -500,7 +500,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Combination Sum]| [combination-sum.py] | _O(n^m)_    | _O(m)_          | Medium         |
 [Combination Sum II]| [combination-sum-ii.py]| _O(n! / m!(n-m)!)_| _O(m)_         | Medium         |
 [Combinations]  | [combinations.py] | _O(n!)_       | _O(n)_          | Medium         |
-[Generate Parentheses]| [generate-parentheses.py]| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         |
+[Generate Parentheses]| [generate-parentheses.py]| _O(4^n / n^(3/2)_ | _O(n)_   | Medium         |
 [N-Queens]      | [n-queens.py]   | _O(n!)_         | _O(n)_          | Hard           |
 [N-Queens-II]   | [n-queens-ii.py] | _O(n!)_        | _O(n)_          | Hard           |
 [Palindrome Partitioning] | [palindrome-partitioning.py] | _O(n^2)_ ~ _O(2^n)_) | _O(n^2)_ | Medium |
