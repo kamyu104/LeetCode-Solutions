@@ -475,7 +475,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Clone Graph]| [clone-graph.py]   | _O(n)_          | _O(n)_          | Medium         |
 [Populating Next Right Pointers in Each Node II]|[populating-next-right-pointers-in-each-node-ii.py]| _O(n)_ | _O(1)_ | Hard |
 [Surrounded Regions]|[surrounded-regions.py]| _O(m * n)_ | _O(m + n)_ | Medium         |
-[Word Ladder]   |[word-ladder.py] | _O((25n)^n)_   | _O((25n)^n)_     | Medium         |
+[Word Ladder]   |[word-ladder.py] | _O(25n)^n)_   | _O(25n)^n)_     | Medium         |
 
 [Binary Tree Level Order Traversal]:https://oj.leetcode.com/problems/binary-tree-level-order-traversal/
 [binary-tree-level-order-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-level-order-traversal.py
@@ -507,7 +507,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Path Sum]      | [path-sum.py]   | _O(n)_          | _O(logn)_       | Easy           |
 [Path Sum II]   | [path-sum-ii.py] | _O(n)_         | _O(logn)_       | Medium         |
 [Restore IP Addresses] | [restore-ip-addresses.py] | _O(n^m)_ ~ _O(3^4)_ | _O(n * m)_ ~ _O(3 * 4)_ | Medium         |
-[Sudoku Solver] | [sudoku-solver.py] | _O((9!)^9)_  | _O(1)_          | Hard           |
+[Sudoku Solver] | [sudoku-solver.py] | _O(9!)^9)_  | _O(1)_          | Hard           |
 [Word Search] | [word-search.py] | _O(m * n * 3^p)_ | _O(m * n * p)_  | Medium         |
 
 [Combination Sum]:https://oj.leetcode.com/problems/combination-sum/
@@ -604,7 +604,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Backtracking
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Word Ladder II]   |[word-ladder-ii.py] | _O((25n)^n)_   | _O((25n)^n)_ | Hard         |
+[Word Ladder II]   |[word-ladder-ii.py] | _O(25n)^n)_   | _O(25n)^n)_ | Hard         |
 
 [Word Ladder II]:https://oj.leetcode.com/problems/word-ladder-ii/
 [word-ladder-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/word-ladder-ii.py
