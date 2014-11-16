@@ -113,11 +113,11 @@ class Solution4:
 
 if __name__ == "__main__":
     print Solution().isMatch("aaaabaaaab","a*b*b")
-#     print Solution().isMatch("aaaaaaaaaaaaab", "a*a*a*a*a*a*a*a*a*a*c")
-#     print Solution().isMatch("aa","a")
-#     print Solution().isMatch("aa","aa")
-#     print Solution().isMatch("aaa","aa")
-#     print Solution().isMatch("aa", "a*")
-#     print Solution().isMatch("aa", "?*")
-#     print Solution().isMatch("ab", "?*")
+    print Solution().isMatch("aaaaaaaaaaaaab", "a*a*a*a*a*a*a*a*a*a*c")
+    print Solution().isMatch("aa","a")
+    print Solution().isMatch("aa","aa")
+    print Solution().isMatch("aaa","aa")
+    print Solution().isMatch("aa", "a*")
+    print Solution().isMatch("aa", "?*")
+    print Solution().isMatch("ab", "?*")
     print Solution().isMatch("aab", "c*a*b")
