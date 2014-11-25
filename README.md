@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date, there are total 155 problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date, there are total 158 problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all 155 problems.
+Here is the classification of all 158 problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -57,6 +57,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Pascal's Triangle]| [pascals-triangle.py] | _O(n^2)_ | _O(n)_        | Easy           | 
 [Pascal's Triangle II]| [pascals-triangle-ii.py] | _O(n^2)_ | _O(n)_  | Easy           | 
 [Plus One]      | [plus-one.py]   | _O(n)_           | _O(1)_         | Easy           | 
+[Read N Characters Given Read4] | [read-n-characters-given-read4.py] | _O(n)_ | _O(1)_ | Easy           |
+[Read N Characters Given Read4 II - Call multiple times] | [read-n-characters-given-read4-ii-call-multiple-times.py] | _O(n)_ | _O(1)_ | Hard |
 [Remove Duplicates from Sorted Array]| [remove-duplicates-from-sorted-array.py] | _O(n)_       | _O(1)_         | Easy           |
 [Remove Duplicates from Sorted Array II]| [remove-duplicates-from-sorted-array-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
 [Remove Element] | [remove-element.py] | _O(n)_      | _O(1)_         | Easy           | 
@@ -84,6 +86,10 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [pascals-triangle-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/pascals-triangle-ii.py
 [Plus One]:https://oj.leetcode.com/problems/plus-one/
 [plus-one.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/plus-one.py
+[Read N Characters Given Read4]:https://oj.leetcode.com/problems/read-n-characters-given-read4/
+[read-n-characters-given-read4.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/read-n-characters-given-read4.py
+[Read N Characters Given Read4 II - Call multiple times]:https://oj.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/
+[read-n-characters-given-read4-ii-call-multiple-times.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/read-n-characters-given-read4-ii-call-multiple-times.py
 [Remove Duplicates from Sorted Array]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/
 [remove-duplicates-from-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-array.py
 [Remove Duplicates from Sorted Array II]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
@@ -379,6 +385,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Balanced Binary Tree] | [balanced-binary-tree.py] | _O(n)_| _O(logn)_| Easy           |
 [Binary Tree Maximum Path Sum]| [binary-tree-maximum-path-sum.py] | _O(n)_| _O(logn)_| Hard  |  
+[Binary Tree Upside Down] | [binary-tree-upside-down.py] | _O(n)_ | _O(1)_ | Medium    | 
 [Construct Binary Tree from Inorder and Postorder Traversal] | [construct-binary-tree-from-inorder-and-postorder-traversal.py] | _O(n)_        | _O(n)_          | Medium         |
 [Construct Binary Tree from Preorder and Inorder Traversal] | [construct-binary-tree-from-preorder-and-inorder-traversal.py] | _O(n)_        | _O(n)_          | Medium   
 [Convert Sorted Array to Binary Search Tree] | [convert-sorted-array-to-binary-search-tree.py] | _O(n)_        | _O(logn)_          | Medium         |
@@ -396,6 +403,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
 [Binary Tree Maximum Path Sum]:https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/
 [binary-tree-maximum-path-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-maximum-path-sum.py
+[Binary Tree Upside Down]:https://oj.leetcode.com/problems/binary-tree-upside-down/
+[binary-tree-upside-down.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-upside-down.py
 [Construct Binary Tree from Inorder and Postorder Traversal]:https://oj.leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 [construct-binary-tree-from-inorder-and-postorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/construct-binary-tree-from-inorder-and-postorder-traversal.py
 [Construct Binary Tree from Preorder and Inorder Traversal]:https://oj.leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
