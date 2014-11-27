@@ -47,7 +47,6 @@ class Solution:
             else:
                 break
             
-            
             if curB.next:
                 curB = curB.next
             elif tailB is None:
