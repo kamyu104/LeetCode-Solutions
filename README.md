@@ -159,6 +159,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Add Two Numbers] | [add-two-numbers.py] | _O(n)_   | _O(1)_          | Medium         |
 [Copy List with Random Pointer] | [copy-list-with-random-pointer.py] | _O(n)_   | _O(1)_          | Hard         |
+[Intersection of Two Linked Lists]| [intersection-of-two-linked-lists.py] | _O(m + n)_ | _O(1)_         | Easy           |
 [Remove Duplicates from Sorted List]| [remove-duplicates-from-sorted-list.py] | _O(n)_       | _O(1)_         | Easy           |
 [Remove Duplicates from Sorted List II]| [remove-duplicates-from-sorted-list-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
 [Reverse Linked List II]| [reverse-linked-list-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
@@ -170,6 +171,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [add-two-numbers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-two-numbers.py
 [Copy List with Random Pointer]:https://oj.leetcode.com/problems/copy-list-with-random-pointer/
 [copy-list-with-random-pointer.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/copy-list-with-random-pointer.py
+[Intersection of Two Linked Lists]:https://oj.leetcode.com/problems/intersection-of-two-linked-lists/
+[intersection-of-two-linked-lists.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/intersection-of-two-linked-lists.py
 [Remove Duplicates from Sorted List]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/
 [remove-duplicates-from-sorted-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-list.py
 [Remove Duplicates from Sorted List II]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
@@ -243,6 +246,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [4 Sum]         |[4sum.py]        | _O(n^2)_ ~ _O(n^4)_ | _O(n^2)_    | Medium         |
+[Longest Substring with At Most Two Distinct Characters]| [longest-substring-with-at-most-two-distinct-characters.py] | _O(n^2)_ | _O(1)_ | Hard         |
 [Longest Substring Without Repeating Characters] | [longest-substring-without-repeating-characters.py] | _O(n)_ | _O(1)_ | Medium |
 [Max Points on a Line] | [max-points-on-a-line.py] | _O(n^2)_ | _O(n)_ | Hard          |
 [Minimum Window Substring] | [minimum-window-substring.py] | _O(n^2)_ | _O(n)_ | Hard          |
@@ -252,6 +256,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 [4 Sum]: https://oj.leetcode.com/problems/4sum/
 [4sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/4sum.py
+[Longest Substring with At Most Two Distinct Characters]:https://oj.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
+[longest-substring-with-at-most-two-distinct-characters.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-substring-with-at-most-two-distinct-characters.py
 [Longest Substring Without Repeating Characters]:https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/
 [longest-substring-without-repeating-characters.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-substring-without-repeating-characters.py
 [Max Points on a Line]:https://oj.leetcode.com/problems/max-points-on-a-line/
