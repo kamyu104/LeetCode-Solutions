@@ -119,6 +119,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Longest Common Prefix] | [longest-common-prefix.py] | _O(n1 + n2 + ...)_   | _O(1)_  | Easy           |
 [Longest Palindromic Substring] | [longest-palindromic-substring.py] | _O(n)_ | _O(n)_ |  Medium | `Manacher's Algorithm`
 [Multiply Strings] | [multiply-strings.py] | _O(m * n)_ | _O(m + n)_  | Medium         |
+[One Edit Distance] | [one-edit-distance.py] | _O(m + n)_ | _O(1)_    | Medium         |
 [Reverse Words in a String] | [reverse-words-in-a-string.py] | _O(n)_ | _O(n)_ | Medium         |
 [String to Integer (atoi)] | [string-to-integer-atoi.py] | _O(n)_ | _O(1)_ | Easy      |
 [Text Justification] | [text-justification.py] | _O(n)_ | _O(1)_      | Hard           |
@@ -141,6 +142,9 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [longest-palindromic-substring.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-palindromic-substring.py
 [Multiply Strings]:https://oj.leetcode.com/problems/multiply-strings/
 [multiply-strings.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/multiply-strings.py
+
+[One Edit Distance]:https://oj.leetcode.com/problems/one-edit-distance/
+[one-edit-distance.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/one-edit-distance.py
 [Reverse Words in a String]:https://oj.leetcode.com/problems/reverse-words-in-a-string/
 [reverse-words-in-a-string.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-words-in-a-string.py
 [String to Integer (atoi)]:https://oj.leetcode.com/problems/string-to-integer-atoi/
