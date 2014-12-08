@@ -449,7 +449,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Divide Two Integers] | [divide-two-integers.py]    | _O(logn)_       | _O(1)_         | Medium         |
 [Find Peak Element] | [find-peak-element.py]        | _O(logn)_       | _O(1)_          | Medium         |
-
 [Find Minimum in Rotated Sorted Array]         | [find-minimum-in-rotated-sorted-array.py]       | _O(logn)_        | _O(1)_          | Medium         |
 [Find Minimum in Rotated Sorted Array II]      | [find-minimum-in-rotated-sorted-array-ii.py]       | _O(logn)_ ~ _O(n)_        | _O(1)_          | Hard         |
 [Median of Two Sorted Arrays] | [median-of-two-sorted-arrays.py] | _O(log(m + n)_ | _O(log(m + n)_ | Hard         |
