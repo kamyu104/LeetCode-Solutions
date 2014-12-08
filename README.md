@@ -448,9 +448,9 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Divide Two Integers] | [divide-two-integers.py]    | _O(logn)_       | _O(1)_         | Medium         |
-[Find Peak Element] | [find-peak-element.py]        | _O(logn)_       | _O(1)_          | Medium         |
 [Find Minimum in Rotated Sorted Array]         | [find-minimum-in-rotated-sorted-array.py]       | _O(logn)_        | _O(1)_          | Medium         |
 [Find Minimum in Rotated Sorted Array II]      | [find-minimum-in-rotated-sorted-array-ii.py]       | _O(logn)_ ~ _O(n)_        | _O(1)_          | Hard         |
+[Find Peak Element] | [find-peak-element.py]        | _O(logn)_       | _O(1)_          | Medium         |
 [Median of Two Sorted Arrays] | [median-of-two-sorted-arrays.py] | _O(log(m + n)_ | _O(log(m + n)_ | Hard         |
 [Pow(x, n)]     | [powx-n.py]     | _O(logn)_       | _O(logn)_       | Medium         |
 [Search a 2D Matrix] | [search-a-2d-matrix.py] | _O(log m + logn)_ | _O(1)_ | Medium   |
@@ -462,12 +462,12 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 [Divide Two Integers]:https://oj.leetcode.com/problems/divide-two-integers/
 [divide-two-integers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/divide-two-integers.py
-[Find Peak Element]:https://oj.leetcode.com/problems/find-peak-element/
-[find-peak-element.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-peak-element.py
 [Find Minimum in Rotated Sorted Array]:https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 [find-minimum-in-rotated-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-minimum-in-rotated-sorted-array.py
 [Find Minimum in Rotated Sorted Array II]:https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/
 [find-minimum-in-rotated-sorted-array-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-minimum-in-rotated-sorted-array-ii.py
+[Find Peak Element]:https://oj.leetcode.com/problems/find-peak-element/
+[find-peak-element.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-peak-element.py
 [Median of Two Sorted Arrays]:https://oj.leetcode.com/problems/median-of-two-sorted-arrays/
 [median-of-two-sorted-arrays.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/median-of-two-sorted-arrays.py
 [Pow(x, n)]:https://oj.leetcode.com/problems/powx-n/
