@@ -25,6 +25,7 @@ class Solution:
             
             if cur - pre >= 2:
                 ranges.append(self.getRange(pre + 1, cur - 1))
+                
             pre = cur
             
         return ranges
