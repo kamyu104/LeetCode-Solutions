@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date, there are total `162` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2014-12-09), there are total `163` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `162` problems.
+Here is the classification of all `163` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -53,7 +53,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Best Time to Buy and Sell Stock]| [best-time-to-buy-and-sell-stock.py] | _O(n)_ | _O(1)_ | Medium |
 [First Missing Positive]| [first-missing-positive.py] | _O(n)_ | _O(1)_ | Hard         | Tricky
 [Longest Consecutive Sequence]| [longest-consecutive-sequence.py] | _O(n)_ | _O(n)_ | Hard         | Tricky
-[Next Permutation]| [next-permutation.py] | _O(n)_ | _O(1)_ | Medium       | Tricky
+[Missing Ranges]| [missing-ranges.py] | _O(n)_      | _O(1)_          | Medium         |
+[Next Permutation]| [next-permutation.py] | _O(n)_  | _O(1)_          | Medium         | Tricky
 [Pascal's Triangle]| [pascals-triangle.py] | _O(n^2)_ | _O(n)_        | Easy           | 
 [Pascal's Triangle II]| [pascals-triangle-ii.py] | _O(n^2)_ | _O(n)_  | Easy           | 
 [Plus One]      | [plus-one.py]   | _O(n)_           | _O(1)_         | Easy           | 
@@ -78,6 +79,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [first-missing-positive.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/first-missing-positive.py
 [Longest Consecutive Sequence]:https://oj.leetcode.com/problems/longest-consecutive-sequence/
 [longest-consecutive-sequence.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-consecutive-sequence.py
+[Missing Ranges]:https://oj.leetcode.com/problems/missing-ranges/
+[missing-ranges.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/missing-ranges.py
 [Next Permutation]:https://oj.leetcode.com/problems/next-permutation/
 [next-permutation.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/next-permutation.py
 [Pascal's Triangle]:https://oj.leetcode.com/problems/pascals-triangle/
