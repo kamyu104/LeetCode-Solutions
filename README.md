@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2014-12-09), there are total `163` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2014-12-09), there are total `164` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `163` problems.
+Here is the classification of all `164` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -324,7 +324,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Insert Interval]| [insert-interval.py] | _O(n)_    | _O(1)_          | Hard           |
-[Insertion Sort List]|[insertion-sort-list.py] | _O(n^2)_ | _O(1)_   | Medium         |
+[Insertion Sort List]|[insertion-sort-list.py] | _O(n^2)_ | _O(1)_    | Medium         |
+[Maximum Gap]   | [maximum-gap.py]| _O(n)_          | _O(n)_          | Hard           | Tricky 
 [Merge Intervals]| [merge-intervals.py] | _O(n^2)_  | _O(1)_          | Hard           |
 [Merge Sorted Array]| [merge-sorted-array.py] | _O(n)_ | _O(1)_       | Easy           |
 [Merge Two Sorted Lists]| [merge-two-sorted-lists.py] | _O(n)_ | _O(1)_ | Easy         |
@@ -336,6 +337,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [insert-interval.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insert-interval.py
 [Insertion Sort List]:https://oj.leetcode.com/problems/insertion-sort-list/
 [insertion-sort-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insertion-sort-list.py
+[Maximum Gap]:https://oj.leetcode.com/problems/maximum-gap/
+[maximum-gap.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/maximum-gap.py
 [Merge Intervals]:https://oj.leetcode.com/problems/merge-intervals/
 [merge-intervals.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-intervals.py
 [Merge Sorted Array]:https://oj.leetcode.com/problems/merge-sorted-array/
