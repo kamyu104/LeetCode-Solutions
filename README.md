@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2014-12-13), there are total `164` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2014-12-16), there are total `166` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `164` problems.
+Here is the classification of all `166` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -116,6 +116,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Add Binary]    | [add-binary.py] | _O(n)_          | _O(1)_          | Easy           |
 [Anagrams]      | [anagrams.py]   | _O(n)_          | _O(n)_          | Medium         |
+[Compare Version Numbers] | [compare-version-numbers.py] | _O(n)_ | _O(1)_ | Easy     |
 [Count and Say] | [count-and-say.py]| _O(n^2)_      | _O(n)_          | Easy           |
 [Implement strStr()] | [implement-strstr.py] | _O(n + m)_   | _O(m)_  | Easy           | `KMP Algorithm`
 [Length of Last Word] | [length-of-last-word.py] | _O(n)_   | _O(1)_  | Easy           |
@@ -135,6 +136,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [anagrams.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/anagrams.py
 [Count and Say]:https://oj.leetcode.com/problems/count-and-say/
 [count-and-say.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/count-and-say.py
+[Compare Version Numbers]:https://oj.leetcode.com/problems/compare-version-numbers/
+[compare-version-numbers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/compare-version-numbers.py
 [Implement strStr()]:https://oj.leetcode.com/problems/implement-strstr/
 [implement-strstr.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/implement-strstr.py
 [Length of Last Word]:https://oj.leetcode.com/problems/length-of-last-word/
@@ -294,6 +297,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Math
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
+[Fraction to Recurring Decimal] | [fraction-to-recurring-decimal.py]  | _O(logn)_ | _O(1)_ | Medium         |
 [Gray Code]     | [gray-code.py]  | _O(2^n)_        | _O(1)_          | Medium         |
 [Integer to Roman] | [integer-to-roman.py] | _O(n)_ | _O(1)_          | Medium         |
 [Palindrome Number] | [palindrome-number.py] | _O(1)_ | _O(1)_        | Easy           |
@@ -302,6 +306,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Roman to Integer] | [roman-to-integer.py] | _O(n)_ | _O(1)_          | Easy           |
 [Valid Number] | [valid-number.py] | _O(n)_ | _O(1)_          | Easy           | `Automata`
 
+[Fraction to Recurring Decimal]:https://oj.leetcode.com/problems/fraction-to-recurring-decimal/
+[fraction-to-recurring-decimal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/fraction-to-recurring-decimal.py
 [Gray Code]:https://oj.leetcode.com/problems/gray-code/
 [gray-code.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/gray-code.py
 [Integer to Roman]:https://oj.leetcode.com/problems/integer-to-roman/
