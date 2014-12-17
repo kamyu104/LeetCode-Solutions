@@ -297,6 +297,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Math
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
+[Divide Two Integers] | [divide-two-integers.py]    | _O(logn)_       | _O(1)_         | Medium         |
 [Fraction to Recurring Decimal] | [fraction-to-recurring-decimal.py]  | _O(logn)_ | _O(1)_ | Medium         |
 [Gray Code]     | [gray-code.py]  | _O(2^n)_        | _O(1)_          | Medium         |
 [Integer to Roman] | [integer-to-roman.py] | _O(n)_ | _O(1)_          | Medium         |
@@ -306,6 +307,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Roman to Integer] | [roman-to-integer.py] | _O(n)_ | _O(1)_          | Easy           |
 [Valid Number] | [valid-number.py] | _O(n)_ | _O(1)_          | Easy           | `Automata`
 
+[Divide Two Integers]:https://oj.leetcode.com/problems/divide-two-integers/
+[divide-two-integers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/divide-two-integers.py
 [Fraction to Recurring Decimal]:https://oj.leetcode.com/problems/fraction-to-recurring-decimal/
 [fraction-to-recurring-decimal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/fraction-to-recurring-decimal.py
 [Gray Code]:https://oj.leetcode.com/problems/gray-code/
@@ -337,7 +340,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Merge Two Sorted Lists]| [merge-two-sorted-lists.py] | _O(n)_ | _O(1)_ | Easy         |
 [Sort Colors]   | [sort-colors.py] | _O(n)_         | _O(1)_          | Medium         |
 [Sort List]     | [sort-list.py]  | _O(nlogn)_      | _O(1)_          | Medium         |
-
 
 [Insert Interval]:https://oj.leetcode.com/problems/insert-interval/
 [insert-interval.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insert-interval.py
@@ -459,7 +461,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Divide Two Integers] | [divide-two-integers.py]    | _O(logn)_       | _O(1)_         | Medium         |
 [Find Minimum in Rotated Sorted Array]         | [find-minimum-in-rotated-sorted-array.py]       | _O(logn)_        | _O(1)_          | Medium         |
 [Find Minimum in Rotated Sorted Array II]      | [find-minimum-in-rotated-sorted-array-ii.py]       | _O(logn)_ ~ _O(n)_        | _O(1)_          | Hard         |
 [Find Peak Element] | [find-peak-element.py]        | _O(logn)_       | _O(1)_          | Medium         |
@@ -472,8 +473,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Search Insert Position] | [search-insert-position.py] | _O(logn)_ | _O(1)_   | Medium         |
 [Sqrt(x)]       | [sqrtx.py]      | _O(logn)_        | _O(1)_         | Medium         |
 
-[Divide Two Integers]:https://oj.leetcode.com/problems/divide-two-integers/
-[divide-two-integers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/divide-two-integers.py
 [Find Minimum in Rotated Sorted Array]:https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 [find-minimum-in-rotated-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-minimum-in-rotated-sorted-array.py
 [Find Minimum in Rotated Sorted Array II]:https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/
