@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2014-12-16), there are total `166` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2014-12-18), there are total `167` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `166` problems.
+Here is the classification of all `167` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -472,6 +472,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Search in Rotated Sorted Array II] | [search-in-rotated-sorted-array-ii.py] | _O(logn)_ | _O(1)_   | Medium         |
 [Search Insert Position] | [search-insert-position.py] | _O(logn)_ | _O(1)_   | Medium         |
 [Sqrt(x)]       | [sqrtx.py]      | _O(logn)_        | _O(1)_         | Medium         |
+[Two Sum II - Input array is sorted] | [two-sum-ii-input-array-is-sorted.py] | _O(n)_   | _O(1)_         | Medium         |
 
 [Find Minimum in Rotated Sorted Array]:https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 [find-minimum-in-rotated-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-minimum-in-rotated-sorted-array.py
@@ -495,7 +496,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [search-insert-position.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/search-insert-position.py
 [Sqrt(x)]:https://oj.leetcode.com/problems/sqrtx/
 [sqrtx.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sqrtx.py
-
+[Two Sum II - Input array is sorted]:https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+[two-sum-ii-input-array-is-sorted.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/wo-sum-ii-input-array-is-sorted.py
 
 --- 
 
