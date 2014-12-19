@@ -368,6 +368,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Partition List]| [partition-list.py] | _O(n)_       | _O(1)_         | Medium         | 
 [Remove Nth Node From End of List]| [remove-nth-node-from-end-of-list.py] | _O(n)_       | _O(1)_         | Easy         | 
 [Reorder List]| [reorder-list.py] | _O(n)_          |  _O(1)_         | Medium         |  
+[Two Sum II - Input array is sorted] | [two-sum-ii-input-array-is-sorted.py] | _O(n)_   | _O(1)_         | Medium         |
 
 [Linked List Cycle]:https://oj.leetcode.com/problems/linked-list-cycle/
 [linked-list-cycle.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/linked-list-cycle.py
@@ -379,6 +380,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [remove-nth-node-from-end-of-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-nth-node-from-end-of-list.py
 [Reorder List]:https://oj.leetcode.com/problems/reorder-list/
 [reorder-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reorder-list.py
+[Two Sum II - Input array is sorted]:https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+[two-sum-ii-input-array-is-sorted.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/two-sum-ii-input-array-is-sorted.py
 
 ---
 
@@ -472,7 +475,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Search in Rotated Sorted Array II] | [search-in-rotated-sorted-array-ii.py] | _O(logn)_ | _O(1)_   | Medium         |
 [Search Insert Position] | [search-insert-position.py] | _O(logn)_ | _O(1)_   | Medium         |
 [Sqrt(x)]       | [sqrtx.py]      | _O(logn)_        | _O(1)_         | Medium         |
-[Two Sum II - Input array is sorted] | [two-sum-ii-input-array-is-sorted.py] | _O(n)_   | _O(1)_         | Medium         |
 
 [Find Minimum in Rotated Sorted Array]:https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 [find-minimum-in-rotated-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-minimum-in-rotated-sorted-array.py
@@ -496,8 +498,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [search-insert-position.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/search-insert-position.py
 [Sqrt(x)]:https://oj.leetcode.com/problems/sqrtx/
 [sqrtx.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sqrtx.py
-[Two Sum II - Input array is sorted]:https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-[two-sum-ii-input-array-is-sorted.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/two-sum-ii-input-array-is-sorted.py
 
 --- 
 
