@@ -497,7 +497,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Sqrt(x)]:https://oj.leetcode.com/problems/sqrtx/
 [sqrtx.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sqrtx.py
 [Two Sum II - Input array is sorted]:https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-[two-sum-ii-input-array-is-sorted.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/wo-sum-ii-input-array-is-sorted.py
+[two-sum-ii-input-array-is-sorted.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/two-sum-ii-input-array-is-sorted.py
 
 --- 
 
