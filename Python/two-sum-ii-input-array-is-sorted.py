@@ -19,9 +19,10 @@ class Solution:
         start, end = 0, len(nums) - 1
         
         while start != end:
-            if nums[start] + nums[end] > target:
+            sum = nums[start] + nums[end]
+            if sum > target:
                 end -= 1
-            elif nums[start] + nums[end] < target:
+            elif sum < target:
                 start += 1
             else:
                 return [start + 1, end + 1]
