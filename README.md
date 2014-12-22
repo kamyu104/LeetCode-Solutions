@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2014-12-18), there are total `167` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2014-12-21), there are total `169` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `167` problems.
+Here is the classification of all `169` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -53,6 +53,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Best Time to Buy and Sell Stock]| [best-time-to-buy-and-sell-stock.py] | _O(n)_ | _O(1)_ | Medium |
 [First Missing Positive]| [first-missing-positive.py] | _O(n)_ | _O(1)_ | Hard         | Tricky
 [Longest Consecutive Sequence]| [longest-consecutive-sequence.py] | _O(n)_ | _O(n)_ | Hard         | Tricky
+[Majority Element] | [majority-element.py] | _O(n)_ | _O(1)_          | Easy           |
 [Missing Ranges]| [missing-ranges.py] | _O(n)_      | _O(1)_          | Medium         |
 [Next Permutation]| [next-permutation.py] | _O(n)_  | _O(1)_          | Medium         | Tricky
 [Pascal's Triangle]| [pascals-triangle.py] | _O(n^2)_ | _O(n)_        | Easy           | 
@@ -79,6 +80,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [first-missing-positive.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/first-missing-positive.py
 [Longest Consecutive Sequence]:https://oj.leetcode.com/problems/longest-consecutive-sequence/
 [longest-consecutive-sequence.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-consecutive-sequence.py
+[Majority Element]: https://oj.leetcode.com/problems/majority-element/
+[majority-element.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/majority-element.py
 [Missing Ranges]:https://oj.leetcode.com/problems/missing-ranges/
 [missing-ranges.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/missing-ranges.py
 [Next Permutation]:https://oj.leetcode.com/problems/next-permutation/
@@ -298,6 +301,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Divide Two Integers] | [divide-two-integers.py]    | _O(logn)_       | _O(1)_         | Medium         |
+[Excel Sheet Column Title] | [excel-sheet-column-title.py] | _O(logn)_ | _O(1)_ | Easy |
 [Fraction to Recurring Decimal] | [fraction-to-recurring-decimal.py]  | _O(logn)_ | _O(1)_ | Medium         |
 [Gray Code]     | [gray-code.py]  | _O(2^n)_        | _O(1)_          | Medium         |
 [Integer to Roman] | [integer-to-roman.py] | _O(n)_ | _O(1)_          | Medium         |
@@ -309,6 +313,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 [Divide Two Integers]:https://oj.leetcode.com/problems/divide-two-integers/
 [divide-two-integers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/divide-two-integers.py
+[Excel Sheet Column Title]:https://oj.leetcode.com/problems/excel-sheet-column-title/
+[excel-sheet-column-title.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/excel-sheet-column-title.py
 [Fraction to Recurring Decimal]:https://oj.leetcode.com/problems/fraction-to-recurring-decimal/
 [fraction-to-recurring-decimal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/fraction-to-recurring-decimal.py
 [Gray Code]:https://oj.leetcode.com/problems/gray-code/
