@@ -265,6 +265,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Minimum Window Substring] | [minimum-window-substring.py] | _O(n^2)_ | _O(n)_ | Hard          |
 [Substring with Concatenation of All Words] | [substring-with-concatenation-of-all-words.py] | _O(m * n * k)_ | _O(n * k)_ | Hard          |
 [Two Sum]      | [two-sum.py]      | _O(n)_         | _O(n)_          | Medium         |
+[Two Sum III - Data structure design] | [two-sum-iii-data-structure-design.py] | _O(n)_ | _O(n)_ | Easy |
 [Valid Sudoku] | [valid-sudoku.py] | _O(n)_         | _O(n)_          | Easy           |
 
 [4 Sum]: https://oj.leetcode.com/problems/4sum/
@@ -281,6 +282,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [substring-with-concatenation-of-all-words.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/substring-with-concatenation-of-all-words.py
 [Two Sum]:https://oj.leetcode.com/problems/two-sum/
 [two-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/two-sum.py
+[Two Sum III - Data structure design]:https://oj.leetcode.com/problems/two-sum-iii-data-structure-design/
+[two-sum-iii-data-structure-design.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/two-sum-iii-data-structure-design.py
 [Valid Sudoku]:https://oj.leetcode.com/problems/valid-sudoku/
 [valid-sudoku.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/valid-sudoku.py
 
