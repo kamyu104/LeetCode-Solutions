@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2014-12-21), there are total `169` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2014-12-26), there are total `170` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `169` problems.
+Here is the classification of all `170` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
