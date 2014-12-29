@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2014-12-26), there are total `170` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2014-12-27), there are total `171` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `170` problems.
+Here is the classification of all `171` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -305,6 +305,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Divide Two Integers] | [divide-two-integers.py]    | _O(logn)_       | _O(1)_         | Medium         |
 [Excel Sheet Column Title] | [excel-sheet-column-title.py] | _O(logn)_ | _O(1)_ | Easy |
+[Excel Sheet Column Number] | [excel-sheet-column-number.py] | _O(n)_ | _O(1)_ | Easy |
 [Fraction to Recurring Decimal] | [fraction-to-recurring-decimal.py]  | _O(logn)_ | _O(1)_ | Medium         |
 [Gray Code]     | [gray-code.py]  | _O(2^n)_        | _O(1)_          | Medium         |
 [Integer to Roman] | [integer-to-roman.py] | _O(n)_ | _O(1)_          | Medium         |
@@ -318,6 +319,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [divide-two-integers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/divide-two-integers.py
 [Excel Sheet Column Title]:https://oj.leetcode.com/problems/excel-sheet-column-title/
 [excel-sheet-column-title.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/excel-sheet-column-title.py
+[Excel Sheet Column Number]:https://oj.leetcode.com/problems/excel-sheet-column-number/
+[excel-sheet-column-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/excel-sheet-column-number.py
 [Fraction to Recurring Decimal]:https://oj.leetcode.com/problems/fraction-to-recurring-decimal/
 [fraction-to-recurring-decimal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/fraction-to-recurring-decimal.py
 [Gray Code]:https://oj.leetcode.com/problems/gray-code/
