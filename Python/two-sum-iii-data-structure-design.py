@@ -37,8 +37,10 @@ class TwoSum:
 
 if __name__ == "__main__":
     Sol = TwoSum()
+    
     for i in (1, 3, 5):
         Sol.add(i)
+    
     for i in (4, 7):
         print Sol.find(i)
                 
