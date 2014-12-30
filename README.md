@@ -314,7 +314,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Permutation Sequence] | [permutation-sequence.py] | _O(n)_ | _O(1)_  | Medium         | `Cantor Ordering`
 [Reverse Integer] | [reverse-integer.py] | _O(logn)_ | _O(1)_         | Easy           |
 [Roman to Integer] | [roman-to-integer.py] | _O(n)_ | _O(1)_          | Easy           |
-[Valid Number] | [valid-number.py] | _O(n)_ | _O(1)_          | Easy           | `Automata`
+[Valid Number] | [valid-number.py] | _O(n)_         | _O(1)_          | Hard           | `Automata`
 
 [Divide Two Integers]:https://oj.leetcode.com/problems/divide-two-integers/
 [divide-two-integers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/divide-two-integers.py
