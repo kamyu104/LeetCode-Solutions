@@ -674,7 +674,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Trapping Rain Water] | [trapping-rain-water.py] | _O(n)_ | _O(1)_ | Hard | Tricky
 [Wildcard Matching] | [wildcard-matching.py] | _O(m + n)_ | _O(1)_    | Hard           | Tricky
 
-[Best Time to Buy and Sell Stock II]:https://oj.leecode.com/problems/best-time-to-buy-and-sell-stock-ii/
+[Best Time to Buy and Sell Stock II]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 [best-time-to-buy-and-sell-stock-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-ii.py
 [Candy]:https://oj.leetcode.com/problems/candy/
 [candy.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/candy.py
