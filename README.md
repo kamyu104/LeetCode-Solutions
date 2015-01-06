@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2014-12-31), there are total `173` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-01-06), there are total `174` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `173` problems.
+Here is the classification of all `174` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -597,6 +597,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Climbing Stairs]| [climbing-stairs.py] | _O(n)_    | _O(1)_          | Easy           |
 [Decode Ways]   | [decode-ways.py]| _O(n)_          | _O(1)_          | Medium         |
 [Distinct Subsequences]|[distinct-subsequences.py]| _O(n^2)_ | _O(n)_ | Hard           |
+[Dungeon Game]  | [dungeon-game.py]| _O(m * n)_     | _O(m + n)_      | Hard           |
 [Edit Distance]|[edit-distance.py]| _O(m * n)_      | _O(m + n)_      | Hard           |
 [Interleaving String]|[interleaving-string.py]| _O(m * n)_ | _O(m + n)_ | Hard         |
 [Maximal Rectangle]|[maximal-rectangle.py]| _O(n^2)_ | _O(n)_         | Hard           |
@@ -621,6 +622,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [decode-ways.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/decode-ways.py
 [Distinct Subsequences]:https://oj.leetcode.com/problems/distinct-subsequences/
 [distinct-subsequences.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/distinct-subsequences.py
+[Dungeon Game]:https://oj.leetcode.com/problems/dungeon-game/
+[dungeon-game.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/dungeon-game.py
 [Edit Distance]:https://oj.leetcode.com/problems/edit-distance/
 [edit-distance.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/edit-distance.py
 [Interleaving String]:https://oj.leetcode.com/problems/interleaving-string/
