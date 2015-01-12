@@ -32,7 +32,7 @@ Algorithm
 * [Greedy](https://github.com/kamyu104/LeetCode#greedy)
 
 
-DataBase
+Database
 ===
 
 * [SQL](https://github.com/kamyu104/LeetCode#sql)
