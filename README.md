@@ -1,12 +1,14 @@
 LeetCode
 ======== 
 
-Up to date (2015-01-06), there are total `174` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-01-12), there are total `177` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `174` problems.
+Here is the classification of all `177` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
+Algorithm
+====
 
 * [Bit Manipulation](https://github.com/kamyu104/LeetCode#bit-manipulation)
 * [Array](https://github.com/kamyu104/LeetCode#array)
@@ -28,6 +30,12 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Dynamic Programming](https://github.com/kamyu104/LeetCode#dynamic-programming)
 * [Backtracking](https://github.com/kamyu104/LeetCode#backtracking)
 * [Greedy](https://github.com/kamyu104/LeetCode#greedy)
+
+
+DataBase
+===
+
+* [SQL](https://github.com/kamyu104/LeetCode#sql)
 
 ---
 
@@ -698,3 +706,18 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [trapping-rain-water.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/trapping-rain-water.py
 [Wildcard Matching]:https://oj.leetcode.com/problems/wildcard-matching/
 [wildcard-matching.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/wildcard-matching.py
+
+##SQL
+Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
+--------------- | --------------- | --------------- | --------------- | -------------- | -----
+[Combine Two Tables] | [combine-two-tables.sql] | _O(m + n)_   | _O(m + n)_ | Easy     |
+[Nth Highest Salary] | [nth-highest-salary.sql] | _O(n^2)_   | _O(n)_ | Medium         |
+[Second Highest Salary] | [second-highest-salary.sql] | _O(n)_ | _O(1)_ | Easy         |
+
+[Combine Two Tables]:https://oj.leetcode.com/problems/combine-two-tables/
+[combine-two-tables.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/combine-two-tables.sql
+[Nth Highest Salary]:https://oj.leetcode.com/problems/nth-highest-salary/
+[nth-highest-salary.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/nth-highest-salary.sql
+[Second Highest Salary]:https://oj.leetcode.com/problems/second-highest-salary/
+[second-highest-salary.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/second-highest-salary.sql
+
