@@ -715,7 +715,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Combine Two Tables] | [combine-two-tables.sql] | _O(m + n)_   | _O(m + n)_ | Easy     |
 [Nth Highest Salary] | [nth-highest-salary.sql] | _O(n^2)_   | _O(n)_ | Medium         |
-[Rank Scores] | [[rank-scores.sql] | _O(n^2)_       | _O(n)_          | Medium         |
+[Rank Scores] | [rank-scores.sql] | _O(n^2)_        | _O(n)_          | Medium         |
 [Second Highest Salary] | [second-highest-salary.sql] | _O(n)_ | _O(1)_ | Easy         |
 
 [Combine Two Tables]:https://oj.leetcode.com/problems/combine-two-tables/
