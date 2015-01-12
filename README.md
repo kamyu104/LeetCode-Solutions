@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-01-12), there are total `177` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-01-12), there are total `179` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `177` problems.
+Here is the classification of all `179` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -360,6 +360,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Insert Interval]| [insert-interval.py] | _O(n)_    | _O(1)_          | Hard           |
 [Insertion Sort List]|[insertion-sort-list.py] | _O(n^2)_ | _O(1)_    | Medium         |
+[Largest Number] | [largest-number.py] | _O(n^2)_   | _O(n)_          | Medium         |
 [Maximum Gap]   | [maximum-gap.py]| _O(n)_          | _O(n)_          | Hard           | Tricky 
 [Merge Intervals]| [merge-intervals.py] | _O(n^2)_  | _O(1)_          | Hard           |
 [Merge Sorted Array]| [merge-sorted-array.py] | _O(n)_ | _O(1)_       | Easy           |
@@ -371,6 +372,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [insert-interval.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insert-interval.py
 [Insertion Sort List]:https://oj.leetcode.com/problems/insertion-sort-list/
 [insertion-sort-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insertion-sort-list.py
+[Largest Number]:https://oj.leetcode.com/problems/largest-number/
+[largest-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/largest-number.py
 [Maximum Gap]:https://oj.leetcode.com/problems/maximum-gap/
 [maximum-gap.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/maximum-gap.py
 [Merge Intervals]:https://oj.leetcode.com/problems/merge-intervals/
