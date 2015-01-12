@@ -710,6 +710,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Wildcard Matching]:https://oj.leetcode.com/problems/wildcard-matching/
 [wildcard-matching.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/wildcard-matching.py
 
+---
+
 ##SQL
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
