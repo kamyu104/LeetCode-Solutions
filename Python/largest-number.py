@@ -13,11 +13,11 @@ class Solution:
     # @return a string
     def largestNumber(self, num):
         largest = ""
-        none_zero = False
+        nonzero = False
         for n in sorted(num, cmp=self.cmp_items):
             if n != 0:
-                none_zero = True
-            if none_zero:
+                nonzero = True
+            if nonzero:
                 largest += "{}".format(n)
         
         if largest == "":
