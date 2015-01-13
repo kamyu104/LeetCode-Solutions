@@ -716,7 +716,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Combine Two Tables] | [combine-two-tables.sql] | _O(m + n)_   | _O(m + n)_ | Easy     |
-[Consecutive Numbers] | [/consecutive-numbers.sql] | _O(n)_   | _O(n)_ | Medium        |
+[Consecutive Numbers] | [consecutive-numbers.sql] | _O(n)_   | _O(n)_ | Medium         |
 [Nth Highest Salary] | [nth-highest-salary.sql] | _O(n^2)_   | _O(n)_ | Medium         |
 [Rank Scores] | [rank-scores.sql] | _O(n^2)_        | _O(n)_          | Medium         |
 [Second Highest Salary] | [second-highest-salary.sql] | _O(n)_ | _O(1)_ | Easy         |
