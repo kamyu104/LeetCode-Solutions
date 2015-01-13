@@ -12,26 +12,10 @@ class Solution:
     # @param num, a list of integers
     # @return a string
     def largestNumber(self, num):
-        largest = ""
-        nonzero = False
-        for n in sorted(num, cmp=self.cmp_items):
-            if n != 0:
-                nonzero = True
-            if nonzero:
-                largest += "{}".format(n)
-        
-        if largest == "":
-            largest = "0"
-    
-        return largest
-
-    def cmp_items(self, a, b):
-        if a == b:
-            return 0
-        elif "{}{}".format(a, b) > "{}{}".format(b, a):
-            return -1
-        else:
-            return 1
+        num = [str(x) for x in num]
+        num.sort(cmp=lambda x, y: cmp(y + x, x + y))
+        ret = ''.join(num)
+        return ret.lstrip('0') or '0'
 
 if __name__ == "__main__":
     num = [3, 30, 34, 5, 9]
