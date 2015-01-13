@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-01-12), there are total `179` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-01-13), there are total `180` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `179` problems.
+Here is the classification of all `180` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -716,12 +716,15 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Combine Two Tables] | [combine-two-tables.sql] | _O(m + n)_   | _O(m + n)_ | Easy     |
+[Consecutive Numbers] | [/consecutive-numbers.sql] | _O(n)_   | _O(n)_ | Medium        |
 [Nth Highest Salary] | [nth-highest-salary.sql] | _O(n^2)_   | _O(n)_ | Medium         |
 [Rank Scores] | [rank-scores.sql] | _O(n^2)_        | _O(n)_          | Medium         |
 [Second Highest Salary] | [second-highest-salary.sql] | _O(n)_ | _O(1)_ | Easy         |
 
 [Combine Two Tables]:https://oj.leetcode.com/problems/combine-two-tables/
 [combine-two-tables.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/combine-two-tables.sql
+[Consecutive Numbers]:https://oj.leetcode.com/problems/consecutive-numbers/
+[consecutive-numbers.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/consecutive-numbers.sql
 [Nth Highest Salary]:https://oj.leetcode.com/problems/nth-highest-salary/
 [nth-highest-salary.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/nth-highest-salary.sql
 [Rank Scores]:https://oj.leetcode.com/problems/rank-scores/
