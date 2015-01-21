@@ -496,7 +496,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Find Minimum in Rotated Sorted Array]         | [find-minimum-in-rotated-sorted-array.py]       | _O(logn)_        | _O(1)_          | Medium         |
 [Find Minimum in Rotated Sorted Array II]      | [find-minimum-in-rotated-sorted-array-ii.py]       | _O(logn)_ ~ _O(n)_        | _O(1)_          | Hard         |
 [Find Peak Element] | [find-peak-element.py]        | _O(logn)_       | _O(1)_          | Medium         |
-[Median of Two Sorted Arrays] | [median-of-two-sorted-arrays.py] | _O(log(m + n)_ | _O(log(m + n)_ | Hard         |
+[Median of Two Sorted Arrays] | [median-of-two-sorted-arrays.py] | _O(log(m + n)_ | _O(1)_ | Hard         |
 [Pow(x, n)]     | [powx-n.py]     | _O(logn)_       | _O(logn)_       | Medium         |
 [Search a 2D Matrix] | [search-a-2d-matrix.py] | _O(log m + logn)_ | _O(1)_ | Medium   |
 [Search for a Range] | [search-for-a-range.py] | _O(logn)_ | _O(1)_   | Medium         |
