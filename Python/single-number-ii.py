@@ -13,6 +13,15 @@ class Solution:
     def singleNumber(self, A):
         one, two, carry = 0, 0, 0
         for x in A:
+            one, two = (~x & one) | (x & ~one & ~two), (~x & two) | (x & one)
+        return one
+        
+class Solution2:
+    # @param A, a list of integer
+    # @return an integer
+    def singleNumber(self, A):
+        one, two, carry = 0, 0, 0
+        for x in A:
             two |= one & x
             one ^= x
             carry = one & two
