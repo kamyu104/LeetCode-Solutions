@@ -1,11 +1,52 @@
 # Time:  O(log(m + n))
-# Space: O(log(m + n))
+# Space: O(1)
 # 
 # There are two sorted arrays A and B of size m and n respectively. 
 # Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 #
 
 class Solution:
+    # @return a float
+    def findMedianSortedArrays(self, A, B):
+        lenA, lenB = len(A), len(B)
+        if (lenA + lenB) % 2 == 1: 
+            return self.getKth(A, B, (lenA + lenB)/2 + 1)
+        else:
+            return (self.getKth(A, B, (lenA + lenB)/2) + self.getKth(A, B, (lenA + lenB)/2 + 1)) * 0.5
+            
+    def getKth(self, A, B, k):
+        b = max(0, k - len(B))
+        t = min(len(A), k)
+        while b < t:
+            x = b + (t - b) / 2
+            A_x_1, A_x, B_k_x_1, B_k_x = float("-inf"), float("inf"), float("-inf"), float("inf")
+            if x > 0:
+                A_x_1 = A[x - 1]
+            if x < len(A):
+                A_x = A[x]
+            if k - x > 0:
+                B_k_x_1 = B[k - x - 1]
+            if k - x < len(B):
+                B_k_x = B[k - x]
+            
+            if A_x < B_k_x_1:
+                b = x + 1
+            elif A_x_1 > B_k_x:
+                t = x - 1
+            else:
+                return max(A_x_1, B_k_x_1)
+        
+        A_b_1, B_k_b_1 = float("-inf"), float("-inf")
+        if b > 0:
+            A_b_1 = A[b - 1]
+        if k - b - 1 >= 0:
+            B_k_b_1 = B[k - b - 1]
+            
+        return max(A_b_1, B_k_b_1)
+
+# Time:  O(log(m + n))
+# Space: O(log(m + n))
+class Solution2:
     # @return a float
     def findMedianSortedArrays(self, A, B):
         lenA, lenB = len(A), len(B)
@@ -36,7 +77,7 @@ class Solution:
             return A[i + pa - 1]
 
 # using list slicing (O(k)) may be slower than solution1
-class Solution2:
+class Solution3:
     # @return a float
     def findMedianSortedArrays(self, A, B):
         lenA, lenB = len(A), len(B)
