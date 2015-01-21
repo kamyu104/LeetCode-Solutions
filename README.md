@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-01-18), there are total `182` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-01-21), there are total `183` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `182` problems.
+Here is the classification of all `183` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -717,6 +717,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Combine Two Tables] | [combine-two-tables.sql] | _O(m + n)_   | _O(m + n)_ | Easy     |
 [Consecutive Numbers] | [consecutive-numbers.sql] | _O(n)_   | _O(n)_ | Medium         |
+[Customers Who Never Order] | [customers-who-never-order.sql] | _O(n^2)_ | _O(1)_       | Easy           |
 [Duplicate Emails] | [duplicate-emails.sql] | _O(n^2)_ | _O(n)_       | Easy           |
 [Employees Earning More Than Their Managers] | [employees-earning-more-than-their-managers.sql] | _O(n^2)_   | _O(1)_ | Easy     |
 [Nth Highest Salary] | [nth-highest-salary.sql] | _O(n^2)_   | _O(n)_ | Medium         |
@@ -727,6 +728,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [combine-two-tables.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/combine-two-tables.sql
 [Consecutive Numbers]:https://oj.leetcode.com/problems/consecutive-numbers/
 [consecutive-numbers.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/consecutive-numbers.sql
+[Customers Who Never Order]:https://oj.leetcode.com/problems/customers-who-never-order/
+[customers-who-never-order.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/customers-who-never-order.sql
 [Duplicate Emails]:https://oj.leetcode.com/problems/duplicate-emails/
 [duplicate-emails.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/duplicate-emails.sql
 [Employees Earning More Than Their Managers]:https://oj.leetcode.com/problems/employees-earning-more-than-their-managers/
