@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(k), k is 
+# Space: O(k), k is the number of different characters
 #
 # Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
 # 
