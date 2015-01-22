@@ -273,7 +273,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Longest Substring with At Most Two Distinct Characters]| [longest-substring-with-at-most-two-distinct-characters.py] | _O(n^2)_ | _O(1)_ | Hard         |
 [Longest Substring Without Repeating Characters] | [longest-substring-without-repeating-characters.py] | _O(n)_ | _O(1)_ | Medium |
 [Max Points on a Line] | [max-points-on-a-line.py] | _O(n^2)_ | _O(n)_ | Hard          |
-[Minimum Window Substring] | [minimum-window-substring.py] | _O(n^2)_ | _O(n)_ | Hard          |
+[Minimum Window Substring] | [minimum-window-substring.py] | _O(n)_ | _O(k)_ | Hard          |
 [Substring with Concatenation of All Words] | [substring-with-concatenation-of-all-words.py] | _O(m * n * k)_ | _O(n * k)_ | Hard          |
 [Two Sum]      | [two-sum.py]      | _O(n)_         | _O(n)_          | Medium         |
 [Two Sum III - Data structure design] | [two-sum-iii-data-structure-design.py] | _O(n)_ | _O(n)_ | Easy |
