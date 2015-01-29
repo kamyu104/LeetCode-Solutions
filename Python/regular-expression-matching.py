@@ -74,7 +74,7 @@ class Solution3:
             return len(s) == 0
         
         if len(p) == 1 or p[1] != '*':
-            if len(s) == 0 or (p[0] == s[0] or p[0] == '.'):
+            if len(s) > 0 and  (p[0] == s[0] or p[0] == '.'):
                 return self.isMatch(s[1:], p[1:])
             else:
                 return False
