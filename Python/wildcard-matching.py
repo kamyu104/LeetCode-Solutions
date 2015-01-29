@@ -48,7 +48,9 @@ class Solution:
         
         return p_ptr == len(p)
     
-# dp
+# dp with rolling window
+# Time:  O(m * n)
+# Space: O(m + n)
 class Solution2:
     # @return a boolean
     def isMatch(self, s, p):
