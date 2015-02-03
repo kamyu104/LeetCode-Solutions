@@ -16,6 +16,29 @@ class Solution:
     # @param prices, a list of integer
     # @return an integer
     def maxProfit(self, prices):
+        return self.maxKPairsProfit(prices, 2)
+    
+    def maxKPairsProfit(self, prices, k):
+        k_sum = [float("-inf") for _ in xrange(2 * k)]
+        for i in xrange(len(prices)):
+            pre_k_sum = list(k_sum)
+            j, sign = 0, -1
+            while j < len(k_sum) and j <= i:
+                diff = sign * prices[i]
+                
+                if j > 0:
+                    diff += pre_k_sum[j - 1]
+                
+                k_sum[j] = max(diff, pre_k_sum[j])
+                j += 1
+                sign *= -1
+                
+        return k_sum[-1]
+    
+class Solution2:
+    # @param prices, a list of integer
+    # @return an integer
+    def maxProfit(self, prices):
         min_price, max_profit_from_left, max_profits_from_left = float("inf"), 0, []
         for price in prices:
             min_price = min(min_price, price)
