@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(n)
+# Space: O(1)
 #
 # Given an unsorted integer array, find the first missing positive integer.
 # 
