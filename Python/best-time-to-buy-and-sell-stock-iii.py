@@ -12,9 +12,24 @@
 # (ie, you must sell the stock before you buy again).
 #
 
+# Time:  O(n)
+# Space: O(1)
+class Solution:
+    # @param prices, a list of integer
+    # @return an integer
+    def maxProfit(self, prices):
+        hold1, hold2 = float("-inf"), float("-inf")
+        release1, release2 = 0, 0
+        for i in prices:
+            release2 = max(release2, hold2 + i)
+            hold2    = max(hold2,    release1 - i)
+            release1 = max(release1, hold1 + i)
+            hold1    = max(hold1,    -i);
+        return release2
+    
 # Time:  O(k^2 * n)
 # Space: O(k)
-class Solution:
+class Solution2:
     # @param prices, a list of integer
     # @return an integer
     def maxProfit(self, prices):
@@ -39,7 +54,7 @@ class Solution:
                 
         return k_sum[-1]
       
-class Solution2:
+class Solution3:
     # @param prices, a list of integer
     # @return an integer
     def maxProfit(self, prices):
