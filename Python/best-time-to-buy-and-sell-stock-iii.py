@@ -12,29 +12,33 @@
 # (ie, you must sell the stock before you buy again).
 #
 
+# Time:  O(k^2 * n)
+# Space: O(k)
 class Solution:
     # @param prices, a list of integer
     # @return an integer
     def maxProfit(self, prices):
-        return self.maxKPairsProfit(prices, 2)
-    
+        result = 0
+        for k in xrange(3):
+            result = max(result, self.maxKPairsProfit(prices, k))
+        return result
+        
     def maxKPairsProfit(self, prices, k):
+        if k == 0 or len(prices) < 2:
+            return 0
+            
         k_sum = [float("-inf") for _ in xrange(2 * k)]
         for i in xrange(len(prices)):
-            pre_k_sum = list(k_sum)
-            j, sign = 0, -1
+            j, sign, pre_k_sum = 0, -1, list(k_sum)
             while j < len(k_sum) and j <= i:
                 diff = sign * prices[i]
-                
                 if j > 0:
                     diff += pre_k_sum[j - 1]
-                
                 k_sum[j] = max(diff, pre_k_sum[j])
-                j += 1
-                sign *= -1
+                j, sign = j + 1, sign * -1
                 
         return k_sum[-1]
-    
+      
 class Solution2:
     # @param prices, a list of integer
     # @return an integer
