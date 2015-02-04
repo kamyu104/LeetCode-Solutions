@@ -29,7 +29,7 @@ class Solution:
     
 # Time:  O(k^2 * n)
 # Space: O(k)
-class Solution:
+class Solution2:
     # @param prices, a list of integer
     # @return an integer
     def maxProfit(self, prices):
