@@ -1,5 +1,5 @@
 # Time:  O(n * 4^n)
-# Space: O(1)
+# Space: O(n)
 #
 # Given a digit string, return all possible letter combinations that the number could represent.
 # 
