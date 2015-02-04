@@ -280,7 +280,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Substring with Concatenation of All Words] | [substring-with-concatenation-of-all-words.py] | _O(m * n * k)_ | _O(n * k)_ | Hard          |
 [Two Sum]      | [two-sum.py]      | _O(n)_         | _O(n)_          | Medium         |
 [Two Sum III - Data structure design] | [two-sum-iii-data-structure-design.py] | _O(n)_ | _O(n)_ | Easy |
-[Valid Sudoku] | [valid-sudoku.py] | _O(n)_         | _O(n)_          | Easy           |
+[Valid Sudoku] | [valid-sudoku.py] | _O(n^2)_         | _O(n)_          | Easy           |
 
 [4 Sum]: https://oj.leetcode.com/problems/4sum/
 [4sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/4sum.py
