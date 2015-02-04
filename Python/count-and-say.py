@@ -1,5 +1,5 @@
-# Time:  O(n^2)
-# Space: O(n)
+# Time:  O(n * 2^n)
+# Space: O(2^n)
 #
 # The count-and-say sequence is the sequence of integers beginning as follows:
 # 1, 11, 21, 1211, 111221, ...
