@@ -48,18 +48,18 @@ class Solution:
             # count space number    
             spaceCount = L - size
             if i - begin - 1 > 0 and i < len(words):
-                everyCount = spaceCount / (i - begin - 1)
+                everyCount = spaceCount / (i - begin - 1) + 1
                 spaceCount %= i - begin - 1
             else:
-                everyCount = 0
-            
+                everyCount = 1
+
             # add space
             j = begin
             while j < i:
                 if j == begin:
                     s = words[j]
                 else:
-                    s += ' ' * (everyCount + 1)
+                    s += ' ' * everyCount
                     if spaceCount > 0 and i < len(words):
                         s += ' '
                         spaceCount -= 1
