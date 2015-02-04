@@ -420,7 +420,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Brute Force Search
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Letter Combinations of a Phone Number]| [letter-combinations-of-a-phone-number.py] | _O(n * 4^n)_ | _O(1)_ | Medium |
+[Letter Combinations of a Phone Number]| [letter-combinations-of-a-phone-number.py] | _O(n * 4^n)_ | _O(n)_ | Medium |
 [Permutations]| [permutations.py] | _O(n!)_         | _O(n)_          | Medium         |
 [Permutations II]| [permutations-ii.py] | _O(n!)_   | _O(n)_          | Hard           |
 [Subsets]       | [subsets.py]    | _O(2^n)_        | _O(1)_          | Medium         |
