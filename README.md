@@ -128,7 +128,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Add Binary]    | [add-binary.py] | _O(n)_          | _O(1)_          | Easy           |
 [Anagrams]      | [anagrams.py]   | _O(n)_          | _O(n)_          | Medium         |
 [Compare Version Numbers] | [compare-version-numbers.py] | _O(n)_ | _O(1)_ | Easy     |
-[Count and Say] | [count-and-say.py]| _O(n^2)_      | _O(n)_          | Easy           |
+[Count and Say] | [count-and-say.py]| _O(n * 2^n)_  | _O(2^n)_        | Easy           |
 [Implement strStr()] | [implement-strstr.py] | _O(n + m)_   | _O(m)_  | Easy           | `KMP Algorithm`
 [Length of Last Word] | [length-of-last-word.py] | _O(n)_   | _O(1)_  | Easy           |
 [Longest Common Prefix] | [longest-common-prefix.py] | _O(n1 + n2 + ...)_   | _O(1)_  | Easy           |
