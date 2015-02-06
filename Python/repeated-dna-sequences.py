@@ -18,19 +18,18 @@ class Solution:
     # @param s, a string
     # @return a list of strings
     def findRepeatedDnaSequences(self, s):
-        hash_table = {}
+        dict = {}
         rolling_hash = 0
         res = []
 
         for i in xrange(len(s)):
             rolling_hash = rolling_hash << 3 & 0x3fffffff | ord(s[i]) & 7
-            if hash_table.get(rolling_hash, None) != None:
-                if hash_table[rolling_hash]:
-                    res.append(s[i - 9: i + 1])
-                    hash_table[rolling_hash] = False
+            if dict.get(rolling_hash, None) is None:
+                dict[rolling_hash] = True
             else:
-                hash_table[rolling_hash] = True
-        
+                if dict[rolling_hash]:
+                    res.append(s[i - 9: i + 1])
+                    dict[rolling_hash] = False
         return res
 
 if __name__ == "__main__":
