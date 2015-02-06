@@ -24,7 +24,7 @@ class Solution:
 
         for i in xrange(len(s)):
             rolling_hash = rolling_hash << 3 & 0x3fffffff | ord(s[i]) & 7
-            if dict.get(rolling_hash, None) is None:
+            if dict.get(rolling_hash) is None:
                 dict[rolling_hash] = True
             else:
                 if dict[rolling_hash]:
