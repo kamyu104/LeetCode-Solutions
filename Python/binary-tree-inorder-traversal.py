@@ -72,6 +72,22 @@ class Solution2:
                     current = parent.right
         return result
 
+class Solution3:
+    # @param root, a tree node
+    # @return a list of integers
+    def inorderTraversal(self, root):
+        result, stack, current, last_traversed = [], [], root, None
+        while stack or current:
+            if current:
+                stack.append(current)
+                current = current.left
+            else:
+                current = stack[-1]
+                stack.pop()
+                result.append(current.val)
+                current = current.right
+        return result
+
 if __name__ == "__main__":
     root = TreeNode(1)
     root.right = TreeNode(2)
