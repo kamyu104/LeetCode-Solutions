@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-02-03), there are total `186` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-02-06), there are total `187` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `186` problems.
+Here is the classification of all `187` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -277,6 +277,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Longest Substring Without Repeating Characters] | [longest-substring-without-repeating-characters.py] | _O(n)_ | _O(1)_ | Medium |
 [Max Points on a Line] | [max-points-on-a-line.py] | _O(n^2)_ | _O(n)_ | Hard          |
 [Minimum Window Substring] | [minimum-window-substring.py] | _O(n)_ | _O(k)_ | Hard          |
+[Repeated DNA Sequences] | [repeated-dna-sequences.py] | _O(n)_       | _O(n)_          | Medium         |
 [Substring with Concatenation of All Words] | [substring-with-concatenation-of-all-words.py] | _O(m * n * k)_ | _O(n * k)_ | Hard          |
 [Two Sum]      | [two-sum.py]      | _O(n)_         | _O(n)_          | Medium         |
 [Two Sum III - Data structure design] | [two-sum-iii-data-structure-design.py] | _O(n)_ | _O(n)_ | Easy |
@@ -292,6 +293,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [max-points-on-a-line.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/max-points-on-a-line.py
 [Minimum Window Substring]:https://oj.leetcode.com/problems/minimum-window-substring/
 [minimum-window-substring.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/minimum-window-substring.py
+[Repeated DNA Sequences]:https://oj.leetcode.com/problems/repeated-dna-sequences/
+[repeated-dna-sequences.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/repeated-dna-sequences.py
 [Substring with Concatenation of All Words]:https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/
 [substring-with-concatenation-of-all-words.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/substring-with-concatenation-of-all-words.py
 [Two Sum]:https://oj.leetcode.com/problems/two-sum/
