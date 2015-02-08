@@ -126,7 +126,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Add Binary]    | [add-binary.py] | _O(n)_          | _O(1)_          | Easy           |
-[Anagrams]      | [anagrams.py]   | _O(n)_          | _O(n)_          | Medium         |
 [Compare Version Numbers] | [compare-version-numbers.py] | _O(n)_ | _O(1)_ | Easy     |
 [Count and Say] | [count-and-say.py]| _O(n * 2^n)_  | _O(2^n)_        | Easy           |
 [Implement strStr()] | [implement-strstr.py] | _O(n + m)_   | _O(m)_  | Easy           | `KMP Algorithm`
@@ -144,8 +143,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 [Add Binary]:https://oj.leetcode.com/problems/add-binary/
 [add-binary.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-binary.py
-[Anagrams]:https://oj.leetcode.com/problems/anagrams/
-[anagrams.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/anagrams.py
 [Count and Say]:https://oj.leetcode.com/problems/count-and-say/
 [count-and-say.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/count-and-say.py
 [Compare Version Numbers]:https://oj.leetcode.com/problems/compare-version-numbers/
@@ -273,6 +270,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [4 Sum]         |[4sum.py]        | _O(n^2)_ ~ _O(n^4)_ | _O(n^2)_    | Medium         |
+[Anagrams]      | [anagrams.py]   | _O(n)_          | _O(n)_          | Medium         |
 [Longest Substring with At Most Two Distinct Characters]| [longest-substring-with-at-most-two-distinct-characters.py] | _O(n^2)_ | _O(1)_ | Hard         |
 [Longest Substring Without Repeating Characters] | [longest-substring-without-repeating-characters.py] | _O(n)_ | _O(1)_ | Medium |
 [Max Points on a Line] | [max-points-on-a-line.py] | _O(n^2)_ | _O(n)_ | Hard          |
@@ -285,6 +283,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 [4 Sum]: https://oj.leetcode.com/problems/4sum/
 [4sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/4sum.py
+[Anagrams]:https://oj.leetcode.com/problems/anagrams/
+[anagrams.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/anagrams.py
 [Longest Substring with At Most Two Distinct Characters]:https://oj.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
 [longest-substring-with-at-most-two-distinct-characters.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-substring-with-at-most-two-distinct-characters.py
 [Longest Substring Without Repeating Characters]:https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/
