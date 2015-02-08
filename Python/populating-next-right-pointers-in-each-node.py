@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(logn)
+# Space: O(1)
 #
 # Given a binary tree
 # 
@@ -45,6 +45,23 @@ class TreeNode:
             return "{} -> {}".format(self.val, repr(self.next))
 
 class Solution:
+    # @param root, a tree node
+    # @return nothing
+    def connect(self, root):
+        head = root
+        while head:
+            prev, cur, next_head = None, head, None
+            while cur and cur.left:
+                cur.left.next = cur.right
+                if cur.next:
+                    cur.right.next = cur.next.left
+                cur = cur.next
+            head = head.left
+
+# Time:  O(n)
+# Space: O(logn)
+# recusion
+class Solution2:
     # @param root, a tree node
     # @return nothing
     def connect(self, root):
