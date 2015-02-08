@@ -455,7 +455,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Flatten Binary Tree to Linked List]|[flatten-binary-tree-to-linked-list.py]| _O(n)_        | _O(logn)_          | Medium         |
 [Maximum Depth of Binary Tree]|[maximum-depth-of-binary-tree.py]| _O(n)_ | _O(logn)_ | Easy |
 [Minimum Depth of Binary Tree]|[minimum-depth-of-binary-tree.py]| _O(n)_ | _O(logn)_ | Easy |
-[Populating Next Right Pointers in Each Node]|[populating-next-right-pointers-in-each-node.py]| _O(n)_ | _O(logn)_ | Medium |
+[Populating Next Right Pointers in Each Node]|[populating-next-right-pointers-in-each-node.py]| _O(n)_ | _O(1)_ | Medium |
 [Same Tree]      |[same-tree.py]  | _O(n)_          | _O(logn)_        | Easy          |
 [Sum Root to Leaf Numbers] | [sum-root-to-leaf-numbers.py] | _O(n)_ | _O(logn)_ | Medium |
 [Unique Binary Search Trees II] | [unique-binary-search-trees-ii.py] | _O(4^n / n^(3/2)_      | _O(4^n / n^(3/2)_         | Medium         |
