@@ -372,7 +372,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Merge Sorted Array]| [merge-sorted-array.py] | _O(n)_ | _O(1)_       | Easy           |
 [Merge Two Sorted Lists]| [merge-two-sorted-lists.py] | _O(n)_ | _O(1)_ | Easy         |
 [Sort Colors]   | [sort-colors.py] | _O(n)_         | _O(1)_          | Medium         |
-[Sort List]     | [sort-list.py]  | _O(nlogn)_      | _O(1)_          | Medium         |
+[Sort List]     | [sort-list.py]  | _O(nlogn)_      | _O(logn)_       | Medium         |
 
 [Insert Interval]:https://oj.leetcode.com/problems/insert-interval/
 [insert-interval.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insert-interval.py
