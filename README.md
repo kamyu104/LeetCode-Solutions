@@ -459,7 +459,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Same Tree]      |[same-tree.py]  | _O(n)_          | _O(logn)_        | Easy          |
 [Sum Root to Leaf Numbers] | [sum-root-to-leaf-numbers.py] | _O(n)_ | _O(logn)_ | Medium |
 [Unique Binary Search Trees II] | [unique-binary-search-trees-ii.py] | _O(4^n / n^(3/2)_      | _O(4^n / n^(3/2)_         | Medium         |
-[Validate Binary Search Tree]|[validate-binary-search-tree.py]| _O(n)_ | _O(logn)_ | Medium |
+[Validate Binary Search Tree]|[validate-binary-search-tree.py]| _O(n)_ | _O(1)_ | Medium |
 
 [Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
 [balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
@@ -489,7 +489,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [sum-root-to-leaf-numbers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sum-root-to-leaf-numbers.py
 [Unique Binary Search Trees II]:https://oj.leetcode.com/problems/unique-binary-search-trees-ii/
 [unique-binary-search-trees-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/unique-binary-search-trees-ii.py
-[Validate Binary Search Tree]:https://oj.leetcode.com/problems/validate-binary-search-tree.py/
+[Validate Binary Search Tree]:https://oj.leetcode.com/problems/validate-binary-search-tree/
 [validate-binary-search-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/validate-binary-search-tree.py
 
 
