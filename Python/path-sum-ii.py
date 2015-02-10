@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(logn)
+# Space: O(h), h is height of binary tree
 #
 # Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
 # 
