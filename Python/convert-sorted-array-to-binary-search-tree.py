@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(h), h is height of binary tree
+# Space: O(logn)
 #
 # Given an array where elements are sorted in ascending order, 
 # convert it to a height balanced BST.
