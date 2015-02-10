@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(logn)
+# Space: O(h), h is height of binary tree
 #
 # Given a binary tree, find its maximum depth.
 # 
