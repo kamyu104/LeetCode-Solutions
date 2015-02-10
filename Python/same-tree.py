@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(logn)
+# Space: O(h), h is height of binary tree
 #
 # Given two binary trees, write a function to check if they are equal or not.
 # 
