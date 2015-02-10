@@ -212,12 +212,12 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Stack
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Binary Search Tree Iterator] | [binary-search-tree-iterator.py] | _O(1)_| _O(logn)_| Medium   
+[Binary Search Tree Iterator] | [binary-search-tree-iterator.py] | _O(1)_| _O(h)_| Medium   
 [Evaluate Reverse Polish Notation]| [evaluate-reverse-polish-notation.py]| _O(n)_| _O(n)_| Medium          |
 [Longest Valid Parentheses]| [longest-valid-parentheses.py] | _O(n)_ | _O(1)_ | Hard   |
 [Min Stack]     | [min-stack.py]  | _O(n)_          | _O(1)_          | Easy           |
 [Simplify Path]| [simplify-path.py] | _O(n)_        | _O(n)_          | Medium         |
-[Symmetric Tree]| [symmetric-tree.py] | _O(n)_      | _O(logn)_       | Easy           |
+[Symmetric Tree]| [symmetric-tree.py] | _O(n)_      | _O(h )_         | Easy           |
 [Valid Parentheses]| [valid-parentheses.py] | _O(n)_        | _O(n)_          | Easy           |
 
 [Binary Search Tree Iterator]:https://oj.leetcode.com/problems/binary-search-tree-iterator/
@@ -445,19 +445,19 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Divide and Conquer
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Balanced Binary Tree] | [balanced-binary-tree.py] | _O(n)_| _O(logn)_| Easy           |
+[Balanced Binary Tree] | [balanced-binary-tree.py] | _O(n)_| _O(h)_   | Easy           |
 [Binary Tree Maximum Path Sum]| [binary-tree-maximum-path-sum.py] | _O(n)_| _O(logn)_| Hard  |  
 [Binary Tree Upside Down] | [binary-tree-upside-down.py] | _O(n)_ | _O(1)_ | Medium    | 
 [Construct Binary Tree from Inorder and Postorder Traversal] | [construct-binary-tree-from-inorder-and-postorder-traversal.py] | _O(n)_        | _O(n)_          | Medium         |
 [Construct Binary Tree from Preorder and Inorder Traversal] | [construct-binary-tree-from-preorder-and-inorder-traversal.py] | _O(n)_        | _O(n)_          | Medium   
 [Convert Sorted Array to Binary Search Tree] | [convert-sorted-array-to-binary-search-tree.py] | _O(n)_        | _O(logn)_          | Medium         |
 [Convert Sorted List to Binary Search Tree] | [convert-sorted-list-to-binary-search-tree.py] | _O(n)_        | _O(logn)_          | Medium         |
-[Flatten Binary Tree to Linked List]|[flatten-binary-tree-to-linked-list.py]| _O(n)_        | _O(logn)_          | Medium         |
-[Maximum Depth of Binary Tree]|[maximum-depth-of-binary-tree.py]| _O(n)_ | _O(logn)_ | Easy |
-[Minimum Depth of Binary Tree]|[minimum-depth-of-binary-tree.py]| _O(n)_ | _O(logn)_ | Easy |
+[Flatten Binary Tree to Linked List]|[flatten-binary-tree-to-linked-list.py]| _O(n)_        | _O(h)_          | Medium         |
+[Maximum Depth of Binary Tree]|[maximum-depth-of-binary-tree.py]| _O(n)_ | _O(h)_ | Easy |
+[Minimum Depth of Binary Tree]|[minimum-depth-of-binary-tree.py]| _O(n)_ | _O(h)_ | Easy |
 [Populating Next Right Pointers in Each Node]|[populating-next-right-pointers-in-each-node.py]| _O(n)_ | _O(1)_ | Medium |
 [Same Tree]      |[same-tree.py]  | _O(n)_          | _O(logn)_        | Easy          |
-[Sum Root to Leaf Numbers] | [sum-root-to-leaf-numbers.py] | _O(n)_ | _O(logn)_ | Medium |
+[Sum Root to Leaf Numbers] | [sum-root-to-leaf-numbers.py] | _O(n)_ | _O(h)_ | Medium |
 [Unique Binary Search Trees II] | [unique-binary-search-trees-ii.py] | _O(4^n / n^(3/2)_      | _O(4^n / n^(3/2)_         | Medium         |
 [Validate Binary Search Tree]|[validate-binary-search-tree.py]| _O(n)_ | _O(1)_ | Medium |
 
