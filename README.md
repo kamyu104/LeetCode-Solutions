@@ -574,8 +574,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [N-Queens]      | [n-queens.py]   | _O(n!)_         | _O(n)_          | Hard           |
 [N-Queens-II]   | [n-queens-ii.py] | _O(n!)_        | _O(n)_          | Hard           |
 [Palindrome Partitioning] | [palindrome-partitioning.py] | _O(n^2)_ ~ _O(2^n)_ | _O(n^2)_ | Medium |
-[Path Sum]      | [path-sum.py]   | _O(n)_          | _O(logn)_       | Easy           |
-[Path Sum II]   | [path-sum-ii.py] | _O(n)_         | _O(logn)_       | Medium         |
+[Path Sum]      | [path-sum.py]   | _O(n)_          | _O(h)_          | Easy           |
+[Path Sum II]   | [path-sum-ii.py] | _O(n)_         | _O(h)_          | Medium         |
 [Restore IP Addresses] | [restore-ip-addresses.py] | _O(n^m)_ ~ _O(3^4)_ | _O(n * m)_ ~ _O(3 * 4)_ | Medium         |
 [Sudoku Solver] | [sudoku-solver.py] | _O((9!)^9)_  | _O(1)_          | Hard           |
 [Word Search] | [word-search.py] | _O(m * n * 3^p)_ | _O(m * n * p)_  | Medium         |
