@@ -217,7 +217,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Longest Valid Parentheses]| [longest-valid-parentheses.py] | _O(n)_ | _O(1)_ | Hard   |
 [Min Stack]     | [min-stack.py]  | _O(n)_          | _O(1)_          | Easy           |
 [Simplify Path]| [simplify-path.py] | _O(n)_        | _O(n)_          | Medium         |
-[Symmetric Tree]| [symmetric-tree.py] | _O(n)_      | _O(h )_         | Easy           |
+[Symmetric Tree]| [symmetric-tree.py] | _O(n)_      | _O(h)_          | Easy           |
 [Valid Parentheses]| [valid-parentheses.py] | _O(n)_        | _O(n)_          | Easy           |
 
 [Binary Search Tree Iterator]:https://oj.leetcode.com/problems/binary-search-tree-iterator/
