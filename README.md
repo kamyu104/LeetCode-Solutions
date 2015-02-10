@@ -446,7 +446,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Balanced Binary Tree] | [balanced-binary-tree.py] | _O(n)_| _O(h)_   | Easy           |
-[Binary Tree Maximum Path Sum]| [binary-tree-maximum-path-sum.py] | _O(n)_| _O(logn)_| Hard  |  
+[Binary Tree Maximum Path Sum]| [binary-tree-maximum-path-sum.py] | _O(n)_| _O(h)_| Hard  |  
 [Binary Tree Upside Down] | [binary-tree-upside-down.py] | _O(n)_ | _O(1)_ | Medium    | 
 [Construct Binary Tree from Inorder and Postorder Traversal] | [construct-binary-tree-from-inorder-and-postorder-traversal.py] | _O(n)_        | _O(n)_          | Medium         |
 [Construct Binary Tree from Preorder and Inorder Traversal] | [construct-binary-tree-from-preorder-and-inorder-traversal.py] | _O(n)_        | _O(n)_          | Medium   
