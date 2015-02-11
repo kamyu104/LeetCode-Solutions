@@ -570,7 +570,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Combination Sum]| [combination-sum.py] | _O(n^m)_    | _O(m)_          | Medium         |
 [Combination Sum II]| [combination-sum-ii.py]| _O(n! / m!(n-m)!)_| _O(m)_         | Medium         |
 [Combinations]  | [combinations.py] | _O(n!)_       | _O(n)_          | Medium         |
-[Generate Parentheses]| [generate-parentheses.py]| _O(4^n / n^(3/2)_ | _O(n)_   | Medium         |
+[Generate Parentheses]| [generate-parentheses.py]| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         |
 [N-Queens]      | [n-queens.py]   | _O(n!)_         | _O(n)_          | Hard           |
 [N-Queens-II]   | [n-queens-ii.py] | _O(n!)_        | _O(n)_          | Hard           |
 [Palindrome Partitioning] | [palindrome-partitioning.py] | _O(n^2)_ ~ _O(2^n)_ | _O(n^2)_ | Medium |
