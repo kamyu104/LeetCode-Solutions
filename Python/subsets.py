@@ -1,4 +1,4 @@
-# Time:  O(2^n)
+# Time:  O(n * 2^n)
 # Space: O(1)
 #
 # Given a set of distinct integers, S, return all possible subsets.
