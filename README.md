@@ -426,8 +426,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Letter Combinations of a Phone Number]| [letter-combinations-of-a-phone-number.py] | _O(n * 4^n)_ | _O(n)_ | Medium |
 [Permutations]| [permutations.py] | _O(n!)_         | _O(n)_          | Medium         |
 [Permutations II]| [permutations-ii.py] | _O(n!)_   | _O(n)_          | Hard           |
-[Subsets]       | [subsets.py]    | _O(2^n)_        | _O(1)_          | Medium         |
-[Subsets II]    | [subsets-ii.py] | _O(2^n)_        | _O(1)_          | Medium         |
+[Subsets]       | [subsets.py]    | _O(n * 2^n)_    | _O(1)_          | Medium         |
+[Subsets II]    | [subsets-ii.py] | _O(n * 2^n)_    | _O(1)_          | Medium         |
 
 [Letter Combinations of a Phone Number]:https://oj.leetcode.com/problems/letter-combinations-of-a-phone-number/
 [letter-combinations-of-a-phone-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/letter-combinations-of-a-phone-number.py
