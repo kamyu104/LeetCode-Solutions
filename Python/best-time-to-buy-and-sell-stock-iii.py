@@ -64,7 +64,9 @@ class Solution2:
                 j, sign = j + 1, sign * -1
                 
         return k_sum[-1]
-        
+
+# Time:  O(n)
+# Space: O(n)     
 class Solution3:
     # @param prices, a list of integer
     # @return an integer
