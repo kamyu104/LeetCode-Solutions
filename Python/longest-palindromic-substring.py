@@ -35,7 +35,7 @@ class Solution:
         return s[start : start + max_len]
     
     def preProcess(self, s):
-        if len(s) == 0:
+        if not s:
             return "^$"
         string = "^"
         for i in s:
