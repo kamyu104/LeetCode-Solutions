@@ -20,7 +20,7 @@ class Solution:
     # @param triangle, a list of lists of integers
     # @return an integer
     def minimumTotal(self, triangle):
-        if len(triangle) == 0:
+        if not triangle:
             return 0
         
         cur = triangle[0] + [float("inf")]
