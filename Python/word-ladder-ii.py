@@ -55,7 +55,7 @@ class Solution:
         return result
     
     def backtrack(self, result, trace, path, word):
-        if len(trace[word]) == 0:
+        if not trace[word]:
             result.append([word] + path)
         else:
             for prev in trace[word]:
