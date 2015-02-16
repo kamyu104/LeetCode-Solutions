@@ -33,7 +33,7 @@ class Solution:
         INT_MIN = -2147483648
         result = 0
         
-        if len(str) == 0:
+        if not str:
             return result
         
         i = 0
