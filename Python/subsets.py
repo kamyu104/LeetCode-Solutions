@@ -46,7 +46,7 @@ class Solution2:
         return self.subsetsRecu([], sorted(S))
     
     def subsetsRecu(self, cur, S):
-        if len(S) == 0:
+        if not S:
             return [cur]
         
         return self.subsetsRecu(cur, S[1:]) + self.subsetsRecu(cur + [S[0]], S[1:])
