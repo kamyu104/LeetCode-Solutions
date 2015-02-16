@@ -14,7 +14,7 @@ class Solution:
     # @param a list of integers
     # @return an integer
     def removeDuplicates(self, A):
-        if len(A) == 0:
+        if not A:
             return 0
         
         last, i, same = 0, 1, False
