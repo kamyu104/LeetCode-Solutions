@@ -14,17 +14,17 @@ class Solution:
     # @param needle, a string
     # @return a string or None
     def strStr(self, haystack, needle):
+        if not needle:
+            return 0
+            
         if len(haystack) < len(needle):
-            return None
-        
-        if len(needle) == 0:
-            return haystack
+            return -1
         
         i = self.KMP(haystack, needle)
         if i > -1:
-            return haystack[i:]
+            return i
         else:
-            return None
+            return -1
     
     def KMP(self, text, pattern):
         prefix = self.getPrefix(pattern)
