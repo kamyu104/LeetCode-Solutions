@@ -21,7 +21,7 @@ class Solution:
     # @param intervals, a list of Interval
     # @return a list of Interval
     def merge(self, intervals):
-        if len(intervals) == 0:
+        if not intervals:
             return intervals
         intervals.sort(key = lambda x: x.start)
         result = [intervals[0]]
