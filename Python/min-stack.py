@@ -17,7 +17,7 @@ class MinStack:
     # @param x, an integer
     # @return an integer
     def push(self, x):
-        if len(self.stack) == 0:
+        if not self.stack:
             self.stack.append(0)
             self.min = x
         else:
