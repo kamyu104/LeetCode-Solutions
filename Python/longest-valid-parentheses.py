@@ -49,11 +49,11 @@ class Solution2:
         for i in xrange(len(s)):
             if s[i] == '(':
                 indices.append(i)
-            elif len(indices) == 0:
+            elif not indices:
                 last = i
             else:
                 indices.pop()
-                if len(indices) == 0:
+                if not indices:
                     longest = max(longest, i - last)
                 else:
                     longest = max(longest, i - indices[-1])
