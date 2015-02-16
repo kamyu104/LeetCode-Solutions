@@ -23,7 +23,7 @@ class Solution:
     # Capture all regions by modifying the input board in-place.
     # Do not return any value.
     def solve(self, board):
-        if len(board) == 0:
+        if not board:
             return
         current = []
         
