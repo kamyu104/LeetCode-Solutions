@@ -44,7 +44,6 @@ class Solution2:
                 max_buy[j] = max(max_buy[j], max_sell[j-1] - prices[i])
                 max_sell[j] = max(max_sell[j], max_buy[j] + prices[i])
 
-
         return max_sell[k]
 
 # Time:  O(n)
