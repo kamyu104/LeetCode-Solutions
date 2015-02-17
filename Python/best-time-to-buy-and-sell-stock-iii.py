@@ -40,11 +40,10 @@ class Solution2:
         max_sell = [0 for _ in xrange(k + 1)]
 
         for i in xrange(len(prices)):
-            j = 1
-            while j <= k and j <= i + 1:
+            for j in xrange(1, min(k, i+1) + 1):
                 max_buy[j] = max(max_buy[j], max_sell[j-1] - prices[i])
                 max_sell[j] = max(max_sell[j], max_buy[j] + prices[i])
-                j += 1
+
 
         return max_sell[k]
 
