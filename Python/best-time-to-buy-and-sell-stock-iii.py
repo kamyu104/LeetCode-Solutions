@@ -27,7 +27,7 @@ class Solution:
             hold1    = max(hold1,    -i);
         return release2
     
-# Time:  O(k^2 * n)
+# Time:  O(k * n)
 # Space: O(k)
 class Solution2:
     # @param prices, a list of integer
