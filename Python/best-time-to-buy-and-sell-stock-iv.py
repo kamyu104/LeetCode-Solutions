@@ -24,9 +24,6 @@ class Solution:
         return profit
 
     def maxAtMostKPairsProfit(self, prices, k):
-        if k == 0:
-            return 0
-
         max_buy = [float("-inf") for _ in xrange(k + 1)]
         max_sell = [0 for _ in xrange(k + 1)]
 
