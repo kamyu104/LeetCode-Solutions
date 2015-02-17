@@ -36,33 +36,17 @@ class Solution2:
         return self.maxAtMostKPairsProfit(prices, 2)
         
     def maxAtMostKPairsProfit(self, prices, k):
-        if k == 0:
-            return 0
-            
-        k_sum = [float("-inf") for _ in xrange(2 * k)]
-        for i in xrange(1, len(k_sum), 2):
-            k_sum[i] = 0
-            
+        max_buy = [float("-inf") for _ in xrange(k + 1)]
+        max_sell = [0 for _ in xrange(k + 1)]
+
         for i in xrange(len(prices)):
-            j, sign, pre_k_sum = 0, -1, 0
-            while j < len(k_sum):
-                diff = pre_k_sum + sign * prices[i]
-                pre_k_sum, k_sum[j] = k_sum[j], max(diff, k_sum[j])
-                j, sign = j + 1, sign * -1
-                
-        return k_sum[-1]
-        
-    def maxExatclyKPairsProfit(self, prices, k): 
-        k_sum = [float("-inf") for _ in xrange(2 * k)]
-            
-        for i in xrange(len(prices)):
-            j, sign, pre_k_sum = 0, -1, 0
-            while j < len(k_sum) and j <= i:
-                diff = pre_k_sum + sign * prices[i]
-                pre_k_sum, k_sum[j] = k_sum[j], max(diff, k_sum[j])
-                j, sign = j + 1, sign * -1
-                
-        return k_sum[-1]
+            j = 1
+            while j <= k and j <= i + 1:
+                max_buy[j] = max(max_buy[j], max_sell[j-1] - prices[i])
+                max_sell[j] = max(max_sell[j], max_buy[j] + prices[i])
+                j += 1
+
+        return max_sell[k]
 
 # Time:  O(n)
 # Space: O(n)     
