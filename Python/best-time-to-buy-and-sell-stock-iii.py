@@ -35,18 +35,21 @@ class Solution2:
     def maxProfit(self, prices):
         return self.maxAtMostKPairsProfit(prices, 2)
         
-    def maxAtMostKPairsProfit(self, prices, k): 
+    def maxAtMostKPairsProfit(self, prices, k):
+        if k == 0:
+            return 0
+            
         k_sum = [float("-inf") for _ in xrange(2 * k)]
         for i in xrange(1, len(k_sum), 2):
             k_sum[i] = 0
             
         for i in xrange(len(prices)):
-            j, sign, pre_k_sum = 0, -1, list(k_sum)
+            j, sign, pre_k_sum = 0, -1, 0
             while j < len(k_sum):
                 diff = sign * prices[i]
                 if j > 0:
-                    diff += pre_k_sum[j - 1]
-                k_sum[j] = max(diff, pre_k_sum[j])
+                    diff += pre_k_sum
+                pre_k_sum, k_sum[j] = k_sum[j], max(diff, k_sum[j])
                 j, sign = j + 1, sign * -1
                 
         return k_sum[-1]
