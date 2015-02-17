@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-02-06), there are total `187` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-02-17), there are total `188` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `187` problems.
+Here is the classification of all `188` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -611,6 +611,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Best Time to Buy and Sell Stock III]| [best-time-to-buy-and-sell-stock-iii.py] | _O(n)_ | _O(1)_ | Hard |
+[Best Time to Buy and Sell Stock III]| [best-time-to-buy-and-sell-stock-iv.py] | _O(k * n)_ | _O(k)_ | Hard |
 [Climbing Stairs]| [climbing-stairs.py] | _O(n)_    | _O(1)_          | Easy           |
 [Decode Ways]   | [decode-ways.py]| _O(n)_          | _O(1)_          | Medium         |
 [Distinct Subsequences]|[distinct-subsequences.py]| _O(n^2)_ | _O(n)_ | Hard           |
@@ -633,6 +634,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 [Best Time to Buy and Sell Stock III]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 [best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
+[Best Time to Buy and Sell Stock IV]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+[best-time-to-buy-and-sell-stock-iv.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iv.py
 [Climbing Stairs]:https://oj.leetcode.com/problems/climbing-stairs/
 [climbing-stairs.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/climbing-stairs.py
 [Decode Ways]:https://oj.leetcode.com/problems/decode-ways/
