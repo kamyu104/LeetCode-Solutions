@@ -611,7 +611,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Best Time to Buy and Sell Stock III]| [best-time-to-buy-and-sell-stock-iii.py] | _O(n)_ | _O(1)_ | Hard |
-[Best Time to Buy and Sell Stock III]| [best-time-to-buy-and-sell-stock-iv.py] | _O(k * n)_ | _O(k)_ | Hard |
+[Best Time to Buy and Sell Stock IV]| [best-time-to-buy-and-sell-stock-iv.py] | _O(k * n)_ | _O(k)_ | Hard |
 [Climbing Stairs]| [climbing-stairs.py] | _O(n)_    | _O(1)_          | Easy           |
 [Decode Ways]   | [decode-ways.py]| _O(n)_          | _O(1)_          | Medium         |
 [Distinct Subsequences]|[distinct-subsequences.py]| _O(n^2)_ | _O(n)_ | Hard           |
