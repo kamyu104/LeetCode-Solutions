@@ -12,7 +12,7 @@
 class Solution:
     # @return an integer as the maximum profit 
     def maxProfit(self, k, prices):
-        if k >= len(prices):
+        if k >= len(prices) / 2:
             return self.maxUnlimitPairProfit(prices)
 
         return self.maxAtMostKPairsProfit(prices, k)
