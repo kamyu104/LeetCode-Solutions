@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-02-17), there are total `188` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-02-24), there are total `189` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `188` problems.
+Here is the classification of all `189` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -72,6 +72,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Remove Duplicates from Sorted Array]| [remove-duplicates-from-sorted-array.py] | _O(n)_       | _O(1)_         | Easy           |
 [Remove Duplicates from Sorted Array II]| [remove-duplicates-from-sorted-array-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
 [Remove Element] | [remove-element.py] | _O(n)_      | _O(1)_         | Easy           | 
+[Rotate Array]   | [rotate-array.py] | _O(n)_        | _O(1)_         | Easy           | 
 [Rotate Image]   | [rotate-image.py] | _O(n^2)_      | _O(1)_         | Medium         | 
 [Set Matrix Zeroes] | [set-matrix-zeroes.py] | _O(m * n)_ | _O(1)_    | Medium         | 
 [Spiral Matrix] | [spiral-matrix.py] | _O(m * n)_    | _O(1)_         | Medium         |
@@ -110,6 +111,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [remove-duplicates-from-sorted-array-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-array-ii.py
 [Remove Element]:https://oj.leetcode.com/problems/remove-element/
 [remove-element.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-element.py
+[Rotate Array]:https://oj.leetcode.com/problems/rotate-array/
+[rotate-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/rotate-array.py
 [Rotate Image]:https://oj.leetcode.com/problems/rotate-image/
 [rotate-image.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/rotate-image.py
 [Set Matrix Zeroes]:https://oj.leetcode.com/problems/set-matrix-zeroes/
