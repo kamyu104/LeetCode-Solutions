@@ -26,4 +26,4 @@ class Solution:
         return result
             
 if __name__ == '__main__':
-  print Solutoin().reverseBits(1)
+  print Solution().reverseBits(1)
