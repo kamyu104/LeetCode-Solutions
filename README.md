@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-03-08), there are total `190` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-03-10), there are total `191` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `190` problems.
+Here is the classification of all `191` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -42,10 +42,13 @@ Database
 ##Bit Manipulation
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
+[Number of 1 Bits] | [number-of-1-bits.py] | _O(m)_ | _O(1)_          | Easy           |
 [Reverse Bits]  | [reverse-bits.py] | _O(n)_        | _O(1)_          | Easy           |
 [Single Number] | [single-number.py] | _O(n)_       | _O(1)_          | Medium         |
 [Single Number II] | [single-number-ii.py] | _O(n)_ | _O(1)_          | Medium         |
 
+[Number of 1 Bits]: https://oj.leetcode.com/problems/number-of-1-bits/
+[number-of-1-bits.py]: https://github.com/kamyu104/LeetCode/blob/master/Python/number-of-1-bits.py
 [Reverse Bits]: https://oj.leetcode.com/problems/reverse-bits/
 [reverse-bits.py]: https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-bits.py
 [Single Number]: https://oj.leetcode.com/problems/single-number/
