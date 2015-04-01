@@ -1,7 +1,7 @@
 LeetCode
 ======== 
 
-Up to date (2015-04-01), there are 182 algorithm / 12 database / 4 shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-04-01), there are `182` Algorithm / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
 Here is the classification of all `198` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
@@ -745,12 +745,14 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Combine Two Tables] | [combine-two-tables.sql] | _O(m + n)_   | _O(m + n)_ | Easy     |
 [Consecutive Numbers] | [consecutive-numbers.sql] | _O(n)_   | _O(n)_ | Medium         |
 [Customers Who Never Order] | [customers-who-never-order.sql] | _O(n^2)_ | _O(1)_       | Easy           |
+[Delete Duplicate Emails] | [delete-duplicate-emails.sql] | _O(n^2)_ | _O(n)_       | Easy           |
 [Department Highest Salary] | [department-highest-salary.sql] | _O(n^2)_   | _O(n)_ | Medium         |
 [Department Top Three Salaries] | [department-top-three-salaries.sql] | _O(n^2)_   | _O(n)_ | Hard         |
 [Duplicate Emails] | [duplicate-emails.sql] | _O(n^2)_ | _O(n)_       | Easy           |
 [Employees Earning More Than Their Managers] | [employees-earning-more-than-their-managers.sql] | _O(n^2)_   | _O(1)_ | Easy     |
 [Nth Highest Salary] | [nth-highest-salary.sql] | _O(n^2)_   | _O(n)_ | Medium         |
 [Rank Scores] | [rank-scores.sql] | _O(n^2)_        | _O(n)_          | Medium         |
+[Rising Temperature] | [customers-who-never-order.sql] | _O(n^2)_ | _O(n)_       | Easy           |
 [Second Highest Salary] | [second-highest-salary.sql] | _O(n)_ | _O(1)_ | Easy         |
 
 [Combine Two Tables]:https://oj.leetcode.com/problems/combine-two-tables/
@@ -759,6 +761,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [consecutive-numbers.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/consecutive-numbers.sql
 [Customers Who Never Order]:https://oj.leetcode.com/problems/customers-who-never-order/
 [customers-who-never-order.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/customers-who-never-order.sql
+[Delete Duplicate Emails]:https://oj.leetcode.com/problems/delete-duplicate-emails/
+[delete-duplicate-emails.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/delete-duplicate-emails.sql
 [Department Highest Salary]:https://oj.leetcode.com/problems/department-highest-salary/
 [department-highest-salary.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/department-highest-salary.sql
 [Department Top Three Salaries]:https://oj.leetcode.com/problems/department-top-three-salaries/
@@ -771,6 +775,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [nth-highest-salary.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/nth-highest-salary.sql
 [Rank Scores]:https://oj.leetcode.com/problems/rank-scores/
 [rank-scores.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/rank-scores.sql
+[Rising Temperature]:https://oj.leetcode.com/problems/rising-temperature/
+[rising-temperature.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/rising-temperature.sql
 [Second Highest Salary]:https://oj.leetcode.com/problems/second-highest-salary/
 [second-highest-salary.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/second-highest-salary.sql
 
