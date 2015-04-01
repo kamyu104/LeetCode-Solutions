@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-04-01), there are total `198` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-04-01), there are 182 algorithm / 12 database / 4 shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `192` problems.
+Here is the classification of all `198` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -36,6 +36,12 @@ Database
 ===
 
 * [SQL](https://github.com/kamyu104/LeetCode#sql)
+
+
+Shell
+===
+
+* [Shell](https://github.com/kamyu104/LeetCode#shell)
 
 ---
 
@@ -768,3 +774,21 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Second Highest Salary]:https://oj.leetcode.com/problems/second-highest-salary/
 [second-highest-salary.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/second-highest-salary.sql
 
+---
+
+##Shell
+Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
+--------------- | --------------- | --------------- | --------------- | -------------- | -----
+[Tenth Line] | [tenth-line.sh]    | _O(n)_          | _O(1)_          | Easy           |
+[Transpose File] | [transpose-file.sh] | _O(n^2)_   | _O(n^2)_        | Medium         |
+[Valid Phone Numbers] | [valid-phone-numbers.sh] | _O(n)_ | _O(1)_    | Easy           |
+[Word Frequency] | [word-frequency.sh] | _O(n)_     | _O(k)_          | Medium         |
+
+[Tenth Line]:https://oj.leetcode.com/problems/tenth-line/
+[tenth-line.sh]:https://github.com/kamyu104/LeetCode/blob/master/Shell/tenth-line.sh
+[Transpose File]:https://oj.leetcode.com/problems/transpose-file/
+[transpose-file.sh]:https://github.com/kamyu104/LeetCode/blob/master/Shell/transpose-file.sh
+[Valid Phone Numbers]:https://oj.leetcode.com/problems/valid-phone-numbers/
+[valid-phone-numbers.sh]:https://github.com/kamyu104/LeetCode/blob/master/Shell/valid-phone-numbers.sh
+[Word Frequency]:https://oj.leetcode.com/problems/word-frequency/
+[word-frequency.sh]:https://github.com/kamyu104/LeetCode/blob/master/Shell/word-frequency.sh
