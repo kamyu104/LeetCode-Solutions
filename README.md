@@ -1,13 +1,13 @@
 LeetCode
 ======== 
 
-Up to date (2015-04-01), there are `182` Algorithm / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-04-01), there are `182` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
 Here is the classification of all `198` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
-Algorithm
+Algorithms
 ====
 
 * [Bit Manipulation](https://github.com/kamyu104/LeetCode#bit-manipulation)
@@ -41,7 +41,7 @@ Database
 Shell
 ===
 
-* [Shell](https://github.com/kamyu104/LeetCode#shell)
+* [Bash](https://github.com/kamyu104/LeetCode#bash)
 
 ---
 
@@ -782,7 +782,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 ---
 
-##Shell
+##Bash
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Tenth Line] | [tenth-line.sh]    | _O(n)_          | _O(1)_          | Easy           |
