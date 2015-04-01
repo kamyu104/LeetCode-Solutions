@@ -752,7 +752,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Employees Earning More Than Their Managers] | [employees-earning-more-than-their-managers.sql] | _O(n^2)_   | _O(1)_ | Easy     |
 [Nth Highest Salary] | [nth-highest-salary.sql] | _O(n^2)_   | _O(n)_ | Medium         |
 [Rank Scores] | [rank-scores.sql] | _O(n^2)_        | _O(n)_          | Medium         |
-[Rising Temperature] | [customers-who-never-order.sql] | _O(n^2)_ | _O(n)_       | Easy           |
+[Rising Temperature] | [rising-temperature.sql] | _O(n^2)_ | _O(n)_       | Easy           |
 [Second Highest Salary] | [second-highest-salary.sql] | _O(n)_ | _O(1)_ | Easy         |
 
 [Combine Two Tables]:https://oj.leetcode.com/problems/combine-two-tables/
