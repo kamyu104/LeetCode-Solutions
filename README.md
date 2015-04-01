@@ -41,7 +41,7 @@ Database
 Shell
 ===
 
-* [Bash](https://github.com/kamyu104/LeetCode#bash)
+* [Shell Script](https://github.com/kamyu104/LeetCode#shell-script)
 
 ---
 
@@ -782,7 +782,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 ---
 
-##Bash
+##Shell Script
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Tenth Line] | [tenth-line.sh]    | _O(n)_          | _O(1)_          | Easy           |
