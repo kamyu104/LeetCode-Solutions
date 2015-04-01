@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-03-10), there are total `191` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-04-01), there are total `198` problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `191` problems.
+Here is the classification of all `192` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -626,6 +626,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Distinct Subsequences]|[distinct-subsequences.py]| _O(n^2)_ | _O(n)_ | Hard           |
 [Dungeon Game]  | [dungeon-game.py]| _O(m * n)_     | _O(m + n)_      | Hard           |
 [Edit Distance]|[edit-distance.py]| _O(m * n)_      | _O(m + n)_      | Hard           |
+[House Robber]| [house-robber.py] | _O(n)_          | _O(1)_          | Easy           |
 [Interleaving String]|[interleaving-string.py]| _O(m * n)_ | _O(m + n)_ | Hard         |
 [Maximal Rectangle]|[maximal-rectangle.py]| _O(n^2)_ | _O(n)_         | Hard           |
 [Maximum Product Subarray]|[maximum-product-subarray.py]| _O(n)_ | _O(1)_ | Medium     |
@@ -655,6 +656,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [dungeon-game.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/dungeon-game.py
 [Edit Distance]:https://oj.leetcode.com/problems/edit-distance/
 [edit-distance.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/edit-distance.py
+[House Robber]:https://oj.leetcode.com/problems/house-robber/
+[house-robber.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/house-robber.py
 [Interleaving String]:https://oj.leetcode.com/problems/interleaving-string/
 [interleaving-string.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/interleaving-string.py
 [Maximal Rectangle]:https://oj.leetcode.com/problems/maximal-rectangle/
