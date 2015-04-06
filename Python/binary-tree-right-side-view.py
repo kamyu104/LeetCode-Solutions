@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(n)
+# Space: O(h)
 #
 # Given a binary tree, imagine yourself standing on the right side of it, 
 # return the values of the nodes you can see ordered from top to bottom.
@@ -22,6 +22,27 @@
 #         self.right = None
 
 class Solution:
+    # @param root, a tree node
+    # @return a list of integers
+    def rightSideView(self, root):
+        result = []
+        self.rightSideViewDFS(root, 1, result)
+        return result
+    
+    def rightSideViewDFS(self, node, depth, result):
+        if not node:
+            return
+        
+        if depth > len(result):
+            result.append(node.val)
+        
+        self.rightSideViewDFS(node.right, depth+1, result)
+        self.rightSideViewDFS(node.left, depth+1, result)
+
+# BFS solution
+# Time:  O(n)
+# Space: O(n)        
+class Solution2:
     # @param root, a tree node
     # @return a list of integers
     def rightSideView(self, root):
