@@ -555,8 +555,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Binary Tree Level Order Traversal]| [binary-tree-level-order-traversal.py] | _O(n)_| _O(n)_| Easy  |  
-[Binary Tree Level Order Traversal II]| [binary-tree-level-order-traversal-ii.py] | _O(n)_| _O(n)_| Easy  |     
-[Binary Tree Right Side View] | [binary-tree-right-side-view.py] | _O(n)_     | _O(n)_ | Medium  |
+[Binary Tree Level Order Traversal II]| [binary-tree-level-order-traversal-ii.py] | _O(n)_| _O(n)_| Easy  |
 [Binary Tree Zigzag Level Order Traversal]| [binary-tree-zigzag-level-order-traversal.py] | _O(n)_| _O(n)_| Medium  |  
 [Clone Graph]| [clone-graph.py]   | _O(n)_          | _O(n)_          | Medium         |
 [Populating Next Right Pointers in Each Node II]|[populating-next-right-pointers-in-each-node-ii.py]| _O(n)_ | _O(1)_ | Hard |
@@ -565,8 +564,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 [Binary Tree Level Order Traversal]:https://oj.leetcode.com/problems/binary-tree-level-order-traversal/
 [binary-tree-level-order-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-level-order-traversal.py
-[Binary Tree Right Side View]:https://oj.leetcode.com/problems/binary-tree-right-side-view/
-[binary-tree-right-side-view.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-right-side-view.py
 [Binary Tree Level Order Traversal II]:https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/
 [binary-tree-level-order-traversal-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-level-order-traversal-ii.py
 [Binary Tree Zigzag Level Order Traversal]:https://oj.leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
@@ -585,6 +582,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Depth-First Search
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
+[Binary Tree Right Side View] | [binary-tree-right-side-view.py] | _O(n)_     | _O(h)_ | Medium  |
 [Combination Sum]| [combination-sum.py] | _O(n^m)_    | _O(m)_          | Medium         |
 [Combination Sum II]| [combination-sum-ii.py]| _O(n! / m!(n-m)!)_| _O(m)_         | Medium         |
 [Combinations]  | [combinations.py] | _O(n!)_       | _O(n)_          | Medium         |
@@ -598,6 +596,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Sudoku Solver] | [sudoku-solver.py] | _O((9!)^9)_  | _O(1)_          | Hard           |
 [Word Search] | [word-search.py] | _O(m * n * 3^p)_ | _O(m * n * p)_  | Medium         |
 
+[Binary Tree Right Side View]:https://oj.leetcode.com/problems/binary-tree-right-side-view/
+[binary-tree-right-side-view.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-right-side-view.py
 [Combination Sum]:https://oj.leetcode.com/problems/combination-sum/
 [combination-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/combination-sum.py
 [Combination Sum II]:https://oj.leetcode.com/problems/combination-sum-ii/
