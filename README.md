@@ -589,7 +589,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Generate Parentheses]| [generate-parentheses.py]| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         |
 [N-Queens]      | [n-queens.py]   | _O(n!)_         | _O(n)_          | Hard           |
 [N-Queens-II]   | [n-queens-ii.py] | _O(n!)_        | _O(n)_          | Hard           |
-[Number of Islands] | [number-of-islands.py] | _O(n)_ | _O(n)_        | Medium         |
+[Number of Islands] | [number-of-islands.py] | _O(m * n)_ | _O(m * n)_| Medium         |
 [Palindrome Partitioning] | [palindrome-partitioning.py] | _O(n^2)_ ~ _O(2^n)_ | _O(n^2)_ | Medium |
 [Path Sum]      | [path-sum.py]   | _O(n)_          | _O(h)_          | Easy           |
 [Path Sum II]   | [path-sum-ii.py] | _O(n)_         | _O(h)_          | Medium         |
