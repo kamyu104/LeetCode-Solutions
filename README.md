@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-04-04), there are `183` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-04-09), there are `184` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `199` problems.
+Here is the classification of all `200` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -589,6 +589,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Generate Parentheses]| [generate-parentheses.py]| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         |
 [N-Queens]      | [n-queens.py]   | _O(n!)_         | _O(n)_          | Hard           |
 [N-Queens-II]   | [n-queens-ii.py] | _O(n!)_        | _O(n)_          | Hard           |
+[Number of Islands] | [number-of-islands.py] | _O(n)_ | _O(n)_        | Medium         |
 [Palindrome Partitioning] | [palindrome-partitioning.py] | _O(n^2)_ ~ _O(2^n)_ | _O(n^2)_ | Medium |
 [Path Sum]      | [path-sum.py]   | _O(n)_          | _O(h)_          | Easy           |
 [Path Sum II]   | [path-sum-ii.py] | _O(n)_         | _O(h)_          | Medium         |
@@ -610,6 +611,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [n-queens.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/n-queens.py
 [N-Queens-II]:https://oj.leetcode.com/problems/n-queens-ii/
 [n-queens-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/n-queens-ii.py
+[Number of Islands]:https://leetcode.com/problems/number-of-islands/
+[number-of-islands.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/number-of-islands.py
 [Palindrome Partitioning]:https://oj.leetcode.com/problems/palindrome-partitioning/
 [palindrome-partitioning.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/palindrome-partitioning.py
 [Path Sum]:https://oj.leetcode.com/problems/path-sum/
