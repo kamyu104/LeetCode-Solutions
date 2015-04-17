@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-04-09), there are `184` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-04-17), there are `185` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `200` problems.
+Here is the classification of all `201` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -50,6 +50,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Number of 1 Bits] | [number-of-1-bits.py] | _O(m)_ | _O(1)_          | Easy           |
 [Reverse Bits]  | [reverse-bits.py] | _O(n)_        | _O(1)_          | Easy           |
+[Bitwise AND of Numbers Range] | [bitwise-and-of-numbers-range.py] | _O(1)_ | _O(1)_ | Medium |
 [Single Number] | [single-number.py] | _O(n)_       | _O(1)_          | Medium         |
 [Single Number II] | [single-number-ii.py] | _O(n)_ | _O(1)_          | Medium         |
 
@@ -57,6 +58,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [number-of-1-bits.py]: https://github.com/kamyu104/LeetCode/blob/master/Python/number-of-1-bits.py
 [Reverse Bits]: https://oj.leetcode.com/problems/reverse-bits/
 [reverse-bits.py]: https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-bits.py
+[Bitwise AND of Numbers Range]: https://leetcode.com/problems/bitwise-and-of-numbers-range/
+[bitwise-and-of-numbers-range.py]: https://github.com/kamyu104/LeetCode/blob/master/bitwise-and-of-numbers-range.py
 [Single Number]: https://oj.leetcode.com/problems/single-number/
 [single-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/single-number.py
 [Single Number II]: https://oj.leetcode.com/problems/single-number-ii/
