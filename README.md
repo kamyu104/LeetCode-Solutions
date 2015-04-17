@@ -59,7 +59,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Reverse Bits]: https://oj.leetcode.com/problems/reverse-bits/
 [reverse-bits.py]: https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-bits.py
 [Bitwise AND of Numbers Range]: https://leetcode.com/problems/bitwise-and-of-numbers-range/
-[bitwise-and-of-numbers-range.py]: https://github.com/kamyu104/LeetCode/blob/master/bitwise-and-of-numbers-range.py
+[bitwise-and-of-numbers-range.py]: https://github.com/kamyu104/LeetCode/blob/master/Python/bitwise-and-of-numbers-range.py
 [Single Number]: https://oj.leetcode.com/problems/single-number/
 [single-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/single-number.py
 [Single Number II]: https://oj.leetcode.com/problems/single-number-ii/
