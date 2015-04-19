@@ -17,6 +17,9 @@ class Solution:
     # @param target, an integer to be searched
     # @return a list of length 2, [index1, index2]
     def searchRange(self, A, target):
+        # This is main For binarySearch3()
+        A += [float("inf")]
+        
         # Find the first index where target <= A[idx]
         left = self.binarySearch(lambda x, y: x <= y, A, target)
         if left >= len(A) or A[left] != target:
