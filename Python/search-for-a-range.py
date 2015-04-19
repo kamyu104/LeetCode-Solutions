@@ -44,6 +44,16 @@ class Solution:
             else:
                 start = mid + 1
         return start
+    
+    def binarySearch3(self, compare, A, target):
+        start, end = -1, len(A)
+        while end - start > 1:
+            mid = start + (end - start) / 2
+            if compare(target, A[mid]):
+                end = mid
+            else:
+                start = mid
+        return end
 
 if __name__ == "__main__":
     print Solution().searchRange([2, 2], 3)
