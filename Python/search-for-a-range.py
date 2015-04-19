@@ -17,9 +17,6 @@ class Solution:
     # @param target, an integer to be searched
     # @return a list of length 2, [index1, index2]
     def searchRange(self, A, target):
-        # This is main For binarySearch3()
-        A += [float("inf")]
-        
         # Find the first index where target <= A[idx]
         left = self.binarySearch(lambda x, y: x <= y, A, target)
         if left >= len(A) or A[left] != target:
@@ -49,7 +46,7 @@ class Solution:
         return start
     
     def binarySearch3(self, compare, A, target):
-        start, end = -1, len(A) - 1
+        start, end = -1, len(A)
         while end - start > 1:
             mid = start + (end - start) / 2
             if compare(target, A[mid]):
