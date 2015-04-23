@@ -1,5 +1,5 @@
-# Time:  O(n^2)
-# Space: O(n)
+# Time:  O(nlogn)
+# Space: O(1)
 #
 # Given a list of non negative integers, arrange them such that they form the largest number.
 # 
