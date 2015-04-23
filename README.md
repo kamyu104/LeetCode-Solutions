@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-04-22), there are `186` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-04-24), there are `187` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `202` problems.
+Here is the classification of all `203` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -201,6 +201,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Intersection of Two Linked Lists]| [intersection-of-two-linked-lists.py] | _O(m + n)_ | _O(1)_         | Easy           |
 [Remove Duplicates from Sorted List]| [remove-duplicates-from-sorted-list.py] | _O(n)_       | _O(1)_         | Easy           |
 [Remove Duplicates from Sorted List II]| [remove-duplicates-from-sorted-list-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
+[Remove Linked List Elements]| [remove-linked-list-elements.py] | _O(n)_       | _O(1)_         | Easy         | 
 [Reverse Linked List II]| [reverse-linked-list-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
 [Reverse Nodes in k-Group]| [reverse-nodes-in-k-group.py] | _O(n)_       | _O(1)_         | Hard         |
 [Rotate List]| [rotate-list.py]   | _O(n)_          | _O(1)_          | Medium         |  
@@ -216,6 +217,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [remove-duplicates-from-sorted-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-list.py
 [Remove Duplicates from Sorted List II]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
 [remove-duplicates-from-sorted-list-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-list-ii.py
+[Remove Linked List Elements]:https://oj.leetcode.com/problems/remove-linked-list-elements/
+[remove-linked-list-elements.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-linked-list-elements.py
 [Reverse Linked List II]:https://oj.leetcode.com/problems/reverse-linked-list-ii/
 [reverse-linked-list-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-linked-list-ii.py
 [Reverse Nodes in k-Group]:https://oj.leetcode.com/problems/reverse-nodes-in-k-group/
