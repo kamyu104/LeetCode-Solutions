@@ -387,7 +387,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [Insert Interval]| [insert-interval.py] | _O(n)_    | _O(1)_          | Hard           |
 [Insertion Sort List]|[insertion-sort-list.py] | _O(n^2)_ | _O(1)_    | Medium         |
-[Largest Number] | [largest-number.py] | _O(n^2)_   | _O(n)_          | Medium         |
+[Largest Number] | [largest-number.py] | _O(nlogn)_   | _O(1)_        | Medium         |
 [Maximum Gap]   | [maximum-gap.py]| _O(n)_          | _O(n)_          | Hard           | Tricky 
 [Merge Intervals]| [merge-intervals.py] | _O(nlogn)_  | _O(1)_        | Hard           |
 [Merge Sorted Array]| [merge-sorted-array.py] | _O(n)_ | _O(1)_       | Easy           |
