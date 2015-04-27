@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-04-24), there are `187` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-04-27), there are `188` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `203` problems.
+Here is the classification of all `204` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -292,7 +292,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
 [4 Sum]         |[4sum.py]        | _O(n^2)_ ~ _O(n^4)_ | _O(n^2)_    | Medium         |
 [Anagrams]      | [anagrams.py]   | _O(n)_          | _O(n)_          | Medium         |
-[Happy Number]      | [happy-number.py]   | _O(k)_  | _O(k)_          | Easy         |
+[Count Primes]  | [count-primes.py] | _O(n)_        | _O(n)_          | Easy           |
+[Happy Number]      | [happy-number.py]   | _O(k)_  | _O(k)_          | Easy          |
 [Longest Substring with At Most Two Distinct Characters]| [longest-substring-with-at-most-two-distinct-characters.py] | _O(n^2)_ | _O(1)_ | Hard         |
 [Longest Substring Without Repeating Characters] | [longest-substring-without-repeating-characters.py] | _O(n)_ | _O(1)_ | Medium |
 [Max Points on a Line] | [max-points-on-a-line.py] | _O(n^2)_ | _O(n)_ | Hard          |
@@ -307,6 +308,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [4sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/4sum.py
 [Anagrams]:https://oj.leetcode.com/problems/anagrams/
 [anagrams.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/anagrams.py
+[Count Primes]:https://oj.leetcode.com/problems/count-primes/
+[count-primes.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/count-primes.py
 [Happy Number]:https://oj.leetcode.com/problems/happy-number/
 [happy-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/happy-number.py
 [Longest Substring with At Most Two Distinct Characters]:https://oj.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
