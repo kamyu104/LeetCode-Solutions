@@ -1,5 +1,5 @@
-# Time:  O(m * n * 3^p)
-# Space: O(m * n + p)
+# Time:  O(m * n * l)
+# Space: O(l)
 #
 # Given a 2D board and a word, find if the word exists in the grid.
 # 
