@@ -609,7 +609,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Path Sum II]   | [path-sum-ii.py] | _O(n)_         | _O(h)_          | Medium         |
 [Restore IP Addresses] | [restore-ip-addresses.py] | _O(n^m)_ ~ _O(3^4)_ | _O(n * m)_ ~ _O(3 * 4)_ | Medium         |
 [Sudoku Solver] | [sudoku-solver.py] | _O((9!)^9)_  | _O(1)_          | Hard           |
-[Word Search] | [word-search.py] | _O(m * n * 3^p)_ | _O(m * n * p)_  | Medium         |
+[Word Search] | [word-search.py] | _O(m * n * l)_ | _O(l)_  | Medium         |
 
 [Binary Tree Right Side View]:https://oj.leetcode.com/problems/binary-tree-right-side-view/
 [binary-tree-right-side-view.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-right-side-view.py
