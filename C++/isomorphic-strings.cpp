@@ -2,7 +2,7 @@ class Solution {
 public:
     bool isIsomorphic(string s, string t) {
         if (s.length() != t.length()) {
-            return 0;
+            return false;
         }
         vector<int> m1(256, 0);
         vector<int> m2(256, 0);
