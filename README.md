@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-04-27), there are `188` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-04-29), there are `189` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `204` problems.
+Here is the classification of all `205` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -147,6 +147,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Compare Version Numbers] | [compare-version-numbers.py] | _O(n)_ | _O(1)_ | Easy     |
 [Count and Say] | [count-and-say.py]| _O(n * 2^n)_  | _O(2^n)_        | Easy           |
 [Implement strStr()] | [implement-strstr.py] | _O(n + m)_   | _O(m)_  | Easy           | `KMP Algorithm`
+[Isomorphic Strings] | [isomorphic-strings.py] | _O(n)_ | _O(1)_       | Easy           |                
 [Length of Last Word] | [length-of-last-word.py] | _O(n)_   | _O(1)_  | Easy           |
 [Longest Common Prefix] | [longest-common-prefix.py] | _O(n1 + n2 + ...)_   | _O(1)_  | Easy           |
 [Longest Palindromic Substring] | [longest-palindromic-substring.py] | _O(n)_ | _O(n)_ |  Medium | `Manacher's Algorithm`
@@ -167,6 +168,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [compare-version-numbers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/compare-version-numbers.py
 [Implement strStr()]:https://oj.leetcode.com/problems/implement-strstr/
 [implement-strstr.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/implement-strstr.py
+[Isomorphic Strings]:https://oj.leetcode.com/problems/isomorphic-strings/
+[isomorphic-strings.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/isomorphic-strings.py
 [Length of Last Word]:https://oj.leetcode.com/problems/length-of-last-word/
 [length-of-last-word.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/length-of-last-word.py
 [Longest Common Prefix]:https://oj.leetcode.com/problems/longest-common-prefix/
@@ -175,7 +178,6 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [longest-palindromic-substring.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-palindromic-substring.py
 [Multiply Strings]:https://oj.leetcode.com/problems/multiply-strings/
 [multiply-strings.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/multiply-strings.py
-
 [One Edit Distance]:https://oj.leetcode.com/problems/one-edit-distance/
 [one-edit-distance.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/one-edit-distance.py
 [Reverse Words in a String]:https://oj.leetcode.com/problems/reverse-words-in-a-string/
