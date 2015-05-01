@@ -98,8 +98,8 @@ class Solution3:
 class Solution4:
     # @return a boolean
     def isMatch(self, s, p):
-        if not p:
-            return not s
+        if not p or not s:
+            return not s and not p
         
         if p[0] != '*':
             if not s or (p[0] == s[0] or p[0] == '?'):
