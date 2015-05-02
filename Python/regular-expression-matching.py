@@ -84,10 +84,14 @@ class Solution3:
                 [last_s_ptr, last_p_ptr] = last_ptr.pop()
                 while last_ptr and p[last_p_ptr - 2] != s[last_s_ptr] and p[last_p_ptr - 2] != '.':
                     [last_s_ptr, last_p_ptr] = last_ptr.pop()
-                last_s_ptr += 1
-                s_ptr = last_s_ptr
-                p_ptr = last_p_ptr
-                last_ptr.append([s_ptr, p_ptr])
+                
+                if p[last_p_ptr - 2] == s[last_s_ptr] or p[last_p_ptr - 2] == '.':
+                    last_s_ptr += 1
+                    s_ptr = last_s_ptr
+                    p_ptr = last_p_ptr
+                    last_ptr.append([s_ptr, p_ptr])
+                else:
+                    return False
             else:
                 return False
             
@@ -116,7 +120,7 @@ class Solution4:
             return self.isMatch(s, p[2:])
 
 if __name__ == "__main__":
-    print Solution().isMatch("abcd","d*")
+    print Solution3().isMatch("abab", "a*b*")
     print Solution().isMatch("aaaaaaaaaaaaab", "a*a*a*a*a*a*a*a*a*a*c")
     print Solution().isMatch("aa","a")
     print Solution().isMatch("aa","aa")
