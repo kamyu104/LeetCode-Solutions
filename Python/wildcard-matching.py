@@ -102,7 +102,7 @@ class Solution4:
             return not s and not p
         
         if p[0] != '*':
-            if not s or (p[0] == s[0] or p[0] == '?'):
+            if p[0] == s[0] or p[0] == '?':
                 return self.isMatch(s[1:], p[1:])
             else:
                 return False
