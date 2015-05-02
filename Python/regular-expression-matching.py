@@ -91,7 +91,7 @@ class Solution3:
             else:
                 return False
             
-        while p_ptr < len(p) and p[p_ptr] == '.' and p[p_ptr + 1] == '*':
+        while p_ptr < len(p) - 1 and p[p_ptr] == '.' and p[p_ptr + 1] == '*':
             p_ptr += 2
         
         return p_ptr == len(p)
