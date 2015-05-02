@@ -94,7 +94,7 @@ class Solution3:
         return result[len(s)][len(p)]
 
 
-# recursive, slowest
+# recursive, slowest, TLE
 class Solution4:
     # @return a boolean
     def isMatch(self, s, p):
