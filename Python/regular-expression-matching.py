@@ -74,7 +74,7 @@ class Solution3:
         last_ptr = []
         while s_ptr < len(s):
             if p_ptr < len(p) and (p_ptr == len(p) - 1 or p[p_ptr + 1] != '*') and \
-            (s_ptr < len(s) and (p[p_ptr] == s[s_ptr] or p[p_ptr] == '?')):
+            (s_ptr < len(s) and (p[p_ptr] == s[s_ptr] or p[p_ptr] == '.')):
                     s_ptr += 1
                     p_ptr += 1
             elif p_ptr < len(p) - 1 and (p_ptr != len(p) - 1 and p[p_ptr + 1] == '*'):
