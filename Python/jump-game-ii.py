@@ -1,4 +1,4 @@
-# Time:  O(n^2)
+# Time:  O(n)
 # Space: O(1)
 #
 # Given an array of non-negative integers, you are initially positioned at the first index of the array.
@@ -14,6 +14,24 @@
 #
 
 class Solution:
+    # @param A, a list of integers
+    # @return an integer
+    def jump(self, A):
+        jump_count = 0
+        reachable = 0
+        curr_reachable = 0
+        for i, length in enumerate(A):
+            if i > reachable:
+                return -1
+            if i > curr_reachable:
+                curr_reachable = reachable
+                jump_count += 1
+            reachable = max(reachable, i + length)
+        return jump_count
+
+# Time:  O(n^2)
+# Space: O(1)     
+class Solution2:
     # @param A, a list of integers
     # @return an integer
     def jump(self, A):
