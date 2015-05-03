@@ -734,7 +734,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Container With Most Water]| [container-with-most-water.py] | _O(n)_ | _O(1)_ | Medium |
 [Gas Station]| [gas-station.py]   | _O(n)_          | _O(1)_          | Medium         |
 [Jump Game]     | [jump-game.py]  | _O(n)_          | _O(1)_          | Medium         |
-[Jump Game II]  | [jump-game-ii.py] | _O(n^2)_      | _O(1)_          | Hard           |
+[Jump Game II]  | [jump-game-ii.py] | _O(n)_        | _O(1)_          | Hard           |
 [Largest Rectangle in Histogram] | [largest-rectangle-in-histogram.py] | _O(n)_ | _O(n)_ | Hard | Tricky
 [Trapping Rain Water] | [trapping-rain-water.py] | _O(n)_ | _O(1)_ | Hard | Tricky
 [Wildcard Matching] | [wildcard-matching.py] | _O(m + n)_ | _O(1)_    | Hard           | Tricky
