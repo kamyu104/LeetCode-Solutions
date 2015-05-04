@@ -1,5 +1,5 @@
-# Time:  O(n^2) ~ O(n^4)
-# Space: O(n^2)
+# Time:  O(n^2 * p)
+# Space: O(n^2 * p)
 #
 # Given an array S of n integers, 
 # are there elements a, b, c, and d in S such that a + b + c + d = target?
@@ -17,6 +17,36 @@
 #
 
 class Solution:
+    # @return a list of lists of length 4, [[val1,val2,val3,val4]]
+    def fourSum(self, nums, target):
+        nums, result, lookup = sorted(nums), [], {}
+        for i in xrange(0, len(nums) - 1):
+            for j in xrange(i + 1, len(nums)): 
+                if nums[i] + nums[j] not in lookup:
+                    lookup[nums[i] + nums[j]] = []
+                is_duplicated = False
+                for [x, y] in lookup[nums[i] + nums[j]]:
+                    if nums[x] == nums[i]:
+                        is_duplicated = True
+                        break
+                if not is_duplicated:
+                    lookup[nums[i] + nums[j]].append([i, j])
+        ans = {}
+        for c in xrange(2, len(nums)):
+            for d in xrange(c+1, len(nums)):
+                if target - nums[c] - nums[d] in lookup:
+                    for [a, b] in lookup[target - nums[c] - nums[d]]:
+                        if b < c:
+                            quad = [nums[a], nums[b], nums[c], nums[d]]
+                            quad_hash = " ".join(str(quad))
+                            if quad_hash not in ans:
+                                ans[quad_hash] = True
+                                result.append(quad)
+        return result
+
+# Time:  O(n^2 * p) ~ O(n^4)
+# Space: O(n^2)
+class Solution2:
     # @return a list of lists of length 4, [[val1,val2,val3,val4]]
     def fourSum(self, nums, target):
         nums, result, lookup = sorted(nums), [], {}
