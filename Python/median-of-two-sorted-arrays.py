@@ -23,10 +23,10 @@ class Solution:
         while left < right:
             mid = left + (right - left) / 2
             j = k - 1 - mid
-            if j >= n or A[mid] < B[j]:
-                left = mid + 1
-            else:
+            if 0 <= j and j < n and A[mid] >= B[j]:
                 right = mid
+            else:
+                left = mid + 1
             
         Ai_minus_1, Bj = float("-inf"), float("-inf")
         if left - 1 >= 0:
