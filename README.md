@@ -293,7 +293,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Hash Table
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-[4 Sum]         |[4sum.py]        | _O(n^2)_ ~ _O(n^4)_ | _O(n^2)_    | Medium         |
+[4 Sum]         |[4sum.py]        | _O(n^2 * p)_    | _O(n^2 * p)_    | Medium         |
 [Anagrams]      | [anagrams.py]   | _O(n)_          | _O(n)_          | Medium         |
 [Count Primes]  | [count-primes.py] | _O(n)_        | _O(n)_          | Easy           |
 [Happy Number]      | [happy-number.py]   | _O(k)_  | _O(k)_          | Easy          |
