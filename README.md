@@ -361,7 +361,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Gray Code]     | [gray-code.py]  | _O(2^n)_        | _O(1)_          | Medium         |
 [Integer to Roman] | [integer-to-roman.py] | _O(n)_ | _O(1)_          | Medium         |
 [Palindrome Number] | [palindrome-number.py] | _O(1)_ | _O(1)_        | Easy           |
-[Permutation Sequence] | [permutation-sequence.py] | _O(n)_ | _O(1)_  | Medium         | `Cantor Ordering`
+[Permutation Sequence] | [permutation-sequence.py] | _O(n^2)_ | _O(n)_  | Medium         | `Cantor Ordering`
 [Reverse Integer] | [reverse-integer.py] | _O(logn)_ | _O(1)_         | Easy           |
 [Roman to Integer] | [roman-to-integer.py] | _O(n)_ | _O(1)_          | Easy           |
 [Valid Number] | [valid-number.py] | _O(n)_         | _O(1)_          | Hard           | `Automata`
