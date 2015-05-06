@@ -205,6 +205,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Remove Duplicates from Sorted List]| [remove-duplicates-from-sorted-list.py] | _O(n)_       | _O(1)_         | Easy           |
 [Remove Duplicates from Sorted List II]| [remove-duplicates-from-sorted-list-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
 [Remove Linked List Elements]| [remove-linked-list-elements.py] | _O(n)_       | _O(1)_         | Easy         | 
+[Reverse Linked List]| [reverse-linked-list.py] | _O(n)_       | _O(1)_         | Easy         | 
 [Reverse Linked List II]| [reverse-linked-list-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
 [Reverse Nodes in k-Group]| [reverse-nodes-in-k-group.py] | _O(n)_       | _O(1)_         | Hard         |
 [Rotate List]| [rotate-list.py]   | _O(n)_          | _O(1)_          | Medium         |  
@@ -222,6 +223,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [remove-duplicates-from-sorted-list-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-list-ii.py
 [Remove Linked List Elements]:https://oj.leetcode.com/problems/remove-linked-list-elements/
 [remove-linked-list-elements.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-linked-list-elements.py
+[Reverse Linked List]:https://oj.leetcode.com/problems/reverse-linked-list/
+[reverse-linked-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-linked-list.py
 [Reverse Linked List II]:https://oj.leetcode.com/problems/reverse-linked-list-ii/
 [reverse-linked-list-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-linked-list-ii.py
 [Reverse Nodes in k-Group]:https://oj.leetcode.com/problems/reverse-nodes-in-k-group/
