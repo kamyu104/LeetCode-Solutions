@@ -1,5 +1,5 @@
-# Time:  O(n)
-# Space: O(1)
+# Time:  O(n^2)
+# Space: O(n)
 #
 # The set [1,2,3,...,n] contains a total of n! unique permutations.
 # 
