@@ -54,7 +54,7 @@ class Solution:
             
             if prerequisite in out_degree:
                 for course in out_degree[prerequisite]:
-                    del (in_degree[course])[prerequisite]
+                    del in_degree[course][prerequisite]
                     if not in_degree[course]:
                         zero_in_degree_queue.append(course)
             
