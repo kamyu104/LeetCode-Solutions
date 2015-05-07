@@ -576,7 +576,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Binary Tree Level Order Traversal II]| [binary-tree-level-order-traversal-ii.py] | _O(n)_| _O(n)_| Easy  |
 [Binary Tree Zigzag Level Order Traversal]| [binary-tree-zigzag-level-order-traversal.py] | _O(n)_| _O(n)_| Medium  |  
 [Clone Graph]| [clone-graph.py]   | _O(n)_          | _O(n)_          | Medium         |
-[Course Schedule](https://oj.leetcode.com/problems/course-schedule/)| [course-schedule.py](./Python/course-schedule.py)   | _O(|V| + |E|)_          | _O(|E|)_          | Medium         |
+[Course Schedule](https://oj.leetcode.com/problems/course-schedule/)| [course-schedule.py](./Python/course-schedule.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         |
 [Populating Next Right Pointers in Each Node II]|[populating-next-right-pointers-in-each-node-ii.py]| _O(n)_ | _O(1)_ | Hard |
 [Surrounded Regions]|[surrounded-regions.py]| _O(m * n)_ | _O(m + n)_ | Medium         |
 [Word Ladder]   |[word-ladder.py] | _O(n * d)_      | _O(d)_          | Medium         |
