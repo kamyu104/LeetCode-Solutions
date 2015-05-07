@@ -267,7 +267,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Heap
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Merge k Sorted Lists] | [merge-k-sorted-lists.py] | _O(nlogk)_| _O(1)_| Hard          |  
+[Merge k Sorted Lists] | [merge-k-sorted-lists.py] | _O(nlogk)_| _O(k)_| Hard          |  
 
 [Merge k Sorted Lists]:https://oj.leetcode.com/problems/merge-k-sorted-lists/
 [merge-k-sorted-lists.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-k-sorted-lists.py
