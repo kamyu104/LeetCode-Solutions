@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-05-05), there are `190` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-05-07), there are `191` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `206` problems.
+Here is the classification of all `207` problems.
 For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -205,6 +205,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Remove Duplicates from Sorted List]| [remove-duplicates-from-sorted-list.py] | _O(n)_       | _O(1)_         | Easy           |
 [Remove Duplicates from Sorted List II]| [remove-duplicates-from-sorted-list-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
 [Remove Linked List Elements]| [remove-linked-list-elements.py] | _O(n)_       | _O(1)_         | Easy         | 
+[Reverse Linked List]| [reverse-linked-list.py] | _O(n)_       | _O(1)_         | Easy         | 
 [Reverse Linked List II]| [reverse-linked-list-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
 [Reverse Nodes in k-Group]| [reverse-nodes-in-k-group.py] | _O(n)_       | _O(1)_         | Hard         |
 [Rotate List]| [rotate-list.py]   | _O(n)_          | _O(1)_          | Medium         |  
@@ -222,6 +223,8 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [remove-duplicates-from-sorted-list-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-list-ii.py
 [Remove Linked List Elements]:https://oj.leetcode.com/problems/remove-linked-list-elements/
 [remove-linked-list-elements.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-linked-list-elements.py
+[Reverse Linked List]:https://oj.leetcode.com/problems/reverse-linked-list/
+[reverse-linked-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-linked-list.py
 [Reverse Linked List II]:https://oj.leetcode.com/problems/reverse-linked-list-ii/
 [reverse-linked-list-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-linked-list-ii.py
 [Reverse Nodes in k-Group]:https://oj.leetcode.com/problems/reverse-nodes-in-k-group/
@@ -358,7 +361,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Gray Code]     | [gray-code.py]  | _O(2^n)_        | _O(1)_          | Medium         |
 [Integer to Roman] | [integer-to-roman.py] | _O(n)_ | _O(1)_          | Medium         |
 [Palindrome Number] | [palindrome-number.py] | _O(1)_ | _O(1)_        | Easy           |
-[Permutation Sequence] | [permutation-sequence.py] | _O(n)_ | _O(1)_  | Medium         | `Cantor Ordering`
+[Permutation Sequence] | [permutation-sequence.py] | _O(n^2)_ | _O(n)_  | Medium         | `Cantor Ordering`
 [Reverse Integer] | [reverse-integer.py] | _O(logn)_ | _O(1)_         | Easy           |
 [Roman to Integer] | [roman-to-integer.py] | _O(n)_ | _O(1)_          | Easy           |
 [Valid Number] | [valid-number.py] | _O(n)_         | _O(1)_          | Hard           | `Automata`
@@ -573,6 +576,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Binary Tree Level Order Traversal II]| [binary-tree-level-order-traversal-ii.py] | _O(n)_| _O(n)_| Easy  |
 [Binary Tree Zigzag Level Order Traversal]| [binary-tree-zigzag-level-order-traversal.py] | _O(n)_| _O(n)_| Medium  |  
 [Clone Graph]| [clone-graph.py]   | _O(n)_          | _O(n)_          | Medium         |
+[Course Schedule](https://oj.leetcode.com/problems/course-schedule/)| [course-schedule.py](./Python/course-schedule.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         |
 [Populating Next Right Pointers in Each Node II]|[populating-next-right-pointers-in-each-node-ii.py]| _O(n)_ | _O(1)_ | Hard |
 [Surrounded Regions]|[surrounded-regions.py]| _O(m * n)_ | _O(m + n)_ | Medium         |
 [Word Ladder]   |[word-ladder.py] | _O(n * d)_      | _O(d)_          | Medium         |
