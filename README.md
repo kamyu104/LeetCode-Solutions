@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-05-07), there are `191` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-05-07), there are `192` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `207` problems.
+Here is the classification of all `208` problems.
 For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -280,7 +280,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Binary Tree Preorder Traversal] | [binary-tree-preorder-traversal.py] | _O(n)_| _O(1)_| Medium | `Morris Traversal` 
 [Binary Tree Inorder Traversal]  | [binary-tree-inorder-traversal.py] | _O(n)_| _O(1)_| Medium           | `Morris Traversal` 
 [Binary Tree Postorder Traversal]| [binary-tree-postorder-traversal.py] | _O(n)_| _O(1)_| Hard  | `Morris Traversal` 
-[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [implement-trie-prefix-tree](./Python/implement-trie-prefix-tree.py) | _O(n)_ | _O(1)_ | Medium | `Trie`
+[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [implement-trie-prefix-tree.py](./Python/implement-trie-prefix-tree.py) | _O(n)_ | _O(1)_ | Medium | `Trie`
 [Recover Binary Search Tree]| [recover-binary-search-tree.py] | _O(n)_| _O(1)_| Hard  | `Morris Traversal`      
 
 [Binary Tree Preorder Traversal]:https://oj.leetcode.com/problems/binary-tree-preorder-traversal/
