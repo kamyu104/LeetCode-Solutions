@@ -280,6 +280,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Binary Tree Preorder Traversal] | [binary-tree-preorder-traversal.py] | _O(n)_| _O(1)_| Medium | `Morris Traversal` 
 [Binary Tree Inorder Traversal]  | [binary-tree-inorder-traversal.py] | _O(n)_| _O(1)_| Medium           | `Morris Traversal` 
 [Binary Tree Postorder Traversal]| [binary-tree-postorder-traversal.py] | _O(n)_| _O(1)_| Hard  | `Morris Traversal` 
+[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [implement-trie-prefix-tree](./Python/implement-trie-prefix-tree.py) | _O(n)_ | _O(1)_ | Medium | `Trie`
 [Recover Binary Search Tree]| [recover-binary-search-tree.py] | _O(n)_| _O(1)_| Hard  | `Morris Traversal`      
 
 [Binary Tree Preorder Traversal]:https://oj.leetcode.com/problems/binary-tree-preorder-traversal/
