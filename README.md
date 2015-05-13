@@ -78,6 +78,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [First Missing Positive]| [first-missing-positive.py] | _O(n)_ | _O(1)_ | Hard         | Tricky
 [Longest Consecutive Sequence]| [longest-consecutive-sequence.py] | _O(n)_ | _O(n)_ | Hard         | Tricky
 [Majority Element] | [majority-element.py] | _O(n)_ | _O(1)_          | Easy           |
+[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [minimum-size-subarray-sum.py] (./Python/minimum-size-subarray-sum.py) | _O(n)_ | _O(1)_ |  Medium |
 [Missing Ranges]| [missing-ranges.py] | _O(n)_      | _O(1)_          | Medium         |
 [Next Permutation]| [next-permutation.py] | _O(n)_  | _O(1)_          | Medium         | Tricky
 [Pascal's Triangle]| [pascals-triangle.py] | _O(n^2)_ | _O(n)_        | Easy           | 
