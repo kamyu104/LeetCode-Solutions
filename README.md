@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-05-07), there are `192` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-05-07), there are `194` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `208` problems.
+Here is the classification of all `210` problems.
 For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -579,6 +579,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 [Binary Tree Zigzag Level Order Traversal]| [binary-tree-zigzag-level-order-traversal.py] | _O(n)_| _O(n)_| Medium  |  
 [Clone Graph]| [clone-graph.py]   | _O(n)_          | _O(n)_          | Medium         |
 [Course Schedule](https://oj.leetcode.com/problems/course-schedule/)| [course-schedule.py](./Python/course-schedule.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         |
+[Course Schedule II](https://oj.leetcode.com/problems/course-schedule-ii/)| [course-schedule-ii.py](./Python/course-schedule-ii.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         |
 [Populating Next Right Pointers in Each Node II]|[populating-next-right-pointers-in-each-node-ii.py]| _O(n)_ | _O(1)_ | Hard |
 [Surrounded Regions]|[surrounded-regions.py]| _O(m * n)_ | _O(m + n)_ | Medium         |
 [Word Ladder]   |[word-ladder.py] | _O(n * d)_      | _O(d)_          | Medium         |
