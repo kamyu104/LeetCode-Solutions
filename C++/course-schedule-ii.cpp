@@ -1,7 +1,7 @@
 // Time:  O(|V| + |E||)
 // Space: O(|E|)
 
-// Topological sort.
+// Topological sort solution.
 class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<pair<int, int>>& prerequisites) {
