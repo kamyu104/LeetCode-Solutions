@@ -1,5 +1,5 @@
 // Time:  O(|V| + |E||)
-// Space: O(1)
+// Space: O(|E|)
 
 // Topological sort.
 class Solution {
