@@ -77,7 +77,7 @@ Shell
 119 | [Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)| [Python](./Python/pascals-triangle-ii.py) | _O(n^2)_ | _O(n)_  | Easy           ||
 121 | [Best Time to Buy and Sell Stock](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [Python](./Python/best-time-to-buy-and-sell-stock.py) | _O(n)_ | _O(1)_ | Medium ||
 128 | [Longest Consecutive Sequence](https://oj.leetcode.com/problems/longest-consecutive-sequence/)| [Python](./Python/longest-consecutive-sequence.py) | _O(n)_ | _O(n)_ | Hard         || Tricky
-157 | [Read N Characters Given Read4](https://oj.leetcode.com/problems/read-n-characters-given-read4/) | [Python](/Python/read-n-characters-given-read4.py) | _O(n)_ | _O(1)_ | Easy           ||
+157 | [Read N Characters Given Read4](https://oj.leetcode.com/problems/read-n-characters-given-read4/) | [Python](./Python/read-n-characters-given-read4.py) | _O(n)_ | _O(1)_ | Easy           ||
 158 | [Read N Characters Given Read4 II - Call multiple times](https://oj.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) | [Python](./Python/read-n-characters-given-read4-ii-call-multiple-times.py) | _O(n)_ | _O(1)_ | Hard ||
 163 | [Missing Ranges](https://oj.leetcode.com/problems/missing-ranges/)| [Python](./Python/missing-ranges.py) | _O(n)_      | _O(1)_          | Medium         ||
 169 | [Majority Element](https://oj.leetcode.com/problems/majority-element/) | [Python](./Python/majority-element.py) | _O(n)_ | _O(1)_          | Easy           |
@@ -341,46 +341,24 @@ Shell
 --- 
 
 ##Backtracking
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Word Ladder II]   |[word-ladder-ii.py] | _O(n * d)_ | _O(d)_         | Hard         |
-
-[Word Ladder II]:https://oj.leetcode.com/problems/word-ladder-ii/
-[word-ladder-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/word-ladder-ii.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+126| [Word Ladder II](https://oj.leetcode.com/problems/word-ladder-ii/)   |[Python](./Python/word-ladder-ii.py) | _O(n * d)_ | _O(d)_         | Hard         ||
 
 --- 
 
 ##Greedy
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Best Time to Buy and Sell Stock II]| [best-time-to-buy-and-sell-stock-ii.py] | _O(n)_ | _O(1)_ | Medium |
-[Candy]| [candy.py] | _O(n)_ | _O(n)_ | Hard |
-[Container With Most Water]| [container-with-most-water.py] | _O(n)_ | _O(1)_ | Medium |
-[Gas Station]| [gas-station.py]   | _O(n)_          | _O(1)_          | Medium         |
-[Jump Game]     | [jump-game.py]  | _O(n)_          | _O(1)_          | Medium         |
-[Jump Game II]  | [jump-game-ii.py] | _O(n)_        | _O(1)_          | Hard           |
-[Largest Rectangle in Histogram] | [largest-rectangle-in-histogram.py] | _O(n)_ | _O(n)_ | Hard | Tricky
-[Trapping Rain Water] | [trapping-rain-water.py] | _O(n)_ | _O(1)_ | Hard | Tricky
-[Wildcard Matching] | [wildcard-matching.py] | _O(m + n)_ | _O(1)_    | Hard           | Tricky
-
-[Best Time to Buy and Sell Stock II]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
-[best-time-to-buy-and-sell-stock-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-ii.py
-[Candy]:https://oj.leetcode.com/problems/candy/
-[candy.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/candy.py
-[Container With Most Water]:https://oj.leetcode.com/problems/container-with-most-water/
-[container-with-most-water.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/container-with-most-water.py
-[Gas Station]:https://oj.leetcode.com/problems/gas-station/
-[gas-station.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/gas-station.py
-[Jump Game]:https://oj.leetcode.com/problems/jump-game/
-[jump-game.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/jump-game.py
-[Jump Game II]:https://oj.leetcode.com/problems/jump-game-ii/
-[jump-game-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/jump-game-ii.py
-[Largest Rectangle in Histogram]:https://oj.leetcode.com/problems/largest-rectangle-in-histogram/
-[largest-rectangle-in-histogram.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/largest-rectangle-in-histogram.py
-[Trapping Rain Water]:https://oj.leetcode.com/problems/trapping-rain-water/
-[trapping-rain-water.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/trapping-rain-water.py
-[Wildcard Matching]:https://oj.leetcode.com/problems/wildcard-matching/
-[wildcard-matching.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/wildcard-matching.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+11| [Container With Most Water](https://oj.leetcode.com/problems/container-with-most-water/)| [Python](./Python/container-with-most-water.py) | _O(n)_ | _O(1)_ | Medium ||
+42| [Trapping Rain Water](https://oj.leetcode.com/problems/trapping-rain-water/) | [Python](./Python/trapping-rain-water.py) | _O(n)_ | _O(1)_ | Hard || Tricky
+44| [Wildcard Matching](https://oj.leetcode.com/problems/wildcard-matching/) | [Python](./Python/wildcard-matching.py) | _O(m + n)_ | _O(1)_    | Hard           || Tricky
+45| [Jump Game II](https://oj.leetcode.com/problems/jump-game-ii/)  | [Python](./Python/jump-game-ii.py) | _O(n)_        | _O(1)_          | Hard           ||
+55| [Jump Game](https://oj.leetcode.com/problems/jump-game/)     | [Python](./Python/jump-game.py)  | _O(n)_          | _O(1)_          | Medium         ||
+84| [Largest Rectangle in Histogram](https://oj.leetcode.com/problems/largest-rectangle-in-histogram/) | [Python](./Python/largest-rectangle-in-histogram.py) | _O(n)_ | _O(n)_ | Hard || Tricky
+122| [Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [Python](./Python/best-time-to-buy-and-sell-stock-ii.py) | _O(n)_ | _O(1)_ | Medium ||
+134| [Gas Station](https://oj.leetcode.com/problems/gas-station/)| [Python](./Python/gas-station.py)   | _O(n)_          | _O(1)_          | Medium         ||
+135| [Candy](https://oj.leetcode.com/problems/candy/)| [Python](./Python/candy.py) | _O(n)_ | _O(n)_ | Hard ||
 
 ---
 
