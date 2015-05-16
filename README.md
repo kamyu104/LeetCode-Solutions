@@ -77,9 +77,9 @@ Shell
 119 | [Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)| [Python](./Python/pascals-triangle-ii.py) | _O(n^2)_ | _O(n)_  | Easy           ||
 121 | [Best Time to Buy and Sell Stock](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [Python](./Python/best-time-to-buy-and-sell-stock.py) | _O(n)_ | _O(1)_ | Medium ||
 128 | [Longest Consecutive Sequence](https://oj.leetcode.com/problems/longest-consecutive-sequence/)| [Python](./Python/longest-consecutive-sequence.py) | _O(n)_ | _O(n)_ | Hard         || Tricky
-157 | [Read N Characters Given Read4](https://oj.leetcode.com/problems/read-n-characters-given-read4/) | [Python](./Python/read-n-characters-given-read4.py) | _O(n)_ | _O(1)_ | Easy           ||
-158 | [Read N Characters Given Read4 II - Call multiple times](https://oj.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) | [Python](./Python/read-n-characters-given-read4-ii-call-multiple-times.py) | _O(n)_ | _O(1)_ | Hard ||
-163 | [Missing Ranges](https://oj.leetcode.com/problems/missing-ranges/)| [Python](./Python/missing-ranges.py) | _O(n)_      | _O(1)_          | Medium         ||
+157 | [Read N Characters Given Read4](https://oj.leetcode.com/problems/read-n-characters-given-read4/) | [Python](./Python/read-n-characters-given-read4.py) | _O(n)_ | _O(1)_ | Easy           |📖|
+158 | [Read N Characters Given Read4 II - Call multiple times](https://oj.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) | [Python](./Python/read-n-characters-given-read4-ii-call-multiple-times.py) | _O(n)_ | _O(1)_ | Hard |📖|
+163 | [Missing Ranges](https://oj.leetcode.com/problems/missing-ranges/)| [Python](./Python/missing-ranges.py) | _O(n)_      | _O(1)_          | Medium         | 📖 |
 169 | [Majority Element](https://oj.leetcode.com/problems/majority-element/) | [Python](./Python/majority-element.py) | _O(n)_ | _O(1)_          | Easy           |
 189 | [Rotate Array](https://oj.leetcode.com/problems/rotate-array/)   | [Python](./Python/rotate-array.py) | _O(n)_        | _O(1)_         | Easy           ||
 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Python] (./Python/minimum-size-subarray-sum.py) | _O(n)_ | _O(1)_ |  Medium ||
@@ -101,7 +101,7 @@ Shell
 68| [Text Justification](https://oj.leetcode.com/problems/text-justification/) | [Python](./Python/text-justification.py) | _O(n)_ | _O(1)_      | Hard           ||
 125| [Valid Palindrome](https://oj.leetcode.com/problems/valid-palindrome/) | [Python](./Python/valid-palindrome.py) | _O(n)_  | _O(1)_         | Easy           ||
 151| [Reverse Words in a String](https://oj.leetcode.com/problems/reverse-words-in-a-string/) | [Python](./Python/reverse-words-in-a-string.py) | _O(n)_ | _O(n)_ | Medium         ||
-161| [One Edit Distance](https://oj.leetcode.com/problems/one-edit-distance/) | [Python](./Python/one-edit-distance.py) | _O(m + n)_ | _O(1)_    | Medium         ||
+161| [One Edit Distance](https://oj.leetcode.com/problems/one-edit-distance/) | [Python](./Python/one-edit-distance.py) | _O(m + n)_ | _O(1)_    | Medium         |📖|
 165| [Compare Version Numbers](https://oj.leetcode.com/problems/count-and-say/) | [Python](./Python/count-and-say.py) | _O(n)_ | _O(1)_ | Easy     ||
 186| [Reverse Words in a String II](https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/) | [Python](./Python/reverse-words-in-a-string-ii.py) | _O(n)_ | _O(1)_ | Medium         ||
 205| [Isomorphic Strings](https://oj.leetcode.com/problems/isomorphic-strings/) | [Python](./Python/isomorphic-strings.py) | _O(n)_ | _O(1)_       | Easy           ||    
@@ -168,8 +168,8 @@ Shell
 49| [Anagrams](https://oj.leetcode.com/problems/anagrams/)     | [Python](./Python/anagrams.py)   | _O(n)_          | _O(n)_          | Medium         ||
 76| [Minimum Window Substring](https://oj.leetcode.com/problems/minimum-window-substring/) | [Python](./Python/minimum-window-substring.py) | _O(n)_ | _O(k)_ | Hard          ||
 149| [Max Points on a Line](https://oj.leetcode.com/problems/max-points-on-a-line/) | [Python](./Python/max-points-on-a-line.py) | _O(n^2)_ | _O(n)_ | Hard          ||
-159| [Longest Substring with At Most Two Distinct Characters](https://oj.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)| [Python](./Python/longest-substring-with-at-most-two-distinct-characters.py) | _O(n^2)_ | _O(1)_ | Hard         ||
-170| [Two Sum III - Data structure design](https://oj.leetcode.com/problems/two-sum-iii-data-structure-design/) | [Python](./Python/two-sum-iii-data-structure-design.py) | _O(n)_ | _O(n)_ | Easy ||
+159| [Longest Substring with At Most Two Distinct Characters](https://oj.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)| [Python](./Python/longest-substring-with-at-most-two-distinct-characters.py) | _O(n^2)_ | _O(1)_ | Hard         |📖|
+170| [Two Sum III - Data structure design](https://oj.leetcode.com/problems/two-sum-iii-data-structure-design/) | [Python](./Python/two-sum-iii-data-structure-design.py) | _O(n)_ | _O(n)_ | Easy | 📖 |
 187| [Repeated DNA Sequences](https://oj.leetcode.com/problems/repeated-dna-sequences/) | [Python](./Python/repeated-dna-sequences.py) | _O(n)_       | _O(n)_          | Medium         ||
 202| [Happy Number](https://oj.leetcode.com/problems/happy-number/)      | [Python](./Python/happy-number.py)   | _O(k)_  | _O(k)_          | Easy          ||
 204| [Count Primes](https://oj.leetcode.com/problems/count-primes/)  | [Python](./Python/count-primes.py) | _O(n)_        | _O(n)_          | Easy           ||
@@ -224,7 +224,7 @@ Shell
 141| [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)| [Python](./Python/linked-list-cycle.py) | _O(n)_ | _O(1)_         | Medium         || 
 142| [Linked List Cycle II](https://oj.leetcode.com/problems/linked-list-cycle-ii/)| [Python](./Python/linked-list-cycle-ii.py) | _O(n)_ | _O(1)_   | Medium         ||
 143| [Reorder List](https://oj.leetcode.com/problems/reorder-list/)| [Python](./Python/reorder-list.py) | _O(n)_          |  _O(1)_         | Medium         ||  
-167| [Two Sum II - Input array is sorted](https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [Python](./Python/two-sum-ii-input-array-is-sorted.py) | _O(n)_   | _O(1)_         | Medium         ||
+167| [Two Sum II - Input array is sorted](https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [Python](./Python/two-sum-ii-input-array-is-sorted.py) | _O(n)_   | _O(1)_         | Medium         | 📖 |
 
 ---
 
@@ -256,7 +256,7 @@ Shell
 116| [Populating Next Right Pointers in Each Node](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[Python](./Python/populating-next-right-pointers-in-each-node.py)| _O(n)_ | _O(1)_ | Medium ||
 124| [Binary Tree Maximum Path Sum](https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/)| [Python](./Python/binary-tree-maximum-path-sum.py) | _O(n)_| _O(h)_| Hard  ||  
 129| [Sum Root to Leaf Numbers](https://oj.leetcode.com/problems/sum-root-to-leaf-numbers/) | [Python](./Python/sum-root-to-leaf-numbers.py) | _O(n)_ | _O(h)_ | Medium ||
-156| [Binary Tree Upside Down](https://oj.leetcode.com/problems/binary-tree-upside-down/) | [Python](./Python/binary-tree-upside-down.py) | _O(n)_ | _O(1)_ | Medium    || 
+156| [Binary Tree Upside Down](https://oj.leetcode.com/problems/binary-tree-upside-down/) | [Python](./Python/binary-tree-upside-down.py) | _O(n)_ | _O(1)_ | Medium    |📖| 
 
 --- 
 
