@@ -261,43 +261,19 @@ Shell
 --- 
 
 ##Binary Search
-
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Find Minimum in Rotated Sorted Array]         | [find-minimum-in-rotated-sorted-array.py]       | _O(logn)_        | _O(1)_          | Medium         |
-[Find Minimum in Rotated Sorted Array II]      | [find-minimum-in-rotated-sorted-array-ii.py]       | _O(logn)_ ~ _O(n)_        | _O(1)_          | Hard         |
-[Find Peak Element] | [find-peak-element.py]        | _O(logn)_       | _O(1)_          | Medium         |
-[Median of Two Sorted Arrays] | [median-of-two-sorted-arrays.py] | _O(log(m + n))_ | _O(1)_ | Hard         |
-[Pow(x, n)]     | [powx-n.py]     | _O(logn)_       | _O(logn)_       | Medium         |
-[Search a 2D Matrix] | [search-a-2d-matrix.py] | _O(logm + logn)_ | _O(1)_ | Medium   |
-[Search for a Range] | [search-for-a-range.py] | _O(logn)_ | _O(1)_   | Medium         |
-[Search in Rotated Sorted Array] | [search-in-rotated-sorted-array.py] | _O(logn)_ | _O(1)_   | Hard         |
-[Search in Rotated Sorted Array II] | [search-in-rotated-sorted-array-ii.py] | _O(logn)_ | _O(1)_   | Medium         |
-[Search Insert Position] | [search-insert-position.py] | _O(logn)_ | _O(1)_   | Medium         |
-[Sqrt(x)]       | [sqrtx.py]      | _O(logn)_        | _O(1)_         | Medium         |
-
-[Find Minimum in Rotated Sorted Array]:https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/
-[find-minimum-in-rotated-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-minimum-in-rotated-sorted-array.py
-[Find Minimum in Rotated Sorted Array II]:https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/
-[find-minimum-in-rotated-sorted-array-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-minimum-in-rotated-sorted-array-ii.py
-[Find Peak Element]:https://oj.leetcode.com/problems/find-peak-element/
-[find-peak-element.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/find-peak-element.py
-[Median of Two Sorted Arrays]:https://oj.leetcode.com/problems/median-of-two-sorted-arrays/
-[median-of-two-sorted-arrays.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/median-of-two-sorted-arrays.py
-[Pow(x, n)]:https://oj.leetcode.com/problems/powx-n/
-[powx-n.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/powx-n.py
-[Search a 2D Matrix]:https://oj.leetcode.com/problems/search-a-2d-matrix/
-[search-a-2d-matrix.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/search-a-2d-matrix.py
-[Search for a Range]:https://oj.leetcode.com/problems/search-for-a-range/
-[search-for-a-range.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/search-for-a-range.py
-[Search in Rotated Sorted Array]:https://oj.leetcode.com/problems/search-in-rotated-sorted-array/
-[search-in-rotated-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/search-in-rotated-sorted-array.py
-[Search in Rotated Sorted Array II]:https://oj.leetcode.com/problems/search-in-rotated-sorted-array-ii/
-[search-in-rotated-sorted-array-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/search-in-rotated-sorted-array-ii.py
-[Search Insert Position]:https://oj.leetcode.com/problems/search-insert-position/
-[search-insert-position.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/search-insert-position.py
-[Sqrt(x)]:https://oj.leetcode.com/problems/sqrtx/
-[sqrtx.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sqrtx.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+4| [Median of Two Sorted Arrays](https://oj.leetcode.com/problems/median-of-two-sorted-arrays/) | [Python](./Python/median-of-two-sorted-arrays.py) | _O(log(m + n))_ | _O(1)_ | Hard         ||
+33| [Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/) | [Python](./Python/search-in-rotated-sorted-array.py) | _O(logn)_ | _O(1)_   | Hard         ||
+34| [Search for a Range](https://oj.leetcode.com/problems/search-for-a-range/) | [Python](./Python/search-for-a-range.py) | _O(logn)_ | _O(1)_   | Medium         ||
+35| [Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/) | [Python](./Python/search-insert-position.py) | _O(logn)_ | _O(1)_   | Medium         ||
+50| [Pow(x, n)](https://oj.leetcode.com/problems/powx-n/)     | [Python](./Python/powx-n.py)     | _O(logn)_       | _O(logn)_       | Medium         ||
+69| [Sqrt(x)](https://oj.leetcode.com/problems/sqrtx/)       | [Python](./Python/sqrtx.py)      | _O(logn)_        | _O(1)_         | Medium         ||
+74| [Search a 2D Matrix](https://oj.leetcode.com/problems/search-a-2d-matrix/) | [Python](./Python/search-a-2d-matrix.py) | _O(logm + logn)_ | _O(1)_ | Medium   ||
+81| [Search in Rotated Sorted Array II](https://oj.leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [Python](./Python/search-in-rotated-sorted-array-ii.py) | _O(logn)_ | _O(1)_   | Medium         ||
+153| [Find Minimum in Rotated Sorted Array](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/)         | [Python](./Python/find-minimum-in-rotated-sorted-array.py)       | _O(logn)_        | _O(1)_          | Medium         ||
+154| [Find Minimum in Rotated Sorted Array II](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)      | [Python](./Python/find-minimum-in-rotated-sorted-array-ii.py)       | _O(logn)_ ~ _O(n)_        | _O(1)_          | Hard         ||
+162| [Find Peak Element](https://oj.leetcode.com/problems/find-peak-element/) | [Python](./Python/find-peak-element.py)        | _O(logn)_       | _O(1)_          | Medium         ||
 
 --- 
 
