@@ -47,24 +47,13 @@ Shell
 ---
 
 ##Bit Manipulation
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Number of 1 Bits] | [number-of-1-bits.py] | _O(m)_ | _O(1)_          | Easy           |
-[Reverse Bits]  | [reverse-bits.py] | _O(n)_        | _O(1)_          | Easy           |
-[Bitwise AND of Numbers Range] | [bitwise-and-of-numbers-range.py] | _O(1)_ | _O(1)_ | Medium |
-[Single Number] | [single-number.py] | _O(n)_       | _O(1)_          | Medium         |
-[Single Number II] | [single-number-ii.py] | _O(n)_ | _O(1)_          | Medium         |
-
-[Number of 1 Bits]: https://oj.leetcode.com/problems/number-of-1-bits/
-[number-of-1-bits.py]: https://github.com/kamyu104/LeetCode/blob/master/Python/number-of-1-bits.py
-[Reverse Bits]: https://oj.leetcode.com/problems/reverse-bits/
-[reverse-bits.py]: https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-bits.py
-[Bitwise AND of Numbers Range]: https://leetcode.com/problems/bitwise-and-of-numbers-range/
-[bitwise-and-of-numbers-range.py]: https://github.com/kamyu104/LeetCode/blob/master/Python/bitwise-and-of-numbers-range.py
-[Single Number]: https://oj.leetcode.com/problems/single-number/
-[single-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/single-number.py
-[Single Number II]: https://oj.leetcode.com/problems/single-number-ii/
-[single-number-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/single-number-ii.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+136 | [Single Number](https://oj.leetcode.com/problems/single-number/) | [Python](./Python/single-number.py) | _O(n)_       | _O(1)_          | Medium         ||
+137 | [Single Number II](https://oj.leetcode.com/problems/single-number-ii/) | [Python](./Python/single-number-ii.py) | _O(n)_ | _O(1)_          | Medium         ||
+190 | [Reverse Bits](https://oj.leetcode.com/problems/reverse-bits/)  | [Python](./Python/reverse-bits.py) | _O(n)_        | _O(1)_          | Easy           ||
+191  |[Number of 1 Bits](https://oj.leetcode.com/problems/number-of-1-bits/) | [Python](./Python/number-of-1-bits.py) | _O(m)_ | _O(1)_          | Easy           ||
+201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | [Python](./Python/bitwise-and-of-numbers-range.py) | _O(1)_ | _O(1)_ | Medium ||
 
 --- 
 
@@ -277,7 +266,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 
 ##Tree
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
------|--------------- | --------------- | --------------- | --------------- | -------------- |--------------| -----
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 94 | [Binary Tree Inorder Traversal](https://oj.leetcode.com/problems/binary-tree-inorder-traversal/)  | [Python](./Python/binary-tree-inorder-traversal.py) | _O(n)_| _O(1)_| Medium           || `Morris Traversal` | 
 99 | [Recover Binary Search Tree](https://oj.leetcode.com/problems/recover-binary-search-tree/) | [Python](./Python/recover-binary-search-tree.py) | _O(n)_| _O(1)_| Hard  || `Morris Traversal` 
 144 | [Binary Tree Preorder Traversal](https://oj.leetcode.com/problems/binary-tree-preorder-traversal/) | [Python](./Python/binary-tree-preorder-traversal.py) | _O(n)_| _O(1)_| Medium || `Morris Traversal` 
