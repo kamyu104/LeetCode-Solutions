@@ -276,23 +276,14 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 --- 
 
 ##Tree
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Add and Search Word - Data structure design ](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | [C++](./C++/add-and-search-word-data-structure-design.cpp) [Python](./Python/add-and-search-word-data-structure-design.py) | _O(min(n, h))_ | _O(min(n, h))_ | Medium | `Trie`
-[Binary Tree Preorder Traversal] | [binary-tree-preorder-traversal.py] | _O(n)_| _O(1)_| Medium | `Morris Traversal` 
-[Binary Tree Inorder Traversal]  | [binary-tree-inorder-traversal.py] | _O(n)_| _O(1)_| Medium           | `Morris Traversal` 
-[Binary Tree Postorder Traversal]| [binary-tree-postorder-traversal.py] | _O(n)_| _O(1)_| Hard  | `Morris Traversal` 
-[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [implement-trie-prefix-tree.py](./Python/implement-trie-prefix-tree.py) | _O(n)_ | _O(1)_ | Medium | `Trie`
-[Recover Binary Search Tree]| [recover-binary-search-tree.py] | _O(n)_| _O(1)_| Hard  | `Morris Traversal`      
-
-[Binary Tree Preorder Traversal]:https://oj.leetcode.com/problems/binary-tree-preorder-traversal/
-[binary-tree-preorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-preorder-traversal.py
-[Binary Tree Inorder Traversal]:https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
-[binary-tree-inorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-inorder-traversal.py
-[Binary Tree Postorder Traversal]:https://oj.leetcode.com/problems/binary-tree-postorder-traversal/
-[binary-tree-postorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-postorder-traversal.py
-[Recover Binary Search Tree]:https://oj.leetcode.com/problems/recover-binary-search-tree/
-[recover-binary-search-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/recover-binary-search-tree.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
+-----|--------------- | --------------- | --------------- | --------------- | -------------- | -----
+94 | [Binary Tree Inorder Traversal](https://oj.leetcode.com/problems/binary-tree-inorder-traversal/)  | [Python](./Python/binary-tree-inorder-traversal.py) | _O(n)_| _O(1)_| Medium           | `Morris Traversal` | 
+99 | [Recover Binary Search Tree](https://oj.leetcode.com/problems/recover-binary-search-tree/) | [Python](./Python/recover-binary-search-tree.py) | _O(n)_| _O(1)_| Hard  | `Morris Traversal` 
+144 | [Binary Tree Preorder Traversal](https://oj.leetcode.com/problems/binary-tree-preorder-traversal/) | [Python](./Python/binary-tree-preorder-traversal.py) | _O(n)_| _O(1)_| Medium | `Morris Traversal` 
+145 | [Binary Tree Postorder Traversal](https://oj.leetcode.com/problems/binary-tree-postorder-traversal/) | [Python](./Python/binary-tree-postorder-traversal.py) | _O(n)_| _O(1)_| Hard  | `Morris Traversal` 
+208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Python](./Python/implement-trie-prefix-tree.py) | _O(n)_ | _O(1)_ | Medium | `Trie`
+211 | [Add and Search Word - Data structure design ](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | [Python](./Python/add-and-search-word-data-structure-design.py) | _O(min(n, h))_ | _O(min(n, h))_ | Medium | `Trie`
 
 --- 
 
