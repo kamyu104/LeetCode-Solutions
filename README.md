@@ -87,57 +87,24 @@ Shell
 --- 
 
 ##String
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Add Binary]    | [add-binary.py] | _O(n)_          | _O(1)_          | Easy           |
-[Compare Version Numbers] | [compare-version-numbers.py] | _O(n)_ | _O(1)_ | Easy     |
-[Count and Say] | [count-and-say.py]| _O(n * 2^n)_  | _O(2^n)_        | Easy           |
-[Implement strStr()] | [implement-strstr.py] | _O(n + m)_   | _O(m)_  | Easy           | `KMP Algorithm`
-[Isomorphic Strings] | [isomorphic-strings.py] | _O(n)_ | _O(1)_       | Easy           |                
-[Length of Last Word] | [length-of-last-word.py] | _O(n)_   | _O(1)_  | Easy           |
-[Longest Common Prefix] | [longest-common-prefix.py] | _O(n1 + n2 + ...)_   | _O(1)_  | Easy           |
-[Longest Palindromic Substring] | [longest-palindromic-substring.py] | _O(n)_ | _O(n)_ |  Medium | `Manacher's Algorithm`
-[Multiply Strings] | [multiply-strings.py] | _O(m * n)_ | _O(m + n)_  | Medium         |
-[One Edit Distance] | [one-edit-distance.py] | _O(m + n)_ | _O(1)_    | Medium         |
-[Reverse Words in a String] | [reverse-words-in-a-string.py] | _O(n)_ | _O(n)_ | Medium         |
-[Reverse Words in a String II] | [reverse-words-in-a-string-ii.py] | _O(n)_ | _O(1)_ | Medium         |
-[String to Integer (atoi)] | [string-to-integer-atoi.py] | _O(n)_ | _O(1)_ | Easy      |
-[Text Justification] | [text-justification.py] | _O(n)_ | _O(1)_      | Hard           |
-[Valid Palindrome] | [valid-palindrome.py] | _O(n)_  | _O(1)_         | Easy           |
-[ZigZag Conversion] | [zigzag-conversion.py] | _O(n)_ | _O(1)_        | Easy           |
-
-[Add Binary]:https://oj.leetcode.com/problems/add-binary/
-[add-binary.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-binary.py
-[Count and Say]:https://oj.leetcode.com/problems/count-and-say/
-[count-and-say.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/count-and-say.py
-[Compare Version Numbers]:https://oj.leetcode.com/problems/compare-version-numbers/
-[compare-version-numbers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/compare-version-numbers.py
-[Implement strStr()]:https://oj.leetcode.com/problems/implement-strstr/
-[implement-strstr.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/implement-strstr.py
-[Isomorphic Strings]:https://oj.leetcode.com/problems/isomorphic-strings/
-[isomorphic-strings.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/isomorphic-strings.py
-[Length of Last Word]:https://oj.leetcode.com/problems/length-of-last-word/
-[length-of-last-word.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/length-of-last-word.py
-[Longest Common Prefix]:https://oj.leetcode.com/problems/longest-common-prefix/
-[longest-common-prefix.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-common-prefix.py
-[Longest Palindromic Substring]:https://oj.leetcode.com/problems/longest-palindromic-substring/
-[longest-palindromic-substring.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-palindromic-substring.py
-[Multiply Strings]:https://oj.leetcode.com/problems/multiply-strings/
-[multiply-strings.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/multiply-strings.py
-[One Edit Distance]:https://oj.leetcode.com/problems/one-edit-distance/
-[one-edit-distance.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/one-edit-distance.py
-[Reverse Words in a String]:https://oj.leetcode.com/problems/reverse-words-in-a-string/
-[reverse-words-in-a-string.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-words-in-a-string.py
-[Reverse Words in a String II]:https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/
-[reverse-words-in-a-string-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-words-in-a-string-ii.py
-[String to Integer (atoi)]:https://oj.leetcode.com/problems/string-to-integer-atoi/
-[string-to-integer-atoi.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/string-to-integer-atoi.py
-[Text Justification]:https://oj.leetcode.com/problems/text-justification/
-[text-justification.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/text-justification.py
-[Valid Palindrome]:https://oj.leetcode.com/problems/valid-palindrome/
-[valid-palindrome.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/valid-palindrome.py
-[ZigZag Conversion]:https://oj.leetcode.com/problems/zigzag-conversion/
-[zigzag-conversion.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/zigzag-conversion.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+5| [Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/) | [Python](./Python/longest-palindromic-substring.py) | _O(n)_ | _O(n)_ |  Medium || `Manacher's Algorithm`
+6| [ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/) | [Python](./Python/zigzag-conversion.py) | _O(n)_ | _O(1)_        | Easy           ||
+8| [String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/) | [Python](./Python/string-to-integer-atoi.py) | _O(n)_ | _O(1)_ | Easy      ||
+14| [Longest Common Prefix](https://oj.leetcode.com/problems/longest-common-prefix/) | [Python](./Python/longest-common-prefix.py) | _O(n1 + n2 + ...)_   | _O(1)_  | Easy           ||
+20| [Valid Palindrome](https://oj.leetcode.com/problems/valid-palindrome/) | [Python](./Python/valid-palindrome.py) | _O(n)_  | _O(1)_         | Easy           ||
+28| [Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/) | [Python](./Python/implement-strstr.py) | _O(n + m)_   | _O(m)_  | Easy           || `KMP Algorithm`
+38| [Count and Say](https://oj.leetcode.com/problems/compare-version-numbers/) | [Python](./Python/compare-version-numbers.py)| _O(n * 2^n)_  | _O(2^n)_        | Easy           ||
+43| [Multiply Strings](https://oj.leetcode.com/problems/multiply-strings/) | [Python](./Python/multiply-strings.py) | _O(m * n)_ | _O(m + n)_  | Medium         ||
+58| [Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/) | [Python](./Python/length-of-last-word.py) | _O(n)_   | _O(1)_  | Easy           ||
+67| [Add Binary](https://oj.leetcode.com/problems/add-binary/)    | [Python](./Python/add-binary.py) | _O(n)_          | _O(1)_          | Easy           ||
+68| [Text Justification](https://oj.leetcode.com/problems/text-justification/) | [Python](./Python/text-justification.py) | _O(n)_ | _O(1)_      | Hard           ||
+151| [Reverse Words in a String](https://oj.leetcode.com/problems/reverse-words-in-a-string/) | [Python](./Python/reverse-words-in-a-string.py) | _O(n)_ | _O(n)_ | Medium         ||
+161| [One Edit Distance](https://oj.leetcode.com/problems/one-edit-distance/) | [Python](./Python/one-edit-distance.py) | _O(m + n)_ | _O(1)_    | Medium         ||
+165| [Compare Version Numbers](https://oj.leetcode.com/problems/count-and-say/) | [Python](./Python/count-and-say.py) | _O(n)_ | _O(1)_ | Easy     ||
+186| [Reverse Words in a String II](https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/) | [Python](./Python/reverse-words-in-a-string-ii.py) | _O(n)_ | _O(1)_ | Medium         ||
+205| [Isomorphic Strings](https://oj.leetcode.com/problems/isomorphic-strings/) | [Python](./Python/isomorphic-strings.py) | _O(n)_ | _O(1)_       | Easy           ||    
 
 --- 
 
