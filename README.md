@@ -278,32 +278,17 @@ Shell
 --- 
 
 ##Breadth-First Search
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Binary Tree Level Order Traversal]| [binary-tree-level-order-traversal.py] | _O(n)_| _O(n)_| Easy  |  
-[Binary Tree Level Order Traversal II]| [binary-tree-level-order-traversal-ii.py] | _O(n)_| _O(n)_| Easy  |
-[Binary Tree Zigzag Level Order Traversal]| [binary-tree-zigzag-level-order-traversal.py] | _O(n)_| _O(n)_| Medium  |  
-[Clone Graph]| [clone-graph.py]   | _O(n)_          | _O(n)_          | Medium         |
-[Course Schedule](https://oj.leetcode.com/problems/course-schedule/)| [course-schedule.py](./Python/course-schedule.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         |
-[Course Schedule II](https://oj.leetcode.com/problems/course-schedule-ii/)| [course-schedule-ii.py](./Python/course-schedule-ii.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         |
-[Populating Next Right Pointers in Each Node II]|[populating-next-right-pointers-in-each-node-ii.py]| _O(n)_ | _O(1)_ | Hard |
-[Surrounded Regions]|[surrounded-regions.py]| _O(m * n)_ | _O(m + n)_ | Medium         |
-[Word Ladder]   |[word-ladder.py] | _O(n * d)_      | _O(d)_          | Medium         |
-
-[Binary Tree Level Order Traversal]:https://oj.leetcode.com/problems/binary-tree-level-order-traversal/
-[binary-tree-level-order-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-level-order-traversal.py
-[Binary Tree Level Order Traversal II]:https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/
-[binary-tree-level-order-traversal-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-level-order-traversal-ii.py
-[Binary Tree Zigzag Level Order Traversal]:https://oj.leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
-[binary-tree-zigzag-level-order-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-zigzag-level-order-traversal.py
-[Clone Graph]:https://oj.leetcode.com/problems/clone-graph/
-[clone-graph.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/clone-graph.py
-[Populating Next Right Pointers in Each Node II]:https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
-[populating-next-right-pointers-in-each-node-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/populating-next-right-pointers-in-each-node-ii.py
-[Surrounded Regions]:https://oj.leetcode.com/problems/surrounded-regions/
-[surrounded-regions.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/surrounded-regions.py
-[Word Ladder]:https://oj.leetcode.com/problems/word-ladder/
-[word-ladder.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/word-ladder.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+102| [Binary Tree Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-level-order-traversal/)| [Python](./Python/binary-tree-level-order-traversal.py)| _O(n)_| _O(n)_| Easy  || 
+107| [Binary Tree Level Order Traversal II](https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/)| [Python](./Python/binary-tree-level-order-traversal-ii.py) | _O(n)_| _O(n)_| Easy  ||
+103| [Binary Tree Zigzag Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)| [Python](./Python/binary-tree-zigzag-level-order-traversal.py) | _O(n)_| _O(n)_| Medium  ||  
+117| [Populating Next Right Pointers in Each Node II](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)|[Python](./Python/populating-next-right-pointers-in-each-node-ii.py)| _O(n)_ | _O(1)_ | Hard ||
+127| [Word Ladder](https://oj.leetcode.com/problems/word-ladder/)|[Python](./Python/word-ladder.py) | _O(n * d)_      | _O(d)_          | Medium         ||
+130| [Surrounded Regions](https://oj.leetcode.com/problems/surrounded-regions/)|[Python](./Python/surrounded-regions.py)| _O(m * n)_ | _O(m + n)_ | Medium         ||
+133| [Clone Graph](https://oj.leetcode.com/problems/clone-graph/)| [Python](./Python/clone-graph.py)   | _O(n)_          | _O(n)_          | Medium         ||
+207| [Course Schedule](https://oj.leetcode.com/problems/course-schedule/)| [course-schedule.py](./Python/course-schedule.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         ||
+210| [Course Schedule II](https://oj.leetcode.com/problems/course-schedule-ii/)| [course-schedule-ii.py](./Python/course-schedule-ii.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         ||
 
 --- 
 
