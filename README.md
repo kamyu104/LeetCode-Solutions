@@ -240,55 +240,23 @@ Shell
 --- 
 
 ##Divide and Conquer
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Balanced Binary Tree] | [balanced-binary-tree.py] | _O(n)_| _O(h)_   | Easy           |
-[Binary Tree Maximum Path Sum]| [binary-tree-maximum-path-sum.py] | _O(n)_| _O(h)_| Hard  |  
-[Binary Tree Upside Down] | [binary-tree-upside-down.py] | _O(n)_ | _O(1)_ | Medium    | 
-[Construct Binary Tree from Inorder and Postorder Traversal] | [construct-binary-tree-from-inorder-and-postorder-traversal.py] | _O(n)_        | _O(n)_          | Medium         |
-[Construct Binary Tree from Preorder and Inorder Traversal] | [construct-binary-tree-from-preorder-and-inorder-traversal.py] | _O(n)_        | _O(n)_          | Medium   
-[Convert Sorted Array to Binary Search Tree] | [convert-sorted-array-to-binary-search-tree.py] | _O(n)_        | _O(logn)_          | Medium         |
-[Convert Sorted List to Binary Search Tree] | [convert-sorted-list-to-binary-search-tree.py] | _O(n)_        | _O(logn)_          | Medium         |
-[Flatten Binary Tree to Linked List]|[flatten-binary-tree-to-linked-list.py]| _O(n)_        | _O(h)_          | Medium         |
-[Maximum Depth of Binary Tree]|[maximum-depth-of-binary-tree.py]| _O(n)_ | _O(h)_ | Easy |
-[Minimum Depth of Binary Tree]|[minimum-depth-of-binary-tree.py]| _O(n)_ | _O(h)_ | Easy |
-[Populating Next Right Pointers in Each Node]|[populating-next-right-pointers-in-each-node.py]| _O(n)_ | _O(1)_ | Medium |
-[Same Tree]      |[same-tree.py]  | _O(n)_          | _O(h)_        | Easy          |
-[Sum Root to Leaf Numbers] | [sum-root-to-leaf-numbers.py] | _O(n)_ | _O(h)_ | Medium |
-[Unique Binary Search Trees II] | [unique-binary-search-trees-ii.py] | _O(4^n / n^(3/2)_      | _O(4^n / n^(3/2)_         | Medium         |
-[Validate Binary Search Tree]|[validate-binary-search-tree.py]| _O(n)_ | _O(1)_ | Medium |
-
-[Balanced Binary Tree]:https://oj.leetcode.com/problems/balanced-binary-tree/
-[balanced-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/balanced-binary-tree.py
-[Binary Tree Maximum Path Sum]:https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/
-[binary-tree-maximum-path-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-maximum-path-sum.py
-[Binary Tree Upside Down]:https://oj.leetcode.com/problems/binary-tree-upside-down/
-[binary-tree-upside-down.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-upside-down.py
-[Construct Binary Tree from Inorder and Postorder Traversal]:https://oj.leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
-[construct-binary-tree-from-inorder-and-postorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/construct-binary-tree-from-inorder-and-postorder-traversal.py
-[Construct Binary Tree from Preorder and Inorder Traversal]:https://oj.leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
-[construct-binary-tree-from-preorder-and-inorder-traversal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/construct-binary-tree-from-preorder-and-inorder-traversal.py
-[Convert Sorted Array to Binary Search Tree]:https://oj.leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
-[convert-sorted-array-to-binary-search-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/convert-sorted-array-to-binary-search-tree.py
-[Convert Sorted List to Binary Search Tree]:https://oj.leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
-[convert-sorted-list-to-binary-search-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/convert-sorted-list-to-binary-search-tree.py
-[Flatten Binary Tree to Linked List]:https://oj.leetcode.com/problems/flatten-binary-tree-to-linked-list/
-[flatten-binary-tree-to-linked-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/flatten-binary-tree-to-linked-list.py
-[Maximum Depth of Binary Tree]:https://oj.leetcode.com/problems/maximum-depth-of-binary-tree/
-[maximum-depth-of-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/maximum-depth-of-binary-tree.py
-[Minimum Depth of Binary Tree]:https://oj.leetcode.com/problems/minimum-depth-of-binary-tree/
-[minimum-depth-of-binary-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/minimum-depth-of-binary-tree.py
-[Populating Next Right Pointers in Each Node]:https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node/
-[populating-next-right-pointers-in-each-node.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/populating-next-right-pointers-in-each-node.py
-[Same Tree]:https://oj.leetcode.com/problems/same-tree/
-[same-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/same-tree.py
-[Sum Root to Leaf Numbers]:https://oj.leetcode.com/problems/sum-root-to-leaf-numbers/
-[sum-root-to-leaf-numbers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sum-root-to-leaf-numbers.py
-[Unique Binary Search Trees II]:https://oj.leetcode.com/problems/unique-binary-search-trees-ii/
-[unique-binary-search-trees-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/unique-binary-search-trees-ii.py
-[Validate Binary Search Tree]:https://oj.leetcode.com/problems/validate-binary-search-tree/
-[validate-binary-search-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/validate-binary-search-tree.py
-
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+95| [Unique Binary Search Trees II](https://oj.leetcode.com/problems/unique-binary-search-trees-ii/) | [Python](./Python/unique-binary-search-trees-ii.py) | _O(4^n / n^(3/2)_      | _O(4^n / n^(3/2)_         | Medium         ||
+98| [Validate Binary Search Tree](https://oj.leetcode.com/problems/validate-binary-search-tree/)|[Python](./Python/validate-binary-search-tree.py)| _O(n)_ | _O(1)_ | Medium ||
+100| [Same Tree](https://oj.leetcode.com/problems/same-tree/)      |[Python](./Python/same-tree.py)  | _O(n)_          | _O(h)_        | Easy          ||
+104| [Maximum Depth of Binary Tree](https://oj.leetcode.com/problems/maximum-depth-of-binary-tree/)|[Python](./Python/maximum-depth-of-binary-tree.py)| _O(n)_ | _O(h)_ | Easy ||
+105| [Construct Binary Tree from Preorder and Inorder Traversal](https://oj.leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [Python](./Python/construct-binary-tree-from-preorder-and-inorder-traversal.py) | _O(n)_        | _O(n)_          | Medium   ||
+106| [Construct Binary Tree from Inorder and Postorder Traversal](https://oj.leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [Python](./Python/construct-binary-tree-from-inorder-and-postorder-traversal.py) | _O(n)_        | _O(n)_          | Medium         ||
+108| [Convert Sorted Array to Binary Search Tree](https://oj.leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [Python](./Python/convert-sorted-array-to-binary-search-tree.py) | _O(n)_        | _O(logn)_          | Medium         ||
+109| [Convert Sorted List to Binary Search Tree](https://oj.leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | [Python](./Python/convert-sorted-list-to-binary-search-tree.py) | _O(n)_        | _O(logn)_          | Medium         ||
+110| [Balanced Binary Tree](https://oj.leetcode.com/problems/balanced-binary-tree/) | [Python](./Python/balanced-binary-tree.py) | _O(n)_| _O(h)_   | Easy           ||
+111| [Minimum Depth of Binary Tree](https://oj.leetcode.com/problems/minimum-depth-of-binary-tree/)|[Python](./Python/minimum-depth-of-binary-tree.py)| _O(n)_ | _O(h)_ | Easy ||
+114| [Flatten Binary Tree to Linked List](https://oj.leetcode.com/problems/flatten-binary-tree-to-linked-list/)|[Python](./Python/flatten-binary-tree-to-linked-list.py)| _O(n)_        | _O(h)_          | Medium         ||
+116| [Populating Next Right Pointers in Each Node](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[Python](./Python/populating-next-right-pointers-in-each-node.py)| _O(n)_ | _O(1)_ | Medium ||
+124| [Binary Tree Maximum Path Sum](https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/)| [Python](./Python/binary-tree-maximum-path-sum.py) | _O(n)_| _O(h)_| Hard  ||  
+129| [Sum Root to Leaf Numbers](https://oj.leetcode.com/problems/sum-root-to-leaf-numbers/) | [Python](./Python/sum-root-to-leaf-numbers.py) | _O(n)_ | _O(h)_ | Medium ||
+156| [Binary Tree Upside Down](https://oj.leetcode.com/problems/binary-tree-upside-down/) | [Python](./Python/binary-tree-upside-down.py) | _O(n)_ | _O(1)_ | Medium    || 
 
 --- 
 
