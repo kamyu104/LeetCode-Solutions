@@ -126,40 +126,22 @@ Shell
 --- 
 
 ##Stack
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Binary Search Tree Iterator] | [binary-search-tree-iterator.py] | _O(1)_| _O(h)_| Medium   
-[Evaluate Reverse Polish Notation]| [evaluate-reverse-polish-notation.py]| _O(n)_| _O(n)_| Medium          |
-[Longest Valid Parentheses]| [longest-valid-parentheses.py] | _O(n)_ | _O(1)_ | Hard   |
-[Min Stack]     | [min-stack.py]  | _O(n)_          | _O(1)_          | Easy           |
-[Simplify Path]| [simplify-path.py] | _O(n)_        | _O(n)_          | Medium         |
-[Symmetric Tree]| [symmetric-tree.py] | _O(n)_      | _O(h)_          | Easy           |
-[Valid Parentheses]| [valid-parentheses.py] | _O(n)_        | _O(n)_          | Easy           |
-
-[Binary Search Tree Iterator]:https://oj.leetcode.com/problems/binary-search-tree-iterator/
-[binary-search-tree-iterator.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-search-tree-iterator.py
-[Evaluate Reverse Polish Notation]:https://oj.leetcode.com/problems/evaluate-reverse-polish-notation/
-[evaluate-reverse-polish-notation.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/evaluate-reverse-polish-notation.py
-[Longest Valid Parentheses]:https://oj.leetcode.com/problems/longest-valid-parentheses/
-[longest-valid-parentheses.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-valid-parentheses.py
-[Min Stack]:https://oj.leetcode.com/problems/min-stack/
-[min-stack.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/min-stack.py
-[Simplify Path]:https://oj.leetcode.com/problems/simplify-path/
-[simplify-path.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/simplify-path.py
-[Symmetric Tree]:https://oj.leetcode.com/problems/symmetric-tree/
-[symmetric-tree.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/symmetric-tree.py
-[Valid Parentheses]:https://oj.leetcode.com/problems/valid-parentheses/
-[valid-parentheses.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/valid-parentheses.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+20| [Valid Parentheses](https://oj.leetcode.com/problems/valid-parentheses/)| [Python](./Python/valid-parentheses.py) | _O(n)_        | _O(n)_          | Easy           ||
+32| [Longest Valid Parentheses](https://oj.leetcode.com/problems/longest-valid-parentheses/)| [Python](./Python/longest-valid-parentheses.py) | _O(n)_ | _O(1)_ | Hard   ||
+71| [Simplify Path](https://oj.leetcode.com/problems/simplify-path/)| [Python](./Python/simplify-path.py) | _O(n)_        | _O(n)_          | Medium         ||
+101| [Symmetric Tree](https://oj.leetcode.com/problems/symmetric-tree/)| [Python](./Python/symmetric-tree.py) | _O(n)_      | _O(h)_          | Easy           ||
+150| [Evaluate Reverse Polish Notation](https://oj.leetcode.com/problems/evaluate-reverse-polish-notation/)| [Python](./Python/evaluate-reverse-polish-notation.py)| _O(n)_| _O(n)_| Medium          ||
+155| [Min Stack](https://oj.leetcode.com/problems/min-stack/)     | [Python](./Python/min-stack.py)  | _O(n)_          | _O(1)_          | Easy           ||
+173| [Binary Search Tree Iterator](https://oj.leetcode.com/problems/binary-search-tree-iterator/) | [Python](./Python/binary-search-tree-iterator.py) | _O(1)_| _O(h)_| Medium ||   
 
 --- 
 
 ##Heap
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Merge k Sorted Lists] | [merge-k-sorted-lists.py] | _O(nlogk)_| _O(k)_| Hard          |  
-
-[Merge k Sorted Lists]:https://oj.leetcode.com/problems/merge-k-sorted-lists/
-[merge-k-sorted-lists.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-k-sorted-lists.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+23| [Merge k Sorted Lists](https://oj.leetcode.com/problems/merge-k-sorted-lists/) | [Python](./Python/merge-k-sorted-lists.py) | _O(nlogk)_| _O(k)_| Hard          ||
 
 --- 
 
