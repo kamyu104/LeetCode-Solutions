@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-05-14), there are `194` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-05-16), there are `195` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `210` problems.
+Here is the classification of all `211` problems.
 For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -278,6 +278,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Tree
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
+[Add and Search Word - Data structure design ](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | [Python](./Python/add-and-search-word-data-structure-design.py) | _O(min(n, h))_ | _O(min(n, h))_ | Medium | `Trie`
 [Binary Tree Preorder Traversal] | [binary-tree-preorder-traversal.py] | _O(n)_| _O(1)_| Medium | `Morris Traversal` 
 [Binary Tree Inorder Traversal]  | [binary-tree-inorder-traversal.py] | _O(n)_| _O(1)_| Medium           | `Morris Traversal` 
 [Binary Tree Postorder Traversal]| [binary-tree-postorder-traversal.py] | _O(n)_| _O(1)_| Hard  | `Morris Traversal` 
