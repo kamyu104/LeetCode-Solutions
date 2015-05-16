@@ -293,51 +293,22 @@ Shell
 --- 
 
 ##Depth-First Search
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Binary Tree Right Side View] | [binary-tree-right-side-view.py] | _O(n)_     | _O(h)_ | Medium  |
-[Combination Sum]| [combination-sum.py] | _O(n^m)_    | _O(m)_          | Medium         |
-[Combination Sum II]| [combination-sum-ii.py]| _O(n! / m!(n-m)!)_| _O(m)_         | Medium         |
-[Combinations]  | [combinations.py] | _O(n!)_       | _O(n)_          | Medium         |
-[Generate Parentheses]| [generate-parentheses.py]| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         |
-[N-Queens]      | [n-queens.py]   | _O(n!)_         | _O(n)_          | Hard           |
-[N-Queens-II]   | [n-queens-ii.py] | _O(n!)_        | _O(n)_          | Hard           |
-[Number of Islands] | [number-of-islands.py] | _O(m * n)_ | _O(m * n)_| Medium         |
-[Palindrome Partitioning] | [palindrome-partitioning.py] | _O(n^2)_ ~ _O(2^n)_ | _O(n^2)_ | Medium |
-[Path Sum]      | [path-sum.py]   | _O(n)_          | _O(h)_          | Easy           |
-[Path Sum II]   | [path-sum-ii.py] | _O(n)_         | _O(h)_          | Medium         |
-[Restore IP Addresses] | [restore-ip-addresses.py] | _O(n^m)_ ~ _O(3^4)_ | _O(n * m)_ ~ _O(3 * 4)_ | Medium         |
-[Sudoku Solver] | [sudoku-solver.py] | _O((9!)^9)_  | _O(1)_          | Hard           |
-[Word Search] | [word-search.py] | _O(m * n * l)_ | _O(l)_  | Medium         |
-
-[Binary Tree Right Side View]:https://oj.leetcode.com/problems/binary-tree-right-side-view/
-[binary-tree-right-side-view.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/binary-tree-right-side-view.py
-[Combination Sum]:https://oj.leetcode.com/problems/combination-sum/
-[combination-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/combination-sum.py
-[Combination Sum II]:https://oj.leetcode.com/problems/combination-sum-ii/
-[combination-sum-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/combination-sum-ii.py
-[Combinations]:https://oj.leetcode.com/problems/combinations/
-[combinations.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/combinations.py
-[Generate Parentheses]:https://oj.leetcode.com/problems/generate-parentheses/
-[generate-parentheses.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/generate-parentheses.py
-[N-Queens]:https://oj.leetcode.com/problems/n-queens/
-[n-queens.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/n-queens.py
-[N-Queens-II]:https://oj.leetcode.com/problems/n-queens-ii/
-[n-queens-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/n-queens-ii.py
-[Number of Islands]:https://leetcode.com/problems/number-of-islands/
-[number-of-islands.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/number-of-islands.py
-[Palindrome Partitioning]:https://oj.leetcode.com/problems/palindrome-partitioning/
-[palindrome-partitioning.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/palindrome-partitioning.py
-[Path Sum]:https://oj.leetcode.com/problems/path-sum/
-[path-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/path-sum.py
-[Path Sum II]:https://oj.leetcode.com/problems/path-sum-ii/
-[path-sum-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/path-sum-ii.py
-[Restore IP Addresses]:https://oj.leetcode.com/problems/restore-ip-addresses/
-[restore-ip-addresses.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/restore-ip-addresses.py
-[Sudoku Solver]:https://oj.leetcode.com/problems/sudoku-solver/
-[sudoku-solver.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sudoku-solver.py
-[Word Search]:https://oj.leetcode.com/problems/word-search/
-[word-search.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/word-search.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+22| [Generate Parentheses](https://oj.leetcode.com/problems/generate-parentheses/)| [Python](./Python/generate-parentheses.py)| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         ||
+37| [Sudoku Solver](https://oj.leetcode.com/problems/sudoku-solver/) | [Python](./Python/sudoku-solver.py) | _O((9!)^9)_  | _O(1)_          | Hard           ||
+39| [Combination Sum](https://oj.leetcode.com/problems/combination-sum/)| [Python](./Python/combination-sum.py) | _O(n^m)_    | _O(m)_          | Medium         ||
+40| [Combination Sum II](https://oj.leetcode.com/problems/combination-sum-ii/)| [Python](./Python/combination-sum-ii.py)| _O(n! / m!(n-m)!)_| _O(m)_         | Medium         ||
+51| [N-Queens](https://oj.leetcode.com/problems/n-queens/)      | [Python](./Python/n-queens.py)   | _O(n!)_         | _O(n)_          | Hard           ||
+52| [N-Queens-II](https://oj.leetcode.com/problems/n-queens-ii/)   | [Python](./Python/n-queens-ii.py) | _O(n!)_        | _O(n)_          | Hard           ||
+77| [Combinations](https://oj.leetcode.com/problems/combinations/)  | [Python](./Python/combinations.py) | _O(n!)_       | _O(n)_          | Medium         ||
+79| [Word Search](https://oj.leetcode.com/problems/word-search/) | [Python](./Python/word-search.py) | _O(m * n * l)_ | _O(l)_  | Medium         ||
+93| [Restore IP Addresses](https://oj.leetcode.com/problems/restore-ip-addresses/) | [Python](./Python/restore-ip-addresses.py) | _O(n^m)_ ~ _O(3^4)_ | _O(n * m)_ ~ _O(3 * 4)_ | Medium         ||
+112| [Path Sum](https://oj.leetcode.com/problems/path-sum/)      | [Python](./Python/path-sum.py)   | _O(n)_          | _O(h)_          | Easy           ||
+113| [Path Sum II](https://oj.leetcode.com/problems/path-sum-ii/)   | [Python](./Python/path-sum-ii.py) | _O(n)_         | _O(h)_          | Medium         ||
+131| [Palindrome Partitioning](https://oj.leetcode.com/problems/palindrome-partitioning/) | [Python](./Python/palindrome-partitioning.py) | _O(n^2)_ ~ _O(2^n)_ | _O(n^2)_ | Medium ||
+199| [Binary Tree Right Side View](https://oj.leetcode.com/problems/binary-tree-right-side-view/) | [Python](./Python/binary-tree-right-side-view.py) | _O(n)_     | _O(h)_ | Medium  ||
+200| [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [Python](./Python/number-of-islands.py) | _O(m * n)_ | _O(m * n)_| Medium         ||
 
 --- 
 
