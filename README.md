@@ -70,7 +70,7 @@ Shell
 48 | [Rotate Image](https://oj.leetcode.com/problems/rotate-image/)   | [Python](./Python/rotate-image.py) | _O(n^2)_      | _O(1)_         | Medium         ||
 54 | [Spiral Matrix](https://oj.leetcode.com/problems/spiral-matrix/) | [Python](./Python/spiral-matrix.py) | _O(m * n)_    | _O(1)_         | Medium         ||
 59 | [Spiral Matrix II](https://oj.leetcode.com/problems/spiral-matrix-ii/) | [Python](./Python/spiral-matrix-ii.py) | _O(m * n)_ | _O(1)_      | Medium         ||
-66 | [Plus One]([Plus One]:https://oj.leetcode.com/problems/plus-one/)      | [Python](./Python/plus-one.py)   | _O(n)_           | _O(1)_         | Easy           || 
+66 | [Plus One](https://oj.leetcode.com/problems/plus-one/)      | [Python](./Python/plus-one.py)   | _O(n)_           | _O(1)_         | Easy           || 
 73 | [Set Matrix Zeroes](https://oj.leetcode.com/problems/set-matrix-zeroes/) | [Python](./Python/set-matrix-zeroes.py) | _O(m * n)_ | _O(1)_    | Medium         ||
 80 | [Remove Duplicates from Sorted Array II](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)| [Python](./Python/remove-duplicates-from-sorted-array-ii.py) | _O(n)_       | _O(1)_         | Medium         ||
 118 | [Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)| [Python](./Python/pascals-triangle.py) | _O(n^2)_ | _O(n)_        | Easy           || 
