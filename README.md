@@ -704,45 +704,20 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ---
 
 ##SQL
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Combine Two Tables] | [combine-two-tables.sql] | _O(m + n)_   | _O(m + n)_ | Easy     |
-[Consecutive Numbers] | [consecutive-numbers.sql] | _O(n)_   | _O(n)_ | Medium         |
-[Customers Who Never Order] | [customers-who-never-order.sql] | _O(n^2)_ | _O(1)_       | Easy           |
-[Delete Duplicate Emails] | [delete-duplicate-emails.sql] | _O(n^2)_ | _O(n)_       | Easy           |
-[Department Highest Salary] | [department-highest-salary.sql] | _O(n^2)_   | _O(n)_ | Medium         |
-[Department Top Three Salaries] | [department-top-three-salaries.sql] | _O(n^2)_   | _O(n)_ | Hard         |
-[Duplicate Emails] | [duplicate-emails.sql] | _O(n^2)_ | _O(n)_       | Easy           |
-[Employees Earning More Than Their Managers] | [employees-earning-more-than-their-managers.sql] | _O(n^2)_   | _O(1)_ | Easy     |
-[Nth Highest Salary] | [nth-highest-salary.sql] | _O(n^2)_   | _O(n)_ | Medium         |
-[Rank Scores] | [rank-scores.sql] | _O(n^2)_        | _O(n)_          | Medium         |
-[Rising Temperature] | [rising-temperature.sql] | _O(n^2)_ | _O(n)_       | Easy           |
-[Second Highest Salary] | [second-highest-salary.sql] | _O(n)_ | _O(1)_ | Easy         |
-
-[Combine Two Tables]:https://oj.leetcode.com/problems/combine-two-tables/
-[combine-two-tables.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/combine-two-tables.sql
-[Consecutive Numbers]:https://oj.leetcode.com/problems/consecutive-numbers/
-[consecutive-numbers.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/consecutive-numbers.sql
-[Customers Who Never Order]:https://oj.leetcode.com/problems/customers-who-never-order/
-[customers-who-never-order.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/customers-who-never-order.sql
-[Delete Duplicate Emails]:https://oj.leetcode.com/problems/delete-duplicate-emails/
-[delete-duplicate-emails.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/delete-duplicate-emails.sql
-[Department Highest Salary]:https://oj.leetcode.com/problems/department-highest-salary/
-[department-highest-salary.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/department-highest-salary.sql
-[Department Top Three Salaries]:https://oj.leetcode.com/problems/department-top-three-salaries/
-[department-top-three-salaries.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/department-top-three-salaries.sql
-[Duplicate Emails]:https://oj.leetcode.com/problems/duplicate-emails/
-[duplicate-emails.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/duplicate-emails.sql
-[Employees Earning More Than Their Managers]:https://oj.leetcode.com/problems/employees-earning-more-than-their-managers/
-[employees-earning-more-than-their-managers.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/employees-earning-more-than-their-managers.sql
-[Nth Highest Salary]:https://oj.leetcode.com/problems/nth-highest-salary/
-[nth-highest-salary.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/nth-highest-salary.sql
-[Rank Scores]:https://oj.leetcode.com/problems/rank-scores/
-[rank-scores.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/rank-scores.sql
-[Rising Temperature]:https://oj.leetcode.com/problems/rising-temperature/
-[rising-temperature.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/rising-temperature.sql
-[Second Highest Salary]:https://oj.leetcode.com/problems/second-highest-salary/
-[second-highest-salary.sql]:https://github.com/kamyu104/LeetCode/blob/master/MySQL/second-highest-salary.sql
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+175| [Combine Two Tables](https://oj.leetcode.com/problems/combine-two-tables/) | [MySQL](./MySQL/combine-two-tables.sql) | _O(m + n)_   | _O(m + n)_ | Easy     ||
+176| [Second Highest Salary](https://oj.leetcode.com/problems/second-highest-salary/) | [MySQL](./MySQL/second-highest-salary.sql) | _O(n)_ | _O(1)_ | Easy         ||
+177| [Nth Highest Salary](https://oj.leetcode.com/problems/nth-highest-salary/) | [MySQL](./MySQL/nth-highest-salary.sql) | _O(n^2)_   | _O(n)_ | Medium         ||
+178| [Rank Scores](https://oj.leetcode.com/problems/rank-scores/) | [MySQL](./MySQL/rank-scores.sql) | _O(n^2)_        | _O(n)_          | Medium         ||
+180| [Consecutive Numbers](https://oj.leetcode.com/problems/consecutive-numbers/) | [MySQL](./MySQL/consecutive-numbers.sql) | _O(n)_   | _O(n)_ | Medium         ||
+181| [Employees Earning More Than Their Managers](https://oj.leetcode.com/problems/employees-earning-more-than-their-managers/) | [MySQL](./MySQL/employees-earning-more-than-their-managers.sql) | _O(n^2)_   | _O(1)_ | Easy     ||
+182| [Duplicate Emails](https://oj.leetcode.com/problems/duplicate-emails/) | [MySQL](./MySQL/duplicate-emails.sql) | _O(n^2)_ | _O(n)_       | Easy           ||
+183| [Customers Who Never Order](https://oj.leetcode.com/problems/customers-who-never-order/) | [MySQL](./MySQL/customers-who-never-order.sql) | _O(n^2)_ | _O(1)_       | Easy           ||
+184| [Department Highest Salary](https://oj.leetcode.com/problems/department-highest-salary/) | [MySQL](./MySQL/department-highest-salary.sql) | _O(n^2)_   | _O(n)_ | Medium         ||
+185| [Department Top Three Salaries](https://oj.leetcode.com/problems/department-top-three-salaries/) | [MySQL](./MySQL/department-top-three-salaries.sql) | _O(n^2)_   | _O(n)_ | Hard         ||
+196| [Delete Duplicate Emails](https://oj.leetcode.com/problems/delete-duplicate-emails/) | [MySQL](./MySQL/delete-duplicate-emails.sql) | _O(n^2)_ | _O(n)_       | Easy           ||
+197| [Rising Temperature](https://oj.leetcode.com/problems/rising-temperature/) | [MySQL](./MySQL/rising-temperature.sql) | _O(n^2)_ | _O(n)_       | Easy           ||
 
 ---
 
