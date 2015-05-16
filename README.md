@@ -177,57 +177,27 @@ Shell
 --- 
 
 ##Data Structure
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[LRU Cache]     | [lru-cache.py]  | _O(1)_          | _O(n)_          | Hard         |
-
-
-[LRU Cache]:https://oj.leetcode.com/problems/lru-cache/
-[lru-cache.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/lru-cache.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+146| [LRU Cache](https://oj.leetcode.com/problems/lru-cache/)     | [Python](./Python/lru-cache.py)  | _O(1)_          | _O(n)_          | Hard         ||
 
 --- 
 
 ##Math
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Divide Two Integers] | [divide-two-integers.py]    | _O(logn)_       | _O(1)_         | Medium         |
-[Excel Sheet Column Title] | [excel-sheet-column-title.py] | _O(logn)_ | _O(1)_ | Easy |
-[Excel Sheet Column Number] | [excel-sheet-column-number.py] | _O(n)_ | _O(1)_ | Easy  |
-[Factorial Trailing Zeroes] | [factorial-trailing-zeroes.py]  | _O(logn)_ | _O(1)_ | Easy         |
-[Fraction to Recurring Decimal] | [fraction-to-recurring-decimal.py]  | _O(logn)_ | _O(1)_ | Medium         |
-[Gray Code]     | [gray-code.py]  | _O(2^n)_        | _O(1)_          | Medium         |
-[Integer to Roman] | [integer-to-roman.py] | _O(n)_ | _O(1)_          | Medium         |
-[Palindrome Number] | [palindrome-number.py] | _O(1)_ | _O(1)_        | Easy           |
-[Permutation Sequence] | [permutation-sequence.py] | _O(n^2)_ | _O(n)_  | Medium         | `Cantor Ordering`
-[Reverse Integer] | [reverse-integer.py] | _O(logn)_ | _O(1)_         | Easy           |
-[Roman to Integer] | [roman-to-integer.py] | _O(n)_ | _O(1)_          | Easy           |
-[Valid Number] | [valid-number.py] | _O(n)_         | _O(1)_          | Hard           | `Automata`
-
-[Divide Two Integers]:https://oj.leetcode.com/problems/divide-two-integers/
-[divide-two-integers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/divide-two-integers.py
-[Excel Sheet Column Title]:https://oj.leetcode.com/problems/excel-sheet-column-title/
-[excel-sheet-column-title.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/excel-sheet-column-title.py
-[Excel Sheet Column Number]:https://oj.leetcode.com/problems/excel-sheet-column-number/
-[excel-sheet-column-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/excel-sheet-column-number.py
-[Factorial Trailing Zeroes]:https://oj.leetcode.com/problems/factorial-trailing-zeroes/
-[factorial-trailing-zeroes.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/factorial-trailing-zeroes.py
-[Fraction to Recurring Decimal]:https://oj.leetcode.com/problems/fraction-to-recurring-decimal/
-[fraction-to-recurring-decimal.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/fraction-to-recurring-decimal.py
-[Gray Code]:https://oj.leetcode.com/problems/gray-code/
-[gray-code.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/gray-code.py
-[Integer to Roman]:https://oj.leetcode.com/problems/integer-to-roman/
-[integer-to-roman.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/integer-to-roman.py
-[Palindrome Number]:https://oj.leetcode.com/problems/palindrome-number/
-[palindrome-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/palindrome-number.py
-[Permutation Sequence]:https://oj.leetcode.com/problems/permutation-sequence/
-[permutation-sequence.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/permutation-sequence.py
-[Reverse Integer]:https://oj.leetcode.com/problems/reverse-integer/
-[reverse-integer.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-integer.py
-[Roman to Integer]:https://oj.leetcode.com/problems/roman-to-integer/
-[roman-to-integer.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/roman-to-integer.py
-[Valid Number]:https://oj.leetcode.com/problems/valid-number/
-[valid-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/valid-number.py
-
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+7| [Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/) | [Python](./Python/reverse-integer.py) | _O(logn)_ | _O(1)_         | Easy           |
+9| [Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/) | [Python](./Python/palindrome-number.py) | _O(1)_ | _O(1)_        | Easy           |
+12| [Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman/) | [Python](./Python/integer-to-roman.py) | _O(n)_ | _O(1)_          | Medium         |
+13| [Roman to Integer](https://oj.leetcode.com/problems/roman-to-integer/) | [Python](./Python/roman-to-integer.py) | _O(n)_ | _O(1)_          | Easy           |
+29| [Divide Two Integers](https://oj.leetcode.com/problems/divide-two-integers/) | [Python](./Python/divide-two-integers.py)    | _O(logn)_       | _O(1)_         | Medium         |
+60| [Permutation Sequence](https://oj.leetcode.com/problems/permutation-sequence/) | [Python](./Python/permutation-sequence.py) | _O(n^2)_ | _O(n)_  | Medium         | `Cantor Ordering`
+65| [Valid Number](https://oj.leetcode.com/problems/valid-number/) | [Python](./Python/valid-number.py) | _O(n)_         | _O(1)_          | Hard           | `Automata`
+89| [Gray Code](https://oj.leetcode.com/problems/gray-code/)     | [Python](./Python/gray-code.py)  | _O(2^n)_        | _O(1)_          | Medium         |
+166| [Fraction to Recurring Decimal](https://oj.leetcode.com/problems/fraction-to-recurring-decimal/) | [Python](./Python/fraction-to-recurring-decimal.py)  | _O(logn)_ | _O(1)_ | Medium         |
+168| [Excel Sheet Column Title](https://oj.leetcode.com/problems/excel-sheet-column-title/) | [Python](./Python/excel-sheet-column-title.py) | _O(logn)_ | _O(1)_ | Easy |
+171| [Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/) | [Python](./Python/excel-sheet-column-number.py) | _O(n)_ | _O(1)_ | Easy  |
+172| [Factorial Trailing Zeroes](https://oj.leetcode.com/problems/factorial-trailing-zeroes/) | [Python](./Python/factorial-trailing-zeroes.py)  | _O(logn)_ | _O(1)_ | Easy         |
 
 --- 
 
