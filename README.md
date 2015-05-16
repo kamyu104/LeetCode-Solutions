@@ -747,18 +747,9 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ---
 
 ##Shell Script
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Tenth Line] | [tenth-line.sh]    | _O(n)_          | _O(1)_          | Easy           |
-[Transpose File] | [transpose-file.sh] | _O(n^2)_   | _O(n^2)_        | Medium         |
-[Valid Phone Numbers] | [valid-phone-numbers.sh] | _O(n)_ | _O(1)_    | Easy           |
-[Word Frequency] | [word-frequency.sh] | _O(n)_     | _O(k)_          | Medium         |
-
-[Tenth Line]:https://oj.leetcode.com/problems/tenth-line/
-[tenth-line.sh]:https://github.com/kamyu104/LeetCode/blob/master/Shell/tenth-line.sh
-[Transpose File]:https://oj.leetcode.com/problems/transpose-file/
-[transpose-file.sh]:https://github.com/kamyu104/LeetCode/blob/master/Shell/transpose-file.sh
-[Valid Phone Numbers]:https://oj.leetcode.com/problems/valid-phone-numbers/
-[valid-phone-numbers.sh]:https://github.com/kamyu104/LeetCode/blob/master/Shell/valid-phone-numbers.sh
-[Word Frequency]:https://oj.leetcode.com/problems/word-frequency/
-[word-frequency.sh]:https://github.com/kamyu104/LeetCode/blob/master/Shell/word-frequency.sh
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+192 | [Word Frequency](https://oj.leetcode.com/problems/word-frequency/) | [Shell](./Shell/word-frequency.sh) | _O(n)_     | _O(k)_          | Medium         ||
+193 | [Valid Phone Numbers](https://oj.leetcode.com/problems/valid-phone-numbers/) | [Shell](./Shell/valid-phone-numbers.sh) | _O(n)_ | _O(1)_    | Easy           ||
+194 | [Transpose File](https://oj.leetcode.com/problems/transpose-file/) | [Shell](./Shell/transpose-file.sh) | _O(n^2)_   | _O(n^2)_        | Medium         ||
+195 | [Tenth Line](https://oj.leetcode.com/problems/tenth-line/) | [Shell](./Shell/tenth-line.sh)    | _O(n)_          | _O(1)_          | Easy           ||
