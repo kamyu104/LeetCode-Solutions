@@ -202,36 +202,17 @@ Shell
 --- 
 
 ##Sort
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Insert Interval]| [insert-interval.py] | _O(n)_    | _O(1)_          | Hard           |
-[Insertion Sort List]|[insertion-sort-list.py] | _O(n^2)_ | _O(1)_    | Medium         |
-[Largest Number] | [largest-number.py] | _O(nlogn)_   | _O(1)_        | Medium         |
-[Maximum Gap]   | [maximum-gap.py]| _O(n)_          | _O(n)_          | Hard           | Tricky 
-[Merge Intervals]| [merge-intervals.py] | _O(nlogn)_  | _O(1)_        | Hard           |
-[Merge Sorted Array]| [merge-sorted-array.py] | _O(n)_ | _O(1)_       | Easy           |
-[Merge Two Sorted Lists]| [merge-two-sorted-lists.py] | _O(n)_ | _O(1)_ | Easy         |
-[Sort Colors]   | [sort-colors.py] | _O(n)_         | _O(1)_          | Medium         |
-[Sort List]     | [sort-list.py]  | _O(nlogn)_      | _O(logn)_       | Medium         |
-
-[Insert Interval]:https://oj.leetcode.com/problems/insert-interval/
-[insert-interval.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insert-interval.py
-[Insertion Sort List]:https://oj.leetcode.com/problems/insertion-sort-list/
-[insertion-sort-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/insertion-sort-list.py
-[Largest Number]:https://oj.leetcode.com/problems/largest-number/
-[largest-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/largest-number.py
-[Maximum Gap]:https://oj.leetcode.com/problems/maximum-gap/
-[maximum-gap.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/maximum-gap.py
-[Merge Intervals]:https://oj.leetcode.com/problems/merge-intervals/
-[merge-intervals.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-intervals.py
-[Merge Sorted Array]:https://oj.leetcode.com/problems/merge-sorted-array/
-[merge-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-sorted-array.py
-[Merge Two Sorted Lists]:https://oj.leetcode.com/problems/merge-two-sorted-lists/
-[merge-two-sorted-lists.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/merge-two-sorted-lists.py
-[Sort Colors]:https://oj.leetcode.com/problems/sort-colors/
-[sort-colors.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sort-colors.py
-[Sort List]:https://oj.leetcode.com/problems/sort-list/
-[sort-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/sort-list.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+21| [Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)| [Python](./Python/merge-two-sorted-lists.py) | _O(n)_ | _O(1)_ | Easy         ||
+56| [Merge Intervals](https://oj.leetcode.com/problems/merge-intervals/)| [Python](./Python/merge-intervals.py) | _O(nlogn)_  | _O(1)_        | Hard           ||
+57| [Insert Interval](https://oj.leetcode.com/problems/insert-interval/)| [Python](./Python/insert-interval.py) | _O(n)_    | _O(1)_          | Hard           ||
+75| [Sort Colors](https://oj.leetcode.com/problems/sort-colors/)   | [Python](./Python/sort-colors.py) | _O(n)_         | _O(1)_          | Medium         ||
+88| [Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)| [Python](./Python/merge-sorted-array.py) | _O(n)_ | _O(1)_       | Easy           ||
+147| [Insertion Sort List](https://oj.leetcode.com/problems/insertion-sort-list/)|[Python](./Python/insertion-sort-list.py) | _O(n^2)_ | _O(1)_    | Medium         ||
+148| [Sort List](https://oj.leetcode.com/problems/sort-list/)     | [Python](./Python/sort-list.py)  | _O(nlogn)_      | _O(logn)_       | Medium         ||
+164| [Maximum Gap](https://oj.leetcode.com/problems/maximum-gap/)   | [Python](./Python/maximum-gap.py)| _O(n)_          | _O(n)_          | Hard           || Tricky 
+179| [Largest Number](https://oj.leetcode.com/problems/largest-number/) | [Python](./Python/largest-number.py) | _O(nlogn)_   | _O(1)_        | Medium         ||
 
 ---
 
