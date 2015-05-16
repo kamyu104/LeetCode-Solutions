@@ -109,42 +109,19 @@ Shell
 --- 
 
 ##Linked List
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Add Two Numbers] | [add-two-numbers.py] | _O(n)_   | _O(1)_          | Medium         |
-[Copy List with Random Pointer] | [copy-list-with-random-pointer.py] | _O(n)_   | _O(1)_          | Hard         |
-[Intersection of Two Linked Lists]| [intersection-of-two-linked-lists.py] | _O(m + n)_ | _O(1)_         | Easy           |
-[Remove Duplicates from Sorted List]| [remove-duplicates-from-sorted-list.py] | _O(n)_       | _O(1)_         | Easy           |
-[Remove Duplicates from Sorted List II]| [remove-duplicates-from-sorted-list-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
-[Remove Linked List Elements]| [remove-linked-list-elements.py] | _O(n)_       | _O(1)_         | Easy         | 
-[Reverse Linked List]| [reverse-linked-list.py] | _O(n)_       | _O(1)_         | Easy         | 
-[Reverse Linked List II]| [reverse-linked-list-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
-[Reverse Nodes in k-Group]| [reverse-nodes-in-k-group.py] | _O(n)_       | _O(1)_         | Hard         |
-[Rotate List]| [rotate-list.py]   | _O(n)_          | _O(1)_          | Medium         |  
-[Swap Nodes in Pairs]| [swap-nodes-in-pairs.py]   | _O(n)_          | _O(1)_          | Medium         |  
-
-[Add Two Numbers]:https://oj.leetcode.com/problems/add-two-numbers/
-[add-two-numbers.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/add-two-numbers.py
-[Copy List with Random Pointer]:https://oj.leetcode.com/problems/copy-list-with-random-pointer/
-[copy-list-with-random-pointer.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/copy-list-with-random-pointer.py
-[Intersection of Two Linked Lists]:https://oj.leetcode.com/problems/intersection-of-two-linked-lists/
-[intersection-of-two-linked-lists.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/intersection-of-two-linked-lists.py
-[Remove Duplicates from Sorted List]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/
-[remove-duplicates-from-sorted-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-list.py
-[Remove Duplicates from Sorted List II]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
-[remove-duplicates-from-sorted-list-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-list-ii.py
-[Remove Linked List Elements]:https://oj.leetcode.com/problems/remove-linked-list-elements/
-[remove-linked-list-elements.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-linked-list-elements.py
-[Reverse Linked List]:https://oj.leetcode.com/problems/reverse-linked-list/
-[reverse-linked-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-linked-list.py
-[Reverse Linked List II]:https://oj.leetcode.com/problems/reverse-linked-list-ii/
-[reverse-linked-list-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-linked-list-ii.py
-[Reverse Nodes in k-Group]:https://oj.leetcode.com/problems/reverse-nodes-in-k-group/
-[reverse-nodes-in-k-group.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reverse-nodes-in-k-group.py
-[Rotate List]:https://oj.leetcode.com/problems/rotate-list/
-[rotate-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/rotate-list.py
-[Swap Nodes in Pairs]:https://oj.leetcode.com/problems/swap-nodes-in-pairs/
-[swap-nodes-in-pairs.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/swap-nodes-in-pairs.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+2| [Add Two Numbers](https://oj.leetcode.com/problems/add-two-numbers/) | [Python](./Python/add-two-numbers.py) | _O(n)_   | _O(1)_          | Medium         ||
+24| [Swap Nodes in Pairs](https://oj.leetcode.com/problems/swap-nodes-in-pairs/)| [Python](./Python/swap-nodes-in-pairs.py)   | _O(n)_          | _O(1)_          | Medium         ||
+25| [Reverse Nodes in k-Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)| [Python](./Python/reverse-nodes-in-k-group.py) | _O(n)_       | _O(1)_         | Hard         ||
+61| [Rotate List](https://oj.leetcode.com/problems/rotate-list/)| [Python](./Python/rotate-list.py)   | _O(n)_          | _O(1)_          | Medium         ||  
+82| [Remove Duplicates from Sorted List II](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)| [Python](./Python/remove-duplicates-from-sorted-list-ii.py) | _O(n)_       | _O(1)_         | Medium         ||
+83| [Remove Duplicates from Sorted List](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/)| [Python](./Python/remove-duplicates-from-sorted-list.py) | _O(n)_       | _O(1)_         | Easy           ||
+92| [Reverse Linked List II](https://oj.leetcode.com/problems/reverse-linked-list-ii/)| [Python](./Python/reverse-linked-list-ii.py) | _O(n)_       | _O(1)_         | Medium         || 
+138| [Copy List with Random Pointer](https://oj.leetcode.com/problems/copy-list-with-random-pointer/) | [Python](./Python/copy-list-with-random-pointer.py) | _O(n)_   | _O(1)_          | Hard         ||
+160| [Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)| [Python](./Python/intersection-of-two-linked-lists.py) | _O(m + n)_ | _O(1)_         | Easy           ||
+203| [Remove Linked List Elements](https://oj.leetcode.com/problems/remove-linked-list-elements/)| [Python](./Python/remove-linked-list-elements.py) | _O(n)_       | _O(1)_         | Easy         || 
+206| [Reverse Linked List](https://oj.leetcode.com/problems/reverse-linked-list/)| [Python](./Python/reverse-linked-list.py) | _O(n)_       | _O(1)_         | Easy         || 
 
 --- 
 
