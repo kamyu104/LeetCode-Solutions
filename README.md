@@ -217,27 +217,14 @@ Shell
 ---
 
 ##Two Pointer
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Linked List Cycle]| [linked-list-cycle.py] | _O(n)_ | _O(1)_         | Medium         | 
-[Linked List Cycle II]| [linked-list-cycle-ii.py] | _O(n)_ | _O(1)_   | Medium         |
-[Partition List]| [partition-list.py] | _O(n)_       | _O(1)_         | Medium         | 
-[Remove Nth Node From End of List]| [remove-nth-node-from-end-of-list.py] | _O(n)_       | _O(1)_         | Easy         | 
-[Reorder List]| [reorder-list.py] | _O(n)_          |  _O(1)_         | Medium         |  
-[Two Sum II - Input array is sorted] | [two-sum-ii-input-array-is-sorted.py] | _O(n)_   | _O(1)_         | Medium         |
-
-[Linked List Cycle]:https://oj.leetcode.com/problems/linked-list-cycle/
-[linked-list-cycle.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/linked-list-cycle.py
-[Linked List Cycle II]:https://oj.leetcode.com/problems/linked-list-cycle-ii/
-[linked-list-cycle-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/linked-list-cycle-ii.py
-[Partition List]:https://oj.leetcode.com/problems/partition-list/
-[partition-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/partition-list.py
-[Remove Nth Node From End of List]:https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/
-[remove-nth-node-from-end-of-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-nth-node-from-end-of-list.py
-[Reorder List]:https://oj.leetcode.com/problems/reorder-list/
-[reorder-list.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/reorder-list.py
-[Two Sum II - Input array is sorted]:https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-[two-sum-ii-input-array-is-sorted.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/two-sum-ii-input-array-is-sorted.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+19| [Remove Nth Node From End of List](https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/)| [Python](./Python/remove-nth-node-from-end-of-list.py) | _O(n)_       | _O(1)_         | Easy         || 
+86| [Partition List](https://oj.leetcode.com/problems/partition-list/)| [Python](./Python/partition-list.py) | _O(n)_       | _O(1)_         | Medium         || 
+141| [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)| [Python](./Python/linked-list-cycle.py) | _O(n)_ | _O(1)_         | Medium         || 
+142| [Linked List Cycle II](https://oj.leetcode.com/problems/linked-list-cycle-ii/)| [Python](./Python/linked-list-cycle-ii.py) | _O(n)_ | _O(1)_   | Medium         ||
+143| [Reorder List](https://oj.leetcode.com/problems/reorder-list/)| [Python](./Python/reorder-list.py) | _O(n)_          |  _O(1)_         | Medium         ||  
+167| [Two Sum II - Input array is sorted](https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [Python](./Python/two-sum-ii-input-array-is-sorted.py) | _O(n)_   | _O(1)_         | Medium         ||
 
 ---
 
