@@ -59,75 +59,30 @@ Shell
 
 ##Array
 
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[3 Sum]         | [3sum.py]       | _O(n^2)_        | _O(1)_          | Medium         |
-[3 Sum Closest] | [3sum-closest.py]| _O(n^2)_       | _O(1)_          | Medium         |
-[Best Time to Buy and Sell Stock]| [best-time-to-buy-and-sell-stock.py] | _O(n)_ | _O(1)_ | Medium |
-[First Missing Positive]| [first-missing-positive.py] | _O(n)_ | _O(1)_ | Hard         | Tricky
-[Longest Consecutive Sequence]| [longest-consecutive-sequence.py] | _O(n)_ | _O(n)_ | Hard         | Tricky
-[Majority Element] | [majority-element.py] | _O(n)_ | _O(1)_          | Easy           |
-[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [minimum-size-subarray-sum.py] (./Python/minimum-size-subarray-sum.py) | _O(n)_ | _O(1)_ |  Medium |
-[Missing Ranges]| [missing-ranges.py] | _O(n)_      | _O(1)_          | Medium         |
-[Next Permutation]| [next-permutation.py] | _O(n)_  | _O(1)_          | Medium         | Tricky
-[Pascal's Triangle]| [pascals-triangle.py] | _O(n^2)_ | _O(n)_        | Easy           | 
-[Pascal's Triangle II]| [pascals-triangle-ii.py] | _O(n^2)_ | _O(n)_  | Easy           | 
-[Plus One]      | [plus-one.py]   | _O(n)_           | _O(1)_         | Easy           | 
-[Read N Characters Given Read4] | [read-n-characters-given-read4.py] | _O(n)_ | _O(1)_ | Easy           |
-[Read N Characters Given Read4 II - Call multiple times] | [read-n-characters-given-read4-ii-call-multiple-times.py] | _O(n)_ | _O(1)_ | Hard |
-[Remove Duplicates from Sorted Array]| [remove-duplicates-from-sorted-array.py] | _O(n)_       | _O(1)_         | Easy           |
-[Remove Duplicates from Sorted Array II]| [remove-duplicates-from-sorted-array-ii.py] | _O(n)_       | _O(1)_         | Medium         | 
-[Remove Element] | [remove-element.py] | _O(n)_      | _O(1)_         | Easy           | 
-[Rotate Array]   | [rotate-array.py] | _O(n)_        | _O(1)_         | Easy           | 
-[Rotate Image]   | [rotate-image.py] | _O(n^2)_      | _O(1)_         | Medium         | 
-[Set Matrix Zeroes] | [set-matrix-zeroes.py] | _O(m * n)_ | _O(1)_    | Medium         | 
-[Spiral Matrix] | [spiral-matrix.py] | _O(m * n)_    | _O(1)_         | Medium         |
-[Spiral Matrix II] | [spiral-matrix-ii.py] | _O(m * n)_ | _O(1)_      | Medium         | 
-
-
-[3 Sum]: https://oj.leetcode.com/problems/3sum/
-[3sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum.py
-[3 Sum Closest]: https://oj.leetcode.com/problems/3sum-closest/
-[3sum-closest.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/3sum-closest.py
-[Best Time to Buy and Sell Stock]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/
-[best-time-to-buy-and-sell-stock.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock.py
-[First Missing Positive]:https://oj.leetcode.com/problems/first-missing-positive/
-[first-missing-positive.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/first-missing-positive.py
-[Longest Consecutive Sequence]:https://oj.leetcode.com/problems/longest-consecutive-sequence/
-[longest-consecutive-sequence.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-consecutive-sequence.py
-[Majority Element]: https://oj.leetcode.com/problems/majority-element/
-[majority-element.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/majority-element.py
-[Missing Ranges]:https://oj.leetcode.com/problems/missing-ranges/
-[missing-ranges.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/missing-ranges.py
-[Next Permutation]:https://oj.leetcode.com/problems/next-permutation/
-[next-permutation.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/next-permutation.py
-[Pascal's Triangle]:https://oj.leetcode.com/problems/pascals-triangle/
-[pascals-triangle.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/pascals-triangle.py
-[Pascal's Triangle II]:https://oj.leetcode.com/problems/pascals-triangle-ii/
-[pascals-triangle-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/pascals-triangle-ii.py
-[Plus One]:https://oj.leetcode.com/problems/plus-one/
-[plus-one.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/plus-one.py
-[Read N Characters Given Read4]:https://oj.leetcode.com/problems/read-n-characters-given-read4/
-[read-n-characters-given-read4.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/read-n-characters-given-read4.py
-[Read N Characters Given Read4 II - Call multiple times]:https://oj.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/
-[read-n-characters-given-read4-ii-call-multiple-times.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/read-n-characters-given-read4-ii-call-multiple-times.py
-[Remove Duplicates from Sorted Array]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/
-[remove-duplicates-from-sorted-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-array.py
-[Remove Duplicates from Sorted Array II]:https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
-[remove-duplicates-from-sorted-array-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-duplicates-from-sorted-array-ii.py
-[Remove Element]:https://oj.leetcode.com/problems/remove-element/
-[remove-element.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/remove-element.py
-[Rotate Array]:https://oj.leetcode.com/problems/rotate-array/
-[rotate-array.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/rotate-array.py
-[Rotate Image]:https://oj.leetcode.com/problems/rotate-image/
-[rotate-image.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/rotate-image.py
-[Set Matrix Zeroes]:https://oj.leetcode.com/problems/set-matrix-zeroes/
-[set-matrix-zeroes.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/set-matrix-zeroes.py
-[Spiral Matrix]:https://oj.leetcode.com/problems/spiral-matrix/
-[spiral-matrix.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/spiral-matrix.py
-[Spiral Matrix II]:https://oj.leetcode.com/problems/spiral-matrix-ii/
-[spiral-matrix-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/spiral-matrix-ii.py
-
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+15 | [3 Sum](https://oj.leetcode.com/problems/3sum/)         | [Python](./Python/3sum.py)       | _O(n^2)_        | _O(1)_          | Medium         ||
+16 | [3 Sum Closest](https://oj.leetcode.com/problems/3sum-closest/) | [Python](./Python/3sum-closest.py)| _O(n^2)_       | _O(1)_          | Medium         ||
+26 | [Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)| [Python](./Python/remove-duplicates-from-sorted-array.py) | _O(n)_       | _O(1)_         | Easy           ||
+27 | [Remove Element](https://oj.leetcode.com/problems/remove-element/) | [Python](./Python/remove-element.py) | _O(n)_      | _O(1)_         | Easy           ||
+31 | [Next Permutation](https://oj.leetcode.com/problems/next-permutation/)| [Python](./Python/next-permutation.py) | _O(n)_  | _O(1)_          | Medium         || Tricky
+41 | [First Missing Positive](https://oj.leetcode.com/problems/first-missing-positive/)| [Python](./Python/first-missing-positive.py) | _O(n)_ | _O(1)_ | Hard         || Tricky
+48 | [Rotate Image](https://oj.leetcode.com/problems/rotate-image/)   | [Python](./Python/rotate-image.py) | _O(n^2)_      | _O(1)_         | Medium         ||
+54 | [Spiral Matrix](https://oj.leetcode.com/problems/spiral-matrix/) | [Python](./Python/spiral-matrix.py) | _O(m * n)_    | _O(1)_         | Medium         ||
+59 | [Spiral Matrix II](https://oj.leetcode.com/problems/spiral-matrix-ii/) | [Python](./Python/spiral-matrix-ii.py) | _O(m * n)_ | _O(1)_      | Medium         ||
+66 | [Plus One]([Plus One]:https://oj.leetcode.com/problems/plus-one/)      | [Python](./Python/plus-one.py)   | _O(n)_           | _O(1)_         | Easy           || 
+73 | [Set Matrix Zeroes](https://oj.leetcode.com/problems/set-matrix-zeroes/) | [Python](./Python/set-matrix-zeroes.py) | _O(m * n)_ | _O(1)_    | Medium         ||
+80 | [Remove Duplicates from Sorted Array II](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)| [Python](./Python/remove-duplicates-from-sorted-array-ii.py) | _O(n)_       | _O(1)_         | Medium         ||
+118 | [Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)| [Python](./Python/pascals-triangle.py) | _O(n^2)_ | _O(n)_        | Easy           || 
+119 | [Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)| [Python](./Python/pascals-triangle-ii.py) | _O(n^2)_ | _O(n)_  | Easy           ||
+121 | [Best Time to Buy and Sell Stock](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [Python](./Python/best-time-to-buy-and-sell-stock.py) | _O(n)_ | _O(1)_ | Medium ||
+128 | [Longest Consecutive Sequence](https://oj.leetcode.com/problems/longest-consecutive-sequence/)| [Python](./Python/longest-consecutive-sequence.py) | _O(n)_ | _O(n)_ | Hard         || Tricky
+157 | [Read N Characters Given Read4](https://oj.leetcode.com/problems/read-n-characters-given-read4/) | [Python](/Python/read-n-characters-given-read4.py) | _O(n)_ | _O(1)_ | Easy           ||
+158 | [Read N Characters Given Read4 II - Call multiple times](https://oj.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) | [Python](./Python/read-n-characters-given-read4-ii-call-multiple-times.py) | _O(n)_ | _O(1)_ | Hard ||
+163 | [Missing Ranges](https://oj.leetcode.com/problems/missing-ranges/)| [Python](./Python/missing-ranges.py) | _O(n)_      | _O(1)_          | Medium         ||
+169 | [Majority Element](https://oj.leetcode.com/problems/majority-element/) | [Python](./Python/majority-element.py) | _O(n)_ | _O(1)_          | Easy           |
+189 | [Rotate Array](https://oj.leetcode.com/problems/rotate-array/)   | [Python](./Python/rotate-array.py) | _O(n)_        | _O(1)_         | Easy           ||
+209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [minimum-size-subarray-sum.py] (./Python/minimum-size-subarray-sum.py) | _O(n)_ | _O(1)_ |  Medium ||
 
 --- 
 
