@@ -158,48 +158,21 @@ Shell
 --- 
 
 ##Hash Table
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[4 Sum]         |[4sum.py]        | _O(n^2 * p)_    | _O(n^2 * p)_    | Medium         |
-[Anagrams]      | [anagrams.py]   | _O(n)_          | _O(n)_          | Medium         |
-[Count Primes]  | [count-primes.py] | _O(n)_        | _O(n)_          | Easy           |
-[Happy Number]      | [happy-number.py]   | _O(k)_  | _O(k)_          | Easy          |
-[Longest Substring with At Most Two Distinct Characters]| [longest-substring-with-at-most-two-distinct-characters.py] | _O(n^2)_ | _O(1)_ | Hard         |
-[Longest Substring Without Repeating Characters] | [longest-substring-without-repeating-characters.py] | _O(n)_ | _O(1)_ | Medium |
-[Max Points on a Line] | [max-points-on-a-line.py] | _O(n^2)_ | _O(n)_ | Hard          |
-[Minimum Window Substring] | [minimum-window-substring.py] | _O(n)_ | _O(k)_ | Hard          |
-[Repeated DNA Sequences] | [repeated-dna-sequences.py] | _O(n)_       | _O(n)_          | Medium         |
-[Substring with Concatenation of All Words] | [substring-with-concatenation-of-all-words.py] | _O(m * n * k)_ | _O(n * k)_ | Hard          |
-[Two Sum]      | [two-sum.py]      | _O(n)_         | _O(n)_          | Medium         |
-[Two Sum III - Data structure design] | [two-sum-iii-data-structure-design.py] | _O(n)_ | _O(n)_ | Easy |
-[Valid Sudoku] | [valid-sudoku.py] | _O(n^2)_         | _O(n)_          | Easy           |
-
-[4 Sum]: https://oj.leetcode.com/problems/4sum/
-[4sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/4sum.py
-[Anagrams]:https://oj.leetcode.com/problems/anagrams/
-[anagrams.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/anagrams.py
-[Count Primes]:https://oj.leetcode.com/problems/count-primes/
-[count-primes.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/count-primes.py
-[Happy Number]:https://oj.leetcode.com/problems/happy-number/
-[happy-number.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/happy-number.py
-[Longest Substring with At Most Two Distinct Characters]:https://oj.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
-[longest-substring-with-at-most-two-distinct-characters.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-substring-with-at-most-two-distinct-characters.py
-[Longest Substring Without Repeating Characters]:https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/
-[longest-substring-without-repeating-characters.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/longest-substring-without-repeating-characters.py
-[Max Points on a Line]:https://oj.leetcode.com/problems/max-points-on-a-line/
-[max-points-on-a-line.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/max-points-on-a-line.py
-[Minimum Window Substring]:https://oj.leetcode.com/problems/minimum-window-substring/
-[minimum-window-substring.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/minimum-window-substring.py
-[Repeated DNA Sequences]:https://oj.leetcode.com/problems/repeated-dna-sequences/
-[repeated-dna-sequences.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/repeated-dna-sequences.py
-[Substring with Concatenation of All Words]:https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/
-[substring-with-concatenation-of-all-words.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/substring-with-concatenation-of-all-words.py
-[Two Sum]:https://oj.leetcode.com/problems/two-sum/
-[two-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/two-sum.py
-[Two Sum III - Data structure design]:https://oj.leetcode.com/problems/two-sum-iii-data-structure-design/
-[two-sum-iii-data-structure-design.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/two-sum-iii-data-structure-design.py
-[Valid Sudoku]:https://oj.leetcode.com/problems/valid-sudoku/
-[valid-sudoku.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/valid-sudoku.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+1| [Two Sum](https://oj.leetcode.com/problems/two-sum/)      | [Python](./Python/two-sum.py)      | _O(n)_         | _O(n)_          | Medium         ||
+3| [Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/) | [Python](./Python/longest-substring-without-repeating-characters.py) | _O(n)_ | _O(1)_ | Medium ||
+18| [4 Sum](https://oj.leetcode.com/problems/4sum/)         |[Python](./Python/4sum.py)        | _O(n^2 * p)_    | _O(n^2 * p)_    | Medium         ||
+30| [Substring with Concatenation of All Words](https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/) | [Python](./Python/substring-with-concatenation-of-all-words.py) | _O(m * n * k)_ | _O(n * k)_ | Hard          ||
+36| [Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/) | [Python](./Python/valid-sudoku.py) | _O(n^2)_         | _O(n)_          | Easy           ||
+49| [Anagrams](https://oj.leetcode.com/problems/anagrams/)     | [Python](./Python/anagrams.py)   | _O(n)_          | _O(n)_          | Medium         ||
+76| [Minimum Window Substring](https://oj.leetcode.com/problems/minimum-window-substring/) | [Python](./Python/minimum-window-substring.py) | _O(n)_ | _O(k)_ | Hard          ||
+149| [Max Points on a Line](https://oj.leetcode.com/problems/max-points-on-a-line/) | [Python](./Python/max-points-on-a-line.py) | _O(n^2)_ | _O(n)_ | Hard          ||
+159| [Longest Substring with At Most Two Distinct Characters](https://oj.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)| [Python](./Python/longest-substring-with-at-most-two-distinct-characters.py) | _O(n^2)_ | _O(1)_ | Hard         ||
+167| [Two Sum III - Data structure design](https://oj.leetcode.com/problems/two-sum-iii-data-structure-design/) | [Python](./Python/two-sum-iii-data-structure-design.py) | _O(n)_ | _O(n)_ | Easy ||
+187| [Repeated DNA Sequences](https://oj.leetcode.com/problems/repeated-dna-sequences/) | [Python](./Python/repeated-dna-sequences.py) | _O(n)_       | _O(n)_          | Medium         ||
+202| [Happy Number](https://oj.leetcode.com/problems/happy-number/)      | [Python](./Python/happy-number.py)   | _O(k)_  | _O(k)_          | Easy          ||
+204| [Count Primes](https://oj.leetcode.com/problems/count-primes/)  | [Python](./Python/count-primes.py) | _O(n)_        | _O(n)_          | Easy           ||
 
 --- 
 
