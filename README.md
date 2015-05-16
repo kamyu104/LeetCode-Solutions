@@ -313,75 +313,30 @@ Shell
 --- 
 
 ##Dynamic Programming
-Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
---------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Best Time to Buy and Sell Stock III]| [best-time-to-buy-and-sell-stock-iii.py] | _O(n)_ | _O(1)_ | Hard |
-[Best Time to Buy and Sell Stock IV]| [best-time-to-buy-and-sell-stock-iv.py] | _O(k * n)_ | _O(k)_ | Hard |
-[Climbing Stairs]| [climbing-stairs.py] | _O(n)_    | _O(1)_          | Easy           |
-[Decode Ways]   | [decode-ways.py]| _O(n)_          | _O(1)_          | Medium         |
-[Distinct Subsequences]|[distinct-subsequences.py]| _O(n^2)_ | _O(n)_ | Hard           |
-[Dungeon Game]  | [dungeon-game.py]| _O(m * n)_     | _O(m + n)_      | Hard           |
-[Edit Distance]|[edit-distance.py]| _O(m * n)_      | _O(m + n)_      | Hard           |
-[House Robber]| [house-robber.py] | _O(n)_          | _O(1)_          | Easy           |
-[Interleaving String]|[interleaving-string.py]| _O(m * n)_ | _O(m + n)_ | Hard         |
-[Maximal Rectangle]|[maximal-rectangle.py]| _O(n^2)_ | _O(n)_         | Hard           |
-[Maximum Product Subarray]|[maximum-product-subarray.py]| _O(n)_ | _O(1)_ | Medium     |
-[Maximum Subarray]|[maximum-subarray.py]| _O(n)_     | _O(1)_         | Medium         |
-[Minimum Path Sum]|[minimum-path-sum.py]| _O(m * n)_ | _O(m + n)_     | Medium         |
-[Palindrome Partitioning II] | [palindrome-partitioning-ii.py] | _O(n^2)_ | _O(n^2)_ | Hard |
-[Regular Expression Matching] | [regular-expression-matching.py] | _O(m * n)_ | _O(n)_ | Hard |
-[Scramble String] | [scramble-string.py] | _O(n^4)_ | _O(n^3)_        | Hard           |
-[Triangle]       | [triangle.py]   | _O(m * n)_      | _O(n)_         | Medium         |
-[Unique Binary Search Trees] | [unique-binary-search-trees.py] | _O(n^2)_      | _O(n)_         | Medium         |
-[Unique Paths]    | [unique-paths.py]| _O(m * n)_      | _O(m + n)_   | Medium         |
-[Unique Paths II] | [unique-paths-ii.py] |  _O(m * n)_ | _O(m + n)_   | Medium         |
-[Word Break]     | [word-break.py] |  _O(n^2)_         | _O(n)_       | Medium         |
-[Word Break II]  | [word-break-ii.py] |  _O(n^2)_      | _O(n)_       | Hard           |
-
-[Best Time to Buy and Sell Stock III]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
-[best-time-to-buy-and-sell-stock-iii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iii.py
-[Best Time to Buy and Sell Stock IV]:https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
-[best-time-to-buy-and-sell-stock-iv.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/best-time-to-buy-and-sell-stock-iv.py
-[Climbing Stairs]:https://oj.leetcode.com/problems/climbing-stairs/
-[climbing-stairs.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/climbing-stairs.py
-[Decode Ways]:https://oj.leetcode.com/problems/decode-ways/
-[decode-ways.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/decode-ways.py
-[Distinct Subsequences]:https://oj.leetcode.com/problems/distinct-subsequences/
-[distinct-subsequences.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/distinct-subsequences.py
-[Dungeon Game]:https://oj.leetcode.com/problems/dungeon-game/
-[dungeon-game.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/dungeon-game.py
-[Edit Distance]:https://oj.leetcode.com/problems/edit-distance/
-[edit-distance.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/edit-distance.py
-[House Robber]:https://oj.leetcode.com/problems/house-robber/
-[house-robber.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/house-robber.py
-[Interleaving String]:https://oj.leetcode.com/problems/interleaving-string/
-[interleaving-string.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/interleaving-string.py
-[Maximal Rectangle]:https://oj.leetcode.com/problems/maximal-rectangle/
-[maximal-rectangle.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/maximal-rectangle.py
-[Maximum Product Subarray]:https://oj.leetcode.com/problems/maximum-product-subarray/
-[maximum-product-subarray.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/maximum-product-subarray.py
-[Maximum Subarray]:https://oj.leetcode.com/problems/maximum-subarray/
-[maximum-subarray.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/maximum-subarray.py
-[Minimum Path Sum]:https://oj.leetcode.com/problems/minimum-path-sum/
-[minimum-path-sum.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/minimum-path-sum.py
-[Palindrome Partitioning II]:https://oj.leetcode.com/problems/palindrome-partitioning-ii/
-[palindrome-partitioning-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/palindrome-partitioning-ii.py
-[Regular Expression Matching]:https://oj.leetcode.com/problems/regular-expression-matching/
-[regular-expression-matching.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/regular-expression-matching.py
-[Scramble String]:https://oj.leetcode.com/problems/scramble-string/
-[scramble-string.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/scramble-string.py
-[Triangle]:https://oj.leetcode.com/problems/triangle/
-[triangle.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/triangle.py
-[Unique Binary Search Trees]:https://oj.leetcode.com/problems/unique-binary-search-trees/
-[unique-binary-search-trees.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/unique-binary-search-trees.py
-[Unique Paths]:https://oj.leetcode.com/problems/unique-paths/
-[unique-paths.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/unique-paths.py
-[Unique Paths II]:https://oj.leetcode.com/problems/unique-paths-ii/
-[unique-paths-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/unique-paths-ii.py
-[Word Break]:https://oj.leetcode.com/problems/word-break/
-[word-break.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/word-break.py
-[Word Break II]:https://oj.leetcode.com/problems/word-break-ii/
-[word-break-ii.py]:https://github.com/kamyu104/LeetCode/blob/master/Python/word-break-ii.py
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Notes
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+10| [Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/) | [Python](./Python/regular-expression-matching.py) | _O(m * n)_ | _O(n)_ | Hard ||
+53| [Maximum Subarray](https://oj.leetcode.com/problems/maximum-subarray/)|[Python](./Python/maximum-subarray.py)| _O(n)_     | _O(1)_         | Medium         ||
+62| [Unique Paths](https://oj.leetcode.com/problems/unique-paths/)    | [Python](./Python/unique-paths.py)| _O(m * n)_      | _O(m + n)_   | Medium         ||
+63| [Unique Paths II](https://oj.leetcode.com/problems/unique-paths-ii/) | [Python](./Python/unique-paths-ii.py) |  _O(m * n)_ | _O(m + n)_   | Medium         ||
+64| [Minimum Path Sum](https://oj.leetcode.com/problems/minimum-path-sum/)|[Python](./Python/minimum-path-sum.py)| _O(m * n)_ | _O(m + n)_     | Medium         ||
+70| [Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)| [Python](./Python/climbing-stairs.py) | _O(n)_    | _O(1)_          | Easy           ||
+72| [Edit Distance](https://oj.leetcode.com/problems/edit-distance/)|[Python](./Python/edit-distance.py)| _O(m * n)_      | _O(m + n)_      | Hard           ||
+85| [Maximal Rectangle](https://oj.leetcode.com/problems/maximal-rectangle/)|[Python](./Python/maximal-rectangle.py)| _O(n^2)_ | _O(n)_         | Hard           ||
+87| [Scramble String](https://oj.leetcode.com/problems/scramble-string/) | [Python](./Python/scramble-string.py) | _O(n^4)_ | _O(n^3)_        | Hard           ||
+91| [Decode Ways](https://oj.leetcode.com/problems/decode-ways/)   | [Python](./Python/decode-ways.py)| _O(n)_          | _O(1)_          | Medium         ||
+96| [Unique Binary Search Trees](https://oj.leetcode.com/problems/unique-binary-search-trees/) | [Python](./Python/unique-binary-search-trees.py) | _O(n^2)_      | _O(n)_         | Medium         ||
+97| [Interleaving String](https://oj.leetcode.com/problems/interleaving-string/)|[Python](./Python/interleaving-string.py)| _O(m * n)_ | _O(m + n)_ | Hard         ||
+115| [Distinct Subsequences](https://oj.leetcode.com/problems/distinct-subsequences/)|[Python](./Python/distinct-subsequences.py)| _O(n^2)_ | _O(n)_ | Hard           ||
+120| [Triangle](https://oj.leetcode.com/problems/triangle/)       | [Python](./Python/triangle.py)   | _O(m * n)_      | _O(n)_         | Medium         ||
+123| [Best Time to Buy and Sell Stock III](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)| | [Python](./Python/best-time-to-buy-and-sell-stock-iii.py) | _O(n)_ | _O(1)_ | Hard ||
+132| [Palindrome Partitioning II](https://oj.leetcode.com/problems/palindrome-partitioning-ii/) | [Python](./Python/palindrome-partitioning-ii.py) | _O(n^2)_ | _O(n^2)_ | Hard ||
+139| [Word Break](https://oj.leetcode.com/problems/word-break/)     | [Python](./Python/word-break.py) |  _O(n^2)_         | _O(n)_       | Medium         ||
+140| [Word Break II](https://oj.leetcode.com/problems/word-break-ii/)  | [Python](./Python/word-break-ii.py) |  _O(n^2)_      | _O(n)_       | Hard           ||
+152| [Maximum Product Subarray](https://oj.leetcode.com/problems/maximum-product-subarray/)|[Python](./Python/maximum-product-subarray.py)| _O(n)_ | _O(1)_ | Medium     ||
+174| [Dungeon Game](https://oj.leetcode.com/problems/dungeon-game/)  | [Python](./Python/dungeon-game.py)| _O(m * n)_     | _O(m + n)_      | Hard           ||
+188| [Best Time to Buy and Sell Stock IV](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)| [Python](./Python/best-time-to-buy-and-sell-stock-iv.py) | _O(k * n)_ | _O(k)_ | Hard ||
+198| [House Robber](https://oj.leetcode.com/problems/house-robber/)| [Python](./Python/house-robber.py) | _O(n)_          | _O(1)_          | Easy           ||
 
 --- 
 
