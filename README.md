@@ -278,7 +278,7 @@ Problem         |  Solution       |  Time           | Space           | Difficul
 ##Tree
 Problem         |  Solution       |  Time           | Space           | Difficulty     | Notes
 --------------- | --------------- | --------------- | --------------- | -------------- | -----
-[Add and Search Word - Data structure design ](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | [Python](./Python/add-and-search-word-data-structure-design.py) | _O(min(n, h))_ | _O(min(n, h))_ | Medium | `Trie`
+[Add and Search Word - Data structure design ](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | [C++](./C++/add-and-search-word-data-structure-design.cpp) [Python](./Python/add-and-search-word-data-structure-design.py) | _O(min(n, h))_ | _O(min(n, h))_ | Medium | `Trie`
 [Binary Tree Preorder Traversal] | [binary-tree-preorder-traversal.py] | _O(n)_| _O(1)_| Medium | `Morris Traversal` 
 [Binary Tree Inorder Traversal]  | [binary-tree-inorder-traversal.py] | _O(n)_| _O(1)_| Medium           | `Morris Traversal` 
 [Binary Tree Postorder Traversal]| [binary-tree-postorder-traversal.py] | _O(n)_| _O(1)_| Hard  | `Morris Traversal` 
