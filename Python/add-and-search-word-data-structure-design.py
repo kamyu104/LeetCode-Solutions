@@ -24,8 +24,8 @@
 class TrieNode:
     # Initialize your data structure here.
     def __init__(self):
-        self.flag = False
-        self.children = {}
+        self.is_string = False
+        self.leaves = {}
         
 class WordDictionary:
     def __init__(self):
@@ -37,10 +37,10 @@ class WordDictionary:
     def addWord(self, word):
         curr = self.root
         for c in word:
-            if not c in curr.children:
-                curr.children[c] = TrieNode()
-            curr = curr.children[c]
-        curr.flag = True
+            if not c in curr.leaves:
+                curr.leaves[c] = TrieNode()
+            curr = curr.leaves[c]
+        curr.is_string = True
 
     # @param {string} word
     # @return {boolean}
@@ -51,12 +51,12 @@ class WordDictionary:
         
     def searchHelper(self, word, start, curr):
         if start == len(word):
-            return curr.flag
-        if word[start] in curr.children:
-            return self.searchHelper(word, start+1, curr.children[word[start]])
+            return curr.is_string
+        if word[start] in curr.leaves:
+            return self.searchHelper(word, start+1, curr.leaves[word[start]])
         elif word[start] == '.':
-            for c in curr.children:
-                if self.searchHelper(word, start+1, curr.children[c]):
+            for c in curr.leaves:
+                if self.searchHelper(word, start+1, curr.leaves[c]):
                     return True
        
         return False

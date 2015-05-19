@@ -10,8 +10,8 @@
 class TrieNode:
     # Initialize your data structure here.
     def __init__(self):
-        self.flag = False
-        self.children = {}
+        self.is_string = False
+        self.leaves = {}
         
 
 class Trie:
@@ -25,10 +25,10 @@ class Trie:
     def insert(self, word):
         cur = self.root
         for c in word:
-            if not c in cur.children:
-                cur.children[c] = TrieNode()
-            cur = cur.children[c]
-        cur.flag = True
+            if not c in cur.leaves:
+                cur.leaves[c] = TrieNode()
+            cur = cur.leaves[c]
+        cur.is_string = True
 
     # @param {string} word
     # @return {boolean}
@@ -36,7 +36,7 @@ class Trie:
     def search(self, word):
         res, node = self.childSearch(word)
         if res:
-            return node.flag
+            return node.is_string
         return False        
 
     # @param {string} prefix
@@ -49,8 +49,8 @@ class Trie:
     def childSearch(self, word):
         cur = self.root
         for c in word:
-            if c in cur.children:
-                cur = cur.children[c]
+            if c in cur.leaves:
+                cur = cur.leaves[c]
             else:
                 return False, None
         return True, cur

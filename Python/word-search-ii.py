@@ -22,17 +22,17 @@
 class TrieNode:
     # Initialize your data structure here.
     def __init__(self):
-        self.flag = False
-        self.children = {}
+        self.is_string = False
+        self.leaves = {}
 
     # Inserts a word into the trie.
     def insert(self, word):
         cur = self
         for c in word:
-            if not c in cur.children:
-                cur.children[c] = TrieNode()
-            cur = cur.children[c]
-        cur.flag = True
+            if not c in cur.leaves:
+                cur.leaves[c] = TrieNode()
+            cur = cur.leaves[c]
+        cur.is_string = True
 
 class Solution:
     # @param {character[][]} board
@@ -56,12 +56,12 @@ class Solution:
         if not trie or i < 0 or i >= len(board) or j < 0 or j >= len(board[0]) or visited[i][j]:
             return
         
-        if board[i][j] not in trie.children:
+        if board[i][j] not in trie.leaves:
             return
         
         cur_word.append(board[i][j])
-        next_node = trie.children[board[i][j]]
-        if next_node.flag:
+        next_node = trie.leaves[board[i][j]]
+        if next_node.is_string:
             result["".join(cur_word)] = True
         
         visited[i][j] = True
