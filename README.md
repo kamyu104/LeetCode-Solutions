@@ -339,7 +339,7 @@ Shell
 174| [Dungeon Game](https://oj.leetcode.com/problems/dungeon-game/)  | [Python](./Python/dungeon-game.py)| _O(m * n)_     | _O(m + n)_      | Hard           ||
 188| [Best Time to Buy and Sell Stock IV](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)| [Python](./Python/best-time-to-buy-and-sell-stock-iv.py) | _O(k * n)_ | _O(k)_ | Hard ||
 198| [House Robber](https://oj.leetcode.com/problems/house-robber/)| [Python](./Python/house-robber.py) | _O(n)_          | _O(1)_          | Easy           ||
-213| [House Robber II](https://oj.leetcode.com/problems/house-robber-ii/)| [Python](./Python/house-robber-ii.py) | _O(n)_          | _O(1)_          | Medium           ||
+213| [House Robber II](https://oj.leetcode.com/problems/house-robber-ii/)| [C++](./C++/house-robber-ii.cpp) [Python](./Python/house-robber-ii.py) | _O(n)_          | _O(1)_          | Medium           ||
 
 --- 
 
