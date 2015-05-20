@@ -12,7 +12,7 @@ public:
         }
         
         return max(robRange(nums, 0, nums.size() - 1), // Include the first one of nums without the last one.
-                   robRange(nums, 1, nums.size()));     // Include the last one of nums without the first one.
+                   robRange(nums, 1, nums.size()));    // Include the last one of nums without the first one.
     }
     
     int robRange(vector<int>& nums, int start, int end) {
