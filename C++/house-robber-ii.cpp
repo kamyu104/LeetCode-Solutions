@@ -11,7 +11,8 @@ public:
             return nums[0];
         }
         
-        return max(robRange(nums, 0, nums.size() - 1), robRange(nums, 1, nums.size()));
+        return max(robRange(nums, 0, nums.size() - 1), // Include the first one of nums without the last one.
+                  robRange(nums, 1, nums.size()));     // Include the last one of nums without the first one.
     }
     int robRange(vector<int>& nums, int start, int end) {
         int num_i = nums[start], num_i_1 = 0, num_i_2 = 0;
