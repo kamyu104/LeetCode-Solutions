@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-05-16), there are `196` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-05-20), there are `197` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `212` problems.
+Here is the classification of all `213` problems.
 For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you have to buy the book from LeetCode. )
@@ -339,6 +339,7 @@ Shell
 174| [Dungeon Game](https://oj.leetcode.com/problems/dungeon-game/)  | [Python](./Python/dungeon-game.py)| _O(m * n)_     | _O(m + n)_      | Hard           ||
 188| [Best Time to Buy and Sell Stock IV](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)| [Python](./Python/best-time-to-buy-and-sell-stock-iv.py) | _O(k * n)_ | _O(k)_ | Hard ||
 198| [House Robber](https://oj.leetcode.com/problems/house-robber/)| [Python](./Python/house-robber.py) | _O(n)_          | _O(1)_          | Easy           ||
+213| [House Robber II](https://oj.leetcode.com/problems/house-robber-ii/)| [Python](./Python/house-robber-ii.py) | _O(n)_          | _O(1)_          | Medium           ||
 
 --- 
 
