@@ -29,7 +29,6 @@ class Solution:
         return s[len(s)-1:max_len-1:-1] + s
         
     def preProcess(self, s):
-        
         if not s:
             return "^$"
         string = "^"
