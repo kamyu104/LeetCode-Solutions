@@ -22,7 +22,7 @@ class Solution:
             if i + palindrome[i] > right:
                 center, right = i, i + palindrome[i]       
         
-        max_len, max_center = 0, 0
+        max_len = 0
         for i in xrange(1, len(string) - 1):
             if i - palindrome[i] == 1:
                 max_len = palindrome[i]
