@@ -84,6 +84,7 @@ Shell
 169 | [Majority Element](https://oj.leetcode.com/problems/majority-element/) | [Python](./Python/majority-element.py) | _O(n)_ | _O(1)_          | Easy           |
 189 | [Rotate Array](https://oj.leetcode.com/problems/rotate-array/)   | [Python](./Python/rotate-array.py) | _O(n)_        | _O(1)_         | Easy           ||
 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Python] (./Python/minimum-size-subarray-sum.py) | _O(n)_ | _O(1)_ |  Medium ||
+215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [C++] (./C++/kth-largest-element-in-an-array.cpp) | _O(n)_ | _O(1)_ |  Medium | EPI|
 
 --- 
 
