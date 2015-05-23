@@ -107,7 +107,7 @@ Shell
 165| [Compare Version Numbers](https://leetcode.com/problems/count-and-say/) | [Python](./Python/count-and-say.py) | _O(n)_ | _O(1)_ | Easy     ||
 186| [Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/) | [Python](./Python/reverse-words-in-a-string-ii.py) | _O(n)_ | _O(1)_ | Medium         | 📖 |
 205| [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [Python](./Python/isomorphic-strings.py) | _O(n)_ | _O(1)_       | Easy           ||    
-214| [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/) | [C++](./C++/shortest-palindrome.cpp) | _O(n)_ | _O(n)_ |  Hard || `Manacher's Algorithm`
+214| [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/) | [C++](./C++/shortest-palindrome.cpp) [Python](./Python/shortest-palindrome.py) | _O(n)_ | _O(n)_ |  Hard || `Manacher's Algorithm`
 
 --- 
 
