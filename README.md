@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-05-20), there are `197` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
+Up to date (2015-05-23), there are `199` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://oj.leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `213` problems.
+Here is the classification of all `215` problems.
 For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you have to buy the book from LeetCode. )
@@ -106,6 +106,7 @@ Shell
 165| [Compare Version Numbers](https://oj.leetcode.com/problems/count-and-say/) | [Python](./Python/count-and-say.py) | _O(n)_ | _O(1)_ | Easy     ||
 186| [Reverse Words in a String II](https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/) | [Python](./Python/reverse-words-in-a-string-ii.py) | _O(n)_ | _O(1)_ | Medium         | 📖 |
 205| [Isomorphic Strings](https://oj.leetcode.com/problems/isomorphic-strings/) | [Python](./Python/isomorphic-strings.py) | _O(n)_ | _O(1)_       | Easy           ||    
+214| [Shortest Palindromic Substring](https://oj.leetcode.com/problems/shortest-palindrome/) | [C++](./C++/shortest-palindrome.cpp) | _O(n)_ | _O(n)_ |  Hard || `Manacher's Algorithm`
 
 --- 
 
