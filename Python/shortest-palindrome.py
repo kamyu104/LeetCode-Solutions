@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# KMP algorithm
+# KMP Algorithm
 class Solution:
     # @param {string} s
     # @return {string}
