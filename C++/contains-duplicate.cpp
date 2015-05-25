@@ -8,3 +8,13 @@ public:
         return nums_set.size() != nums.size();
     }
 };
+
+// Time:  O(nlogn)
+// Space: O(1)
+class Solution2 {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        return unique(nums.begin(), nums.end()) != nums.end();
+    }
+};
