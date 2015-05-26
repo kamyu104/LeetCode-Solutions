@@ -4,37 +4,39 @@
 // BST solution.
 class Solution {
 public:
+    enum {start, end, height} ;
+    
+    struct Endpoint {
+        int height;
+        bool isStart;
+    };
+    
     vector<pair<int, int> > getSkyline(vector<vector<int> >& buildings) {
-        unordered_map<int, vector<int>> start_point_to_heights;
-        unordered_map<int, vector<int>> end_point_to_heights;
-        set<int> points; // Ordered, no duplicates.
-
+        map<int, vector<Endpoint>> point_to_height; // Ordered, no duplicates.
         for (const auto& building : buildings) {
-            start_point_to_heights[building[0]].emplace_back(building[2]);
-            end_point_to_heights[building[1]].emplace_back(building[2]);
-            points.emplace(building[0]);
-            points.emplace(building[1]);
+            point_to_height[building[start]].emplace_back(Endpoint{building[height], true});
+            point_to_height[building[end]].emplace_back(Endpoint{building[height], false});
         }
 
         vector<pair<int, int>> res;
         map<int, int> height_to_count; // BST.
         int curr_max = 0;
         // Enumerate each point in increasing order.
-        for (const auto& point : points) {
-            vector<int> start_point_heights = start_point_to_heights[point];
-            vector<int> end_point_heights = end_point_to_heights[point];
+        for (auto& kvp : point_to_height) {
+            auto& point = kvp.first;
+            auto& heights = kvp.second;
 
-            for (const auto& height : start_point_heights) {
-                ++height_to_count[height];
-            }
-
-            for (const auto& height : end_point_heights) {
-                --height_to_count[height];
-                if (height_to_count[height] == 0) {
-                    height_to_count.erase(height);
+            for (const auto& h : heights) {
+                if (h.isStart) {
+                    ++height_to_count[h.height];
+                } else {
+                    --height_to_count[h.height];
+                    if (height_to_count[h.height] == 0) {
+                        height_to_count.erase(h.height);
+                    }
                 }
             }
- 
+
             if (height_to_count.empty() || curr_max != height_to_count.crbegin()->first) {
                 curr_max = height_to_count.empty() ? 0 : height_to_count.crbegin()->first;
                 res.emplace_back(point, curr_max);
