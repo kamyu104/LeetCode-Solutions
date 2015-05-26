@@ -7,7 +7,7 @@ public:
     vector<pair<int, int> > getSkyline(vector<vector<int> >& buildings) {
         unordered_map<int, vector<int>> start_point_to_heights;
         unordered_map<int, vector<int>> end_point_to_heights;
-        set<int> points;
+        set<int> points; // Ordered, no duplicated.
 
         for (const auto& building : buildings) {
             start_point_to_heights[building[0]].emplace_back(building[2]);
@@ -17,7 +17,7 @@ public:
         }
 
         vector<pair<int, int>> res;
-        map<int, int> height_to_count;
+        map<int, int> height_to_count; // bst.
         int curr_max = 0;
         // Enumerate each point in increasing order.
         for (const auto& point : points) {
