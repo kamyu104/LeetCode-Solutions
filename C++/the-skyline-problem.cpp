@@ -10,8 +10,8 @@ public:
         set<int> points;
 
         for (int i = 0; i < buildings.size(); ++i) {
-            start_point_to_heights[buildings[i][0]].push_back(buildings[i][2]);
-            end_point_to_heights[buildings[i][1]].push_back(buildings[i][2]);
+            start_point_to_heights[buildings[i][0]].emplace_back(buildings[i][2]);
+            end_point_to_heights[buildings[i][1]].emplace_back(buildings[i][2]);
             points.emplace(buildings[i][0]);
             points.emplace(buildings[i][1]);
         }
