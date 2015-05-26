@@ -9,20 +9,20 @@ public:
         unordered_map<int, vector<int>> end_point_to_heights;
         set<int> points;
 
-        for (int i = 0; i < buildings.size(); ++i) {
-            start_point_to_heights[buildings[i][0]].emplace_back(buildings[i][2]);
-            end_point_to_heights[buildings[i][1]].emplace_back(buildings[i][2]);
-            points.emplace(buildings[i][0]);
-            points.emplace(buildings[i][1]);
+        for (const auto& building : buildings) {
+            start_point_to_heights[building[0]].emplace_back(building[2]);
+            end_point_to_heights[building[1]].emplace_back(building[2]);
+            points.emplace(building[0]);
+            points.emplace(building[1]);
         }
 
         vector<pair<int, int>> res;
         map<int, int> height_to_count;
         int curr_max = 0;
         // Enumerate each point in increasing order.
-        for (auto it = points.begin(); it != points.end(); ++it) {
-            vector<int> start_point_heights = start_point_to_heights[*it];
-            vector<int> end_point_heights = end_point_to_heights[*it];
+        for (const auto& point : points) {
+            vector<int> start_point_heights = start_point_to_heights[point];
+            vector<int> end_point_heights = end_point_to_heights[point];
 
             for (int i = 0; i < start_point_heights.size(); ++i) {
                 ++height_to_count[start_point_heights[i]];
@@ -37,7 +37,7 @@ public:
  
             if (height_to_count.empty() || curr_max != height_to_count.rbegin()->first) {
                 curr_max = height_to_count.empty() ? 0 : height_to_count.rbegin()->first;
-                res.emplace_back(*it, curr_max);
+                res.emplace_back(point, curr_max);
             }
         }
         return res;
