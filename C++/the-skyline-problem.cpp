@@ -34,7 +34,7 @@ public:
                 }
             }
  
-            if (height_to_count.size() == 0) {
+            if (height_to_count.empty()) {
                 curr_max = 0;
                 res.emplace_back(move(make_pair(*it, curr_max)));
             } else if (curr_max != height_to_count.rbegin()->first) {
