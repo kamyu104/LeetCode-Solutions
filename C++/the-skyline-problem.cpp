@@ -24,14 +24,14 @@ public:
             vector<int> start_point_heights = start_point_to_heights[point];
             vector<int> end_point_heights = end_point_to_heights[point];
 
-            for (int i = 0; i < start_point_heights.size(); ++i) {
-                ++height_to_count[start_point_heights[i]];
+            for (const auto& height : start_point_heights) {
+                ++height_to_count[height];
             }
 
-            for (int i = 0; i < end_point_heights.size(); ++i) {
-                --height_to_count[end_point_heights[i]];
-                if (height_to_count[end_point_heights[i]] == 0) {
-                    height_to_count.erase(end_point_heights[i]);
+            for (const auto& height : end_point_heights) {
+                --height_to_count[height];
+                if (height_to_count[height] == 0) {
+                    height_to_count.erase(height);
                 }
             }
  
