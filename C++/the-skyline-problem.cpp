@@ -36,10 +36,10 @@ public:
  
             if (height_to_count.empty()) {
                 curr_max = 0;
-                res.emplace_back(move(make_pair(*it, curr_max)));
+                res.emplace_back(*it, curr_max);
             } else if (curr_max != height_to_count.rbegin()->first) {
                 curr_max = height_to_count.rbegin()->first;
-                res.emplace_back(move(make_pair(*it, curr_max)));
+                res.emplace_back(*it, curr_max);
             }
         }
         return res;
