@@ -1,5 +1,6 @@
 # Time:  O(nlogn)
 # Space: O(n)
+#
 # A city's skyline is the outer contour of the silhouette formed 
 # by all the buildings in that city when viewed from a distance. 
 # Now suppose you are given the locations and height of all the 
