@@ -74,10 +74,10 @@ class Solution:
                 j += 1
             elif left_skyline[i][start] <= right_skyline[j][start]:
                 i, j = self.MergeIntersectSkylines(merged, left_skyline[i], i,\
-                                            right_skyline[j], j)
+                                                   right_skyline[j], j)
             else: # left_skyline[i][start] > right_skyline[j][start].
                 j, i = self.MergeIntersectSkylines(merged, right_skyline[j], j, \
-                                       left_skyline[i], i)
+                                                   left_skyline[i], i)
         
         # Insert the remaining skylines.
         merged += left_skyline[i:]
