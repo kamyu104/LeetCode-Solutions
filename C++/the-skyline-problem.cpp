@@ -4,8 +4,8 @@
 class Solution {
 public:
     vector<pair<int, int> > getSkyline(vector<vector<int> >& buildings) {
-        map<int, vector<int> > start_point_to_heights;
-        map<int, vector<int> > end_point_to_heights;
+        map<int, vector<int>> start_point_to_heights;
+        map<int, vector<int>> end_point_to_heights;
         set<int> points;
 
         for (int i = 0; i < buildings.size(); ++i) {
@@ -15,7 +15,7 @@ public:
             points.insert(buildings[i][1]);
         }
 
-        vector<pair<int, int> > res;
+        vector<pair<int, int>> res;
         map<int, int> height_to_count;
         int curr_max = 0;
         // Enumerate each point in increasing order.
