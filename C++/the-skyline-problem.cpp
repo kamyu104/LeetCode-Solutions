@@ -121,7 +121,7 @@ public:
             } else if (a[height] == b[height]) { // abb
                 b[start] = a[start], ++a_idx;    // abb
             } else {  // a[height] < b[height].
-                if (a[start] != b[start]) {                                           //    bb
+                if (a[start] != b[start]) {                                                 //    bb
                     merged.emplace_back(move(vector<int>{a[start], b[start], a[height]}));  // |a|bb
                 }
                 ++a_idx;
