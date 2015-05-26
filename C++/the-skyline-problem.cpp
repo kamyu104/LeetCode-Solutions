@@ -47,7 +47,7 @@ public:
 // Time:  O(nlogn)
 // Space: O(n)
 // Divide and conquer solution.
-class Solution {
+class Solution2 {
 public:
     enum {start, end, height};
     
