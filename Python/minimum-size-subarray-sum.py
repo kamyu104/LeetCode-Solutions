@@ -47,7 +47,7 @@ class Solution2:
                                     i, len(sum_from_start), \
                                     sum_from_start[i] - nums[i] + s)
             if end < len(sum_from_start):
-                min_size = min(min_size,  end  - i + 1)
+                min_size = min(min_size, end - i + 1)
         if min_size == float("inf"):
             return 0
         return min_size
