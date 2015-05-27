@@ -21,7 +21,7 @@ class InputType:
     DOT        = 4
     EXPONENT   = 5
 
-# regular expression: "^\s*[+-]?((\d+(\.\d*)?)|\.\d+)([eE][+-]?\d+)?\s*$"
+# regular expression: "^\s*[\+-]?((\d+(\.\d*)?)|\.\d+)([eE][\+-]?\d+)?\s*$"
 # automata: http://images.cnitblog.com/i/627993/201405/012016243309923.png
 class Solution:
     # @param s, a string
@@ -63,7 +63,7 @@ class Solution2:
     # @return a boolean
     def isNumber(self, s):
         import re
-        return bool(re.match("^\s*[+-]?((\d+(\.\d*)?)|\.\d+)([eE][+-]?\d+)?\s*$", s))
+        return bool(re.match("^\s*[\+-]?((\d+(\.\d*)?)|\.\d+)([eE][\+-]?\d+)?\s*$", s))
     
 if __name__ == "__main__":
     print Solution().isNumber(" 0.1 ")
