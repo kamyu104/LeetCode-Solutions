@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-05-26), there are `202` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-05-29), there are `203` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `218` problems.
+Here is the classification of all `219` problems.
 For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you have to buy the book from LeetCode. )
@@ -178,6 +178,7 @@ Shell
 202| [Happy Number](https://leetcode.com/problems/happy-number/)      | [Python](./Python/happy-number.py)   | _O(k)_  | _O(k)_          | Easy          ||
 204| [Count Primes](https://leetcode.com/problems/count-primes/)  | [Python](./Python/count-primes.py) | _O(n)_        | _O(n)_          | Easy           ||
 217| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)  | [C++](./C++/contains-duplicate.cpp) [Python](./Python/contains-duplicate.py) | _O(n)_        | _O(n)_          | Easy           ||
+219| [Contains DuplicateII](https://leetcode.com/problems/contains-duplicate-ii/)  | [C++](./C++/contains-duplicate-ii.cpp) [Python](./Python/contains-duplicate-ii.py) | _O(n)_        | _O(n)_          | Easy           ||
 
 --- 
 
