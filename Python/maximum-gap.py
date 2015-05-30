@@ -15,24 +15,25 @@
 #
 
 # bucket sort
+# Time:  O(n)
+# Space: O(n)
+
 class Solution:
      # @param numss: a list of integers
      # @return: the maximum difference
     def maximumGap(self, nums):
-        # Linear time to get unique_nums.
-        unique_nums = list(set(nums))
-        if len(unique_nums) < 2:
+        if len(nums) < 2:
             return 0
         
         # Init bucket.
-        max_val, min_val = max(unique_nums), min(unique_nums)
-        gap = (max_val - min_val) / (len(unique_nums) - 1)
+        max_val, min_val = max(nums), min(nums)
+        gap = max(1, (max_val - min_val) / (len(nums) - 1))
         bucket_size = (max_val - min_val) / gap + 1
         bucket = [{'min':float("inf"), 'max':float("-inf")} \
                     for _ in xrange(bucket_size)]
 
         # Find the bucket where the n should be put.
-        for n in unique_nums:
+        for n in nums:
             # min_val / max_val is in the first / last bucket.
             if n in (max_val, min_val):
                 continue      
@@ -53,6 +54,7 @@ class Solution:
         max_gap = max(max_gap, max_val - pre_bucket_max) 
         
         return max_gap
+
 
 
 # Time:  O(nlogn)
