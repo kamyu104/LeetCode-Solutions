@@ -16,46 +16,44 @@
 
 # bucket sort
 class Solution:
-    # @param num, a list of integer
-    # @return an integer
-    def maximumGap(self, num):
-        if len(num) < 2:
+     # @param numss: a list of integers
+     # @return: the maximum difference
+    def maximumGap(self, nums):
+        # Linear time to get unique_nums.
+        unique_nums = list(set(nums))
+        if len(unique_nums) < 2:
             return 0
         
-        unique_num = self.removeDuplicate(num)
-        
-        max_val, min_val = max(unique_num), min(unique_num)
-        gap = (max_val - min_val) / (len(unique_num) - 1)
+        # Init bucket.
+        max_val, min_val = max(unique_nums), min(unique_nums)
+        gap = (max_val - min_val) / (len(unique_nums) - 1)
         bucket_size = (max_val - min_val) / gap + 1
-        max_bucket = [float("-inf") for _ in xrange(bucket_size)]
-        min_bucket = [float("inf") for _ in xrange(bucket_size)]
+        bucket = [{'min':float("inf"), 'max':float("-inf")} \
+                    for _ in xrange(bucket_size)]
 
-        for i in unique_num:
-            if i in (max_val, min_val):
+        # Find the bucket where the n should be put.
+        for n in unique_nums:
+            # min_val / max_val is in the first / last bucket.
+            if n in (max_val, min_val):
                 continue      
-            idx = (i - min_val) / gap
-            max_bucket[idx] = max(max_bucket[idx], i)
-            min_bucket[idx] = min(min_bucket[idx], i)
+            i = (n - min_val) / gap
+            bucket[i]['min'] = min(bucket[i]['min'], n)
+            bucket[i]['max'] = max(bucket[i]['max'], n)
         
-        max_gap = 0
-        pre = min_val
+        # Count each bucket gap between the first and the last bucket.
+        max_gap, pre_bucket_max = 0, min_val
         for i in xrange(bucket_size):
-            if max_bucket[i] == float("-inf") and min_bucket[i] == float("inf"):
+            # Skip the bucket it empty.
+            if bucket[i]['min'] == float("inf") and \
+                bucket[i]['max'] == float("-inf"):
                 continue
-            max_gap = max(max_gap, min_bucket[i] - pre)
-            pre = max_bucket[i]
-        max_gap = max(max_gap, max_val - pre)
+            max_gap = max(max_gap, bucket[i]['min'] - pre_bucket_max)
+            pre_bucket_max = bucket[i]['max']
+        # Count the last bucket.
+        max_gap = max(max_gap, max_val - pre_bucket_max) 
         
         return max_gap
-    
-    def removeDuplicate(self, num):
-        dict = {}
-        unique_num = []
-        for i in num:
-            if i not in dict:
-                unique_num.append(i)
-                dict[i] = True
-        return unique_num
+
 
 # Time:  O(nlogn)
 # Space: O(n)
