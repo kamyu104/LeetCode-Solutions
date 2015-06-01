@@ -4,7 +4,7 @@
 // BST solution.
 class Solution {
 public:
-    enum {start, end, height} ;
+    enum {start, end, height};
     
     struct Endpoint {
         int height;
