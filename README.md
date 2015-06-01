@@ -4,7 +4,7 @@ LeetCode
 Up to date (2015-06-01), there are `204` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
 The number of problems is increasing recently.
 Here is the classification of all `220` problems.
-For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repo.
+For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you have to buy the book from LeetCode. )
 
