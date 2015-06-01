@@ -51,7 +51,6 @@ Shell
 ##Bit Manipulation
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-219| [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)  | [C++](./C++/contains-duplicate-ii.cpp) [Python](./Python/contains-duplicate-ii.py) | _O(n)_        | _O(n)_          | Easy           ||
 136 | [Single Number](https://leetcode.com/problems/single-number/) | [Python](./Python/single-number.py) | _O(n)_       | _O(1)_          | Medium         ||
 137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | [Python](./Python/single-number-ii.py) | _O(n)_ | _O(1)_          | Medium         ||
 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)  | [Python](./Python/reverse-bits.py) | _O(n)_        | _O(1)_          | Easy           ||
