@@ -17,17 +17,22 @@
 class Solution:
     # @return a list of strings, [s1, s2]
     def letterCombinations(self, digits):
-        lookup, result = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"], [""]
+        if not digits:
+            return []
+            
+        lookup, result = ["", "", "abc", "def", "ghi", "jkl", "mno", \
+                          "pqrs", "tuv", "wxyz"], [""]
 
-        for digit in digits:
+        for digit in reversed(digits):
             choices = lookup[int(digit)]
             m, n = len(choices), len(result)
             result.extend([result[i % n] for i in xrange(n, m * n)])    
 
             for i in xrange(m * n):
-                result[i] += choices[i / n]
+                result[i] = choices[i / n] + result[i] 
             
         return result
+
 
 # Time:  O(n * 4^n)
 # Space: O(n)
@@ -35,7 +40,10 @@ class Solution:
 class Solution2:
     # @return a list of strings, [s1, s2]
     def letterCombinations(self, digits):
-        lookup, result = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"], []
+        if not digits:
+            return []
+        lookup, result = ["", "", "abc", "def", "ghi", "jkl", "mno", \
+                          "pqrs", "tuv", "wxyz"], []
         self.letterCombinationsRecu(result, digits, lookup, "", 0)
         return result
     
