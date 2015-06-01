@@ -287,7 +287,7 @@ Shell
 ##Binary Search Tree
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-220| [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)  | [C++](./C++/contains-duplicate-iii.cpp) | _O(nlogn)_        | _O(n)_          | medium           ||
+220| [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)  | [C++](./C++/contains-duplicate-iii.cpp) | _O(nlogk)_        | _O(k)_          | medium           ||
 
 --- 
 
