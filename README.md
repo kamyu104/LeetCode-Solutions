@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-05-29), there are `203` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-06-01), there are `204` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `219` problems.
+Here is the classification of all `220` problems.
 For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you have to buy the book from LeetCode. )
@@ -26,7 +26,8 @@ Algorithms
 * [Sort](https://github.com/kamyu104/LeetCode#sort)
 * [Brute Force Search](https://github.com/kamyu104/LeetCode#brute-force-search)
 * [Divide and Conquer](https://github.com/kamyu104/LeetCode#divide-and-conquer)
-* [Binary Search](https://github.com/kamyu104/LeetCode#binary-search)
+* [Binary Search Tree](https://github.com/kamyu104/LeetCode#binary-search)
+* * [Binary Search](https://github.com/kamyu104/LeetCode#binary-search-tree)
 * [Breadth-First Search](https://github.com/kamyu104/LeetCode#breadth-first-search)
 * [Depth-First Search](https://github.com/kamyu104/LeetCode#depth-first-search)
 * [Dynamic Programming](https://github.com/kamyu104/LeetCode#dynamic-programming)
@@ -50,6 +51,7 @@ Shell
 ##Bit Manipulation
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+219| [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)  | [C++](./C++/contains-duplicate-ii.cpp) [Python](./Python/contains-duplicate-ii.py) | _O(n)_        | _O(n)_          | Easy           ||
 136 | [Single Number](https://leetcode.com/problems/single-number/) | [Python](./Python/single-number.py) | _O(n)_       | _O(1)_          | Medium         ||
 137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | [Python](./Python/single-number-ii.py) | _O(n)_ | _O(1)_          | Medium         ||
 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)  | [Python](./Python/reverse-bits.py) | _O(n)_        | _O(1)_          | Easy           ||
@@ -281,6 +283,12 @@ Shell
 153| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)         | [Python](./Python/find-minimum-in-rotated-sorted-array.py)       | _O(logn)_        | _O(1)_          | Medium         ||
 154| [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)      | [Python](./Python/find-minimum-in-rotated-sorted-array-ii.py)       | _O(logn)_ ~ _O(n)_        | _O(1)_          | Hard         ||
 162| [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | [Python](./Python/find-peak-element.py)        | _O(logn)_       | _O(1)_          | Medium         ||
+
+-- 
+##Binary Search Tree
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+220| [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)  | [C++](./C++/contains-duplicate-iii.cpp) | _O(nlogn)_        | _O(n)_          | medium           ||
 
 --- 
 
