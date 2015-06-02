@@ -4,6 +4,10 @@
 class Solution {
 public:
     bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t) {
+        if (k < 0 || t < 0) {
+            return false;
+        }
+        
         queue<int64_t> window;
         multiset<int64_t> bst;
         for (int i = 0; i < nums.size(); ++i) {
