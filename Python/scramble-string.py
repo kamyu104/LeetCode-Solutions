@@ -47,7 +47,7 @@ class Solution:
     def isScramble(self, s1, s2):
         if not s1 or not s2 or len(s1) != len(s2):
             return False
-        if not s1:
+        if s1 == "":
             return True
         result = [[[False for j in xrange(len(s2))] for i in xrange(len(s1))] for n in xrange(len(s1) + 1)]
         for i in xrange(len(s1)):
