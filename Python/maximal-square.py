@@ -24,7 +24,6 @@ class Solution:
         # DP table stores (h, w) for each (i, j).
         table = [[[0, 0] for j in xrange(len(matrix[0]))] \
                          for i in xrange(len(matrix))]
-                         
         for i in reversed(xrange(len(matrix))):
             for j in reversed(xrange(len(matrix[i]))):
                 # Find the largest h such that (i, j) to (i + h - 1, j) are feasible.
