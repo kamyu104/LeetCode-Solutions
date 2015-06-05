@@ -37,7 +37,7 @@ class Solution:
             for word in cur:
                 visited.add(word)
                 
-            next = set([])
+            next = set()
             for word in cur:
                 for i in xrange(len(word)):
                     for j in 'abcdefghijklmnopqrstuvwxyz':
