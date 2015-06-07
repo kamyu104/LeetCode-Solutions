@@ -38,7 +38,7 @@ public:
     }
 
     // Check if the nth node exist.
-    bool exist(TreeNode *root, int n ) {
+    bool exist(TreeNode *root, int n) {
         int k = 1;
         while (k <= n) {
             k <<= 1;
