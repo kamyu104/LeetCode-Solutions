@@ -282,6 +282,7 @@ Shell
 153| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)         | [Python](./Python/find-minimum-in-rotated-sorted-array.py)       | _O(logn)_        | _O(1)_          | Medium         ||
 154| [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)      | [Python](./Python/find-minimum-in-rotated-sorted-array-ii.py)       | _O(logn)_ ~ _O(n)_        | _O(1)_          | Hard         ||
 162| [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | [Python](./Python/find-peak-element.py)        | _O(logn)_       | _O(1)_          | Medium         ||
+222| [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) | [Python](./Python/count-complete-tree-nodes.py)        | _O((logn)^2)_       | _O(1)_          | Medium         ||
 
 -- 
 ##Binary Search Tree
