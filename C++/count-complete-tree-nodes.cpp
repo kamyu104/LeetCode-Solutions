@@ -16,14 +16,14 @@ public:
         if (root == nullptr) {
             return 0;
         }
-        
+
         TreeNode *p = root;
         int level = 0;
         while (p->left != nullptr) {
             p = p->left;
             ++level;
         }
-        
+
         // Binary search.
         int left = pow(2, level), right = pow(2, level + 1);
         while (left < right) {
@@ -36,7 +36,7 @@ public:
         }
         return left - 1;
     }
-    
+
     // Check if the nth node exist.
     bool exist(TreeNode *root, int n ){
         int k = 1;
@@ -44,7 +44,7 @@ public:
             k <<= 1;
         }
         k >>= 2;
-        
+
         TreeNode *node = root;
         while (k > 0) {
             if ((n & k) == 0) {
