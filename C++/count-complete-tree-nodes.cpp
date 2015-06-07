@@ -17,10 +17,10 @@ public:
             return 0;
         }
 
-        TreeNode *p = root;
+        TreeNode *node = root;
         int level = 0;
-        while (p->left != nullptr) {
-            p = p->left;
+        while (node->left != nullptr) {
+            node = node->left;
             ++level;
         }
 
