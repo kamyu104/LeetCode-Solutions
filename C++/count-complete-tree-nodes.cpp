@@ -45,15 +45,15 @@ public:
         }
         k >>= 2;
         
-        TreeNode *p = root;
+        TreeNode *node = root;
         while (k > 0) {
             if ((n & k) == 0) {
-                p = p->left;
+                node = node->left;
             } else {
-                p = p->right;
+                node = node->right;
             }
             k >>= 1;
         }
-        return p != nullptr;
+        return node != nullptr;
     }
 };
