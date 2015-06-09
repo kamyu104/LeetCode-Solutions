@@ -11,7 +11,7 @@ public:
         const int m = A.size(), n = A[0].size();
         vector<vector<int>> size(2, vector<int>(n, 0));
         int max_size = 0;
-        
+
         for (int j = 0; j < n; ++j) {
             size[0][j] = A[0][j] - '0';
             max_size = max(max_size, size[0][j]);
@@ -45,7 +45,7 @@ public:
         const int m = A.size(), n = A[0].size();
         vector<vector<int>> size(m, vector<int>(n, 0));
         int max_size = 0;
-        
+
         for (int j = 0; j < n; ++j) {
             size[0][j] = A[0][j] - '0';
             max_size = max(max_size, size[0][j]);
@@ -75,12 +75,12 @@ public:
     struct MaxHW {
         int h, w;
     };
-    
+
     int maximalSquare(vector<vector<char>>& A) {
         if (A.empty()) {
             return 0;
         }
-        
+
         // DP table stores (h, w) for each (i, j).
         vector<vector<MaxHW>> table(A.size(), vector<MaxHW>(A.front().size()));
         for (int i = A.size() - 1; i >= 0; --i) {
@@ -93,7 +93,7 @@ public:
                                   : MaxHW{0, 0};
             }
         }
-        
+
         // A table stores the length of largest square for each (i, j).
         vector<vector<int>> s(A.size(), vector<int>(A.front().size(), 0));
         int max_square_area = 0;
