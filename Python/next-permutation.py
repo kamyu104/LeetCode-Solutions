@@ -35,9 +35,9 @@ class Solution:
 
 if __name__ == "__main__":
     num = [1, 4, 3, 2]
-    num = Solution().nextPermutation(num)
+    Solution().nextPermutation(num)
     print num
-    num = Solution().nextPermutation(num)
+    Solution().nextPermutation(num)
     print num
-    num = Solution().nextPermutation(num)
+    Solution().nextPermutation(num)
     print num
