@@ -17,11 +17,6 @@ class Solution:
     # @param {integer[]} nums
     # @return {void} Do not return anything, modify nums in-place instead.
     def nextPermutation(self, num):
-        num = self.nextPermutation2(num)
-        
-    # @param num, a list of integer
-    # @return a list of integer
-    def nextPermutation2(self, num):
         k, l = -1, 0
         for i in xrange(len(num) - 1):
             if num[i] < num[i + 1]:
