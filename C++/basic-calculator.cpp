@@ -45,7 +45,6 @@ public:
         operands.pop();
         const char op = operators.top();
         operators.pop();
-
         if (op == '+') {
             operands.push(left + right);
         } else if (op == '-') {
