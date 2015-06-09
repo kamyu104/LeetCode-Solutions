@@ -1,6 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
+// Support +, -, *, /.
 class Solution {
 public:
     int calculate(string s) {
@@ -59,6 +60,7 @@ public:
 
 // Time:  O(n)
 // Space: O(n)
+// Only support +, -.
 class Solution2 {
 public:
     int calculate(string s) {
