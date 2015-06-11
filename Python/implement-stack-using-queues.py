@@ -62,6 +62,7 @@ class Stack:
     def empty(self):
         return self.q_.empty()
 
+
 # Time: push: O(1), pop: O(n), top: O(1)
 # Space: O(n)
 class Stack2:
