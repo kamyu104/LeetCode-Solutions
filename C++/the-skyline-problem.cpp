@@ -37,8 +37,10 @@ public:
                 }
             }
 
-            if (height_to_count.empty() || curr_max != height_to_count.crbegin()->first) {
-                curr_max = height_to_count.empty() ? 0 : height_to_count.crbegin()->first;
+            if (height_to_count.empty() ||
+                curr_max != height_to_count.crbegin()->first) {
+                curr_max = height_to_count.empty() ?
+                           0 : height_to_count.crbegin()->first;
                 res.emplace_back(point, curr_max);
             }
         }
