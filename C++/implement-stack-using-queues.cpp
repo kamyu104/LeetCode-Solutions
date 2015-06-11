@@ -7,9 +7,8 @@ public:
     
     // Push element x onto stack.
     void push(int x) {  // O(n)
-        int n = q.size();
         q.emplace(x);
-        for (; n > 0; --n) {
+        for (int i = 0; i < q.size() - 1; ++i) {
             q.emplace(q.front());
             q.pop();
         }
