@@ -188,7 +188,7 @@ Shell
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 146| [LRU Cache](https://leetcode.com/problems/lru-cache/)     | [Python](./Python/lru-cache.py)  | _O(1)_          | _O(n)_          | Hard         ||
-225| [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)     | [Python](./Python/implement-stack-using-queues.py)  | Push: _O(n)_, Pop: _O(1)_, Top: _O(1)_ | _O(n)_          | Medium         ||
+225| [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)     | [C++](./C++/implement-stack-using-queues.cpp) [Python](./Python/implement-stack-using-queues.py)  | Push: _O(n)_, Pop: _O(1)_, Top: _O(1)_ | _O(n)_          | Medium         ||
 
 --- 
 
