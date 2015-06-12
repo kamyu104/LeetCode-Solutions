@@ -17,7 +17,7 @@ class Solution:
         max_points = 0
         for i, start in enumerate(points):
             slope_count, same, current_max = {}, 1, 0
-            for j in range(i + 1, len(points)):
+            for j in xrange(i + 1, len(points)):
                 end = points[j]
                 if start.x == end.x and start.y == end.y:
                     same += 1
