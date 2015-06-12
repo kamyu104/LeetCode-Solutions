@@ -68,10 +68,9 @@ class Solution3 {
 public:
     TreeNode* invertTree(TreeNode* root) {
         if (root != nullptr) {
-          TreeNode *left = root->left;
-          TreeNode *right = root->right;
-          root->left = invertTree(right);
-          root->right = invertTree(left);
+            swap(root->left, root->right);
+            invertTree(root->left);
+            invertTree(root->right);
         }
         return root;
     }
