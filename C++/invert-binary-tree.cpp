@@ -13,7 +13,7 @@
 
 // Time:  O(n)
 // Space: O(w), w is the max number of nodes of the levels.
-// BFS solution
+// BFS solution.
 class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
