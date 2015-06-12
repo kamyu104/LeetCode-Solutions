@@ -62,6 +62,7 @@ class Solution:
                     nodes.push(node.right)
         
         return root
+
   
 # Time:  O(n)
 # Space: O(h)
@@ -82,6 +83,7 @@ class Solution2:
                     nodes.append(node.right)
         
         return root
+ 
   
 # Time:  O(n)
 # Space: O(h)
