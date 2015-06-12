@@ -16,7 +16,7 @@ class Solution:
     def maxPoints(self, points):
         max_points = 0
         for i, start in enumerate(points):
-            slope_count, same, current_max = {}, 1, 0
+            slope_count, same = {}, 1
             for j in xrange(i + 1, len(points)):
                 end = points[j]
                 if start.x == end.x and start.y == end.y:
@@ -29,11 +29,12 @@ class Solution:
                         slope_count[slope] = 1
                     else:
                         slope_count[slope] += 1
-                        
+            
+            current_max = same            
             for slope in slope_count:
                 current_max = max(current_max, slope_count[slope] + same)
                 
-            max_points = max(max_points, current_max, same)
+            max_points = max(max_points, current_max)
             
         return max_points
 
