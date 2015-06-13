@@ -9,11 +9,20 @@ public:
                 return s;
             }
             string rev_s(s.crbegin(), s.crend());
+            // Assume s is (Palindrome)abc,
+            // A would be (Palindrome)abccba(Palindrome).
             string A = s + rev_s;
             vector<int> pattern(move(getPrefix(A)));
+            // pattern.back() would be:
+            // (Palindrome)abc
+            //            ^
+            // pattern.back() + 1 would be:
+            // (Palindrome)abc
+            //             ^
+            // Get non palindrome part of s.
             string non_palindrome = s.substr(pattern.back() + 1);
             reverse(non_palindrome.begin(), non_palindrome.end());
-            return non_palindrome + s;
+            return non_palindrome + s;  // cba(Palindrome)abc.
         }
         
 private:
@@ -69,7 +78,7 @@ public:
                 }
             }
             
-            // Assume s is (Palindrome)abc
+            // Assume s is (Palindrome)abc.
             string ans = s.substr(max_len); // abc.
             reverse(ans.begin(), ans.end()); // cba.
             ans.append(s); // cba(Palindrome)abc.
