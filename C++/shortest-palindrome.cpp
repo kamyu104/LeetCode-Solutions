@@ -12,15 +12,15 @@ public:
             // Assume s is (Palindrome)abc,
             // A would be (Palindrome)abccba(Palindrome).
             string A = s + rev_s;
-            vector<int> pattern(move(getPrefix(A)));
-            // pattern.back() would be:
+            vector<int> prefix(move(getPrefix(A)));
+            // prefix.back() would be:
             // (Palindrome)abc
             //            ^
-            // pattern.back() + 1 would be:
+            // prefix.back() + 1 would be:
             // (Palindrome)abc
             //             ^
             // Get non palindrome part of s.
-            string non_palindrome = s.substr(pattern.back() + 1);
+            string non_palindrome = s.substr(prefix.back() + 1);
             reverse(non_palindrome.begin(), non_palindrome.end());
             return non_palindrome + s;  // cba(Palindrome)abc.
         }
