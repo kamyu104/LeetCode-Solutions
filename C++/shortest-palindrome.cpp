@@ -13,10 +13,10 @@ public:
             // A would be (Palindrome)abccba(Palindrome).
             string A = s + rev_s;
             vector<int> prefix(move(getPrefix(A)));
-            // prefix.back() would be:
-            // (Palindrome)abc
+            // prefix.back() of A would be:
+            // (Palindrome)abccba(Palindrome)
             //            ^
-            // prefix.back() + 1 would be:
+            // prefix.back() + 1 of s would be:
             // (Palindrome)abc
             //             ^
             // Get non palindrome part of s.
