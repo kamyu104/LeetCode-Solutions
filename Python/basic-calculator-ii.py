@@ -32,7 +32,7 @@ class Solution:
             elif s[i] == '+' or s[i] == '-':
                 while operators and \
                       (operators[-1] == '*' or operators[-1] == '/'):
-                     self.compute(operands, operators)
+                    self.compute(operands, operators)
                 operators.append(s[i])
             elif s[i] == '(':
                 while operators[-1] != ')':
