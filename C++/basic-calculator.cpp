@@ -5,7 +5,7 @@
 class Solution {
 public:
     int calculate(string s) {
-        stack<int> operands;
+        stack<int64_t> operands;
         stack<char> operators;
         string operand;
         for (int i = s.length() - 1; i >= 0; --i) {
@@ -13,7 +13,7 @@ public:
                 operand.push_back(s[i]);
                 if (i == 0 || !isdigit(s[i - 1])) {
                     reverse(operand.begin(), operand.end());
-                    operands.emplace(stoi(operand));
+                    operands.emplace(stol(operand));
                     operand.clear();
                 }
             } else if (s[i] == ')' || s[i] == '*' ||
@@ -39,10 +39,10 @@ public:
         return operands.top();
     }
 
-    void compute(stack<int>& operands, stack<char>& operators) {
-        const int left = operands.top();
+    void compute(stack<int64_t>& operands, stack<char>& operators) {
+        const int64_t left = operands.top();
         operands.pop();
-        const int right = operands.top();
+        const int64_t right = operands.top();
         operands.pop();
         const char op = operators.top();
         operators.pop();
