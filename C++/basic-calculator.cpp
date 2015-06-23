@@ -47,13 +47,13 @@ public:
         const char op = operators.top();
         operators.pop();
         if (op == '+') {
-            operands.push(left + right);
+            operands.emplace(left + right);
         } else if (op == '-') {
-            operands.push(left - right);
+            operands.emplace(left - right);
         } else if (op == '*') {
-            operands.push(left * right);
+            operands.emplace(left * right);
         } else if (op == '/') {
-            operands.push(left / right);
+            operands.emplace(left / right);
         }
     }
 };
@@ -98,9 +98,9 @@ public:
         const char op = operators.top();
         operators.pop();
         if (op == '+') {
-            operands.push(left + right);
+            operands.emplace(left + right);
         } else if (op == '-') {
-            operands.push(left - right);
+            operands.emplace(left - right);
         }
     } 
 };
