@@ -12,14 +12,14 @@ public:
     };
     
     vector<pair<int, int> > getSkyline(vector<vector<int> >& buildings) {
-        map<int, vector<Endpoint>> point_to_height; // Ordered, no duplicates.
+        map<int, vector<Endpoint>> point_to_height;  // Ordered, no duplicates.
         for (const auto& building : buildings) {
             point_to_height[building[start]].emplace_back(Endpoint{building[height], true});
             point_to_height[building[end]].emplace_back(Endpoint{building[height], false});
         }
 
         vector<pair<int, int>> res;
-        map<int, int> height_to_count; // BST.
+        map<int, int> height_to_count;  // BST.
         int curr_max = 0;
         // Enumerate each point in increasing order.
         for (const auto& kvp : point_to_height) {
@@ -122,8 +122,8 @@ public:
                 } else {        // aaa
                     ++b_idx;    // abb
                 }
-            } else if (a[height] == b[height]) { // abb
-                b[start] = a[start], ++a_idx;    // abb
+            } else if (a[height] == b[height]) {  // abb
+                b[start] = a[start], ++a_idx;     // abb
             } else {  // a[height] < b[height].
                 if (a[start] != b[start]) {                                                 //    bb
                     merged.emplace_back(move(vector<int>{a[start], b[start], a[height]}));  // |a|bb
