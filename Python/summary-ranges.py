@@ -17,22 +17,18 @@ class Solution:
             return ranges
 
         start, end = nums[0], nums[0]
-        for num in nums:
-            if num > end + 1:
-                self.add_range(start, end, ranges)
-                start, end = num, num
+        for i in xrange(1, len(nums) + 1):
+            if i < len(nums) and nums[i] == end + 1:
+                end = nums[i]
             else:
-                end = num
-            if num == nums[-1]:
-                self.add_range(start, end, ranges)
+                interval = `start`
+                if start != end:
+                    interval += "->{}".format(end)
+                ranges.append(interval)
+                if i < len(nums):
+                    start = end = nums[i]
 
         return ranges
-    
-    def add_range(self, start, end, ranges):
-        if start != end:
-            ranges.append("{}->{}".format(start, end))
-        else:
-            ranges.append("{}".format(start))
 
 # Time:  O(n)
 # Space: O(1)
