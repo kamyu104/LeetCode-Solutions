@@ -23,7 +23,7 @@ class Solution:
             else:
                 interval = `start`
                 if start != end:
-                    interval += "->{}".format(end)
+                    interval += "->" + `end`
                 ranges.append(interval)
                 if i < len(nums):
                     start = end = nums[i]
