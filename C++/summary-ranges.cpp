@@ -10,27 +10,19 @@ public:
         }
 
         int start = nums[0], end = nums[0];
-        for (const auto& num : nums) {
-            if (num > end + 1) {
-                add_range(start, end, &ranges);
-                start = end = num;
-            } else {
-                end = num;
-            }
-            if (num == nums.back()) {
-                add_range(start, end, &ranges);
+        for (int i = 1; i <= nums.size(); ++i) {
+            if (i < nums.size() && nums[i] == end + 1) {
+                end = nums[i];
+            } else  {
+                string range = to_string(start);
+                if (start != end) {
+                    range.append("->" + to_string(end));
+                }
+                ranges.emplace_back(range);
+                start = end = nums[i];
             }
         }
 
         return ranges;
-    }
-    
-    void add_range(const int start, const int end,
-                   vector<string> *ranges) {
-        if (start != end) {
-            ranges->emplace_back(to_string(start) + "->" + to_string(end));
-        } else {
-            ranges->emplace_back(to_string(start));
-        }
     }
 };
