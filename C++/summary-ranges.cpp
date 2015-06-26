@@ -19,7 +19,9 @@ public:
                     range.append("->" + to_string(end));
                 }
                 ranges.emplace_back(range);
-                start = end = nums[i];
+                if (i < nums.size()) {
+                    start = end = nums[i];
+                }
             }
         }
 
