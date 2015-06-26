@@ -33,3 +33,12 @@ class Solution:
             ranges.append("{}->{}".format(start, end))
         else:
             ranges.append("{}".format(start))
+
+# Time:  O(n)
+# Space: O(1)
+class Solution2:
+    # @param {integer[]} nums
+    # @return {string[]}
+    def summaryRanges(self, nums):
+        return [re.sub('->.*>', '->', '->'.join(`n` for _, n in g))
+            for _, g in itertools.groupby(enumerate(nums), lambda (i, n): n-i)]
