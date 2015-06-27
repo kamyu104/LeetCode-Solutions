@@ -21,9 +21,9 @@ class Solution:
             if i < len(nums) and nums[i] == end + 1:
                 end = nums[i]
             else:
-                interval = `start`
+                interval = str(start)
                 if start != end:
-                    interval += "->" + `end`
+                    interval += "->" + str(end)
                 ranges.append(interval)
                 if i < len(nums):
                     start = end = nums[i]
