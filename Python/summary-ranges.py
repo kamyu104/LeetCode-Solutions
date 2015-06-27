@@ -31,7 +31,7 @@ class Solution:
         return ranges
 
 # Time:  O(n)
-# Space: O(1)
+# Space: O(n)
 class Solution2:
     # @param {integer[]} nums
     # @return {string[]}
