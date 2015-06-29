@@ -23,10 +23,10 @@
 #
 
 class Solution:
-    # @param grid, a list of list of characters
-    # @return an integer
+    # @param {boolean[][]} grid a boolean 2D matrix
+    # @return {int} an integer
     def numIslands(self, grid):
-        if grid == []:
+        if not grid:
             return 0
     
         row = len(grid)
@@ -36,14 +36,14 @@ class Solution:
         count = 0
         for i in xrange(row):
             for j in xrange(col):
-                if grid[i][j] == '1' and not used[i][j]:
+                if grid[i][j] == 1 and not used[i][j]:
                     self.dfs(grid, used, row, col, i, j)
                     count += 1
         return count
 
     def dfs(self, grid, used, row, col, x, y):
-        if grid[x][y] == '0' or used[x][y]:
-            return 0
+        if grid[x][y] == 0 or used[x][y]:
+            return
         used[x][y] = True
     
         if x != 0:
