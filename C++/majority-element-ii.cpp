@@ -39,10 +39,10 @@ public:
             }
         }
 
-        // Selects the integer which occurs > n / k times.
+        // Selects the integer which occurs > [n / k] times.
         vector<int> ret;
         for (const pair<int, int>& it : hash) {
-            if (it.second > static_cast<double>(n) / k) {
+            if (it.second > n / k) {
                 ret.emplace_back(it.first);
             }
         }
