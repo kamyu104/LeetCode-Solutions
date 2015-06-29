@@ -35,7 +35,7 @@ class Solution:
             if i in hash:
                 hash[i] += 1
 
-        # Selects the integer which occurs > n / k times.
+        # Selects the integer which occurs > [n / k] times.
         ret = []
         for i in hash.keys():
             if hash[i] > n / k:
