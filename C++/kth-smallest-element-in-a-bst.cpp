@@ -1,4 +1,4 @@
-// Time:  O(min(h, k))
+// Time:  O(max(h, k))
 // Space: O(min(h, k))
 
 /**
@@ -38,7 +38,7 @@ public:
     }
 };
  
-// Time:  O(min(h, k))
+// Time:  O(max(h, k))
 // Space: O(h)
 class Solution2 {
 public:
