@@ -1,4 +1,4 @@
-# Time:  O(min(h, k))
+# Time:  O(max(h, k))
 # Space: O(h)
 
 # Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
