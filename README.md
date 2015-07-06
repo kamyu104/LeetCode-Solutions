@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-07-02), there are `214` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-07-06), there are `215` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `230` problems.
+Here is the classification of all `231` problems.
 For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you have to buy the book from LeetCode. )
@@ -56,6 +56,7 @@ Shell
 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)  | [Python](./Python/reverse-bits.py) | _O(n)_        | _O(1)_          | Easy           ||
 191  |[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [Python](./Python/number-of-1-bits.py) | _O(m)_ | _O(1)_          | Easy           ||
 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | [Python](./Python/bitwise-and-of-numbers-range.py) | _O(1)_ | _O(1)_ | Medium ||
+231 | [Power of Two](https://leetcode.com/problems/power-of-two/) | [C++](./C++/power-of-two.cpp) [Python](./Python/power-of-two.py) | _O(1)_ | _O(1)_ | Easy | LintCode |
 
 --- 
 
