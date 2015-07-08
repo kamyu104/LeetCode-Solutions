@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-07-07), there are `216` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-07-07), there are `217` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `232` problems.
+Here is the classification of all `233` problems.
 For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you have to buy the book from LeetCode. )
@@ -215,6 +215,7 @@ Shell
 171| [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | [Python](./Python/excel-sheet-column-number.py) | _O(n)_ | _O(1)_ | Easy  ||
 172| [Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | [Python](./Python/factorial-trailing-zeroes.py)  | _O(logn)_ | _O(1)_ | Easy         ||
 223| [Rectangle Area](https://leetcode.com/problems/rectangle-area/) | [C++](./C++/rectangle-area.cpp)  [Python](./Python/rectangle-area.py)  | _O(1)_ | _O(1)_ | Easy         ||
+233| [Number of Digit One](https://leetcode.com/problems/number-of-digit-one/) | [C++](./C++/number-of-digit-one.cpp)  [Python](./Python/number-of-digit-one.py)  | _O(logn)_ | _O(1)_ | Medium        | CTCI, LintCode|
 
 --- 
 
