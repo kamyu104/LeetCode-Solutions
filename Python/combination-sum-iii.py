@@ -1,4 +1,4 @@
-# Time:  O(C(n, k))
+# Time:  O(k * C(n, k))
 # Space: O(k)
 #
 # Find all possible combinations of k numbers that add up to a number n,
