@@ -1,4 +1,4 @@
-# Time:  O(n^m)
+# Time:  O(m * n^m)
 # Space: O(m)
 #
 # Given a set of candidate numbers (C) and a target number (T), 
@@ -27,9 +27,11 @@ class Solution:
     
     def combinationSumRecu(self, candidates, result, start, intermediate, target):
         if target == 0:
-            result.append(intermediate)
+            result.append(list(intermediate))
         while start < len(candidates) and candidates[start] <= target:
-            self.combinationSumRecu(candidates, result, start, intermediate + [candidates[start]], target - candidates[start])
+            intermediate.append(candidates[start])
+            self.combinationSumRecu(candidates, result, start, intermediate, target - candidates[start])
+            intermediate.pop()
             start += 1
 
 if __name__ == "__main__":
