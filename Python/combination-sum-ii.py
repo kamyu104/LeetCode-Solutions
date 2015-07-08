@@ -1,5 +1,5 @@
-# Time:  O(m * C(n, m))
-# Space: O(m)
+# Time:  O(k * C(n, k))
+# Space: O(k)
 # 
 # Given a collection of candidate numbers (C) and a target number (T), 
 # find all unique combinations in C where the candidate numbers sums to T.
