@@ -17,11 +17,11 @@ class Solution:
     # @param {ListNode} head
     # @return {boolean}
     def isPalindrome(self, head):
-        # Reverse the first half list.
         reverse, fast = None, head
+        # Reverse the first half part of the list.
         while fast and fast.next:
             fast = fast.next.next
-            reverse, reverse.next, head = head, reverse, head.next
+            head.next, reverse, head = reverse, head, head.next
 
         # If the number of the nodes is odd,
         # set the head of the tail list to the next of the median node.
@@ -32,7 +32,7 @@ class Solution:
         is_palindrome = True
         while reverse:
             is_palindrome = is_palindrome and reverse.val == tail.val
-            head, head.next, reverse = reverse, head, reverse.next
+            reverse.next, head, reverse = head, reverse, reverse.next
             tail = tail.next
 
         return is_palindrome
