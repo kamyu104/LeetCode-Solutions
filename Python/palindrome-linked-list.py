@@ -17,7 +17,7 @@ class Solution:
     # @param {ListNode} head
     # @return {boolean}
     def isPalindrome(self, head):
-        # Reverse the first half part of the list.
+        # Reverse the first half list.
         reverse, fast = None, head
         while fast and fast.next:
             fast = fast.next.next
