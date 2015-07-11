@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-07-10), there are `218` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-07-11), there are `219` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `234` problems.
+Here is the classification of all `235` problems.
 For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you have to buy the book from LeetCode. )
@@ -167,7 +167,6 @@ Shell
 211 | [Add and Search Word - Data structure design ](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | [C++](./C++/add-and-search-word-data-structure-design.cpp) [Python](./Python/add-and-search-word-data-structure-design.py) | _O(min(n, h))_ | _O(min(n, h))_ | Medium || Trie, DFS
 212| [Word Search II](https://leetcode.com/problems/word-search-ii/) | [C++](./C++/word-search-ii.cpp) [Python](./Python/word-search-ii.py) | _O(m * n * l)_ | _O(l)_  | Hard         | LintCode | Trie, DFS
 226| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [C++](./C++/invert-binary-tree.cpp) [Python](./Python/invert-binary-tree.py) | _O(n)_ | _O(h)_, _O(w)_ | Easy ||
-230 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [C++](./C++/kth-smallest-element-in-a-bst.cpp) [Python](./Python/kth-smallest-element-in-a-bst.py) | _O(max(h, k))_ | _O(min(h, k))_ | Medium ||
 
 --- 
 
@@ -301,6 +300,8 @@ Shell
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 220| [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)  | [C++](./C++/contains-duplicate-iii.cpp) [Python](./Python/contains-duplicate-iii.py) | _O(nlogk)_        | _O(k)_          | medium           ||
+230 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [C++](./C++/kth-smallest-element-in-a-bst.cpp) [Python](./Python/kth-smallest-element-in-a-bst.py) | _O(max(h, k))_ | _O(min(h, k))_ | Medium ||
+235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [C++](./C++/lowest-common-ancestor-of-a-binary-search-tree.cpp) [Python](./Python/lowest-common-ancestor-of-a-binary-search-tree.py) | _O(h)_ | _O(1)_ | Easy ||
 
 --- 
 
