@@ -41,7 +41,7 @@ class Solution:
         # 1. If the current subtree contains both p and q,
         #    return their LCA.
         # 2. If only one of them is in that subtree,
-        #    return one of them.
+        #    return that one of them.
         # 3. If neither of them is in that subtree,
         #    return the node of that subtree.
         return root if left and right else left or right
