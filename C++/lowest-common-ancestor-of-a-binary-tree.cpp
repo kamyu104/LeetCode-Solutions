@@ -19,7 +19,7 @@ public:
         TreeNode *left = lowestCommonAncestor(root->left, p, q);
         TreeNode *right = lowestCommonAncestor(root->right, p, q);
          // 1. If the current subtree contains both p and q,
-         //    then result is their LCA.
+         //    the result is their LCA.
          // 2. If only one of them is in that subtree,
          //    the result is that one of them.
          // 3. If neither of them is in that subtree,
