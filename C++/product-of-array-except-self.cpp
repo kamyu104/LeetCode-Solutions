@@ -16,9 +16,9 @@ public:
         }
 
         int right_product = 1;
-        for (int j = nums.size() - 2; j >= 0; --j) {
-            right_product *= nums[j + 1];
-            left_product[j] = left_product[j] * right_product;
+        for (int i = nums.size() - 2; i >= 0; --i) {
+            right_product *= nums[i + 1];
+            left_product[i] = left_product[i] * right_product;
         }
 
         return left_product;
