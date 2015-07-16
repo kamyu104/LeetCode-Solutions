@@ -16,7 +16,7 @@ public:
         }
 
         int right_product = 1;
-        for (int i = nums.size() - 2; i >= 0; --i) {
+        for (int i = static_cast<int>(nums.size()) - 2; i >= 0; --i) {
             right_product *= nums[i + 1];
             left_product[i] = left_product[i] * right_product;
         }
