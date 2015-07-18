@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-07-16), there are `222` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-07-18), there are `223` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `238` problems.
+Here is the classification of all `239` problems.
 For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you have to buy the book from LeetCode. )
@@ -17,6 +17,7 @@ Algorithms
 * [String](https://github.com/kamyu104/LeetCode#string)
 * [Linked List](https://github.com/kamyu104/LeetCode#linked-list)
 * [Stack](https://github.com/kamyu104/LeetCode#stack)
+* [Queue](https://github.com/kamyu104/LeetCode#queue)
 * [Heap](https://github.com/kamyu104/LeetCode#heap)
 * [Tree](https://github.com/kamyu104/LeetCode#tree)
 * [Hash Table](https://github.com/kamyu104/LeetCode#hash-table)
@@ -148,6 +149,13 @@ Shell
 224| [Basic Calculator](https://leetcode.com/problems/basic-calculator/) | [C++](./C++/basic-calculator.cpp) [Python](./Python/basic-calculator.py) | _O(n)_| _O(n)_| Medium || 
 227| [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/) | [C++](./C++/basic-calculator-ii.cpp) [Python](./Python/basic-calculator-ii.py) | _O(n)_| _O(n)_| Medium || 
 232| [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [C++](./C++/implement-queue-using-stacks.cpp) [Python](./Python/implement-queue-using-stacks.py) | _O(1), amortized_| _O(n)_| Easy | EPI, LintCode | 
+
+--- 
+
+##Queue
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+239| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)| [C++](./C++/sliding-window-maximum.cpp) [Python](./Python/sliding-window-maximum.py) | _O(n)_        | _O(k)_          | Hard           ||
 
 --- 
 
