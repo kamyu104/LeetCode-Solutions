@@ -6,11 +6,11 @@ public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
         const int m = matrix.size();
         if (m == 0) {
-            return 0;
+            return false;
         }
         const int n = matrix[0].size();
         if  (n == 0) {
-            return 0;
+            return false;
         }
         int count = 0;
 
