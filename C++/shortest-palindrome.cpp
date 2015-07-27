@@ -20,7 +20,11 @@ public:
             // (Palindrome)abc
             //             ^
             // Get non palindrome part of s.
-            string non_palindrome = s.substr(prefix.back() + 1);
+            int i = prefix.back();
+            while (i >= s.length()) {
+                i = prefix[i];
+            }
+            string non_palindrome = s.substr(i + 1);
             reverse(non_palindrome.begin(), non_palindrome.end());
             return non_palindrome + s;  // cba(Palindrome)abc.
         }
