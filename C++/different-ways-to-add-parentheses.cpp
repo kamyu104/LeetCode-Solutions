@@ -76,7 +76,7 @@ class Solution2 {
     vector<int> diffWaysToCompute(string input) {
         vector<int> result;
         for (int i = 0; i < input.size(); ++i) {
-            char cur = input[i];
+            const auto cur = input[i];
             if (cur == '+' || cur == '-' || cur == '*') {
                 vector<int> left = diffWaysToCompute(input.substr(0, i));
                 vector<int> right = diffWaysToCompute(input.substr(i + 1));
