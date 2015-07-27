@@ -12,7 +12,7 @@ public:
             // Assume s is (Palindrome)abc,
             // A would be (Palindrome)abccba(Palindrome).
             string A = s + rev_s;
-            vector<int> prefix(move(getPrefix(A)));
+            auto prefix = getPrefix(A);
             // The index prefix.back() of A would be:
             // (Palindrome)abccba(Palindrome)
             //            ^
