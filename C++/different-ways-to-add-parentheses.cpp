@@ -1,4 +1,4 @@
-// Time:  O(n * (C(2n, n) - C(2n, n - 1)))
+// Time:  O(n * (C(2n, n) - C(2n, n - 1))), at most time
 // Space: O(n * (C(2n, n) - C(2n, n - 1)))
 
 class Solution {
@@ -43,7 +43,7 @@ class Solution {
     }
 };
 
-// Time:  O(n * (C(2n, n) - C(2n, n - 1)))
+// Time:  O(n * (C(2n, n) - C(2n, n - 1))), at least time
 // Space: O(C(2n, n) - C(2n, n - 1))
 class Solution2 {
   public:
