@@ -12,60 +12,34 @@ class Solution {
     vector<int> diffWaysToComputeRecu(const string& input,
                                       const int start, const int end,
                                       vector<vector<vector<int>>>& lookup) {
-        if (start == end) {
-            return {};
-        }
-        
         if (!lookup[start][end].empty()) {
             return lookup[start][end];
         }
-
         vector<int> result;
-        int i = start;
-        while (i < end && !isOperator(input[i])) {
-            ++i;
-        }
-        if (i == end) {
-            result.emplace_back(move(stoi(input.substr(start, end - start))));
-            return result;
-        }
-
-        i = start;
-        while (i < end) {
-            while (i < end && !isOperator(input[i])) {
-                ++i;
-            }
-            if (i < end) {
+        for (int i = start; i < end; ++i) {
+            const auto cur = input[i];
+            if (cur == '+' || cur == '-' || cur == '*') {
                 vector<int> left = diffWaysToComputeRecu(input, start, i, lookup);
                 vector<int> right = diffWaysToComputeRecu(input, i + 1, end, lookup);
-                for (int j = 0; j < left.size(); ++j) {
-                    for(int k = 0; k < right.size(); ++k) {
-                        result.emplace_back(move(compute(input[i],left[j], right[k])));
+                for (const auto& num1 : left) {
+                    for (const auto& num2 : right) {
+                        if (cur == '+') {
+                            result.emplace_back(num1 + num2);
+                        } else if (cur == '-') {
+                            result.emplace_back(num1 - num2);
+                        } else {
+                            result.emplace_back(num1 * num2);
+                        }
                     }
                 }
             }
-            ++i;
+        }
+        // if the input string contains only number
+        if (result.empty()) {
+            result.emplace_back(stoi(input.substr(start, end - start)));
         }
         lookup[start][end] = move(result);
         return lookup[start][end];
-    }
-
-    bool isOperator(const char c){
-        return string("+-*").find(string(1, c)) != string::npos;
-    }
-
-    int compute(const char c, const int left, const int right){
-        switch (c) {
-            case '+':
-                return left + right;
-            case '-':
-                return left - right;
-            case '*':
-                return left * right;
-            default:
-                return 0;
-        }
-        return 0;
     }
 };
 
