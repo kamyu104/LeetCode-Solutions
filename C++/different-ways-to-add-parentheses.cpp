@@ -19,8 +19,8 @@ class Solution {
         for (int i = start; i < end; ++i) {
             const auto cur = input[i];
             if (cur == '+' || cur == '-' || cur == '*') {
-                vector<int> left = move(diffWaysToComputeRecu(input, start, i, lookup));
-                vector<int> right = move(diffWaysToComputeRecu(input, i + 1, end, lookup));
+                auto left = diffWaysToComputeRecu(input, start, i, lookup);
+                auto right = diffWaysToComputeRecu(input, i + 1, end, lookup);
                 for (const auto& num1 : left) {
                     for (const auto& num2 : right) {
                         if (cur == '+') {
@@ -38,7 +38,7 @@ class Solution {
         if (result.empty()) {
             result.emplace_back(stoi(input.substr(start, end - start)));
         }
-        lookup[start][end] = move(result);
+        lookup[start][end] = result;
         return lookup[start][end];
     }
 };
@@ -52,8 +52,8 @@ class Solution2 {
         for (int i = 0; i < input.size(); ++i) {
             const auto cur = input[i];
             if (cur == '+' || cur == '-' || cur == '*') {
-                vector<int> left = move(diffWaysToCompute(input.substr(0, i)));
-                vector<int> right = move(diffWaysToCompute(input.substr(i + 1)));
+                auto left = diffWaysToCompute(input.substr(0, i));
+                auto right = diffWaysToCompute(input.substr(i + 1));
                 for (const auto& num1 : left) {
                     for (const auto& num2 : right) {
                         if (cur == '+') {
