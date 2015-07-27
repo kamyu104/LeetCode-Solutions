@@ -1,4 +1,4 @@
-# Time:  O(4^n / n^(3/2)) ~= Catalan numbers = C(2n, n) - C(2n, n - 1)
+# Time:  O(n * 4^n / n^(3/2)) ~= n * Catalan numbers = n * (C(2n, n) - C(2n, n - 1))
 # Space: O(n^2 * 4^n / n^(3/2))
 #
 # Given a string of numbers and operators, return all possible
