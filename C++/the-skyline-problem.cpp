@@ -56,7 +56,7 @@ public:
     enum {start, end, height};
     
     vector<pair<int, int>> getSkyline(vector<vector<int>>& buildings) {
-        const auto intervals = move(ComputeSkylineInInterval(buildings, 0, buildings.size()));
+        const auto intervals = ComputeSkylineInInterval(buildings, 0, buildings.size());
         
         vector<pair<int, int>> res;
         int last_end = -1;
@@ -81,8 +81,8 @@ public:
                     buildings.cbegin() + right_endpoint};
         }
         int mid = left_endpoint + ((right_endpoint - left_endpoint) / 2);
-        auto left_skyline = move(ComputeSkylineInInterval(buildings, left_endpoint, mid));
-        auto right_skyline = move(ComputeSkylineInInterval(buildings, mid, right_endpoint));
+        auto left_skyline = ComputeSkylineInInterval(buildings, left_endpoint, mid);
+        auto right_skyline = ComputeSkylineInInterval(buildings, mid, right_endpoint);
         return MergeSkylines(left_skyline, right_skyline);
     }
     
