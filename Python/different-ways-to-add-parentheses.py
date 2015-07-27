@@ -2,7 +2,7 @@
 #                                due to the size of the results is Catalan numbers,
 #                                and every way of evaluation is the length of the string,
 #                                so the time complexity is at most n * Catalan numbers.
-# Space: O(n * 4^n / n^(3/2)), the cache size is at most n * Catalan numbers.
+# Space: O(n * 4^n / n^(3/2)), the cache size of lookup is at most n * Catalan numbers.
 #
 # Given a string of numbers and operators, return all possible
 # results from computing all the different possible ways to
