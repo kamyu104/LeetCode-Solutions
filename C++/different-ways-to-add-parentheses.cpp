@@ -74,59 +74,29 @@ class Solution {
 class Solution2 {
   public:
     vector<int> diffWaysToCompute(string input) {
-        return diffWaysToComputeRecu(input, 0, input.length());
-    }
-
-    vector<int> diffWaysToComputeRecu(const string& input,
-                                      const int start, const int end) {
-        if (start == end) {
-            return {};
-        }
-
         vector<int> result;
-        int i = start;
-        while (i < end && !isOperator(input[i])) {
-            ++i;
-        }
-        if (i == end) {
-            result.emplace_back(move(stoi(input.substr(start, end - start))));
-            return result;
-        }
-
-        i = start;
-        while (i < end) {
-            while (i < end && !isOperator(input[i])) {
-                ++i;
-            }
-            if (i < end) {
-                vector<int> left = diffWaysToComputeRecu(input, start, i);
-                vector<int> right = diffWaysToComputeRecu(input, i + 1, end);
-                for (int j = 0; j < left.size(); ++j) {
-                    for(int k = 0; k < right.size(); ++k) {
-                        result.emplace_back(move(compute(input[i],left[j], right[k])));
+        for (int i = 0; i < input.size(); ++i) {
+            char cur = input[i];
+            if (cur == '+' || cur == '-' || cur == '*') {
+                vector<int> left = diffWaysToCompute(input.substr(0, i));
+                vector<int> right = diffWaysToCompute(input.substr(i + 1));
+                for (const auto& num1 : left) {
+                    for (const auto& num2 : right) {
+                        if (cur == '+') {
+                            result.emplace_back(num1 + num2);
+                        } else if (cur == '-') {
+                            result.emplace_back(num1 - num2);
+                        } else {
+                            result.emplace_back(num1 * num2);
+                        }
                     }
                 }
             }
-            ++i;
+        }
+        // if the input string contains only number
+        if (result.empty()) {
+            result.emplace_back(stoi(input));
         }
         return result;
-    }
-
-    bool isOperator(const char c){
-        return string("+-*").find(string(1, c)) != string::npos;
-    }
-
-    int compute(const char c, const int left, const int right){
-        switch (c) {
-            case '+':
-                return left + right;
-            case '-':
-                return left - right;
-            case '*':
-                return left * right;
-            default:
-                return 0;
-        }
-        return 0;
     }
 };
