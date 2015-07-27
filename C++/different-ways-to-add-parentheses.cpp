@@ -1,5 +1,5 @@
 // Time:  O(n * (C(2n, n) - C(2n, n - 1)))
-// Space: O(n^2 * (C(2n, n) - C(2n, n - 1)))
+// Space: O(n * (C(2n, n) - C(2n, n - 1)))
 
 class Solution {
   public:
