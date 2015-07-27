@@ -287,7 +287,7 @@ Shell
 124| [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)| [Python](./Python/binary-tree-maximum-path-sum.py) | _O(n)_| _O(h)_| Hard  ||  
 129| [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [Python](./Python/sum-root-to-leaf-numbers.py) | _O(n)_ | _O(h)_ | Medium ||
 156| [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/) | [Python](./Python/binary-tree-upside-down.py) | _O(n)_ | _O(1)_ | Medium    |📖| 
-241| [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | [C++](./C++/different-ways-to-add-parentheses.cpp) [Python](./Python/different-ways-to-add-parentheses.py) | _O(n * 4^n / n^(3/2))_ | _O(n * 4^n / n^(3/2))_ | Medium    |📖| 
+241| [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | [C++](./C++/different-ways-to-add-parentheses.cpp) [Python](./Python/different-ways-to-add-parentheses.py) | _O(n * 4^n / n^(3/2))_ | _O(n * 4^n / n^(3/2))_ | Medium    || 
 
 --- 
 
