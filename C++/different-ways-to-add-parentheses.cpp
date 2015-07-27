@@ -20,7 +20,7 @@ class Solution {
             const auto cur = input[i];
             if (cur == '+' || cur == '-' || cur == '*') {
                 vector<int> left = move(diffWaysToComputeRecu(input, start, i, lookup));
-                vector<int> right = movediffWaysToComputeRecu(input, i + 1, end, lookup));
+                vector<int> right = move(diffWaysToComputeRecu(input, i + 1, end, lookup));
                 for (const auto& num1 : left) {
                     for (const auto& num2 : right) {
                         if (cur == '+') {
