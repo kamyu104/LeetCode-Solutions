@@ -5,7 +5,7 @@ class Solution {
   public:
     vector<int> diffWaysToCompute(string input) {
         vector<vector<vector<int>>> lookup(input.length() + 1,
-                                           vector<vector<int>>(input.length() + 1, vector<int>()));
+                                           vector<vector<int>>(input.length() + 1));
         return diffWaysToComputeRecu(input, 0, input.length(), lookup);
     }
 
