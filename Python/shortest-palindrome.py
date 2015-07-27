@@ -23,7 +23,7 @@ class Solution:
         A = s + s[::-1]
         prefix = self.getPrefix(A)
         i = prefix[-1]
-        while i > len(s) - 1:
+        while i >= len(s):
             i = prefix[i]
         return s[i+1:][::-1] + s
         
