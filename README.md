@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-07-23), there are `224` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-07-27), there are `225` Algorithms / `12` Database / `4` Shell problems on [LeetCode Online Judge](https://leetcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `240` problems.
+Here is the classification of all `241` problems.
 For extra problems and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you have to buy the book from LeetCode. )
@@ -287,6 +287,7 @@ Shell
 124| [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)| [Python](./Python/binary-tree-maximum-path-sum.py) | _O(n)_| _O(h)_| Hard  ||  
 129| [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [Python](./Python/sum-root-to-leaf-numbers.py) | _O(n)_ | _O(h)_ | Medium ||
 156| [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/) | [Python](./Python/binary-tree-upside-down.py) | _O(n)_ | _O(1)_ | Medium    |📖| 
+241| [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | [C++](./C++/different-ways-to-add-parentheses.cpp) [Python](./Python/different-ways-to-add-parentheses.py) | _O(n * 4^n / n^(3/2))_ | _O(n^2 * 4^n / n^(3/2))_ | Medium    |📖| 
 
 --- 
 
