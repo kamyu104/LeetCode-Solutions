@@ -46,3 +46,27 @@ class Solution:
             return lookup[left][right]
             
         return diffWaysToComputeRecu(0, len(nums) - 1)
+
+class Solution2:
+    # @param {string} input
+    # @return {integer[]}
+    def diffWaysToCompute(self, input):
+        lookup = [[None for _ in xrange(len(input) + 1)] for _ in xrange(len(input) + 1)]
+        ops = {'+': operator.add, '-': operator.sub, '*': operator.mul}
+
+        def diffWaysToComputeRecu(left, right):
+            if lookup[left][right]:
+                return lookup[left][right]
+            result = []
+            for i in xrange(left, right):
+                if input[i] in "+-*":
+                    for x in diffWaysToComputeRecu(left, i):
+                        for y in diffWaysToComputeRecu(i + 1, right):
+                            result.append(ops[input[i]](x, y))
+            
+            if not result:
+                result = [int(input[left:right])]
+            lookup[left][right] = result     
+            return lookup[left][right]
+            
+        return diffWaysToComputeRecu(0, len(input))
