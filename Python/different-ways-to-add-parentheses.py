@@ -1,4 +1,7 @@
-# Time:  O(n * 4^n / n^(3/2)) ~= n * Catalan numbers = n * (C(2n, n) - C(2n, n - 1))
+# Time:  O(n * 4^n / n^(3/2)) ~= n * Catalan numbers = n * (C(2n, n) - C(2n, n - 1)), 
+#                                due to the size of the results is Catalan numbers,
+#                                and every way of evaluation is the length of the string,
+#                                so time complexity is n * Catalan numbers.
 # Space: O(n * 4^n / n^(3/2))
 #
 # Given a string of numbers and operators, return all possible
