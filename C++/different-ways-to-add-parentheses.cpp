@@ -34,7 +34,7 @@ class Solution {
                 }
             }
         }
-        // if the input string contains only number
+        // If the input string contains only number.
         if (result.empty()) {
             result.emplace_back(stoi(input.substr(start, end - start)));
         }
@@ -67,7 +67,7 @@ class Solution2 {
                 }
             }
         }
-        // if the input string contains only number
+        // If the input string contains only number.
         if (result.empty()) {
             result.emplace_back(stoi(input));
         }
