@@ -49,7 +49,7 @@ class Solution2 {
   public:
     vector<int> diffWaysToCompute(string input) {
         vector<int> result;
-        for (int i = 0; i < input.size(); ++i) {
+        for (int i = 0; i < input.length(); ++i) {
             const auto cur = input[i];
             if (cur == '+' || cur == '-' || cur == '*') {
                 auto left = diffWaysToCompute(input.substr(0, i));
