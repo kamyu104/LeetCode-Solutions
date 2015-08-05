@@ -26,7 +26,7 @@ public:
                 if (num.front() > kvp.first) {
                     if (num.length() == 2) {  // num is like "21"
                         ++count;
-                    } else { // num is like "201"
+                    } else {  // num is like "201"
                         count += countStrobogrammaticUntil(string(num.length() - 2, '9'), true);
                     }
                 } else if (num.front() == kvp.first) {
