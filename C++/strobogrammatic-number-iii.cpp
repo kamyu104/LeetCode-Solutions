@@ -1,4 +1,4 @@
-// Time: O(5^n)
+// Time:  O(5^n)
 // Space: O(n)
 
 class Solution {
