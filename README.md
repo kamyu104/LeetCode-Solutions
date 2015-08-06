@@ -6,7 +6,7 @@ The number of questions is increasing recently.
 Here is the classification of all `251` questions.
 For extra questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
-(Notes: "📖" means you need to subscribe to `LeetCode premium membership` for the access to premium questions. )
+(Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
 
 --- 
 Algorithms
