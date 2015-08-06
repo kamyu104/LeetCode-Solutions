@@ -36,7 +36,8 @@ public:
                         if (num.back() >= kvp.second) {  // num is like "102".
                             count += countStrobogrammaticUntil(getMid(num), true);
                         } else if (getMid(num) != string(num.length() - 2, '0')) {  // num is like "110".
-                            count += countStrobogrammaticUntil(getMid(num), true) - isStrobogrammatic(getMid(num));
+                            count += countStrobogrammaticUntil(getMid(num), true) -
+                                     isStrobogrammatic(getMid(num));
                         }
                     }
                 }
