@@ -17,10 +17,9 @@ public:
         vector<string> result;
         for (const auto& num : findStrobogrammaticRecu(n, k - 2)) {
             for (const auto& kvp : lookup) {
-                if (n == k && kvp.first == "0") {
-                    continue;
+                if (n != k || kvp.first != "0") {
+                    result.emplace_back(kvp.first + num + kvp.second);
                 }
-                result.emplace_back(kvp.first + num + kvp.second);
             }
         }
         return result;
