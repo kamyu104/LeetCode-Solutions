@@ -32,7 +32,7 @@ public:
         return false;
     }
     
-    bool isSame(TreeNode* root, TreeNode* child, bool isUni) {
-        return child == nullptr || (isUni && root->val == child->val);
+    bool isSame(TreeNode* root, TreeNode* child, bool is_uni) {
+        return child == nullptr || (is_uni && root->val == child->val);
     }
 };
