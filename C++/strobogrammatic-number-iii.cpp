@@ -10,7 +10,7 @@ public:
         return count >= 0 ? count : 0;
     }
 
-    int countStrobogrammaticUntil(string num, bool canStartWith0) {
+    int countStrobogrammaticUntil(string num, bool can_start_with_0) {
         int count = 0;
         if (num.length() == 1) {
             for (const auto& c : {'0', '1', '8'}) {
@@ -22,7 +22,7 @@ public:
         }
         
         for (const auto& kvp : lookup) {
-            if (canStartWith0 || kvp.first != '0') { 
+            if (can_start_with_0 || kvp.first != '0') { 
                 if (num.front() > kvp.first) {
                     if (num.length() == 2) {  // num is like "21"
                         ++count;
@@ -43,7 +43,7 @@ public:
             }
         }
 
-        if (!canStartWith0) { // Sum up each length.
+        if (!can_start_with_0) { // Sum up each length.
             for (int i = num.length() - 1; i > 0; --i) {
                 count += countStrobogrammaticByLength(i);
             }
