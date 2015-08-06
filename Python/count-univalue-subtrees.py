@@ -28,5 +28,5 @@ class Solution:
 
         return [False, count]
     
-    def isSame(self, root, child, isUni):
-        return not child or (isUni and root.val == child.val)
+    def isSame(self, root, child, is_uni):
+        return not child or (is_uni and root.val == child.val)
