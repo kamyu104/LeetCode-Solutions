@@ -3,40 +3,36 @@
 
 class Vector2D {
 public:
-    Vector2D(vector<vector<int>>& vec2d) {
-        it1 = vec2d.begin();
-        it1_end = vec2d.end();
-        if (it1 != it1_end) {
-            it2 = it1->begin();
-            it2_end = it1->end();
+    Vector2D(vector<vector<int>>& vec2d) : vec(vec2d) {
+        x = vec.begin();
+        if (x != vec.end()) {
+            y = x->begin();
             adjustNextIter();
         }
     }
 
     int next() {
-        const auto ret = *it2;
-        ++it2;
+        const auto ret = *y;
+        ++y;
         adjustNextIter();
         return ret;
     }
 
     bool hasNext() {
-        return it1 != it1_end && it2 != it2_end;
+        return x != vec.end() && y != x->end();
     }
     
     void adjustNextIter() {
-        while (it1 != it1_end && it2 == it2_end) { 
-            ++it1;
-            if (it1 != it1_end) {
-                it2 = it1->begin();
-                it2_end = it1->end();
+        while (x != vec.end() && y == x->end()) { 
+            ++x;
+            if (x != vec.end()) {
+                y = x->begin();
             }
         }
     }
 
 private:
-    vector<vector<int>>::iterator it1;
-    vector<vector<int>>::iterator it1_end;
-    vector<int>::iterator it2;
-    vector<int>::iterator it2_end;
+    vector<vector<int>>& vec;
+    vector<vector<int>>::iterator x;
+    vector<int>::iterator y;
 };
