@@ -8,10 +8,9 @@ class Solution:
     # @return {boolean}
     def isStrobogrammatic(self, num):
         n = len(num)
-        i = 0
-        while i <= n - 1 - i:
-            if num[n - 1 - i] not in self.lookup or\
-               num[i] != self.lookup[num[n - 1 - i]]:
+        for i in xrange((n+1) / 2):
+            if num[n-1-i] not in self.lookup or\
+               num[i] != self.lookup[num[n-1-i]]:
                 return False
             i += 1
         return True
