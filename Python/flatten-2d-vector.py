@@ -2,8 +2,7 @@
 # Space: O(1)
 
 class Vector2D:
-    x, x_len = 0, 0
-    y, y_len = 0, 0
+    x, y = 0, 0
     vec = None
 
     # Initialize your data structure here.
@@ -11,10 +10,8 @@ class Vector2D:
     def __init__(self, vec2d):
         self.vec = vec2d
         self.x = 0
-        self.x_len = len(self.vec)
-        if self.x != self.x_len:
+        if self.x != len(self.vec):
             self.y = 0
-            self.y_len = len(self.vec[self.x])
             self.adjustNextIter()
 
     # @return {integer}
@@ -26,11 +23,10 @@ class Vector2D:
 
     # @return {boolean}
     def hasNext(self):
-        return self.x != self.x_len and self.y != self.y_len
+        return self.x != len(self.vec) and self.y != len(self.vec[self.x])
 
     def adjustNextIter(self):
-        while self.x != self.x_len and self.y == self.y_len: 
+        while self.x != len(self.vec) and self.y == len(self.vec[self.x]): 
             self.x += 1
-            if self.x != self.x_len:
+            if self.x != len(self.vec):
                 self.y = 0
-                self.y_len = len(self.vec[self.x])
