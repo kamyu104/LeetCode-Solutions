@@ -13,7 +13,7 @@ class Solution:
                 self.isStrobogrammatic(low)
         return count if count >= 0 else 0
 
-    def countStrobogrammaticUntil(self, num,  canStartWith0):
+    def countStrobogrammaticUntil(self, num,  can_start_with_0):
         count = 0
         if len(num) == 1:
             for c in ['0', '1', '8']:
@@ -22,7 +22,7 @@ class Solution:
             return count
         
         for key, val in self.lookup.iteritems():
-            if canStartWith0 or key != '0':
+            if can_start_with_0 or key != '0':
                 if num[0] > key:
                     if len(num) == 2:  # num is like "21"
                         count += 1
@@ -39,7 +39,7 @@ class Solution:
                             count += self.countStrobogrammaticUntil(self.getMid(num), True) - \
                                      self.isStrobogrammatic(self.getMid(num))
 
-        if not canStartWith0: # Sum up each length.
+        if not can_start_with_0: # Sum up each length.
             for i in xrange(len(num) - 1, 0, -1):
                 count += self.countStrobogrammaticByLength(i)
 
