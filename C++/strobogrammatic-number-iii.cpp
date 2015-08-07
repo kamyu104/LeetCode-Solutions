@@ -60,11 +60,11 @@ public:
     int countStrobogrammaticByLength(int n) {
         switch (n) {
             case 1:
-                return 3;
+                return 3;  // "0", "1", "8"
             case 2:
-                return 4;
+                return 4;  // "11", "69", "88", "96"
             case 3:
-                return 4 * 3;
+                return 4 * 3; // "101", "111", "181", ...
             default:
                 return 5 * countStrobogrammaticByLength(n - 2);
         }
