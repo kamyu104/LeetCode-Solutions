@@ -3,6 +3,7 @@
 
 class Solution:
     lookup = {'0':'0', '1':'1', '6':'9', '8':'8', '9':'6'}
+    cache = {}
 
     # @param {string} low
     # @param {string} high
@@ -14,11 +15,15 @@ class Solution:
         return count if count >= 0 else 0
 
     def countStrobogrammaticUntil(self, num,  can_start_with_0):
+        if can_start_with_0 and num in self.cache:
+            return self.cache[num]
+
         count = 0
         if len(num) == 1:
             for c in ['0', '1', '8']:
                 if num[0] >= c:
                     count += 1
+            self.cache[num] = count
             return count
         
         for key, val in self.lookup.iteritems():
@@ -42,6 +47,8 @@ class Solution:
         if not can_start_with_0: # Sum up each length.
             for i in xrange(len(num) - 1, 0, -1):
                 count += self.countStrobogrammaticByLength(i)
+        else:
+            self.cache[num] = count
 
         return count
 
