@@ -11,6 +11,10 @@ public:
     }
 
     int countStrobogrammaticUntil(string num, bool can_start_with_0) {
+        if (can_start_with_0 && cache.find(num) != cache.end()) {
+            return cache[num];
+        }
+
         int count = 0;
         if (num.length() == 1) {
             for (const auto& c : {'0', '1', '8'}) {
@@ -18,6 +22,7 @@ public:
                     ++count;
                 }
             }
+            cache[num] = count;
             return count;
         }
         
@@ -48,6 +53,8 @@ public:
             for (int i = num.length() - 1; i > 0; --i) {
                 count += countStrobogrammaticByLength(i);
             }
+        } else {
+            cache[num] = count;
         }
 
         return count;
@@ -85,4 +92,5 @@ private:
     const unordered_map<char, char> lookup{{'0', '0'}, {'1', '1'},
                                            {'6', '9'}, {'8', '8'}, 
                                            {'9', '6'}};
+    unordered_map<string, int> cache;
 };
