@@ -30,6 +30,9 @@ public:
                 return false;
             }
             while (!path.empty() && p > path.top()) {
+                // Traverse to its right subtree now.
+                // Use the popped values as a lower bound because
+                // we shouldn't come across a smaller number anymore.
                 low = path.top();
                 path.pop();
             }
