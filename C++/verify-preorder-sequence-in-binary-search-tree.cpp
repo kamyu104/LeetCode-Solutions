@@ -23,7 +23,7 @@ public:
 class Solution2 {
 public:
     bool verifyPreorder(vector<int>& preorder) {
-        int low = INT_MIN, i = -1;
+        int low = INT_MIN;
         stack<int> path;
         for (auto& p : preorder) {
             if (p < low) {
