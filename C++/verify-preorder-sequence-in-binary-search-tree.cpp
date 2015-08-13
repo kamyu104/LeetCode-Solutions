@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Soace: O(1)
+// Space: O(1)
 
 class Solution {
 public:
@@ -19,7 +19,7 @@ public:
 };
 
 // Time:  O(n)
-// Soace: O(n)
+// Space: O(n)
 class Solution2 {
 public:
     bool verifyPreorder(vector<int>& preorder) {
