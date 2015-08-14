@@ -8,8 +8,7 @@ public:
             return 0;
         }
         
-        vector<vector<int>> min_cost(2);
-        min_cost[0] = costs[0];
+        vector<vector<int>> min_cost(2, costs[0]);
 
         const int n = costs.size();
         for (int i = 1; i < n; ++i) {
