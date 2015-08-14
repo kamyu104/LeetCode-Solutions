@@ -30,8 +30,6 @@ class Solution2:
         if not costs:
             return 0
         
-        min_cost = [costs[0], [0, 0, 0]]
-        
         n = len(costs)
         for i in xrange(1, n):
             costs[i][0] += min(costs[i - 1][1], costs[i - 1][2])
