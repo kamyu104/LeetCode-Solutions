@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-08-13), there are `239` Algorithms / `12` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-08-14), there are `240` Algorithms / `12` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `255` questions.
+Here is the classification of all `256` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -395,6 +395,7 @@ Shell
 198| [House Robber](https://leetcode.com/problems/house-robber/)| [Python](./Python/house-robber.py) | _O(n)_          | _O(1)_          | Easy           ||
 213| [House Robber II](https://leetcode.com/problems/house-robber-ii/)| [C++](./C++/house-robber-ii.cpp) [Python](./Python/house-robber-ii.py) | _O(n)_          | _O(1)_          | Medium           ||
 221| [Maximal Square](https://leetcode.com/problems/maximal-square/)| [C++](./C++/maximal-square.cpp) [Python](./Python/maximal-square.py) | _O(n^2)_         | _O(n)_          | Medium           | EPI |
+256| [Paint House](https://leetcode.com/problems/paint-house/) | [C++](./C++/paint-house.cpp) [Python](./Python/paint-house.py) | _O(n)_| _O(1)_| Medium |📖||
 
 --- 
 
