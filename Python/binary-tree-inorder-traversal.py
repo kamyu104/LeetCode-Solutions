@@ -66,7 +66,7 @@ class Solution2:
                 if parent.right in (None, last_traversed):
                     if parent.right is None:
                         result.append(parent.val)
-                    last_traversed= stack.pop()
+                    last_traversed = stack.pop()
                 else:
                     result.append(parent.val)
                     current = parent.right
