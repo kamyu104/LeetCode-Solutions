@@ -24,7 +24,7 @@ class Solution:
             ans = ""
             for n in path:
                 ans += str(n.val) + "->"
-            resault.append(ans + str(node.val))
+            result.append(ans + str(node.val))
 
         if node.left:
             path.append(node)
