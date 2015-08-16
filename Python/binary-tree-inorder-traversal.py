@@ -76,7 +76,7 @@ class Solution3:
     # @param root, a tree node
     # @return a list of integers
     def inorderTraversal(self, root):
-        result, stack, current, last_traversed = [], [], root, None
+        result, stack, current = [], [], root
         while stack or current:
             if current:
                 stack.append(current)
