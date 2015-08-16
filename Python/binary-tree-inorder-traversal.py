@@ -82,8 +82,7 @@ class Solution3:
                 stack.append(current)
                 current = current.left
             else:
-                current = stack[-1]
-                stack.pop()
+                current = stack.pop()
                 result.append(current.val)
                 current = current.right
         return result
