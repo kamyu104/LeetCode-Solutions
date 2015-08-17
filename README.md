@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-08-16), there are `242` Algorithms / `12` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-08-17), there are `244` Algorithms / `12` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `258` questions.
+Here is the classification of all `260` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -23,7 +23,7 @@ Algorithms
 * [Hash Table](https://github.com/kamyu104/LeetCode#hash-table)
 * [Data Structure](https://github.com/kamyu104/LeetCode#data-structure)
 * [Math](https://github.com/kamyu104/LeetCode#math)
-* [Two Pointer](https://github.com/kamyu104/LeetCode#two-pointer)
+* [Two Pointers](https://github.com/kamyu104/LeetCode#two-pointers)
 * [Sort](https://github.com/kamyu104/LeetCode#sort)
 * [Brute Force Search](https://github.com/kamyu104/LeetCode#brute-force-search)
 * [Divide and Conquer](https://github.com/kamyu104/LeetCode#divide-and-conquer)
@@ -58,6 +58,7 @@ Shell
 191  |[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [Python](./Python/number-of-1-bits.py) | _O(m)_ | _O(1)_          | Easy           ||
 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | [Python](./Python/bitwise-and-of-numbers-range.py) | _O(1)_ | _O(1)_ | Medium ||
 231 | [Power of Two](https://leetcode.com/problems/power-of-two/) | [C++](./C++/power-of-two.cpp) [Python](./Python/power-of-two.py) | _O(1)_ | _O(1)_ | Easy | LintCode |
+260 | [Single Number III](https://leetcode.com/problems/single-number-iii/) | [C++](./C++/single-number-iii.cpp) [Python](./Python/single-number-iii.py) | _O(n)_ | _O(1)_          | Medium         ||
 
 --- 
 
@@ -258,7 +259,7 @@ Shell
 
 ---
 
-##Two Pointer
+##Two Pointers
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 19| [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)| [Python](./Python/remove-nth-node-from-end-of-list.py) | _O(n)_       | _O(1)_         | Easy         || 
@@ -267,6 +268,7 @@ Shell
 142| [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)| [Python](./Python/linked-list-cycle-ii.py) | _O(n)_ | _O(1)_   | Medium         ||
 143| [Reorder List](https://leetcode.com/problems/reorder-list/)| [Python](./Python/reorder-list.py) | _O(n)_          |  _O(1)_         | Medium         ||  
 167| [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [Python](./Python/two-sum-ii-input-array-is-sorted.py) | _O(n)_   | _O(1)_         | Medium         | 📖 |
+259 | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) | [C++](./C++/3sum-smaller.cpp) [Python](./Python/3sum-smaller.py) | _O(n^2)_ | _O(1)_          | Medium         | 📖, LintCode |
 
 ---
 
