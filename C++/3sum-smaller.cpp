@@ -11,7 +11,7 @@ public:
         for (int k = 2; k < n; ++k) {
             int i = 0, j = k - 1;
             while (i < j) {  // Two Pointers, linear time.
-                if (nums[i] + nums[j] >= target - nums[k]) {
+                if (nums[i] + nums[j] + nums[k] >= target) {
                     --j;
                 } else {
                     count += j - i;
