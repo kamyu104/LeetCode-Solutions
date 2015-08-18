@@ -9,12 +9,13 @@ class Solution:
         if len(edges) != n - 1:
             return False
 
+        parent, neighbors = 0, 1
         nodes = {}
         for i in xrange(n):
             nodes[i] = [-1, []]
         for edge in edges:
-            nodes[edge[0]][1].append(edge[1])
-            nodes[edge[1]][1].append(edge[0])
+            nodes[edge[0]][neighbors].append(edge[1])
+            nodes[edge[1]][neighbors].append(edge[0])
 
         visited = {}
         q = collections.deque()
@@ -22,12 +23,12 @@ class Solution:
         while q:
             i = q.popleft()
             visited[i] = True
-            for n in nodes[i][1]:
-                if n != nodes[i][0]:
+            for n in nodes[i][neighbors]:
+                if n != nodes[i][parent]:
                     if n in visited:
                         return False
                     else:
                         visited[n] = True
-                        nodes[n][0] = i
+                        nodes[n][parent] = i
                         q.append(n)
         return True
