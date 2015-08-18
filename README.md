@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-08-17), there are `244` Algorithms / `12` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-08-18), there are `245` Algorithms / `12` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `260` questions.
+Here is the classification of all `261` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -343,6 +343,7 @@ Shell
 133| [Clone Graph](https://leetcode.com/problems/clone-graph/)| [Python](./Python/clone-graph.py)   | _O(n)_          | _O(n)_          | Medium         ||
 207| [Course Schedule](https://leetcode.com/problems/course-schedule/)| [Python](./Python/course-schedule.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         ||
 210| [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)| [Python](./Python/course-schedule-ii.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         ||
+261| [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)| [C++](./C++/graph-valid-tree.cpp) [Python](./Python/graph-valid-tree.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         | 📖 |
 
 --- 
 
