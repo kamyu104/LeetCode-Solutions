@@ -13,7 +13,6 @@ public:
         }
 
         unordered_map<int,node> nodes;
-        unordered_set<int> visited;
         for (const auto& edge : edges) {
             nodes[edge.first].neighbors.emplace_back(edge.second);
             nodes[edge.second].neighbors.emplace_back(edge.first);
@@ -22,12 +21,13 @@ public:
             nodes[i].parent = -1;
         }
 
+        unordered_set<int> visited;
         queue<int> q;
         q.emplace(0);
-        visited.insert(0);
         while (!q.empty()) {
             int i = q.front();
             q.pop();
+            visited.insert(i);
             for (const auto& n : nodes[i].neighbors) {
                 if (n != nodes[i].parent) {
                     if (visited.find(n) != visited.end()) {
