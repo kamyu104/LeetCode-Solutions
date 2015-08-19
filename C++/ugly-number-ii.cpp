@@ -10,20 +10,16 @@ public:
         
         heap.emplace(1);
         for (int i = 0; i < n; ++i) {
-            if (heap.top() % 2 == 0) {
-                ugly_number = heap.top();
-                heap.pop();
+            ugly_number = heap.top();
+            heap.pop();
+            if (ugly_number % 2 == 0) {
                 heap.emplace(ugly_number * 2);
             }
-            else if (heap.top() % 3 == 0) {
-                ugly_number = heap.top();
-                heap.pop();
+            else if (ugly_number % 3 == 0) {
                 heap.emplace(ugly_number * 2);
                 heap.emplace(ugly_number * 3);
             }
             else {
-                ugly_number = heap.top();
-                heap.pop();
                 heap.emplace(ugly_number * 2);
                 heap.emplace(ugly_number * 3);
                 heap.emplace(ugly_number * 5);
@@ -40,25 +36,21 @@ public:
         long long ugly_number = 0;
         set<long long> bst;
         
-        bst.insert(1);
+        bst.emplace(1);
         for (int i = 0; i < n; ++i) {
-            if (*bst.cbegin() % 2 == 0) {
-                ugly_number = *bst.cbegin();
-                bst.erase(bst.cbegin());
-                bst.insert(ugly_number * 2);
+            ugly_number = *bst.cbegin();
+            bst.erase(bst.cbegin());
+            if (ugly_number % 2 == 0) {
+                bst.emplace(ugly_number * 2);
             }
-            else if (*bst.cbegin() % 3 == 0) {
-                ugly_number = *bst.cbegin();
-                bst.erase(bst.cbegin());
-                bst.insert(ugly_number * 2);
-                bst.insert(ugly_number * 3);
+            else if (ugly_number % 3 == 0) {
+                bst.emplace(ugly_number * 2);
+                bst.emplace(ugly_number * 3);
             }
             else {
-                ugly_number = *bst.cbegin();
-                bst.erase(bst.cbegin());
-                bst.insert(ugly_number * 2);
-                bst.insert(ugly_number * 3);
-                bst.insert(ugly_number * 5);
+                bst.emplace(ugly_number * 2);
+                bst.emplace(ugly_number * 3);
+                bst.emplace(ugly_number * 5);
             }
         }
         return ugly_number;   
