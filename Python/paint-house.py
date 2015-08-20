@@ -1,10 +1,12 @@
 # Time:  O(n)
 # Space: O(1)
 
-class Solution:
-    # @param {integer[][]} costs
-    # @return {integer}
+class Solution(object):
     def minCost(self, costs):
+        """
+        :type costs: List[List[int]]
+        :rtype: int
+        """
         if not costs:
             return 0
         
@@ -19,14 +21,16 @@ class Solution:
             min_cost[i % 2][2] = costs[i][2] + \
                                  min(min_cost[(i - 1) % 2][0], min_cost[(i - 1) % 2][1])
 
-        return min(min_cost[(n - 1) % 2][0], min_cost[(n - 1) % 2][1], min_cost[(n - 1) % 2][2])
+        return min(min_cost[(n - 1) % 2])
 
 # Time:  O(n)
 # Space: O(n)
-class Solution2:
-    # @param {integer[][]} costs
-    # @return {integer}
+class Solution2(object):
     def minCost(self, costs):
+        """
+        :type costs: List[List[int]]
+        :rtype: int
+        """
         if not costs:
             return 0
         
@@ -36,4 +40,4 @@ class Solution2:
             costs[i][1] += min(costs[i - 1][0], costs[i - 1][2])
             costs[i][2] += min(costs[i - 1][0], costs[i - 1][1])
         
-        return min(costs[n - 1][0], costs[n - 1][1], costs[n - 1][2])
+        return min(costs[n - 1])
