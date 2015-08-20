@@ -48,7 +48,7 @@ public:
                             const int second_smallest = *min_element(tmp2.cbegin(), tmp2.cend());
                             vector<int> min_cost(tmp.size(), smallest);
                             min_cost[i] = second_smallest;
-                            transform(min_cost.begin(), min_cost.end(), house.begin(),
+                            transform(min_cost.cbegin(), min_cost.cend(), house.cbegin(),
                                       min_cost.begin(), std::plus<int>());
                             return min_cost;
                         };
