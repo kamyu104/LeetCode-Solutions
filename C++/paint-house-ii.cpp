@@ -31,3 +31,29 @@ public:
         return *min_element(min_cost[(n - 1) % 2].begin(), min_cost[(n - 1) % 2].end());
     }
 };
+
+// Time:  O(n * k)
+// Space: O(k)
+class Solution2{
+public:
+    int minCostII(vector<vector<int>>& costs) {
+        if (costs.empty()) {
+            return 0;
+        }
+        auto combine = [](const vector<int>& tmp, const vector<int>& house) {
+                            const int smallest = *min_element(tmp.cbegin(), tmp.cend());
+                            const int i = distance(tmp.begin(), find(tmp.cbegin(), tmp.cend(), smallest));
+                            vector<int> tmp2(tmp);
+                            tmp2.erase(tmp2.begin() + i);
+                            const int second_smallest = *min_element(tmp2.cbegin(), tmp2.cend());
+                            vector<int> min_cost(tmp.size(), smallest);
+                            min_cost[i] = second_smallest;
+                            transform(min_cost.begin(), min_cost.end(), house.begin(),
+                                      min_cost.begin(), std::plus<int>());
+                            return min_cost;
+                        };
+        vector<int> min_cost = accumulate(costs.cbegin(), costs.cend(), vector<int>(costs[0].size(), 0), combine);
+        return *min_element(min_cost.cbegin(), min_cost.cend());
+
+    }
+};
