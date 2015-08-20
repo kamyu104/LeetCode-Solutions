@@ -28,7 +28,7 @@ public:
             }
         }
 
-        return *min_element(min_cost[(n - 1) % 2].begin(), min_cost[(n - 1) % 2].end());
+        return *min_element(min_cost[(n - 1) % 2].cbegin(), min_cost[(n - 1) % 2].cend());
     }
 };
 
