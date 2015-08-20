@@ -12,7 +12,7 @@ class Solution2(object):
     def combine(self, tmp, house):
         smallest, k, i = min(tmp), len(tmp), tmp.index(min(tmp))
         tmp, tmp[i] = [smallest] * k, min(tmp[:i] + tmp[i+1:])
-        return map(sum, zip(house, tmp))
+        return map(sum, zip(tmp, house))
 
 
 class Solution2(object):
