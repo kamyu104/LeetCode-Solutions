@@ -4,10 +4,10 @@
 class Solution {
 public:
     bool canPermutePalindrome(string s) {
-        bitset<256> bit;
+        bitset<256> bits;
         for (const auto& c : s) {
-            bit.flip(c);
+            bits.flip(c);
         }
-        return bit.count() < 2;
+        return bits.count() < 2;
     }
 };
