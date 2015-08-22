@@ -7,4 +7,4 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        return sum(v % 2 for k, v in collections.Counter(s).iteritems()) <  2
+        return sum(v % 2 for v in collections.Counter(s).values()) <  2
