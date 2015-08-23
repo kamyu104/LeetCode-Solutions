@@ -279,8 +279,8 @@ Shell
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 17| [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)| [Python](./Python/letter-combinations-of-a-phone-number.py) | _O(n * 4^n)_ | _O(n)_ | Medium ||
-46| [Permutations](https://leetcode.com/problems/permutations/)| [Python](./Python/permutations.py) | _O(n!)_         | _O(n)_          | Medium         ||
-47| [Permutations II](https://leetcode.com/problems/permutations-ii/)| [Python](./Python/permutations-ii.py) | _O(n!)_   | _O(n)_          | Hard           ||
+46| [Permutations](https://leetcode.com/problems/permutations/)| [Python](./Python/permutations.py) | _O(n * n!)_         | _O(n)_          | Medium         ||
+47| [Permutations II](https://leetcode.com/problems/permutations-ii/)| [Python](./Python/permutations-ii.py) | _O(n * n!)_   | _O(n)_          | Hard           ||
 78| [Subsets](https://leetcode.com/problems/subsets/)       | [Python](./Python/subsets.py)    | _O(n * 2^n)_    | _O(1)_          | Medium         ||
 90| [Subsets II](https://leetcode.com/problems/subsets-ii/)    | [Python](./Python/subsets-ii.py) | _O(n * 2^n)_    | _O(1)_          | Medium         ||
 
