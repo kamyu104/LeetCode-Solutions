@@ -1,4 +1,4 @@
-# Time:  O(n!)
+# Time:  O(n * n!)
 # Space: O(n)
 #
 # Given a collection of numbers that might contain duplicates, return all possible unique permutations.
