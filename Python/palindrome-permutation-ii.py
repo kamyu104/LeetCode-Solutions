@@ -21,7 +21,7 @@ class Solution(object):
     
     def permuteRecu(self, result, used, cur, nums):
         if len(cur) == len(nums):
-            result.append(cur + [])
+            result.append(''.join(cur))
             return
         for i in xrange(len(nums)):
             if not used[i] and not (i > 0 and nums[i-1] == nums[i] and used[i-1]):
