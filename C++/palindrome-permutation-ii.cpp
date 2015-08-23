@@ -24,7 +24,10 @@ public:
             }
             chars.append(kvp.second / 2, kvp.first);
         }
-
+        return permuteUnique(mid, chars);
+    }
+    
+    vector<string> permuteUnique(const string& mid, string& chars) {
         vector<string> result;
         sort(chars.begin(), chars.end());
         do {
