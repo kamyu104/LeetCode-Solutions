@@ -1,9 +1,6 @@
 // Time:  O(n * n!)
 // Space: O(n)
 
-// Time:  O(n * n!)
-// Space: O(n)
-
 class Solution {
 public:
     vector<string> generatePalindromes(string s) {
