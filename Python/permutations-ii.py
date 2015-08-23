@@ -8,8 +8,31 @@
 # [1,1,2], [1,2,1], and [2,1,1].
 #
 
-
-class Solution:
+class Solution(object):
+    def permuteUnique(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        nums.sort()
+        result = []
+        used = [False] * len(nums)
+        self.permuteRecu(result, used, [], nums)
+        return result
+    
+    def permuteRecu(self, result, used, cur, nums):
+        if len(cur) == len(nums):
+            result.append(cur + [])
+            return
+        for i in xrange(len(nums)):
+            if not used[i] and not (i > 0 and nums[i-1] == nums[i] and used[i-1]):
+                used[i] = True
+                cur.append(nums[i])
+                self.permuteRecu(result, used, cur, nums)
+                cur.pop()
+                used[i] = False
+                
+class Solution2:
     # @param num, a list of integer
     # @return a list of lists of integers
     def permuteUnique(self, nums):
