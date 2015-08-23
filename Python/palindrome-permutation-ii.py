@@ -8,10 +8,10 @@ class Solution(object):
         :rtype: List[str]
         """
         cnt = collections.Counter(s)
-        mid = [k for k, v in cnt.iteritems() if v % 2]
+        mid = ''.join(k for k, v in cnt.iteritems() if v % 2)
         chars = ''.join(k * (v / 2) for k, v in cnt.iteritems())
-        return [''.join(half_palindrome + mid + half_palindrome[::-1]) \
-                 for half_palindrome in self.permuteUnique(chars)] if len(mid) < 2 else []
+        return [half_palindrome + mid + half_palindrome[::-1] \
+                for half_palindrome in self.permuteUnique(chars)] if len(mid) < 2 else []
     
     def permuteUnique(self, nums):
         result = []
