@@ -17,10 +17,10 @@ class Solution(object):
         nums.sort()
         result = []
         used = [False] * len(nums)
-        self.permuteRecu(result, used, [], nums)
+        self.permuteUniqueRecu(result, used, [], nums)
         return result
     
-    def permuteRecu(self, result, used, cur, nums):
+    def permuteUniqueRecu(self, result, used, cur, nums):
         if len(cur) == len(nums):
             result.append(cur + [])
             return
@@ -28,7 +28,7 @@ class Solution(object):
             if not used[i] and not (i > 0 and nums[i-1] == nums[i] and used[i-1]):
                 used[i] = True
                 cur.append(nums[i])
-                self.permuteRecu(result, used, cur, nums)
+                self.permuteUniqueRecu(result, used, cur, nums)
                 cur.pop()
                 used[i] = False
                 
