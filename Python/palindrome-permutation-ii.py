@@ -15,10 +15,10 @@ class Solution(object):
     def permuteUnique(self, mid, nums):
         result = []
         used = [False] * len(nums)
-        self.permuteRecu(mid, result, used, [], nums)
+        self.permuteUniqueRecu(mid, result, used, [], nums)
         return result
     
-    def permuteRecu(self, mid, result, used, cur, nums):
+    def permuteUniqueRecu(self, mid, result, used, cur, nums):
         if len(cur) == len(nums):
             half_palindrome = ''.join(cur)
             result.append(half_palindrome + mid + half_palindrome[::-1])
@@ -27,7 +27,7 @@ class Solution(object):
             if not used[i] and not (i > 0 and nums[i-1] == nums[i] and used[i-1]):
                 used[i] = True
                 cur.append(nums[i])
-                self.permuteRecu(mid, result, used, cur, nums)
+                self.permuteUniqueRecu(mid, result, used, cur, nums)
                 cur.pop()
                 used[i] = False
 
