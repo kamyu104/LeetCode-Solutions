@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-08-23), there are `250` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-08-24), there are `250` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `267` questions.
+Here is the classification of all `268` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -59,6 +59,7 @@ Shell
 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | [Python](./Python/bitwise-and-of-numbers-range.py) | _O(1)_ | _O(1)_ | Medium ||
 231 | [Power of Two](https://leetcode.com/problems/power-of-two/) | [C++](./C++/power-of-two.cpp) [Python](./Python/power-of-two.py) | _O(1)_ | _O(1)_ | Easy | LintCode |
 260 | [Single Number III](https://leetcode.com/problems/single-number-iii/) | [C++](./C++/single-number-iii.cpp) [Python](./Python/single-number-iii.py) | _O(n)_ | _O(1)_          | Medium         ||
+268| [Missing Number](https://leetcode.com/problems/missing-number/) | [C++](./C++/missing-number.cpp) [Python](./Python/missing-number.py)  | _O(n)_ |  _O(1)_ | Medium         |||
 
 --- 
 
