@@ -39,11 +39,11 @@ class Solution:
         
         for i, j in prerequisites:
             if i not in in_degree:
-                in_degree[i] = {}
+                in_degree[i] = sets.Set()
             if j not in out_degree:
-                out_degree[j] = {}
-            in_degree[i][j] = True
-            out_degree[j][i] = True
+                out_degree[j] = sets.Set()
+            in_degree[i].add(j)
+            out_degree[j].add(i)
         
         for i in xrange(numCourses):
             if i not in in_degree:
@@ -54,13 +54,13 @@ class Solution:
             
             if prerequisite in out_degree:
                 for course in out_degree[prerequisite]:
-                    del in_degree[course][prerequisite]
+                    in_degree[course].discard(prerequisite)
                     if not in_degree[course]:
                         zero_in_degree_queue.append(course)
             
                 del out_degree[prerequisite]
         
-        if len(out_degree):
+        if out_degree:
             return False
         
         return True
