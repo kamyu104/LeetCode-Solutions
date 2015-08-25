@@ -8,11 +8,10 @@ class Solution(object):
         :type words: List[str]
         :rtype: str
         """
-        # Find ancestors of each node by BFS
         result, zero_in_degree_queue, in_degree, out_degree = [], collections.deque(), {}, {}
         nodes = sets.Set()
-        for i in xrange(len(words)):
-            for c in words[i]:
+        for word in words:
+            for c in word:
                 nodes.add(c)
         
         for i in xrange(1, len(words)):
