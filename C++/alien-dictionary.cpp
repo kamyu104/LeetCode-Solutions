@@ -3,6 +3,32 @@
 
 class Solution {
 public:
+    string alienOrder(vector<string>& words) {
+        // Find ancestors of each node by DFS
+        unordered_set<char> nodes;
+        unordered_map<char, vector<char>> ancestors;
+        for (int i = 0; i < words.size(); ++i) {
+            for (char c : words[i]) {
+                nodes.emplace(c);
+            }
+            if (i > 0) {
+                findEdges(words[i - 1], words[i], &ancestors);
+            }
+        }
+
+        // Output topological order by DFS
+        string result;
+        unordered_map<char, char> visited;
+        for (auto& node : nodes) {
+            if (topSortDFS(node, node, &ancestors, &visited, &result)) {
+                return "";
+            }
+        }
+        
+        return result;
+    }
+
+private:
     // Construct the graph.
     void findEdges(const string &word1, const string &word2,
                    unordered_map<char, vector<char>> *ancestors) {
@@ -35,36 +61,20 @@ public:
         }
         return false;
     } 
-
-    string alienOrder(vector<string>& words) {
-        // Find ancestors of each node by DFS
-        unordered_set<char> nodes;
-        unordered_map<char, vector<char>> ancestors;
-        for (int i = 0; i < words.size(); ++i) {
-            for (char c : words[i]) {
-                nodes.emplace(c);
-            }
-            if (i > 0) {
-                findEdges(words[i - 1], words[i], &ancestors);
-            }
-        }
-
-        // Output topological order by DFS
-        string result;
-        unordered_map<char, char> visited;
-        for (auto& node : nodes) {
-            if (topSortDFS(node, node, &ancestors, &visited, &result)) {
-                return "";
-            }
-        }
-        
-        return result;
-    }
 };
 
 // Adjacency matrix method.
 class Solution2 {
 public:
+    string alienOrder(vector<string>& words) {
+        string result;
+        vector<vector<bool>> graph(26, vector<bool>(26));
+        findDependency(words, &graph);
+        findOrder(&graph, &result);
+        return result;
+    }
+
+private:
     void findEdges(const string &word1, const string &word2, vector<vector<bool>> *graph) {
         int len = min(word1.length(), word2.length());
         for (int i = 0; i < len; ++i) {
@@ -141,13 +151,5 @@ public:
         }
         // The order should be reversed.
         reverse(result->begin(), result->end());
-    }
-
-    string alienOrder(vector<string>& words) {
-        string result;
-        vector<vector<bool>> graph(26, vector<bool>(26));
-        findDependency(words, &graph);
-        findOrder(&graph, &result);
-        return result;
     }
 };
