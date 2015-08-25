@@ -3,9 +3,9 @@
 
 class Solution {
 public:
+    // Construct the graph.
     void findEdges(const string &word1, const string &word2,
                    unordered_map<char, vector<char>> *ancestors) {
-        // construct the graph
         int len = min(word1.length(), word2.length());
         for (int i = 0; i < len; ++i) {
             if (word1[i] != word2[i]) {
