@@ -29,8 +29,8 @@ class Solution(object):
 
     # Construct the graph.
     def findEdges(self, word1, word2, ancestors):
-        str_len = min(len(word1), len(word2))
-        for i in xrange(str_len):
+        min_len = min(len(word1), len(word2))
+        for i in xrange(min_len):
             if word1[i] != word2[i]:
                 ancestors[word2[i]].append(word1[i])
                 break
