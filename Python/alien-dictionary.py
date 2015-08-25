@@ -1,4 +1,4 @@
-# Time:  O(|V|+|E|) = O(26 + 26^2) = O(1)
+# Time:  O(n)
 # Space: O(|V|+|E|) = O(26 + 26^2) = O(1)
 
 # BFS solution.
