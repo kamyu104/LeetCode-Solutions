@@ -9,7 +9,7 @@ class Solution(object):
         :rtype: str
         """
         # Find ancestors of each node by BFS
-        result, zero_in_degree_queue, in_degree, out_degree = [], [], {}, {}
+        result, zero_in_degree_queue, in_degree, out_degree = [], collections.deque(), {}, {}
         nodes = sets.Set()
         for i in xrange(len(words)):
             for c in words[i]:
@@ -23,7 +23,7 @@ class Solution(object):
                 zero_in_degree_queue.append(node)
         
         while zero_in_degree_queue:
-            precedence = zero_in_degree_queue.pop()
+            precedence = zero_in_degree_queue.popleft()
             result.append(precedence)
             
             if precedence in out_degree:
