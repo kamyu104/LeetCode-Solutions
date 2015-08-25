@@ -35,7 +35,7 @@ class Solution:
     # @param {integer[][]} prerequisites
     # @return {boolean}
     def canFinish(self, numCourses, prerequisites):
-        zero_in_degree_queue, in_degree, out_degree = [], {}, {}
+        zero_in_degree_queue, in_degree, out_degree = collections.deque(), {}, {}
         
         for i, j in prerequisites:
             if i not in in_degree:
@@ -50,7 +50,7 @@ class Solution:
                 zero_in_degree_queue.append(i)
         
         while zero_in_degree_queue:
-            prerequisite = zero_in_degree_queue.pop()
+            prerequisite = zero_in_degree_queue.popleft()
             
             if prerequisite in out_degree:
                 for course in out_degree[prerequisite]:
