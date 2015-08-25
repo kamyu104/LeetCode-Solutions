@@ -4,7 +4,7 @@
 class Solution {
 public:
     string alienOrder(vector<string>& words) {
-        // Find ancestors of each node by DFS
+        // Find ancestors of each node by DFS.
         unordered_set<char> nodes;
         unordered_map<char, vector<char>> ancestors;
         for (int i = 0; i < words.size(); ++i) {
@@ -16,7 +16,7 @@ public:
             }
         }
 
-        // Output topological order by DFS
+        // Output topological order by DFS.
         string result;
         unordered_map<char, char> visited;
         for (auto& node : nodes) {
