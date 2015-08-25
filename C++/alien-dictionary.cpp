@@ -19,7 +19,7 @@ public:
         // Output topological order by DFS.
         string result;
         unordered_map<char, char> visited;
-        for (auto& node : nodes) {
+        for (const auto& node : nodes) {
             if (topSortDFS(node, node, &ancestors, &visited, &result)) {
                 return "";
             }
