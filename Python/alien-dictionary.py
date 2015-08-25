@@ -12,10 +12,8 @@ class Solution(object):
         for i in xrange(len(words)):
             for c in words[i]:
                 nodes.add(c)
-
         for node in nodes:
             ancestors[node] = []
-        
         for i in xrange(1, len(words)):
             self.findEdges(words[i - 1], words[i], ancestors)
 
