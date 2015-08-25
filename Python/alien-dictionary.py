@@ -7,7 +7,7 @@ class Solution(object):
         :type words: List[str]
         :rtype: str
         """
-        # Find ancestors of each node by DFS
+        # Find ancestors of each node by DFS.
         nodes, ancestors = sets.Set(), {}
         for i in xrange(len(words)):
             for c in words[i]:
@@ -17,7 +17,7 @@ class Solution(object):
         for i in xrange(1, len(words)):
             self.findEdges(words[i - 1], words[i], ancestors)
 
-        # Output topological order by DFS
+        # Output topological order by DFS.
         result = []
         visited = {}
         for node in nodes:
