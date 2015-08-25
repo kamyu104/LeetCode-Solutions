@@ -26,7 +26,7 @@ public:
         }
     }
 
-    // Perform topological sort, return whether there is a cycle.
+    // Topological sort, return whether there is a cycle.
     bool topSortDFS(string *result, vector<bool> *visited,
                     vector<vector<bool>> *graph, const int root) {
         if ((*visited)[root]) {
