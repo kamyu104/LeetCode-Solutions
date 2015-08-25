@@ -37,16 +37,6 @@ public:
     } 
 
     string alienOrder(vector<string>& words) {
-        if (words.empty()) {
-            return "";
-        }
-        if (words.size() == 1) {
-            string word(words[0]);
-            // Unique characters.
-            word.erase(unique(word.begin(), word.end()), word.end());
-            return word;
-        }
-
         // Find ancestors of each node by DFS
         unordered_set<char> nodes;
         unordered_map<char, vector<char>> ancestors;
@@ -155,16 +145,6 @@ public:
 
     string alienOrder(vector<string>& words) {
         string result;
-        if (words.empty()) {
-            return result;
-        }
-        if (words.size() == 1) {
-            string word(words[0]);
-            // Unique characters.
-            word.erase(unique(word.begin(), word.end()), word.end());
-            return word;
-        }
-
         vector<vector<bool>> graph(26, vector<bool>(26));
         findDependency(words, &graph);
         findOrder(&graph, &result);
