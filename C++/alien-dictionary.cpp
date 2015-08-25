@@ -3,6 +3,74 @@
 
 class Solution {
 public:
+    void findEdges(const string &word1, const string &word2,
+                   unordered_map<char, vector<char>> *ancestors) {
+        // construct the graph
+        int len = min(word1.length(), word2.length());
+        for (int i = 0; i < len; ++i) {
+            if (word1[i] != word2[i]) {
+                (*ancestors)[word2[i]].emplace_back(word1[i]);
+                break;
+            }
+        }
+    }
+
+    bool topSortDFS(const char& root,
+                    const char& node,
+                    unordered_map<char, vector<char>> *ancestors,
+                    unordered_map<char, char> *visited,
+                    string *result) {
+        if (visited->emplace(make_pair(node, root)).second) {
+            for (auto& ancestor: (*ancestors)[node]) {
+                if (topSortDFS(root, ancestor, ancestors, visited, result)) {
+                    return true;
+                }
+            }
+            result->push_back(node);
+            return false;
+        } else if ((*visited)[node] == root) {
+            return true;
+        }
+    } 
+
+    string alienOrder(vector<string>& words) {
+        if (words.empty()) {
+            return "";
+        }
+        if (words.size() == 1) {
+            string word(words[0]);
+            // Unique characters.
+            word.erase(unique(word.begin(), word.end()), word.end());
+            return word;
+        }
+
+        // Find ancestors of each node by DFS
+        unordered_set<char> nodes;
+        unordered_map<char, vector<char>> ancestors;
+        for (int i = 0; i < words.size(); ++i) {
+            for (char c : words[i]) {
+                nodes.emplace(c);
+            }
+            if (i > 0) {
+                findEdges(words[i - 1], words[i], &ancestors);
+            }
+        }
+
+        // Output topological order by DFS
+        string result;
+        unordered_map<char, char> visited;
+        for (auto& node : nodes) {
+            if (topSortDFS(node, node, &ancestors, &visited, &result)) {
+                return "";
+            }
+        }
+        
+        return result;
+    }
+};
+
+class Solution2 {
+public:
     void findEdges(const string &word1, const string &word2, vector<vector<bool>> *graph) {
         int len = min(word1.length(), word2.length());
         for (int i = 0; i < len; ++i) {
@@ -30,7 +98,7 @@ public:
     bool topSortDFS(string *result, vector<bool> *visited,
                     vector<vector<bool>> *graph, const int root) {
         if ((*visited)[root]) {
-            *result = "";
+            result->clear();
             return true;
         }
         (*visited)[root] = true;
