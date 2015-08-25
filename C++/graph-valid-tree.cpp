@@ -12,7 +12,7 @@ public:
             return false;
         }
 
-        unordered_map<int,node> nodes;
+        unordered_map<int, node> nodes;
         for (const auto& edge : edges) {
             nodes[edge.first].neighbors.emplace_back(edge.second);
             nodes[edge.second].neighbors.emplace_back(edge.first);
