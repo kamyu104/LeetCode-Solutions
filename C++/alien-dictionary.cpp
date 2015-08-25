@@ -15,6 +15,7 @@ public:
         }
     }
 
+    // Topological sort, return whether there is a cycle.
     bool topSortDFS(const char& root,
                     const char& node,
                     unordered_map<char, vector<char>> *ancestors,
@@ -29,6 +30,8 @@ public:
             result->push_back(node);
             return false;
         } else if ((*visited)[node] == root) {
+            // Visited from the same root in the DFS path.
+            // So it is cyclic.
             return true;
         }
     } 
@@ -69,6 +72,7 @@ public:
     }
 };
 
+// Adjacency matrix method.
 class Solution2 {
 public:
     void findEdges(const string &word1, const string &word2, vector<vector<bool>> *graph) {
@@ -155,7 +159,10 @@ public:
             return result;
         }
         if (words.size() == 1) {
-            return words[0];
+            string word(words[0]);
+            // Unique characters.
+            word.erase(unique(word.begin(), word.end()), word.end());
+            return word;
         }
 
         vector<vector<bool>> graph(26, vector<bool>(26));
