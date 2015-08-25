@@ -26,10 +26,10 @@ class Solution(object):
             result.append(precedence)
             
             if precedence in out_degree:
-                for course in out_degree[precedence]:
-                    in_degree[course].discard(precedence)
-                    if not in_degree[course]:
-                        zero_in_degree_queue.append(course)
+                for c in out_degree[precedence]:
+                    in_degree[c].discard(precedence)
+                    if not in_degree[c]:
+                        zero_in_degree_queue.append(c)
             
                 del out_degree[precedence]
         
