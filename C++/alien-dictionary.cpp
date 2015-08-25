@@ -126,8 +126,8 @@ private:
     } 
 };
 
-// Adjacency matrix method.
-class Solution2 {
+// DFS with adjacency matrix solution.
+class Solution3 {
 public:
     string alienOrder(vector<string>& words) {
         string result;
