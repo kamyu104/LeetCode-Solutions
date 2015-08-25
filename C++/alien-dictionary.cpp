@@ -1,5 +1,5 @@
 // Time:  O(|V|+|E|) = O(26 + 26^2) = O(1)
-// Space: O(|E|) = O(26^2) = O(1)
+// Space: O(|V|+|E|) = O(26 + 26^2) = O(1)
 
 class Solution {
 public:
