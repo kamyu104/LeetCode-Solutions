@@ -40,7 +40,7 @@ class Solution:
     # @param {integer[][]} prerequisites
     # @return {integer[]}
     def findOrder(self, numCourses, prerequisites):
-        res, zero_in_degree_queue, in_degree, out_degree = [], [], {}, {}
+        res, zero_in_degree_queue, in_degree, out_degree = [], collections.deque(), {}, {}
         
         for i, j in prerequisites:
             if i not in in_degree:
@@ -55,7 +55,7 @@ class Solution:
                 zero_in_degree_queue.append(i)
         
         while zero_in_degree_queue:
-            prerequisite = zero_in_degree_queue.pop()
+            prerequisite = zero_in_degree_queue.popleft()
             res.append(prerequisite)
             
             if prerequisite in out_degree:
