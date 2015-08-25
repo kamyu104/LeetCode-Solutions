@@ -9,7 +9,7 @@ public:
         unordered_map<char, unordered_set<char>> in_degree, out_degree;
         queue<char> zero_in_degree_queue;
         for (const auto& word : words) {
-            for (char c : word) {
+            for (const auto& c : word) {
                 nodes.emplace(c);
             }
         }
@@ -71,7 +71,7 @@ public:
         unordered_set<char> nodes;
         unordered_map<char, vector<char>> ancestors;
         for (int i = 0; i < words.size(); ++i) {
-            for (char c : words[i]) {
+            for (const auto& c : words[i]) {
                 nodes.emplace(c);
             }
             if (i > 0) {
