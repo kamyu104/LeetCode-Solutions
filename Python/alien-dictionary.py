@@ -8,12 +8,12 @@ class Solution(object):
         :rtype: str
         """
         # Find ancestors of each node by DFS
-        nodes, ancestors = {}, {}
+        nodes, ancestors = sets.Set(), {}
         for i in xrange(len(words)):
             for c in words[i]:
-                nodes[c] = True
+                nodes.add(c)
 
-        for node in nodes.keys():
+        for node in nodes:
             ancestors[node] = []
         
         for i in xrange(1, len(words)):
@@ -22,7 +22,7 @@ class Solution(object):
         # Output topological order by DFS
         result = []
         visited = {}
-        for node in nodes.keys():
+        for node in nodes:
             if self.topSortDFS(node, node, ancestors, visited, result):
                 return ""
         
