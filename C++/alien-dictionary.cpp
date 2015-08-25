@@ -28,12 +28,12 @@ public:
                 }
             }
             result->push_back(node);
-            return false;
         } else if ((*visited)[node] == root) {
             // Visited from the same root in the DFS path.
             // So it is cyclic.
             return true;
         }
+        return false;
     } 
 
     string alienOrder(vector<string>& words) {
