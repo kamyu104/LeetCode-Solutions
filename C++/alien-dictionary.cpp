@@ -52,7 +52,7 @@ private:
     void findEdges(const string &word1, const string &word2,
                    unordered_map<char, unordered_set<char>> *in_degree,
                    unordered_map<char, unordered_set<char>> *out_degree) {
-        int len = min(word1.length(), word2.length());
+        const int len = min(word1.length(), word2.length());
         for (int i = 0; i < len; ++i) {
             if (word1[i] != word2[i]) {
                 (*in_degree)[word2[i]].emplace(word1[i]);
@@ -95,7 +95,7 @@ private:
     // Construct the graph.
     void findEdges(const string &word1, const string &word2,
                    unordered_map<char, vector<char>> *ancestors) {
-        int len = min(word1.length(), word2.length());
+        const int len = min(word1.length(), word2.length());
         for (int i = 0; i < len; ++i) {
             if (word1[i] != word2[i]) {
                 (*ancestors)[word2[i]].emplace_back(word1[i]);
@@ -139,7 +139,7 @@ public:
 
 private:
     void findEdges(const string &word1, const string &word2, vector<vector<bool>> *graph) {
-        int len = min(word1.length(), word2.length());
+        const int len = min(word1.length(), word2.length());
         for (int i = 0; i < len; ++i) {
             if (word1[i] != word2[i]) {
                 (*graph)[word1[i] - 'a'][word2[i] - 'a'] = true;
