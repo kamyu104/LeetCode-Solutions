@@ -16,18 +16,15 @@ class Solution(object):
         :rtype: int
         """
         gap = float("inf")
-        closet = root
+        closet = float("inf")
         while root:
+            if abs(root.val - target) < gap:
+                gap = abs(root.val - target)
+                closet = root
             if target == root.val:
                 return root.val
             elif target < root.val:
-                if abs(root.val - target) < gap:
-                    gap = abs(root.val - target)
-                    closet = root
                 root = root.left
             else:
-                if abs(root.val - target) < gap:
-                    gap = abs(root.val - target)
-                    closet = root
                 root = root.right
         return closet.val
