@@ -21,9 +21,9 @@ public:
                 gap = abs(root->val - target);
                 closest = root->val;
             }
-            if (root->val == target) {
+            if (target == root->val) {
                 break;
-            } else if (root->val > target) {
+            } else if (target < root->val) {
                 root = root->left;
             } else {
                 root = root->right;
