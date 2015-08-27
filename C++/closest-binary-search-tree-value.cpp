@@ -22,7 +22,7 @@ public:
                 closest = root->val;
             }
             if (root->val == target) {
-                return root->val;
+                break;
             } else if (root->val > target) {
                 root = root->left;
             } else {
