@@ -22,7 +22,7 @@ class Solution(object):
                 gap = abs(root.val - target)
                 closet = root
             if target == root.val:
-                return root.val
+                break
             elif target < root.val:
                 root = root.left
             else:
