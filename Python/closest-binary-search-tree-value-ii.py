@@ -17,10 +17,10 @@ class Solution(object):
         :rtype: List[int]
         """
         stack = []
-        node = self.closestValue(root, target, stack)
-        result = [node.val]
+        self.closestValue(root, target, stack)
+        result = [stack[-1].val]
         
-        smaller_it, larger_it = BSTIterator(node, stack), BSTIterator(node, stack)
+        smaller_it, larger_it = BSTIterator(stack), BSTIterator(stack)
         smaller, larger = smaller_it.prev(), larger_it.next()
         while len(result) < k:
             if abs(smaller - target) < abs(larger - target):
@@ -45,36 +45,38 @@ class Solution(object):
                 gap = abs(root.val - target)
                 closet = root
             if target == root.val:
-                closet = stack.pop()
-                break
+                return
             elif target < root.val:
                 root = root.left
             else:
                 root = root.right
-        return closet
-
+        while stack and stack[-1] != closet:
+            stack.pop()
 
 class BSTIterator:
     # @param root, a binary search tree's root node
-    def __init__(self, cur, stack):
+    def __init__(self, stack):
         self.stack = list(stack)
-        self.cur = cur
+        self.cur = self.stack.pop()
 
     # @return an integer, the next number
     def next(self):
         node = None
         if self.cur and self.cur.right:
+            self.stack.append(self.cur)
             node = self.cur.right
             while node.left:
                 self.stack.append(node)
                 node = node.left
         elif self.stack:
+            prev = self.cur
             node = self.stack.pop();
             while node:
-                if node.val > self.cur.val:
-                   break
+                if node.left is prev:
+                    break
                 else:
-                   node = self.stack.pop() if self.stack else None
+                    prev = node
+                    node = self.stack.pop() if self.stack else None
         self.cur = node
         return node.val if node else float("inf")
     
@@ -82,16 +84,19 @@ class BSTIterator:
     def prev(self):
         node = None
         if self.cur and self.cur.left:
+            self.stack.append(self.cur)
             node = self.cur.left
             while node.right:
                 self.stack.append(node)
                 node = node.right
         elif self.stack:
+            prev = self.cur
             node = self.stack.pop();
             while node:
-                if node.val < self.cur.val:
-                   break
+                if node.right is prev:
+                    break
                 else:
-                   node = self.stack.pop() if self.stack else None
+                    prev = node
+                    node = self.stack.pop() if self.stack else None
         self.cur = node
         return node.val if node else float("-inf")
