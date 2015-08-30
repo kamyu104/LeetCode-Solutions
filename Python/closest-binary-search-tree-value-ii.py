@@ -70,7 +70,7 @@ class BSTIterator:
                 node = node.left
         elif self.stack:
             prev = self.cur
-            node = self.stack.pop();
+            node = self.stack.pop()
             while node:
                 if node.left is prev:
                     break
@@ -91,7 +91,7 @@ class BSTIterator:
                 node = node.right
         elif self.stack:
             prev = self.cur
-            node = self.stack.pop();
+            node = self.stack.pop()
             while node:
                 if node.right is prev:
                     break
