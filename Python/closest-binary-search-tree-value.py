@@ -16,15 +16,15 @@ class Solution(object):
         :rtype: int
         """
         gap = float("inf")
-        closet = float("inf")
+        closest = float("inf")
         while root:
             if abs(root.val - target) < gap:
                 gap = abs(root.val - target)
-                closet = root
+                closest = root
             if target == root.val:
                 break
             elif target < root.val:
                 root = root.left
             else:
                 root = root.right
-        return closet.val
+        return closest.val
