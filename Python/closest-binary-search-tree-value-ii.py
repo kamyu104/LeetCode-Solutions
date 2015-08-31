@@ -71,23 +71,27 @@ class Solution2(object):
         self.closestValue(root, target, stack)
         result = [stack[-1].val]
         
-        smaller_it, larger_it = BSTIterator(stack), BSTIterator(stack)
-        smaller, larger = smaller_it.prev(), larger_it.next()
+        # The forward or backward iterator.
+        backward = lambda node: node.left
+        forward = lambda node: node.right
+        
+        smaller_it, larger_it = BSTIterator(stack, backward, forward), BSTIterator(stack, forward, backward)
+        node = smaller_it.next()
+        smaller = node.val if node else float("-inf")
+        node = larger_it.next()
+        larger = node.val if node else float("inf")
         while len(result) < k:
             if abs(smaller - target) < abs(larger - target):
                 result.append(smaller)
-                smaller = smaller_it.prev()
+                node = smaller_it.next()
+                smaller = node.val if node else float("-inf")
             else:
                 result.append(larger)
-                larger = larger_it.next()
+                node = larger_it.next()
+                larger = node.val if node else float("inf")
         return result
 
     def closestValue(self, root, target, stack):
-        """
-        :type root: TreeNode
-        :type target: float
-        :rtype: int
-        """
         gap = float("inf")
         closet = float("inf")
         while root:
@@ -97,57 +101,37 @@ class Solution2(object):
                 closet = root
             if target == root.val:
                 return
-            elif target < root.val:
-                root = root.left
             else:
-                root = root.right
+                root = root.left if target < root.val else root.right
+
         while stack and stack[-1] != closet:
             stack.pop()
 
 class BSTIterator:
     # @param root, a binary search tree's root node
-    def __init__(self, stack):
+    def __init__(self, stack, child1, child2):
         self.stack = list(stack)
         self.cur = self.stack.pop()
+        self.child1 = child1
+        self.child2 = child2
 
     # @return an integer, the next number
     def next(self):
         node = None
-        if self.cur and self.cur.right:
+        if self.cur and self.child1(self.cur):
             self.stack.append(self.cur)
-            node = self.cur.right
-            while node.left:
+            node = self.child1(self.cur)
+            while self.child2(node):
                 self.stack.append(node)
-                node = node.left
+                node = self.child2(node)
         elif self.stack:
             prev = self.cur
             node = self.stack.pop()
             while node:
-                if node.left is prev:
+                if self.child2(node) is prev:
                     break
                 else:
                     prev = node
                     node = self.stack.pop() if self.stack else None
         self.cur = node
-        return node.val if node else float("inf")
-    
-    # @return an integer, the previous number
-    def prev(self):
-        node = None
-        if self.cur and self.cur.left:
-            self.stack.append(self.cur)
-            node = self.cur.left
-            while node.right:
-                self.stack.append(node)
-                node = node.right
-        elif self.stack:
-            prev = self.cur
-            node = self.stack.pop()
-            while node:
-                if node.right is prev:
-                    break
-                else:
-                    prev = node
-                    node = self.stack.pop() if self.stack else None
-        self.cur = node
-        return node.val if node else float("-inf")
+        return node
