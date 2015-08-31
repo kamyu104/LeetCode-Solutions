@@ -49,4 +49,4 @@ class Solution(object):
     def twoDigits(self, num, lookup):
         if num in lookup:
             return lookup[num]
-        return " ".join([lookup[(num / 10) * 10], lookup[num % 10]])
+        return lookup[(num / 10) * 10] + " " + lookup[num % 10]
