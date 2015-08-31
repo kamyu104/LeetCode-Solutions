@@ -45,7 +45,7 @@ class Solution(object):
         backward_stack = list(forward_stack)
         nextNode(backward_stack, backward, forward)
     
-        # Get the closest k values by advancing the iterators of the stacks
+        # Get the closest k values by advancing the iterators of the stacks.
         result = []
         for _ in xrange(k):
             if not backward_stack or \
