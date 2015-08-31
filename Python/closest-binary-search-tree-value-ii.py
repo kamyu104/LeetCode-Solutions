@@ -16,7 +16,6 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-    
         # Helper to make a stack to the next node.
         def nextNode(stack, child1, child2):
             if stack:
