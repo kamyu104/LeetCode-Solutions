@@ -67,45 +67,45 @@ class Solution2(object):
         :type k: int
         :rtype: List[int]
         """
+        # Build the stack to the closet node.
         stack = []
-        self.closestValue(root, target, stack)
-        result = [stack[-1].val]
+        node = self.closestValue(root, target, stack)
+        result = [node.val]
         
         # The forward or backward iterator.
         backward = lambda node: node.left
         forward = lambda node: node.right
-        
         smaller_it, larger_it = BSTIterator(stack, backward, forward), BSTIterator(stack, forward, backward)
-        node = smaller_it.next()
-        smaller = node.val if node else float("-inf")
-        node = larger_it.next()
-        larger = node.val if node else float("inf")
-        while len(result) < k:
+        smaller_node, larger_node = smaller_it.next(), larger_it.next()
+
+        # Get the closest k values by advancing the iterators of the stacks.
+        for _ in xrange(k - 1):
+            smaller = smaller_node.val if smaller_node else float("-inf")
+            larger = larger_node.val if larger_node else float("inf")
             if abs(smaller - target) < abs(larger - target):
                 result.append(smaller)
-                node = smaller_it.next()
-                smaller = node.val if node else float("-inf")
+                smaller_node = smaller_it.next()
             else:
                 result.append(larger)
-                node = larger_it.next()
-                larger = node.val if node else float("inf")
+                larger_node = larger_it.next()
         return result
 
     def closestValue(self, root, target, stack):
         gap = float("inf")
-        closet = float("inf")
+        closet = None
         while root:
             stack.append(root)
             if abs(root.val - target) < gap:
                 gap = abs(root.val - target)
                 closet = root
             if target == root.val:
-                return
+                break
             else:
                 root = root.left if target < root.val else root.right
 
         while stack and stack[-1] != closet:
             stack.pop()
+        return closet
 
 class BSTIterator:
     # @param root, a binary search tree's root node
@@ -115,7 +115,7 @@ class BSTIterator:
         self.child1 = child1
         self.child2 = child2
 
-    # @return an integer, the next number
+    # @return an integer, the next node
     def next(self):
         node = None
         if self.cur and self.child1(self.cur):
