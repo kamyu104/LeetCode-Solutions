@@ -67,7 +67,7 @@ class Solution2(object):
         :type k: int
         :rtype: List[int]
         """
-        # Build the stack to the closet node.
+        # Build the stack to the closest node.
         stack = []
         node = self.closestValue(root, target, stack)
         result = [node.val]
@@ -92,20 +92,20 @@ class Solution2(object):
 
     def closestValue(self, root, target, stack):
         gap = float("inf")
-        closet = None
+        closest = None
         while root:
             stack.append(root)
             if abs(root.val - target) < gap:
                 gap = abs(root.val - target)
-                closet = root
+                closest = root
             if target == root.val:
                 break
             else:
                 root = root.left if target < root.val else root.right
 
-        while stack and stack[-1] != closet:
+        while stack and stack[-1] != closest:
             stack.pop()
-        return closet
+        return closest
 
 class BSTIterator:
     # @param root, a binary search tree's root node
