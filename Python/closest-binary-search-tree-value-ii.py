@@ -67,6 +67,36 @@ class Solution2(object):
         :type k: int
         :rtype: List[int]
         """
+        # Helper class to make a stack to the next node.
+        class BSTIterator:
+            # @param root, a binary search tree's root node
+            def __init__(self, stack, child1, child2):
+                self.stack = list(stack)
+                self.cur = self.stack.pop()
+                self.child1 = child1
+                self.child2 = child2
+        
+            # @return an integer, the next node
+            def next(self):
+                node = None
+                if self.cur and self.child1(self.cur):
+                    self.stack.append(self.cur)
+                    node = self.child1(self.cur)
+                    while self.child2(node):
+                        self.stack.append(node)
+                        node = self.child2(node)
+                elif self.stack:
+                    prev = self.cur
+                    node = self.stack.pop()
+                    while node:
+                        if self.child2(node) is prev:
+                            break
+                        else:
+                            prev = node
+                            node = self.stack.pop() if self.stack else None
+                self.cur = node
+                return node
+
         # Build the stack to the closet node.
         stack = []
         while root:
@@ -78,8 +108,7 @@ class Solution2(object):
         # The forward or backward iterator.
         backward = lambda node: node.left
         forward = lambda node: node.right
-        smaller_it = self.BSTIterator(stack, backward, forward)
-        larger_it = self.BSTIterator(stack, forward, backward)
+        smaller_it, larger_it = BSTIterator(stack, backward, forward), BSTIterator(stack, forward, backward)
         smaller_node, larger_node = smaller_it.next(), larger_it.next()
 
         # Get the closest k values by advancing the iterators of the stacks.
@@ -92,33 +121,5 @@ class Solution2(object):
                 result.append(larger_node.val)
                 larger_node = larger_it.next()
         return result
-    
-    class BSTIterator:
-        # @param root, a binary search tree's root node
-        def __init__(self, stack, child1, child2):
-            self.stack = list(stack)
-            self.cur = self.stack.pop()
-            self.child1 = child1
-            self.child2 = child2
-    
-        # @return an integer, the next node
-        def next(self):
-            node = None
-            if self.cur and self.child1(self.cur):
-                self.stack.append(self.cur)
-                node = self.child1(self.cur)
-                while self.child2(node):
-                    self.stack.append(node)
-                    node = self.child2(node)
-            elif self.stack:
-                prev = self.cur
-                node = self.stack.pop()
-                while node:
-                    if self.child2(node) is prev:
-                        break
-                    else:
-                        prev = node
-                        node = self.stack.pop() if self.stack else None
-            self.cur = node
-            return node
+
 
