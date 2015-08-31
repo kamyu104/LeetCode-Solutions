@@ -16,7 +16,7 @@ public:
         // The forward or backward iterator.
         const auto backward = [](const vector<TreeNode*>& s) { return s.back()->left; };
         const auto forward = [](const vector<TreeNode*>& s) { return s.back()->right; };
-        const auto dist = [target](const TreeNode* a, const TreeNode* b) { 
+        const auto closest = [target](const TreeNode* a, const TreeNode* b) { 
                               return abs(a->val - target) < abs(b->val - target); 
                           };
 
@@ -28,7 +28,7 @@ public:
         }
 
         // Get the stack to the next smaller node.
-        vector<TreeNode*> forward_stack(s.begin(), next(min_element(s.begin(), s.end(), dist)));
+        vector<TreeNode*> forward_stack(s.begin(), next(min_element(s.begin(), s.end(), closest)));
         vector<TreeNode*> backward_stack(forward_stack);
         nextNode(backward_stack, backward, forward);
     
@@ -36,11 +36,11 @@ public:
         vector<int> result;
         for (int i = 0; i < k; ++i) {
             if (backward_stack.empty() ||
-                !forward_stack.empty() && dist(forward_stack.back(), backward_stack.back())) {
+                !forward_stack.empty() && closest(forward_stack.back(), backward_stack.back())) {
                 result.emplace_back(forward_stack.back()->val);
                 nextNode(forward_stack, forward, backward);
             } else if (forward_stack.empty() ||
-                       !forward_stack.empty() && !dist(forward_stack.back(), backward_stack.back())) {
+                       !forward_stack.empty() && !closest(forward_stack.back(), backward_stack.back())) {
                 result.emplace_back(backward_stack.back()->val);
                 nextNode(backward_stack, backward, forward);
             }
