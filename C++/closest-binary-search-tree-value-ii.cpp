@@ -16,9 +16,9 @@ public:
         // The forward or backward iterator.
         const auto backward = [](const vector<TreeNode*>& s) { return s.back()->left; };
         const auto forward = [](const vector<TreeNode*>& s) { return s.back()->right; };
-        const auto closest = [target](const TreeNode* a, const TreeNode* b) { 
+        const auto closest = [&target](const TreeNode* a, const TreeNode* b) { 
                                 return abs(a->val - target) < abs(b->val - target); 
-                             };
+                            };
 
         // Build the stack to the closest node.
         vector<TreeNode*> s;
@@ -49,9 +49,8 @@ public:
     }
     
     // Helper to make a stack to the next node.
-    void nextNode(vector<TreeNode*>& s, 
-                  const function<TreeNode*(const vector<TreeNode*>&)>& child1,
-                  const function<TreeNode*(const vector<TreeNode*>&)>& child2) {
+    template<typename T, typename U>
+    void nextNode(vector<TreeNode*>& s, const T& child1, const U& child2) {
         if (!s.empty()) {
             if (child2(s)) {
                 s.emplace_back(child2(s));
