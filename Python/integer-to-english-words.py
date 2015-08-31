@@ -28,7 +28,7 @@ class Solution(object):
         unit = ["", "Thousand", "Million", "Billion"]
 
         res, i = [], 0
-        while num != 0:
+        while num:
             cur = num % 1000
             if num % 1000:
                 res.append(self.threeDigits(cur, lookup, unit[i]))
@@ -38,7 +38,7 @@ class Solution(object):
 
     def threeDigits(self, num, lookup, unit):
         res = []
-        if num / 100 != 0:
+        if num / 100:
             res = [lookup[num / 100] + " " + "Hundred"]
         if num % 100:
             res.append(self.twoDigits(num % 100, lookup))
