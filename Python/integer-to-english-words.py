@@ -48,5 +48,5 @@ class Solution(object):
     
     def twodigits(self, num, lookup):
         if num in lookup:
-            return str(lookup[num])
+            return lookup[num]
         return " ".join([lookup[(num / 10) * 10], lookup[num % 10]])
