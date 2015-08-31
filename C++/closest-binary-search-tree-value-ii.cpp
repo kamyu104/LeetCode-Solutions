@@ -17,8 +17,8 @@ public:
         const auto backward = [](const vector<TreeNode*>& s) { return s.back()->left; };
         const auto forward = [](const vector<TreeNode*>& s) { return s.back()->right; };
         const auto closest = [target](const TreeNode* a, const TreeNode* b) { 
-                              return abs(a->val - target) < abs(b->val - target); 
-                          };
+                                return abs(a->val - target) < abs(b->val - target); 
+                             };
 
         // Build the stack to the closest node.
         vector<TreeNode*> s;
