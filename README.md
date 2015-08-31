@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-08-29), there are `255` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-08-31), there are `256` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `272` questions.
+Here is the classification of all `273` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -121,6 +121,7 @@ Shell
 205| [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [Python](./Python/isomorphic-strings.py) | _O(n)_ | _O(1)_       | Easy           ||    
 214| [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/) | [C++](./C++/shortest-palindrome.cpp) [Python](./Python/shortest-palindrome.py) | _O(n)_ | _O(n)_ |  Hard || `KMP Algorithm` `Manacher's Algorithm`
 271| [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | [Python](./Python/encode-and-decode-strings.py) | _O(n)_ | _O(1)_ | Medium         | 📖 |
+273| [Integer to English Words](https://leetcode.com/problems/integer-to-english-words/) | [Python](./Python/integer-to-english-words.py) | _O(logn)_ | _O(1)_ | Medium         | |
 
 --- 
 
