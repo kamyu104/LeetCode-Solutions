@@ -31,22 +31,22 @@ class Solution(object):
         while num != 0:
             cur = num % 1000
             if num % 1000:
-                res.append(self.threedigits(cur, lookup, unit[i]))
+                res.append(self.threeDigits(cur, lookup, unit[i]))
             num //= 1000
             i += 1
         return " ".join(res[::-1])
 
-    def threedigits(self, num, lookup, unit):
+    def threeDigits(self, num, lookup, unit):
         res = []
         if num / 100 != 0:
             res = [lookup[num / 100] + " " + "Hundred"]
         if num % 100:
-            res.append(self.twodigits(num % 100, lookup))
+            res.append(self.twoDigits(num % 100, lookup))
         if unit != "":
             res.append(unit)
         return " ".join(res)
     
-    def twodigits(self, num, lookup):
+    def twoDigits(self, num, lookup):
         if num in lookup:
             return lookup[num]
         return " ".join([lookup[(num / 10) * 10], lookup[num % 10]])
