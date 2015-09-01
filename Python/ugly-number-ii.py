@@ -27,7 +27,7 @@ class Solution:
 
         heap = []
         heapq.heappush(heap, 1)
-        for i in xrange(n):
+        for _ in xrange(n):
             ugly_number = heapq.heappop(heap)
             if ugly_number % 2 == 0:
                 heapq.heappush(heap, ugly_number * 2)
