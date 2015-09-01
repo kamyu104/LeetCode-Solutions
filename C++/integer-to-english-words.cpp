@@ -34,6 +34,9 @@ public:
     }
     
     string join(const vector<string>& strings, const string& delim) {
+        if (strings.empty()) {
+            return "";
+        }
         ostringstream imploded;
         copy(strings.begin(), prev(strings.end()), ostream_iterator<string>(imploded, delim.c_str()));
         return imploded.str() + *prev(strings.end());
