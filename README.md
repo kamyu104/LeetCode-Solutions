@@ -353,7 +353,7 @@ Shell
 207| [Course Schedule](https://leetcode.com/problems/course-schedule/)| [Python](./Python/course-schedule.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         || Topological Sort |
 210| [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)| [Python](./Python/course-schedule-ii.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         || Topological Sort |
 261| [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)| [C++](./C++/graph-valid-tree.cpp) [Python](./Python/graph-valid-tree.py)   | _O(\|V\| + \|E\|)_          | _O(\|V\|)_          | Medium         | 📖 |
-269| [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) | [C++](./C++/alien-dictionary.cpp)  [Python](./Python/alien-dictionary.py)  | _O(n)_ | _O(1)_ | Medium         |📖| Topological Sort, BFS, DFS |
+269| [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) | [C++](./C++/alien-dictionary.cpp)  [Python](./Python/alien-dictionary.py)  | _O(n)_ | _O(1)_ | Hard         |📖| Topological Sort, BFS, DFS |
 
 --- 
 
