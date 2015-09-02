@@ -15,7 +15,7 @@ public:
         // Xor all the elemets in the subset to get x.
         vector<int> result(2, 0);
         for (const auto& i : nums) {
-            result[!(i & x_xor_y)] ^= i;
+            result[static_cast<bool>(i & x_xor_y)] ^= i;
         }
         return result;
     }
