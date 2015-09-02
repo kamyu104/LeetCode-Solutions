@@ -21,10 +21,10 @@ class Solution:
     # @return {integer[]}
     def singleNumber(self, nums):
         x_xor_y = reduce(operator.xor, nums)
-        x_xor_y &= -x_xor_y
+        bit =  x_xor_y & -x_xor_y
         result = [0, 0]
         for i in nums:
-            result[bool(i & x_xor_y)] ^= i
+            result[bool(i & bit)] ^= i
         return result
         
 class Solution2:
