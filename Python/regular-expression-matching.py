@@ -40,7 +40,7 @@ class Solution:
                 if p[j-1] != '*':
                     result[i % k][j] = result[(i-1) % k][j-1] and (s[i-1] == p[j-1] or p[j-1] == '.')
                 else:
-                    result[i % k][j] = result[i % k][j-2] or (result[(i-1) % k][j] and (s[i-1] == p[j-2] or p[j-2]=='.'))
+                    result[i % k][j] = result[i % k][j-2] or (result[(i-1) % k][j] and (s[i-1] == p[j-2] or p[j-2] == '.'))
                     
         return result[len(s) % k][len(p)]
 
