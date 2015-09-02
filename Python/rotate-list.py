@@ -33,7 +33,7 @@ class Solution:
         cur.next = head
         
         cur = head
-        shift = len - k % len - 1 
+        shift = len - k%len - 1 
         while shift > 0:
             cur = cur.next
             shift -= 1
