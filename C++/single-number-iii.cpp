@@ -7,7 +7,9 @@ public:
         // Xor all the elements to get x ^ y.
         const auto x_xor_y = accumulate(nums.cbegin(), nums.cend(), 0, bit_xor<int>());
 
-        // Get the last bit where 1 occurs.
+        // Get the last bit where 1 occurs by "x & ~(x - 1)"
+        // Becease -(x - 1) = ~(x - 1) + 1 <=> -x = ~(x - 1) 
+        // So we can also get the last bit where 1 occurs by "x & -x"
         const auto bit = x_xor_y & -x_xor_y;
 
         // Get the subset of A where the number has the bit.
