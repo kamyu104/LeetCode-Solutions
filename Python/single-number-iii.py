@@ -24,7 +24,7 @@ class Solution:
         x_xor_y &= -x_xor_y
         result = [0, 0]
         for i in nums:
-            result[not i & x_xor_y] ^= i
+            result[bool(i & x_xor_y)] ^= i
         return result
         
 class Solution2:
