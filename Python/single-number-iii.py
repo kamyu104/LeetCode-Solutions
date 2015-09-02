@@ -20,6 +20,17 @@ class Solution:
     # @param {integer[]} nums
     # @return {integer[]}
     def singleNumber(self, nums):
+        x_xor_y = reduce(operator.xor, nums)
+        x_xor_y &= -x_xor_y
+        result = [0, 0]
+        for i in nums:
+            result[not i & x_xor_y] ^= i
+        return result
+        
+class Solution2:
+    # @param {integer[]} nums
+    # @return {integer[]}
+    def singleNumber(self, nums):
         x_xor_y = 0
         for i in nums:
             x_xor_y ^= i
@@ -31,4 +42,4 @@ class Solution:
             if i & bit:
                 x ^= i
 
-        return [x, x_xor_y ^ x]
+        return [x, x ^ x_xor_y]
