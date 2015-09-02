@@ -28,7 +28,7 @@ public:
         }
 
         // Get the stack to the next smaller node.
-        vector<TreeNode*> forward_stack(s.begin(), next(min_element(s.begin(), s.end(), closest)));
+        vector<TreeNode*> forward_stack(s.cbegin(), next(min_element(s.cbegin(), s.cend(), closest)));
         vector<TreeNode*> backward_stack(forward_stack);
         nextNode(backward_stack, backward, forward);
     
