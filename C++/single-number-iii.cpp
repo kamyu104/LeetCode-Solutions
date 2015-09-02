@@ -6,6 +6,7 @@ public:
     vector<int> singleNumber(vector<int>& nums) {
         // Xor all the elements to get x ^ y.
         int x_xor_y = accumulate(nums.cbegin(), nums.cend(), 0, bit_xor<int>());
+
         // Get the last bit where 1 occurs.
         x_xor_y &= -x_xor_y;
 
