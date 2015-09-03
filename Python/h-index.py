@@ -41,7 +41,5 @@ class Solution2(object):
         :type citations: List[int]
         :rtype: int
         """
-        sorted(citations, reverse=True)
-        h = 0
         return sum(1 if x >= i + 1 else 0 for i, x in enumerate(sorted(citations, reverse=True)))
   
