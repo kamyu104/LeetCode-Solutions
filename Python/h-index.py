@@ -28,6 +28,7 @@ class Solution(object):
         n = len(citations);
         count = [0] * (n + 1)
         for x in citations:
+            # Put all x >= n in the same bucket.
             if x >= n:
                 count[n] += 1
             else:
