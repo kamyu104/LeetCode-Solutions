@@ -109,7 +109,7 @@ class Solution3:
         else:
             return A[i + pa - 1]
 
-# using list slicing (O(k)) may be slower than solution1
+# using list slicing (O(k)) may be slower than Solution3
 class Solution4:
     # @return a float
     def findMedianSortedArrays(self, A, B):
