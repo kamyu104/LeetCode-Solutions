@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-09-04), there are `258` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-09-05), there are `259` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `275` questions.
+Here is the classification of all `276` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -414,6 +414,7 @@ Shell
 221| [Maximal Square](https://leetcode.com/problems/maximal-square/)| [C++](./C++/maximal-square.cpp) [Python](./Python/maximal-square.py) | _O(n^2)_         | _O(n)_          | Medium           | EPI |
 256| [Paint House](https://leetcode.com/problems/paint-house/) | [C++](./C++/paint-house.cpp) [Python](./Python/paint-house.py) | _O(n)_| _O(1)_| Medium |📖||
 265| [Paint House II](https://leetcode.com/problems/paint-house-ii/) | [C++](./C++/paint-house-ii.cpp) [Python](./Python/paint-house-ii.py) | _O(n * k)_| _O(k)_| Hard |📖||
+276| [Paint Fence](https://leetcode.com/problems/paint-fence/) | [C++](./C++/paint-fence.cpp) [Python](./Python/paint-fence.py) | _O(n)_| _O(1)_| Easy |📖||
 
 --- 
 
