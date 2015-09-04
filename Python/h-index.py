@@ -18,6 +18,7 @@
 # Note: If there are several possible values for h, the maximum one is taken as the h-index.
 #
 
+# Counting sort.
 class Solution(object):
     def hIndex(self, citations):
         """
