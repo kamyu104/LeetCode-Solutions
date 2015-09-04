@@ -8,6 +8,7 @@ public:
         const auto n = citations.size();
         vector<int> count(n + 1, 0);
         for (const auto& x : citations) {
+            // Put all x >= n in the same bucket.
             if (x >= n) {
                 ++count[n];
             } else {
