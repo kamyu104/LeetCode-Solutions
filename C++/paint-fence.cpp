@@ -1,5 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
+
+// DP with rolling window.
 class Solution {
 public:
     int numWays(int n, int k) {
@@ -20,6 +22,7 @@ public:
 
 // Time:  O(n)
 // Space: O(n)
+// DP solution.
 class Solution2 {
 public:
     int numWays(int n, int k) {
