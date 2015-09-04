@@ -60,7 +60,7 @@ class Solution2(object):
   
 # Time:  O(nlogn)
 # Space: O(n)
-class Solution2(object):
+class Solution3(object):
     def hIndex(self, citations):
         """
         :type citations: List[int]
