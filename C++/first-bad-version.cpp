@@ -1,4 +1,4 @@
-// Time:  O(nlogn)
+// Time:  O(logn)
 // Space: O(1)
 
 // Forward declaration of isBadVersion API.
@@ -11,7 +11,6 @@ public:
 
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            // Is target
             if (isBadVersion(mid)) {
                 right = mid - 1;
             } else {
