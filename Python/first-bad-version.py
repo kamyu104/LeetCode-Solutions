@@ -29,7 +29,6 @@ class Solution(object):
         :rtype: int
         """
         left, right = 1, n
-
         while left <= right:
             mid = left + (right - left) / 2
             if isBadVersion(mid):
