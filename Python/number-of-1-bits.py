@@ -1,4 +1,4 @@
-# Time:  O(m)
+# Time:  O(logn)
 # Space: O(1)
 #
 # Write a function that takes an unsigned integer 
