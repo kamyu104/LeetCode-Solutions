@@ -12,6 +12,15 @@ class Solution:
     # @param n, an integer
     # @return an integer
     def rangeBitwiseAnd(self, m, n):
+        while m < n:
+            n &= n - 1
+        return n
+
+class Solution2:
+    # @param m, an integer
+    # @param n, an integer
+    # @return an integer
+    def rangeBitwiseAnd(self, m, n):
         i, diff = 0, n-m
         while diff:
             diff >>= 1
