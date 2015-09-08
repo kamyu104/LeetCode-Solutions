@@ -1,4 +1,4 @@
-# Time : O(n)
+# Time : O(logn)
 # Space: O(1)
 #
 # Reverse bits of a given 32 bits unsigned integer.
