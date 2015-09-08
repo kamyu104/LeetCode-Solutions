@@ -19,16 +19,15 @@ class Solution:
     def minSubArrayLen(self, s, nums):
         start = 0
         sum = 0
-        min_len = float("inf")
+        min_size = float("inf")
         for i in xrange(len(nums)):
             sum += nums[i]
             while sum >= s:
-                min_len = min(min_len, i - start + 1)
+                min_size = min(min_size, i - start + 1)
                 sum -= nums[start]
                 start += 1
-        if min_len == float("inf"):
-            return 0
-        return min_len
+
+        return min_size if min_size != float("inf") else 0
 
 # Time:  O(nlogn)
 # Space: O(n)
@@ -48,9 +47,8 @@ class Solution2:
                                     sum_from_start[i] - nums[i] + s)
             if end < len(sum_from_start):
                 min_size = min(min_size, end - i + 1)
-        if min_size == float("inf"):
-            return 0
-        return min_size
+
+        return min_size if min_size != float("inf") else 0
     
     def binarySearch(self, compare, A, start, end, target):
         while start < end:
