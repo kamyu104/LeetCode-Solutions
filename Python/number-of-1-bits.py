@@ -1,4 +1,4 @@
-# Time:  O(logn)
+# Time:  O(logn) = O(32)
 # Space: O(1)
 #
 # Write a function that takes an unsigned integer 
