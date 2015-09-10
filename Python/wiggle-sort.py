@@ -12,6 +12,7 @@ class Solution(object):
                 (not (i & 1) and nums[i - 1] < nums[i]):
                 nums[i - 1], nums[i] = nums[i], nums[i - 1]
 
+
 class Solution2(object):
     def wiggleSort(self, nums):
         """
