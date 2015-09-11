@@ -1,4 +1,4 @@
-# Time:  O(n1 + n2 + ...)
+# Time:  O(n)
 # Space: O(1)
 #
 # Write a function to find the longest common prefix string amongst an array of strings.
