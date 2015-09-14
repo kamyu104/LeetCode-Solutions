@@ -28,7 +28,7 @@ public:
             isSame(root, root->right, right)) {
                 ++(*count);
                 return true;
-            }
+        }
         return false;
     }
     
