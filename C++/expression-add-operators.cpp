@@ -23,8 +23,8 @@ public:
         int num = 0;
         string num_str;
         for (int i = pos; i < s.length(); ++i) {
-            num_str.push_back(s[i]);
             num = num * 10 + s[i] - '0';
+            num_str.push_back(s[i]);
             // Avoid overflow and "00...".
             if (to_string(num) != num_str) {
                 break;
