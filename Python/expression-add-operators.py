@@ -31,8 +31,7 @@ class Solution(object):
                 e = "".join(expr)
                 e = e[1:] if e[0] == '+' else e
                 result.append(e)
-                return True
-            return False
+            return
 
         num, i = 0, pos
         num_str = ""
