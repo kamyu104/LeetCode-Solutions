@@ -13,7 +13,6 @@ public:
     void addOperatorsDFS(const string& s, const int& target, const int& pos,
                          const int& operand1, const int& operand2, vector<string> *expr,
                          vector<string> *result) {
-        // Base Case 1
         if (pos == s.length()) {
             if (operand1 + operand2 == target) {
                 result->emplace_back(move(join(*expr)));
