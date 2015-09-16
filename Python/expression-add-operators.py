@@ -25,7 +25,6 @@ class Solution(object):
         return result
 
     def addOperatorsDFS(self, s, target, pos, operand1, operand2, expr, result):
-        # Base Case 1
         if pos == len(s):
             if operand1 + operand2 == target:
                 e = "".join(expr)
