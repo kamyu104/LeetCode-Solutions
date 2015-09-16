@@ -35,34 +35,32 @@ class Solution(object):
         return result
 
     def addOperatorsDFS(self, num, target, pos, operand1, operand2, expr, result):
-        if pos == len(num):
-            if operand1 + operand2 == target:
+        if pos == len(num) and operand1 + operand2 == target:
                 e = "".join(expr)
                 result.append(e)
-            return
-
-        val, i = 0, pos
-        val_str = ""
-        while i < len(num):
-            val = val * 10 + ord(num[i]) - ord('0')
-            val_str += num[i]
-            if str(val) != val_str:
-                break
-
-            # Case '+':
-            expr.append("+" + val_str)
-            self.addOperatorsDFS(num, target, i + 1, operand1 + operand2, val, expr, result)
-            expr.pop()
-
-            # Case '-':
-            expr.append("-" + val_str)
-            self.addOperatorsDFS(num, target, i + 1, operand1 + operand2, -val, expr, result)
-            expr.pop()
+        else:
+            val, i = 0, pos
+            val_str = ""
+            while i < len(num):
+                val = val * 10 + ord(num[i]) - ord('0')
+                val_str += num[i]
+                if str(val) != val_str:
+                    break
     
-            # Case '*':
-            expr.append("*" + val_str)
-            self.addOperatorsDFS(num, target, i + 1, operand1, operand2 * val, expr, result)
-            expr.pop()
+                # Case '+':
+                expr.append("+" + val_str)
+                self.addOperatorsDFS(num, target, i + 1, operand1 + operand2, val, expr, result)
+                expr.pop()
     
-            i += 1
+                # Case '-':
+                expr.append("-" + val_str)
+                self.addOperatorsDFS(num, target, i + 1, operand1 + operand2, -val, expr, result)
+                expr.pop()
+        
+                # Case '*':
+                expr.append("*" + val_str)
+                self.addOperatorsDFS(num, target, i + 1, operand1, operand2 * val, expr, result)
+                expr.pop()
+        
+                i += 1
   
