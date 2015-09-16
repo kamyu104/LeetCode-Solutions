@@ -16,14 +16,7 @@ public:
         // Base Case 1
         if (pos == s.length()) {
             if (operand1 + operand2 == target) {
-                string e;
-                for (int i = 0; i < expr->size(); ++i) {
-                    if (i == 0 && (*expr)[i] == "+") {  // Skip '+' at the beginning of the string.
-                        continue;
-                    }
-                    e.append((*expr)[i]);
-                }
-                result->emplace_back(move(e));
+                result->emplace_back(move(join(*expr)));
                 return true;
             }
             return false;
@@ -65,5 +58,16 @@ public:
                 break;
             }
         }
+    }
+    
+    string join(const vector<string>& expr) {
+        string e;
+        for (int i = 0; i < expr.size(); ++i) {
+            if (i == 0 && expr[i] == "+") {  // Skip '+' at the beginning of the string.
+                continue;
+            }
+            e.append(expr[i]);
+        }
+        return e;
     }
 };
