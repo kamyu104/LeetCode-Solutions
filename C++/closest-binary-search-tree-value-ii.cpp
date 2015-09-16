@@ -36,11 +36,11 @@ public:
         vector<int> result;
         for (int i = 0; i < k; ++i) {
             if (backward_stack.empty() ||
-                !forward_stack.empty() && closest(forward_stack.back(), backward_stack.back())) {
+                (!forward_stack.empty() && closest(forward_stack.back(), backward_stack.back()))) {
                 result.emplace_back(forward_stack.back()->val);
                 nextNode(forward_stack, forward, backward);
             } else if (forward_stack.empty() ||
-                       !forward_stack.empty() && !closest(forward_stack.back(), backward_stack.back())) {
+                       (!backward_stack.empty() && !closest(forward_stack.back(), backward_stack.back()))) {
                 result.emplace_back(backward_stack.back()->val);
                 nextNode(backward_stack, backward, forward);
             }
