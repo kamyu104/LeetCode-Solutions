@@ -1,4 +1,4 @@
-// Time:  O(3^n)
+// Time:  O(4^n)
 // Space: O(n)
 
 class Solution {
