@@ -35,8 +35,10 @@ class Solution(object):
         num, i = 0, pos
         num_str = ""
         while i < len(s):
-            num_str += s[i]
             num = num * 10 + ord(s[i]) - ord('0')
+            num_str += s[i]
+            if str(num) != num_str:
+                break
 
             # Case '+':
             expr.append("+"), expr.append(num_str)
@@ -54,10 +56,6 @@ class Solution(object):
                 expr.append("*"), expr.append(num_str)
                 self.addOperatorsDFS(s, target, i + 1, operand1, operand2 * num, expr, result)
                 expr.pop(), expr.pop()
-
-            # Char is '0'.
-            if num == 0:
-                break
     
             i += 1
   
