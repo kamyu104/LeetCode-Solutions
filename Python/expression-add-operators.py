@@ -37,6 +37,7 @@ class Solution(object):
         while i < len(s):
             num = num * 10 + ord(s[i]) - ord('0')
             num_str += s[i]
+            # Avoid overflow and "00...".
             if str(num) != num_str:
                 break
 
