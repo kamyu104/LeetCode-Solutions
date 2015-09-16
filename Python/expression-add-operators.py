@@ -37,8 +37,7 @@ class Solution(object):
 
     def addOperatorsDFS(self, num, target, pos, operand1, operand2, expr, result):
         if pos == len(num) and operand1 + operand2 == target:
-                e = "".join(expr)
-                result.append(e)
+            result.append("".join(expr))
         else:
             val, i = 0, pos
             val_str = ""
