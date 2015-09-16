@@ -47,12 +47,12 @@ class Solution(object):
         # Get the closest k values by advancing the iterators of the stacks.
         result = []
         for _ in xrange(k):
-            if not backward_stack or \
-                (forward_stack and dist(forward_stack[-1]) < dist(backward_stack[-1])):
+            if forward_stack and \
+                (not backward_stack or dist(forward_stack[-1]) < dist(backward_stack[-1])):
                 result.append(forward_stack[-1].val)
                 nextNode(forward_stack, forward, backward)
-            elif not forward_stack or \
-                (backward_stack and dist(backward_stack[-1]) <= dist(forward_stack[-1])):
+            elif backward_stack and \
+                (not forward_stack or dist(backward_stack[-1]) <= dist(forward_stack[-1])):
                 result.append(backward_stack[-1].val)
                 nextNode(backward_stack, backward, forward)
         return result
