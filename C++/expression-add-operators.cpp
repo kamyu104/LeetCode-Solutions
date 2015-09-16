@@ -24,13 +24,11 @@ public:
         string num_str;
         for (int i = pos; i < s.length(); ++i) {
             num_str.push_back(s[i]);
-            // Check if the value exceeds the max of INT.
-            if (num_str.length() == to_string(numeric_limits<int>::max()).length() &&
-                num_str > to_string(numeric_limits<int>::max())) {
+            num = num * 10 + s[i] - '0';
+            // Avoid overflow and "00...".
+            if (to_string(num) != num_str) {
                 break;
             }
-            
-            num = num * 10 + s[i] - '0';
 
             // Case '+':
             expr->emplace_back("+"), expr->emplace_back(num_str);
@@ -48,11 +46,6 @@ public:
                 expr->emplace_back("*"), expr->emplace_back(num_str);
                 addOperatorsDFS(s, target, i + 1, operand1, operand2 * num, expr, result);
                 expr->pop_back(), expr->pop_back();
-            }
-
-            // Char is '0'.
-            if (num == 0) {
-                break;
             }
         }
     }
