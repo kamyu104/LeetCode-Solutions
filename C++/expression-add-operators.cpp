@@ -30,7 +30,7 @@ public:
         }
     
         int num = 0;
-        string num_str = "";
+        string num_str;
         for (int i = pos; i < s.length(); ++i) {
             num_str += s[i];
             // Check if the value exceeds the max of INT.
