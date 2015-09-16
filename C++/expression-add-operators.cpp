@@ -38,7 +38,6 @@ public:
             expr->emplace_back("+"), expr->emplace_back(num_str);
             addOperatorsDFS(s, target, i + 1, operand1 + operand2, num, expr, result);
             expr->pop_back(), expr->pop_back();
-            
 
             // '-' and '*' could be used only if the expression is not empty.
             if (!expr->empty()) {
