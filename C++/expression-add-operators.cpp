@@ -27,7 +27,7 @@ public:
         for (int i = pos; i < s.length(); ++i) {
             num_str.push_back(s[i]);
             // Check if the value exceeds the max of INT.
-            if (num_str.size() == to_string(numeric_limits<int>::max()).size() &&
+            if (num_str.length() == to_string(numeric_limits<int>::max()).length() &&
                 num_str > to_string(numeric_limits<int>::max())) {
                 break;
             }
