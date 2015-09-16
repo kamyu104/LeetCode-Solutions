@@ -44,7 +44,6 @@ class Solution(object):
             expr.append("+"), expr.append(num_str)
             self.addOperatorsDFS(s, target, i + 1, operand1 + operand2, num, expr, result)
             expr.pop(), expr.pop()
-            
 
             # '-' and '*' could be used only if the expression is not empty.
             if expr:
