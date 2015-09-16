@@ -21,42 +21,48 @@ class Solution(object):
         :rtype: List[str]
         """
         result, expr = [], []
-        self.addOperatorsDFS(num, target, 0, 0, 0, expr, result)
+        val, i = 0, 0
+        val_str = ""
+        while i < len(num):
+            val = val * 10 + ord(num[i]) - ord('0')
+            val_str += num[i]
+            if str(val) != val_str:
+                break
+            expr.append(val_str)
+            self.addOperatorsDFS(num, target, i + 1, 0, val, expr, result)
+            expr.pop()
+            i += 1
         return result
 
-    def addOperatorsDFS(self, s, target, pos, operand1, operand2, expr, result):
-        if pos == len(s):
+    def addOperatorsDFS(self, num, target, pos, operand1, operand2, expr, result):
+        if pos == len(num):
             if operand1 + operand2 == target:
                 e = "".join(expr)
-                e = e[1:] if e[0] == '+' else e
                 result.append(e)
             return
 
-        num, i = 0, pos
-        num_str = ""
-        while i < len(s):
-            num = num * 10 + ord(s[i]) - ord('0')
-            num_str += s[i]
-            # Avoid overflow and "00...".
-            if str(num) != num_str:
+        val, i = 0, pos
+        val_str = ""
+        while i < len(num):
+            val = val * 10 + ord(num[i]) - ord('0')
+            val_str += num[i]
+            if str(val) != val_str:
                 break
 
             # Case '+':
-            expr.append("+"), expr.append(num_str)
-            self.addOperatorsDFS(s, target, i + 1, operand1 + operand2, num, expr, result)
-            expr.pop(), expr.pop()
+            expr.append("+" + val_str)
+            self.addOperatorsDFS(num, target, i + 1, operand1 + operand2, val, expr, result)
+            expr.pop()
 
-            # '-' and '*' could be used only if the expression is not empty.
-            if expr:
-                # Case '-':
-                expr.append("-"), expr.append(num_str)
-                self.addOperatorsDFS(s, target, i + 1, operand1 + operand2, -num, expr, result)
-                expr.pop(), expr.pop()
-        
-                # Case '*':
-                expr.append("*"), expr.append(num_str)
-                self.addOperatorsDFS(s, target, i + 1, operand1, operand2 * num, expr, result)
-                expr.pop(), expr.pop()
+            # Case '-':
+            expr.append("-" + val_str)
+            self.addOperatorsDFS(num, target, i + 1, operand1 + operand2, -val, expr, result)
+            expr.pop()
+    
+            # Case '*':
+            expr.append("*" + val_str)
+            self.addOperatorsDFS(num, target, i + 1, operand1, operand2 * val, expr, result)
+            expr.pop()
     
             i += 1
   
