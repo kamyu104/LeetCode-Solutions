@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-09-16), there are `265` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-09-18), there are `266` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `282` questions.
+Here is the classification of all `283` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -276,6 +276,7 @@ Shell
 143| [Reorder List](https://leetcode.com/problems/reorder-list/)| [Python](./Python/reorder-list.py) | _O(n)_          |  _O(1)_         | Medium         ||  
 167| [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [Python](./Python/two-sum-ii-input-array-is-sorted.py) | _O(n)_   | _O(1)_         | Medium         | 📖 |
 259 | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) | [C++](./C++/3sum-smaller.cpp) [Python](./Python/3sum-smaller.py) | _O(n^2)_ | _O(1)_          | Medium         | 📖, LintCode |
+283 | [Move Zeros](https://leetcode.com/problems/move-zeros/) | [C++](./C++/move-zeros.cpp) [Python](./Python/move-zeros.py) | _O(n)_ | _O(1)_          | Easy         | |
 
 ---
 
