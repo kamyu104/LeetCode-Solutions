@@ -37,11 +37,8 @@ public:
     // hasNext() and next() should behave the same as in the Iterator interface.
     // Override them if needed.
     int next() {
-        if (!has_peeked_) {
-            val_ = Iterator::next();
-        } else {
-            has_peeked_ = false;
-        }
+        val_ = peek();
+        has_peeked_ = false;
         has_next_ = Iterator::hasNext();
         return val_;
     }
