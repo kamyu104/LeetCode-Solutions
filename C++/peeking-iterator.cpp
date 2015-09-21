@@ -1,4 +1,4 @@
-// Time:  O(1)
+// Time:  O(1) per peek(), next(), hasNext()
 // Space: O(1)
 
 // Below is the interface for Iterator, which is already defined for you.
