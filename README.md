@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-09-19), there are `266` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-09-21), there are `267` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `283` questions.
+Here is the classification of all `284` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -30,6 +30,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Dynamic Programming](https://github.com/kamyu104/LeetCode#dynamic-programming)
 * [Backtracking](https://github.com/kamyu104/LeetCode#backtracking)
 * [Greedy](https://github.com/kamyu104/LeetCode#greedy)
+* [Design](https://github.com/kamyu104/LeetCode#design)
 
 
 Database
@@ -440,6 +441,12 @@ Shell
 122| [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [Python](./Python/best-time-to-buy-and-sell-stock-ii.py) | _O(n)_ | _O(1)_ | Medium ||
 134| [Gas Station](https://leetcode.com/problems/gas-station/)| [Python](./Python/gas-station.py)   | _O(n)_          | _O(1)_          | Medium         ||
 135| [Candy](https://leetcode.com/problems/candy/)| [Python](./Python/candy.py) | _O(n)_ | _O(n)_ | Hard ||
+
+---
+##Design
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+284| [Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)| [C++](./C++/peeking-iterator.cpp) [Python](./Python/peeking-iterator.py) | _O(1)_ | _O(1)_ | Medium ||
 
 ---
 
