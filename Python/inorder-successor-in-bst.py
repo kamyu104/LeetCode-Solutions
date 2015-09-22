@@ -16,7 +16,7 @@ class Solution(object):
         :rtype: TreeNode
         """
         # If it has right subtree.
-        if p.right:
+        if p and p.right:
             p = p.right
             while p.left:
                 p = p.left
