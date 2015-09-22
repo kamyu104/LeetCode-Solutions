@@ -24,7 +24,7 @@ public:
 
         // Search from root.
         TreeNode *successor = nullptr;
-        while (root && root != p ) { 
+        while (root && root != p) { 
             if (root->val > p->val) {
                 successor = root;
                 root = root->left;
