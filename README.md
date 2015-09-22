@@ -1,9 +1,9 @@
 LeetCode
 ======== 
 
-Up to date (2015-09-21), there are `267` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-09-22), there are `268` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `284` questions.
+Here is the classification of all `285` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -341,6 +341,7 @@ Shell
 230 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [C++](./C++/kth-smallest-element-in-a-bst.cpp) [Python](./Python/kth-smallest-element-in-a-bst.py) | _O(max(h, k))_ | _O(min(h, k))_ | Medium ||
 235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [C++](./C++/lowest-common-ancestor-of-a-binary-search-tree.cpp) [Python](./Python/lowest-common-ancestor-of-a-binary-search-tree.py) | _O(h)_ | _O(1)_ | Easy | EPI |
 270| [Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/)| [C++](./C++/closest-binary-search-tree-value.cpp) [Python](./Python/closest-binary-search-tree-value.py)   | _O(h)_          | _O(1)_          | Easy         | 📖 |
+285| [Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/)| [C++](./C++/inorder-successor-in-bst.cpp) [Python](./Python/inorder-successor-in-bst.py)   | _O(h)_          | _O(1)_          | Medium         | 📖 |
 
 --- 
 
