@@ -14,12 +14,12 @@ class Solution:
     # @param b, a string
     # @return a string
     def addBinary(self, a, b):
-        result, carry, val, len_a, len_b, i = "", 0, 0, len(a), len(b), 0
-        for i in xrange(max(len_a, len_b)):
+        result, carry, val = "", 0, 0
+        for i in xrange(max(len(a), len(b))):
             val = carry
-            if i < len_a:
+            if i < len(a):
                 val += int(a[-(i + 1)])
-            if i < len_b: 
+            if i < len(b): 
                 val += int(b[-(i + 1)])
             carry, val = val / 2, val % 2
             result += str(val)
