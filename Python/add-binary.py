@@ -18,9 +18,9 @@ class Solution:
         for i in xrange(max(len_a, len_b)):
             val = carry
             if i < len_a:
-                sum += int(a[-(i + 1)])
+                val += int(a[-(i + 1)])
             if i < len_b: 
-                sum += int(b[-(i + 1)])
+                val += int(b[-(i + 1)])
             carry, val = val / 2, val % 2
             result = "{0}{1}".format(val, result)
         if carry == 1:
