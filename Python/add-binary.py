@@ -23,8 +23,8 @@ class Solution:
                 val += int(b[-(i + 1)])
             carry, val = val / 2, val % 2
             result += str(val)
-        if carry == 1:
-            result += "1"
+        if carry:
+            result += str(carry)
         return result[::-1]
 
 if __name__ == '__main__':
