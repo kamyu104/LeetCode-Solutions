@@ -22,10 +22,10 @@ class Solution:
             if i < len_b: 
                 val += int(b[-(i + 1)])
             carry, val = val / 2, val % 2
-            result = "{0}{1}".format(val, result)
+            result += str(val)
         if carry == 1:
-            result = "1" + result
-        return result
+            result += "1"
+        return result[::-1]
 
 if __name__ == '__main__':
     result = Solution().addBinary('11', '1')
