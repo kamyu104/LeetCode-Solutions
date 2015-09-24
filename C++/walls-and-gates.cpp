@@ -1,5 +1,5 @@
 // Time:  O(m * n)
-// Space: O(m + n)
+// Space: O(g)
 
 class Solution {
 public:
