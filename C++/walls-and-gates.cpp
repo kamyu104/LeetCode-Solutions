@@ -4,30 +4,31 @@
 class Solution {
 public:
     void wallsAndGates(vector<vector<int>>& rooms) {
+        queue<pair<int, int>> q;
         for (int i = 0; i < rooms.size(); ++i) {
             for (int j = 0; j < rooms[0].size(); ++j) {
                 if (rooms[i][j] == 0) {
-                    queue<tuple<int, int, int>> q;
-                    q.emplace(make_tuple(i + 1, j, 1));
-                    q.emplace(make_tuple(i - 1, j, 1));
-                    q.emplace(make_tuple(i, j + 1, 1));
-                    q.emplace(make_tuple(i, j - 1, 1));
-                    while (!q.empty()) {
-                        int ii, jj, dist;
-                        tie(ii, jj, dist) = q.front();
-                        q.pop();
-                        if (ii < 0 || jj < 0 || ii >= rooms.size() ||
-                            jj >= rooms[0].size() || rooms[ii][jj] <= dist) {
-                            continue;
-                        }
-                        rooms[ii][jj] = dist;
-                        q.emplace(make_tuple(ii + 1, jj, dist + 1));
-                        q.emplace(make_tuple(ii - 1, jj, dist + 1));
-                        q.emplace(make_tuple(ii, jj + 1, dist + 1));
-                        q.emplace(make_tuple(ii, jj - 1, dist + 1));
-                    }
+                    q.emplace(make_pair(i, j));
+                }
+            }
+        }
+        while (!q.empty()) {
+            int i, j;
+            tie(i, j) = q.front();
+            q.pop();
+            for (const pair<int, int>& d :
+                 vector<pair<int, int>>{{i + 1, j}, {i - 1, j},
+                                        {i, j + 1}, {i, j - 1}}) {
+                int I, J;
+                tie(I, J) = d;
+                if (I >= 0 && I < rooms.size() &&
+                    J >= 0 && J < rooms[0].size() &&
+                    rooms[I][J] == numeric_limits<int>::max()) {
+                    rooms[I][J] = rooms[i][j] + 1;
+                    q.emplace(make_pair(I, J));
                 }
             }
         }
     }
 };
+
