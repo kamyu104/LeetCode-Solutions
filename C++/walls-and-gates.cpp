@@ -4,6 +4,7 @@
 class Solution {
 public:
     void wallsAndGates(vector<vector<int>>& rooms) {
+        const int INF = numeric_limits<int>::max();
         queue<pair<int, int>> q;
         for (int i = 0; i < rooms.size(); ++i) {
             for (int j = 0; j < rooms[0].size(); ++j) {
@@ -23,7 +24,7 @@ public:
                 tie(I, J) = d;
                 if (I >= 0 && I < rooms.size() &&
                     J >= 0 && J < rooms[0].size() &&
-                    rooms[I][J] == numeric_limits<int>::max()) {
+                    rooms[I][J] == INF) {
                     rooms[I][J] = rooms[i][j] + 1;
                     q.emplace(make_pair(I, J));
                 }
@@ -31,4 +32,3 @@ public:
         }
     }
 };
-
