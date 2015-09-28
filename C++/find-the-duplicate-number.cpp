@@ -1,7 +1,30 @@
-// Time:  O(nlogn)
+// Time:  O(n)
 // Space: O(1)
 
+// Two pointers method, reference: http://keithschwarz.com/interesting/code/?dir=find-duplicate
 class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        int slow = nums.size();
+        int fast = nums.size();
+        do {
+            slow = nums[slow - 1];
+            fast = nums[nums[fast - 1] - 1];
+        } while (slow != fast);
+
+        int finder = nums.size();
+        do {
+            slow = nums[slow - 1];
+            finder = nums[finder - 1];
+        } while (slow != finder);
+        return slow;
+    }
+};
+
+// Time:  O(nlogn)
+// Space: O(1)
+// Binary search method
+class Solution2 {
 public:
     int findDuplicate(vector<int>& nums) {
         int left = 1, right = nums.size();
@@ -27,7 +50,7 @@ public:
 
 // Time:  O(n)
 // Space: O(n)
-class Solution2 {
+class Solution3 {
 public:
     int findDuplicate(vector<int>& nums) {
         int duplicate = 0;
