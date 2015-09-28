@@ -23,7 +23,7 @@ public:
 
 // Time:  O(nlogn)
 // Space: O(1)
-// Binary search method
+// Binary search method.
 class Solution2 {
 public:
     int findDuplicate(vector<int>& nums) {
