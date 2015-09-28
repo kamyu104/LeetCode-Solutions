@@ -19,7 +19,7 @@ public:
         }
         return slow;
     }
-};;
+};
 
 // Time:  O(nlogn)
 // Space: O(1)
