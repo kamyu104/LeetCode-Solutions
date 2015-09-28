@@ -278,7 +278,7 @@ Shell
 167| [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [Python](./Python/two-sum-ii-input-array-is-sorted.py) | _O(n)_   | _O(1)_         | Medium         | 📖 |
 259 | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) | [C++](./C++/3sum-smaller.cpp) [Python](./Python/3sum-smaller.py) | _O(n^2)_ | _O(1)_          | Medium         | 📖, LintCode |
 283 | [Move Zeros](https://leetcode.com/problems/move-zeros/) | [C++](./C++/move-zeros.cpp) [Python](./Python/move-zeros.py) | _O(n)_ | _O(1)_          | Easy         | |
-287| [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)| [C++](./C++/find-the-duplicate-number.cpp) [Python](./Python/find-the-duplicate-number.py)   | _O(n)_          | _O(1)_          | Medium         | 📖 | Binary Search, Two Pointers |
+287| [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)| [C++](./C++/find-the-duplicate-number.cpp) [Python](./Python/find-the-duplicate-number.py)   | _O(n)_          | _O(1)_          | Medium         | | Binary Search, Two Pointers |
 
 ---
 
