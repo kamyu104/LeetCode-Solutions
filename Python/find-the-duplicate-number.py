@@ -7,9 +7,9 @@
 # find the duplicate one.
 #
 # Note:
-# You must not modify the array (assume the array is read only).
-# You must use only constant extra space.
-# Your runtime complexity should be less than O(n2).
+# - You must not modify the array (assume the array is read only).
+# - You must use only constant extra space.
+# - Your runtime complexity should be less than O(n^2).
 #
 
 # Two pointers method, same as Linked List Cycle II.
