@@ -8,6 +8,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        # Treat each (key, value - 1) pair of the array as the (pointer, next) node of the linked list,
+        # thus the duplicated number will be the begin of the cycle in the linked list.
+        # Besides, there is always a cycle in the linked list which
+        # starts from the last element of the array.
         slow = nums[len(nums) - 1]
         fast = nums[nums[len(nums) - 1] - 1]
 
