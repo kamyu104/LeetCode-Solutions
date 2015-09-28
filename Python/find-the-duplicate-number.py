@@ -9,22 +9,17 @@ class Solution(object):
         :rtype: int
         """
         # Treat each (key, value - 1) pair of the array as the (pointer, next) node of the linked list,
-        # thus the duplicated number will be the begin of the cycle in the linked list.
-        # Besides, there is always a cycle in the linked list which
-        # starts from the last element of the array.
-        slow = nums[len(nums) - 1]
-        fast = nums[nums[len(nums) - 1] - 1]
+        # thus the duplicated number will be the begin of the cycle in the linked list.:
+        slow = nums[0]
+        fast = nums[nums[0]]
+        while slow != fast:
+            slow = nums[slow]
+            fast = nums[nums[fast]]
 
+        fast = 0
         while slow != fast:
-            slow = nums[slow - 1]
-            fast = nums[nums[fast - 1] - 1]
-    
-        slow   = nums[slow - 1]
-        fast = nums[len(nums) - 1]
-        while slow != fast:
-            slow   = nums[slow - 1]
-            fast = nums[fast - 1]
-    
+            slow = nums[slow]
+            fast = nums[fast]
         return slow
 
 
