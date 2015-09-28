@@ -8,7 +8,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        # Treat each (key, value - 1) pair of the array as the (pointer, next) node of the linked list,
+        # Treat each (key, value) pair of the array as the (pointer, next) node of the linked list,
         # thus the duplicated number will be the begin of the cycle in the linked list.:
         slow = nums[0]
         fast = nums[nums[0]]
