@@ -9,7 +9,9 @@ class Solution(object):
         :rtype: int
         """
         # Treat each (key, value) pair of the array as the (pointer, next) node of the linked list,
-        # thus the duplicated number will be the begin of the cycle in the linked list.:
+        # thus the duplicated number will be the begin of the cycle in the linked list.
+        # Besides, there is always a cycle in the linked list which
+        # starts from the first element of the array.
         slow = nums[0]
         fast = nums[nums[0]]
         while slow != fast:
