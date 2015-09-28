@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// Two pointers method, same as Linked List Cycle II
+// Two pointers method, same as Linked List Cycle II.
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
@@ -12,11 +12,11 @@ public:
             fast = nums[nums[fast - 1] - 1];
         } while (slow != fast);
 
-        int finder = nums.size();
+        fast = nums.size();
         do {
             slow = nums[slow - 1];
-            finder = nums[finder - 1];
-        } while (slow != finder);
+            fast = nums[fast - 1];
+        } while (slow != fast);
         return slow;
     }
 };
