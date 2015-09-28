@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// Two pointers method, reference: http://keithschwarz.com/interesting/code/?dir=find-duplicate
+// Two pointers method, same as Linked List Cycle II
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
