@@ -8,6 +8,10 @@ For more questions and solutions, you can see my [LintCode](https://github.com/k
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
 
+
+Algorithms
+===
+
 * [Bit Manipulation](https://github.com/kamyu104/LeetCode#bit-manipulation)
 * [Array](https://github.com/kamyu104/LeetCode#array)
 * [String](https://github.com/kamyu104/LeetCode#string)
