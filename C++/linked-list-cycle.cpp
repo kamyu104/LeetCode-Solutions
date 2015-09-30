@@ -16,10 +16,10 @@ public:
 
         while (fast && fast->next) {
             slow = slow->next, fast = fast->next->next;
-            if (slow == fast) {
+            if (slow == fast) {  // There is a cycle.
                 return true;
             }
         }
-        return false;
+        return false;  // No cycle.
     }
 };
