@@ -12,11 +12,11 @@ class ValidWordAbbr(object):
         """
         self.lookup_ = {}
         for word in dictionary:
-            hash_val = word[0] + str(len(word)) + word[-1]
-            if hash_val not in self.lookup_:
-                self.lookup_[hash_val] = Set([word])
+            hash_word = self.hash(word)
+            if hash_word not in self.lookup_:
+                self.lookup_[hash_word] = Set([word])
             else:
-                self.lookup_[hash_val].add(word)
+                self.lookup_[hash_word].add(word)
         
 
     def isUnique(self, word):
@@ -26,9 +26,13 @@ class ValidWordAbbr(object):
         :rtype: bool
         """
         l = len(word)
-        hash_val = word[0] + str(len(word)) + word[-1]
-        return hash_val not in self.lookup_ or \
-               (word in self.lookup_[hash_val] and len(self.lookup_[hash_val]) == 1)
+        hash_word = self.hash(word)
+        return hash_word not in self.lookup_ or \
+               (word in self.lookup_[hash_word] and len(self.lookup_[hash_word]) == 1)
+
+
+    def hash(self, word):
+        return word[0] + str(len(word)) + word[-1]
 
 
 # Your ValidWordAbbr object will be instantiated and called as such:
