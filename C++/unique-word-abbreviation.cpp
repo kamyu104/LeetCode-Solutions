@@ -16,13 +16,13 @@ public:
         return lookup_[hash_word].empty() ||
                (lookup_[hash_word].count(word) == lookup_[hash_word].size());
     }
-    
-    string hash(const string& word) {
-        return word.front() + to_string(word.length()) + word.back();;
-    }
 
 private:
     unordered_map<string, unordered_set<string>> lookup_;
+
+    string hash(const string& word) {
+        return word.front() + to_string(word.length()) + word.back();;
+    }
 };
 
 
