@@ -6,16 +6,21 @@ class ValidWordAbbr {
 public:
     ValidWordAbbr(vector<string> &dictionary) {
         for (string& word : dictionary) {
-            const string hash_val = word.front() + to_string(word.length()) + word.back();
-            lookup_[hash_val].emplace(word);
+            const string hash_word = hash(word);
+            lookup_[hash_word].emplace(word);
         }
     } 
 
     bool isUnique(string word) {
-        const string hash_val = word.front() + to_string(word.length()) + word.back();
-        return lookup_[hash_val].empty() ||
-               (lookup_[hash_val].count(word) == lookup_[hash_val].size());
+        const string hash_word = hash(word);
+        return lookup_[hash_word].empty() ||
+               (lookup_[hash_word].count(word) == lookup_[hash_word].size());
     }
+    
+    string hash(const string& word) {
+        return word.front() + to_string(word.length()) + word.back();;
+    }
+
 private:
     unordered_map<string, unordered_set<string>> lookup_;
 };
