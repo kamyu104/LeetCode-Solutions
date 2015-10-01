@@ -6,15 +6,13 @@ class ValidWordAbbr {
 public:
     ValidWordAbbr(vector<string> &dictionary) {
         for (string& word : dictionary) {
-            const int len = word.length();
-            const string hash_val = word[0] + to_string(len - 2) + word[len - 1];
+            const string hash_val = word.front() + to_string(word.length()) + word.back();
             lookup_[hash_val].emplace(word);
         }
     } 
 
     bool isUnique(string word) {
-        const int len = word.length();
-        const string hash_val = word[0] + to_string(len - 2) + word[len - 1];
+        const string hash_val = word.front() + to_string(word.length()) + word.back();
         return lookup_[hash_val].empty() ||
                (lookup_[hash_val].count(word) == lookup_[hash_val].size());
     }
