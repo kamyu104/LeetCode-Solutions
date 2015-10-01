@@ -53,10 +53,10 @@ Shell
 ##Bit Manipulation
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-136 | [Single Number](https://leetcode.com/problems/single-number/) | [Python](./Python/single-number.py) | _O(n)_       | _O(1)_          | Medium         ||
-137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | [Python](./Python/single-number-ii.py) | _O(n)_ | _O(1)_          | Medium         ||
-190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)  | [Python](./Python/reverse-bits.py) | _O(1)_        | _O(1)_          | Easy           ||
-191  |[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [Python](./Python/number-of-1-bits.py) | _O(1)_ | _O(1)_          | Easy           ||
+136 | [Single Number](https://leetcode.com/problems/single-number/) | [C++](./C++/single-number.cpp) [Python](./Python/single-number.py) | _O(n)_       | _O(1)_          | Medium         ||
+137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | [C++](./C++/single-number-ii.cpp) [Python](./Python/single-number-ii.py) | _O(n)_ | _O(1)_          | Medium         ||
+190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)  | [C++](./C++/reverse-bits.cpp) [Python](./Python/reverse-bits.py) | _O(1)_        | _O(1)_          | Easy           ||
+191  |[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [C++](./C++/number-of-1-bits.cpp) [Python](./Python/number-of-1-bits.py) | _O(1)_ | _O(1)_          | Easy           ||
 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | [C++](./C++/bitwise-and-of-numbers-range.cpp) [Python](./Python/bitwise-and-of-numbers-range.py) | _O(1)_ | _O(1)_ | Medium ||
 231 | [Power of Two](https://leetcode.com/problems/power-of-two/) | [C++](./C++/power-of-two.cpp) [Python](./Python/power-of-two.py) | _O(1)_ | _O(1)_ | Easy | LintCode |
 260 | [Single Number III](https://leetcode.com/problems/single-number-iii/) | [C++](./C++/single-number-iii.cpp) [Python](./Python/single-number-iii.py) | _O(n)_ | _O(1)_          | Medium         ||
