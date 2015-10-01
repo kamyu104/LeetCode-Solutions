@@ -1,3 +1,7 @@
+# Time:  O(n) for constructor, n is number of words in the dictionary. 
+#        O(1) for lookup
+# Space: O(k), k is number of unique words.
+
 from sets import Set
 
 class ValidWordAbbr(object):
