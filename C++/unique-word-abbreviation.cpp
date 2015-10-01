@@ -21,7 +21,7 @@ private:
     unordered_map<string, unordered_set<string>> lookup_;
 
     string hash(const string& word) {
-        return word.front() + to_string(word.length()) + word.back();;
+        return word.front() + to_string(word.length()) + word.back();
     }
 };
 
