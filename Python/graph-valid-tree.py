@@ -1,5 +1,5 @@
 # Time:  O(|V| + |E|)
-# Space: O(|V|)
+# Space: O(|V| + |E|)
 
 # BFS solution.
 class Solution:
@@ -12,9 +12,9 @@ class Solution:
 
         visited_from, neighbors = 0, 1
         nodes = {}  # A structure to track each node's [visited_from, neighbors]
-        for i in xrange(n):
+        for i in xrange(n):  # Space: O(|V|)
             nodes[i] = [-1, []]
-        for edge in edges:
+        for edge in edges:   # Space: O(|E|)
             nodes[edge[0]][neighbors].append(edge[1])
             nodes[edge[1]][neighbors].append(edge[0])
 
