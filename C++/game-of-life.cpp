@@ -20,7 +20,7 @@ public:
                 //     Any live cell with two live neighbors.
                 //     Any dead cell with exactly three live neighbors lives.
                 if ((count == 4 && board[i][j]) || count == 3) {
-                    board[i][j] |= 2;  // Make as live. 
+                    board[i][j] |= 2;  // Mark as live. 
                 }
             }
         }
