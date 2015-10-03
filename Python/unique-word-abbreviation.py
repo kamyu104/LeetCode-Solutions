@@ -22,8 +22,7 @@ class ValidWordAbbr(object):
         """
         l = len(word)
         abbr = self.abbr(word)
-        return abbr not in self.lookup_ or \
-               self.lookup_[abbr] == set([word])
+        return self.lookup_[abbr] <= {word}
 
 
     def abbr(self, word):
