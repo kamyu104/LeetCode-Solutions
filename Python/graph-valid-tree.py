@@ -18,7 +18,7 @@ class Solution:
             nodes[edge[0]][neighbors].append(edge[1])
             nodes[edge[1]][neighbors].append(edge[0])
 
-        # BFS to check whether the graph is a valid tree.
+        # BFS to check whether these edges make up a valid tree.
         visited = {}
         q = collections.deque()
         q.append(0)
