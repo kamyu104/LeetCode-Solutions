@@ -10,7 +10,7 @@ class ValidWordAbbr(object):
         """
         self.lookup_ = collections.defaultdict(set)
         for word in dictionary:
-            abbr = self.abbr(word)
+            abbr = self.abbreviation(word)
             self.lookup_[abbr].add(word)
             
 
@@ -21,11 +21,11 @@ class ValidWordAbbr(object):
         :rtype: bool
         """
         l = len(word)
-        abbr = self.abbr(word)
+        abbr = self.abbreviation(word)
         return self.lookup_[abbr] <= {word}
 
 
-    def abbr(self, word):
+    def abbreviation(self, word):
         return word[0] + str(len(word)) + word[-1]
 
 
