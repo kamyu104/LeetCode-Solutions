@@ -11,7 +11,7 @@ class Solution:
             return False
 
         visited_from, neighbors = 0, 1
-        nodes = {}  # A structure to track each node's [visited_from, neighbors]
+        nodes = {}  # A dictionary to track each node's [visited_from, neighbors]
         for i in xrange(n):  # Space: O(|V|)
             nodes[i] = [-1, []]
         for edge in edges:   # Space: O(|E|)
