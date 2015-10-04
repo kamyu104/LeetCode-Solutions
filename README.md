@@ -1,5 +1,7 @@
-LeetCode
-======== 
+# LeetCode
+ 
+![Language](https://img.shields.io/badge/language-Python%20-orange.svg)
+![Progress](https://img.shields.io/badge/progress-%20289%20%2F%20289%20%20-ff69b4.svg)
 
 Up to date (2015-10-04), there are `272` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
