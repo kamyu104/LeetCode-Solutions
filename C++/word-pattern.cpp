@@ -22,7 +22,7 @@ public:
             if (j == string::npos) {
                 j = str.length();
             }
-            string word = str.substr(i, j - i);
+            const string word = str.substr(i, j - i);
             if (!word2pattern.count(word) && !pattern2word.count(p)) { 
                 word2pattern[word] = p; 
                 pattern2word[p] = word; 
