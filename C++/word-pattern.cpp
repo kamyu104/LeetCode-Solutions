@@ -4,18 +4,18 @@
 class Solution {
 public:
     bool wordPattern(string pattern, string str) {
-        int word_cnt = str.empty() ? 0 : 1;
+        int cnt = str.empty() ? 0 : 1;
         for (const auto& c : str) {
             if (c == ' ') {
-                ++word_cnt;
+                ++cnt;
             }
         }
-        if (pattern.size() != word_cnt) {
+        if (pattern.size() != cnt) {
             return false;
         }
 
-        unordered_map<string, char> word2pattern;
-        unordered_map<char, string> pattern2word;
+        unordered_map<string, char> w2p;
+        unordered_map<char, string> p2w;
         int i = 0, j = 0;
         for (const auto& p : pattern) {
             j = str.find(" ", i);
@@ -23,10 +23,10 @@ public:
                 j = str.length();
             }
             const string word = str.substr(i, j - i);
-            if (!word2pattern.count(word) && !pattern2word.count(p)) { 
-                word2pattern[word] = p; 
-                pattern2word[p] = word; 
-            } else if (word2pattern[word] != p) {
+            if (!w2p.count(word) && !p2w.count(p)) { 
+                w2p[word] = p; 
+                p2w[p] = word; 
+            } else if (w2p[word] != p) {
                 return false;
             }
             i = j + 1;
