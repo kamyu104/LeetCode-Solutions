@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Space: O(c), c is unique count of pattern and words
+// Space: O(c), c is unique count of pattern
 
 class Solution {
 public:
@@ -26,7 +26,7 @@ public:
             if (!w2p.count(w) && !p2w.count(p)) { 
                 w2p[w] = p; 
                 p2w[p] = w; 
-            } else if (w2p[w] != p) {
+            } else if (!w2p.count(w) || w2p[w] != p) {
                 return false;
             }
             i = j + 1;
