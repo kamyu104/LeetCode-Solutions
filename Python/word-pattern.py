@@ -18,21 +18,6 @@
 from itertools import izip
 
 class Solution(object):
-    # Word generates at a time without saving all the words.
-    class WordGenerator(object):
-        def __init__(self, str):
-            self.str = str
-        
-        def __iter__(self):
-            w = ""
-            for c in self.str:
-                if c == ' ':
-                    yield w
-                    w = ""
-                else:
-                    w += c
-            yield w
-
     def wordPattern(self, pattern, str):
         """
         :type pattern: str
@@ -59,6 +44,21 @@ class Solution(object):
             if c == ' ':
                 cnt += 1
         return cnt
+
+    # Word generates at a time without saving all the words.
+    class WordGenerator(object):
+        def __init__(self, str):
+            self.str = str
+        
+        def __iter__(self):
+            w = ""
+            for c in self.str:
+                if c == ' ':
+                    yield w
+                    w = ""
+                else:
+                    w += c
+            yield w
 
 
 # Time:  O(n)
