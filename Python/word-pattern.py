@@ -28,7 +28,7 @@ class Solution(object):
             return False
 
         w2p, p2w = {}, {}
-        for p, w in izip(pattern, self.WordGenerator(str)):
+        for p, w in izip(pattern, self.wordGenerator(str)):
             if w not in w2p and p not in p2w:
                 # Build mapping.
                 w2p[w] = p
@@ -46,19 +46,15 @@ class Solution(object):
         return cnt
 
     # Word generates at a time without saving all the words.
-    class WordGenerator(object):
-        def __init__(self, str):
-            self.str = str
-        
-        def __iter__(self):
-            w = ""
-            for c in self.str:
-                if c == ' ':
-                    yield w
-                    w = ""
-                else:
-                    w += c
-            yield w
+    def wordGenerator(self, str):
+        w = ""
+        for c in str:
+            if c == ' ':
+                yield w
+                w = ""
+            else:
+                w += c
+        yield w
 
 
 # Time:  O(n)
