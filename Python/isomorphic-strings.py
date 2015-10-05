@@ -31,10 +31,10 @@ class Solution:
         return self.halfIsom(s, t) and self.halfIsom(t, s)
 
     def halfIsom(self, s, t):
-        res = {}
+        lookup = {}
         for i in xrange(len(s)):
-            if s[i] not in res:
-                res[s[i]] = t[i]
-            elif res[s[i]] != t[i]:
+            if s[i] not in lookup:
+                lookup[s[i]] = t[i]
+            elif lookup[s[i]] != t[i]:
                 return False
         return True
