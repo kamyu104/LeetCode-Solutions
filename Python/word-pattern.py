@@ -45,7 +45,7 @@ class Solution(object):
                 cnt += 1
         return cnt
 
-    # Word generates at a time without saving all the words.
+    # Generate a word at a time without saving all the words.
     def wordGenerator(self, str):
         w = ""
         for c in str:
