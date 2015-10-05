@@ -15,7 +15,8 @@
 #   3. Each word in str is separated by a single space.
 #   4. Each letter in pattern must map to a word with length that is at least 1.
 
-# Lengthy code but saving more spaces
+from itertools import izip
+
 class Solution(object):
     # Word generates at a time without saving all the words.
     class WordGenerator(object):
@@ -42,8 +43,7 @@ class Solution(object):
             return False
 
         w2p, p2w = {}, {}
-        for i, w in enumerate(self.WordGenerator(str)):
-            p = pattern[i]
+        for p, w in izip(pattern, self.WordGenerator(str)):
             if w not in w2p and p not in p2w:
                 # Build mapping.
                 w2p[w] = p
