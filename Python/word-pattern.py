@@ -15,7 +15,7 @@
 #   3. Each word in str is separated by a single space.
 #   4. Each letter in pattern must map to a word with length that is at least 1.
 
-from itertools import izip
+from itertools import izip  # Generator version of zip.
 
 class Solution(object):
     def wordPattern(self, pattern, str):
