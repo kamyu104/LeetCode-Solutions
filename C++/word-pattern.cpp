@@ -1,9 +1,6 @@
 // Time:  O(n)
 // Space: O(c), c is unique count of pattern and words
 
-// Time:  O(n)
-// Space: O(c), c is count of pattern
-
 class Solution {
 public:
     bool wordPattern(string pattern, string str) {
