@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(c), c is unique count of pattern and words
+# Space: O(c), c is unique count of pattern
 
 # Given a pattern and a string str, find if str follows the same pattern.
 #
@@ -30,7 +30,7 @@ class Solution(object):
         w2p, p2w = {}, {}
         for p, w in izip(pattern, self.wordGenerator(str)):
             if w not in w2p and p not in p2w:
-                # Build mapping.
+                # Build mapping. Space: O(c)
                 w2p[w] = p
                 p2w[p] = w 
             elif w not in w2p or w2p[w] != p:
@@ -66,14 +66,14 @@ class Solution2(object):
         :type str: str
         :rtype: bool
         """
-        words = str.split()
+        words = str.split()  # Space: O(n)
         if len(pattern) != len(words):
             return False
 
         w2p, p2w = {}, {}
         for p, w in izip(pattern, words):
             if w not in w2p and p not in p2w:
-                # Build mapping.
+                # Build mapping. Space: O(c)
                 w2p[w] = p
                 p2w[p] = w 
             elif w not in w2p or w2p[w] != p:
