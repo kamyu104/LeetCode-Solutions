@@ -15,7 +15,7 @@
 #   3. Each word in str is separated by a single space.
 #   4. Each letter in pattern must map to a word with length that is at least 1.
 
-# Lengthy code but saving more spaces.
+# Lengthy code but saving more spaces
 class Solution(object):
     # Word generates at a time without saving all the words.
     class WordGenerator(object):
