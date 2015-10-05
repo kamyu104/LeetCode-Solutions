@@ -1,6 +1,9 @@
 // Time:  O(n)
 // Space: O(c), c is unique count of pattern and words
 
+// Time:  O(n)
+// Space: O(c), c is count of pattern
+
 class Solution {
 public:
     bool wordPattern(string pattern, string str) {
@@ -22,11 +25,11 @@ public:
             if (j == string::npos) {
                 j = str.length();
             }
-            const string word = str.substr(i, j - i);
-            if (!w2p.count(word) && !p2w.count(p)) { 
-                w2p[word] = p; 
-                p2w[p] = word; 
-            } else if (w2p[word] != p) {
+            const string w = str.substr(i, j - i);
+            if (!w2p.count(w) && !p2w.count(p)) { 
+                w2p[w] = p; 
+                p2w[p] = w; 
+            } else if (w2p[w] != p) {
                 return false;
             }
             i = j + 1;
