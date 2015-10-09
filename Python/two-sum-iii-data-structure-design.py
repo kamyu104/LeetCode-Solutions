@@ -16,15 +16,13 @@ class TwoSum:
 
     # initialize your data structure here
     def __init__(self):
-        self.lookup = {}
+        self.lookup = collections.defaultdict(int)
         
 
     # @return nothing
     def add(self, number):
-        if number in self.lookup:
-            self.lookup[number] += 1
-        else:
-            self.lookup[number] = 1
+        self.lookup[number] += 1
+
 
     # @param value, an integer
     # @return a Boolean
