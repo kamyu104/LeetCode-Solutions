@@ -19,23 +19,18 @@ class Solution:
     # @param L, a list of string
     # @return a list of integer
     def findSubstring(self, S, L):
-        result, words, word_num, word_len = [], {}, len(L), len(L[0])
+        result, word_num, word_len = [], len(L), len(L[0])
+        words = collections.defaultdict(int)
         for i in L:
-            if i not in words:
-                words[i] = 1
-            else:
-                words[i] += 1
+            words[i] += 1
 
         for i in xrange(len(S) + 1 - word_len * word_num):
-            cur, j = {}, 0
+            cur, j = collections.defaultdict(int), 0
             while j < word_num:
                 word = S[i + j * word_len:i + j * word_len + word_len]
                 if word not in words: 
                     break
-                if word not in cur: 
-                    cur[word] = 1
-                else:
-                    cur[word] += 1
+                cur[word] += 1
                 if cur[word] > words[word]:
                     break
                 j += 1
