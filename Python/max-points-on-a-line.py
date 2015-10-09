@@ -10,13 +10,15 @@ class Point:
         self.x = a
         self.y = b
 
-class Solution:
-    # @param points, a list of Points
-    # @return an integer
+class Solution(object):
     def maxPoints(self, points):
+        """
+        :type points: List[Point]
+        :rtype: int
+        """
         max_points = 0
         for i, start in enumerate(points):
-            slope_count, same = {}, 1
+            slope_count, same = collections.defaultdict(int), 1
             for j in xrange(i + 1, len(points)):
                 end = points[j]
                 if start.x == end.x and start.y == end.y:
@@ -25,10 +27,7 @@ class Solution:
                     slope = float("inf")
                     if start.x - end.x != 0:
                         slope = (start.y - end.y) * 1.0 / (start.x - end.x)
-                    if slope not in slope_count:
-                        slope_count[slope] = 1
-                    else:
-                        slope_count[slope] += 1
+                    slope_count[slope] += 1
             
             current_max = same            
             for slope in slope_count:
