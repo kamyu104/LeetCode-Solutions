@@ -5,12 +5,9 @@ class WordDistance:
     # initialize your data structure here.
     # @param {string[]} words
     def __init__(self, words):
-        self.wordIndex = {}
+        self.wordIndex = collections.defaultdict(list)
         for i in xrange(len(words)):
-            if words[i] not in self.wordIndex:
-                self.wordIndex[words[i]] = [i]
-            else:
-                self.wordIndex[words[i]].append(i)
+            self.wordIndex[words[i]].append(i)
 
     # @param {string} word1
     # @param {string} word2
@@ -29,3 +26,4 @@ class WordDistance:
                 j += 1
 
         return dist
+
