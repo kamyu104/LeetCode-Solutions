@@ -5,12 +5,9 @@ class Solution:
     # @param {string[]} strings
     # @return {string[][]}
     def groupStrings(self, strings):
-        groups = {};
+        groups = collections.defaultdict(list)
         for s in strings:  # Grouping.
-            if self.hashStr(s) not in groups:
-                groups[self.hashStr(s)] = [s]
-            else:
-                groups[self.hashStr(s)].append(s)
+            groups[self.hashStr(s)].append(s)
 
         result = []
         for key, val in groups.iteritems():
