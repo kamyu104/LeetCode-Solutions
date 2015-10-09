@@ -19,11 +19,9 @@
 class Solution:
     # @return a list of lists of length 4, [[val1,val2,val3,val4]]
     def fourSum(self, nums, target):
-        nums, result, lookup = sorted(nums), [], {}
+        nums, result, lookup = sorted(nums), [], collections.defaultdict(list)
         for i in xrange(0, len(nums) - 1):
             for j in xrange(i + 1, len(nums)): 
-                if nums[i] + nums[j] not in lookup:
-                    lookup[nums[i] + nums[j]] = []
                 is_duplicated = False
                 for [x, y] in lookup[nums[i] + nums[j]]:
                     if nums[x] == nums[i]:
@@ -49,11 +47,9 @@ class Solution:
 class Solution2:
     # @return a list of lists of length 4, [[val1,val2,val3,val4]]
     def fourSum(self, nums, target):
-        nums, result, lookup = sorted(nums), [], {}
+        nums, result, lookup = sorted(nums), [], collections.defaultdict(list)
         for i in xrange(0, len(nums) - 1):
             for j in xrange(i + 1, len(nums)): 
-                if nums[i] + nums[j] not in lookup:
-                    lookup[nums[i] + nums[j]] = []
                 lookup[nums[i] + nums[j]].append([i, j])
 
         for i in lookup.keys():
