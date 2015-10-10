@@ -29,11 +29,9 @@ public:
                     const string w = str.substr(j, k - j + 1);
                     if (!w2p->count(w)) {
                         // Build mapping. Space: O(n + c)
-                        (*w2p)[w] = p; 
-                        (*p2w)[p] = w;
+                        (*w2p)[w] = p, (*p2w)[p] = w;
                         is_match = match(pattern, str, i + 1, k + 1, w2p, p2w);
-                        w2p->erase(w);
-                        p2w->erase(p);
+                        w2p->erase(w), p2w->erase(p);
                     }  // Else try longer word.
                 }
             }
