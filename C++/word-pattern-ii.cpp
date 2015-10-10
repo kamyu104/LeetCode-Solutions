@@ -1,5 +1,7 @@
-// Time:  O(n * C(n + p - 1, p - 1)), n is length of str, c is unique count of pattern
-// Space: O(n + p) 
+// Time:  O(n * C(n + c - 1, c - 1)), n is length of str, c is unique count of pattern,
+//                                    there are C(n + c - 1, c - 1) possible splits of string,
+//                                    and each one costs O(n) to check if if matches the word pattern.
+// Space: O(n + c) 
 
 class Solution {
 public:
