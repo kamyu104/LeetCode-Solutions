@@ -20,7 +20,7 @@ public:
             const char p = pattern[i];
             if (p2w->count(p)) {
                 if ((*p2w)[p] == str.substr(j, (*p2w)[p].length())) {  // Match pattern.
-                    return match(pattern, str, i + 1, j + (*p2w)[p].length(), w2p, p2w);
+                    is_match = match(pattern, str, i + 1, j + (*p2w)[p].length(), w2p, p2w);
                 }  // Else return false.
             } else {
                 for (int k = j; k < str.length() && !is_match; ++k) {
