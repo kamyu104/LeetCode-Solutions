@@ -23,7 +23,7 @@ public:
             const string w = str.substr(j, k - j + 1);
             bool build_mapping = false;
             if (!w2p->count(w) && !p2w->count(p)) { 
-                // Build mapping. Space: O(c)
+                // Build mapping. Space: O(n + p)
                 (*w2p)[w] = p; 
                 (*p2w)[p] = w;
                 build_mapping = true;
