@@ -26,7 +26,7 @@ class Solution(object):
                     is_match = self.match(pattern, str, i + 1, j + len(w), w2p, p2w)
                 # Else return false.
             else:
-                for k in xrange(j, len(str)):
+                for k in xrange(j, len(str)):  # Try any possible word
                     w = str[j:k+1]
                     if w not in w2p:
                         # Build mapping. Space: O(n + c)
@@ -35,6 +35,5 @@ class Solution(object):
                         w2p.pop(w), p2w.pop(p);
                     if is_match:
                         break
-                    # Else try longer word.
         return is_match
 
