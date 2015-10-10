@@ -15,14 +15,16 @@ public:
                const int i, const int j,
                unordered_map<string, char>* w2p,
                unordered_map<char, string>* p2w) {
+
         bool is_match = false;
         if (i == pattern.length() && j == str.length()) {
             is_match = true;
         } else if (i < pattern.length() && j < str.length()) {
             const char p = pattern[i];
             if (p2w->count(p)) {
-                if ((*p2w)[p] == str.substr(j, (*p2w)[p].length())) {  // Match pattern.
-                    is_match = match(pattern, str, i + 1, j + (*p2w)[p].length(), w2p, p2w);
+                const auto& w = (*p2w)[p];
+                if (w == str.substr(j, w.length())) {  // Match pattern.
+                    is_match = match(pattern, str, i + 1, j + w.length(), w2p, p2w);
                 }  // Else return false.
             } else {
                 for (int k = j; k < str.length() && !is_match; ++k) {
