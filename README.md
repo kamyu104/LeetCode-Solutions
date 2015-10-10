@@ -222,7 +222,7 @@ Shell
 249| [Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/) | [C++](./C++/group-shifted-strings.cpp)  [Python](./Python/group-shifted-strings.py)  | _O(nlogn)_ | _O(n)_ | Easy         |📖||
 266| [Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/) | [C++](./C++/palindrome-permutation.cpp) [Python](./Python/palindrome-permutation.py)  | _O(n)_ |  _O(1)_ | Easy         |📖||
 288| [Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/) | [C++](./C++/unique-word-abbreviation.cpp) [Python](./Python/unique-word-abbreviation.py)  | ctor: _O(n)_, lookup: _O(1)_ | _O(k)_ | Easy         |📖||
-290| [Word Pattern](https://leetcode.com/problems/word-pattern/) | [C++](./C++/word-pattern.cpp) [Python](./Python/word-pattern.py)  | _O(n)_ | _O(p)_ | Easy         | variant of [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) ||
+290| [Word Pattern](https://leetcode.com/problems/word-pattern/) | [C++](./C++/word-pattern.cpp) [Python](./Python/word-pattern.py)  | _O(n)_ | _O(c)_ | Easy         | variant of [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) ||
 
 
 --- 
@@ -399,7 +399,7 @@ Shell
 254| [Factor Combinations](https://leetcode.com/problems/factor-combinations/) | [C++](./C++/factor-combinations.cpp)  [Python](./Python/factor-combinations.py)  | _O(nlogn)_ | _O(logn)_ | Medium         |📖||
 257| [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) | [C++](./C++/binary-tree-paths.cpp)  [Python](./Python/binary-tree-paths.py)  | _O(n * h)_ | _O(h)_ | Easy         |||
 282| [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/) | [C++](./C++/expression-add-operators.cpp)  [Python](./Python/expression-add-operators.py)  | _O(4^n)_ | _O(n)_ | Hard         |||
-291| [Word Pattern II](https://leetcode.com/problems/word-pattern-ii/) | [C++](./C++/word-pattern-ii.cpp)  [Python](./Python/word-pattern-ii.py)  | _O(n * C(n + p - 1, p - 1))_ | _O(n + p)_ | Hard         |📖||
+291| [Word Pattern II](https://leetcode.com/problems/word-pattern-ii/) | [C++](./C++/word-pattern-ii.cpp)  [Python](./Python/word-pattern-ii.py)  | _O(n * C(n + c - 1, c - 1))_ | _O(n + c)_ | Hard         |📖||
 
 --- 
 
