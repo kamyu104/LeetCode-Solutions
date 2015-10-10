@@ -1,4 +1,4 @@
-// Time:  O(n * C(n + p - 1, p - 1)), n is length of str, p is length of pattern
+// Time:  O(n * C(n + p - 1, p - 1)), n is length of str, c is unique count of pattern
 // Space: O(n + p) 
 
 class Solution {
@@ -26,7 +26,7 @@ public:
                 for (int k = j; k < str.length() && !is_match; ++k) {
                     const string w = str.substr(j, k - j + 1);
                     if (!w2p->count(w)) {
-                        // Build mapping. Space: O(n + p)
+                        // Build mapping. Space: O(n + c)
                         (*w2p)[w] = p; 
                         (*p2w)[p] = w;
                         is_match = match(pattern, str, i + 1, k + 1, w2p, p2w);
