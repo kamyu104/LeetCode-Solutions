@@ -21,8 +21,9 @@ class Solution(object):
         elif i < len(pattern) and j < len(str):
             p = pattern[i]
             if p in p2w:
-                if p2w[p] == str[j:j+len(p2w[p])]:  # Match pattern.
-                    is_match = self.match(pattern, str, i + 1, j + len(p2w[p]), w2p, p2w)
+                w = p2w[p]
+                if w == str[j:j+len(w)]:  # Match pattern.
+                    is_match = self.match(pattern, str, i + 1, j + len(w), w2p, p2w)
                 # Else return false.
             else:
                 for k in xrange(j, len(str)):
