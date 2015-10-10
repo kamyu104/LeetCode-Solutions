@@ -1,6 +1,6 @@
 # Time:  O(n * C(n + c - 1, c - 1)), n is length of str, c is unique count of pattern,
 #                                    there are C(n + c - 1, c - 1) possible splits of string,
-#                                    and each one costs O(n) to check if if matches the word pattern.
+#                                    and each one costs O(n) to check if it matches the word pattern.
 # Space: O(n + c)
 
 class Solution(object):
