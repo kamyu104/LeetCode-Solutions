@@ -2,11 +2,11 @@
  
 ![Language](https://img.shields.io/badge/language-Python%20-orange.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Progress](https://img.shields.io/badge/progress-291%20%2F%20291%20-ff69b4.svg)
+![Progress](https://img.shields.io/badge/progress-292%20%2F%20292%20-ff69b4.svg)
 
-Up to date (2015-10-10), there are `274` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-10-11), there are `275` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `291` questions.
+Here is the classification of all `292` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -255,6 +255,7 @@ Shell
 248| [Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii/) | [C++](./C++/strobogrammatic-number-iii.cpp)  [Python](./Python/strobogrammatic-number-iii.py)  | _O(5^(n/2))_ | _O(n)_ | Hard         |📖||
 258| [Add Digits](https://leetcode.com/problems/add-digits/) | [C++](./C++/add-digits.cpp)  [Python](./Python/add-digits.py)  | _O(1)_ | _O(1)_ | Easy         |||
 263| [Ugly Number](https://leetcode.com/problems/ugly-number/) | [C++](./C++/ugly-number.cpp)  [Python](./Python/ugly-number.py)  | _O(logn)_ | _O(1)_ | Easy         |||
+292| [Nim Game](https://leetcode.com/problems/nim-game/) | [C++](./C++/nim-game.cpp)  [Python](./Python/nim-game.py)  | _O(1)_ | _O(1)_ | Easy         | LintCode ||
 
 --- 
 
