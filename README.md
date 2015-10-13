@@ -1,7 +1,7 @@
 # LeetCode
  
 ![Language](https://img.shields.io/badge/language-Python%20-orange.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kamyu104/LeetCode/blob/master/LICENSE.md)
 ![Progress](https://img.shields.io/badge/progress-292%20%2F%20292%20-ff69b4.svg)
 
 Up to date (2015-10-12), there are `275` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
