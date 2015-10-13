@@ -44,7 +44,7 @@ class Trie:
     # Returns if there is any word in the trie
     # that starts with the given prefix.
     def startsWith(self, prefix):
-        return not self.childSearch(prefix)
+        return self.childSearch(prefix) is not None
 
     def childSearch(self, word):
         cur = self.root
