@@ -34,8 +34,8 @@ class Trie:
     # @return {boolean}
     # Returns if the word is in the trie.
     def search(self, word):
-        res, node = self.childSearch(word)
-        if res:
+        node = self.childSearch(word)
+        if node:
             return node.is_string
         return False        
 
@@ -44,7 +44,7 @@ class Trie:
     # Returns if there is any word in the trie
     # that starts with the given prefix.
     def startsWith(self, prefix):
-        return self.childSearch(prefix)[0]
+        return self.childSearch(prefix) is not None
 
     def childSearch(self, word):
         cur = self.root
@@ -52,8 +52,8 @@ class Trie:
             if c in cur.leaves:
                 cur = cur.leaves[c]
             else:
-                return False, None
-        return True, cur
+                return None
+        return cur
 
 # Your Trie object will be instantiated and called as such:
 # trie = Trie()
