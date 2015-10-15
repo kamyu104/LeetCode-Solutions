@@ -1,5 +1,5 @@
  // Time:  O(n^2)
- // Space: O(1)
+ // Space: O(1), no extra space except that result requires at most O(n^2) space
  
  class Solution {
   public:
