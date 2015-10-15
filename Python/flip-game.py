@@ -10,9 +10,9 @@ class Solution(object):
         """
         res = []
         i, n = 0, len(s) - 1
-        while i < n:                                    # O(n) times
+        while i < n:                                    # O(n) time
             if s[i] == '+':
-                while i < n and s[i+1] == '+':          # O(c) times
+                while i < n and s[i+1] == '+':          # O(c) time
                     res.append(s[:i] + '--' + s[i+2:])  # O(n) time and space
                     i += 1
             i += 1
