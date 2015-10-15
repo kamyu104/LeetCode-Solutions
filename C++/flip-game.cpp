@@ -1,4 +1,4 @@
- // Time:  O(n^2)
+ // Time:  O(c * n), n is length of string, c is count of "++"
  // Space: O(1), no extra space except that result requires at most O(n^2) space
  
  class Solution {
