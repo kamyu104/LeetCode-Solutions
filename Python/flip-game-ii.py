@@ -3,7 +3,6 @@
 
 # Time:  O(n + c^3 * 2^c * logc), n is length of string, c is count of "++"
 # Space: O(c * 2^c)
-
 # hash solution.
 # We have total O(2^c) game strings,
 # and each hash key in hash table would cost O(c),
