@@ -1,5 +1,5 @@
 // Time:  O(n^(c+1)), n is length of string, c is count of "++"
-// Space: O(c)
+// Space: O(c), recursion would be called at most c in depth.
 
 class Solution {
 public:
