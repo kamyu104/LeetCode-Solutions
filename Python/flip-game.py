@@ -1,4 +1,4 @@
-# Time:  O(c * n + n)
+# Time:  O(c * n + n) = O(n * (c+1))
 # Space: O(n)
 
 # This solution compares only O(1) times for the two consecutive "+"
