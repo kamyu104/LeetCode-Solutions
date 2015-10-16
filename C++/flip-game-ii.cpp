@@ -1,5 +1,5 @@
-// Time:  O(c * n * 2^c), try all the possible game strings,
-//                        and each string would have c choices to become the next string 
+// Time:  O(n + c * n * 2^c), try all the possible game strings,
+//                            and each string would have c choices to become the next string 
 // Space: O(n * 2^c), keep all the possible game strings
 
 // hash solution.
