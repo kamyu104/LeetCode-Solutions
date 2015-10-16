@@ -1,5 +1,6 @@
-// Time:  O(n * 2^c)
-// Space: O(n * 2^c)
+// Time:  O(c * n * 2^c), try all the possible game strings,
+//                        and each string would have c choices to become the next string 
+// Space: O(n * 2^c), keep all the possible game strings
 
 // hash solution.
 class Solution {
@@ -8,12 +9,10 @@ public:
         if (!lookup_.count(s)) {
             int n = s.length();
             bool is_win = false; 
-            for (int i = 0; !is_win && i < n - 1; ++i) {  // O(n) time
+            for (int i = 0; !is_win && i < n - 1; ++i) {
                 if (s[i] == '+') {
-                    for (; !is_win && i < n - 1 && s[i + 1] == '+'; ++i) {  // O(c) time
+                    for (; !is_win && i < n - 1 && s[i + 1] == '+'; ++i) {
                         s[i] = s[i + 1] = '-';
-                        // t(n, c) = c * t(n, c - 1) + n = ... = c! * t(n, 0) + n * c! * (1/0! + 1/1! + ... 1/c!)
-                        // = n * c! + n * c! * O(e) = O(n * c!)
                         is_win = !canWin(s); 
                         s[i] = s[i + 1] = '+';
                         lookup_[s] = is_win;
