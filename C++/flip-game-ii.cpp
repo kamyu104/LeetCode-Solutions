@@ -1,10 +1,38 @@
+// Time:  O(n^2)
+// Space: O(n)
+
 // The best theory solution (DP, O(n^2)) could be seen here:
 // https://leetcode.com/discuss/64344/theory-matters-from-backtracking-128ms-to-dp-0ms
+class Solution {
+public:
+    bool canWin(string s) {
+        replace(s.begin(), s.end(), '-', ' ');
+        istringstream in(s);
+        int g_final = 0;
+        vector<int> g;  // Sprague-Grundy function of 0 ~ maxlen, O(n) space
+        for (string t; in >> t; ) {  // Split the string
+            int p = t.size();
+            while (g.size() <= p) {  // O(n) time
+                string x{t};
+                int i = 0, j = g.size() - 2;
+                while (i <= j) {  // // the S-G value of all subgame states, O(n) time
+                    // Theorem 2: g[game] = g[subgame1]^g[subgame2]^g[subgame3]...;
+                    x[g[i++] ^ g[j--]] = '-';
+                }
+                // Find first missing number.
+                g.emplace_back(x.find('+'));
+            }
+            g_final ^= g[p];  // g[0], g[1] is always 0
+        }
+        return g_final;  // Theorem 1: First player must win iff g(current_state) != 0
+    }
+};
+
 
 // Time:  O(n + c^3 * 2^c * logc), n is length of string, c is count of "++"
 // Space: O(c * 2^c)
 // hash solution.
-class Solution {
+class Solution2 {
 public:
     struct multiset_hash {
         std::size_t operator() (const multiset<int>& set) const {
@@ -67,7 +95,7 @@ private:
 //                            and each string would have c choices to become the next string 
 // Space: O(n * 2^c), keep all the possible game strings
 // hash solution.
-class Solution2 {
+class Solution3 {
 public:
     bool canWin(string s) {
         if (!lookup_.count(s)) {
@@ -94,7 +122,7 @@ private:
 // Time:  O(n * c!), n is length of string, c is count of "++"
 // Space: O(c), recursion would be called at most c in depth.
 //              Besides, no extra space in each depth for the modified string.
-class Solution3 {
+class Solution4 {
 public:
     bool canWin(string s) {
         const int n = s.length();
