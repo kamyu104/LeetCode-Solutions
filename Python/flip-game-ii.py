@@ -1,4 +1,4 @@
-# Time:  O(n + c^3 * 2^c * logc)
+# Time:  O(n + c^3 * 2^c * logc), n is length of string, c is count of "++"
 # Space: O(c * 2^c)
 
 # hash solution.
