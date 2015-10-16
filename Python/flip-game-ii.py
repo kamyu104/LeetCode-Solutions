@@ -1,5 +1,19 @@
+# Time:  O(n^2)
+# Space: O(n)
+
 # The best theory solution (DP, O(n^2)) could be seen here:
 # https://leetcode.com/discuss/64344/theory-matters-from-backtracking-128ms-to-dp-0m
+class Solution(object):
+    def canWin(self, s):
+        g, g_final = [0], 0
+        for p in map(len, re.split('-+', s)):
+            while len(g) <= p:
+                # Theorem 2: g[game] = g[subgame1]^g[subgame2]^g[subgame3]...;
+                # and find first missing number.
+                g += min(set(xrange(p)) - {x^y for x, y in itertools.izip(g[:len(g)/2], g[-2:-len(g)/2-2:-1])}),
+            g_final ^= g[p]
+        return g_final > 0  # Theorem 1: First player must win iff g(current_state) != 0
+
 
 # Time:  O(n + c^3 * 2^c * logc), n is length of string, c is count of "++"
 # Space: O(c * 2^c)
@@ -10,7 +24,7 @@
 # and each one would cost O(clogc) to sort,
 # so we get O((c * 2^c) * (c * clogc)) = O(c^3 * 2^c * logc) time.
 # To cache the results of all combinations, thus O(c * 2^c) space.
-class Solution(object):
+class Solution2(object):
     def canWin(self, s):
         """
         :type s: str
@@ -33,7 +47,7 @@ class Solution(object):
 # Time:  O(c * n * c!), n is length of string, c is count of "++"
 # Space: O(c * n), recursion would be called at most c in depth.
 #                  Besides, it costs n space for modifying string at each depth.
-class Solution2(object):
+class Solution3(object):
     def canWin(self, s):
         """
         :type s: str
