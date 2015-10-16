@@ -6,7 +6,7 @@
 class Solution(object):
     def canWin(self, s):
         g, g_final = [0], 0
-        for p in map(len, re.split('-+', s)):
+        for p in itertools.imap(len, re.split('-+', s)):
             while len(g) <= p:
                 # Theorem 2: g[game] = g[subgame1]^g[subgame2]^g[subgame3]...;
                 # and find first missing number.
