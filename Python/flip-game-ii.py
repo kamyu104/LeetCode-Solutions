@@ -1,3 +1,6 @@
+# The best theory solution (DP, O(n^2)) could be seen here:
+# https://leetcode.com/discuss/64344/theory-matters-from-backtracking-128ms-to-dp-0m
+
 # Time:  O(n + c^3 * 2^c * logc), n is length of string, c is count of "++"
 # Space: O(c * 2^c)
 
