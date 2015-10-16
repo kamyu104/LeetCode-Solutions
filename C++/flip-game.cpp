@@ -1,4 +1,4 @@
- // Time:  O(c * n + n), n is length of string, c is count of "++"
+ // Time:  O(c * n + n) = O(n * (c+1)), n is length of string, c is count of "++"
  // Space: O(1), no extra space excluding the result which requires at most O(n^2) space
  
  class Solution {
