@@ -1,4 +1,4 @@
-// Time:  O(n^(c+1)), n is length of string, c is count of "++"
+// Time:  O(n * c!), n is length of string, c is count of "++"
 // Space: O(c), recursion would be called at most c in depth.
 //              Besides, no extra space in each depth for the modified string.
 
@@ -11,7 +11,9 @@ public:
               if (s[i] == '+') {
                   for (; !is_win && i < n - 1 && s[i + 1] == '+'; ++i) {  // O(c) time
                       s[i] = s[i + 1] = '-';
-                      is_win = !canWin(s);  // t(n, c) = n * t(n, c - 1) = ... = n^c * t(n, 0) = n^(c+1)
+                      // t(n, c) = c * t(n, c - 1) + n = ... = c! * t(n, 0) + n * c! (1 + 1/2! + ... 1/c!)
+                      // = n * c! + n * c! * O(e) = O(n * c!)
+                      is_win = !canWin(s); 
                       s[i] = s[i + 1] = '+';
                   }
               }
