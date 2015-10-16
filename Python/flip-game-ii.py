@@ -1,6 +1,6 @@
 # Time:  O(n^(c+2)), n is length of string, c is count of "++"
-# Space: O(c * n), recursion would be called at most c in depth. Besides,
-#                  it costs n space for modifying string at each depth.
+# Space: O(c * n), recursion would be called at most c in depth.
+#                  Besides, it costs n space for modifying string at each depth.
 
 class Solution(object):
     def canWin(self, s):
