@@ -11,7 +11,7 @@ public:
               if (s[i] == '+') {
                   for (; !is_win && i < n - 1 && s[i + 1] == '+'; ++i) {  // O(c) time
                       s[i] = s[i + 1] = '-';
-                      is_win = !canWin(s);  // F(n, c) = n * F(n, c - 1) = ... = n^c * F(n, 0) = n^(c+1)
+                      is_win = !canWin(s);  // t(n, c) = n * t(n, c - 1) = ... = n^c * t(n, 0) = n^(c+1)
                       s[i] = s[i + 1] = '+';
                   }
               }
