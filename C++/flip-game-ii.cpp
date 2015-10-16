@@ -15,7 +15,7 @@ public:
             while (g.size() <= p) {  // O(n) time
                 string x{t};
                 int i = 0, j = g.size() - 2;
-                while (i <= j) {  // // the S-G value of all subgame states, O(n) time
+                while (i <= j) {  // The S-G value of all subgame states, O(n) time
                     // Theorem 2: g[game] = g[subgame1]^g[subgame2]^g[subgame3]...;
                     x[g[i++] ^ g[j--]] = '-';
                 }
