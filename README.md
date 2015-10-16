@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-293%20%2F%20293-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-294%20%2F%20294-ff69b4.svg)
 
-Up to date (2015-10-15), there are `276` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-10-16), there are `277` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `293` questions.
+Here is the classification of all `294` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -392,6 +392,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 126| [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/)   |[Python](./Python/word-ladder-ii.py) | _O(n * d)_ | _O(d)_         | Hard         ||
+294| [Flip Game II](https://leetcode.com/problems/flip-game-ii/) | [C++](./C++/flip-game-ii.cpp) [Python](./Python/flip-game-ii.py)  | _O(n^(c+1))_ |  _O(c)_ | Medium         |📖||
 
 ## Greedy
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
