@@ -7,7 +7,7 @@ class Solution {
 public:
     bool canWin(string s) {
         if (!lookup_.count(s)) {
-            int n = s.length();
+            const int n = s.length();
             bool is_win = false; 
             for (int i = 0; !is_win && i < n - 1; ++i) {
                 if (s[i] == '+') {
@@ -33,7 +33,7 @@ private:
 class Solution2 {
 public:
     bool canWin(string s) {
-        int n = s.length();
+        const int n = s.length();
         bool is_win = false; 
         for (int i = 0; !is_win && i < n - 1; ++i) {  // O(n) time
             if (s[i] == '+') {
