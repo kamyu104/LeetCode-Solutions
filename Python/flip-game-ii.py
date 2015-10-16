@@ -14,9 +14,10 @@ class Solution(object):
             consecutives = tuple(sorted(c for c in consecutives if c >= 2))  # O(clogc)
             if consecutives not in lookup:
                 # We have total O(2^c) game strings,
+                # and each hash  key in hash table would cost O(c),
                 # each one has O(c) choices to the next one,
                 # and each one would cost O(clogc) to sort,
-                # so we get O((c * clogc) * 2^c) = O(c^2 * 2^c * logc) time.
+                # so we get O((c * 2^c) * (c * clogc)) = O(c^3 * 2^c * logc) time.
                 # To cache the results of all combinations, thus O(c * 2^c) space.
                 lookup[consecutives] = any(not canWinHelper(consecutives[:i] + (j, c-2-j) + consecutives[i+1:])
                                            for i, c in enumerate(consecutives)
