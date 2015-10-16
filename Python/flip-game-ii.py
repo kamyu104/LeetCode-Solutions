@@ -14,7 +14,7 @@ class Solution(object):
             if s[i] == '+':
                 while not is_win and i < n and s[i+1] == '+':           # O(c) time
                      # t(n, c) = c * (t(n, c-1) + n) + n = ...
-                     # = c! * t(n, 0) + n * c! * (c + 1) (1/0! + 1/1! + ... 1/c!)
+                     # = c! * t(n, 0) + n * c! * (c + 1) * (1/0! + 1/1! + ... 1/c!)
                      # = n * c! + n * c! * (c + 1) * O(e) = O(c * n * c!)
                     is_win = not self.canWin(s[:i] + '--' + s[i+2:])    # O(n) space
                     i += 1
