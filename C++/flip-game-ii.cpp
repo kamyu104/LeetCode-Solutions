@@ -30,14 +30,14 @@ public:
     }
 
 private:
-    bool canWinHelper(const multiset<int>& consecutives) {
+    bool canWinHelper(const multiset<int>& consecutives) {  // O(2^c) time
         if (!lookup_.count(consecutives)) {
             bool is_win = false;
-            for (auto it = consecutives.cbegin(); !is_win && it != consecutives.cend(); ++it) {
+            for (auto it = consecutives.cbegin(); !is_win && it != consecutives.cend(); ++it) {  // O(c) time
                 const int c = *it;
                 multiset<int> next_consecutives(consecutives);
                 next_consecutives.erase(next_consecutives.find(c));
-                for (int i = 0; !is_win && i < c - 1; ++i) {
+                for (int i = 0; !is_win && i < c - 1; ++i) {  // O(clogc) time
                     if (i >= 2) {
                         next_consecutives.emplace(i);
                     }
@@ -51,7 +51,7 @@ private:
                     if (c - 2 - i >= 2) {
                         next_consecutives.erase(next_consecutives.find(c - 2 - i));
                     }
-                    lookup_[consecutives] = is_win;
+                    lookup_[consecutives] = is_win;  // O(c) time
                 }
             }
         }
