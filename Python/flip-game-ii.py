@@ -1,7 +1,7 @@
-# Time:  O(n^2)
-# Space: O(n)
+# Time:  O(n + c^2)
+# Space: O(c)
 
-# The best theory solution (DP, O(n^2)) could be seen here:
+# The best theory solution (DP, O(n + c^2)) could be seen here:
 # https://leetcode.com/discuss/64344/theory-matters-from-backtracking-128ms-to-dp-0m
 class Solution(object):
     def canWin(self, s):
