@@ -1,7 +1,7 @@
-// Time:  O(n^2)
-// Space: O(n)
+// Time:  O(n + c^2), c is max length of consecutive '+'
+// Space: O(c)
 
-// The best theory solution (DP, O(n^2)) could be seen here:
+// The best theory solution (DP, O(n + c^2)) could be seen here:
 // https://leetcode.com/discuss/64344/theory-matters-from-backtracking-128ms-to-dp-0ms
 class Solution {
 public:
@@ -12,10 +12,10 @@ public:
         vector<int> g;  // Sprague-Grundy function of 0 ~ maxlen, O(n) space
         for (string t; in >> t; ) {  // Split the string
             int p = t.size();
-            while (g.size() <= p) {  // O(n) time
+            while (g.size() <= p) {  // O(c) time
                 string x{t};
                 int i = 0, j = g.size() - 2;
-                while (i <= j) {  // The S-G value of all subgame states, O(n) time
+                while (i <= j) {  // The S-G value of all subgame states, O(c) time
                     // Theorem 2: g[game] = g[subgame1]^g[subgame2]^g[subgame3]...;
                     x[g[i++] ^ g[j--]] = '-';
                 }
