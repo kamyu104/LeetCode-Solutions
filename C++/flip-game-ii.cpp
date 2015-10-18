@@ -22,7 +22,7 @@ public:
                 // Find first missing number.
                 g.emplace_back(x.find('+'));
             }
-            g_final ^= g[p];  // g[0], g[1] is always 0
+            g_final ^= g[p];
         }
         return g_final;  // Theorem 1: First player must win iff g(current_state) != 0
     }
