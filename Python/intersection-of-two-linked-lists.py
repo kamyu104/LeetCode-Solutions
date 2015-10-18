@@ -33,11 +33,12 @@ class Solution:
     # @return the intersected ListNode
     def getIntersectionNode(self, headA, headB):
         curA, curB = headA, headB
-        tailA, tailB = None, None
+        begin, tailA, tailB = None, None, None
         
         while curA and curB:
             if curA == curB:
-                return curA
+                begin = curA
+                break
                 
             if curA.next:
                 curA = curA.next
@@ -55,4 +56,4 @@ class Solution:
             else:
                 break
         
-        return None
+        return begin
