@@ -36,7 +36,6 @@ private:
     priority_queue<int, vector<int>, greater<int>> min_heap_;
     // max_heap_ stores the smaller half seen so far.
     priority_queue<int, vector<int>, less<int>> max_heap_;
-
 };
 
 // BST solution.
@@ -74,7 +73,6 @@ private:
     multiset<int, less<int>> min_bst_;
     // max_bst_ stores the smaller half seen so far.
     multiset<int, greater<int>> max_bst_;
-
 };
 
 // Your MedianFinder object will be instantiated and called as such:
