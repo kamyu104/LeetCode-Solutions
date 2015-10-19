@@ -31,7 +31,7 @@ public:
     }
 
 private:
-   // min_num_ stores the larger half seen so far.
+   // min_bst_ stores the larger half seen so far.
     multiset<int, less<int>> min_bst_;
     // max_bst_ stores the smaller half seen so far.
     multiset<int, greater<int>> max_bst_;
