@@ -46,15 +46,15 @@ public:
     void addNum(int num) {
         // Balance smaller half and larger half.
         if (max_bst_.empty() || num > *max_bst_.cbegin()) {
-            min_bst_.insert(num);
+            min_bst_.emplace(num);
             if (min_bst_.size() > max_bst_.size() + 1) {
-                max_bst_.insert(*min_bst_.cbegin());
+                max_bst_.emplace(*min_bst_.cbegin());
                 min_bst_.erase(min_bst_.cbegin());
             }
         } else {
-            max_bst_.insert(num);
+            max_bst_.emplace(num);
             if (max_bst_.size() > min_bst_.size()) {
-                min_bst_.insert(*max_bst_.cbegin());
+                min_bst_.emplace(*max_bst_.cbegin());
                 max_bst_.erase(max_bst_.cbegin());
             }
         }
