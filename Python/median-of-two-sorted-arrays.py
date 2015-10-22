@@ -1,4 +1,4 @@
-# Time:  O(log(m + n))
+# Time:  O(log(min(m, n)))
 # Space: O(1)
 # 
 # There are two sorted arrays A and B of size m and n respectively. 
