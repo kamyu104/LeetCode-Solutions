@@ -27,7 +27,7 @@ public:
         queue<int> q;
         q.emplace(edges[0].first);
         while (!q.empty()) {
-            int i = q.front();
+            const int i = q.front();
             q.pop();
             visited.emplace(i);
             for (const auto& n : nodes[i].neighbors) {
