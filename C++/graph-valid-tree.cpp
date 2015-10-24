@@ -1,10 +1,11 @@
+
 // Time:  O(|V| + |E|)
 // Space: O(|V| + |E|)
 
 class Solution {
 public:
     struct node {
-        int parent;
+        int parent = -1;
         vector<int>neighbors;
     };
 
@@ -20,12 +21,9 @@ public:
             nodes[edge.first].neighbors.emplace_back(edge.second);
             nodes[edge.second].neighbors.emplace_back(edge.first);
         }
+
         if (nodes.size() != n) {
             return false;
-        }
-
-        for (int i = 0; i < n; ++i) {
-            nodes[i].parent = -1;
         }
 
         unordered_set<int> visited;
