@@ -7,6 +7,7 @@ public:
         int parent;
         vector<int>neighbors;
     };
+
     bool validTree(int n, vector<pair<int, int>>& edges) {
         if (edges.size() != n - 1) {
             return false;
