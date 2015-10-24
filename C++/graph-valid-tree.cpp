@@ -20,13 +20,17 @@ public:
             nodes[edge.first].neighbors.emplace_back(edge.second);
             nodes[edge.second].neighbors.emplace_back(edge.first);
         }
+        if (nodes.size() != n) {
+            return false;
+        }
+
         for (int i = 0; i < n; ++i) {
             nodes[i].parent = -1;
         }
 
         unordered_set<int> visited;
         queue<int> q;
-        q.emplace(edges[0].first);
+        q.emplace(0);
         while (!q.empty()) {
             const int i = q.front();
             q.pop();
