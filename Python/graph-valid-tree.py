@@ -9,6 +9,8 @@ class Solution:
     def validTree(self, n, edges):
         if len(edges) != n - 1:
             return False
+        elif n == 1:
+            return True
 
         visited_from, neighbors = 0, 1
         nodes = {}  # A structure to track each node's [visited_from, neighbors]
@@ -21,8 +23,7 @@ class Solution:
         # BFS to check whether the graph is valid tree.
         visited = {}
         q = collections.deque()
-        if edges:
-            q.append(edges[0][0])
+        q.append(edges[0][0])
         while q:
             i = q.popleft()
             visited[i] = True
