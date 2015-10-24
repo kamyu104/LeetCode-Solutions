@@ -1,5 +1,5 @@
 # Time:  O(|V| + |E|)
-# Space: O(|V|)
+# Space: O(|V| + |E|)
 
 # BFS solution.
 class Solution:
