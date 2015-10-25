@@ -33,14 +33,14 @@ public:
             q.pop();
             visited.emplace(i);
             --n;
-            for (const auto& n : nodes[i].neighbors) {
-                if (n != nodes[i].parent) {
-                    if (visited.find(n) != visited.end()) {
+            for (const auto& node : nodes[i].neighbors) {
+                if (node != nodes[i].parent) {
+                    if (visited.find(node) != visited.end()) {
                         return false;
                     } else {
-                        visited.emplace(n);
-                        nodes[n].parent = i;
-                        q.emplace(n);
+                        visited.emplace(node);
+                        nodes[node].parent = i;
+                        q.emplace(node);
                     }
                 }
             }
