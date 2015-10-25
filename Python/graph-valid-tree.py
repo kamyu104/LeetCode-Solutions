@@ -44,7 +44,7 @@ class Solution:
 # Time:  O(|V| + |E|)
 # Space: O(|V| + |E|)
 # BFS solution.
-class Solution:
+class Solution2:
     # @param {integer} n
     # @param {integer[][]} edges
     # @return {boolean}
