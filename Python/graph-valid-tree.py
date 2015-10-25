@@ -30,12 +30,13 @@ class Solution:
         while q:
             i = q.popleft()
             visited[i] = True
-            for n in nodes[i][neighbors]:
-                if n != nodes[i][visited_from]:
-                    if n in visited:
+            n -= 1
+            for node in nodes[i][neighbors]:
+                if node != nodes[i][visited_from]:
+                    if node in visited:
                         return False
                     else:
-                        visited[n] = True
-                        nodes[n][visited_from] = i
-                        q.append(n)
-        return True
+                        visited[node] = True
+                        nodes[node][visited_from] = i
+                        q.append(node)
+        return n == 0
