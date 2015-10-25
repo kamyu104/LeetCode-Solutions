@@ -32,7 +32,6 @@ public:
             const int i = q.front();
             q.pop();
             visited.emplace(i);
-            --n;
             for (const auto& node : nodes[i].neighbors) {
                 if (node != nodes[i].parent) {
                     if (visited.find(node) != visited.end()) {
@@ -45,6 +44,6 @@ public:
                 }
             }
         }
-        return n == 0;
+        return visited.size() == n;
     }
 };
