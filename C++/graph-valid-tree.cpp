@@ -1,4 +1,3 @@
-
 // Time:  O(|V| + |E|)
 // Space: O(|V| + |E|)
 
@@ -33,6 +32,7 @@ public:
             const int i = q.front();
             q.pop();
             visited.emplace(i);
+            --n;
             for (const auto& n : nodes[i].neighbors) {
                 if (n != nodes[i].parent) {
                     if (visited.find(n) != visited.end()) {
@@ -45,6 +45,6 @@ public:
                 }
             }
         }
-        return true;
+        return n == 0;
     }
 };
