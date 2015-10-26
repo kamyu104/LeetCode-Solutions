@@ -15,59 +15,38 @@ public:
 
     // Encodes a tree to a single string.
     string serialize(TreeNode* root) {
-        string output;
-        serializeHelper(root, &output);
-        return output;
+        ostringstream out;
+        serializeHelper(root, out);
+        return out.str();
     }
 
     // Decodes your encoded data to tree.
     TreeNode* deserialize(string data) {
-        TreeNode *root = nullptr;
-        int start = 0;
-        deserializeHelper(data, &start, &root);
-        return root;
+        istringstream in(data);
+        return deserializeHelper(in);
     }
 
 private:
-    bool getNumber(const string &data, int *start, int *num) {
-        int sign = 1;
-        if (data[*start] == '#') {
-            *start += 2;  // Skip "# ".
-            return false;
-        } else if (data[*start] == '-') {
-            sign = -1;
-            ++(*start);
-        }
-
-        for (*num = 0; isdigit(data[*start]); ++(*start)) {
-            *num = *num * 10 + data[*start] - '0';
-        }
-        *num *= sign;
-        ++(*start);  // Skip " ".
-
-        return true;
-    }
-
-    void deserializeHelper(const string& data,
-                           int *start,  TreeNode **root) {
-        int num;
-        if (!getNumber(data, start, &num)) {
-            *root = nullptr;
-        } else {
-            *root = new TreeNode(num);
-            deserializeHelper(data, start, &((*root)->left));
-            deserializeHelper(data, start, &((*root)->right));
-        }
-    }
-
-    void serializeHelper(const TreeNode *root, string *prev) {
+    void serializeHelper(const TreeNode *root, ostringstream& out) {
         if (!root)  {
-            prev->append("# ");
+            out << "# ";
         } else {
-            prev->append(to_string(root->val).append(" "));
-            serializeHelper(root->left, prev);
-            serializeHelper(root->right, prev);
+            out << root->val << " ";
+            serializeHelper(root->left, out);
+            serializeHelper(root->right, out);
         }
+    }
+
+    TreeNode *deserializeHelper(istringstream& in) {
+        string val;
+        in >> val;
+        if (val != "#") {
+            TreeNode* root = new TreeNode(stoi(val));
+            root->left = deserializeHelper(in);
+            root->right = deserializeHelper(in);
+            return root;
+        }
+        return nullptr;
     }
 };
 
