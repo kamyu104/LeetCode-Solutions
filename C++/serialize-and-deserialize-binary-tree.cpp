@@ -24,8 +24,7 @@ public:
     TreeNode* deserialize(string data) {
         TreeNode *root = nullptr;
         int start = 0;
-        deserializeHelper(data, &start, &root);
-        return root;
+        return deserializeHelper(data, &start);
     }
 
 private:
@@ -58,15 +57,15 @@ private:
         }
     }
 
-    void deserializeHelper(const string& data,
-                           int *start,  TreeNode **root) {
+    TreeNode *deserializeHelper(const string& data, int *start) {
         int num;
         if (!getNumber(data, start, &num)) {
-            *root = nullptr;
+            return nullptr;
         } else {
-            *root = new TreeNode(num);
-            deserializeHelper(data, start, &((*root)->left));
-            deserializeHelper(data, start, &((*root)->right));
+            TreeNode *root = new TreeNode(num);
+            root->left = deserializeHelper(data, start);
+            root->right = deserializeHelper(data, start);
+            return root;
         }
     }
 };
