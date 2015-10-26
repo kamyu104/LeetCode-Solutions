@@ -40,13 +40,14 @@ private:
     TreeNode *deserializeHelper(istringstream& in) {
         string val;
         in >> val;
-        if (val != "#") {
+        if (val == "#") {
+            return nullptr;
+        } else {
             TreeNode* root = new TreeNode(stoi(val));
             root->left = deserializeHelper(in);
             root->right = deserializeHelper(in);
             return root;
         }
-        return nullptr;
     }
 };
 
