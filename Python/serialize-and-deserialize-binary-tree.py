@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(n)
+# Space: O(h)
 
 # Serialization is the process of converting a data structure or
 # object into a sequence of bits so that it can be stored in a file
@@ -67,5 +67,19 @@ class Codec:
                 node.left = deserializeHelper()
                 node.right = deserializeHelper()
                 return node
-        vals = iter(data.split())
+        def isplit(source, sep):
+            sepsize = len(sep)
+            start = 0
+            while True:
+                idx = source.find(sep, start)
+                if idx == -1:
+                    yield source[start:]
+                    return
+                yield source[start:idx]
+                start = idx + sepsize
+        vals = iter(isplit(data, ' '))
         return deserializeHelper()
+
+# Your Codec object will be instantiated and called as such:
+# codec = Codec()
+# codec.deserialize(codec.serialize(root))
