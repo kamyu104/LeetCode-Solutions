@@ -28,7 +28,9 @@ class Solution(object):
                 cur_len = max(cur_len, left_len + 1);
             if root.right and root.right.val == root.val + 1:
                 cur_len = max(cur_len, right_len + 1)
+
             self.max_len = max(self.max_len, cur_len, left_len, right_len)
+
             return cur_len
 
         longestConsecutiveHelper(root)
