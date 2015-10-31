@@ -1,6 +1,7 @@
 // Time:  O(n)
-//OSpace: O(10) = O(1)
+// Space: O(10) = O(1)
 
+// Two pass solution.
 class Solution {
 public:
     string getHint(string secret, string guess) {
