@@ -18,7 +18,7 @@ public:
                 (g_lookup[s] > 0) ? --g_lookup[s], ++B : ++s_lookup[s]; 
              }
         }
-        return to_string(A) + "A" + to_string(B) + "B";
+        return to_string(A).append("A").append(to_string(B)).append("B");
     }
 };
 
@@ -43,6 +43,6 @@ public:
                 ++A, --B;
             }
         }
-        return to_string(A) + "A" + to_string(B) + "B";
+        return to_string(A).append("A").append(to_string(B)).append("B");
     }
 };
