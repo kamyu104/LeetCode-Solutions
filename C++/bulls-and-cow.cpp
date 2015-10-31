@@ -5,24 +5,18 @@
 class Solution {
 public:
     string getHint(string secret, string guess) {
-        unordered_map<char, int> lookup, lookup_B;
+        unordered_map<char, int> s_map, g_map;
         int A = 0, B = 0;
-        for (const auto& s : secret) {
-            ++lookup[s];
-        }
-        for (int i = 0; i < secret.length() && i < guess.length(); ++i) {
-            if (lookup[guess[i]]) {
-                --lookup[guess[i]];
-                if (secret[i] == guess[i]) {
-                    ++A;
-                } else {
-                    ++lookup_B[guess[i]];
-                    ++B;
-                }
-            } else if (lookup_B[guess[i]] && secret[i] == guess[i]) {
-                --lookup_B[guess[i]];
-                --B, ++A;
-            }
+        const int n = min(secret.length(), guess.length());
+        for (int i = 0; i < n; ++i) {
+            const char s = secret[i];
+            const char g = guess[i];
+            if (s == g) {
+                ++A;
+            } else {
+                (s_map[g] > 0) ? --s_map[g], ++B : ++g_map[g];
+                (g_map[s] > 0) ? --g_map[s], ++B : ++s_map[s]; 
+             }
         }
         return to_string(A).append("A").append(to_string(B).append("B"));
     }
@@ -43,7 +37,8 @@ public:
                 ++B;
             }
         }
-        for (int i = 0; i < secret.length() && i < guess.length(); ++i) {
+        const int n = min(secret.length(), guess.length());
+        for (int i = 0; i < n; ++i) {
             if (secret[i] == guess[i]) {
                 ++A, --B;
             }
