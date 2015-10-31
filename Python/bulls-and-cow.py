@@ -30,6 +30,7 @@
 # digits, and their lengths are always equal.
 #
 
+# Two pass solution.
 from collections import Counter
 from itertools import imap
 
