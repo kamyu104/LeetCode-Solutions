@@ -28,7 +28,7 @@ public:
     }
 };
 
-// Three pass solution.
+// Two pass solution.
 class Solution2 {
 public:
     string getHint(string secret, string guess) {
