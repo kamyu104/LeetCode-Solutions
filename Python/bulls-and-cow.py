@@ -1,7 +1,6 @@
 # Time:  O(n)
 # Space: O(10) = O(1)
 
-
 # You are playing the following Bulls and Cows game with your friend:
 # You write a 4-digit secret number and ask your friend to guess it,
 # each time your friend guesses a number, you give a hint, the hint 
