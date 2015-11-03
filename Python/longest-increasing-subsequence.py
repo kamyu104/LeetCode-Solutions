@@ -52,7 +52,7 @@ class Solution2(object):
         :type nums: List[int]
         :rtype: int
         """
-        dp = []
+        dp = []  # dp[i]: the length of LIS ends with nums[i]
         for i in xrange(len(nums)):
             dp.append(1)
             for j in xrange(i):
