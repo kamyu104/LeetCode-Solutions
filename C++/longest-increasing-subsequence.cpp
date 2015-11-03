@@ -72,7 +72,7 @@ class Solution3 {
 public:
     int lengthOfLIS(vector<int>& nums) {
         const int n = nums.size();
-        vector<int> dp(n, 1);
+        vector<int> dp(n, 1);  // dp[i]: the length of LIS ends with nums[i]
         int res = 0;
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < i; ++j) {
