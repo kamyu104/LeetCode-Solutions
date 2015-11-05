@@ -1,3 +1,6 @@
+// Time:  O(n * 2^n)
+// Space: O(n^2)
+
 // DFS solution.
 class Solution {
 public:
