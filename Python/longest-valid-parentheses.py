@@ -9,35 +9,28 @@
 # Another example is ")()())", where the longest valid parentheses substring is "()()", which has length = 4.
 #
 
-class Solution:
-    # @param s, a string
-    # @return an integer
+class Solution(object):
     def longestValidParentheses(self, s):
-        longest = 0
-        
-        start, depth = -1, 0
-        for i in xrange(len(s)):
-            if s[i] == "(":
-                depth += 1
-            else:
-                depth -= 1
-                if depth < 0:
-                    start, depth = i, 0
-                elif depth == 0:
-                    longest = max(longest, i - start)
-        
-        start, depth = len(s), 0
-        for i in reversed(xrange(len(s))):
-            if s[i] == ")":
-                depth += 1
-            else:
-                depth -= 1
-                if depth < 0:
-                    start, depth = i, 0
-                elif depth == 0:
-                    longest = max(longest, start - i)
-        
-        return longest
+        """
+        :type s: str
+        :rtype: int
+        """
+        def length(it, start, c):
+            depth, longest = 0, 0
+            for i in it:
+                if s[i] == c:
+                    depth += 1
+                else:
+                    depth -= 1
+                    if depth < 0:
+                        start, depth = i, 0
+                    elif depth == 0:
+                        longest = max(longest, abs(i - start))
+            return longest
+
+        return max(length(xrange(len(s)), -1, '('), \
+                   length(reversed(xrange(len(s))), len(s), ')'))
+
 
 # Time:  O(n)
 # Space: O(n)
