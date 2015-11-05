@@ -34,7 +34,7 @@ public:
             return;
         }
 
-        for (int i = start; i < s.size(); ++i) {
+        for (int i = start; i < s.length(); ++i) {
             string tmp = s;
             if (right_removed == 0 && left_removed > 0 && tmp[i] == '(') {
                 if (i == start || tmp[i] != tmp[i - 1]) {  // Skip duplicated.
