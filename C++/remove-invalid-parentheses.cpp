@@ -1,5 +1,5 @@
 // Time:  O(n * C(n, c)), try out all possible substrings with the minimum c deletion.
-// Space: O(n^2), the depth is at most n, and it costs n at each depth
+// Space: O(n * c), the depth is at most c, and it costs n at each depth
 
 // DFS solution.
 class Solution {
