@@ -20,11 +20,11 @@ public:
         }
         vector<string> res;
         unordered_set<int> removed;
-        removeInvalidParentheses(s, 0, left_removed, right_removed, &removed, &res);
+        removeInvalidParenthesesHelper(s, 0, left_removed, right_removed, &removed, &res);
         return res;
     }
 
-    void removeInvalidParentheses(const string& s, int start,
+    void removeInvalidParenthesesHelper(const string& s, int start,
                                   int left_removed, int right_removed,
                                   unordered_set<int> *removed, vector<string> *res) {
 
@@ -45,15 +45,15 @@ public:
             if (right_removed == 0 && left_removed > 0 && s[i] == '(') {
                 if (i == start || s[i] != s[i - 1]) {  // Skip duplicated.
                     removed->emplace(i);
-                    removeInvalidParentheses(s, i + 1, left_removed - 1, right_removed,
-                                             removed, res);
+                    removeInvalidParenthesesHelper(s, i + 1, left_removed - 1, right_removed,
+                                                   removed, res);
                     removed->erase(i);
                 }
             } else if (right_removed > 0 && s[i] == ')') {
                 if (i == start || s[i] != s[i - 1]) {  // Skip duplicated.
                     removed->emplace(i);
-                    removeInvalidParentheses(s, i + 1, left_removed, right_removed - 1,
-                                             removed, res);
+                    removeInvalidParenthesesHelper(s, i + 1, left_removed, right_removed - 1,
+                                                   removed, res);
                     removed->erase(i);
                 }
             }
@@ -100,12 +100,12 @@ public:
             }
         }
         vector<string> res;
-        removeInvalidParentheses(s, 0, left_removed, right_removed, &res);
+        removeInvalidParenthesesHelper(s, 0, left_removed, right_removed, &res);
         return res;
     }
 
 
-    void removeInvalidParentheses(const string& s, int start,
+    void removeInvalidParenthesesHelper(const string& s, int start,
                                   int left_removed, int right_removed, vector<string> *res) {
 
         if (left_removed == 0 && right_removed == 0) {   
@@ -120,13 +120,13 @@ public:
                 if (i == start || s[i] != s[i - 1]) {  // Skip duplicated.
                     string tmp = s;
                     tmp.erase(i, 1);
-                    removeInvalidParentheses(tmp, i, left_removed - 1, right_removed, res);
+                    removeInvalidParenthesesHelper(tmp, i, left_removed - 1, right_removed, res);
                 }
             } else if (right_removed > 0 && s[i] == ')') {
                 if (i == start || s[i] != s[i - 1]) {  // Skip duplicated.
                     string tmp = s;
                     tmp.erase(i, 1);
-                    removeInvalidParentheses(tmp, i, left_removed, right_removed - 1, res);
+                    removeInvalidParenthesesHelper(tmp, i, left_removed, right_removed - 1, res);
                 }
             }
 
