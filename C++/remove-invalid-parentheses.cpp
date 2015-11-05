@@ -19,21 +19,19 @@ public:
             }
         }
         vector<string> res;
-        vector<int> removed;
+        unordered_set<int> removed;
         removeInvalidParentheses(s, 0, left_removed, right_removed, &removed, &res);
         return res;
     }
 
     void removeInvalidParentheses(const string& s, int start,
                                   int left_removed, int right_removed,
-                                  vector<int> *removed, vector<string> *res) {
+                                  unordered_set<int> *removed, vector<string> *res) {
 
         if (left_removed == 0 && right_removed == 0) { 
             string tmp;
             for (int i = 0, j = 0; i < s.length(); ++i) {
-                if (j < removed->size() && i == (*removed)[j]) {
-                    ++j;
-                } else {
+                if (!removed->count(i)) {
                     tmp.push_back(s[i]);
                 }
             }
@@ -46,17 +44,17 @@ public:
         for (int i = start; i < s.length(); ++i) {
             if (right_removed == 0 && left_removed > 0 && s[i] == '(') {
                 if (i == start || s[i] != s[i - 1]) {  // Skip duplicated.
-                    removed->emplace_back(i);
+                    removed->emplace(i);
                     removeInvalidParentheses(s, i + 1, left_removed - 1, right_removed,
                                              removed, res);
-                    removed->pop_back();
+                    removed->erase(i);
                 }
             } else if (right_removed > 0 && s[i] == ')') {
                 if (i == start || s[i] != s[i - 1]) {  // Skip duplicated.
-                    removed->emplace_back(i);
+                    removed->emplace(i);
                     removeInvalidParentheses(s, i + 1, left_removed, right_removed - 1,
                                              removed, res);
-                    removed->pop_back();
+                    removed->erase(i);
                 }
             }
 
@@ -80,6 +78,7 @@ private:
         return sum == 0;
     }
 };
+
 
 // Time:  O(n * C(n, c)), try out all possible substrings with the minimum c deletion.
 // Space: O(n * c), the depth is at most c, and it costs n at each depth
