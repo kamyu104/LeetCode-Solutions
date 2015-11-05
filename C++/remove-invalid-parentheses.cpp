@@ -1,7 +1,7 @@
 // Time:  O(C(n, c)), try out all possible substrings with the minimum c deletion.
 // Space: O(c), the depth is at most c, and it costs n at each depth
 
-// DFS solution. (4ms)
+// DFS solution with removed array. (4ms)
 class Solution {
 public:
     vector<string> removeInvalidParentheses(string s)  {
@@ -88,8 +88,7 @@ private:
 
 // Time:  O(C(n, c)), try out all possible substrings with the minimum c deletion.
 // Space: O(c), the depth is at most c, and it costs n at each depth
-
-// DFS solution. (8ms)
+// DFS solution with removed hash. (8ms)
 class Solution2 {
 public:
     vector<string> removeInvalidParentheses(string s)  {
