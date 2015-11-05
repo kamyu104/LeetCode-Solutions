@@ -5,23 +5,29 @@
 class Solution {
 public:
     vector<string> removeInvalidParentheses(string s)  {
-        // Calculate the minimum left and right parantheses to remove
         int left_removed = 0, right_removed = 0;
-        for (const auto& c : s) {
-            if (c == '(') {
-                ++left_removed;
-            } else if (c == ')') {
-                if (!left_removed) {
-                    ++right_removed;
-                } else {
-                    --left_removed;
-                }
-            }
-        }
+        findMinRemove(s, &left_removed, &right_removed);
+
         vector<string> res;
         unordered_set<int> removed;
         removeInvalidParenthesesHelper(s, 0, left_removed, right_removed, &removed, &res);
         return res;
+    }
+
+private:
+    void findMinRemove(const string& s, int *left_removed, int *right_removed) {
+        // Calculate the minimum left and right parantheses to remove.
+        for (const auto& c : s) {
+            if (c == '(') {
+                ++(*left_removed);
+            } else if (c == ')') {
+                if (!(*left_removed)) {
+                    ++(*right_removed);
+                } else {
+                    --(*left_removed);
+                }
+            }
+        }
     }
 
     void removeInvalidParenthesesHelper(const string& s, int start,
@@ -61,7 +67,6 @@ public:
         }
     }
 
-private:
     // Check whether s is valid or not.
     bool isValid(string s) {
         int sum = 0;
@@ -86,25 +91,30 @@ private:
 class Solution2 {
 public:
     vector<string> removeInvalidParentheses(string s)  {
-        // Calculate the minimum left and right parantheses to remove
         int left_removed = 0, right_removed = 0;
-        for (const auto& c : s) {
-            if (c == '(') {
-                ++left_removed;
-            } else if (c == ')') {
-                if (!left_removed) {
-                    ++right_removed;
-                } else {
-                    --left_removed;
-                }
-            }
-        }
+        findMinRemove(s, &left_removed, &right_removed);
+
         vector<string> res;
         removeInvalidParenthesesHelper(s, 0, left_removed, right_removed, &res);
         return res;
     }
 
+    void findMinRemove(const string& s, int *left_removed, int *right_removed) {
+        // Calculate the minimum left and right parantheses to remove.
+        for (const auto& c : s) {
+            if (c == '(') {
+                ++(*left_removed);
+            } else if (c == ')') {
+                if (!(*left_removed)) {
+                    ++(*right_removed);
+                } else {
+                    --(*left_removed);
+                }
+            }
+        }
+    }
 
+private:
     void removeInvalidParenthesesHelper(const string& s, int start,
                                   int left_removed, int right_removed, vector<string> *res) {
 
@@ -133,7 +143,6 @@ public:
         }
     }
 
-private:
     // Check whether s is valid or not.
     bool isValid(string s) {
         int sum = 0;
