@@ -1,5 +1,5 @@
-// Time:  O(n * 2^n)
-// Space: O(n^2)
+// Time:  O(n * 2^n), try out all possible substrings
+// Space: O(n^2), the depth is at most n, and it costs n at each depth
 
 // DFS solution.
 class Solution {
