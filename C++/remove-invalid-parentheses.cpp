@@ -41,8 +41,7 @@ public:
                     tmp.erase(i, 1);
                     removeInvalidParentheses(tmp, i, left_removed - 1, right_removed, res);
                 }
-            }
-            if (right_removed > 0 && s[i] == ')') {
+            } else if (right_removed > 0 && s[i] == ')') {
                 if (i == start || s[i] != s[i - 1]) {  // Skip duplicated.
                     string tmp = s;
                     tmp.erase(i, 1);
