@@ -30,7 +30,7 @@ public:
 
         if (left_removed == 0 && right_removed == 0) { 
             string tmp;
-            for (int i = 0, j = 0; i < s.length(); ++i) {
+            for (int i = 0; i < s.length(); ++i) {
                 if (!removed->count(i)) {
                     tmp.push_back(s[i]);
                 }
