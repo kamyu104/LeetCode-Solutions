@@ -24,7 +24,6 @@ public:
         return res;
     }
 
-
     void removeInvalidParentheses(const string& s, int start,
                                   int left_removed, int right_removed,
                                   vector<int> *removed, vector<string> *res) {
