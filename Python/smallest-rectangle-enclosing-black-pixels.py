@@ -9,21 +9,21 @@ class Solution(object):
         :type y: int
         :rtype: int
         """
-        def binarySearch(image, left, right, find, has_one):
+        def binarySearch(left, right, find, image, has_one):
             while left <= right:  # O(logn) times
                 mid = left + (right - left) / 2
-                if find(mid, image, has_one):  # Time: O(n)
+                if find(image, has_one, mid):  # Time: O(n)
                     right = mid - 1
                 else:
                     left = mid + 1
             return left
 
 
-        searchColumns = lambda mid, image, has_one: any([int(row[mid]) for row in image]) == has_one
-        left = binarySearch(image, 0, y - 1, searchColumns, True)
-        right = binarySearch(image, y + 1, len(image[0]) - 1, searchColumns, False)
+        searchColumns = lambda image, has_one, mid: any([int(row[mid]) for row in image]) == has_one
+        left = binarySearch(0, y - 1, searchColumns, image, True)
+        right = binarySearch(y + 1, len(image[0]) - 1, searchColumns, image, False)
         
-        searchRows = lambda mid, image, has_one: any(itertools.imap(int, image[mid])) == has_one
-        top = binarySearch(image, 0, x - 1, searchRows, True)
-        bottom = binarySearch(image, x + 1, len(image) - 1, searchRows, False)
+        searchRows = lambda image, has_one, mid: any(itertools.imap(int, image[mid])) == has_one
+        top = binarySearch(0, x - 1, searchRows, image, True)
+        bottom = binarySearch(x + 1, len(image) - 1, searchRows, image, False)
         return (right - left) * (bottom - top)
