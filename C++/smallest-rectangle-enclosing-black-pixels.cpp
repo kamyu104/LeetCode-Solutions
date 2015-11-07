@@ -25,9 +25,7 @@ public:
     
 private:
     int binarySearch(const vector<vector<char>>& image, int left, int right,
-                     const function<bool(const int mid,
-                                         const vector<vector<char>>& image,
-                                         bool has_one)>& find,
+                     const function<bool(const int, const vector<vector<char>>&, bool)>& find,
                      bool has_one) {
         while (left <= right) {
             const int mid = left + (right - left) / 2;
