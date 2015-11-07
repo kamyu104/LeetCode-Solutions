@@ -50,7 +50,7 @@ class Solution2 {
 public:
     int minArea(vector<vector<char>>& image, int x, int y) {
         const auto searchColumns =
-            [](const int mid, const vector<vector<char>>& image, bool has_one) {
+            [](const vector<vector<char>>& image, bool has_one, const int mid) {
                 return has_one == any_of(image.cbegin(), image.cend(),
                                          [=](const vector<char>& row) { return row[mid] == '1'; });
             };
@@ -58,7 +58,7 @@ public:
         const int right = binarySearch(image, y + 1, image[0].size() - 1, searchColumns, false);
 
         const auto searchRows =
-            [](const int mid, const vector<vector<char>>& image, bool has_one) {
+            [](const vector<vector<char>>& image, bool has_one, const int mid) {
                 return has_one == any_of(image[mid].cbegin(), image[mid].cend(),
                                          [](const char& col) { return col == '1'; });
             };
@@ -70,11 +70,11 @@ public:
     
 private:
     int binarySearch(const vector<vector<char>>& image, int left, int right,
-                     const function<bool(const int, const vector<vector<char>>&, bool)>& find,
+                     const function<bool(const vector<vector<char>>&, bool, const int)>& find,
                      bool has_one) {
         while (left <= right) {
             const int mid = left + (right - left) / 2;
-            if (find(mid, image, has_one)) {
+            if (find(image, has_one, mid)) {
                 right = mid - 1;
             } else {
                 left = mid + 1;
