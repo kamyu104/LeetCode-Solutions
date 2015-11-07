@@ -6,26 +6,16 @@ public:
     int minArea(vector<vector<char>>& image, int x, int y) {
         const auto searchColumns =
             [](const int mid, const vector<vector<char>>& image, bool has_one) {
-                auto it = image.cbegin();
-                for (; it < image.cend(); ++it) {
-                    if ((*it)[mid] == '1') {
-                        break;
-                    }
-                }
-                return (it < image.cend()) == has_one;
+                return has_one == any_of(image.cbegin(), image.cend(),
+                                         [=](const vector<char>& row) { return row[mid] == '1'; });
             };
         const int left = binarySearch(image, 0, y - 1, searchColumns, true);
         const int right = binarySearch(image, y + 1, int(image[0].size()) - 1, searchColumns, false);
 
         const auto searchRows =
             [](const int mid, const vector<vector<char>>& image, bool has_one) {
-                auto it = image[mid].cbegin();
-                for (; it < image[mid].cend(); ++it) {
-                    if (*it == '1') {
-                        break;
-                    }
-                }
-                return (it < image[mid].cend()) == has_one;
+                return has_one == any_of(image[mid].cbegin(), image[mid].cend(),
+                                         [](const char& col) { return col == '1'; });
             };
         const int top = binarySearch(image, 0, x - 1, searchRows, true);
         const int bottom = binarySearch(image, x + 1, int(image.size()) - 1, searchRows, false);
