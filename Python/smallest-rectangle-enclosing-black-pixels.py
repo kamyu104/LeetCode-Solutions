@@ -22,8 +22,9 @@ class Solution(object):
         searchColumns = lambda image, has_one, mid: any([int(row[mid]) for row in image]) == has_one
         left = binarySearch(0, y - 1, searchColumns, image, True)
         right = binarySearch(y + 1, len(image[0]) - 1, searchColumns, image, False)
-        
+
         searchRows = lambda image, has_one, mid: any(itertools.imap(int, image[mid])) == has_one
         top = binarySearch(0, x - 1, searchRows, image, True)
         bottom = binarySearch(x + 1, len(image) - 1, searchRows, image, False)
+
         return (right - left) * (bottom - top)
