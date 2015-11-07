@@ -54,14 +54,14 @@ public:
                 return has_one == any_of(image.cbegin(), image.cend(),
                                          [=](const vector<char>& row) { return row[mid] == '1'; });
             };
-        const int left = binarySearch(0, y - 1, searchColumns, image, true);
-        const int right = binarySearch(y + 1, image[0].size() - 1, searchColumns, image, false);
-
         const auto searchRows =
             [](const vector<vector<char>>& image, bool has_one, const int mid) {
                 return has_one == any_of(image[mid].cbegin(), image[mid].cend(),
                                          [](const char& col) { return col == '1'; });
             };
+
+        const int left = binarySearch(0, y - 1, searchColumns, image, true);
+        const int right = binarySearch(y + 1, image[0].size() - 1, searchColumns, image, false);
         const int top = binarySearch(0, x - 1, searchRows, image, true);
         const int bottom = binarySearch(x + 1, image.size() - 1, searchRows, image, false);
 
