@@ -23,7 +23,7 @@ public:
         return (right - left) * (bottom - top);
     }
     
-    private:
+private:
     int binarySearch(const vector<vector<char>>& image, int left, int right,
                      const function<bool(const int mid,
                                          const vector<vector<char>>& image,
