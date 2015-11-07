@@ -33,7 +33,7 @@ public:
     }
     
 private:
-    int binarySearch(int left, int right, function<bool( int)>& find) {
+    int binarySearch(int left, int right, function<bool(const int)>& find) {
         while (left <= right) {
             const int mid = left + (right - left) / 2;
             if (find(mid)) {
@@ -45,6 +45,7 @@ private:
         return left;
     }
 };
+
 
 class Solution2 {
 public:
