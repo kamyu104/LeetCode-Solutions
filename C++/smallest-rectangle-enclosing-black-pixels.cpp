@@ -54,23 +54,24 @@ public:
                 return has_one == any_of(image.cbegin(), image.cend(),
                                          [=](const vector<char>& row) { return row[mid] == '1'; });
             };
-        const int left = binarySearch(image, 0, y - 1, searchColumns, true);
-        const int right = binarySearch(image, y + 1, image[0].size() - 1, searchColumns, false);
+        const int left = binarySearch(0, y - 1, searchColumns, image, true);
+        const int right = binarySearch(y + 1, image[0].size() - 1, searchColumns, image, false);
 
         const auto searchRows =
             [](const vector<vector<char>>& image, bool has_one, const int mid) {
                 return has_one == any_of(image[mid].cbegin(), image[mid].cend(),
                                          [](const char& col) { return col == '1'; });
             };
-        const int top = binarySearch(image, 0, x - 1, searchRows, true);
-        const int bottom = binarySearch(image, x + 1, image.size() - 1, searchRows, false);
+        const int top = binarySearch(0, x - 1, searchRows, image, true);
+        const int bottom = binarySearch(x + 1, image.size() - 1, searchRows, image, false);
 
         return (right - left) * (bottom - top);
     }
     
 private:
-    int binarySearch(const vector<vector<char>>& image, int left, int right,
+    int binarySearch(int left, int right,
                      const function<bool(const vector<vector<char>>&, bool, const int)>& find,
+                     const vector<vector<char>>& image,
                      bool has_one) {
         while (left <= right) {
             const int mid = left + (right - left) / 2;
