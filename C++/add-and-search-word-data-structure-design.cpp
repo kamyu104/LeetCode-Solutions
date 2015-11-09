@@ -3,16 +3,16 @@
 
 class WordDictionary {
 public:
-    struct TrieNode{
+    struct TrieNode {
         bool isString = false;
         unordered_map<char, TrieNode *> leaves;
     };
 
-    WordDictionary(){
+    WordDictionary() {
         root_ = new TrieNode();
         root_->isString = true;
     }
-    
+
     // Adds a word into the data structure.
     void addWord(string word) {
             auto* p = root_;
@@ -35,9 +35,10 @@ public:
         if (s == word.length()) {
             return node->isString;
         }
-        if (node->leaves.find(word[s]) != node->leaves.end()){ // Match the char.
+        // Match the char.
+        if (node->leaves.find(word[s]) != node->leaves.end()) {
             return searchWord(word, node->leaves[word[s]], s + 1);
-        } else if (word[s] == '.') { // Skip the char.
+        } else if (word[s] == '.') {  // Skip the char.
             for (const auto& i : node->leaves) {
                 if (searchWord(word, i.second, s + 1)) {
                     return true;
@@ -50,6 +51,7 @@ public:
 private:
     TrieNode *root_;
 };
+
 
 // Your WordDictionary object will be instantiated and called as such:
 // WordDictionary wordDictionary;
