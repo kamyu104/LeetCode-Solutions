@@ -31,7 +31,7 @@ public:
         return searchWord(word, root_, 0);
     }
 
-    bool searchWord(string word, TrieNode* node, int s) {
+    bool searchWord(string word, TrieNode *node, int s) {
         if (s == word.length()) {
             return node->isString;
         }
