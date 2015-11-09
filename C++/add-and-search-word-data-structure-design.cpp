@@ -4,7 +4,6 @@
 class WordDictionary {
 public:
     struct TrieNode{
-    public:
         bool isString = false;
         unordered_map<char, TrieNode *> leaves;
     };
@@ -47,6 +46,7 @@ public:
         }
         return false;
     }
+
 private:
     TrieNode *root_;
 };
