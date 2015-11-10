@@ -23,7 +23,7 @@ class NumArray(object):
         """
         self.accu = [0]
         for num in nums: 
-            self.accu += self.accu[-1] + num,
+            self.accu.append(self.accu[-1] + num),
 
     def sumRange(self, i, j):
         """
