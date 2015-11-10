@@ -1,4 +1,4 @@
-// Time:  ctor: O(n),
+// Time:  ctor:   O(n),
 //        lookup: O(1)
 // Space: O(n)
 
