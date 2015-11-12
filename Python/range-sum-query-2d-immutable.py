@@ -36,6 +36,7 @@ class NumMatrix(object):
         """
         if not matrix:
             return
+
         m, n = len(matrix), len(matrix[0])
         self.sums = [[0 for _ in xrange(n+1)] for _ in xrange(m+1)]
         for i in xrange(1, m+1):
