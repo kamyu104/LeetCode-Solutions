@@ -8,11 +8,11 @@ public:
         if (matrix.empty()) {
             return;
         }
+
         const auto m = matrix.size(), n = matrix[0].size();
         for (int i = 0; i <= m; ++i) {
             sums.emplace_back(n + 1, 0);
         }
-
         for (int i = 1; i <= m; ++i) {
             for (int j = 0; j <= n; ++j) {
                 sums[i][j] = matrix[i - 1][j - 1];
