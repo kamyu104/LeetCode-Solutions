@@ -34,7 +34,7 @@ class NumMatrix(object):
         initialize your data structure here.
         :type matrix: List[List[int]]
         """
-        if matrix is None or not matrix:
+        if not matrix:
             return
         m, n = len(matrix), len(matrix[0])
         self.sums = [[0 for _ in xrange(n+1)] for _ in xrange(m+1)]
@@ -58,7 +58,6 @@ class NumMatrix(object):
         return self.sums[row2+1][col2+1] - self.sums[row2+1][col1] - \
                self.sums[row1][col2+1] + self.sums[row1][col1]
         
-
 
 # Your NumMatrix object will be instantiated and called as such:
 # numMatrix = NumMatrix(matrix)
