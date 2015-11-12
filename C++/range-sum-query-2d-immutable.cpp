@@ -15,8 +15,7 @@ public:
         }
         for (int i = 1; i <= m; ++i) {
             for (int j = 0; j <= n; ++j) {
-                sums[i][j] = matrix[i - 1][j - 1];
-                sums[i][j] += sums[i][j - 1];
+                sums[i][j] = sums[i][j - 1] + matrix[i - 1][j - 1] ;
             }
         }
         for (int j = 0; j <= n; ++j) {
