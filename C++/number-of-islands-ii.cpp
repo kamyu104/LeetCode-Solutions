@@ -1,3 +1,6 @@
+// Time:  O(p), p is number of positions
+// Space: O(p)
+
 class Solution {
 public:
     vector<int> numIslands2(int m, int n, vector<pair<int, int>>& positions) {
