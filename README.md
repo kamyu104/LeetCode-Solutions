@@ -201,7 +201,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 288| [Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/) | [C++](./C++/unique-word-abbreviation.cpp) [Python](./Python/unique-word-abbreviation.py)  | ctor: _O(n)_, lookup: _O(1)_ | _O(k)_ | Easy         |📖||
 290| [Word Pattern](https://leetcode.com/problems/word-pattern/) | [C++](./C++/word-pattern.cpp) [Python](./Python/word-pattern.py)  | _O(n)_ | _O(c)_ | Easy         | variant of [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) ||
 299| [Bulls and Cow](https://leetcode.com/problems/bulls-and-cow/) | [C++](./C++/bulls-and-cow.cpp) [Python](./Python/bulls-and-cow.py)  | _O(n)_ | _O(1)_ | Easy         |||
-305| [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) | [C++](./Python/number-of-islands-ii.cpp) [Python](./Python/number-of-islands-ii.py) | _O(p)_ | _O(p)_| Hard         | LintCode | Union Find
+305| [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) | [C++](./C++/number-of-islands-ii.cpp) [Python](./Python/number-of-islands-ii.py) | _O(p)_ | _O(p)_| Hard         | LintCode | Union Find
 
 ## Data Structure
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
