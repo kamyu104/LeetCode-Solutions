@@ -28,23 +28,16 @@ class Solution(object):
         for position in positions:
             node = (position[0], position[1])
             set[node_id(node, n)] = node_id(node, n)
+            number += 1
 
-            # For each direction, count distinct islands.
-            neighbors = {}
             for d in directions:
                 neighbor = (position[0] + d[0], position[1] + d[1])
                 if 0 <= neighbor[0] < m and 0 <= neighbor[1] < n and \
                    node_id(neighbor, n) in set:
-                    neighbors[find_set(node_id(neighbor, n))] = True
-
-            number += 1 - len(neighbors)  # Merge neighbors into one island.
+                   if find_set(node_id(node, n)) != find_set(node_id(neighbor, n)):
+                       # Merge different islands.
+                       union_set(node_id(node, n), node_id(neighbor, n))
+                       number -= 1
             numbers.append(number)
-
-            # For each direction, find and union.
-            for d in directions:
-                neighbor = (position[0] + d[0], position[1] + d[1])
-                if 0 <= neighbor[0] < m and 0 <= neighbor[1] < n and \
-                   node_id(neighbor, n) in set:
-                    union_set(node_id(node, n), node_id(neighbor, n))
 
         return numbers
