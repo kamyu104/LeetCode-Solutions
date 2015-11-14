@@ -9,33 +9,25 @@ public:
         for (const auto& position : positions) {
             const auto& node = make_pair(position.first, position.second);
             set[node_id(node, n)] = node_id(node, n);
+            ++number;
 
-            // For each direction, count distinct islands.
-            unordered_set<int> neighbors;
             for (const auto& d : directions) {
                 const auto& neighbor = make_pair(position.first + d.first,
                                                  position.second + d.second);
                 if (neighbor.first >= 0 && neighbor.first < m &&
                     neighbor.second >= 0 && neighbor.second < n &&
                     set.find(node_id(neighbor, n)) != set.end()) {
-                    neighbors.emplace(find_set(node_id(neighbor, n), &set));
+                    if (find_set(node_id(node, n), &set) != 
+                        find_set(node_id(neighbor, n), &set)) {
+                        // Merge different islands.
+                        union_set(&set, node_id(node, n), node_id(neighbor, n));
+                        --number;
+                    }
                 }
             }
-
-            number += 1 - neighbors.size();  // Merge neighbors into one island.
             numbers.emplace_back(number);
-
-            // For each direction, find and union.
-            for (const auto& d : directions) {
-                const auto& neighbor = make_pair(position.first + d.first,
-                                                 position.second + d.second);
-                if (neighbor.first >= 0 && neighbor.first < m &&
-                    neighbor.second >= 0 && neighbor.second < n &&
-                    set.find(node_id(neighbor, n)) != set.end()) {
-                    union_set(&set, node_id(node, n), node_id(neighbor, n));
-                }
-            }
         }
+
         return numbers;
     }
 
