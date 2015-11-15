@@ -1,4 +1,4 @@
-# Time:  O(k), k is the length of the positions
+# Time:  O(klog*k) ~= O(k), k is the length of the positions
 # Space: O(k)
 
 class Solution(object):
