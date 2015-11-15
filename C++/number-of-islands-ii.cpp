@@ -1,4 +1,4 @@
-// Time:  O(k), k is the length of the positions
+// Time:  O(klog*k) ~= O(k), k is the length of the positions
 // Space: O(k)
 
 // Using unordered_map.
@@ -53,7 +53,7 @@ public:
 };
 
 
-// Time:  O(k), k is the length of the positions
+// Time:  O(klog*k) ~= O(k), k is the length of the positions
 // Space: O(m * n)
 // Using vector.
 class Solution2 {
