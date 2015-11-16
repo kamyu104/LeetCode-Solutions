@@ -23,7 +23,7 @@ public:
                     set.find(node_id(neighbor, n)) != set.end()) {
                     if (find_set(node_id(node, n), &set) != 
                         find_set(node_id(neighbor, n), &set)) {
-                        // Merge different islands.
+                        // Merge different islands, amortised time: O(log*k) ~= O(1)
                         union_set(&set, node_id(node, n), node_id(neighbor, n));
                         --number;
                     }
@@ -83,7 +83,7 @@ public:
                     set[node_id(neighbor, n)] != -1) {
                     if (find_set(node_id(node, n), &set) != 
                         find_set(node_id(neighbor, n), &set)) {
-                        // Merge different islands.
+                        // Merge different islands, amortised time: O(log*k) ~= O(1)
                         union_set(&set, node_id(node, n), node_id(neighbor, n));
                         --number;
                     }
