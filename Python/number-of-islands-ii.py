@@ -35,7 +35,7 @@ class Solution(object):
                 if 0 <= neighbor[0] < m and 0 <= neighbor[1] < n and \
                    node_id(neighbor, n) in set:
                    if find_set(node_id(node, n)) != find_set(node_id(neighbor, n)):
-                       # Merge different islands.
+                       # Merge different islands, amortised time: O(log*k) ~= O(1)
                        union_set(node_id(node, n), node_id(neighbor, n))
                        number -= 1
             numbers.append(number)
