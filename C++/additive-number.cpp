@@ -4,7 +4,7 @@
 class Solution {
 public:
     bool isAdditiveNumber(string num) {
-        for (int i = 1; i < num.length(); ++i) {
+        for (int i = 1; i < num.length() - 1; ++i) {
             for (int j = i + 1; j < num.length(); ++j) {
                 string s1 = num.substr(0, i), s2 = num.substr(i, j - i);
                 if ((s1.length() > 1 && s1[0] == '0') ||
