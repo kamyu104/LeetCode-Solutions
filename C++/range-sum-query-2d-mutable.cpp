@@ -1,6 +1,6 @@
-// Time:  ctor: O(m * n),
+// Time:  ctor:   O(m * n),
 //        update: O(logm + logn),
-//        query: O(logm + logn)
+//        query:  O(logm + logn)
 // Space: O(logm + logn), used by DFS
 
 class NumMatrix {
