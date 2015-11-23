@@ -47,7 +47,7 @@ class NumArray(object):
     
             # Update sum.
             root.sum = (root.left.sum if root.left else 0) + \
-                       (root.right.sum if root.right else 0);
+                       (root.right.sum if root.right else 0)
             return root
 
         self.__root = buildHelper(nums, 0, len(nums) - 1)
