@@ -21,6 +21,8 @@ public:
     }
 
 private:
+    vector<int>& nums_ref_;
+
     class SegmentTreeNode {
     public:
         int start, end;
@@ -33,7 +35,6 @@ private:
     };
 
     SegmentTreeNode *root_;
-    vector<int>& nums_ref_;
 
     // Build segment tree.
     SegmentTreeNode *buildHelper(const vector<int>& nums, int start, int end) {
