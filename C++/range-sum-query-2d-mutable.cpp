@@ -35,8 +35,7 @@ private:
         int sum;
         vector<SegmentTreeNode *> neighbor;
         SegmentTreeNode(const pair<int, int>& i, const pair<int, int>& j, int s) : 
-            start(i), end(j), sum(s),
-            neighbor(4) {
+            start(i), end(j), sum(s) {
         }
     };
 
@@ -61,10 +60,10 @@ private:
 
         int mid_x = (start.first + end.first) / 2;
         int mid_y = (start.second + end.second) / 2;
-        root->neighbor[0] = buildHelper(matrix, start, make_pair(mid_x, mid_y));
-        root->neighbor[1] = buildHelper(matrix, make_pair(start.first, mid_y + 1), make_pair(mid_x, end.second));
-        root->neighbor[2] = buildHelper(matrix, make_pair(mid_x + 1, start.second), make_pair(end.first, mid_y));
-        root->neighbor[3] = buildHelper(matrix, make_pair(mid_x + 1, mid_y + 1), end);
+        root->neighbor.emplace_back(buildHelper(matrix, start, make_pair(mid_x, mid_y)));
+        root->neighbor.emplace_back(buildHelper(matrix, make_pair(start.first, mid_y + 1), make_pair(mid_x, end.second)));
+        root->neighbor.emplace_back(buildHelper(matrix, make_pair(mid_x + 1, start.second), make_pair(end.first, mid_y)));
+        root->neighbor.emplace_back(buildHelper(matrix, make_pair(mid_x + 1, mid_y + 1), end));
         for (auto& node : root->neighbor) {
             if (node) {
                 root->sum += node->sum;
