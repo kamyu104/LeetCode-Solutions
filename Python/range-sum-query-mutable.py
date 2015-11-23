@@ -27,6 +27,7 @@ class NumArray(object):
         :type nums: List[int]
         """
         # Build segment tree.
+        self.__nums = nums
         def buildHelper(nums, start, end):
             if start > end:
                 return None
@@ -74,8 +75,9 @@ class NumArray(object):
             # Update sum.
             root.sum =  (root.left.sum if root.left else 0) + \
                         (root.right.sum if root.right else 0)
-        
-        return updateHelper(self.__root, i, val)
+        if self.__nums[i] != val:
+            self.__nums[i] = val
+            updateHelper(self.__root, i, val)
         
     def sumRange(self, i, j):
         """
