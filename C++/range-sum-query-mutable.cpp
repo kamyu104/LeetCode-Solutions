@@ -5,12 +5,15 @@
 
 class NumArray {
 public:
-    NumArray(vector<int> &nums) {
+    NumArray(vector<int> &nums) : nums_ref_(nums) {
         root_ = buildHelper(nums, 0, nums.size() - 1);
     }
     
     void update(int i, int val) {
-        updateHelper(root_, i, val);
+        if (nums_ref_[i] != val) {
+            nums_ref_[i] = val;
+            updateHelper(root_, i, val);
+        }
     }
 
     int sumRange(int i, int j) {
@@ -30,6 +33,7 @@ private:
     };
 
     SegmentTreeNode *root_;
+    vector<int>& nums_ref_;
 
     // Build segment tree.
     SegmentTreeNode *buildHelper(const vector<int>& nums, int start, int end) {
