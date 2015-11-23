@@ -1,6 +1,6 @@
-# Time:  ctor: O(n),
+# Time:  ctor:   O(n),
 #        update: O(h),
-#        query: O(h)
+#        query:  O(h)
 # Space: O(h), used by DFS
 #
 # Given an integer array nums, find the sum of 
