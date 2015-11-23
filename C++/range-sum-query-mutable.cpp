@@ -5,17 +5,6 @@
 
 class NumArray {
 public:
-    class SegmentTreeNode {
-    public:
-        int start, end;
-        int sum;
-        SegmentTreeNode *left, *right;
-        SegmentTreeNode(int i, int j, int s) : 
-            start(i), end(j), sum(s),
-            left(nullptr), right(nullptr) {
-        }
-    };
-
     NumArray(vector<int> &nums) {
         root_ = buildHelper(nums, 0, nums.size() - 1);
     }
@@ -29,6 +18,17 @@ public:
     }
 
 private:
+    class SegmentTreeNode {
+    public:
+        int start, end;
+        int sum;
+        SegmentTreeNode *left, *right;
+        SegmentTreeNode(int i, int j, int s) : 
+            start(i), end(j), sum(s),
+            left(nullptr), right(nullptr) {
+        }
+    };
+
     SegmentTreeNode *root_;
 
     // Build segment tree.
