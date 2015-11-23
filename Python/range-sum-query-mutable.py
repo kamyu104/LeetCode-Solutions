@@ -97,7 +97,7 @@ class NumArray(object):
         return sumRangeHelper(self.__root, i, j)
 
     class _SegmentTreeNode:
-        def __init__(self, i, j,s):
+        def __init__(self, i, j, s):
             self.start, self.end, self.sum = i, j, s
 
 
