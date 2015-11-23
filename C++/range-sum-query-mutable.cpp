@@ -32,7 +32,7 @@ private:
     SegmentTreeNode *root_;
 
     // Build segment tree.
-    SegmentTreeNode *buildHelper(vector<int> &A, int start, int end) {
+    SegmentTreeNode *buildHelper(const vector<int>& nums, int start, int end) {
         if (start > end) {
             return nullptr;
         }
@@ -42,15 +42,15 @@ private:
 
         // If start equals to end, there will be no children for this node.
         if (start == end) {
-            root->sum = A[start];
+            root->sum = nums[start];
             return root;
         }
 
-        // Left child: start=A.left, end=(A.left + A.right) / 2.
-        root->left = buildHelper(A, start, (start + end) / 2);
+        // Left child: start=numsleft, end=(numsleft + numsright) / 2.
+        root->left = buildHelper(nums, start, (start + end) / 2);
 
-        // Right child: start=(A.left + A.right) / 2 + 1, end=A.right.
-        root->right = buildHelper(A, (start + end) / 2 + 1, end);
+        // Right child: start=(numsleft + numsright) / 2 + 1, end=numsright.
+        root->right = buildHelper(nums, (start + end) / 2 + 1, end);
 
         // Update sum.
         root->sum = (root->left != nullptr ? root->left->sum : 0) +
