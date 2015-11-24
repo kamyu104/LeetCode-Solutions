@@ -1,7 +1,7 @@
 # Time:  ctor:   O(n),
-#        update: O(h),
-#        query:  O(h)
-# Space: O(h), used by DFS
+#        update: O(logn),
+#        query:  O(logn)
+# Space: O(n), used by DFS
 #
 # Given an integer array nums, find the sum of 
 # the elements between indices i and j (i <= j), inclusive.
@@ -20,6 +20,7 @@
 # and sumRange function is distributed evenly.
 #
 
+# Segment Tree solutoin.
 class NumArray(object):
     def __init__(self, nums):
         """
@@ -102,6 +103,61 @@ class NumArray(object):
         def __init__(self, i, j, s):
             self.start, self.end, self.sum = i, j, s
 
+# Time:  ctor:   O(nlogn),
+#        update: O(logn),
+#        query:  O(logn)
+# Space: O(n)
+# Binary Indexed Tree (BIT) solution.
+class NumArray2(object):
+    def __init__(self, nums):
+        """
+        initialize your data structure here.
+        :type nums: List[int]
+        """
+        # Build segment tree.
+        if not nums:
+            return
+        self.__nums = nums
+        self.__n = len(nums)
+        self.__bit = [0] * (self.__n + 1)
+        for i in xrange(self.__n):
+            self.__add(i, nums[i])
+
+    def update(self, i, val):
+        """
+        :type i: int
+        :type val: int
+        :rtype: int
+        """
+        if val - self.__nums[i]:
+            self.__add(i, val - self.__nums[i])
+            self.__nums[i] = val
+        
+    def sumRange(self, i, j):
+        """
+        sum of elements nums[i..j], inclusive.
+        :type i: int
+        :type j: int
+        :rtype: int
+        """
+        def sumRegion_bit(i):
+            i += 1
+            ret = 0
+            while i > 0:
+                ret += self.__bit[i]
+                i -= (i & -i)
+            return ret
+    
+        ret = sumRegion_bit(j)
+        if i > 0:
+            ret -= sumRegion_bit(i - 1)
+        return ret
+
+    def __add(self, i, val):
+        i += 1
+        while i <= self.__n:
+            self.__bit[i] += val
+            i += (i & -i)
 
 # Your NumArray object will be instantiated and called as such:
 # numArray = NumArray(nums)
