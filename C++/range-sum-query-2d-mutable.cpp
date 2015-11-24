@@ -121,6 +121,77 @@ private:
     }
 };
 
+// Time:  ctor:   O(mlogm * nlogn)
+//        update: O(logm * logn)
+//        query:  O(logm * logn)
+// Space: O(m * n)
+class NumMatrix2 {
+public:
+    NumMatrix(vector<vector<int>> &matrix) :
+        matrix_(matrix), m_(matrix.size()) {
+
+        if (m_) {
+            n_ = matrix_[0].size();
+            bit_ = vector<vector<int>>(m_ + 1, vector<int>(n_ + 1));
+            for (int i = 0; i < m_; ++i) {
+                for (int j = 0; j < n_; ++j) {
+                    add(i, j, matrix_[i][j]);
+                }
+            }
+        }
+    }
+
+    void update(int row, int col, int val) {
+        if (val - matrix_[row][col]) {
+            add(row, col, val - matrix_[row][col]);
+            matrix_[row][col] = val;
+        }
+    }
+
+    int sumRegion(int row1, int col1, int row2, int col2) {
+        int sum = sumRegion_bit(row2, col2);
+        if (row1 > 0 && col1 > 0) {
+            sum += sumRegion_bit(row1 - 1, col1 - 1);
+        }
+        if (col1 > 0) {
+            sum -= sumRegion_bit(row2, col1 - 1);
+        }
+        if (row1 > 0) {
+            sum -= sumRegion_bit(row1 - 1, col2);
+        }
+        return sum;
+    }
+
+private:
+    vector<vector<int>> &matrix_;
+    vector<vector<int>> bit_;
+    int m_, n_;
+
+    int sumRegion_bit(int row, int col) {
+        ++row, ++col;
+        int sum = 0;
+        for (int i = row; i > 0; i -= lower_bit(i)) {
+            for (int j = col; j > 0; j -= lower_bit(j)) {
+                sum += bit_[i][j];
+            }
+        }
+        return sum;
+    }
+
+    void add(int row, int col, int val) {
+        ++row, ++col;
+        for (int i = row; i <= m_; i += lower_bit(i)) {
+            for (int j = col; j <= n_; j += lower_bit(j)) {
+                bit_[i][j] += val;
+            }
+        }
+    }
+
+    int lower_bit(int i) {
+        return i & -i;
+    }
+};
+
 
 // Your NumMatrix object will be instantiated and called as such:
 // NumMatrix numMatrix(matrix);
