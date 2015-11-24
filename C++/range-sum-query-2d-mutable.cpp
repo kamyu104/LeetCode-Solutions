@@ -3,6 +3,7 @@
 //        query:  O(logm + logn)
 // Space: O(m * n)
 
+// Segment Tree solution.
 class NumMatrix {
 public:
     NumMatrix(vector<vector<int>> &matrix) : matrix_ref_(matrix) {
@@ -125,6 +126,7 @@ private:
 //        update: O(logm * logn)
 //        query:  O(logm * logn)
 // Space: O(m * n)
+// Binary Indexed Tree (BIT) solution.
 class NumMatrix2 {
 public:
     NumMatrix(vector<vector<int>> &matrix) :
