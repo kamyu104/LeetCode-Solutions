@@ -107,11 +107,9 @@ private:
 // Binary Indexed Tree (BIT) solution.
 class NumArray2 {
 public:
-    NumArray(vector<int> &nums) :
-        nums_(nums), n_(nums.size()) {
-
-        bit_ = vector<int>(n_ + 1);
-        for (int i = 0; i < n_; ++i) {
+    NumArray(vector<int> &nums) : nums_(nums) {
+        bit_ = vector<int>(nums_.size() + 1);
+        for (int i = 0; i < nums_.size(); ++i) {
             add(i, nums_[i]);
         }
     }
@@ -134,7 +132,6 @@ public:
 private:
     vector<int> &nums_;
     vector<int> bit_;
-    int n_;
 
     int sumRegion_bit(int i) {
         ++i;
@@ -147,7 +144,7 @@ private:
 
     void add(int i, int val) {
         ++i;
-        for (; i <= n_; i += lower_bit(i)) {
+        for (; i <= nums_.size(); i += lower_bit(i)) {
             bit_[i] += val;
         }
     }
