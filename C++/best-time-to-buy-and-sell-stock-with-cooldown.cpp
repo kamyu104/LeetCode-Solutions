@@ -13,9 +13,9 @@ public:
             // Bought before or buy today.
             buy[i % 2] = max(buy[(i - 1) % 2], coolDown[(i - 1) % 2] - prices[i]);
             // Sell today.
-            sell[i % 2] = buy[(i - 1) % 2] + prices[i];  
+            sell[i % 2] = buy[(i - 1) % 2] + prices[i];
             // Sold before yesterday or sold yesterday.
-            coolDown[i % 2] = max(coolDown[(i - 1) % 2], sell[(i - 1) % 2]);  
+            coolDown[i % 2] = max(coolDown[(i - 1) % 2], sell[(i - 1) % 2]);
         }
         return max(coolDown[(prices.size() - 1) % 2], sell[(prices.size() - 1) % 2]);
     }
@@ -35,9 +35,9 @@ public:
             // Bought before or buy today.
             buy[i] = max(buy[i - 1], coolDown[i - 1] - prices[i]);
             // Sell today.
-            sell[i] = buy[i - 1] + prices[i];  
+            sell[i] = buy[i - 1] + prices[i];
             // Sold before yesterday or sold yesterday.
-            coolDown[i] = max(coolDown[i - 1], sell[i - 1]);  
+            coolDown[i] = max(coolDown[i - 1], sell[i - 1]);
         }
         return max(coolDown[prices.size() - 1], sell[prices.size() - 1]);
     }
