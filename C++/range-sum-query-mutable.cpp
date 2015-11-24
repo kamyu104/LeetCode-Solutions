@@ -3,6 +3,7 @@
 //        query:  O(logn)
 // Space: O(n)
 
+// Segment Tree solution.
 class NumArray {
 public:
     NumArray(vector<int> &nums) : nums_ref_(nums) {
@@ -96,6 +97,63 @@ private:
 
         return sumRangeHelper(root->left, start, end) +
                sumRangeHelper(root->right, start, end);
+    }
+};
+
+// Time:  ctor:   O(nlogn),
+//        update: O(logn),
+//        query:  O(logn)
+// Space: O(n)
+// Binary Indexed Tree (BIT) solution.
+class NumArray2 {
+public:
+    NumArray(vector<int> &nums) :
+        nums_(nums), n_(nums.size()) {
+
+        bit_ = vector<int>(n_ + 1);
+        for (int i = 0; i < n_; ++i) {
+            add(i, nums_[i]);
+        }
+    }
+
+    void update(int i, int val) {
+        if (val - nums_[i]) {
+            add(i, val - nums_[i]);
+            nums_[i] = val;
+        }
+    }
+
+    int sumRange(int i, int j) {
+        int sum = sumRegion_bit(j);
+        if (i > 0) {
+            sum -= sumRegion_bit(i - 1);
+        }
+        return sum;
+    }
+
+private:
+    vector<int> &nums_;
+    vector<int> bit_;
+    int n_;
+
+    int sumRegion_bit(int i) {
+        ++i;
+        int sum = 0;
+        for (; i > 0; i -= lower_bit(i)) {
+            sum += bit_[i];
+        }
+        return sum;
+    }
+
+    void add(int i, int val) {
+        ++i;
+        for (; i <= n_; i += lower_bit(i)) {
+            bit_[i] += val;
+        }
+    }
+
+    int lower_bit(int i) {
+        return i & -i;
     }
 };
 
