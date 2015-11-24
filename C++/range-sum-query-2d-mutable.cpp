@@ -129,14 +129,13 @@ private:
 // Binary Indexed Tree (BIT) solution.
 class NumMatrix2 {
 public:
-    NumMatrix(vector<vector<int>> &matrix) :
-        matrix_(matrix), m_(matrix.size()) {
+    NumMatrix(vector<vector<int>> &matrix) : matrix_(matrix) {
 
-        if (m_) {
-            n_ = matrix_[0].size();
-            bit_ = vector<vector<int>>(m_ + 1, vector<int>(n_ + 1));
-            for (int i = 0; i < m_; ++i) {
-                for (int j = 0; j < n_; ++j) {
+        if (!matrix_.empty()) {
+            bit_ = vector<vector<int>>(matrix_.size() + 1,
+                                       vector<int>(matrix_[0].size() + 1));
+            for (int i = 0; i < matrix_.size(); ++i) {
+                for (int j = 0; j < matrix_[0].size(); ++j) {
                     add(i, j, matrix_[i][j]);
                 }
             }
@@ -167,7 +166,6 @@ public:
 private:
     vector<vector<int>> &matrix_;
     vector<vector<int>> bit_;
-    int m_, n_;
 
     int sumRegion_bit(int row, int col) {
         ++row, ++col;
@@ -182,8 +180,8 @@ private:
 
     void add(int row, int col, int val) {
         ++row, ++col;
-        for (int i = row; i <= m_; i += lower_bit(i)) {
-            for (int j = col; j <= n_; j += lower_bit(j)) {
+        for (int i = row; i <= matrix_.size(); i += lower_bit(i)) {
+            for (int j = col; j <= matrix_[0].size(); j += lower_bit(j)) {
                 bit_[i][j] += val;
             }
         }
