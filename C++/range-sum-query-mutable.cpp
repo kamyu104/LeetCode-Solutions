@@ -6,13 +6,13 @@
 // Segment Tree solution.
 class NumArray {
 public:
-    NumArray(vector<int> &nums) : nums_ref_(nums) {
+    NumArray(vector<int> &nums) : nums_(nums) {
         root_ = buildHelper(nums, 0, nums.size() - 1);
     }
     
     void update(int i, int val) {
-        if (nums_ref_[i] != val) {
-            nums_ref_[i] = val;
+        if (nums_[i] != val) {
+            nums_[i] = val;
             updateHelper(root_, i, val);
         }
     }
@@ -22,7 +22,7 @@ public:
     }
 
 private:
-    vector<int>& nums_ref_;
+    vector<int>& nums_;
 
     class SegmentTreeNode {
     public:
