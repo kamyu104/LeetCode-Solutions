@@ -6,7 +6,7 @@
 // Segment Tree solution.
 class NumMatrix {
 public:
-    NumMatrix(vector<vector<int>> &matrix) : matrix_ref_(matrix) {
+    NumMatrix(vector<vector<int>> &matrix) : matrix_(matrix) {
         if (!matrix.empty() && !matrix[0].empty()) {
             const int m = matrix.size();
             const int n =  matrix[0].size();
@@ -17,8 +17,8 @@ public:
     }
 
     void update(int row, int col, int val) {
-        if (matrix_ref_[row][col] != val) {
-            matrix_ref_[row][col] = val;
+        if (matrix_[row][col] != val) {
+            matrix_[row][col] = val;
             updateHelper(root_, make_pair(row, col), val);
         }
     }
@@ -28,7 +28,7 @@ public:
     }
 
 private:
-    vector<vector<int>>& matrix_ref_;
+    vector<vector<int>>& matrix_;
 
     class SegmentTreeNode {
     public:
