@@ -118,10 +118,9 @@ class NumArray2(object):
         if not nums:
             return
         self.__nums = nums
-        self.__n = len(nums)
-        self.__bit = [0] * (self.__n + 1)
-        for i in xrange(self.__n):
-            self.__add(i, nums[i])
+        self.__bit = [0] * (len(self.__nums) + 1)
+        for i, num in enumerate(self.__nums):
+            self.__add(i, num)
 
     def update(self, i, val):
         """
@@ -155,7 +154,7 @@ class NumArray2(object):
 
     def __add(self, i, val):
         i += 1
-        while i <= self.__n:
+        while i <= len(self.__nums):
             self.__bit[i] += val
             i += (i & -i)
 
