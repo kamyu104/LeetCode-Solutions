@@ -13,11 +13,10 @@ class NumMatrix(object):
         if not matrix:
             return
         self.__matrix = matrix
-        self.__m = len(matrix)
-        self.__n = len(matrix[0])
-        self.__bit = [[0] * (self.__n + 1) for _ in xrange(self.__m + 1)]
-        for i in xrange(self.__m):
-            for j in xrange(self.__n):
+        self.__bit = [[0] * (len(self.__matrix[0]) + 1) \
+                      for _ in xrange(len(self.__matrix) + 1)]
+        for i in xrange(len(self.__matrix)):
+            for j in xrange(len(self.__matrix[0])):
                 self.__add(i, j, matrix[i][j])
 
     def update(self, row, col, val):
@@ -68,9 +67,9 @@ class NumMatrix(object):
         row += 1
         col += 1
         i = row
-        while i <= self.__m:
+        while i <= len(self.__matrix):
             j = col
-            while j <= self.__n:
+            while j <= len(self.__matrix[0]):
                 self.__bit[i][j] += val
                 j += (j & -j)
             i += (i & -i)
