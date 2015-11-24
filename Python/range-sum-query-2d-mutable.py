@@ -76,3 +76,10 @@ class NumMatrix(object):
         if row1 > 0:
             ret -= sumRegion_bit(row1 - 1, col2)
         return ret
+
+
+# Your NumMatrix object will be instantiated and called as such:
+# numMatrix = NumMatrix(matrix)
+# numMatrix.sumRegion(0, 1, 2, 3)
+# numMatrix.update(1, 1, 10)
+# numMatrix.sumRegion(1, 2, 3, 4)
