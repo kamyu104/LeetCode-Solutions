@@ -1,7 +1,7 @@
 // Time:  ctor:   O(n),
-//        update: O(h),
-//        query:  O(h)
-// Space: O(h), used by DFS
+//        update: O(logn),
+//        query:  O(logn)
+// Space: O(n)
 
 class NumArray {
 public:
