@@ -1,7 +1,7 @@
 # Time:  ctor:   O(n),
 #        update: O(logn),
 #        query:  O(logn)
-# Space: O(n), used by DFS
+# Space: O(n)
 #
 # Given an integer array nums, find the sum of 
 # the elements between indices i and j (i <= j), inclusive.
