@@ -18,20 +18,7 @@ class NumMatrix(object):
         self.__bit = [[0] * (self.__n + 1) for _ in xrange(self.__m + 1)]
         for i in xrange(self.__m):
             for j in xrange(self.__n):
-                self.add(i, j, matrix[i][j])
-
-
-    def add(self, row, col, val):
-        row += 1
-        col += 1
-        i = row
-        while i <= self.__m:
-            j = col
-            while j <= self.__n:
-                self.__bit[i][j] += val
-                j += (j & -j)
-            i += (i & -i)
-
+                self.__add(i, j, matrix[i][j])
 
     def update(self, row, col, val):
         """
@@ -42,7 +29,7 @@ class NumMatrix(object):
         :rtype: void
         """
         if val - self.__matrix[row][col]:
-            self.add(row, col, val - self.__matrix[row][col])
+            self.__add(row, col, val - self.__matrix[row][col])
             self.__matrix[row][col] = val
 
 
@@ -76,6 +63,17 @@ class NumMatrix(object):
         if row1 > 0:
             ret -= sumRegion_bit(row1 - 1, col2)
         return ret
+
+    def __add(self, row, col, val):
+        row += 1
+        col += 1
+        i = row
+        while i <= self.__m:
+            j = col
+            while j <= self.__n:
+                self.__bit[i][j] += val
+                j += (j & -j)
+            i += (i & -i)
 
 
 # Your NumMatrix object will be instantiated and called as such:
