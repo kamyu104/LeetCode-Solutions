@@ -7,7 +7,7 @@ public:
         if (prices.empty()) {
             return 0;
         }
-        vector<int> buy(2), coolDown(2), sell(2);
+        vector<int> buy(2), sell(2), coolDown(2);
         buy[0] = -prices[0];
         for (int i = 1; i < prices.size(); ++i) {
             // Bought before or buy today.
@@ -29,7 +29,7 @@ public:
         if (prices.empty()) {
             return 0;
         }
-        vector<int> buy(prices.size()), coolDown(prices.size()), sell(prices.size());
+        vector<int> buy(prices.size()), sell(prices.size()), coolDown(prices.size());
         buy[0] = -prices[0];
         for (int i = 1; i < prices.size(); ++i) {
             // Bought before or buy today.
