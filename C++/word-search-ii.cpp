@@ -94,7 +94,7 @@ public:
                                                {-1, 0}, {1, 0}};
         for (const auto& d : directions) {
             findWordsDFS(grid, visited, nextNode,
-                          i + d.first, j + d.second, cur, ret);
+                         i + d.first, j + d.second, cur, ret);
         }
         
         visited[i][j] = false;
