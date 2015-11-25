@@ -25,27 +25,27 @@ class Solution:
     def solve(self, board):
         if not board:
             return
-        current = []
+        q = collections.deque([])
         
         for i in xrange(len(board)):
-            current.append((i, 0))
-            current.append((i, len(board[0]) - 1))
+            q.append((i, 0))
+            q.append((i, len(board[0]) - 1))
             
         for i in xrange(len(board[0])):
-            current.append((0, i))
-            current.append((len(board) - 1, i))
+            q.append((0, i))
+            q.append((len(board) - 1, i))
             
-        while current:
-            i, j = current.pop()
+        while q:
+            i, j = q.popleft()
             if board[i][j] in ['O', 'V']:
                 board[i][j] = 'V'
                 for x, y in [(i + 1, j), (i - 1, j), (i, j + 1), (i, j - 1)]:
                     if 0 <= x < len(board) and 0 <= y < len(board[0]) and board[x][y] == 'O':
                         board[x][y] = 'V'
-                        current.append((x, y))
+                        q.append((x, y))
                         
         for i in xrange(len(board)):
-            for j in range(len(board[0])):
+            for j in xrange(len(board[0])):
                 if board[i][j] != 'V':
                     board[i][j] = 'X'
                 else:
