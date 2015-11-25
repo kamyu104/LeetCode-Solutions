@@ -20,11 +20,11 @@ public:
     }
 
     void binaryTreePathsRecu(TreeNode *node, vector<TreeNode *> *path, vector<string> *result) {
-        if (node == nullptr) {
+        if (!node) {
             return;
         }
 
-        if (node->left == nullptr && node->right == nullptr) {
+        if (!node->left && !node->right) {
             string ans = "";
             for (const auto& n : *path) {
                 ans.append(to_string(n->val).append("->"));
@@ -32,13 +32,13 @@ public:
             result->emplace_back(move(ans.append(to_string(node->val))));
         }
             
-        if (node->left != nullptr) {
+        if (node->left) {
             path->emplace_back(node);
             binaryTreePathsRecu(node->left, path, result);
             path->pop_back();
         }
 
-        if (node->right != nullptr) {
+        if (node->right) {
             path->emplace_back(node);
             binaryTreePathsRecu(node->right, path, result);
             path->pop_back();
