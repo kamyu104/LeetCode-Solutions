@@ -31,9 +31,9 @@ class Solution:
             q.append((i, 0))
             q.append((i, len(board[0]) - 1))
             
-        for i in xrange(len(board[0])):
-            q.append((0, i))
-            q.append((len(board) - 1, i))
+        for j in xrange(len(board[0])):
+            q.append((0, j))
+            q.append((len(board) - 1, j))
             
         while q:
             i, j = q.popleft()
