@@ -90,10 +90,11 @@ public:
         visited[i][j] = true;
         
         // Try each direction.
-        vector<pair<int, int>> direction{{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
-        for (int k = 0; k < 4; ++k) {
+        const vector<pair<int, int>> direction{{0, -1}, {0, 1},
+                                               {-1, 0}, {1, 0}};
+        for (const auto& d : directions) {
             findWordsDFS(grid, visited, nextNode,
-                          i + direction[k].first, j + direction[k].second, curr, ret);
+                          i + d.first, j + d.second, curr, ret);
         }
         
         visited[i][j] = false;
