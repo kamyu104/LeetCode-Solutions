@@ -86,7 +86,7 @@ class Solution(object):
                     if v in unvisited: 
                         neighbors[v].remove(u)
                         if len(neighbors[v]) == 1:
-                            cur_level += [v]
+                            cur_level.append(v)
             pre_level = cur_level
     
         return list(unvisited)
