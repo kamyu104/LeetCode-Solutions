@@ -69,23 +69,24 @@ class Solution(object):
             neighbors[u].add(v)
             neighbors[v].add(u)
 
-        pre_level, unvisited = [], set(xrange(n))
+        pre_level, unvisited = [], set()
         for i in xrange(n):
             if len(neighbors[i]) == 1:  # A leaf.
                 pre_level.append(i)
+            unvisited.add(i)
 
         # A graph can have 2 MHTs at most.
         # BFS from the leaves until the number 
         # of the unvisited nodes is less than 3.
         while len(unvisited) > 2:
-            this_level = []
+            cur_level = []
             for u in pre_level:
                 unvisited.remove(u)
                 for v in neighbors[u]:
                     if v in unvisited: 
                         neighbors[v].remove(u)
                         if len(neighbors[v]) == 1:
-                            this_level += [v]
-            pre_level = this_level
+                            cur_level += [v]
+            pre_level = cur_level
     
         return list(unvisited)
