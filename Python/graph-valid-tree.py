@@ -16,9 +16,9 @@ class Solution:
 
         # A structure to track each node's [visited_from, neighbors]
         nodes = collections.defaultdict(lambda: [-1, []])
-        for edge in edges:
-            nodes[edge[0]][neighbors].append(edge[1])
-            nodes[edge[1]][neighbors].append(edge[0])
+        for u, v in edges:
+            nodes[u][neighbors].append(v)
+            nodes[v][neighbors].append(u)
         
         if len(nodes) != n:  # Check number of nodes.
             return False
