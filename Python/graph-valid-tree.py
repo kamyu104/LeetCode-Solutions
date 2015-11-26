@@ -12,15 +12,14 @@ class Solution:
         elif n == 1:
             return True
 
-        visited_from, neighbors = 0, 1
-
         # A structure to track each node's [visited_from, neighbors]
-        nodes = collections.defaultdict(lambda: [-1, []])
+        visited_from = [-1] * n
+        neighbors = collections.defaultdict(list)
         for u, v in edges:
-            nodes[u][neighbors].append(v)
-            nodes[v][neighbors].append(u)
+            neighbors[u].append(v)
+            neighbors[v].append(u)
         
-        if len(nodes) != n:  # Check number of nodes.
+        if len(neighbors) != n:  # Check number of nodes.
             return False
 
         # BFS to check whether the graph is valid tree.
@@ -29,13 +28,13 @@ class Solution:
         while q:
             i = q.popleft()
             visited[i] = True
-            for node in nodes[i][neighbors]:
-                if node != nodes[i][visited_from]:
+            for node in neighbors[i]:
+                if node != visited_from[i]:
                     if node in visited:
                         return False
                     else:
                         visited[node] = True
-                        nodes[node][visited_from] = i
+                        visited_from[node] = i
                         q.append(node)
         return len(visited) == n
 
@@ -48,13 +47,12 @@ class Solution2:
     # @param {integer[][]} edges
     # @return {boolean}
     def validTree(self, n, edges):
-        visited_from, neighbors = 0, 1
-
         # A structure to track each node's [visited_from, neighbors]
-        nodes = collections.defaultdict(lambda: [-1, []])
+        visited_from = [-1] * n
+        neighbors = collections.defaultdict(list)
         for u, v in edges:
-            nodes[u]][neighbors].append(v)
-            nodes[v][neighbors].append(u)
+            neighbors[u].append(v)
+            neighbors[v].append(u)
 
         # BFS to check whether the graph is valid tree.
         visited = {}
@@ -62,12 +60,12 @@ class Solution2:
         while q:
             i = q.popleft()
             visited[i] = True
-            for node in nodes[i][neighbors]:
-                if node != nodes[i][visited_from]:
+            for node in neighbors[i]:
+                if node != visited_from[i]:
                     if node in visited:
                         return False
                     else:
                         visited[node] = True
-                        nodes[node][visited_from] = i
+                        visited_from[node] = i
                         q.append(node)
         return len(visited) == n
