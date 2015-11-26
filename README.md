@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-309%20%2F%20309-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-310%20%2F%20310-ff69b4.svg)
 
-Up to date (2015-11-24), there are `292` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-11-26), there are `293` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `309` questions.
+Here is the classification of all `310` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -340,6 +340,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 261| [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)| [C++](./C++/graph-valid-tree.cpp) [Python](./Python/graph-valid-tree.py)   | _O(\|V\| + \|E\|)_          | _O(\|V\| + \|E\|)_          | Medium         | 📖 |
 269| [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) | [C++](./C++/alien-dictionary.cpp)  [Python](./Python/alien-dictionary.py)  | _O(n)_ | _O(1)_ | Hard         |📖| Topological Sort, BFS, DFS |
 286| [Walls and Gates](https://leetcode.com/problems/walls-and-gates/)| [C++](./C++/walls-and-gates.cpp) [Python](./Python/walls-and-gates.py)   | _O(m * n)_          | _O(g)_          | Medium         | 📖 |
+310| [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)| [C++](./C++/minimum-height-trees.cpp) [Python](./Python/minimum-height-trees.py)   | _O(n)_          | _O(n)_          | Medium         ||
 
 ## Depth-First Search
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
