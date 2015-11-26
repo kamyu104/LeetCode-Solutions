@@ -63,17 +63,15 @@ class Solution(object):
         """
         if n == 1:
             return [0]
-        neighbors = collections.defaultdict(list)
-        degrees = collections.defaultdict(int)
+
+        neighbors = collections.defaultdict(set)
         for u, v in edges:
-            neighbors[u].append(v)
-            neighbors[v].append(u)
-            degrees[u] += 1
-            degrees[v] += 1
+            neighbors[u].add(v)
+            neighbors[v].add(u)
 
         pre_level, unvisited = [], set(xrange(n))
         for i in xrange(n):
-            if degrees[i] == 1:  # A leaf.
+            if len(neighbors[i]) == 1:  # A leaf.
                 pre_level.append(i)
 
         # A graph can have 2 MHTs at most.
@@ -85,8 +83,8 @@ class Solution(object):
                 unvisited.remove(u)
                 for v in neighbors[u]:
                     if v in unvisited: 
-                        degrees[v] -= 1
-                        if degrees[v] == 1:
+                        neighbors[v].remove(u)
+                        if len(neighbors[v]) == 1:
                             this_level += [v]
             pre_level = this_level
     
