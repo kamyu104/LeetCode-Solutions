@@ -25,8 +25,7 @@ class Solution:
 
         # BFS to check whether the graph is valid tree.
         visited = {}
-        q = collections.deque()
-        q.append(0)
+        q = collections.deque([0])
         while q:
             i = q.popleft()
             visited[i] = True
@@ -53,14 +52,13 @@ class Solution2:
 
         # A structure to track each node's [visited_from, neighbors]
         nodes = collections.defaultdict(lambda: [-1, []])
-        for edge in edges:
-            nodes[edge[0]][neighbors].append(edge[1])
-            nodes[edge[1]][neighbors].append(edge[0])
+        for u, v in edges:
+            nodes[u]][neighbors].append(v)
+            nodes[v][neighbors].append(u)
 
         # BFS to check whether the graph is valid tree.
         visited = {}
-        q = collections.deque()
-        q.append(0)
+        q = collections.deque([0])
         while q:
             i = q.popleft()
             visited[i] = True
