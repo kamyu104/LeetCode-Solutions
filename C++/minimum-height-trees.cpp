@@ -43,6 +43,7 @@ public:
             }
             swap(pre_level, cur_level);
         }
+
         vector<int> res(unvisited.begin(), unvisited.end());
         return res;
     }
