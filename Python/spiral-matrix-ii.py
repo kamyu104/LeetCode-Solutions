@@ -17,7 +17,7 @@
 class Solution:
     # @return a list of lists of integer
     def generateMatrix(self, n):
-        matrix = [[0 for i in xrange(n)] for i in xrange(n)]
+        matrix = [[0 for _ in xrange(n)] for _ in xrange(n)]
         
         left, right, top, bottom, num = 0, n - 1, 0, n - 1, 1
         
