@@ -8,7 +8,7 @@ public:
         vector<vector<int>> res(m, vector<int>(l));
         for (int i = 0; i < m; ++i) {
             for (int k = 0; k < n; ++k) {
-                if (A[i][k] != 0) {
+                if (A[i][k]) {
                     for (int j = 0; j < l; ++j) {
                         res[i][j] += A[i][k] * B[k][j];
                     }
