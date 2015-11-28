@@ -4,9 +4,9 @@
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
-        vector<int> result;
+        vector<int> res;
         if (matrix.empty()) {
-            return result;
+            return res;
         }
 
         for (int left = 0, right = matrix[0].size() - 1,
@@ -15,20 +15,20 @@ public:
              ++left, --right, ++top, --bottom) {
 
             for (int j = left; j <= right; ++j) {
-                result.emplace_back(matrix[top][j]);
+                res.emplace_back(matrix[top][j]);
             }
             for (int i = top + 1; i < bottom; ++i) {
-                result.emplace_back(matrix[i][right]);
+                res.emplace_back(matrix[i][right]);
             }
             for (int j = right; top < bottom && j >= left; --j) {
-                result.emplace_back(matrix[bottom][j]);
+                res.emplace_back(matrix[bottom][j]);
             }
             for (int i = bottom - 1; left < right && i > top; --i) {
-                result.emplace_back(matrix[i][left]);
+                res.emplace_back(matrix[i][left]);
             }
         }
 
-        return result;
+        return res;
     }
 };
 
@@ -38,9 +38,9 @@ class Solution2 {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
         const int m = matrix.size();
-        vector<int> ans;
+        vector<int> res;
         if (m == 0) {
-            return ans;
+            return res;
         }
 
         const int n = matrix.front().size();
@@ -49,7 +49,7 @@ public:
         for (int i = 0, j = 0, begini = 0, beginj = 0, endi = m,
              endj = n, cnt = 0, total = m * n; cnt < total; ++cnt) {
 
-            ans.emplace_back(matrix[i][j]);
+            res.emplace_back(matrix[i][j]);
 
             switch (action) {
                 case RIGHT:
@@ -84,6 +84,6 @@ public:
                     break;
             }
         }
-        return ans;
+        return res;
     }
 };
