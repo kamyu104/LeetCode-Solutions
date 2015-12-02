@@ -29,7 +29,6 @@
 #   coins =  3*1*5      +  3*5*8    +  1*3*8      + 1*8*1   = 167
 #
 
-# TLE, although it could pass in C++.
 class Solution(object):
     def maxCoins(self, nums):
         """
