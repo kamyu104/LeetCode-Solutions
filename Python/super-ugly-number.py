@@ -64,7 +64,7 @@ class Solution2(object):
         return uglies[-1]
   
 # Time:  O(n * k)
-# Space: O(n + k)
+# Space: O(k^2)
 # TLE, but it passess and performs very well in C++.
 class Solution3(object):
     def nthSuperUglyNumber(self, n, primes):
