@@ -1,4 +1,4 @@
-# Time:  O(n * klogk)
+# Time:  O(n * logk) ~ O(n * klogk)
 # Space: O(n + k)
 
 # Write a program to find the nth super ugly number.
