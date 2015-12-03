@@ -14,6 +14,7 @@
 # (2) The given numbers in primes are in ascending order.
 # (3) 0 < k <= 100, 0 < n <= 106, 0 < primes[i] < 1000.
 
+# Hash solution. (932ms)
 class Solution(object):
     def nthSuperUglyNumber(self, n, primes):
         """
