@@ -24,7 +24,7 @@ public:
 
 // Time:  O(n * logk) ~ O(n * klogk)
 // Space: O(k^2)
-// Heap solution.
+// Heap solution. (620ms)
 class Solution2 {
 public:
     int nthSuperUglyNumber(int n, vector<int>& primes) {
