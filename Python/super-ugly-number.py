@@ -62,11 +62,36 @@ class Solution2(object):
                 heapq.heappush(ugly_by_prime, (primes[k] * uglies[idx[k]], k))
 
         return uglies[-1]
-  
+
+# Time:  O(n * k)
+# Space: O(n + k)
+# TLE due to the last test case, but it passess and performs the best in C++.
+class Solution3(object):
+    def nthSuperUglyNumber(self, n, primes):
+        """
+        :type n: int
+        :type primes: List[int]
+        :rtype: int
+        """
+        uglies = [0] * n
+        uglies[0] = 1
+        ugly_by_prime = list(primes)
+        idx = [0] * len(primes)
+
+        for i in xrange(1, n):
+            min_val = min(ugly_by_prime)
+            uglies[i] = min_val
+            for k in xrange(len(primes)):
+                if min_val == ugly_by_prime[k]:
+                    idx[k] += 1
+                    ugly_by_prime[k] = primes[k] * uglies[idx[k]]
+    
+        return uglies[-1]
+
 # Time:  O(n * logk) ~ O(n * klogk)
 # Space: O(k^2)
-# TLE, but it passess and performs well in C++.
-class Solution3(object):
+# TLE due to the last test case, but it passess and performs well in C++.
+class Solution4(object):
     def nthSuperUglyNumber(self, n, primes):
         """
         :type n: int
