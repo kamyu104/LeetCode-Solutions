@@ -63,3 +63,28 @@ class Solution2(object):
 
         return uglies[-1]
   
+# Time:  O(n * k)
+# Space: O(n + k)
+# TLE, but it passess and performs very well in C++.
+class Solution3(object):
+    def nthSuperUglyNumber(self, n, primes):
+        """
+        :type n: int
+        :type primes: List[int]
+        :rtype: int
+        """
+        ugly_number = 0
+
+        heap = []
+        heapq.heappush(heap, 1)
+        for p in primes:
+            heapq.heappush(heap, p)
+        for _ in xrange(n):
+            ugly_number = heapq.heappop(heap)
+            for i in xrange(len(primes)):
+                if ugly_number % primes[i] == 0:
+                    for j in xrange(i + 1):
+                        heapq.heappush(heap, ugly_number * primes[j])
+                    break
+
+        return ugly_number
