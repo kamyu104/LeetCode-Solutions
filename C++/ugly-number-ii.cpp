@@ -1,8 +1,38 @@
 // Time:  O(n)
-// Space: O(1)
+// Space: O(n)
 
-// Heap solution.
+// DP solution. (20ms)
 class Solution {
+public:
+    int nthUglyNumber(int n) {
+        vector<int> uglies{1};
+    
+        int f2 = 2, f3 = 3, f5 = 5;
+        int idx2 = 0, idx3 = 0, idx5 = 0;
+    
+        while (uglies.size() < n) {
+            int min_val = min(min(f2, f3), f5);
+            uglies.emplace_back(min_val);
+    
+            if (min_val == f2) {
+                f2 = 2 * uglies[++idx2];
+            }
+            if (min_val == f3) {
+                f3 = 3 * uglies[++idx3];
+            }
+            if (min_val == f5) {
+                f5 = 5 * uglies[++idx5];
+            }
+        }
+    
+        return uglies[n - 1];
+    }
+};
+
+// Time:  O(n)
+// Space: O(1)
+// Heap solution. (148ms)
+class Solution2 {
 public:
     int nthUglyNumber(int n) {
         long long ugly_number = 0;
@@ -28,7 +58,7 @@ public:
 };
 
 // BST solution.
-class Solution2 {
+class Solution3 {
 public:
     int nthUglyNumber(int n) {
         long long ugly_number = 0;
