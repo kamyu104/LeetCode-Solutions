@@ -1,5 +1,6 @@
 // Time:  O(n * k)
 // Space: O(n + k)
+
 // DP solution. (596ms)
 class Solution2 {
 public:
@@ -40,7 +41,7 @@ public:
             tie(min, k) = ugly_by_prime.top();
             uglies[i] = min;
 
-            while (ugly_by_prime.top().first == min) { // worst time: O(klogk)
+            while (ugly_by_prime.top().first == min) {  // worst time: O(klogk)
                 tie(min, k) = ugly_by_prime.top();
                 ugly_by_prime.pop();
                 ugly_by_prime.push({primes[k] * uglies[++idx[k]], k});
