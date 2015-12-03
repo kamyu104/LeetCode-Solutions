@@ -32,6 +32,9 @@ public:
         priority_queue<long long , vector<long long>, greater<long long>> heap;
 
         heap.emplace(1);
+        for (const auto& p: primes) {
+            heap.emplace(p);
+        }
         for (int i = 0; i < n; ++i) {
             ugly_number = heap.top();
             heap.pop();
@@ -39,14 +42,11 @@ public:
             for (; j < primes.size(); ++j) {
                 if (ugly_number % primes[j] == 0) {
                     for (int k = 0; k <= j; ++k) {
-                        heap.emplace(ugly_number * primes[k]);  // worst space: O(k^2)
+                        // worst time:  O(klogk)
+                        // worst space: O(k^2)
+                        heap.emplace(ugly_number * primes[k]);
                     }
                     break;
-                }
-            }
-            if (j == primes.size()) {  // worst time: O(klogk)
-                for (const auto& p: primes) {
-                    heap.emplace(ugly_number * p);
                 }
             }
         }
