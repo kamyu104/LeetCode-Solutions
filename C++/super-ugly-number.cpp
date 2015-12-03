@@ -2,7 +2,7 @@
 // Space: O(n + k)
 
 // DP solution. (596ms)
-class Solution2 {
+class Solution {
 public:
     int nthSuperUglyNumber(int n, vector<int>& primes) {
         vector<int> uglies(n), ugly_by_prime(primes), idx(primes.size());
