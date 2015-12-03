@@ -1,4 +1,4 @@
-# Time:  O(n * logk) ~ O(n * klogk)
+# Time:  O(n * k)
 # Space: O(n + k)
 
 # Write a program to find the nth super ugly number.
@@ -15,6 +15,31 @@
 # (3) 0 < k <= 100, 0 < n <= 106, 0 < primes[i] < 1000.
 
 class Solution(object):
+    def nthSuperUglyNumber(self, n, primes):
+        """
+        :type n: int
+        :type primes: List[int]
+        :rtype: int
+        """
+        uglies, idx, ugly_by_prime, ugly_set = [0] * n, [0] * len(primes), [], set([1])
+        uglies[0] = 1
+
+        for k, p in enumerate(primes):
+            heapq.heappush(ugly_by_prime, (p, k))
+            ugly_set.add(p)
+
+        for i in xrange(1, n):
+            min_val, k = heapq.heappop(ugly_by_prime)
+            uglies[i] = min_val
+            while (primes[k] * uglies[idx[k]]) in ugly_set:
+                idx[k] += 1
+            heapq.heappush(ugly_by_prime, (primes[k] * uglies[idx[k]], k))
+            ugly_set.add(primes[k] * uglies[idx[k]])
+
+        return uglies[-1]
+
+
+class Solution2(object):
     def nthSuperUglyNumber(self, n, primes):
         """
         :type n: int
