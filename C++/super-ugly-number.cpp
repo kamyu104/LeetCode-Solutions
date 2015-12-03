@@ -23,9 +23,42 @@ public:
 };
 
 // Time:  O(n * logk) ~ O(n * klogk)
+// Space: O(k^2)
+// Heap solution.
+class Solution2 {
+public:
+    int nthSuperUglyNumber(int n, vector<int>& primes) {
+        long long ugly_number = 0;
+        priority_queue<long long , vector<long long>, greater<long long>> heap;
+
+        heap.emplace(1);
+        for (int i = 0; i < n; ++i) {
+            ugly_number = heap.top();
+            heap.pop();
+            int j = 0;
+            for (; j < primes.size() - 1; ++j) {
+                if (ugly_number % primes[j] == 0) {
+                    for (int k = 0; k <= j; ++k) {
+                        heap.emplace(ugly_number * primes[k]);  // worst space: O(k^2)
+                    }
+                    break;
+                }
+            }
+            if (j == primes.size() - 1) {  // worst time: O(klogk)
+                for (const auto& p: primes) {
+                    heap.emplace(ugly_number * p);
+                }
+            }
+        }
+    
+        return ugly_number; 
+    }
+};
+
+// Time:  O(n * logk) ~ O(n * klogk)
 // Space: O(n + k)
 // Heap solution. (1184ms)
-class Solution2 {
+class Solution3 {
 public:
     int nthSuperUglyNumber(int n, vector<int>& primes) {
         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> ugly_by_prime;
