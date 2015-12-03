@@ -39,7 +39,8 @@ class Solution(object):
 
         return uglies[-1]
 
-
+# Time:  O(n * logk) ~ O(n * klogk)
+# Space: O(n + k)
 class Solution2(object):
     def nthSuperUglyNumber(self, n, primes):
         """
