@@ -22,7 +22,7 @@ public:
     }
 };
 
-// Time:  O(n * klogk)
+// Time:  O(n * logk) ~ O(n * klogk)
 // Space: O(n + k)
 // Heap solution. (1184ms)
 class Solution2 {
