@@ -9,9 +9,9 @@ public:
         while (uglies.size() < n) {
             int min_val = *min_element(ugly_by_prime.begin(), ugly_by_prime.end());
             uglies.emplace_back(min_val);
-            for (int i = 0; i < primes.size(); ++i) {
-                if (min_val == ugly_by_prime[i]) {
-                    ugly_by_prime[i] = primes[i] * uglies[++idx[i]];
+            for (int k = 0; k < primes.size(); ++k) {
+                if (min_val == ugly_by_prime[k]) {
+                    ugly_by_prime[k] = primes[k] * uglies[++idx[k]];
                 }
             }
         }
