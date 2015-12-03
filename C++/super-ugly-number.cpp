@@ -24,7 +24,7 @@ public:
 
 // Time:  O(n * logk) ~ O(n * klogk)
 // Space: O(k^2)
-// Heap solution. (620ms)
+// Heap solution. (612ms)
 class Solution2 {
 public:
     int nthSuperUglyNumber(int n, vector<int>& primes) {
@@ -36,7 +36,7 @@ public:
             ugly_number = heap.top();
             heap.pop();
             int j = 0;
-            for (; j < primes.size() - 1; ++j) {
+            for (; j < primes.size(); ++j) {
                 if (ugly_number % primes[j] == 0) {
                     for (int k = 0; k <= j; ++k) {
                         heap.emplace(ugly_number * primes[k]);  // worst space: O(k^2)
@@ -44,7 +44,7 @@ public:
                     break;
                 }
             }
-            if (j == primes.size() - 1) {  // worst time: O(klogk)
+            if (j == primes.size()) {  // worst time: O(klogk)
                 for (const auto& p: primes) {
                     heap.emplace(ugly_number * p);
                 }
