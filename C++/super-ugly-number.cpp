@@ -6,7 +6,7 @@ class Solution {
 public:
     int nthSuperUglyNumber(int n, vector<int>& primes) {
         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> heap;
-        vector<int> uglies(n), idx(primes.size()), ugly_by_prime(n);
+        vector<int> uglies(n), idx(primes.size()), ugly_by_last_prime(n);
         uglies[0] = 1;
 
         for (int i = 0; i < primes.size(); ++i) {
@@ -16,8 +16,8 @@ public:
             int k;
             tie(uglies[i], k) = heap.top();
             heap.pop();
-            ugly_by_prime[i] = k;
-            while (ugly_by_prime[++idx[k]] > k);
+            ugly_by_last_prime[i] = k;
+            while (ugly_by_last_prime[++idx[k]] > k);
             heap.push({uglies[idx[k]] * primes[k], k});
         }
         return uglies[n - 1];
@@ -86,7 +86,7 @@ public:
 class Solution4 {
 public:
     int nthSuperUglyNumber(int n, vector<int>& primes) {
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> ugly_by_prime;
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> heap;
         unordered_set<int> ugly_set{1};
         vector<int> uglies(n), idx(primes.size());
         uglies[0] = 1;
