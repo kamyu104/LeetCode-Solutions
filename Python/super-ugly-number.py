@@ -22,7 +22,7 @@ class Solution(object):
         :type primes: List[int]
         :rtype: int
         """
-        heap, uglies, idx, ugly_by_prime = [], [0] * n, [0] * len(primes), [0] * n
+        heap, uglies, idx, ugly_by_last_prime = [], [0] * n, [0] * len(primes), [0] * n
         uglies[0] = 1
 
         for k, p in enumerate(primes):
@@ -30,9 +30,9 @@ class Solution(object):
 
         for i in xrange(1, n):
             uglies[i], k = heapq.heappop(heap)
-            ugly_by_prime[i] = k
+            ugly_by_last_prime[i] = k
             idx[k] += 1
-            while ugly_by_prime[idx[k]] > k:
+            while ugly_by_last_prime[idx[k]] > k:
                 idx[k] += 1
             heapq.heappush(heap, (primes[k] * uglies[idx[k]], k))
 
@@ -48,18 +48,18 @@ class Solution2(object):
         :type primes: List[int]
         :rtype: int
         """
-        uglies, idx, ugly_by_prime, ugly_set = [0] * n, [0] * len(primes), [], set([1])
+        uglies, idx, heap, ugly_set = [0] * n, [0] * len(primes), [], set([1])
         uglies[0] = 1
 
         for k, p in enumerate(primes):
-            heapq.heappush(ugly_by_prime, (p, k))
+            heapq.heappush(heap, (p, k))
             ugly_set.add(p)
 
         for i in xrange(1, n):
-            uglies[i], k = heapq.heappop(ugly_by_prime)
+            uglies[i], k = heapq.heappop(heap)
             while (primes[k] * uglies[idx[k]]) in ugly_set:
                 idx[k] += 1
-            heapq.heappush(ugly_by_prime, (primes[k] * uglies[idx[k]], k))
+            heapq.heappush(heap, (primes[k] * uglies[idx[k]], k))
             ugly_set.add(primes[k] * uglies[idx[k]])
 
         return uglies[-1]
