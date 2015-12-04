@@ -67,19 +67,19 @@ public:
         uglies[0] = 1;
 
         for (int k = 0; k < primes.size(); ++k) {
-            ugly_by_prime.push({primes[k], k});
+            heap.push({primes[k], k});
             ugly_set.emplace(primes[k]);
         }
 
         for (int i = 1; i < n; ++i) {
             int min, k;
-            tie(min, k) = ugly_by_prime.top();
-            ugly_by_prime.pop();
+            tie(min, k) = heap.top();
+            heap.pop();
             uglies[i] = min;
             while (ugly_set.count(primes[k] * uglies[idx[k]])) {
                 ++idx[k];
             }
-            ugly_by_prime.push({primes[k] * uglies[idx[k]], k});
+            heap.push({primes[k] * uglies[idx[k]], k});
             ugly_set.emplace(primes[k] * uglies[idx[k]]);
         }
     
@@ -93,23 +93,23 @@ public:
 class Solution4 {
 public:
     int nthSuperUglyNumber(int n, vector<int>& primes) {
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> ugly_by_prime;
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> heap;
         vector<int> uglies(n), idx(primes.size());
         uglies[0] = 1;
 
         for (int k = 0; k < primes.size(); ++k) {
-            ugly_by_prime.push({primes[k], k});
+            heap.push({primes[k], k});
         }
 
         for (int i = 1; i < n; ++i) {
             int min, k;
-            tie(min, k) = ugly_by_prime.top();
+            tie(min, k) = heap.top();
             uglies[i] = min;
 
-            while (ugly_by_prime.top().first == min) {  // worst time: O(klogk)
-                tie(min, k) = ugly_by_prime.top();
-                ugly_by_prime.pop();
-                ugly_by_prime.push({primes[k] * uglies[++idx[k]], k});
+            while (heap.top().first == min) {  // worst time: O(klogk)
+                tie(min, k) = heap.top();
+                heap.pop();
+                heap.push({primes[k] * uglies[++idx[k]], k});
             }
         }
     
