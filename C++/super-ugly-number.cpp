@@ -1,8 +1,33 @@
 // Time:  O(n * k)
 // Space: O(n + k)
 
-// DP solution. (596ms)
+// Heap solution. (308ms)
 class Solution {
+public:
+    int nthSuperUglyNumber(int n, vector<int>& primes) {
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> heap;
+        vector<int> uglies(n), idx(primes.size()), ugly_by_prime(n);
+        uglies[0] = 1;
+
+        for (int i = 0; i < primes.size(); ++i) {
+            heap.push({primes[i], i});
+        }
+        for (int i = 1; i < n; ++i) {
+            int k;
+            tie(uglies[i], k) = heap.top();
+            heap.pop();
+            ugly_by_prime[i] = k;
+            while (ugly_by_prime[++idx[k]] > k);
+            heap.push({uglies[idx[k]] * primes[k], k});
+        }
+        return uglies[n - 1];
+    }
+};
+
+// Time:  O(n * k)
+// Space: O(n + k)
+// DP solution. (596ms)
+class Solution2 {
 public:
     int nthSuperUglyNumber(int n, vector<int>& primes) {
         vector<int> uglies(n), ugly_by_prime(primes), idx(primes.size());
@@ -25,7 +50,7 @@ public:
 // Time:  O(n * logk) ~ O(n * klogk)
 // Space: O(k^2)
 // Heap solution. (612ms)
-class Solution2 {
+class Solution3 {
 public:
     int nthSuperUglyNumber(int n, vector<int>& primes) {
         long long ugly_number = 0;
@@ -58,7 +83,7 @@ public:
 // Time:  O(n * k)
 // Space: O(n + k)
 // Hash solution. (804ms)
-class Solution3 {
+class Solution4 {
 public:
     int nthSuperUglyNumber(int n, vector<int>& primes) {
         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> ugly_by_prime;
@@ -89,7 +114,7 @@ public:
 // Time:  O(n * logk) ~ O(n * klogk)
 // Space: O(n + k)
 // Heap solution. (1184ms)
-class Solution4 {
+class Solution5 {
 public:
     int nthSuperUglyNumber(int n, vector<int>& primes) {
         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> heap;
