@@ -72,10 +72,9 @@ public:
         }
 
         for (int i = 1; i < n; ++i) {
-            int min, k;
-            tie(min, k) = heap.top();
+            int k;
+            tie(uglies[i]) = heap.top();
             heap.pop();
-            uglies[i] = min;
             while (ugly_set.count(primes[k] * uglies[idx[k]])) {
                 ++idx[k];
             }
@@ -102,12 +101,11 @@ public:
         }
 
         for (int i = 1; i < n; ++i) {
-            int min, k;
-            tie(min, k) = heap.top();
-            uglies[i] = min;
+            int k;
+            tie(uglies[i], k) = heap.top();
 
-            while (heap.top().first == min) {  // worst time: O(klogk)
-                tie(min, k) = heap.top();
+            while (heap.top().first == uglies[i]) {  // worst time: O(klogk)
+                tie(uglies[i], k) = heap.top();
                 heap.pop();
                 heap.push({primes[k] * uglies[++idx[k]], k});
             }
