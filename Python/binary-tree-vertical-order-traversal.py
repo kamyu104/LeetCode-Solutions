@@ -19,8 +19,7 @@ class Solution(object):
             return []
 
         lookup = collections.defaultdict(list)
-        min_idx = float("inf")
-        max_idx = float("-inf")
+        min_idx, max_idx = float("inf"), float("-inf")
         
         pre_level = [(root, 0)]
         while pre_level:
