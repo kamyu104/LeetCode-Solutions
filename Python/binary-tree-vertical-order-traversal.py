@@ -39,4 +39,3 @@ class Solution(object):
             res.append(lookup[i])
 
         return res
-            
