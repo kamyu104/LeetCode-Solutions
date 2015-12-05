@@ -17,7 +17,7 @@ public:
             tie(uglies[i], k) = heap.top();
             heap.pop();
             ugly_by_last_prime[i] = k;
-            while (ugly_by_last_prime[++idx[k]] > k);
+            while (ugly_by_last_prime[++idx[k]] > k);  // worst time: O(k)
             heap.push({uglies[idx[k]] * primes[k], k});
         }
         return uglies[n - 1];
