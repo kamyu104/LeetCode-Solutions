@@ -36,7 +36,7 @@ class Solution(object):
 
         res = []
         for i in xrange(min_idx, max_idx + 1):
-            if lookup[i]:
-                res.append(lookup[i])
+            res.append(lookup[i])
+
         return res
             
