@@ -5,17 +5,19 @@
 class Solution {
 public:
     vector<int> countSmaller(vector<int>& nums) {
-        vector<int> sorted_nums(nums), orderings(nums.size());
+        // Get the place (position in the ascending order) of each number.
+        vector<int> sorted_nums(nums), places(nums.size());
         sort(sorted_nums.begin(), sorted_nums.end());
         for (int i = 0; i < nums.size(); ++i) {
-            orderings[i] = 
+            places[i] = 
                 lower_bound(sorted_nums.begin(), sorted_nums.end(), nums[i]) -
                 sorted_nums.begin();
         }
+        // Count the smaller elements after the number.
         vector<int> bit(nums.size() + 1), ans(nums.size());
         for (int i = nums.size() - 1; i >= 0; --i) {
-            ans[i] = query(bit, orderings[i]);
-            add(bit, orderings[i] + 1, 1);
+            ans[i] = query(bit, places[i]);
+            add(bit, places[i] + 1, 1);
         }
         return ans;
     }
