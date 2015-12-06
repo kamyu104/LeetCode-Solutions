@@ -48,13 +48,13 @@ class Solution(object):
                     i -= (i & -i)
                 return ret
         
-        sorted_nums, nth_smallest = sorted(nums), [0] * len(nums)
+        sorted_nums, orderings = sorted(nums), [0] * len(nums)
         for i, num in enumerate(nums):
-            nth_smallest[i] = binarySearch(sorted_nums, num, lambda x, y: x <= y)
+            orderings[i] = binarySearch(sorted_nums, num, lambda x, y: x <= y)
 
         ans, bit= [0] * len(nums), BIT(len(nums) + 1)
         for i in reversed(xrange(len(nums))):
-            ans[i] = bit.query(nth_smallest[i])
-            bit.add(nth_smallest[i] + 1, 1)
+            ans[i] = bit.query(orderings[i])
+            bit.add(orderings[i] + 1, 1)
         return ans
   
