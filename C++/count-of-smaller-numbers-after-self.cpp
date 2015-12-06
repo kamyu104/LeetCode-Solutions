@@ -1,6 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
+// BIT solution.
 class Solution {
 public:
     vector<int> countSmaller(vector<int>& nums) {
