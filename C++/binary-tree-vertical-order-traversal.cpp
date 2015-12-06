@@ -33,7 +33,7 @@ public:
         }
         vector<vector<int>> res;
         for (int i = min_idx; !cols.empty() && i <= max_idx; ++i) {
-            res.emplace_back(cols[i]);
+            res.emplace_back(move(cols[i]));
         }
         return res;
     }
