@@ -179,7 +179,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [C++](./C++/serialize-and-deserialize-binary-tree.cpp) [Python](./Python/serialize-and-deserialize-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | LintCode | DFS
 307 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [C++](./C++/range-sum-query-mutable.cpp) [Python](./Python/range-sum-query-mutable.py) | ctor: _O(n)_, update: _O(logn)_, query:  _O(logn)_ | _O(n)_ | Medium | LintCode | DFS, Segment Tree, BIT
 308 | [Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable/) | [C++](./C++/range-sum-query-2d-mutable.cpp) [Python](./Python/range-sum-query-2d-mutable.py) | ctor: _O(m * n)_, update: _O(logm + logn)_, query:  _O(logm + logn)_ | _O(m * n)_ | Hard | 📖 | DFS, Segment Tree, BIT
-|316|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)| [C++](./C++/count-of-smaller-numbers-after-self.cpp) [Python](./Python/count-of-smaller-numbers-after-self.py)| _O(nlogn)_ | _O(n)_ | Hard | LintCode | BIT, BST |
+315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)| [C++](./C++/count-of-smaller-numbers-after-self.cpp) [Python](./Python/count-of-smaller-numbers-after-self.py)| _O(nlogn)_ | _O(n)_ | Hard | LintCode | BIT, BST |
 
 ## Hash Table
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
