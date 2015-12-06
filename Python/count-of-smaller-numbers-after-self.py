@@ -47,14 +47,16 @@ class Solution(object):
                     ret += self.__bit[i]
                     i -= (i & -i)
                 return ret
-        
-        sorted_nums, orderings = sorted(nums), [0] * len(nums)
-        for i, num in enumerate(nums):
-            orderings[i] = binarySearch(sorted_nums, num, lambda x, y: x <= y)
 
+        # Get the place (position in the ascending order) of each number.
+        sorted_nums, places = sorted(nums), [0] * len(nums)
+        for i, num in enumerate(nums):
+            places[i] = binarySearch(sorted_nums, num, lambda x, y: x <= y)
+
+        # Count the smaller elements after the number.
         ans, bit= [0] * len(nums), BIT(len(nums) + 1)
         for i in reversed(xrange(len(nums))):
-            ans[i] = bit.query(orderings[i])
-            bit.add(orderings[i] + 1, 1)
+            ans[i] = bit.query(places[i])
+            bit.add(places[i] + 1, 1)
         return ans
   
