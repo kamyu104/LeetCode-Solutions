@@ -15,26 +15,12 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        if not root:
-            return []
-
-        lookup = collections.defaultdict(list)
-        min_idx, max_idx = float("inf"), float("-inf")
-        
-        pre_level = [(root, 0)]
-        while pre_level:
-            cur_level = []
-            for n, i in pre_level:
-                min_idx, max_idx = min(min_idx, i), max(max_idx, i)
-                lookup[i] += [n.val]
-                if n.left:
-                    cur_level.append((n.left, i - 1))
-                if n.right:
-                    cur_level.append((n.right, i + 1))
-            pre_level = cur_level
-
-        res = []
-        for i in xrange(min_idx, max_idx + 1):
-            res.append(lookup[i])
-
-        return res
+        """
+        cols = collections.defaultdict(list)
+        queue = [(root, 0)]
+        for node, i in queue:
+            if node:
+                cols[i].append(node.val)
+                queue += (node.left, i - 1), (node.right, i + 1)
+        return [cols[i] for i in xrange(min(cols.keys()), max(cols.keys()) + 1)] \
+                   if cols else []
