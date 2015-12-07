@@ -22,11 +22,9 @@ public:
 
         // Insert into BST and get left count.
         for (int i = nums.size() - 1; i >= 0; --i) {
-            int count = 0;
             BSTreeNode *node = new BSTreeNode(nums[i], 0);
             root = insertNode(root, node);
-            count = query(root, nums[i]);
-            res[i] = count;
+            res[i] = query(root, nums[i]);
         }
 
         return res;
