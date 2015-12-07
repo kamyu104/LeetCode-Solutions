@@ -4,7 +4,6 @@
 // BST solution. (40ms)
 class Solution {
 public:
-public:
     class BSTreeNode {
     public:
         int val, count;
@@ -15,6 +14,7 @@ public:
             this->left = this->right = nullptr;
         }
     };
+
     vector<int> countSmaller(vector<int>& nums) {
         vector<int> res(nums.size());
 
