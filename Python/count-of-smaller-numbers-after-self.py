@@ -72,7 +72,7 @@ class Solution2(object):
         """
         res = [0] * len(nums)
         bst = self.BST()
-        # Insert into BST and get right count.
+        # Insert into BST and get left count.
         for i in reversed(xrange(len(nums))):
             bst.insertNode(nums[i])
             res[i] = bst.query(nums[i])
