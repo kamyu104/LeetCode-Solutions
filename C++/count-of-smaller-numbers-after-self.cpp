@@ -20,7 +20,7 @@ public:
 
         BSTreeNode *root = nullptr;
 
-        // Insert into BST and get right count.
+        // Insert into BST and get left count.
         for (int i = nums.size() - 1; i >= 0; --i) {
             BSTreeNode *node = new BSTreeNode(nums[i], 0);
             root = insertNode(root, node);
