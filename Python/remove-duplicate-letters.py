@@ -20,16 +20,16 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        cnts = collections.defaultdict(int)
+        remaining = collections.defaultdict(int)
         for c in s:
-            cnts[c] += 1
+            remaining[c] += 1
 
-        visited, stk = set(), []
+        in_stack, stk = set(), []
         for c in s:
-            if c not in visited:
-                while stk and stk[-1] > c and cnts[stk[-1]]:
-                    visited.remove(stk.pop())
+            if c not in in_stack:
+                while stk and stk[-1] > c and remaining[stk[-1]]:
+                    in_stack.remove(stk.pop())
                 stk += c
-                visited.add(c)
-            cnts[c] -= 1
+                in_stack.add(c)
+            remaining[c] -= 1
         return "".join(stk)
