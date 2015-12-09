@@ -10,18 +10,18 @@ public:
         }
 
         unordered_set<char> visited;
-        string res;
+        string stk;
         for (const auto& c : s) {
-            if (!visited.count(c) && (res.empty() || res.back() != c)) {
-                while (!res.empty() && res.back() >= c && cnts[res.back()] > 0) {
-                    visited.erase(res.back());
-                    res.pop_back();
+            if (!visited.count(c) && (stk.empty() || stk.back() != c)) {
+                while (!stk.empty() && stk.back() >= c && cnts[stk.back()] > 0) {
+                    visited.erase(stk.back());
+                    stk.pop_back();
                 }
-                res.push_back(c);
+                stk.push_back(c);
                 visited.emplace(c);
             }
             --cnts[c];
         }
-        return res; 
+        return stk; 
     }
 };
