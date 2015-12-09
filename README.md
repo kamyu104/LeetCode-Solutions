@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-315%20%2F%20315-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-316%20%2F%20316-ff69b4.svg)
 
-Up to date (2015-12-06), there are `298` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-12-09), there are `299` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `315` questions.
+Here is the classification of all `316` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -427,6 +427,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 122| [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [Python](./Python/best-time-to-buy-and-sell-stock-ii.py) | _O(n)_ | _O(1)_ | Medium ||
 134| [Gas Station](https://leetcode.com/problems/gas-station/)| [Python](./Python/gas-station.py)   | _O(n)_          | _O(1)_          | Medium         ||
 135| [Candy](https://leetcode.com/problems/candy/)| [Python](./Python/candy.py) | _O(n)_ | _O(n)_ | Hard ||
+316| [Closest Binary Search Tree Value II](https://leetcode.com/problems/remove-duplicate-letters/) | [C++](./C++/remove-duplicate-letters.cpp) [Python](./Python/remove-duplicate-letters.py) | _O(n)_| _O(k)_| Medium || Stack |
 
 ---
 ##Design
