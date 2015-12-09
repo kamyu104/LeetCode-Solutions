@@ -11,16 +11,16 @@ public:
             ++cnts[c - 'a'];
         }
 
-        vector<bool> visited(k);
+        vector<bool> in_stack(k);
         string stk;
         for (const auto& c : s) {
-            if (!visited[c - 'a']) {
+            if (!in_stack[c - 'a']) {
                 while (!stk.empty() && stk.back() > c && cnts[stk.back() - 'a']) {
-                    visited[stk.back() - 'a'] = false;
+                    in_stack[stk.back() - 'a'] = false;
                     stk.pop_back();
                 }
                 stk.push_back(c);
-                visited[c - 'a'] = true;
+                in_stack[c - 'a'] = true;
             }
             --cnts[c - 'a'];
         }
@@ -39,16 +39,16 @@ public:
             ++cnts[c];
         }
 
-        unordered_set<char> visited;
+        unordered_set<char> in_stack;
         string stk;
         for (const auto& c : s) {
-            if (!visited.count(c)) {
+            if (!in_stack.count(c)) {
                 while (!stk.empty() && stk.back() > c && cnts[stk.back()]) {
-                    visited.erase(stk.back());
+                    in_stack.erase(stk.back());
                     stk.pop_back();
                 }
                 stk.push_back(c);
-                visited.emplace(c);
+                in_stack.emplace(c);
             }
             --cnts[c];
         }
