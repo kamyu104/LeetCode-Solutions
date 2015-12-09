@@ -1,7 +1,36 @@
 // Time:  O(n)
 // Space: O(k), k is size of the alphabet
 
+// array solution (4ms)
 class Solution {
+public:
+    string removeDuplicateLetters(string s) {
+        array<int, 26> cnts{0};
+        for (const auto& c : s) {
+            ++cnts[c - 'a'];
+        }
+
+        array<bool, 26> visited{false};
+        string stk;
+        for (const auto& c : s) {
+            if (!visited[c - 'a'] && (stk.empty() || stk.back() != c)) {
+                while (!stk.empty() && stk.back() >= c && cnts[stk.back() - 'a'] > 0) {
+                    visited[stk.back() - 'a'] = false;
+                    stk.pop_back();
+                }
+                stk.push_back(c);
+                visited[c - 'a'] = true;
+            }
+            --cnts[c - 'a'];
+        }
+        return stk; 
+    }
+};
+
+// Time:  O(n)
+// Space: O(k), k is size of the alphabet
+// hash solution (16ms)
+class Solution2 {
 public:
     string removeDuplicateLetters(string s) {
         unordered_map<char, int> cnts;
