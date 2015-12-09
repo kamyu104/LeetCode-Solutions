@@ -26,8 +26,8 @@ class Solution(object):
 
         visited, stk = set(), []
         for c in s:
-            if c not in visited and (not stk or stk[-1] != c):
-                while stk and stk[-1] >= c and cnts[stk[-1]] > 0:
+            if c not in visited:
+                while stk and stk[-1] > c and cnts[stk[-1]]:
                     visited.remove(stk.pop())
                 stk += c
                 visited.add(c)
