@@ -14,8 +14,8 @@ public:
         vector<bool> visited(k);
         string stk;
         for (const auto& c : s) {
-            if (!visited[c - 'a'] && (stk.empty() || stk.back() != c)) {
-                while (!stk.empty() && stk.back() >= c && cnts[stk.back() - 'a'] > 0) {
+            if (!visited[c - 'a']) {
+                while (!stk.empty() && stk.back() > c && cnts[stk.back() - 'a']) {
                     visited[stk.back() - 'a'] = false;
                     stk.pop_back();
                 }
@@ -42,8 +42,8 @@ public:
         unordered_set<char> visited;
         string stk;
         for (const auto& c : s) {
-            if (!visited.count(c) && (stk.empty() || stk.back() != c)) {
-                while (!stk.empty() && stk.back() >= c && cnts[stk.back()] > 0) {
+            if (!visited.count(c)) {
+                while (!stk.empty() && stk.back() > c && cnts[stk.back()]) {
                     visited.erase(stk.back());
                     stk.pop_back();
                 }
