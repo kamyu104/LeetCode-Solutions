@@ -12,15 +12,16 @@ public:
         string res;
         unordered_set<char> visited;
         stack<char> stk;
-        for (int i = 0; i < s.size(); --cnts[s[i]], ++i) {
-            if (!visited.count(s[i]) && (stk.empty() || stk.top() != s[i])) {
-                while (!stk.empty() && stk.top() >= s[i] && cnts[stk.top()] > 0) {
+        for (const auto& c : s) {
+            if (!visited.count(c) && (stk.empty() || stk.top() != c)) {
+                while (!stk.empty() && stk.top() >= c && cnts[stk.top()] > 0) {
                     visited.erase(stk.top());
                     stk.pop();
                 }
-                stk.emplace(s[i]);
-                visited.emplace(s[i]);
+                stk.emplace(c);
+                visited.emplace(c);
             }
+            --cnts[c];
         }
         while (!stk.empty()) {
             res.push_back(stk.top());
@@ -30,3 +31,4 @@ public:
         return res; 
     }
 };
+
