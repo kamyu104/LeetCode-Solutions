@@ -1,16 +1,17 @@
 // Time:  O(n)
 // Space: O(k), k is size of the alphabet
 
-// array solution (4ms)
+// vector solution, need to know size of the alphabet in advace (4ms)
 class Solution {
 public:
     string removeDuplicateLetters(string s) {
-        array<int, 26> cnts{0};
+        const int k = 26;
+        vector<int> cnts(k);
         for (const auto& c : s) {
             ++cnts[c - 'a'];
         }
 
-        array<bool, 26> visited{false};
+        vector<bool> visited(k);
         string stk;
         for (const auto& c : s) {
             if (!visited[c - 'a'] && (stk.empty() || stk.back() != c)) {
@@ -29,7 +30,7 @@ public:
 
 // Time:  O(n)
 // Space: O(k), k is size of the alphabet
-// hash solution (16ms)
+// hash solution, no need to know size of the alphabet in advance (16ms)
 class Solution2 {
 public:
     string removeDuplicateLetters(string s) {
