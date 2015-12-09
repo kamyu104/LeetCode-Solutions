@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Space: O(k)
+// Space: O(k), k is size of the alphabet
 
 class Solution {
 public:
