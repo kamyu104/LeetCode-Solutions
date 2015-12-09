@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(k), k is size of the alphabet
 
-// vector solution, need to know size of the alphabet in advace (4ms)
+// vector solution, need to know size of the alphabet in advance (4ms)
 class Solution {
 public:
     string removeDuplicateLetters(string s) {
