@@ -9,26 +9,19 @@ public:
             ++cnts[c];
         }
 
-        string res;
         unordered_set<char> visited;
-        stack<char> stk;
+        string res;
         for (const auto& c : s) {
-            if (!visited.count(c) && (stk.empty() || stk.top() != c)) {
-                while (!stk.empty() && stk.top() >= c && cnts[stk.top()] > 0) {
-                    visited.erase(stk.top());
-                    stk.pop();
+            if (!visited.count(c) && (res.empty() || res.back() != c)) {
+                while (!res.empty() && res.back() >= c && cnts[res.back()] > 0) {
+                    visited.erase(res.back());
+                    res.pop_back();
                 }
-                stk.emplace(c);
+                res.push_back(c);
                 visited.emplace(c);
             }
             --cnts[c];
         }
-        while (!stk.empty()) {
-            res.push_back(stk.top());
-            stk.pop();
-        }
-        reverse(res.begin(), res.end());
         return res; 
     }
 };
-
