@@ -27,7 +27,7 @@ class Solution:
             while i < len(seq) - 1 and seq[i] == seq[i + 1]:
                 cnt += 1
                 i += 1
-            next_seq += "{}{}".format(cnt, seq[i])
+            next_seq += str(cnt) + seq[i]
             i += 1
         return next_seq
 
