@@ -5,7 +5,7 @@ class Solution {
 public:
     int shortestDistance(vector<vector<int>>& grid) {
         int m = grid.size(), n = grid[0].size(), cnt = 0;
-        vector<vector<int>> dists(m, vector<int>(n)),cnts(m, vector<int>(n));
+        vector<vector<int>> dists(m, vector<int>(n)), cnts(m, vector<int>(n));
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
                 if (grid[i][j] == 1) {
