@@ -12,7 +12,7 @@ class Solution(object):
             visited = [[False for _ in xrange(n)] for _ in xrange(m)]
     
             pre_level = [(x, y)]
-            visited[x][y] = True  # enqueue, then visited
+            visited[x][y] = True
             while pre_level:
                 dist += 1
                 cur_level = []
