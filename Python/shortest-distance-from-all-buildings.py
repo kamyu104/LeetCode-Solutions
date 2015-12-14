@@ -45,5 +45,3 @@ class Solution(object):
                     shortest = dists[i][j]
 
         return shortest if shortest != float("inf") else -1
-
-
