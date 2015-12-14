@@ -14,18 +14,17 @@ class Solution(object):
             pre_level = [(x, y)]
             visited[x][y] = True  # enqueue, then visited
             while pre_level:
+                dist += 1
                 cur_level = []
                 for i, j in pre_level:
-                    dists[i][j] += dist
-    
                     for dir in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
                         I, J = i+dir[0], j+dir[1]
                         if 0 <= I < m and 0 <= J < n and grid[I][J] == 0 and not visited[I][J]:
-                            cur_level.append((I, J))
                             cnts[I][J] += 1
+                            dists[I][J] += dist
+                            cur_level.append((I, J))
                             visited[I][J] = True
     
-                dist += 1
                 pre_level = cur_level
 
 
