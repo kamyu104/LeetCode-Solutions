@@ -23,7 +23,7 @@ public:
         return max_product;
     }
 
-    vector<string> counting_sort(vector<string>& words) {
+    vector<string> counting_sort(const vector<string>& words) {
         const int k = 1000;  // k is max length of words in the dictionary
         vector<vector<string>> buckets(k);
         for (const auto& word : words) {
