@@ -58,7 +58,6 @@ class Solution(object):
                     break
                 if not (bits[i] & bits[j]):
                     max_product = len(words[i]) * len(words[j])
-
         return max_product
 
 # Time:  O(nlogn) ~ O(n^2)
@@ -85,5 +84,4 @@ class Solution2(object):
                     break
                 if not (bits[i] & bits[j]):
                     max_product = len(words[i]) * len(words[j])
-
         return max_product
