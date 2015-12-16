@@ -33,7 +33,7 @@ class Solution(object):
         :rtype: int
         """
         def counting_sort(words):
-            k = 1000
+            k = 1000  # k is max length of words in the dictionary
             buckets = [[] for _ in xrange(k)]
             for word in words:
                 buckets[len(word)].append(word)
