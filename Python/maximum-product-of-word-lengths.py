@@ -56,7 +56,7 @@ class Solution(object):
             for j in xrange(i + 1, len(words)):
                 if len(words[i]) * len(words[j]) <= max_product:
                     break
-                if not(bits[i] & bits[j]):
+                if not (bits[i] & bits[j]):
                     max_product = len(words[i]) * len(words[j])
 
         return max_product
@@ -83,7 +83,7 @@ class Solution2(object):
             for j in xrange(i + 1, len(words)):
                 if len(words[i]) * len(words[j]) <= max_product:
                     break
-                if not(bits[i] & bits[j]):
+                if not (bits[i] & bits[j]):
                     max_product = len(words[i]) * len(words[j])
 
         return max_product
