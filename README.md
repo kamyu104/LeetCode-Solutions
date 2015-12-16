@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-317%20%2F%20317-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-318%20%2F%20318-ff69b4.svg)
 
-Up to date (2015-12-14), there are `300` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2015-12-16), there are `301` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `317` questions.
+Here is the classification of all `318` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -54,6 +54,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 231 | [Power of Two](https://leetcode.com/problems/power-of-two/) | [C++](./C++/power-of-two.cpp) [Python](./Python/power-of-two.py) | _O(1)_ | _O(1)_ | Easy | LintCode |
 260 | [Single Number III](https://leetcode.com/problems/single-number-iii/) | [C++](./C++/single-number-iii.cpp) [Python](./Python/single-number-iii.py) | _O(n)_ | _O(1)_          | Medium         ||
 268| [Missing Number](https://leetcode.com/problems/missing-number/) | [C++](./C++/missing-number.cpp) [Python](./Python/missing-number.py)  | _O(n)_ |  _O(1)_ | Medium         | LintCode ||
+318| [Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/) | [C++](./C++/maximum-product-of-word-lengths.cpp) [Python](./Python/maximum-product-of-word-lengths.py)  | _O(n)_ |  _O(1)_ | Medium         || Bit Manipulation, Counting Sort, Pruning|
 
 ## Array
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
