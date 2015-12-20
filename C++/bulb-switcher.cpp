@@ -4,6 +4,7 @@
 class Solution {
 public:
     int bulbSwitch(int n) {
+        // The number of full squares.
         return static_cast<int>(sqrt(n));
     }
 };
