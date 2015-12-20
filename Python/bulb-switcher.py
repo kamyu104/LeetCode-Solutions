@@ -28,4 +28,5 @@ class Solution(object):
         type n: int
         rtype: int
         """
+        # The number of full squares.
         return int(math.sqrt(n))
