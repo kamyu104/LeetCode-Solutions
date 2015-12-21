@@ -32,7 +32,7 @@ class Solution:
                     current = current[:-(i - start + 2)]
         
     def isValid(self, s):
-        if len(s) == 0 or (s[0] == "0" and s != "0"):
+        if len(s) == 0 or (s[0] == '0' and s != "0"):
             return False
         return int(s) < 256
     
