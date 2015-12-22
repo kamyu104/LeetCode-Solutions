@@ -27,8 +27,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Binary Search Tree](https://github.com/kamyu104/LeetCode#binary-search-tree)
 * [Breadth-First Search](https://github.com/kamyu104/LeetCode#breadth-first-search)
 * [Depth-First Search](https://github.com/kamyu104/LeetCode#depth-first-search)
-* [Dynamic Programming](https://github.com/kamyu104/LeetCode#dynamic-programming)
 * [Backtracking](https://github.com/kamyu104/LeetCode#backtracking)
+* [Dynamic Programming](https://github.com/kamyu104/LeetCode#dynamic-programming)
 * [Greedy](https://github.com/kamyu104/LeetCode#greedy)
 * [Design](https://github.com/kamyu104/LeetCode#design)
 
@@ -352,6 +352,33 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 282| [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/) | [C++](./C++/expression-add-operators.cpp)  [Python](./Python/expression-add-operators.py)  | _O(4^n)_ | _O(n)_ | Hard         |||
 301| [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/) | [C++](./C++/remove-invalid-parentheses.cpp)  [Python](./Python/remove-invalid-parentheses.py)  | _O(C(n, c))_ | _O(c)_ | Medium         |||
 
+## Backtracking
+  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
+17| [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)| [Python](./Python/letter-combinations-of-a-phone-number.py) | _O(n * 4^n)_ | _O(n)_ | Medium ||
+22| [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| [Python](./Python/generate-parentheses.py)| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         ||
+37| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | [Python](./Python/sudoku-solver.py) | _O((9!)^9)_  | _O(1)_          | Hard           ||
+39| [Combination Sum](https://leetcode.com/problems/combination-sum/)| [Python](./Python/combination-sum.py) | _O(k * n^k)_    | _O(k)_          | Medium         ||
+40| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)| [Python](./Python/combination-sum-ii.py)| _O(k * C(n, k))_| _O(k)_         | Medium         ||
+46| [Permutations](https://leetcode.com/problems/permutations/)| [Python](./Python/permutations.py) | _O(n * n!)_         | _O(n)_          | Medium         ||
+47| [Permutations II](https://leetcode.com/problems/permutations-ii/)| [Python](./Python/permutations-ii.py) | _O(n * n!)_   | _O(n)_          | Hard           ||
+51| [N-Queens](https://leetcode.com/problems/n-queens/)      | [Python](./Python/n-queens.py)   | _O(n!)_         | _O(n)_          | Hard           ||
+52| [N-Queens-II](https://leetcode.com/problems/n-queens-ii/)   | [Python](./Python/n-queens-ii.py) | _O(n!)_        | _O(n)_          | Hard           ||
+79| [Word Search](https://leetcode.com/problems/word-search/) | [Python](./Python/word-search.py) | _O(m * n * l)_ | _O(l)_  | Medium         ||
+93| [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [Python](./Python/restore-ip-addresses.py) | _O(1)_ | _O(1)_ | Medium         ||
+78| [Subsets](https://leetcode.com/problems/subsets/)       | [Python](./Python/subsets.py)    | _O(n * 2^n)_    | _O(1)_          | Medium         ||
+90| [Subsets II](https://leetcode.com/problems/subsets-ii/)    | [Python](./Python/subsets-ii.py) | _O(n * 2^n)_    | _O(1)_          | Medium         ||
+126| [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/)   |[Python](./Python/word-ladder-ii.py) | _O(n * d)_ | _O(d)_         | Hard         ||
+131| [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | [Python](./Python/palindrome-partitioning.py) | _O(n^2)_ ~ _O(2^n)_ | _O(n^2)_ | Medium ||
+140| [Word Break II](https://leetcode.com/problems/word-break-ii/)  | [Python](./Python/word-break-ii.py) |  _O(n^2)_      | _O(n)_       | Hard           ||
+212| [Word Search II](https://leetcode.com/problems/word-search-ii/) | [C++](./C++/word-search-ii.cpp) [Python](./Python/word-search-ii.py) | _O(m * n * l)_ | _O(l)_  | Hard         | LintCode | Trie, DFS
+216| [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)| [C++](./C++/combination-sum-iii.cpp) [Python](./Python/combination-sum-iii.py) | _O(k * C(n, k))_    | _O(k)_          | Medium         ||
+254| [Factor Combinations](https://leetcode.com/problems/factor-combinations/) | [C++](./C++/factor-combinations.cpp)  [Python](./Python/factor-combinations.py)  | _O(nlogn)_ | _O(logn)_ | Medium         |📖||
+267| [Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/) | [C++](./C++/palindrome-permutation-ii.cpp) [Python](./Python/palindrome-permutation-ii.py)  | _O(n * n!)_ |  _O(n)_ | Medium         |📖||
+291| [Word Pattern II](https://leetcode.com/problems/word-pattern-ii/) | [C++](./C++/word-pattern-ii.cpp)  [Python](./Python/word-pattern-ii.py)  | _O(n * C(n - 1, c - 1))_ | _O(n + c)_ | Hard         |📖||
+294| [Flip Game II](https://leetcode.com/problems/flip-game-ii/) | [C++](./C++/flip-game-ii.cpp) [Python](./Python/flip-game-ii.py)  | _O(n + c^2)_ | _O(c)_ | Medium         |📖| DP, Hash |
+320| [Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/) | [C++](./C++/generalized-abbreviation.cpp) [Python](./Python/generalized-abbreviation.py)  | _O(2^n)_ | _O(n)_ | Medium         |📖||
+
 ## Dynamic Programming
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
@@ -386,33 +413,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 304| [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)| [C++](./C++/range-sum-query-2d-immutable.cpp) [Python](./Python/range-sum-query-2d-immutable.py) | ctor: _O(m * n)_, lookup: _O(1)_          | _O(m * n)_          | Medium           ||
 309| [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | [C++](./C++/best-time-to-buy-and-sell-stock-with-cooldown.cpp) [Python](./Python/best-time-to-buy-and-sell-stock-with-cooldown.py) | _O(n)_ | _O(1)_ | Medium ||
 312| [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | [C++](./C++/burst-balloons.cpp) [Python](./Python/burst-balloons.py) | _O(n^3)_ | _O(n^2)_ | Medium ||
-
-## Backtracking
-  #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
------|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-17| [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)| [Python](./Python/letter-combinations-of-a-phone-number.py) | _O(n * 4^n)_ | _O(n)_ | Medium ||
-22| [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| [Python](./Python/generate-parentheses.py)| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         ||
-37| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | [Python](./Python/sudoku-solver.py) | _O((9!)^9)_  | _O(1)_          | Hard           ||
-39| [Combination Sum](https://leetcode.com/problems/combination-sum/)| [Python](./Python/combination-sum.py) | _O(k * n^k)_    | _O(k)_          | Medium         ||
-40| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)| [Python](./Python/combination-sum-ii.py)| _O(k * C(n, k))_| _O(k)_         | Medium         ||
-46| [Permutations](https://leetcode.com/problems/permutations/)| [Python](./Python/permutations.py) | _O(n * n!)_         | _O(n)_          | Medium         ||
-47| [Permutations II](https://leetcode.com/problems/permutations-ii/)| [Python](./Python/permutations-ii.py) | _O(n * n!)_   | _O(n)_          | Hard           ||
-51| [N-Queens](https://leetcode.com/problems/n-queens/)      | [Python](./Python/n-queens.py)   | _O(n!)_         | _O(n)_          | Hard           ||
-52| [N-Queens-II](https://leetcode.com/problems/n-queens-ii/)   | [Python](./Python/n-queens-ii.py) | _O(n!)_        | _O(n)_          | Hard           ||
-79| [Word Search](https://leetcode.com/problems/word-search/) | [Python](./Python/word-search.py) | _O(m * n * l)_ | _O(l)_  | Medium         ||
-93| [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [Python](./Python/restore-ip-addresses.py) | _O(1)_ | _O(1)_ | Medium         ||
-78| [Subsets](https://leetcode.com/problems/subsets/)       | [Python](./Python/subsets.py)    | _O(n * 2^n)_    | _O(1)_          | Medium         ||
-90| [Subsets II](https://leetcode.com/problems/subsets-ii/)    | [Python](./Python/subsets-ii.py) | _O(n * 2^n)_    | _O(1)_          | Medium         ||
-126| [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/)   |[Python](./Python/word-ladder-ii.py) | _O(n * d)_ | _O(d)_         | Hard         ||
-131| [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | [Python](./Python/palindrome-partitioning.py) | _O(n^2)_ ~ _O(2^n)_ | _O(n^2)_ | Medium ||
-140| [Word Break II](https://leetcode.com/problems/word-break-ii/)  | [Python](./Python/word-break-ii.py) |  _O(n^2)_      | _O(n)_       | Hard           ||
-212| [Word Search II](https://leetcode.com/problems/word-search-ii/) | [C++](./C++/word-search-ii.cpp) [Python](./Python/word-search-ii.py) | _O(m * n * l)_ | _O(l)_  | Hard         | LintCode | Trie, DFS
-216| [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)| [C++](./C++/combination-sum-iii.cpp) [Python](./Python/combination-sum-iii.py) | _O(k * C(n, k))_    | _O(k)_          | Medium         ||
-254| [Factor Combinations](https://leetcode.com/problems/factor-combinations/) | [C++](./C++/factor-combinations.cpp)  [Python](./Python/factor-combinations.py)  | _O(nlogn)_ | _O(logn)_ | Medium         |📖||
-267| [Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/) | [C++](./C++/palindrome-permutation-ii.cpp) [Python](./Python/palindrome-permutation-ii.py)  | _O(n * n!)_ |  _O(n)_ | Medium         |📖||
-291| [Word Pattern II](https://leetcode.com/problems/word-pattern-ii/) | [C++](./C++/word-pattern-ii.cpp)  [Python](./Python/word-pattern-ii.py)  | _O(n * C(n - 1, c - 1))_ | _O(n + c)_ | Hard         |📖||
-294| [Flip Game II](https://leetcode.com/problems/flip-game-ii/) | [C++](./C++/flip-game-ii.cpp) [Python](./Python/flip-game-ii.py)  | _O(n + c^2)_ | _O(c)_ | Medium         |📖| DP, Hash |
-320| [Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/) | [C++](./C++/generalized-abbreviation.cpp) [Python](./Python/generalized-abbreviation.py)  | _O(2^n)_ | _O(n)_ | Medium         |📖||
 
 ## Greedy
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
