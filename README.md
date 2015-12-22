@@ -377,7 +377,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 267| [Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/) | [C++](./C++/palindrome-permutation-ii.cpp) [Python](./Python/palindrome-permutation-ii.py)  | _O(n * n!)_ |  _O(n)_ | Medium         |📖||
 291| [Word Pattern II](https://leetcode.com/problems/word-pattern-ii/) | [C++](./C++/word-pattern-ii.cpp)  [Python](./Python/word-pattern-ii.py)  | _O(n * C(n - 1, c - 1))_ | _O(n + c)_ | Hard         |📖||
 294| [Flip Game II](https://leetcode.com/problems/flip-game-ii/) | [C++](./C++/flip-game-ii.cpp) [Python](./Python/flip-game-ii.py)  | _O(n + c^2)_ | _O(c)_ | Medium         |📖| DP, Hash |
-320| [Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/) | [C++](./C++/generalized-abbreviation.cpp) [Python](./Python/generalized-abbreviation.py)  | _O(2^n)_ | _O(n)_ | Medium         |📖||
+320| [Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/) | [C++](./C++/generalized-abbreviation.cpp) [Python](./Python/generalized-abbreviation.py)  | _O(n * 2^n)_ | _O(n)_ | Medium         |📖||
 
 ## Dynamic Programming
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
