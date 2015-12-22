@@ -1,4 +1,4 @@
-// Time:  O(2^n)
+// Time:  O(n * 2^n)
 // Space: O(n)
 
 class Solution {
