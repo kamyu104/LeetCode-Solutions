@@ -7,19 +7,20 @@ class Solution(object):
         :type word: str
         :rtype: List[str]
         """
-        def generateAbbreviationsHelper(word, i, is_prev_num, cur, res):
+        def generateAbbreviationsHelper(word, i, cur, res):
             if i == len(word):
                 res.append("".join(cur))
                 return
             cur.append(word[i])
-            generateAbbreviationsHelper(word, i + 1, False, cur, res)
+            generateAbbreviationsHelper(word, i + 1, cur, res)
             cur.pop()
-            if not is_prev_num:
+            if not cur or not cur[-1][-1].isdigit():
                 for l in xrange(1, len(word) - i + 1):
                     cur.append(str(l))
-                    generateAbbreviationsHelper(word, i + l, True, cur, res)
+                    generateAbbreviationsHelper(word, i + l, cur, res)
                     cur.pop()
 
         res, cur = [], []
-        generateAbbreviationsHelper(word, 0, False, cur, res)
+        generateAbbreviationsHelper(word, 0, cur, res)
         return res
+
