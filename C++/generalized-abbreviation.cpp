@@ -19,10 +19,10 @@ public:
         generateAbbreviationsHelper(word, i + 1, cur, res);
         cur->pop_back();
         if (cur->empty() || not isdigit(cur->back())) {
-            for (int len = 1; i + len <= word.length(); ++len) {
-                cur->append(to_string(len));
-                generateAbbreviationsHelper(word, i + len, cur, res);
-                cur->resize(cur->length() - to_string(len).length());
+            for (int l = 1; i + l <= word.length(); ++l) {
+                cur->append(to_string(l));
+                generateAbbreviationsHelper(word, i + l, cur, res);
+                cur->resize(cur->length() - to_string(l).length());
             }
         }
     }
