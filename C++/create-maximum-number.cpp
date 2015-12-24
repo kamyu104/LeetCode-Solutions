@@ -48,9 +48,9 @@ public:
     // Space: O(n)
     vector<int> deleteDigit(const vector<int>& nums) {
         vector<int> res(nums);
-        for (int j = 0; j < res.size(); ++j) {
-            if (j == res.size() - 1 || res[j] < res[j + 1]) {
-                res.erase(res.begin() + j);
+        for (int i = 0; i < res.size(); ++i) {
+            if (i == res.size() - 1 || res[i] < res[i + 1]) {
+                res.erase(res.begin() + i);
                 break;
             }
         }
