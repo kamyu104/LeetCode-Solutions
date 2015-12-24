@@ -84,15 +84,7 @@ public:
         auto first1 = vec1.begin(), last1 = vec1.end(),
              first2 = vec2.begin(), last2 = vec2.end();
         auto result = res->begin();
-        while (true) {
-            if (first1 == last1) {
-                std::copy(first2, last2, result);
-                return;
-            }
-            if (first2 == last2) {
-                std::copy(first1, last1, result);
-                return;
-            }
+        while (first1 != last1 && first2 != last2) {
             if (*first2 > *first1) {
                 *result++ = *first2++;
             } else if (*first2 < *first1) {
@@ -111,6 +103,11 @@ public:
                     }
                 }
             }
+        }
+        if (first1 == last1) {
+            std::copy(first2, last2, result);
+        } else if (first2 == last2) {
+            std::copy(first1, last1, result);
         }
     }
 };
