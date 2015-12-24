@@ -32,17 +32,17 @@ public:
     // Space: O(n)
     vector<int> maxDigit(const vector<int>& nums, int k) {
         vector<int> res;
-        int delete_cnt = nums.size() - k;
+        int drop = nums.size() - k;
         for (const auto& num : nums) {
-            while (delete_cnt > 0 && !res.empty() && res.back() < num) {
+            while (drop > 0 && !res.empty() && res.back() < num) {
                 res.pop_back();
-                --delete_cnt;
+                --drop;
             }
             res.emplace_back(num);
         }
-        while (delete_cnt > 0) {
+        while (drop > 0) {
             res.pop_back();
-            --delete_cnt;
+            --drop;
         }
         return res;
     }
