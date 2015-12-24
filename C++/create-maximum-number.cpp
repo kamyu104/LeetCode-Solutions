@@ -40,10 +40,7 @@ public:
             }
             res.emplace_back(num);
         }
-        while (drop > 0) {
-            res.pop_back();
-            --drop;
-        }
+        res.resize(k);
         return res;
     }
 
