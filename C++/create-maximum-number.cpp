@@ -8,8 +8,8 @@ public:
         vector<int> res(k);
         const int size1 = nums1.size(), size2 = nums2.size();
         vector<vector<int>> maxDigits1(k + 1), maxDigits2(k + 1);
-        getmaxDigits(nums1, max(0, k - size2), min(k, size1), &maxDigits1);  // O(k * n) time
-        getmaxDigits(nums2, max(0, k - size1), min(k, size2), &maxDigits2);  // O(k * n) time
+        getMaxDigits(nums1, max(0, k - size2), min(k, size1), &maxDigits1);  // O(k * n) time
+        getMaxDigits(nums2, max(0, k - size1), min(k, size2), &maxDigits2);  // O(k * n) time
         for (int i = max(0, k - size2); i <= min(k, size1); ++i) {  // O(k * n^2) time
             int j = k - i;
             vector<int> tmp(k);
@@ -21,7 +21,7 @@ public:
         return res;
     }
 
-    void getmaxDigits(vector<int> nums, int start, int end, vector<vector<int>> *maxDigits) {
+    void getMaxDigits(vector<int> nums, int start, int end, vector<vector<int>> *maxDigits) {
         (*maxDigits)[end] = maxDigit(nums, end);
         for (int i = end - 1; i >= start; --i) {
             (*maxDigits)[i] = deleteDigit((*maxDigits)[i + 1]);
