@@ -63,7 +63,8 @@ public:
     // Time:  O(n)
     // Space: O(1)
     bool compareVector(const vector<int>& vec1, const vector<int>& vec2) {
-        auto first1 = vec1.begin(), last1 = vec1.end(), first2 = vec2.begin(), last2 = vec2.end();
+        auto first1 = vec1.begin(), last1 = vec1.end(),
+             first2 = vec2.begin(), last2 = vec2.end();
         for (; first1 != last1 && first2 != last2; ++first1, ++first2) {
             if (*first1 > *first2) {
                 return true;
