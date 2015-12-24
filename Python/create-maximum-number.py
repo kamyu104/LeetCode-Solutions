@@ -52,9 +52,9 @@ class Solution(object):
 
         def delete_digit(nums):
             res = list(nums)
-            for j in xrange(len(res)):
-                if j == len(res) - 1 or res[j] < res[j + 1]:
-                    res = res[:j] + res[j+1:]
+            for i in xrange(len(res)):
+                if i == len(res) - 1 or res[i] < res[i + 1]:
+                    res = res[:i] + res[i+1:]
                     break
             return res
     
