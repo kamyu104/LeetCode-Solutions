@@ -7,13 +7,13 @@ public:
     vector<int> maxNumber(vector<int>& nums1, vector<int>& nums2, int k) {
         vector<int> res(k);
         const int size1 = nums1.size(), size2 = nums2.size();
-        vector<vector<int>> dp1(k + 1), dp2(k + 1);
-        getDp(nums1, max(0, k - size2), min(k, size1), dp1);  // O(k * n) time
-        getDp(nums2, max(0, k - size1), min(k, size2), dp2);  // O(k * n) time
+        vector<vector<int>> maxDigits1(k + 1), maxDigits2(k + 1);
+        getmaxDigits(nums1, max(0, k - size2), min(k, size1), &maxDigits1);  // O(k * n) time
+        getmaxDigits(nums2, max(0, k - size1), min(k, size2), &maxDigits2);  // O(k * n) time
         for (int i = max(0, k - size2); i <= min(k, size1); ++i) {  // O(k * n^2) time
             int j = k - i;
             vector<int> tmp(k);
-            merge(dp1[i].begin(), dp1[i].end(), dp2[j].begin(), dp2[j].end(), tmp.begin());
+            merge(maxDigits1[i], maxDigits2[j], &tmp);
             if (compareVector(tmp, res)) {
                 res = tmp;
             }
@@ -21,10 +21,10 @@ public:
         return res;
     }
 
-    void getDp(vector<int> nums, int start, int end, vector<vector<int>> &dp) {
-        dp[end] = maxDigit(nums, end);
+    void getmaxDigits(vector<int> nums, int start, int end, vector<vector<int>> *maxDigits) {
+        (*maxDigits)[end] = maxDigit(nums, end);
         for (int i = end - 1; i >= start; --i) {
-            dp[i] = deleteDigit(dp[i + 1]);
+            (*maxDigits)[i] = deleteDigit((*maxDigits)[i + 1]);
         }
     }
 
@@ -62,8 +62,7 @@ public:
 
     // Time:  O(n)
     // Space: O(1)
-    template <class T>
-    bool compareVector(T vec1, T vec2) {
+    bool compareVector(const vector<int>& vec1, const vector<int>& vec2) {
         auto first1 = vec1.begin(), last1 = vec1.end(), first2 = vec2.begin(), last2 = vec2.end();
         for (; first1 != last1 && first2 != last2; ++first1, ++first2) {
             if (*first1 > *first2) {
@@ -81,14 +80,18 @@ public:
 
     // Time:  O(n^2)
     // Space: O(1)
-    template <class T>
-    T merge(T first1, T last1, T first2, T last2, T result) {
+    void merge(const vector<int>& vec1, const vector<int>& vec2, vector<int> *res) {
+        auto first1 = vec1.begin(), last1 = vec1.end(),
+             first2 = vec2.begin(), last2 = vec2.end();
+        auto result = res->begin();
         while (true) {
             if (first1 == last1) {
-                return std::copy(first2,last2,result);
+                std::copy(first2, last2, result);
+                return;
             }
             if (first2 == last2) {
-                return std::copy(first1,last1,result);
+                std::copy(first1, last1, result);
+                return;
             }
             if (*first2 > *first1) {
                 *result++ = *first2++;
@@ -97,12 +100,12 @@ public:
             } else {
                 auto pos1 = first1, pos2 = first2;
                 while (true) {  // Worst case O(n^2) time.
-                    int v1 = (++pos1 != last1) ? *(pos1) : numeric_limits<int>::min();
-                    int v2 = (++pos2 != last2) ? *(pos2) : numeric_limits<int>::min();
-                    if (v1 > v2) {
+                    int val1 = (++pos1 != last1) ? *(pos1) : numeric_limits<int>::min();
+                    int val2 = (++pos2 != last2) ? *(pos2) : numeric_limits<int>::min();
+                    if (val1 > val2) {
                         *result++ = *first1++;
                         break;
-                    } else if (v1 < v2) {
+                    } else if (val1 < val2) {
                         *result++ = *first2++;
                         break;
                     }
