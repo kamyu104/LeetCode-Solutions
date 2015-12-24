@@ -21,6 +21,7 @@ public:
         return res;
     }
 
+private:
     void getMaxDigits(vector<int> nums, int start, int end, vector<vector<int>> *maxDigits) {
         (*maxDigits)[end] = maxDigit(nums, end);
         for (int i = end - 1; i >= start; --i) {
