@@ -63,7 +63,7 @@ public:
     // Time:  O(n)
     // Space: O(1)
     template <class T>
-    bool compareVector (T vec1, T vec2) {
+    bool compareVector(T vec1, T vec2) {
         auto first1 = vec1.begin(), last1 = vec1.end(), first2 = vec2.begin(), last2 = vec2.end();
         for (; first1 != last1 && first2 != last2; ++first1, ++first2) {
             if (*first1 > *first2) {
