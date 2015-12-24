@@ -1,5 +1,5 @@
 // Time:  O(k * (m + n + k)) ~ O(k * (m + n + k^2))
-// Space: O(k * (m + n))
+// Space: O(m + n + k^2)
 
 // DP + Greedy solution. (48ms)
 class Solution {
@@ -8,8 +8,8 @@ public:
         vector<int> res(k);
         const int m = nums1.size(), n = nums2.size();
         vector<vector<int>> maxDigits1(k + 1), maxDigits2(k + 1);
-        getMaxDigits(nums1, max(0, k - n), min(k, m), &maxDigits1);  // O(k * m) time
-        getMaxDigits(nums2, max(0, k - m), min(k, n), &maxDigits2);  // O(k * n) time
+        getMaxDigits(nums1, max(0, k - n), min(k, m), &maxDigits1);  // O(k * m) time, O(m + k^2) space.
+        getMaxDigits(nums2, max(0, k - m), min(k, n), &maxDigits2);  // O(k * n) time, O(n + k^2) space.
         for (int i = max(0, k - n); i <= min(k, m); ++i) {  // k * O(k) ~ k * O(k^2) time
             int j = k - i;
             vector<int> tmp(k);
