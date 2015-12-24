@@ -7,13 +7,13 @@ public:
     vector<int> maxNumber(vector<int>& nums1, vector<int>& nums2, int k) {
         vector<int> res(k);
         const int m = nums1.size(), n = nums2.size();
-        vector<vector<int>> maxDigits1(k + 1), maxDigits2(k + 1);
-        getMaxDigits(nums1, max(0, k - n), min(k, m), &maxDigits1);  // O(k * m) time, O(m + k^2) space.
-        getMaxDigits(nums2, max(0, k - m), min(k, n), &maxDigits2);  // O(k * n) time, O(n + k^2) space.
+        vector<vector<int>> max_digits1(k + 1), max_digits2(k + 1);
+        getMaxDigits(nums1, max(0, k - n), min(k, m), &max_digits1);  // O(k * m) time, O(m + k^2) space.
+        getMaxDigits(nums2, max(0, k - m), min(k, n), &max_digits2);  // O(k * n) time, O(n + k^2) space.
         for (int i = max(0, k - n); i <= min(k, m); ++i) {  // k * O(k) ~ k * O(k^2) time
             int j = k - i;
             vector<int> tmp(k);
-            merge(maxDigits1[i], maxDigits2[j], &tmp);
+            merge(max_digits1[i], max_digits2[j], &tmp);
             if (compareVector(tmp, res)) {
                 res = tmp;
             }
