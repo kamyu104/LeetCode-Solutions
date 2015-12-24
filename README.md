@@ -427,7 +427,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 134| [Gas Station](https://leetcode.com/problems/gas-station/)| [Python](./Python/gas-station.py)   | _O(n)_          | _O(1)_          | Medium         ||
 135| [Candy](https://leetcode.com/problems/candy/)| [Python](./Python/candy.py) | _O(n)_ | _O(n)_ | Hard ||
 316| [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) | [C++](./C++/remove-duplicate-letters.cpp) [Python](./Python/remove-duplicate-letters.py) | _O(n)_| _O(k)_| Medium || Stack |
-321| [Create Maximum Number](https://leetcode.com/problems/create-maximum-number/)| [C++](./C++/create-maximum-number.cpp) [Python](./Python/create-maximum-number.py) | _O(k * (m + n + k))_ ~ _O(k * (m + n + k^2))_| _O(k^2)_ | Hard ||
+321| [Create Maximum Number](https://leetcode.com/problems/create-maximum-number/)| [C++](./C++/create-maximum-number.cpp) [Python](./Python/create-maximum-number.py) | _O(k * (m + n + k))_ ~ _O(k * (m + n + k^2))_| _O(m + n + k^2)_ | Hard ||
 
 ---
 ##Design
