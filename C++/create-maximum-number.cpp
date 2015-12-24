@@ -1,4 +1,4 @@
-// Time:  O(k * (m + n + k^2))
+// Time:  O(k * (m + n + k)) ~ O(k * (m + n + k^2))
 // Space: O(k * (m + n))
 
 // DP + Greedy solution. (48ms)
@@ -10,7 +10,7 @@ public:
         vector<vector<int>> maxDigits1(k + 1), maxDigits2(k + 1);
         getMaxDigits(nums1, max(0, k - n), min(k, m), &maxDigits1);  // O(k * m) time
         getMaxDigits(nums2, max(0, k - m), min(k, n), &maxDigits2);  // O(k * n) time
-        for (int i = max(0, k - n); i <= min(k, m); ++i) {  // k * O(k^2) time
+        for (int i = max(0, k - n); i <= min(k, m); ++i) {  // k * O(k) ~ k * O(k^2) time
             int j = k - i;
             vector<int> tmp(k);
             merge(maxDigits1[i], maxDigits2[j], &tmp);
@@ -79,7 +79,7 @@ public:
         }
     }
 
-    // Time:  O(k^2)
+    // Time:  O(k) ~ O(k^2)
     // Space: O(1)
     void merge(const vector<int>& vec1, const vector<int>& vec2, vector<int> *res) {
         auto first1 = vec1.begin(), last1 = vec1.end(),
@@ -92,7 +92,7 @@ public:
                 *result++ = *first1++;
             } else {
                 auto pos1 = first1, pos2 = first2;
-                while (true) {  // Worst case O(k^2) time.
+                while (true) {  // O(1) ~ O(k) time.
                     int val1 = (++pos1 != last1) ? *(pos1) : numeric_limits<int>::min();
                     int val2 = (++pos2 != last2) ? *(pos2) : numeric_limits<int>::min();
                     if (val1 > val2) {
