@@ -1,16 +1,16 @@
-// Time:  O(k * n^2)
-// Space: O(k * n)
+// Time:  O(k * (m + n + k^2))
+// Space: O(k * (m + n))
 
 // DP + Greedy solution. (48ms)
 class Solution {
 public:
     vector<int> maxNumber(vector<int>& nums1, vector<int>& nums2, int k) {
         vector<int> res(k);
-        const int size1 = nums1.size(), size2 = nums2.size();
+        const int m = nums1.size(), n = nums2.size();
         vector<vector<int>> maxDigits1(k + 1), maxDigits2(k + 1);
-        getMaxDigits(nums1, max(0, k - size2), min(k, size1), &maxDigits1);  // O(k * n) time
-        getMaxDigits(nums2, max(0, k - size1), min(k, size2), &maxDigits2);  // O(k * n) time
-        for (int i = max(0, k - size2); i <= min(k, size1); ++i) {  // O(k * n^2) time
+        getMaxDigits(nums1, max(0, k - n), min(k, m), &maxDigits1);  // O(k * m) time
+        getMaxDigits(nums2, max(0, k - m), min(k, n), &maxDigits2);  // O(k * n) time
+        for (int i = max(0, k - n); i <= min(k, m); ++i) {  // k * O(k^2) time
             int j = k - i;
             vector<int> tmp(k);
             merge(maxDigits1[i], maxDigits2[j], &tmp);
@@ -60,7 +60,7 @@ public:
         return res;
     }
 
-    // Time:  O(n)
+    // Time:  O(k)
     // Space: O(1)
     bool compareVector(const vector<int>& vec1, const vector<int>& vec2) {
         auto first1 = vec1.begin(), last1 = vec1.end(),
@@ -79,7 +79,7 @@ public:
         }
     }
 
-    // Time:  O(n^2)
+    // Time:  O(k^2)
     // Space: O(1)
     void merge(const vector<int>& vec1, const vector<int>& vec2, vector<int> *res) {
         auto first1 = vec1.begin(), last1 = vec1.end(),
@@ -92,7 +92,7 @@ public:
                 *result++ = *first1++;
             } else {
                 auto pos1 = first1, pos2 = first2;
-                while (true) {  // Worst case O(n^2) time.
+                while (true) {  // Worst case O(k^2) time.
                     int val1 = (++pos1 != last1) ? *(pos1) : numeric_limits<int>::min();
                     int val2 = (++pos2 != last2) ? *(pos2) : numeric_limits<int>::min();
                     if (val1 > val2) {
