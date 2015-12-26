@@ -67,5 +67,5 @@ class Solution(object):
         get_max_digits(nums1, max(0, k - n), min(k, m), max_digits1)
         get_max_digits(nums2, max(0, k - m), min(k, n), max_digits2)
 
-        return max(merge(max_digits1[i], max_digits2[k-i])
+        return max(merge(max_digits1[i], max_digits2[k-i]) \
                    for i in xrange(max(0, k - n), min(k, m) + 1))
