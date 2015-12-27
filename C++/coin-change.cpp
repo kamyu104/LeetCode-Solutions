@@ -1,6 +1,7 @@
 // Time:  O(n * k), n is the number of coins, k is the amount of money
 // Space: O(k)
 
+// DP solution. (164ms)
 class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
