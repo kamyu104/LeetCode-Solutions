@@ -14,22 +14,21 @@ public:
 private:
     class UnionFind {
         public:
-            UnionFind(const int n) : set(n) {
-                iota(set.begin(), set.end(), 0);
-                count_ = n;
+            UnionFind(const int n) : set_(n), count_(n) {
+                iota(set_.begin(), set_.end(), 0);
             }
 
             int find_set(int x) {
-               if (set[x] != x) {
-                   set[x] = find_set(set[x]);  // Path compression.
+               if (set_[x] != x) {
+                   set_[x] = find_set(set_[x]);  // Path compression.
                }
-               return set[x];
+               return set_[x];
             }
 
             void union_set(const int x, const int y) {
                 int x_root = find_set(x), y_root = find_set(y);
                 if (x_root != y_root) {
-                    set[min(x_root, y_root)] = max(x_root, y_root);
+                    set_[min(x_root, y_root)] = max(x_root, y_root);
                     --count_;
                 }
             }
@@ -39,7 +38,7 @@ private:
             }
 
         private:
-            vector<int> set;
+            vector<int> set_;
             int count_;
     };
 };
