@@ -18,7 +18,7 @@ private:
                 iota(set_.begin(), set_.end(), 0);
             }
 
-            int find_set(int x) {
+            int find_set(const int x) {
                if (set_[x] != x) {
                    set_[x] = find_set(set_[x]);  // Path compression.
                }
