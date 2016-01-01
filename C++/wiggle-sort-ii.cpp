@@ -8,10 +8,10 @@ public:
         const int n = nums.size();
         int mid = (n - 1) / 2;
         nth_element(nums.begin(), nums.begin() + mid, nums.end());
-        dutchFlagSort(nums, nums[mid]);
+        reversedDutchFlagSortWithVI(nums, nums[mid]);
     }
 
-    void dutchFlagSort(vector<int>& nums, int val) {
+    void reversedDutchFlagSortWithVI(vector<int>& nums, int val) {
         #define Nums(i) nums[(1 + 2 * (i)) % N]
         const int N = nums.size() % 2 ? nums.size() : nums.size() + 1;
         for (int i = 0, j = 0, n = nums.size() - 1; j <= n;) {
