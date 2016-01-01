@@ -25,7 +25,7 @@ class Solution:
         nums[pivot_idx], nums[right] = nums[right], nums[pivot_idx]
         for i in xrange(left, right):
             if nums[i] > pivot_value:
-                nums[i], nums[new_pivot_idx] =  nums[new_pivot_idx], nums[i]
+                nums[i], nums[new_pivot_idx] = nums[new_pivot_idx], nums[i]
                 new_pivot_idx += 1
             
         nums[right], nums[new_pivot_idx] = nums[new_pivot_idx], nums[right]
