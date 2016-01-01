@@ -20,7 +20,7 @@ public:
             } else if (Nums(j) < val) {
                 swap(Nums(j), Nums(n--));
             } else {
-                j++;
+                ++j;
             }
         }
     }
