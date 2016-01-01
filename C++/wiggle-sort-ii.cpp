@@ -13,7 +13,8 @@ public:
 
     void dutchFlagSort(vector<int>& nums, int val) {
         #define Nums(i) nums[(1 + 2 * (i)) % N]
-        for (int i = 0, j = 0, n = nums.size() - 1, N = nums.size() +  n % 2; j <= n;) {
+        const int N = nums.size() % 2 ? nums.size() : nums.size() + 1;
+        for (int i = 0, j = 0, n = nums.size() - 1; j <= n;) {
             if (Nums(j) > val) {
                 swap(Nums(i++), Nums(j++));
             } else if (Nums(j) < val) {
