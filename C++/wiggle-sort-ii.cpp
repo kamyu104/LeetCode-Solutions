@@ -12,8 +12,8 @@ public:
     }
 
     void reversedDutchFlagSortWithVI(vector<int>& nums, int val) {
+        const int N = nums.size() / 2 * 2 + 1;
         #define Nums(i) nums[(1 + 2 * (i)) % N]
-        const int N = nums.size() % 2 ? nums.size() : nums.size() + 1;
         for (int i = 0, j = 0, n = nums.size() - 1; j <= n;) {
             if (Nums(j) > val) {
                 swap(Nums(i++), Nums(j++));
