@@ -13,6 +13,7 @@
 # Follow Up:
 # Can you do it in O(n) time and/or in-place with O(1) extra space?
 
+# Sorting and reoder solution. (92ms)
 class Solution(object):
     def wiggleSort(self, nums):
         """
