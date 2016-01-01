@@ -6,8 +6,8 @@ class Solution {
 public:
     void wiggleSort(vector<int>& nums) {
         int mid = (nums.size() - 1) / 2;
-        nth_element(nums.begin(), nums.begin() + mid, nums.end());  // O(n) ~ O(n^2)
-        reversedDutchFlagSortWithVI(nums, nums[mid]);
+        nth_element(nums.begin(), nums.begin() + mid, nums.end());  // O(n) ~ O(n^2) time
+        reversedDutchFlagSortWithVI(nums, nums[mid]);  // O(n) time, O(1) space
     }
 
     void reversedDutchFlagSortWithVI(vector<int>& nums, int val) {
@@ -32,10 +32,10 @@ class Solution2 {
 public:
     void wiggleSort(vector<int>& nums) {
         int mid = (nums.size() - 1) / 2;
-        nth_element(nums.begin(), nums.begin() + mid, nums.end());  // O(n) ~ O(n^2)
-        dutchFlagSort(nums, nums[mid]);
+        nth_element(nums.begin(), nums.begin() + mid, nums.end());  // O(n) ~ O(n^2) time
+        dutchFlagSort(nums, nums[mid]);  // O(n) time, O(1) space
 
-        vector<int> res(nums.size());
+        vector<int> res(nums.size());  // O(n) space
         for (int i = 0, smallEnd = mid;  i < nums.size(); i += 2, --smallEnd) {
             res[i] = nums[smallEnd];
         }
@@ -65,8 +65,8 @@ class Solution3 {
 public:
     void wiggleSort(vector<int>& nums) {
         int mid = (nums.size() - 1) / 2;
-        sort(nums.begin(), nums.end());
-        reversedDutchFlagSortWithVI(nums, nums[mid]);
+        sort(nums.begin(), nums.end());  // O(nlogn) time
+        reversedDutchFlagSortWithVI(nums, nums[mid]);  // O(n) time, O(1) space
     }
 
     void reversedDutchFlagSortWithVI(vector<int>& nums, int val) {
@@ -91,8 +91,8 @@ class Solution4 {
 public:
     void wiggleSort(vector<int>& nums) {
         int mid = (nums.size() - 1) / 2;
-        sort(nums.begin(), nums.end());
-        vector<int> res(nums.size());
+        sort(nums.begin(), nums.end());  // O(nlogn) time
+        vector<int> res(nums.size());  // O(n) space
         for (int i = 0, smallEnd = mid;  i < nums.size(); i += 2, --smallEnd) {
             res[i] = nums[smallEnd];
         }
