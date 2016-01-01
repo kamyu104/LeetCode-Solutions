@@ -1,4 +1,4 @@
-// Time:  O(n)
+// Time:  O(n) ~ O(n^2)
 // Space: O(1)
 
 // Dutch flag sorting with virtual index solution.
@@ -25,7 +25,7 @@ public:
     }
 };
 
-// Time:  O(n)
+// Time:  O(n) ~ O(n^2)
 // Space: O(n)
 // Dutch flag sorting solution.
 class Solution2 {
