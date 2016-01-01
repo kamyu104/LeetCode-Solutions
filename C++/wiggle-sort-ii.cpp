@@ -59,9 +59,35 @@ public:
 };
 
 // Time:  O(nlogn)
+// Space: O(1)
+// Sorting and Dutch flag sorting with virtual index solution. (64ms)
+class Solution3 {
+public:
+    void wiggleSort(vector<int>& nums) {
+        int mid = (nums.size() - 1) / 2;
+        sort(nums.begin(), nums.end());
+        reversedDutchFlagSortWithVI(nums, nums[mid]);
+    }
+
+    void reversedDutchFlagSortWithVI(vector<int>& nums, int val) {
+        const int N = nums.size() / 2 * 2 + 1;
+        #define Nums(i) nums[(1 + 2 * (i)) % N]
+        for (int i = 0, j = 0, n = nums.size() - 1; j <= n;) {
+            if (Nums(j) > val) {
+                swap(Nums(i++), Nums(j++));
+            } else if (Nums(j) < val) {
+                swap(Nums(j), Nums(n--));
+            } else {
+                ++j;
+            }
+        }
+    }
+};
+
+// Time:  O(nlogn)
 // Space: O(n)
 // Sorting and reorder solution. (64ms)
-class Solution3 {
+class Solution4 {
 public:
     void wiggleSort(vector<int>& nums) {
         int mid = (nums.size() - 1) / 2;
