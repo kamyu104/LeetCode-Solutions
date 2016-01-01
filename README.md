@@ -80,7 +80,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | [Python](./Python/majority-element.py) | _O(n)_ | _O(1)_          | Easy           |
 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/)   | [Python](./Python/rotate-array.py) | _O(n)_        | _O(1)_         | Easy           ||
 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Python] (./Python/minimum-size-subarray-sum.py) | _O(n)_ | _O(1)_ |  Medium | | Binary Search
-215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [C++] (./C++/kth-largest-element-in-an-array.cpp) [Python] (./Python/kth-largest-element-in-an-array.py)| _O(n)_ | _O(1)_ |  Medium | EPI|
+215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [C++] (./C++/kth-largest-element-in-an-array.cpp) [Python] (./Python/kth-largest-element-in-an-array.py)| _O(n)_ ~ _O(n^2)_ | _O(1)_ |  Medium | EPI|
 228 | [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | [C++] (./C++/summary-ranges.cpp) [Python] (./Python/summary-ranges.py)| _O(n)_ | _O(1)_ | Easy | |
 229 | [Majority Element II](https://leetcode.com/problems/majority-element-ii/) | [C++](./C++/majority-element-ii.cpp)  [Python](./Python/majority-element-ii.py) | _O(n)_ | _O(1)_          | Medium           | |
 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [C++](./C++/product-of-array-except-self.cpp)  [Python](./Python/product-of-array-except-self.py) | _O(n)_ | _O(1)_          | Medium           | LintCode |
