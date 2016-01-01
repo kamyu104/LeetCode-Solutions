@@ -5,8 +5,7 @@
 class Solution {
 public:
     void wiggleSort(vector<int>& nums) {
-        const int n = nums.size();
-        int mid = (n - 1) / 2;
+        int mid = (nums.size() - 1) / 2;
         nth_element(nums.begin(), nums.begin() + mid, nums.end());
         reversedDutchFlagSortWithVI(nums, nums[mid]);
     }
