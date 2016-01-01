@@ -20,8 +20,8 @@ class Solution(object):
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         nums.sort()
-        half = len(nums[::2]) - 1
-        nums[::2], nums[1::2] = nums[half::-1], nums[:half:-1]
+        med = (len(nums) - 1) / 2
+        nums[::2], nums[1::2] = nums[med::-1], nums[:med:-1]
 
 # Time:  O(n) ~ O(n^2)
 # Space: O(1)
