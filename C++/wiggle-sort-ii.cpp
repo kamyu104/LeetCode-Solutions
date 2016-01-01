@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// Using virtual index solution.
+// Dutch flag sorting with virtual index solution.
 class Solution {
 public:
     void wiggleSort(vector<int>& nums) {
@@ -28,6 +28,7 @@ public:
 
 // Time:  O(n)
 // Space: O(n)
+// Dutch flag sorting solution.
 class Solution2 {
 public:
     void wiggleSort(vector<int>& nums) {
