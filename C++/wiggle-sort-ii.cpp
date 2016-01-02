@@ -1,16 +1,16 @@
 // Time:  O(n) ~ O(n^2)
 // Space: O(1)
 
-// Dutch flag sorting with virtual index solution. (44ms)
+// Tri Partition (aka Dutch National Flag Problem) with virtual index solution. (44ms)
 class Solution {
 public:
     void wiggleSort(vector<int>& nums) {
         int mid = (nums.size() - 1) / 2;
         nth_element(nums.begin(), nums.begin() + mid, nums.end());  // O(n) ~ O(n^2) time
-        reversedDutchFlagSortWithVI(nums, nums[mid]);  // O(n) time, O(1) space
+        reversedTriPartitionWithVI(nums, nums[mid]);  // O(n) time, O(1) space
     }
 
-    void reversedDutchFlagSortWithVI(vector<int>& nums, int val) {
+    void reversedTriPartitionWithVI(vector<int>& nums, int val) {
         const int N = nums.size() / 2 * 2 + 1;
         #define Nums(i) nums[(1 + 2 * (i)) % N]
         for (int i = 0, j = 0, n = nums.size() - 1; j <= n;) {
@@ -27,13 +27,13 @@ public:
 
 // Time:  O(n) ~ O(n^2)
 // Space: O(n)
-// Dutch flag sorting solution. (64ms)
+// Tri Partition (aka Dutch National Flag Problem) solution. (64ms)
 class Solution2 {
 public:
     void wiggleSort(vector<int>& nums) {
         int mid = (nums.size() - 1) / 2;
         nth_element(nums.begin(), nums.begin() + mid, nums.end());  // O(n) ~ O(n^2) time
-        dutchFlagSort(nums, nums[mid]);  // O(n) time, O(1) space
+        TriPartition(nums, nums[mid]);  // O(n) time, O(1) space
 
         vector<int> res(nums.size());  // O(n) space
         for (int i = 0, smallEnd = mid;  i < nums.size(); i += 2, --smallEnd) {
@@ -45,7 +45,7 @@ public:
         nums = res;
     }
 
-    void dutchFlagSort(vector<int>& nums, int val) {
+    void TriPartition(vector<int>& nums, int val) {
         for (int i = 0, j = 0, n = nums.size() - 1; j <= n;) {
             if (nums[j] < val) {
                 swap(nums[i++], nums[j++]);
@@ -60,16 +60,16 @@ public:
 
 // Time:  O(nlogn)
 // Space: O(1)
-// Sorting and Dutch flag sorting with virtual index solution. (64ms)
+// Sorting and Tri Partition (aka Dutch National Flag Problem) with virtual index solution. (64ms)
 class Solution3 {
 public:
     void wiggleSort(vector<int>& nums) {
         int mid = (nums.size() - 1) / 2;
         sort(nums.begin(), nums.end());  // O(nlogn) time
-        reversedDutchFlagSortWithVI(nums, nums[mid]);  // O(n) time, O(1) space
+        reversedTriPartitionWithVI(nums, nums[mid]);  // O(n) time, O(1) space
     }
 
-    void reversedDutchFlagSortWithVI(vector<int>& nums, int val) {
+    void reversedTriPartitionWithVI(vector<int>& nums, int val) {
         const int N = nums.size() / 2 * 2 + 1;
         #define Nums(i) nums[(1 + 2 * (i)) % N]
         for (int i = 0, j = 0, n = nums.size() - 1; j <= n;) {
