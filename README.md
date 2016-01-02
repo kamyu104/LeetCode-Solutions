@@ -245,7 +245,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 21| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)| [Python](./Python/merge-two-sorted-lists.py) | _O(n)_ | _O(1)_ | Easy         ||
 56| [Merge Intervals](https://leetcode.com/problems/merge-intervals/)| [Python](./Python/merge-intervals.py) | _O(nlogn)_  | _O(1)_        | Hard           ||
 57| [Insert Interval](https://leetcode.com/problems/insert-interval/)| [Python](./Python/insert-interval.py) | _O(n)_    | _O(1)_          | Hard           ||
-75| [Sort Colors](https://leetcode.com/problems/sort-colors/)   | [Python](./Python/sort-colors.py) | _O(n)_         | _O(1)_          | Medium         ||
+75| [Sort Colors](https://leetcode.com/problems/sort-colors/)   | [Python](./Python/sort-colors.py) | _O(n)_         | _O(1)_          | Medium         | Tri Partition |
 88| [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)| [Python](./Python/merge-sorted-array.py) | _O(n)_ | _O(1)_       | Easy           ||
 147| [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)|[Python](./Python/insertion-sort-list.py) | _O(n^2)_ | _O(1)_    | Medium         ||
 148| [Sort List](https://leetcode.com/problems/sort-list/)     | [Python](./Python/sort-list.py)  | _O(nlogn)_      | _O(logn)_       | Medium         ||
@@ -256,7 +256,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 253| [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | [C++](./C++/meeting-rooms-ii.cpp) [Python](./Python/meeting-rooms-ii.py) | _O(nlogn)_   | _O(n)_        | Medium         |📖| |
 274| [H-Index](https://leetcode.com/problems/h-index/) | [C++](./C++/h-index.cpp)  [Python](./Python/h-index.py)  | _O(n)_ | _O(n)_ | Medium         || Counting Sort |
 280| [Wiggle Sort](https://leetcode.com/problems/wiggle-sort/) | [C++](./C++/wiggle-sort.cpp) [Python](./Python/wiggle-sort.py) | _O(n)_   | _O(1)_        | Medium         |📖| |
-324| [Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/) | [C++](./C++/wiggle-sort-ii.cpp) [Python](./Python/wiggle-sort-ii.py) | _O(n)_  ~ _O(n^2)_ | _O(1)_        | Medium         | variant of [Sort Colors](https://leetcode.com/problems/sort-colors/) | |
+324| [Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/) | [C++](./C++/wiggle-sort-ii.cpp) [Python](./Python/wiggle-sort-ii.py) | _O(n)_  ~ _O(n^2)_ | _O(1)_        | Medium         | variant of [Sort Colors](https://leetcode.com/problems/sort-colors/) | Tri Partition |
 
 ## Two Pointers
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
