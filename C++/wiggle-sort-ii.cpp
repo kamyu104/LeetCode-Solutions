@@ -33,7 +33,7 @@ public:
     void wiggleSort(vector<int>& nums) {
         int mid = (nums.size() - 1) / 2;
         nth_element(nums.begin(), nums.begin() + mid, nums.end());  // O(n) ~ O(n^2) time
-        TriPartition(nums, nums[mid]);  // O(n) time, O(1) space
+        triPartition(nums, nums[mid]);  // O(n) time, O(1) space
 
         vector<int> res(nums.size());  // O(n) space
         for (int i = 0, smallEnd = mid;  i < nums.size(); i += 2, --smallEnd) {
@@ -45,7 +45,7 @@ public:
         nums = res;
     }
 
-    void TriPartition(vector<int>& nums, int val) {
+    void triPartition(vector<int>& nums, int val) {
         for (int i = 0, j = 0, n = nums.size() - 1; j <= n;) {
             if (nums[j] < val) {
                 swap(nums[i++], nums[j++]);
