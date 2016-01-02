@@ -26,7 +26,7 @@ class Solution(object):
 
 # Time:  O(n) ~ O(n^2)
 # Space: O(1)
-# Dutch flag sorting with virtual index solution. (TLE)
+# Tri Partition (aka Dutch National Flag Problem) with virtual index solution. (TLE)
 from random import randint
 class Solution2(object):
     def wiggleSort(self, nums):
@@ -57,7 +57,7 @@ class Solution2(object):
             nums[right], nums[new_pivot_idx] = nums[new_pivot_idx], nums[right]
             return new_pivot_idx
 
-        def reversedDutchFlagSortWithVI(nums, val):
+        def reversedTriPartitionWithVI(nums, val):
             def idx(i, N):
                 return (1 + 2 * (i)) % N
 
@@ -76,4 +76,4 @@ class Solution2(object):
 
         mid = (len(nums) - 1) / 2
         findKthLargest(nums, mid + 1)
-        reversedDutchFlagSortWithVI(nums, nums[mid])
+        reversedTriPartitionWithVI(nums, nums[mid])
