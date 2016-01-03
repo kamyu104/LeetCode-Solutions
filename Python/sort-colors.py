@@ -19,21 +19,27 @@
 # Could you come up with an one-pass algorithm using only constant space?
 #
 
-class Solution:
-    # @param A a list of integers
-    # @return nothing, sort in place
-    def sortColors(self, A):
-        i, last_zero, first_two = 0, -1, len(A)
-        
-        while i < first_two:
-            if A[i] == 0:
-                last_zero += 1
-                A[last_zero], A[i] = A[i], A[last_zero]
-            elif A[i] == 2:
-                first_two -= 1
-                A[first_two], A[i] = A[i], A[first_two]
-                i -= 1
-            i += 1
+class Solution(object):
+    def sortColors(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
+        def triPartition(nums, target):
+            i, j, n = 0, 0, len(nums) - 1
+            
+            while j <= n:
+                if nums[j] < target:
+                    nums[i], nums[j] = nums[j], nums[i]
+                    i += 1
+                    j += 1
+                elif nums[j] > target:
+                    nums[j], nums[n] = nums[n], nums[j]
+                    n -= 1
+                else:
+                    j += 1
+
+        triPartition(nums, 1)
 
 if __name__ == "__main__":
     A = [2, 1, 1, 0, 0, 2]
