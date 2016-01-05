@@ -14,7 +14,7 @@ public:
                 max_len = max(max_len, i - sums[cur_sum - k]);
             }
             if (sums.find(cur_sum) == sums.end()) {
-                sums[cur_sum] = i;
+                sums[cur_sum] = i;  // Only keep the smallest index.
             }
         }
         return max_len;
