@@ -29,8 +29,7 @@ public:
                             ++j;
                         } else {
                             ans.push_back({nums[i], nums[j], nums[k]});
-                            ++j;
-                            --k;
+                            ++j, --k;
                         }
                     }
                 }
