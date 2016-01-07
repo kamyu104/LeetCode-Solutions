@@ -58,8 +58,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Array
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-15 | [3 Sum](https://leetcode.com/problems/3sum/)         | [Python](./Python/3sum.py)       | _O(n^2)_        | _O(1)_          | Medium         ||
-16 | [3 Sum Closest](https://leetcode.com/problems/3sum-closest/) | [Python](./Python/3sum-closest.py)| _O(n^2)_       | _O(1)_          | Medium         ||
+15 | [3 Sum](https://leetcode.com/problems/3sum/)         | [C++](./C++/3sum.cpp) [Python](./Python/3sum.py)       | _O(n^2)_        | _O(1)_          | Medium         ||
+16 | [3 Sum Closest](https://leetcode.com/problems/3sum-closest/) | [Python](./Python/3sum-closest.py) [C++](./C++/3sum-closest.cpp)| _O(n^2)_       | _O(1)_          | Medium         ||
 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)| [Python](./Python/remove-duplicates-from-sorted-array.py) | _O(n)_       | _O(1)_         | Easy           ||
 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [Python](./Python/remove-element.py) | _O(n)_      | _O(1)_         | Easy           ||
 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/)| [Python](./Python/next-permutation.py) | _O(n)_  | _O(1)_          | Medium         || Tricky
