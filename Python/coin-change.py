@@ -26,7 +26,7 @@ class Solution(object):
         :type amount: int
         :rtype: int
         """
-        INF = 0x7ffffffe  # Using float("int") would be slower.
+        INF = 0x7fffffff  # Using float("int") would be slower.
         amounts = [INF] * (amount + 1)
         amounts[0] = 0
         for i in xrange(amount + 1):
