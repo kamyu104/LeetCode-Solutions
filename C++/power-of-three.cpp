@@ -7,8 +7,10 @@ public:
         if (n <= 0) {
             return 0;
         }
-
-        const int max_pow3 = log(numeric_limits<int>::max()) / log(3);
-        return static_cast<int>(pow(3, max_pow3)) % n == 0;
+        return max_pow3_ % n == 0;
     }
+
+private:
+    const int max_log3_ = log(numeric_limits<int>::max()) / log(3);
+    const int max_pow3_ = pow(3, max_log3_);
 };
