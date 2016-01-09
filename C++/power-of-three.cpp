@@ -4,10 +4,7 @@
 class Solution {
 public:
     bool isPowerOfThree(int n) {
-        if (n <= 0) {
-            return 0;
-        }
-        return max_pow3_ % n == 0;
+        return n > 0 && max_pow3_ % n == 0;
     }
 
 private:
