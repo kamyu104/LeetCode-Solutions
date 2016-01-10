@@ -13,7 +13,7 @@ public:
     }
 
     int countAndMergeSort(vector<long long> *sums, int start, int end, int lower, int upper) {
-        if (end - start <= 1) {  // The size of range [start, end) less than 2 is always with count 0.
+        if (end - start <= 1) {  // The number of range [start, end) of which size is less than 2 is always 0.
             return 0;
         }
         int mid = start + (end - start) / 2;
