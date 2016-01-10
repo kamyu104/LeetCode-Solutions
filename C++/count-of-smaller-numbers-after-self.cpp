@@ -146,7 +146,7 @@ public:
         countAndMergeSort(num_idxs, start, mid, counts);
         countAndMergeSort(num_idxs, mid + 1, end, counts);
 
-        int j = mid + 1, k = mid + 1, r = mid + 1;
+        int r = mid + 1;
         vector<pair<int, int>> tmp;
         for (int i = start; i <= mid; ++i) {
             // Merge the two sorted arrays into tmp.
