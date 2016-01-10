@@ -126,7 +126,7 @@ private:
 // Time:  O(nlogn)
 // Space: O(n)
 // Divide and Conquer solution. (80ms)
-class Solution {
+class Solution3 {
 public:
     vector<int> countSmaller(vector<int>& nums) {
         vector<int> counts(nums.size());
