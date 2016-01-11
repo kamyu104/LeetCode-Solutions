@@ -16,8 +16,44 @@
 # To the right of 1 there is 0 smaller element.
 # Return the array [2, 1, 1, 0].
 
-# BIT solution.
+# Divide and Conquer solution.
 class Solution(object):
+    def countSmaller(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        def countAndMergeSort(sums, start, end, counts):
+            if end - start <= 0:  # The size of range [start, end] less than 2 is always with count 0.
+                return 0
+
+            mid = start + (end - start) / 2
+            countAndMergeSort(num_idxs, start, mid, counts)
+            countAndMergeSort(num_idxs, mid + 1, end, counts)
+            r = mid + 1
+            tmp = []
+            for i in xrange(start, mid + 1):
+                # Merge the two sorted arrays into tmp.
+                while r <= end and num_idxs[r][0] < num_idxs[i][0]:
+                    tmp.append(num_idxs[r])
+                    r += 1
+                tmp.append(num_idxs[i])
+                counts[num_idxs[i][1]] += r - (mid + 1)
+
+            # Copy tmp back to num_idxs
+            num_idxs[start:start+len(tmp)] = tmp
+
+        num_idxs = []
+        counts = [0] * len(nums)
+        for i, num in enumerate(nums):
+            num_idxs.append((num, i))
+        countAndMergeSort(num_idxs, 0, len(num_idxs) - 1, counts)
+        return counts
+
+# Time:  O(nlogn)
+# Space: O(n)
+# BIT solution.
+class Solution2(object):
     def countSmaller(self, nums):
         """
         :type nums: List[int]
@@ -64,7 +100,7 @@ class Solution(object):
 # Time:  O(nlogn)
 # Space: O(n)
 # BST solution.
-class Solution2(object):
+class Solution3(object):
     def countSmaller(self, nums):
         """
         :type nums: List[int]
