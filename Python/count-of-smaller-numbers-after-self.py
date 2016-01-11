@@ -23,7 +23,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        def countAndMergeSort(sums, start, end, counts):
+        def countAndMergeSort(num_idxs, start, end, counts):
             if end - start <= 0:  # The size of range [start, end] less than 2 is always with count 0.
                 return 0
 
