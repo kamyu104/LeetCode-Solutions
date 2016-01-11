@@ -70,7 +70,7 @@ class Solution2(object):
 
             mid = start + (end - start) / 2
             count = countAndMergeSort(sums, start, mid, lower, upper) + \
-                    countAndMergeSort(sums, mid + 1, end, lower, upper);
+                    countAndMergeSort(sums, mid + 1, end, lower, upper)
             j, k, r = mid + 1, mid + 1, mid + 1
             tmp = []
             for i in xrange(start, mid + 1):
@@ -94,4 +94,4 @@ class Solution2(object):
         sums = [0] * (len(nums) + 1)
         for i in xrange(len(nums)):
             sums[i + 1] = sums[i] + nums[i]
-        return countAndMergeSort(sums, 0, len(sums) - 1, lower, upper);
+        return countAndMergeSort(sums, 0, len(sums) - 1, lower, upper)
