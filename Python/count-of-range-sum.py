@@ -29,7 +29,7 @@ class Solution(object):
                 return 0
             mid = start + (end - start) / 2
             count = countAndMergeSort(sums, start, mid, lower, upper) + \
-                    countAndMergeSort(sums, mid, end, lower, upper);
+                    countAndMergeSort(sums, mid, end, lower, upper)
             j, k, r = mid, mid, mid
             tmp = []
             for i in xrange(start, mid):
