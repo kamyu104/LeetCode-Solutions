@@ -23,7 +23,7 @@ class Solution:
         while left < right:
             mid = left + (right - left) / 2
             j = k - 1 - mid
-            if 0 <= j and j < n and A[mid] >= B[j]:
+            if 0 <= j < n and A[mid] >= B[j]:
                 right = mid
             else:
                 left = mid + 1
