@@ -14,8 +14,8 @@ public:
 
     int findKthInTwoSortedArrays(const vector<int>& A, const vector<int>& B,
                                  int k) {
-        int m = A.size();
-        int n = B.size();
+        const int m = A.size();
+        const int n = B.size();
 
         // Make sure m is the smaller one.
         if (m > n) {
