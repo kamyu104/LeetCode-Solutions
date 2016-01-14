@@ -10,7 +10,6 @@ public:
                 nums[++last] = num;
             }
         }
-
         return last + 1;
     }
 };
