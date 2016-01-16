@@ -13,7 +13,7 @@ class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
         if (head) {
-            for (ListNode *odd_tail = head, *cur = odd_tail->next;
+            for (ListNode *odd_tail = head, *cur = head->next;
                  cur && cur->next;
                  cur = cur->next) {
 
