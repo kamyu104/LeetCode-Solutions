@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-327%20%2F%20327-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-328%20%2F%20328-ff69b4.svg)
 
-Up to date (2016-01-10), there are `310` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2016-01-16), there are `311` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `327` questions.
+Here is the classification of all `328` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -134,6 +134,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 234| [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)| [C++](./C++/palindrome-linked-list.cpp) [Python](./Python/palindrome-linked-list.py) | _O(n)_       | _O(1)_         | Easy         ||
 237| [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)| [C++](./C++/delete-node-in-a-linked-list.cpp) [Python](./Python/delete-node-in-a-linked-list.py) | _O(1)_       | _O(1)_         | Easy         | LintCode |
 242| [Valid Anagram](https://leetcode.com/problems/valid-anagram/)| [C++](./C++/valid-anagram.cpp) [Python](./Python/valid-anagram.py) | _O(n)_       | _O(1)_         | Easy         | LintCode |
+328| [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)| [C++](./C++/odd-even-linked-list.cpp) [Python](./Python/odd-even-linked-list.py) | _O(n)_       | _O(1)_         | Easy         | |
 
 ## Stack
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
