@@ -20,7 +20,7 @@ public:
                 ListNode *even_head = odd_tail->next;
                 odd_tail->next = cur->next;
                 odd_tail = odd_tail->next;
-                cur->next = cur->next->next;
+                cur->next = odd_tail->next;
                 odd_tail->next = even_head;
             }
         }
