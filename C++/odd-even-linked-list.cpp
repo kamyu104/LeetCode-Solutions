@@ -16,7 +16,6 @@ public:
             for (ListNode *odd_tail = head, *cur = head->next;
                  cur && cur->next;
                  cur = cur->next) {
-
                 ListNode *even_head = odd_tail->next;
                 odd_tail->next = cur->next;
                 odd_tail = odd_tail->next;
