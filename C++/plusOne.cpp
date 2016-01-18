@@ -1,21 +1,19 @@
-// Time Complexity: O(n)
-// Space Complexity: O(1)
+// Time:  O(n)
+// Space: O(1)
 
 class Solution {
-    public:
-        vector<int> plusOne(vector<int> &digits) {
-            int c = 1;
-
-            for(auto it = digits.rbegin(); it != digits.rend(); ++it) {
-                *it += c;
-                c = *it / 10;
-                *it %= 10;
-            }
-
-            if(c > 0) {
-                digits.insert(digits.begin(), 1);
-            }
-
-            return digits;
+public:
+    vector<int> plusOne(vector<int>& digits) {
+        vector<int> result(digits.cbegin(), digits.cend());
+        int carry = 1;
+        for (auto it = result.rbegin(); it != result.rend(); ++it) {
+            *it += carry;
+            carry = *it / 10;
+            *it %= 10;
         }
+        if (carry == 1) {
+            result.emplace(result.begin(), carry);
+        }
+        return result;  
+    }
 };
