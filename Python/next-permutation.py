@@ -26,7 +26,7 @@ class Solution:
             num.reverse()
             return
         
-        for i in xrange(len(num)):
+        for i in xrange(k + 1, len(num)):
             if num[i] > num[k]:
                 l = i
                 
