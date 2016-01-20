@@ -39,6 +39,7 @@ private:
                                 longestpath(matrix, x, y, max_lengths));
             }
         }
+
         (*max_lengths)[i][j] = max_depth + 1;
         return (*max_lengths)[i][j];
     }
