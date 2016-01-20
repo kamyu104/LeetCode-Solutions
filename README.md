@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-328%20%2F%20328-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-329%20%2F%20329-ff69b4.svg)
 
-Up to date (2016-01-16), there are `311` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
+Up to date (2016-01-20), there are `312` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/).
 The number of questions is increasing recently.
-Here is the classification of all `328` questions.
+Here is the classification of all `329` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -356,6 +356,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 257| [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) | [C++](./C++/binary-tree-paths.cpp)  [Python](./Python/binary-tree-paths.py)  | _O(n * h)_ | _O(h)_ | Easy         |||
 282| [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/) | [C++](./C++/expression-add-operators.cpp)  [Python](./Python/expression-add-operators.py)  | _O(4^n)_ | _O(n)_ | Hard         |||
 301| [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/) | [C++](./C++/remove-invalid-parentheses.cpp)  [Python](./Python/remove-invalid-parentheses.py)  | _O(C(n, c))_ | _O(c)_ | Medium         |||
+329| [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [C++](./C++/longest-increasing-path-in-a-matrix.cpp)  [Python](./Python/longest-increasing-path-in-a-matrix.py)  | _O(m * n)_ | _O(m * n)_ | Medium         |||
 
 ## Backtracking
   #  | Problem         |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
