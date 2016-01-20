@@ -10,10 +10,10 @@ public:
         }
 
         int res = 0;
-        vector<vector<int>> states(matrix.size(), vector<int>(matrix[0].size()));
+        vector<vector<int>> max_lengths(matrix.size(), vector<int>(matrix[0].size()));
         for (int i = 0; i < matrix.size(); ++i) {
             for (int j = 0; j < matrix[0].size(); ++j) {
-             res = max(res, longestpath(matrix, i, j, &states));
+             res = max(res, longestpath(matrix, i, j, &max_lengths));
             }
         }
     
@@ -22,9 +22,9 @@ public:
 
 private:
     int longestpath(const vector<vector<int>>& matrix, const int i, const int j,
-                    vector<vector<int>> *states) {
-        if ((*states)[i][j] > 0) {
-            return (*states)[i][j];
+                    vector<vector<int>> *max_lengths) {
+        if ((*max_lengths)[i][j] > 0) {
+            return (*max_lengths)[i][j];
         }
     
         int max_depth = 0;
@@ -36,10 +36,10 @@ private:
                 y >= 0 && y < matrix[0].size() &&
                 matrix[x][y] < matrix[i][j]) {
                 max_depth = max(max_depth,
-                                longestpath(matrix, x, y, states));
+                                longestpath(matrix, x, y, max_lengths));
             }
         }
-        (*states)[i][j] = max_depth + 1;
-        return (*states)[i][j];
+        (*max_lengths)[i][j] = max_depth + 1;
+        return (*max_lengths)[i][j];
     }
 };
