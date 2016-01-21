@@ -1,21 +1,25 @@
-// Time Complexity: O(n)
-// Space Complexity: O(1)
+// Time: O(n)
+// Space: O(1)
 
 class Solution {
-    public:
-        int firstMissingPositive(int A[], int n) {
-            int i;
-            bucketSort(A, n);
-            for(i = 0; i < n && A[i] == i + 1; ++i);
-            return i + 1;
-        }
+public:
+    int firstMissingPositive(vector<int>& nums) {
+        int i;
+        bucketSort(&nums);
+        for (i = 0; i < nums.size() && nums[i] == i + 1; ++i);
+        return i + 1;
+    }
 
-    private:
-        void bucketSort(int A[], int n) {
-            for(int i = 0; i < n; ++i) {
-                for (; A[i] != i + 1 && A[i] > 0 && A[i] <= n && A[i] != A[A[i] - 1];) {
-                    swap(A[i], A[A[i] - 1]);
-                }
+private:
+    void bucketSort(vector<int> *nums) {
+        int i = 0;
+        while (i < nums->size()) {
+            if ((*nums)[i] > 0 && (*nums)[i] <= nums->size() &&
+                (*nums)[i] != (*nums)[(*nums)[i] - 1]) {
+                swap((*nums)[i], (*nums)[(*nums)[i] - 1]);
+            } else {
+                ++i;
             }
         }
+    }
 };
