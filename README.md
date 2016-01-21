@@ -63,7 +63,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)| [C++](./C++/remove-duplicates-from-sorted-array.cpp) [Python](./Python/remove-duplicates-from-sorted-array.py) | _O(n)_       | _O(1)_         | Easy           ||
 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [C++](./C++/remove-element.cpp) [Python](./Python/remove-element.py) | _O(n)_      | _O(1)_         | Easy           ||
 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/)| [C++](./C++/next-permutation.cpp) [Python](./Python/next-permutation.py) | _O(n)_  | _O(1)_          | Medium         || Tricky
-41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)| [Python](./Python/first-missing-positive.py) | _O(n)_ | _O(1)_ | Hard         || Tricky
+41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)| [C++](./C++/first-missing-positive.cpp) [Python](./Python/first-missing-positive.py) | _O(n)_ | _O(1)_ | Hard         || Tricky
 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/)   | [Python](./Python/rotate-image.py) | _O(n^2)_      | _O(1)_         | Medium         ||
 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [C++](./C++/spiral-matrix.cpp)  [Python](./Python/spiral-matrix.py) | _O(m * n)_    | _O(1)_         | Medium         ||
 59 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [C++](./C++/spiral-matrix-ii.cpp) [Python](./Python/spiral-matrix-ii.py) | _O(n^2)_ | _O(1)_      | Medium         ||
