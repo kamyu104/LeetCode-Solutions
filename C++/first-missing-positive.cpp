@@ -4,9 +4,9 @@
 class Solution {
 public:
     int firstMissingPositive(vector<int>& nums) {
-        int i;
+        int i = 0;
         bucketSort(&nums);
-        for (i = 0; i < nums.size() && nums[i] == i + 1; ++i);
+        for (; i < nums.size() && nums[i] == i + 1; ++i);
         return i + 1;
     }
 
