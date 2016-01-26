@@ -8,7 +8,7 @@ public:
         for (int i = 0; i < result.size(); ++i) {
             int prev_result = result[0] = 1;
             for (int j = 1; j <= i; ++j) {
-                int tmp = result[j];
+                const int tmp = result[j];
                 result[j] += prev_result;
                 prev_result = tmp;
             }
