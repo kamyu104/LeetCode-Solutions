@@ -1,5 +1,5 @@
 # Time:  O(n^2)
-# Space: O(n)
+# Space: O(1)
 #
 # Given numRows, generate the first numRows of Pascal's triangle.
 # 
