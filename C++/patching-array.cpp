@@ -1,4 +1,4 @@
-// Time:  O(n + logN)
+// Time:  O(s + logn), s is the number of elements in the array
 // Space: O(1)
 
 class Solution {
@@ -9,8 +9,8 @@ public:
             if (i < nums.size() && nums[i] <= miss) {
                 miss += nums[i++];
             } else {
-                ++patch;
                 miss += miss;
+                ++patch;
             }
         }
         return patch;
