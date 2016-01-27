@@ -9,7 +9,7 @@ public:
             if (i < nums.size() && nums[i] <= miss) {
                 miss += nums[i++];
             } else {
-                miss += miss;
+                miss += miss;  // miss may overflow, thus prefer to use uint64_t.
                 ++patch;
             }
         }
