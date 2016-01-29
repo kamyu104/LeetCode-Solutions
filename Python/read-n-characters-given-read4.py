@@ -27,23 +27,23 @@ def read4(buf):
         file_content = ""
     return i
         
-class Solution:
-    # @param buf, Destination buffer (a list of characters)
-    # @param n,   Maximum number of characters to read (an integer)
-    # @return     The number of characters read (an integer)
+class Solution(object):
     def read(self, buf, n):
+        """
+        :type buf: Destination buffer (List[str])
+        :type n: Maximum number of characters to read (int)
+        :rtype: The number of characters read (int)
+        """
         read_bytes = 0
-        eof = False
-        buffer = ['' for _ in xrange(4)]
-        while not eof and read_bytes < n:
+        buffer = [''] * 4
+        for i in xrange(n / 4 + 1):
             size = read4(buffer)
-            if size < 4:
-                eof = True
-            bytes = min(n - read_bytes, size)
-            for i in xrange(bytes):
-                buf[read_bytes + i] = buffer[i]
-            read_bytes += bytes
-        return read_bytes
+            if size:
+                buf[read_bytes:read_bytes+size] = buffer
+                read_bytes += size
+            else:
+                break
+        return min(read_bytes, n)
 
 if __name__ == "__main__":
     global file_content
