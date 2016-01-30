@@ -27,31 +27,37 @@ def read4(buf):
         file_content = ""
     return i
         
-class Solution:
+# The read4 API is already defined for you.
+# @param buf, a list of characters
+# @return an integer
+# def read4(buf):
+
+class Solution(object):
     def __init__(self):
-        self.buffer_size, self.offset = 0, 0
-        self.buffer = [None for _ in xrange(4)]
-    
-    # @param buf, Destination buffer (a list of characters)
-    # @param n,   Maximum number of characters to read (an integer)
-    # @return     The number of characters read (an integer)
+        self.__buf4 = [''] * 4
+        self.__i4 = 0
+        self.__n4 = 0
+        
     def read(self, buf, n):
-        read_bytes = 0
-        eof = False
-        while not eof and read_bytes < n:
-            if self.buffer_size == 0:
-                size = read4(self.buffer)
+        """
+        :type buf: Destination buffer (List[str])
+        :type n: Maximum number of characters to read (int)
+        :rtype: The number of characters read (int)
+        """
+        i = 0
+        while i < n:
+            if self.__i4 < self.__n4:  # Any characters in buf4.
+                buf[i] = self.__buf4[self.__i4]
+                i += 1
+                self.__i4 += 1
             else:
-                size = self.buffer_size
-            if self.buffer_size == 0 and size < 4:
-                eof = True   
-            bytes = min(n - read_bytes, size)
-            for i in xrange(bytes):
-                buf[read_bytes + i] = self.buffer[self.offset + i]
-            self.offset = (self.offset + bytes) % 4
-            self.buffer_size = size - bytes
-            read_bytes += bytes
-        return read_bytes
+                self.__n4 = read4(self.__buf4)  # Read more characters.
+                if self.__n4:
+                    self.__i4 = 0
+                else:  # Buffer has been empty.
+                    break
+        
+        return i
 
 if __name__ == "__main__":
     global file_content
