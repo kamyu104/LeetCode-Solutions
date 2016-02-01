@@ -63,4 +63,4 @@ class Solution(object):
                     break
             else:
                 depth += 1
-        return cnt == 0 and depth == -1
+        return cnt == 0 and depth < 0
