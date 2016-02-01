@@ -23,7 +23,7 @@ public:
         return i == tokens.size() - 1;  
     }
 
-class Tokenizer {
+    class Tokenizer {
     public:
         Tokenizer(const string& str) : str_(str), i_(0), cnt_(0) {
             size_ = count(str_.cbegin(), str_.cend(), ',') + 1;
