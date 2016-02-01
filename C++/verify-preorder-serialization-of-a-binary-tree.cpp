@@ -10,17 +10,14 @@ public:
         Tokenizer tokens(preorder);
         int depth = 0; 
         int i = 0;
-        for (; i < tokens.size(); ++i) {
+        for (; i < tokens.size() && depth >= 0; ++i) {
             if (tokens.get_next() == "#") {
                 --depth;
-                if (depth < 0) {
-                    break;
-                }
             } else {
                 ++depth;
             }
         }
-        return i == tokens.size() - 1;  
+        return i == tokens.size() && depth < 0;  
     }
 
     class Tokenizer {
