@@ -8,33 +8,34 @@
 # return ["2", "4->49", "51->74", "76->99"].
 #
 
-class Solution:
-    # @param A, a list of integers
-    # @param lower, an integer
-    # @param upper, an integer
-    # @return a list of strings
-    def findMissingRanges(self, A, lower, upper):
+class Solution(object):
+    def findMissingRanges(self, nums, lower, upper):
+        """
+        :type nums: List[int]
+        :type lower: int
+        :type upper: int
+        :rtype: List[str]
+        """
+        def getRange(lower, upper):
+            if lower == upper:
+                return "{}".format(lower)
+            else:
+                return "{}->{}".format(lower, upper)
         ranges = []
         pre = lower - 1
         
-        for i in xrange(len(A) + 1):
-            if i == len(A):
+        for i in xrange(len(nums) + 1):
+            if i == len(nums):
                 cur = upper + 1
             else:
-                cur = A[i]
-            
+                cur = nums[i]
             if cur - pre >= 2:
-                ranges.append(self.getRange(pre + 1, cur - 1))
+                ranges.append(getRange(pre + 1, cur - 1))
                 
             pre = cur
             
         return ranges
-    
-    def getRange(self, lower, upper):
-        if lower == upper:
-            return "{}".format(lower)
-        else:
-            return "{}->{}".format(lower, upper)
-        
+
+
 if __name__ == "__main__":
     print Solution().findMissingRanges([0, 1, 3, 50, 75], 0, 99)
