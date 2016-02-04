@@ -1,5 +1,5 @@
-# Time:  O(n!)
-# Space: O(1)
+# Time:  O(t! / (n1! * n2! * ... nk!)), t is the total number of tickets, ni is the number of ticket which from is node i
+# Space: O(t)
 
 # Given a list of airline tickets represented by pairs of departure
 # and arrival airports [from, to], reconstruct the itinerary in order.
