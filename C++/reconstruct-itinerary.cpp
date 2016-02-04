@@ -26,7 +26,7 @@ private:
             if ((*graph)[start][neighbor.first]) {
                 --(*graph)[start][neighbor.first];
                 ans->emplace_back(neighbor.first);
-                if (dfs(neighbor.first, size - 1, graph, ans)) {
+                if (routeHelper(neighbor.first, size - 1, graph, ans)) {
                     return true;
                 }
                 ans->pop_back();
