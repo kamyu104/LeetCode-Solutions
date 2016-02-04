@@ -30,18 +30,18 @@ class Solution(object):
         :type tickets: List[List[str]]
         :rtype: List[str]
         """
-        def route_helper(start, size, graph, ans):
+        def route_helper(origin, size, graph, ans):
             if size == 0:
                 return True
 
-            for i, (end, valid)  in enumerate(graph[start]):
+            for i, (dest, valid)  in enumerate(graph[origin]):
                 if valid:
-                    graph[start][i][1] = False
-                    ans.append(end)
-                    if route_helper(end, size - 1, graph, ans):
+                    graph[origin][i][1] = False
+                    ans.append(dest)
+                    if route_helper(dest, size - 1, graph, ans):
                         return ans
                     ans.pop()
-                    graph[start][i][1] = True
+                    graph[origin][i][1] = True
             return False
 
         graph = collections.defaultdict(list)
@@ -50,7 +50,7 @@ class Solution(object):
         for k in graph.keys():
             graph[k].sort()
 
-        start = "JFK"
-        ans = [start]
-        route_helper(start, len(tickets), graph, ans)
+        origin = "JFK"
+        ans = [origin]
+        route_helper(origin, len(tickets), graph, ans)
         return ans
