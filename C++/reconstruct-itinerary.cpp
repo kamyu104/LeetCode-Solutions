@@ -17,10 +17,10 @@ public:
     }
 
 private:
-    bool routeHelper(const string& from, const int size,
+    bool routeHelper(const string& from, const int ticket_cnt,
                      unordered_map<string, map<string, int>> *graph, vector<string> *ans) {
 
-        if (size == 0) {
+        if (ticket_cnt == 0) {
             return true;
         }
 
@@ -28,7 +28,7 @@ private:
             if (to.second) {
                 --to.second;
                 ans->emplace_back(to.first);
-                if (routeHelper(to.first, size - 1, graph, ans)) {
+                if (routeHelper(to.first, ticket_cnt - 1, graph, ans)) {
                     return true;
                 }
                 ans->pop_back();
