@@ -1,5 +1,5 @@
-// Time:  O(n!)
-// Space: O(n)
+// Time:  O(t! / (n1! * n2! * ... nk!)), t is the total number of tickets, ni is the number of ticket which from is node i
+// Space: O(t)
 
 class Solution {
 public:
