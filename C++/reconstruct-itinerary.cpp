@@ -1,4 +1,4 @@
-// Time:  O((n-1)!)
+// Time:  O(n!)
 // Space: O(n)
 
 class Solution {
