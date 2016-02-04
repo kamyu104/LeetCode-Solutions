@@ -28,7 +28,7 @@ class Solution(object):
         :type tickets: List[List[str]]
         :rtype: List[str]
         """
-        def route_helper(start, graph, size, ans):
+        def route_helper(start, size, graph, ans):
             if size == 0:
                 return True
 
@@ -36,7 +36,7 @@ class Solution(object):
                 if valid:
                     graph[start][i][1] = False
                     ans.append(end)
-                    if route_helper(end, graph, size - 1, ans):
+                    if route_helper(end, size - 1, graph, ans):
                         return ans
                     ans.pop()
                     graph[start][i][1] = True
@@ -50,5 +50,5 @@ class Solution(object):
 
         start = "JFK"
         ans = [start]
-        route_helper(start, graph, len(tickets), ans)
+        route_helper(start, len(tickets), graph, ans)
         return ans
