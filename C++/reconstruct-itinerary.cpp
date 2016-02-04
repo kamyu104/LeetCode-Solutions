@@ -10,29 +10,29 @@ public:
         for (const auto& ticket : tickets) {
             ++graph[ticket.first][ticket.second];
         }
-        const string start{"JFK"};
-        vector<string> ans{start};
-        routeHelper(start, tickets.size(), &graph, &ans);
+        const string from{"JFK"};
+        vector<string> ans{from};
+        routeHelper(from, tickets.size(), &graph, &ans);
         return ans;
     }
 
 private:
-    bool routeHelper(const string& start, const int size,
+    bool routeHelper(const string& from, const int size,
                      unordered_map<string, map<string, int>> *graph, vector<string> *ans) {
 
         if (size == 0) {
             return true;
         }
 
-        for (auto& neighbor : (*graph)[start]) {
-            if (neighbor.second) {
-                --neighbor.second;
-                ans->emplace_back(neighbor.first);
-                if (routeHelper(neighbor.first, size - 1, graph, ans)) {
+        for (auto& to : (*graph)[from]) {
+            if (to.second) {
+                --to.second;
+                ans->emplace_back(to.first);
+                if (routeHelper(to.first, size - 1, graph, ans)) {
                     return true;
                 }
                 ans->pop_back();
-                ++neighbor.second;
+                ++to.second;
             }
         }
         return false;
