@@ -24,15 +24,15 @@ private:
             return true;
         }
 
-        for (const auto& neighbor : (*graph)[start]) {
+        for (auto& neighbor : (*graph)[start]) {
             if ((*graph)[start][neighbor.first]) {
-                --(*graph)[start][neighbor.first];
+                --neighbor.second;
                 ans->emplace_back(neighbor.first);
                 if (routeHelper(neighbor.first, size - 1, graph, ans)) {
                     return true;
                 }
                 ans->pop_back();
-                ++(*graph)[start][neighbor.first];
+                ++neighbor.second;
             }
         }
         return false;
