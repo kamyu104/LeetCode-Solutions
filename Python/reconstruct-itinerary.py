@@ -34,17 +34,17 @@ class Solution(object):
 
             for i, (end, valid)  in enumerate(graph[start]):
                 if valid:
-                    graph[start][i][1] = 0
+                    graph[start][i][1] = False
                     ans.append(end)
                     if route_helper(end, graph, size - 1, ans):
                         return ans
                     ans.pop()
-                    graph[start][i][1] = 1
+                    graph[start][i][1] = True
             return False
 
         graph = collections.defaultdict(list)
         for ticket in tickets:
-            graph[ticket[0]].append([ticket[1], 1])
+            graph[ticket[0]].append([ticket[1], True])
         for k in graph.keys():
             graph[k].sort()
 
