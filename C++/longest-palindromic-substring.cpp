@@ -38,6 +38,7 @@ public:
 
         return s.substr((center_index - 1 - max_len) / 2, max_len);
     }
+
 private:
     string preProcess(const string& s) {
         if (s.empty()) {
@@ -47,7 +48,6 @@ private:
         for (int i = 0; i < s.length(); ++i) {
             ret += "#" + s.substr(i, 1);
         }
-
         ret += "#$";
         return ret;
     }
