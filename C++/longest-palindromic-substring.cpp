@@ -10,7 +10,7 @@ public:
         vector<int> P(n);
         int C = 0, R = 0;
         for (int i = 1; i < n - 1; ++i) {
-            int i_mirror = 2*C-i; // equals to i' = C - (i-C)
+            int i_mirror = 2 * C - i; // equals to i' = C - (i-C)
 
             P[i] = (R > i) ? min(R - i, P[i_mirror]) : 0;
 
