@@ -6,7 +6,7 @@ class Solution {
 public:
     string longestPalindrome(string s) {
         string T = preProcess(s);
-        int n = T.length();
+        const int n = T.length();
         vector<int> P(n);
         int C = 0, R = 0;
         for (int i = 1; i < n - 1; ++i) {
