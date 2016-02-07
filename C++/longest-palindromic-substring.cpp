@@ -19,7 +19,7 @@ public:
                 ++P[i];
             }
 
-            // If palindrome centered at i expand past R,
+            // If palindrome centered at i expands the past R,
             // adjust center based on expanded palindrome.
             if (i + P[i] > R) {
                 C = i;
