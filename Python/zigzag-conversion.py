@@ -14,18 +14,20 @@
 # convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
 #
 
-class Solution:
-    # @return a string
-    def convert(self, s, nRows):
-        step, zigzag = 2 * nRows - 2, ""
-        if s == None or len(s) == 0 or nRows <= 0:
-            return ""
-        if nRows == 1:
+class Solution(object):
+    def convert(self, s, numRows):
+        """
+        :type s: str
+        :type numRows: int
+        :rtype: str
+        """
+        step, zigzag = 2 * numRows - 2, ""
+        if numRows == 1:
             return s
-        for i in xrange(nRows):
+        for i in xrange(numRows):
             for j in xrange(i, len(s), step):
                 zigzag += s[j]
-                if i > 0 and i < nRows - 1 and j + step - 2 * i < len(s):
+                if 0 < i < numRows - 1 and j + step - 2 * i < len(s):
                     zigzag += s[j + step - 2 * i]
         return zigzag
 
