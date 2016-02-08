@@ -21,9 +21,9 @@ class Solution(object):
         :type numRows: int
         :rtype: str
         """
-        step, zigzag = 2 * numRows - 2, ""
         if numRows == 1:
             return s
+        step, zigzag = 2 * numRows - 2, ""
         for i in xrange(numRows):
             for j in xrange(i, len(s), step):
                 zigzag += s[j]
