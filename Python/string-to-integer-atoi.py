@@ -26,9 +26,12 @@
 # If the correct value is out of the range of representable values, INT_MAX (2147483647) or INT_MIN (-2147483648) is returned.
 #
 
-class Solution:
-    # @return an integer
-    def atoi(self, str):
+class Solution(object):
+    def myAtoi(self, str):
+        """
+        :type str: str
+        :rtype: int
+        """
         INT_MAX =  2147483647
         INT_MIN = -2147483648
         result = 0
@@ -48,12 +51,8 @@ class Solution:
             i += 1
 
         while i < len(str) and str[i] >= '0' and str[i] <= '9':
-            if result > INT_MAX / 10 or (result == INT_MAX / 10 and ord(str[i]) - ord('0') > INT_MAX % 10):
-                if sign > 0:
-                    return INT_MAX
-                else:
-                    return INT_MIN
-            
+            if result > (INT_MAX - (ord(str[i]) - ord('0'))) / 10:
+                return INT_MAX if sign > 0 else INT_MIN
             result = result * 10 + ord(str[i]) - ord('0')
             i += 1
         
