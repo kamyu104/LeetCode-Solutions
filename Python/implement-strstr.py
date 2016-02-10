@@ -9,22 +9,19 @@
 
 # Wiki of KMP algorithm:
 # http://en.wikipedia.org/wiki/Knuth-Morris-Pratt_algorithm
-class Solution:
-    # @param haystack, a string
-    # @param needle, a string
-    # @return a string or None
+class Solution(object):
     def strStr(self, haystack, needle):
+        """
+        :type haystack: str
+        :type needle: str
+        :rtype: int
+        """
         if not needle:
             return 0
             
-        if len(haystack) < len(needle):
-            return -1
-        
-        i = self.KMP(haystack, needle)
-        if i > -1:
-            return i
-        else:
-            return -1
+        if len(haystack) >= len(needle):
+            return self.KMP(haystack, needle)
+        return -1
     
     def KMP(self, text, pattern):
         prefix = self.getPrefix(pattern)
