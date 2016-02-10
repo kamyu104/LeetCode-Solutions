@@ -4,7 +4,6 @@
 # Write a function to find the longest common prefix string
 # amongst an array of strings.
 
-
 class Solution(object):
     def longestCommonPrefix(self, strs):
         """
@@ -19,7 +18,7 @@ class Solution(object):
                 if i >= len(string) or string[i] != strs[0][i]:
                     return strs[0][:i]
         return strs[0]
-    
+
+
 if __name__ == "__main__":
     print Solution().longestCommonPrefix(["hello", "heaven", "heavy"])
-            
