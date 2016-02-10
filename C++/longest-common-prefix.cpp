@@ -1,4 +1,4 @@
-// Time:  O(n)
+// Time:  O(n * k), k is the length of the common prefix
 // Space: O(1)
 
 class Solution {
