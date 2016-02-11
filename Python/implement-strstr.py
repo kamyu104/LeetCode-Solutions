@@ -1,5 +1,5 @@
-# Time:  O(n + m)
-# Space: O(m)
+# Time:  O(n + k)
+# Space: O(k)
 #
 # Implement strStr().
 # 
@@ -46,8 +46,8 @@ class Solution(object):
             prefix[i] = j
         return prefix
     
-# Time:  (n * m)
-# Space: (1)
+# Time:  (n * k)
+# Space: (k)
 class Solution2:
     # @param haystack, a string
     # @param needle, a string
