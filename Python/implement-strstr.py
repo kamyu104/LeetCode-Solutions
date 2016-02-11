@@ -19,9 +19,7 @@ class Solution(object):
         if not needle:
             return 0
             
-        if len(haystack) >= len(needle):
-            return self.KMP(haystack, needle)
-        return -1
+        return self.KMP(haystack, needle)
     
     def KMP(self, text, pattern):
         prefix = self.getPrefix(pattern)
