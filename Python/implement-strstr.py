@@ -44,17 +44,19 @@ class Solution(object):
             prefix[i] = j
         return prefix
     
-# Time:  (n * k)
-# Space: (k)
-class Solution2:
-    # @param haystack, a string
-    # @param needle, a string
-    # @return a string or None
+# Time:  O(n * k)
+# Space: O(k)
+class Solution2(object):
     def strStr(self, haystack, needle):
+        """
+        :type haystack: str
+        :type needle: str
+        :rtype: int
+        """
         for i in xrange(len(haystack) - len(needle) + 1):
             if haystack[i : i + len(needle)] == needle:
-                return haystack[i:]
-        return None
+                return i
+        return -1
     
 if __name__ == "__main__":
     print Solution().strStr("a", "")
