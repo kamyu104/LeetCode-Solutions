@@ -19,8 +19,8 @@ class Solution(object):
 
         max_size = [1]
         def largestBSTSubtreeHelper(root):
-            if root is None or (root.left is None and root.right is None):
-                return int(root is not None), root.val, root.val
+            if root.left is None and root.right is None:
+                return 1, root.val, root.val
 
             left_size, left_min, left_max = 0, root.val, root.val
             if root.left is not None:
