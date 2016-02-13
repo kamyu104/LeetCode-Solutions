@@ -12,7 +12,7 @@ public:
         vector<int> n2;
         transform(num2.rbegin(), num2.rend(), back_inserter(n2), char_to_int);
 
-        vector<int> tmp(n1.size() + n2.size() + 1);
+        vector<int> tmp(n1.size() + n2.size());
         for(int i = 0; i < n1.size(); ++i) {
             for(int j = 0; j < n2.size(); ++j) {
                 tmp[i + j] += n1[i] * n2[j];
@@ -55,7 +55,7 @@ public:
         }
     
         BigInt operator*(const BigInt &rhs) const {
-            BigInt res(n_.size() + rhs.size() + 1, 0);
+            BigInt res(n_.size() + rhs.size(), 0);
             for(auto i = 0; i < n_.size(); ++i) {
                 for(auto j = 0; j < rhs.size(); ++j) {
                     res[i + j] += n_[i] * rhs[j];
