@@ -4,6 +4,37 @@
 class Solution {
 public:
     string multiply(string num1, string num2) {
+        const auto char_to_int = [](const char c) { return c - '0'; };
+        const auto int_to_char = [](const int i) { return i + '0'; };
+
+        vector<int> n1;
+        transform(num1.rbegin(), num1.rend(), back_inserter(n1), char_to_int);
+        vector<int> n2;
+        transform(num2.rbegin(), num2.rend(), back_inserter(n2), char_to_int);
+
+        vector<int> tmp(n1.size() + n2.size() + 1);
+        for(int i = 0; i < n1.size(); ++i) {
+            for(int j = 0; j < n2.size(); ++j) {
+                tmp[i + j] += n1[i] * n2[j];
+                tmp[i + j + 1] += tmp[i + j] / 10;
+                tmp[i + j] %= 10;
+            }
+        }
+            
+        string res;
+        transform(find_if(tmp.rbegin(), prev(tmp.rend()),
+                         [](const int i) { return i != 0; }),
+                  tmp.rend(), back_inserter(res), int_to_char);
+        return res;
+    }
+};
+
+// Time:  O(m * n)
+// Space: O(m + n)
+// Define a new BigInt class solutioin. 
+class Solution2 {
+public:
+    string multiply(string num1, string num2) {
         return BigInt(num1) * BigInt(num2);
     }
 
@@ -11,7 +42,7 @@ public:
     public:
         BigInt(const string& s) {
             transform(s.rbegin(), s.rend(), back_inserter(n_), 
-                      [](const char c) { return c - '0';});
+                      [](const char c) { return c - '0'; });
         }
     
         operator string() {
@@ -55,5 +86,4 @@ public:
             return n_.size();
         }
     };
-
 };
