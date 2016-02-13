@@ -31,7 +31,7 @@ public:
 
 // Time:  O(m * n)
 // Space: O(m + n)
-// Define a new BigInt class solutioin. 
+// Define a new BigInt class solution. 
 class Solution2 {
 public:
     string multiply(string num1, string num2) {
