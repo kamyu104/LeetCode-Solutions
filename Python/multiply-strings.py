@@ -18,7 +18,7 @@ class Solution(object):
         :rtype: str
         """
         num1, num2 = num1[::-1], num2[::-1]
-        res = [0] * (len(num1) + len(num2))
+        res = [0] * (len(num1) + len(num2) + 1)
         for i in xrange(len(num1)):
             for j in xrange(len(num2)):
                 res[i + j] += int(num1[i]) * int(num2[j])
