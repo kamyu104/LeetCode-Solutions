@@ -21,7 +21,6 @@ class Solution(object):
                 res[i + j + 1] += res[i + j] / 10
                 res[i + j] %= 10
 
-
         # Skip leading 0s.
         i = len(res) - 1
         while i > 0 and res[i] == 0:
