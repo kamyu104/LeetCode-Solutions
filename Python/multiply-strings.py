@@ -15,13 +15,12 @@ class Solution(object):
         """
         num1, num2 = num1[::-1], num2[::-1]
         res = [0] * (len(num1) + len(num2))
-        print res
         for i in xrange(len(num1)):
             for j in xrange(len(num2)):
                 res[i + j] += int(num1[i]) * int(num2[j])
                 res[i + j + 1] += res[i + j] / 10
                 res[i + j] %= 10
-        print res
+
         res.reverse()
 
         # Skip leading 0s.
