@@ -21,14 +21,13 @@ class Solution(object):
                 res[i + j + 1] += res[i + j] / 10
                 res[i + j] %= 10
 
-        res.reverse()
 
         # Skip leading 0s.
-        i = 0
-        while i < len(res) - 1 and res[i] == 0:
-            i += 1
+        i = len(res) - 1
+        while i > 0 and res[i] == 0:
+            i -= 1
 
-        res = ''.join(map(str, res[i:]))
+        res = ''.join(map(str, res[i::-1]))
         return res
 
 if __name__ == "__main__":
