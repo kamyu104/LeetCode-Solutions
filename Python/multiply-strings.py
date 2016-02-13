@@ -27,8 +27,8 @@ class Solution(object):
         while i > 0 and res[i] == 0:
             i -= 1
 
-        res = ''.join(map(str, res[i::-1]))
-        return res
+        return ''.join(map(str, res[i::-1]))
+
 
 if __name__ == "__main__":
     print Solution().multiply("123", "1000")
