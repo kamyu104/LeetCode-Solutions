@@ -24,15 +24,15 @@ public:
         }
     
         BigInt operator*(const BigInt &rhs) const {
-            BigInt z(n_.size() + rhs.size() + 1, 0);
+            BigInt res(n_.size() + rhs.size() + 1, 0);
             for(auto i = 0; i < n_.size(); ++i) {
                 for(auto j = 0; j < rhs.size(); ++j) {
-                    z[i + j] += n_[i] * rhs[j];
-                    z[i + j + 1] += z[i + j] / 10;
-                    z[i + j] %= 10;
+                    res[i + j] += n_[i] * rhs[j];
+                    res[i + j + 1] += res[i + j] / 10;
+                    res[i + j] %= 10;
                 }
             }
-            return z;
+            return res;
         }
     
     private:
