@@ -24,11 +24,11 @@ class Solution(object):
         :rtype: bool
         """
         first_min, second_min = None, None
-        for i in xrange(len(nums)):
-            if first_min is None or first_min >= nums[i]:
-                first_min = nums[i]
-            elif second_min is None or second_min >= nums[i]:
-                second_min = nums[i]
+        for i in nums:
+            if first_min is None or first_min >= i:
+                first_min = i
+            elif second_min is None or second_min >= i:
+                second_min = i
             else:
                 return True
         return False
