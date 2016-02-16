@@ -33,6 +33,8 @@ class Solution(object):
                 return True
         return False
 
+# Time:  O(n)
+# Space: O(n)
 class Solution2(object):
     def increasingTriplet(self, nums):
         """
