@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(n)
+# Space: O(1)
 
 # Given an unsorted array return whether an increasing 
 # subsequence of length 3 exists or not in the array.
@@ -18,6 +18,22 @@
 # return false.
 
 class Solution(object):
+    def increasingTriplet(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        first_min, second_min = None, None
+        for i in xrange(len(nums)):
+            if first_min is None or first_min >= nums[i]:
+                first_min = nums[i]
+            elif second_min is None or second_min >= nums[i]:
+                second_min = nums[i]
+            else:
+                return True
+        return False
+
+class Solution2(object):
     def increasingTriplet(self, nums):
         """
         :type nums: List[int]
