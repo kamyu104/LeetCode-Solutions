@@ -23,11 +23,11 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        first_min, second_min = None, None
+        first_min, second_min = float("inf"), float("inf")
         for i in nums:
-            if first_min is None or first_min >= i:
+            if first_min >= i:
                 first_min = i
-            elif second_min is None or second_min >= i:
+            elif second_min >= i:
                 second_min = i
             else:
                 return True
