@@ -29,7 +29,7 @@ class Solution(object):
                 min_num = c
             elif b >= c:
                 a, b = min_num, c
-            else:
+            else:  # a < b < c
                 return True
         return False
 
