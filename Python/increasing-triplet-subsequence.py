@@ -26,7 +26,7 @@ class Solution(object):
         first_min, second_min = float("inf"), float("inf")
         for i in nums:
             if first_min >= i:
-                first_min = i
+                first_min, second_min = i, float("inf")
             elif second_min >= i:
                 second_min = i
             else:
