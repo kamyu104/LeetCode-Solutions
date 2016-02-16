@@ -23,12 +23,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        first_min, second_min = float("inf"), float("inf")
-        for i in nums:
-            if first_min >= i:
-                first_min = i
-            elif second_min >= i:
-                second_min = i
+        min_num, a, b = float("inf"), float("inf"), float("inf")
+        for c in nums:
+            if min_num >= c:
+                min_num = c
+            elif b >= c:
+                a, b = min_num, c
             else:
                 return True
         return False
