@@ -27,7 +27,8 @@ public:
         return increasingKUplet(nums, 3);
     }
 
-    bool increasingKUplet(const vector<int>& nums, const int k) {
+private:
+    bool increasingKUplet(const vector<int>& nums, const size_t k) {
         vector<int> inc(k - 1, numeric_limits<int>::max());
         for (const auto& num : nums) {
             auto it = lower_bound(inc.begin(), inc.end(), num);
