@@ -33,30 +33,22 @@ class Solution(object):
                 return True
         return False
 
-# Time:  O(n)
-# Space: O(n)
-class Solution2(object):
+# Time:  O(n * logk)
+# Space: O(k)
+# Generalization of k-uplet.
+class Solution_Generalization(object):
     def increasingTriplet(self, nums):
         """
         :type nums: List[int]
         :rtype: bool
         """
-        n = len(nums)
-
-        exist_smaller = set()
-        min_num = 0
-        for i in xrange(1, n):
-            if (nums[i] <= nums[min_num]):
-                min_num = i
-            else:
-                exist_smaller.add(i)
-
-        max_num = n - 1
-        for i in reversed(xrange(n-1)):
-            if (nums[i] >= nums[max_num]):
-                max_num = i
-            else:
-                if i in exist_smaller:
+        def increasingKUplet(nums, k):
+            inc = [float('inf')] * (k - 1)
+            for num in nums:
+                i = bisect.bisect_left(inc, num)
+                if i >= k - 1:
                     return True
+                inc[i] = num
+            return k == 0
 
-        return False
+        return increasingKUplet(nums, 3)
