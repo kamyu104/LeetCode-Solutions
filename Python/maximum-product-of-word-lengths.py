@@ -40,7 +40,7 @@ class Solution(object):
             res = []
             for i in reversed(xrange(k)):
                 if buckets[i]:
-                    res.extend(buckets[i])
+                    res += buckets[i]
             return res
 
         words = counting_sort(words)
