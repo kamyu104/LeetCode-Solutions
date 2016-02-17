@@ -17,3 +17,25 @@ public:
         return false;
     }
 };
+
+// Time:  O(n * logk)
+// Space: O(k)
+// Generalization of k-uplet.
+class Solution_Generalization {
+public:
+    bool increasingTriplet(vector<int>& nums) {
+        return increasingKUplet(nums, 3);
+    }
+
+    bool increasingKUplet(const vector<int>& nums, const int k) {
+        vector<int> inc(k - 1, numeric_limits<int>::max());
+        for (const auto& num : nums) {
+            auto it = lower_bound(inc.begin(), inc.end(), num);
+            if (distance(inc.begin(), it) >= k - 1) {
+                return true;
+            }
+            *it = num;
+        }
+        return k == 0;
+    }
+};
