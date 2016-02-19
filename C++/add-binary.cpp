@@ -25,6 +25,7 @@ public:
     }
 };
 
+// Iterator solution.
 class Solution2 {
 public:
     string addBinary(string a, string b) {
