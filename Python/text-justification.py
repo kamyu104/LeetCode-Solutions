@@ -42,7 +42,7 @@ class Solution(object):
             return 0
 
         def connect(words, maxWidth, begin, end, length, is_last):
-            s = []
+            s = []  # The extra space O(k) is spent here.
             n = end - begin
             for i in xrange(n):
                 s += words[begin + i],
