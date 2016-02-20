@@ -21,7 +21,7 @@ public:
     }
 
 private:
-    string connect(const vector<string> &words, int maxWidth,
+    string connect(const vector<string>& words, int maxWidth,
                    int begin, int end, int len,
                    bool is_last) {
         string s;
