@@ -107,7 +107,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 43| [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | [C++](./C++/multiply-strings.cpp) [Python](./Python/multiply-strings.py) | _O(m * n)_ | _O(m + n)_  | Medium         ||
 58| [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | [C++](./C++/length-of-last-word.cpp) [Python](./Python/length-of-last-word.py) | _O(n)_   | _O(1)_  | Easy           ||
 67| [Add Binary](https://leetcode.com/problems/add-binary/)    | [C++](./C++/add-binary.cpp) [Python](./Python/add-binary.py) | _O(n)_          | _O(1)_          | Easy           ||
-68| [Text Justification](https://leetcode.com/problems/text-justification/) | [Python](./Python/text-justification.py) | _O(n)_ | _O(1)_      | Hard           ||
+68| [Text Justification](https://leetcode.com/problems/text-justification/) | [C++](./C++/text-justification.cpp) [Python](./Python/text-justification.py) | _O(n)_ | _O(1)_      | Hard           ||
 125| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [Python](./Python/valid-palindrome.py) | _O(n)_  | _O(1)_         | Easy           ||
 151| [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Python](./Python/reverse-words-in-a-string.py) | _O(n)_ | _O(n)_ | Medium         ||
 161| [One Edit Distance](https://leetcode.com/problems/one-edit-distance/) | [Python](./Python/one-edit-distance.py) | _O(m + n)_ | _O(1)_    | Medium         |📖|
