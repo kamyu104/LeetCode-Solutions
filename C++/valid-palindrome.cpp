@@ -10,7 +10,7 @@ public:
                 ++i;
             } else if (!isalnum(s[j])) {
                 --j;
-            } else if (::tolower(s[i]) != ::tolower(s[j])) {
+            } else if (tolower(s[i]) != tolower(s[j])) {
                 return false;
             } else {
                 ++i, --j;
@@ -33,7 +33,7 @@ public:
                 ++left;
             } else if(!isalnum(*right)) {
                 --right; 
-            } else if(::tolower(*left) != ::tolower(*right)) {
+            } else if(tolower(*left) != tolower(*right)) {
                 return false;
             } else {
                 ++left, --right;
