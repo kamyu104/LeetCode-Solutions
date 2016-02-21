@@ -10,7 +10,7 @@ public:
                 ++i;
             } else if (!isalnum(s[j])) {
                 --j;
-            } else if (tolower(s[i]) != ::tolower(s[j])) {
+            } else if (::tolower(s[i]) != ::tolower(s[j])) {
                 return false;
             } else {
                 ++i, --j;
@@ -20,6 +20,8 @@ public:
     }
 };
 
+// Time:  O(n)
+// Space: O(1)
 // Iterator solution.
 class Solution2 {
 public:    
