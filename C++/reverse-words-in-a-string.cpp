@@ -7,8 +7,7 @@ public:
         // Reverse the whole string first.
         reverse(s.begin(), s.end());
 
-        size_t start = 0, end = 0;
-        size_t len = 0;
+        size_t start = 0, end = 0, len = 0;
         while ((start = s.find_first_not_of(" ", end)) != string::npos) {
             if ((end = s.find(" ", start)) == string::npos) {
                 end = s.length();
