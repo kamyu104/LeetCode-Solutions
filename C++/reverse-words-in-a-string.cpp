@@ -7,25 +7,20 @@ public:
         // Reverse the whole string first.
         reverse(s.begin(), s.end());
 
-        size_t start = 0, end;
-        while ((end = s.find(" ", start)) != string::npos) {
+        size_t start = 0, end = 0;
+        size_t len = 0;
+        while ((start = s.find_first_not_of(" ", end)) != string::npos) {
+            if ((end = s.find(" ", start)) == string::npos) {
+                end = s.length();
+            }
             // Reverse each word in the string.
             reverse(s.begin() + start, s.begin() + end);
-            start = end + 1;
-        }
-        // Reverse the last word.
-        reverse(s.begin() + start, s.end());
 
-        // Remove beginning and trailing spaces.
-        int new_len = 0;
-        for (int i = 0; i < s.length(); ++i) {
-            if (s[i] != ' ') {
-                s[new_len++] = s[i];
-                if (s[i + 1] == ' ' || i == s.length() - 1) {
-                    s[new_len++] = ' ';
-                }
-            }
+            // Shift the word to avoid extra space.
+            move(s.begin() + start, s.begin() + end, s.begin() + len);
+            len += end - start;
+            s[len++] = ' ';
         }
-        s.resize(new_len == 0 ? 0 : new_len - 1);
+        s.resize(len ? len - 1 : 0);
     }
 };
