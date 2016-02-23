@@ -43,7 +43,7 @@ class Solution(object):
                 #     i-3
                 return True
             elif i >= 5 and x[i - 4] <= x[i - 2] and x[i] + x[i - 4] >= x[i - 2] and \
-                       x[i - 1] <= x[i - 3] and x[i - 5] + x[i - 1] >= x[i - 3]:
+                            x[i - 1] <= x[i - 3] and x[i - 5] + x[i - 1] >= x[i - 3]:
                 # Case 2:
                 #    i-4
                 #    ┌──┐ 
