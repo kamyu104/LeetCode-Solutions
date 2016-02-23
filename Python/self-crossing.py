@@ -28,16 +28,16 @@ class Solution(object):
         """
         for i in xrange(3, len(x)):
             if x[i] >= x[i - 2] and x[i - 3] >= x[i - 1]:
-#                          i-2
-#              case 1 : i-1┌─┐
-#                          └─┼─>i
-#                           i-3
+#                           i-2
+#               case 1 : i-1┌─┐
+#                           └─┼─>i
+#                            i-3
                 return True
             elif i >= 4 and x[i - 1] == x[i - 3] and x[i] + x[i - 4] >= x[i - 2]:
-#                            i-2
-#              case 2 : i-1 ┌────┐
+#                             i-2
+#               case 2 : i-1┌────┐
 #                           └─══>┘i-3
-#                           i  i-4  (overlapped)  
+#                            i  i-4  (overlapped)  
                 return True
             elif i >= 5 and x[i - 4] <= x[i - 2] and x[i] + x[i - 4] >= x[i - 2] and \
                        x[i - 1] <= x[i - 3] and x[i - 5] + x[i - 1] >= x[i - 3]:
@@ -46,6 +46,6 @@ class Solution(object):
 #               case 3 :   │i<┼─┐
 #                       i-3│ i-5│i-1
 #                          └────┘
-#                           i-2
+#                          i-2
                 return True
         return False
