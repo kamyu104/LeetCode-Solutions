@@ -6,10 +6,10 @@ public:
     bool isSelfCrossing(vector<int>& x) {
         if (x.size() >= 5 && x[3] == x[1] && x[4] + x[0] >= x[2]) {
             // Crossing in a loop:
-            //     i-2
-            // i-1┌────┐
-            //    └─══>┘i-3
-            //    i i-4  (overlapped)  
+            //     2
+            // 3 ┌────┐
+            //   └─══>┘1
+            //   4  0  (overlapped)  
             return true;
         }
 
