@@ -32,7 +32,7 @@ class Solution(object):
             # 3 ┌────┐
             #   └─══>┘1
             #   4  0  (overlapped)  
-                return True
+            return True
 
         for i in xrange(3, len(x)):
             if x[i] >= x[i - 2] and x[i - 3] >= x[i - 1]:
