@@ -15,7 +15,7 @@ public:
 
         for (int i = 3; i < x.size(); ++i) {
             if (x[i] >= x[i - 2] && x[i - 3] >= x[i - 1]) {
-                // Crossing in a shrinking spiral:
+                // Case 1:
                 //    i-2
                 // i-1┌─┐
                 //    └─┼─>i
@@ -23,7 +23,7 @@ public:
                 return true;
             } else if (i >= 5 && x[i - 4] <= x[i - 2] && x[i] + x[i - 4] >= x[i - 2] &&
                        x[i - 1] <= x[i - 3] && x[i - 1] + x[i - 5] >= x[i - 3]) {
-                // Crossing in a growing spiral:
+                // Case 2:
                 //    i-4
                 //    ┌──┐ 
                 //    │i<┼─┐
