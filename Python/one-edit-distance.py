@@ -4,11 +4,13 @@
 # Given two strings S and T, determine if they are both one edit distance apart.
 #
 
-class Solution:
-    # @param s, a string
-    # @param t, a string
-    # @return a boolean
+class Solution(object):
     def isOneEditDistance(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
         m, n = len(s), len(t)
         if m > n:
             return self.isOneEditDistance(t, s)
