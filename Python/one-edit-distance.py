@@ -26,6 +26,7 @@ class Solution(object):
             i += 1
             
         return i == m
-    
+
+   
 if __name__ == "__main__":
     print Solution().isOneEditDistance("teacher", "acher")
