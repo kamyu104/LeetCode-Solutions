@@ -1,6 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
-#
+
 # Compare two version numbers version1 and version1.
 # If version1 > version2 return 1, if version1 < version2 return -1, otherwise return 0.
 # 
@@ -13,13 +13,39 @@
 # 0.1 < 1.1 < 1.2 < 13.37
 #
 
-# Time:  O(n)
-# Space: O(n), this could be enhanced to O(1) by better but trivial string parsing
-class Solution:
-    # @param a, a string
-    # @param b, a string
-    # @return a boolean
+class Solution(object):
     def compareVersion(self, version1, version2):
+        """
+        :type version1: str
+        :type version2: str
+        :rtype: int
+        """
+        n1, n2 = len(version1), len(version2)
+        i, j = 0, 0
+        while i < n1 or j < n2:
+            v1, v2 = 0, 0
+            while i < n1 and version1[i] != '.':
+                v1 = v1 * 10 + int(version1[i])
+                i += 1
+            while j < n2 and version2[j] != '.':
+                v2 = v2 * 10 + int(version2[j])
+                j += 1
+            if v1 != v2:
+                return 1 if v1 > v2 else -1
+            i += 1
+            j += 1
+
+        return 0
+
+# Time:  O(n)
+# Space: O(n)
+class Solution2(object):
+    def compareVersion(self, version1, version2):
+        """
+        :type version1: str
+        :type version2: str
+        :rtype: int
+        """
         v1, v2 = version1.split("."), version2.split(".")
         
         if len(v1) > len(v2):
