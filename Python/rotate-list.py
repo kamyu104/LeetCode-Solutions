@@ -26,7 +26,7 @@ class Solution(object):
         :rtype: ListNode
         """
         if not head or not head.next:
-            return head;
+            return head
 
         n, cur = 1, head
         while cur.next:
