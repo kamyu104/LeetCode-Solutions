@@ -18,30 +18,30 @@ class ListNode:
         if self:
             return "{} -> {}".format(self.val, repr(self.next))
         
-class Solution:
-    # @param head, a ListNode
-    # @param k, an integer
-    # @return a ListNode
+class Solution(object):
     def rotateRight(self, head, k):
-        if head is None:
-            return head
-        
-        cur, len = head, 1
+        """
+        :type head: ListNode
+        :type k: int
+        :rtype: ListNode
+        """
+        if not head or not head.next:
+            return head;
+
+        n, cur = 1, head
         while cur.next:
             cur = cur.next
-            len += 1
+            n += 1
         cur.next = head
-        
-        cur = head
-        shift = len - k%len - 1 
-        while shift > 0:
+
+        cur, tail = head, cur
+        for _ in xrange(n - k % n):
+            tail = cur
             cur = cur.next
-            shift -= 1
-        
-        result = cur.next
-        cur.next = None
-        
-        return result
+        tail.next = None
+
+        return cur
+
     
 if __name__ == "__main__":
     head = ListNode(1)
