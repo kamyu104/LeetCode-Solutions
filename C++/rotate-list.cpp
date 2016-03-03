@@ -9,44 +9,36 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
 class Solution {
 public:
     ListNode* rotateRight(ListNode* head, int k) {
-        ListNode dummy(0);
-        dummy.next = head;
-
-        // Get the length of the list.
-        ListNode *cur = &dummy;
-        int len = 0;
-        while (cur->next) {
-            ++len;
-            cur = cur->next;
-        }
-        if (len == 0) {
-            return nullptr;
-        }
-
-        k %= len;
-        if (k == 0) {
+        if (head == nullptr || head->next == nullptr) {
             return head;
         }
 
-        // Find the position to split.
-        ListNode *slow = &dummy;
-        ListNode *fast = &dummy;
-        while (k) {
-            fast = fast->next;
-            --k;
+        int n = 1;
+        ListNode *cur = head;
+        for (; cur->next; cur = cur->next) {
+            ++n;
         }
-        while (fast && fast->next) {
-            fast = fast->next;
-            slow = slow->next;
+        cur->next = head;
+
+        ListNode *tail = cur;
+        k = n - k % n;
+        cur = head;
+        for (int i = 0; i < k; cur = cur->next, ++i) {
+            tail = cur;
         }
 
-        dummy.next = slow->next;  // New head.
-        slow->next = nullptr;  // Split.
-        fast->next = head;  // Link.
-
-        return dummy.next;
+        tail->next = nullptr;
+        return cur; 
     }
 };
