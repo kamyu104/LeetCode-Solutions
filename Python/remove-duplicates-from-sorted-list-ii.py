@@ -21,21 +21,25 @@ class ListNode:
         else:
             return "{} -> {}".format(self.val, repr(self.next))
 
-class Solution:
-    # @param head, a ListNode
-    # @return a ListNode
+class Solution(object):
     def deleteDuplicates(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
         dummy = ListNode(0)
         dummy.next = head
-        current = dummy
-        while current.next:
-            next = current.next
-            while next.next and next.next.val == next.val:
-                next = next.next
-            if current.next is not next:
-                current.next = next.next
+        pre, cur = dummy, head
+        while cur:
+            if cur.next and cur.next.val == cur.val:
+                val = cur.val;
+                while cur and cur.val == val:
+                    cur = cur.next
+                pre.next = cur
             else:
-                current = current.next
+                pre.next = cur
+                pre = cur
+                cur = cur.next
         return dummy.next
     
 if __name__ == "__main__":
