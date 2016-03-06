@@ -182,6 +182,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 307 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [C++](./C++/range-sum-query-mutable.cpp) [Python](./Python/range-sum-query-mutable.py) | ctor: _O(n)_, update: _O(logn)_, query:  _O(logn)_ | _O(n)_ | Medium | LintCode | DFS, Segment Tree, BIT
 308 | [Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable/) | [C++](./C++/range-sum-query-2d-mutable.cpp) [Python](./Python/range-sum-query-2d-mutable.py) | ctor: _O(m * n)_, update: _O(logm + logn)_, query:  _O(logm + logn)_ | _O(m * n)_ | Hard | 📖 | DFS, Segment Tree, BIT
 315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)| [C++](./C++/count-of-smaller-numbers-after-self.cpp) [Python](./Python/count-of-smaller-numbers-after-self.py)| _O(nlogn)_ | _O(n)_ | Hard | LintCode | BST, BIT, Divide and Conquer |
+Mock Interview| Palindrome Pairs | [C++](./C++/palindrome-pairs.cpp) [Python](./Python/palindrome-pairs.py) | _O(n * l)_          | _O(n * l)_          | Medium           | Trie |
 
 ## Hash Table
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -426,7 +427,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 309| [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | [C++](./C++/best-time-to-buy-and-sell-stock-with-cooldown.cpp) [Python](./Python/best-time-to-buy-and-sell-stock-with-cooldown.py) | _O(n)_ | _O(1)_ | Medium ||
 312| [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | [C++](./C++/burst-balloons.cpp) [Python](./Python/burst-balloons.py) | _O(n^3)_ | _O(n^2)_ | Medium ||
 322| [Coin Change](https://leetcode.com/problems/coin-change/) | [C++](./C++/coin-change.cpp) [Python](./Python/coin-change.py) | _O(n * k)_ | _O(k)_ | Medium ||
-Mock Interview| [House Robber III](https://leetcode.com/problems/house-robber-iii/)| [C++](./C++/house-robber-iii.cpp) [Python](./Python/house-robber-iii.py) | _O(n)_          | _O(h)_          | Medium           ||
+Mock Interview| House Robber III | [C++](./C++/house-robber-iii.cpp) [Python](./Python/house-robber-iii.py) | _O(n)_          | _O(h)_          | Medium           ||
 
 ## Greedy
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
