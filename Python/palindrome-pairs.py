@@ -32,9 +32,9 @@ class TrieNode:
         for i in reversed(xrange(len(s))):
             if s[i] in cur.leaves:
                 cur = cur.leaves[s[i]]
-                if cur.word_idx != -1:
-                    if self.is_palindrome(s, i - 1) and idx != cur.word_idx:
-                        res.append([cur.word_idx, idx])
+                if cur.word_idx not in (-1, idx) and \
+                   self.is_palindrome(s, i - 1):
+                    res.append([cur.word_idx, idx])
             else:
                 break
 
