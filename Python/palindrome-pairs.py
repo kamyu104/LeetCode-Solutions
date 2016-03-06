@@ -1,4 +1,4 @@
-# Time:  O(n * l), n is the number of the words, l is the max length of the words
+# Time:  O(n * l), n is the number of the words, l is the max length of the words.
 # Space: O(n * l)
 
 # Given a list of unique words. Find all pairs of indices (i, j)
