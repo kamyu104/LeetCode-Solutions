@@ -13,7 +13,7 @@
 class Solution {
 public:
     int rob(TreeNode* root) {
-        pair<int, int> res = robHelper(root);
+        auto res = robHelper(root);
         return max(res.first, res.second);
     }
 
