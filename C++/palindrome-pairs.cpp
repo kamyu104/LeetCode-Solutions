@@ -36,10 +36,9 @@ private:
             for (int i = s.length() - 1; i >= 0; --i) {
                 if (p->leaves.find(s[i]) != p->leaves.cend()) {
                     p = p->leaves[s[i]];
-                    if (p->word_idx != -1) {
-                        if (is_palindrome(s, i - 1) && idx != p->word_idx) {
-                            res->push_back({p->word_idx, idx});
-                        }
+                    if (p->word_idx != -1 && p->word_idx != idx &&
+                        is_palindrome(s, i - 1)) {
+                        res->push_back({p->word_idx, idx});
                     }
                 } else {
                     break;
