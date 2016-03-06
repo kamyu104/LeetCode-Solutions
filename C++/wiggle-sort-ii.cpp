@@ -1,4 +1,4 @@
-// Time:  O(n) ~ O(n^2)
+// Time:  O(n) ~ O(n^2), O(n) on average.
 // Space: O(1)
 
 // Tri Partition (aka Dutch National Flag Problem) with virtual index solution. (44ms)
