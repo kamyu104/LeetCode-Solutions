@@ -9,28 +9,24 @@
 #
 
 # Definition for singly-linked list.
-class ListNode:
+class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
-    
-    def __repr__(self):
-        if self is None:
-            return "Nil"
-        else:
-            return "{} -> {}".format(self.val, repr(self.next))
 
-class Solution:
-    # @param head, a ListNode
-    # @return a ListNode
+class Solution(object):
     def deleteDuplicates(self, head):
-        current = head
-        while current and current.next:
-            next = current.next
-            if current.val == next.val:
-                current.next = current.next.next
-            else:
-                current = next
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        cur = head
+        while cur:
+            runner = cur.next
+            while runner and runner.val == cur.val:
+                runner = runner.next
+            cur.next = runner
+            cur = runner
         return head
 
 if __name__ == "__main__":
