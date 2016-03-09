@@ -1,5 +1,5 @@
-# Time:  O(n * l), n is the number of the words, l is the max length of the words.
-# Space: O(n * l)
+# Time:  O(n * k), n is the number of the words, k is the max length of the words.
+# Space: O(n * k)
 
 # Given a list of unique words. Find all pairs of indices (i, j)
 # in the given list, so that the concatenation of the two words, 
