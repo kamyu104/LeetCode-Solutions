@@ -1,6 +1,67 @@
-// Time:  O(n * l), n is the number of the words, l is the max length of the words.
-// Space: O(n * l)
+// Time:  O(n * k^2), n is the number of the words, k is the max length of the words.
+// Space: O(n * k + n^2)
 
+class Solution {
+public:
+    struct hashPair {
+    public:
+        template <typename T, typename U>
+        std::size_t operator()(const std::pair<T, U> &x) const {
+            return std::hash<T>()(x.first) ^ std::hash<U>()(x.second);
+        }
+    };
+
+    vector<vector<int>> palindromePairs(vector<string>& words) {
+        vector<vector<int>> res;
+        unordered_map<string, int> lookup;
+        unordered_set<pair<int, int>, hashPair> visited;
+        for (int i = 0; i < words.size(); ++i) {
+            lookup[words[i]] = i;
+        }
+
+        for (int i = 0; i < words.size(); ++i) {
+            const int k = words[i].size();
+            for (int l = 0; l <= k; ++l) {
+                if (is_palindrome(words[i], 0, l - 1)) {
+                    string tmp = words[i].substr(l);
+                    reverse(tmp.begin(), tmp.end());
+                    if (lookup.find(tmp) != lookup.end()) {
+                        if ((lookup[tmp] != i) &&
+                            (visited.find(make_pair(lookup[tmp], i)) == visited.end())) {
+                            res.push_back({lookup[tmp], i});
+                            visited.emplace(make_pair(lookup[tmp], i));
+                        }
+                    }
+                }
+                if (is_palindrome(words[i], l, k - 1)) {
+                    string tmp = words[i].substr(0, l); 
+                    reverse(tmp.begin(), tmp.end());
+                    if (lookup.find(tmp) != lookup.end()) {
+                        if ((i != lookup[tmp]) &&
+                            (visited.find(make_pair(i, lookup[tmp])) == visited.end())) {
+                            res.push_back({i, lookup[tmp]});
+                            visited.emplace(make_pair(i, lookup[tmp]));
+                        }
+                    }
+                }
+            }
+        }
+        return res;
+    }
+
+private:
+    bool is_palindrome(string& s, int start, int end) {
+        while (start < end) {
+            if (s[start++] != s[end--]) {
+                return false;
+            }
+        }
+        return true;
+    }
+};
+
+// Time:  O(n * k), n is the number of the words, k is the max length of the words.
+// Space: O(n * k)
 class Solution_MLE {
 public:
     vector<vector<int>> palindromePairs(vector<string>& words) {
