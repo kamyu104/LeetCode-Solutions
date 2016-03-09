@@ -59,7 +59,7 @@ private:
         ~TrieNode() {
             for (auto& kv : leaves) {
                 if (kv.second) {
-                    kv.second->~TrieNode();
+                    delete kv.second;
                 }
             }
         }
