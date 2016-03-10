@@ -8,7 +8,6 @@
 
 # Manacher's Algorithm
 # http://leetcode.com/2011/11/longest-palindromic-substring-part-ii.html
-
 class Solution(object):
     def longestPalindrome(self, s):
         """
