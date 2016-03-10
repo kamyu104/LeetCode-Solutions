@@ -138,6 +138,7 @@ public:
 //                        k is the max length of the words,
 //                        r is the number of the result.
 // Space: O(n * k)
+// Trie solution.
 class Solution_MLE {
 public:
     vector<vector<int>> palindromePairs(vector<string>& words) {
