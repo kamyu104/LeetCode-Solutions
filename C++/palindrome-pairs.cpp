@@ -134,7 +134,9 @@ public:
     }
 };
 
-// Time:  O(n * k), n is the number of the words, k is the max length of the words.
+// Time:  O(n * k^2 + r), n is the number of the words, k is the max length of the words.
+//                        k is the max length of the words,
+//                        r is the number of the result.
 // Space: O(n * k)
 class Solution_MLE {
 public:
@@ -168,11 +170,11 @@ private:
 
         void find(const string& s, int idx, vector<vector<int>> *res) {
             auto* p = this;
-            for (int i = s.length() - 1; i >= 0; --i) {
+            for (int i = s.length() - 1; i >= 0; --i) {  // O(k)
                 if (p->leaves.find(s[i]) != p->leaves.cend()) {
                     p = p->leaves[s[i]];
                     if (p->word_idx != -1 && p->word_idx != idx &&
-                        is_palindrome(s, i - 1)) {
+                        is_palindrome(s, i - 1)) {  // O(k)
                         res->push_back({p->word_idx, idx});
                     }
                 } else {
