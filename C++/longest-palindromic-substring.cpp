@@ -28,15 +28,14 @@ public:
         }
 
         // Find the maximum element in P.
-        int max_len = 0, center_index = 0;
+        int max_i = 0;
         for (int i = 1; i < n - 1; ++i) {
-            if (P[i] > max_len) {
-                max_len = P[i];
-                center_index = i;
+            if (P[i] > P[max_i]) {
+                max_i = i;
             }
         }
 
-        return s.substr((center_index - 1 - max_len) / 2, max_len);
+        return s.substr((max_i - P[max_i]) / 2, P[max_i]);
     }
 
 private:
