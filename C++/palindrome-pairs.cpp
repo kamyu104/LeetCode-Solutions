@@ -1,49 +1,31 @@
-// Time:  O(n * k^2 + r), n is the number of the words,
-//                        k is the max length of the words,
-//                        r is the number of the result.
-// Space: O(n * k + r)
+// Time:  O(n * k^2), n is the number of the words,
+//                    k is the max length of the words,
+//                    r is the number of the result.
+// Space: O(n * k)
 
 class Solution {
 public:
-    struct hashPair {
-    public:
-        template <typename T, typename U>
-        std::size_t operator()(const std::pair<T, U> &x) const {
-            return std::hash<T>()(x.first) ^ std::hash<U>()(x.second);
-        }
-    };
-
     vector<vector<int>> palindromePairs(vector<string>& words) {
         vector<vector<int>> res;
         unordered_map<string, int> lookup;
-        unordered_set<pair<int, int>, hashPair> visited;  // At most O(r) space.
         for (int i = 0; i < words.size(); ++i) {
-            lookup[words[i]] = i;  // Total O(n * k) space.
+            lookup[words[i]] = i;
         }
 
         for (int i = 0; i < words.size(); ++i) {
-            const int k = words[i].size();
-            for (int l = 0; l <= k; ++l) {
-                if (is_palindrome(words[i], 0, l - 1)) {
-                    string tmp = words[i].substr(l);
-                    reverse(tmp.begin(), tmp.end());
-                    if (lookup.find(tmp) != lookup.end()) {
-                        if ((lookup[tmp] != i) &&
-                            (visited.find(make_pair(lookup[tmp], i)) == visited.end())) {
-                            res.push_back({lookup[tmp], i});
-                            visited.emplace(make_pair(lookup[tmp], i));
-                        }
+            for (int j = 0; j <= words[i].length(); ++j) {
+                if (is_palindrome(words[i], j, words[i].length() - 1)) {
+                    string suffix = words[i].substr(0, j); 
+                    reverse(suffix.begin(), suffix.end());
+                    if (lookup.find(suffix) != lookup.end() && i != lookup[suffix]) {
+                        res.push_back({i, lookup[suffix]});
                     }
                 }
-                if (is_palindrome(words[i], l, k - 1)) {
-                    string tmp = words[i].substr(0, l); 
-                    reverse(tmp.begin(), tmp.end());
-                    if (lookup.find(tmp) != lookup.end()) {
-                        if ((i != lookup[tmp]) &&
-                            (visited.find(make_pair(i, lookup[tmp])) == visited.end())) {
-                            res.push_back({i, lookup[tmp]});
-                            visited.emplace(make_pair(i, lookup[tmp]));
-                        }
+                if (j > 0 && is_palindrome(words[i], 0, j - 1)) {
+                    string prefix = words[i].substr(j);
+                    reverse(prefix.begin(), prefix.end());
+                    if (lookup.find(prefix) != lookup.end() && lookup[prefix] != i) {
+                        res.push_back({lookup[prefix], i});
                     }
                 }
             }
