@@ -22,14 +22,6 @@ class Solution(object):
         :type words: List[str]
         :rtype: List[List[int]]
         """
-        def is_palindrome(s, start, end):
-            while start <= end:
-                if s[start] != s[end]:
-                    return False
-                start += 1
-                end -= 1
-            return True
-
         res = [] 
         lookup = {}
         for i, word in enumerate(words):
@@ -37,14 +29,14 @@ class Solution(object):
 
         for i in xrange(len(words)):
             for j in xrange(len(words[i]) + 1):
-                if is_palindrome(words[i], j, len(words[i]) - 1):
-                    suffix = words[i][:j][::-1]
-                    if suffix in lookup and lookup[suffix] != i:
-                        res.append([i, lookup[suffix]])
-                if j > 0 and is_palindrome(words[i], 0, j - 1):
-                    prefix = words[i][j:][::-1]
-                    if prefix in lookup and lookup[prefix] != i:
-                        res.append([lookup[prefix], i])
+                prefix = words[i][j:]
+                suffix = words[i][:j]
+                if prefix == prefix[::-1] and \
+                   suffix[::-1] in lookup and lookup[suffix[::-1]] != i:
+                    res.append([i, lookup[suffix[::-1]]])
+                if j > 0 and suffix == suffix[::-1] and \
+                   prefix[::-1] in lookup and lookup[prefix[::-1]] != i:
+                    res.append([lookup[prefix[::-1]], i])
         return res
 
 # Trie solution.
