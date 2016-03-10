@@ -16,9 +16,9 @@ public:
     vector<vector<int>> palindromePairs(vector<string>& words) {
         vector<vector<int>> res;
         unordered_map<string, int> lookup;
-        unordered_set<pair<int, int>, hashPair> visited;
+        unordered_set<pair<int, int>, hashPair> visited;  // At most O(r) space.
         for (int i = 0; i < words.size(); ++i) {
-            lookup[words[i]] = i;
+            lookup[words[i]] = i;  // Total O(n * k) space.
         }
 
         for (int i = 0; i < words.size(); ++i) {
@@ -62,21 +62,21 @@ private:
     }
 };
 
-// Time:  O(n * k + r), n is the number of the words,
-//                      k is the max length of the words,
-//                      r is the number of the result.
+// Time:  O(n * k^2 + r), n is the number of the words,
+//                        k is the max length of the words,
+//                        r is the number of the result.
 // Space: O(n * k^2)
 // Manacher solution.
 class Solution2 {
 public:
     vector<vector<int>> palindromePairs(vector<string>& words) {
         unordered_multimap<string, int> prefix, suffix;
-        for (int i = 0; i < words.size(); ++i) {
+        for (int i = 0; i < words.size(); ++i) {  // O(n)
             vector<int> P;
             manacher(words[i], &P);
-            for (int j = 0; j < P.size(); ++j) {
+            for (int j = 0; j < P.size(); ++j) {  // O(k)
                 if (j - P[j] == 1) {
-                    prefix.emplace(words[i].substr((j + P[j]) / 2), i);
+                    prefix.emplace(words[i].substr((j + P[j]) / 2), i);  // O(k)
                 }
                 if (j + P[j] == P.size() - 2) {
                     suffix.emplace(words[i].substr(0, (j - P[j]) / 2), i);
@@ -85,8 +85,8 @@ public:
         }
 
         vector<vector<int>> res;
-        for (int i = 0; i < words.size(); ++i) {
-            string reversed_word(words[i].rbegin(), words[i].rend());
+        for (int i = 0; i < words.size(); ++i) {  // O(n)
+            string reversed_word(words[i].rbegin(), words[i].rend());  // O(k)
             auto its = prefix.equal_range(reversed_word);
             for (auto it = its.first; it != its.second; ++it) {
                 if (it->second != i) {
