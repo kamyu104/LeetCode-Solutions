@@ -1,6 +1,5 @@
 // Time:  O(n * k^2), n is the number of the words,
-//                    k is the max length of the words,
-//                    r is the number of the result.
+//                    k is the max length of the words.
 // Space: O(n * k)
 
 class Solution {
