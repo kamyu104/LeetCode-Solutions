@@ -39,6 +39,10 @@ class Solution(object):
                     res.append([lookup[prefix[::-1]], i])
         return res
 
+
+# Time:  O(n * k^2), n is the number of the words, k is the max length of the words.
+#                    k is the max length of the words.
+# Space: O(n * k)
 # Trie solution.
 class TrieNode:
     def __init__(self):
@@ -73,10 +77,6 @@ class TrieNode:
             j -= 1
         return True
 
-# Time:  O(n * k^2), n is the number of the words, k is the max length of the words.
-#                    k is the max length of the words.
-# Space: O(n * k)
-# Trie solution.
 class Solution_MLE(object):
     def palindromePairs(self, words):
         """
