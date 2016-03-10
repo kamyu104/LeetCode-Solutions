@@ -1,5 +1,7 @@
-// Time:  O(n * k^2), n is the number of the words, k is the max length of the words.
-// Space: O(n * k + n^2)
+// Time:  O(n * k^2 + r), n is the number of the words,
+//                        k is the max length of the words,
+//                        r is the number of the result.
+// Space: O(n * k + r)
 
 class Solution {
 public:
@@ -57,6 +59,78 @@ private:
             }
         }
         return true;
+    }
+};
+
+// Time:  O(n * k + r), n is the number of the words,
+//                      k is the max length of the words,
+//                      r is the number of the result.
+// Space: O(n * k^2)
+// Manacher solution.
+class Solution2 {
+public:
+    vector<vector<int>> palindromePairs(vector<string>& words) {
+        unordered_multimap<string, int> prefix, suffix;
+        for (int i = 0; i < words.size(); ++i) {
+            vector<int> P;
+            manacher(words[i], &P);
+            for (int j = 0; j < P.size(); ++j) {
+                if (j - P[j] == 1) {
+                    prefix.emplace(words[i].substr((j + P[j]) / 2), i);
+                }
+                if (j + P[j] == P.size() - 2) {
+                    suffix.emplace(words[i].substr(0, (j - P[j]) / 2), i);
+                }
+            }
+        }
+
+        vector<vector<int>> res;
+        for (int i = 0; i < words.size(); ++i) {
+            string reversed_word(words[i].rbegin(), words[i].rend());
+            auto its = prefix.equal_range(reversed_word);
+            for (auto it = its.first; it != its.second; ++it) {
+                if (it->second != i) {
+                    res.push_back({i, it->second});
+                }
+            }
+            its = suffix.equal_range(reversed_word);
+            for (auto it = its.first; it != its.second; ++it) {
+                if (words[i].size() != words[it->second].size()) {
+                    res.push_back({it->second, i});
+                }
+            }
+        }
+        return res;
+    }
+
+    void manacher(const string& s, vector<int> *P) {
+        string T = preProcess(s);
+        const int n = T.length();
+        P->resize(n);
+        int C = 0, R = 0;
+        for (int i = 1; i < n - 1; ++i) {
+            int i_mirror = 2 * C - i;
+            (*P)[i] = (R > i) ? min(R - i, (*P)[i_mirror]) : 0;
+            while (T[i + 1 + (*P)[i]] == T[i - 1 - (*P)[i]]) {
+                ++(*P)[i];
+            }
+            if (i + (*P)[i] > R) {
+                C = i;
+                R = i + (*P)[i];
+            }
+        }
+    }
+
+    string preProcess(const string& s) {
+        if (s.empty()) {
+            return "^$";
+        }
+        string ret = "^";
+        for (int i = 0; i < s.length(); ++i) {
+            ret += "#" + s.substr(i, 1);
+        }
+        ret += "#$";
+        return ret;
     }
 };
 
