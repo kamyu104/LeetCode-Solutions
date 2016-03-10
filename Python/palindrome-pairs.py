@@ -1,4 +1,5 @@
-# Time:  O(n * k), n is the number of the words, k is the max length of the words.
+# Time:  O(n * k^2), n is the number of the words,
+#                    k is the max length of the words.
 # Space: O(n * k)
 
 # Given a list of unique words. Find all pairs of indices (i, j)
@@ -14,6 +15,39 @@
 # Return [[0, 1], [1, 0], [3, 2], [2, 4]]
 # The palindromes are ["dcbaabcd", "abcddcba", "slls", "llssssll"]
 
+
+class Solution(object):
+    def palindromePairs(self, words):
+        """
+        :type words: List[str]
+        :rtype: List[List[int]]
+        """
+        def is_palindrome(s, start, end):
+            while start <= end:
+                if s[start] != s[end]:
+                    return False
+                start += 1
+                end -= 1
+            return True
+
+        res = [] 
+        lookup = {}
+        for i, word in enumerate(words):
+            lookup[word] = i
+
+        for i in xrange(len(words)):
+            for j in xrange(len(words[i]) + 1):
+                if is_palindrome(words[i], j, len(words[i]) - 1):
+                    suffix = words[i][:j][::-1]
+                    if suffix in lookup and lookup[suffix] != i:
+                        res.append([i, lookup[suffix]])
+                if j > 0 and is_palindrome(words[i], 0, j - 1):
+                    prefix = words[i][j:][::-1]
+                    if prefix in lookup and lookup[prefix] != i:
+                        res.append([lookup[prefix], i])
+        return res
+
+# Trie solution.
 class TrieNode:
     def __init__(self):
         self.word_idx = -1
@@ -47,7 +81,11 @@ class TrieNode:
             j -= 1
         return True
 
-
+# Time:  O(n * k^2 + r), n is the number of the words, k is the max length of the words.
+#                        k is the max length of the words,
+#                        r is the number of the result.
+# Space: O(n * k)
+# Trie solution.
 class Solution_MLE(object):
     def palindromePairs(self, words):
         """
