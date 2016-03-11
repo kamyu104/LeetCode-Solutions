@@ -1,5 +1,4 @@
-// Time:  O(n * k^2), n is the number of the words,
-//                    k is the max length of the words.
+// Time:  O(n * k^2), n is the number of the words, k is the max length of the words.
 // Space: O(n * k)
 
 class Solution {
@@ -43,8 +42,7 @@ private:
     }
 };
 
-// Time:  O(n * k^2), n is the number of the words,
-//                    k is the max length of the words.
+// Time:  O(n * k^2), n is the number of the words, k is the max length of the words.
 // Space: O(n * k^2)
 // Manacher solution.
 class Solution2 {
@@ -115,7 +113,6 @@ public:
 };
 
 // Time:  O(n * k^2), n is the number of the words, k is the max length of the words.
-//                    k is the max length of the words.
 // Space: O(n * k)
 // Trie solution.
 class Solution_MLE {
