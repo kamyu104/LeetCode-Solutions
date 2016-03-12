@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-336%20%2F%20336-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-337%20%2F%20337-ff69b4.svg)
 
-Up to date (2016-03-09), there are `319` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
+Up to date (2016-03-12), there are `320` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
 The number of questions is increasing recently.
-Here is the classification of all `336` questions.
+Here is the classification of all `337` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -300,7 +300,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 298 | [Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) | [C++](./C++/binary-tree-longest-consecutive-sequence.cpp) [Python](./Python/binary-tree-longest-consecutive-sequence.py) | _O(n)_ | _O(h)_ | Medium    |📖| 
 327| [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/) | [C++](./C++/count-of-range-sum.cpp) [Python](./Python/count-of-range-sum.py) | _O(nlogn)_        | _O(n)_          | Hard         ||
 333 | [Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree/) | [C++](./C++/largest-bst-subtree.cpp) [Python](./Python/largest-bst-subtree.py) | _O(n)_ | _O(h)_ | Medium    |📖| 
-Mock Interview| House Robber III | [C++](./C++/house-robber-iii.cpp) [Python](./Python/house-robber-iii.py) | _O(n)_          | _O(h)_          | Medium           ||
+337| [House Robber III](https://leetcode.com/problems/house-robber-iii/) | [C++](./C++/house-robber-iii.cpp) [Python](./Python/house-robber-iii.py) | _O(n)_          | _O(h)_          | Medium           ||
 
 ## Binary Search
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
