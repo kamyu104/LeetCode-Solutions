@@ -14,7 +14,6 @@
 # Return [[0, 1], [1, 0], [3, 2], [2, 4]]
 # The palindromes are ["dcbaabcd", "abcddcba", "slls", "llssssll"]
 
-
 class Solution(object):
     def palindromePairs(self, words):
         """
