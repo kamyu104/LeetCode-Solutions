@@ -16,11 +16,11 @@ class Solution(object):
         """
         def preProcess(s):
             if not s:
-                return "^$"
-            T = "^"
-            for i in s:
-                T +=  "#" + i
-            T += "#$"
+                return ['^', '$']
+            T = ['^']
+            for c in s:
+                T +=  ['#', c]
+            T += ['#', '$']
             return T
 
         T = preProcess(s)
