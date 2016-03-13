@@ -13,10 +13,12 @@
 #
 
 # KMP Algorithm
-class Solution:
-    # @param {string} s
-    # @return {string}
+class Solution(object):
     def shortestPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
         if not s:
             return s
             
@@ -39,12 +41,25 @@ class Solution:
         return prefix
 
 
+# Time:  O(n)
+# Space: O(n)
 # Manacher's Algorithm
-class Solution_TLE:
-    # @param {string} s
-    # @return {string}
+class Solution2(object):
     def shortestPalindrome(self, s):
-        string = self.preProcess(s)
+        """
+        :type s: str
+        :rtype: str
+        """
+        def preProcess(s):
+            if not s:
+                return ['^', '$']
+            string = ['^']
+            for c in s:
+                string +=  ['#', c]
+            string += ['#', '$']
+            return string
+
+        string = preProcess(s)
         palindrome = [0] * len(string) 
         center, right = 0, 0
         for i in xrange(1, len(string) - 1):
@@ -65,13 +80,3 @@ class Solution_TLE:
             if i - palindrome[i] == 1:
                 max_len = palindrome[i]
         return s[len(s)-1:max_len-1:-1] + s
-        
-    def preProcess(self, s):
-        if not s:
-            return "^$"
-        string = "^"
-        for i in s:
-            string +=  "#" + i
-        string += "#$"
-        return string
-        
