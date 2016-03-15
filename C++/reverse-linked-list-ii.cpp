@@ -1,5 +1,5 @@
-// Time Complexity: O(n)
-// Space Complexity: O(1)
+// Time:  O(n)
+// Space: O(1)
 
 /**
  * Definition for singly-linked list.
