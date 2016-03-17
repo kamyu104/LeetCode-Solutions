@@ -6,7 +6,7 @@ public:
     vector<int> countBits(int num) {
         vector<int> res{0};
         for (int i = 1; i <= num; ++i) {
-            res.emplace_back(res[i >> 1] + (i & 1));
+            res.emplace_back((i & 1) + res[i >> 1]);
         }
         return res;
     }
