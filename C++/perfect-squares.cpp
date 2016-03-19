@@ -16,6 +16,8 @@ public:
     }
 };
 
+// Time:  O(n * sqrt(n))
+// Space: O(n)
 class Solution2 {
 public:
     int numSquares(int n) {
