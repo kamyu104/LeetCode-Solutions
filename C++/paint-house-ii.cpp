@@ -54,6 +54,5 @@ public:
                         };
         vector<int> min_cost = accumulate(costs.cbegin(), costs.cend(), vector<int>(costs[0].size(), 0), combine);
         return *min_element(min_cost.cbegin(), min_cost.cend());
-
     }
 };
