@@ -44,6 +44,7 @@ public:
     }
 };
 
+
 // Time:  O(n * logk)
 // Space: O(k)
 /**
@@ -75,23 +76,20 @@ private:
     ListNode *mergeTwoLists(ListNode *left, ListNode *right) {
         ListNode dummy(0);
         auto *p = &dummy;
-        for(; left && right; p = p->next) {
+        for (; left && right; p = p->next) {
             if(left->val < right->val) {
                 p->next = left;
                 left = left->next;
-            }
-            else {
+            } else {
                 p->next = right;
                 right = right->next;
             }
         }
-        if(left) {
+        if (left) {
             p->next = left;
-        }
-        else {
+        } else {
             p->next = right;
         }
-
         return dummy.next;
     }
 };
