@@ -11,18 +11,18 @@ private:
     template<typename T>
     int length(T begin, T end, char c) {
         int len = 0, depth = 0;
-        T start = prev(begin);
+        T start = begin;
         for (T it = begin; it != end; ++it) {
             if (*it == c) {
                 ++depth;
             } else {
                 --depth;
                 if (depth < 0) {
-                    start = it;
+                    start = next(it);
                     depth = 0;
                 } else {
                     if (depth == 0) {
-                        len = max(len, static_cast<int>(distance(start, it)));
+                        len = max(len, static_cast<int>(distance(start, it)) + 1);
                     }
                 }
             }
