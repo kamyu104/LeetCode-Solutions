@@ -1,6 +1,6 @@
-# Time:  O(1)
-# Space: O(n)
-#
+# Time:  O(1), per operation.
+# Space: O(k), k is the capacity of cache.
+
 # Design and implement a data structure for Least Recently Used (LRU) cache. 
 # It should support the following operations: get and set.
 # 
@@ -8,7 +8,6 @@
 # 
 # set(key, value) - Set or insert the value if the key is not already present. 
 # When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
-#
 
 class ListNode:
     def __init__(self, key, val):
