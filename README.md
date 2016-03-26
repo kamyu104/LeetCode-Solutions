@@ -141,7 +141,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 20| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [C++](./C++/valid-parentheses.cpp) [Python](./Python/valid-parentheses.py) | _O(n)_        | _O(n)_          | Easy           ||
-32| [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)| [Python](./Python/longest-valid-parentheses.py) | _O(n)_ | _O(1)_ | Hard   ||
+32| [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)| [C++](./C++/longest-valid-parentheses.cpp) [Python](./Python/longest-valid-parentheses.py) | _O(n)_ | _O(1)_ | Hard   ||
 71| [Simplify Path](https://leetcode.com/problems/simplify-path/)| [Python](./Python/simplify-path.py) | _O(n)_        | _O(n)_          | Medium         ||
 101| [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)| [Python](./Python/symmetric-tree.py) | _O(n)_      | _O(h)_          | Easy           ||
 150| [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)| [Python](./Python/evaluate-reverse-polish-notation.py)| _O(n)_| _O(n)_| Medium          ||
