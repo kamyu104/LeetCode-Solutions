@@ -1,5 +1,5 @@
 // Time:  O(1), per operation.
-// Space: O(k), k is the capacity of cache.
+// Space: O(k), k is capacity of cache.
 
 #include <list>
 
@@ -9,12 +9,10 @@ public:
     }
     
     int get(int key) {
-        auto it = map_.find(key);
-        if (it != map_.end()) {
+        if (map_.find(key) != map_.end()) {
             // It key exists, update it.
-            auto l_it = it->second;
-            int value = l_it->second;
-            update(it, value);
+            const auto value = map_[key]->second;
+            update(key, value);
             return value;
         } else {
             return -1;
@@ -22,19 +20,12 @@ public:
     }
     
     void set(int key, int value) {
-        auto it = map_.find(key);
-        // It key exists, update it.
-        if (it != map_.end()) {
-            update(it, value);
-        } else {
-            // If cache is full, remove the last one.
-            if (list_.size() == capa_) {
-                auto del = list_.back(); list_.pop_back();
-                map_.erase(del.first);
-            }
-            list_.emplace_front(key, value);
-            map_[key]=list_.begin();
+        // If cache is full while inserting, remove the last one.
+        if (map_.find(key) == map_.end() && list_.size() == capa_) {
+            auto del = list_.back(); list_.pop_back();
+            map_.erase(del.first);
         }
+         update(key, value);
     }
     
 private:
@@ -43,11 +34,12 @@ private:
     int capa_;
     
     // Update (key, iterator of (key, value)) pair
-    void update(unordered_map<int, list<pair<int, int>>::iterator>::iterator it, int value) {
-        auto l_it = it->second;
-        int key = l_it->first;
-        list_.erase(l_it);
+    void update(int key, int value) {
+        auto it = map_.find(key);
+        if (it != map_.end()) {
+            list_.erase(it->second);
+        }
         list_.emplace_front(key, value);
-        it->second = list_.begin();
+        map_[key] = list_.begin();
     }
 };
