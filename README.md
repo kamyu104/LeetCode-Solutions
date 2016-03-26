@@ -218,7 +218,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Data Structure
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-146| [LRU Cache](https://leetcode.com/problems/lru-cache/)     | [Python](./Python/lru-cache.py)  | _O(1)_          | _O(n)_          | Hard         ||
+146| [LRU Cache](https://leetcode.com/problems/lru-cache/)     | [C++](./C++/lru-cache.cpp) [Python](./Python/lru-cache.py)  | _O(1)_          | _O(k)_          | Hard         ||
 225| [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)     | [C++](./C++/implement-stack-using-queues.cpp) [Python](./Python/implement-stack-using-queues.py)  | push: _O(n)_, pop: _O(1)_, top: _O(1)_ | _O(n)_          | Medium         ||
 
 ## Math
