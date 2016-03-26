@@ -1,5 +1,5 @@
 // Time:  O(1), per operation.
-// Space: O(c), k is the capacity of cache.
+// Space: O(k), k is the capacity of cache.
 
 #include <list>
 
