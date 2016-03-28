@@ -11,7 +11,7 @@
  * };
  */
  
-# Iterative solution.
+// Iterative solution.
 class Solution {
 public:
     bool isSymmetric(TreeNode* root) {
@@ -47,7 +47,7 @@ public:
 };
 
 
-# Recursive solution.
+// Recursive solution.
 class Solution2 {
 public:
     bool isSymmetric(TreeNode* root) {
