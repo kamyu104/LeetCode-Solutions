@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-338%20%2F%20338-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-339%20%2F%20339-ff69b4.svg)
 
-Up to date (2016-03-17), there are `321` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
+Up to date (2016-03-30), there are `322` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
 The number of questions is increasing recently.
-Here is the classification of all `338` questions.
+Here is the classification of all `339` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -365,6 +365,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 301| [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/) | [C++](./C++/remove-invalid-parentheses.cpp)  [Python](./Python/remove-invalid-parentheses.py)  | _O(C(n, c))_ | _O(c)_ | Medium         |||
 329| [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [C++](./C++/longest-increasing-path-in-a-matrix.cpp)  [Python](./Python/longest-increasing-path-in-a-matrix.py)  | _O(m * n)_ | _O(m * n)_ | Medium         |||
 332| [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) | [C++](./C++/reconstruct-itinerary.cpp)  [Python](./Python/reconstruct-itinerary.py)  | _O(t! / (n1! * n2! * ... nk!))_ | _O(t)_ | Medium         |||
+339| [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) | [C++](./C++/nested-list-weight-sum.cpp)  [Python](./Python/nested-list-weight-sum.py)  | _O(n)_ | _O(h)_ | Easy         |📖||
 
 ## Backtracking
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
