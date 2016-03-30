@@ -9,7 +9,7 @@ public:
         for (int i = 0; i < rooms.size(); ++i) {
             for (int j = 0; j < rooms[0].size(); ++j) {
                 if (rooms[i][j] == 0) {
-                    q.emplace(make_pair(i, j));
+                    q.emplace(i, j);
                 }
             }
         }
@@ -26,7 +26,7 @@ public:
                     J >= 0 && J < rooms[0].size() &&
                     rooms[I][J] == INF) {
                     rooms[I][J] = rooms[i][j] + 1;
-                    q.emplace(make_pair(I, J));
+                    q.emplace(I, J);
                 }
             }
         }
