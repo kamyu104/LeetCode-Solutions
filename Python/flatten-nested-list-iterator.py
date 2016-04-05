@@ -1,3 +1,6 @@
+# Time:  O(n), n is the number of the integers.
+# Space: O(l), l is the number of the nested lists.
+
 # """
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation
