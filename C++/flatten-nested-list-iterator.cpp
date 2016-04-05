@@ -18,6 +18,8 @@
  *     const vector<NestedInteger> &getList() const;
  * };
  */
+ 
+ // Using stack and iterator.
 class NestedIterator {
 public:
     using IT = vector<NestedInteger>::iterator;
@@ -52,6 +54,7 @@ private:
 
 // Time:  O(n)
 // Space: O(n)
+// Using stack.
 class NestedIterator2 {
 public:
     NestedIterator(vector<NestedInteger> &nestedList) {
