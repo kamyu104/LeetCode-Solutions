@@ -48,6 +48,7 @@ public:
         }
         return false;
     }
+
 private:
     stack<pair<IT, IT>> nodes_;
 };
