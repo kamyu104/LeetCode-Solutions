@@ -33,15 +33,15 @@ class NestedIterator(object):
         Initialize your data structure here.
         :type nestedList: List[NestedInteger]
         """
-        self.__nodes = [[nestedList, 0]]
+        self.__depth = [[nestedList, 0]]
 
 
     def next(self):
         """
         :rtype: int
         """
-        nestedList, i = self.__nodes[-1]
-        self.__nodes[-1][1] += 1
+        nestedList, i = self.__depth[-1]
+        self.__depth[-1][1] += 1
         return nestedList[i].getInteger()
 
 
@@ -49,15 +49,15 @@ class NestedIterator(object):
         """
         :rtype: bool
         """
-        while self.__nodes:
-            nestedList, i = self.__nodes[-1]
+        while self.__depth:
+            nestedList, i = self.__depth[-1]
             if i == len(nestedList):
-                self.__nodes.pop()
+                self.__depth.pop()
             elif nestedList[i].isInteger():
                     return True
             else:
-                self.__nodes[-1][1] += 1
-                self.__nodes.append([nestedList[i].getList(), 0])
+                self.__depth[-1][1] += 1
+                self.__depth.append([nestedList[i].getList(), 0])
         return False
  
 
