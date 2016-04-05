@@ -28,9 +28,7 @@ public:
     }
 
     int next() {
-        const auto result = nodes_.top().first->getInteger();
-        ++nodes_.top().first;
-        return result;
+        return (nodes_.top().first++)->getInteger();
     }
     
     bool hasNext() {
@@ -58,7 +56,7 @@ private:
 // Using stack.
 class NestedIterator2 {
 public:
-    NestedIterator(vector<NestedInteger> &nestedList) {
+    NestedIterator2(vector<NestedInteger> &nestedList) {
         for (int i = static_cast<int>(nestedList.size()) - 1; i >= 0; --i) {
             nodes_.emplace(&nestedList[i]);
         }
