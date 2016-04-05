@@ -22,18 +22,18 @@ class NestedIterator {
 public:
     NestedIterator(vector<NestedInteger> &nestedList) {
         for (int i = static_cast<int>(nestedList.size()) - 1; i >= 0; --i) {
-            nodes_.push(&nestedList[i]);
+            nodes_.emplace(&nestedList[i]);
         }
     }
 
     int next() {
-        int result = nodes_.top()->getInteger();
+        auto result = nodes_.top()->getInteger();
         nodes_.pop();
         return result;
     }
     
     bool hasNext() {
-        while(!nodes_.empty()) {
+        while (!nodes_.empty()) {
             auto *cur = nodes_.top();
             if (cur->isInteger()) {
                 return true;
@@ -41,11 +41,12 @@ public:
             nodes_.pop();
             auto& children = cur->getList();
             for (int i = static_cast<int>(children.size()) - 1; i >= 0; --i) {
-                nodes_.push(&children[i]);
+                nodes_.emplace(&children[i]);
             }
         }
         return false;
     }
+
 private:
     stack<NestedInteger *> nodes_;
 };
