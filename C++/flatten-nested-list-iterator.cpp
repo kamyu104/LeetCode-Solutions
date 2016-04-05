@@ -19,12 +19,12 @@
  * };
  */
  
- // Using stack and iterator.
+// Using stack and iterator.
 class NestedIterator {
 public:
-    using IT = vector<NestedInteger>::iterator;
+    using IT = vector<NestedInteger>::const_iterator;
     NestedIterator(vector<NestedInteger> &nestedList) {
-        nodes_.emplace(nestedList.begin(), nestedList.end());
+        nodes_.emplace(nestedList.cbegin(), nestedList.cend());
     }
 
     int next() {
@@ -41,7 +41,7 @@ public:
             } else {
                 auto& nestedList = cur.first->getList();
                 ++cur.first;
-                nodes_.emplace(nestedList.begin(), nestedList.end());
+                nodes_.emplace(nestedList.cbegin(), nestedList.cend());
             }
         }
         return false;
