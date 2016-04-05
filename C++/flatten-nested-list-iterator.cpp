@@ -1,5 +1,5 @@
 // Time:  O(n), n is the number of the integers.
-// Space: O(l), l is the number of the nested lists.
+// Space: O(h), h is the depth of the nested lists.
 
 /**
  * // This is the interface that allows for creating nested lists.
