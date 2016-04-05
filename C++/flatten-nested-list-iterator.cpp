@@ -24,31 +24,31 @@ class NestedIterator {
 public:
     using IT = vector<NestedInteger>::const_iterator;
     NestedIterator(vector<NestedInteger> &nestedList) {
-        nodes_.emplace(nestedList.cbegin(), nestedList.cend());
+        depth_.emplace(nestedList.cbegin(), nestedList.cend());
     }
 
     int next() {
-        return (nodes_.top().first++)->getInteger();
+        return (depth_.top().first++)->getInteger();
     }
     
     bool hasNext() {
-        while (!nodes_.empty()) {
-            auto& cur = nodes_.top();
+        while (!depth_.empty()) {
+            auto& cur = depth_.top();
             if (cur.first == cur.second) {
-                nodes_.pop();
+                depth_.pop();
             } else if (cur.first->isInteger()) {
                 return true;
             } else {
                 auto& nestedList = cur.first->getList();
                 ++cur.first;
-                nodes_.emplace(nestedList.cbegin(), nestedList.cend());
+                depth_.emplace(nestedList.cbegin(), nestedList.cend());
             }
         }
         return false;
     }
 
 private:
-    stack<pair<IT, IT>> nodes_;
+    stack<pair<IT, IT>> depth_;
 };
 
 // Time:  O(n)
