@@ -63,7 +63,7 @@ public:
     }
 
     int next() {
-        auto result = nodes_.top()->getInteger();
+        const auto result = nodes_.top()->getInteger();
         nodes_.pop();
         return result;
     }
