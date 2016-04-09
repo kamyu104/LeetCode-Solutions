@@ -15,25 +15,25 @@ public:
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> res;
         TreeNode *prev = nullptr;
-        TreeNode *curr = root;
-        while (curr) {
-            if (!curr->left) {
-                res.emplace_back(curr->val);
-                prev = curr;
-                curr = curr->right;
+        TreeNode *cur = root;
+        while (cur) {
+            if (!cur->left) {
+                res.emplace_back(cur->val);
+                prev = cur;
+                cur = cur->right;
             } else {
-                TreeNode *node = curr->left;
-                while (node->right && node->right != curr) {
+                TreeNode *node = cur->left;
+                while (node->right && node->right != cur) {
                     node = node->right;
                 }
                 if (!node->right) {
-                    node->right = curr;
-                    curr = curr->left;
+                    node->right = cur;
+                    cur = cur->left;
                 } else {
-                    res.emplace_back(curr->val);
-                    prev = curr;
+                    res.emplace_back(cur->val);
+                    prev = cur;
                     node->right = nullptr;
-                    curr = curr->right;
+                    cur = cur->right;
                 }
             }
         }
