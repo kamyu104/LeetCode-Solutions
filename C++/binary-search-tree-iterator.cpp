@@ -27,11 +27,11 @@ public:
             s_.emplace(cur_);
             cur_ = cur_->left;
         }
-        cur_ = s_.top(); // Left most node.
+        cur_ = s_.top();  // Left most node.
         s_.pop();
 
         const auto *node = cur_;
-        cur_ = cur_->right; // Visit right child.
+        cur_ = cur_->right;  // Visit right child.
 
         return node->val;
     }
