@@ -44,7 +44,7 @@ public:
         return childSearch(prefix);
     }
 
-    TrieNode * childSearch(const string& word) {
+    TrieNode *childSearch(const string& word) {
         auto *cur = root_;
         for (const auto& c : word) {
             if (cur->leaves.count(c)) {
@@ -57,7 +57,7 @@ public:
     }
 
 private:
-    TrieNode* root_;
+    TrieNode *root_;
 };
 
 // Your Trie object will be instantiated and called as such:
