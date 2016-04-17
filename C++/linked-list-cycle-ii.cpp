@@ -23,6 +23,7 @@ public:
                     slow = slow->next, fast = fast->next;
                 }
                 return slow;  // slow is the begin of cycle.
+            }
         }
         return nullptr;  // No cycle.
     }
