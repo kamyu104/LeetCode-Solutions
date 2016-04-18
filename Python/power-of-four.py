@@ -14,7 +14,9 @@ class Solution(object):
         :type num: int
         :rtype: bool
         """
-        return num > 0 and (num & (num - 1)) == 0 and ((num & 0b101010101010101010101010101010101) == num)
+        return num > 0 and (num & (num - 1)) == 0 and \
+               ((num & 0b101010101010101010101010101010101) == num)
+
 
 # Time:  O(1)
 # Space: O(1)
