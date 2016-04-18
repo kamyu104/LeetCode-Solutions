@@ -26,6 +26,6 @@ class Solution2(object):
         :type num: int
         :rtype: bool
         """
-        while num and not (num & 3):
+        while num and not (num & 0b11):
             num >>= 2
         return (num == 1)
