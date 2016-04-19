@@ -1,4 +1,4 @@
-// Time:  O(logn), pow is O(logn)
+// Time:  O(logn), pow is O(logn).
 // Space: O(logn)
 
 class Solution {
@@ -7,6 +7,7 @@ public:
         if (n < 4) {
             return n - 1;
         }
+
         // Proof.
         // 1. Let n = a1 + a2 + ... + ak, product = a1 * a2 * ... * ak
         //     - For each aj >= 4, we can always maximize the product by:
