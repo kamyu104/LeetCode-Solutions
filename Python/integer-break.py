@@ -37,7 +37,7 @@ class Solution(object):
         #        3^a * 2^b, s.t. 3a + 2b = n
         # 
         #  2. To maximize the product = 3^a * 2^b s.t. 3a + 2b = n
-        #      - For each b >= 3,  we can always maximize the product by:
+        #      - For each b >= 3, we can always maximize the product by:
         #        3^a * 2^b <= 3^(a+2) * 2^(b-3) s.t. 3(a+2) + 2(b-3) = n
         # 
         #     Conclusion 2:
