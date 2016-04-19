@@ -27,7 +27,7 @@ class Solution(object):
 
         #  Proof.
         #  1. Let n = a1 + a2 + ... + ak, product = a1 * a2 * ... * ak
-        #      - For each aj >= 4, we can always maximize the product by:
+        #      - For each ai >= 4, we can always maximize the product by:
         #        ai <= 2 * (ai - 2)
         #      - For each aj >= 5, we can always maximize the product by:
         #        aj <= 3 * (aj - 3)
