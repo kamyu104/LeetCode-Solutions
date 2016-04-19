@@ -42,7 +42,7 @@ class Solution(object):
         # 
         #     Conclusion 2:
         #      - For n >= 4, the max of the product must be in the form of
-        #        3^Q * 2^R, 0 <= R < 2 s.t. 3Q + 2R = n
+        #        3^Q * 2^R, 0 <= R < 3 s.t. 3Q + 2R = n
         #        i.e.
         #          if n = 3Q + 0,   the max of the product = 3^Q * 2^0
         #          if n = 3Q + 2,   the max of the product = 3^Q * 2^1
