@@ -57,6 +57,7 @@ class Solution(object):
             res = 3 ** (n // 3 - 1) * 4
         return res
 
+
 # Time:  O(n)
 # Space: O(logn)
 # DP solution.
