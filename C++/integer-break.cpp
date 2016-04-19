@@ -42,3 +42,22 @@ public:
         return res;
     }
 };
+
+// Time:  O(n)
+// Space: O(logn)
+// DP solution.
+class Solution2 {
+public:
+    int integerBreak(int n) {
+        if (n < 4) {
+            return n - 1;
+        }
+
+        // integerBreak(n) = max(integerBreak(n - 2) * 2, integerBreak(n - 3) * 3)
+        vector<int> res{0, 1, 2, 3};
+        for (int i = 4; i <= n; ++i) {
+            res[i % 4] = max(res[(i - 2) % 4] * 2, res[(i - 3) % 4] * 3);
+        }
+        return res[n % 4];
+    }
+};
