@@ -12,9 +12,9 @@ public:
             if (!is_operator(tok)) {
                 s.emplace(tok);
             } else {
-                auto y = stoi(s.top());
+                auto&& y = stoi(s.top());
                 s.pop();
-                auto x = stoi(s.top());
+                auto&& x = stoi(s.top());
                 s.pop();
                 if (tok[0] == '+') {
                     x += y;
