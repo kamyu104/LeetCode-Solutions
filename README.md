@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-344%20%2F%20344-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-345%20%2F%20345-ff69b4.svg)
 
-Up to date (2016-04-21), there are `327` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
+Up to date (2016-04-23), there are `328` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
 The number of questions is increasing recently.
-Here is the classification of all `344` questions.
+Here is the classification of all `345` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -119,6 +119,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 273| [Integer to English Words](https://leetcode.com/problems/integer-to-english-words/) | [C++](./C++/integer-to-english-words.cpp)  [Python](./Python/integer-to-english-words.py) | _O(logn)_ | _O(1)_ | Medium         | |
 306| [Addictive Number](https://leetcode.com/problems/additive-number/) | [C++](./C++/additive-number.cpp)  [Python](./Python/additive-number.py) | _O(n^3)_ | _O(n)_ | Medium         | |
 344| [Reverse String](https://leetcode.com/problems/reverse-string/) | [C++](./C++/reverse-string.cpp)  [Python](./Python/reverse-string.py) | _O(n)_ | _O(1)_ | Easy         | |
+345| [Reverse String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [C++](./C++/reverse-vowels-of-a-string.cpp)  [Python](./Python/reverse-vowels-of-a-string.py) | _O(n)_ | _O(1)_ | Easy         | |
 
 ## Linked List
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
