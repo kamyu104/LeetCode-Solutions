@@ -118,8 +118,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 271| [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | [C++](./C++/encode-and-decode-strings.cpp) [Python](./Python/encode-and-decode-strings.py) | _O(n)_ | _O(1)_ | Medium         | 📖 |
 273| [Integer to English Words](https://leetcode.com/problems/integer-to-english-words/) | [C++](./C++/integer-to-english-words.cpp)  [Python](./Python/integer-to-english-words.py) | _O(logn)_ | _O(1)_ | Medium         | |
 306| [Addictive Number](https://leetcode.com/problems/additive-number/) | [C++](./C++/additive-number.cpp)  [Python](./Python/additive-number.py) | _O(n^3)_ | _O(n)_ | Medium         | |
-344| [Reverse String](https://leetcode.com/problems/reverse-string/) | [C++](./C++/reverse-string.cpp)  [Python](./Python/reverse-string.py) | _O(n)_ | _O(1)_ | Easy         | |
-345| [Reverse String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [C++](./C++/reverse-vowels-of-a-string.cpp)  [Python](./Python/reverse-vowels-of-a-string.py) | _O(n)_ | _O(1)_ | Easy         | |
 
 ## Linked List
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -284,6 +282,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 259 | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) | [C++](./C++/3sum-smaller.cpp) [Python](./Python/3sum-smaller.py) | _O(n^2)_ | _O(1)_          | Medium         | 📖, LintCode |
 283 | [Move Zeros](https://leetcode.com/problems/move-zeros/) | [C++](./C++/move-zeros.cpp) [Python](./Python/move-zeros.py) | _O(n)_ | _O(1)_          | Easy         | |
 287| [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)| [C++](./C++/find-the-duplicate-number.cpp) [Python](./Python/find-the-duplicate-number.py)   | _O(n)_          | _O(1)_          | Hard       | | Binary Search, Two Pointers |
+344| [Reverse String](https://leetcode.com/problems/reverse-string/) | [C++](./C++/reverse-string.cpp)  [Python](./Python/reverse-string.py) | _O(n)_ | _O(1)_ | Easy         | |
+345| [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [C++](./C++/reverse-vowels-of-a-string.cpp)  [Python](./Python/reverse-vowels-of-a-string.py) | _O(n)_ | _O(1)_ | Easy         | |
 
 ## Divide and Conquer
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
