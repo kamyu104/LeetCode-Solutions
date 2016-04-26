@@ -5,14 +5,15 @@ class Solution {
 public:
     vector<vector<int> > fourSum(vector<int> &num, int target) {
         vector<vector<int>> ans;
-        if (num.size() < 4) 
+        if (num.size() < 4)  {
             return ans;
+        }
         sort(num.begin(), num.end());
         unordered_multimap<int, pair<int, int>> cache;
 
         for (int i = 0; i + 1 < num.size(); ++i) {
             for (int j = i + 1; j < num.size(); ++j) {
-                cache.insert(make_pair(num[i] + num[j], make_pair(i, j)));
+                cache.emplace(num[i] + num[j], make_pair(i, j));
             }
         }
 
