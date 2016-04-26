@@ -69,7 +69,7 @@ public:
                 auto c = j->second.first;
                 auto d = j->second.second;
                 if (b < c) {
-                    ans.push_back({num[a], num[b], num[c], num[d]});
+                    ans.emplace_back(move(vector<int>{num[a], num[b], num[c], num[d]}));
                 }
             }
         }
