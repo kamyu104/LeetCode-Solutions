@@ -1,6 +1,6 @@
-# Time:  O(n^2 * p)
-# Space: O(n^2 * p)
-#
+# Time:  O(n^3)
+# Space: O(1)
+
 # Given an array S of n integers, 
 # are there elements a, b, c, and d in S such that a + b + c + d = target?
 # Find all unique quadruplets in the array which gives the sum of target.
@@ -16,9 +16,50 @@
 #    (-2,  0, 0, 2)
 #
 
-class Solution:
-    # @return a list of lists of length 4, [[val1,val2,val3,val4]]
+# Two pointer solution. (1356ms)
+class Solution(object):
     def fourSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
+        nums.sort()
+        res = []
+        for i in xrange(len(nums) - 3):
+            if i and nums[i] == nums[i - 1]:
+                continue
+            for j in xrange(i + 1, len(nums) - 2):
+                if j != i + 1 and nums[j] == nums[j - 1]:
+                    continue
+                sum = target - nums[i] - nums[j]
+                left, right = j + 1, len(nums) - 1
+                while left < right:
+                    if nums[left] + nums[right] == sum:
+                        res.append([nums[i], nums[j], nums[left], nums[right]])
+                        right -= 1
+                        left += 1
+                        while left < right and nums[left] == nums[left - 1]:
+                            left += 1
+                        while left < right and nums[right] == nums[right + 1]:
+                            right -= 1
+                    elif nums[left] + nums[right] > sum:
+                        right -= 1
+                    else:
+                        left += 1
+        return res
+
+
+# Time:  O(n^2 * p)
+# Space: O(n^2 * p)
+# Hash solution. (224ms)
+class Solution2(object):
+    def fourSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
         nums, result, lookup = sorted(nums), [], collections.defaultdict(list)
         for i in xrange(0, len(nums) - 1):
             for j in xrange(i + 1, len(nums)): 
@@ -42,11 +83,16 @@ class Solution:
                                 result.append(quad)
         return result
 
+
 # Time:  O(n^2 * p) ~ O(n^4)
 # Space: O(n^2)
-class Solution2:
-    # @return a list of lists of length 4, [[val1,val2,val3,val4]]
+class Solution3(object):
     def fourSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
         nums, result, lookup = sorted(nums), [], collections.defaultdict(list)
         for i in xrange(0, len(nums) - 1):
             for j in xrange(i + 1, len(nums)): 
@@ -62,6 +108,7 @@ class Solution2:
                             if quad not in result:
                                 result.append(quad)
         return sorted(result)
+
 
 if __name__ == '__main__':
     result = Solution().fourSum([1, 0, -1, 0, -2, 2], 0)
