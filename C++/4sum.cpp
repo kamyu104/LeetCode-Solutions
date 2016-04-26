@@ -63,8 +63,7 @@ public:
         for (auto i = cache.begin(); i != cache.end(); ++i) {
             auto a = i->second.first;
             auto b = i->second.second;
-            int x = target - i->first;
-            auto range = cache.equal_range(x);
+            auto range = cache.equal_range(target - i->first);
             for (auto j = range.first; j != range.second; ++j) {
                 auto c = j->second.first;
                 auto d = j->second.second;
