@@ -54,18 +54,18 @@ public:
         sort(num.begin(), num.end());
         unordered_multimap<int, pair<int, int>> cache;
 
-        for (int i = 0; i + 1 < num.size(); ++i) {
+        for (int i = 0; i < num.size(); ++i) {
             for (int j = i + 1; j < num.size(); ++j) {
                 cache.emplace(num[i] + num[j], make_pair(i, j));
             }
         }
 
         for (auto i = cache.begin(); i != cache.end(); ++i) {
+            auto a = i->second.first;
+            auto b = i->second.second;
             int x = target - i->first;
             auto range = cache.equal_range(x);
             for (auto j = range.first; j != range.second; ++j) {
-                auto a = i->second.first;
-                auto b = i->second.second;
                 auto c = j->second.first;
                 auto d = j->second.second;
                 if (b < c) {
