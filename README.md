@@ -59,8 +59,9 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Array
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-15 | [3 Sum](https://leetcode.com/problems/3sum/)         | [C++](./C++/3sum.cpp) [Python](./Python/3sum.py)       | _O(n^2)_        | _O(1)_          | Medium         ||
-16 | [3 Sum Closest](https://leetcode.com/problems/3sum-closest/) | [C++](./C++/3sum-closest.cpp) [Python](./Python/3sum-closest.py) | _O(n^2)_       | _O(1)_          | Medium         ||
+15 | [3 Sum](https://leetcode.com/problems/3sum/)         | [C++](./C++/3sum.cpp) [Python](./Python/3sum.py)       | _O(n^2)_        | _O(1)_          | Medium         || Two Pointers
+16 | [3 Sum Closest](https://leetcode.com/problems/3sum-closest/) | [C++](./C++/3sum-closest.cpp) [Python](./Python/3sum-closest.py) | _O(n^2)_       | _O(1)_          | Medium         || Two Pointers
+18| [4 Sum](https://leetcode.com/problems/4sum/)         | [C++](./C++/4sum.cpp) [Python](./Python/4sum.py)        | _O(n^3)_    | _O(1)_    | Medium         || Two Pointers
 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)| [C++](./C++/remove-duplicates-from-sorted-array.cpp) [Python](./Python/remove-duplicates-from-sorted-array.py) | _O(n)_       | _O(1)_         | Easy           || Two Pointers
 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [C++](./C++/remove-element.cpp) [Python](./Python/remove-element.py) | _O(n)_      | _O(1)_         | Easy           ||
 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/)| [C++](./C++/next-permutation.cpp) [Python](./Python/next-permutation.py) | _O(n)_  | _O(1)_          | Medium         || Tricky
@@ -190,7 +191,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 1| [Two Sum](https://leetcode.com/problems/two-sum/)      | [C++](./C++/two-sum.cpp) [Python](./Python/two-sum.py)      | _O(n)_         | _O(n)_          | Medium         ||
 3| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./C++/longest-substring-without-repeating-characters.cpp) [Python](./Python/longest-substring-without-repeating-characters.py) | _O(n)_ | _O(1)_ | Medium ||
-18| [4 Sum](https://leetcode.com/problems/4sum/)         | [C++](./C++/4sum.cpp) [Python](./Python/4sum.py)        | _O(n^3)_    | _O(1)_    | Medium         ||
 30| [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | [Python](./Python/substring-with-concatenation-of-all-words.py) | _O(m * n * k)_ | _O(n * k)_ | Hard          ||
 36| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [Python](./Python/valid-sudoku.py) | _O(n^2)_         | _O(n)_          | Easy           ||
 49| [Group Anagrams](https://leetcode.com/problems/anagrams/)     | [Python](./Python/anagrams.py)   | _O(nlogg)_          | _O(n)_          | Medium         ||
