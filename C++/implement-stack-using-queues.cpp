@@ -14,7 +14,7 @@ public:
         }
     }
 
-    // Removes the element on top of the stack.
+    // Remove the element on top of the stack.
     void pop() {  // O(1)
         q_.pop();
     }
@@ -43,7 +43,7 @@ public:
         top_ = x;
     }
 
-    // Removes the element on top of the stack.
+    // Remove the element on top of the stack.
     void pop() {  // O(n)
         for (int i = 0; i < q_.size() - 1; ++i) {
             top_ = q_.front();
