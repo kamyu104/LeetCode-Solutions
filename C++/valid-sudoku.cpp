@@ -53,7 +53,7 @@ public:
 
 // Time:  O(9^2)
 // Space: O(9)
-// More generic solutoin.
+// More generic solution.
 class Solution2 {
 public:
     bool isValidSudoku(const vector<vector<char>>& board) {
