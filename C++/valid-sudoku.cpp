@@ -31,6 +31,7 @@ public:
         return true;
     }
 
+private:
     // Return true if subarray board[start_row : end_row - 1][start_col : end_col - 1]
     // contains any duplicates in [1 : num_elements]; otherwise return false.
     bool anyDuplicate(const vector<vector<char>>& board, int start_row, int end_row,
@@ -84,6 +85,7 @@ public:
         return true;
     }
 
+private:
     // Return true if subarray board[start_row : end_row - 1][start_col : end_col - 1]
     // contains any duplicates in [1 : num_elements]; otherwise return false.
     bool anyDuplicate(const vector<vector<char>>& board, int start_row, int end_row,
