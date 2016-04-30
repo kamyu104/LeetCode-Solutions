@@ -36,7 +36,6 @@ public:
     bool anyDuplicate(const vector<vector<char>>& board, int start_row, int end_row,
                       int start_col, int end_col, int num_elements) {
         vector<bool> is_present(num_elements + 1, false);
-
         for (int i = start_row; i < end_row; ++i) {
             for (int j = start_col; j < end_col; ++j) {
                 if (board[i][j] != '.') {
