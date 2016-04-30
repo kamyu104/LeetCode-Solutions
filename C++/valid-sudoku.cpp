@@ -39,10 +39,10 @@ public:
         for (int i = start_row; i < end_row; ++i) {
             for (int j = start_col; j < end_col; ++j) {
                 if (board[i][j] != '.') {
-                    if (is_present[board[i][j]]) {
+                    if (is_present[board[i][j] - '0']) {
                         return true;
                     }
-                    is_present[board[i][j]] = true;
+                    is_present[board[i][j] - '0'] = true;
                 }
             }
         }
