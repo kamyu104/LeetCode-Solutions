@@ -35,13 +35,16 @@ public:
     // contains any duplicates in [1 : num_elements]; otherwise return false.
     bool anyDuplicate(const vector<vector<char>>& board, int start_row, int end_row,
                       int start_col, int end_col, int num_elements) {
-        deque<bool> is_present(num_elements + 1, false);
+        vector<bool> is_present(num_elements + 1, false);
+
         for (int i = start_row; i < end_row; ++i) {
             for (int j = start_col; j < end_col; ++j) {
-                if (board[i][j] != '.' && is_present[board[i][j] - '0']) {
-                    return true;
+                if (board[i][j] != '.') {
+                    if (is_present[board[i][j]]) {
+                        return true;
+                    }
+                    is_present[board[i][j]] = true;
                 }
-                is_present[board[i][j] - '0'] = true;
             }
         }
         return false;
