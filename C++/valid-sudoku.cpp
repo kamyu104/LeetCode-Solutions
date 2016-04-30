@@ -20,10 +20,9 @@ public:
         }
 
         // Check region constraints.
-        for (int i = 0; i < 3; ++i) {
-            for (int j = 0; j < 3; ++j) {
-                if (anyDuplicate(board, 3 * i, 3 * (i + 1),
-                                 3 * j, 3 * (j + 1))) {
+        for (int i = 0; i < 9; i += 3) {
+            for (int j = 0; j < 9; j += 3) {
+                if (anyDuplicate(board, i, i + 3, j, j + 3)) {
                     return false;
                 }
             }
@@ -74,10 +73,12 @@ public:
 
         // Check region constraints.
         int region_size = sqrt(board.size());
-        for (int i = 0; i < region_size; ++i) {
-            for (int j = 0; j < region_size; ++j) {
-                if (anyDuplicate(board, region_size * i, region_size * (i + 1),
-                                 region_size * j, region_size * (j + 1), board.size())) {
+        for (int i = 0; i < board.size(); i += region_size) {
+            for (int j = 0; j < board.size(); j += region_size) {
+                if (anyDuplicate(board,
+                                 i, i + region_size,
+                                 j, j + region_size,
+                                 board.size())) {
                     return false;
                 }
             }
