@@ -29,13 +29,11 @@ class Solution(object):
         p = []
         for key, val in counts.iteritems():
             p.append((val, key))
-
         self.kthElement(p, k);
 
         result = []
         for i in xrange(k):
             result.append(p[i][1])
-
         return result
 
 
