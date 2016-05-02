@@ -5,8 +5,8 @@ class Solution {
 public:
     vector<int> topKFrequent(vector<int>& nums, int k) {
         unordered_map<int, int> counts;
-        for (int i = 0; i < nums.size(); ++i) {
-            ++counts[nums[i]];
+        for (const auto& i : nums) {
+            ++counts[i];
         }
         vector<pair<int, int>> p;
         for (auto it = counts.begin(); it != counts.end(); ++it) {
