@@ -61,3 +61,15 @@ class Solution(object):
             else:  # new_pivot_idx < k - 1.
                 left = new_pivot_idx + 1
   
+
+# Time:  O(nlogk)
+# Space: O(n)
+class Solution2(object):
+    def topKFrequent(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+        return [key for key, _ in collections.Counter(nums).most_common(k)]
+
