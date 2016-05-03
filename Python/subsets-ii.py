@@ -38,6 +38,8 @@ class Solution(object):
         return result
 
 
+# Time:  O(n * 2^n) ~ O((n * 2^n)^2)
+# Space: O(1)
 class Solution2(object):
     def subsetsWithDup(self, nums):
         """
@@ -60,6 +62,8 @@ class Solution2(object):
         return result
 
 
+# Time:  O(n * 2^n) ~ O((n * 2^n)^2)
+# Space: O(1)
 class Solution3(object):
     def subsetsWithDup(self, nums):
         """
