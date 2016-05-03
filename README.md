@@ -390,8 +390,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 77| [Combinations](https://leetcode.com/problems/combinations/)  | [Python](./Python/combinations.py) | _O(n!)_       | _O(n)_          | Medium         ||
 79| [Word Search](https://leetcode.com/problems/word-search/) | [Python](./Python/word-search.py) | _O(m * n * l)_ | _O(l)_  | Medium         ||
 93| [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [Python](./Python/restore-ip-addresses.py) | _O(1)_ | _O(1)_ | Medium         ||
-78| [Subsets](https://leetcode.com/problems/subsets/)       | [Python](./Python/subsets.py)    | _O(n * 2^n)_    | _O(1)_          | Medium         ||
-90| [Subsets II](https://leetcode.com/problems/subsets-ii/)    | [Python](./Python/subsets-ii.py) | _O(n * 2^n)_    | _O(1)_          | Medium         ||
+78| [Subsets](https://leetcode.com/problems/subsets/)       | [C++](./C++/subsets.cpp)  [Python](./Python/subsets.py)    | _O(n * 2^n)_    | _O(1)_          | Medium         ||
+90| [Subsets II](https://leetcode.com/problems/subsets-ii/)    | [C++](./C++/subsets-ii.cpp) [Python](./Python/subsets-ii.py) | _O(n * 2^n)_    | _O(1)_          | Medium         ||
 126| [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/)   |[Python](./Python/word-ladder-ii.py) | _O(n * d)_ | _O(d)_         | Hard         ||
 131| [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | [Python](./Python/palindrome-partitioning.py) | _O(n^2)_ ~ _O(2^n)_ | _O(n^2)_ | Medium ||
 140| [Word Break II](https://leetcode.com/problems/word-break-ii/)  | [Python](./Python/word-break-ii.py) |  _O(n^2)_      | _O(n)_       | Hard           ||
