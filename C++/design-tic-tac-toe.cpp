@@ -22,7 +22,7 @@ public:
         if (row == col) {
             ++diagonal_[i];
         }
-        if (col  == rows_.size() - row - 1) {
+        if (col == rows_.size() - row - 1) {
             ++anti_diagonal_[i];
         }
         if (rows_[row][i] == rows_.size() ||
