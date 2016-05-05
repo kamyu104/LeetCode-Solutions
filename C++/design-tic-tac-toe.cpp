@@ -17,17 +17,18 @@ public:
                 1: Player 1 wins.
                 2: Player 2 wins. */
     int move(int row, int col, int player) {
-        ++rows_[row][player - 1], ++cols_[col][player - 1];
+        const int i = player - 1;
+        ++rows_[row][i], ++cols_[col][i];
         if (row == col) {
-            ++diagonal_[player - 1];
+            ++diagonal_[i];
         }
         if (col  == rows_.size() - row - 1) {
-            ++anti_diagonal_[player - 1];
+            ++anti_diagonal_[i];
         }
-        if (rows_[row][player - 1] == rows_.size() ||
-            cols_[col][player - 1] == cols_.size() ||
-            diagonal_[player - 1] == rows_.size() ||
-            anti_diagonal_[player - 1] == cols_.size()) {
+        if (rows_[row][i] == rows_.size() ||
+            cols_[col][i] == cols_.size() ||
+            diagonal_[i] == rows_.size() ||
+            anti_diagonal_[i] == cols_.size()) {
             return player;
         }
         return 0;
