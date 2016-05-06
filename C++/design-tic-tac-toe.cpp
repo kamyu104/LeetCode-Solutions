@@ -17,7 +17,7 @@ public:
                 1: Player 1 wins.
                 2: Player 2 wins. */
     int move(int row, int col, int player) {
-        const int i = player - 1;
+        const auto i = player - 1;
         ++rows_[row][i], ++cols_[col][i];
         if (row == col) {
             ++diagonal_[i];
