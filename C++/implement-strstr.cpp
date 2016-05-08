@@ -52,10 +52,6 @@ public:
 class Solution2 {
 public:
     int strStr(string haystack, string needle) {
-        if (needle.empty()) {
-            return 0;
-        }
-
         for (int i = 0; i + needle.length() < haystack.length() + 1; ++i) {
             if (haystack.substr(i, needle.length()) == needle) {
                 return i;
