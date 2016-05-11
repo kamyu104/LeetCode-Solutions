@@ -41,6 +41,8 @@ public:
     }
 };
 
+// Time:  O(n)
+// Space: O(h)
 class Solution2 {
 public:
     vector<int> preorderTraversal(TreeNode* root) {
