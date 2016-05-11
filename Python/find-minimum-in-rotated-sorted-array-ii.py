@@ -44,12 +44,12 @@ class Solution2(object):
         while left < right and nums[left] >= nums[right]:
             mid = left + (right - left) / 2
             
-            if nums[mid] > nums[left]:
-                left = mid + 1
+            if nums[mid] == nums[left]:
+                left += 1
             elif nums[mid] < nums[left]:
                 right = mid
             else:
-                left += 1
+                left = mid + 1
 
         return nums[left]
 
