@@ -22,11 +22,14 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
 # Morris Traversal Solution
-class Solution:
-    # @param root, a tree node
-    # @return a list of integers
+class Solution(object):
     def postorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
         dummy = TreeNode(0)
         dummy.left = root
         result, cur = [], dummy
@@ -57,26 +60,29 @@ class Solution:
         result.reverse()
         return result
 
+
 # Time:  O(n)
-# Space: O(n)
+# Space: O(h)
 # Stack Solution 
-class Solution2:
-    # @param root, a tree node
-    # @return a list of integers
+class Solution2(object):
     def postorderTraversal(self, root):
-        result, stack, current, last_traversed = [], [], root, None
-        while stack or current:
-            if current:
-                stack.append(current)
-                current = current.left
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        result, stack = [], [(root, False)]
+        while stack:
+            root, is_visited = stack.pop()
+            if root is None:
+                continue
+            if is_visited:
+                result.append(root.val)
             else:
-                parent = stack[-1]
-                if parent.right in (None, last_traversed):
-                    result.append(parent.val)
-                    last_traversed = stack.pop()
-                else:
-                    current = parent.right
+                stack.append((root, True))
+                stack.append((root.right, False))
+                stack.append((root.left, False))
         return result
+
 
 if __name__ == "__main__":
     root = TreeNode(1)
