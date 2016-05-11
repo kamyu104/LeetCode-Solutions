@@ -23,10 +23,12 @@ class TreeNode:
         self.right = None
 
 # Morris Traversal Solution
-class Solution:
-    # @param root, a tree node
-    # @return a list of integers
+class Solution(object):
     def preorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
         result, prev, cur = [], None, root
         while cur:
             if cur.left is None:
@@ -49,42 +51,29 @@ class Solution:
                 
         return result
 
+
 # Time:  O(n)
-# Space: O(n)
+# Space: O(h)
 # Stack Solution     
-class Solution2:
-    # @param root, a tree node
-    # @return a list of integers
+class Solution2(object):
     def preorderTraversal(self, root):
-        result, stack, current, last_traversed = [], [], root, None
-        while stack or current:
-            if current:
-                result.append(current.val)
-                stack.append(current)
-                current = current.left
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        result, stack = [], [(root, False)]
+        while stack:
+            root, is_visited = stack.pop()
+            if root is None:
+                continue
+            if is_visited:
+                result.append(root.val)
             else:
-                parent = stack[-1]
-                if parent.right in (None, last_traversed):
-                    last_traversed = stack.pop()
-                else:
-                    current = parent.right
+                stack.append((root.right, False))
+                stack.append((root.left, False))
+                stack.append((root, True))
         return result
 
-class Solution3:
-    # @param root, a tree node
-    # @return a list of integers
-    def preorderTraversal(self, root):
-        result, stack, current, last_traversed = [], [], root, None
-        while stack or current:
-            if current:
-                result.append(current.val)
-                stack.append(current)
-                current = current.left
-            else:
-                current = stack[-1]
-                stack.pop()
-                current = current.right
-        return result
 
 if __name__ == "__main__":
     root = TreeNode(1)
