@@ -23,7 +23,7 @@ class Solution(object):
             
             if nums[mid] == target:
                 return True
-            if nums[mid] == nums[left]:
+            elif nums[mid] == nums[left]:
                 left += 1
             elif (nums[mid] > nums[left] and nums[left] <= target < nums[mid]) or \
                  (nums[mid] < nums[left] and not (nums[mid] < target <= nums[right])):
