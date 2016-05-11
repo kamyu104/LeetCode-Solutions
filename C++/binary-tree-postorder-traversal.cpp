@@ -61,8 +61,8 @@ public:
         vector<int> res;
         stack<pair<TreeNode *, bool>> s;
         s.emplace(root, false);
-        bool visited;
         while (!s.empty()) {
+            bool visited;
             tie(root, visited) = s.top();
             s.pop();
             if (root == nullptr) {
