@@ -36,19 +36,19 @@ class Solution(object):
 
 class Solution2(object):
     def findMin(self, nums):
-        low, high = 0, len(nums) - 1
+        left, right = 0, len(nums) - 1
            
-        while low < high and nums[low] >= nums[high]:
-            mid = low + (high - low) / 2
+        while left < right and nums[left] >= nums[right]:
+            mid = left + (right - left) / 2
             
-            if nums[mid] > nums[low]:
-                low = mid + 1
-            elif nums[mid] < nums[low]:
-                high = mid
+            if nums[mid] > nums[left]:
+                left = mid + 1
+            elif nums[mid] < nums[left]:
+                right = mid
             else:
-                low += 1
+                left += 1
 
-        return nums[low]
+        return nums[left]
 
 
 if __name__ == "__main__":
