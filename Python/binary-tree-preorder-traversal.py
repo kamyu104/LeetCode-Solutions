@@ -22,6 +22,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
 # Morris Traversal Solution
 class Solution(object):
     def preorderTraversal(self, root):
