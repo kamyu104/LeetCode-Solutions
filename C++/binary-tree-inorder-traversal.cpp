@@ -40,3 +40,30 @@ public:
         return res;
     }
 };
+
+// Time:  O(n)
+// Space: O(h)
+class Solution2 {
+public:
+    vector<int> inorderTraversal(TreeNode* root) {
+        vector<int> res;
+        stack<pair<TreeNode *, bool>> s;
+        s.emplace(root, false);
+        bool visited;
+        while (!s.empty()) {
+            tie(root, visited) = s.top();
+            s.pop();
+            if (root == nullptr) {
+                continue;
+            }
+            if (visited) {
+                res.emplace_back(root->val);
+            } else {
+                s.emplace(root->right, false);
+                s.emplace(root, true);
+                s.emplace(root->left, false);
+            }
+        }
+        return res;
+    }
+};
