@@ -10,30 +10,26 @@
 # You may assume no duplicate exists in the array.
 #
 
-class Solution:
-    # @param A, a list of integers
-    # @param target, an integer to be searched
-    # @return an integer
-    def search(self, A, target):
-        low, high = 0, len(A)
+class Solution(object):
+    def search(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        left, right = 0, len(nums) - 1
         
-        while low < high:
-            mid = low + (high - low) / 2
+        while left <= right:
+            mid = left + (right - left) / 2
             
-            if A[mid] == target:
+            if nums[mid] == target:
                 return mid
-            
-            if A[low] <= A[mid]:
-                if A[low] <= target and target < A[mid]:
-                    high = mid
-                else:
-                    low = mid + 1
+            elif (nums[mid] >= nums[left] and nums[left] <= target < nums[mid]) or \
+                 (nums[mid] < nums[left] and not (nums[mid] < target <= nums[right])):
+                right = mid - 1
             else:
-                if A[mid] < target and target <= A[high - 1]:
-                    low = mid + 1
-                else:
-                    high = mid
-                    
+                left = mid + 1
+
         return -1
         
 
