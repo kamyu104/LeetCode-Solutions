@@ -9,32 +9,28 @@
 # Write a function to determine if a given target is in the array.
 #
 
-class Solution:
-    # @param A a list of integers
-    # @param target an integer
-    # @return a boolean
-    def search(self, A, target):
-        low, high = 0, len(A)
+class Solution(object):
+    def search(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        left, right = 0, len(nums) - 1
         
-        while low < high:
-            mid = low + (high - low) / 2
+        while left <= right:
+            mid = left + (right - left) / 2
             
-            if A[mid] == target:
+            if nums[mid] == target:
                 return True
-            
-            if A[low] < A[mid]:
-                if A[low] <= target and target < A[mid]:
-                    high = mid
-                else:
-                    low = mid + 1
-            elif A[low] > A[mid]:
-                if A[mid] < target and target <= A[high - 1]:
-                    low = mid + 1
-                else:
-                    high = mid
+            if nums[mid] == nums[left]:
+                left += 1
+            elif (nums[mid] > nums[left] and nums[left] <= target < nums[mid]) or \
+                 (nums[mid] < nums[left] and not (nums[mid] < target <= nums[right])):
+                right = mid - 1
             else:
-                low += 1
-                
+                left = mid + 1
+
         return False
         
 
