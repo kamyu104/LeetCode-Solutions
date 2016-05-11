@@ -10,42 +10,41 @@
 # You may assume no duplicate exists in the array.
 #
 
-class Solution:
-    # @param num, a list of integer
-    # @return an integer
-    def findMin(self, num):
-        low, high = 0, len(num)
-           
-        while low < high - 1 and  num[low] >= num[high - 1]:
-            mid = low + (high - low) / 2
-                
-            if num[mid] > num[low]:
-                low = mid + 1
-            elif num[mid] < num[low]:
-                if mid == high - 1:
-                    return num[mid]
-                else:
-                    high = mid + 1
+class Solution(object):
+    def findMin(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        left, right = 0, len(nums) - 1
+        while left < right:
+            mid = left + (right - left) / 2
+
+            if nums[mid] < nums[right]:
+                right = mid
             else:
-                return num[mid]
+                left = mid + 1
 
-        return num[low]
+        return nums[left]
 
-class Solution2:
-    # @param num, a list of integer
-    # @return an integer
-    def findMin(self, num):
-        low, high = 0, len(num) - 1
-           
-        while low < high and num[low] >= num[high]:
-            mid = low + (high - low) / 2
-            
-            if num[mid] >= num[low]:
-                low = mid + 1
+
+class Solution2(object):
+    def findMin(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        left, right = 0, len(nums) - 1
+        while left < right and nums[left] >= nums[right]:
+            mid = left + (right - left) / 2
+
+            if nums[mid] < nums[left]:
+                right = mid
             else:
-                high = mid
+                left = mid + 1
 
-        return num[low]
+        return nums[left]
+
 
 if __name__ == "__main__":
     print Solution().findMin([1])
