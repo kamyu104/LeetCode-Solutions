@@ -14,45 +14,42 @@
 # The array may contain duplicates.
 #
 
+class Solution(object):
+    def findMin(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        left, right = 0, len(nums) - 1
+        while left < right:
+            mid = left + (right - left) / 2
 
-class Solution:
-    # @param num, a list of integer
-    # @return an integer
-    def findMin(self, num):
-        low, high = 0, len(num)
-           
-        while low < high - 1 and num[low] >= num[high - 1]:
-            mid = low + (high - low) / 2
-                
-            if num[mid] > num[low]:
-                low = mid + 1
-            elif num[mid] < num[low]:
-                if mid == high - 1:
-                    return num[mid]
-                else:
-                    high = mid + 1
+            if nums[mid] == nums[right]:
+                right -= 1
+            elif nums[mid] < nums[right]:
+                right = mid
             else:
-                low += 1
+                left = mid + 1
 
-        return num[low]
+        return nums[left]
 
-class Solution2:
-    # @param num, a list of integer
-    # @return an integer
-    def findMin(self, num):
-        low, high = 0, len(num) - 1
+
+class Solution2(object):
+    def findMin(self, nums):
+        low, high = 0, len(nums) - 1
            
-        while low < high and num[low] >= num[high]:
+        while low < high and nums[low] >= nums[high]:
             mid = low + (high - low) / 2
             
-            if num[mid] > num[low]:
+            if nums[mid] > nums[low]:
                 low = mid + 1
-            elif num[mid] < num[low]:
+            elif nums[mid] < nums[low]:
                 high = mid
             else:
                 low += 1
 
-        return num[low]
+        return nums[low]
+
 
 if __name__ == "__main__":
     print Solution().findMin([3, 1, 1, 2, 2, 3])
