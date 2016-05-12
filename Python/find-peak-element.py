@@ -28,10 +28,10 @@ class Solution(object):
         
         while left < right:
             mid = left + (right - left) / 2
-            if (mid == 0 or nums[mid - 1] <= nums[mid]) and \
-               (mid == len(nums) - 1 or nums[mid + 1] <= nums[mid]):
+            if (mid == 0 or nums[mid - 1] < nums[mid]) and \
+               (mid + 1 == len(nums) or nums[mid] > nums[mid + 1]):
                 return mid
-            elif mid > 0 and nums[mid - 1] > nums[mid]:
+            elif not (mid == 0 or nums[mid - 1] <= nums[mid]):
                 right = mid
             else:
                 left = mid + 1
