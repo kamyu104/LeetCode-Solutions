@@ -233,6 +233,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 12| [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [Python](./Python/integer-to-roman.py) | _O(n)_ | _O(1)_          | Medium         ||
 13| [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Python](./Python/roman-to-integer.py) | _O(n)_ | _O(1)_          | Easy           ||
 29| [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | [Python](./Python/divide-two-integers.py)    | _O(logn)_       | _O(1)_         | Medium         ||
+50| [Pow(x, n)](https://leetcode.com/problems/powx-n/)     | [Python](./Python/powx-n.py)     | _O(logn)_       | _O(1)_       | Medium         ||
 60| [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | [Python](./Python/permutation-sequence.py) | _O(n^2)_ | _O(n)_  | Medium         || `Cantor Ordering`
 65| [Valid Number](https://leetcode.com/problems/valid-number/) | [Python](./Python/valid-number.py) | _O(n)_         | _O(1)_          | Hard           || `Automata`
 89| [Gray Code](https://leetcode.com/problems/gray-code/)     | [Python](./Python/gray-code.py)  | _O(2^n)_        | _O(1)_          | Medium         ||
@@ -318,7 +319,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 33| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [Python](./Python/search-in-rotated-sorted-array.py) | _O(logn)_ | _O(1)_   | Hard         ||
 34| [Search for a Range](https://leetcode.com/problems/search-for-a-range/) | [Python](./Python/search-for-a-range.py) | _O(logn)_ | _O(1)_   | Medium         ||
 35| [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Python](./Python/search-insert-position.py) | _O(logn)_ | _O(1)_   | Medium         ||
-50| [Pow(x, n)](https://leetcode.com/problems/powx-n/)     | [Python](./Python/powx-n.py)     | _O(logn)_       | _O(logn)_       | Medium         ||
 69| [Sqrt(x)](https://leetcode.com/problems/sqrtx/)       | [Python](./Python/sqrtx.py)      | _O(logn)_        | _O(1)_         | Medium         ||
 74| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | [Python](./Python/search-a-2d-matrix.py) | _O(logm + logn)_ | _O(1)_ | Medium   ||
 81| [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [Python](./Python/search-in-rotated-sorted-array-ii.py) | _O(logn)_ | _O(1)_   | Medium         ||
