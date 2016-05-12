@@ -1,29 +1,48 @@
-// Time Complexity: O(logn)
-//                  O(n) if duplicates are allowed 
-// Space Complexity: O(1)
+// Time:  O(logn)
+// Space: O(1)
 
 class Solution {
-    public:
-        bool search(int A[], int n, int target) {
-            for(int start = 0, end = n; start < end; ) {
-                const int mid = (start + end) / 2;
-                if(A[mid] == target)
-                    return true;
-                if(A[start] <  A[mid]) {
-                    if(A[start] <= target && target < A[mid])
-                        end = mid;
-                    else
-                        start = mid + 1;
-                }
-                else if(A[start] > A[mid]) {
-                    if(A[mid] < target && target <= A[end - 1])
-                        start = mid + 1;
-                    else
-                        end = mid;
-                }
-                else
-                    ++start;
+public:
+    bool search(vector<int> &nums, int target) {
+        int left = 0, right = nums.size() - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target) {
+                return true;
+            } else if (nums[mid] == nums[left]) {
+                ++left;
+            } else if ((nums[mid] > nums[left] && nums[left] <= target && target < nums[mid]) ||
+                       (nums[mid] < nums[left] && !(nums[mid] < target && target <= nums[right]))) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
             }
-            return false;
         }
+
+        return false;
+    }
+};
+
+class Solution2 {
+public:
+    bool search(vector<int> &nums, int target) {
+        int left = 0, right = nums.size();
+
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target) {
+                return true;
+            } else if (nums[mid] == nums[left]) {
+                ++left;
+            } else if ((nums[left] <= nums[mid] && nums[left] <= target && target < nums[mid]) ||
+                       (nums[left] > nums[mid] && !(nums[mid] < target && target <= nums[right - 1]))) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        return false;
+    }
 };
