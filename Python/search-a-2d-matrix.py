@@ -17,25 +17,24 @@
 # Given target = 3, return true.
 #
 
-class Solution:
-    # @param matrix, a list of lists of integers
-    # @param target, an integer
-    # @return a boolean
+class Solution(object):
     def searchMatrix(self, matrix, target):
-        m = len(matrix)
-        n = len(matrix[0])
-        i, j = 0, m * n
-        
-        while i < j:
-            mid = i + (j - i) / 2
-            val = matrix[mid / n][mid % n]
-            if val == target:
-                return True
-            elif val < target:
-                i = mid + 1
+        """
+        :type matrix: List[List[int]]
+        :type target: int
+        :rtype: bool
+        """
+        m, n = len(matrix), len(matrix[0])
+        left, right = 0, m * n
+        while left < right:
+            mid = left + (right - left) / 2
+            if matrix[mid / n][mid % n] >= target:
+                right = mid
             else:
-                j = mid
-        return False
+                left = mid + 1
+
+        return left < m * n and matrix[left / n][left % n] == target
+
 
 if __name__ == "__main__":
     matrix = [[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 50]]
