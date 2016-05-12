@@ -18,31 +18,27 @@ class Solution(object):
         else:
             return (self.getKth(nums1, nums2, (len1 + len2)/2) + \
                     self.getKth(nums1, nums2, (len1 + len2)/2 + 1)) * 0.5
-            
+
     def getKth(self, A, B, k):
         m, n = len(A), len(B)
         if m > n:
             return self.getKth(B, A, k)
-            
+
         left, right = 0, m    
         while left < right:
             mid = left + (right - left) / 2
-            j = k - 1 - mid
-            if 0 <= j < n and A[mid] >= B[j]:
+            if 0 <= k - 1 - mid < n and A[mid] >= B[k - 1 - mid]:
                 right = mid
             else:
                 left = mid + 1
-            
-        Ai_minus_1, Bj = float("-inf"), float("-inf")
-        if left - 1 >= 0:
-            Ai_minus_1 = A[left - 1]
-        if k - 1 - left >= 0:
-            Bj = B[k - 1 - left]
-        
+
+        Ai_minus_1 = A[left - 1] if left - 1 >= 0 else float("-inf")
+        Bj = B[k - 1 - left] if k - 1 - left >= 0 else float("-inf")
+
         return max(Ai_minus_1, Bj)
 
-    
+ 
 if __name__ == "__main__":
     print Solution().findMedianSortedArrays([1, 3, 5, 7], [2, 4, 6])
     print Solution().findMedianSortedArrays([1, 3, 5], [2, 4, 6])
-    
+ 
