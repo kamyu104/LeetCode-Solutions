@@ -31,7 +31,7 @@ public:
             if (!left && !right) {
                 continue;
             }
-            if (!left || !right ||  left->val != right->val) {
+            if (!left || !right || left->val != right->val) {
                 return false;
             }
             // isSymmetricHelper(left->right, right->left)
