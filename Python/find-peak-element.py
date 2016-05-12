@@ -31,7 +31,7 @@ class Solution(object):
             if (mid == 0 or nums[mid - 1] < nums[mid]) and \
                (mid + 1 == len(nums) or nums[mid] > nums[mid + 1]):
                 return mid
-            elif not (mid == 0 or nums[mid - 1] <= nums[mid]):
+            elif not (mid == 0 or nums[mid - 1] < nums[mid]):
                 right = mid
             else:
                 left = mid + 1
