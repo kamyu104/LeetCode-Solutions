@@ -19,6 +19,5 @@ public:
         }
 
         return nums[left];
-
     }
 };
