@@ -1,8 +1,7 @@
 # Time:  O(logn)
 # Space: O(1)
-# 
+
 # Implement pow(x, n).
-#
 
 class Solution(object):
     def myPow(self, x, n):
