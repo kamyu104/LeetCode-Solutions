@@ -1,6 +1,6 @@
 # Time:  O(n)
 # Space: O(n)
-#
+
 # Given a binary tree, return the bottom-up level order traversal of its nodes' values.
 #  (ie, from left to right, level by level from leaf to root).
 # 
@@ -17,20 +17,24 @@
 #   [9,20],
 #   [3]
 # ]
-#
+
 # Definition for a  binary tree node
-class TreeNode:
+class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
-class Solution:
-    # @param root, a tree node
-    # @return a list of lists of integers
+
+class Solution(object):
     def levelOrderBottom(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
         if root is None:
             return []
+
         result, current = [], [root]
         while current:
             next_level, vals = [], []
@@ -41,8 +45,10 @@ class Solution:
                 if node.right:
                     next_level.append(node.right)
             current = next_level
-            result.insert(0, vals)
-        return result
+            result.append(vals)
+
+        return result[::-1]
+
 
 if __name__ == "__main__":
     root = TreeNode(3)
