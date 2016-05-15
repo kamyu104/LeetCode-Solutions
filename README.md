@@ -22,7 +22,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Math](https://github.com/kamyu104/LeetCode#math)
 * [Two Pointers](https://github.com/kamyu104/LeetCode#two-pointers)
 * [Sort](https://github.com/kamyu104/LeetCode#sort)
-* [Divide and Conquer](https://github.com/kamyu104/LeetCode#divide-and-conquer)
+* [Recursion](https://github.com/kamyu104/LeetCode#recursion)
 * [Binary Search](https://github.com/kamyu104/LeetCode#binary-search)
 * [Binary Search Tree](https://github.com/kamyu104/LeetCode#binary-search-tree)
 * [Breadth-First Search](https://github.com/kamyu104/LeetCode#breadth-first-search)
@@ -288,7 +288,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 344| [Reverse String](https://leetcode.com/problems/reverse-string/) | [C++](./C++/reverse-string.cpp)  [Python](./Python/reverse-string.py) | _O(n)_ | _O(1)_ | Easy         | |
 345| [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [C++](./C++/reverse-vowels-of-a-string.cpp)  [Python](./Python/reverse-vowels-of-a-string.py) | _O(n)_ | _O(1)_ | Easy         | |
 
-## Divide and Conquer
+## Recursion
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 95| [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | [Python](./Python/unique-binary-search-trees-ii.py) | _O(4^n / n^(3/2)_      | _O(4^n / n^(3/2)_         | Medium         ||
