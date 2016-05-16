@@ -19,7 +19,8 @@
 # Note:
 # You may assume that all inputs are consist of lowercase letters a-z.
 #
-class TrieNode:
+
+class TrieNode(object):
     # Initialize your data structure here.
     def __init__(self):
         self.is_string = False
@@ -34,11 +35,14 @@ class TrieNode:
             cur = cur.leaves[c]
         cur.is_string = True
 
-class Solution:
-    # @param {character[][]} board
-    # @param {string[]} words
-    # @return {string[]}
+
+class Solution(object):
     def findWords(self, board, words):
+        """
+        :type board: List[List[str]]
+        :type words: List[str]
+        :rtype: List[str]
+        """
         visited = [[False for j in xrange(len(board[0]))] for i in xrange(len(board))]
         result = {}
         trie = TrieNode()
@@ -71,4 +75,3 @@ class Solution:
         self.findWordsRecu(board, next_node, cur + 1, i, j - 1, visited, cur_word, result)     
         visited[i][j] = False
         cur_word.pop()
-        
