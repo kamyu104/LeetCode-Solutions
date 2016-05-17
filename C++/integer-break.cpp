@@ -1,5 +1,5 @@
 // Time:  O(logn), pow is O(logn).
-// Space: O(logn)
+// Space: O(1)
 
 class Solution {
 public:
@@ -44,7 +44,7 @@ public:
 };
 
 // Time:  O(n)
-// Space: O(logn)
+// Space: O(1)
 // DP solution.
 class Solution2 {
 public:
