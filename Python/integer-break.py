@@ -1,5 +1,5 @@
 # Time:  O(logn), pow is O(logn).
-# Space: O(logn)
+# Space: O(1)
 
 # Given a positive integer n, break it into the sum of
 # at least two positive integers and maximize the product
@@ -59,7 +59,7 @@ class Solution(object):
 
 
 # Time:  O(n)
-# Space: O(logn)
+# Space: O(1)
 # DP solution.
 class Solution2(object):
     def integerBreak(self, n):
