@@ -30,18 +30,20 @@
 #  of Topological Sort.
 # Topological sort could also be done via BFS.
 #
-class Solution:
-    # @param {integer} numCourses
-    # @param {integer[][]} prerequisites
-    # @return {boolean}
+class Solution(object):
     def canFinish(self, numCourses, prerequisites):
+        """
+        :type numCourses: int
+        :type prerequisites: List[List[int]]
+        :rtype: bool
+        """
         zero_in_degree_queue, in_degree, out_degree = collections.deque(), {}, {}
         
         for i, j in prerequisites:
             if i not in in_degree:
-                in_degree[i] = sets.Set()
+                in_degree[i] = set()
             if j not in out_degree:
-                out_degree[j] = sets.Set()
+                out_degree[j] = set()
             in_degree[i].add(j)
             out_degree[j].add(i)
         
@@ -64,6 +66,7 @@ class Solution:
             return False
         
         return True
+
 
 if __name__ == "__main__":
     print Solution().canFinish(1, [])
