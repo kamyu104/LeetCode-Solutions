@@ -251,7 +251,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 326 | [Power of Three](https://leetcode.com/problems/power-of-three/) | [C++](./C++/power-of-three.cpp) [Python](./Python/power-of-three.py) | _O(1)_ | _O(1)_ | Easy |||
 335 | [Self Crossing](https://leetcode.com/problems/self-crossing/) | [C++](./C++/self-crossing.cpp) [Python](./Python/self-crossing.py) | _O(n)_ | _O(1)_ | Medium |||
 338 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | [C++](./C++/counting-bits.cpp) [Python](./Python/counting-bits.py) | _O(n)_ | _O(n)_ | Medium |||
-343 | [Integer Break](https://leetcode.com/problems/integer-break/) | [C++](./C++/integer-break.cpp) [Python](./Python/integer-break.py) | _O(logn)_ | _O(logn)_ | Medium || Tricky, DP |
+343 | [Integer Break](https://leetcode.com/problems/integer-break/) | [C++](./C++/integer-break.cpp) [Python](./Python/integer-break.py) | _O(logn)_ | _O(1)_ | Medium || Tricky, DP |
 
 ## Sort
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
