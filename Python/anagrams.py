@@ -1,5 +1,5 @@
-# Time:  O(nlogg) = O(n / g * glogg), g is max size of groups
-# Space: O(n)
+# Time:  O(n * llogl), l is the max length of strings.
+# Space: O(n * l)
 #
 # Given an array of strings, return all groups of strings that are anagrams.
 #
@@ -17,7 +17,7 @@ class Solution(object):
             sorted_str = ("").join(sorted(s))
             anagrams_map[sorted_str].append(s)
         for anagram in anagrams_map.values():
-            anagram.sort()
+            # anagram.sort()
             result.append(anagram)
         return result
         
