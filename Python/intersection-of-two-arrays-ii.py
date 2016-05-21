@@ -130,7 +130,7 @@ class Solution(object):
 
 # If the given array is not sorted, and the memory is limited.
 # Time:  O(max(m, n) * log(max(m, n)))
-# Space: O(max(m, n))
+# Space: O(1)
 # Two pointers solution.
 class Solution(object):
     def intersect(self, nums1, nums2):
