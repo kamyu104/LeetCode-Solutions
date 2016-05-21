@@ -2,13 +2,13 @@
 //   - Time:  O(m + n)
 //   - Space: O(min(m, n))
 // elif the given array is already sorted:
-//   if the memory is unlimited, and (m << n or m >> n)
+//   if m << n or m >> n:
 //     - Time:  O(min(m, n) * log(max(m, n)))
-//     - Space: O(min(m, n))
+//     - Space: O(1)
 //   else:
 //     - Time:  O(m + n)
 //     - Soace: O(1)
-// else: (the memory is limited)
+// else: (the given array is not sorted and the memory is limited)
 //     - Time:  O(max(m, n) * log(max(m, n)))
 //     - Space: O(1)
 
@@ -41,9 +41,9 @@ public:
 };
 
 
-// If the given array is already sorted, and the memory is unlimited, and (m << n or m >> n).
+// If the given array is already sorted, and the memory is limited, and (m << n or m >> n).
 // Time:  O(min(m, n) * log(max(m, n)))
-// Space: O(min(m, n))
+// Space: O(1)
 // Binary search solution.
 class Solution {
 public:
@@ -56,20 +56,13 @@ public:
         sort(nums1.begin(), nums1.end());
         sort(nums2.begin(), nums2.end());
 
-        unordered_map<int, int> cnts;
-        for (const auto& i : nums1) {
-            const auto left_it = lower_bound(nums2.cbegin(), nums2.cend(), i);
-            const auto right_it = upper_bound(nums2.cbegin(), nums2.cend(), i);
-            const auto cnt = right_it - left_it;
-            if (cnts[i] < cnt) {
-                ++cnts[i];
-            }
-        }
-
         vector<int> result;
-        for (const auto& kvp : cnts) {
-            vector<int> tmp(kvp.second, kvp.first);
-            move(tmp.begin(), tmp.end(), back_inserter(result));
+        auto it = nums2.cbegin();
+        for (const auto& i : nums1) {
+            it = lower_bound(it, nums2.cend(), i);
+            if (it != nums2.end() && *it == i) {
+                result.emplace_back(*it++);
+            }
         }
         
         return result;
