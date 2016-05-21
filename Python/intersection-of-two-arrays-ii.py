@@ -2,9 +2,9 @@
 #   - Time:  O(m + n)
 #   - Space: O(min(m, n))
 # elif the given array is already sorted:
-#   if the memory is unlimited, and (m << n or m >> n)
+#   if m << n or m >> n:
 #     - Time:  O(min(m, n) * log(max(m, n)))
-#     - Space: O(min(m, n))
+#     - Space: O(1)
 #   else:
 #     - Time:  O(m + n)
 #     - Soace: O(1)
@@ -55,9 +55,9 @@ class Solution(object):
         return res
 
 
-# If the given array is already sorted, and the memory is unlimited, and (m << n or m >> n).
+# If the given array is already sorted, and the memory is limited, and (m << n or m >> n).
 # Time:  O(min(m, n) * log(max(m, n)))
-# Space: O(min(m, n))
+# Space: O(1)
 # Binary search solution.
 class Solution(object):
     def intersect(self, nums1, nums2):
@@ -69,32 +69,24 @@ class Solution(object):
         if len(nums1) > len(nums2):
             return self.intersect(nums2, nums1)
 
-        def count_of_num(nums, target):
-            def binary_search(compare, nums, target):
-                left, right = 0, len(nums)
-                while left < right:
-                    mid = left + (right - left) / 2
-                    if compare(nums[mid], target):
-                        right = mid
-                    else:
-                        left = mid + 1
-                return left
-
-            left = binary_search(lambda x, y: x >= y, nums, target)
-            right = binary_search(lambda x, y: x > y, nums, target)
-            return right - left
+        def binary_search(compare, nums, left, right, target):
+            while left < right:
+                mid = left + (right - left) / 2
+                if compare(nums[mid], target):
+                    right = mid
+                else:
+                    left = mid + 1
+            return left
 
         nums1.sort(), nums2.sort()  # Make sure it is sorted, doesn't count in time.
 
-        cnts = collections.defaultdict(int)
-        for i in nums1:
-            cnt = count_of_num(nums2, i)
-            if cnts[i] < cnt:
-                cnts[i] += 1
-
         res = []
-        for k, v in cnts.iteritems():
-            res += [k] * v
+        left = 0
+        for i in nums1:
+            left = binary_search(lambda x, y: x >= y, nums2, left, len(nums2), i)
+            if left != len(nums2) and nums2[left] == i:
+                res += i,
+                left += 1
         
         return res
 
