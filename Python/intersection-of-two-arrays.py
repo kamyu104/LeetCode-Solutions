@@ -33,7 +33,7 @@ class Solution(object):
         return res
 
 
-# Time:  O(nlogn)
+# Time:  O(max(m, n) * log(max(m, n)))
 # Space: O(1)
 class Solution2(object):
     def intersection(self, nums1, nums2):
