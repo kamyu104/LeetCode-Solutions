@@ -29,7 +29,7 @@ public:
 
 // Time:  O(max(m, n) * log(max(m, n)))
 // Space: O(1)
-// Two pointer solution.
+// Two pointers solution.
 class Solution2 {
 public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
