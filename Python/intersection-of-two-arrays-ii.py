@@ -8,7 +8,7 @@
 #   else:
 #     - Time:  O(m + n)
 #     - Soace: O(1)
-# else: (the memory is limited)
+# else: (the given array is not sorted and the memory is limited)
 #     - Time:  O(max(m, n) * log(max(m, n)))
 #     - Space: O(1)
 
