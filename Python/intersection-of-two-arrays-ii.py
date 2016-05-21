@@ -25,7 +25,7 @@ class Solution(object):
         return res
 
 
-# If the given array is already sorted, and m << n
+# If the given array is already sorted, and the memory is unlimited, and (m << n or m >> n)
 # Time:  O(min(m, n) * log(max(m, n)))
 # Space: O(min(m, n))
 # Binary search solution.
@@ -67,10 +67,11 @@ class Solution(object):
         
         return res
 
+
 # If the given array is already sorted, and memory is limited or m ~ n
 # Time:  O(m + n)
 # Soace: O(1)
-# Two pointer solution.
+# Two pointers solution.
 class Solution(object):
     def intersect(self, nums1, nums2):
         """
