@@ -91,6 +91,7 @@ class Solution(object):
             cnt = count_of_num(nums2, i)
             if cnts[i] < cnt:
                 cnts[i] += 1
+
         res = []
         for k, v in cnts.iteritems():
             res += [k] * v
