@@ -100,7 +100,7 @@ public:
 // If the given array is not sorted, and the memory is limited.
 // Time:  O(max(m, n) * log(max(m, n)))
 // Space: O(1)
-// Two pointer solution.
+// Two pointers solution.
 class Solution {
 public:
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
