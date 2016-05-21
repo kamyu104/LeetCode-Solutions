@@ -10,6 +10,7 @@
 # Each element in the result must be unique.
 # The result can be in any order.
 
+# Hash solution.
 class Solution(object):
     def intersection(self, nums1, nums2):
         """
@@ -35,6 +36,7 @@ class Solution(object):
 
 # Time:  O(max(m, n) * log(max(m, n)))
 # Space: O(1)
+# Two pointers solution.
 class Solution2(object):
     def intersection(self, nums1, nums2):
         """
