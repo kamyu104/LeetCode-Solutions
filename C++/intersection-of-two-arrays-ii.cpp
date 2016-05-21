@@ -10,7 +10,7 @@
 //     - Soace: O(1)
 // else: (the memory is limited)
 //     - Time:  O(max(m, n) * log(max(m, n)))
-//     - Space: O(max(m, n))
+//     - Space: O(1)
 
 // If the given array is not sorted and the memory is unlimited.
 // Time:  O(m + n)
