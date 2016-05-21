@@ -89,7 +89,7 @@ class Solution(object):
         cnts = collections.defaultdict(int)
         for i in nums1:
             cnt = count_of_num(nums2, i)
-            if cnt > 0 and cnts[i] < cnt:
+            if cnts[i] < cnt:
                 cnts[i] += 1
         res = []
         for k, v in cnts.iteritems():
