@@ -41,6 +41,42 @@ public:
 };
 
 
+// If the given array is already sorted, and the memory is unlimited, and (m << n or m >> n).
+// Time:  O(min(m, n) * log(max(m, n)))
+// Space: O(min(m, n))
+// Binary search solution.
+class Solution {
+public:
+    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
+        if (nums1.size() > nums2.size()) {
+            return intersect(nums2, nums1);
+        }
+
+        // Make sure it is sorted, doesn't count in time.
+        sort(nums1.begin(), nums1.end());
+        sort(nums2.begin(), nums2.end());
+
+        unordered_map<int, int> cnts;
+        for (const auto& i : nums1) {
+            const auto left_it = lower_bound(nums2.cbegin(), nums2.cend(), i);
+            const auto right_it = upper_bound(nums2.cbegin(), nums2.cend(), i);
+            const auto cnt = right_it - left_it;
+            if (cnts[i] < cnt) {
+                ++cnts[i];
+            }
+        }
+
+        vector<int> result;
+        for (const auto& kvp : cnts) {
+            vector<int> tmp(kvp.second, kvp.first);
+            move(tmp.begin(), tmp.end(), back_inserter(result));
+        }
+        
+        return result;
+    }
+};
+
+
 // If the given array is already sorted, and the memory is limited or m ~ n.
 // Time:  O(m + n)
 // Soace: O(1)
