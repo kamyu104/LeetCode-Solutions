@@ -20,8 +20,8 @@ class Solution(object):
         n = len(s)
 
         max_len = 0
-        for str in wordDict:
-            max_len = max(max_len, len(str))
+        for string in wordDict:
+            max_len = max(max_len, len(string))
 
         can_break = [False for _ in xrange(n + 1)]
         can_break[0] = True
