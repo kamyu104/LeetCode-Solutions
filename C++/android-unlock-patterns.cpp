@@ -6,7 +6,7 @@ class Solution {
 public:
     int numberOfPatterns(int m, int n) {
         // dp[i][j]: i is the set of the numbers in binary representation,
-        //           d[i][j] is the number of ways ending with the number j.
+        //           dp[i][j] is the number of ways ending with the number j.
         vector<vector<int>> dp(1 << 9 , vector<int>(9, 0));
         for (int i = 0; i < 9; ++i) {
             dp[merge(0, i)][i] = 1;
