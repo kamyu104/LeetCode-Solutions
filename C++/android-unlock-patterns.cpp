@@ -14,7 +14,7 @@ public:
 
         vector<int> keys(9, 0);
         for (int used = 0; used < dp.size(); ++used) {
-            const auto number = number_of_key(used);
+            const auto number = number_of_keys(used);
             if (number > n) {
                 continue;
             }
@@ -55,7 +55,7 @@ private:
         return i | (1 << j);
     }
 
-    inline int number_of_key(int i) {
+    inline int number_of_keys(int i) {
         int number = 0;
         for (; i; i &= i - 1) {
             ++number;
