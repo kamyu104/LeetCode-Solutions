@@ -153,18 +153,19 @@ class Solution_TLE(object):
             if m <= level <= n:
                 number += 1
 
-            x1, y1 = i / 3, i % 3;
+            x1, y1 = i / 3, i % 3
             for j in xrange(9):
                 if contain(used, j):
                     continue
 
-                x2, y2 = j / 3, j % 3;
+                x2, y2 = j / 3, j % 3
                 if ((x1 == x2 and abs(y1 - y2) == 2) or \
                     (y1 == y2 and abs(x1 - x2) == 2) or \
                     (abs(x1 - x2) == 2 and abs(y1 - y2) == 2)) and \
                    not contain(used, convert((x1 + x2) / 2, (y1 + y2) / 2)):
-                         continue;
-                number += numberOfPatternsHelper(m, n, level + 1, merge(used, j), j);
+                         continue
+
+                number += numberOfPatternsHelper(m, n, level + 1, merge(used, j), j)
     
             return number
 
