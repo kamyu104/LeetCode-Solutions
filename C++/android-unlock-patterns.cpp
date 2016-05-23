@@ -42,10 +42,12 @@ public:
                 }
             }
         }
+
         int res = 0;
         for (int i = m - 1; i < n; ++i) {
             res += keys[i];
         }
+
         return res;
     }
 
@@ -113,6 +115,7 @@ private:
             }
             number += numberOfPatternsHelper(m, n, level + 1, merge(used, j), j);
         }
+
         return number;
     }
 
