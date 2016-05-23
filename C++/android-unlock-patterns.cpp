@@ -88,6 +88,7 @@ public:
         number += numberOfPatternsHelper(m, n, 1, merge(0, 4), 4);
         return number;
     }
+
 private:
     int numberOfPatternsHelper(int m, int n, int level, int used, int i) {
         int number = 0;
