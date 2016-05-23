@@ -14,15 +14,15 @@ public:
 
         vector<int> keys(9, 0);
         for (int i = 0; i < dp.size(); ++i) {
-            const auto count = number_of_key(i);
-            if (count > n) {
+            const auto number = number_of_key(i);
+            if (number > n) {
                 continue;
             }
             for (int j = 0; j < 9; ++j) {
                 if (!contain(i, j)) {
                     continue;
                 }
-                keys[count - 1] += dp[i][j];
+                keys[number - 1] += dp[i][j];
 
                 const auto x1 = j / 3;
                 const auto y1 = j % 3;
@@ -55,11 +55,11 @@ private:
     }
 
     inline int number_of_key(int i) {
-        int count = 0;
+        int number = 0;
         for (; i; i &= i - 1) {
-            ++count;
+            ++number;
         }
-        return count;
+        return number;
     }
 
     inline bool contain(int i, int j) {
@@ -78,16 +78,16 @@ private:
 class Solution2 {
 public:
     int numberOfPatterns(int m, int n) {
-        int count = 0;
+        int number = 0;
         bool visited[9] = {false};
         // 1, 3, 7, 9
-        numberOfPatternsHelper(m, n, 0, 0, 1, visited, &count);
+        numberOfPatternsHelper(m, n, 0, 0, 1, visited, &number);
         // 2, 4, 6, 8
-        numberOfPatternsHelper(m, n, 0, 1, 1, visited, &count);
-        count *= 4;
+        numberOfPatternsHelper(m, n, 0, 1, 1, visited, &number);
+        number *= 4;
         // 5
-        numberOfPatternsHelper(m, n, 1, 1, 1, visited, &count);
-        return count;
+        numberOfPatternsHelper(m, n, 1, 1, 1, visited, &number);
+        return number;
     }
 
 private:
@@ -99,13 +99,13 @@ private:
     };
 
     void numberOfPatternsHelper(int m, int n, int i, int j, int level,
-                                bool visited[], int *count) {
+                                bool visited[], int *number) {
         if (level > n) {
             return;
         }
 
         if (level >= m) {
-            ++(*count);
+            ++(*number);
         }
 
         visited[convert(i, j)] = true;
@@ -115,12 +115,12 @@ private:
             auto y = j + direction[1];
             if (valid(x, y)) {
                 if (!visited[convert(x, y)]) {
-                    numberOfPatternsHelper(m, n, x, y, level + 1, visited, count);
+                    numberOfPatternsHelper(m, n, x, y, level + 1, visited, number);
                 } else {
                     x += direction[0];
                     y += direction[1];
                     if (valid(x, y) && !visited[convert(x, y)]) {
-                        numberOfPatternsHelper(m, n, x, y, level + 1, visited, count);
+                        numberOfPatternsHelper(m, n, x, y, level + 1, visited, number);
                     }
                 }
             }
