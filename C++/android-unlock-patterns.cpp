@@ -79,61 +79,53 @@ class Solution2 {
 public:
     int numberOfPatterns(int m, int n) {
         int number = 0;
-        bool visited[9] = {false};
-        // 1, 3, 7, 9
-        numberOfPatternsHelper(m, n, 0, 0, 1, visited, &number);
+        // 1, 3, 5, 7
+        number += 4 * numberOfPatternsHelper(m, n, 1, merge(0, 0), 0);
         // 2, 4, 6, 8
-        numberOfPatternsHelper(m, n, 0, 1, 1, visited, &number);
-        number *= 4;
+        number += 4 * numberOfPatternsHelper(m, n, 1, merge(0, 1), 1);
         // 5
-        numberOfPatternsHelper(m, n, 1, 1, 1, visited, &number);
+        number += numberOfPatternsHelper(m, n, 1, merge(0, 4), 4);
+        return number;
+    }
+private:
+    int numberOfPatternsHelper(int m, int n, int level, int used, int i) {
+        int number = 0;
+        if (level > n) {
+            return number;
+        }
+        if (level >= m) {
+            ++number;
+        }
+
+        const auto x1 = i / 3;
+        const auto y1 = i % 3;
+        for (int j = 0; j < 9; ++j) {
+            if (contain(used, j)) {
+                continue;
+            }
+            const auto x2 = j / 3;
+            const auto y2 = j % 3;
+            if (((x1 == x2 && abs(y1 - y2) == 2) ||
+                 (y1 == y2 && abs(x1 - x2) == 2) ||
+                 (abs(x1 - x2) == 2 && abs(y1 - y2) == 2)) &&
+                 !(contain(used, convert((x1 + x2) / 2, (y1 + y2) / 2)))) {
+                     continue;
+            }
+            number += numberOfPatternsHelper(m, n, level + 1, merge(used, j), j);
+        }
         return number;
     }
 
 private:
-    const vector<vector<int>> directions = {
-        {1, 0}, {-1, 0}, {0, 1}, {0, -1},
-        {1, 1}, {-1, -1}, {1, -1}, {-1, 1},
-        {2, 1}, {2, -1}, {-2, -1}, {-2, 1},
-        {1, 2}, {-1, 2}, {1, -2}, {-1, -2}
-    };
+    inline int merge(int i, int j) {
+        return i | (1 << j);
+    }
 
-    void numberOfPatternsHelper(int m, int n, int i, int j, int level,
-                                bool visited[], int *number) {
-        if (level > n) {
-            return;
-        }
-
-        if (level >= m) {
-            ++(*number);
-        }
-
-        visited[convert(i, j)] = true;
-
-        for (const auto& direction : directions) {
-            auto x = i + direction[0];
-            auto y = j + direction[1];
-            if (valid(x, y)) {
-                if (!visited[convert(x, y)]) {
-                    numberOfPatternsHelper(m, n, x, y, level + 1, visited, number);
-                } else {
-                    x += direction[0];
-                    y += direction[1];
-                    if (valid(x, y) && !visited[convert(x, y)]) {
-                        numberOfPatternsHelper(m, n, x, y, level + 1, visited, number);
-                    }
-                }
-            }
-        }
-
-        visited[convert(i, j)] = false;
+    inline bool contain(int i, int j) {
+        return i & (1 << j);
     }
 
     inline int convert(int i, int j) {
         return 3 * i + j;
-    }
-
-    inline bool valid(int i, int j) {
-        return i >= 0 && i < 3 && j >= 0 && j < 3;
     }
 };
