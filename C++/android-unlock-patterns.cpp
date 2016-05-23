@@ -35,7 +35,7 @@ public:
                     if (((x1 == x2 && abs(y1 - y2) == 2) ||
                          (y1 == y2 && abs(x1 - x2) == 2) ||
                          (abs(x1 - x2) == 2 && abs(y1 - y2) == 2)) &&
-                         !(contain(used, convert((x1 + x2) / 2, (y1 + y2) / 2)))) {
+                        !contain(used, convert((x1 + x2) / 2, (y1 + y2) / 2))) {
                              continue;
                     }
                     dp[merge(used, j)][j] += dp[used][i];
@@ -110,7 +110,7 @@ private:
             if (((x1 == x2 && abs(y1 - y2) == 2) ||
                  (y1 == y2 && abs(x1 - x2) == 2) ||
                  (abs(x1 - x2) == 2 && abs(y1 - y2) == 2)) &&
-                 !(contain(used, convert((x1 + x2) / 2, (y1 + y2) / 2)))) {
+                !contain(used, convert((x1 + x2) / 2, (y1 + y2) / 2))) {
                      continue;
             }
             number += numberOfPatternsHelper(m, n, level + 1, merge(used, j), j);
