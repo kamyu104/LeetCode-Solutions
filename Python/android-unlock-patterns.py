@@ -1,4 +1,4 @@
-# Time:  O(9 * 2^9)
+# Time:  O(9^2 * 2^9)
 # Space: O(9 * 2^9)
 
 # DP solution.
@@ -61,7 +61,7 @@ class Solution(object):
         return res
 
 
-# Time:  O(9 * 2^9)
+# Time:  O(9^2 * 2^9)
 # Space: O(9 * 2^9)
 # DP solution.
 class Solution2(object):
