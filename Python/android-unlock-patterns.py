@@ -25,7 +25,7 @@ class Solution(object):
             return 3 * i + j
 
         # dp[i][j]: i is the set of the numbers in binary representation,
-        #           d[i][j] is the number of ways ending with the number j.
+        #           dp[i][j] is the number of ways ending with the number j.
         dp = [[0] * 9 for _ in xrange(1 << 9)]
         for i in xrange(9):
             dp[merge(0, i)][i] = 1
