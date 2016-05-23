@@ -1,6 +1,7 @@
 // Time:  O(9 * 2^9)
 // Space: O(9 * 2^9)
 
+// DP solution.
 class Solution {
 public:
     int numberOfPatterns(int m, int n) {
@@ -70,8 +71,10 @@ private:
     }
 };
 
+
 // Time:  O(9!)
 // Space: O(9)
+// Backtracking solution.
 class Solution2 {
 public:
     int numberOfPatterns(int m, int n) {
