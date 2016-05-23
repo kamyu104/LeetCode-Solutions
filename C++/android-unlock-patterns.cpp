@@ -12,7 +12,7 @@ public:
             dp[merge(0, i)][i] = 1;
         }
 
-        vector<int> keys(9, 0);
+        int res = 0;
         for (int used = 0; used < dp.size(); ++used) {
             const auto number = number_of_keys(used);
             if (number > n) {
@@ -22,7 +22,9 @@ public:
                 if (!contain(used, i)) {
                     continue;
                 }
-                keys[number - 1] += dp[used][i];
+                if (m <= number && number <= n) {
+                    res += dp[used][i];
+                }
 
                 const auto x1 = i / 3;
                 const auto y1 = i % 3;
@@ -43,10 +45,6 @@ public:
             }
         }
 
-        int res = 0;
-        for (int i = m - 1; i < n; ++i) {
-            res += keys[i];
-        }
         return res;
     }
 
