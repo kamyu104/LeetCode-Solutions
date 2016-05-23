@@ -13,32 +13,32 @@ public:
         }
 
         vector<int> keys(9, 0);
-        for (int i = 0; i < dp.size(); ++i) {
-            const auto number = number_of_key(i);
+        for (int used = 0; used < dp.size(); ++used) {
+            const auto number = number_of_key(used);
             if (number > n) {
                 continue;
             }
-            for (int j = 0; j < 9; ++j) {
-                if (!contain(i, j)) {
+            for (int i = 0; i < 9; ++i) {
+                if (!contain(used, i)) {
                     continue;
                 }
-                keys[number - 1] += dp[i][j];
+                keys[number - 1] += dp[used][i];
 
-                const auto x1 = j / 3;
-                const auto y1 = j % 3;
-                for (int k = 0; k < 9; ++k) {
-                    if (contain(i, k)) {
+                const auto x1 = i / 3;
+                const auto y1 = i % 3;
+                for (int j = 0; j < 9; ++j) {
+                    if (contain(used, j)) {
                         continue;
                     }
-                    const auto x2 = k / 3;
-                    const auto y2 = k % 3;
+                    const auto x2 = j / 3;
+                    const auto y2 = j % 3;
                     if (((x1 == x2 && abs(y1 - y2) == 2) ||
                          (y1 == y2 && abs(x1 - x2) == 2) ||
                          (abs(x1 - x2) == 2 && abs(y1 - y2) == 2)) &&
-                         !(contain(i, convert((x1 + x2) / 2, (y1 + y2) / 2)))) {
+                         !(contain(used, convert((x1 + x2) / 2, (y1 + y2) / 2)))) {
                              continue;
                     }
-                    dp[merge(i, k)][k] += dp[i][j];
+                    dp[merge(used, j)][j] += dp[used][i];
                 }
             }
         }
