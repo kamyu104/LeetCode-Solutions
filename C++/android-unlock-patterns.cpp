@@ -98,7 +98,7 @@ public:
                 const auto x1 = i / 3;
                 const auto y1 = i % 3;
                 for (int j = 0; j < 9; ++j) {
-                    if (!contain(used, j)) {
+                    if (i == j or !contain(used, j)) {
                         continue;
                     }
                     const auto x2 = j / 3;
