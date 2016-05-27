@@ -1,28 +1,21 @@
-// Time Complexity: O(n)
-// Space Complexity: O(n)
+// Time:  O(n)
+// Space: O(n)
 
 class Solution {
-    public:
-        int candy(vector<int> &ratings) {
-            const int n = ratings.size();
-            vector<int> increment(n, 0);
-
-            // left to right
-            for(int i = 1, inc = 0; i < n; ++i) {
-                if(ratings[i] > ratings[i - 1])
-                    increment[i] = max(++inc, increment[i]);
-                else
-                    inc = 0;
+public:
+    int candy(vector<int>& ratings) {
+        vector<int> candies(ratings.size(), 1);
+        for (int i = 1; i < ratings.size(); ++i) {
+            if (ratings[i] > ratings[i - 1]) {
+                candies[i] = candies[i - 1] + 1;
             }
-
-            // right to left
-            for(int i = n - 2, inc = 0; i >= 0; --i) {
-                if(ratings[i] > ratings[i + 1])
-                    increment[i] = max(++inc, increment[i]);
-                else
-                    inc = 0;
-            }
-
-            return accumulate(increment.begin(), increment.end(), n);
         }
+
+        for (int i = ratings.size() - 2; i >= 0; --i) {
+            if (ratings[i] > ratings[i + 1] && candies[i] <= candies[i + 1]) {
+                candies[i] = candies[i + 1] + 1;
+            }
+        }
+        return accumulate(candies.cbegin(), candies.cend(), 0);
+    }
 };
