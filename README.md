@@ -453,7 +453,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 84| [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Python](./Python/largest-rectangle-in-histogram.py) | _O(n)_ | _O(n)_ | Hard || Tricky
 122| [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [Python](./Python/best-time-to-buy-and-sell-stock-ii.py) | _O(n)_ | _O(1)_ | Medium ||
 134| [Gas Station](https://leetcode.com/problems/gas-station/)| [Python](./Python/gas-station.py)   | _O(n)_          | _O(1)_          | Medium         ||
-135| [Candy](https://leetcode.com/problems/candy/)| [Python](./Python/candy.py) | _O(n)_ | _O(n)_ | Hard ||
+135| [Candy](https://leetcode.com/problems/candy/)| [C++](./C++/candy.cpp) [Python](./Python/candy.py) | _O(n)_ | _O(n)_ | Hard ||
 316| [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) | [C++](./C++/remove-duplicate-letters.cpp) [Python](./Python/remove-duplicate-letters.py) | _O(n)_| _O(k)_| Medium || Stack |
 321| [Create Maximum Number](https://leetcode.com/problems/create-maximum-number/)| [C++](./C++/create-maximum-number.cpp) [Python](./Python/create-maximum-number.py) | _O(k * (m + n + k))_ ~ _O(k * (m + n + k^2))_| _O(m + n + k^2)_ | Hard | variant of [Delete Digits](http://www.lintcode.com/en/problem/delete-digits/) | Greedy, DP
 330| [Patching Array](https://leetcode.com/problems/patching-array/) | [C++](./C++/patching-array.cpp) [Python](./Python/patching-array.py) | _O(s + logn)_ | _O(1)_       | Medium           ||
