@@ -65,13 +65,13 @@ class Solution_Generic(object):
                     left = mid + 1
             return left
 
-        def match(arrays, target, k):
+        def match(arrays, num, target):
             res = 0
             for array in arrays:
                 if array:
-                    res += len(array) - binary_search(array, 0, len(array) - 1, target, \
+                    res += len(array) - binary_search(array, 0, len(array) - 1, num, \
                                                       lambda array, x, y: array[x] > y)
-            return res < k
+            return res < target
 
         left, right = float("inf"), float("-inf")
         for array in arrays:
