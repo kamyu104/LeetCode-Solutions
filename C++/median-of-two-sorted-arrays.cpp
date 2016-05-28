@@ -87,14 +87,14 @@ private:
         return right;
     }
 
-    bool match(const vector<vector<int> *>& arrays, int target, int k) {
+    bool match(const vector<vector<int> *>& arrays, int num, int target) {
         int res = 0;
         for (const auto array : arrays) {
             if (!array->empty()) {
-                res += distance(upper_bound(array->cbegin(), array->cend(), target),
+                res += distance(upper_bound(array->cbegin(), array->cend(), num),
                                 array->cend());
             }
         }
-        return res < k;
+        return res < target;
     }
 };
