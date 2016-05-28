@@ -42,3 +42,59 @@ public:
         return max(Ai_minus_1, Bj);
     }
 };
+
+// Time:  O(log(max(m, n)) * log(max_val - min_val))
+// Space: O(1)
+// Generic solution.
+class Solution_Generic {
+public:
+    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+        vector<vector<int> *> arrays{&nums1, &nums2};
+        if ((nums1.size() + nums2.size()) % 2 == 1) {
+            return findKthInSortedArrays(arrays, (nums1.size() + nums2.size()) / 2 + 1);
+        } else {
+            return (findKthInSortedArrays(arrays, (nums1.size() + nums2.size()) / 2) +
+                    findKthInSortedArrays(arrays, (nums1.size() + nums2.size()) / 2 + 1)) / 2.0;
+        }
+    }
+
+private:
+    int findKthInSortedArrays(const vector<vector<int> *>& arrays, int k) {
+        int left = numeric_limits<int>::max();
+        int right = numeric_limits<int>::min();
+        for (const auto array : arrays) {
+            if (!array->empty()) {
+                left = min(left, array->front());
+                right = max(right, array->back());
+            }
+        }
+        // left xxxxxxxooooooo right, find first xo or oo
+        while (left + 1 < right) {
+            const auto mid = left + (right - left) / 2;
+            if (match(arrays, mid, k)) {
+                right = mid;
+            } else {
+                left = mid;
+            }
+        }
+        // case: xoo
+        //        ^^
+        if (match(arrays, left, k)) {
+            return left;
+        }
+        // case: xo
+        //       ^^
+        return right;
+    }
+
+    bool match(const vector<vector<int> *>& arrays, int target, int k) {
+        int res = 0;
+        for (const auto array : arrays) {
+            if (!array->empty()) {
+                res += distance(upper_bound(array->cbegin(), array->cend(), target),
+                                array->cend());
+            }
+        }
+        return res < k;
+    }
+};
