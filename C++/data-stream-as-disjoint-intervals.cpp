@@ -47,12 +47,6 @@ private:
     vector<Interval> intervals_;
 };
 
-/**
- * Your SummaryRanges object will be instantiated and called as such:
- * SummaryRanges obj = new SummaryRanges();
- * obj.addNum(val);
- * vector<Interval> param_2 = obj.getIntervals();
- */
 
 // Time:  addNum: O(logs), getIntervals: O(s), s is the data stream's size.
 // Space: O(s)
