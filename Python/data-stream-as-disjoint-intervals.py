@@ -60,7 +60,7 @@ class SummaryRanges(object):
                     self.__intervals[i - 1].end = val
                 elif i == 0 or self.__intervals[i - 1].end + 1 < val:
                     self.__intervals.insert(i, Interval(val, val))
-                i = upper_bound(self.__intervals, val)
+                    i = upper_bound(self.__intervals, val)
                 if self.__intervals[i - 1].end + 1 == self.__intervals[i].start:
                     self.__intervals[i - 1].end = self.__intervals[i].end
                     del self.__intervals[i]
