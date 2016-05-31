@@ -34,8 +34,8 @@ public:
                     prev(it)->second = val;
                 } else if (it == intervals_.begin() || prev(it)->second + 1 < val) {
                     intervals_[val] = val;
+                    it = intervals_.upper_bound(val);
                 }
-                it = intervals_.upper_bound(val);
                 if (prev(it)->second + 1 == it->first) {
                     prev(it)->second = it->second;
                     intervals_.erase(it);
@@ -91,8 +91,8 @@ public:
                     intervals_.emplace(start, val);
                 } else if (it == intervals_.begin() || prev(it)->end + 1 < val) {
                     intervals_.emplace(val, val);
+                    it = intervals_.upper_bound(Interval(val, val));
                 }
-                it = intervals_.upper_bound(Interval(val, val));
                 if (prev(it)->end + 1 == it->start) {
                     const auto start = prev(it)->start;
                     const auto end = it->end;
@@ -139,8 +139,8 @@ public:
                     prev(it)->end = val;
                 } else if (it == intervals_.begin() || prev(it)->end + 1 < val) {
                     intervals_.insert(it, Interval(val, val));
+                    it = upper_bound(intervals_.begin(), intervals_.end(), val, ub_cmp);
                 }
-                it = upper_bound(intervals_.begin(), intervals_.end(), val, ub_cmp);
                 if (prev(it)->end + 1 == it->start) {
                     prev(it)->end = it->end;
                     intervals_.erase(it);
