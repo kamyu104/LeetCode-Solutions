@@ -1,8 +1,8 @@
 # Time:  O(n)
 # Space: O(1)
-#
-# Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).
-# 
+
+# Given a set of non-overlapping intervals, insert a new interval into the
+# intervals (merge if necessary).
 # You may assume that the intervals were initially sorted according to their start times.
 # 
 # Example 1:
@@ -12,7 +12,6 @@
 # Given [1,2],[3,5],[6,7],[8,10],[12,16], insert and merge [4,9] in as [1,2],[3,10],[12,16].
 # 
 # This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
-#
 
 # Definition for an interval.
 class Interval:
@@ -23,25 +22,27 @@ class Interval:
     def __repr__(self):
         return "[{}, {}]".format(self.start, self.end)
 
-class Solution:
-    # @param intervals, a list of Intervals
-    # @param newInterval, a Interval
-    # @return a list of Interval
+
+class Solution(object):
     def insert(self, intervals, newInterval):
-        return self.merge(intervals + [newInterval])
-        
-    def merge(self, intervals):
-        if not intervals:
-            return intervals
-        intervals.sort(key = lambda x: x.start)
-        result = [intervals[0]]
-        for i in xrange(1, len(intervals)):
-            prev, current = result[-1], intervals[i]
-            if current.start <= prev.end: 
-                prev.end = max(prev.end, current.end)
-            else:
-                result.append(current)
+        """
+        :type intervals: List[Interval]
+        :type newInterval: Interval
+        :rtype: List[Interval]
+        """
+        result = []
+        i = 0
+        while i < len(intervals) and newInterval.start > intervals[i].end:
+            result += intervals[i],
+            i += 1
+        while i < len(intervals) and newInterval.end >= intervals[i].start:
+            newInterval = Interval(min(newInterval.start, intervals[i].start), \
+                                   max(newInterval.end, intervals[i].end))
+            i += 1
+        result += newInterval,
+        result += intervals[i:]
         return result
+
 
 if __name__ == "__main__":
     print Solution().insert([Interval(1, 2), Interval(3, 5), Interval(6, 7), Interval(8, 10), Interval(12, 16)], Interval(4, 9))
