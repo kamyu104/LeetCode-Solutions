@@ -26,7 +26,7 @@ class Solution(object):
         """
         if not intervals:
             return intervals
-        intervals.sort(key = lambda x: x.start)
+        intervals.sort(key=lambda x: x.start)
         result = [intervals[0]]
         for i in xrange(1, len(intervals)):
             prev, current = result[-1], intervals[i]
