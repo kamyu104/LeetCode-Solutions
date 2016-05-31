@@ -17,21 +17,25 @@ class Interval:
     def __repr__(self):
         return "[{}, {}]".format(self.start, self.end)
 
-class Solution:
-    # @param intervals, a list of Interval
-    # @return a list of Interval
+
+class Solution(object):
     def merge(self, intervals):
+        """
+        :type intervals: List[Interval]
+        :rtype: List[Interval]
+        """
         if not intervals:
             return intervals
         intervals.sort(key = lambda x: x.start)
         result = [intervals[0]]
-        for i in range(1, len(intervals)):
+        for i in xrange(1, len(intervals)):
             prev, current = result[-1], intervals[i]
             if current.start <= prev.end: 
                 prev.end = max(prev.end, current.end)
             else:
                 result.append(current)
         return result
+
 
 if __name__ == "__main__":
     print Solution().merge([Interval(1, 3), Interval(2, 6), Interval(8, 10), Interval(15,18)])
