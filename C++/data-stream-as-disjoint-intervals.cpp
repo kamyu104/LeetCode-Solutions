@@ -18,11 +18,11 @@ public:
     }
     
     void addNum(int val) {
-        auto ub_cmp =  [](int d, const Interval& x) { return d < x.start; };
         if (intervals_.empty()) {
             intervals_.emplace_back(val, val);
         } else {
-            auto it = upper_bound(intervals_.begin(), intervals_.end(), val, ub_cmp);
+            auto it = upper_bound(intervals_.begin(), intervals_.end(), val,
+                                  [](int d, const Interval& x) { return d < x.start; });
             if (it == intervals_.end()) {
                 if (prev(it)->end + 1 == val) {
                     prev(it)->end = val;
