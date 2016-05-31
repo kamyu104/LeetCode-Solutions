@@ -34,7 +34,6 @@ public:
                     prev(it)->second = val;
                 } else if (it == intervals_.begin() || prev(it)->second + 1 < val) {
                     intervals_[val] = val;
-                    it = intervals_.upper_bound(val);
                 }
                 if (prev(it)->second + 1 == it->first) {
                     prev(it)->second = it->second;
@@ -91,7 +90,6 @@ public:
                     intervals_.emplace(start, val);
                 } else if (it == intervals_.begin() || prev(it)->end + 1 < val) {
                     intervals_.emplace(val, val);
-                    it = intervals_.upper_bound(Interval(val, val));
                 }
                 if (prev(it)->end + 1 == it->start) {
                     const auto start = prev(it)->start;
