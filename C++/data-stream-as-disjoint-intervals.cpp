@@ -18,25 +18,30 @@ public:
     }
     
     void addNum(int val) {
-        Interval newInterval(val, val);
-        size_t i = 0;
-        vector<Interval> result;
-        // Insert intervals appeared before newInterval.
-        while (i < intervals_.size() && intervals_[i].end + 1 < newInterval.start) {
-            result.emplace_back(intervals_[i++]);
+        auto ub_cmp =  [](int d, const Interval& x) { return d < x.start; };
+        if (intervals_.empty()) {
+            intervals_.emplace_back(val, val);
+        } else {
+            auto it = upper_bound(intervals_.begin(), intervals_.end(), val, ub_cmp);
+            if (it == intervals_.end()) {
+                if (prev(it)->end + 1 == val) {
+                    prev(it)->end = val;
+                } else if (prev(it)->end + 1 < val) {
+                    intervals_.insert(it, Interval(val, val));
+                }
+            } else {
+                if (it != intervals_.begin() && prev(it)->end + 1 == val) {
+                    prev(it)->end = val;
+                } else if (it == intervals_.begin() || prev(it)->end + 1 < val) {
+                    intervals_.insert(it, Interval(val, val));
+                }
+                it = upper_bound(intervals_.begin(), intervals_.end(), val, ub_cmp);
+                if (prev(it)->end + 1 == it->start) {
+                    prev(it)->end = it->end;
+                    intervals_.erase(it);
+                }
+            }
         }
-
-        // Merge intervals that overlap with newInterval.
-        while (i < intervals_.size() && newInterval.end + 1 >= intervals_[i].start) {
-            newInterval = {min(newInterval.start, intervals_[i].start),
-                max(newInterval.end, intervals_[i].end)};
-            ++i;
-        }
-        result.emplace_back(newInterval);
-
-        // Insert intervals appearing after newInterval.
-        result.insert(result.end(), intervals_.cbegin() + i, intervals_.cend());
-        swap(result, intervals_);
     }
     
     vector<Interval> getIntervals() {
