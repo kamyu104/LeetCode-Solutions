@@ -1,4 +1,4 @@
-// Time:  addNum: O(n), getIntervals: O(n), i is the number of disjoint intervals.
+// Time:  addNum: O(n), getIntervals: O(n), n is the number of disjoint intervals.
 // Space: O(n)
 
 /**
