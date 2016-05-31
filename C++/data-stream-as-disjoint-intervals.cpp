@@ -10,6 +10,7 @@
  *     Interval(int s, int e) : start(s), end(e) {}
  * };
  */
+// Using map.
 class SummaryRanges {
 public:
     /** Initialize your data structure here. */
@@ -53,6 +54,62 @@ public:
 
 private:
     map<int, int> intervals_;
+};
+
+
+// Using set.
+class SummaryRanges {
+public:
+    struct Compare {
+        bool operator() (const Interval& a, const Interval& b) {
+            return a.start < b.start;
+        }
+    };
+
+    /** Initialize your data structure here. */
+    SummaryRanges() {
+        
+    }
+    
+    void addNum(int val) {
+        if (intervals_.empty()) {
+            intervals_.emplace(val, val);
+        } else {
+            auto it = intervals_.upper_bound(Interval(val, val));
+            if (it == intervals_.end()) {
+                if (prev(it)->end + 1 == val) {
+                    const auto start = prev(it)->start;
+                    intervals_.erase(prev(it));
+                    intervals_.emplace(start, val);
+                } else if (prev(it)->end + 1 < val) {
+                    intervals_.emplace(val, val);
+                }
+            } else {
+                if (it != intervals_.begin() && prev(it)->end + 1 == val) {
+                    const auto start = prev(it)->start;
+                    intervals_.erase(prev(it));
+                    intervals_.emplace(start, val);
+                } else if (it == intervals_.begin() || prev(it)->end + 1 < val) {
+                    intervals_.emplace(val, val);
+                }
+                it = intervals_.upper_bound(Interval(val, val));
+                if (prev(it)->end + 1 == it->start) {
+                    const auto start = prev(it)->start;
+                    const auto end = it->end;
+                    it = intervals_.erase(prev(it));
+                    intervals_.erase(it);
+                    intervals_.emplace(start, end);
+                }
+            }
+        }
+    }
+    
+    vector<Interval> getIntervals() {
+        return vector<Interval>(intervals_.begin(), intervals_.end());
+    }
+
+private:
+    set<Interval, Compare> intervals_;
 };
 
 
