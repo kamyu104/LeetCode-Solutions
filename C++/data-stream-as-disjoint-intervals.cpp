@@ -1,4 +1,4 @@
-// Time:  addNum: O(n), getIntervals: O(n), n is the number of disjoint intervals.
+// Time:  addNum: O(logn), getIntervals: O(n), n is the number of disjoint intervals.
 // Space: O(n)
 
 /**
@@ -14,6 +14,53 @@ class SummaryRanges {
 public:
     /** Initialize your data structure here. */
     SummaryRanges() {
+        
+    }
+    
+    void addNum(int val) {
+        if (intervals_.empty()) {
+            intervals_.emplace(val, val);
+        } else {
+            auto it = intervals_.upper_bound(val);
+            if (it == intervals_.end()) {
+                if (prev(it)->second + 1 == val) {
+                    prev(it)->second = val;
+                } else if (prev(it)->second + 1 < val) {
+                    intervals_[val] = val;
+                }
+            } else {
+                if (it != intervals_.begin() && prev(it)->second + 1 == val) {
+                    prev(it)->second = val;
+                } else if (it == intervals_.begin() || prev(it)->second + 1 < val) {
+                    intervals_[val] = val;
+                }
+                it = intervals_.upper_bound(val);
+                if (prev(it)->second + 1 == it->first) {
+                    prev(it)->second = it->second;
+                    intervals_.erase(it);
+                }
+            }
+        }
+    }
+    
+    vector<Interval> getIntervals() {
+        vector<Interval> result;
+        for (const auto& kvp : intervals_) {
+            result.emplace_back(kvp.first, kvp.second);
+        }
+        return result;
+    }
+
+private:
+    map<int, int> intervals_;
+};
+
+// Time:  addNum: O(n), getIntervals: O(n), n is the number of disjoint intervals.
+// Space: O(n)
+class SummaryRanges2 {
+public:
+    /** Initialize your data structure here. */
+    SummaryRanges2() {
         
     }
     
@@ -55,10 +102,10 @@ private:
 
 // Time:  addNum: O(logs), getIntervals: O(s), s is the data stream's size.
 // Space: O(s)
-class SummaryRanges2 {
+class SummaryRanges3 {
 public:
     /** Initialize your data structure here. */
-    SummaryRanges2() {
+    SummaryRanges3() {
         
     }
     
