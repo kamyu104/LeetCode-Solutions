@@ -55,6 +55,7 @@ private:
     map<int, int> intervals_;
 };
 
+
 // Time:  addNum: O(n), getIntervals: O(n), n is the number of disjoint intervals.
 // Space: O(n)
 class SummaryRanges2 {
