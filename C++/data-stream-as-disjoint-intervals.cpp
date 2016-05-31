@@ -21,8 +21,8 @@ public:
         if (intervals_.empty()) {
             intervals_.emplace_back(val, val);
         } else {
-            auto it = upper_bound(intervals_.begin(), intervals_.end(), val,
-                                  [](int d, const Interval& x) { return d < x.start; });
+            const auto ub_cmp = [](int d, const Interval& x) { return d < x.start; };
+            auto it = upper_bound(intervals_.begin(), intervals_.end(), val, ub_cmp);
             if (it == intervals_.end()) {
                 if (prev(it)->end + 1 == val) {
                     prev(it)->end = val;
@@ -58,7 +58,7 @@ private:
 class SummaryRanges2 {
 public:
     /** Initialize your data structure here. */
-    SummaryRanges() {
+    SummaryRanges2() {
         
     }
     
