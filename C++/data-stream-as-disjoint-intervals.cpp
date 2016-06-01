@@ -10,52 +10,6 @@
  *     Interval(int s, int e) : start(s), end(e) {}
  * };
  */
-// Using map.
-class SummaryRanges {
-public:
-    /** Initialize your data structure here. */
-    SummaryRanges() {
-        
-    }
-    
-    void addNum(int val) {
-        if (intervals_.empty()) {
-            intervals_.emplace(val, val);
-        } else {
-            auto it = intervals_.upper_bound(val);
-            if (it == intervals_.end()) {
-                if (prev(it)->second + 1 == val) {
-                    prev(it)->second = val;
-                } else if (prev(it)->second + 1 < val) {
-                    intervals_[val] = val;
-                }
-            } else {
-                if (it != intervals_.begin() && prev(it)->second + 1 == val) {
-                    prev(it)->second = val;
-                } else if (it == intervals_.begin() || prev(it)->second + 1 < val) {
-                    intervals_[val] = val;
-                }
-                if (prev(it)->second + 1 == it->first) {
-                    prev(it)->second = it->second;
-                    intervals_.erase(it);
-                }
-            }
-        }
-    }
-    
-    vector<Interval> getIntervals() {
-        vector<Interval> result;
-        for (const auto& kvp : intervals_) {
-            result.emplace_back(kvp.first, kvp.second);
-        }
-        return result;
-    }
-
-private:
-    map<int, int> intervals_;
-};
-
-
 // Using set.
 class SummaryRanges {
 public:
@@ -89,6 +43,41 @@ private:
         }
     };
     set<Interval, Compare> intervals_;
+};
+
+
+// Using map.
+class SummaryRanges {
+public:
+    /** Initialize your data structure here. */
+    SummaryRanges() {
+        
+    }
+    
+    void addNum(int val) {
+        auto it = intervals_.upper_bound(val);
+        int start = val, end = val;
+        if (it != intervals_.begin() && prev(it)->second + 1 >= val) {
+            --it;
+        }
+        while (it != intervals_.end() && end + 1 >= it->first) {
+            start = min(start, it->first);
+            end = max(end, it->second);
+            it = intervals_.erase(it);
+        }
+        intervals_[start] = end;
+    }
+
+    vector<Interval> getIntervals() {
+        vector<Interval> result;
+        for (const auto& kvp : intervals_) {
+            result.emplace_back(kvp.first, kvp.second);
+        }
+        return result;
+    }
+
+private:
+    map<int, int> intervals_;
 };
 
 
