@@ -59,54 +59,35 @@ private:
 // Using set.
 class SummaryRanges {
 public:
-    struct Compare {
-        bool operator() (const Interval& a, const Interval& b) {
-            return a.start < b.start;
-        }
-    };
-
     /** Initialize your data structure here. */
     SummaryRanges() {
         
     }
     
     void addNum(int val) {
-        if (intervals_.empty()) {
-            intervals_.emplace(val, val);
-        } else {
-            auto it = intervals_.upper_bound(Interval(val, val));
-            if (it == intervals_.end()) {
-                if (prev(it)->end + 1 == val) {
-                    const auto start = prev(it)->start;
-                    intervals_.erase(prev(it));
-                    intervals_.emplace(start, val);
-                } else if (prev(it)->end + 1 < val) {
-                    intervals_.emplace(val, val);
-                }
-            } else {
-                if (it != intervals_.begin() && prev(it)->end + 1 == val) {
-                    const auto start = prev(it)->start;
-                    intervals_.erase(prev(it));
-                    intervals_.emplace(start, val);
-                } else if (it == intervals_.begin() || prev(it)->end + 1 < val) {
-                    intervals_.emplace(val, val);
-                }
-                if (prev(it)->end + 1 == it->start) {
-                    const auto start = prev(it)->start;
-                    const auto end = it->end;
-                    it = intervals_.erase(prev(it));
-                    intervals_.erase(it);
-                    intervals_.emplace(start, end);
-                }
-            }
+        auto it = intervals_.upper_bound(Interval(val, val));
+        int start = val, end = val;
+        if (it != intervals_.begin() && prev(it)->end + 1 >= val) {
+            --it;
         }
+        while (it != intervals_.end() && end + 1 >= it->start) {
+            start = min(start, it->start);
+            end = max(end, it->end);
+            it = intervals_.erase(it);
+        }
+        intervals_.insert(it, Interval(start, end));
     }
-    
+
     vector<Interval> getIntervals() {
         return vector<Interval>(intervals_.begin(), intervals_.end());
     }
 
 private:
+    struct Compare {
+        bool operator() (const Interval& a, const Interval& b) {
+            return a.start < b.start;
+        }
+    };
     set<Interval, Compare> intervals_;
 };
 
