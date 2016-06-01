@@ -96,43 +96,36 @@ private:
 // Space: O(n)
 class SummaryRanges2 {
 public:
+public:
     /** Initialize your data structure here. */
     SummaryRanges2() {
         
     }
     
     void addNum(int val) {
-        if (intervals_.empty()) {
-            intervals_.emplace_back(val, val);
-        } else {
-            const auto ub_cmp = [](int d, const Interval& x) { return d < x.start; };
-            auto it = upper_bound(intervals_.begin(), intervals_.end(), val, ub_cmp);
-            if (it == intervals_.end()) {
-                if (prev(it)->end + 1 == val) {
-                    prev(it)->end = val;
-                } else if (prev(it)->end + 1 < val) {
-                    intervals_.insert(it, Interval(val, val));
-                }
-            } else {
-                if (it != intervals_.begin() && prev(it)->end + 1 == val) {
-                    prev(it)->end = val;
-                } else if (it == intervals_.begin() || prev(it)->end + 1 < val) {
-                    intervals_.insert(it, Interval(val, val));
-                    it = upper_bound(intervals_.begin(), intervals_.end(), val, ub_cmp);
-                }
-                if (prev(it)->end + 1 == it->start) {
-                    prev(it)->end = it->end;
-                    intervals_.erase(it);
-                }
-            }
+        auto it = upper_bound(intervals_.begin(), intervals_.end(), Interval(val, val), Compare());
+        int start = val, end = val;
+        if (it != intervals_.begin() && prev(it)->end + 1 >= val) {
+            --it;
         }
+        while (it != intervals_.end() && end + 1 >= it->start) {
+            start = min(start, it->start);
+            end = max(end, it->end);
+            it = intervals_.erase(it);
+        }
+        intervals_.insert(it, Interval(start, end));
     }
-    
+
     vector<Interval> getIntervals() {
         return intervals_;
     }
 
 private:
+    struct Compare {
+        bool operator() (const Interval& a, const Interval& b) {
+            return a.start < b.start;
+        }
+    };
     vector<Interval> intervals_;
 };
 
