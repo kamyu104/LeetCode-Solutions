@@ -37,6 +37,7 @@ class SnakeGame(object):
             return 0 <= x < self.__height and \
                    0 <= y < self.__width and \
                    (x, y) not in self.__snake
+
         d = self.__direction[direction]
         x, y = self.__snake[-1][0] + d[0], self.__snake[-1][1] + d[1]
         tail = self.__snake[-1]
