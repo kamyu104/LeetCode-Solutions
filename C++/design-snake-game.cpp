@@ -18,8 +18,8 @@ public:
         @return The game's score after the move. Return -1 if game over. 
         Game over when snake crosses the screen boundary or bites its body. */
     int move(string direction) {
-        const auto x = snake_.back().first + direction_[direction[0]].first;
-        const auto y = snake_.back().second + direction_[direction[0]].second;
+        const auto x = snake_.back().first + direction_[direction].first;
+        const auto y = snake_.back().second + direction_[direction].second;
         const auto tail = snake_.back();
         
         snake_.pop_front();
@@ -48,8 +48,8 @@ private:
     }
     int width_, height_, score_;
     deque<pair<int, int>> food_, snake_;
-    unordered_map<char, pair<int, int>> direction_ = {{'U', {-1, 0}}, {'L', {0, -1}},
-                                                      {'R', {0, 1}}, {'D', {1, 0}}};
+    unordered_map<string, pair<int, int>> direction_ = {{"U", {-1, 0}}, {"L", {0, -1}},
+                                                        {"R", {0, 1}}, {"D", {1, 0}}};
 };
 
 /**
@@ -57,3 +57,5 @@ private:
  * SnakeGame obj = new SnakeGame(width, height, food);
  * int param_1 = obj.move(direction);
  */
+ 
+ 
