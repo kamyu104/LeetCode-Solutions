@@ -47,7 +47,7 @@ class SnakeGame(object):
             self.__score += 1
             self.__food.popleft()
             self.__snake.appendleft(tail)
-        self.__snake += (x, y),
+        self.__snake.append((x, y))
         return self.__score
 
 
