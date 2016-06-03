@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-352%20%2F%20352-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-353%20%2F%20353-ff69b4.svg)
 
-Up to date (2016-05-31), there are `335` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
+Up to date (2016-06-03), there are `336` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
 The number of questions is increasing recently.
-Here is the classification of all `352` questions.
+Here is the classification of all `353` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -465,6 +465,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 284| [Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)| [C++](./C++/peeking-iterator.cpp) [Python](./Python/peeking-iterator.py) | _O(1)_ | _O(1)_ | Medium ||
 348| [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) | [C++](./C++/design-tic-tac-toe.cpp) [Python](./Python/design-tic-tac-toe.py) | _O(1)_| _O(n^2)_| Medium |📖||
+353| [Design Snake Game](https://leetcode.com/problems/design-snake-game/) | [C++](./C++/design-snake-game.cpp) [Python](./Python/design-snake-game.py) | _O(s)_| _O(s)_| Medium |📖| Deque |
 
 ## SQL
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
