@@ -1,4 +1,4 @@
-// Time:  O(s) per move, s is current length of the snake.
+// Time:  O(s) per move, s is the current length of the snake.
 // Space: O(s)
 
 class SnakeGame {
