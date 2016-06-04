@@ -25,20 +25,20 @@ public:
         }
 
         int n = 1;
-        ListNode *cur = head;
-        for (; cur->next; cur = cur->next) {
+        auto curr = head;
+        for (; curr->next; curr = curr->next) {
             ++n;
         }
-        cur->next = head;
+        curr->next = head;
 
-        ListNode *tail = cur;
+        auto tail = curr;
         k = n - k % n;
-        cur = head;
-        for (int i = 0; i < k; cur = cur->next, ++i) {
-            tail = cur;
+        curr = head;
+        for (int i = 0; i < k; curr = curr->next, ++i) {
+            tail = curr;
         }
 
         tail->next = nullptr;
-        return cur; 
+        return curr; 
     }
 };
