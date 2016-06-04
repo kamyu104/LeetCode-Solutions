@@ -12,7 +12,7 @@
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        auto dummy = ListNode(0);
+        auto dummy = ListNode{0};
 
         while (head) {
             auto tmp = head->next;
