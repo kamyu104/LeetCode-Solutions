@@ -13,13 +13,13 @@ class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
         if (head) {
-            for (ListNode *odd_tail = head, *cur = head->next;
-                 cur && cur->next;
-                 cur = cur->next) {
+            for (auto odd_tail = head, curr = head->next;
+                 curr && curr->next;
+                 curr = curr->next) {
                 ListNode *even_head = odd_tail->next;
-                odd_tail->next = cur->next;
+                odd_tail->next = curr->next;
                 odd_tail = odd_tail->next;
-                cur->next = odd_tail->next;
+                curr->next = odd_tail->next;
                 odd_tail->next = even_head;
             }
         }
