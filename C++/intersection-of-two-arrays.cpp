@@ -24,7 +24,7 @@ public:
 };
 
 
-// Time:  O(min(m, n) * log(max(m, n)))
+// Time:  O(max(m, n) * log(max(m, n)))
 // Space: O(1)
 // Binary search solution.
 class Solution2 {
