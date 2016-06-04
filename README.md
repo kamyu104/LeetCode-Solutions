@@ -124,7 +124,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 2| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C++](./C++/add-two-numbers.cpp) [Python](./Python/add-two-numbers.py) | _O(n)_   | _O(1)_          | Medium         ||
-23| [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [C++](./C++/merge-k-sorted-lists.cpp) [Python](./Python/merge-k-sorted-lists.py) | _O(nlogk)_| _O(1)_| Hard          | Heap, Divide and Conquer |
 24| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)| [C++](./C++/swap-nodes-in-pairs.cpp) [Python](./Python/swap-nodes-in-pairs.py)   | _O(n)_          | _O(1)_          | Medium         ||
 25| [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)| [C++](./C++/reverse-nodes-in-k-group.cpp) [Python](./Python/reverse-nodes-in-k-group.py) | _O(n)_       | _O(1)_         | Hard         ||
 61| [Rotate List](https://leetcode.com/problems/rotate-list/)| [C++](./C++/rotate-list.cpp) [Python](./Python/rotate-list.py)   | _O(n)_          | _O(1)_          | Medium         ||  
@@ -257,6 +256,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 21| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)| [Python](./Python/merge-two-sorted-lists.py) | _O(n)_ | _O(1)_ | Easy         ||
+23| [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [C++](./C++/merge-k-sorted-lists.cpp) [Python](./Python/merge-k-sorted-lists.py) | _O(nlogk)_| _O(1)_| Hard          | Heap, Divide and Conquer |
 56| [Merge Intervals](https://leetcode.com/problems/merge-intervals/)| [Python](./Python/merge-intervals.py) | _O(nlogn)_  | _O(1)_        | Hard           ||
 57| [Insert Interval](https://leetcode.com/problems/insert-interval/)| [Python](./Python/insert-interval.py) | _O(n)_    | _O(1)_          | Hard           ||
 75| [Sort Colors](https://leetcode.com/problems/sort-colors/)   | [C++](./C++/sort-colors.cpp) [Python](./Python/sort-colors.py) | _O(n)_         | _O(1)_          | Medium         || Tri Partition
