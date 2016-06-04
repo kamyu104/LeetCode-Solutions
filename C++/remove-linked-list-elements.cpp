@@ -12,7 +12,7 @@
 class Solution {
 public:
     ListNode* removeElements(ListNode* head, int val) {
-        auto dummy = ListNode(0);
+        ListNode dummy{0};
         dummy.next = head;
         auto *prev = &dummy, *cur = dummy.next;
         
