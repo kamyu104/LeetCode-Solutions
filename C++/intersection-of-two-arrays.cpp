@@ -34,7 +34,6 @@ public:
             return intersection(nums2, nums1);
         }
 
-        // Make sure it is sorted, doesn't count in time.
         sort(nums1.begin(), nums1.end());
         sort(nums2.begin(), nums2.end());
 
