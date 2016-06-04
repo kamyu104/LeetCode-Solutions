@@ -13,26 +13,26 @@ class Solution {
 public:
     RandomListNode *copyRandomList(RandomListNode *head) {
         // Insert the copied node after the original one.
-        for (auto *cur = head; cur; cur = cur->next->next) {
-            auto *node = new RandomListNode(cur->label);
-            node->next = cur->next;
-            cur->next = node;
+        for (auto *curr = head; curr; curr = curr->next->next) {
+            auto *node = new RandomListNode(curr->label);
+            node->next = curr->next;
+            curr->next = node;
         }
 
         // Update random node.
-        for (auto *cur = head; cur; cur = cur->next->next) {
-            if (cur->random) {
-                cur->next->random = cur->random->next;
+        for (auto *curr = head; curr; curr = curr->next->next) {
+            if (curr->random) {
+                curr->next->random = curr->random->next;
             }
         }
 
         // Seperate the copied nodes from original ones.
-        RandomListNode dummy(INT_MIN);
-        for (auto *cur = head, *copy_cur = &dummy;
-             cur;
-             copy_cur = copy_cur->next, cur = cur->next) {
-            copy_cur->next = cur->next;
-            cur->next = cur->next->next;
+        RandomListNode dummy(0);
+        for (auto *curr = head, *copy_curr = &dummy;
+             curr;
+             copy_curr = copy_curr->next, curr = curr->next) {
+            copy_curr->next = curr->next;
+            curr->next = curr->next->next;
         }
 
         return dummy.next;
