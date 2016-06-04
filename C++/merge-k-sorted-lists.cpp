@@ -52,7 +52,7 @@ private:
 
 // Time:  O(n * logk)
 // Space: O(logk)
-// Divide and conquer solution.
+// Divide and Conquer solution.
 class Solution2 {
 public:
     ListNode *mergeKLists(vector<ListNode *> &lists) {
