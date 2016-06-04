@@ -34,7 +34,7 @@ class Solution(object):
         return res
 
 
-# Time:  O(min(m, n) * log(max(m, n)))
+# Time:  O(max(m, n) * log(max(m, n)))
 # Space: O(1)
 # Binary search solution.
 class Solution2(object):
@@ -56,7 +56,7 @@ class Solution2(object):
                     left = mid + 1
             return left
 
-        nums1.sort(), nums2.sort()  # Make sure it is sorted, doesn't count in time.
+        nums1.sort(), nums2.sort()
 
         res = []
         left = 0
