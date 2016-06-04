@@ -9,10 +9,7 @@ public:
             return intersection(nums2, nums1);
         }
 
-        unordered_set<int> lookup;
-        for (const auto& i : nums1) {
-            lookup.emplace(i);
-        }
+        unordered_set<int> lookup{nums1.cbegin(), nums1.cend()};
 
         vector<int> result;
         for (const auto& i : nums2) {
