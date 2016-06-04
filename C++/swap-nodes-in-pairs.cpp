@@ -12,17 +12,17 @@
 class Solution {
 public:
     ListNode* swapPairs(ListNode* head) {
-        ListNode dummy = ListNode(0);
+        ListNode dummy{0};
         dummy.next = head;
-        ListNode *cur = &dummy;
-        while (cur->next && cur->next->next) {
-            ListNode *next_one = cur->next;
-            ListNode *next_two = next_one->next;
-            ListNode *next_three = next_two->next;
-            cur->next = next_two;
+        auto curr = &dummy;
+        while (curr->next && curr->next->next) {
+            auto next_one = curr->next;
+            auto next_two = next_one->next;
+            auto next_three = next_two->next;
+            curr->next = next_two;
             next_two->next = next_one;
             next_one->next = next_three;
-            cur = next_one;
+            curr = next_one;
         }
         return dummy.next; 
     }
