@@ -72,7 +72,6 @@ private:
                              mergeKListsHelper(lists, (begin + end) / 2 + 1, end));
     }
 
-private:
     ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
         ListNode dummy = ListNode(0);
         auto *curr = &dummy;
