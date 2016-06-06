@@ -26,7 +26,7 @@ public:
                          const int& operand1, const int& operand2,
                          vector<string> *expr, vector<string> *result) {
         if (pos == num.length() && operand1 + operand2 == target) {
-            result->emplace_back(move(join(*expr)));
+            result->emplace_back(join(*expr));
         } else {
             int val = 0;
             string val_str;
