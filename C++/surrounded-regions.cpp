@@ -10,14 +10,14 @@ public:
 
         queue<pair<int, int>> q;
         for (int i = 0; i < board.size(); ++i) {
-            q.emplace(make_pair(i, 0));
-            q.emplace(make_pair(i, board[0].size() - 1));
+            q.emplace(i, 0);
+            q.emplace(i, board[0].size() - 1);
+        }
+        for (int j = 0; j < board[0].size(); ++j) {
+            q.emplace(0, j);
+            q.emplace(board.size() - 1, j);
         }
 
-        for (int j = 0; j < board[0].size(); ++j) {
-            q.emplace(make_pair(0, j));
-            q.emplace(make_pair(board.size() - 1, j));
-        }
         while (!q.empty()) {
             int i, j;
             tie(i, j) = q.front();
@@ -32,7 +32,7 @@ public:
                         0 <= y && y < board[0].size() &&
                         board[x][y] == 'O') {
                         board[x][y] = 'V';
-                        q.emplace(make_pair(x, y));
+                        q.emplace(x, y);
                     }
                 }
             }
