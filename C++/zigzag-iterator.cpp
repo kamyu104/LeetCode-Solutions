@@ -5,10 +5,10 @@ class ZigzagIterator {
 public:
     ZigzagIterator(vector<int>& v1, vector<int>& v2) {
         if (!v1.empty()) {
-            q.emplace(make_pair(v1.size(), v1.cbegin()));
+            q.emplace(v1.size(), v1.cbegin());
         }
         if (!v2.empty()) {
-            q.emplace(make_pair(v2.size(), v2.cbegin()));
+            q.emplace(v2.size(), v2.cbegin());
         }
     }
 
@@ -17,7 +17,7 @@ public:
         const auto it = q.front().second;
         q.pop();
         if (len > 1) {
-            q.emplace(make_pair(len - 1, it + 1));
+            q.emplace(len - 1, it + 1);
         }
         return *it;
     }
