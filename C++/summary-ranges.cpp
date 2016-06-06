@@ -14,7 +14,7 @@ public:
             if (i < nums.size() && nums[i] == end + 1) {
                 end = nums[i];
             } else  {
-                string range = to_string(start);
+                auto&& range = to_string(start);
                 if (start != end) {
                     range.append("->" + to_string(end));
                 }
