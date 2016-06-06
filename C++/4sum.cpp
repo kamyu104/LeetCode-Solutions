@@ -20,7 +20,7 @@ public:
                 left = j + 1, right = len - 1;
                 while (left < right) {
                     if (num[left] + num[right] == sum) {
-                        res.emplace_back(move(vector<int>{num[i], num[j], num[left], num[right]}));
+                        res.push_back({num[i], num[j], num[left], num[right]});
                         ++left, --right;
                         while (left < right && num[left] == num[left - 1]) {
                             ++left;
@@ -68,7 +68,7 @@ public:
                 auto c = j->second.first;
                 auto d = j->second.second;
                 if (b < c) {
-                    ans.emplace_back(move(vector<int>{num[a], num[b], num[c], num[d]}));
+                    ans.push_back({num[a], num[b], num[c], num[d]});
                 }
             }
         }
