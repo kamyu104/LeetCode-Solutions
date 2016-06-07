@@ -9,7 +9,7 @@ public:
         sort(envelopes.begin(), envelopes.end());  // O(nlogn)
         for (int i = 0; i < envelopes.size();) {
             const auto w = envelopes[i].first;
-            int same_count = 0;
+            auto same_count = 0;
             while (i < envelopes.size() && envelopes[i].first == w) {
                 ++i, ++same_count;
             }
