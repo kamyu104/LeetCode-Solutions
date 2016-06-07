@@ -32,9 +32,11 @@ class Solution(object):
             else:
                 result[left] = target
 
-        envelopes.sort(lambda x, y: y[1] - x[1] if x[0] == y[0] \
-                                    else x[0] - y[0])
-        result, i = [], 0
+        result = []
+
+        envelopes.sort(lambda x, y: y[1] - x[1] if x[0] == y[0] else \
+                                    x[0] - y[0])
         for envelope in envelopes:
             insert(envelope[1])
+
         return len(result)
