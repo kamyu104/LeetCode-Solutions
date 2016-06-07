@@ -1,5 +1,5 @@
-# Time:  O(nlogn + nlogk) = O(nlogn)
-# Space: O(k),  k is the max size of heights with the same width.
+# Time:  O(nlogn + nlogk) = O(nlogn),  k is the max size of heights with the same width.
+# Space: O(1)
 
 # You have a number of envelopes with widths and heights given
 # as a pair of integers (w, h). One envelope can fit into another
@@ -35,8 +35,7 @@ class Solution(object):
         envelopes.sort()
         result, i = [], 0
         while i < len(envelopes):
-            w = envelopes[i][0]
-            same_count = 0
+            w, same_count = envelopes[i][0], 0
             while i < len(envelopes) and envelopes[i][0] == w:
                 i += 1
                 same_count += 1
