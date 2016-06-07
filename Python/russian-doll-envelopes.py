@@ -16,7 +16,7 @@
 class Solution(object):
     def maxEnvelopes(self, envelopes):
         """
-        :type envelopes: max_envelopest[max_envelopest[int]]
+        :type envelopes: List[List[int]]
         :rtype: int
         """
         def insert(target):
@@ -32,15 +32,9 @@ class Solution(object):
             else:
                 result[left] = target
 
-        envelopes.sort()
+        envelopes.sort(lambda x, y: y[1] - x[1] if x[0] == y[0] \
+                                    else x[0] - y[0])
         result, i = [], 0
-        while i < len(envelopes):
-            w, same_count = envelopes[i][0], 0
-            while i < len(envelopes) and envelopes[i][0] == w:
-                i += 1
-                same_count += 1
-
-            for j in reversed(xrange(i-same_count, i)):  # Insert from larger h.
-                insert(envelopes[j][1])
-
+        for envelope in envelopes:
+            insert(envelope[1])
         return len(result)
