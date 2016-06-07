@@ -1,4 +1,4 @@
-// Time:  O(nlogn)
+// Time:  O(nlogn + nlogk) = O(nlogn)
 // Space: O(k),  k is the max size of heights with the same width.
 
 class Solution {
@@ -6,7 +6,7 @@ public:
     int maxEnvelopes(vector<pair<int, int>>& envelopes) {
         vector<int> result;
 
-        sort(envelopes.begin(), envelopes.end());
+        sort(envelopes.begin(), envelopes.end());  // O(nlogn)
         for (int i = 0; i < envelopes.size();) {
             int w = envelopes[i].first;
             int same_count = 0;
@@ -16,7 +16,7 @@ public:
 
             for (int j = i - 1; j >= i - same_count; --j) {  // Insert from larger h.
                 const auto target = envelopes[j].second;
-                auto it = lower_bound(result.begin(), result.end(), target);
+                auto it = lower_bound(result.begin(), result.end(), target);  // O(logk)
                 if (it == result.end()) {
                     result.emplace_back(target);
                 } else {
