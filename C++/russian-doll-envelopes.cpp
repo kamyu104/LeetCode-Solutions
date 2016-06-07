@@ -1,4 +1,4 @@
-// Time:  O(nlogn + nlogk) = O(nlogn), k is the max size of heights with the same width.
+// Time:  O(nlogn + nlogk) = O(nlogn), k is the length of the result.
 // Space: O(1)
 
 class Solution {
