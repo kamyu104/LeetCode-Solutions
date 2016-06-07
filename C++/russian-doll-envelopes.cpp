@@ -14,7 +14,7 @@ public:
                 ++i, ++same_count;
             }
 
-            for (int j = i - 1; j >= i - same_count; --j) {
+            for (int j = i - 1; j >= i - same_count; --j) {  // Insert from larger h.
                 const auto target = envelopes[j].second;
                 auto it = lower_bound(result.begin(), result.end(), target);
                 if (it == result.end()) {
