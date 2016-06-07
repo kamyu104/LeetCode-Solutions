@@ -1,5 +1,5 @@
-// Time:  O(nlogn + nlogk) = O(nlogn)
-// Space: O(k),  k is the max size of heights with the same width.
+// Time:  O(nlogn + nlogk) = O(nlogn), k is the max size of heights with the same width.
+// Space: O(1)
 
 class Solution {
 public:
@@ -8,8 +8,7 @@ public:
 
         sort(envelopes.begin(), envelopes.end());  // O(nlogn)
         for (int i = 0; i < envelopes.size();) {
-            int w = envelopes[i].first;
-            int same_count = 0;
+            int w = envelopes[i].first, same_count = 0;
             while (i < envelopes.size() && envelopes[i].first == w) {
                 ++i, ++same_count;
             }
