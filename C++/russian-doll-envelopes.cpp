@@ -8,8 +8,7 @@ public:
 
         sort(envelopes.begin(), envelopes.end());
         for (int i = 0; i < envelopes.size();) {
-            int w, h;
-            tie(w, h) = envelopes[i];
+            int w = envelopes[i].first;
             int same_count = 0;
             while (i < envelopes.size() && envelopes[i].first == w) {
                 ++i, ++same_count;
