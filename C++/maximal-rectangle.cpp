@@ -13,7 +13,7 @@ public:
         vector<int> height(matrix[0].size(), 0);
         for (int i = 0; i < matrix.size(); ++i) {
             for (int j = 0; j < matrix[0].size(); ++j) {
-                height[j] = matrix[i][j] == '1' ? height[j] + 1: 0;
+                height[j] = matrix[i][j] == '1' ? height[j] + 1 : 0;
             }
             res = max(res, largestRectangleArea(height));
         }
