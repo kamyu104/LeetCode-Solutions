@@ -19,7 +19,7 @@ public:
         const auto mid = left + right;
         for (const auto& kvp : groups_by_y) {
             for (const auto& x : kvp.second) {
-                if (x != mid - x && kvp.second.count(mid - x) == 0) {
+                if (kvp.second.count(mid - x) == 0) {
                     return false;
                 }
             }
