@@ -147,6 +147,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 20| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [C++](./C++/valid-parentheses.cpp) [Python](./Python/valid-parentheses.py) | _O(n)_        | _O(n)_          | Easy           ||
 32| [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)| [C++](./C++/longest-valid-parentheses.cpp) [Python](./Python/longest-valid-parentheses.py) | _O(n)_ | _O(1)_ | Hard   ||
 71| [Simplify Path](https://leetcode.com/problems/simplify-path/)| [C++](./C++/simplify-path.cpp) [Python](./Python/simplify-path.py) | _O(n)_        | _O(n)_          | Medium         ||
+84| [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [C++](./C++/largest-rectangle-in-histogram.cpp) [Python](./Python/largest-rectangle-in-histogram.py) | _O(n)_ | _O(n)_ | Hard || Ascending Stack, DP
+85| [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)| [C++](./C++/maximal-rectangle.cpp)  [Python](./Python/maximal-rectangle.py)| _O(m * n)_ | _O(n)_         | Hard           | EPI | Ascending Stack
 101| [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)| [C++](./C++/symmetric-tree.cpp) [Python](./Python/symmetric-tree.py) | _O(n)_      | _O(h)_          | Easy           ||
 150| [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)| [C++](./C++/evaluate-reverse-polish-notation.cpp) [Python](./Python/evaluate-reverse-polish-notation.py)| _O(n)_| _O(n)_| Medium          ||
 155| [Min Stack](https://leetcode.com/problems/min-stack/)     | [C++](./C++/min-stack.cpp) [Python](./Python/min-stack.py)  | _O(n)_          | _O(1)_          | Easy           ||
@@ -417,7 +419,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 64| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [Python](./Python/minimum-path-sum.py)| _O(m * n)_ | _O(m + n)_     | Medium         ||
 70| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [Python](./Python/climbing-stairs.py) | _O(n)_    | _O(1)_          | Easy           ||
 72| [Edit Distance](https://leetcode.com/problems/edit-distance/)|[Python](./Python/edit-distance.py)| _O(m * n)_      | _O(m + n)_      | Hard           ||
-85| [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)| [C++](./C++/maximal-rectangle.cpp)  [Python](./Python/maximal-rectangle.py)| _O(m * n)_ | _O(n)_         | Hard           | EPI |
 87| [Scramble String](https://leetcode.com/problems/scramble-string/) | [Python](./Python/scramble-string.py) | _O(n^4)_ | _O(n^3)_        | Hard           ||
 91| [Decode Ways](https://leetcode.com/problems/decode-ways/)   | [C++](./Python/decode-ways.cpp) [Python](./Python/decode-ways.py)| _O(n)_          | _O(1)_          | Medium         ||
 96| [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) | [Python](./Python/unique-binary-search-trees.py) | _O(n)_      | _O(1)_         | Medium         || Math
@@ -452,7 +453,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 44| [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | [Python](./Python/wildcard-matching.py) | _O(m + n)_ | _O(1)_    | Hard           || Tricky
 45| [Jump Game II](https://leetcode.com/problems/jump-game-ii/)  | [Python](./Python/jump-game-ii.py) | _O(n)_        | _O(1)_          | Hard           ||
 55| [Jump Game](https://leetcode.com/problems/jump-game/)     | [Python](./Python/jump-game.py)  | _O(n)_          | _O(1)_          | Medium         ||
-84| [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Python](./Python/largest-rectangle-in-histogram.py) | _O(n)_ | _O(n)_ | Hard || Tricky
 122| [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [Python](./Python/best-time-to-buy-and-sell-stock-ii.py) | _O(n)_ | _O(1)_ | Medium ||
 134| [Gas Station](https://leetcode.com/problems/gas-station/)| [Python](./Python/gas-station.py)   | _O(n)_          | _O(1)_          | Medium         ||
 135| [Candy](https://leetcode.com/problems/candy/)| [C++](./C++/candy.cpp) [Python](./Python/candy.py) | _O(n)_ | _O(n)_ | Hard ||
