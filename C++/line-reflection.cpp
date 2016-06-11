@@ -16,9 +16,9 @@ public:
                 return a.first < b.first;
             });
 
-        const auto mid = points.front().first + (points.back().first - points.front().first) / 2.0;
+        const auto mid = points.front().first + points.back().first;
         for (int left = 0, right = points.size() - 1; left <= right; ++left, --right) {
-            if ((mid != points[left].first + (points[right].first - points[left].first) / 2.0) || 
+            if ((mid != points[left].first + points[right].first) || 
                 (points[left].first != points[right].first &&
                  points[left].second != points[right].second)) {
                 return false;
