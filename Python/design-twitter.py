@@ -4,6 +4,43 @@
 #                      t is the total number of tweets,
 #                      r is the number of followings.
 
+# Design a simplified version of Twitter where users can post tweets,
+# follow/unfollow another user and is able to see the 10 most recent
+# tweets in the user's news feed. Your design should support the following methods:
+#
+# postTweet(userId, tweetId): Compose a new tweet.
+# getNewsFeed(userId): Retrieve the 10 most recent tweet ids in the user's
+# news feed. Each item in the news feed must be posted by users who the user followed
+# or by the user herself. Tweets must be ordered from most recent to least recent.
+# follow(followerId, followeeId): Follower follows a followee.
+# unfollow(followerId, followeeId): Follower unfollows a followee.
+# Example:
+#
+# Twitter twitter = new Twitter();
+#
+# // User 1 posts a new tweet (id = 5).
+# twitter.postTweet(1, 5);
+#
+# // User 1's news feed should return a list with 1 tweet id -> [5].
+# twitter.getNewsFeed(1);
+#
+# // User 1 follows user 2.
+# twitter.follow(1, 2);
+#
+# // User 2 posts a new tweet (id = 6).
+# twitter.postTweet(2, 6);
+#
+# // User 1's news feed should return a list with 2 tweet ids -> [6, 5].
+# // Tweet id 6 should precede tweet id 5 because it is posted after tweet id 5.
+# twitter.getNewsFeed(1);
+#
+# // User 1 unfollows user 2.
+# twitter.unfollow(1, 2);
+#
+# // User 1's news feed should return a list with 1 tweet id -> [5],
+# // since user 1 is no longer following user 2.
+# twitter.getNewsFeed(1);
+
 class Twitter(object):
 
     def __init__(self):
@@ -35,18 +72,17 @@ class Twitter(object):
         max_heap = []
         if self.__messages[userId]:
             heapq.heappush(max_heap, (-self.__messages[userId][-1][0], userId, 0, len(self.__messages[userId])))
-        for id in self.__followings[userId]:
-            if self.__messages[id]:
-                heapq.heappush(max_heap, (-self.__messages[id][-1][0], id, 0, len(self.__messages[id])))
+        for uid in self.__followings[userId]:
+            if self.__messages[uid]:
+                heapq.heappush(max_heap, (-self.__messages[uid][-1][0], uid, 0, len(self.__messages[uid])))
 
         result = []
         while max_heap and len(result) < self.__number_of_most_recent_tweets:
-            t, id, curr, end = heapq.heappop(max_heap)
+            t, uid, curr, end = heapq.heappop(max_heap)
             nxt = curr + 1;
-            print t, id, curr, end
             if nxt != end:
-                heapq.heappush(max_heap, (-self.__messages[id][-(nxt+1)][0], id, nxt, len(self.__messages[id])))
-            result.append(self.__messages[id][-(curr+1)][1]);
+                heapq.heappush(max_heap, (-self.__messages[uid][-(nxt+1)][0], uid, nxt, len(self.__messages[uid])))
+            result.append(self.__messages[uid][-(curr+1)][1]);
         return result
 
     def follow(self, followerId, followeeId):
