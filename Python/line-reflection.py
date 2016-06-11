@@ -43,8 +43,8 @@ class Solution2(object):
         left, right = 0, len(points) - 1
         while left <= right:
             if (mid != points[left][0] + points[right][0]) or \
-                (points[left][0] != points[right][0] and \
-                 points[left][1] != points[right][1]):
+               (points[left][0] != points[right][0] and \
+                points[left][1] != points[right][1]):
                 return False
             left += 1
             right -= 1
