@@ -1,7 +1,7 @@
 // Time:  O(m * n)
 // Space: O(n)
 
-// Increasing stack solution.
+// Ascending stack solution.
 class Solution {
 public:
     int maximalRectangle(vector<vector<char> > &matrix) {
