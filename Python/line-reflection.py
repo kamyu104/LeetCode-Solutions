@@ -25,7 +25,7 @@ class Solution(object):
 
 # Time:  O(nlogn)
 # Space: O(n)
-# Hash solution.
+# Two pointers solution.
 class Solution2(object):
     def isReflected(self, points):
         """
