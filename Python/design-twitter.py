@@ -61,7 +61,6 @@ class Twitter(object):
         """
         self.__time += 1
         self.__messages[userId].append((self.__time, tweetId))
-        
 
     def getNewsFeed(self, userId):
         """
