@@ -1,8 +1,7 @@
-// Time:  O(nlogf),     n is most recently number of tweets,
-//                      f is the number of user's following.
-// Space: O(u + t + r), u is the number of users,
-//                      t is the total number of tweets,
-//                      r is the total number of followings.
+// Time:  O(klogu), k is most recently number of tweets,
+//                  u is the number of the user's following.
+// Space: O(t + f), t is the total number of tweets,
+//                  f is the total number of followings.
 
 class Twitter {
 public:
