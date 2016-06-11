@@ -468,7 +468,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 284| [Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)| [C++](./C++/peeking-iterator.cpp) [Python](./Python/peeking-iterator.py) | _O(1)_ | _O(1)_ | Medium ||
 348| [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) | [C++](./C++/design-tic-tac-toe.cpp) [Python](./Python/design-tic-tac-toe.py) | _O(1)_| _O(n^2)_| Medium |📖||
 353| [Design Snake Game](https://leetcode.com/problems/design-snake-game/) | [C++](./C++/design-snake-game.cpp) [Python](./Python/design-snake-game.py) | _O(s)_| _O(s)_| Medium |📖| Deque |
-355| [Design Twitter](https://leetcode.com/problems/design-twitter/) | [C++](./C++/design-twitter.cpp) [Python](./Python/design-twitter.cpp) | _O(nlogf)_| _O(u + t + r)_| Hard | LintCode | Heap |
+355| [Design Twitter](https://leetcode.com/problems/design-twitter/) | [C++](./C++/design-twitter.cpp) [Python](./Python/design-twitter.py) | _O(nlogf)_| _O(u + t + r)_| Hard | LintCode | Heap |
 
 ## SQL
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
