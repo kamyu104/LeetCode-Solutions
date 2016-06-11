@@ -35,7 +35,8 @@ class Solution2(object):
         if not points:
             return True
         points.sort()
-        points[len(points)/2:] = sorted(points[len(points)/2:], \ # Space: O(n)
+        # Space: O(n)
+        points[len(points)/2:] = sorted(points[len(points)/2:], \
                                         lambda x, y: y[1] - x[1] if x[0] == y[0] else \
                                                      x[0] - y[0])
         mid = points[0][0] + points[-1][0]
