@@ -13,6 +13,6 @@ public:
             fk *= 10 - (k - 1);
             count += fk;
         }
-        return count;  // sum(f(i), i=1~n)
+        return count;  // sum(f(k), k=1~n)
     }
 };
