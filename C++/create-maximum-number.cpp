@@ -15,7 +15,7 @@ public:
             vector<int> tmp(k);
             merge(max_digits1[i], max_digits2[j], &tmp);
             if (tmp > res) {
-                res = tmp;
+                res = move(tmp);
             }
         }
         return res;
