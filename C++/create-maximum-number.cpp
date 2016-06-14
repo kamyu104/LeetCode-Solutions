@@ -14,7 +14,7 @@ public:
             int j = k - i;
             vector<int> tmp(k);
             merge(max_digits1[i], max_digits2[j], &tmp);
-            if (compareVector(tmp, res)) {
+            if (tmp > res) {
                 res = tmp;
             }
         }
@@ -56,25 +56,6 @@ private:
             }
         }
         return res;
-    }
-
-    // Time:  O(k)
-    // Space: O(1)
-    bool compareVector(const vector<int>& vec1, const vector<int>& vec2) {
-        auto first1 = vec1.begin(), last1 = vec1.end(),
-             first2 = vec2.begin(), last2 = vec2.end();
-        for (; first1 != last1 && first2 != last2; ++first1, ++first2) {
-            if (*first1 > *first2) {
-                return true;
-            } else if (*first1 < *first2) {
-                return false;
-            }
-        }
-        if (first1 == last1) {
-            return false;
-        } else {
-            return true;
-        }
     }
 
     // Time:  O(k) ~ O(k^2)
