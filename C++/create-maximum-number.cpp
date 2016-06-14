@@ -64,10 +64,12 @@ private:
         auto first1 = vec1.begin(), last1 = vec1.end(),
              first2 = vec2.begin(), last2 = vec2.end();
         auto result = res->begin();
-        while (first1 != last1 && first2 != last2) {
-            if (*first2 > *first1) {
+        while (first1 != last1 || first2 != last2) {
+            int val1 = first1 != last1 ? *first1 : numeric_limits<int>::min();
+            int val2 = first2 != last2 ? *first2 : numeric_limits<int>::min();
+            if (val2 > val1) {
                 *result++ = *first2++;
-            } else if (*first2 < *first1) {
+            } else if (val2 < val1) {
                 *result++ = *first1++;
             } else {
                 auto pos1 = first1, pos2 = first2;
@@ -83,11 +85,6 @@ private:
                     }
                 }
             }
-        }
-        if (first1 == last1) {
-            std::copy(first2, last2, result);
-        } else if (first2 == last2) {
-            std::copy(first1, last1, result);
         }
     }
 };
