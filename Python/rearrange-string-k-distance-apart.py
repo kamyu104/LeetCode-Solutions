@@ -33,7 +33,6 @@ class Solution(object):
                 cnt_char[0] += 1
                 if cnt_char[0] < 0:
                     used_cnt_chars.append(cnt_char)
-
             for cnt_char in used_cnt_chars:
                 heappush(heap, cnt_char)
 
