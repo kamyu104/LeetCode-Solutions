@@ -67,15 +67,15 @@ private:
         while (first1 != last1 || first2 != last2) {
             int val1 = first1 != last1 ? *first1 : numeric_limits<int>::min();
             int val2 = first2 != last2 ? *first2 : numeric_limits<int>::min();
-            if (val2 > val1) {
-                *result++ = *first2++;
-            } else if (val2 < val1) {
+            if (val1 > val2) {
                 *result++ = *first1++;
+            } else if (val1 < val2) {
+                *result++ = *first2++;
             } else {
-                auto pos1 = first1, pos2 = first2;
-                while (true) {  // O(1) ~ O(k) time.
-                    int val1 = (++pos1 != last1) ? *(pos1) : numeric_limits<int>::min();
-                    int val2 = (++pos2 != last2) ? *(pos2) : numeric_limits<int>::min();
+                auto pos1 = first1 + 1, pos2 = first2 + 1;
+                while (pos1 != last1 || pos2 != last2) {  // O(1) ~ O(k) time.
+                    int val1 = (pos1 != last1) ? *(pos1) : numeric_limits<int>::min();
+                    int val2 = (pos2 != last2) ? *(pos2) : numeric_limits<int>::min();
                     if (val1 > val2) {
                         *result++ = *first1++;
                         break;
@@ -83,6 +83,10 @@ private:
                         *result++ = *first2++;
                         break;
                     }
+                    ++pos1, ++pos2;
+                }
+                if (pos1 == last1 && pos2 == last2) {
+                    *result++ = *first2++;
                 }
             }
         }
