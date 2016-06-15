@@ -1,22 +1,20 @@
 # Time:  O(n)
 # Space: O(1)
-#
+
 # Given an integer array of size n, 
 # find all elements that appear more than [n/3] times. 
 # The algorithm should run in linear time and in O(1) space.
-#
 
-class Solution:
-    # @param {integer[]} nums
-    # @return {integer[]}
+class Solution(object):
     def majorityElement(self, nums):
-        k, n, hash = 3, len(nums), {}
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        k, n, hash = 3, len(nums), collections.defaultdict(int)
 
         for i in nums:
-            if i not in hash:
-                hash[i] = 1
-            else:
-                hash[i] += 1
+            hash[i] += 1
             # Detecting k items in hash, at least one of them must have exactly
             # one in it. We will discard those k items by one for each.
             # This action keeps the same mojority numbers in the remaining numbers.
@@ -36,9 +34,9 @@ class Solution:
                 hash[i] += 1
 
         # Selects the integer which occurs > [n / k] times.
-        ret = []
+        result = []
         for i in hash.keys():
             if hash[i] > n / k:
-                ret.append(i)
+                result.append(i)
 
-        return ret
+        resulturn result
