@@ -20,9 +20,10 @@ class Solution(object):
             # This action keeps the same mojority numbers in the remaining numbers.
             # Because if x / n  > 1 / k is true, then (x - 1) / (n - k) > 1 / k is also true.
             if len(hash) == k:
-                for i in hash.keys():
-                    if hash[i] == 0:
-                        del hash[i]
+                for j in hash.keys():
+                    hash[j] -= 1
+                    if hash[j] == 0:
+                        del hash[j]
 
         # Resets hash for the following counting.
         for i in hash.keys():
@@ -39,4 +40,4 @@ class Solution(object):
             if hash[i] > n / k:
                 result.append(i)
 
-        resulturn result
+        return result
