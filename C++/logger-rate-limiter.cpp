@@ -1,5 +1,5 @@
 // Time:  O(1), amortized
-// Space: O(k), k is the max number of messages in last 10 seconds
+// Space: O(k), k is the max number of printed messages in last 10 seconds
 
 class Logger {
 public:
@@ -28,7 +28,7 @@ private:
 };
 
 // Time:  O(1)
-// Space: O(n)
+// Space: O(n), n is the number of total unique messages
 class Logger2 {
 public:
     /** Initialize your data structure here. */
