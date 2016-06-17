@@ -14,23 +14,16 @@ public:
         }
 
         int left = 0, right = nums.size() - 1;
-        if (a > 0) {
-            while (left <= right) {
-                if (f(nums[left], a, b, c) > f(nums[right], a, b, c)) {
-                    result.emplace_back(f(nums[left++], a, b, c));
-                } else {
-                    result.emplace_back(f(nums[right--], a, b, c));
-                }
+        int d = a > 0 ? -1 : 1;
+        while (left <= right) {
+            if (d * f(nums[left], a, b, c) < d * f(nums[right], a, b, c)) {
+                result.emplace_back(f(nums[left++], a, b, c));
+            } else {
+                result.emplace_back(f(nums[right--], a, b, c));
             }
+        }
+        if (d == -1) {
             reverse(result.begin(), result.end());
-        } else {
-            while (left <= right) {
-                if (f(nums[left], a, b, c) < f(nums[right], a, b, c)) {
-                    result.emplace_back(f(nums[left++], a, b, c));
-                } else {
-                    result.emplace_back(f(nums[right--], a, b, c));
-                }
-            }
         }
 
         return result;
