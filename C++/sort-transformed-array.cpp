@@ -4,14 +4,15 @@
 class Solution {
 public:
     vector<int> sortTransformedArray(vector<int>& nums, int a, int b, int c) {
-        vector<int> result;
         const auto f = [](int x, int a, int b, int c) {
             return a * x * x + b * x + c;
         };
 
+        vector<int> result;
         if (nums.empty()) {
             return result;
         }
+
         int left = 0, right = nums.size() - 1;
         if (a > 0) {
             while (left <= right) {
@@ -31,6 +32,7 @@ public:
                 }
             }
         }
+
         return result;
     }
 };
