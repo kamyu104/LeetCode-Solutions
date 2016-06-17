@@ -17,21 +17,13 @@ class Solution(object):
             return result
 
         left, right = 0, len(nums) - 1
-        if a > 0:
-            while left <= right:
-                if f(nums[left], a, b, c) > f(nums[right], a, b, c):
-                    result.append(f(nums[left], a, b, c))
-                    left += 1
-                else:
-                    result.append(f(nums[right], a, b, c))
-                    right -= 1
-        else:
-            while left <= right:
-                if f(nums[left], a, b, c) < f(nums[right], a, b, c):
-                    result.append(f(nums[left], a, b, c))
-                    left += 1
-                else:
-                    result.append(f(nums[right], a, b, c))
-                    right -= 1
+        d = -1 if a > 0 else 1
+        while left <= right:
+            if d * f(nums[left], a, b, c) < d * f(nums[right], a, b, c):
+                result.append(f(nums[left], a, b, c))
+                left += 1
+            else:
+                result.append(f(nums[right], a, b, c))
+                right -= 1
 
-        return result if a <= 0 else result[::-1]
+        return result[::d]
