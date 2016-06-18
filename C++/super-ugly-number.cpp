@@ -10,7 +10,7 @@ public:
         uglies[0] = 1;
 
         for (int i = 0; i < primes.size(); ++i) {
-            heap.push({primes[i], i});
+            heap.emplace(primes[i], i);
         }
         for (int i = 1; i < n; ++i) {
             int k;
@@ -18,7 +18,7 @@ public:
             heap.pop();
             ugly_by_last_prime[i] = k;
             while (ugly_by_last_prime[++idx[k]] > k);  // worst time: O(k)
-            heap.push({uglies[idx[k]] * primes[k], k});
+            heap.emplace(uglies[idx[k]] * primes[k], k);
         }
         return uglies[n - 1];
     }
@@ -92,7 +92,7 @@ public:
         uglies[0] = 1;
 
         for (int k = 0; k < primes.size(); ++k) {
-            heap.push({primes[k], k});
+            heap.emplace(primes[k], k);
             ugly_set.emplace(primes[k]);
         }
 
@@ -103,7 +103,7 @@ public:
             while (ugly_set.count(primes[k] * uglies[idx[k]])) {
                 ++idx[k];
             }
-            heap.push({primes[k] * uglies[idx[k]], k});
+            heap.emplace(primes[k] * uglies[idx[k]], k);
             ugly_set.emplace(primes[k] * uglies[idx[k]]);
         }
     
@@ -122,7 +122,7 @@ public:
         uglies[0] = 1;
 
         for (int k = 0; k < primes.size(); ++k) {
-            heap.push({primes[k], k});
+            heap.emplace(primes[k], k);
         }
 
         for (int i = 1; i < n; ++i) {
@@ -132,7 +132,7 @@ public:
             while (heap.top().first == uglies[i]) {  // worst time: O(klogk)
                 tie(uglies[i], k) = heap.top();
                 heap.pop();
-                heap.push({primes[k] * uglies[++idx[k]], k});
+                heap.emplace(primes[k] * uglies[++idx[k]], k);
             }
         }
     
