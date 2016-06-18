@@ -4,12 +4,13 @@
 class Solution {
 public:
     int maxKilledEnemies(vector<vector<char>>& grid) {
+        int result = 0;
         if (grid.empty() || grid[0].empty()) {
-            return 0;
+            return result;
         }
 
-        vector<vector<int>> right{grid.size(), vector<int>(grid[0].size())};
         vector<vector<int>> down{grid.size(), vector<int>(grid[0].size())};
+        vector<vector<int>> right{grid.size(), vector<int>(grid[0].size())};
         for (int i = grid.size() - 1; i >= 0; --i) {
             for (int j = grid[0].size() - 1; j >= 0; --j) {
                 if (grid[i][j] != 'Y') {
@@ -26,10 +27,11 @@ public:
                 }
             }
         }
+
+        int left = 0;
         vector<int> up(grid[0].size());
-        int result = 0;
         for (int i = 0; i < grid.size(); ++i) {
-            int left = 0;
+            left = 0;
             for (int j = 0; j < grid[0].size(); ++j) {
                 if (grid[i][j] == 'Y') {
                     up[j] = 0;
@@ -42,6 +44,7 @@ public:
                 }
             }
         }
+
         return result;
     }
 };
