@@ -14,14 +14,14 @@ public:
             for (int j = grid[0].size() - 1; j >= 0; --j) {
                 if (grid[i][j] != 'Y') {
                     if (i + 1 < grid.size()) {
-                        right[i][j] = right[i + 1][j];
+                        down[i][j] = down[i + 1][j];
                     }
                     if (j + 1 < grid[0].size()) {
-                        down[i][j] = down[i][j + 1];
+                        right[i][j] = right[i][j + 1];
                     }
                     if (grid[i][j] == 'X') {
-                        ++right[i][j];
                         ++down[i][j];
+                        ++right[i][j];
                     }
                 }
             }
@@ -35,8 +35,8 @@ public:
                     up[j] = 0;
                     left = 0;
                 } else if (grid[i][j] == 'X') {
-                    ++left;
                     ++up[j];
+                    ++left;
                 } else {
                     result = max(result, left + up[j] + right[i][j] + down[i][j]);
                 }
