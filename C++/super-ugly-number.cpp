@@ -98,7 +98,7 @@ public:
 
         for (int i = 1; i < n; ++i) {
             int k;
-            tie(uglies[i]) = heap.top();
+            tie(uglies[i], k) = heap.top();
             heap.pop();
             while (ugly_set.count(primes[k] * uglies[idx[k]])) {
                 ++idx[k];
