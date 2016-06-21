@@ -35,8 +35,7 @@ class HitCounter(object):
         :rtype: int
         """
         while self.__dq and self.__dq[0][0] <= timestamp - self.__k:
-            self.__count -= self.__dq[0][1]
-            self.__dq.popleft()
+            self.__count -= self.__dq.popleft()[1]
         return self.__count
 
 # Your HitCounter object will be instantiated and called as such:
