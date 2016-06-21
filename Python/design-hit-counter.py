@@ -1,4 +1,4 @@
-# Time:  O(1)
+# Time:  O(1), amortized
 # Space: O(k), k is the count of seconds.
 
 from collections import deque
