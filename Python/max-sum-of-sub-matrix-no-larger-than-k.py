@@ -72,7 +72,7 @@ class Solution(object):
         return result
 
 
-# Time:  O(min(m, n)^2 * max(m, n) * log(max(m, n)))
+# Time:  O(min(m, n)^2 * max(m, n) * log(max(m, n))) ~ O(min(m, n)^2 * max(m, n)^2)
 # Space: O(max(m, n))
 class Solution_TLE(object):
     def maxSumSubmatrix(self, matrix, k):
@@ -81,13 +81,13 @@ class Solution_TLE(object):
         :type k: int
         :rtype: int
         """
-        class BST(object):
+        class BST(object):  # not avl, rbtree
             def __init__(self, val):
                 self.val = val
                 self.left = None
                 self.right = None
         
-            def insert(self, val):
+            def insert(self, val):  # Time: O(h) = O(logn) ~ O(n)
                 curr = self
                 while curr:
                     if curr.val >= val:
@@ -103,7 +103,7 @@ class Solution_TLE(object):
                             curr.right = BST(val)
                             return
         
-            def lower_bound(self, val):
+            def lower_bound(self, val):  # Time: O(h) = O(logn) ~ O(n)
                 result, curr = None, self
                 while curr:
                     if curr.val >= val:
