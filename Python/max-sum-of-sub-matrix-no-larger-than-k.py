@@ -19,7 +19,6 @@
 
 class BST(object):
     def __init__(self, val):
-        """Create a new leaf with key t."""
         self.val = val
         self.left = None
         self.right = None
@@ -60,9 +59,10 @@ class Solution_TLE(object):
         if not matrix:
             return 0
 
-        result = float("-inf")
         m = min(len(matrix), len(matrix[0]))
         n = max(len(matrix), len(matrix[0]))
+        result = float("-inf")
+
         for i in xrange(m):
             sums = [0] * n
             for j in xrange(i, m):
