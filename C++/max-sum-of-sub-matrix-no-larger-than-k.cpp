@@ -16,7 +16,7 @@ public:
             vector<int> sums(n, 0);
             for (int j = i; j < m; ++j) {
                 for (int l = 0; l < n; ++l) {
-                    sums[l] += (n == matrix.size()) ? matrix[l][j] : matrix[j][l];
+                    sums[l] += (m == matrix.size()) ? matrix[j][l] : matrix[l][j];
                 }
     
                 // Find the max subarray no more than K.
