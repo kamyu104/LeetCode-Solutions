@@ -22,16 +22,15 @@ public:
                 // Find the max subarray no more than K.
                 set<int> accu_sum_set;
                 accu_sum_set.emplace(0);
-                int accu_sum = 0, curr_max = numeric_limits<int>::min();
+                int accu_sum = 0;
                 for (int sum : sums) {
                     accu_sum += sum;
                     auto it = accu_sum_set.lower_bound(accu_sum - k);
                     if (it != accu_sum_set.end()) {
-                        curr_max = max(curr_max, accu_sum - *it);
+                        result = max(result, accu_sum - *it);
                     }
                     accu_sum_set.emplace(accu_sum);
                 }
-                result = max(result, curr_max);
             }
         }
 
