@@ -64,7 +64,7 @@ class Solution(object):
                 accu_sum_set, accu_sum = [0], 0
                 for sum in sums:
                     accu_sum += sum
-                    it = bisect_left(accu_sum_set, accu_sum - k)
+                    it = bisect_left(accu_sum_set, accu_sum - k)  # Time: O(logn)
                     if it != len(accu_sum_set):
                         result = max(result, accu_sum - accu_sum_set[it])
                     insort(accu_sum_set, accu_sum)  # Time: O(n)
