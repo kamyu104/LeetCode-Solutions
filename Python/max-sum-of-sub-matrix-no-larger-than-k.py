@@ -24,17 +24,17 @@ class BST(object):
         self.right = None
 
     def insert(self, val):
-        prev, curr = self, self
+        curr = self
         while curr:
             if curr.val >= val:
                 if curr.left:
-                    prev, curr = curr, curr.left
+                    curr = curr.left
                 else:
                     curr.left = BST(val)
                     return
             else:
                 if curr.right:
-                    prev, curr = curr, curr.right
+                    curr = curr.right
                 else:
                     curr.right = BST(val)
                     return
