@@ -22,7 +22,7 @@ class Solution {
 public:
     int depthSumInverse(vector<NestedInteger>& nestedList) {
         vector<int> result;
-        for(auto list : nestedList) {
+        for (const auto& list : nestedList) {
             depthSumInverseHelper(list, 0, &result);
         }
 
@@ -41,7 +41,7 @@ private:
         if (list.isInteger()) {
             (*result)[depth] += list.getInteger();
         } else {
-            for(auto l : list.getList()) {
+            for(const auto& l : list.getList()) {
                 depthSumInverseHelper(l, depth + 1, result);
             }
         }
