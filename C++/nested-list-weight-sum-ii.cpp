@@ -41,7 +41,7 @@ private:
         if (list.isInteger()) {
             (*result)[depth] += list.getInteger();
         } else {
-            for(const auto& l : list.getList()) {
+            for (const auto& l : list.getList()) {
                 depthSumInverseHelper(l, depth + 1, result);
             }
         }
