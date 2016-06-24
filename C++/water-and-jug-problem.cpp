@@ -14,6 +14,6 @@ private:
             b = a % b;
             a = tmp;
         }
-        return b;
+        return a;
     }
 };
