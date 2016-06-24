@@ -1,4 +1,4 @@
-# Time:  O(logn)
+# Time:  O(logn),  n is the max of (x, y)
 # Space: O(1)
 
 # You are given two jugs with capacities x and y litres.
