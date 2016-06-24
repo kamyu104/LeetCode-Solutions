@@ -33,7 +33,7 @@ public:
     }
 
     vector<Interval> getIntervals() {
-        return {intervals_.begin(), intervals_.end()};
+        return {intervals_.cbegin(), intervals_.cend()};
     }
 
 private:
