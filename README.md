@@ -454,7 +454,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 351| [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) | [C++](./C++/android-unlock-patterns.cpp) [Python](./Python/android-unlock-patterns.py) | _O(9^2 * 2^9)_ | _O(9 * 2^9)_ | Medium | 📖 | Backtracking |
 357| [Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/) | [C++](./C++/count-numbers-with-unique-digits.cpp) [Python](./Python/count-numbers-with-unique-digits.py) | _O(n)_ | _O(1)_ | Medium || Backtracking, Math |
 361| [Bomb Enemy](https://leetcode.com/problems/bomb-enemy/) | [C++](./C++/bomb-enemy.cpp) [Python](./Python/bomb-enemy.py) | _O(m * n)_ | _O(m * n)_ | Medium | 📖 | |
-367| [Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/) | [C++](./C++/largest-divisible-subset.cpp) [Python](./Python/largest-divisible-subset.py) | _O(n^2)_ | _O(n)_ | Medium | | |
+368| [Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/) | [C++](./C++/largest-divisible-subset.cpp) [Python](./Python/largest-divisible-subset.py) | _O(n^2)_ | _O(n)_ | Medium | | |
 
 ## Greedy
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
