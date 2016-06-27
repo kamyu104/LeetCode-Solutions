@@ -10,16 +10,16 @@ public:
 
         sort(nums.begin(), nums.end());
         // dp[i]: the size of the largest distinct subset of
-        //        the first i numbers including nums[i-1]
-        vector<int> dp(nums.size() + 1, 1);
+        //        the first i+1 numbers including nums[i]
+        vector<int> dp(nums.size() , 1);
         vector<int> prev(nums.size(), -1);
-        int largest_idx = 1;
-        for (int i = 1; i <= nums.size(); ++i) {
-            for (int j = 1; j < i; ++j) {
-                if (nums[i - 1] % nums[j - 1] == 0) {
+        int largest_idx = 0;
+        for (int i = 0; i < nums.size(); ++i) {
+            for (int j = 0; j < i; ++j) {
+                if (nums[i] % nums[j] == 0) {
                     if (dp[i] < dp[j] + 1) {
                         dp[i] = dp[j] + 1;
-                        prev[i - 1] = j - 1;
+                        prev[i] = j;
                     }
                     if (dp[largest_idx] < dp[i]) {
                         largest_idx = i;
@@ -28,7 +28,7 @@ public:
             }
         }
         vector<int> result;
-        for (int i = largest_idx - 1; i != -1; i = prev[i]) {
+        for (int i = largest_idx; i != -1; i = prev[i]) {
             result.emplace_back(nums[i]);
         }
         reverse(result.begin(), result.end());
