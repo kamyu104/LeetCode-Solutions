@@ -27,6 +27,7 @@ public:
                 largest_idx = i;
             }
         }
+
         vector<int> result;
         for (int i = largest_idx; i != -1; i = prev[i]) {
             result.emplace_back(nums[i]);
