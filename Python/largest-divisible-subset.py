@@ -39,6 +39,7 @@ class Solution(object):
                         prev[i] = j
             if dp[largest_idx] < dp[i]:
                 largest_idx = i
+
         result = []
         i = largest_idx
         while i != -1:
