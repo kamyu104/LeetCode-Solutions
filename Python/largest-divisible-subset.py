@@ -28,19 +28,19 @@ class Solution(object):
             return []
 
         nums.sort()
-        dp = [1] * (len(nums) + 1)
+        dp = [1] * len(nums)
         prev = [-1] * len(nums)
-        largest_idx = 1
-        for i in xrange(1, len(nums)+1):
-            for j in xrange(1, i):
-                if nums[i-1] % nums[j-1] == 0:
+        largest_idx = 0
+        for i in xrange(len(nums)):
+            for j in xrange(i):
+                if nums[i] % nums[j] == 0:
                     if dp[i] < dp[j] + 1:
                         dp[i] = dp[j] + 1
-                        prev[i-1] = j-1
+                        prev[i] = j
                         if dp[largest_idx] < dp[i]:
                             largest_idx = i
         result = []
-        i = largest_idx - 1
+        i = largest_idx
         while i != -1:
             result.append(nums[i])
             i = prev[i]
