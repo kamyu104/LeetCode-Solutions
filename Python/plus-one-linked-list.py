@@ -13,12 +13,15 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        dummy = ListNode(0)
-        curr = head
-        while curr:
-            dummy.next, curr.next, curr = curr, dummy.next, curr.next
+        def reverseList(head):
+            dummy = ListNode(0)
+            curr = head
+            while curr:
+                dummy.next, curr.next, curr = curr, dummy.next, curr.next
+            return dummy.next
 
-        curr, carry = dummy.next, 1
+        rev_head = reverseList(head)
+        curr, carry = rev_head, 1
         while curr and carry:
             curr.val += carry
             carry = curr.val / 10
@@ -27,9 +30,4 @@ class Solution(object):
                 curr.next = ListNode(0)
             curr = curr.next
 
-        curr = dummy.next
-        dummy.next = None
-        while curr:
-            dummy.next, curr.next, curr = curr, dummy.next, curr.next
-
-        return dummy.next
+        return reverseList(rev_head)
