@@ -140,7 +140,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 234| [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)| [C++](./C++/palindrome-linked-list.cpp) [Python](./Python/palindrome-linked-list.py) | _O(n)_       | _O(1)_         | Easy         ||
 237| [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)| [C++](./C++/delete-node-in-a-linked-list.cpp) [Python](./Python/delete-node-in-a-linked-list.py) | _O(1)_       | _O(1)_         | Easy         | LintCode |
 328| [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)| [C++](./C++/odd-even-linked-list.cpp) [Python](./Python/odd-even-linked-list.py) | _O(n)_       | _O(1)_         | Easy         | |
-369| [Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/)| [C++](./C++/plus-one-linked-list.cpp) [Python](./Python/plus-one-linked-list.py) | _O(n)_       | _O(1)_         | Medium         | 📖 |
+369| [Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/)| [C++](./C++/plus-one-linked-list.cpp) [Python](./Python/plus-one-linked-list.py) | _O(n)_       | _O(1)_         | Medium         | 📖 | Two Pointers |
 
 ## Stack
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
