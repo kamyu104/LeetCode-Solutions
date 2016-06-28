@@ -20,7 +20,7 @@ public:
         auto dummy = new ListNode{0};
         dummy->next = head;
 
-        auto left = dummy, right = dummy;
+        auto left = dummy, right = head;
         while (right->next) {
             if (right->val != 9) {
                 left = right;
