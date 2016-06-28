@@ -20,7 +20,7 @@ class Solution(object):
         dummy = ListNode(0)
         dummy.next = head
 
-        left, right = dummy, dummy
+        left, right = dummy, head
         while right.next:
             if right.val != 9:
                 left = right
