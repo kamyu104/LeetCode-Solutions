@@ -126,18 +126,14 @@ public:
     }
 
     int sumRange(int i, int j) {
-        int sum = sumRegion_bit(j);
-        if (i > 0) {
-            sum -= sumRegion_bit(i - 1);
-        }
-        return sum;
+        return sum(j) - sum(i - 1);
     }
 
 private:
     vector<int> &nums_;
     vector<int> bit_;
 
-    int sumRegion_bit(int i) {
+    int sum(int i) {
         ++i;
         int sum = 0;
         for (; i > 0; i -= lower_bit(i)) {
