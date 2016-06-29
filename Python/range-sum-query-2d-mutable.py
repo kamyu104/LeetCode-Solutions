@@ -15,9 +15,6 @@ class NumMatrix(object):
         self.__matrix = matrix
         self.__bit = [[0] * (len(self.__matrix[0]) + 1) \
                       for _ in xrange(len(self.__matrix) + 1)]
-
-        self.__bit = [[0] * (len(self.__matrix[0]) + 1) \
-                      for _ in xrange(len(self.__matrix) + 1)]
         for i in xrange(1, len(self.__bit)):
             for j in xrange(1, len(self.__bit[0])):
                 self.__bit[i][j] = matrix[i-1][j-1] + self.__bit[i-1][j] + \
