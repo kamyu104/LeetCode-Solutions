@@ -167,9 +167,6 @@ private:
     vector<vector<int>> bit_;
 
     int sum(int row, int col) {
-        if (row < 0 || col < 0) {
-            return 0;
-        }
         ++row, ++col;
         int sum = 0;
         for (int i = row; i > 0; i -= lower_bit(i)) {
