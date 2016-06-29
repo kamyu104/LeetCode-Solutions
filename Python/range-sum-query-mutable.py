@@ -115,18 +115,16 @@ class NumArray2(object):
         initialize your data structure here.
         :type nums: List[int]
         """
-        # Build segment tree.
         if not nums:
             return
         self.__nums = nums
-        bit = [0] * (len(self.__nums) + 1)
-        for i in xrange(1, len(bit)):
-            bit[i] = nums[i-1] + bit[i-1]
-
         self.__bit = [0] * (len(self.__nums) + 1)
-        for i in xrange(1, len(bit)):
+        for i in xrange(1, len(self.__bit)):
+            self.__bit[i] = nums[i-1] + self.__bit[i-1]
+
+        for i in reversed(xrange(1, len(self.__bit))):
             last_i = i - (i & -i)
-            self.__bit[i] = bit[i] - bit[last_i]
+            self.__bit[i] -= self.__bit[last_i]
 
     def update(self, i, val):
         """
@@ -176,7 +174,6 @@ class NumArray3(object):
         initialize your data structure here.
         :type nums: List[int]
         """
-        # Build segment tree.
         if not nums:
             return
         self.__nums = nums
