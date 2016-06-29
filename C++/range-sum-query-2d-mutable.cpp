@@ -122,7 +122,7 @@ private:
     }
 };
 
-// Time:  ctor:   O(mlogm * nlogn)
+// Time:  ctor:   O(m * n)
 //        update: O(logm * logn)
 //        query:  O(logm * logn)
 // Space: O(m * n)
@@ -130,14 +130,22 @@ private:
 class NumMatrix2 {
 public:
     NumMatrix(vector<vector<int>> &matrix) : matrix_(matrix) {
-
-        if (!matrix_.empty()) {
-            bit_ = vector<vector<int>>(matrix_.size() + 1,
-                                       vector<int>(matrix_[0].size() + 1));
-            for (int i = 0; i < matrix_.size(); ++i) {
-                for (int j = 0; j < matrix_[0].size(); ++j) {
-                    add(i, j, matrix_[i][j]);
-                }
+        if (matrix_.empty()) {
+            return;
+        }
+        bit_ = vector<vector<int>>(matrix_.size() + 1,
+                                   vector<int>(matrix_[0].size() + 1));
+        for (int i = 1; i < bit_.size(); ++i) {
+            for (int j = 1; j < bit_[0].size(); ++j) {
+                bit_[i][j] = matrix[i - 1][j - 1] + bit_[i - 1][j] +
+                             bit_[i][j - 1] - bit_[i - 1][j - 1];
+            }
+        }
+        for (int i = bit_.size() - 1; i >= 0 ; --i) {
+            for (int j = bit_[0].size() - 1; j >= 0; --j) {
+                int last_i = i - (i & -i), last_j = j - (j & -j);
+                bit_[i][j] = bit_[i][j] - bit_[i][last_j] -
+                             bit_[last_i][j] + bit_[last_i][last_j];
             }
         }
     }
@@ -150,24 +158,82 @@ public:
     }
 
     int sumRegion(int row1, int col1, int row2, int col2) {
-        int sum = sumRegion_bit(row2, col2);
-        if (row1 > 0 && col1 > 0) {
-            sum += sumRegion_bit(row1 - 1, col1 - 1);
-        }
-        if (col1 > 0) {
-            sum -= sumRegion_bit(row2, col1 - 1);
-        }
-        if (row1 > 0) {
-            sum -= sumRegion_bit(row1 - 1, col2);
-        }
-        return sum;
+        return sum(row2, col2) - sum(row2, col1 - 1) -
+               sum(row1 - 1, col2) + sum(row1 - 1, col1 - 1);
     }
 
 private:
     vector<vector<int>> &matrix_;
     vector<vector<int>> bit_;
 
-    int sumRegion_bit(int row, int col) {
+    int sum(int row, int col) {
+        if (row < 0 || col < 0) {
+            return 0;
+        }
+        ++row, ++col;
+        int sum = 0;
+        for (int i = row; i > 0; i -= lower_bit(i)) {
+            for (int j = col; j > 0; j -= lower_bit(j)) {
+                sum += bit_[i][j];
+            }
+        }
+        return sum;
+    }
+
+    void add(int row, int col, int val) {
+        ++row, ++col;
+        for (int i = row; i <= matrix_.size(); i += lower_bit(i)) {
+            for (int j = col; j <= matrix_[0].size(); j += lower_bit(j)) {
+                bit_[i][j] += val;
+            }
+        }
+    }
+
+    int lower_bit(int i) {
+        return i & -i;
+    }
+};
+
+// Time:  ctor:   O(mlogm * nlogn)
+//        update: O(logm * logn)
+//        query:  O(logm * logn)
+// Space: O(m * n)
+// Binary Indexed Tree (BIT) solution.
+class NumMatrix3 {
+public:
+    NumMatrix(vector<vector<int>> &matrix) : matrix_(matrix) {
+        if (matrix_.empty()) {
+            return;
+        }
+        bit_ = vector<vector<int>>(matrix_.size() + 1,
+                                   vector<int>(matrix_[0].size() + 1));
+        for (int i = 0; i < matrix_.size(); ++i) {
+            for (int j = 0; j < matrix_[0].size(); ++j) {
+                add(i, j, matrix_[i][j]);
+            }
+        }
+    }
+
+    void update(int row, int col, int val) {
+        if (val - matrix_[row][col]) {
+            add(row, col, val - matrix_[row][col]);
+            matrix_[row][col] = val;
+        }
+    }
+
+    int sumRegion(int row1, int col1, int row2, int col2) {
+        return sum(row2, col2) - sum(row2, col1 - 1) -
+               sum(row1 - 1, col2) + sum(row1 - 1, col1 - 1);
+    }
+
+private:
+    vector<vector<int>> &matrix_;
+    vector<vector<int>> bit_;
+
+    int sum(int row, int col) {
+        if (row < 0 || col < 0) {
+            return 0;
+        }
         ++row, ++col;
         int sum = 0;
         for (int i = row; i > 0; i -= lower_bit(i)) {
