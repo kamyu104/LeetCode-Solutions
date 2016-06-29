@@ -149,7 +149,7 @@ private:
         }
     }
 
-    int lower_bit(int i) {
+    inline int lower_bit(int i) {
         return i & -i;
     }
 };
