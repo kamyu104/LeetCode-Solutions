@@ -113,7 +113,7 @@ public:
             bit_[i] = nums[i - 1] + bit_[i - 1];
         }
         for (int i = bit_.size() - 1; i >= 1; --i) {
-            int last_i = i - (i & -i);
+            int last_i = i - lower_bit(i);
             bit_[i] -= bit_[last_i];
         }
     }
