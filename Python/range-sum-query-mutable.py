@@ -2,7 +2,7 @@
 #        update: O(logn),
 #        query:  O(logn)
 # Space: O(n)
-#
+
 # Given an integer array nums, find the sum of 
 # the elements between indices i and j (i <= j), inclusive.
 #
@@ -18,10 +18,65 @@
 # The array is only modifiable by the update function.
 # You may assume the number of calls to update
 # and sumRange function is distributed evenly.
-#
 
-# Segment Tree solutoin.
+# Binary Indexed Tree (BIT) solution.
 class NumArray(object):
+    def __init__(self, nums):
+        """
+        initialize your data structure here.
+        :type nums: List[int]
+        """
+        if not nums:
+            return
+        self.__nums = nums
+        self.__bit = [0] * (len(self.__nums) + 1)
+        for i in xrange(1, len(self.__bit)):
+            self.__bit[i] = nums[i-1] + self.__bit[i-1]
+
+        for i in reversed(xrange(1, len(self.__bit))):
+            last_i = i - (i & -i)
+            self.__bit[i] -= self.__bit[last_i]
+
+    def update(self, i, val):
+        """
+        :type i: int
+        :type val: int
+        :rtype: int
+        """
+        if val - self.__nums[i]:
+            self.__add(i, val - self.__nums[i])
+            self.__nums[i] = val
+        
+    def sumRange(self, i, j):
+        """
+        sum of elements nums[i..j], inclusive.
+        :type i: int
+        :type j: int
+        :rtype: int
+        """
+        return self.__sum(j) - self.__sum(i-1)
+
+    def __sum(self, i):
+        i += 1
+        ret = 0
+        while i > 0:
+            ret += self.__bit[i]
+            i -= (i & -i)
+        return ret
+
+    def __add(self, i, val):
+        i += 1
+        while i <= len(self.__nums):
+            self.__bit[i] += val
+            i += (i & -i)
+
+
+# Time:  ctor:   O(n),
+#        update: O(logn),
+#        query:  O(logn)
+# Space: O(n)
+# Segment Tree solutoin.
+class NumArray2(object):
     def __init__(self, nums):
         """
         initialize your data structure here.
@@ -102,62 +157,6 @@ class NumArray(object):
     class _SegmentTreeNode:
         def __init__(self, i, j, s):
             self.start, self.end, self.sum = i, j, s
-
-
-# Time:  ctor:   O(n),
-#        update: O(logn),
-#        query:  O(logn)
-# Space: O(n)
-# Binary Indexed Tree (BIT) solution.
-class NumArray2(object):
-    def __init__(self, nums):
-        """
-        initialize your data structure here.
-        :type nums: List[int]
-        """
-        if not nums:
-            return
-        self.__nums = nums
-        self.__bit = [0] * (len(self.__nums) + 1)
-        for i in xrange(1, len(self.__bit)):
-            self.__bit[i] = nums[i-1] + self.__bit[i-1]
-
-        for i in reversed(xrange(1, len(self.__bit))):
-            last_i = i - (i & -i)
-            self.__bit[i] -= self.__bit[last_i]
-
-    def update(self, i, val):
-        """
-        :type i: int
-        :type val: int
-        :rtype: int
-        """
-        if val - self.__nums[i]:
-            self.__add(i, val - self.__nums[i])
-            self.__nums[i] = val
-        
-    def sumRange(self, i, j):
-        """
-        sum of elements nums[i..j], inclusive.
-        :type i: int
-        :type j: int
-        :rtype: int
-        """
-        return self.__sum(j) - self.__sum(i-1)
-
-    def __sum(self, i):
-        i += 1
-        ret = 0
-        while i > 0:
-            ret += self.__bit[i]
-            i -= (i & -i)
-        return ret
-
-    def __add(self, i, val):
-        i += 1
-        while i <= len(self.__nums):
-            self.__bit[i] += val
-            i += (i & -i)
 
 
 # Your NumArray object will be instantiated and called as such:
