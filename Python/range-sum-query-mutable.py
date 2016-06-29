@@ -143,17 +143,14 @@ class NumArray2(object):
         :type j: int
         :rtype: int
         """
-        def sumRegion_bit(i):
-            i += 1
-            ret = 0
-            while i > 0:
-                ret += self.__bit[i]
-                i -= (i & -i)
-            return ret
-    
-        ret = sumRegion_bit(j)
-        if i > 0:
-            ret -= sumRegion_bit(i - 1)
+        return self.__sum(j) - self.__sum(i-1)
+
+    def __sum(self, i):
+        i += 1
+        ret = 0
+        while i > 0:
+            ret += self.__bit[i]
+            i -= (i & -i)
         return ret
 
     def __add(self, i, val):
