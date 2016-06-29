@@ -50,9 +50,6 @@ class NumMatrix(object):
                self.__sum(row1 - 1, col2) + self.__sum(row1 - 1, col1 - 1)
 
     def __sum(self, row, col):
-        if row < 0 or col < 0:
-            return 0
-
         row += 1
         col += 1
         ret = 0
