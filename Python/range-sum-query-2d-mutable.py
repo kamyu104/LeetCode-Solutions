@@ -26,8 +26,7 @@ class NumMatrix(object):
                       for _ in xrange(len(self.__matrix) + 1)]
         for i in xrange(1, len(bit)):
             for j in xrange(1, len(bit[0])):
-                last_i = i - (i & -i)
-                last_j = j - (j & -j)
+                last_i, last_j = i - (i & -i), j - (j & -j)
                 self.__bit[i][j] = bit[i][j] - bit[i][last_j] - bit[last_i][j]+ bit[last_i][last_j]
 
     def update(self, row, col, val):
