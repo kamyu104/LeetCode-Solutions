@@ -143,7 +143,7 @@ public:
         }
         for (int i = bit_.size() - 1; i >= 1; --i) {
             for (int j = bit_[0].size() - 1; j >= 1; --j) {
-                int last_i = i - (i & -i), last_j = j - (j & -j);
+                int last_i = i - lower_bit(i), last_j = j - lower_bit(j);
                 bit_[i][j] = bit_[i][j] - bit_[i][last_j] -
                              bit_[last_i][j] + bit_[last_i][last_j];
             }
