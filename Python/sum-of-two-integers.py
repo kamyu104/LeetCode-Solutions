@@ -23,6 +23,7 @@ class Solution(object):
         while b:
             carry = a & b
             a ^= b
+            a = (a | ~mask) if (a & neg_bit) else (a & mask)
             b = carry << 1
             b = (b | ~mask) if (b & neg_bit) else (b & mask)
 
