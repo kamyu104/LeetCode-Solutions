@@ -21,9 +21,9 @@ class Solution(object):
         b = (b | ~mask) if (b & neg_bit) else (b & mask)
 
         while b:
-            carry = (a & b) & mask
-            a = (a ^ b) & mask
-            a = (a | ~mask) if (a & neg_bit) else (a & mask)
-            b = (carry << 1) & mask
+            carry = a & b
+            a ^= b
+            b = carry << 1
+            b = (b | ~mask) if (b & neg_bit) else (b & mask)
 
         return a
