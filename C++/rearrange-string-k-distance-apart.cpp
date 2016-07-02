@@ -1,7 +1,43 @@
-// Time:  O(nlogc), c is the count of unique characters.
-// Space: O(c)
+// Time:  O(n), c is the count of unique characters.
+// Space: O(n)
 
 class Solution {
+public:
+    string rearrangeString(string str, int k) {
+        int cnts [26] = {0};
+        for (int i = 0;  i < str.length(); ++i) {
+            ++cnts[str[i] - 'a'];
+        }
+        multimap<int, char, greater<int>> bst;
+        for (int i = 0; i < 26; ++i) {
+            bst.emplace(cnts[i], i + 'a');
+        }
+
+        string blocks[bst.cbegin()->first];
+        int i = 0;
+        for (auto it = bst.cbegin(); it != bst.cend(); ++it) {
+            for (int cnt = 0; cnt < it->first; ++cnt) {
+                blocks[i].push_back(it->second);
+                i = (i + 1) % max(it->first, bst.cbegin()->first - 1);
+            }
+        }
+
+        string result;
+        for (int i = 0; i < bst.cbegin()->first - 1; ++i) {
+            if (blocks[i].size() < k) {
+                return "";
+            } else {
+                result += blocks[i];
+            }
+        }
+        result += blocks[bst.cbegin()->first - 1];
+        return result;
+    }
+};
+
+// Time:  O(nlogc), c is the count of unique characters.
+// Space: O(c)
+class Solution2 {
 public:
     string rearrangeString(string str, int k) {
         if (k == 0) {
