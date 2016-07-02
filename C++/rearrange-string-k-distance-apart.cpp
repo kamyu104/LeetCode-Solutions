@@ -8,30 +8,32 @@ public:
         for (int i = 0;  i < str.length(); ++i) {
             ++cnts[str[i] - 'a'];
         }
+
         vector<pair<int, char>> sorted_cnts;
         for (int i = 0; i < 26; ++i) {
             sorted_cnts.emplace_back(cnts[i], i + 'a');
         }
         sort(sorted_cnts.begin(), sorted_cnts.end(), greater<pair<int, int>>());
 
-        string blocks[sorted_cnts.cbegin()->first];
+        const auto max_cnt = sorted_cnts[0].first;
+        string blocks[max_cnt];
         int i = 0;
         for (const auto& cnt : sorted_cnts) {
             for (int j = 0; j < cnt.first; ++j) {
                 blocks[i].push_back(cnt.second);
-                i = (i + 1) % max(cnt.first, sorted_cnts[0].first - 1);
+                i = (i + 1) % max(cnt.first, max_cnt - 1);
             }
         }
 
         string result;
-        for (int i = 0; i < sorted_cnts[0].first - 1; ++i) {
-            if (blocks[i].size() < k) {
+        for (int i = 0; i < max_cnt - 1; ++i) {
+            if (blocks[i].length() < k) {
                 return "";
             } else {
                 result += blocks[i];
             }
         }
-        result += blocks[sorted_cnts[0].first - 1];
+        result += blocks[max_cnt - 1];
         return result;
     }
 };
