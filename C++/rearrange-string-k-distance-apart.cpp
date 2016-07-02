@@ -8,29 +8,30 @@ public:
         for (int i = 0;  i < str.length(); ++i) {
             ++cnts[str[i] - 'a'];
         }
-        multimap<int, char, greater<int>> bst;
+        vector<pair<int, char>> sorted_cnts;
         for (int i = 0; i < 26; ++i) {
-            bst.emplace(cnts[i], i + 'a');
+            sorted_cnts.emplace_back(cnts[i], i + 'a');
         }
+        sort(sorted_cnts.begin(), sorted_cnts.end(), greater<pair<int, int>>());
 
-        string blocks[bst.cbegin()->first];
+        string blocks[sorted_cnts.cbegin()->first];
         int i = 0;
-        for (auto it = bst.cbegin(); it != bst.cend(); ++it) {
+        for (auto it = sorted_cnts.cbegin(); it != sorted_cnts.cend(); ++it) {
             for (int cnt = 0; cnt < it->first; ++cnt) {
                 blocks[i].push_back(it->second);
-                i = (i + 1) % max(it->first, bst.cbegin()->first - 1);
+                i = (i + 1) % max(it->first, sorted_cnts.cbegin()->first - 1);
             }
         }
 
         string result;
-        for (int i = 0; i < bst.cbegin()->first - 1; ++i) {
+        for (int i = 0; i < sorted_cnts.cbegin()->first - 1; ++i) {
             if (blocks[i].size() < k) {
                 return "";
             } else {
                 result += blocks[i];
             }
         }
-        result += blocks[bst.cbegin()->first - 1];
+        result += blocks[sorted_cnts.cbegin()->first - 1];
         return result;
     }
 };
