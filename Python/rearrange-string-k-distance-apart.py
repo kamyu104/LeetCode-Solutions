@@ -21,7 +21,7 @@ class Solution(object):
         heap = []
         for c, cnt in cnts.iteritems():
             heappush(heap, [-cnt, c])
-        
+
         result = []
         while heap:
             used_cnt_chars = []
