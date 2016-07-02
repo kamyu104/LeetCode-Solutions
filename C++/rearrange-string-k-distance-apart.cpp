@@ -1,4 +1,4 @@
-// Time:  O(n), c is the count of unique characters.
+// Time:  O(n)
 // Space: O(n)
 
 class Solution {
