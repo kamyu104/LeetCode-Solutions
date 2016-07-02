@@ -16,22 +16,22 @@ public:
 
         string blocks[sorted_cnts.cbegin()->first];
         int i = 0;
-        for (auto it = sorted_cnts.cbegin(); it != sorted_cnts.cend(); ++it) {
-            for (int cnt = 0; cnt < it->first; ++cnt) {
-                blocks[i].push_back(it->second);
-                i = (i + 1) % max(it->first, sorted_cnts.cbegin()->first - 1);
+        for (const auto& cnt : sorted_cnts) {
+            for (int j = 0; j < cnt.first; ++j) {
+                blocks[i].push_back(cnt.second);
+                i = (i + 1) % max(cnt.first, sorted_cnts[0].first - 1);
             }
         }
 
         string result;
-        for (int i = 0; i < sorted_cnts.cbegin()->first - 1; ++i) {
+        for (int i = 0; i < sorted_cnts[0].first - 1; ++i) {
             if (blocks[i].size() < k) {
                 return "";
             } else {
                 result += blocks[i];
             }
         }
-        result += blocks[sorted_cnts.cbegin()->first - 1];
+        result += blocks[sorted_cnts[0].first - 1];
         return result;
     }
 };
