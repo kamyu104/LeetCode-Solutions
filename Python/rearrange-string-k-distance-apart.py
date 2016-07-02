@@ -1,10 +1,42 @@
-# Time:  O(nlogc), c is the count of unique characters.
-# Space: O(c)
-
-from collections import defaultdict
-from heapq import heappush, heappop
+# Time:  O(n)
+# Space: O(n)
 
 class Solution(object):
+    def rearrangeString(self, str, k):
+        """
+        :type str: str
+        :type k: int
+        :rtype: str
+        """
+        cnts = [0] * 26;
+        for c in str:
+            cnts[ord(c) - ord('a')] += 1
+
+        sorted_cnts = []
+        for i in xrange(26):
+            sorted_cnts.append((cnts[i], chr(i + ord('a'))))
+        sorted_cnts.sort(reverse=True)
+
+        max_cnt = sorted_cnts[0][0]
+        blocks = [[] for _ in xrange(max_cnt)]
+        i = 0
+        for cnt in sorted_cnts:
+            for _ in xrange(cnt[0]):
+                blocks[i].append(cnt[1])
+                i = (i + 1) % max(cnt[0], max_cnt - 1)
+
+        for i in xrange(max_cnt-1):
+            if len(blocks[i]) < k:
+                return ""
+
+        return "".join(map(lambda x : "".join(x), blocks))
+
+
+# Time:  O(nlogc), c is the count of unique characters.
+# Space: O(c)
+from collections import defaultdict
+from heapq import heappush, heappop
+class Solution2(object):
     def rearrangeString(self, str, k):
         """
         :type str: str
