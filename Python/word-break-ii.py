@@ -38,17 +38,17 @@ class Solution(object):
 
         result = []
         if can_break[-1]:
-            self.genPath(s, valid, 0, [], result)
+            self.wordBreakHelper(s, valid, 0, [], result)
         return result
     
-    def genPath(self, s, valid, start, path, result):
+    def wordBreakHelper(self, s, valid, start, path, result):
         if start == len(s):
             result.append(" ".join(path))
             return
         for i in xrange(start, len(s)):
             if valid[start][i]:
                 path += [s[start:i+1]]
-                self.genPath(s, valid, i + 1, path, result)
+                self.wordBreakHelper(s, valid, i + 1, path, result)
                 path.pop()
 
 
