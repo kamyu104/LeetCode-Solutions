@@ -44,7 +44,7 @@ public:
             result->emplace_back(move(tmp));
             return;
         }
-        for(int i = start; i < s.length(); ++i) {
+        for (int i = start; i < s.length(); ++i) {
             if (valid[start][i]) {
                 path->emplace_back(s.substr(start, i + 1 - start));
                 wordBreakHelper(s, valid, i + 1, path, result);
