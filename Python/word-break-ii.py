@@ -1,4 +1,4 @@
-# Time:  O(2^n)
+# Time:  O(n * l^2 + n * r), r is the number of the results.
 # Space: O(n)
 #
 # Given a string s and a dictionary of words dict, 
@@ -13,24 +13,30 @@
 # A solution is ["cats and dog", "cat sand dog"].
 #
 
-class Solution:
-    # @param s, a string
-    # @param dict, a set of string
-    # @return a list of strings
-    def wordBreak(self, s, dict):
+class Solution(object):
+    def wordBreak(self, s, wordDict):
+        """
+        :type s: str
+        :type wordDict: Set[str]
+        :rtype: List[str]
+        """
         n = len(s)
-        possible = [False for _ in xrange(n)]
+
+        max_len = 0
+        for string in wordDict:
+            max_len = max(max_len, len(string))
+
+        can_break = [False for _ in xrange(n + 1)]
         valid = [[False] * n for _ in xrange(n)]
-        for i in xrange(n):
-            if s[:i+1] in dict:
-                possible[i] = True
-                valid[0][i] = True
-            for j in xrange(i):
-                if possible[j] and s[j+1:i+1] in dict:
-                    valid[j+1][i] = True
-                    possible[i] = True
+        can_break[0] = True
+        for i in xrange(1, n + 1):
+            for l in xrange(1, min(i, max_len) + 1):
+                if can_break[i-l] and s[i-l:i] in wordDict:
+                    valid[i-l][i-1] = True
+                    can_break[i] = True
+
         result = []
-        if possible[n-1]:
+        if can_break[-1]:
             self.genPath(s, valid, 0, [], result)
         return result
     
@@ -43,6 +49,7 @@ class Solution:
                 path += [s[start:i+1]]
                 self.genPath(s, valid, i + 1, path, result)
                 path.pop()
+
 
 if __name__ == "__main__":
     print Solution().wordBreak("catsanddog", ["cat", "cats", "and", "sand", "dog"])
