@@ -1,6 +1,6 @@
 # Time:  O(n * l^2 + n * r), l is the max length of the words, 
 #                            r is the number of the results.
-# Space: O(n)
+# Space: O(n^2)
 #
 # Given a string s and a dictionary of words dict, 
 # add spaces in s to construct a sentence where each word is a valid dictionary word.
