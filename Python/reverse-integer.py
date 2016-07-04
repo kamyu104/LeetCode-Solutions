@@ -20,18 +20,22 @@
 # You would then have to re-design the function (ie, add an extra parameter).
 #
 
-class Solution:
-    # @return an integer
+class Solution(object):
     def reverse(self, x):
-        ans = 0
+        """
+        :type x: int
+        :rtype: int
+        """
+        result = 0
         if x >= 0:
             while x:
-                ans = ans * 10 + x % 10
+                result = result * 10 + x % 10
                 x /= 10
-            return ans if ans <= 2147483647 else 0  # Handle overflow.
+            return result if result <= 0x7fffffff else 0  # Handle overflow.
         else:
             return -self.reverse(-x)
-        
+
+    
 if __name__ == "__main__":
     print Solution().reverse(123)
     print Solution().reverse(-321)
