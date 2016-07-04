@@ -236,7 +236,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Math
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-7| [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Python](./Python/reverse-integer.py) | _O(logn)_ | _O(1)_         | Easy           ||
+7| [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [C++](./C++/reverse-integer.cpp) [Python](./Python/reverse-integer.py) | _O(logn)_ | _O(1)_         | Easy           ||
 9| [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Python](./Python/palindrome-number.py) | _O(1)_ | _O(1)_        | Easy           ||
 12| [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [Python](./Python/integer-to-roman.py) | _O(n)_ | _O(1)_          | Medium         ||
 13| [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Python](./Python/roman-to-integer.py) | _O(n)_ | _O(1)_          | Easy           ||
