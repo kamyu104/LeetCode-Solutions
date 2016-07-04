@@ -1,4 +1,4 @@
-# Time: O(logn)
+# Time:  O(logn)
 # Space: O(1)
 #
 # Reverse digits of an integer.
