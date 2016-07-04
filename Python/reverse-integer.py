@@ -26,14 +26,14 @@ class Solution(object):
         :type x: int
         :rtype: int
         """
-        result = 0
-        if x >= 0:
-            while x:
-                result = result * 10 + x % 10
-                x /= 10
-            return result if result <= 0x7fffffff else 0  # Handle overflow.
-        else:
+        if x < 0:
             return -self.reverse(-x)
+
+        result = 0
+        while x:
+            result = result * 10 + x % 10
+            x /= 10
+        return result if result <= 0x7fffffff else 0  # Handle overflow.
 
     
 if __name__ == "__main__":
