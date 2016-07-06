@@ -1,5 +1,5 @@
-# Time:  O(logn * nlogx * logx) = O(1)
-# Space: O(nlogx) = O(1)
+# Time:  O(logn)
+# Space: O(1)
 
 # Implement pow(x, n).
 
@@ -22,8 +22,8 @@ class Solution(object):
         return 1 / result if n < 0 else result
 
 
-# Time:  O(logn * nlogx * logx) = O(1)
-# Space: O(nlogx) = O(1)
+# Time:  O(logn)
+# Space: O(logn)
 # Recursive solution.
 class Solution2(object):
     def myPow(self, x, n):
