@@ -3,6 +3,7 @@
 
 # Implement pow(x, n).
 
+# Iterative solution.
 class Solution(object):
     def myPow(self, x, n):
         """
@@ -23,6 +24,7 @@ class Solution(object):
 
 # Time:  O(logn * nlogx * logx) = O(1)
 # Space: O(nlogx) = O(1)
+# Recursive solution.
 class Solution2(object):
     def myPow(self, x, n):
         """
