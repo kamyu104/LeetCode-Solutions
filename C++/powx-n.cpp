@@ -1,5 +1,5 @@
-// Time:  O(logn * nlogx * logx) = O(1)
-// Space: O(nlogx) = O(1)
+// Time:  O(logn)
+// Space: O(1)
 
 class Solution {
 public:
@@ -17,8 +17,8 @@ public:
     }
 };
 
-// Time:  O(logn * nlogx * logx) = O(1)
-// Space: O(nlogx) = O(1)
+// Time:  O(logn)
+// Space: O(logn)
 // Recursive solution.
 class Solution2 {
 public:
