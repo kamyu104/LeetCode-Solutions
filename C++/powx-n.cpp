@@ -1,6 +1,7 @@
 // Time:  O(logn)
 // Space: O(1)
 
+// Iterative solution.
 class Solution {
 public:
     double myPow(double x, int n) {
