@@ -22,7 +22,7 @@ public:
         };
 
         push(0, 0);
-        while (k-- && !q.empty()) {
+        while (!q.empty() && pairs.size() < k) {
             auto tmp = q.top(); q.pop();
             int i, j;
             tie(i, j) = tmp.second;
