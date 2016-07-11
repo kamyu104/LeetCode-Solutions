@@ -1,4 +1,4 @@
-// Time:  O(logn)
+// Time:  O(logn) = O(1)
 // Space: O(1)
 
 // Iterative solution.
@@ -18,8 +18,8 @@ public:
     }
 };
 
-// Time:  O(logn)
-// Space: O(logn)
+// Time:  O(logn) = O(1)
+// Space: O(logn) = O(1)
 // Recursive solution.
 class Solution2 {
 public:
