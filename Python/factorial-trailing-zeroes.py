@@ -1,4 +1,4 @@
-# Time:  O(logn)
+# Time:  O(logn) = O(1)
 # Space: O(1)
 #
 # Given an integer n, return the number of trailing zeroes in n!.
