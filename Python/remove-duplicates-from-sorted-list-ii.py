@@ -28,7 +28,6 @@ class Solution(object):
         :rtype: ListNode
         """
         dummy = ListNode(0)
-        dummy.next = head
         pre, cur = dummy, head
         while cur:
             if cur.next and cur.next.val == cur.val:
