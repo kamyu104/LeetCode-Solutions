@@ -1,6 +1,6 @@
 # Time:  O(n^2)
 # Space: O(n)
-#
+
 # The set [1,2,3,...,n] contains a total of n! unique permutations.
 # 
 # By listing and labeling all of the permutations in order,
@@ -15,7 +15,6 @@
 # Given n and k, return the kth permutation sequence.
 # 
 # Note: Given n will be between 1 and 9 inclusive.
-#
 
 import math
 
