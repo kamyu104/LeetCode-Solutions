@@ -21,12 +21,15 @@ class InputType:
     DOT        = 4
     EXPONENT   = 5
 
+
 # regular expression: "^\s*[\+-]?((\d+(\.\d*)?)|\.\d+)([eE][\+-]?\d+)?\s*$"
 # automata: http://images.cnitblog.com/i/627993/201405/012016243309923.png
-class Solution:
-    # @param s, a string
-    # @return a boolean
+class Solution(object):
     def isNumber(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
         transition_table = [[-1,  0,  3,  1,  2, -1],     # next states for state 0
                             [-1,  8, -1,  1,  4,  5],     # next states for state 1
                             [-1, -1, -1,  4, -1, -1],     # next states for state 2
@@ -58,13 +61,17 @@ class Solution:
         
         return state == 1 or state == 4 or state == 7 or state == 8
 
-class Solution2:
-    # @param s, a string
-    # @return a boolean
+
+class Solution2(object):
     def isNumber(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
         import re
         return bool(re.match("^\s*[\+-]?((\d+(\.\d*)?)|\.\d+)([eE][\+-]?\d+)?\s*$", s))
-    
+
+
 if __name__ == "__main__":
     print Solution().isNumber(" 0.1 ")
     print Solution().isNumber("abc")
