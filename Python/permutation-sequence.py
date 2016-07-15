@@ -20,9 +20,13 @@
 import math
 
 # Cantor ordering solution
-class Solution:
-    # @return a string
+class Solution(object):
     def getPermutation(self, n, k):
+        """
+        :type n: int
+        :type k: int
+        :rtype: str
+        """
         seq, k, fact = "", k - 1, math.factorial(n - 1)
         perm = [i for i in xrange(1, n + 1)]
         for i in reversed(xrange(n)):
@@ -33,6 +37,7 @@ class Solution:
                 k %= fact
                 fact /= i
         return seq
+
     
 if __name__ == "__main__":
     print Solution().getPermutation(3, 2)
