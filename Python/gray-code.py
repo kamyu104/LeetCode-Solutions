@@ -36,8 +36,8 @@ class Solution(object):
 
 # Proof of closed form formula could be found here:
 # http://math.stackexchange.com/questions/425894/proof-of-closed-form-formula-to-convert-a-binary-number-to-its-gray-code
-class Solution(object):
-    def grayCode2(self, n):
+class Solution2(object):
+    def grayCode(self, n):
         """
         :type n: int
         :rtype: List[int]
