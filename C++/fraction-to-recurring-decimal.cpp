@@ -18,20 +18,17 @@ public:
         }
         
         unordered_map<long long, int> lookup;
-        while (dvd) {
-            if (lookup.count(dvd)) {
-                result.insert(lookup[dvd], "(");
-                result.push_back(')');
-                break;
-            }
-
+        while (dvd && !lookup.count(dvd)) {
             lookup[dvd] = result.length();
-
             dvd *= 10;
             result += to_string(dvd / dvs);
             dvd %= dvs;
         }
-        
+
+        if (lookup.count(dvd)) {
+            result.insert(lookup[dvd], "(");
+            result.push_back(')');
+        }
         return result;
     }
 };
