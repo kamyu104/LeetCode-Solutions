@@ -19,16 +19,18 @@ class Solution(object):
         :type denominator: int
         :rtype: str
         """
-        dvd, dvs = abs(numerator), abs(denominator)
-        result, lookup = "", {}
+        result = ""
         if (numerator > 0 and denominator < 0) or (numerator < 0 and denominator > 0): 
             result = "-"  
+
+        dvd, dvs = abs(numerator), abs(denominator)
         result += str(dvd / dvs)
         dvd %= dvs
 
         if dvd > 0:
             result += "."
-        
+
+        lookup = {}
         while dvd and dvd not in lookup:
             lookup[dvd] = len(result)
             dvd *= 10
