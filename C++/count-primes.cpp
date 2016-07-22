@@ -1,36 +1,31 @@
 // Time:  O(n)
 // Space: O(n)
-//
-// Description:
-//
-// Count the number of prime numbers less than a non-negative number, n
-//
-// Hint: The number n could be in the order of 100,000 to 5,000,000.
-//
 
 class Solution {
 public:
     int countPrimes(int n) {
-        if (2 >= n) {
+        if (n <= 2) {
             return 0;
         }
-        bool* primes = new bool[n];
-        for (int i = 2; i < n; ++i)
-            primes[i] = true;
 
-        int sqr = sqrt(n - 1);
-        int sum = 0;
-        for (int i = 2; i < n; ++i) {
-            if (primes[i]) {
-                ++sum;
-                for (int j = i + i; j < n; j += i) {
-                    primes[j] = false;
+        auto num = n / 2;
+        vector<int> is_prime(n, true);
+
+        for (int i = 3; i * i < n; i += 2) {
+            if (!is_prime[i]) {
+                continue;
+            }
+
+            for (int j = i * i; j < n; j += 2 * i) {
+                if (!is_prime[j]) {
+                    continue;
                 }
+
+                --num;
+                is_prime[j] = false;
             }
         }
 
-        delete[] primes;
-
-        return sum;
+        return num;
     }
 };
