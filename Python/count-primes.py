@@ -20,10 +20,14 @@ class Solution:
             if i * i >= n:
                 break
 
-            if is_prime[i]:
-                for j in xrange(i*i, n, 2*i):
-                    if is_prime[j]:
-                        num -= 1
-                        is_prime[j] = False
+            if not is_prime[i]:
+                continue
+
+            for j in xrange(i*i, n, 2*i):
+                if not is_prime[j]:
+                    continue
+
+                num -= 1
+                is_prime[j] = False
 
         return num
