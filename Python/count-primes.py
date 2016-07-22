@@ -17,14 +17,14 @@ class Solution:
             return 0
         
         is_prime = [True] * n
-        sqr = sqrt(n - 1)
-        
-        num = 0
-        for i in xrange(2, n):
+        num = n / 2
+        for i in xrange(3, n, 2):
+            if i * i >= n:
+                break
+
             if is_prime[i]:
-               num += 1
-               for j in xrange(i+i, n, i):
-                   is_prime[j] = False
-                   
+                for j in xrange(i*i, n, 2*i):
+                    if is_prime[j]:
+                        num -= 1
+                        is_prime[j] = False
         return num
-                
