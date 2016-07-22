@@ -18,10 +18,7 @@ class Solution:
         
         is_prime = [True] * n
         num = n / 2
-        for i in xrange(3, n, 2):
-            if i * i >= n:
-                break
-
+        for i in xrange(3, int(sqrt(n))+1, 2):
             if is_prime[i]:
                 for j in xrange(i*i, n, 2*i):
                     if is_prime[j]:
