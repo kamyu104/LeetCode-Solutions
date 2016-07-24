@@ -1,6 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
-#
+
 # Given two strings s and t, determine if they are isomorphic.
 #
 # Two strings are isomorphic if the characters in s can be replaced to get t.
@@ -18,12 +18,33 @@
 #
 # Note:
 # You may assume both s and t have the same length.
-#
 
-class Solution:
-    # @param {string} s
-    # @param {string} t
-    # @return {boolean}
+from itertools import izip  # Generator version of zip.
+
+class Solution(object):
+    def isIsomorphic(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+        if len(s) != len(t):
+            return False
+
+        s2t, t2s = {}, {}
+        for p, w in izip(s, t):
+            if w not in s2t and p not in t2s:
+                s2t[w] = p
+                t2s[p] = w 
+            elif w not in s2t or s2t[w] != p:
+                # Contradict mapping.
+                return False
+        return True
+
+
+# Time:  O(n)
+# Space: O(1)
+class Solution2(object):
     def isIsomorphic(self, s, t):
         if len(s) != len(t):
             return False
