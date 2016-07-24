@@ -210,7 +210,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 187| [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | [Python](./Python/repeated-dna-sequences.py) | _O(n)_       | _O(n)_          | Medium         ||
 202| [Happy Number](https://leetcode.com/problems/happy-number/)      | [C++](./C++/happy-number.cpp) [Python](./Python/happy-number.py)   | _O(k)_  | _O(k)_          | Easy          ||
 204| [Count Primes](https://leetcode.com/problems/count-primes/)  | [C++](./C++/count-primes.cpp) [Python](./Python/count-primes.py) | _O(n)_        | _O(n)_          | Easy           ||
-205| [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [Python](./Python/isomorphic-strings.py) | _O(n)_ | _O(1)_       | Easy           || 
+205| [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [C++](./C++/isomorphic-strings.cpp) [Python](./Python/isomorphic-strings.py) | _O(n)_ | _O(1)_       | Easy           || 
 217| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)  | [C++](./C++/contains-duplicate.cpp) [Python](./Python/contains-duplicate.py) | _O(n)_        | _O(n)_          | Easy           ||
 219| [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)  | [C++](./C++/contains-duplicate-ii.cpp) [Python](./Python/contains-duplicate-ii.py) | _O(n)_        | _O(n)_          | Easy           ||
 244| [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/)     | [C++](./C++/shortest-word-distance-ii.cpp) [Python](./Python/shortest-word-distance-ii.py)  | ctor: _O(n)_, lookup: _O(a + b)_ |  _O(n)_ | Medium         |📖||
