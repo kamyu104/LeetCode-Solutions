@@ -12,7 +12,7 @@ public:
             if (s2t[s[i]] == 0 && t2s[t[i]] == 0) {
                 s2t[s[i]] = t[i];
                 t2s[t[i]] = s[i];
-            } else if (s2t[s[i]] == 0 || s2t[s[i]] != t[i]) {
+            } else if (s2t[s[i]] != t[i]) {
                 // Contradict mapping.
                 return false;
             }
