@@ -18,9 +18,9 @@ public:
         }
 
         sort(intervals.begin(), intervals.end(),
-        [](const Interval& a, const Interval& b) {
-             return a.start < b.start;               
-        });
+            [](const Interval& a, const Interval& b) {
+                return a.start < b.start;               
+            });
 
         vector<Interval> result{intervals[0]};
         for (int i = 1; i < intervals.size(); ++i) {
