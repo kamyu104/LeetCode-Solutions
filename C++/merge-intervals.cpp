@@ -24,9 +24,8 @@ public:
 
         vector<Interval> result{intervals[0]};
         for (int i = 1; i < intervals.size(); ++i) {
-            Interval& prev = result.back();
-            if (intervals[i].start <= prev.end) { 
-                prev.end = max(prev.end, intervals[i].end);
+            if (intervals[i].start <= result.back().end) { 
+                result.back().end = max(result.back().end, intervals[i].end);
             } else {
                 result.emplace_back(intervals[i]);
             }
