@@ -11,7 +11,7 @@ public:
         auto push = [&matrix, &q](int i, int j) {
             if (matrix.size() > matrix[0].size()) {
                 if (i < matrix[0].size() && j < matrix.size()) {
-                    q.emplace(matrix[j][i], make_pair(j, i));
+                    q.emplace(matrix[j][i], make_pair(i, j));
                 }
             } else {
                 if (i < matrix.size() && j < matrix[0].size()) {
