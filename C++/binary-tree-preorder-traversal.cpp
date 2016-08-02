@@ -14,26 +14,23 @@ class Solution {
 public:
     vector<int> preorderTraversal(TreeNode* root) {
         vector<int> res;
-        TreeNode *prev = nullptr;
-        auto *cur = root;
-        while (cur) {
-            if (!cur->left) {
-                res.emplace_back(cur->val);
-                prev = cur;
-                cur = cur->right;
+        auto *curr = root;
+        while (curr) {
+            if (!curr->left) {
+                res.emplace_back(curr->val);
+                curr = curr->right;
             } else {
-                auto *node = cur->left;
-                while (node->right && node->right != cur) {
+                auto *node = curr->left;
+                while (node->right && node->right != curr) {
                     node = node->right;
                 }
                 if (!node->right) {
-                    res.emplace_back(cur->val);
-                    prev = cur;
-                    node->right = cur;
-                    cur = cur->left;
+                    res.emplace_back(curr->val);
+                    node->right = curr;
+                    curr = curr->left;
                 } else {
                     node->right = nullptr;
-                    cur = cur->right;
+                    curr = curr->right;
                 }
             }
         }
