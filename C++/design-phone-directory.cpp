@@ -8,7 +8,7 @@ public:
     /** Initialize your data structure here
         @param maxNumbers - The maximum numbers that can be stored in the phone directory. */
     PhoneDirectory(int maxNumbers) :
-        curr_(0), numbers_(maxNumbers), used_(maxNumbers) {  // Time: O(n), Space: O(n)
+        curr_{0}, numbers_(maxNumbers), used_(maxNumbers) {  // Time: O(n), Space: O(n)
 
         iota(numbers_.begin(), numbers_.end(), 0);
     }
