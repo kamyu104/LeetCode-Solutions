@@ -15,7 +15,7 @@ public:
     
     /** Provide a number which is not assigned to anyone.
         @return - Return an available number. Return -1 if none is available. */
-    int get() { // Time: O(1), Space: O(1)
+    int get() {  // Time: O(1), Space: O(1)
         if (curr_ == numbers_.size()) {
             return -1;
         }
@@ -25,7 +25,7 @@ public:
     }
     
     /** Check if a number is available or not. */
-    bool check(int number) { // Time: O(1), Space: O(1)
+    bool check(int number) {  // Time: O(1), Space: O(1)
         if (number < 0 || number >= numbers_.size()) {
             return false;
         }
@@ -33,7 +33,7 @@ public:
     }
     
     /** Recycle or release a number. */
-    void release(int number) { // Time: O(1), Space: O(1)
+    void release(int number) {  // Time: O(1), Space: O(1)
         if (number < 0 || number >= numbers_.size() || !used_[number]) {
             return;
         }
