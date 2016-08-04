@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-379%20%2F%20379-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-380%20%2F%20380-ff69b4.svg)
 
-Up to date (2016-08-03), there are `362` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
+Up to date (2016-08-04), there are `363` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
 The number of questions is increasing recently.
-Here is the classification of all `379` questions.
+Here is the classification of all `380` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions.)
@@ -492,6 +492,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 359| [Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/) | [C++](./C++/logger-rate-limiter.cpp) [Python](./Python/logger-rate-limiter.py) | _O(1), amortized_ | _O(k)_| Easy |📖| Deque |
 362| [Design Hit Counter](https://leetcode.com/problems/design-hit-counter/) | [C++](./C++/design-hit-counter.cpp) [Python](./Python/design-hit-counter.py) | _O(1), amortized_ | _O(k)_| Medium |📖| Deque |
 379| [Design Phone Directory](https://leetcode.com/problems/design-phone-directory/) | [C++](./C++/design-phone-directory.cpp) [Python](./Python/design-phone-directory.py) | _O(1)_ | _O(n)_| Medium |📖| |
+379| [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [C++](./C++/insert-delete-getrandom-o1.cpp) [Python](./Python/insert-delete-getrandom-o1.py) | _O(1)_ | _O(n)_| Medium || |
 
 ## SQL
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
