@@ -492,7 +492,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 359| [Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/) | [C++](./C++/logger-rate-limiter.cpp) [Python](./Python/logger-rate-limiter.py) | _O(1), amortized_ | _O(k)_| Easy |📖| Deque |
 362| [Design Hit Counter](https://leetcode.com/problems/design-hit-counter/) | [C++](./C++/design-hit-counter.cpp) [Python](./Python/design-hit-counter.py) | _O(1), amortized_ | _O(k)_| Medium |📖| Deque |
 379| [Design Phone Directory](https://leetcode.com/problems/design-phone-directory/) | [C++](./C++/design-phone-directory.cpp) [Python](./Python/design-phone-directory.py) | _O(1)_ | _O(n)_| Medium |📖| |
-379| [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [C++](./C++/insert-delete-getrandom-o1.cpp) [Python](./Python/insert-delete-getrandom-o1.py) | _O(1)_ | _O(n)_| Medium || |
+380| [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [C++](./C++/insert-delete-getrandom-o1.cpp) [Python](./Python/insert-delete-getrandom-o1.py) | _O(1)_ | _O(n)_| Medium || |
 
 ## SQL
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
