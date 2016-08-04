@@ -1,5 +1,5 @@
 # Time:  O(1)
-# Space: O(1)
+# Space: O(n)
 
 # Design a data structure that supports all following operations in O(1) time.
 #
