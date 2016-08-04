@@ -13,14 +13,14 @@ public:
         vector<vector<int>> right{grid.size(), vector<int>(grid[0].size())};
         for (int i = grid.size() - 1; i >= 0; --i) {
             for (int j = grid[0].size() - 1; j >= 0; --j) {
-                if (grid[i][j] != 'Y') {
+                if (grid[i][j] != 'W') {
                     if (i + 1 < grid.size()) {
                         down[i][j] = down[i + 1][j];
                     }
                     if (j + 1 < grid[0].size()) {
                         right[i][j] = right[i][j + 1];
                     }
-                    if (grid[i][j] == 'X') {
+                    if (grid[i][j] == 'E') {
                         ++down[i][j];
                         ++right[i][j];
                     }
@@ -33,10 +33,10 @@ public:
         for (int i = 0; i < grid.size(); ++i) {
             left = 0;
             for (int j = 0; j < grid[0].size(); ++j) {
-                if (grid[i][j] == 'Y') {
+                if (grid[i][j] == 'W') {
                     up[j] = 0;
                     left = 0;
-                } else if (grid[i][j] == 'X') {
+                } else if (grid[i][j] == 'E') {
                     ++up[j];
                     ++left;
                 } else {
