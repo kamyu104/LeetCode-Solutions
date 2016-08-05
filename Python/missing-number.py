@@ -20,3 +20,7 @@ class Solution(object):
         """
         return reduce(operator.xor, nums, \
                       reduce(operator.xor, xrange(len(nums) + 1)))
+
+class Solution2(object):
+    def missingNumber(self, nums):
+        return sum([i for i in xrange(len(nums)+1)])-sum(nums)
