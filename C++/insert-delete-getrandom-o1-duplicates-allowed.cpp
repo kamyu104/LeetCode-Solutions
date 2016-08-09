@@ -10,10 +10,12 @@ public:
     
     /** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
     bool insert(int val) {
+        bool has = used_.count(val);
+
         list_.emplace_back(val);
         used_[val].emplace_back(list_.size() - 1);
 
-        return true; 
+        return !has; 
     }
     
     /** Removes a value from the collection. Returns true if the collection contained the specified element. */
@@ -50,16 +52,18 @@ private:
 class RandomizedCollection2 {
 public:
     /** Initialize your data structure here. */
-    RandomizedCollection() {
+    RandomizedCollection2() {
         
     }
     
     /** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
     bool insert(int val) {
+        bool has = used_.count(val);
+
         list_.emplace_back(val);
         used_.emplace(val, list_.size() - 1);
 
-        return true; 
+        return !has; 
     }
     
     /** Removes a value from the collection. Returns true if the collection contained the specified element. */
