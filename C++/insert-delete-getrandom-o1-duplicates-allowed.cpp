@@ -67,6 +67,7 @@ public:
         if (!used_.count(val)) {
             return false;
         }
+
         auto it_to_delete = used_.find(val);
         auto it_to_back = used_.find(list_.back());
         it_to_back->second = it_to_delete->second;
