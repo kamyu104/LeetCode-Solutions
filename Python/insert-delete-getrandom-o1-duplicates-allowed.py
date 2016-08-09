@@ -51,10 +51,12 @@ class RandomizedCollection(object):
         :type val: int
         :rtype: bool
         """
+        has = val in self.__used
+
         self.__list += val,
         self.__used[val] += len(self.__list)-1,
 
-        return True
+        return not has
 
 
     def remove(self, val):
