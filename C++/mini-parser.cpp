@@ -41,18 +41,12 @@ private:
     NestedInteger deserializeHelper(const string& s, int *i) {
         NestedInteger result;
         if (s[*i] != '[') {
-            int num = 0;
-            int sign = 1;
-            if (*i < s.length() && s[*i] == '-') {
-                sign = -1;
-                ++(*i);
+            int j = *i;
+            while (j < s.length() && (s[j] == '-' || isdigit(s[j]))) {
+                ++j;
             }
-            while (*i < s.length() && isdigit(s[*i])) {
-                num *= 10;
-                num += s[*i] - '0';
-                ++(*i);
-            }
-            result.setInteger(sign * num);
+            result.setInteger(stoi(s.substr(*i, j - *i + 1)));
+            *i = j;
         } else {
             ++(*i);
             while (*i < s.length() && s[*i] != ']') {
