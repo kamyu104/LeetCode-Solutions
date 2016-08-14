@@ -75,6 +75,7 @@ public:
         istringstream in(s);  // copy string: extra O(n) space
         return deserializeHelper(in);
     }
+
 private:
     NestedInteger deserializeHelper(istringstream &in) {
         NestedInteger result;
