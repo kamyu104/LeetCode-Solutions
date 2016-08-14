@@ -30,9 +30,50 @@
  *     const vector<NestedInteger> &getList() const;
  * };
  */
+
+
+// Iterative solution. 
 class Solution {
 public:
     NestedInteger deserialize(string s) {
+        if (s.empty()) {
+            return NestedInteger();
+        }
+
+        if (s[0] != '[') {
+            return NestedInteger(stoi(s));
+        }
+
+        stack<NestedInteger> stk;
+        for (int i = 0, j = 0; j < s.length(); ++j) {
+            if (s[j] == '[') {
+                stk.emplace(NestedInteger()); 
+                i = j + 1;
+            } else if (s[j] == ',' ||s[j] == ']'){
+                if (isdigit(s[j - 1])) {
+                    stk.top().add(NestedInteger(stoi(s.substr(i,j - i))));
+                }
+                if (s[j] == ']' && stk.size() > 1) {
+                    NestedInteger cur = stk.top();
+                    stk.pop();
+                    stk.top().add(cur);
+                }
+                i = j + 1;
+            }
+        }
+        return stk.top();
+    }
+};
+
+// Time:  O(n)
+// Space: O(h)
+// Recursive solution. 
+class Solution2 {
+public:
+    NestedInteger deserialize(string s) {
+        if (s.empty()) {
+            return NestedInteger();
+        }
         int i = 0;
         return deserializeHelper(s, &i);
     }
@@ -63,9 +104,13 @@ private:
 
 // Time:  O(n)
 // Space: O(n)
-class Solution2 {
+// Recursive solution. 
+class Solution3 {
 public:
     NestedInteger deserialize(string s) {
+        if (s.empty()) {
+            return NestedInteger();
+        }
         istringstream in(s);  // copy string: extra O(n) space
         return deserializeHelper(in);
     }
