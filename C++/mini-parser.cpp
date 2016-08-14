@@ -31,7 +31,6 @@
  * };
  */
 
-
 // Iterative solution. 
 class Solution {
 public:
