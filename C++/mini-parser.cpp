@@ -48,7 +48,7 @@ public:
             if (s[j] == '[') {
                 stk.emplace(NestedInteger()); 
                 i = j + 1;
-            } else if (s[j] == ',' || s[j] == ']'){
+            } else if (s[j] == ',' || s[j] == ']') {
                 if (isdigit(s[j - 1])) {
                     stk.top().add(NestedInteger(stoi(s.substr(i, j - i))));
                 }
