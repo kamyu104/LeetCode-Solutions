@@ -66,3 +66,32 @@ private:
         return result;
     }
 };
+
+// Time:  O(n)
+// Space: O(n)
+class Solution2 {
+public:
+    NestedInteger deserialize(string s) {
+        istringstream in(s);  // copy string: extra O(n) space
+        return deserializeHelper(in);
+    }
+private:
+    NestedInteger deserializeHelper(istringstream &in) {
+        NestedInteger result;
+        int num = 0;
+        if (in >> num) {
+            result.setInteger(num);
+        } else {
+            in.clear();
+            in.get();
+            while (in.peek() != ']') {
+                result.add(deserializeHelper(in));
+                if (in.peek() == ',') {
+                    in.get();
+                }
+            }
+            in.get();
+        }
+        return result;
+    }
+};
