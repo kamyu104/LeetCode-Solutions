@@ -17,11 +17,12 @@
 # bucket sort
 # Time:  O(n)
 # Space: O(n)
-
-class Solution:
-     # @param numss: a list of integers
-     # @return: the maximum difference
+class Solution(object):
     def maximumGap(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
         if len(nums) < 2:
             return 0
         
@@ -56,24 +57,27 @@ class Solution:
         return max_gap
 
 
-
 # Time:  O(nlogn)
 # Space: O(n)
-class Solution2:
-    # @param num, a list of integer
-    # @return an integer
-    def maximumGap(self, num):
-        if len(num) < 2:
+class Solution2(object):
+    def maximumGap(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+
+        if len(nums) < 2:
             return 0
             
-        num.sort()
-        pre = num[0]
+        nums.sort()
+        pre = nums[0]
         max_gap = float("-inf")
         
-        for i in num:
+        for i in nums:
             max_gap = max(max_gap, i - pre)
             pre = i
         return max_gap
-     
+
+
 if __name__ == "__main__":
     print Solution().maximumGap([3, 1, 1, 1, 5, 5, 5, 5])
