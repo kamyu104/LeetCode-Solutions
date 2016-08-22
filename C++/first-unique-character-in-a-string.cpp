@@ -1,6 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
+// One-pass solution.
 class Solution {
 public:
     int firstUniqChar(string s) {
