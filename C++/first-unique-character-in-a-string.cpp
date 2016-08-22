@@ -8,7 +8,7 @@ public:
 
     	list<int> candidates;
     	unordered_map<char, IT> lookup;
-    	for (int i = 0; i < s.size(); ++i) {
+    	for (int i = 0; i < s.length(); ++i) {
     		const auto c = s[i];
     		if (lookup.count(c)) {
     			if (lookup[c] != candidates.end()) {
