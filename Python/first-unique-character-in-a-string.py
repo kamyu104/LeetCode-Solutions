@@ -31,4 +31,4 @@ class Solution(object):
                 lookup[c] = i+1
                 candidtates.add(i+1)
 
-        return min(candidtates) - 1 if candidtates else -1
+        return min(candidtates)-1 if candidtates else -1
