@@ -34,8 +34,8 @@ public:
         for (auto itx = corner_count.begin(); itx != corner_count.end(); ++itx) {
             const auto x = itx->first;
             for (auto ity = itx->second.begin(); ity != itx->second.end(); ++ity) {
-                int y = ity->first;
-                int mask = ity->second;
+                const auto y = ity->first;
+                const auto mask = ity->second;
                 if ((left < x && x < right) || (bottom < y && y < top)) {
                     if (!is_valid[mask]) {
                         return false;
