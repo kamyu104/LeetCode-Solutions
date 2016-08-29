@@ -4,7 +4,7 @@
 class Solution {
 public:
     bool isRectangleCover(vector<vector<int>>& rectangles) {
-        enum DIR {L = 0, B = 1, R = 2, T = 3};
+        enum Location {L = 0, B = 1, R = 2, T = 3};
         int left = numeric_limits<int>::max(), bottom = numeric_limits<int>::max(),
             right = numeric_limits<int>::min(), top = numeric_limits<int>::min();
         for (const auto& rect : rectangles) {
@@ -15,7 +15,7 @@ public:
         }
 
         using P = pair<pair<int, int>, int>;
-        enum CORNER {LB = 1, RB = 2, LT = 4, RT = 8};
+        enum Corner {LB = 1, RB = 2, LT = 4, RT = 8};
         unordered_map<int, unordered_map<int, int>> corner_count;
         vector<P> corners{{{L, B}, LB}, {{R, B}, RB}, {{L, T}, LT}, {{R, T}, RT}};
         for (const auto& rect : rectangles) {
