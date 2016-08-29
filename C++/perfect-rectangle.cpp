@@ -29,7 +29,7 @@ public:
             }
         }
 
-        bool is_valid[16] = {false};
+        bitset<16> is_valid;
         is_valid[LB | RB] = is_valid[LB | LT] = is_valid[RB | RT] = is_valid[LT | RT] = is_valid[LB | RB | LT | RT] = true;
         for (auto itx = corner_count.cbegin(); itx != corner_count.cend(); ++itx) {
             const auto x = itx->first;
