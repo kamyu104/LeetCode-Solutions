@@ -31,9 +31,9 @@ public:
 
         bool is_valid[16] = {false};
         is_valid[LB | RB] = is_valid[LB | LT] = is_valid[RB | RT] = is_valid[LT | RT] = is_valid[LB | RB | LT | RT] = true;
-        for (auto itx = corner_count.begin(); itx != corner_count.end(); ++itx) {
+        for (auto itx = corner_count.cbegin(); itx != corner_count.cend(); ++itx) {
             const auto x = itx->first;
-            for (auto ity = itx->second.begin(); ity != itx->second.end(); ++ity) {
+            for (auto ity = itx->second.cbegin(); ity != itx->second.cend(); ++ity) {
                 const auto y = ity->first;
                 const auto mask = ity->second;
                 if ((left < x && x < right) || (bottom < y && y < top)) {
