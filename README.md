@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-390%20%2F%20390-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-391%20%2F%20391-ff69b4.svg)
 
-Up to date (2016-08-28), there are `373` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
+Up to date (2016-08-28), there are `374` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
 The number of questions is increasing recently.
-Here is the classification of all `390` questions.
+Here is the classification of all `391` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions.)
@@ -273,6 +273,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 372 | [Super Pow](https://leetcode.com/problems/super-pow/) | [C++](./C++/super-pow.cpp) [Python](./Python/super-pow.py) | _O(n)_ | _O(1)_ | Medium |||
 382 | [Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/) | [C++](./C++/linked-list-random-node.cpp) [Python](./Python/linked-list-random-node.py) | _O(n)_ | _O(1)_ | Medium || `Reservoir Sampling` |
 386 | [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/) | [C++](./C++/lexicographical-numbers.cpp) [Python](./Python/lexicographical-numbers.py) | _O(n)_ | _O(1)_ | Medium |||
+390 | [Elimination Game](https://leetcode.com/contest/2/problems/elimination-game/) | [C++](./C++/elimination-game.cpp) [Python](./Python/elimination-game.py) | _O(logn)_ | _O(1)_ | Medium | |
 391 | [Perfect Rectangle](https://leetcode.com/problems/perfect-rectangle/) | [C++](./C++/perfect-rectangle.cpp) [Python](./Python/perfect-rectangle.py) | _O(n)_ | _O(n)_ | Hard | |
 
 ## Sort
