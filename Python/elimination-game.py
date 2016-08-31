@@ -32,7 +32,7 @@ class Solution(object):
         """
         start, step, direction = 1, 2, 1
         while n > 1:
-            start += direction * (step * (n / 2) - step / 2)
+            start += direction * (step * (n/2) - step/2)
             n /= 2
             step *= 2
             direction *= -1
