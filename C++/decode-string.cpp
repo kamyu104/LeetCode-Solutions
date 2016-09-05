@@ -8,15 +8,15 @@ public:
         stack<int> nums;
         stack<string> strs;
         int n = 0;
-        for (int i = 0; i < s.length(); ++i) {
-            if (isdigit(s[i])) {
-                n = n * 10 + s[i] - '0';
-            } else if (s[i] == '[') {
+        for (const auto& c: s) {
+            if (isdigit(c)) {
+                n = n * 10 + c - '0';
+            } else if (c == '[') {
                 nums.emplace(n);
                 n = 0;
                 strs.emplace(curr);
                 curr.clear();
-            } else if (s[i] == ']') {
+            } else if (c == ']') {
                 for (; nums.top() > 0; --nums.top()) {
                     strs.top() += curr;
                 }
@@ -24,7 +24,7 @@ public:
                 curr = strs.top();
                 strs.pop();
             } else {
-                curr += s[i];
+                curr += c;
             }
         }
         return strs.empty() ? curr : strs.top();
