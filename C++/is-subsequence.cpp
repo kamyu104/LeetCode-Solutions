@@ -14,9 +14,9 @@ public:
                 ++i;
             }
             if (i == s.length()) {
-                return true;
+                break;
             }
         }
-        return false;
+        return i == s.length();
     }
 };
