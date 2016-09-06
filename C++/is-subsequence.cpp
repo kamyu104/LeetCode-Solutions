@@ -8,6 +8,7 @@ public:
         if (s.empty()) {
             return true;
         }
+
         int i = 0;
         for (const auto& c : t) {
             if (c == s[i]) { 
