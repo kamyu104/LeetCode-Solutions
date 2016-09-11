@@ -17,7 +17,7 @@ public:
         vector<double> result;
         for (const auto& i : query) {
             unordered_set<string> visited;
-            auto tmp = check(i.first, i.second, lookup, &visited);
+            const auto tmp = check(i.first, i.second, lookup, &visited);
             if (tmp.first) {
                 result.emplace_back(tmp.second);
             } else {
