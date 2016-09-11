@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-395%20%2F%20395-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-399%20%2F%20399-ff69b4.svg)
 
-Up to date (2016-09-04), there are `378` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
+Up to date (2016-09-11), there are `382` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
 The number of questions is increasing recently.
-Here is the classification of all `395` questions.
+Here is the classification of all `399` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions.)
@@ -101,6 +101,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 334| [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/) | [C++](./C++/increasing-triplet-subsequence.cpp) [Python](./Python/increasing-triplet-subsequence.py)  | _O(n)_ |  _O(1)_ | Medium         |||
 370| [Range Addition](https://leetcode.com/problems/range-addition/) | [C++](./C++/range-addition.cpp) [Python](./Python/range-addition.py)  | _O(k + n)_ |  _O(1)_ | Medium         |📖||
 384| [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) | [C++](./C++/shuffle-an-array.cpp) [Python](./Python/shuffle-an-array.py)  | _O(n)_ |  _O(n)_ | Medium         | EPI ||
+396| [Rotate Function](https://leetcode.com/problems/rotate-function/) | [C++](./C++/rotate-function.cpp) [Python](./Python/rotate-function.py)  | _O(n)_ |  _O(1)_ | Easy         |||
 
 ## String
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -277,6 +278,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 386 | [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/) | [C++](./C++/lexicographical-numbers.cpp) [Python](./Python/lexicographical-numbers.py) | _O(n)_ | _O(1)_ | Medium |||
 390 | [Elimination Game](https://leetcode.com/contest/2/problems/elimination-game/) | [C++](./C++/elimination-game.cpp) [Python](./Python/elimination-game.py) | _O(logn)_ | _O(1)_ | Medium | 2nd Contest |
 391 | [Perfect Rectangle](https://leetcode.com/problems/perfect-rectangle/) | [C++](./C++/perfect-rectangle.cpp) [Python](./Python/perfect-rectangle.py) | _O(n)_ | _O(n)_ | Hard | |
+398 | [Random Pick Index](https://leetcode.com/problems/random-pick-index/) | [C++](./C++/random-pick-index.cpp) [Python](./Python/random-pick-index.py) | _O(n)_ | _O(1)_ | Medium || `Reservoir Sampling` |
 
 ## Sort
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -409,6 +411,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 339| [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) | [C++](./C++/nested-list-weight-sum.cpp)  [Python](./Python/nested-list-weight-sum.py)  | _O(n)_ | _O(h)_ | Easy         |📖||
 364| [Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/) | [C++](./C++/nested-list-weight-sum-ii.cpp)  [Python](./Python/nested-list-weight-sum-ii.py)  | _O(n)_ | _O(h)_ | Medium         |📖||
 366| [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [C++](./C++/find-leaves-of-binary-tree.cpp)  [Python](./Python/find-leaves-of-binary-tree.py)  | _O(n)_ | _O(h)_ | Medium         |📖||
+399| [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [C++](./C++/evaluate-division.cpp)  [Python](./Python/evaluate-division.py)  | _O(q * |V|!)_ | _O(e)_ | Medium         |||
 
 ## Backtracking
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -495,6 +498,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 330| [Patching Array](https://leetcode.com/problems/patching-array/) | [C++](./C++/patching-array.cpp) [Python](./Python/patching-array.py) | _O(s + logn)_ | _O(1)_       | Medium           ||
 376| [Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)| [C++](./C++/wiggle-subsequence.cpp) [Python](./Python/wiggle-subsequence.py)   | _O(n)_          | _O(1)_          | Medium         ||
 392| [Is Subsequence](https://leetcode.com/problems/is-subsequence/)| [C++](./C++/is-subsequence.cpp) [Python](./Python/is-subsequence.py)   | _O(n)_          | _O(1)_          | Medium         ||
+397| [Integer Replacement](https://leetcode.com/problems/integer-replacement/)| [C++](./C++/integer-replacement.cpp) [Python](./Python/integer-replacement.py)   | _O(n)_          | _O(1)_          | Easy         || Math
 
 ---
 ## Design
