@@ -6,7 +6,7 @@ public:
     vector<double> calcEquation(vector<pair<string, string>> equations,
         vector<double>& values, vector<pair<string, string>> query) {
 
-        unordered_map<string,unordered_map<string, double>> lookup;
+        unordered_map<string, unordered_map<string, double>> lookup;
         for (int i = 0; i < values.size(); ++i) {
             lookup[equations[i].first].emplace(equations[i].second, values[i]);
             if (values[i] != 0) {
@@ -29,7 +29,7 @@ public:
 
 private:
     pair<bool, double> check(string up, string down, 
-            unordered_map<string,unordered_map<string, double>> &lookup,
+            unordered_map<string, unordered_map<string, double>> &lookup,
             unordered_set<string> *visited) {
         if (lookup[up].find(down) != lookup[up].end()) {
             return {true, lookup[up][down]};
