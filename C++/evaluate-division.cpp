@@ -1,4 +1,4 @@
-// Time:  O(e + q * e)
+// Time:  O(e + q * |V|), |V| is the number of variables
 // Space: O(e)
 
 class Solution {
