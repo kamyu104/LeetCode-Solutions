@@ -22,7 +22,11 @@
 # Input: x = 2, y = 6, z = 5
 # Output: False
 
-from fractions import gcd
+
+def gcd(a, b):
+    while b:
+        a, b = b, a%b
+    return a
 
 class Solution(object):
     def canMeasureWater(self, x, y, z):
@@ -32,7 +36,4 @@ class Solution(object):
         :type z: int
         :rtype: bool
         """
-        # The problem is to solve:
-        # - check z <= max(x, y) 
-        # - check if there is any (a, b) integers s.t. ax + by = z
-        return z <= max(x, y) and z % gcd(x, y) == 0
+        return z == 0 or ((x + y >= z) and (z % gcd(x, y) == 0))
