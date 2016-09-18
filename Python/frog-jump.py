@@ -44,16 +44,16 @@ class Solution(object):
         :type stones: List[int]
         :rtype: bool
         """
-        def findJumpStones(stones, lookup, i):
-            jump_stones = []
+        def findNextStones(stones, lookup, i):
+            next_stones = []
             if i == 0:
                 if stones[1] == stones[0] + 1:
-                    jump_stones.append(1)
+                    next_stones.append(1)
             else:
                 for k in (i-1, i, i+1):
                     if stones[i] + k in lookup:
-                        jump_stones.append(lookup[stones[i] + k])
-            return jump_stones
+                        next_stones.append(lookup[stones[i] + k])
+            return next_stones
 
         lookup = {}
         for k, v in enumerate(stones):
@@ -63,7 +63,7 @@ class Solution(object):
         dp[0] = True
         for i in xrange(len(stones)):
             if dp[i]:
-                for j in findJumpStones(stones, lookup, i):
+                for j in findNextStones(stones, lookup, i):
                     dp[j] = True
         return dp[-1]
 
@@ -77,23 +77,23 @@ class Solution2(object):
         :type stones: List[int]
         :rtype: bool
         """
-        def findJumpStones(stones, i):
-            jump_stones = []
+        def findNextStones(stones, i):
+            next_stones = []
             if i == 0:
                 if stones[1] == stones[0] + 1:
-                    jump_stones.append(1)
+                    next_stones.append(1)
             else:
                 for k in (i-1, i, i+1):
                     j = bisect.bisect_left(stones, stones[i] + k)
                     if j != len(stones) and stones[j] == stones[i] + k:
-                        jump_stones.append(j)
-            return jump_stones
+                        next_stones.append(j)
+            return next_stones
             
         dp = [False for _ in xrange(len(stones))]
         dp[0] = True
         for i in xrange(len(stones)):
             if dp[i]:
-                for j in findJumpStones(stones, i):
+                for j in findNextStones(stones, i):
                     dp[j] = True
         return dp[-1]
 
