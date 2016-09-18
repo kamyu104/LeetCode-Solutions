@@ -56,8 +56,8 @@ class Solution(object):
             return jump_stones
 
         lookup = {}
-        for i in xrange(len(stones)):
-            lookup[stones[i]] = i
+        for k, v in enumerate(stones):
+            lookup[v] = k
 
         dp = [False for _ in xrange(len(stones))]
         dp[0] = True
