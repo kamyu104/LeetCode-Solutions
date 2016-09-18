@@ -44,13 +44,6 @@ class Solution(object):
         :type stones: List[int]
         :rtype: bool
         """
-        def findNextStones(stones, lookup, i):
-            next_stones = []
-            for k in (i-1, i, i+1):
-                if stones[i] + k in lookup:
-                    next_stones.append(lookup[stones[i] + k])
-            return next_stones
-
         lookup = {}
         for k, v in enumerate(stones):
             lookup[v] = k
@@ -59,8 +52,9 @@ class Solution(object):
         dp[0] = True
         for i in xrange(len(stones)):
             if dp[i]:
-                for j in findNextStones(stones, lookup, i):
-                    dp[j] = True
+                for k in (i-1, i, i+1):
+                    if stones[i] + k in lookup:
+                        dp[lookup[stones[i] + k]] = True
         return dp[-1]
 
 
