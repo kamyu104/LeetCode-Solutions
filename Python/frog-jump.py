@@ -1,4 +1,4 @@
-# Time: O(n^2)
+# Time:  O(nlogn)
 # Space: O(n)
 
 # A frog is crossing a river. The river is divided into x units and
@@ -37,7 +37,38 @@
 # Return false. There is no way to jump to the last stone as 
 # the gap between the 5th and 6th stone is too large.
 
+# DP with binary search
 class Solution(object):
+    def canCross(self, stones):
+        """
+        :type stones: List[int]
+        :rtype: bool
+        """
+        def findStones(stones, i):
+            result = []
+            if i == 0:
+                if stones[1] == 1:
+                    result.append(1)
+            else:
+                a = bisect.bisect_left(stones, stones[i] + i-1)
+                b = bisect.bisect_left(stones, stones[i] + i)
+                c = bisect.bisect_left(stones, stones[i] + i+1)
+                if a != len(stones) and stones[a] == stones[i] + i-1: result.append(a)
+                if b != len(stones) and stones[b] == stones[i] + i: result.append(b)
+                if c != len(stones) and stones[c] == stones[i] + i+1: result.append(c)
+            return result
+            
+        dp = [False for _ in xrange(len(stones))]
+        dp[0] = True
+        for i in xrange(len(stones)-1):
+            for j in findStones(stones, i):
+                dp[j] = True
+        return dp[-1]
+
+
+# Time:  O(n^2)
+# Space: O(n)
+class Solution2(object):
     def canCross(self, stones):
         """
         :type stones: List[int]
