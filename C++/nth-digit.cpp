@@ -6,7 +6,7 @@ public:
     int findNthDigit(int n) {
         int digit_len = 1;
         while (n > digit_len * 9 * pow(10, digit_len - 1)) {
-            n -= digit_len  * 9 * pow(10, digit_len - 1);
+            n -= digit_len * 9 * pow(10, digit_len - 1);
             ++digit_len;
         }
 
