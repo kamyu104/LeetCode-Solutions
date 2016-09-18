@@ -1,4 +1,4 @@
-# Time:  O(nlogn)
+# Time:  O(n)
 # Space: O(n)
 
 # A frog is crossing a river. The river is divided into x units and
@@ -37,8 +37,41 @@
 # Return false. There is no way to jump to the last stone as 
 # the gap between the 5th and 6th stone is too large.
 
-# DP with binary search
+# DP with hash table
 class Solution(object):
+    def canCross(self, stones):
+        """
+        :type stones: List[int]
+        :rtype: bool
+        """
+        def findStones(stones, lookup, i):
+            result = []
+            if i == 0:
+                if stones[1] == stones[0] + 1:
+                    result.append(1)
+            else:
+                for k in (i-1, i, i+1):
+                    if stones[i] + k in lookup:
+                        result.append(lookup[stones[i] + k])
+            return result
+
+        lookup = {}
+        for i in xrange(len(stones)):
+            lookup[stones[i]] = i
+
+        dp = [False for _ in xrange(len(stones))]
+        dp[0] = True
+        for i in xrange(len(stones)-1):
+            if dp[i]:
+                for j in findStones(stones, lookup, i):
+                    dp[j] = True
+        return dp[-1]
+
+
+# Time:  O(nlogn)
+# Space: O(n)
+# DP with binary search
+class Solution2(object):
     def canCross(self, stones):
         """
         :type stones: List[int]
@@ -67,7 +100,7 @@ class Solution(object):
 
 # Time:  O(n^2)
 # Space: O(n)
-class Solution2(object):
+class Solution3(object):
     def canCross(self, stones):
         """
         :type stones: List[int]
