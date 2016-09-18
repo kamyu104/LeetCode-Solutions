@@ -80,7 +80,7 @@ class Solution2(object):
         def findJumpStones(stones, i):
             jump_stones = []
             if i == 0:
-                if stones[1] == 1:
+                if stones[1] == stones[0] + 1:
                     jump_stones.append(1)
             else:
                 for k in (i-1, i, i+1):
