@@ -14,7 +14,7 @@
 #
 # Note:
 #
-# The number of stones is ≥ 2 and is < 1,100.
+# The number of stones is >= 2 and is < 1,100.
 # Each stone's position will be a non-negative integer < 231.
 # The first stone's position is always 0.
 # Example 1:
@@ -50,14 +50,12 @@ class Solution(object):
                 if stones[1] == 1:
                     result.append(1)
             else:
-                a = bisect.bisect_left(stones, stones[i] + i-1)
-                b = bisect.bisect_left(stones, stones[i] + i)
-                c = bisect.bisect_left(stones, stones[i] + i+1)
-                if a != len(stones) and stones[a] == stones[i] + i-1: result.append(a)
-                if b != len(stones) and stones[b] == stones[i] + i: result.append(b)
-                if c != len(stones) and stones[c] == stones[i] + i+1: result.append(c)
+                for k in (i-1, i, i+1):
+                    j = bisect.bisect_left(stones, stones[i] + k)
+                    if j != len(stones) and stones[j] == stones[i] + k:
+                        result.append(j)
             return result
-
+            
         dp = [False for _ in xrange(len(stones))]
         dp[0] = True
         for i in xrange(len(stones)-1):
