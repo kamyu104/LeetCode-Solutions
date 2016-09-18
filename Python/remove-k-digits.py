@@ -5,7 +5,7 @@
 # remove k digits from the number so that the new number is the smallest possible.
 #
 # Note:
-# The length of num is less than 105 and will be >= k.
+# The length of num is less than 10^5 and will be >= k.
 # The given num does not contain any leading zero.
 # Example 1:
 #
