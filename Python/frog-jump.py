@@ -46,13 +46,9 @@ class Solution(object):
         """
         def findNextStones(stones, lookup, i):
             next_stones = []
-            if i == 0:
-                if stones[1] == stones[0] + 1:
-                    next_stones.append(1)
-            else:
-                for k in (i-1, i, i+1):
-                    if stones[i] + k in lookup:
-                        next_stones.append(lookup[stones[i] + k])
+            for k in (i-1, i, i+1):
+                if stones[i] + k in lookup:
+                    next_stones.append(lookup[stones[i] + k])
             return next_stones
 
         lookup = {}
@@ -79,14 +75,10 @@ class Solution2(object):
         """
         def findNextStones(stones, i):
             next_stones = []
-            if i == 0:
-                if stones[1] == stones[0] + 1:
-                    next_stones.append(1)
-            else:
-                for k in (i-1, i, i+1):
-                    j = bisect.bisect_left(stones, stones[i] + k)
-                    if j != len(stones) and stones[j] == stones[i] + k:
-                        next_stones.append(j)
+            for k in (i-1, i, i+1):
+                j = bisect.bisect_left(stones, stones[i] + k)
+                if j != len(stones) and stones[j] == stones[i] + k:
+                    next_stones.append(j)
             return next_stones
             
         dp = [False for _ in xrange(len(stones))]
