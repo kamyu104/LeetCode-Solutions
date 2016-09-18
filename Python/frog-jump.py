@@ -61,7 +61,7 @@ class Solution(object):
 
         dp = [False for _ in xrange(len(stones))]
         dp[0] = True
-        for i in xrange(len(stones)-1):
+        for i in xrange(len(stones)):
             if dp[i]:
                 for j in findJumpStones(stones, lookup, i):
                     dp[j] = True
@@ -91,7 +91,7 @@ class Solution2(object):
             
         dp = [False for _ in xrange(len(stones))]
         dp[0] = True
-        for i in xrange(len(stones)-1):
+        for i in xrange(len(stones)):
             if dp[i]:
                 for j in findJumpStones(stones, i):
                     dp[j] = True
