@@ -57,12 +57,13 @@ class Solution(object):
                 if b != len(stones) and stones[b] == stones[i] + i: result.append(b)
                 if c != len(stones) and stones[c] == stones[i] + i+1: result.append(c)
             return result
-            
+
         dp = [False for _ in xrange(len(stones))]
         dp[0] = True
         for i in xrange(len(stones)-1):
-            for j in findStones(stones, i):
-                dp[j] = True
+            if dp[i]:
+                for j in findStones(stones, i):
+                    dp[j] = True
         return dp[-1]
 
 
