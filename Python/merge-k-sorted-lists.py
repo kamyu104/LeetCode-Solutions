@@ -12,7 +12,7 @@ class ListNode(object):
 
     def __repr__(self):		
         if self:		
-            return "{} -> {}".format(self.val, 
+            return "{} -> {}".format(self.val, self.next)
 
 
 # Merge two by two solution.
