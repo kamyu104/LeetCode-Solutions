@@ -46,7 +46,7 @@ class Solution(object):
         """
         if stones[1] != 1:
             return False
-        lookup = {s: set() for s in stones}
+        lookup = {i: set() for i in stones}
         lookup[1].add(1)
         for i in stones[:-1]:
             for j in lookup[i]:
