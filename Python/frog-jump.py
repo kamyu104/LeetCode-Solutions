@@ -46,11 +46,11 @@ class Solution(object):
         """
         if stones[1] != 1:
             return False
-        lookup = {i: set() for i in stones}
+        lookup = {s: set() for s in stones}
         lookup[1].add(1)
-        for i in stones[:-1]:
-            for j in lookup[i]:
+        for s in stones[:-1]:
+            for j in lookup[s]:
                 for k in xrange(j-1, j+2):
-                    if k > 0 and i+k in lookup:
-                        lookup[i+k].add(k)
+                    if k > 0 and s+k in lookup:
+                        lookup[s+k].add(k)
         return bool(lookup[stones[-1]])
