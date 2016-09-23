@@ -1,4 +1,4 @@
-# Time:  O(n)
+# Time:  O(n) ~ O(n^2) 
 # Space: O(n)
 
 # A frog is crossing a river. The river is divided into x units and
@@ -44,63 +44,13 @@ class Solution(object):
         :type stones: List[int]
         :rtype: bool
         """
-        lookup = {}
-        for k, v in enumerate(stones):
-            lookup[v] = k
-
-        dp = [False for _ in xrange(len(stones))]
-        dp[0] = True
-        for i in xrange(len(stones)):
-            if dp[i]:
-                for k in (i-1, i, i+1):
-                    if stones[i] + k in lookup:
-                        dp[lookup[stones[i] + k]] = True
-        return dp[-1]
-
-
-# Time:  O(nlogn)
-# Space: O(n)
-# DP with binary search
-class Solution2(object):
-    def canCross(self, stones):
-        """
-        :type stones: List[int]
-        :rtype: bool
-        """
-        def findNextStones(stones, i):
-            next_stones = []
-            for k in (i-1, i, i+1):
-                j = bisect.bisect_left(stones, stones[i] + k)
-                if j != len(stones) and stones[j] == stones[i] + k:
-                    next_stones.append(j)
-            return next_stones
-            
-        dp = [False for _ in xrange(len(stones))]
-        dp[0] = True
-        for i in xrange(len(stones)):
-            if dp[i]:
-                for j in findNextStones(stones, i):
-                    dp[j] = True
-        return dp[-1]
-
-
-# Time:  O(n^2)
-# Space: O(n)
-class Solution3(object):
-    def canCross(self, stones):
-        """
-        :type stones: List[int]
-        :rtype: bool
-        """
-        dp = [False for _ in xrange(len(stones))]
-        dp[0] = True
-
-        for i in xrange(1, len(stones)):
-            for j in reversed(xrange(i)):
-                if stones[i] - stones[j] > j + 1:
-                    break
-                if dp[j] and ((stones[i] - stones[j]) in ([j-1, j, j+1] if i != 1 else [1])):
-                    dp[i] = True
-                    break
-
-        return dp[-1]
+        if stones[1] != 1:
+            return False
+        lookup = {s: set() for s in stones}
+        lookup[1].add(1)
+        for i in stones[:-1]:
+            for j in lookup[i]:
+                for k in xrange(j-1, j+2):
+                    if k > 0 and i+k in lookup:
+                        lookup[i+k].add(k)
+        return bool(lookup[stones[-1]])
