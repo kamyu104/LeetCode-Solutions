@@ -18,11 +18,15 @@ public:
         // Put the cells on the border into min heap.
         for (int i = 0; i < m_; ++i) {
             heap_.emplace(Cell{i, 0, heightMap[i][0]});
+            is_visited_[i][0] = true;
             heap_.emplace(Cell{i, n_ - 1, heightMap[i][n_ - 1]});
+            is_visited_[i][n_ - 1] = true;
         }
         for (int j = 0; j < n_; ++j) {
             heap_.emplace(Cell{0, j, heightMap[0][j]});
+            is_visited_[0][j] = true;
             heap_.emplace(Cell{m_ - 1, j, heightMap[m_ - 1][j]});
+            is_visited_[m_ - 1][j] = true;
         }
         const vector<pair<int, int>> directions{{0, -1}, {0, 1},
                                                 {-1, 0}, {1, 0}};
@@ -30,7 +34,6 @@ public:
         while (!heap_.empty()) {
             Cell c = heap_.top();
             heap_.pop();
-            is_visited_[c.i][c.j] = true;
             for (const auto& d : directions) {
             	trap += fill(heightMap, c.i + d.first, c.j + d.second, c.height);
             }
@@ -48,8 +51,8 @@ private:
 
         // Fill unvisited cell.
         if (!is_visited_[i][j]) {
-            is_visited_[i][j] = true; // Marked as visited.
             heap_.emplace(Cell{i, j, max(height, heightMap[i][j])});
+            is_visited_[i][j] = true; // Marked as visited.
             return max(0, height - heightMap[i][j]); // Fill in the gap.
         }
 
