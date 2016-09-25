@@ -53,7 +53,7 @@ class Solution(object):
             for (dx, dy) in [(1,0), (-1,0), (0,1), (0,-1)]:
                 x, y = i+dx, j+dy
                 if 0 <= x < m and 0 <= y < n and not visited[x][y]:
-                    trap += max(0, height - heightMap[x][y])   # how much water at the cell
+                    trap += max(0, height - heightMap[x][y])
                     heappush(heap, [max(height, heightMap[x][y]), x, y])
                     visited[x][y] = True
 
