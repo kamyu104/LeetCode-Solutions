@@ -4,13 +4,16 @@
 class Solution {
 public:
     int trapRainWater(vector<vector<int>>& heightMap) {
-        if (heightMap.empty()) {
-            return 0;
-        }
-        
         // Init m_, n_, is_visited_.
         m_ = heightMap.size();
+        if (!m_) {
+            return 0;
+        }
         n_ = heightMap[0].size();
+        if (!n_) {
+            return 0;
+        }
+
         is_visited_ = vector<vector<bool>>(m_, vector<bool>(n_, false));
 
         int trap = 0;
