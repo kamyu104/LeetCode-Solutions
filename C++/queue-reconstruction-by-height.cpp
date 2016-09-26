@@ -19,12 +19,12 @@ public:
                 }
                 index -= blocks[i].size();
             }
-            blocks[i].insert(blocks[i].begin() + index, p);
+            blocks[i].emplace(blocks[i].begin() + index, p);
             
             if (blocks[i].size() * blocks[i].size() > people.size()) {
-                blocks.insert(blocks.begin() + i + 1,
-                              vector<pair<int, int>>(blocks[i].begin() + blocks[i].size() / 2,
-                                                     blocks[i].end()));
+                blocks.emplace(blocks.begin() + i + 1,
+                               vector<pair<int, int>>(blocks[i].begin() + blocks[i].size() / 2,
+                                                      blocks[i].end()));
                 blocks[i].erase(blocks[i].begin() + blocks[i].size() / 2, blocks[i].end());
             }
         }
@@ -50,7 +50,7 @@ public:
             });
         vector<pair<int, int>> result;
         for (const auto& p : people) {
-            result.insert(result.begin() + p.second, p);
+            result.emplace(result.begin() + p.second, p);
         }
         return result;
     }
