@@ -23,8 +23,8 @@ public:
             
             if (blocks[i].size() * blocks[i].size() > people.size()) {
                 blocks.emplace(blocks.begin() + i + 1,
-                               vector<pair<int, int>>(blocks[i].begin() + blocks[i].size() / 2,
-                                                      blocks[i].end()));
+                               blocks[i].begin() + blocks[i].size() / 2,
+                               blocks[i].end());
                 blocks[i].erase(blocks[i].begin() + blocks[i].size() / 2, blocks[i].end());
             }
         }
