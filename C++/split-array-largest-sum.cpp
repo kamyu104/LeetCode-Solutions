@@ -11,7 +11,7 @@ public:
         }
 
         while (left <= right) {
-            int mid = left + (right - left) / 2;
+            const auto mid = left + (right - left) / 2;
             if (canSplit(nums, m, mid)) {
                 right = mid - 1;
             } else {
@@ -23,8 +23,7 @@ public:
 
 private:
     bool canSplit(vector<int>& nums, int m, int sum) {
-        int cnt = 1;
-        int curr_sum = 0;
+        int cnt = 1, curr_sum = 0;
         for (const auto& num : nums) {
             curr_sum += num;
             if (curr_sum > sum) {
