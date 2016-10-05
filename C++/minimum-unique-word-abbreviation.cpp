@@ -45,17 +45,17 @@ private:
     void dict_to_bits_dict(const string& target, const vector<string>& dictionary,
                          vector<int> *bits_dict, int *bit_candidates) {
         for (const auto& w : dictionary) {
-            int word = 0;
+            int bits = 0;
             if (w.length() != target.length()) {
                 continue;
             }
             for (int i = target.length() - 1, bit = 1; i >= 0; --i, bit <<= 1) {
                 if (target[i] != w[i]) {
-                    word |= bit;
+                    bits |= bit;
                 }
             }
-            bits_dict->emplace_back(word);
-            *bit_candidates |= word;
+            bits_dict->emplace_back(bits);
+            *bit_candidates |= bits;
         }
     }
 
