@@ -15,7 +15,7 @@ public:
     }
 
 private:
-    void dfs(const string& target, int bit_candidates, int bit, int mask,
+    void dfs(const string& target, int bit_candidates, int bits, int mask,
              vector<int> *bits_dict, int *min_len, int *min_abbr) {
 
         const auto len = abbr_len(target, mask);
@@ -34,7 +34,7 @@ private:
             *min_len = len;
             *min_abbr = mask;
         } else {
-            for (int b = bit; b < (1 << target.length()); b <<= 1) {
+            for (int b = bits; b < (1 << target.length()); b <<= 1) {
                 if (bit_candidates & b) {
                     dfs(target, bit_candidates, b << 1, mask | b, bits_dict, min_len, min_abbr);
                 }
