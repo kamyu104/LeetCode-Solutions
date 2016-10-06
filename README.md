@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-407%20%2F%20407-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-411%20%2F%20411-ff69b4.svg)
 
-Up to date (2016-09-25), there are `390` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
+Up to date (2016-10-02), there are `394` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
 The number of questions is increasing recently.
-Here is the classification of all `407` questions.
+Here is the classification of all `411` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions.)
@@ -59,6 +59,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | [C++](./C++/find-the-difference.cpp) [Python](./Python/find-the-difference.py) | _O(n)_ | _O(1)_ | Easy | |
 393 | [UTF-8 Validation](https://leetcode.com/problems/utf-8-validation/) | [C++](./C++/utf-8-validation.cpp) [Python](./Python/utf-8-validation.py) | _O(n)_ | _O(1)_ | Medium | |
 401 | [Binary Watch](https://leetcode.com/problems/binary-watch/) | [C++](./C++/binary-watch.cpp) [Python](./Python/binary-watch.py) | _O(1)_ | _O(1)_ | Easy | |
+411 | [Minimum Unique Word Abbreviation](https://leetcode.com/problems/minimum-unique-word-abbreviation/) | [C++](./C++/minimum-unique-word-abbreviation.cpp) [Python](./Python/minimum-unique-word-abbreviation.py) | _O(2^n)_ | _O(n)_ | Hard | 📖 |
 
 ## Array
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -129,6 +130,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 306| [Addictive Number](https://leetcode.com/problems/additive-number/) | [C++](./C++/additive-number.cpp)  [Python](./Python/additive-number.py) | _O(n^3)_ | _O(n)_ | Medium         | |
 383| [Ransom Note](https://leetcode.com/problems/ransom-note/) | [C++](./C++/ransom-note.cpp)  [Python](./Python/ransom-note.py) | _O(n)_ | _O(1)_ | Easy         | EPI |
 405| [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [C++](./C++/convert-a-number-to-hexadecimal.cpp)  [Python](./Python/convert-a-number-to-hexadecimal.py) | _O(n)_ | _O(1)_ | Easy         | |
+408| [Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/) | [C++](./C++/valid-word-abbreviation.cpp)  [Python](./Python/valid-word-abbreviation.py) | _O(n)_ | _O(1)_ | Easy         | 📖 |
 
 ## Linked List
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -241,6 +243,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 356| [Line Reflection](https://leetcode.com/problems/line-reflection/) | [C++](./C++/line-reflection.cpp) [Python](./Python/line-reflection.py) | _O(n)_| _O(n)_| Medium |📖| Hash, Two Pointers |
 387| [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [C++](./C++/first-unique-character-in-a-string.cpp) [Python](./Python/first-unique-character-in-a-string.py) | _O(n)_| _O(n)_| Easy |||
 388| [Longest Absolute File Path](https://leetcode.com/problems/first-unique-character-in-a-string/) | [C++](./C++/longest-absolute-file-path.cpp) [Python](./Python/longest-absolute-file-path.py) | _O(n)_| _O(d)_| Medium || Stack |
+409| [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [C++](./C++/longest-palindrome.cpp) [Python](./Python/longest-palindrome.py) | _O(n)_| _O(1)_| Easy |||
 
 ## Data Structure
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -371,6 +374,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 363| [Max Sum of Rectangle No Larger Than K](https://leetcode.com/problems/max-sum-of-sub-matrix-no-larger-than-k/) | [C++](./C++/max-sum-of-sub-matrix-no-larger-than-k.cpp)  [Python](./Python/max-sum-of-sub-matrix-no-larger-than-k.py)  | _O(min(m, n)^2 * max(m, n) * logn(max(m, n)))_ | _O(max(m, n))_ | Hard         |||
 367| [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)| [C++](./C++/valid-perfect-square.cpp) [Python](./Python/valid-perfect-square.py)   | _O(logn)_          | _O(1)_          | Medium         | |
 374| [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)| [C++](./C++/guess-number-higher-or-lower.cpp) [Python](./Python/guess-number-higher-or-lower.py)   | _O(logn)_          | _O(1)_          | Easy         | |
+410| [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)| [C++](./C++/split-array-largest-sum.cpp) [Python](./Python/split-array-largest-sum.py)   | _O(nlogs)_          | _O(1)_          | Hard         | |
 
 ## Binary Search Tree
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
