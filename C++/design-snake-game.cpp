@@ -1,5 +1,5 @@
-// Time:  O(s) per move, s is the current length of the snake.
-// Space: O(s)
+// Time:  O(1) per move
+// Space: O(s), s is the current length of the snake.
 
 class SnakeGame {
 public:
@@ -11,6 +11,8 @@ public:
     SnakeGame(int width, int height, vector<pair<int, int>> food) :
                width_{width}, height_{height}, score_{0},
                food_{food.begin(), food.end()}, snake_{{0, 0}}  {
+                   
+        lookup_.emplace(0);
     }
     
     /** Moves the snake.
@@ -21,7 +23,9 @@ public:
         const auto x = snake_.back().first + direction_[direction].first;
         const auto y = snake_.back().second + direction_[direction].second;
         const auto tail = snake_.back();
-        
+
+        auto it = lookup_.find(hash(snake_.front().first, snake_.front().second));
+        lookup_.erase(it);
         snake_.pop_front();
         if (!valid(x, y)) {
             return -1;
@@ -29,8 +33,10 @@ public:
             ++score_;
             food_.pop_front();
             snake_.push_front(tail);
+            lookup_.emplace(hash(tail.first, tail.second));
         }
         snake_.push_back({x, y});
+        lookup_.emplace(hash(x, y));
         return score_;
     }
 
@@ -39,15 +45,16 @@ private:
         if (x < 0 || x >= height_ || y < 0 || y >= width_) {
             return false;
         }
-        for (const auto& p : snake_) {
-            if (x == p.first && y == p.second) {
-                return false;
-            }
-        }
-        return true;
+        return lookup_.find(hash(x, y)) == lookup_.end();
     }
+
+    int hash(int x, int y) {
+        return x * width_ + y;
+    }
+
     int width_, height_, score_;
     deque<pair<int, int>> food_, snake_;
+    unordered_multiset<int> lookup_;
     unordered_map<string, pair<int, int>> direction_ = {{"U", {-1, 0}}, {"L", {0, -1}},
                                                         {"R", {0, 1}}, {"D", {1, 0}}};
 };
@@ -57,5 +64,4 @@ private:
  * SnakeGame obj = new SnakeGame(width, height, food);
  * int param_1 = obj.move(direction);
  */
- 
  
