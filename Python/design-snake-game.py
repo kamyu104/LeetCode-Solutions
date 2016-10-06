@@ -1,5 +1,5 @@
-# Time:  O(s) per move, s is the current length of the snake.
-# Space: O(s)
+# Time:  O(1) per move
+# Space: O(s), s is the current length of the snake.
 
 from collections import deque
 
@@ -22,8 +22,9 @@ class SnakeGame(object):
         self.__food = deque(food)
         self.__snake = deque([(0, 0)])
         self.__direction =  {"U":(-1, 0), "L":(0, -1), "R":(0, 1), "D":(1, 0)};
+        self.__lookup = collections.defaultdict(int)
+        self.__lookup[(0, 0)] += 1
         
-
     def move(self, direction):
         """
         Moves the snake.
@@ -36,11 +37,14 @@ class SnakeGame(object):
         def valid(x, y):
             return 0 <= x < self.__height and \
                    0 <= y < self.__width and \
-                   (x, y) not in self.__snake
-
+                   (x, y) not in self.__lookup
         d = self.__direction[direction]
         x, y = self.__snake[-1][0] + d[0], self.__snake[-1][1] + d[1]
+
         tail = self.__snake[-1]
+        self.__lookup[self.__snake[0]] -= 1
+        if self.__lookup[self.__snake[0]] == 0:
+            self.__lookup.pop(self.__snake[0])
         self.__snake.popleft()
         if not valid(x, y):
             return -1
@@ -48,7 +52,9 @@ class SnakeGame(object):
             self.__score += 1
             self.__food.popleft()
             self.__snake.appendleft(tail)
-        self.__snake.append((x, y))
+            self.__lookup[tail] += 1
+        self.__snake += (x, y),
+        self.__lookup[(x, y)] += 1
         return self.__score
 
 
