@@ -4,93 +4,72 @@
 class Solution {
 public:
     string minAbbreviation(string target, vector<string>& dictionary) {
-        vector<int> bits_dict;
-        int bit_candidates = 0;
-        dict_to_bits_dict(target, dictionary, &bits_dict, &bit_candidates);
+        vector<int> diffs;
+        dictionary_to_diffs(target, dictionary, &diffs);
 
-        int min_len = numeric_limits<int>::max(), min_abbr = 0;
-        dfs(target, bit_candidates, 1, 0, &bits_dict, &min_len, &min_abbr);
+        if (diffs.empty()) {
+            return to_string(target.length());
+        }
 
-        return bits_to_abbr(target, min_abbr);
+        int bits = (1 << target.length()) - 1;
+        for (int i = 0; i < (1 << target.length()); ++i) {
+            if (all_of(diffs.begin(), diffs.end(), [&i](int d) { return d & i; } )) {
+                if (bits_len(target, i) > bits_len(target, bits)) {
+                    bits = i;
+                }
+            }
+        }
+
+        return bits_to_abbr(target, bits);
     }
 
 private:
-    void dfs(const string& target, int bit_candidates, int bits, int mask,
-             vector<int> *bits_dict, int *min_len, int *min_abbr) {
+    void dictionary_to_diffs(const string& target, const vector<string>& dictionary,
+                             vector<int> *diffs) {
 
-        const auto len = abbr_len(target, mask);
-        if (len >= *min_len) {
-            return;
-        }
-
-        bool match = true;
-        for (const auto& d : *bits_dict) {
-            if ((mask & d) == 0) {
-                match = false;
-                break;
-            }
-        }
-        if (match) {
-            *min_len = len;
-            *min_abbr = mask;
-        } else {
-            for (int b = bits; b < (1 << target.length()); b <<= 1) {
-                if (bit_candidates & b) {
-                    dfs(target, bit_candidates, b << 1, mask | b, bits_dict, min_len, min_abbr);
-                }
-            }
-        }
-    }
-
-    void dict_to_bits_dict(const string& target, const vector<string>& dictionary,
-                         vector<int> *bits_dict, int *bit_candidates) {
-        for (const auto& w : dictionary) {
-            int bits = 0;
-            if (w.length() != target.length()) {
+        for (const auto& word : dictionary) {
+            if (word.length() != target.length()) {
                 continue;
             }
-            for (int i = target.length() - 1, bit = 1; i >= 0; --i, bit <<= 1) {
-                if (target[i] != w[i]) {
-                    bits |= bit;
+
+            int bits = 0;
+            for (int i = 0; i < word.length(); ++i) {
+                if (target[i] != word[i]) {
+                    bits |= 1 << i;
                 }
             }
-            bits_dict->emplace_back(bits);
-            *bit_candidates |= bits;
+            diffs->emplace_back(bits);
         }
     }
 
-    int abbr_len(const string& target, int mask) {
-        int count = 0;
-        for (int b = 1; b < (1 << target.length());) {
-            if ((mask & b) == 0) {
-                for (; b < (1 << target.length()) && (mask & b) == 0; b <<= 1);
-            } else {
-                b <<= 1;
+    int bits_len(const string& target, int bits) {
+        int sum = 0;
+
+        for (int i = 0; i < target.length() - 1; ++i) {
+            if (((bits >> i) & 3) == 0) {
+                ++sum;
             }
-            ++count;
         }
-        return count;
+
+        return sum;
     }
 
-    string bits_to_abbr(const string& target, int min_abbr) {
-        vector<string> tmp;
-        for (int i = target.length() - 1, pre = i; i >= 0; --i, min_abbr >>= 1) {
-            if (min_abbr & 1) {
-                if (pre - i > 0) {
-                    tmp.emplace_back(to_string(pre - i));
-                }
-                pre = i - 1;
-                tmp.emplace_back(string(1, target[i]));
-            } else if (i == 0) {
-                tmp.emplace_back(to_string(pre - i + 1));
-            }
-        }
-        reverse(tmp.begin(), tmp.end());
-
+    string bits_to_abbr(const string& target, int bits) {
         string abbr;
-        for (const auto& s : tmp) {
-            abbr += s;
+
+        int pre = 0;
+        for (int i = 0, prev = 0; i < target.length(); ++i, bits >>= 1) {
+            if (bits & 1) {
+                if (i - pre > 0) {
+                    abbr += to_string(i - pre);
+                }
+                pre = i + 1;
+                abbr.push_back(target[i]);
+            } else if (i == target.length() - 1) {
+                abbr += to_string(i - pre + 1);
+            }
         }
+
         return abbr;
     }
 };
