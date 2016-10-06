@@ -11,11 +11,11 @@ class Solution(object):
         def bits_len(target, bits):
             return sum((bits >> i) & 3 == 0 for i in xrange(len(target)-1))
 
-        diffs = set()
+        diffs = []
         for word in dictionary:
             if len(word) != len(target):
                 continue
-            diffs.add(sum(2**i for i, c in enumerate(word) if target[i] != c))
+            diffs.append(sum(2**i for i, c in enumerate(word) if target[i] != c))
 
         if not diffs:
             return str(len(target))
