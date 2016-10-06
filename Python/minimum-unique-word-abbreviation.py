@@ -9,7 +9,7 @@ class Solution(object):
         :rtype: str
         """
         def bits_len(target, bits):
-            return sum((bits >> i) & 3 == 0 for i in xrange(len(target)-1))
+            return sum(((bits >> i) & 3) == 0 for i in xrange(len(target)-1))
 
         diffs = []
         for word in dictionary:
