@@ -24,12 +24,12 @@ private:
         }
 
         int sum = sentence[start].length(), count = 1;
-        for (int i = (start + 1) % sentence.size(); ; i = (i + 1) % sentence.size()) {
-            if (sum + 1 + sentence[i].length() > cols) {
-                return count;
-            }
+        for (int i = (start + 1) % sentence.size();
+             sum + 1 + sentence[i].length() <= cols;
+             i = (i + 1) % sentence.size()) {
             sum += 1 + sentence[i].length();
             ++count;
         }
+        return count;
     }
 };
