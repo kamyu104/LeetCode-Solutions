@@ -6,6 +6,7 @@ public:
     int thirdMax(vector<int>& nums) {
         int count = 0;
         vector<int> top(3, numeric_limits<int>::min());
+
         for (const auto& num : nums) {
             if (num > top[0]) {
                 top[2] = top[1];
