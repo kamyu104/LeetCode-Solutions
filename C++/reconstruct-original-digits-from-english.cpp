@@ -1,4 +1,3 @@
-
 // Time:  O(n)
 // Space: O(1)
 
@@ -31,7 +30,7 @@ public:
                 for (int j = 0; j < cnt.size(); ++j) {
                     cnt[j] -= cnts[i][j];
                 }
-                result += to_string(i);
+                result.push_back(i + '0');
             }
         }
         sort(result.begin(), result.end());
