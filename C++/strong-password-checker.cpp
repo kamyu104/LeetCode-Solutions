@@ -8,6 +8,7 @@ public:
         missing_type_cnt -= static_cast<int>(any_of(s.begin(), s.end(), [](char c){ return isdigit(c); }));
         missing_type_cnt -= static_cast<int>(any_of(s.begin(), s.end(), [](char c){ return isupper(c); }));
         missing_type_cnt -= static_cast<int>(any_of(s.begin(), s.end(), [](char c){ return islower(c); }));
+
         int total_change_cnt = 0;
         int one_change_cnt = 0, two_change_cnt = 0, three_change_cnt = 0;
         for (int i = 2; i < s.length();) {
