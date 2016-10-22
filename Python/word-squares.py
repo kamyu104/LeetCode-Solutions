@@ -30,8 +30,8 @@ class Solution(object):
         curr = []
         for s in words:
             curr.append(s)
-            self.wordSquaresHelper(words, trie, curr, result);
-            curr.pop();
+            self.wordSquaresHelper(words, trie, curr, result)
+            curr.pop()
 
         return result
     
@@ -39,7 +39,7 @@ class Solution(object):
         if len(curr) >= len(words[0]):
             return result.append(list(curr))
         
-        node = trie;     
+        node = trie
         for s in curr:
             node = node.children[ord(s[len(curr)]) - ord('a')]
             if not node:
