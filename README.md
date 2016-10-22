@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-418%20%2F%20418-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-425%20%2F%20425-ff69b4.svg)
 
-Up to date (2016-10-09), there are `401` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
+Up to date (2016-10-22), there are `408` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
 The number of questions is increasing recently.
-Here is the classification of all `418` questions.
+Here is the classification of all `425` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions.)
@@ -60,6 +60,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 393 | [UTF-8 Validation](https://leetcode.com/problems/utf-8-validation/) | [C++](./C++/utf-8-validation.cpp) [Python](./Python/utf-8-validation.py) | _O(n)_ | _O(1)_ | Medium | |
 401 | [Binary Watch](https://leetcode.com/problems/binary-watch/) | [C++](./C++/binary-watch.cpp) [Python](./Python/binary-watch.py) | _O(1)_ | _O(1)_ | Easy | |
 411 | [Minimum Unique Word Abbreviation](https://leetcode.com/problems/minimum-unique-word-abbreviation/) | [C++](./C++/minimum-unique-word-abbreviation.cpp) [Python](./Python/minimum-unique-word-abbreviation.py) | _O(2^n)_ | _O(n)_ | Hard | 📖 |
+421 | [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | [C++](./C++/maximum-xor-of-two-numbers-in-an-array.cpp) [Python](./Python/maximum-xor-of-two-numbers-in-an-array.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## Array
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -106,6 +107,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 396| [Rotate Function](https://leetcode.com/problems/rotate-function/) | [C++](./C++/rotate-function.cpp) [Python](./Python/rotate-function.py)  | _O(n)_ |  _O(1)_ | Easy         |||
 412| [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | [C++](./C++/fizz-buzz.cpp) [Python](./Python/fizz-buzz.py)  | _O(n)_ |  _O(1)_ | Easy         |||
 414| [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) | [C++](./C++/third-maximum-number.cpp) [Python](./Python/third-maximum-number.py)  | _O(n)_ |  _O(1)_ | Easy         |||
+419| [Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/) | [C++](./C++/battleships-in-a-board.cpp) [Python](./Python/battleships-in-a-board.py)  | _O(m * n)_ |  _O(1)_ | Medium         |||
+422| [Valid Word Square](https://leetcode.com/problems/valid-word-square/) | [C++](./C++/valid-word-square.cpp) [Python](./Python/valid-word-square.py)  | _O(m * n)_ |  _O(1)_ | Easy         |📖||
 
 ## String
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -134,6 +137,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 405| [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [C++](./C++/convert-a-number-to-hexadecimal.cpp)  [Python](./Python/convert-a-number-to-hexadecimal.py) | _O(n)_ | _O(1)_ | Easy         | |
 408| [Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/) | [C++](./C++/valid-word-abbreviation.cpp)  [Python](./Python/valid-word-abbreviation.py) | _O(n)_ | _O(1)_ | Easy         | 📖 |
 415| [Add Strings](https://leetcode.com/problems/add-strings/) | [C++](./C++/add-strings.cpp)  [Python](./Python/add-strings.py) | _O(n)_ | _O(1)_ | Easy         | |
+420| [Strong Password Checker](https://leetcode.com/problems/strong-password-checker/) | [C++](./C++/strong-password-checker.cpp)  [Python](./Python/strong-password-checker.py) | _O(n)_ | _O(1)_ | Hard         | |
 
 ## Linked List
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -247,6 +251,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 387| [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [C++](./C++/first-unique-character-in-a-string.cpp) [Python](./Python/first-unique-character-in-a-string.py) | _O(n)_| _O(n)_| Easy |||
 388| [Longest Absolute File Path](https://leetcode.com/problems/first-unique-character-in-a-string/) | [C++](./C++/longest-absolute-file-path.cpp) [Python](./Python/longest-absolute-file-path.py) | _O(n)_| _O(d)_| Medium || Stack |
 409| [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [C++](./C++/longest-palindrome.cpp) [Python](./Python/longest-palindrome.py) | _O(n)_| _O(1)_| Easy |||
+424| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | [C++](./C++/longest-repeating-character-replacement.cpp) [Python](./Python/longest-repeating-character-replacement.py) | _O(n)_| _O(1)_| Medium |||
 
 ## Data Structure
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -290,6 +295,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 398 | [Random Pick Index](https://leetcode.com/problems/random-pick-index/) | [C++](./C++/random-pick-index.cpp) [Python](./Python/random-pick-index.py) | _O(n)_ | _O(1)_ | Medium || `Reservoir Sampling` |
 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | [C++](./C++/nth-digit.cpp) [Python](./Python/nth-digit.py) | _O(logn)_ | _O(1)_ | Easy |||
 413 | [Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/) | [C++](./C++/arithmetic-slices.cpp) [Python](./Python/arithmetic-slices.py) | _O(n)_ | _O(1)_ | Medium |||
+423 | [Reconstruct Original Digits from English](https://leetcode.com/problems/reconstruct-original-digits-from-english/) | [C++](./C++/reconstruct-original-digits-from-english.cpp) [Python](./Python/reconstruct-original-digits-from-english.py) | _O(n)_ | _O(1)_ | Medium | [GCJ2016 - Round 1B](https://code.google.com/codejam/contest/11254486/dashboard#s=p0)||
 
 ## Sort
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -456,6 +462,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 291| [Word Pattern II](https://leetcode.com/problems/word-pattern-ii/) | [C++](./C++/word-pattern-ii.cpp)  [Python](./Python/word-pattern-ii.py)  | _O(n * C(n - 1, c - 1))_ | _O(n + c)_ | Hard         |📖||
 294| [Flip Game II](https://leetcode.com/problems/flip-game-ii/) | [C++](./C++/flip-game-ii.cpp) [Python](./Python/flip-game-ii.py)  | _O(n + c^2)_ | _O(c)_ | Medium         |📖| DP, Hash |
 320| [Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/) | [C++](./C++/generalized-abbreviation.cpp) [Python](./Python/generalized-abbreviation.py)  | _O(n * 2^n)_ | _O(n)_ | Medium         |📖||
+425| [Word Squares](https://leetcode.com/problems/word-squares/) | [C++](./C++/word-squares.cpp) [Python](./Python/word-squares.py)  | _O(n^2 * n!)_ | _O(n^2)_ | Hard         |📖||
 
 ## Dynamic Programming
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
