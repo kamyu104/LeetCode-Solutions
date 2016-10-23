@@ -21,7 +21,7 @@ public:
             target = target * 10 + nums[i];
             const auto start = i == nums.size() - 1 ? 1 : 0;
             for (int j = start; j <= 9; ++j) {
-                int candidate = result * 10 + j;
+                const auto candidate = result * 10 + j;
                 int num;
                 if (candidate < target) {
                     num = cnts[i + 1];
@@ -43,7 +43,6 @@ public:
         return result;
     }
 };
-
 
 // Time:  O(logn * logn)
 // Space: O(logn)
