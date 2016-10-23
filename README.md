@@ -437,7 +437,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 366| [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [C++](./C++/find-leaves-of-binary-tree.cpp)  [Python](./Python/find-leaves-of-binary-tree.py)  | _O(n)_ | _O(h)_ | Medium         |📖||
 399| [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [C++](./C++/evaluate-division.cpp)  [Python](./Python/evaluate-division.py)  | _O(q * \|V\|!)_ | _O(e)_ | Medium         |||
 417 | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [C++](./C++/pacific-atlantic-water-flow.cpp) [Python](./Python/pacific-atlantic-water-flow.py) | _O(m * n)_ | _O(m * n)_ | Medium ||
-440| [K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/) | [C++](./C++/k-th-smallest-in-lexicographical-order.cpp) [Python](./Python/k-th-smallest-in-lexicographical-order.py) | _O(logn * logn)_          | _O(logn)_          | Hard           ||
+440| [K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/) | [C++](./C++/k-th-smallest-in-lexicographical-order.cpp) [Python](./Python/k-th-smallest-in-lexicographical-order.py) | _O(logn)_          | _O(logn)_          | Hard           ||
 
 ## Backtracking
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
