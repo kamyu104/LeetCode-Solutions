@@ -29,11 +29,13 @@ class Solution(object):
         cnts = [0] * 10
         for i in xrange(1, 10):
             cnts[i] = cnts[i - 1] * 10 + 1
+
         nums = []
         i = n
         while i:
             nums.append(i % 10)
             i /= 10
+
         total, target = n, 0
         i = len(nums) - 1
         while i >= 0 and k > 0:
@@ -55,6 +57,7 @@ class Solution(object):
                     total = num-1
                     break
             i -= 1
+
         return result
 
 
