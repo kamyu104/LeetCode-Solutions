@@ -13,7 +13,7 @@ public:
 
         vector<int> nums;
         for (int i = n; i > 0; i /= 10) {
-            nums.push_back(i % 10);
+            nums.emplace_back(i % 10);
         }
         int total = n;
         int target = 0;
