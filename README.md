@@ -363,7 +363,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 395| [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | [C++](./C++/longest-substring-with-at-least-k-repeating-characters.cpp) [Python](./Python/longest-substring-with-at-least-k-repeating-characters.py) | _O(n)_          | _O(1)_          | Medium           ||
 404| [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [C++](./C++/sum-of-left-leaves.cpp) [Python](./Python/sum-of-left-leaves.py) | _O(n)_          | _O(h)_          | Easy           ||
 437| [Path Sum III](https://leetcode.com/problems/path-sum-iii/) | [C++](./C++/path-sum-iii.cpp) [Python](./Python/path-sum-iii.py) | _O(n^2)_          | _O(h)_          | Easy           ||
-440| [K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/) | [C++](./C++/k-th-smallest-in-lexicographical-order.cpp) [Python](./Python/k-th-smallest-in-lexicographical-order.py) | _O(logn * logn)_          | _O(logn)_          | Hard           ||
 
 ## Binary Search
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -438,6 +437,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 366| [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [C++](./C++/find-leaves-of-binary-tree.cpp)  [Python](./Python/find-leaves-of-binary-tree.py)  | _O(n)_ | _O(h)_ | Medium         |📖||
 399| [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [C++](./C++/evaluate-division.cpp)  [Python](./Python/evaluate-division.py)  | _O(q * \|V\|!)_ | _O(e)_ | Medium         |||
 417 | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [C++](./C++/pacific-atlantic-water-flow.cpp) [Python](./Python/pacific-atlantic-water-flow.py) | _O(m * n)_ | _O(m * n)_ | Medium ||
+440| [K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/) | [C++](./C++/k-th-smallest-in-lexicographical-order.cpp) [Python](./Python/k-th-smallest-in-lexicographical-order.py) | _O(logn * logn)_          | _O(logn)_          | Hard           ||
 
 ## Backtracking
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
