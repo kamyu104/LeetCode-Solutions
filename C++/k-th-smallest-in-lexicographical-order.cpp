@@ -5,30 +5,21 @@ class Solution {
 public:
     int findKthNumber(int n, int k) {
         int result = 0;
-        int cur = 0;
-        int index = 0;
-        for (int i = 1; i <= 9; ++i, cur /= 10) {
-            cur = cur * 10 + i;
-            int cnt = count(n, cur);
-            if (k > cnt + index) {
-                index += cnt;
-                continue;
-            }
-            if (cur <= n && findKthNumberHelper(n, k, cur, &index, &result)) {
-                break;
-            }
-        }
+        int cur = 0, index = 0;
+        findKthNumberHelper(n, k, cur, &index, &result);
         return result;
     }
 
 private:
     bool findKthNumberHelper(int n, int k, int cur, int *index, int *result) {
-        ++(*index);
-        if (*index == k) {
-            *result = cur;
-            return true;
+        if (cur) {
+            ++(*index);
+            if (*index == k) {
+                *result = cur;
+                return true;
+            }
         }
-        for (int i = 0; i <= 9; ++i, cur /= 10) {
+        for (int i = (cur == 0 ? 1 : 0); i <= 9; ++i, cur /= 10) {
             cur = cur * 10 + i;
             int cnt = count(n, cur);
             if (k > cnt + *index) {
