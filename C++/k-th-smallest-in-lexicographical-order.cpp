@@ -5,8 +5,8 @@ class Solution {
 public:
     int findKthNumber(int n, int k) {
         int result = 0;
-        int cur = 0, index = 0;
-        findKthNumberHelper(n, k, cur, &index, &result);
+        int index = 0;
+        findKthNumberHelper(n, k, 0, &index, &result);
         return result;
     }
 
