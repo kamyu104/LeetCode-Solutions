@@ -109,6 +109,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 414| [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) | [C++](./C++/third-maximum-number.cpp) [Python](./Python/third-maximum-number.py)  | _O(n)_ |  _O(1)_ | Easy         |||
 419| [Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/) | [C++](./C++/battleships-in-a-board.cpp) [Python](./Python/battleships-in-a-board.py)  | _O(m * n)_ |  _O(1)_ | Medium         |||
 422| [Valid Word Square](https://leetcode.com/problems/valid-word-square/) | [C++](./C++/valid-word-square.cpp) [Python](./Python/valid-word-square.py)  | _O(m * n)_ |  _O(1)_ | Easy         |📖||
+442| [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | [C++](./C++/find-all-duplicates-in-an-array.cpp) [Python](./Python/find-all-duplicates-in-an-array.py)  | _O(n)_ |  _O(1)_ | Medium         |||
 
 ## String
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
