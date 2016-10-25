@@ -10,7 +10,7 @@ public:
         for (int i = 0; i <= amount; ++i) {
             if (amounts[i] != numeric_limits<int>::max()) {
                 for (const auto& coin : coins) {
-                    if (i + coin <= amount) {
+                    if (coin <= numeric_limits<int>::max() - i && i + coin <= amount) {
                         amounts[i + coin] = min(amounts[i + coin], amounts[i] + 1);
                     }
                 }
