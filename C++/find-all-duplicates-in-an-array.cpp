@@ -14,7 +14,7 @@ public:
             }
         }
         for (i = 0; i < nums.size(); ++i) {
-            if (nums[i] != i + 1) {
+            if (i != nums[i] - 1) {
                 result.emplace_back(nums[i]);
             }
         }
