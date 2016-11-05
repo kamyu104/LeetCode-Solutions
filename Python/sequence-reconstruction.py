@@ -26,7 +26,8 @@ class Solution(object):
                     indegree[seq[i+1]] += 1
 
         cnt_of_zero_indegree = 0
-        res, q = [], []
+        res = []
+        q = []
         for i in indegree:
             if indegree[i] == 0:
                 cnt_of_zero_indegree += 1
@@ -45,5 +46,5 @@ class Solution(object):
                     if cnt_of_zero_indegree > 1:
                         return False
                     q.append(j)
-
-        return res == org and set(org) == integer_set
+        return res == org and len(org) == len(integer_set)
+    
