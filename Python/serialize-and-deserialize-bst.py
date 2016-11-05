@@ -31,14 +31,14 @@ class Codec:
         :type root: TreeNode
         :rtype: str
         """
-        def preOrder(node, vals):
+        def serializeHelper(node, vals):
             if node:
                 vals.append(node.val)
-                preOrder(node.left, vals)
-                preOrder(node.right, vals)
+                serializeHelper(node.left, vals)
+                serializeHelper(node.right, vals)
 
         vals = []
-        preOrder(root, vals)
+        serializeHelper(root, vals)
 
         return ' '.join(map(str, vals))
 
@@ -49,22 +49,22 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
-        def build(minVal, maxVal, vals):
+        def deserializeHelper(minVal, maxVal, vals):
             if not vals:
                 return None
 
             if minVal < vals[0] < maxVal:
                 val = vals.popleft()
                 node = TreeNode(val)
-                node.left = build(minVal, val, vals)
-                node.right = build(val, maxVal, vals)
+                node.left = deserializeHelper(minVal, val, vals)
+                node.right = deserializeHelper(val, maxVal, vals)
                 return node
             else:
                 return None
 
         vals = collections.deque([int(val) for val in data.split()])
 
-        return build(float('-inf'), float('inf'), vals)
+        return deserializeHelper(float('-inf'), float('inf'), vals)
 
 
 # Your Codec object will be instantiated and called as such:
