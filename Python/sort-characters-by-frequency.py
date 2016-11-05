@@ -45,8 +45,7 @@ class Solution(object):
             
         counts = [""] * (len(s)+1)
         for c in freq:
-            count = freq[c]
-            counts[count] += c
+            counts[freq[c]] += c
             
         result = ""
         for count in reversed(xrange(len(counts)-1)):
