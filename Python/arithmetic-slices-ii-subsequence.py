@@ -49,10 +49,12 @@ class Solution(object):
         :rtype: int
         """
         result = 0
-        dp = [{} for i in xrange(len(A))]
+        dp = [collections.defaultdict(int) for i in xrange(len(A))]
         for i in xrange(1, len(A)):
             for j in xrange(i):
-                cnt = dp[j].get(A[i] - A[j], 0) + 1
-                dp[i][A[i] - A[j]] = dp[i].get(A[i] - A[j], 0) + cnt
-                result += cnt - 1
+                diff = A[i]-A[j]
+                dp[i][diff] += 1
+                if diff in dp[j]:
+                    dp[i][diff] += dp[j][diff]
+                    result += dp[j][diff]
         return result
