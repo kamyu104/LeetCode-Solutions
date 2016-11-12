@@ -1,7 +1,7 @@
 // Time:  O(n^2)
 // Space: O(n * d)
 
-class Solution_MLE {
+class Solution {
 public:
     int numberOfArithmeticSlices(vector<int>& A) {
         int result = 0;
