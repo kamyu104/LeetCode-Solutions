@@ -15,6 +15,9 @@ class Solution(object):
                 nodes.add(c)
         
         for i in xrange(1, len(words)):
+            if len(words[i-1]) > len(words[i]) and \
+                words[i-1][:len(words[i])] == words[i]:
+                    return ""
             self.findEdges(words[i - 1], words[i], in_degree, out_degree)
         
         for node in nodes:
@@ -68,6 +71,9 @@ class Solution2(object):
         for node in nodes:
             ancestors[node] = []
         for i in xrange(1, len(words)):
+            if len(words[i-1]) > len(words[i]) and \
+                words[i-1][:len(words[i])] == words[i]:
+                    return ""
             self.findEdges(words[i - 1], words[i], ancestors)
 
         # Output topological order by DFS.
