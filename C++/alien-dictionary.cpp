@@ -14,6 +14,10 @@ public:
             }
         }
         for (int i = 1; i < words.size(); ++i) {
+            if (words[i - 1].length() > words[i].length() &&
+                words[i - 1].substr(0, words[i].length()) == words[i]) {
+                return "";
+            }
             findEdges(words[i - 1], words[i], &in_degree, &out_degree);
         }
         for (const auto& node : nodes) {
