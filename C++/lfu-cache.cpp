@@ -17,16 +17,16 @@ public:
         }
     }
 
-    void set(int key, int value) {
-        // If cache is full while inserting, remove the last one.
+    void set(int key, int value) 
         if (!capa_) {
             return;
         }
+        // If cache is full while inserting, remove the last one.
         if (map_.find(key) == map_.end() && list_.size() == capa_) {
             auto del = list_.front(); list_.pop_front();
             map_.erase(del.key);
         }
-         update(key, value);
+        update(key, value);
     }
 
 private:
