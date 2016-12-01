@@ -19,7 +19,10 @@ public:
 
     void set(int key, int value) {
         // If cache is full while inserting, remove the last one.
-        if (map_.find(key) == map_.end() && list_.size() == capa_ && capa_) {
+        if (!capa_) {
+            return;
+        }
+        if (map_.find(key) == map_.end() && list_.size() == capa_) {
             auto del = list_.front(); list_.pop_front();
             map_.erase(del.key);
         }
@@ -62,4 +65,3 @@ private:
  * int param_1 = obj.get(key);
  * obj.set(key,value);
  */
- 
