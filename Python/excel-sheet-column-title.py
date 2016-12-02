@@ -19,7 +19,7 @@ class Solution(object):
         :type n: int
         :rtype: str
         """
-        result, dvd = "", num
+        result, dvd = "", n
         
         while dvd:
             result += chr((dvd - 1) % 26 + ord('A'))
