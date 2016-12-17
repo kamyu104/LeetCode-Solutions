@@ -23,5 +23,5 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    result = Solution().anagrams(["cat", "dog", "act", "mac"])
+    result = Solution().groupAnagrams(["cat", "dog", "act", "mac"])
     print result
