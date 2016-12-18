@@ -32,7 +32,7 @@ public:
             }
             if (net_debt == 0) {
                 dp[i] = number - 1;
-                for (const auto& s: subset) {
+                for (const auto& s : subset) {
                     if ((i & s) == s) {
                         if (dp[s] != numeric_limits<int>::max() &&
                             dp[i - s] != numeric_limits<int>::max()) {
