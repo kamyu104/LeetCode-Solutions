@@ -1,5 +1,5 @@
-// Time:  O(n*2^n), n is the size of debt.
-// Space: O(n*2^n)
+// Time:  O(n * 2^n), n is the size of the debt.
+// Space: O(n * 2^n)
 
 class Solution {
 public:
