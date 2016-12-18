@@ -5,13 +5,13 @@ class Solution {
 public:
     int minTransfers(vector<vector<int>>& transactions) {
         unordered_map<int, int> account;
-        for (const auto& transaction: transactions) {
+        for (const auto& transaction : transactions) {
             account[transaction[0]] += transaction[2];
             account[transaction[1]] -= transaction[2];
         }
 
         vector<int> debt;
-        for (const auto& kvp: account) {
+        for (const auto& kvp : account) {
             if (kvp.second) {
                 debt.emplace_back(kvp.second);
             }
