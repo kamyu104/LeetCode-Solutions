@@ -28,7 +28,6 @@ class Solution(object):
                 if i & 1 << j:
                     net_debt += debt[j]
                     number += 1
-
             if net_debt == 0:
                 dp[i] = number - 1
                 for s in subset:
