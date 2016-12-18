@@ -1,5 +1,5 @@
-# Time:  O(2^n), n is the size of debt.
-# Space: O(2^n)
+# Time:  O(n * 2^n), n is the size of the debt.
+# Space: O(n * 2^n)
 
 class Solution(object):
     def minTransfers(self, transactions):
