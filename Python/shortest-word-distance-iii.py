@@ -8,10 +8,11 @@ class Solution:
     # @return {integer}
     def shortestWordDistance(self, words, word1, word2):
         dist = float("inf")
+        is_same = (word1 == word2)
         i, index1, index2 = 0, None, None
         while i < len(words):
             if words[i] == word1:
-                if index1 is not None:
+                if is_same and index1 is not None:
                     dist = min(dist, abs(index1 - i))
                 index1 = i
             elif words[i] == word2:
