@@ -1,4 +1,4 @@
-# Time:  O(s1 * n1)
+# Time:  O(s1 * min(s2, n1))
 # Space: O(s2)
 
 # Define S = [s,n] as the string S which consists of n connected strings s.
