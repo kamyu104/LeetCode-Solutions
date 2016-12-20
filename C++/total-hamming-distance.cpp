@@ -8,7 +8,7 @@ public:
         for (int i = 0; i < 8 * sizeof(int); ++i) {
             vector<int> counts(2);
             for (const auto& num : nums) {
-                ++counts[(num >> i) % 2];
+                ++counts[(num >> i) & 1];
             }
             result += counts[0] * counts[1];
         }
