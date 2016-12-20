@@ -5,7 +5,9 @@ class Solution {
 public:
     int hammingDistance(int x, int y) {
         int distance = 0;
-        for (int z = x ^ y; z; z &= z - 1, ++distance);
+        for (int z = x ^ y; z; z &= z - 1) {
+            ++distance;
+        }
         return distance;
     }
 };
