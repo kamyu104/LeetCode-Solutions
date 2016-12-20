@@ -1,5 +1,5 @@
 // Time:  O(n * s * 2^n), s is the number of subset of which sum equals to side length.
-// Space: O(n * (2^n + s)), 
+// Space: O(n * (2^n + s))
 
 class Solution {
 public:
