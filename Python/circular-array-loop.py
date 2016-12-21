@@ -42,8 +42,7 @@ class Solution(object):
                         break
                     return True
 
-            slow = i
-            val = nums[i]
+            slow, val = i, nums[i]
             while nums[slow] * val > 0:
                 tmp = next_index(nums, slow)
                 nums[slow] = 0
