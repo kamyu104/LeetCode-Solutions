@@ -63,6 +63,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 421 | [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | [C++](./C++/maximum-xor-of-two-numbers-in-an-array.cpp) [Python](./Python/maximum-xor-of-two-numbers-in-an-array.py) | _O(n)_ | _O(1)_ | Medium ||
 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance/) | [C++](./C++/hamming-distance.cpp) [Python](./Python/hamming-distance.py) | _O(1)_ | _O(1)_ | Easy ||
 462 | [Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | [C++](./C++/minimum-moves-to-equal-array-elements-ii.cpp) [Python](./Python/minimum-moves-to-equal-array-elements-ii.py) | _O(n)_  on average | _O(1)_ | Medium ||
+477 | [Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/) | [C++](./C++/total-hamming-distance.cpp) [Python](./Python/total-hamming-distance.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## Array
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -265,6 +266,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 438| [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [C++](./C++/find-all-anagrams-in-a-string.cpp) [Python](./Python/find-all-anagrams-in-a-string.py) | _O(n)_          | _O(1)_          | Easy           ||
 447| [Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/) | [C++](./C++/number-of-boomerangs.cpp) [Python](./Python/number-of-boomerangs.py) | _O(n^2)_          | _O(n)_          | Easy           ||
 454| [4Sum II](https://leetcode.com/problems/4sum-ii/) | [C++](./C++/4sum-ii.cpp) [Python](./Python/4sum-ii.py) | _O(n^2)_          | _O(n^2)_          | Medium           ||
+473| [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [C++](./C++/matchsticks-to-square.cpp) [Python](./Python/matchsticks-to-square.py) | _O(n * s * 2^n)_          | _O(n * (2^n + s))_          | Medium           ||
 
 ## Data Structure
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -406,6 +408,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 374| [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)| [C++](./C++/guess-number-higher-or-lower.cpp) [Python](./Python/guess-number-higher-or-lower.py)   | _O(logn)_          | _O(1)_          | Easy         | |
 410| [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)| [C++](./C++/split-array-largest-sum.cpp) [Python](./Python/split-array-largest-sum.py)   | _O(nlogs)_          | _O(1)_          | Hard         | |
 436 | [Find Right Interval](https://leetcode.com/problems/find-right-interval/) | [C++](./C++/find-right-interval.cpp) [Python](./Python/find-right-interval.py) | _O(nlogn)_ | _O(n)_ | Medium | |
+475 | [Heaters](https://leetcode.com/problems/heaters/) | [C++](./C++/heaters.cpp) [Python](./Python/heaters.py) | _O((m + n) * logn)_ | _O(1)_ | Easy | |
 
 ## Binary Search Tree
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -540,6 +543,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 467 | [Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/) | [C++](./C++/unique-substrings-in-wraparound-string.cpp) [Python](./Python/unique-substrings-in-wraparound-string.py) | _O(n)_ | _O(1)_ | Medium ||
 471 | [Encode String with Shortest Length](https://leetcode.com/problems/encode-string-with-shortest-length/) | [C++](./C++/encode-string-with-shortest-length.cpp) [Python](./Python/encode-string-with-shortest-length.py) | _O(n^3)_ on average | _O(n^2)_ | Medium |📖|
 472 | [Concatenated Words](https://leetcode.com/problems/concatenated-words/) | [C++](./C++/concatenated-words.cpp) [Python](./Python/concatenated-words.py) | _O(n * l^2)_ | _O(n * l)_ | Medium ||
+474 | [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/) | [C++](./C++/ones-and-zeroes.cpp) [Python](./Python/ones-and-zeroes.py) | _O(s * m * n)_ | _O(m * n)_ | Medium ||
 
 ## Greedy
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
