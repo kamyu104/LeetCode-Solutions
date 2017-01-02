@@ -18,7 +18,7 @@
 # 
 # Throw an exception? Good, but what if throwing an exception is not an option? 
 # You would then have to re-design the function (ie, add an extra parameter).
-#
+
 
 class Solution(object):
     def reverse(self, x):
