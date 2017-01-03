@@ -11,6 +11,8 @@
 # The result can be in any order.
 
 # Hash solution.
+
+
 class Solution(object):
     def intersection(self, nums1, nums2):
         """
@@ -32,6 +34,14 @@ class Solution(object):
                 lookup.discard(i)
 
         return res
+
+    def intersection2(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: List[int]
+        """
+        return list(set(nums1) & set(nums2))
 
 
 # Time:  O(max(m, n) * log(max(m, n)))

@@ -23,6 +23,8 @@
 # Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)
 
 # KMP solution.
+
+
 class Solution(object):
     def repeatedSubstringPattern(self, str):
         """
@@ -43,3 +45,15 @@ class Solution(object):
         prefix = getPrefix(str)
         return prefix[-1] != -1 and \
                (prefix[-1] + 1) % (len(str) - prefix[-1] - 1) == 0
+
+    def repeatedSubstringPattern2(self, str):
+        """
+        :type str: str
+        :rtype: bool
+        """
+        if not str:
+            return False
+
+        ss = (str + str)[1:-1]
+        print ss
+        return ss.find(str) != -1

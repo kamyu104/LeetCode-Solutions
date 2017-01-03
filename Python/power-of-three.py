@@ -6,7 +6,8 @@
 #
 # Follow up:
 # Could you do it without using any loop / recursion?
-#
+import math
+
 
 class Solution(object):
     def __init__(self):
