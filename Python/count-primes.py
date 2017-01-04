@@ -7,6 +7,7 @@
 #
 # Hint: The number n could be in the order of 100,000 to 5,000,000.
 
+
 class Solution:
     # @param {integer} n
     # @return {integer}
@@ -31,3 +32,17 @@ class Solution:
                 is_prime[j] = False
 
         return num
+
+    def countPrimes2(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        if n < 3:
+            return 0
+        primes = [True] * n
+        primes[0] = primes[1] = False
+        for i in range(2, int(n ** 0.5) + 1):
+            if primes[i]:
+                primes[i * i: n: i] = [False] * len(primes[i * i: n: i])
+        return sum(primes)

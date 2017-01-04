@@ -19,6 +19,8 @@
 #
 # Explanation:
 # One longest palindrome that can be built is "dccaccd", whose length is 7.
+import collections
+
 
 class Solution(object):
     def longestPalindrome(self, s):
@@ -30,3 +32,11 @@ class Solution(object):
         for k, v in collections.Counter(s).iteritems():
             odds += v & 1
         return len(s) - odds + int(odds > 0)
+
+    def longestPalindrome2(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        odd = sum(map(lambda x: x & 1, collections.Counter(s).values()))
+        return len(s) - odd + int(odd > 0)
