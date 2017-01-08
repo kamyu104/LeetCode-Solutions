@@ -56,18 +56,18 @@ class Solution3(object):
         :type nums: List[int]
         :rtype: int
         """
+        nums[-1] = 2 ** 31
         nums2, l = [i + j for i, j in enumerate(nums)], len(nums) - 1
-        if not l: return 0
 
         def find_max_index(index):
-            if index + nums[index] >= l: return l
-            tmp = nums2[index + 1:index + nums[index] + 1]
-            return index + tmp.index(max(tmp)) + 1
+            tmp = nums2[index:index + nums[index] + 1]
+            return index + tmp.index(max(tmp))
 
         index, steps = 0, 0
         while True:
             index = find_max_index(index)
-            steps += 1
+            if index:
+                steps += 1
             if index == l:
                 break
         return steps
