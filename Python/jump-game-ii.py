@@ -30,7 +30,6 @@ class Solution:
             reachable = max(reachable, i + length)
         return jump_count
 
-# not pass on leetcode because of time limit
 # Time:  O(n^2)
 # Space: O(1)     
 class Solution2:
