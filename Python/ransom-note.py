@@ -41,7 +41,7 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(1)
-from collections import Counter
+import collections
 
 class Solution2(object):
     def canConstruct(self, ransomNote, magazine):
@@ -50,4 +50,4 @@ class Solution2(object):
         :type magazine: str
         :rtype: bool
         """
-        return not Counter(ransomNote) - Counter(magazine)
+        return not collections.Counter(ransomNote) - collections.Counter(magazine)

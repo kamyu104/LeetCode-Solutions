@@ -26,5 +26,16 @@ class Solution:
         
         return num_i
 
+    def rob2(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        last, now = 0, 0
+        for i in nums:
+            last, now = now, max(last + i, now)
+        return now
+
+
 if __name__ == '__main__':
         print Solution().rob([8,4,8,5,9,6,5,4,4,10])
