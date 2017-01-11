@@ -12,6 +12,7 @@
 # Because nums[0] + nums[1] = 2 + 7 = 9,
 # return [0, 1].
 
+
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -26,6 +27,20 @@ class Solution(object):
             lookup[num] = i
         return []
 
+    def twoSum2(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        k = 0
+        for i in nums:
+            j = target - i
+            k += 1
+            tmp_nums = nums[k:]
+            if j in tmp_nums:
+                return [k - 1, tmp_nums.index(j) + k]
+
 
 if __name__ == '__main__':
-    print "index1=%d, index2=%d" % Solution().twoSum((2, 7, 11, 15), 9)
+    print Solution().twoSum((2, 7, 11, 15), 9)

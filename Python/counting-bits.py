@@ -25,6 +25,7 @@
 # 3. Or does the odd/even status of the number help you in
 #    calculating the number of 1s?
 
+
 class Solution(object):
     def countBits(self, num):
         """
@@ -36,3 +37,19 @@ class Solution(object):
             # Number of 1's in i = (i & 1) + number of 1's in (i / 2).
             res.append((i & 1) + res[i >> 1])
         return res
+
+    def countBits2(self, num):
+        """
+        :type num: int
+        :rtype: List[int]
+        """
+        s = [0]
+        while len(s) <= num:
+            s.extend(map(lambda x: x + 1, s))
+        return s[:num + 1]
+
+
+if __name__ == '__main__':
+    s = Solution()
+    r = s.countBits2(5)
+    print r

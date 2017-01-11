@@ -36,3 +36,11 @@ class Solution(object):
 
         median = kthElement(nums, len(nums)/2 + 1)
         return sum(abs(num - median) for num in nums)
+
+    def minMoves22(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        median = sorted(nums)[len(nums) / 2]
+        return sum(abs(num - median) for num in nums)

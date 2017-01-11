@@ -17,6 +17,7 @@
 # Given [5, 4, 3, 2, 1],
 # return false.
 
+
 class Solution(object):
     def increasingTriplet(self, nums):
         """

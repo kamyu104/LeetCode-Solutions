@@ -18,7 +18,7 @@
 # 
 # Throw an exception? Good, but what if throwing an exception is not an option? 
 # You would then have to re-design the function (ie, add an extra parameter).
-#
+
 
 class Solution(object):
     def reverse(self, x):
@@ -35,7 +35,28 @@ class Solution(object):
             x /= 10
         return result if result <= 0x7fffffff else 0  # Handle overflow.
 
-    
+    def reverse2(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
+        if x < 0:
+            x = int(str(x)[::-1][-1] + str(x)[::-1][:-1])
+        else:
+            x = int(str(x)[::-1])
+        x = 0 if abs(x) > 0x7FFFFFFF else x
+        return x
+
+    def reverse3(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
+        s = cmp(x, 0)
+        r = int(`s * x`[::-1])
+        return s * r * (r < 2 ** 31)
+
+
 if __name__ == "__main__":
     print Solution().reverse(123)
     print Solution().reverse(-321)

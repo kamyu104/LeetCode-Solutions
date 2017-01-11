@@ -12,7 +12,8 @@
 #
 # Return:
 # ["AAAAACCCCC", "CCCCCAAAAA"].
-#
+import collections
+
 
 class Solution:
     # @param s, a string
@@ -28,6 +29,17 @@ class Solution:
                 res.append(s[i - 9: i + 1])
                 dict[rolling_hash] = False
         return res
+
+    def findRepeatedDnaSequences2(self, s):
+        """
+        :type s: str
+        :rtype: List[str]
+        """
+        l, r = [], []
+        if len(s) < 10: return []
+        for i in range(len(s) - 9):
+            l.extend([s[i:i + 10]])
+        return [k for k, v in collections.Counter(l).items() if v > 1]
 
 if __name__ == "__main__":
     print Solution().findRepeatedDnaSequences("AAAAAAAAAA")

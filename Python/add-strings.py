@@ -12,6 +12,7 @@
 # You must not use any built-in BigInteger library or
 # convert the inputs to integer directly.
 
+
 class Solution(object):
     def addStrings(self, num1, num2):
         """
@@ -34,3 +35,24 @@ class Solution(object):
         result.reverse()
 
         return "".join(result)
+
+    def addStrings2(self, num1, num2):
+        """
+        :type num1: str
+        :type num2: str
+        :rtype: str
+        """
+        length = max(len(num1), len(num2))
+        num1 = num1.zfill(length)[::-1]
+        num2 = num2.zfill(length)[::-1]
+        res, plus = '', 0
+        for index, num in enumerate(num1):
+            tmp = str(int(num) + int(num2[index]) + plus)
+            res += tmp[-1]
+            if int(tmp) > 9:
+                plus = 1
+            else:
+                plus = 0
+        if plus:
+            res += '1'
+        return res[::-1]

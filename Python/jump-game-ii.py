@@ -13,6 +13,7 @@
 # The minimum number of jumps to reach the last index is 2. (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
 #
 
+# not pass on leetcode because of time limit
 class Solution:
     # @param A, a list of integers
     # @return an integer
@@ -44,6 +45,31 @@ class Solution2:
             for i, length in enumerate(A[:reachable + 1]):
                 reachable = max(reachable, i + length)
         return -1
+
+# when you on an index of nums, move to next index which can move farthest in range of this index reachable
+# Time: O(log(n))
+# Space: O(1)
+class Solution3(object):
+    def jump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        nums[-1] = 2 ** 31
+        nums2, l = [i + j for i, j in enumerate(nums)], len(nums) - 1
+
+        def find_max_index(index):
+            tmp = nums2[index:index + nums[index] + 1]
+            return index + tmp.index(max(tmp))
+
+        index, steps = 0, 0
+        while True:
+            index = find_max_index(index)
+            if index:
+                steps += 1
+            if index == l:
+                break
+        return steps
     
 if __name__ == "__main__":
     print Solution().jump([2,3,1,1,4])

@@ -16,6 +16,7 @@
 # the last stone will always be removed by your friend.
 #
 
+
 class Solution(object):
     def canWinNim(self, n):
         """

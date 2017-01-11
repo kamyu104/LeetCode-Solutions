@@ -43,6 +43,17 @@ class Solution(object):
                 j += 1
             prefix[i] = j
         return prefix
+
+    def strStr2(self, haystack, needle):
+        """
+        :type haystack: str
+        :type needle: str
+        :rtype: int
+        """
+        try:
+            return haystack.index(needle)
+        except:
+            return -1
     
 # Time:  O(n * k)
 # Space: O(k)

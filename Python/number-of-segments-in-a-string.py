@@ -13,6 +13,7 @@
 # Input: "Hello, my name is John"
 # Output: 5
 
+
 class Solution(object):
     def countSegments(self, s):
         """
@@ -24,3 +25,10 @@ class Solution(object):
             if s[i] == ' ' and s[i-1] != ' ':
                 result += 1
         return result
+
+    def countSegments2(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        return len([i for i in s.strip().split(' ') if i])

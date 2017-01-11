@@ -32,6 +32,9 @@
 # Time:  O(m + n)
 # Space: O(min(m, n))
 # Hash solution.
+import collections
+
+
 class Solution(object):
     def intersect(self, nums1, nums2):
         """
@@ -53,6 +56,18 @@ class Solution(object):
                 lookup[i] -= 1
 
         return res
+
+    def intersect2(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: List[int]
+        """
+        c = collections.Counter(nums1) & collections.Counter(nums2)
+        intersect = []
+        for i in c:
+            intersect.extend([i] * c[i])
+        return intersect
 
 
 # If the given array is already sorted, and the memory is limited, and (m << n or m >> n).

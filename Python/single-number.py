@@ -9,9 +9,12 @@
 
 import operator
 
+
 class Solution:
-    # @param A, a list of integer
-    # @return an integer
+    """
+    :type nums: List[int]
+    :rtype: int
+    """
     def singleNumber(self, A):
         return reduce(operator.xor, A)
 
