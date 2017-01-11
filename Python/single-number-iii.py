@@ -14,7 +14,9 @@
 # above example, [5, 3] is also correct.
 # Your algorithm should run in linear runtime complexity.
 # Could you implement it using only constant space complexity?
-#
+import operator
+import collections
+
 
 class Solution:
     # @param {integer[]} nums
@@ -26,7 +28,8 @@ class Solution:
         for i in nums:
             result[bool(i & bit)] ^= i
         return result
-        
+
+
 class Solution2:
     # @param {integer[]} nums
     # @return {integer[]}
@@ -43,3 +46,12 @@ class Solution2:
                 x ^= i
 
         return [x, x ^ x_xor_y]
+
+
+class Solution3(object):
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        return [x[0] for x in sorted(collections.Counter(nums).items(), key=lambda i: i[1], reverse=False)[:2]]
