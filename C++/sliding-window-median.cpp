@@ -1,5 +1,5 @@
-// Time:  O(nlogw)
-// Space: O(w)
+// Time:  O(nlogk)
+// Space: O(k)
 
 class Solution {
 public:
