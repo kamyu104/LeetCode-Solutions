@@ -1,6 +1,8 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.
+# Time:  O(1)
+# Space: O(1)
+
+# Given a positive integer, output its complement number.
+# The complement strategy is to flip the bits of its binary representation.
 #
 # Note:
 # The given integer is guaranteed to fit within the range of a 32-bit signed integer.
