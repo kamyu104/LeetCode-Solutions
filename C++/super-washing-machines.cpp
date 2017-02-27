@@ -10,9 +10,9 @@ public:
         }
         
         int result = 0, target = sum / machines.size(), curr = 0;
-        for (auto i = 0; i < machines.size(); ++i) {
-            curr += machines[i] - target;
-            result = max(result, max(machines[i] - target, abs(curr)));
+        for (const auto& n : machines) {
+            curr += n - target;
+            result = max(result, max(n - target, abs(curr)));
         }
         return result;
     }
