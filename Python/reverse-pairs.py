@@ -1,5 +1,5 @@
 # Time:  O(nlogn)
-# Space: O(logn)
+# Space: O(n)
 
 # Given an array nums, we call (i, j) an important reverse pair if i < j and nums[i] > 2*nums[j].
 #
