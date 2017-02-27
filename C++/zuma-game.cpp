@@ -6,8 +6,8 @@ public:
     int findMinStep(string board, string hand) {
         unordered_map<string, unordered_map<string, int>> lookup;
         sort(hand.begin(), hand.end()); 
-        int res = findMinStepHelper(board, hand, &lookup);
-        return res > hand.size() ? -1 : res;
+        int result = findMinStepHelper(board, hand, &lookup);
+        return result > hand.size() ? -1 : result;
     }
 
 private:
@@ -23,7 +23,7 @@ private:
             return (*lookup)[board][hand];
         }
 
-        int res = MAX_STEP;
+        int result = MAX_STEP;
         for (int i = 0; i < hand.size(); ++i) {
             int j = 0;
             int n = board.size();
@@ -35,19 +35,18 @@ private:
                 if (k < n - 1 && board[k] == board[k + 1]) {
                     string next_board = shrink(board.substr(0, k) + board.substr(k + 2));
                     string next_hand = hand.substr(0, i) + hand.substr(i + 1);
-                    res = min(res, findMinStepHelper(next_board, next_hand, lookup) + 1);
+                    result = min(result, findMinStepHelper(next_board, next_hand, lookup) + 1);
                     ++k;
                 } else if (i > 0 && hand[i] == hand[i - 1]) {
                     string next_board = shrink(board.substr(0, k) + board.substr(k + 1));
                     string next_hand = hand.substr(0, i - 1) + hand.substr(i + 1);
-                    res = min(res, findMinStepHelper(next_board, next_hand, lookup) + 2);
+                    result = min(result, findMinStepHelper(next_board, next_hand, lookup) + 2);
                 }
                 j = k + 1;
             }
         }
 
-        (*lookup)[board][hand] = res;
-        return res;
+        return (*lookup)[board][hand] = result;
     }
     
     string shrink(const string& s) {  // Time: O(n), Space: O(n)
