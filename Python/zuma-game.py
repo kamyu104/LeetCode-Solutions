@@ -48,21 +48,21 @@ class Solution(object):
         :rtype: int
         """
         def shrink(s):  # Time: O(n), Space: O(n)
-                stack = []
-                start = 0
-                for i in xrange(len(s)+1):
-                    if i == len(s) or s[i] != s[start]:
-                        if stack and stack[-1][0] == s[start]:
-                            stack[-1][1] += i - start
-                            if stack[-1][1] >= 3:
-                                stack.pop()
-                        elif s and i - start < 3:
-                            stack += [s[start], i - start],
-                        start = i
-                result = []
-                for p in stack:
-                    result += [p[0]] * p[1]
-                return result
+            stack = []
+            start = 0
+            for i in xrange(len(s)+1):
+                if i == len(s) or s[i] != s[start]:
+                    if stack and stack[-1][0] == s[start]:
+                        stack[-1][1] += i - start
+                        if stack[-1][1] >= 3:
+                            stack.pop()
+                    elif s and i - start < 3:
+                        stack += [s[start], i - start],
+                    start = i
+            result = []
+            for p in stack:
+                result += [p[0]] * p[1]
+            return result
         
         def find(board, c, j):
             for i in xrange(j, len(board)):
