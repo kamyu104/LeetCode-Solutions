@@ -26,13 +26,12 @@ private:
         int result = MAX_STEP;
         for (int i = 0; i < hand.size(); ++i) {
             int j = 0;
-            int n = board.size();
-            while (j < n) {
+            while (j < board.size()) {
                 int k = board.find(hand[i], j);
                 if (k == string::npos) {
                     break;
                 }
-                if (k < n - 1 && board[k] == board[k + 1]) {
+                if (k < board.size() - 1 && board[k] == board[k + 1]) {
                     string next_board = shrink(board.substr(0, k) + board.substr(k + 2));
                     string next_hand = hand.substr(0, i) + hand.substr(i + 1);
                     result = min(result, findMinStepHelper(next_board, next_hand, lookup) + 1);
