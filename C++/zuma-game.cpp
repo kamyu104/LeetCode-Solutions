@@ -57,8 +57,8 @@ private:
                     if (stack.back().second >= 3) {
                         stack.pop_back();
                     }
-                } else if (i - start < 3) {
-                     stack.emplace_back(s[start], i - start);
+                } else if (!s.empty() && i - start < 3) {
+                    stack.emplace_back(s[start], i - start);
                 }
                 start = i;
             }
