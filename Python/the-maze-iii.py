@@ -32,7 +32,6 @@ class Solution(object):
             if node == hole: return path
             if node in visited: continue
             visited.add(node)
-            print node
             for neighbor, dir, neighbor_dist in neighbors(maze, node):
                 heapq.heappush(heap, (dist+neighbor_dist, path+dir, neighbor))
             
