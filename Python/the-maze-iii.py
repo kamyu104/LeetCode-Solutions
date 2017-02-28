@@ -29,8 +29,8 @@ class Solution(object):
         visited = set()
         while heap:
             dist, path, node = heapq.heappop(heap)
-            if node == hole: return path
             if node in visited: continue
+            if node == hole: return path
             visited.add(node)
             for neighbor, dir, neighbor_dist in neighbors(maze, node):
                 heapq.heappush(heap, (dist+neighbor_dist, path+dir, neighbor))
