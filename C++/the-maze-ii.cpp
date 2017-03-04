@@ -1,5 +1,5 @@
 // Time:  O(max(r, c) * wlogw)
-// Space: O(w^2)
+// Space: O(w)
 
 class Solution {
 public:
