@@ -5,7 +5,6 @@ class Solution {
 public:
     int shortestDistance(vector<vector<int>>& maze, vector<int>& start, vector<int>& destination) {
         static const vector<vector<int>> dirs = {{-1, 0}, {0, 1}, {0, -1}, {1, 0}};
-        int result = -1;
         priority_queue<node, vector<node>, greater<node>> heap;
         unordered_set<int> visited;
         heap.emplace(0, start);
@@ -20,7 +19,7 @@ public:
             }
             if (node[0] == destination[0] &&
                 node[1] == destination[1]) {
-                result = result != -1 ? min(result, dist) : dist;
+                return dist;
             }
 
             visited.emplace(hash(maze, node));
@@ -32,7 +31,7 @@ public:
             }
         }
 
-        return result;
+        return -1;
     }
 
 private:
