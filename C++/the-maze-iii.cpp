@@ -6,7 +6,7 @@ public:
     string findShortestWay(vector<vector<int>>& maze, vector<int>& ball, vector<int>& hole) {
         static const unordered_map<string, vector<int>> dirs = {{"u", {-1, 0}}, {"r", {0, 1}},
                                                                 {"l", {0, -1}}, {"d", {1, 0}}};
-        queue<node> heap;
+        priority_queue<node, vector<node>, greater<node>> heap;
         unordered_set<int> visited;
         heap.emplace(0, make_pair("", ball));
 
@@ -14,7 +14,7 @@ public:
             int dist = 0;
             string path;
             vector<int> node;
-            tie(dist, lvalue(tie(path, node))) = heap.front();
+            tie(dist, lvalue(tie(path, node))) = heap.top();
             heap.pop();
             if (visited.count(hash(maze, node))) {
                 continue;
