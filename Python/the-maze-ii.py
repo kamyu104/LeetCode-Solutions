@@ -22,16 +22,15 @@ class Solution(object):
                     dist += 1
                 yield dist, tuple(cur_node)
 
-        result = None
         heap = [(0, start)]
         visited = set()
         while heap:
             dist, node = heapq.heappop(heap)
             if node in visited: continue
             if node == destination:
-                result = min(result, dist) if result else dist
+                return dist
             visited.add(node)
             for neighbor_dist, neighbor in neighbors(maze, node):
                 heapq.heappush(heap, (dist+neighbor_dist, neighbor))
             
-        return result if result else -1
+        return -1
