@@ -4,7 +4,7 @@
 class Solution {
 public:
     int findRotateSteps(string ring, string key) {
-        unordered_map<char,vector<int>> lookup;
+        unordered_map<char, vector<int>> lookup;
         for (int i = 0; i < ring.size(); ++i) {
             lookup[ring[i]].emplace_back(i);
         }
