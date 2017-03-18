@@ -8,8 +8,7 @@ public:
         for (int i = 0; i < ring.size(); ++i) {
             lookup[ring[i]].emplace_back(i);
         }
-        int cnt = 0;
-        
+
         vector<vector<int>> dp(2, vector<int> (ring.size()));
         vector<int> tmp(1, 0);
         vector<int> *prev = &tmp;
