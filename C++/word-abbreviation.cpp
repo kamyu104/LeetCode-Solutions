@@ -37,15 +37,10 @@ public:
 
 private:
     bool isUnique(const string& prefix, const unordered_set<string>& words) {
-        int count = 0;
-        for (const auto& word : words) {
-            if (!word.compare(0, prefix.length(), prefix)) {
-                if (++count > 1) {
-                    return false;
-                }
-            }
-        }
-        return true;
+        return 1 == count_if(words.begin(), words.end(),
+                             [&prefix](const string& word) {
+                                 return !word.compare(0, prefix.length(), prefix);
+                             });
     }
 
     string toAbbr(const string& prefix, const string& word) {
