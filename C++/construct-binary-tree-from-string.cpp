@@ -23,17 +23,17 @@ private:
         if (s[*i] == '-') {
             ++(*i);
         }
-        while (isdigit(s[*i])) {
+        while (*i < s.length() && isdigit(s[*i])) {
             ++(*i);
         }
         
         auto node = new TreeNode(stoi(s.substr(start, *i - start)));
-        if (s[*i] == '(') {
+        if (*i < s.length() && s[*i] == '(') {
             ++(*i);
             node->left = str2treeHelper(s, i);
             ++(*i);
         }
-        if (s[*i] == '(') {
+        if (*i < s.length() && s[*i] == '(') {
             ++(*i);
             node->right = str2treeHelper(s, i);
             ++(*i);
