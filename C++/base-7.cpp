@@ -4,17 +4,16 @@
 class Solution {
 public:
     string convertToBase7(int num) {
-        if (num == 0) {
-            return "0";
+        if (num < 0) {
+            return string("-").append(convertToBase7(-num));
         }
         string result;
-        int n = abs(num);
-        while (n) {
-            result.append(to_string(n % 7));
-            n /= 7;
+        while (num) {
+            result.append(to_string(num % 7));
+            num /= 7;
         }
         reverse(result.begin(), result.end());
-        return num >= 0 ? result : "-" + result;
+        return result.empty() ? "0" : result;
     }
 };
 
