@@ -24,7 +24,7 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
-        if matrix == []:
+        if not matrix:
             return False
         
         m, n = len(matrix), len(matrix[0])
