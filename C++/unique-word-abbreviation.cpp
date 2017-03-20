@@ -21,6 +21,9 @@ private:
     unordered_map<string, unordered_set<string>> lookup_;
 
     string abbreviation(const string& word) {
+        if (word.length() <= 2) {
+            return word;
+        }
         return word.front() + to_string(word.length()) + word.back();
     }
 };
