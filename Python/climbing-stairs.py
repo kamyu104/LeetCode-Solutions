@@ -18,6 +18,8 @@ class Solution:
             prev, current = current, prev + current, 
         return current
 
+    # Time:  O(2^n)
+    # Space: O(n)
     def climbStairs1(self, n):
         if n == 1:
             return 1
