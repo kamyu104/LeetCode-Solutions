@@ -7,7 +7,7 @@ public:
         vector<int> rows = vector<int>(picture.size());
         vector<int> cols = vector<int>(picture[0].size());
 
-        unordered_map<string,int> lookup;
+        unordered_map<string, int> lookup;
         vector<string> srows;
         for (int i = 0; i < picture.size(); ++i) {
             string s;
