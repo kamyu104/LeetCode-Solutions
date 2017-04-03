@@ -19,7 +19,7 @@ public:
     }
 
 private:
-    void convertBSTHelper(TreeNode* root, int *cur_sum){
+    void convertBSTHelper(TreeNode* root, int *cur_sum) {
         if (!root) {
             return;
         }
