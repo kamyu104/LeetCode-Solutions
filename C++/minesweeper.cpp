@@ -94,8 +94,8 @@ public:
                         if (r < 0 || r >= board.size() || c < 0 || c < 0 || c >= board[r].size()) {
                             continue;
                         }
-                        vector<int> next_click = {r, c};
                         if (board[r][c] == 'E') {
+                            vector<int> next_click = {r, c};
                             updateBoard(board, next_click);
                         }
                     }
