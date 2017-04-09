@@ -16,7 +16,7 @@ class Solution(object):
         """
         def longestConsecutiveHelper(root):
             if not root:
-                return 0
+                return 0, 0
             left_len = longestConsecutiveHelper(root.left)
             right_len = longestConsecutiveHelper(root.right)
             cur_inc_len, cur_dec_len = 1, 1
