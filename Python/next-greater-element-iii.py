@@ -1,5 +1,5 @@
-# Time:  O(logn)
-# Space: O(logn)
+# Time:  O(logn) = O(1)
+# Space: O(logn) = O(1)
 
 # Given a positive 32-bit integer n, you need to find the smallest 32-bit integer
 # which has exactly the same digits existing in the integer n and is greater in value than n.
