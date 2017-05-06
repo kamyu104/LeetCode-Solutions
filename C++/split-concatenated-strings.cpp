@@ -4,7 +4,7 @@
 class Solution {
 public:
     string splitLoopedString(vector<string>& strs) {
-        string s = "";
+        string s;
         for (auto& str : strs) {
             auto rev{str};
             reverse(rev.begin(), rev.end());
