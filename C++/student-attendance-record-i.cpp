@@ -11,7 +11,7 @@ public:
                     return false;
                 }
             }
-            if (i + 3 <= s.length() && s[i] == 'L' && s[i + 1] == 'L' && s[i + 2] == 'L') {
+            if (i + 2 < s.length() && s[i] == 'L' && s[i + 1] == 'L' && s[i + 2] == 'L') {
                 return false;
             }
         }
