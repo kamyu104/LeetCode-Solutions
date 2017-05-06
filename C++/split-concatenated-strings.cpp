@@ -5,7 +5,7 @@ class Solution {
 public:
     string splitLoopedString(vector<string>& strs) {
         string s;
-        for (auto& str : strs) {
+        for (const auto& str : strs) {
             auto rev{str};
             reverse(rev.begin(), rev.end());
             s += max(str, rev);
