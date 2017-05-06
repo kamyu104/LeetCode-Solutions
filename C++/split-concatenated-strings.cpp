@@ -10,7 +10,7 @@ public:
             reverse(rev.begin(), rev.end());
             s += max(str, rev);
         }
-        string result = "a";
+        string result{a};
         for (auto i = 0, st = 0; i < strs.size(); st += strs[i++].size()) {
             auto rev{strs[i]}, body{s.substr(st + strs[i].length())};
             body += s.substr(0, st);
