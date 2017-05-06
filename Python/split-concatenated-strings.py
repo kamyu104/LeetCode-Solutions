@@ -38,13 +38,10 @@ class Solution(object):
 
         result, st = "a", 0
         for i in xrange(len(strs)):
-            body = s[st + len(strs[i]):] + s[0:st]
+            body = "".join([s[st + len(strs[i]):], s[0:st]])
             for p in strs[i], strs[i][::-1]:
                 for j in xrange(len(strs[i])):
                     if p[j] >= result[0]:
-                        tmp = [p[j:]]
-                        tmp += body
-                        tmp += p[:j]
-                        result = max(result, "".join(tmp))
+                        result = max(result, "".join([p[j:], body, p[:j]]))
             st += len(strs[i])
         return result
