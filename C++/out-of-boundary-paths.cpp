@@ -10,7 +10,7 @@ public:
         for (int moves = 0; moves < N; ++moves) {
             for (int i = 0; i < m; ++i) {
                 for (int j = 0; j < n; ++j) {
-                    dp[(moves + 1) % 2][i][j] = (((i == 0 ? 1 : dp[moves % 2][i - 1][j] ) +
+                    dp[(moves + 1) % 2][i][j] = (((i == 0 ? 1 : dp[moves % 2][i - 1][j]) +
                                                  (i == m - 1 ? 1 : dp[moves % 2][i + 1][j])) % M +
                                                 ((j == 0 ? 1 : dp[moves % 2][i][j - 1]) +
                                                  (j == n - 1 ? 1 : dp[moves % 2][i][j + 1])) % M) % M;
