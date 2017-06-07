@@ -3,9 +3,10 @@
 
 class Solution {
 public:
-    int findPaths(int m, int n, int N, int i, int j) {
+    int findPaths(int m, int n, int N, int x, int y) {
         const auto M = 1000000000 + 7;
         vector<vector<vector<int>>> dp(2, vector<vector<int>>(m, vector<int>(n)));
+        int result = 0;
         for (int moves = 0; moves < N; ++moves) {
             for (int i = 0; i < m; ++i) {
                 for (int j = 0; j < n; ++j) {
@@ -16,6 +17,6 @@ public:
                 }
             }
         }
-        return dp[N % 2][i][j];
+        return dp[N % 2][x][y];
     }
 };
