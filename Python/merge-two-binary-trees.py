@@ -26,7 +26,7 @@
 # 	   4   5
 # 	  / \   \ 
 # 	 5   4   7
-	 
+#	 
 # Note: The merging process must start from the root nodes of both trees.
 
 # Definition for a binary tree node.
