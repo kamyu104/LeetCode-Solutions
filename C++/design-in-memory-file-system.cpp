@@ -6,8 +6,8 @@
 
 class FileSystem {
 public:
-    FileSystem() : root_(new TrieNode()){
-        mkdir("/");
+    FileSystem() : root_(new TrieNode()) {
+        
     }
     
     vector<string> ls(string path) {
@@ -75,7 +75,9 @@ private:
         stringstream ss(s);
         string token;
         while (getline(ss, token, delim)) {
-            tokens.emplace_back(token);
+            if (!token.empty()) {
+                tokens.emplace_back(token);
+            }
         }
         return tokens;
     }
