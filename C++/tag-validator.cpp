@@ -43,13 +43,11 @@ private:
     }
 
     void parseContent(const string& s, int *i) {
-        auto j = *i;
-        while (j < s.size()) {
-            if (!validText(s, &j) && !validCData(s, &j) && !validTag(s, &j)) {
+        while (*i < s.size()) {
+            if (!validText(s, i) && !validCData(s, i) && !validTag(s, i)) {
                 break;
             }
         }
-        *i = j;
     }
 
     bool validText(const string& s, int *i) {
