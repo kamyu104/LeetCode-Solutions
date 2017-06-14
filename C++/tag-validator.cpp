@@ -15,9 +15,7 @@ private:
         if (tag.empty()) {
             return false;
         }
-        if (!validContent(s, &j)) {
-            return false;
-        }
+        parseContent(s, &j);
         auto k = j + tag.size() + 2; 
         if (k >= s.size() || s.substr(j, k + 1 - j) != "</" + tag + ">") {
             return false;
@@ -44,7 +42,7 @@ private:
         return tag;
     }
 
-    bool validContent(const string& s, int *i) {
+    void parseContent(const string& s, int *i) {
         auto j = *i;
         while (j < s.size()) {
             if (!validText(s, &j) && !validCData(s, &j) && !validTag(s, &j)) {
@@ -52,7 +50,6 @@ private:
             }
         }
         *i = j;
-        return true;
     }
 
     bool validText(const string& s, int *i) {
