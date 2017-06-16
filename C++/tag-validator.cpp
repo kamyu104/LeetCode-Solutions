@@ -5,7 +5,7 @@ class Solution {
 public:
     bool isValid(string code) {
         auto i = 0;
-        return validTag(code, &i) && i == code.size();
+        return validTag(code, &i) && i == code.length();
     }
 
 private:
