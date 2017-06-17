@@ -42,7 +42,6 @@ class Solution(object):
             return a
 
         ints = map(int, re.findall('[+-]?\d+', expression))
-        print ints
         A, B = 0, 1
         for i in xrange(0, len(ints), 2):
             a, b = ints[i], ints[i+1]
