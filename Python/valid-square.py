@@ -31,4 +31,4 @@ class Solution(object):
         counter = collections.Counter([dist(p1, p2), dist(p1, p3),\
                                        dist(p1, p4), dist(p2, p3),\
                                        dist(p2, p4), dist(p3, p4)])
-        return 0 not in counter and len(counter) == 2
+        return counter[0] == 0 and len(counter) == 2
