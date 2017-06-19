@@ -6,7 +6,7 @@ public:
     int findLHS(vector<int>& nums) {
         unordered_map<int, int> lookup;
         auto result = 0;
-        for (const auto& num: nums) {
+        for (const auto& num : nums) {
             ++lookup[num];
             for (const auto& diff : {-1, 1}) {
                 if (lookup.count(num + diff)) {
