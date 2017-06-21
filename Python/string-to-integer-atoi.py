@@ -40,7 +40,7 @@ class Solution(object):
             return result
         
         i = 0
-        while i < len(str) and str[i] == " ":
+        while i < len(str) and str[i].isspace():
             i += 1
         
         sign = 1
