@@ -10,12 +10,12 @@ public:
         for (int i = 2; i < dp.size(); ++i) {
             dp[i] = dp[i - 1] + dp[i - 2];
         }
-        int i = 30, sum = 0, prev_bit = 0;
+        int result = 0, prev_bit = 0;
         for (int i = 30; i >= 0; --i) {
             if ((num & (1 << i)) != 0) {
-                sum += dp[i];
+                result += dp[i];
                 if (prev_bit == 1) {
-                    --sum;
+                    --result;
                     break;
                 }
                 prev_bit = 1;
@@ -23,6 +23,6 @@ public:
                 prev_bit = 0;
             }
         }
-        return sum + 1;
+        return result + 1;
     }
 };
