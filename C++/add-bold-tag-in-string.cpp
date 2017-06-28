@@ -12,18 +12,17 @@ public:
             }
         }
         string result;
+        bool prev = false;
         for (int i = 0; i < s.length(); ++i) {
-            if ((i == 0 || !bold[i - 1]) && bold[i]) {
-                result += "<b>";
-            } else if (i != 0 && bold[i - 1] && !bold[i]) {
-                result += "</b>";
+            if (prev != bold[i]) {
+                result += prev ? "</b>" : "<b>";
+                prev = bold[i];
             }
             result.push_back(s[i]);
         }
-        if (bold.back()) {
+        if (prev) {
             result += "</b>";
         }
         return result;
     }
 };
-
