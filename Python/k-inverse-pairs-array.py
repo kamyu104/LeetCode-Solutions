@@ -37,6 +37,6 @@ class Solution(object):
             dp[i%2][0] = 1
             for j in xrange(1, k+1):
                 dp[i%2][j] = (dp[i%2][j-1] + dp[(i-1)%2][j]) % M
-                if j - i >= 0:
+                if j-i >= 0:
                     dp[i%2][j] = (dp[i%2][j] - dp[(i-1)%2][j-i]) % M
         return dp[n % 2][k]
