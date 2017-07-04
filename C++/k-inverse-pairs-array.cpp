@@ -7,7 +7,7 @@ public:
         static const int M = 1000000007;
         vector<vector<int>> dp(2, vector<int>(k + 1));
         dp[0][0] = 1;
-        for(int i = 1; i <= n; ++i){
+        for (int i = 1; i <= n; ++i) {
             dp[i % 2] = vector<int>(k + 1);
             dp[i % 2][0] = 1;
             for (int j = 1; j <= k; ++j) {
