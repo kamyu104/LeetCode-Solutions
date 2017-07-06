@@ -24,7 +24,7 @@ public:
     int sum(int r, char c, vector<string> strs) {
         auto col = c - 'A';
         reset_dependency(r, col);
-        auto result = update_dependency(r, col, strs);
+        auto result = calc_and_update_dependency(r, col, strs);
         update_others(r, col, result);
         return result;
     }
@@ -42,7 +42,7 @@ private:
     }
 
     // Time:  O(r * c * l), l is the length of strs
-    int update_dependency(int r, int col, const vector<string>& strs) {
+    int calc_and_update_dependency(int r, int col, const vector<string>& strs) {
         auto result = 0;
         for (const auto& s : strs) {
             int p = s.find(':'), left, right, top, bottom;
@@ -93,4 +93,4 @@ private:
  * int param_2 = obj.get(r,c);
  * int param_3 = obj.sum(r,c,strs);
  */
-
+ 
