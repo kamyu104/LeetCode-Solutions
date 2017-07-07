@@ -65,7 +65,7 @@ private:
     void update_others(int r, int col, int v) {
         auto prev = Exl_[r][col];
         Exl_[r][col] = v;
-        queue<pair<int, int>> q, update;
+        queue<pair<int, int>> q;
         q.emplace(make_pair(r * 26 + col, v - prev));
         while (!q.empty()) {
             int key, diff;
