@@ -37,7 +37,7 @@ private:
             for (const auto& k : bward_[key]) {
                 fward_[k].erase(key);
             }
-            bward_[key].clear();
+            bward_.erase(key);
         }
     }
 
@@ -93,4 +93,3 @@ private:
  * int param_2 = obj.get(r,c);
  * int param_3 = obj.sum(r,c,strs);
  */
- 
