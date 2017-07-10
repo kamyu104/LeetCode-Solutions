@@ -12,7 +12,7 @@ public:
         
         int left = numeric_limits<int>::max(), right = numeric_limits<int>::min();
         priority_queue<pair<VIT, VIT>, vector<pair<VIT, VIT>>, decltype(comp)> min_heap(comp);
-        for (auto &row : nums) {
+        for (const auto &row : nums) {
             left = min(left, row[0]);
             right = max(right, row[0]);
             min_heap.emplace(row.begin(), row.end());
