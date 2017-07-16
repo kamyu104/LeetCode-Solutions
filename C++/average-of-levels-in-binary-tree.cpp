@@ -17,7 +17,7 @@ public:
         queue<TreeNode *> q;
         q.emplace(root);
         while (!q.empty()) {
-            int64_t sum = 0, count = 0;
+            long long sum = 0, count = 0;
             queue<TreeNode *> next;
             while (!q.empty()) {
                 auto n = q.front();
