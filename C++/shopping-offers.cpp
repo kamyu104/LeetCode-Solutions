@@ -15,13 +15,13 @@ private:
 
         int result = shoppingOffersHelper(price, special, needs, i + 1);
 
-        for (int j = 0; j < special[i].size() - 1; ++j) {
+        for (int j = 0; j < needs.size(); ++j) {
             needs[j] -= special[i][j];
         }
         if (all_of(needs.begin(), needs.end(), [](int i) { return i >= 0; })) {
             result = min(result, special[i].back() + shoppingOffersHelper(price, special, needs, i));
         }
-        for (int j = 0; j < special[i].size() - 1; ++j) {
+        for (int j = 0; j < needs.size(); ++j) {
             needs[j] += special[i][j];
         }
 
