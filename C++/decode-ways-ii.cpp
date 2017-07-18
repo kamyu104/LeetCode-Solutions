@@ -8,7 +8,7 @@ public:
         static const int W = 3;
         vector<long long> dp(W);
         dp[0] = 1;
-        dp[1] = s[0] == '*' ? 9 : (s[0] != '0' ? 1 : 0);
+        dp[1] = s[0] == '*' ? 9 : (s[0] != '0' ? dp[0] : 0);
         for (int i = 1; i < s.length(); ++i) {
             if (s[i] == '*') {
                 dp[(i + 1) % W] = 9 * dp[i % W];
