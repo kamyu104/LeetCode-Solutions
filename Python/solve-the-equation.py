@@ -32,8 +32,7 @@ class Solution(object):
         :type equation: str
         :rtype: str
         """
-        a, b = 0, 0
-        side = 1
+        a, b, side = 0, 0, 1
         for eq, sign, num, isx in re.findall('(=)|([-+]?)(\d*)(x?)', equation):
             if eq:
                 side = -1
