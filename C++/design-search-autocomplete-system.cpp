@@ -25,7 +25,8 @@ public:
 private:
     class TrieNode {
     public:
-        using P = pair<int, string>; 
+        using P = pair<int, string>;
+        static const int TOP_COUNT = 3;
         class Compare {
         public:
             bool operator()(const P& p1, const P& p2) {
@@ -69,7 +70,7 @@ private:
         void traverseHelper(string& s, TrieNode *t, priority_queue<P, vector<P>, Compare> *min_heap) {
             if (t->times_ > 0) {
                 min_heap->emplace(t->times_, s);
-                if (min_heap->size() == 4) {
+                if (min_heap->size() == TOP_COUNT + 1) {
                     min_heap->pop();
                 }
             }
