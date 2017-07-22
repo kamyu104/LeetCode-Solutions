@@ -33,6 +33,7 @@ class TrieNode(object):
 
 
 class AutocompleteSystem(object):
+
     def __init__(self, sentences, times):
         """
         :type sentences: List[str]
@@ -68,7 +69,6 @@ class AutocompleteSystem(object):
                 result = [p[1] for p in self.__cur_node.infos]
         return result
         
-
 
 # Your AutocompleteSystem object will be instantiated and called as such:
 # obj = AutocompleteSystem(sentences, times)
