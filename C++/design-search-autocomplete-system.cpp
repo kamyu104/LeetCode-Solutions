@@ -34,6 +34,17 @@ private:
             }
         };
 
+        TrieNode() : times_(0) {
+        }
+        
+        ~TrieNode() {
+            for (auto& kv : leaves_) {
+                if (kv.second) {
+                    delete kv.second;
+                }
+            }
+        }
+
         // Time:  O(s)
         void insert(const string& s, int times) {
             auto* p = this;
@@ -65,7 +76,8 @@ private:
             reverse(result.begin(), result.end());
             return result;
         }
-        
+
+        private:
         // Time:  O(n)
         void traverseHelper(string& s, TrieNode *t, priority_queue<P, vector<P>, Compare> *min_heap) {
             if (t->times_ > 0) {
@@ -89,17 +101,6 @@ private:
             }
         }
         
-        TrieNode() : times_(0) {
-        }
-        
-        ~TrieNode() {
-            for (auto& kv : leaves_) {
-                if (kv.second) {
-                    delete kv.second;
-                }
-            }
-        }
-    private:
         unordered_map<char, TrieNode *> leaves_;
         int times_;
     };
