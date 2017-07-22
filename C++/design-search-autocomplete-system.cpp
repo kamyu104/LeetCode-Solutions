@@ -1,5 +1,5 @@
-// Time:  O(s), s is the length of the prefix
-// Space: O(t), t is the size of trie
+// Time:  O(p^2), p is the length of the prefix
+// Space: O(p * t), t is the number of nodes of trie
 
 class AutocompleteSystem {
 public:
