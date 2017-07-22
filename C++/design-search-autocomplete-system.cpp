@@ -27,6 +27,7 @@ private:
     public:
         using P = pair<int, string>;
         static const int TOP_COUNT = 3;
+
         class Compare {
         public:
             bool operator()(const P& p1, const P& p2) {
@@ -77,7 +78,7 @@ private:
             return result;
         }
 
-        private:
+    private:
         // Time:  O(n)
         void traverseHelper(string& s, TrieNode *t, priority_queue<P, vector<P>, Compare> *min_heap) {
             if (t->times_ > 0) {
