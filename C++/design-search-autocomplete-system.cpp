@@ -1,3 +1,7 @@
+// Time:  O(s + n), s is the length of the prefix,
+//                  n is the number of the subtree nodes of trie given with the prefix
+// Space: O(t), t is the size of trie
+
 class AutocompleteSystem {
 public:
     AutocompleteSystem(vector<string> sentences, vector<int> times) {
@@ -7,14 +11,15 @@ public:
     }
     
     vector<string> input(char c) {
+        vector<string> result;
         if (c == '#') {
             trie_.insert(cur_sent_, 1);
             cur_sent_.clear();
-            return {};
         } else {
             cur_sent_.push_back(c);
+            result = trie_.lookup(cur_sent_);
         }
-        return trie_.lookup(cur_sent_);
+        return result;
     }
 
 private:
@@ -28,6 +33,7 @@ private:
             }
         };
 
+        // Time:  O(s)
         void insert(const string& s, int times) {
             auto* p = this;
             for (const auto& c : s) {
@@ -39,6 +45,7 @@ private:
             p->times_ += times;
         }
         
+        // Time:  O(s + n)
         vector<string> lookup(string& s) {
             auto* p = this;
             for (const auto& c : s) {
@@ -51,7 +58,6 @@ private:
             traverseHelper(s, p, &min_heap);
             vector<string> result;
             while (!min_heap.empty()) {
-                cout << min_heap.top().second << endl;
                 result.emplace_back(min_heap.top().second);
                 min_heap.pop();
             }
@@ -59,6 +65,7 @@ private:
             return result;
         }
         
+        // Time:  O(n)
         void traverseHelper(string& s, TrieNode *t, priority_queue<P, vector<P>, Compare> *min_heap) {
             if (t->times_ > 0) {
                 min_heap->emplace(t->times_, s);
