@@ -1,9 +1,8 @@
 # Time:  O(n)
 # Space: O(n)
 
-# Given an array consisting of n integers, find the contiguous subarray
-# whose length is greater than or equal to k that has the maximum average value.
-# And you need to output the maximum average value.
+
+# Given an array consisting of n integers, find the contiguous subarray whose length is greater than or equal to k that has the maximum average value. And you need to output the maximum average value.
 #
 # Example 1:
 # Input: [1,12,-5,-6,50,3], k = 4
@@ -15,7 +14,8 @@
 # Note:
 # 1 <= k <= n <= 10,000.
 # Elements of the given array will be in range [-10,000, 10,000].
-# The answer with the calculation error less than 1e-5 will be accepted.
+# The answer with the calculation error less than 10-5 will be accepted.
+
 class Solution(object):
     def findMaxAverage(self, nums, k):
         """
@@ -23,22 +23,21 @@ class Solution(object):
         :type k: int
         :rtype: float
         """
-        def getDelta(nums, k, avg, accu):
-            minval, minval_pos = 2**32, -1
-            delta = 0
+        def getDelta(avg, nums, k):
+            accu = [0.0] * (len(nums) + 1)
+            minval_pos = None
+            delta = 0.0
             for i in xrange(len(nums)):
                 accu[i+1] = nums[i] + accu[i] - avg
                 if i >= (k-1):
-                    if accu[i-k+1] < minval:
-                        minval = accu[i-k+1]
+                    if minval_pos == None or accu[i-k+1] < accu[minval_pos]:
                         minval_pos = i-k+1
-                    if accu[i+1] - minval >= 0:
-                        delta = max(delta, 1.0 * (accu[i+1] - minval) / (i+1 - minval_pos))
+                    if accu[i+1] - accu[minval_pos] >= 0:
+                        delta = max(delta, 1.0 * (accu[i+1] - accu[minval_pos]) / (i+1 - minval_pos))
             return delta
 
-        accu = [0.0] * (len(nums) + 1)
         left, delta = min(nums), float("inf")
         while delta > 1e-5:
-            delta = getDelta(nums, k, left, accu)
+            delta = getDelta(left, nums, k)
             left += delta
         return left
