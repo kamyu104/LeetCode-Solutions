@@ -7,14 +7,14 @@ public:
         double left = *min_element(nums.begin(), nums.end());
         double delta = numeric_limits<double>::max();
         while (delta > 1e-5) {
-            delta = getDelta(nums, k, left);
+            delta = getDelta(left, nums, k);
             left += delta;
         }
         return left;
     }
 
 private:
-    double getDelta(const vector<int>& nums, int k, double avg) {
+    double getDelta(double avg, const vector<int>& nums, int k) {
         vector<double> accu(nums.size() + 1);
         int minval_pos = -1;
         double delta = 0.0;
@@ -41,7 +41,7 @@ public:
     double findMaxAverage(vector<int>& nums, int k) {
         double left = *min_element(nums.begin(), nums.end());
         double right = *max_element(nums.begin(), nums.end());
-        while (right - left > 0.00001) {
+        while (right - left > 1e-5) {
             double mid = left + (right - left) / 2;
             if (isMidLargerOrEqualToTarget(mid, nums, k)) {
                 right = mid;
