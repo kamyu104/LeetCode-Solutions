@@ -16,7 +16,6 @@
 # 1 <= k <= n <= 10,000.
 # Elements of the given array will be in range [-10,000, 10,000].
 # The answer with the calculation error less than 1e-5 will be accepted.
-
 class Solution(object):
     def findMaxAverage(self, nums, k):
         """
@@ -24,7 +23,7 @@ class Solution(object):
         :type k: int
         :rtype: float
         """
-        def getDelta(avg, accu):
+        def getDelta(nums, k, avg, accu):
             minval, minval_pos = 2**32, -1
             delta = 0
             for i in xrange(len(nums)):
@@ -40,6 +39,6 @@ class Solution(object):
         accu = [0.0] * (len(nums) + 1)
         left, delta = min(nums), float("inf")
         while delta > 1e-5:
-            delta = getDelta(left, accu)
+            delta = getDelta(nums, k, left, accu)
             left += delta
         return left
