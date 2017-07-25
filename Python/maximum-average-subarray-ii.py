@@ -34,7 +34,7 @@ class Solution(object):
                     if minval_pos == None or accu[i-k+1] < accu[minval_pos]:
                         minval_pos = i-k+1
                     if accu[i+1] - accu[minval_pos] >= 0:
-                        delta = max(delta, 1.0 * (accu[i+1] - accu[minval_pos]) / (i+1 - minval_pos))
+                        delta = max(delta, (accu[i+1] - accu[minval_pos]) / (i+1 - minval_pos))
             return delta
 
         left, delta = min(nums), float("inf")
