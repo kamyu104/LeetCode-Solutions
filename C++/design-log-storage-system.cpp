@@ -1,4 +1,5 @@
-// Time:  O(logn)
+// Time:  put:      O(logn), n is the size of the total logs
+//        retrieve: O(logn + d), d is the size of the found logs
 // Space: O(n)
 
 class LogSystem {
@@ -12,12 +13,10 @@ public:
         granularity_["Second"] = 19;
     }
     
-    // Time:  O(logn), n is the size of the total logs
     void put(int id, string timestamp) {
         lookup_.emplace(timestamp, id);
     }
     
-    // Time:  O(logn + d), d is the size of the found logs
     vector<int> retrieve(string s, string e, string gra) {
         s = s.substr(0, granularity_[gra]) + s_filter_.substr(granularity_[gra]);
         e = e.substr(0, granularity_[gra]) + e_filter_.substr(granularity_[gra]);
