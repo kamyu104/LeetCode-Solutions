@@ -7,8 +7,8 @@ class LogSystem(object):
 
     def __init__(self):
         self.__logs = []
-        self.__granularity = {'Year': 5, 'Month': 8, 'Day': 11, \
-                              'Hour': 14, 'Minute': 17, 'Second': 20}
+        self.__granularity = {'Year': 4, 'Month': 7, 'Day': 10, \
+                              'Hour': 13, 'Minute': 16, 'Second': 19}
         
 
     def put(self, id, timestamp):
