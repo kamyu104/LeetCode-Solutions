@@ -23,6 +23,24 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
+        x_xor_y = reduce(operator.xor, nums) ^ reduce(operator.xor, xrange(1, len(nums)+1))
+        bit =  x_xor_y & ~(x_xor_y - 1)
+        result = [0, 0]
+        for i, num in enumerate(nums):
+            result[bool(num & bit)] ^= num
+            result[bool((i+1) & bit)] ^= i+1
+        if result[1] in nums: result[0], result[1] = result[1], result[0]
+        return result
+
+
+# Time:  O(n)
+# Space: O(1)  
+class Solution2(object):
+    def findErrorNums(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
         result = [0] * 2
         for i in nums:
             if nums[abs(i)-1] < 0:
@@ -36,9 +54,10 @@ class Solution(object):
                 nums[i] *= -1
         return result
 
+
 # Time:  O(n)
 # Space: O(1)  
-class Solution2(object):
+class Solution3(object):
     def findErrorNums(self, nums):
         """
         :type nums: List[int]
