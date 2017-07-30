@@ -27,7 +27,7 @@ class Solution(object):
         for i in xrange(len(nums)):
             x_xor_y ^= nums[i] ^ (i+1)
         bit =  x_xor_y & ~(x_xor_y - 1)
-        result = [0, 0]
+        result = [0] * 2
         for i, num in enumerate(nums):
             result[bool(num & bit)] ^= num
             result[bool((i+1) & bit)] ^= i+1
