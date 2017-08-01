@@ -1,5 +1,5 @@
-# Time:  O(n^2)
-# Space: O(h)
+# Time:  O(n)
+# Space: O(n)
 
 # You are given a binary tree in which each node contains an integer value.
 #
@@ -35,7 +35,42 @@
 #         self.left = None
 #         self.right = None
 
+# Time:  O(n)
+# Space: O(n)
+
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
 class Solution(object):
+    def pathSum(self, root, sum):
+        """
+        :type root: TreeNode
+        :type sum: int
+        :rtype: int
+        """
+        def helper(root, cur, sum, lookup):
+            if root is None:
+                return 0
+            cur += root.val
+            result = lookup[cur - sum]
+            lookup[cur] += 1
+            result += helper(root.left, cur, sum, lookup) + \
+                      helper(root.right, cur, sum, lookup)
+            lookup[cur] -= 1
+            return result
+        
+        lookup = collections.defaultdict(int)
+        lookup[0] = 1
+        return helper(root, 0, sum, lookup)
+
+
+# Time:  O(n^2)
+# Space: O(h)
+class Solution2(object):
     def pathSum(self, root, sum):
         """
         :type root: TreeNode
