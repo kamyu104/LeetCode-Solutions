@@ -10,14 +10,14 @@ public:
             trie.Insert(s);
         }
         auto curr = &trie;
-        for (int i = 0; i < sentence.length(); ++i) {
-            if (sentence[i] == ' ' || !curr || !curr->isString) {
-                result += sentence[i];
+        for (const auto& c : sentence) {
+            if (c == ' ' || !curr || !curr->isString) {
+                result += c;
             }
-            if (sentence[i] == ' ') {
+            if (c == ' ') {
                 curr = &trie;
             } else if (curr && !curr->isString) {
-                curr = curr->leaves[sentence[i]];
+                curr = curr->leaves[c];
             }
         }
         return result;
