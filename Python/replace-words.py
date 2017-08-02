@@ -22,9 +22,13 @@
 # 1 <= root length <= 100
 # 1 <= sentence words length <= 1000
 
-
 class Solution(object):
     def replaceWords(self, dict, sentence):
+        """
+        :type dict: List[str]
+        :type sentence: str
+        :rtype: str
+        """
         _trie = lambda: collections.defaultdict(_trie)
         trie = _trie()
         for s in dict:
