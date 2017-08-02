@@ -22,36 +22,24 @@
 # 1 <= root length <= 100
 # 1 <= sentence words length <= 1000
 
-class TrieNode(object):
-    def __init__(self):
-        self.is_string = False
-        self.leaves = collections.defaultdict(TrieNode)
-
-    def insert(self, word):
-        cur = self
-        for c in word:
-            cur = cur.leaves[c]
-        cur.is_string = True
-
 
 class Solution(object):
     def replaceWords(self, dict, sentence):
-        """
-        :type dict: List[str]
-        :type sentence: str
-        :rtype: str
-        """
-        trie = TrieNode()
+        _trie = lambda: collections.defaultdict(_trie)
+        trie = _trie()
         for s in dict:
-            trie.insert(s)
+            cur = trie
+            for c in s:
+                cur = cur[c]
+            cur.setdefault("_end")
 
         def replace(word):
             cur = trie
             for i, c in enumerate(word):
-                if c not in cur.leaves:
+                if c not in cur:
                     break
-                cur = cur.leaves[c]
-                if cur.is_string:
+                cur = cur[c]
+                if "_end" in cur:
                     return word[:i+1]
             return word
 
