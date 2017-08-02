@@ -70,7 +70,7 @@ class Solution2(object):
         :rtype: int
         """
         def pathSumHelper(root, prev, sum):
-            if not root:
+            if root is None:
                 return 0
 
             curr = prev + root.val;
@@ -78,7 +78,7 @@ class Solution2(object):
                    pathSumHelper(root.left, curr, sum) + \
                    pathSumHelper(root.right, curr, sum)
 
-        if not root:
+        if root is None:
             return 0
 
         return pathSumHelper(root, 0, sum) + \
