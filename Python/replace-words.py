@@ -32,18 +32,18 @@ class Solution(object):
         _trie = lambda: collections.defaultdict(_trie)
         trie = _trie()
         for s in dict:
-            cur = trie
+            curr = trie
             for c in s:
-                cur = cur[c]
-            cur.setdefault("_end")
+                curr = curr[c]
+            curr.setdefault("_end")
 
         def replace(word):
-            cur = trie
+            curr = trie
             for i, c in enumerate(word):
-                if c not in cur:
+                if c not in curr:
                     break
-                cur = cur[c]
-                if "_end" in cur:
+                curr = curr[c]
+                if "_end" in curr:
                     return word[:i+1]
             return word
 
