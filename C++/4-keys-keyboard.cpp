@@ -7,7 +7,7 @@ public:
         if (N < 7) {
             return N;
         }
-        if (N == 10) {
+        if (N == 10) {  // the following rule doesn't hold in N = 10
             return 20;
         }
         auto n = N / 5 + 1;  // n3 + n4 increases one every 5 keys
