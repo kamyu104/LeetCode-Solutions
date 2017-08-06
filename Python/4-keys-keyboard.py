@@ -27,8 +27,7 @@ class Solution2(object):
         :type N: int
         :rtype: int
         """
-        if N < 7:
-            return N
+        if N < 7: return N
         dp = [i for i in xrange(N+1)]
         for i in xrange(7, N+1):
             dp[i % 6] = max(dp[(i-4) % 6]*3, dp[(i-5) % 6]*4)
