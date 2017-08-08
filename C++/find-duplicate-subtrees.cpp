@@ -1,4 +1,4 @@
-// Time:  O(n)
+// Time:  O(n * h)
 // Space: O(n * h)
 
 /**
