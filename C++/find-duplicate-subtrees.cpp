@@ -13,28 +13,26 @@
 class Solution {
 public:
     vector<TreeNode*> findDuplicateSubtrees(TreeNode* root) {
-        unordered_map<string, vector<TreeNode*>> lookup;
+        unordered_map<string, int> lookup;
         vector<TreeNode*> result;
-        serializeHelper(root, &lookup);
-        for (auto it = lookup.begin(); it != lookup.end(); ++it) {
-            if (it->second.size() > 1) {
-                result.emplace_back(it->second[0]);
-            }
-        }
+        postOrderTraversal(root, &lookup, &result);
         return result;
     }
 
 private:
-    string serializeHelper(TreeNode* node, unordered_map<string, vector<TreeNode*>>* lookup) {
+    string postOrderTraversal(TreeNode* node, unordered_map<string, int>* lookup, vector<TreeNode*> *result) {
         if (!node) {
             return "";
         }
         string s = "(";
-        s += serializeHelper(node->left, lookup);
+        s += postOrderTraversal(node->left, lookup, result);
         s += to_string(node->val);
-        s += serializeHelper(node->right, lookup);
+        s += postOrderTraversal(node->right, lookup, result);
         s += ")";
-        (*lookup)[s].emplace_back(node);
+        if ((*lookup)[s] == 1) {
+            result->emplace_back(node);
+        }
+        ++(*lookup)[s];
         return s;
     }
 };
