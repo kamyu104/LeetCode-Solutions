@@ -15,7 +15,7 @@ public:
     vector<TreeNode*> findDuplicateSubtrees(TreeNode* root) {
         unordered_map<string, vector<TreeNode*>> lookup;
         vector<TreeNode*> result;
-        serialize(root, &lookup);
+        serializeHelper(root, &lookup);
         for (auto it = lookup.begin(); it != lookup.end(); ++it) {
             if (it->second.size() > 1) {
                 result.emplace_back(it->second[0]);
