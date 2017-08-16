@@ -44,7 +44,7 @@ class Solution(object):
             if cur != pre + 1:
                 if cnt1 != 0 or cnt2 != 0:
                     return False
-                cnt1, cnt2, cnt3 =  cnt, 0, 0
+                cnt1, cnt2, cnt3 = cnt, 0, 0
             else:
                 if cnt < cnt1 + cnt2:
                     return False
