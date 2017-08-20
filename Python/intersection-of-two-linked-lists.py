@@ -35,6 +35,8 @@ class Solution:
         curA, curB = headA, headB
         begin, tailA, tailB = None, None, None
         
+        # a->c->b->c
+        # b->c->a->c
         while curA and curB:
             if curA == curB:
                 begin = curA
