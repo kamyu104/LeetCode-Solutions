@@ -18,7 +18,7 @@ private:
         const auto& m = M.size(), n = M[0].size();
         static const vector<pair<int, int>> directions = { {-1, -1}, {0, -1}, {1, -1},
                                                            {-1,  0},          {1,  0},
-                                                           {-1,  1} ,{0,  1}, {1,  1} };
+                                                           {-1,  1}, {0,  1}, {1,  1} };
         double total = M[i][j];
         int count = 1;
         for (const auto& direction : directions) {
