@@ -25,7 +25,7 @@ private:
         for (const auto& direction : directions) {
             const auto& ii = i + direction.first;
             const auto& jj = j + direction.second;
-            if (0 <= ii && ii < m && 0 <= jj & jj < n) {
+            if (0 <= ii && ii < m && 0 <= jj && jj < n) {
                 total += M[ii][jj];
                 ++count;
             }
