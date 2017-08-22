@@ -56,7 +56,7 @@
 # Explanation:The maximum width existing in the fourth level with the length 8 (6,null,null,null,null,null,null,7).
 #
 # Note: Answer will in the range of 32-bit signed integer.
- #                                                                      
+#                                                                      
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
