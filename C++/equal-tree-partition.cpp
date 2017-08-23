@@ -22,13 +22,13 @@ public:
     }
 
 private:
-    int getSumHelper(TreeNode* root,  unordered_map<int, int> *lookup) {
-        if (!root) {
+    int getSumHelper(TreeNode* node,  unordered_map<int, int> *lookup) {
+        if (!node) {
             return 0;
         }
-        int total = root->val + 
-                    getSumHelper(root->left, lookup) +
-                    getSumHelper(root->right, lookup);
+        int total = node->val + 
+                    getSumHelper(node->left, lookup) +
+                    getSumHelper(node->right, lookup);
         ++(*lookup)[total];
         return total;
     }
