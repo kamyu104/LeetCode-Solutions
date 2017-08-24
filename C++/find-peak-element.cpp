@@ -8,10 +8,7 @@ public:
         
         while (left < right) {
             const auto mid = left + (right - left) / 2;
-            if ((mid == 0 || nums[mid - 1] < nums[mid]) &&
-               (mid + 1 == nums.size() || nums[mid] > nums[mid + 1])) {
-                return mid;
-            } else if (!(mid == 0 || nums[mid - 1] < nums[mid])) {
+            if (nums[mid] > nums[mid + 1]) {
                 right = mid;
             } else {
                 left = mid + 1;
