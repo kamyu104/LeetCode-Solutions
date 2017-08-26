@@ -54,9 +54,9 @@ private:
     int capa_;
     int size_;
     int min_freq_;
-    unordered_map<int, list<int>> freq_to_keys_;         // freq to key list;
-    unordered_map<int, list<int>::iterator> key_to_it_;  // key to list iterator;
-    unordered_map<int, pair<int, int>> key_to_val_freq_; // key to {value,freq};
+    unordered_map<int, list<int>> freq_to_keys_;         // freq to list of keys
+    unordered_map<int, list<int>::iterator> key_to_it_;  // key to list iterator
+    unordered_map<int, pair<int, int>> key_to_val_freq_; // key to {value, freq}
 };
 
 /**
