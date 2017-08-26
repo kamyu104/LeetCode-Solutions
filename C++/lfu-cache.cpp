@@ -1,65 +1,62 @@
 // Time:  O(1), per operation.
 // Space: O(k), k is the capacity of cache.
 
-#include <list>
-
-class LFUCache{
+class LFUCache {
 public:
-    // @param capacity, an integer
-    LFUCache(int capacity) : capa_(capacity) {
+    LFUCache(int capacity) : capa_(capacity), size_(0) {
     }
-
+    
     int get(int key) {
-        if (map_.find(key) != map_.end() && capa_) {
-            // It key exists, update it.
-            const auto value = map_[key]->value;
-            update(key, value);
-            return value;
-        } else {
+        if (!key_to_val_freq_.count(key)) {
             return -1;
         }
-    }
+        
+        freq_to_keys_[key_to_val_freq_[key].second].erase(key_to_it_[key]);
+        if (freq_to_keys_[key_to_val_freq_[key].second].empty()) {
+            freq_to_keys_.erase(key_to_val_freq_[key].second);
+            if (min_freq_ == key_to_val_freq_[key].second) {
+                ++min_freq_;
+            }
+        }
+        
+        ++key_to_val_freq_[key].second;
+        freq_to_keys_[key_to_val_freq_[key].second].emplace_back(key);
+        key_to_it_[key] = prev(freq_to_keys_[key_to_val_freq_[key].second].end());
 
-    void put(int key, int value) {
-        if (!capa_) {
+        return key_to_val_freq_[key].first;
+    }
+    
+   void put(int key, int value) {
+        if (capa_ <= 0) {
             return;
         }
-        // If cache is full while inserting, remove the last one.
-        if (map_.find(key) == map_.end() && list_.size() == capa_) {
-            auto del = list_.front(); list_.pop_front();
-            map_.erase(del.key);
+
+        if (get(key) != -1) {
+            key_to_val_freq_[key].first = value;
+            return;
         }
-        update(key, value);
+        
+        if (size_ == capa_) {
+            key_to_val_freq_.erase(freq_to_keys_[min_freq_].front());
+            key_to_it_.erase(freq_to_keys_[min_freq_].front());
+            freq_to_keys_[min_freq_].pop_front();
+            --size_;
+        }
+        
+        min_freq_ = 1;
+        key_to_val_freq_[key] = {value, min_freq_};
+        freq_to_keys_[min_freq_].emplace_back(key);
+        key_to_it_[key] = prev(freq_to_keys_[min_freq_].end());
+        ++size_;
     }
 
 private:
-    struct node {
-        node(int k, int v, int f) : key(k), value(v), freq(f) {}
-        int key;
-        int value;
-        int freq;
-    };
-    using List = list<node>;
-    List list_; // key, value
-    unordered_map<int, List::iterator> map_; // key, list iterator
     int capa_;
-
-    // Update (key, iterator of (key, value)) pair
-    void update(int key, int value) {
-        int freq = 0;
-        auto l_it = list_.begin();
-        auto it = map_.find(key);
-        if (it != map_.end()) {
-            freq = it->second->freq;
-            l_it = next(it->second);
-            list_.erase(it->second);
-        }
-        ++freq;
-        while (l_it != list_.end() && freq >= l_it->freq) {
-            ++l_it;
-        }
-        map_[key] = list_.emplace(l_it, node(key, value, freq));
-    }
+    int size_;
+    int min_freq_;
+    unordered_map<int, list<int>> freq_to_keys_;         // freq to key list;
+    unordered_map<int, list<int>::iterator> key_to_it_;  // key to list iterator;
+    unordered_map<int, pair<int, int>> key_to_val_freq_; // key to {value,freq};
 };
 
 /**
