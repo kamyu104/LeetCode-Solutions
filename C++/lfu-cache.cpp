@@ -20,7 +20,7 @@ public:
         }
     }
 
-    void set(int key, int value) 
+    void put(int key, int value) {
         if (!capa_) {
             return;
         }
@@ -66,5 +66,5 @@ private:
  * Your LFUCache object will be instantiated and called as such:
  * LFUCache obj = new LFUCache(capacity);
  * int param_1 = obj.get(key);
- * obj.set(key,value);
+ * obj.put(key,value);
  */
