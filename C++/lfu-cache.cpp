@@ -40,6 +40,9 @@ public:
             key_to_val_freq_.erase(freq_to_keys_[min_freq_].front());
             key_to_it_.erase(freq_to_keys_[min_freq_].front());
             freq_to_keys_[min_freq_].pop_front();
+            if (freq_to_keys_[min_freq_].empty()) {
+                freq_to_keys_.erase(min_freq_);
+            }
             --size_;
         }
         
