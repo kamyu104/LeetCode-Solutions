@@ -12,7 +12,7 @@ public:
         }
         
         auto new_node = *key_to_nodeit_[key];        
-        auto& freq = std::get<2>(new_node);
+        auto& freq = std::get<FREQ>(new_node);
         freq_to_nodes_[freq].erase(key_to_nodeit_[key]);
         if (freq_to_nodes_[freq].empty()) {
             freq_to_nodes_.erase(freq);
@@ -24,7 +24,7 @@ public:
         freq_to_nodes_[freq].emplace_back(new_node);
         key_to_nodeit_[key] = prev(freq_to_nodes_[freq].end());
 
-        return std::get<1>(*key_to_nodeit_[key]);
+        return std::get<VAL>(*key_to_nodeit_[key]);
     }
     
    void put(int key, int value) {
@@ -38,7 +38,7 @@ public:
         }
         
         if (size_ == capa_) {
-            key_to_nodeit_.erase(std::get<0>(freq_to_nodes_[min_freq_].front()));
+            key_to_nodeit_.erase(std::get<KEY>(freq_to_nodes_[min_freq_].front()));
             freq_to_nodes_[min_freq_].pop_front();
             if (freq_to_nodes_[min_freq_].empty()) {
                 freq_to_nodes_.erase(min_freq_);
@@ -53,6 +53,7 @@ public:
     }
 
 private:
+    enum Data {KEY, VAL, FREQ}; 
     int capa_;
     int size_;
     int min_freq_;
