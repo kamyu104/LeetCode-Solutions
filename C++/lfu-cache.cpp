@@ -1,5 +1,5 @@
-// Time:  O(1), per operation.
-// Space: O(k), k is the capacity of cache.
+// Time:  O(1), per operation
+// Space: O(k), k is the capacity of cache
 
 class LFUCache {
 public:
@@ -21,7 +21,7 @@ public:
             }
         }
         ++freq;
-        freq_to_nodes_[freq].emplace_back(new_node);
+        freq_to_nodes_[freq].emplace_back(move(new_node));
         key_to_nodeit_[key] = prev(freq_to_nodes_[freq].end());
 
         return std::get<VAL>(*key_to_nodeit_[key]);
@@ -47,7 +47,7 @@ public:
         }
         
         min_freq_ = 1;
-        freq_to_nodes_[min_freq_].emplace_back(make_tuple(key, value, min_freq_));
+        freq_to_nodes_[min_freq_].emplace_back(key, value, min_freq_);
         key_to_nodeit_[key] = prev(freq_to_nodes_[min_freq_].end());
         ++size_;
     }
