@@ -7,23 +7,24 @@ public:
     }
     
     int get(int key) {
-        if (!key_to_val_freq_.count(key)) {
+        if (!key_to_nodeit_.count(key)) {
             return -1;
         }
         
-        freq_to_keys_[key_to_val_freq_[key].second].erase(key_to_it_[key]);
-        if (freq_to_keys_[key_to_val_freq_[key].second].empty()) {
-            freq_to_keys_.erase(key_to_val_freq_[key].second);
-            if (min_freq_ == key_to_val_freq_[key].second) {
+        auto new_node = *key_to_nodeit_[key];        
+        auto& freq = std::get<2>(new_node);
+        freq_to_nodes_[freq].erase(key_to_nodeit_[key]);
+        if (freq_to_nodes_[freq].empty()) {
+            freq_to_nodes_.erase(freq);
+            if (min_freq_ == freq) {
                 ++min_freq_;
             }
         }
-        
-        ++key_to_val_freq_[key].second;
-        freq_to_keys_[key_to_val_freq_[key].second].emplace_back(key);
-        key_to_it_[key] = prev(freq_to_keys_[key_to_val_freq_[key].second].end());
+        ++freq;
+        freq_to_nodes_[freq].emplace_back(new_node);
+        key_to_nodeit_[key] = prev(freq_to_nodes_[freq].end());
 
-        return key_to_val_freq_[key].first;
+        return std::get<1>(*key_to_nodeit_[key]);
     }
     
    void put(int key, int value) {
@@ -32,24 +33,22 @@ public:
         }
 
         if (get(key) != -1) {
-            key_to_val_freq_[key].first = value;
+            std::get<1>(*key_to_nodeit_[key]) = value;
             return;
         }
         
         if (size_ == capa_) {
-            key_to_val_freq_.erase(freq_to_keys_[min_freq_].front());
-            key_to_it_.erase(freq_to_keys_[min_freq_].front());
-            freq_to_keys_[min_freq_].pop_front();
-            if (freq_to_keys_[min_freq_].empty()) {
-                freq_to_keys_.erase(min_freq_);
+            key_to_nodeit_.erase(std::get<0>(freq_to_nodes_[min_freq_].front()));
+            freq_to_nodes_[min_freq_].pop_front();
+            if (freq_to_nodes_[min_freq_].empty()) {
+                freq_to_nodes_.erase(min_freq_);
             }
             --size_;
         }
         
         min_freq_ = 1;
-        key_to_val_freq_[key] = {value, min_freq_};
-        freq_to_keys_[min_freq_].emplace_back(key);
-        key_to_it_[key] = prev(freq_to_keys_[min_freq_].end());
+        freq_to_nodes_[min_freq_].emplace_back(make_tuple(key, value, min_freq_));
+        key_to_nodeit_[key] = prev(freq_to_nodes_[min_freq_].end());
         ++size_;
     }
 
@@ -57,9 +56,8 @@ private:
     int capa_;
     int size_;
     int min_freq_;
-    unordered_map<int, list<int>> freq_to_keys_;         // freq to list of keys
-    unordered_map<int, list<int>::iterator> key_to_it_;  // key to list iterator
-    unordered_map<int, pair<int, int>> key_to_val_freq_; // key to {value, freq}
+    unordered_map<int, list<tuple<int, int, int>>> freq_to_nodes_;            // freq to list of {key, val, freq}
+    unordered_map<int, list<tuple<int, int, int>>::iterator> key_to_nodeit_;  // key to list iterator
 };
 
 /**
