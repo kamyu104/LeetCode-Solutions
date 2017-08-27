@@ -33,7 +33,7 @@ public:
         }
 
         if (get(key) != -1) {
-            std::get<1>(*key_to_nodeit_[key]) = value;
+            std::get<VAL>(*key_to_nodeit_[key]) = value;
             return;
         }
         
