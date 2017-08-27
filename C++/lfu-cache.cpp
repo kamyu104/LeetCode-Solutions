@@ -3,7 +3,7 @@
 
 class LFUCache {
 public:
-    LFUCache(int capacity) : capa_(capacity), size_(0) {
+    LFUCache(int capacity) : capa_(capacity), size_(0), min_freq_(0) {
     }
     
     int get(int key) {
