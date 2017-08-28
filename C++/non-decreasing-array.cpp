@@ -12,8 +12,8 @@ public:
                 }
                 if (i - 2 < 0 || nums[i - 2] <= nums[i]) {
                     prev = nums[i];      // nums[i - 1] = nums[i], prev = nums[i]
-                } else {
-                    prev = nums[i - 1];  // nums[i] = nums[i - 1], prev = nums[i]
+//              } else {
+//                  prev = nums[i - 1];  // nums[i] = nums[i - 1], prev = nums[i]
                 }
             } else {
                 prev = nums[i];
