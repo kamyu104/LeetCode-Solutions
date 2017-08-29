@@ -10,7 +10,7 @@ public:
         int result = 0;
         queue<node> q;
         node dummy(10);
-        node* parent_ptr = &dummy;
+        auto parent_ptr = &dummy;
         for (const auto& num : nums) {
             node child(num);
             while (!parent_ptr->isParent(child)) {
