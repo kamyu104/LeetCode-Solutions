@@ -28,8 +28,7 @@ class Solution(object):
             child = Node(num)
             while not parent.isParent(child):
                 result += parent.val if parent.leaf else 0
-                parent = q[0]
-                q.popleft()
+                parent = q.popleft()
             parent.leaf = False
             child.val += parent.val
             q.append(child)
