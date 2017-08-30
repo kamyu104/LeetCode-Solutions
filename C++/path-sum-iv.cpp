@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Space: O(w), w is the max node count of the level in the tree
+// Space: O(p), p is the number of paths
 
 class Solution {
 public:
