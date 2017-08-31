@@ -7,11 +7,9 @@ public:
         vector<int> result;
         int left = 1, right = n;
         while (left <= right) {
+            result.emplace_back(k % 2 ? left++ : right--);
             if (k > 1) {
-                result.emplace_back(k-- % 2 ? left++ : right--);
-            }
-            else {
-                result.emplace_back(k % 2 ? left++ : right--);
+                --k;
             }
         }
         return result;
