@@ -21,30 +21,33 @@
 #
 
 # BFS
-class Solution:
-    # @param start, a string
-    # @param end, a string
-    # @param dict, a set of string
-    # @return an integer
-    def ladderLength(self, start, end, word_list):
-        distance, cur, visited = 0, [start], set([start])
+class Solution(object):
+    def ladderLength(self, beginWord, endWord, wordList):
+        """
+        :type beginWord: str
+        :type endWord: str
+        :type wordList: List[str]
+        :rtype: int
+        """
+        distance, cur, visited, lookup = 0, [beginWord], set([beginWord]), set(wordList)
 
         while cur:
             _next = []
 
             for word in cur:
-                if word == end:
+                if word == endWord:
                     return distance + 1
                 for i in xrange(len(word)):
                     for j in 'abcdefghijklmnopqrstuvwxyz':
                         candidate = word[:i] + j + word[i + 1:]
-                        if candidate not in visited and candidate in word_list:
+                        if candidate not in visited and candidate in lookup:
                             _next.append(candidate)
                             visited.add(candidate)
             distance += 1
             cur = _next
 
         return 0
+
 
 if __name__ == "__main__":
     print Solution().ladderLength("hit", "cog", set(["hot", "dot", "dog", "lot", "log"]))
