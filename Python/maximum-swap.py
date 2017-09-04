@@ -1,5 +1,5 @@
-# Time:  O(l), l is the length of the number string
-# Space: O(l)
+# Time:  O(logn), logn is the length of the number string
+# Space: O(logn)
 
 # Given a non-negative integer, you could swap two digits at most once
 # to get the maximum valued number. Return the maximum valued number you could get.
