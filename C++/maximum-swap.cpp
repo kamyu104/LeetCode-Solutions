@@ -1,5 +1,5 @@
-// Time:  O(l), l is the length of the number string
-// Space: O(l)
+// Time:  O(logn), logn is the length of the number string
+// Space: O(logn)
 
 class Solution {
 public:
