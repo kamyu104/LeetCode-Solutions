@@ -112,6 +112,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 422| [Valid Word Square](https://leetcode.com/problems/valid-word-square/) | [C++](./C++/valid-word-square.cpp) [Python](./Python/valid-word-square.py)  | _O(m * n)_ |  _O(1)_ | Easy         |📖||
 442| [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | [C++](./C++/find-all-duplicates-in-an-array.cpp) [Python](./Python/find-all-duplicates-in-an-array.py)  | _O(n)_ |  _O(1)_ | Medium         |||
 448| [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | [C++](./C++/find-all-numbers-disappeared-in-an-array.cpp) [Python](./Python/find-all-numbers-disappeared-in-an-array.py)  | _O(n)_ |  _O(1)_ | Easy         |||
+665| [Non-decreasing Array](https://leetcode.com/problems/non-decreasing-array/) | [C++](./C++/non-decreasing-array.cpp) [Python](./Python/non-decreasing-array.py)  | _O(n)_ |  _O(1)_ | Easy         |||
+667| [Beautiful Arrangement II](https://leetcode.com/problems/beautiful-arrangement-ii/) | [C++](./C++/beautiful-arrangement-ii.cpp) [Python](./Python/beautiful-arrangement-ii.py)  | _O(n)_ |  _O(1)_ | Medium         |||
 670| [Maximum Swap](https://leetcode.com/problems/maximum-swap/) | [C++](./C++/maximum-swap.cpp) [Python](./Python/maximum-swap.py)  | _O(logn)_ |  _O(logn)_ | Medium         |||
 
 
@@ -415,6 +417,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 410| [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)| [C++](./C++/split-array-largest-sum.cpp) [Python](./Python/split-array-largest-sum.py)   | _O(nlogs)_          | _O(1)_          | Hard         | |
 436 | [Find Right Interval](https://leetcode.com/problems/find-right-interval/) | [C++](./C++/find-right-interval.cpp) [Python](./Python/find-right-interval.py) | _O(nlogn)_ | _O(n)_ | Medium | |
 475 | [Heaters](https://leetcode.com/problems/heaters/) | [C++](./C++/heaters.cpp) [Python](./Python/heaters.py) | _O((m + n) * logn)_ | _O(1)_ | Easy | |
+668 | [Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/) | [C++](./C++/kth-smallest-number-in-multiplication-table.cpp) [Python](./Python/kth-smallest-number-in-multiplication-table.py) | _O(m * log(m * n))_ | _O(1)_ | Hard | |
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -447,6 +450,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 317| [Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/)| [C++](./C++/shortest-distance-from-all-buildings.cpp) [Python](./Python/shortest-distance-from-all-buildings.py)   | _O(k * m * n)_          | _O(m * n)_          | Hard         | 📖 |
 433| [Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/)| [C++](./C++/minimum-genetic-mutation.cpp) [Python](./Python/minimum-genetic-mutation.py)   | _O(n * b)_          | _O(b)_          | Medium         ||
 444| [Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction/)| [C++](./C++/sequence-reconstruction.cpp) [Python](./Python/sequence-reconstruction.py)   | _O(n * s)_          | _O(n)_          | Medium         |📖| Topological Sort |
+666| [Path Sum IV](https://leetcode.com/problems/path-sum-iv/)| [C++](./C++/path-sum-iv.cpp) [Python](./Python/path-sum-iv.py)   | _O(n)_          | _O(w)_          | Medium         |📖| Topological Sort |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
