@@ -42,8 +42,7 @@ class Solution(object):
         for num in nums:
             node = TreeNode(num);
             while nodeStack and num > nodeStack[-1].val:
-                node.left = nodeStack[-1]
-                nodeStack.pop()
+                node.left = nodeStack.pop()
             if nodeStack:
                 nodeStack[-1].right = node
             nodeStack.append(node)
