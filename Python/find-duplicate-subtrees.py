@@ -35,16 +35,18 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[TreeNode]
         """
-        def getid(root, result):
+        def getid(root, lookup, trees):
             if root:
-                id = lookup[root.val, getid(root.left, result), getid(root.right, result)]
-                result[id].append(root)
-                return id
-        result = collections.defaultdict(list)
+                node_id = lookup[root.val, \
+                                 getid(root.left, lookup, trees), \
+                                 getid(root.right, lookup, trees)]
+                trees[node_id].append(root)
+                return node_id
+        trees = collections.defaultdict(list)
         lookup = collections.defaultdict()
         lookup.default_factory = lookup.__len__
-        getid(root, result)
-        return [roots[0] for roots in result.values() if len(roots) > 1]
+        getid(root, lookup, trees)
+        return [roots[0] for roots in trees.values() if len(roots) > 1]
 
 
 # Time:  O(n * h)
