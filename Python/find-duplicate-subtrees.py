@@ -1,5 +1,5 @@
-# Time:  O(n * h)
-# Space: O(n * h)
+# Time:  O(n)
+# Space: O(n)
 
 # Given a binary tree, return all duplicate subtrees.
 # For each kind of duplicate subtrees, you only need to return the root node of any one of them.
@@ -30,6 +30,26 @@
 #         self.right = None
 
 class Solution(object):
+    def findDuplicateSubtrees(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[TreeNode]
+        """
+        def getid(root, result):
+            if root:
+                id = lookup[root.val, getid(root.left, result), getid(root.right, result)]
+                result[id].append(root)
+                return id
+        result = collections.defaultdict(list)
+        lookup = collections.defaultdict()
+        lookup.default_factory = lookup.__len__
+        getid(root, result)
+        return [roots[0] for roots in result.values() if len(roots) > 1]
+
+
+# Time:  O(n * h)
+# Space: O(n * h)
+class Solution2(object):
     def findDuplicateSubtrees(self, root):
         """
         :type root: TreeNode
