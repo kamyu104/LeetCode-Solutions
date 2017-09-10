@@ -30,22 +30,21 @@ class MagicDictionary(object):
         :type word: str
         :rtype: bool
         """
-        def find(curr, i, mistakeAllowed): 
+        def find(word, curr, i, mistakeAllowed): 
             if i == len(word):
-                if "_end" in curr and not mistakeAllowed: 
-                    return True
-                return False 
+                return "_end" in curr and not mistakeAllowed
+
             if word[i] not in curr: 
-                return any(find(curr[c], i+1, False) for c in curr if c != "_end") \
+                return any(find(word, curr[c], i+1, False) for c in curr if c != "_end") \
                            if mistakeAllowed else False 
             
             if mistakeAllowed: 
-                return find(curr[word[i]], i+1, True) or \
-                       any(find(curr[c], i+1, False) \
+                return find(word, curr[word[i]], i+1, True) or \
+                       any(find(word, curr[c], i+1, False) \
                            for c in curr if c not in ("_end", word[i]))
-            return find(curr[word[i]], i+1, False)
-            
-        return find(self.trie, 0, True)    
+            return find(word, curr[word[i]], i+1, False)
+
+        return find(word, self.trie, 0, True)    
         
 
 
