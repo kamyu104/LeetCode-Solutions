@@ -116,7 +116,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 665| [Non-decreasing Array](https://leetcode.com/problems/non-decreasing-array/) | [C++](./C++/non-decreasing-array.cpp) [Python](./Python/non-decreasing-array.py)  | _O(n)_ |  _O(1)_ | Easy         |||
 667| [Beautiful Arrangement II](https://leetcode.com/problems/beautiful-arrangement-ii/) | [C++](./C++/beautiful-arrangement-ii.cpp) [Python](./Python/beautiful-arrangement-ii.py)  | _O(n)_ |  _O(1)_ | Medium         |||
 670| [Maximum Swap](https://leetcode.com/problems/maximum-swap/) | [C++](./C++/maximum-swap.cpp) [Python](./Python/maximum-swap.py)  | _O(logn)_ |  _O(logn)_ | Medium         |||
-
+674 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | [C++](./C++/longest-continuous-increasing-subsequence.cpp) [Python](./Python/longest-continuous-increasing-subsequence.py) | _O(n)_ | _O(1)_ | Easy ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -441,6 +441,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 352 | [Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/) | [C++](./C++/data-stream-as-disjoint-intervals.cpp) [Python](./Python/data-stream-as-disjoint-intervals.py) | _O(logn)_ | _O(n)_ | Hard | |
 449|[Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)| [C++](./C++/serialize-and-deserialize-bst.cpp) [Python](./Python/serialize-and-deserialize-bst.py)| _O(n)_ | _O(h)_ | Medium | | |
 450|[Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)| [C++](./C++/delete-node-in-a-bst.cpp) [Python](./Python/delete-node-in-a-bst.py)| _O(h)_ | _O(h)_ | Medium | | |
+675|[Cut Off Trees for Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/)| [C++](./C++/cut-off-trees-for-golf-event.cpp) [Python](./Python/cut-off-trees-for-golf-event.py)| _O(t * m * n)_ | _O(m * n)_ | Hard | | |
 
 ## Breadth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -514,6 +515,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 294| [Flip Game II](https://leetcode.com/problems/flip-game-ii/) | [C++](./C++/flip-game-ii.cpp) [Python](./Python/flip-game-ii.py)  | _O(n + c^2)_ | _O(c)_ | Medium         |📖| DP, Hash |
 320| [Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/) | [C++](./C++/generalized-abbreviation.cpp) [Python](./Python/generalized-abbreviation.py)  | _O(n * 2^n)_ | _O(n)_ | Medium         |📖||
 425| [Word Squares](https://leetcode.com/problems/word-squares/) | [C++](./C++/word-squares.cpp) [Python](./Python/word-squares.py)  | _O(n^2 * n!)_ | _O(n^2)_ | Hard         |📖||
+676| [Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/) | [C++](./C++/implement-magic-dictionary.cpp) [Python](./Python/implement-magic-dictionary.py) | _O(n)_ | _O(d)_  | Medium       || Trie, DFS
 
 ## Dynamic Programming
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -568,6 +570,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 650 | [2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/) | [C++](./C++/2-keys-keyboard.cpp) [Python](./Python/2-keys-keyboard.py) | _O(sqrt(n))_ | _O(1)_ | Medium |||
 656 | [Coin Path](https://leetcode.com/problems/coin-path/) | [C++](./C++/coin-path.cpp) [Python](./Python/coin-path.py) | _O(n * B)_ | _O(n)_ | Hard |📖|
 664 | [Strange Printer](https://leetcode.com/problems/strange-printer/) | [C++](./C++/strange-printer.cpp) [Python](./Python/strange-printer.py) | _O(n^3)_ | _O(n^2)_ | Hard ||
+673 | [Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/) | [C++](./C++/number-of-longest-increasing-subsequence.cpp) [Python](./Python/number-of-longest-increasing-subsequence.py) | _O(n^2)_ | _O(n)_ | Medium ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
