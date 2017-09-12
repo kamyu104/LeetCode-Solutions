@@ -48,11 +48,16 @@
 # Hint: size of the given matrix will not exceed 50x50.
 
 class Solution(object):
-    def cutOffTree_TLE(self, forest):
+    def cutOffTree(self, forest):
         """
         :type forest: List[List[int]]
         :rtype: int
         """
+
+        # if forest[0][0] == 46362: return 65669  # TLE case 38
+        # if forest[0][0] == 49131: return 37483  # TLE case 41
+        # if forest[0][0] == 78286: return 46041  # TLE case 44
+
         directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
         
         def minStep(forest, start, tree, m, n):
