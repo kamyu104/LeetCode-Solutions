@@ -61,7 +61,8 @@ class Solution(object):
 
             while True:
                 if not stack1:
-                    # cannot find a path in stack1 from p1 to p2, try stack2
+                    # cannot find a path in stack1 from p1 to p2,
+                    # try other possible paths in stack2 with extra 2 steps
                     stack1, stack2 = stack2, stack1
                     used.update(stack1)
                     min_steps += 2
