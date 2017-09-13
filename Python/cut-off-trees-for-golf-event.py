@@ -109,7 +109,6 @@ class Solution(object):
 
             return min_steps
 
-        directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
         m, n = len(forest), len(forest[0])
         min_heap = []
         for i in xrange(m):
