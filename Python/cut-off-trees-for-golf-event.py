@@ -61,11 +61,12 @@ class Solution(object):
 
             while True:
                 if not stack1:
+                    # cannot find a path in stack1 from p1 to p2, try stack2
                     stack1, stack2 = stack2, stack1
                     used.update(stack1)
                     min_steps += 2
 
-                if not stack1:
+                if not stack1:  # no any other possible path
                     return -1
 
                 (i, j) = stack1.pop()
@@ -93,15 +94,15 @@ class Solution(object):
                     add1.append((i, j-1))
                     add2.append((i, j+1))
 
-                for (i, j) in add1:
-                    if 0 <= i < m and 0 <= j < n and forest[i][j] and (i, j) not in used:
-                        visited.add((i, j))
-                        stack1.append((i, j))
-                        used.add((i, j))
-                for (i, j) in add2:
-                    if 0 <= i < m and 0 <= j < n and forest[i][j] and (i, j) not in visited:
-                        visited.add((i, j))
-                        stack2.append((i, j))
+                for (ii, jj) in add1:
+                    if 0 <= ii < m and 0 <= jj < n and forest[ii][jj] and (ii, jj) not in used:
+                        visited.add((ii, jj))
+                        stack1.append((ii, jj))
+                        used.add((ii, jj))
+                for (ii, jj) in add2:
+                    if 0 <= ii < m and 0 <= jj < n and forest[ii][jj] and (ii, jj) not in visited:
+                        visited.add((ii, jj))
+                        stack2.append((ii, jj))
 
             return min_steps
 
