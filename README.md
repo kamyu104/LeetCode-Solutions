@@ -62,6 +62,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance/) | [C++](./C++/hamming-distance.cpp) [Python](./Python/hamming-distance.py) | _O(1)_ | _O(1)_ | Easy ||
 462 | [Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | [C++](./C++/minimum-moves-to-equal-array-elements-ii.cpp) [Python](./Python/minimum-moves-to-equal-array-elements-ii.py) | _O(n)_  on average | _O(1)_ | Medium ||
 477 | [Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/) | [C++](./C++/total-hamming-distance.cpp) [Python](./Python/total-hamming-distance.py) | _O(n)_ | _O(1)_ | Medium ||
+645 | [Set Mismatch](https://leetcode.com/problems/set-mismatch/) | [C++](./C++/set-mismatch.cpp) [Python](./Python/set-mismatch.py) | _O(n)_ | _O(1)_ | Easy ||
 
 ## Array
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -151,6 +152,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 468| [Validate IP Address](https://leetcode.com/problems/validate-ip-address/) | [C++](./C++/validate-ip-address.cpp)  [Python](./Python/validate-ip-address.py) | _O(1)_ | _O(1)_ | Medium         | |
 556| [Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/) |[C++](./C++/next-greater-element-iii.cpp)  [Python](./Python/next-greater-element-iii.py) | _O(1)_ | _O(1)_ | Medium         | |
 557| [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/) |[C++](./C++/reverse-words-in-a-string-iii.cpp)  [Python](./Python/reverse-words-in-a-string-iii.py) | _O(n)_ | _O(1)_ | Easy         | |
+647| [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | [C++](./C++/palindromic-substrings.cpp) [Python](./Python/palindromic-substrings.py) | _O(n)_ | _O(n)_ |  Medium || `Manacher's Algorithm`
+648| [Replace Words](https://leetcode.com/problems/replace-words/) | [C++](./C++/replace-words.cpp)  [Python](./Python/replace-words.py) | _O(n)_ | _O(t)_ | Medium         || `trie` |
 657| [Judge Route Circle](https://leetcode.com/problems/judge-route-circle/) |[C++](./C++/judge-route-circle.cpp)  [Python](./Python/judge-route-circle.py) | _O(n)_ | _O(1)_ | Easy         | |
 
 ## Linked List
@@ -593,6 +596,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 435 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | [C++](./C++/non-overlapping-intervals.cpp) [Python](./Python/non-overlapping-intervals.py) | _O(nlogn)_ | _O(1)_ | Medium | |
 452 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [C++](./C++/minimum-number-of-arrows-to-burst-balloons.cpp) [Python](./Python/minimum-number-of-arrows-to-burst-balloons.py) | _O(nlogn)_ | _O(1)_ | Medium | |
 455 | [Assign Cookies](https://leetcode.com/problems/assign-cookies/) | [C++](./C++/assign-cookies.cpp) [Python](./Python/assign-cookies.py) | _O(nlogn)_ | _O(1)_ | Easy | |
+646 | [Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/) | [C++](./C++/maximum-length-of-pair-chain.cpp) [Python](./Python/maximum-length-of-pair-chain.py) | _O(nlogn)_ | _O(1)_ | Medium || Scan Line
 649 | [Dota2 Senate](https://leetcode.com/problems/dota2-senate/) | [C++](./C++/dota2-senate.cpp) [Python](./Python/dota2-senate.py) | _O(n)_ | _O(n)_ | Medium |||
 659 | [Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences/) | [C++](./C++/split-array-into-consecutive-subsequences.cpp) [Python](./Python/split-array-into-consecutive-subsequences.py) | _O(n)_ | _O(1)_ | Medium | |
 
