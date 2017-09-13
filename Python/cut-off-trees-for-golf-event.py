@@ -124,6 +124,7 @@ class Solution(object):
             start = tree[1]
         return result
 
+
 # Time:  O(t * (logt + m * n)), t is the number of trees
 # Space: O(t + m * n)
 class Solution_TLE(object):
@@ -137,7 +138,7 @@ class Solution_TLE(object):
             used = set()
             q = collections.deque()
             q.append(p1);
-            used.add(start[0]*n+start[1])
+            used.add(start)
             while q:
                 size = len(q)
                 for _ in xrange(size):
@@ -146,10 +147,10 @@ class Solution_TLE(object):
                         return step
                     for direction in directions:
                         ii, jj = i+direction[0], j+direction[1]
-                        if not (0 <= ii < m and 0 <= jj < n and forest[ii][jj] and (ii*n+jj) not in used):
+                        if not (0 <= ii < m and 0 <= jj < n and forest[ii][jj] and (ii, jj) not in used):
                             continue
                         q.append((ii, jj))
-                        used.add(ii*n+jj)
+                        used.add((ii, jj))
                 step += 1
             return -1
         
