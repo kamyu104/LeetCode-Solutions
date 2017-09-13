@@ -134,24 +134,22 @@ class Solution_TLE(object):
         :rtype: int
         """
         def minStep(p1, p2):
-            step = 0
-            used = set()
-            q = collections.deque()
-            q.append(p1);
-            used.add(start)
+            min_steps = 0
+            used = {p1}
+            q = collections.deque([p1])
             while q:
                 size = len(q)
                 for _ in xrange(size):
                     (i, j) = q.popleft()
                     if (i, j) == p2:
-                        return step
+                        return min_steps
                     for direction in directions:
                         ii, jj = i+direction[0], j+direction[1]
                         if not (0 <= ii < m and 0 <= jj < n and forest[ii][jj] and (ii, jj) not in used):
                             continue
                         q.append((ii, jj))
                         used.add((ii, jj))
-                step += 1
+                min_steps += 1
             return -1
         
         directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
