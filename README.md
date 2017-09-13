@@ -444,7 +444,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 352 | [Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/) | [C++](./C++/data-stream-as-disjoint-intervals.cpp) [Python](./Python/data-stream-as-disjoint-intervals.py) | _O(logn)_ | _O(n)_ | Hard | |
 449|[Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)| [C++](./C++/serialize-and-deserialize-bst.cpp) [Python](./Python/serialize-and-deserialize-bst.py)| _O(n)_ | _O(h)_ | Medium | | |
 450|[Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)| [C++](./C++/delete-node-in-a-bst.cpp) [Python](./Python/delete-node-in-a-bst.py)| _O(h)_ | _O(h)_ | Medium | | |
-675|[Cut Off Trees for Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/)| [C++](./C++/cut-off-trees-for-golf-event.cpp) [Python](./Python/cut-off-trees-for-golf-event.py)| _O(t * m * n)_ | _O(m * n)_ | Hard | | |
+675|[Cut Off Trees for Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/)| [C++](./C++/cut-off-trees-for-golf-event.cpp) [Python](./Python/cut-off-trees-for-golf-event.py)| _O(t * m * n)_ | _O(m * n)_ | Hard | | `A* Search Algorithm` |
 
 ## Breadth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
