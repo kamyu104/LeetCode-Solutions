@@ -47,7 +47,9 @@
 # in (0,0) directly without walking.
 # Hint: size of the given matrix will not exceed 50x50.
 
-# Reference: https://discuss.leetcode.com/topic/103532/my-python-solution-inspired-by-a-algorithm/2
+# Solution Reference: 
+# 1. https://discuss.leetcode.com/topic/103532/my-python-solution-inspired-by-a-algorithm/2
+# 2. https://en.wikipedia.org/wiki/A*_search_algorithm
 class Solution(object):
     def cutOffTree(self, forest):
         """
