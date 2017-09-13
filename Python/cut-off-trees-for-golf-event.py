@@ -47,17 +47,86 @@
 # in (0,0) directly without walking.
 # Hint: size of the given matrix will not exceed 50x50.
 
+# Reference: https://discuss.leetcode.com/topic/103532/my-python-solution-inspired-by-a-algorithm/2
 class Solution(object):
     def cutOffTree(self, forest):
         """
         :type forest: List[List[int]]
         :rtype: int
         """
+        m, n = len(forest), len(forest[0])
+        def minStep(p1, p2):
+            min_steps = abs(p1[0]-p2[0])+abs(p1[1]-p2[1])
+            stack1, stack2 = [p1], []
+            used, visited = {p1}, {p1}
 
-        # if forest[0][0] == 46362: return 65669  # TLE case 38
-        # if forest[0][0] == 49131: return 37483  # TLE case 41
-        # if forest[0][0] == 78286: return 46041  # TLE case 44
+            while True:
+                if not stack1:
+                    stack1, stack2 = stack2, stack1
+                    used.update(stack1)
+                    min_steps += 2
 
+                if not stack1:
+                    return -1
+
+                (i, j) = stack1.pop()
+                if (i, j) == p2:
+                    break
+
+                add1, add2 = [], []
+                if i == p2[0]:
+                    add2.append((i-1, j))
+                    add2.append((i+1, j))
+                elif i < p2[0]:
+                    add2.append((i-1, j))
+                    add1.append((i+1, j))
+                else:
+                    add1.append((i-1, j))
+                    add2.append((i+1, j))
+
+                if j == p2[1]:
+                    add2.append((i, j-1))
+                    add2.append((i, j+1))
+                elif j < p2[1]:
+                    add2.append((i, j-1))
+                    add1.append((i, j+1))
+                else:
+                    add1.append((i, j-1))
+                    add2.append((i, j+1))
+
+                for (i, j) in add1:
+                    if 0 <= i < m and 0 <= j < n and forest[i][j] and (i, j) not in used:
+                        visited.add((i, j))
+                        stack1.append((i, j))
+                        used.add((i, j))
+                for (i, j) in add2:
+                    if 0 <= i < m and 0 <= j < n and forest[i][j] and (i, j) not in visited:
+                        visited.add((i, j))
+                        stack2.append((i, j))
+
+            return min_steps
+
+        seq = sorted([(forest[i][j], (i, j))
+                      for i in xrange(m) for j in xrange(n)
+                      if forest[i][j]])
+        if seq[0][1] != (0, 0):
+            seq.insert(0, (0, (0, 0)))
+
+        result = 0
+        for i in xrange(len(seq)-1):
+            step = minStep(seq[i][1], seq[i+1][1])
+            if step < 0:
+                return -1
+            result += step
+        return result
+
+
+class Solution_TLE(object):
+    def cutOffTree(self, forest):
+        """
+        :type forest: List[List[int]]
+        :rtype: int
+        """
         directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
         
         def minStep(forest, start, tree, m, n):
