@@ -121,6 +121,8 @@ class Solution(object):
         return result
 
 
+# Time:  O(t * (logt + m * n)), t is the number of trees
+# Space: O(t + m * n)
 class Solution_TLE(object):
     def cutOffTree(self, forest):
         """
