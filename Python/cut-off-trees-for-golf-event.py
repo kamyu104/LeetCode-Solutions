@@ -58,54 +58,24 @@ class Solution(object):
         """
         def minStep(p1, p2):
             min_steps = abs(p1[0]-p2[0])+abs(p1[1]-p2[1])
-            stack1, stack2 = [p1], []
-            used, visited = {p1}, {p1}
-
+            curr, soon = [p1], []
+            lookup = set()
             while True:
-                if not stack1:
+                if not curr:
                     # cannot find a path in stack1 from p1 to p2,
                     # try other possible paths in stack2 with extra 2 steps
-                    stack1, stack2 = stack2, stack1
-                    used.update(stack1)
+                    curr, soon = soon, curr
                     min_steps += 2
-
-                if not stack1:  # no any other possible path
+                if not curr:  # no any other possible path
                     return -1
-
-                (i, j) = stack1.pop()
+                i, j = curr.pop()
                 if (i, j) == p2:
-                    break
-
-                add1, add2 = [], []
-                if i == p2[0]:
-                    add2.append((i-1, j))
-                    add2.append((i+1, j))
-                elif i < p2[0]:
-                    add2.append((i-1, j))
-                    add1.append((i+1, j))
-                else:
-                    add1.append((i-1, j))
-                    add2.append((i+1, j))
-
-                if j == p2[1]:
-                    add2.append((i, j-1))
-                    add2.append((i, j+1))
-                elif j < p2[1]:
-                    add2.append((i, j-1))
-                    add1.append((i, j+1))
-                else:
-                    add1.append((i, j-1))
-                    add2.append((i, j+1))
-
-                for (ii, jj) in add1:
-                    if 0 <= ii < m and 0 <= jj < n and forest[ii][jj] and (ii, jj) not in used:
-                        visited.add((ii, jj))
-                        stack1.append((ii, jj))
-                        used.add((ii, jj))
-                for (ii, jj) in add2:
-                    if 0 <= ii < m and 0 <= jj < n and forest[ii][jj] and (ii, jj) not in visited:
-                        visited.add((ii, jj))
-                        stack2.append((ii, jj))
+                    return min_steps
+                if (i, j) not in lookup:
+                    lookup.add((i, j))
+                    for i, j, closer in (i+1, j, i < p2[0]), (i-1, j, i > p2[0]), (i, j+1, j < p2[1]), (i, j-1, j > p2[1]):
+                        if 0 <= i < m and 0 <= j < n and forest[i][j] and (i, j) not in lookup:
+                            (curr if closer else soon).append((i, j))
 
             return min_steps
 
@@ -138,7 +108,7 @@ class Solution_TLE(object):
         """
         def minStep(p1, p2):
             min_steps = 0
-            used = {p1}
+            lookup = {p1}
             q = collections.deque([p1])
             while q:
                 size = len(q)
@@ -146,16 +116,14 @@ class Solution_TLE(object):
                     (i, j) = q.popleft()
                     if (i, j) == p2:
                         return min_steps
-                    for direction in directions:
-                        ii, jj = i+direction[0], j+direction[1]
-                        if not (0 <= ii < m and 0 <= jj < n and forest[ii][jj] and (ii, jj) not in used):
+                    for i, j in (i+1, j), (i-1, j), (i, j+1), (i, j-1):
+                        if not (0 <= i < m and 0 <= j < n and forest[i][j] and (i, j) not in lookup):
                             continue
-                        q.append((ii, jj))
-                        used.add((ii, jj))
+                        q.append((i, j))
+                        lookup.add((i, j))
                 min_steps += 1
             return -1
         
-        directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
         m, n = len(forest), len(forest[0])
         min_heap = []
         for i in xrange(m):
