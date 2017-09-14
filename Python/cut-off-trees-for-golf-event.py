@@ -49,7 +49,8 @@
 
 # Solution Reference: 
 # 1. https://discuss.leetcode.com/topic/103532/my-python-solution-inspired-by-a-algorithm/2
-# 2. https://en.wikipedia.org/wiki/A*_search_algorithm
+# 2. https://discuss.leetcode.com/topic/103562/python-solution-based-on-wufangjie-s-hadlock-s-algorithm
+# 3. https://en.wikipedia.org/wiki/A*_search_algorithm
 class Solution(object):
     def cutOffTree(self, forest):
         """
