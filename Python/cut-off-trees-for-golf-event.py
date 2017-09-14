@@ -63,17 +63,17 @@ class Solution(object):
 
         def minStep(p1, p2):
             min_steps = abs(p1[0]-p2[0])+abs(p1[1]-p2[1])
-            straight, detour = [p1], []
+            closer, detour = [p1], []
             lookup = set()
             while True:
-                if not straight:
-                    # cannot find a path in the current expansion stack which goes straightly from p1 to p2,
+                if not closer:
+                    # cannot find a path in the current expansion stack which get closer to p2,
                     # try other possible paths in another expansion stack with 2-step detour
                     min_steps += 2
-                    straight, detour = detour, straight
-                if not straight:  # no any other possible path
+                    closer, detour = detour, closer
+                if not closer:  # no any other possible path
                     return -1
-                i, j = straight.pop()
+                i, j = closer.pop()
                 if (i, j) == p2:
                     return min_steps
                 if (i, j) not in lookup:
@@ -81,7 +81,7 @@ class Solution(object):
                     for I, J in (i+1, j), (i-1, j), (i, j+1), (i, j-1):
                         if 0 <= I < m and 0 <= J < n and forest[I][J] and (I, J) not in lookup:
                             is_closer = dot((I-i, J-j), (p2[0]-i, p2[1]-j)) > 0
-                            (straight if is_closer else detour).append((I, J))
+                            (closer if is_closer else detour).append((I, J))
             return min_steps
 
         m, n = len(forest), len(forest[0])
