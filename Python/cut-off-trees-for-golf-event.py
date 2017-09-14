@@ -58,6 +58,9 @@ class Solution(object):
         :type forest: List[List[int]]
         :rtype: int
         """
+        def dot(p1, p2):
+            return p1[0]*p2[0]+p1[1]*p2[1]
+
         def minStep(p1, p2):
             min_steps = abs(p1[0]-p2[0])+abs(p1[1]-p2[1])
             straight, detour = [p1], []
@@ -75,9 +78,12 @@ class Solution(object):
                     return min_steps
                 if (i, j) not in lookup:
                     lookup.add((i, j))
-                    for i, j, closer in (i+1, j, i < p2[0]), (i-1, j, i > p2[0]), (i, j+1, j < p2[1]), (i, j-1, j > p2[1]):
-                        if 0 <= i < m and 0 <= j < n and forest[i][j] and (i, j) not in lookup:
-                            (straight if closer else detour).append((i, j))
+                    for I, J in (i+1, j), (i-1, j), (i, j+1), (i, j-1):
+                        if 0 <= I < m and 0 <= J < n and forest[I][J] and (I, J) not in lookup:
+                            is_closer = dot((I-i, J-j), (p2[0]-i, p2[1]-j)) > 0
+                            (straight if is_closer else detour).append((I, J))
+
+            return min_steps
 
             return min_steps
 
