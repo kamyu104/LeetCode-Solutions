@@ -45,7 +45,7 @@ private:
         vector<pair<int, int>> curr{start}, soon;
         while (true) {
             if (curr.empty()) {
-                // cannot find a path in current stack from p1 to p2,
+                // cannot find a path in current stack from start to end,
                 // try other possible paths in sooner stack with extra 2 steps
                 swap(curr, soon);
                 min_steps += 2;
