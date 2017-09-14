@@ -62,18 +62,15 @@ private:
             }
             if (!lookup.count(i * n + j)) {
                 lookup.emplace(i * n + j);
-                vector<pair<pair<int, int>, bool>> expansions = {{{i + 1, j}, i < end.first}, 
-                                                                 {{i - 1, j}, i > end.first},
-                                                                 {{i, j + 1}, j < end.second},
-                                                                 {{i, j - 1}, j > end.second}};
-
+                vector<pair<int, int>> expansions = {{i + 1, j}, {i - 1, j}, {i, j + 1}, {i, j - 1}};
                 for (const auto& expansion : expansions) {
-                    int i, j;
+                    int I, J;
                     bool is_closer;
-                    tie(lvalue(tie(i, j)), is_closer) = expansion;
-                    if (0 <= i && i < m && 0 <= j && j < n &&
-                        forest[i][j] && !lookup.count(i * n + j)) {
-                        is_closer ? straight.emplace_back(i, j) : detour.emplace_back(i, j);
+                    tie(I, J) = expansion;
+                    if (0 <= I && I < m && 0 <= J && J < n &&
+                        forest[I][J] && !lookup.count(I * n + J)) {
+                        bool is_closer = dot({I - i, J - j}, {end.first - i, end.second - j}) > 0;
+                        is_closer ? straight.emplace_back(I, J) : detour.emplace_back(I, J);
                     }
                 }
             }
@@ -82,9 +79,8 @@ private:
         return min_steps;
     }
 
-    template <class T>
-    constexpr T &lvalue(T &&v) {
-        return v;
+    inline int dot(const pair<int, int>& a, const pair<int, int>& b) {
+        return a.first * b.first + a.second * b.second;
     }
 };
 
