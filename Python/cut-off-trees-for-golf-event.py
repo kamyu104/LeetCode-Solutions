@@ -66,10 +66,10 @@ class Solution(object):
             closer, detour = [p1], []
             lookup = set()
             while True:
-                if not closer:  # cannot find a path in the closer expansion
+                if not closer:  # cannot find a path in the closer expansions
                     if not detour:  # no other possible path
                         return -1
-                    # try other possible paths in another detour expansion with extra 2-step cost
+                    # try other possible paths in detour expansions with extra 2-step cost
                     min_steps += 2
                     closer, detour = detour, closer
                 i, j = closer.pop()
