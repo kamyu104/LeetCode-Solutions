@@ -8,7 +8,7 @@
 class Solution {
 public:
     int cutOffTree(vector<vector<int>>& forest) {
-        int m = forest.size(), n = forest[0].size();
+        const auto m = forest.size(), n = forest[0].size();
         priority_queue<pair<int, pair<int, int>>,
                        vector<pair<int, pair<int, int>>>,
                        greater<pair<int, pair<int, int>>> > min_heap;
@@ -39,7 +39,8 @@ private:
     int minStep(const vector<vector<int>>& forest,
                 const pair<int, int>& start,
                 const pair<int, int>& end,
-                int m, int n) {
+                const int m, const int n) {
+
         int min_steps = abs(start.first - end.first) + abs(start.second - end.second);
         unordered_set<int> lookup;
         vector<pair<int, int>> curr{start}, soon;
@@ -92,7 +93,7 @@ private:
 class Solution2 {
 public:
     int cutOffTree(vector<vector<int>>& forest) {
-        int m = forest.size(), n = forest[0].size();
+        const auto m = forest.size(), n = forest[0].size();
         priority_queue<pair<int, pair<int, int>>,
                        vector<pair<int, pair<int, int>>>,
                        greater<pair<int, pair<int, int>>> > min_heap;
@@ -123,7 +124,8 @@ private:
     int minStep(const vector<vector<int>>& forest,
                 const pair<int, int>& start,
                 const pair<int, int>& end,
-                int m, int n) {
+                const int m, const int n) {
+
         int min_steps = 0;
         unordered_set<int> lookup;
         queue<pair<int, int>> q;
