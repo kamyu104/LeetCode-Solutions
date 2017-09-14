@@ -82,9 +82,6 @@ class Solution(object):
                         if 0 <= I < m and 0 <= J < n and forest[I][J] and (I, J) not in lookup:
                             is_closer = dot((I-i, J-j), (p2[0]-i, p2[1]-j)) > 0
                             (straight if is_closer else detour).append((I, J))
-
-            return min_steps
-
             return min_steps
 
         m, n = len(forest), len(forest[0])
