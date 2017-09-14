@@ -44,19 +44,19 @@ private:
 
         int min_steps = abs(start.first - end.first) + abs(start.second - end.second);
         unordered_set<int> lookup;
-        vector<pair<int, int>> straight{start}, detour;
+        vector<pair<int, int>> closer{start}, detour;
         while (true) {
-            if (straight.empty()) {
-                // cannot find a path in the current expansion stack which goes straightly from start to end,
-                // try other possible paths in another expansion stack with 2-step detour
+            if (closer.empty()) {
+                // cannot find a path in the current expansion stack which gets closer to end,
+                // try other possible paths in another expansion stack with 2-step detour to end
                 min_steps += 2;
-                swap(straight, detour);
+                swap(closer, detour);
             }
-            if (straight.empty()) { // no any other possible path
+            if (closer.empty()) { // no any other possible path
                 return -1;
             }
             int i, j;
-            tie(i, j) = straight.back(); straight.pop_back();
+            tie(i, j) = closer.back(); closer.pop_back();
             if (make_pair(i, j) == end) {
                 return min_steps;
             }
@@ -70,7 +70,7 @@ private:
                     if (0 <= I && I < m && 0 <= J && J < n &&
                         forest[I][J] && !lookup.count(I * n + J)) {
                         bool is_closer = dot({I - i, J - j}, {end.first - i, end.second - j}) > 0;
-                        is_closer ? straight.emplace_back(I, J) : detour.emplace_back(I, J);
+                        is_closer ? closer.emplace_back(I, J) : detour.emplace_back(I, J);
                     }
                 }
             }
