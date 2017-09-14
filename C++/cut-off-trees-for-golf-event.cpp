@@ -60,15 +60,15 @@ private:
             }
             if (!lookup.count(i * n + j)) {
                 lookup.emplace(i * n + j);
-                vector<pair<bool, pair<int, int>>> expands = {{i < end.first,  {i + 1, j}}, 
-                                                              {i > end.first,  {i - 1, j}},
-                                                              {j < end.second, {i, j + 1}},
-                                                              {j > end.second, {i, j - 1}}};
+                vector<pair<pair<int, int>, bool>> expands = {{{i + 1, j}, i < end.first}, 
+                                                              {{i - 1, j}, i > end.first},
+                                                              {{i, j + 1}, j < end.second},
+                                                              {{i, j - 1}, j > end.second}};
 
                 for (const auto& expand : expands) {
-                    bool is_closer;
                     int i, j;
-                    tie(is_closer, lvalue(tie(i, j))) = expand;
+                    bool is_closer;
+                    tie(lvalue(tie(i, j)), is_closer) = expand;
                     if (0 <= i && i < m && 0 <= j && j < n &&
                         forest[i][j] && !lookup.count(i * n + j)) {
                         is_closer ? curr.emplace_back(i, j) : soon.emplace_back(i, j);
