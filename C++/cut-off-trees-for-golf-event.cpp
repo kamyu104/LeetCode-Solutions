@@ -21,7 +21,7 @@ public:
         int result = 0;
         while (!min_heap.empty()) {
             auto tree = min_heap.top(); min_heap.pop();
-            int step = minStep(forest, start, tree, m, n);
+            int step = minStep(forest, start, tree.second, m, n);
             if (step < 0) {
                 return -1;
             }
@@ -34,7 +34,7 @@ public:
 private:
     int minStep(const vector<vector<int>>& forest,
                 const pair<int, int>& start,
-                const pair<int, pair<int, int>>& tree,
+                const pair<int, int>& end,
                 int m, int n) {
         int step = 0;
         unordered_set<int> lookup;
@@ -45,7 +45,7 @@ private:
             int size = q.size();
             for (int i = 0; i < size; ++i) {
                 auto curr = q.front(); q.pop();
-                if (curr == tree.second) {
+                if (curr == end) {
                     return step;
                 }
                 static const vector<pair<int, int>> directions{{0, -1}, {0, 1},
