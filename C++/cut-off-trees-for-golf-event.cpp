@@ -46,14 +46,13 @@ private:
         unordered_set<int> lookup;
         vector<pair<int, int>> closer{start}, detour;
         while (true) {
-            if (closer.empty()) {
-                // cannot find a path in the current expansion stack which gets closer to end,
+            if (closer.empty()) {  // cannot find a path in the current expansion stack which gets closer to end
+                if (detour.empty()) {  // no other possible path
+                    return -1;
+                }
                 // try other possible paths in another expansion stack with 2-step detour to end
                 min_steps += 2;
                 swap(closer, detour);
-            }
-            if (closer.empty()) { // no any other possible path
-                return -1;
             }
             int i, j;
             tie(i, j) = closer.back(); closer.pop_back();
