@@ -60,24 +60,24 @@ class Solution(object):
         """
         def minStep(p1, p2):
             min_steps = abs(p1[0]-p2[0])+abs(p1[1]-p2[1])
-            curr, soon = [p1], []
+            straight, detour = [p1], []
             lookup = set()
             while True:
-                if not curr:
-                    # cannot find a path in current stack from p1 to p2,
-                    # try other possible paths in sooner stack with extra 2 steps
-                    curr, soon = soon, curr
+                if not straight:
+                    # cannot find a path in the current expansion stack which goes straightly from p1 to p2,
+                    # try other possible paths in another expansion stack with 2-step detour
                     min_steps += 2
-                if not curr:  # no any other possible path
+                    straight, detour = detour, straight
+                if not straight:  # no any other possible path
                     return -1
-                i, j = curr.pop()
+                i, j = straight.pop()
                 if (i, j) == p2:
                     return min_steps
                 if (i, j) not in lookup:
                     lookup.add((i, j))
                     for i, j, closer in (i+1, j, i < p2[0]), (i-1, j, i > p2[0]), (i, j+1, j < p2[1]), (i, j-1, j > p2[1]):
                         if 0 <= i < m and 0 <= j < n and forest[i][j] and (i, j) not in lookup:
-                            (curr if closer else soon).append((i, j))
+                            (straight if closer else detour).append((i, j))
 
             return min_steps
 
