@@ -68,7 +68,7 @@ class Solution(object):
             while True:
                 if not closer:
                     # cannot find a path in the current expansion stack which gets closer to p2,
-                    # try other possible paths in another expansion stack with 2-step detour
+                    # try other possible paths in another expansion stack with 2-step detour to p2
                     min_steps += 2
                     closer, detour = detour, closer
                 if not closer:  # no any other possible path
