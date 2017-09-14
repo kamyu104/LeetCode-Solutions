@@ -47,8 +47,8 @@ private:
         vector<pair<int, int>> straight{start}, detour;
         while (true) {
             if (straight.empty()) {
-                // cannot find a path in the current expand stack which goes straightly from start to end,
-                // try other possible paths in another expand stack with 2-step detour
+                // cannot find a path in the current expansion stack which goes straightly from start to end,
+                // try other possible paths in another expansion stack with 2-step detour
                 min_steps += 2;
                 swap(straight, detour);
             }
@@ -62,15 +62,15 @@ private:
             }
             if (!lookup.count(i * n + j)) {
                 lookup.emplace(i * n + j);
-                vector<pair<pair<int, int>, bool>> expands = {{{i + 1, j}, i < end.first}, 
-                                                              {{i - 1, j}, i > end.first},
-                                                              {{i, j + 1}, j < end.second},
-                                                              {{i, j - 1}, j > end.second}};
+                vector<pair<pair<int, int>, bool>> expansions = {{{i + 1, j}, i < end.first}, 
+                                                                 {{i - 1, j}, i > end.first},
+                                                                 {{i, j + 1}, j < end.second},
+                                                                 {{i, j - 1}, j > end.second}};
 
-                for (const auto& expand : expands) {
+                for (const auto& expansion : expansions) {
                     int i, j;
                     bool is_closer;
-                    tie(lvalue(tie(i, j)), is_closer) = expand;
+                    tie(lvalue(tie(i, j)), is_closer) = expansion;
                     if (0 <= i && i < m && 0 <= j && j < n &&
                         forest[i][j] && !lookup.count(i * n + j)) {
                         is_closer ? straight.emplace_back(i, j) : detour.emplace_back(i, j);
