@@ -124,7 +124,7 @@ private:
                 const pair<int, int>& start,
                 const pair<int, int>& end,
                 int m, int n) {
-        int step = 0;
+        int min_steps = 0;
         unordered_set<int> lookup;
         queue<pair<int, int>> q;
         q.emplace(start);
@@ -134,7 +134,7 @@ private:
             for (int i = 0; i < size; ++i) {
                 auto curr = q.front(); q.pop();
                 if (curr == end) {
-                    return step;
+                    return min_steps;
                 }
                 static const vector<pair<int, int>> directions{{0, -1}, {0, 1},
                                                                {-1, 0}, {1, 0}};
@@ -149,7 +149,7 @@ private:
                     lookup.emplace(i * n + j);
                 }
             }
-            ++step;
+            ++min_steps;
         }
         return -1;
     }
