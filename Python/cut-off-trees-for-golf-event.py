@@ -67,7 +67,7 @@ class Solution(object):
             lookup = set()
             while True:
                 if not closer:
-                    # cannot find a path in the current expansion stack which get closer to p2,
+                    # cannot find a path in the current expansion stack which gets closer to p2,
                     # try other possible paths in another expansion stack with 2-step detour
                     min_steps += 2
                     closer, detour = detour, closer
