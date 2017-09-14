@@ -63,8 +63,8 @@ class Solution(object):
             lookup = set()
             while True:
                 if not curr:
-                    # cannot find a path in stack1 from p1 to p2,
-                    # try other possible paths in stack2 with extra 2 steps
+                    # cannot find a path in current stack from p1 to p2,
+                    # try other possible paths in sooner stack with extra 2 steps
                     curr, soon = soon, curr
                     min_steps += 2
                 if not curr:  # no any other possible path
