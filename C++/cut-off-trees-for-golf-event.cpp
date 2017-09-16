@@ -64,7 +64,6 @@ private:
                 vector<pair<int, int>> expansions = {{i + 1, j}, {i - 1, j}, {i, j + 1}, {i, j - 1}};
                 for (const auto& expansion : expansions) {
                     int I, J;
-                    bool is_closer;
                     tie(I, J) = expansion;
                     if (0 <= I && I < m && 0 <= J && J < n &&
                         forest[I][J] && !lookup.count(I * n + J)) {
