@@ -1,5 +1,5 @@
 # Time:  O(n), n is the length of key
-# Space: O(t), t is the total size of trie 
+# Space: O(t), t is the number of nodes in trie
 
 class MapSum(object):
 
