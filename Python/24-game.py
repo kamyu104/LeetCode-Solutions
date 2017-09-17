@@ -1,4 +1,4 @@
-# Time:  O(n^3 * 4^n)
+# Time:  O(n^3 * 4^n), n = 4
 # Space: O(n^2)
 
 from fractions import Fraction
