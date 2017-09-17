@@ -4,7 +4,7 @@
 class Solution {
 public:
     bool checkValidString(string s) {
-        int lower = 0, upper = 0;  //  keep lower bound and upper bound of '(' counts
+        int lower = 0, upper = 0;  // keep lower bound and upper bound of '(' counts
         for (const auto& c : s) {
             lower += (c == '(') ? 1 : -1;
             upper -= (c == ')') ? 1 : -1;
