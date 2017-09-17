@@ -27,4 +27,4 @@ class Solution(object):
                             return True
             return False
 
-        return dfs(map(lambda x: Fraction(x, 1), nums))
+        return dfs(map(Fraction, nums))
