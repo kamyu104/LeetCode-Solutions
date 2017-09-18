@@ -33,7 +33,7 @@ class Solution(object):
             for j in xrange(len(nums)):
                 if i == j:
                     continue
-                next_nums = [nums[k] for k in xrange(len(nums)) if k not in [i, j]]
+                next_nums = [nums[k] for k in xrange(len(nums)) if i != k != j]
                 for op in ops:
                     if ((op is add or op is mul) and j > i) or \
                        (op == truediv and nums[j] == 0):
@@ -64,7 +64,7 @@ class Solution2(object):
                 for j in xrange(len(nums)):
                     if i == j:
                         continue
-                    next_nums = [nums[k] for k in xrange(len(nums)) if k not in [i, j]]
+                    next_nums = [nums[k] for k in xrange(len(nums)) if i != k != j]
                     for op in ops:
                         if (op is add or op is mul) and j > i: continue
                         if op == div and nums[j] == 0: continue
