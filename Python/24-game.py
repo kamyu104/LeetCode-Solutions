@@ -37,7 +37,7 @@ class Solution(object):
                 for op in ops:
                     if ((op is add or op is mul) and j > i) or \
                        (op == truediv and nums[j] == 0):
-                            continue
+                        continue
                     next_nums.append(op(nums[i], nums[j]))
                     if self.judgePoint24(next_nums):
                         return True
@@ -66,8 +66,9 @@ class Solution2(object):
                         continue
                     next_nums = [nums[k] for k in xrange(len(nums)) if i != k != j]
                     for op in ops:
-                        if (op is add or op is mul) and j > i: continue
-                        if op == div and nums[j] == 0: continue
+                        if ((op is add or op is mul) and j > i) or \
+                           (op == truediv and nums[j] == 0):
+                            continue
                         next_nums.append(op(nums[i], nums[j]))
                         if dfs(next_nums):
                             return True
