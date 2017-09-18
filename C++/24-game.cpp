@@ -1,5 +1,5 @@
-// Time:  O(n^3 * 4^n), n = 4
-// Space: O(n^2)
+// Time:  O(n^3 * 4^n) = O(1), n = 4
+// Space: O(n^2) = O(1)
 
 class Fraction {
 public:
@@ -115,31 +115,35 @@ private:
         if (nums.size() == 1) {
             return nums[0] == 24;
         }
+        static unordered_map<char, std::function<Fraction(Fraction, Fraction)>> ops =
+        {
+            {'+', std::plus<Fraction>()},
+            {'-', std::minus<Fraction>()},
+            {'*', std::multiplies<Fraction>()},
+            {'/', std::divides<Fraction>()},
+        };
         for (int i = 0; i < nums.size(); ++i) {
             for (int j = 0; j < nums.size(); ++j) {
                 if (i == j) {
                     continue;
                 }
-                unordered_map<char, std::function<Fraction(Fraction, Fraction)>> ops;
-                ops['+'] = std::plus<Fraction>();
-                ops['-'] = std::minus<Fraction>();
-                ops['*'] = std::multiplies<Fraction>();
-                ops['/'] = std::divides<Fraction>();
-                for (const auto& op : ops) {
-                    if (op.first == '/' && nums[j] == 0) {
+                vector<Fraction> next_nums;
+                for (int k = 0; k < nums.size(); ++k) {
+                    if (k == i || k == j) {
                         continue;
                     }
-                    vector<Fraction> next_nums;
-                    for (int k = 0; k < nums.size(); ++k) {
-                        if (k == i || k == j) {
-                            continue;
-                        }
-                        next_nums.emplace_back(nums[k]);
+                    next_nums.emplace_back(nums[k]);
+                }
+                for (const auto& op : ops) {
+                    if (((op.first == '+' || op.first == '*') && i > j) ||
+                        (op.first == '/' && nums[j] == 0)) {
+                        continue;
                     }
                     next_nums.emplace_back(op.second(nums[i], nums[j]));
                     if (dfs(next_nums)) {
                         return true;
                     }
+                    next_nums.pop_back();
                 }
             }
         }
