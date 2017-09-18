@@ -4,10 +4,10 @@
 class Solution {
 public:
     bool judgePoint24(vector<int>& nums) {
-        vector<double> fraction_nums;
-        std::transform(nums.begin(), nums.end(), std::back_inserter(fraction_nums),
+        vector<double> doubles;
+        std::transform(nums.begin(), nums.end(), std::back_inserter(doubles),
                        [](const int num) { return double(num); });
-        return dfs(fraction_nums);
+        return dfs(doubles);
     }
 
 private:
