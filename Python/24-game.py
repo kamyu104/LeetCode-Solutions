@@ -67,7 +67,7 @@ class Solution2(object):
                     next_nums = [nums[k] for k in xrange(len(nums)) if i != k != j]
                     for op in ops:
                         if ((op is add or op is mul) and j > i) or \
-                           (op == truediv and nums[j] == 0):
+                           (op == div and nums[j] == 0):
                             continue
                         next_nums.append(op(nums[i], nums[j]))
                         if dfs(next_nums):
