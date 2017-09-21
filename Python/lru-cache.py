@@ -9,14 +9,14 @@
 # set(key, value) - Set or insert the value if the key is not already present. 
 # When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
 
-class ListNode:
+class ListNode(object):
     def __init__(self, key, val):
         self.val = val
         self.key = key
         self.next = None
         self.prev = None
 
-class LinkedList:
+class LinkedList(object):
     def __init__(self):
         self.head = None
         self.tail = None
@@ -40,7 +40,7 @@ class LinkedList:
             self.tail = node.prev
         del node
 
-class LRUCache:
+class LRUCache(object):
 
     # @param capacity, an integer
     def __init__(self, capacity):
@@ -67,7 +67,7 @@ class LRUCache:
     # @param key, an integer
     # @param value, an integer
     # @return nothing
-    def set(self, key, val):
+    def put(self, key, val):
         if key in self.dict:
             self.list.delete(self.dict[key])
         elif len(self.dict) == self.capacity:
@@ -77,7 +77,7 @@ class LRUCache:
  
  
 import collections
-class LRUCache2:
+class LRUCache(object):
     def __init__(self, capacity):
         self.cache = collections.OrderedDict()
         self.capacity = capacity
@@ -90,12 +90,13 @@ class LRUCache2:
         self.cache[key] = val
         return val
 
-    def set(self, key, value):
+    def put(self, key, value):
         if key in self.cache:
             del self.cache[key]
         elif len(self.cache) == self.capacity:
             self.cache.popitem(last=False)
-        self.cache[key] = value   
+        self.cache[key] = value
+
         
 if __name__ == "__main__":
     cache = LRUCache(3)
