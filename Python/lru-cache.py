@@ -77,7 +77,7 @@ class LRUCache(object):
  
  
 import collections
-class LRUCache(object):
+class LRUCache2(object):
     def __init__(self, capacity):
         self.cache = collections.OrderedDict()
         self.capacity = capacity
