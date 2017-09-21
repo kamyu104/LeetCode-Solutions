@@ -19,7 +19,7 @@ public:
         }
     }
     
-    void set(int key, int value) {
+    void put(int key, int value) {
         // If cache is full while inserting, remove the last one.
         if (map_.find(key) == map_.end() && list_.size() == capa_) {
             auto del = list_.back(); list_.pop_back();
