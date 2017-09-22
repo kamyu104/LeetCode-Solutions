@@ -9,12 +9,12 @@ public:
     
     int pick(int target) {
         auto reservoir = -1;
-        int n = 0;
+        auto n = 0;
         for (int i = 0; i < nums_.size(); ++i) {
             if (nums_[i] != target) {
                 continue;
             }
-            if (++n == 1 || rand() % n == 0) {
+            if (rand() % ++n == 0) {
                 reservoir = i;
             }
         }
