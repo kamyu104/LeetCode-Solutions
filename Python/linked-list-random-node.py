@@ -40,8 +40,8 @@ class Solution(object):
         Returns a random node's value.
         :rtype: int
         """
-        reservoir = self.__head.val
-        curr, n = self.__head.next, 1
+        reservoir = -1
+        curr, n = self.__head, 0
         while curr:
             reservoir = curr.val if randint(1, n+1) == 1 else reservoir
             curr, n = curr.next, n+1
