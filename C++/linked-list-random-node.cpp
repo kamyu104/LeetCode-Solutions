@@ -13,7 +13,7 @@ public:
         auto reservoir = -1;
         auto n = 0;
         for (auto curr = head_; curr; curr = curr->next) {
-            if (++n == 1 || rand() % n == 0) {
+            if (rand() % ++n == 0) {
                 reservoir = curr->val;
             }
         }
