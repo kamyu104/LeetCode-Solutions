@@ -10,10 +10,10 @@ public:
     
     /** Returns a random node's value. */
     int getRandom() {
-        auto reservoir = head_->val;
-        auto n = 1;
-        for (auto curr = head_->next; curr; curr = curr->next) {
-            if (rand() % ++n == 0) {
+        auto reservoir = -1;
+        auto n = 0;
+        for (auto curr = head_; curr; curr = curr->next) {
+            if (++n == 1 || rand() % n == 0) {
                 reservoir = curr->val;
             }
         }
