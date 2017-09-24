@@ -7,9 +7,9 @@ class UnionFind(object):
         self.count = n
 
     def find_set(self, x):
-       if self.set[x] != x:
-           self.set[x] = self.find_set(self.set[x])  # path compression.
-       return self.set[x]
+        if self.set[x] != x:
+            self.set[x] = self.find_set(self.set[x])  # path compression.
+        return self.set[x]
 
     def union_set(self, x, y):
         x_root, y_root = map(self.find_set, (x, y))
