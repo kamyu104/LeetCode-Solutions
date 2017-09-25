@@ -153,7 +153,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 556| [Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/) |[C++](./C++/next-greater-element-iii.cpp)  [Python](./Python/next-greater-element-iii.py) | _O(1)_ | _O(1)_ | Medium         | |
 557| [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/) |[C++](./C++/reverse-words-in-a-string-iii.cpp)  [Python](./Python/reverse-words-in-a-string-iii.py) | _O(n)_ | _O(1)_ | Easy         | |
 647| [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | [C++](./C++/palindromic-substrings.cpp) [Python](./Python/palindromic-substrings.py) | _O(n)_ | _O(n)_ |  Medium || `Manacher's Algorithm`
-648| [Replace Words](https://leetcode.com/problems/replace-words/) | [C++](./C++/replace-words.cpp)  [Python](./Python/replace-words.py) | _O(n)_ | _O(t)_ | Medium         || `trie` |
+648| [Replace Words](https://leetcode.com/problems/replace-words/) | [C++](./C++/replace-words.cpp)  [Python](./Python/replace-words.py) | _O(n)_ | _O(t)_ | Medium         || Trie |
 657| [Judge Route Circle](https://leetcode.com/problems/judge-route-circle/) |[C++](./C++/judge-route-circle.cpp)  [Python](./Python/judge-route-circle.py) | _O(n)_ | _O(1)_ | Easy         | |
 678| [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/) |[C++](./C++/valid-parenthesis-string.cpp)  [Python](./Python/valid-parenthesis-string.py) | _O(n)_ | _O(1)_ | Medium         | |
 680| [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | [C++](./C++/valid-palindrome-ii.cpp) [Python](./Python/valid-palindrome-ii.py) | _O(n)_  | _O(1)_         | Easy           ||
