@@ -117,6 +117,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 667| [Beautiful Arrangement II](https://leetcode.com/problems/beautiful-arrangement-ii/) | [C++](./C++/beautiful-arrangement-ii.cpp) [Python](./Python/beautiful-arrangement-ii.py)  | _O(n)_ |  _O(1)_ | Medium         |||
 670| [Maximum Swap](https://leetcode.com/problems/maximum-swap/) | [C++](./C++/maximum-swap.cpp) [Python](./Python/maximum-swap.py)  | _O(logn)_ |  _O(logn)_ | Medium         |||
 674 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | [C++](./C++/longest-continuous-increasing-subsequence.cpp) [Python](./Python/longest-continuous-increasing-subsequence.py) | _O(n)_ | _O(1)_ | Easy ||
+683 | [K Empty Slots](https://leetcode.com/problems/k-empty-slots/) | [C++](./C++/k-empty-slots.cpp) [Python](./Python/k-empty-slots.py) | _O(n)_ | _O(n)_ | Hard ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -156,6 +157,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 657| [Judge Route Circle](https://leetcode.com/problems/judge-route-circle/) |[C++](./C++/judge-route-circle.cpp)  [Python](./Python/judge-route-circle.py) | _O(n)_ | _O(1)_ | Easy         | |
 678| [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/) |[C++](./C++/valid-parenthesis-string.cpp)  [Python](./Python/valid-parenthesis-string.py) | _O(n)_ | _O(1)_ | Medium         | |
 680| [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | [C++](./C++/valid-palindrome-ii.cpp) [Python](./Python/valid-palindrome-ii.py) | _O(n)_  | _O(1)_         | Easy           ||
+681| [Next Closest Time](https://leetcode.com/problems/next-closest-time/) | [C++](./C++/next-closest-time.cpp) [Python](./Python/next-closest-time.py) | _O(1)_  | _O(1)_         | Medium           ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -202,6 +204,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 394| [Decode String](https://leetcode.com/problems/decode-string/)| [C++](./C++/decode-string.cpp) [Python](./Python/decode-string.py) | _O(n)_        | _O(h)_          | Medium           |||
 439| [Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser/) | [C++](./C++/ternary-expression-parser.cpp) [Python](./Python/ternary-expression-parser.py) | _O(n)_          | _O(1)_          | Medium           |📖|
 456| [132 Pattern](https://leetcode.com/problems/132-pattern/) | [C++](./C++/132-pattern.cpp) [Python](./Python/132-pattern.py) | _O(n)_          | _O(n)_          | Medium           ||
+682| [Baseball Game](https://leetcode.com/problems/baseball-game/) | [C++](./C++/baseball-game.cpp) [Python](./Python/baseball-game.py) | _O(n)_  | _O(n)_         | Easy           ||
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -242,6 +245,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 662 | [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) | [C++](./C++/maximum-width-of-binary-tree.cpp) [Python](./Python/maximum-width-of-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | | DFS
 663 | [Equal Tree Partition](https://leetcode.com/problems/strange-printer/) | [C++](./C++/equal-tree-partition.cpp) [Python](./Python/equal-tree-partition.py) | _O(n)_ | _O(n)_ | Medium | 📖 | Hash
 677 | [Map Sum Pairs](https://leetcode.com/problems/map-sum-pairs/) | [C++](./C++/map-sum-pairs.cpp) [Python](./Python/map-sum-pairs.py) | _O(n)_ | _O(t)_ | Medium || Trie
+684 | [Redundant Connection](https://leetcode.com/problems/redundant-connection/) | [C++](./C++/redundant-connection.cpp) [Python](./Python/redundant-connection.py) | _O(n)_ | _O(n)_ | Medium || Union Find
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
