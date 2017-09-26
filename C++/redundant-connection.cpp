@@ -4,7 +4,7 @@
 class Solution {
 public:
     vector<int> findRedundantConnection(vector<vector<int>>& edges) {
-        UnionFind union_find(2000);
+        UnionFind union_find(edges.size() + 1);
         for (const auto& edge : edges) {
             if (!union_find.union_set(edge[0], edge[1])) {
                 return edge;
