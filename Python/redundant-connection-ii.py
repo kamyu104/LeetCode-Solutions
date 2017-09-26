@@ -50,7 +50,7 @@ class UnionFind(object):
     def union_set(self, x, y):
         x_root, y_root = map(self.find_set, (x, y))
         if x_root == y_root or \
-           y != y_root:  # more the one father
+           y != y_root:  # already has a father
             return False
         self.set[y_root] = x_root
         self.count -= 1
