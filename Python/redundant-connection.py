@@ -26,8 +26,8 @@
 #  / \\
 # 2   3
 # Note:
-# The size of the input 2D-array will be between 1 and 1000.
-# Every integer represented in the 2D-array will be between 1 and 2000.
+# The size of the input 2D-array will be between 3 and 1000.
+# Every integer represented in the 2D-array will be between 1 and N, where N is the size of the input array.
 
 class UnionFind(object):
     def __init__(self, n):
@@ -54,7 +54,7 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        union_find = UnionFind(2000)
+        union_find = UnionFind(len(edges)+1)
         for edge in edges:
             if not union_find.union_set(*edge):
                 return edge
