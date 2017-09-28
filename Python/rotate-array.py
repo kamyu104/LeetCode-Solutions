@@ -60,6 +60,28 @@ class Solution2:
             nums[(offset + i * k) % len(nums)], tmp = tmp, nums[(offset + i * k) % len(nums)]
         nums[offset] = tmp
 
+   class Solution3:
+    """
+    :type nums: List[int]
+    :type k: int
+    :rtype: void Do not return anything, modify nums in-place instead.
+    """
+
+    def rotate(self, nums, k):
+        count = 0
+        start = 0
+        while count < len(nums):
+            curr = start
+            prev = nums[curr]
+            while True:
+                idx = (curr + k) % len(nums)
+                nums[idx], prev = prev, nums[idx]
+                curr = idx
+                count += 1
+                if start == curr:
+                    break
+            start += 1
+    
 
 if __name__ == '__main__':
     nums = [1, 2, 3, 4, 5, 6, 7]
