@@ -60,7 +60,8 @@ class Solution2:
             nums[(offset + i * k) % len(nums)], tmp = tmp, nums[(offset + i * k) % len(nums)]
         nums[offset] = tmp
 
-   class Solution3:
+        
+class Solution3:
     """
     :type nums: List[int]
     :type k: int
