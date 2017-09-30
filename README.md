@@ -493,7 +493,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 417 | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [C++](./C++/pacific-atlantic-water-flow.cpp) [Python](./Python/pacific-atlantic-water-flow.py) | _O(m * n)_ | _O(m * n)_ | Medium ||
 440| [K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/) | [C++](./C++/k-th-smallest-in-lexicographical-order.cpp) [Python](./Python/k-th-smallest-in-lexicographical-order.py) | _O(logn)_          | _O(logn)_          | Hard           ||
 464| [Can I Win](https://leetcode.com/problems/can-i-win/) | [C++](./C++/can-i-win.cpp) [Python](./Python/can-i-win.py) | _O(n!)_          | _O(n)_          | Medium           ||
-690| [Employee Importance](https://leetcode.com/problems/employee-importance/) | [C++](./C++/employee-importance.cpp) [Python](./Python/employee-importance) | _O(n)_          | _O(h)_          | Easy           || DFS, BFS
+690| [Employee Importance](https://leetcode.com/problems/employee-importance/) | [C++](./C++/employee-importance.cpp) [Python](./Python/employee-importance.py) | _O(n)_          | _O(h)_          | Easy           || DFS, BFS
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
