@@ -35,7 +35,7 @@ class Solution(object):
         left_pos = [0] * n
         total = accu[k]-accu[0]
         for i in xrange(k, n):
-            if accu[i+1] - accu[i+1-k] > total:
+            if accu[i+1]-accu[i+1-k] > total:
                 left_pos[i] = i+1-k
                 total = accu[i+1]-accu[i+1-k]
             else:
