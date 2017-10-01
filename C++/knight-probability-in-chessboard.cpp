@@ -13,10 +13,10 @@ public:
                 for (int j = 0; j < N; ++j) {
                     dp[step % 2][i][j] = 0;
                     for (const auto& direction : directions) {
-                        auto r = i + direction.first;
-                        auto c = j + direction.second;
-                        if (0 <= c && c < N && 0 <= r && r < N) {
-                            dp[step % 2][i][j] += 0.125 * dp[(step - 1) % 2][r][c];
+                        auto rr = i + direction.first;
+                        auto cc = j + direction.second;
+                        if (0 <= cc && cc < N && 0 <= rr && rr < N) {
+                            dp[step % 2][i][j] += 0.125l * dp[(step - 1) % 2][rr][cc];
                         }
                     }
                 }
