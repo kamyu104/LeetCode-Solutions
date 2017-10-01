@@ -1,7 +1,7 @@
 // Time:  O(n + m)
 // Space: O(1)
 
-// Rabin-Karp (rolling hash)
+// Rabin-Karp Algorithm (rolling hash)
 class Solution {
 public:
     int repeatedStringMatch(string A, string B) {
