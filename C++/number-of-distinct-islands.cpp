@@ -17,9 +17,9 @@ public:
     }
 
 private:
-
     bool dfs(const int i, const int j,
              vector<vector<int>> *grid, string *island) {
+        
         static const unordered_map<char, pair<int, int>>
             directions = { {'l', {-1,  0} }, {'r', { 1,  0} },
                            {'u', { 0,  1} }, {'d', { 0, -1} }};
