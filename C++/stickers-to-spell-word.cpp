@@ -1,5 +1,5 @@
 // Time:  O(T * S^T)
-// Space: O(S^T + T^2)
+// Space: O(T * S^T)
 
 class Solution {
 public:
