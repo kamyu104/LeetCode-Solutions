@@ -32,7 +32,7 @@ private:
         (*grid)[i][j] *= -1;
         for (const auto& kvp : directions) {
             island->push_back(kvp.first);
-            dfs(i + kvp.second.first, j +kvp.second.second, grid, island);
+            dfs(i + kvp.second.first, j + kvp.second.second, grid, island);
         }
         return true;
     }
