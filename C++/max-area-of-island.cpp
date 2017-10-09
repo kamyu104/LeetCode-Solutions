@@ -7,9 +7,9 @@ public:
         int result = 0;
         for (int i = 0; i < grid.size(); ++i) {
             for (int j = 0; j < grid[0].size(); ++j) {
-                int length = 0;
-                if (dfs(i, j, &grid, &length)) {
-                    result = max(result, length);
+                int area = 0;
+                if (dfs(i, j, &grid, &area)) {
+                    result = max(result, area);
                 }
             }
         }
@@ -17,7 +17,7 @@ public:
     }
 
 private:
-    bool dfs(const int i, const int j, vector<vector<int>> *grid, int *length) {
+    bool dfs(const int i, const int j, vector<vector<int>> *grid, int *area) {
         static const vector<pair<int, int>> directions{{-1,  0}, { 1,  0},
                                                        { 0,  1}, { 0, -1}};
         if (i < 0 || i >= grid->size() ||
@@ -26,9 +26,9 @@ private:
             return false;
         }
         (*grid)[i][j] *= -1;
-        ++(*length);
+        ++(*area);
         for (const auto& d : directions) {
-            dfs(i + d.first, j + d.second, grid, length);
+            dfs(i + d.first, j + d.second, grid, area);
         }
         return true;
     }
