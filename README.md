@@ -498,7 +498,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 464| [Can I Win](https://leetcode.com/problems/can-i-win/) | [C++](./C++/can-i-win.cpp) [Python](./Python/can-i-win.py) | _O(n!)_          | _O(n)_          | Medium           ||
 690| [Employee Importance](https://leetcode.com/problems/employee-importance/) | [C++](./C++/employee-importance.cpp) [Python](./Python/employee-importance.py) | _O(n)_          | _O(h)_          | Easy           || DFS, BFS
 694| [Number of Distinct Islands](https://leetcode.com/problems/number-of-distinct-islands/) | [C++](./C++/number-of-distinct-islands.cpp) [Python](./Python/number-of-distinct-islands.py) | _O(m * n)_          | _O(m * n)_          | Medium           |📖||
-695| [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [C++](./C++/max-area-of-island.cpp) [Python](./Python/max-area-of-island.py) | _O(m * n)_          | _O(m + n)_          | Easy           ||
+695| [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [C++](./C++/max-area-of-island.cpp) [Python](./Python/max-area-of-island.py) | _O(m * n)_          | _O(m * n)_          | Easy           ||
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
