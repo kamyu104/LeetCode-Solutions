@@ -44,7 +44,6 @@ class Solution(object):
         
         result = []
         sorted_p = sorted(p[:k])
-        print sorted_p
         for i in xrange(k):
             result.append(sorted_p[i][1])
         return result
