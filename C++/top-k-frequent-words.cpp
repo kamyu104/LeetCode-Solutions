@@ -1,4 +1,4 @@
-// Time:  O(n + klogk)
+// Time:  O(n + klogk) on average
 // Space: O(n)
 
 class Solution {
@@ -12,7 +12,7 @@ public:
         for (auto it = counts.begin(); it != counts.end(); ++it) {
             p.emplace_back(-(it->second), it->first);
         }
-        nth_element(p.begin(), p.begin() + k - 1, p.end());  // O(n) time.
+        nth_element(p.begin(), p.begin() + k - 1, p.end());  // O(n) time on average.
         sort(p.begin(), p.begin() + k);  // O(klogk) time.
         vector<string> result;
         for (int i = 0; i < k; ++i) {
