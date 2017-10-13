@@ -1,4 +1,4 @@
-# Time:  O(n) ~ O(n^2), O(n) on average.
+# Time:  O(n)
 # Space: O(n)
 
 # Given a non-empty array of integers,
@@ -13,9 +13,35 @@
 # Your algorithm's time complexity must be better
 # than O(n log n), where n is the array's size.
 
-from random import randint
-
+# Bucket Sort Solution
 class Solution(object):
+    def topKFrequent(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+        counts = collections.defaultdict(int)
+        for i in nums:
+            counts[i] += 1
+        buckets = [[] for _ in xrange(len(nums)+1)]
+        for i, count in counts.iteritems():
+            buckets[count].append(i)
+            
+        result = []
+        for i in reversed(xrange(len(buckets))):
+            for j in xrange(len(buckets[i])):
+                result.append(buckets[i][j])
+                if len(result) == k:
+                    return result
+        return result
+
+
+# Time:  O(n) ~ O(n^2), O(n) on average.
+# Space: O(n)
+# Quick Select Solution
+from random import randint
+class Solution2(object):
     def topKFrequent(self, nums, k):
         """
         :type nums: List[int]
@@ -64,7 +90,7 @@ class Solution(object):
 
 # Time:  O(nlogk)
 # Space: O(n)
-class Solution2(object):
+class Solution3(object):
     def topKFrequent(self, nums, k):
         """
         :type nums: List[int]
