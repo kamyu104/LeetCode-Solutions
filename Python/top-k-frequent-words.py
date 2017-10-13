@@ -24,8 +24,8 @@
 # Try to solve it in O(n log k) time and O(n) extra space.
 # Can you solve it in O(n) time with only O(k) extra space?
 
+# Quick Select Solution
 from random import randint
-
 class Solution(object):
     def topKFrequent(self, words, k):
         """
