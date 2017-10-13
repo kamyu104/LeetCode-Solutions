@@ -10,8 +10,8 @@ public:
             ++counts[word];
         }
         vector<pair<int, string>> p;
-        for (auto it = counts.begin(); it != counts.end(); ++it) {
-            p.emplace_back(-(it->second), it->first);
+        for (const auto& kvp : counts) {
+            p.emplace_back(-kvp.second, kvp.first);
         }
         nth_element(p.begin(), p.begin() + k - 1, p.end());  // O(n) time on average.
         sort(p.begin(), p.begin() + k);  // O(klogk) time.
