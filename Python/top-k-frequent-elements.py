@@ -21,9 +21,7 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-        counts = collections.defaultdict(int)
-        for i in nums:
-            counts[i] += 1
+        counts = collections.Counter(words)
         buckets = [[] for _ in xrange(len(nums)+1)]
         for i, count in counts.iteritems():
             buckets[count].append(i)
@@ -48,10 +46,7 @@ class Solution2(object):
         :type k: int
         :rtype: List[int]
         """
-        counts = collections.defaultdict(int)
-        for i in nums:
-            counts[i] += 1
-
+        counts = collections.Counter(words)
         p = []
         for key, val in counts.iteritems():
             p.append((-val, key))
