@@ -33,10 +33,7 @@ class Solution(object):
         :type k: int
         :rtype: List[str]
         """
-        counts = collections.defaultdict(int)
-        for i in words:
-            counts[i] += 1
-
+        counts = collections.Counter(words)
         p = []
         for key, val in counts.iteritems():
             p.append((-val, key))
