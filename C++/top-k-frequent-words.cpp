@@ -50,3 +50,37 @@ public:
         return result;
     }
 };
+
+
+// Time:  O(n + klogk) ~ O(n + nlogn)
+// Space: O(n)
+// Bucket Sort Solution
+class Solution3 {
+public:
+    vector<string> topKFrequent(vector<string>& words, int k) {
+        unordered_map<string, int> counts;
+        for (const auto& word : words) {
+            ++counts[word];
+        }
+        vector<vector<string>> buckets(words.size() + 1);
+        for (const auto& kvp : counts) {
+            buckets[kvp.second].emplace_back(kvp.first);
+        }
+
+        vector<pair<int, string>> p;
+        for (int i = buckets.size() - 1; i >= 0; --i) {
+            for (const auto& word : buckets[i]) {
+                p.emplace_back(-i, word);
+            }
+            if (p.size() >= k) {
+                break;
+            }
+        }
+        sort(p.begin(), p.end());
+        vector<string> result;
+        for (int i = 0; i < k; ++i) {
+            result.emplace_back(p[i].second);
+        }
+        return result;
+    }
+};
