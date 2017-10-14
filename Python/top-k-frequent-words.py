@@ -86,13 +86,13 @@ class Solution2(object):
         """
         class MinHeapObj(object):
             def __init__(self,val): self.val = val
-            def __lt__(self,other): return self.val[1] > other.val[1] if self.val[0] == other.val[0] else self.val < other.val
+            def __lt__(self,other):
+                return self.val[1] > other.val[1] if self.val[0] == other.val[0] else \
+                       self.val < other.val
             def __eq__(self,other): return self.val == other.val
             def __str__(self): return str(self.val)
 
-        counts = collections.defaultdict(int)
-        for i in words:
-            counts[i] += 1
+        counts = collections.Counter(words)
         min_heap = []
         for word, count in counts.iteritems():
             heapq.heappush(min_heap, MinHeapObj((count, word)))
