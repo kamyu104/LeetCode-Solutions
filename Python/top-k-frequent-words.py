@@ -102,3 +102,27 @@ class Solution2(object):
         while min_heap:
             result.append(heapq.heappop(min_heap).val[1])
         return result[::-1]
+
+
+# Time:  O(n + klogk) ~ O(n + nlogn)
+# Space: O(n)
+# Bucket Sort Solution
+class Solution3(object):
+    def topKFrequent(self, words, k):
+        """
+        :type words: List[str]
+        :type k: int
+        :rtype: List[str]
+        """
+        counts = collections.Counter(words)
+        buckets = [[] for _ in xrange(len(words)+1)]
+        for word, count in counts.iteritems():
+            buckets[count].append(word)
+        pairs = []
+        for i in reversed(xrange(len(words))):
+            for word in buckets[i]:
+                pairs.append((-i, word))
+            if len(pairs) >= k:
+                break
+        pairs.sort()
+        return [pair[1] for pair in pairs[:k]]
