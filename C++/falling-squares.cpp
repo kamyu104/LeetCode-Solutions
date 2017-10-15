@@ -102,9 +102,81 @@ private:
 };
 
 
-// Time:  O(n^2)
+// Time:  O(n * sqrt(n))
 // Space: O(n)
 class Solution2 {
+public:
+    vector<int> fallingSquares(vector<pair<int, int>>& positions) {
+        set<int> index;
+        for (const auto& position : positions) {
+            index.emplace(position.first);
+            index.emplace(position.first + position.second - 1);
+        }
+        const auto W = index.size();
+        const auto B = static_cast<int>(sqrt(W));
+        vector<int> heights(W);
+        vector<int> blocks(B + 2), blocks_read(B + 2);
+        
+        auto max_height = 0;
+        vector<int> result;
+        for (const auto& position : positions) {
+            const auto L = distance(index.begin(), index.find(position.first));
+            const auto R = distance(index.begin(), index.find(position.first + position.second - 1));
+            const auto h = query(B, L, R, heights, blocks, blocks_read) + position.second;
+            update(B, h, L, R, &heights, &blocks, &blocks_read);
+            max_height = max(max_height, h);
+            result.emplace_back(max_height);
+        }
+        return result;
+    }
+
+private:
+    int query(const int B,
+              int left, int right,
+              const vector<int>& heights,
+              const vector<int>& blocks, const vector<int>& blocks_read) {
+        int result = 0;
+        while (left % B > 0 && left <= right) {
+            result = max(result, max(heights[left], blocks[left / B]));
+            result = max(result, blocks[left / B]);
+            ++left;
+        }
+        while (right % B != B - 1 && left <= right) {
+            result = max(result, max(heights[right], blocks[right / B]));
+            --right;
+        }
+        while (left <= right) {
+            result = max(result, max(blocks[left / B], blocks_read[left / B]));
+            left += B;
+        }
+        return result;
+    }
+
+    void update(const int B, const int h,
+                int left, int right,
+                vector<int> *heights,
+                vector<int> *blocks, vector<int> *blocks_read) {
+        while (left % B > 0 && left <= right) {
+            (*heights)[left] = max((*heights)[left], h);
+            (*blocks_read)[left / B] = max((*blocks_read)[left / B], h);
+            ++left;
+        }
+        while (right % B != B - 1 && left <= right) {
+            (*heights)[right] = max((*heights)[right], h);
+            (*blocks_read)[right / B] = max((*blocks_read)[right / B], h);
+            --right;
+        }
+        while (left <= right) {
+            (*blocks)[left / B] = max((*blocks)[left / B], h);
+            left += B;
+        }
+    }
+};
+
+
+// Time:  O(n^2)
+// Space: O(n)
+class Solution3 {
 public:
     vector<int> fallingSquares(vector<pair<int, int>>& positions) {
         vector<int> heights(positions.size());
