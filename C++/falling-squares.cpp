@@ -14,8 +14,8 @@ public:
         auto max_height = 0;
         vector<int> result;
         for (const auto& position : positions) {
-            const auto L = distance(index.begin(), index.lower_bound(position.first));
-            const auto R = distance(index.begin(), index.lower_bound(position.first + position.second - 1));
+            const auto L = distance(index.begin(), index.find(position.first));
+            const auto R = distance(index.begin(), index.find(position.first + position.second - 1));
             const auto h = tree.query(L, R) + position.second;
             tree.update(L, R, h);
             max_height = max(max_height, h);
