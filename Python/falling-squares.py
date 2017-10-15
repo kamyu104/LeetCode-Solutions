@@ -147,7 +147,7 @@ class Solution(object):
         return result
 
 
-# Time:  O(nlogn)
+# Time:  O(n^2)
 # Space: O(n)
 class Solution2(object):
     def fallingSquares(self, positions):
