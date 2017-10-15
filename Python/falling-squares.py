@@ -1,4 +1,4 @@
-# Time:  O(n^2)
+# Time:  O(nlogn)
 # Space: O(n)
 
 # On an infinite number line (x-axis), we drop given squares in the order they are given.
@@ -65,7 +65,91 @@
 # 1 <= positions[0] <= 10^8.
 # 1 <= positions[1] <= 10^6.
 
+class SegmentTree(object):
+    def __init__(self, N, update_fn, query_fn):
+        self.N = N
+        self.H = 1
+        while (1 << self.H) < N:
+            self.H += 1
+
+        self.update_fn = update_fn
+        self.query_fn = query_fn
+        self.tree = [0] * (2 * N)
+        self.lazy = [0] * N
+
+    def __apply(self, x, val):
+        self.tree[x] = self.update_fn(self.tree[x], val)
+        if x < self.N:
+            self.lazy[x] = self.update_fn(self.lazy[x], val)
+
+    def __pull(self, x):
+        while x > 1:
+            x /= 2
+            self.tree[x] = self.query_fn(self.tree[x*2], self.tree[x*2 + 1])
+            self.tree[x] = self.update_fn(self.tree[x], self.lazy[x])
+
+    def __push(self, x):
+        for h in xrange(self.H, 0, -1):
+            y = x >> h
+            if self.lazy[y]:
+                self.__apply(y*2, self.lazy[y])
+                self.__apply(y*2 + 1, self.lazy[y])
+                self.lazy[y] = 0
+
+    def update(self, L, R, h):
+        L += self.N
+        R += self.N
+        L0, R0 = L, R
+        while L <= R:
+            if L & 1:
+                self.__apply(L, h)
+                L += 1
+            if R & 1 == 0:
+                self.__apply(R, h)
+                R -= 1
+            L /= 2; R /= 2
+        self.__pull(L0)
+        self.__pull(R0)
+
+    def query(self, L, R):
+        L += self.N
+        R += self.N
+        self.__push(L); self.__push(R)
+        result = 0
+        while L <= R:
+            if L & 1:
+                result = self.query_fn(result, self.tree[L])
+                L += 1
+            if R & 1 == 0:
+                result = self.query_fn(result, self.tree[R])
+                R -= 1
+            L /= 2; R /= 2
+        return result
+
+
+# Segment Tree solution.
 class Solution(object):
+    def fallingSquares(self, positions):
+        index = set()
+        for left, size in positions:
+            index.add(left);
+            index.add(left+size-1)
+        index = sorted(list(index))
+        tree = SegmentTree(len(index), max, max)
+        max_height = 0
+        result = []
+        for left, size in positions:
+            L, R = bisect.bisect_left(index, left), bisect.bisect_left(index, left+size-1)
+            h = tree.query(L, R) + size
+            tree.update(L, R, h)
+            max_height = max(max_height, h)
+            result.append(max_height)
+        return result
+
+
+# Time:  O(nlogn)
+# Space: O(n)
+class Solution2(object):
     def fallingSquares(self, positions):
         """
         :type positions: List[List[int]]
