@@ -1,4 +1,4 @@
-# Time:  O(k^n)
+# Time:  O(k^(n-k) * k!)
 # Space: O(n)
 
 class Solution(object):
@@ -18,6 +18,7 @@ class Solution(object):
                 if dfs(nums, target, i+1, subset_sums):
                     return True
                 subset_sums[k] -= nums[i]
+                if not subset_sums[k]: break
             return False
 
         total = sum(nums)
