@@ -1,7 +1,7 @@
 // Time:  O(n*2^n)
 // Space: O(2^n)
 
-// DP solution.
+// Memoization solution.
 class Solution {
 public:
     bool canPartitionKSubsets(vector<int>& nums, int k) {
