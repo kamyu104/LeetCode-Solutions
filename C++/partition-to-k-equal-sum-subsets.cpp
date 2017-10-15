@@ -1,4 +1,4 @@
-// Time:  O(k^n)
+// Time:  O(k^(n-k) * k!)
 // Space: O(n)
 
 class Solution {
@@ -28,6 +28,9 @@ private:
                 return true;
             }
             subset_sum -= nums[i];
+            if (subset_sum == 0) {
+                break;
+            }
         }
         return false;
     }
