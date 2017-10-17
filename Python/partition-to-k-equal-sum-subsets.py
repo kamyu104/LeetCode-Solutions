@@ -65,4 +65,4 @@ class Solution2(object):
             return False
         nums.sort(reverse=True)
         subset_sums = [0] * k
-        return dfs(nums, total/k, 0, subset_sums)
+        return dfs(nums, total//k, 0, subset_sums)
