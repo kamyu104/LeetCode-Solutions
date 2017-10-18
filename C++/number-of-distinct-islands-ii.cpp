@@ -62,8 +62,6 @@ private:
         }
         for (auto& shape : shapes) {
             sort(shape.begin(), shape.end());  // Time: O(ilogi), i is the size of the island, the max would be (m * n)
-        }
-        for (auto& shape : shapes) {
             const auto origin = shape.front();
             for (auto& p : shape) {
                 p = {p.first  - origin.first,
