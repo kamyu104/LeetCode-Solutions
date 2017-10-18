@@ -70,8 +70,6 @@ private:
                      p.second - origin.second};
             }
         }
-        sort(shapes.begin(), shapes.end());
-        return shapes.front();
-    }
-    
+        return *min_element(shapes.begin(), shapes.end());
+    }    
 };
