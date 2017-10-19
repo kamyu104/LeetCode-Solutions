@@ -1,5 +1,5 @@
-# Time:  ((m * n) * log(m * n))
-# Space: (m * n)
+# Time:  O((m * n) * log(m * n))
+# Space: O(m * n)
 
 class Solution(object):
     def numDistinctIslands2(self, grid):
