@@ -13,58 +13,58 @@ public:
     void addRange(int left, int right) {
         vector<pair<int, int>> tmp;
         int i = 0;
-        for (const auto& range: ranges_) {
-            if (range.first > right) {
+        for (const auto& interval: intervals_) {
+            if (right < interval.first ) {
                 tmp.emplace_back(left, right);
                 break;
-            } else if (range.second < left) {
-                tmp.emplace_back(range);
+            } else if (interval.second < left) {
+                tmp.emplace_back(interval);
             } else {
-                left = min(left, range.first);
-                right = max(right, range.second);
+                left = min(left, interval.first);
+                right = max(right, interval.second);
             }
             ++i;
         }
-        if (i == ranges_.size()) {
+        if (i == intervals_.size()) {
             tmp.emplace_back(left, right);
         }
-        while (i < ranges_.size()) {
-            tmp.emplace_back(ranges_[i++]);
+        while (i < intervals_.size()) {
+            tmp.emplace_back(intervals_[i++]);
         }
-        swap(ranges_, tmp);
+        swap(intervals_, tmp);
     }
     
     // Time:  O(logn)
     bool queryRange(int left, int right) {
-        const auto it = lower_bound(ranges_.begin(), ranges_.end(), make_pair(left, right),
+        const auto it = lower_bound(intervals_.begin(), intervals_.end(), make_pair(left, right),
                                     [](const pair<int, int>& lhs,
                                        const pair<int, int>& rhs) {
                                            return less<int>{}(lhs.second, rhs.first);
                                     });
-        return it != ranges_.end() && it->first <= left && it->second >= right;
+        return it != intervals_.end() && it->first <= left && it->second >= right;
     }
     
     // Time:  O(n)
     void removeRange(int left, int right) {
-        int n = ranges_.size();
+        int n = intervals_.size();
         vector<pair<int, int>> tmp;
-        for (const auto& range : ranges_) {
-            if (range.second <= left || range.first >= right) {
-                tmp.emplace_back(range);
+        for (const auto& interval : intervals_) {
+            if (interval.second <= left || interval.first >= right) {
+                tmp.emplace_back(interval);
             } else {
-                if (range.first < left) {
-                    tmp.emplace_back(range.first, left);
+                if (interval.first < left) {
+                    tmp.emplace_back(interval.first, left);
                 }
-                if (right < range.second) {
-                    tmp.emplace_back(right, range.second);
+                if (right < interval.second) {
+                    tmp.emplace_back(right, interval.second);
                 }
             }
         }
-        swap(ranges_, tmp);
+        swap(intervals_, tmp);
     }
     
 private:
-    vector<pair<int, int>> ranges_;
+    vector<pair<int, int>> intervals_;
 };
 
 /**
