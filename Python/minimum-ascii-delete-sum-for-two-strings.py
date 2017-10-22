@@ -40,7 +40,7 @@ class Solution(object):
                 if s1[i] == s2[j]:
                     dp[(i+1)%2][j+1] = dp[i%2][j]
                 else:
-                    dp[(i+1)%2][j+1] = min(dp[i%2][j+1] + ord(s1[i]),
+                    dp[(i+1)%2][j+1] = min(dp[i%2][j+1] + ord(s1[i]), \
                                            dp[(i+1)%2][j] + ord(s2[j]))
 
         return dp[len(s1)%2][-1]
@@ -66,7 +66,7 @@ class Solution2(object):
                 if s1[i] == s2[j]:
                     dp[i+1][j+1] = dp[i][j]
                 else:
-                    dp[i+1][j+1] = min(dp[i][j+1] + ord(s1[i]),
+                    dp[i+1][j+1] = min(dp[i][j+1] + ord(s1[i]), \
                                        dp[i+1][j] + ord(s2[j]))
 
         return dp[-1][-1]
