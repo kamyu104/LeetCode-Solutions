@@ -55,9 +55,7 @@ class Solution2(object):
         :type s2: str
         :rtype: int
         """
-        
         dp = [[0] * (len(s2)+1) for _ in xrange(len(s1)+1)]
-
         for i in xrange(len(s1)):
             dp[i+1][0] = dp[i][0] + ord(s1[i])
         for j in xrange(len(s2)):
