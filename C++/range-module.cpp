@@ -46,7 +46,6 @@ public:
     
     // Time:  O(n)
     void removeRange(int left, int right) {
-        int n = intervals_.size();
         vector<pair<int, int>> tmp;
         for (const auto& interval : intervals_) {
             if (interval.second <= left || interval.first >= right) {
