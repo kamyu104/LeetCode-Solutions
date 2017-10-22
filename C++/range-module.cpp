@@ -55,7 +55,7 @@ public:
                 if (range.first < left) {
                     tmp.emplace_back(range.first, left);
                 }
-                if (range.second > right) {
+                if (right < range.second) {
                     tmp.emplace_back(right, range.second);
                 }
             }
