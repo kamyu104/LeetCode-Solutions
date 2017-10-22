@@ -43,6 +43,15 @@ public:
                                     });
         return it != intervals_.end() && it->first <= left && it->second >= right;
     }
+
+    // Time:  O(logn)
+    bool queryRange2(int left, int right) {
+        auto it = lower_bound(intervals_.begin(), intervals_.end(), make_pair(left, numeric_limits<int>::max()));
+        if (it != intervals_.begin()) {
+            it = prev(it);
+        }
+        return it != intervals_.end() && it->first <= left && it->second >= right;
+    }
     
     // Time:  O(n)
     void removeRange(int left, int right) {
