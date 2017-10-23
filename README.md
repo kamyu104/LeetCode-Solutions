@@ -122,6 +122,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 674 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | [C++](./C++/longest-continuous-increasing-subsequence.cpp) [Python](./Python/longest-continuous-increasing-subsequence.py) | _O(n)_ | _O(1)_ | Easy ||
 683 | [K Empty Slots](https://leetcode.com/problems/k-empty-slots/) | [C++](./C++/k-empty-slots.cpp) [Python](./Python/k-empty-slots.py) | _O(n)_ | _O(n)_ | Hard ||
 697| [Degree of an Array](https://leetcode.com/problems/degree-of-an-array/) | [C++](./C++/degree-of-an-array.cpp) [Python](./Python/degree-of-an-array.py) | _O(n)_ | _O(n)_ | Easy ||
+713 | [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) | [C++](./C++/subarray-product-less-than-k.cpp) [Python](./Python/subarray-product-less-than-k.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -593,6 +594,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 688 | [Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard/) | [C++](./C++/knight-probability-in-chessboard.cpp) [Python](./Python/knight-probability-in-chessboard.py) | _O(k * n^2)_ | _O(n^2)_ | Medium ||
 689 | [Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/) | [C++](./C++/maximum-sum-of-3-non-overlapping-subarrays.cpp) [Python](./Python/maximum-sum-of-3-non-overlapping-subarrays.py) | _O(n)_ | _O(n)_ | Hard ||
 691 | [Stickers to Spell Word](https://leetcode.com/problems/stickers-to-spell-word/) | [C++](./C++/stickers-to-spell-word.cpp) [Python](./Python/stickers-to-spell-word.py) | _O(T * S^T)_ | _O(T * S^T)_ | Hard || Backtracking, Memoization
+712 | [Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/) | [C++](./C++/minimum-ascii-delete-sum-for-two-strings.cpp) [Python](./Python/minimum-ascii-delete-sum-for-two-strings.py) | _O(m * n)_ | _O(n)_ | Medium ||
+714 | [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [C++](./C++/best-time-to-buy-and-sell-stock-with-transaction-fee.cpp) [Python](./Python/best-time-to-buy-and-sell-stock-with-transaction-fee.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -637,6 +640,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 432| [All O\`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/) | [C++](./C++/all-oone-data-structure.cpp) [Python](./Python/all-oone-data-structure.py) | _O(1)_ | _O(n)_| Hard || |
 460| [LFU Cache](https://leetcode.com/problems/lfu-cache/) | [C++](./C++/lfu-cache.cpp) [Python](./Python/lfu-cache.py) | _O(1)_ | _O(k)_ | Hard || |
 642| [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | [C++](./C++/design-search-autocomplete-system.cpp) [Python](./Python/design-search-autocomplete-system.py) | _O(p^2)_ | _O(p * t + s)_ | Hard |📖| |
+715| [Range Module](https://leetcode.com/problems/range-module/) | [C++](./C++/range-module.cpp) [Python](./Python/range-module.py) | addRange: _O(n)_<br> removeRange: _O(n)_<br> queryRange: _O(logn)_ | _O(n)_ | Hard || |
+
 
 ## SQL
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
