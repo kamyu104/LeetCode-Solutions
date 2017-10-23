@@ -640,7 +640,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 432| [All O\`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/) | [C++](./C++/all-oone-data-structure.cpp) [Python](./Python/all-oone-data-structure.py) | _O(1)_ | _O(n)_| Hard || |
 460| [LFU Cache](https://leetcode.com/problems/lfu-cache/) | [C++](./C++/lfu-cache.cpp) [Python](./Python/lfu-cache.py) | _O(1)_ | _O(k)_ | Hard || |
 642| [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | [C++](./C++/design-search-autocomplete-system.cpp) [Python](./Python/design-search-autocomplete-system.py) | _O(p^2)_ | _O(p * t + s)_ | Hard |📖| |
-715| [Range Module](https://leetcode.com/problems/range-module/) | [C++](./C++/range-module.cpp) [Python](./Python/range-module.py) | addRange: _O(n)_<br> removeRange: _O(n)_<br> queryRange: _O(logn)_ | _O(n)_ | Hard || |
+715| [Range Module](https://leetcode.com/problems/range-module/) | [C++](./C++/range-module.cpp) [Python](./Python/range-module.py) | add: _O(n)_<br> remove: _O(n)_<br> query: _O(logn)_ | _O(n)_ | Hard || |
 
 
 ## SQL
