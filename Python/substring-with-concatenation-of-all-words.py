@@ -68,6 +68,7 @@ class Solution2(object):
         result, m, n, k = [], len(s), len(words), len(words[0])
         if m < n*k:
             return result
+ 
         lookup = collections.defaultdict(int)
         for i in words:
             lookup[i] += 1                            # Space: O(n * k)
