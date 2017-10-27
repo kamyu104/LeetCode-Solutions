@@ -29,7 +29,7 @@ class Solution(object):
         for i in words:
             lookup[i] += 1                # Space: O(n * k)
 
-        for i in xrange(k):               # Time:  O(m / k)
+        for i in xrange(k):               # Time:  O(k)
             left, count = i, 0
             tmp = collections.defaultdict(int)
             for j in xrange(i, m-k+1, k): # Time:  O(m / k)
