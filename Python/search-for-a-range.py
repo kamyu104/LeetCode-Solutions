@@ -19,11 +19,11 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        # Find the first index where target <= nums[idx]
+        # Find the first idx where nums[idx] >= target
         left = self.binarySearch(lambda x, y: x >= y, nums, target)
         if left >= len(nums) or nums[left] != target:
             return [-1, -1]
-        # Find the first index where target < nums[idx]
+        # Find the first idx where nums[idx] > target
         right = self.binarySearch(lambda x, y: x > y, nums, target)
         return [left, right - 1]
     
