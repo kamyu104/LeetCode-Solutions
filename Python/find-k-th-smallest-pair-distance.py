@@ -39,7 +39,7 @@ class Solution(object):
             return count >= k
 
         nums.sort()
-        left, right = 0, nums[-1]-nums[0]
+        left, right = 0, nums[-1]-nums[0]+1
         while left < right:
             mid = left + (right-left)/2
             if possible(mid, nums):
