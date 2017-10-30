@@ -23,7 +23,7 @@ class Solution(object):
         :type B: List[int]
         :rtype: int
         """
-        if len(A) > len(B): return findLength(B, A)
+        if len(A) < len(B): return findLength(B, A)
         result = 0
         dp = [[0] * (len(B)+1) for _ in xrange(2)]
         for i in xrange(len(A)):
