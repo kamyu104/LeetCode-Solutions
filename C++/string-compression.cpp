@@ -4,24 +4,22 @@
 class Solution {
 public:
     int compress(vector<char>& chars) {
-        int i = 0;
-        for (int j = 0; j < chars.size();) {
-            if (j + 1 == chars.size() || chars[j] != chars[j + 1]) {
-                chars[i++] = chars[j++];
-            } else {
-                int k = j;
-                while (j < chars.size() && chars[j] == chars[k]) {
-                    ++j;
+        int write = 0, anchor = 0;
+        for (int read = 0; read < chars.size(); ++read) {
+            if (read + 1 == chars.size() || chars[read + 1] != chars[read]) {
+                chars[write++] = chars[read];
+                if (read - anchor > 0) {
+                    auto n = read - anchor + 1, cnt = 0;
+                    while (n > 0) {
+                        chars[write++] = n % 10 + '0';
+                        n /= 10;
+                        ++cnt;
+                    }
+                    reverse(chars.begin() + write - cnt, chars.begin() + write);
                 }
-                chars[i++] = chars[k];
-                auto n = j - k, prev_i = i;
-                while (n > 0) {
-                    chars[i++] = n % 10 + '0';
-                    n /= 10;
-                }
-                reverse(chars.begin() + prev_i, chars.begin() + i);
+                anchor = read + 1;
             }
         }
-        return i;
+        return write;
     }
 };
