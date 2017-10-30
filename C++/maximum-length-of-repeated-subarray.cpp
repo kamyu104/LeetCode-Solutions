@@ -81,7 +81,6 @@ private:
             } else {
                 result[i - (length - 1)] = hash;
                 hash = (hash - source[i - (length - 1)]) * p_inv % M;
-                if (hash < 0) hash += M;
             }
         }
         return result;
