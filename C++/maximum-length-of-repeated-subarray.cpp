@@ -5,7 +5,7 @@
 class Solution {
 public:
     int findLength(vector<int>& A, vector<int>& B) {
-        if (A.size() > B.size()) { 
+        if (A.size() < B.size()) { 
             return findLength(B, A);
         }
         int result = 0;
