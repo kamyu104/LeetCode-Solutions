@@ -1,7 +1,7 @@
 // Time:  O(m * n * log(min(m, n)))
 // Space: O(min(m, n))
 
-// Binary search + rolling hash solution
+// Binary search + rolling hash solution (36 ms)
 class Solution {
 public:
     int findLength(vector<int>& A, vector<int>& B) {
@@ -78,7 +78,7 @@ private:
 
 // Time:  O(m * n)
 // Space: O(min(m, n))
-// dp solution
+// dp solution (102 ms)
 class Solution2 {
 public:
     int findLength(vector<int>& A, vector<int>& B) {
