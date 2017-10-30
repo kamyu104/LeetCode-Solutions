@@ -1,7 +1,7 @@
 // Time:  O(m * n)
 // Space: O(min(m, n))
 
-// dp solution (102 ms)
+// dp solution (99 ms)
 class Solution {
 public:
     int findLength(vector<int>& A, vector<int>& B) {
