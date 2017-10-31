@@ -123,6 +123,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 683 | [K Empty Slots](https://leetcode.com/problems/k-empty-slots/) | [C++](./C++/k-empty-slots.cpp) [Python](./Python/k-empty-slots.py) | _O(n)_ | _O(n)_ | Hard ||
 697| [Degree of an Array](https://leetcode.com/problems/degree-of-an-array/) | [C++](./C++/degree-of-an-array.cpp) [Python](./Python/degree-of-an-array.py) | _O(n)_ | _O(n)_ | Easy ||
 713 | [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) | [C++](./C++/subarray-product-less-than-k.cpp) [Python](./Python/subarray-product-less-than-k.py) | _O(n)_ | _O(1)_ | Medium ||
+717 | [1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit and 2-bit Characters/) | [C++](./C++/1-bit and 2-bit Characters.cpp) [Python](./Python/1-bit and 2-bit Characters.py) | _O(n)_ | _O(1)_ | Easy || Greedy
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -153,6 +154,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 415| [Add Strings](https://leetcode.com/problems/add-strings/) | [C++](./C++/add-strings.cpp)  [Python](./Python/add-strings.py) | _O(n)_ | _O(1)_ | Easy         | |
 420| [Strong Password Checker](https://leetcode.com/problems/strong-password-checker/) | [C++](./C++/strong-password-checker.cpp)  [Python](./Python/strong-password-checker.py) | _O(n)_ | _O(1)_ | Hard         | |
 434| [Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/) | [C++](./C++/number-of-segments-in-a-string.cpp)  [Python](./Python/number-of-segments-in-a-string.py) | _O(n)_ | _O(1)_ | Easy         | |
+443| [String Compression](https://leetcode.com/problems/string-compression/) | [C++](./C++/string-compression.cpp)  [Python](./Python/string-compression.py) | _O(n)_ | _O(1)_ | Easy         | |
 459| [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/) | [C++](./C++/repeated-substring-pattern.cpp)  [Python](./Python/repeated-substring-pattern.py) | _O(n)_ | _O(n)_ | Easy         || `KMP Algorithm` |
 468| [Validate IP Address](https://leetcode.com/problems/validate-ip-address/) | [C++](./C++/validate-ip-address.cpp)  [Python](./Python/validate-ip-address.py) | _O(1)_ | _O(1)_ | Medium         | |
 556| [Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/) |[C++](./C++/next-greater-element-iii.cpp)  [Python](./Python/next-greater-element-iii.py) | _O(1)_ | _O(1)_ | Medium         | |
@@ -443,6 +445,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 475 | [Heaters](https://leetcode.com/problems/heaters/) | [C++](./C++/heaters.cpp) [Python](./Python/heaters.py) | _O((m + n) * logn)_ | _O(1)_ | Easy | |
 658 | [Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/) | [C++](./C++/find-k-closest-elements.cpp) [Python](./Python/find-k-closest-elements.py) | _O(logn + k)_ | _O(1)_ | Medium | |
 668 | [Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/) | [C++](./C++/kth-smallest-number-in-multiplication-table.cpp) [Python](./Python/kth-smallest-number-in-multiplication-table.py) | _O(m * log(m * n))_ | _O(1)_ | Hard | |
+719 | [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/) | [C++](./C++/find-k-th-smallest-pair-distance.cpp) [Python](./Python/find-k-th-smallest-pair-distance.py) | _O(nlogn + nlogw)_ | _O(1)_ | Hard | |
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -536,6 +539,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 676| [Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/) | [C++](./C++/implement-magic-dictionary.cpp) [Python](./Python/implement-magic-dictionary.py) | _O(n)_ | _O(d)_  | Medium       || Trie, DFS
 679| [24 Game](https://leetcode.com/problems/24-game/) | [C++](./C++/24-game.cpp) [Python](./Python/24-game.py) | _O(1)_ | _O(1)_  | Hard       || DFS
 698| [Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/) | [C++](./C++/partition-to-k-equal-sum-subsets.cpp) [Python](./Python/partition-to-k-equal-sum-subsets.py) | _O(n * 2^n)_ | _O(2^n)_ | Medium || DFS, DP, Memoization
+718 | [Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) | [C++](./C++/maximum-length-of-repeated-subarray.cpp) [Python](./Python/maximum-length-of-repeated-subarray.py) | _O(m * n)_ | _O(min(m, n))_ | Medium || DP, Hash, Binary Search
 
 ## Dynamic Programming
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
