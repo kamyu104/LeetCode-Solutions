@@ -50,10 +50,10 @@ class Solution(object):
             sign = -1
             i += 1
 
-        while i < len(str) and str[i] >= '0' and str[i] <= '9':
-            if result > (INT_MAX - (ord(str[i]) - ord('0'))) / 10:
+        while i < len(str) and '0' <= str[i] <= '9':
+            if result > (INT_MAX - int(str[i])) / 10:
                 return INT_MAX if sign > 0 else INT_MIN
-            result = result * 10 + ord(str[i]) - ord('0')
+            result = result * 10 + int(str[i])
             i += 1
         
         return sign * result
