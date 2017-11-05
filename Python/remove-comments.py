@@ -93,13 +93,13 @@ class Solution(object):
             if not in_block:
                 newline = []
             while i < len(line):
-                if line[i:i+2] == '/*' and not in_block:
+                if not in_block and i+1 < len(line) and line[i:i+2] == '/*':
                     in_block = True
                     i += 1
-                elif line[i:i+2] == '*/' and in_block:
+                elif in_block and i+1 < len(line) and line[i:i+2] == '*/':
                     in_block = False
                     i += 1
-                elif not in_block and line[i:i+2] == '//':
+                elif not in_block and i+1 < len(line) and line[i:i+2] == '//':
                     break
                 elif not in_block:
                     newline.append(line[i])
