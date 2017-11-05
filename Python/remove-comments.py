@@ -89,8 +89,6 @@ class Solution(object):
         in_block = False
         result, newline = [], []
         for line in source:
-            if not in_block:
-                newline = []
             i = 0
             while i < len(line):
                 if not in_block and i+1 < len(line) and line[i:i+2] == '/*':
@@ -106,5 +104,5 @@ class Solution(object):
                 i += 1
             if newline and not in_block:
                 result.append("".join(newline))
-
+                newline = []
         return result
