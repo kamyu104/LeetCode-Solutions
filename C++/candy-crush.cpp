@@ -6,8 +6,10 @@ public:
     vector<vector<int>> candyCrush(vector<vector<int>>& board) {
         const auto R = board.size(), C = board[0].size();
         bool changed = true;
+        
         while (changed) {
             changed = false;
+            
             for (int r = 0; r < R; ++r) {
                 for (int c = 0; c + 2 < C; ++c) {
                     auto v = abs(board[r][c]);
@@ -17,6 +19,7 @@ public:
                     }
                 }
             }
+            
             for (int r = 0; r + 2 < R; ++r) {
                 for (int c = 0; c < C; ++c) {
                     auto v = abs(board[r][c]);
@@ -26,18 +29,20 @@ public:
                     }
                 }
             }
+
             for (int c = 0; c < C; ++c) {
-                int i = R - 1;
+                int empty_r = R - 1;
                 for (int r = R - 1; r >= 0; --r) {
                     if (board[r][c] > 0) {
-                        board[i--][c] = board[r][c];
+                        board[empty_r--][c] = board[r][c];
                     }
                 }
-                while (i >= 0) {
-                    board[i--][c] = 0;
+                for (int r = empty_r; r >= 0; --r) {
+                    board[r][c] = 0;
                 }
             }
         }
+        
         return board;
     }
 };
