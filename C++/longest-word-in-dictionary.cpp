@@ -11,8 +11,10 @@ public:
 
         // DFS
         stack<TrieNode *> stk;
-        for (const auto& kvp : trie.leaves) {
-            stk.emplace(kvp.second);
+        for (const auto& node : trie.leaves) {
+            if (node) {
+                stk.emplace(node);
+            }
         }
         
         string result;
@@ -23,8 +25,10 @@ public:
                 if (word.size() > result.size() || (word.size() == result.size() && word < result)) {
                     result = word;
                 }
-                for (const auto& kvp : curr->leaves) {
-                    stk.emplace(kvp.second);
+                for (const auto& node : curr->leaves) {
+                    if (node) {
+                        stk.emplace(node);
+                    }
                 }
             }
         }
@@ -33,26 +37,28 @@ public:
 
 private:
     struct TrieNode {
-        bool isString = false;
-        int  val = 0;
-        unordered_map<char, TrieNode *> leaves;
+        bool isString;
+        int  val;
+        vector<TrieNode *> leaves;
+        
+        TrieNode() : isString{false}, val{0}, leaves(26) {}
         
         void Insert(const string& s, const int i) {
             auto* p = this;
             for (const auto& c : s) {
-                if (p->leaves.find(c) == p->leaves.cend()) {
-                    p->leaves[c] = new TrieNode;
+                if (!p->leaves[c - 'a']) {
+                    p->leaves[c - 'a'] = new TrieNode;
                 }
-                p = p->leaves[c];
+                p = p->leaves[c - 'a'];
             }
             p->isString = true;
             p->val = i;
         }
         
         ~TrieNode() {
-            for (auto& kv : leaves) {
-                if (kv.second) {
-                    delete kv.second;
+            for (auto& node : leaves) {
+                if (node) {
+                    delete node;
                 }
             }
         }
