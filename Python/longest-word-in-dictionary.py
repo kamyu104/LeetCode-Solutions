@@ -34,11 +34,8 @@ class Solution(object):
         """
         _trie = lambda: collections.defaultdict(_trie)
         trie = _trie()
-        for i, s in enumerate(words):
-            curr = trie
-            for c in s:
-                curr = curr[c]
-            curr["_end"] = i
+        for i, word in enumerate(words):
+            reduce(dict.__getitem__, word, trie)["_end"] = i
 
         # DFS
         stack = trie.values()
