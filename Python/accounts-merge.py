@@ -69,11 +69,11 @@ class Solution(object):
         email_to_id = {}
         for account in accounts:
             name = account[0]
-            for n in xrange(1, len(account)):
-                email_to_name[account[n]] = name
-                if account[n] not in email_to_id:
-                    email_to_id[account[n]] = union_find.get_id()
-                union_find.union_set(email_to_id[account[1]], email_to_id[account[n]])
+            for i in xrange(1, len(account)):
+                email_to_name[account[i]] = name
+                if account[i] not in email_to_id:
+                    email_to_id[account[i]] = union_find.get_id()
+                union_find.union_set(email_to_id[account[1]], email_to_id[account[i]])
 
         result = collections.defaultdict(list)
         for email in email_to_name.keys():
@@ -81,4 +81,3 @@ class Solution(object):
         for emails in result.values():
             emails.sort()
         return [[email_to_name[emails[0]]] + emails for emails in result.values()]
-    
