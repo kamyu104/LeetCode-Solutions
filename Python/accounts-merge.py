@@ -70,8 +70,8 @@ class Solution(object):
         for account in accounts:
             name = account[0]
             for i in xrange(1, len(account)):
-                email_to_name[account[i]] = name
                 if account[i] not in email_to_id:
+                    email_to_name[account[i]] = name
                     email_to_id[account[i]] = union_find.get_id()
                 union_find.union_set(email_to_id[account[1]], email_to_id[account[i]])
 
