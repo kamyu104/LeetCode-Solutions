@@ -1,5 +1,5 @@
 # Time:  O(n), n is the length of the source
-# Space: O(k), k is the max length of a line.
+# Space: O(k), k is the max length of a line
 
 # Given a C++ program, remove comments from it.
 # The program source is an array where source[i] is the i-th line of the source code.
@@ -87,11 +87,11 @@ class Solution(object):
         :rtype: List[str]
         """
         in_block = False
-        result = []
+        result, newline = [], []
         for line in source:
-            i = 0
             if not in_block:
                 newline = []
+            i = 0
             while i < len(line):
                 if not in_block and i+1 < len(line) and line[i:i+2] == '/*':
                     in_block = True
