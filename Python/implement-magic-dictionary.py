@@ -32,17 +32,14 @@ class MagicDictionary(object):
         self.trie = _trie()
 
 
-    def buildDict(self, dict):
+    def buildDict(self, dictionary):
         """
         Build a dictionary through a list of words
-        :type dict: List[str]
+        :type dictionary: List[str]
         :rtype: void
         """
-        for s in dict:
-            curr = self.trie
-            for c in s: 
-                curr = curr[c] 
-            curr.setdefault("_end")
+        for word in dictionary:
+            reduce(dict.__getitem__, word, self.trie).setdefault("_end")
 
 
     def search(self, word):
