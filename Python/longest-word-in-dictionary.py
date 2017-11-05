@@ -47,7 +47,7 @@ class Solution(object):
             curr = stack.pop()
             if "_end" in curr:
                 word = words[curr["_end"]]
-                if len(word) > len(result) or len(word) == len(result) and word < result:
+                if len(word) > len(result) or (len(word) == len(result) and word < result):
                     result = word
                 stack += [curr[letter] for letter in curr if letter != "_end"]
         return result
