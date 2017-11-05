@@ -23,19 +23,16 @@
 # 1 <= sentence words length <= 1000
 
 class Solution(object):
-    def replaceWords(self, dict, sentence):
+    def replaceWords(self, dictionary, sentence):
         """
-        :type dict: List[str]
+        :type dictionary: List[str]
         :type sentence: str
         :rtype: str
         """
         _trie = lambda: collections.defaultdict(_trie)
         trie = _trie()
-        for s in dict:
-            curr = trie
-            for c in s:
-                curr = curr[c]
-            curr.setdefault("_end")
+        for word in dictionary:
+            reduce(dict.__getitem__, word, trie).setdefault("_end")
 
         def replace(word):
             curr = trie
