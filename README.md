@@ -124,6 +124,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 697| [Degree of an Array](https://leetcode.com/problems/degree-of-an-array/) | [C++](./C++/degree-of-an-array.cpp) [Python](./Python/degree-of-an-array.py) | _O(n)_ | _O(n)_ | Easy ||
 713 | [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) | [C++](./C++/subarray-product-less-than-k.cpp) [Python](./Python/subarray-product-less-than-k.py) | _O(n)_ | _O(1)_ | Medium ||
 717 | [1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters/) | [C++](./C++/1-bit-and-2-bit-characters.cpp) [Python](./Python/1-bit-and-2-bit-characters.py) | _O(n)_ | _O(1)_ | Easy || Greedy
+723 | [Candy Crush](https://leetcode.com/problems/candy-crush/) | [C++](./C++/candy-crush.cpp) [Python](./Python/candy-crush.py) | _O((R * C)^2)_ | _O(1)_ | Medium ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -167,6 +168,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 681| [Next Closest Time](https://leetcode.com/problems/next-closest-time/) | [C++](./C++/next-closest-time.cpp) [Python](./Python/next-closest-time.py) | _O(1)_  | _O(1)_         | Medium           ||
 686 | [Repeated String Match](https://leetcode.com/problems/repeated-string-match/) | [C++](./C++/repeated-string-match.cpp) [Python](./Python/repeated-string-match.py) | _O(n + m)_ | _O(1)_ | Easy || `Rabin-Karp Algorithm` |
 696| [Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/) | [C++](./C++/count-binary-substrings.cpp) [Python](./Python/count-binary-substrings.py) | _O(n)_ | _O(1)_ | Easy||
+720| [Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/) | [C++](./C++/longest-word-in-dictionary.cpp)  [Python](./Python/longest-word-in-dictionary.py) | _O(n)_ | _O(t)_ | Easy         || Trie |
+722| [Remove Comments](https://leetcode.com/problems/remove-comments/) | [C++](./C++/remove-comments.cpp)  [Python](./Python/remove-comments.py) | _O(n)_ | _O(k)_ | Medium         |||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -300,6 +303,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 454| [4Sum II](https://leetcode.com/problems/4sum-ii/) | [C++](./C++/4sum-ii.cpp) [Python](./Python/4sum-ii.py) | _O(n^2)_          | _O(n^2)_          | Medium           ||
 473| [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [C++](./C++/matchsticks-to-square.cpp) [Python](./Python/matchsticks-to-square.py) | _O(n * s * 2^n)_          | _O(n * (2^n + s))_          | Medium           ||
 554| [Brick Wall](https://leetcode.com/problems/brick-wall/) |[C++](./C++/brick-wall.cpp)  [Python](./Python/brick-wall.py) | _O(n)_ | _O(m)_ | Medium         | |
+721| [Accounts Merge](https://leetcode.com/problems/accounts-merge/) | [C++](./C++/accounts-merge.cpp) [Python](./Python/accounts-merge.py) | _O(nlogn)_ | _O(n)_| Medium         || Union Find
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
