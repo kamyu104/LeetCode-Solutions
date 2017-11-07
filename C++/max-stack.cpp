@@ -19,8 +19,7 @@ public:
     }
     
     int pop() {
-        const auto& it = idx_to_val_.begin();
-        const auto val = it->second;
+        const auto val = idx_to_val_.begin()->second;
         remove(val);
         return val;
     }
@@ -34,8 +33,7 @@ public:
     }
     
     int popMax() {
-        const auto& it = val_to_idxs_.begin();
-        const auto val = it->first;
+        const auto val = val_to_idxs_.begin()->first;
         remove(val);
         return val;
     }
