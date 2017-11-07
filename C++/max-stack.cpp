@@ -1,4 +1,5 @@
-
+// Time:  O(logn), per operation
+// Space: O(n), current pushed operations
 
 class MaxStack {
 public:
