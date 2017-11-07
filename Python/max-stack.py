@@ -22,7 +22,7 @@ class MaxStack(object):
         :type x: int
         :rtype: void
         """
-        idx = (self.__val_to_idxs[self.__top][-1]+1) if self.__val_to_idxs else 0
+        idx = self.__val_to_idxs[self.__top][-1]+1 if self.__val_to_idxs else 0
         self.__idx_to_val[idx] = x
         self.__val_to_idxs[x].append(idx)
         self.__top = x
@@ -34,7 +34,7 @@ class MaxStack(object):
         :rtype: int
         """
         val = self.__top
-        self.remove(val)
+        self.__remove(val)
         return val
     
 
@@ -57,11 +57,11 @@ class MaxStack(object):
         :rtype: int
         """
         val = self.__max
-        self.remove(val)
+        self.__remove(val)
         return val
     
         
-    def remove(self, val):
+    def __remove(self, val):
         idx = self.__val_to_idxs[val][-1]
         self.__val_to_idxs[val].pop();
         if not self.__val_to_idxs[val]:
