@@ -1,4 +1,8 @@
-// Time:  O(logn), per operation
+// Time:  push:    O(logn)
+//        pop:     O(logn)
+//        popMax:  O(logn)
+//        top:     O(1)
+//        peekMax: O(1)
 // Space: O(n), n is the number of values in the current stack
 
 class MaxStack {
