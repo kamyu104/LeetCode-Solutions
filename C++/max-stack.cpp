@@ -38,10 +38,7 @@ public:
         return val;
     }
 
-private:
-    map<int, int, greater<int>> idx_to_val_;
-    map<int, vector<int>, greater<int>> val_to_idxs_;
-    
+private:    
     void remove(const int val) {
         const auto idx = val_to_idxs_[val].back();
         val_to_idxs_[val].pop_back();
@@ -50,6 +47,9 @@ private:
         }
         idx_to_val_.erase(idx);
     }
+
+    map<int, int, greater<int>> idx_to_val_;
+    map<int, vector<int>, greater<int>> val_to_idxs_;
 };
 
 /**
