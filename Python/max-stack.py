@@ -11,7 +11,6 @@ class MaxStack(object):
         """
         initialize your data structure here.
         """
-        self.__idx = 0
         self.__idx_to_val = collections.defaultdict(int)
         self.__val_to_idxs = collections.defaultdict(list)
         self.__top = None
@@ -23,9 +22,9 @@ class MaxStack(object):
         :type x: int
         :rtype: void
         """
-        self.__idx += 1
-        self.__idx_to_val[self.__idx] = x
-        self.__val_to_idxs[x].append(self.__idx)
+        idx = (self.__val_to_idxs[self.__top][-1]+1) if self.__val_to_idxs else 0
+        self.__idx_to_val[idx] = x
+        self.__val_to_idxs[x].append(idx)
         self.__top = x
         self.__max = max(self.__max, x)
 
