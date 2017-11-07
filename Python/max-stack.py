@@ -67,8 +67,10 @@ class MaxStack(object):
         if not self.__val_to_idxs[val]:
             del self.__val_to_idxs[val]
         del self.__idx_to_val[idx]
-        self.__top = self.__idx_to_val[max(self.__idx_to_val.keys())] if self.__idx_to_val else None
-        self.__max = max(self.__val_to_idxs.keys()) if self.__val_to_idxs else None
+        if val == self.__top:
+            self.__top = self.__idx_to_val[max(self.__idx_to_val.keys())] if self.__idx_to_val else None
+        if val == self.__max:
+            self.__max = max(self.__val_to_idxs.keys()) if self.__val_to_idxs else None
             
 
 # Your MaxStack object will be instantiated and called as such:
