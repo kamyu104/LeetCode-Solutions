@@ -13,27 +13,27 @@ public:
     }
     
     void push(int x) {
-        const auto idx = idx_to_val_.empty() ? 0 : idx_to_val_.begin()->first + 1;
+        const auto idx = idx_to_val_.empty() ? 0 : idx_to_val_.cbegin()->first + 1;
         idx_to_val_[idx] = x;
         val_to_idxs_[x].emplace_back(idx);
     }
     
     int pop() {
-        const auto val = idx_to_val_.begin()->second;
+        const auto val = idx_to_val_.cbegin()->second;
         remove(val);
         return val;
     }
     
     int top() {
-        return idx_to_val_.begin()->second;
+        return idx_to_val_.cbegin()->second;
     }
     
     int peekMax() {
-        return val_to_idxs_.begin()->first;
+        return val_to_idxs_.cbegin()->first;
     }
     
     int popMax() {
-        const auto val = val_to_idxs_.begin()->first;
+        const auto val = val_to_idxs_.cbegin()->first;
         remove(val);
         return val;
     }
