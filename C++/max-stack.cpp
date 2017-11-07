@@ -1,5 +1,5 @@
 // Time:  O(logn), per operation
-// Space: O(n), n is current values in the stack
+// Space: O(n), n is the number of values in the current stack
 
 class MaxStack {
 public:
