@@ -21,8 +21,7 @@ public:
     int pop() {
         const auto& it = idx_to_val_.begin();
         const auto val = it->second;
-        const auto idx = it->first;
-        remove(idx, val);
+        remove(val);
         return val;
     }
     
@@ -37,8 +36,7 @@ public:
     int popMax() {
         const auto& it = val_to_idxs_.begin();
         const auto val = it->first;
-        const auto idx = val_to_idxs_[val].back();
-        remove(idx, val);
+        remove(val);
         return val;
     }
 
@@ -46,7 +44,8 @@ private:
     map<int, int, greater<int>> idx_to_val_;
     map<int, vector<int>, greater<int>> val_to_idxs_;
     
-    void remove(const int idx, const int val) {
+    void remove(const int val) {
+        const auto idx = val_to_idxs_[val].back();
         val_to_idxs_[val].pop_back();
         if (val_to_idxs_[val].empty()) {
             val_to_idxs_.erase(val);
