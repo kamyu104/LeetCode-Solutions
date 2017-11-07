@@ -42,14 +42,14 @@ class MaxStack(object):
         """
         :rtype: int
         """
-        return  self.__top
+        return self.__top
 
     
     def peekMax(self):
         """
         :rtype: int
         """
-        return  self.__max
+        return self.__max
 
     
     def popMax(self):
