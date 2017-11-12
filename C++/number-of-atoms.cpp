@@ -7,14 +7,14 @@ public:
         stack<map<string, int>> stk;
         stk.emplace();
         int submatches[] = { 1, 2, 3, 4, 5 };
-        auto e = regex("([A-Z][a-z]*)(\\d*)|(\\()|(\\))(\\d*)");
+        const auto e = regex("([A-Z][a-z]*)(\\d*)|(\\()|(\\))(\\d*)");
         for (regex_token_iterator<string::iterator> it(formula.begin(), formula.end(), e, submatches), end;
              it != end;) {
-            auto name = (it++)->str();
-            auto m1 = (it++)->str();
-            auto left_open = (it++)->str();
-            auto right_open = (it++)->str();
-            auto m2 = (it++)->str();
+            const auto& name = (it++)->str();
+            const auto& m1 = (it++)->str();
+            const auto& left_open = (it++)->str();
+            const auto& right_open = (it++)->str();
+            const auto& m2 = (it++)->str();
             if (!name.empty()) {
                 stk.top()[name] += stoi(!m1.empty() ? m1 : "1");
             }
