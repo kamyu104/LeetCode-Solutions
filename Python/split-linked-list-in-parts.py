@@ -1,4 +1,4 @@
-# Time:  O(n)
+# Time:  O(n + k)
 # Space: O(1)
 
 # Given a (singly) linked list with head node root,
