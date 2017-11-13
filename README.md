@@ -125,6 +125,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 713 | [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) | [C++](./C++/subarray-product-less-than-k.cpp) [Python](./Python/subarray-product-less-than-k.py) | _O(n)_ | _O(1)_ | Medium ||
 717 | [1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters/) | [C++](./C++/1-bit-and-2-bit-characters.cpp) [Python](./Python/1-bit-and-2-bit-characters.py) | _O(n)_ | _O(1)_ | Easy || Greedy
 723 | [Candy Crush](https://leetcode.com/problems/candy-crush/) | [C++](./C++/candy-crush.cpp) [Python](./Python/candy-crush.py) | _O((R * C)^2)_ | _O(1)_ | Medium ||
+724 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | [C++](./C++/find-pivot-index.cpp) [Python](./Python/find-pivot-index.py) | _O(n)_ | _O(1)_ | Easy ||
+
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -192,6 +194,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 328| [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)| [C++](./C++/odd-even-linked-list.cpp) [Python](./Python/odd-even-linked-list.py) | _O(n)_       | _O(1)_         | Medium         | |
 369| [Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/)| [C++](./C++/plus-one-linked-list.cpp) [Python](./Python/plus-one-linked-list.py) | _O(n)_       | _O(1)_         | Medium         | 📖 | Two Pointers |
 445| [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/)| [C++](./C++/add-two-numbers-ii.cpp) [Python](./Python/add-two-numbers-ii.py) | _O(m + n)_       | _O(m + n)_         | Medium         |||
+725 | [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/) | [C++](./C++/split-linked-list-in-parts.cpp) [Python](./Python/split-linked-list-in-parts.py) | _O(n + k)_ | _O(1)_ | Medium ||
 
 ## Stack
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -217,6 +220,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 439| [Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser/) | [C++](./C++/ternary-expression-parser.cpp) [Python](./Python/ternary-expression-parser.py) | _O(n)_          | _O(1)_          | Medium           |📖|
 456| [132 Pattern](https://leetcode.com/problems/132-pattern/) | [C++](./C++/132-pattern.cpp) [Python](./Python/132-pattern.py) | _O(n)_          | _O(n)_          | Medium           ||
 682| [Baseball Game](https://leetcode.com/problems/baseball-game/) | [C++](./C++/baseball-game.cpp) [Python](./Python/baseball-game.py) | _O(n)_  | _O(n)_         | Easy           ||
+726| [Number of Atoms](https://leetcode.com/problems/number-of-atoms/) | [C++](./C++/number-of-atoms.cpp) [Python](./Python/number-of-atoms.py) | _O(n)_  | _O(n)_         | Hard           ||
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -604,6 +608,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 691 | [Stickers to Spell Word](https://leetcode.com/problems/stickers-to-spell-word/) | [C++](./C++/stickers-to-spell-word.cpp) [Python](./Python/stickers-to-spell-word.py) | _O(T * S^T)_ | _O(T * S^T)_ | Hard || Backtracking, Memoization
 712 | [Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/) | [C++](./C++/minimum-ascii-delete-sum-for-two-strings.cpp) [Python](./Python/minimum-ascii-delete-sum-for-two-strings.py) | _O(m * n)_ | _O(n)_ | Medium ||
 714 | [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [C++](./C++/best-time-to-buy-and-sell-stock-with-transaction-fee.cpp) [Python](./Python/best-time-to-buy-and-sell-stock-with-transaction-fee.py) | _O(n)_ | _O(1)_ | Medium ||
+727 | [Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/) | [C++](./C++/minimum-window-subsequence.cpp) [Python](./Python/minimum-window-subsequence.py) | _O(s * t)_ | _O(s)_ | Hard |📖|
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
