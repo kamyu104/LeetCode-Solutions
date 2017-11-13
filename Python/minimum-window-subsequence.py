@@ -1,5 +1,5 @@
-# Time:  O(S * T)
-# Space: O(S)
+# Time:  O(s * t)
+# Space: O(s)
 
 class Solution(object):
     def minWindow(self, S, T):
