@@ -35,7 +35,9 @@ if __name__ == "__main__":
     Solution().merge(A, 3, B, 4)
     print A
     
-    
+
+# Time:  O(n)
+# Space: O(n)
 # you may get a input like this,
 # nums1 : [0]
 # m : 0
@@ -59,4 +61,7 @@ class Solution2:
                 nums1[m+n-1] = nums2[n-1]
                 n -= 1
         if n > 0:
-            nums1[:n] = nums2[:n]
+            nums1[:n] = nums2[:n]  # Space: O(n),
+                                   # Reference:
+                                   # - https://stackoverflow.com/questions/4948293/python-slice-assignment-memory-usage
+                                   # - https://stackoverflow.com/questions/10623302/how-assignment-works-with-python-list-slice
