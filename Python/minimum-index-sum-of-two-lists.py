@@ -1,5 +1,5 @@
-# Time:  O(m + n), m is the size of list1, n is the size of list2
-# Space: O(m * l), l is the max length of string
+# Time:  O((m + n) * l), m is the size of list1, n is the size of list2
+# Space: O(m * l), l is the average length of string
 
 # Suppose Andy and Doris want to choose a restaurant for dinner,
 # and they both have a list of favorite restaurants represented by strings.
