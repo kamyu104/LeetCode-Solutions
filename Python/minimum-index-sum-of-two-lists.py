@@ -1,4 +1,4 @@
-# Time:  O(m * n), m is the size of list1, n is the size of list2
+# Time:  O(m + n), m is the size of list1, n is the size of list2
 # Space: O(m * l), l is the max length of string
 
 # Suppose Andy and Doris want to choose a restaurant for dinner,
