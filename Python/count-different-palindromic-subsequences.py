@@ -23,11 +23,9 @@ class Solution(object):
             lookup[i][j] = result
             return result
         
-        N = len(S)
-        A = [ord(c) - ord('a') for c in S]
-        prv = [None] * N
-        nxt = [None] * N
-    
+        n = len(S)
+        prv = [None] * n
+        nxt = [None] * n
         last = [None] * 4
         for i in xrange(len(S)):
             last[ord(S[i])-ord('a')] = i
@@ -39,5 +37,5 @@ class Solution(object):
             nxt[i] = tuple(last)
         
         P = 10**9 + 7
-        lookup = [[None] * N for _ in xrange(N)]        
-        return dp(0, N-1, prv, nxt, lookup) - 1
+        lookup = [[None] * n for _ in xrange(n)]        
+        return dp(0, n-1, prv, nxt, lookup) - 1
