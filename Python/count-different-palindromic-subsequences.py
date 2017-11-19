@@ -16,9 +16,9 @@ class Solution(object):
                     i0 = nxt[i][x]
                     j0 = prv[j][x]
                     if i <= i0 <= j:
-                        result += 1
+                        result = (result + 1) % P
                     if None < i0 < j0:
-                        result += dp(i0+1, j0-1, prv, nxt, lookup)
+                        result = (result + dp(i0+1, j0-1, prv, nxt, lookup)) % P
             result %= P
             lookup[i][j] = result
             return result
