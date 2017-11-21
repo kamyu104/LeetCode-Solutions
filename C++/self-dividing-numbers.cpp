@@ -1,5 +1,5 @@
-// Time:  O(nlogn)
-// Space: O(1)
+// Time:  O(nlogr) = O(n)
+// Space: O(logr) = O(1)
 
 class Solution {
 public:
