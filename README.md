@@ -126,6 +126,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 717 | [1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters/) | [C++](./C++/1-bit-and-2-bit-characters.cpp) [Python](./Python/1-bit-and-2-bit-characters.py) | _O(n)_ | _O(1)_ | Easy || Greedy
 723 | [Candy Crush](https://leetcode.com/problems/candy-crush/) | [C++](./C++/candy-crush.cpp) [Python](./Python/candy-crush.py) | _O((R * C)^2)_ | _O(1)_ | Medium ||
 724 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | [C++](./C++/find-pivot-index.cpp) [Python](./Python/find-pivot-index.py) | _O(n)_ | _O(1)_ | Easy ||
+729 | [My Calendar I](https://leetcode.com/problems/my-calendar-i/) | [C++](./C++/my-calendar-i.cpp) [Python](./Python/my-calendar-i.py) | _O(nlogn)_ | _O(n)_ | Medium ||
+731 | [My Calendar II](https://leetcode.com/problems/my-calendar-ii/) | [C++](./C++/my-calendar-ii.cpp) [Python](./Python/my-calendar-ii.py) | _O(n^2)_ | _O(n)_ | Easy ||
 
 
 ## String
@@ -354,6 +356,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 651 | [4 Keys Keyboard](https://leetcode.com/problems/4-keys-keyboard/) | [C++](./C++/4-keys-keyboard.cpp) [Python](./Python/4-keys-keyboard.py) | _O(1)_ | _O(1)_ | Medium |📖| Math, DP |
 660 | [Remove 9](https://leetcode.com/problems/remove-9/) | [C++](./C++/remove-9.cpp) [Python](./Python/remove-9.py) | _O(logn)_ | _O(1)_ | Hard |📖||
 672 | [Bulb Switcher II](https://leetcode.com/problems/bulb-switcher-ii/) | [C++](./C++/bulb-switcher-ii.cpp) [Python](./Python/bulb-switcher-ii.py) | _O(1)_ | _O(1)_ | Medium |||
+728 | [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/) | [C++](./C++/self-dividing-numbers.cpp) [Python](./Python/self-dividing-numbers.py) | _O(n)_ | _O(1)_ | Medium |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -609,6 +612,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 712 | [Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/) | [C++](./C++/minimum-ascii-delete-sum-for-two-strings.cpp) [Python](./Python/minimum-ascii-delete-sum-for-two-strings.py) | _O(m * n)_ | _O(n)_ | Medium ||
 714 | [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [C++](./C++/best-time-to-buy-and-sell-stock-with-transaction-fee.cpp) [Python](./Python/best-time-to-buy-and-sell-stock-with-transaction-fee.py) | _O(n)_ | _O(1)_ | Medium ||
 727 | [Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/) | [C++](./C++/minimum-window-subsequence.cpp) [Python](./Python/minimum-window-subsequence.py) | _O(s * t)_ | _O(s)_ | Hard |📖|
+730 | [Count Different Palindromic Subsequences](https://leetcode.com/problems/count-different-palindromic-subsequences/) | [C++](./C++/count-different-palindromic-subsequences.cpp) [Python](./Python/count-different-palindromic-subsequences.py) | _O(n^2)_ | _O(n)_ | Hard ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
