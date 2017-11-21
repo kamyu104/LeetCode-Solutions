@@ -1,5 +1,5 @@
-# Time:  O(nlogn)
-# Space: O(1)
+# Time:  O(nlogr) = O(n)
+# Space: O(logr) = O(1)
 
 # A self-dividing number is a number that is divisible by every digit it contains.
 #
