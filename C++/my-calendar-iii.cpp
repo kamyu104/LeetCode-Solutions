@@ -12,7 +12,7 @@ public:
         --books_[end];
         int result = 0;
         int cnt = 0;
-        for (auto &book : books_) {
+        for (const auto &book : books_) {
             cnt += book.second;
             result = max(result, cnt);
         }
