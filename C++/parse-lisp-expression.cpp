@@ -12,7 +12,7 @@ public:
                 if (tokens[0] == "let") {
                     evaluate(tokens, &lookup);
                 }
-                stk.emplace_back(tokens, lookup);
+                stk.emplace_back(move(tokens), lookup);
                 tokens = {""};
             } else if (c == ' ') {
                 tokens.emplace_back("");
