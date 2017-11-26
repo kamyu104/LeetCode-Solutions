@@ -15,7 +15,7 @@ public:
                 stk.emplace_back(move(tokens), lookup);
                 tokens = {""};
             } else if (c == ' ') {
-                tokens.emplace_back("");
+                tokens.emplace_back();
             } else if (c == ')') {
                 const auto& val = evaluate(tokens, &lookup);
                 tie(tokens, lookup) = move(stk.back());
