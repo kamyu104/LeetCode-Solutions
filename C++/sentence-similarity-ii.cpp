@@ -11,10 +11,10 @@ public:
         UnionFind union_find(2 * pairs.size());
         for (const auto& pair : pairs) {
             if (!lookup.count(pair.first)) {
-                lookup[pair.first] = lookup.size() - 1;
+                lookup.emplace(pair.first, lookup.size());
             }
             if (!lookup.count(pair.second)) {
-                lookup[pair.second] = lookup.size() - 1;
+                lookup.emplace(pair.second, lookup.size());
             }
             union_find.union_set(lookup[pair.first], lookup[pair.second]);
         }
