@@ -1,3 +1,6 @@
+# Time:  O(n^2)
+# Space: O(n^2)
+
 # You are given a string expression representing a Lisp-like expression to return the integer value of.
 #
 # The syntax for these expressions is given as follows.
