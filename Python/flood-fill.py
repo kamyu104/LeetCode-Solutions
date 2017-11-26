@@ -1,5 +1,5 @@
-# Time:  O(r * c)
-# Space: O(r * c)
+# Time:  O(m * n)
+# Space: O(m * n)
 
 # An image is represented by a 2-D array of integers,
 # each integer representing the pixel value of the image (from 0 to 65535).
@@ -41,7 +41,7 @@ class Solution(object):
         """
         directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
 
-        def dfs(image, r, c, color):
+        def dfs(image, r, c, newColor, color):
             if not (0 <= r < len(image) and \
                     0 <= c < len(image[0]) and \
                     image[r][c] == color):
@@ -49,9 +49,9 @@ class Solution(object):
             
             image[r][c] = newColor
             for d in directions:
-                dfs(image, r+d[0], c+d[1], color)
+                dfs(image, r+d[0], c+d[1], newColor, color)
                     
         color = image[sr][sc]
         if color == newColor: return image
-        dfs(image, sr, sc, color)
+        dfs(image, sr, sc, newColor, color)
         return image
