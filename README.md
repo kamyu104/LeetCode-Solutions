@@ -127,7 +127,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 723 | [Candy Crush](https://leetcode.com/problems/candy-crush/) | [C++](./C++/candy-crush.cpp) [Python](./Python/candy-crush.py) | _O((R * C)^2)_ | _O(1)_ | Medium ||
 724 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | [C++](./C++/find-pivot-index.cpp) [Python](./Python/find-pivot-index.py) | _O(n)_ | _O(1)_ | Easy ||
 729 | [My Calendar I](https://leetcode.com/problems/my-calendar-i/) | [C++](./C++/my-calendar-i.cpp) [Python](./Python/my-calendar-i.py) | _O(nlogn)_ | _O(n)_ | Medium ||
-731 | [My Calendar II](https://leetcode.com/problems/my-calendar-ii/) | [C++](./C++/my-calendar-ii.cpp) [Python](./Python/my-calendar-ii.py) | _O(n^2)_ | _O(n)_ | Easy ||
+731 | [My Calendar II](https://leetcode.com/problems/my-calendar-ii/) | [C++](./C++/my-calendar-ii.cpp) [Python](./Python/my-calendar-ii.py) | _O(n^2)_ | _O(n)_ | Medium ||
+732 | [My Calendar III](https://leetcode.com/problems/my-calendar-iii/) | [C++](./C++/my-calendar-iii.cpp) [Python](./Python/my-calendar-iii.py) | _O(n^2)_ | _O(n)_ | Hard ||
 
 
 ## String
@@ -224,6 +225,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 636| [Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions/) | [C++](./C++/exclusive-time-of-functions.cpp) [Python](./Python/exclusive-time-of-functions.py) | _O(n)_  | _O(n)_         | Medium           ||
 682| [Baseball Game](https://leetcode.com/problems/baseball-game/) | [C++](./C++/baseball-game.cpp) [Python](./Python/baseball-game.py) | _O(n)_  | _O(n)_         | Easy           ||
 726| [Number of Atoms](https://leetcode.com/problems/number-of-atoms/) | [C++](./C++/number-of-atoms.cpp) [Python](./Python/number-of-atoms.py) | _O(n)_  | _O(n)_         | Hard           ||
+735| [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) | [C++](./C++/asteroid-collision.cpp) [Python](./Python/asteroid-collision.py) | _O(n)_  | _O(n)_         | Medium           ||
+736| [Parse Lisp Expression](https://leetcode.com/problems/parse-lisp-expression/) | [C++](./C++/parse-lisp-expression.cpp) [Python](./Python/parse-lisp-expression.py) | _O(n^2)_  | _O(n^2)_         | Hard           ||
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -313,6 +316,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 473| [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [C++](./C++/matchsticks-to-square.cpp) [Python](./Python/matchsticks-to-square.py) | _O(n * s * 2^n)_          | _O(n * (2^n + s))_          | Medium           ||
 554| [Brick Wall](https://leetcode.com/problems/brick-wall/) |[C++](./C++/brick-wall.cpp)  [Python](./Python/brick-wall.py) | _O(n)_ | _O(m)_ | Medium         | |
 721| [Accounts Merge](https://leetcode.com/problems/accounts-merge/) | [C++](./C++/accounts-merge.cpp) [Python](./Python/accounts-merge.py) | _O(nlogn)_ | _O(n)_| Medium         || Union Find
+734| [Sentence Similarity](https://leetcode.com/problems/sentence-similarity/) | [C++](./C++/sentence-similarity.cpp) [Python](./Python/sentence-similarity.py) | _O(n + p)_ | _O(p)_| Easy         ||
+737| [Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/) | [C++](./C++/sentence-similarity-ii.cpp) [Python](./Python/sentence-similarity-ii.py) | _O(n + p)_ | _O(p)_| Medium         || Union Find
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -525,6 +530,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 694| [Number of Distinct Islands](https://leetcode.com/problems/number-of-distinct-islands/) | [C++](./C++/number-of-distinct-islands.cpp) [Python](./Python/number-of-distinct-islands.py) | _O(m * n)_          | _O(m * n)_          | Medium           |📖||
 695| [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [C++](./C++/max-area-of-island.cpp) [Python](./Python/max-area-of-island.py) | _O(m * n)_          | _O(m * n)_          | Easy           ||
 711| [Number of Distinct Islands II](https://leetcode.com/problems/number-of-distinct-islands-ii/) | [C++](./C++/number-of-distinct-islands-ii.cpp) [Python](./Python/number-of-distinct-islands-ii.py) | _O((m * n) * log(m * n))_          | _O(m * n)_          | Hard           |📖| Hash |
+733| [Max Area of Island](https://leetcode.com/problems/flood-fill/) | [C++](./C++/flood-fill.cpp) [Python](./Python/flood-fill.py) | _O(m * n)_          | _O(m * n)_          | Easy           ||
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
