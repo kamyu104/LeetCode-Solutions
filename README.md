@@ -321,6 +321,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 454| [4Sum II](https://leetcode.com/problems/4sum-ii/) | [C++](./C++/4sum-ii.cpp) [Python](./Python/4sum-ii.py) | _O(n^2)_          | _O(n^2)_          | Medium           ||
 473| [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [C++](./C++/matchsticks-to-square.cpp) [Python](./Python/matchsticks-to-square.py) | _O(n * s * 2^n)_          | _O(n * (2^n + s))_          | Medium           ||
 554| [Brick Wall](https://leetcode.com/problems/brick-wall/) |[C++](./C++/brick-wall.cpp)  [Python](./Python/brick-wall.py) | _O(n)_ | _O(m)_ | Medium         | |
+594| [Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/) |[C++](./C++/longest-harmonious-subsequence.cpp)  [Python](./Python/longest-harmonious-subsequence.py) | _O(n)_ | _O(n)_ | Easy         | |
+599| [Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/) |[C++](./C++/minimum-index-sum-of-two-lists.cpp)  [Python](./Python/minimum-index-sum-of-two-lists.py) | _O((m + n) * l)_ | _O(m * l)_ | Easy         | |
 609| [Find Duplicate File in System](https://leetcode.com/problems/find-duplicate-file-in-system/) |[C++](./C++/find-duplicate-file-in-system.cpp)  [Python](./Python/find-duplicate-file-in-system.py) | _O(n * l)_ | _O(n * l)_ | Medium         | |
 721| [Accounts Merge](https://leetcode.com/problems/accounts-merge/) | [C++](./C++/accounts-merge.cpp) [Python](./Python/accounts-merge.py) | _O(nlogn)_ | _O(n)_| Medium         || Union Find
 734| [Sentence Similarity](https://leetcode.com/problems/sentence-similarity/) | [C++](./C++/sentence-similarity.cpp) [Python](./Python/sentence-similarity.py) | _O(n + p)_ | _O(p)_| Easy         ||
@@ -367,6 +369,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 453 | [Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [C++](./C++/minimum-number-of-arrows-to-burst-balloons.cpp) [Python](./Python/minimum-number-of-arrows-to-burst-balloons.py) | _O(n)_ | _O(1)_ | Easy |||
 458 | [Poor Pigs](https://leetcode.com/problems/poor-pigs/) | [C++](./C++/poor-pigs.cpp) [Python](./Python/poor-pigs.py) | _O(n)_ | _O(1)_ | Easy |||
 469 | [Convex Polygon](https://leetcode.com/problems/convex-polygon/) | [C++](./C++/convex-polygon.cpp) [Python](./Python/convex-polygon.py) | _O(n)_ | _O(1)_ | Medium |📖||
+593 | [Valid Square](https://leetcode.com/problems/valid-square/) | [C++](./C++/valid-square.cpp) [Python](./Python/valid-square.py) | _O(1)_ | _O(1)_ | Medium |||
+598 | [Range Addition II](https://leetcode.com/problems/range-addition-ii/) | [C++](./C++/range-addition-ii.cpp) [Python](./Python/range-addition-ii.py) | _O(p)_ | _O(1)_ | Easy |||
 625 | [Minimum Factorization](https://leetcode.com/problems/minimum-factorization/) | [C++](./C++/minimum-factorization.cpp) [Python](./Python/minimum-factorization.py) | _O(loga)_ | _O(1)_ | Medium |📖||
 628| [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/) | [C++](./C++/maximum-product-of-three-numbers.cpp) [Python](./Python/maximum-product-of-three-numbers.py) | _O(n)_ | _O(1)_ | Easy |||
 633| [Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/) | [C++](./C++/sum-of-square-numbers.cpp) [Python](./Python/sum-of-square-numbers.py) | _O(sqrt(c) * logc)_ | _O(1)_ | Easy |||
