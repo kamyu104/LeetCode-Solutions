@@ -13,8 +13,8 @@ public:
 
         const int max_len = 2 * (n - 1);
         for (int k = 1; k <= max_len; ++k) {
-            for (int i = min(k, n - 1); i >= max(0, k - n - 1); --i) {
-                for (int j = min(k , n - 1); j >= i; --j) {
+            for (int i = min(k, n - 1); i >= max(0, k - n + 1); --i) {  // 0 <= i < n, 0 <= k-i < n
+                for (int j = min(k , n - 1); j >= i; --j) {             // i <= j < n, 0 <= k-j < n
                     if (grid[i][k - i] == -1 ||
                         grid[j][k - j] == -1) {
                         dp[i][j] = -1;
