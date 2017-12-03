@@ -16,7 +16,7 @@ class Solution(object):
         max_len = 2 * (n-1)
         directions = [(0, 0), (-1, 0), (0, -1), (-1, -1)]
         for k in xrange(1, max_len+1):
-            for i in reversed(xrange(min(k+1, n))):
+            for i in reversed(xrange(max(0, k-n-1), min(k+1, n))):
                 for j in reversed(xrange(i, min(k+1, n))):
                     if not (0 <= k-i < n and 0 <= k-j < n):
                         continue
