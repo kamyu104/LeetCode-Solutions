@@ -10,7 +10,7 @@ class Solution(object):
         # dp holds the max # of cherries two k-length paths can pickup.
         # The two k-length paths arrive at (i, k - i) and (j, k - j), 
         # respectively.
-        n = len(grid);
+        n = len(grid)
         dp = [[-1 for _ in xrange(n)] for _ in xrange(n)]
         dp[0][0] = grid[0][0]
         max_len = 2 * (n-1)
