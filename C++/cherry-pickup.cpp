@@ -13,8 +13,8 @@ public:
 
         const int max_len = 2 * (n - 1);
         for (int k = 1; k <= max_len; ++k) {
-            for (int i = min(k + 1, n) - 1; i >= max(0, k - n - 1); --i) {
-                for (int j = min(k + 1, n) - 1; j >= i; --j) {
+            for (int i = min(k, n - 1); i >= max(0, k - n - 1); --i) {
+                for (int j = min(k , n - 1); j >= i; --j) {
                     if (k - i < 0 || k - i >= n ||
                         k - j < 0 || k - j >= n) {
                         continue;
