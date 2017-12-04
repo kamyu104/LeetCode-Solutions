@@ -230,6 +230,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 726| [Number of Atoms](https://leetcode.com/problems/number-of-atoms/) | [C++](./C++/number-of-atoms.cpp) [Python](./Python/number-of-atoms.py) | _O(n)_  | _O(n)_         | Hard           ||
 735| [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) | [C++](./C++/asteroid-collision.cpp) [Python](./Python/asteroid-collision.py) | _O(n)_  | _O(n)_         | Medium           ||
 736| [Parse Lisp Expression](https://leetcode.com/problems/parse-lisp-expression/) | [C++](./C++/parse-lisp-expression.cpp) [Python](./Python/parse-lisp-expression.py) | _O(n^2)_  | _O(n^2)_         | Hard           ||
+739| [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | [C++](./C++/daily-temperatures.cpp) [Python](./Python/daily-temperatures.py) | _O(n)_  | _O(n)_         | Medium           ||
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -642,6 +643,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 714 | [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [C++](./C++/best-time-to-buy-and-sell-stock-with-transaction-fee.cpp) [Python](./Python/best-time-to-buy-and-sell-stock-with-transaction-fee.py) | _O(n)_ | _O(1)_ | Medium ||
 727 | [Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/) | [C++](./C++/minimum-window-subsequence.cpp) [Python](./Python/minimum-window-subsequence.py) | _O(s * t)_ | _O(s)_ | Hard |📖|
 730 | [Count Different Palindromic Subsequences](https://leetcode.com/problems/count-different-palindromic-subsequences/) | [C++](./C++/count-different-palindromic-subsequences.cpp) [Python](./Python/count-different-palindromic-subsequences.py) | _O(n^2)_ | _O(n)_ | Hard ||
+740 | [Delete and Earn](https://leetcode.com/problems/delete-and-earn/) | [C++](./C++/delete-and-earn.cpp) [Python](./Python/delete-and-earn.py) | _O(n)_ | _O(1)_ | Medium ||
+741 | [Cherry Pickup](https://leetcode.com/problems/cherry-pickup/) | [C++](./C++/cherry-pickup.cpp) [Python](./Python/cherry-pickup.py) | _O(n^3)_ | _O(n^2)_ | Hard ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -669,6 +672,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 646 | [Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/) | [C++](./C++/maximum-length-of-pair-chain.cpp) [Python](./Python/maximum-length-of-pair-chain.py) | _O(nlogn)_ | _O(1)_ | Medium || Scan Line
 649 | [Dota2 Senate](https://leetcode.com/problems/dota2-senate/) | [C++](./C++/dota2-senate.cpp) [Python](./Python/dota2-senate.py) | _O(n)_ | _O(n)_ | Medium |||
 659 | [Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences/) | [C++](./C++/split-array-into-consecutive-subsequences.cpp) [Python](./Python/split-array-into-consecutive-subsequences.py) | _O(n)_ | _O(1)_ | Medium | |
+738 | [Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits/) | [C++](./C++/monotone-increasing-digits.cpp) [Python](./Python/monotone-increasing-digits.py) | _O(1)_ | _O(1)_ | Medium | |
 
 ---
 ## Design
