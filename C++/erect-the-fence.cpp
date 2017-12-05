@@ -10,6 +10,8 @@
  *     Point(int a, int b) : x(a), y(b) {}
  * };
  */
+
+// Monotone Chain Algorithm
 class Solution {
 public:
     vector<Point> outerTrees(vector<Point>& points) {
