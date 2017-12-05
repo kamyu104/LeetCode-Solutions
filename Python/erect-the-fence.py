@@ -23,7 +23,7 @@
 # All input integers will range from 0 to 100.
 # The garden has at least one tree.
 # All coordinates are distinct.
-#Input points have NO order. No order required for output.
+# Input points have NO order. No order required for output.
 
 # Definition for a point.
 # class Point(object):
@@ -31,6 +31,7 @@
 #         self.x = a
 #         self.y = b
 
+# Monotone Chain Algorithm
 class Solution(object):
     def outerTrees(self, points):
         """
