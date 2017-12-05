@@ -27,6 +27,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Backtracking](https://github.com/kamyu104/LeetCode#backtracking)
 * [Dynamic Programming](https://github.com/kamyu104/LeetCode#dynamic-programming)
 * [Greedy](https://github.com/kamyu104/LeetCode#greedy)
+* [Geometry](https://github.com/kamyu104/LeetCode#geometry)
 * [Design](https://github.com/kamyu104/LeetCode#design)
 
 
@@ -167,6 +168,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 468| [Validate IP Address](https://leetcode.com/problems/validate-ip-address/) | [C++](./C++/validate-ip-address.cpp)  [Python](./Python/validate-ip-address.py) | _O(1)_ | _O(1)_ | Medium         | |
 556| [Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/) |[C++](./C++/next-greater-element-iii.cpp)  [Python](./Python/next-greater-element-iii.py) | _O(1)_ | _O(1)_ | Medium         | |
 557| [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/) |[C++](./C++/reverse-words-in-a-string-iii.cpp)  [Python](./Python/reverse-words-in-a-string-iii.py) | _O(n)_ | _O(1)_ | Easy         | |
+591| [Tag Validator](https://leetcode.com/problems/tag-validator/) |[C++](./C++/tag-validator.cpp)  [Python](./Python/tag-validator.py) | _O(n)_ | _O(n)_ | Hard         | |
 616| [Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/) | [C++](./C++/add-bold-tag-in-string.cpp) [Python](./Python/add-bold-tag-in-string.py) | _O(s * d * l)_ | _O(s)_ |  Medium | 📖 |
 647| [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | [C++](./C++/palindromic-substrings.cpp) [Python](./Python/palindromic-substrings.py) | _O(n)_ | _O(n)_ |  Medium || `Manacher's Algorithm`
 648| [Replace Words](https://leetcode.com/problems/replace-words/) | [C++](./C++/replace-words.cpp)  [Python](./Python/replace-words.py) | _O(n)_ | _O(t)_ | Medium         || Trie |
@@ -370,6 +372,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 453 | [Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [C++](./C++/minimum-number-of-arrows-to-burst-balloons.cpp) [Python](./Python/minimum-number-of-arrows-to-burst-balloons.py) | _O(n)_ | _O(1)_ | Easy |||
 458 | [Poor Pigs](https://leetcode.com/problems/poor-pigs/) | [C++](./C++/poor-pigs.cpp) [Python](./Python/poor-pigs.py) | _O(n)_ | _O(1)_ | Easy |||
 469 | [Convex Polygon](https://leetcode.com/problems/convex-polygon/) | [C++](./C++/convex-polygon.cpp) [Python](./Python/convex-polygon.py) | _O(n)_ | _O(1)_ | Medium |📖||
+592 | [Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction/) | [C++](./C++/fraction-addition-and-subtraction.cpp) [Python](./Python/fraction-addition-and-subtraction.py) | _O(nlogx)_ | _O(n)_ | Medium |||
 593 | [Valid Square](https://leetcode.com/problems/valid-square/) | [C++](./C++/valid-square.cpp) [Python](./Python/valid-square.py) | _O(1)_ | _O(1)_ | Medium |||
 598 | [Range Addition II](https://leetcode.com/problems/range-addition-ii/) | [C++](./C++/range-addition-ii.cpp) [Python](./Python/range-addition-ii.py) | _O(p)_ | _O(1)_ | Easy |||
 625 | [Minimum Factorization](https://leetcode.com/problems/minimum-factorization/) | [C++](./C++/minimum-factorization.cpp) [Python](./Python/minimum-factorization.py) | _O(loga)_ | _O(1)_ | Medium |📖||
@@ -674,7 +677,11 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 659 | [Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences/) | [C++](./C++/split-array-into-consecutive-subsequences.cpp) [Python](./Python/split-array-into-consecutive-subsequences.py) | _O(n)_ | _O(1)_ | Medium | |
 738 | [Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits/) | [C++](./C++/monotone-increasing-digits.cpp) [Python](./Python/monotone-increasing-digits.py) | _O(1)_ | _O(1)_ | Medium | |
 
----
+## Geometry
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
+587 | [Erect the Fence](https://leetcode.com/problems/erect-the-fence/)  | [C++](./C++/erect-the-fence.cpp) [Python](./Python/erect-the-fence.py) | _O(nlogn)_| _O(n)_| Hard           || `Monotone Chain` | 
+
 ## Design
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
@@ -691,13 +698,13 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 381| [Insert Delete GetRandom O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/) | [C++](./C++/insert-delete-getrandom-o1-duplicates-allowed.cpp) [Python](./Python/insert-delete-getrandom-o1-duplicates-allowed.py) | _O(1)_ | _O(n)_ | Hard || |
 432| [All O\`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/) | [C++](./C++/all-oone-data-structure.cpp) [Python](./Python/all-oone-data-structure.py) | _O(1)_ | _O(n)_| Hard || |
 460| [LFU Cache](https://leetcode.com/problems/lfu-cache/) | [C++](./C++/lfu-cache.cpp) [Python](./Python/lfu-cache.py) | _O(1)_ | _O(k)_ | Hard || |
+588| [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/) | [C++](./C++/design-in-memory-file-system.cpp) [Python](./Python/design-in-memory-file-system.py) | ls: _O(l + klogk)_<br> mkdir: _O(l)_<br> addContentToFile: _O(l + c)_<br> readContentFromFile: _O(l + c)_ | _O(n + s)_ | Hard |📖| |
 604| [Design Compressed String Iterator](https://leetcode.com/problems/design-compressed-string-iterator/) | [C++](./C++/design-compressed-string-iterator.cpp) [Python](./Python/design-compressed-string-iterator.py) | _O(1)_ | _O(1)_ | Easy |📖| |
 631| [Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula/) | [C++](./C++/design-excel-sum-formula.cpp) [Python](./Python/design-excel-sum-formula.py) | set: _O((r * c)^2)_<br>get: _O(1)_<br>sum: _O((r * c)^2)_ | _O(r * c)_ | Hard |📖| |
 635| [Design Log Storage System](https://leetcode.com/problems/design-log-storage-system/) | [C++](./C++/design-log-storage-system.cpp) [Python](./Python/design-log-storage-system.py) | put: _O(1)_<br> retrieve: _O(n + dlogd)_ | _O(n)_ | Medium |📖| |
 642| [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | [C++](./C++/design-search-autocomplete-system.cpp) [Python](./Python/design-search-autocomplete-system.py) | _O(p^2)_ | _O(p * t + s)_ | Hard |📖| |
 715| [Range Module](https://leetcode.com/problems/range-module/) | [C++](./C++/range-module.cpp) [Python](./Python/range-module.py) | add: _O(n)_<br> remove: _O(n)_<br> query: _O(logn)_ | _O(n)_ | Hard || |
 716| [Max Stack](https://leetcode.com/problems/max-stack/) | [C++](./C++/max-stack.cpp) [Python](./Python/max-stack.py) | push: _O(logn)_<br> pop: _O(logn)_<br> popMax: _O(logn)_<br> top: _O(1)_<br> peekMax: _O(1)_ | _O(n)_ | Easy || |
-
 
 ## SQL
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
