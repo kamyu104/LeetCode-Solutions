@@ -429,6 +429,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 350| [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [C++](./C++/intersection-of-two-arrays-ii.cpp)  [Python](./Python/intersection-of-two-arrays-ii.py) | _O(m + n)_ | _O(1)_ | Easy         | EPI | Hash, Binary Search
 360| [Sort Transformed Array](https://leetcode.com/problems/sort-transformed-array/) | [C++](./C++/sort-transformed-array.cpp)  [Python](./Python/sort-transformed-array.py) | _O(n)_ | _O(1)_ | Medium         |📖|
 457| [Circular Array Loop](https://leetcode.com/problems/circular-array-loop/) | [C++](./C++/circular-array-loop.cpp)  [Python](./Python/circular-array-loop.py) | _O(n)_ | _O(1)_ | Medium         ||
+567| [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | [C++](./C++/permutation-in-string.cpp)  [Python](./Python/permutation-in-string.py) | _O(n)_ | _O(1)_ | Medium         ||
 611| [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | [C++](./C++/valid-triangle-number.cpp)  [Python](./Python/valid-triangle-number.py) | _O(n^2)_ | _O(1)_ | Medium         ||
 
 ## Recursion
