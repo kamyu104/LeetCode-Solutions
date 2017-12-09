@@ -1,5 +1,5 @@
-// Time:  O(R), R is the range size of the integers
-// Space: O(R)
+// Time:  O(r), r is the range size of the integers
+// Space: O(r)
 
 class Solution {
 public:
