@@ -44,3 +44,4 @@ class Solution(object):
                     lookup.add(v)
                     next_q.append(v)
             q = next_q
+        return 0
