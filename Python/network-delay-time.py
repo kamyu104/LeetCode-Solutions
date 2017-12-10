@@ -10,13 +10,13 @@ class Solution(object):
         :type K: int
         :rtype: int
         """
-        min_heap = []
         adj = [[] for _ in xrange(N)]
         for u, v, w in times:
             adj[u-1].append((v-1, w))
-
-        lookup, result = set(), 0
-        heapq.heappush(min_heap, (0, K-1))
+            
+        result = 0
+        lookup = set()
+        min_heap = [(0, K-1)]
         while min_heap and len(lookup) != N:
             result, u = heapq.heappop(min_heap)
             lookup.add(u)
