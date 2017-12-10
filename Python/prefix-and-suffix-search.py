@@ -34,7 +34,6 @@ class WordFilter(object):
         """
         :type words: List[str]
         """   
-        _trie = lambda: collections.defaultdict(_trie)
         self.__prefix_trie = Trie()
         self.__suffix_trie = Trie()
         for i in reversed(xrange(len(words))):
