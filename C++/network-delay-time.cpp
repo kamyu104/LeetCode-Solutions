@@ -1,6 +1,7 @@
 // Time:  O((|E| + |V|) * log|V|)
 // Space: O(|E| + |V|)
 
+// Dijkstra's algorithm
 class Solution {
 public:
     int networkDelayTime(vector<vector<int>>& times, int N, int K) {
