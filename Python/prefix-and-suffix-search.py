@@ -1,5 +1,5 @@
 # Time:  O(m + n), m is the number of prefix match, n is the number of suffix match
-# Space: O(t * w), t is the number of nodes in trie, w is the number of words
+# Space: O(t^2), t is the number of nodes in trie
 
 class WordFilter(object):
 
