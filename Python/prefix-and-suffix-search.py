@@ -1,5 +1,5 @@
 # Time:  O(m + n), m is the number of prefix match, n is the number of suffix match
-# Space: O(t^2), t is the number of nodes in trie
+# Space: O(t * w), t is the number of nodes in trie, w is the number of words
 
 class WordFilter(object):
 
@@ -52,8 +52,6 @@ class WordFilter(object):
                 j += 1
         return -1
         
-
-
 # Your WordFilter object will be instantiated and called as such:
 # obj = WordFilter(words)
 # param_1 = obj.f(prefix,suffix)
