@@ -6,7 +6,6 @@ class Solution {
 public:
     int networkDelayTime(vector<vector<int>>& times, int N, int K) {
         using P = pair<int, int>;
-        priority_queue<P, vector<P>, greater<P>> min_heap;
         vector<vector<P>> adj(N);
         for (const auto& time : times) {
             int u, v, w;
@@ -16,6 +15,7 @@ public:
 
         int result = 0;
         unordered_set<int> lookup;
+        priority_queue<P, vector<P>, greater<P>> min_heap;
         min_heap.emplace(0, K - 1);
         while (!min_heap.empty() && lookup.size() != N) {
             int u;
