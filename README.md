@@ -496,6 +496,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 658 | [Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/) | [C++](./C++/find-k-closest-elements.cpp) [Python](./Python/find-k-closest-elements.py) | _O(logn + k)_ | _O(1)_ | Medium | |
 668 | [Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/) | [C++](./C++/kth-smallest-number-in-multiplication-table.cpp) [Python](./Python/kth-smallest-number-in-multiplication-table.py) | _O(m * log(m * n))_ | _O(1)_ | Hard | |
 719 | [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/) | [C++](./C++/find-k-th-smallest-pair-distance.cpp) [Python](./Python/find-k-th-smallest-pair-distance.py) | _O(nlogn + nlogw)_ | _O(1)_ | Hard | |
+744 | [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) | [C++](./C++/find-smallest-letter-greater-than-target.cpp) [Python](./Python/find-smallest-letter-greater-than-target.py) | _O(logn)_ | _O(1)_ | Easy | |
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -530,6 +531,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 444| [Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction/)| [C++](./C++/sequence-reconstruction.cpp) [Python](./Python/sequence-reconstruction.py)   | _O(n * s)_          | _O(n)_          | Medium         |📖| Topological Sort |
 666| [Path Sum IV](https://leetcode.com/problems/path-sum-iv/)| [C++](./C++/path-sum-iv.cpp) [Python](./Python/path-sum-iv.py)   | _O(n)_          | _O(w)_          | Medium         |📖| Topological Sort |
 675|[Cut Off Trees for Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/)| [C++](./C++/cut-off-trees-for-golf-event.cpp) [Python](./Python/cut-off-trees-for-golf-event.py)| _O(t * m * n)_ | _O(m * n)_ | Hard | | `A* Search Algorithm` |
+742|[Closest Leaf in a Binary Tree](https://leetcode.com/problems/closest-leaf-in-a-binary-tree/)| [C++](./C++/closest-leaf-in-a-binary-tree.cpp) [Python](./Python/closest-leaf-in-a-binary-tree.py)| _O(n)_ | _O(n)_ | Medium | | |
+743|[Network Delay Time](https://leetcode.com/problems/network-delay-time/)| [C++](./C++/network-delay-time.cpp) [Python](./Python/network-delay-time.py)| _O((|E| + |V|) * log|V|)_ | _O(|E| + |V|)_ | Medium | | `Dijkstra's algorithm` |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -721,6 +724,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 642| [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | [C++](./C++/design-search-autocomplete-system.cpp) [Python](./Python/design-search-autocomplete-system.py) | _O(p^2)_ | _O(p * t + s)_ | Hard |📖| |
 715| [Range Module](https://leetcode.com/problems/range-module/) | [C++](./C++/range-module.cpp) [Python](./Python/range-module.py) | add: _O(n)_<br> remove: _O(n)_<br> query: _O(logn)_ | _O(n)_ | Hard || |
 716| [Max Stack](https://leetcode.com/problems/max-stack/) | [C++](./C++/max-stack.cpp) [Python](./Python/max-stack.py) | push: _O(logn)_<br> pop: _O(logn)_<br> popMax: _O(logn)_<br> top: _O(1)_<br> peekMax: _O(1)_ | _O(n)_ | Easy || |
+745| [Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/) | [C++](./C++/prefix-and-suffix-search.cpp) [Python](./Python/prefix-and-suffix-search.py) | ctor: _O(w * l)_<br> search : _O(m + n)_ | _O(w * t)_ | Hard |📖| Trie |
 
 ## SQL
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
