@@ -1,6 +1,6 @@
 // Time:  ctor:   O(w * l), w is the number of words, l is the word length on average
-//        search: O(p + s + m + n), p is the length of the prefix, s is the length of the suffix,
-//                                  m is the number of the prefix match, n is the number of the suffix match
+//        search: O(p + s + max(m, n)), p is the length of the prefix, s is the length of the suffix,
+//                                      m is the number of the prefix match, n is the number of the suffix match
 // Space: O(w * l)
 
 struct TrieNode {
