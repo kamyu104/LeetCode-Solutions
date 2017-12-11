@@ -1,5 +1,6 @@
-# Time:  O(m + n), m is the number of prefix match, n is the number of suffix match
-# Space: O(t * w), t is the number of nodes in trie, w is the number of words
+# Time:  ctor:   O(w * l), l is the word length on average
+#        search: O(m + n), m is the number of prefix match, n is the number of suffix match
+# Space: O(w * l), w is the number of words
 
 class Trie(object):
     
