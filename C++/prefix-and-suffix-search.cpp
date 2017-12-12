@@ -2,35 +2,33 @@
 //        search: O(p + s)  , p is the length of the prefix, s is the length of the suffix,
 // Space: O(t), t is the number of trie nodes
 
-
 struct TrieNode {
-    vector<int> words; // index of words
+    int weight;
     vector<TrieNode *> leaves;
 
-    TrieNode() : leaves(26) {}
+    TrieNode() : weight(0), leaves(27) {}
 
-    void insert(const string& s, const int i) {
+    void insert(const string& s, const int weight) {
         auto* p = this;
-        p->words.emplace_back(i);
+        p->weight = weight;
         for (const auto& c : s) {
             if (!p->leaves[c - 'a']) {
                 p->leaves[c - 'a'] = new TrieNode;
             }
             p = p->leaves[c - 'a'];
-            p->words.emplace_back(i);
+            p->weight = weight;
         }
     }
     
-    const vector<int>& find(const string& s) const {
+    int find(const string& s) const {
         auto* p = this;
         for (const auto& c : s) {
             if (!p->leaves[c - 'a']) {
-                static const vector<int> empty;
-                return empty;
+                return -1;
             }
             p = p->leaves[c - 'a'];
         }
-        return p->words;
+        return p->weight;
     }
 
     ~TrieNode() {
@@ -45,33 +43,21 @@ struct TrieNode {
 class WordFilter {
 public:
     WordFilter(vector<string> words) {
-        for (int i = words.size() - 1; i >= 0; --i) {
-            auto word = words[i];
-            prefix_trie_.insert(word, i);
-            reverse(word.begin(), word.end());
-            suffix_trie_.insert(word, i);
+        for (int i = 0; i < words.size(); ++i) {
+            auto word = words[i] + SEPARATOR + words[i];
+            for (int j = 0; j < word.length(); ++j) {
+                trie_.insert(word.substr(j), i);
+            }
         }
     }
     
     int f(string prefix, string suffix) {
-        const auto& prefix_match = prefix_trie_.find(prefix);
-        reverse(suffix.begin(), suffix.end());
-        const auto& suffix_match = suffix_trie_.find(suffix);
-        int i = 0, j = 0;
-        while (i != prefix_match.size() && j != suffix_match.size()) {
-            if (prefix_match[i] == suffix_match[j]) {
-                return prefix_match[i];
-            } else if (prefix_match[i] > suffix_match[j]) {
-                ++i;
-            } else {
-                ++j;
-            }
-        }
-        return -1;
+        return trie_.find(suffix + SEPARATOR + prefix);
     }
-    
+
 private:
-    TrieNode prefix_trie_, suffix_trie_;
+    const string SEPARATOR = "{";  // ascii code of 'z' + 1
+    TrieNode trie_;
 };
 
 /**
@@ -79,4 +65,3 @@ private:
  * WordFilter obj = new WordFilter(words);
  * int param_1 = obj.f(prefix,suffix);
  */
- 
