@@ -1,6 +1,6 @@
-# Time:  ctor:   O(w * l), w is the number of words, l is the word length on average
-#        search: O(p + s), p is the length of the prefix, s is the length of the suffix,
-# Space: O(w * l)
+# Time:  ctor:   O(w * l^2), w is the number of words, l is the word length on average
+#        search: O(p + s)  , p is the length of the prefix, s is the length of the suffix,
+# Space: O(t), t is the number of trie nodes
 
 # Given many words, words[i] has weight i.
 #
