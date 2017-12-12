@@ -1,3 +1,4 @@
+
 // Time:  ctor:   O(w * l^2), w is the number of words, l is the word length on average
 //        search: O(p + s)  , p is the length of the prefix, s is the length of the suffix,
 // Space: O(t), t is the number of trie nodes
@@ -44,9 +45,9 @@ class WordFilter {
 public:
     WordFilter(vector<string> words) {
         for (int i = 0; i < words.size(); ++i) {
-            auto word = words[i] + SEPARATOR + words[i];
-            for (int j = 0; j < word.length(); ++j) {
-                trie_.insert(word.substr(j), i);
+            for (int j = 0; j <= words[i].length(); ++j) {
+                const auto& word = words[i].substr(j) + SEPARATOR + words[i];
+                trie_.insert(word, i);
             }
         }
     }
