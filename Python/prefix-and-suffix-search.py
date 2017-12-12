@@ -35,8 +35,8 @@ class WordFilter(object):
             for i in xrange(len(word)):
                 cur = self.__trie
                 cur["_weight"] = weight
-                for j in xrange(i, 2 * len(word) - 1):
-                    cur = cur[word[j % len(word)]]
+                for j in xrange(i, 2*len(word)-1):
+                    cur = cur[word[j%len(word)]]
                     cur["_weight"] = weight
                     
     def f(self, prefix, suffix):
