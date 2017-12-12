@@ -46,8 +46,7 @@ public:
     WordFilter(vector<string> words) {
         for (int i = 0; i < words.size(); ++i) {
             for (int j = 0; j <= words[i].length(); ++j) {
-                const auto& word = words[i].substr(j) + SEPARATOR + words[i];
-                trie_.insert(word, i);
+                trie_.insert(words[i].substr(j) + SEPARATOR + words[i], i);
             }
         }
     }
