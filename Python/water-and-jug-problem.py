@@ -37,6 +37,6 @@ class Solution(object):
             return a
         
         # The problem is to solve:
-        # - check x + y >= z
+        # - check z <= x + y
         # - check if there is any (a, b) integers s.t. ax + by = z
-        return z == 0 or ((x + y >= z) and (z % gcd(x, y) == 0))
+        return z == 0 or ((z <= x + y) and (z % gcd(x, y) == 0))
