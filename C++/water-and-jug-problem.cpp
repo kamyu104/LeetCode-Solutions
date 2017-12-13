@@ -1,6 +1,7 @@
 // Time:  O(logn), n is the max of (x, y)
 // Space: O(1)
 
+// Bézout's identity (also called Bézout's lemma) 
 class Solution {
 public:
     bool canMeasureWater(int x, int y, int z) {
