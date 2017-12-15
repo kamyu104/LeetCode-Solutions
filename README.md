@@ -381,6 +381,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 453 | [Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [C++](./C++/minimum-number-of-arrows-to-burst-balloons.cpp) [Python](./Python/minimum-number-of-arrows-to-burst-balloons.py) | _O(n)_ | _O(1)_ | Easy |||
 458 | [Poor Pigs](https://leetcode.com/problems/poor-pigs/) | [C++](./C++/poor-pigs.cpp) [Python](./Python/poor-pigs.py) | _O(n)_ | _O(1)_ | Easy |||
 469 | [Convex Polygon](https://leetcode.com/problems/convex-polygon/) | [C++](./C++/convex-polygon.cpp) [Python](./Python/convex-polygon.py) | _O(n)_ | _O(1)_ | Medium |📖||
+553 | [Optimal Division](https://leetcode.com/problems/optimal-division/) | [C++](./C++/optimal-division.cpp) [Python](./Python/optimal-division.py) | _O(n)_ | _O(1)_ | Medium |||
 573 | [Squirrel Simulation](https://leetcode.com/problems/squirrel-simulation/) | [C++](./C++/squirrel-simulation.cpp) [Python](./Python/squirrel-simulation.py) | _O(n)_ | _O(1)_ | Medium |📖||
 592 | [Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction/) | [C++](./C++/fraction-addition-and-subtraction.cpp) [Python](./Python/fraction-addition-and-subtraction.py) | _O(nlogx)_ | _O(n)_ | Medium |||
 593 | [Valid Square](https://leetcode.com/problems/valid-square/) | [C++](./C++/valid-square.cpp) [Python](./Python/valid-square.py) | _O(1)_ | _O(1)_ | Medium |||
