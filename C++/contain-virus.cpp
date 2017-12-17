@@ -1,4 +1,4 @@
-// Time:  O((R * C)^(4/3))
+// Time:  O((R * C)^(4/3)), days = O((R * C)^(1/3))
 // Space: O(R * C)
 
 class Solution {
