@@ -103,14 +103,14 @@ class Solution(object):
                     result += perimeters[i]
                     for r, c in region:
                         grid[r][c] = -1
-                else:
-                    for r, c in region:
-                        for d in directions:
-                            nr, nc = r+d[0], c+d[1]
-                            if not (0 <= nr < len(grid) and \
-                                    0 <= nc < len(grid[r])):
-                                continue
-                            if grid[nr][nc] == 0:
-                                grid[nr][nc] = 1
+                    continue
+                for r, c in region:
+                    for d in directions:
+                        nr, nc = r+d[0], c+d[1]
+                        if not (0 <= nr < len(grid) and \
+                                0 <= nc < len(grid[r])):
+                            continue
+                        if grid[nr][nc] == 0:
+                            grid[nr][nc] = 1
 
         return result
