@@ -36,18 +36,18 @@ public:
                     for (const auto& p : regions[i]) {
                         grid[p.first][p.second] = -1;
                     }
-                } else {
-                    for (const auto& p : regions[i]) {
-                        for (const auto& d : directions) {
-                            int nr = p.first + d.first;
-                            int nc = p.second + d.second;
-                            if (nr < 0 || nr >= grid.size() ||
-                                nc < 0 || nc >= grid[nr].size()) {
-                                continue;
-                            }
-                            if (grid[nr][nc] == 0) {
-                                grid[nr][nc] = 1;
-                            }
+                    continue;
+                }
+                for (const auto& p : regions[i]) {
+                    for (const auto& d : directions) {
+                        int nr = p.first + d.first;
+                        int nc = p.second + d.second;
+                        if (nr < 0 || nr >= grid.size() ||
+                            nc < 0 || nc >= grid[nr].size()) {
+                            continue;
+                        }
+                        if (grid[nr][nc] == 0) {
+                            grid[nr][nc] = 1;
                         }
                     }
                 }
