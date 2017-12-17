@@ -1,4 +1,4 @@
-# Time:  O((R * C)^(4/3))
+# Time:  O((R * C)^(4/3)), days = O((R * C)^(1/3))
 # Space: O(R * C)
 
 # A virus is spreading rapidly, and your task is to quarantine the infected area by installing walls.
