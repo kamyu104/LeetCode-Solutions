@@ -339,6 +339,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 721| [Accounts Merge](https://leetcode.com/problems/accounts-merge/) | [C++](./C++/accounts-merge.cpp) [Python](./Python/accounts-merge.py) | _O(nlogn)_ | _O(n)_| Medium         || Union Find
 734| [Sentence Similarity](https://leetcode.com/problems/sentence-similarity/) | [C++](./C++/sentence-similarity.cpp) [Python](./Python/sentence-similarity.py) | _O(n + p)_ | _O(p)_| Easy         ||
 737| [Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/) | [C++](./C++/sentence-similarity-ii.cpp) [Python](./Python/sentence-similarity-ii.py) | _O(n + p)_ | _O(p)_| Medium         || Union Find
+748 | [Shortest Completing Word](https://leetcode.com/problems/shortest-completing-word/) | [C++](./C++/shortest-completing-word.cpp) [Python](./Python/shortest-completing-word.py) | _O(n)_ | _O(1)_ | Easy ||
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -564,6 +565,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 695| [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [C++](./C++/max-area-of-island.cpp) [Python](./Python/max-area-of-island.py) | _O(m * n)_          | _O(m * n)_          | Easy           ||
 711| [Number of Distinct Islands II](https://leetcode.com/problems/number-of-distinct-islands-ii/) | [C++](./C++/number-of-distinct-islands-ii.cpp) [Python](./Python/number-of-distinct-islands-ii.py) | _O((m * n) * log(m * n))_          | _O(m * n)_          | Hard           |📖| Hash |
 733| [Max Area of Island](https://leetcode.com/problems/flood-fill/) | [C++](./C++/flood-fill.cpp) [Python](./Python/flood-fill.py) | _O(m * n)_          | _O(m * n)_          | Easy           ||
+749| [Contain Virus](https://leetcode.com/problems/contain-virus/) | [C++](./C++/contain-virus.cpp) [Python](./Python/contain-virus.py) | _O((m * n)^(4/3))_          | _O(m * n)_          | Hard           || Simulation|
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -669,6 +671,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 730 | [Count Different Palindromic Subsequences](https://leetcode.com/problems/count-different-palindromic-subsequences/) | [C++](./C++/count-different-palindromic-subsequences.cpp) [Python](./Python/count-different-palindromic-subsequences.py) | _O(n^2)_ | _O(n)_ | Hard ||
 740 | [Delete and Earn](https://leetcode.com/problems/delete-and-earn/) | [C++](./C++/delete-and-earn.cpp) [Python](./Python/delete-and-earn.py) | _O(n)_ | _O(1)_ | Medium ||
 741 | [Cherry Pickup](https://leetcode.com/problems/cherry-pickup/) | [C++](./C++/cherry-pickup.cpp) [Python](./Python/cherry-pickup.py) | _O(n^3)_ | _O(n^2)_ | Hard ||
+746 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | [C++](./C++/min-cost-climbing-stairs.cpp) [Python](./Python/min-cost-climbing-stairs.py) | _O(n)_ | _O(1)_ | Easy ||
+750 | [Number Of Corner Rectangles](https://leetcode.com/problems/number-of-corner-rectangles/) | [C++](./C++/number-of-corner-rectangles.cpp) [Python](./Python/number-of-corner-rectangles.py) | _O(n * m^2)_ | _O(n * m)_ | Medium ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
