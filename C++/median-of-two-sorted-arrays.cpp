@@ -71,7 +71,7 @@ private:
         // left xxxxxxxooooooo right, find first xo or oo
         while (left <= right) {
             const auto mid = left + (right - left) / 2;
-            if (match(arrays, mid, k)) {
+            if (!match(arrays, mid, k)) {
                 right = mid - 1;
             } else {
                 left = mid + 1;
@@ -88,6 +88,6 @@ private:
                                 array->cend());
             }
         }
-        return res < target;
+        return res >= target;
     }
 };
