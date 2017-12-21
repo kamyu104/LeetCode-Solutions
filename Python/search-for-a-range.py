@@ -55,7 +55,7 @@ class Solution(object):
                 right = mid
             else:
                 left = mid
-        return right
+        return left if compare(nums[left], target) else right
 
 
 if __name__ == "__main__":
