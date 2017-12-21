@@ -25,7 +25,7 @@ public:
         int left = 0;
         int right = m;
         // Find a partition of A and B
-        // where min left s.t. A[left - 1] >= B[k - 1 - left]. Thus left is the k-th element.
+        // where min left s.t. A[left - 1] >= B[k - 1 - left]. Thus A[left - 1] is the kth element.
         while (left < right) {
             int mid = left + (right - left) / 2;
             if (0 <= k - 1 - mid && k - 1 - mid < n && A[mid] >= B[k - 1 - mid]) {
