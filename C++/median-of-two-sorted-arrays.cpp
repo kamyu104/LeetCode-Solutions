@@ -69,22 +69,15 @@ private:
             }
         }
         // left xxxxxxxooooooo right, find first xo or oo
-        while (left + 1 < right) {
+        while (left <= right) {
             const auto mid = left + (right - left) / 2;
             if (match(arrays, mid, k)) {
-                right = mid;
+                right = mid - 1;
             } else {
-                left = mid;
+                left = mid + 1;
             }
         }
-        // case: xoo
-        //        ^^
-        if (match(arrays, left, k)) {
-            return left;
-        }
-        // case: xo
-        //       ^^
-        return right;
+        return left;
     }
 
     bool match(const vector<vector<int> *>& arrays, int num, int target) {
