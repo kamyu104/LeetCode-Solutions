@@ -25,7 +25,6 @@ class Solution(object):
             if target - num in lookup:
                 return [lookup[target - num], i]
             lookup[num] = i
-        return []
 
     def twoSum2(self, nums, target):
         """
