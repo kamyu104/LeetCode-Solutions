@@ -32,7 +32,7 @@ class Solution(object):
             if l2:
                 val += l2.val
                 l2 = l2.next
-            carry, val = val / 10, val % 10
+            carry, val = val / 10, val % 10 # val = val//10 if python 3 
             current.next = ListNode(val)
             current = current.next
 
