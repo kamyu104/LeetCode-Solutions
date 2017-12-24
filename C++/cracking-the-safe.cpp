@@ -13,7 +13,7 @@ public:
             }
         }
         const int N = pow(k, n);
-        string result;
+        string result(n - 1, '0' + k - 1);
         for (int i = 0; i < N; ++i) {
             int j = i;
             while (P[j] >= 0) {
@@ -23,7 +23,6 @@ public:
                 j = Pj;
             }
         }
-        result += string(n - 1, '0');
         return result;
     }
 };
