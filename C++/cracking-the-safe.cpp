@@ -28,8 +28,8 @@ public:
     }
 };
 
-// Time:  O(n *k^n)
-// Space: O(n *k^n)
+// Time:  O(n * k^n)
+// Space: O(n * k^n)
 class Solution2 {
 public:
     string crackSafe(int n, int k) {
@@ -53,8 +53,8 @@ public:
     }
 };
 
-// Time:  O(n *k^n)
-// Space: O(n *k^n)
+// Time:  O(n * k^n)
+// Space: O(n * k^n)
 class Solution3 {
 public:
     string crackSafe(int n, int k) {
