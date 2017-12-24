@@ -33,13 +33,13 @@ public:
 class Solution2 {
 public:
     string crackSafe(int n, int k) {
-        string result(n, '0');
+        string result(n, '0' + k - 1);
         unordered_set<string> lookup;
         lookup.emplace(result);
         int total = pow(k, n);
         while (lookup.size() < total) {
             auto node = result.substr(result.length() - n + 1);
-            for (int i = k - 1; i >= 0; --i) {
+            for (int i = 0; i < k; ++i) {
                 auto neighbor = node;
                 neighbor.push_back('0' +  i);
                 if (!lookup.count(neighbor)) {
