@@ -1,7 +1,36 @@
+// Time:  O(k^n)
+// Space: O(k^n)
+
+// https://en.wikipedia.org/wiki/De_Bruijn_sequence
+class Solution {
+public:
+    string crackSafe(int n, int k) {
+        const int M = pow(k, n - 1);
+        vector<int> P;
+        for (int i = 0; i < k; ++i) {
+            for (int q = 0; q < M; ++q) {
+                P.emplace_back(q * k + i);
+            }
+        }
+        const int N = pow(k, n);
+        string result;
+        for (int i = 0; i < N; ++i) {
+            int j = i;
+            while (P[j] >= 0) {
+                result.push_back('0' + j / M);
+                auto Pj = P[j];
+                P[j] = -1;
+                j = Pj;
+            }
+        }
+        result += string(n - 1, '0');
+        return result;
+    }
+};
+
 // Time:  O(n *k^n)
 // Space: O(n *k^n)
-
-class Solution {
+class Solution2 {
 public:
     string crackSafe(int n, int k) {
         unordered_set<string> lookup;
