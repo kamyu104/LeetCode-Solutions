@@ -46,9 +46,32 @@ class Solution(object):
         return "".join(result) + "0"*(n-1)
 
 
-# Time:  O(n *k^n)
-# Space: O(n *k^n)
+# Time:  O(n * k^n)
+# Space: O(n * k^n)
 class Solution2(object):
+    def crackSafe(self, n, k):
+        """
+        :type n: int
+        :type k: int
+        :rtype: str
+        """
+        result = [str(k-1)]*n
+        lookup = {"".join(result)}
+        total = k**n
+        while len(lookup) < total:
+            node = result[len(result)-n+1:]
+            for i in xrange(k):
+                neighbor = "".join(node) + str(i)
+                if neighbor not in lookup:
+                    lookup.add(neighbor)
+                    result.append(str(i))
+                    break
+        return "".join(result)
+
+
+# Time:  O(n * k^n)
+# Space: O(n * k^n)
+class Solution3(object):
     def crackSafe(self, n, k):
         """
         :type n: int
