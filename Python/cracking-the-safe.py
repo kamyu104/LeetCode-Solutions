@@ -37,13 +37,13 @@ class Solution(object):
         """
         M = k**(n-1)
         P = [q*k+i for i in xrange(k) for q in xrange(M)]
-        result = []
+        result = [str(k-1)]*(n-1)
         for i in xrange(k**n):
             j = i
             while P[j] >= 0:
                 result.append(str(j//M))
                 P[j], j = -1, P[j]
-        return "".join(result) + "0"*(n-1)
+        return "".join(result)
 
 
 # Time:  O(n * k^n)
@@ -86,7 +86,7 @@ class Solution3(object):
                     result.append(str(i))
                     dfs(k, neighbor[1:], lookup, result)
                     
-        lookup = set()
         result = [str(k-1)]*(n-1)
+        lookup = set()
         dfs(k, "".join(result), lookup, result)
         return "".join(result)
