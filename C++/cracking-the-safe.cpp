@@ -33,6 +33,31 @@ public:
 class Solution2 {
 public:
     string crackSafe(int n, int k) {
+        string result(n, '0');
+        unordered_set<string> lookup;
+        lookup.emplace(result);
+        int total = pow(k, n);
+        while (lookup.size() < total) {
+            auto node = result.substr(result.length() - n + 1);
+            for (int i = k - 1; i >= 0; --i) {
+                auto neighbor = node;
+                neighbor.push_back('0' +  i);
+                if (!lookup.count(neighbor)) {
+                    lookup.emplace(neighbor);
+                    result.push_back('0' +  i);
+                    break;
+                }
+            }
+        }
+        return result;
+    }
+};
+
+// Time:  O(n *k^n)
+// Space: O(n *k^n)
+class Solution3 {
+public:
+    string crackSafe(int n, int k) {
         unordered_set<string> lookup;
         string result;
         string node(n - 1, '0');
