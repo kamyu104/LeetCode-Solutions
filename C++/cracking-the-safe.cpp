@@ -59,10 +59,9 @@ class Solution3 {
 public:
     string crackSafe(int n, int k) {
         unordered_set<string> lookup;
-        string result;
-        string node(n - 1, '0');
+        string result(n - 1, '0' + k - 1);
+        auto node = result;
         dfs(k, node, &lookup, &result);
-        result += string(n - 1, '0');
         return result;
     }
 
@@ -72,8 +71,8 @@ private:
             const auto& neighbor = node + to_string(i);
             if (!lookup->count(neighbor)) {
                 lookup->emplace(neighbor);
-                dfs(k, neighbor.substr(1), lookup, result);
                 result->push_back('0' + i);
+                dfs(k, neighbor.substr(1), lookup, result);
             }
         }
     }
