@@ -83,9 +83,10 @@ class Solution3(object):
                 neighbor = node + str(i)
                 if neighbor not in lookup:
                     lookup.add(neighbor)
-                    dfs(k, neighbor[1:], lookup, result)
                     result.append(str(i))
+                    dfs(k, neighbor[1:], lookup, result)
+                    
         lookup = set()
         result = []
-        dfs(k, "0"*(n-1), lookup, result)
-        return "".join(result) + "0"*(n-1)
+        dfs(k, str(k-1)*(n-1), lookup, result)
+        return str(k-1)*(n-1) + "".join(result)
