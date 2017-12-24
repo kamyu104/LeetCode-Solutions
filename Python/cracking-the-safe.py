@@ -88,5 +88,5 @@ class Solution3(object):
                     
         lookup = set()
         result = [str(k-1)]*(n-1)
-        dfs(k, str(k-1)*(n-1), lookup, result)
+        dfs(k, "".join(result), lookup, result)
         return "".join(result)
