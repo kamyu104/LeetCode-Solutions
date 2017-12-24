@@ -87,6 +87,6 @@ class Solution3(object):
                     dfs(k, neighbor[1:], lookup, result)
                     
         lookup = set()
-        result = []
+        result = [str(k-1)]*(n-1)
         dfs(k, str(k-1)*(n-1), lookup, result)
-        return str(k-1)*(n-1) + "".join(result)
+        return "".join(result)
