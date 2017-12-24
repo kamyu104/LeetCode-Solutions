@@ -57,10 +57,10 @@ class Solution2(object):
         """
         def dfs(k, node, lookup, result):
             for i in xrange(k):
-                neigbor = node + str(i)
-                if neigbor not in lookup:
-                    lookup.add(neigbor)
-                    dfs(k, neigbor[1:], lookup, result)
+                neighbor = node + str(i)
+                if neighbor not in lookup:
+                    lookup.add(neighbor)
+                    dfs(k, neighbor[1:], lookup, result)
                     result.append(str(i))
         lookup = set()
         result = []
