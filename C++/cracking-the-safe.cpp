@@ -12,9 +12,9 @@ public:
                 P.emplace_back(q * k + i);
             }
         }
-        const int N = pow(k, n);
+        const int total = pow(k, n);
         string result(n - 1, '0' + k - 1);
-        for (int i = 0; i < N; ++i) {
+        for (int i = 0; i < total; ++i) {
             int j = i;
             while (P[j] >= 0) {
                 result.push_back('0' + j / M);
@@ -35,7 +35,7 @@ public:
         string result(n, '0' + k - 1);
         unordered_set<string> lookup;
         lookup.emplace(result);
-        int total = pow(k, n);
+        const int total = pow(k, n);
         while (lookup.size() < total) {
             auto node = result.substr(result.length() - n + 1);
             for (int i = 0; i < k; ++i) {
