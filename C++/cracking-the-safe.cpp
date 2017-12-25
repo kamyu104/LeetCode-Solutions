@@ -9,7 +9,7 @@ public:
         vector<int> P;
         for (int i = 0; i < k; ++i) {
             for (int q = 0; q < M; ++q) {
-                P.emplace_back(q * k + i);
+                P.emplace_back(q * k + i);  // rotate: i*k^(n-1) + q => q*k + i
             }
         }
         const int total = pow(k, n);
