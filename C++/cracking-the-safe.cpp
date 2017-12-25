@@ -37,7 +37,7 @@ public:
         lookup.emplace(result);
         const int total = pow(k, n);
         while (lookup.size() < total) {
-            auto node = result.substr(result.length() - n + 1);
+            const auto& node = result.substr(result.length() - n + 1);
             for (int i = 0; i < k; ++i) {
                 const auto& neighbor = node + to_string(i);
                 if (!lookup.count(neighbor)) {
