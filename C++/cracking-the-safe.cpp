@@ -16,6 +16,7 @@ public:
         string result(n - 1, '0' + k - 1);
         for (int i = 0; i < total; ++i) {
             int j = i;
+            // concatenation in lexicographic order of Lyndon words
             while (P[j] >= 0) {
                 result.push_back('0' + j / M);
                 auto Pj = P[j];
