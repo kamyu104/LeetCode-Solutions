@@ -72,6 +72,7 @@ private:
                 lookup->emplace(neighbor);
                 result->push_back('0' + i);
                 dfs(k, neighbor.substr(1), lookup, result);
+                break;
             }
         }
     }
