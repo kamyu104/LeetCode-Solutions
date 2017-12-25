@@ -2,6 +2,7 @@
 // Space: O(k^n)
 
 // https://en.wikipedia.org/wiki/De_Bruijn_sequence
+// https://en.wikipedia.org/wiki/Lyndon_word
 class Solution {
 public:
     string crackSafe(int n, int k) {
