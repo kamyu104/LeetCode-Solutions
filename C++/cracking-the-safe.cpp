@@ -40,10 +40,10 @@ public:
             auto node = result.substr(result.length() - n + 1);
             for (int i = 0; i < k; ++i) {
                 auto neighbor = node;
-                neighbor.push_back('0' +  i);
+                neighbor.push_back('0' + i);
                 if (!lookup.count(neighbor)) {
                     lookup.emplace(neighbor);
-                    result.push_back('0' +  i);
+                    result.push_back('0' + i);
                     break;
                 }
             }
