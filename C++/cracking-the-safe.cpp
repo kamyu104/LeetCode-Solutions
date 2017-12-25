@@ -39,8 +39,7 @@ public:
         while (lookup.size() < total) {
             auto node = result.substr(result.length() - n + 1);
             for (int i = 0; i < k; ++i) {
-                auto neighbor = node;
-                neighbor.push_back('0' + i);
+                const auto& neighbor = node + to_string(i);
                 if (!lookup.count(neighbor)) {
                     lookup.emplace(neighbor);
                     result.push_back('0' + i);
