@@ -28,6 +28,7 @@
 # - k^n will be at most 4096.
 
 # https://en.wikipedia.org/wiki/De_Bruijn_sequence
+# https://en.wikipedia.org/wiki/Lyndon_word
 class Solution(object):
     def crackSafe(self, n, k):
         """
