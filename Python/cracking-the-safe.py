@@ -36,7 +36,7 @@ class Solution(object):
         :rtype: str
         """
         M = k**(n-1)
-        P = [q*k+i for i in xrange(k) for q in xrange(M)]
+        P = [q*k+i for i in xrange(k) for q in xrange(M)]  # rotate: i*k^(n-1) + q => q*k + i
         result = [str(k-1)]*(n-1)
         for i in xrange(k**n):
             j = i
