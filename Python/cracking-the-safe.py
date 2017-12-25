@@ -85,6 +85,7 @@ class Solution3(object):
                     lookup.add(neighbor)
                     result.append(str(i))
                     dfs(k, neighbor[1:], lookup, result)
+                    break
                     
         result = [str(k-1)]*(n-1)
         lookup = set()
