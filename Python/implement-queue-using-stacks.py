@@ -28,10 +28,10 @@ class Queue:
     def push(self, x):
         self.A.append(x)
 
-    # @return nothing
+    # @return an integer
     def pop(self):
         self.peek()
-        self.B.pop()
+        return self.B.pop()
         
     # @return an integer
     def peek(self):
