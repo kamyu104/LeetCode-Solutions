@@ -48,9 +48,9 @@ public:
 
         for (int i = 0; i < matrix.size(); ++i) {
             for (int j = 0; j < matrix[i].size(); ++j) {
-                if (matrix[i][j] == 0)
+                if (matrix[i][j] == 0) {
                     dp[i][j] = 0;
-                else {
+                } else {
                     if (i > 0) {
                         dp[i][j] = min(dp[i][j], dp[i - 1][j] + 1);
                     }
