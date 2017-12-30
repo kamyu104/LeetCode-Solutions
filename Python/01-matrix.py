@@ -82,8 +82,11 @@ class Solution2(object):
                         dp[i][j] = min(dp[i][j], dp[i][j-1]+1)
         for i in reversed(xrange(len(matrix))):
             for j in reversed(xrange(len(matrix[i]))):
-                if i < len(matrix)-1:
-                    dp[i][j] = min(dp[i][j], dp[i+1][j]+1)
-                if j < len(matrix[i])-1:
-                    dp[i][j] = min(dp[i][j], dp[i][j+1]+1)
+                if matrix[i][j] == 0:
+                    dp[i][j] = 0
+                else:
+                    if i < len(matrix)-1:
+                        dp[i][j] = min(dp[i][j], dp[i+1][j]+1)
+                    if j < len(matrix[i])-1:
+                        dp[i][j] = min(dp[i][j], dp[i][j+1]+1)
         return dp
