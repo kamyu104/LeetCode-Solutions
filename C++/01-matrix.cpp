@@ -63,11 +63,15 @@ public:
 
         for (int i = matrix.size() - 1; i >= 0; --i) {
             for (int j = matrix[i].size() - 1; j >= 0; --j) {
-                if (i < matrix.size() - 1) {
-                    dp[i][j] = min(dp[i][j], dp[i + 1][j] + 1);
-                }
-                if (j < matrix[i].size() - 1) {
-                    dp[i][j] = min(dp[i][j], dp[i][j + 1] + 1);
+                if (matrix[i][j] == 0) {
+                    dp[i][j] = 0;
+                } else {
+                    if (i < matrix.size() - 1) {
+                        dp[i][j] = min(dp[i][j], dp[i + 1][j] + 1);
+                    }
+                    if (j < matrix[i].size() - 1) {
+                        dp[i][j] = min(dp[i][j], dp[i][j + 1] + 1);
+                    }
                 }
             }
         }
