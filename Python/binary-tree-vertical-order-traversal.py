@@ -15,7 +15,6 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        """
         cols = collections.defaultdict(list)
         queue = [(root, 0)]
         for node, i in queue:
