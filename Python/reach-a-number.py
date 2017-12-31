@@ -1,4 +1,4 @@
-# Time:  O(sqrt(n))
+# Time:  O(logn)
 # Space: O(1)
 
 # You are standing at position 0 on an infinite number line. There is a goal at position target.
@@ -27,6 +27,20 @@
 # - target will be a non-zero integer in the range [-10^9, 10^9].
 
 class Solution(object):
+    def reachNumber(self, target):
+        """
+        :type target: int
+        :rtype: int
+        """
+        target = abs(target);
+        k = int(math.ceil((-1+math.sqrt(1+8*target))/2))
+        target -= k*(k+1)/2;
+        return k if target%2 == 0 else k+1+k%2
+    
+
+# Time:  O(sqrt(n))
+# Space: O(1)
+class Solution2(object):
     def reachNumber(self, target):
         """
         :type target: int
