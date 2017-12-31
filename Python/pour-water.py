@@ -128,8 +128,9 @@ class Solution(object):
         :rtype: List[int]
         """
         for _ in xrange(V):
+            best = K
             for d in (-1, 1):
-                i = best = K
+                i = K
                 while 0 <= i+d < len(heights) and \
                       heights[i+d] <= heights[i]:
                     if heights[i+d] < heights[i]: best = i+d
