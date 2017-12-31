@@ -32,9 +32,9 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        target = abs(target);
+        target = abs(target)
         k = int(math.ceil((-1+math.sqrt(1+8*target))/2))
-        target -= k*(k+1)/2;
+        target -= k*(k+1)/2
         return k if target%2 == 0 else k+1+k%2
     
 
