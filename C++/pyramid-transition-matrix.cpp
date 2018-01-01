@@ -1,4 +1,4 @@
-// Time:  O(a^(b*(b-1)/2)), a is the size of allowed, 
+// Time:  O(a^(b*(b+1)/2)-1), a is the size of allowed, 
 //                          b is the length of bottom
 // Space: O(a + b^2) 
 
