@@ -578,7 +578,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 733| [Max Area of Island](https://leetcode.com/problems/flood-fill/) | [C++](./C++/flood-fill.cpp) [Python](./Python/flood-fill.py) | _O(m * n)_          | _O(m * n)_          | Easy           ||
 749| [Contain Virus](https://leetcode.com/problems/contain-virus/) | [C++](./C++/contain-virus.cpp) [Python](./Python/contain-virus.py) | _O((m * n)^(4/3))_          | _O(m * n)_          | Hard           || Simulation|
 753| [Cracking the Safe](https://leetcode.com/problems/cracking-the-safe/) | [C++](./C++/cracking-the-safe.cpp) [Python](./Python/cracking-the-safe.py) | _O(k^n)_          | _O(k^n)_          | Hard           || `de Bruijn sequences`, `Lyndon word` |
-757| [Pyramid Transition Matrix](https://leetcode.com/problems/pyramid-transition-matrix/) | [C++](./C++/pyramid-transition-matrix.cpp) [Python](./Python/pyramid-transition-matrix.py) | _O(a^(b*(b-1)/2))_          | _O(a + b^2)_          | Medium           |||
+757| [Pyramid Transition Matrix](https://leetcode.com/problems/pyramid-transition-matrix/) | [C++](./C++/pyramid-transition-matrix.cpp) [Python](./Python/pyramid-transition-matrix.py) | _O(a^b)_          | _O(a^b)_          | Medium           |||
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
