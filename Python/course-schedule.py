@@ -30,6 +30,9 @@
 #  of Topological Sort.
 # Topological sort could also be done via BFS.
 #
+
+import collections
+
 class Solution(object):
     def canFinish(self, numCourses, prerequisites):
         """
