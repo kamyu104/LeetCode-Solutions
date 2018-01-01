@@ -136,6 +136,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 731 | [My Calendar II](https://leetcode.com/problems/my-calendar-ii/) | [C++](./C++/my-calendar-ii.cpp) [Python](./Python/my-calendar-ii.py) | _O(n^2)_ | _O(n)_ | Medium ||
 732 | [My Calendar III](https://leetcode.com/problems/my-calendar-iii/) | [C++](./C++/my-calendar-iii.cpp) [Python](./Python/my-calendar-iii.py) | _O(n^2)_ | _O(n)_ | Hard ||
 747 | [Largest Number Greater Than Twice of Others](https://leetcode.com/problems/largest-number-greater-than-twice-of-others/) | [C++](./C++/largest-number-greater-than-twice-of-others.cpp) [Python](./Python/largest-number-greater-than-twice-of-others.py) | _O(n)_ | _O(1)_ | Easy ||
+756 | [Pour Water](https://leetcode.com/problems/pour-water/) | [C++](./C++/pour-water.cpp) [Python](./Python/pour-water.py) | _O(v * n)_ | _O(1)_ | Medium ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -401,6 +402,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 660 | [Remove 9](https://leetcode.com/problems/remove-9/) | [C++](./C++/remove-9.cpp) [Python](./Python/remove-9.py) | _O(logn)_ | _O(1)_ | Hard |📖||
 672 | [Bulb Switcher II](https://leetcode.com/problems/bulb-switcher-ii/) | [C++](./C++/bulb-switcher-ii.cpp) [Python](./Python/bulb-switcher-ii.py) | _O(1)_ | _O(1)_ | Medium |||
 728 | [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/) | [C++](./C++/self-dividing-numbers.cpp) [Python](./Python/self-dividing-numbers.py) | _O(n)_ | _O(1)_ | Medium |||
+755 | [Reach a Number](https://leetcode.com/problems/reach-a-number/) | [C++](./C++/reach-a-number.cpp) [Python](./Python/reach-a-number.py) | _O(logn)_ | _O(1)_ | Medium |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -576,6 +578,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 733| [Max Area of Island](https://leetcode.com/problems/flood-fill/) | [C++](./C++/flood-fill.cpp) [Python](./Python/flood-fill.py) | _O(m * n)_          | _O(m * n)_          | Easy           ||
 749| [Contain Virus](https://leetcode.com/problems/contain-virus/) | [C++](./C++/contain-virus.cpp) [Python](./Python/contain-virus.py) | _O((m * n)^(4/3))_          | _O(m * n)_          | Hard           || Simulation|
 753| [Cracking the Safe](https://leetcode.com/problems/cracking-the-safe/) | [C++](./C++/cracking-the-safe.cpp) [Python](./Python/cracking-the-safe.py) | _O(k^n)_          | _O(k^n)_          | Hard           || `de Bruijn sequences`, `Lyndon word` |
+757| [Pyramid Transition Matrix](https://leetcode.com/problems/pyramid-transition-matrix/) | [C++](./C++/pyramid-transition-matrix.cpp) [Python](./Python/pyramid-transition-matrix.py) | _O(a^(b*(b-1)/2))_          | _O(a + b^2)_          | Medium           |||
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -712,6 +715,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 649 | [Dota2 Senate](https://leetcode.com/problems/dota2-senate/) | [C++](./C++/dota2-senate.cpp) [Python](./Python/dota2-senate.py) | _O(n)_ | _O(n)_ | Medium |||
 659 | [Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences/) | [C++](./C++/split-array-into-consecutive-subsequences.cpp) [Python](./Python/split-array-into-consecutive-subsequences.py) | _O(n)_ | _O(1)_ | Medium | |
 738 | [Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits/) | [C++](./C++/monotone-increasing-digits.cpp) [Python](./Python/monotone-increasing-digits.py) | _O(1)_ | _O(1)_ | Medium | |
+759 | [Set Intersection Size At Least Two](https://leetcode.com/problems/set-intersection-size-at-least-two/) | [C++](./C++/set-intersection-size-at-least-two.cpp) [Python](./Python/set-intersection-size-at-least-two.py) | _O(nlogn)_ | _O(n)_ | Hard | |
 
 ## Geometry
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
