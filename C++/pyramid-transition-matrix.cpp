@@ -2,6 +2,7 @@
 //                            b is the length of bottom
 // Space: O(a + b^2) 
 
+// dfs solution
 class Solution {
 public:
     bool pyramidTransition(string bottom, vector<string>& allowed) {
