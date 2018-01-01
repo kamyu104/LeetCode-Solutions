@@ -1,5 +1,5 @@
-# Time:  O(b^2 * a^(b*(b+1)/2-1)), a is the size of allowed, 
-#                                  b is the length of bottom
+# Time:  O(a^(b*(b+1)/2-1)),  a is the size of allowed, 
+#                             b is the length of bottom
 # Space: O(a + b^2) 
 
 # We are stacking blocks to form a pyramid. Each block has a color which is a one letter string, like `'Z'`.
