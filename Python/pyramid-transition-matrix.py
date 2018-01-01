@@ -61,7 +61,7 @@ class Solution(object):
             for i in xrange(len(bottom)-1):
                 if not edges[ord(bottom[i])-ord('A')][ord(bottom[i+1])-ord('A')]:
                     return False
-            new_bottom = ['A'] * (len(bottom)-1)
+            new_bottom = ['A']*(len(bottom)-1)
             return dfs(bottom, edges, new_bottom, 0)
     
         edges = [[[] for _ in xrange(7)] for _ in xrange(7)]
