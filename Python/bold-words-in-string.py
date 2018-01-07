@@ -11,7 +11,7 @@ class Solution(object):
         _trie = lambda: collections.defaultdict(_trie)
         trie = _trie()
         for i, word in enumerate(words):
-            reduce(dict.__getitem__, word, trie)["_end"] = i
+            reduce(dict.__getitem__, word, trie).setdefault("_end")
 
         lookup = [False] * len(S)
         for i in xrange(len(S)):
