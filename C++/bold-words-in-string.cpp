@@ -67,3 +67,30 @@ private:
         }
     };
 };
+
+
+// Time:  O(n * d * l), l is the average length of words
+// Space: O(n)
+class Solution2 {
+public:
+    string boldWords(vector<string>& words, string S) {
+        vector<bool> lookup(S.length());
+        for (const auto& d: words) {
+            auto pos = -1;
+            while ((pos = S.find(d, pos + 1)) != string::npos) {
+                fill(lookup.begin() + pos, lookup.begin() + pos + d.length(), true);
+            }
+        }
+        string result;
+        for (int i = 0; i < S.length(); ++i) {
+            if (lookup[i] && (i == 0 || !lookup[i - 1])) {
+                result += "<b>";
+            }
+            result.push_back(S[i]);
+            if (lookup[i] && (i == (S.length() - 1) || !lookup[i + 1])) {
+                result += "</b>";
+            }
+        }
+        return result;
+    }
+};
