@@ -12,7 +12,7 @@ public:
         vector<bool> lookup(S.length());
         for (int i = 0; i < S.length(); ++i) {
             auto curr = &trie;
-            int k = -1;
+            int k = i - 1;
             for (int j = i; j < S.length(); ++j) {
                 if (!curr->leaves[S[j] - 'a']) {
                     break;
@@ -22,9 +22,7 @@ public:
                     k = j;
                 }
             }
-            for (int j = i; j <= k; ++j) {
-                lookup[j] = true;
-            }
+            fill(lookup.begin() + i, lookup.begin() + k + 1, true);
         }
 
         string result;
