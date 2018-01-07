@@ -55,7 +55,8 @@ class LinkedList(object):
             node.next.prev = node.prev
         else:
             self.tail = node.prev
-        del node
+        node.next = None
+        node.prev = None
 
 class LRUCache(object):
 
