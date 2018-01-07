@@ -9,9 +9,9 @@ public:
             lookup[B[i]].emplace(i);
         }
         vector<int> result;
-        for (const auto& el : A) {
-            result.emplace_back(lookup[el].back());
-            lookup[el].pop();
+        for (const auto& n : A) {
+            result.emplace_back(lookup[n].back());
+            lookup[n].pop();
         }
         return result;
     }
