@@ -39,6 +39,7 @@ class LinkedList(object):
         self.tail = None
     
     def insert(self, node):
+        node.next, node.prev = None, None  # avoid dirty node
         if self.head is None:
             self.head = node
         else:
@@ -55,8 +56,7 @@ class LinkedList(object):
             node.next.prev = node.prev
         else:
             self.tail = node.prev
-        node.next = None
-        node.prev = None
+        node.next, node.prev = None, None  # make node clean
 
 class LRUCache(object):
 
