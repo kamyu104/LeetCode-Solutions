@@ -8,19 +8,18 @@ class Solution(object):
         :type dict: List[str]
         :rtype: str
         """
-        bold = [0] * len(s)
+        lookup = [0] * len(s)
         for d in dict:
             pos = s.find(d)
             while pos != -1:
-                bold[pos:pos+len(d)] = [1] * len(d)
+                lookup[pos:pos+len(d)] = [1] * len(d)
                 pos = s.find(d, pos + 1)
 
-        result, prev = [], 0
+        result = []
         for i in xrange(len(s)):
-            if prev != bold[i]:
-                result += "</b>" if prev else "<b>"
-                prev = bold[i]
-            result += s[i]
-        if prev:
-            result += "</b>"
+            if lookup[i] and (i == 0 or not lookup[i-1]):
+                result.append("<b>")
+            result.append(s[i])
+            if lookup[i] and (i == len(s)-1 or not lookup[i+1]):
+                result.append("</b>");
         return "".join(result)
