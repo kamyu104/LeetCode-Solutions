@@ -1,4 +1,4 @@
-// Time:  O(logn), n is the value of the integer
+// Time:  O(logn) = O(1), n is the value of the integer, which is less than 2^31 - 1
 // Space: O(1)
 
 class Solution {
