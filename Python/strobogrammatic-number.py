@@ -12,5 +12,4 @@ class Solution:
             if num[n-1-i] not in self.lookup or \
                num[i] != self.lookup[num[n-1-i]]:
                 return False
-            i += 1
         return True
