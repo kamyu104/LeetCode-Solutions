@@ -4,24 +4,22 @@
 class Solution {
 public:
     string addBoldTag(string s, vector<string>& dict) {
-        vector<bool> bold(s.length());
+        vector<bool> lookup(s.length());
         for (const auto& d: dict) {
             auto pos = -1;
             while ((pos = s.find(d, pos + 1)) != string::npos) {
-                fill(bold.begin() + pos, bold.begin() + pos + d.length(), true);
+                fill(lookup.begin() + pos, lookup.begin() + pos + d.length(), true);
             }
         }
         string result;
-        bool prev = false;
         for (int i = 0; i < s.length(); ++i) {
-            if (prev != bold[i]) {
-                result += prev ? "</b>" : "<b>";
-                prev = bold[i];
+            if (lookup[i] && (i == 0 || !lookup[i - 1])) {
+                result += "<b>";
             }
             result.push_back(s[i]);
-        }
-        if (prev) {
-            result += "</b>";
+            if (lookup[i] && (i == (s.length() - 1) || !lookup[i + 1])) {
+                result += "</b>";
+            }
         }
         return result;
     }
