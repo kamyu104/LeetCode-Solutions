@@ -4,16 +4,17 @@
 class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
-        vector<int> result(digits.cbegin(), digits.cend());
+        vector<int> result(digits.rbegin(), digits.rend());
         int carry = 1;
-        for (auto it = result.rbegin(); it != result.rend(); ++it) {
-            *it += carry;
-            carry = *it / 10;
-            *it %= 10;
+        for (auto& num : result) {
+            num += carry;
+            carry = num / 10;
+            num %= 10;
         }
         if (carry == 1) {
-            result.emplace(result.begin(), carry);
+            result.emplace_back(carry);
         }
+        reverse(result.begin(), result.end());
         return result;  
     }
 };
