@@ -28,7 +28,7 @@ public:
 
 // Time:  O(n * l), l is the average string length
 // Space: O(t)    , t is the size of trie
-// 142ms
+// trie solution, 142ms
 class Solution2 {
 public:
     string addBoldTag(string s, vector<string>& dict) {
