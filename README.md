@@ -177,7 +177,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 557| [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/) |[C++](./C++/reverse-words-in-a-string-iii.cpp)  [Python](./Python/reverse-words-in-a-string-iii.py) | _O(n)_ | _O(1)_ | Easy         | |
 564| [Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome/) |[C++](./C++/find-the-closest-palindrome.cpp)  [Python](./Python/find-the-closest-palindrome.py) | _O(l)_ | _O(l)_ | Hard         | |
 591| [Tag Validator](https://leetcode.com/problems/tag-validator/) |[C++](./C++/tag-validator.cpp)  [Python](./Python/tag-validator.py) | _O(n)_ | _O(n)_ | Hard         | |
-616| [Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/) | [C++](./C++/add-bold-tag-in-string.cpp) [Python](./Python/add-bold-tag-in-string.py) | _O(s * d * l)_ | _O(s)_ |  Medium | 📖 |
+616| [Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/) | [C++](./C++/add-bold-tag-in-string.cpp) [Python](./Python/add-bold-tag-in-string.py) | _O(n * d * l)_ | _O(n)_ |  Medium | 📖 |
 647| [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | [C++](./C++/palindromic-substrings.cpp) [Python](./Python/palindromic-substrings.py) | _O(n)_ | _O(n)_ |  Medium || `Manacher's Algorithm`
 648| [Replace Words](https://leetcode.com/problems/replace-words/) | [C++](./C++/replace-words.cpp)  [Python](./Python/replace-words.py) | _O(n)_ | _O(t)_ | Medium         || Trie |
 657| [Judge Route Circle](https://leetcode.com/problems/judge-route-circle/) |[C++](./C++/judge-route-circle.cpp)  [Python](./Python/judge-route-circle.py) | _O(n)_ | _O(1)_ | Easy         | |
