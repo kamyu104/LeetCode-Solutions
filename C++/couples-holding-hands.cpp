@@ -14,15 +14,16 @@ public:
             adj[couple[0]].emplace_back(couple[1]);
             adj[couple[1]].emplace_back(couple[0]);
         }
-        int result = N;
+        
+        int result = 0;
         for (int couch = 0; couch < N; ++couch) {
             if (adj[couch].empty()) {
                 continue;
             }
-            --result;
             int couch1 = couch;
             int couch2 = adj[couch1].back(); adj[couch1].pop_back();
             while (couch2 != couch) {
+                ++result;
                 adj[couch2].erase(find(adj[couch2].begin(), adj[couch2].end(), couch1));
                 couch1 = couch2;
                 couch2 = adj[couch1].back(); adj[couch1].pop_back();
