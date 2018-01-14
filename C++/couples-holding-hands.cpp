@@ -29,6 +29,6 @@ public:
                 couch2 = adj[couch1].back(); adj[couch1].pop_back();
             }
         }
-        return result;
+        return result;  // also equals to N - (# of cycles)
     }
 };
