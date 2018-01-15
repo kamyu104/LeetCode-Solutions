@@ -27,6 +27,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Backtracking](https://github.com/kamyu104/LeetCode#backtracking)
 * [Dynamic Programming](https://github.com/kamyu104/LeetCode#dynamic-programming)
 * [Greedy](https://github.com/kamyu104/LeetCode#greedy)
+* [Graph](https://github.com/kamyu104/LeetCode#graph)
 * [Geometry](https://github.com/kamyu104/LeetCode#geometry)
 * [Design](https://github.com/kamyu104/LeetCode#design)
 
@@ -64,6 +65,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 477 | [Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/) | [C++](./C++/total-hamming-distance.cpp) [Python](./Python/total-hamming-distance.py) | _O(n)_ | _O(1)_ | Medium ||
 645 | [Set Mismatch](https://leetcode.com/problems/set-mismatch/) | [C++](./C++/set-mismatch.cpp) [Python](./Python/set-mismatch.py) | _O(n)_ | _O(1)_ | Easy ||
 693 | [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/) | [C++](./C++/binary-number-with-alternating-bits.cpp) [Python](./Python/binary-number-with-alternating-bits.py) | _O(1)_ | _O(1)_ | Easy ||
+762 | [Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/) | [C++](./C++/prime-number-of-set-bits-in-binary-representation.cpp) [Python](./Python/prime-number-of-set-bits-in-binary-representation.py) | _O(1)_ | _O(1)_ | Easy ||
 
 ## Array
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -696,6 +698,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 741 | [Cherry Pickup](https://leetcode.com/problems/cherry-pickup/) | [C++](./C++/cherry-pickup.cpp) [Python](./Python/cherry-pickup.py) | _O(n^3)_ | _O(n^2)_ | Hard ||
 746 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | [C++](./C++/min-cost-climbing-stairs.cpp) [Python](./Python/min-cost-climbing-stairs.py) | _O(n)_ | _O(1)_ | Easy ||
 750 | [Number Of Corner Rectangles](https://leetcode.com/problems/number-of-corner-rectangles/) | [C++](./C++/number-of-corner-rectangles.cpp) [Python](./Python/number-of-corner-rectangles.py) | _O(n * m^2)_ | _O(n * m)_ | Medium ||
+764 | [Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign/) | [C++](./C++/largest-plus-sign.cpp) [Python](./Python/largest-plus-sign.py) | _O(n^2)_ | _O(n^2)_ | Medium ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -726,6 +729,13 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 738 | [Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits/) | [C++](./C++/monotone-increasing-digits.cpp) [Python](./Python/monotone-increasing-digits.py) | _O(1)_ | _O(1)_ | Medium | |
 757 | [Set Intersection Size At Least Two](https://leetcode.com/problems/set-intersection-size-at-least-two/) | [C++](./C++/set-intersection-size-at-least-two.cpp) [Python](./Python/set-intersection-size-at-least-two.py) | _O(nlogn)_ | _O(n)_ | Hard | |
 759 | [Employee Free Time](https://leetcode.com/problems/employee-free-time/) | [C++](./C++/employee-free-time.cpp) [Python](./Python/employee-free-time.py) | _O(m * logn)_ | _O(n)_ | Hard | |
+763 | [Partition Labels](https://leetcode.com/problems/partition-labels/) | [C++](./C++/partition-labels.cpp) [Python](./Python/partition-labels.py) | _O(n)_ | _O(n)_ | Medium | |
+
+## Graph
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
+765 | [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/)  | [C++](./C++/couples-holding-hands.cpp) [Python](./Python/couples-holding-hands.py) | _O(n)_| _O(n)_| Hard           ||| 
+
 
 ## Geometry
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
