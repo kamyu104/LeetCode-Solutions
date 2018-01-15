@@ -26,5 +26,5 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print Solution().sqrt(10)
+    print Solution().mySqrt(10)
             
