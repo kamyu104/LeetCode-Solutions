@@ -8,7 +8,7 @@ class TicTacToe(object):
         Initialize your data structure here.
         :type n: int
         """
-        self.size = n
+        self.__size = n
         self.__rows = [[0, 0] for _ in xrange(n)]
         self.__cols = [[0, 0] for _ in xrange(n)]
         self.__diagonal = [0, 0]
@@ -37,10 +37,10 @@ class TicTacToe(object):
             self.__diagonal[i] += 1
         if col == len(self.__rows) - row - 1:
             self.__anti_diagonal[i] += 1
-        if any([self.__rows[row][i] == self.size), \
-                self.__cols[col][i] == self.size, \
-                self.__diagonal[i] == self.size, \
-                self.__anti_diagonal[i] == self.size]):
+        if any([self.__rows[row][i] == self.__size), \
+                self.__cols[col][i] == self.__size, \
+                self.__diagonal[i] == self.__size, \
+                self.__anti_diagonal[i] == self.__size]):
             return player
 
         return 0
