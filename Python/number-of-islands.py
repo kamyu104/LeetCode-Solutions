@@ -30,27 +30,25 @@ class Solution:
             return 0
     
         row = len(grid)
-        col = len(grid[0])
-        used = [[False for j in xrange(col)] for i in xrange(row)]
-    
+        col = len(grid[0])          
         count = 0
         for i in xrange(row):
             for j in xrange(col):
-                if grid[i][j] == '1' and not used[i][j]:
-                    self.dfs(grid, used, row, col, i, j)
+                if grid[i][j] == '1':
+                    self.dfs(grid, row, col, i, j)
                     count += 1
         return count
 
-    def dfs(self, grid, used, row, col, x, y):
-        if grid[x][y] == '0' or used[x][y]:
+    def dfs(self, grid, row, col, x, y):
+        if grid[x][y] == '0':
             return
-        used[x][y] = True
+        grid[x][y] = '0'
     
         if x != 0:
-            self.dfs(grid, used, row, col, x - 1, y)
+            self.dfs(grid, row, col, x - 1, y)
         if x != row - 1:
-            self.dfs(grid, used, row, col, x + 1, y)
+            self.dfs(grid, row, col, x + 1, y)
         if y != 0:
-            self.dfs(grid, used, row, col, x, y - 1)
+            self.dfs(grid, row, col, x, y - 1)
         if y != col - 1:
-            self.dfs(grid, used, row, col, x, y + 1)
+            self.dfs(grid, row, col, x, y + 1)
