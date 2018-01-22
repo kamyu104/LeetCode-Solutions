@@ -1,5 +1,9 @@
-# Time:  O(m + n^3 * logn)
-# Space: O(m + n)
+# Time:  +:        O(d * t), t is the number of terms, d is the average degree of terms
+#        -:        O(d * t)
+#        *:        O(d * t^2)
+#        eval:     O(d * t)
+#        to_list:  O(d * tlogt)
+# Space: O(e + d * t), e is the number of evalvars
 
 class Poly(collections.Counter):
     def __init__(self, expr=""):
@@ -19,27 +23,45 @@ class Poly(collections.Counter):
         return self
 
     def __mul__(self, other):
+        def merge(k1, k2):
+            result = []
+            i, j = 0, 0
+            while i != len(k1) or j != len(k2):
+                if j == len(k2):
+                    result.append(k1[i])
+                    i += 1
+                elif i == len(k1):
+                    result.append(k2[j])
+                    j += 1
+                elif k1[i] < k2[j]:
+                    result.append(k1[i])
+                    i += 1
+                else:
+                    result.append(k2[j])
+                    j += 1   
+            return result
+        
         result = Poly()
         for k1, v1 in self.items():
             for k2, v2 in other.items():
-                result.update({tuple(sorted(k1+k2)): v1*v2})
+                result.update({tuple(merge(k1, k2)): v1*v2})
         return result
 
-    def evaluate(self, lookup):
+    def eval(self, lookup):
         result = Poly()
-        for k, c in self.items():
-            poly = []
-            for token in k:
-                if token in lookup:
-                    c *= lookup[token]
+        for polies, c in self.items():
+            key = []
+            for var in polies:
+                if var in lookup:
+                    c *= lookup[var]
                 else:
-                    poly.append(token)
-            result[tuple(poly)] += c
+                    key.append(var)
+            result[tuple(key)] += c
         return result
 
     def to_list(self):
         return ["*".join((str(v),) + k) \
-                for k, v in sorted(self.items(), key=lambda(k, v): (-len(k), k, v)) \
+                for k, v in sorted(self.items(), key=lambda(k, _): (-len(k), k)) \
                 if v]
     
     
@@ -51,48 +73,42 @@ class Solution(object):
         :type evalints: List[int]
         :rtype: List[str]
         """
+        def compute(operands, operators):
+            left, right = operands.pop(), operands.pop()
+            op = operators.pop()
+            if op == '+':
+                operands.append(left + right)
+            elif op == '-':
+                operands.append(left - right)
+            elif op == '*':
+                operands.append(left * right)
+            elif op == '/':
+                operands.append(left / right)
+             
+        def parse(s):
+            if not s:
+                return Poly()
+            operands, operators = [], []
+            operand = ""
+            for i in reversed(xrange(len(s))):
+                if s[i].isalnum():
+                    operand += s[i]
+                    if i == 0 or not s[i-1].isalnum():
+                        operands.append(Poly(operand[::-1]))
+                        operand = ""
+                elif s[i] == ')' or s[i] == '*':
+                    operators.append(s[i])
+                elif s[i] == '+' or s[i] == '-':
+                    while operators and operators[-1] == '*':
+                        compute(operands, operators)
+                    operators.append(s[i])
+                elif s[i] == '(':
+                    while operators[-1] != ')':
+                        compute(operands, operators)
+                    operators.pop()
+            while operators:
+                compute(operands, operators)
+            return operands[-1]
+        
         lookup = dict(itertools.izip(evalvars, evalints))
-
-        def do_operator(left, right, operator):
-            if operator == '+': return left + right
-            if operator == '-': return left - right
-            if operator == '*': return left * right
-            raise
-
-        def parse(expr):
-            operands = []
-            operators = []
-            i = 0
-            while i < len(expr):
-                if expr[i] == '(':
-                    cnt = 0
-                    for j in xrange(i, len(expr)):
-                        if expr[j] == '(': cnt += 1
-                        if expr[j] == ')': cnt -= 1
-                        if cnt == 0: break
-                    operands.append(parse(expr[i+1:j]))
-                    i = j
-                elif expr[i].isalnum():
-                    for j in xrange(i, len(expr)):
-                        if expr[j] == ' ':
-                            operands.append(Poly(expr[i:j]))
-                            break
-                    else:
-                        operands.append(Poly(expr[i:]))
-                    i = j
-                elif expr[i] in '+-*':
-                    operators.append(expr[i])
-                i += 1
-
-            for i in reversed(xrange(len(operators))):
-                if operators[i] == '*':
-                    operands[i] = do_operator(operands[i], operands.pop(i+1), \
-                                              operators.pop(i))
-
-            if not operands: return Poly()
-            result = operands[0]
-            for i, operator in enumerate(operators, 1):
-                result = do_operator(result, operands[i], operator)
-            return result
-
-        return parse(expression).evaluate(lookup).to_list()
+        return parse(expression).eval(lookup).to_list()
