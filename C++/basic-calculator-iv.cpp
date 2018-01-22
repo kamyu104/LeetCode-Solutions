@@ -92,7 +92,7 @@ private:
       return !s.empty() && std::all_of(s.begin(), s.end(), ::isdigit);
     }
     
-    vector<string> merge(const vector<string>& arr1, const vector<string>& arr2) const {
+    vector<string> merge(const vector<string>& arr1, const vector<string>& arr2) const {  // Time:  O(d)
         vector<string> result;
         int i = 0, j = 0;
         while (i < arr1.size() || j < arr2.size()) {
