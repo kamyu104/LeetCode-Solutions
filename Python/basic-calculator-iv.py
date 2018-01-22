@@ -2,6 +2,14 @@
 # Space: O(m + n)
 
 class Poly(collections.Counter):
+    def __init__(self, expr=""):
+        if not expr:
+            return
+        if expr.isdigit():
+            self.update({(): int(expr)})
+        else:
+            self[(expr,)] += 1
+
     def __add__(self, other):
         self.update(other)
         return self
@@ -51,16 +59,9 @@ class Solution(object):
             if operator == '*': return left * right
             raise
 
-        def make_operand(expr):
-            result = Poly()
-            if expr.isdigit():
-                result.update({(): int(expr)})
-            else:
-                result[(expr,)] += 1
-            return result
-
         def parse(expr):
-            operands, operators = [], []
+            operands = []
+            operators = []
             i = 0
             while i < len(expr):
                 if expr[i] == '(':
@@ -74,10 +75,10 @@ class Solution(object):
                 elif expr[i].isalnum():
                     for j in xrange(i, len(expr)):
                         if expr[j] == ' ':
-                            operands.append(make_operand(expr[i:j]))
+                            operands.append(Poly(expr[i:j]))
                             break
                     else:
-                        operands.append(make_operand(expr[i:]))
+                        operands.append(Poly(expr[i:]))
                     i = j
                 elif expr[i] in '+-*':
                     operators.append(expr[i])
