@@ -18,24 +18,6 @@ public:
             ++polies_[key];
         }
     }
-    
-    void update(const vector<string>& key, int val) {
-        polies_[key] += val;
-        if (polies_[key] == 0) {
-            polies_.erase(key);
-        }
-    }
-    
-    operator vector<string>() {  // Time:  O(d * tlogt)
-        map<vector<string>, int, Compare<vector<string>>> sorted(polies_.begin(), polies_.end());
-        vector<string> result;
-        for (const auto& kvp : sorted) {
-            vector<string> tmp(kvp.first);
-            tmp.emplace(tmp.begin(), to_string(kvp.second));
-            result.emplace_back(join(tmp, "*"));
-        }
-        return result;
-    }
 
     Poly operator+(const Poly &rhs) const {  // Time:  O(d * t)
         Poly result;
@@ -87,9 +69,27 @@ public:
         return result;
     }
     
+    operator vector<string>() {  // Time:  O(d * tlogt)
+        map<vector<string>, int, Compare<vector<string>>> sorted(polies_.begin(), polies_.end());
+        vector<string> result;
+        for (const auto& kvp : sorted) {
+            vector<string> tmp(kvp.first);
+            tmp.emplace(tmp.begin(), to_string(kvp.second));
+            result.emplace_back(join(tmp, "*"));
+        }
+        return result;
+    }
+    
 private:
     bool is_number(const std::string &s) {
       return !s.empty() && std::all_of(s.begin(), s.end(), ::isdigit);
+    }
+ 
+    void update(const vector<string>& key, int val) {
+        polies_[key] += val;
+        if (polies_[key] == 0) {
+            polies_.erase(key);
+        }
     }
     
     vector<string> merge(const vector<string>& arr1, const vector<string>& arr2) const {  // Time:  O(d)
