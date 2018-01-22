@@ -6,8 +6,8 @@
 # Space: O(e + d * t), e is the number of evalvars
 
 class Poly(collections.Counter):
-    def __init__(self, expr=""):
-        if not expr:
+    def __init__(self, expr=None):
+        if expr is None:
             return
         if expr.isdigit():
             self.update({(): int(expr)})
