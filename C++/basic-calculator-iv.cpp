@@ -69,7 +69,7 @@ public:
         return result;
     }
     
-    operator vector<string>() {  // Time:  O(d * tlogt)
+    operator vector<string>() const {  // Time:  O(d * tlogt)
         map<vector<string>, int, Compare<vector<string>>> sorted(polies_.begin(), polies_.end());
         vector<string> result;
         for (const auto& kvp : sorted) {
@@ -109,7 +109,7 @@ private:
         return result;
     }
     
-    string join(const vector<string>& strings, const string& delim) {
+    string join(const vector<string>& strings, const string& delim) const {
         if (strings.empty()) {
             return "";
         }
