@@ -81,7 +81,7 @@ public:
     }
     
 private:
-    bool is_number(const std::string &s) {
+    bool is_number(const std::string &s) const {
       return !s.empty() && std::all_of(s.begin(), s.end(), ::isdigit);
     }
  
