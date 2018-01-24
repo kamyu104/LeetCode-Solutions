@@ -32,22 +32,8 @@ class Solution(object):
         result = 0
         while x:
             result = result * 10 + x % 10
-            x /= 10
+            x //= 10
         return result if result <= 0x7fffffff else 0  # Handle overflow.
-      
-    def reverse_py3(self, x):  # Same principle as above, but python3 compatible
-        """
-        :type x: int
-        :rtype: int
-        """
-        absX = abs(x)
-        result = 0
-        while absX > 0:
-            result = result * 10 + absX % 10
-            absX //= 10  
-        if x < 0:
-            result = -result
-        return result if 2147483647 > result > -2147483648 else 0
     
     def reverse2(self, x):
         """
