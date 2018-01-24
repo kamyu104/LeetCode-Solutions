@@ -39,10 +39,11 @@ public:
         return operands.top();
     }
 
-    void compute(stack<int64_t>& operands, stack<char>& operators) {
-        const int64_t left = operands.top();
+    template<typename T>
+    void compute(stack<T>& operands, stack<char>& operators) {
+        const auto left = operands.top();
         operands.pop();
-        const int64_t right = operands.top();
+        const auto right = operands.top();
         operands.pop();
         const char op = operators.top();
         operators.pop();
