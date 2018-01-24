@@ -141,6 +141,9 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 732 | [My Calendar III](https://leetcode.com/problems/my-calendar-iii/) | [C++](./C++/my-calendar-iii.cpp) [Python](./Python/my-calendar-iii.py) | _O(n^2)_ | _O(n)_ | Hard ||
 747 | [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/) | [C++](./C++/largest-number-at-least-twice-of-others.cpp) [Python](./Python/largest-number-at-least-twice-of-others.py) | _O(n)_ | _O(1)_ | Easy ||
 755 | [Pour Water](https://leetcode.com/problems/pour-water/) | [C++](./C++/pour-water.cpp) [Python](./Python/pour-water.py) | _O(v * n)_ | _O(1)_ | Medium ||
+766 | [Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/) | [C++](./C++/toeplitz-matrix.cpp) [Python](./Python/toeplitz-matrix.py) | _O(m * n)_ | _O(1)_ | Easy ||
+768 | [Max Chunks To Make Sorted II](https://leetcode.com/problems/max-chunks-to-make-sorted-ii/) | [C++](./C++/max-chunks-to-make-sorted-ii.cpp) [Python](./Python/max-chunks-to-make-sorted-ii.py) | _O(nlogn)_ | _O(n)_ | Hard ||
+769 | [Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted/) | [C++](./C++/max-chunks-to-make-sorted.cpp) [Python](./Python/max-chunks-to-make-sorted.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -247,6 +250,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 735| [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) | [C++](./C++/asteroid-collision.cpp) [Python](./Python/asteroid-collision.py) | _O(n)_  | _O(n)_         | Medium           ||
 736| [Parse Lisp Expression](https://leetcode.com/problems/parse-lisp-expression/) | [C++](./C++/parse-lisp-expression.cpp) [Python](./Python/parse-lisp-expression.py) | _O(n^2)_  | _O(n^2)_         | Hard           ||
 739| [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | [C++](./C++/daily-temperatures.cpp) [Python](./Python/daily-temperatures.py) | _O(n)_  | _O(n)_         | Medium           ||
+770| [Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/) | [C++](./C++/basic-calculator-iv.cpp) [Python](./Python/basic-calculator-iv.py) | _O(n)_  | add: _O(d * t)_<br> sub: _O(d * t)_<br> mul: _O(d * t^2)_<br> eval: _O(d * t)_ <br> to_list: _O(d * tlogt)_ | Hard           ||
+772| [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/) | [C++](./C++/basic-calculator-iii.cpp) [Python](./Python/basic-calculator-iii.py) | _O(n)_  | _O(n)_         | Hard           ||
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -733,6 +738,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 757 | [Set Intersection Size At Least Two](https://leetcode.com/problems/set-intersection-size-at-least-two/) | [C++](./C++/set-intersection-size-at-least-two.cpp) [Python](./Python/set-intersection-size-at-least-two.py) | _O(nlogn)_ | _O(n)_ | Hard | |
 759 | [Employee Free Time](https://leetcode.com/problems/employee-free-time/) | [C++](./C++/employee-free-time.cpp) [Python](./Python/employee-free-time.py) | _O(m * logn)_ | _O(n)_ | Hard | |
 763 | [Partition Labels](https://leetcode.com/problems/partition-labels/) | [C++](./C++/partition-labels.cpp) [Python](./Python/partition-labels.py) | _O(n)_ | _O(n)_ | Medium | |
+767 | [Reorganize String](https://leetcode.com/problems/reorganize-string/) | [C++](./C++/reorganize-string.cpp) [Python](./Python/reorganize-string.py) | _O(n)_ | _O(1)_ | Medium | |
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
