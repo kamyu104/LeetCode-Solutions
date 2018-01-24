@@ -24,7 +24,7 @@ class Solution:
         while copy:
             reverse *= 10
             reverse += copy % 10
-            copy /= 10
+            copy //= 10
         
         return x == reverse
 
