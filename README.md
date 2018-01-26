@@ -538,6 +538,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 352 | [Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/) | [C++](./C++/data-stream-as-disjoint-intervals.cpp) [Python](./Python/data-stream-as-disjoint-intervals.py) | _O(logn)_ | _O(n)_ | Hard | |
 449|[Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)| [C++](./C++/serialize-and-deserialize-bst.cpp) [Python](./Python/serialize-and-deserialize-bst.py)| _O(n)_ | _O(h)_ | Medium | | |
 450|[Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)| [C++](./C++/delete-node-in-a-bst.cpp) [Python](./Python/delete-node-in-a-bst.py)| _O(h)_ | _O(h)_ | Medium | | |
+530|[Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)| [C++](./C++/minimum-absolute-difference-in-bst.cpp) [Python](./Python/minimum-absolute-difference-in-bst.py)| _O(n)_ | _O(h)_ | Easy | | |
 
 ## Breadth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
