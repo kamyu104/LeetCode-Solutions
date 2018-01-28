@@ -1,4 +1,4 @@
-# Time:  O((m * n) * (m * n)!)
+# Time:  O((m * n) * (m * n)! * log((m * n)!))
 # Space: O((m * n) * (m * n)!)
 
 # A* Search Algorithm
