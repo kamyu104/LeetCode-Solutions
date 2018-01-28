@@ -42,7 +42,7 @@ class Solution(object):
                     tmp[zero], tmp[new_zero] = tmp[new_zero], tmp[zero]
                     new_board = tuple(tmp)
                     f = g+1+heuristic_estimate(new_board, R, C, expected)
-                    if new_board not in lookup:
+                    if f < lookup.get(new_board, float("inf")):
                         lookup[new_board] = f
                         heapq.heappush(min_heap, (f, g+1, new_zero, new_board))
         return -1
