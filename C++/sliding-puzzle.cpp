@@ -5,7 +5,7 @@
 class Solution {
 public:
     int slidingPuzzle(vector<vector<int>>& board) {
-        const auto& R = board.size(), C = board[0].size();
+        const auto& R = board.size(), &C = board[0].size();
         vector<int> begin, end;
         unordered_map<int, pair<int, int>> expected;
         int zero_idx = 0;
@@ -105,7 +105,7 @@ private:
 class Solution2 {
 public:
     int slidingPuzzle(vector<vector<int>>& board) {
-        const auto& R = board.size(), C = board[0].size();
+        const auto& R = board.size(), &C = board[0].size();
         vector<int> begin, end;
         unordered_map<int, pair<int, int>> expected;
         int zero_idx = 0;
