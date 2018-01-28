@@ -52,7 +52,7 @@ public:
                     auto new_board = board;
                     swap(new_board[zero], new_board[new_zero]);
                     f = g + 1 + heuristic_estimate(new_board, R, C, expected);
-                    if (!lookup.count(new_board) || f < lookup[new_board]) {
+                    if (!lookup.count(new_board)) {
                         lookup[new_board] = f;
                         min_heap.emplace(make_tuple(f, g + 1, new_zero, new_board));
                     }
