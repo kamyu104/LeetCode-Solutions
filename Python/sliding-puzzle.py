@@ -1,6 +1,7 @@
 # Time:  O((m * n) * (m * n)!)
 # Space: O((m * n) * (m * n)!)
 
+# A* Search Algorithm
 class Solution(object):
     def slidingPuzzle(self, board):
         """
