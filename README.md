@@ -363,6 +363,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 737| [Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/) | [C++](./C++/sentence-similarity-ii.cpp) [Python](./Python/sentence-similarity-ii.py) | _O(n + p)_ | _O(p)_| Medium         || Union Find
 748 | [Shortest Completing Word](https://leetcode.com/problems/shortest-completing-word/) | [C++](./C++/shortest-completing-word.cpp) [Python](./Python/shortest-completing-word.py) | _O(n)_ | _O(1)_ | Easy ||
 760 | [Find Anagram Mappings](https://leetcode.com/problems/find-anagram-mappings/) | [C++](./C++/find-anagram-mappings.cpp) [Python](./Python/find-anagram-mappings.py) | _O(n)_ | _O(n)_ | Easy ||
+771 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | [C++](./C++/jewels-and-stones.cpp) [Python](./Python/jewels-and-stones.py) | _O(m + n)_ | _O(n)_ | Easy ||
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -421,6 +422,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 672 | [Bulb Switcher II](https://leetcode.com/problems/bulb-switcher-ii/) | [C++](./C++/bulb-switcher-ii.cpp) [Python](./Python/bulb-switcher-ii.py) | _O(1)_ | _O(1)_ | Medium |||
 728 | [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/) | [C++](./C++/self-dividing-numbers.cpp) [Python](./Python/self-dividing-numbers.py) | _O(n)_ | _O(1)_ | Medium |||
 754 | [Reach a Number](https://leetcode.com/problems/reach-a-number/) | [C++](./C++/reach-a-number.cpp) [Python](./Python/reach-a-number.py) | _O(logn)_ | _O(1)_ | Medium |||
+775 | [Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions/) | [C++](./C++/global-and-local-inversions.cpp) [Python](./Python/global-and-local-inversions.py) | _O(n)_ | _O(1)_ | Medium |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -527,6 +529,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 668 | [Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/) | [C++](./C++/kth-smallest-number-in-multiplication-table.cpp) [Python](./Python/kth-smallest-number-in-multiplication-table.py) | _O(m * log(m * n))_ | _O(1)_ | Hard | |
 719 | [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/) | [C++](./C++/find-k-th-smallest-pair-distance.cpp) [Python](./Python/find-k-th-smallest-pair-distance.py) | _O(nlogn + nlogw)_ | _O(1)_ | Hard | |
 744 | [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) | [C++](./C++/find-smallest-letter-greater-than-target.cpp) [Python](./Python/find-smallest-letter-greater-than-target.py) | _O(logn)_ | _O(1)_ | Easy | |
+774 | [Minimize Max Distance to Gas Station](https://leetcode.com/problems/minimize-max-distance-to-gas-station/) | [C++](./C++/minimize-max-distance-to-gas-station.cpp) [Python](./Python/minimize-max-distance-to-gas-station.py) | _O(nlogr)_ | _O(1)_ | Hard | |
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -566,6 +569,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 742|[Closest Leaf in a Binary Tree](https://leetcode.com/problems/closest-leaf-in-a-binary-tree/)| [C++](./C++/closest-leaf-in-a-binary-tree.cpp) [Python](./Python/closest-leaf-in-a-binary-tree.py)| _O(n)_ | _O(n)_ | Medium | | |
 743|[Network Delay Time](https://leetcode.com/problems/network-delay-time/)| [C++](./C++/network-delay-time.cpp) [Python](./Python/network-delay-time.py)| _O(\|E\| + \|V\|log\|V\|)_ | _O(\|E\| + \|V\|)_ | Medium | | `Dijkstra's algorithm` |
 752|[Open the Lock](https://leetcode.com/problems/open-the-lock/)| [C++](./C++/open-the-lock.cpp) [Python](./Python/open-the-lock.py)| _O(k * n^k + d)_ | _O(k * n^k + d)_ | Medium | | |
+773|[Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle/)| [C++](./C++/sliding-puzzle.cpp) [Python](./Python/sliding-puzzle.py)| _O((m * n) * (m * n)!)_ | _O((m * n) * (m * n)!)_ | Hard | | `A* Search Algorithm` |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
