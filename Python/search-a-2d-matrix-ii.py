@@ -35,7 +35,7 @@ class Solution:
         if n == 0:
             return False
             
-        count, i, j = 0, 0, n - 1
+        i, j = 0, n - 1
         while i < m and j >= 0:
             if matrix[i][j] == target:
                 return True
