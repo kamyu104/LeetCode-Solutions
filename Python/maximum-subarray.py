@@ -20,7 +20,7 @@ class Solution(object):
         """
         if max(nums) < 0:
             return max(nums)
-        global_max, local_max = float("-inf"), 0
+        global_max, local_max = 0, 0
         for x in nums:
             local_max = max(0, local_max + x)
             global_max = max(global_max, local_max)
