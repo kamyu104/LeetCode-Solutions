@@ -57,7 +57,7 @@ class Solution(object):
             if any(x == y for x, y in itertools.izip(seq1, seq2)):
                 return -1
             begins = [int(seq1.count(1) * 2 > N)] if N%2 else [0, 1]
-            result += min(sum((i-v) % 2 for i, v in enumerate(seq1, begin)) \
+            result += min(sum(int(i%2 != v) for i, v in enumerate(seq1, begin)) \
                           for begin in begins) / 2
         return result
         
