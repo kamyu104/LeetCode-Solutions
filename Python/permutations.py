@@ -20,7 +20,7 @@ class Solution:
     
     def permuteRecu(self, result, used, cur, num):
         if len(cur) == len(num):
-            result.append(cur + [])
+            result.append(cur[:])
             return
         for i in xrange(len(num)):
             if not used[i]:
