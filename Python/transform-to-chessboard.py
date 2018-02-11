@@ -1,5 +1,5 @@
 # Time:  O(n^2)
-# Space: O(n^2)
+# Space: O(n^2), used by Counter, this could be reduced to O(n) by skipping invalid input
 
 # An N x N board contains only 0s and 1s. In each move, you can swap any 2 rows with each other,
 # or any 2 columns with each other.
