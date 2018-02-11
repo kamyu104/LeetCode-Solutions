@@ -68,7 +68,7 @@ private:
             int i = begin;
             int sum = 0;
             for (const auto& v : seq1) {
-                sum += (i - v + 2) % 2;
+                sum += static_cast<int>((i % 2) != v);
                 ++i;
             }
             result = min(result, sum / 2);
