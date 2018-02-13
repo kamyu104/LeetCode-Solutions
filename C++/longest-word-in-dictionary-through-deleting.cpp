@@ -1,4 +1,4 @@
-// Time:  O(dlogd)
+// Time:  O((d * l) * logd), l is the average length of words
 // Space: O(1)
 
 class Solution {
