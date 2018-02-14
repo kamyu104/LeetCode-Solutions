@@ -26,3 +26,9 @@ class Solution(object):
                 reverse(s, i, j)
                 i = j + 1
         return "".join(s)
+
+
+class Solution2(object):
+    def reverseWords(self, s):
+        reversed_words = [word[::-1] for word in s.split(' ')]
+        return ' '.join(reversed_words)
