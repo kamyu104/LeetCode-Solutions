@@ -354,6 +354,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 447| [Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/) | [C++](./C++/number-of-boomerangs.cpp) [Python](./Python/number-of-boomerangs.py) | _O(n^2)_          | _O(n)_          | Easy           ||
 454| [4Sum II](https://leetcode.com/problems/4sum-ii/) | [C++](./C++/4sum-ii.cpp) [Python](./Python/4sum-ii.py) | _O(n^2)_          | _O(n^2)_          | Medium           ||
 473| [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [C++](./C++/matchsticks-to-square.cpp) [Python](./Python/matchsticks-to-square.py) | _O(n * s * 2^n)_          | _O(n * (2^n + s))_          | Medium           ||
+523| [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/) |[C++](./C++/continuous-subarray-sum.cpp)  [Python](./Python/continuous-subarray-sum.py) | _O(n)_ | _O(k)_ | Medium         | |
 532| [K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/) |[C++](./C++/k-diff-pairs-in-an-array.cpp)  [Python](./Python/k-diff-pairs-in-an-array.py) | _O(n)_ | _O(n)_ | Easy         | |
 554| [Brick Wall](https://leetcode.com/problems/brick-wall/) |[C++](./C++/brick-wall.cpp)  [Python](./Python/brick-wall.py) | _O(n)_ | _O(m)_ | Medium         | |
 560| [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) |[C++](./C++/subarray-sum-equals-k.cpp)  [Python](./Python/subarray-sum-equals-k.py) | _O(n)_ | _O(n)_ | Medium         | |
