@@ -29,6 +29,7 @@ class Solution(object):
             r = (lookup[i-LEFT] + r) % 2
         return result
 
+
 # Time:  O(nlogn)
 # Space: O(1)
 class Solution2(object):
@@ -38,7 +39,4 @@ class Solution2(object):
         :rtype: int
         """
         nums.sort()
-        result = 0
-        for i in xrange(0, len(nums), 2):
-            result += nums[i]
-        return result
+        return sum([nums[i] for i in xrange(0, len(nums), 2)])
