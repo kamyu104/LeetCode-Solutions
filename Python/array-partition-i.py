@@ -39,4 +39,19 @@ class Solution2(object):
         :rtype: int
         """
         nums.sort()
-        return sum([nums[i] for i in xrange(0, len(nums), 2)])
+        result = 0
+        for i in xrange(0, len(nums), 2):
+            result += nums[i]
+        return result
+    
+    
+# Time:  O(nlogn)
+# Space: O(n)
+class Solution3(object):
+    def arrayPairSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        nums = sorted(nums)
+        return sum([nums[i] for i in range(0, len(nums), 2)])
