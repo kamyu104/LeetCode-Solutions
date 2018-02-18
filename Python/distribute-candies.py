@@ -25,13 +25,13 @@
 # The length of the given array is in range [2, 10,000], and will be even.
 # The number in given array is in range [-100,000, 100,000].
 
+
 class Solution(object):
+
     def distributeCandies(self, candies):
         """
         :type candies: List[int]
         :rtype: int
         """
-        lookup = set()
-        for candy in candies:
-            lookup.add(candy)
+        lookup = set(candies)
         return min(len(lookup), len(candies)/2)
