@@ -1,4 +1,4 @@
-# Time:  O(logr * nlogn)
+# Time:  O(nlogr)
 # Space: O(1)
 
 # A sorted list A contains 1, plus some number of primes.
