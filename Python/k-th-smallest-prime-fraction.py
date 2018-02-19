@@ -1,6 +1,9 @@
 # Time:  O(nlogr)
 # Space: O(1)
 
+# Another cool O(n) solution by using quick select with median of median could be found here:
+# https://leetcode.com/problems/k-th-smallest-prime-fraction/discuss/115545/O(n)
+
 # A sorted list A contains 1, plus some number of primes.
 # Then, for every p < q in the list, we consider the fraction p/q.
 #
