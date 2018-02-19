@@ -10,8 +10,8 @@ public:
                 const auto& size = result.size();
                 for (int i = 0; i < size; ++i) {
                     result.emplace_back(result[i]);
-                    result.back() += toupper(c);
                     result[i] += tolower(c);
+                    result.back() += toupper(c);
                 }
             } else {
                 for (auto &s : result) {
