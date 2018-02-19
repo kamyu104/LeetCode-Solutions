@@ -1,6 +1,9 @@
 // Time:  O(nlogr)
 // Space: O(1)
 
+// Another cool O(n) solution by using quick select with median of median could be found here:
+// https://leetcode.com/problems/k-th-smallest-prime-fraction/discuss/115545/O(n)
+
 class Solution {
 public:
     vector<int> kthSmallestPrimeFraction(vector<int>& A, int K) {
