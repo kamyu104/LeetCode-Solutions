@@ -29,8 +29,8 @@ class Solution(object):
             if c.isalpha():
                 for i in xrange(len(result)):
                     result.append(result[i][:])
-                    result[-1].append(c.upper())
                     result[i].append(c.lower())
+                    result[-1].append(c.upper())
             else:
                 for s in result:
                     s.append(c)
