@@ -1,62 +1,36 @@
-package leetcode
+// Time:  O(n)
+// Space: O(1)
 
-// ListNode represents a non-negative number.
-// You are given two linked lists representing two non-negative numbers.
-// The digits are stored in reverse order and each of their nodes contain a single digit.
-// Add the two numbers and return it as a linked list.
-//
-// Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-// Output: 7 -> 0 -> 8
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-	results := &ListNode{}
-	node := results
-	node1 := l1
-	node2 := l2
+	dummy := &ListNode{}
+	current, carry := dummy, 0
 
-	overten := false
-
-	for node1 != nil || node2 != nil {
-
-		tmp := 0
-
-		if node1 != nil {
-			tmp = tmp + node1.Val
-			node1 = node1.Next
+	for l1 != nil || l2 != nil {
+		val := carry
+		if l1 != nil {
+			val += l1.Val
+			l1 = l1.Next
 		}
-
-		if node2 != nil {
-			tmp = tmp + node2.Val
-			node2 = node2.Next
+		if l2 != nil {
+			val += l2.Val
+			l2 = l2.Next
 		}
-		if overten {
-			tmp++
-		}
-
-		if tmp >= 10 {
-			overten = true
-			tmp -= 10
-		} else {
-			overten = false
-		}
-
-		node.Val = tmp
-
-		if node1 != nil || node2 != nil {
-			node.Next = &ListNode{}
-			node = node.Next
-		}
+		carry = val / 10
+		val %= 10
+		current.Next = &ListNode{Val: val}
+		current = current.Next
 	}
 
-	if overten {
-		node.Next = &ListNode{}
-		node = node.Next
-		node.Val = 1
+	if carry == 1 {
+		current.Next = &ListNode{Val: 1}
 	}
 
-	return results
+	return dummy.Next
 }
