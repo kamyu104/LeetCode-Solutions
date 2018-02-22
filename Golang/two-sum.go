@@ -1,4 +1,5 @@
-package twoSum
+// Time:  O(n)
+// Space: O(n)
 
 func twoSum(nums []int, target int) []int {
 	lookup := make(map[int]int)
