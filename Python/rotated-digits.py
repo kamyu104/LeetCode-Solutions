@@ -48,8 +48,8 @@ class Solution2(object):
         :type N: int
         :rtype: int
         """
-        result = 0
         invalid, diff = set(['3', '4', '7']), set(['2', '5', '6', '9'])
+        result = 0
         for i in xrange(N+1):
             lookup = set(list(str(i)))
             if invalid & lookup:
