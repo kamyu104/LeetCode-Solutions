@@ -8,9 +8,9 @@ public:
         vector<State> dp(N + 1);
         unordered_set<int> same = {0, 1, 8};
         unordered_set<int> diff = {2, 5, 6, 9};
+        dp[0] = SAME;
         for (int i = 0; 10 * i <= N; ++i) {
-            if (i == 0 ||
-                dp[i] != INVALID) {
+            if (dp[i] != INVALID) {
                 for (const auto& j : same) {
                     if (i * 10 + j <= N) {
                         dp[i * 10 + j] = max(SAME, dp[i]);
