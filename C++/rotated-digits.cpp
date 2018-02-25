@@ -5,8 +5,8 @@ class Solution {
 public:
     int rotatedDigits(int N) {
         enum State {INVALID, SAME, DIFF};
-        unordered_set<int> same = {0, 1, 8};
-        unordered_set<int> diff = {2, 5, 6, 9};
+        vector<int> same = {0, 1, 8};
+        vector<int> diff = {2, 5, 6, 9};
         vector<State> dp(N + 1);
         dp[0] = SAME;
         for (int i = 0; 10 * i <= N; ++i) {
