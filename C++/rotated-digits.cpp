@@ -32,10 +32,7 @@ public:
                 }
             }
         }
-        return accumulate(dp.begin(), dp.end(), 0,
-                          [](int a, int b) {
-                              return a + static_cast<int>(b == DIFF);
-                          });
+        return count(dp.cbegin(), dp.cend(), DIFF);
     }
     
 };
