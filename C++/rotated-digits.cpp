@@ -33,21 +33,31 @@ class Solution2 {
 public:
     int rotatedDigits(int N) {
         int result = 0;
+        unordered_set<char> invalid = {'3', '4', '7'};
+        unordered_set<char> diff = {'2', '5', '6', '9'};
+
         for (int i = 0; i <= N; ++i){
             string s(to_string(i));
             unordered_set<char> lookup(s.begin(),s.end());
-            if (lookup.count('3') ||
-                lookup.count('4') ||
-                lookup.count('7')) {
+            if (intersect(invalid, lookup)) {
                 continue;
             }
-            if (lookup.count('2') ||
-                lookup.count('5') ||
-                lookup.count('6') ||
-                lookup.count('9')) {
+            if (intersect(diff, lookup)) {
                 ++result;
             }
         }
         return result; 
+    }
+
+private:
+    template <typename T>
+    bool intersect(const unordered_set<T>& a, const unordered_set<T>& b) {
+        if (a.size() > b.size()) {
+            return intersect(b, a);
+        }
+        return any_of(a.cbegin(), a.cend(),
+                      [&b](const T& e) {
+                          return b.count(e);
+                      });
     }
 };
