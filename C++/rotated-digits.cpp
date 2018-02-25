@@ -17,7 +17,7 @@ public:
                 dp[i] = 2;
             }
         }
-        for (int i = 0; i <= N; ++i) {
+        for (int i = 0; 10 * i <= N; ++i) {
             if (dp[i] > 0) {
                 for (const auto& j : same) {
                     if (i * 10 + j <= N) {
