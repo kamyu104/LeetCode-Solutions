@@ -200,6 +200,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 722| [Remove Comments](https://leetcode.com/problems/remove-comments/) | [C++](./C++/remove-comments.cpp)  [Python](./Python/remove-comments.py) | _O(n)_ | _O(k)_ | Medium         |||
 751| [IP to CIDR](https://leetcode.com/problems/ip-to-cidr/) | [C++](./C++/ip-to-cidr.cpp)  [Python](./Python/ip-to-cidr.py) | _O(n)_ | _O(1)_ | Medium         |||
 758| [Bold Words in String](https://leetcode.com/contest/weekly-contest-66/problems/bold-words-in-string/) | [C++](./C++/bold-words-in-string.cpp) [Python](./Python/bold-words-in-string.py) | _O(n * l)_ | _O(t)_ |  Easy | 📖, variant of [Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/) |
+791| [Custom Sort String](https://leetcode.com/problems/custom-sort-string/) | [C++](./C++/custom-sort-string.cpp)  [Python](./Python/custom-sort-string.py) | _O(n)_ | _O(1)_ | Medium         |||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -432,6 +433,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 780 | [Reaching Points](https://leetcode.com/problems/reaching-points/) | [C++](./C++/reaching-points.cpp) [Python](./Python/reaching-points.py) | _O(log(max(m, n)))_ | _O(1)_ | Hard ||
 781 | [Rabbits in Forest](https://leetcode.com/problems/rabbits-in-forest/) | [C++](./C++/rabbits-in-forest.cpp) [Python](./Python/rabbits-in-forest.py) | _O(n)_ | _O(n)_ | Medium ||
 782 | [Transform to Chessboard](https://leetcode.com/problems/transform-to-chessboard/) | [C++](./C++/transform-to-chessboard.cpp) [Python](./Python/transform-to-chessboard.py) | _O(n^2)_ | _O(n)_ | Hard ||
+789 | [Escape The Ghosts](https://leetcode.com/problems/escape-the-ghosts/) | [C++](./C++/escape-the-ghosts.cpp) [Python](./Python/escape-the-ghosts.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -730,6 +732,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 746 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | [C++](./C++/min-cost-climbing-stairs.cpp) [Python](./Python/min-cost-climbing-stairs.py) | _O(n)_ | _O(1)_ | Easy ||
 750 | [Number Of Corner Rectangles](https://leetcode.com/problems/number-of-corner-rectangles/) | [C++](./C++/number-of-corner-rectangles.cpp) [Python](./Python/number-of-corner-rectangles.py) | _O(n * m^2)_ | _O(n * m)_ | Medium ||
 764 | [Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign/) | [C++](./C++/largest-plus-sign.cpp) [Python](./Python/largest-plus-sign.py) | _O(n^2)_ | _O(n^2)_ | Medium ||
+788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits/) | [C++](./C++/rotated-digits.cpp) [Python](./Python/rotated-digits.py) | _O(n)_ | _O(n)_ | Easy ||
+790 | [Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/) | [C++](./C++/domino-and-tromino-tiling.cpp) [Python](./Python/domino-and-tromino-tiling.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
