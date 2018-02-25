@@ -4,36 +4,37 @@
 class Solution {
 public:
     int rotatedDigits(int N) {
-        vector<int> dp(N + 1);
+        enum State { INVALID, SAME, DIFF };
+        vector<State> dp(N + 1);
         unordered_set<int> same = {0, 1, 8};
         unordered_set<int> diff = {2, 5, 6, 9};
         for (const auto& i : same) {
             if (i <= N) {
-                dp[i] = 1;
+                dp[i] = SAME;
             }
         }
         for (const auto& i : diff) {
             if (i <= N) {
-                dp[i] = 2;
+                dp[i] = DIFF;
             }
         }
         for (int i = 0; 10 * i <= N; ++i) {
-            if (dp[i] > 0) {
+            if (dp[i] != INVALID) {
                 for (const auto& j : same) {
                     if (i * 10 + j <= N) {
-                        dp[i * 10 + j] = max(1, dp[i]);
+                        dp[i * 10 + j] = max(SAME, dp[i]);
                     }
                 }
                 for (const auto& j : diff) {
                     if (i * 10 + j <= N) {
-                        dp[i * 10 + j] = 2;
+                        dp[i * 10 + j] = DIFF;
                     }
                 }
             }
         }
         return accumulate(dp.begin(), dp.end(), 0,
                           [](int a, int b) {
-                              return a + static_cast<int>(b == 2);
+                              return a + static_cast<int>(b == DIFF);
                           });
     }
     
