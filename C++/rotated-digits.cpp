@@ -25,7 +25,6 @@ public:
         }
         return count(dp.cbegin(), dp.cend(), DIFF);
     }
-    
 };
 
 // Time:  O(nlogn) = O(n), because O(logn) = O(32) by this input
