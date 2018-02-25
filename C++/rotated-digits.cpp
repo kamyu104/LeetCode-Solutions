@@ -5,8 +5,8 @@ class Solution {
 public:
     int rotatedDigits(int N) {
         enum State {INVALID, SAME, DIFF};
-        vector<int> same = {0, 1, 8};
-        vector<int> diff = {2, 5, 6, 9};
+        const vector<int> same = {0, 1, 8};
+        const vector<int> diff = {2, 5, 6, 9};
         vector<State> dp(N + 1);
         dp[0] = SAME;
         for (int i = 0; 10 * i <= N; ++i) {
@@ -32,10 +32,9 @@ public:
 class Solution2 {
 public:
     int rotatedDigits(int N) {
+        const unordered_set<char> invalid = {'3', '4', '7'};
+        const unordered_set<char> diff = {'2', '5', '6', '9'};
         int result = 0;
-        unordered_set<char> invalid = {'3', '4', '7'};
-        unordered_set<char> diff = {'2', '5', '6', '9'};
-
         for (int i = 0; i <= N; ++i){
             string s(to_string(i));
             unordered_set<char> lookup(s.begin(),s.end());
