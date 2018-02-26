@@ -55,7 +55,7 @@ class Solution2(object):
 # Time:  O(n)
 # Space: O(n), this doesn't satisfy the question
 from collections import Counter
-class Solution2(object):
+class Solution3(object):
     def findDuplicates(self, nums):
         """
         :type nums: List[int]
