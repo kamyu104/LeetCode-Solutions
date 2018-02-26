@@ -22,6 +22,23 @@ class Solution(object):
         :rtype: List[int]
         """
         result = []
+        for i in nums:
+            if nums[abs(i)-1] < 0:
+                result.append(abs(i))
+            else:
+                nums[abs(i)-1] *= -1
+        return result
+   
+
+# Time:  O(n)
+# Space: O(1)
+class Solution2(object):
+    def findDuplicates(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        result = []
         i = 0
         while i < len(nums):
             if nums[i] != nums[nums[i]-1]:
