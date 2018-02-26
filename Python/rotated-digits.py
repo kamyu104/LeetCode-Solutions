@@ -1,5 +1,5 @@
-# Time:  O(n)
-# Space: O(n)
+# Time:  O(logn)
+# Space: O(logn)
 
 # X is a good number if after rotating each digit individually by 180 degrees,
 # we get a valid number that is different from X.
@@ -19,7 +19,35 @@
 # Note:
 # - N  will be in range [1, 10000].
 
+# memoization (top-down dp)
 class Solution(object):
+    def rotatedDigits(self, N):
+        """
+        :type N: int
+        :rtype: int
+        """
+        A = map(int, str(N))
+        invalid, diff = set([3, 4, 7]), set([2, 5, 6, 9])
+        def dp(A, i, is_prefix_equal, is_good, lookup):
+            if i == len(A): return int(is_good)
+            if (i, is_prefix_equal, is_good) not in lookup:
+                result = 0
+                for d in xrange(A[i]+1 if is_prefix_equal else 10):
+                    if d in invalid: continue
+                    result += dp(A, i+1,
+                                 is_prefix_equal and d == A[i],
+                                 is_good or d in diff,
+                                 lookup)
+                lookup[i, is_prefix_equal, is_good] = result
+            return lookup[i, is_prefix_equal, is_good]
+        
+        lookup = {}
+        return dp(A, 0, True, False, lookup)
+    
+    
+# Time:  O(n)
+# Space: O(n)
+class Solution2(object):
     def rotatedDigits(self, N):
         """
         :type N: int
@@ -42,7 +70,7 @@ class Solution(object):
 
 # Time:  O(nlogn) = O(n), because O(logn) = O(32) by this input
 # Space: O(logn) = O(1)
-class Solution2(object):
+class Solution3(object):
     def rotatedDigits(self, N):
         """
         :type N: int
