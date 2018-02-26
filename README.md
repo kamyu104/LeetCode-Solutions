@@ -732,8 +732,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 746 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | [C++](./C++/min-cost-climbing-stairs.cpp) [Python](./Python/min-cost-climbing-stairs.py) | _O(n)_ | _O(1)_ | Easy ||
 750 | [Number Of Corner Rectangles](https://leetcode.com/problems/number-of-corner-rectangles/) | [C++](./C++/number-of-corner-rectangles.cpp) [Python](./Python/number-of-corner-rectangles.py) | _O(n * m^2)_ | _O(n * m)_ | Medium ||
 764 | [Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign/) | [C++](./C++/largest-plus-sign.cpp) [Python](./Python/largest-plus-sign.py) | _O(n^2)_ | _O(n^2)_ | Medium ||
-788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits/) | [C++](./C++/rotated-digits.cpp) [Python](./Python/rotated-digits.py) | _O(n)_ | _O(n)_ | Easy ||
-790 | [Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/) | [C++](./C++/domino-and-tromino-tiling.cpp) [Python](./Python/domino-and-tromino-tiling.py) | _O(n)_ | _O(1)_ | Medium ||
+788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits/) | [C++](./C++/rotated-digits.cpp) [Python](./Python/rotated-digits.py) | _O(logn)_ | _O(logn)_ | Easy ||
+790 | [Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/) | [C++](./C++/domino-and-tromino-tiling.cpp) [Python](./Python/domino-and-tromino-tiling.py) | _O(logn)_ | _O(logn)_ | Medium ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
