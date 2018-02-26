@@ -35,9 +35,9 @@ class Solution(object):
         return result
 
 
+# Time:  O(n)
+# Space: O(n), this doesn't satisfy the question
 from collections import Counter
-
-
 class Solution2(object):
     def findDuplicates(self, nums):
         """
