@@ -33,3 +33,15 @@ class Solution(object):
             if i != nums[i]-1:
                 result.append(nums[i])
         return result
+
+
+from collections import Counter
+
+
+class Solution2(object):
+    def findDuplicates(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        return [elem for elem, count in Counter(nums).items() if count == 2]
