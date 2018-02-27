@@ -30,7 +30,7 @@ class Solution(object):
             if len(combination) == k or \
                len(combination)+(n-i+1) < k:
                 if not combination:
-                    return result
+                    break
                 i = combination.pop()+1
             else:
                 combination.append(i)
