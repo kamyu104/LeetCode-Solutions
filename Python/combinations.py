@@ -26,6 +26,7 @@ class Solution:
     def combineRecu(self, n, result, start, intermediate, k):
         if k == 0:
             result.append(intermediate[:])
+            return
         for i in xrange(start, n):
             intermediate.append(i + 1)
             self.combineRecu(n, result, i + 1, intermediate, k - 1)
