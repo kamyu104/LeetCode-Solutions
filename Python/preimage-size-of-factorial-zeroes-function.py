@@ -41,6 +41,6 @@ class Solution(object):
                 right = mid-1
             else:
                 left = mid+1
-        if count_of_factorial_primes(left, p) != K:
-            return 0
-        return (left//p+1)*p - left
+        return (left//p+1)*p - left \
+               if count_of_factorial_primes(left, p) == K \
+               else 0
