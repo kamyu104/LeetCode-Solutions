@@ -145,6 +145,9 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 768 | [Max Chunks To Make Sorted II](https://leetcode.com/problems/max-chunks-to-make-sorted-ii/) | [C++](./C++/max-chunks-to-make-sorted-ii.cpp) [Python](./Python/max-chunks-to-make-sorted-ii.py) | _O(nlogn)_ | _O(n)_ | Hard ||
 769 | [Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted/) | [C++](./C++/max-chunks-to-make-sorted.cpp) [Python](./Python/max-chunks-to-make-sorted.py) | _O(n)_ | _O(1)_ | Medium ||
 778 | [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/) | [C++](./C++/swim-in-rising-water.cpp) [Python](./Python/swim-in-rising-water.py) | _O(n^2)_ | _O(n^2)_ | Hard || Union Find
+792 | [Number of Matching Subsequences](https://leetcode.com/problems/number-of-matching-subsequences/) | [C++](./C++/number-of-matching-subsequences.cpp) [Python](./Python/number-of-matching-subsequences.py) | _O(n + w)_ | _O(1)_ | Medium ||
+794 | [Valid Tic-Tac-Toe State](https://leetcode.com/problems/valid-tic-tac-toe-state/) | [C++](./C++/valid-tic-tac-toe-state.cpp) [Python](./Python/valid-tic-tac-toe-state.py) | _O(1)_ | _O(1)_ | Medium ||
+795 | [Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/) | [C++](./C++/number-of-subarrays-with-bounded-maximum.cpp) [Python](./Python/number-of-subarrays-with-bounded-maximum.py) | _O(1)_ | _O(1)_ | Medium ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -543,6 +546,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 744 | [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) | [C++](./C++/find-smallest-letter-greater-than-target.cpp) [Python](./Python/find-smallest-letter-greater-than-target.py) | _O(logn)_ | _O(1)_ | Easy | |
 774 | [Minimize Max Distance to Gas Station](https://leetcode.com/problems/minimize-max-distance-to-gas-station/) | [C++](./C++/minimize-max-distance-to-gas-station.cpp) [Python](./Python/minimize-max-distance-to-gas-station.py) | _O(nlogr)_ | _O(1)_ | Hard | |
 786 | [K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/) | [C++](./C++/k-th-smallest-prime-fraction.cpp) [Python](./Python/k-th-smallest-prime-fraction.py) | _O(nlogr)_ | _O(1)_ | Hard | |
+793 | [Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/) | [C++](./C++/preimage-size-of-factorial-zeroes-function.cpp) [Python](./Python/preimage-size-of-factorial-zeroes-function.py) | _O((logn)^2)_ | _O(1)_ | Hard | |
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
