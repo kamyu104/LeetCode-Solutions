@@ -14,8 +14,7 @@ public:
                 left = mid + 1;
             }
         }
-        return countOfFactorialPrimes(left, p) == K ?
-            (left / p + 1) * p - left : 0;
+        return countOfFactorialPrimes(left, p) == K ? p : 0;
     }
 
 private:
