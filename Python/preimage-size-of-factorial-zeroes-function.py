@@ -30,7 +30,7 @@ class Solution(object):
             cnt = 0
             while n > 0:
                 cnt += n//p
-                n /= p
+                n //= p
             return cnt
 
         p = 5
