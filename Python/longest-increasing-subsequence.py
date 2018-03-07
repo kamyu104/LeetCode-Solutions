@@ -27,7 +27,7 @@ class Solution(object):
             left, right = 0, len(LIS) - 1
             # Find the first index "left" which satisfies LIS[left] >= target
             while left <= right:
-                mid = left + (right - left) / 2;
+                mid = int(left + (right - left) / 2)
                 if LIS[mid] >= target:
                     right = mid - 1
                 else:
