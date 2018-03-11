@@ -101,7 +101,7 @@ class Solution2(object):
         
         if len(A) != len(B):
             return False
-        return strStr(A * 2, B) != -1
+        return strStr(A*2, B) != -1
 
     
 # Time:  O(n^2)
@@ -113,4 +113,4 @@ class Solution3(object):
         :type B: str
         :rtype: bool
         """
-        return len(A) == len(B) and B in A + A
+        return len(A) == len(B) and B in A*2
