@@ -4,14 +4,14 @@
 class Solution {
 public:
     double champagneTower(int poured, int query_row, int query_glass) {
-        vector<double> result(query_row + 2);
+        vector<double> result(1 + query_row);
         result[0] = poured;
         for (int i = 1; i <= query_row; ++i) {
             for(int j = i; j >= 0; --j) {
-                result[j] = max(0.0, (result[j] - 1) / 2);
-                result[j + 1] += result[j];
+                result[j] = max((result[j] - 1), 0.0) / 2 +
+                            max((result[j - 1] - 1), 0.0) / 2;
             }
         }
-        return min(1.0, result[query_glass]);
+        return min(result[query_glass], 1.0);
     }
 };
