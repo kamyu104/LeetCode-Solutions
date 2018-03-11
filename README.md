@@ -207,6 +207,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 751| [IP to CIDR](https://leetcode.com/problems/ip-to-cidr/) | [C++](./C++/ip-to-cidr.cpp)  [Python](./Python/ip-to-cidr.py) | _O(n)_ | _O(1)_ | Medium         |||
 758| [Bold Words in String](https://leetcode.com/contest/weekly-contest-66/problems/bold-words-in-string/) | [C++](./C++/bold-words-in-string.cpp) [Python](./Python/bold-words-in-string.py) | _O(n * l)_ | _O(t)_ |  Easy | 📖, variant of [Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/) |
 791| [Custom Sort String](https://leetcode.com/problems/custom-sort-string/) | [C++](./C++/custom-sort-string.cpp)  [Python](./Python/custom-sort-string.py) | _O(n)_ | _O(1)_ | Medium         |||
+796| [Rotate String](https://leetcode.com/problems/rotate-string/) | [C++](./C++/rotate-string.cpp)  [Python](./Python/rotate-string.py) | _O(n)_ | _O(1)_ | Easy         || `KMP Algorithm` Rolling Hash |
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -628,6 +629,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 753| [Cracking the Safe](https://leetcode.com/problems/cracking-the-safe/) | [C++](./C++/cracking-the-safe.cpp) [Python](./Python/cracking-the-safe.py) | _O(k^n)_          | _O(k^n)_          | Hard           || `de Bruijn sequences`, `Lyndon word` |
 756| [Pyramid Transition Matrix](https://leetcode.com/problems/pyramid-transition-matrix/) | [C++](./C++/pyramid-transition-matrix.cpp) [Python](./Python/pyramid-transition-matrix.py) | _O(a^b)_          | _O(a^b)_          | Medium           |||
 785| [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/) | [C++](./C++/is-graph-bipartite.cpp) [Python](./Python/is-graph-bipartite.py) | _O(\|V\| + \|E\|)_          | _O(\|V\|)_          | Medium           |||
+797| [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | [C++](./C++/all-paths-from-source-to-target.cpp) [Python](./Python/all-paths-from-source-to-target.py) | _O(p + r * n)_          | _O(n)_          | Medium           |||
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -741,6 +743,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 764 | [Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign/) | [C++](./C++/largest-plus-sign.cpp) [Python](./Python/largest-plus-sign.py) | _O(n^2)_ | _O(n^2)_ | Medium ||
 788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits/) | [C++](./C++/rotated-digits.cpp) [Python](./Python/rotated-digits.py) | _O(logn)_ | _O(logn)_ | Easy || Memoization |
 790 | [Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/) | [C++](./C++/domino-and-tromino-tiling.cpp) [Python](./Python/domino-and-tromino-tiling.py) | _O(logn)_ | _O(logn)_ | Medium || Matrix Exponentiation |
+799 | [Champagne Tower](https://leetcode.com/problems/champagne-tower/) | [C++](./C++/champagne-tower.cpp) [Python](./Python/champagne-tower.py) | _O(n^2)_ | _O(n)_ | Medium |||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -773,6 +776,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 759 | [Employee Free Time](https://leetcode.com/problems/employee-free-time/) | [C++](./C++/employee-free-time.cpp) [Python](./Python/employee-free-time.py) | _O(m * logn)_ | _O(n)_ | Hard | |
 763 | [Partition Labels](https://leetcode.com/problems/partition-labels/) | [C++](./C++/partition-labels.cpp) [Python](./Python/partition-labels.py) | _O(n)_ | _O(n)_ | Medium | |
 767 | [Reorganize String](https://leetcode.com/problems/reorganize-string/) | [C++](./C++/reorganize-string.cpp) [Python](./Python/reorganize-string.py) | _O(n)_ | _O(1)_ | Medium | |
+798 | [Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score/) | [C++](./C++/smallest-rotation-with-highest-score.cpp) [Python](./Python/smallest-rotation-with-highest-score.py) | _O(n)_ | _O(1)_ | Hard | |
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
