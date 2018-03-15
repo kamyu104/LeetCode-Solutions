@@ -18,7 +18,7 @@ class Solution:
         return self.sortedArrayToBSTRecu(num, 0, len(num))
     
     @staticmethod
-    def perfect_tree_pivot(n):
+    def perfect_tree_pivot(self, n):
         """
         Find the point to partition n keys for a perfect binary search tree
         """
