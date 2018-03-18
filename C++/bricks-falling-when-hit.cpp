@@ -35,14 +35,14 @@ public:
 
         vector<int> result;
         for (int i = hits.size() - 1; i >= 0; --i) {
-            int r = hits[i][0], c = hits[i][1];
+            const auto r = hits[i][0], c = hits[i][1];
             const auto prev_roof = union_find.top();
             if (grid[r][c] == 0) {
                 result.emplace_back(0);
                 continue;
             }
             for (const auto& d : directions) {
-                int nr = r + d.first, nc = c + d.second;
+                const auto nr = r + d.first, nc = c + d.second;
                 if (0 <= nr && nr < R &&
                     0 <= nc && nc < C &&
                     hit_grid[nr][nc]) {
