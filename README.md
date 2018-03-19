@@ -148,6 +148,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 792 | [Number of Matching Subsequences](https://leetcode.com/problems/number-of-matching-subsequences/) | [C++](./C++/number-of-matching-subsequences.cpp) [Python](./Python/number-of-matching-subsequences.py) | _O(n + w)_ | _O(1)_ | Medium ||
 794 | [Valid Tic-Tac-Toe State](https://leetcode.com/problems/valid-tic-tac-toe-state/) | [C++](./C++/valid-tic-tac-toe-state.cpp) [Python](./Python/valid-tic-tac-toe-state.py) | _O(1)_ | _O(1)_ | Medium ||
 795 | [Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/) | [C++](./C++/number-of-subarrays-with-bounded-maximum.cpp) [Python](./Python/number-of-subarrays-with-bounded-maximum.py) | _O(n)_ | _O(1)_ | Medium ||
+803 | [Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit/) | [C++](./C++/bricks-falling-when-hit.cpp) [Python](./Python/bricks-falling-when-hit.py) | _O(r * c)_ | _O(r * c)_ | Hard || Union Find
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -442,6 +443,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 781 | [Rabbits in Forest](https://leetcode.com/problems/rabbits-in-forest/) | [C++](./C++/rabbits-in-forest.cpp) [Python](./Python/rabbits-in-forest.py) | _O(n)_ | _O(n)_ | Medium ||
 782 | [Transform to Chessboard](https://leetcode.com/problems/transform-to-chessboard/) | [C++](./C++/transform-to-chessboard.cpp) [Python](./Python/transform-to-chessboard.py) | _O(n^2)_ | _O(n)_ | Hard ||
 789 | [Escape The Ghosts](https://leetcode.com/problems/escape-the-ghosts/) | [C++](./C++/escape-the-ghosts.cpp) [Python](./Python/escape-the-ghosts.py) | _O(n)_ | _O(1)_ | Medium ||
+800 | [Similar RGB Color](https://leetcode.com/problems/similar-rgb-color/) | [C++](./C++/similar-rgb-color.cpp) [Python](./Python/similar-rgb-color.py) | _O(1)_ | _O(1)_ | Easy |📖||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -632,6 +634,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 756| [Pyramid Transition Matrix](https://leetcode.com/problems/pyramid-transition-matrix/) | [C++](./C++/pyramid-transition-matrix.cpp) [Python](./Python/pyramid-transition-matrix.py) | _O(a^b)_          | _O(a^b)_          | Medium           |||
 785| [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/) | [C++](./C++/is-graph-bipartite.cpp) [Python](./Python/is-graph-bipartite.py) | _O(\|V\| + \|E\|)_          | _O(\|V\|)_          | Medium           |||
 797| [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | [C++](./C++/all-paths-from-source-to-target.cpp) [Python](./Python/all-paths-from-source-to-target.py) | _O(p + r * n)_          | _O(n)_          | Medium           |||
+802| [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/) | [C++](./C++/find-eventual-safe-states.cpp) [Python](./Python/find-eventual-safe-states.py) | _O(\|V\| + \|E\|)_          | _O(\|V\|)_ | Medium           |||
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -747,6 +750,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits/) | [C++](./C++/rotated-digits.cpp) [Python](./Python/rotated-digits.py) | _O(logn)_ | _O(logn)_ | Easy || Memoization |
 790 | [Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/) | [C++](./C++/domino-and-tromino-tiling.cpp) [Python](./Python/domino-and-tromino-tiling.py) | _O(logn)_ | _O(logn)_ | Medium || Matrix Exponentiation |
 799 | [Champagne Tower](https://leetcode.com/problems/champagne-tower/) | [C++](./C++/champagne-tower.cpp) [Python](./Python/champagne-tower.py) | _O(n^2)_ | _O(n)_ | Medium |||
+801 | [Minimum Swaps To Make Sequences Increasing](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/) | [C++](./C++/minimum-swaps-to-make-sequences-increasing.cpp) [Python](./Python/minimum-swaps-to-make-sequences-increasing.py) | _O(n)_ | _O(1)_ | Medium |||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
