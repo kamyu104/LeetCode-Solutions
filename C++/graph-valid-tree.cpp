@@ -4,26 +4,15 @@
 // Same complexity, but faster version.
 class Solution {
 public:
-    struct node {
-        int parent = -1;
-        vector<int>neighbors;
-    };
-
     bool validTree(int n, vector<pair<int, int>>& edges) {
         if (edges.size() != n - 1) {
             return false;
-        } else if (n == 1) {
-            return true;
         }
 
-        unordered_map<int, node> nodes;
+        unordered_map<int, vector<int>> neighbors;
         for (const auto& edge : edges) {
-            nodes[edge.first].neighbors.emplace_back(edge.second);
-            nodes[edge.second].neighbors.emplace_back(edge.first);
-        }
-
-        if (nodes.size() != n) {
-            return false;
+            neighbors[edge.first].emplace_back(edge.second);
+            neighbors[edge.second].emplace_back(edge.first);
         }
 
         unordered_set<int> visited;
@@ -33,15 +22,10 @@ public:
             const int i = q.front();
             q.pop();
             visited.emplace(i);
-            for (const auto& node : nodes[i].neighbors) {
-                if (node != nodes[i].parent) {
-                    if (visited.find(node) != visited.end()) {
-                        return false;
-                    } else {
-                        visited.emplace(node);
-                        nodes[node].parent = i;
-                        q.emplace(node);
-                    }
+            for (const auto& node : neighbors[i]) {
+                if (!visited.count(node)) {
+                    visited.emplace(node);
+                    q.emplace(node);
                 }
             }
         }
