@@ -721,6 +721,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 471 | [Encode String with Shortest Length](https://leetcode.com/problems/encode-string-with-shortest-length/) | [C++](./C++/encode-string-with-shortest-length.cpp) [Python](./Python/encode-string-with-shortest-length.py) | _O(n^3)_ on average | _O(n^2)_ | Medium |📖|
 472 | [Concatenated Words](https://leetcode.com/problems/concatenated-words/) | [C++](./C++/concatenated-words.cpp) [Python](./Python/concatenated-words.py) | _O(n * l^2)_ | _O(n * l)_ | Medium ||
 474 | [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/) | [C++](./C++/ones-and-zeroes.cpp) [Python](./Python/ones-and-zeroes.py) | _O(s * m * n)_ | _O(m * n)_ | Medium ||
+514 | [Freedom Trail](https://leetcode.com/problems/freedom-trail/) | [C++](./C++/freedom-trail.cpp) [Python](./Python/freedom-trail.py) | _O(k)_ ~ _O(k * r^2)_ | _O(r)_ | Hard |||
 516 | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) | [C++](./C++/longest-palindromic-subsequence.cpp) [Python](./Python/longest-palindromic-subsequence.py) | _O(n^2)_ | _O(n)_ | Medium |||
 546 | [Remove Boxes](https://leetcode.com/problems/remove-boxes/) | [C++](./C++/remove-boxes.cpp) [Python](./Python/remove-boxes.py) | _O(n^3)_ ~ _O(n^4)_ | _O(n^3)_ | Hard |||
 552 | [Student Attendance Record II](https://leetcode.com/problems/student-attendance-record-ii/) | [C++](./C++/student-attendance-record-ii.cpp) [Python](./Python/student-attendance-record-ii.py) | _O(n)_ | _O(1)_ | Hard |||
