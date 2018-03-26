@@ -149,6 +149,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 794 | [Valid Tic-Tac-Toe State](https://leetcode.com/problems/valid-tic-tac-toe-state/) | [C++](./C++/valid-tic-tac-toe-state.cpp) [Python](./Python/valid-tic-tac-toe-state.py) | _O(1)_ | _O(1)_ | Medium ||
 795 | [Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/) | [C++](./C++/number-of-subarrays-with-bounded-maximum.cpp) [Python](./Python/number-of-subarrays-with-bounded-maximum.py) | _O(n)_ | _O(1)_ | Medium ||
 803 | [Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit/) | [C++](./C++/bricks-falling-when-hit.cpp) [Python](./Python/bricks-falling-when-hit.py) | _O(r * c)_ | _O(r * c)_ | Hard || Union Find
+807 | [Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline/) | [C++](./C++/max-increase-to-keep-city-skyline.cpp) [Python](./Python/max-increase-to-keep-city-skyline.py) | _O(n^2)_ | _O(n)_ | Medium ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -209,6 +210,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 758| [Bold Words in String](https://leetcode.com/contest/weekly-contest-66/problems/bold-words-in-string/) | [C++](./C++/bold-words-in-string.cpp) [Python](./Python/bold-words-in-string.py) | _O(n * l)_ | _O(t)_ |  Easy | 📖, variant of [Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/) |
 791| [Custom Sort String](https://leetcode.com/problems/custom-sort-string/) | [C++](./C++/custom-sort-string.cpp)  [Python](./Python/custom-sort-string.py) | _O(n)_ | _O(1)_ | Medium         |||
 796| [Rotate String](https://leetcode.com/problems/rotate-string/) | [C++](./C++/rotate-string.cpp)  [Python](./Python/rotate-string.py) | _O(n)_ | _O(1)_ | Easy         || `KMP Algorithm` `Rabin-Karp Algorithm` |
+804| [Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/) | [C++](./C++/unique-morse-code-words.cpp)  [Python](./Python/unique-morse-code-words.py) | _O(n)_ | _O(n)_ | Easy         |||
+806| [Number of Lines To Write String](https://leetcode.com/problems/number-of-lines-to-write-string/) | [C++](./C++/number-of-lines-to-write-string.cpp)  [Python](./Python/number-of-lines-to-write-string.py) | _O(n)_ | _O(1)_ | Easy         |||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -752,6 +755,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 790 | [Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/) | [C++](./C++/domino-and-tromino-tiling.cpp) [Python](./Python/domino-and-tromino-tiling.py) | _O(logn)_ | _O(logn)_ | Medium || Matrix Exponentiation |
 799 | [Champagne Tower](https://leetcode.com/problems/champagne-tower/) | [C++](./C++/champagne-tower.cpp) [Python](./Python/champagne-tower.py) | _O(n^2)_ | _O(n)_ | Medium |||
 801 | [Minimum Swaps To Make Sequences Increasing](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/) | [C++](./C++/minimum-swaps-to-make-sequences-increasing.cpp) [Python](./Python/minimum-swaps-to-make-sequences-increasing.py) | _O(n)_ | _O(1)_ | Medium |||
+805 | [Split Array With Same Average](https://leetcode.com/problems/split-array-with-same-average/) | [C++](./C++/split-array-with-same-average.cpp) [Python](./Python/split-array-with-same-average.py) | _O(n^4)_ | _O(n^3)_ | Hard |||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
