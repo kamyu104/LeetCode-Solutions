@@ -48,7 +48,7 @@ class Solution2:
 
 # when you on an index of nums, move to next index which can move farthest in range of this index reachable
 # Time: O(log(n))
-# Space: O(1)
+# Space: O(n)
 class Solution3(object):
     def jump(self, nums):
         """
@@ -70,6 +70,33 @@ class Solution3(object):
             if index == l:
                 break
         return steps
+    
+
+# greedy solution, the current jump is ```[i, cur_end]```, and the cur_farthest is the farthest point 
+# that all of point in [i, cur_end] can reach, whenever cur_farthest is larger than the last point' index, 
+# return current jump+1; whenever i reaches cur_end, update cur_end to current cur_farthest.
+# Time: O(log(n))
+# Space: O(1)
+class Solution4(object):
+    def jump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        # Note You can assume that you can always reach the last index.
+        cur_end, cur_farthest, step, n = 0, 0, 0, len(nums)
+        for i in range(n-1):
+            cur_farthest = max(cur_farthest, i + nums[i])
+            if cur_farthest >= n - 1:
+                step += 1
+                break
+            if i == cur_end:
+                cur_end = cur_farthest
+                step += 1
+        return step
+
+            
+        
     
 if __name__ == "__main__":
     print Solution().jump([2,3,1,1,4])
