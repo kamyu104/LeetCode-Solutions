@@ -33,10 +33,9 @@ class Solution(object):
         :rtype: List[float]
         """
         result = []
-        q = collections.deque([root])
+        q, next_q = collections.deque([root]), collections.deque([])
         while q:
             total, count = 0, 0
-            next_q = collections.deque([])
             while q:
                 n = q.popleft()
                 total += n.val;
