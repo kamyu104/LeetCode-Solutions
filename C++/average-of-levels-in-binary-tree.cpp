@@ -14,23 +14,21 @@ class Solution {
 public:
     vector<double> averageOfLevels(TreeNode* root) {
         vector<double> result;
-        queue<TreeNode *> q, next;
-        q.emplace(root);
+        vector<TreeNode *> q, next_q;
+        q.emplace_back(root);
         while (!q.empty()) {
             long long sum = 0, count = 0;
-            while (!q.empty()) {
-                auto n = q.front();
-                q.pop();
+            for (const auto& n : q) {
                 sum += n->val;
                 ++count;
                 if (n->left) {
-                    next.emplace(n->left);
+                    next_q.emplace_back(n->left);
                 }
                 if (n->right) {
-                    next.emplace(n->right);
+                    next_q.emplace_back(n->right);
                 }
             }
-            swap(q, next);
+            q = move(next_q);
             result.emplace_back(sum * 1.0 / count);
         }
         return result;
