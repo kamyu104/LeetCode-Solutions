@@ -33,17 +33,17 @@ class Solution(object):
         :rtype: List[float]
         """
         result = []
-        q, next_q = collections.deque([root]), collections.deque([])
+        q = [root]
         while q:
             total, count = 0, 0
-            while q:
-                n = q.popleft()
+            next_q = []
+            for n in q:
                 total += n.val;
                 count += 1
                 if n.left:
                     next_q.append(n.left)
                 if n.right:
                     next_q.append(n.right)
-            q, next_q = next_q, q
+            q = next_q
             result.append(float(total) / count)
         return result
