@@ -14,11 +14,10 @@ class Solution {
 public:
     vector<double> averageOfLevels(TreeNode* root) {
         vector<double> result;
-        queue<TreeNode *> q;
+        queue<TreeNode *> q, next;
         q.emplace(root);
         while (!q.empty()) {
             long long sum = 0, count = 0;
-            queue<TreeNode *> next;
             while (!q.empty()) {
                 auto n = q.front();
                 q.pop();
