@@ -14,7 +14,7 @@
 #
 
 # not pass on leetcode because of time limit
-class Solution:
+class Solution(object):
     # @param A, a list of integers
     # @return an integer
     def jump(self, A):
@@ -29,73 +29,6 @@ class Solution:
                 jump_count += 1
             reachable = max(reachable, i + length)
         return jump_count
-
-# Time:  O(n^2)
-# Space: O(1)     
-class Solution2:
-    # @param A, a list of integers
-    # @return an integer
-    def jump(self, A):
-        result, prev_reachable, reachable = 0, -1, 0
-        while reachable > prev_reachable:
-            if reachable >= len(A) - 1:
-                return result
-            result += 1
-            prev_reachable = reachable
-            for i, length in enumerate(A[:reachable + 1]):
-                reachable = max(reachable, i + length)
-        return -1
-
-# when you on an index of nums, move to next index which can move farthest in range of this index reachable
-# Time: O(log(n))
-# Space: O(n)
-class Solution3(object):
-    def jump(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        nums[-1] = 2 ** 31
-        nums2, l = [i + j for i, j in enumerate(nums)], len(nums) - 1
-
-        def find_max_index(index):
-            tmp = nums2[index:index + nums[index] + 1]
-            return index + tmp.index(max(tmp))
-
-        index, steps = 0, 0
-        while True:
-            index = find_max_index(index)
-            if index:
-                steps += 1
-            if index == l:
-                break
-        return steps
-    
-
-# greedy solution, the current jump is ```[i, cur_end]```, and the cur_farthest is the farthest point 
-# that all of point in [i, cur_end] can reach, whenever cur_farthest is larger than the last point' index, 
-# return current jump+1; whenever i reaches cur_end, update cur_end to current cur_farthest.
-# Time: O(log(n))
-# Space: O(1)
-class Solution4(object):
-    def jump(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        # Note You can assume that you can always reach the last index.
-        cur_end, cur_farthest, step, n = 0, 0, 0, len(nums)
-        for i in range(n-1):
-            cur_farthest = max(cur_farthest, i + nums[i])
-            if cur_farthest >= n - 1:
-                step += 1
-                break
-            if i == cur_end:
-                cur_end = cur_farthest
-                step += 1
-        return step
-
-            
         
     
 if __name__ == "__main__":
