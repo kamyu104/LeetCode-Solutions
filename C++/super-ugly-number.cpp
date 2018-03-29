@@ -1,4 +1,4 @@
-// Time:  O(n * logk) ~ O(n * k)
+// Time:  O(n * k)
 // Space: O(n + k)
 
 // Heap solution. (308ms)
@@ -17,7 +17,7 @@ public:
             tie(uglies[i], k) = heap.top();
             heap.pop();
             ugly_by_last_prime[i] = k;
-            while (ugly_by_last_prime[++idx[k]] > k);  // worst time: O(k)
+            while (ugly_by_last_prime[++idx[k]] > k);  // average time: O(k)
             heap.emplace(uglies[idx[k]] * primes[k], k);
         }
         return uglies[n - 1];
