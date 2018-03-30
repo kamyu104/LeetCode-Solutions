@@ -1,6 +1,6 @@
 # Time:  O(n!)
 # Space: O(n)
-#
+
 # The n-queens puzzle is the problem of placing n queens on 
 # an nxn chess board such that no two queens attack each other.
 # 
@@ -24,45 +24,31 @@
 #   ".Q.."]
 # ]
 
-# quick solution for checking if it is diagonally legal
-class Solution:
-    # @return an integer
+class Solution(object):
     def solveNQueens(self, n):
-        self.cols = [False] * n
-        self.main_diag = [False] * (2 * n)
-        self.anti_diag = [False] * (2 * n)
-        self.solutions = []
-        self.solveNQueensRecu([], 0, n)
-        return self.solutions
-
-    
-    def solveNQueensRecu(self, solution, row, n):
-        if row == n:
-            self.solutions.append(map(lambda x: '.' * x + "Q" + '.' * (n - x - 1), solution))
-        else:
+        """
+        :type n: int
+        :rtype: List[List[str]]
+        """
+        def dfs(curr, cols, main_diag, anti_diag, result):
+            row, n = len(curr), len(cols)
+            if row == n:
+                result.append(map(lambda x: '.'*x + "Q" + '.'*(n-x-1), curr))
+                return
             for i in xrange(n):
-                if not self.cols[i] and not self.main_diag[row + i] and not self.anti_diag[row - i + n]:
-                    self.cols[i] = self.main_diag[row + i] = self.anti_diag[row - i + n] = True
-                    self.solveNQueensRecu(solution + [i], row + 1, n)
-                    self.cols[i] = self.main_diag[row + i] = self.anti_diag[row - i + n] = False
+                if cols[i] or main_diag[row+i] or anti_diag[row-i+n]:
+                    continue
+                cols[i] = main_diag[row+i] = anti_diag[row-i+n] = True
+                curr.append(i)
+                dfs(curr, cols, main_diag, anti_diag, result)
+                curr.pop()
+                cols[i] = main_diag[row+i] = anti_diag[row-i+n] = False
+                
+        result = []
+        cols, main_diag, anti_diag = [False]*n, [False]*(2*n), [False]*(2*n)
+        dfs([], cols, main_diag, anti_diag, result)
+        return result
 
-# slower solution
-class Solution2:
-    # @return an integer
-    def solveNQueens(self, n):
-        self.solutions = []
-        self.solveNQueensRecu([], 0, n)
-        return self.solutions
-    
-    def solveNQueensRecu(self, solution, row, n):
-        if row == n:
-            self.solutions.append(map(lambda x: '.' * x + "Q" + '.' * (n - x - 1), solution))
-        else:
-            for i in xrange(n):
-                if i not in solution and reduce(lambda acc, j: abs(row - j) != abs(i - solution[j]) and acc, xrange(len(solution)), True):
-                    self.solveNQueensRecu(solution + [i], row + 1, n)
-
-                    
                     
 # For any point (x,y), if we want the new point (p,q) don't share the same row, column, or diagonal.
 # then there must have ```p+q != x+y``` and ```p-q!= x-y``` 
@@ -73,7 +59,7 @@ class Solution2:
 # - cur_row：current row we are seraching for valid column
 # - xy_diff：the list of x-y
 # - xy_sum：the list of x+y   
-class Solution3(object):
+class Solution2(object):
     def solveNQueens(self, n):
         """
         :type n: int
@@ -89,8 +75,7 @@ class Solution3(object):
         ress = []
         dfs([], [], [])
         return [['.'*i + 'Q' + '.'*(n-i-1) for i in res] for res in ress]
-                    
-                    
+               
                     
 if __name__ == "__main__":
     print Solution().solveNQueens(8)
