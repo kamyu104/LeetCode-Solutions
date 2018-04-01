@@ -55,8 +55,8 @@ class Solution(object):
                                    dp(a-1, b-3, lookup))
             return lookup[a, b]
 
-        if N >= 5000:
+        if N >= 4800:
             return 1.0
         lookup = {}
-        N = (N-1)//25 + 1
+        N = (N+24)//25
         return dp(N, N, lookup)
