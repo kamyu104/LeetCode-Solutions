@@ -14,6 +14,10 @@
 # (order does not matter).
 
 # Sliding window solution
+
+import collections
+
+
 class Solution(object):
     def findSubstring(self, s, words):
         """
@@ -24,7 +28,7 @@ class Solution(object):
         result, m, n, k = [], len(s), len(words), len(words[0])
         if m < n*k:
             return result
-        
+
         lookup = collections.defaultdict(int)
         for i in words:
             lookup[i] += 1                # Space: O(n * k)
@@ -36,7 +40,7 @@ class Solution(object):
                 s1 = s[j:j+k];            # Time:  O(k)
                 if s1 in lookup:
                     tmp[s1] += 1
-                    if tmp[s1] <= lookup[s1]: 
+                    if tmp[s1] <= lookup[s1]:
                         count += 1
                     else:
                         while tmp[s1] > lookup[s1]:
@@ -69,7 +73,7 @@ class Solution2(object):
         result, m, n, k = [], len(s), len(words), len(words[0])
         if m < n*k:
             return result
- 
+
         lookup = collections.defaultdict(int)
         for i in words:
             lookup[i] += 1                            # Space: O(n * k)
@@ -78,7 +82,7 @@ class Solution2(object):
             cur, j = collections.defaultdict(int), 0
             while j < n:                              # Time: O(n)
                 word = s[i+j*k:i+j*k+k]               # Time: O(k)
-                if word not in lookup: 
+                if word not in lookup:
                     break
                 cur[word] += 1
                 if cur[word] > lookup[word]:
@@ -86,7 +90,7 @@ class Solution2(object):
                 j += 1
             if j == n:
                 result.append(i)
-                
+
         return result
 
 

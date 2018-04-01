@@ -1,7 +1,7 @@
 # Time:  O(1) per move
 # Space: O(s), s is the current length of the snake.
 
-from collections import deque
+from collections import defaultdict, deque
 
 class SnakeGame(object):
 
@@ -9,7 +9,7 @@ class SnakeGame(object):
         """
         Initialize your data structure here.
         @param width - screen width
-        @param height - screen height 
+        @param height - screen height
         @param food - A list of food positions
         E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0].
         :type width: int
@@ -21,15 +21,15 @@ class SnakeGame(object):
         self.__score = 0
         self.__food = deque(food)
         self.__snake = deque([(0, 0)])
-        self.__direction =  {"U":(-1, 0), "L":(0, -1), "R":(0, 1), "D":(1, 0)};
-        self.__lookup = collections.defaultdict(int)
+        self.__direction = {"U": (-1, 0), "L": (0, -1), "R": (0, 1), "D": (1, 0)}
+        self.__lookup = defaultdict(int)
         self.__lookup[(0, 0)] += 1
-        
+
     def move(self, direction):
         """
         Moves the snake.
-        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down 
-        @return The game's score after the move. Return -1 if game over. 
+        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down
+        @return The game's score after the move. Return -1 if game over.
         Game over when snake crosses the screen boundary or bites its body.
         :type direction: str
         :rtype: int

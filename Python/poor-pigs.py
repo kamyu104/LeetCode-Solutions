@@ -15,6 +15,9 @@
 # how many pigs (x) you need to figure out the "poison" bucket within p minutes?
 # There is exact one bucket with poison.
 
+import math
+
+
 class Solution(object):
     def poorPigs(self, buckets, minutesToDie, minutesToTest):
         """

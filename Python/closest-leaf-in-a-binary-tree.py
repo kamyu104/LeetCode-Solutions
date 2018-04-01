@@ -58,6 +58,9 @@
 #         self.left = None
 #         self.right = None
 
+import collections
+
+
 class Solution(object):
     def findClosestLeaf(self, root, k):
         """
@@ -79,7 +82,7 @@ class Solution(object):
                 neighbors[node.val].append(node.right.val)
                 neighbors[node.right.val].append(node.val)
                 traverse(node.right, neighbors, leaves)
-        
+
         neighbors, leaves = collections.defaultdict(list), set()
         traverse(root, neighbors, leaves)
         q, lookup = [k], set([k])

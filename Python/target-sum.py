@@ -8,9 +8,9 @@
 # Find out how many ways to assign symbols to make sum of integers equal to target S.
 #
 # Example 1:
-# Input: nums is [1, 1, 1, 1, 1], S is 3. 
+# Input: nums is [1, 1, 1, 1, 1], S is 3.
 # Output: 5
-# Explanation: 
+# Explanation:
 #
 # -1+1+1+1+1 = 3
 # +1-1+1+1+1 = 3
@@ -23,6 +23,9 @@
 # The length of the given array is positive and will not exceed 20.
 # The sum of elements in the given array will not exceed 1000.
 # Your output answer is guaranteed to be fitted in a 32-bit integer.
+
+import collections
+
 
 class Solution(object):
     def findTargetSumWays(self, nums, S):

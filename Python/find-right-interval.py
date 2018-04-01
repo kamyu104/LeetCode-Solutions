@@ -41,6 +41,9 @@
 #         self.start = s
 #         self.end = e
 
+import bisect
+
+
 class Solution(object):
     def findRightInterval(self, intervals):
         """

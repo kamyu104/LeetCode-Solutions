@@ -28,6 +28,9 @@
 # The length of Profits array and Capital array will not exceed 50,000.
 # The answer is guaranteed to fit in a 32-bit signed integer.
 
+import heapq
+
+
 class Solution(object):
     def findMaximizedCapital(self, k, W, Profits, Capital):
         """

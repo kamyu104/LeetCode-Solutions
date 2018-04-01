@@ -1,6 +1,9 @@
 # Time:  O(1), amortized
 # Space: O(k), k is the max number of printed messages in last 10 seconds
 
+import collections
+
+
 class Logger(object):
 
     def __init__(self):

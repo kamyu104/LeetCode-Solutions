@@ -5,7 +5,7 @@
 # choose any node as the root. The result graph is then a
 # rooted tree. Among all possible rooted trees, those with
 # minimum height are called minimum height trees (MHTs).
-# Given such a graph, write a function to find all the 
+# Given such a graph, write a function to find all the
 # MHTs and return a list of their root labels.
 #
 # Format
@@ -46,13 +46,16 @@
 # How many MHTs can a graph have at most?
 # Note:
 #
-# (1) According to the definition of tree on Wikipedia: 
-#     "a tree is an undirected graph in which any two vertices 
-#     are connected by exactly one path. In other words, 
+# (1) According to the definition of tree on Wikipedia:
+#     "a tree is an undirected graph in which any two vertices
+#     are connected by exactly one path. In other words,
 #     any connected graph without simple cycles is a tree."
 #
-# (2) The height of a rooted tree is the number of edges on the 
+# (2) The height of a rooted tree is the number of edges on the
 #     longest downward path between the root and a leaf.
+
+import collections
+
 
 class Solution(object):
     def findMinHeightTrees(self, n, edges):
@@ -76,17 +79,17 @@ class Solution(object):
             unvisited.add(i)
 
         # A graph can have 2 MHTs at most.
-        # BFS from the leaves until the number 
+        # BFS from the leaves until the number
         # of the unvisited nodes is less than 3.
         while len(unvisited) > 2:
             cur_level = []
             for u in pre_level:
                 unvisited.remove(u)
                 for v in neighbors[u]:
-                    if v in unvisited: 
+                    if v in unvisited:
                         neighbors[v].remove(u)
                         if len(neighbors[v]) == 1:
                             cur_level.append(v)
             pre_level = cur_level
-    
+
         return list(unvisited)

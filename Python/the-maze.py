@@ -1,6 +1,9 @@
 # Time:  O(max(r, c) * w)
 # Space: O(w)
 
+import collections
+
+
 class Solution(object):
     def hasPath(self, maze, start, destination):
         """
@@ -10,7 +13,7 @@ class Solution(object):
         :rtype: bool
         """
         start, destination = tuple(start), tuple(destination)
-        
+
         def neighbors(maze, node):
             for dir in [(-1, 0), (0, 1), (0, -1), (1, 0)]:
                 cur_node, dist = list(node), 0
@@ -32,5 +35,5 @@ class Solution(object):
             visited.add(node)
             for neighbor_dist, neighbor in neighbors(maze, node):
                 queue.append((dist+neighbor_dist, neighbor))
-            
+
         return False

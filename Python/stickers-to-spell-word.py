@@ -44,6 +44,9 @@
 # - The time limit may be more challenging than usual.
 #   It is expected that a 50 sticker test case can be solved within 35ms on average.
 
+import collections
+
+
 class Solution(object):
     def minStickers(self, stickers, target):
         """
@@ -65,12 +68,11 @@ class Solution(object):
                        new_target += [k]*(target_count[k] - sticker_count[k])
                 if len(new_target) != len(target):
                     num = minStickersHelper(sticker_counts, new_target, dp)
-                    if num != -1: 
-                        result = min(result, 1+num)    
+                    if num != -1:
+                        result = min(result, 1+num)
             dp["".join(target)] = -1 if result == float("inf") else result
             return dp["".join(target)]
-          
+
         sticker_counts = map(collections.Counter, stickers)
         dp = { "":0 }
         return minStickersHelper(sticker_counts, target, dp)
-        

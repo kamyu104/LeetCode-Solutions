@@ -1,6 +1,9 @@
 # Time:  O(n)
 # Space: O(n)
 
+import collections
+
+
 # Hash solution.
 class Solution(object):
     def isReflected(self, points):

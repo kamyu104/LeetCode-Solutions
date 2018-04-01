@@ -22,6 +22,9 @@
 # Please remember to RESET your class variables declared in class MagicDictionary,
 # as static/class variables are persisted across multiple test cases. Please see here for more details.
 
+import collections
+
+
 class MagicDictionary(object):
 
     def __init__(self):
@@ -48,22 +51,22 @@ class MagicDictionary(object):
         :type word: str
         :rtype: bool
         """
-        def find(word, curr, i, mistakeAllowed): 
+        def find(word, curr, i, mistakeAllowed):
             if i == len(word):
                 return "_end" in curr and not mistakeAllowed
 
-            if word[i] not in curr: 
+            if word[i] not in curr:
                 return any(find(word, curr[c], i+1, False) for c in curr if c != "_end") \
-                           if mistakeAllowed else False 
-            
-            if mistakeAllowed: 
+                           if mistakeAllowed else False
+
+            if mistakeAllowed:
                 return find(word, curr[word[i]], i+1, True) or \
                        any(find(word, curr[c], i+1, False) \
                            for c in curr if c not in ("_end", word[i]))
             return find(word, curr[word[i]], i+1, False)
 
-        return find(word, self.trie, 0, True)    
-        
+        return find(word, self.trie, 0, True)
+
 
 
 # Your MagicDictionary object will be instantiated and called as such:

@@ -10,6 +10,8 @@
 # You just need to ensure that a URL can be encoded to a tiny URL
 # and the tiny URL can be decoded to the original URL.
 
+import random
+
 
 class Codec:
     def __init__(self):
@@ -20,7 +22,7 @@ class Codec:
 
     def encode(self, longUrl):
         """Encodes a URL to a shortened URL.
-        
+
         :type longUrl: str
         :rtype: str
         """
@@ -29,7 +31,7 @@ class Codec:
             for _ in xrange(self.__random_length):
                 rand += self.__alphabet[random.randint(0, len(self.__alphabet)-1)]
             return "".join(rand)
-        
+
         key = getRand()
         while key in self.__lookup:
             key = getRand()
@@ -38,7 +40,7 @@ class Codec:
 
     def decode(self, shortUrl):
         """Decodes a shortened URL to its original URL.
-        
+
         :type shortUrl: str
         :rtype: str
         """

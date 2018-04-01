@@ -42,6 +42,9 @@
 # [2,4,6,8,10]
 # [2,6,10]
 
+import collections
+
+
 class Solution(object):
     def numberOfArithmeticSlices(self, A):
         """

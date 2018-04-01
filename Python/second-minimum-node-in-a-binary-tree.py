@@ -11,7 +11,7 @@
 # If no such second minimum value exists, output -1 instead.
 #
 # Example 1:
-# Input: 
+# Input:
 #     2
 #    / \
 #   2   5
@@ -21,20 +21,23 @@
 # Output: 5
 # Explanation: The smallest value is 2, the second smallest value is 5.
 # Example 2:
-# Input: 
+# Input:
 #     2
 #    / \
 #   2   2
 #
 # Output: -1
 # Explanation: The smallest value is 2, but there isn't any second smallest value.
-    
+
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
+
+import heapq
+
 
 class Solution(object):
     def findSecondMinimumValue(self, root):

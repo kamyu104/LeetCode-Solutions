@@ -1,6 +1,10 @@
 # Time:  O(nlogn)
 # Space: O(1)
 
+import bisect
+import itertools
+
+
 class Solution(object):
     def minArea(self, image, x, y):
         """

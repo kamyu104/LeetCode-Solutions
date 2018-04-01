@@ -19,11 +19,14 @@
 # // Returns the random shuffling of array [1,2,3].
 # solution.shuffle();
 
+import random
+
+
 class Solution(object):
 
     def __init__(self, nums):
         """
-        
+
         :type nums: List[int]
         :type size: int
         """
@@ -36,7 +39,7 @@ class Solution(object):
         :rtype: List[int]
         """
         return self.__nums
-        
+
 
     def shuffle(self):
         """

@@ -1,6 +1,9 @@
 # Time:  O(n * l), n is the length of S, l is the average length of words
 # Space: O(t)    , t is the size of trie
 
+import collections
+
+
 class Solution(object):
     def boldWords(self, words, S):
         """

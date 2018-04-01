@@ -23,7 +23,7 @@
 # MyCalendarThree.book(5, 15); // returns 3
 # MyCalendarThree.book(5, 10); // returns 3
 # MyCalendarThree.book(25, 55); // returns 3
-# Explanation: 
+# Explanation:
 # The first two events can be booked and are disjoint, so the maximum K-booking is a 1-booking.
 # The third event [10, 40) intersects the first event, and the maximum K-booking is a 2-booking.
 # The remaining events cause the maximum K-booking to be only a 3-booking.
@@ -32,12 +32,15 @@
 # Note:
 # - The number of calls to MyCalendarThree.book per test case will be at most 400.
 # - In calls to MyCalendarThree.book(start, end), start and end are integers in the range [0, 10^9].
-                             
+
+import bisect
+
+
 class MyCalendarThree(object):
 
     def __init__(self):
         self.__books = []
-        
+
 
     def book(self, start, end):
         """
@@ -50,19 +53,19 @@ class MyCalendarThree(object):
             self.__books[i] = (self.__books[i][0], self.__books[i][1]+1)
         else:
             self.__books.insert(i, (start, 1))
-            
+
         j = bisect.bisect_left(self.__books, (end, 1))
         if j < len(self.__books) and self.__books[j][0] == end:
             self.__books[j] = (self.__books[j][0], self.__books[j][1]-1)
         else:
             self.__books.insert(j, (end, -1))
-            
+
         result, cnt = 0, 0
         for book in self.__books:
             cnt += book[1]
-            result = max(result, cnt)        
+            result = max(result, cnt)
         return result
-            
+
 
 # Your MyCalendarThree object will be instantiated and called as such:
 # obj = MyCalendarThree()

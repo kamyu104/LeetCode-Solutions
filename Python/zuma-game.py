@@ -25,11 +25,11 @@
 #
 # Input:"G", "GGGGG"
 # Output: 2
-# Explanation: G -> G[G] -> GG[G] -> empty 
+# Explanation: G -> G[G] -> GG[G] -> empty
 #
 # Input: "RBYYBBRRB", "YRBGB"
 # Output: 3
-# Explanation: RBYYBBRRB -> RBYY[Y]BBRRB -> RBBBRRB -> RRRB -> B -> B[B] -> BB[B] -> empty 
+# Explanation: RBYYBBRRB -> RBYY[Y]BBRRB -> RBBBRRB -> RRRB -> B -> B[B] -> BB[B] -> empty
 #
 # Note:
 # You may assume that the initial row of balls on the table won’t have any 3 or
@@ -39,6 +39,9 @@
 # The number of balls in your hand won't exceed 5, and the string represents these balls
 # is called "hand" in the input.
 # Both input strings will be non-empty and only contain characters 'R','Y','B','G','W'.
+
+import collections
+
 
 class Solution(object):
     def findMinStep(self, board, hand):
@@ -63,18 +66,18 @@ class Solution(object):
             for p in stack:
                 result += [p[0]] * p[1]
             return result
-        
+
         def find(board, c, j):
             for i in xrange(j, len(board)):
                 if board[i] == c:
                     return i
             return -1
-        
+
         def findMinStepHelper(board, hand, lookup):
             if not board: return 0
             if not hand: return float("inf")
             if tuple(hand) in lookup[tuple(board)]: return lookup[tuple(board)][tuple(hand)]
-    
+
             result = float("inf")
             for i in xrange(len(hand)):
                 j = 0
@@ -82,7 +85,7 @@ class Solution(object):
                     k = find(board, hand[i], j)
                     if k == -1:
                         break
-                    
+
                     if k < len(board) - 1 and board[k] == board[k+1]:
                         next_board = shrink(board[0:k] + board[k+2:])
                         next_hand = hand[0:i] + hand[i+1:]

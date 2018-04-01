@@ -1,6 +1,9 @@
 # Time:  init: O(n), lookup: O(a + b), a, b is occurences of word1, word2
 # Space: O(n)
 
+import collections
+
+
 class WordDistance:
     # initialize your data structure here.
     # @param {string[]} words
@@ -26,4 +29,3 @@ class WordDistance:
                 j += 1
 
         return dist
-

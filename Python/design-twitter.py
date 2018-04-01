@@ -40,6 +40,10 @@
 # // since user 1 is no longer following user 2.
 # twitter.getNewsFeed(1);
 
+import collections
+import heapq
+
+
 class Twitter(object):
 
     def __init__(self):

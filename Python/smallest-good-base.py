@@ -3,7 +3,7 @@
 
 # For an integer n, we call k>=2 a good base of n, if all digits of n base k are 1.
 #
-# Now given a string representing n, you should return the smallest good base of n in string format. 
+# Now given a string representing n, you should return the smallest good base of n in string format.
 #
 # Example 1:
 # Input: "13"
@@ -20,6 +20,9 @@
 # Note:
 # The range of n is [3, 10^18].
 # The string representing n is always valid and will not have leading zeros.
+
+import math
+
 
 class Solution(object):
     def smallestGoodBase(self, n):

@@ -1,7 +1,7 @@
 # Time:  O(n^3)
 # Space: O(1)
 
-# Given an array S of n integers, 
+# Given an array S of n integers,
 # are there elements a, b, c, and d in S such that a + b + c + d = target?
 # Find all unique quadruplets in the array which gives the sum of target.
 #
@@ -15,6 +15,9 @@
 #    (-2, -1, 1, 2)
 #    (-2,  0, 0, 2)
 #
+
+import collections
+
 
 # Two pointer solution. (1356ms)
 class Solution(object):
@@ -62,7 +65,7 @@ class Solution2(object):
         """
         nums, result, lookup = sorted(nums), [], collections.defaultdict(list)
         for i in xrange(0, len(nums) - 1):
-            for j in xrange(i + 1, len(nums)): 
+            for j in xrange(i + 1, len(nums)):
                 is_duplicated = False
                 for [x, y] in lookup[nums[i] + nums[j]]:
                     if nums[x] == nums[i]:
@@ -95,7 +98,7 @@ class Solution3(object):
         """
         nums, result, lookup = sorted(nums), [], collections.defaultdict(list)
         for i in xrange(0, len(nums) - 1):
-            for j in xrange(i + 1, len(nums)): 
+            for j in xrange(i + 1, len(nums)):
                 lookup[nums[i] + nums[j]].append([i, j])
 
         for i in lookup.keys():

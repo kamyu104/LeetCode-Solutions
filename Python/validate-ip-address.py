@@ -1,7 +1,7 @@
 # Time:  O(1)
 # Space: O(1)
 
-# In this problem, your job to write a function to check whether a input string 
+# In this problem, your job to write a function to check whether a input string
 # is a valid IPv4 address or IPv6 address or neither.
 #
 # IPv4 addresses are canonically represented in dot-decimal notation,
@@ -46,6 +46,9 @@
 #
 # Explanation: This is neither a IPv4 address nor a IPv6 address.
 
+import string
+
+
 class Solution(object):
     def validIPAddress(self, IP):
         """
@@ -64,7 +67,7 @@ class Solution(object):
         if len(blocks) == 8:
             for i in xrange(len(blocks)):
                 if not (1 <= len(blocks[i]) <= 4) or \
-                   not all(c in string.hexdigits for c in blocks[i]):    
+                   not all(c in string.hexdigits for c in blocks[i]):
                     return "Neither"
             return "IPv6"
         return "Neither"

@@ -4,7 +4,7 @@
 # In a 2 dimensional array grid, each value grid[i][j] represents the height of
 # a building located there. We are allowed to increase the height of any number of buildings,
 # by any amount (the amounts can be different for different buildings).
-# Height 0 is considered to be a building as well. 
+# Height 0 is considered to be a building as well.
 #
 # At the end, the "skyline" when viewed from all four directions of the grid,
 # i.e. top, bottom, left, and right, must be the same as the skyline of the original grid.
@@ -16,9 +16,9 @@
 # Example:
 # Input: grid = [[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]
 # Output: 35
-# Explanation: 
+# Explanation:
 # The grid is:
-# [ [3, 0, 8, 4], 
+# [ [3, 0, 8, 4],
 #   [2, 4, 5, 7],
 #   [9, 2, 6, 3],
 #   [0, 3, 1, 0] ]
@@ -38,7 +38,10 @@
 # - All heights grid[i][j] are in the range [0, 100].
 # - All buildings in grid[i][j] occupy the entire grid cell:
 #   that is, they are a 1 x 1 x grid[i][j] rectangular prism.
-    
+
+import itertools
+
+
 class Solution(object):
     def maxIncreaseKeepingSkyline(self, grid):
         """

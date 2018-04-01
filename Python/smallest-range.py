@@ -9,7 +9,7 @@
 # Example 1:
 # Input:[[4,10,15,24,26], [0,9,12,20], [5,18,22,30]]
 # Output: [20,24]
-# Explanation: 
+# Explanation:
 # List 1: [4, 10, 15, 24,26], 24 is in range [20,24].
 # List 2: [0, 9, 12, 20], 20 is in range [20,24].
 # List 3: [5, 18, 22, 30], 22 is in range [20,24].
@@ -19,6 +19,9 @@
 # -10^5 <= value of elements <= 10^5.
 # For Java users, please note that the input type has been changed to List<List<Integer>>.
 # And after you reset the code template, you'll see this point.
+
+import heapq
+
 
 class Solution(object):
     def smallestRange(self, nums):
@@ -33,10 +36,10 @@ class Solution(object):
             right = max(right, row[0])
             it = iter(row)
             heapq.heappush(min_heap, (next(it, None), it))
-        
+
         result = (left, right)
         while min_heap:
-            (val, it) = heapq.heappop(min_heap)    
+            (val, it) = heapq.heappop(min_heap)
             val = next(it, None)
             if val is None:
                 break

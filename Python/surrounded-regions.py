@@ -2,21 +2,24 @@
 # Space: O(m + n)
 #
 # Given a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'.
-# 
+#
 # A region is captured by flipping all 'O's into 'X's in that surrounded region.
-# 
+#
 # For example,
 # X X X X
 # X O O X
 # X X O X
 # X O X X
 # After running your function, the board should be:
-# 
+#
 # X X X X
 # X X X X
 # X X X X
 # X O X X
 #
+
+import collections
+
 
 class Solution:
     # @param board, a 2D array
@@ -26,15 +29,15 @@ class Solution:
         if not board:
             return
         q = collections.deque([])
-        
+
         for i in xrange(len(board)):
             q.append((i, 0))
             q.append((i, len(board[0]) - 1))
-            
+
         for j in xrange(len(board[0])):
             q.append((0, j))
             q.append((len(board) - 1, j))
-            
+
         while q:
             i, j = q.popleft()
             if board[i][j] in ['O', 'V']:
@@ -44,7 +47,7 @@ class Solution:
                        board[x][y] == 'O':
                         board[x][y] = 'V'
                         q.append((x, y))
-                        
+
         for i in xrange(len(board)):
             for j in xrange(len(board[0])):
                 if board[i][j] != 'V':

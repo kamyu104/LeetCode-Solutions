@@ -16,6 +16,9 @@
 # Length of the given array is positive and will not exceed 10^4
 # Absolute value of elements in the array and x will not exceed 10^4
 
+import bisect
+
+
 class Solution(object):
     def findClosestElements(self, arr, k, x):
         """

@@ -9,7 +9,7 @@
 # The state of the board is solved if and only if the board is [[1,2,3],[4,5,0]].
 #
 # Given a puzzle board, return the least number of moves required
-# so that the state of the board is solved. If it is impossible 
+# so that the state of the board is solved. If it is impossible
 # for the state of the board to be solved, return -1.
 #
 # Examples:
@@ -37,6 +37,10 @@
 # - board will be a 2 x 3 array as described above.
 # - board[i][j] will be a permutation of [0, 1, 2, 3, 4, 5].
 
+import heapq
+import itertools
+
+
 # A* Search Algorithm
 class Solution(object):
     def slidingPuzzle(self, board):
@@ -46,7 +50,7 @@ class Solution(object):
         """
         def dot(p1, p2):
             return p1[0]*p2[0]+p1[1]*p2[1]
-        
+
         def heuristic_estimate(board, R, C, expected):
             result = 0
             for i in xrange(R):
@@ -56,13 +60,13 @@ class Solution(object):
                     r, c = expected[val]
                     result += abs(r-i) + abs(c-j)
             return result
-        
+
         R, C = len(board), len(board[0])
         begin = tuple(itertools.chain(*board))
         end = tuple(range(1, R*C) + [0])
         expected = {(C*i+j+1) % (R*C) : (i, j)
                     for i in xrange(R) for j in xrange(C)}
-            
+
         min_steps = heuristic_estimate(begin, R, C, expected)
         closer, detour = [(begin.index(0), begin)], []
         lookup = set()
@@ -111,14 +115,14 @@ class Solution2(object):
                     r, c = expected[val]
                     result += abs(r-i) + abs(c-j)
             return result
-        
+
         R, C = len(board), len(board[0])
         begin = tuple(itertools.chain(*board))
         end = tuple(range(1, R*C) + [0])
         end_wrong = tuple(range(1, R*C-2) + [R*C-1, R*C-2, 0])
         expected = {(C*i+j+1) % (R*C) : (i, j)
                     for i in xrange(R) for j in xrange(C)}
-            
+
         min_heap = [(0, 0, begin.index(0), begin)]
         lookup = {begin: 0}
         while min_heap:

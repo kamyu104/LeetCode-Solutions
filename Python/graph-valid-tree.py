@@ -1,6 +1,9 @@
 # Time:  O(|V| + |E|)
 # Space: O(|V| + |E|)
 
+import collections
+
+
 # BFS solution. Same complexity but faster version.
 class Solution(object):
     # @param {integer} n

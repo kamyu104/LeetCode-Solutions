@@ -10,7 +10,7 @@
 # Example 1:
 # Input: [1, 2, 2, 3, 1]
 # Output: 2
-# Explanation: 
+# Explanation:
 # The input array has a degree of 2 because both elements 1 and 2 appear twice.
 # Of the subarrays that have the same degree:
 # [1, 2, 2, 3, 1], [1, 2, 2, 3], [2, 2, 3, 1], [1, 2, 2], [2, 2, 3], [2, 2]
@@ -23,6 +23,9 @@
 #
 # nums.length will be between 1 and 50,000.
 # nums[i] will be an integer between 0 and 49,999.
+
+import collections
+
 
 class Solution(object):
     def findShortestSubArray(self, nums):
@@ -39,4 +42,3 @@ class Solution(object):
         return min(right[num]-left[num]+1 \
                    for num in counts.keys() \
                    if counts[num] == degree)
- 

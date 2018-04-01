@@ -2,7 +2,7 @@
 # Space: O(n * k)
 
 # Given a list of unique words. Find all pairs of indices (i, j)
-# in the given list, so that the concatenation of the two words, 
+# in the given list, so that the concatenation of the two words,
 # i.e. words[i] + words[j] is a palindrome.
 #
 # Example 1:
@@ -14,13 +14,16 @@
 # Return [[0, 1], [1, 0], [3, 2], [2, 4]]
 # The palindromes are ["dcbaabcd", "abcddcba", "slls", "llssssll"]
 
+import collections
+
+
 class Solution(object):
     def palindromePairs(self, words):
         """
         :type words: List[str]
         :rtype: List[List[int]]
         """
-        res = [] 
+        res = []
         lookup = {}
         for i, word in enumerate(words):
             lookup[word] = i
@@ -55,7 +58,7 @@ class Solution_TLE(object):
                     T +=  ["#", c]
                 T += ['#', '$']
                 return T
-    
+
             T = preProcess(s)
             center, right = 0, 0
             for i in xrange(1, len(T) - 1):

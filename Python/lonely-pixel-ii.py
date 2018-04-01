@@ -1,6 +1,9 @@
 # Time:  O(m * n)
 # Space: O(m * n)
 
+import collections
+
+
 class Solution(object):
     def findBlackPixel(self, picture, N):
         """

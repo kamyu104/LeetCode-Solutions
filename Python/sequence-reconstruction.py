@@ -1,6 +1,9 @@
 # Time:  O(n * s), n is the size of org, s is the size of seqs
 # Space: O(n)
 
+import collections
+
+
 class Solution(object):
     def sequenceReconstruction(self, org, seqs):
         """
@@ -79,4 +82,3 @@ class Solution2(object):
                         return False
                     q.append(j)
         return res == org and len(org) == len(integer_set)
-    

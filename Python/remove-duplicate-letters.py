@@ -14,6 +14,9 @@
 # Given "cbacdcbc"
 # Return "acdb"
 
+import collections
+
+
 class Solution(object):
     def removeDuplicateLetters(self, s):
         """

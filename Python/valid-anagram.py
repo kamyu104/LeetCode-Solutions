@@ -12,6 +12,10 @@
 # You may assume the string contains only lowercase alphabets.
 #
 
+import collections
+import string
+
+
 class Solution:
     # @param {string} s
     # @param {string} t
@@ -37,13 +41,13 @@ class Solution:
                 return False
 
         return True
-    
+
     def isAnagram2(self, s, t):
         return all([s.count(c)==t.count(c) for c in string.ascii_lowercase])
-    
+
     def isAnagram3(self, s, t):
         if len(s) != len(t):
-            return False 
+            return False
         count = collections.defaultdict(int)
         for c in s:
             count[c] += 1

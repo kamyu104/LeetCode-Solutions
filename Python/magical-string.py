@@ -28,6 +28,10 @@
 # Explanation: The first 6 elements of magical string S is "12211" and it contains three 1's, so return 3.
 
 # the solution comes from https://discuss.leetcode.com/topic/75242/o-log-n-space-using-recursive-generators
+
+import itertools
+
+
 class Solution(object):
     def magicalString(self, n):
         """

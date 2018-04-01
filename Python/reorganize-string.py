@@ -18,6 +18,10 @@
 # Note:
 # - S will consist of lowercase letters and have length in range [1, 500].
 
+import collections
+import heapq
+
+
 class Solution(object):
     def reorganizeString(self, S):
         """
@@ -27,7 +31,7 @@ class Solution(object):
         counts = collections.Counter(S)
         if any(v > (len(S)+1)/2 for k, v in counts.iteritems()):
             return ""
-        
+
         result = []
         max_heap = []
         for k, v in counts.iteritems():

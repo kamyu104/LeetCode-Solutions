@@ -1,6 +1,9 @@
 # Time:  O(n)
 # Space: O(k)
 
+import collections
+
+
 class ZigzagIterator(object):
 
     def __init__(self, v1, v2):

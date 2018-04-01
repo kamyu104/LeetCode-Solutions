@@ -1,6 +1,9 @@
-# Time:  ctor:   O(n), n is number of words in the dictionary. 
+# Time:  ctor:   O(n), n is number of words in the dictionary.
 #        lookup: O(1)
 # Space: O(k), k is number of unique words.
+
+import collections
+
 
 class ValidWordAbbr(object):
     def __init__(self, dictionary):
@@ -12,7 +15,7 @@ class ValidWordAbbr(object):
         for word in dictionary:
             abbr = self.abbreviation(word)
             self.lookup_[abbr].add(word)
-            
+
 
     def isUnique(self, word):
         """

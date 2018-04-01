@@ -3,6 +3,9 @@
 #        sum: O((r * c)^2)
 # Space: O(r * c)
 
+import collections
+
+
 class Excel(object):
 
     def __init__(self, H, W):
@@ -14,7 +17,7 @@ class Excel(object):
                       for _ in xrange(H+1)]
         self.__fward = collections.defaultdict(lambda : collections.defaultdict(int))
         self.__bward = collections.defaultdict(set)
-        
+
 
     def set(self, r, c, v):
         """
@@ -25,7 +28,7 @@ class Excel(object):
         """
         self.__reset_dependency(r, c);
         self.__update_others(r, c, v);
-        
+
 
     def get(self, r, c):
         """
@@ -34,7 +37,7 @@ class Excel(object):
         :rtype: int
         """
         return self.__exl[r][ord(c) - ord('A')]
-        
+
 
     def sum(self, r, c, strs):
         """

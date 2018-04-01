@@ -39,6 +39,10 @@
 # - board will have the same number of rows and columns, a number in the range [2, 30].
 # - board[i][j] will be only 0s or 1s.
 
+import collections
+import itertools
+
+
 class Solution(object):
     def movesToChessboard(self, board):
         """
@@ -60,4 +64,3 @@ class Solution(object):
             result += min(sum(int(i%2 != v) for i, v in enumerate(seq1, begin)) \
                           for begin in begins) / 2
         return result
-        

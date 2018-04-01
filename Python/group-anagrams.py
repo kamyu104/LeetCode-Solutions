@@ -6,6 +6,9 @@
 # Note: All inputs will be in lower-case.
 #
 
+import collections
+
+
 class Solution(object):
     def groupAnagrams(self, strs):
         """

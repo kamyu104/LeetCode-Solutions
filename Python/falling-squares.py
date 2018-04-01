@@ -3,7 +3,7 @@
 
 # On an infinite number line (x-axis), we drop given squares in the order they are given.
 #
-# The i-th square dropped (positions[i] = (left, side_length)) is a square 
+# The i-th square dropped (positions[i] = (left, side_length)) is a square
 # with the left-most point being positions[i][0] and sidelength positions[i][1].
 #
 # The square is dropped with the bottom edge parallel to the number line,
@@ -22,14 +22,14 @@
 # Output: [2, 5, 5]
 # Explanation:
 #
-# After the first drop of 
+# After the first drop of
 # positions[0] = [1, 2]:
 # _aa
 # _aa
 # -------
 # The maximum height of any square is 2.
 #
-# After the second drop of 
+# After the second drop of
 # positions[1] = [2, 3]:
 # __aaa
 # __aaa
@@ -37,11 +37,11 @@
 # _aa__
 # _aa__
 # --------------
-# The maximum height of any square is 5.  
+# The maximum height of any square is 5.
 # The larger square stays on top of the smaller square despite where its center
 # of gravity is, because squares are infinitely sticky on their bottom edge.
 #
-# After the third drop of 
+# After the third drop of
 # positions[1] = [6, 1]:
 # __aaa
 # __aaa
@@ -51,7 +51,7 @@
 # --------------
 # The maximum height of any square is still 5.
 #
-# Thus, we return an answer of 
+# Thus, we return an answer of
 # [2, 5, 5]
 # .
 #
@@ -64,6 +64,9 @@
 # 1 <= positions.length <= 1000.
 # 1 <= positions[0] <= 10^8.
 # 1 <= positions[1] <= 10^6.
+
+import bisect
+
 
 class SegmentTree(object):
     def __init__(self, N, update_fn, query_fn):
@@ -187,7 +190,7 @@ class Solution2(object):
         heights = [0] * W
         blocks = [0] * (B+2)
         blocks_read = [0] * (B+2)
-        
+
         max_height = 0
         result = []
         for left, size in positions:

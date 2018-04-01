@@ -22,6 +22,9 @@
 # 1 <= root length <= 100
 # 1 <= sentence words length <= 1000
 
+import collections
+
+
 class Solution(object):
     def replaceWords(self, dictionary, sentence):
         """

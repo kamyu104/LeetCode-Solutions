@@ -27,6 +27,9 @@
 # - The length of each pairs[i] will be 2.
 # - The length of each words[i] and pairs[i][j] will be in the range [1, 20].
 
+import itertools
+
+
 class Solution(object):
     def areSentencesSimilar(self, words1, words2, pairs):
         """

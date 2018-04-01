@@ -26,6 +26,9 @@
 # Input: "x=x+2"
 # Output: "No solution"
 
+import re
+
+
 class Solution(object):
     def solveEquation(self, equation):
         """

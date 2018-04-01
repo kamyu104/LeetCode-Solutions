@@ -20,7 +20,7 @@
 # You are guaranteed that no two trees have the same height and there is at least one tree needs to be cut off.
 #
 # Example 1:
-# Input: 
+# Input:
 # [
 #  [1,2,3],
 #  [0,0,4],
@@ -28,7 +28,7 @@
 # ]
 # Output: 6
 # Example 2:
-# Input: 
+# Input:
 # [
 #  [1,2,3],
 #  [0,0,0],
@@ -36,7 +36,7 @@
 # ]
 # Output: -1
 # Example 3:
-# Input: 
+# Input:
 # [
 #  [2,3,4],
 #  [0,0,5],
@@ -47,11 +47,16 @@
 # in (0,0) directly without walking.
 # Hint: size of the given matrix will not exceed 50x50.
 
-# Solution Reference: 
+# Solution Reference:
 # 1. https://discuss.leetcode.com/topic/103532/my-python-solution-inspired-by-a-algorithm/2
 # 2. https://discuss.leetcode.com/topic/103562/python-solution-based-on-wufangjie-s-hadlock-s-algorithm
 # 3. https://en.wikipedia.org/wiki/A*_search_algorithm
 # 4. https://cg2010studio.files.wordpress.com/2011/12/dijkstra-vs-a-star.png
+
+import collections
+import heapq
+
+
 class Solution(object):
     def cutOffTree(self, forest):
         """
@@ -127,7 +132,7 @@ class Solution_TLE(object):
                         lookup.add((i, j))
                 min_steps += 1
             return -1
-        
+
         m, n = len(forest), len(forest[0])
         min_heap = []
         for i in xrange(m):

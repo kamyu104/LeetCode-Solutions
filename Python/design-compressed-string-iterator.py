@@ -1,6 +1,9 @@
 # Time:  O(1)
 # Space: O(1)
 
+import re
+
+
 class StringIterator(object):
 
     def __init__(self, compressedString):
@@ -22,14 +25,14 @@ class StringIterator(object):
             self.__index += 1
         self.__num -= 1
         return self.__ch
-        
+
 
     def hasNext(self):
         """
         :rtype: bool
         """
         return self.__index != len(self.__result) or self.__num != 0
-        
+
 
 
 # Your StringIterator object will be instantiated and called as such:

@@ -17,13 +17,16 @@
 # Example:
 # Input: 3
 # Output: 5
-# Explanation: 
+# Explanation:
 # The five different ways are listed below, different letters indicates different tiles:
 # XYZ XXZ XYY XXY XYY
 # XYZ YYZ XZZ XYY XXY
 #
 # Note:
 # - N  will be in range [1, 1000].
+
+import itertools
+
 
 class Solution(object):
     def numTilings(self, N):
@@ -43,7 +46,7 @@ class Solution(object):
                 return matrix_mult(matrix_expo(A, K-1), A)
             B = matrix_expo(A, K//2)
             return matrix_mult(B, B)
-        
+
         def matrix_mult(A, B):
             ZB = zip(*B)
             return [[sum(a*b for a, b in itertools.izip(row, col)) % M \
@@ -76,4 +79,3 @@ class Solution2(object):
         for i in xrange(3, N+1):
             dp[i%3] = (2*dp[(i-1)%3]%M + dp[(i-3)%3])%M
         return dp[N%3]
-
