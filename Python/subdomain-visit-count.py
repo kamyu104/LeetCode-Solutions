@@ -54,7 +54,7 @@ except NameError:
 
 
 try:
-    dict.iteritems
+    defaultdict.iteritems
 except AttributeError:
     # Python 3
     def itervalues(d):
