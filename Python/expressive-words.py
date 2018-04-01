@@ -1,5 +1,5 @@
 # Time:  O(n + s), n is the sum of all word lengths, s is the length of S
-# Space: O(1)
+# Space: O(l + s), l is the max word length
 
 # Sometimes people repeat letters to represent extra feeling,
 # such as "hello" -> "heeellooo", "hi" -> "hiiii".
