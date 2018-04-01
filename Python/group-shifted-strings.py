@@ -1,6 +1,9 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
+import collections
+
+
 class Solution:
     # @param {string[]} strings
     # @return {string[][]}
@@ -12,7 +15,7 @@ class Solution:
         result = []
         for key, val in groups.iteritems():
             result.append(sorted(val))
-        
+
         return result
 
     def hashStr(self, s):

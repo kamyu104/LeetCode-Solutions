@@ -4,6 +4,9 @@
 # Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
 #
 
+import collections
+
+
 # Definition for a point
 class Point:
     def __init__(self, a=0, b=0):
@@ -28,13 +31,13 @@ class Solution(object):
                     if start.x - end.x != 0:
                         slope = (start.y - end.y) * 1.0 / (start.x - end.x)
                     slope_count[slope] += 1
-            
-            current_max = same            
+
+            current_max = same
             for slope in slope_count:
                 current_max = max(current_max, slope_count[slope] + same)
-                
+
             max_points = max(max_points, current_max)
-            
+
         return max_points
 
 if __name__ == "__main__":

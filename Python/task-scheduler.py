@@ -22,6 +22,9 @@
 # The number of tasks is in the range [1, 10000].
 # The integer n is in the range [0, 100].
 
+import collections
+
+
 class Solution(object):
     def leastInterval(self, tasks, n):
         """
@@ -34,7 +37,7 @@ class Solution(object):
         for task in tasks:
             count[task] += 1
             max_count = max(max_count, count[task])
-        
+
         result = (max_count-1) * (n+1)
         for count in count.values():
             if count == max_count:

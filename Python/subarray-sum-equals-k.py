@@ -12,6 +12,9 @@
 # The length of the array is in range [1, 20,000].
 # The range of numbers in the array is [-1000, 1000] and the range of the integer k is [-1e7, 1e7].
 
+import collections
+
+
 class Solution(object):
     def subarraySum(self, nums, k):
         """

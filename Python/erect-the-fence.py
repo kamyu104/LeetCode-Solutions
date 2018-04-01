@@ -15,7 +15,7 @@
 # Input: [[1,2],[2,2],[4,2]]
 # Output: [[1,2],[2,2],[4,2]]
 #
-# Even you only have trees in a line, you need to use rope to enclose them. 
+# Even you only have trees in a line, you need to use rope to enclose them.
 # Note:
 #
 # All trees should be enclosed together.
@@ -30,6 +30,9 @@
 #     def __init__(self, a=0, b=0):
 #         self.x = a
 #         self.y = b
+
+import itertools
+
 
 # Monotone Chain Algorithm
 class Solution(object):

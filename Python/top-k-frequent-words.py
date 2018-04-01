@@ -25,7 +25,12 @@
 # Can you solve it in O(n) time with only O(k) extra space?
 
 # Quick Select Solution
+
+import collections
+import heapq
 from random import randint
+
+
 class Solution(object):
     def topKFrequent(self, words, k):
         """
@@ -37,14 +42,13 @@ class Solution(object):
         p = []
         for key, val in counts.iteritems():
             p.append((-val, key))
-        self.kthElement(p, k);
-        
+        self.kthElement(p, k)
+
         result = []
         sorted_p = sorted(p[:k])
         for i in xrange(k):
             result.append(sorted_p[i][1])
         return result
-
 
     def kthElement(self, nums, k):  # O(n) on average
         def PartitionAroundPivot(left, right, pivot_idx, nums):
@@ -55,7 +59,7 @@ class Solution(object):
                 if nums[i] < pivot_value:
                     nums[i], nums[new_pivot_idx] = nums[new_pivot_idx], nums[i]
                     new_pivot_idx += 1
-                
+
             nums[right], nums[new_pivot_idx] = nums[new_pivot_idx], nums[right]
             return new_pivot_idx
 
@@ -70,7 +74,7 @@ class Solution(object):
             else:  # new_pivot_idx < k - 1.
                 left = new_pivot_idx + 1
 
-                
+
 # Time:  O(nlogk)
 # Space: O(n)
 # Heap Solution
@@ -82,12 +86,15 @@ class Solution2(object):
         :rtype: List[str]
         """
         class MinHeapObj(object):
-            def __init__(self,val): self.val = val
+            def __init__(self,val):
+                self.val = val
             def __lt__(self,other):
                 return self.val[1] > other.val[1] if self.val[0] == other.val[0] else \
                        self.val < other.val
-            def __eq__(self,other): return self.val == other.val
-            def __str__(self): return str(self.val)
+            def __eq__(self,other):
+                return self.val == other.val
+            def __str__(self):
+                return str(self.val)
 
         counts = collections.Counter(words)
         min_heap = []

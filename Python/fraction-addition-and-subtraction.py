@@ -30,6 +30,9 @@
 # The number of given fractions will be in the range [1,10].
 # The numerator and denominator of the final result are guaranteed to be valid and in the range of 32-bit int.
 
+import re
+
+
 class Solution(object):
     def fractionAddition(self, expression):
         """

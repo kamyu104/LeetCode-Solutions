@@ -26,6 +26,9 @@
 # One employee has at most one direct leader and may have several subordinates.
 # The maximum number of employees won't exceed 2000.
 
+import collections
+
+
 """
 # Employee info
 class Employee(object):

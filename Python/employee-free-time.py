@@ -33,6 +33,9 @@
 #         self.start = s
 #         self.end = e
 
+import heapq
+
+
 class Solution(object):
     def employeeFreeTime(self, schedule):
         """

@@ -41,6 +41,9 @@
 # - letters consists of lowercase letters, and contains at least 2 unique letters.
 # - target is a lowercase letter.
 
+import bisect
+
+
 class Solution(object):
     def nextGreatestLetter(self, letters, target):
         """

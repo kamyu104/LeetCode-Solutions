@@ -1,6 +1,10 @@
 # Time:  O(n * n!)
 # Space: O(n)
 
+import collections
+import itertools
+
+
 class Solution(object):
     def generatePalindromes(self, s):
         """
@@ -11,13 +15,13 @@ class Solution(object):
         mid = ''.join(k for k, v in cnt.iteritems() if v % 2)
         chars = ''.join(k * (v / 2) for k, v in cnt.iteritems())
         return self.permuteUnique(mid, chars) if len(mid) < 2 else []
-    
+
     def permuteUnique(self, mid, nums):
         result = []
         used = [False] * len(nums)
         self.permuteUniqueRecu(mid, result, used, [], nums)
         return result
-    
+
     def permuteUniqueRecu(self, mid, result, used, cur, nums):
         if len(cur) == len(nums):
             half_palindrome = ''.join(cur)

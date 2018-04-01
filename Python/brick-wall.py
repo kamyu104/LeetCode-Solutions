@@ -15,7 +15,7 @@
 # in which case the line will obviously cross no bricks.
 #
 # Example:
-# Input: 
+# Input:
 # [[1,2,2,1],
 #  [3,1,2],
 #  [1,3,2],
@@ -29,6 +29,9 @@
 # The number of bricks in each row is in range [1,10,000].
 # The height of wall is in range [1,10,000].
 # Total number of bricks of the wall won't exceed 20,000.
+
+import collections
+
 
 class Solution(object):
     def leastBricks(self, wall):

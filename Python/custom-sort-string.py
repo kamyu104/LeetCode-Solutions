@@ -10,18 +10,21 @@
 # Return any permutation of T (as a string) that satisfies this property.
 #
 # Example :
-# Input: 
+# Input:
 # S = "cba"
 # T = "abcd"
 # Output: "cbad"
-# Explanation: 
-# "a", "b", "c" appear in S, so the order of "a", "b", "c" should be "c", "b", and "a". 
+# Explanation:
+# "a", "b", "c" appear in S, so the order of "a", "b", "c" should be "c", "b", and "a".
 # Since "d" does not appear in S, it can be at any position in T. "dcba", "cdba", "cbda" are also valid outputs.
 #
 # Note:
 # - S has length at most 26, and no character is repeated in S.
 # - T has length at most 200.
 # - S and T consist of lowercase letters only.
+
+import collections
+
 
 class Solution(object):
     def customSortString(self, S, T):

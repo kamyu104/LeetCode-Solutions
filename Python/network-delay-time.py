@@ -16,6 +16,9 @@
 # - The length of times will be in the range [1, 6000].
 # - All edges times[i] = (u, v, w) will have 1 <= u, v <= N and 1 <= w <= 100.
 
+import heapq
+
+
 # Dijkstra's algorithm
 class Solution(object):
     def networkDelayTime(self, times, N, K):
@@ -28,7 +31,7 @@ class Solution(object):
         adj = [[] for _ in xrange(N)]
         for u, v, w in times:
             adj[u-1].append((v-1, w))
-            
+
         result = 0
         lookup = set()
         min_heap = [(0, K-1)]
@@ -39,4 +42,3 @@ class Solution(object):
                 if v in lookup: continue
                 heapq.heappush(min_heap, (result+w, v))
         return result if len(lookup) == N else -1
- 

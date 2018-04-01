@@ -12,7 +12,7 @@
 # Initially, the first character of the ring is aligned at 12:00 direction.
 # You need to spell all the characters in the string key one by one
 # by rotating the ring clockwise or anticlockwise to make each character of
-# the string key aligned at 12:00 direction and then by pressing the center button. 
+# the string key aligned at 12:00 direction and then by pressing the center button.
 # At the stage of rotating the ring to spell the key character key[i]:
 # You can rotate the ring clockwise or anticlockwise one place, which counts as 1 step.
 # The final purpose of the rotation is to align one of the string ring's
@@ -26,7 +26,7 @@
 # Input: ring = "godding", key = "gd"
 # Output: 4
 # Explanation:
-#  For the first key character 'g', since it is already in place, we just need 1 step to spell this character. 
+#  For the first key character 'g', since it is already in place, we just need 1 step to spell this character.
 #  For the second key character 'd',
 #  we need to rotate the ring "godding" anticlockwise by two steps to make it become "ddinggo".
 #  Also, we need 1 more step for spelling.
@@ -35,6 +35,9 @@
 # Length of both ring and key will be in range 1 to 100.
 # There are only lowercase letters in both strings and might be some duplcate characters in both strings.
 # It's guaranteed that string key could always be spelled by rotating the string ring.
+
+import collections
+
 
 class Solution(object):
     def findRotateSteps(self, ring, key):
@@ -46,7 +49,7 @@ class Solution(object):
         lookup = collections.defaultdict(list)
         for i in xrange(len(ring)):
             lookup[ring[i]].append(i)
-        
+
         dp = [[0] * len(ring) for _ in xrange(2)]
         prev = [0]
         for i in xrange(1, len(key)+1):

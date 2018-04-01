@@ -1,4 +1,4 @@
-# Time:  O(t! / (n1! * n2! * ... nk!)), t is the total number of tickets, 
+# Time:  O(t! / (n1! * n2! * ... nk!)), t is the total number of tickets,
 #                                       ni is the number of the ticket which from is city i,
 #                                       k is the total number of cities.
 # Space: O(t)
@@ -10,7 +10,7 @@
 #
 # Note:
 # If there are multiple valid itineraries, you should return the itinerary
-# that has the smallest lexical order when read as a single string. 
+# that has the smallest lexical order when read as a single string.
 # For example, the itinerary ["JFK", "LGA"] has a smaller lexical
 # order than ["JFK", "LGB"].
 # All airports are represented by three capital letters (IATA code).
@@ -23,6 +23,9 @@
 # Return ["JFK","ATL","JFK","SFO","ATL","SFO"].
 # Another possible reconstruction is ["JFK","SFO","ATL","JFK","ATL","SFO"].
 # But it is larger in lexical order.
+
+import collections
+
 
 class Solution(object):
     def findItinerary(self, tickets):

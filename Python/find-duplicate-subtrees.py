@@ -6,7 +6,7 @@
 #
 # Two trees are duplicate if they have the same structure with same node values.
 #
-# Example 1: 
+# Example 1:
 #         1
 #        / \
 #       2   3
@@ -28,6 +28,9 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
+
+import collections
+
 
 class Solution(object):
     def findDuplicateSubtrees(self, root):
@@ -68,7 +71,7 @@ class Solution2(object):
                 result.append(node)
             lookup[s] += 1
             return s
-       
+
         lookup = collections.defaultdict(int)
         result = []
         postOrderTraversal(root, lookup, result)

@@ -30,6 +30,9 @@
 #         self.left = None
 #         self.right = None
 
+import collections
+
+
 class Solution(object):
     def findFrequentTreeSum(self, root):
         """

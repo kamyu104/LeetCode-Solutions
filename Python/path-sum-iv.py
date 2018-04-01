@@ -1,6 +1,9 @@
 # Time:  O(n)
 # Space: O(p), p is the number of paths
 
+import collections
+
+
 class Solution(object):
     def pathSum(self, nums):
         """
@@ -13,7 +16,7 @@ class Solution(object):
                 self.i = (num%100)/10 - 1
                 self.val = num%10
                 self.leaf = True
-                
+
             def isParent(self, other):
                 return self.level == other.level-1 and \
                        self.i == other.i/2

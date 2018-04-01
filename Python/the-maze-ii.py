@@ -1,6 +1,9 @@
 # Time:  O(max(r, c) * wlogw)
 # Space: O(w)
 
+import heapq
+
+
 class Solution(object):
     def shortestDistance(self, maze, start, destination):
         """
@@ -10,7 +13,7 @@ class Solution(object):
         :rtype: int
         """
         start, destination = tuple(start), tuple(destination)
-        
+
         def neighbors(maze, node):
             for dir in [(-1, 0), (0, 1), (0, -1), (1, 0)]:
                 cur_node, dist = list(node), 0
@@ -32,5 +35,5 @@ class Solution(object):
             visited.add(node)
             for neighbor_dist, neighbor in neighbors(maze, node):
                 heapq.heappush(heap, (dist+neighbor_dist, neighbor))
-            
+
         return -1

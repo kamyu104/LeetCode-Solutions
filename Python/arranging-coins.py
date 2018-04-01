@@ -30,6 +30,9 @@
 #
 # Because the 4th row is incomplete, we return 3.
 
+import math
+
+
 class Solution(object):
     def arrangeCoins(self, n):
         """

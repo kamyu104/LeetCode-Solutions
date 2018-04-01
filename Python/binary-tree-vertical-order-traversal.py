@@ -8,6 +8,9 @@
 #         self.left = None
 #         self.right = None
 
+import collections
+
+
 # BFS + hash solution.
 class Solution(object):
     def verticalOrder(self, root):

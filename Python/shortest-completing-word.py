@@ -32,6 +32,9 @@
 # - words will have a length in the range [10, 1000].
 # - Every words[i] will consist of lowercase letters, and have length in range [1, 15].
 
+import collections
+
+
 class Solution(object):
     def shortestCompletingWord(self, licensePlate, words):
         """

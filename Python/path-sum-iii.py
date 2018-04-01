@@ -5,7 +5,7 @@
 #
 # Find the number of paths that sum to a given value.
 #
-# The path does not need to start or end at the root or a leaf, 
+# The path does not need to start or end at the root or a leaf,
 # but it must go downwards (traveling only from parent nodes to child nodes).
 #
 # The tree has no more than 1,000 nodes and the values are in the range -1,000,000 to 1,000,000.
@@ -35,6 +35,9 @@
 #         self.left = None
 #         self.right = None
 
+import collections
+
+
 class Solution(object):
     def pathSum(self, root, sum):
         """
@@ -54,7 +57,7 @@ class Solution(object):
             if lookup[curr] == 0:
                 del lookup[curr]
             return result
-        
+
         lookup = collections.defaultdict(int)
         lookup[0] = 1
         return pathSumHelper(root, 0, sum, lookup)

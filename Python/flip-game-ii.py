@@ -1,6 +1,10 @@
 # Time:  O(n + c^2)
 # Space: O(c)
 
+import itertools
+import re
+
+
 # The best theory solution (DP, O(n + c^2)) could be seen here:
 # https://leetcode.com/discuss/64344/theory-matters-from-backtracking-128ms-to-dp-0m
 class Solution(object):

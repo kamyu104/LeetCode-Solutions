@@ -1,7 +1,10 @@
 # Time:  O(p^2), p is the length of the prefix
 # Space: O(p * t + s), t is the number of nodes of trie
 #                    , s is the size of the sentences
-    
+
+import collections
+
+
 class TrieNode(object):
 
     def __init__(self):
@@ -19,7 +22,7 @@ class TrieNode(object):
             cur = cur.leaves[c]
             cur.add_info(s, times)
 
-            
+
     def add_info(self, s, times):
         for p in self.infos:
             if p[1] == s:
@@ -68,7 +71,7 @@ class AutocompleteSystem(object):
                 self.__cur_node = self.__cur_node.leaves[c]
                 result = [p[1] for p in self.__cur_node.infos]
         return result
-        
+
 
 # Your AutocompleteSystem object will be instantiated and called as such:
 # obj = AutocompleteSystem(sentences, times)

@@ -16,6 +16,9 @@
 # Input: insert("app", 2), Output: Null
 # Input: sum("ap"), Output: 5
 
+import collections
+
+
 class MapSum(object):
 
     def __init__(self):
@@ -25,7 +28,7 @@ class MapSum(object):
         _trie = lambda: collections.defaultdict(_trie)
         self.__root = _trie()
 
-    
+
     def insert(self, key, val):
         """
         :type key: str
@@ -39,7 +42,7 @@ class MapSum(object):
         delta = val
         if "_end" in curr:
             delta -= curr["_end"]
-        
+
         curr = self.__root
         for c in key:
             curr = curr[c]

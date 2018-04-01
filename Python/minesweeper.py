@@ -14,32 +14,32 @@
 # If a mine ('M') is revealed, then the game is over - change it to 'X'.
 # If an empty square ('E') with no adjacent mines is revealed, then change it to revealed blank ('B')
 # and all of its adjacent unrevealed squares should be revealed recursively.
-# If an empty square ('E') with at least one adjacent mine is revealed, then change it to a digit ('1' to '8') 
+# If an empty square ('E') with at least one adjacent mine is revealed, then change it to a digit ('1' to '8')
 # representing the number of adjacent mines.
 # Return the board when no more squares will be revealed.
 #
 # Example 1:
-# Input: 
+# Input:
 # [['E', 'E', 'E', 'E', 'E'],
 #  ['E', 'E', 'M', 'E', 'E'],
 #  ['E', 'E', 'E', 'E', 'E'],
 #  ['E', 'E', 'E', 'E', 'E']]
 # Click : [3,0]
-# Output: 
+# Output:
 # [['B', '1', 'E', '1', 'B'],
 #  ['B', '1', 'M', '1', 'B'],
 #  ['B', '1', '1', '1', 'B'],
 #  ['B', 'B', 'B', 'B', 'B']]
 #
 # Example 2:
-# Input: 
+# Input:
 # [['B', '1', 'E', '1', 'B'],
 #  ['B', '1', 'M', '1', 'B'],
 #  ['B', '1', '1', '1', 'B'],
 #  ['B', 'B', 'B', 'B', 'B']]
 #
 # Click : [1,2]
-# Output: 
+# Output:
 # [['B', '1', 'E', '1', 'B'],
 #  ['B', '1', 'X', '1', 'B'],
 #  ['B', '1', '1', '1', 'B'],
@@ -50,9 +50,12 @@
 # The click position will only be an unrevealed square ('M' or 'E'),
 # which also means the input board contains at least one clickable square.
 # The input board won't be a stage when game is over (some mines have been revealed).
-# For simplicity, not mentioned rules should be ignored in this problem. 
+# For simplicity, not mentioned rules should be ignored in this problem.
 # For example, you don't need to reveal all the unrevealed mines when the game is over,
 # consider any cases that you will win the game or flag any squares.
+
+import collections
+
 
 class Solution(object):
     def updateBoard(self, board, click):
@@ -77,7 +80,7 @@ class Solution(object):
                             continue
                         if board[r][c] == 'M' or board[r][c] == 'X':
                             count += 1
-                
+
                 if count:
                     board[row][col] = chr(count + ord('0'))
                 else:
@@ -119,7 +122,7 @@ class Solution2(object):
                         continue
                     if board[r][c] == 'M' or board[r][c] == 'X':
                         count += 1
-            
+
             if count:
                 board[row][col] = chr(count + ord('0'))
             else:
@@ -135,4 +138,3 @@ class Solution2(object):
                             self.updateBoard(board, (r, c))
 
         return board
- 

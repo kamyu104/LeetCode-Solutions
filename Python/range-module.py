@@ -27,7 +27,10 @@
 # - The total number of calls to addRange in a single test case is at most 1000.
 # - The total number of calls to queryRange in a single test case is at most 5000.
 # - The total number of calls to removeRange in a single test case is at most 1000.
-                      
+
+import bisect
+
+
 class RangeModule(object):
 
     def __init__(self):

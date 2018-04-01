@@ -21,12 +21,15 @@
 # prefix, suffix have lengths in range [0, 10].
 # words[i] and prefix, suffix queries consist of lowercase letters only.
 
+import collections
+
+
 class WordFilter(object):
 
     def __init__(self, words):
         """
         :type words: List[str]
-        """   
+        """
         _trie = lambda: collections.defaultdict(_trie)
         self.__trie = _trie()
 
@@ -38,7 +41,7 @@ class WordFilter(object):
                 for j in xrange(i, 2*len(word)-1):
                     cur = cur[word[j%len(word)]]
                     cur["_weight"] = weight
-                    
+
     def f(self, prefix, suffix):
         """
         :type prefix: str
@@ -58,7 +61,7 @@ class WordFilter(object):
 #                                      m is the number of the prefix match, n is the number of the suffix match
 # Space: O(w * l)
 class Trie(object):
-    
+
     def __init__(self):
         _trie = lambda: collections.defaultdict(_trie)
         self.__trie = _trie()
@@ -89,7 +92,7 @@ class WordFilter2(object):
     def __init__(self, words):
         """
         :type words: List[str]
-        """   
+        """
         self.__prefix_trie = Trie()
         self.__suffix_trie = Trie()
         for i in reversed(xrange(len(words))):
@@ -101,7 +104,7 @@ class WordFilter2(object):
         :type prefix: str
         :type suffix: str
         :rtype: int
-        """        
+        """
         prefix_match = self.__prefix_trie.find(prefix)
         suffix_match = self.__suffix_trie.find(suffix[::-1])
         i, j = 0, 0
@@ -113,8 +116,8 @@ class WordFilter2(object):
             else:
                 j += 1
         return -1
-    
-    
+
+
 # Your WordFilter object will be instantiated and called as such:
 # obj = WordFilter(words)
 # param_1 = obj.f(prefix,suffix)

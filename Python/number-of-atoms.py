@@ -20,24 +20,24 @@
 # followed by its count (if that count is more than 1), and so on.
 #
 # Example 1:
-# Input: 
+# Input:
 # formula = "H2O"
 # Output: "H2O"
-# Explanation: 
+# Explanation:
 # The count of elements are {'H': 2, 'O': 1}.
 #
 # Example 2:
-# Input: 
+# Input:
 # formula = "Mg(OH)2"
 # Output: "H2MgO2"
-# Explanation: 
+# Explanation:
 # The count of elements are {'H': 2, 'Mg': 1, 'O': 2}.
 #
 # Example 3:
-# Input: 
+# Input:
 # formula = "K4(ON(SO3)2)2"
 # Output: "K4N2O14S4"
-# Explanation: 
+# Explanation:
 # The count of elements are {'K': 4, 'N': 2, 'O': 14, 'S': 4}.
 # Note:
 #
@@ -45,6 +45,10 @@
 # The length of formula will be in the range [1, 1000].
 # formula will only consist of letters, digits, and round parentheses,
 # and is a valid formula as defined in the problem.
+
+import collections
+import re
+
 
 class Solution(object):
     def countOfAtoms(self, formula):

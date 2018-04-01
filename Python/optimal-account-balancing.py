@@ -1,6 +1,9 @@
 # Time:  O(n * 2^n), n is the size of the debt.
 # Space: O(n * 2^n)
 
+import collections
+
+
 class Solution(object):
     def minTransfers(self, transactions):
         """
@@ -16,7 +19,7 @@ class Solution(object):
         for v in account.values():
             if v:
                 debt.append(v)
-            
+
         if not debt:
             return 0
 

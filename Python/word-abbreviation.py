@@ -1,6 +1,9 @@
 # Time:  O(n * l) ~ O(n^2 * l^2)
 # Space: O(n * l)
 
+import collections
+
+
 class Solution(object):
     def wordsAbbreviation(self, dict):
         """
@@ -9,7 +12,7 @@ class Solution(object):
         """
         def isUnique(prefix, words):
             return sum(word.startswith(prefix) for word in words) == 1
-                        
+
         def toAbbr(prefix, word):
             abbr = prefix + str(len(word) - 1 - len(prefix)) + word[-1]
             return abbr if len(abbr) < len(word) else word

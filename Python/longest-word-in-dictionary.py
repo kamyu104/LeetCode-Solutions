@@ -7,17 +7,17 @@
 #
 # If there is no answer, return the empty string.
 # Example 1:
-# Input: 
+# Input:
 # words = ["w","wo","wor","worl", "world"]
 # Output: "world"
-# Explanation: 
+# Explanation:
 # The word "world" can be built one character at a time by "w", "wo", "wor", and "worl".
 #
 # Example 2:
-# Input: 
+# Input:
 # words = ["a", "banana", "app", "appl", "ap", "apply", "apple"]
 # Output: "apple"
-# Explanation: 
+# Explanation:
 # Both "apply" and "apple" can be built from other words in the dictionary.
 # However, "apple" is lexicographically smaller than "apply".
 #
@@ -25,6 +25,9 @@
 # - All the strings in the input will only contain lowercase letters.
 # - The length of words will be in the range [1, 1000].
 # - The length of words[i] will be in the range [1, 30].
+
+import collections
+
 
 class Solution(object):
     def longestWord(self, words):

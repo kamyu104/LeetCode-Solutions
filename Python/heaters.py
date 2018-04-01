@@ -26,6 +26,9 @@
 # Explanation: The two heater was placed in the position 1 and 4. We need to use radius 1 standard,
 # then all the houses can be warmed.
 
+import bisect
+
+
 class Solution(object):
     def findRadius(self, houses, heaters):
         """
@@ -45,4 +48,3 @@ class Solution(object):
         	    curr_radius = min(curr_radius, house - heaters[smaller])
         	min_radius = max(min_radius, curr_radius)
         return min_radius
- 

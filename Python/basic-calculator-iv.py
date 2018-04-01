@@ -15,7 +15,7 @@
 #   have a leading coefficient or unary operator like "2x" or "-x".
 #
 # Expressions are evaluated in the usual order:
-# brackets first, then multiplication, then addition and subtraction. 
+# brackets first, then multiplication, then addition and subtraction.
 # For example, expression = "1 + 2 * 3" has an answer of ["7"].
 #
 # The format of the output is as follows:
@@ -26,9 +26,9 @@
 #   counting multiplicity. (For example, "a*a*b*c" has degree 4.)
 #   We write the largest degree terms of our answer first,
 #   breaking ties by lexicographic order ignoring the leading coefficient of the term.
-# - The leading coefficient of the term is placed directly to the left with an asterisk separating it 
+# - The leading coefficient of the term is placed directly to the left with an asterisk separating it
 #   from the variables (if they exist.) A leading coefficient of 1 is still printed.
-# - An example of a well formatted answer is ["-2*a*a*a", "3*a*a*b", "3*b*b", "4*a", "5*c", "-6"] 
+# - An example of a well formatted answer is ["-2*a*a*a", "3*a*a*b", "3*b*b", "4*a", "5*c", "-6"]
 # - Terms (including constant terms) with coefficient 0 are not included.
 #    For example, an expression of "0" has an output of [].
 #
@@ -52,7 +52,7 @@
 #
 # Input: expression = "((a - b) * (b - c) + (c - a)) * ((a - b) + (b - c) * (c - a))",
 # evalvars = [], evalints = []
-# Output: 
+# Output:
 # ["-1*a*a*b*b","2*a*a*b*c","-1*a*a*c*c","1*a*b*b*b","-1*a*b*b*c","-1*a*b*c*c",
 #  "1*a*c*c*c","-1*b*b*b*c","2*b*b*c*c","-1*b*c*c*c","2*a*a*b","-2*a*a*c","-2*a*b*b",
 #  "2*a*c*c","1*b*b*b","-1*b*b*c","1*b*c*c","-1*c*c*c","-1*a*a","1*a*b","1*a*c","-1*b*c"]
@@ -60,6 +60,10 @@
 # Note:
 # - expression will have length in range [1, 1000].
 # - evalvars, evalints will have equal lengths in range [0, 1000].
+
+import collections
+import itertools
+
 
 class Poly(collections.Counter):
     def __init__(self, expr=None):
@@ -94,9 +98,9 @@ class Poly(collections.Counter):
                     i += 1
                 else:
                     result.append(k2[j])
-                    j += 1   
+                    j += 1
             return result
-        
+
         result = Poly()
         for k1, v1 in self.items():
             for k2, v2 in other.items():
@@ -119,8 +123,8 @@ class Poly(collections.Counter):
         return ["*".join((str(v),) + k) \
                 for k, v in sorted(self.items(), key=lambda(k, _): (-len(k), k)) \
                 if v]
-    
-    
+
+
 class Solution(object):
     def basicCalculatorIV(self, expression, evalvars, evalints):
         """
@@ -138,7 +142,7 @@ class Solution(object):
                 operands.append(left - right)
             elif op == '*':
                 operands.append(left * right)
-             
+
         def parse(s):
             if not s:
                 return Poly()
@@ -163,6 +167,6 @@ class Solution(object):
             while operators:
                 compute(operands, operators)
             return operands[-1]
-        
+
         lookup = dict(itertools.izip(evalvars, evalints))
         return parse(expression).eval(lookup).to_list()

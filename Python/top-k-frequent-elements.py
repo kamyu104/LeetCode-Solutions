@@ -7,13 +7,22 @@
 # For example,
 # Given [1,1,1,2,2,3] and k = 2, return [1,2].
 #
-# Note: 
+# Note:
 # You may assume k is always valid,
 # 1 <= k <= number of unique elements.
 # Your algorithm's time complexity must be better
 # than O(n log n), where n is the array's size.
 
 # Bucket Sort Solution
+
+import collections
+
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
+
+
 class Solution(object):
     def topKFrequent(self, nums, k):
         """
@@ -25,7 +34,7 @@ class Solution(object):
         buckets = [[] for _ in xrange(len(nums)+1)]
         for i, count in counts.iteritems():
             buckets[count].append(i)
-            
+
         result = []
         for i in reversed(xrange(len(buckets))):
             for j in xrange(len(buckets[i])):
@@ -50,13 +59,12 @@ class Solution2(object):
         p = []
         for key, val in counts.iteritems():
             p.append((-val, key))
-        self.kthElement(p, k);
+        self.kthElement(p, k)
 
         result = []
         for i in xrange(k):
             result.append(p[i][1])
         return result
-
 
     def kthElement(self, nums, k):
         def PartitionAroundPivot(left, right, pivot_idx, nums):
@@ -67,7 +75,7 @@ class Solution2(object):
                 if nums[i] < pivot_value:
                     nums[i], nums[new_pivot_idx] = nums[new_pivot_idx], nums[i]
                     new_pivot_idx += 1
-                
+
             nums[right], nums[new_pivot_idx] = nums[new_pivot_idx], nums[right]
             return new_pivot_idx
 
@@ -81,7 +89,7 @@ class Solution2(object):
                 right = new_pivot_idx - 1
             else:  # new_pivot_idx < k - 1.
                 left = new_pivot_idx + 1
-  
+
 
 # Time:  O(nlogk)
 # Space: O(n)
@@ -93,4 +101,3 @@ class Solution3(object):
         :rtype: List[int]
         """
         return [key for key, _ in collections.Counter(nums).most_common(k)]
-
