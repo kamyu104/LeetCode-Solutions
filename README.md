@@ -212,6 +212,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 796| [Rotate String](https://leetcode.com/problems/rotate-string/) | [C++](./C++/rotate-string.cpp)  [Python](./Python/rotate-string.py) | _O(n)_ | _O(1)_ | Easy         || `KMP Algorithm` `Rabin-Karp Algorithm` |
 804| [Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/) | [C++](./C++/unique-morse-code-words.cpp)  [Python](./Python/unique-morse-code-words.py) | _O(n)_ | _O(n)_ | Easy         |||
 806| [Number of Lines To Write String](https://leetcode.com/problems/number-of-lines-to-write-string/) | [C++](./C++/number-of-lines-to-write-string.cpp)  [Python](./Python/number-of-lines-to-write-string.py) | _O(n)_ | _O(1)_ | Easy         |||
+809| [Expressive Words](https://leetcode.com/problems/expressive-words/) | [C++](./C++/expressive-words.cpp)  [Python](./Python/expressive-words.py) | _O(n + s)_ | _O(l + s)_ | Medium         |||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -381,6 +382,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 748 | [Shortest Completing Word](https://leetcode.com/problems/shortest-completing-word/) | [C++](./C++/shortest-completing-word.cpp) [Python](./Python/shortest-completing-word.py) | _O(n)_ | _O(1)_ | Easy ||
 760 | [Find Anagram Mappings](https://leetcode.com/problems/find-anagram-mappings/) | [C++](./C++/find-anagram-mappings.cpp) [Python](./Python/find-anagram-mappings.py) | _O(n)_ | _O(n)_ | Easy ||
 771 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | [C++](./C++/jewels-and-stones.cpp) [Python](./Python/jewels-and-stones.py) | _O(m + n)_ | _O(n)_ | Easy ||
+811 | [Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count/) | [C++](./C++/subdomain-visit-count.cpp) [Python](./Python/subdomain-visit-count.py) | _O(n)_ | _O(n)_ | Easy ||
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -447,6 +449,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 782 | [Transform to Chessboard](https://leetcode.com/problems/transform-to-chessboard/) | [C++](./C++/transform-to-chessboard.cpp) [Python](./Python/transform-to-chessboard.py) | _O(n^2)_ | _O(n)_ | Hard ||
 789 | [Escape The Ghosts](https://leetcode.com/problems/escape-the-ghosts/) | [C++](./C++/escape-the-ghosts.cpp) [Python](./Python/escape-the-ghosts.py) | _O(n)_ | _O(1)_ | Medium ||
 800 | [Similar RGB Color](https://leetcode.com/problems/similar-rgb-color/) | [C++](./C++/similar-rgb-color.cpp) [Python](./Python/similar-rgb-color.py) | _O(1)_ | _O(1)_ | Easy |📖||
+810 | [Chalkboard XOR Game](https://leetcode.com/problems/chalkboard-xor-game/) | [C++](./C++/chalkboard-xor-game.cpp) [Python](./Python/chalkboard-xor-game.py) | _O(1)_ | _O(1)_ | Hard |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -756,6 +759,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 799 | [Champagne Tower](https://leetcode.com/problems/champagne-tower/) | [C++](./C++/champagne-tower.cpp) [Python](./Python/champagne-tower.py) | _O(n^2)_ | _O(n)_ | Medium |||
 801 | [Minimum Swaps To Make Sequences Increasing](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/) | [C++](./C++/minimum-swaps-to-make-sequences-increasing.cpp) [Python](./Python/minimum-swaps-to-make-sequences-increasing.py) | _O(n)_ | _O(1)_ | Medium |||
 805 | [Split Array With Same Average](https://leetcode.com/problems/split-array-with-same-average/) | [C++](./C++/split-array-with-same-average.cpp) [Python](./Python/split-array-with-same-average.py) | _O(n^4)_ | _O(n^3)_ | Hard |||
+808 | [Soup Servings](https://leetcode.com/problems/soup-servings/) | [C++](./C++/soup-servings.cpp) [Python](./Python/soup-servings.py) | _O(1)_ | _O(1)_ | Medium || Memoization |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
