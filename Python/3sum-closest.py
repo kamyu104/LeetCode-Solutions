@@ -36,8 +36,3 @@ class Solution(object):
                         return target
             i += 1
         return result
-
-
-if __name__ == '__main__':
-    result = Solution().threeSumClosest([-1, 2, 1, -4], 1)
-    print(result)

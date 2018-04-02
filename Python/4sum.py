@@ -118,8 +118,3 @@ class Solution3(object):
                             if quad not in result:
                                 result.append(quad)
         return sorted(result)
-
-
-if __name__ == '__main__':
-    result = Solution().fourSum([1, 0, -1, 0, -2, 2], 0)
-    print(result)
