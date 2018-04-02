@@ -6,7 +6,8 @@
 # Find all unique quadruplets in the array which gives the sum of target.
 #
 # Note:
-# Elements in a quadruplet (a,b,c,d) must be in non-descending order. (ie, a <= b <= c <= d)
+# Elements in a quadruplet (a,b,c,d) must be in non-descending order.
+# (ie, a <= b <= c <= d)
 # The solution set must not contain duplicate quadruplets.
 # For example, given array S = {1 0 -1 0 -2 2}, and target = 0.
 #
@@ -17,6 +18,11 @@
 #
 
 import collections
+
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
 
 
 # Two pointer solution. (1356ms)
@@ -104,9 +110,10 @@ class Solution3(object):
         for i in lookup.keys():
             if target - i in lookup:
                 for x in lookup[i]:
-                    for y in lookup[target -i]:
+                    for y in lookup[target - i]:
                         [a, b], [c, d] = x, y
-                        if a is not c and a is not d and b is not c and b is not d:
+                        if a is not c and a is not d and \
+                           b is not c and b is not d:
                             quad = sorted([nums[a], nums[b], nums[c], nums[d]])
                             if quad not in result:
                                 result.append(quad)
@@ -115,4 +122,4 @@ class Solution3(object):
 
 if __name__ == '__main__':
     result = Solution().fourSum([1, 0, -1, 0, -2, 2], 0)
-    print result
+    print(result)
