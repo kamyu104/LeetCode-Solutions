@@ -31,8 +31,11 @@ class Solution(object):
             min_from_right = min(min_from_right, nums[n-1-i])
             if nums[i] < max_from_left: right = i
             if nums[n-1-i] > min_from_right: left = n-1-i
-        return right - left + 1
-    #another faster easy solution
+                
+
+# Time:  O(nlogn)
+# Space: O(n)
+class Solution2(object):
     def findUnsortedSubarray(self, nums):
         """
         :type nums: List[int]
