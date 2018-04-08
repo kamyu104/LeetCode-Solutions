@@ -15,8 +15,8 @@ public:
         }
         
         int result = 1;
-        vector<int> q({S});
-        unordered_set<int> lookup({S});
+        vector<int> q{S};
+        unordered_set<int> lookup{S};
         while (!q.empty()) {
             vector<int> next_q;
             for (const auto& stop : q) {
