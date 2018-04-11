@@ -13,6 +13,12 @@
 # n is a positive integer, which is in the range of [1, 10000].
 # All the integers in the array will be in the range of [-10000, 10000].
 
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
+
+
 class Solution(object):
     def arrayPairSum(self, nums):
         """
@@ -43,8 +49,8 @@ class Solution2(object):
         for i in xrange(0, len(nums), 2):
             result += nums[i]
         return result
-    
-    
+
+
 # Time:  O(nlogn)
 # Space: O(n)
 class Solution3(object):

@@ -1,4 +1,5 @@
-# Time:  O(nlogn), n is the number of total emails, and the max length of email is 320, p.s. {64}@{255}
+# Time:  O(nlogn), n is the number of total emails,
+#                  and the max length ofemail is 320, p.s. {64}@{255}
 # Space: O(n)
 
 # Given a list accounts, each element accounts[i] is a list of strings,
@@ -6,13 +7,16 @@
 # and the rest of the elements are emails representing emails of the account.
 #
 # Now, we would like to merge these accounts.
-# Two accounts definitely belong to the same person if there is some email that is common to both accounts.
+# Two accounts definitely belong to the same person if there is some email
+# that is common to both accounts.
 # Note that even if two accounts have the same name,
 # they may belong to different people as people could have the same name.
-# A person can have any number of accounts initially, but all of their accounts definitely have the same name.
+# A person can have any number of accounts initially, but all of their
+# accounts definitely have the same name.
 #
 # After merging the accounts, return the accounts in the following format:
-# the first element of each account is the name, and the rest of the elements are emails in sorted order.
+# the first element of each account is the name, and the rest of the elements
+# are emails in sorted order.
 # The accounts themselves can be returned in any order.
 #
 # Example 1:
@@ -21,16 +25,20 @@
 #             ["John", "johnnybravo@mail.com"],
 #             ["John", "johnsmith@mail.com", "john_newyork@mail.com"],
 #             ["Mary", "mary@mail.com"]]
-# Output: [["John", 'john00@mail.com', 'john_newyork@mail.com', 'johnsmith@mail.com'],
+# Output: [["John", 'john00@mail.com', 'john_newyork@mail.com',
+#           'johnsmith@mail.com'],
 #          ["John", "johnnybravo@mail.com"], ["Mary", "mary@mail.com"]]
 #
 # Explanation:
-# The first and third John's are the same person as they have the common email "johnsmith@mail.com".
-# The second John and Mary are different people as none of their email addresses are used by other accounts.
+# The first and third John's are the same person as they have the common
+# email "johnsmith@mail.com".
+# The second John and Mary are different people as none of their email
+# addresses are used by other accounts.
 # We could return these lists in any order,
 # for example the answer [['Mary', 'mary@mail.com'],
 #                         ['John', 'johnnybravo@mail.com'],
-#                         ['John', 'john00@mail.com', 'john_newyork@mail.com', 'johnsmith@mail.com']]
+#                         ['John', 'john00@mail.com', 'john_newyork@mail.com',
+#                          'johnsmith@mail.com']]
 # would still be accepted.
 #
 # Note:
@@ -40,6 +48,11 @@
 # The length of accounts[i][j] will be in the range [1, 30].
 
 import collections
+
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
 
 
 class UnionFind(object):
@@ -76,11 +89,13 @@ class Solution(object):
                 if account[i] not in email_to_id:
                     email_to_name[account[i]] = name
                     email_to_id[account[i]] = union_find.get_id()
-                union_find.union_set(email_to_id[account[1]], email_to_id[account[i]])
+                union_find.union_set(email_to_id[account[1]],
+                                     email_to_id[account[i]])
 
         result = collections.defaultdict(list)
         for email in email_to_name.keys():
             result[union_find.find_set(email_to_id[email])].append(email)
         for emails in result.values():
             emails.sort()
-        return [[email_to_name[emails[0]]] + emails for emails in result.values()]
+        return [[email_to_name[emails[0]]] + emails
+                for emails in result.values()]

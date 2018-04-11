@@ -50,7 +50,6 @@ class Solution(object):
 
         return "".join(result)
 
-
     # Construct the graph.
     def findEdges(self, word1, word2, in_degree, out_degree):
         str_len = min(len(word1), len(word2))
@@ -94,7 +93,6 @@ class Solution2(object):
 
         return "".join(result)
 
-
     # Construct the graph.
     def findEdges(self, word1, word2, ancestors):
         min_len = min(len(word1), len(word2))
@@ -102,7 +100,6 @@ class Solution2(object):
             if word1[i] != word2[i]:
                 ancestors[word2[i]].append(word1[i])
                 break
-
 
     # Topological sort, return whether there is a cycle.
     def topSortDFS(self, root, node, ancestors, visited, result):

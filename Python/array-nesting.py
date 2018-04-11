@@ -16,7 +16,7 @@
 # Example 1:
 # Input: A = [5,4,0,3,1,6,2]
 # Output: 4
-# Explanation: 
+# Explanation:
 # A[0] = 5, A[1] = 4, A[2] = 0, A[3] = 3, A[4] = 1, A[5] = 6, A[6] = 2.
 #
 # One of the longest S[K]:
@@ -26,6 +26,7 @@
 # The elements of A are all distinct.
 # Each element of array A is an integer within the range [0, N-1].
 
+
 class Solution(object):
     def arrayNesting(self, nums):
         """
@@ -34,13 +35,12 @@ class Solution(object):
         """
         result = 0
         for num in nums:
-            if num != None:
+            if num is not None:
                 start, count = num, 0
-                while nums[start] != None:
+                while nums[start] is not None:
                     temp = start
                     start = nums[start]
                     nums[temp] = None
                     count += 1
                 result = max(result, count)
         return result
- 

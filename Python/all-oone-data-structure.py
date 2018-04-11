@@ -3,14 +3,18 @@
 
 # Implement a data structure supporting the following operations:
 #
-# Inc(Key) - Inserts a new key with value 1. Or increments an existing key by 1.
+# Inc(Key) - Inserts a new key with value 1. Or increments an existing
+# key by 1.
 # Key is guaranteed to be a non-empty string.
 # Dec(Key) - If Key's value is 1, remove it from the data structure.
 # Otherwise decrements an existing key by 1. If the key does not exist,
 # this function does nothing. Key is guaranteed to be a non-empty string.
-# GetMaxKey() - Returns one of the keys with maximal value. If no element exists, return an empty string "".
-# GetMinKey() - Returns one of the keys with minimal value. If no element exists, return an empty string "".
+# GetMaxKey() - Returns one of the keys with maximal value. If no element
+# exists, return an empty string "".
+# GetMinKey() - Returns one of the keys with minimal value. If no element
+# exists, return an empty string "".
 # Challenge: Perform all these in O(1) time complexity.
+
 
 class Node(object):
     """
@@ -39,16 +43,16 @@ class LinkedList(object):
 
     def empty(self):
         return self.head.next is self.tail
-    
+
     def begin(self):
         return self.head.next
 
     def end(self):
         return self.tail
-    
+
     def front(self):
         return self.head.next
-    
+
     def back(self):
         return self.tail.prev
 
@@ -70,7 +74,7 @@ class AllOne(object):
         """
         if key not in self.bucket_of_key:
             self.bucket_of_key[key] = self.buckets.insert(self.buckets.begin(), Node(0, set([key])))
-            
+
         bucket, next_bucket = self.bucket_of_key[key], self.bucket_of_key[key].next
         if next_bucket is self.buckets.end() or next_bucket.value > bucket.value+1:
             next_bucket = self.buckets.insert(next_bucket, Node(bucket.value+1, set()))

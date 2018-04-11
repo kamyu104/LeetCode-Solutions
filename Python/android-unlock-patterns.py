@@ -1,6 +1,12 @@
 # Time:  O(9^2 * 2^9)
 # Space: O(9 * 2^9)
 
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
+
+
 # DP solution.
 class Solution(object):
     def numberOfPatterns(self, m, n):
@@ -44,17 +50,18 @@ class Solution(object):
                 if m <= number <= n:
                     res += dp[used][i]
 
-                x1, y1 = i / 3, i % 3
+                x1, y1 = divmod(i, 3)
                 for j in xrange(9):
                     if contain(used, j):
                         continue
-    
-                    x2, y2 = j / 3, j % 3
-                    if ((x1 == x2 and abs(y1 - y2) == 2) or \
-                        (y1 == y2 and abs(x1 - x2) == 2) or \
+
+                    x2, y2 = divmod(j, 3)
+                    if ((x1 == x2 and abs(y1 - y2) == 2) or
+                        (y1 == y2 and abs(x1 - x2) == 2) or
                         (abs(x1 - x2) == 2 and abs(y1 - y2) == 2)) and \
-                       not contain(used, convert((x1 + x2) / 2, (y1 + y2) / 2)):
-                             continue
+                       not contain(used,
+                                   convert((x1 + x2) // 2, (y1 + y2) // 2)):
+                            continue
 
                     dp[merge(used, j)][j] += dp[used][i]
 
@@ -106,17 +113,18 @@ class Solution2(object):
                 if not contain(used, i):
                     continue
 
-                x1, y1 = i / 3, i % 3
+                x1, y1 = divmod(i, 3)
                 for j in xrange(9):
                     if i == j or not contain(used, j):
                         continue
-    
-                    x2, y2 = j / 3, j % 3
-                    if ((x1 == x2 and abs(y1 - y2) == 2) or \
-                        (y1 == y2 and abs(x1 - x2) == 2) or \
+
+                    x2, y2 = divmod(j, 3)
+                    if ((x1 == x2 and abs(y1 - y2) == 2) or
+                        (y1 == y2 and abs(x1 - x2) == 2) or
                         (abs(x1 - x2) == 2 and abs(y1 - y2) == 2)) and \
-                       not contain(used, convert((x1 + x2) / 2, (y1 + y2) / 2)):
-                             continue
+                       not contain(used,
+                                   convert((x1 + x2) // 2, (y1 + y2) // 2)):
+                            continue
 
                     dp[used][i] += dp[exclude(used, i)][j]
 
@@ -153,22 +161,22 @@ class Solution_TLE(object):
             if m <= level <= n:
                 number += 1
 
-            x1, y1 = i / 3, i % 3
+            x1, y1 = divmod(i, 3)
             for j in xrange(9):
                 if contain(used, j):
                     continue
 
-                x2, y2 = j / 3, j % 3
-                if ((x1 == x2 and abs(y1 - y2) == 2) or \
-                    (y1 == y2 and abs(x1 - x2) == 2) or \
+                x2, y2 = divmod(j, 3)
+                if ((x1 == x2 and abs(y1 - y2) == 2) or
+                    (y1 == y2 and abs(x1 - x2) == 2) or
                     (abs(x1 - x2) == 2 and abs(y1 - y2) == 2)) and \
-                   not contain(used, convert((x1 + x2) / 2, (y1 + y2) / 2)):
-                         continue
+                   not contain(used,
+                               convert((x1 + x2) // 2, (y1 + y2) // 2)):
+                        continue
 
                 number += numberOfPatternsHelper(m, n, level + 1, merge(used, j), j)
-    
-            return number
 
+            return number
 
         number = 0
         # 1, 3, 7, 9
