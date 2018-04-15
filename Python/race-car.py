@@ -71,4 +71,4 @@ class Solution(object):
             for j in xrange(k-1):
                 dp[i] = min(dp[i], k+j+1 + dp[i - 2**(k-1) + 2**j])
 
-        return dp[target]
+        return dp[-1]
