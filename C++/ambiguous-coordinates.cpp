@@ -35,7 +35,7 @@ private:
                  right.back() != '0') {
                 string s;
                 s += left;
-                s += (d < n ? "." : "");
+                s += (!right.empty() ? "." : "");
                 s += right;
                 result.emplace_back(move(s));
             }
