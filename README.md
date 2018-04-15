@@ -213,6 +213,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 804| [Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/) | [C++](./C++/unique-morse-code-words.cpp)  [Python](./Python/unique-morse-code-words.py) | _O(n)_ | _O(n)_ | Easy         |||
 806| [Number of Lines To Write String](https://leetcode.com/problems/number-of-lines-to-write-string/) | [C++](./C++/number-of-lines-to-write-string.cpp)  [Python](./Python/number-of-lines-to-write-string.py) | _O(n)_ | _O(1)_ | Easy         |||
 809| [Expressive Words](https://leetcode.com/problems/expressive-words/) | [C++](./C++/expressive-words.cpp)  [Python](./Python/expressive-words.py) | _O(n + s)_ | _O(l + s)_ | Medium         |||
+816| [Ambiguous Coordinates](https://leetcode.com/problems/ambiguous-coordinates/) | [C++](./C++/ambiguous-coordinates.cpp)  [Python](./Python/ambiguous-coordinates.py) | _O(n^4)_ | _O(n)_ | Medium         |||
+819| [Most Common Word](https://leetcode.com/problems/most-common-word/) | [C++](./C++/most-common-word.cpp)  [Python](./Python/most-common-word.py) | _O(m + n)_ | _O(m + n)_ | Easy         |||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -236,6 +238,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 369| [Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/)| [C++](./C++/plus-one-linked-list.cpp) [Python](./Python/plus-one-linked-list.py) | _O(n)_       | _O(1)_         | Medium         | 📖 | Two Pointers |
 445| [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/)| [C++](./C++/add-two-numbers-ii.cpp) [Python](./Python/add-two-numbers-ii.py) | _O(m + n)_       | _O(m + n)_         | Medium         |||
 725 | [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/) | [C++](./C++/split-linked-list-in-parts.cpp) [Python](./Python/split-linked-list-in-parts.py) | _O(n + k)_ | _O(1)_ | Medium ||
+817 | [Linked List Components](https://leetcode.com/problems/linked-list-components/) | [C++](./C++/linked-list-components.cpp) [Python](./Python/linked-list-components.py) | _O(m + n)_ | _O(m)_ | Medium ||
 
 ## Stack
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -764,6 +767,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 805 | [Split Array With Same Average](https://leetcode.com/problems/split-array-with-same-average/) | [C++](./C++/split-array-with-same-average.cpp) [Python](./Python/split-array-with-same-average.py) | _O(n^4)_ | _O(n^3)_ | Hard |||
 808 | [Soup Servings](https://leetcode.com/problems/soup-servings/) | [C++](./C++/soup-servings.cpp) [Python](./Python/soup-servings.py) | _O(1)_ | _O(1)_ | Medium || Memoization |
 813 | [Largest Sum of Averages](https://leetcode.com/problems/largest-sum-of-averages/) | [C++](./C++/largest-sum-of-averages.cpp) [Python](./Python/largest-sum-of-averages.py) | _O(k * n^2)_ | _O(n)_ | Medium || |
+818 | [Race Car](https://leetcode.com/problems/race-car/) | [C++](./C++/race-car.cpp) [Python](./Python/race-car.py) | _O(nlogn)_ | _O(n)_ | Hard || |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
