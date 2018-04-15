@@ -46,8 +46,8 @@ except NameError:
 
 class Solution(object):
     def racecar(self, target):
-        dp = [0] + [float('inf')] * target
-        for i in xrange(1, target + 1):
+        dp = [0] * (target+1)
+        for i in xrange(1, target+1):
             # 2^(k-1) <= i < 2^k
             k = i.bit_length()
 
@@ -59,7 +59,7 @@ class Solution(object):
 
             # case 2. drive cross i at 2^k-1, and turn back to i
             #         seq(i) = A^k -> R -> seq(2^k-1 - i)
-            dp[i] = min(dp[i], k + 1 + dp[2**k-1 - i])
+            dp[i] = k+1 + dp[2**k-1 - i]
 
             # case 3. drive less then 2^k-1, and turn back some distance,
             #         and turn back again to make the direction is the same
