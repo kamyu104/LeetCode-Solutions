@@ -16,7 +16,7 @@ public:
                 dp[i] = min(dp[i], dp[i - (1 << (k - 1)) + (1 << j)] + k + j + 1);
             }
         }
-        return dp[target];
+        return dp.back();
     }
 
 private:
