@@ -4,15 +4,14 @@
 class Solution {
 public:
     int racecar(int target) {
-        vector<int> dp(target + 1, numeric_limits<int>::max());
-        dp[0] = 0;
+        vector<int> dp(target + 1);
         for (int i = 1; i <= target; ++i) {
             int k = bitLength(i);
             if (i == (1 << k) - 1) {
                 dp[i] = k;
                 continue;
             }
-            dp[i] = min(dp[i], dp[(1 << k) - 1 - i] + k + 1);
+            dp[i] = dp[(1 << k) - 1 - i] + k + 1;
             for (int j = 0; j < k; ++j) {
                 dp[i] = min(dp[i], dp[i - (1 << (k - 1)) + (1 << j)] + k + j + 1);
             }
