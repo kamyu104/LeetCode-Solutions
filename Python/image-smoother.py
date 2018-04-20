@@ -22,32 +22,7 @@
 # Note:
 # The value in the given matrix is in the range of [0, 255].
 # The length and width of the given matrix are in the range of [1, 150].
-
-class Solution(object):
-    def imageSmoother(self, M):
-        """
-        :type M: List[List[int]]
-        :rtype: List[List[int]]
-        """
-        def getGray(M, i, j):
-            directions = [[-1, -1], [0, -1], [1, -1], \
-                          [-1,  0], [0,  0], [1,  0], \
-                          [-1,  1], [0,  1], [1,  1]]
-        
-            total, count = 0, 0.0
-            for direction in directions:
-                ii, jj = i + direction[0], j + direction[1]
-                if 0 <= ii < len(M) and 0 <= jj < len(M[0]):
-                    total += M[ii][jj]
-                    count += 1.0
-            return int(total / count)
-
-        result = [[0 for _ in xrange(len(M[0]))] for _ in xrange(len(M))]
-        for i in xrange(len(M)):
-            for j in xrange(len(M[0])):
-                result[i][j] = getGray(M, i, j);
-        return result
-# Another solution with getGray function simplified.    
+   
 class Solution(object):
     def imageSmoother(self, M):
         """
