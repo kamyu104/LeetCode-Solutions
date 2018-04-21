@@ -2,8 +2,10 @@
 # Space: O(n)
 
 # Suppose you have N integers from 1 to N.
-# We define a beautiful arrangement as an array that is constructed by these N numbers successfully
-# if one of the following is true for the ith position (1 <= i <= N) in this array:
+# We define a beautiful arrangement as an array that is constructed by
+# these N numbers successfully
+# if one of the following is true for
+# the ith position (1 <= i <= N) in this array:
 #
 # The number at the ith position is divisible by i.
 # i is divisible by the number at the ith position.
@@ -28,21 +30,27 @@
 # Note:
 # N is a positive integer and will not exceed 15.
 
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
+
+
 class Solution(object):
     def countArrangement(self, N):
         """
         :type N: int
         :rtype: int
         """
-        def countArrangementHelper(n, arrangement):
+        def countArrangementHelper(n, arr):
             if n <= 0:
                 return 1
             count = 0
             for i in xrange(n):
-                if arrangement[i] % n == 0 or n % arrangement[i] == 0:
-                    arrangement[i], arrangement[n-1] = arrangement[n-1], arrangement[i]
-                    count += countArrangementHelper(n - 1, arrangement)
-                    arrangement[i], arrangement[n-1] = arrangement[n-1], arrangement[i]
+                if arr[i] % n == 0 or n % arr[i] == 0:
+                    arr[i], arr[n-1] = arr[n-1], arr[i]
+                    count += countArrangementHelper(n - 1, arr)
+                    arr[i], arr[n-1] = arr[n-1], arr[i]
             return count
 
         return countArrangementHelper(N, range(1, N+1))

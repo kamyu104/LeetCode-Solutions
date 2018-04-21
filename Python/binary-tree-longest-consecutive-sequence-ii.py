@@ -8,6 +8,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def longestConsecutive(self, root):
         """
@@ -36,4 +37,3 @@ class Solution(object):
         self.max_len = 0
         longestConsecutiveHelper(root)
         return self.max_len
-

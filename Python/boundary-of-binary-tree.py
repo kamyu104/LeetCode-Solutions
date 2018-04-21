@@ -8,6 +8,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def boundaryOfBinaryTree(self, root):
         """

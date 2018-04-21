@@ -22,7 +22,8 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+
+class Solution(object):
     # @param {TreeNode} root
     # @return {string[]}
     def binaryTreePaths(self, root):

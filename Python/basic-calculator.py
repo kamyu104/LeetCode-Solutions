@@ -14,6 +14,12 @@
 # "(1+(4+5+2)-3)+(6+8)" = 23
 #
 
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
+
+
 class Solution:
     # @param {string} s
     # @return {integer}
@@ -23,7 +29,7 @@ class Solution:
         for i in reversed(xrange(len(s))):
             if s[i].isdigit():
                 operand += s[i]
-                if i == 0  or not s[i-1].isdigit():
+                if i == 0 or not s[i-1].isdigit():
                     operands.append(int(operand[::-1]))
                     operand = ""
             elif s[i] == ')' or s[i] == '+' or s[i] == '-':

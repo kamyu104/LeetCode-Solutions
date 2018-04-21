@@ -10,6 +10,11 @@
 # However, you may not engage in multiple transactions at the same time
 # (ie, you must sell the stock before you buy again).
 
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
+
 
 class Solution:
     # @param prices, a list of integer
@@ -21,9 +26,5 @@ class Solution:
         return profit
 
     def maxProfit2(self, prices):
-        return sum(map(lambda x: max(prices[x + 1] - prices[x], 0), range(len(prices[:-1]))))
-
-
-if __name__ == "__main__":
-    result = Solution().maxProfit([3, 2, 1, 4, 2, 5, 6])
-    print result
+        return sum(map(lambda x: max(prices[x + 1] - prices[x], 0),
+                       xrange(len(prices[:-1]))))

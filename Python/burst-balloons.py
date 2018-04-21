@@ -29,6 +29,12 @@
 #   coins =  3*1*5      +  3*5*8    +  1*3*8      + 1*8*1   = 167
 #
 
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
+
+
 class Solution(object):
     def maxCoins(self, nums):
         """
@@ -43,9 +49,10 @@ class Solution(object):
             for left in xrange(n - k):
                 right = left + k
                 for i in xrange(left + 1, right):
-                    max_coins[left][right] = max(max_coins[left][right], \
-                           coins[left] * coins[i] * coins[right] + \
-                           max_coins[left][i] + max_coins[i][right])
+                    max_coins[left][right] = \
+                        max(max_coins[left][right],
+                            coins[left] * coins[i] * coins[right] +
+                            max_coins[left][i] +
+                            max_coins[i][right])
 
         return max_coins[0][-1]
-

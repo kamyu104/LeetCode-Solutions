@@ -1,6 +1,12 @@
 # Time:  O(m * n)
 # Space: O(m * n)
 
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
+
+
 class Solution(object):
     def maxKilledEnemies(self, grid):
         """
@@ -34,6 +40,7 @@ class Solution(object):
                     up[j] += 1
                     left += 1
                 else:
-                    result = max(result, left + up[j] + right[i][j] + down[i][j])
+                    result = max(result,
+                                 left + up[j] + right[i][j] + down[i][j])
 
         return result

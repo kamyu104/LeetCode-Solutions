@@ -2,6 +2,12 @@
 # Space: O(t)    , t is the size of trie
 
 import collections
+import functools
+
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
 
 
 class Solution(object):
@@ -14,7 +20,7 @@ class Solution(object):
         _trie = lambda: collections.defaultdict(_trie)
         trie = _trie()
         for i, word in enumerate(words):
-            reduce(dict.__getitem__, word, trie).setdefault("_end")
+            functools.reduce(dict.__getitem__, word, trie).setdefault("_end")
 
         lookup = [False] * len(S)
         for i in xrange(len(S)):
@@ -35,7 +41,7 @@ class Solution(object):
                 result.append("<b>")
             result.append(S[i])
             if lookup[i] and (i == len(S)-1 or not lookup[i+1]):
-                result.append("</b>");
+                result.append("</b>")
         return "".join(result)
 
 
@@ -61,5 +67,5 @@ class Solution2(object):
                 result.append("<b>")
             result.append(S[i])
             if lookup[i] and (i == len(S)-1 or not lookup[i+1]):
-                result.append("</b>");
+                result.append("</b>")
         return "".join(result)

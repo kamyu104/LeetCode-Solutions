@@ -1,9 +1,11 @@
 # Time:  O(n)
 # Space: O(1)
 #
-# Given a binary tree where all the right nodes are either leaf nodes with a sibling
-# (a left node that shares the same parent node) or empty, flip it upside down and
-# turn it into a tree where the original right nodes turned into left leaf nodes.
+# Given a binary tree where all the right nodes are
+# either leaf nodes with a sibling
+# (a left node that shares the same parent node) or empty,
+# flip it upside down and turn it into a tree
+# where the original right nodes turned into left leaf nodes.
 # Return the new root.
 #
 # For example:
@@ -24,14 +26,16 @@
 #    3   1
 #
 
+
 # Definition for a  binary tree node
-class TreeNode:
+class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
-class Solution:
+
+class Solution(object):
     # @param root, a tree node
     # @return root of the upside down tree
     def upsideDownBinaryTree(self, root):
@@ -47,9 +51,10 @@ class Solution:
 
         return parent
 
+
 # Time:  O(n)
 # Space: O(n)
-class Solution2:
+class Solution2(object):
     # @param root, a tree node
     # @return root of the upside down tree
     def upsideDownBinaryTree(self, root):

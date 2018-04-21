@@ -27,6 +27,12 @@
 # - 0 < prices[i] < 50000.
 # - 0 <= fee < 50000.
 
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
+
+
 class Solution(object):
     def maxProfit(self, prices, fee):
         """
@@ -39,4 +45,3 @@ class Solution(object):
             cash = max(cash, hold+prices[i]-fee)
             hold = max(hold, cash-prices[i])
         return cash
-

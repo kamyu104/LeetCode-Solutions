@@ -6,7 +6,8 @@
 # The expression string may contain open ( and closing parentheses ),
 # the plus + or minus sign -, non-negative integers and empty spaces .
 #
-# The expression string contains only non-negative integers, +, -, *, / operators ,
+# The expression string contains only non-negative integers, +, -, *, /
+# operators ,
 # open ( and closing parentheses ) and empty spaces .
 # The integer division should truncate toward zero.
 #
@@ -21,6 +22,12 @@
 #
 # Note: Do not use the eval built-in library function.
 
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
+
+
 class Solution(object):
     def calculate(self, s):
         """
@@ -32,7 +39,7 @@ class Solution(object):
         for i in reversed(xrange(len(s))):
             if s[i].isdigit():
                 operand += s[i]
-                if i == 0  or not s[i-1].isdigit():
+                if i == 0 or not s[i-1].isdigit():
                     operands.append(int(operand[::-1]))
                     operand = ""
             elif s[i] == ')' or s[i] == '*' or s[i] == '/':
@@ -63,4 +70,3 @@ class Solution(object):
             operands.append(left * right)
         elif op == '/':
             operands.append(left / right)
-

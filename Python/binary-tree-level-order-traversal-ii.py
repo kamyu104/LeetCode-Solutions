@@ -1,7 +1,8 @@
 # Time:  O(n)
 # Space: O(n)
 
-# Given a binary tree, return the bottom-up level order traversal of its nodes' values.
+# Given a binary tree, return the bottom-up level order traversal
+# of its nodes' values.
 #  (ie, from left to right, level by level from leaf to root).
 #
 # For example:
@@ -17,6 +18,7 @@
 #   [9,20],
 #   [3]
 # ]
+
 
 # Definition for a  binary tree node
 class TreeNode(object):
@@ -48,13 +50,3 @@ class Solution(object):
             result.append(vals)
 
         return result[::-1]
-
-
-if __name__ == "__main__":
-    root = TreeNode(3)
-    root.left = TreeNode(9)
-    root.right = TreeNode(20)
-    root.right.left = TreeNode(15)
-    root.right.right = TreeNode(7)
-    result = Solution().levelOrderBottom(root)
-    print result

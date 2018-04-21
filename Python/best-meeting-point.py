@@ -3,6 +3,12 @@
 
 from random import randint
 
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
+
+
 class Solution(object):
     def minTotalDistance(self, grid):
         """
@@ -14,14 +20,16 @@ class Solution(object):
         mid_x = self.findKthLargest(x, len(x) / 2 + 1)
         mid_y = self.findKthLargest(y, len(y) / 2 + 1)
 
-        return sum([abs(mid_x-i) + abs(mid_y-j) \
-                   for i, row in enumerate(grid) for j, v in enumerate(row) if v == 1])
+        return sum([abs(mid_x-i) + abs(mid_y-j)
+                   for i, row in enumerate(grid)
+                   for j, v in enumerate(row) if v == 1])
 
     def findKthLargest(self, nums, k):
         left, right = 0, len(nums) - 1
         while left <= right:
             pivot_idx = randint(left, right)
-            new_pivot_idx = self.PartitionAroundPivot(left, right, pivot_idx, nums)
+            new_pivot_idx = self.PartitionAroundPivot(left, right,
+                                                      pivot_idx, nums)
             if new_pivot_idx == k - 1:
                 return nums[new_pivot_idx]
             elif new_pivot_idx > k - 1:
@@ -35,7 +43,7 @@ class Solution(object):
         nums[pivot_idx], nums[right] = nums[right], nums[pivot_idx]
         for i in xrange(left, right):
             if nums[i] > pivot_value:
-                nums[i], nums[new_pivot_idx] =  nums[new_pivot_idx], nums[i]
+                nums[i], nums[new_pivot_idx] = nums[new_pivot_idx], nums[i]
                 new_pivot_idx += 1
 
         nums[right], nums[new_pivot_idx] = nums[new_pivot_idx], nums[right]

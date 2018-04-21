@@ -14,14 +14,16 @@
 # You should return [1, 3, 4].
 #
 
+
 # Definition for a  binary tree node
-class TreeNode:
+class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
-class Solution:
+
+class Solution(object):
     # @param root, a tree node
     # @return a list of integers
     def rightSideView(self, root):
@@ -39,10 +41,11 @@ class Solution:
         self.rightSideViewDFS(node.right, depth+1, result)
         self.rightSideViewDFS(node.left, depth+1, result)
 
+
 # BFS solution
 # Time:  O(n)
 # Space: O(n)
-class Solution2:
+class Solution2(object):
     # @param root, a tree node
     # @return a list of integers
     def rightSideView(self, root):
@@ -62,12 +65,3 @@ class Solution2:
             current = next_level
 
         return result
-
-if __name__ == "__main__":
-    root = TreeNode(1)
-    root.left = TreeNode(2)
-    root.right = TreeNode(3)
-    root.left.right = TreeNode(5)
-    root.right.right = TreeNode(4)
-    result = Solution().rightSideView(root)
-    print result

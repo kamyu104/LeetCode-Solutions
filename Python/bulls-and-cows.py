@@ -33,8 +33,9 @@ import operator
 
 
 # One pass solution.
-from collections import defaultdict
-from itertools import izip
+from collections import defaultdict, Counter
+from itertools import izip, imap
+
 
 class Solution(object):
     def getHint(self, secret, guess):
@@ -64,9 +65,6 @@ class Solution(object):
 
 
 # Two pass solution.
-from collections import Counter
-from itertools import imap
-
 class Solution2(object):
     def getHint(self, secret, guess):
         """

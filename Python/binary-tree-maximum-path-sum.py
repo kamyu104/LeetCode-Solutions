@@ -13,15 +13,19 @@
 #      2   3
 # Return 6.
 #
+
+
 # Definition for a  binary tree node
-class TreeNode:
+class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
-class Solution:
+
+class Solution(object):
     maxSum = float("-inf")
+
     # @param root, a tree node
     # @return an integer
     def maxPathSum(self, root):
@@ -35,10 +39,3 @@ class Solution:
         right = max(0, self.maxPathSumRecu(root.right))
         self.maxSum = max(self.maxSum, root.val + left + right)
         return root.val + max(left, right)
-
-if __name__ == "__main__":
-    root = TreeNode(1)
-    root.left = TreeNode(2)
-    root.right = TreeNode(3)
-    result = Solution().maxPathSum(root)
-    print result
