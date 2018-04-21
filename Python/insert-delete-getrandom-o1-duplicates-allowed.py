@@ -43,7 +43,7 @@ class RandomizedCollection(object):
         """
         self.__list = []
         self.__used = defaultdict(list)
-        
+
 
     def insert(self, val):
         """

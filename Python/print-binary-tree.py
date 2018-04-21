@@ -38,10 +38,10 @@
 #       1
 #      / \
 #     2   5
-#    / 
-#   3 
-#  / 
-# 4 
+#    /
+#   3
+#  /
+# 4
 # Output:
 #
 # [["",  "",  "", "",  "", "", "", "1", "",  "",  "",  "",  "", "", ""]
@@ -49,7 +49,7 @@
 #  ["",  "3", "", "",  "", "", "", "",  "",  "",  "",  "",  "", "", ""]
 #  ["4", "",  "", "",  "", "", "", "",  "",  "",  "",  "",  "", "", ""]]
 # Note: The height of binary tree is in the range of [1, 10].
-#   
+#
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -72,7 +72,7 @@ class Solution(object):
             if not root:
                 return 0
             return max(getHeight(root.left), getHeight(root.right)) + 1
-            
+
         def preorderTraversal(root, level, left, right, result):
             if not root:
                 return

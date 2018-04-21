@@ -29,7 +29,7 @@ class Solution:
         result, path = [], []
         self.binaryTreePathsRecu(root, path, result)
         return result
-    
+
     def binaryTreePathsRecu(self, node, path, result):
         if node is None:
             return

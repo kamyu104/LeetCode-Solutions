@@ -1,8 +1,8 @@
 # Time:  O(n * 2^n)
 # Space: O(n^2)
 
-# Given an integer array, your task is 
-# to find all the different possible increasing 
+# Given an integer array, your task is
+# to find all the different possible increasing
 # subsequences of the given array,
 # and the length of an increasing subsequence should be at least 2 .
 #

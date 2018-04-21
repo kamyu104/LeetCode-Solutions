@@ -27,5 +27,5 @@ class Solution(object):
                 result = max(result, i - lookup[count])
             else:
                 lookup[count] = i
-        
+
         return result

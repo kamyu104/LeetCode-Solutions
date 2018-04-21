@@ -1,11 +1,11 @@
 # Time:  O(nlogn) for total n addNums, O(logn) per addNum, O(1) per findMedian.
 # Space: O(n), total space
 
-# Median is the middle value in an ordered integer list. 
-# If the size of the list is even, there is no middle value. 
+# Median is the middle value in an ordered integer list.
+# If the size of the list is even, there is no middle value.
 # So the median is the mean of the two middle value.
 #
-# Examples: 
+# Examples:
 # [2,3,4] , the median is 3
 #
 # [2,3], the median is (2 + 3) / 2 = 2.5
@@ -19,7 +19,7 @@
 # add(1)
 # add(2)
 # findMedian() -> 1.5
-# add(3) 
+# add(3)
 # findMedian() -> 2
 
 # Heap solution.

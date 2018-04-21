@@ -44,7 +44,7 @@ class Solution(object):
         """
         if len(nums1) > len(nums2):
             return self.intersect(nums2, nums1)
-  
+
         lookup = collections.defaultdict(int)
         for i in nums1:
             lookup[i] += 1
@@ -102,7 +102,7 @@ class Solution(object):
             if left != len(nums2) and nums2[left] == i:
                 res += i,
                 left += 1
-        
+
         return res
 
 
@@ -120,7 +120,7 @@ class Solution(object):
         nums1.sort(), nums2.sort()  # Make sure it is sorted, doesn't count in time.
 
         res = []
-        
+
         it1, it2 = 0, 0
         while it1 < len(nums1) and it2 < len(nums2):
             if nums1[it1] < nums2[it2]:
@@ -131,7 +131,7 @@ class Solution(object):
                 res += nums1[it1],
                 it1 += 1
                 it2 += 1
-        
+
         return res
 
 
@@ -149,7 +149,7 @@ class Solution(object):
         nums1.sort(), nums2.sort()  # O(max(m, n) * log(max(m, n)))
 
         res = []
-        
+
         it1, it2 = 0, 0
         while it1 < len(nums1) and it2 < len(nums2):
             if nums1[it1] < nums2[it2]:
@@ -160,5 +160,5 @@ class Solution(object):
                 res += nums1[it1],
                 it1 += 1
                 it2 += 1
-        
+
         return res

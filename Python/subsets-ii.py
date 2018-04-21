@@ -2,13 +2,13 @@
 # Space: O(1)
 
 # Given a collection of integers that might contain duplicates, S, return all possible subsets.
-# 
+#
 # Note:
 # Elements in a subset must be in non-descending order.
 # The solution set must not contain duplicate subsets.
 # For example,
 # If S = [1,2,2], a solution is:
-# 
+#
 # [
 #   [2],
 #   [1],
@@ -49,7 +49,7 @@ class Solution2(object):
         result = []
         i, count = 0, 1 << len(nums)
         nums.sort()
-        
+
         while i < count:
             cur = []
             for j in xrange(len(nums)):
@@ -58,7 +58,7 @@ class Solution2(object):
             if cur not in result:
                 result.append(cur)
             i += 1
-            
+
         return result
 
 
@@ -73,7 +73,7 @@ class Solution3(object):
         result = []
         self.subsetsWithDupRecu(result, [], sorted(nums))
         return result
-    
+
     def subsetsWithDupRecu(self, result, cur, nums):
         if not nums:
             if cur not in result:
@@ -82,6 +82,6 @@ class Solution3(object):
             self.subsetsWithDupRecu(result, cur, nums[1:])
             self.subsetsWithDupRecu(result, cur + [nums[0]], nums[1:])
 
-   
+
 if __name__ == "__main__":
     print Solution().subsetsWithDup([1, 2, 2])

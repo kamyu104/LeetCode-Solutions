@@ -2,10 +2,10 @@
 # Space: O(k)
 
 # Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
-# 
+#
 # For example,
 # If n = 4 and k = 2, a solution is:
-# 
+#
 # [
 #   [2,4],
 #   [3,4],
@@ -36,7 +36,7 @@ class Solution(object):
                 combination.append(i)
                 i += 1
         return result
-    
+
 
 class Solution2(object):
     def combine(self, n, k):

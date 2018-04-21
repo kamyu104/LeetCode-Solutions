@@ -12,7 +12,7 @@
 # Example:
 # Input: 10
 # Output: 4
-# Explanation: 
+# Explanation:
 # There are four good numbers in the range [1, 10] : 2, 5, 6, 9.
 # Note that 1 and 10 are not good numbers, since they remain unchanged after rotating.
 #
@@ -40,11 +40,11 @@ class Solution(object):
                                  lookup)
                 lookup[i, is_prefix_equal, is_good] = result
             return lookup[i, is_prefix_equal, is_good]
-        
+
         lookup = {}
         return dp(A, 0, True, False, lookup)
-    
-    
+
+
 # Time:  O(n)
 # Space: O(n)
 class Solution2(object):
@@ -66,7 +66,7 @@ class Solution2(object):
                     if i*10+j <= N:
                         dp[i*10+j] = DIFF
         return dp.count(DIFF)
-    
+
 
 # Time:  O(nlogn) = O(n), because O(logn) = O(32) by this input
 # Space: O(logn) = O(1)
@@ -85,4 +85,4 @@ class Solution3(object):
             if diff & lookup:
                 result += 1
         return result
-        
+

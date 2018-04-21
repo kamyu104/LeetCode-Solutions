@@ -1,9 +1,9 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-# You are given an integer array nums and you have to 
-# return a new counts array. The counts array has the 
-# property where counts[i] is the number of smaller 
+# You are given an integer array nums and you have to
+# return a new counts array. The counts array has the
+# property where counts[i] is the number of smaller
 # elements to the right of nums[i].
 #
 # Example:
@@ -77,7 +77,7 @@ class Solution2(object):
                 while i < len(self.__bit):
                     self.__bit[i] += val
                     i += (i & -i)
-    
+
             def query(self, i):
                 ret = 0
                 while i > 0:
@@ -114,17 +114,17 @@ class Solution3(object):
             res[i] = bst.query(nums[i])
 
         return res
-    
+
     class BST(object):
         class BSTreeNode(object):
             def __init__(self, val):
                 self.val = val
                 self.count = 0
                 self.left = self.right = None
-    
+
         def __init__(self):
             self.root = None
-    
+
         # Insert node into BST.
         def insertNode(self, val):
             node = self.BSTreeNode(val)
@@ -147,7 +147,7 @@ class Solution3(object):
                     else:
                         curr.right = node
                         break
-    
+
         # Query the smaller count of the value.
         def query(self, val):
             count = 0
@@ -160,5 +160,5 @@ class Solution3(object):
                     count += 1 + curr.count  # Count the number of the smaller nodes.
                     curr = curr.right
                 else:  # Equal.
-                    return count + curr.count 
+                    return count + curr.count
             return 0

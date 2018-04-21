@@ -1,8 +1,8 @@
 # Time:  O(n)
 # Space: O(n)
 #
-# Given a string S, you are allowed to convert it to a palindrome 
-# by adding characters in front of it. Find and return the shortest 
+# Given a string S, you are allowed to convert it to a palindrome
+# by adding characters in front of it. Find and return the shortest
 # palindrome you can find by performing this transformation.
 #
 # For example:
@@ -32,7 +32,7 @@ class Solution(object):
 
         if not s:
             return s
-            
+
         A = s + s[::-1]
         prefix = getPrefix(A)
         i = prefix[-1]
@@ -60,7 +60,7 @@ class Solution2(object):
             return string
 
         string = preProcess(s)
-        palindrome = [0] * len(string) 
+        palindrome = [0] * len(string)
         center, right = 0, 0
         for i in xrange(1, len(string) - 1):
             i_mirror = 2 * center - i
@@ -73,8 +73,8 @@ class Solution2(object):
                 palindrome[i] += 1
 
             if i + palindrome[i] > right:
-                center, right = i, i + palindrome[i]       
-        
+                center, right = i, i + palindrome[i]
+
         max_len = 0
         for i in xrange(1, len(string) - 1):
             if i - palindrome[i] == 1:

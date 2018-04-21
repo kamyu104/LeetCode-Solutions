@@ -25,7 +25,7 @@ class Solution(object):
             left_size, left_min, left_max = 0, root.val, root.val
             if root.left is not None:
                 left_size, left_min, left_max = largestBSTSubtreeHelper(root.left)
-            
+
             right_size, right_min, right_max = 0, root.val, root.val
             if root.right is not None:
                 right_size, right_min, right_max = largestBSTSubtreeHelper(root.right)

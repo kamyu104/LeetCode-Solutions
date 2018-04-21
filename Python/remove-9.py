@@ -1,6 +1,6 @@
 # Time:  O(logn)
 # Space: O(1)
-    
+
 class Solution(object):
     def newInteger(self, n):
         """

@@ -20,7 +20,7 @@ class Solution(object):
         def union_set(x, y):
             x_root, y_root = find_set(x), find_set(y)
             set[min(x_root, y_root)] = max(x_root, y_root)
-  
+
         numbers = []
         number = 0
         directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]

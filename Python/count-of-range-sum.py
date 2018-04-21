@@ -39,7 +39,7 @@ class Solution(object):
                 while j < end and sums[j] - sums[i] <= upper:
                     j += 1
                 count += j - k
-    
+
                 # Merge the two sorted arrays into tmp.
                 while r < end and sums[r] < sums[i]:
                     tmp.append(sums[r])
@@ -80,7 +80,7 @@ class Solution2(object):
                 while j <= end and sums[j] - sums[i] <= upper:
                     j += 1
                 count += j - k
-    
+
                 # Merge the two sorted arrays into tmp.
                 while r <= end and sums[r] < sums[i]:
                     tmp.append(sums[r])

@@ -2,7 +2,7 @@
 # Space: O(1)
 #
 # Validate if a given string is numeric.
-# 
+#
 # Some examples:
 # "0" => true
 # " 0.1 " => true
@@ -39,7 +39,7 @@ class Solution(object):
                             [-1, -1, -1,  7, -1, -1],     # next states for state 6
                             [-1,  8, -1,  7, -1, -1],     # next states for state 7
                             [-1,  8, -1, -1, -1, -1]]     # next states for state 8
-        
+
         state = 0
         for char in s:
             inputType = InputType.INVALID
@@ -53,12 +53,12 @@ class Solution(object):
                 inputType = InputType.DOT
             elif char == 'e' or char == 'E':
                 inputType = InputType.EXPONENT;
-                
+
             state = transition_table[state][inputType];
-            
+
             if state == -1:
                 return False;
-        
+
         return state == 1 or state == 4 or state == 7 or state == 8
 
 
@@ -77,4 +77,4 @@ if __name__ == "__main__":
     print Solution().isNumber("abc")
     print Solution().isNumber("1 a")
     print Solution().isNumber("2e10")
-        
+

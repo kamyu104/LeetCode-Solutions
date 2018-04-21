@@ -8,7 +8,7 @@
 # such that the value of the maximum array element in that subarray is at least L and at most R.
 #
 # Example :
-# Input: 
+# Input:
 # A = [2, 1, 4, 3]
 # L = 2
 # R = 3

@@ -27,11 +27,11 @@ class Solution(object):
                     child = stack.pop()
                     while stack and child is child2(stack):
                         child = stack.pop()
-    
+
         # The forward or backward iterator.
         backward = lambda stack: stack[-1].left
         forward = lambda stack: stack[-1].right
-    
+
         # Build the stack to the closest node.
         stack = []
         while root:
@@ -39,11 +39,11 @@ class Solution(object):
             root = root.left if target < root.val else root.right
         dist = lambda node: abs(node.val - target)
         forward_stack = stack[:stack.index(min(stack, key=dist))+1]
-    
+
         # Get the stack to the next smaller node.
         backward_stack = list(forward_stack)
         nextNode(backward_stack, backward, forward)
-    
+
         # Get the closest k values by advancing the iterators of the stacks.
         result = []
         for _ in xrange(k):
@@ -74,7 +74,7 @@ class Solution2(object):
                 self.cur = self.stack.pop()
                 self.child1 = child1
                 self.child2 = child2
-        
+
             # @return an integer, the next node
             def next(self):
                 node = None
@@ -103,7 +103,7 @@ class Solution2(object):
             root = root.left if target < root.val else root.right
         dist = lambda node: abs(node.val - target) if node else float("inf")
         stack = stack[:stack.index(min(stack, key=dist))+1]
-        
+
         # The forward or backward iterator.
         backward = lambda node: node.left
         forward = lambda node: node.right

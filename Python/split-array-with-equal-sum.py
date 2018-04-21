@@ -9,7 +9,7 @@ class Solution(object):
         """
         if len(nums) < 7:
             return False
-        
+
         accumulated_sum = [0] * len(nums)
         accumulated_sum[0] = nums[0]
         for i in xrange(1, len(nums)):

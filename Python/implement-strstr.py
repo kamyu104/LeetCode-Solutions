@@ -2,7 +2,7 @@
 # Space: O(k)
 #
 # Implement strStr().
-# 
+#
 # Returns a pointer to the first occurrence of needle in haystack,
 #  or null if needle is not part of haystack.
 #
@@ -18,9 +18,9 @@ class Solution(object):
         """
         if not needle:
             return 0
-            
+
         return self.KMP(haystack, needle)
-    
+
     def KMP(self, text, pattern):
         prefix = self.getPrefix(pattern)
         j = -1
@@ -32,7 +32,7 @@ class Solution(object):
             if j == len(pattern) - 1:
                 return i - j
         return -1
-    
+
     def getPrefix(self, pattern):
         prefix = [-1] * len(pattern)
         j = -1
@@ -44,7 +44,7 @@ class Solution(object):
             prefix[i] = j
         return prefix
 
-    
+
 # Time:  O(n * k)
 # Space: O(k)
 class Solution2(object):

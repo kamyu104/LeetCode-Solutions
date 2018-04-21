@@ -1,7 +1,7 @@
 # Time:  O(n^2)
 # Space: O(n)
 
-# Given n points in the plane that are all pairwise distinct, 
+# Given n points in the plane that are all pairwise distinct,
 # a "boomerang" is a tuple of points (i, j, k) such that the distance
 # between i and j equals the distance between i and k (the order of the tuple matters).
 #
@@ -35,11 +35,11 @@ class Solution(object):
                     continue
                 dx, dy =  points[i][0] - points[j][0], points[i][1] - points[j][1]
                 group[dx**2 + dy**2] += 1
-            
+
             for _, v in group.iteritems():
                 if v > 1:
                     result += v * (v-1)
-        
+
         return result
 
     def numberOfBoomerangs2(self, points):

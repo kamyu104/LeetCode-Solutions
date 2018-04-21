@@ -27,7 +27,7 @@
 # Output: True
 # Explanation:
 # The binary representation of 10 is: 1010.
-    
+
 class Solution(object):
     def hasAlternatingBits(self, n):
         """

@@ -4,7 +4,7 @@
 # Define S = [s,n] as the string S which consists of n connected strings s.
 # For example, ["abc", 3] ="abcabcabc".
 #
-# On the other hand, we define that string s1 can be obtained from string s2 
+# On the other hand, we define that string s1 can be obtained from string s2
 # if we can remove some characters from s2 such that it becomes s1.
 # For example, “abc” can be obtained from “abdbec” based on our definition, but it can not be obtained from “acbbe”.
 #
@@ -38,7 +38,7 @@ class Solution(object):
                 if s1[i] == s2[j]:
                     j = (j + 1) % len(s2)
                     count += (j == 0)
-            
+
             if j in lookup:   # cyclic
                 i = lookup[j]
                 prefix_count = repeat_count[i]
@@ -47,5 +47,5 @@ class Solution(object):
                 return (prefix_count + pattern_count + suffix_count) / n2
             lookup[j] = k
             repeat_count[k] = count
-        
+
         return repeat_count[n1] / n2  # not cyclic iff n1 <= s2

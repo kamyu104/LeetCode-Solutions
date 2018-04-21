@@ -24,7 +24,7 @@ class Solution(object):
             return T
 
         T = preProcess(s)
-        P = [0] * len(T) 
+        P = [0] * len(T)
         center, right = 0, 0
         for i in xrange(1, len(T) - 1):
             i_mirror = 2 * center - i
@@ -37,8 +37,8 @@ class Solution(object):
                 P[i] += 1
 
             if i + P[i] > right:
-                center, right = i, i + P[i]       
-        
+                center, right = i, i + P[i]
+
         max_i = 0
         for i in xrange(1, len(T) - 1):
             if P[i] > P[max_i]:
@@ -46,6 +46,6 @@ class Solution(object):
         start = (max_i - 1 - P[max_i]) / 2
         return s[start : start + P[max_i]]
 
-    
+
 if __name__ == "__main__":
     print Solution().longestPalindrome("abb")

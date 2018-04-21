@@ -78,7 +78,7 @@ class Solution2(object):
                 number *= 10
             result -= max(number/10 - (n - prefix/10 + 1), 0)
             return result
-        
+
         def findKthNumberHelper(n, k, cur, index):
             if cur:
                 index += 1
@@ -98,5 +98,5 @@ class Solution2(object):
                 i += 1
                 cur /= 10
             return (0, index)
-        
+
         return findKthNumberHelper(n, k, 0, 0)[0]

@@ -8,7 +8,7 @@
 # Input:
 # nums = [1,3,1]
 # k = 1
-# Output: 0 
+# Output: 0
 # Explanation:
 # Here are all the pairs:
 # (1,3) -> 2

@@ -3,7 +3,7 @@
 #        query:  O(logn)
 # Space: O(n)
 
-# Given an integer array nums, find the sum of 
+# Given an integer array nums, find the sum of
 # the elements between indices i and j (i <= j), inclusive.
 #
 # The update(i, val) function modifies nums by
@@ -46,7 +46,7 @@ class NumArray(object):
         if val - self.__nums[i]:
             self.__add(i, val - self.__nums[i])
             self.__nums[i] = val
-        
+
     def sumRange(self, i, j):
         """
         sum of elements nums[i..j], inclusive.
@@ -87,21 +87,21 @@ class NumArray2(object):
         def buildHelper(nums, start, end):
             if start > end:
                 return None
-    
+
             # The root's start and end is given by build method.
             root = self._SegmentTreeNode(start, end, 0)
-    
+
             # If start equals to end, there will be no children for this node.
             if start == end:
                 root.sum = nums[start]
                 return root
-    
+
             # Left child: start=nums.left, end=(nums.left + nums.right) / 2.
             root.left = buildHelper(nums, start, (start + end) / 2)
-    
+
             # Right child: start=(nums.left + nums.right) / 2 + 1, end=nums.right.
             root.right = buildHelper(nums, (start + end) / 2 + 1, end)
-    
+
             # Update sum.
             root.sum = (root.left.sum if root.left else 0) + \
                        (root.right.sum if root.right else 0)
@@ -119,22 +119,22 @@ class NumArray2(object):
             # Out of range.
             if not root or root.start > i or root.end < i:
                 return
-    
+
             # Change the node's value with [i] to the new given value.
             if root.start == i and root.end == i:
                 root.sum = val
                 return
-    
+
             updateHelper(root.left, i, val)
             updateHelper(root.right, i, val)
-    
+
             # Update sum.
             root.sum =  (root.left.sum if root.left else 0) + \
                         (root.right.sum if root.right else 0)
         if self.__nums[i] != val:
             self.__nums[i] = val
             updateHelper(self.__root, i, val)
-        
+
     def sumRange(self, i, j):
         """
         sum of elements nums[i..j], inclusive.

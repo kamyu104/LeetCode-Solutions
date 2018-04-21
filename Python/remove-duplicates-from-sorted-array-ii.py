@@ -3,10 +3,10 @@
 #
 # Follow up for "Remove Duplicates":
 # What if duplicates are allowed at most twice?
-# 
+#
 # For example,
 # Given sorted array A = [1,1,1,2,2,3],
-# 
+#
 # Your function should return length = 5, and A is now [1,1,2,2,3].
 #
 
@@ -16,7 +16,7 @@ class Solution:
     def removeDuplicates(self, A):
         if not A:
             return 0
-        
+
         last, i, same = 0, 1, False
         while i < len(A):
             if A[last] != A[i] or not same:
@@ -24,7 +24,7 @@ class Solution:
                 last += 1
                 A[last] = A[i]
             i += 1
-            
+
         return last + 1
 
 if __name__ == "__main__":

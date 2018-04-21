@@ -18,7 +18,7 @@ class Solution(object):
         :rtype: List[str]
         """
         rows = [set(['q', 'w', 'e', 'r', 't', 'y','u', 'i', 'o', 'p']),
-                set(['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l']), 
+                set(['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l']),
                 set(['z', 'x', 'c', 'v', 'b' ,'n', 'm'])]
 
         result = []

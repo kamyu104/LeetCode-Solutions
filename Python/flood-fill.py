@@ -15,12 +15,12 @@
 # At the end, return the modified image.
 #
 # Example 1:
-# Input: 
+# Input:
 # image = [[1,1,1],[1,1,0],[1,0,1]]
 # sr = 1, sc = 1, newColor = 2
 # Output: [[2,2,2],[2,2,0],[2,0,1]]
-# Explanation: 
-# From the center of the image (with position (sr, sc) = (1, 1)), all pixels connected 
+# Explanation:
+# From the center of the image (with position (sr, sc) = (1, 1)), all pixels connected
 # by a path of the same color as the starting pixel are colored with the new color.
 # Note the bottom corner is not colored 2, because it is not 4-directionally connected
 # to the starting pixel.
@@ -46,11 +46,11 @@ class Solution(object):
                     0 <= c < len(image[0]) and \
                     image[r][c] == color):
                 return
-            
+
             image[r][c] = newColor
             for d in directions:
                 dfs(image, r+d[0], c+d[1], newColor, color)
-                    
+
         color = image[sr][sc]
         if color == newColor: return image
         dfs(image, sr, sc, newColor, color)

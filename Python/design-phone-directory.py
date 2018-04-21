@@ -28,7 +28,7 @@ class PhoneDirectory(object):
         self.__curr += 1
         self.__used[number] = True
         return number
-        
+
 
     def check(self, number):
         """
@@ -38,7 +38,7 @@ class PhoneDirectory(object):
         """
         return 0 <= number < len(self.__numbers) and \
                not self.__used[number]
-        
+
 
     def release(self, number):
         """
@@ -52,7 +52,7 @@ class PhoneDirectory(object):
         self.__used[number] = False
         self.__curr -= 1
         self.__numbers[self.__curr] = number
-        
+
 
 # Your PhoneDirectory object will be instantiated and called as such:
 # obj = PhoneDirectory(maxNumbers)

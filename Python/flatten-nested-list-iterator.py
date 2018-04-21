@@ -59,7 +59,7 @@ class NestedIterator(object):
                 self.__depth[-1][1] += 1
                 self.__depth.append([nestedList[i].getList(), 0])
         return False
- 
+
 
 # Your NestedIterator object will be instantiated and called as such:
 # i, v = NestedIterator(nestedList), []

@@ -3,7 +3,7 @@
 #
 # A linked list is given such that each node contains an additional random pointer
 # which could point to any node in the list or null.
-# 
+#
 # Return a deep copy of the list.
 #
 
@@ -25,14 +25,14 @@ class Solution:
             copied.next = current.next
             current.next = copied
             current = copied.next
-        
+
         # update random node in copied list
         current = head
         while current:
             if current.random:
                 current.next.random = current.random.next
             current = current.next.next
-        
+
         # split copied list from combined one
         dummy = RandomListNode(0)
         copied_current, current = dummy, head
@@ -50,19 +50,19 @@ class Solution2:
     def copyRandomList(self, head):
         dummy = RandomListNode(0)
         current, prev, copies = head, dummy, {}
-        
+
         while current:
             copied = RandomListNode(current.label)
             copies[current] = copied
             prev.next = copied
             prev, current = prev.next, current.next
-        
+
         current = head
         while current:
             if current.random:
                 copies[current].random = copies[current.random]
             current = current.next
-        
+
         return dummy.next
 
 

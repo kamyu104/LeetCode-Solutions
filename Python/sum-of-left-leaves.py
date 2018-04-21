@@ -34,5 +34,5 @@ class Solution(object):
                 return root.val if is_left else 0
             return sumOfLeftLeavesHelper(root.left, True) + \
                    sumOfLeftLeavesHelper(root.right, False)
-        
+
         return sumOfLeftLeavesHelper(root, False)

@@ -2,12 +2,12 @@
 # Space: O(h), h is height of binary tree
 #
 # Given a binary tree, find the maximum path sum.
-# 
+#
 # The path may start and end at any node in the tree.
-# 
+#
 # For example:
 # Given the below binary tree,
-# 
+#
 #        1
 #       / \
 #      2   3
@@ -27,7 +27,7 @@ class Solution:
     def maxPathSum(self, root):
         self.maxPathSumRecu(root)
         return self.maxSum
-    
+
     def maxPathSumRecu(self, root):
         if root is None:
             return 0
@@ -35,7 +35,7 @@ class Solution:
         right = max(0, self.maxPathSumRecu(root.right))
         self.maxSum = max(self.maxSum, root.val + left + right)
         return root.val + max(left, right)
-    
+
 if __name__ == "__main__":
     root = TreeNode(1)
     root.left = TreeNode(2)

@@ -2,11 +2,11 @@
 # Space: O(d)
 #
 # Given two words (start and end), and a dictionary, find all shortest transformation sequence(s) from start to end, such that:
-# 
+#
 # Only one letter can be changed at a time
 # Each intermediate word must exist in the dictionary
 # For example,
-# 
+#
 # Given:
 # start = "hit"
 # end = "cog"
@@ -30,13 +30,13 @@ class Solution:
     def findLadders(self, start, end, dict):
         dict.add(start)
         dict.add(end)
-        
-        result, cur, visited, found, trace = [], [start], set([start]), False, {word: [] for word in dict}  
+
+        result, cur, visited, found, trace = [], [start], set([start]), False, {word: [] for word in dict}
 
         while cur and not found:
             for word in cur:
                 visited.add(word)
-                
+
             next = set()
             for word in cur:
                 for i in xrange(len(word)):
@@ -48,18 +48,18 @@ class Solution:
                             next.add(candidate)
                             trace[candidate].append(word)
             cur = next
-            
+
         if found:
             self.backtrack(result, trace, [], end)
-        
+
         return result
-    
+
     def backtrack(self, result, trace, path, word):
         if not trace[word]:
             result.append([word] + path)
         else:
             for prev in trace[word]:
                 self.backtrack(result, trace, [word] + path, prev)
-    
+
 if __name__ == "__main__":
     print Solution().findLadders("hit", "cog", set(["hot","dot","dog","lot","log"]))

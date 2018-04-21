@@ -14,11 +14,11 @@
 #
 # Example 1:
 # Input: n = 2
-# Output: 8 
+# Output: 8
 # Explanation:
 # There are 8 records with length 2 will be regarded as rewardable:
 # "PP" , "AP", "PA", "LP", "PL", "AL", "LA", "LL"
-# Only "AA" won't be regarded as rewardable owing to more than one absent times. 
+# Only "AA" won't be regarded as rewardable owing to more than one absent times.
 # Note: The value of n won't exceed 100,000.
 
 class Solution(object):

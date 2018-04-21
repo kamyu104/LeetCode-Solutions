@@ -3,8 +3,8 @@
 
 # Given an integer matrix, find the length of the longest increasing path.
 #
-# From each cell, you can either move to four directions: left, right, up 
-# or down. You may NOT move diagonally or move outside of the boundary 
+# From each cell, you can either move to four directions: left, right, up
+# or down. You may NOT move diagonally or move outside of the boundary
 # (i.e. wrap-around is not allowed).
 #
 # Example 1:
@@ -40,7 +40,7 @@ class Solution(object):
         def longestpath(matrix, i, j, max_lengths):
             if max_lengths[i][j]:
                 return max_lengths[i][j]
-        
+
             max_depth = 0
             directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
             for d in directions:
@@ -56,5 +56,5 @@ class Solution(object):
         for i in xrange(len(matrix)):
             for j in xrange(len(matrix[0])):
                 res = max(res, longestpath(matrix, i, j, max_lengths))
-    
+
         return res

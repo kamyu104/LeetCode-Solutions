@@ -24,7 +24,7 @@
 # Output: 4
 # Explanation: Status can be: [off, on, off], [on, off, on], [off, off, off], [off, on, on].
 # Note: n and m both fit in range [0, 1000].
-    
+
 class Solution(object):
     def flipLights(self, n, m):
         """

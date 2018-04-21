@@ -25,7 +25,7 @@
 # MyCalendar.book(5, 10); // returns true
 # MyCalendar.book(25, 55); // returns true
 #
-# Explanation: 
+# Explanation:
 # The first two events can be booked.  The third event can be double booked.
 # The fourth event (5, 15) can't be booked, because it would result in a triple booking.
 # The fifth event (5, 10) can be booked, as it does not use time 10 which is already double booked.
@@ -35,7 +35,7 @@
 # Note:
 # - The number of calls to MyCalendar.book per test case will be at most 1000.
 # - In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].
-                                                       
+
 class MyCalendarTwo(object):
 
     def __init__(self):

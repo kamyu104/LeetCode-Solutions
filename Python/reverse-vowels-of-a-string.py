@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-# Write a function that takes a string as input 
+# Write a function that takes a string as input
 # and reverse only the vowels of a string.
 #
 # Example 1:

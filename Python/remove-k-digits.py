@@ -16,7 +16,7 @@
 #
 # Input: num = "10200", k = 1
 # Output: "200"
-# Explanation: Remove the leading 1 and the number is 200. 
+# Explanation: Remove the leading 1 and the number is 200.
 # Note that the output must not contain leading zeroes.
 # Example 3:
 #

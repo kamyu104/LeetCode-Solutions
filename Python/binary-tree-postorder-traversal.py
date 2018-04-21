@@ -40,7 +40,7 @@ class Solution(object):
                 node = cur.left
                 while node.right and node.right != cur:
                     node = node.right
-            
+
                 if node.right is None:
                     node.right = cur
                     cur = cur.left
@@ -48,9 +48,9 @@ class Solution(object):
                     result += self.traceBack(cur.left, node)
                     node.right = None
                     cur = cur.right
-        
+
         return result
-    
+
     def traceBack(self, frm, to):
         result, cur = [], frm
         while cur is not to:
@@ -63,7 +63,7 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(h)
-# Stack Solution 
+# Stack Solution
 class Solution2(object):
     def postorderTraversal(self, root):
         """

@@ -16,7 +16,7 @@
 #   / \
 #  1   2
 # Given tree t:
-#   4 
+#   4
 #   / \
 #  1   2
 # Return true, because t has the same structure and node values with a subtree of s.
@@ -64,5 +64,5 @@ class Solution(object):
                    (isSame(s, t) or \
                     preOrderTraverse(s.left, t) or \
                     preOrderTraverse(s.right, t))
-        
+
         return preOrderTraverse(s, t)

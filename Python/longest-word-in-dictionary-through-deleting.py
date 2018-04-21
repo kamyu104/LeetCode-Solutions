@@ -12,13 +12,13 @@
 # Input:
 # s = "abpcplea", d = ["ale","apple","monkey","plea"]
 #
-# Output: 
+# Output:
 # "apple"
 # Example 2:
 # Input:
 # s = "abpcplea", d = ["a","b","c"]
 #
-# Output: 
+# Output:
 # "a"
 # Note:
 # All the strings in the input will only contain lower-case letters.

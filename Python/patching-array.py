@@ -11,9 +11,9 @@
 # nums = [1, 3], n = 6
 # Return 1.
 #
-# Combinations of nums are [1], [3], [1,3], which form 
+# Combinations of nums are [1], [3], [1,3], which form
 # possible sums of: 1, 3, 4.
-# Now if we add/patch 2 to nums, the combinations are: 
+# Now if we add/patch 2 to nums, the combinations are:
 # [1], [2], [3], [1,3], [2,3], [1,2,3].
 # Possible sums are 1, 2, 3, 4, 5, 6, which now covers
 # the range [1, 6].

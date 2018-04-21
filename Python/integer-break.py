@@ -31,15 +31,15 @@ class Solution(object):
         #        ai <= 2 * (ai - 2)
         #      - For each aj >= 5, we can always maximize the product by:
         #        aj <= 3 * (aj - 3)
-        #  
+        #
         #     Conclusion 1:
         #      - For n >= 4, the max of the product must be in the form of
         #        3^a * 2^b, s.t. 3a + 2b = n
-        # 
+        #
         #  2. To maximize the product = 3^a * 2^b s.t. 3a + 2b = n
         #      - For each b >= 3, we can always maximize the product by:
         #        3^a * 2^b <= 3^(a+2) * 2^(b-3) s.t. 3(a+2) + 2(b-3) = n
-        # 
+        #
         #     Conclusion 2:
         #      - For n >= 4, the max of the product must be in the form of
         #        3^Q * 2^R, 0 <= R < 3 s.t. 3Q + 2R = n

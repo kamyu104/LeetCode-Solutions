@@ -1,7 +1,7 @@
 # Time:  O(n^2)
 # Space: O(n)
 
-# Given a 2D binary matrix filled with 0's and 1's, 
+# Given a 2D binary matrix filled with 0's and 1's,
 # find the largest rectangle containing all ones and return its area.
 
 # Ascending stack solution.
@@ -49,7 +49,7 @@ class Solution2(object):
         """
         if not matrix:
             return 0
-        
+
         result = 0
         m = len(matrix)
         n = len(matrix[0])
@@ -68,7 +68,7 @@ class Solution2(object):
                     H[j] = 0
                     R[j] = n
                     left = j + 1
-                    
+
             right = n
             for j in reversed(xrange(n)):
                 if matrix[i][j] == '1':
@@ -76,7 +76,7 @@ class Solution2(object):
                     result = max(result, H[j] * (R[j] - L[j]))
                 else:
                     right = j
-                    
+
         return result
 
 if __name__ == "__main__":

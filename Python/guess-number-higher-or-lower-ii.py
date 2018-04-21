@@ -26,7 +26,7 @@
 # Hint:
 #
 # The best strategy to play the game is to minimize the maximum loss
-# you could possibly face. Another strategy is to minimize the expected loss. 
+# you could possibly face. Another strategy is to minimize the expected loss.
 # Here, we are interested in the first scenario.
 # Take a small example (n = 3). What do you end up paying in the worst case?
 # Check out this article if you're still stuck.

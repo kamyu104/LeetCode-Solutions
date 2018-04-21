@@ -12,7 +12,7 @@
 # including the bounds if possible.
 #
 # Example 1:
-# Input: 
+# Input:
 # left = 1, right = 22
 # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]
 #
@@ -33,7 +33,7 @@ class Solution(object):
                     return False
                 n /= 10
             return True
-        
+
         result = []
         for num in xrange(left, right+1):
             if isDividingNumber(num):

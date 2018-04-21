@@ -9,9 +9,9 @@
 # Example 1:
 # Input: [4,2,3]
 # Output: True
-# Explanation: You could modify the first 
+# Explanation: You could modify the first
 # 4
-#  to 
+#  to
 # 1
 #  to get a non-decreasing array.
 # Example 2:
@@ -39,4 +39,4 @@ class Solution(object):
             else:
                 prev = nums[i]
         return True
- 
+

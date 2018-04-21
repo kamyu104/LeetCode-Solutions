@@ -25,7 +25,7 @@ class Solution:
                     count += 1
             self.cache[num] = count
             return count
-        
+
         for key, val in self.lookup.iteritems():
             if can_start_with_0 or key != '0':
                 if num[0] > key:
@@ -36,7 +36,7 @@ class Solution:
                 elif num[0] == key:
                     if len(num) == 2:  # num is like 12".
                         if num[-1] >= val:
-                            count += 1 
+                            count += 1
                     else:
                         if num[-1] >= val:  # num is like "102".
                             count += self.countStrobogrammaticUntil(self.getMid(num), True);

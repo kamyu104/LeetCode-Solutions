@@ -2,7 +2,7 @@
 # Space: O(n)
 #
 # Given inorder and postorder traversal of a tree, construct the binary tree.
-# 
+#
 # Note:
 # You may assume that duplicates do not exist in the tree.
 #
@@ -23,7 +23,7 @@ class Solution:
         for i, num in enumerate(inorder):
             lookup[num] = i
         return self.buildTreeRecu(lookup, postorder, inorder, len(postorder), 0, len(inorder))
-    
+
     def buildTreeRecu(self, lookup, postorder, inorder, post_end, in_start, in_end):
         if in_start == in_end:
             return None

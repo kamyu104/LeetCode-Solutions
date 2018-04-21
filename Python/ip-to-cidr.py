@@ -39,7 +39,7 @@
 # but our answer was the shortest possible.
 #
 # Also note that a representation beginning with say, "255.0.0.7/30" would be incorrect,
-# because it includes addresses like 255.0.0.4 = 11111111 00000000 00000000 00000100 
+# because it includes addresses like 255.0.0.4 = 11111111 00000000 00000000 00000100
 # that are outside the specified range.
 # Note:
 # - ip will be a valid IPv4 address.

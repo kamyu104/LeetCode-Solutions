@@ -36,4 +36,4 @@ class Solution(object):
         self.max_len = 0
         longestConsecutiveHelper(root)
         return self.max_len
- 
+

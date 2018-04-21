@@ -2,7 +2,7 @@
 # Space: O(n)
 
 # Suppose you have N integers from 1 to N.
-# We define a beautiful arrangement as an array that is constructed by these N numbers successfully 
+# We define a beautiful arrangement as an array that is constructed by these N numbers successfully
 # if one of the following is true for the ith position (1 <= i <= N) in this array:
 #
 # The number at the ith position is divisible by i.
@@ -12,7 +12,7 @@
 # Example 1:
 # Input: 2
 # Output: 2
-# Explanation: 
+# Explanation:
 #
 # The first beautiful arrangement is [1, 2]:
 #

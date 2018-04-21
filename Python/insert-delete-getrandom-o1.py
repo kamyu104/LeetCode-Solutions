@@ -45,7 +45,7 @@ class RandomizedSet(object):
         """
         self.__set = []
         self.__used = {}
-        
+
 
     def insert(self, val):
         """
@@ -60,7 +60,7 @@ class RandomizedSet(object):
         self.__used[val] = len(self.__set)-1
 
         return True
-        
+
 
     def remove(self, val):
         """

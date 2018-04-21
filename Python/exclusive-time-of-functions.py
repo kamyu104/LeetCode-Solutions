@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# Given the running logs of n functions that are executed 
+# Given the running logs of n functions that are executed
 # in a nonpreemptive single threaded CPU, find the exclusive time of these functions.
 #
 # Each function has a unique id, start from 0 to n-1.
@@ -19,7 +19,7 @@
 # Example 1:
 # Input:
 # n = 2
-# logs = 
+# logs =
 # ["0:start:0",
 #  "1:start:2",
 #  "1:end:5",
@@ -27,9 +27,9 @@
 # Output:[3, 4]
 #
 # Explanation:
-# Function 0 starts at time 0, then it executes 2 units of time and reaches the end of time 1. 
+# Function 0 starts at time 0, then it executes 2 units of time and reaches the end of time 1.
 # Now function 0 calls function 1, function 1 starts at time 2, executes 4 units of time and end at time 5.
-# Function 0 is running again at time 6, and also end at the time 6, thus executes 1 unit of time. 
+# Function 0 is running again at time 6, and also end at the time 6, thus executes 1 unit of time.
 # So function 0 totally execute 2 + 1 = 3 units of time, and function 1 totally execute 4 units of time.
 #
 # Note:

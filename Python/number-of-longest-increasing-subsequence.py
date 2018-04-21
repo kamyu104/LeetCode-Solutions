@@ -14,7 +14,7 @@
 # 5 subsequences' length is 1, so output 5.
 # Note: Length of the given array will be not exceed 2000 and the answer is guaranteed
 # to be fit in 32-bit signed int.
-    
+
 class Solution(object):
     def findNumberOfLIS(self, nums):
         """

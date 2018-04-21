@@ -20,27 +20,27 @@
 #
 # Output: 3
 #
-# Explanation: 
+# Explanation:
 # 1st move:    1     0 <-- 5    =>    1     1     4
-# 2nd move:    1 <-- 1 <-- 4    =>    2     1     3    
-# 3rd move:    2     1 <-- 3    =>    2     2     2   
+# 2nd move:    1 <-- 1 <-- 4    =>    2     1     3
+# 3rd move:    2     1 <-- 3    =>    2     2     2
 # Example2
 #
 # Input: [0,3,0]
 #
 # Output: 2
 #
-# Explanation: 
-# 1st move:    0 <-- 3     0    =>    1     2     0    
-# 2nd move:    1     2 --> 0    =>    1     1     1     
+# Explanation:
+# 1st move:    0 <-- 3     0    =>    1     2     0
+# 2nd move:    1     2 --> 0    =>    1     1     1
 # Example3
 #
 # Input: [0,2,0]
 #
 # Output: -1
 #
-# Explanation: 
-# It's impossible to make all the three washing machines have the same number of dresses. 
+# Explanation:
+# It's impossible to make all the three washing machines have the same number of dresses.
 # Note:
 # The range of n is [1, 10000].
 # The range of dresses number in a super washing machine is [0, 1e5].
@@ -54,7 +54,7 @@ class Solution(object):
         total = sum(machines)
         if total % len(machines): return -1
 
-        result, target, curr = 0, total / len(machines), 0 
+        result, target, curr = 0, total / len(machines), 0
         for n in machines:
             curr += n - target
             result = max(result, max(n - target, abs(curr)))

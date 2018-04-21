@@ -34,7 +34,7 @@ class Solution(object):
                     p[0] -= origin[0]
                     p[1] -= origin[1]
             return min(shapes)
-    
+
         islands = set()
         for i in xrange(len(grid)):
             for j in xrange(len(grid[0])):

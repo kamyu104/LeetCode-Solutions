@@ -1,9 +1,9 @@
 # Time:  O(n)
 # Space: O(n)
 
-# Given an array A, we may rotate it by a non-negative integer K 
+# Given an array A, we may rotate it by a non-negative integer K
 # so that the array becomes A[K], A[K+1], A{K+2], ... A[A.length - 1], A[0], A[1], ..., A[K-1].
-# Afterward, any entries that are less than or equal to their index are worth 1 point. 
+# Afterward, any entries that are less than or equal to their index are worth 1 point.
 #
 # For example, if we have [2, 4, 1, 3, 0], and we rotate by K = 2,
 # it becomes [1, 3, 0, 2, 4].
@@ -17,8 +17,8 @@
 # Example 1:
 # Input: [2, 3, 1, 4, 0]
 # Output: 3
-# Explanation:  
-# Scores for each K are listed below: 
+# Explanation:
+# Scores for each K are listed below:
 # K = 0,  A = [2,3,1,4,0],    score 2
 # K = 1,  A = [3,1,4,0,2],    score 3
 # K = 2,  A = [1,4,0,2,3],    score 3
@@ -35,7 +35,7 @@
 # Note:
 # - A will have length at most 20000.
 # - A[i] will be in the range [0, A.length].
-                                                                                                          
+
 class Solution(object):
     def bestRotation(self, A):
         """
@@ -49,4 +49,4 @@ class Solution(object):
         for i in xrange(1, N):
             change[i] += change[i-1]
         return change.index(max(change))
-        
+

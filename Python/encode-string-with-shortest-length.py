@@ -23,6 +23,6 @@ class Solution(object):
                     if len(dp[i][k]) + len(dp[k+1][j]) < len(dp[i][j]):
                         dp[i][j] = dp[i][k] + dp[k+1][j]
                 encoded_string = encode_substr(dp, s, i, j)
-                if len(encoded_string) < len(dp[i][j]): 
+                if len(encoded_string) < len(dp[i][j]):
                     dp[i][j] = encoded_string
         return dp[0][len(s) - 1]

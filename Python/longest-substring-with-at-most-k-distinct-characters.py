@@ -13,12 +13,12 @@ class Solution(object):
             if visited[ord(char)] == 0:
                 distinct_count += 1
             visited[ord(char)] += 1
-            
+
             while distinct_count > k:
                 visited[ord(s[start])] -= 1
                 if visited[ord(s[start])] == 0:
                     distinct_count -= 1
                 start += 1
-  
+
             longest = max(longest, i - start + 1)
         return longest

@@ -14,7 +14,7 @@ class Solution:
             return ['']
         elif k == 1:
             return ['0', '1', '8']
-        
+
         result = []
         for num in self.findStrobogrammaticRecu(n, k - 2):
             for key, val in self.lookup.iteritems():

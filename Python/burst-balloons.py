@@ -1,20 +1,20 @@
 # Time:  O(n^3)
 # Space: O(n^2)
 
-# Given n balloons, indexed from 0 to n-1. 
-# Each balloon is painted with a number on it 
-# represented by array nums. 
+# Given n balloons, indexed from 0 to n-1.
+# Each balloon is painted with a number on it
+# represented by array nums.
 # You are asked to burst all the balloons.
-# If the you burst balloon i you will get 
-# nums[left] * nums[i] * nums[right] coins. 
-# Here left and right are adjacent indices of i. 
+# If the you burst balloon i you will get
+# nums[left] * nums[i] * nums[right] coins.
+# Here left and right are adjacent indices of i.
 # After the burst, the left and right then
 # becomes adjacent.
 #
-# Find the maximum coins you can collect by 
+# Find the maximum coins you can collect by
 # bursting the balloons wisely.
 #
-# Note: 
+# Note:
 # (1) You may imagine nums[-1] = nums[n] = 1.
 #     They are not real therefore you can not burst them.
 # (2) 0 <= n <= 500, 0 <= nums[i] <= 100
@@ -38,7 +38,7 @@ class Solution(object):
         coins = [1] + [i for i in nums if i > 0] + [1]
         n = len(coins)
         max_coins = [[0 for _ in xrange(n)] for _ in xrange(n)]
-    
+
         for k in xrange(2, n):
             for left in xrange(n - k):
                 right = left + k
@@ -48,4 +48,4 @@ class Solution(object):
                            max_coins[left][i] + max_coins[i][right])
 
         return max_coins[0][-1]
-  
+

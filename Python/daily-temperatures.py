@@ -25,4 +25,4 @@ class Solution(object):
                 idx = stk.pop()
                 result[idx] = i-idx
             stk.append(i)
-        return result 
+        return result

@@ -32,12 +32,12 @@ class Solution(object):
             if w not in w2p and p not in p2w:
                 # Build mapping. Space: O(c)
                 w2p[w] = p
-                p2w[p] = w 
+                p2w[p] = w
             elif w not in w2p or w2p[w] != p:
                 # Contradict mapping.
                 return False
         return True
-    
+
     def wordCount(self, str):
         cnt = 1 if str else 0
         for c in str:
@@ -75,7 +75,7 @@ class Solution2(object):
             if w not in w2p and p not in p2w:
                 # Build mapping. Space: O(c)
                 w2p[w] = p
-                p2w[p] = w 
+                p2w[p] = w
             elif w not in w2p or w2p[w] != p:
                 # Contradict mapping.
                 return False

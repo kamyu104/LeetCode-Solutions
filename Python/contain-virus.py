@@ -11,7 +11,7 @@
 #
 # Every night, the virus spreads to all neighboring cells in all four directions unless blocked by a wall.
 # Resources are limited.
-# Each day, you can install walls around only one region -- 
+# Each day, you can install walls around only one region --
 # the affected area (continuous block of infected cells) that
 # threatens the most uninfected cells the following night.
 # There will never be a tie.
@@ -20,7 +20,7 @@
 # If not, and the world becomes fully infected, return the number of walls used.
 #
 # Example 1:
-# Input: grid = 
+# Input: grid =
 # [[0,1,0,0,0,0,0,1],
 #  [0,1,0,0,0,0,0,1],
 #  [0,0,0,0,0,0,0,1],
@@ -38,7 +38,7 @@
 # On the second day, add 5 walls to quarantine the viral region on the right. The virus is fully contained.
 #
 # Example 2:
-# Input: grid = 
+# Input: grid =
 # [[1,1,1],
 #  [1,0,1],
 #  [1,1,1]]
@@ -47,7 +47,7 @@
 # Notice that walls are only built on the shared boundary of two different cells.
 #
 # Example 3:
-# Input: grid = 
+# Input: grid =
 # [[1,1,1,0,0,0,0,0,0],
 #  [1,0,1,0,1,1,1,1,1],
 #  [1,1,1,0,0,0,0,0,0]]

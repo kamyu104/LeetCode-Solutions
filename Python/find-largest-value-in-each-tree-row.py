@@ -4,13 +4,13 @@
 # You need to find the largest value in each row of a binary tree.
 #
 # Example:
-# Input: 
+# Input:
 #
 #           1
 #          / \
 #         3   2
-#       / \   \  
-#       5   3   9 
+#       / \   \
+#       5   3   9
 #
 # Output: [1, 3, 9]
 
@@ -56,4 +56,4 @@ class Solution2(object):
             result.append(max(node.val for node in curr))
             curr = [child for node in curr for child in (node.left, node.right) if child]
         return result
- 
+

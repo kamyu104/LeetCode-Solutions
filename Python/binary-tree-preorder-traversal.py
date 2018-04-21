@@ -39,7 +39,7 @@ class Solution(object):
                 node = curr.left
                 while node.right and node.right != curr:
                     node = node.right
-            
+
                 if node.right is None:
                     result.append(curr.val)
                     node.right = curr
@@ -47,13 +47,13 @@ class Solution(object):
                 else:
                     node.right = None
                     curr = curr.right
-                
+
         return result
 
 
 # Time:  O(n)
 # Space: O(h)
-# Stack Solution     
+# Stack Solution
 class Solution2(object):
     def preorderTraversal(self, root):
         """

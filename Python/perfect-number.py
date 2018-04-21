@@ -4,7 +4,7 @@
 # We define the Perfect Number is a positive integer that is equal
 # to the sum of all its positive divisors except itself.
 #
-# Now, given an integer n, write a function that returns true 
+# Now, given an integer n, write a function that returns true
 # when it is a perfect number and false when it is not.
 # Example:
 # Input: 28
@@ -20,7 +20,7 @@ class Solution(object):
         """
         if num <= 0:
             return False
-        
+
         sqrt_num = int(num ** 0.5)
         total = sum(i+num//i for i in xrange(1, sqrt_num+1) if num%i == 0)
         if sqrt_num ** 2 == num:

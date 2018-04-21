@@ -17,27 +17,27 @@
 # Return True if and only if it is possible to escape.
 #
 # Example 1:
-# Input: 
+# Input:
 # ghosts = [[1, 0], [0, 3]]
 # target = [0, 1]
 # Output: true
-# Explanation: 
+# Explanation:
 # You can directly reach the destination (0, 1) at time 1,
 # while the ghosts located at (1, 0) or (0, 3) have no way to catch up with you.
 #
 # Example 2:
-# Input: 
+# Input:
 # ghosts = [[1, 0]]
 # target = [2, 0]
 # Output: false
-# Explanation: 
+# Explanation:
 # You need to reach the destination (2, 0), but the ghost at (1, 0) lies between you and the destination.
 # Example 3:
-# Input: 
+# Input:
 # ghosts = [[2, 0]]
 # target = [1, 0]
 # Output: false
-# Explanation: 
+# Explanation:
 # The ghost can reach the target at the same time as you.
 #
 # Note:

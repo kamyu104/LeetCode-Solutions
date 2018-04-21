@@ -22,7 +22,7 @@ class Solution(object):
         """
         if len(nums1) > len(nums2):
             return self.intersection(nums2, nums1)
-  
+
         lookup = set()
         for i in nums1:
             lookup.add(i)
@@ -75,7 +75,7 @@ class Solution2(object):
             if left != len(nums2) and nums2[left] == i:
                 res += i,
                 left = binary_search(lambda x, y: x > y, nums2, left, len(nums2), i)
-        
+
         return res
 
 
@@ -91,7 +91,7 @@ class Solution3(object):
         """
         nums1.sort(), nums2.sort()
         res = []
-        
+
         it1, it2 = 0, 0
         while it1 < len(nums1) and it2 < len(nums2):
             if nums1[it1] < nums2[it2]:
@@ -103,5 +103,5 @@ class Solution3(object):
                     res += nums1[it1],
                 it1 += 1
                 it2 += 1
-        
+
         return res

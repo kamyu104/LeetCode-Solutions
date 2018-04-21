@@ -13,7 +13,7 @@ class Solution(object):
         """
         def distance(a, b):
             return abs(a[0] - b[0]) + abs(a[1] - b[1])
-        
+
         result = 0
         d = float("inf")
         for nut in nuts:

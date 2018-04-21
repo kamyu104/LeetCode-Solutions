@@ -45,5 +45,5 @@ class Solution(object):
                 n &= n - 1
                 result += 1
             return result
-        
+
         return bitCount(K-1) % 2

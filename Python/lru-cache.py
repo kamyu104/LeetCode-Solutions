@@ -37,7 +37,7 @@ class LinkedList(object):
     def __init__(self):
         self.head = None
         self.tail = None
-    
+
     def insert(self, node):
         node.next, node.prev = None, None  # avoid dirty node
         if self.head is None:
@@ -46,7 +46,7 @@ class LinkedList(object):
             self.tail.next = node
             node.prev = self.tail
         self.tail = node
-            
+
     def delete(self, node):
         if node.prev:
             node.prev.next = node.next
@@ -65,12 +65,12 @@ class LRUCache(object):
         self.list = LinkedList()
         self.dict = {}
         self.capacity = capacity
-        
+
     def _insert(self, key, val):
         node = ListNode(key, val)
         self.list.insert(node)
         self.dict[key] = node
-        
+
 
     # @return an integer
     def get(self, key):
@@ -80,7 +80,7 @@ class LRUCache(object):
             self._insert(key, val)
             return val
         return -1
-        
+
 
     # @param key, an integer
     # @param value, an integer
@@ -92,8 +92,8 @@ class LRUCache(object):
             del self.dict[self.list.head.key]
             self.list.delete(self.list.head)
         self._insert(key, val)
- 
- 
+
+
 import collections
 class LRUCache2(object):
     def __init__(self, capacity):
@@ -115,7 +115,7 @@ class LRUCache2(object):
             self.cache.popitem(last=False)
         self.cache[key] = value
 
-        
+
 if __name__ == "__main__":
     cache = LRUCache(3)
     cache.set(1, 1)
@@ -124,4 +124,4 @@ if __name__ == "__main__":
     print cache.get(1)
     cache.set(4, 4)
     print cache.get(2)
-    
+

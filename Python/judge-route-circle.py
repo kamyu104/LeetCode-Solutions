@@ -14,7 +14,7 @@
 # Example 2:
 # Input: "LL"
 # Output: false
-    
+
 class Solution(object):
     def judgeCircle(self, moves):
         """

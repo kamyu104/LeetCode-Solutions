@@ -57,7 +57,7 @@ class Solution(object):
         if unit != "":
             res.append(unit)
         return " ".join(res)
-    
+
     def twoDigits(self, num, lookup):
         if num in lookup:
             return lookup[num]

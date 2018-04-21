@@ -12,8 +12,8 @@
 #
 # Output: ["catsdogcats","dogcatsdog","ratcatdogcat"]
 #
-# Explanation: "catsdogcats" can be concatenated by "cats", "dog" and "cats"; 
-#  "dogcatsdog" can be concatenated by "dog", "cats" and "dog"; 
+# Explanation: "catsdogcats" can be concatenated by "cats", "dog" and "cats";
+#  "dogcatsdog" can be concatenated by "dog", "cats" and "dog";
 # "ratcatdogcat" can be concatenated by "rat", "cat", "dog" and "cat".
 # Note:
 # The number of elements of the given array will not exceed 10,000
@@ -29,15 +29,15 @@ class Solution(object):
         """
         lookup = set(words)
         result = []
-        for word in words: 
+        for word in words:
             dp = [False] * (len(word)+1)
             dp[0] = True
             for i in xrange(len(word)):
                 if not dp[i]:
                     continue
-                
+
                 for j in xrange(i+1, len(word)+1):
-                    if j - i < len(word) and word[i:j] in lookup: 
+                    if j - i < len(word) and word[i:j] in lookup:
                         dp[j] = True
 
                 if dp[len(word)]:

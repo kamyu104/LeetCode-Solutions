@@ -1,33 +1,33 @@
 # Time:  O(nlogn)
 # Space: O(n)
 #
-# A city's skyline is the outer contour of the silhouette formed 
-# by all the buildings in that city when viewed from a distance. 
-# Now suppose you are given the locations and height of all the 
+# A city's skyline is the outer contour of the silhouette formed
+# by all the buildings in that city when viewed from a distance.
+# Now suppose you are given the locations and height of all the
 # buildings as shown on a cityscape photo (Figure A), write a
-# program to output the skyline formed by these buildings 
+# program to output the skyline formed by these buildings
 # collectively (Figure B).
-# 
-# The geometric information of each building is represented by a 
-# triplet of integers [Li, Ri, Hi], where Li and Ri are the x 
-# coordinates of the left and right edge of the ith building, 
-# respectively, and Hi is its height. It is guaranteed that 0 <= Li, 
-# Ri <= INT_MAX, 0 < Hi <= INT_MAX, and Ri - Li > 0. You may assume 
-# all buildings are perfect rectangles grounded on an absolutely 
+#
+# The geometric information of each building is represented by a
+# triplet of integers [Li, Ri, Hi], where Li and Ri are the x
+# coordinates of the left and right edge of the ith building,
+# respectively, and Hi is its height. It is guaranteed that 0 <= Li,
+# Ri <= INT_MAX, 0 < Hi <= INT_MAX, and Ri - Li > 0. You may assume
+# all buildings are perfect rectangles grounded on an absolutely
 # flat surface at height 0.
-# 
+#
 # Notes:
-# 
-# The number of buildings in any input list is guaranteed to be 
+#
+# The number of buildings in any input list is guaranteed to be
 # in the range [0, 10000].
-# The input list is already sorted in ascending order by the 
+# The input list is already sorted in ascending order by the
 # left x position Li.
 # The output list must be sorted by the x position.
-# There must be no consecutive horizontal lines of equal height 
-# in the output skyline. 
-# For instance, [...[2 3], [4 5], [7 5], [11 5], [12 7]...] is 
-# not acceptable; 
-# the three lines of height 5 should be merged into one 
+# There must be no consecutive horizontal lines of equal height
+# in the output skyline.
+# For instance, [...[2 3], [4 5], [7 5], [11 5], [12 7]...] is
+# not acceptable;
+# the three lines of height 5 should be merged into one
 # in the final output as such: [...[2 3], [4 5], [12 7], ...]
 #
 
@@ -38,7 +38,7 @@ class Solution:
     # @return {integer[][]}
     def getSkyline(self, buildings):
         intervals = self.ComputeSkylineInInterval(buildings, 0, len(buildings))
-        
+
         res = []
         last_end = -1
         for interval in intervals:
@@ -48,9 +48,9 @@ class Solution:
             last_end = interval[end]
         if last_end != -1:
             res.append([last_end, 0])
-            
+
         return res
-    
+
     # Divide and Conquer.
     def ComputeSkylineInInterval(self, buildings, left_endpoint, right_endpoint):
         if right_endpoint - left_endpoint <= 1:
@@ -59,12 +59,12 @@ class Solution:
         left_skyline = self.ComputeSkylineInInterval(buildings, left_endpoint, mid)
         right_skyline = self.ComputeSkylineInInterval(buildings, mid, right_endpoint)
         return self.MergeSkylines(left_skyline, right_skyline)
-    
+
     # Merge Sort.
     def MergeSkylines(self, left_skyline, right_skyline):
         i, j = 0, 0
         merged = []
-        
+
         while i < len(left_skyline) and j < len(right_skyline):
             if left_skyline[i][end] < right_skyline[j][start]:
                 merged.append(left_skyline[i])
@@ -78,12 +78,12 @@ class Solution:
             else: # left_skyline[i][start] > right_skyline[j][start].
                 j, i = self.MergeIntersectSkylines(merged, right_skyline[j], j, \
                                                    left_skyline[i], i)
-        
+
         # Insert the remaining skylines.
         merged += left_skyline[i:]
         merged += right_skyline[j:]
         return merged
-    
+
     # a[start] <= b[start]
     def MergeIntersectSkylines(self, merged, a, a_idx, b, b_idx):
         if a[end] <= b[end]:

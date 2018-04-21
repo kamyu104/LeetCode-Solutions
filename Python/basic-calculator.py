@@ -32,10 +32,10 @@ class Solution:
                 while operators[-1] != ')':
                     self.compute(operands, operators)
                 operators.pop()
-                
+
         while operators:
             self.compute(operands, operators)
-            
+
         return operands[-1]
 
     def compute(self, operands, operators):

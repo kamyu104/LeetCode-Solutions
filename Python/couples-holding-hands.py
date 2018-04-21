@@ -15,7 +15,7 @@ class Solution(object):
         for couch1, couch2 in couples:
             adj[couch1].append(couch2)
             adj[couch2].append(couch1)
-            
+
         result = 0
         for couch in xrange(N):
             if not adj[couch]: continue

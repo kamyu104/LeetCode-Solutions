@@ -2,7 +2,7 @@
 # Space: O(n)
 #
 # Given a collection of numbers that might contain duplicates, return all possible unique permutations.
-# 
+#
 # For example,
 # [1,1,2] have the following unique permutations:
 # [1,1,2], [1,2,1], and [2,1,1].
@@ -19,7 +19,7 @@ class Solution(object):
         used = [False] * len(nums)
         self.permuteUniqueRecu(result, used, [], nums)
         return result
-    
+
     def permuteUniqueRecu(self, result, used, cur, nums):
         if len(cur) == len(nums):
             result.append(cur + [])
@@ -32,13 +32,13 @@ class Solution(object):
             self.permuteUniqueRecu(result, used, cur, nums)
             cur.pop()
             used[i] = False
-                
+
 class Solution2:
     # @param num, a list of integer
     # @return a list of lists of integers
     def permuteUnique(self, nums):
         solutions = [[]]
-        
+
         for num in nums:
             next = []
             for solution in solutions:
@@ -46,9 +46,9 @@ class Solution2:
                     candidate = solution[:i] + [num] + solution[i:]
                     if candidate not in next:
                         next.append(candidate)
-                
-            solutions = next 
-            
+
+            solutions = next
+
         return solutions
 
 if __name__ == "__main__":

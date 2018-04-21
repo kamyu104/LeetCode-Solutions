@@ -20,7 +20,7 @@ class Solution(object):
             for j in reversed(xrange(N)):
                 l = 0 if (i, j) in lookup else l+1
                 dp[i][j] = min(dp[i][j], l)
-        
+
         for j in xrange(N):
             l = 0
             for i in xrange(N):

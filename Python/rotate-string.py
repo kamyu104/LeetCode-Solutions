@@ -32,7 +32,7 @@ class Solution(object):
 
         if len(A) != len(B):
             return False
-        
+
         M, p = 10**9+7, 113
         p_inv = pow(p, M-2, M)
 
@@ -98,12 +98,12 @@ class Solution2(object):
             if not needle:
                 return 0
             return KMP(haystack, needle)
-        
+
         if len(A) != len(B):
             return False
         return strStr(A*2, B) != -1
 
-    
+
 # Time:  O(n^2)
 # Space: O(n)
 class Solution3(object):

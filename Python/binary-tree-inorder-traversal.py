@@ -39,7 +39,7 @@ class Solution(object):
                 node = curr.left
                 while node.right and node.right != curr:
                     node = node.right
-            
+
                 if node.right is None:
                     node.right = curr
                     curr = curr.left
@@ -47,7 +47,7 @@ class Solution(object):
                     result.append(curr.val)
                     node.right = None
                     curr = curr.right
-                
+
         return result
 
 

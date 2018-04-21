@@ -24,7 +24,7 @@
 # readContentFromFile: Given a file path, return its content in string format.
 #
 # Example:
-# Input: 
+# Input:
 # ["FileSystem","ls","mkdir","addContentToFile","ls","readContentFromFile"]
 # [[],["/"],["/a/b/c"],["/a/b/c/d","hello"],["/"],["/a/b/c/d"]]
 # Output:
@@ -37,10 +37,10 @@
 #   users will not attempt to retrieve file content or list a directory or file that does not exist.
 # 3. You can assume that all directory names and file names only contain lower-case letters,
 #   and same names won't exist in the same directory.
-   
+
 
 class TrieNode(object):
-    
+
     def __init__(self):
         self.is_file = False
         self.children = {}
@@ -50,7 +50,7 @@ class FileSystem(object):
 
     def __init__(self):
         self.__root = TrieNode()
-        
+
 
     def ls(self, path):
         """
@@ -58,11 +58,11 @@ class FileSystem(object):
         :rtype: List[str]
         """
         curr = self.__getNode(path)
-        
+
         if curr.is_file:
             return [self.__split(path, '/')[-1]]
 
-        return sorted(curr.children.keys()) 
+        return sorted(curr.children.keys())
 
 
     def mkdir(self, path):
@@ -72,7 +72,7 @@ class FileSystem(object):
         """
         curr = self.__putNode(path)
         curr.is_file = False
-        
+
 
     def addContentToFile(self, filePath, content):
         """

@@ -21,7 +21,7 @@
 # Example:
 # Input: words = ["gin", "zen", "gig", "msg"]
 # Output: 2
-# Explanation: 
+# Explanation:
 # The transformation of each word is:
 # "gin" -> "--...-."
 # "zen" -> "--...-."

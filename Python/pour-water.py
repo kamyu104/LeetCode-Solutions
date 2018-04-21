@@ -33,7 +33,7 @@
 # #   w   #
 # ##  # ###
 # #########
-#  0123456    
+#  0123456
 #
 # When moving left or right, the water can only move to the same level or a lower level.
 # (By level, we mean the total height of the terrain plus any water in that column.)
@@ -44,7 +44,7 @@
 # #       #
 # ## w# ###
 # #########
-#  0123456    
+#  0123456
 #
 # Since moving left will not make it fall, it stays in place.  The next droplet falls:
 #
@@ -52,7 +52,7 @@
 # #   w   #
 # ## w# ###
 # #########
-#  0123456  
+#  0123456
 #
 # Since the new droplet moving left will eventually make it fall, it moves left.
 # Notice that the droplet still preferred to move left,
@@ -62,13 +62,13 @@
 # #  w    #
 # ## w# ###
 # #########
-#  0123456  
+#  0123456
 #
 # #       #
 # #       #
 # ##ww# ###
 # #########
-#  0123456  
+#  0123456
 #
 # After those steps, the third droplet falls.
 # Since moving left would not eventually make it fall, it tries to move right.
@@ -78,13 +78,13 @@
 # #   w   #
 # ##ww# ###
 # #########
-#  0123456  
+#  0123456
 #
 # #       #
 # #       #
 # ##ww#w###
 # #########
-#  0123456  
+#  0123456
 #
 # Finally, the fourth droplet falls.
 # Since moving left would not eventually make it fall, it tries to move right.
@@ -94,14 +94,14 @@
 # #   w   #
 # ##ww#w###
 # #########
-#  0123456  
+#  0123456
 #
 # The final answer is [2,2,2,3,2,2,2]:
 #
-#     #    
-#  ####### 
-#  ####### 
-#  0123456 
+#     #
+#  #######
+#  #######
+#  0123456
 #
 # Example 2:
 # Input: heights = [1,2,3,4], V = 2, K = 2

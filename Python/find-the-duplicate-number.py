@@ -55,7 +55,7 @@ class Solution2(object):
                 if num <= mid:
                     count += 1
             if count > mid:
-                right = mid - 1 
+                right = mid - 1
             else:
                 left = mid + 1
         return left

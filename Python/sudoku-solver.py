@@ -2,9 +2,9 @@
 # Space: (1)
 #
 # Write a program to solve a Sudoku puzzle by filling the empty cells.
-# 
+#
 # Empty cells are indicated by the character '.'.
-# 
+#
 # You may assume that there will be only one unique solution.
 #
 
@@ -29,7 +29,7 @@ class Solution:
                     j += 1
                 i += 1
             return True
-        
+
         def solver(board):
             for i in xrange(len(board)):
                 for j in xrange(len(board[0])):

@@ -17,7 +17,7 @@
 # Input: Array = {"10", "0001", "111001", "1", "0"}, m = 5, n = 3
 # Output: 4
 #
-# Explanation: This are totally 4 strings can be formed 
+# Explanation: This are totally 4 strings can be formed
 # by the using of 5 0s and 3 1s, which are “10,”0001”,”1”,”0”
 # Example 2:
 # Input: Array = {"10", "0", "1"}, m = 1, n = 1
@@ -42,7 +42,7 @@ class Solution(object):
                 elif c == '1':
                     one_count += 1
 
-            for i in reversed(xrange(zero_count, m+1)): 
-            	for j in reversed(xrange(one_count, n+1)): 
+            for i in reversed(xrange(zero_count, m+1)):
+            	for j in reversed(xrange(one_count, n+1)):
                     dp[i][j] = max(dp[i][j], dp[i-zero_count][j-one_count]+1)
         return dp[m][n]

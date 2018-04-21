@@ -1,8 +1,8 @@
 # Time:  O(n)
 # Space: O(1)
-# 
+#
 # Given an array of integers, every element appears three times except for one. Find that single one.
-# 
+#
 # Note:
 # Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 import collections
@@ -16,7 +16,7 @@ class Solution(object):
         for x in A:
             one, two = (~x & one) | (x & ~one & ~two), (~x & two) | (x & one)
         return one
-        
+
 class Solution2(object):
     # @param A, a list of integer
     # @return an integer

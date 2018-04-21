@@ -61,7 +61,7 @@
 # Explanation: Even though (let x 4 x) has a deeper scope, it is outside the context
 # of the final x in the add-expression.  That final x will equal 2.
 #
-# Input: (let a1 3 b2 (add a1 1) b2) 
+# Input: (let a1 3 b2 (add a1 1) b2)
 # Output 4
 # Explanation: Variable names can contain digits after the first character.
 #

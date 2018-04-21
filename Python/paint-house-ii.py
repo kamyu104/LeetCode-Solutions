@@ -23,7 +23,7 @@ class Solution2(object):
         """
         if not costs:
             return 0
-        
+
         n = len(costs)
         k = len(costs[0])
         min_cost = [costs[0], [0] * k]

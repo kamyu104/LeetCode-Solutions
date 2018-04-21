@@ -59,4 +59,4 @@ class Solution(object):
             if not union_find.union_set(*edge):
                 return edge
         return []
-        
+

@@ -1,10 +1,10 @@
 # Time:  O(9^2)
 # Space: O(9)
 
-# Determine if a Sudoku is valid, 
+# Determine if a Sudoku is valid,
 # according to: Sudoku Puzzles - The Rules.
 #
-# The Sudoku board could be partially filled, 
+# The Sudoku board could be partially filled,
 # where empty cells are filled with the character '.'.
 #
 # A partially filled sudoku which is valid.
@@ -29,7 +29,7 @@ class Solution(object):
                                                      for m in xrange(3 * i, 3 * i + 3)]):
                     return False
         return True
-    
+
     def isValidList(self, xs):
         xs = filter(lambda x: x != '.', xs)
         return len(set(xs)) == len(xs)

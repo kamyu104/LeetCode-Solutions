@@ -1,11 +1,11 @@
 # Time:  O(1)
 # Space: O(h), h is height of binary tree
-# 
+#
 # Implement an iterator over a binary search tree (BST).
 # Your iterator will be initialized with the root node of a BST.
-# 
+#
 # Calling next() will return the next smallest number in the BST.
-# 
+#
 # Note: next() and hasNext() should run in average O(1) time
 # and uses O(h) memory, where h is the height of the tree.
 #
@@ -32,19 +32,19 @@ class BSTIterator:
         while self.cur:
             self.stack.append(self.cur)
             self.cur = self.cur.left
-        
+
         self.cur = self.stack.pop()
         node = self.cur
         self.cur = self.cur.right
-        
+
         return node.val
-        
+
 if __name__ == "__main__":
     root = TreeNode(2)
     root.left = TreeNode(1)
-    
+
     # Your BSTIterator will be called like this:
     i, v = BSTIterator(root), []
     while i.hasNext(): v.append(i.next())
-    
+
     print v

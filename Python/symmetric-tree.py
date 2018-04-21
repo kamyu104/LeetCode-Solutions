@@ -1,9 +1,9 @@
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
 # Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
-# 
+#
 # For example, this binary tree is symmetric:
-# 
+#
 #     1
 #    / \
 #   2   2
@@ -36,24 +36,24 @@ class Solution:
         stack = []
         stack.append(root.left)
         stack.append(root.right)
-        
+
         while stack:
             p, q = stack.pop(), stack.pop()
-            
+
             if p is None and q is None:
                 continue
-            
+
             if p is None or q is None or p.val != q.val:
                 return False
-            
+
             stack.append(p.left)
             stack.append(q.right)
-            
+
             stack.append(p.right)
             stack.append(q.left)
-            
+
         return True
-        
+
 # Recursive solution
 class Solution2:
     # @param root, a tree node
@@ -61,9 +61,9 @@ class Solution2:
     def isSymmetric(self, root):
         if root is None:
             return True
-        
+
         return self.isSymmetricRecu(root.left, root.right)
-    
+
     def isSymmetricRecu(self, left, right):
         if left is None and right is None:
             return True
@@ -77,4 +77,4 @@ if __name__ == "__main__":
     root.left.left, root.right.right = TreeNode(3), TreeNode(3)
     root.left.right, root.right.left = TreeNode(4), TreeNode(4)
     print Solution().isSymmetric(root)
-        
+

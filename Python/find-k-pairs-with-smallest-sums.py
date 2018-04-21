@@ -24,7 +24,7 @@
 # The first 2 pairs are returned from the sequence:
 # [1,1],[1,1],[1,2],[2,1],[1,2],[2,2],[1,3],[1,3],[2,3]
 # Example 3:
-# Given nums1 = [1,2], nums2 = [3],  k = 3 
+# Given nums1 = [1,2], nums2 = [3],  k = 3
 #
 # Return: [1,3],[2,3]
 #

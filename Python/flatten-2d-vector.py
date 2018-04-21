@@ -26,7 +26,7 @@ class Vector2D:
         return self.x != len(self.vec) and self.y != len(self.vec[self.x])
 
     def adjustNextIter(self):
-        while self.x != len(self.vec) and self.y == len(self.vec[self.x]): 
+        while self.x != len(self.vec) and self.y == len(self.vec[self.x]):
             self.x += 1
             if self.x != len(self.vec):
                 self.y = 0

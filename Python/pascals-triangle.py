@@ -2,10 +2,10 @@
 # Space: O(1)
 #
 # Given numRows, generate the first numRows of Pascal's triangle.
-# 
+#
 # For example, given numRows = 5,
 # Return
-# 
+#
 # [
 #      [1],
 #     [1,1],

@@ -2,7 +2,7 @@
 # Space: O(1)
 #
 # Given a roman numeral, convert it to an integer.
-# 
+#
 # Input is guaranteed to be within the xrange from 1 to 3999.
 #
 

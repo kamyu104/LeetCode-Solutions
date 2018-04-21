@@ -1,6 +1,6 @@
-# Time:  O((a^(b+1)-a)/(a-1)) = O(a^b) , a is the size of allowed, 
+# Time:  O((a^(b+1)-a)/(a-1)) = O(a^b) , a is the size of allowed,
 #                                        b is the length of bottom
-# Space: O((a^(b+1)-a)/(a-1)) = O(a^b) 
+# Space: O((a^(b+1)-a)/(a-1)) = O(a^b)
 
 # We are stacking blocks to form a pyramid. Each block has a color which is a one letter string, like `'Z'`.
 #
@@ -55,7 +55,7 @@ class Solution(object):
                     if dfs(bottom, edges, new_bottom, idx+1, lookup):
                         return True
                 return False
-            
+
             if len(bottom) == 1:
                 return True
             if bottom in lookup:
@@ -66,7 +66,7 @@ class Solution(object):
                     return False
             new_bottom = ['A']*(len(bottom)-1)
             return dfs(bottom, edges, new_bottom, 0, lookup)
-    
+
         edges = [[[] for _ in xrange(7)] for _ in xrange(7)]
         for s in allowed:
             edges[ord(s[0])-ord('A')][ord(s[1])-ord('A')].append(ord(s[2])-ord('A'))

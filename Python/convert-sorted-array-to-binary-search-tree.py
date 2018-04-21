@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(logn)
 #
-# Given an array where elements are sorted in ascending order, 
+# Given an array where elements are sorted in ascending order,
 # convert it to a height balanced BST.
 #
 # Definition for a  binary tree node
@@ -28,7 +28,7 @@ class Solution(object):
         node.left = self.sortedArrayToBSTRecu(nums, start, mid)
         node.right = self.sortedArrayToBSTRecu(nums, mid + 1, end)
         return node
-    
+
     def perfect_tree_pivot(self, n):
         """
         Find the point to partition n keys for a perfect binary search tree
@@ -44,8 +44,8 @@ class Solution(object):
         else:
             return n - x // 2  # case 2 == n - (x//2 - 1) - 1 : the left subtree of the root
                                # has more nodes and the right subtree is perfect.
-    
-    
+
+
 if __name__ == "__main__":
     num = [1, 2, 3]
     result = Solution().sortedArrayToBST(num)

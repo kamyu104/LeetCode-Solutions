@@ -2,7 +2,7 @@
 # Space: O(n)
 #
 # Follow up for N-Queens problem.
-# 
+#
 # Now, instead outputting board configurations, return the total number of distinct solutions.
 #
 
@@ -14,7 +14,7 @@ class Solution:
         self.main_diag = [False] * (2 * n)
         self.anti_diag = [False] * (2 * n)
         return self.totalNQueensRecu([], 0, n)
-    
+
     def totalNQueensRecu(self, solution, row, n):
         if row == n:
             return 1
@@ -31,7 +31,7 @@ class Solution2:
     # @return an integer
     def totalNQueens(self, n):
         return self.totalNQueensRecu([], 0, n)
-    
+
     def totalNQueensRecu(self, solution, row, n):
         if row == n:
             return 1

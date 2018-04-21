@@ -48,7 +48,7 @@ class PeekingIterator(object):
         self.val_ = None
         self.has_next_ = iterator.hasNext()
         self.has_peeked_ = False
-        
+
 
     def peek(self):
         """

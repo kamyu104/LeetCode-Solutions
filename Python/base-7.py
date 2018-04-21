@@ -11,9 +11,11 @@
 # Output: "-10"
 # Note: The input will be in range of [-1e7, 1e7].
 
+
 class Solution(object):
     def convertToBase7(self, num):
-        if num < 0: return '-' + self.convertToBase7(-num)
+        if num < 0:
+            return '-' + self.convertToBase7(-num)
         result = ''
         while num:
             result = str(num % 7) + result
@@ -27,6 +29,8 @@ class Solution2(object):
         :type num: int
         :rtype: str
         """
-        if num < 0: return '-' + self.convertToBase7(-num)
-        if num < 7: return str(num)
+        if num < 0:
+            return '-' + self.convertToBase7(-num)
+        if num < 7:
+            return str(num)
         return self.convertToBase7(num // 7) + str(num % 7)

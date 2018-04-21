@@ -38,7 +38,7 @@
 
 # Time:  O(min(m, n)^2 * max(m, n)^2)
 # Space: O(max(m, n))
-from bisect import bisect_left, insort 
+from bisect import bisect_left, insort
 
 class Solution(object):
     def maxSumSubmatrix(self, matrix, k):
@@ -59,7 +59,7 @@ class Solution(object):
             for j in xrange(i, m):
                 for l in xrange(n):
                     sums[l] += matrix[j][l] if m == len(matrix) else matrix[l][j]
-    
+
                 # Find the max subarray no more than K.
                 accu_sum_set, accu_sum = [0], 0
                 for sum in sums:
@@ -86,7 +86,7 @@ class Solution_TLE(object):
                 self.val = val
                 self.left = None
                 self.right = None
-        
+
             def insert(self, val):  # Time: O(h) = O(logn) ~ O(n)
                 curr = self
                 while curr:
@@ -102,7 +102,7 @@ class Solution_TLE(object):
                         else:
                             curr.right = BST(val)
                             return
-        
+
             def lower_bound(self, val):  # Time: O(h) = O(logn) ~ O(n)
                 result, curr = None, self
                 while curr:
@@ -125,7 +125,7 @@ class Solution_TLE(object):
             for j in xrange(i, m):
                 for l in xrange(n):
                     sums[l] += matrix[j][l] if m == len(matrix) else matrix[l][j]
-    
+
                 # Find the max subarray no more than K.
                 accu_sum_set = BST(0)
                 accu_sum = 0

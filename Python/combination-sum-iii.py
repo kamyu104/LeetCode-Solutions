@@ -32,7 +32,7 @@ class Solution:
         result = []
         self.combinationSumRecu(result, [], 1, k, n)
         return result
-    
+
     def combinationSumRecu(self, result, intermediate, start, k, target):
         if k == 0 and target == 0:
             result.append(list(intermediate))

@@ -1,16 +1,16 @@
 # Time:  O(n)
 # Space: O(n)
 
-# Given an unsorted array, find the maximum difference between 
-# 
+# Given an unsorted array, find the maximum difference between
+#
 # the successive elements in its sorted form.
-# 
+#
 # Try to solve it in linear time/space.
-# 
+#
 # Return 0 if the array contains less than 2 elements.
-# 
+#
 # You may assume all elements in the array are non-negative integers
-# 
+#
 #  and fit in the 32-bit signed integer range.
 
 # bucket sort
@@ -24,7 +24,7 @@ class Solution(object):
         """
         if len(nums) < 2:
             return 0
-        
+
         # Init bucket.
         max_val, min_val = max(nums), min(nums)
         gap = max(1, (max_val - min_val) / (len(nums) - 1))
@@ -36,11 +36,11 @@ class Solution(object):
         for n in nums:
             # min_val / max_val is in the first / last bucket.
             if n in (max_val, min_val):
-                continue      
+                continue
             i = (n - min_val) / gap
             bucket[i]['min'] = min(bucket[i]['min'], n)
             bucket[i]['max'] = max(bucket[i]['max'], n)
-        
+
         # Count each bucket gap between the first and the last bucket.
         max_gap, pre_bucket_max = 0, min_val
         for i in xrange(bucket_size):
@@ -51,8 +51,8 @@ class Solution(object):
             max_gap = max(max_gap, bucket[i]['min'] - pre_bucket_max)
             pre_bucket_max = bucket[i]['max']
         # Count the last bucket.
-        max_gap = max(max_gap, max_val - pre_bucket_max) 
-        
+        max_gap = max(max_gap, max_val - pre_bucket_max)
+
         return max_gap
 
 
@@ -67,11 +67,11 @@ class Solution2(object):
 
         if len(nums) < 2:
             return 0
-            
+
         nums.sort()
         pre = nums[0]
         max_gap = float("-inf")
-        
+
         for i in nums:
             max_gap = max(max_gap, i - pre)
             pre = i

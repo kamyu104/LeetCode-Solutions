@@ -49,9 +49,9 @@ class Solution(object):
             else:
                 n /= 2
             result += 1
-        
+
         return result
-            
+
 
 # Time:  O(logn)
 # Space: O(logn)
@@ -70,4 +70,4 @@ class Solution2(object):
             return self.integerReplacement((n - 1) / 4) + 3
         else:
             return self.integerReplacement((n + 1) / 4) + 3
-  
+

@@ -17,11 +17,11 @@
 # Example 2:
 # Input: "aba"
 # Output: 2
-# Explanation: Print "aaa" first and then print "b" from 
+# Explanation: Print "aaa" first and then print "b" from
 # the second place of the string, which will cover the existing character 'a'.
 #
 # Hint: Length of the given string will not exceed 100.
-    
+
 class Solution(object):
     def strangePrinter(self, s):
         """

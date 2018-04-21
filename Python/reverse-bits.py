@@ -29,6 +29,6 @@ class Solution:
         else:
             string = string[:2] + string[2:].zfill(32)[::-1]
         return int(string, 2)
-            
+
 if __name__ == '__main__':
   print Solution().reverseBits(1)

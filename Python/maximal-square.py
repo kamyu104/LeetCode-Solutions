@@ -1,7 +1,7 @@
 # Time:  O(n^2)
 # Space: O(n)
 #
-# Given a 2D binary matrix filled with 0's and 1's, 
+# Given a 2D binary matrix filled with 0's and 1's,
 # find the largest square containing all 1's and return its area.
 #
 # For example, given the following matrix:
@@ -24,12 +24,12 @@ class Solution:
         m, n = len(matrix), len(matrix[0])
         size = [[0 for j in xrange(n)] for i in xrange(2)]
         max_size = 0
-        
+
         for j in xrange(n):
             if matrix[0][j] == '1':
                 size[0][j] = 1
             max_size = max(max_size, size[0][j])
-            
+
         for i in xrange(1, m):
             if matrix[i][0] == '1':
                 size[i % 2][0] = 1
@@ -43,7 +43,7 @@ class Solution:
                     max_size = max(max_size, size[i % 2][j])
                 else:
                     size[i % 2][j] = 0
-                    
+
         return max_size * max_size
 
 
@@ -60,12 +60,12 @@ class Solution2:
         m, n = len(matrix), len(matrix[0])
         size = [[0 for j in xrange(n)] for i in xrange(m)]
         max_size = 0
-        
+
         for j in xrange(n):
             if matrix[0][j] == '1':
                 size[0][j] = 1
             max_size = max(max_size, size[0][j])
-            
+
         for i in xrange(1, m):
             if matrix[i][0] == '1':
                 size[i][0] = 1
@@ -79,10 +79,10 @@ class Solution2:
                     max_size = max(max_size, size[i][j])
                 else:
                     size[i][j] = 0
-                    
+
         return max_size * max_size
-        
-        
+
+
 # Time:  O(n^2)
 # Space: O(n^2)
 # DP.
@@ -92,7 +92,7 @@ class Solution3:
     def maximalSquare(self, matrix):
         if not matrix:
             return 0
-        
+
         H, W = 0, 1
         # DP table stores (h, w) for each (i, j).
         table = [[[0, 0] for j in xrange(len(matrix[0]))] \
@@ -108,7 +108,7 @@ class Solution3:
                     if j + 1 < len(matrix[i]):
                         w = table[i][j + 1][W] + 1
                     table[i][j] = [h, w]
-        
+
         # A table stores the length of largest square for each (i, j).
         s = [[0 for j in xrange(len(matrix[0]))] \
                 for i in xrange(len(matrix))]
@@ -122,6 +122,6 @@ class Solution3:
                         side = min(s[i + 1][j + 1] + 1, side)
                     s[i][j] = side
                     max_square_area = max(max_square_area, side * side)
-                    
+
         return max_square_area;
-  
+

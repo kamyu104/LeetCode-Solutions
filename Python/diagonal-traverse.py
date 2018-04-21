@@ -26,11 +26,11 @@ class Solution(object):
         """
         if not matrix or not matrix[0]:
             return []
-        
+
         result = []
         row, col, d = 0, 0, 0
         dirs = [(-1, 1), (1, -1)]
-        
+
         for i in xrange(len(matrix) * len(matrix[0])):
             result.append(matrix[row][col])
             row += dirs[d][0]
@@ -50,6 +50,6 @@ class Solution(object):
             elif col < 0:
                 col = 0
                 d = 1 - d
-        
+
         return result
- 
+

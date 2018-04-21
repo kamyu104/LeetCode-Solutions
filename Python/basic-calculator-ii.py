@@ -3,7 +3,7 @@
 #
 # Implement a basic calculator to evaluate a simple expression string.
 #
-# The expression string contains only non-negative integers, +, -, *, / 
+# The expression string contains only non-negative integers, +, -, *, /
 # operators and empty spaces . The integer division should truncate toward zero.
 #
 # You may assume that the given expression is always valid.
@@ -38,10 +38,10 @@ class Solution:
                 while operators[-1] != ')':
                     self.compute(operands, operators)
                 operators.pop()
-                
+
         while operators:
             self.compute(operands, operators)
-            
+
         return operands[-1]
 
     def compute(self, operands, operators):

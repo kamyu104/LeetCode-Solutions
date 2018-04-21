@@ -12,7 +12,7 @@ class Solution(object):
         for j, c in enumerate(S):
             if c == T[0]:
                 dp[0][j] = j
-                
+
         for i in xrange(1, len(T)):
             prev = None
             dp[i%2] = [None] * len(S)

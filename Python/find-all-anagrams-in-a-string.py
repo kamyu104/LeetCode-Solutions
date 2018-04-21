@@ -45,7 +45,7 @@ class Solution(object):
         cnts = [0] * 26
         for c in p:
             cnts[ord(c) - ord('a')] += 1
-        
+
         left, right = 0, 0
         while right < len(s):
             cnts[ord(s[right]) - ord('a')] -= 1

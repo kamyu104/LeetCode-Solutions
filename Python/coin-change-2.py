@@ -27,9 +27,9 @@
 # Explanation: the amount of 3 cannot be made up just with coins of 2.
 # Example 3:
 #
-# Input: amount = 10, coins = [10] 
+# Input: amount = 10, coins = [10]
 # Output: 1
-    
+
 class Solution(object):
     def change(self, amount, coins):
         """

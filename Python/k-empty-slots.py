@@ -18,14 +18,14 @@
 # If there isn't such day, output -1.
 #
 # Example 1:
-# Input: 
+# Input:
 # flowers: [1,3,2]
 # k: 1
 # Output: 2
 # Explanation: In the second day, the first and the third flower have become blooming.
 #
 # Example 2:
-# Input: 
+# Input:
 # flowers: [1,2,3]
 # k: 1
 # Output: -1
@@ -45,10 +45,10 @@ class Solution(object):
         result = float("inf")
         i, left, right = 0, 0, k+1
         while right < len(days):
-            if days[i] < days[left] or days[i] <= days[right]:  
+            if days[i] < days[left] or days[i] <= days[right]:
                 if i == right:
                     result = min(result, max(days[left], days[right]))
                 left, right = i, k+1+i;
             i += 1
         return -1 if result == float("inf") else result+1
-        
+

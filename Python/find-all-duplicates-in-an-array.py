@@ -28,7 +28,7 @@ class Solution(object):
             else:
                 nums[abs(i)-1] *= -1
         return result
-   
+
 
 # Time:  O(n)
 # Space: O(1)
@@ -42,7 +42,7 @@ class Solution2(object):
         i = 0
         while i < len(nums):
             if nums[i] != nums[nums[i]-1]:
-                nums[nums[i]-1], nums[i] = nums[i], nums[nums[i]-1] 
+                nums[nums[i]-1], nums[i] = nums[i], nums[nums[i]-1]
             else:
                 i += 1
 

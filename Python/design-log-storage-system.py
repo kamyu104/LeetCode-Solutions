@@ -2,14 +2,14 @@
 #        retrieve: O(n + dlogd), n is the size of the total logs
 #                              , d is the size of the found logs
 # Space: O(n)
-    
+
 class LogSystem(object):
 
     def __init__(self):
         self.__logs = []
         self.__granularity = {'Year': 4, 'Month': 7, 'Day': 10, \
                               'Hour': 13, 'Minute': 16, 'Second': 19}
-        
+
 
     def put(self, id, timestamp):
         """
@@ -19,7 +19,7 @@ class LogSystem(object):
         """
         self.__logs.append((id, timestamp))
 
-        
+
     def retrieve(self, s, e, gra):
         """
         :type s: str

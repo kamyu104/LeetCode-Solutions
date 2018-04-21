@@ -34,4 +34,4 @@ class Solution(object):
             if i < len(s) - 2 and s[i] == s[i+1] == s[i+2] == 'L':
                 return False
         return True
- 
+

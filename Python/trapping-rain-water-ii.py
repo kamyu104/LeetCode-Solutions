@@ -34,7 +34,7 @@ class Solution(object):
             return 0
 
         is_visited = [[False for i in xrange(n)] for j in xrange(m)]
-        
+
         heap = []
         for i in xrange(m):
             heappush(heap, [heightMap[i][0], i, 0])

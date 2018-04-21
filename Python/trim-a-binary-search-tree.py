@@ -7,7 +7,7 @@
 # return the new root of the trimmed binary search tree.
 #
 # Example 1:
-# Input: 
+# Input:
 #     1
 #    / \
 #   0   2
@@ -15,12 +15,12 @@
 #   L = 1
 #   R = 2
 #
-# Output: 
+# Output:
 #     1
 #       \
 #        2
 # Example 2:
-# Input: 
+# Input:
 #     3
 #    / \
 #   0   4
@@ -32,10 +32,10 @@
 #   L = 1
 #   R = 3
 #
-# Output: 
+# Output:
 #       3
-#      / 
-#    2   
+#      /
+#    2
 #   /
 #  1
 
@@ -62,4 +62,4 @@ class Solution(object):
             return self.trimBST(root.left, L, R)
         root.left, root.right = self.trimBST(root.left, L, R), self.trimBST(root.right, L, R)
         return root
-    
+

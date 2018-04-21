@@ -36,5 +36,5 @@ class Solution(object):
                     return True
             else:
                 lookup[count] = i
-        
+
         return False

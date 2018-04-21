@@ -46,10 +46,10 @@ class Solution(object):
                 while operators[-1] != ')':
                     self.compute(operands, operators)
                 operators.pop()
-                
+
         while operators:
             self.compute(operands, operators)
-            
+
         return operands[-1]
 
     def compute(self, operands, operators):
@@ -63,4 +63,4 @@ class Solution(object):
             operands.append(left * right)
         elif op == '/':
             operands.append(left / right)
-        
+

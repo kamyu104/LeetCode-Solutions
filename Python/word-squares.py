@@ -34,11 +34,11 @@ class Solution(object):
             curr.pop()
 
         return result
-    
+
     def wordSquaresHelper(self, words, trie, curr, result):
         if len(curr) >= len(words[0]):
             return result.append(list(curr))
-        
+
         node = trie
         for s in curr:
             node = node.children[ord(s[len(curr)]) - ord('a')]

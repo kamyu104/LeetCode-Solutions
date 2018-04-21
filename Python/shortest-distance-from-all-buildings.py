@@ -10,7 +10,7 @@ class Solution(object):
         def bfs(grid, dists, cnts, x, y):
             dist, m, n = 0, len(grid), len(grid[0])
             visited = [[False for _ in xrange(n)] for _ in xrange(m)]
-    
+
             pre_level = [(x, y)]
             visited[x][y] = True
             while pre_level:
@@ -24,7 +24,7 @@ class Solution(object):
                             dists[I][J] += dist
                             cur_level.append((I, J))
                             visited[I][J] = True
-    
+
                 pre_level = cur_level
 
 

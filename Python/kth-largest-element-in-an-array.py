@@ -18,7 +18,7 @@ class Solution:
                 right = new_pivot_idx - 1
             else:  # new_pivot_idx < k - 1.
                 left = new_pivot_idx + 1
-        
+
     def PartitionAroundPivot(self, left, right, pivot_idx, nums):
         pivot_value = nums[pivot_idx]
         new_pivot_idx = left
@@ -27,7 +27,7 @@ class Solution:
             if nums[i] > pivot_value:
                 nums[i], nums[new_pivot_idx] = nums[new_pivot_idx], nums[i]
                 new_pivot_idx += 1
-            
+
         nums[right], nums[new_pivot_idx] = nums[new_pivot_idx], nums[right]
         return new_pivot_idx
-        
+

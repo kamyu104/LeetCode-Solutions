@@ -11,22 +11,22 @@
 # in the matrix after performing all the operations.
 #
 # Example 1:
-# Input: 
+# Input:
 # m = 3, n = 3
 # operations = [[2,2],[3,3]]
 # Output: 4
-# Explanation: 
-# Initially, M = 
+# Explanation:
+# Initially, M =
 # [[0, 0, 0],
 #  [0, 0, 0],
 #  [0, 0, 0]]
 #
-# After performing [2,2], M = 
+# After performing [2,2], M =
 # [[1, 1, 0],
 #  [1, 1, 0],
 #  [0, 0, 0]]
 #
-# After performing [3,3], M = 
+# After performing [3,3], M =
 # [[2, 2, 1],
 #  [2, 2, 1],
 #  [1, 1, 1]]

@@ -12,7 +12,7 @@ class Solution(object):
         def words_fit(sentence, start, cols):
             if len(sentence[start]) > cols:
                 return 0
-    
+
             s, count = len(sentence[start]), 1
             i = (start + 1) % len(sentence)
             while s + 1 + len(sentence[i]) <= cols:

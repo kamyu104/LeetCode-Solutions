@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 #
-# Given an array of n positive integers and a positive integer s, 
+# Given an array of n positive integers and a positive integer s,
 # find the minimal length of a subarray of which the sum ≥ s. If there isn't one, return 0 instead.
 #
 # For example, given the array [2,3,1,2,4,3] and s = 7,
@@ -49,7 +49,7 @@ class Solution2:
                 min_size = min(min_size, end - i + 1)
 
         return min_size if min_size != float("inf") else 0
-    
+
     def binarySearch(self, compare, A, start, end, target):
         while start < end:
             mid = start + (end - start) / 2

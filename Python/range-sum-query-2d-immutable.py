@@ -57,7 +57,7 @@ class NumMatrix(object):
         """
         return self.__sums[row2+1][col2+1] - self.__sums[row2+1][col1] - \
                self.__sums[row1][col2+1] + self.__sums[row1][col1]
-        
+
 
 # Your NumMatrix object will be instantiated and called as such:
 # numMatrix = NumMatrix(matrix)

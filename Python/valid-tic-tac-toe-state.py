@@ -5,7 +5,7 @@
 # if and only if it is possible to reach this board position
 # during the course of a valid tic-tac-toe game.
 #
-# The board is a 3 x 3 array, and consists of characters " ", "X", 
+# The board is a 3 x 3 array, and consists of characters " ", "X",
 # and "O".  The " " character represents an empty square.
 #
 # Here are the rules of Tic-Tac-Toe:
@@ -53,7 +53,7 @@ class Solution(object):
 
             return (player == board[1][1] == board[0][0] == board[2][2] or \
                     player == board[1][1] == board[0][2] == board[2][0])
-        
+
         FIRST, SECOND = ('X', 'O')
         x_count = sum(row.count(FIRST) for row in board)
         o_count = sum(row.count(SECOND) for row in board)

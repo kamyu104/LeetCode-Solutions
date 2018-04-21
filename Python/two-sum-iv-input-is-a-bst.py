@@ -5,7 +5,7 @@
 # return true if there exist two elements in the BST such that their sum is equal to the given target.
 #
 # Example 1:
-# Input: 
+# Input:
 #     5
 #    / \
 #   3   6
@@ -16,7 +16,7 @@
 #
 # Output: True
 # Example 2:
-# Input: 
+# Input:
 #     5
 #    / \
 #   3   6
@@ -51,7 +51,7 @@ class Solution(object):
 
             def val(self):
                 return self.__cur
-            
+
             def next(self):
                 while self.__node or self.__s:
                     if self.__node:

@@ -17,7 +17,7 @@ class Solution(object):
                 first = stack.pop()
                 stack.pop()  # pop ':'
                 second = stack.pop()
-    
+
                 if c == 'T':
                     stack.append(first)
                 else:
@@ -25,5 +25,5 @@ class Solution(object):
             else:
                 stack.append(c)
 
-    
+
         return str(stack[-1])

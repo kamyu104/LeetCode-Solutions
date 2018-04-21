@@ -13,10 +13,10 @@ class Solution(object):
         y = [j for row in grid for j, v in enumerate(row) if v == 1]
         mid_x = self.findKthLargest(x, len(x) / 2 + 1)
         mid_y = self.findKthLargest(y, len(y) / 2 + 1)
-        
+
         return sum([abs(mid_x-i) + abs(mid_y-j) \
                    for i, row in enumerate(grid) for j, v in enumerate(row) if v == 1])
-    
+
     def findKthLargest(self, nums, k):
         left, right = 0, len(nums) - 1
         while left <= right:
@@ -28,7 +28,7 @@ class Solution(object):
                 right = new_pivot_idx - 1
             else:  # new_pivot_idx < k - 1.
                 left = new_pivot_idx + 1
-        
+
     def PartitionAroundPivot(self, left, right, pivot_idx, nums):
         pivot_value = nums[pivot_idx]
         new_pivot_idx = left
@@ -37,6 +37,6 @@ class Solution(object):
             if nums[i] > pivot_value:
                 nums[i], nums[new_pivot_idx] =  nums[new_pivot_idx], nums[i]
                 new_pivot_idx += 1
-            
+
         nums[right], nums[new_pivot_idx] = nums[new_pivot_idx], nums[right]
         return new_pivot_idx

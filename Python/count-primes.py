@@ -14,7 +14,7 @@ class Solution:
     def countPrimes(self, n):
         if n <= 2:
             return 0
-        
+
         is_prime = [True] * n
         num = n / 2
         for i in xrange(3, n, 2):

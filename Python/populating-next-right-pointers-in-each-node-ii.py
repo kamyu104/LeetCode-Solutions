@@ -2,11 +2,11 @@
 # Space: O(1)
 #
 # Follow up for problem "Populating Next Right Pointers in Each Node".
-# 
+#
 # What if the given tree could be any binary tree? Would your previous solution still work?
-# 
+#
 # Note:
-# 
+#
 # You may only use constant extra space.
 # For example,
 # Given the following binary tree,
@@ -30,7 +30,7 @@ class TreeNode:
         self.left = None
         self.right = None
         self.next = None
-    
+
     def __repr__(self):
         if self is None:
             return "Nil"
@@ -50,21 +50,21 @@ class Solution:
                         next_head = cur.left
                     elif cur.right:
                         next_head = cur.right
-                
+
                 if cur.left:
                     if prev:
                         prev.next = cur.left
                     prev = cur.left
-                    
+
                 if cur.right:
                     if prev:
                         prev.next = cur.right
                     prev = cur.right
-                    
+
                 cur = cur.next
             head = next_head
-                 
-            
+
+
 
 if __name__ == "__main__":
     root, root.left, root.right = TreeNode(1), TreeNode(2), TreeNode(3)
@@ -73,4 +73,3 @@ if __name__ == "__main__":
     print root
     print root.left
     print root.left.left
-    

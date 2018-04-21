@@ -9,7 +9,7 @@
 # Battleships can only be placed horizontally or vertically. In other words,
 # they can only be made of the shape 1xN (1 row, N columns) or Nx1 (N rows, 1 column),
 # where N can be of any size.
-# At least one horizontal or vertical cell separates between two battleships - 
+# At least one horizontal or vertical cell separates between two battleships -
 # there are no adjacent battleships.
 #
 # Example:

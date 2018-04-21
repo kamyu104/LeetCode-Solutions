@@ -52,6 +52,6 @@ class Solution(object):
             right = (right+1) if node.right and node.right.val == node.val else 0
             result[0] = max(result[0], left+right)
             return max(left, right)
-        
+
         dfs(root)
         return result[0]

@@ -31,4 +31,4 @@ class Solution(object):
                 counts[(num >> i) & 1] += 1
             result += counts[0] * counts[1]
         return result
- 
+

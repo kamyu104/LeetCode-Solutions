@@ -11,7 +11,7 @@
 # Example:
 # Input: [1,2,1,2,6,7,5,1], 2
 # Output: [0, 3, 5]
- #   
+ #
 # Explanation: Subarrays [1, 2], [2, 6], [7, 5] correspond to the starting indices [0, 3, 5].
 # We could have also taken [2, 1], but an answer of [1, 3, 5] would be lexicographically larger.
 #
@@ -31,7 +31,7 @@ class Solution(object):
         accu = [0]
         for num in nums:
             accu.append(accu[-1]+num)
-       
+
         left_pos = [0] * n
         total = accu[k]-accu[0]
         for i in xrange(k, n):
@@ -40,7 +40,7 @@ class Solution(object):
                 total = accu[i+1]-accu[i+1-k]
             else:
                 left_pos[i] = left_pos[i-1]
-        
+
         right_pos = [n-k] * n
         total = accu[n]-accu[n-k]
         for i in reversed(xrange(n-k)):
@@ -49,7 +49,7 @@ class Solution(object):
                 total = accu[i+k]-accu[i]
             else:
                 right_pos[i] = right_pos[i+1]
-        
+
         result, max_sum = [], 0
         for i in xrange(k, n-2*k+1):
             left, right = left_pos[i-1], right_pos[i+k]

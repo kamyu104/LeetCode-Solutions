@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(n)
 #
-# Given an unsorted array of integers, 
+# Given an unsorted array of integers,
 # find the length of longest increasing subsequence.
 #
 # For example,

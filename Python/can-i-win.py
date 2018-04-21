@@ -53,7 +53,7 @@ class Solution(object):
                 mask <<= 1
             lookup[visited] = False
             return False
-        
+
         if (1 + maxChoosableInteger) * (maxChoosableInteger / 2) < desiredTotal:
             return False
 

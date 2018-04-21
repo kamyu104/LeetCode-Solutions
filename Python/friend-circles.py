@@ -12,21 +12,21 @@
 # otherwise not. And you have to output the total number of friend circles among all the students.
 #
 # Example 1:
-# Input: 
+# Input:
 # [[1,1,0],
 #  [1,1,0],
 #  [0,0,1]]
 # Output: 2
-# Explanation:The 0th and 1st students are direct friends, so they are in a friend circle. 
+# Explanation:The 0th and 1st students are direct friends, so they are in a friend circle.
 # The 2nd student himself is in a friend circle. So return 2.
 #
 # Example 2:
-# Input: 
+# Input:
 # [[1,1,0],
 #  [1,1,1],
 #  [0,1,1]]
 # Output: 1
-# Explanation:The 0th and 1st students are direct friends, the 1st and 2nd students are direct friends, 
+# Explanation:The 0th and 1st students are direct friends, the 1st and 2nd students are direct friends,
 # so the 0th and 2nd students are indirect friends. All of them are in the same friend circle, so return 1.
 #
 # Note:
@@ -45,12 +45,12 @@ class Solution(object):
             def __init__(self, n):
                 self.set = range(n)
                 self.count = n
-        
+
             def find_set(self, x):
                if self.set[x] != x:
                    self.set[x] = self.find_set(self.set[x])  # path compression.
                return self.set[x]
-        
+
             def union_set(self, x, y):
                 x_root, y_root = map(self.find_set, (x, y))
                 if x_root != y_root:
@@ -63,4 +63,4 @@ class Solution(object):
                 if M[i][j] and i != j:
                     circles.union_set(i, j)
         return circles.count
- 
+

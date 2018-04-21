@@ -12,7 +12,7 @@ class TrieNode:
     def __init__(self):
         self.is_string = False
         self.leaves = {}
-        
+
 
 class Trie:
 
@@ -37,7 +37,7 @@ class Trie:
         node = self.childSearch(word)
         if node:
             return node.is_string
-        return False        
+        return False
 
     # @param {string} prefix
     # @return {boolean}

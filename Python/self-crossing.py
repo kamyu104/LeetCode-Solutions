@@ -46,7 +46,7 @@ class Solution(object):
             #     2
             # 3 ┌────┐
             #   └─══>┘1
-            #   4  0  (overlapped)  
+            #   4  0  (overlapped)
             return True
 
         for i in xrange(3, len(x)):
@@ -61,7 +61,7 @@ class Solution(object):
                             x[i - 1] <= x[i - 3] and x[i - 5] + x[i - 1] >= x[i - 3]:
                 # Case 2:
                 #    i-4
-                #    ┌──┐ 
+                #    ┌──┐
                 #    │i<┼─┐
                 # i-3│ i-5│i-1
                 #    └────┘

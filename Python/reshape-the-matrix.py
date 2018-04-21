@@ -15,24 +15,24 @@
 # output the new reshaped matrix; Otherwise, output the original matrix.
 #
 # Example 1:
-# Input: 
-# nums = 
+# Input:
+# nums =
 # [[1,2],
 #  [3,4]]
 # r = 1, c = 4
-# Output: 
+# Output:
 # [[1,2,3,4]]
 # Explanation:
 # The row-traversing of nums is [1,2,3,4]. The new reshaped matrix is a 1 * 4 matrix,
 # fill it row by row by using the previous list.
 #
 # Example 2:
-# Input: 
-# nums = 
+# Input:
+# nums =
 # [[1,2],
 #  [3,4]]
 # r = 2, c = 4
-# Output: 
+# Output:
 # [[1,2],
 #  [3,4]]
 # Explanation:

@@ -2,10 +2,10 @@
 # Space: O(h), h is height of binary tree
 #
 # Given a binary tree, flatten it to a linked list in-place.
-# 
+#
 # For example,
 # Given
-# 
+#
 #          1
 #         / \
 #        2   5
@@ -37,7 +37,7 @@ class Solution:
     # @return nothing, do it in place
     def flatten(self, root):
         return self.flattenRecu(root, None)
-        
+
     def flattenRecu(self, root, list_head):
         if root != None:
             list_head = self.flattenRecu(root.right, list_head)
@@ -47,7 +47,7 @@ class Solution:
             return root
         else:
             return list_head
-        
+
 class Solution2:
     list_head = None
     # @param root, a tree node
@@ -60,7 +60,7 @@ class Solution2:
             root.left = None
             self.list_head = root
             return root
-        
+
 if __name__ == "__main__":
     root = TreeNode(1)
     root.left = TreeNode(2)

@@ -18,7 +18,7 @@
 # k = 8,
 #
 # return 13.
-# Note: 
+# Note:
 # You may assume k is always valid, 1 <= k <= n^2.
 
 from heapq import heappush, heappop

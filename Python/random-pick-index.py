@@ -27,7 +27,7 @@ class Solution(object):
 
     def __init__(self, nums):
         """
-        
+
         :type nums: List[int]
         :type numsSize: int
         """

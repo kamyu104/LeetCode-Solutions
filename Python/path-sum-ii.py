@@ -2,7 +2,7 @@
 # Space: O(h), h is height of binary tree
 #
 # Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
-# 
+#
 # For example:
 # Given the below binary tree and sum = 22,
 #               5
@@ -33,21 +33,21 @@ class Solution:
     def pathSum(self, root, sum):
         return self.pathSumRecu([], [], root, sum)
 
-    
+
     def pathSumRecu(self, result, cur, root, sum):
         if root is None:
             return result
-        
+
         if root.left is None and root.right is None and root.val == sum:
             result.append(cur + [root.val])
             return result
-        
+
         cur.append(root.val)
         self.pathSumRecu(result, cur, root.left, sum - root.val)
         self.pathSumRecu(result, cur,root.right, sum - root.val)
         cur.pop()
         return result
-    
+
 if __name__ == "__main__":
     root = TreeNode(5)
 

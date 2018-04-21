@@ -40,7 +40,7 @@ class Solution(object):
             else:
                 for l in list.getList():
                     depthSumInverseHelper(l, depth + 1, result)
-                    
+
         result = []
         for list in nestedList:
             depthSumInverseHelper(list, 0, result)

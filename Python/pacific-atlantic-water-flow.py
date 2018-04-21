@@ -5,7 +5,7 @@
 # each unit cell in a continent, the "Pacific ocean" touches the left and
 # top edges of the matrix and the "Atlantic ocean" touches the right and bottom edges.
 #
-# Water can only flow in four directions (up, down, left, or right) 
+# Water can only flow in four directions (up, down, left, or right)
 # from a cell to another one with height equal or lower.
 #
 # Find the list of grid coordinates where water can flow to both the Pacific and Atlantic ocean.
@@ -17,7 +17,7 @@
 #
 # Given the following 5x5 matrix:
 #
-#   Pacific ~   ~   ~   ~   ~ 
+#   Pacific ~   ~   ~   ~   ~
 #       ~  1   2   2   3  (5) *
 #       ~  3   2   3  (4) (4) *
 #       ~  2   4  (5)  3   1  *
@@ -44,13 +44,13 @@ class Solution(object):
                (visited[x][y] | prev_val) == visited[x][y]:
                 return
 
-            visited[x][y] |= prev_val 
+            visited[x][y] |= prev_val
             if visited[x][y] == (PACIFIC | ATLANTIC):
                 res.append((x, y))
-    
+
             for d in [(0, -1), (0, 1), (-1, 0), (1, 0)]:
                 pacificAtlanticHelper(matrix, x + d[0], y + d[1], matrix[x][y], visited[x][y], visited, res)
-        
+
         if not matrix:
             return []
 

@@ -20,7 +20,7 @@
 #  [1, 0, -1],
 #  [1, 1,  1]]
 # Output: 5
-# Explanation: 
+# Explanation:
 # The player started at (0, 0) and went down, down, right right to reach (2, 2).
 # 4 cherries were picked up during this single trip, and the matrix becomes [[0,1,-1],[0,0,-1],[0,0,0]].
 # Then, the player went left, up, up, left to return home, picking up one more cherry.
@@ -38,7 +38,7 @@ class Solution(object):
         :rtype: int
         """
         # dp holds the max # of cherries two k-length paths can pickup.
-        # The two k-length paths arrive at (i, k - i) and (j, k - j), 
+        # The two k-length paths arrive at (i, k - i) and (j, k - j),
         # respectively.
         n = len(grid)
         dp = [[-1 for _ in xrange(n)] for _ in xrange(n)]

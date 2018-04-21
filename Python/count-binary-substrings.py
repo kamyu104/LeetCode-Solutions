@@ -20,7 +20,7 @@
 # Input: "10101"
 # Output: 4
 # Explanation: There are 4 substrings: "10", "01", "10", "01" that have equal number of consecutive 1's and 0's.
-#       
+#
 # Note:
 # s.length will be between 1 and 50,000.
 # s will only consist of "0" or "1" characters.

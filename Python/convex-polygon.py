@@ -19,4 +19,4 @@ class Solution(object):
                     return False
                 prev = curr
         return True
- 
+

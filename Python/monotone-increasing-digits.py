@@ -14,11 +14,11 @@
 # Example 2:
 # Input: N = 1234
 # Output: 1234
-#  
+#
 # Example 3:
 # Input: N = 332
 # Output: 299
-#   
+#
 # Note: N is an integer in the range [0, 10^9].
 
 class Solution(object):

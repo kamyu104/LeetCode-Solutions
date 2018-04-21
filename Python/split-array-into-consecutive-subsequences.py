@@ -9,14 +9,14 @@
 # Input: [1,2,3,3,4,5]
 # Output: True
 # Explanation:
-# You can split them into two consecutive subsequences : 
+# You can split them into two consecutive subsequences :
 # 1, 2, 3
 # 3, 4, 5
 # Example 2:
 # Input: [1,2,3,3,4,4,5,5]
 # Output: True
 # Explanation:
-# You can split them into two consecutive subsequences : 
+# You can split them into two consecutive subsequences :
 # 1, 2, 3, 4, 5
 # 3, 4, 5
 # Example 3:

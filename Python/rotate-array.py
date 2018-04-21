@@ -60,7 +60,7 @@ class Solution2:
             nums[(offset + i * k) % len(nums)], tmp = tmp, nums[(offset + i * k) % len(nums)]
         nums[offset] = tmp
 
-        
+
 class Solution3:
     """
     :type nums: List[int]
@@ -82,7 +82,7 @@ class Solution3:
                 if start == curr:
                     break
             start += 1
-    
+
 
 if __name__ == '__main__':
     nums = [1, 2, 3, 4, 5, 6, 7]

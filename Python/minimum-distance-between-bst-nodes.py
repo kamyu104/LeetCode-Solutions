@@ -16,8 +16,8 @@
 #           4
 #         /   \
 #       2      6
-#      / \    
-#     1   3  
+#      / \
+#     1   3
 #
 # while the minimum difference in this tree is 1,
 # it occurs between node 1 and node 2, also between node 3 and node 2.
@@ -51,4 +51,4 @@ class Solution(object):
         self.result = float('inf')
         dfs(root)
         return self.result
-        
+

@@ -57,7 +57,7 @@ class Solution(object):
                     res = res[:i] + res[i+1:]
                     break
             return res
-    
+
         def merge(a, b):
             return [max(a, b).pop(0) for _ in xrange(len(a)+len(b))]
 

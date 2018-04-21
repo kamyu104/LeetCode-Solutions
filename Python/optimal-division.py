@@ -13,8 +13,8 @@
 # Output: "1000/(100/10/2)"
 # Explanation:
 # 1000/(100/10/2) = 1000/((100/10)/2) = 200
-# However, the bold parenthesis in "1000/((100/10)/2)" are redundant, 
-# since they don't influence the operation priority. So you should return "1000/(100/10/2)". 
+# However, the bold parenthesis in "1000/((100/10)/2)" are redundant,
+# since they don't influence the operation priority. So you should return "1000/(100/10/2)".
 #
 # Other cases:
 # 1000/(100/10)/2 = 50

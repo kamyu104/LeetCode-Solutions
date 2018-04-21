@@ -12,19 +12,19 @@
 # Return an array representing the number of bricks that will drop after each erasure in sequence.
 #
 # Example 1:
-# Input: 
+# Input:
 # grid = [[1,0,0,0],[1,1,1,0]]
 # hits = [[1,0]]
 # Output: [2]
-# Explanation: 
+# Explanation:
 # If we erase the brick at (1, 0), the brick at (1, 1) and (1, 2) will drop. So we should return 2.
 #
 # Example 2:
-# Input: 
+# Input:
 # grid = [[1,0,0,0],[1,1,0,0]]
 # hits = [[1,1],[1,0]]
 # Output: [0,0]
-# Explanation: 
+# Explanation:
 # When we erase the brick at (1, 0), the brick at (1, 1) has already disappeared due to the last move.
 # So each erasure will cause no bricks dropping.
 # Note that the erased brick (1, 0) will not be counted as a dropped brick.
@@ -56,7 +56,7 @@ class UnionFind:
 
     def top(self):
         return self.size[self.find_set(len(self.size)-1)]
-    
+
 
 class Solution(object):
     def hitBricks(self, grid, hits):
@@ -67,7 +67,7 @@ class Solution(object):
         """
         def index(C, r, c):
             return r*C+c
-        
+
         directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
         R, C = len(grid), len(grid[0])
 

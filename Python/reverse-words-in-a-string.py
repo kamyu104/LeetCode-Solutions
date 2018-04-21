@@ -2,13 +2,13 @@
 # Space: O(n)
 #
 # Given an input string, reverse the string word by word.
-# 
+#
 # For example,
 # Given s = "the sky is blue",
 # return "blue is sky the".
-# 
+#
 # click to show clarification.
-# 
+#
 # Clarification:
 # What constitutes a word?
 # A sequence of non-space characters constitutes a word.

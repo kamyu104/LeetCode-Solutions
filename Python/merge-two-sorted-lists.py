@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 #
-# Merge two sorted linked lists and return it as a new list. 
+# Merge two sorted linked lists and return it as a new list.
 # The new list should be made by splicing together the nodes of the first two lists.
 #
 
@@ -42,5 +42,5 @@ if __name__ == "__main__":
     l2 = ListNode (2)
     l2.next = ListNode(3)
     print Solution().mergeTwoLists(l1, l2)
-    
-        
+
+

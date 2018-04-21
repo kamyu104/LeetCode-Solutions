@@ -2,10 +2,10 @@
 # Space: O(1)
 #
 # Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
-# 
+#
 # For example,
 # Given the following matrix:
-# 
+#
 # [
 #  [ 1, 2, 3 ],
 #  [ 4, 5, 6 ],
@@ -21,9 +21,9 @@ class Solution:
         result = []
         if matrix == []:
             return result
-        
+
         left, right, top, bottom = 0, len(matrix[0]) - 1, 0, len(matrix) - 1
-        
+
         while left <= right and top <= bottom:
             for j in xrange(left, right + 1):
                 result.append(matrix[top][j])
@@ -36,7 +36,7 @@ class Solution:
                 if left < right:
                     result.append(matrix[i][left])
             left, right, top, bottom = left + 1, right - 1, top + 1, bottom - 1
-            
+
         return result
 
 

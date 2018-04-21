@@ -15,9 +15,9 @@
 # Example 1:
 # Input: "aba", "cdc"
 # Output: 3
-# Explanation: The longest uncommon subsequence is "aba" (or "cdc"), 
-# because "aba" is a subsequence of "aba", 
-# but not a subsequence of any other strings in the group of two strings. 
+# Explanation: The longest uncommon subsequence is "aba" (or "cdc"),
+# because "aba" is a subsequence of "aba",
+# but not a subsequence of any other strings in the group of two strings.
 # Note:
 #
 # Both strings' lengths will not exceed 100.

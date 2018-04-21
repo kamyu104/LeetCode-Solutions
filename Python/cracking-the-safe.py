@@ -16,12 +16,12 @@
 # Input: n = 1, k = 2
 # Output: "01"
 # Note: "10" will be accepted too.
-#   
+#
 # Example 2:
 # Input: n = 2, k = 2
 # Output: "00110"
 # Note: "01100", "10011", "11001" will be accepted too.
-#  
+#
 # Note:
 # - n will be in the range [1, 4].
 # - k will be in the range [1, 10].
@@ -88,7 +88,7 @@ class Solution3(object):
                     result.append(str(i))
                     dfs(k, neighbor[1:], lookup, result)
                     break
-                    
+
         result = [str(k-1)]*(n-1)
         lookup = set()
         dfs(k, "".join(result), lookup, result)
