@@ -74,6 +74,11 @@
 import collections
 import itertools
 
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
+
 
 class Poly(collections.Counter):
     def __init__(self, expr=None):
@@ -132,7 +137,7 @@ class Poly(collections.Counter):
     def to_list(self):
         return ["*".join((str(v),) + k)
                 for k, v in sorted(self.items(),
-                                   key=lambda(k, _): (-len(k), k))
+                                   key=lambda x: (-len(x[0]), x[0]))
                 if v]
 
 
