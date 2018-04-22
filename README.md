@@ -150,6 +150,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 795 | [Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/) | [C++](./C++/number-of-subarrays-with-bounded-maximum.cpp) [Python](./Python/number-of-subarrays-with-bounded-maximum.py) | _O(n)_ | _O(1)_ | Medium ||
 803 | [Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit/) | [C++](./C++/bricks-falling-when-hit.cpp) [Python](./Python/bricks-falling-when-hit.py) | _O(r * c)_ | _O(r * c)_ | Hard || Union Find
 807 | [Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline/) | [C++](./C++/max-increase-to-keep-city-skyline.cpp) [Python](./Python/max-increase-to-keep-city-skyline.py) | _O(n^2)_ | _O(n)_ | Medium ||
+821 | [Shortest Distance to a Character](https://leetcode.com/problems/shortest-distance-to-a-character/) | [C++](./C++/shortest-distance-to-a-character.cpp) [Python](./Python/shortest-distance-to-a-character.py) | _O(n)_ | _O(n)_ | Easy ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -215,6 +216,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 809| [Expressive Words](https://leetcode.com/problems/expressive-words/) | [C++](./C++/expressive-words.cpp)  [Python](./Python/expressive-words.py) | _O(n + s)_ | _O(l + s)_ | Medium         |||
 816| [Ambiguous Coordinates](https://leetcode.com/problems/ambiguous-coordinates/) | [C++](./C++/ambiguous-coordinates.cpp)  [Python](./Python/ambiguous-coordinates.py) | _O(n^4)_ | _O(n)_ | Medium         |||
 819| [Most Common Word](https://leetcode.com/problems/most-common-word/) | [C++](./C++/most-common-word.cpp)  [Python](./Python/most-common-word.py) | _O(m + n)_ | _O(m + n)_ | Easy         |||
+820| [Short Encoding of Words](https://leetcode.com/problems/short-encoding-of-words/) | [C++](./C++/short-encoding-of-wordss.cpp)  [Python](./Python/short-encoding-of-words.py) | _O(n)_ | _O(t)_ | Medium         || Trie |
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -387,6 +389,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 760 | [Find Anagram Mappings](https://leetcode.com/problems/find-anagram-mappings/) | [C++](./C++/find-anagram-mappings.cpp) [Python](./Python/find-anagram-mappings.py) | _O(n)_ | _O(n)_ | Easy ||
 771 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | [C++](./C++/jewels-and-stones.cpp) [Python](./Python/jewels-and-stones.py) | _O(m + n)_ | _O(n)_ | Easy ||
 811 | [Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count/) | [C++](./C++/subdomain-visit-count.cpp) [Python](./Python/subdomain-visit-count.py) | _O(n)_ | _O(n)_ | Easy ||
+822 | [Card Flipping Game](https://leetcode.com/problems/card-flipping-game/) | [C++](./C++/card-flipping-game.cpp) [Python](./Python/card-flipping-game.py) | _O(n)_ | _O(n)_ | Medium ||
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -768,6 +771,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 808 | [Soup Servings](https://leetcode.com/problems/soup-servings/) | [C++](./C++/soup-servings.cpp) [Python](./Python/soup-servings.py) | _O(1)_ | _O(1)_ | Medium || Memoization |
 813 | [Largest Sum of Averages](https://leetcode.com/problems/largest-sum-of-averages/) | [C++](./C++/largest-sum-of-averages.cpp) [Python](./Python/largest-sum-of-averages.py) | _O(k * n^2)_ | _O(n)_ | Medium || |
 818 | [Race Car](https://leetcode.com/problems/race-car/) | [C++](./C++/race-car.cpp) [Python](./Python/race-car.py) | _O(nlogn)_ | _O(n)_ | Hard || |
+823 | [Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors/) | [C++](./C++/binary-trees-with-factors.cpp) [Python](./Python/binary-trees-with-factors.py) | _O(n^2)_ | _O(n)_ | Medium || |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
