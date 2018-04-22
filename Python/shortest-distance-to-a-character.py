@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(n)
+# Space: O(1)
 
 # Given a string S and a character C,
 # return an array of integers representing the shortest distance
