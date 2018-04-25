@@ -1,5 +1,5 @@
 # Time:  O((|E| + |V|) * log|V|) = O(|E| * log|V|)
-# Space: O(|E| + |V|)
+# Space: O(|E| + |V|) = O(|E|)
 
 # There are n cities connected by m flights. Each fight starts from city u and arrives at v with a price w.
 #
