@@ -1,5 +1,5 @@
 # Time:  O((|E| + |V|) * log|V|) = O(|E| * log|V|)
-# Space: O(|E| + |V|)
+# Space: O(|E| + |V|) = O(|E|)
 
 # There are N network nodes, labelled 1 to N.
 #
