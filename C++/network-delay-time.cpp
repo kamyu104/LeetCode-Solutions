@@ -1,4 +1,4 @@
-// Time:  O((|E| + |V|) * log|V|)
+// Time:  O((|E| + |V|) * log|V|) = O(|E| * log|V|)
 // Space: O(|E| + |V|)
 
 // Dijkstra's algorithm
