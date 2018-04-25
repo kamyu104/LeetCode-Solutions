@@ -1,5 +1,5 @@
 // Time:  O((|E| + |V|) * log|V|) = O(|E| * log|V|)
-// Space: O(|E| + |V|)
+// Space: O(|E| + |V|) = O(|E|)
 
 // Dijkstra's algorithm
 class Solution {
