@@ -217,6 +217,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 816| [Ambiguous Coordinates](https://leetcode.com/problems/ambiguous-coordinates/) | [C++](./C++/ambiguous-coordinates.cpp)  [Python](./Python/ambiguous-coordinates.py) | _O(n^4)_ | _O(n)_ | Medium         |||
 819| [Most Common Word](https://leetcode.com/problems/most-common-word/) | [C++](./C++/most-common-word.cpp)  [Python](./Python/most-common-word.py) | _O(m + n)_ | _O(m + n)_ | Easy         |||
 820| [Short Encoding of Words](https://leetcode.com/problems/short-encoding-of-words/) | [C++](./C++/short-encoding-of-wordss.cpp)  [Python](./Python/short-encoding-of-words.py) | _O(n)_ | _O(t)_ | Medium         || Trie |
+824| [Goat Latin](https://leetcode.com/problems/goat-latin/) | [C++](./C++/goat-latin.cpp)  [Python](./Python/goat-latin.py) | _O(n + w^2)_ | _O(l)_ | Easy         |||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -390,6 +391,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 771 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | [C++](./C++/jewels-and-stones.cpp) [Python](./Python/jewels-and-stones.py) | _O(m + n)_ | _O(n)_ | Easy ||
 811 | [Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count/) | [C++](./C++/subdomain-visit-count.cpp) [Python](./Python/subdomain-visit-count.py) | _O(n)_ | _O(n)_ | Easy ||
 822 | [Card Flipping Game](https://leetcode.com/problems/card-flipping-game/) | [C++](./C++/card-flipping-game.cpp) [Python](./Python/card-flipping-game.py) | _O(n)_ | _O(n)_ | Medium ||
+825 | [Friends Of Appropriate Ages](https://leetcode.com/problems/friends-of-appropriate-ages/) | [C++](./C++/friends-of-appropriate-ages.cpp) [Python](./Python/friends-of-appropriate-ages.py) | _O(a^2 + n)_ | _O(a)_ | Medium ||
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -502,6 +504,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 567| [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | [C++](./C++/permutation-in-string.cpp)  [Python](./Python/permutation-in-string.py) | _O(n)_ | _O(1)_ | Medium         ||
 611| [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | [C++](./C++/valid-triangle-number.cpp)  [Python](./Python/valid-triangle-number.py) | _O(n^2)_ | _O(1)_ | Medium         ||
 777| [Swap Adjacent in LR String](https://leetcode.com/problems/swap-adjacent-in-lr-string/) | [C++](./C++/swap-adjacent-in-lr-string.cpp)  [Python](./Python/swap-adjacent-in-lr-string.py) | _O(n)_ | _O(1)_ | Medium         ||
+826| [Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work/) | [C++](./C++/most-profit-assigning-work.cpp)  [Python](./Python/most-profit-assigning-work.py) | _O(mlogm + nlogn)_ | _O(n)_ | Medium         ||
 
 ## Recursion
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -650,6 +653,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 785| [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/) | [C++](./C++/is-graph-bipartite.cpp) [Python](./Python/is-graph-bipartite.py) | _O(\|V\| + \|E\|)_          | _O(\|V\|)_          | Medium           |||
 797| [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | [C++](./C++/all-paths-from-source-to-target.cpp) [Python](./Python/all-paths-from-source-to-target.py) | _O(p + r * n)_          | _O(n)_          | Medium           |||
 802| [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/) | [C++](./C++/find-eventual-safe-states.cpp) [Python](./Python/find-eventual-safe-states.py) | _O(\|V\| + \|E\|)_          | _O(\|V\|)_ | Medium           |||
+827| [Making A Large Island](https://leetcode.com/problems/making-a-large-island/) | [C++](./C++/making-a-large-island.cpp) [Python](./Python/making-a-large-island.py) | _O(n^2)_          | _O(n^2)_          | Hard           |||
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
