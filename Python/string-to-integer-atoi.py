@@ -27,7 +27,7 @@
 #
 
 class Solution(object):
-    def myAtoi(self, str):
+    def atoi(self, str):
         """
         :type str: str
         :rtype: int
@@ -42,6 +42,9 @@ class Solution(object):
         i = 0
         while i < len(str) and str[i].isspace():
             i += 1
+
+        if len(str) == i:
+            return result
 
         sign = 1
         if str[i] == "+":
@@ -58,8 +61,10 @@ class Solution(object):
 
         return sign * result
 
+
 if __name__ == "__main__":
     print Solution().atoi("")
+    print Solution().atoi(" ")
     print Solution().atoi("-1")
     print Solution().atoi("2147483647")
     print Solution().atoi("2147483648")
