@@ -27,7 +27,7 @@
 #
 
 class Solution(object):
-    def atoi(self, str):
+    def myAtoi(self, str):
         """
         :type str: str
         :rtype: int
@@ -60,13 +60,3 @@ class Solution(object):
             i += 1
 
         return sign * result
-
-
-if __name__ == "__main__":
-    print Solution().atoi("")
-    print Solution().atoi(" ")
-    print Solution().atoi("-1")
-    print Solution().atoi("2147483647")
-    print Solution().atoi("2147483648")
-    print Solution().atoi("-2147483648")
-    print Solution().atoi("-2147483649")
