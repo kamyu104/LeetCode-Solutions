@@ -17,6 +17,10 @@ public:
             ++i;
         }
 
+        if (i == str.length()) {
+            return 0;
+        }
+
         // Parse sign.
         if (str[i] == '+') {
             ++i;
