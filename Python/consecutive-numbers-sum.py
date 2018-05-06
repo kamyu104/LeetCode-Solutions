@@ -32,9 +32,9 @@ class Solution(object):
         # if prime factorization of N is 2^k * p1^a * p2^b * ..
         # => result is the number of all odd factors = (a+1) * (b+1) + ...
         result = 1
-        i = 3
         while N % 2 == 0:
             N /= 2
+        i = 3
         while i*i <= N:
             count = 0
             while N % i == 0:
