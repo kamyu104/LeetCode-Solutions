@@ -30,7 +30,7 @@ class Solution(object):
         :rtype: int
         """
         # if prime factorization of N is 2^k * p1^a * p2^b * ..
-        # => result is the number of all odd factors = (a+1) * (b+1) + ...
+        # => result is the number of all odd factors = (a+1) * (b+1) * ...
         result = 1
         while N % 2 == 0:
             N /= 2
