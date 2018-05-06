@@ -20,10 +20,6 @@ public:
         if (digits.length() == 10) {
             return local;
         }
-        return digits.length() == 10 ?
-                   local : "+" +
-                           string(digits.length() - 10, '*') +
-                           "-" +
-                           local;
+        return "+" + string(digits.length() - 10, '*') + "-" + local;
     }
 };
