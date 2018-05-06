@@ -151,6 +151,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 803 | [Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit/) | [C++](./C++/bricks-falling-when-hit.cpp) [Python](./Python/bricks-falling-when-hit.py) | _O(r * c)_ | _O(r * c)_ | Hard || Union Find
 807 | [Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline/) | [C++](./C++/max-increase-to-keep-city-skyline.cpp) [Python](./Python/max-increase-to-keep-city-skyline.py) | _O(n^2)_ | _O(n)_ | Medium ||
 821 | [Shortest Distance to a Character](https://leetcode.com/problems/shortest-distance-to-a-character/) | [C++](./C++/shortest-distance-to-a-character.cpp) [Python](./Python/shortest-distance-to-a-character.py) | _O(n)_ | _O(1)_ | Easy ||
+830 | [Positions of Large Groups](https://leetcode.com/problems/positions-of-large-groups/) | [C++](./C++/positions-of-large-groups.cpp) [Python](./Python/positions-of-large-groups.py) | _O(n)_ | _O(1)_ | Easy ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -218,6 +219,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 819| [Most Common Word](https://leetcode.com/problems/most-common-word/) | [C++](./C++/most-common-word.cpp)  [Python](./Python/most-common-word.py) | _O(m + n)_ | _O(m + n)_ | Easy         |||
 820| [Short Encoding of Words](https://leetcode.com/problems/short-encoding-of-words/) | [C++](./C++/short-encoding-of-wordss.cpp)  [Python](./Python/short-encoding-of-words.py) | _O(n)_ | _O(t)_ | Medium         || Trie |
 824| [Goat Latin](https://leetcode.com/problems/goat-latin/) | [C++](./C++/goat-latin.cpp)  [Python](./Python/goat-latin.py) | _O(n + w^2)_ | _O(l)_ | Easy         |||
+831| [Masking Personal Information](https://leetcode.com/problems/masking-personal-information/) | [C++](./C++/masking-personal-information.cpp)  [Python](./Python/masking-personal-information.py) | _O(1)_ | _O(1)_ | Medium         |||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -459,7 +461,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 789 | [Escape The Ghosts](https://leetcode.com/problems/escape-the-ghosts/) | [C++](./C++/escape-the-ghosts.cpp) [Python](./Python/escape-the-ghosts.py) | _O(n)_ | _O(1)_ | Medium ||
 800 | [Similar RGB Color](https://leetcode.com/problems/similar-rgb-color/) | [C++](./C++/similar-rgb-color.cpp) [Python](./Python/similar-rgb-color.py) | _O(1)_ | _O(1)_ | Easy |📖||
 810 | [Chalkboard XOR Game](https://leetcode.com/problems/chalkboard-xor-game/) | [C++](./C++/chalkboard-xor-game.cpp) [Python](./Python/chalkboard-xor-game.py) | _O(1)_ | _O(1)_ | Hard |||
-812 | [Largest Triangle Area](https://leetcode.com/problems/largest-triangle-areae/) | [C++](./C++/largest-triangle-area.cpp) [Python](./Python/largest-triangle-area.py) | _O(n^3)_ | _O(1)_ | Easy |||
+812 | [Largest Triangle Area](https://leetcode.com/problems/largest-triangle-area/) | [C++](./C++/largest-triangle-area.cpp) [Python](./Python/largest-triangle-area.py) | _O(n^3)_ | _O(1)_ | Easy |||
+829 | [Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/) | [C++](./C++/consecutive-numbers-sum.cpp) [Python](./Python/consecutive-numbers-sum.py) | _O(sqrt(n))_ | _O(1)_ | Medium |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -505,6 +508,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 611| [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | [C++](./C++/valid-triangle-number.cpp)  [Python](./Python/valid-triangle-number.py) | _O(n^2)_ | _O(1)_ | Medium         ||
 777| [Swap Adjacent in LR String](https://leetcode.com/problems/swap-adjacent-in-lr-string/) | [C++](./C++/swap-adjacent-in-lr-string.cpp)  [Python](./Python/swap-adjacent-in-lr-string.py) | _O(n)_ | _O(1)_ | Medium         ||
 826| [Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work/) | [C++](./C++/most-profit-assigning-work.cpp)  [Python](./Python/most-profit-assigning-work.py) | _O(mlogm + nlogn)_ | _O(n)_ | Medium         ||
+828| [Unique Letter String](https://leetcode.com/problems/unique-letter-string/) | [C++](./C++/unique-letter-string.cpp)  [Python](./Python/unique-letter-string.py) | _O(n)_ | _O(1)_ | Hard         ||
 
 ## Recursion
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
