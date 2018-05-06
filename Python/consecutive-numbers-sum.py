@@ -40,7 +40,7 @@ class Solution(object):
             while N % i == 0:
                 N /= i
                 count += 1
-            result *= count + 1
+            result *= count+1
             i += 2
         if N > 1:
             result *= 2
