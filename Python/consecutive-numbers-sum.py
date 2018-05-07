@@ -29,8 +29,13 @@ class Solution(object):
         :type N: int
         :rtype: int
         """
+        # x + x+1 + x+2 + ... + x+l-1 = N = 2^k * M
+        # => l*x + (l-1)*l/2 = N
+        # => x = (N -(l-1)*l/2)/l= 2^k * M/l - (l-1)/2 is integer
+        # => l could be 2 or any odd factor of M (excluding M)
+        # => the answer is the number of all odd factors of M
         # if prime factorization of N is 2^k * p1^a * p2^b * ..
-        # => result is the number of all odd factors = (a+1) * (b+1) * ...
+        # => answer is the number of all odd factors = (a+1) * (b+1) * ...
         result = 1
         while N % 2 == 0:
             N /= 2
