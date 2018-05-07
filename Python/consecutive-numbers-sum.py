@@ -29,7 +29,7 @@ class Solution(object):
         :type N: int
         :rtype: int
         """
-        # x + x+1 + x+2 + ... + x+l-1 = N = 2^k * M
+        # x + x+1 + x+2 + ... + x+l-1 = N = 2^k * M, where M is odd
         # => l*x + (l-1)*l/2 = N
         # => x = (N -(l-1)*l/2)/l= 2^k * M/l - (l-1)/2 is integer
         # => l could be 2 or any odd factor of M (excluding M),
