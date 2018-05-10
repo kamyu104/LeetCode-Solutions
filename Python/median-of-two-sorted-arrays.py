@@ -81,8 +81,47 @@ class Solution_Generic(object):
 
         return binary_search(arrays, left, right, k, match)
 
+class Solution_3(object):
+    def findMedianSortedArrays(self, A, B):
+
+        if A is None and B is None:
+            return -1.0
+        lenA = len(A)
+        lenB = len(B)
+        lenn = lenA + lenB;
+
+        indexA,indexB,indexC = 0,0,0
+        C = [False for i in xrange(lenn)]
+        while indexA < lenA and indexB < lenB:
+            if A[indexA] < B[indexB]:
+                C[indexC] = A[indexA]
+                indexC += 1
+                indexA += 1
+            else:
+                C[indexC] = B[indexB]
+                indexC += 1
+                indexB += 1
+
+        while indexA < lenA:
+            C[indexC] = A[indexA]
+            indexC += 1
+            indexA += 1
+
+        while indexB < lenB:
+            C[indexC] = B[indexB]
+            indexC += 1
+            indexB += 1
+
+        indexM1 = (lenn - 1) / 2
+        indexM2 = lenn / 2
+
+        if (lenn % 2 == 0):
+            return (C[indexM1] + C[indexM2]) / 2.0
+        else:
+            return C[indexM2] / 1.0
 
 if __name__ == "__main__":
     print Solution().findMedianSortedArrays([1, 3, 5, 7], [2, 4, 6])
-    print Solution().findMedianSortedArrays([1, 3, 5], [2, 4, 6])
+    print Solution_Generic().findMedianSortedArrays([1, 3, 5], [2, 4, 6])
+    print Solution_3().findMedianSortedArrays([1, 3, 5], [2, 4, 6])
 
