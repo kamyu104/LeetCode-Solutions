@@ -32,14 +32,14 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        k = 0
         for i in nums:
             j = target - i
-            k += 1
-            tmp_nums = nums[k:]
+            tmp_nums_start_index = nums.index(i) + 1
+            tmp_nums = nums[tmp_nums_start_index:]
             if j in tmp_nums:
-                return [k - 1, tmp_nums.index(j) + k]
+                return [nums.index(i), tmp_nums_start_index + tmp_nums.index(j)]
 
 
 if __name__ == '__main__':
-    print Solution().twoSum((2, 7, 11, 15), 9)
+    print(Solution().twoSum((2, 7, 11, 15), 9))
+    print(Solution().twoSum2((2, 7, 11, 15), 9))
