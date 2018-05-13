@@ -9,8 +9,8 @@ public:
                 row[i] ^= 1;
                 if (i != row.size() + ~i) {
                     row[row.size() + ~i] ^= 1;
+                    swap(row[i], row[row.size() + ~i]);
                 }
-                swap(row[i], row[row.size() + ~i]);
             }
         }
         return A;
