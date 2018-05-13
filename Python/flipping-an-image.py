@@ -1,4 +1,4 @@
-# Time:  O(n)
+# Time:  O(n^2)
 # Space: O(1)
 
 # Given a binary matrix A, we want to flip the image horizontally,
