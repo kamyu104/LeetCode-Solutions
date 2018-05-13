@@ -152,6 +152,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 807 | [Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline/) | [C++](./C++/max-increase-to-keep-city-skyline.cpp) [Python](./Python/max-increase-to-keep-city-skyline.py) | _O(n^2)_ | _O(n)_ | Medium ||
 821 | [Shortest Distance to a Character](https://leetcode.com/problems/shortest-distance-to-a-character/) | [C++](./C++/shortest-distance-to-a-character.cpp) [Python](./Python/shortest-distance-to-a-character.py) | _O(n)_ | _O(1)_ | Easy ||
 830 | [Positions of Large Groups](https://leetcode.com/problems/positions-of-large-groups/) | [C++](./C++/positions-of-large-groups.cpp) [Python](./Python/positions-of-large-groups.py) | _O(n)_ | _O(1)_ | Easy ||
+832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | [C++](./C++/flipping-an-image.cpp) [Python](./Python/flipping-an-images.py) | _O(n)_ | _O(1)_ | Easy ||
+835 | [Image Overlap](https://leetcode.com/problems/image-overlap/) | [C++](./C++/image-overlap.cpp) [Python](./Python/image-overlap.py) | _O(n^4)_ | _O(n^2)_ | Medium ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -220,6 +222,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 820| [Short Encoding of Words](https://leetcode.com/problems/short-encoding-of-words/) | [C++](./C++/short-encoding-of-wordss.cpp)  [Python](./Python/short-encoding-of-words.py) | _O(n)_ | _O(t)_ | Medium         || Trie |
 824| [Goat Latin](https://leetcode.com/problems/goat-latin/) | [C++](./C++/goat-latin.cpp)  [Python](./Python/goat-latin.py) | _O(n + w^2)_ | _O(l)_ | Easy         |||
 831| [Masking Personal Information](https://leetcode.com/problems/masking-personal-information/) | [C++](./C++/masking-personal-information.cpp)  [Python](./Python/masking-personal-information.py) | _O(1)_ | _O(1)_ | Medium         |||
+833| [Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string/) | [C++](./C++/find-and-replace-in-string.cpp)  [Python](./Python/find-and-replace-in-string.py) | _O(n + m)_ | _O(n)_ | Medium         |||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -658,6 +661,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 797| [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | [C++](./C++/all-paths-from-source-to-target.cpp) [Python](./Python/all-paths-from-source-to-target.py) | _O(p + r * n)_          | _O(n)_          | Medium           |||
 802| [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/) | [C++](./C++/find-eventual-safe-states.cpp) [Python](./Python/find-eventual-safe-states.py) | _O(\|V\| + \|E\|)_          | _O(\|V\|)_ | Medium           |||
 827| [Making A Large Island](https://leetcode.com/problems/making-a-large-island/) | [C++](./C++/making-a-large-island.cpp) [Python](./Python/making-a-large-island.py) | _O(n^2)_          | _O(n^2)_          | Hard           |||
+834| [Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/) | [C++](./C++/sum-of-distances-in-tree.cpp) [Python](./Python/sum-of-distances-in-tree.py) | _O(n)_          | _O(n)_          | Hard           |||
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
