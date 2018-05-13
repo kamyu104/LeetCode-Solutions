@@ -1,4 +1,4 @@
-# Time:  O(n * m), m is the number of targets
+# Time:  O(n + m), m is the number of targets
 # Space: O(n)
 
 # To some string S, we will perform some replacement operations that
