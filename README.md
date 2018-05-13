@@ -152,7 +152,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 807 | [Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline/) | [C++](./C++/max-increase-to-keep-city-skyline.cpp) [Python](./Python/max-increase-to-keep-city-skyline.py) | _O(n^2)_ | _O(n)_ | Medium ||
 821 | [Shortest Distance to a Character](https://leetcode.com/problems/shortest-distance-to-a-character/) | [C++](./C++/shortest-distance-to-a-character.cpp) [Python](./Python/shortest-distance-to-a-character.py) | _O(n)_ | _O(1)_ | Easy ||
 830 | [Positions of Large Groups](https://leetcode.com/problems/positions-of-large-groups/) | [C++](./C++/positions-of-large-groups.cpp) [Python](./Python/positions-of-large-groups.py) | _O(n)_ | _O(1)_ | Easy ||
-832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | [C++](./C++/flipping-an-image.cpp) [Python](./Python/flipping-an-images.py) | _O(n)_ | _O(1)_ | Easy ||
+832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | [C++](./C++/flipping-an-image.cpp) [Python](./Python/flipping-an-image.py) | _O(n)_ | _O(1)_ | Easy ||
 835 | [Image Overlap](https://leetcode.com/problems/image-overlap/) | [C++](./C++/image-overlap.cpp) [Python](./Python/image-overlap.py) | _O(n^4)_ | _O(n^2)_ | Medium ||
 
 ## String
