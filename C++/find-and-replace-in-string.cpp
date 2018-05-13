@@ -11,15 +11,15 @@ public:
             }
         }
         string result;
-        int i = 0, last = 0;
-        for (i = 0; i < S.length(); ++i) {
+        int last = 0;
+        for (int i = 0; i < S.length(); ++i) {
             if (bucket[i].first) {
-                result += S.substr(last, i - last);
                 result += bucket[i].second;
                 last = i + bucket[i].first;
+            } else if (i >= last) {
+                result.push_back(S[i]);
             }
         }
-        result += S.substr(last, i - last);
         return result;
     }
 };
