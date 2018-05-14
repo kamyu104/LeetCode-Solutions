@@ -39,13 +39,13 @@ class Solution(object):
                 if nei != parent:
                     dfs(graph, nei, node, count, result)
                     count[node] += count[nei]
-                    result[node] += result[nei] + count[nei]
+                    result[node] += result[nei]+count[nei]
 
         def dfs2(graph, node, parent, count, result):
             for nei in graph[node]:
                 if nei != parent:
-                    result[nei] = result[node] - count[nei] + \
-                                  len(count) - count[nei]
+                    result[nei] = result[node]-count[nei] + \
+                                  len(count)-count[nei]
                     dfs2(graph, nei, node, count, result)
 
         graph = collections.defaultdict(list)
