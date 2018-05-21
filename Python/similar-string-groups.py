@@ -82,9 +82,12 @@ class Solution(object):
                     union_find.union_set(i1, i2)
         else:
             buckets = collections.defaultdict(list)
+            lookup = set()
             for i in xrange(len(A)):
                 word = list(A[i])
-                buckets["".join(word)].append(i)
+                if A[i] not in lookup:
+                    buckets[A[i]].append(i)
+                    lookup.add(A[i])
                 for j1, j2 in itertools.combinations(xrange(L), 2):
                     word[j1], word[j2] = word[j2], word[j1]
                     buckets["".join(word)].append(i)
