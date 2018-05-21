@@ -1,5 +1,5 @@
-# Time:  O(n * l * min(n, l^2))
-# Space: O(n * l^3)
+# Time:  O(n^2 * l) ~ O(n * l^4)
+# Space: O(n) ~ O(n * l^3)
 
 # Two strings X and Y are similar if we can swap two letters
 # (in different positions) of X, so that it equals Y.
@@ -92,7 +92,7 @@ class Solution(object):
                     word[j1], word[j2] = word[j2], word[j1]
                     buckets["".join(word)].append(i)
                     word[j1], word[j2] = word[j2], word[j1]
-            for word in A:
+            for word in A:  # Time:  O(n * l^4)
                 for i1, i2 in itertools.combinations(buckets[word], 2):
                     union_find.union_set(i1, i2)
         return union_find.size()
