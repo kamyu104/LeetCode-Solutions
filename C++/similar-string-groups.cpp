@@ -59,8 +59,8 @@ private:
     };
 };
 
-// Time:  O(n*l*min(n, l^2))
-// Space: O(n*l^3)
+// Time:  O(n * l * min(n, l^2))
+// Space: O(n * l^3)
 class Solution_MLE {
 public:
     int numSimilarGroups(vector<string>& A) {
