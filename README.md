@@ -223,6 +223,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 824| [Goat Latin](https://leetcode.com/problems/goat-latin/) | [C++](./C++/goat-latin.cpp)  [Python](./Python/goat-latin.py) | _O(n + w^2)_ | _O(l)_ | Easy         |||
 831| [Masking Personal Information](https://leetcode.com/problems/masking-personal-information/) | [C++](./C++/masking-personal-information.cpp)  [Python](./Python/masking-personal-information.py) | _O(1)_ | _O(1)_ | Medium         |||
 833| [Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string/) | [C++](./C++/find-and-replace-in-string.cpp)  [Python](./Python/find-and-replace-in-string.py) | _O(n + m)_ | _O(n)_ | Medium         |||
+839 | [Similar String Groups](https://leetcode.com/problems/similar-string-groups/) | [C++](./C++/similar-string-groups.cpp) [Python](./Python/similar-string-groups.py) | _O(n^2 * l)_ | _O(n)_ | Hard || Union Find
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -466,6 +467,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 810 | [Chalkboard XOR Game](https://leetcode.com/problems/chalkboard-xor-game/) | [C++](./C++/chalkboard-xor-game.cpp) [Python](./Python/chalkboard-xor-game.py) | _O(1)_ | _O(1)_ | Hard |||
 812 | [Largest Triangle Area](https://leetcode.com/problems/largest-triangle-area/) | [C++](./C++/largest-triangle-area.cpp) [Python](./Python/largest-triangle-area.py) | _O(n^3)_ | _O(1)_ | Easy |||
 829 | [Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/) | [C++](./C++/consecutive-numbers-sum.cpp) [Python](./Python/consecutive-numbers-sum.py) | _O(sqrt(n))_ | _O(1)_ | Medium |||
+836 | [Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/) | [C++](./C++/rectangle-overlap.cpp) [Python](./Python/rectangle-overlap.py) | _O(1)_ | _O(1)_ | Easy |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -784,6 +786,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 813 | [Largest Sum of Averages](https://leetcode.com/problems/largest-sum-of-averages/) | [C++](./C++/largest-sum-of-averages.cpp) [Python](./Python/largest-sum-of-averages.py) | _O(k * n^2)_ | _O(n)_ | Medium || |
 818 | [Race Car](https://leetcode.com/problems/race-car/) | [C++](./C++/race-car.cpp) [Python](./Python/race-car.py) | _O(nlogn)_ | _O(n)_ | Hard || |
 823 | [Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors/) | [C++](./C++/binary-trees-with-factors.cpp) [Python](./Python/binary-trees-with-factors.py) | _O(n^2)_ | _O(n)_ | Medium || |
+837 | [New 21 Game](https://leetcode.com/problems/new-21-game/) | [C++](./C++/new-21-game.cpp) [Python](./Python/new-21-game.py) | _O(n)_ | _O(n)_ | Medium || |
+838 | [Push Dominoes](https://leetcode.com/problems/push-dominoes/) | [C++](./C++/push-dominoes.cpp) [Python](./Python/push-dominoes.py) | _O(n)_ | _O(n)_ | Medium || |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
