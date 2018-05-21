@@ -12,7 +12,7 @@ public:
                 }
             }
         }
-        return union_find.count();
+        return union_find.size();
     }
     
 private:
@@ -28,7 +28,7 @@ private:
     
     class UnionFind {
         public:
-            UnionFind(const int n) : set_(n), count_(n) {
+            UnionFind(const int n) : set_(n), size_(n) {
                 iota(set_.begin(), set_.end(), 0);
             }
 
@@ -45,16 +45,16 @@ private:
                     return false;
                 }
                 set_[min(x_root, y_root)] = max(x_root, y_root);
-                --count_;
+                --size_;
                 return true;
             }
         
-            int count() const {
-                return count_;
+            int size() const {
+                return size_;
             }
 
         private:
             vector<int> set_;
-            int count_;
+            int size_;
     };
 };
