@@ -1,5 +1,5 @@
-# Time:  O(n*l*min(n, l^2))
-# Space: O(n*l^3)
+# Time:  O(n * l * min(n, l^2))
+# Space: O(n * l^3)
 
 # Two strings X and Y are similar if we can swap two letters
 # (in different positions) of X, so that it equals Y.
