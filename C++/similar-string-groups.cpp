@@ -76,9 +76,13 @@ public:
             }
         } else {
             unordered_map<string, vector<int>> buckets;
+            unordered_set<string> lookup;
             for (int i = 0; i < A.size(); ++i) {
                 auto word = A[i];
-                buckets[word].emplace_back(i);
+                if (!lookup.count(word)) {
+                    buckets[word].emplace_back(i);
+                    lookup.emplace(word);
+                }
                 for (int j1 = 0; j1 < L; ++j1) {
                     for (int j2 = 0; j2 < j1; ++j2) {
                         swap(word[j1], word[j2]);
