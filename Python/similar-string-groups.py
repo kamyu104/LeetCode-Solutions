@@ -84,6 +84,7 @@ class Solution(object):
             buckets = collections.defaultdict(list)
             for i in xrange(len(A)):
                 word = list(A[i])
+                buckets["".join(word)].append(i)
                 for j1, j2 in itertools.combinations(xrange(L), 2):
                     word[j1], word[j2] = word[j2], word[j1]
                     buckets["".join(word)].append(i)
