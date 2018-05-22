@@ -71,6 +71,8 @@ class Solution(object):
             for x, y in itertools.izip(a, b):
                 if x != y:
                     diff += 1
+                    if diff > 2:
+                        return False
             return diff == 2
 
         N, L = len(A), len(A[0])
