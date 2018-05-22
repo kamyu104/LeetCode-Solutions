@@ -20,7 +20,9 @@ private:
         int diff = 0;
         for (int i = 0; i < a.length(); ++i) {
             if (a[i] != b[i]) {
-                ++diff;
+                if (++diff > 2) {
+                    return false;
+                }
             }
         }
         return diff == 2;
@@ -103,11 +105,13 @@ public:
     }
     
 private:
-    bool isSimilar(const string &a, const string &b) {
+    bool isSimilar(const string& a, const string& b) {
         int diff = 0;
         for (int i = 0; i < a.length(); ++i) {
             if (a[i] != b[i]) {
-                ++diff;
+                if (++diff > 2) {
+                    return false;
+                }
             }
         }
         return diff == 2;
