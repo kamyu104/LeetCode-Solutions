@@ -1,5 +1,5 @@
 # Time:  O((|E| + |V|) * log|V|) = O(|E| * log|V|),
-#        if we can futher to use Fibonacci heap, it would be O(|E| + |V| * log|V|)
+#        if we can further to use Fibonacci heap, it would be O(|E| + |V| * log|V|)
 # Space: O(|E| + |V|) = O(|E|)
 
 # There are n cities connected by m flights. Each fight starts from city u and arrives at v with a price w.
