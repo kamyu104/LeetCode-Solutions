@@ -1,3 +1,6 @@
+# Time:  O(n!)
+# Space: O(n)
+
 # There are N rooms and you start in room 0.
 # Each room has a distinct number in 0, 1, 2, ..., N-1,
 # and each room may have some keys to access the next room.
