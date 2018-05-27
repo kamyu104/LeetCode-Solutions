@@ -65,8 +65,8 @@ class Solution(object):
 
         k = 3
         result = 0
-        for r in xrange(len(grid)-2):
-            for c in xrange(len(grid[r])-2):
+        for r in xrange(len(grid)-k+1):
+            for c in xrange(len(grid[r])-k+1):
                 if magic(grid, r, c):
                     result += 1
         return result
