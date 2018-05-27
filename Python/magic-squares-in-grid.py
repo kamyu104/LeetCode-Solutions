@@ -44,24 +44,26 @@ class Solution(object):
         :rtype: int
         """
         def magic(grid, r, c):
+            expect = k * (k**2+1) // 2
             nums = set()
             min_num = float("inf")
             sum_diag, sum_anti = 0, 0
-            for i in xrange(3):
+            for i in xrange(k):
                 sum_diag += grid[r+i][c+i]
-                sum_anti += grid[r+i][c+2-i]
+                sum_anti += grid[r+i][c+k-1-i]
                 sum_r, sum_c = 0, 0
-                for j in xrange(3):
+                for j in xrange(k):
                     min_num = min(min_num, grid[r+i][c+j])
                     nums.add(grid[r+i][c+j])
                     sum_r += grid[r+i][c+j]
                     sum_c += grid[r+j][c+i]
-                if not (sum_r == sum_c == 15):
+                if not (sum_r == sum_c == expect):
                     return False
-            return sum_diag == sum_anti == 15 and \
-                len(nums) == 9 and \
+            return sum_diag == sum_anti == expect and \
+                len(nums) == k**2 and \
                 min_num == 1
 
+        k = 3
         result = 0
         for r in xrange(len(grid)-2):
             for c in xrange(len(grid[r])-2):
