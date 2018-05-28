@@ -824,7 +824,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 763 | [Partition Labels](https://leetcode.com/problems/partition-labels/) | [C++](./C++/partition-labels.cpp) [Python](./Python/partition-labels.py) | _O(n)_ | _O(n)_ | Medium | |
 767 | [Reorganize String](https://leetcode.com/problems/reorganize-string/) | [C++](./C++/reorganize-string.cpp) [Python](./Python/reorganize-string.py) | _O(n)_ | _O(1)_ | Medium | |
 798 | [Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score/) | [C++](./C++/smallest-rotation-with-highest-score.cpp) [Python](./Python/smallest-rotation-with-highest-score.py) | _O(n)_ | _O(1)_ | Hard | |
-843 | [Guess the Word](https://leetcode.com/problems/guess-the-word/) | [C++](./C++/guess-the-word.cpp) [Python](./Python/guess-the-word.py) | _O(n^2)_ | _O(n)_ | Hard | |
+843 | [Guess the Word](https://leetcode.com/problems/guess-the-word/) | [C++](./C++/guess-the-word.cpp) [Python](./Python/guess-the-word.py) | _O(n^2)_ | _O(n)_ | Hard | MinMax |
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
