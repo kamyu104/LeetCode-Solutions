@@ -70,7 +70,7 @@ class Solution(object):
         :type master: Master
         :rtype: None
         """
-        def solve(possible, lookup):
+        def solve(H, possible, lookup):
             min_max_group, best_guess = possible, None
             for guess in xrange(len(H)):
                 if guess not in lookup:
@@ -89,7 +89,7 @@ class Solution(object):
         possible, lookup = range(len(wordlist)), set()
         n = 0
         while possible and n < 6:
-            guess = solve(possible, lookup)
+            guess = solve(H, possible, lookup)
             n = master.guess(wordlist[guess])
             possible = [j for j in possible if H[guess][j] == n]
             lookup.add(guess)
