@@ -71,16 +71,16 @@ class Solution(object):
         :rtype: None
         """
         def solve(possible, lookup):
-            min_max_size, best_guess = possible, None
+            min_max_group, best_guess = possible, None
             for guess in xrange(len(H)):
                 if guess not in lookup:
                     groups = [[] for _ in xrange(7)]
                     for j in possible:
                         if j != guess:
                             groups[H[guess][j]].append(j)
-                    max_size = max(groups, key=len)
-                    if len(max_size) < len(min_max_size):
-                        min_max_size, best_guess = max_size, guess
+                    max_group = max(groups, key=len)
+                    if len(max_group) < len(min_max_group):
+                        min_max_group, best_guess = max_group, guess
             return best_guess
 
         H = [[sum(a == b for a, b in itertools.izip(wordlist[i], wordlist[j]))
