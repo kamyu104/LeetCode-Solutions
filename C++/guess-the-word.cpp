@@ -19,7 +19,6 @@ public:
             }
         }
 
-        unordered_set<int> lookup;
         vector<int> possible(wordlist.size());
         iota(possible.begin(), possible.end(), 0);
         int n = 0;
