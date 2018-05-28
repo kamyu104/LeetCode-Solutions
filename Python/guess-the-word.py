@@ -70,6 +70,40 @@ class Solution(object):
         :type master: Master
         :rtype: None
         """
+        def solve(possible, lookup):
+            min_max_size, best_guess = possible, None
+            for guess in xrange(len(H)):
+                if guess not in lookup:
+                    groups = [[] for _ in xrange(7)]
+                    for j in possible:
+                        if j != guess:
+                            groups[H[guess][j]].append(j)
+                    max_size = max(groups, key=len)
+                    if len(max_size) < len(min_max_size):
+                        min_max_size, best_guess = max_size, guess
+            return best_guess
+
+        H = [[sum(a == b for a, b in itertools.izip(wordlist[i], wordlist[j]))
+                  for j in xrange(len(wordlist))]
+                  for i in xrange(len(wordlist))]
+        possible, lookup = range(len(wordlist)), set()
+        n = 0
+        while possible and n < 6:
+            guess = solve(possible, lookup)
+            n = master.guess(wordlist[guess])
+            possible = [j for j in possible if H[guess][j] == n]
+            lookup.add(guess)
+
+
+# Time:  O(n^2)
+# Space: O(n)
+class Solution2(object):
+    def findSecretWord(self, wordlist, master):
+        """
+        :type wordlist: List[Str]
+        :type master: Master
+        :rtype: None
+        """
         def match(a, b):
             matches = 0
             for i in xrange(len(a)):
