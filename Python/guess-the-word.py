@@ -102,19 +102,24 @@ class Solution2(object):
         :type master: Master
         :rtype: None
         """
-        def match(a, b):
-            matches = 0
-            for i in xrange(len(a)):
-                if a[i] == b[i]:
-                    matches += 1
-            return matches
+        def solve(H, possible):
+            min_max_group, best_guess = possible, None
+            for guess in possible:
+                groups = [[] for _ in xrange(7)]
+                for j in possible:
+                    if j != guess:
+                        groups[H[guess][j]].append(j)
+                max_group = groups[0]
+                if len(max_group) < len(min_max_group):
+                    min_max_group, best_guess = max_group, guess
+            return best_guess
 
-        i, n = 0, 0
-        while i < 10 and n < 6:
-            count = collections.Counter(w1 for w1, w2 in
-                                        itertools.permutations(wordlist, 2)
-                                        if match(w1, w2) == 0)
-            guess = min(wordlist, key=lambda w: count[w])
-            n = master.guess(guess)
-            wordlist = [w for w in wordlist if match(w, guess) == n]
-            i += 1
+        H = [[sum(a == b for a, b in itertools.izip(wordlist[i], wordlist[j]))
+                  for j in xrange(len(wordlist))]
+                  for i in xrange(len(wordlist))]
+        possible = range(len(wordlist))
+        n = 0
+        while possible and n < 6:
+            guess = solve(H, possible)
+            n = master.guess(wordlist[guess])
+            possible = [j for j in possible if H[guess][j] == n]
