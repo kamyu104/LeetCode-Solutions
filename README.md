@@ -156,6 +156,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 835 | [Image Overlap](https://leetcode.com/problems/image-overlap/) | [C++](./C++/image-overlap.cpp) [Python](./Python/image-overlap.py) | _O(n^4)_ | _O(n^2)_ | Medium ||
 840 | [Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid/) | [C++](./C++/magic-squares-in-grid.cpp) [Python](./Python/magic-squares-in-grid.py) | _O(m * n)_ | _O(1)_ | Easy ||
 842 | [Split Array into Fibonacci Sequence](https://leetcode.com/problems/split-array-into-fibonacci-sequence/) | [C++](./C++/split-array-into-fibonacci-sequence.cpp) [Python](./Python/split-array-into-fibonacci-sequence.py) | _O(n^3)_ | _O(n)_ | Medium ||
+845 | [Longest Mountain in Array](https://leetcode.com/problems/longest-mountain-in-array/) | [C++](./C++/longest-mountain-in-array.cpp) [Python](./Python/longest-mountain-in-array.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -301,6 +302,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 378 | [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) | [C++](./C++/kth-smallest-element-in-a-sorted-matrix.cpp) [Python](./Python/kth-smallest-element-in-a-sorted-matrix.py) | _O(k * log(min(n, m, k)))_ | _O(min(n, m, k))_ | Medium | LintCode ||
 407 | [Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/) | [C++](./C++/trapping-rain-water-ii.cpp) [Python](./Python/trapping-rain-water-ii.py) | _O(m * n * (logm + logn))_ | _O(m * n)_ | Hard | LintCode ||
 632 | [Smallest Range](https://leetcode.com/problems/smallest-range/) | [C++](./C++/smallest-range.cpp) [Python](./Python/smallest-range.py) | _O(nlogk)_ | _O(k)_ | Hard |||
+846 | [Hand of Straights](https://leetcode.com/problems/hand-of-straights/) | [C++](./C++/hand-of-straights.cpp) [Python](./Python/hand-of-straights.py) | _O(nlogn)_ | _O(n)_ | Medium |||
 
 ## Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -516,6 +518,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 777| [Swap Adjacent in LR String](https://leetcode.com/problems/swap-adjacent-in-lr-string/) | [C++](./C++/swap-adjacent-in-lr-string.cpp)  [Python](./Python/swap-adjacent-in-lr-string.py) | _O(n)_ | _O(1)_ | Medium         ||
 826| [Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work/) | [C++](./C++/most-profit-assigning-work.cpp)  [Python](./Python/most-profit-assigning-work.py) | _O(mlogm + nlogn)_ | _O(n)_ | Medium         ||
 828| [Unique Letter String](https://leetcode.com/problems/unique-letter-string/) | [C++](./C++/unique-letter-string.cpp)  [Python](./Python/unique-letter-string.py) | _O(n)_ | _O(1)_ | Hard         ||
+844 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | [C++](./C++/backspace-string-compare.cpp) [Python](./Python/backspace-string-compare.py) | _O(m + n)_ | _O(1)_ | Easy ||
 
 ## Recursion
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -791,6 +794,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 823 | [Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors/) | [C++](./C++/binary-trees-with-factors.cpp) [Python](./Python/binary-trees-with-factors.py) | _O(n^2)_ | _O(n)_ | Medium || |
 837 | [New 21 Game](https://leetcode.com/problems/new-21-game/) | [C++](./C++/new-21-game.cpp) [Python](./Python/new-21-game.py) | _O(n)_ | _O(n)_ | Medium || |
 838 | [Push Dominoes](https://leetcode.com/problems/push-dominoes/) | [C++](./C++/push-dominoes.cpp) [Python](./Python/push-dominoes.py) | _O(n)_ | _O(n)_ | Medium || |
+847 | [Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/) | [C++](./C++/shortest-path-visiting-all-nodes.cpp) [Python](./Python/shortest-path-visiting-all-nodes.py) | _O(n *2^n)_ | _O(n * 2^n)_ | Hard || BFS |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
