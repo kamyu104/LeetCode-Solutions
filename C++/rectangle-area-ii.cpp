@@ -46,20 +46,20 @@ public:
             total_(0) {
         }
 
-        int rangeMid() const {
+        int mid() const {
             return start_ + (end_ - start_) / 2;
         }
 
         SegmentTreeNode *left() {
             if (left_ == nullptr) {
-                left_ = new SegmentTreeNode(start_, rangeMid(), X_);
+                left_ = new SegmentTreeNode(start_, mid(), X_);
             }
             return left_;
         }
 
         SegmentTreeNode *right() {
             if (right_ == nullptr) {
-                right_ = new SegmentTreeNode(rangeMid(), end_, X_);
+                right_ = new SegmentTreeNode(mid(), end_, X_);
             }
             return right_;
         }
@@ -75,8 +75,8 @@ public:
             if (start_ == i && end_ == j) {
                 count_ += val;
             } else {
-                left()->update(i, min(rangeMid(), j), val);
-                right()->update(max(rangeMid(), i), j, val);
+                left()->update(i, min(mid(), j), val);
+                right()->update(max(mid(), i), j, val);
             }
             if (count_ > 0) {
                 total_ = X_[end_] - X_[start_];
