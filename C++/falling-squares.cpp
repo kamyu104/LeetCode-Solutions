@@ -11,7 +11,7 @@ public:
             auto it0 = heights.upper_bound(p.first);
             auto it1 = heights.lower_bound(p.first + p.second);
             int h0 = prev(it0)->second;
-            int h1 = (it1->first == p.first + p.second) ? it1->second : prev(it1)->second;
+            int h1 = prev(it1)->second;
             for (auto it = it0; it != it1; ++it) {
                 h0 = max(h0, it->second);
             }
