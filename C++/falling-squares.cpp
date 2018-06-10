@@ -7,21 +7,21 @@ public:
         vector<int> result;
         map<int, int> heights;
         int maxH = heights[-1] = 0;
-		for (const auto& p : positions) {
-			auto it0 = heights.upper_bound(p.first);
+        for (const auto& p : positions) {
+            auto it0 = heights.upper_bound(p.first);
             auto it1 = heights.lower_bound(p.first + p.second);
-			int h0 = prev(it0)->second;
+            int h0 = prev(it0)->second;
             int h1 = (it1->first == p.first + p.second) ? it1->second : prev(it1)->second;
-			for (auto it = it0; it != it1; ++it) {
+            for (auto it = it0; it != it1; ++it) {
                 h0 = max(h0, it->second);
             }
-			heights.erase(it0, it1);
-			heights[p.first] = h0 + p.second;
-			heights[p.first + p.second] = h1;
-			maxH = max(maxH, h0 + p.second);
-			result.emplace_back(maxH);
-		}
-		return result;
+            heights.erase(it0, it1);
+            heights[p.first] = h0 + p.second;
+            heights[p.first + p.second] = h1;
+            maxH = max(maxH, h0 + p.second);
+            result.emplace_back(maxH);
+        }
+        return result;
     }
 };
 
