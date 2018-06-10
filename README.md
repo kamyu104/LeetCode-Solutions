@@ -157,6 +157,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 840 | [Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid/) | [C++](./C++/magic-squares-in-grid.cpp) [Python](./Python/magic-squares-in-grid.py) | _O(m * n)_ | _O(1)_ | Easy ||
 842 | [Split Array into Fibonacci Sequence](https://leetcode.com/problems/split-array-into-fibonacci-sequence/) | [C++](./C++/split-array-into-fibonacci-sequence.cpp) [Python](./Python/split-array-into-fibonacci-sequence.py) | _O(n^3)_ | _O(n)_ | Medium ||
 845 | [Longest Mountain in Array](https://leetcode.com/problems/longest-mountain-in-array/) | [C++](./C++/longest-mountain-in-array.cpp) [Python](./Python/longest-mountain-in-array.py) | _O(n)_ | _O(1)_ | Medium ||
+849 | [Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) | [C++](./C++/maximize-distance-to-closest-person.cpp) [Python](./Python/maximize-distance-to-closest-person.py) | _O(n)_ | _O(1)_ | Easy ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -227,6 +228,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 831| [Masking Personal Information](https://leetcode.com/problems/masking-personal-information/) | [C++](./C++/masking-personal-information.cpp)  [Python](./Python/masking-personal-information.py) | _O(1)_ | _O(1)_ | Medium         |||
 833| [Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string/) | [C++](./C++/find-and-replace-in-string.cpp)  [Python](./Python/find-and-replace-in-string.py) | _O(n + m)_ | _O(n)_ | Medium         |||
 839 | [Similar String Groups](https://leetcode.com/problems/similar-string-groups/) | [C++](./C++/similar-string-groups.cpp) [Python](./Python/similar-string-groups.py) | _O(n^2 * l)_ | _O(n)_ | Hard || Union Find
+848 | [Shifting Letters](https://leetcode.com/problems/shifting-letters/) | [C++](./C++/shifting-letters.cpp) [Python](./Python/shifting-letters.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -343,7 +345,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 687 | [Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/) | [C++](./C++/longest-univalue-path.cpp) [Python](./Python/longest-univalue-path.py) | _O(n)_ | _O(h)_ | Easy ||
 699 | [Falling Squares](https://leetcode.com/problems/falling-squares/) | [C++](./C++/falling-squares.cpp) [Python](./Python/falling-squares.py) | _O(nlogn)_ | _O(n)_ | Hard || Segment Tree |
 814 | [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | [C++](./C++/binary-tree-pruning.cpp) [Python](./Python/binary-tree-pruning.py) | _O(n)_ | _O(h)_ | Medium || DFS |
-
+850 | [Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii/) | [C++](./C++/rectangle-area-ii.cpp) [Python](./Python/rectangle-area-ii.py) | _O(nlogn)_ | _O(n)_ | Hard || Segment Tree |
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
@@ -670,6 +672,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 827| [Making A Large Island](https://leetcode.com/problems/making-a-large-island/) | [C++](./C++/making-a-large-island.cpp) [Python](./Python/making-a-large-island.py) | _O(n^2)_          | _O(n^2)_          | Hard           |||
 834| [Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/) | [C++](./C++/sum-of-distances-in-tree.cpp) [Python](./Python/sum-of-distances-in-tree.py) | _O(n)_          | _O(n)_          | Hard           |||
 841| [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) | [C++](./C++/keys-and-rooms.cpp) [Python](./Python/keys-and-rooms.py) | _O(n!)_          | _O(n)_          | Medium           |||
+851| [Loud and Rich](https://leetcode.com/problems/loud-and-rich/) | [C++](./C++/loud-and-rich.cpp) [Python](./Python/loud-and-rich.py) | _O(q + r)_          | _O(q + r)_          | Medium           |||
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
