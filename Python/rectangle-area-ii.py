@@ -1,4 +1,4 @@
-# Time:  O(logn)
+# Time:  O(nlogn)
 # Space: O(n)
 
 # We are given a list of (axis-aligned) rectangles.
