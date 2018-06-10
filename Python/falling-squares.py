@@ -67,6 +67,9 @@
 
 # Time:  O(nlogn) ~ O(n^2)
 # Space: O(n)
+import bisect
+
+
 class Solution(object):
     def fallingSquares(self, positions):
         result = []
@@ -82,9 +85,6 @@ class Solution(object):
             maxH = max(maxH, high)
             result.append(maxH)
         return result
-
-
-import bisect
 
 
 class SegmentTree(object):
