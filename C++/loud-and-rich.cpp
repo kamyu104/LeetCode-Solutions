@@ -1,5 +1,5 @@
-# Time:  O(q + r)
-# Space: O(q + r)
+// Time:  O(q + r)
+// Space: O(q + r)
 
 class Solution {
 public:
