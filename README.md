@@ -285,6 +285,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 739| [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | [C++](./C++/daily-temperatures.cpp) [Python](./Python/daily-temperatures.py) | _O(n)_  | _O(n)_         | Medium           ||
 770| [Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/) | [C++](./C++/basic-calculator-iv.cpp) [Python](./Python/basic-calculator-iv.py) | add: _O(d * t)_<br> sub: _O(d * t)_<br> mul: _O(d * t^2)_<br> eval: _O(d * t)_ <br> to_list: _O(d * tlogt)_  | _O(e + d * t)_ | Hard           ||
 772| [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/) | [C++](./C++/basic-calculator-iii.cpp) [Python](./Python/basic-calculator-iii.py) | _O(n)_  | _O(n)_         | Hard           ||
+853| [Car Fleet](https://leetcode.com/problems/car-fleet/) | [C++](./C++/car-fleet.cpp) [Python](./Python/car-fleet.py) | _O(nlogn)_  | _O(n)_         | Medium           ||
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -305,6 +306,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 407 | [Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/) | [C++](./C++/trapping-rain-water-ii.cpp) [Python](./Python/trapping-rain-water-ii.py) | _O(m * n * (logm + logn))_ | _O(m * n)_ | Hard | LintCode ||
 632 | [Smallest Range](https://leetcode.com/problems/smallest-range/) | [C++](./C++/smallest-range.cpp) [Python](./Python/smallest-range.py) | _O(nlogk)_ | _O(k)_ | Hard |||
 846 | [Hand of Straights](https://leetcode.com/problems/hand-of-straights/) | [C++](./C++/hand-of-straights.cpp) [Python](./Python/hand-of-straights.py) | _O(nlogn)_ | _O(n)_ | Medium |||
+855 | [Exam Room](https://leetcode.com/problems/exam-room/) | [C++](./C++/exam-room.cpp) [Python](./Python/exam-room.py) | seat: _O(logn)_ <br> leave: _O(logn)_ | _O(n)_ | Medium || BST, Hash |
 
 ## Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -587,6 +589,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 774 | [Minimize Max Distance to Gas Station](https://leetcode.com/problems/minimize-max-distance-to-gas-station/) | [C++](./C++/minimize-max-distance-to-gas-station.cpp) [Python](./Python/minimize-max-distance-to-gas-station.py) | _O(nlogr)_ | _O(1)_ | Hard | |
 786 | [K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/) | [C++](./C++/k-th-smallest-prime-fraction.cpp) [Python](./Python/k-th-smallest-prime-fraction.py) | _O(nlogr)_ | _O(1)_ | Hard | |
 793 | [Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/) | [C++](./C++/preimage-size-of-factorial-zeroes-function.cpp) [Python](./Python/preimage-size-of-factorial-zeroes-function.py) | _O((logn)^2)_ | _O(1)_ | Hard | |
+852 | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/) | [C++](./C++/peak-index-in-a-mountain-array.cpp) [Python](./Python/peak-index-in-a-mountain-array.py) | _O(logn)_ | _O(1)_ | Easy | |
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -631,6 +634,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 773|[Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle/)| [C++](./C++/sliding-puzzle.cpp) [Python](./Python/sliding-puzzle.py)| _O((m * n) * (m * n)!)_ | _O((m * n) * (m * n)!)_ | Hard | | `A* Search Algorithm` |
 787|[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)| [C++](./C++/cheapest-flights-within-k-stops.cpp) [Python](./Python/cheapest-flights-within-k-stops.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium | | `Dijkstra's algorithm` |
 815|[Bus Routes](https://leetcode.com/problems/bus-routes/)| [C++](./C++/bus-routes.cpp) [Python](./Python/bus-routes.py)| _O(\|E\| + \|V\|)_ | _O(\|E\| + \|V\|)_ | Hard | | |
+854|[ K-Similar Strings](https://leetcode.com/problems/k-similar-strings/)| [C++](./C++/k-similar-strings.cpp) [Python](./Python/k-similar-strings.py)| _O(n * n!/(c_a!*...*c_z!))_ | _O(n * n!/(c_a!*...*c_z!))_ | Hard | | |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
