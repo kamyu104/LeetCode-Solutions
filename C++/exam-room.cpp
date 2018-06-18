@@ -66,7 +66,7 @@ public:
                 make_shared<Segment>(neighbors.first, neighbors.second,
                                      neighbors.second,
                                      neighbors.first + 1));
-            seats[neighbors.second].first = -1;
+            seats[neighbors.second].first = neighbors.first;
         } else if (neighbors.second == num_) {
             max_heap.emplace(
                 make_shared<Segment>(neighbors.first, neighbors.second,
