@@ -1,7 +1,7 @@
-# Time:  O(s * s!/(a!*...*z!)), s is the length of A, B,
-#                               a...z is the count of each alphabet,
-#                               sum(a...z) = s
-# Space: O(s * s!/(a!*...*z!))
+# Time:  O(n * n!/(c_a!*...*c_z!), n is the length of A, B,
+#                                  c_a...c_z is the count of each alphabet,
+#                                  n = sum(c_a...c_z)
+# Space: O(n * n!/(c_a!*...*c_z!)
 
 # Strings A and B are K-similar (for some non-negative integer K)
 # if we can swap the positions of two letters
