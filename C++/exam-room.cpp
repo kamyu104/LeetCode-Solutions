@@ -94,9 +94,9 @@ private:
         }
     };
     
-    using S = shared_ptr<Segment>;
+    template <typename T>
     struct Compare {
-        bool operator()(const S& a, const S& b) {
+        bool operator()(const T& a, const T& b) {
             return a->dis == b->dis ?
                 greater<int>()(a->l, b->l) :
                 less<int>()(a->dis, b->dis);
@@ -104,7 +104,8 @@ private:
     };
     
     int num_;
-    priority_queue<S, vector<S>, Compare> max_heap;
+    using S = shared_ptr<Segment>;
+    priority_queue<S, vector<S>, Compare<S>> max_heap;
     unordered_map<int, pair<int, int>> neighbors;
 };
 
