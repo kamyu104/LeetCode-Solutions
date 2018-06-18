@@ -52,10 +52,10 @@ public:
         const auto neighbors = seats_[p];
         seats_.erase(p);
         const auto& left_segment = make_pair(neighbors.first, p);
-        const auto& right_segment = make_pair(p, neighbors.second);
         if (segment_iters_.count(left_segment)) {
             max_bst_.erase(segment_iters_[left_segment]); segment_iters_.erase(left_segment);
         }
+        const auto& right_segment = make_pair(p, neighbors.second);
         if (segment_iters_.count(right_segment)) {
             max_bst_.erase(segment_iters_[right_segment]); segment_iters_.erase(right_segment);
         }
