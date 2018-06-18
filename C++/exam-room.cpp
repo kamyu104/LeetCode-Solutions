@@ -5,6 +5,114 @@
 class ExamRoom {
 public:
     ExamRoom(int N) : num_(N) {
+        max_bst.emplace(make_shared<Segment>(-1, num_, num_, 0));
+        seats[-1] = make_pair(-1, num_);
+        seats[num_] = make_pair(-1, num_);
+    }
+    
+    int seat() {
+        while (!seats.count((*max_bst.cbegin())->l) ||
+               !seats.count((*max_bst.cbegin())->r) ||
+               seats[(*max_bst.cbegin())->l].second != (*max_bst.cbegin())->r ||
+               seats[(*max_bst.cbegin())->r].first != (*max_bst.cbegin())->l) {
+            max_bst.erase(max_bst.begin());  // lazy deletion
+        }
+        
+        const auto curr = *max_bst.begin(); max_bst.erase(max_bst.begin());
+        if (curr->l == -1 && curr->r == num_) {
+            max_bst.emplace(
+                make_shared<Segment>(curr->l + 1, curr->r,
+                                     curr->r - 1,
+                                     curr->r - 1));
+            seats[curr->l + 1] = make_pair(curr->l, curr->r);
+        } else if (curr->l == -1) {
+            max_bst.emplace(
+                make_shared<Segment>(curr->l + 1, curr->r,
+                                     curr->r / 2,
+                                     curr->r / 2));
+            seats[curr->l + 1] = make_pair(curr->l, curr->r);
+        } else if (curr->r == num_) {
+            max_bst.emplace(
+                make_shared<Segment>(curr->l, curr->r - 1,
+                                     (curr->r - 1 - curr->l) / 2,
+                                     (curr->r - 1 - curr->l) / 2 + curr->l)); 
+            seats[curr->r - 1] = make_pair(curr->l, curr->r);
+        } else {
+            max_bst.emplace(
+                make_shared<Segment>(curr->l, curr->pos,
+                                     (curr->pos - curr->l) / 2,
+                                     (curr->pos - curr->l) / 2 + curr->l));
+            max_bst.emplace(
+                make_shared<Segment>(curr->pos, curr->r,
+                                     (curr->r - curr->pos) / 2,
+                                     (curr->r - curr->pos) / 2 + curr->pos));
+            seats[curr->pos] = make_pair(curr->l, curr->r);
+        }
+        seats[curr->l].second = curr->pos;
+        seats[curr->r].first = curr->pos;
+        return curr->pos;
+    }
+    
+    void leave(int p) {
+        const auto neighbors = seats[p];
+        seats.erase(p);
+        if (neighbors.first == -1 && neighbors.second == num_) {
+            max_bst.emplace(
+                make_shared<Segment>(neighbors.first, neighbors.second,
+                                     neighbors.second,
+                                     neighbors.first + 1));
+        } else if (neighbors.first == -1) {
+            max_bst.emplace(
+                make_shared<Segment>(neighbors.first, neighbors.second,
+                                     neighbors.second,
+                                     neighbors.first + 1));
+        } else if (neighbors.second == num_) {
+            max_bst.emplace(
+                make_shared<Segment>(neighbors.first, neighbors.second,
+                                     neighbors.second - 1 - neighbors.first,
+                                     neighbors.second - 1));
+        } else {
+            max_bst.emplace(
+                make_shared<Segment>(neighbors.first, neighbors.second,
+                                     (neighbors.second - neighbors.first) / 2,
+                                     (neighbors.second - neighbors.first) / 2 + neighbors.first));
+        }
+        seats[neighbors.first].second = neighbors.second;
+        seats[neighbors.second].first = neighbors.first;
+    }
+    
+private:
+    struct Segment {
+        int l;
+        int r;
+        int dis;
+        int pos;
+        Segment(int l, int r, int dis, int pos) : 
+            l(l), r(r), dis(dis), pos(pos) {
+        }
+    };
+    
+    template <typename T>
+    struct Compare {
+        bool operator()(const T& a, const T& b) {
+            return a->dis == b->dis ?
+                less<int>()(a->l, b->l) :
+                greater<int>()(a->dis, b->dis);
+        }
+    };
+    
+    int num_;
+    using S = shared_ptr<Segment>;
+    multiset<S, Compare<S>> max_bst;
+    unordered_map<int, pair<int, int>> seats;
+};
+
+// Time:  seat:  O(logn) on average,
+//        leave: O(logn)
+// Space: O(n)
+class ExamRoom2 {
+public:
+    ExamRoom(int N) : num_(N) {
         max_heap.emplace(make_shared<Segment>(-1, num_, num_, 0));
         seats[-1] = make_pair(-1, num_);
         seats[num_] = make_pair(-1, num_);
