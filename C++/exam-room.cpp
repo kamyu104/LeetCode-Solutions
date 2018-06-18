@@ -5,80 +5,80 @@
 class ExamRoom {
 public:
     ExamRoom(int N) : num_(N) {
-        max_bst.emplace(make_shared<Segment>(-1, num_, num_, 0));
-        seats[-1] = make_pair(-1, num_);
-        seats[num_] = make_pair(-1, num_);
+        max_bst_.emplace(make_shared<Segment>(-1, num_, num_, 0));
+        seats_[-1] = make_pair(-1, num_);
+        seats_[num_] = make_pair(-1, num_);
     }
     
     int seat() {
-        while (!seats.count((*max_bst.cbegin())->l) ||
-               !seats.count((*max_bst.cbegin())->r) ||
-               seats[(*max_bst.cbegin())->l].second != (*max_bst.cbegin())->r ||
-               seats[(*max_bst.cbegin())->r].first != (*max_bst.cbegin())->l) {
-            max_bst.erase(max_bst.begin());  // lazy deletion
+        while (!seats_.count((*max_bst_.cbegin())->l) ||
+               !seats_.count((*max_bst_.cbegin())->r) ||
+               seats_[(*max_bst_.cbegin())->l].second != (*max_bst_.cbegin())->r ||
+               seats_[(*max_bst_.cbegin())->r].first != (*max_bst_.cbegin())->l) {
+            max_bst_.erase(max_bst_.begin());  // lazy deletion
         }
         
-        const auto curr = *max_bst.begin(); max_bst.erase(max_bst.begin());
+        const auto curr = *max_bst_.begin(); max_bst_.erase(max_bst_.begin());
         if (curr->l == -1 && curr->r == num_) {
-            max_bst.emplace(
+            max_bst_.emplace(
                 make_shared<Segment>(curr->l + 1, curr->r,
                                      curr->r - 1,
                                      curr->r - 1));
-            seats[curr->l + 1] = make_pair(curr->l, curr->r);
+            seats_[curr->l + 1] = make_pair(curr->l, curr->r);
         } else if (curr->l == -1) {
-            max_bst.emplace(
+            max_bst_.emplace(
                 make_shared<Segment>(curr->l + 1, curr->r,
                                      curr->r / 2,
                                      curr->r / 2));
-            seats[curr->l + 1] = make_pair(curr->l, curr->r);
+            seats_[curr->l + 1] = make_pair(curr->l, curr->r);
         } else if (curr->r == num_) {
-            max_bst.emplace(
+            max_bst_.emplace(
                 make_shared<Segment>(curr->l, curr->r - 1,
                                      (curr->r - 1 - curr->l) / 2,
                                      (curr->r - 1 - curr->l) / 2 + curr->l)); 
-            seats[curr->r - 1] = make_pair(curr->l, curr->r);
+            seats_[curr->r - 1] = make_pair(curr->l, curr->r);
         } else {
-            max_bst.emplace(
+            max_bst_.emplace(
                 make_shared<Segment>(curr->l, curr->pos,
                                      (curr->pos - curr->l) / 2,
                                      (curr->pos - curr->l) / 2 + curr->l));
-            max_bst.emplace(
+            max_bst_.emplace(
                 make_shared<Segment>(curr->pos, curr->r,
                                      (curr->r - curr->pos) / 2,
                                      (curr->r - curr->pos) / 2 + curr->pos));
-            seats[curr->pos] = make_pair(curr->l, curr->r);
+            seats_[curr->pos] = make_pair(curr->l, curr->r);
         }
-        seats[curr->l].second = curr->pos;
-        seats[curr->r].first = curr->pos;
+        seats_[curr->l].second = curr->pos;
+        seats_[curr->r].first = curr->pos;
         return curr->pos;
     }
     
     void leave(int p) {
-        const auto neighbors = seats[p];
-        seats.erase(p);
+        const auto neighbors = seats_[p];
+        seats_.erase(p);
         if (neighbors.first == -1 && neighbors.second == num_) {
-            max_bst.emplace(
+            max_bst_.emplace(
                 make_shared<Segment>(neighbors.first, neighbors.second,
                                      neighbors.second,
                                      neighbors.first + 1));
         } else if (neighbors.first == -1) {
-            max_bst.emplace(
+            max_bst_.emplace(
                 make_shared<Segment>(neighbors.first, neighbors.second,
                                      neighbors.second,
                                      neighbors.first + 1));
         } else if (neighbors.second == num_) {
-            max_bst.emplace(
+            max_bst_.emplace(
                 make_shared<Segment>(neighbors.first, neighbors.second,
                                      neighbors.second - 1 - neighbors.first,
                                      neighbors.second - 1));
         } else {
-            max_bst.emplace(
+            max_bst_.emplace(
                 make_shared<Segment>(neighbors.first, neighbors.second,
                                      (neighbors.second - neighbors.first) / 2,
                                      (neighbors.second - neighbors.first) / 2 + neighbors.first));
         }
-        seats[neighbors.first].second = neighbors.second;
-        seats[neighbors.second].first = neighbors.first;
+        seats_[neighbors.first].second = neighbors.second;
+        seats_[neighbors.second].first = neighbors.first;
     }
     
 private:
@@ -103,8 +103,8 @@ private:
     
     int num_;
     using S = shared_ptr<Segment>;
-    multiset<S, Compare<S>> max_bst;
-    unordered_map<int, pair<int, int>> seats;
+    multiset<S, Compare<S>> max_bst_;
+    unordered_map<int, pair<int, int>> seats_;
 };
 
 // Time:  seat:  O(logn) on average,
@@ -113,80 +113,80 @@ private:
 class ExamRoom2 {
 public:
     ExamRoom(int N) : num_(N) {
-        max_heap.emplace(make_shared<Segment>(-1, num_, num_, 0));
-        seats[-1] = make_pair(-1, num_);
-        seats[num_] = make_pair(-1, num_);
+        max_heap_.emplace(make_shared<Segment>(-1, num_, num_, 0));
+        seats_[-1] = make_pair(-1, num_);
+        seats_[num_] = make_pair(-1, num_);
     }
     
     int seat() {
-        while (!seats.count(max_heap.top()->l) ||
-               !seats.count(max_heap.top()->r) ||
-               seats[max_heap.top()->l].second != max_heap.top()->r ||
-               seats[max_heap.top()->r].first != max_heap.top()->l) {
-            max_heap.pop();  // lazy deletion
+        while (!seats_.count(max_heap_.top()->l) ||
+               !seats_.count(max_heap_.top()->r) ||
+               seats_[max_heap_.top()->l].second != max_heap_.top()->r ||
+               seats_[max_heap_.top()->r].first != max_heap_.top()->l) {
+            max_heap_.pop();  // lazy deletion
         }
         
-        const auto curr = max_heap.top(); max_heap.pop();
+        const auto curr = max_heap_.top(); max_heap_.pop();
         if (curr->l == -1 && curr->r == num_) {
-            max_heap.emplace(
+            max_heap_.emplace(
                 make_shared<Segment>(curr->l + 1, curr->r,
                                      curr->r - 1,
                                      curr->r - 1));
-            seats[curr->l + 1] = make_pair(curr->l, curr->r);
+            seats_[curr->l + 1] = make_pair(curr->l, curr->r);
         } else if (curr->l == -1) {
-            max_heap.emplace(
+            max_heap_.emplace(
                 make_shared<Segment>(curr->l + 1, curr->r,
                                      curr->r / 2,
                                      curr->r / 2));
-            seats[curr->l + 1] = make_pair(curr->l, curr->r);
+            seats_[curr->l + 1] = make_pair(curr->l, curr->r);
         } else if (curr->r == num_) {
-            max_heap.emplace(
+            max_heap_.emplace(
                 make_shared<Segment>(curr->l, curr->r - 1,
                                      (curr->r - 1 - curr->l) / 2,
                                      (curr->r - 1 - curr->l) / 2 + curr->l)); 
-            seats[curr->r - 1] = make_pair(curr->l, curr->r);
+            seats_[curr->r - 1] = make_pair(curr->l, curr->r);
         } else {
-            max_heap.emplace(
+            max_heap_.emplace(
                 make_shared<Segment>(curr->l, curr->pos,
                                      (curr->pos - curr->l) / 2,
                                      (curr->pos - curr->l) / 2 + curr->l));
-            max_heap.emplace(
+            max_heap_.emplace(
                 make_shared<Segment>(curr->pos, curr->r,
                                      (curr->r - curr->pos) / 2,
                                      (curr->r - curr->pos) / 2 + curr->pos));
-            seats[curr->pos] = make_pair(curr->l, curr->r);
+            seats_[curr->pos] = make_pair(curr->l, curr->r);
         }
-        seats[curr->l].second = curr->pos;
-        seats[curr->r].first = curr->pos;
+        seats_[curr->l].second = curr->pos;
+        seats_[curr->r].first = curr->pos;
         return curr->pos;
     }
     
     void leave(int p) {
-        const auto neighbors = seats[p];
-        seats.erase(p);
+        const auto neighbors = seats_[p];
+        seats_.erase(p);
         if (neighbors.first == -1 && neighbors.second == num_) {
-            max_heap.emplace(
+            max_heap_.emplace(
                 make_shared<Segment>(neighbors.first, neighbors.second,
                                      neighbors.second,
                                      neighbors.first + 1));
         } else if (neighbors.first == -1) {
-            max_heap.emplace(
+            max_heap_.emplace(
                 make_shared<Segment>(neighbors.first, neighbors.second,
                                      neighbors.second,
                                      neighbors.first + 1));
         } else if (neighbors.second == num_) {
-            max_heap.emplace(
+            max_heap_.emplace(
                 make_shared<Segment>(neighbors.first, neighbors.second,
                                      neighbors.second - 1 - neighbors.first,
                                      neighbors.second - 1));
         } else {
-            max_heap.emplace(
+            max_heap_.emplace(
                 make_shared<Segment>(neighbors.first, neighbors.second,
                                      (neighbors.second - neighbors.first) / 2,
                                      (neighbors.second - neighbors.first) / 2 + neighbors.first));
         }
-        seats[neighbors.first].second = neighbors.second;
-        seats[neighbors.second].first = neighbors.first;
+        seats_[neighbors.first].second = neighbors.second;
+        seats_[neighbors.second].first = neighbors.first;
     }
     
 private:
@@ -211,8 +211,8 @@ private:
     
     int num_;
     using S = shared_ptr<Segment>;
-    priority_queue<S, vector<S>, Compare<S>> max_heap;
-    unordered_map<int, pair<int, int>> seats;
+    priority_queue<S, vector<S>, Compare<S>> max_heap_;
+    unordered_map<int, pair<int, int>> seats_;
 };
 
 /**
