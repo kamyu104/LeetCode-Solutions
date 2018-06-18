@@ -1,4 +1,4 @@
-// Time:  seat:  O(logn),
+// Time:  seat:  O(logn) on average,
 //        leave: O(logn)
 // Space: O(n)
 
