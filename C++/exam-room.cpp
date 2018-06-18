@@ -26,26 +26,26 @@ public:
         } else if (curr->l == -1) {
             max_heap.emplace(
                 make_shared<Segment>(curr->l + 1, curr->r,
-                                    curr->r / 2,
-                                    curr->r / 2));
+                                     curr->r / 2,
+                                     curr->r / 2));
             neighbors[curr->l + 1] = make_pair(curr->l, curr->r);
             neighbors[curr->r].first = curr->l + 1;
         } else if (curr->r == num_) {
             max_heap.emplace(
                 make_shared<Segment>(curr->l, curr->r - 1,
-                                    (curr->r - 1 - curr->l) / 2,
-                                    (curr->r - 1 - curr->l) / 2 + curr->l)); 
+                                     (curr->r - 1 - curr->l) / 2,
+                                     (curr->r - 1 - curr->l) / 2 + curr->l)); 
             neighbors[curr->r - 1] = make_pair(curr->l, curr->r);
             neighbors[curr->l].second = curr->r - 1;
         } else {
             max_heap.emplace(
                 make_shared<Segment>(curr->l, curr->pos,
-                                    (curr->pos - curr->l) / 2,
-                                    (curr->pos - curr->l) / 2 + curr->l));
+                                     (curr->pos - curr->l) / 2,
+                                     (curr->pos - curr->l) / 2 + curr->l));
             max_heap.emplace(
                 make_shared<Segment>(curr->pos, curr->r,
-                                    (curr->r - curr->pos) / 2,
-                                    (curr->r - curr->pos) / 2 + curr->pos));
+                                     (curr->r - curr->pos) / 2,
+                                     (curr->r - curr->pos) / 2 + curr->pos));
             neighbors[curr->pos] = make_pair(curr->l, curr->r);
             neighbors[curr->l].second = curr->pos;
             neighbors[curr->r].first = curr->pos;
