@@ -112,7 +112,7 @@ private:
 // Space: O(n)
 class ExamRoom2 {
 public:
-    ExamRoom(int N) : num_(N) {
+    ExamRoom2(int N) : num_(N) {
         max_heap_.emplace(make_shared<Segment>(-1, num_, num_, 0));
         seats_[-1] = make_pair(-1, num_);
         seats_[num_] = make_pair(-1, num_);
