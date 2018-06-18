@@ -19,19 +19,17 @@ public:
                 make_shared<Segment>(curr->l + 1, curr->r,
                                      curr->r - 1,
                                      curr->r - 1));
-            seats_[curr->l + 1] = make_pair(curr->l, curr->r);
+            
         } else if (curr->l == -1) {
             segment_iters_[make_pair(curr->l + 1, curr->r)] = max_bst_.emplace(
                 make_shared<Segment>(curr->l + 1, curr->r,
                                      curr->r / 2,
                                      curr->r / 2));
-            seats_[curr->l + 1] = make_pair(curr->l, curr->r);
         } else if (curr->r == num_) {
             segment_iters_[make_pair(curr->l, curr->r - 1)] = max_bst_.emplace(
                 make_shared<Segment>(curr->l, curr->r - 1,
                                      (curr->r - 1 - curr->l) / 2,
                                      (curr->r - 1 - curr->l) / 2 + curr->l)); 
-            seats_[curr->r - 1] = make_pair(curr->l, curr->r);
         } else {
             segment_iters_[make_pair(curr->l, curr->pos)] = max_bst_.emplace(
                 make_shared<Segment>(curr->l, curr->pos,
@@ -41,8 +39,8 @@ public:
                 make_shared<Segment>(curr->pos, curr->r,
                                      (curr->r - curr->pos) / 2,
                                      (curr->r - curr->pos) / 2 + curr->pos));
-            seats_[curr->pos] = make_pair(curr->l, curr->r);
         }
+        seats_[curr->pos] = make_pair(curr->l, curr->r);
         seats_[curr->l].second = curr->pos;
         seats_[curr->r].first = curr->pos;
         return curr->pos;
@@ -147,19 +145,16 @@ public:
                 make_shared<Segment>(curr->l + 1, curr->r,
                                      curr->r - 1,
                                      curr->r - 1));
-            seats_[curr->l + 1] = make_pair(curr->l, curr->r);
         } else if (curr->l == -1) {
             max_bst_.emplace(
                 make_shared<Segment>(curr->l + 1, curr->r,
                                      curr->r / 2,
                                      curr->r / 2));
-            seats_[curr->l + 1] = make_pair(curr->l, curr->r);
         } else if (curr->r == num_) {
             max_bst_.emplace(
                 make_shared<Segment>(curr->l, curr->r - 1,
                                      (curr->r - 1 - curr->l) / 2,
                                      (curr->r - 1 - curr->l) / 2 + curr->l)); 
-            seats_[curr->r - 1] = make_pair(curr->l, curr->r);
         } else {
             max_bst_.emplace(
                 make_shared<Segment>(curr->l, curr->pos,
@@ -169,8 +164,8 @@ public:
                 make_shared<Segment>(curr->pos, curr->r,
                                      (curr->r - curr->pos) / 2,
                                      (curr->r - curr->pos) / 2 + curr->pos));
-            seats_[curr->pos] = make_pair(curr->l, curr->r);
         }
+        seats_[curr->pos] = make_pair(curr->l, curr->r);
         seats_[curr->l].second = curr->pos;
         seats_[curr->r].first = curr->pos;
         return curr->pos;
@@ -255,19 +250,16 @@ public:
                 make_shared<Segment>(curr->l + 1, curr->r,
                                      curr->r - 1,
                                      curr->r - 1));
-            seats_[curr->l + 1] = make_pair(curr->l, curr->r);
         } else if (curr->l == -1) {
             max_heap_.emplace(
                 make_shared<Segment>(curr->l + 1, curr->r,
                                      curr->r / 2,
                                      curr->r / 2));
-            seats_[curr->l + 1] = make_pair(curr->l, curr->r);
         } else if (curr->r == num_) {
             max_heap_.emplace(
                 make_shared<Segment>(curr->l, curr->r - 1,
                                      (curr->r - 1 - curr->l) / 2,
                                      (curr->r - 1 - curr->l) / 2 + curr->l)); 
-            seats_[curr->r - 1] = make_pair(curr->l, curr->r);
         } else {
             max_heap_.emplace(
                 make_shared<Segment>(curr->l, curr->pos,
@@ -277,8 +269,8 @@ public:
                 make_shared<Segment>(curr->pos, curr->r,
                                      (curr->r - curr->pos) / 2,
                                      (curr->r - curr->pos) / 2 + curr->pos));
-            seats_[curr->pos] = make_pair(curr->l, curr->r);
         }
+        seats_[curr->pos] = make_pair(curr->l, curr->r);
         seats_[curr->l].second = curr->pos;
         seats_[curr->r].first = curr->pos;
         return curr->pos;
