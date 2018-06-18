@@ -3,7 +3,6 @@
 //                                  n = sum(c_a...c_z)
 // Space: O(n * n!/(c_a!*...*c_z!)
 
-
 class Solution {
 public:
     int kSimilarity(string A, string B) {
