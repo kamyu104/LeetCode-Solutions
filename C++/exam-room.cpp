@@ -19,7 +19,6 @@ public:
                 make_shared<Segment>(curr->l + 1, curr->r,
                                      curr->r - 1,
                                      curr->r - 1));
-            
         } else if (curr->l == -1) {
             segment_iters_[make_pair(curr->l + 1, curr->r)] = max_bst_.emplace(
                 make_shared<Segment>(curr->l + 1, curr->r,
