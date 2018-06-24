@@ -47,8 +47,8 @@ class Solution(object):
                 depth += 1
             else:
                 depth -= 1
-            if S[i] == '(' and S[i+1] == ')':
-                result += 2**(depth-1)
+                if S[i-1] == '(':
+                    result += 2**depth
         return result
 
 
