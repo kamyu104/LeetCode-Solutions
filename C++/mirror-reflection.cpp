@@ -4,6 +4,7 @@
 class Solution {
 public:
     int mirrorReflection(int p, int q) {
+        // explanation commented in the following solution
         return (p & -p) > (q & -q) ? 2 : (p & -p) < (q & -q) ? 0 : 1;
     }
 };
@@ -17,8 +18,8 @@ public:
         const auto lcm = p * q / gcd(p, q);
         // let a = lcm / p, b = lcm / q
         if (lcm / p % 2 == 1) {
-            if (lcm / q % 2 == 1) {  // a is odd, b is odd <=> (p & -p) == (q & -q)
-                return 1;
+            if (lcm / q % 2 == 1) {
+                return 1;  // a is odd, b is odd <=> (p & -p) == (q & -q)
             }
             return 2;  // a is odd, b is even <=> (p & -p) > (q & -q)
         }
