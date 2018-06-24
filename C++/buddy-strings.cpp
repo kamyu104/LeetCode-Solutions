@@ -16,7 +16,7 @@ public:
                 }
             }
         }
-        return  (diff.empty() && unordered_set<char>(A.begin(), A.end()).size() < A.size()) ||
-                (diff.size() == 2 && A[diff[0]] == B[diff[1]] && A[diff[1]] == B[diff[0]]);
+        return (diff.empty() && unordered_set<char>(A.begin(), A.end()).size() < A.size()) ||
+               (diff.size() == 2 && A[diff[0]] == B[diff[1]] && A[diff[1]] == B[diff[0]]);
     }
 };
