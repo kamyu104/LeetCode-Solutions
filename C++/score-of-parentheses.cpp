@@ -26,7 +26,7 @@ public:
                 stack.emplace_back(0);
             } else {
                 const auto last = stack.back(); stack.pop_back();
-                stack.back() += (last == 0) ? 1 : 2 * last;
+                stack.back() += max(1, 2 * last);
             }
         }
         return stack.front();
