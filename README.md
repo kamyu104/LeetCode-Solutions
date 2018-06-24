@@ -229,6 +229,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 833| [Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string/) | [C++](./C++/find-and-replace-in-string.cpp)  [Python](./Python/find-and-replace-in-string.py) | _O(n + m)_ | _O(n)_ | Medium         |||
 839 | [Similar String Groups](https://leetcode.com/problems/similar-string-groups/) | [C++](./C++/similar-string-groups.cpp) [Python](./Python/similar-string-groups.py) | _O(n^2 * l)_ | _O(n)_ | Hard || Union Find
 848 | [Shifting Letters](https://leetcode.com/problems/shifting-letters/) | [C++](./C++/shifting-letters.cpp) [Python](./Python/shifting-letters.py) | _O(n)_ | _O(1)_ | Medium ||
+859 | [Buddy Strings](https://leetcode.com/problems/buddy-strings/) | [C++](./C++/buddy-strings.cpp) [Python](./Python/buddy-strings.py) | _O(n)_ | _O(1)_ | Easy ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -286,6 +287,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 770| [Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/) | [C++](./C++/basic-calculator-iv.cpp) [Python](./Python/basic-calculator-iv.py) | add: _O(d * t)_<br> sub: _O(d * t)_<br> mul: _O(d * t^2)_<br> eval: _O(d * t)_ <br> to_list: _O(d * tlogt)_  | _O(e + d * t)_ | Hard           ||
 772| [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/) | [C++](./C++/basic-calculator-iii.cpp) [Python](./Python/basic-calculator-iii.py) | _O(n)_  | _O(n)_         | Hard           ||
 853| [Car Fleet](https://leetcode.com/problems/car-fleet/) | [C++](./C++/car-fleet.cpp) [Python](./Python/car-fleet.py) | _O(nlogn)_  | _O(n)_         | Medium           ||
+856| [Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) | [C++](./C++/score-of-parentheses.cpp) [Python](./Python/score-of-parentheses.py) | _O(n)_  | _O(1)_         | Medium           ||
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -307,6 +309,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 632 | [Smallest Range](https://leetcode.com/problems/smallest-range/) | [C++](./C++/smallest-range.cpp) [Python](./Python/smallest-range.py) | _O(nlogk)_ | _O(k)_ | Hard |||
 846 | [Hand of Straights](https://leetcode.com/problems/hand-of-straights/) | [C++](./C++/hand-of-straights.cpp) [Python](./Python/hand-of-straights.py) | _O(nlogn)_ | _O(n)_ | Medium |||
 855 | [Exam Room](https://leetcode.com/problems/exam-room/) | [C++](./C++/exam-room.cpp) [Python](./Python/exam-room.py) | seat: _O(logn)_ <br> leave: _O(logn)_ | _O(n)_ | Medium || BST, Hash |
+857 | [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | [C++](./C++/minimum-cost-to-hire-k-workers.cpp) [Python](./Python/minimum-cost-to-hire-k-workers.py) | _O(nlogn)_ | _O(n)_ | Hard || Sort |
 
 ## Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -476,6 +479,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 812 | [Largest Triangle Area](https://leetcode.com/problems/largest-triangle-area/) | [C++](./C++/largest-triangle-area.cpp) [Python](./Python/largest-triangle-area.py) | _O(n^3)_ | _O(1)_ | Easy |||
 829 | [Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/) | [C++](./C++/consecutive-numbers-sum.cpp) [Python](./Python/consecutive-numbers-sum.py) | _O(sqrt(n))_ | _O(1)_ | Medium |||
 836 | [Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/) | [C++](./C++/rectangle-overlap.cpp) [Python](./Python/rectangle-overlap.py) | _O(1)_ | _O(1)_ | Easy |||
+858 | [Mirror Reflection](https://leetcode.com/problems/mirror-reflection/) | [C++](./C++/mirror-reflection.cpp) [Python](./Python/mirror-reflection.py) | _O(1)_ | _O(1)_ | Medium |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
