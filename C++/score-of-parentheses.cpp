@@ -6,9 +6,13 @@ public:
     int scoreOfParentheses(string S) {
         int result = 0, depth = 0;
         for (int i = 0; i < S.length(); ++i) {
-            (S[i] == '(') ? ++depth : --depth;
-            if (S[i] == '(' && S[i + 1] == ')') {
-                result += 1 << (depth - 1);
+            if (S[i] == '(') {
+                ++depth;
+            } else {
+                --depth;
+                if (S[i - 1] == '(') {
+                    result += 1 << depth;
+                }
             }
         }
         return result;
