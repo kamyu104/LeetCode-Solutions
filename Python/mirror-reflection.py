@@ -49,7 +49,7 @@ class Solution2(object):
             while b:
                 a, b = b, a % b
             return a
-                
+
         lcm = p*q // gcd(p, q)
         # let a = lcm / p, b = lcm / q
         if lcm // p % 2 == 1:
