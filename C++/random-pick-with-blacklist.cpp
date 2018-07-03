@@ -11,12 +11,12 @@ public:
         int prev = 0, count = 0;
         for (const auto& black : blacklist) {
             if (prev != black) {
-                _intervals.push_back({prev, black - 1, count});
+                _intervals.push_back({prev, black, count});
                 count += black - prev;
             }
             prev = black + 1;
         }
-        _intervals.push_back({prev, N - 1, count});
+        _intervals.push_back({prev, N, count});
     }
     
     int pick() {
@@ -25,7 +25,7 @@ public:
         while (left <= right) {
             int mid = left + (right - left) / 2;
             const auto& cur = _intervals[mid];
-            if (index < cur.accu_count + cur.right - cur.left + 1) {
+            if (index < cur.accu_count + cur.right - cur.left) {
                 right = mid - 1;
             } else {
                 left = mid + 1;
