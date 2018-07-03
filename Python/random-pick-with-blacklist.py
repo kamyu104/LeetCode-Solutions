@@ -76,7 +76,7 @@ class Solution(object):
         index = random.randint(0, self.__n-1)
         left, right = 0, len(self.__intervals)-1
         while left <= right:
-            mid = left+(right-left) // 2
+            mid = left+(right-left)//2
             cur = self.__intervals[mid]
             if index < cur[ACCU_COUNT]+cur[RIGHT]-cur[LEFT]:
                 right = mid-1
