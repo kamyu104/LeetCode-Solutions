@@ -5,33 +5,33 @@
 class Solution {
 public:
     Solution(int N, vector<int> blacklist) :
-        _n(N - blacklist.size()) {
+        n_(N - blacklist.size()) {
             
         sort(blacklist.begin(), blacklist.end());
         int prev = 0, count = 0;
         for (const auto& black : blacklist) {
             if (prev != black) {
-                _intervals.push_back({prev, black, count});
+                intervals_.push_back({prev, black, count});
                 count += black - prev;
             }
             prev = black + 1;
         }
-        _intervals.push_back({prev, N, count});
+        intervals_.push_back({prev, N, count});
     }
     
     int pick() {
-        int index = rand() % _n;
-        int left = 0, right = _intervals.size() - 1;
+        int index = rand() % n_;
+        int left = 0, right = intervals_.size() - 1;
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            const auto& cur = _intervals[mid];
+            const auto& cur = intervals_[mid];
             if (index < cur.accu_count + cur.right - cur.left) {
                 right = mid - 1;
             } else {
                 left = mid + 1;
             }
         }
-        Interval cur = _intervals[left];
+        Interval cur = intervals_[left];
         return cur.left + index - cur.accu_count;
     }
 
@@ -42,8 +42,8 @@ private:
         int accu_count;
     };
         
-    int _n;
-    vector<Interval> _intervals;
+    int n_;
+    vector<Interval> intervals_;
 };
 
 /**
