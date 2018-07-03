@@ -4,8 +4,9 @@
 
 class Solution {
 public:
-    Solution(int N, vector<int> blacklist) {
-        _n = N - blacklist.size();
+    Solution(int N, vector<int> blacklist) :
+        _n(N - blacklist.size()) {
+            
         sort(blacklist.begin(), blacklist.end());
         int prev = 0, count = 0;
         for (const auto& black : blacklist) {
@@ -23,7 +24,7 @@ public:
         int left = 0, right = _intervals.size() - 1;
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            Interval cur = _intervals[mid];
+            const auto& cur = _intervals[mid];
             if (index < cur.accu_count + cur.right - cur.left + 1) {
                 right = mid - 1;
             } else {
