@@ -598,6 +598,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 786 | [K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/) | [C++](./C++/k-th-smallest-prime-fraction.cpp) [Python](./Python/k-th-smallest-prime-fraction.py) | _O(nlogr)_ | _O(1)_ | Hard | |
 793 | [Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/) | [C++](./C++/preimage-size-of-factorial-zeroes-function.cpp) [Python](./Python/preimage-size-of-factorial-zeroes-function.py) | _O((logn)^2)_ | _O(1)_ | Hard | |
 852 | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/) | [C++](./C++/peak-index-in-a-mountain-array.cpp) [Python](./Python/peak-index-in-a-mountain-array.py) | _O(logn)_ | _O(1)_ | Easy | |
+864 | [Random Pick with Blacklist](https://leetcode.com/problems/random-pick-with-blacklist/) | [C++](./C++/random-pick-with-blacklist.cpp) [Python](./Python/random-pick-with-blacklist.py) | ctor: _O(nlogn)_ <br> pick: _O(logn)_ | _O(n)_ | Hard | |
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
