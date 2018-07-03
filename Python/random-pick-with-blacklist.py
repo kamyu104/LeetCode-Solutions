@@ -83,7 +83,7 @@ class Solution(object):
             else:
                 left = mid+1
         return self.__intervals[left][LEFT] + \
-            index - self.__intervals[left][ACCU_COUNT]
+            index-self.__intervals[left][ACCU_COUNT]
 
 
 # Your Solution object will be instantiated and called as such:
