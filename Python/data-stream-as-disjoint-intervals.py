@@ -18,10 +18,11 @@
 # are small compared to the data stream's size?
 
 # Definition for an interval.
-# class Interval(object):
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
+class Interval(object):
+    def __init__(self, s=0, e=0):
+        self.start = s
+        self.end = e
+
 
 class SummaryRanges(object):
 
