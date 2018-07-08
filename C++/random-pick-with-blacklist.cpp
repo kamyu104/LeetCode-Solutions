@@ -1,8 +1,47 @@
+// Time:  ctor: O(b)
+//        pick: O(1)
+// Space: O(b)
+
+class Solution {
+public:
+    Solution(int N, vector<int> blacklist) :
+        n_(N - blacklist.size()) {
+        unordered_set<int> whitelist;
+        for (int i = n_; i < N; ++i) {
+            whitelist.emplace(i);
+        }
+        for (const auto& black : blacklist) {
+            whitelist.erase(black);
+        }
+        auto white = whitelist.cbegin();
+        for (const auto& black : blacklist) {
+            if (black < n_) {
+                lookup_[black] = *(white++);
+            }
+        }
+	}
+
+    int pick() {
+        int index = rand() % n_;
+        return lookup_.count(index) ? lookup_[index] : index;
+    }
+
+private:
+    int n_;
+    unordered_map<int, int> lookup_;
+};
+
+/**
+ * Your Solution object will be instantiated and called as such:
+ * Solution obj = new Solution(N, blacklist);
+ * int param_1 = obj.pick();
+ */
+
+
 // Time:  ctor: O(nlogn)
 //        pick: O(logn)
 // Space: O(n)
-
-class Solution {
+class Solution2 {
 public:
     Solution(int N, vector<int> blacklist) :
         n_(N - blacklist.size()) {
@@ -45,9 +84,3 @@ private:
     int n_;
     vector<Interval> intervals_;
 };
-
-/**
- * Your Solution object will be instantiated and called as such:
- * Solution obj = new Solution(N, blacklist);
- * int param_1 = obj.pick();
- */
