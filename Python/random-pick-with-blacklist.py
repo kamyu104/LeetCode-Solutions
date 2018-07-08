@@ -72,9 +72,9 @@ class Solution(object):
         return self.__lookup[index] if index in self.__lookup else index
 
 
-# Time:  ctor: O(nlogn)
-#        pick: O(logn)
-# Space: O(n)
+# Time:  ctor: O(blogb)
+#        pick: O(logb)
+# Space: O(b)
 import random
 
 class Solution2(object):
