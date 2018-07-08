@@ -39,13 +39,12 @@ class Solution(object):
         min_heap = [(0, K-1)]
         while min_heap and len(lookup) != N:
             result, u = heapq.heappop(min_heap)
+            lookup.add(u)
             if best[u] < result:
                 continue
-            lookup.add(u)
             for v, w in adj[u]:
                 if v in lookup: continue
                 if result+w < best[v]:
                     best[v] = result+w
                     heapq.heappush(min_heap, (result+w, v))
         return result if len(lookup) == N else -1
- 
