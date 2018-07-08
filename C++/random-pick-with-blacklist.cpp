@@ -46,8 +46,9 @@ public:
     Solution(int N, vector<int> blacklist) :
         n_(N - blacklist.size()),
         blacklist_(blacklist) {
-		sort(blacklist_.begin(), blacklist_.end());
-	}
+		
+        sort(blacklist_.begin(), blacklist_.end());
+    }
 
     int pick() {
         int index = rand() % n_;
