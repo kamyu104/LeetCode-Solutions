@@ -15,12 +15,12 @@ public:
         unordered_map<int, unordered_map<int, int>> best;
         using T = tuple<int, int, int>;
         priority_queue<T, vector<T>, greater<T>> min_heap;
-        min_heap.emplace(0, K + 1, src);
+        min_heap.emplace(0, src, K + 1);
         while (!min_heap.empty()) {
-            int result, k, u;
-            tie(result, k, u) = min_heap.top(); min_heap.pop();
+            int result, u, k;
+            tie(result, u, k) = min_heap.top(); min_heap.pop();
             if (k < 0 ||
-                (best.count(k) && best[k].count(u) &&  best[k][u] < result)) {
+                (best.count(u) && best[u].count(k) &&  best[u][k] < result)) {
                 continue;
             }
             if (u == dst) {
@@ -29,11 +29,11 @@ public:
             for (const auto& kvp : adj[u]) {
                 int v, w;
                 tie(v, w) = kvp;
-                if (!best.count(k - 1) ||
-                    !best[k - 1].count(v) ||
-                    result + w < best[k - 1][v]) {
-                    best[k - 1][v] = result + w;
-                    min_heap.emplace(result + w, k - 1, v);
+                if (!best.count(v) ||
+                    !best[v].count(k - 1) ||
+                    result + w < best[v][k - 1]) {
+                    best[v][k - 1] = result + w;
+                    min_heap.emplace(result + w, v, k - 1);
                 }
             }
         }
