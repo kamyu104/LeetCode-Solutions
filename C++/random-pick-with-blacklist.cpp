@@ -31,9 +31,9 @@ private:
     unordered_map<int, int> lookup_;
 };
 
-// Time:  ctor: O(nlogn)
-//        pick: O(logn)
-// Space: O(n)
+// Time:  ctor: O(blogb)
+//        pick: O(logb)
+// Space: O(b)
 class Solution2 {
 public:
     Solution(int N, vector<int> blacklist) :
