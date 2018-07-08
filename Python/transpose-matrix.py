@@ -19,6 +19,12 @@
 # - 1 <= A.length <= 1000
 # - 1 <= A[0].length <= 1000
 
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
+
+
 class Solution(object):
     def transpose(self, A):
         """
