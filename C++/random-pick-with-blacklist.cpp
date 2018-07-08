@@ -19,7 +19,7 @@ public:
                 lookup_[black] = *(white++);
             }
         }
-	}
+    }
 
     int pick() {
         int index = rand() % n_;
