@@ -50,15 +50,15 @@ class Solution(object):
         for u, v, w in flights:
             adj[u].append((v, w))
         best = collections.defaultdict(lambda: collections.defaultdict(lambda: float("inf")))
-        min_heap = [(0, K+1, src)]
+        min_heap = [(0, src, K+1)]
         while min_heap:
-            result, k, u = heapq.heappop(min_heap)
-            if k < 0 or best[k][u] < result:
+            result, u, k = heapq.heappop(min_heap)
+            if k < 0 or best[u][k] < result:
                 continue
             if u == dst:
                 return result
             for v, w in adj[u]:
-                if result+w < best[k-1][v]:
-                    best[k-1][v] = result+w                    
-                    heapq.heappush(min_heap, (result+w, k-1, v))
+                if result+w < best[v][k-1]:
+                    best[v][k-1] = result+w                    
+                    heapq.heappush(min_heap, (result+w, v, k-1))
         return -1
