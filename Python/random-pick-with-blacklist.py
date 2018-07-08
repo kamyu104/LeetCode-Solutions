@@ -1,6 +1,6 @@
-# Time:  ctor: O(nlogn)
-#        pick: O(logn)
-# Space: O(n)
+# Time:  ctor: O(b)
+#        pick: O(1)
+# Space: O(b)
 
 # Given a blacklist B containing unique integers from [0, N),
 # write a function to return a uniform random integer from
@@ -48,42 +48,59 @@
 
 import random
 
-LEFT, RIGHT, ACCU_COUNT = range(3)
-
 
 class Solution(object):
-
+    
     def __init__(self, N, blacklist):
         """
         :type N: int
         :type blacklist: List[int]
         """
         self.__n = N-len(blacklist)
-        self.__intervals = []
-        blacklist.sort()
-        prev, count = 0, 0
+        self.__lookup = {}
+        white = iter(set(range(self.__n, N))-set(blacklist))
         for black in blacklist:
-            if prev != black:
-                self.__intervals.append((prev, black, count))
-                count += black-prev
-            prev = black+1
-        self.__intervals.append((prev, N, count))
-
+            if black < self.__n:
+                self.__lookup[black] = next(white)
+        
+        
     def pick(self):
         """
         :rtype: int
         """
         index = random.randint(0, self.__n-1)
-        left, right = 0, len(self.__intervals)-1
+        return self.__lookup[index] if index in self.__lookup else index
+
+
+# Time:  ctor: O(nlogn)
+#        pick: O(logn)
+# Space: O(n)
+import random
+
+class Solution2(object):
+    
+    def __init__(self, N, blacklist):
+        """
+        :type N: int
+        :type blacklist: List[int]
+        """
+        self.__n = N-len(blacklist)
+        blacklist.sort()
+        self.__blacklist = blacklist
+        
+    def pick(self):
+        """
+        :rtype: int
+        """
+        index = random.randint(0, self.__n-1)
+        left, right = 0, len(self.__blacklist)-1
         while left <= right:
             mid = left+(right-left)//2
-            cur = self.__intervals[mid]
-            if index < cur[ACCU_COUNT]+cur[RIGHT]-cur[LEFT]:
+            if index+mid < self.__blacklist[mid]:
                 right = mid-1
             else:
                 left = mid+1
-        return self.__intervals[left][LEFT] + \
-            index-self.__intervals[left][ACCU_COUNT]
+        return index+left
 
 
 # Your Solution object will be instantiated and called as such:
