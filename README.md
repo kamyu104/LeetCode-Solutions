@@ -159,6 +159,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 845 | [Longest Mountain in Array](https://leetcode.com/problems/longest-mountain-in-array/) | [C++](./C++/longest-mountain-in-array.cpp) [Python](./Python/longest-mountain-in-array.py) | _O(n)_ | _O(1)_ | Medium ||
 849 | [Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) | [C++](./C++/maximize-distance-to-closest-person.cpp) [Python](./Python/maximize-distance-to-closest-person.py) | _O(n)_ | _O(1)_ | Easy ||
 860 | [Lemonade Change](https://leetcode.com/problems/lemonade-change/) | [C++](./C++/lemonade-change.cpp) [Python](./Python/lemonade-change.py) | _O(n)_ | _O(1)_ | Easy ||
+868 | [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/) | [C++](./C++/transpose-matrix.cpp) [Python](./Python/transpose-matrix.py) | _O(r * c)_ | _O(1)_ | Easy ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -354,6 +355,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 814 | [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | [C++](./C++/binary-tree-pruning.cpp) [Python](./Python/binary-tree-pruning.py) | _O(n)_ | _O(h)_ | Medium || DFS |
 850 | [Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii/) | [C++](./C++/rectangle-area-ii.cpp) [Python](./Python/rectangle-area-ii.py) | _O(nlogn)_ | _O(n)_ | Hard || Segment Tree |
 863 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [C++](./C++/all-nodes-distance-k-in-binary-tree.cpp) [Python](./Python/all-nodes-distance-k-in-binary-tree.py) | _O(n)_ | _O(n)_ | Medium || DFS + BFS |
+866 | [Smallest Subtree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/) | [C++](./C++/smallest-subtree-with-all-the-deepest-nodes.cpp) [Python](./Python/smallest-subtree-with-all-the-deepest-nodes.py) | _O(n)_ | _O(h)_ | Medium || DFS |
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -484,6 +486,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 829 | [Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/) | [C++](./C++/consecutive-numbers-sum.cpp) [Python](./Python/consecutive-numbers-sum.py) | _O(sqrt(n))_ | _O(1)_ | Medium |||
 836 | [Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/) | [C++](./C++/rectangle-overlap.cpp) [Python](./Python/rectangle-overlap.py) | _O(1)_ | _O(1)_ | Easy |||
 858 | [Mirror Reflection](https://leetcode.com/problems/mirror-reflection/) | [C++](./C++/mirror-reflection.cpp) [Python](./Python/mirror-reflection.py) | _O(1)_ | _O(1)_ | Medium |||
+867 | [Prime Palindrome](https://leetcode.com/problems/prime-palindrome/) | [C++](./C++/prime-palindrome.cpp) [Python](./Python/prime-palindrome.py) | _O(1)_ | _O(1)_ | Medium |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -643,7 +646,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 773|[Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle/)| [C++](./C++/sliding-puzzle.cpp) [Python](./Python/sliding-puzzle.py)| _O((m * n) * (m * n)!)_ | _O((m * n) * (m * n)!)_ | Hard | | `A* Search Algorithm` |
 787|[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)| [C++](./C++/cheapest-flights-within-k-stops.cpp) [Python](./Python/cheapest-flights-within-k-stops.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium | | `Dijkstra's algorithm` |
 815|[Bus Routes](https://leetcode.com/problems/bus-routes/)| [C++](./C++/bus-routes.cpp) [Python](./Python/bus-routes.py)| _O(\|E\| + \|V\|)_ | _O(\|E\| + \|V\|)_ | Hard | | |
-854|[ K-Similar Strings](https://leetcode.com/problems/k-similar-strings/)| [C++](./C++/k-similar-strings.cpp) [Python](./Python/k-similar-strings.py)| _O(n * n!/(c_a!*...*c_z!))_ | _O(n * n!/(c_a!*...*c_z!))_ | Hard | | |
+854|[K-Similar Strings](https://leetcode.com/problems/k-similar-strings/)| [C++](./C++/k-similar-strings.cpp) [Python](./Python/k-similar-strings.py)| _O(n * n!/(c_a!*...*c_z!))_ | _O(n * n!/(c_a!*...*c_z!))_ | Hard | | |
+865|[Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/)| [C++](./C++/shortest-path-to-get-all-keys.cpp) [Python](./Python/shortest-path-to-get-all-keys.py)| _O(k*r*c + k^3*2^k)_ | _O(k*2^k)_ | Hard | | `Dijkstra's algorithm` |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
