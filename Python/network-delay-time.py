@@ -35,11 +35,17 @@ class Solution(object):
 
         result = 0
         lookup = set()
+        best = collections.defaultdict(lambda: float("inf"))
         min_heap = [(0, K-1)]
         while min_heap and len(lookup) != N:
             result, u = heapq.heappop(min_heap)
+            if best[u] < result:
+                continue
             lookup.add(u)
             for v, w in adj[u]:
                 if v in lookup: continue
-                heapq.heappush(min_heap, (result+w, v))
+                if result+w < best[v]:
+                    best[v] = result+w
+                    heapq.heappush(min_heap, (result+w, v))
         return result if len(lookup) == N else -1
+ 
