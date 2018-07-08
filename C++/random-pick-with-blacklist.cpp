@@ -31,13 +31,6 @@ private:
     unordered_map<int, int> lookup_;
 };
 
-/**
- * Your Solution object will be instantiated and called as such:
- * Solution obj = new Solution(N, blacklist);
- * int param_1 = obj.pick();
- */
-
-
 // Time:  ctor: O(nlogn)
 //        pick: O(logn)
 // Space: O(n)
@@ -68,3 +61,9 @@ private:
     int n_;
     vector<int> blacklist_;
 };
+
+/**
+ * Your Solution object will be instantiated and called as such:
+ * Solution obj = new Solution(N, blacklist);
+ * int param_1 = obj.pick();
+ */
