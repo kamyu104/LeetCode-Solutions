@@ -83,6 +83,16 @@ class Solution3:
                     break
             start += 1
 
+class Solution4:
+    """
+    :type nums: List[int]
+    :type k: int
+    :rtype: void Do not return anything, modify nums in-place instead.
+    """
+    def rotate(self, nums, k):
+        while k > 0:
+            nums.insert(0, nums.pop())
+            k -= 1
 
 if __name__ == '__main__':
     nums = [1, 2, 3, 4, 5, 6, 7]
