@@ -19,9 +19,9 @@ class Solution(object):
             return root
 
         if root.val > key:
-            root.left = deleteNode(root.left, key)
+            root.left = self.deleteNode(root.left, key)
         elif root.val < key:
-            root.right = deleteNode(root.right, key)
+            root.right = self.deleteNode(root.right, key)
         else:
             if not root.left:
                 right = root.right
@@ -37,6 +37,6 @@ class Solution(object):
                     successor = successor.left
 
                 root.val = successor.val
-                root.right = deleteNode(root.right, successor.val)
+                root.right = self.deleteNode(root.right, successor.val)
 
         return root

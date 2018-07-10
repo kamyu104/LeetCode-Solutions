@@ -30,7 +30,7 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-        counts = collections.Counter(words)
+        counts = collections.Counter(nums)
         buckets = [[] for _ in xrange(len(nums)+1)]
         for i, count in counts.iteritems():
             buckets[count].append(i)
@@ -55,7 +55,7 @@ class Solution2(object):
         :type k: int
         :rtype: List[int]
         """
-        counts = collections.Counter(words)
+        counts = collections.Counter(nums)
         p = []
         for key, val in counts.iteritems():
             p.append((-val, key))
