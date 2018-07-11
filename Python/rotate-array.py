@@ -96,7 +96,7 @@ class Solution4(object):
         nums[:] = nums[len(nums) - k:] + nums[:len(nums) - k]
         
 
-# Time:  O(n^2)
+# Time:  O(k * n)
 # Space: O(1)
 class Solution5(object):
     """
