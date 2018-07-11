@@ -43,8 +43,11 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 
 ## Reference
 
-* [C++ STL Time Complexity](http://john-ahlgren.blogspot.com/2013/10/stl-container-performance.html)
-* [Python Time Complexity](https://wiki.python.org/moin/TimeComplexity)
+* C++
+    * [STL Time Complexity](http://www.cplusplus.com/reference/stl/)
+    * [STL Time Complexity](http://john-ahlgren.blogspot.com/2013/10/stl-container-performance.html)
+* Python
+    * [Time Complexity](https://wiki.python.org/moin/TimeComplexity)
 
 ## Bit Manipulation
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
