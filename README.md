@@ -46,6 +46,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * C++
     * [STL Time Complexity (Detailed)](http://www.cplusplus.com/reference/stl/)
     * [STL Time Complexity (Summary)](http://john-ahlgren.blogspot.com/2013/10/stl-container-performance.html)
+    * [Data Structure and Algorithms Cheat Sheet](https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md)
 * Python
     * [Time Complexity](https://wiki.python.org/moin/TimeComplexity)
 
