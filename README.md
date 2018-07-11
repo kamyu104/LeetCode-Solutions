@@ -44,8 +44,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Reference
 
 * C++
-    * [STL Time Complexity](http://www.cplusplus.com/reference/stl/)
-    * [STL Time Complexity](http://john-ahlgren.blogspot.com/2013/10/stl-container-performance.html)
+    * [STL Time Complexity (Detailed)](http://www.cplusplus.com/reference/stl/)
+    * [STL Time Complexity (Summary)](http://john-ahlgren.blogspot.com/2013/10/stl-container-performance.html)
 * Python
     * [Time Complexity](https://wiki.python.org/moin/TimeComplexity)
 
