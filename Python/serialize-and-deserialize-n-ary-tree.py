@@ -45,21 +45,22 @@ class Codec:
                     return
                 yield source[start:idx]
                 start = idx + sepsize
-        
+                
+        def dfs(vals):
+            val = next(vals)
+            if val == "#":
+                return None
+            root = Node(int(val), [])
+            child = dfs(vals)
+            while child:
+                root.children.append(child)
+                child = dfs(vals)
+            return root
+
         if not data:
             return None
     
-        vals = iter(isplit(data, ' '))
-        root = Node(int(next(vals)), [])
-        stack = [root]
-        for val in vals:
-            if val == "#":
-                stack.pop()
-            else:
-                node = Node(int(val), [])
-                stack[-1].children.append(node)
-                stack.append(node)
-        return root
+        return dfs(iter(isplit(data, ' ')))
         
 
 # Your Codec object will be instantiated and called as such:
