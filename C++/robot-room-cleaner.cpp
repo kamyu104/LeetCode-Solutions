@@ -46,7 +46,7 @@ private:
 
         robot.clean();
         static const vector<pair<int, int>> directions{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-        for (int i = 0; i < directions.size(); ++i, dir = (dir + 1) % 4) {
+        for (int i = 0; i < directions.size(); ++i, dir = (dir + 1) % directions.size()) {
             if (robot.move()) {
                 dfs({pos.first + directions[dir].first,
                      pos.second + directions[dir].second},
