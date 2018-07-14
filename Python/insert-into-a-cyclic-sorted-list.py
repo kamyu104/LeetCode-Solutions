@@ -1,13 +1,13 @@
 # Time:  O(n)
 # Space: O(1)
 
-"""
 # Definition for a Node.
 class Node(object):
     def __init__(self, val, next):
         self.val = val
         self.next = next
-"""
+
+
 class Solution(object):
     def insert(self, head, insertVal):
         """
