@@ -34,7 +34,7 @@ class Solution(object):
                 if curr.val <= insertVal or \
                    insertVal <= curr.next.val:
                     insertAfter(curr, insertVal)
-                    break;
+                    break
             else:
                 if curr.next == head:
                     insertAfter(curr, insertVal)
