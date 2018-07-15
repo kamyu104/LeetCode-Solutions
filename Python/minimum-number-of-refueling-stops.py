@@ -48,6 +48,9 @@
 # - 0 <= stations.length <= 500
 # - 0 < stations[0][0] < stations[1][0] < ... < stations[stations.length-1][0] < target
 
+import heapq
+
+
 class Solution(object):
     def minRefuelStops(self, target, startFuel, stations):
         """
