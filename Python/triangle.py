@@ -1,3 +1,5 @@
+from __future__ import print_function
+from functools import reduce
 # Time:  O(m * n)
 # Space: O(n)
 #
@@ -34,5 +36,5 @@ class Solution:
         return reduce(min, cur)
 
 if __name__ == "__main__":
-    print Solution().minimumTotal([[-1], [2, 3], [1, -1, -3]])
+    print(Solution().minimumTotal([[-1], [2, 3], [1, -1, -3]]))
 

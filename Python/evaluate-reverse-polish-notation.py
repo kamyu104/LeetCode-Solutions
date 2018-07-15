@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(n)
 #
@@ -25,6 +26,6 @@ class Solution:
         return numerals.pop()
 
 if __name__ == "__main__":
-    print Solution().evalRPN(["2", "1", "+", "3", "*"])
-    print Solution().evalRPN(["4", "13", "5", "/", "+"])
-    print Solution().evalRPN(["10","6","9","3","+","-11","*","/","*","17","+","5","+"])
+    print(Solution().evalRPN(["2", "1", "+", "3", "*"]))
+    print(Solution().evalRPN(["4", "13", "5", "/", "+"]))
+    print(Solution().evalRPN(["10","6","9","3","+","-11","*","/","*","17","+","5","+"]))

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n * d), n is length of string, d is size of dictionary
 # Space: O(d)
 #
@@ -62,4 +63,4 @@ class Solution:
                 self.backtrack(result, trace, [word] + path, prev)
 
 if __name__ == "__main__":
-    print Solution().findLadders("hit", "cog", set(["hot","dot","dog","lot","log"]))
+    print(Solution().findLadders("hit", "cog", set(["hot","dot","dog","lot","log"])))

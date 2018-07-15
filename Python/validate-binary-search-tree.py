@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 #
@@ -68,4 +69,4 @@ if __name__ == "__main__":
     root = TreeNode(2)
     root.left = TreeNode(1)
     root.right = TreeNode(3)
-    print Solution().isValidBST(root)
+    print(Solution().isValidBST(root))

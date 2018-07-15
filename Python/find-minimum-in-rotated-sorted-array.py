@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(logn)
 # Space: O(1)
 #
@@ -49,8 +50,8 @@ class Solution2(object):
 
 
 if __name__ == "__main__":
-    print Solution().findMin([1])
-    print Solution().findMin([1, 2])
-    print Solution().findMin([2, 1])
-    print Solution().findMin([3, 1, 2])
-    print Solution().findMin([2, 3, 1])
+    print(Solution().findMin([1]))
+    print(Solution().findMin([1, 2]))
+    print(Solution().findMin([2, 1]))
+    print(Solution().findMin([3, 1, 2]))
+    print(Solution().findMin([2, 3, 1]))

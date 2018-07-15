@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(9^2)
 # Space: O(9)
 
@@ -45,4 +46,4 @@ if __name__ == "__main__":
              ['.', '.', '.', '.', '.', '.', 7, '.', '.'],
              ['.', '.', '.', '.', '.', '.', '.', 8, '.'],
              ['.', '.', '.', '.', '.', '.', '.', '.', 9]]
-    print Solution().isValidSudoku(board)
+    print(Solution().isValidSudoku(board))

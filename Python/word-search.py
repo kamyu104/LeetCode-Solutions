@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(m * n * l)
 # Space: O(l)
 #
@@ -56,6 +57,6 @@ if __name__ == "__main__":
               "SFCS",
               "ADEE"
             ]
-    print Solution().exist(board, "ABCCED")
-    print Solution().exist(board, "SFCS")
-    print Solution().exist(board, "ABCB")
+    print(Solution().exist(board, "ABCCED"))
+    print(Solution().exist(board, "SFCS"))
+    print(Solution().exist(board, "ABCB"))

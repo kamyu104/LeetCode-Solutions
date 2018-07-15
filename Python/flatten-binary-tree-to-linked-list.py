@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
 #
@@ -69,9 +70,9 @@ if __name__ == "__main__":
     root.right = TreeNode(5)
     root.right.right = TreeNode(6)
     result = Solution().flatten(root)
-    print result.val
-    print result.right.val
-    print result.right.right.val
-    print result.right.right.right.val
-    print result.right.right.right.right.val
-    print result.right.right.right.right.right.val
+    print(result.val)
+    print(result.right.val)
+    print(result.right.right.val)
+    print(result.right.right.right.val)
+    print(result.right.right.right.right.val)
+    print(result.right.right.right.right.right.val)

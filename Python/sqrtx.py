@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(logn)
 # Space: O(1)
 
@@ -26,5 +27,5 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print Solution().mySqrt(10)
+    print(Solution().mySqrt(10))
 

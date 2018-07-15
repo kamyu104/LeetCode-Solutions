@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(logn) = O(32)
 # Space: O(1)
 #
@@ -18,4 +19,4 @@ class Solution:
         return result
 
 if __name__ == '__main__':
-  print Solution().hammingWeight(11)
+  print(Solution().hammingWeight(11))

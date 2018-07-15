@@ -1,3 +1,5 @@
+from __future__ import print_function
+from functools import reduce
 # Time:  O(m * n)
 # Space: O(1)
 #
@@ -41,4 +43,4 @@ if __name__ == "__main__":
              , [1, 1, 1, 0]
              , [1, 1, 1, 1]]
     Solution().setZeroes(matrix)
-    print matrix
+    print(matrix)

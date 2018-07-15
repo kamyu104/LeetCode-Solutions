@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(2^n)
 # Space: O(1)
 
@@ -46,5 +47,5 @@ class Solution2(object):
 
 
 if __name__ == "__main__":
-    print Solution().grayCode(0)
-    print Solution().grayCode(2)
+    print(Solution().grayCode(0))
+    print(Solution().grayCode(2))

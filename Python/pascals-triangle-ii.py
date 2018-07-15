@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(1)
 
@@ -63,4 +64,4 @@ class Solution2:
 
 
 if __name__ == "__main__":
-    print Solution().getRow(3)
+    print(Solution().getRow(3))

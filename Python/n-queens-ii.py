@@ -1,3 +1,5 @@
+from __future__ import print_function
+from functools import reduce
 # Time:  O(n!)
 # Space: O(n)
 #
@@ -42,4 +44,4 @@ class Solution2:
         return result
 
 if __name__ == "__main__":
-    print Solution().totalNQueens(8)
+    print(Solution().totalNQueens(8))

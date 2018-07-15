@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
 # Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
@@ -76,5 +77,5 @@ if __name__ == "__main__":
     root.left, root.right = TreeNode(2), TreeNode(2)
     root.left.left, root.right.right = TreeNode(3), TreeNode(3)
     root.left.right, root.right.left = TreeNode(4), TreeNode(4)
-    print Solution().isSymmetric(root)
+    print(Solution().isSymmetric(root))
 

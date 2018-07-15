@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 #
@@ -29,4 +30,4 @@ class Solution:
         return True
 
 if __name__ == "__main__":
-    print Solution().isPalindrome("A man, a plan, a canal: Panama")
+    print(Solution().isPalindrome("A man, a plan, a canal: Panama"))

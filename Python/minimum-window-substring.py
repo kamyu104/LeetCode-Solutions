@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(k), k is the number of different characters
 
@@ -53,4 +54,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print Solution().minWindow("ADOBECODEBANC", "ABC")
+    print(Solution().minWindow("ADOBECODEBANC", "ABC"))

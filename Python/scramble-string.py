@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n^4)
 # Space: O(n^3)
 #
@@ -67,4 +68,4 @@ class Solution:
         return result[n][0][0]
 
 if __name__ == "__main__":
-    print Solution().isScramble("rgtae", "great")
+    print(Solution().isScramble("rgtae", "great"))

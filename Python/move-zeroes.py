@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -52,4 +53,4 @@ class Solution2(object):
 if __name__ == '__main__':
     s = Solution()
     r = s.moveZeroes([0, 1, 0, 3, 12])
-    print r
+    print(r)

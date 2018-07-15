@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -54,4 +55,4 @@ class Solution(object):
 if __name__ == '__main__':
     s = Solution()
     r = s.findDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1])
-    print r
+    print(r)

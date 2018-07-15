@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(nlogn)
 # Space: O(logn) for stack call
 #
@@ -53,4 +54,4 @@ if __name__ == "__main__":
     head.next = ListNode(4)
     head.next.next = ListNode(1)
     head.next.next.next= ListNode(2)
-    print Solution().sortList(head)
+    print(Solution().sortList(head))

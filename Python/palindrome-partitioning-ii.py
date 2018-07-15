@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(n^2)
 #
@@ -25,4 +26,4 @@ class Solution:
         return mincut[0]
 
 if __name__ == "__main__":
-    print Solution().minCut("aab")
+    print(Solution().minCut("aab"))

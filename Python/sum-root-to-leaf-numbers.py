@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
 #
@@ -44,4 +45,4 @@ if __name__ == "__main__":
     root = TreeNode(1)
     root.left = TreeNode(2)
     root.right = TreeNode(3)
-    print Solution().sumNumbers(root)
+    print(Solution().sumNumbers(root))

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n^m) = O(3^4)
 # Space: O(n * m) = O(3 * 4)
 #
@@ -37,4 +38,4 @@ class Solution:
         return int(s) < 256
 
 if __name__ == "__main__":
-    print Solution().restoreIpAddresses("0000")
+    print(Solution().restoreIpAddresses("0000"))

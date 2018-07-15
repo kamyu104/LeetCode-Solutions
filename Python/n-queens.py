@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n!)
 # Space: O(n)
 
@@ -78,4 +79,4 @@ class Solution2(object):
 
 
 if __name__ == "__main__":
-    print Solution().solveNQueens(8)
+    print(Solution().solveNQueens(8))

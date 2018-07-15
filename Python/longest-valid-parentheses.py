@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 #
@@ -53,5 +54,5 @@ class Solution2:
         return longest
 
 if __name__ == "__main__":
-    print Solution().longestValidParentheses("()")
-    print Solution().longestValidParentheses(")()())")
+    print(Solution().longestValidParentheses("()"))
+    print(Solution().longestValidParentheses(")()())"))

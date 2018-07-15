@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(logn) = O(1)
 # Space: O(1)
 #
@@ -53,10 +54,10 @@ class Solution(object):
         :rtype: int
         """
         s = cmp(x, 0)
-        r = int(`s * x`[::-1])
+        r = int(repr(s * x)[::-1])
         return s * r * (r < 2 ** 31)
 
 
 if __name__ == "__main__":
-    print Solution().reverse(123)
-    print Solution().reverse(-321)
+    print(Solution().reverse(123))
+    print(Solution().reverse(-321))

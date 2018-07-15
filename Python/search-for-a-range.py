@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(logn)
 # Space: O(1)
 #
@@ -59,5 +60,5 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print Solution().searchRange([2, 2], 3)
-    print Solution().searchRange([5, 7, 7, 8, 8, 10], 8)
+    print(Solution().searchRange([2, 2], 3))
+    print(Solution().searchRange([5, 7, 7, 8, 8, 10], 8))

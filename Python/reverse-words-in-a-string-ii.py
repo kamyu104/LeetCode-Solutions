@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time: O(n)
 # Space:O(1)
 #
@@ -35,4 +36,4 @@ class Solution(object):
 if __name__ == '__main__':
     s = ['h','e','l','l','o', ' ', 'w', 'o', 'r', 'l', 'd']
     Solution().reverseWords(s)
-    print s
+    print(s)

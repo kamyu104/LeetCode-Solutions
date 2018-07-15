@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(m * n)
 # Space: O(m + n)
 #
@@ -48,4 +49,4 @@ if __name__ == "__main__":
                       [0,1,0],
                       [0,0,0]
                    ]
-    print Solution().uniquePathsWithObstacles(obstacleGrid)
+    print(Solution().uniquePathsWithObstacles(obstacleGrid))

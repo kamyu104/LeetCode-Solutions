@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 #
@@ -29,4 +30,4 @@ class Solution:
 
 if __name__ == "__main__":
     result = Solution().climbStairs(2)
-    print result
+    print(result)

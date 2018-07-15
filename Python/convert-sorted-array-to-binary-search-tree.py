@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(logn)
 #
@@ -49,6 +50,6 @@ class Solution(object):
 if __name__ == "__main__":
     num = [1, 2, 3]
     result = Solution().sortedArrayToBST(num)
-    print result.val
-    print result.left.val
-    print result.right.val
+    print(result.val)
+    print(result.left.val)
+    print(result.right.val)

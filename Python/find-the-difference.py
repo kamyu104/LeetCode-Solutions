@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -22,6 +23,7 @@
 
 import operator
 import collections
+from functools import reduce
 
 
 class Solution(object):
@@ -59,4 +61,4 @@ class Solution(object):
 if __name__ == '__main__':
     s = Solution()
     r = s.findTheDifference2('abcd', 'abcde')
-    print r
+    print(r)

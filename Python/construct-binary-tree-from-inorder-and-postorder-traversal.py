@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(n)
 #
@@ -37,6 +38,6 @@ if __name__ ==  "__main__":
     inorder = [2, 1, 3]
     postorder = [2, 3, 1]
     result = Solution().buildTree(inorder, postorder)
-    print result.val
-    print result.left.val
-    print result.right.val
+    print(result.val)
+    print(result.left.val)
+    print(result.right.val)

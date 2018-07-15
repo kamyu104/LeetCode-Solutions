@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 #
@@ -64,5 +65,5 @@ if __name__ == "__main__":
     sol = Solution()
     buf = ['' for _ in xrange(100)]
     file_content = "ab"
-    print buf[:sol.read(buf, 1)]
-    print buf[:sol.read(buf, 2)]
+    print(buf[:sol.read(buf, 1)])
+    print(buf[:sol.read(buf, 2)])

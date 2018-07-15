@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n^2 ~ 2^n)
 # Space: O(n^2)
 #
@@ -67,4 +68,4 @@ class Solution2:
         return True
 
 if __name__ == "__main__":
-    print Solution().partition("aab")
+    print(Solution().partition("aab"))

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(n)
 #
@@ -28,5 +29,5 @@ if __name__ == "__main__":
     S = "rabbbit"
     T = "rabbit"
     result = Solution().numDistinct(S, T)
-    print result
+    print(result)
 

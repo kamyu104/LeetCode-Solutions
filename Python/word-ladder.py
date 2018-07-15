@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n * d), n is length of string, d is size of dictionary
 # Space: O(d)
 #
@@ -50,5 +51,5 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print Solution().ladderLength("hit", "cog", set(["hot", "dot", "dog", "lot", "log"]))
-    print Solution().ladderLength("hit", "cog", set(["hot", "dot", "dog", "lot", "log", "cog"]))
+    print(Solution().ladderLength("hit", "cog", set(["hot", "dot", "dog", "lot", "log"])))
+    print(Solution().ladderLength("hit", "cog", set(["hot", "dot", "dog", "lot", "log", "cog"])))

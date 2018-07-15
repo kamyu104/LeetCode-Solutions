@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(n)
 
@@ -51,5 +52,5 @@ if __name__ == "__main__":
         Sol.add(i)
 
     for i in (4, 7):
-        print Sol.find(i)
+        print(Sol.find(i))
 
