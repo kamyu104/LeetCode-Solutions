@@ -13,6 +13,7 @@
 # getRear(): Gets the last item from Deque. If the deque is empty, return -1.
 # isEmpty(): Checks whether Deque is empty or not. 
 # isFull(): Checks whether Deque is full or not.
+#
 # Example:
 #
 # MyCircularDeque circularDeque = new MycircularDeque(3); // set the size to be 3
