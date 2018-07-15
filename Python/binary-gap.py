@@ -1,4 +1,4 @@
-# Time:  O(logn)
+# Time:  O(logn) = O(1) due to n is 32-bit number
 # Space: O(1)
 
 # Given a positive integer N, find and return the longest distance
