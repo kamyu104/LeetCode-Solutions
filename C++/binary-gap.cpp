@@ -1,4 +1,4 @@
-// Time:  O(logn)
+// Time:  O(logn) = O(1) due to n is a 32-bit number
 // Space: O(1)
 
 class Solution {
