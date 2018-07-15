@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O((m + n) * k), where m is string length, n is dictionary size, k is word length
 # Space: O(n * k)
 
@@ -95,4 +96,4 @@ class Solution2(object):
 
 
 if __name__ == "__main__":
-    print Solution().findSubstring("barfoothefoobarman", ["foo", "bar"])
+    print(Solution().findSubstring("barfoothefoobarman", ["foo", "bar"]))

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(n)
 
@@ -39,4 +40,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print Solution().getPermutation(3, 2)
+    print(Solution().getPermutation(3, 2))

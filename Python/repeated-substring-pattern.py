@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(n)
 
@@ -55,5 +56,5 @@ class Solution(object):
             return False
 
         ss = (str + str)[1:-1]
-        print ss
+        print(ss)
         return ss.find(str) != -1

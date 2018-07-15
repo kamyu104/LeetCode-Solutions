@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(logn), where logn is the length of result strings
 # Space: O(1)
 
@@ -44,7 +45,7 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print Solution().fractionToDecimal(1, 9)
-    print Solution().fractionToDecimal(-50, 8)
-    print Solution().fractionToDecimal(22, 2)
-    print Solution().fractionToDecimal(-22, -2)
+    print(Solution().fractionToDecimal(1, 9))
+    print(Solution().fractionToDecimal(-50, 8))
+    print(Solution().fractionToDecimal(22, 2))
+    print(Solution().fractionToDecimal(-22, -2))

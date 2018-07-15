@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(n)
 
@@ -45,6 +46,6 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print Solution().findRepeatedDnaSequences("AAAAAAAAAA")
-    print Solution().findRepeatedDnaSequences("")
-    print Solution().findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT")
+    print(Solution().findRepeatedDnaSequences("AAAAAAAAAA"))
+    print(Solution().findRepeatedDnaSequences(""))
+    print(Solution().findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"))

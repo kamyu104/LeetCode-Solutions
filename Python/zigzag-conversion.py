@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 #
@@ -32,4 +33,4 @@ class Solution(object):
         return zigzag
 
 if __name__ == "__main__":
-    print Solution().convert("PAYPALISHIRING", 3)
+    print(Solution().convert("PAYPALISHIRING", 3))

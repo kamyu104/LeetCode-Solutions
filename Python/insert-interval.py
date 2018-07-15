@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -45,4 +46,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print Solution().insert([Interval(1, 2), Interval(3, 5), Interval(6, 7), Interval(8, 10), Interval(12, 16)], Interval(4, 9))
+    print(Solution().insert([Interval(1, 2), Interval(3, 5), Interval(6, 7), Interval(8, 10), Interval(12, 16)], Interval(4, 9)))

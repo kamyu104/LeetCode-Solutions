@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(m * n)
 # Space: O(1)
 #
@@ -41,7 +42,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print Solution().spiralOrder([[ 1, 2, 3 ],
+    print(Solution().spiralOrder([[ 1, 2, 3 ],
                                   [ 4, 5, 6 ],
-                                  [ 7, 8, 9 ]])
-    print Solution().spiralOrder([[2,3]])
+                                  [ 7, 8, 9 ]]))
+    print(Solution().spiralOrder([[2,3]]))

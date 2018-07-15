@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(n)
 #
@@ -41,4 +42,4 @@ class Solution(object):
         return max_points
 
 if __name__ == "__main__":
-    print Solution().maxPoints([Point(), Point(), Point()])
+    print(Solution().maxPoints([Point(), Point(), Point()]))

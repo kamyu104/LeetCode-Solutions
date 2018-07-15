@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(k), k is maxWidth.
 #
@@ -67,4 +68,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print Solution().fullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16)
+    print(Solution().fullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16))

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 #
@@ -73,8 +74,8 @@ class Solution2(object):
 
 
 if __name__ == "__main__":
-    print Solution().isNumber(" 0.1 ")
-    print Solution().isNumber("abc")
-    print Solution().isNumber("1 a")
-    print Solution().isNumber("2e10")
+    print(Solution().isNumber(" 0.1 "))
+    print(Solution().isNumber("abc"))
+    print(Solution().isNumber("1 a"))
+    print(Solution().isNumber("2e10"))
 

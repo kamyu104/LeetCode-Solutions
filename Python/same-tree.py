@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
 #
@@ -29,4 +30,4 @@ class Solution:
 if __name__ == "__main__":
     root1, root1.left, root1.right = TreeNode(1), TreeNode(2), TreeNode(3)
     root2, root2.left, root2.right = TreeNode(1), TreeNode(2), TreeNode(3)
-    print Solution().isSameTree(root1, root2)
+    print(Solution().isSameTree(root1, root2))

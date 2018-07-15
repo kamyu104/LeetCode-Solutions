@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(logn) = O(1)
 # Space: O(1)
 
@@ -44,5 +45,5 @@ class Solution2(object):
 
 
 if __name__ == "__main__":
-    print Solution().pow(3, 5)
-    print Solution().pow(3, -5)
+    print(Solution().pow(3, 5))
+    print(Solution().pow(3, -5))

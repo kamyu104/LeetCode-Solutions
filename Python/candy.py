@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(n)
 #
@@ -11,6 +12,7 @@
 #
 
 import operator
+from functools import reduce
 
 class Solution:
     # @param ratings, a list of integer
@@ -29,5 +31,5 @@ class Solution:
 
 if __name__ == "__main__":
     result = Solution().candy([1, 2, 3, 2, 3, 5, 2, 5])
-    print result
+    print(result)
 

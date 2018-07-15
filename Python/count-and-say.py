@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n * 2^n)
 # Space: O(2^n)
 #
@@ -33,6 +34,6 @@ class Solution:
 
 if __name__ == "__main__":
     for i in xrange(1, 4):
-        print Solution().countAndSay(i)
+        print(Solution().countAndSay(i))
 
 

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n * 2^n)
 # Space: O(1)
 
@@ -77,4 +78,4 @@ class Solution3(object):
 
 
 if __name__ == "__main__":
-    print Solution().subsets([1, 2, 3])
+    print(Solution().subsets([1, 2, 3]))

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(k * C(n, k))
 # Space: O(k)
 
@@ -61,4 +62,4 @@ class Solution2(object):
 
 if __name__ == "__main__":
     result = Solution().combine(4, 2)
-    print result
+    print(result)

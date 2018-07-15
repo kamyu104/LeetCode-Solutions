@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 #
@@ -27,5 +28,5 @@ class Solution:
         return len(A) + 1
 
 if __name__ == "__main__":
-    print Solution().firstMissingPositive([1,2,0])
-    print Solution().firstMissingPositive([3,4,-1,1])
+    print(Solution().firstMissingPositive([1,2,0]))
+    print(Solution().firstMissingPositive([3,4,-1,1]))

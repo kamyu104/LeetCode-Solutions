@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(logn)
 #
@@ -44,6 +45,6 @@ if __name__ == "__main__":
     head.next = ListNode(2)
     head.next.next = ListNode(3)
     result = Solution().sortedListToBST(head)
-    print result.val
-    print result.left.val
-    print result.right.val
+    print(result.val)
+    print(result.left.val)
+    print(result.right.val)

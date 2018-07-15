@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(n)
 
@@ -86,4 +87,4 @@ if __name__ == "__main__":
               "11110",
               "11111",
               "00000"]
-    print Solution().maximalRectangle(matrix)
+    print(Solution().maximalRectangle(matrix))

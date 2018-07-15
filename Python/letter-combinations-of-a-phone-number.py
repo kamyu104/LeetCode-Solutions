@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n * 4^n)
 # Space: O(n)
 #
@@ -55,4 +56,4 @@ class Solution2:
                 self.letterCombinationsRecu(result, digits, lookup, cur + choice, n + 1)
 
 if __name__ == "__main__":
-    print Solution().letterCombinations("23")
+    print(Solution().letterCombinations("23"))

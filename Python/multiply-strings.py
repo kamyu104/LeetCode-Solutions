@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(m * n)
 # Space: O(m + n)
 #
@@ -42,4 +43,4 @@ class Solution2(object):
 
 
 if __name__ == "__main__":
-    print Solution().multiply("123", "1000")
+    print(Solution().multiply("123", "1000"))

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(k * C(n, k))
 # Space: O(k)
 #
@@ -42,4 +43,4 @@ class Solution:
 if __name__ == "__main__":
     candidates, target = [10, 1, 2, 7, 6, 1, 5], 8
     result = Solution().combinationSum2(candidates, target)
-    print result
+    print(result)

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(m * n)
 # Space: O(m + n)
 #
@@ -25,4 +26,4 @@ class Solution:
         return ways[n - 1]
 
 if __name__ == "__main__":
-    print Solution().uniquePaths(1, 2)
+    print(Solution().uniquePaths(1, 2))

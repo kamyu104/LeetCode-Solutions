@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 #
@@ -49,4 +50,4 @@ class Solution(object):
 if __name__ == "__main__":
     head, head.next, head.next.next = ListNode(1), ListNode(1), ListNode(2)
     head.next.next.next, head.next.next.next.next = ListNode(3), ListNode(3)
-    print Solution().deleteDuplicates(head)
+    print(Solution().deleteDuplicates(head))

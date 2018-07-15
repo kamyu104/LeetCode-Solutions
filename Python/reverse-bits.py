@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time : O(logn) = O(32)
 # Space: O(1)
 #
@@ -31,4 +32,4 @@ class Solution:
         return int(string, 2)
 
 if __name__ == '__main__':
-  print Solution().reverseBits(1)
+  print(Solution().reverseBits(1))

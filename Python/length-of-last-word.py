@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 #
@@ -34,5 +35,5 @@ class Solution2:
         return len(s.strip().split(" ")[-1])
 
 if __name__ == "__main__":
-    print Solution().lengthOfLastWord("Hello World")
-    print Solution2().lengthOfLastWord("")
+    print(Solution().lengthOfLastWord("Hello World"))
+    print(Solution2().lengthOfLastWord(""))

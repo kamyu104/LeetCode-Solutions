@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 #
@@ -26,4 +27,4 @@ class Solution:
 if __name__ == "__main__":
     height = [1, 2, 3, 4, 3, 2, 1, 5]
     result = Solution().maxArea(height)
-    print result
+    print(result)

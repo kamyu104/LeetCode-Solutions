@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 #
@@ -47,4 +48,4 @@ class Solution2:
         return counts[-1]
 
 if __name__ == "__main__":
-    print Solution().numTrees(3)
+    print(Solution().numTrees(3))

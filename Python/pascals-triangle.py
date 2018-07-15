@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(1)
 #
@@ -57,4 +58,4 @@ class Solution:
         return res
 
 if __name__ == "__main__":
-    print Solution().generate(5)
+    print(Solution().generate(5))

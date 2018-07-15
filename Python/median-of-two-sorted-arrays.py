@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(log(min(m, n)))
 # Space: O(1)
 
@@ -121,7 +122,7 @@ class Solution_3(object):
             return C[indexM2] / 1.0
 
 if __name__ == "__main__":
-    print Solution().findMedianSortedArrays([1, 3, 5, 7], [2, 4, 6])
-    print Solution_Generic().findMedianSortedArrays([1, 3, 5], [2, 4, 6])
-    print Solution_3().findMedianSortedArrays([1, 3, 5], [2, 4, 6])
+    print(Solution().findMedianSortedArrays([1, 3, 5, 7], [2, 4, 6]))
+    print(Solution_Generic().findMedianSortedArrays([1, 3, 5], [2, 4, 6]))
+    print(Solution_3().findMedianSortedArrays([1, 3, 5], [2, 4, 6]))
 

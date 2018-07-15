@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(n)
 
@@ -52,4 +53,4 @@ class Solution(object):
 if __name__ == '__main__':
     s = Solution()
     r = s.countBits2(5)
-    print r
+    print(r)

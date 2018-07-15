@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(m * n)
 # Space: O(n)
 #
@@ -120,12 +121,12 @@ class Solution4:
             return self.isMatch(s, p[2:])
 
 if __name__ == "__main__":
-    print Solution3().isMatch("abab", "a*b*")
-    print Solution().isMatch("aaaaaaaaaaaaab", "a*a*a*a*a*a*a*a*a*a*c")
-    print Solution().isMatch("aa","a")
-    print Solution().isMatch("aa","aa")
-    print Solution().isMatch("aaa","aa")
-    print Solution().isMatch("aa", "a*")
-    print Solution().isMatch("aa", ".*")
-    print Solution().isMatch("ab", ".*")
-    print Solution().isMatch("aab", "c*a*b")
+    print(Solution3().isMatch("abab", "a*b*"))
+    print(Solution().isMatch("aaaaaaaaaaaaab", "a*a*a*a*a*a*a*a*a*a*c"))
+    print(Solution().isMatch("aa","a"))
+    print(Solution().isMatch("aa","aa"))
+    print(Solution().isMatch("aaa","aa"))
+    print(Solution().isMatch("aa", "a*"))
+    print(Solution().isMatch("aa", ".*"))
+    print(Solution().isMatch("ab", ".*"))
+    print(Solution().isMatch("aab", "c*a*b"))

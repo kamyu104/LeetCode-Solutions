@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 #
@@ -38,4 +39,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print Solution().findMissingRanges([0, 1, 3, 50, 75], 0, 99)
+    print(Solution().findMissingRanges([0, 1, 3, 50, 75], 0, 99))
