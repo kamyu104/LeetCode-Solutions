@@ -32,6 +32,9 @@
 # Note:
 # - 1 <= N <= 10^9
 
+import collections
+
+
 class Solution(object):
     def reorderedPowerOf2(self, N):
         """
