@@ -1,4 +1,4 @@
-# Time:  O(1)
+# Time:  O(2 * (1 + (9/49) + (9/49)^2 + ...)) = O(2/(1-(9/49)) = O(2.45)
 # Space: O(1)
 
 # Given a function rand7 which generates a uniform random integer in the range 1 to 7,
@@ -29,8 +29,13 @@
 # - Could you minimize the number of calls to rand7()?
 #
 # The rand7() API is already defined for you.
-# def rand7():
-# @return a random integer in the range 1 to 7
+
+import random
+
+
+def rand7():
+    return random.randint(1, 7)
+
 
 class Solution(object):
     def rand10(self):
