@@ -87,14 +87,16 @@ class Solution(object):
         :type quadTree2: Node
         :rtype: Node
         """
-        if quadTree1.isLeaf and quadTree2.isLeaf:
-            return Node(quadTree1.val or quadTree2.val, True, None, None, None, None)
-        elif quadTree1.isLeaf:
+        if quadTree1.isLeaf:
             return quadTree1 if quadTree1.val else quadTree2
         elif quadTree2.isLeaf:
             return quadTree2 if quadTree2.val else quadTree1
-        return Node(True, False,
-                    self.intersect(quadTree1.topLeft, quadTree2.topLeft),
-                    self.intersect(quadTree1.topRight, quadTree2.topRight),
-                    self.intersect(quadTree1.bottomLeft, quadTree2.bottomLeft),
-                    self.intersect(quadTree1.bottomRight, quadTree2.bottomRight))
+        topLeftNode = self.intersect(quadTree1.topLeft, quadTree2.topLeft)
+        topRightNode = self.intersect(quadTree1.topRight, quadTree2.topRight)
+        bottomLeftNode = self.intersect(quadTree1.bottomLeft, quadTree2.bottomLeft)
+        bottomRightNode = self.intersect(quadTree1.bottomRight, quadTree2.bottomRight)
+        if topLeftNode.isLeaf and topRightNode.isLeaf and \
+           bottomLeftNode.isLeaf and bottomRightNode.isLeaf and \
+           topLeftNode.val == topRightNode.val == bottomLeftNode.val == bottomRightNode.val:
+            return Node(topLeftNode.val, True, None, None, None, None)
+        return Node(True, False, topLeftNode, topRightNode, bottomLeftNode, bottomRightNode)
