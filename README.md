@@ -29,6 +29,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Greedy](https://github.com/kamyu104/LeetCode#greedy)
 * [Graph](https://github.com/kamyu104/LeetCode#graph)
 * [Geometry](https://github.com/kamyu104/LeetCode#geometry)
+* [Simulation](https://github.com/kamyu104/LeetCode#simulation)
 * [Design](https://github.com/kamyu104/LeetCode#design)
 
 
@@ -300,6 +301,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 772| [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/) | [C++](./C++/basic-calculator-iii.cpp) [Python](./Python/basic-calculator-iii.py) | _O(n)_  | _O(n)_         | Hard           ||
 853| [Car Fleet](https://leetcode.com/problems/car-fleet/) | [C++](./C++/car-fleet.cpp) [Python](./Python/car-fleet.py) | _O(nlogn)_  | _O(n)_         | Medium           ||
 856| [Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) | [C++](./C++/score-of-parentheses.cpp) [Python](./Python/score-of-parentheses.py) | _O(n)_  | _O(1)_         | Medium           ||
+872| [Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/) | [C++](./C++/leaf-similar-trees.cpp) [Python](./Python/leaf-similar-trees.py) | _O(n)_  | _O(h)_         | Easy           ||
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -427,6 +429,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 822 | [Card Flipping Game](https://leetcode.com/problems/card-flipping-game/) | [C++](./C++/card-flipping-game.cpp) [Python](./Python/card-flipping-game.py) | _O(n)_ | _O(n)_ | Medium ||
 825 | [Friends Of Appropriate Ages](https://leetcode.com/problems/friends-of-appropriate-ages/) | [C++](./C++/friends-of-appropriate-ages.cpp) [Python](./Python/friends-of-appropriate-ages.py) | _O(a^2 + n)_ | _O(a)_ | Medium ||
 869 | [Reordered Power of 2](https://leetcode.com/problems/reordered-power-of-2/) | [C++](./C++/reordered-power-of-2.cpp) [Python](./Python/reordered-power-of-2.py) | _O(1)_ | _O(1)_ | Medium ||
+873 | [Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/) | [C++](./C++/length-of-longest-fibonacci-subsequence.cpp) [Python](./Python/length-of-longest-fibonacci-subsequence.py) | _O(n^2)_ | _O(n)_ | Medium ||
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -615,6 +618,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 793 | [Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/) | [C++](./C++/preimage-size-of-factorial-zeroes-function.cpp) [Python](./Python/preimage-size-of-factorial-zeroes-function.py) | _O((logn)^2)_ | _O(1)_ | Hard | |
 852 | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/) | [C++](./C++/peak-index-in-a-mountain-array.cpp) [Python](./Python/peak-index-in-a-mountain-array.py) | _O(logn)_ | _O(1)_ | Easy | |
 864 | [Random Pick with Blacklist](https://leetcode.com/problems/random-pick-with-blacklist/) | [C++](./C++/random-pick-with-blacklist.cpp) [Python](./Python/random-pick-with-blacklist.py) | ctor: _O(b)_ <br> pick: _O(1)_ | _O(b)_ | Hard | |
+875 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | [C++](./C++/koko-eating-bananas.cpp) [Python](./Python/koko-eating-bananas.py) | _O(nlogr)_ | _O(1)_ | Medium | |
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -875,6 +879,11 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 587 | [Erect the Fence](https://leetcode.com/problems/erect-the-fence/)  | [C++](./C++/erect-the-fence.cpp) [Python](./Python/erect-the-fence.py) | _O(nlogn)_| _O(n)_| Hard           || `Monotone Chain` | 
+
+## Simulation
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
+874 | [Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/)  | [C++](./C++/walking-robot-simulation.cpp) [Python](./Python/walking-robot-simulation.py) | _O(n + k)_| _O(k)_| Easy           ||| 
 
 ## Design
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
