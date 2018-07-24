@@ -472,6 +472,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 453 | [Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/) | [C++](./C++/minimum-moves-to-equal-array-elements.cpp) [Python](./Python/minimum-moves-to-equal-array-elements.py) | _O(n)_ | _O(1)_ | Easy |||
 458 | [Poor Pigs](https://leetcode.com/problems/poor-pigs/) | [C++](./C++/poor-pigs.cpp) [Python](./Python/poor-pigs.py) | _O(n)_ | _O(1)_ | Easy |||
 469 | [Convex Polygon](https://leetcode.com/problems/convex-polygon/) | [C++](./C++/convex-polygon.cpp) [Python](./Python/convex-polygon.py) | _O(n)_ | _O(1)_ | Medium |📖||
+470 | [Implement Rand10() Using Rand7()](https://leetcode.com/problems/implement-rand10-using-rand7/) | [C++](./C++/implement-rand10-using-rand7.cpp) [Python](./Python/implement-rand10-using-rand7.py) | _O(1)_ | _O(1)_ | Medium |||
 517 | [Super Washing Machines](https://leetcode.com/problems/super-washing-machines/) | [C++](./C++/super-washing-machines.cpp) [Python](./Python/super-washing-machines.py) | _O(n)_ | _O(1)_ | Hard |||
 537 | [Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/) | [C++](./C++/complex-number-multiplication.cpp) [Python](./Python/complex-number-multiplication.py) | _O(1)_ | _O(1)_ | Medium |||
 553 | [Optimal Division](https://leetcode.com/problems/optimal-division/) | [C++](./C++/optimal-division.cpp) [Python](./Python/optimal-division.py) | _O(n)_ | _O(1)_ | Medium |||
@@ -502,7 +503,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 836 | [Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/) | [C++](./C++/rectangle-overlap.cpp) [Python](./Python/rectangle-overlap.py) | _O(1)_ | _O(1)_ | Easy |||
 858 | [Mirror Reflection](https://leetcode.com/problems/mirror-reflection/) | [C++](./C++/mirror-reflection.cpp) [Python](./Python/mirror-reflection.py) | _O(1)_ | _O(1)_ | Medium |||
 867 | [Prime Palindrome](https://leetcode.com/problems/prime-palindrome/) | [C++](./C++/prime-palindrome.cpp) [Python](./Python/prime-palindrome.py) | _O(1)_ | _O(1)_ | Medium |||
-872 | [Implement Rand10() Using Rand7()](https://leetcode.com/problems/implement-rand10-using-rand7/) | [C++](./C++/implement-rand10-using-rand7.cpp) [Python](./Python/implement-rand10-using-rand7.py) | _O(1)_ | _O(1)_ | Medium |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
