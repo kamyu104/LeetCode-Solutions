@@ -46,7 +46,7 @@ class Solution(object):
         :rtype: int
         """
         def generate(cache):
-            n = 19  # if n = 32 would be O(1.189)
+            n = 19  # if n = 32, it would be O(1.189)
             curr = sum((rand7()-1) * (7**i) for i in xrange(n))
             rang = 7**n
             while curr < rang//10*10:
