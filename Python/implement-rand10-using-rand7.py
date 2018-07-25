@@ -1,4 +1,4 @@
-# Time:  O(2 * (1 + (9/49) + (9/49)^2 + ...)) = O(2/(1-(9/49)) = O(2.45)
+# Time:  O(1.199), counted by statistics, limit would be O(log10/log7) = O(1.183)
 # Space: O(1)
 
 # Given a function rand7 which generates a uniform random integer in the range 1 to 7,
@@ -38,6 +38,30 @@ def rand7():
 
 
 class Solution(object):
+    def __init__(self):
+        self.__cache = []
+
+    def rand10(self):
+        """
+        :rtype: int
+        """
+        def generate(cache):
+            n = 19
+            curr = sum((rand7()-1) * (7**i) for i in xrange(n))
+            rang = 7**n
+            while curr < rang//10*10:
+                cache.append(curr%10+1)
+                curr /= 10
+                rang /= 10
+
+        while not self.__cache:
+            generate(self.__cache)
+        return self.__cache.pop()
+
+
+# Time:  O(2 * (1 + (9/49) + (9/49)^2 + ...)) = O(2/(1-(9/49)) = O(2.45)
+# Space: O(1)
+class Solution2(object):
     def rand10(self):
         """
         :rtype: int
