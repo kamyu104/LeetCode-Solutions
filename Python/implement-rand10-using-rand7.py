@@ -1,4 +1,4 @@
-# Time:  O(1.199), counted by statistics, limit would be O(log10/log7) = O(1.183)
+# Time:  O(1.189), counted by statistics, limit would be O(log10/log7) = O(1.183)
 # Space: O(1)
 
 # Given a function rand7 which generates a uniform random integer in the range 1 to 7,
@@ -47,7 +47,7 @@ class Solution(object):
         :rtype: int
         """
         def generate(cache):
-            n = 19  # if n = 32, it would be O(1.189)
+            n = 32
             curr = sum((rand7()-1) * (7**i) for i in xrange(n))
             rang = 7**n
             while curr < rang//10*10:
