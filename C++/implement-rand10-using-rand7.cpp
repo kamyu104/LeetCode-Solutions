@@ -34,7 +34,7 @@ private:
 
 // Time:  O(2 * (1 + (9/49) + (9/49)^2 + ...)) = O(2/(1-(9/49)) = O(2.45)
 // Space: O(1)
-class Solution 2{
+class Solution2 {
 public:
     int rand10() {
         while (true) {
