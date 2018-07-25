@@ -37,6 +37,7 @@ def rand7():
     return random.randint(1, 7)
 
 
+# Reference: https://leetcode.com/problems/implement-rand10-using-rand7/discuss/151567/C++JavaPython-Average-1.199-Call-rand7-Per-rand10
 class Solution(object):
     def __init__(self):
         self.__cache = []
