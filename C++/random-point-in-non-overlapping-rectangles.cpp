@@ -1,4 +1,5 @@
-// Time:  O(logn)
+// Time:  ctor: O(n)
+//        pick: O(logn)
 // Space: O(n)
 
 class Solution {
