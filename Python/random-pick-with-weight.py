@@ -29,6 +29,7 @@
 # Arguments are always wrapped with a list, even if there aren't any.
     
 import random
+import bisect
 
 
 class Solution(object):
