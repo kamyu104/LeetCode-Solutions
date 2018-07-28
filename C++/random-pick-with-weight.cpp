@@ -13,8 +13,8 @@ public:
     
     int pickIndex() {
         const auto target = uni_(gen_);
-        return upper_bound(prefix_sum_.cbegin(), prefix_sum_.cend(), target) -
-               prefix_sum_.cbegin();
+        return distance(prefix_sum_.cbegin(),
+                        upper_bound(prefix_sum_.cbegin(), prefix_sum_.cend(), target));
     }
 
 private:
