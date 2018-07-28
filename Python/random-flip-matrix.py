@@ -1,4 +1,6 @@
-# Time:  O(1)
+# Time:  ctor:  O(1)
+#        flip:  O(1)
+#        reset: O(min(f, r * c))
 # Space: O(min(f, r * c))
 
 # You are given the number of rows n_rows and
