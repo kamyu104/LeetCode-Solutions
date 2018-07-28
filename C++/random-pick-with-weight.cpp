@@ -1,4 +1,5 @@
-// Time:  O(logn)
+// Time:  ctor: O(n)
+//        pickIndex: O(logn)
 // Space: O(n)
 
 class Solution {
