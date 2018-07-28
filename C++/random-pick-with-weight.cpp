@@ -13,16 +13,8 @@ public:
     
     int pickIndex() {
         const auto target = uni_(gen_);
-        int left = 0, right = prefix_sum_.size() - 1;
-        while (left <= right) {
-            const auto mid = left + (right - left) / 2;
-            if (prefix_sum_[mid] > target) {
-                right = mid - 1;
-            } else {
-                left = mid + 1;
-            }
-        }
-        return left;
+        return upper_bound(prefix_sum_.cbegin(), prefix_sum_.cend(), target) -
+               prefix_sum_.cbegin();
     }
 
 private:
@@ -36,4 +28,3 @@ private:
  * Solution obj = new Solution(w);
  * int param_1 = obj.pickIndex();
  */
- 
