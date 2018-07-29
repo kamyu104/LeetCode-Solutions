@@ -34,7 +34,7 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        slow, quick = head, head
-        while quick and quick.next:
-            slow, quick = slow.next, quick.next.next
+        slow, fast = head, head
+        while fast and fast.next:
+            slow, fast = slow.next, fast.next.next
         return slow
