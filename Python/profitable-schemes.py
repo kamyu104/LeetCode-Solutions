@@ -48,7 +48,7 @@ class Solution(object):
         :type profit: List[int]
         :rtype: int
         """
-        dp = [[0 for _ in xrange(G+1)] for i in xrange(P+1)]
+        dp = [[0 for _ in xrange(G+1)] for _ in xrange(P+1)]
         dp[0][0] = 1
         for p, g in itertools.izip(profit, group):
             for i in reversed(xrange(P+1)):
