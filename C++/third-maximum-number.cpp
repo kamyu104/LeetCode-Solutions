@@ -5,7 +5,7 @@ class Solution {
 public:
     int thirdMax(vector<int>& nums) {
         int count = 0;
-        vector<int> top(3, numeric_limits<int>::min());
+        vector<int64_t> top(3, numeric_limits<int64_t>::min());
 
         for (const auto& num : nums) {
             if (num > top[0]) {
