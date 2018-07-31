@@ -12,7 +12,7 @@ public:
        vector<bool> dp(sum / 2 + 1);
        dp[0]  = true;
        for (const auto& num : nums) {
-           for (int i = 1; i < dp.size(); ++i) {
+           for (int i = dp.size() - 1; i >= 0; --i) {
                if (num <= i) {
                    dp[i] = dp[i] || dp[i - num];
                }
