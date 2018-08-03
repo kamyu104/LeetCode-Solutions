@@ -42,7 +42,7 @@ class Solution(object):
             size = read4(buffer)
             if size:
                 toRead = min(globalN,size)
-                buf[read_bytes:read_bytes+toRead] = buffer
+                buf[read_bytes:read_bytes+toRead] = buffer[:toRead]
                 read_bytes += toRead
                 globalN -= toRead
             else:
