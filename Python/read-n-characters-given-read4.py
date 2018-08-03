@@ -37,14 +37,17 @@ class Solution(object):
         """
         read_bytes = 0
         buffer = [''] * 4
+        globalN = n
         for i in xrange(n / 4 + 1):
             size = read4(buffer)
             if size:
-                buf[read_bytes:read_bytes+size] = buffer
-                read_bytes += size
+                toRead = min(globalN,size)
+                buf[read_bytes:read_bytes+toRead] = buffer
+                read_bytes += toRead
+                globalN -= toRead
             else:
                 break
-        return min(read_bytes, n)
+        return read_bytes
 
 if __name__ == "__main__":
     global file_content
