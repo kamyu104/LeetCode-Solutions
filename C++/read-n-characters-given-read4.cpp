@@ -12,9 +12,13 @@ public:
      */
     int read(char *buf, int n) {
         int read_bytes = 0;
+        char buffer[4];
         for (int i = 0; i <= n / 4; ++i) {
-            if (int size = read4(buf + read_bytes)) {
-                read_bytes += size;
+            if (int size = read4(buffer)) {
+                size = min(size, n - read_bytes);
+                for (int j = 0; j < size; ++j) {
+                    buf[read_bytes++] = buffer[j];
+                }
             } else {
                 break;
             }
