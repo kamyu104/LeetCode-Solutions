@@ -40,9 +40,9 @@ class Solution(object):
         for i in xrange(n / 4 + 1):
             size = read4(buffer)
             if size:
-                to_read = min(n-read_bytes, size)
-                buf[read_bytes:read_bytes+to_read] = buffer[:to_read]
-                read_bytes += to_read
+                size = min(size, n-read_bytes)
+                buf[read_bytes:read_bytes+size] = buffer[:size]
+                read_bytes += size
             else:
                 break
         return read_bytes
