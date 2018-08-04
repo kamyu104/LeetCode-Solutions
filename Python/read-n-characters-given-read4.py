@@ -37,14 +37,12 @@ class Solution(object):
         """
         read_bytes = 0
         buffer = [''] * 4
-        globalN = n
         for i in xrange(n / 4 + 1):
             size = read4(buffer)
             if size:
-                toRead = min(globalN,size)
-                buf[read_bytes:read_bytes+toRead] = buffer[:toRead]
-                read_bytes += toRead
-                globalN -= toRead
+                to_read = min(n-read_bytes, size)
+                buf[read_bytes:read_bytes+to_read] = buffer[:to_read]
+                read_bytes += to_read
             else:
                 break
         return read_bytes
