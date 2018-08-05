@@ -15,7 +15,7 @@ public:
     int diameterOfBinaryTree(TreeNode* root) {
         int diameter = 1;
         depth(root, &diameter);
-        return diameter - 1;
+        return diameter;
     }
 
 private:
@@ -25,7 +25,7 @@ private:
         }
         auto left = depth(root->left, diameter);
         auto right = depth(root->right, diameter);
-        *diameter = max(*diameter, 1 + left + right);
-        return 1 + max(left, right);
+        *diameter = max(*diameter, left + right);
+        return max(left, right);
     }
 };
