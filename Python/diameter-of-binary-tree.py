@@ -29,10 +29,11 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        def depth(root, diameter):
-            if not root: return 0, diameter
-            left, diameter = depth(root.left, diameter)
-            right, diameter = depth(root.right, diameter)
-            return 1 + max(left, right), max(diameter, 1 + left + right)
-
-        return depth(root, 1)[1] - 1
+        return self.depth(root, 0)[1]
+    
+    def depth(self, root, diameter):
+        if not root: 
+            return 0, diameter
+        left, diameter = self.depth(root.left, diameter)
+        right, diameter = self.depth(root.right, diameter)
+        return 1 + max(left, right), max(diameter, left + right)
