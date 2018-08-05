@@ -13,7 +13,7 @@
 class Solution {
 public:
     int diameterOfBinaryTree(TreeNode* root) {
-        int diameter = 1;
+        int diameter = 0;
         depth(root, &diameter);
         return diameter;
     }
@@ -26,6 +26,6 @@ private:
         auto left = depth(root->left, diameter);
         auto right = depth(root->right, diameter);
         *diameter = max(*diameter, left + right);
-        return max(left, right);
+        return 1 + max(left, right);
     }
 };
