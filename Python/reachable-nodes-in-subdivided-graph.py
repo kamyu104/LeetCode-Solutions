@@ -43,6 +43,7 @@
 # - 1 <= N <= 3000
 
 import collections
+import heapq
 
 class Solution(object):
     def reachableNodes(self, edges, M, N):
