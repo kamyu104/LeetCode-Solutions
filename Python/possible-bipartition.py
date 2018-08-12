@@ -1,5 +1,5 @@
 # Time:  O(|V| + |E|)
-# Time:  O(|V| + |E|)
+# Space: O(|V| + |E|)
 
 # Given a set of N people (numbered 1, 2, ..., N),
 # we would like to split everyone into two groups of any size.
