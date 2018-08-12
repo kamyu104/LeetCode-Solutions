@@ -171,6 +171,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 849 | [Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) | [C++](./C++/maximize-distance-to-closest-person.cpp) [Python](./Python/maximize-distance-to-closest-person.py) | _O(n)_ | _O(1)_ | Easy ||
 860 | [Lemonade Change](https://leetcode.com/problems/lemonade-change/) | [C++](./C++/lemonade-change.cpp) [Python](./Python/lemonade-change.py) | _O(n)_ | _O(1)_ | Easy ||
 868 | [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/) | [C++](./C++/transpose-matrix.cpp) [Python](./Python/transpose-matrix.py) | _O(r * c)_ | _O(1)_ | Easy ||
+889 | [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) | [C++](./C++/spiral-matrix-iii.cpp) [Python](./Python/spiral-matrix-iii.py) | _O(max(m, n)^2)_ | _O(1)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -244,6 +245,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 848 | [Shifting Letters](https://leetcode.com/problems/shifting-letters/) | [C++](./C++/shifting-letters.cpp) [Python](./Python/shifting-letters.py) | _O(n)_ | _O(1)_ | Medium ||
 859 | [Buddy Strings](https://leetcode.com/problems/buddy-strings/) | [C++](./C++/buddy-strings.cpp) [Python](./Python/buddy-strings.py) | _O(n)_ | _O(1)_ | Easy ||
 884 | [Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/) | [C++](./C++/decoded-string-at-index.cpp) [Python](./Python/decoded-string-at-index.py) | _O(n)_ | _O(1)_ | Medium ||
+888 | [Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/) | [C++](./C++/uncommon-words-from-two-sentences.cpp) [Python](./Python/uncommon-words-from-two-sentences.py) | _O(m + n)_ | _O(m + n)_ | Easy ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -510,6 +512,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 882 | [Random Point in Non-overlapping Rectangles](https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/) | [C++](./C++/random-point-in-non-overlapping-rectangles.cpp) [Python](./Python/random-point-in-non-overlapping-rectangles.py) | ctor: _O(n)_ <br> pick: _O(logn)_ | _O(n)_ | Medium |||
 883 | [Generate Random Point in a Circle](https://leetcode.com/problems/generate-random-point-in-a-circle/) | [C++](./C++/generate-random-point-in-a-circle.cpp) [Python](./Python/generate-random-point-in-a-circle.py) | _O(1)_ | _O(1)_ | Medium |||
 887 | [Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes/) | [C++](./C++/projection-area-of-3d-shapes.cpp) [Python](./Python/projection-area-of-3d-shapes.py) | _O(n^2)_ | _O(1)_ | Easy |||
+891 | [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/) | [C++](./C++/super-egg-drop.cpp) [Python](./Python/super-egg-drop.py) | _O(klogn)_ | _O(1)_ | Hard |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -675,6 +678,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 854|[K-Similar Strings](https://leetcode.com/problems/k-similar-strings/)| [C++](./C++/k-similar-strings.cpp) [Python](./Python/k-similar-strings.py)| _O(n * n!/(c_a!*...*c_z!))_ | _O(n * n!/(c_a!*...*c_z!))_ | Hard | | |
 865|[Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/)| [C++](./C++/shortest-path-to-get-all-keys.cpp) [Python](./Python/shortest-path-to-get-all-keys.py)| _O(k * r * c + k^3*2^k)_ | _O(k*2^k)_ | Hard | | `Dijkstra's algorithm` |
 886|[Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)| [C++](./C++/reachable-nodes-in-subdivided-graph.cpp) [Python](./Python/reachable-nodes-in-subdivided-graph.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | | `Dijkstra's algorithm` |
+890|[Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)| [C++](./C++/possible-bipartition.cpp) [Python](./Python/possible-bipartition.py)| _O(\|V\| + \|E\|)_ | _O(\|V\| + \|E\|)_ | Medium | | |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
