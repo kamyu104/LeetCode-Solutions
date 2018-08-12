@@ -50,11 +50,10 @@ class Solution(object):
         :rtype: int
         """
         def check(n, K, N):
-            total = 0
-            c = 1
             # Each combinatin of n moves with k broken eggs could represent a unique F.
             # Thus, the range size of F that all cominations can cover 
             # is the sum of C(n, k), k = 1..K
+            total, c = 0, 1
             for k in xrange(1, K+1):
                 c *= n-k+1
                 c //= k
