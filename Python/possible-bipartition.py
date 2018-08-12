@@ -33,6 +33,9 @@
 # - dislikes[i][0] < dislikes[i][1]
 # - There does not exist i != j for which dislikes[i] == dislikes[j].
 
+import collections
+
+
 class Solution(object):
     def possibleBipartition(self, N, dislikes):
         """
