@@ -45,10 +45,10 @@ class Codec:
         def serializeHelper(node):
             if not node:
                 vals.append('#')
-            else:
-                vals.append(str(node.val))
-                serializeHelper(node.left)
-                serializeHelper(node.right)
+                return
+            vals.append(str(node.val))
+            serializeHelper(node.left)
+            serializeHelper(node.right)
         vals = []
         serializeHelper(root)
         return ' '.join(vals)
@@ -64,11 +64,10 @@ class Codec:
             val = next(vals)
             if val == '#':
                 return None
-            else:
-                node = TreeNode(int(val))
-                node.left = deserializeHelper()
-                node.right = deserializeHelper()
-                return node
+            node = TreeNode(int(val))
+            node.left = deserializeHelper()
+            node.right = deserializeHelper()
+            return node
         def isplit(source, sep):
             sepsize = len(sep)
             start = 0
