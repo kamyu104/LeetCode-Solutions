@@ -65,7 +65,7 @@ class Solution(object):
 
         left, right = 1, N
         while left <= right:
-            mid = left + (right-left) // 2
+            mid = left + (right-left)//2
             if check(mid, K, N):
                 right = mid-1
             else:
