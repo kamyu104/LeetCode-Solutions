@@ -171,7 +171,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 849 | [Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) | [C++](./C++/maximize-distance-to-closest-person.cpp) [Python](./Python/maximize-distance-to-closest-person.py) | _O(n)_ | _O(1)_ | Easy ||
 860 | [Lemonade Change](https://leetcode.com/problems/lemonade-change/) | [C++](./C++/lemonade-change.cpp) [Python](./Python/lemonade-change.py) | _O(n)_ | _O(1)_ | Easy ||
 868 | [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/) | [C++](./C++/transpose-matrix.cpp) [Python](./Python/transpose-matrix.py) | _O(r * c)_ | _O(1)_ | Easy ||
-889 | [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) | [C++](./C++/spiral-matrix-iii.cpp) [Python](./Python/spiral-matrix-iii.py) | _O(max(m, n)^2)_ | _O(1)_      | Medium         ||
+885 | [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) | [C++](./C++/spiral-matrix-iii.cpp) [Python](./Python/spiral-matrix-iii.py) | _O(max(m, n)^2)_ | _O(1)_      | Medium         ||
+888 | [Fair Candy Swap](https://leetcode.com/problems/fair-candy-swap/) | [C++](./C++/fair-candy-swap.cpp) [Python](./Python/fair-candy-swap.py) | _O(m + n)_ | _O(m + n)_      | Easy         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -244,8 +245,9 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 839 | [Similar String Groups](https://leetcode.com/problems/similar-string-groups/) | [C++](./C++/similar-string-groups.cpp) [Python](./Python/similar-string-groups.py) | _O(n^2 * l)_ | _O(n)_ | Hard || Union Find
 848 | [Shifting Letters](https://leetcode.com/problems/shifting-letters/) | [C++](./C++/shifting-letters.cpp) [Python](./Python/shifting-letters.py) | _O(n)_ | _O(1)_ | Medium ||
 859 | [Buddy Strings](https://leetcode.com/problems/buddy-strings/) | [C++](./C++/buddy-strings.cpp) [Python](./Python/buddy-strings.py) | _O(n)_ | _O(1)_ | Easy ||
-884 | [Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/) | [C++](./C++/decoded-string-at-index.cpp) [Python](./Python/decoded-string-at-index.py) | _O(n)_ | _O(1)_ | Medium ||
-888 | [Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/) | [C++](./C++/uncommon-words-from-two-sentences.cpp) [Python](./Python/uncommon-words-from-two-sentences.py) | _O(m + n)_ | _O(m + n)_ | Easy ||
+880 | [Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/) | [C++](./C++/decoded-string-at-index.cpp) [Python](./Python/decoded-string-at-index.py) | _O(n)_ | _O(1)_ | Medium ||
+884 | [Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/) | [C++](./C++/uncommon-words-from-two-sentences.cpp) [Python](./Python/uncommon-words-from-two-sentences.py) | _O(m + n)_ | _O(m + n)_ | Easy ||
+890 | [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) | [C++](./C++/find-and-replace-pattern.cpp) [Python](./Python/find-and-replace-pattern.py) | _O(n * l)_ | _O(1)_ | Medium ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -372,6 +374,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 850 | [Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii/) | [C++](./C++/rectangle-area-ii.cpp) [Python](./Python/rectangle-area-ii.py) | _O(nlogn)_ | _O(n)_ | Hard || Segment Tree |
 863 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [C++](./C++/all-nodes-distance-k-in-binary-tree.cpp) [Python](./Python/all-nodes-distance-k-in-binary-tree.py) | _O(n)_ | _O(n)_ | Medium || DFS + BFS |
 866 | [Smallest Subtree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/) | [C++](./C++/smallest-subtree-with-all-the-deepest-nodes.cpp) [Python](./Python/smallest-subtree-with-all-the-deepest-nodes.py) | _O(n)_ | _O(h)_ | Medium || DFS |
+889 | [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | [C++](./C++/construct-binary-tree-from-preorder-and-postorder-traversal.cpp) [Python](./Python/construct-binary-tree-from-preorder-and-postorder-traversal.py) | _O(n)_ | _O(h)_ | Medium || DFS, stack |
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -477,7 +480,11 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 458 | [Poor Pigs](https://leetcode.com/problems/poor-pigs/) | [C++](./C++/poor-pigs.cpp) [Python](./Python/poor-pigs.py) | _O(n)_ | _O(1)_ | Easy |||
 469 | [Convex Polygon](https://leetcode.com/problems/convex-polygon/) | [C++](./C++/convex-polygon.cpp) [Python](./Python/convex-polygon.py) | _O(n)_ | _O(1)_ | Medium |📖||
 470 | [Implement Rand10() Using Rand7()](https://leetcode.com/problems/implement-rand10-using-rand7/) | [C++](./C++/implement-rand10-using-rand7.cpp) [Python](./Python/implement-rand10-using-rand7.py) | _O(1)_ | _O(1)_ | Medium |||
+478 | [Generate Random Point in a Circle](https://leetcode.com/problems/generate-random-point-in-a-circle/) | [C++](./C++/generate-random-point-in-a-circle.cpp) [Python](./Python/generate-random-point-in-a-circle.py) | _O(1)_ | _O(1)_ | Medium |||
+497 | [Random Point in Non-overlapping Rectangles](https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/) | [C++](./C++/random-point-in-non-overlapping-rectangles.cpp) [Python](./Python/random-point-in-non-overlapping-rectangles.py) | ctor: _O(n)_ <br> pick: _O(logn)_ | _O(n)_ | Medium |||
 517 | [Super Washing Machines](https://leetcode.com/problems/super-washing-machines/) | [C++](./C++/super-washing-machines.cpp) [Python](./Python/super-washing-machines.py) | _O(n)_ | _O(1)_ | Hard |||
+519 | [Random Flip Matrix](https://leetcode.com/problems/random-flip-matrix/) | [C++](./C++/random-flip-matrix.cpp) [Python](./Python/random-flip-matrix.py) | ctor: _O(1)_ <br> pick: _O(1)_ reset: _O(n)_ | _O(n)_ | Medium |||
+528 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/) | [C++](./C++/random-pick-with-weight.cpp) [Python](./Python/random-pick-with-weight.py) | ctor: _O(n)_ <br> pick: _O(logn)_ | _O(n)_ | Medium |||
 537 | [Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/) | [C++](./C++/complex-number-multiplication.cpp) [Python](./Python/complex-number-multiplication.py) | _O(1)_ | _O(1)_ | Medium |||
 553 | [Optimal Division](https://leetcode.com/problems/optimal-division/) | [C++](./C++/optimal-division.cpp) [Python](./Python/optimal-division.py) | _O(n)_ | _O(1)_ | Medium |||
 573 | [Squirrel Simulation](https://leetcode.com/problems/squirrel-simulation/) | [C++](./C++/squirrel-simulation.cpp) [Python](./Python/squirrel-simulation.py) | _O(n)_ | _O(1)_ | Medium |📖||
@@ -507,12 +514,9 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 836 | [Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/) | [C++](./C++/rectangle-overlap.cpp) [Python](./Python/rectangle-overlap.py) | _O(1)_ | _O(1)_ | Easy |||
 858 | [Mirror Reflection](https://leetcode.com/problems/mirror-reflection/) | [C++](./C++/mirror-reflection.cpp) [Python](./Python/mirror-reflection.py) | _O(1)_ | _O(1)_ | Medium |||
 867 | [Prime Palindrome](https://leetcode.com/problems/prime-palindrome/) | [C++](./C++/prime-palindrome.cpp) [Python](./Python/prime-palindrome.py) | _O(1)_ | _O(1)_ | Medium |||
-880 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/) | [C++](./C++/random-pick-with-weight.cpp) [Python](./Python/random-pick-with-weight.py) | ctor: _O(n)_ <br> pick: _O(logn)_ | _O(n)_ | Medium |||
-881 | [Random Flip Matrix](https://leetcode.com/problems/random-flip-matrix/) | [C++](./C++/random-flip-matrix.cpp) [Python](./Python/random-flip-matrix.py) | ctor: _O(1)_ <br> pick: _O(1)_ reset: _O(n)_ | _O(n)_ | Medium |||
-882 | [Random Point in Non-overlapping Rectangles](https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/) | [C++](./C++/random-point-in-non-overlapping-rectangles.cpp) [Python](./Python/random-point-in-non-overlapping-rectangles.py) | ctor: _O(n)_ <br> pick: _O(logn)_ | _O(n)_ | Medium |||
-883 | [Generate Random Point in a Circle](https://leetcode.com/problems/generate-random-point-in-a-circle/) | [C++](./C++/generate-random-point-in-a-circle.cpp) [Python](./Python/generate-random-point-in-a-circle.py) | _O(1)_ | _O(1)_ | Medium |||
-887 | [Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes/) | [C++](./C++/projection-area-of-3d-shapes.cpp) [Python](./Python/projection-area-of-3d-shapes.py) | _O(n^2)_ | _O(1)_ | Easy |||
-891 | [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/) | [C++](./C++/super-egg-drop.cpp) [Python](./Python/super-egg-drop.py) | _O(klogn)_ | _O(1)_ | Hard |||
+883 | [Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes/) | [C++](./C++/projection-area-of-3d-shapes.cpp) [Python](./Python/projection-area-of-3d-shapes.py) | _O(n^2)_ | _O(1)_ | Easy |||
+887 | [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/) | [C++](./C++/super-egg-drop.cpp) [Python](./Python/super-egg-drop.py) | _O(klogn)_ | _O(1)_ | Hard |||
+891 | [Sum of Subsequence Widths](https://leetcode.com/problems/sum-of-subsequence-widths/) | [C++](./C++/sum-of-subsequence-widths.cpp) [Python](./Python/sum-of-subsequence-widths.py) | _O(n)_ | _O(1)_ | Hard |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -677,8 +681,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 815|[Bus Routes](https://leetcode.com/problems/bus-routes/)| [C++](./C++/bus-routes.cpp) [Python](./Python/bus-routes.py)| _O(\|E\| + \|V\|)_ | _O(\|E\| + \|V\|)_ | Hard | | |
 854|[K-Similar Strings](https://leetcode.com/problems/k-similar-strings/)| [C++](./C++/k-similar-strings.cpp) [Python](./Python/k-similar-strings.py)| _O(n * n!/(c_a!*...*c_z!))_ | _O(n * n!/(c_a!*...*c_z!))_ | Hard | | |
 865|[Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/)| [C++](./C++/shortest-path-to-get-all-keys.cpp) [Python](./Python/shortest-path-to-get-all-keys.py)| _O(k * r * c + k^3*2^k)_ | _O(k*2^k)_ | Hard | | `Dijkstra's algorithm` |
-886|[Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)| [C++](./C++/reachable-nodes-in-subdivided-graph.cpp) [Python](./Python/reachable-nodes-in-subdivided-graph.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | | `Dijkstra's algorithm` |
-890|[Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)| [C++](./C++/possible-bipartition.cpp) [Python](./Python/possible-bipartition.py)| _O(\|V\| + \|E\|)_ | _O(\|V\| + \|E\|)_ | Medium | | |
+882|[Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)| [C++](./C++/reachable-nodes-in-subdivided-graph.cpp) [Python](./Python/reachable-nodes-in-subdivided-graph.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | | `Dijkstra's algorithm` |
+886|[Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)| [C++](./C++/possible-bipartition.cpp) [Python](./Python/possible-bipartition.py)| _O(\|V\| + \|E\|)_ | _O(\|V\| + \|E\|)_ | Medium | | |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -885,7 +889,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 843 | [Guess the Word](https://leetcode.com/problems/guess-the-word/) | [C++](./C++/guess-the-word.cpp) [Python](./Python/guess-the-word.py) | _O(n^2)_ | _O(n)_ | Hard || MinMax |
 861 | [Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/) | [C++](./C++/score-after-flipping-matrix.cpp) [Python](./Python/score-after-flipping-matrix.py) | _O(r * c)_ | _O(1)_ | Medium ||
 870 | [Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/) | [C++](./C++/advantage-shuffle.cpp) [Python](./Python/advantage-shuffle.py) | _O(nlogn)_ | _O(n)_ | Medium ||
-885 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | [C++](./C++/boats-to-save-people.cpp) [Python](./Python/boats-to-save-people.py) | _O(nlogn)_ | _O(n)_ | Medium ||
+881 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | [C++](./C++/boats-to-save-people.cpp) [Python](./Python/boats-to-save-people.py) | _O(nlogn)_ | _O(n)_ | Medium ||
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
