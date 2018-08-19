@@ -60,8 +60,8 @@ class Solution2(object):
             if pre_s >= pre_e or post_s >= post_e:
                 return None
             node = TreeNode(pre[pre_s])
-            if pre_s+1 < pre_e:
-                left_tree_size = post_entry_idx_map[pre[pre_s + 1]]-post_s+1
+            if pre_e-pre_s > 1:
+                left_tree_size = post_entry_idx_map[pre[pre_s+1]]-post_s+1
                 node.left = constructFromPrePostHelper(pre, pre_s+1, pre_s+1+left_tree_size, 
                                                        post, post_s, post_s+left_tree_size,
                                                        post_entry_idx_map)
