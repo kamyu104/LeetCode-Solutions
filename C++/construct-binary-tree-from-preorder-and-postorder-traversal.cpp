@@ -41,7 +41,7 @@ public:
             post_entry_idx_map[post[i]] = i;
         }
         return constructFromPrePostHelper(pre, 0, pre.size(), post, 0, post.size(),
-                                         post_entry_idx_map);
+                                          post_entry_idx_map);
     }
 
 private:
