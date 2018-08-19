@@ -55,3 +55,4 @@ class Solution(object):
         for b in set(B):
             if diff+b in setA:
                 return [diff+b, b]
+        return []
