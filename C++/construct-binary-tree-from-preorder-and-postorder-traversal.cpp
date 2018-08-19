@@ -52,7 +52,7 @@ private:
             return nullptr;
         }
         auto node = new TreeNode(pre[pre_s]);
-        if (pre_s + 1 < pre_e) {
+        if (pre_e - pre_s > 1) {
             auto left_tree_size = post_entry_idx_map.at(pre[pre_s + 1]) - post_s + 1;         
             node->left = constructFromPrePostHelper(pre, pre_s + 1, pre_s + 1 + left_tree_size, 
                                                     post, post_s, post_s + left_tree_size,
