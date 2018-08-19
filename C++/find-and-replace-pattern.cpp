@@ -18,15 +18,15 @@ private:
         unordered_map<char, char> lookup;
         unordered_set<char> char_set;
         for (int i = 0; i < word.length(); ++i) {
-            const auto& w = word[i], &p = pattern[i];
-            if (!lookup.count(w)) {
+            const auto& c = word[i], &p = pattern[i];
+            if (!lookup.count(c)) {
                 if (char_set.count(p)) {
                     return false;
                 }
                 char_set.emplace(p);
-                lookup[w] = p;
+                lookup[c] = p;
             }
-            if (lookup[w] != p) {
+            if (lookup[c] != p) {
                 return false;
             }
         }
