@@ -58,8 +58,7 @@ class FreqStack(object):
         self.__freq[x] += 1
         if self.__freq[x] > self.__maxfreq:
             self.__maxfreq = self.__freq[x]
-        self.__group[self.__freq[x]].append(x)
-        
+        self.__group[self.__freq[x]].append(x)   
 
     def pop(self):
         """
