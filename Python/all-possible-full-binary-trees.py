@@ -1,5 +1,5 @@
-# Time:  O(n * 4^n / n^(3/2)) ~= Catalan numbers
-# Space: O(n * 4^n / n^(3/2)) ~= Catalan numbers
+# Time:  O(n * 4^n / n^(3/2)) ~= sum of Catalan numbers from 1 .. N
+# Space: O(n * 4^n / n^(3/2)) ~= sum of Catalan numbers from 1 .. N
 
 # A full binary tree is a binary tree where each node has exactly 0 or 2 children.
 #
