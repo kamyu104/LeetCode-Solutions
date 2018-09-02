@@ -77,6 +77,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 693 | [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/) | [C++](./C++/binary-number-with-alternating-bits.cpp) [Python](./Python/binary-number-with-alternating-bits.py) | _O(1)_ | _O(1)_ | Easy ||
 762 | [Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/) | [C++](./C++/prime-number-of-set-bits-in-binary-representation.cpp) [Python](./Python/prime-number-of-set-bits-in-binary-representation.py) | _O(1)_ | _O(1)_ | Easy ||
 868 | [Binary Gap](https://leetcode.com/problems/binary-gap/) | [C++](./C++/binary-gap.cpp) [Python](./Python/binary-gap.py) | _O(1)_ | _O(1)_ | Easy ||
+898 | [Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/) | [C++](./C++/bitwise-ors-of-subarrays.cpp) [Python](./Python/bitwise-ors-of-subarrays.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## Array
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -173,6 +174,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 868 | [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/) | [C++](./C++/transpose-matrix.cpp) [Python](./Python/transpose-matrix.py) | _O(r * c)_ | _O(1)_ | Easy ||
 885 | [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) | [C++](./C++/spiral-matrix-iii.cpp) [Python](./Python/spiral-matrix-iii.py) | _O(max(m, n)^2)_ | _O(1)_      | Medium         ||
 888 | [Fair Candy Swap](https://leetcode.com/problems/fair-candy-swap/) | [C++](./C++/fair-candy-swap.cpp) [Python](./Python/fair-candy-swap.py) | _O(m + n)_ | _O(m + n)_      | Easy         ||
+896 | [Monotonic Array](https://leetcode.com/problems/monotonic-array/) | [C++](./C++/monotonic-array.cpp) [Python](./Python/monotonic-array.py) | _O(n)_ | _O(1)_      | Easy         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -377,6 +379,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 863 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [C++](./C++/all-nodes-distance-k-in-binary-tree.cpp) [Python](./Python/all-nodes-distance-k-in-binary-tree.py) | _O(n)_ | _O(n)_ | Medium || DFS + BFS |
 866 | [Smallest Subtree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/) | [C++](./C++/smallest-subtree-with-all-the-deepest-nodes.cpp) [Python](./Python/smallest-subtree-with-all-the-deepest-nodes.py) | _O(n)_ | _O(h)_ | Medium || DFS |
 889 | [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | [C++](./C++/construct-binary-tree-from-preorder-and-postorder-traversal.cpp) [Python](./Python/construct-binary-tree-from-preorder-and-postorder-traversal.py) | _O(n)_ | _O(h)_ | Medium || DFS, stack |
+897| [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | [C++](./C++/increasing-order-search-tree.cpp) [Python](./Python/increasing-order-search-tree.py) | _O(n)_          | _O(h)_          | Easy           || DFS |
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -519,6 +522,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 883 | [Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes/) | [C++](./C++/projection-area-of-3d-shapes.cpp) [Python](./Python/projection-area-of-3d-shapes.py) | _O(n^2)_ | _O(1)_ | Easy |||
 887 | [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/) | [C++](./C++/super-egg-drop.cpp) [Python](./Python/super-egg-drop.py) | _O(klogn)_ | _O(1)_ | Hard |||
 891 | [Sum of Subsequence Widths](https://leetcode.com/problems/sum-of-subsequence-widths/) | [C++](./C++/sum-of-subsequence-widths.cpp) [Python](./Python/sum-of-subsequence-widths.py) | _O(n)_ | _O(1)_ | Hard |||
+899 | [Orderly Queue](https://leetcode.com/problems/orderly-queues/) | [C++](./C++/orderly-queue.cpp) [Python](./Python/orderly-queue.py) | _O(n^2)_ | _O(n)_ | Hard |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
