@@ -12,6 +12,6 @@ public:
                 dec = true;
             }
         }
-        return (inc && dec) == false;
+        return !inc || !dec;
     }
 };
