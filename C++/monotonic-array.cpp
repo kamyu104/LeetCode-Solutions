@@ -9,9 +9,9 @@ public:
             if (A[i] < A[i + 1]) {
                 inc = true;
             } else if (A[i] > A[i + 1]) {
-                dec = false;
+                dec = true;
             }
         }
-        return inc && dec == false;
+        return (inc && dec) == false;
     }
 };
