@@ -1,5 +1,5 @@
 # Time:  O(n * 2^n)
-# Space: O(n^2)
+# Space: O(n), longest possible path in tree, which is if all numbers are increasing.
 
 # Given an integer array, your task is
 # to find all the different possible increasing
@@ -27,7 +27,7 @@ class Solution(object):
             lookup = set()
             for i in xrange(pos, len(nums)):
                 if (not seq or nums[i] >= seq[-1]) and \
-                   nums[i]  not in lookup:
+                   nums[i] not in lookup:
                     lookup.add(nums[i])
                     seq.append(nums[i])
                     findSubsequencesHelper(nums, i+1, seq, result)
