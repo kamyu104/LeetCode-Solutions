@@ -1,5 +1,5 @@
 // Time:  O(n * 2^n)
-// Space: O(n^2)
+// Space: O(n)
 
 class Solution {
 public:
