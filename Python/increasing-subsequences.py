@@ -1,5 +1,5 @@
 # Time:  O(n * 2^n)
-# Space: O(n^2)
+# Space: O(n) #Longest possible path in tree, which is if all numbers are increasing.
 
 # Given an integer array, your task is
 # to find all the different possible increasing
