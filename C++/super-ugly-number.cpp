@@ -47,8 +47,8 @@ public:
     }
 };
 
-// Time:  O(n * logk) ~ O(n * klogk)
-// Space: O(k^2)
+// Time:  O(n * klogn)
+// Space: O(n * k)
 // Heap solution. (612ms)
 class Solution3 {
 public:
@@ -67,8 +67,8 @@ public:
             for (; j < primes.size(); ++j) {
                 if (ugly_number % primes[j] == 0) {
                     for (int k = 0; k <= j; ++k) {
-                        // worst time:  O(klogk)
-                        // worst space: O(k^2)
+                        // worst time:  O(klogn)
+                        // worst space: O(n * k)
                         heap.emplace(ugly_number * primes[k]);
                     }
                     break;
