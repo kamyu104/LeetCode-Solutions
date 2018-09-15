@@ -55,13 +55,12 @@ class Solution2(object):
         result, current = [], [root]
         while current:
             next_level = []
-            for i, node in enumerate(current):
+            for node in current:
                 if node.left:
                     next_level.append(node.left)
                 if node.right:
-                    next_level.append(node.right)
-                if i == len(current) - 1:
-                    result.append(node.val)
+                    next_level.append(node.right)                
+            result.append(node.val)
             current = next_level
 
         return result
