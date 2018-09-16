@@ -175,6 +175,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 885 | [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) | [C++](./C++/spiral-matrix-iii.cpp) [Python](./Python/spiral-matrix-iii.py) | _O(max(m, n)^2)_ | _O(1)_      | Medium         ||
 888 | [Fair Candy Swap](https://leetcode.com/problems/fair-candy-swap/) | [C++](./C++/fair-candy-swap.cpp) [Python](./Python/fair-candy-swap.py) | _O(m + n)_ | _O(m + n)_      | Easy         ||
 896 | [Monotonic Array](https://leetcode.com/problems/monotonic-array/) | [C++](./C++/monotonic-array.cpp) [Python](./Python/monotonic-array.py) | _O(n)_ | _O(1)_      | Easy         ||
+905 | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | [C++](./C++/sort-array-by-parity.cpp) [Python](./Python/sort-array-by-parity.py) | _O(n)_ | _O(1)_      | Easy         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -525,6 +526,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 891 | [Sum of Subsequence Widths](https://leetcode.com/problems/sum-of-subsequence-widths/) | [C++](./C++/sum-of-subsequence-widths.cpp) [Python](./Python/sum-of-subsequence-widths.py) | _O(n)_ | _O(1)_ | Hard |||
 899 | [Orderly Queue](https://leetcode.com/problems/orderly-queues/) | [C++](./C++/orderly-queue.cpp) [Python](./Python/orderly-queue.py) | _O(n^2)_ | _O(n)_ | Hard |||
 902 | [Numbers At Most N Given Digit Set](https://leetcode.com/problems/numbers-at-most-n-given-digit-set/) | [C++](./C++/numbers-at-most-n-given-digit-set.cpp) [Python](./Python/numbers-at-most-n-given-digit-set.py) | _O(logn)_ | _O(logn)_ | Hard |||
+906 | [Super Palindromes](https://leetcode.com/problems/super-palindromes/) | [C++](./C++/super-palindromes.cpp) [Python](./Python/super-palindromes.py) | _O(n^0.25 * logn)_ | _O(logn)_ | Hard |||
+907 | [Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums/) | [C++](./C++/sum-of-subarray-minimums.cpp) [Python](./Python/sum-of-subarray-minimums.py) | _O(n)_ | _O(n)_ | Medium || Ascending Stack |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -573,6 +576,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 828| [Unique Letter String](https://leetcode.com/problems/unique-letter-string/) | [C++](./C++/unique-letter-string.cpp)  [Python](./Python/unique-letter-string.py) | _O(n)_ | _O(1)_ | Hard         ||
 844 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | [C++](./C++/backspace-string-compare.cpp) [Python](./Python/backspace-string-compare.py) | _O(m + n)_ | _O(1)_ | Easy ||
 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [C++](./C++/middle-of-the-linked-list.cpp) [Python](./Python/middle-of-the-linked-list.py) | _O(n)_ | _O(1)_ | Easy ||
+904 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | [C++](./C++/fruit-into-baskets.cpp) [Python](./Python/fruit-into-baskets.py) | _O(n)_ | _O(1)_ | Medium ||
+
 
 ## Recursion
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
