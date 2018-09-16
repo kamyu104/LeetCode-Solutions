@@ -1,4 +1,4 @@
-// Time:  O(n^(3/2))
+// Time:  O(n^(1/2) * (logn + n^(1/2)))
 // Space: O(logn)
 
 class Solution {
