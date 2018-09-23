@@ -176,6 +176,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 888 | [Fair Candy Swap](https://leetcode.com/problems/fair-candy-swap/) | [C++](./C++/fair-candy-swap.cpp) [Python](./Python/fair-candy-swap.py) | _O(m + n)_ | _O(m + n)_      | Easy         ||
 896 | [Monotonic Array](https://leetcode.com/problems/monotonic-array/) | [C++](./C++/monotonic-array.cpp) [Python](./Python/monotonic-array.py) | _O(n)_ | _O(1)_      | Easy         ||
 905 | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | [C++](./C++/sort-array-by-parity.cpp) [Python](./Python/sort-array-by-parity.py) | _O(n)_ | _O(1)_      | Easy         ||
+909 | [Snakes and Ladders](https://leetcode.com/problems/snake-and-ladders/) | [C++](./C++/snake-and-ladders.cpp) [Python](./Python/snake-and-ladders.py) | _O(n^2)_ | _O(n^2)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -528,6 +529,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 902 | [Numbers At Most N Given Digit Set](https://leetcode.com/problems/numbers-at-most-n-given-digit-set/) | [C++](./C++/numbers-at-most-n-given-digit-set.cpp) [Python](./Python/numbers-at-most-n-given-digit-set.py) | _O(logn)_ | _O(logn)_ | Hard |||
 906 | [Super Palindromes](https://leetcode.com/problems/super-palindromes/) | [C++](./C++/super-palindromes.cpp) [Python](./Python/super-palindromes.py) | _O(n^0.25 * logn)_ | _O(logn)_ | Hard |||
 907 | [Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums/) | [C++](./C++/sum-of-subarray-minimums.cpp) [Python](./Python/sum-of-subarray-minimums.py) | _O(n)_ | _O(n)_ | Medium || Ascending Stack |
+908 | [Smallest Range I](https://leetcode.com/problems/smallest-range-i/) | [C++](./C++/smallest-range-i.cpp) [Python](./Python/smallest-range-i.py) | _O(n)_ | _O(1)_      | Easy         ||
+910 | [Smallest Range II](https://leetcode.com/problems/smallest-range-ii/) | [C++](./C++/smallest-range-ii.cpp) [Python](./Python/smallest-range-ii.py) | _O(nlogn)_ | _O(1)_      | Medium         ||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -649,6 +652,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 875 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | [C++](./C++/koko-eating-bananas.cpp) [Python](./Python/koko-eating-bananas.py) | _O(nlogr)_ | _O(1)_ | Medium | |
 878 | [Nth Magical Number](https://leetcode.com/problems/nth-magical-number/) | [C++](./C++/nth-magical-number.cpp) [Python](./Python/nth-magical-number.py) | _O(logn)_ | _O(1)_ | Hard | |
 894| [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/) | [C++](./C++/all-possible-full-binary-trees.cpp) [Python](./Python/all-possible-full-binary-trees.py) | _O(n * 4^n / n^(3/2))_ | _O(n * 4^n / n^(3/2))_ | Medium    || 
+911| [Online Election](https://leetcode.com/problems/online-election/) | [C++](./C++/online-election.cpp) [Python](./Python/online-election.py) | ctor: _O(n)_<br> query : _O(logn)_ | _O(n)_ | Medium    || 
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
