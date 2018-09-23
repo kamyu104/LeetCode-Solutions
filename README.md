@@ -176,7 +176,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 888 | [Fair Candy Swap](https://leetcode.com/problems/fair-candy-swap/) | [C++](./C++/fair-candy-swap.cpp) [Python](./Python/fair-candy-swap.py) | _O(m + n)_ | _O(m + n)_      | Easy         ||
 896 | [Monotonic Array](https://leetcode.com/problems/monotonic-array/) | [C++](./C++/monotonic-array.cpp) [Python](./Python/monotonic-array.py) | _O(n)_ | _O(1)_      | Easy         ||
 905 | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | [C++](./C++/sort-array-by-parity.cpp) [Python](./Python/sort-array-by-parity.py) | _O(n)_ | _O(1)_      | Easy         ||
-909 | [Snakes and Ladders](https://leetcode.com/problems/snake-and-ladders/) | [C++](./C++/snake-and-ladders.cpp) [Python](./Python/snake-and-ladders.py) | _O(n^2)_ | _O(n^2)_      | Medium         ||
+909 | [Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/) | [C++](./C++/snakes-and-ladders.cpp) [Python](./Python/snakes-and-ladders.py) | _O(n^2)_ | _O(n^2)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
