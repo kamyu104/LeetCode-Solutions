@@ -8,22 +8,20 @@ public:
         int lead = -1;
         unordered_map<int, int> count;
         for (int i = 0; i < persons.size(); ++i) {
-            lookup_[times[i]] = persons[i];
-        }
-        for (auto& kvp : lookup_) {
-            if (++count[kvp.second] >= count[lead]) {
-                lead = kvp.second;
+            if (++count[persons[i]] >= count[lead]) {
+                lead = persons[i];
+                lookup_.emplace_back(times[i], persons[i]);
             }
-            kvp.second = lead;
         }
     }
 
     int q(int t) {
-        return prev(lookup_.upper_bound(t))->second;
+        return prev(upper_bound(lookup_.begin(), lookup_.end(),
+                                make_pair(t, numeric_limits<int>::max())))->second;
     }
 
 private:
-     map<int, int> lookup_;
+     vector<pair<int, int>> lookup_;
 };
 
 /**
@@ -31,4 +29,3 @@ private:
  * TopVotedCandidate obj = new TopVotedCandidate(persons, times);
  * int param_1 = obj.q(t);
  */
- 
