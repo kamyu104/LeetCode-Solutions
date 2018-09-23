@@ -16,7 +16,7 @@ public:
     }
 
     int q(int t) {
-        return prev(upper_bound(lookup_.begin(), lookup_.end(),
+        return prev(upper_bound(lookup_.cbegin(), lookup_.cend(),
                                 make_pair(t, numeric_limits<int>::max())))->second;
     }
 
