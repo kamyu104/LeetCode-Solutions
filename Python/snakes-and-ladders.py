@@ -53,6 +53,9 @@
 # - The board square with number 1 has no snake or ladder.
 # - The board square with number N*N has no snake or ladder.
 
+import collections
+
+
 class Solution(object):
     def snakesAndLadders(self, board):
         """
