@@ -177,6 +177,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 896 | [Monotonic Array](https://leetcode.com/problems/monotonic-array/) | [C++](./C++/monotonic-array.cpp) [Python](./Python/monotonic-array.py) | _O(n)_ | _O(1)_      | Easy         ||
 905 | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | [C++](./C++/sort-array-by-parity.cpp) [Python](./Python/sort-array-by-parity.py) | _O(n)_ | _O(1)_      | Easy         ||
 909 | [Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/) | [C++](./C++/snakes-and-ladders.cpp) [Python](./Python/snakes-and-ladders.py) | _O(n^2)_ | _O(n^2)_      | Medium         ||
+915 | [Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals/) | [C++](./C++/partition-array-into-disjoint-intervals.cpp) [Python](./Python/partition-array-into-disjoint-intervals.py) | _O(n)_ | _O(n)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -253,6 +254,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 884 | [Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/) | [C++](./C++/uncommon-words-from-two-sentences.cpp) [Python](./Python/uncommon-words-from-two-sentences.py) | _O(m + n)_ | _O(m + n)_ | Easy ||
 890 | [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) | [C++](./C++/find-and-replace-pattern.cpp) [Python](./Python/find-and-replace-pattern.py) | _O(n * l)_ | _O(1)_ | Medium ||
 893 | [Groups of Special-Equivalent Strings](https://leetcode.com/problems/groups-of-special-equivalent-strings/) | [C++](./C++/groups-of-special-equivalent-strings.cpp) [Python](./Python/groups-of-special-equivalent-strings.py) | _O(n * l)_ | _O(n)_ | Easy ||
+916 | [Word Subsets](https://leetcode.com/problems/word-subsets/) | [C++](./C++/word-subsets.cpp) [Python](./Python/word-subsets.py) | _O(m + n)_ | _O(1)_ | Medium ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -531,6 +533,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 907 | [Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums/) | [C++](./C++/sum-of-subarray-minimums.cpp) [Python](./Python/sum-of-subarray-minimums.py) | _O(n)_ | _O(n)_ | Medium || Ascending Stack |
 908 | [Smallest Range I](https://leetcode.com/problems/smallest-range-i/) | [C++](./C++/smallest-range-i.cpp) [Python](./Python/smallest-range-i.py) | _O(n)_ | _O(1)_      | Easy         ||
 910 | [Smallest Range II](https://leetcode.com/problems/smallest-range-ii/) | [C++](./C++/smallest-range-ii.cpp) [Python](./Python/smallest-range-ii.py) | _O(nlogn)_ | _O(1)_      | Medium         ||
+914 | [X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/) | [C++](./C++/x-of-a-kind-in-a-deck-of-cards.cpp) [Python](./Python/x-of-a-kind-in-a-deck-of-cards.py) | _O(n * (logn)^2)_ | _O(n)_      | Easy         ||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -743,6 +746,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 834| [Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/) | [C++](./C++/sum-of-distances-in-tree.cpp) [Python](./Python/sum-of-distances-in-tree.py) | _O(n)_          | _O(n)_          | Hard           |||
 841| [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) | [C++](./C++/keys-and-rooms.cpp) [Python](./Python/keys-and-rooms.py) | _O(n!)_          | _O(n)_          | Medium           |||
 851| [Loud and Rich](https://leetcode.com/problems/loud-and-rich/) | [C++](./C++/loud-and-rich.cpp) [Python](./Python/loud-and-rich.py) | _O(q + r)_          | _O(q + r)_          | Medium           |||
+913| [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | [C++](./C++/cat-and-mouse.cpp) [Python](./Python/cat-and-mouse.py) | _O(n^3)_          | _O(n^2)_          | Hard           |||
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
