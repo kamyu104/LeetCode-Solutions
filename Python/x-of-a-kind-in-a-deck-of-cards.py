@@ -39,6 +39,8 @@
 # - 1 <= deck.length <= 10000
 # - 0 <= deck[i] < 10000
 
+import collections
+
 
 class Solution(object):
     def hasGroupsSizeX(self, deck):
