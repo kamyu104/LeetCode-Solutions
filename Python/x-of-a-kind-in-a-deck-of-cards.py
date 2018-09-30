@@ -1,4 +1,4 @@
-# Time:  O(n)
+# Time:  O(n * (logn)^2)
 # Space: O(n)
 
 # In a deck of cards, each card has an integer written on it.
@@ -48,7 +48,7 @@ class Solution(object):
         :type deck: List[int]
         :rtype: bool
         """
-        def gcd(a, b):
+        def gcd(a, b):  # Time: O((logn)^2)
             while b:
                 a, b = b, a % b
             return a
