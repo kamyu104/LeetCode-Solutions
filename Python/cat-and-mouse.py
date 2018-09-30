@@ -37,7 +37,8 @@
 # - 3 <= graph.length <= 50
 # - It is guaranteed that graph[1] is non-empty.
 # - It is guaranteed that graph[2] contains a non-zero element. 
-                                
+
+
 class Solution(object):
     def catMouseGame(self, graph):
         """
@@ -47,7 +48,7 @@ class Solution(object):
         HOLE, MOUSE_START, CAT_START = range(3)
         DRAW, MOUSE, CAT = range(3)
 
-        def move(lookup, i, other_i, is_mouse_turn):
+        def move(graph, lookup, i, other_i, is_mouse_turn):
             key = (i, other_i, is_mouse_turn)
             if key in lookup:
                 return lookup[key]
@@ -66,7 +67,7 @@ class Solution(object):
                 for nei in graph[i]:                
                     if nei == skip:
                         continue
-                    tmp = move(lookup, other_i, nei, not is_mouse_turn)
+                    tmp = move(graph, lookup, other_i, nei, not is_mouse_turn)
                     if tmp == win:
                         result = win
                         break
@@ -75,4 +76,4 @@ class Solution(object):
             lookup[key] = result
             return result
 
-        return move({}, MOUSE_START, CAT_START, True)
+        return move(graph, {}, MOUSE_START, CAT_START, True)
