@@ -1,4 +1,4 @@
-# Time:  O(a + b)
+# Time:  O(m + n)
 # Space: O(1)
 
 # We are given two arrays A and B of words.
