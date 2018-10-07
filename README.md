@@ -178,6 +178,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 905 | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | [C++](./C++/sort-array-by-parity.cpp) [Python](./Python/sort-array-by-parity.py) | _O(n)_ | _O(1)_      | Easy         ||
 909 | [Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/) | [C++](./C++/snakes-and-ladders.cpp) [Python](./Python/snakes-and-ladders.py) | _O(n^2)_ | _O(n^2)_      | Medium         ||
 915 | [Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals/) | [C++](./C++/partition-array-into-disjoint-intervals.cpp) [Python](./Python/partition-array-into-disjoint-intervals.py) | _O(n)_ | _O(n)_      | Medium         ||
+918 | [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/) | [C++](./C++/maximum-sum-circular-subarray.cpp) [Python](./Python/maximum-sum-circular-subarray.py) | _O(n)_ | _O(1)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -255,6 +256,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 890 | [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) | [C++](./C++/find-and-replace-pattern.cpp) [Python](./Python/find-and-replace-pattern.py) | _O(n * l)_ | _O(1)_ | Medium ||
 893 | [Groups of Special-Equivalent Strings](https://leetcode.com/problems/groups-of-special-equivalent-strings/) | [C++](./C++/groups-of-special-equivalent-strings.cpp) [Python](./Python/groups-of-special-equivalent-strings.py) | _O(n * l)_ | _O(n)_ | Easy ||
 916 | [Word Subsets](https://leetcode.com/problems/word-subsets/) | [C++](./C++/word-subsets.cpp) [Python](./Python/word-subsets.py) | _O(m + n)_ | _O(1)_ | Medium ||
+917 | [Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/) | [C++](./C++/reverse-only-letters.cpp) [Python](./Python/reverse-only-letters.py) | _O(n)_ | _O(1)_ | Easy ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -385,6 +387,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 866 | [Smallest Subtree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/) | [C++](./C++/smallest-subtree-with-all-the-deepest-nodes.cpp) [Python](./Python/smallest-subtree-with-all-the-deepest-nodes.py) | _O(n)_ | _O(h)_ | Medium || DFS |
 889 | [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | [C++](./C++/construct-binary-tree-from-preorder-and-postorder-traversal.cpp) [Python](./Python/construct-binary-tree-from-preorder-and-postorder-traversal.py) | _O(n)_ | _O(h)_ | Medium || DFS, stack |
 897| [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | [C++](./C++/increasing-order-search-tree.cpp) [Python](./Python/increasing-order-search-tree.py) | _O(n)_          | _O(h)_          | Easy           || DFS |
+919| [Complete Binary Tree Inserter](https://leetcode.com/problems/complete-binary-tree-inserter/) | [C++](./C++/complete-binary-tree-inserter.cpp) [Python](./Python/complete-binary-tree-inserter.py) | ctor: _O(n)_ <br> insert: _O(1)_ <br> get_root: _O(1)_      | _O(n)_          | Medium           |||
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -876,6 +879,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 877 | [Stone Game](https://leetcode.com/problems/stone-game/) | [C++](./C++/stone-game.cpp) [Python](./Python/stone-game.py) | _O(n^2)_ | _O(n)_ | Medium | variant of [Predict the Winner](https://leetcode.com/problems/predict-the-winner/) | |
 879 | [Profitable Schemes](https://leetcode.com/problems/profitable-schemes/) | [C++](./C++/profitable-schemes.cpp) [Python](./Python/profitable-schemes.py) | _O(n * p * g)_ | _O(p * g)_ | Hard || |
 903 | [Valid Permutations for DI Sequence](https://leetcode.com/problems/valid-permutations-for-di-sequence/) | [C++](./C++/valid-permutations-for-di-sequence.cpp) [Python](./Python/valid-permutations-for-di-sequence.py) | _O(n^2)_ | _O(n)_ | Hard || |
+920 | [Number of Music Playlists](https://leetcode.com/problems/number-of-music-playlists/) | [C++](./C++/number-of-music-playlists.cpp) [Python](./Python/number-of-music-playlists.py) | _O(n * l)_ | _O(l)_ | Hard || |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
