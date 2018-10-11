@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solution.svg?branch=master)
 
 The number of LeetCode questions is increasing every week.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
@@ -7,40 +7,40 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 
 ## Algorithms
 
-* [Bit Manipulation](https://github.com/kamyu104/LeetCode#bit-manipulation)
-* [Array](https://github.com/kamyu104/LeetCode#array)
-* [String](https://github.com/kamyu104/LeetCode#string)
-* [Linked List](https://github.com/kamyu104/LeetCode#linked-list)
-* [Stack](https://github.com/kamyu104/LeetCode#stack)
-* [Queue](https://github.com/kamyu104/LeetCode#queue)
-* [Heap](https://github.com/kamyu104/LeetCode#heap)
-* [Tree](https://github.com/kamyu104/LeetCode#tree)
-* [Hash Table](https://github.com/kamyu104/LeetCode#hash-table)
-* [Math](https://github.com/kamyu104/LeetCode#math)
-* [Two Pointers](https://github.com/kamyu104/LeetCode#two-pointers)
-* [Sort](https://github.com/kamyu104/LeetCode#sort)
-* [Recursion](https://github.com/kamyu104/LeetCode#recursion)
-* [Binary Search](https://github.com/kamyu104/LeetCode#binary-search)
-* [Binary Search Tree](https://github.com/kamyu104/LeetCode#binary-search-tree)
-* [Breadth-First Search](https://github.com/kamyu104/LeetCode#breadth-first-search)
-* [Depth-First Search](https://github.com/kamyu104/LeetCode#depth-first-search)
-* [Backtracking](https://github.com/kamyu104/LeetCode#backtracking)
-* [Dynamic Programming](https://github.com/kamyu104/LeetCode#dynamic-programming)
-* [Greedy](https://github.com/kamyu104/LeetCode#greedy)
-* [Graph](https://github.com/kamyu104/LeetCode#graph)
-* [Geometry](https://github.com/kamyu104/LeetCode#geometry)
-* [Simulation](https://github.com/kamyu104/LeetCode#simulation)
-* [Design](https://github.com/kamyu104/LeetCode#design)
+* [Bit Manipulation](https://github.com/kamyu104/LeetCode-Solution#bit-manipulation)
+* [Array](https://github.com/kamyu104/LeetCode-Solution#array)
+* [String](https://github.com/kamyu104/LeetCode-Solution#string)
+* [Linked List](https://github.com/kamyu104/LeetCode-Solution#linked-list)
+* [Stack](https://github.com/kamyu104/LeetCode-Solution#stack)
+* [Queue](https://github.com/kamyu104/LeetCode-Solution#queue)
+* [Heap](https://github.com/kamyu104/LeetCode-Solution#heap)
+* [Tree](https://github.com/kamyu104/LeetCode-Solution#tree)
+* [Hash Table](https://github.com/kamyu104/LeetCode-Solution#hash-table)
+* [Math](https://github.com/kamyu104/LeetCode-Solution#math)
+* [Two Pointers](https://github.com/kamyu104/LeetCode-Solution#two-pointers)
+* [Sort](https://github.com/kamyu104/LeetCode-Solution#sort)
+* [Recursion](https://github.com/kamyu104/LeetCode-Solution#recursion)
+* [Binary Search](https://github.com/kamyu104/LeetCode-Solution#binary-search)
+* [Binary Search Tree](https://github.com/kamyu104/LeetCode-Solution#binary-search-tree)
+* [Breadth-First Search](https://github.com/kamyu104/LeetCode-Solution#breadth-first-search)
+* [Depth-First Search](https://github.com/kamyu104/LeetCode-Solution#depth-first-search)
+* [Backtracking](https://github.com/kamyu104/LeetCode-Solution#backtracking)
+* [Dynamic Programming](https://github.com/kamyu104/LeetCode-Solution#dynamic-programming)
+* [Greedy](https://github.com/kamyu104/LeetCode-Solution#greedy)
+* [Graph](https://github.com/kamyu104/LeetCode-Solution#graph)
+* [Geometry](https://github.com/kamyu104/LeetCode-Solution#geometry)
+* [Simulation](https://github.com/kamyu104/LeetCode-Solution#simulation)
+* [Design](https://github.com/kamyu104/LeetCode-Solution#design)
 
 
 ## Database
 
-* [SQL](https://github.com/kamyu104/LeetCode#sql)
+* [SQL](https://github.com/kamyu104/LeetCode-Solution#sql)
 
 
 ## Shell
 
-* [Shell Script](https://github.com/kamyu104/LeetCode#shell-script)
+* [Shell Script](https://github.com/kamyu104/LeetCode-Solution#shell-script)
 
 ## Reference
 
