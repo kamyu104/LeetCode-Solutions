@@ -2,9 +2,6 @@ from __future__ import print_function
 # Time:  O(logn) = O(1)
 # Space: O(1)
 
-# Implement pow(x, n).
-
-# Iterative solution.
 class Solution(object):
     def myPow(self, x, n):
         """
@@ -22,10 +19,6 @@ class Solution(object):
 
         return 1 / result if n < 0 else result
 
-
-# Time:  O(logn)
-# Space: O(logn)
-# Recursive solution.
 class Solution2(object):
     def myPow(self, x, n):
         """
@@ -43,7 +36,7 @@ class Solution2(object):
         else:
             return v * v * x
 
-
 if __name__ == "__main__":
     print(Solution().pow(3, 5))
     print(Solution().pow(3, -5))
+

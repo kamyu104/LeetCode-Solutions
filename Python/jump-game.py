@@ -1,17 +1,6 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
-#
-# Given an array of non-negative integers, you are initially positioned at the first index of the array.
-#
-# Each element in the array represents your maximum jump length at that position.
-#
-# Determine if you are able to reach the last index.
-#
-# For example:
-# A = [2,3,1,1,4], return true.
-#
-# A = [3,2,1,0,4], return false.
 
 class Solution:
     # @param A, a list of integers
@@ -27,3 +16,4 @@ class Solution:
 if __name__ == "__main__":
     print(Solution().canJump([2,3,1,1,4]))
     print(Solution().canJump([3,2,1,0,4]))
+

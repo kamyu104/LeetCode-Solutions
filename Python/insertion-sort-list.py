@@ -1,11 +1,7 @@
 from __future__ import print_function
 # Time:  O(n ^ 2)
 # Space: O(1)
-#
-# Sort a linked list using insertion sort.
-#
 
-# Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -51,3 +47,4 @@ if __name__ == "__main__":
     head.next = ListNode(2)
     head.next.next = ListNode(1)
     print(Solution().insertionSortList(head))
+

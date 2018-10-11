@@ -2,10 +2,6 @@ from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(n)
 
-# Given a 2D binary matrix filled with 0's and 1's,
-# find the largest rectangle containing all ones and return its area.
-
-# Ascending stack solution.
 class Solution(object):
     def maximalRectangle(self, matrix):
         """
@@ -38,10 +34,6 @@ class Solution(object):
 
         return result
 
-
-# Time:  O(n^2)
-# Space: O(n)
-# DP solution.
 class Solution2(object):
     def maximalRectangle(self, matrix):
         """
@@ -88,3 +80,4 @@ if __name__ == "__main__":
               "11111",
               "00000"]
     print(Solution().maximalRectangle(matrix))
+

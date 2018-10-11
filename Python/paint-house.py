@@ -23,8 +23,6 @@ class Solution(object):
 
         return min(min_cost[(n - 1) % 2])
 
-# Time:  O(n)
-# Space: O(n)
 class Solution2(object):
     def minCost(self, costs):
         """
@@ -41,3 +39,4 @@ class Solution2(object):
             costs[i][2] += min(costs[i - 1][0], costs[i - 1][1])
 
         return min(costs[n - 1])
+

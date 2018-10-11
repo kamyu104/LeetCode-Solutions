@@ -25,7 +25,3 @@ class MovingAverage(object):
         self.__q.append(val)
         return 1.0 * self.__sum / len(self.__q)
 
-
-# Your MovingAverage object will be instantiated and called as such:
-# obj = MovingAverage(size)
-# param_1 = obj.next(val)

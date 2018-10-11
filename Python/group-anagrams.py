@@ -1,14 +1,8 @@
 from __future__ import print_function
 # Time:  O(n * glogg), g is the max size of groups.
 # Space: O(n)
-#
-# Given an array of strings, return all groups of strings that are anagrams.
-#
-# Note: All inputs will be in lower-case.
-#
 
 import collections
-
 
 class Solution(object):
     def groupAnagrams(self, strs):
@@ -25,7 +19,7 @@ class Solution(object):
             result.append(anagram)
         return result
 
-
 if __name__ == "__main__":
     result = Solution().groupAnagrams(["cat", "dog", "act", "mac"])
     print(result)
+

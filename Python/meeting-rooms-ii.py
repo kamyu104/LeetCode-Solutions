@@ -1,12 +1,6 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-# Definition for an interval.
-# class Interval:
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
-
 class Solution:
     # @param {Interval[]} intervals
     # @return {integer}
@@ -32,3 +26,4 @@ class Solution:
                 e += 1
 
         return min_rooms
+

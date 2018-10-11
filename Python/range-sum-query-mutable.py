@@ -3,23 +3,6 @@
 #        query:  O(logn)
 # Space: O(n)
 
-# Given an integer array nums, find the sum of
-# the elements between indices i and j (i <= j), inclusive.
-#
-# The update(i, val) function modifies nums by
-# updating the element at index i to val.
-# Example:
-# Given nums = [1, 3, 5]
-#
-# sumRange(0, 2) -> 9
-# update(1, 2)
-# sumRange(0, 2) -> 8
-# Note:
-# The array is only modifiable by the update function.
-# You may assume the number of calls to update
-# and sumRange function is distributed evenly.
-
-# Binary Indexed Tree (BIT) solution.
 class NumArray(object):
     def __init__(self, nums):
         """
@@ -70,12 +53,6 @@ class NumArray(object):
             self.__bit[i] += val
             i += (i & -i)
 
-
-# Time:  ctor:   O(n),
-#        update: O(logn),
-#        query:  O(logn)
-# Space: O(n)
-# Segment Tree solutoin.
 class NumArray2(object):
     def __init__(self, nums):
         """
@@ -158,9 +135,3 @@ class NumArray2(object):
         def __init__(self, i, j, s):
             self.start, self.end, self.sum = i, j, s
 
-
-# Your NumArray object will be instantiated and called as such:
-# numArray = NumArray(nums)
-# numArray.sumRange(0, 1)
-# numArray.update(1, 10)
-# numArray.sumRange(1, 2)

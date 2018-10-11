@@ -1,11 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-# Given an integer array of size n,
-# find all elements that appear more than [n/3] times.
-# The algorithm should run in linear time and in O(1) space.
 import collections
-
 
 class Solution(object):
     def majorityElement(self, nums):
@@ -50,3 +46,4 @@ class Solution(object):
         :rtype: List[int]
         """
         return [i[0] for i in collections.Counter(nums).items() if i[1] > len(nums) / 3]
+

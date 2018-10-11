@@ -1,13 +1,7 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
-#
-# Given a binary tree, find its minimum depth.
-#
-# The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
-#
 
-# Definition for a  binary tree node
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -30,3 +24,4 @@ if __name__ == "__main__":
     root = TreeNode(1)
     root.left = TreeNode(2)
     print(Solution().minDepth(root))
+

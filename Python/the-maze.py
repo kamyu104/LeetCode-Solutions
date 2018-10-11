@@ -3,7 +3,6 @@
 
 import collections
 
-
 class Solution(object):
     def hasPath(self, maze, start, destination):
         """
@@ -37,3 +36,4 @@ class Solution(object):
                 queue.append((dist+neighbor_dist, neighbor))
 
         return False
+

@@ -1,19 +1,6 @@
 # Time:  O(C(n, c)), try out all possible substrings with the minimum c deletion.
 # Space: O(c), the depth is at most c, and it costs n at each depth
-#
-# Remove the minimum number of invalid parentheses in order to
-# make the input string valid. Return all possible results.
-#
-# Note: The input string may contain letters other than the
-# parentheses ( and ).
-#
-# Examples:
-# "()())()" -> ["()()()", "(())()"]
-# "(a)())()" -> ["(a)()()", "(a())()"]
-# ")(" -> [""]
-#
 
-# DFS solution.
 class Solution(object):
     def removeInvalidParentheses(self, s):
         """
@@ -71,3 +58,4 @@ class Solution(object):
         (left_removed, right_removed) = findMinRemove(s)
         removeInvalidParenthesesHelper(0, left_removed, right_removed)
         return res
+

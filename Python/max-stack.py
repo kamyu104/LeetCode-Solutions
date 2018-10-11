@@ -7,7 +7,6 @@
 
 import collections
 
-
 class MaxStack(object):
 
     def __init__(self):
@@ -18,7 +17,6 @@ class MaxStack(object):
         self.__val_to_idxs = collections.defaultdict(list)
         self.__top = None
         self.__max = None
-
 
     def push(self, x):
         """
@@ -31,7 +29,6 @@ class MaxStack(object):
         self.__top = x
         self.__max = max(self.__max, x)
 
-
     def pop(self):
         """
         :rtype: int
@@ -40,20 +37,17 @@ class MaxStack(object):
         self.__remove(val)
         return val
 
-
     def top(self):
         """
         :rtype: int
         """
         return self.__top
 
-
     def peekMax(self):
         """
         :rtype: int
         """
         return self.__max
-
 
     def popMax(self):
         """
@@ -62,7 +56,6 @@ class MaxStack(object):
         val = self.__max
         self.__remove(val)
         return val
-
 
     def __remove(self, val):
         idx = self.__val_to_idxs[val][-1]
@@ -75,11 +68,3 @@ class MaxStack(object):
         if val == self.__max:
             self.__max = max(self.__val_to_idxs.keys()) if self.__val_to_idxs else None
 
-
-# Your MaxStack object will be instantiated and called as such:
-# obj = MaxStack()
-# obj.push(x)
-# param_2 = obj.pop()
-# param_3 = obj.top()
-# param_4 = obj.peekMax()
-# param_5 = obj.popMax()

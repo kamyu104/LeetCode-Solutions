@@ -3,7 +3,6 @@
 #        query:  O(logm * logn)
 # Space: O(m * n)
 
-# Binary Indexed Tree (BIT) solution.
 class NumMatrix(object):
     def __init__(self, matrix):
         """
@@ -73,9 +72,3 @@ class NumMatrix(object):
                 j += (j & -j)
             i += (i & -i)
 
-
-# Your NumMatrix object will be instantiated and called as such:
-# numMatrix = NumMatrix(matrix)
-# numMatrix.sumRegion(0, 1, 2, 3)
-# numMatrix.update(1, 1, 10)
-# numMatrix.sumRegion(1, 2, 3, 4)

@@ -1,12 +1,5 @@
 # Time:  ((9!)^9)
 # Space: (1)
-#
-# Write a program to solve a Sudoku puzzle by filling the empty cells.
-#
-# Empty cells are indicated by the character '.'.
-#
-# You may assume that there will be only one unique solution.
-#
 
 class Solution:
     # @param board, a 9x9 2D array
@@ -43,3 +36,4 @@ class Solution:
             return True
 
         solver(board)
+

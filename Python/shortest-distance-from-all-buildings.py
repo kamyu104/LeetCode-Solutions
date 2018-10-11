@@ -27,7 +27,6 @@ class Solution(object):
 
                 pre_level = cur_level
 
-
         m, n, cnt = len(grid),  len(grid[0]), 0
         dists = [[0 for _ in xrange(n)] for _ in xrange(m)]
         cnts = [[0 for _ in xrange(n)] for _ in xrange(m)]
@@ -44,3 +43,4 @@ class Solution(object):
                     shortest = dists[i][j]
 
         return shortest if shortest != float("inf") else -1
+

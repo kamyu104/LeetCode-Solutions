@@ -3,7 +3,6 @@
 
 import collections
 
-
 class Solution:
     # @param {string[]} strings
     # @return {string[][]}
@@ -27,3 +26,4 @@ class Solution:
             else:
                 hashcode += unichr(ord('a') + ord(s[i]) - base + 26)
         return hashcode
+

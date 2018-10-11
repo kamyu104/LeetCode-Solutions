@@ -21,7 +21,6 @@ class Solution(object):
                      result += picture[i][j] == 'B' and cols[j] == 1
         return result
 
-
 class Solution2(object):
     def findLonelyPixel(self, picture):
         """
@@ -31,3 +30,4 @@ class Solution2(object):
         """
         return sum(col.count('B') == 1 == picture[col.index('B')].count('B') \
                for col in zip(*picture))
+

@@ -24,3 +24,4 @@ class Solution(object):
                    accumulated_sum[k - 1] - accumulated_sum[j] in lookup:
                     return True
         return False
+

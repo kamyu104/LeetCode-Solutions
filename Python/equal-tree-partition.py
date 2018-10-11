@@ -1,15 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
 import collections
-
 
 class Solution(object):
     def checkEqualTree(self, root):
@@ -31,3 +23,4 @@ class Solution(object):
         if total == 0:
             return lookup[total] > 1
         return total%2 == 0 and (total/2) in lookup
+

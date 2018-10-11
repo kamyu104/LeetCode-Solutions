@@ -1,38 +1,6 @@
 # Time:  O(n^2 * l) ~ O(n * l^4)
 # Space: O(n) ~ O(n * l^3)
 
-# Two strings X and Y are similar if we can swap two letters
-# (in different positions) of X, so that it equals Y.
-#
-# For example, "tars" and "rats" are similar (swapping at positions 0 and 2),
-# and "rats" and "arts" are similar, but "star" is not similar to
-# "tars", "rats", or "arts".
-#
-# Together, these form two connected groups by similarity:
-# {"tars", "rats", "arts"} and {"star"}.
-# Notice that "tars" and "arts" are in the same group
-# even though they are not similar.
-# Formally, each group is such that a word is in the group
-# if and only if it is similar
-# to at least one other word in the group.
-#
-# We are given a list A of unique strings.
-# Every string in A is an anagram of every other string in A.
-# How many groups are there?
-#
-# Example 1:
-#
-# Input: ["tars","rats","arts","star"]
-# Output: 2
-#
-# Note:
-# - A.length <= 2000
-# - A[i].length <= 1000
-# - A.length * A[i].length <= 20000
-# - All words in A consist of lowercase letters only.
-# - All words in A have the same length and are anagrams of each other.
-# - The judging time limit has been increased for this question.
-
 import collections
 import itertools
 
@@ -40,7 +8,6 @@ try:
     xrange          # Python 2
 except NameError:
     xrange = range  # Python 3
-
 
 class UnionFind(object):
     def __init__(self, n):
@@ -62,7 +29,6 @@ class UnionFind(object):
 
     def size(self):
         return self.__size
-
 
 class Solution(object):
     def numSimilarGroups(self, A):
@@ -98,3 +64,4 @@ class Solution(object):
                 for i1, i2 in itertools.combinations(buckets[word], 2):
                     union_find.union_set(i1, i2)
         return union_find.size()
+

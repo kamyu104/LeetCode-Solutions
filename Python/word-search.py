@@ -1,25 +1,6 @@
 from __future__ import print_function
 # Time:  O(m * n * l)
 # Space: O(l)
-#
-# Given a 2D board and a word, find if the word exists in the grid.
-#
-# The word can be constructed from letters of sequentially adjacent cell,
-# where "adjacent" cells are those horizontally or vertically neighboring.
-# The same letter cell may not be used more than once.
-#
-# For example,
-# Given board =
-#
-# [
-#   "ABCE",
-#   "SFCS",
-#   "ADEE"
-# ]
-# word = "ABCCED", -> returns true,
-# word = "SEE", -> returns true,
-# word = "ABCB", -> returns false.
-#
 
 class Solution:
     # @param board, a list of lists of 1 length string
@@ -60,3 +41,4 @@ if __name__ == "__main__":
     print(Solution().exist(board, "ABCCED"))
     print(Solution().exist(board, "SFCS"))
     print(Solution().exist(board, "ABCB"))
+

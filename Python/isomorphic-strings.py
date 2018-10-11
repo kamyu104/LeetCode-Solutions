@@ -1,24 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
 
-# Given two strings s and t, determine if they are isomorphic.
-#
-# Two strings are isomorphic if the characters in s can be replaced to get t.
-#
-# All occurrences of a character must be replaced with another character
-# while preserving the order of characters. No two characters may map to
-# the same character but a character may map to itself.
-#
-# For example,
-# Given "egg", "add", return true.
-#
-# Given "foo", "bar", return false.
-#
-# Given "paper", "title", return true.
-#
-# Note:
-# You may assume both s and t have the same length.
-
 from itertools import izip  # Generator version of zip.
 
 class Solution(object):
@@ -41,9 +23,6 @@ class Solution(object):
                 return False
         return True
 
-
-# Time:  O(n)
-# Space: O(1)
 class Solution2(object):
     def isIsomorphic(self, s, t):
         if len(s) != len(t):
@@ -59,3 +38,4 @@ class Solution2(object):
             elif lookup[s[i]] != t[i]:
                 return False
         return True
+

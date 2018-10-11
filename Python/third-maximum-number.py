@@ -1,10 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
 
-# Given an array of integers, return the 3rd Maximum Number in this array,
-# if it doesn't exist, return the Maximum Number.
-# The time complexity must be O(n) or less.
-
 class Solution(object):
     def thirdMax(self, nums):
         """
@@ -28,3 +24,4 @@ class Solution(object):
             return top[0]
 
         return top[2]
+

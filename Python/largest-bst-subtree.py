@@ -1,13 +1,6 @@
 # Time:  O(n)
 # Space: O(h)
 
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
 class Solution(object):
     def largestBSTSubtree(self, root):
         """
@@ -41,3 +34,4 @@ class Solution(object):
 
         largestBSTSubtreeHelper(root)
         return max_size[0]
+

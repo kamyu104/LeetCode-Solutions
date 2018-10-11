@@ -1,22 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
-#
-# Say you have an array for which the ith element
-# is the price of a given stock on day i.
-#
-# Design an algorithm to find the maximum profit.
-# You may complete at most two transactions.
-#
-# Note:
-# You may not engage in multiple transactions at the same time
-# (ie, you must sell the stock before you buy again).
-#
 
 try:
     xrange          # Python 2
 except NameError:
     xrange = range  # Python 3
-
 
 class Solution(object):
     # @param prices, a list of integer
@@ -31,9 +19,6 @@ class Solution(object):
             hold1 = max(hold1, -i)
         return release2
 
-
-# Time:  O(k * n)
-# Space: O(k)
 class Solution2(object):
     # @param prices, a list of integer
     # @return an integer
@@ -51,9 +36,6 @@ class Solution2(object):
 
         return max_sell[k]
 
-
-# Time:  O(n)
-# Space: O(n)
 class Solution3(object):
     # @param prices, a list of integer
     # @return an integer
@@ -79,3 +61,4 @@ class Solution3(object):
                              max_profits_from_right[i])
 
         return max_profit
+

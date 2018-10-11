@@ -1,12 +1,6 @@
 # Time:  O(n)
 # Space: O(n)
 
-# Write a function that takes a string as input and
-# returns the string reversed.
-#
-# Example:
-# Given s = "hello", return "olleh".
-
 class Solution(object):
     def reverseString(self, s):
         """
@@ -21,9 +15,6 @@ class Solution(object):
             j -= 1
         return "".join(string)
 
-
-# Time:  O(n)
-# Space: O(n)
 class Solution2(object):
     def reverseString(self, s):
         """
@@ -31,3 +22,4 @@ class Solution2(object):
         :rtype: str
         """
         return s[::-1]
+

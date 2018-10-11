@@ -1,16 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
 
-# Given a List of words, return the words that can be typed
-# using letters of alphabet on only one row's of American keyboard like the image below.
-#
-# Example 1:
-# Input: ["Hello", "Alaska", "Dad", "Peace"]
-# Output: ["Alaska", "Dad"]
-# Note:
-# You may use one character in the keyboard more than once.
-# You may assume the input string will only contain letters of alphabet.
-
 class Solution(object):
     def findWords(self, words):
         """
@@ -35,7 +25,6 @@ class Solution(object):
                 result.append(word)
         return result
 
-
 class Solution2(object):
     def findWords(self, words):
         """
@@ -49,3 +38,4 @@ class Solution2(object):
                 if all(letter in row for letter in word.lower()):
                     single_row_words.append(word)
         return single_row_words
+

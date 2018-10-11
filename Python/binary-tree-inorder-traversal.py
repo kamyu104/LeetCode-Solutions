@@ -1,30 +1,12 @@
 # Time:  O(n)
 # Space: O(1)
-#
-# Given a binary tree, return the inorder traversal of its nodes' values.
-#
-# For example:
-# Given binary tree {1,#,2,3},
-#   1
-#    \
-#     2
-#    /
-#   3
-# return [1,3,2].
-#
-# Note: Recursive solution is trivial, could you do it iteratively?
-#
 
-
-# Definition for a  binary tree node
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
-
-# Morris Traversal Solution
 class Solution(object):
     def inorderTraversal(self, root):
         """
@@ -51,10 +33,6 @@ class Solution(object):
 
         return result
 
-
-# Time:  O(n)
-# Space: O(h)
-# Stack Solution
 class Solution2(object):
     def inorderTraversal(self, root):
         """
@@ -73,3 +51,4 @@ class Solution2(object):
                 stack.append((root, True))
                 stack.append((root.left, False))
         return result
+

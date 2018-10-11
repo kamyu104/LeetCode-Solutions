@@ -1,13 +1,6 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(n)
-#
-# Given a string containing just the characters '(', ')', '{', '}', '[' and ']',
-# determine if the input string is valid.
-#
-# The brackets must close in the correct order, "()" and "()[]{}"
-# are all valid but "(]" and "([)]" are not.
-#
 
 class Solution:
     # @return a boolean
@@ -23,3 +16,4 @@ class Solution:
 if __name__ == "__main__":
     print(Solution().isValid("()[]{}"))
     print(Solution().isValid("()[{]}"))
+

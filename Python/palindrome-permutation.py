@@ -3,7 +3,6 @@
 
 import collections
 
-
 class Solution(object):
     def canPermutePalindrome(self, s):
         """
@@ -11,3 +10,4 @@ class Solution(object):
         :rtype: bool
         """
         return sum(v % 2 for v in collections.Counter(s).values()) < 2
+

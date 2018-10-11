@@ -5,7 +5,6 @@
 
 import collections
 
-
 class Excel(object):
 
     def __init__(self, H, W):
@@ -18,7 +17,6 @@ class Excel(object):
         self.__fward = collections.defaultdict(lambda : collections.defaultdict(int))
         self.__bward = collections.defaultdict(set)
 
-
     def set(self, r, c, v):
         """
         :type r: int
@@ -29,7 +27,6 @@ class Excel(object):
         self.__reset_dependency(r, c);
         self.__update_others(r, c, v);
 
-
     def get(self, r, c):
         """
         :type r: int
@@ -37,7 +34,6 @@ class Excel(object):
         :rtype: int
         """
         return self.__exl[r][ord(c) - ord('A')]
-
 
     def sum(self, r, c, strs):
         """
@@ -51,14 +47,12 @@ class Excel(object):
         self.__update_others(r, c, result)
         return result
 
-
     def __reset_dependency(self, r, c):
         key = (r, c)
         if key in self.__bward.keys():
             for k in self.__bward[key]:
                 self.__fward[k].pop(key, None)
             self.__bward[key] = set()
-
 
     def __calc_and_update_dependency(self, r, c, strs):
         result = 0
@@ -72,7 +66,6 @@ class Excel(object):
                     self.__bward[(r, c)].add((i, chr(ord('A')+j)))
         return result
 
-
     def __update_others(self, r, c, v):
         prev = self.__exl[r][ord(c)-ord('A')]
         self.__exl[r][ord(c)-ord('A')] = v
@@ -85,9 +78,3 @@ class Excel(object):
                     q.append((k, diff*count))
                     self.__exl[k[0]][ord(k[1])-ord('A')] += diff*count
 
-
-# Your Excel object will be instantiated and called as such:
-# obj = Excel(H, W)
-# obj.set(r,c,v)
-# param_2 = obj.get(r,c)
-# param_3 = obj.sum(r,c,strs)

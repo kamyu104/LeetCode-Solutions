@@ -42,3 +42,4 @@ class Solution(object):
                 if dfs(i, j, grid, island):
                     islands.add(str(normalize(island)))
         return len(islands)
+

@@ -1,22 +1,6 @@
 # Time:  O(n^3)
 # Space: O(1)
 
-# Given an array S of n integers,
-# are there elements a, b, c, and d in S such that a + b + c + d = target?
-# Find all unique quadruplets in the array which gives the sum of target.
-#
-# Note:
-# Elements in a quadruplet (a,b,c,d) must be in non-descending order.
-# (ie, a <= b <= c <= d)
-# The solution set must not contain duplicate quadruplets.
-# For example, given array S = {1 0 -1 0 -2 2}, and target = 0.
-#
-#   A solution set is:
-#    (-1,  0, 0, 1)
-#    (-2, -1, 1, 2)
-#    (-2,  0, 0, 2)
-#
-
 import collections
 
 try:
@@ -24,8 +8,6 @@ try:
 except NameError:
     xrange = range  # Python 3
 
-
-# Two pointer solution. (1356ms)
 class Solution(object):
     def fourSum(self, nums, target):
         """
@@ -58,10 +40,6 @@ class Solution(object):
                         left += 1
         return res
 
-
-# Time:  O(n^2 * p)
-# Space: O(n^2 * p)
-# Hash solution. (224ms)
 class Solution2(object):
     def fourSum(self, nums, target):
         """
@@ -92,9 +70,6 @@ class Solution2(object):
                                 result.append(quad)
         return result
 
-
-# Time:  O(n^2 * p) ~ O(n^4)
-# Space: O(n^2)
 class Solution3(object):
     def fourSum(self, nums, target):
         """
@@ -118,3 +93,4 @@ class Solution3(object):
                             if quad not in result:
                                 result.append(quad)
         return sorted(result)
+

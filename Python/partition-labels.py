@@ -16,3 +16,4 @@ class Solution(object):
                 result.append(i-first+1)
                 first = i+1
         return result
+

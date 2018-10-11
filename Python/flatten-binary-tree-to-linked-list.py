@@ -1,32 +1,7 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
-#
-# Given a binary tree, flatten it to a linked list in-place.
-#
-# For example,
-# Given
-#
-#          1
-#         / \
-#        2   5
-#       / \   \
-#      3   4   6
-# The flattened tree should look like:
-#    1
-#     \
-#      2
-#       \
-#        3
-#         \
-#          4
-#           \
-#            5
-#             \
-#              6
-#
 
-# Definition for a  binary tree node
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -76,3 +51,4 @@ if __name__ == "__main__":
     print(result.right.right.right.val)
     print(result.right.right.right.right.val)
     print(result.right.right.right.right.right.val)
+

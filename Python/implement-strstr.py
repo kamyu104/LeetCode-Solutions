@@ -1,15 +1,7 @@
 from __future__ import print_function
 # Time:  O(n + k)
 # Space: O(k)
-#
-# Implement strStr().
-#
-# Returns a pointer to the first occurrence of needle in haystack,
-#  or null if needle is not part of haystack.
-#
 
-# Wiki of KMP algorithm:
-# http://en.wikipedia.org/wiki/Knuth-Morris-Pratt_algorithm
 class Solution(object):
     def strStr(self, haystack, needle):
         """
@@ -45,9 +37,6 @@ class Solution(object):
             prefix[i] = j
         return prefix
 
-
-# Time:  O(n * k)
-# Space: O(k)
 class Solution2(object):
     def strStr(self, haystack, needle):
         """
@@ -60,7 +49,7 @@ class Solution2(object):
                 return i
         return -1
 
-
 if __name__ == "__main__":
     print(Solution().strStr("a", ""))
     print(Solution().strStr("abababcdab", "ababcdx"))
+

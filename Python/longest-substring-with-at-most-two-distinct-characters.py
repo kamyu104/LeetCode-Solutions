@@ -1,14 +1,6 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
-#
-# Given a string, find the length of the longest substring T
-# that contains at most 2 distinct characters.
-#
-# For example, Given s = "eceba",
-#
-# T is "ece" which its length is 3.
-#
 
 class Solution:
     # @param s, a string
@@ -31,3 +23,4 @@ class Solution:
 
 if __name__ == "__main__":
     print(Solution().lengthOfLongestSubstringTwoDistinct("eceba"))
+

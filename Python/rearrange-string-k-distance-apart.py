@@ -31,9 +31,6 @@ class Solution(object):
 
         return "".join(map(lambda x : "".join(x), blocks))
 
-
-# Time:  O(nlogc), c is the count of unique characters.
-# Space: O(c)
 from collections import defaultdict
 from heapq import heappush, heappop
 class Solution2(object):
@@ -69,3 +66,4 @@ class Solution2(object):
                 heappush(heap, cnt_char)
 
         return "".join(result)
+

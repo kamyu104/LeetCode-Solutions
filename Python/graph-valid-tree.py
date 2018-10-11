@@ -3,8 +3,6 @@
 
 import collections
 
-
-# BFS solution. Same complexity but faster version.
 class Solution(object):
     # @param {integer} n
     # @param {integer[][]} edges
@@ -32,10 +30,6 @@ class Solution(object):
 
         return len(visited) == n
 
-
-# Time:  O(|V| + |E|)
-# Space: O(|V| + |E|)
-# BFS solution.
 class Solution2(object):
     # @param {integer} n
     # @param {integer[][]} edges
@@ -63,3 +57,4 @@ class Solution2(object):
                         visited_from[node] = i
                         q.append(node)
         return len(visited) == n
+

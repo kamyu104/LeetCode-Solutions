@@ -25,5 +25,5 @@ class Solution(object):
             else:
                 stack.append(c)
 
-
         return str(stack[-1])
+

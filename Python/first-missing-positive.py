@@ -1,15 +1,6 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
-#
-# Given an unsorted integer array, find the first missing positive integer.
-#
-# For example,
-# Given [1,2,0] return 3,
-# and [3,4,-1,1] return 2.
-#
-# Your algorithm should run in O(n) time and uses constant space.
-#
 
 class Solution:
     # @param A, a list of integers
@@ -30,3 +21,4 @@ class Solution:
 if __name__ == "__main__":
     print(Solution().firstMissingPositive([1,2,0]))
     print(Solution().firstMissingPositive([3,4,-1,1]))
+

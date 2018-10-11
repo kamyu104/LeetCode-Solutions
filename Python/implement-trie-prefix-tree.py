@@ -1,18 +1,11 @@
 # Time:  O(n), per operation
 # Space: O(1)
-#
-# Implement a trie with insert, search, and startsWith methods.
-#
-# Note:
-# You may assume that all inputs are consist of lowercase letters a-z.
-#
 
 class TrieNode:
     # Initialize your data structure here.
     def __init__(self):
         self.is_string = False
         self.leaves = {}
-
 
 class Trie:
 
@@ -55,7 +48,3 @@ class Trie:
                 return None
         return cur
 
-# Your Trie object will be instantiated and called as such:
-# trie = Trie()
-# trie.insert("somestring")
-# trie.search("key")

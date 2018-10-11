@@ -30,3 +30,4 @@ class Solution(object):
             words += wc[start]
             start = (start + wc[start]) % len(sentence)
         return words / len(sentence)
+

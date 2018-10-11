@@ -1,14 +1,7 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
-#
-# Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
-#
-# Follow up:
-# Can you solve it without using extra space?
-#
 
-# Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -40,3 +33,4 @@ if __name__ == "__main__":
     head.next.next = ListNode(3)
     head.next.next.next = head.next
     print(Solution().detectCycle(head))
+

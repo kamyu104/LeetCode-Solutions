@@ -20,3 +20,4 @@ class Solution(object):
                     dp[i % 2][j][3] = dp[(i-1) % 2][j+1][3]+1 if (i > 0 and j < len(M[0])-1) else 1
                     result = max(result, max(dp[i % 2][j]))
         return result
+

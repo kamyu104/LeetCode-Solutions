@@ -1,20 +1,7 @@
 from __future__ import print_function
 # Time:  O(4^n / n^(3/2)) ~= Catalan numbers
 # Space: O(4^n / n^(3/2)) ~= Catalan numbers
-#
-# Given n, generate all structurally unique BST's (binary search trees) that store values 1...n.
-#
-# For example,
-# Given n = 3, your program should return all 5 unique BST's shown below.
-#
-#    1         3     3      2      1
-#     \       /     /      / \      \
-#      3     2     1      1   3      2
-#     /     /       \                 \
-#    2     1         2                 3
-#
 
-# Definition for a  binary tree node
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -68,3 +55,4 @@ class Solution:
 
 if __name__ == "__main__":
     print(Solution().generateTrees(3))
+

@@ -1,29 +1,11 @@
 # Time:  O(n)
 # Space: O(h)
 
-# Return any binary tree that matches the given preorder and postorder traversals.
-#
-# Values in the traversals pre and post are distinct positive integers.
-#
-# Example 1:
-#
-# Input: pre = [1,2,4,5,3,6,7], post = [4,5,2,6,7,3,1]
-# Output: [1,2,3,4,5,6,7]
-#
-# Note:
-#
-# 1 <= pre.length == post.length <= 30
-# pre[] and post[] are both permutations of 1, 2, ..., pre.length.
-# It is guaranteed an answer exists.
-# If there exists multiple answers, you can return any of them.
-
-# Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
-
 
 class Solution(object):
     def constructFromPrePost(self, pre, post):
@@ -46,9 +28,6 @@ class Solution(object):
             stack.append(node)
         return stack[0]
 
-
-# Time:  O(n)
-# Space: O(n)
 class Solution2(object):
     def constructFromPrePost(self, pre, post):
         """
@@ -74,3 +53,4 @@ class Solution2(object):
         for i, val in enumerate(post):
             post_entry_idx_map[val] = i
         return constructFromPrePostHelper(pre, 0, len(pre), post, 0, len(post), post_entry_idx_map)
+

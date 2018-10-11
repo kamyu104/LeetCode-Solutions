@@ -1,24 +1,7 @@
 # Time:  O(m * n)
 # Space: O(min(m, n))
 
-# Given two integer arrays A and B,
-# return the maximum length of an subarray that appears in both arrays.
-#
-# Example 1:
-# Input:
-# A: [1,2,3,2,1]
-# B: [3,2,1,4,7]
-# Output: 3
-# Explanation:
-# The repeated subarray with maximum length is [3, 2, 1].
-# Note:
-# 1 <= len(A), len(B) <= 1000
-# 0 <= A[i], B[i] < 100
-
-# dp solution (3752 ms)
-
 import collections
-
 
 class Solution(object):
     def findLength(self, A, B):
@@ -39,10 +22,6 @@ class Solution(object):
             result = max(result, max(dp[(i+1)%2]))
         return result
 
-
-# Time:  O(m * n * log(min(m, n)))
-# Space: O(min(m, n))
-# Binary search + rolling hash solution (226 ms)
 class Solution2(object):
     def findLength(self, A, B):
         """
@@ -85,10 +64,6 @@ class Solution2(object):
                 left = mid+1
         return left-1
 
-
-# Time:  O(m * n * min(m, n) * log(min(m, n)))
-# Space: O(min(m^2, n^2))
-# Binary search (122 ms)
 class Solution3(object):
     def findLength(self, A, B):
         """
@@ -114,3 +89,4 @@ class Solution3(object):
             else:
                 left = mid+1
         return left-1
+

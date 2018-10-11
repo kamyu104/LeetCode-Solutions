@@ -1,18 +1,6 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
-#
-# Validate if a given string is numeric.
-#
-# Some examples:
-# "0" => true
-# " 0.1 " => true
-# "abc" => false
-# "1 a" => false
-# "2e10" => true
-# Note: It is intended for the problem statement to be ambiguous.
-# You should gather all requirements up front before implementing one.
-#
 
 class InputType:
     INVALID    = 0
@@ -22,9 +10,6 @@ class InputType:
     DOT        = 4
     EXPONENT   = 5
 
-
-# regular expression: "^\s*[\+-]?((\d+(\.\d*)?)|\.\d+)([eE][\+-]?\d+)?\s*$"
-# automata: http://images.cnitblog.com/i/627993/201405/012016243309923.png
 class Solution(object):
     def isNumber(self, s):
         """
@@ -62,7 +47,6 @@ class Solution(object):
 
         return state == 1 or state == 4 or state == 7 or state == 8
 
-
 class Solution2(object):
     def isNumber(self, s):
         """
@@ -71,7 +55,6 @@ class Solution2(object):
         """
         import re
         return bool(re.match("^\s*[\+-]?((\d+(\.\d*)?)|\.\d+)([eE][\+-]?\d+)?\s*$", s))
-
 
 if __name__ == "__main__":
     print(Solution().isNumber(" 0.1 "))

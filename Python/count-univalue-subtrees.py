@@ -1,12 +1,5 @@
 # Time:  O(n)
 # Space: O(h)
-#
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
 
 class Solution:
     # @param {TreeNode} root
@@ -30,3 +23,4 @@ class Solution:
 
     def isSame(self, root, child, is_uni):
         return not child or (is_uni and root.val == child.val)
+

@@ -27,3 +27,4 @@ class Solution(object):
                 right -= 1
 
         return result[::d]
+

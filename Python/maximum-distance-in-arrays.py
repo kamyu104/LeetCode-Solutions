@@ -15,3 +15,4 @@ class Solution(object):
             min_val = min(min_val, arrays[i][0])
             max_val = max(max_val, arrays[i][-1])
         return result
+

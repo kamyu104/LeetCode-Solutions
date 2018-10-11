@@ -14,7 +14,6 @@ class Codec:
             encoded_str += "%0*x" % (8, len(s)) + s
         return encoded_str
 
-
     def decode(self, s):
         """Decodes a single string to a list of strings.
 
@@ -28,3 +27,4 @@ class Codec:
             strs.append(s[i+8:i+8+l])
             i += 8+l
         return strs
+

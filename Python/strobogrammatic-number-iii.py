@@ -72,3 +72,4 @@ class Solution:
                num[i] != self.lookup[num[n-1-i]]:
                 return False
         return True
+

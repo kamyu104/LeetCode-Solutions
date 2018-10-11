@@ -1,14 +1,11 @@
 # Time:  O(n)
 # Space: O(1)
 
-# Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
 
-
-# Two pointers solution.
 class Solution(object):
     def plusOne(self, head):
         """
@@ -38,9 +35,6 @@ class Solution(object):
 
         return dummy if dummy.val else dummy.next
 
-
-# Time:  O(n)
-# Space: O(1)
 class Solution2(object):
     def plusOne(self, head):
         """
@@ -65,3 +59,4 @@ class Solution2(object):
             curr = curr.next
 
         return reverseList(rev_head)
+

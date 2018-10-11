@@ -1,11 +1,6 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
-#
-# Given an array and a value, remove all instances of that value in place and return the new length.
-#
-# The order of elements can be changed. It doesn't matter what you leave beyond the new length.
-#
 
 class Solution:
     # @param    A       a list of integers
@@ -23,3 +18,4 @@ class Solution:
 
 if __name__ == "__main__":
     print(Solution().removeElement([1, 2, 3, 4, 5, 2, 2], 2))
+

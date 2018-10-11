@@ -1,11 +1,6 @@
 from __future__ import print_function
 # Time:  O(m * n)
 # Space: O(m + n)
-#
-# Given two numbers represented as strings, return multiplication of the numbers as a string.
-#
-# Note: The numbers can be arbitrarily large and are non-negative.
-#
 
 class Solution(object):
     def multiply(self, num1, num2):
@@ -29,9 +24,6 @@ class Solution(object):
 
         return ''.join(map(str, res[i::-1]))
 
-# Time:  O(m * n)
-# Space: O(m + n)
-# Using built-in bignum solution.
 class Solution2(object):
     def multiply(self, num1, num2):
         """
@@ -41,6 +33,6 @@ class Solution2(object):
         """
         return str(int(num1) * int(num2))
 
-
 if __name__ == "__main__":
     print(Solution().multiply("123", "1000"))
+

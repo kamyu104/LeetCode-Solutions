@@ -6,7 +6,6 @@ try:
 except NameError:
     xrange = range  # Python 3
 
-
 class Solution(object):
     def maxKilledEnemies(self, grid):
         """
@@ -44,3 +43,4 @@ class Solution(object):
                                  left + up[j] + right[i][j] + down[i][j])
 
         return result
+

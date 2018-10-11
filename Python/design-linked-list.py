@@ -6,7 +6,6 @@ class Node:
         self.val = value
         self.next = self.prev = None
 
-
 class MyLinkedList(object):
 
     def __init__(self):
@@ -79,29 +78,21 @@ class MyLinkedList(object):
         node.next = preNode.next
         node.prev.next = node.next.prev = node
         self.__size += 1
-        
+
     def __remove(self, node):
         node.prev.next = node.next
         node.next.prev = node.prev
         self.__size -= 1
-        
+
     def __forward(self, start, end, curr):
         while start != end:
             start += 1
             curr = curr.next
         return curr
-    
+
     def __backward(self, start, end, curr):
         while start != end:
             start -= 1
             curr = curr.prev
         return curr
 
-
-# Your MyLinkedList object will be instantiated and called as such:
-# obj = MyLinkedList()
-# param_1 = obj.get(index)
-# obj.addAtHead(val)
-# obj.addAtTail(val)
-# obj.addAtIndex(index,val)
-# obj.deleteAtIndex(index)

@@ -22,3 +22,4 @@ class Solution:
                     result.append(key + num + val)
 
         return result
+

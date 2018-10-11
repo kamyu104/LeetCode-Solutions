@@ -28,3 +28,4 @@ class Solution(object):
                 if dfs(i, j, grid, island):
                     islands.add("".join(island))
         return len(islands)
+

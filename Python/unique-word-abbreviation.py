@@ -4,7 +4,6 @@
 
 import collections
 
-
 class ValidWordAbbr(object):
     def __init__(self, dictionary):
         """
@@ -16,7 +15,6 @@ class ValidWordAbbr(object):
             abbr = self.abbreviation(word)
             self.lookup_[abbr].add(word)
 
-
     def isUnique(self, word):
         """
         check if a word is unique.
@@ -26,14 +24,8 @@ class ValidWordAbbr(object):
         abbr = self.abbreviation(word)
         return self.lookup_[abbr] <= {word}
 
-
     def abbreviation(self, word):
         if len(word) <= 2:
             return word
         return word[0] + str(len(word)-2) + word[-1]
 
-
-# Your ValidWordAbbr object will be instantiated and called as such:
-# vwa = ValidWordAbbr(dictionary)
-# vwa.isUnique("word")
-# vwa.isUnique("anotherWord")

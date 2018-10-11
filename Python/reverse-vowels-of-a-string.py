@@ -1,15 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
 
-# Write a function that takes a string as input
-# and reverse only the vowels of a string.
-#
-# Example 1:
-# Given s = "hello", return "holle".
-#
-# Example 2:
-# Given s = "leetcode", return "leotcede".
-
 class Solution(object):
     def reverseVowels(self, s):
         """
@@ -29,3 +20,4 @@ class Solution(object):
                 i += 1
                 j -= 1
         return "".join(string)
+

@@ -1,11 +1,7 @@
 from __future__ import print_function
 # Time:  O(nlogn)
 # Space: O(logn) for stack call
-#
-# Sort a linked list in O(n log n) time using constant space complexity.
-#
 
-# Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -55,3 +51,4 @@ if __name__ == "__main__":
     head.next.next = ListNode(1)
     head.next.next.next= ListNode(2)
     print(Solution().sortList(head))
+

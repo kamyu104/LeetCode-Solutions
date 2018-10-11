@@ -1,30 +1,12 @@
 # Time:  O(n)
 # Space: O(1)
-#
-# Given a binary tree, return the postorder traversal of its nodes' values.
-#
-# For example:
-# Given binary tree {1,#,2,3},
-#   1
-#    \
-#     2
-#    /
-#   3
-# return [3,2,1].
-#
-# Note: Recursive solution is trivial, could you do it iteratively?
-#
 
-
-# Definition for a  binary tree node
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
-
-# Morris Traversal Solution
 class Solution(object):
     def postorderTraversal(self, root):
         """
@@ -61,10 +43,6 @@ class Solution(object):
         result.reverse()
         return result
 
-
-# Time:  O(n)
-# Space: O(h)
-# Stack Solution
 class Solution2(object):
     def postorderTraversal(self, root):
         """
@@ -83,3 +61,4 @@ class Solution2(object):
                 stack.append((root.right, False))
                 stack.append((root.left, False))
         return result
+

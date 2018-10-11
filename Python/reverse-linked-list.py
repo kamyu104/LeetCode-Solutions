@@ -1,16 +1,7 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
-#
-# Reverse a singly linked list.
-#
-# click to show more hints.
-#
-# Hint:
-# A linked list can be reversed either iteratively or recursively. Could you implement both?
-#
 
-# Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -20,7 +11,6 @@ class ListNode:
         if self:
             return "{} -> {}".format(self.val, repr(self.next))
 
-# Iterative solution.
 class Solution:
     # @param {ListNode} head
     # @return {ListNode}
@@ -30,9 +20,6 @@ class Solution:
             dummy.next, head.next, head = head, dummy.next, head.next
         return dummy.next
 
-# Time:  O(n)
-# Space: O(n)
-# Recursive solution.
 class Solution2:
     # @param {ListNode} head
     # @return {ListNode}
@@ -60,3 +47,4 @@ if __name__ == "__main__":
     head.next.next.next = ListNode(4)
     head.next.next.next.next = ListNode(5)
     print(Solution2().reverseList(head))
+

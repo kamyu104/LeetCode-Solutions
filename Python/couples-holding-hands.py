@@ -25,3 +25,4 @@ class Solution(object):
                 adj[couch2].remove(couch1)
                 couch1, couch2 = couch2, adj[couch2].pop()
         return result  # also equals to N - (# of cycles)
+

@@ -17,7 +17,6 @@ class UnionFind(object):
             self.set[min(x_root, y_root)] = max(x_root, y_root)
             self.count -= 1
 
-
 class Solution(object):
     def countComponents(self, n, edges):
         """
@@ -29,3 +28,4 @@ class Solution(object):
         for i, j in edges:
             union_find.union_set(i, j)
         return union_find.count
+

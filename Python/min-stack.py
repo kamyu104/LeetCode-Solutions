@@ -1,13 +1,5 @@
 # Time:  O(n)
 # Space: O(1)
-#
-# Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
-#
-# push(x) -- Push element x onto stack.
-# pop() -- Removes the element on top of the stack.
-# top() -- Get the top element.
-# getMin() -- Retrieve the minimum element in the stack.
-#
 
 class MinStack:
     def __init__(self):
@@ -43,8 +35,6 @@ class MinStack:
     def getMin(self):
         return self.min
 
-# Time:  O(n)
-# Space: O(n)
 class MinStack2:
     def __init__(self):
         self.stack, self.minStack = [], []

@@ -13,3 +13,4 @@ class Solution(object):
             total = (total + M + (1 if i % 2 == 0 else -1) * mul) % M
             mul = (mul * i) % M
         return total
+

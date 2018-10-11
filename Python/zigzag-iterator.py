@@ -3,7 +3,6 @@
 
 import collections
 
-
 class ZigzagIterator(object):
 
     def __init__(self, v1, v2):
@@ -29,6 +28,3 @@ class ZigzagIterator(object):
         """
         return bool(self.q)
 
-# Your ZigzagIterator object will be instantiated and called as such:
-# i, v = ZigzagIterator(v1, v2), []
-# while i.hasNext(): v.append(i.next())

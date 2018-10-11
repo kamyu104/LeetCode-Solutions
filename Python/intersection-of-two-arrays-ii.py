@@ -12,28 +12,7 @@
 #     - Time:  O(max(m, n) * log(max(m, n)))
 #     - Space: O(1)
 
-# Given two arrays, write a function to compute their intersection.
-#
-# Example:
-# Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
-#
-# Note:
-# Each element in the result should appear as many times as it shows in both arrays.
-# The result can be in any order.
-#
-# Follow up:
-# - What if the given array is already sorted? How would you optimize your algorithm?
-# - What if nums1's size is small compared to num2's size? Which algorithm is better?
-# - What if elements of nums2 are stored on disk, and the memory is limited such that
-#   you cannot load all elements into the memory at once?
-
-
-# If the given array is not sorted and the memory is unlimited.
-# Time:  O(m + n)
-# Space: O(min(m, n))
-# Hash solution.
 import collections
-
 
 class Solution(object):
     def intersect(self, nums1, nums2):
@@ -69,11 +48,6 @@ class Solution(object):
             intersect.extend([i] * c[i])
         return intersect
 
-
-# If the given array is already sorted, and the memory is limited, and (m << n or m >> n).
-# Time:  O(min(m, n) * log(max(m, n)))
-# Space: O(1)
-# Binary search solution.
 class Solution(object):
     def intersect(self, nums1, nums2):
         """
@@ -105,11 +79,6 @@ class Solution(object):
 
         return res
 
-
-# If the given array is already sorted, and the memory is limited or m ~ n.
-# Time:  O(m + n)
-# Soace: O(1)
-# Two pointers solution.
 class Solution(object):
     def intersect(self, nums1, nums2):
         """
@@ -134,11 +103,6 @@ class Solution(object):
 
         return res
 
-
-# If the given array is not sorted, and the memory is limited.
-# Time:  O(max(m, n) * log(max(m, n)))
-# Space: O(1)
-# Two pointers solution.
 class Solution(object):
     def intersect(self, nums1, nums2):
         """
@@ -162,3 +126,4 @@ class Solution(object):
                 it2 += 1
 
         return res
+

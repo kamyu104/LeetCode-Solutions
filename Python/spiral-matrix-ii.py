@@ -1,19 +1,6 @@
 from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(1)
-#
-# Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
-#
-# For example,
-# Given n = 3,
-#
-# You should return the following matrix:
-# [
-#  [ 1, 2, 3 ],
-#  [ 8, 9, 4 ],
-#  [ 7, 6, 5 ]
-# ]
-#
 
 class Solution:
     # @return a list of lists of integer
@@ -41,7 +28,7 @@ class Solution:
 
         return matrix
 
-
 if __name__ == "__main__":
     print(Solution().generateMatrix(3))
     print(Solution().generateMatrix(8))
+

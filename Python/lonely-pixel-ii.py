@@ -3,7 +3,6 @@
 
 import collections
 
-
 class Solution(object):
     def findBlackPixel(self, picture, N):
         """
@@ -27,7 +26,6 @@ class Solution(object):
                      result += picture[i][j] == 'B' and cols[j] == N
         return result
 
-
 class Solution2(object):
     def findBlackPixel(self, picture, N):
         """
@@ -40,3 +38,4 @@ class Solution2(object):
         return sum(N * zip(row, cols).count(('B', N)) \
                    for row, cnt in lookup.iteritems() \
                    if cnt == N == row.count('B'))
+

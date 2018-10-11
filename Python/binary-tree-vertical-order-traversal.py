@@ -1,13 +1,6 @@
 # Time:  O(n)
 # Space: O(n)
 
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
 import collections
 
 try:
@@ -15,8 +8,6 @@ try:
 except NameError:
     xrange = range  # Python 3
 
-
-# BFS + hash solution.
 class Solution(object):
     def verticalOrder(self, root):
         """
@@ -31,3 +22,4 @@ class Solution(object):
                 queue += (node.left, i - 1), (node.right, i + 1)
         return [cols[i] for i in xrange(min(cols.keys()),
                                         max(cols.keys()) + 1)] if cols else []
+

@@ -1,26 +1,6 @@
 # Time:  O(n)
 # Space: O(h)
 
-# You need to find the largest value in each row of a binary tree.
-#
-# Example:
-# Input:
-#
-#           1
-#          / \
-#         3   2
-#       / \   \
-#       5   3   9
-#
-# Output: [1, 3, 9]
-
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
 class Solution(object):
     def largestValues(self, root):
         """
@@ -41,9 +21,6 @@ class Solution(object):
         largestValuesHelper(root, 0, result)
         return result
 
-
-# Time:  O(n)
-# Space: O(n)
 class Solution2(object):
     def largestValues(self, root):
         """

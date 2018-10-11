@@ -1,7 +1,6 @@
 # Time:  O(c * n + n) = O(n * (c+1))
 # Space: O(n)
 
-# This solution compares only O(1) times for the two consecutive "+"
 class Solution(object):
     def generatePossibleNextMoves(self, s):
         """
@@ -18,10 +17,6 @@ class Solution(object):
             i += 1
         return res
 
-
-# Time:  O(c * m * n + n) = O(c * n + n), where m = 2 in this question
-# Space: O(n)
-# This solution compares O(m) = O(2) times for two consecutive "+", where m is length of the pattern
 class Solution2(object):
   def generatePossibleNextMoves(self, s):
       """

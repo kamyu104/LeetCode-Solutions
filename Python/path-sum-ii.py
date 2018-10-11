@@ -1,26 +1,7 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
-#
-# Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
-#
-# For example:
-# Given the below binary tree and sum = 22,
-#               5
-#              / \
-#             4   8
-#            /   / \
-#           11  13  4
-#          /  \    / \
-#         7    2  5   1
-# return
-# [
-#    [5,4,11,2],
-#    [5,8,4,5]
-# ]
 
-
-# Definition for a  binary tree node
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -33,7 +14,6 @@ class Solution:
     # @return a list of lists of integers
     def pathSum(self, root, sum):
         return self.pathSumRecu([], [], root, sum)
-
 
     def pathSumRecu(self, result, cur, root, sum):
         if root is None:
@@ -53,3 +33,4 @@ if __name__ == "__main__":
     root = TreeNode(5)
 
     print(Solution().pathSum(root, 5))
+

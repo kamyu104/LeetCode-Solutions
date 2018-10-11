@@ -3,34 +3,9 @@
 #                                and every way of evaluation is the length of the string,
 #                                so the time complexity is at most n * Catalan numbers.
 # Space: O(n * 4^n / n^(3/2)), the cache size of lookup is at most n * Catalan numbers.
-#
-# Given a string of numbers and operators, return all possible
-# results from computing all the different possible ways to
-# group numbers and operators. The valid operators are +, - and *.
-#
-#
-# Example 1
-# Input: "2-1-1".
-#
-# ((2-1)-1) = 0
-# (2-(1-1)) = 2
-# Output: [0, 2]
-#
-#
-# Example 2
-# Input: "2*3-4*5"
-#
-# (2*(3-(4*5))) = -34
-# ((2*3)-(4*5)) = -14
-# ((2*(3-4))*5) = -10
-# (2*((3-4)*5)) = -10
-# (((2*3)-4)*5) = 10
-# Output: [-34, -14, -10, -10, 10]
-#
 
 import operator
 import re
-
 
 class Solution:
     # @param {string} input
@@ -77,3 +52,4 @@ class Solution2:
             return lookup[left][right]
 
         return diffWaysToComputeRecu(0, len(input))
+

@@ -1,9 +1,6 @@
 from __future__ import print_function
 # Time:  O(m + n)
 # Space: O(1)
-#
-# Given two strings S and T, determine if they are both one edit distance apart.
-#
 
 class Solution(object):
     def isOneEditDistance(self, s, t):
@@ -28,6 +25,6 @@ class Solution(object):
 
         return i == m
 
-
 if __name__ == "__main__":
     print(Solution().isOneEditDistance("teacher", "acher"))
+

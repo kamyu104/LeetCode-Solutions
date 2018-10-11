@@ -1,14 +1,9 @@
 from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(n)
-#
-# Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
-#
 
 import collections
 
-
-# Definition for a point
 class Point:
     def __init__(self, a=0, b=0):
         self.x = a
@@ -43,3 +38,4 @@ class Solution(object):
 
 if __name__ == "__main__":
     print(Solution().maxPoints([Point(), Point(), Point()]))
+

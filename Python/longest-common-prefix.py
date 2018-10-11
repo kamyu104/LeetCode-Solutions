@@ -2,9 +2,6 @@ from __future__ import print_function
 # Time:  O(n * k), k is the length of the common prefix
 # Space: O(1)
 
-# Write a function to find the longest common prefix string
-# amongst an array of strings.
-
 class Solution(object):
     def longestCommonPrefix(self, strs):
         """
@@ -20,6 +17,6 @@ class Solution(object):
                     return strs[0][:i]
         return strs[0]
 
-
 if __name__ == "__main__":
     print(Solution().longestCommonPrefix(["hello", "heaven", "heavy"]))
+

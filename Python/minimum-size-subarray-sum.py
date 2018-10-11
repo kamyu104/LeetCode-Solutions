@@ -1,17 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
-#
-# Given an array of n positive integers and a positive integer s,
-# find the minimal length of a subarray of which the sum ≥ s. If there isn't one, return 0 instead.
-#
-# For example, given the array [2,3,1,2,4,3] and s = 7,
-# the subarray [4,3] has the minimal length under the problem constraint.
-#
-# More practice:
-# If you have figured out the O(n) solution, try coding another solution of which the time complexity is O(n log n).
-#
 
-# Sliding window solution.
 class Solution:
     # @param {integer} s
     # @param {integer[]} nums
@@ -29,9 +18,6 @@ class Solution:
 
         return min_size if min_size != float("inf") else 0
 
-# Time:  O(nlogn)
-# Space: O(n)
-# Binary search solution.
 class Solution2:
     # @param {integer} s
     # @param {integer[]} nums
@@ -58,3 +44,4 @@ class Solution2:
             else:
                 start = mid + 1
         return start
+

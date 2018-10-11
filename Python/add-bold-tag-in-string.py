@@ -9,8 +9,6 @@ try:
 except NameError:
     xrange = range  # Python 3
 
-
-# 59ms
 class Solution(object):
     def addBoldTag(self, s, dict):
         """
@@ -34,10 +32,6 @@ class Solution(object):
                 result.append("</b>")
         return "".join(result)
 
-
-# Time:  O(n * l), l is the average string length
-# Space: O(t)    , t is the size of trie
-# trie solution, 439ms
 class Solution2(object):
     def addBoldTag(self, s, words):
         """
@@ -71,3 +65,4 @@ class Solution2(object):
             if lookup[i] and (i == len(s)-1 or not lookup[i+1]):
                 result.append("</b>")
         return "".join(result)
+

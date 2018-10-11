@@ -6,8 +6,6 @@ try:
 except NameError:
     xrange = range  # Python 3
 
-
-# DP solution.
 class Solution(object):
     def numberOfPatterns(self, m, n):
         """
@@ -67,10 +65,6 @@ class Solution(object):
 
         return res
 
-
-# Time:  O(9^2 * 2^9)
-# Space: O(9 * 2^9)
-# DP solution.
 class Solution2(object):
     def numberOfPatterns(self, m, n):
         """
@@ -133,10 +127,6 @@ class Solution2(object):
 
         return res
 
-
-# Time:  O(9!)
-# Space: O(9)
-# Backtracking solution. (TLE)
 class Solution_TLE(object):
     def numberOfPatterns(self, m, n):
         """
@@ -186,3 +176,4 @@ class Solution_TLE(object):
         # 5
         number += numberOfPatternsHelper(m, n, 1, merge(0, 4), 4)
         return number
+

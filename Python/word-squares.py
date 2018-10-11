@@ -14,7 +14,6 @@ class TrieNode(object):
             cur = cur.children[ord(c)-ord('a')]
             cur.indices.append(i)
 
-
 class Solution(object):
     def wordSquares(self, words):
         """
@@ -49,3 +48,4 @@ class Solution(object):
             curr.append(words[i])
             self.wordSquaresHelper(words, trie, curr, result)
             curr.pop()
+

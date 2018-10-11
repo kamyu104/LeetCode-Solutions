@@ -1,21 +1,7 @@
 # Time:  O(n)
 # Space: O(k), k is size of the alphabet
 
-# Given a string which contains only lowercase letters,
-# remove duplicate letters so that every letter appear
-# once and only once. You must make sure your result is
-# the smallest in lexicographical order among all
-# possible results.
-#
-# Example:
-# Given "bcabc"
-# Return "abc"
-#
-# Given "cbacdcbc"
-# Return "acdb"
-
 import collections
-
 
 class Solution(object):
     def removeDuplicateLetters(self, s):
@@ -36,3 +22,4 @@ class Solution(object):
                 in_stack.add(c)
             remaining[c] -= 1
         return "".join(stk)
+

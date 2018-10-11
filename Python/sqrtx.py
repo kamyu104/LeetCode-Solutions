@@ -2,10 +2,6 @@ from __future__ import print_function
 # Time:  O(logn)
 # Space: O(1)
 
-# Implement int sqrt(int x).
-#
-# Compute and return the square root of x.
-
 class Solution(object):
     def mySqrt(self, x):
         """
@@ -24,7 +20,6 @@ class Solution(object):
                 left = mid + 1
 
         return left - 1
-
 
 if __name__ == "__main__":
     print(Solution().mySqrt(10))

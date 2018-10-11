@@ -1,14 +1,7 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(n)
-#
-# Given a string S, find the longest palindromic substring in S.
-# You may assume that the maximum length of S is 1000,
-#  and there exists one unique longest palindromic substring.
-#
 
-# Manacher's Algorithm
-# http://leetcode.com/2011/11/longest-palindromic-substring-part-ii.html
 class Solution(object):
     def longestPalindrome(self, s):
         """
@@ -47,6 +40,6 @@ class Solution(object):
         start = (max_i - 1 - P[max_i]) / 2
         return s[start : start + P[max_i]]
 
-
 if __name__ == "__main__":
     print(Solution().longestPalindrome("abb"))
+

@@ -1,28 +1,7 @@
 from __future__ import print_function
 # Time:  O(m * n)
 # Space: O(n)
-#
-# Implement regular expression matching with support for '.' and '*'.
-#
-# '.' Matches any single character.
-# '*' Matches zero or more of the preceding element.
-#
-# The matching should cover the entire input string (not partial).
-#
-# The function prototype should be:
-# bool isMatch(const char *s, const char *p)
-#
-# Some examples:
-# isMatch("aa","a") -> false
-# isMatch("aa","aa") -> true
-# isMatch("aaa","aa") -> false
-# isMatch("aa", "a*") -> true
-# isMatch("aa", ".*") -> true
-# isMatch("ab", ".*") -> true
-# isMatch("aab", "c*a*b") -> true
-#
 
-# dp with rolling window
 class Solution:
     # @return a boolean
     def isMatch(self, s, p):
@@ -45,9 +24,6 @@ class Solution:
 
         return result[len(s) % k][len(p)]
 
-# dp
-# Time:  O(m * n)
-# Space: O(m * n)
 class Solution2:
     # @return a boolean
     def isMatch(self, s, p):
@@ -67,7 +43,6 @@ class Solution2:
 
         return result[len(s)][len(p)]
 
-# iteration
 class Solution3:
     # @return a boolean
     def isMatch(self, s, p):
@@ -101,7 +76,6 @@ class Solution3:
 
         return p_ptr == len(p)
 
-# recursive
 class Solution4:
     # @return a boolean
     def isMatch(self, s, p):
@@ -130,3 +104,4 @@ if __name__ == "__main__":
     print(Solution().isMatch("aa", ".*"))
     print(Solution().isMatch("ab", ".*"))
     print(Solution().isMatch("aab", "c*a*b"))
+

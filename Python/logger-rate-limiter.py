@@ -3,7 +3,6 @@
 
 import collections
 
-
 class Logger(object):
 
     def __init__(self):
@@ -28,7 +27,3 @@ class Logger(object):
         self.__printed.add(message)
         return True
 
-
-# Your Logger object will be instantiated and called as such:
-# obj = Logger()
-# param_1 = obj.shouldPrintMessage(timestamp,message)

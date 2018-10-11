@@ -38,7 +38,3 @@ class HitCounter(object):
             self.__count -= self.__dq.popleft()[1]
         return self.__count
 
-# Your HitCounter object will be instantiated and called as such:
-# obj = HitCounter()
-# obj.hit(timestamp)
-# param_2 = obj.getHits(timestamp)

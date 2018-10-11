@@ -26,3 +26,4 @@ class Solution(object):
             i += digit
 
         return i == len(word)
+

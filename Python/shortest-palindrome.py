@@ -1,18 +1,6 @@
 # Time:  O(n)
 # Space: O(n)
-#
-# Given a string S, you are allowed to convert it to a palindrome
-# by adding characters in front of it. Find and return the shortest
-# palindrome you can find by performing this transformation.
-#
-# For example:
-#
-# Given "aacecaaa", return "aaacecaaa".
-#
-# Given "abcd", return "dcbabcd".
-#
 
-# KMP Algorithm
 class Solution(object):
     def shortestPalindrome(self, s):
         """
@@ -40,10 +28,6 @@ class Solution(object):
             i = prefix[i]
         return s[i+1:][::-1] + s
 
-
-# Time:  O(n)
-# Space: O(n)
-# Manacher's Algorithm
 class Solution2(object):
     def shortestPalindrome(self, s):
         """
@@ -80,3 +64,4 @@ class Solution2(object):
             if i - palindrome[i] == 1:
                 max_len = palindrome[i]
         return s[len(s)-1:max_len-1:-1] + s
+

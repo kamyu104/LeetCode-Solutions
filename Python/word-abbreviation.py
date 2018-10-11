@@ -3,7 +3,6 @@
 
 import collections
 
-
 class Solution(object):
     def wordsAbbreviation(self, dict):
         """
@@ -36,3 +35,4 @@ class Solution(object):
                 word_to_abbr[conflicts.pop()] = abbr
 
         return [word_to_abbr[word] for word in dict]
+

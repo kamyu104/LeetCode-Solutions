@@ -4,14 +4,12 @@
 
 import collections
 
-
 class TrieNode(object):
 
     def __init__(self):
         self.__TOP_COUNT = 3
         self.infos = []
         self.leaves = {}
-
 
     def insert(self, s, times):
         cur = self
@@ -21,7 +19,6 @@ class TrieNode(object):
                 cur.leaves[c] = TrieNode()
             cur = cur.leaves[c]
             cur.add_info(s, times)
-
 
     def add_info(self, s, times):
         for p in self.infos:
@@ -33,7 +30,6 @@ class TrieNode(object):
         self.infos.sort()
         if len(self.infos) > self.__TOP_COUNT:
             self.infos.pop()
-
 
 class AutocompleteSystem(object):
 
@@ -49,7 +45,6 @@ class AutocompleteSystem(object):
         for sentence, count in zip(sentences, times):
             self.__sentence_to_count[sentence] = count
             self.__trie.insert(sentence, count)
-
 
     def input(self, c):
         """
@@ -72,7 +67,3 @@ class AutocompleteSystem(object):
                 result = [p[1] for p in self.__cur_node.infos]
         return result
 
-
-# Your AutocompleteSystem object will be instantiated and called as such:
-# obj = AutocompleteSystem(sentences, times)
-# param_1 = obj.input(c)

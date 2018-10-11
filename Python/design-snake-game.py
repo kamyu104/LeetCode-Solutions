@@ -57,7 +57,3 @@ class SnakeGame(object):
         self.__lookup[(x, y)] += 1
         return self.__score
 
-
-# Your SnakeGame object will be instantiated and called as such:
-# obj = SnakeGame(width, height, food)
-# param_1 = obj.move(direction)

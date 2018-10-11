@@ -1,13 +1,6 @@
 # Time:  O(n)
 # Space: O(h)
 
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
 class Solution(object):
     def splitBST(self, root, V):
         """
@@ -25,3 +18,4 @@ class Solution(object):
             result = self.splitBST(root.left, V)
             root.left = result[1]
             return result[0], root
+

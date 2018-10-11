@@ -1,13 +1,6 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
-#
-# Given two sorted integer arrays A and B, merge B into A as one sorted array.
-#
-# Note:
-# You may assume that A has enough space (size that is greater or equal to m + n) to hold additional elements from B.
-# The number of elements initialized in A and B are m and n respectively.
-#
 
 class Solution:
     # @param A  a list of integers
@@ -36,15 +29,6 @@ if __name__ == "__main__":
     Solution().merge(A, 3, B, 4)
     print(A)
 
-
-# Time:  O(n)
-# Space: O(n)
-# you may get a input like this,
-# nums1 : [0]
-# m : 0
-# nums2 : [1]
-# n : 1
-# so you need to judge if n is still large than 0
 class Solution2:
     def merge(self, nums1, m, nums2, n):
         """
@@ -66,3 +50,4 @@ class Solution2:
                                    # Reference:
                                    # - https://stackoverflow.com/questions/4948293/python-slice-assignment-memory-usage
                                    # - https://stackoverflow.com/questions/10623302/how-assignment-works-with-python-list-slice
+

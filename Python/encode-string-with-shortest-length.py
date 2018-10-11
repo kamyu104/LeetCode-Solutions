@@ -26,3 +26,4 @@ class Solution(object):
                 if len(encoded_string) < len(dp[i][j]):
                     dp[i][j] = encoded_string
         return dp[0][len(s) - 1]
+

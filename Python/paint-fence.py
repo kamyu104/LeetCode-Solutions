@@ -1,7 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
 
-# DP solution with rolling window.
 class Solution(object):
     def numWays(self, n, k):
         """
@@ -20,9 +19,6 @@ class Solution(object):
             ways[i % 3] = (k - 1) * (ways[(i - 1) % 3] + ways[(i - 2) % 3])
         return ways[(n - 1) % 3]
 
-# Time:  O(n)
-# Space: O(n)
-# DP solution.
 class Solution2(object):
     def numWays(self, n, k):
         """
@@ -40,3 +36,4 @@ class Solution2(object):
         for i in xrange(2, n):
             ways[i] = (k - 1) * (ways[i - 1] + ways[i - 2])
         return ways[n - 1]
+

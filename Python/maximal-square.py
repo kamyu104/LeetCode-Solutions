@@ -1,19 +1,6 @@
 # Time:  O(n^2)
 # Space: O(n)
-#
-# Given a 2D binary matrix filled with 0's and 1's,
-# find the largest square containing all 1's and return its area.
-#
-# For example, given the following matrix:
-#
-# 1 0 1 0 0
-# 1 0 1 1 1
-# 1 1 1 1 1
-# 1 0 0 1 0
-# Return 4.
-#
 
-# DP with sliding window.
 class Solution:
     # @param {character[][]} matrix
     # @return {integer}
@@ -46,10 +33,6 @@ class Solution:
 
         return max_size * max_size
 
-
-# Time:  O(n^2)
-# Space: O(n^2)
-# DP.
 class Solution2:
     # @param {character[][]} matrix
     # @return {integer}
@@ -82,10 +65,6 @@ class Solution2:
 
         return max_size * max_size
 
-
-# Time:  O(n^2)
-# Space: O(n^2)
-# DP.
 class Solution3:
     # @param {character[][]} matrix
     # @return {integer}

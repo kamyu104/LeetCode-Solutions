@@ -4,9 +4,6 @@
 import itertools
 import re
 
-
-# The best theory solution (DP, O(n + c^2)) could be seen here:
-# https://leetcode.com/discuss/64344/theory-matters-from-backtracking-128ms-to-dp-0m
 class Solution(object):
     def canWin(self, s):
         g, g_final = [0], 0
@@ -18,16 +15,6 @@ class Solution(object):
             g_final ^= g[p]
         return g_final > 0  # Theorem 1: First player must win iff g(current_state) != 0
 
-
-# Time:  O(n + c^3 * 2^c * logc), n is length of string, c is count of "++"
-# Space: O(c * 2^c)
-# hash solution.
-# We have total O(2^c) game strings,
-# and each hash key in hash table would cost O(c),
-# each one has O(c) choices to the next one,
-# and each one would cost O(clogc) to sort,
-# so we get O((c * 2^c) * (c * clogc)) = O(c^3 * 2^c * logc) time.
-# To cache the results of all combinations, thus O(c * 2^c) space.
 class Solution2(object):
     def canWin(self, s):
         """
@@ -47,10 +34,6 @@ class Solution2(object):
         # re.findall: O(n) time, canWinHelper: O(c) in depth
         return canWinHelper(map(len, re.findall(r'\+\++', s)))
 
-
-# Time:  O(c * n * c!), n is length of string, c is count of "++"
-# Space: O(c * n), recursion would be called at most c in depth.
-#                  Besides, it costs n space for modifying string at each depth.
 class Solution3(object):
     def canWin(self, s):
         """
@@ -69,3 +52,4 @@ class Solution3(object):
                     i += 1
             i += 1
         return is_win
+

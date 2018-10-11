@@ -1,14 +1,6 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
-#
-# Given a string containing just the characters '(' and ')',
-# find the length of the longest valid (well-formed) parentheses substring.
-#
-# For "(()", the longest valid parentheses substring is "()", which has length = 2.
-#
-# Another example is ")()())", where the longest valid parentheses substring is "()()", which has length = 4.
-#
 
 class Solution(object):
     def longestValidParentheses(self, s):
@@ -32,9 +24,6 @@ class Solution(object):
         return max(length(xrange(len(s)), -1, '('), \
                    length(reversed(xrange(len(s))), len(s), ')'))
 
-
-# Time:  O(n)
-# Space: O(n)
 class Solution2:
     # @param s, a string
     # @return an integer
@@ -56,3 +45,4 @@ class Solution2:
 if __name__ == "__main__":
     print(Solution().longestValidParentheses("()"))
     print(Solution().longestValidParentheses(")()())"))
+

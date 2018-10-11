@@ -1,7 +1,6 @@
 # Time:  O(n)
 # Space: O(h)
 
-# Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -30,3 +29,4 @@ class Solution(object):
             return node, i
 
         return str2treeHelper(s, 0)[0] if s else None
+

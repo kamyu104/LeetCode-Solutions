@@ -2,15 +2,6 @@ from __future__ import print_function
 from functools import reduce
 # Time:  O(m * n)
 # Space: O(1)
-#
-# Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.
-#
-# Follow up:
-# Did you use extra space?
-# A straight forward solution using O(mn) space is probably a bad idea.
-# A simple improvement uses O(m + n) space, but still not the best solution.
-# Could you devise a constant space solution?
-#
 
 class Solution:
     # @param matrix, a list of lists of integers
@@ -44,3 +35,4 @@ if __name__ == "__main__":
              , [1, 1, 1, 1]]
     Solution().setZeroes(matrix)
     print(matrix)
+

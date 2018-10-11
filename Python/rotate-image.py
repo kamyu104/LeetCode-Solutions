@@ -1,17 +1,7 @@
 from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(1)
-#
-# You are given an n x n 2D matrix representing an image.
-#
-# Rotate the image by 90 degrees (clockwise).
-#
-# Follow up:
-# Could you do this in-place?
-#
 
-# Time:  O(n^2)
-# Space: O(1)
 class Solution:
     # @param matrix, a list of lists of integers
     # @return a list of lists of integers
@@ -30,8 +20,6 @@ class Solution:
 
         return matrix
 
-# Time:  O(n^2)
-# Space: O(n^2)
 class Solution2:
     # @param matrix, a list of lists of integers
     # @return a list of lists of integers
@@ -41,3 +29,4 @@ class Solution2:
 if __name__ == "__main__":
     matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     print(Solution().rotate(matrix))
+

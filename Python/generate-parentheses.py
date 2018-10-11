@@ -1,14 +1,6 @@
 from __future__ import print_function
 # Time:  O(4^n / n^(3/2)) ~= Catalan numbers
 # Space: O(n)
-#
-# Given n pairs of parentheses, write a function to generate
-# all combinations of well-formed parentheses.
-#
-# For example, given n = 3, a solution set is:
-#
-# "((()))", "(()())", "(())()", "()(())", "()()()"
-#
 
 class Solution:
     # @param an integer
@@ -28,3 +20,4 @@ class Solution:
 
 if __name__ == "__main__":
     print(Solution().generateParenthesis(3))
+

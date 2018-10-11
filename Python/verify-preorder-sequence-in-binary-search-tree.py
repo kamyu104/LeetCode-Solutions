@@ -16,8 +16,6 @@ class Solution:
             preorder[i] = p
         return True
 
-# Time:  O(n)
-# Space: O(h)
 class Solution2:
     # @param {integer[]} preorder
     # @return {boolean}
@@ -32,3 +30,4 @@ class Solution2:
                 path.pop()
             path.append(p)
         return True
+

@@ -1,19 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
-#
-# Given two binary strings, return their sum (also a binary string).
-#
-# For example,
-# a = "11"
-# b = "1"
-# Return "100".
-#
 
 try:
     xrange          # Python 2
 except NameError:
     xrange = range  # Python 3
-
 
 class Solution:
     # @param a, a string
@@ -32,3 +23,4 @@ class Solution:
         if carry:
             result += str(carry)
         return result[::-1]
+

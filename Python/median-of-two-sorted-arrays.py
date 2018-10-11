@@ -2,10 +2,6 @@ from __future__ import print_function
 # Time:  O(log(min(m, n)))
 # Space: O(1)
 
-# There are two sorted arrays nums1 and nums2 of size m and n respectively.
-# Find the median of the two sorted arrays.
-# The overall run time complexity should be O(log (m+n)).
-
 class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):
         """
@@ -38,10 +34,6 @@ class Solution(object):
 
         return max(Ai_minus_1, Bj)
 
-
-# Time:  O(log(max(m, n)) * log(max_val - min_val))
-# Space: O(1)
-# Generic solution.
 class Solution_Generic(object):
     def findMedianSortedArrays(self, nums1, nums2):
         """

@@ -1,13 +1,11 @@
 # Time:  O(n)
 # Space: O(h)
 
-# Definition for a Node.
 class Node(object):
     def __init__(self, val, left, right):
         self.val = val
         self.left = left
         self.right = right
-
 
 class Solution(object):
     def treeToDoublyList(self, root):
@@ -28,3 +26,4 @@ class Solution(object):
         root.left, root.right = left_tail, right_head
         left_head.left, right_tail.right = right_tail, left_head
         return left_head
+

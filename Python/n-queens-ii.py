@@ -2,13 +2,7 @@ from __future__ import print_function
 from functools import reduce
 # Time:  O(n!)
 # Space: O(n)
-#
-# Follow up for N-Queens problem.
-#
-# Now, instead outputting board configurations, return the total number of distinct solutions.
-#
 
-# quick solution for checking if it is diagonally legal
 class Solution:
     # @return an integer
     def totalNQueens(self, n):
@@ -28,7 +22,6 @@ class Solution:
                 self.cols[i] = self.main_diag[row + i] = self.anti_diag[row - i + n] = False
         return result
 
-# slower solution
 class Solution2:
     # @return an integer
     def totalNQueens(self, n):
@@ -45,3 +38,4 @@ class Solution2:
 
 if __name__ == "__main__":
     print(Solution().totalNQueens(8))
+

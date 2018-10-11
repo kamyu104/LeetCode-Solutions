@@ -3,7 +3,6 @@
 
 import collections
 
-
 class WordDistance:
     # initialize your data structure here.
     # @param {string[]} words
@@ -29,3 +28,4 @@ class WordDistance:
                 j += 1
 
         return dist
+

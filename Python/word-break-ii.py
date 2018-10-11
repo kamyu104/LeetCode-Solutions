@@ -2,18 +2,6 @@ from __future__ import print_function
 # Time:  O(n * l^2 + n * r), l is the max length of the words,
 #                            r is the number of the results.
 # Space: O(n^2)
-#
-# Given a string s and a dictionary of words dict,
-# add spaces in s to construct a sentence where each word is a valid dictionary word.
-#
-# Return all such possible sentences.
-#
-# For example, given
-# s = "catsanddog",
-# dict = ["cat", "cats", "and", "sand", "dog"].
-#
-# A solution is ["cats and dog", "cat sand dog"].
-#
 
 class Solution(object):
     def wordBreak(self, s, wordDict):
@@ -52,6 +40,6 @@ class Solution(object):
                 self.wordBreakHelper(s, valid, i + 1, path, result)
                 path.pop()
 
-
 if __name__ == "__main__":
     print(Solution().wordBreak("catsanddog", ["cat", "cats", "and", "sand", "dog"]))
+

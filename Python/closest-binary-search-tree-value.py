@@ -1,13 +1,6 @@
 # Time:  O(h)
 # Space: O(1)
 
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
 class Solution(object):
     def closestValue(self, root, target):
         """
@@ -28,3 +21,4 @@ class Solution(object):
             else:
                 root = root.right
         return closest.val
+

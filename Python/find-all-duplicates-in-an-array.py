@@ -1,20 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
 
-# Given an array of integers, 1 <= a[i] <= n (n = size of array),
-# some elements appear twice and others appear once.
-# Find all the elements that appear twice in this array.
-# Could you do it without extra space and in O(n) runtime?
-#
-# Example:
-# Input
-#
-# [4,3,2,7,8,2,3,1]
-#
-# Output
-#
-# [2,3]
-
 class Solution(object):
     def findDuplicates(self, nums):
         """
@@ -29,9 +15,6 @@ class Solution(object):
                 nums[abs(i)-1] *= -1
         return result
 
-
-# Time:  O(n)
-# Space: O(1)
 class Solution2(object):
     def findDuplicates(self, nums):
         """
@@ -51,9 +34,6 @@ class Solution2(object):
                 result.append(nums[i])
         return result
 
-
-# Time:  O(n)
-# Space: O(n), this doesn't satisfy the question
 from collections import Counter
 class Solution3(object):
     def findDuplicates(self, nums):
@@ -62,3 +42,4 @@ class Solution3(object):
         :rtype: List[int]
         """
         return [elem for elem, count in Counter(nums).items() if count == 2]
+

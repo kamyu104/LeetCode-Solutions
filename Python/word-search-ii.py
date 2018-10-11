@@ -1,24 +1,5 @@
 # Time:  O(m * n * l)
 # Space: O(l)
-#
-# Given a 2D board and a list of words from the dictionary, find all words in the board.
-#
-# Each word must be constructed from letters of sequentially adjacent cell, where "adjacent" cells
-# are those horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
-#
-# For example,
-# Given words = ["oath","pea","eat","rain"] and board =
-#
-# [
-#   ['o','a','a','n'],
-#   ['e','t','a','e'],
-#   ['i','h','k','r'],
-#   ['i','f','l','v']
-# ]
-# Return ["eat","oath"].
-# Note:
-# You may assume that all inputs are consist of lowercase letters a-z.
-#
 
 class TrieNode(object):
     # Initialize your data structure here.
@@ -34,7 +15,6 @@ class TrieNode(object):
                 cur.leaves[c] = TrieNode()
             cur = cur.leaves[c]
         cur.is_string = True
-
 
 class Solution(object):
     def findWords(self, board, words):
@@ -75,3 +55,4 @@ class Solution(object):
         self.findWordsRecu(board, next_node, cur + 1, i, j - 1, visited, cur_word, result)
         visited[i][j] = False
         cur_word.pop()
+

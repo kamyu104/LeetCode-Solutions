@@ -14,7 +14,6 @@ class Solution2(object):
         tmp, tmp[i] = [smallest] * k, min(tmp[:i] + tmp[i+1:])
         return map(sum, zip(tmp, house))
 
-
 class Solution2(object):
     def minCostII(self, costs):
         """
@@ -39,3 +38,4 @@ class Solution2(object):
                 min_cost[i % 2][j] = costs[i][j] + min_j
 
         return min(min_cost[(n - 1) % 2])
+

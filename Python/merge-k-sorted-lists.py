@@ -2,10 +2,6 @@ from __future__ import print_function
 # Time:  O(nlogk)
 # Space: O(1)
 
-# Merge k sorted linked lists and return it as one sorted list.
-# Analyze and describe its complexity.
-
-# Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -15,8 +11,6 @@ class ListNode(object):
         if self:		
             return "{} -> {}".format(self.val, self.next)
 
-
-# Merge two by two solution.
 class Solution(object):
     def mergeKLists(self, lists):
         """
@@ -48,10 +42,6 @@ class Solution(object):
                 right -= 1
         return lists[0]
 
-
-# Time:  O(nlogk)
-# Space: O(logk)
-# Divide and Conquer solution.
 class Solution2:
     # @param a list of ListNode
     # @return a ListNode
@@ -79,10 +69,6 @@ class Solution2:
 
         return mergeKListsHelper(lists, 0, len(lists) - 1)
 
-
-# Time:  O(nlogk)
-# Space: O(k)
-# Heap solution.
 import heapq
 class Solution3:
     # @param a list of ListNode
@@ -105,7 +91,6 @@ class Solution3:
 
         return dummy.next
 
-
 if __name__ == "__main__":
     list1 = ListNode(1)
     list1.next = ListNode(3)
@@ -113,3 +98,4 @@ if __name__ == "__main__":
     list2.next = ListNode(4)
 
     print(Solution().mergeKLists([list1, list2]))
+

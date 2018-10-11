@@ -1,22 +1,10 @@
 # Time:  O(k * n)
 # Space: O(k)
-#
-# Say you have an array for which the ith element is
-# the price of a given stock on day i.
-#
-# Design an algorithm to find the maximum profit.
-# You may complete at most k transactions.
-#
-# Note:
-# You may not engage in multiple transactions at the same time
-# (ie, you must sell the stock before you buy again).
-#
 
 try:
     xrange          # Python 2
 except NameError:
     xrange = range  # Python 3
-
 
 class Solution(object):
     # @return an integer as the maximum profit
@@ -42,3 +30,4 @@ class Solution(object):
                 max_sell[j] = max(max_sell[j], max_buy[j] + prices[i])
 
         return max_sell[k]
+

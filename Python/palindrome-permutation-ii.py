@@ -4,7 +4,6 @@
 import collections
 import itertools
 
-
 class Solution(object):
     def generatePalindromes(self, s):
         """
@@ -46,3 +45,4 @@ class Solution2(object):
         chars = ''.join(k * (v / 2) for k, v in cnt.iteritems())
         return [''.join(half_palindrome + mid + half_palindrome[::-1]) \
                 for half_palindrome in set(itertools.permutations(chars))] if len(mid) < 2 else []
+

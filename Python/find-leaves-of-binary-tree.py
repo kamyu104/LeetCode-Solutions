@@ -1,13 +1,6 @@
 # Time:  O(n)
 # Space: O(h)
 
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
 class Solution(object):
     def findLeaves(self, root):
         """
@@ -27,3 +20,4 @@ class Solution(object):
         result = []
         findLeavesHelper(root, result)
         return result
+

@@ -1,13 +1,6 @@
 # Time:  O(h)
 # Space: O(h)
 
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
 class Solution(object):
     def deleteNode(self, root, key):
         """
@@ -40,3 +33,4 @@ class Solution(object):
                 root.right = self.deleteNode(root.right, successor.val)
 
         return root
+

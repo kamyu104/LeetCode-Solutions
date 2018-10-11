@@ -1,13 +1,7 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
-#
-# Given a binary tree, find its maximum depth.
-#
-# The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
-#
 
-# Definition for a  binary tree node
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -29,3 +23,4 @@ if __name__ == "__main__":
     root.right = TreeNode(3)
     root.left.left = TreeNode(4)
     print(Solution().maxDepth(root))
+

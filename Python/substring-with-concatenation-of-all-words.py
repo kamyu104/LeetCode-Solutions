@@ -2,22 +2,7 @@ from __future__ import print_function
 # Time:  O((m + n) * k), where m is string length, n is dictionary size, k is word length
 # Space: O(n * k)
 
-# You are given a string, s, and a list of words, words,
-# that are all of the same length. Find all starting indices of substring(s)
-# in s that is a concatenation of each word in words exactly once and
-# without any intervening characters.
-#
-# For example, given:
-# s: "barfoothefoobarman"
-# words: ["foo", "bar"]
-#
-# You should return the indices: [0,9].
-# (order does not matter).
-
-# Sliding window solution
-
 import collections
-
 
 class Solution(object):
     def findSubstring(self, s, words):
@@ -61,9 +46,6 @@ class Solution(object):
                     left = j+k
         return result
 
-
-# Time:  O(m * n * k), where m is string length, n is dictionary size, k is word length
-# Space: O(n * k)
 class Solution2(object):
     def findSubstring(self, s, words):
         """
@@ -94,6 +76,6 @@ class Solution2(object):
 
         return result
 
-
 if __name__ == "__main__":
     print(Solution().findSubstring("barfoothefoobarman", ["foo", "bar"]))
+

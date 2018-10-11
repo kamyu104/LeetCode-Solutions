@@ -1,19 +1,6 @@
 # Time:  O(n*2^n)
 # Space: O(2^n)
 
-# Given an array of integers nums and a positive integer k,
-# find whether it's possible to divide this array into k non-empty subsets whose sums are all equal.
-#
-# Example 1:
-# Input: nums = [4, 3, 2, 3, 5, 2, 1], k = 4
-# Output: True
-# Explanation: It's possible to divide it into 4 subsets (5), (1, 4), (2,3), (2,3) with equal sums.
-# Note:
-#
-# 1 <= k <= len(nums) <= 16.
-# 0 < nums[i] < 10000.
-
-# Memoization solution.
 class Solution(object):
     def canPartitionKSubsets(self, nums, k):
         """
@@ -36,10 +23,6 @@ class Solution(object):
         lookup[-1] = True
         return dfs(nums, total//k, 0, total, lookup)
 
-
-# Time:  O(k^(n-k) * k!)
-# Space: O(n)
-# DFS solution with pruning.
 class Solution2(object):
     def canPartitionKSubsets(self, nums, k):
         """
@@ -66,3 +49,4 @@ class Solution2(object):
         nums.sort(reverse=True)
         subset_sums = [0] * k
         return dfs(nums, total//k, 0, subset_sums)
+

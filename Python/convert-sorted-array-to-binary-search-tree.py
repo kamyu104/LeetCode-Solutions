@@ -1,17 +1,12 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(logn)
-#
-# Given an array where elements are sorted in ascending order,
-# convert it to a height balanced BST.
-#
-# Definition for a  binary tree node
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
-
 
 class Solution(object):
     def sortedArrayToBST(self, nums):
@@ -46,10 +41,10 @@ class Solution(object):
             return n - x // 2  # case 2 == n - (x//2 - 1) - 1 : the left subtree of the root
                                # has more nodes and the right subtree is perfect.
 
-
 if __name__ == "__main__":
     num = [1, 2, 3]
     result = Solution().sortedArrayToBST(num)
     print(result.val)
     print(result.left.val)
     print(result.right.val)
+

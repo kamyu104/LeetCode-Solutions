@@ -19,3 +19,4 @@ class Solution(object):
                         dp[week % 2][cur_city] = max(dp[week % 2][cur_city], \
                                                      days[dest_city][week] + dp[(week+1) % 2][dest_city])
         return dp[0][0]
+

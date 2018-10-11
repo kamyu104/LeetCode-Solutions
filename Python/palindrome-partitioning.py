@@ -1,22 +1,7 @@
 from __future__ import print_function
 # Time:  O(n^2 ~ 2^n)
 # Space: O(n^2)
-#
-# Given a string s, partition s such that every substring of the partition is a palindrome.
-#
-# Return all possible palindrome partitioning of s.
-#
-# For example, given s = "aab",
-# Return
-#
-#   [
-#     ["aa","b"],
-#     ["a","a","b"]
-#   ]
 
-# Time:  O(n^2 ~ 2^n)
-# Space: O(n^2)
-# dynamic programming solution
 class Solution:
     # @param s, a string
     # @return a list of lists of string
@@ -40,9 +25,6 @@ class Solution:
 
         return sub_partition[0]
 
-# Time:  O(2^n)
-# Space: O(n)
-# recursive solution
 class Solution2:
     # @param s, a string
     # @return a list of lists of string
@@ -69,3 +51,4 @@ class Solution2:
 
 if __name__ == "__main__":
     print(Solution().partition("aab"))
+

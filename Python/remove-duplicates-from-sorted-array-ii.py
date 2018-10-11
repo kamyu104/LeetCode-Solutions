@@ -1,15 +1,6 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
-#
-# Follow up for "Remove Duplicates":
-# What if duplicates are allowed at most twice?
-#
-# For example,
-# Given sorted array A = [1,1,1,2,2,3],
-#
-# Your function should return length = 5, and A is now [1,1,2,2,3].
-#
 
 class Solution:
     # @param a list of integers
@@ -30,3 +21,4 @@ class Solution:
 
 if __name__ == "__main__":
     print(Solution().removeDuplicates([1, 1, 1, 2, 2, 3]))
+

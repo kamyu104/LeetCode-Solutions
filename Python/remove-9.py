@@ -13,3 +13,4 @@ class Solution(object):
             n /= 9
             base *= 10
         return result
+

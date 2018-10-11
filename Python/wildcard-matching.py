@@ -1,28 +1,7 @@
 from __future__ import print_function
 # Time:  O(m + n)
 # Space: O(1)
-#
-# Implement wildcard pattern matching with support for '?' and '*'.
-#
-# '?' Matches any single character.
-# '*' Matches any sequence of characters (including the empty sequence).
-#
-# The matching should cover the entire input string (not partial).
-#
-# The function prototype should be:
-# bool isMatch(const char *s, const char *p)
-#
-# Some examples:
-# isMatch("aa","a") -> false
-# isMatch("aa","aa") -> true
-# isMatch("aaa","aa") -> false
-# isMatch("aa", "*") -> true
-# isMatch("aa", "a*") -> true
-# isMatch("ab", "?*") -> true
-# isMatch("aab", "c*a*b") -> false
-#
 
-# iteration
 class Solution:
     # @param s, an input string
     # @param p, a pattern string
@@ -49,9 +28,6 @@ class Solution:
 
         return p_ptr == len(p)
 
-# dp with rolling window
-# Time:  O(m * n)
-# Space: O(m + n)
 class Solution2:
     # @return a boolean
     def isMatch(self, s, p):
@@ -72,9 +48,6 @@ class Solution2:
 
         return result[len(s) % k][len(p)]
 
-# dp
-# Time:  O(m * n)
-# Space: O(m * n)
 class Solution3:
     # @return a boolean
     def isMatch(self, s, p):
@@ -94,8 +67,6 @@ class Solution3:
 
         return result[len(s)][len(p)]
 
-
-# recursive, slowest, TLE
 class Solution4:
     # @return a boolean
     def isMatch(self, s, p):
@@ -124,3 +95,4 @@ if __name__ == "__main__":
     print(Solution().isMatch("aa", "?*"))
     print(Solution().isMatch("ab", "?*"))
     print(Solution().isMatch("aab", "c*a*b"))
+

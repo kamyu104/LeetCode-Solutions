@@ -1,7 +1,6 @@
 # Time:  O(n^2)
 # Space: O(1)
 
-
 class Solution:
     # @param {integer[]} nums
     # @param {integer} target
@@ -22,3 +21,4 @@ class Solution:
             k += 1
 
         return count
+

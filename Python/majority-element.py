@@ -1,13 +1,8 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
-#
-# Given an array of size n, find the majority element.
-# The majority element is the element that appears more than [n/2] times.
-#
-# You may assume that the array is non-empty and the majority element always exist in the array.
-import collections
 
+import collections
 
 class Solution:
     def majorityElement(self, nums):
@@ -37,3 +32,4 @@ class Solution:
 
 if __name__ == "__main__":
     print(Solution().majorityElement([1, 2, 3, 4, 5, 5, 5, 5, 5, 5, 6]))
+

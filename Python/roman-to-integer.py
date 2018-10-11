@@ -1,11 +1,6 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
-#
-# Given a roman numeral, convert it to an integer.
-#
-# Input is guaranteed to be within the xrange from 1 to 3999.
-#
 
 class Solution:
     # @return an integer
@@ -22,3 +17,4 @@ class Solution:
 if __name__ == "__main__":
     print(Solution().romanToInt("IIVX"))
     print(Solution().romanToInt("MMMCMXCIX"))
+

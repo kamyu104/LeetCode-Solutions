@@ -15,3 +15,4 @@ class Solution(object):
             else:
                 curr += 1
         return min(max(result, prev+curr+1), len(nums))
+

@@ -2,15 +2,6 @@ from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(1)
 
-# Given an index k, return the kth row of the Pascal's triangle.
-#
-# For example, given k = 3,
-# Return [1,3,3,1].
-#
-# Note:
-# Could you optimize your algorithm to use only O(k) extra space?
-#
-
 class Solution:
     # @return a list of integers
     def getRow(self, rowIndex):
@@ -51,9 +42,6 @@ class Solution:
             res = add(res)
         return res
 
-
-# Time:  O(n^2)
-# Space: O(n)
 class Solution2:
     # @return a list of integers
     def getRow(self, rowIndex):
@@ -62,6 +50,6 @@ class Solution2:
             result = [1] + [result[j - 1] + result[j] for j in xrange(1, i)] + [1]
         return result
 
-
 if __name__ == "__main__":
     print(Solution().getRow(3))
+

@@ -1,13 +1,6 @@
 from __future__ import print_function
 # Time:  O(n * n!)
 # Space: O(n)
-#
-# Given a collection of numbers that might contain duplicates, return all possible unique permutations.
-#
-# For example,
-# [1,1,2] have the following unique permutations:
-# [1,1,2], [1,2,1], and [2,1,1].
-#
 
 class Solution(object):
     def permuteUnique(self, nums):
@@ -55,5 +48,4 @@ class Solution2:
 if __name__ == "__main__":
     print(Solution().permuteUnique([1, 1, 2]))
     print(Solution().permuteUnique([1, -1, 1, 2, -1, 2, 2, -1]))
-
 

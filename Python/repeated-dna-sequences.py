@@ -2,18 +2,6 @@ from __future__ import print_function
 # Time:  O(n)
 # Space: O(n)
 
-# All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T,
-# for example: "ACGAATTCCG". When studying DNA, it is sometimes useful to identify repeated sequences within the DNA.
-#
-# Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule.
-#
-# For example,
-#
-# Given s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT",
-#
-# Return:
-# ["AAAAACCCCC", "CCCCCAAAAA"].
-
 import collections
 
 class Solution(object):
@@ -44,8 +32,8 @@ class Solution(object):
             l.extend([s[i:i + 10]])
         return [k for k, v in collections.Counter(l).items() if v > 1]
 
-
 if __name__ == "__main__":
     print(Solution().findRepeatedDnaSequences("AAAAAAAAAA"))
     print(Solution().findRepeatedDnaSequences(""))
     print(Solution().findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"))
+

@@ -2,18 +2,6 @@ from __future__ import print_function
 # Time:  O(logn)
 # Space: O(1)
 
-# Given a positive integer, return its corresponding column title as appear in an Excel sheet.
-#
-# For example:
-#
-#     1 -> A
-#     2 -> B
-#     3 -> C
-#     ...
-#     26 -> Z
-#     27 -> AA
-#     28 -> AB
-
 class Solution(object):
     def convertToTitle(self, n):
         """
@@ -28,7 +16,7 @@ class Solution(object):
 
         return result[::-1]
 
-
 if __name__ == "__main__":
     for i in xrange(1, 29):
         print(Solution().convertToTitle(i))
+

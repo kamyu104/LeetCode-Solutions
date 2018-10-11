@@ -1,22 +1,11 @@
 from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
-#
-# Given a sorted linked list, delete all duplicates such that each element appear only once.
-#
-# For example,
-# Given 1->1->2, return 1->2.
-# Given 1->1->2->3->3, return 1->2->3.
-#
-
-# Definition for singly-linked list.
-
 
 class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
-
 
 class Solution(object):
     def deleteDuplicates(self, head):
@@ -46,8 +35,8 @@ class Solution(object):
                 head.next = self.deleteDuplicates(head.next)
         return head
 
-
 if __name__ == "__main__":
     head, head.next, head.next.next = ListNode(1), ListNode(1), ListNode(2)
     head.next.next.next, head.next.next.next.next = ListNode(3), ListNode(3)
     print(Solution().deleteDuplicates(head))
+

@@ -3,7 +3,6 @@
 
 import heapq
 
-
 class Solution(object):
     def findShortestWay(self, maze, ball, hole):
         """
@@ -39,3 +38,4 @@ class Solution(object):
                 heapq.heappush(heap, (dist+neighbor_dist, path+dir, neighbor))
 
         return "impossible"
+

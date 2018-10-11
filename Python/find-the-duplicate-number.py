@@ -1,18 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
-#
-# Given an array nums containing n + 1 integers where each integer
-# is between 1 and n (inclusive), prove that at least one duplicate
-# element must exist. Assume that there is only one duplicate number,
-# find the duplicate one.
-#
-# Note:
-# - You must not modify the array (assume the array is read only).
-# - You must use only constant extra space.
-# - Your runtime complexity should be less than O(n^2).
-#
 
-# Two pointers method, same as Linked List Cycle II.
 class Solution(object):
     def findDuplicate(self, nums):
         """
@@ -35,10 +23,6 @@ class Solution(object):
             fast = nums[fast]
         return slow
 
-
-# Time:  O(nlogn)
-# Space: O(1)
-# Binary search method.
 class Solution2(object):
     def findDuplicate(self, nums):
         """
@@ -60,8 +44,6 @@ class Solution2(object):
                 left = mid + 1
         return left
 
-# Time:  O(n)
-# Space: O(n)
 class Solution3(object):
     def findDuplicate(self, nums):
         """
@@ -83,3 +65,4 @@ class Solution3(object):
             else:
                 break
         return duplicate
+

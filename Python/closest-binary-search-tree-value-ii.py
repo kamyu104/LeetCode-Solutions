@@ -1,13 +1,6 @@
 # Time:  O(h + k)
 # Space: O(h)
 
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
 class Solution(object):
     def closestKValues(self, root, target, k):
         """
@@ -56,7 +49,6 @@ class Solution(object):
                 result.append(backward_stack[-1].val)
                 nextNode(backward_stack, backward, forward)
         return result
-
 
 class Solution2(object):
     def closestKValues(self, root, target, k):
@@ -120,5 +112,4 @@ class Solution2(object):
                 result.append(larger_node.val)
                 larger_node = larger_it.next()
         return result
-
 

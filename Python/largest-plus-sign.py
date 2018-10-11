@@ -32,3 +32,4 @@ class Solution(object):
                 dp[i][j] = min(dp[i][j], l)
                 result = max(result, dp[i][j])
         return result
+
