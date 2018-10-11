@@ -32,7 +32,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Simulation](https://github.com/kamyu104/LeetCode-Solution#simulation)
 * [Design](https://github.com/kamyu104/LeetCode-Solution#design)
 
-
 ## Database
 
 * [SQL](https://github.com/kamyu104/LeetCode-Solution#sql)
