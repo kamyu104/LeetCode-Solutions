@@ -9,6 +9,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
+# Iterative solution
 class Solution:
     # @param root, a tree node
     # @return a boolean
@@ -36,6 +37,7 @@ class Solution:
 
         return True
 
+# Recursive solution
 class Solution2:
     # @param root, a tree node
     # @return a boolean
@@ -58,4 +60,5 @@ if __name__ == "__main__":
     root.left.left, root.right.right = TreeNode(3), TreeNode(3)
     root.left.right, root.right.left = TreeNode(4), TreeNode(4)
     print(Solution().isSymmetric(root))
+
 

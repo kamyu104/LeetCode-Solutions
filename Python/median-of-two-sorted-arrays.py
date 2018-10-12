@@ -34,6 +34,10 @@ class Solution(object):
 
         return max(Ai_minus_1, Bj)
 
+
+# Time:  O(log(max(m, n)) * log(max_val - min_val))
+# Space: O(1)
+# Generic solution.
 class Solution_Generic(object):
     def findMedianSortedArrays(self, nums1, nums2):
         """
@@ -117,4 +121,5 @@ if __name__ == "__main__":
     print(Solution().findMedianSortedArrays([1, 3, 5, 7], [2, 4, 6]))
     print(Solution_Generic().findMedianSortedArrays([1, 3, 5], [2, 4, 6]))
     print(Solution_3().findMedianSortedArrays([1, 3, 5], [2, 4, 6]))
+
 

@@ -6,6 +6,7 @@ class Node(object):
         self.val = val
         self.next = next
 
+
 class Solution(object):
     def insert(self, head, insertVal):
         """
@@ -15,7 +16,7 @@ class Solution(object):
         """
         def insertAfter(node, val):
             node.next = Node(val, node.next)
-
+        
         if not head:
             node = Node(insertVal, None)
             node.next = node

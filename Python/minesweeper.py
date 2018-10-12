@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def updateBoard(self, board, click):
         """
@@ -44,6 +45,9 @@ class Solution(object):
 
         return board
 
+
+# Time:  O(m * n)
+# Space: O(m * n)
 class Solution2(object):
     def updateBoard(self, board, click):
         """

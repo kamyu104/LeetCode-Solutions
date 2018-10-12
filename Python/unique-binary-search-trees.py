@@ -20,6 +20,9 @@ class Solution(object):
 
         return combination(2 * n, n) - combination(2 * n, n - 1)
 
+# Time:  O(n^2)
+# Space: O(n)
+# DP solution.
 class Solution2:
     # @return an integer
     def numTrees(self, n):

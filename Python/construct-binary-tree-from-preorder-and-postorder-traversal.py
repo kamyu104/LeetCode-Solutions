@@ -7,6 +7,7 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
 class Solution(object):
     def constructFromPrePost(self, pre, post):
         """
@@ -28,6 +29,9 @@ class Solution(object):
             stack.append(node)
         return stack[0]
 
+
+# Time:  O(n)
+# Space: O(n)
 class Solution2(object):
     def constructFromPrePost(self, pre, post):
         """

@@ -3,6 +3,7 @@
 
 import bisect
 
+
 class Solution(object):
     def findClosestElements(self, arr, k, x):
         """

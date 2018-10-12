@@ -18,3 +18,4 @@ class Solution(object):
             result += i-start+1
         return result
 
+

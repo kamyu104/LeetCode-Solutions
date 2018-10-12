@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def palindromePairs(self, words):
         """
@@ -26,6 +27,9 @@ class Solution(object):
                     res.append([lookup[prefix[::-1]], i])
         return res
 
+# Time:  O(n * k^2), n is the number of the words, k is the max length of the words.
+# Space: O(n * k^2)
+# Manacher solution.
 class Solution_TLE(object):
     def palindromePairs(self, words):
         """
@@ -74,6 +78,10 @@ class Solution_TLE(object):
                     res.append([j, i])
         return res
 
+
+# Time:  O(n * k^2), n is the number of the words, k is the max length of the words.
+# Space: O(n * k)
+# Trie solution.
 class TrieNode:
     def __init__(self):
         self.word_idx = -1

@@ -6,6 +6,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Solution(object):
     def maxA(self, N):
         """
@@ -25,6 +26,9 @@ class Solution(object):
         n4 = n - n3
         return 3**n3 * 4**n4
 
+
+# Time:  O(n)
+# Space: O(1)
 class Solution2(object):
     def maxA(self, N):
         """

@@ -6,6 +6,8 @@ class ListNode(object):
         self.val = x
         self.next = None
 
+
+# Two pointers solution.
 class Solution(object):
     def plusOne(self, head):
         """
@@ -35,6 +37,9 @@ class Solution(object):
 
         return dummy if dummy.val else dummy.next
 
+
+# Time:  O(n)
+# Space: O(1)
 class Solution2(object):
     def plusOne(self, head):
         """

@@ -9,12 +9,14 @@ class Solution(object):
         """
         return 2 ** (len(bin(num)) - 2) - 1 - num
 
+
 class Solution2(object):
     def findComplement(self, num):
         i = 1
         while i <= num:
             i <<= 1
         return (i - 1) ^ num
+
 
 class Solution3(object):
     def findComplement(self, num):

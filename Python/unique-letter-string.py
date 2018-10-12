@@ -3,6 +3,7 @@
 
 import string
 
+
 class Solution(object):
     def uniqueLetterString(self, S):
         """

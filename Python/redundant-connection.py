@@ -19,6 +19,7 @@ class UnionFind(object):
         self.count -= 1
         return True
 
+
 class Solution(object):
     def findRedundantConnection(self, edges):
         """
@@ -30,4 +31,5 @@ class Solution(object):
             if not union_find.union_set(*edge):
                 return edge
         return []
+
 

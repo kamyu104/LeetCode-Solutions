@@ -6,6 +6,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Solution(object):
     def scoreOfParentheses(self, S):
         """
@@ -22,6 +23,9 @@ class Solution(object):
                     result += 2**depth
         return result
 
+
+# Time:  O(n)
+# Space: O(h)
 class Solution2(object):
     def scoreOfParentheses(self, S):
         """

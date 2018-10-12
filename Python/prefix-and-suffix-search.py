@@ -4,6 +4,7 @@
 
 import collections
 
+
 class WordFilter(object):
 
     def __init__(self, words):
@@ -35,6 +36,11 @@ class WordFilter(object):
             cur = cur[letter]
         return cur["_weight"]
 
+
+# Time:  ctor:   O(w * l), w is the number of words, l is the word length on average
+#        search: O(p + s + max(m, n)), p is the length of the prefix, s is the length of the suffix,
+#                                      m is the number of the prefix match, n is the number of the suffix match
+# Space: O(w * l)
 class Trie(object):
 
     def __init__(self):
@@ -60,6 +66,7 @@ class Trie(object):
                 return []
             cur = cur[c]
         return cur["_words"]
+
 
 class WordFilter2(object):
 
@@ -90,4 +97,6 @@ class WordFilter2(object):
             else:
                 j += 1
         return -1
+
+
 

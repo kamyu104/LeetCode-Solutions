@@ -18,3 +18,4 @@ class Solution(object):
                         amounts[i + coin] = min(amounts[i + coin], amounts[i] + 1)
         return amounts[amount] if amounts[amount] != INF else -1
 
+

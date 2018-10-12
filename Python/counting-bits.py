@@ -24,6 +24,7 @@ class Solution(object):
             s.extend(map(lambda x: x + 1, s))
         return s[:num + 1]
 
+
 if __name__ == '__main__':
     s = Solution()
     r = s.countBits2(5)

@@ -21,6 +21,10 @@ class Solution:
 
         return result
 
+
+# Time:  O(n * 4^n)
+# Space: O(n)
+# Recursive Solution
 class Solution2:
     # @return a list of strings, [s1, s2]
     def letterCombinations(self, digits):

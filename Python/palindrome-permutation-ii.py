@@ -4,6 +4,7 @@
 import collections
 import itertools
 
+
 class Solution(object):
     def generatePalindromes(self, s):
         """

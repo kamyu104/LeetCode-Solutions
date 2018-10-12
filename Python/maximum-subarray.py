@@ -16,6 +16,7 @@ class Solution(object):
             global_max = max(global_max, local_max)
         return global_max
 
+
 if __name__ == "__main__":
     print(Solution().maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
 

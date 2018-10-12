@@ -7,6 +7,7 @@ class TrieNode:
         self.is_string = False
         self.leaves = {}
 
+
 class WordDictionary:
     def __init__(self):
         self.root = TrieNode()
@@ -40,4 +41,5 @@ class WordDictionary:
                     return True
 
         return False
+
 

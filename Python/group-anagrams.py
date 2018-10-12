@@ -4,6 +4,7 @@ from __future__ import print_function
 
 import collections
 
+
 class Solution(object):
     def groupAnagrams(self, strs):
         """
@@ -18,6 +19,7 @@ class Solution(object):
             anagram.sort()
             result.append(anagram)
         return result
+
 
 if __name__ == "__main__":
     result = Solution().groupAnagrams(["cat", "dog", "act", "mac"])

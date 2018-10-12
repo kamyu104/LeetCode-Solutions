@@ -34,6 +34,9 @@ class Solution(object):
 
         return result
 
+
+# Time:  O(min(m, n)^2 * max(m, n) * log(max(m, n))) ~ O(min(m, n)^2 * max(m, n)^2)
+# Space: O(max(m, n))
 class Solution_TLE(object):
     def maxSumSubmatrix(self, matrix, k):
         """
@@ -71,6 +74,7 @@ class Solution_TLE(object):
                     else:
                         curr = curr.right
                 return result
+
 
         if not matrix:
             return 0

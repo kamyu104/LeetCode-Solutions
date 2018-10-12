@@ -3,6 +3,7 @@
 
 import heapq
 
+
 class Solution(object):
     def findSecondMinimumValue(self, root):
         """

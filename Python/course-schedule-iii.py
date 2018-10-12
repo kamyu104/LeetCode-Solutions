@@ -4,6 +4,7 @@
 import collections
 import heapq
 
+
 class Solution(object):
     def scheduleCourse(self, courses):
         """

@@ -10,6 +10,7 @@ class Node(object):
         self.bottomLeft = bottomLeft
         self.bottomRight = bottomRight
 
+
 class Solution(object):
     def intersect(self, quadTree1, quadTree2):
         """

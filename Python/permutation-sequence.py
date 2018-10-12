@@ -4,6 +4,7 @@ from __future__ import print_function
 
 import math
 
+# Cantor ordering solution
 class Solution(object):
     def getPermutation(self, n, k):
         """
@@ -21,6 +22,7 @@ class Solution(object):
                 k %= fact
                 fact /= i
         return seq
+
 
 if __name__ == "__main__":
     print(Solution().getPermutation(3, 2))

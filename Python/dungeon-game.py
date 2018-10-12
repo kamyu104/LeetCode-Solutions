@@ -17,6 +17,8 @@ class Solution:
 
         return DP[0]
 
+# Time:  O(m * n logk), where k is the possible maximum sum of loses
+# Space: O(m + n)
 class Solution2:
     # @param dungeon, a list of lists of integers
     # @return a integer

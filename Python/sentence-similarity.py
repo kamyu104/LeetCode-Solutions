@@ -3,6 +3,7 @@
 
 import itertools
 
+
 class Solution(object):
     def areSentencesSimilar(self, words1, words2, pairs):
         """

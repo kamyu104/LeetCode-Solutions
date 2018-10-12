@@ -8,6 +8,8 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
+# Two pointer solution. (1356ms)
 class Solution(object):
     def fourSum(self, nums, target):
         """
@@ -40,6 +42,10 @@ class Solution(object):
                         left += 1
         return res
 
+
+# Time:  O(n^2 * p)
+# Space: O(n^2 * p)
+# Hash solution. (224ms)
 class Solution2(object):
     def fourSum(self, nums, target):
         """
@@ -70,6 +76,9 @@ class Solution2(object):
                                 result.append(quad)
         return result
 
+
+# Time:  O(n^2 * p) ~ O(n^4)
+# Space: O(n^2)
 class Solution3(object):
     def fourSum(self, nums, target):
         """

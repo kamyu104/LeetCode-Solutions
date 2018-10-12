@@ -6,6 +6,7 @@ import collections
 import itertools
 import bisect
 
+
 class TopVotedCandidate(object):
 
     def __init__(self, persons, times):
@@ -28,4 +29,6 @@ class TopVotedCandidate(object):
         """
         return self.__lookup[bisect.bisect(self.__lookup,
                                            (t, float("inf")))-1][1]
+
+
 

@@ -8,6 +8,7 @@ except NameError:
 
 import collections
 
+
 class Solution(object):
     def shortestSubarray(self, A, K):
         """

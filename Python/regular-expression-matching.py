@@ -24,6 +24,9 @@ class Solution:
 
         return result[len(s) % k][len(p)]
 
+# dp
+# Time:  O(m * n)
+# Space: O(m * n)
 class Solution2:
     # @return a boolean
     def isMatch(self, s, p):
@@ -43,6 +46,7 @@ class Solution2:
 
         return result[len(s)][len(p)]
 
+# iteration
 class Solution3:
     # @return a boolean
     def isMatch(self, s, p):
@@ -76,6 +80,7 @@ class Solution3:
 
         return p_ptr == len(p)
 
+# recursive
 class Solution4:
     # @return a boolean
     def isMatch(self, s, p):

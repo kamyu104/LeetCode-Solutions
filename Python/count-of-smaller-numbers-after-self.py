@@ -34,6 +34,9 @@ class Solution(object):
         countAndMergeSort(num_idxs, 0, len(num_idxs) - 1, counts)
         return counts
 
+# Time:  O(nlogn)
+# Space: O(n)
+# BIT solution.
 class Solution2(object):
     def countSmaller(self, nums):
         """
@@ -78,6 +81,9 @@ class Solution2(object):
             bit.add(places[i] + 1, 1)
         return ans
 
+# Time:  O(nlogn)
+# Space: O(n)
+# BST solution.
 class Solution3(object):
     def countSmaller(self, nums):
         """

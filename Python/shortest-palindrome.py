@@ -28,6 +28,10 @@ class Solution(object):
             i = prefix[i]
         return s[i+1:][::-1] + s
 
+
+# Time:  O(n)
+# Space: O(n)
+# Manacher's Algorithm
 class Solution2(object):
     def shortestPalindrome(self, s):
         """

@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def pathSum(self, root, sum):
         """
@@ -27,6 +28,9 @@ class Solution(object):
         lookup[0] = 1
         return pathSumHelper(root, 0, sum, lookup)
 
+
+# Time:  O(n^2)
+# Space: O(h)
 class Solution2(object):
     def pathSum(self, root, sum):
         """

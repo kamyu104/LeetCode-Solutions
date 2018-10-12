@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Logger(object):
 
     def __init__(self):
@@ -26,4 +27,6 @@ class Logger(object):
         self.__dq.append((timestamp, message))
         self.__printed.add(message)
         return True
+
+
 

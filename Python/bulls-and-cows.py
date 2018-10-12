@@ -3,8 +3,11 @@
 
 import operator
 
+
+# One pass solution.
 from collections import defaultdict, Counter
 from itertools import izip, imap
+
 
 class Solution(object):
     def getHint(self, secret, guess):
@@ -32,6 +35,8 @@ class Solution(object):
 
         return "%dA%dB" % (A, B)
 
+
+# Two pass solution.
 class Solution2(object):
     def getHint(self, secret, guess):
         """

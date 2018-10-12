@@ -38,6 +38,7 @@ class Solution(object):
         r = int(repr(s * x)[::-1])
         return s * r * (r < 2 ** 31)
 
+
 if __name__ == "__main__":
     print(Solution().reverse(123))
     print(Solution().reverse(-321))

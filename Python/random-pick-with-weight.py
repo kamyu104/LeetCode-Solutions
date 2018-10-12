@@ -5,6 +5,7 @@
 import random
 import bisect
 
+
 class Solution(object):
 
     def __init__(self, w):
@@ -21,4 +22,6 @@ class Solution(object):
         """
         target = random.randint(0, self.__prefix_sum[-1]-1)
         return bisect.bisect_right(self.__prefix_sum, target)
+
+
 

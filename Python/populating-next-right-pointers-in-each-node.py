@@ -29,6 +29,9 @@ class Solution:
                 cur = cur.next
             head = head.left
 
+# Time:  O(n)
+# Space: O(logn)
+# recusion
 class Solution2:
     # @param root, a tree node
     # @return nothing
@@ -49,4 +52,5 @@ if __name__ == "__main__":
     print(root)
     print(root.left)
     print(root.left.left)
+
 

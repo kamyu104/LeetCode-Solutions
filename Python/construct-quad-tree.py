@@ -10,6 +10,7 @@ class Node(object):
         self.bottomLeft = bottomLeft
         self.bottomRight = bottomRight
 
+
 class Solution(object):
     def construct(self, grid):
         """
@@ -29,7 +30,7 @@ class Solution(object):
                topLeftNode.val == topRightNode.val == bottomLeftNode.val == bottomRightNode.val:
                 return Node(topLeftNode.val, True, None, None, None, None)
             return Node(True, False, topLeftNode, topRightNode, bottomLeftNode, bottomRightNode)
-
+        
         if not grid:
             return None
         return dfs(grid, 0, 0, len(grid))

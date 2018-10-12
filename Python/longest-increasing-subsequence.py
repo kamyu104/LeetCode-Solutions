@@ -28,6 +28,9 @@ class Solution(object):
 
         return len(LIS)
 
+# Time:  O(n^2)
+# Space: O(n)
+# Traditional DP solution.
 class Solution2(object):
     def lengthOfLIS(self, nums):
         """

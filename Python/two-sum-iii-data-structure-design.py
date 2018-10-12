@@ -12,12 +12,15 @@ class TwoSum(object):
         """
         self.lookup = defaultdict(int)
 
+
+
     def add(self, number):
         """
         Add the number to an internal data structure.
         :rtype: nothing
         """
         self.lookup[number] += 1
+
 
     def find(self, value):
         """
@@ -31,6 +34,7 @@ class TwoSum(object):
                 return True
         return False
 
+
 if __name__ == "__main__":
     Sol = TwoSum()
 
@@ -39,4 +43,5 @@ if __name__ == "__main__":
 
     for i in (4, 7):
         print(Sol.find(i))
+
 

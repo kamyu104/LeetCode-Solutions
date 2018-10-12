@@ -5,6 +5,7 @@
 import random
 import bisect
 
+
 class Solution(object):
 
     def __init__(self, rects):
@@ -26,4 +27,6 @@ class Solution(object):
         width, height = rect[2]-rect[0]+1, rect[3]-rect[1]+1
         base = self.__prefix_sum[left]-width*height
         return [rect[0]+(target-base)%width, rect[1]+(target-base)//width]
+
+
 

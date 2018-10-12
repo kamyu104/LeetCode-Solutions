@@ -28,6 +28,9 @@ class Solution:
 
         return p_ptr == len(p)
 
+# dp with rolling window
+# Time:  O(m * n)
+# Space: O(m + n)
 class Solution2:
     # @return a boolean
     def isMatch(self, s, p):
@@ -48,6 +51,9 @@ class Solution2:
 
         return result[len(s) % k][len(p)]
 
+# dp
+# Time:  O(m * n)
+# Space: O(m * n)
 class Solution3:
     # @return a boolean
     def isMatch(self, s, p):
@@ -67,6 +73,8 @@ class Solution3:
 
         return result[len(s)][len(p)]
 
+
+# recursive, slowest, TLE
 class Solution4:
     # @return a boolean
     def isMatch(self, s, p):

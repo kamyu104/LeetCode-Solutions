@@ -3,6 +3,7 @@
 
 import itertools
 
+
 class Solution(object):
     def flipgame(self, fronts, backs):
         """

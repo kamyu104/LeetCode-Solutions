@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def totalFruit(self, tree):
         """
@@ -20,4 +21,5 @@ class Solution(object):
                 i += 1
             result = max(result, j-i+1)
         return result
+ 
 

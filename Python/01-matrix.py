@@ -8,6 +8,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Solution(object):
     def updateMatrix(self, matrix):
         """
@@ -35,6 +36,10 @@ class Solution(object):
 
         return matrix
 
+
+# Time:  O(m * n)
+# Space: O(m * n)
+# dp solution
 class Solution2(object):
     def updateMatrix(self, matrix):
         """

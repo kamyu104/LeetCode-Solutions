@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution:
     # @param {string[]} strings
     # @return {string[][]}

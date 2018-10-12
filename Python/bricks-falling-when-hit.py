@@ -23,6 +23,7 @@ class UnionFind(object):
     def top(self):
         return self.size[self.find_set(len(self.size)-1)]
 
+
 class Solution(object):
     def hitBricks(self, grid, hits):
         """

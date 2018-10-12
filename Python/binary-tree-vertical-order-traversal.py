@@ -8,6 +8,8 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
+# BFS + hash solution.
 class Solution(object):
     def verticalOrder(self, root):
         """

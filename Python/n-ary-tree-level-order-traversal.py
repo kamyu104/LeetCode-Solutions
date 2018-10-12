@@ -6,6 +6,7 @@ class Node(object):
         self.val = val
         self.children = children
 
+
 class Solution(object):
     def levelOrder(self, root):
         """

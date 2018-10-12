@@ -42,6 +42,9 @@ class Solution:
             res = add(res)
         return res
 
+
+# Time:  O(n^2)
+# Space: O(n)
 class Solution2:
     # @return a list of integers
     def getRow(self, rowIndex):
@@ -49,6 +52,7 @@ class Solution2:
         for i in range(1, rowIndex + 1):
             result = [1] + [result[j - 1] + result[j] for j in xrange(1, i)] + [1]
         return result
+
 
 if __name__ == "__main__":
     print(Solution().getRow(3))

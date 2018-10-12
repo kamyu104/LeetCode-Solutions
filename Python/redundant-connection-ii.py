@@ -20,6 +20,7 @@ class UnionFind(object):
         self.count -= 1
         return True
 
+
 class Solution(object):
     def findRedundantDirectedConnection(self, edges):
         """

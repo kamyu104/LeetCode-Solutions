@@ -24,3 +24,4 @@ class Solution(object):
         generateAbbreviationsHelper(word, 0, cur, res)
         return res
 
+

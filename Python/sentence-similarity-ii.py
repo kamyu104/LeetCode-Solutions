@@ -3,6 +3,7 @@
 
 import itertools
 
+
 class UnionFind(object):
     def __init__(self, n):
         self.set = range(n)
@@ -18,6 +19,7 @@ class UnionFind(object):
             return False
         self.set[min(x_root, y_root)] = max(x_root, y_root)
         return True
+
 
 class Solution(object):
     def areSentencesSimilarTwo(self, words1, words2, pairs):

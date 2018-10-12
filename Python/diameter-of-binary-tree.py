@@ -8,7 +8,7 @@ class Solution(object):
         :rtype: int
         """
         return self.depth(root, 0)[1]
-
+    
     def depth(self, root, diameter):
         if not root: 
             return 0, diameter

@@ -15,6 +15,9 @@ class Solution(object):
             j -= 1
         return "".join(string)
 
+
+# Time:  O(n)
+# Space: O(n)
 class Solution2(object):
     def reverseString(self, s):
         """

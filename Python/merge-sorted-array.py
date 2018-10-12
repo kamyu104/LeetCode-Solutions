@@ -29,6 +29,15 @@ if __name__ == "__main__":
     Solution().merge(A, 3, B, 4)
     print(A)
 
+
+# Time:  O(n)
+# Space: O(n)
+# you may get a input like this,
+# nums1 : [0]
+# m : 0
+# nums2 : [1]
+# n : 1
+# so you need to judge if n is still large than 0
 class Solution2:
     def merge(self, nums1, m, nums2, n):
         """

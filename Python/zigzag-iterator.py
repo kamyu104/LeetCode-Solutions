@@ -3,6 +3,7 @@
 
 import collections
 
+
 class ZigzagIterator(object):
 
     def __init__(self, v1, v2):
@@ -27,4 +28,5 @@ class ZigzagIterator(object):
         :rtype: bool
         """
         return bool(self.q)
+
 

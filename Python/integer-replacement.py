@@ -22,6 +22,10 @@ class Solution(object):
 
         return result
 
+
+# Time:  O(logn)
+# Space: O(logn)
+# Recursive solution.
 class Solution2(object):
     def integerReplacement(self, n):
         """
@@ -36,4 +40,5 @@ class Solution2(object):
             return self.integerReplacement((n - 1) / 4) + 3
         else:
             return self.integerReplacement((n + 1) / 4) + 3
+
 

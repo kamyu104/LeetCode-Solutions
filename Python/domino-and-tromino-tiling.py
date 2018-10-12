@@ -3,6 +3,7 @@
 
 import itertools
 
+
 class Solution(object):
     def numTilings(self, N):
         """
@@ -34,6 +35,9 @@ class Solution(object):
 
         return matrix_expo(T, N)[0][0]  # T^N * [1, 0, 0, 0]
 
+
+# Time:  O(n)
+# Space: O(1)
 class Solution2(object):
     def numTilings(self, N):
         """

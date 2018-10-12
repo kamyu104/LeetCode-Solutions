@@ -3,6 +3,7 @@
 
 import random
 
+
 class Codec:
     def __init__(self):
         self.__random_length = 6
@@ -36,7 +37,9 @@ class Codec:
         """
         return self.__lookup[shortUrl[len(self.__tiny_url):]]
 
+
 from hashlib import sha256
+
 
 class Codec2:
 
@@ -62,4 +65,5 @@ class Codec2:
         """
         key = short_url.replace(self.url, '')
         return self._cache[key]
+
 

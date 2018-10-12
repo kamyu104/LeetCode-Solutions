@@ -7,6 +7,8 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
+# Morris Traversal Solution
 class Solution(object):
     def postorderTraversal(self, root):
         """
@@ -43,6 +45,10 @@ class Solution(object):
         result.reverse()
         return result
 
+
+# Time:  O(n)
+# Space: O(h)
+# Stack Solution
 class Solution2(object):
     def postorderTraversal(self, root):
         """

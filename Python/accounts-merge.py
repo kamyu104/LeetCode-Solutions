@@ -9,6 +9,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class UnionFind(object):
     def __init__(self):
         self.set = []
@@ -26,6 +27,7 @@ class UnionFind(object):
         x_root, y_root = map(self.find_set, (x, y))
         if x_root != y_root:
             self.set[min(x_root, y_root)] = max(x_root, y_root)
+
 
 class Solution(object):
     def accountsMerge(self, accounts):

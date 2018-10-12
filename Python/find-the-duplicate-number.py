@@ -23,6 +23,10 @@ class Solution(object):
             fast = nums[fast]
         return slow
 
+
+# Time:  O(nlogn)
+# Space: O(1)
+# Binary search method.
 class Solution2(object):
     def findDuplicate(self, nums):
         """
@@ -44,6 +48,8 @@ class Solution2(object):
                 left = mid + 1
         return left
 
+# Time:  O(n)
+# Space: O(n)
 class Solution3(object):
     def findDuplicate(self, nums):
         """

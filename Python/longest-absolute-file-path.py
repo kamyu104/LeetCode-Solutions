@@ -15,6 +15,7 @@ class Solution(object):
                     start = i + 1
             yield s[start:]
 
+
         max_len = 0
         path_len = {0: 0}
         for line in split_iter(input, '\n'):

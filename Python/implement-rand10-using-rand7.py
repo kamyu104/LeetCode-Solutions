@@ -3,9 +3,12 @@
 
 import random
 
+
 def rand7():
     return random.randint(1, 7)
 
+
+# Reference: https://leetcode.com/problems/implement-rand10-using-rand7/discuss/151567/C++JavaPython-Average-1.199-Call-rand7-Per-rand10
 class Solution(object):
     def __init__(self):
         self.__cache = []
@@ -27,6 +30,9 @@ class Solution(object):
             generate(self.__cache)
         return self.__cache.pop()
 
+
+# Time:  O(2 * (1 + (9/49) + (9/49)^2 + ...)) = O(2/(1-(9/49)) = O(2.45)
+# Space: O(1)
 class Solution2(object):
     def rand10(self):
         """

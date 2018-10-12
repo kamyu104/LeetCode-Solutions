@@ -5,6 +5,7 @@ from __future__ import print_function
 import operator
 from functools import reduce
 
+
 class Solution:
     """
     :type nums: List[int]

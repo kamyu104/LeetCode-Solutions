@@ -7,6 +7,7 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
 class Solution(object):
     # @param root, a tree node
     # @return root of the upside down tree
@@ -23,6 +24,9 @@ class Solution(object):
 
         return parent
 
+
+# Time:  O(n)
+# Space: O(n)
 class Solution2(object):
     # @param root, a tree node
     # @return root of the upside down tree

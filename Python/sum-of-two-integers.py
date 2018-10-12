@@ -68,3 +68,4 @@ class Solution(object):
                 ans = self.getSum(ans, 1 << i)
         return self.getSum(~ans, 1) if isNeg else ans
 
+

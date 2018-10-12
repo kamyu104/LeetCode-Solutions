@@ -11,6 +11,7 @@ class Solution(object):
                    for i, row in enumerate(matrix)
                    for j, val in enumerate(row))
 
+
 class Solution2(object):
     def isToeplitzMatrix(self, matrix):
         """

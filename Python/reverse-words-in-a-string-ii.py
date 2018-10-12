@@ -19,6 +19,7 @@ class Solution(object):
                 reverse(s, i, j)
                 i = j + 1
 
+
 if __name__ == '__main__':
     s = ['h','e','l','l','o', ' ', 'w', 'o', 'r', 'l', 'd']
     Solution().reverseWords(s)

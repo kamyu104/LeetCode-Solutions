@@ -42,6 +42,9 @@ class Solution(object):
                 w += c
         yield w
 
+
+# Time:  O(n)
+# Space: O(n)
 class Solution2(object):
     def wordPattern(self, pattern, str):
         """

@@ -23,3 +23,4 @@ class Solution:
 if __name__ == "__main__":
     print(Solution().minimumTotal([[-1], [2, 3], [1, -1, -3]]))
 
+

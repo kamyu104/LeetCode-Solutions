@@ -8,6 +8,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Solution(object):
     def topKFrequent(self, nums, k):
         """
@@ -28,6 +29,10 @@ class Solution(object):
                     return result
         return result
 
+
+# Time:  O(n) ~ O(n^2), O(n) on average.
+# Space: O(n)
+# Quick Select Solution
 from random import randint
 class Solution2(object):
     def topKFrequent(self, nums, k):
@@ -71,6 +76,9 @@ class Solution2(object):
             else:  # new_pivot_idx < k - 1.
                 left = new_pivot_idx + 1
 
+
+# Time:  O(nlogk)
+# Space: O(n)
 class Solution3(object):
     def topKFrequent(self, nums, k):
         """

@@ -8,6 +8,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
 class Solution(object):
     def sortedArrayToBST(self, nums):
         """
@@ -40,6 +41,7 @@ class Solution(object):
         else:
             return n - x // 2  # case 2 == n - (x//2 - 1) - 1 : the left subtree of the root
                                # has more nodes and the right subtree is perfect.
+
 
 if __name__ == "__main__":
     num = [1, 2, 3]

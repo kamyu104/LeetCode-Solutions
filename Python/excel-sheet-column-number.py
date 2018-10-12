@@ -14,6 +14,7 @@ class Solution(object):
             result += ord(s[i]) - ord('A') + 1
         return result
 
+
 if __name__ == "__main__":
     print(Solution().titleToNumber("AAAB"))
 

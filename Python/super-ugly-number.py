@@ -3,6 +3,8 @@
 
 import heapq
 
+
+# Heap solution. (620ms)
 class Solution(object):
     def nthSuperUglyNumber(self, n, primes):
         """
@@ -26,6 +28,9 @@ class Solution(object):
 
         return uglies[-1]
 
+# Time:  O(n * k)
+# Space: O(n + k)
+# Hash solution. (932ms)
 class Solution2(object):
     def nthSuperUglyNumber(self, n, primes):
         """
@@ -49,6 +54,8 @@ class Solution2(object):
 
         return uglies[-1]
 
+# Time:  O(n * logk) ~ O(n * klogk)
+# Space: O(n + k)
 class Solution3(object):
     def nthSuperUglyNumber(self, n, primes):
         """
@@ -71,6 +78,9 @@ class Solution3(object):
 
         return uglies[-1]
 
+# Time:  O(n * k)
+# Space: O(n + k)
+# TLE due to the last test case, but it passess and performs the best in C++.
 class Solution4(object):
     def nthSuperUglyNumber(self, n, primes):
         """
@@ -92,6 +102,9 @@ class Solution4(object):
 
         return uglies[-1]
 
+# Time:  O(n * logk) ~ O(n * klogk)
+# Space: O(k^2)
+# TLE due to the last test case, but it passess and performs well in C++.
 class Solution5(object):
     def nthSuperUglyNumber(self, n, primes):
         """

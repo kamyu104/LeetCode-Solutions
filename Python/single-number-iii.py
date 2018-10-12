@@ -4,6 +4,7 @@
 import operator
 import collections
 
+
 class Solution:
     # @param {integer[]} nums
     # @return {integer[]}
@@ -14,6 +15,7 @@ class Solution:
         for i in nums:
             result[bool(i & bit)] ^= i
         return result
+
 
 class Solution2:
     # @param {integer[]} nums
@@ -31,6 +33,7 @@ class Solution2:
                 x ^= i
 
         return [x, x ^ x_xor_y]
+
 
 class Solution3(object):
     def singleNumber(self, nums):

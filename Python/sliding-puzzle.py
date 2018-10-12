@@ -4,6 +4,8 @@
 import heapq
 import itertools
 
+
+# A* Search Algorithm
 class Solution(object):
     def slidingPuzzle(self, board):
         """
@@ -58,6 +60,10 @@ class Solution(object):
                         (closer if is_closer else detour).append((new_zero, new_board))
         return min_steps
 
+
+# Time:  O((m * n) * (m * n)! * log((m * n)!))
+# Space: O((m * n) * (m * n)!)
+# A* Search Algorithm
 class Solution2(object):
     def slidingPuzzle(self, board):
         """

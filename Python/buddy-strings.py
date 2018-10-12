@@ -3,6 +3,7 @@
 
 import itertools
 
+
 class Solution(object):
     def buddyStrings(self, A, B):
         """

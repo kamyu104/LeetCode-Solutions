@@ -7,6 +7,7 @@ class ListNode(object):
         self.val = x
         self.next = None
 
+
 class Solution(object):
     def deleteDuplicates(self, head):
         """
@@ -34,6 +35,7 @@ class Solution(object):
             else:
                 head.next = self.deleteDuplicates(head.next)
         return head
+
 
 if __name__ == "__main__":
     head, head.next, head.next.next = ListNode(1), ListNode(1), ListNode(2)

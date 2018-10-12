@@ -24,6 +24,7 @@ class Solution(object):
                 i += 1
         return result
 
+
 class Solution2(object):
     def combine(self, n, k):
         """
@@ -43,6 +44,7 @@ class Solution2(object):
         result = []
         combineDFS(n, 0, [], k, result)
         return result
+
 
 if __name__ == "__main__":
     result = Solution().combine(4, 2)

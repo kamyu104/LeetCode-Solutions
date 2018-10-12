@@ -3,6 +3,7 @@
 
 import collections
 
+
 class MagicDictionary(object):
 
     def __init__(self):
@@ -12,6 +13,7 @@ class MagicDictionary(object):
         _trie = lambda: collections.defaultdict(_trie)
         self.trie = _trie()
 
+
     def buildDict(self, dictionary):
         """
         Build a dictionary through a list of words
@@ -20,6 +22,7 @@ class MagicDictionary(object):
         """
         for word in dictionary:
             reduce(dict.__getitem__, word, self.trie).setdefault("_end")
+
 
     def search(self, word):
         """
@@ -42,4 +45,7 @@ class MagicDictionary(object):
             return find(word, curr[word[i]], i+1, False)
 
         return find(word, self.trie, 0, True)
+
+
+
 

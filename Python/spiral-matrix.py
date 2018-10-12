@@ -27,6 +27,7 @@ class Solution:
 
         return result
 
+
 if __name__ == "__main__":
     print(Solution().spiralOrder([[ 1, 2, 3 ],
                                   [ 4, 5, 6 ],

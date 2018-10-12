@@ -8,6 +8,7 @@ class ListNode(object):
         self.next = None
         self.prev = None
 
+
 class LinkedList(object):
     def __init__(self):
         self.head = None
@@ -40,6 +41,7 @@ class LinkedList(object):
                 break
             curr = curr.next
         return curr
+
 
 class MyHashSet(object):
 
@@ -78,4 +80,6 @@ class MyHashSet(object):
         l = self.__data[key % len(self.__data)]
         node = l.find(key)
         return node is not None
+
+
 

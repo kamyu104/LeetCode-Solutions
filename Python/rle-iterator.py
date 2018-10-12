@@ -26,3 +26,5 @@ class RLEIterator(object):
                 return self.__A[self.__i+1]
         return -1
 
+
+

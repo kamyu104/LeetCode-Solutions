@@ -11,6 +11,7 @@ class Solution(object):
             num //= 7
         return result if result else '0'
 
+
 class Solution2(object):
     def convertToBase7(self, num):
         """

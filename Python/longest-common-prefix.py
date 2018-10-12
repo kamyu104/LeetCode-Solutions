@@ -17,6 +17,7 @@ class Solution(object):
                     return strs[0][:i]
         return strs[0]
 
+
 if __name__ == "__main__":
     print(Solution().longestCommonPrefix(["hello", "heaven", "heavy"]))
 

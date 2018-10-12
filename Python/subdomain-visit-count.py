@@ -3,10 +3,12 @@
 
 from collections import defaultdict
 
+
 try:
     xrange          # Python 2
 except NameError:
     xrange = range  # Python 3
+
 
 try:
     defaultdict.iteritems
@@ -18,6 +20,7 @@ else:
     # Python 2
     def iteritems(d):
         return d.iteritems()
+
 
 class Solution:
     def subdomainVisits(self, cpdomains):

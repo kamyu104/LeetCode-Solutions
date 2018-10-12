@@ -4,6 +4,7 @@
 import collections
 import heapq
 
+
 class Solution(object):
     def cutOffTree(self, forest):
         """
@@ -53,6 +54,9 @@ class Solution(object):
             start = tree[1]
         return result
 
+
+# Time:  O(t * (logt + m * n)), t is the number of trees
+# Space: O(t + m * n)
 class Solution_TLE(object):
     def cutOffTree(self, forest):
         """

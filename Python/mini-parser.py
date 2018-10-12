@@ -40,6 +40,7 @@ class NestedInteger(object):
        :rtype List[NestedInteger]
        """
 
+
 class Solution(object):
     def deserialize(self, s):
         if not s:

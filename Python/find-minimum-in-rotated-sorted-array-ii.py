@@ -21,6 +21,7 @@ class Solution(object):
 
         return nums[left]
 
+
 class Solution2(object):
     def findMin(self, nums):
         """
@@ -39,6 +40,7 @@ class Solution2(object):
                 left = mid + 1
 
         return nums[left]
+
 
 if __name__ == "__main__":
     print(Solution().findMin([3, 1, 1, 2, 2, 3]))

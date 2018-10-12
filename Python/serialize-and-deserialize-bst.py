@@ -3,11 +3,13 @@
 
 import collections
 
+
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
+
 
 class Codec:
 
@@ -27,6 +29,7 @@ class Codec:
         serializeHelper(root, vals)
 
         return ' '.join(map(str, vals))
+
 
     def deserialize(self, data):
         """Decodes your encoded data to tree.
@@ -50,4 +53,6 @@ class Codec:
         vals = collections.deque([int(val) for val in data.split()])
 
         return deserializeHelper(float('-inf'), float('inf'), vals)
+
+
 

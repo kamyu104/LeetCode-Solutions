@@ -9,6 +9,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Solution(object):
     def boldWords(self, words, S):
         """
@@ -43,6 +44,9 @@ class Solution(object):
                 result.append("</b>")
         return "".join(result)
 
+
+# Time:  O(n * d * l), l is the average length of words
+# Space: O(n)
 class Solution2(object):
     def boldWords(self, words, S):
         """

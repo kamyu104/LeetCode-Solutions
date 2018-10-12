@@ -3,6 +3,8 @@
 
 import itertools
 
+
+# Ascending stack solution
 class Solution(object):
     def sumSubarrayMins(self, A):
         """

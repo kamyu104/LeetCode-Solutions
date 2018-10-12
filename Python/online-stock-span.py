@@ -17,3 +17,5 @@ class StockSpanner(object):
         self.__s.append([price, result])
         return result
 
+
+

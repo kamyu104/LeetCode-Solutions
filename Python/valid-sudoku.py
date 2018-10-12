@@ -23,6 +23,7 @@ class Solution(object):
         xs = filter(lambda x: x != '.', xs)
         return len(set(xs)) == len(xs)
 
+
 if __name__ == "__main__":
     board = [[1, '.', '.', '.', '.', '.', '.', '.', '.'],
              ['.', 2, '.', '.', '.', '.', '.', '.', '.'],

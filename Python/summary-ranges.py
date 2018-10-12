@@ -6,6 +6,7 @@ import collections
 import itertools
 import re
 
+
 class Solution:
     # @param {integer[]} nums
     # @return {string[]}
@@ -28,6 +29,8 @@ class Solution:
 
         return ranges
 
+# Time:  O(n)
+# Space: O(n)
 class Solution2:
     # @param {integer[]} nums
     # @return {string[]}

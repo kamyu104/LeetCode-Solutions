@@ -4,6 +4,7 @@ from __future__ import print_function
 
 import itertools
 
+
 class Solution(object):
     def compareVersion(self, version1, version2):
         """
@@ -27,6 +28,10 @@ class Solution(object):
             j += 1
 
         return 0
+
+# Time:  O(n)
+# Space: O(n)
+
 
 class Solution2(object):
     def compareVersion(self, version1, version2):
@@ -76,6 +81,7 @@ class Solution2(object):
         main1, _, rest1 = ('0' + version1).partition('.')
         main2, _, rest2 = ('0' + version2).partition('.')
         return cmp(int(main1), int(main2)) or len(rest1 + rest2) and self.compareVersion4(rest1, rest2)
+
 
 if __name__ == "__main__":
     print(Solution().compareVersion("21.0", "121.1.0"))

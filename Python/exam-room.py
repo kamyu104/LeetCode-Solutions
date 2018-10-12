@@ -7,6 +7,7 @@ import heapq
 LEN, POS, L, R = range(4)
 LEFT, RIGHT = range(2)
 
+
 class ExamRoom(object):
 
     def __init__(self, N):
@@ -85,4 +86,6 @@ class ExamRoom(object):
                             neighbors[LEFT], neighbors[RIGHT]))
         self.__seats[neighbors[LEFT]][RIGHT] = neighbors[RIGHT]
         self.__seats[neighbors[RIGHT]][LEFT] = neighbors[LEFT]
+
+
 

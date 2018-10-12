@@ -23,6 +23,10 @@ class Solution(object):
         lookup[-1] = True
         return dfs(nums, total//k, 0, total, lookup)
 
+
+# Time:  O(k^(n-k) * k!)
+# Space: O(n)
+# DFS solution with pruning.
 class Solution2(object):
     def canPartitionKSubsets(self, nums, k):
         """

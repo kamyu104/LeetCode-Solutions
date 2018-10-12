@@ -15,6 +15,8 @@ class Solution:
                 length += 1
         return length
 
+# Time:  O(n)
+# Space: O(n)
 class Solution2:
     # @param s, a string
     # @return an integer

@@ -15,6 +15,9 @@ class Solution(object):
                 nums[abs(i)-1] *= -1
         return result
 
+
+# Time:  O(n)
+# Space: O(1)
 class Solution2(object):
     def findDuplicates(self, nums):
         """
@@ -34,6 +37,9 @@ class Solution2(object):
                 result.append(nums[i])
         return result
 
+
+# Time:  O(n)
+# Space: O(n), this doesn't satisfy the question
 from collections import Counter
 class Solution3(object):
     def findDuplicates(self, nums):

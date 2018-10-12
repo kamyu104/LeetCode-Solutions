@@ -7,6 +7,7 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
 class BSTIterator(object):
     # @param root, a binary search tree's root node
     def __init__(self, root):

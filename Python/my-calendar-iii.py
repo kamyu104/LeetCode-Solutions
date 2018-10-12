@@ -3,10 +3,12 @@
 
 import bisect
 
+
 class MyCalendarThree(object):
 
     def __init__(self):
         self.__books = []
+
 
     def book(self, start, end):
         """
@@ -31,4 +33,6 @@ class MyCalendarThree(object):
             cnt += book[1]
             result = max(result, cnt)
         return result
+
+
 

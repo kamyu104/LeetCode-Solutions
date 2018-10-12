@@ -4,6 +4,7 @@ from __future__ import print_function
 
 import collections
 
+
 class Solution(object):
     # @param A, a list of integer
     # @return an integer
@@ -26,6 +27,7 @@ class Solution2(object):
             two &= ~carry
         return one
 
+
 class Solution3(object):
     def singleNumber(self, nums):
         """
@@ -33,6 +35,7 @@ class Solution3(object):
         :rtype: int
         """
         return (collections.Counter(list(set(nums)) * 3) - collections.Counter(nums)).keys()[0]
+
 
 class Solution4(object):
     def singleNumber(self, nums):
@@ -42,6 +45,8 @@ class Solution4(object):
         """
         return (sum(set(nums)) * 3 - sum(nums)) / 2
 
+
+#  every element appears 4 times except for one with 2 times
 class SolutionEX(object):
     # @param A, a list of integer
     # @return an integer

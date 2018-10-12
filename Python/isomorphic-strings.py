@@ -23,6 +23,9 @@ class Solution(object):
                 return False
         return True
 
+
+# Time:  O(n)
+# Space: O(1)
 class Solution2(object):
     def isIsomorphic(self, s, t):
         if len(s) != len(t):

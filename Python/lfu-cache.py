@@ -3,6 +3,7 @@
 
 import collections
 
+
 class ListNode(object):
     def __init__(self, key, value, freq):
         self.key = key
@@ -10,6 +11,7 @@ class ListNode(object):
         self.freq = freq
         self.next = None
         self.prev = None
+
 
 class LinkedList(object):
     def __init__(self):
@@ -36,6 +38,7 @@ class LinkedList(object):
             self.tail = node.prev
         node.next, node.prev = None, None  # make node clean
 
+
 class LFUCache(object):
 
     def __init__(self, capacity):
@@ -47,6 +50,7 @@ class LFUCache(object):
         self.__min_freq = 0
         self.__freq_to_nodes = collections.defaultdict(LinkedList)
         self.__key_to_node = {}
+
 
     def get(self, key):
         """
@@ -68,6 +72,7 @@ class LFUCache(object):
         self.__freq_to_nodes[self.__key_to_node[key].freq].append(self.__key_to_node[key])
 
         return self.__key_to_node[key].val
+
 
     def put(self, key, value):
         """
@@ -93,4 +98,5 @@ class LFUCache(object):
         self.__key_to_node[key] = ListNode(key, value, self.__min_freq)
         self.__freq_to_nodes[self.__key_to_node[key].freq].append(self.__key_to_node[key])
         self.__size += 1
+
 

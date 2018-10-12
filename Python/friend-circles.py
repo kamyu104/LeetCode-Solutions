@@ -31,3 +31,4 @@ class Solution(object):
                     circles.union_set(i, j)
         return circles.count
 
+

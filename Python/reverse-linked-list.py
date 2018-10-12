@@ -11,6 +11,7 @@ class ListNode:
         if self:
             return "{} -> {}".format(self.val, repr(self.next))
 
+# Iterative solution.
 class Solution:
     # @param {ListNode} head
     # @return {ListNode}
@@ -20,6 +21,9 @@ class Solution:
             dummy.next, head.next, head = head, dummy.next, head.next
         return dummy.next
 
+# Time:  O(n)
+# Space: O(n)
+# Recursive solution.
 class Solution2:
     # @param {ListNode} head
     # @return {ListNode}

@@ -25,3 +25,5 @@ if __name__ == "__main__":
     for i in xrange(1, 4):
         print(Solution().countAndSay(i))
 
+
+

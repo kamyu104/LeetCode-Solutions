@@ -6,6 +6,7 @@ class Node(object):
         self.val = val
         self.children = children
 
+
 class Solution(object):
     def preorder(self, root):
         """
@@ -23,6 +24,7 @@ class Solution(object):
                     stack.append(child)
         return result
 
+
 class Solution2(object):
     def preorder(self, root):
         """
@@ -34,7 +36,7 @@ class Solution2(object):
             for child in root.children:
                 if child:
                     dfs(child, result)
-
+        
         result = []
         if root:
             dfs(root, result)

@@ -15,3 +15,4 @@ class Solution(object):
             result += counts[0] * counts[1]
         return result
 
+

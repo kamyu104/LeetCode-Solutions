@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def findShortestSubArray(self, nums):
         """

@@ -3,6 +3,7 @@
 
 import math
 
+
 class Solution(object):
     def reachNumber(self, target):
         """
@@ -14,6 +15,9 @@ class Solution(object):
         target -= k*(k+1)/2
         return k if target%2 == 0 else k+1+k%2
 
+
+# Time:  O(sqrt(n))
+# Space: O(1)
 class Solution2(object):
     def reachNumber(self, target):
         """

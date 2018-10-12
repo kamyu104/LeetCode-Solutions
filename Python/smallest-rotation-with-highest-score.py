@@ -15,3 +15,4 @@ class Solution(object):
             change[i] += change[i-1]
         return change.index(max(change))
 
+

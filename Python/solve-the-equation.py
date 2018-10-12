@@ -3,6 +3,7 @@
 
 import re
 
+
 class Solution(object):
     def solveEquation(self, equation):
         """

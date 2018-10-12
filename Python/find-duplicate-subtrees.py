@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def findDuplicateSubtrees(self, root):
         """
@@ -22,6 +23,9 @@ class Solution(object):
         getid(root, lookup, trees)
         return [roots[0] for roots in trees.values() if len(roots) > 1]
 
+
+# Time:  O(n * h)
+# Space: O(n * h)
 class Solution2(object):
     def findDuplicateSubtrees(self, root):
         """

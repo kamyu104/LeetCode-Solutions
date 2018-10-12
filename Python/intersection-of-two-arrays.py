@@ -31,6 +31,10 @@ class Solution(object):
         """
         return list(set(nums1) & set(nums2))
 
+
+# Time:  O(max(m, n) * log(max(m, n)))
+# Space: O(1)
+# Binary search solution.
 class Solution2(object):
     def intersection(self, nums1, nums2):
         """
@@ -62,6 +66,10 @@ class Solution2(object):
 
         return res
 
+
+# Time:  O(max(m, n) * log(max(m, n)))
+# Space: O(1)
+# Two pointers solution.
 class Solution3(object):
     def intersection(self, nums1, nums2):
         """

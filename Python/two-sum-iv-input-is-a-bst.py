@@ -30,6 +30,7 @@ class Solution(object):
                         self.__node = self.__node.right if self.__forward else self.__node.left
                         break
 
+
         if not root:
             return False
         left, right = BSTIterator(root, True), BSTIterator(root, False)

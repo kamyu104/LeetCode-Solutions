@@ -3,6 +3,7 @@
 
 import math
 
+
 class Solution(object):
     def __init__(self):
         self.__max_log3 = int(math.log(0x7fffffff) / math.log(3))
@@ -14,6 +15,7 @@ class Solution(object):
         :rtype: bool
         """
         return n > 0 and self.__max_pow3 % n == 0
+
 
 class Solution2(object):
     def isPowerOfThree(self, n):

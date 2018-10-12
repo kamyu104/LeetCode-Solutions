@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def customSortString(self, S, T):
         """

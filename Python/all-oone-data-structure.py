@@ -11,6 +11,7 @@ class Node(object):
         self.prev = None
         self.next = None
 
+
 class LinkedList(object):
     def __init__(self):
         self.head, self.tail = Node(0, set()), Node(0, set())
@@ -39,6 +40,7 @@ class LinkedList(object):
 
     def back(self):
         return self.tail.prev
+
 
 class AllOne(object):
 

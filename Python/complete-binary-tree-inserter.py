@@ -41,3 +41,5 @@ class CBTInserter(object):
         """
         return self.__tree[0]
 
+
+

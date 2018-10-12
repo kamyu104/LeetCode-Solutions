@@ -21,6 +21,8 @@ class Solution(object):
 
         return left - 1
 
+
 if __name__ == "__main__":
     print(Solution().mySqrt(10))
+
 

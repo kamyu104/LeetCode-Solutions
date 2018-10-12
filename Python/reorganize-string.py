@@ -4,6 +4,7 @@
 import collections
 import heapq
 
+
 class Solution(object):
     def reorganizeString(self, S):
         """

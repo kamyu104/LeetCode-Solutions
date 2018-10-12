@@ -27,6 +27,16 @@ class Solution(object):
         dfs([], cols, main_diag, anti_diag, result)
         return result
 
+
+# For any point (x,y), if we want the new point (p,q) don't share the same row, column, or diagonal.
+# then there must have ```p+q != x+y``` and ```p-q!= x-y```
+# the former focus on eliminate 'left bottom right top' diagonal;
+# the latter focus on eliminate 'left top right bottom' diagonal
+
+# - col_per_row: the list of column index per row
+# - cur_row：current row we are seraching for valid column
+# - xy_diff：the list of x-y
+# - xy_sum：the list of x+y
 class Solution2(object):
     def solveNQueens(self, n):
         """
@@ -43,6 +53,7 @@ class Solution2(object):
         ress = []
         dfs([], [], [])
         return [['.'*i + 'Q' + '.'*(n-i-1) for i in res] for res in ress]
+
 
 if __name__ == "__main__":
     print(Solution().solveNQueens(8))

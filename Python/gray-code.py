@@ -14,6 +14,9 @@ class Solution(object):
                 result.append(1 << i | n)
         return result
 
+
+# Proof of closed form formula could be found here:
+# http://math.stackexchange.com/questions/425894/proof-of-closed-form-formula-to-convert-a-binary-number-to-its-gray-code
 class Solution2(object):
     def grayCode(self, n):
         """
@@ -21,6 +24,7 @@ class Solution2(object):
         :rtype: List[int]
         """
         return [i >> 1 ^ i for i in xrange(1 << n)]
+
 
 if __name__ == "__main__":
     print(Solution().grayCode(0))

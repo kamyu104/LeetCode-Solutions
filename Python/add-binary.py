@@ -6,6 +6,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Solution:
     # @param a, a string
     # @param b, a string

@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def fourSumCount(self, A, B, C, D):
         """

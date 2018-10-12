@@ -17,6 +17,9 @@ class Solution(object):
                 result[-1].append(nums[i])
         return result
 
+
+# Time:  O(n * 2^n)
+# Space: O(1)
 class Solution2(object):
     def subsets(self, nums):
         """
@@ -37,6 +40,9 @@ class Solution2(object):
 
         return result
 
+
+# Time:  O(n * 2^n)
+# Space: O(1)
 class Solution3(object):
     def subsets(self, nums):
         """
@@ -50,6 +56,7 @@ class Solution3(object):
             return [cur]
 
         return self.subsetsRecu(cur, nums[1:]) + self.subsetsRecu(cur + [nums[0]], nums[1:])
+
 
 if __name__ == "__main__":
     print(Solution().subsets([1, 2, 3]))

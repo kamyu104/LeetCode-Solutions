@@ -6,6 +6,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Solution(object):
     def findReplaceString(self, S, indexes, sources, targets):
         """

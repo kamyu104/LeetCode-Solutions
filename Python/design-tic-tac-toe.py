@@ -6,6 +6,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class TicTacToe(object):
 
     def __init__(self, n):
@@ -48,4 +49,6 @@ class TicTacToe(object):
             return player
 
         return 0
+
+
 

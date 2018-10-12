@@ -15,6 +15,7 @@ class Solution(object):
         self.__radius = radius
         self.__x_center = x_center
         self.__y_center = y_center
+        
 
     def randPoint(self):
         """
@@ -24,4 +25,6 @@ class Solution(object):
         theta = (2*math.pi) * random.uniform(0, 1)
         return (r*math.cos(theta) + self.__x_center,
                 r*math.sin(theta) + self.__y_center)
+
+
 

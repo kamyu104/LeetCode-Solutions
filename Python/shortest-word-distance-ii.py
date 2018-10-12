@@ -3,6 +3,7 @@
 
 import collections
 
+
 class WordDistance:
     # initialize your data structure here.
     # @param {string[]} words

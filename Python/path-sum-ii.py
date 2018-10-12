@@ -15,6 +15,7 @@ class Solution:
     def pathSum(self, root, sum):
         return self.pathSumRecu([], [], root, sum)
 
+
     def pathSumRecu(self, result, cur, root, sum):
         if root is None:
             return result

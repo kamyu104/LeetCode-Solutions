@@ -35,6 +35,8 @@ class MinStack:
     def getMin(self):
         return self.min
 
+# Time:  O(n)
+# Space: O(n)
 class MinStack2:
     def __init__(self):
         self.stack, self.minStack = [], []
@@ -70,4 +72,5 @@ if __name__ == "__main__":
     stack = MinStack()
     stack.push(-1)
     print [stack.top(), stack.getMin()]
+
 

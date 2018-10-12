@@ -29,6 +29,7 @@ class Solution:
             last, now = now, max(last + i, now)
         return now
 
+
 if __name__ == '__main__':
         print(Solution().rob([8,4,8,5,9,6,5,4,4,10]))
 

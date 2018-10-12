@@ -18,6 +18,9 @@ class Solution:
 
         return min_size if min_size != float("inf") else 0
 
+# Time:  O(nlogn)
+# Space: O(n)
+# Binary search solution.
 class Solution2:
     # @param {integer} s
     # @param {integer[]} nums

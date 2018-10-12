@@ -6,6 +6,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Solution(object):
     def arrayPairSum(self, nums):
         """
@@ -22,6 +23,9 @@ class Solution(object):
             r = (lookup[i-LEFT] + r) % 2
         return result
 
+
+# Time:  O(nlogn)
+# Space: O(1)
 class Solution2(object):
     def arrayPairSum(self, nums):
         """
@@ -34,6 +38,9 @@ class Solution2(object):
             result += nums[i]
         return result
 
+
+# Time:  O(nlogn)
+# Space: O(n)
 class Solution3(object):
     def arrayPairSum(self, nums):
         """

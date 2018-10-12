@@ -13,6 +13,7 @@ class RandomizedCollection(object):
         self.__list = []
         self.__used = defaultdict(list)
 
+
     def insert(self, val):
         """
         Inserts a value to the collection. Returns true if the collection did not already contain the specified element.
@@ -25,6 +26,7 @@ class RandomizedCollection(object):
         self.__used[val] += len(self.__list)-1,
 
         return not has
+
 
     def remove(self, val):
         """
@@ -51,4 +53,6 @@ class RandomizedCollection(object):
         :rtype: int
         """
         return self.__list[randint(0, len(self.__list)-1)]
+
+
 

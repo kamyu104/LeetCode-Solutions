@@ -4,6 +4,7 @@
 import collections
 import functools
 
+
 class Solution(object):
     def minimumLengthEncoding(self, words):
         """

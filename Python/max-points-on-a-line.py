@@ -4,6 +4,8 @@ from __future__ import print_function
 
 import collections
 
+
+# Definition for a point
 class Point:
     def __init__(self, a=0, b=0):
         self.x = a

@@ -5,6 +5,7 @@
 
 import random
 
+
 class Solution(object):
 
     def __init__(self, n_rows, n_cols):
@@ -16,6 +17,7 @@ class Solution(object):
         self.__n_cols = n_cols
         self.__n = n_rows*n_cols
         self.__lookup = {}
+        
 
     def flip(self):
         """
@@ -26,6 +28,7 @@ class Solution(object):
         x = self.__lookup.get(target, target)
         self.__lookup[target] = self.__lookup.get(self.__n, self.__n)
         return divmod(x, self.__n_cols)
+        
 
     def reset(self):
         """
@@ -33,4 +36,6 @@ class Solution(object):
         """
         self.__n = self.__n_rows*self.__n_cols
         self.__lookup = {}
+        
+
 

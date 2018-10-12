@@ -3,6 +3,8 @@
 
 import collections
 
+
+# Hash solution.
 class Solution(object):
     def isReflected(self, points):
         """
@@ -23,6 +25,10 @@ class Solution(object):
                     return False
         return True
 
+
+# Time:  O(nlogn)
+# Space: O(n)
+# Two pointers solution.
 class Solution2(object):
     def isReflected(self, points):
         """

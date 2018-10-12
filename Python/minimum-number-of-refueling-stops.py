@@ -3,6 +3,7 @@
 
 import heapq
 
+
 class Solution(object):
     def minRefuelStops(self, target, startFuel, stations):
         """

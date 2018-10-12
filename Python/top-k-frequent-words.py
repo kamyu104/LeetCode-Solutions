@@ -5,6 +5,7 @@ import collections
 import heapq
 from random import randint
 
+
 class Solution(object):
     def topKFrequent(self, words, k):
         """
@@ -48,6 +49,10 @@ class Solution(object):
             else:  # new_pivot_idx < k - 1.
                 left = new_pivot_idx + 1
 
+
+# Time:  O(nlogk)
+# Space: O(n)
+# Heap Solution
 class Solution2(object):
     def topKFrequent(self, words, k):
         """
@@ -77,6 +82,10 @@ class Solution2(object):
             result.append(heapq.heappop(min_heap).val[1])
         return result[::-1]
 
+
+# Time:  O(n + klogk) ~ O(n + nlogn)
+# Space: O(n)
+# Bucket Sort Solution
 class Solution3(object):
     def topKFrequent(self, words, k):
         """

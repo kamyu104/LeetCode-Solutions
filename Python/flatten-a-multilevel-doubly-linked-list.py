@@ -8,6 +8,7 @@ class Node(object):
         self.next = next
         self.child = child
 
+
 class Solution(object):
     def flatten(self, head):
         """

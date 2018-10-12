@@ -17,6 +17,7 @@ class UnionFind(object):
         self.set[min(x_root, y_root)] = max(x_root, y_root)
         return True
 
+
 class Solution(object):
     def swimInWater(self, grid):
         """
@@ -40,4 +41,5 @@ class Solution(object):
                     if union_find.find_set(0) == union_find.find_set(n**2-1):
                         return elevation
         return n**2-1
+
 

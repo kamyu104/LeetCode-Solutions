@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def numMatchingSubseq(self, S, words):
         """

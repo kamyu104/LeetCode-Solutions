@@ -26,6 +26,8 @@ class Solution:
 
         return result
 
+# Time:  O(n)
+# Space: O(n)
 class Solution2:
     # @param A, a list of integers
     # @return an integer

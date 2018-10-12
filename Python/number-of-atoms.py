@@ -4,6 +4,7 @@
 import collections
 import re
 
+
 class Solution(object):
     def countOfAtoms(self, formula):
         """

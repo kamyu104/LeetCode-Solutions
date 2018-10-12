@@ -39,3 +39,4 @@ if __name__ == "__main__":
     head.next.next.next.next.next, head.next.next.next.next.next.next = ListNode(4), ListNode(5)
     print(Solution().deleteDuplicates(head))
 
+

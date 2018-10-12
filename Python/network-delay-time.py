@@ -5,6 +5,7 @@
 import collections
 import heapq
 
+# Dijkstra's algorithm
 class Solution(object):
     def networkDelayTime(self, times, N, K):
         """

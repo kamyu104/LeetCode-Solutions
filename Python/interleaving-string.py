@@ -20,6 +20,9 @@ class Solution:
                                        or (match[i] and s2[j - 1] == s3[i + j - 1])
         return match[-1]
 
+# Time:  O(m * n)
+# Space: O(m * n)
+# Dynamic Programming
 class Solution2:
     # @return a boolean
     def isInterleave(self, s1, s2, s3):
@@ -37,6 +40,9 @@ class Solution2:
                                        or (match[i][j - 1] and s2[j - 1] == s3[i + j - 1])
         return match[-1][-1]
 
+# Time:  O(m * n)
+# Space: O(m * n)
+# Recursive + Hash
 class Solution3:
     # @return a boolean
     def isInterleave(self, s1, s2, s3):

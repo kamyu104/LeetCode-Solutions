@@ -4,6 +4,7 @@ from __future__ import print_function
 
 import collections
 
+
 class Solution:
     def majorityElement(self, nums):
         """

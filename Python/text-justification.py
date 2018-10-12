@@ -40,6 +40,7 @@ class Solution(object):
         res += connect(words, maxWidth, begin, len(words), length, True),
         return res
 
+
 if __name__ == "__main__":
     print(Solution().fullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16))
 

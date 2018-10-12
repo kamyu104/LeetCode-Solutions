@@ -3,6 +3,7 @@
 
 import math
 
+
 class Solution(object):
     def poorPigs(self, buckets, minutesToDie, minutesToTest):
         """

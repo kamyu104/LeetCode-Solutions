@@ -44,6 +44,9 @@ class Solution(object):
 
         return result
 
+
+# Time:  O(logn * logn)
+# Space: O(logn)
 class Solution2(object):
     def findKthNumber(self, n, k):
         """

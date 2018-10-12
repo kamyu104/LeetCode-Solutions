@@ -8,6 +8,8 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
+# BFS solution.
 class Solution(object):
     def alienOrder(self, words):
         """
@@ -61,6 +63,8 @@ class Solution(object):
                 out_degree[word1[i]].add(word2[i])
                 break
 
+
+# DFS solution.
 class Solution2(object):
     def alienOrder(self, words):
         """

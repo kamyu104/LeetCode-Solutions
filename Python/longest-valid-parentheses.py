@@ -24,6 +24,9 @@ class Solution(object):
         return max(length(xrange(len(s)), -1, '('), \
                    length(reversed(xrange(len(s))), len(s), ')'))
 
+
+# Time:  O(n)
+# Space: O(n)
 class Solution2:
     # @param s, a string
     # @return an integer

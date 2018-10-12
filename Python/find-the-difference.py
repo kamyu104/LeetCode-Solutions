@@ -6,6 +6,7 @@ import operator
 import collections
 from functools import reduce
 
+
 class Solution(object):
     def findTheDifference(self, s, t):
         """
@@ -36,6 +37,7 @@ class Solution(object):
     def findTheDifference5(self, s, t):
         s, t = sorted(s), sorted(t)
         return t[-1] if s == t[:-1] else [x[1] for x in zip(s, t) if x[0] != x[1]][0]
+
 
 if __name__ == '__main__':
     s = Solution()

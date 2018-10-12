@@ -32,6 +32,7 @@ class SegmentTreeNode(object):
             self.total = self.left().total + self.right().total
         return self.total
 
+
 class Solution(object):
     def rectangleArea(self, rectangles):
         """

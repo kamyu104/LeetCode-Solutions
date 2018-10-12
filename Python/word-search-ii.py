@@ -16,6 +16,7 @@ class TrieNode(object):
             cur = cur.leaves[c]
         cur.is_string = True
 
+
 class Solution(object):
     def findWords(self, board, words):
         """

@@ -7,6 +7,7 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
 class Solution(object):
     # @param root, a tree node
     # @return a list of integers
@@ -25,6 +26,10 @@ class Solution(object):
         self.rightSideViewDFS(node.right, depth+1, result)
         self.rightSideViewDFS(node.left, depth+1, result)
 
+
+# BFS solution
+# Time:  O(n)
+# Space: O(n)
 class Solution2(object):
     # @param root, a tree node
     # @return a list of integers

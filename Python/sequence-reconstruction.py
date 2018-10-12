@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def sequenceReconstruction(self, org, seqs):
         """
@@ -32,6 +33,9 @@ class Solution(object):
 
         return cnt_to_match == 0
 
+
+# Time:  O(|V| + |E|)
+# Space: O(|E|)
 class Solution2(object):
     def sequenceReconstruction(self, org, seqs):
         """

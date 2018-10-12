@@ -8,6 +8,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
+# Morris Traversal Solution
 class Solution:
     # @param root, a tree node
     # @return a list of integers
@@ -36,6 +37,9 @@ class Solution:
 
         return True
 
+
+# Time:  O(n)
+# Space: O(h)
 class Solution2:
     # @param root, a tree node
     # @return a boolean
@@ -49,6 +53,7 @@ class Solution2:
         return low < root.val and root.val < high \
             and self.isValidBSTRecu(root.left, low, root.val) \
             and self.isValidBSTRecu(root.right, root.val, high)
+
 
 if __name__ == "__main__":
     root = TreeNode(2)

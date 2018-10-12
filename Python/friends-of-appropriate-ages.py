@@ -9,6 +9,7 @@ except NameError:
 
 import collections
 
+
 class Solution(object):
     def numFriendRequests(self, ages):
         """

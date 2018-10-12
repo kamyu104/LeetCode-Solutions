@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def hasPath(self, maze, start, destination):
         """

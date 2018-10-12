@@ -28,6 +28,7 @@ class Solution:
 
         return matrix
 
+
 if __name__ == "__main__":
     print(Solution().generateMatrix(3))
     print(Solution().generateMatrix(8))

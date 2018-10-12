@@ -48,6 +48,7 @@ class Solution:
                 q3 += 3 * u,
                 q5 += 5 * u,
 
+
 class Solution2:
     ugly = sorted(2**a * 3**b * 5**c
                   for a in range(32) for b in range(20) for c in range(14))

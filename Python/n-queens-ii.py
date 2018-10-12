@@ -22,6 +22,7 @@ class Solution:
                 self.cols[i] = self.main_diag[row + i] = self.anti_diag[row - i + n] = False
         return result
 
+# slower solution
 class Solution2:
     # @return an integer
     def totalNQueens(self, n):

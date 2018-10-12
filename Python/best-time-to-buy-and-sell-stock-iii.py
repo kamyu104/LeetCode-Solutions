@@ -6,6 +6,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Solution(object):
     # @param prices, a list of integer
     # @return an integer
@@ -19,6 +20,9 @@ class Solution(object):
             hold1 = max(hold1, -i)
         return release2
 
+
+# Time:  O(k * n)
+# Space: O(k)
 class Solution2(object):
     # @param prices, a list of integer
     # @return an integer
@@ -36,6 +40,9 @@ class Solution2(object):
 
         return max_sell[k]
 
+
+# Time:  O(n)
+# Space: O(n)
 class Solution3(object):
     # @param prices, a list of integer
     # @return an integer

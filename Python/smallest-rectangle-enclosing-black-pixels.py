@@ -4,6 +4,7 @@
 import bisect
 import itertools
 
+
 class Solution(object):
     def minArea(self, image, x, y):
         """
@@ -20,6 +21,7 @@ class Solution(object):
                 else:
                     left = mid + 1
             return left
+
 
         searchColumns = lambda image, has_one, mid: any([int(row[mid]) for row in image]) == has_one
         left = binarySearch(0, y - 1, searchColumns, image, True)

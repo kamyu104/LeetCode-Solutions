@@ -15,3 +15,4 @@ class Solution(object):
             left_sum += num
         return -1
 
+

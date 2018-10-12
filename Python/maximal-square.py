@@ -33,6 +33,10 @@ class Solution:
 
         return max_size * max_size
 
+
+# Time:  O(n^2)
+# Space: O(n^2)
+# DP.
 class Solution2:
     # @param {character[][]} matrix
     # @return {integer}
@@ -65,6 +69,10 @@ class Solution2:
 
         return max_size * max_size
 
+
+# Time:  O(n^2)
+# Space: O(n^2)
+# DP.
 class Solution3:
     # @param {character[][]} matrix
     # @return {integer}
@@ -103,4 +111,5 @@ class Solution3:
                     max_square_area = max(max_square_area, side * side)
 
         return max_square_area;
+
 

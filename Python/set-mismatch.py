@@ -19,6 +19,9 @@ class Solution(object):
             result[0], result[1] = result[1], result[0]
         return result
 
+
+# Time:  O(n)
+# Space: O(1)
 class Solution2(object):
     def findErrorNums(self, nums):
         """
@@ -38,6 +41,9 @@ class Solution2(object):
                 nums[i] *= -1
         return result
 
+
+# Time:  O(n)
+# Space: O(1)
 class Solution3(object):
     def findErrorNums(self, nums):
         """

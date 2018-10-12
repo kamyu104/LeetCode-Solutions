@@ -21,3 +21,4 @@ class Solution(object):
             i += 1
         return -1 if result == float("inf") else result+1
 
+

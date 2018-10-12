@@ -19,6 +19,9 @@ class Solution(object):
                 P[j], j = -1, P[j]
         return "".join(result)
 
+
+# Time:  O(n * k^n)
+# Space: O(n * k^n)
 class Solution2(object):
     def crackSafe(self, n, k):
         """
@@ -39,6 +42,9 @@ class Solution2(object):
                     break
         return "".join(result)
 
+
+# Time:  O(n * k^n)
+# Space: O(n * k^n)
 class Solution3(object):
     def crackSafe(self, n, k):
         """

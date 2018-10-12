@@ -5,6 +5,7 @@
 import collections
 import heapq
 
+
 class Solution(object):
     def findCheapestPrice(self, n, flights, src, dst, K):
         """

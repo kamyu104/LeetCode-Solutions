@@ -7,6 +7,7 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
 class Codec:
 
     def serialize(self, root):
@@ -25,6 +26,7 @@ class Codec:
         vals = []
         serializeHelper(root)
         return ' '.join(vals)
+
 
     def deserialize(self, data):
         """Decodes your encoded data to tree.
@@ -52,4 +54,5 @@ class Codec:
                 start = idx + sepsize
         vals = iter(isplit(data, ' '))
         return deserializeHelper()
+
 

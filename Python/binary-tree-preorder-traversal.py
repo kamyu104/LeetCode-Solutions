@@ -7,6 +7,8 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
+# Morris Traversal Solution
 class Solution(object):
     def preorderTraversal(self, root):
         """
@@ -33,6 +35,10 @@ class Solution(object):
 
         return result
 
+
+# Time:  O(n)
+# Space: O(h)
+# Stack Solution
 class Solution2(object):
     def preorderTraversal(self, root):
         """

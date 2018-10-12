@@ -18,6 +18,9 @@ class Solution(object):
         digits.append(0)
         return digits
 
+
+# Time:  O(n)
+# Space: O(n)
 class Solution2(object):
     def plusOne(self, digits):
         """
@@ -32,6 +35,7 @@ class Solution2(object):
         if carry:
             result.append(carry)
         return result[::-1]
+
 
 if __name__ == "__main__":
     print(Solution().plusOne([9, 9, 9, 9]))

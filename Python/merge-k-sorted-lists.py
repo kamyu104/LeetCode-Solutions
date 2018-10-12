@@ -11,6 +11,8 @@ class ListNode(object):
         if self:		
             return "{} -> {}".format(self.val, self.next)
 
+
+# Merge two by two solution.
 class Solution(object):
     def mergeKLists(self, lists):
         """
@@ -42,6 +44,10 @@ class Solution(object):
                 right -= 1
         return lists[0]
 
+
+# Time:  O(nlogk)
+# Space: O(logk)
+# Divide and Conquer solution.
 class Solution2:
     # @param a list of ListNode
     # @return a ListNode
@@ -69,6 +75,10 @@ class Solution2:
 
         return mergeKListsHelper(lists, 0, len(lists) - 1)
 
+
+# Time:  O(nlogk)
+# Space: O(k)
+# Heap solution.
 import heapq
 class Solution3:
     # @param a list of ListNode
@@ -90,6 +100,7 @@ class Solution3:
                 heapq.heappush(heap, (smallest.next.val, smallest.next))
 
         return dummy.next
+
 
 if __name__ == "__main__":
     list1 = ListNode(1)

@@ -11,6 +11,7 @@ class ListNode(object):
         if self:
             return "{} -> {}".format(self.val, self.next)
 
+
 class Solution(object):
     def mergeTwoLists(self, l1, l2):
         """
@@ -30,10 +31,13 @@ class Solution(object):
         curr.next = l1 or l2
         return dummy.next
 
+
 if __name__ == "__main__":
     l1 = ListNode(0)
     l1.next = ListNode(1)
     l2 = ListNode (2)
     l2.next = ListNode(3)
     print(Solution().mergeTwoLists(l1, l2))
+
+
 

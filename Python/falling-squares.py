@@ -3,6 +3,7 @@
 
 import bisect
 
+
 class Solution(object):
     def fallingSquares(self, positions):
         result = []
@@ -18,6 +19,7 @@ class Solution(object):
             maxH = max(maxH, high)
             result.append(maxH)
         return result
+
 
 class SegmentTree(object):
     def __init__(self, N, update_fn, query_fn):
@@ -80,6 +82,10 @@ class SegmentTree(object):
             L /= 2; R /= 2
         return result
 
+
+# Time:  O(nlogn)
+# Space: O(n)
+# Segment Tree solution.
 class Solution2(object):
     def fallingSquares(self, positions):
         index = set()
@@ -98,6 +104,9 @@ class Solution2(object):
             result.append(max_height)
         return result
 
+
+# Time:  O(n * sqrt(n))
+# Space: O(n)
 class Solution3(object):
     def fallingSquares(self, positions):
         def query(heights, left, right, B, blocks, blocks_read):
@@ -147,6 +156,9 @@ class Solution3(object):
             result.append(max_height)
         return result
 
+
+# Time:  O(n^2)
+# Space: O(n)
 class Solution4(object):
     def fallingSquares(self, positions):
         """

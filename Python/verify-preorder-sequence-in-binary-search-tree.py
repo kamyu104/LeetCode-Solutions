@@ -16,6 +16,8 @@ class Solution:
             preorder[i] = p
         return True
 
+# Time:  O(n)
+# Space: O(h)
 class Solution2:
     # @param {integer[]} preorder
     # @return {boolean}

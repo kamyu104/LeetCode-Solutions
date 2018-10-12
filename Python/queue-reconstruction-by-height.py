@@ -25,6 +25,9 @@ class Solution(object):
 
         return [p for block in blocks for p in block]
 
+
+# Time:  O(n^2)
+# Space: O(n)
 class Solution2(object):
     def reconstructQueue(self, people):
         """

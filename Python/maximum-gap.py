@@ -41,6 +41,9 @@ class Solution(object):
 
         return max_gap
 
+
+# Time:  O(nlogn)
+# Space: O(n)
 class Solution2(object):
     def maximumGap(self, nums):
         """
@@ -59,6 +62,7 @@ class Solution2(object):
             max_gap = max(max_gap, i - pre)
             pre = i
         return max_gap
+
 
 if __name__ == "__main__":
     print(Solution().maximumGap([3, 1, 1, 1, 5, 5, 5, 5]))

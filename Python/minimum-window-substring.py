@@ -37,6 +37,7 @@ class Solution(object):
 
         return s[min_start:min_start + min_width]
 
+
 if __name__ == "__main__":
     print(Solution().minWindow("ADOBECODEBANC", "ABC"))
 

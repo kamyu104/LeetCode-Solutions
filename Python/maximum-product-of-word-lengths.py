@@ -35,6 +35,9 @@ class Solution(object):
                     max_product = len(words[i]) * len(words[j])
         return max_product
 
+# Time:  O(nlogn) ~ O(n^2)
+# Space: O(n)
+# Sorting + Pruning + Bit Manipulation
 class Solution2(object):
     def maxProduct(self, words):
         """

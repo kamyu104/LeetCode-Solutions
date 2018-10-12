@@ -21,3 +21,5 @@ class NumArray(object):
         """
         return self.accu[j + 1] - self.accu[i]
 
+
+

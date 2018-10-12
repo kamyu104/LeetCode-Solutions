@@ -3,6 +3,7 @@
 
 import bisect
 
+
 class Solution(object):
     def findRightInterval(self, intervals):
         """

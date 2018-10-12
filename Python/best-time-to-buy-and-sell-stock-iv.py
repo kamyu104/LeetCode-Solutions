@@ -6,6 +6,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Solution(object):
     # @return an integer as the maximum profit
     def maxProfit(self, k, prices):

@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def findBlackPixel(self, picture, N):
         """
@@ -25,6 +26,7 @@ class Solution(object):
                 for j in xrange(len(picture[0])):
                      result += picture[i][j] == 'B' and cols[j] == N
         return result
+
 
 class Solution2(object):
     def findBlackPixel(self, picture, N):

@@ -14,6 +14,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Poly(collections.Counter):
     def __init__(self, expr=None):
         if expr is None:
@@ -73,6 +74,7 @@ class Poly(collections.Counter):
                 for k, v in sorted(self.items(),
                                    key=lambda x: (-len(x[0]), x[0]))
                 if v]
+
 
 class Solution(object):
     def basicCalculatorIV(self, expression, evalvars, evalints):

@@ -3,6 +3,7 @@
 
 from random import randint
 
+# Quick select solution.
 class Solution(object):
     def minMoves2(self, nums):
         """

@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def findMinStep(self, board, hand):
         """

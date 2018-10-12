@@ -3,6 +3,7 @@
 
 import operator
 
+
 class Solution(object):
     def islandPerimeter(self, grid):
         """
@@ -22,6 +23,9 @@ class Solution(object):
 
         return 4*count - 2*repeat
 
+# Since there are no lakes, every pair of neighbour cells with different values is part of the perimeter
+# (more precisely, the edge between them is). So just count the differing pairs, both horizontally and vertically
+# (for the latter I simply transpose the grid).
     def islandPerimeter2(self, grid):
         return sum(sum(map(operator.ne, [0] + row, row + [0])) for row in grid + map(list, zip(*grid)))
 

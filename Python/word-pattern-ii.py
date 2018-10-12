@@ -13,6 +13,7 @@ class Solution(object):
         w2p, p2w = {}, {}
         return self.match(pattern, str, 0, 0, w2p, p2w)
 
+
     def match(self, pattern, str, i, j, w2p, p2w):
         is_match = False
         if i == len(pattern) and j == len(str):
@@ -35,4 +36,5 @@ class Solution(object):
                     if is_match:
                         break
         return is_match
+
 

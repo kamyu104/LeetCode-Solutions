@@ -10,6 +10,9 @@ class InputType:
     DOT        = 4
     EXPONENT   = 5
 
+
+# regular expression: "^\s*[\+-]?((\d+(\.\d*)?)|\.\d+)([eE][\+-]?\d+)?\s*$"
+# automata: http://images.cnitblog.com/i/627993/201405/012016243309923.png
 class Solution(object):
     def isNumber(self, s):
         """
@@ -47,6 +50,7 @@ class Solution(object):
 
         return state == 1 or state == 4 or state == 7 or state == 8
 
+
 class Solution2(object):
     def isNumber(self, s):
         """
@@ -56,9 +60,11 @@ class Solution2(object):
         import re
         return bool(re.match("^\s*[\+-]?((\d+(\.\d*)?)|\.\d+)([eE][\+-]?\d+)?\s*$", s))
 
+
 if __name__ == "__main__":
     print(Solution().isNumber(" 0.1 "))
     print(Solution().isNumber("abc"))
     print(Solution().isNumber("1 a"))
     print(Solution().isNumber("2e10"))
+
 

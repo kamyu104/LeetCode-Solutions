@@ -4,6 +4,7 @@
 import collections
 import string
 
+
 class Solution:
     # @param {string} s
     # @param {string} t
@@ -45,6 +46,8 @@ class Solution:
                 return False
         return True
 
+# Time:  O(nlogn)
+# Space: O(n)
 class Solution2:
     # @param {string} s
     # @param {string} t

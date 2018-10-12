@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def pathSum(self, nums):
         """

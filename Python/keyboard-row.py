@@ -25,6 +25,7 @@ class Solution(object):
                 result.append(word)
         return result
 
+
 class Solution2(object):
     def findWords(self, words):
         """

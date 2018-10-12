@@ -6,6 +6,7 @@ class Interval(object):
         self.start = s
         self.end = e
 
+
 class SummaryRanges(object):
 
     def __init__(self):
@@ -45,4 +46,6 @@ class SummaryRanges(object):
         :rtype: List[Interval]
         """
         return self.__intervals
+
+
 

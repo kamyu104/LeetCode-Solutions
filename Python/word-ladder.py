@@ -29,6 +29,7 @@ class Solution(object):
 
         return 0
 
+
 if __name__ == "__main__":
     print(Solution().ladderLength("hit", "cog", set(["hot", "dot", "dog", "lot", "log"])))
     print(Solution().ladderLength("hit", "cog", set(["hot", "dot", "dog", "lot", "log", "cog"])))

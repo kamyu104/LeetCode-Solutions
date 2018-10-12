@@ -7,6 +7,7 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
 class Solution(object):
     def insertIntoBST(self, root, val):
         """
@@ -29,6 +30,9 @@ class Solution(object):
             parent.right = TreeNode(val)
         return root
 
+
+# Time:  O(h)
+# Space: O(h)
 class Solution2(object):
     def insertIntoBST(self, root, val):
         """

@@ -32,6 +32,7 @@ class Solution(object):
 
         return result
 
+
 if __name__ == "__main__":
     print(Solution().fractionToDecimal(1, 9))
     print(Solution().fractionToDecimal(-50, 8))

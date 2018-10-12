@@ -4,6 +4,7 @@
 from operator import xor
 from functools import reduce
 
+
 class Solution(object):
     def xorGame(self, nums):
         """

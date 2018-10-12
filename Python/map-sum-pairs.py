@@ -3,6 +3,7 @@
 
 import collections
 
+
 class MapSum(object):
 
     def __init__(self):
@@ -11,6 +12,7 @@ class MapSum(object):
         """
         _trie = lambda: collections.defaultdict(_trie)
         self.__root = _trie()
+
 
     def insert(self, key, val):
         """
@@ -35,6 +37,7 @@ class MapSum(object):
                 curr["_count"] = delta
         curr["_end"] = val
 
+
     def sum(self, prefix):
         """
         :type prefix: str
@@ -47,4 +50,6 @@ class MapSum(object):
                 return 0
             curr = curr[c]
         return curr["_count"]
+
+
 

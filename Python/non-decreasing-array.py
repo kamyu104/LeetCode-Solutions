@@ -21,3 +21,4 @@ class Solution(object):
                 prev = nums[i]
         return True
 
+

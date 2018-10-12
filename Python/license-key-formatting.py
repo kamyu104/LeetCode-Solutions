@@ -17,3 +17,4 @@ class Solution(object):
             result += S[i].upper()
         return "".join(reversed(result))
 
+

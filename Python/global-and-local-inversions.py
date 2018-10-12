@@ -9,3 +9,4 @@ class Solution(object):
         """
         return all(abs(v-i) <= 1 for i,v in enumerate(A))
 
+

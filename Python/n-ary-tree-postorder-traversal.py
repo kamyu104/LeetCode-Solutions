@@ -6,6 +6,7 @@ class Node(object):
         self.val = val
         self.children = children
 
+
 class Solution(object):
     def postorder(self, root):
         """
@@ -23,6 +24,7 @@ class Solution(object):
                     stack.append(child)
         return result[::-1]
 
+
 class Solution2(object):
     def postorder(self, root):
         """
@@ -34,7 +36,7 @@ class Solution2(object):
                 if child:
                     dfs(child, result)
             result.append(root.val)
-
+        
         result = []
         if root:
             dfs(root, result)

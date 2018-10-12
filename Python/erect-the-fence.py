@@ -3,6 +3,8 @@
 
 import itertools
 
+
+# Monotone Chain Algorithm
 class Solution(object):
     def outerTrees(self, points):
         """

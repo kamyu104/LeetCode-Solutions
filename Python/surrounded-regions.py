@@ -4,6 +4,7 @@ from __future__ import print_function
 
 import collections
 
+
 class Solution:
     # @param board, a 2D array
     # Capture all regions by modifying the input board in-place.

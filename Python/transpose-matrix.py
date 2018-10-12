@@ -6,6 +6,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Solution(object):
     def transpose(self, A):
         """
@@ -18,6 +19,9 @@ class Solution(object):
                 result[c][r] = val
         return result
 
+
+# Time:  O(r * c)
+# Space: O(1)
 class Solution2(object):
     def transpose(self, A):
         """

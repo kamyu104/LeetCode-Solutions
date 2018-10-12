@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def findLength(self, A, B):
         """
@@ -22,6 +23,10 @@ class Solution(object):
             result = max(result, max(dp[(i+1)%2]))
         return result
 
+
+# Time:  O(m * n * log(min(m, n)))
+# Space: O(min(m, n))
+# Binary search + rolling hash solution (226 ms)
 class Solution2(object):
     def findLength(self, A, B):
         """
@@ -64,6 +69,10 @@ class Solution2(object):
                 left = mid+1
         return left-1
 
+
+# Time:  O(m * n * min(m, n) * log(min(m, n)))
+# Space: O(min(m^2, n^2))
+# Binary search (122 ms)
 class Solution3(object):
     def findLength(self, A, B):
         """

@@ -3,6 +3,7 @@
 
 import heapq
 
+
 class KthLargest(object):
 
     def __init__(self, k, nums):
@@ -14,6 +15,7 @@ class KthLargest(object):
         self.__min_heap = []
         for n in nums:
             self.add(n)
+        
 
     def add(self, val):
         """
@@ -24,4 +26,6 @@ class KthLargest(object):
         if len(self.__min_heap) > self.__k:
             heapq.heappop(self.__min_heap)
         return self.__min_heap[0]
+
+
 

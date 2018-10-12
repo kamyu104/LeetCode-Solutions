@@ -19,6 +19,9 @@ class Solution(object):
             ways[i % 3] = (k - 1) * (ways[(i - 1) % 3] + ways[(i - 2) % 3])
         return ways[(n - 1) % 3]
 
+# Time:  O(n)
+# Space: O(n)
+# DP solution.
 class Solution2(object):
     def numWays(self, n, k):
         """

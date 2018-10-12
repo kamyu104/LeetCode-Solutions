@@ -21,6 +21,9 @@ class Solution(object):
         largestValuesHelper(root, 0, result)
         return result
 
+
+# Time:  O(n)
+# Space: O(n)
 class Solution2(object):
     def largestValues(self, root):
         """
@@ -33,4 +36,5 @@ class Solution2(object):
             result.append(max(node.val for node in curr))
             curr = [child for node in curr for child in (node.left, node.right) if child]
         return result
+
 

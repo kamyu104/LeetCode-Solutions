@@ -21,6 +21,7 @@ class Solution(object):
         """
         nums.sort(cmp=lambda a, b: 0 if b else -1)
 
+
 class Solution2(object):
     def moveZeroes(self, nums):
         """
@@ -35,6 +36,7 @@ class Solution2(object):
 
         for i in xrange(pos, len(nums)):
             nums[i] = 0
+
 
 if __name__ == '__main__':
     s = Solution()

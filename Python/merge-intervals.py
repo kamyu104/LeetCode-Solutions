@@ -10,6 +10,7 @@ class Interval:
     def __repr__(self):
         return "[{}, {}]".format(self.start, self.end)
 
+
 class Solution(object):
     def merge(self, intervals):
         """
@@ -27,6 +28,7 @@ class Solution(object):
             else:
                 result.append(current)
         return result
+
 
 if __name__ == "__main__":
     print(Solution().merge([Interval(1, 3), Interval(2, 6), Interval(8, 10), Interval(15,18)]))

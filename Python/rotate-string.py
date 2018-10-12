@@ -42,6 +42,10 @@ class Solution(object):
 
         return False
 
+
+# Time:  O(n)
+# Space: O(n)
+# KMP algorithm
 class Solution2(object):
     def rotateString(self, A, B):
         """
@@ -81,6 +85,9 @@ class Solution2(object):
             return False
         return strStr(A*2, B) != -1
 
+
+# Time:  O(n^2)
+# Space: O(n)
 class Solution3(object):
     def rotateString(self, A, B):
         """

@@ -25,6 +25,9 @@ class Solution(object):
         lookup = {}
         return dp(A, 0, True, False, lookup)
 
+
+# Time:  O(n)
+# Space: O(n)
 class Solution2(object):
     def rotatedDigits(self, N):
         """
@@ -45,6 +48,9 @@ class Solution2(object):
                         dp[i*10+j] = DIFF
         return dp.count(DIFF)
 
+
+# Time:  O(nlogn) = O(n), because O(logn) = O(32) by this input
+# Space: O(logn) = O(1)
 class Solution3(object):
     def rotatedDigits(self, N):
         """
@@ -60,4 +66,5 @@ class Solution3(object):
             if diff & lookup:
                 result += 1
         return result
+
 

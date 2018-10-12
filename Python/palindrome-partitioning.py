@@ -25,6 +25,9 @@ class Solution:
 
         return sub_partition[0]
 
+# Time:  O(2^n)
+# Space: O(n)
+# recursive solution
 class Solution2:
     # @param s, a string
     # @return a list of lists of string

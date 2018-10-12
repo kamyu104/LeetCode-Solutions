@@ -7,6 +7,7 @@ class Node(object):
         self.left = left
         self.right = right
 
+
 class Solution(object):
     def treeToDoublyList(self, root):
         """

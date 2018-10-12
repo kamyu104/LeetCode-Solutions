@@ -4,8 +4,9 @@
 
 import random
 
-class Solution(object):
 
+class Solution(object):
+    
     def __init__(self, N, blacklist):
         """
         :type N: int
@@ -17,7 +18,8 @@ class Solution(object):
         for black in blacklist:
             if black < self.__n:
                 self.__lookup[black] = next(white)
-
+        
+        
     def pick(self):
         """
         :rtype: int
@@ -25,10 +27,14 @@ class Solution(object):
         index = random.randint(0, self.__n-1)
         return self.__lookup[index] if index in self.__lookup else index
 
+
+# Time:  ctor: O(blogb)
+#        pick: O(logb)
+# Space: O(b)
 import random
 
 class Solution2(object):
-
+    
     def __init__(self, N, blacklist):
         """
         :type N: int
@@ -37,7 +43,7 @@ class Solution2(object):
         self.__n = N-len(blacklist)
         blacklist.sort()
         self.__blacklist = blacklist
-
+        
     def pick(self):
         """
         :rtype: int
@@ -51,4 +57,6 @@ class Solution2(object):
             else:
                 left = mid+1
         return index+left
+
+
 

@@ -36,6 +36,8 @@ class Solution:
             copied_current, current = copied_current.next, current.next
         return dummy.next
 
+# Time:  O(n)
+# Space: O(n)
 class Solution2:
     # @param head, a RandomListNode
     # @return a RandomListNode
@@ -56,6 +58,7 @@ class Solution2:
             current = current.next
 
         return dummy.next
+
 
 if __name__ == "__main__":
     head = RandomListNode(1)

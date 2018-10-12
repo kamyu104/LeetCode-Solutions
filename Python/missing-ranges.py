@@ -30,6 +30,7 @@ class Solution(object):
 
         return ranges
 
+
 if __name__ == "__main__":
     print(Solution().findMissingRanges([0, 1, 3, 50, 75], 0, 99))
 

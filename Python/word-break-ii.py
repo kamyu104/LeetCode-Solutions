@@ -40,6 +40,7 @@ class Solution(object):
                 self.wordBreakHelper(s, valid, i + 1, path, result)
                 path.pop()
 
+
 if __name__ == "__main__":
     print(Solution().wordBreak("catsanddog", ["cat", "cats", "and", "sand", "dog"]))
 

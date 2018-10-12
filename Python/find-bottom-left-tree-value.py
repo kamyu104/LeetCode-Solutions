@@ -19,6 +19,9 @@ class Solution(object):
         result, max_depth = 0, 0
         return findBottomLeftValueHelper(root, 0, max_depth, result)[1]
 
+
+# Time:  O(n)
+# Space: O(n)
 class Solution2(object):
     def findBottomLeftValue(self, root):
         """

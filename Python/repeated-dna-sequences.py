@@ -32,6 +32,7 @@ class Solution(object):
             l.extend([s[i:i + 10]])
         return [k for k, v in collections.Counter(l).items() if v > 1]
 
+
 if __name__ == "__main__":
     print(Solution().findRepeatedDnaSequences("AAAAAAAAAA"))
     print(Solution().findRepeatedDnaSequences(""))

@@ -21,6 +21,7 @@ class Solution(object):
                      result += picture[i][j] == 'B' and cols[j] == 1
         return result
 
+
 class Solution2(object):
     def findLonelyPixel(self, picture):
         """

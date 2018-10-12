@@ -9,6 +9,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Solution(object):
     def judgePoint24(self, nums):
         """
@@ -33,6 +34,9 @@ class Solution(object):
                     next_nums.pop()
         return False
 
+
+# Time:  O(n^3 * 4^n) = O(1), n = 4
+# Space: O(n^2) = O(1)
 class Solution2(object):
     def judgePoint24(self, nums):
         """

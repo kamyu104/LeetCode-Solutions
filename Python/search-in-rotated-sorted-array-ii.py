@@ -26,6 +26,7 @@ class Solution(object):
 
         return False
 
+
 if __name__ == "__main__":
     print(Solution().search([3, 5, 1], 3))
     print(Solution().search([2, 2, 3, 3, 4, 1], 1))

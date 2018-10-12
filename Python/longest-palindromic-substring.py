@@ -40,6 +40,7 @@ class Solution(object):
         start = (max_i - 1 - P[max_i]) / 2
         return s[start : start + P[max_i]]
 
+
 if __name__ == "__main__":
     print(Solution().longestPalindrome("abb"))
 

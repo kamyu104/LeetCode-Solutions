@@ -12,6 +12,7 @@ class RandomizedSet(object):
         self.__set = []
         self.__used = {}
 
+
     def insert(self, val):
         """
         Inserts a value to the set. Returns true if the set did not already contain the specified element.
@@ -25,6 +26,7 @@ class RandomizedSet(object):
         self.__used[val] = len(self.__set)-1
 
         return True
+
 
     def remove(self, val):
         """
@@ -49,4 +51,6 @@ class RandomizedSet(object):
         :rtype: int
         """
         return self.__set[randint(0, len(self.__set)-1)]
+
+
 

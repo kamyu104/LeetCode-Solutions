@@ -12,6 +12,7 @@ class PeekingIterator(object):
         self.has_next_ = iterator.hasNext()
         self.has_peeked_ = False
 
+
     def peek(self):
         """
         Returns the next element in the iteration without advancing the iterator.
@@ -36,4 +37,6 @@ class PeekingIterator(object):
         :rtype: bool
         """
         return self.has_next_
+
+
 

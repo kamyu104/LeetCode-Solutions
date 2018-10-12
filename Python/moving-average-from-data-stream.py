@@ -25,3 +25,5 @@ class MovingAverage(object):
         self.__q.append(val)
         return 1.0 * self.__sum / len(self.__q)
 
+
+

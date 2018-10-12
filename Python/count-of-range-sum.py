@@ -39,6 +39,8 @@ class Solution(object):
             sums[i + 1] = sums[i] + nums[i]
         return countAndMergeSort(sums, 0, len(sums), lower, upper)
 
+
+# Divide and Conquer solution.
 class Solution2(object):
     def countRangeSum(self, nums, lower, upper):
         """

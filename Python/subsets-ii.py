@@ -21,6 +21,9 @@ class Solution(object):
             previous_size = size
         return result
 
+
+# Time:  O(n * 2^n) ~ O((n * 2^n)^2)
+# Space: O(1)
 class Solution2(object):
     def subsetsWithDup(self, nums):
         """
@@ -42,6 +45,9 @@ class Solution2(object):
 
         return result
 
+
+# Time:  O(n * 2^n) ~ O((n * 2^n)^2)
+# Space: O(1)
 class Solution3(object):
     def subsetsWithDup(self, nums):
         """
@@ -59,6 +65,7 @@ class Solution3(object):
         else:
             self.subsetsWithDupRecu(result, cur, nums[1:])
             self.subsetsWithDupRecu(result, cur + [nums[0]], nums[1:])
+
 
 if __name__ == "__main__":
     print(Solution().subsetsWithDup([1, 2, 2]))

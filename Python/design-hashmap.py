@@ -8,6 +8,7 @@ class ListNode(object):
         self.next = None
         self.prev = None
 
+
 class LinkedList(object):
     def __init__(self):
         self.head = None
@@ -40,6 +41,7 @@ class LinkedList(object):
                 break
             curr = curr.next
         return curr
+
 
 class MyHashMap(object):
 
@@ -86,4 +88,6 @@ class MyHashMap(object):
         node = l.find(key)
         if node:
             l.delete(node)
+
+
 

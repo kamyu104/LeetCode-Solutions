@@ -25,6 +25,7 @@ class Solution(object):
 
         return can_break[-1]
 
+
 if __name__ == "__main__":
     print(Solution().wordBreak("leetcode", ["leet", "code"]))
 

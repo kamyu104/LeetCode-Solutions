@@ -7,6 +7,7 @@
 import operator
 import re
 
+
 class Solution:
     # @param {string} input
     # @return {integer[]}

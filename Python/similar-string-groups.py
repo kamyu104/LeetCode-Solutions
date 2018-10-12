@@ -9,6 +9,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class UnionFind(object):
     def __init__(self, n):
         self.set = range(n)
@@ -29,6 +30,7 @@ class UnionFind(object):
 
     def size(self):
         return self.__size
+
 
 class Solution(object):
     def numSimilarGroups(self, A):

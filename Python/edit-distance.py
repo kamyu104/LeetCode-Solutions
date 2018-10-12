@@ -24,6 +24,8 @@ class Solution:
 
         return distance[-1]
 
+# Time:  O(n * m)
+# Space: O(n * m)
 class Solution2:
     # @return an integer
     def minDistance(self, word1, word2):

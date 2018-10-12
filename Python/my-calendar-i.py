@@ -8,6 +8,7 @@ class Node:
         self.__left = None
         self.__right = None
 
+
     def insert(self, node):
         if node.__start >= self.__end:
             if not self.__right:
@@ -22,9 +23,11 @@ class Node:
         else:
             return False
 
+
 class MyCalendar(object):
     def __init__(self):
         self.__root = None
+
 
     def book(self, start, end):
         """
@@ -37,10 +40,14 @@ class MyCalendar(object):
             return True
         return self.root.insert(Node(start, end))
 
+
+# Time:  O(n^2)
+# Space: O(n)
 class MyCalendar2(object):
 
     def __init__(self):
         self.__calendar = []
+
 
     def book(self, start, end):
         """
@@ -53,4 +60,6 @@ class MyCalendar2(object):
                 return False
         self.__calendar.append((start, end))
         return True
+
+
 

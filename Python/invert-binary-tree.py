@@ -3,6 +3,8 @@
 
 import collections
 
+
+# BFS solution.
 class Queue:
     def __init__(self):
         self.data = collections.deque()
@@ -22,6 +24,13 @@ class Queue:
     def empty(self):
         return len(self.data) == 0
 
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
 class Solution:
     # @param {TreeNode} root
     # @return {TreeNode}
@@ -39,6 +48,9 @@ class Solution:
 
         return root
 
+# Time:  O(n)
+# Space: O(h)
+# Stack solution.
 class Solution2:
     # @param {TreeNode} root
     # @return {TreeNode}
@@ -56,6 +68,9 @@ class Solution2:
 
         return root
 
+# Time:  O(n)
+# Space: O(h)
+# DFS, Recursive solution.
 class Solution3:
     # @param {TreeNode} root
     # @return {TreeNode}

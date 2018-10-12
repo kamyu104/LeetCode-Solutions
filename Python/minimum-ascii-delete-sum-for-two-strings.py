@@ -23,6 +23,9 @@ class Solution(object):
 
         return dp[len(s1)%2][-1]
 
+
+# Time:  O(m * n)
+# Space: O(m * n)
 class Solution2(object):
     def minimumDeleteSum(self, s1, s2):
         """

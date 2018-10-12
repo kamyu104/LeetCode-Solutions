@@ -20,3 +20,4 @@ class Solution(object):
                 prev = curr
         return True
 
+

@@ -5,6 +5,7 @@
 
 import bisect
 
+
 class RangeModule(object):
 
     def __init__(self):
@@ -63,4 +64,6 @@ class RangeModule(object):
                 if right < interval[1]:
                     tmp.append((right, interval[1]))
         self.__intervals = tmp
+
+
 

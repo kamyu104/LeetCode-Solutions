@@ -6,6 +6,7 @@ class ListNode:
         self.val = x
         self.next = None
 
+
 class Solution:
     # @param {ListNode} head
     # @param {integer} val
@@ -24,4 +25,6 @@ class Solution:
             curr = curr.next
 
         return dummy.next
+
+
 

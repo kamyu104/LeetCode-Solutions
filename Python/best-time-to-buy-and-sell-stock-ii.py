@@ -6,6 +6,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Solution:
     # @param prices, a list of integer
     # @return an integer

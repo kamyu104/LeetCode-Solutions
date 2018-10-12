@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def possibleBipartition(self, N, dislikes):
         """
@@ -28,4 +29,5 @@ class Solution(object):
                 color[nei] = -color[cur]
                 q.append(nei)
         return True
+ 
 

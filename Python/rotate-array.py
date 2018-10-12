@@ -21,7 +21,11 @@ class Solution(object):
             start += 1
             end -= 1
 
+
+# Time:  O(n)
+# Space: O(1)
 from fractions import gcd
+
 
 class Solution2(object):
     """
@@ -43,6 +47,9 @@ class Solution2(object):
         for i in xrange(num_cycles):
             apply_cycle_permutation(k, i, cycle_len, nums)
 
+
+# Time:  O(n)
+# Space: O(1)
 class Solution3(object):
     """
     :type nums: List[int]
@@ -65,6 +72,9 @@ class Solution3(object):
                     break
             start += 1
 
+
+# Time:  O(n)
+# Space: O(n)
 class Solution4(object):
     """
     :type nums: List[int]
@@ -78,7 +88,10 @@ class Solution4(object):
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         nums[:] = nums[len(nums) - k:] + nums[:len(nums) - k]
+        
 
+# Time:  O(k * n)
+# Space: O(1)
 class Solution5(object):
     """
     :type nums: List[int]
@@ -90,6 +103,7 @@ class Solution5(object):
             nums.insert(0, nums.pop())
             k -= 1
 
+ 
 if __name__ == '__main__':
     nums = [1, 2, 3, 4, 5, 6, 7]
     Solution().rotate(nums, 3)

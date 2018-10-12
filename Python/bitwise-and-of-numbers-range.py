@@ -10,6 +10,7 @@ class Solution(object):
             n &= n - 1
         return n
 
+
 class Solution2(object):
     # @param m, an integer
     # @param n, an integer

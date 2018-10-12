@@ -38,3 +38,4 @@ class HitCounter(object):
             self.__count -= self.__dq.popleft()[1]
         return self.__count
 
+

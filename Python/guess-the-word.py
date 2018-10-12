@@ -9,6 +9,7 @@ try:
 except NameError:
     xrange = range  # Python 3
 
+
 class Solution(object):
     def findSecretWord(self, wordlist, master):
         """
@@ -38,6 +39,9 @@ class Solution(object):
             n = master.guess(wordlist[guess])
             possible = [j for j in possible if H[guess][j] == n]
 
+
+# Time:  O(n^2)
+# Space: O(n)
 class Solution2(object):
     def findSecretWord(self, wordlist, master):
         """

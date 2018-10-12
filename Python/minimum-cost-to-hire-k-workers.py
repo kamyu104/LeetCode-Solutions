@@ -4,6 +4,7 @@
 import itertools
 import heapq
 
+
 class Solution(object):
     def mincostToHireWorkers(self, quality, wage, K):
         """

@@ -42,3 +42,4 @@ if __name__ == "__main__":
     head.next.next.next.next.next = ListNode(2)
     print(Solution().partition(head, 3))
 
+

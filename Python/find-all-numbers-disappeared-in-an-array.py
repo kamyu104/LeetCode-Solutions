@@ -34,6 +34,7 @@ class Solution(object):
 
         return [i + 1 for i in range(len(nums)) if nums[i] > 0]
 
+
 if __name__ == '__main__':
     s = Solution()
     r = s.findDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1])

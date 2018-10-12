@@ -3,6 +3,7 @@
 
 import itertools
 
+
 class Solution(object):
     def profitableSchemes(self, G, P, group, profit):
         """
