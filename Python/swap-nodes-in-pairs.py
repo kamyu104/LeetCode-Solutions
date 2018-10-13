@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -25,9 +24,4 @@ class Solution:
             next_one.next = next_three
             current = next_one
         return dummy.next
-
-if __name__ == "__main__":
-    head = ListNode(1)
-    head.next, head.next.next, head.next.next.next = ListNode(2), ListNode(3), ListNode(4)
-    print(Solution().swapPairs(head))
 

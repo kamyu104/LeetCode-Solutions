@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -30,12 +29,4 @@ class Solution:
         last_unswapped.next, first_swapped.next = prev, cur
 
         return dummy.next
-
-if __name__ == "__main__":
-    head = ListNode(1)
-    head.next = ListNode(2)
-    head.next.next = ListNode(3)
-    head.next.next.next = ListNode(4)
-    head.next.next.next.next = ListNode(5)
-    print(Solution().reverseBetween(head, 2, 4))
 

@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n * l^2 + n * r), l is the max length of the words,
 #                            r is the number of the results.
 # Space: O(n^2)
@@ -40,7 +39,4 @@ class Solution(object):
                 self.wordBreakHelper(s, valid, i + 1, path, result)
                 path.pop()
 
-
-if __name__ == "__main__":
-    print(Solution().wordBreak("catsanddog", ["cat", "cats", "and", "sand", "dog"]))
 

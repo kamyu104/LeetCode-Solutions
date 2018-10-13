@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(|V| + |E|)
 # Space: O(|E|)
 
@@ -41,7 +40,4 @@ class Solution(object):
 
         return True
 
-
-if __name__ == "__main__":
-    print(Solution().canFinish(1, []))
 

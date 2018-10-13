@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n^m) = O(3^4)
 # Space: O(n * m) = O(3 * 4)
 
@@ -28,7 +27,4 @@ class Solution:
         if len(s) == 0 or (s[0] == '0' and s != "0"):
             return False
         return int(s) < 256
-
-if __name__ == "__main__":
-    print(Solution().restoreIpAddresses("0000"))
 

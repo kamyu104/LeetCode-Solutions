@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(n)
 
@@ -63,7 +62,4 @@ class Solution2(object):
             pre = i
         return max_gap
 
-
-if __name__ == "__main__":
-    print(Solution().maximumGap([3, 1, 1, 1, 5, 5, 5, 5]))
 

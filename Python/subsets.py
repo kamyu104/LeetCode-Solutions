@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n * 2^n)
 # Space: O(1)
 
@@ -57,7 +56,4 @@ class Solution3(object):
 
         return self.subsetsRecu(cur, nums[1:]) + self.subsetsRecu(cur + [nums[0]], nums[1:])
 
-
-if __name__ == "__main__":
-    print(Solution().subsets([1, 2, 3]))
 

@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -33,12 +32,4 @@ class Solution(object):
             else:
                 break
         return read_bytes
-
-if __name__ == "__main__":
-    global file_content
-    buf = ['' for _ in xrange(100)]
-    file_content = "a"
-    print(buf[:Solution().read(buf, 9)])
-    file_content = "abcdefghijklmnop"
-    print(buf[:Solution().read(buf, 9)])
 

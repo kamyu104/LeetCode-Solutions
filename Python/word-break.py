@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n * l^2)
 # Space: O(n)
 
@@ -25,7 +24,4 @@ class Solution(object):
 
         return can_break[-1]
 
-
-if __name__ == "__main__":
-    print(Solution().wordBreak("leetcode", ["leet", "code"]))
 

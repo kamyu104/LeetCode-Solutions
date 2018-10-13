@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -18,7 +17,4 @@ class Solution(object):
                 if 0 < i < numRows - 1 and j + step - 2 * i < len(s):
                     zigzag += s[j + step - 2 * i]
         return zigzag
-
-if __name__ == "__main__":
-    print(Solution().convert("PAYPALISHIRING", 3))
 

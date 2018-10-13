@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -104,8 +103,3 @@ class Solution5(object):
             k -= 1
 
  
-if __name__ == '__main__':
-    nums = [1, 2, 3, 4, 5, 6, 7]
-    Solution().rotate(nums, 3)
-    print(nums)
-

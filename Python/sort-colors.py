@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -23,9 +22,4 @@ class Solution(object):
                     j += 1
 
         triPartition(nums, 1)
-
-if __name__ == "__main__":
-    A = [2, 1, 1, 0, 0, 2]
-    Solution().sortColors(A)
-    print(A)
 

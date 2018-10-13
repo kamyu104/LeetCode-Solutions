@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -15,7 +14,4 @@ class Solution:
             else:
                 i += 1
         return last + 1
-
-if __name__ == "__main__":
-    print(Solution().removeElement([1, 2, 3, 4, 5, 2, 2], 2))
 

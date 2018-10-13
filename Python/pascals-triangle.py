@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(1)
 
@@ -42,7 +41,4 @@ class Solution:
         while len(res) < numRows:
             res.extend([add(res[-1])])
         return res
-
-if __name__ == "__main__":
-    print(Solution().generate(5))
 

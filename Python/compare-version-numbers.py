@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -82,9 +81,4 @@ class Solution2(object):
         main2, _, rest2 = ('0' + version2).partition('.')
         return cmp(int(main1), int(main2)) or len(rest1 + rest2) and self.compareVersion4(rest1, rest2)
 
-
-if __name__ == "__main__":
-    print(Solution().compareVersion("21.0", "121.1.0"))
-    print(Solution().compareVersion("01", "1"))
-    print(Solution().compareVersion("1", "1.0"))
 

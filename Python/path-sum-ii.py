@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
 
@@ -29,9 +28,4 @@ class Solution:
         self.pathSumRecu(result, cur,root.right, sum - root.val)
         cur.pop()
         return result
-
-if __name__ == "__main__":
-    root = TreeNode(5)
-
-    print(Solution().pathSum(root, 5))
 

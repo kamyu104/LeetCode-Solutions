@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -25,8 +24,4 @@ class Solution2:
                 local_max, local_min = local_min * x, local_max * x
             global_max = max(global_max, local_max)
         return global_max
-
-if __name__ == "__main__":
-    print(Solution().maxProduct([2, 3, -2, 4]))
-    print(Solution().maxProduct([-4,-3]))
 

@@ -1,4 +1,3 @@
-from __future__ import print_function
 from functools import reduce
 # Time:  O(n!)
 # Space: O(n)
@@ -36,7 +35,4 @@ class Solution2:
             if i not in solution and reduce(lambda acc, j: abs(row - j) != abs(i - solution[j]) and acc, xrange(len(solution)), True):
                 result += self.totalNQueensRecu(solution + [i], row + 1, n)
         return result
-
-if __name__ == "__main__":
-    print(Solution().totalNQueens(8))
 

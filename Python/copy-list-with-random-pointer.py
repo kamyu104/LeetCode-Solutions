@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -59,13 +58,4 @@ class Solution2:
 
         return dummy.next
 
-
-if __name__ == "__main__":
-    head = RandomListNode(1)
-    head.next = RandomListNode(2)
-    head.random = head.next
-    result = Solution().copyRandomList(head)
-    print(result.label)
-    print(result.next.label)
-    print(result.random.label)
 

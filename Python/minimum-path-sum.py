@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(m * n)
 # Space: O(m + n)
 
@@ -16,11 +15,4 @@ class Solution:
                 sum[j] = min(sum[j - 1], sum[j]) + grid[i][j]
 
         return sum[-1]
-
-if __name__ == "__main__":
-    print(Solution().minPathSum([[0,1]
-                                ,[1,0]]))
-    print(Solution().minPathSum([[1,3,1]
-                                ,[1,5,1]
-                                ,[4,2,1]]))
 

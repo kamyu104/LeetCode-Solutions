@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(k * C(n, k))
 # Space: O(k)
 
@@ -45,8 +44,4 @@ class Solution2(object):
         combineDFS(n, 0, [], k, result)
         return result
 
-
-if __name__ == "__main__":
-    result = Solution().combine(4, 2)
-    print(result)
 

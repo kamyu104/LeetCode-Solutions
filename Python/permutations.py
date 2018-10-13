@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n * n!)
 # Space: O(n)
 
@@ -22,8 +21,4 @@ class Solution:
                 self.permuteRecu(result, used, cur, num)
                 cur.pop()
                 used[i] = False
-
-if __name__ == "__main__":
-    print(Solution().permute([1, 2, 3]))
-
 

@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(m * n)
 # Space: O(m + n)
 
@@ -64,16 +63,4 @@ class Solution2:
                 remain_HP[j] = remain
 
         return remain_HP[-1] > 0
-
-if __name__ == "__main__":
-    dungeon = [[ -2,  -3,  3], \
-               [ -5, -10,  1], \
-               [ 10,  30, -5]]
-    print(Solution().calculateMinimumHP(dungeon))
-
-    dungeon = [[ -200]]
-    print(Solution().calculateMinimumHP(dungeon))
-
-    dungeon = [[0, -3]]
-    print(Solution().calculateMinimumHP(dungeon))
 

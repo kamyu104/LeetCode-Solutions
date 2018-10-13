@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -46,12 +45,4 @@ class Solution(object):
                     break
 
         return i
-
-if __name__ == "__main__":
-    global file_content
-    sol = Solution()
-    buf = ['' for _ in xrange(100)]
-    file_content = "ab"
-    print(buf[:sol.read(buf, 1)])
-    print(buf[:sol.read(buf, 2)])
 

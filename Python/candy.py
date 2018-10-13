@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(n)
 
@@ -19,9 +18,4 @@ class Solution:
                 candies[i - 1] = candies[i] + 1
 
         return reduce(operator.add, candies)
-
-if __name__ == "__main__":
-    result = Solution().candy([1, 2, 3, 2, 3, 5, 2, 5])
-    print(result)
-
 

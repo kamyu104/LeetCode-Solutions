@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(n)
 
@@ -75,13 +74,4 @@ class Solution2(object):
                     right = j
 
         return result
-
-if __name__ == "__main__":
-    matrix = ["01101",
-              "11010",
-              "01110",
-              "11110",
-              "11111",
-              "00000"]
-    print(Solution().maximalRectangle(matrix))
 

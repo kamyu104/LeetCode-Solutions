@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -26,11 +25,4 @@ class Solution:
                     fast, slow = fast.next, slow.next
                 return fast
         return None
-
-if __name__ == "__main__":
-    head = ListNode(1)
-    head.next = ListNode(2)
-    head.next.next = ListNode(3)
-    head.next.next.next = head.next
-    print(Solution().detectCycle(head))
 

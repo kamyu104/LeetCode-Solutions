@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
 
@@ -19,9 +18,4 @@ class Solution:
             return min(self.minDepth(root.left), self.minDepth(root.right)) + 1
         else:
             return max(self.minDepth(root.left), self.minDepth(root.right)) + 1
-
-if __name__ == "__main__":
-    root = TreeNode(1)
-    root.left = TreeNode(2)
-    print(Solution().minDepth(root))
 

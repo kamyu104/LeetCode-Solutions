@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -18,8 +17,4 @@ class Solution(object):
             reachable = max(reachable, i + length)
         return jump_count
 
-
-if __name__ == "__main__":
-    print(Solution().jump([2,3,1,1,4]))
-    print(Solution().jump([3,2,1,0,4]))
 

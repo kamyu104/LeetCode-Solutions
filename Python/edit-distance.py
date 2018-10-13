@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n * m)
 # Space: O(n + m)
 
@@ -42,9 +41,4 @@ class Solution2:
                 distance[i].append(min(insert, delete, replace))
 
         return distance[-1][-1]
-
-if __name__ == "__main__":
-    print(Solution().minDistance("Rabbit", "Racket"))
-    print(Solution2().minDistance("Rabbit", "Rabket"))
-    print(Solution().minDistance("Rabbit", "Rabbitt"))
 

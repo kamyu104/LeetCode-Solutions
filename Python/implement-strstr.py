@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n + k)
 # Space: O(k)
 
@@ -52,8 +51,4 @@ class Solution2(object):
                 return i
         return -1
 
-
-if __name__ == "__main__":
-    print(Solution().strStr("a", ""))
-    print(Solution().strStr("abababcdab", "ababcdx"))
 

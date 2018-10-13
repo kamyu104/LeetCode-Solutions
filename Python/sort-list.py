@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(nlogn)
 # Space: O(logn) for stack call
 
@@ -44,11 +43,4 @@ class Solution:
             cur.next = l2
 
         return dummy.next
-
-if __name__ == "__main__":
-    head = ListNode(3)
-    head.next = ListNode(4)
-    head.next.next = ListNode(1)
-    head.next.next.next= ListNode(2)
-    print(Solution().sortList(head))
 

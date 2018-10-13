@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -14,7 +13,4 @@ class Solution(object):
             result += ord(s[i]) - ord('A') + 1
         return result
 
-
-if __name__ == "__main__":
-    print(Solution().titleToNumber("AAAB"))
 

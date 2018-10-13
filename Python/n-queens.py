@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n!)
 # Space: O(n)
 
@@ -54,7 +53,4 @@ class Solution2(object):
         dfs([], [], [])
         return [['.'*i + 'Q' + '.'*(n-i-1) for i in res] for res in ress]
 
-
-if __name__ == "__main__":
-    print(Solution().solveNQueens(8))
 

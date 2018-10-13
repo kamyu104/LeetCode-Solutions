@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -48,7 +47,4 @@ class Solution2:
             stack.append([i, A[i]])
 
         return result
-
-if __name__ == "__main__":
-    print(Solution().trap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]))
 

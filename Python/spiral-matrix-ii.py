@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(1)
 
@@ -28,8 +27,4 @@ class Solution:
 
         return matrix
 
-
-if __name__ == "__main__":
-    print(Solution().generateMatrix(3))
-    print(Solution().generateMatrix(8))
 

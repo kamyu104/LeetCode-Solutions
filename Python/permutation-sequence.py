@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(n)
 
@@ -23,7 +22,4 @@ class Solution(object):
                 fact /= i
         return seq
 
-
-if __name__ == "__main__":
-    print(Solution().getPermutation(3, 2))
 

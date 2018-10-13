@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(m * n * l)
 # Space: O(l)
 
@@ -31,14 +30,4 @@ class Solution:
         visited[i][j] = False
 
         return result
-
-if __name__ == "__main__":
-    board = [
-              "ABCE",
-              "SFCS",
-              "ADEE"
-            ]
-    print(Solution().exist(board, "ABCCED"))
-    print(Solution().exist(board, "SFCS"))
-    print(Solution().exist(board, "ABCB"))
 

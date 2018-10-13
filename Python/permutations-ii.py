@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n * n!)
 # Space: O(n)
 
@@ -44,10 +43,4 @@ class Solution2:
             solutions = next
 
         return solutions
-
-if __name__ == "__main__":
-    print(Solution().permuteUnique([1, 1, 2]))
-    print(Solution().permuteUnique([1, -1, 1, 2, -1, 2, 2, -1]))
-
-
 

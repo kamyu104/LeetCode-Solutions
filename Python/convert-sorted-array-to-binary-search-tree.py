@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(logn)
 
@@ -42,11 +41,4 @@ class Solution(object):
             return n - x // 2  # case 2 == n - (x//2 - 1) - 1 : the left subtree of the root
                                # has more nodes and the right subtree is perfect.
 
-
-if __name__ == "__main__":
-    num = [1, 2, 3]
-    result = Solution().sortedArrayToBST(num)
-    print(result.val)
-    print(result.left.val)
-    print(result.right.val)
 

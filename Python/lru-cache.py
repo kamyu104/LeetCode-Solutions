@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(1), per operation.
 # Space: O(k), k is the capacity of cache.
 
@@ -90,15 +89,5 @@ class LRUCache2(object):
         elif len(self.cache) == self.capacity:
             self.cache.popitem(last=False)
         self.cache[key] = value
-
-
-if __name__ == "__main__":
-    cache = LRUCache(3)
-    cache.set(1, 1)
-    cache.set(2, 2)
-    cache.set(3, 3)
-    print(cache.get(1))
-    cache.set(4, 4)
-    print(cache.get(2))
 
 

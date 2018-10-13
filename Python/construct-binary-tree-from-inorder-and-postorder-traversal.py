@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(n)
 
@@ -26,12 +25,4 @@ class Solution:
         node.left = self.buildTreeRecu(lookup, postorder, inorder, post_end - 1 - (in_end - i - 1), in_start, i)
         node.right = self.buildTreeRecu(lookup, postorder, inorder, post_end - 1, i + 1, in_end)
         return node
-
-if __name__ ==  "__main__":
-    inorder = [2, 1, 3]
-    postorder = [2, 3, 1]
-    result = Solution().buildTree(inorder, postorder)
-    print(result.val)
-    print(result.left.val)
-    print(result.right.val)
 

@@ -68,9 +68,3 @@ class MinStack2:
     def getMin(self):
         return self.minStack[-1][0]
 
-if __name__ == "__main__":
-    stack = MinStack()
-    stack.push(-1)
-    print [stack.top(), stack.getMin()]
-
-

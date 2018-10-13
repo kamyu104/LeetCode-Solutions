@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -73,10 +72,4 @@ class Solution:
             if broken[0] is None:
                 broken[0] = pre
             broken[1] = cur
-
-if __name__ == "__main__":
-    root = TreeNode(0)
-    root.left = TreeNode(1)
-    print(root)
-    print(Solution().recoverTree(root))
 

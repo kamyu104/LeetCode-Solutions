@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -13,8 +12,4 @@ class Solution:
             else:
                 decimal += numeral_map[s[i]]
         return decimal
-
-if __name__ == "__main__":
-    print(Solution().romanToInt("IIVX"))
-    print(Solution().romanToInt("MMMCMXCIX"))
 

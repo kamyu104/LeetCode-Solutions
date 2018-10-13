@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n ^ 2)
 # Space: O(1)
 
@@ -41,10 +40,4 @@ class Solution:
                 return False
             head = head.next
         return True
-
-if __name__ == "__main__":
-    head = ListNode(3)
-    head.next = ListNode(2)
-    head.next.next = ListNode(1)
-    print(Solution().insertionSortList(head))
 

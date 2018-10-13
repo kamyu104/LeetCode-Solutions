@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -20,8 +19,4 @@ class Solution(object):
             prev, prev_prev = cur, prev
         return prev
 
-
-if __name__ == "__main__":
-    for i in ["0", "10", "10", "103", "1032", "10323"]:
-        print(Solution().numDecodings(i))
 

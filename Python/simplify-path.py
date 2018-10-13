@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(n)
 
@@ -13,8 +12,4 @@ class Solution:
             elif token != ".." and token != "." and token:
                 stack.append(token)
         return "/" + "/".join(stack)
-
-if __name__ == "__main__":
-    print(Solution().simplifyPath("/../"))
-    print(Solution().simplifyPath("/home//foo/"))
 

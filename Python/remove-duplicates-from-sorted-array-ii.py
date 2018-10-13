@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -18,7 +17,4 @@ class Solution:
             i += 1
 
         return last + 1
-
-if __name__ == "__main__":
-    print(Solution().removeDuplicates([1, 1, 1, 2, 2, 3]))
 

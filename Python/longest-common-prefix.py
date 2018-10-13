@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n * k), k is the length of the common prefix
 # Space: O(1)
 
@@ -17,7 +16,4 @@ class Solution(object):
                     return strs[0][:i]
         return strs[0]
 
-
-if __name__ == "__main__":
-    print(Solution().longestCommonPrefix(["hello", "heaven", "heavy"]))
 

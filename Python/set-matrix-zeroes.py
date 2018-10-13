@@ -1,4 +1,3 @@
-from __future__ import print_function
 from functools import reduce
 # Time:  O(m * n)
 # Space: O(1)
@@ -27,12 +26,4 @@ class Solution:
         if first_row:
             for j in xrange(len(matrix[0])):
                 matrix[0][j] = 0
-
-if __name__ == "__main__":
-    matrix = [ [1, 0, 1, 1]
-             , [1, 1, 0, 1]
-             , [1, 1, 1, 0]
-             , [1, 1, 1, 1]]
-    Solution().setZeroes(matrix)
-    print(matrix)
 

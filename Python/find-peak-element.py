@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(logn)
 # Space: O(1)
 
@@ -19,8 +18,4 @@ class Solution(object):
 
         return left
 
-
-if __name__ == "__main__":
-   # print Solution().findPeakElement([1,2,1])
-    print(Solution().findPeakElement([1,2,3,1]))
 

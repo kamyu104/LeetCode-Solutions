@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n^2 ~ 2^n)
 # Space: O(n^2)
 
@@ -51,7 +50,4 @@ class Solution2:
             if s[i] != s[-(i + 1)]:
                 return False
         return True
-
-if __name__ == "__main__":
-    print(Solution().partition("aab"))
 

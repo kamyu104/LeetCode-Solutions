@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
 
@@ -36,19 +35,4 @@ class Solution2:
             root.left = None
             self.list_head = root
             return root
-
-if __name__ == "__main__":
-    root = TreeNode(1)
-    root.left = TreeNode(2)
-    root.left.left = TreeNode(3)
-    root.left.right = TreeNode(4)
-    root.right = TreeNode(5)
-    root.right.right = TreeNode(6)
-    result = Solution().flatten(root)
-    print(result.val)
-    print(result.right.val)
-    print(result.right.right.val)
-    print(result.right.right.right.val)
-    print(result.right.right.right.right.val)
-    print(result.right.right.right.right.right.val)
 

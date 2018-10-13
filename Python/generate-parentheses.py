@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(4^n / n^(3/2)) ~= Catalan numbers
 # Space: O(n)
 
@@ -17,7 +16,4 @@ class Solution:
             self.generateParenthesisRecu(result, current + "(", left - 1, right)
         if left < right:
             self.generateParenthesisRecu(result, current + ")", left, right - 1)
-
-if __name__ == "__main__":
-    print(Solution().generateParenthesis(3))
 

@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -16,7 +15,4 @@ class Solution:
                 visited[ord(char)] = True
             longest = max(longest, i - start + 1)
         return longest
-
-if __name__ == "__main__":
-    print(Solution().lengthOfLongestSubstring("abcabcbb"))
 

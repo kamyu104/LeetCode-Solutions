@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -54,10 +53,4 @@ class Solution2:
             and self.isValidBSTRecu(root.left, low, root.val) \
             and self.isValidBSTRecu(root.right, root.val, high)
 
-
-if __name__ == "__main__":
-    root = TreeNode(2)
-    root.left = TreeNode(1)
-    root.right = TreeNode(3)
-    print(Solution().isValidBST(root))
 

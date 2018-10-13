@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -30,14 +29,5 @@ class Solution(object):
             curr = curr.next
         curr.next = l1 or l2
         return dummy.next
-
-
-if __name__ == "__main__":
-    l1 = ListNode(0)
-    l1.next = ListNode(1)
-    l2 = ListNode (2)
-    l2.next = ListNode(3)
-    print(Solution().mergeTwoLists(l1, l2))
-
 
 

@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n * glogg), g is the max size of groups.
 # Space: O(n)
 
@@ -20,8 +19,4 @@ class Solution(object):
             result.append(anagram)
         return result
 
-
-if __name__ == "__main__":
-    result = Solution().groupAnagrams(["cat", "dog", "act", "mac"])
-    print(result)
 

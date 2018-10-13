@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(m * n)
 # Space: O(m + n)
 
@@ -67,9 +66,4 @@ class Solution3:
         self.match[repr([a, b])] = result
 
         return result
-
-if __name__ == "__main__":
-    print(Solution().isInterleave("a", "", "a"))
-    print(Solution().isInterleave("aabcc", "dbbca", "aadbbcbcac"))
-    print(Solution().isInterleave("aabcc", "dbbca", "aadbbbaccc"))
 

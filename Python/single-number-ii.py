@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -56,7 +55,4 @@ class SolutionEX(object):
         for x in A:
             one, two, three = (~x & one) | (x & ~one & ~two & ~three), (~x & two) | (x & one), (~x & three) | (x & two)
         return two
-
-if __name__ == "__main__":
-    print(Solution().singleNumber([1, 1, 1, 2, 2, 2, 3]))
 

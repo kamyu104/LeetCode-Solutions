@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n^2)
 # Space: O(n)
 
@@ -12,11 +11,4 @@ class Solution:
                 if S_char == T_char:
                     ways[j + 1] += ways[j]
         return ways[len(T)]
-
-if __name__ == "__main__":
-    S = "rabbbit"
-    T = "rabbit"
-    result = Solution().numDistinct(S, T)
-    print(result)
-
 

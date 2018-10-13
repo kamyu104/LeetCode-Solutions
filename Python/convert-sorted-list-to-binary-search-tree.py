@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(logn)
 
@@ -35,13 +34,4 @@ class Solution:
         self.head = self.head.next
         current.right = self.sortedListToBSTRecu(mid + 1, end)
         return current
-
-if __name__ == "__main__":
-    head = ListNode(1)
-    head.next = ListNode(2)
-    head.next.next = ListNode(3)
-    result = Solution().sortedListToBST(head)
-    print(result.val)
-    print(result.left.val)
-    print(result.right.val)
 

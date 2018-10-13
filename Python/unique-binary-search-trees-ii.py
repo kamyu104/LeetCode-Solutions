@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(4^n / n^(3/2)) ~= Catalan numbers
 # Space: O(4^n / n^(3/2)) ~= Catalan numbers
 
@@ -52,7 +51,4 @@ class Solution:
                     cur.right = k
                     result.append(cur)
         return result
-
-if __name__ == "__main__":
-    print(Solution().generateTrees(3))
 

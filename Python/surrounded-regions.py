@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(m * n)
 # Space: O(m + n)
 
@@ -38,12 +37,4 @@ class Solution:
                     board[i][j] = 'X'
                 else:
                     board[i][j] = 'O'
-
-if __name__ == "__main__":
-    board = [['X', 'X', 'X', 'X'],
-             ['X', 'O', 'O', 'X'],
-             ['X', 'X', 'O', 'X'],
-             ['X', 'O', 'X', 'X']]
-    Solution().solve(board)
-    print(board)
 

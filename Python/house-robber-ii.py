@@ -1,4 +1,3 @@
-from __future__ import print_function
 # Time:  O(n)
 # Space: O(1)
 
@@ -22,7 +21,4 @@ class Solution:
             num_i = max(nums[i] + num_i_2, num_i_1);
 
         return num_i
-
-if __name__ == '__main__':
-        print(Solution().rob([8,4,8,5,9,6,5,4,4,10]))
 
