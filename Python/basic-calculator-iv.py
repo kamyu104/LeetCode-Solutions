@@ -10,7 +10,7 @@ import collections
 import itertools
 
 
-class Poly(collections.Counter)(object):
+class Poly(collections.Counter):
     def __init__(self, expr=None):
         if expr is None:
             return
