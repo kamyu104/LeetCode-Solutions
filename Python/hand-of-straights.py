@@ -4,11 +4,6 @@
 import collections
 import heapq
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class Solution(object):
     def isNStraightHand(self, hand, W):

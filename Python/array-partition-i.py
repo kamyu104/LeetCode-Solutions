@@ -1,11 +1,6 @@
 # Time:  O(r), r is the range size of the integers
 # Space: O(r)
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class Solution(object):
     def arrayPairSum(self, nums):

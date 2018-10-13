@@ -1,11 +1,6 @@
 # Time : O(nlogn), n is the value of the target
 # Space: O(n)
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class Solution(object):
     def racecar(self, target):

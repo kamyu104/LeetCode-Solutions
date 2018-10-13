@@ -1,11 +1,6 @@
 # Time:  O(q + r)
 # Space: O(q + r)
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class Solution(object):
     def loudAndRich(self, richer, quiet):

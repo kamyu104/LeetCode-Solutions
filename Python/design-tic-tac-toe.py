@@ -1,11 +1,6 @@
 # Time:  O(1), per move.
 # Space: O(n^2)
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class TicTacToe(object):
 

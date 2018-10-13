@@ -1,11 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class Solution:
     # @param prices, a list of integer

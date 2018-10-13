@@ -1,11 +1,6 @@
 # Time:  O(9^2 * 2^9)
 # Space: O(9 * 2^9)
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 # DP solution.
 class Solution(object):

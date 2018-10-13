@@ -3,11 +3,6 @@
 
 from random import randint
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class Solution(object):
     def minTotalDistance(self, grid):

@@ -1,11 +1,6 @@
 # Time:  O(n^2)
 # Space: O(n)
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class Solution(object):
     def numFactoredBinaryTrees(self, A):

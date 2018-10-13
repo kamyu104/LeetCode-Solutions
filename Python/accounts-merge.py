@@ -4,11 +4,6 @@
 
 import collections
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class UnionFind(object):
     def __init__(self):

@@ -9,11 +9,6 @@
 import collections
 import itertools
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class Poly(collections.Counter):
     def __init__(self, expr=None):

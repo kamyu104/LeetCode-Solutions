@@ -4,11 +4,6 @@
 from operator import add, sub, mul, truediv
 from fractions import Fraction
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class Solution(object):
     def judgePoint24(self, nums):

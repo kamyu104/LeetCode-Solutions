@@ -2,11 +2,6 @@
 #                    n is the number of people
 # Space: O(a)
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 import collections
 
 

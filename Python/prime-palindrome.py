@@ -1,11 +1,6 @@
 # Time:  O(n^(1/2) * (logn + n^(1/2)))
 # Space: O(logn)
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class Solution(object):
     def primePalindrome(self, N):

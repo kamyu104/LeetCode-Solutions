@@ -3,11 +3,6 @@
 
 import collections
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 # BFS + hash solution.
 class Solution(object):

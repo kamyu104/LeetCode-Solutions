@@ -1,11 +1,6 @@
 # Time:  O(k * n)
 # Space: O(k)
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class Solution(object):
     # @return an integer as the maximum profit

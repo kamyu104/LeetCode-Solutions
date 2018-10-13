@@ -1,11 +1,6 @@
 # Time:  O(n^3)
 # Space: O(n^2)
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class Solution(object):
     def maxCoins(self, nums):

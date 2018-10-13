@@ -1,11 +1,6 @@
 # Time:  O(n + m), m is the number of targets
 # Space: O(n)
 
-try:
-    xrange          # Python 2
-except NameError:
-    xrange = range  # Python 3
-
 
 class Solution(object):
     def findReplaceString(self, S, indexes, sources, targets):
