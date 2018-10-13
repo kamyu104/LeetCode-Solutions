@@ -1,7 +1,7 @@
 # Time:  O(m * n)
 # Space: O(n)
 
-class Solution:
+class Solution(object):
     # @return a boolean
     def isMatch(self, s, p):
         k = 3
@@ -26,7 +26,7 @@ class Solution:
 # dp
 # Time:  O(m * n)
 # Space: O(m * n)
-class Solution2:
+class Solution2(object):
     # @return a boolean
     def isMatch(self, s, p):
         result = [[False for j in xrange(len(p) + 1)] for i in xrange(len(s) + 1)]
@@ -46,7 +46,7 @@ class Solution2:
         return result[len(s)][len(p)]
 
 # iteration
-class Solution3:
+class Solution3(object):
     # @return a boolean
     def isMatch(self, s, p):
         p_ptr, s_ptr, last_s_ptr, last_p_ptr = 0, 0, -1, -1
@@ -80,7 +80,7 @@ class Solution3:
         return p_ptr == len(p)
 
 # recursive
-class Solution4:
+class Solution4(object):
     # @return a boolean
     def isMatch(self, s, p):
         if not p:

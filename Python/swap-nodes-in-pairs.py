@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-class ListNode:
+class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
@@ -10,7 +10,7 @@ class ListNode:
         if self:
             return "{} -> {}".format(self.val, self.next)
 
-class Solution:
+class Solution(object):
     # @param a ListNode
     # @return a ListNode
     def swapPairs(self, head):

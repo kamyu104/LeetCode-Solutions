@@ -1,7 +1,7 @@
 # Time:  O(4^n / n^(3/2)) ~= Catalan numbers
 # Space: O(4^n / n^(3/2)) ~= Catalan numbers
 
-class TreeNode:
+class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
@@ -32,7 +32,7 @@ class TreeNode:
         else:
             return None
 
-class Solution:
+class Solution(object):
     # @return a list of tree node
     def generateTrees(self, n):
         return self.generateTreesRecu(1, n)

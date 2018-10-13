@@ -1,7 +1,7 @@
 # Time:  O(m * n * l)
 # Space: O(l)
 
-class Solution:
+class Solution(object):
     # @param board, a list of lists of 1 length string
     # @param word, a string
     # @return a boolean

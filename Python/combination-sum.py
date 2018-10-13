@@ -1,7 +1,7 @@
 # Time:  O(k * n^k)
 # Space: O(k)
 
-class Solution:
+class Solution(object):
     # @param candidates, a list of integers
     # @param target, integer
     # @return a list of lists of integers

@@ -1,7 +1,7 @@
 # Time:  O(max(h, k))
 # Space: O(h)
 
-class Solution:
+class Solution(object):
     # @param {TreeNode} root
     # @param {integer} k
     # @return {integer}

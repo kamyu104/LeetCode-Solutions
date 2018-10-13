@@ -1,7 +1,7 @@
 # Time:  O(logn) = O(1)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @return an integer
     def trailingZeroes(self, n):
         result = 0

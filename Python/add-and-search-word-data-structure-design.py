@@ -1,14 +1,14 @@
 # Time:  O(min(n, h)), per operation
 # Space: O(min(n, h))
 
-class TrieNode:
+class TrieNode(object):
     # Initialize your data structure here.
     def __init__(self):
         self.is_string = False
         self.leaves = {}
 
 
-class WordDictionary:
+class WordDictionary(object):
     def __init__(self):
         self.root = TrieNode()
 

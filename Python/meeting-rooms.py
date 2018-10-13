@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-class Solution:
+class Solution(object):
     # @param {Interval[]} intervals
     # @return {boolean}
     def canAttendMeetings(self, intervals):

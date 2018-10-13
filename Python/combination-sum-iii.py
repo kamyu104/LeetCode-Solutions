@@ -1,7 +1,7 @@
 # Time:  O(k * C(n, k))
 # Space: O(k)
 
-class Solution:
+class Solution(object):
     # @param {integer} k
     # @param {integer} n
     # @return {integer[][]}

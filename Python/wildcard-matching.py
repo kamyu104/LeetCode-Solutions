@@ -1,7 +1,7 @@
 # Time:  O(m + n)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @param s, an input string
     # @param p, a pattern string
     # @return a boolean
@@ -30,7 +30,7 @@ class Solution:
 # dp with rolling window
 # Time:  O(m * n)
 # Space: O(m + n)
-class Solution2:
+class Solution2(object):
     # @return a boolean
     def isMatch(self, s, p):
         k = 2
@@ -53,7 +53,7 @@ class Solution2:
 # dp
 # Time:  O(m * n)
 # Space: O(m * n)
-class Solution3:
+class Solution3(object):
     # @return a boolean
     def isMatch(self, s, p):
         result = [[False for j in xrange(len(p) + 1)] for i in xrange(len(s) + 1)]
@@ -74,7 +74,7 @@ class Solution3:
 
 
 # recursive, slowest, TLE
-class Solution4:
+class Solution4(object):
     # @return a boolean
     def isMatch(self, s, p):
         if not p or not s:

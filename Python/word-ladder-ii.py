@@ -1,7 +1,7 @@
 # Time:  O(n * d), n is length of string, d is size of dictionary
 # Space: O(d)
 
-class Solution:
+class Solution(object):
     # @param start, a string
     # @param end, a string
     # @param dict, a set of string

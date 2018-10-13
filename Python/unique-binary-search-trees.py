@@ -22,7 +22,7 @@ class Solution(object):
 # Time:  O(n^2)
 # Space: O(n)
 # DP solution.
-class Solution2:
+class Solution2(object):
     # @return an integer
     def numTrees(self, n):
         counts = [1, 1]

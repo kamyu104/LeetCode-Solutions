@@ -7,7 +7,7 @@ class Node(object):
         self.children = children
 
 
-class Codec:
+class Codec(object):
 
     def serialize(self, root):
         """Encodes a tree to a single string.

@@ -1,13 +1,13 @@
 # Time:  O(n)
 # Space: O(1)
 
-class RandomListNode:
+class RandomListNode(object):
     def __init__(self, x):
         self.label = x
         self.next = None
         self.random = None
 
-class Solution:
+class Solution(object):
     # @param head, a RandomListNode
     # @return a RandomListNode
     def copyRandomList(self, head):
@@ -37,7 +37,7 @@ class Solution:
 
 # Time:  O(n)
 # Space: O(n)
-class Solution2:
+class Solution2(object):
     # @param head, a RandomListNode
     # @return a RandomListNode
     def copyRandomList(self, head):

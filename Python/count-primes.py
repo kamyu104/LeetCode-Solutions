@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-class Solution:
+class Solution(object):
     # @param {integer} n
     # @return {integer}
     def countPrimes(self, n):

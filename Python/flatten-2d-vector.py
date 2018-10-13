@@ -1,7 +1,7 @@
 # Time:  O(1)
 # Space: O(1)
 
-class Vector2D:
+class Vector2D(object):
     x, y = 0, 0
     vec = None
 

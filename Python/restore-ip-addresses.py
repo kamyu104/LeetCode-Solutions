@@ -1,7 +1,7 @@
 # Time:  O(n^m) = O(3^4)
 # Space: O(n * m) = O(3 * 4)
 
-class Solution:
+class Solution(object):
     # @param s, a string
     # @return a list of strings
     def restoreIpAddresses(self, s):

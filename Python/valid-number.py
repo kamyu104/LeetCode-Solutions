@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-class InputType:
+class InputType(object):
     INVALID    = 0
     SPACE      = 1
     SIGN       = 2

@@ -1,7 +1,7 @@
 # Time:  O(n^2)
 # Space: O(n^2)
 
-class Solution:
+class Solution(object):
     # @param s, a string
     # @return an integer
     def minCut(self, s):

@@ -1,7 +1,7 @@
 # Time:  O(n^2 ~ 2^n)
 # Space: O(n^2)
 
-class Solution:
+class Solution(object):
     # @param s, a string
     # @return a list of lists of string
     def partition(self, s):
@@ -27,7 +27,7 @@ class Solution:
 # Time:  O(2^n)
 # Space: O(n)
 # recursive solution
-class Solution2:
+class Solution2(object):
     # @param s, a string
     # @return a list of lists of string
     def partition(self, s):

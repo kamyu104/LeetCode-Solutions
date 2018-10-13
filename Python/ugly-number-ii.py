@@ -3,7 +3,7 @@
 
 import heapq
 
-class Solution:
+class Solution(object):
     # @param {integer} n
     # @return {integer}
     def nthUglyNumber(self, n):
@@ -49,7 +49,7 @@ class Solution:
                 q5 += 5 * u,
 
 
-class Solution2:
+class Solution2(object):
     ugly = sorted(2**a * 3**b * 5**c
                   for a in range(32) for b in range(20) for c in range(14))
 

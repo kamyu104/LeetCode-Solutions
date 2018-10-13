@@ -26,7 +26,7 @@ class Solution(object):
             cur.pop()
             used[i] = False
 
-class Solution2:
+class Solution2(object):
     # @param num, a list of integer
     # @return a list of lists of integers
     def permuteUnique(self, nums):

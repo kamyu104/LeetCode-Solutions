@@ -47,7 +47,7 @@ class Solution(object):
 # Time:  O(nlogk)
 # Space: O(logk)
 # Divide and Conquer solution.
-class Solution2:
+class Solution2(object):
     # @param a list of ListNode
     # @return a ListNode
     def mergeKLists(self, lists):
@@ -79,7 +79,7 @@ class Solution2:
 # Space: O(k)
 # Heap solution.
 import heapq
-class Solution3:
+class Solution3(object):
     # @param a list of ListNode
     # @return a ListNode
     def mergeKLists(self, lists):

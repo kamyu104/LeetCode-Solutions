@@ -1,7 +1,7 @@
 # Time:  O(n * n!)
 # Space: O(n)
 
-class Solution:
+class Solution(object):
     # @param num, a list of integer
     # @return a list of lists of integers
     def permute(self, num):

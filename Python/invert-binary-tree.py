@@ -5,7 +5,7 @@ import collections
 
 
 # BFS solution.
-class Queue:
+class Queue(object):
     def __init__(self):
         self.data = collections.deque()
 
@@ -31,7 +31,7 @@ class Queue:
 #         self.left = None
 #         self.right = None
 
-class Solution:
+class Solution(object):
     # @param {TreeNode} root
     # @return {TreeNode}
     def invertTree(self, root):
@@ -51,7 +51,7 @@ class Solution:
 # Time:  O(n)
 # Space: O(h)
 # Stack solution.
-class Solution2:
+class Solution2(object):
     # @param {TreeNode} root
     # @return {TreeNode}
     def invertTree(self, root):
@@ -71,7 +71,7 @@ class Solution2:
 # Time:  O(n)
 # Space: O(h)
 # DFS, Recursive solution.
-class Solution3:
+class Solution3(object):
     # @param {TreeNode} root
     # @return {TreeNode}
     def invertTree(self, root):

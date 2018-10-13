@@ -2,7 +2,7 @@
 # Space: O(1)
 
 
-class Solution:
+class Solution(object):
     # @param prices, a list of integer
     # @return an integer
     def maxProfit(self, prices):

@@ -1,7 +1,7 @@
 # Time:  O(n^4)
 # Space: O(n^3)
 
-class Solution:
+class Solution(object):
     # @return a boolean
     def isScramble(self, s1, s2):
         if not s1 or not s2 or len(s1) != len(s2):

@@ -4,7 +4,7 @@
 import collections
 
 
-class WordDistance:
+class WordDistance(object):
     # initialize your data structure here.
     # @param {string[]} words
     def __init__(self, words):

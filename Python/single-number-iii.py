@@ -5,7 +5,7 @@ import operator
 import collections
 
 
-class Solution:
+class Solution(object):
     # @param {integer[]} nums
     # @return {integer[]}
     def singleNumber(self, nums):
@@ -17,7 +17,7 @@ class Solution:
         return result
 
 
-class Solution2:
+class Solution2(object):
     # @param {integer[]} nums
     # @return {integer[]}
     def singleNumber(self, nums):

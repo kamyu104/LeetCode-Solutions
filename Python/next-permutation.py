@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @param {integer[]} nums
     # @return {void} Do not return anything, modify nums in-place instead.
     def nextPermutation(self, num):

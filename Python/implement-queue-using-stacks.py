@@ -1,7 +1,7 @@
 # Time:  O(1), amortized
 # Space: O(n)
 
-class Queue:
+class Queue(object):
     # initialize your data structure here.
     def __init__(self):
         self.A, self.B = [], []

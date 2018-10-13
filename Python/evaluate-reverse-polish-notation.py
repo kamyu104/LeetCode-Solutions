@@ -3,7 +3,7 @@
 
 import operator
 
-class Solution:
+class Solution(object):
     # @param tokens, a list of string
     # @return an integer
     def evalRPN(self, tokens):

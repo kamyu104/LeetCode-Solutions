@@ -1,7 +1,7 @@
 # Time:  O(1)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @param {integer} A
     # @param {integer} B
     # @param {integer} C

@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @param A, a list of integers
     # @return an integer
     def firstMissingPositive(self, A):

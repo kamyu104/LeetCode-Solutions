@@ -1,7 +1,7 @@
 # Time:  O(m * n)
 # Space: O(m + n)
 
-class Solution:
+class Solution(object):
     # @param obstacleGrid, a list of lists of integers
     # @return an integer
     def uniquePathsWithObstacles(self, obstacleGrid):

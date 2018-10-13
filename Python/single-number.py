@@ -5,7 +5,7 @@ import operator
 from functools import reduce
 
 
-class Solution:
+class Solution(object):
     """
     :type nums: List[int]
     :rtype: int

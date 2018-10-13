@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @param {integer} s
     # @param {integer[]} nums
     # @return {integer}
@@ -21,7 +21,7 @@ class Solution:
 # Time:  O(nlogn)
 # Space: O(n)
 # Binary search solution.
-class Solution2:
+class Solution2(object):
     # @param {integer} s
     # @param {integer[]} nums
     # @return {integer}

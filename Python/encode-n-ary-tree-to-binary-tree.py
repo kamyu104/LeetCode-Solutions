@@ -15,7 +15,7 @@ class TreeNode(object):
         self.right = None
 
 
-class Codec:
+class Codec(object):
 
     def encode(self, root):
         """Encodes an n-ary tree to a binary tree.

@@ -1,7 +1,7 @@
 # Time:  O(n^2)
 # Space: O(n)
 
-class Solution:
+class Solution(object):
     # @return an integer
     def numDistinct(self, S, T):
         ways = [0 for _ in xrange(len(T) + 1)]

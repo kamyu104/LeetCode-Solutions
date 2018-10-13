@@ -1,13 +1,13 @@
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
 
-class TreeNode:
+class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
-class Solution:
+class Solution(object):
     # @param p, a tree node
     # @param q, a tree node
     # @return a boolean

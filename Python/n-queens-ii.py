@@ -2,7 +2,7 @@ from functools import reduce
 # Time:  O(n!)
 # Space: O(n)
 
-class Solution:
+class Solution(object):
     # @return an integer
     def totalNQueens(self, n):
         self.cols = [False] * n
@@ -22,7 +22,7 @@ class Solution:
         return result
 
 # slower solution
-class Solution2:
+class Solution2(object):
     # @return an integer
     def totalNQueens(self, n):
         return self.totalNQueensRecu([], 0, n)

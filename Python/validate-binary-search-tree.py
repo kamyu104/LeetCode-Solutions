@@ -1,14 +1,14 @@
 # Time:  O(n)
 # Space: O(1)
 
-class TreeNode:
+class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
 # Morris Traversal Solution
-class Solution:
+class Solution(object):
     # @param root, a tree node
     # @return a list of integers
     def isValidBST(self, root):
@@ -39,7 +39,7 @@ class Solution:
 
 # Time:  O(n)
 # Space: O(h)
-class Solution2:
+class Solution2(object):
     # @param root, a tree node
     # @return a boolean
     def isValidBST(self, root):

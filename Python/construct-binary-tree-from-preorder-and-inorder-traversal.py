@@ -1,13 +1,13 @@
 # Time:  O(n)
 # Space: O(n)
 
-class TreeNode:
+class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
-class Solution:
+class Solution(object):
     # @param preorder, a list of integers
     # @param inorder, a list of integers
     # @return a tree node

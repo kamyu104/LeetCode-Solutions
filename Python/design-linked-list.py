@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-class Node:
+class Node(object):
     def __init__(self, value):
         self.val = value
         self.next = self.prev = None

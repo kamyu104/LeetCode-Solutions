@@ -4,7 +4,7 @@
 import collections
 
 
-class Queue:
+class Queue(object):
     def __init__(self):
         self.data = collections.deque()
 
@@ -24,7 +24,7 @@ class Queue:
         return len(self.data) == 0
 
 
-class Stack:
+class Stack(object):
     # initialize your data structure here.
     def __init__(self):
         self.q_ = Queue()
@@ -51,7 +51,7 @@ class Stack:
 
 # Time: push: O(1), pop: O(n), top: O(1)
 # Space: O(n)
-class Stack2:
+class Stack2(object):
     # initialize your data structure here.
     def __init__(self):
         self.q_ = Queue()

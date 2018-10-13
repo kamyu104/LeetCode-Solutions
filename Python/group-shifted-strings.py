@@ -4,7 +4,7 @@
 import collections
 
 
-class Solution:
+class Solution(object):
     # @param {string[]} strings
     # @return {string[][]}
     def groupStrings(self, strings):

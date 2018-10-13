@@ -1,13 +1,13 @@
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
 
-class TreeNode:
+class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
-class Solution:
+class Solution(object):
     # @param root, a tree node
     # @return nothing, do it in place
     def flatten(self, root):
@@ -23,7 +23,7 @@ class Solution:
         else:
             return list_head
 
-class Solution2:
+class Solution2(object):
     list_head = None
     # @param root, a tree node
     # @return nothing, do it in place

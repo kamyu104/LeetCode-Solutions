@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-class Solution:
+class Solution(object):
     # @param path, a string
     # @return a string
     def simplifyPath(self, path):

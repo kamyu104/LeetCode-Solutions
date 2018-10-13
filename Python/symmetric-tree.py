@@ -2,14 +2,14 @@
 # Space: O(h), h is height of binary tree
 # Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
 
-class TreeNode:
+class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
 # Iterative solution
-class Solution:
+class Solution(object):
     # @param root, a tree node
     # @return a boolean
     def isSymmetric(self, root):
@@ -37,7 +37,7 @@ class Solution:
         return True
 
 # Recursive solution
-class Solution2:
+class Solution2(object):
     # @param root, a tree node
     # @return a boolean
     def isSymmetric(self, root):

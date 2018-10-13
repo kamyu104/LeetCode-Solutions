@@ -5,7 +5,7 @@ import collections
 import string
 
 
-class Solution:
+class Solution(object):
     # @param {string} s
     # @param {string} t
     # @return {boolean}
@@ -48,7 +48,7 @@ class Solution:
 
 # Time:  O(nlogn)
 # Space: O(n)
-class Solution2:
+class Solution2(object):
     # @param {string} s
     # @param {string} t
     # @return {boolean}

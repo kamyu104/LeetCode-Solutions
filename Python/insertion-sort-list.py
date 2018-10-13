@@ -1,7 +1,7 @@
 # Time:  O(n ^ 2)
 # Space: O(1)
 
-class ListNode:
+class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
@@ -12,7 +12,7 @@ class ListNode:
         else:
             return "Nil"
 
-class Solution:
+class Solution(object):
     # @param head, a ListNode
     # @return a ListNode
     def insertionSortList(self, head):

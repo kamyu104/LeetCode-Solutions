@@ -4,7 +4,7 @@
 import random
 
 
-class Codec:
+class Codec(object):
     def __init__(self):
         self.__random_length = 6
         self.__tiny_url = "http://tinyurl.com/"
@@ -41,7 +41,7 @@ class Codec:
 from hashlib import sha256
 
 
-class Codec2:
+class Codec2(object):
 
     def __init__(self):
         self._cache = {}

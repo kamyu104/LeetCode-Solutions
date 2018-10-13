@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @param num, a list of integers
     # @return a string
     def largestNumber(self, num):

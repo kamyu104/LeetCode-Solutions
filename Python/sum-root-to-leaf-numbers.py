@@ -1,13 +1,13 @@
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
 
-class TreeNode:
+class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
-class Solution:
+class Solution(object):
     # @param root, a tree node
     # @return an integer
     def sumNumbers(self, root):

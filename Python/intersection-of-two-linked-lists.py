@@ -1,12 +1,12 @@
 # Time:  O(m + n)
 # Space: O(1)
 
-class ListNode:
+class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
 
-class Solution:
+class Solution(object):
     # @param two ListNodes
     # @return the intersected ListNode
     def getIntersectionNode(self, headA, headB):

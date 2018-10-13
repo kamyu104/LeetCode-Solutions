@@ -8,7 +8,7 @@ import operator
 import re
 
 
-class Solution:
+class Solution(object):
     # @param {string} input
     # @return {integer[]}
     def diffWaysToCompute(self, input):
@@ -30,7 +30,7 @@ class Solution:
 
         return diffWaysToComputeRecu(0, len(nums) - 1)
 
-class Solution2:
+class Solution2(object):
     # @param {string} input
     # @return {integer[]}
     def diffWaysToCompute(self, input):

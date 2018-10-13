@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @param gas, a list of integers
     # @param cost, a list of integers
     # @return an integer

@@ -1,7 +1,7 @@
 # Time:  O(h * logn) = O((logn)^2)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @param {TreeNode} root
     # @return {integer}
     def countNodes(self, root):

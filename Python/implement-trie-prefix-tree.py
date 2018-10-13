@@ -1,14 +1,14 @@
 # Time:  O(n), per operation
 # Space: O(1)
 
-class TrieNode:
+class TrieNode(object):
     # Initialize your data structure here.
     def __init__(self):
         self.is_string = False
         self.leaves = {}
 
 
-class Trie:
+class Trie(object):
 
     def __init__(self):
         self.root = TrieNode()

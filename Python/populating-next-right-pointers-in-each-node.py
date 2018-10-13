@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-class TreeNode:
+class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
@@ -14,7 +14,7 @@ class TreeNode:
         else:
             return "{} -> {}".format(self.val, repr(self.next))
 
-class Solution:
+class Solution(object):
     # @param root, a tree node
     # @return nothing
     def connect(self, root):
@@ -31,7 +31,7 @@ class Solution:
 # Time:  O(n)
 # Space: O(logn)
 # recusion
-class Solution2:
+class Solution2(object):
     # @param root, a tree node
     # @return nothing
     def connect(self, root):

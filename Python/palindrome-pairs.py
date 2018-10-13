@@ -82,7 +82,7 @@ class Solution_TLE(object):
 # Time:  O(n * k^2), n is the number of the words, k is the max length of the words.
 # Space: O(n * k)
 # Trie solution.
-class TrieNode:
+class TrieNode(object):
     def __init__(self):
         self.word_idx = -1
         self.leaves = {}

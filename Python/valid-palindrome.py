@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @param s, a string
     # @return a boolean
     def isPalindrome(self, s):

@@ -3,7 +3,7 @@
 
 from heapq import heappush, heappop
 
-class MedianFinder:
+class MedianFinder(object):
     def __init__(self):
         """
         Initialize your data structure here.

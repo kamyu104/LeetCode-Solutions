@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(logn)
 
-class Solution:
+class Solution(object):
     # @param {integer} n
     # @return {integer[][]}
     def getFactors(self, n):

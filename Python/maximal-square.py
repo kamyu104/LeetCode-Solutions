@@ -1,7 +1,7 @@
 # Time:  O(n^2)
 # Space: O(n)
 
-class Solution:
+class Solution(object):
     # @param {character[][]} matrix
     # @return {integer}
     def maximalSquare(self, matrix):
@@ -37,7 +37,7 @@ class Solution:
 # Time:  O(n^2)
 # Space: O(n^2)
 # DP.
-class Solution2:
+class Solution2(object):
     # @param {character[][]} matrix
     # @return {integer}
     def maximalSquare(self, matrix):
@@ -73,7 +73,7 @@ class Solution2:
 # Time:  O(n^2)
 # Space: O(n^2)
 # DP.
-class Solution3:
+class Solution3(object):
     # @param {character[][]} matrix
     # @return {integer}
     def maximalSquare(self, matrix):

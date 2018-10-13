@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-class Codec:
+class Codec(object):
 
     def encode(self, strs):
         """Encodes a list of strings to a single string.

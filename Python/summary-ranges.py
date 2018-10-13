@@ -7,7 +7,7 @@ import itertools
 import re
 
 
-class Solution:
+class Solution(object):
     # @param {integer[]} nums
     # @return {string[]}
     def summaryRanges(self, nums):
@@ -31,7 +31,7 @@ class Solution:
 
 # Time:  O(n)
 # Space: O(n)
-class Solution2:
+class Solution2(object):
     # @param {integer[]} nums
     # @return {string[]}
     def summaryRanges(self, nums):

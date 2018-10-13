@@ -2,7 +2,7 @@
 # Space: O(n)
 
 start, end, height = 0, 1, 2
-class Solution:
+class Solution(object):
     # @param {integer[][]} buildings
     # @return {integer[][]}
     def getSkyline(self, buildings):

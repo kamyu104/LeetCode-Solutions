@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-class TreeNode:
+class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
@@ -32,7 +32,7 @@ class TreeNode:
         else:
             return None
 
-class Solution:
+class Solution(object):
     # @param root, a tree node
     # @return a tree node
     def recoverTree(self, root):

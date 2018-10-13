@@ -2,7 +2,7 @@
 # Space: O(n)
 
 
-class Solution:
+class Solution(object):
     # @param {string} s
     # @return {integer}
     def calculate(self, s):

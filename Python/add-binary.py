@@ -2,7 +2,7 @@
 # Space: O(1)
 
 
-class Solution:
+class Solution(object):
     # @param a, a string
     # @param b, a string
     # @return a string

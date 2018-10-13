@@ -1,7 +1,7 @@
 # Time:  O(n * 2^n)
 # Space: O(2^n)
 
-class Solution:
+class Solution(object):
     # @return a string
     def countAndSay(self, n):
         seq = "1"

@@ -1,7 +1,7 @@
 # Time:  O(m * n)
 # Space: O(m * n)
 
-class Solution:
+class Solution(object):
     # @param {boolean[][]} grid a boolean 2D matrix
     # @return {int} an integer
     def numIslands(self, grid):

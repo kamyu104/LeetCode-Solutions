@@ -1,7 +1,7 @@
 # Time:  O(n * 4^n)
 # Space: O(n)
 
-class Solution:
+class Solution(object):
     # @return a list of strings, [s1, s2]
     def letterCombinations(self, digits):
         if not digits:
@@ -24,7 +24,7 @@ class Solution:
 # Time:  O(n * 4^n)
 # Space: O(n)
 # Recursive Solution
-class Solution2:
+class Solution2(object):
     # @return a list of strings, [s1, s2]
     def letterCombinations(self, digits):
         if not digits:

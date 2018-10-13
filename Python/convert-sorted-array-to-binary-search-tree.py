@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(logn)
 
-class TreeNode:
+class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None

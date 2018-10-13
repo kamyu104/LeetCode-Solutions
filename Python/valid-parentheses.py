@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-class Solution:
+class Solution(object):
     # @return a boolean
     def isValid(self, s):
         stack, lookup = [], {"(": ")", "{": "}", "[": "]"}

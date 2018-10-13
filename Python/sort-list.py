@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(logn) for stack call
 
-class ListNode:
+class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
@@ -10,7 +10,7 @@ class ListNode:
         if self:
             return "{} -> {}".format(self.val, repr(self.next))
 
-class Solution:
+class Solution(object):
     # @param head, a ListNode
     # @return a ListNode
     def sortList(self, head):

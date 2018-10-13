@@ -1,7 +1,7 @@
 # Time:  O(n^2)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @return a list of lists of integer
     def generateMatrix(self, n):
         matrix = [[0 for _ in xrange(n)] for _ in xrange(n)]

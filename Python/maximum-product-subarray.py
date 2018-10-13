@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @param A, a list of integers
     # @return an integer
     def maxProduct(self, A):
@@ -11,7 +11,7 @@ class Solution:
             global_max = max(global_max, local_max)
         return global_max
 
-class Solution2:
+class Solution2(object):
     # @param A, a list of integers
     # @return an integer
     def maxProduct(self, A):

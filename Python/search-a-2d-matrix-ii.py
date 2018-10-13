@@ -1,7 +1,7 @@
 # Time:  O(m + n)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @param {integer[][]} matrix
     # @param {integer} target
     # @return {boolean}

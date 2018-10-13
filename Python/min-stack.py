@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-class MinStack:
+class MinStack(object):
     def __init__(self):
         self.min = None
         self.stack = []
@@ -37,7 +37,7 @@ class MinStack:
 
 # Time:  O(n)
 # Space: O(n)
-class MinStack2:
+class MinStack2(object):
     def __init__(self):
         self.stack, self.minStack = [], []
     # @param x, an integer

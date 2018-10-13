@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @return an integer
     def lengthOfLongestSubstring(self, s):
         longest, start, visited = 0, 0, [False for _ in xrange(256)]

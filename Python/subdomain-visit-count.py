@@ -4,7 +4,7 @@
 import collections
 
 
-class Solution:
+class Solution(object):
     def subdomainVisits(self, cpdomains):
         """
         :type cpdomains: List[str]

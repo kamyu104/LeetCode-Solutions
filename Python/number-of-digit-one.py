@@ -1,7 +1,7 @@
 # Time:  O(logn)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @param {integer} n
     # @return {integer}
     def countDigitOne(self, n):

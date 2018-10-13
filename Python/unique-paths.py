@@ -1,7 +1,7 @@
 # Time:  O(m * n)
 # Space: O(m + n)
 
-class Solution:
+class Solution(object):
     # @return an integer
     def uniquePaths(self, m, n):
         if m < n:

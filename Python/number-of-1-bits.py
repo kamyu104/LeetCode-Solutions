@@ -1,7 +1,7 @@
 # Time:  O(logn) = O(32)
 # Space: O(1)
 
-class Solution:
+class Solution(object):
     # @param n, an integer
     # @return an integer
     def hammingWeight(self, n):

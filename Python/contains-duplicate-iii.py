@@ -4,7 +4,7 @@
 import collections
 
 
-class Solution:
+class Solution(object):
     # @param {integer[]} nums
     # @param {integer} k
     # @param {integer} t
