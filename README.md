@@ -2,7 +2,7 @@
 
 * Since even free questions are hard to tell its copyright and may be accidentally taken down by some company request, only solutions will be updated without any question description.
 * For more solutions of questions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
-* The number of LeetCode questions is increasing every week. I'll keep updating for full summary and better solutions. Stay tuned for updates.
+* There are new LeetCode questions every week. I'll keep updating for full summary and better solutions. Stay tuned for updates.
 * Notes: "🔒" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions.
 
 ## Algorithms
