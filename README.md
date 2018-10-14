@@ -178,6 +178,9 @@
 909 | [Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/) | [C++](./C++/snakes-and-ladders.cpp) [Python](./Python/snakes-and-ladders.py) | _O(n^2)_ | _O(n^2)_      | Medium         ||
 915 | [Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals/) | [C++](./C++/partition-array-into-disjoint-intervals.cpp) [Python](./Python/partition-array-into-disjoint-intervals.py) | _O(n)_ | _O(n)_      | Medium         ||
 918 | [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/) | [C++](./C++/maximum-sum-circular-subarray.cpp) [Python](./Python/maximum-sum-circular-subarray.py) | _O(n)_ | _O(1)_      | Medium         ||
+921 | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | [C++](./C++/minimum-add-to-make-parentheses-valid.cpp) [Python](./Python/minimum-add-to-make-parentheses-valid.py) | _O(n)_ | _O(1)_      | Medium         ||
+922 | [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/) | [C++](./C++/sort-array-by-parity-ii.cpp) [Python](./Python/sort-array-by-parity-ii.py) | _O(n)_ | _O(1)_      | Easy         ||
+923 | [3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity/) | [C++](./C++/3sum-with-multiplicity.cpp) [Python](./Python/3sum-with-multiplicity.py) | _O(n^2)_ | _O(n)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -921,7 +924,7 @@
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 765 | [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/)  | [C++](./C++/couples-holding-hands.cpp) [Python](./Python/couples-holding-hands.py) | _O(n)_| _O(n)_| Hard           ||| 
-
+924 | [Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/)  | [C++](./C++/minimize-malware-spread.cpp) [Python](./Python/minimize-malware-spread.py) | _O(n)_| _O(n)_| Hard           || Union Find | 
 
 ## Geometry
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
