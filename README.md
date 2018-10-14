@@ -1,8 +1,8 @@
 # [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
-* Since even free questions are hard to tell its copyright and may be accidentally taken down by some company request, only solutions will be updated without any question description.
+* Since free questions may be even accidentally taken down by some companies, only solutions will be post on.
 * For more solutions of questions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
-* There are new LeetCode questions every week. I'll keep updating for full summary and better solutions. Stay tuned for updates.
+* There are new LeetCode questions every week. I'll keep updating for full summary and better solutions.
 * Notes: "🔒" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions.
 
 ## Algorithms
