@@ -4,7 +4,7 @@
 * Since free questions may be even accidentally taken down by some companies, only solutions will be post on now.
 * For more solutions of questions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 * There are new LeetCode questions every week. I'll keep updating for full summary and better solutions.
-* Thanks for staring this repository and sending thanks notes to cheer me up. I'll make this repository better and better.
+* Thanks for starring this repository and sending thanks notes to cheer me up. I'll make this repository better and better.
 * Notes: "🔒" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions.
 
 ## Algorithms
