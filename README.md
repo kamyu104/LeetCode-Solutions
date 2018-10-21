@@ -182,6 +182,7 @@
 921 | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | [C++](./C++/minimum-add-to-make-parentheses-valid.cpp) [Python](./Python/minimum-add-to-make-parentheses-valid.py) | _O(n)_ | _O(1)_      | Medium         ||
 922 | [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/) | [C++](./C++/sort-array-by-parity-ii.cpp) [Python](./Python/sort-array-by-parity-ii.py) | _O(n)_ | _O(1)_      | Easy         ||
 923 | [3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity/) | [C++](./C++/3sum-with-multiplicity.cpp) [Python](./Python/3sum-with-multiplicity.py) | _O(n^2)_ | _O(n)_      | Medium         ||
+927 | [Three Equal Parts](https://leetcode.com/problems/three-equal-parts/) | [C++](./C++/three-equal-parts.cpp) [Python](./Python/three-equal-parts.py) | _O(n)_ | _O(1)_      | Hard         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -260,6 +261,7 @@
 893 | [Groups of Special-Equivalent Strings](https://leetcode.com/problems/groups-of-special-equivalent-strings/) | [C++](./C++/groups-of-special-equivalent-strings.cpp) [Python](./Python/groups-of-special-equivalent-strings.py) | _O(n * l)_ | _O(n)_ | Easy ||
 916 | [Word Subsets](https://leetcode.com/problems/word-subsets/) | [C++](./C++/word-subsets.cpp) [Python](./Python/word-subsets.py) | _O(m + n)_ | _O(1)_ | Medium ||
 917 | [Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/) | [C++](./C++/reverse-only-letters.cpp) [Python](./Python/reverse-only-letters.py) | _O(n)_ | _O(1)_ | Easy ||
+925 | [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/) | [C++](./C++/long-pressed-name.cpp) [Python](./Python/long-pressed-name.py) | _O(n)_ | _O(1)_ | Easy ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -883,6 +885,7 @@
 879 | [Profitable Schemes](https://leetcode.com/problems/profitable-schemes/) | [C++](./C++/profitable-schemes.cpp) [Python](./Python/profitable-schemes.py) | _O(n * p * g)_ | _O(p * g)_ | Hard || |
 903 | [Valid Permutations for DI Sequence](https://leetcode.com/problems/valid-permutations-for-di-sequence/) | [C++](./C++/valid-permutations-for-di-sequence.cpp) [Python](./Python/valid-permutations-for-di-sequence.py) | _O(n^2)_ | _O(n)_ | Hard || |
 920 | [Number of Music Playlists](https://leetcode.com/problems/number-of-music-playlists/) | [C++](./C++/number-of-music-playlists.cpp) [Python](./Python/number-of-music-playlists.py) | _O(n * l)_ | _O(l)_ | Hard || |
+926| [Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing/) | [C++](./C++/flip-string-to-monotone-increasing.cpp) [Python](./Python/flip-string-to-monotone-increasing.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -926,6 +929,7 @@
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 765 | [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/)  | [C++](./C++/couples-holding-hands.cpp) [Python](./Python/couples-holding-hands.py) | _O(n)_| _O(n)_| Hard           ||| 
 924 | [Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/)  | [C++](./C++/minimize-malware-spread.cpp) [Python](./Python/minimize-malware-spread.py) | _O(n^2)_| _O(n)_| Hard           || Union Find | 
+928 | [Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii/)  | [C++](./C++/minimize-malware-spread-ii.cpp) [Python](./Python/minimize-malware-spread-ii.py) | _O(n^3)_| _O(n)_| Hard           || Union Find | 
 
 ## Geometry
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
