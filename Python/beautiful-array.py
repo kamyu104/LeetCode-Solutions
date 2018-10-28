@@ -1,4 +1,4 @@
-# Time:  O(nlogn)
+# Time:  O(n)
 # Space: O(n)
 
 class Solution(object):
