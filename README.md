@@ -184,6 +184,7 @@
 922 | [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/) | [C++](./C++/sort-array-by-parity-ii.cpp) [Python](./Python/sort-array-by-parity-ii.py) | _O(n)_ | _O(1)_      | Easy         ||
 923 | [3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity/) | [C++](./C++/3sum-with-multiplicity.cpp) [Python](./Python/3sum-with-multiplicity.py) | _O(n^2)_ | _O(n)_      | Medium         ||
 927 | [Three Equal Parts](https://leetcode.com/problems/three-equal-parts/) | [C++](./C++/three-equal-parts.cpp) [Python](./Python/three-equal-parts.py) | _O(n)_ | _O(1)_      | Hard         ||
+932 | [Beautiful Array](https://leetcode.com/problems/beautiful-array/) | [C++](./C++/beautiful-array.cpp) [Python](./Python/beautiful-array.py) | _O(n)_ | _O(n)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -263,6 +264,7 @@
 916 | [Word Subsets](https://leetcode.com/problems/word-subsets/) | [C++](./C++/word-subsets.cpp) [Python](./Python/word-subsets.py) | _O(m + n)_ | _O(1)_ | Medium ||
 917 | [Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/) | [C++](./C++/reverse-only-letters.cpp) [Python](./Python/reverse-only-letters.py) | _O(n)_ | _O(1)_ | Easy ||
 925 | [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/) | [C++](./C++/long-pressed-name.cpp) [Python](./Python/long-pressed-name.py) | _O(n)_ | _O(1)_ | Easy ||
+929 | [Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/) | [C++](./C++/unique-email-addresses.cpp) [Python](./Python/unique-email-addresses.py) | _O(n * l)_ | _O(n * l)_ | Easy ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -592,7 +594,7 @@
 844 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | [C++](./C++/backspace-string-compare.cpp) [Python](./Python/backspace-string-compare.py) | _O(m + n)_ | _O(1)_ | Easy ||
 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [C++](./C++/middle-of-the-linked-list.cpp) [Python](./Python/middle-of-the-linked-list.py) | _O(n)_ | _O(1)_ | Easy ||
 904 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | [C++](./C++/fruit-into-baskets.cpp) [Python](./Python/fruit-into-baskets.py) | _O(n)_ | _O(1)_ | Medium ||
-
+930 | [Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/) | [C++](./C++/binary-subarrays-with-sum.cpp) [Python](./Python/binary-subarrays-with-sum.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## Recursion
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -887,6 +889,7 @@
 903 | [Valid Permutations for DI Sequence](https://leetcode.com/problems/valid-permutations-for-di-sequence/) | [C++](./C++/valid-permutations-for-di-sequence.cpp) [Python](./Python/valid-permutations-for-di-sequence.py) | _O(n^2)_ | _O(n)_ | Hard || |
 920 | [Number of Music Playlists](https://leetcode.com/problems/number-of-music-playlists/) | [C++](./C++/number-of-music-playlists.cpp) [Python](./Python/number-of-music-playlists.py) | _O(n * l)_ | _O(l)_ | Hard || |
 926| [Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing/) | [C++](./C++/flip-string-to-monotone-increasing.cpp) [Python](./Python/flip-string-to-monotone-increasing.py) | _O(n)_ | _O(1)_ | Medium ||
+931| [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/) | [C++](./C++/minimum-falling-path-sum.cpp) [Python](./Python/minimum-falling-path-sum.py) | _O(n^2)_ | _O(1)_ | Medium ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
