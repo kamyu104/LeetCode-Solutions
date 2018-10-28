@@ -9,7 +9,7 @@ class Solution(object):
         """
         def convert(email):
             name, domain = email.split('@')
-            name = name.split("+")[0]
+            name = name[:name.index('+')]
             return "".join(["".join(name.split(".")), '@', domain])
 
         lookup = set()
