@@ -1,6 +1,9 @@
 # Time:  O(n^2)
 # Space: O(n^2)
 
+import collections
+
+
 class Solution(object):
     def shortestBridge(self, A):
         """
