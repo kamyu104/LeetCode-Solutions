@@ -1,5 +1,5 @@
 # Time:  O(logn)
-# Space: O(1)
+# Space: O(logn)
 
 import itertools
 
