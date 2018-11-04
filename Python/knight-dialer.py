@@ -26,9 +26,6 @@ class Solution(object):
                      for col in ZB] for row in A]
         
         M = 10**9 + 7
-        if N == 1:
-            return 10
-
         T = [[0, 0, 0, 0, 1, 0, 1, 0, 0, 0],
              [0, 0, 0, 0, 0, 0, 1, 0, 1, 0],
              [0, 0, 0, 0, 0, 0, 0, 1, 0, 1],
