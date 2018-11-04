@@ -4,10 +4,6 @@
 class Solution {
 public:
     int knightDialer(int N) {
-        if (N == 1) {
-            return 10;
-        }
-
         vector<vector<int>> T = {{0, 0, 0, 0, 1, 0, 1, 0, 0, 0},
                                  {0, 0, 0, 0, 0, 0, 1, 0, 1, 0},
                                  {0, 0, 0, 0, 0, 0, 0, 1, 0, 1},
