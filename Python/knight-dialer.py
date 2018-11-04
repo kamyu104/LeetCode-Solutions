@@ -1,5 +1,5 @@
 # Time:  O(logn)
-# Space: O(logn)
+# Space: O(1)
 
 import itertools
 
@@ -11,15 +11,14 @@ class Solution(object):
         :rtype: int
         """
         def matrix_expo(A, K):
-            if K == 0:
-                return [[int(i==j) for j in xrange(len(A))] \
-                        for i in xrange(len(A))]
-            if K == 1:
-                return A
-            if K % 2:
-                return matrix_mult(matrix_expo(A, K-1), A)
-            B = matrix_expo(A, K//2)
-            return matrix_mult(B, B)
+            result = [[int(i==j) for j in xrange(len(A))] \
+                      for i in xrange(len(A))]
+            while K:
+                if K % 2:
+                    result = matrix_mult(result, A)
+                A = matrix_mult(A, A)
+                K /= 2
+            return result
 
         def matrix_mult(A, B):
             ZB = zip(*B)
