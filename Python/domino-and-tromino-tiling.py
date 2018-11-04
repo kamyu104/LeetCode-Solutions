@@ -1,5 +1,5 @@
 # Time:  O(logn)
-# Space: O(logn)
+# Space: O(1)
 
 import itertools
 
@@ -13,15 +13,14 @@ class Solution(object):
         M = int(1e9+7)
 
         def matrix_expo(A, K):
-            if K == 0:
-                return [[int(i==j) for j in xrange(len(A))] \
-                        for i in xrange(len(A))]
-            if K == 1:
-                return A
-            if K % 2:
-                return matrix_mult(matrix_expo(A, K-1), A)
-            B = matrix_expo(A, K//2)
-            return matrix_mult(B, B)
+            result = [[int(i==j) for j in xrange(len(A))] \
+                      for i in xrange(len(A))]
+            while K:
+                if K % 2:
+                    result = matrix_mult(result, A)
+                A = matrix_mult(A, A)
+                K /= 2
+            return result
 
         def matrix_mult(A, B):
             ZB = zip(*B)
@@ -55,4 +54,3 @@ class Solution2(object):
         for i in xrange(3, N+1):
             dp[i%3] = (2*dp[(i-1)%3]%M + dp[(i-3)%3])%M
         return dp[N%3]
-
