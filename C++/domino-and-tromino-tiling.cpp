@@ -13,21 +13,19 @@ public:
 
 private:
     vector<vector<int>> matrixExpo(const vector<vector<int>>& A, int pow) {
-        if (pow == 0) {
-            vector<vector<int>> I(A.size(), vector<int>(A.size()));
-            for (int i = 0; i < A.size(); ++i) {
-                I[i][i] = 1;
+        vector<vector<int>> result(A.size(), vector<int>(A.size()));
+        vector<vector<int>> A_exp(A);
+        for (int i = 0; i < A.size(); ++i) {
+            result[i][i] = 1;
+        }
+        while (pow) {
+            if (pow % 2 == 1) {
+                result = matrixMult(result, A_exp);
             }
-            return I;
+            A_exp = matrixMult(A_exp, A_exp);
+            pow /= 2;
         }
-        if (pow == 1) {
-            return A;
-        }
-        if (pow % 2 == 1) {
-            return matrixMult(matrixExpo(A, pow - 1), A);
-        }
-        const auto& B = matrixExpo(A, pow / 2);
-        return matrixMult(B, B);
+        return result;
     }
 
     vector<vector<int>> matrixMult(const vector<vector<int>>& A, const vector<vector<int>>& B) {
