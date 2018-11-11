@@ -40,8 +40,8 @@ public:
     int rangeSumBST(TreeNode* root, int L, int R) {
         return (root == nullptr) ? 
             0 : (L <= root->val && root->val <= R) * root->val +
-                (L <= root->val) * rangeSumBST(root->left, L, R) +
-                (root->val <= R) * rangeSumBST(root->right, L, R);
+                ((L <= root->val) ? rangeSumBST(root->left, L, R) : 0) +
+                ((root->val <= R) ? rangeSumBST(root->right, L, R) : 0);
     }   
 };
 
