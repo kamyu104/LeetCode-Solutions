@@ -1,4 +1,5 @@
-# Time:  O(n^1.5) on average, worst: O(n^2)
+# Time:  O(n^1.5) on average
+#        O(n^2) on worst
 # Space: O(n)
 
 import collections
