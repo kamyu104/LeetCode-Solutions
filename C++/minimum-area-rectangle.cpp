@@ -37,8 +37,7 @@ public:
             sort(p[x].begin(), p[x].end());
             for (int j = 0; j < p[x].size(); ++j) {
                 for (int i = 0; i < j; ++i) {
-                    int y1, y2;
-                    tie(y1, y2) = make_pair(p[x][i], p[x][j]);
+                    int y1, y2; tie(y1, y2) = make_pair(p[x][i], p[x][j]);
                     if (lookup.count(make_pair(y1, y2))) {
                         result = min(result, (x - lookup[make_pair(y1, y2)]) * abs(y2 - y1));
                     }
