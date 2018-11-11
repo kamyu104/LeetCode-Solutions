@@ -265,6 +265,7 @@
 917 | [Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/) | [C++](./C++/reverse-only-letters.cpp) [Python](./Python/reverse-only-letters.py) | _O(n)_ | _O(1)_ | Easy ||
 925 | [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/) | [C++](./C++/long-pressed-name.cpp) [Python](./Python/long-pressed-name.py) | _O(n)_ | _O(1)_ | Easy ||
 929 | [Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/) | [C++](./C++/unique-email-addresses.cpp) [Python](./Python/unique-email-addresses.py) | _O(n * l)_ | _O(n * l)_ | Easy ||
+939 | [Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle/) | [C++](./C++/minimum-area-rectangle.cpp) [Python](./Python/minimum-area-rectangle.py) | _O(n^1.5)_ on average | _O(n)_ | Medium ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -397,6 +398,7 @@
 889 | [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | [C++](./C++/construct-binary-tree-from-preorder-and-postorder-traversal.cpp) [Python](./Python/construct-binary-tree-from-preorder-and-postorder-traversal.py) | _O(n)_ | _O(h)_ | Medium || DFS, stack |
 897| [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | [C++](./C++/increasing-order-search-tree.cpp) [Python](./Python/increasing-order-search-tree.py) | _O(n)_          | _O(h)_          | Easy           || DFS |
 919| [Complete Binary Tree Inserter](https://leetcode.com/problems/complete-binary-tree-inserter/) | [C++](./C++/complete-binary-tree-inserter.cpp) [Python](./Python/complete-binary-tree-inserter.py) | ctor: _O(n)_ <br> insert: _O(1)_ <br> get_root: _O(1)_      | _O(n)_          | Medium           |||
+938| [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/) | [C++](./C++/range-sum-of-bst.cpp) [Python](./Python/range-sum-of-bst.py) | _O(n)_          | _O(h)_          | Medium           || DFS |
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -568,6 +570,7 @@
 406| [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | [C++](./C++/queue-reconstruction-by-height.cpp) [Python](./Python/queue-reconstruction-by-height.py) | _O(n * sqrt(n))_ | _O(n)_        | Medium         | | Tricky |
 451| [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) | [C++](./C++/sort-characters-by-frequency.cpp) [Python](./Python/sort-characters-by-frequency.py) | _O(n)_ | _O(n)_        | Medium         | | |
 692| [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) | [C++](./C++/top-k-frequent-words.cpp) [Python](./Python/top-k-frequent-words.py) | _O(n + klogk)_ on average | _O(n)_        | Medium         | | Quick Select, Heap, Bucket Sort |
+937| [Reorder Log Files](https://leetcode.com/problems/reorder-log-files/) | [C++](./C++/reorder-log-files.cpp) [Python](./Python/reorder-log-files.py) | _O(nlogn * l)_ | _O(l)_        | Easy         | | |
 
 ## Two Pointers
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -893,6 +896,7 @@
 926| [Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing/) | [C++](./C++/flip-string-to-monotone-increasing.cpp) [Python](./Python/flip-string-to-monotone-increasing.py) | _O(n)_ | _O(1)_ | Medium ||
 931| [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/) | [C++](./C++/minimum-falling-path-sum.cpp) [Python](./Python/minimum-falling-path-sum.py) | _O(n^2)_ | _O(1)_ | Medium ||
 935| [Knight Dialer](https://leetcode.com/problems/knight-dialer/) | [C++](./C++/knight-dialer.cpp) [Python](./Python/knight-dialer.py) | _O(logn)_ | _O(1)_ | Medium || Matrix Exponentiation |
+940| [Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/) | [C++](./C++/distinct-subsequences-ii.cpp) [Python](./Python/distinct-subsequences-ii.py) | _O(n)_ | _O(1)_ | Hard |||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
