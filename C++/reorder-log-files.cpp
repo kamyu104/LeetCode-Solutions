@@ -5,7 +5,7 @@ class Solution {
 public:
     vector<string> reorderLogFiles(vector<string>& logs) {
         auto pivot = stable_partition(logs.begin(), logs.end(),
-                                      []( const auto& log ) {
+                                      [](const auto& log) {
                                           return isalpha(log.back());
                                       });
         sort(logs.begin(), pivot,
