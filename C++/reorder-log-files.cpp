@@ -1,5 +1,5 @@
 // Time:  O(nlogn * l), n is the length of files, l is the average length of strings
-// Space: O(1)
+// Space: O(l)
 
 class Solution {
 public:
