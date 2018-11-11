@@ -1,15 +1,18 @@
-// Time:  O(nlogn * m)n is the length of vector, m is the average length of strings
+// Time:  O(nlogn * l), n is the length of files, l is the average length of strings
 // Space: O(1)
 
 class Solution {
 public:
     vector<string> reorderLogFiles(vector<string>& logs) {
-
-    sort(logs.begin()
-         ,stable_partition(begin(logs)
-                           , end(logs)
-                           , [] (auto s) { return isalpha(s.back()); })
-         , [] (auto i, auto j) {return i.substr(i.find_first_of(' ')) < j.substr(j.find_first_of(' '));});                    
-    return logs;
+        auto pivot = stable_partition(logs.begin(), logs.end(),
+                                      []( const auto& log ) {
+                                          return isalpha(log.back());
+                                      });
+        sort(logs.begin(), pivot,
+             [](const auto& a, const auto& b) {
+                 int i = a.find_first_of(' '), j = b.find_first_of(' ');
+                 return a.substr(i, a.length() - i) < b.substr(j, b.length() - j);
+             });
+        return logs;
     }
 };
