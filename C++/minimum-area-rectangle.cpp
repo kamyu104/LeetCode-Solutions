@@ -76,7 +76,7 @@ public:
                     result = min(result, abs(x1 - x2) * abs(y1 - y2));
                 }
             }
-            lookup.emplace(make_pair(x1, y1));
+            lookup.emplace(x1, y1);
         }
         return result != numeric_limits<int>::max() ? result : 0;
     }
