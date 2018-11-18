@@ -14,7 +14,7 @@ class Solution(object):
                 if i == j:
                     continue
                 for l in reversed(xrange(min(len(x), len(y)))):
-                    if x.endswith(y[:l]):
+                    if y[:l].startswith(x[len(x)-l:]):
                         overlaps[i][j] = l
                         break
 
@@ -22,11 +22,11 @@ class Solution(object):
         prev = [[None]*n for _ in xrange(1<<n)]
         for mask in xrange(1, 1<<n):
             for bit in xrange(n):
-                if (mask>>bit) & 1 == 0:
+                if ((mask>>bit) & 1) == 0:
                     continue
                 prev_mask = mask^(1<<bit)
                 for i in xrange(n):
-                    if (prev_mask>>i) & 1 == 0:
+                    if ((prev_mask>>i) & 1) == 0:
                         continue
                     value = dp[prev_mask][i] + overlaps[i][bit]
                     if value > dp[mask][bit]:
