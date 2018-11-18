@@ -14,7 +14,7 @@ class Solution(object):
                 if i == j:
                     continue
                 for l in reversed(xrange(min(len(x), len(y)))):
-                    if y.startswith(x[l:]):
+                    if x.endswith(y[:l]):
                         overlaps[i][j] = l
                         break
 
