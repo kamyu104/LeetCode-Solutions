@@ -185,6 +185,7 @@
 923 | [3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity/) | [C++](./C++/3sum-with-multiplicity.cpp) [Python](./Python/3sum-with-multiplicity.py) | _O(n^2)_ | _O(n)_      | Medium         ||
 927 | [Three Equal Parts](https://leetcode.com/problems/three-equal-parts/) | [C++](./C++/three-equal-parts.cpp) [Python](./Python/three-equal-parts.py) | _O(n)_ | _O(1)_      | Hard         ||
 932 | [Beautiful Array](https://leetcode.com/problems/beautiful-array/) | [C++](./C++/beautiful-array.cpp) [Python](./Python/beautiful-array.py) | _O(n)_ | _O(n)_      | Medium         ||
+941 | [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) | [C++](./C++/valid-mountain-array.cpp) [Python](./Python/valid-mountain-array.py) | _O(n)_ | _O(1)_      | Easy         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -266,6 +267,8 @@
 925 | [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/) | [C++](./C++/long-pressed-name.cpp) [Python](./Python/long-pressed-name.py) | _O(n)_ | _O(1)_ | Easy ||
 929 | [Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/) | [C++](./C++/unique-email-addresses.cpp) [Python](./Python/unique-email-addresses.py) | _O(n * l)_ | _O(n * l)_ | Easy ||
 939 | [Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle/) | [C++](./C++/minimum-area-rectangle.cpp) [Python](./Python/minimum-area-rectangle.py) | _O(n^1.5)_ on average | _O(n)_ | Medium ||
+942 | [DI String Match](https://leetcode.com/problems/di-string-match/) | [C++](./C++/di-string-match.cpp) [Python](./Python/di-string-match.py) | _O(n)_ | _O(1)_      | Easy         ||
+944 | [Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/) | [C++](./C++/delete-columns-to-make-sorted.cpp) [Python](./Python/delete-columns-to-make-sorted.py) | _O(n * l)_ | _O(1)_      | Medium         ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -897,6 +900,7 @@
 931| [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/) | [C++](./C++/minimum-falling-path-sum.cpp) [Python](./Python/minimum-falling-path-sum.py) | _O(n^2)_ | _O(1)_ | Medium ||
 935| [Knight Dialer](https://leetcode.com/problems/knight-dialer/) | [C++](./C++/knight-dialer.cpp) [Python](./Python/knight-dialer.py) | _O(logn)_ | _O(1)_ | Medium || Matrix Exponentiation |
 940| [Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/) | [C++](./C++/distinct-subsequences-ii.cpp) [Python](./Python/distinct-subsequences-ii.py) | _O(n)_ | _O(1)_ | Hard |||
+943| [Find the Shortest Superstring](https://leetcode.com/problems/find-the-shortest-superstring/) | [C++](./C++/find-the-shortest-superstring.cpp) [Python](./Python/find-the-shortest-superstring.py) | _O(n^2 * (l^2 + 2^n))_ | _O(n^2)_ | Hard |||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
