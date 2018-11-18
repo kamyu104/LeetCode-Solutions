@@ -11,8 +11,6 @@ class Solution(object):
         overlaps = [[0]*n for _ in xrange(n)]
         for i, x in enumerate(A):
             for j, y in enumerate(A):
-                if i == j:
-                    continue
                 for l in reversed(xrange(min(len(x), len(y)))):
                     if y[:l].startswith(x[len(x)-l:]):
                         overlaps[i][j] = l
