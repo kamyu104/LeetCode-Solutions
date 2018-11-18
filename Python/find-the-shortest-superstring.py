@@ -33,12 +33,12 @@ class Solution(object):
                         dp[mask][bit] = value
                         prev[mask][bit] = i
         
-        i = max(xrange(n), key = dp[-1].__getitem__)
+        bit = max(xrange(n), key = dp[-1].__getitem__)
         words = []
         mask = (1<<n)-1
-        while i is not None:
-            words.append(i)
-            mask, i = mask^(1<<i), prev[mask][i]
+        while bit is not None:
+            words.append(bit)
+            mask, bit = mask^(1<<bit), prev[mask][bit]
         words.reverse()
         lookup = set(words)
         words.extend([i for i in xrange(n) if i not in lookup])
