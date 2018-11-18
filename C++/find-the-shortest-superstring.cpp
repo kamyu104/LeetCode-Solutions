@@ -8,9 +8,6 @@ public:
         vector<vector<int>> overlaps(n, vector<int>(n));
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < n; ++j) {
-                if (i == j) {
-                    continue;
-                }
                 for (int l = min(A[i].length(), A[j].length()); 
                      l >= 0; --l) {
                     if (A[i].substr(A[i].length() - l) == A[j].substr(0, l))  {
