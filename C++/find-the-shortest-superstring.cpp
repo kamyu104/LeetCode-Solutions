@@ -6,8 +6,8 @@ public:
     string shortestSuperstring(vector<string>& A) {
         const int n = A.size();
         vector<vector<int>> overlaps(n, vector<int>(n));
-        for (int i = 0; i < A.size(); ++i) {
-            for (int j = 0; j < A.size(); ++j) {
+        for (int i = 0; i < n; ++i) {
+            for (int j = 0; j < n; ++j) {
                 if (i == j) {
                     continue;
                 }
