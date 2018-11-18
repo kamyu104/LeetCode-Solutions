@@ -42,18 +42,18 @@ public:
             }
         }
         
-        int start = -1;
+        int bit = -1;
         for (int i = 0; i < n; ++i) {
-            if (start == -1 ||
-                dp.back()[i] > dp.back()[start]) {
-                start = i;
+            if (bit == -1 ||
+                dp.back()[i] > dp.back()[bit]) {
+                bit = i;
             }
         }
         vector<int> words;
-        for (int mask = (1 << n) - 1; start != -1;) {
-            words.emplace_back(start);
-            tie(mask, start) = make_pair(mask ^ (1 << start),
-                                         prev[mask][start]);
+        for (int mask = (1 << n) - 1; bit != -1;) {
+            words.emplace_back(bit);
+            tie(mask, bit) = make_pair(mask ^ (1 << bit),
+                                         prev[mask][bit]);
         }
         reverse(words.begin(), words.end());
         unordered_set<int> lookup(words.begin(), words.end());
