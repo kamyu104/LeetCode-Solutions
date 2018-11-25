@@ -186,6 +186,8 @@
 927 | [Three Equal Parts](https://leetcode.com/problems/three-equal-parts/) | [C++](./C++/three-equal-parts.cpp) [Python](./Python/three-equal-parts.py) | _O(n)_ | _O(1)_      | Hard         ||
 932 | [Beautiful Array](https://leetcode.com/problems/beautiful-array/) | [C++](./C++/beautiful-array.cpp) [Python](./Python/beautiful-array.py) | _O(n)_ | _O(n)_      | Medium         ||
 941 | [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) | [C++](./C++/valid-mountain-array.cpp) [Python](./Python/valid-mountain-array.py) | _O(n)_ | _O(1)_      | Easy         ||
+945 | [Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/) | [C++](./C++/minimum-increment-to-make-array-unique.cpp) [Python](./Python/minimum-increment-to-make-array-unique.py) | _O(nlogn)_ | _O(n)_      | Medium         ||
+947 | [Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/) | [C++](./C++/most-stones-removed-with-same-row-or-column.cpp) [Python](./Python/most-stones-removed-with-same-row-or-column.py) | _O(n)_ | _O(n)_      | Medium         || Union Find
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -330,6 +332,7 @@
 872| [Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/) | [C++](./C++/leaf-similar-trees.cpp) [Python](./Python/leaf-similar-trees.py) | _O(n)_  | _O(h)_         | Easy           ||
 895| [Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack/) | [C++](./C++/maximum-frequency-stack.cpp) [Python](./Python/maximum-frequency-stack.py) | _O(1)_  | _O(n)_         | Hard           || Hash
 901| [Online Stock Span](https://leetcode.com/problems/online-stock-span/) | [C++](./C++/online-stock-span.cpp) [Python](./Python/online-stock-span.py) | _O(n)_  | _O(n)_         | Medium           ||
+946| [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [C++](./C++/validate-stack-sequences.cpp) [Python](./Python/validate-stack-sequences.py) | _O(n)_  | _O(n)_         | Medium           ||
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -602,6 +605,7 @@
 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [C++](./C++/middle-of-the-linked-list.cpp) [Python](./Python/middle-of-the-linked-list.py) | _O(n)_ | _O(1)_ | Easy ||
 904 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | [C++](./C++/fruit-into-baskets.cpp) [Python](./Python/fruit-into-baskets.py) | _O(n)_ | _O(1)_ | Medium ||
 930 | [Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/) | [C++](./C++/binary-subarrays-with-sum.cpp) [Python](./Python/binary-subarrays-with-sum.py) | _O(n)_ | _O(1)_ | Medium ||
+948 | [Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/) | [C++](./C++/bag-of-tokens.cpp) [Python](./Python/bag-of-tokens.py) | _O(nlogn)_ | _O(1)_ | Medium ||
 
 ## Recursion
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
