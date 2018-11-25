@@ -605,7 +605,6 @@
 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [C++](./C++/middle-of-the-linked-list.cpp) [Python](./Python/middle-of-the-linked-list.py) | _O(n)_ | _O(1)_ | Easy ||
 904 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | [C++](./C++/fruit-into-baskets.cpp) [Python](./Python/fruit-into-baskets.py) | _O(n)_ | _O(1)_ | Medium ||
 930 | [Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/) | [C++](./C++/binary-subarrays-with-sum.cpp) [Python](./Python/binary-subarrays-with-sum.py) | _O(n)_ | _O(1)_ | Medium ||
-948 | [Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/) | [C++](./C++/bag-of-tokens.cpp) [Python](./Python/bag-of-tokens.py) | _O(nlogn)_ | _O(1)_ | Medium ||
 
 ## Recursion
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -950,6 +949,7 @@
 765 | [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/)  | [C++](./C++/couples-holding-hands.cpp) [Python](./Python/couples-holding-hands.py) | _O(n)_| _O(n)_| Hard           ||| 
 924 | [Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/)  | [C++](./C++/minimize-malware-spread.cpp) [Python](./Python/minimize-malware-spread.py) | _O(n^2)_| _O(n)_| Hard           || Union Find | 
 928 | [Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii/)  | [C++](./C++/minimize-malware-spread-ii.cpp) [Python](./Python/minimize-malware-spread-ii.py) | _O(n^2)_| _O(n)_| Hard           || Union Find | 
+948 | [Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/) | [C++](./C++/bag-of-tokens.cpp) [Python](./Python/bag-of-tokens.py) | _O(nlogn)_ | _O(1)_ | Medium || Two Pointers
 
 ## Geometry
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
