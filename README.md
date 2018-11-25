@@ -942,6 +942,7 @@
 870 | [Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/) | [C++](./C++/advantage-shuffle.cpp) [Python](./Python/advantage-shuffle.py) | _O(nlogn)_ | _O(n)_ | Medium ||
 881 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | [C++](./C++/boats-to-save-people.cpp) [Python](./Python/boats-to-save-people.py) | _O(nlogn)_ | _O(n)_ | Medium ||
 936 | [Stamping The Sequence](https://leetcode.com/problems/stamping-the-sequence/) | [C++](./C++/stamping-the-sequence.cpp) [Python](./Python/stamping-the-sequence.py) | _O((n - m) * m)_ | _O((n - m) * m)_ | Hard ||
+948 | [Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/) | [C++](./C++/bag-of-tokens.cpp) [Python](./Python/bag-of-tokens.py) | _O(nlogn)_ | _O(1)_ | Medium || Two Pointers
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -949,7 +950,6 @@
 765 | [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/)  | [C++](./C++/couples-holding-hands.cpp) [Python](./Python/couples-holding-hands.py) | _O(n)_| _O(n)_| Hard           ||| 
 924 | [Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/)  | [C++](./C++/minimize-malware-spread.cpp) [Python](./Python/minimize-malware-spread.py) | _O(n^2)_| _O(n)_| Hard           || Union Find | 
 928 | [Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii/)  | [C++](./C++/minimize-malware-spread-ii.cpp) [Python](./Python/minimize-malware-spread-ii.py) | _O(n^2)_| _O(n)_| Hard           || Union Find | 
-948 | [Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/) | [C++](./C++/bag-of-tokens.cpp) [Python](./Python/bag-of-tokens.py) | _O(nlogn)_ | _O(1)_ | Medium || Two Pointers
 
 ## Geometry
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
