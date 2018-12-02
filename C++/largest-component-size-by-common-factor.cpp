@@ -4,19 +4,14 @@
 class Solution {
 public:
     int largestComponentSize(vector<int>& A) {
+        UnionFind union_find(A.size());
         unordered_map<int, vector<int>> nodesWithCommonFactor;
         for (int i = 0; i < A.size(); ++i) {
             for (const auto& factor : primeFactors(A[i])) {
                 nodesWithCommonFactor[factor].emplace_back(i);
+                union_find.union_set(nodesWithCommonFactor[factor].front(), i);
             }
          }
-
-        UnionFind union_find(A.size());
-        for (const auto& kvp : nodesWithCommonFactor) {
-            for (const auto& node : kvp.second) {
-                union_find.union_set(kvp.second[0], node);
-            }
-        }
         return union_find.max_size();
     }
 
