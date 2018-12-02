@@ -1,4 +1,4 @@
-# Time:  O(f * n), f is the total number of unique prime factors
+# Time:  O(f * n), f is the max number of unique prime factors
 # Soace: O(f * n)
 
 import collections
