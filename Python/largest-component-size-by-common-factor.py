@@ -1,5 +1,5 @@
 # Time:  O(f * n), f is the max number of unique prime factors
-# Soace: O(p), p is the total number of unique primes
+# Soace: O(p + n), p is the total number of unique primes
 
 import collections
 
