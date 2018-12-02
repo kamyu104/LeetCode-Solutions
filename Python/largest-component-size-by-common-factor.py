@@ -1,5 +1,5 @@
 # Time:  O(f * n), f is the max number of unique prime factors
-# Soace: O(f * n)
+# Soace: O(p), p is the total number of unique primes
 
 import collections
 
@@ -51,6 +51,7 @@ class Solution(object):
         nodesWithCommonFactor = collections.defaultdict(list)
         for i in xrange(len(A)):
             for factor in primeFactors(A[i]):
-                nodesWithCommonFactor[factor].append(i)
+                if not nodesWithCommonFactor[factor]:
+                    nodesWithCommonFactor[factor].append(i)
                 union_find.union_set(nodesWithCommonFactor[factor][0], i)
         return max(union_find.size)
