@@ -47,13 +47,10 @@ class Solution(object):
                 result.append(i)
             return result
         
+        union_find = UnionFind(len(A))
         nodesWithCommonFactor = collections.defaultdict(list)
         for i in xrange(len(A)):
             for factor in primeFactors(A[i]):
                 nodesWithCommonFactor[factor].append(i)
-
-        union_find = UnionFind(len(A))
-        for _, nodes in nodesWithCommonFactor.iteritems():
-            for i in xrange(1, len(nodes)):
-                union_find.union_set(nodes[0], nodes[i])
+                union_find.union_set(nodesWithCommonFactor[factor][0], i)
         return max(union_find.size)
