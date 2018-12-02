@@ -1,15 +1,17 @@
 // Time:  O(f * n), f is the max number of unique prime factors
-// Soace: O(f * n)
+// Soace: O(p * n), p is the total number of unique primes
 
 class Solution {
 public:
     int largestComponentSize(vector<int>& A) {
         UnionFind union_find(A.size());
-        unordered_map<int, vector<int>> nodesWithCommonFactor;
+        unordered_map<int, int> nodesWithCommonFactor;
         for (int i = 0; i < A.size(); ++i) {
             for (const auto& factor : primeFactors(A[i])) {
-                nodesWithCommonFactor[factor].emplace_back(i);
-                union_find.union_set(nodesWithCommonFactor[factor].front(), i);
+                if (!nodesWithCommonFactor.count(factor)) {
+                    nodesWithCommonFactor[factor] = i;
+                }
+                union_find.union_set(nodesWithCommonFactor[factor], i);
             }
          }
         return union_find.max_size();
