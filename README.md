@@ -188,6 +188,9 @@
 941 | [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) | [C++](./C++/valid-mountain-array.cpp) [Python](./Python/valid-mountain-array.py) | _O(n)_ | _O(1)_      | Easy         ||
 945 | [Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/) | [C++](./C++/minimum-increment-to-make-array-unique.cpp) [Python](./Python/minimum-increment-to-make-array-unique.py) | _O(nlogn)_ | _O(n)_      | Medium         ||
 947 | [Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/) | [C++](./C++/most-stones-removed-with-same-row-or-column.cpp) [Python](./Python/most-stones-removed-with-same-row-or-column.py) | _O(n)_ | _O(n)_      | Medium         || Union Find
+949 | [Largest Time for Given Digits](https://leetcode.com/problems/largest-time-for-given-digits/) | [C++](./C++/largest-time-for-given-digits.cpp) [Python](./Python/largest-time-for-given-digits.py) | _O(1)_ | _O(1)_      | Easy         ||
+950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/) | [C++](./C++/reveal-cards-in-increasing-order.cpp) [Python](./Python/reveal-cards-in-increasing-order.py) | _O(n)_ | _O(n)_      | Medium         ||
+952 | [Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor/) | [C++](./C++/largest-component-size-by-common-factor.cpp) [Python](./Python/largest-component-size-by-common-factor.py) | _O(f * n)_ | _O(f * n)_      | Hard         || Union Find
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -405,6 +408,7 @@
 897| [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | [C++](./C++/increasing-order-search-tree.cpp) [Python](./Python/increasing-order-search-tree.py) | _O(n)_          | _O(h)_          | Easy           || DFS |
 919| [Complete Binary Tree Inserter](https://leetcode.com/problems/complete-binary-tree-inserter/) | [C++](./C++/complete-binary-tree-inserter.cpp) [Python](./Python/complete-binary-tree-inserter.py) | ctor: _O(n)_ <br> insert: _O(1)_ <br> get_root: _O(1)_      | _O(n)_          | Medium           |||
 938| [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/) | [C++](./C++/range-sum-of-bst.cpp) [Python](./Python/range-sum-of-bst.py) | _O(n)_          | _O(h)_          | Medium           || DFS |
+951| [Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees/) | [C++](./C++/flip-equivalent-binary-trees.cpp) [Python](./Python/flip-equivalent-binary-trees.py) | _O(n)_          | _O(h)_          | Medium           || DFS |
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
