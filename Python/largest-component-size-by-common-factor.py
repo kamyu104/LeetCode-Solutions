@@ -34,13 +34,13 @@ class Solution(object):
             d = 2
             if i%d == 0:
                 while i%d == 0:
-                    i /= d
+                    i //= d
                 result.append(d)
             d = 3
             while d*d <= i:
                 if i%d == 0:
                     while i%d == 0:
-                        i /= d
+                        i //= d
                     result.append(d)
                 d += 2
             if i > 2:
