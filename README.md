@@ -190,7 +190,7 @@
 947 | [Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/) | [C++](./C++/most-stones-removed-with-same-row-or-column.cpp) [Python](./Python/most-stones-removed-with-same-row-or-column.py) | _O(n)_ | _O(n)_      | Medium         || Union Find
 949 | [Largest Time for Given Digits](https://leetcode.com/problems/largest-time-for-given-digits/) | [C++](./C++/largest-time-for-given-digits.cpp) [Python](./Python/largest-time-for-given-digits.py) | _O(1)_ | _O(1)_      | Easy         ||
 950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/) | [C++](./C++/reveal-cards-in-increasing-order.cpp) [Python](./Python/reveal-cards-in-increasing-order.py) | _O(n)_ | _O(n)_      | Medium         ||
-952 | [Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor/) | [C++](./C++/largest-component-size-by-common-factor.cpp) [Python](./Python/largest-component-size-by-common-factor.py) | _O(f * n)_ | _O(f * n)_      | Hard         || Union Find
+952 | [Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor/) | [C++](./C++/largest-component-size-by-common-factor.cpp) [Python](./Python/largest-component-size-by-common-factor.py) | _O(f * n)_ | _O(p + n)_      | Hard         || Union Find
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
