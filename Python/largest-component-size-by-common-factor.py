@@ -29,7 +29,7 @@ class Solution(object):
         :type A: List[int]
         :rtype: int
         """
-        def primeFactors(i):  # Prime factor decomposition
+        def primeFactors(i):  # prime factor decomposition
             result = []
             d = 2
             if i%d == 0:
