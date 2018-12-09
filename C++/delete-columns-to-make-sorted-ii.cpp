@@ -1,4 +1,4 @@
-// Time:  O(n * m)
+// Time:  O(n * l)
 // Space: O(n)
 
 class Solution {
