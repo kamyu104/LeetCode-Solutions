@@ -191,6 +191,7 @@
 949 | [Largest Time for Given Digits](https://leetcode.com/problems/largest-time-for-given-digits/) | [C++](./C++/largest-time-for-given-digits.cpp) [Python](./Python/largest-time-for-given-digits.py) | _O(1)_ | _O(1)_      | Easy         ||
 950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/) | [C++](./C++/reveal-cards-in-increasing-order.cpp) [Python](./Python/reveal-cards-in-increasing-order.py) | _O(n)_ | _O(n)_      | Medium         ||
 952 | [Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor/) | [C++](./C++/largest-component-size-by-common-factor.cpp) [Python](./Python/largest-component-size-by-common-factor.py) | _O(f * n)_ | _O(p + n)_      | Hard         || Union Find
+954 | [Array of Doubled Pairs](https://leetcode.com/problems/array-of-doubled-pairs/) | [C++](./C++/array-of-doubled-pairs.cpp) [Python](./Python/array-of-doubled-pairs.py) | _O(n + klogk)_ | _O(k)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -274,6 +275,8 @@
 939 | [Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle/) | [C++](./C++/minimum-area-rectangle.cpp) [Python](./Python/minimum-area-rectangle.py) | _O(n^1.5)_ on average | _O(n)_ | Medium ||
 942 | [DI String Match](https://leetcode.com/problems/di-string-match/) | [C++](./C++/di-string-match.cpp) [Python](./Python/di-string-match.py) | _O(n)_ | _O(1)_      | Easy         ||
 944 | [Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/) | [C++](./C++/delete-columns-to-make-sorted.cpp) [Python](./Python/delete-columns-to-make-sorted.py) | _O(n * l)_ | _O(1)_      | Medium         ||
+953 | [Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/) | [C++](./C++/verifying-an-alien-dictionary.cpp) [Python](./Python/verifying-an-alien-dictionary.py) | _O(n * l)_ | _O(1)_      | Easy         ||
+955 | [Delete Columns to Make Sorted II](https://leetcode.com/problems/delete-columns-to-make-sorted-ii/) | [C++](./C++/delete-columns-to-make-sorted-ii.cpp) [Python](./Python/delete-columns-to-make-sorted-ii.py) | _O(n * l)_ | _O(n)_      | Medium         ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -908,6 +911,7 @@
 935| [Knight Dialer](https://leetcode.com/problems/knight-dialer/) | [C++](./C++/knight-dialer.cpp) [Python](./Python/knight-dialer.py) | _O(logn)_ | _O(1)_ | Medium || Matrix Exponentiation |
 940| [Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/) | [C++](./C++/distinct-subsequences-ii.cpp) [Python](./Python/distinct-subsequences-ii.py) | _O(n)_ | _O(1)_ | Hard |||
 943| [Find the Shortest Superstring](https://leetcode.com/problems/find-the-shortest-superstring/) | [C++](./C++/find-the-shortest-superstring.cpp) [Python](./Python/find-the-shortest-superstring.py) | _O(n^2 * (l^2 + 2^n))_ | _O(n^2)_ | Hard |||
+956| [Tallest Billboard](https://leetcode.com/problems/tallest-billboard/) | [C++](./C++/tallest-billboard.cpp) [Python](./Python/tallest-billboard.py) | _O(n * 3^(n/2))_ | _O(3^(n/2))_ | Hard |||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
