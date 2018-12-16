@@ -15,6 +15,30 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
+        end = False
+        current = [root]
+        while current:
+            next_level = []
+            for node in current:
+                if not node:
+                    end = True
+                    continue
+                if end:
+                    return False
+                next_level.append(node.left)
+                next_level.append(node.right)
+            current = next_level
+        return  True
+
+
+# Time:  O(n)
+# Space: O(w)
+class Solution2(object):
+    def isCompleteTree(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
         prev_level, current = [], [(root, 1)]
         count = 0
         while current:
