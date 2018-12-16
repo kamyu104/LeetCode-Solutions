@@ -21,8 +21,6 @@ class Solution2 {
 public:
     vector<int> prisonAfterNDays(vector<int>& cells, int N) {
         unordered_map<vector<int>, int, VectorHash<int>> lookup;
-        lookup[cells] = N;
-        bool is_loop = false;
         while (N) {
             lookup[cells] = N--;
             vector<int> cells2(8, 0);
@@ -30,10 +28,18 @@ public:
                 cells2[i] = static_cast<int>(cells[i - 1] == cells[i + 1]);
             }
             cells = move(cells2);
-            if (lookup.count(cells) && is_loop == false) {
+            if (lookup.count(cells)) {
                 N %= lookup[cells] - N;
-                is_loop = true;
+                break;
             }
+        }
+ 
+        while (N--) {
+            vector<int> cells2(8, 0);
+            for (int i = 1; i < 7; ++i) {
+                cells2[i] = static_cast<int>(cells[i - 1] == cells[i + 1]);
+            }
+            cells = move(cells2);
         }
         return cells;
     }
