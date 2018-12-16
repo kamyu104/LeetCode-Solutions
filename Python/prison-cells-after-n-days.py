@@ -24,7 +24,7 @@ class Solution2(object):
         :rtype: List[int]
         """
         cells = tuple(cells)
-        lookup = {cells: N}
+        lookup = {}
         while N:
             lookup[cells] = N
             N -= 1
