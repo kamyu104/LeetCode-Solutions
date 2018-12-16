@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-953%20%2F%20953-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
-* RIP to my old Leetcode repository, where there were ever `5700+` stars and `2200+` forks.  👼
-* Since free questions may be even accidentally taken down by some companies, only solutions will be post on now.
+* RIP to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
+* Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
 * For more solutions of questions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 * There are new LeetCode questions every week. I'll keep updating for full summary and better solutions.
 * Thanks for starring this repository and sending thanks notes to cheer me up. I'll make this repository better and better.
