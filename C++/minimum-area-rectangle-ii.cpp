@@ -34,7 +34,7 @@ public:
                     auto y1 = kvp.first.second;
                     auto x2 = kvp.second[i].first - kvp.second[j].first;
                     auto y2 = kvp.second[i].second - kvp.second[j].second;
-                    if (x1 * x2 + y1 * y2 == 0) {
+                    if (x1 * x2 + y1 * y2 == 0.0) {
                         result = min(result, sqrt((x1 * x1 + y1 * y1) *
                                                   (x2 * x2 + y2 * y2)));
                     }
