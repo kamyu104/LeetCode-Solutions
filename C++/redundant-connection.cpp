@@ -33,16 +33,10 @@ private:
                     return false;
                 }
                 set_[min(x_root, y_root)] = max(x_root, y_root);
-                --count_;
                 return true;
-            }
-
-            int length() const {
-                return count_;
             }
 
         private:
             vector<int> set_;
-            int count_;
     };
 };
