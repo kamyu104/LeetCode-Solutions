@@ -12,8 +12,7 @@ class UnionFind(object):
 
     def union_set(self, x, y):
         x_root, y_root = map(self.find_set, (x, y))
-        if x_root == y_root or \
-           y != y_root:  # already has a father
+        if x_root == y_root:
             return False
         self.set[y_root] = x_root
         return True
@@ -26,12 +25,12 @@ class Solution(object):
         :rtype: List[int]
         """
         cand1, cand2 = None, None
-        parents = {}
+        parent = {}
         for edge in edges:
-            if edge[1] not in parents:
-                parents[edge[1]] = edge[0]
+            if edge[1] not in parent:
+                parent[edge[1]] = edge[0]
             else:
-                cand1 = [parents[edge[1]], edge[1]]
+                cand1 = [parent[edge[1]], edge[1]]
                 cand2 = edge
 
         union_find = UnionFind(len(edges)+1)
