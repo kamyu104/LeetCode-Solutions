@@ -4,7 +4,6 @@
 class UnionFind(object):
     def __init__(self, n):
         self.set = range(n)
-        self.count = n
 
     def find_set(self, x):
         if self.set[x] != x:
@@ -16,7 +15,6 @@ class UnionFind(object):
         if x_root == y_root:
             return False
         self.set[min(x_root, y_root)] = max(x_root, y_root)
-        self.count -= 1
         return True
 
 
@@ -31,5 +29,3 @@ class Solution(object):
             if not union_find.union_set(*edge):
                 return edge
         return []
-
-
