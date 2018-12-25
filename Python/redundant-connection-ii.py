@@ -42,4 +42,3 @@ class Solution(object):
                 return cand1 if cand2 else edge
         return cand2
 
-
