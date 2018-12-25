@@ -45,7 +45,7 @@ private:
                 if (x_root == y_root) {
                     return false;
                 }
-                set_[y_root] = x_root;
+                set_[min(x_root, y_root)] = max(x_root, y_root);
                 return true;
             }
 
