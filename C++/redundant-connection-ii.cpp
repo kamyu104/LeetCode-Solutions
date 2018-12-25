@@ -14,6 +14,7 @@ public:
                 cand2 = edge;
             }
         }
+
         UnionFind union_find(edges.size() + 1);
         for (const auto& edge : edges) {
             if (edge == cand2) {
