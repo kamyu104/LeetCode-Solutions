@@ -42,10 +42,10 @@ private:
 
             bool union_set(const int x, const int y) {
                 int x_root = find_set(x), y_root = find_set(y);
-                if (x_root == y_root || y != y_root) {
+                if (x_root == y_root) {
                     return false;
                 }
-                set_[y] = x_root;
+                set_[y_root] = x_root;
                 return true;
             }
 
