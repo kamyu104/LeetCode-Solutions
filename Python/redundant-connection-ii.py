@@ -24,7 +24,7 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        cand1, cand2 = None, None
+        cand1, cand2 = [], []
         parent = {}
         for edge in edges:
             if edge[1] not in parent:
