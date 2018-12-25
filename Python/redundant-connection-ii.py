@@ -14,7 +14,7 @@ class UnionFind(object):
         x_root, y_root = map(self.find_set, (x, y))
         if x_root == y_root:
             return False
-        self.set[y_root] = x_root
+        self.set[min(x_root, y_root)] = max(x_root, y_root)
         return True
 
 
