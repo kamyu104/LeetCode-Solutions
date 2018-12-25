@@ -4,19 +4,32 @@
 class Solution {
 public:
     vector<int> findRedundantDirectedConnection(vector<vector<int>>& edges) {
-        UnionFind union_find(edges.size() + 1);
+        vector<int> cand1, cand2;
+        unordered_map<int, int> parent;
         for (const auto& edge : edges) {
-            if (!union_find.union_set(edge[0], edge[1])) {
-                return edge;
+            if (!parent.count(edge[1])) {
+                parent[edge[1]] = edge[0];
+            } else {
+                cand1 = {parent[edge[1]], edge[1]};
+                cand2 = edge;
             }
         }
-        return {};
+        UnionFind union_find(edges.size() + 1);
+        for (const auto& edge : edges) {
+            if (edge == cand2) {
+                continue;
+            }
+            if (!union_find.union_set(edge[0], edge[1])) {
+                return cand2.empty() ? edge : cand1;
+            }
+        }
+        return cand2;
     }
 
 private:
     class UnionFind {
         public:
-            UnionFind(const int n) : set_(n), count_(n) {
+            UnionFind(const int n) : set_(n) {
                 iota(set_.begin(), set_.end(), 0);
             }
 
@@ -32,17 +45,11 @@ private:
                 if (x_root == y_root || y != y_root) {
                     return false;
                 }
-                set_[y_root] = x_root;
-                --count_;
+                set_[y] = x_root;
                 return true;
-            }
-
-            int length() const {
-                return count_;
             }
 
         private:
             vector<int> set_;
-            int count_;
     };
 };
