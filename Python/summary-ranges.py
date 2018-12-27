@@ -1,8 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
 
-import bisect
-import collections
 import itertools
 import re
 
