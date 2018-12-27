@@ -21,7 +21,7 @@ class PeekingIterator(object):
         if not self.has_peeked_:
             self.has_peeked_ = True
             self.val_ = self.iterator.next()
-        return self.val_;
+        return self.val_
 
     def next(self):
         """
@@ -30,7 +30,7 @@ class PeekingIterator(object):
         self.val_ = self.peek()
         self.has_peeked_ = False
         self.has_next_ = self.iterator.hasNext()
-        return self.val_;
+        return self.val_
 
     def hasNext(self):
         """
