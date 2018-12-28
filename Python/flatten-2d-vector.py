@@ -1,33 +1,29 @@
-# Time:  O(1)
-# Space: O(1)
+# Time:  O(n)
+# Space: O(k)
+
+from collections import deque
+
 
 class Vector2D(object):
-    x, y = 0, 0
-    vec = None
 
-    # Initialize your data structure here.
-    # @param {integer[][]} vec2d
     def __init__(self, vec2d):
-        self.vec = vec2d
-        self.x = 0
-        if self.x != len(self.vec):
-            self.y = 0
-            self.adjustNextIter()
+        """
+        Initialize your data structure here.
+        :type vec2d: List[List[int]]
+        """
+        self.stack = deque((len(v), iter(v)) for v in vec2d if v)
 
-    # @return {integer}
     def next(self):
-        ret = self.vec[self.x][self.y]
-        self.y += 1
-        self.adjustNextIter()
-        return ret
+        """
+        :rtype: int
+        """
+        length, iterator = self.stack.popleft()
+        if length > 1:
+            self.stack.appendleft((length-1, iterator))
+        return next(iterator)
 
-    # @return {boolean}
     def hasNext(self):
-        return self.x != len(self.vec) and self.y != len(self.vec[self.x])
-
-    def adjustNextIter(self):
-        while self.x != len(self.vec) and self.y == len(self.vec[self.x]):
-            self.x += 1
-            if self.x != len(self.vec):
-                self.y = 0
-
+        """
+        :rtype: bool
+        """
+        return bool(self.stack)
