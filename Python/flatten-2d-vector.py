@@ -1,5 +1,5 @@
-# Time:  O(n)
-# Space: O(k)
+# Time:  O(1)
+# Space: O(1)
 
 from collections import deque
 
