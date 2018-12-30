@@ -28,7 +28,10 @@ private:
             ++(*result);
             return CAMERA;
         }
-        return (left == CAMERA || right == CAMERA) ? COVERED : UNCOVERED;
+        if (left == CAMERA || right == CAMERA) {
+            return COVERED;
+        }
+        return UNCOVERED;
     }
     
     enum NODE {
