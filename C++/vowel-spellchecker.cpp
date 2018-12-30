@@ -4,7 +4,7 @@
 class Solution {
 public:
     vector<string> spellchecker(vector<string>& wordlist, vector<string>& queries) {
-        unordered_set<string> words(wordlist.begin(), wordlist.end());
+        unordered_set<string> words(wordlist.cbegin(), wordlist.cend());
         unordered_map<string, string> caps, vows;
         for (const auto& word : wordlist) {
             const auto& lower = tolow(word);
