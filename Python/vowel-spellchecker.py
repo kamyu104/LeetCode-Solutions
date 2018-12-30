@@ -8,8 +8,9 @@ class Solution(object):
         :type queries: List[str]
         :rtype: List[str]
         """
+        vowels = set(['a', 'e', 'i', 'o', 'u'])
         def todev(word):
-            return "".join('*' if c.lower() in set(['a', 'e', 'i', 'o', 'u']) else c.lower()
+            return "".join('*' if c.lower() in vowels else c.lower()
                            for c in word)
 
         words = set(wordlist)
