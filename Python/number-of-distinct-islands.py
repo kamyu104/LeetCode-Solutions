@@ -17,7 +17,7 @@ class Solution(object):
                 return False
             grid[i][j] *= -1
             for k, v in directions.iteritems():
-                island.append(k);
+                island.append(k)
                 dfs(i+v[0], j+v[1], grid, island)
             return True
 
