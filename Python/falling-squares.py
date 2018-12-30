@@ -63,14 +63,16 @@ class SegmentTree(object):
             if R & 1 == 0:
                 self.__apply(R, h)
                 R -= 1
-            L /= 2 R /= 2
+            L /= 2
+            R /= 2
         self.__pull(L0)
         self.__pull(R0)
 
     def query(self, L, R):
         L += self.N
         R += self.N
-        self.__push(L) self.__push(R)
+        self.__push(L)
+        self.__push(R)
         result = 0
         while L <= R:
             if L & 1:
@@ -79,7 +81,8 @@ class SegmentTree(object):
             if R & 1 == 0:
                 result = self.query_fn(result, self.tree[R])
                 R -= 1
-            L /= 2 R /= 2
+            L /= 2
+            R /= 2
         return result
 
 
