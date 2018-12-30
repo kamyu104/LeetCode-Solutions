@@ -726,7 +726,7 @@
 317| [Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/)| [C++](./C++/shortest-distance-from-all-buildings.cpp) [Python](./Python/shortest-distance-from-all-buildings.py)   | _O(k * m * n)_          | _O(m * n)_          | Hard         | 🔒 |
 433| [Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/)| [C++](./C++/minimum-genetic-mutation.cpp) [Python](./Python/minimum-genetic-mutation.py)   | _O(n * b)_          | _O(b)_          | Medium         ||
 444| [Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction/)| [C++](./C++/sequence-reconstruction.cpp) [Python](./Python/sequence-reconstruction.py)   | _O(n * s)_          | _O(n)_          | Medium         |🔒| Topological Sort |
-490| [The Maze](https://leetcode.com/problems/the-maze/)| [C++](./C++/the-maze.cpp) [Python](./Python/the-maze.py) | _O(max(r, c) * wlogw)_ | _O(w)_ | Medium | | |
+490| [The Maze](https://leetcode.com/problems/the-maze/)| [C++](./C++/the-maze.cpp) [Python](./Python/the-maze.py) | _O(max(r, c) * w)_ | _O(w)_ | Medium | | |
 499| [The Maze III](https://leetcode.com/problems/the-maze-iii/)| [C++](./C++/the-maze-iii.cpp) [Python](./Python/the-maze-iii.py) | _O(max(r, c) * wlogw)_ | _O(w^2)_ | Hard | | |
 505| [The Maze II](https://leetcode.com/problems/the-maze-ii/)| [C++](./C++/the-maze-ii.cpp) [Python](./Python/the-maze-ii.py) | _O(max(r, c) * wlogw)_ | _O(w)_ | Medium | | |
 542| [01 Matrix](https://leetcode.com/problems/01-matrix/)| [C++](./C++/01-matrix.cpp) [Python](./Python/01-matrix.py)   | _O(m * n)_          | _O(m * n)_          | Medium         || DP
