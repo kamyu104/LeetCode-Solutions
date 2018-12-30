@@ -11,6 +11,7 @@ public:
             caps.emplace(lower, word);
             vows.emplace(todev(lower), word);
         }
+
         for (auto& query : queries) {
             if (words.count(query)) {
                 continue;
