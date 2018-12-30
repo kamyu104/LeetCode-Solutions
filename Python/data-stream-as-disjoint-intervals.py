@@ -37,7 +37,7 @@ class SummaryRanges(object):
         while i != len(self.__intervals) and \
               end + 1 >= self.__intervals[i].start:
             start = min(start, self.__intervals[i].start)
-            end = max(end, self.__intervals[i].end);
+            end = max(end, self.__intervals[i].end)
             del self.__intervals[i]
         self.__intervals.insert(i, Interval(start, end))
 

@@ -17,7 +17,7 @@ class Solution(object):
             if days[i] < days[left] or days[i] <= days[right]:
                 if i == right:
                     result = min(result, max(days[left], days[right]))
-                left, right = i, k+1+i;
+                left, right = i, k+1+i
             i += 1
         return -1 if result == float("inf") else result+1
 

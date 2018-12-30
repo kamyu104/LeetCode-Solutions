@@ -23,7 +23,7 @@ class Solution(object):
             right += num
 
         while left <= right:
-            mid = left + (right - left) / 2;
+            mid = left + (right - left) / 2
             if canSplit(nums, m, mid):
                 right = mid - 1
             else:

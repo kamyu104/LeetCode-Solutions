@@ -5,7 +5,7 @@ class Solution(object):
     # @param {integer} n
     # @return {integer}
     def countDigitOne(self, n):
-        k = 1;
+        k = 1
         cnt, multiplier, left_part = 0, 1, n
 
         while left_part > 0:

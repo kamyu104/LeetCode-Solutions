@@ -110,6 +110,6 @@ class Solution3(object):
                     s[i][j] = side
                     max_square_area = max(max_square_area, side * side)
 
-        return max_square_area;
+        return max_square_area
 
 

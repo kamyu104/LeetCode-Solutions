@@ -14,7 +14,7 @@ class Solution(object):
                 if idx == len(bottom)-1:
                     return pyramidTransitionHelper("".join(new_bottom), edges, lookup)
                 for i in edges[ord(bottom[idx])-ord('A')][ord(bottom[idx+1])-ord('A')]:
-                    new_bottom[idx] = chr(i+ord('A'));
+                    new_bottom[idx] = chr(i+ord('A'))
                     if dfs(bottom, edges, new_bottom, idx+1, lookup):
                         return True
                 return False

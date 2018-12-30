@@ -42,7 +42,7 @@ class Solution2(object):
             if root is None:
                 return 0
 
-            curr = prev + root.val;
+            curr = prev + root.val
             return int(curr == sum) + \
                    pathSumHelper(root.left, curr, sum) + \
                    pathSumHelper(root.right, curr, sum)

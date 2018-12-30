@@ -44,7 +44,7 @@ class Solution2(object):
         while q:
             curr = q.popleft()
             employee = employees[curr-1]
-            result += employee.importance;
+            result += employee.importance
             for id in employee.subordinates:
                 q.append(id)
         return result

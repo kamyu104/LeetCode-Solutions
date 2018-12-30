@@ -94,7 +94,7 @@ class Solution_TLE(object):
                 accu_sum = 0
                 for sum in sums:
                     accu_sum += sum
-                    node = accu_sum_set.lower_bound(accu_sum - k);
+                    node = accu_sum_set.lower_bound(accu_sum - k)
                     if node:
                         result = max(result, accu_sum - node.val)
                     accu_sum_set.insert(accu_sum)

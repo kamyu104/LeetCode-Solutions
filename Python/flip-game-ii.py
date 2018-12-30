@@ -12,7 +12,7 @@ class Solution(object):
         g, g_final = [0], 0
         for p in itertools.imap(len, re.split('-+', s)):
             while len(g) <= p:
-                # Theorem 2: g[game] = g[subgame1]^g[subgame2]^g[subgame3]...;
+                # Theorem 2: g[game] = g[subgame1]^g[subgame2]^g[subgame3]...
                 # and find first missing number.
                 g += min(set(xrange(p)) - {x^y for x, y in itertools.izip(g[:len(g)/2], g[-2:-len(g)/2-2:-1])}),
             g_final ^= g[p]

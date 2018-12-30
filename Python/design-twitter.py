@@ -44,10 +44,10 @@ class Twitter(object):
         result = []
         while max_heap and len(result) < self.__number_of_most_recent_tweets:
             t, uid, curr = heapq.heappop(max_heap)
-            nxt = curr + 1;
+            nxt = curr + 1
             if nxt != len(self.__messages[uid]):
                 heapq.heappush(max_heap, (-self.__messages[uid][-(nxt+1)][0], uid, nxt))
-            result.append(self.__messages[uid][-(curr+1)][1]);
+            result.append(self.__messages[uid][-(curr+1)][1])
         return result
 
     def follow(self, followerId, followeeId):

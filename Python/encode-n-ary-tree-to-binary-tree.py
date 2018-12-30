@@ -26,16 +26,16 @@ class Codec(object):
         def encodeHelper(root, parent, index):
             if not root:
                 return None
-            node = TreeNode(root.val);
+            node = TreeNode(root.val)
             if index+1 < len(parent.children):
                 node.left = encodeHelper(parent.children[index+1], parent, index+1)
             if root.children:
-                node.right = encodeHelper(root.children[0], root, 0);
+                node.right = encodeHelper(root.children[0], root, 0)
             return node
 
         if not root:
             return None
-        node = TreeNode(root.val);
+        node = TreeNode(root.val)
         if root.children:
             node.right = encodeHelper(root.children[0], root, 0)
         return node

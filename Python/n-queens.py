@@ -29,7 +29,7 @@ class Solution(object):
 
 # For any point (x,y), if we want the new point (p,q) don't share the same row, column, or diagonal.
 # then there must have ```p+q != x+y``` and ```p-q!= x-y```
-# the former focus on eliminate 'left bottom right top' diagonal;
+# the former focus on eliminate 'left bottom right top' diagonal
 # the latter focus on eliminate 'left top right bottom' diagonal
 
 # - col_per_row: the list of column index per row

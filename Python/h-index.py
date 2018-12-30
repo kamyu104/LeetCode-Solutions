@@ -7,7 +7,7 @@ class Solution(object):
         :type citations: List[int]
         :rtype: int
         """
-        n = len(citations);
+        n = len(citations)
         count = [0] * (n + 1)
         for x in citations:
             # Put all x >= n in the same bucket.

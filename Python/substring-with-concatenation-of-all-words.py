@@ -23,7 +23,7 @@ class Solution(object):
             left, count = i, 0
             tmp = collections.defaultdict(int)
             for j in xrange(i, m-k+1, k): # Time:  O(m / k)
-                s1 = s[j:j+k];            # Time:  O(k)
+                s1 = s[j:j+k]             # Time:  O(k)
                 if s1 in lookup:
                     tmp[s1] += 1
                     if tmp[s1] <= lookup[s1]:

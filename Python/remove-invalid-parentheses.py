@@ -51,7 +51,7 @@ class Solution(object):
                 elif right_removed > 0 and s[i] == ')':
                     if i == start or s[i] != s[i - 1]:  # Skip duplicated.
                         removed[i] = True
-                        removeInvalidParenthesesHelper(i + 1, left_removed, right_removed - 1);
+                        removeInvalidParenthesesHelper(i + 1, left_removed, right_removed - 1)
                         del removed[i]
 
         res, removed = [], {}

@@ -9,7 +9,7 @@ class Solution(object):
         :rtype: int
         """
         dp = [0] * (amount+1)
-        dp[0] = 1;
+        dp[0] = 1
         for coin in coins:
             for i in xrange(coin, amount+1):
                 dp[i] += dp[i-coin]

@@ -26,7 +26,7 @@ class Solution(object):
         total = accu[n]-accu[n-k]
         for i in reversed(xrange(n-k)):
             if accu[i+k]-accu[i] > total:
-                right_pos[i] = i;
+                right_pos[i] = i
                 total = accu[i+k]-accu[i]
             else:
                 right_pos[i] = right_pos[i+1]

@@ -19,7 +19,7 @@ class Solution(object):
                     left = mid + 1
             # If not found, append the target.
             if left == len(LIS):
-                LIS.append(target);
+                LIS.append(target)
             else:
                 LIS[left] = target
 

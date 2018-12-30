@@ -16,7 +16,7 @@ class Solution(object):
         if not possible(n, s):
             return False
 
-        sums = [set() for _ in xrange(n//2+1)];
+        sums = [set() for _ in xrange(n//2+1)]
         sums[0].add(0)
         for num in A:  # O(n) times
             for i in reversed(xrange(1, n//2+1)):  # O(n) times

@@ -121,9 +121,9 @@ class Solution3(object):
                 if node.val < curr.val:
                     curr.count += 1  # Increase the number of left children.
                     if curr.left:
-                        curr = curr.left;
+                        curr = curr.left
                     else:
-                        curr.left = node;
+                        curr.left = node
                         break
                 else:  # Insert right if larger or equal.
                     if curr.right:

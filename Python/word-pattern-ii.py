@@ -30,9 +30,9 @@ class Solution(object):
                     w = str[j:k+1]
                     if w not in w2p:
                         # Build mapping. Space: O(n + c)
-                        w2p[w], p2w[p] = p, w;
+                        w2p[w], p2w[p] = p, w
                         is_match = self.match(pattern, str, i + 1, k + 1, w2p, p2w)
-                        w2p.pop(w), p2w.pop(p);
+                        w2p.pop(w), p2w.pop(p)
                     if is_match:
                         break
         return is_match

@@ -20,6 +20,6 @@ class Solution(object):
         result = [[0 for _ in xrange(len(M[0]))] for _ in xrange(len(M))]
         for i in xrange(len(M)):
             for j in xrange(len(M[0])):
-                result[i][j] = getGray(M, i, j);
+                result[i][j] = getGray(M, i, j)
         return result
 

@@ -12,7 +12,7 @@ class Solution(object):
         :rtype: str
         """
         lookup = set(banned)
-        counts = collections.Counter(word.strip("!?',;.")
+        counts = collections.Counter(word.strip("!?',.")
                                      for word in paragraph.lower().split())
 
         result = ''

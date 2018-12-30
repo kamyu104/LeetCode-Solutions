@@ -84,7 +84,7 @@ class Solution_3(object):
             return -1.0
         lenA = len(A)
         lenB = len(B)
-        lenn = lenA + lenB;
+        lenn = lenA + lenB
 
         indexA,indexB,indexC = 0,0,0
         C = [False for i in xrange(lenn)]

@@ -8,7 +8,7 @@ class Solution(object):
         :type k: int
         :rtype: str
         """
-        cnts = [0] * 26;
+        cnts = [0] * 26
         for c in str:
             cnts[ord(c) - ord('a')] += 1
 

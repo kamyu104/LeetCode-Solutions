@@ -32,7 +32,7 @@ class Solution(object):
         for char in s:
             inputType = InputType.INVALID
             if char.isspace():
-                inputType = InputType.SPACE;
+                inputType = InputType.SPACE
             elif char == '+' or char == '-':
                 inputType = InputType.SIGN
             elif char.isdigit():
@@ -40,12 +40,12 @@ class Solution(object):
             elif char == '.':
                 inputType = InputType.DOT
             elif char == 'e' or char == 'E':
-                inputType = InputType.EXPONENT;
+                inputType = InputType.EXPONENT
 
-            state = transition_table[state][inputType];
+            state = transition_table[state][inputType]
 
             if state == -1:
-                return False;
+                return False
 
         return state == 1 or state == 4 or state == 7 or state == 8
 

@@ -66,7 +66,7 @@ class MaxStack(object):
 
     def __remove(self, val):
         idx = self.__val_to_idxs[val][-1]
-        self.__val_to_idxs[val].pop();
+        self.__val_to_idxs[val].pop()
         if not self.__val_to_idxs[val]:
             del self.__val_to_idxs[val]
         del self.__idx_to_val[idx]

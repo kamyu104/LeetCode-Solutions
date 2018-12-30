@@ -39,7 +39,7 @@ class Solution(object):
                             count += 1
                     else:
                         if num[-1] >= val:  # num is like "102".
-                            count += self.countStrobogrammaticUntil(self.getMid(num), True);
+                            count += self.countStrobogrammaticUntil(self.getMid(num), True)
                         elif (self.getMid(num) != '0' * (len(num) - 2)):  # num is like "110".
                             count += self.countStrobogrammaticUntil(self.getMid(num), True) - \
                                      self.isStrobogrammatic(self.getMid(num))

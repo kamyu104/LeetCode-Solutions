@@ -10,7 +10,7 @@ class Solution(object):
         if len(nums) % 2 == 0 or len(nums) == 1:
             return True
 
-        dp = [0] * len(nums);
+        dp = [0] * len(nums)
         for i in reversed(xrange(len(nums))):
             dp[i] = nums[i]
             for j in xrange(i+1, len(nums)):

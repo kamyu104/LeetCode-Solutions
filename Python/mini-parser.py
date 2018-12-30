@@ -61,7 +61,7 @@ class Solution(object):
                     stk[-1].add(NestedInteger(int(s[i:j])))
                 if s[j] == ']' and len(stk) > 1:
                     cur = stk[-1]
-                    stk.pop();
+                    stk.pop()
                     stk[-1].add(cur)
                 i = j+1
 

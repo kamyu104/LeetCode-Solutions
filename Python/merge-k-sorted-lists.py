@@ -33,7 +33,7 @@ class Solution(object):
 
         if not lists:
             return None
-        left, right = 0, len(lists) - 1;
+        left, right = 0, len(lists) - 1
         while right > 0:
             if left >= right:
                 left = 0

@@ -50,7 +50,7 @@ class Solution2(object):
         q.append(kill)
         while q:
             p = q.popleft()
-            result.append(p);
+            result.append(p)
             for child in children[p]:
                 q.append(child)
         return result

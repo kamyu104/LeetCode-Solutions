@@ -24,7 +24,7 @@ class RangeModule(object):
                 tmp.append((left, right))
                 break
             elif interval[1] < left:
-                tmp.append(interval);
+                tmp.append(interval)
             else:
                 left = min(left, interval[0])
                 right = max(right, interval[1])

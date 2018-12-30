@@ -12,7 +12,7 @@ class Solution(object):
         def count(target, m, n):
             return sum(min(target//i, n) for i in xrange(1, m+1))
 
-        left, right = 1, m*n;
+        left, right = 1, m*n
         while left <= right:
             mid = left + (right-left)/2
             if count(mid, m, n) >= k:

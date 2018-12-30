@@ -26,8 +26,8 @@ class Excel(object):
         :type v: int
         :rtype: void
         """
-        self.__reset_dependency(r, c);
-        self.__update_others(r, c, v);
+        self.__reset_dependency(r, c)
+        self.__update_others(r, c, v)
 
 
     def get(self, r, c):

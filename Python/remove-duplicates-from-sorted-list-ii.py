@@ -22,7 +22,7 @@ class Solution(object):
         pre, cur = dummy, head
         while cur:
             if cur.next and cur.next.val == cur.val:
-                val = cur.val;
+                val = cur.val
                 while cur and cur.val == val:
                     cur = cur.next
                 pre.next = cur

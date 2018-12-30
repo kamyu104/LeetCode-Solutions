@@ -18,7 +18,7 @@ class Solution(object):
                 else:
                     cnt = 1
             if cnt > max_cnt:
-                max_cnt = cnt;
+                max_cnt = cnt
                 del result[:]
                 result.append(root.val)
             elif cnt == max_cnt:
@@ -28,6 +28,6 @@ class Solution(object):
         if not root:
             return []
         result = []
-        inorder(root, None, 1, 0, result);
+        inorder(root, None, 1, 0, result)
         return result
 

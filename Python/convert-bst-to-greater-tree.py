@@ -14,7 +14,7 @@ class Solution(object):
             if root.right:
                 cur_sum = convertBSTHelper(root.right, cur_sum)
             cur_sum += root.val
-            root.val = cur_sum;
+            root.val = cur_sum
             if root.left:
                 cur_sum = convertBSTHelper(root.left, cur_sum)
             return cur_sum
