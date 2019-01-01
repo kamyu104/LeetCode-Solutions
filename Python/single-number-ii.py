@@ -13,6 +13,7 @@ class Solution(object):
             one, two = (~x & one) | (x & ~one & ~two), (~x & two) | (x & one)
         return one
 
+
 class Solution2(object):
     # @param A, a list of integer
     # @return an integer
