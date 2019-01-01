@@ -42,13 +42,3 @@ class Solution2(object):
         for i in xrange(n):
             prev, current = current, prev + current,
         return current
-
-    # Time:  O(2^n)
-    # Space: O(n)
-    def climbStairs1(self, n):
-        if n == 1:
-            return 1
-        if n == 2:
-            return 2
-        return self.climbStairs(n - 1) + self.climbStairs(n - 2)
-
