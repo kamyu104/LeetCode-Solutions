@@ -831,7 +831,7 @@
 062| [Unique Paths](https://leetcode.com/problems/unique-paths/)    | [Python](./Python/unique-paths.py)| _O(m * n)_      | _O(m + n)_   | Medium         ||
 063| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [Python](./Python/unique-paths-ii.py) |  _O(m * n)_ | _O(m + n)_   | Medium         ||
 064| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [Python](./Python/minimum-path-sum.py)| _O(m * n)_ | _O(m + n)_     | Medium         ||
-070| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [Python](./Python/climbing-stairs.py) | _O(n)_    | _O(1)_          | Easy           ||
+070| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [C++](./C++/climbing-stairs.cpp) [Python](./Python/climbing-stairs.py) | _O(logn)_    | _O(1)_          | Easy           || Matrix Exponentiation
 072| [Edit Distance](https://leetcode.com/problems/edit-distance/)|[Python](./Python/edit-distance.py)| _O(m * n)_      | _O(m + n)_      | Hard           ||
 087| [Scramble String](https://leetcode.com/problems/scramble-string/) | [Python](./Python/scramble-string.py) | _O(n^4)_ | _O(n^3)_        | Hard           ||
 091| [Decode Ways](https://leetcode.com/problems/decode-ways/)   | [C++](./Python/decode-ways.cpp) [Python](./Python/decode-ways.py)| _O(n)_          | _O(1)_          | Medium         ||
