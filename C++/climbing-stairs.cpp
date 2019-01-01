@@ -6,7 +6,6 @@ public:
     int climbStairs(int n) {
 	vector<vector<int>> T = {{1, 1},
                                  {1, 0}};
-
         return matrixExpo(T, n)[0][0];
     }
 
