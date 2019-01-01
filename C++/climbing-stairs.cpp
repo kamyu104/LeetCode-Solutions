@@ -42,7 +42,7 @@ private:
     }
 };
 
-// Time:  O(logn)
+// Time:  O(n)
 // Space: O(1)
 class Solution2 {
 public:
