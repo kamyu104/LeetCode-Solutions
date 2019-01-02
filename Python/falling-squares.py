@@ -1,4 +1,4 @@
-# Time:  O(nlogn)
+# Time:  O(n^2), could be improved to O(nlogn) in cpp by ordered map (bst)
 # Space: O(n)
 
 import bisect
