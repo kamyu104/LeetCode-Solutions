@@ -88,7 +88,7 @@ class Solution(object):
 
 # If the given array is already sorted, and the memory is limited or m ~ n.
 # Time:  O(m + n)
-# Soace: O(1)
+# Space: O(1)
 # Two pointers solution.
 class Solution(object):
     def intersect(self, nums1, nums2):

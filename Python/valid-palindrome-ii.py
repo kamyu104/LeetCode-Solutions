@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Soace: O(1)
+# Space: O(1)
 
 class Solution(object):
     def validPalindrome(self, s):
