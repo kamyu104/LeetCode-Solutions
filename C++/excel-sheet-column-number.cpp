@@ -17,11 +17,11 @@ public:
 // Space: O(1)
 
 class Solution2 {
-    public:
-        int titleToNumber(string s) {
-            return accumulate(s.begin(), s.end(), 0,
-                              [](int sum, char c) { 
-                                  return sum * 26 + c - 'A' + 1; 
-                              });
+public:
+    int titleToNumber(string s) {
+        return accumulate(s.begin(), s.end(), 0,
+                          [](int sum, char c) { 
+                              return sum * 26 + c - 'A' + 1; 
+                          });
     }
 };
