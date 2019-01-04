@@ -845,7 +845,7 @@
 152| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|[Python](./Python/maximum-product-subarray.py)| _O(n)_ | _O(1)_ | Medium     ||
 174| [Dungeon Game](https://leetcode.com/problems/dungeon-game/)  | [Python](./Python/dungeon-game.py)| _O(m * n)_     | _O(m + n)_      | Hard           ||
 188| [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)| [Python](./Python/best-time-to-buy-and-sell-stock-iv.py) | _O(k * n)_ | _O(k)_ | Hard ||
-198| [House Robber](https://leetcode.com/problems/house-robber/)| [Python](./Python/house-robber.py) | _O(n)_          | _O(1)_          | Easy           ||
+198| [House Robber](https://leetcode.com/problems/house-robber/)| [C++](./C++/house-robber.cpp) [Python](./Python/house-robber.py) | _O(n)_          | _O(1)_          | Easy           ||
 213| [House Robber II](https://leetcode.com/problems/house-robber-ii/)| [C++](./C++/house-robber-ii.cpp) [Python](./Python/house-robber-ii.py) | _O(n)_          | _O(1)_          | Medium           ||
 221| [Maximal Square](https://leetcode.com/problems/maximal-square/)| [C++](./C++/maximal-square.cpp) [Python](./Python/maximal-square.py) | _O(n^2)_         | _O(n)_          | Medium           | EPI |
 256| [Paint House](https://leetcode.com/problems/paint-house/) | [C++](./C++/paint-house.cpp) [Python](./Python/paint-house.py) | _O(n)_| _O(1)_| Medium |🔒||
