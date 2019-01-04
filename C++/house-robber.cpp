@@ -6,7 +6,7 @@ public:
     int rob(vector<int>& nums) {
         int last = 0, result = 0;
         for (const auto i : nums) {
-            int tmp = result;
+            auto tmp = result;
             result = max(last + i,result);
             last = tmp;
         }
