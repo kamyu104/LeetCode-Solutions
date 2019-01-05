@@ -16,5 +16,3 @@ class Solution(object):
                 result += '-'
             result += S[i].upper()
         return "".join(reversed(result))
-
-
