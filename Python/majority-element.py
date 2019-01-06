@@ -30,3 +30,9 @@ class Solution(object):
         """
         return sorted(collections.Counter(nums).items(), key=lambda a: a[1], reverse=True)[0][0]
 
+    def majorityElement3(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        return collections.Counter(nums).most_common(1)[0][0]
