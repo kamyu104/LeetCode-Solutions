@@ -34,7 +34,7 @@ public:
 class Solution2 {
 public:
     ListNode* removeElements(ListNode* head, int val) {
-        for (auto* indirect = &head; *indirect != nullptr; ) {
+        for (auto indirect = &head; *indirect != nullptr; ) {
             if ((*indirect)->val == val) {
                 *indirect = (*indirect)->next;
                 continue;
