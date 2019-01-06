@@ -86,21 +86,21 @@ private:
         }
 
         Fraction result(stol(S.substr(0, i)), 1);
-        const auto& non_repeat_part = S.substr(i + 1);
-        i = non_repeat_part.find('(');
+        const auto& non_int_part = S.substr(i + 1);
+        i = non_int_part.find('(');
         if (i == string::npos) {
-            if (!non_repeat_part.empty()) {
-                result += Fraction(stol(non_repeat_part),
-                                   static_cast<int64_t>(pow(10, non_repeat_part.length())));
+            if (!non_int_part.empty()) {
+                result += Fraction(stol(non_int_part),
+                                   static_cast<int64_t>(pow(10, non_int_part.length())));
             }
             return result;
         }
 
         if (i > 0) {
-            result += Fraction(stol(non_repeat_part.substr(0, i)),
+            result += Fraction(stol(non_int_part.substr(0, i)),
                                static_cast<int64_t>(pow(10, i)));
         }
-        const auto& repeat_part = non_repeat_part.substr(i + 1, non_repeat_part.length() - i - 2);
+        const auto& repeat_part = non_int_part.substr(i + 1, non_int_part.length() - i - 2);
         result += Fraction(stol(repeat_part),
                            static_cast<int64_t>(pow(10, i)) *
                            (static_cast<int64_t>(pow(10, repeat_part.length())) - 1));
