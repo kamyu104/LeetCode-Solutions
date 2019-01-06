@@ -14,7 +14,7 @@ public:
     ListNode* removeElements(ListNode* head, int val) {
         ListNode dummy{0};
         dummy.next = head;
-        auto *prev = &dummy, *cur = dummy.next;
+        auto prev = &dummy, cur = dummy.next;
         
         while (cur) {
             if (cur->val == val) {
