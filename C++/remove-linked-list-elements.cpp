@@ -28,3 +28,19 @@ public:
         return dummy.next;
     }
 };
+
+// Time:  O(n)
+// Space: O(1)
+class Solution2 {
+public:
+    ListNode* removeElements(ListNode* head, int val) {
+        for (auto *indirect = &head; *indirect != nullptr; ) {
+            if ((*indirect)->val == val) {
+                *indirect = (*indirect)->next;
+                continue;
+            }
+            indirect = &((*indirect)->next) ; 
+        }
+        return head;
+    }
+};
