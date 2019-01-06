@@ -17,16 +17,16 @@ class Solution(object):
 
             i = S.index('.')
             result = Fraction(int(S[:i]), 1)
-            non_repeat_part = S[i+1:]
-            if '(' not in non_repeat_part:
-                if non_repeat_part:
-                    result += Fraction(int(non_repeat_part), 10**len(non_repeat_part))
+            non_int_part = S[i+1:]
+            if '(' not in non_int_part:
+                if non_int_part:
+                    result += Fraction(int(non_int_part), 10**len(non_int_part))
                 return result
 
-            i = non_repeat_part.index('(')
+            i = non_int_part.index('(')
             if i:
-                result += Fraction(int(non_repeat_part[:i]), 10**i)
-            repeat_part = non_repeat_part[i+1:-1]
+                result += Fraction(int(non_int_part[:i]), 10**i)
+            repeat_part = non_int_part[i+1:-1]
             result += Fraction(int(repeat_part), 10**i * (10**len(repeat_part)-1))
             return result
 
