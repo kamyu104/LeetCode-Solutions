@@ -84,6 +84,7 @@ private:
         if (i == string::npos) {
             return Fraction(stol(S));
         }
+
         Fraction result(stol(S.substr(0, i)), 1);
         const auto& non_repeat_part = S.substr(i + 1);
         i = non_repeat_part.find('(');
@@ -94,6 +95,7 @@ private:
             }
             return result;
         }
+
         if (i > 0) {
             result += Fraction(stol(non_repeat_part.substr(0, i)),
                                static_cast<int64_t>(pow(10, i)));
