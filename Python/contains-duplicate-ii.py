@@ -11,7 +11,7 @@ class Solution(object):
             if num not in lookup:
                 lookup[num] = i
             else:
-                # It the value occurs before, check the difference.
+                # If the value occurs before, check the difference.
                 if i - lookup[num] <= k:
                     return True
                 # Update the index of the value.
