@@ -9,7 +9,7 @@ public:
             if (lookup.find(nums[i]) == lookup.end()) {
                 lookup[nums[i]] = i;
             } else {
-                // It the value occurs before, check the difference.
+                // If the value occurs before, check the difference.
                 if (i - lookup[nums[i]] <= k) {
                     return true;
                 }
