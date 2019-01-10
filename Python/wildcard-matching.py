@@ -1,6 +1,7 @@
 # Time:  O(m * n)
 # Space: O(1)
 
+# iterative solution
 class Solution(object):
     # @param s, an input string
     # @param p, a pattern string
