@@ -1,4 +1,4 @@
-# Time:  O(m + n) on average, O(m * n) on worst
+# Time:  O(m + n) ~ O(m * n)
 # Space: O(1)
 
 # iterative solution with greedy
