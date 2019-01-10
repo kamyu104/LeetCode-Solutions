@@ -37,7 +37,7 @@ class Solution(object):
 
 # dp with rolling window
 # Time:  O(m * n)
-# Space: O(m)
+# Space: O(n)
 class Solution2(object):
     # @return a boolean
     def isMatch(self, s, p):
