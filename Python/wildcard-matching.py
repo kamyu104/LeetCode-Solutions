@@ -1,7 +1,7 @@
-# Time:  O(m * n)
+# Time:  O(m + n) on average, O(m * n) on worst
 # Space: O(1)
 
-# iterative solution
+# iterative solution with greedy
 class Solution(object):
     # @param s, an input string
     # @param p, a pattern string
