@@ -25,11 +25,11 @@ class Solution(object):
                 p_ptr = last_p_ptr
             else:
                 return False
-            count += 1
+            count += 1  # used for check complexity
  
         while p_ptr < len(p) and p[p_ptr] == '*':
             p_ptr += 1
-            count += 1
+            count += 1  # used for check complexity
 
         assert(count <= len(p) * len(s) + 1)
         return p_ptr == len(p)
