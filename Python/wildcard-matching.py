@@ -28,9 +28,10 @@ class Solution(object):
 
         return p_ptr == len(p)
 
+
 # dp with rolling window
 # Time:  O(m * n)
-# Space: O(m + n)
+# Space: O(m)
 class Solution2(object):
     # @return a boolean
     def isMatch(self, s, p):
@@ -50,6 +51,7 @@ class Solution2(object):
                     result[i % k][j] = result[i % k][j-1] or result[(i-1) % k][j]
 
         return result[len(s) % k][len(p)]
+
 
 # dp
 # Time:  O(m * n)
