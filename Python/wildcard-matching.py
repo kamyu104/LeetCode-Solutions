@@ -31,7 +31,7 @@ class Solution(object):
             p_ptr += 1
             count += 1  # used for complexity check
 
-        assert(count <= len(p) * len(s) + 1)
+        assert(count <= (len(p)+1) * (len(s)+1))
         return p_ptr == len(p)
 
 
