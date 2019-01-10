@@ -24,6 +24,7 @@ class Solution(object):
                 s_ptr = last_s_ptr
                 p_ptr = last_p_ptr
             else:
+                assert(count <= (len(p)+1) * (len(s)+1))
                 return False
             count += 1  # used for complexity check
  
