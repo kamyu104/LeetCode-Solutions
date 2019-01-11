@@ -30,9 +30,9 @@ class Solution(object):
         if not head: return head
         if head.next:
             if head.val == head.next.val:
-                head = self.deleteDuplicates(head.next)
+                head = self.deleteDuplicates2(head.next)
             else:
-                head.next = self.deleteDuplicates(head.next)
+                head.next = self.deleteDuplicates2(head.next)
         return head
 
 
