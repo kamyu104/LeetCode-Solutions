@@ -4,13 +4,9 @@
 class Solution {
 public:
     int fib(int N) {
-        if (N == 0) {
-            return 0;
-        }
-        
         vector<vector<int>> T = {{1, 1},
                                  {1, 0}};
-        return matrixExpo(T, N - 1)[0][0];
+        return matrixExpo(T, N)[1][0];
     }
 
 private:
