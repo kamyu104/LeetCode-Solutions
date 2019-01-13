@@ -57,9 +57,9 @@ class Solution2(object):
         def dist(point):
             return point[0]**2 + point[1]**2
         
-        min_heap = []
+        max_heap = []
         for point in points:
-            heapq.heappush(min_heap, (-dist(point), point))
-            if len(min_heap) > K:
-                heapq.heappop(min_heap)
-        return [heapq.heappop(min_heap)[1] for _ in xrange(len(min_heap))]  
+            heapq.heappush(max_heap, (-dist(point), point))
+            if len(max_heap) > K:
+                heapq.heappop(max_heap)
+        return [heapq.heappop(max_heap)[1] for _ in xrange(len(max_heap))]
