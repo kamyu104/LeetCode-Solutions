@@ -9,7 +9,7 @@ class Solution(object):
         :rtype: int
         """
         gap = float("inf")
-        closest = root.val
+        closest = float("inf")
         while root:
             if abs(root.val - target) < gap:
                 gap = abs(root.val - target)
