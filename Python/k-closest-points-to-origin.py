@@ -1,3 +1,6 @@
+# Time:  O(n) on average
+# Space: O(n)
+
 from random import randint
 
 
