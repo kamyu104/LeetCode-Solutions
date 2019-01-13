@@ -11,13 +11,15 @@ class Solution(object):
         :type K: int
         :rtype: List[List[int]]
         """
-        def kthElement(nums, k, f):
-            def PartitionAroundPivot(left, right, pivot_idx, nums, f):
-                pivot_value = f(nums[pivot_idx])
+        def dist(point):
+            return point[0]**2 + point[1]**2
+        
+        def kthElement(nums, k, compare):
+            def PartitionAroundPivot(left, right, pivot_idx, nums, compare):
                 new_pivot_idx = left
                 nums[pivot_idx], nums[right] = nums[right], nums[pivot_idx]
                 for i in xrange(left, right):
-                    if f(nums[i]) < pivot_value:
+                    if compare(nums[i], nums[right]):
                         nums[i], nums[new_pivot_idx] = nums[new_pivot_idx], nums[i]
                         new_pivot_idx += 1
 
@@ -27,7 +29,7 @@ class Solution(object):
             left, right = 0, len(nums) - 1
             while left <= right:
                 pivot_idx = randint(left, right)
-                new_pivot_idx = PartitionAroundPivot(left, right, pivot_idx, nums, f)
+                new_pivot_idx = PartitionAroundPivot(left, right, pivot_idx, nums, compare)
                 if new_pivot_idx == k - 1:
                     return
                 elif new_pivot_idx > k - 1:
@@ -35,5 +37,5 @@ class Solution(object):
                 else:  # new_pivot_idx < k - 1.
                     left = new_pivot_idx + 1
                     
-        kthElement(points, K, lambda point: point[0]**2 + point[1]**2)
+        kthElement(points, K, lambda a, b: dist(a) < dist(b))
         return points[:K]
