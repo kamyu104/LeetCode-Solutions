@@ -4,6 +4,7 @@
 from random import randint
 
 
+# quick select solution
 class Solution(object):
     def kClosest(self, points, K):
         """
