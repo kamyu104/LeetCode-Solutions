@@ -25,12 +25,9 @@ class Solution(object):
             return [[sum(a*b for a, b in itertools.izip(row, col)) \
                      for col in ZB] for row in A]
 
-        if N == 0:
-            return 0
-
         T = [[1, 1],
              [1, 0]]
-        return matrix_expo(T, N-1)[0][0]
+        return matrix_expo(T, N)[1][0]
 
 
 # Time:  O(n)
