@@ -1,10 +1,10 @@
 # Time:  O(n) on average
-# Space: O(n)
+# Space: O(1)
 
+# quick select solution
 from random import randint
 
 
-# quick select solution
 class Solution(object):
     def kClosest(self, points, K):
         """
@@ -40,3 +40,26 @@ class Solution(object):
                     
         kthElement(points, K, lambda a, b: dist(a) < dist(b))
         return points[:K]
+
+    
+# Time:  O(nlogk)
+# Space: O(k)
+import heapq
+
+
+class Solution2(object):
+    def kClosest(self, points, K):
+        """
+        :type points: List[List[int]]
+        :type K: int
+        :rtype: List[List[int]]
+        """
+        def dist(point):
+            return point[0]**2 + point[1]**2
+        
+        min_heap = []
+        for point in points:
+            heapq.heappush(min_heap, (-dist(point), point))
+            if len(min_heap) > K:
+                heapq.heappop(min_heap)
+        return [heapq.heappop(min_heap)[1] for _ in xrange(len(min_heap))]  
