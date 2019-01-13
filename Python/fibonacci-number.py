@@ -41,10 +41,7 @@ class Solution2(object):
         :type N: int
         :rtype: int
         """
-        if N == 0:
-            return 0
-
         prev, current = 0, 1
-        for i in xrange(N-1):
+        for i in xrange(N):
             prev, current = current, prev + current,
-        return current
+        return prev
