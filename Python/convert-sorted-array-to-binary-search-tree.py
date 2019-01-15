@@ -41,4 +41,24 @@ class Solution(object):
             return n - x // 2  # case 2 == n - (x//2 - 1) - 1 : the left subtree of the root
                                # has more nodes and the right subtree is perfect.
 
-
+# Time:  O(n)
+# Space: O(logn)
+class Solution2(object):
+    def sortedArrayToBST(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: TreeNode
+        """
+        self.iterator = iter(nums)
+        return self.helper(0, len(nums))
+    
+    def helper(self, start, end):
+        if start == end:
+            return None
+        
+        mid = (start + end) // 2
+        left = self.helper(start, mid)
+        current = TreeNode(next(self.iterator))
+        current.left = left
+        current.right = self.helper(mid+1, end)
+        return current
