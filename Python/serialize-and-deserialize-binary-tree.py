@@ -56,3 +56,44 @@ class Codec(object):
         return deserializeHelper()
 
 
+# time: O(n)
+# space: O(n)
+
+class Codec2(object):
+
+    def serialize(self, root):
+        """Encodes a tree to a single string.
+        
+        :type root: TreeNode
+        :rtype: str
+        """
+        def gen_preorder(node):
+            if not node:
+                yield '#'
+            else:
+                yield str(node.val)
+                for n in gen_preorder(node.left):
+                    yield n
+                for n in gen_preorder(node.right):
+                    yield n
+                
+        return ' '.join(gen_preorder(root))
+        
+    def deserialize(self, data):
+        """Decodes your encoded data to tree.
+        
+        :type data: str
+        :rtype: TreeNode
+        """
+        def builder(chunk_iter):
+            val = next(chunk_iter)
+            if val == '#':
+                return None
+            node = TreeNode(int(val))
+            node.left = builder(chunk_iter)
+            node.right = builder(chunk_iter)
+            return node
+        
+        # https://stackoverflow.com/a/42373311/568901
+        chunk_iter = iter(data.split())
+        return builder(chunk_iter)
