@@ -10,7 +10,7 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
         """
-        queue = collections.deque([])
+        queue = collections.deque()
         for i in xrange(len(matrix)):
             for j in xrange(len(matrix[0])):
                 if matrix[i][j] == 0:
