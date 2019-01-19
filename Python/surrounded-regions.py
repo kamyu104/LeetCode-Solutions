@@ -19,21 +19,21 @@ class Solution(object):
             if board[i][0] == 'O':
                 board[i][0] = 'V'
                 q.append((i, 0))
-            if board[i][len(board[0]) - 1] == 'O':
-                board[i][len(board[0]) - 1] = 'V'
-                q.append((i, len(board[0]) - 1))
+            if board[i][len(board[0])-1] == 'O':
+                board[i][len(board[0])-1] = 'V'
+                q.append((i, len(board[0])-1))
 
         for j in xrange(1, len(board[0])-1):
             if board[0][j] == 'O':
                 board[0][j] = 'V'
                 q.append((0, j))
-            if board[len(board) - 1][j] == 'O':
-                board[len(board) - 1][j] = 'V'
-                q.append((len(board) - 1, j))
+            if board[len(board)-1][j] == 'O':
+                board[len(board)-1][j] = 'V'
+                q.append((len(board)-1, j))
 
         while q:
             i, j = q.popleft()
-            for x, y in [(i + 1, j), (i - 1, j), (i, j + 1), (i, j - 1)]:
+            for x, y in [(i+1, j), (i-1, j), (i, j+1), (i, j-1)]:
                 if 0 <= x < len(board) and 0 <= y < len(board[0]) and \
                    board[x][y] == 'O':
                     board[x][y] = 'V'
