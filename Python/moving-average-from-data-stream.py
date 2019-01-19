@@ -12,7 +12,7 @@ class MovingAverage(object):
         """
         self.__size = size
         self.__sum = 0
-        self.__q = deque([])
+        self.__q = deque()
 
     def next(self, val):
         """

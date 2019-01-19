@@ -11,7 +11,7 @@ class Solution(object):
     def solve(self, board):
         if not board:
             return
-        q = collections.deque([])
+        q = collections.deque()
 
         for i in xrange(len(board)):
             q.append((i, 0))
