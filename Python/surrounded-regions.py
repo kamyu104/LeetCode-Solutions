@@ -22,13 +22,13 @@ class Solution(object):
                 board[i][len(board[0]) - 1] = 'V'
                 q.append((i, len(board[0]) - 1))
 
-        for i in xrange(1, len(board[0])-1):
-            if board[0][i] == 'O':
-                board[0][i] = 'V'
-                q.append((0, i))
-            if board[len(board) - 1][i] == 'O':
-                board[len(board) - 1][i] = 'V'
-                q.append((len(board) - 1, i))
+        for j in xrange(1, len(board[0])-1):
+            if board[0][j] == 'O':
+                board[0][j] = 'V'
+                q.append((0, j))
+            if board[len(board) - 1][j] == 'O':
+                board[len(board) - 1][j] = 'V'
+                q.append((len(board) - 1, j))
 
         while q:
             i, j = q.popleft()
