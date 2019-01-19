@@ -12,29 +12,26 @@ class Solution(object):
         :type destination: List[int]
         :rtype: bool
         """
-        start, destination = tuple(start), tuple(destination)
-
         def neighbors(maze, node):
-            for dir in [(-1, 0), (0, 1), (0, -1), (1, 0)]:
-                cur_node, dist = list(node), 0
-                while 0 <= cur_node[0]+dir[0] < len(maze) and \
-                      0 <= cur_node[1]+dir[1] < len(maze[0]) and \
-                      not maze[cur_node[0]+dir[0]][cur_node[1]+dir[1]]:
-                    cur_node[0] += dir[0]
-                    cur_node[1] += dir[1]
-                    dist += 1
-                yield dist, tuple(cur_node)
+            for i, j in [(-1, 0), (0, 1), (0, -1), (1, 0)]:
+                x, y = node
+                while 0 <= x + i < len(maze) and \
+                      0 <= y + j < len(maze[0]) and \
+                      not maze[x+i][y+j]:
+                    x += i
+                    y += j
+                yield x, y
 
-        queue = collections.deque([(0, start)])
+        start, destination = tuple(start), tuple(destination)
+        queue = collections.deque([start])
         visited = set()
         while queue:
-            dist, node = queue.popleft()
+            node = queue.popleft()
             if node in visited: continue
             if node == destination:
                 return True
             visited.add(node)
-            for neighbor_dist, neighbor in neighbors(maze, node):
-                queue.append((dist+neighbor_dist, neighbor))
+            for neighbor in neighbors(maze, node):
+                queue.append(neighbor)
 
         return False
-
