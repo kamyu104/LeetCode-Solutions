@@ -55,8 +55,9 @@ private:
             int r = src.first + d.first, c = src.second + d.second;
             if (0 <= r && r < grid.size() &&
                 0 <= c && c < grid[0].size() &&
-               grid[r][c] % 2 == 0 && 
-               todo & index(grid, r, c)) {
+                grid[r][c] % 2 == 0 && 
+                todo & index(grid, r, c)) {
+
                 result += dp(grid, make_pair(r, c), dst,
                              todo ^ index(grid, r, c), lookup);
             }
