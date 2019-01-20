@@ -3,7 +3,7 @@
 
 class Solution {
 private:
-	template <typename T>
+    template <typename T>
     struct PairHash {
         size_t operator()(const pair<T, T>& p) const {
             size_t seed = 0;
