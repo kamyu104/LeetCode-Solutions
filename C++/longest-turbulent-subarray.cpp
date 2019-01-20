@@ -4,7 +4,10 @@
 class Solution {
 public:
     int maxTurbulenceSize(vector<int>& A) {
-        const auto& cmp = [](int a, int b) { return a != b ? (a < b ? 1 : -1) : 0; };
+        static const auto& cmp = [](int a, int b) {
+            return a != b ? (a < b ? 1 : -1) : 0;
+        };
+
         int result = 1;
         int start = 0;
         for (int i = 1; i < A.size(); ++i) {
