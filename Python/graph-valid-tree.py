@@ -20,14 +20,13 @@ class Solution(object):
             neighbors[v].append(u)
 
         # BFS to check whether the graph is valid tree.
-        visited = {}
+        visited = set()
         q = collections.deque([0])
         while q:
             curr = q.popleft()
-            visited[curr] = True
+            visited.add(curr)
             for node in neighbors[curr]:
                 if node not in visited:
-                    visited[node] = True
                     q.append(node)
 
         return len(visited) == n
