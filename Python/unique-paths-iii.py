@@ -12,17 +12,6 @@ class Solution(object):
         def index(grid, r, c):
             return 1 << (r*len(grid[0])+c)
 
-        todo = 0
-        src, dst = None, None
-        for r, row in enumerate(grid):
-            for c, val in enumerate(row):
-                if val % 2 == 0:
-                    todo |= index(grid, r, c)
-                if val == 1:
-                    src = (r, c)
-                elif val == 2:
-                    dst = (r, c)
-
         def dp(grid, src, dst, todo, lookup):
             if src == dst:
                 return int(todo == 0)
@@ -41,4 +30,14 @@ class Solution(object):
             lookup[key] = result
             return lookup[key]
 
+        todo = 0
+        src, dst = None, None
+        for r, row in enumerate(grid):
+            for c, val in enumerate(row):
+                if val % 2 == 0:
+                    todo |= index(grid, r, c)
+                if val == 1:
+                    src = (r, c)
+                elif val == 2:
+                    dst = (r, c)
         return dp(grid, src, dst, todo, {})
