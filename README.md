@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-970%20%2F%20970-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-974%20%2F%20974-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * RIP to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -193,6 +193,7 @@
 952 | [Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor/) | [C++](./C++/largest-component-size-by-common-factor.cpp) [Python](./Python/largest-component-size-by-common-factor.py) | _O(f * n)_ | _O(p + n)_      | Hard         || Union Find
 954 | [Array of Doubled Pairs](https://leetcode.com/problems/array-of-doubled-pairs/) | [C++](./C++/array-of-doubled-pairs.cpp) [Python](./Python/array-of-doubled-pairs.py) | _O(n + klogk)_ | _O(k)_      | Medium         ||
 961 | [N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/) | [C++](./C++/n-repeated-element-in-size-2n-array.cpp) [Python](./Python/n-repeated-element-in-size-2n-array.py) | _O(n)_ | _O(1)_      | Easy         ||
+978 | [Longest Turbulent Subarray](https://leetcode.com/problems/longest-turbulent-subarray/) | [C++](./C++/longest-turbulent-subarray.cpp) [Python](./Python/longest-turbulent-subarray.py) | _O(n)_ | _O(1)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -417,6 +418,7 @@
 958| [Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree/) | [C++](./C++/check-completeness-of-a-binary-tree.cpp) [Python](./Python/check-completeness-of-a-binary-tree.py) | _O(n)_          | _O(w)_          | Medium           || BFS |
 965| [Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/) | [C++](./C++/univalued-binary-tree.cpp) [Python](./Python/univalued-binary-tree.py) | _O(n)_          | _O(h)_          | Easy           || DFS |
 971| [Flip Binary Tree To Match Preorder Traversal](https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal/) | [C++](./C++/flip-binary-tree-to-match-preorder-traversal.cpp) [Python](./Python/flip-binary-tree-to-match-preorder-traversal.py) | _O(n)_          | _O(h)_          | Medium           || DFS |
+979| [Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree/) | [C++](./C++/distribute-coins-in-binary-tree.cpp) [Python](./Python/distribute-coins-in-binary-tree.py) | _O(n)_          | _O(h)_          | Medium           || DFS |
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -626,6 +628,7 @@
 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [C++](./C++/middle-of-the-linked-list.cpp) [Python](./Python/middle-of-the-linked-list.py) | _O(n)_ | _O(1)_ | Easy ||
 904 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | [C++](./C++/fruit-into-baskets.cpp) [Python](./Python/fruit-into-baskets.py) | _O(n)_ | _O(1)_ | Medium ||
 930 | [Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/) | [C++](./C++/binary-subarrays-with-sum.cpp) [Python](./Python/binary-subarrays-with-sum.py) | _O(n)_ | _O(1)_ | Medium ||
+977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [C++](./C++/squares-of-a-sorted-array.cpp) [Python](./Python/squares-of-a-sorted-array.py) | _O(n)_ | _O(1)_ | Easy ||
 
 ## Recursion
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -935,6 +938,7 @@
 960 | [Delete Columns to Make Sorted III](https://leetcode.com/problems/delete-columns-to-make-sorted-iii/) | [C++](./C++/delete-columns-to-make-sorted-iii.cpp) [Python](./Python/delete-columns-to-make-sorted-iii.py) | _O(n * l^2)_ | _O(l)_ | Hard||
 964 | [Least Operators to Express Number](https://leetcode.com/problems/least-operators-to-express-number/) | [C++](./C++/least-operators-to-express-number.cpp) [Python](./Python/least-operators-to-express-number.py) | _O(logn / logx)_ | _O(logn)_ | Hard|| Math
 975 | [Odd Even Jump](https://leetcode.com/problems/odd-even-jump/) | [C++](./C++/odd-even-jump.cpp) [Python](./Python/odd-even-jump.py) | _O(nlogn)_ | _O(n)_ | Hard|| Descending Stack, BST
+980| [Unique Paths III](https://leetcode.com/problems/unique-paths-iii/) | [C++](./C++/unique-paths-iii.cpp) [Python](./Python/unique-paths-iii.py) |  _O((m * n) * 2^(m * n))_ | _O((m * n) * 2^(m * n))_   | Hard         ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
