@@ -1,5 +1,7 @@
 # Time:  O(n * d), n is length of string, d is size of dictionary
 # Space: O(d)
+from string import ascii_lowercase
+
 
 class Solution(object):
     def ladderLength(self, beginWord, endWord, wordList):
@@ -18,8 +20,8 @@ class Solution(object):
                 if word == endWord:
                     return distance + 1
                 for i in xrange(len(word)):
-                    for j in 'abcdefghijklmnopqrstuvwxyz':
-                        candidate = word[:i] + j + word[i + 1:]
+                    for j in ascii_lowercase:
+                        candidate = word[:i] + j + word[i+1:]
                         if candidate not in visited and candidate in lookup:
                             next_queue.append(candidate)
                             visited.add(candidate)
@@ -27,5 +29,3 @@ class Solution(object):
             cur = next_queue
 
         return 0
-
-
