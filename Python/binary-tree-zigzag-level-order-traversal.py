@@ -14,7 +14,7 @@ class Solution(object):
     def zigzagLevelOrder(self, root):
         if root is None:
             return []
-        result, current, level = [], [root], 1
+        result, current = [], [root]
         while current:
             next_level, vals = [], []
             for node in current:
@@ -23,11 +23,6 @@ class Solution(object):
                     next_level.append(node.left)
                 if node.right:
                     next_level.append(node.right)
-            if level % 2:
-                result.append(vals)
-            else:
-                result.append(vals[::-1])
-            level += 1
+            result.append(vals[::-1] if len(result) % 2 else vals)
             current = next_level
         return result
-
