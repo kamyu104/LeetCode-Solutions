@@ -20,14 +20,13 @@ class Solution(object):
             neighbors[v].append(u)
 
         # BFS to check whether the graph is valid tree.
-        visited = {}
         q = collections.deque([0])
+        visited = set([0])
         while q:
             curr = q.popleft()
-            visited[curr] = True
             for node in neighbors[curr]:
                 if node not in visited:
-                    visited[node] = True
+                    visited.add(node)
                     q.append(node)
 
         return len(visited) == n
@@ -49,17 +48,16 @@ class Solution2(object):
             neighbors[v].append(u)
 
         # BFS to check whether the graph is valid tree.
-        visited = {}
         q = collections.deque([0])
+        visited = set([0])
         while q:
             i = q.popleft()
-            visited[i] = True
             for node in neighbors[i]:
                 if node != visited_from[i]:
                     if node in visited:
                         return False
                     else:
-                        visited[node] = True
+                        visited.add(node)
                         visited_from[node] = i
                         q.append(node)
         return len(visited) == n
