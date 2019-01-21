@@ -15,13 +15,13 @@ public:
             neighbors[edge.second].emplace_back(edge.first);
         }
 
-        unordered_set<int> visited;
         queue<int> q;
         q.emplace(0);
+        unordered_set<int> visited;
+        visited.emplace(0);
         while (!q.empty()) {
             const int i = q.front();
             q.pop();
-            visited.emplace(i);
             for (const auto& node : neighbors[i]) {
                 if (!visited.count(node)) {
                     visited.emplace(node);
@@ -49,13 +49,13 @@ public:
             nodes[edge.second].neighbors.emplace_back(edge.first);
         }
 
-        unordered_set<int> visited;
         queue<int> q;
         q.emplace(0);
+        unordered_set<int> visited;
+        visited.emplace(0);
         while (!q.empty()) {
             const int i = q.front();
             q.pop();
-            visited.emplace(i);
             for (const auto& node : nodes[i].neighbors) {
                 if (node != nodes[i].parent) {
                     if (visited.find(node) != visited.end()) {
