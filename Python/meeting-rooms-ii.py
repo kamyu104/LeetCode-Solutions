@@ -27,3 +27,29 @@ class Solution(object):
 
         return min_rooms
 
+
+# time: O(nlogn)
+# space: O(n)
+from heapq import heappush, heappop
+
+
+class Solution2(object):
+    def minMeetingRooms(self, intervals):
+        """
+        :type intervals: List[Interval]
+        :rtype: int
+        """
+        if not intervals:
+            return 0
+        
+        intervals.sort(key=lambda x: x.start)
+        free_rooms = []
+        
+        heappush(free_rooms, intervals[0].end)
+        for interval in intervals[1:]:
+            if free_rooms[0] <= interval.start:
+                heappop(free_rooms)
+            
+            heappush(free_rooms, interval.end)
+        
+        return len(free_rooms)
