@@ -106,3 +106,21 @@ class Solution3(object):
         pairs.sort()
         return [pair[1] for pair in pairs[:k]]
 
+
+# time: O(nlogn)
+# space: O(n)
+
+from collections import Counter
+
+
+class Solution4(object):
+    def topKFrequent(self, words, k):
+        """
+        :type words: List[str]
+        :type k: int
+        :rtype: List[str]
+        """
+        counter = Counter(words)
+        candidates = counter.keys()
+        candidates.sort(key=lambda w: (-counter[w], w))
+        return candidates[:k]
