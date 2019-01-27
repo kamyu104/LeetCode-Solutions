@@ -32,12 +32,13 @@ class Solution(object):
                 d <<= 1
             return B
 
+        k = 3
         n, max_A = 1, max(A)
         while n <= max_A:
             n *= 2
         count = collections.Counter(A)
         B = [count[i] for i in xrange(n)]
-        C = UFWT([x**3 for x in FWT(B)])
+        C = UFWT([x**k for x in FWT(B)])
         return C[0]
 
 
