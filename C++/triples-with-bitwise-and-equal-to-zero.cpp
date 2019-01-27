@@ -1,4 +1,4 @@
-// Time:  O(nlogn)
+// Time:  O(nlogn), n is the max of A
 // Space: O(n)
 
 // https://blog.csdn.net/john123741/article/details/76576925
@@ -46,7 +46,7 @@ private:
     }
 };
 
-// Time:  O(n^3)
+// Time:  O(n^3), n is the length of A
 // Space: O(n^2)
 class Solution2 {
 public:
