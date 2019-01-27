@@ -27,8 +27,7 @@ private:
         for (int d = 1; d < A->size(); d <<= 1) {
             for (int m = d << 1, i = 0; i < A->size(); i += m) {
                 for (int j = 0; j < d ; ++j) {  
-                    int x = (*A)[i + j], y = (*A)[i + j + d];  
-                    (*A)[i + j] = x + y;
+                    (*A)[i + j] = (*A)[i + j] + (*A)[i + j + d];
                 }
             }  
         }
@@ -38,8 +37,7 @@ private:
         for (int d = 1; d < A->size(); d <<= 1) {
             for (int m = d << 1, i = 0; i < A->size(); i += m) {
                 for (int j = 0; j < d ; ++j) {  
-                    int x = (*A)[i + j], y = (*A)[i + j + d];  
-                    (*A)[i + j] = x - y;
+                    (*A)[i + j] = (*A)[i + j] - (*A)[i + j + d];
                 }
             }  
         }
