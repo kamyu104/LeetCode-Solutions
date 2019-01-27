@@ -1,7 +1,7 @@
 // Time:  O(nlogn), n is the max of A
 // Space: O(n)
 
-// https://blog.csdn.net/john123741/article/details/76576925
+// Reference: https://blog.csdn.net/john123741/article/details/76576925
 // FWT solution
 class Solution {
 public:
