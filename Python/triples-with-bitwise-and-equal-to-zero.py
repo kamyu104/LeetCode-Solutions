@@ -4,7 +4,7 @@
 import collections
 
 
-# https://blog.csdn.net/john123741/article/details/76576925
+# Reference: https://blog.csdn.net/john123741/article/details/76576925
 # FWT solution
 class Solution(object):
     def countTriplets(self, A):
