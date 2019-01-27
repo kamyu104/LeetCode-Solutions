@@ -23,9 +23,8 @@ class Solution(object):
                 used[i] = False
 
 
-# time: O(n!)
-# space: O(n!)
-
+# Time:  O(n^2 * n!)
+# Space: O(n^2)
 class Solution2(object):
     def permute(self, nums):
         """
@@ -40,7 +39,7 @@ class Solution2(object):
         if not nums:
             res.append(path)
 
-        for i in range(len(nums)):
+        for i in xrange(len(nums)):
             # e.g., [1, 2, 3]: 3! = 6 cases
             # idx -> nums, path
             # 0 -> [2, 3], [1] -> 0: [3], [1, 2] -> [], [1, 2, 3]
