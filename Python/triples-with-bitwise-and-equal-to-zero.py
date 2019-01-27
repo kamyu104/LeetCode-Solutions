@@ -18,7 +18,7 @@ class Solution(object):
             while d < len(B):
                 for i in xrange(0, len(B), d << 1):
                     for j in xrange(d):
-                        B[i+j] = B[i+j] + B[i+j+d]
+                        B[i+j] += B[i+j+d]
                 d <<= 1
             return B
 
@@ -28,7 +28,7 @@ class Solution(object):
             while d < len(B):
                 for i in xrange(0, len(B), d << 1):
                     for j in xrange(d):
-                        B[i+j] = B[i+j] - B[i+j+d]
+                        B[i+j] -= B[i+j+d]
                 d <<= 1
             return B
 
