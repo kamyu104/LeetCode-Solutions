@@ -7,8 +7,10 @@ class Solution {
 public:
     int countTriplets(vector<int>& A) {
         static const int k = 3;
-
-        vector<int> B(1 << 16); 
+        const auto max_A = *max_element(A.cbegin(), A.cend());
+        int n = 1;
+        for (;n <= max_A; n <<= 1);
+        vector<int> B(n); 
         for (const auto& x : A) {
             ++B[x];
         }
