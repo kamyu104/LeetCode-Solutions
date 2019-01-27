@@ -15,31 +15,21 @@ public:
             ++B[x];
         }
 
-        FWT(&B);
+        FWT(&B, 1);
         for(auto& x : B) {
             x = pow(x, k);
         }
-        UFWT(&B);
+        FWT(&B, -1);
 
         return B[0];
     }
     
 private:
-    void FWT(vector<int> *A) {
+    void FWT(vector<int> *A, int v) {
         for (int d = 1; d < A->size(); d <<= 1) {
             for (int m = d << 1, i = 0; i < A->size(); i += m) {
                 for (int j = 0; j < d ; ++j) {  
-                    (*A)[i + j] += (*A)[i + j + d];
-                }
-            }  
-        }
-    }
-    
-    void UFWT(vector<int> *A) {
-        for (int d = 1; d < A->size(); d <<= 1) {
-            for (int m = d << 1, i = 0; i < A->size(); i += m) {
-                for (int j = 0; j < d ; ++j) {  
-                    (*A)[i + j] -= (*A)[i + j + d];
+                    (*A)[i + j] += (*A)[i + j + d] * v;
                 }
             }  
         }
