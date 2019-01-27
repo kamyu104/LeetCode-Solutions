@@ -16,6 +16,6 @@ class Solution(object):
             for j in xrange(len(durations)):
                 while i-1 < len(days) and \
                       days[i-1] > days[last_buy_days[j]]+durations[j]-1:
-                    last_buy_days[j] += 1
+                    last_buy_days[j] += 1  # Time: O(n)
                 dp[i] = min(dp[i], dp[last_buy_days[j]]+costs[j])
         return dp[-1]
