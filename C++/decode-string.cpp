@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Space: O(h), h is the depth of the recursion
+// Space: O(n)
 
 class Solution {
 public:
