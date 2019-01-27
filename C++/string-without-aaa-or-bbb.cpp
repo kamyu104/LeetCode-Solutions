@@ -1,4 +1,4 @@
-// Time:  O(A + B)
+// Time:  O(a + b)
 // Space: O(1)
 
 class Solution {
