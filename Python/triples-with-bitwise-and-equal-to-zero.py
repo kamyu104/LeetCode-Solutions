@@ -1,4 +1,4 @@
-# Time:  O(nlogn), n is max of A
+# Time:  O(nlogn), n is the max of A
 # Space: O(n)
 
 import collections
