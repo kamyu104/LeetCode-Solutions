@@ -28,7 +28,7 @@ class Solution(object):
             n *= 2
         count = collections.Counter(A)
         B = [count[i] for i in xrange(n)]
-        C = FWT([x**k for x in FWT(B, 1)], -1)
+        C = FWT(map(lambda x : x**k, FWT(B, 1)), -1)
         return C[0]
 
 
