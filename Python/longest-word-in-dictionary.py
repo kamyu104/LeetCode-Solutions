@@ -1,7 +1,8 @@
 # Time:  O(n), n is the total sum of the lengths of words
 # Space: O(t), t is the number of nodes in trie
 
-import collections
+from collections import defaultdict
+from operator import getitem
 
 
 class Solution(object):
@@ -10,10 +11,10 @@ class Solution(object):
         :type words: List[str]
         :rtype: str
         """
-        _trie = lambda: collections.defaultdict(_trie)
+        _trie = lambda: defaultdict(_trie)
         trie = _trie()
         for i, word in enumerate(words):
-            reduce(dict.__getitem__, word, trie)["_end"] = i
+            reduce(getitem, word, trie)["_end"] = i
 
         # DFS
         stack = trie.values()
