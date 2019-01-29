@@ -8,14 +8,14 @@ class Solution(object):
         :type costs: List[int]
         :rtype: int
         """
-        dp = [float("inf") for i in xrange(len(days)+1)]
-        dp[0] = 0
-        last_buy_days = [0, 0, 0]
         durations = [1, 7, 30]
         W = durations[-1]
+        dp = [float("inf") for i in xrange(W)]
+        dp[0] = 0
+        last_buy_days = [0, 0, 0]
         for i in xrange(1,len(days)+1):
+            dp[i%W] = float("inf")
             for j in xrange(len(durations)):
-                dp[i%W] = float("inf")
                 while i-1 < len(days) and \
                       days[i-1] > days[last_buy_days[j]]+durations[j]-1:
                     last_buy_days[j] += 1  # Time: O(n)
