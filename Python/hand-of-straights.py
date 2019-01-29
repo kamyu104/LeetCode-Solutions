@@ -1,8 +1,8 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-import collections
-import heapq
+from collections import Counter
+from heapq import heapify, heappop
 
 
 class Solution(object):
@@ -15,20 +15,16 @@ class Solution(object):
         if len(hand) % W:
             return False
 
-        counts = collections.defaultdict(int)
-        for i in hand:
-            counts[i] += 1
-
-        min_heap = hand[:]
-        heapq.heapify(min_heap)
+        counts = Counter(hand)
+        min_heap = list(hand)
+        heapify(min_heap)
         for _ in xrange(len(min_heap)//W):
             while counts[min_heap[0]] == 0:
-                heapq.heappop(min_heap)
-            start = heapq.heappop(min_heap)
+                heappop(min_heap)
+            start = heappop(min_heap)
             for _ in xrange(W):
                 counts[start] -= 1
                 if counts[start] < 0:
                     return False
                 start += 1
         return True
-
