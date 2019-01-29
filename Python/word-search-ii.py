@@ -32,8 +32,7 @@ class Solution(object):
 
         for i in xrange(len(board)):
             for j in xrange(len(board[0])):
-                if self.findWordsRecu(board, trie, 0, i, j, visited, [], result):
-                    return True
+                self.findWordsRecu(board, trie, 0, i, j, visited, [], result)
 
         return result.keys()
 
@@ -56,4 +55,3 @@ class Solution(object):
         self.findWordsRecu(board, next_node, cur + 1, i, j - 1, visited, cur_word, result)
         visited[i][j] = False
         cur_word.pop()
-
