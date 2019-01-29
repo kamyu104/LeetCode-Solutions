@@ -14,7 +14,7 @@ public:
             dp[i % W] = numeric_limits<int>::max();
             for (int j = 0; j < durations.size(); ++j) {
                 while (i - 1 < days.size() &&
-                       days[i-1] > days[last_buy_days[j]]+durations[j] - 1) {
+                       days[i - 1] > days[last_buy_days[j]] + durations[j] - 1) {
                     ++last_buy_days[j];  // Time: O(n)
                 }
                 dp[i % W] = min(dp[i % W], dp[last_buy_days[j] % W]+costs[j]);
