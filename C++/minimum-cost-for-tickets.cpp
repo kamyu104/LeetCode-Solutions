@@ -6,7 +6,7 @@ public:
     int mincostTickets(vector<int>& days, vector<int>& costs) {
         static vector<int> durations{1, 7, 30};
         
-        const int W = durations.back() + 1;
+        const int W = durations.back();
         vector<int> dp(W, numeric_limits<int>::max());
         dp[0] = 0;
         vector<int> last_buy_days{0, 0, 0};
