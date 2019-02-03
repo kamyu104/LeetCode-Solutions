@@ -1,9 +1,6 @@
 # Time:  O(n)
 # Space: O(n)
 
-import operator
-from functools import reduce
-
 class Solution(object):
     # @param ratings, a list of integer
     # @return an integer
@@ -17,5 +14,4 @@ class Solution(object):
             if ratings[i - 1] > ratings[i] and candies[i - 1] <= candies[i]:
                 candies[i - 1] = candies[i] + 1
 
-        return reduce(operator.add, candies)
-
+        return sum(candies)
