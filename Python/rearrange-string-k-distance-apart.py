@@ -34,22 +34,19 @@ class Solution(object):
 
 # Time:  O(nlogc), c is the count of unique characters.
 # Space: O(c)
-from collections import defaultdict
+from collections import Counter
 from heapq import heappush, heappop
 class Solution2(object):
-    def rearrangeString(self, str, k):
+    def rearrangeString(self, s, k):
         """
         :type str: str
         :type k: int
         :rtype: str
         """
-        if k == 0:
-            return str
+        if k <= 1:
+            return s
 
-        cnts = defaultdict(int)
-        for c in str:
-            cnts[c] += 1
-
+        cnts = Counter(s)
         heap = []
         for c, cnt in cnts.iteritems():
             heappush(heap, [-cnt, c])
@@ -57,7 +54,7 @@ class Solution2(object):
         result = []
         while heap:
             used_cnt_chars = []
-            for _ in xrange(min(k, len(str) - len(result))):
+            for _ in xrange(min(k, len(s) - len(result))):
                 if not heap:
                     return ""
                 cnt_char = heappop(heap)
