@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(k), k is size of the alphabet
 
-import collections
+from collections import Counter
 
 
 class Solution(object):
@@ -10,9 +10,7 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        remaining = collections.defaultdict(int)
-        for c in s:
-            remaining[c] += 1
+        remaining = Counter(s)
 
         in_stack, stk = set(), []
         for c in s:
@@ -23,4 +21,3 @@ class Solution(object):
                 in_stack.add(c)
             remaining[c] -= 1
         return "".join(stk)
-
