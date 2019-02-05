@@ -1,7 +1,6 @@
 # Time:  O(n + m), m is the number of targets
 # Space: O(n)
 
-
 class Solution(object):
     def findReplaceString(self, S, indexes, sources, targets):
         """
@@ -29,9 +28,8 @@ class Solution(object):
         return "".join(result)
 
 
-# Time: O(mlogm + m * n)
+# Time:  O(mlogm + m * n)
 # Space: O(n + m)
-
 class Solution2(object):
     def findReplaceString(self, S, indexes, sources, targets):
         """
