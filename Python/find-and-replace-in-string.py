@@ -28,3 +28,21 @@ class Solution(object):
                 result.append(S[i])
         return "".join(result)
 
+
+# Time: O(mlogm + m * n)
+# Space: O(n + m)
+
+class Solution2(object):
+    def findReplaceString(self, S, indexes, sources, targets):
+        """
+        :type S: str
+        :type indexes: List[int]
+        :type sources: List[str]
+        :type targets: List[str]
+        :rtype: str
+        """
+        for i, s, t in sorted(zip(indexes, sources, targets), reverse=True):
+            if S[i:i+len(s)] == s:
+                S = S[:i] + t + S[i+len(s):]
+
+        return S
