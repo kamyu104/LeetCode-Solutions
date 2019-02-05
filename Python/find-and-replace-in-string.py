@@ -29,8 +29,8 @@ class Solution(object):
         return "".join(result)
 
 
-# time: O(sn)
-# space: O(n)
+# Time: O(mlogm + m * n)
+# Space: O(n + m)
 
 class Solution2(object):
     def findReplaceString(self, S, indexes, sources, targets):
