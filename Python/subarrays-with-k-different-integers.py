@@ -4,6 +4,31 @@
 import collections
 
 
+class Solution(object):
+    def subarraysWithKDistinct(self, A, K):
+        """
+        :type A: List[int]
+        :type K: int
+        :rtype: int
+        """
+        def atMostK(A, K):
+            count = collections.defaultdict(int)
+            result, left = 0, 0
+            for right in xrange(len(A)):
+                count[A[right]] += 1
+                while len(count) > K:
+                    count[A[left]] -= 1
+                    if count[A[left]] == 0:
+                        count.pop(A[left])
+                    left += 1
+                result += right-left+1
+            return result
+        
+        return atMostK(A, K) - atMostK(A, K-1)
+
+
+# Time:  O(n)
+# Space: O(k)
 class Window(object):
     def __init__(self):
         self.__count = collections.defaultdict(int)
