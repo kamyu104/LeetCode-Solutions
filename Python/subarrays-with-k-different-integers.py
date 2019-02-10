@@ -45,7 +45,7 @@ class Window(object):
         return len(self.__count)
 
 
-class Solution(object):
+class Solution2(object):
     def subarraysWithKDistinct(self, A, K):
         """
         :type A: List[int]
