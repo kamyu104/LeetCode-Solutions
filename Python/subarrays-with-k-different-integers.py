@@ -1,7 +1,10 @@
 # Time:  O(n)
 # Space: O(k)
 
-class Window:
+import collections
+
+
+class Window(object):
     def __init__(self):
         self.__count = collections.defaultdict(int)
 
