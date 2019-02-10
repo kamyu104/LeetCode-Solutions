@@ -38,6 +38,7 @@ class Solution(object):
                     return False
         return True
 
+
 # Time:  O(n)
 # Space: O(1)
 class Solution2(object):
