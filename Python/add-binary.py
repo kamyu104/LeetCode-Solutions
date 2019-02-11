@@ -1,7 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
 
-
 class Solution(object):
     # @param a, a string
     # @param b, a string
@@ -14,15 +13,15 @@ class Solution(object):
                 val += int(a[-(i + 1)])
             if i < len(b):
                 val += int(b[-(i + 1)])
-            carry, val = val / 2, val % 2
+            carry, val = divmod(val, 2)
             result += str(val)
         if carry:
             result += str(carry)
         return result[::-1]
 
 
-# time: O(n)
-# space: O(1)
+# Time:  O(n)
+# Space: O(1)
 from itertools import izip_longest
 
 
