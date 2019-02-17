@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-987%20%2F%20987-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-991%20%2F%20991-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * RIP to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -425,6 +425,7 @@
 979| [Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree/) | [C++](./C++/distribute-coins-in-binary-tree.cpp) [Python](./Python/distribute-coins-in-binary-tree.py) | _O(n)_          | _O(h)_          | Medium           || DFS |
 987| [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/) | [C++](./C++/vertical-order-traversal-of-a-binary-tree.cpp) [Python](./Python/vertical-order-traversal-of-a-binary-tree.py) | _O(nlogn)_          | _O(n)_          | Medium           || DFS |
 988| [Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/) | [C++](./C++/smallest-string-starting-from-leaf.cpp) [Python](./Python/smallest-string-starting-from-leaf.py) | _O(n + l * h)_          | _O(h)_          | Medium           || DFS |
+993| [Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/) | [C++](./C++/cousins-in-binary-tree.cpp) [Python](./Python/cousins-in-binary-tree.py) | _O(n)_          | _O(h)_          | Easy           || DFS |
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -764,6 +765,7 @@
 886|[Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)| [C++](./C++/possible-bipartition.cpp) [Python](./Python/possible-bipartition.py)| _O(\|V\| + \|E\|)_ | _O(\|V\| + \|E\|)_ | Medium | | |
 934|[Shortest Bridge](https://leetcode.com/problems/shortest-bridge/)| [C++](./C++/shortest-bridge.cpp) [Python](./Python/shortest-bridge.py)| _O(n^2)_ | _O(n^2)_ | Medium | | BFS, DFS |
 967|[Numbers With Same Consecutive Differences](https://leetcode.com/problems/numbers-with-same-consecutive-differences/)| [C++](./C++/numbers-with-same-consecutive-differences.cpp) [Python](./Python/numbers-with-same-consecutive-differences.py)| _O(2^n)_ | _O(2^n)_ | Medium | | |
+994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)| [C++](./C++/rotting-oranges.cpp) [Python](./Python/rotting-oranges.py)| _O(m * n)_ | _O(m * n)_ | Easy | | |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -842,6 +844,8 @@
 698| [Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/) | [C++](./C++/partition-to-k-equal-sum-subsets.cpp) [Python](./Python/partition-to-k-equal-sum-subsets.py) | _O(n * 2^n)_ | _O(2^n)_ | Medium || DFS, DP, Memoization
 718 | [Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) | [C++](./C++/maximum-length-of-repeated-subarray.cpp) [Python](./Python/maximum-length-of-repeated-subarray.py) | _O(m * n)_ | _O(min(m, n))_ | Medium || DP, Hash, Binary Search
 784| [Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/)    | [C++](./C++/letter-case-permutation.cpp) [Python](./Python/letter-case-permutation.py) | _O(n * 2^n)_    | _O(1)_          | Easy         ||
+996| [Number of Squareful Arrays](https://leetcode.com/problems/number-of-squareful-arrays/)    | [C++](./C++/number-of-squareful-arrays.cpp) [Python](./Python/number-of-squareful-arrays.py) | _O(n!)_    | _O(n^2)_          | Hard         ||
+
 
 ## Dynamic Programming
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -992,6 +996,7 @@
 968 | [Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/) | [C++](./C++/binary-tree-cameras.cpp) [Python](./Python/binary-tree-cameras.py) | _O(n)_ | _O(h)_ | Hard || DFS
 984 | [String Without AAA or BBB](https://leetcode.com/problems/string-without-aaa-or-bbb/) | [C++](./C++/string-without-aaa-or-bbb.cpp) [Python](./Python/string-without-aaa-or-bbb.py) | _O(a + b)_ | _O(1)_ | Easy ||
 991 | [Broken Calculator](https://leetcode.com/problems/broken-calculator/) | [C++](./C++/broken-calculator.cpp) [Python](./Python/broken-calculator.py) | _O(logn)_ | _O(1)_ | Medium ||
+995 | [Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/) | [C++](./C++/minimum-number-of-k-consecutive-bit-flips.cpp) [Python](./Python/minimum-number-of-k-consecutive-bit-flips.py) | _O(n)_ | _O(1)_ | Hard ||
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
