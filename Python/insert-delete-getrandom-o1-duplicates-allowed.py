@@ -22,7 +22,7 @@ class RandomizedCollection(object):
         """
         has = val in self.__used
 
-        self.__list += val,
+        self.__list += (val, len(self.__used[val])),
         self.__used[val] += len(self.__list)-1,
 
         return not has
@@ -37,7 +37,7 @@ class RandomizedCollection(object):
         if val not in self.__used:
             return False
 
-        self.__used[self.__list[-1]][-1] = self.__used[val][-1]
+        self.__used[self.__list[-1][0]][self.__list[-1][1]] = self.__used[val][-1]
         self.__list[self.__used[val][-1]], self.__list[-1] = self.__list[-1], self.__list[self.__used[val][-1]]
 
         self.__used[val].pop()
@@ -52,7 +52,4 @@ class RandomizedCollection(object):
         Get a random element from the collection.
         :rtype: int
         """
-        return self.__list[randint(0, len(self.__list)-1)]
-
-
-
+        return self.__list[randint(0, len(self.__list)-1)][0]
