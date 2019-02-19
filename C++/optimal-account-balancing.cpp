@@ -10,15 +10,11 @@ public:
             account[transaction[0]] += transaction[2];
             account[transaction[1]] -= transaction[2];
         }
-
         vector<int> debts;
         for (const auto& kvp: account) {
             if (kvp.second) {
                 debts.emplace_back(kvp.second);
             }
-        }
-        if (debts.empty()) {
-            return 0;
         }
 
         vector<int> dp(1 << debts.size());
