@@ -17,7 +17,7 @@ public:
         }
 
         int result = 0;
-        for(const auto& d : directions) {
+        for (const auto& d : directions) {
             int nr, nc;
             tie(nr, nc) = make_pair(r + d.first, c + d.second);
             while (0 <= nr && nr < 8 && 0 <= nc && nc < 8) {
