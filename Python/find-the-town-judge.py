@@ -1,19 +1,18 @@
-// Time:  O(t + n)
-// Space: O(n)
+# Time:  O(t + n)
+# Space: O(n)
 
-class Solution {
-public:
-    int findJudge(int N, vector<vector<int>>& trust) {
-        vector<int> degrees(N);
-        for (const auto& t : trust) {
-            --degrees[t[0] - 1];
-            ++degrees[t[1] - 1];
-        } 
-        for (int i = 0; i < degrees.size(); ++i) {
-            if (degrees[i] == N - 1) {
-                return i + 1;
-            }
-        }
-        return -1;
-    }
-};
+class Solution(object):
+    def findJudge(self, N, trust):
+        """
+        :type N: int
+        :type trust: List[List[int]]
+        :rtype: int
+        """
+        degrees = [0]*N
+        for i, j in trust:
+            degrees[i-1] -= 1
+            degrees[j-1] += 1
+        for i in xrange(len(degrees)):
+            if degrees[i] == N-1:
+                return i+1
+        return -1
