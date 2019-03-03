@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-995%20%2F%20995-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-999%20%2F%20999-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -198,6 +198,7 @@
 989 | [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/) | [C++](./C++/add-to-array-form-of-integer.cpp) [Python](./Python/add-to-array-form-of-integer.py) | _O(n + logk)_ | _O(1)_      | Easy         ||
 997 | [Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/) | [C++](./C++/find-the-town-judge.cpp) [Python](./Python/find-the-town-judge.py) | _O(t + n)_ | _O(n)_      | Easy         ||
 999 | [Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook/) | [C++](./C++/available-captures-for-rook.cpp) [Python](./Python/available-captures-for-rook.py) | _O(1)_ | _O(1)_      | Easy         ||
+1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [C++](./C++/find-common-characters.cpp) [Python](./Python/find-common-characters.py) | _O(n * l)_ | _O(1)_      | Easy         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -347,6 +348,7 @@
 895| [Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack/) | [C++](./C++/maximum-frequency-stack.cpp) [Python](./Python/maximum-frequency-stack.py) | _O(1)_  | _O(n)_         | Hard           || Hash
 901| [Online Stock Span](https://leetcode.com/problems/online-stock-span/) | [C++](./C++/online-stock-span.cpp) [Python](./Python/online-stock-span.py) | _O(n)_  | _O(n)_         | Medium           ||
 946| [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [C++](./C++/validate-stack-sequences.cpp) [Python](./Python/validate-stack-sequences.py) | _O(n)_  | _O(n)_         | Medium           ||
+1003| [Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/) | [C++](./C++/check-if-word-is-valid-after-substitutions.cpp) [Python](./Python/check-if-word-is-valid-after-substitutions.py) | _O(n)_  | _O(n)_         | Medium           ||
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -642,6 +644,7 @@
 904 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | [C++](./C++/fruit-into-baskets.cpp) [Python](./Python/fruit-into-baskets.py) | _O(n)_ | _O(1)_ | Medium ||
 930 | [Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/) | [C++](./C++/binary-subarrays-with-sum.cpp) [Python](./Python/binary-subarrays-with-sum.py) | _O(n)_ | _O(1)_ | Medium ||
 977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [C++](./C++/squares-of-a-sorted-array.cpp) [Python](./Python/squares-of-a-sorted-array.py) | _O(n)_ | _O(1)_ | Easy ||
+1004 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | [C++](./C++/max-consecutive-ones-iii.cpp) [Python](./Python/max-consecutive-ones-iii.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## Recursion
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -958,6 +961,7 @@
 975 | [Odd Even Jump](https://leetcode.com/problems/odd-even-jump/) | [C++](./C++/odd-even-jump.cpp) [Python](./Python/odd-even-jump.py) | _O(nlogn)_ | _O(n)_ | Hard|| Descending Stack, BST
 980| [Unique Paths III](https://leetcode.com/problems/unique-paths-iii/) | [C++](./C++/unique-paths-iii.cpp) [Python](./Python/unique-paths-iii.py) |  _O((m * n) * 2^(m * n))_ | _O((m * n) * 2^(m * n))_   | Hard         ||
 983| [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/) | [C++](./C++/minimum-cost-for-tickets.cpp) [Python](./Python/minimum-cost-for-tickets.py) |  _O(n)_ | _O(1)_   | Medium         ||
+1000| [Minimum Cost to Merge Stones](https://leetcode.com/problems/minimum-cost-to-merge-stones/) | [C++](./C++/minimum-cost-to-merge-stones.cpp) [Python](./Python/minimum-cost-to-merge-stones.py) |  _O(n^3)_ | _O(n^3)_   | Hard         || Memoization |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
