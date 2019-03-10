@@ -15,7 +15,7 @@ public:
         if (intersect.empty()) {
             return -1;
         }
-        const auto& x = *intersect.begin();
+        const auto& x = *intersect.cbegin();
         return min(A.size() - count(A.cbegin(), A.cend(), x),
                    B.size() - count(B.cbegin(), B.cend(), x));
     }
@@ -39,7 +39,7 @@ public:
         if (intersect.empty()) {
             return -1;
         }
-        const auto& x = *intersect.begin();
+        const auto& x = *intersect.cbegin();
         return min(A.size() - count(A.cbegin(), A.cend(), x),
                    B.size() - count(B.cbegin(), B.cend(), x));
     }
