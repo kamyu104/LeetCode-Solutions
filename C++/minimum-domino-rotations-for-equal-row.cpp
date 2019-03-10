@@ -6,8 +6,8 @@ public:
     int minDominoRotations(vector<int>& A, vector<int>& B) {
         set<int> intersect{A[0], B[0]};
         for (int i = 1; i < A.size(); ++i) {
-            const set<int> s1{A[i], B[i]};
-            const auto s2 = move(intersect);
+            const auto s1 = move(intersect);
+            const set<int> s2{A[i], B[i]};
             set_intersection(s1.cbegin(), s1.cend(),
                              s2.cbegin(), s2.cend(),
                              inserter(intersect, intersect.begin()));
@@ -15,7 +15,7 @@ public:
         if (intersect.empty()) {
             return -1;
         }
-        auto x = *intersect.begin();
+        const auto& x = *intersect.begin();
         return min(A.size() - count(A.begin(), A.end(), x),
                    B.size() - count(B.begin(), B.end(), x));
     }
@@ -28,8 +28,8 @@ public:
     int minDominoRotations(vector<int>& A, vector<int>& B) {
         unordered_set<int> intersect{A[0], B[0]};
         for (int i = 1; i < A.size(); ++i) {
-            const unordered_set<int> s1{A[i], B[i]};
-            const auto s2 = move(intersect);
+            const auto s1 = move(intersect);
+            const unordered_set<int> s2{A[i], B[i]};
             copy_if(s1.cbegin(), s1.cend(),
                     inserter(intersect, intersect.begin()),
                     [&s2](const int x) {
@@ -39,7 +39,7 @@ public:
         if (intersect.empty()) {
             return -1;
         }
-        auto x = *intersect.begin();
+        const auto& x = *intersect.begin();
         return min(A.size() - count(A.begin(), A.end(), x),
                    B.size() - count(B.begin(), B.end(), x));
     }
