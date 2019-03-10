@@ -14,7 +14,7 @@
 * [String](https://github.com/kamyu104/LeetCode-Solutions#string)
 * [Linked List](https://github.com/kamyu104/LeetCode-Solutions#linked-list)
 * [Stack](https://github.com/kamyu104/LeetCode-Solutions#stack)
-* [Queue](https://github.com/kamyu104/LeetCode  -Solutions#queue)
+* [Queue](https://github.com/kamyu104/LeetCode-Solutions#queue)
 * [Heap](https://github.com/kamyu104/LeetCode-Solutions#heap)
 * [Tree](https://github.com/kamyu104/LeetCode-Solutions#tree)
 * [Hash Table](https://github.com/kamyu104/LeetCode-Solutions#hash-table)
