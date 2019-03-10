@@ -54,8 +54,10 @@ class Solution2(object):
         :rtype: int
         """
         A.sort()
-        i = 0
-        while i < len(A) and i < K and A[i] < 0:
+        remain = K
+        for i in xrange(K):
+            if A[i] >= 0:
+                break
             A[i] = -A[i]
-            i += 1
-        return sum(A) - ((K-i)%2)*min(A)*2
+            remain -= 1
+        return sum(A) - (remain%2)*min(A)*2
