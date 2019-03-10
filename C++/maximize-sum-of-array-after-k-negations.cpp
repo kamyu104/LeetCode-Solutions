@@ -1,6 +1,7 @@
 // Time:  O(n) ~ O(n^2), O(n) on average.
 // Space: O(1)
 
+// quick select solution
 class Solution {
 public:
     int largestSumAfterKNegations(vector<int>& A, int K) {
