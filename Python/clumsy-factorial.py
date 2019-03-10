@@ -26,7 +26,7 @@ class Solution(object):
         if N <= 2:
             return N
         if N <= 4:
-            return N + 3
+            return N+3
         
         if N % 4 == 0:
             return N+1
