@@ -16,8 +16,8 @@ public:
             return -1;
         }
         const auto& x = *intersect.begin();
-        return min(A.size() - count(A.begin(), A.end(), x),
-                   B.size() - count(B.begin(), B.end(), x));
+        return min(A.size() - count(A.cbegin(), A.cend(), x),
+                   B.size() - count(B.cbegin(), B.cend(), x));
     }
 };
 
@@ -40,7 +40,7 @@ public:
             return -1;
         }
         const auto& x = *intersect.begin();
-        return min(A.size() - count(A.begin(), A.end(), x),
-                   B.size() - count(B.begin(), B.end(), x));
+        return min(A.size() - count(A.cbegin(), A.cend(), x),
+                   B.size() - count(B.cbegin(), B.cend(), x));
     }
 };
