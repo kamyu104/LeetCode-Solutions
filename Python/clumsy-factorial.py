@@ -12,10 +12,10 @@
 #     if N = 2 => N
 #     if N = 3 => N + 3
 #     if N = 4 => N + 2 + 1 = N + 3
-#     if N > 4 and N % 4 == 0 => N + 1 + (... = 0) + 5 - (4*3/2) + 1 = N + 1
 #     if N > 4 and N % 4 == 1 => N + 1 + (... = 0) + 2 - 1           = N + 2
 #     if N > 4 and N % 4 == 2 => N + 1 + (... = 0) + 3 - 2 * 1       = N + 2
 #     if N > 4 and N % 4 == 3 => N + 1 + (... = 0) + 4 - 3 * 2 / 1   = N - 1
+#     if N > 4 and N % 4 == 0 => N + 1 + (... = 0) + 5 - (4*3/2) + 1 = N + 1
 
 class Solution(object):
     def clumsy(self, N):
