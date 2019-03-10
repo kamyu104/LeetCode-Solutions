@@ -5,14 +5,15 @@ class Solution {
 public:
     int largestSumAfterKNegations(vector<int>& A, int K) {
         nth_element(A.begin(), A.begin() + K, A.end());
-        for (int i = 0; K > 0 && i < A.size(); ++i) {
+        int remain = K;
+        for (int i = 0; remain > 0 && i < K; ++i) {
             if (A[i] < 0) {
                 A[i] = -A[i];
-                --K;
+                --remain;
             }
         }
         return accumulate(A.cbegin(), A.cend(), 0) -
-               (K % 2) * *min_element(A.cbegin(), A.cend()) * 2;
+               (remain % 2) * *min_element(A.cbegin(), A.cend()) * 2;
     }
 };
 
