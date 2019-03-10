@@ -5,7 +5,7 @@ class Solution {
 public:
     int minDominoRotations(vector<int>& A, vector<int>& B) {
         set<int> intersect{A[0], B[0]};
-        for (int i = 1; i < A.size(); ++i) {
+        for (int i = 1; i < A.size() && !intersect.empty(); ++i) {
             const auto s1 = move(intersect);
             const set<int> s2{A[i], B[i]};
             set_intersection(s1.cbegin(), s1.cend(),
@@ -27,7 +27,7 @@ class Solution2 {
 public:
     int minDominoRotations(vector<int>& A, vector<int>& B) {
         unordered_set<int> intersect{A[0], B[0]};
-        for (int i = 1; i < A.size(); ++i) {
+        for (int i = 1; i < A.size() && !intersect.empty(); ++i) {
             const auto s1 = move(intersect);
             const unordered_set<int> s2{A[i], B[i]};
             copy_if(s1.cbegin(), s1.cend(),
