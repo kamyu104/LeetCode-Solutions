@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-999%20%2F%20999-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1003%20%2F%201003-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -14,7 +14,7 @@
 * [String](https://github.com/kamyu104/LeetCode-Solutions#string)
 * [Linked List](https://github.com/kamyu104/LeetCode-Solutions#linked-list)
 * [Stack](https://github.com/kamyu104/LeetCode-Solutions#stack)
-* [Queue](https://github.com/kamyu104/LeetCode-Solutions#queue)
+* [Queue](https://github.com/kamyu104/LeetCode  -Solutions#queue)
 * [Heap](https://github.com/kamyu104/LeetCode-Solutions#heap)
 * [Tree](https://github.com/kamyu104/LeetCode-Solutions#tree)
 * [Hash Table](https://github.com/kamyu104/LeetCode-Solutions#hash-table)
@@ -199,6 +199,7 @@
 0997 | [Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/) | [C++](./C++/find-the-town-judge.cpp) [Python](./Python/find-the-town-judge.py) | _O(t + n)_ | _O(n)_      | Easy         ||
 0999 | [Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook/) | [C++](./C++/available-captures-for-rook.cpp) [Python](./Python/available-captures-for-rook.py) | _O(1)_ | _O(1)_      | Easy         ||
 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [C++](./C++/find-common-characters.cpp) [Python](./Python/find-common-characters.py) | _O(n * l)_ | _O(1)_      | Easy         ||
+1007 | [Minimum Domino Rotations For Equal Row](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/) | [C++](./C++/minimum-domino-rotations-for-equal-row.cpp) [Python](./Python/minimum-domino-rotations-for-equal-row.py) | _O(n)_ | _O(1)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -431,6 +432,7 @@
 0988| [Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/) | [C++](./C++/smallest-string-starting-from-leaf.cpp) [Python](./Python/smallest-string-starting-from-leaf.py) | _O(n + l * h)_          | _O(h)_          | Medium           || DFS |
 0993| [Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/) | [C++](./C++/cousins-in-binary-tree.cpp) [Python](./Python/cousins-in-binary-tree.py) | _O(n)_          | _O(h)_          | Easy           || DFS |
 0998 |[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii/)| [C++](./C++/maximum-binary-tree-ii.cpp) [Python](./Python/maximum-binary-tree-ii.py)| _O(h)_ | _O(1)_ | Medium |||
+1008 |[Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)| [C++](./C++/construct-binary-search-tree-from-preorder-traversal.cpp) [Python](./Python/construct-binary-search-tree-from-preorder-traversal.py)| _O(n)_ | _O(h)_ | Medium |||
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -589,6 +591,7 @@
 0963 | [Minimum Area Rectangle II](https://leetcode.com/problems/minimum-area-rectangle-ii/) | [C++](./C++/minimum-area-rectangle-ii.cpp) [Python](./Python/minimum-area-rectangle-ii.py) | _O(n^2)_ ~ _O(n^3)_ | _O(n^2)_      | Medium         ||
 0970 | [Powerful Integers](https://leetcode.com/problems/powerful-integers/) | [C++](./C++/powerful-integers.cpp) [Python](./Python/powerful-integers.py) | _O((logn)^2)_ | _O(r)_      | Easy         ||
 0972 | [Equal Rational Numbers](https://leetcode.com/problems/equal-rational-numbers/) | [C++](./C++/equal-rational-numbers.cpp) [Python](./Python/equal-rational-numbers.py) | _O(1)_ | _O(1)_      | Hard         ||
+1006 | [Clumsy Factorial](https://leetcode.com/problems/clumsy-factorial/) | [C++](./C++/clumsy-factorial.cpp) [Python](./Python/clumsy-factorial.py) | _O(1)_ | _O(1)_      | Hard         ||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1005,6 +1008,7 @@
 0984 | [String Without AAA or BBB](https://leetcode.com/problems/string-without-aaa-or-bbb/) | [C++](./C++/string-without-aaa-or-bbb.cpp) [Python](./Python/string-without-aaa-or-bbb.py) | _O(a + b)_ | _O(1)_ | Easy ||
 0991 | [Broken Calculator](https://leetcode.com/problems/broken-calculator/) | [C++](./C++/broken-calculator.cpp) [Python](./Python/broken-calculator.py) | _O(logn)_ | _O(1)_ | Medium ||
 0995 | [Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/) | [C++](./C++/minimum-number-of-k-consecutive-bit-flips.cpp) [Python](./Python/minimum-number-of-k-consecutive-bit-flips.py) | _O(n)_ | _O(1)_ | Hard ||
+1005 | [Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/) | [C++](./C++/maximize-sum-of-array-after-k-negations.cpp) [Python](./Python/maximize-sum-of-array-after-k-negations.py) | _O(n)_ on average | _O(1)_ | Easy || Quick Select
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
