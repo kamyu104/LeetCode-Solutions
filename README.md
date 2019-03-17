@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1003%20%2F%201003-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1007%20%2F%201007-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -200,6 +200,7 @@
 0999 | [Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook/) | [C++](./C++/available-captures-for-rook.cpp) [Python](./Python/available-captures-for-rook.py) | _O(1)_ | _O(1)_      | Easy         ||
 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [C++](./C++/find-common-characters.cpp) [Python](./Python/find-common-characters.py) | _O(n * l)_ | _O(1)_      | Easy         ||
 1007 | [Minimum Domino Rotations For Equal Row](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/) | [C++](./C++/minimum-domino-rotations-for-equal-row.cpp) [Python](./Python/minimum-domino-rotations-for-equal-row.py) | _O(n)_ | _O(1)_      | Medium         ||
+1013 | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | [C++](./C++/pairs-of-songs-with-total-durations-divisible-by-60.cpp) [Python](./Python/pairs-of-songs-with-total-durations-divisible-by-60.py) | _O(n)_ | _O(1)_      | Easy         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -592,6 +593,8 @@
 0970 | [Powerful Integers](https://leetcode.com/problems/powerful-integers/) | [C++](./C++/powerful-integers.cpp) [Python](./Python/powerful-integers.py) | _O((logn)^2)_ | _O(r)_      | Easy         ||
 0972 | [Equal Rational Numbers](https://leetcode.com/problems/equal-rational-numbers/) | [C++](./C++/equal-rational-numbers.cpp) [Python](./Python/equal-rational-numbers.py) | _O(1)_ | _O(1)_      | Hard         ||
 1006 | [Clumsy Factorial](https://leetcode.com/problems/clumsy-factorial/) | [C++](./C++/clumsy-factorial.cpp) [Python](./Python/clumsy-factorial.py) | _O(1)_ | _O(1)_      | Medium         ||
+1012 | [Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/) | [C++](./C++/complement-of-base-10-integer.cpp) [Python](./Python/complement-of-base-10-integer.py) | _O(logn)_ | _O(1)_      | Easy         ||
+1015 | [Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits/) | [C++](./C++/numbers-with-repeated-digits.cpp) [Python](./Python/numbers-with-repeated-digits.py) | _O(logn)_ | _O(logn)_      | Hard         ||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -721,6 +724,7 @@
 0894| [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/) | [C++](./C++/all-possible-full-binary-trees.cpp) [Python](./Python/all-possible-full-binary-trees.py) | _O(n * 4^n / n^(3/2))_ | _O(n * 4^n / n^(3/2))_ | Medium    || 
 0911| [Online Election](https://leetcode.com/problems/online-election/) | [C++](./C++/online-election.cpp) [Python](./Python/online-election.py) | ctor: _O(n)_<br> query : _O(logn)_ | _O(n)_ | Medium    || 
 0981| [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | [C++](./C++/time-based-key-value-store.cpp) [Python](./Python/time-based-key-value-store.py) | set: _O(1)_<br> get : _O(logn)_ | _O(n)_ | Medium    || 
+1014 | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [C++](./C++/capacity-to-ship-packages-within-d-days.cpp) [Python](./Python/capacity-to-ship-packages-within-d-days.py) | _O(nlogr)_ | _O(1)_ | Medium | |
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
