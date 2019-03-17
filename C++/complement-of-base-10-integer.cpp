@@ -4,10 +4,10 @@
 class Solution {
 public:
     int bitwiseComplement(int N) {
-        int X = 1;
-        while (N > X) {
-            X = X * 2 + 1;
+        int mask = 1;
+        while (N > mask) {
+            mask = mask * 2 + 1;
         }
-        return X - N;
+        return mask - N;
     }
 };
