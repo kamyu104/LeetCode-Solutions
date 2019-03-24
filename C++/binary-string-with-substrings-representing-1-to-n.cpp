@@ -1,4 +1,4 @@
-// Time:  O(S^2)
+// Time:  O(n^2), n is the length of S
 // Space: O(1)
     
 class Solution {
