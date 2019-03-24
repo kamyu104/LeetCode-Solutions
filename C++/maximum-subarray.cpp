@@ -5,7 +5,6 @@ class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
         const auto& max_num = *max_element(nums.cbegin(), nums.cend());
-
         if (max_num < 0) {
             return max_num;
         }
