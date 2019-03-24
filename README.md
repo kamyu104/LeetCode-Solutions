@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1007%20%2F%201007-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1011%20%2F%201011-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -201,6 +201,8 @@
 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [C++](./C++/find-common-characters.cpp) [Python](./Python/find-common-characters.py) | _O(n * l)_ | _O(1)_      | Easy         ||
 1007 | [Minimum Domino Rotations For Equal Row](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/) | [C++](./C++/minimum-domino-rotations-for-equal-row.cpp) [Python](./Python/minimum-domino-rotations-for-equal-row.py) | _O(n)_ | _O(1)_      | Medium         ||
 1013 | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | [C++](./C++/pairs-of-songs-with-total-durations-divisible-by-60.cpp) [Python](./Python/pairs-of-songs-with-total-durations-divisible-by-60.py) | _O(n)_ | _O(1)_      | Easy         ||
+1020 | [Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/) | [C++](./C++/partition-array-into-three-parts-with-equal-sum.cpp) [Python](./Python/partition-array-into-three-parts-with-equal-sum.py) | _O(n)_ | _O(1)_      | Easy         ||
+1021 | [Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/) | [C++](./C++/best-sightseeing-pair.cpp) [Python](./Python/best-sightseeing-pair.py) | _O(n)_ | _O(1)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -287,6 +289,7 @@
 0944 | [Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/) | [C++](./C++/delete-columns-to-make-sorted.cpp) [Python](./Python/delete-columns-to-make-sorted.py) | _O(n * l)_ | _O(1)_      | Medium         ||
 0953 | [Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/) | [C++](./C++/verifying-an-alien-dictionary.cpp) [Python](./Python/verifying-an-alien-dictionary.py) | _O(n * l)_ | _O(1)_      | Easy         ||
 0955 | [Delete Columns to Make Sorted II](https://leetcode.com/problems/delete-columns-to-make-sorted-ii/) | [C++](./C++/delete-columns-to-make-sorted-ii.cpp) [Python](./Python/delete-columns-to-make-sorted-ii.py) | _O(n * l)_ | _O(n)_      | Medium         ||
+1023 | [Binary String With Substrings Representing 1 To N](https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/) | [C++](./C++/binary-string-with-substrings-representing-1-to-n.cpp) [Python](./Python/binary-string-with-substrings-representing-1-to-n.py) | _O(n^2)_ | _O(1)_      | Medium         ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -595,6 +598,7 @@
 1006 | [Clumsy Factorial](https://leetcode.com/problems/clumsy-factorial/) | [C++](./C++/clumsy-factorial.cpp) [Python](./Python/clumsy-factorial.py) | _O(1)_ | _O(1)_      | Medium         ||
 1012 | [Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/) | [C++](./C++/complement-of-base-10-integer.cpp) [Python](./Python/complement-of-base-10-integer.py) | _O(logn)_ | _O(1)_      | Easy         ||
 1015 | [Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits/) | [C++](./C++/numbers-with-repeated-digits.cpp) [Python](./Python/numbers-with-repeated-digits.py) | _O(logn)_ | _O(logn)_      | Hard         ||
+1022 | [Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k/) | [C++](./C++/smallest-integer-divisible-by-k.cpp) [Python](./Python/smallest-integer-divisible-by-k.py) | _O(k)_ | _O(1)_      | Medium         ||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
