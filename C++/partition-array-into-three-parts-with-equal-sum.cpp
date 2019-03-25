@@ -11,7 +11,7 @@ public:
         int curr = 0, parts = 0;
         for (const auto& x : A) {
             curr += x;
-            if (sum == total / 3) {
+            if (curr == total / 3) {
                 ++parts, curr = 0;
             }
         }
