@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1011%20%2F%201011-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1015%20%2F%201015-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -201,6 +201,7 @@
 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [C++](./C++/find-common-characters.cpp) [Python](./Python/find-common-characters.py) | _O(n * l)_ | _O(1)_      | Easy         ||
 1007 | [Minimum Domino Rotations For Equal Row](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/) | [C++](./C++/minimum-domino-rotations-for-equal-row.cpp) [Python](./Python/minimum-domino-rotations-for-equal-row.py) | _O(n)_ | _O(1)_      | Medium         ||
 1013 | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | [C++](./C++/pairs-of-songs-with-total-durations-divisible-by-60.cpp) [Python](./Python/pairs-of-songs-with-total-durations-divisible-by-60.py) | _O(n)_ | _O(1)_      | Easy         ||
+1018 | [Binary Prefix Divisible By 5](https://leetcode.com/problems/binary-prefix-divisible-by-5/) | [C++](./C++/binary-prefix-divisible-by-5.cpp) [Python](./Python/binary-prefix-divisible-by-5.py) | _O(n)_ | _O(1)_      | Easy         ||
 1020 | [Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/) | [C++](./C++/partition-array-into-three-parts-with-equal-sum.cpp) [Python](./Python/partition-array-into-three-parts-with-equal-sum.py) | _O(n)_ | _O(1)_      | Easy         ||
 1021 | [Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/) | [C++](./C++/best-sightseeing-pair.cpp) [Python](./Python/best-sightseeing-pair.py) | _O(n)_ | _O(1)_      | Medium         ||
 
@@ -354,6 +355,7 @@
 0901| [Online Stock Span](https://leetcode.com/problems/online-stock-span/) | [C++](./C++/online-stock-span.cpp) [Python](./Python/online-stock-span.py) | _O(n)_  | _O(n)_         | Medium           ||
 0946| [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [C++](./C++/validate-stack-sequences.cpp) [Python](./Python/validate-stack-sequences.py) | _O(n)_  | _O(n)_         | Medium           ||
 1003| [Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/) | [C++](./C++/check-if-word-is-valid-after-substitutions.cpp) [Python](./Python/check-if-word-is-valid-after-substitutions.py) | _O(n)_  | _O(n)_         | Medium           ||
+1019| [Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list/) | [C++](./C++/next-greater-node-in-linked-list.cpp) [Python](./Python/next-greater-node-in-linked-list.py) | _O(n)_  | _O(n)_         | Medium           || Descending Stack
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -598,6 +600,7 @@
 1006 | [Clumsy Factorial](https://leetcode.com/problems/clumsy-factorial/) | [C++](./C++/clumsy-factorial.cpp) [Python](./Python/clumsy-factorial.py) | _O(1)_ | _O(1)_      | Medium         ||
 1012 | [Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/) | [C++](./C++/complement-of-base-10-integer.cpp) [Python](./Python/complement-of-base-10-integer.py) | _O(logn)_ | _O(1)_      | Easy         ||
 1015 | [Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits/) | [C++](./C++/numbers-with-repeated-digits.cpp) [Python](./Python/numbers-with-repeated-digits.py) | _O(logn)_ | _O(logn)_      | Hard         ||
+1017 | [Convert to Base -2](https://leetcode.com/problems/convert-to-base-2/) | [C++](./C++/convert-to-base-2.cpp) [Python](./Python/convert-to-base-2.py) | _O(logn)_ | _O(1)_      | Medium         ||
 1022 | [Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k/) | [C++](./C++/smallest-integer-divisible-by-k.cpp) [Python](./Python/smallest-integer-divisible-by-k.py) | _O(k)_ | _O(1)_      | Medium         ||
 
 ## Sort
@@ -827,6 +830,7 @@
 0841| [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) | [C++](./C++/keys-and-rooms.cpp) [Python](./Python/keys-and-rooms.py) | _O(n!)_          | _O(n)_          | Medium           |||
 0851| [Loud and Rich](https://leetcode.com/problems/loud-and-rich/) | [C++](./C++/loud-and-rich.cpp) [Python](./Python/loud-and-rich.py) | _O(q + r)_          | _O(q + r)_          | Medium           |||
 0913| [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | [C++](./C++/cat-and-mouse.cpp) [Python](./Python/cat-and-mouse.py) | _O(n^3)_          | _O(n^2)_          | Hard           |||
+1020| [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | [C++](./C++/number-of-enclaves.cpp) [Python](./Python/number-of-enclaves.py) | _O(m * n)_          | _O(m * n)_          | Medium           |||
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
