@@ -24,7 +24,7 @@ public:
         while (N) {
             int r = N % BASE;
             if (r < 0) {
-                r += abs(BASE);
+                r -= BASE;
                 ++N;
             }
             result += to_string(r);
