@@ -13,7 +13,7 @@ class Solution(object):
         clips.sort()
         for left, right in clips:
             if left > reachable:
-                return -1
+                break
             elif left > curr_reachable:
                 curr_reachable = reachable
                 result += 1
