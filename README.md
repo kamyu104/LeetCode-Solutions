@@ -601,10 +601,10 @@
 0970 | [Powerful Integers](https://leetcode.com/problems/powerful-integers/) | [C++](./C++/powerful-integers.cpp) [Python](./Python/powerful-integers.py) | _O((logn)^2)_ | _O(r)_      | Easy         ||
 0972 | [Equal Rational Numbers](https://leetcode.com/problems/equal-rational-numbers/) | [C++](./C++/equal-rational-numbers.cpp) [Python](./Python/equal-rational-numbers.py) | _O(1)_ | _O(1)_      | Hard         ||
 1006 | [Clumsy Factorial](https://leetcode.com/problems/clumsy-factorial/) | [C++](./C++/clumsy-factorial.cpp) [Python](./Python/clumsy-factorial.py) | _O(1)_ | _O(1)_      | Medium         ||
-1012 | [Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/) | [C++](./C++/complement-of-base-10-integer.cpp) [Python](./Python/complement-of-base-10-integer.py) | _O(logn)_ | _O(1)_      | Easy         ||
-1015 | [Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits/) | [C++](./C++/numbers-with-repeated-digits.cpp) [Python](./Python/numbers-with-repeated-digits.py) | _O(logn)_ | _O(logn)_      | Hard         ||
+1009 | [Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/) | [C++](./C++/complement-of-base-10-integer.cpp) [Python](./Python/complement-of-base-10-integer.py) | _O(logn)_ | _O(1)_      | Easy         ||
+1012 | [Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits/) | [C++](./C++/numbers-with-repeated-digits.cpp) [Python](./Python/numbers-with-repeated-digits.py) | _O(logn)_ | _O(logn)_      | Hard         ||
+1015 | [Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k/) | [C++](./C++/smallest-integer-divisible-by-k.cpp) [Python](./Python/smallest-integer-divisible-by-k.py) | _O(k)_ | _O(1)_      | Medium         ||
 1017 | [Convert to Base -2](https://leetcode.com/problems/convert-to-base-2/) | [C++](./C++/convert-to-base-2.cpp) [Python](./Python/convert-to-base-2.py) | _O(logn)_ | _O(1)_      | Medium         ||
-1022 | [Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k/) | [C++](./C++/smallest-integer-divisible-by-k.cpp) [Python](./Python/smallest-integer-divisible-by-k.py) | _O(k)_ | _O(1)_      | Medium         ||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
