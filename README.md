@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1015%20%2F%201015-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1019%20%2F%201019-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -180,7 +180,6 @@
 0909 | [Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/) | [C++](./C++/snakes-and-ladders.cpp) [Python](./Python/snakes-and-ladders.py) | _O(n^2)_ | _O(n^2)_      | Medium         ||
 0915 | [Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals/) | [C++](./C++/partition-array-into-disjoint-intervals.cpp) [Python](./Python/partition-array-into-disjoint-intervals.py) | _O(n)_ | _O(n)_      | Medium         ||
 0918 | [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/) | [C++](./C++/maximum-sum-circular-subarray.cpp) [Python](./Python/maximum-sum-circular-subarray.py) | _O(n)_ | _O(1)_      | Medium         ||
-0921 | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | [C++](./C++/minimum-add-to-make-parentheses-valid.cpp) [Python](./Python/minimum-add-to-make-parentheses-valid.py) | _O(n)_ | _O(1)_      | Medium         ||
 0922 | [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/) | [C++](./C++/sort-array-by-parity-ii.cpp) [Python](./Python/sort-array-by-parity-ii.py) | _O(n)_ | _O(1)_      | Easy         ||
 0923 | [3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity/) | [C++](./C++/3sum-with-multiplicity.cpp) [Python](./Python/3sum-with-multiplicity.py) | _O(n^2)_ | _O(n)_      | Medium         ||
 0927 | [Three Equal Parts](https://leetcode.com/problems/three-equal-parts/) | [C++](./C++/three-equal-parts.cpp) [Python](./Python/three-equal-parts.py) | _O(n)_ | _O(1)_      | Hard         ||
@@ -201,9 +200,9 @@
 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [C++](./C++/find-common-characters.cpp) [Python](./Python/find-common-characters.py) | _O(n * l)_ | _O(1)_      | Easy         ||
 1007 | [Minimum Domino Rotations For Equal Row](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/) | [C++](./C++/minimum-domino-rotations-for-equal-row.cpp) [Python](./Python/minimum-domino-rotations-for-equal-row.py) | _O(n)_ | _O(1)_      | Medium         ||
 1013 | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | [C++](./C++/pairs-of-songs-with-total-durations-divisible-by-60.cpp) [Python](./Python/pairs-of-songs-with-total-durations-divisible-by-60.py) | _O(n)_ | _O(1)_      | Easy         ||
+1014 | [Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/) | [C++](./C++/best-sightseeing-pair.cpp) [Python](./Python/best-sightseeing-pair.py) | _O(n)_ | _O(1)_      | Medium         ||
 1018 | [Binary Prefix Divisible By 5](https://leetcode.com/problems/binary-prefix-divisible-by-5/) | [C++](./C++/binary-prefix-divisible-by-5.cpp) [Python](./Python/binary-prefix-divisible-by-5.py) | _O(n)_ | _O(1)_      | Easy         ||
 1020 | [Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/) | [C++](./C++/partition-array-into-three-parts-with-equal-sum.cpp) [Python](./Python/partition-array-into-three-parts-with-equal-sum.py) | _O(n)_ | _O(1)_      | Easy         ||
-1021 | [Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/) | [C++](./C++/best-sightseeing-pair.cpp) [Python](./Python/best-sightseeing-pair.py) | _O(n)_ | _O(1)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -290,7 +289,8 @@
 0944 | [Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/) | [C++](./C++/delete-columns-to-make-sorted.cpp) [Python](./Python/delete-columns-to-make-sorted.py) | _O(n * l)_ | _O(1)_      | Medium         ||
 0953 | [Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/) | [C++](./C++/verifying-an-alien-dictionary.cpp) [Python](./Python/verifying-an-alien-dictionary.py) | _O(n * l)_ | _O(1)_      | Easy         ||
 0955 | [Delete Columns to Make Sorted II](https://leetcode.com/problems/delete-columns-to-make-sorted-ii/) | [C++](./C++/delete-columns-to-make-sorted-ii.cpp) [Python](./Python/delete-columns-to-make-sorted-ii.py) | _O(n * l)_ | _O(n)_      | Medium         ||
-1023 | [Binary String With Substrings Representing 1 To N](https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/) | [C++](./C++/binary-string-with-substrings-representing-1-to-n.cpp) [Python](./Python/binary-string-with-substrings-representing-1-to-n.py) | _O(n^2)_ | _O(1)_      | Medium         ||
+1016 | [Binary String With Substrings Representing 1 To N](https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/) | [C++](./C++/binary-string-with-substrings-representing-1-to-n.cpp) [Python](./Python/binary-string-with-substrings-representing-1-to-n.py) | _O(n^2)_ | _O(1)_      | Medium         ||
+1023 | [Camelcase Matching](https://leetcode.com/problems/camelcase-matching/) | [C++](./C++/camelcase-matching.cpp) [Python](./Python/camelcase-matching.py) | _O(n * l)_ | _O(1)_      | Medium         ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -353,9 +353,11 @@
 0872| [Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/) | [C++](./C++/leaf-similar-trees.cpp) [Python](./Python/leaf-similar-trees.py) | _O(n)_  | _O(h)_         | Easy           ||
 0895| [Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack/) | [C++](./C++/maximum-frequency-stack.cpp) [Python](./Python/maximum-frequency-stack.py) | _O(1)_  | _O(n)_         | Hard           || Hash
 0901| [Online Stock Span](https://leetcode.com/problems/online-stock-span/) | [C++](./C++/online-stock-span.cpp) [Python](./Python/online-stock-span.py) | _O(n)_  | _O(n)_         | Medium           ||
+0921 | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | [C++](./C++/minimum-add-to-make-parentheses-valid.cpp) [Python](./Python/minimum-add-to-make-parentheses-valid.py) | _O(n)_ | _O(1)_      | Medium         ||
 0946| [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [C++](./C++/validate-stack-sequences.cpp) [Python](./Python/validate-stack-sequences.py) | _O(n)_  | _O(n)_         | Medium           ||
 1003| [Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/) | [C++](./C++/check-if-word-is-valid-after-substitutions.cpp) [Python](./Python/check-if-word-is-valid-after-substitutions.py) | _O(n)_  | _O(n)_         | Medium           ||
 1019| [Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list/) | [C++](./C++/next-greater-node-in-linked-list.cpp) [Python](./Python/next-greater-node-in-linked-list.py) | _O(n)_  | _O(n)_         | Medium           || Descending Stack
+1021 | [Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/) | [C++](./C++/remove-outermost-parentheses.cpp) [Python](./Python/remove-outermost-parentheses.py) | _O(n)_ | _O(1)_      | Easy         ||
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -439,6 +441,7 @@
 0993| [Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/) | [C++](./C++/cousins-in-binary-tree.cpp) [Python](./Python/cousins-in-binary-tree.py) | _O(n)_          | _O(h)_          | Easy           || DFS |
 0998 |[Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii/)| [C++](./C++/maximum-binary-tree-ii.cpp) [Python](./Python/maximum-binary-tree-ii.py)| _O(h)_ | _O(1)_ | Medium |||
 1008 |[Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)| [C++](./C++/construct-binary-search-tree-from-preorder-traversal.cpp) [Python](./Python/construct-binary-search-tree-from-preorder-traversal.py)| _O(n)_ | _O(h)_ | Medium |||
+1022 |[Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)| [C++](./C++/sum-of-root-to-leaf-binary-numbers.cpp) [Python](./Python/sum-of-root-to-leaf-binary-numbers.py)| _O(n)_ | _O(h)_ | Easy |||
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -731,7 +734,7 @@
 0894| [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/) | [C++](./C++/all-possible-full-binary-trees.cpp) [Python](./Python/all-possible-full-binary-trees.py) | _O(n * 4^n / n^(3/2))_ | _O(n * 4^n / n^(3/2))_ | Medium    || 
 0911| [Online Election](https://leetcode.com/problems/online-election/) | [C++](./C++/online-election.cpp) [Python](./Python/online-election.py) | ctor: _O(n)_<br> query : _O(logn)_ | _O(n)_ | Medium    || 
 0981| [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | [C++](./C++/time-based-key-value-store.cpp) [Python](./Python/time-based-key-value-store.py) | set: _O(1)_<br> get : _O(logn)_ | _O(n)_ | Medium    || 
-1014 | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [C++](./C++/capacity-to-ship-packages-within-d-days.cpp) [Python](./Python/capacity-to-ship-packages-within-d-days.py) | _O(nlogr)_ | _O(1)_ | Medium | |
+1011 | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [C++](./C++/capacity-to-ship-packages-within-d-days.cpp) [Python](./Python/capacity-to-ship-packages-within-d-days.py) | _O(nlogr)_ | _O(1)_ | Medium | |
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1021,6 +1024,7 @@
 0991 | [Broken Calculator](https://leetcode.com/problems/broken-calculator/) | [C++](./C++/broken-calculator.cpp) [Python](./Python/broken-calculator.py) | _O(logn)_ | _O(1)_ | Medium ||
 0995 | [Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/) | [C++](./C++/minimum-number-of-k-consecutive-bit-flips.cpp) [Python](./Python/minimum-number-of-k-consecutive-bit-flips.py) | _O(n)_ | _O(1)_ | Hard ||
 1005 | [Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/) | [C++](./C++/maximize-sum-of-array-after-k-negations.cpp) [Python](./Python/maximize-sum-of-array-after-k-negations.py) | _O(n)_ on average | _O(1)_ | Easy || Quick Select
+1024 | [Video Stitching](https://leetcode.com/problems/video-stitching/) | [C++](./C++/video-stitching.cpp) [Python](./Python/video-stitching.py) | _O(nlogn)_ | _O(1)_ | Medium ||
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
