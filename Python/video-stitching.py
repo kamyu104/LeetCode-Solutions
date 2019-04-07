@@ -8,8 +8,8 @@ class Solution(object):
         :type T: int
         :rtype: int
         """
-        result = 0
-        curr_reachable, reachable = -1, 0
+        result = 1
+        curr_reachable, reachable = 0, 0
         clips.sort()
         for left, right in clips:
             if left > reachable:
