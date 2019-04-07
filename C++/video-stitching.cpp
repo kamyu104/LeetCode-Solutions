@@ -9,14 +9,17 @@ public:
         sort(clips.begin(), clips.end());
         for (const auto& clip : clips) {
             int left = clip[0], right = clip[1];
-            if (reachable >= T || left > reachable) {
+            if (left > reachable) {
                 break;
             } else if (left > curr_reachable) {
                 curr_reachable = reachable;
                 ++result;
             }
             reachable = max(reachable, right);
+            if (reachable >= T) {
+                return result;
+            }
         }
-        return (reachable >= T) ? result : -1;
+        return -1;
     }
 };
