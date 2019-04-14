@@ -8,7 +8,7 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
-# stack solution
+# iterative stack solution
 class Solution(object):
     def recoverFromPreorder(self, S):
         """
