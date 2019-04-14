@@ -15,3 +15,30 @@ class Solution(object):
         # 4. in summary, we win if only if we get an even and 
         #    keeps even until the opponent loses
         return N % 2 == 0
+
+
+# Time:  O(n!)
+# Space: O(n)
+# dp solution
+class Solution2(object):
+    def divisorGame(self, N):
+        """
+        :type N: int
+        :rtype: bool
+        """
+        def memoization(N, dp):
+            if N == 1:
+                return False
+            if N not in dp:
+                result = False
+                for i in xrange(1, N+1):
+                    if i*i > N:
+                        break
+                    if N % i == 0:
+                        if not memoization(N-i, dp):
+                            result = True
+                            break
+                dp[N] = result
+            return dp[N]
+        
+        return memoization(N, {})
