@@ -11,7 +11,7 @@
  * };
  */
 
-// stack solution
+// iterative stack solution
 class Solution {
 public:
     TreeNode* recoverFromPreorder(string S) {
