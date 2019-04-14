@@ -18,7 +18,7 @@ class Solution(object):
         """
         result = 0
         stack = [(root, 0, float("inf"))]
-        while len(stack) > 0:
+        while stack:
             node, mx, mn = stack.pop()
             if not node:
                 continue
