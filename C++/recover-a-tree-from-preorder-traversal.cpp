@@ -21,7 +21,7 @@ public:
             int j = S.find_first_not_of("-", i);
             int level = j - i;
             i = j;
-            while (stack.size() != level) {
+            while (stack.size() > level) {
                 stack.pop_back();
             }
             j = S.find_first_of("-", i);
