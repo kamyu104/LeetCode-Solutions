@@ -14,3 +14,34 @@ public:
         return N % 2 == 0;
     }
 };
+
+// Time:  O(n!)
+// Space: O(n)
+// dp solution
+class Solution2 {
+public:
+    bool divisorGame(int N) {
+        unordered_map<int, int> dp;
+        return memoization(N, &dp);
+    }
+
+private:
+    bool memoization(int N, unordered_map<int, int> *dp) {
+        if (N == 1) {
+            return false;
+        }
+        if (!dp->count(N)) {
+            bool result = false;
+            for (auto i = 1; i * i <= N; ++i) {
+                if (N % i == 0) {
+                    if (!memoization(N - i, dp)) {
+                        result = true;
+                        break;
+                    }
+                }
+            }
+            (*dp)[N] = result;
+        }
+        return (*dp)[N];
+    }
+};
