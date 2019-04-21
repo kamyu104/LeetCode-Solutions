@@ -16,7 +16,7 @@ class AhoNode(object):
         self.states = collections.defaultdict(AhoNode)
         self.output = None
         self.suffix = None
-        self.id = []
+        self.indices = []
 
 
 class AhoTrie(object):
@@ -30,12 +30,12 @@ class AhoTrie(object):
  
         result = []
         self.__node = self.__node.states[letter]
-        if self.__node.id:
-            for i in self.__node.id:
+        if self.__node.indices:
+            for i in self.__node.indices:
                 result.append(self.__patterns[i])
         tmp = self.__node.output
         while tmp:
-            for i in tmp.id:
+            for i in tmp.indices:
                 result.append(self.__patterns[i])
             tmp = tmp.output
         return len(result) > 0
@@ -52,7 +52,7 @@ class AhoTrie(object):
             node = root
             for c in pattern:
                 node = node.states[c]
-            node.id.append(i)
+            node.indices.append(i)
         return root
 
     def __create_ac_suffix_and_output_links(self, root):  # Time:  O(n), Space: O(t)
@@ -69,7 +69,7 @@ class AhoTrie(object):
                 while fail and key not in fail.states:
                     fail = fail.suffix
                 child.suffix = fail.states[key] if fail else root
-                child.output = child.suffix if child.suffix.id else child.suffix.output
+                child.output = child.suffix if child.suffix.indices else child.suffix.output
 
 
 class StreamChecker(object):
