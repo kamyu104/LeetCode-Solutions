@@ -14,7 +14,7 @@ import collections
 class AhoNode:
     def __init__(self):
         self.states = collections.defaultdict(AhoNode)
-        self.output = []
+        self.output = None
         self.suffix = None
         self.id = None
 
