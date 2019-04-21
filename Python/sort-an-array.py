@@ -14,13 +14,13 @@ class Solution(object):
             mid = start + (end - start) / 2
             mergeSort(start, mid, nums)
             mergeSort(mid, end,  nums)
-            r = mid
+            right = mid
             tmp = []
-            for i in xrange(start, mid):
-                while r < end and nums[r] < nums[i]:
-                    tmp.append(nums[r])
-                    r += 1
-                tmp.append(nums[i])
+            for left in xrange(start, mid):
+                while right < end and nums[right] < nums[left]:
+                    tmp.append(nums[right])
+                    right += 1
+                tmp.append(nums[left])
             nums[start:start+len(tmp)] = tmp
 
         mergeSort(0, len(nums), nums)
