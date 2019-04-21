@@ -31,16 +31,15 @@ class AhoTrie(object):
         result = []
         self.__node = self.__node.children[letter]
         for i in self.__node.indices:
-            result.append(self.__patterns[i])
+            result.append(i)
         output = self.__node.output
         while output:
             for i in output.indices:
-                result.append(self.__patterns[i])
+                result.append(i)
             output = output.output
         return len(result) > 0
     
     def __init__(self, patterns):
-        self.__patterns = patterns
         self.__root = self.__create_ac_trie(patterns)
         self.__create_ac_suffix_and_output_links(self.__root)
         self.__node = self.__root
