@@ -28,7 +28,7 @@ class Solution(object):
 
 
 # Time:  O(nlogn), on average
-# Space: O(logn), on average
+# Space: O(logn)
 import random
 # quick sort solution
 class Solution2(object):
