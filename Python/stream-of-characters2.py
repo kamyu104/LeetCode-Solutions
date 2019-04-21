@@ -34,8 +34,7 @@ class AhoTrie(object):
     
     def __init__(self, patterns):
         self.__root = self.__create_ac_trie(patterns)
-        self.__create_ac_suffix_and_output_links(self.__root)
-        self.__node = self.__root
+        self.__node = self.__create_ac_suffix_and_output_links(self.__root)
     
     def __create_ac_trie(self, patterns):  # Time:  O(n), Space: O(t)
         root = AhoNode()
@@ -61,6 +60,8 @@ class AhoTrie(object):
                     fail = fail.suffix
                 child.suffix = fail.children[key] if fail else root
                 child.outputs += child.suffix.outputs  # Time: O(p^2)
+        
+        return root
 
 
 class StreamChecker(object):
