@@ -25,17 +25,12 @@ public:
         node_ = createACSuffixAndOutputLinks(root_);
     }
 
-    vector<int> step(char letter) {
+    vector<int> *step(char letter) {
         while (node_ && !node_->children[letter - 'a']) {
             node_ = node_->suffix;
         }
-        if (!node_) {
-            node_ = root_;
-            return {};
-        }
-    
-        node_ = node_->children[letter - 'a'];
-        return node_->outputs;  // Time:  O(z)
+        node_ = node_ ? node_->children[letter - 'a'] : root_;
+        return &node_->outputs;  // Time:  O(z)
     }
 
 private:
@@ -96,7 +91,7 @@ public:
     }
     
     bool query(char letter) {  // O(m) times
-        return !trie_.step(letter).empty();
+        return !trie_.step(letter)->empty();
     }
 
 private:
