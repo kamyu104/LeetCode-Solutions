@@ -30,14 +30,13 @@ class AhoTrie(object):
  
         result = []
         self.__node = self.__node.children[letter]
-        if self.__node.indices:
-            for i in self.__node.indices:
+        for i in self.__node.indices:
+            result.append(self.__patterns[i])
+        output = self.__node.output
+        while output:
+            for i in output.indices:
                 result.append(self.__patterns[i])
-        tmp = self.__node.output
-        while tmp:
-            for i in tmp.indices:
-                result.append(self.__patterns[i])
-            tmp = tmp.output
+            output = output.output
         return len(result) > 0
     
     def __init__(self, patterns):
