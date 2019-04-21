@@ -86,8 +86,8 @@ private:
         return root;
     }
     
-    vector<int> getACNodeOutputs(AhoNode *node) {  // Time:  O(z), in this question, it could be O(1) if it early returns
-                                                   // when result is not empty
+    vector<int> getACNodeOutputs(AhoNode *node) {  // Time:  O(z), in this question, it could be improved to O(1)
+                                                   // if we return only a matched string without all strings
         vector<int> result;
         for (const auto& i : node_->indices) {
             result.emplace_back(i);
