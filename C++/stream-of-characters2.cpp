@@ -77,9 +77,9 @@ private:
                     suffix = suffix->suffix;
                 }
                 child->suffix = suffix ? suffix->children[c] : root;
-                copy (child->suffix->outputs.cbegin(),
-                      child->suffix->outputs.cend(),
-                      back_inserter(child->outputs));  // Time: O(p^2)
+                copy(child->suffix->outputs.cbegin(),
+                     child->suffix->outputs.cend(),
+                     back_inserter(child->outputs));  // Time: O(p^2)
             }
         }
         
