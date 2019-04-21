@@ -63,7 +63,8 @@ class AhoTrie(object):
                 
         return root
 
-    def __get_ac_node_outputs(self, node):  # Time:  O(z)
+    def __get_ac_node_outputs(self, node):  # Time:  O(z), 
+                                            # in this question could be O(1) if it early returns when result is not empty
         result = []
         for i in node.indices:
             result.append(i)
