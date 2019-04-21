@@ -8,12 +8,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        def mergeSort(start, end, lower, upper, nums):
+        def mergeSort(start, end, nums):
             if end - start <= 1:
                 return
             mid = start + (end - start) / 2
-            mergeSort(start, mid, lower, upper, nums)
-            mergeSort(mid, end, lower, upper, nums)
+            mergeSort(start, mid, nums)
+            mergeSort(mid, end,  nums)
             r = mid
             tmp = []
             for i in xrange(start, mid):
@@ -23,7 +23,7 @@ class Solution(object):
                 tmp.append(nums[i])
             nums[start:start+len(tmp)] = tmp
 
-        mergeSort(0, len(nums), float("-inf"), float("inf"), nums)
+        mergeSort(0, len(nums), nums)
         return nums
 
 
