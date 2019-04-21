@@ -1,5 +1,5 @@
 // Time:  ctor:  O(n + p^2), n is the total size of patterns
-//                         , p is the count of patterns
+//                         , p is the number of patterns
 //        query: O(m + z), m is the total size of query string
 //                       , z is the number of all matched strings 
 // Space: O(t + p^2), t is the total size of ac automata trie
