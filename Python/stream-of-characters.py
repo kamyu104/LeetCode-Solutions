@@ -4,7 +4,6 @@
 # Space: O(t), t is the total size of ac automata trie
 #            , space could be further improved by DAT (double-array trie)
 
-
 # Aho–Corasick automata
 # reference:
 # 1. http://web.stanford.edu/class/archive/cs/cs166/cs166.1166/lectures/02/Small02.pdf
