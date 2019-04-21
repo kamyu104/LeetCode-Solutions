@@ -71,7 +71,6 @@ class AhoTrie(object):
                 child.output = child.suffix if child.suffix.id is not None else child.suffix.output
 
 
-
 class StreamChecker(object):
 
     def __init__(self, words):
