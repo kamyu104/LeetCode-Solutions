@@ -1,6 +1,7 @@
 // Time: ctor:  O(n)    , n is the total size of patterns
 //       query: O(m + z), m is the total size of query string
 //                      , z is the number of all matched strings
+//                      , query time could be further improved to O(m) if we don't return all matched patterns
 // Space: O(t), t is the total size of ac automata trie
 //            , space could be further improved by DAT (double-array trie)
 
