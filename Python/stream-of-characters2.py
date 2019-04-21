@@ -1,8 +1,8 @@
-# Time:  ctor:  O(n), n is the total size of patterns
+# Time:  ctor:  O(n + p^2), n is the total size of patterns
+#                         , p is the count of patterns
 #        query: O(m + z), m is the total size of query string
 #                       , z is the number of all matched strings 
 # Space: O(t + p^2), t is the total size of ac automata trie,
-#                  , p is the count of patterns
 
 # Aho–Corasick automata
 # reference:
@@ -29,7 +29,7 @@ def create_ac_trie(patterns):  # Time:  O(n), Space: O(t)
     return root
  
 
-def create_ac_suffix_and_output_links(root):  # Time:  O(n), Space: O(t)
+def create_ac_suffix_and_output_links(root):  # Time:  O(n + p^2), Space: O(t + p^2)
     queue = collections.deque()
     for node in root.states.itervalues():
         queue.append(node)
@@ -43,8 +43,7 @@ def create_ac_suffix_and_output_links(root):  # Time:  O(n), Space: O(t)
             while fnode and key not in fnode.states:
                 fnode = fnode.suffix
             child.suffix = fnode.states[key] if fnode else root
-            child.output += child.suffix.output
-            print child.output
+            child.output += child.suffix.output  # Time: O(p^2)
 
 
 def create_ac_automata(patterns):
