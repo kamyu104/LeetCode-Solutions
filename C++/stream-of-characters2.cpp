@@ -35,7 +35,7 @@ public:
         }
     
         node_ = node_->children[letter - 'a'];
-        return node_->outputs;
+        return node_->outputs;  // Time:  O(z)
     }
 
 private:
