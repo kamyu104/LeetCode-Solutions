@@ -60,13 +60,13 @@ class Solution2(object):
                 else:  # new_pivot_idx < mid - 1.
                     left = new_pivot_idx + 1
                     
-        def quickSort(start, mid, end, nums):
+        def quickSort(start, end, nums):
             if end - start <= 1:
                 return
-            kthElement(nums, start, mid, end, lambda a, b: a < b)
             mid = start + (end - start) / 2
-            quickSort(start, start + (mid - start) / 2, mid, nums)
-            quickSort(mid, mid + (end - mid) / 2, end, nums)
+            kthElement(nums, start, mid, end, lambda a, b: a < b)
+            quickSort(start, mid, nums)
+            quickSort(mid, end, nums)
 
-        quickSort(0, len(nums) / 2, len(nums), nums)
+        quickSort(0, len(nums), nums)
         return nums
