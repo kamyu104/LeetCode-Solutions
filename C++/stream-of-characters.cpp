@@ -31,12 +31,7 @@ public:
         while (node_ && !node_->children[letter - 'a']) {
             node_ = node_->suffix;
         }
-        if (!node_) {
-            node_ = root_;
-            return {};
-        }
- 
-        node_ = node_->children[letter - 'a'];
+        node_ = node_ ? node_->children[letter - 'a'] : root_;
         return getACNodeOutputs(node_);
     }
 
