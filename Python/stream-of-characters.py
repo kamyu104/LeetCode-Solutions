@@ -29,15 +29,8 @@ class AhoTrie(object):
             self.__node = self.__root
             return False
  
-        result = []
         self.__node = self.__node.children[letter]
-        for i in self.__node.indices:
-            result.append(i)
-        output = self.__node.output
-        while output:
-            for i in output.indices:
-                result.append(i)
-            output = output.output
+        result = self.__get_ac_node_output(self.__node)
         return len(result) > 0
     
     def __init__(self, patterns):
@@ -71,6 +64,16 @@ class AhoTrie(object):
                 
         return root
 
+    def __get_ac_node_output(self, node):
+        result = []
+        for i in node.indices:
+            result.append(i)
+        output = node.output
+        while output:
+            for i in output.indices:
+                result.append(i)
+            output = output.output
+        return result
 
 class StreamChecker(object):
 
