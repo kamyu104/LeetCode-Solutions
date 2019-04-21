@@ -21,7 +21,7 @@ class AhoNode(object):
 
 class AhoTrie(object):
 
-    def query(self, letter):
+    def step(self, letter):
         while self.__node and letter not in self.__node.children:
             self.__node = self.__node.suffix
         if not self.__node:
@@ -84,7 +84,7 @@ class StreamChecker(object):
         :type letter: str
         :rtype: bool
         """
-        return self.__trie.query(letter)
+        return self.__trie.step(letter)
         
 
 # Your StreamChecker object will be instantiated and called as such:
