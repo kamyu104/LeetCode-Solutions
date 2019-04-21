@@ -19,7 +19,7 @@ public:
 private:
     void append(int R, int C, int r, int c,
                 vector<vector<int>> *result) {
-        if (r >= 0 && c >= 0 && r < R && c < C) {
+        if (0 <= r && r < R && 0 <= c && c < C) {
             result->emplace_back(vector<int>{r, c});
         }
     }
