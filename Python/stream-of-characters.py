@@ -13,7 +13,7 @@ import collections
 
 class AhoNode(object):
     def __init__(self):
-        self.states = collections.defaultdict(AhoNode)
+        self.children = collections.defaultdict(AhoNode)
         self.indices = []
         self.suffix = None
         self.output = None
@@ -22,14 +22,14 @@ class AhoNode(object):
 class AhoTrie(object):
 
     def query(self, letter):
-        while self.__node and letter not in self.__node.states:
+        while self.__node and letter not in self.__node.children:
             self.__node = self.__node.suffix
         if not self.__node:
             self.__node = self.__root
             return False
  
         result = []
-        self.__node = self.__node.states[letter]
+        self.__node = self.__node.children[letter]
         if self.__node.indices:
             for i in self.__node.indices:
                 result.append(self.__patterns[i])
@@ -51,24 +51,24 @@ class AhoTrie(object):
         for i, pattern in enumerate(patterns):
             node = root
             for c in pattern:
-                node = node.states[c]
+                node = node.children[c]
             node.indices.append(i)
         return root
 
     def __create_ac_suffix_and_output_links(self, root):  # Time:  O(n), Space: O(t)
         queue = collections.deque()
-        for node in root.states.itervalues():
+        for node in root.children.itervalues():
             queue.append(node)
             node.suffix = root
 
         while queue:
             node = queue.popleft()
-            for key, child in node.states.iteritems():
+            for key, child in node.children.iteritems():
                 queue.append(child)
                 fail = node.suffix
-                while fail and key not in fail.states:
+                while fail and key not in fail.children:
                     fail = fail.suffix
-                child.suffix = fail.states[key] if fail else root
+                child.suffix = fail.children[key] if fail else root
                 child.output = child.suffix if child.suffix.indices else child.suffix.output
 
 
