@@ -53,12 +53,12 @@ class AhoTrie(object):
 
         while queue:
             node = queue.popleft()
-            for key, child in node.children.iteritems():
+            for c, child in node.children.iteritems():
                 queue.append(child)
                 fail = node.suffix
-                while fail and key not in fail.children:
+                while fail and c not in fail.children:
                     fail = fail.suffix
-                child.suffix = fail.children[key] if fail else root
+                child.suffix = fail.children[c] if fail else root
                 child.outputs += child.suffix.outputs  # Time: O(p^2)
         
         return root
