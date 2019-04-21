@@ -92,11 +92,13 @@ private:
         vector<int> result;
         for (const auto& i : node_->indices) {
             result.emplace_back(i);
+            // return result;
         }
         auto output = node_->output;
         while (output) {
             for (const auto& i : output->indices) {
                 result.emplace_back(i);
+                // return result;
             }
             output = output->output;
         }
