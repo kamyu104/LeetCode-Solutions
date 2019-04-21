@@ -25,7 +25,7 @@ public:
         node_ = createACSuffixAndOutputLinks(root_);
     }
 
-    bool query(char letter) {
+    bool step(char letter) {
         while (node_ && !node_->children[letter - 'a']) {
             node_ = node_->suffix;
         }
@@ -106,7 +106,7 @@ public:
     }
     
     bool query(char letter) {
-        return trie_.query(letter);
+        return trie_.step(letter);
     }
 
 private:
