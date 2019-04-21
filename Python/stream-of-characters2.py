@@ -33,7 +33,6 @@ class AhoTrie(object):
         return len(result) > 0
     
     def __init__(self, patterns):
-        self.__patterns = patterns
         self.__root = self.__create_ac_trie(patterns)
         self.__create_ac_suffix_and_output_links(self.__root)
         self.__node = self.__root
