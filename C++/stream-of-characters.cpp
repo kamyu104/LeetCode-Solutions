@@ -34,8 +34,7 @@ public:
             node_ = root_;
             return false;
         }
-    
-        
+ 
         node_ = node_->children[letter - 'a'];
         const auto& result = getACNodeOutputs(node_);
         return !result.empty();
