@@ -22,13 +22,13 @@ class AhoNode(object):
 class AhoTrie(object):
 
     def query(self, letter):
-        result = []
         while self.__node and letter not in self.__node.states:
             self.__node = self.__node.suffix
         if not self.__node:
             self.__node = self.__root
             return False
  
+        result = []
         self.__node = self.__node.states[letter]
         if self.__node.id is not None:
             result.append(self.__patterns[self.__node.id])
