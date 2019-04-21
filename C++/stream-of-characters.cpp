@@ -35,18 +35,9 @@ public:
             return false;
         }
     
-        vector<int> result;
+        
         node_ = node_->children[letter - 'a'];
-        for (const auto& i : node_->indices) {
-            result.emplace_back(i);
-        }
-        auto output = node_->output;
-        while (output) {
-            for (const auto& i : output->indices) {
-                result.emplace_back(i);
-            }
-            output = output->output;
-        }
+        const auto& result = getACNodeOutputs(node_);
         return !result.empty();
     }
 
@@ -95,6 +86,21 @@ private:
         }
         
         return root;
+    }
+    
+    vector<int> getACNodeOutputs(AhoNode *node) {
+        vector<int> result;
+        for (const auto& i : node_->indices) {
+            result.emplace_back(i);
+        }
+        auto output = node_->output;
+        while (output) {
+            for (const auto& i : output->indices) {
+                result.emplace_back(i);
+            }
+            output = output->output;
+        }
+        return result;
     }
     
     AhoNode * const root_;
