@@ -5,8 +5,8 @@
 
 # Aho–Corasick automata
 # reference:
-# * http://web.stanford.edu/class/archive/cs/cs166/cs166.1166/lectures/02/Small02.pdf
-# * http://algo.pw/algo/64/python
+# 1. http://web.stanford.edu/class/archive/cs/cs166/cs166.1166/lectures/02/Small02.pdf
+# 2. http://algo.pw/algo/64/python
 
 import collections
 
