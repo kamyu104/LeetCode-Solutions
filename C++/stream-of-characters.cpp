@@ -21,8 +21,8 @@ struct AhoNode {
 
 class AhoTrie {
 public:
-    AhoTrie(const vector<string>& patterns) : root_(CreateACTrie(patterns)) {
-        node_ = CreateACSuffixAndOutputLinks(root_);
+    AhoTrie(const vector<string>& patterns) : root_(createACTrie(patterns)) {
+        node_ = createACSuffixAndOutputLinks(root_);
     }
 
     bool query(char letter) {
@@ -50,7 +50,7 @@ public:
     }
 
 private:
-    AhoNode *CreateACTrie(const vector<string>& patterns) {  // Time:  O(n), Space: O(t)
+    AhoNode *createACTrie(const vector<string>& patterns) {  // Time:  O(n), Space: O(t)
         auto root = new AhoNode();
         for (int i = 0; i < patterns.size(); ++i) {
             auto node = root;
@@ -65,7 +65,7 @@ private:
         return root;
     }
     
-    AhoNode *CreateACSuffixAndOutputLinks(AhoNode *root) {  // Time:  O(n), Space: O(t)
+    AhoNode *createACSuffixAndOutputLinks(AhoNode *root) {  // Time:  O(n), Space: O(t)
         queue<AhoNode *> q;
         for (auto node : root->children) {
             if (!node) {
