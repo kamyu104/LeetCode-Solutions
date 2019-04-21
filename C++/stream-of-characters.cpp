@@ -73,11 +73,11 @@ private:
                 }
                 auto child = node->children[c];
                 q.emplace(child);
-                auto fail = node->suffix;
-                while (fail && !fail->children[c]) {
-                    fail = fail->suffix;
+                auto suffix = node->suffix;
+                while (suffix && !suffix->children[c]) {
+                    suffix = suffix->suffix;
                 }
-                child->suffix = fail ? fail->children[c] : root;
+                child->suffix = suffix ? suffix->children[c] : root;
                 child->output = !child->suffix->indices.empty() ?
                     child->suffix : child->suffix->output;
             }
