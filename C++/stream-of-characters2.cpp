@@ -72,11 +72,11 @@ private:
                 }
                 auto child = node->children[c];
                 q.emplace(child);
-                auto fail = node->suffix;
-                while (fail && !fail->children[c]) {
-                    fail = fail->suffix;
+                auto suffix = node->suffix;
+                while (suffix && !suffix->children[c]) {
+                    suffix = suffix->suffix;
                 }
-                child->suffix = fail ? fail->children[c] : root;
+                child->suffix = suffix ? suffix->children[c] : root;
                 copy (child->suffix->outputs.cbegin(),
                       child->suffix->outputs.cend(),
                       back_inserter(child->outputs));  // Time: O(p^2)
