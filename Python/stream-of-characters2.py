@@ -36,13 +36,13 @@ def create_ac_suffix_and_output_links(root):  # Time:  O(n + p^2), Space: O(t + 
         node.suffix = root
  
     while queue:
-        rnode = queue.popleft()
-        for key, child in rnode.states.iteritems():
+        node = queue.popleft()
+        for key, child in node.states.iteritems():
             queue.append(child)
-            fnode = rnode.suffix
-            while fnode and key not in fnode.states:
-                fnode = fnode.suffix
-            child.suffix = fnode.states[key] if fnode else root
+            fail = node.suffix
+            while fail and key not in fail.states:
+                fail = fail.suffix
+            child.suffix = fail.states[key] if fail else root
             child.output += child.suffix.output  # Time: O(p^2)
 
 
