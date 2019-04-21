@@ -55,10 +55,10 @@ class AhoTrie(object):
             node = queue.popleft()
             for c, child in node.children.iteritems():
                 queue.append(child)
-                fail = node.suffix
-                while fail and c not in fail.children:
-                    fail = fail.suffix
-                child.suffix = fail.children[c] if fail else root
+                suffix = node.suffix
+                while suffix and c not in suffix.children:
+                    suffix = suffix.suffix
+                child.suffix = suffix.children[c] if suffix else root
                 child.output = child.suffix if child.suffix.indices else child.suffix.output
                 
         return root
