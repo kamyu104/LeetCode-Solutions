@@ -27,11 +27,10 @@ class AhoTrie(object):
             self.__node = self.__node.suffix
         if not self.__node:
             self.__node = self.__root
-            return False
+            return []
  
         self.__node = self.__node.children[letter]
-        result = self.__get_ac_node_outputs(self.__node)
-        return len(result) > 0
+        return self.__get_ac_node_outputs(self.__node)
     
     def __init__(self, patterns):
         self.__root = self.__create_ac_trie(patterns)
@@ -89,7 +88,7 @@ class StreamChecker(object):
         :type letter: str
         :rtype: bool
         """
-        return self.__trie.step(letter)
+        return len(self.__trie.step(letter)) > 0
         
 
 # Your StreamChecker object will be instantiated and called as such:
