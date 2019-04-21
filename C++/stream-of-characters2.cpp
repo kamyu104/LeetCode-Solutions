@@ -31,7 +31,7 @@ public:
             node_ = node_->suffix;
         }
         node_ = node_ ? node_->children[letter - 'a'] : root_;
-        return &node_->outputs;  // Time:  O(z), it wuold be O(1) if we don't use all the matched patterns
+        return &node_->outputs;  // Time:  O(z), it would be O(1) if we don't use all the matched patterns
     }
 
 private:
