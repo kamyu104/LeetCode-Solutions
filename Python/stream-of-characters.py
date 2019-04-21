@@ -30,7 +30,7 @@ class AhoTrie(object):
             return False
  
         self.__node = self.__node.children[letter]
-        result = self.__get_ac_node_output(self.__node)
+        result = self.__get_ac_node_outputs(self.__node)
         return len(result) > 0
     
     def __init__(self, patterns):
@@ -64,7 +64,7 @@ class AhoTrie(object):
                 
         return root
 
-    def __get_ac_node_output(self, node):
+    def __get_ac_node_outputs(self, node):
         result = []
         for i in node.indices:
             result.append(i)
