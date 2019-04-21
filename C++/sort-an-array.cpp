@@ -17,13 +17,12 @@ private:
         const auto& mid = start + (end - start) / 2;
         mergeSort(start, mid, nums);
         mergeSort(mid, end, nums);
-        int r = mid;
         vector<int> tmp;
-        for (int i = start; i < mid; ++i) {
-            while (r < end && (*nums)[r] < (*nums)[i]) {
-                tmp.emplace_back((*nums)[r++]);
+        for (int left = start, right = mid; left < mid; ++left) {
+            while (right < end && (*nums)[right] < (*nums)[left]) {
+                tmp.emplace_back((*nums)[right++]);
             }
-            tmp.emplace_back((*nums)[i]);
+            tmp.emplace_back((*nums)[left]);
         }
         copy(tmp.cbegin(), tmp.cend(), nums->begin() + start);
     }
