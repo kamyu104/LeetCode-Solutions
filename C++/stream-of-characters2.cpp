@@ -2,7 +2,7 @@
 //                         , p is the number of patterns
 //        query: O(m + z), m is the total size of query string
 //                       , z is the number of all matched strings 
-//                       , query would be O(m) if we don't use all the matched patterns
+//                       , query time would be O(m) if we don't use all the matched patterns
 // Space: O(t + p^2), t is the total size of ac automata trie
 //                  , space could be further improved by DAT (double-array trie)
 
