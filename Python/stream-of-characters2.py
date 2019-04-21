@@ -72,7 +72,7 @@ class StreamChecker(object):
         """
         self.__trie = AhoTrie(words)
 
-    def query(self, letter):
+    def query(self, letter):  # O(m) times
         """
         :type letter: str
         :rtype: bool
