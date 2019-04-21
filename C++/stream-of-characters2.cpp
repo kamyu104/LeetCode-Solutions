@@ -20,8 +20,7 @@ struct AhoNode {
 
 class AhoTrie {
 public:
-    AhoTrie(const vector<string>& patterns) {
-        root_ = CreateACTrie(patterns);
+    AhoTrie(const vector<string>& patterns) : root_(CreateACTrie(patterns)) {
         node_ = CreateACSuffixAndOutputLinks(root_);
     }
 
@@ -87,7 +86,7 @@ private:
         return root;
     }
     
-    AhoNode *root_;
+    AhoNode * const root_;
     AhoNode *node_;
 };
 
