@@ -86,7 +86,7 @@ private:
         return root;
     }
     
-    vector<int> getACNodeOutputs(AhoNode *node) {
+    vector<int> getACNodeOutputs(AhoNode *node) {  // Time:  O(z)
         vector<int> result;
         for (const auto& i : node_->indices) {
             result.emplace_back(i);
