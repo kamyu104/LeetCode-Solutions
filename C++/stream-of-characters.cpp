@@ -26,18 +26,17 @@ public:
         node_ = createACSuffixAndOutputLinks(root_);
     }
 
-    bool step(char letter) {
+    vector<int> step(char letter) {
         while (node_ && !node_->children[letter - 'a']) {
             node_ = node_->suffix;
         }
         if (!node_) {
             node_ = root_;
-            return false;
+            return {};
         }
  
         node_ = node_->children[letter - 'a'];
-        const auto& result = getACNodeOutputs(node_);
-        return !result.empty();
+        return getACNodeOutputs(node_);
     }
 
 private:
@@ -112,7 +111,7 @@ public:
     }
     
     bool query(char letter) {
-        return trie_.step(letter);
+        return !trie_.step(letter).empty();
     }
 
 private:
