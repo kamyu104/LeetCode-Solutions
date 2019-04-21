@@ -75,6 +75,7 @@ class AhoTrie(object):
             output = output.output
         return result
 
+
 class StreamChecker(object):
 
     def __init__(self, words):
