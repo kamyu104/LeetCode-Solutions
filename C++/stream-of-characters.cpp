@@ -51,7 +51,7 @@ public:
     }
 
 private:
-    AhoNode *CreateACTrie(const vector<string>& patterns) {
+    AhoNode *CreateACTrie(const vector<string>& patterns) {  // Time:  O(n), Space: O(t)
         auto root = new AhoNode();
         for (int i = 0; i < patterns.size(); ++i) {
             auto node = root;
@@ -66,7 +66,7 @@ private:
         return root;
     }
     
-    AhoNode *CreateACSuffixAndOutputLinks(AhoNode *root) {
+    AhoNode *CreateACSuffixAndOutputLinks(AhoNode *root) {  // Time:  O(n), Space: O(t)
         queue<AhoNode *> q;
         for (auto node : root->children) {
             if (!node) {
