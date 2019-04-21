@@ -87,7 +87,7 @@ private:
     }
     
     vector<int> getACNodeOutputs(AhoNode *node) {  // Time:  O(z), in this question, it could be improved to O(1)
-                                                   // if we return only a matched string without all strings
+                                                   // if we only return a matched pattern without all matched ones
         vector<int> result;
         for (const auto& i : node_->indices) {
             result.emplace_back(i);
