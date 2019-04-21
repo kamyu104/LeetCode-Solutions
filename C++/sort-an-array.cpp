@@ -34,7 +34,7 @@ private:
 };
 
 // Time:  O(nlogn), on average
-// Space: O(logn), on average
+// Space: O(logn)
 // quick sort solution
 class Solution2 {
 public:
