@@ -30,7 +30,7 @@ class AhoTrie(object):
             return []
  
         self.__node = self.__node.children[letter]
-        return self.__node.outputs
+        return self.__node.outputs  # Time:  O(z)
     
     def __init__(self, patterns):
         self.__root = self.__create_ac_trie(patterns)
