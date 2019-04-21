@@ -69,10 +69,12 @@ class AhoTrie(object):
         result = []
         for i in node.indices:
             result.append(i)
+            # return result
         output = node.output
         while output:
             for i in output.indices:
                 result.append(i)
+                # return result
             output = output.output
         return result
 
