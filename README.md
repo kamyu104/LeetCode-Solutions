@@ -446,7 +446,7 @@
 1022 |[Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)| [C++](./C++/sum-of-root-to-leaf-binary-numbers.cpp) [Python](./Python/sum-of-root-to-leaf-binary-numbers.py)| _O(n)_ | _O(h)_ | Easy |||
 1026 |[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/)| [C++](./C++/maximum-difference-between-node-and-ancestor.cpp) [Python](./Python/maximum-difference-between-node-and-ancestor.py)| _O(n)_ | _O(h)_ | Medium || DFS |
 1028 |[Recover a Tree From Preorder Traversal](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/)| [C++](./C++/recover-a-tree-from-preorder-traversal.cpp) [Python](./Python/recover-a-tree-from-preorder-traversal.py)| _O(n)_ | _O(h)_ | Hard || DFS |
-1032 |[Stream of Characters](https://leetcode.com/problems/stream-of-characters/)| [C++](./C++/stream-of-characters.cpp) [Python](./Python/stream-of-characters.py)| ctor: _O(n)_ <br> query: _O(m + z)_ | _O(t)_ | Hard || `Aho–Corasick Automata`, Trie |
+1032 |[Stream of Characters](https://leetcode.com/problems/stream-of-characters/)| [C++](./C++/stream-of-characters.cpp) [Python](./Python/stream-of-characters.py)| ctor: _O(n)_ <br> query: _O(m + z)_ | _O(t)_ | Hard || `Aho-Corasick Automata`, Trie |
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
