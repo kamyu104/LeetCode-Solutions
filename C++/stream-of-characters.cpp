@@ -110,7 +110,7 @@ public:
     StreamChecker(vector<string>& words) : trie_(words) {
     }
     
-    bool query(char letter) {
+    bool query(char letter) {  // O(m) times
         return !trie_.step(letter).empty();
     }
 
