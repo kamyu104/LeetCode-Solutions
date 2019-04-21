@@ -12,49 +12,59 @@
 import collections
 
 
-class AhoNode:
+class AhoNode(object):
     def __init__(self):
         self.states = collections.defaultdict(AhoNode)
         self.output = []
         self.suffix = None
+        self.id = None
 
 
-def create_ac_trie(patterns):  # Time:  O(n), Space: O(t)
-    root = AhoNode()
-    for i, pattern in enumerate(patterns):
-        node = root
-        for c in pattern:
-            node = node.states[c]
-        node.output.append(i)
-    return root
+class AhoTrie(object):
+
+    def query(self, letter):
+        result = []
+        while self.__node and letter not in self.__node.states:
+            self.__node = self.__node.suffix
+        if not self.__node:
+            self.__node = self.__root
+            return False
  
-
-def create_ac_suffix_and_output_links(root):  # Time:  O(n + p^2), Space: O(t + p^2)
-    queue = collections.deque()
-    for node in root.states.itervalues():
-        queue.append(node)
-        node.suffix = root
- 
-    while queue:
-        node = queue.popleft()
-        for key, child in node.states.iteritems():
-            queue.append(child)
-            fail = node.suffix
-            while fail and key not in fail.states:
-                fail = fail.suffix
-            child.suffix = fail.states[key] if fail else root
-            child.output += child.suffix.output  # Time: O(p^2)
-
-
-def create_ac_automata(patterns):
-    root = create_ac_trie(patterns)
-    create_ac_suffix_and_output_links(root)
-    return root
+        self.__node = self.__node.states[letter]
+        result = self.__node.output
+        return len(result) > 0
+    
+    def __init__(self, patterns):
+        self.__patterns = patterns
+        self.__root = self.__create_ac_trie(patterns)
+        self.__create_ac_suffix_and_output_links(self.__root)
+        self.__node = self.__root
+    
+    def __create_ac_trie(self, patterns):  # Time:  O(n), Space: O(t)
+        root = AhoNode()
+        for i, pattern in enumerate(patterns):
+            node = root
+            for c in pattern:
+                node = node.states[c]
+            node.output.append(i)
+        return root
 
 
-def print_all_matched_strings(words, output):
-    for l in output:
-        print words[l]
+    def __create_ac_suffix_and_output_links(self, root):  # Time:  O(n + p^2), Space: O(t + p^2)
+        queue = collections.deque()
+        for node in root.states.itervalues():
+            queue.append(node)
+            node.suffix = root
+
+        while queue:
+            node = queue.popleft()
+            for key, child in node.states.iteritems():
+                queue.append(child)
+                fail = node.suffix
+                while fail and key not in fail.states:
+                    fail = fail.suffix
+                child.suffix = fail.states[key] if fail else root
+                child.output += child.suffix.output  # Time: O(p^2)
 
 
 class StreamChecker(object):
@@ -63,25 +73,15 @@ class StreamChecker(object):
         """
         :type words: List[str]
         """
-        self.__root = create_ac_automata(words)
-        self.__node = self.__root
-        self.__words = words
+        self.__trie = AhoTrie(words)
 
     def query(self, letter):
         """
         :type letter: str
         :rtype: bool
         """
-        while self.__node and letter not in self.__node.states:
-            self.__node = self.__node.suffix
-        if not self.__node:
-            self.__node = self.__root
-            return
-        self.__node = self.__node.states[letter]
-        if self.__node.output:
-            print_all_matched_strings(self.__words, self.__node.output)
-            return True
-        return False
+        return self.__trie.query(letter)
+        
 
 # Your StreamChecker object will be instantiated and called as such:
 # obj = StreamChecker(words)
