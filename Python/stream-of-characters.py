@@ -63,7 +63,7 @@ class AhoTrie(object):
                 
         return root
 
-    def __get_ac_node_outputs(self, node):
+    def __get_ac_node_outputs(self, node):  # Time:  O(z)
         result = []
         for i in node.indices:
             result.append(i)
