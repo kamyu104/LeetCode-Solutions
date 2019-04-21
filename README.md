@@ -203,7 +203,7 @@
 1014 | [Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/) | [C++](./C++/best-sightseeing-pair.cpp) [Python](./Python/best-sightseeing-pair.py) | _O(n)_ | _O(1)_      | Medium         ||
 1018 | [Binary Prefix Divisible By 5](https://leetcode.com/problems/binary-prefix-divisible-by-5/) | [C++](./C++/binary-prefix-divisible-by-5.cpp) [Python](./Python/binary-prefix-divisible-by-5.py) | _O(n)_ | _O(1)_      | Easy         ||
 1020 | [Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/) | [C++](./C++/partition-array-into-three-parts-with-equal-sum.cpp) [Python](./Python/partition-array-into-three-parts-with-equal-sum.py) | _O(n)_ | _O(1)_      | Easy         ||
-1030 | [Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order/) | [C++](./C++/matrix-cells-in-distance-order.cpp) [Python](./Python/matrix-cells-in-distance-order.py) | _O(n)_ | _O(1)_      | Easy         ||
+1030 | [Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order/) | [C++](./C++/matrix-cells-in-distance-order.cpp) [Python](./Python/matrix-cells-in-distance-order.py) | _O(m * n)_ | _O(1)_      | Easy         ||
 1031 | [Maximum Sum of Two Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/) | [C++](./C++/maximum-sum-of-two-non-overlapping-subarrays.cpp) [Python](./Python/maximum-sum-of-two-non-overlapping-subarrays.py) | _O(n)_ | _O(1)_      | Medium         ||
 
 ## String
