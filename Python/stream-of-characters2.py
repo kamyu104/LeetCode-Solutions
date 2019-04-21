@@ -49,7 +49,6 @@ class AhoTrie(object):
             node.output.append(i)
         return root
 
-
     def __create_ac_suffix_and_output_links(self, root):  # Time:  O(n + p^2), Space: O(t + p^2)
         queue = collections.deque()
         for node in root.states.itervalues():
