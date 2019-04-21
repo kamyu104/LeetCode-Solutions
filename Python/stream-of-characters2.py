@@ -2,6 +2,7 @@
 #                         , p is the number of patterns
 #        query: O(m + z), m is the total size of query string
 #                       , z is the number of all matched strings 
+#                       , query would be O(m) if we don't use all the matched patterns
 # Space: O(t + p^2), t is the total size of ac automata trie
 #                  , space could be further improved by DAT (double-array trie)
 
@@ -26,7 +27,7 @@ class AhoTrie(object):
         while self.__node and letter not in self.__node.children:
             self.__node = self.__node.suffix
         self.__node = self.__node.children[letter] if self.__node else self.__root
-        return self.__node.outputs  # Time:  O(z)
+        return self.__node.outputs  # Time:  O(z), it would be O(m) if we don't use all the matched patterns
     
     def __init__(self, patterns):
         self.__root = self.__create_ac_trie(patterns)
