@@ -1,5 +1,5 @@
 # Time:  O(n + w), n is the size of S, w is the size of words
-# Space: O(1)
+# Space: O(k), k is the number of words
 
 import collections
 
@@ -13,7 +13,7 @@ class Solution(object):
         """
         waiting = collections.defaultdict(list)
         for word in words:
-            waiting[word[0]].append(iter(word[1:]))
+            waiting[word[0]].append(next(iter(word)))
         for c in S:
             for it in waiting.pop(c, ()):
                 waiting[next(it, None)].append(it)
