@@ -13,7 +13,8 @@ class Solution(object):
         """
         waiting = collections.defaultdict(list)
         for word in words:
-            waiting[word[0]].append(next(iter(word)))
+            it = iter(word)
+            waiting[next(it, None)].append(it)
         for c in S:
             for it in waiting.pop(c, ()):
                 waiting[next(it, None)].append(it)
