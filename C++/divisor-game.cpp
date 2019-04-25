@@ -15,7 +15,7 @@ public:
     }
 };
 
-// Time:  O(n!)
+// Time:  O(n)
 // Space: O(n)
 // dp solution
 class Solution2 {
