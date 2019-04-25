@@ -17,7 +17,7 @@ class Solution(object):
         return N % 2 == 0
 
 
-# Time:  O(n)
+# Time:  O(n^3/2)
 # Space: O(n)
 # dp solution
 class Solution2(object):
