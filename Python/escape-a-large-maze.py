@@ -38,4 +38,5 @@ class Solution(object):
                     q.append((nr, nc))
             return False
         
-        return bfs(set(map(tuple, blocked)), tuple(source), tuple(target))
+        return bfs(set(map(tuple, blocked)), tuple(source), tuple(target)) and \
+               bfs(set(map(tuple, blocked)), tuple(target), tuple(source))
