@@ -1,5 +1,5 @@
-# Time:  O(B^2)
-# Space: O(B)
+# Time:  O(n^2), n is the number of blocked
+# Space: O(n)
 
 import collections
 
