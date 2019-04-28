@@ -15,8 +15,8 @@ class Solution(object):
         R, C = 10**6, 10**6
         directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
 
-        def bfs(blocked, source, target):
-            max_area_surrounded_by_blocks = len(blocked)*(len(blocked)-1)//2
+        def bfs(blocks, source, target):
+            max_area_surrounded_by_blocks = len(blocks)*(len(blocks)-1)//2
             lookup = set([source])
             if len(lookup) > max_area_surrounded_by_blocks:
                 return True
@@ -30,7 +30,7 @@ class Solution(object):
                     if not ((0 <= cr < R) and
                             (0 <= cc < C) and 
                             (cr, cc) not in lookup and
-                            (cr, cc) not in blocked):
+                            (cr, cc) not in blocks):
                         continue
                     lookup.add((cr, cc))
                     if len(lookup) > max_area_surrounded_by_blocks:
