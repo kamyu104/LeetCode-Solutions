@@ -1,7 +1,8 @@
 # Time:  O(B^2)
 # Space: O(B)
-# Time:  O(B^2)
-# Space: O(B)
+
+import collections
+
 
 class Solution(object):
     def isEscapePossible(self, blocked, source, target):
