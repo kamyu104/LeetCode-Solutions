@@ -20,7 +20,7 @@ class Solution(object):
             lookup = set([source])
             if len(lookup) > max_area_surrounded_by_blocks:
                 return True
-            q = collections.deque([(source)])
+            q = collections.deque([source])
             while q:
                 source = q.popleft()
                 if source == target:
