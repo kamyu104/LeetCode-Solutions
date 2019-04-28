@@ -26,16 +26,16 @@ class Solution(object):
                 if source == target:
                     return True
                 for direction in directions:
-                    cr, cc = source[0]+direction[0], source[1]+direction[1]
-                    if not ((0 <= cr < R) and
-                            (0 <= cc < C) and 
-                            (cr, cc) not in lookup and
-                            (cr, cc) not in blocks):
+                    nr, nc = source[0]+direction[0], source[1]+direction[1]
+                    if not ((0 <= nr < R) and
+                            (0 <= nc < C) and 
+                            (nr, nc) not in lookup and
+                            (nr, nc) not in blocks):
                         continue
-                    lookup.add((cr, cc))
+                    lookup.add((nr, nc))
                     if len(lookup) > max_area_surrounded_by_blocks:
                         return True
-                    q.append((cr, cc))
+                    q.append((nr, nc))
             return False
         
         return bfs(set(map(tuple, blocked)), tuple(source), tuple(target))
