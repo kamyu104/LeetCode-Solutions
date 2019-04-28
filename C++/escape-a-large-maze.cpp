@@ -41,19 +41,19 @@ private:
                 return true;
             }
             for (const auto& dir : directions) {
-                const auto cr = source.first + dir.first, cc = source.second + dir.second;
+                const auto nr = source.first + dir.first, nc = source.second + dir.second;
                 
-                if (!((0 <= cr && cr < R) &&
-                      (0 <= cc && cc < C) &&
-                      !lookup.count(make_pair(cr, cc)) &&
-                      !blocks.count(make_pair(cr, cc)))) {
+                if (!((0 <= nr && nr < R) &&
+                      (0 <= nc && nc < C) &&
+                      !lookup.count(make_pair(nr, nc)) &&
+                      !blocks.count(make_pair(nr, nc)))) {
                     continue;
                 }
-                lookup.emplace(cr, cc);
+                lookup.emplace(nr, nc);
                 if (lookup.size() > max_area_surrounded_by_blocks) {
                     return true;
                 }
-                q.emplace(cr, cc);
+                q.emplace(nr, nc);
             }
         }
         return false;
