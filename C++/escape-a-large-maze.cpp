@@ -31,6 +31,9 @@ private:
 
         const auto& max_area_surrounded_by_blocks = blocks.size() * (blocks.size() - 1) / 2;
         unordered_set<pair<int, int>, PairHash<int>> lookup{source};
+        if (lookup.size() > max_area_surrounded_by_blocks) {
+            return true;
+        }
         queue<pair<int, int>> q({source});
         while (!q.empty()) {
             auto source = q.front();  q.pop();
