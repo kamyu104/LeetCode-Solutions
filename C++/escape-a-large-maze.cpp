@@ -18,7 +18,8 @@ public:
         for (const auto& block : blocked) {
             blocks.emplace(block[0], block[1]);
         }
-        return bfs(blocks, make_pair(source[0], source[1]), make_pair(target[0], target[1]));
+        return bfs(blocks, make_pair(source[0], source[1]), make_pair(target[0], target[1])) &&
+               bfs(blocks, make_pair(target[0], target[1]), make_pair(source[0], source[1]));
     }
     
 private:
