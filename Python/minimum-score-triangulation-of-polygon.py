@@ -13,5 +13,5 @@ class Solution(object):
                 j = i+p-1;
                 dp[i][j] = float("inf")
                 for k in xrange(i+1, j):
-                    dp[i][j] = min(dp[i][j], dp[i][k]+dp[k][j] + A[i]*A[j]*A[k]);
+                    dp[i][j] = min(dp[i][j], dp[i][k]+dp[k][j] + A[i]*A[j]*A[k])
         return dp[0][-1]
