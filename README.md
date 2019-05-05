@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1032%20%2F%201032-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1036%20%2F%201036-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -447,6 +447,7 @@
 1026 |[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/)| [C++](./C++/maximum-difference-between-node-and-ancestor.cpp) [Python](./Python/maximum-difference-between-node-and-ancestor.py)| _O(n)_ | _O(h)_ | Medium || DFS |
 1028 |[Recover a Tree From Preorder Traversal](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/)| [C++](./C++/recover-a-tree-from-preorder-traversal.cpp) [Python](./Python/recover-a-tree-from-preorder-traversal.py)| _O(n)_ | _O(h)_ | Hard || DFS |
 1032 |[Stream of Characters](https://leetcode.com/problems/stream-of-characters/)| [C++](./C++/stream-of-characters.cpp) [C++](./C++/stream-of-characters2.cpp) [Python](./Python/stream-of-characters.py) [Python](./Python/stream-of-characters2.py) | ctor: _O(n)_ <br> query: _O(m)_ | _O(t)_ | Hard || `Aho-Corasick Automata`, Trie |
+1038 |[Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)| [C++](./C++/binary-search-tree-to-greater-sum-tree.cpp) [Python](./Python/binary-search-tree-to-greater-sum-tree.py)| _O(n)_ | _O(h)_ | Medium || DFS |
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -611,7 +612,7 @@
 1015 | [Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k/) | [C++](./C++/smallest-integer-divisible-by-k.cpp) [Python](./Python/smallest-integer-divisible-by-k.py) | _O(k)_ | _O(1)_      | Medium         ||
 1017 | [Convert to Base -2](https://leetcode.com/problems/convert-to-base-2/) | [C++](./C++/convert-to-base-2.cpp) [Python](./Python/convert-to-base-2.py) | _O(logn)_ | _O(1)_      | Medium         ||
 1025 | [Divisor Game](https://leetcode.com/problems/divisor-game/) | [C++](./C++/divisor-game.cpp) [Python](./Python/divisor-game.py) | _O(1)_ | _O(1)_      | Easy         || DP
-1033 | [Moving Stones Until Consecutive](https://leetcode.com/problems/moving-stones-until-consecutive/) | [C++](./C++/moving-stones-until-consecutive.cpp) [Python](./Python/moving-stones-until-consecutive.py) | _O(1)_ | _O(1)_      | Easy         ||
+1037 | [Valid Boomerang](https://leetcode.com/problems/valid-boomerang/) | [C++](./C++/valid-boomerang.cpp) [Python](./Python/valid-boomerang.py) | _O(1)_ | _O(1)_      | Easy         ||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -669,6 +670,8 @@
 0930 | [Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/) | [C++](./C++/binary-subarrays-with-sum.cpp) [Python](./Python/binary-subarrays-with-sum.py) | _O(n)_ | _O(1)_ | Medium ||
 0977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [C++](./C++/squares-of-a-sorted-array.cpp) [Python](./Python/squares-of-a-sorted-array.py) | _O(n)_ | _O(1)_ | Easy ||
 1004 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | [C++](./C++/max-consecutive-ones-iii.cpp) [Python](./Python/max-consecutive-ones-iii.py) | _O(n)_ | _O(1)_ | Medium ||
+1033 | [Moving Stones Until Consecutive](https://leetcode.com/problems/moving-stones-until-consecutive/) | [C++](./C++/moving-stones-until-consecutive.cpp) [Python](./Python/moving-stones-until-consecutive.py) | _O(1)_ | _O(1)_      | Easy         ||
+1040 | [Moving Stones Until Consecutive II](https://leetcode.com/problems/moving-stones-until-consecutive-ii/) | [C++](./C++/moving-stones-until-consecutive-ii.cpp) [Python](./Python/moving-stones-until-consecutive-ii.py) | _O(nlogn)_ | _O(1)_      | Medium         ||
 
 ## Recursion
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -992,6 +995,7 @@
 1000| [Minimum Cost to Merge Stones](https://leetcode.com/problems/minimum-cost-to-merge-stones/) | [C++](./C++/minimum-cost-to-merge-stones.cpp) [Python](./Python/minimum-cost-to-merge-stones.py) |  _O(n^3)_ | _O(n^3)_   | Hard         || Memoization |
 1027| [Longest Arithmetic Sequence](https://leetcode.com/problems/longest-arithmetic-sequence/) | [C++](./C++/longest-arithmetic-sequence.cpp) [Python](./Python/longest-arithmetic-sequence.py) |  _O(n^2)_ | _O(n^2)_   | Medium         |||
 1035| [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/) | [C++](./C++/uncrossed-lines.cpp) [Python](./Python/uncrossed-lines.py) |  _O(m * n)_ | _O(min(m, n))_   | Medium         |||
+1039| [Minimum Score Triangulation of Polygon](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/) | [C++](./C++/minimum-score-triangulation-of-polygon.cpp) [Python](./Python/minimum-score-triangulation-of-polygon.py) |  _O(n^3)_ | _O(n^2)_   | Medium         |||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
