@@ -30,7 +30,7 @@ private:
         lookup[curr].emplace_back(L - 1);
         for (int i = L; i < S.length(); ++i) {
             curr = (D * curr) % M;
-            curr = (curr + (S[i] - 'a') ) % M;
+            curr = (curr + (S[i] - 'a')) % M;
             curr = (curr + (M - ((S[i - L] - 'a') * p) % M)) % M;
             if (lookup.count(curr)) {
                 for (const auto& j : lookup[curr]) {
