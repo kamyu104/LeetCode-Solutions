@@ -7,7 +7,7 @@
 class Solution {
 public:
     string longestDupSubstring(string S) {
-        auto left = 0ul, right = S.length() - 1;
+        auto left = 1ul, right = S.length() - 1;
         while (left <= right) {
             const auto mid = left + (right - left) / 2;
             if (!check(S, mid)) {
