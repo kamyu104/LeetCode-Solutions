@@ -9,7 +9,7 @@ public:
         for (int i = 0; i < A.size(); ++i) {
             int curr_max = 0;
             // dp[i % W] = 0;  // no need in this problem
-            for (int k = 1; k <= K && i - k + 1 >= 0; ++k) {
+            for (int k = 1; k <= min(K, i + 1); ++k) {
                 curr_max = max(curr_max, A[i - k + 1]);
                 dp[i % W] = max(dp[i % W], (i >= k ? dp[(i - k) % W] : 0) + curr_max * k);
             }
