@@ -32,7 +32,7 @@ private:
             curr = (curr + (S[i] - 'a')) % M;
             curr = (curr + (M - ((S[i - L] - 'a') * p) % M)) % M;
             if (lookup.count(curr)) {
-                for (const auto& j : lookup[curr]) {
+                for (const auto& j : lookup[curr]) {  // check if string is the same when hash is the same
                     if (S.substr(j - L + 1, L) == S.substr(i - L + 1, L)) {
                         return i - L + 1;
                     }
