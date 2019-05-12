@@ -1,6 +1,9 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
+// other solution is to apply kasai's algorithm, refer to the link below:
+// https://leetcode.com/problems/longest-duplicate-substring/discuss/290852/Suffix-array-clear-solution
+
 class Solution {
 public:
     string longestDupSubstring(string S) {
