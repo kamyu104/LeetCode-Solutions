@@ -4,7 +4,6 @@
 class Solution {
 public:
     string longestDupSubstring(string S) {
-        string result;
         int left = 0, right = S.length() - 1;
         while (left <= right) {
             int mid = left + (right - left) / 2;
