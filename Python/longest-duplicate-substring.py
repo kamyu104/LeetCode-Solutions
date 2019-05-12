@@ -17,8 +17,6 @@ class Solution(object):
         D = 26
 
         def check(S, L):
-            if L < 0:
-                print L
             p = pow(D, L, M)
             curr = reduce(lambda x, y: (D*x+ord(y)-ord('a')) % M, S[:L], 0)
             lookup = collections.defaultdict(list)
