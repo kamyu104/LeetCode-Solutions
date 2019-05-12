@@ -17,7 +17,7 @@ public:
     }
     
 private:
-    int check(const string& S, uint64_t L) {
+    uint64_t check(const string& S, uint64_t L) {
         static const uint64_t M = 1e9 + 7;
         static const uint64_t D = 26;
         uint64_t p = power(D, L, M);
