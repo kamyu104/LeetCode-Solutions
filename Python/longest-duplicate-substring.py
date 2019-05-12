@@ -1,6 +1,9 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
+import collections
+
+
 class Solution(object):
     def longestDupSubstring(self, S):
         """
