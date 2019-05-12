@@ -31,7 +31,7 @@ class Solution(object):
                 lookup[curr].append(i)
             return 0
 
-        left, right = 0, len(S)-1
+        left, right = 1, len(S)-1
         while left <= right:
             mid = left + (right-left)//2
             if not check(S, mid):
