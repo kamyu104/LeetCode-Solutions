@@ -30,7 +30,7 @@ class Solution(object):
                 lookup[curr].append(i)
             return 0
 
-        result, left, right = 0, 0, len(S)
+        left, right = 0, len(S)-1
         while left <= right:
             mid = left + (right-left)//2
             if not check(S, mid):
@@ -39,4 +39,3 @@ class Solution(object):
                 left = mid+1
         result = check(S, right)
         return S[result:result + right]
-    
