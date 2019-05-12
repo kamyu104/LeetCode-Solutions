@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1036%20%2F%201036-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1040%20%2F%201040-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -613,6 +613,7 @@
 1017 | [Convert to Base -2](https://leetcode.com/problems/convert-to-base-2/) | [C++](./C++/convert-to-base-2.cpp) [Python](./Python/convert-to-base-2.py) | _O(logn)_ | _O(1)_      | Medium         ||
 1025 | [Divisor Game](https://leetcode.com/problems/divisor-game/) | [C++](./C++/divisor-game.cpp) [Python](./Python/divisor-game.py) | _O(1)_ | _O(1)_      | Easy         || DP
 1037 | [Valid Boomerang](https://leetcode.com/problems/valid-boomerang/) | [C++](./C++/valid-boomerang.cpp) [Python](./Python/valid-boomerang.py) | _O(1)_ | _O(1)_      | Easy         ||
+1041 | [Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/) | [C++](./C++/robot-bounded-in-circle.cpp) [Python](./Python/robot-bounded-in-circle.py) | _O(n)_ | _O(1)_      | Easy         ||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -746,6 +747,7 @@
 0911| [Online Election](https://leetcode.com/problems/online-election/) | [C++](./C++/online-election.cpp) [Python](./Python/online-election.py) | ctor: _O(n)_<br> query : _O(logn)_ | _O(n)_ | Medium    || 
 0981| [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | [C++](./C++/time-based-key-value-store.cpp) [Python](./Python/time-based-key-value-store.py) | set: _O(1)_<br> get : _O(logn)_ | _O(n)_ | Medium    || 
 1011 | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [C++](./C++/capacity-to-ship-packages-within-d-days.cpp) [Python](./Python/capacity-to-ship-packages-within-d-days.py) | _O(nlogr)_ | _O(1)_ | Medium | |
+1044 | [Longest Duplicate Substring](https://leetcode.com/problems/longest-duplicate-substring/) | [C++](./C++/longest-duplicate-substring.cpp) [Python](./Python/longest-duplicate-substring.py) | _O(nlogn)_ | _O(n)_ | Hard | | `Rabin-Karp Algorithm`
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -996,6 +998,7 @@
 1027| [Longest Arithmetic Sequence](https://leetcode.com/problems/longest-arithmetic-sequence/) | [C++](./C++/longest-arithmetic-sequence.cpp) [Python](./Python/longest-arithmetic-sequence.py) |  _O(n^2)_ | _O(n^2)_   | Medium         |||
 1035| [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/) | [C++](./C++/uncrossed-lines.cpp) [Python](./Python/uncrossed-lines.py) |  _O(m * n)_ | _O(min(m, n))_   | Medium         |||
 1039| [Minimum Score Triangulation of Polygon](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/) | [C++](./C++/minimum-score-triangulation-of-polygon.cpp) [Python](./Python/minimum-score-triangulation-of-polygon.py) |  _O(n^3)_ | _O(n^2)_   | Medium         |||
+1043| [Partition Array for Maximum Sum](https://leetcode.com/problems/partition-array-for-maximum-sum/) | [C++](./C++/partition-array-for-maximum-sum.cpp) [Python](./Python/partition-array-for-maximum-sum.py) |  _O(n * k)_ | _O(k)_   | Medium         |||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1051,6 +1054,7 @@
 0928 | [Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii/)  | [C++](./C++/minimize-malware-spread-ii.cpp) [Python](./Python/minimize-malware-spread-ii.py) | _O(n^2)_| _O(n)_| Hard           || Union Find | 
 0959 | [Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes/)  | [C++](./C++/regions-cut-by-slashes.cpp) [Python](./Python/regions-cut-by-slashes.py) | _O(n^2)_| _O(n^2)_| Medium           || Union Find | 
 0990 | [Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) | [C++](./C++/satisfiability-of-equality-equations.cpp) [Python](./Python/satisfiability-of-equality-equations.py) | _O(n)_ | _O(1)_ | Medium           || Union Find |
+1042 | [Flower Planting With No Adjacent](https://leetcode.com/problems/flower-planting-with-no-adjacent/) | [C++](./C++/flower-planting-with-no-adjacent.cpp) [Python](./Python/flower-planting-with-no-adjacents.py) | _O(n)_ | _O(n)_ | Easy           |||
 
 ## Geometry
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
