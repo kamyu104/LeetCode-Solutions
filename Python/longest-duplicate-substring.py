@@ -30,7 +30,7 @@ class Solution(object):
             return 0
 
         A = [ord(c)-ord('a') for c in S]
-        result, left, right = 0, 0, len(S)
+        left, right = 0, len(S)
         while left <= right:
             mid = left + (right-left)//2
             if not check(A, mid):
