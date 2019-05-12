@@ -4,9 +4,9 @@
 class Solution {
 public:
     string longestDupSubstring(string S) {
-        int left = 0, right = S.length() - 1;
+        auto left = 0, right = S.length() - 1;
         while (left <= right) {
-            int mid = left + (right - left) / 2;
+            const auto mid = left + (right - left) / 2;
             if (!check(S, mid)) {
                 right = mid - 1;
             } else {
