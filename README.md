@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1040%20%2F%201040-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1044%20%2F%201044-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -360,6 +360,7 @@
 1003| [Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/) | [C++](./C++/check-if-word-is-valid-after-substitutions.cpp) [Python](./Python/check-if-word-is-valid-after-substitutions.py) | _O(n)_  | _O(n)_         | Medium           ||
 1019| [Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list/) | [C++](./C++/next-greater-node-in-linked-list.cpp) [Python](./Python/next-greater-node-in-linked-list.py) | _O(n)_  | _O(n)_         | Medium           || Descending Stack
 1021 | [Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/) | [C++](./C++/remove-outermost-parentheses.cpp) [Python](./Python/remove-outermost-parentheses.py) | _O(n)_ | _O(1)_      | Easy         ||
+1047 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | [C++](./C++/remove-all-adjacent-duplicates-in-string.cpp) [Python](./Python/remove-all-adjacent-duplicates-in-string.py) | _O(n)_ | _O(n)_      | Easy         ||
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -386,6 +387,7 @@
 0855 | [Exam Room](https://leetcode.com/problems/exam-room/) | [C++](./C++/exam-room.cpp) [Python](./Python/exam-room.py) | seat: _O(logn)_ <br> leave: _O(logn)_ | _O(n)_ | Medium || BST, Hash |
 0857 | [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | [C++](./C++/minimum-cost-to-hire-k-workers.cpp) [Python](./Python/minimum-cost-to-hire-k-workers.py) | _O(nlogn)_ | _O(n)_ | Hard || Sort |
 0871 | [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/) | [C++](./C++/minimum-number-of-refueling-stops.cpp) [Python](./Python/minimum-number-of-refueling-stops.py) | _O(nlogn)_ | _O(n)_ | Hard || Sort |
+1046 | [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [C++](./C++/last-stone-weight.cpp) [Python](./Python/last-stone-weight.py) | _O(nlogn)_ | _O(n)_ | East |||
 
 ## Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -999,6 +1001,8 @@
 1035| [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/) | [C++](./C++/uncrossed-lines.cpp) [Python](./Python/uncrossed-lines.py) |  _O(m * n)_ | _O(min(m, n))_   | Medium         |||
 1039| [Minimum Score Triangulation of Polygon](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/) | [C++](./C++/minimum-score-triangulation-of-polygon.cpp) [Python](./Python/minimum-score-triangulation-of-polygon.py) |  _O(n^3)_ | _O(n^2)_   | Medium         |||
 1043| [Partition Array for Maximum Sum](https://leetcode.com/problems/partition-array-for-maximum-sum/) | [C++](./C++/partition-array-for-maximum-sum.cpp) [Python](./Python/partition-array-for-maximum-sum.py) |  _O(n * k)_ | _O(k)_   | Medium         |||
+1048| [Longest String Chain](https://leetcode.com/problems/longest-string-chain/) | [C++](./C++/longest-string-chain.cpp) [Python](./Python/longest-string-chain.py) |  _O(n * l^2)_ | _O(n * l)_   | Medium         |||
+1049| [Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/) | [C++](./C++/last-stone-weight-ii.cpp) [Python](./Python/last-stone-weight-ii.py) |  _O(2^n)_ | _O(2^n)_   | Medium         |||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
