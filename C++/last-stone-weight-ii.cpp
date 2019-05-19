@@ -1,5 +1,5 @@
-// Time:  O(n * s), s is sum(stones)
-// Space: O(s)
+// Time:  O(2^n)
+// Space: O(2^n)
 
 class Solution {
 public:
