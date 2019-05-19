@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1044%20%2F%201044-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1045%20%2F%201045-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -1114,6 +1114,7 @@
 0196| [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/) | [MySQL](./MySQL/delete-duplicate-emails.sql) | _O(n^2)_ | _O(n)_       | Easy           ||
 0197| [Rising Temperature](https://leetcode.com/problems/rising-temperature/) | [MySQL](./MySQL/rising-temperature.sql) | _O(n^2)_ | _O(n)_       | Easy           ||
 0262| [Trips and Users](https://leetcode.com/problems/trips-and-users/) | [MySQL](./MySQL/trips-and-users.sql) | _O((t * u) + tlogt)_ | _O(t)_       | Hard           ||
+1045| [Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products/) | [MySQL](./MySQL/customers-who-bought-all-products.sql) | _O(n + k)_ | _O(n + k)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
