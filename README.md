@@ -1115,7 +1115,7 @@
 0197| [Rising Temperature](https://leetcode.com/problems/rising-temperature/) | [MySQL](./MySQL/rising-temperature.sql) | _O(n^2)_ | _O(n)_       | Easy           ||
 0262| [Trips and Users](https://leetcode.com/problems/trips-and-users/) | [MySQL](./MySQL/trips-and-users.sql) | _O((t * u) + tlogt)_ | _O(t)_       | Hard           ||
 1045| [Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products/) | [MySQL](./MySQL/customers-who-bought-all-products.sql) | _O(n + k)_ | _O(n + k)_       | Medium           |🔒| |
-1046| [Actors and Directors Who Cooperated At Least Three Times](https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/) | [MySQL](./MySQL/actors-and-directors-who-cooperated-at-least-three-times.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
+1050| [Actors and Directors Who Cooperated At Least Three Times](https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/) | [MySQL](./MySQL/actors-and-directors-who-cooperated-at-least-three-times.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
