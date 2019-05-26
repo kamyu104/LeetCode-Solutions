@@ -390,7 +390,6 @@
 0857 | [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | [C++](./C++/minimum-cost-to-hire-k-workers.cpp) [Python](./Python/minimum-cost-to-hire-k-workers.py) | _O(nlogn)_ | _O(n)_ | Hard || Sort |
 0871 | [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/) | [C++](./C++/minimum-number-of-refueling-stops.cpp) [Python](./Python/minimum-number-of-refueling-stops.py) | _O(nlogn)_ | _O(n)_ | Hard || Sort |
 1046 | [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [C++](./C++/last-stone-weight.cpp) [Python](./Python/last-stone-weight.py) | _O(nlogn)_ | _O(n)_ | Easy |||
-1054 | [Distant Barcodes](https://leetcode.com/problems/distant-barcodes/) | [C++](./C++/distant-barcodes.cpp) [Python](./Python/distant-barcodes.py) | _O(klogk)_ | _O(k)_ | Medium |  variant of [Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/) ||
 
 ## Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -646,6 +645,7 @@
 0969| [Pancake Sorting](https://leetcode.com/problems/pancake-sorting/) | [C++](./C++/pancake-sorting.cpp) [Python](./Python/pancake-sorting.py) | _O(n^2)_ | _O(l)_        | Medium         | | |
 0973| [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/) | [C++](./C++/k-closest-points-to-origin.cpp) [Python](./Python/k-closest-points-to-origin.py) | _O(n)_ on average | _O(1)_        | Easy         | | Quick Select, Heap|
 0976| [Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/) | [C++](./C++/largest-perimeter-triangle.cpp) [Python](./Python/largest-perimeter-triangle.py) | _O(nlogn)_ | _O(1)_        | Easy         | | |
+1054 | [Distant Barcodes](https://leetcode.com/problems/distant-barcodes/) | [C++](./C++/distant-barcodes.cpp) [Python](./Python/distant-barcodes.py) | _O(klogk)_ | _O(k)_ | Medium |  variant of [Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/) ||
 
 ## Two Pointers
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
