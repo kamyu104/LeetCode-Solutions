@@ -15,17 +15,16 @@ public:
         sort(sorted_cnts.begin(), sorted_cnts.end(),
              greater<pair<int, int>>());
         
-        vector<int> result(barcodes.size());
         int i = 0;
         for (const auto& kvp : sorted_cnts) {
             for (int j = 0; j < kvp.first; ++j) {
-                result[i] = kvp.second;
+                barcodes[i] = kvp.second;
                 i += 2;
                 if (i >= barcodes.size()) {
                     i = 1;
                 }
             }
         }
-        return result;
+        return barcodes;
     }
 };
