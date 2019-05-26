@@ -14,11 +14,11 @@ class Solution(object):
         sorted_cnts = [[v, k] for k, v in cnts.iteritems()]
         sorted_cnts.sort(reverse=True)
 
-        result, i = [0]*len(barcodes), 0
+        i = 0
         for v, k in sorted_cnts:
             for _ in xrange(v):
-                result[i] = k
+                barcodes[i] = k
                 i += 2
                 if i >= len(barcodes):
                     i = 1
-        return result
+        return barcodes
