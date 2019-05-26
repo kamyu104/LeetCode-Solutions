@@ -5,7 +5,7 @@ class Solution {
 public:
     int maxSatisfied(vector<int>& customers, vector<int>& grumpy, int X) {
         int result = 0, max_extra = 0, extra = 0;
-        for (auto i = 0; i < customers.size(); ++i) {
+        for (int i = 0; i < customers.size(); ++i) {
             result += grumpy[i] ? 0 : customers[i];
             extra += grumpy[i] ? customers[i] : 0;
             if (i >= X) {
