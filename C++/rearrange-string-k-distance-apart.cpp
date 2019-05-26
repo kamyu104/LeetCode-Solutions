@@ -13,7 +13,7 @@ public:
         for (int i = 0; i < 26; ++i) {
             sorted_cnts.emplace_back(cnts[i], i + 'a');
         }
-        sort(sorted_cnts.begin(), sorted_cnts.end(), greater<pair<int, int>>());
+        sort(sorted_cnts.begin(), sorted_cnts.end(), greater<pair<int, char>>());
 
         const auto max_cnt = sorted_cnts[0].first;
         string blocks[max_cnt];
