@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1046%20%2F%201046-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1050%20%2F%201050-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -205,6 +205,8 @@
 1020 | [Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/) | [C++](./C++/partition-array-into-three-parts-with-equal-sum.cpp) [Python](./Python/partition-array-into-three-parts-with-equal-sum.py) | _O(n)_ | _O(1)_      | Easy         ||
 1030 | [Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order/) | [C++](./C++/matrix-cells-in-distance-order.cpp) [Python](./Python/matrix-cells-in-distance-order.py) | _O(m * n)_ | _O(1)_      | Easy         ||
 1031 | [Maximum Sum of Two Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/) | [C++](./C++/maximum-sum-of-two-non-overlapping-subarrays.cpp) [Python](./Python/maximum-sum-of-two-non-overlapping-subarrays.py) | _O(n)_ | _O(1)_      | Medium         ||
+1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | [C++](./C++/height-checker.cpp) [Python](./Python/height-checker.py) | _O(nlogn)_ | _O(n)_      | Easy         ||
+1052 | [Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/) | [C++](./C++/grumpy-bookstore-owner.cpp) [Python](./Python/grumpy-bookstore-owner.py) | _O(n)_ | _O(1)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -388,6 +390,7 @@
 0857 | [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | [C++](./C++/minimum-cost-to-hire-k-workers.cpp) [Python](./Python/minimum-cost-to-hire-k-workers.py) | _O(nlogn)_ | _O(n)_ | Hard || Sort |
 0871 | [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/) | [C++](./C++/minimum-number-of-refueling-stops.cpp) [Python](./Python/minimum-number-of-refueling-stops.py) | _O(nlogn)_ | _O(n)_ | Hard || Sort |
 1046 | [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [C++](./C++/last-stone-weight.cpp) [Python](./Python/last-stone-weight.py) | _O(nlogn)_ | _O(n)_ | Easy |||
+1054 | [Distant Barcodes](https://leetcode.com/problems/distant-barcodes/) | [C++](./C++/distant-barcodes.cpp) [Python](./Python/distant-barcodes.py) | _O(klogk)_ | _O(k)_ | Medium |  variant of [Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/) ||
 
 ## Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1049,6 +1052,7 @@
 1005 | [Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/) | [C++](./C++/maximize-sum-of-array-after-k-negations.cpp) [Python](./Python/maximize-sum-of-array-after-k-negations.py) | _O(n)_ on average | _O(1)_ | Easy || Quick Select
 1024 | [Video Stitching](https://leetcode.com/problems/video-stitching/) | [C++](./C++/video-stitching.cpp) [Python](./Python/video-stitching.py) | _O(nlogn)_ | _O(1)_ | Medium | variant of [Jump Game II](https://leetcode.com/problems/jump-game-ii/) |
 1029 | [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/) | [C++](./C++/two-city-scheduling.cpp) [Python](./Python/two-city-scheduling.py) | _O(n)_ on average | _O(1)_ | Easy | | Quick Select
+1053 | [Previous Permutation With One Swap](https://leetcode.com/problems/previous-permutation-with-one-swap/) | [C++](./C++/previous-permutation-with-one-swap.cpp) [Python](./Python/previous-permutation-with-one-swap.py) | _O(n)_ | _O(1)_ | Medium | | 
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
