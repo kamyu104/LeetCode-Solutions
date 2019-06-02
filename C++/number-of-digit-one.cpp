@@ -4,6 +4,22 @@
 class Solution {
 public:
     int countDigitOne(int n) {
+        int64_t pivot = 1;
+        int result = 0;
+        while (n >= pivot) {
+            result += n / (10 * pivot) * pivot +
+                      min(pivot, max(n % (10 * pivot) - pivot + 1, 0l));
+            pivot *= 10;
+        }
+        return result;
+    }
+};
+
+// Time:  O(logn) = O(1)
+// Space: O(1)
+class Solution2 {
+public:
+    int countDigitOne(int n) {
         const int k = 1;
         int cnt = 0, multiplier = 1, left_part = n;
 
