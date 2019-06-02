@@ -2,6 +2,7 @@
 #                , n is the length of target
 # Space: O(m)
 
+# greedy solution
 class Solution(object):
     def shortestWay(self, source, target):
         """
