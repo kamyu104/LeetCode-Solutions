@@ -5,7 +5,7 @@ class Solution {
 public:
     string minimizeError(vector<string>& prices, int target) {
         vector<double> errors;
-        double lower = 0, upper = 0;
+        int lower = 0, upper = 0;
         for (const auto& price : prices) {
             const auto& p = stod(price);
             lower += floor(p);
@@ -18,7 +18,7 @@ public:
             return "-1";
         }
 
-        int lowerRoundCount = static_cast<int>(upper - target);
+        int lowerRoundCount = upper - target;
         nth_element(errors.begin(), errors.begin() + lowerRoundCount, errors.end());
         double min_error = 0.0;
         for (int i = 0; i < errors.size(); ++i) {
