@@ -4,23 +4,25 @@
 class Solution {
 public:
     int assignBikes(vector<vector<int>>& workers, vector<vector<int>>& bikes) {
-        vector<vector<double>> dp(workers.size() + 1,
-                               vector<double>(1 << bikes.size(),
-                                              numeric_limits<double>::infinity()));
+        vector<vector<double>> dp(2,
+                                  vector<double>(1 << bikes.size(),
+                                                 numeric_limits<double>::infinity()));
         dp[0][0] = 0;
         for (int i = 0; i < workers.size(); ++i) {
+            dp[(i + 1) % 2] = vector<double>(1 << bikes.size(),
+                                             numeric_limits<double>::infinity());
             for (int j = 0; j < bikes.size(); ++j) {
                 for (int taken = 0; taken < (1 << bikes.size()); ++taken) {
                     if (taken & (1 << j)) {
                         continue;
                     }
-                    dp[i + 1][taken | (1 << j)] =
-                        min(dp[i + 1][taken | (1 << j)],
-                            dp[i][taken] + manhattan(workers[i], bikes[j]));
+                    dp[(i + 1) % 2][taken | (1 << j)] =
+                        min(dp[(i + 1) % 2][taken | (1 << j)],
+                            dp[i % 2][taken] + manhattan(workers[i], bikes[j]));
                 }
             }
         }
-        return *min_element(dp.back().cbegin(), dp.back().cend());
+        return *min_element(dp[workers.size() % 2].cbegin(), dp[workers.size() % 2].cend());
     }
 
 private:
