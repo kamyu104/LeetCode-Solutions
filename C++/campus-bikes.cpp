@@ -21,8 +21,8 @@ public:
             distances[i].pop_back();
         }
         while (lookup.size() < workers.size()) {
-            auto worker = min_heap.top()[1];
-            auto bike = min_heap.top()[2];
+            const auto worker = min_heap.top()[1];
+            const auto bike = min_heap.top()[2];
             min_heap.pop();
             if (!lookup.count(bike)) {
                 result[worker] = bike;
