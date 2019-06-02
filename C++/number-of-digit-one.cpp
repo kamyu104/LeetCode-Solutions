@@ -4,8 +4,8 @@
 class Solution {
 public:
     int countDigitOne(int n) {
-        int64_t pivot = 1;
         int result = 0;
+        int64_t pivot = 1;
         while (n >= pivot) {
             result += n / (10 * pivot) * pivot +
                       min(pivot, max(n % (10 * pivot) - pivot + 1, 0l));
