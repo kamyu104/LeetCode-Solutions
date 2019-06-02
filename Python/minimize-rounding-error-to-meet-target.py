@@ -1,6 +1,9 @@
 # Time:  O(n)
 # Space: O(n)
 
+import random
+
+
 class Solution(object):
     def minimizeError(self, prices, target):
         """
