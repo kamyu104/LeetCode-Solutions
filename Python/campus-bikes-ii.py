@@ -1,10 +1,35 @@
-# Time:  O((w * b * 2^b) * log(w * b * 2^b))
+# Time:  O(w * b * 2^b)
 # Space: O(w * b * 2^b)
 
+class Solution(object):  # this is slower than Solution2 in python
+    def assignBikes(self, workers, bikes):
+        """
+        :type workers: List[List[int]]
+        :type bikes: List[List[int]]
+        :rtype: int
+        """
+        def manhattan(p1, p2):
+            return abs(p1[0] - p2[0]) + abs(p1[1] - p2[1])
+        
+        dp = [[float("inf")] * ((1<<len(bikes))) for _ in xrange(len(workers)+1)]
+        dp[0][0] = 0
+        for i in xrange(len(workers)):
+            for j in xrange(len(bikes)):
+                for taken in xrange((1<<len(bikes))):
+                    if taken & (1<<j):
+                        continue
+                    dp[i+1][taken|(1<<j)] = min(dp[i+1][taken|(1<<j)],
+                                                dp[i][taken] +
+                                                manhattan(workers[i], bikes[j]))
+        return min(dp[-1])
+
+
+# Time:  O((w * b * 2^b) * log(w * b * 2^b))
+# Space: O(w * b * 2^b)
 import heapq
 
 
-class Solution(object):
+class Solution2(object):
     def assignBikes(self, workers, bikes):
         """
         :type workers: List[List[int]]
@@ -30,27 +55,3 @@ class Solution(object):
                                           i+1,            # O(w)
                                           taken|(1<<j)))  # O(2^b)
 
-
-# Time:  O(w * b * 2^b)
-# Space: O(w * b * 2^b)
-class Solution2(object):
-    def assignBikes(self, workers, bikes):
-        """
-        :type workers: List[List[int]]
-        :type bikes: List[List[int]]
-        :rtype: int
-        """
-        def manhattan(p1, p2):
-            return abs(p1[0] - p2[0]) + abs(p1[1] - p2[1])
-        
-        dp = [[float("inf")] * ((1<<len(bikes))) for _ in xrange(len(workers)+1)]
-        dp[0][0] = 0
-        for i in xrange(len(workers)):
-            for j in xrange(len(bikes)):
-                for taken in xrange((1<<len(bikes))):
-                    if taken & (1<<j):
-                        continue
-                    dp[i+1][taken|(1<<j)] = min(dp[i+1][taken|(1<<j)],
-                                                dp[i][taken] +
-                                                manhattan(workers[i], bikes[j]))
-        return min(dp[-1])
