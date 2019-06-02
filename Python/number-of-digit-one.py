@@ -1,7 +1,24 @@
 # Time:  O(logn)
 # Space: O(1)
 
+
 class Solution(object):
+    def countDigitOne(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        pivot, result = 1, 0
+        while n >= pivot:
+            result += (n//(10*pivot))*pivot + \
+                      min(pivot, max(n%(10*pivot) - pivot + 1, 0))
+            pivot *= 10
+        return result
+
+
+# Time:  O(logn)
+# Space: O(1)
+class Solution2(object):
     # @param {integer} n
     # @return {integer}
     def countDigitOne(self, n):
