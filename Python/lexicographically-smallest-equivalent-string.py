@@ -28,9 +28,9 @@ class Solution(object):
         """
         union_find = UnionFind(26)
         for i in xrange(len(A)):
-            union_find.union_set(ord(A[i])-ord('a'), ord(B[i])-ord('a'));
+            union_find.union_set(ord(A[i])-ord('a'), ord(B[i])-ord('a'))
         result = []
         for i in xrange(len(S)):
-            parent = union_find.find_set(ord(S[i])-ord('a'));
+            parent = union_find.find_set(ord(S[i])-ord('a'))
             result.append(chr(parent+ord('a')))
         return "".join(result)
