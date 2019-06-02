@@ -18,11 +18,11 @@ public:
             return "-1";
         }
 
-        int lowerRoundCount = upper - target;
-        nth_element(errors.begin(), errors.begin() + lowerRoundCount, errors.end());
+        int lower_round_count = upper - target;
+        nth_element(errors.begin(), errors.begin() + lower_round_count, errors.end());
         double min_error = 0.0;
         for (int i = 0; i < errors.size(); ++i) {
-            if (i < lowerRoundCount) {
+            if (i < lower_round_count) {
                 min_error += errors[i];
             } else {
                 min_error += 1.0 - errors[i];
