@@ -24,7 +24,7 @@ class Solution(object):
             if i == len(workers):
                 return cost
             for j in xrange(len(bikes)):
-                if taken & (1<<j) != 0:
+                if taken & (1<<j):
                     continue
                 heapq.heappush(min_heap, (cost+manhattan(workers[i], bikes[j]),  # O(b)
                                           i+1,            # O(w)
@@ -48,7 +48,7 @@ class Solution2(object):
         for i in xrange(len(workers)):
             for j in xrange(len(bikes)):
                 for taken in xrange((1<<len(bikes))):
-                    if (taken & (1<<j)) != 0:
+                    if taken & (1<<j):
                         continue
                     dp[i+1][taken|(1<<j)] = min(dp[i+1][taken|(1<<j)],
                                                 dp[i][taken] +
