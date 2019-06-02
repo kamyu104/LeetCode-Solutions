@@ -12,6 +12,7 @@ public:
             find_char_next_pos[source[i] - 'a'] = i + 1;
             lookup[i] = find_char_next_pos;
         }
+        
         int result = 1, start = 0;
         for (const auto& c : target) {
             start = lookup[start][c - 'a'];
