@@ -1,6 +1,9 @@
 # Time:  O((w * b * 2^b) * log(w * b * 2^b))
 # Space: O(w * b * 2^b)
 
+import heapq
+
+
 class Solution(object):
     def assignBikes(self, workers, bikes):
         """
@@ -26,7 +29,8 @@ class Solution(object):
                 heapq.heappush(min_heap, (cost+manhattan(workers[i], bikes[j]),  # O(b)
                                           i+1,            # O(w)
                                           taken|(1<<j)))  # O(2^b)
-                
+
+
 # Time:  O(w * b * 2^b)
 # Space: O(w * b * 2^b)
 class Solution2(object):
