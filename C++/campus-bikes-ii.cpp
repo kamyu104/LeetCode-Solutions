@@ -1,8 +1,8 @@
 // Time:  O(w * b * 2^b)
 // Space: O(w * b * 2^b)
 
-// if w = b, we can even apply Hungarian algorithm (https://en.wikipedia.org/wiki/Hungarian_algorithm)
-// it can be improved to O(w^3), (https://github.com/t3nsor/codebook/blob/master/bipartite-mincost.cpp)
+// if w = b, we can even apply Hungarian algorithm (see https://en.wikipedia.org/wiki/Hungarian_algorithm),
+// it can be improved to O(w^3), see https://github.com/t3nsor/codebook/blob/master/bipartite-mincost.cpp
 class Solution {
 public:
     int assignBikes(vector<vector<int>>& workers, vector<vector<int>>& bikes) {
