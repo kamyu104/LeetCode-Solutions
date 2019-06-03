@@ -1,4 +1,4 @@
-// Time:  O(n), on average
+// Time:  O(n) on average
 // Space: O(n)
 
 class Solution {
