@@ -207,6 +207,8 @@
 1031 | [Maximum Sum of Two Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/) | [C++](./C++/maximum-sum-of-two-non-overlapping-subarrays.cpp) [Python](./Python/maximum-sum-of-two-non-overlapping-subarrays.py) | _O(n)_ | _O(1)_      | Medium         ||
 1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | [C++](./C++/height-checker.cpp) [Python](./Python/height-checker.py) | _O(nlogn)_ | _O(n)_      | Easy         ||
 1052 | [Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/) | [C++](./C++/grumpy-bookstore-owner.cpp) [Python](./Python/grumpy-bookstore-owner.py) | _O(n)_ | _O(1)_      | Medium         ||
+1072 | [Flip Columns For Maximum Number of Equal Rows](https://leetcode.com/problems/flip-columns-for-maximum-number-of-equal-rows/) | [C++](./C++/flip-columns-for-maximum-number-of-equal-rows.cpp) [Python](./Python/flip-columns-for-maximum-number-of-equal-rows.py) | _O(m * n)_ | _O(m * n)_      | Medium         ||
+1074 | [Number of Submatrices That Sum to Target](https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/) | [C++](./C++/number-of-submatrices-that-sum-to-target.cpp) [Python](./Python/number-of-submatrices-that-sum-to-target.py) | _O(m^2 * n)_ | _O(n)_      | Hard         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -295,6 +297,7 @@
 0955 | [Delete Columns to Make Sorted II](https://leetcode.com/problems/delete-columns-to-make-sorted-ii/) | [C++](./C++/delete-columns-to-make-sorted-ii.cpp) [Python](./Python/delete-columns-to-make-sorted-ii.py) | _O(n * l)_ | _O(n)_      | Medium         ||
 1016 | [Binary String With Substrings Representing 1 To N](https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/) | [C++](./C++/binary-string-with-substrings-representing-1-to-n.cpp) [Python](./Python/binary-string-with-substrings-representing-1-to-n.py) | _O(n^2)_ | _O(1)_      | Medium         ||
 1023 | [Camelcase Matching](https://leetcode.com/problems/camelcase-matching/) | [C++](./C++/camelcase-matching.cpp) [Python](./Python/camelcase-matching.py) | _O(n * l)_ | _O(1)_      | Medium         ||
+1051 | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | [C++](./C++/greatest-common-divisor-of-strings.cpp) [Python](./Python/greatest-common-divisor-of-strings.py) | _O(m + n)_ | _O(1)_      | Easy         ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -618,6 +621,7 @@
 1025 | [Divisor Game](https://leetcode.com/problems/divisor-game/) | [C++](./C++/divisor-game.cpp) [Python](./Python/divisor-game.py) | _O(1)_ | _O(1)_      | Easy         || DP
 1037 | [Valid Boomerang](https://leetcode.com/problems/valid-boomerang/) | [C++](./C++/valid-boomerang.cpp) [Python](./Python/valid-boomerang.py) | _O(1)_ | _O(1)_      | Easy         ||
 1041 | [Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/) | [C++](./C++/robot-bounded-in-circle.cpp) [Python](./Python/robot-bounded-in-circle.py) | _O(n)_ | _O(1)_      | Easy         ||
+1073 | [Adding Two Negabinary Numbers](https://leetcode.com/problems/adding-two-negabinary-numbers/) | [C++](./C++/adding-two-negabinary-numbers.cpp) [Python](./Python/adding-two-negabinary-numbers.py) | _O(n)_ | _O(n)_      | Medium         ||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
