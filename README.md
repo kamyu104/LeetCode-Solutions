@@ -297,7 +297,7 @@
 0955 | [Delete Columns to Make Sorted II](https://leetcode.com/problems/delete-columns-to-make-sorted-ii/) | [C++](./C++/delete-columns-to-make-sorted-ii.cpp) [Python](./Python/delete-columns-to-make-sorted-ii.py) | _O(n * l)_ | _O(n)_      | Medium         ||
 1016 | [Binary String With Substrings Representing 1 To N](https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/) | [C++](./C++/binary-string-with-substrings-representing-1-to-n.cpp) [Python](./Python/binary-string-with-substrings-representing-1-to-n.py) | _O(n^2)_ | _O(1)_      | Medium         ||
 1023 | [Camelcase Matching](https://leetcode.com/problems/camelcase-matching/) | [C++](./C++/camelcase-matching.cpp) [Python](./Python/camelcase-matching.py) | _O(n * l)_ | _O(1)_      | Medium         ||
-1051 | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | [C++](./C++/greatest-common-divisor-of-strings.cpp) [Python](./Python/greatest-common-divisor-of-strings.py) | _O(m + n)_ | _O(1)_      | Easy         ||
+1071 | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | [C++](./C++/greatest-common-divisor-of-strings.cpp) [Python](./Python/greatest-common-divisor-of-strings.py) | _O(m + n)_ | _O(1)_      | Easy         ||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
