@@ -1,7 +1,37 @@
 # Time:  O(s * t)
-# Space: O(s)
+# Space: O(s
 
 class Solution(object):
+    def minWindow(self, S, T):
+        """
+        :type S: str
+        :type T: str
+        :rtype: str
+        """
+        lookup = [[None for _ in xrange(26)] for _ in xrange(len(S)+1)]
+        find_char_next_pos = [None]*26
+        for i in reversed(xrange(len(S))):
+            find_char_next_pos[ord(S[i])-ord('a')] = i+1
+            lookup[i] = list(find_char_next_pos)
+
+        result = [None, float("inf")]
+        for i in xrange(len(S)):
+            if T[0] != S[i]:
+                continue
+            start = i
+            for c in T:
+                start = lookup[start][ord(c)-ord('a')]
+                if start == None:
+                    break
+            else:
+                if start-i < result[1]:
+                    result = [i, start-i]
+        return S[result[0]:result[0]+result[1]] if result[0] is not None else ""
+
+    
+# Time:  O(s * t)
+# Space: O(s)
+class Solution2(object):
     def minWindow(self, S, T):
         """
         :type S: str
