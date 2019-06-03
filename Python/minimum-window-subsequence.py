@@ -16,7 +16,7 @@ class Solution(object):
 
         min_i, min_len = None, float("inf")
         for i in xrange(len(S)):
-            if T[0] != S[i]:
+            if S[i] != T[0]:
                 continue
             start = i
             for c in T:
