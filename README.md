@@ -298,6 +298,7 @@
 1016 | [Binary String With Substrings Representing 1 To N](https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/) | [C++](./C++/binary-string-with-substrings-representing-1-to-n.cpp) [Python](./Python/binary-string-with-substrings-representing-1-to-n.py) | _O(n^2)_ | _O(1)_      | Medium         ||
 1023 | [Camelcase Matching](https://leetcode.com/problems/camelcase-matching/) | [C++](./C++/camelcase-matching.cpp) [Python](./Python/camelcase-matching.py) | _O(n * l)_ | _O(1)_      | Medium         ||
 1061| [Lexicographically Smallest Equivalent String](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/) | [C++](./C++/lexicographically-smallest-equivalent-string.cpp) [Python](./Python/lexicographically-smallest-equivalent-string.py) | _O(n)_ | _O(n)_ |  Medium | 🔒 | Union Find
+1056| [Confusing Number](https://leetcode.com/problems/confusing-number/) | [C++](./C++/confusing-number.cpp) [Python](./Python/confusing-number.py) | _O(logn)_ | _O(1)_ |  Easy | 🔒 |
 1071 | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | [C++](./C++/greatest-common-divisor-of-strings.cpp) [Python](./Python/greatest-common-divisor-of-strings.py) | _O(m + n)_ | _O(1)_      | Easy         ||
 
 ## Linked List
@@ -395,6 +396,7 @@
 0857 | [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | [C++](./C++/minimum-cost-to-hire-k-workers.cpp) [Python](./Python/minimum-cost-to-hire-k-workers.py) | _O(nlogn)_ | _O(n)_ | Hard || Sort |
 0871 | [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/) | [C++](./C++/minimum-number-of-refueling-stops.cpp) [Python](./Python/minimum-number-of-refueling-stops.py) | _O(nlogn)_ | _O(n)_ | Hard || Sort |
 1046 | [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [C++](./C++/last-stone-weight.cpp) [Python](./Python/last-stone-weight.py) | _O(nlogn)_ | _O(n)_ | Easy |||
+1057| [Campus Bikes](https://leetcode.com/problems/campus-bikes/) | [C++](./C++/campus-bikes.cpp) [Python](./Python/campus-bikes.py) |  _O((w * b) * log(w * b))_ | _O(w * b)_   | Medium |🔒||
 
 ## Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -865,6 +867,7 @@
 0851| [Loud and Rich](https://leetcode.com/problems/loud-and-rich/) | [C++](./C++/loud-and-rich.cpp) [Python](./Python/loud-and-rich.py) | _O(q + r)_          | _O(q + r)_          | Medium           |||
 0913| [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | [C++](./C++/cat-and-mouse.cpp) [Python](./Python/cat-and-mouse.py) | _O(n^3)_          | _O(n^2)_          | Hard           |||
 1020| [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | [C++](./C++/number-of-enclaves.cpp) [Python](./Python/number-of-enclaves.py) | _O(m * n)_          | _O(m * n)_          | Medium           |||
+1059| [All Paths from Source Lead to Destination](https://leetcode.com/problems/all-paths-from-source-lead-to-destination/) | [C++](./C++/all-paths-from-source-lead-to-destination.cpp) [Python](./Python/all-paths-from-source-lead-to-destination.py) | _O(n + e)_          | _O(n + e)_          | Medium           |🔒||
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1066,6 +1069,7 @@
 1029 | [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/) | [C++](./C++/two-city-scheduling.cpp) [Python](./Python/two-city-scheduling.py) | _O(n)_ on average | _O(1)_ | Easy | | Quick Select
 1053 | [Previous Permutation With One Swap](https://leetcode.com/problems/previous-permutation-with-one-swap/) | [C++](./C++/previous-permutation-with-one-swap.cpp) [Python](./Python/previous-permutation-with-one-swap.py) | _O(n)_ | _O(1)_ | Medium | | 
 1055 | [Shortest Way to Form String](https://leetcode.com/problems/shortest-way-to-form-string/) | [C++](./C++/shortest-way-to-form-string.cpp) [Python](./Python/shortest-way-to-form-string.py) | _O(m + n)_ | _O(m)_ | Medium | 🔒, variant of [Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/) | 
+1058 | [Minimize Rounding Error to Meet Target](https://leetcode.com/problems/minimize-rounding-error-to-meet-target/) | [C++](./C++/minimize-rounding-error-to-meet-target.cpp) [Python](./Python/minimize-rounding-error-to-meet-target.py) | _O(n)_ on average | _O(n)_ | Medium | 🔒 | Quick Select
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
