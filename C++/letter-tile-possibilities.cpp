@@ -56,16 +56,16 @@ public:
         for (const auto& c : tiles) {
             ++count[c];
         }
-        return dfs(&count);
+        return backtracking(&count);
     }
 
 private:
-    int dfs(unordered_map<char,int> *count) {
+    int backtracking(unordered_map<char,int> *count) {
         int total = 0;
         for (auto& c : *count) {
             if (c.second) {
                 --c.second;
-                total += 1 + dfs(count);
+                total += 1 + backtracking(count);
                 ++c.second;
             }
         }
