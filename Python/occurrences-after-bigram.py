@@ -33,9 +33,9 @@ class Solution(object):
             if c != ' ':
                 third.append(c)
                 continue
-            result.append("".join(third))
             k -= len(second) + len(third) + 1
             i, j = 0, 0
+            result.append("".join(third))
             third = []
         if third:
             result.append("".join(third))
