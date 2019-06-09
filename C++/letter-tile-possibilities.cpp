@@ -41,7 +41,7 @@ public:
 
         int result = 0;
         for (int i = 1; i < coeff.size(); ++i) {
-            result += coeff[i] * fact[i];
+            result += int(round(coeff[i] * fact[i]));
         }
         return result;
     }
