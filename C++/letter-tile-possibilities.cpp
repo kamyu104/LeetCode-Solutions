@@ -4,7 +4,8 @@
 class Solution {
 public:
     int numTilePossibilities(string tiles) {
-        vector<double> fact(tiles.size() + 1, 1.0);
+        vector<double> fact(tiles.size() + 1);
+        fact[0] = 1.0;
         for (int i = 1; i < fact.size(); ++i) {
             fact[i] = fact[i - 1] * i;
         }
