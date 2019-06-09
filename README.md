@@ -630,7 +630,7 @@
 1041 | [Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/) | [C++](./C++/robot-bounded-in-circle.cpp) [Python](./Python/robot-bounded-in-circle.py) | _O(n)_ | _O(1)_      | Easy         ||
 1067| [Digit Count in Range](https://leetcode.com/problems/digit-count-in-range/) | [C++](./C++/digit-count-in-range.cpp)  [Python](./Python/digit-count-in-range.py)  | _O(logn)_ | _O(1)_ | Hard        | 🔒, variant of [Number of Digit One](https://leetcode.com/problems/number-of-digit-one/) |
 1073 | [Adding Two Negabinary Numbers](https://leetcode.com/problems/adding-two-negabinary-numbers/) | [C++](./C++/adding-two-negabinary-numbers.cpp) [Python](./Python/adding-two-negabinary-numbers.py) | _O(n)_ | _O(n)_      | Medium         ||
-5087 | [Letter Tile Possibilities](https://leetcode.com/problems/letter-tile-possibilities/) | [C++](./C++/letter-tile-possibilities.cpp) [Python](./Python/letter-tile-possibilities.py) | _O(n^2)_ | _O(n)_      | Medium         || Generating Function
+5087 | [Letter Tile Possibilities](https://leetcode.com/problems/letter-tile-possibilities/) | [C++](./C++/letter-tile-possibilities.cpp) [Python](./Python/letter-tile-possibilities.py) | _O(n^2)_ | _O(n)_      | Medium         || Generating Function, Backtracking
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
