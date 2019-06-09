@@ -25,10 +25,8 @@ public:
         // => the answer will be : c1*1! + c2*2! + ... + ck*k!
         
         vector<double> coeff(tiles.size() + 1);
-        for (int i = 0; i <= count[0]; ++i) {
-            coeff[i] = 1.0 / fact[i];
-        }
-        for (int i = 1; i < 26; ++i) {
+        coeff[0] = 1.0;
+        for (int i = 0; i < 26; ++i) {
             vector<double> new_coeff(coeff.size());
             for (int j = 0; j < coeff.size(); ++j) {
                 for (int k = 0; k <= count[i]; ++k) {
