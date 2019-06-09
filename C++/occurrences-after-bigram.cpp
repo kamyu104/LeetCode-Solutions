@@ -30,15 +30,14 @@ public:
             }
             if (c != ' ') {
                 third.push_back(c);
-            } else {
-                k -= second.length() + third.length() + 1;
-                result.emplace_back(move(third));
-                i = 0, j = 0;
+                continue;
             }
+            k -= second.length() + third.length() + 1;
+            i = 0, j = 0;
+            result.emplace_back(move(third));
         }
         if (!third.empty()) {
             result.emplace_back(move(third));
-            i = 0, j = 0;
         }
         return result;
     }
