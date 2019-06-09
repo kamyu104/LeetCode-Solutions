@@ -46,3 +46,30 @@ public:
         return result;
     }
 };
+
+// Time:  O(r), r is the value of result
+// Space: O(n)
+class Solution2 {
+public:
+    int numTilePossibilities(string tiles) {
+        unordered_map<char,int> count;
+        for (const auto& c : tiles) {
+            ++count[c];
+        }
+        return dfs(&count);
+    }
+
+private:
+    int dfs(unordered_map<char,int> *count) {
+        int total = 0;
+        for (auto& c : *count) {
+            if (c.second) {
+                --c.second;
+                total += 1 + dfs(count);
+                ++c.second;
+            }
+        }
+        return total;
+    }
+};
+
