@@ -41,3 +41,24 @@ class Solution(object):
         for i in xrange(1, len(coeff)):
             result += int(round(coeff[i]*fact[i]))
         return result
+
+
+# Time:  O(r), r is the value of result
+# Space: O(n)
+class Solution2(object):
+    def numTilePossibilities(self, tiles):
+        """
+        :type tiles: str
+        :rtype: int
+        """
+        def backtracking(counter):
+            total = 0
+            for k, v in counter.iteritems():
+                if not v:
+                    continue
+                counter[k] -= 1
+                total += 1+backtracking(counter)
+                counter[k] += 1
+            return total
+
+        return backtracking(collections.Counter(tiles))
