@@ -15,10 +15,10 @@ public:
         }
 
         // 1. we can represent each alphabet 1..26 as generating functions:
-        //   G1(x) = 1 + x^1/1! + x^2/2! + x^3/3! + ... + x^num1/num1!
-        //   G2(x) = 1 + x^1/1! + x^2/2! + x^3/3! + ... + x^num2/num2!
+        //   G1(x) = 1 + x^1/1! + x^2/2! + x^3/3! + ... + x^count1/count1!
+        //   G2(x) = 1 + x^1/1! + x^2/2! + x^3/3! + ... + x^count2/count2!
         //   ...
-        //   G26(x) = 1 + x^1/1! + x^2/2! + x^3/3! + ... + x^num26/num26!
+        //   G26(x) = 1 + x^1/1! + x^2/2! + x^3/3! + ... + x^count26/count26!
         //
         // 2. let G1(x)*G2(x)*...*G26(x) = c0 + c1*x1 + ... + ck*x^k, k is the max number s.t. ck != 0
         // => ci (1 <= i <= k) is the number we need to divide when permuting i letters
