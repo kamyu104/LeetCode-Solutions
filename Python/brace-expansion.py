@@ -24,7 +24,6 @@ class Solution(object):
 
         def generate_option(pattern, i):
             option_set = set()
-            start = i[0]
             while i[0] != len(pattern) and pattern[i[0]] != "}":
                 i[0] += 1  # { or ,
                 for option in generate_words(pattern, i):
@@ -35,7 +34,6 @@ class Solution(object):
             return option
 
         def generate_words(pattern, i):
-            start = i[0] 
             options = []
             while i[0] != len(pattern) and pattern[i[0]] not in ",}":
                 tmp = []
