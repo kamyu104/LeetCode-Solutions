@@ -55,41 +55,26 @@ private:
         const auto& s = to_string(N);
         const auto& half_s = s.substr(0, (s.length() + 1) / 2);
         int total = 0;
-        int p = s.length() % 2 ? pow(lookup.size(), half_s.length() - 2) * centers.size() : 
-                                 pow(lookup.size(), half_s.length() - 1);
-
+        int p = (s.length() % 2) ? pow(lookup.size(), half_s.length() - 2) * centers.size() : 
+                                   pow(lookup.size(), half_s.length() - 1);
+        const auto *choices = (s.length() % 2) ? &centers : &lookup;
         for (int i = 0; i < half_s.length(); ++i, p /= lookup.size()) {
             if (i + 1 == half_s.length()) {
-                if (s.length() % 2) {
-                    for (const auto& c : centers) {
-                        if (c <= half_s[i]) {
-                            string tmp(half_s);
-                            tmp.back() = c;
-                            for (int i = half_s.length() - 2; i >= 0; --i) {
-                                tmp.push_back(lookup.at(half_s[i]));
-                            }
-                            if (stoull(tmp) <= N) {
-                                ++total;
-                            }
-                        }
+                for (const auto& kvp : *choices) {
+                    if (kvp.first == '0' && i == 0) {
+                        continue;
                     }
-                } else {
-                    for (const auto& kvp : lookup) {
-                        if (kvp.first == '0' && i == 0) {
-                            continue;
-                        }
-                        total += int(kvp.first < half_s[i]);
-                    }
-                    if (!lookup.count(half_s[i])) {
-                        break;
-                    }
-                    string tmp(half_s);
-                    for (int i = half_s.length() - 1; i >= 0; --i) {
-                        tmp.push_back(lookup.at(half_s[i]));
-                    }
-                    if (stoull(tmp) <= N) {
-                        ++total;
-                    }
+                    total += int(kvp.first < half_s[i]);
+                }
+                if (!choices->count(half_s[i])) {
+                    break;
+                }
+                string tmp(half_s);
+                for (int i = half_s.length() - 1 - (s.length() % 2); i >= 0; --i) {
+                    tmp.push_back(lookup.at(half_s[i]));
+                }
+                if (stoull(tmp) <= N) {
+                    ++total;
                 }
                 break;
             }
@@ -110,5 +95,5 @@ private:
     
     const unordered_map<char, char> lookup =  {{'0', '0'}, {'1', '1'}, {'6', '9'},
                                                {'8', '8'}, {'9', '6'}};
-    const unordered_set<char> centers = {'0', '1', '8'};
+    const unordered_map<char, char> centers = {{'0', '0'}, {'1', '1'}, {'8', '8'}};
 };
