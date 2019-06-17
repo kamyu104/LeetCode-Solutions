@@ -22,26 +22,26 @@ class Solution(object):
                 words.append("".join(tmp))
             return words
 
-        def generate_option(pattern, i):
+        def generate_option(expr, i):
             option_set = set()
-            while i[0] != len(pattern) and pattern[i[0]] != "}":
+            while i[0] != len(expr) and expr[i[0]] != "}":
                 i[0] += 1  # { or ,
-                for option in generate_words(pattern, i):
+                for option in generate_words(expr, i):
                     option_set.add(option)
             i[0] += 1  # }
             option = list(option_set)
             option.sort()
             return option
 
-        def generate_words(pattern, i):
+        def generate_words(expr, i):
             options = []
-            while i[0] != len(pattern) and pattern[i[0]] not in ",}":
+            while i[0] != len(expr) and expr[i[0]] not in ",}":
                 tmp = []
-                if pattern[i[0]] not in "{,}":
-                    tmp.append(pattern[i[0]])
+                if expr[i[0]] not in "{,}":
+                    tmp.append(expr[i[0]])
                     i[0] += 1  # a-z
-                elif pattern[i[0]] == "{":
-                    tmp = generate_option(pattern, i)
+                elif expr[i[0]] == "{":
+                    tmp = generate_option(expr, i)
                 options.append(tmp)
             return form_words(options)
 
