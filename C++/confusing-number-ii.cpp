@@ -93,7 +93,7 @@ private:
         return total;
     }
     
-    const unordered_map<char, char> lookup =  {{'0', '0'}, {'1', '1'}, {'6', '9'},
-                                               {'8', '8'}, {'9', '6'}};
+    const unordered_map<char, char> lookup = {{'0', '0'}, {'1', '1'}, {'6', '9'},
+                                              {'8', '8'}, {'9', '6'}};
     const unordered_map<char, char> centers = {{'0', '0'}, {'1', '1'}, {'8', '8'}};
 };
