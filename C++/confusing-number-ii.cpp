@@ -76,7 +76,7 @@ private:
                 if (stoull(tmp) <= N) {
                     ++total;
                 }
-                break;
+                continue;
             }
             int smaller = 0;
             for (const auto& kvp : lookup) {
