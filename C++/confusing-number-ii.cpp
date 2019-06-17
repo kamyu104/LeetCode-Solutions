@@ -57,16 +57,16 @@ private:
         int total = 0;
         int p = (s.length() % 2) ? pow(lookup.size(), half_s.length() - 2) * centers.size() : 
                                    pow(lookup.size(), half_s.length() - 1);
-        const auto *choices = (s.length() % 2) ? &centers : &lookup;
+        const auto& choices = (s.length() % 2) ? centers : lookup;
         for (int i = 0; i < half_s.length(); ++i, p /= lookup.size()) {
             if (i + 1 == half_s.length()) {
-                for (const auto& kvp : *choices) {
+                for (const auto& kvp : choices) {
                     if (kvp.first == '0' && i == 0) {
                         continue;
                     }
                     total += int(kvp.first < half_s[i]);
                 }
-                if (!choices->count(half_s[i])) {
+                if (!choices.count(half_s[i])) {
                     break;
                 }
                 string tmp(half_s);
