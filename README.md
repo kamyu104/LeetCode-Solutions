@@ -1146,6 +1146,10 @@
 0196| [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/) | [MySQL](./MySQL/delete-duplicate-emails.sql) | _O(n^2)_ | _O(n)_       | Easy           ||
 0197| [Rising Temperature](https://leetcode.com/problems/rising-temperature/) | [MySQL](./MySQL/rising-temperature.sql) | _O(n^2)_ | _O(n)_       | Easy           ||
 0262| [Trips and Users](https://leetcode.com/problems/trips-and-users/) | [MySQL](./MySQL/trips-and-users.sql) | _O((t * u) + tlogt)_ | _O(t)_       | Hard           ||
+0511| [Game Play Analysis I](https://leetcode.com/problems/game-play-analysis-i/) | [MySQL](./MySQL/game-play-analysis-i.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
+0512| [Game Play Analysis II](https://leetcode.com/problems/game-play-analysis-ii/) | [MySQL](./MySQL/game-play-analysis-ii.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
+0534| [Game Play Analysis III](https://leetcode.com/problems/game-play-analysis-iii/) | [MySQL](./MySQL/game-play-analysis-iii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
+0550| [Game Play Analysis IV](https://leetcode.com/problems/game-play-analysis-iv/) | [MySQL](./MySQL/game-play-analysis-iv.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1045| [Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products/) | [MySQL](./MySQL/customers-who-bought-all-products.sql) | _O(n + k)_ | _O(n + k)_       | Medium           |🔒| |
 1050| [Actors and Directors Who Cooperated At Least Three Times](https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/) | [MySQL](./MySQL/actors-and-directors-who-cooperated-at-least-three-times.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1068| [Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/) | [MySQL](./MySQL/product-sales-analysis-i.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒| |
@@ -1154,6 +1158,9 @@
 1075| [Project Employees I](https://leetcode.com/problems/project-employees-i/) | [MySQL](./MySQL/project-employees-i.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒| |
 1076| [Project Employees II](https://leetcode.com/problems/project-employees-ii/) | [MySQL](./MySQL/project-employees-ii.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1077| [Project Employees III](https://leetcode.com/problems/project-employees-iii/) | [MySQL](./MySQL/project-employees-iii.sql) | _O((m + n)^2)_ | _O(m + n)_       | Medium           |🔒| |
+1082| [Sales Analysis I](https://leetcode.com/problems/sales-analysis-i/) | [MySQL](./MySQL/sales-analysis-i.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
+1083| [Sales Analysis II](https://leetcode.com/problems/sales-analysis-ii/) | [MySQL](./MySQL/sales-analysis-ii.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒| |
+1084| [Sales Analysis III](https://leetcode.com/problems/sales-analysis-iii/) | [MySQL](./MySQL/sales-analysis-iii.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
