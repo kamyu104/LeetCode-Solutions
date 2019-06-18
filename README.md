@@ -300,7 +300,7 @@
 1016 | [Binary String With Substrings Representing 1 To N](https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/) | [C++](./C++/binary-string-with-substrings-representing-1-to-n.cpp) [Python](./Python/binary-string-with-substrings-representing-1-to-n.py) | _O(n^2)_ | _O(1)_      | Medium         ||
 1023 | [Camelcase Matching](https://leetcode.com/problems/camelcase-matching/) | [C++](./C++/camelcase-matching.cpp) [Python](./Python/camelcase-matching.py) | _O(n * l)_ | _O(1)_      | Medium         ||
 1061| [Lexicographically Smallest Equivalent String](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/) | [C++](./C++/lexicographically-smallest-equivalent-string.cpp) [Python](./Python/lexicographically-smallest-equivalent-string.py) | _O(n)_ | _O(n)_ |  Medium | 🔒 | Union Find
-1056| [Confusing Number](https://leetcode.com/problems/confusing-number/) | [C++](./C++/confusing-number.cpp) [Python](./Python/confusing-number.py) | _O(logn)_ | _O(1)_ |  Easy | 🔒 |
+1056| [Confusing Number](https://leetcode.com/problems/confusing-number/) | [C++](./C++/confusing-number.cpp) [Python](./Python/confusing-number.py) | _O(logn)_ | _O(logn)_ |  Easy | 🔒 |
 1071 | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | [C++](./C++/greatest-common-divisor-of-strings.cpp) [Python](./Python/greatest-common-divisor-of-strings.py) | _O(m + n)_ | _O(1)_      | Easy         ||
 1078 | [Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/) | [C++](./C++/occurrences-after-bigram.cpp) [Python](./Python/occurrences-after-bigram.py) | _O(n)_ | _O(1)_      | Easy         ||
 
@@ -912,7 +912,7 @@
 0718 | [Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) | [C++](./C++/maximum-length-of-repeated-subarray.cpp) [Python](./Python/maximum-length-of-repeated-subarray.py) | _O(m * n)_ | _O(min(m, n))_ | Medium || DP, Hash, Binary Search
 0784| [Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/)    | [C++](./C++/letter-case-permutation.cpp) [Python](./Python/letter-case-permutation.py) | _O(n * 2^n)_    | _O(1)_          | Easy         ||
 0996| [Number of Squareful Arrays](https://leetcode.com/problems/number-of-squareful-arrays/)    | [C++](./C++/number-of-squareful-arrays.cpp) [Python](./Python/number-of-squareful-arrays.py) | _O(n!)_    | _O(n^2)_          | Hard         ||
-1087| [Brace Expansion](https://leetcode.com/problems/brace-expansion/) | [C++](./C++/brace-expansion.cpp) [Python](./Python/brace-expansion.py)  | _O(p * l * log(p * l))_ | _O(p*l)_ | Medium         |🔒||
+1087| [Brace Expansion](https://leetcode.com/problems/brace-expansion/) | [C++](./C++/brace-expansion.cpp) [Python](./Python/brace-expansion.py)  | _O(p * l * log(p * l))_ | _O(p * l)_ | Medium         |🔒||
 
 ## Dynamic Programming
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
