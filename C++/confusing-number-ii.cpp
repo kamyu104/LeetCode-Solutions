@@ -4,7 +4,7 @@
 class Solution {
 public:
     int confusingNumberII(int N) {
-        return totalCount(N) - lessValidCount(N) - equalValidCount(N);
+        return totalCount(N) - validCountInLessLength(N) - validCountInFullLength(N);
     }
     
 private:
@@ -31,7 +31,7 @@ private:
         return total;
     }
     
-    int lessValidCount(int N) {
+    int validCountInLessLength(int N) {
         const auto& s = to_string(N);
         int valid = 0;
         int total = centers.size();
@@ -51,7 +51,7 @@ private:
         return valid;
     }
     
-    int equalValidCount(int N) {
+    int validCountInFullLength(int N) {
         const auto& s = to_string(N);
         const auto& half_s = s.substr(0, (s.length() + 1) / 2);
         int total = 0;
