@@ -1,5 +1,5 @@
 # Time:  O(logn)
-# Space: O(logn
+# Space: O(logn)
 
 class Solution(object):
     def confusingNumberII(self, N):
@@ -28,7 +28,7 @@ class Solution(object):
                 p //= len(lookup)
             return total
 
-        def lessValidCount(N):
+        def validCountInLessLength(N):
             s = str(N)
             valid = 0
             total = len(centers)
@@ -44,7 +44,7 @@ class Solution(object):
                 total *= len(lookup)
             return valid
 
-        def equalValidCount(N):
+        def validCountInFullLength(N):
             s = str(N)
             half_s = s[:(len(s)+1)//2]
             total = 0
@@ -76,5 +76,4 @@ class Solution(object):
                 p //= len(lookup)
             return total
             
-        return totalCount(N) - lessValidCount(N) - equalValidCount(N)
-
+        return totalCount(N) - validCountInLessLength(N) - validCountInFullLength(N)
