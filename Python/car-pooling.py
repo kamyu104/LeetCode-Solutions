@@ -1,9 +1,6 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-import collections
-
-
 class Solution(object):
     def carPooling(self, trips, capacity):
         """
@@ -11,13 +8,9 @@ class Solution(object):
         :type capacity: int
         :rtype: bool
         """
-        lookup = collections.defaultdict(int)
-        for num, start, end in trips:
-            lookup[start] += num
-            lookup[end] -= num
-        intervals = [(location, num) for location, num in lookup.iteritems()]
-        intervals.sort()
-        for location, num in intervals:
+        line = [x for num, start, end in trips for x in [[start, num], [end, -num]]]
+        line.sort()
+        for _, num in line:
             capacity -= num
             if capacity < 0:
                 return False
