@@ -39,7 +39,7 @@ private:
     }
     
     vector<string> formWords(const vector<vector<string>>& options) {
-        vector<string> words;
+        set<string> words_set;
         int total = 1;
         for (const auto& opt : options) {
             total *= opt.size();
@@ -52,8 +52,8 @@ private:
                 curr /= options[j].size();
             }
             reverse(tmp.begin(), tmp.end());
-            words.emplace_back(accumulate(tmp.cbegin(), tmp.cend(), string()));
+            words_set.emplace(accumulate(tmp.cbegin(), tmp.cend(), string()));
         }
-        return words;
+        return vector<string>(words_set.cbegin(), words_set.cend());
     }
 };
