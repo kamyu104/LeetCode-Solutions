@@ -1,22 +1,31 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-/**
- * Definition for an interval.
- * struct Interval {
- *     int start;
- *     int end;
- *     Interval() : start(0), end(0) {}
- *     Interval(int s, int e) : start(s), end(e) {}
- * };
- */
 class Solution {
 public:
-    int minMeetingRooms(vector<Interval>& intervals) {
+    int minMeetingRooms(vector<vector<int>>& intervals) {
+        map<int, int> lookup;
+        for (const auto& i : intervals) {
+            ++lookup[i[0]];
+            --lookup[i[1]];
+        }
+        int result = 0, curr = 0;
+        for (const auto& [time, num] : lookup) {
+            result = max(result, curr += num);
+        }
+        return result;
+    }
+};
+
+// Time:  O(nlogn)
+// Space: O(n)
+class Solution2 {
+public:
+    int minMeetingRooms(vector<vector<int>>& intervals) {
         vector<int> starts, ends;
         for (const auto& i : intervals) {
-            starts.emplace_back(i.start);
-            ends.emplace_back(i.end);
+            starts.emplace_back(i[0]);
+            ends.emplace_back(i[1]);
         }
         
         sort(starts.begin(), starts.end());
