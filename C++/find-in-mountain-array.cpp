@@ -32,7 +32,7 @@ private:
     int binarySearch(MountainArray &A, int left, int right,
                      const function<bool(int)>& check) {
         while (left <= right) {
-            const auto mid = left + (right - left) / 2;
+            const auto& mid = left + (right - left) / 2;
             if (check(mid)) {
                 right = mid - 1;
             } else {
