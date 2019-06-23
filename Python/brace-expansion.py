@@ -12,7 +12,7 @@ class Solution(object):
         :rtype: List[str]
         """
         def form_words(options):
-            words = list(map("".join, itertools.product(*options)))
+            words = map("".join, itertools.product(*options))
             words.sort()
             return words
 
