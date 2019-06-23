@@ -20,6 +20,7 @@ class Solution(object):
                     tmp.append(opt[c])
                 tmp.reverse()
                 words.append("".join(tmp))
+            words.sort()
             return words
 
         def generate_option(expr, i):
