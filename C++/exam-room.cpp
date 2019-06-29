@@ -47,10 +47,9 @@ private:
         }
         
         int distance(const pair<int, int>& segment) const {
-            if (segment.first == -1 || segment.second == N_) {
-                return segment.second - segment.first - 1;
-            }
-            return (segment.second - segment.first) / 2;
+            return segment.first == -1 || segment.second == N_
+                   ? segment.second - segment.first - 1
+                   : (segment.second - segment.first) / 2;
         }
 
     private:
