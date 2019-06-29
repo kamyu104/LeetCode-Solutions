@@ -32,9 +32,9 @@ class ExamRoom(object):
             heapq.heappop(self.__max_heap)  # lazy deletion
 
         _, left, right = heapq.heappop(self.__max_heap)
-        mid = 0 if left == -1 else \
-              self.__num-1 if right == self.__num else \
-              (left+right) // 2
+        mid = 0 if left == -1 \
+              else self.__num-1 if right == self.__num \
+              else (left+right) // 2
         self.__seats[mid] =  [left, right]
         heapq.heappush(self.__max_heap, (-distance((left, mid), self.__num), left, mid))
         heapq.heappush(self.__max_heap, (-distance((mid, right), self.__num), mid, right))
@@ -52,3 +52,4 @@ class ExamRoom(object):
         self.__seats[left][1] = right
         self.__seats[right][0] = left
         heapq.heappush(self.__max_heap, (-distance((left, right), self.__num), left, right))
+
