@@ -4,8 +4,10 @@
 
 import heapq
 
-LEN, POS, L, R = range(4)
-LEFT, RIGHT = range(2)
+
+def distance(segment, num):
+    return segment[1]-segment[0]-1 if segment[0] == -1 or segment[1] == num \
+           else (segment[1]-segment[0]) // 2;
 
 
 class ExamRoom(object):
@@ -15,7 +17,7 @@ class ExamRoom(object):
         :type N: int
         """
         self.__num = N
-        self.__max_heap = [(-self.__num, 0, -1, self.__num)]
+        self.__max_heap = [(-distance((-1, self.__num), self.__num), -1, self.__num)]
         self.__seats = {-1: [-1, self.__num],
                         self.__num: [-1, self.__num]}
 
@@ -23,69 +25,30 @@ class ExamRoom(object):
         """
         :rtype: int
         """
-        while self.__max_heap[0][L] not in self.__seats or \
-                self.__max_heap[0][R] not in self.__seats or \
-                self.__seats[self.__max_heap[0][L]][RIGHT] != \
-                self.__max_heap[0][R] or \
-                self.__seats[self.__max_heap[0][R]][LEFT] != \
-                self.__max_heap[0][L]:
+        while self.__max_heap[0][1] not in self.__seats or \
+              self.__max_heap[0][2] not in self.__seats or \
+              self.__seats[self.__max_heap[0][1]][1] != self.__max_heap[0][2] or \
+              self.__seats[self.__max_heap[0][2]][0] !=  self.__max_heap[0][1]:
             heapq.heappop(self.__max_heap)  # lazy deletion
 
-        curr = heapq.heappop(self.__max_heap)
-        if curr[L] == -1 and curr[R] == self.__num:
-            heapq.heappush(self.__max_heap, (-(curr[R]-1),
-                                             curr[R]-1,
-                                             curr[L]+1, curr[R]))
-        elif curr[L] == -1:
-            heapq.heappush(self.__max_heap, (-(curr[R]//2),
-                                             curr[R]//2,
-                                             curr[L]+1, curr[R]))
-        elif curr[R] == self.__num:
-            heapq.heappush(self.__max_heap, (-((curr[R]-1-curr[L])//2),
-                                             (curr[R]-1-curr[L])//2+curr[L],
-                                             curr[L], curr[R]-1))
-        else:
-            heapq.heappush(self.__max_heap, (-((curr[POS]-curr[L])//2),
-                                             (curr[POS]-curr[L])//2+curr[L],
-                                             curr[L], curr[POS]))
-            heapq.heappush(self.__max_heap, (-((curr[R]-curr[POS])//2),
-                                             (curr[R]-curr[POS])//2+curr[POS],
-                                             curr[POS], curr[R]))
-        self.__seats[curr[POS]] = [curr[L], curr[R]]
-        self.__seats[curr[L]][RIGHT] = curr[POS]
-        self.__seats[curr[R]][LEFT] = curr[POS]
-        return curr[POS]
+        _, left, right = heapq.heappop(self.__max_heap)
+        mid = 0 if left == -1 else \
+              self.__num-1 if right == self.__num else \
+              (left+right) // 2
+        self.__seats[mid] =  [left, right]
+        heapq.heappush(self.__max_heap, (-distance((left, mid), self.__num), left, mid))
+        heapq.heappush(self.__max_heap, (-distance((mid, right), self.__num), mid, right))
+        self.__seats[left][1] = mid
+        self.__seats[right][0] = mid
+        return mid
 
     def leave(self, p):
         """
         :type p: int
         :rtype: void
         """
-        neighbors = self.__seats[p]
+        left, right = self.__seats[p]
         self.__seats.pop(p)
-        if neighbors[LEFT] == -1 and neighbors[RIGHT] == self.__num:
-            heapq.heappush(self.__max_heap,
-                           (-neighbors[RIGHT],
-                            neighbors[LEFT]+1,
-                            neighbors[LEFT], neighbors[RIGHT]))
-        elif neighbors[LEFT] == -1:
-            heapq.heappush(self.__max_heap,
-                           (-neighbors[RIGHT],
-                            neighbors[LEFT]+1,
-                            neighbors[LEFT], neighbors[RIGHT]))
-        elif neighbors[RIGHT] == self.__num:
-            heapq.heappush(self.__max_heap,
-                           (-(neighbors[RIGHT]-1-neighbors[LEFT]),
-                            neighbors[RIGHT]-1,
-                            neighbors[LEFT], neighbors[RIGHT]))
-        else:
-            heapq.heappush(self.__max_heap,
-                           (-((neighbors[RIGHT]-neighbors[LEFT])//2),
-                            (neighbors[RIGHT]-neighbors[LEFT])//2 +
-                            neighbors[LEFT],
-                            neighbors[LEFT], neighbors[RIGHT]))
-        self.__seats[neighbors[LEFT]][RIGHT] = neighbors[RIGHT]
-        self.__seats[neighbors[RIGHT]][LEFT] = neighbors[LEFT]
-
-
-
+        self.__seats[left][1] = right
+        self.__seats[right][0] = left
+        heapq.heappush(self.__max_heap, (-distance((left, right), self.__num), left, right))
