@@ -5,11 +5,6 @@
 import heapq
 
 
-def distance(segment, num):
-    return segment[1]-segment[0]-1 if segment[0] == -1 or segment[1] == num \
-           else (segment[1]-segment[0]) // 2
-
-
 class ExamRoom(object):
 
     def __init__(self, N):
@@ -18,7 +13,7 @@ class ExamRoom(object):
         """
         self.__num = N
         self.__seats = {-1: [-1, self.__num], self.__num: [-1, self.__num]}
-        self.__max_heap = [(-distance((-1, self.__num), self.__num), -1, self.__num)]
+        self.__max_heap = [(-self.distance((-1, self.__num)), -1, self.__num)]
 
     def seat(self):
         """
@@ -35,8 +30,8 @@ class ExamRoom(object):
               else self.__num-1 if right == self.__num \
               else (left+right) // 2
         self.__seats[mid] =  [left, right]
-        heapq.heappush(self.__max_heap, (-distance((left, mid), self.__num), left, mid))
-        heapq.heappush(self.__max_heap, (-distance((mid, right), self.__num), mid, right))
+        heapq.heappush(self.__max_heap, (-self.distance((left, mid)), left, mid))
+        heapq.heappush(self.__max_heap, (-self.distance((mid, right)), mid, right))
         self.__seats[left][1] = mid
         self.__seats[right][0] = mid
         return mid
@@ -50,5 +45,9 @@ class ExamRoom(object):
         self.__seats.pop(p)
         self.__seats[left][1] = right
         self.__seats[right][0] = left
-        heapq.heappush(self.__max_heap, (-distance((left, right), self.__num), left, right))
+        heapq.heappush(self.__max_heap, (-self.distance((left, right)), left, right))
+        
+    def distance(self, segment):
+        return segment[1]-segment[0]-1 if segment[0] == -1 or segment[1] == self.__num \
+               else (segment[1]-segment[0]) // 2
 
