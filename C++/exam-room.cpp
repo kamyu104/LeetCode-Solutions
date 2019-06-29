@@ -17,9 +17,9 @@ public:
     int seat() {
         const auto top = *max_bst_.cbegin();
         max_bst_.erase(top);
-        const auto mid = top.first == -1 ? 0
-                         : top.second == N_ ? N_ - 1
-                         : (top.first + top.second) / 2;
+        const auto& mid = top.first == -1 ? 0
+                          : top.second == N_ ? N_ - 1
+                          : (top.first + top.second) / 2;
         seats_.emplace(mid);
         max_bst_.emplace(top.first, mid);
         max_bst_.emplace(mid, top.second);
