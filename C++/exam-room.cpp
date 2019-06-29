@@ -45,11 +45,11 @@ private:
                    : greater<int>()(distance(a), distance(b));
         }
         
-        int distance(const pair<int,int>& a) const {
-            if (a.first == -1 || a.second == N_) {
-                return a.second - a.first - 1;
+        int distance(const pair<int, int>& segment) const {
+            if (segment.first == -1 || segment.second == N_) {
+                return segment.second - segment.first - 1;
             }
-            return (a.second - a.first) / 2;
+            return (segment.second - segment.first) / 2;
         }
 
     private:
