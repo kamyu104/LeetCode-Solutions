@@ -41,8 +41,9 @@ private:
         Compare(int i) : N_(i) {}
 
         bool operator() (const pair<int, int>& a, const pair<int, int>& b) const {
-            return distance(a) == distance(b) ? less<int>()(a.first, b.first)
-                   : greater<int>()(distance(a), distance(b));
+            const auto dist_a = distance(a), dist_b = distance(b);
+            return dist_a == dist_b ? less<int>()(a.first, b.first)
+                   : greater<int>()(dist_a, dist_b);
         }
         
         int distance(const pair<int, int>& segment) const {
