@@ -7,7 +7,7 @@ import heapq
 
 def distance(segment, num):
     return segment[1]-segment[0]-1 if segment[0] == -1 or segment[1] == num \
-           else (segment[1]-segment[0]) // 2;
+           else (segment[1]-segment[0]) // 2
 
 
 class ExamRoom(object):
