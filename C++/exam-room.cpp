@@ -31,8 +31,8 @@ public:
         const auto right = *seats_.upper_bound(mid);
         max_bst_.erase({left, mid});
         max_bst_.erase({mid, right});
-        max_bst_.emplace(left, right);
         seats_.erase(mid);
+        max_bst_.emplace(left, right);
     }
 
 private:
@@ -64,6 +64,7 @@ private:
 // Time:  seat:  O(logn) on average,
 //        leave: O(logn)
 // Space: O(n)
+// heap solution
 class ExamRoom2 {
 public:
     ExamRoom2(int N) : num_(N) {
