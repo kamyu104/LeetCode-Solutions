@@ -6,19 +6,19 @@
 class ExamRoom {
 public:
     ExamRoom(int N)
-      : N_(N)
+      : num_(N)
       , max_bst_(Compare(N))
     {
         seats_.emplace(-1);
-        seats_.emplace(N_);
-        max_bst_.emplace(-1, N_);
+        seats_.emplace(num_);
+        max_bst_.emplace(-1, num_);
     }
     
     int seat() {
         const auto top = *max_bst_.cbegin();
         max_bst_.erase(top);
         const auto& mid = top.first == -1 ? 0
-                          : top.second == N_ ? N_ - 1
+                          : top.second == num_ ? num_ - 1
                           : (top.first + top.second) / 2;
         seats_.emplace(mid);
         max_bst_.emplace(top.first, mid);
@@ -38,7 +38,7 @@ public:
 private:
     class Compare {
     public:
-        Compare(int i) : N_(i) {}
+        Compare(int i) : num_(i) {}
 
         bool operator() (const pair<int, int>& a, const pair<int, int>& b) const {
             const auto& dist_a = distance(a), &dist_b = distance(b);
@@ -47,27 +47,92 @@ private:
         }
         
         int distance(const pair<int, int>& segment) const {
-            return segment.first == -1 || segment.second == N_
+            return segment.first == -1 || segment.second == num_
                    ? segment.second - segment.first - 1
                    : (segment.second - segment.first) / 2;
         }
 
     private:
-        int N_;
+        int num_;
     };
     
-    int N_;
+    int num_;
     set<pair<int, int>, Compare> max_bst_;
     set<int> seats_;
+};
+
+// Time:  seat:  O(logn),
+//        leave: O(logn)
+// Space: O(n)
+// bst solution, inspired by zqzwxec
+class ExamRoom2 {
+public:
+    ExamRoom2(int N)
+      : num_(N)
+      , max_bst_(Compare(N))
+    {
+        seats_[-1] = {-1, num_};
+        seats_[num_] = {-1, num_};
+        max_bst_.emplace(-1, num_);
+    }
+    
+    int seat() {
+        const auto top = *max_bst_.cbegin();
+        max_bst_.erase(top);
+        const auto& mid = top.first == -1 ? 0
+                          : top.second == num_ ? num_ - 1
+                          : (top.first + top.second) / 2;
+        seats_[mid] = top;
+        seats_[top.first].second = mid;
+        seats_[top.second].first = mid;
+        max_bst_.emplace(top.first, mid);
+        max_bst_.emplace(mid, top.second);
+        return mid;
+    }
+    
+    void leave(int mid) {
+        const auto left = seats_[mid].first, right = seats_[mid].second;
+        max_bst_.erase({left, mid});
+        max_bst_.erase({mid, right});
+        seats_.erase(mid);
+        seats_[left].second = right;
+        seats_[right].first = left;
+        max_bst_.emplace(left, right);
+    }
+
+private:
+    class Compare {
+    public:
+        Compare(int i) : num_(i) {}
+
+        bool operator() (const pair<int, int>& a, const pair<int, int>& b) const {
+            const auto& dist_a = distance(a), &dist_b = distance(b);
+            return dist_a == dist_b ? less<int>()(a.first, b.first)
+                   : greater<int>()(dist_a, dist_b);
+        }
+        
+        int distance(const pair<int, int>& segment) const {
+            return segment.first == -1 || segment.second == num_
+                   ? segment.second - segment.first - 1
+                   : (segment.second - segment.first) / 2;
+        }
+
+    private:
+        int num_;
+    };
+    
+    int num_;
+    set<pair<int, int>, Compare> max_bst_;
+    unordered_map<int, pair<int, int>> seats_;
 };
 
 // Time:  seat:  O(logn) on average,
 //        leave: O(logn)
 // Space: O(n)
 // heap solution
-class ExamRoom2 {
+class ExamRoom3 {
 public:
-    ExamRoom2(int N) : num_(N) {
+    ExamRoom3(int N) : num_(N) {
         max_heap_.emplace(make_shared<Segment>(num_, 0, -1, num_));
         seats_[-1] = make_pair(-1, num_);
         seats_[num_] = make_pair(-1, num_);
