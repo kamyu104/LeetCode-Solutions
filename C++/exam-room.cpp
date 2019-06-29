@@ -57,7 +57,7 @@ private:
     };
     
     int N_;
-    set<pair<int,int>, Compare> max_bst_;
+    set<pair<int, int>, Compare> max_bst_;
     set<int> seats_;
 };
 
