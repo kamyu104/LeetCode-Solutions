@@ -15,7 +15,7 @@ public:
     }
     
     int seat() {
-        const auto top = *max_bst_.begin();
+        const auto top = *max_bst_.cbegin();
         max_bst_.erase(top);
         const auto mid = top.first == -1 ? 0
                          : top.second == N_ ? N_ - 1
@@ -40,9 +40,9 @@ private:
     public:
         Compare(int i) : N_(i) {}
 
-        bool operator() (const pair<int,int>& a, const pair<int,int>& b) const {
-            return distance(a) == distance(b) ? a.first < b.first
-                   : distance(a) > distance(b);
+        bool operator() (const pair<int, int>& a, const pair<int, int>& b) const {
+            return distance(a) == distance(b) ? less<int>()(a.first, b.first)
+                   : greater<int>()(distance(a), distance(b));
         }
         
         int distance(const pair<int,int>& a) const {
