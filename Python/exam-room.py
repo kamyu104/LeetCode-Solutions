@@ -29,7 +29,7 @@ class ExamRoom(object):
         mid = 0 if left == -1 \
               else self.__num-1 if right == self.__num \
               else (left+right) // 2
-        self.__seats[mid] =  [left, right]
+        self.__seats[mid] = [left, right]
         heapq.heappush(self.__max_heap, (-self.__distance((left, mid)), left, mid))
         heapq.heappush(self.__max_heap, (-self.__distance((mid, right)), mid, right))
         self.__seats[left][1] = mid
