@@ -45,14 +45,14 @@ private:
             return dist_a == dist_b ? less<int>()(a.first, b.first)
                    : greater<int>()(dist_a, dist_b);
         }
-        
+    
+    private:
         int distance(const pair<int, int>& segment) const {
             return segment.first == -1 || segment.second == num_
                    ? segment.second - segment.first - 1
                    : (segment.second - segment.first) / 2;
         }
 
-    private:
         int num_;
     };
     
@@ -110,14 +110,14 @@ private:
             return dist_a == dist_b ? less<int>()(a.first, b.first)
                    : greater<int>()(dist_a, dist_b);
         }
-        
+    
+    private:
         int distance(const pair<int, int>& segment) const {
             return segment.first == -1 || segment.second == num_
                    ? segment.second - segment.first - 1
                    : (segment.second - segment.first) / 2;
         }
 
-    private:
         int num_;
     };
     
@@ -179,14 +179,14 @@ private:
             return dist_a == dist_b ? greater<int>()(a.first, b.first)
                    : less<int>()(dist_a, dist_b);
         }
-        
+    
+    private:
         int distance(const pair<int, int>& segment) const {
             return segment.first == -1 || segment.second == num_
                    ? segment.second - segment.first - 1
                    : (segment.second - segment.first) / 2;
         }
 
-    private:
         int num_;
     };
     
