@@ -133,9 +133,9 @@ private:
 class ExamRoom3 {
 public:
     ExamRoom3(int N) : num_(N) {
+        seats_[-1] = {-1, num_};
+        seats_[num_] = {-1, num_};
         max_heap_.emplace(make_shared<Segment>(num_, 0, -1, num_));
-        seats_[-1] = make_pair(-1, num_);
-        seats_[num_] = make_pair(-1, num_);
     }
     
     int seat() {
@@ -164,18 +164,18 @@ public:
                                      curr->l, curr->r - 1)); 
         } else {
             max_heap_.emplace(
-                make_shared<Segment>((curr->pos - curr->l) / 2,
-                                     (curr->pos - curr->l) / 2 + curr->l,
-                                     curr->l, curr->pos));
+                make_shared<Segment>((curr->mid - curr->l) / 2,
+                                     (curr->mid - curr->l) / 2 + curr->l,
+                                     curr->l, curr->mid));
             max_heap_.emplace(
-                make_shared<Segment>((curr->r - curr->pos) / 2,
-                                     (curr->r - curr->pos) / 2 + curr->pos,
-                                     curr->pos, curr->r));
+                make_shared<Segment>((curr->r - curr->mid) / 2,
+                                     (curr->r - curr->mid) / 2 + curr->mid,
+                                     curr->mid, curr->r));
         }
-        seats_[curr->pos] = make_pair(curr->l, curr->r);
-        seats_[curr->l].second = curr->pos;
-        seats_[curr->r].first = curr->pos;
-        return curr->pos;
+        seats_[curr->mid] = {curr->l, curr->r};
+        seats_[curr->l].second = curr->mid;
+        seats_[curr->r].first = curr->mid;
+        return curr->mid;
     }
     
     void leave(int p) {
@@ -209,11 +209,11 @@ public:
 private:
     struct Segment {
         int dis;
-        int pos;
+        int mid;
         int l;
         int r;
-        Segment(int dis, int pos, int l, int r) : 
-            dis(dis), pos(pos), l(l), r(r) {
+        Segment(int dis, int mid, int l, int r) : 
+            dis(dis), mid(mid), l(l), r(r) {
         }
     };
     
