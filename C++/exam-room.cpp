@@ -27,8 +27,8 @@ public:
     }
     
     void leave(int mid) {
-        const auto left = *prev(seats_.lower_bound(mid));
-        const auto right = *seats_.upper_bound(mid);
+        const auto& left = *prev(seats_.lower_bound(mid));
+        const auto& right = *seats_.upper_bound(mid);
         max_bst_.erase({left, mid});
         max_bst_.erase({mid, right});
         seats_.erase(mid);
@@ -41,7 +41,7 @@ private:
         Compare(int i) : N_(i) {}
 
         bool operator() (const pair<int, int>& a, const pair<int, int>& b) const {
-            const auto dist_a = distance(a), dist_b = distance(b);
+            const auto& dist_a = distance(a), &dist_b = distance(b);
             return dist_a == dist_b ? less<int>()(a.first, b.first)
                    : greater<int>()(dist_a, dist_b);
         }
