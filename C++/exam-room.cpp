@@ -26,19 +26,19 @@ public:
         return mid;
     }
     
-    void leave(int mid) {
-        const auto& mid_it = seats_.find(mid);
-        const auto& left = *prev(mid_it), &right = *next(mid_it);
-        max_bst_.erase({left, mid});
-        max_bst_.erase({mid, right});
-        seats_.erase(mid);
+    void leave(int p) {
+        const auto& it = seats_.find(p);
+        const auto& left = *prev(it), &right = *next(it);
+        max_bst_.erase({left, p});
+        max_bst_.erase({p, right});
+        seats_.erase(p);
         max_bst_.emplace(left, right);
     }
 
 private:
     class Compare {
     public:
-        Compare(int i) : num_(i) {}
+        Compare(int N) : num_(N) {}
 
         bool operator() (const pair<int, int>& a, const pair<int, int>& b) const {
             const auto& dist_a = distance(a), &dist_b = distance(b);
@@ -90,11 +90,11 @@ public:
         return mid;
     }
     
-    void leave(int mid) {
-        const auto left = seats_[mid].first, right = seats_[mid].second;
-        max_bst_.erase({left, mid});
-        max_bst_.erase({mid, right});
-        seats_.erase(mid);
+    void leave(int p) {
+        const auto left = seats_[p].first, right = seats_[p].second;
+        max_bst_.erase({left, p});
+        max_bst_.erase({p, right});
+        seats_.erase(p);
         seats_[left].second = right;
         seats_[right].first = left;
         max_bst_.emplace(left, right);
@@ -103,7 +103,7 @@ public:
 private:
     class Compare {
     public:
-        Compare(int i) : num_(i) {}
+        Compare(int N) : num_(N) {}
 
         bool operator() (const pair<int, int>& a, const pair<int, int>& b) const {
             const auto& dist_a = distance(a), &dist_b = distance(b);
