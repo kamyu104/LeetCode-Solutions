@@ -2,7 +2,69 @@
 //        leave: O(logn)
 // Space: O(n)
 
+// bst solution, inspired by zqzwxec
 class ExamRoom {
+public:
+    ExamRoom(int N)
+      : N_(N)
+      , max_bst_(Compare(N))
+    {
+        max_bst_.emplace(-1, N_);
+        seats_.emplace(-1);
+        seats_.emplace(N_);
+    }
+    
+    int seat() {
+        const auto top = *max_bst_.begin();
+        max_bst_.erase(top);
+        const auto mid = top.first == -1 ? 0
+                         : top.second == N_ ? N_ - 1
+                         : (top.first + top.second) / 2;
+        seats_.emplace(mid);
+        max_bst_.emplace(top.first, mid);
+        max_bst_.emplace(mid, top.second);
+        return mid;
+    }
+    
+    void leave(int mid) {
+        const auto left = *prev(seats_.lower_bound(mid));
+        const auto right = *seats_.upper_bound(mid);
+        max_bst_.erase({left, mid});
+        max_bst_.erase({mid, right});
+        max_bst_.emplace(left, right);
+        seats_.erase(mid);
+    }
+
+private:
+    class Compare {
+    public:
+        Compare(int i) : N_(i) {}
+
+        bool operator() (const pair<int,int>& a, const pair<int,int>& b) const {
+            return distance(a) == distance(b) ? a.first < b.first
+                   : distance(a) > distance(b);
+        }
+        
+        int distance(const pair<int,int>& a) const {
+            if (a.first == -1 || a.second == N_) {
+                return a.second - a.first - 1;
+            }
+            return (a.second - a.first) / 2;
+        }
+
+    private:
+        int N_;
+    };
+    
+    int N_;
+    set<pair<int,int>, Compare> max_bst_;
+    set<int> seats_;
+};
+
+// Time:  seat:  O(logn),
+//        leave: O(logn)
+// Space: O(n)
+class ExamRoom2 {
 public:
     ExamRoom(int N) : num_(N) {
         segment_iters_[make_pair(-1, num_)] = 
@@ -122,7 +184,7 @@ private:
 // Time:  seat:  O(logn) on average,
 //        leave: O(logn)
 // Space: O(n)
-class ExamRoom2 {
+class ExamRoom3 {
 public:
     ExamRoom2(int N) : num_(N) {
         max_bst_.emplace(make_shared<Segment>(num_, 0, -1, num_));
@@ -227,7 +289,7 @@ private:
 // Time:  seat:  O(logn) on average,
 //        leave: O(logn)
 // Space: O(n)
-class ExamRoom3 {
+class ExamRoom4 {
 public:
     ExamRoom3(int N) : num_(N) {
         max_heap_.emplace(make_shared<Segment>(num_, 0, -1, num_));
