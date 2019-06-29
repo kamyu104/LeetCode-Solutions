@@ -27,8 +27,9 @@ public:
     }
     
     void leave(int mid) {
-        const auto& left = *prev(seats_.lower_bound(mid));
-        const auto& right = *seats_.upper_bound(mid);
+        const auto& mid_it = seats_.find(mid);
+        const auto& left = *prev(mid_it);
+        const auto& right = *next(mid_it);
         max_bst_.erase({left, mid});
         max_bst_.erase({mid, right});
         seats_.erase(mid);
