@@ -1,4 +1,4 @@
-# Time:  seat:  O(logn) on average,
+# Time:  seat:  O(logn), amortized
 #        leave: O(logn)
 # Space: O(n)
 
