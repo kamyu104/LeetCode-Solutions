@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1096%20%2F%201096-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1106%20%2F%201106-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -465,6 +465,7 @@
 1038 |[Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)| [C++](./C++/binary-search-tree-to-greater-sum-tree.cpp) [Python](./Python/binary-search-tree-to-greater-sum-tree.py)| _O(n)_ | _O(h)_ | Medium || DFS |
 1065 |[Index Pairs of a String](https://leetcode.com/problems/index-pairs-of-a-string/)| [C++](./C++/index-pairs-of-a-string.cpp)  [Python](./Python/index-pairs-of-a-string.py) | _O(n + m + z)_ | _O(t)_ | Easy |🔒| `Aho-Corasick Automata`, Trie |
 1080 |[Insufficient Nodes in Root to Leaf Paths](https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths/)| [C++](./C++/insufficient-nodes-in-root-to-leaf-paths.cpp) [Python](./Python/insufficient-nodes-in-root-to-leaf-paths.py)| _O(n)_ | _O(h)_ | Medium || DFS |
+1104 |[Path In Zigzag Labelled Binary Tree](https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/)| [C++](./C++/path-in-zigzag-labelled-binary-tree.cpp) [Python](./Python/path-in-zigzag-labelled-binary-tree.py)| _O(logn)_ | _O(logn)_ | Easy || Math |
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -635,6 +636,7 @@
 1073 | [Adding Two Negabinary Numbers](https://leetcode.com/problems/adding-two-negabinary-numbers/) | [C++](./C++/adding-two-negabinary-numbers.cpp) [Python](./Python/adding-two-negabinary-numbers.py) | _O(n)_ | _O(n)_      | Medium         ||
 1079 | [Letter Tile Possibilities](https://leetcode.com/problems/letter-tile-possibilities/) | [C++](./C++/letter-tile-possibilities.cpp) [Python](./Python/letter-tile-possibilities.py) | _O(n^2)_ | _O(n)_      | Medium         || Generating Function, Backtracking
 1088| [Confusing Number II](https://leetcode.com/problems/confusing-number-ii/) | [C++](./C++/confusing-number-ii.cpp) [Python](./Python/confusing-number-ii.py) | _O(logn)_ | _O(logn)_ |  Hard | 🔒 |
+1103| [Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | [C++](./C++/distribute-candies-to-people.cpp) [Python](./Python/distribute-candies-to-people.py) | _O(sqrt(n))_ | _O(1)_ |  Easy | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -729,6 +731,7 @@
 0669| [Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree/) | [C++](./C++/trim-a-binary-search-tree.cpp) [Python](./Python/trim-a-binary-search-tree.py) | _O(n)_          | _O(h)_          | Easy           ||
 0671| [Second Minimum Node In a Binary Tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/) | [C++](./C++/second-minimum-node-in-a-binary-tree.cpp) [Python](./Python/second-minimum-node-in-a-binary-tree.py) | _O(n)_          | _O(h)_          | Easy           ||
 0761| [Special Binary String](https://leetcode.com/problems/special-binary-string/) | [C++](./C++/special-binary-string.cpp) [Python](./Python/special-binary-string.py) | _O(n^2)_          | _O(n)_          | Hard           ||
+1106| [Parsing A Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression/) | [C++](./C++/parsing-a-boolean-expression.cpp) [Python](./Python/parsing-a-boolean-expression.py) | _O(n)_          | _O(n)_          | Hard           ||
 
 ## Binary Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1034,6 +1037,7 @@
 1049| [Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/) | [C++](./C++/last-stone-weight-ii.cpp) [Python](./Python/last-stone-weight-ii.py) |  _O(2^n)_ | _O(2^n)_   | Medium         |||
 1066| [Campus Bikes II](https://leetcode.com/problems/campus-bikes-ii/) | [C++](./C++/campus-bikes-ii.cpp) [Python](./Python/campus-bikes-ii.py) |  _O(w * b * 2^b)_ | _O(w * b * 2^b)_   | Medium         |🔒||
 1092| [Shortest Common Supersequence](https://leetcode.com/problems/shortest-common-supersequence/) | [C++](./C++/shortest-common-supersequence.cpp) [Python](./Python/shortest-common-supersequence.py) |  _O(m * n)_ | _O(m * n)_   | Hard         |||
+1105| [Filling Bookcase Shelves](https://leetcode.com/problems/filling-bookcase-shelves/) | [C++](./C++/filling-bookcase-shelves.cpp) [Python](./Python/filling-bookcase-shelves.py) |  _O(n^2)_ | _O(n)_   | Medium         |||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
