@@ -1173,6 +1173,8 @@
 1082| [Sales Analysis I](https://leetcode.com/problems/sales-analysis-i/) | [MySQL](./MySQL/sales-analysis-i.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1083| [Sales Analysis II](https://leetcode.com/problems/sales-analysis-ii/) | [MySQL](./MySQL/sales-analysis-ii.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒| |
 1084| [Sales Analysis III](https://leetcode.com/problems/sales-analysis-iii/) | [MySQL](./MySQL/sales-analysis-iii.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒| |
+1097| [Game Play Analysis V](https://leetcode.com/problems/game-play-analysis-v/) | [MySQL](./MySQL/game-play-analysis-v.sql) | _O(n^2)_ | _O(n)_       | Hard           |🔒| |
+1098| [Unpopular Books](https://leetcode.com/problems/unpopular-books/) | [MySQL](./MySQL/unpopular-books.sql) | _O(m + n)_ | _O(n)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
