@@ -21,12 +21,14 @@ class Solution2(object):
         :type n: int
         :rtype: int
         """
+        def check(mid, n):
+            return mid*(mid+1) <= 2*n
+
         left, right = 1, n
         while left <= right:
-            mid = left + (right - left) / 2
-            if 2 * n < mid * (mid+1):
-                right = mid - 1
+            mid = left + (right-left)//2
+            if not check(mid, n):
+                right = mid-1
             else:
-                left = mid + 1
-        return left - 1
-
+                left = mid+1
+        return right
