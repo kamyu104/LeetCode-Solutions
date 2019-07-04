@@ -1,7 +1,35 @@
-# Time:  O(sqrt(n)), n is the number of candies
+# Time:  O(n)
 # Space: O(1)
 
 class Solution(object):
+    def distributeCandies(self, candies, num_people):
+        """
+        :type candies: int
+        :type num_people: int
+        :rtype: List[int]
+        """
+        # sum(1 + 2 + ... + p <= C)
+        # => remaining : 0 <= C-(1+p)*p/2 < p+1
+        # => -2p-2 < p^2+p-2C <= 0
+        # => 2C+1/4 < (p+3/2)^2 and (p+1/2)^2 <= 2C+1/4
+        # => sqrt(2C+1/4)-3/2 < p <= sqrt(2C+1/4)-1/2
+        # => p = floor(sqrt(2C+1/4)-1/2)
+        p = int((2*candies + 0.25)**0.5 - 0.5) 
+        remaining = candies - (p+1)*p//2
+        rows, cols = divmod(p, num_people)
+        
+        d = [0]*num_people
+        for i in xrange(num_people):
+            d[i] = (i+1)*rows + ((rows-1)*rows//2)*num_people
+            if i < cols:
+                d[i] += i+1 + rows*num_people
+        d[cols] += remaining
+        return d
+    
+
+# Time:  O(sqrt(c)), c is the number of candies
+# Space: O(1)
+class Solution2(object):
     def distributeCandies(self, candies, num_people):
         """
         :type candies: int
