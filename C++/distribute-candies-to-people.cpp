@@ -16,9 +16,10 @@ public:
             
         vector<int> result(num_people);
         for (int i = 0; i < num_people; ++i) {
-            result[i] = (i + 1) * rows + ((rows - 1) * rows / 2) * num_people;
             if (i < cols) {
-                result[i] += i + 1 + rows * num_people;
+                result[i] = (i + 1) * (rows + 1) + (rows * (rows + 1) / 2) * num_people;
+            } else {
+                result[i]  = (i + 1) * rows + ((rows - 1) * rows / 2) * num_people;
             }
         }
         result[cols] += remaining;
