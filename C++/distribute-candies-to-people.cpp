@@ -26,7 +26,7 @@ public:
     }
 };
 
-// Time:  O(sqrt(n)), n is the number of candies
+// Time:  O(sqrt(c)), c is the number of candies
 // Space: O(1)
 class Solution2 {
 public:
