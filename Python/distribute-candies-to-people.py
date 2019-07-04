@@ -20,10 +20,8 @@ class Solution(object):
         
         result = [0]*num_people
         for i in xrange(num_people):
-            if i < cols:
-                result[i] = (i+1)*(rows+1) + (rows*(rows+1)//2)*num_people
-            else:
-                result[i] = (i+1)*rows + ((rows-1)*rows//2)*num_people
+            result[i] = (i+1)*(rows+1) + (rows*(rows+1)//2)*num_people if i < cols else \
+                        (i+1)*rows + ((rows-1)*rows//2)*num_people
         result[cols] += remaining
         return result
     
