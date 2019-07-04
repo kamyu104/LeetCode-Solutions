@@ -4,7 +4,7 @@
 class Solution {
 public:
     vector<int> distributeCandies(int candies, int num_people) {
-        // sum(1 + 2 + ... + p <= C)
+        // let p s.t. sum(1 + 2 + ... + p) <= C
         // => remaining : 0 <= C-(1+p)*p/2 < p+1
         // => -2p-2 < p^2+p-2C <= 0
         // => 2C+1/4 < (p+3/2)^2 and (p+1/2)^2 <= 2C+1/4
