@@ -39,7 +39,7 @@ class Solution2(object):
         left, right = 1, candies
         while left <= right:
             mid = left + (right-left)//2
-            if not ((mid+1)*mid//2 <= candies):
+            if not ((mid <= candies*2 // (mid+1))):
                 right = mid-1
             else:
                 left = mid+1
