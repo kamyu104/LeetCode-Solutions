@@ -638,7 +638,7 @@
 1073 | [Adding Two Negabinary Numbers](https://leetcode.com/problems/adding-two-negabinary-numbers/) | [C++](./C++/adding-two-negabinary-numbers.cpp) [Python](./Python/adding-two-negabinary-numbers.py) | _O(n)_ | _O(n)_      | Medium         ||
 1079 | [Letter Tile Possibilities](https://leetcode.com/problems/letter-tile-possibilities/) | [C++](./C++/letter-tile-possibilities.cpp) [Python](./Python/letter-tile-possibilities.py) | _O(n^2)_ | _O(n)_      | Medium         || Generating Function, Backtracking
 1088| [Confusing Number II](https://leetcode.com/problems/confusing-number-ii/) | [C++](./C++/confusing-number-ii.cpp) [Python](./Python/confusing-number-ii.py) | _O(logn)_ | _O(logn)_ |  Hard | 🔒 |
-1103| [Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | [C++](./C++/distribute-candies-to-people.cpp) [Python](./Python/distribute-candies-to-people.py) | _O(n + logc)_ | _O(1)_ |  Easy | |
+1103| [Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | [C++](./C++/distribute-candies-to-people.cpp) [Python](./Python/distribute-candies-to-people.py) | _O(n + logc)_ | _O(1)_ |  Easy | | Binary Search
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
