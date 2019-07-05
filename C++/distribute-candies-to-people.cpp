@@ -24,9 +24,38 @@ public:
     }
 };
 
-// Time:  O(sqrt(c)), c is the number of candies
+// Time:  O(n + logc), c is the number of candies
 // Space: O(1)
 class Solution2 {
+public:
+    vector<int> distributeCandies(int candies, int num_people) {
+        // find max integer p s.t. sum(1 + 2 + ... + p) <= C
+        int left = 1, right = candies;
+        while (left <= right) {
+            const auto& mid = left + (right - left) / 2;
+            if (!(mid <= candies * 2 / (mid + 1))) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        int p = right;
+        int remaining = candies - (p + 1) * p / 2;
+        int rows = p / num_people, cols = p % num_people;
+            
+        vector<int> result(num_people);
+        for (int i = 0; i < num_people; ++i) {
+            result[i] = (i < cols) ? (i + 1) * (rows + 1) + (rows * (rows + 1) / 2) * num_people
+                                   : (i + 1) * rows + ((rows - 1) * rows / 2) * num_people;
+        }
+        result[cols] += remaining;
+        return result;
+    }
+};
+
+// Time:  O(sqrt(c)), c is the number of candies
+// Space: O(1)
+class Solution3 {
 public:
     vector<int> distributeCandies(int candies, int num_people) {
         vector<int> result(num_people);
