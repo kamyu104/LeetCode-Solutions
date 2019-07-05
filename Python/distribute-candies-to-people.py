@@ -24,11 +24,40 @@ class Solution(object):
                         (i+1)*rows + ((rows-1)*rows//2)*num_people
         result[cols] += remaining
         return result
-    
+
+
+# Time:  O(n + logc), c is the number of candies
+# Space: O(1)
+class Solution2(object):
+    def distributeCandies(self, candies, num_people):
+        """
+        :type candies: int
+        :type num_people: int
+        :rtype: List[int]
+        """
+        # find max integer p s.t. sum(1 + 2 + ... + p) <= C
+        left, right = 1, candies
+        while left <= right:
+            mid = left + (right-left)//2
+            if not ((mid+1)*mid//2 <= candies):
+                right = mid-1
+            else:
+                left = mid+1
+        p = right
+        remaining = candies - (p+1)*p//2
+        rows, cols = divmod(p, num_people)
+        
+        result = [0]*num_people
+        for i in xrange(num_people):
+            result[i] = (i+1)*(rows+1) + (rows*(rows+1)//2)*num_people if i < cols else \
+                        (i+1)*rows + ((rows-1)*rows//2)*num_people
+        result[cols] += remaining
+        return result
+
 
 # Time:  O(sqrt(c)), c is the number of candies
 # Space: O(1)
-class Solution2(object):
+class Solution3(object):
     def distributeCandies(self, candies, num_people):
         """
         :type candies: int
