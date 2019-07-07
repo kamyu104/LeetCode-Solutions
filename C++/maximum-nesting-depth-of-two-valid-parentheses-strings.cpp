@@ -21,8 +21,8 @@ public:
         vector<int> result(seq.length());
         for (int i = 0; i < seq.length(); ++i) {
             int point = seq[i] == '(';
-            if ((point > 0 && A <= B) ||
-                (point < 0 && A >= B)) {
+            if ((point == 1 && A <= B) ||
+                (point == -1 && A >= B)) {
                 A += point;
             } else {
                 B += point;
