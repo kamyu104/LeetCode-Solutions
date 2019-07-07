@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Space: O(h)
+// Space: O(h + d), d is the number of to_delete
 
 /**
  * Definition for a binary tree node.
