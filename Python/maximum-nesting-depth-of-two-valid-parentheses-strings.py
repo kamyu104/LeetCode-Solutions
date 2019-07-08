@@ -19,7 +19,7 @@ class Solution2(object):
         :rtype: List[int]
         """
         A, B = 0, 0
-        result = [0] * len(seq)
+        result = [0]*len(seq)
         for i, c in enumerate(seq):
             point = 1 if c == '(' else -1
             if (point == 1 and A <= B) or \
