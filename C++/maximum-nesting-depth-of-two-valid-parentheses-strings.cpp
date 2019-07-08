@@ -20,7 +20,7 @@ public:
         int A = 0, B = 0;
         vector<int> result(seq.length());
         for (int i = 0; i < seq.length(); ++i) {
-            int point = seq[i] == '(';
+            int point = seq[i] == '(' ? 1 : -1;
             if ((point == 1 && A <= B) ||
                 (point == -1 && A >= B)) {
                 A += point;
