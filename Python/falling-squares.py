@@ -24,10 +24,7 @@ class Solution(object):
 class SegmentTree(object):
     def __init__(self, N, update_fn, query_fn):
         self.N = N
-        self.H = 1
-        while (1 << self.H) < N:
-            self.H += 1
-
+        self.H = (N-1).bit_length()
         self.update_fn = update_fn
         self.query_fn = query_fn
         self.tree = [0] * (2 * N)
@@ -45,12 +42,14 @@ class SegmentTree(object):
             self.tree[x] = self.update_fn(self.tree[x], self.lazy[x])
 
     def __push(self, x):
-        for h in xrange(self.H, 0, -1):
-            y = x >> h
+        n = 2**self.H
+        while n != 1:
+            y = x // n
             if self.lazy[y]:
                 self.__apply(y*2, self.lazy[y])
                 self.__apply(y*2 + 1, self.lazy[y])
                 self.lazy[y] = 0
+            n //= 2
 
     def update(self, L, R, h):
         L += self.N
