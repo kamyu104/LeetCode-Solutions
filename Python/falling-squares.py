@@ -23,9 +23,9 @@ class Solution(object):
 
 class SegmentTree(object):
     def __init__(self, N,
-                 query_fn=max,
-                 update_fn=max,
-                 default_val=float("-inf")):
+                 query_fn=min,
+                 update_fn=lambda x, y: y,
+                 default_val=float("inf")):
         self.N = N
         self.H = (N-1).bit_length()
         self.query_fn = lambda x, y: x if y is None else y if x is None else query_fn(x, y)
