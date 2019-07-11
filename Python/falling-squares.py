@@ -8,7 +8,7 @@ class Solution(object):
     def fallingSquares(self, positions):
         result = []
         pos = [-1]
-        heights = [0]
+        heights = [0]https://github.com/kamyu104/LeetCode-Solutions/blob/master/Python/falling-squares.py
         maxH = 0
         for left, side in positions:
             l = bisect.bisect_right(pos, left)
@@ -22,33 +22,38 @@ class Solution(object):
 
 
 class SegmentTree(object):
-    def __init__(self, N, update_fn, query_fn):
+    def __init__(self, N,
+                 query_fn=min,
+                 update_fn=lambda x, y: y,
+                 default_val=float("inf")):
         self.N = N
         self.H = (N-1).bit_length()
+        self.query_fn = lambda x, y: query_fn(x, y) if x is not None else y
         self.update_fn = update_fn
-        self.query_fn = query_fn
-        self.tree = [0] * (2 * N)
-        self.lazy = [0] * N
+        self.default_val = default_val
+        self.tree = [default_val] * (2 * N)
+        self.lazy = [None] * N
 
     def __apply(self, x, val):
-        self.tree[x] = self.update_fn(self.tree[x], val)
+        self.tree[x] = self.query_fn(self.tree[x], val) if x < self.N else self.update_fn(self.tree[x], val)
         if x < self.N:
-            self.lazy[x] = self.update_fn(self.lazy[x], val)
+            self.lazy[x] = self.query_fn(self.lazy[x], val)
 
     def __pull(self, x):
         while x > 1:
-            x /= 2
+            x //= 2
             self.tree[x] = self.query_fn(self.tree[x*2], self.tree[x*2 + 1])
-            self.tree[x] = self.update_fn(self.tree[x], self.lazy[x])
+            if self.lazy[x] is not None:
+                self.tree[x] = self.query_fn(self.tree[x], self.lazy[x])
 
     def __push(self, x):
         n = 2**self.H
         while n != 1:
             y = x // n
-            if self.lazy[y]:
+            if self.lazy[y] is not None:
                 self.__apply(y*2, self.lazy[y])
                 self.__apply(y*2 + 1, self.lazy[y])
-                self.lazy[y] = 0
+                self.lazy[y] = None
             n //= 2
 
     def update(self, L, R, h):
@@ -62,17 +67,20 @@ class SegmentTree(object):
             if R & 1 == 0:
                 self.__apply(R, h)
                 R -= 1
-            L /= 2
-            R /= 2
+            L //= 2
+            R //= 2
         self.__pull(L0)
         self.__pull(R0)
 
     def query(self, L, R):
+        result = self.default_val
+        if L > R:
+            return result
+
         L += self.N
         R += self.N
         self.__push(L)
         self.__push(R)
-        result = 0
         while L <= R:
             if L & 1:
                 result = self.query_fn(result, self.tree[L])
@@ -80,9 +88,15 @@ class SegmentTree(object):
             if R & 1 == 0:
                 result = self.query_fn(result, self.tree[R])
                 R -= 1
-            L /= 2
-            R /= 2
+            L //= 2
+            R //= 2
         return result
+    
+    def showData(self):
+        showList = []
+        for i in xrange(self.N):
+            showList += [self.query(i, i)]
+        print (showList)
 
 
 # Time:  O(nlogn)
@@ -95,7 +109,7 @@ class Solution2(object):
             index.add(left)
             index.add(left+size-1)
         index = sorted(list(index))
-        tree = SegmentTree(len(index), max, max)
+        tree = SegmentTree(len(index), max, max, 0)
         max_height = 0
         result = []
         for left, size in positions:
