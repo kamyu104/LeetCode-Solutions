@@ -98,6 +98,80 @@ class SegmentTree(object):
         return showList
 
 
+class SegmentTree2(object):
+    def __init__(self, nums,
+                 query_fn=min,
+                 update_fn=lambda x, y: y,
+                 default_val=float("inf")):
+        """
+        initialize your data structure here.
+        :type nums: List[int]
+        """
+        N = len(nums)
+        self.__original_length = N
+        self.__tree_length = 2**(N.bit_length() + (N&(N-1) != 0))-1
+        self.__query_fn = query_fn
+        self.__update_fn = update_fn
+        self.__default_val = default_val
+        self.__tree = [default_val for _ in range(self.__tree_length)]
+        self.__lazy = [None for _ in range(self.__tree_length)]
+        self.__constructTree(nums, 0, self.__original_length-1, 0)
+
+    def update(self, i, j, val):
+        self.__updateTree(val, i, j, 0, self.__original_length-1, 0)
+
+    def query(self, i, j):
+        return self.__queryRange(i, j, 0, self.__original_length-1, 0)
+
+    def __constructTree(self, nums, left, right, idx):
+        if left > right:
+             return
+        if left == right:
+            self.__tree[idx] = self.__update_fn(self.__tree[idx], nums[left])
+            return 
+        mid = left + (right-left)//2
+        self.__constructTree(nums, left, mid, idx*2 + 1)
+        self.__constructTree(nums, mid+1, right, idx*2 + 2)
+        self.__tree[idx] = self.__query_fn(self.__tree[idx*2 + 1], self.__tree[idx*2 + 2])
+
+    def __apply(self, left, right, idx, val):
+        self.__tree[idx] = self.__update_fn(self.__tree[idx], val)
+        if left != right:
+            self.__lazy[idx*2 + 1] = self.__update_fn(self.__lazy[idx*2 + 1], val)
+            self.__lazy[idx*2 + 2] = self.__update_fn(self.__lazy[idx*2 + 2], val)
+
+    def __updateTree(self, val, range_left, range_right, left, right, idx):
+        if left > right:
+            return
+        if self.__lazy[idx] is not None:
+            self.__apply(left, right, idx, self.__lazy[idx])
+            self.__lazy[idx] = None
+        if range_left > right or range_right < left:
+            return
+        if range_left <= left and right <= range_right:
+            self.__apply(left, right, idx, val)
+            return
+        mid = left + (right-left)//2
+        self.__updateTree(val, range_left, range_right, left, mid, idx*2 + 1)
+        self.__updateTree(val, range_left, range_right, mid+1, right, idx*2 + 2)
+        self.__tree[idx] = self.__query_fn(self.__tree[idx*2 + 1],
+                                           self.__tree[idx*2 + 2])
+
+    def __queryRange(self, range_left, range_right, left, right, idx):
+        if left > right:
+            return self.__default_val
+        if self.__lazy[idx] is not None:
+            self.__apply(left, right, idx, self.__lazy[idx])
+            self.__lazy[idx] = None
+        if right < range_left or left > range_right:
+            return self.__default_val
+        if range_left <= left and right <= range_right:
+            return self.__tree[idx]
+        mid = left + (right-left)//2
+        return self.__query_fn(self.__queryRange(range_left, range_right, left, mid, idx*2 + 1), 
+                               self.__queryRange(range_left, range_right, mid + 1, right, idx*2 + 2))
+
+
 # Time:  O(nlogn)
 # Space: O(n)
 # Segment Tree solution.
@@ -109,6 +183,7 @@ class Solution2(object):
             index.add(left+size-1)
         index = sorted(list(index))
         tree = SegmentTree(len(index), max, max, 0)
+        # tree = SegmentTree2([0]*len(index), max, max, 0)
         max_height = 0
         result = []
         for left, size in positions:
