@@ -100,9 +100,9 @@ private:
         vector<int> tree_, lazy_;
 
         void apply(int x, int val) {
-            tree_[x] = val;
+            tree_[x] = max(tree_[x], val);
             if (x < N_) {
-                lazy_[x] = val;
+                lazy_[x] = max(lazy_[x], val);
             }
         }
 
