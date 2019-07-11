@@ -72,59 +72,49 @@ class NumArray2(object):
         self.__original_length = N
         self.__tree_length = 2**(N.bit_length() + (N&(N-1) != 0))-1
         self.__query_fn = query_fn
+        self.__update_fn = update_fn
         self.__default_val = default_val
         self.__tree = [default_val for _ in range(self.__tree_length)]
         self.__lazy = [None for _ in range(self.__tree_length)]
         self.__constructTree(nums, 0, self.__original_length-1, 0)
 
     def update(self, i, val):
-        """
-        :type i: int
-        :type val: int
-        :rtype: int
-        """
         self.__updateTree(val, i, i, 0, self.__original_length-1, 0)
 
     def sumRange(self, i, j):
-        """
-        sum of elements nums[i..j], inclusive.
-        :type i: int
-        :type j: int
-        :rtype: int
-        """
         return self.__queryRange(i, j, 0, self.__original_length-1, 0)
 
     def __constructTree(self, nums, left, right, idx):
         if left > right:
              return
         if left == right:
-            self.__tree[idx] = nums[left]
+            self.__tree[idx] = self.__update_fn(self.__tree[idx], nums[left])
             return 
         mid = left + (right-left)//2
         self.__constructTree(nums, left, mid, idx*2 + 1)
         self.__constructTree(nums, mid+1, right, idx*2 + 2)
         self.__tree[idx] = self.__query_fn(self.__tree[idx*2 + 1], self.__tree[idx*2 + 2])
 
-    def __updateTree(self, new_val, range_left, range_right, left, right, idx):
+    def __apply(self, left, right, idx, val):
+        self.__tree[idx] = self.__update_fn(self.__tree[idx], val)
+        if left != right:
+            self.__lazy[idx*2 + 1] = self.__update_fn(self.__lazy[idx*2 + 1], val)
+            self.__lazy[idx*2 + 2] = self.__update_fn(self.__lazy[idx*2 + 2], val)
+
+    def __updateTree(self, val, range_left, range_right, left, right, idx):
         if left > right:
             return
         if self.__lazy[idx] is not None:
-            self.__tree[idx] = self.__lazy[idx]
-            if left != right:
-                self.__lazy[idx*2 + 1] = self.__lazy[idx]
-                self.__lazy[idx*2 + 2] = self.__lazy[idx]
+            self.__apply(left, right, idx, self.__lazy[idx])
             self.__lazy[idx] = None
         if range_left > right or range_right < left:
             return
         if range_left <= left and right <= range_right:
-            self.__tree[idx] = new_val
-            if right != left:
-                self.__lazy[idx*2 + 1] = new_val
-                self.__lazy[idx*2 + 2] = new_val
+            self.__apply(left, right, idx, val)
             return
         mid = left + (right-left)//2
-        self.__updateTree(new_val, range_left, range_right, left, mid, idx*2 + 1)
-        self.__updateTree(new_val, range_left, range_right, mid+1, right, idx*2 + 2)
+        self.__updateTree(val, range_left, range_right, left, mid, idx*2 + 1)
+        self.__updateTree(val, range_left, range_right, mid+1, right, idx*2 + 2)
         self.__tree[idx] = self.__query_fn(self.__tree[idx*2 + 1],
                                            self.__tree[idx*2 + 2])
 
@@ -132,10 +122,7 @@ class NumArray2(object):
         if left > right:
             return self.__default_val
         if self.__lazy[idx] is not None:
-            self.__tree[idx] = self.__lazy[idx]
-            if left != right:
-                self.__lazy[idx*2 + 1] = self.__lazy[idx]
-                self.__lazy[idx*2 + 2] = self.__lazy[idx]
+            self.__apply(left, right, idx, self.__lazy[idx])
             self.__lazy[idx] = None
         if right < range_left or left > range_right:
             return self.__default_val
