@@ -132,11 +132,11 @@ private:
 // Space: O(n)
 class Solution3 {
 public:
-    vector<int> fallingSquares(vector<pair<int, int>>& positions) {
+    vector<int> fallingSquares(vector<vector<int>>& positions) {
         set<int> index;
         for (const auto& position : positions) {
-            index.emplace(position.first);
-            index.emplace(position.first + position.second - 1);
+            index.emplace(position[0]);
+            index.emplace(position[0] + position[1] - 1);
         }
         const auto W = index.size();
         const auto B = static_cast<int>(sqrt(W));
@@ -146,9 +146,9 @@ public:
         auto max_height = 0;
         vector<int> result;
         for (const auto& position : positions) {
-            const auto L = distance(index.begin(), index.find(position.first));
-            const auto R = distance(index.begin(), index.find(position.first + position.second - 1));
-            const auto h = query(B, L, R, heights, blocks, blocks_read) + position.second;
+            const auto L = distance(index.begin(), index.find(position[0]));
+            const auto R = distance(index.begin(), index.find(position[0] + position[1] - 1));
+            const auto h = query(B, L, R, heights, blocks, blocks_read) + position[1];
             update(B, h, L, R, &heights, &blocks, &blocks_read);
             max_height = max(max_height, h);
             result.emplace_back(max_height);
@@ -204,16 +204,14 @@ private:
 // Space: O(n)
 class Solution4 {
 public:
-    vector<int> fallingSquares(vector<pair<int, int>>& positions) {
+    vector<int> fallingSquares(vector<vector<int>>& positions) {
         vector<int> heights(positions.size());
         for (int i = 0; i < positions.size(); ++i) {
-            int left_i, size_i;
-            tie(left_i, size_i) = positions[i];
+            int left_i = positions[i][0], size_i = positions[i][1];
             int right_i = left_i + size_i;
             heights[i] += size_i;
             for (int j = i + 1; j < positions.size(); ++j) {
-                int left_j, size_j;
-                tie(left_j, size_j) = positions[j];
+                int left_j = positions[j][0], size_j = positions[j][1];
                 int right_j = left_j + size_j;
                 if (left_j < right_i and left_i < right_j) {  // intersect
                     heights[j] = max(heights[j], heights[i]);
