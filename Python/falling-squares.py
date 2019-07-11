@@ -8,7 +8,7 @@ class Solution(object):
     def fallingSquares(self, positions):
         result = []
         pos = [-1]
-        heights = [0]https://github.com/kamyu104/LeetCode-Solutions/blob/master/Python/falling-squares.py
+        heights = [0]
         maxH = 0
         for left, side in positions:
             l = bisect.bisect_right(pos, left)
