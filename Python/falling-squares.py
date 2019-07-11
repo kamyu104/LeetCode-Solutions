@@ -28,14 +28,14 @@ class SegmentTree(object):
                  default_val=float("inf")):
         self.N = N
         self.H = (N-1).bit_length()
-        self.query_fn = lambda x, y: query_fn(x, y) if x is not None else y
+        self.query_fn = lambda *l: query_fn(i for i in l if i is not None)
         self.update_fn = update_fn
         self.default_val = default_val
         self.tree = [default_val] * (2 * N)
         self.lazy = [None] * N
 
     def __apply(self, x, val):
-        self.tree[x] = self.query_fn(self.tree[x], val) if x < self.N else self.update_fn(self.tree[x], val)
+        self.tree[x] = self.update_fn(self.tree[x], val)
         if x < self.N:
             self.lazy[x] = self.query_fn(self.lazy[x], val)
 
@@ -43,8 +43,7 @@ class SegmentTree(object):
         while x > 1:
             x //= 2
             self.tree[x] = self.query_fn(self.tree[x*2], self.tree[x*2 + 1])
-            if self.lazy[x] is not None:
-                self.tree[x] = self.query_fn(self.tree[x], self.lazy[x])
+            self.tree[x] = self.query_fn(self.lazy[x], self.tree[x])
 
     def __push(self, x):
         n = 2**self.H
