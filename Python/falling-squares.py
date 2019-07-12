@@ -28,7 +28,7 @@ class SegmentTree(object):
                  default_val=float("inf")):
         self.N = N
         self.H = (N-1).bit_length()
-        self.query_fn = lambda x, y: x if y is None else y if x is None else query_fn(x, y)
+        self.query_fn = query_fn
         self.update_fn = update_fn
         self.default_val = default_val
         self.tree = [default_val] * (2 * N)
