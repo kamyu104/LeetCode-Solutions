@@ -1,7 +1,6 @@
 // Time:  O(n)
 // Space: O(1)
 
-
 class FooBar {
 public:
     FooBar(int n) : n_(n) {
