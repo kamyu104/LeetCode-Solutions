@@ -10,12 +10,12 @@ public:
         for (int i = 0; i < n_; ++i) {
             {
                 unique_lock<mutex> l(m_);
-                wait_.wait(l, [this]() { return !curr_; });
+                cv_.wait(l, [this]() { return !curr_; });
                 curr_ = !curr_;
                 // printFoo() outputs "foo". Do not change or remove this line.
                 printFoo();
             }
-            wait_.notify_one();
+            cv_.notify_one();
         }
     }
 
@@ -23,19 +23,19 @@ public:
         for (int i = 0; i < n_; ++i) {
             {
                 unique_lock<mutex> l(m_);
-                wait_.wait(l, [this]() { return curr_; });
+                cv_.wait(l, [this]() { return curr_; });
                 curr_ = !curr_;
                 // printBar() outputs "bar". Do not change or remove this line.
                 printBar();
             }
-            wait_.notify_one();
+            cv_.notify_one();
         }
     }
 private:
     int n_;
     bool curr_ = false;
     mutex m_;
-    condition_variable wait_;
+    condition_variable cv_;
 };
 
 // Time:  O(n)
