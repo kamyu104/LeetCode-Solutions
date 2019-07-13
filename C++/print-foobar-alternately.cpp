@@ -12,9 +12,9 @@ public:
                 unique_lock<mutex> l(m_);
                 wait_.wait(l, [this]() { return !curr_; });
                 curr_ = !curr_;
+                // printFoo() outputs "foo". Do not change or remove this line.
+                printFoo();
             }
-            // printFoo() outputs "foo". Do not change or remove this line.
-            printFoo();
             wait_.notify_one();
         }
     }
@@ -25,9 +25,9 @@ public:
                 unique_lock<mutex> l(m_);
                 wait_.wait(l, [this]() { return curr_; });
                 curr_ = !curr_;
+                // printBar() outputs "bar". Do not change or remove this line.
+                printBar();
             }
-            // printBar() outputs "bar". Do not change or remove this line.
-            printBar();
             wait_.notify_one();
         }
     }
