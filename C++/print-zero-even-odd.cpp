@@ -11,11 +11,11 @@ public:
         for (int i = 0; i < n_; ++i) {
             {
                 unique_lock<mutex> l(m_);
-                wait_.wait(l, [this]() { return curr_ % 2 == 0; });
+                cv_.wait(l, [this]() { return curr_ % 2 == 0; });
                 printNumber(0);
                 ++curr_;
             }
-            wait_.notify_all();
+            cv_.notify_all();
         }
     }
 
@@ -23,10 +23,10 @@ public:
         for (int i = 0; i < n_ / 2; ++i) {
             {
                 unique_lock<mutex> l(m_);
-                wait_.wait(l, [this]() { return curr_ % 4 == 3; });
+                cv_.wait(l, [this]() { return curr_ % 4 == 3; });
                 printNumber((curr_++ / 2) + 1);
             }
-            wait_.notify_all();
+            cv_.notify_all();
         } 
     }
 
@@ -34,10 +34,10 @@ public:
          for (int i = 0; i < (n_ + 1) / 2; ++i) {
             {
                 unique_lock<mutex> l(m_);
-                wait_.wait(l, [this]() { return curr_ % 4 == 1; });
+                cv_.wait(l, [this]() { return curr_ % 4 == 1; });
                 printNumber((curr_++ / 2) + 1);
             }
-            wait_.notify_all();
+            cv_.notify_all();
         } 
     }
 
@@ -45,7 +45,7 @@ private:
     int n_;
     int curr_ = 0;
     mutex m_;
-    condition_variable wait_;
+    condition_variable cv_;
 };
 
 // Time:  O(n)
