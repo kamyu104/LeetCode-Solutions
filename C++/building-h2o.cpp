@@ -7,20 +7,22 @@ public:
     }
 
     void hydrogen(function<void()> releaseHydrogen) {
-        unique_lock<mutex> l(m_);
-        wait_.wait(l, [this]() { return (nH_ + 1) - 2 * nO_ <= 2; });
-        ++nH_;
+        {
+            unique_lock<mutex> l(m_);
+            wait_.wait(l, [this]() { return (nH_ + 1) - 2 * nO_ <= 2; });
+            ++nH_;
+        }
         releaseHydrogen();
-        l.unlock();
         wait_.notify_all();
     }
 
     void oxygen(function<void()> releaseOxygen) {
-        unique_lock<mutex> l(m_);
-        wait_.wait(l, [this]() { return 2 * (nO_ + 1) - nH_ <= 2; });
-        ++nO_;
+        {
+            unique_lock<mutex> l(m_);
+            wait_.wait(l, [this]() { return 2 * (nO_ + 1) - nH_ <= 2; });
+            ++nO_;
+        }
         releaseOxygen();
-        l.unlock();
         wait_.notify_all();
     }
 
