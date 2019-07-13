@@ -7,6 +7,37 @@ public:
     }
 
     void first(function<void()> printFirst) {
+        // printFirst() outputs "first". Do not change or remove this line.
+        printFirst();
+        p1_.set_value();
+    }
+
+    void second(function<void()> printSecond) {
+        p1_.get_future().wait();
+        // printSecond() outputs "second". Do not change or remove this line.
+        printSecond();
+        p2_.set_value();
+    }
+
+    void third(function<void()> printThird) {
+        p2_.get_future().wait();
+        // printThird() outputs "third". Do not change or remove this line.
+        printThird();
+    }
+
+private:
+    promise<void> p1_;
+    promise<void> p2_;
+};
+
+// Time:  O(n)
+// Space: O(1)
+class Foo2 {
+public:
+    Foo2() {
+    }
+
+    void first(function<void()> printFirst) {
         {
             unique_lock<mutex> l(m_);
             has_first_ = true;
@@ -46,9 +77,9 @@ private:
 
 // Time:  O(n)
 // Space: O(1)
-class Foo2 {
+class Foo3 {
 public:
-    Foo2() {
+    Foo3() {
         m1_.lock();
         m2_.lock();
     }
