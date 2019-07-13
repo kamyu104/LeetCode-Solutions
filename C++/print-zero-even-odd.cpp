@@ -11,33 +11,35 @@ public:
         for (int i = 0; i < n_; ++i) {
             {
                 unique_lock<mutex> l(m_);
-                cv_.wait(l, [this]() { return curr_ % 2 == 0; });
-                printNumber(0);
+                wait_.wait(l, [this]() { return curr_ % 2 == 0; });
                 ++curr_;
+                printNumber(0);
             }
-            cv_.notify_all();
+            wait_.notify_all();
         }
     }
 
     void even(function<void(int)> printNumber) {
-        for (int i = 0; i < n_ / 2; ++i) {
+        for (int i = 2; i <= n_; i += 2) {
             {
                 unique_lock<mutex> l(m_);
-                cv_.wait(l, [this]() { return curr_ % 4 == 3; });
-                printNumber((curr_++ / 2) + 1);
+                wait_.wait(l, [this]() { return curr_ % 4 == 3; });
+                ++curr_;
+                printNumber(i);
             }
-            cv_.notify_all();
+            wait_.notify_all();
         } 
     }
 
     void odd(function<void(int)> printNumber) {
-         for (int i = 0; i < (n_ + 1) / 2; ++i) {
+         for (int i = 1; i <= n_; i += 2) {
             {
                 unique_lock<mutex> l(m_);
-                cv_.wait(l, [this]() { return curr_ % 4 == 1; });
-                printNumber((curr_++ / 2) + 1);
+                wait_.wait(l, [this]() { return curr_ % 4 == 1; });
+                ++curr_;
+                printNumber(i);
             }
-            cv_.notify_all();
+            wait_.notify_all();
         } 
     }
 
@@ -45,7 +47,7 @@ private:
     int n_;
     int curr_ = 0;
     mutex m_;
-    condition_variable cv_;
+    condition_variable wait_;
 };
 
 // Time:  O(n)
@@ -71,7 +73,7 @@ public:
     }
 
     void even(function<void(int)> printNumber) {
-        for (int i = 0; i < n_ / 2; ++i) {
+        for (int i = 2; i <= n_; i += 2) {
             m3_.lock();
             printNumber(curr_);
             m1_.unlock();
@@ -79,7 +81,7 @@ public:
     }
 
     void odd(function<void(int)> printNumber) {
-         for (int i = 0; i < (n_ + 1) / 2; ++i) {
+         for (int i = 1; i <= n_; i += 2) {
             m2_.lock();
             printNumber(curr_);
             m1_.unlock();
