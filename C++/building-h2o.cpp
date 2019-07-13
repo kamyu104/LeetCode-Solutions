@@ -8,10 +8,8 @@ public:
 
     void hydrogen(function<void()> releaseHydrogen) {
         {
-            unique_lock l(m_);
-            if (nH_ == 2) {
-                waitH.wait(l, [this]{ return nH_ != 2; });
-            }
+            unique_lock<mutex> l(m_);
+            wait_.wait(l, [this]() { return (nH_ + 1) - 2 * nO_ <= 2; });
             ++nH_;
             releaseHydrogen();
         }
@@ -20,10 +18,8 @@ public:
 
     void oxygen(function<void()> releaseOxygen) {
         {
-            unique_lock l(m_);
-            if (nO_ == 1) {
-                waitO.wait(l, [this]{ return nO_ != 1; });
-            }
+            unique_lock<mutex> l(m_);
+            wait_.wait(l, [this]() { return 2 * (nO_ + 1) - nH_ <= 2; });
             ++nO_;
             releaseOxygen();
         }
@@ -32,18 +28,18 @@ public:
 
 private:
     void consume() {
-        unique_lock l(m_);
-        if (nH_ == 2 && nO_ == 1) {
-            nH_ = nO_ = 0;
+        unique_lock<mutex> l(m_);
+        if (nH_ >= 2 && nO_ >= 1) {
+            nH_ -= 2;
+            nO_ -= 1;
             l.unlock();
-            waitH.notify_one();
-            waitO.notify_one();
+            wait_.notify_all();
         }
     }
 
     int nH_, nO_;
     mutex m_;
-    condition_variable waitH, waitO;
+    condition_variable wait_;
 };
 
 // Time:  O(n)
@@ -51,7 +47,7 @@ private:
 // this is much like single thread execution
 class H2O2 {
 public:
-    H2O(): curr_(2) {
+    H2O2(): curr_(2) {
         m2_.lock();
     }
 
