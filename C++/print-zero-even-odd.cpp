@@ -1,7 +1,59 @@
 // Time:  O(n)
 // Space: O(1)
 
+
+// Time:  O(n)
+// Space: O(1)
+
 class ZeroEvenOdd {
+public:
+    ZeroEvenOdd(int n)
+      : n_(n)
+      , curr_(0)
+    {
+    }
+
+    // printNumber(x) outputs "x", where x is an integer.
+    void zero(function<void(int)> printNumber) {
+        for (int i = 0; i < n_; ++i) {
+            unique_lock l(m_);
+            wait_.wait(l, [this]() { return curr_ % 4 == 0 ||
+                                            curr_ % 4 == 2; });
+            printNumber(0);
+            ++curr_;
+            l.unlock();
+            wait_.notify_all();
+        }
+    }
+
+    void even(function<void(int)> printNumber) {
+        for (int i = 0; i < n_ / 2; ++i) {
+            unique_lock l(m_);
+            wait_.wait(l, [this]() { return curr_ % 4 == 3; });
+            printNumber((curr_++ / 2) + 1);
+            l.unlock();
+            wait_.notify_all();
+        } 
+    }
+
+    void odd(function<void(int)> printNumber) {
+         for (int i = 0; i < (n_ + 1) / 2; ++i) {
+            unique_lock l(m_);
+            wait_.wait(l, [this]() { return curr_ % 4 == 1; });
+            printNumber((curr_++ / 2) + 1);
+            l.unlock();
+            wait_.notify_all();
+        } 
+    }
+
+private:
+    int n_;
+    int curr_;
+    mutex m_;
+    condition_variable wait_;
+};
+
+class ZeroEvenOdd2 {
 public:
     ZeroEvenOdd(int n)
       : n_(n)
