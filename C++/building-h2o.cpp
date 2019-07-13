@@ -7,6 +7,45 @@ public:
     }
 
     void hydrogen(function<void()> releaseHydrogen) {
+        unique_lock<mutex> l(m_);
+        releaseHydrogen_ = releaseHydrogen;
+        ++nH_;
+        output();
+    }
+
+    void oxygen(function<void()> releaseOxygen) {
+        unique_lock<mutex> l(m_);
+        releaseOxygen_ = releaseOxygen;
+        ++nO_;
+        output();
+    }
+
+private:
+    void output() {
+        while (nH_ >= 2 && nO_ >= 1) {
+            nH_ -= 2;
+            nO_ -= 1;
+            releaseHydrogen_();
+            releaseHydrogen_();
+            releaseOxygen_();
+        }
+    }
+
+    int nH_ = 0;
+    int nO_ = 0;
+    function<void()> releaseHydrogen_ = nullptr;
+    function<void()> releaseOxygen_ = nullptr;
+    mutex m_;
+};
+
+// Time:  O(n)
+// Space: O(1)
+class H2O2 {
+public:        
+    H2O2() {
+    }
+
+    void hydrogen(function<void()> releaseHydrogen) {
         {
             unique_lock<mutex> l(m_);
             cv_.wait(l, [this]() { return (nH_ + 1) - 2 * nO_ <= 2; });
@@ -38,9 +77,9 @@ private:
 // Time:  O(n)
 // Space: O(1)
 // this is much like single thread execution
-class H2O2 {
+class H2O3 {
 public:
-    H2O2(): curr_(2) {
+    H2O3(): curr_(2) {
         m2_.lock();
     }
 
