@@ -1,4 +1,4 @@
-// Time:  O(n)
+// Time:  O(k * n), k is the number of threads
 // Space: O(1)
 
 class H2O {
