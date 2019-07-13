@@ -33,8 +33,7 @@ class Foo(object):
             printSecond()
             self.__has_second = True
             self.__cv.notifyAll()
-            
-            
+              
     def third(self, printThird):
         """
         :type printThird: method
