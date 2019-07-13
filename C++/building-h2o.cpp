@@ -9,30 +9,30 @@ public:
     void hydrogen(function<void()> releaseHydrogen) {
         {
             unique_lock<mutex> l(m_);
-            wait_.wait(l, [this]() { return (nH_ + 1) - 2 * nO_ <= 2; });
+            cv_.wait(l, [this]() { return (nH_ + 1) - 2 * nO_ <= 2; });
             ++nH_;
             // releaseHydrogen() outputs "H". Do not change or remove this line.
             releaseHydrogen();
         }
-        wait_.notify_all();
+        cv_.notify_all();
     }
 
     void oxygen(function<void()> releaseOxygen) {
         {
             unique_lock<mutex> l(m_);
-            wait_.wait(l, [this]() { return 2 * (nO_ + 1) - nH_ <= 2; });
+            cv_.wait(l, [this]() { return 2 * (nO_ + 1) - nH_ <= 2; });
             ++nO_;
             // releaseOxygen() outputs "O". Do not change or remove this line.
             releaseOxygen();
         }
-        wait_.notify_all();
+        cv_.notify_all();
     }
 
 private:
     int nH_ = 0;
     int nO_ = 0;
     mutex m_;
-    condition_variable wait_;
+    condition_variable cv_;
 };
 
 // Time:  O(n)
