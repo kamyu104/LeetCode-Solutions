@@ -56,7 +56,6 @@ class H2O2(object):
             releaseHydrogen()
             self.__cv.notifyAll()
 
-
     def oxygen(self, releaseOxygen):
         """
         :type releaseOxygen: method
