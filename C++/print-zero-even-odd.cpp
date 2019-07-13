@@ -3,10 +3,7 @@
 
 class ZeroEvenOdd {
 public:
-    ZeroEvenOdd(int n)
-      : n_(n)
-      , curr_(0)
-    {
+    ZeroEvenOdd(int n) : n_(n) {
     }
 
     // printNumber(x) outputs "x", where x is an integer.
@@ -47,7 +44,7 @@ public:
 
 private:
     int n_;
-    int curr_;
+    int curr_ = 0;
     mutex m_;
     condition_variable wait_;
 };
@@ -56,10 +53,7 @@ private:
 // Space: O(1)
 class ZeroEvenOdd2 {
 public:
-    ZeroEvenOdd2(int n)
-      : n_(n)
-      , curr_(0)
-    {
+    ZeroEvenOdd2(int n) : n_(n) {
         m2_.lock();
         m3_.lock();
     }
@@ -95,6 +89,6 @@ public:
 
 private:
     int n_;
-    int curr_;
+    int curr_ = 0;
     mutex m1_, m2_, m3_;
 };
