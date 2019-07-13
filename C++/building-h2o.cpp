@@ -29,7 +29,8 @@ public:
     }
 
 private:
-    int nH_, nO_;
+    int nH_ = 0;
+    int nO_ = 0;
     mutex m_;
     condition_variable wait_;
 };
@@ -63,6 +64,6 @@ public:
     }
 
 private:
-    int curr_;
+    int curr_ = 0;
     mutex m1_, m2_;
 };
