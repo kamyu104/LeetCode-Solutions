@@ -14,7 +14,7 @@ public:
                 curr_ = !curr_;
             }
             // printFoo() outputs "foo". Do not change or remove this line.
-        	printFoo();
+            printFoo();
             wait_.notify_one();
         }
     }
@@ -27,7 +27,7 @@ public:
                 curr_ = !curr_;
             }
             // printBar() outputs "bar". Do not change or remove this line.
-        	printBar();
+            printBar();
             wait_.notify_one();
         }
     }
@@ -50,7 +50,7 @@ public:
         for (int i = 0; i < n_; ++i) {
             m1_.lock();
             // printFoo() outputs "foo". Do not change or remove this line.
-        	 printFoo();
+            printFoo();
             m2_.unlock();
         }
     }
@@ -59,7 +59,7 @@ public:
         for (int i = 0; i < n_; ++i) {
             m2_.lock();
             // printBar() outputs "bar". Do not change or remove this line.
-          	printBar();
+            printBar();
             m1_.unlock();
         }
     }
