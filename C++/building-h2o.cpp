@@ -10,46 +10,37 @@ public:
         {
             unique_lock l(m_);
             if (nH_ == 2) {
-                waitH.wait(l, [this]{ return nH_ < 2; });
+                waitH.wait(l, [this]{ return nH_ != 2; });
             }
             ++nH_;
-            if (nH_ != 2) {
-                l.unlock();
-                waitH.notify_one();
-            }
+            releaseHydrogen();
         }
-        releaseHydrogen();
-        {
-            unique_lock l(m_);
-            if (nH_ == 2 && nO_ == 1) {
-                nH_ = nO_ = 0;
-                waitH.notify_one();
-                waitO.notify_one();
-            }
-        }
+        consume();
     }
 
     void oxygen(function<void()> releaseOxygen) {
         {
             unique_lock l(m_);
-            if (nO_ >= 1) {
-                waitO.wait(l, [this]{ return nO_ < 1; });
+            if (nO_ == 1) {
+                waitO.wait(l, [this]{ return nO_ != 1; });
             }
             ++nO_;
+            releaseOxygen();
         }
-        releaseOxygen();
-        {
-            unique_lock l(m_);
-            if (nH_ == 2 && nO_ == 1) {
-                nH_ = nO_ = 0;
-                l.unlock();
-                waitH.notify_one();
-                waitO.notify_one();
-            }
-        }
+        consume();
     }
 
 private:
+    void consume() {
+        unique_lock l(m_);
+        if (nH_ == 2 && nO_ == 1) {
+            nH_ = nO_ = 0;
+            l.unlock();
+            waitH.notify_one();
+            waitO.notify_one();
+        }
+    }
+
     int nH_, nO_;
     mutex m_;
     condition_variable waitH, waitO;
