@@ -11,8 +11,7 @@ public:
         for (int i = 0; i < n_; ++i) {
             {
                 unique_lock<mutex> l(m_);
-                wait_.wait(l, [this]() { return curr_ % 4 == 0 ||
-                                                curr_ % 4 == 2; });
+                wait_.wait(l, [this]() { return curr_ % 2 == 0; });
                 printNumber(0);
                 ++curr_;
             }
