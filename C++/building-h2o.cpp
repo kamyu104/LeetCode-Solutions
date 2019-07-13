@@ -11,9 +11,9 @@ public:
             unique_lock<mutex> l(m_);
             wait_.wait(l, [this]() { return (nH_ + 1) - 2 * nO_ <= 2; });
             ++nH_;
+            // releaseHydrogen() outputs "H". Do not change or remove this line.
+            releaseHydrogen();
         }
-        // releaseHydrogen() outputs "H". Do not change or remove this line.
-        releaseHydrogen();
         wait_.notify_all();
     }
 
@@ -22,9 +22,9 @@ public:
             unique_lock<mutex> l(m_);
             wait_.wait(l, [this]() { return 2 * (nO_ + 1) - nH_ <= 2; });
             ++nO_;
+            // releaseOxygen() outputs "O". Do not change or remove this line.
+            releaseOxygen();
         }
-        // releaseOxygen() outputs "O". Do not change or remove this line.
-        releaseOxygen();
         wait_.notify_all();
     }
 
