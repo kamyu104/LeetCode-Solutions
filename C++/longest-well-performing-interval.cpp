@@ -12,7 +12,7 @@ public:
                 result = i + 1;
             } else if (lookup.count(accu - 1)) {
                 // lookup[accu-1] is the leftmost idx with smaller accu,
-                // because from 1 to some positive k,
+                // because for i from 1 to some positive k,
                 // lookup[accu-i] is a strickly increasing sequence
                 result = max(result, i - lookup[accu - 1]);
             }
