@@ -473,7 +473,7 @@
 1080 |[Insufficient Nodes in Root to Leaf Paths](https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths/)| [C++](./C++/insufficient-nodes-in-root-to-leaf-paths.cpp) [Python](./Python/insufficient-nodes-in-root-to-leaf-paths.py)| _O(n)_ | _O(h)_ | Medium || DFS |
 1104 |[Path In Zigzag Labelled Binary Tree](https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/)| [C++](./C++/path-in-zigzag-labelled-binary-tree.cpp) [Python](./Python/path-in-zigzag-labelled-binary-tree.py)| _O(logn)_ | _O(logn)_ | Easy || Math |
 1120 |[Maximum Average Subtree](https://leetcode.com/problems/maximum-average-subtree/)| [C++](./C++/maximum-average-subtree.cpp)  [Python](./Python/maximum-average-subtree.py) | _O(n)_ | _O(h)_ | Easy |🔒| DFS |
-1123 |[Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/)| [C++](./C++/lowest-common-ancestor-of-deepest-leaves.cpp)  [Python](./Python/lowest-common-ancestor-of-deepest-leaves.py) | _O(n)_ | _O(h)_ | Medium |🔒| DFS |
+1123 |[Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/)| [C++](./C++/lowest-common-ancestor-of-deepest-leaves.cpp)  [Python](./Python/lowest-common-ancestor-of-deepest-leaves.py) | _O(n)_ | _O(h)_ | Medium || DFS |
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
