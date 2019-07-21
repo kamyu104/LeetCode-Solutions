@@ -4,6 +4,15 @@
 class Solution {
 public:
     int maxAbsValExpr(vector<int>& arr1, vector<int>& arr2) {
+        // 1. max(|arr1[i]-arr1[j]| + |arr2[i]-arr2[j]| + |i-j| for i > j)
+        //    = max(|arr1[i]-arr1[j]| + |arr2[i]-arr2[j]| + |i-j| for j > i)
+        // 2. for i > j:
+        //        (|arr1[i]-arr1[j]| + |arr2[i]-arr2[j]| + |i-j|)
+        //        >= c1*(arr1[i]-arr1[j]) + c2*(arr2[i]-arr2[j]) + i-j for c1 in (1, -1), c2 in (1, -1)
+        //        = (c1*arr1[i]+c2*arr2[i]+i) - (c1*arr1[j]+c2*arr2[j]+j) for c1 in (1, -1), c2 in (1, -1)
+        // 1 + 2 => max(|arr1[i]-arr1[j]| + |arr2[i]-arr2[j]| + |i-j| for i != j)
+        //          = max((c1*arr1[i]+c2*arr2[i]+i) - (c1*arr1[j]+c2*arr2[j]+j)
+        //                for c1 in (1, -1), c2 in (1, -1) for i > j)
         int result = 0;
         for (const auto& c1 : {1, -1}) {
             for (const auto& c2 : {1, -1}) {
