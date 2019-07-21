@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1127%20%2F%201127-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1131%20%2F%201131-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -379,6 +379,7 @@
 1021 | [Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/) | [C++](./C++/remove-outermost-parentheses.cpp) [Python](./Python/remove-outermost-parentheses.py) | _O(n)_ | _O(1)_      | Easy         ||
 1047 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | [C++](./C++/remove-all-adjacent-duplicates-in-string.cpp) [Python](./Python/remove-all-adjacent-duplicates-in-string.py) | _O(n)_ | _O(n)_      | Easy         ||
 1063| [Number of Valid Subarrays](https://leetcode.com/problems/number-of-valid-subarrays/)| [C++](./C++/number-of-valid-subarrays.cpp)  [Python](./Python/number-of-valid-subarrays.py)| _O(n)_ | _O(n)_         | Hard           | 🔒 | Mono Stack
+1130| [Minimum Cost Tree From Leaf Values](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/)| [C++](./C++/minimum-cost-tree-from-leaf-values.cpp)  [Python](./Python/minimum-cost-tree-from-leaf-values.py)| _O(n)_ | _O(n)_         | Medium           || Mono Stack
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -648,6 +649,8 @@
 1103| [Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | [C++](./C++/distribute-candies-to-people.cpp) [Python](./Python/distribute-candies-to-people.py) | _O(n + logc)_ | _O(1)_ |  Easy | | Binary Search
 1118| [Number of Days in a Month](https://leetcode.com/problems/number-of-days-in-a-month/) | [C++](./C++/number-of-days-in-a-month.cpp) [Python](./Python/number-of-days-in-a-month.py) | _O(1)_ | _O(1)_ |  Easy | 🔒 |
 1121| [Divide Array Into Increasing Sequences](https://leetcode.com/problems/divide-array-into-increasing-sequences/) | [C++](./C++/divide-array-into-increasing-sequences.cpp) [Python](./Python/divide-array-into-increasing-sequences.py) | _O(n)_ | _O(1)_ |  Hard | 🔒 |
+1128| [Number of Equivalent Domino Pairs](https://leetcode.com/problems/number-of-equivalent-domino-pairs/) | [C++](./C++/number-of-equivalent-domino-pairs.cpp) [Python](./Python/number-of-equivalent-domino-pairs.py) | _O(n)_ | _O(n)_ |  Easy ||
+1131| [Maximum of Absolute Value Expression](https://leetcode.com/problems/maximum-of-absolute-value-expression/) | [C++](./C++/maximum-of-absolute-value-expression.cpp) [Python](./Python/maximum-of-absolute-value-expression.py) | _O(n)_ | _O(1)_ |  Medium ||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -851,6 +854,7 @@
 1036|[Escape a Large Maze](https://leetcode.com/problems/escape-a-large-maze/)| [C++](./C++/escape-a-large-maze.cpp) [Python](./Python/escape-a-large-maze.py)| _O(n^2)_ | _O(n)_ | Hard | | |
 1091|[Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)| [C++](./C++/shortest-path-in-binary-matrix.cpp) [Python](./Python/shortest-path-in-binary-matrix.py)| _O(n^2)_ | _O(n)_ | Medium | | |
 1102|[Path With Maximum Minimum Value](https://leetcode.com/problems/path-with-maximum-minimum-value/)| [C++](./C++/path-with-maximum-minimum-value.cpp) [Python](./Python/path-with-maximum-minimum-value.py)| _O((m * n) * log(m * n))_ | _O(m * n)_ | Medium | 🔒 | Binary Search, DFS, `Dijkstra's algorithm` |
+1129|[Shortest Path with Alternating Colors](https://leetcode.com/problems/shortest-path-with-alternating-colors/)| [C++](./C++/shortest-path-with-alternating-colors.cpp) [Python](./Python/shortest-path-with-alternating-colors.py)| _O(n + e)_ | _O(n + e)_ | Medium |||
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
