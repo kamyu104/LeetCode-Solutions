@@ -28,10 +28,6 @@ class Solution2(object):
         :type arr2: List[int]
         :rtype: int
         """
-        result = 0
-        for c1 in [1, -1]:
-            for c2 in [1, -1]:
-                max_i = max(c1*arr1[i] + c2*arr2[i] + i for i in xrange(len(arr1)))
-                min_j = min(c1*arr1[i] + c2*arr2[i] + i for i in xrange(len(arr1)))
-                result = max(result, max_i-min_j)
-        return result
+        return max(max(c1*arr1[i] + c2*arr2[i] + i for i in xrange(len(arr1))) -
+                   min(c1*arr1[i] + c2*arr2[i] + i for i in xrange(len(arr1)))
+                   for c1 in [1, -1] for c2 in [1, -1])
