@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1131%20%2F%201131-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1132%20%2F%201132-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -1206,6 +1206,7 @@
 1113| [Reported Posts](https://leetcode.com/problems/reported-posts/) | [MySQL](./MySQL/reported-posts.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1126| [Active Businesses](https://leetcode.com/problems/active-businesses/) | [MySQL](./MySQL/active-businesses.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1127| [User Purchase Platform](https://leetcode.com/problems//user-purchase-platform/) | [MySQL](./MySQL//user-purchase-platform.sql) | _O(n)_ | _O(n)_       | Hard           |🔒| |
+1132| [Reported Posts II](https://leetcode.com/problems/reported-posts-ii/) | [MySQL](./MySQL/reported-posts-ii.sql) | _O(m + n)_ | _O(n)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
