@@ -1,5 +1,5 @@
-// Time:  O(logn * logk)
-// Space: O(logn)
+// Time:  O(klogk)
+// Space: O(k)
 
 class Solution {
 public:
