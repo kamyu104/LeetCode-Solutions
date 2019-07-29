@@ -23,7 +23,7 @@ public:
             int level, u;
             tie(level, u) = q.front(); q.pop();
             --count;
-            result = max(result, level);
+            result = level;
             for (const auto& v : g[u]) {
                 --in_degree[v];
                 if (!in_degree[v]) {
