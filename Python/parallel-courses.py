@@ -23,7 +23,7 @@ class Solution(object):
         while q:
             level, u = q.popleft()
             count -= 1
-            result = max(result, level)
+            result = level
             for v in g[u]:
                 in_degree[v] -= 1
                 if not in_degree[v]:
