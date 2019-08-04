@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1143%20%2F%201143-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1147%20%2F%201147-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -215,6 +215,7 @@
 1093 | [Statistics from a Large Sample](https://leetcode.com/problems/statistics-from-a-large-sample/) | [C++](./C++/statistics-from-a-large-sample.cpp) [Python](./Python/statistics-from-a-large-sample.py) | _O(n)_ | _O(1)_      | Medium         ||
 1099 | [Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/) | [C++](./C++/two-sum-less-than-k.cpp) [Python](./Python/two-sum-less-than-k.py) | _O(nlogn)_ | _O(1)_      | Easy         |🔒|
 1109 | [Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/) | [C++](./C++/corporate-flight-bookings.cpp) [Python](./Python/corporate-flight-bookings.py) | _O(n)_ | _O(1)_      | Medium         || Line Sweep
+1144 | [Decrease Elements To Make Array Zigzag](https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/) | [C++](./C++/decrease-elements-to-make-array-zigzag.cpp) [Python](./Python/decrease-elements-to-make-array-zigzag.py) | _O(n)_ | _O(1)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -310,6 +311,7 @@
 1100 | [Find K-Length Substrings With No Repeated Characters](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/) | [C++](./C++/find-k-length-substrings-with-no-repeated-characters.cpp) [Python](./Python/find-k-length-substrings-with-no-repeated-characters.py) | _O(n)_ | _O(k)_      | Medium         |🔒|
 1108 | [Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/) | [C++](./C++/defanging-an-ip-address.cpp) [Python](./Python/defanging-an-ip-address.py) | _O(n)_ | _O(1)_      | Easy         ||
 1119 | [Remove Vowels from a String](https://leetcode.com/problems/remove-vowels-from-a-string/) | [C++](./C++/remove-vowels-from-a-string.cpp) [Python](./Python/remove-vowels-from-a-string.py) | _O(n)_ | _O(1)_      | Easy         |🔒|
+1147 | [Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition/) | [C++](./C++/longest-chunked-palindrome-decomposition.cpp) [Python](./Python/longest-chunked-palindrome-decomposition.py) | _O(n)_ | _O(1)_ | Hard | | `Rabin-Karp Algorithm`
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -475,6 +477,7 @@
 1104 |[Path In Zigzag Labelled Binary Tree](https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/)| [C++](./C++/path-in-zigzag-labelled-binary-tree.cpp) [Python](./Python/path-in-zigzag-labelled-binary-tree.py)| _O(logn)_ | _O(logn)_ | Easy || Math |
 1120 |[Maximum Average Subtree](https://leetcode.com/problems/maximum-average-subtree/)| [C++](./C++/maximum-average-subtree.cpp)  [Python](./Python/maximum-average-subtree.py) | _O(n)_ | _O(h)_ | Easy |🔒| DFS |
 1123 |[Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/)| [C++](./C++/lowest-common-ancestor-of-deepest-leaves.cpp)  [Python](./Python/lowest-common-ancestor-of-deepest-leaves.py) | _O(n)_ | _O(h)_ | Medium || DFS |
+1145 |[Binary Tree Coloring Game](https://leetcode.com/problems/binary-tree-coloring-game/)| [C++](./C++/binary-tree-coloring-game.cpp)  [Python](./Python/binary-tree-coloring-game.py) | _O(n)_ | _O(h)_ | Medium || DFS |
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1167,6 +1170,7 @@
 0716| [Max Stack](https://leetcode.com/problems/max-stack/) | [C++](./C++/max-stack.cpp) [Python](./Python/max-stack.py) | push: _O(logn)_<br> pop: _O(logn)_<br> popMax: _O(logn)_<br> top: _O(1)_<br> peekMax: _O(1)_ | _O(n)_ | Easy || |
 0745| [Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/) | [C++](./C++/prefix-and-suffix-search.cpp) [Python](./Python/prefix-and-suffix-search.py) | ctor: _O(w * l^2)_<br> search : _O(p + s)_ | _O(t)_ | Hard || Trie |
 0900| [RLE Iterator](https://leetcode.com/problems/rle-iterator/) | [C++](./C++/rle-iterator.cpp) [Python](./Python/rle-iterator.py) | _O(n)_ | _O(1)_ | Medium |||
+1146| [Snapshot Array](https://leetcode.com/problems/snapshot-array/) | [C++](./C++/snapshot-array.cpp) [Python](./Python/snapshot-array.py) | set: _O(1)_<br> get: _O(logn)_ | _O(n)_ | Medium |||
 
 ## Concurrency
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
