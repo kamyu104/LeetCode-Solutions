@@ -17,7 +17,7 @@ class Solution(object):
         MOD = 10**9+7
         D = 26
         result = 0
-        l, left, right, pow_D = 0, 0, 0, 1
+        left, right, l, pow_D = 0, 0, 0, 1
         for i in xrange(len(text)):
             left = (D*left + (ord(text[i])-ord('a'))) % MOD
             right = (pow_D*(ord(text[-1-i])-ord('a')) + right) % MOD
@@ -25,5 +25,5 @@ class Solution(object):
             pow_D = (pow_D*D) % MOD 
             if left == right and compare(text, l, i-l+1, len(text)-1-i):
                 result += 1
-                l, left, right, pow_D = 0, 0, 0, 1
+                left, right, l, pow_D = 0, 0, 0, 1
         return result
