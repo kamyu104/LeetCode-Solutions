@@ -9,7 +9,7 @@ public:
         static const uint64_t D = 26;
         int result = 0;
         int left = 0, right = 0, l = 0;
-        uint64_t pow_D = 1ull;
+        uint64_t pow_D = 1;
         for (int i = 0; i < text.length(); ++i) {
             left = (D * left + (text[i] - 'a')) % MOD;
             right = (pow_D * (text[text.length() - 1 - i] - 'a') + right) % MOD;
