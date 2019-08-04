@@ -6,7 +6,7 @@
 * For more problem solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 * For more challenging problem solutions, you can also see my `GoogleCodeJam`, `FacebookHackerCup` repositories.
 * Hope you enjoy the journey of learning data structures and algorithms.
-* Notes: "🔒" means subscription of [LeetCode premium membership](https://leetcode.com/subscribe/) required.
+* Notes: "🔒" means subscription of [LeetCode premium membership](https://leetcode.com/subscribe/) is required.
 
 ## Algorithms
 
