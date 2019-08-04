@@ -1,11 +1,10 @@
 # [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1147%20%2F%201147-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
-* R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks (ever the top 3 in the same field).  👼
+* R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks (ever the top 3 in the field).  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
 * For more problem solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 * For more challenging problem solutions, you can also see my `GoogleCodeJam`, `FacebookHackerCup` repositories.
 * There are new LeetCode questions every week. I'll keep updating for full summary and better solutions.
-* Thanks for starring this repository and sending thanks notes to cheer me up. I'll make this repository better and better.
 * Hope you enjoy the journey of learning data structures and algorithms.
 * Notes: "🔒" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions.
 
