@@ -7,8 +7,7 @@ class Solution(object):
         self.__N = 1000
         self.__MOD = 10**9+7
         self.__D = 26
-        self.__pow = [0]*(self.__N+1)
-        self.__pow[0] = 1
+        self.__pow = [1]*(self.__N+1)
         for i in xrange(1, len(self.__pow)):
             self.__pow[i] = self.__pow[i-1]*self.__D % self.__MOD
         
