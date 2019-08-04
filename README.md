@@ -2,9 +2,11 @@
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks.  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
-* For more solutions of questions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
+* For solutions of more questions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
+* For solutions of more challenging questions, you can also see my `Google Code Jam`, `Facebook HackerCup` repositories.
 * There are new LeetCode questions every week. I'll keep updating for full summary and better solutions.
 * Thanks for starring this repository and sending thanks notes to cheer me up. I'll make this repository better and better.
+* Hope you enjoy the journey of learning data structures and algorithms.
 * Notes: "🔒" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions.
 
 ## Algorithms
