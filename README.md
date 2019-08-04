@@ -2,9 +2,9 @@
 
 * R.I.P. to my old Leetcode repository, where there were ever `5.7k+` stars and `2.2k+` forks (ever the top 3 in the field).  👼
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
+* There are new LeetCode questions every week. I'll keep updating for full summary and better solutions.
 * For more problem solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 * For more challenging problem solutions, you can also see my `GoogleCodeJam`, `FacebookHackerCup` repositories.
-* There are new LeetCode questions every week. I'll keep updating for full summary and better solutions.
 * Hope you enjoy the journey of learning data structures and algorithms.
 * Notes: "🔒" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions.
 
