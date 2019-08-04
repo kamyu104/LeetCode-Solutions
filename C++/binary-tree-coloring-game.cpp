@@ -29,8 +29,7 @@ private:
         const auto& left = count(root->left, x, left_right);
         const auto& right = count(root->right, x, left_right);
         if (root->val == x) {
-            left_right->first = left;
-            left_right->second = right;
+            *left_right = make_pair(left, right);
         }
         return left + right + 1;
     }
