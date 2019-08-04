@@ -4,23 +4,21 @@
 // Rabin-Karp Algorithm
 class Solution {
 public:
-    Solution() : pow_(N_ + 1, 1) {
-        for (int i = 1; i < pow_.size(); ++i) {
-            pow_[i] = (pow_[i - 1] * D_) % MOD_;
-        }
-    }
-
-    int longestDecomposition(string text) {
+    int longestDecomposition(string text) {  
+        static const uint64_t MOD = 1e9 + 7;
+        static const uint64_t D = 26;
         int result = 0;
-        int l = 0, left = 0, right = 0;
+        int left = 0, right = 0, l = 0;
+        uint64_t pow_D = 1ull;
         for (int i = 0; i < text.length(); ++i) {
+            left = (D * left + (text[i] - 'a')) % MOD;
+            right = (pow_D * (text[text.length() - 1 - i] - 'a') + right) % MOD;
             ++l;
-            left = (pow_[1] * left + (text[i] - 'a')) % MOD_;
-            right = (pow_[l - 1] * (text[text.length() - 1 - i] - 'a') + right) % MOD_;
+            pow_D = (pow_D * D) % MOD;
             if (left == right &&
                 compare(text, l, i - l + 1, text.length() - 1 - i)) {
                 ++result;
-                l = 0, left = 0, right = 0;
+                left = 0, right = 0, l = 0, pow_D = 1;
             }
         }
         return result;
@@ -35,9 +33,4 @@ private:
         }
         return true;
     }
-
-    vector<uint64_t> pow_;
-    static const int N_ = 1000;
-    static const uint64_t MOD_ = 1e9 + 7;
-    static const uint64_t D_ = 26;
 };
