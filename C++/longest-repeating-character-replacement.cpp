@@ -4,22 +4,17 @@
 class Solution {
 public:
     int characterReplacement(string s, int k) {
-        vector<int> cache(26);
-
-        int i = 0, j = 0, times = k, res = 0;
-        for (; j < s.size(); ++j) {
-            ++cache[s[j] - 'A'];
-            if (s[j] != s[i]) {
-                --times;
-                if (times < 0) {
-                    res = max(res, j - i);
-                    while (i < j && times < 0) {
-                        --cache[s[i++] - 'A'];
-                        times = k - (j - i + 1 - cache[s[i] - 'A']);
-                    }
-                }
+        int result = 0, max_count = 0;
+        unordered_map<char, int> count;
+        for (int i = 0; i < s.length(); ++i) {
+            ++count[s[i]];
+            max_count = max(max_count, count[s[i]]);
+            if (result - max_count >= k) {
+                --count[s[i-result]];
+            } else {
+                ++result;
             }
         }
-        return max(res, j - i + min(i, times));
+        return result;
     }
 };
