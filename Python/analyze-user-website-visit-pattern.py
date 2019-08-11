@@ -2,6 +2,7 @@
 # Space: O(n^3)
 
 import collections
+import itertools
 
 
 class Solution(object):
