@@ -4,6 +4,7 @@
 
 import collections
 import random
+import bisect
 
 
 class MajorityChecker(object):
