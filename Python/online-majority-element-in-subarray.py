@@ -34,3 +34,38 @@ class MajorityChecker(object):
             if r-l >= threshold:
                 return i
         return -1
+
+ 
+# Time:  ctor:  O(n)
+#        query: O(nlogn)
+# Space: O(n)
+import collections
+import bisect
+
+
+class MajorityChecker2(object):
+
+    def __init__(self, arr):
+        """
+        :type arr: List[int]
+        """
+        self.__arr = arr
+        self.__inv_idx = collections.defaultdict(list)
+        for i, x in enumerate(self.__arr):
+            self.__inv_idx[x].append(i)
+
+    def query(self, left, right, threshold):
+        """
+        :type left: int
+        :type right: int
+        :type threshold: int
+        :rtype: int
+        """
+        for i, group in self.__inv_idx.iteritems():
+            if len(group) < threshold:
+                continue
+            l = bisect.bisect_left(group, left)
+            r = bisect.bisect_right(group, right)
+            if r-l >= threshold:
+                return i
+        return -1
