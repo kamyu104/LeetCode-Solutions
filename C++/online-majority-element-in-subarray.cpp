@@ -37,3 +37,123 @@ private:
     unordered_map<int, vector<int>> inv_idx_;
     default_random_engine gen_;
 };
+
+// Time:  ctor:  O(nlogn)
+//        query: O((logn)^2)
+// Space: O(n)
+class MajorityChecker2 {
+private:
+    struct SegmentTree {
+    public:
+        SegmentTree(const vector<int>& nums,
+                    const function<int(int, int, int)>& count)
+          : nums_(nums)
+          , count_(count)
+        {
+            int size = 1;
+            while (size <= nums_.size()) {
+                size *= 2;
+            }
+            if (nums_.size() & (nums_.size() - 1)) {
+                size *= 2;
+            }
+            tree_ = vector<int>(size - 1, -1);
+        }
+        
+        void build() {
+            constructTree(0, nums_.size() - 1, 0);
+        }
+
+        pair<int, int> query(int i, int j) const {
+            return queryRange(i, j, 0, nums_.size() - 1, 0);
+        }
+
+    private:
+        void constructTree(int left, int right, int idx) {
+            if (left > right) {
+                 return;
+            }
+            if (left == right) {
+                tree_[idx] = nums_[left];
+                return;
+            }
+            const auto& mid = left + (right - left) / 2;
+            constructTree(left, mid, idx * 2 + 1);
+            constructTree(mid+1, right, idx * 2 + 2);
+            if (tree_[idx * 2 + 1] != -1 &&
+                count_(tree_[idx * 2 + 1], left, right) * 2 > right - left + 1) {
+                tree_[idx] = tree_[idx * 2 + 1];
+            } else if (tree_[idx * 2 + 2] != -1 &&
+                       count_(tree_[idx * 2 + 2], left, right) * 2 > right - left + 1) {
+                tree_[idx] = tree_[idx * 2 + 2];
+            }
+        }
+    
+        pair<int, int> queryRange(int range_left, int range_right,
+                                  int left, int right, int idx) const {
+            if (left > right) {
+                return {-1, -1};
+            }
+            if (right < range_left || left > range_right) {
+                return {-1, -1};
+            }
+            if (range_left <= left && right <= range_right) {
+                cout << idx << endl;
+                if (tree_[idx] != -1) {
+                    const auto& c = count_(tree_[idx], range_left, range_right);
+                    if (c * 2 > range_right - range_left + 1) {
+                        return {tree_[idx], c};
+                    }
+                }
+            } else {
+                const auto& mid = left + (right - left) / 2;
+                auto result = queryRange(range_left, range_right, left, mid, idx * 2 + 1);
+                if (result.first != -1) {
+                    return result;
+                }
+                result = queryRange(range_left, range_right, mid + 1, right, idx * 2 + 2);
+                if (result.first != -1) {
+                    return result;
+                }
+            }
+            return {-1, -1};
+        }
+        
+    private:
+        const vector<int>& nums_;
+        const function<int(int, int, int)> count_;
+        vector<int> tree_;
+    };
+
+    int count(const unordered_map<int, vector<int>>& inv_idx, int m, int left, int right) {
+        const auto& l = lower_bound(inv_idx_[m].cbegin(), inv_idx_[m].cend(), left);
+        const auto& r = upper_bound(inv_idx_[m].cbegin(), inv_idx_[m].cend(), right);
+        return r - l;
+    }
+
+public:
+    MajorityChecker2(vector<int>& arr)
+      : arr_(arr)
+      , segment_tree_(arr, bind(&MajorityChecker::count, this, cref(inv_idx_),
+                                placeholders::_1,
+                                placeholders::_2,
+                                placeholders::_3)) {
+        for (int i = 0; i < arr_.size(); ++i) {
+            inv_idx_[arr_[i]].push_back(i);
+        }
+        segment_tree_.build();
+    }
+    
+    int query(int left, int right, int threshold) {
+        const auto& result = segment_tree_.query(left, right);
+        if (result.second >= threshold) {
+            return result.first;
+        }
+        return -1;
+    }
+
+private:
+    const vector<int>& arr_;
+    unordered_map<int, vector<int>> inv_idx_;
+    SegmentTree segment_tree_;
+};
