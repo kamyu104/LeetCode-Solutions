@@ -111,39 +111,36 @@ private:
     public:
         SegmentTree(const vector<int>& nums,
                     const function<int(int, int, int)>& count)
-          : nums_(nums)
+          : original_length_(nums.size())
           , count_(count)
         {
             int size = 1;
-            while (size <= nums_.size()) {
+            while (size <= original_length_) {
                 size *= 2;
             }
-            if (nums_.size() & (nums_.size() - 1)) {
+            if (original_length_ & (original_length_ - 1)) {
                 size *= 2;
             }
             tree_ = vector<int>(size - 1, -1);
-        }
-        
-        void build() {
-            constructTree(0, nums_.size() - 1, 0);
+            constructTree(nums, 0, original_length_ - 1, 0);
         }
 
         pair<int, int> query(int i, int j) const {
-            return queryRange(i, j, 0, nums_.size() - 1, 0);
+            return queryRange(i, j, 0, original_length_- 1, 0);
         }
 
     private:
-        void constructTree(int left, int right, int idx) {
+        void constructTree(const vector<int>& nums, int left, int right, int idx) {
             if (left > right) {
                  return;
             }
             if (left == right) {
-                tree_[idx] = nums_[left];
+                tree_[idx] = nums[left];
                 return;
             }
             const auto& mid = left + (right - left) / 2;
-            constructTree(left, mid, idx * 2 + 1);
-            constructTree(mid+1, right, idx * 2 + 2);
+            constructTree(nums, left, mid, idx * 2 + 1);
+            constructTree(nums, mid+1, right, idx * 2 + 2);
             if (tree_[idx * 2 + 1] != -1 &&
                 count_(tree_[idx * 2 + 1], left, right) * 2 > right - left + 1) {
                 tree_[idx] = tree_[idx * 2 + 1];
@@ -184,7 +181,7 @@ private:
         }
         
     private:
-        const vector<int>& nums_;
+        const int original_length_;
         const function<int(int, int, int)> count_;
         vector<int> tree_;
     };
@@ -198,18 +195,19 @@ private:
 public:
     MajorityChecker3(vector<int>& arr)
       : arr_(arr)
-      , segment_tree_(arr, bind(&MajorityChecker3::count, this, cref(inv_idx_),
-                                placeholders::_1,
-                                placeholders::_2,
-                                placeholders::_3)) {
+    {
         for (int i = 0; i < arr_.size(); ++i) {
             inv_idx_[arr_[i]].push_back(i);
         }
-        segment_tree_.build();
+        segment_tree_ = make_unique<SegmentTree>(arr,
+                            bind(&MajorityChecker3::count, this, cref(inv_idx_),
+                                 placeholders::_1,
+                                 placeholders::_2,
+                                 placeholders::_3));
     }
     
     int query(int left, int right, int threshold) {
-        const auto& result = segment_tree_.query(left, right);
+        const auto& result = segment_tree_->query(left, right);
         if (result.second >= threshold) {
             return result.first;
         }
@@ -219,5 +217,5 @@ public:
 private:
     const vector<int>& arr_;
     unordered_map<int, vector<int>> inv_idx_;
-    SegmentTree segment_tree_;
+    unique_ptr<SegmentTree> segment_tree_;
 };
