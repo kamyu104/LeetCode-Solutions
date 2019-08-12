@@ -98,7 +98,7 @@ class MajorityChecker2(object):
 import functools
 
 
-class SegmentTreeRecu3(object):  # 0-based index
+class SegmentTreeRecu(object):  # 0-based index
     def __init__(self, nums, count):
         """
         initialize your data structure here.
@@ -110,9 +110,6 @@ class SegmentTreeRecu3(object):  # 0-based index
         self.__tree = [-1 for _ in range(self.__tree_length)]
         self.__count = count
         self.__constructTree(nums, 0, self.__original_length-1, 0)
-
-    def update(self, i, j, val):
-        self.__updateTree(val, i, j, 0, self.__original_length-1, 0)
 
     def query(self, i, j):
         return self.__queryRange(i, j, 0, self.__original_length-1, 0)
