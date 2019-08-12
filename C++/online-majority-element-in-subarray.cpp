@@ -38,10 +38,74 @@ private:
     default_random_engine gen_;
 };
 
+// Time:  ctor:  O(n)
+//        query: O(sqrt(n) * logn)
+// Space: O(n)
+class MajorityChecker2 {
+public:
+    MajorityChecker2(vector<int>& arr)
+      : arr_(arr)
+      , bound_(round(sqrt(arr_.size())))
+    {
+        for (int i = 0; i < arr_.size(); ++i) {
+            inv_idx_[arr_[i]].emplace_back(i);
+        }
+        for (const auto& [i, group] : inv_idx_) {
+            if (group.size() >= bound_) {
+                majorities_.emplace_back(i);
+            }
+        }
+    }
+    
+    int query(int left, int right, int threshold) {
+        if (right - left + 1 < bound_) {
+            const auto& m = boyer_moore_majority_vote(arr_, left, right);
+            if (count(inv_idx_, m, left, right) >= threshold) {
+                return m;
+            }
+        } else {
+            for (const auto& m : majorities_) {
+                if (count(inv_idx_, m, left, right) >= threshold) {
+                    return m;
+                }
+            }
+        }
+        return -1;
+    }
+
+private:
+    int count(const unordered_map<int, vector<int>>& inv_idx, int m, int left, int right) {
+        const auto& l = lower_bound(inv_idx_[m].cbegin(), inv_idx_[m].cend(), left);
+        const auto& r = upper_bound(inv_idx_[m].cbegin(), inv_idx_[m].cend(), right);
+        return r - l;
+    }
+    
+    int boyer_moore_majority_vote(const vector<int>& nums, int left, int right) {
+        int m = nums[left], cnt = 1;
+        for (int i = left; i <= right; ++i) {
+            if (m == nums[i]) {
+                ++cnt;
+            } else {
+                --cnt;
+                if (cnt == 0) {
+                    m = nums[i];
+                    cnt = 1;
+                }
+            }
+        }
+        return m;
+    }
+
+    const vector<int>& arr_;
+    const int bound_;
+    unordered_map<int, vector<int>> inv_idx_;
+    vector<int> majorities_;
+};
+
 // Time:  ctor:  O(nlogn)
 //        query: O((logn)^2)
 // Space: O(n)
-class MajorityChecker2 {
+class MajorityChecker3 {
 private:
     struct SegmentTree {
     public:
@@ -132,9 +196,9 @@ private:
     }
 
 public:
-    MajorityChecker2(vector<int>& arr)
+    MajorityChecker3(vector<int>& arr)
       : arr_(arr)
-      , segment_tree_(arr, bind(&MajorityChecker::count, this, cref(inv_idx_),
+      , segment_tree_(arr, bind(&MajorityChecker3::count, this, cref(inv_idx_),
                                 placeholders::_1,
                                 placeholders::_2,
                                 placeholders::_3)) {
