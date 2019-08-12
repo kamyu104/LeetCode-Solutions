@@ -27,9 +27,9 @@ class MajorityChecker(object):
         :type threshold: int
         :rtype: int
         """
-        def count(inv_idx, v, left, right):
-            return bisect.bisect_right(inv_idx[v], right) - \
-                   bisect.bisect_left(inv_idx[v], left)
+        def count(inv_idx, m, left, right):
+            return bisect.bisect_right(inv_idx[m], right) - \
+                   bisect.bisect_left(inv_idx[m], left)
 
         for _ in xrange(self.__K):
             m = self.__arr[random.randint(left, right)]
@@ -65,9 +65,9 @@ class MajorityChecker2(object):
         :type threshold: int
         :rtype: int
         """
-        def count(inv_idx, v, left, right):
-            return bisect.bisect_right(inv_idx[v], right) - \
-                   bisect.bisect_left(inv_idx[v], left)
+        def count(inv_idx, m, left, right):
+            return bisect.bisect_right(inv_idx[m], right) - \
+                   bisect.bisect_left(inv_idx[m], left)
 
         def boyer_moore_majority_vote(nums, left, right):
             m, cnt = nums[left], 1
@@ -157,9 +157,9 @@ class MajorityChecker3(object):
         """
         :type arr: List[int]
         """
-        def count(inv_idx, v, left, right):
-            return bisect.bisect_right(inv_idx[v], right) - \
-                   bisect.bisect_left(inv_idx[v], left)
+        def count(inv_idx, m, left, right):
+            return bisect.bisect_right(inv_idx[m], right) - \
+                   bisect.bisect_left(inv_idx[m], left)
 
         self.__arr = arr
         self.__inv_idx = collections.defaultdict(list)
