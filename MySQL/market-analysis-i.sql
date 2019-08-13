@@ -1,5 +1,5 @@
-# Time:  O(n + m)
-# Space: O(n + m)
+# Time:  O(m + n)
+# Space: O(m + n)
 
 SELECT u.user_id                   AS buyer_id, 
        u.join_date, 
