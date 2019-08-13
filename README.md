@@ -1232,7 +1232,7 @@
 1142| [User Activity for the Past 30 Days II](https://leetcode.com/problems/user-activity-for-the-past-30-days-ii/) | [MySQL](./MySQL/user-activity-for-the-past-30-days-ii.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1148| [Article Views I](https://leetcode.com/problems/article-views-i/) | [MySQL](./MySQL/article-views-i.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
 1149| [Article Views II](https://leetcode.com/problems/article-views-ii/) | [MySQL](./MySQL/article-views-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
-1158| [Market Analysis I](https://leetcode.com/problems/market-analysis-i/) | [MySQL](./MySQL/market-analysis-i.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
+1158| [Market Analysis I](https://leetcode.com/problems/market-analysis-i/) | [MySQL](./MySQL/market-analysis-i.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒| |
 1159| [Market Analysis II](https://leetcode.com/problems/market-analysis-ii/) | [MySQL](./MySQL/market-analysis-ii.sql) | _O(m + n)_ | _O(m + n)_       | Hard           |🔒| |
 
 ## Shell Script
