@@ -2,11 +2,7 @@
 # Space: O(m + n)
 
 SELECT user_id AS seller_id, 
-       CASE 
-              WHEN item_brand != favorite_brand THEN 'no' 
-              WHEN item_brand IS NULL THEN 'no' 
-              ELSE 'yes' 
-       END AS 2nd_item_fav_brand 
+       IF(item_brand = favorite_brand, 'yes', 'no') AS 2nd_item_fav_brand 
 FROM   (SELECT user_id, 
                favorite_brand, 
                (SELECT    item_id
