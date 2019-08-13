@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1147%20%2F%201147-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1159%20%2F%201159-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were `5.7k+` stars and `2.2k+` forks (ever the top 3 in the field).
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -1222,6 +1222,10 @@
 1132| [Reported Posts II](https://leetcode.com/problems/reported-posts-ii/) | [MySQL](./MySQL/reported-posts-ii.sql) | _O(m + n)_ | _O(n)_       | Medium           |🔒| |
 1141| [User Activity for the Past 30 Days I](https://leetcode.com/problems/user-activity-for-the-past-30-days-i/) | [MySQL](./MySQL/user-activity-for-the-past-30-days-i.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1142| [User Activity for the Past 30 Days II](https://leetcode.com/problems/user-activity-for-the-past-30-days-ii/) | [MySQL](./MySQL/user-activity-for-the-past-30-days-ii.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
+1148| [Article Views I](https://leetcode.com/problems/article-views-i/) | [MySQL](./MySQL/article-views-i.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
+1149| [Article Views II](https://leetcode.com/problems/article-views-ii/) | [MySQL](./MySQL/article-views-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
+1158| [Market Analysis I](https://leetcode.com/problems/market-analysis-i/) | [MySQL](./MySQL/market-analysis-i.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
+1159| [Market Analysis II](https://leetcode.com/problems/market-analysis-ii/) | [MySQL](./MySQL/market-analysis-ii.sql) | _O(n + m)_ | _O(n + m)_       | Hard           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
