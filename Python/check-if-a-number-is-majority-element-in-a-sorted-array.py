@@ -20,4 +20,4 @@ class Solution(object):
 
         left = bisect.bisect_left(nums, target)
         right= bisect.bisect_right(nums, target)
-        return right-left > len(nums)//2
+        return (right-left)*2 > len(nums)
