@@ -219,3 +219,78 @@ private:
     unordered_map<int, vector<int>> inv_idx_;
     unique_ptr<SegmentTree> segment_tree_;
 };
+
+// Time:  ctor:  O(n)
+//        query: O(sqrt(n) * logn)
+// Space: O(n)
+class MajorityChecker4 {
+public:
+    MajorityChecker4(vector<int>& arr)
+      : arr_(arr)
+      , bucket_size_(round(sqrt(arr_.size())))
+    {
+        for (int i = 0; i < arr_.size(); ++i) {
+            inv_idx_[arr_[i]].emplace_back(i);
+        }
+        for (int left = 0; left < arr_.size(); left += bucket_size_) {
+            const auto right = min(left + bucket_size_ - 1, int(arr_.size()) - 1);
+            bucket_majorities_.emplace_back(boyer_moore_majority_vote(arr_, left, right));
+        }
+    }
+    
+    int query(int left, int right, int threshold) {
+        int l = left / bucket_size_;
+        int r = right / bucket_size_;
+        if (l == r) {
+            const auto& m = boyer_moore_majority_vote(arr_, left, right);
+            if (count(inv_idx_, m, left, right) >= threshold) {
+                return m;
+            }
+            return -1;
+        }
+        else {
+            int m = boyer_moore_majority_vote(arr_, left, (l + 1) * bucket_size_ - 1);
+            if (count(inv_idx_, m, left, right) >= threshold) {
+                return m;
+            }
+            m = boyer_moore_majority_vote(arr_, r * bucket_size_, right);
+            if (count(inv_idx_, m, left, right) >= threshold) {
+                return m;
+            }
+            for (int i = l + 1; i < r; ++i) {
+                if (count(inv_idx_, bucket_majorities_[i], left, right) >= threshold) {
+                    return bucket_majorities_[i];
+                }
+            }
+            return -1;
+        }
+    }
+
+private:
+    int count(const unordered_map<int, vector<int>>& inv_idx, int m, int left, int right) {
+        const auto& l = lower_bound(inv_idx_[m].cbegin(), inv_idx_[m].cend(), left);
+        const auto& r = upper_bound(inv_idx_[m].cbegin(), inv_idx_[m].cend(), right);
+        return r - l;
+    }
+    
+    int boyer_moore_majority_vote(const vector<int>& nums, int left, int right) {
+        int m = nums[left], cnt = 1;
+        for (int i = left; i <= right; ++i) {
+            if (m == nums[i]) {
+                ++cnt;
+            } else {
+                --cnt;
+                if (cnt == 0) {
+                    m = nums[i];
+                    cnt = 1;
+                }
+            }
+        }
+        return m;
+    }
+
+    const vector<int>& arr_;
+    const int bucket_size_;
+    unordered_map<int, vector<int>> inv_idx_;
+    vector<int> bucket_majorities_;
+};
