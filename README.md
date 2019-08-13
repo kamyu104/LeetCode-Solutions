@@ -552,7 +552,7 @@
 1124| [Longest Well-Performing Interval](https://leetcode.com/problems/longest-well-performing-interval/) |[C++](./C++/longest-well-performing-interval.cpp)  [Python](./Python/longest-well-performing-interval.py) | _O(n)_ | _O(n)_ | Medium         ||
 1133| [Largest Unique Number](https://leetcode.com/problems/largest-unique-number/) | [C++](./C++/largest-unique-number.cpp) [Python](./Python/largest-unique-number.py) | _O(n)_| _O(n)_| Easy |🔒| Hash |
 1152| [Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern/) | [C++](./C++/analyze-user-website-visit-pattern.cpp) [Python](./Python/analyze-user-website-visit-pattern.py) | _O(n^3)_| _O(n^3)_| Medium |🔒| Hash |
-1153| [String Transforms Into Another String](https://leetcode.com/problems/string-transforms-into-another-string/) | [C++](./C++/string-transforms-into-another-string.cpp) [Python](./Python/string-transforms-into-another-string.py) | _O(n^3)_| _O(n^3)_| Hard |🔒| Hash |
+1153| [String Transforms Into Another String](https://leetcode.com/problems/string-transforms-into-another-string/) | [C++](./C++/string-transforms-into-another-string.cpp) [Python](./Python/string-transforms-into-another-string.py) | _O(n)_| _O(1)_| Hard |🔒| Hash |
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
