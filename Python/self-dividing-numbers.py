@@ -15,10 +15,6 @@ class Solution(object):
                 if r == 0 or (num%r) != 0:
                     return False
             return True
-
-        result = []
-        for num in xrange(left, right+1):
-            if isDividingNumber(num):
-                result.append(num)
-        return result
+        
+        return [num for num in xrange(left, right+1) if isDividingNumber(num)]
 
