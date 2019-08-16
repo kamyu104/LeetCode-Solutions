@@ -32,4 +32,4 @@ class Solution2(object):
         :rtype: List[int]
         """
         return [num for num in xrange(left, right+1) \
-                if not any(itertools.imap(lambda x: int(x) == 0 or num%int(x) != 0,  str(num)))]
+                if not any(itertools.imap(lambda x: int(x) == 0 or num%int(x) != 0, str(num)))]
