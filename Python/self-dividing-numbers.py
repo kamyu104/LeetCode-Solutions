@@ -29,5 +29,5 @@ class Solution2(object):
         :rtype: List[int]
         """
         return [num for num in xrange(left, right+1) \
-                if not any(map(lambda x: x == 0 or num % x != 0, map(int, list(str(num)))))]
+                if not any(map(lambda x: x == 0 or num%x != 0, map(int, list(str(num)))))]
 
