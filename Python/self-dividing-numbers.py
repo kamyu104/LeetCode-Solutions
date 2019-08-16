@@ -21,6 +21,9 @@ class Solution(object):
 
 # Time:  O(nlogr) = O(n)
 # Space: O(logr) = O(1)
+import itertools
+
+
 class Solution2(object):
     def selfDividingNumbers(self, left, right):
         """
@@ -29,5 +32,5 @@ class Solution2(object):
         :rtype: List[int]
         """
         return [num for num in xrange(left, right+1) \
-                if not any(map(lambda x: x == 0 or num%x != 0, map(int, list(str(num)))))]
-
+                if not any(itertools.imap(lambda x: x == 0 or num%x != 0,
+                                          itertools.imap(int, list(str(num)))))]
