@@ -11,9 +11,9 @@ class Solution(object):
         def isDividingNumber(num):
             n = num
             while n > 0:
-                if (n%10) == 0 or (num%(n%10)) != 0:
+                n, r = divmod(n, 10)
+                if r == 0 or (num%r) != 0:
                     return False
-                n /= 10
             return True
 
         result = []
