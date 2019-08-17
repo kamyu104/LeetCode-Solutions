@@ -7,18 +7,17 @@ class Solution(object):
     :type k: int
     :rtype: void Do not return anything, modify nums in-place instead.
     """
-
     def rotate(self, nums, k):
-        k %= len(nums)
-        self.reverse(nums, 0, len(nums))
-        self.reverse(nums, 0, k)
-        self.reverse(nums, k, len(nums))
+        def reverse(nums, start, end):
+            while start < end:
+                nums[start], nums[end - 1] = nums[end - 1], nums[start]
+                start += 1
+                end -= 1
 
-    def reverse(self, nums, start, end):
-        while start < end:
-            nums[start], nums[end - 1] = nums[end - 1], nums[start]
-            start += 1
-            end -= 1
+        k %= len(nums)
+        reverse(nums, 0, len(nums))
+        reverse(nums, 0, k)
+        reverse(nums, k, len(nums))
 
 
 # Time:  O(n)
