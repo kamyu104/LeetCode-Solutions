@@ -8,6 +8,7 @@ public:
         for (size_t i = 0; i < s.length(); ++i) {
             count[s[i]].emplace_back(i);
         }
+
         const auto& max_c = max_element(count.cbegin(), count.cend(),
                                         [](const auto& a, const auto& b) {
                                             return a.first < b.first;
@@ -16,12 +17,11 @@ public:
         for (const auto& i : count[max_c]) {
             starts[i] = i + 1;
         }
-		
         while (starts.size() > 1) {
             unordered_set<int> lookup;
             unordered_map<char, vector<int>> next_count;
             for (const auto& [start, end] : starts) {
-                if (end == s.length())  {
+                if (end == s.length())  {  // finished
                     lookup.emplace(start);
                     continue;
                 }
