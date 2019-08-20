@@ -13,11 +13,11 @@ class Solution(object):
         count = collections.defaultdict(list)
         for i in xrange(len(s)):
             count[s[i]].append(i)
+
         max_c = max(count.iterkeys())
         starts = {}
         for i in count[max_c]:
             starts[i] = i+1
-		
         while len(starts)-1 > 0:
             lookup = set()
             next_count = collections.defaultdict(list)
