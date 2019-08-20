@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1159%20%2F%201159-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1164%20%2F%201164-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were `5.7k+` stars and `2.2k+` forks (ever the top 3 in the field).
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -553,6 +553,7 @@
 1133| [Largest Unique Number](https://leetcode.com/problems/largest-unique-number/) | [C++](./C++/largest-unique-number.cpp) [Python](./Python/largest-unique-number.py) | _O(n)_| _O(n)_| Easy |🔒| Hash |
 1152| [Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern/) | [C++](./C++/analyze-user-website-visit-pattern.cpp) [Python](./Python/analyze-user-website-visit-pattern.py) | _O(n^3)_| _O(n^3)_| Medium |🔒| Hash |
 1153| [String Transforms Into Another String](https://leetcode.com/problems/string-transforms-into-another-string/) | [C++](./C++/string-transforms-into-another-string.cpp) [Python](./Python/string-transforms-into-another-string.py) | _O(n)_| _O(1)_| Hard |🔒| Hash |
+1160| [Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) |[C++](./C++/find-words-that-can-be-formed-by-characters.cpp)  [Python](./Python/find-words-that-can-be-formed-by-characters.py) | _O(n)_ | _O(1)_ | Easy         ||
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -869,6 +870,9 @@
 1102|[Path With Maximum Minimum Value](https://leetcode.com/problems/path-with-maximum-minimum-value/)| [C++](./C++/path-with-maximum-minimum-value.cpp) [Python](./Python/path-with-maximum-minimum-value.py)| _O((m * n) * log(m * n))_ | _O(m * n)_ | Medium | 🔒 | Binary Search, DFS, `Dijkstra's algorithm` |
 1129|[Shortest Path with Alternating Colors](https://leetcode.com/problems/shortest-path-with-alternating-colors/)| [C++](./C++/shortest-path-with-alternating-colors.cpp) [Python](./Python/shortest-path-with-alternating-colors.py)| _O(n + e)_ | _O(n + e)_ | Medium |||
 1136| [Parallel Courses](https://leetcode.com/problems/parallel-courses/)| [C++](./C++/parallel-courses.cpp) [Python](./Python/parallel-courses.py)   | _O(\|V\| + \|E\|)_         | _O(\|E\|)_          | Hard         |🔒| Topological Sort |
+1161|[Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)| [C++](./C++/maximum-level-sum-of-a-binary-tree.cpp) [Python](./Python/maximum-level-sum-of-a-binary-tree.py)| _O(n)_ | _O(w)_ | Medium | | DFS |
+1162|[As Far from Land as Possible](https://leetcode.com/problems/as-far-from-land-as-possible/)| [C++](./C++/as-far-from-land-as-possible.cpp) [Python](./Python/as-far-from-land-as-possible.py)| _O(m * n)_ | _O(m * n)_ | Medium | | |
+1163|[Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order/)| [C++](./C++/last-substring-in-lexicographical-order.cpp) [Python](./Python/last-substring-in-lexicographical-order.py)| _O(n)_ | _O(n)_ | Hard | | |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1234,6 +1238,7 @@
 1149| [Article Views II](https://leetcode.com/problems/article-views-ii/) | [MySQL](./MySQL/article-views-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
 1158| [Market Analysis I](https://leetcode.com/problems/market-analysis-i/) | [MySQL](./MySQL/market-analysis-i.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒| |
 1159| [Market Analysis II](https://leetcode.com/problems/market-analysis-ii/) | [MySQL](./MySQL/market-analysis-ii.sql) | _O(m + n)_ | _O(m + n)_       | Hard           |🔒| |
+1164| [Product Price at a Given Date](https://leetcode.com/problems/product-price-at-a-given-date/) | [MySQL](./MySQL/product-price-at-a-given-date.sql) | _O(mlogn)_ | _O(m)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
