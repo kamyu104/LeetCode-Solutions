@@ -1,4 +1,4 @@
-// Time:  O(n)
+// Time:  O(m * n), m is the length of chars, n is the number of words
 // Space: O(1)
 
 class Solution {
@@ -7,7 +7,8 @@ public:
         const auto& count = counter(chars);
         int result = 0;
         for (const auto& word : words) {
-            if (check(word, count)) {
+            if (word.length() <= chars.length() &&
+                check(word, count)) {
                 result += word.length();
             }
         }
@@ -36,7 +37,7 @@ private:
     }
 };
 
-// Time:  O(n)
+// Time:  O(m * n), m is the length of chars, mln is the number of words
 // Space: O(1)
 class Solution2 {
 public:
@@ -44,7 +45,8 @@ public:
         const auto& count = counter(chars);
         int result = 0;
         for (const auto& word : words) {
-            if (check(counter(word), count)) {
+            if (word.length() <= chars.length() &&
+                check(counter(word), count)) {
                 result += word.length();
             }
         }
