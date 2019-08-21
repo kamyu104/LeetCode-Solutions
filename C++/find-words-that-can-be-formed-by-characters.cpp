@@ -37,7 +37,7 @@ private:
     }
 };
 
-// Time:  O(m * n), m is the length of chars, mln is the number of words
+// Time:  O(m * n), m is the length of chars, n is the number of words
 // Space: O(1)
 class Solution2 {
 public:
