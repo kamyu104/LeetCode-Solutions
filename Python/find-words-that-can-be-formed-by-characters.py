@@ -11,13 +11,13 @@ class Solution(object):
         :type chars: str
         :rtype: int
         """
-        def check(word, chars, count2):
+        def check(word, chars, count):
             if len(word) > len(chars):
                 return False
-            count1 = collections.Counter()
+            curr_count = collections.Counter()
             for c in word:
-                count1[c] += 1
-                if c not in count2 or count2[c] < count1[c]:
+                curr_count[c] += 1
+                if c not in count or count[c] < curr_count[c]:
                     return False
             return True
         
