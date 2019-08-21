@@ -22,17 +22,4 @@ class Solution(object):
         count = collections.Counter(chars)
         return sum(len(word) for word in words
                    if len(word) <= len(chars) and check(word, count))
-    
 
-# Time:  O(m * n), m is the length of chars, n is the number of words
-# Space: O(1)
-class Solution2(object):
-    def countCharacters(self, words, chars):
-        """
-        :type words: List[str]
-        :type chars: str
-        :rtype: int
-        """
-        count = collections.Counter(chars)
-        return sum(len(word) for word in words
-                   if len(word) <= len(chars) and not (collections.Counter(word)-count))
