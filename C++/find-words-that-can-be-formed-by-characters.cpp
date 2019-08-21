@@ -24,14 +24,14 @@ private:
     }
     
     bool check(const string& word, const string& chars,
-               const unordered_map<char, int>& count2) {
+               const unordered_map<char, int>& count) {
         if (word.length() > chars.length()) {
             return false;
         }
-        unordered_map<char, int> count1;
+        unordered_map<char, int> curr_count;
         for (const auto& c : word) {
-            ++count1[c];
-            if (!count2.count(c) || count2.at(c) < count1[c]) {
+            ++curr_count[c];
+            if (!count.count(c) || count.at(c) < curr_count[c]) {
                 return false;
             }
         }
