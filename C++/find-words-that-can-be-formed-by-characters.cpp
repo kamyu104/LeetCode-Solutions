@@ -36,6 +36,8 @@ private:
     }
 };
 
+// Time:  O(n)
+// Space: O(1)
 class Solution2 {
 public:
     int countCharacters(vector<string>& words, string chars) {
