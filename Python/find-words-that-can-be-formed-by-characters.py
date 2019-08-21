@@ -15,7 +15,7 @@ class Solution(object):
             count1 = collections.Counter()
             for c in s:
                 count1[c] += 1
-                if count2[c] < count1[c]:
+                if c not in count2 or count2[c] < count1[c]:
                     return False
             return True
         
