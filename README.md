@@ -553,7 +553,7 @@
 1133| [Largest Unique Number](https://leetcode.com/problems/largest-unique-number/) | [C++](./C++/largest-unique-number.cpp) [Python](./Python/largest-unique-number.py) | _O(n)_| _O(n)_| Easy |🔒| Hash |
 1152| [Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern/) | [C++](./C++/analyze-user-website-visit-pattern.cpp) [Python](./Python/analyze-user-website-visit-pattern.py) | _O(n^3)_| _O(n^3)_| Medium |🔒| Hash |
 1153| [String Transforms Into Another String](https://leetcode.com/problems/string-transforms-into-another-string/) | [C++](./C++/string-transforms-into-another-string.cpp) [Python](./Python/string-transforms-into-another-string.py) | _O(n)_| _O(1)_| Hard |🔒| Hash |
-1160| [Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) |[C++](./C++/find-words-that-can-be-formed-by-characters.cpp)  [Python](./Python/find-words-that-can-be-formed-by-characters.py) | _O(n)_ | _O(1)_ | Easy         ||
+1160| [Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) |[C++](./C++/find-words-that-can-be-formed-by-characters.cpp)  [Python](./Python/find-words-that-can-be-formed-by-characters.py) | _O(m * n)_ | _O(1)_ | Easy         ||
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
