@@ -7,7 +7,7 @@ public:
         const auto& count = counter(chars);
         int result = 0;
         for (const auto& word : words) {
-            if (check(word, count)) {
+            if (check(word, chars, count)) {
                 result += word.length();
             }
         }
@@ -23,13 +23,13 @@ private:
         return result;
     }
     
-    bool check(const string& s,
+    bool check(const string& word, const string& chars,
                const unordered_map<char, int>& count2) {
         if (word.length() > chars.length()) {
             return false;
         }
         unordered_map<char, int> count1;
-        for (const auto& c : s) {
+        for (const auto& c : word) {
             ++count1[c];
             if (!count2.count(c) || count2.at(c) < count1[c]) {
                 return false;
