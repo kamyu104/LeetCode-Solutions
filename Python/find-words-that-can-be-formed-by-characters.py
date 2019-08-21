@@ -11,16 +11,16 @@ class Solution(object):
         :type chars: str
         :rtype: int
         """
-        def check(s, count2):
-            if len(s) > len(chars):
+        def check(word, chars, count2):
+            if len(word) > len(chars):
                 return False
             count1 = collections.Counter()
-            for c in s:
+            for c in word:
                 count1[c] += 1
                 if c not in count2 or count2[c] < count1[c]:
                     return False
             return True
         
         count = collections.Counter(chars)
-        return sum(len(word) for word in words if check(word, count))
+        return sum(len(word) for word in words if check(word, chars, count))
 
