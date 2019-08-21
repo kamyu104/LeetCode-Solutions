@@ -12,7 +12,7 @@ class Solution(object):
         :rtype: int
         """
         def check(s, count2):
-            if len(word) > len(chars):
+            if len(s) > len(chars):
                 return False
             count1 = collections.Counter()
             for c in s:
