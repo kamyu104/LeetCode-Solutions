@@ -11,7 +11,7 @@ class Solution(object):
         def mergeSort(start, end, nums):
             if end - start <= 1:
                 return
-            mid = start + (end - start) / 2
+            mid = start + (end - start) // 2
             mergeSort(start, mid, nums)
             mergeSort(mid, end,  nums)
             right = mid
@@ -37,7 +37,7 @@ class Solution2(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        def kthElement(nums, left, mid, right, compare):
+        def kthElement(nums, left, k, right, compare):
             def PartitionAroundPivot(left, right, pivot_idx, nums, compare):
                 new_pivot_idx = left
                 nums[pivot_idx], nums[right] = nums[right], nums[pivot_idx]
@@ -53,11 +53,11 @@ class Solution2(object):
             while left <= right:
                 pivot_idx = random.randint(left, right)
                 new_pivot_idx = PartitionAroundPivot(left, right, pivot_idx, nums, compare)
-                if new_pivot_idx == mid - 1:
+                if new_pivot_idx == k:
                     return
-                elif new_pivot_idx > mid - 1:
+                elif new_pivot_idx > k:
                     right = new_pivot_idx - 1
-                else:  # new_pivot_idx < mid - 1.
+                else:  # new_pivot_idx < k.
                     left = new_pivot_idx + 1
                     
         def quickSort(start, end, nums):
