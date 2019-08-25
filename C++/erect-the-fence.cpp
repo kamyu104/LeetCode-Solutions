@@ -24,7 +24,7 @@ public:
             hull.emplace_back(points[i]);
         }
 
-        for (int i = points.size() - 1; i >= 0; --i) {
+        for (int i = points.size() - 2; i >= 0; --i) {
             while (hull.size() >= 2 && 
                    orientation(hull[hull.size() - 2],
                                hull[hull.size() - 1],
@@ -33,9 +33,16 @@ public:
             }
             hull.emplace_back(points[i]);
         }
+        if (hull.size() >= 2) {
+            hull.pop_back();
+        }
 
-        sort(hull.begin(), hull.end());
-        hull.erase(unique(hull.begin(), hull.end()), hull.end());
+        for (int i = 1; i < (hull.size() + 1) / 2; ++i) {
+            if (hull[i] != hull.back()) {
+                break;
+            }
+            hull.pop_back();
+        }
         return hull;
     }
 };
