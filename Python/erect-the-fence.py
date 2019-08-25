@@ -8,22 +8,19 @@ import itertools
 class Solution(object):
     def outerTrees(self, points):
         """
-        :type points: List[Point]
-        :rtype: List[Point]
+        :type points: List[List[int]]
+        :rtype: List[List[int]]
         """
-        def orientation(p, q, r):
-            return (q.y - p.y) * (r.x - q.x) - \
-                   (q.x - p.x) * (r.y - q.y)
+        def ccw(A, B, C):
+            return (C[1]-A[1])*(B[0]-A[0]) - \
+                   (B[1]-A[1]) *(C[0]-A[0])
 
         hull = []
-        points.sort(key=lambda p: (p.x, p.y))
-
+        points.sort(key=lambda p: (p[0], p[1]))
         for i in itertools.chain(xrange(len(points)), \
                                  reversed(xrange(len(points)))):
             while len(hull) >= 2 and \
-                  orientation(hull[-2], hull[-1],  points[i]) > 0:
+                  ccw(hull[-2], hull[-1],  points[i]) < 0:
                 hull.pop()
             hull.append(points[i])
-
-        return list(set(hull))
-
+        return list(set(map(tuple, hull)))
