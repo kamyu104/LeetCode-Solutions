@@ -16,7 +16,6 @@ public:
 
         vector<vector<int>> hull;
         sort(points.begin(), points.end());
-
         for (int i = 0; i < points.size(); ++i) {
             while (hull.size() >= 2 && 
                    orientation(hull[hull.size() - 2],
@@ -26,7 +25,6 @@ public:
             }
             hull.emplace_back(points[i]);
         }
-
         for (int i = points.size() - 2; i >= 0; --i) {
             while (hull.size() >= 2 && 
                    orientation(hull[hull.size() - 2],
