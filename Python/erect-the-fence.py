@@ -17,8 +17,7 @@ class Solution(object):
         hull = []
         points.sort()
         for i in itertools.chain(xrange(len(points)), reversed(xrange(len(points)))):
-            while len(hull) >= 2 and \
-                  ccw(hull[-2], hull[-1], points[i]) < 0:
+            while len(hull) >= 2 and ccw(hull[-2], hull[-1], points[i]) < 0:
                 hull.pop()
             hull.append(points[i])
         return list(set(map(tuple, hull)))
