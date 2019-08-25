@@ -10,6 +10,9 @@ public:
                                          return (q[0] - p[0]) * (r[1] - p[1]) - 
                                                 (q[1] - p[1]) * (r[0] - p[0]);
                                   };
+        if (points.size() <= 1) {
+            return points;
+        }
 
         vector<vector<int>> hull;
         sort(points.begin(), points.end());
@@ -33,9 +36,7 @@ public:
             }
             hull.emplace_back(points[i]);
         }
-        if (hull.size() >= 2) {
-            hull.pop_back();
-        }
+        hull.pop_back();
 
         for (int i = 1; i < (hull.size() + 1) / 2; ++i) {
             if (hull[i] != hull.back()) {
