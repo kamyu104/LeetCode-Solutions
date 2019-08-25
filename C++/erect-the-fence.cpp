@@ -1,39 +1,26 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-/**
- * Definition for a point.
- * struct Point {
- *     int x;
- *     int y;
- *     Point() : x(0), y(0) {}
- *     Point(int a, int b) : x(a), y(b) {}
- * };
- */
-
-// Monotone Chain Algorithm
 class Solution {
 public:
-    vector<Point> outerTrees(vector<Point>& points) {
-        const auto orientation = [](const Point& p, const Point& q, const Point& r) {
-                                     return (q.y - p.y) * (r.x - q.x) - 
-                                            (q.x - p.x) * (r.y - q.y);
-                                 };
-        const auto cmp = [](const Point& p, const Point& q) {
-                             return p.x == q.x ? p.y < q.y : p.x < q.x;
-                         };
-        const auto eq = [](const Point &p1, const Point &p2) {
-                            return p1.x == p2.x && p1.y == p2.y;
-                        };
+    vector<vector<int>> outerTrees(vector<vector<int>>& points) {
+	    const auto& orientation =
+            [](const vector<int>& p,
+               const vector<int>& q,
+               const vector<int>& r) {
+                 return (q[0] - p[0]) * (r[1] - p[1]) - 
+                        (q[1] - p[1]) * (r[0] - p[0]);
+             };
 
-        vector<Point> hull;
-        sort(points.begin(), points.end(), cmp);
+
+        vector<vector<int>> hull;
+        sort(points.begin(), points.end());
 
         for (int i = 0; i < points.size(); ++i) {
             while (hull.size() >= 2 && 
                    orientation(hull[hull.size() - 2],
                                hull[hull.size() - 1],
-                               points[i]) > 0) {
+                               points[i]) < 0) {
                 hull.pop_back();
             }
             hull.emplace_back(points[i]);
@@ -43,14 +30,14 @@ public:
             while (hull.size() >= 2 && 
                    orientation(hull[hull.size() - 2],
                                hull[hull.size() - 1],
-                               points[i]) > 0) {
+                               points[i]) < 0) {
                 hull.pop_back();
             }
             hull.emplace_back(points[i]);
         }
 
-        sort(hull.begin(), hull.end(), cmp);
-        hull.erase(unique(hull.begin(), hull.end(), eq), hull.end());
+        sort(hull.begin(), hull.end());
+        hull.erase(unique(hull.begin(), hull.end()), hull.end());
         return hull;
     }
 };
