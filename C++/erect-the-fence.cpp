@@ -4,13 +4,12 @@
 class Solution {
 public:
     vector<vector<int>> outerTrees(vector<vector<int>>& points) {
-	    const auto& orientation =
-                   [](const vector<int>& p,
-                       const vector<int>& q,
-                       const vector<int>& r) {
-                           return (q[0] - p[0]) * (r[1] - p[1]) - 
-                                  (q[1] - p[1]) * (r[0] - p[0]);
-                   };
+	const auto& orientation = [](const vector<int>& p,
+                                     const vector<int>& q,
+                                     const vector<int>& r) {
+                                         return (q[0] - p[0]) * (r[1] - p[1]) - 
+                                                (q[1] - p[1]) * (r[0] - p[0]);
+                                  };
 
         vector<vector<int>> hull;
         sort(points.begin(), points.end());
