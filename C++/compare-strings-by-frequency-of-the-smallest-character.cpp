@@ -1,5 +1,5 @@
 // Time:  O((m + n)logn), m is the number of queries, n is the number of words
-// Space: O(m + n)
+// Space: O(n)
 
 class Solution {
 public:
