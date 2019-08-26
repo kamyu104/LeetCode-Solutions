@@ -66,5 +66,4 @@ private:
            << get<2>(t) << "," << get<3>(t);
         return ss.str();
     }
-
 };
