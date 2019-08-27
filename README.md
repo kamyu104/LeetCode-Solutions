@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1164%20%2F%201164-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1172%20%2F%201172-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were `5.7k+` stars and `2.2k+` forks (ever the top 3 in the field).
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -554,6 +554,7 @@
 1152| [Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern/) | [C++](./C++/analyze-user-website-visit-pattern.cpp) [Python](./Python/analyze-user-website-visit-pattern.py) | _O(n^3)_| _O(n^3)_| Medium |🔒| Hash |
 1153| [String Transforms Into Another String](https://leetcode.com/problems/string-transforms-into-another-string/) | [C++](./C++/string-transforms-into-another-string.cpp) [Python](./Python/string-transforms-into-another-string.py) | _O(n)_| _O(1)_| Hard |🔒| Hash |
 1160| [Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) |[C++](./C++/find-words-that-can-be-formed-by-characters.cpp)  [Python](./Python/find-words-that-can-be-formed-by-characters.py) | _O(m * n)_ | _O(1)_ | Easy         ||
+1165| [Single-Row Keyboard](https://leetcode.com/problems/single-row-keyboard/) | [C++](./C++/single-row-keyboard.cpp) [Python](./Python/single-row-keyboard.py)  | _O(n)_ |  _O(1)_ | Easy         |🔒||
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1132,6 +1133,7 @@
 1081| [Smallest Subsequence of Distinct Characters](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/) | [C++](./C++/smallest-subsequence-of-distinct-characters.cpp) [Python](./Python/smallest-subsequence-of-distinct-characters.py) | _O(n)_| _O(1)_| Medium | same as [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) | Mono Stack |
 1090 | [Largest Values From Labels](https://leetcode.com/problems/largest-values-from-labels/) | [C++](./C++/largest-values-from-labels.cpp) [Python](./Python/largest-values-from-labels.py) | _O(nlogn)_ | _O(n)_ | Medium ||
 1111 | [Maximum Nesting Depth of Two Valid Parentheses Strings](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/) | [C++](./C++/maximum-nesting-depth-of-two-valid-parentheses-strings.cpp) [Python](./Python/maximum-nesting-depth-of-two-valid-parentheses-strings.py) | _O(n)_ | _O(1)_ | Medium ||
+1167| [CMinimum Cost to Connect Sticks](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) | [C++](./C++/minimum-cost-to-connect-sticks.cpp) [Python](./Python/minimum-cost-to-connect-sticks.py) |  _O(nlogn)_ | _O(n)_   | Medium |🔒|| Heap
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1144,6 +1146,7 @@
 1042 | [Flower Planting With No Adjacent](https://leetcode.com/problems/flower-planting-with-no-adjacent/) | [C++](./C++/flower-planting-with-no-adjacent.cpp) [Python](./Python/flower-planting-with-no-adjacent.py) | _O(n)_ | _O(n)_ | Easy           |||
 1101 | [The Earliest Moment When Everyone Become Friends](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/) | [C++](./C++/the-earliest-moment-when-everyone-become-friends.cpp) [Python](./Python/the-earliest-moment-when-everyone-become-friends.py) | _O(nlogn)_ | _O(n)_ | Medium           |🔒| Union Find |
 1135 | [Connecting Cities With Minimum Cost](https://leetcode.com/problems/connecting-cities-with-minimum-cost/) | [C++](./C++/connecting-cities-with-minimum-cost.cpp) [Python](./Python/connecting-cities-with-minimum-cost.py) | _O(nlogn)_ | _O(n)_ | Medium           |🔒| Union Find, `Kruskal's Algorithm`, MST |
+1168 | [Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) | [C++](./C++/optimize-water-distribution-in-a-village.cpp) [Python](./Python/optimize-water-distribution-in-a-village.py) | _O(nlogn)_ | _O(n)_ | Hard           |🔒| Union Find |
 
 ## Geometry
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1184,6 +1187,7 @@
 0745| [Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/) | [C++](./C++/prefix-and-suffix-search.cpp) [Python](./Python/prefix-and-suffix-search.py) | ctor: _O(w * l^2)_<br> search : _O(p + s)_ | _O(t)_ | Hard || Trie |
 0900| [RLE Iterator](https://leetcode.com/problems/rle-iterator/) | [C++](./C++/rle-iterator.cpp) [Python](./Python/rle-iterator.py) | _O(n)_ | _O(1)_ | Medium |||
 1146| [Snapshot Array](https://leetcode.com/problems/snapshot-array/) | [C++](./C++/snapshot-array.cpp) [Python](./Python/snapshot-array.py) | set: _O(1)_<br> get: _O(logn)_ | _O(n)_ | Medium |||
+1166| [Design File System](https://leetcode.com/problems/design-file-system/) | [C++](./C++/design-file-system.cpp) [Python](./Python/design-file-system.py) | create: _O(n)_<br>get: _O(n)_ | _O(n)_ | Medium |🔒| |
 
 ## Concurrency
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
