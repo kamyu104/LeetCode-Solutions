@@ -217,6 +217,7 @@
 1099 | [Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/) | [C++](./C++/two-sum-less-than-k.cpp) [Python](./Python/two-sum-less-than-k.py) | _O(nlogn)_ | _O(1)_      | Easy         |🔒|
 1109 | [Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/) | [C++](./C++/corporate-flight-bookings.cpp) [Python](./Python/corporate-flight-bookings.py) | _O(n)_ | _O(1)_      | Medium         || Line Sweep
 1144 | [Decrease Elements To Make Array Zigzag](https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/) | [C++](./C++/decrease-elements-to-make-array-zigzag.cpp) [Python](./Python/decrease-elements-to-make-array-zigzag.py) | _O(n)_ | _O(1)_      | Medium         ||
+1169 | [Invalid Transactions](https://leetcode.com/problems/invalid-transactions/) | [C++](./C++/invalid-transactions.cpp) [Python](./Python/invalid-transactions.py) | _O(nlogn)_ | _O(n)_      | Medium         || Sliding Window, Line Sweep
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -341,6 +342,7 @@
 0725 | [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/) | [C++](./C++/split-linked-list-in-parts.cpp) [Python](./Python/split-linked-list-in-parts.py) | _O(n + k)_ | _O(1)_ | Medium ||
 0817 | [Linked List Components](https://leetcode.com/problems/linked-list-components/) | [C++](./C++/linked-list-components.cpp) [Python](./Python/linked-list-components.py) | _O(m + n)_ | _O(m)_ | Medium ||
 0986 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [C++](./C++/interval-list-intersections.cpp) [Python](./Python/interval-list-intersections.py) | _O(m + n)_ | _O(1)_ | Medium ||
+1171 | [Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/) | [C++](./C++/remove-zero-sum-consecutive-nodes-from-linked-list.cpp) [Python](./Python/remove-zero-sum-consecutive-nodes-from-linked-list.py) | _O(n)_ | _O(n)_ | Medium || Hash
 
 ## Stack
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -810,6 +812,7 @@
 1064 |[Fixed Point](https://leetcode.com/problems/fixed-point/)| [C++](./C++/fixed-point.cpp)  [Python](./Python/fixed-point.py) | _O(logn)_ | _O(1)_ | Easy |🔒| |
 1095 |[Find in Mountain Array](https://leetcode.com/problems/find-in-mountain-array/)| [C++](./C++/find-in-mountain-array.cpp)  [Python](./Python/find-in-mountain-array.py) | _O(logn)_ | _O(1)_ | Hard | | |
 1110 | [Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/) | [C++](./C++/delete-nodes-and-return-forest.cpp) [Python](./Python/delete-nodes-and-return-forest.py) | _O(n)_ | _O(h + d)_ | Medium | |
+1170 | [Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/) | [C++](./C++/compare-strings-by-frequency-of-the-smallest-character.cpp) [Python](./Python/compare-strings-by-frequency-of-the-smallest-character.py) | _O((m + n)logn)_ | _O(n)_ | Easy | |
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1188,6 +1191,7 @@
 0900| [RLE Iterator](https://leetcode.com/problems/rle-iterator/) | [C++](./C++/rle-iterator.cpp) [Python](./Python/rle-iterator.py) | _O(n)_ | _O(1)_ | Medium |||
 1146| [Snapshot Array](https://leetcode.com/problems/snapshot-array/) | [C++](./C++/snapshot-array.cpp) [Python](./Python/snapshot-array.py) | set: _O(1)_<br> get: _O(logn)_ | _O(n)_ | Medium |||
 1166| [Design File System](https://leetcode.com/problems/design-file-system/) | [C++](./C++/design-file-system.cpp) [Python](./Python/design-file-system.py) | create: _O(n)_<br>get: _O(n)_ | _O(n)_ | Medium |🔒| |
+1172| [Dinner Plate Stacks](https://leetcode.com/problems/dinner-plate-stacks/) | [C++](./C++/dinner-plate-stacks.cpp) [Python](./Python/dinner-plate-stacks.py) | push: _O(logn)_<br>pop: _O(1)_, amortized<br>popAtStack: _(logn)_ | _O(n)_ | Hard | | |
 
 ## Concurrency
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
