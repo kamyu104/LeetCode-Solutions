@@ -1136,7 +1136,7 @@
 1081| [Smallest Subsequence of Distinct Characters](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/) | [C++](./C++/smallest-subsequence-of-distinct-characters.cpp) [Python](./Python/smallest-subsequence-of-distinct-characters.py) | _O(n)_| _O(1)_| Medium | same as [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) | Mono Stack |
 1090 | [Largest Values From Labels](https://leetcode.com/problems/largest-values-from-labels/) | [C++](./C++/largest-values-from-labels.cpp) [Python](./Python/largest-values-from-labels.py) | _O(nlogn)_ | _O(n)_ | Medium ||
 1111 | [Maximum Nesting Depth of Two Valid Parentheses Strings](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/) | [C++](./C++/maximum-nesting-depth-of-two-valid-parentheses-strings.cpp) [Python](./Python/maximum-nesting-depth-of-two-valid-parentheses-strings.py) | _O(n)_ | _O(1)_ | Medium ||
-1167| [CMinimum Cost to Connect Sticks](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) | [C++](./C++/minimum-cost-to-connect-sticks.cpp) [Python](./Python/minimum-cost-to-connect-sticks.py) |  _O(nlogn)_ | _O(n)_   | Medium |🔒|| Heap
+1167| [Minimum Cost to Connect Sticks](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) | [C++](./C++/minimum-cost-to-connect-sticks.cpp) [Python](./Python/minimum-cost-to-connect-sticks.py) |  _O(nlogn)_ | _O(n)_   | Medium |🔒|| Heap
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
