@@ -1,5 +1,5 @@
-// Time:  O(n*l + m*L), m is the number of puzzles, L is the length of puzzles,
-//                      n is the number of words, l is the max length of words
+// Time:  O(n*l + m*L), m is the number of puzzles, L is the length of puzzles
+//                    , n is the number of words, l is the max length of words
 // Space: O(L!)
 
 class Solution {    
@@ -75,8 +75,8 @@ private:
     };
 };
 
-// Time:  O(m*2^(L-1) + n*(l+m)), m is the number of puzzles, L is the length of puzzles,
-//                                n is the number of words, l is the max length of words
+// Time:  O(m*2^(L-1) + n*(l+m)), m is the number of puzzles, L is the length of puzzles
+//                              , n is the number of words, l is the max length of words
 // Space: O(m*2^(L-1))
 class Solution2 {
 public:
