@@ -319,7 +319,7 @@
 1151 | [Minimum Swaps to Group All 1's Together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) | [C++](./C++/minimum-swaps-to-group-all-1s-together.cpp) [Python](./Python/minimum-swaps-to-group-all-1s-together.py) | _O(n)_ | _O(1)_ | Medium |🔒| Sliding Window
 1156 | [Swap For Longest Repeated Character Substring](https://leetcode.com/problems/swap-for-longest-repeated-character-substring/) | [C++](./C++/swap-for-longest-repeated-character-substring.cpp) [Python](./Python/swap-for-longest-repeated-character-substring.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window
 1177 | [Can Make Palindrome from Substring](https://leetcode.com/problems/can-make-palindrome-from-substring/) | [C++](./C++/can-make-palindrome-from-substring.cpp) [Python](./Python/can-make-palindrome-from-substring.py) | _O(m + n)_ | _O(n)_ | Medium | |
-1178 | [Number of Valid Words for Each Puzzle](https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/) | [C++](./C++/number-of-valid-words-for-each-puzzle.cpp) [Python](./Python/number-of-valid-words-for-each-puzzle.py) | _O(n*l + m*L)_ | _O(L!)_ | Hard | | Trie, Bit Manipulation
+1178 | [Number of Valid Words for Each Puzzle](https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/) | [C++](./C++/number-of-valid-words-for-each-puzzle.cpp) [Python](./Python/number-of-valid-words-for-each-puzzle.py) | _O(n * l + m * L)_ | _O(L!)_ | Hard | | Trie, Bit Manipulation
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
