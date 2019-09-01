@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1172%20%2F%201172-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1176%20%2F%201176-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were `5.7k+` stars and `2.2k+` forks (ever the top 3 in the field).
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -218,6 +218,7 @@
 1109 | [Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/) | [C++](./C++/corporate-flight-bookings.cpp) [Python](./Python/corporate-flight-bookings.py) | _O(n)_ | _O(1)_      | Medium         || Line Sweep
 1144 | [Decrease Elements To Make Array Zigzag](https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/) | [C++](./C++/decrease-elements-to-make-array-zigzag.cpp) [Python](./Python/decrease-elements-to-make-array-zigzag.py) | _O(n)_ | _O(1)_      | Medium         ||
 1169 | [Invalid Transactions](https://leetcode.com/problems/invalid-transactions/) | [C++](./C++/invalid-transactions.cpp) [Python](./Python/invalid-transactions.py) | _O(nlogn)_ | _O(n)_      | Medium         || Sliding Window, Line Sweep
+1176 | [Diet Plan Performance](https://leetcode.com/problems/diet-plan-performance/) | [C++](./C++/diet-plan-performance.cpp) [Python](./Python/diet-plan-performance.py) | _O(n)_ | _O(1)_      | Easy         || Sliding Window
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -317,6 +318,8 @@
 1147 | [Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition/) | [C++](./C++/longest-chunked-palindrome-decomposition.cpp) [Python](./Python/longest-chunked-palindrome-decomposition.py) | _O(n)_ | _O(1)_ | Hard | | `Rabin-Karp Algorithm`
 1151 | [Minimum Swaps to Group All 1's Together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) | [C++](./C++/minimum-swaps-to-group-all-1s-together.cpp) [Python](./Python/minimum-swaps-to-group-all-1s-together.py) | _O(n)_ | _O(1)_ | Medium |🔒| Sliding Window
 1156 | [Swap For Longest Repeated Character Substring](https://leetcode.com/problems/swap-for-longest-repeated-character-substring/) | [C++](./C++/swap-for-longest-repeated-character-substring.cpp) [Python](./Python/swap-for-longest-repeated-character-substring.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window
+1177 | [Can Make Palindrome from Substring](https://leetcode.com/problems/can-make-palindrome-from-substring/) | [C++](./C++/can-make-palindrome-from-substring.cpp) [Python](./Python/can-make-palindrome-from-substring.py) | _O(m + n)_ | _O(n)_ | Medium | |
+1178 | [Number of Valid Words for Each Puzzle](https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/) | [C++](./C++/number-of-valid-words-for-each-puzzle.cpp) [Python](./Python/number-of-valid-words-for-each-puzzle.py) | _O(n*l + m*L)_ | _O(L!)_ | Hard | | Trie, Bit Manipulation
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -668,6 +671,7 @@
 1150| [Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) | [C++](./C++/check-if-a-number-is-majority-element-in-a-sorted-array.cpp) [Python](./Python/check-if-a-number-is-majority-element-in-a-sorted-array.py) | _O(nlogn)_ | _O(1)_ |  Easy |🔒| Binary Search
 1157| [Online Majority Element In Subarray](https://leetcode.com/problems/online-majority-element-in-subarray/) | [C++](./C++/online-majority-element-in-subarray.cpp) [Python](./Python/online-majority-element-in-subarray.py) | ctor: _O(n)_<br>query: _O(klogn)_ | _O(n)_ |  Hard || Binary Search, Segment Tree, `Boyer–Moore Majority Vote Algorithm`
 1154| [Day of the Year](https://leetcode.com/problems/day-of-the-year/) | [C++](./C++/day-of-the-year.cpp) [Python](./Python/day-of-the-year.py) | _O(1)_ | _O(1)_ |  Easy ||
+1175| [Prime Arrangements](https://leetcode.com/problems/prime-arrangements/) | [C++](./C++/prime-arrangements.cpp) [Python](./Python/prime-arrangements.py) | _O(n)_ | _O(n)_ |  Easy ||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
