@@ -1006,7 +1006,7 @@
 0368| [Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/) | [C++](./C++/largest-divisible-subset.cpp) [Python](./Python/largest-divisible-subset.py) | _O(n^2)_ | _O(n)_ | Medium | | |
 0375| [Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)| [C++](./C++/guess-number-higher-or-lower-ii.cpp) [Python](./Python/guess-number-higher-or-lower-ii.py)   | _O(n^2)_          | _O(n^2)_          | Medium         | |
 0377| [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)| [C++](./C++/combination-sum-iv.cpp) [Python](./Python/combination-sum-iv.py)   | _O(nlogn + n * t)_          | _O(t)_          | Medium         | |
-0403 | [Frog Jump](https://leetcode.com/problems/frog-jump/) | [C++](./C++/frog-jump.cpp) [Python](./Python/frog-jump.py) | _O(n)_ | _O(n) ~ O(n^2)_ | Hard ||
+0403 | [Frog Jump](https://leetcode.com/problems/frog-jump/) | [C++](./C++/frog-jump.cpp) [Python](./Python/frog-jump.py) | _O(n^2)_ | _O(n^2)_ | Hard ||
 0416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | [C++](./C++/partition-equal-subset-sum.cpp) [Python](./Python/partition-equal-subset-sum.py) | _O(n * s)_ | _O(s)_ | Medium ||
 0418 | [Sentence Screen Fitting](https://leetcode.com/problems/sentence-screen-fitting/) | [C++](./C++/sentence-screen-fitting.cpp) [Python](./Python/sentence-screen-fitting.py) | _O(r + n * c)_ | _O(n)_ | Medium |🔒|
 0446 | [Arithmetic Slices II - Subsequence](https://leetcode.com/problems/arithmetic-slices-ii-subsequence/) | [C++](./C++/arithmetic-slices-ii-subsequence.cpp) [Python](./Python/arithmetic-slices-ii-subsequence.py) | _O(n^2)_ | _O(n * d)_ | Hard ||
