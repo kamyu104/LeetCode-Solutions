@@ -1,5 +1,5 @@
-# Time:  O(l * rlogr), l is the max length of phrases
-#                    , r is the number of result, could be up to O(n^2)
+# Time:  O(l * rlogr)  , l is the max length of phrases
+#                      , r is the number of result, could be up to O(n^2)
 # Space: O(l * (n + r)), n is the number of phrases
 
 import collections
