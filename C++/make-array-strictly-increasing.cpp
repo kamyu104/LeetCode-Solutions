@@ -27,9 +27,9 @@ public:
                 }
             }
             dp = move(next_dp);
-        }
-        if (dp.empty()) {
-            return -1;
+            if (dp.empty()) {
+                return -1;
+            }
         }
         return min_element(dp.cbegin(), dp.cend())->first;
     }
