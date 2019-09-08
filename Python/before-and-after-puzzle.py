@@ -17,7 +17,6 @@ class Solution(object):
             word = phrase if right == -1 else phrase[right+1:]
             lookup[word].append(i)
 
-        print lookup
         result_set = set()
         for i, phrase in enumerate(phrases):
             left = phrase.find(' ')
