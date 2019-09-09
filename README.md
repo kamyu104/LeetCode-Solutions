@@ -675,7 +675,7 @@
 1157| [Online Majority Element In Subarray](https://leetcode.com/problems/online-majority-element-in-subarray/) | [C++](./C++/online-majority-element-in-subarray.cpp) [Python](./Python/online-majority-element-in-subarray.py) | ctor: _O(n)_<br>query: _O(klogn)_ | _O(n)_ |  Hard || Binary Search, Segment Tree, `Boyer–Moore Majority Vote Algorithm`
 1154| [Day of the Year](https://leetcode.com/problems/day-of-the-year/) | [C++](./C++/day-of-the-year.cpp) [Python](./Python/day-of-the-year.py) | _O(1)_ | _O(1)_ |  Easy ||
 1175| [Prime Arrangements](https://leetcode.com/problems/prime-arrangements/) | [C++](./C++/prime-arrangements.cpp) [Python](./Python/prime-arrangements.py) | _O(n)_ | _O(n)_ |  Easy ||
-1185| [Day of the Week](https://leetcode.com/problems/day-of-the-week/) | [C++](./C++/day-of-the-week.cpp) [Python](./Python/day-of-the-week.py) | _O(1)_ | _O(1)_ |  Easy || Zeller Formula
+1185| [Day of the Week](https://leetcode.com/problems/day-of-the-week/) | [C++](./C++/day-of-the-week.cpp) [Python](./Python/day-of-the-week.py) | _O(1)_ | _O(1)_ |  Easy || `Zeller Formula`
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
