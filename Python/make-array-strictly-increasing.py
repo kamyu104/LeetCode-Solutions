@@ -13,12 +13,12 @@ class Solution(object):
         :rtype: int
         """
         arr2 = sorted(set(arr2))
-        dp = {0: arr1[0], 1: arr2[0]}  # dp[min_cost] = end_with_val
-        for i in xrange(1, len(arr1)):
+        dp = {0: -1}  # dp[min_cost] = end_with_val
+        for val1 in arr1:
             next_dp = collections.defaultdict(lambda: float("inf"))
             for cost, val in dp.iteritems():
-                if val < arr1[i]:
-                    next_dp[cost] = min(next_dp[cost], arr1[i])
+                if val < val1:
+                    next_dp[cost] = min(next_dp[cost], val1)
                 k = bisect.bisect_right(arr2, val)
                 if k == len(arr2):
                     continue
