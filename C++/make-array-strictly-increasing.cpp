@@ -6,7 +6,7 @@ public:
     int makeArrayIncreasing(vector<int>& arr1, vector<int>& arr2) {
         std::sort(arr2.begin(), arr2.end());
         arr2.erase(std::unique(arr2.begin(), arr2.end()), arr2.end());
-        unordered_map<int, int> dp = {{0, arr1[0]}, {1, arr2[0]}};
+        unordered_map<int, int> dp = {{0, arr1[0]}, {1, arr2[0]}};  // dp[min_cost] = end_with_val
         for (int i = 1; i < arr1.size(); ++i) {
             unordered_map<int, int> next_dp;
             for (const auto& [j, count] : dp) {
