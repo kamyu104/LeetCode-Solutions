@@ -16,13 +16,13 @@ class Solution(object):
         dp = {0: arr1[0], 1: arr2[0]}  # dp[min_cost] = end_with_val
         for i in xrange(1, len(arr1)):
             next_dp = collections.defaultdict(lambda: float("inf"))
-            for j in dp.iterkeys():
-                if dp[j] < arr1[i]:
-                    next_dp[j] = min(next_dp[j], arr1[i])
-                k = bisect.bisect_right(arr2, dp[j])
+            for cost, val in dp.iteritems():
+                if val < arr1[i]:
+                    next_dp[cost] = min(next_dp[cost], arr1[i])
+                k = bisect.bisect_right(arr2, val)
                 if k == len(arr2):
                     continue
-                next_dp[j+1] = min(next_dp[j+1], arr2[k])
+                next_dp[cost+1] = min(next_dp[cost+1], arr2[k])
             dp = next_dp
             if not dp:
                 return -1
