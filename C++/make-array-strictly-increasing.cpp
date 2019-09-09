@@ -9,20 +9,20 @@ public:
         unordered_map<int, int> dp = {{0, arr1[0]}, {1, arr2[0]}};  // dp[min_cost] = end_with_val
         for (int i = 1; i < arr1.size(); ++i) {
             unordered_map<int, int> next_dp;
-            for (const auto& [j, count] : dp) {
-                if (dp[j] < arr1[i]) {
-                    if (!next_dp.count(j)) {
-                        next_dp[j] = arr1[i];
+            for (const auto& [cost, val] : dp) {
+                if (val < arr1[i]) {
+                    if (!next_dp.count(cost)) {
+                        next_dp[cost] = arr1[i];
                     } else {
-                        next_dp[j] = min(next_dp[j], arr1[i]);
+                        next_dp[cost] = min(next_dp[cost], arr1[i]);
                     }
                 }
-                const auto& it = upper_bound(arr2.cbegin(), arr2.cend(), dp[j]);
+                const auto& it = upper_bound(arr2.cbegin(), arr2.cend(), val);
                 if (it != arr2.cend()) {
-                    if (!next_dp.count(j + 1)) {
-                        next_dp[j + 1] = *it;
+                    if (!next_dp.count(cost + 1)) {
+                        next_dp[cost + 1] = *it;
                     } else {
-                        next_dp[j + 1] = min(next_dp[j + 1], *it);
+                        next_dp[cost + 1] = min(next_dp[cost + 1], *it);
                     }
                 }
             }
