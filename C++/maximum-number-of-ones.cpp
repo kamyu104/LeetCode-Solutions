@@ -8,8 +8,8 @@ public:
             swap(width, height);
         }
 
-        int R = height / sideLength, r = height % sideLength;
-        int C = width / sideLength, c = width % sideLength;
+        const auto& R = height / sideLength, &r = height % sideLength;
+        const auto& C = width / sideLength, &c = width % sideLength;
         assert(R <= C);
         vector<pair<int, int>> area_counts = {{r * c, (R + 1) * (C + 1)},
                                               {r * (sideLength - c), (R + 1) * C},
