@@ -219,6 +219,7 @@
 1144 | [Decrease Elements To Make Array Zigzag](https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/) | [C++](./C++/decrease-elements-to-make-array-zigzag.cpp) [Python](./Python/decrease-elements-to-make-array-zigzag.py) | _O(n)_ | _O(1)_      | Medium         ||
 1169 | [Invalid Transactions](https://leetcode.com/problems/invalid-transactions/) | [C++](./C++/invalid-transactions.cpp) [Python](./Python/invalid-transactions.py) | _O(nlogn)_ | _O(n)_      | Medium         || Sliding Window, Line Sweep
 1176 | [Diet Plan Performance](https://leetcode.com/problems/diet-plan-performance/) | [C++](./C++/diet-plan-performance.cpp) [Python](./Python/diet-plan-performance.py) | _O(n)_ | _O(1)_      | Easy         || Sliding Window
+1184 | [Distance Between Bus Stops](https://leetcode.com/problems/distance-between-bus-stops/) | [C++](./C++/distance-between-bus-stops.cpp) [Python](./Python/distance-between-bus-stops.py) | _O(n)_ | _O(1)_      | Easy         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -672,6 +673,7 @@
 1157| [Online Majority Element In Subarray](https://leetcode.com/problems/online-majority-element-in-subarray/) | [C++](./C++/online-majority-element-in-subarray.cpp) [Python](./Python/online-majority-element-in-subarray.py) | ctor: _O(n)_<br>query: _O(klogn)_ | _O(n)_ |  Hard || Binary Search, Segment Tree, `Boyer–Moore Majority Vote Algorithm`
 1154| [Day of the Year](https://leetcode.com/problems/day-of-the-year/) | [C++](./C++/day-of-the-year.cpp) [Python](./Python/day-of-the-year.py) | _O(1)_ | _O(1)_ |  Easy ||
 1175| [Prime Arrangements](https://leetcode.com/problems/prime-arrangements/) | [C++](./C++/prime-arrangements.cpp) [Python](./Python/prime-arrangements.py) | _O(n)_ | _O(n)_ |  Easy ||
+1154| [Day of the Week](https://leetcode.com/problems/day-of-the-week/) | [C++](./C++/day-of-the-week.cpp) [Python](./Python/day-of-the-week.py) | _O(1)_ | _O(1)_ |  Easy || Zeller Formula
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1088,6 +1090,8 @@
 1140 | [Stone Game II](https://leetcode.com/problems/stone-game-ii/) | [C++](./C++/stone-game-ii.cpp) [Python](./Python/stone-game-ii.py) | _O(n*(logn)^2)_ | _O(nlogn)_ | Medium || |
 1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | [C++](./C++/longest-common-subsequence.cpp) [Python](./Python/longest-common-subsequence.py) | _O(m * n)_ | _O(min(m, n))_ | Medium || |
 1155 | [Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/) | [C++](./C++/number-of-dice-rolls-with-target-sum.cpp) [Python](./Python/number-of-dice-rolls-with-target-sum.py) | _O(d * f * t)_ | _O(t)_ | Medium || |
+1186| [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/)|[C++](./C++/maximum-subarray-sum-with-one-deletion.cpp) [Python](./Python/maximum-subarray-sum-with-one-deletion.py)| _O(n)_     | _O(1)_         | Medium         ||
+1187 | [Make Array Strictly Increasing](https://leetcode.com/problems/make-array-strictly-increasing/) | [C++](./C++/make-array-strictly-increasing.cpp) [Python](./Python/make-array-strictly-increasing.py) | _O(n^2 * logn)_ | _O(n)_ | Hard || |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
