@@ -13,7 +13,7 @@ class Solution(object):
         :rtype: int
         """
         arr2 = sorted(set(arr2))
-        dp = {0: arr1[0], 1: arr2[0]}
+        dp = {0: arr1[0], 1: arr2[0]}  # dp[min_cost] = end_with_val
         for i in xrange(1, len(arr1)):
             next_dp = collections.defaultdict(lambda: float("inf"))
             for j in dp.iterkeys():
