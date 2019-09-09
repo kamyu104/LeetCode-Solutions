@@ -5,6 +5,7 @@ class Solution {
 public:
     int makeArrayIncreasing(vector<int>& arr1, vector<int>& arr2) {
         std::sort(arr2.begin(), arr2.end());
+        arr2.erase(unique(arr2.begin(), arr2.end()), arr2.end());
         unordered_map<int, int> dp = {{0, -1}};  // dp[min_cost] = end_with_val
         for (const auto& val1 : arr1) {
             unordered_map<int, int> next_dp;
