@@ -347,6 +347,8 @@
 0817 | [Linked List Components](https://leetcode.com/problems/linked-list-components/) | [C++](./C++/linked-list-components.cpp) [Python](./Python/linked-list-components.py) | _O(m + n)_ | _O(m)_ | Medium ||
 0986 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [C++](./C++/interval-list-intersections.cpp) [Python](./Python/interval-list-intersections.py) | _O(m + n)_ | _O(1)_ | Medium ||
 1171 | [Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/) | [C++](./C++/remove-zero-sum-consecutive-nodes-from-linked-list.cpp) [Python](./Python/remove-zero-sum-consecutive-nodes-from-linked-list.py) | _O(n)_ | _O(n)_ | Medium || Hash
+1180| [Count Substrings with Only One Distinct Letter](https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/)| [C++](./C++/count-substrings-with-only-one-distinct-letter.cpp) [Python](./Python/count-substrings-with-only-one-distinct-letter.py) | _O(n)_       | _O(1)_         | Easy         | 🔒 ||
+1181| [Before and After Puzzle](https://leetcode.com/problems/before-and-after-puzzle/)| [C++](./C++/before-and-after-puzzle.cpp) [Python](./Python/before-and-after-puzzle.py) | _O(l * rlogr)_       | _O(l * (n + r))_         | Medium         | 🔒 | Hash |
 
 ## Stack
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -673,7 +675,7 @@
 1157| [Online Majority Element In Subarray](https://leetcode.com/problems/online-majority-element-in-subarray/) | [C++](./C++/online-majority-element-in-subarray.cpp) [Python](./Python/online-majority-element-in-subarray.py) | ctor: _O(n)_<br>query: _O(klogn)_ | _O(n)_ |  Hard || Binary Search, Segment Tree, `Boyer–Moore Majority Vote Algorithm`
 1154| [Day of the Year](https://leetcode.com/problems/day-of-the-year/) | [C++](./C++/day-of-the-year.cpp) [Python](./Python/day-of-the-year.py) | _O(1)_ | _O(1)_ |  Easy ||
 1175| [Prime Arrangements](https://leetcode.com/problems/prime-arrangements/) | [C++](./C++/prime-arrangements.cpp) [Python](./Python/prime-arrangements.py) | _O(n)_ | _O(n)_ |  Easy ||
-1154| [Day of the Week](https://leetcode.com/problems/day-of-the-week/) | [C++](./C++/day-of-the-week.cpp) [Python](./Python/day-of-the-week.py) | _O(1)_ | _O(1)_ |  Easy || Zeller Formula
+1185| [Day of the Week](https://leetcode.com/problems/day-of-the-week/) | [C++](./C++/day-of-the-week.cpp) [Python](./Python/day-of-the-week.py) | _O(1)_ | _O(1)_ |  Easy || Zeller Formula
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1090,6 +1092,8 @@
 1140 | [Stone Game II](https://leetcode.com/problems/stone-game-ii/) | [C++](./C++/stone-game-ii.cpp) [Python](./Python/stone-game-ii.py) | _O(n*(logn)^2)_ | _O(nlogn)_ | Medium || |
 1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | [C++](./C++/longest-common-subsequence.cpp) [Python](./Python/longest-common-subsequence.py) | _O(m * n)_ | _O(min(m, n))_ | Medium || |
 1155 | [Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/) | [C++](./C++/number-of-dice-rolls-with-target-sum.cpp) [Python](./Python/number-of-dice-rolls-with-target-sum.py) | _O(d * f * t)_ | _O(t)_ | Medium || |
+1182 | [Shortest Distance to Target Color](https://leetcode.com/problems/shortest-distance-to-target-color/) | [C++](./C++/shortest-distance-to-target-color.cpp) [Python](./Python/shortest-distance-to-target-color.py) | _O(n)_ | _O(n)_ | Medium |🔒| |
+
 1186| [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/)|[C++](./C++/maximum-subarray-sum-with-one-deletion.cpp) [Python](./Python/maximum-subarray-sum-with-one-deletion.py)| _O(n)_     | _O(1)_         | Medium         ||
 1187 | [Make Array Strictly Increasing](https://leetcode.com/problems/make-array-strictly-increasing/) | [C++](./C++/make-array-strictly-increasing.cpp) [Python](./Python/make-array-strictly-increasing.py) | _O(n^2 * logn)_ | _O(n)_ | Hard || |
 
@@ -1145,6 +1149,7 @@
 1090 | [Largest Values From Labels](https://leetcode.com/problems/largest-values-from-labels/) | [C++](./C++/largest-values-from-labels.cpp) [Python](./Python/largest-values-from-labels.py) | _O(nlogn)_ | _O(n)_ | Medium ||
 1111 | [Maximum Nesting Depth of Two Valid Parentheses Strings](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/) | [C++](./C++/maximum-nesting-depth-of-two-valid-parentheses-strings.cpp) [Python](./Python/maximum-nesting-depth-of-two-valid-parentheses-strings.py) | _O(n)_ | _O(1)_ | Medium ||
 1167| [Minimum Cost to Connect Sticks](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) | [C++](./C++/minimum-cost-to-connect-sticks.cpp) [Python](./Python/minimum-cost-to-connect-sticks.py) |  _O(nlogn)_ | _O(n)_   | Medium |🔒|| Heap
+1183| [Maximum Number of Ones](https://leetcode.com/problems/maximum-number-of-ones/) | [C++](./C++/maximum-number-of-ones.cpp) [Python](./Python/maximum-number-of-ones.py) |  _O(1)_ | _O(1)_   | Hard |🔒||
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1257,6 +1262,7 @@
 1164| [Product Price at a Given Date](https://leetcode.com/problems/product-price-at-a-given-date/) | [MySQL](./MySQL/product-price-at-a-given-date.sql) | _O(mlogn)_ | _O(m)_       | Medium           |🔒| |
 1173| [Immediate Food Delivery I](https://leetcode.com/problems/immediate-food-delivery-i/) | [MySQL](./MySQL/immediate-food-delivery-i.sql) | _O(n)_ | _O(1)_       | Easy           |🔒| |
 1174| [Immediate Food Delivery II](https://leetcode.com/problems/immediate-food-delivery-ii/) | [MySQL](./MySQL/immediate-food-delivery-ii.sql) | _O(n)_ | _O(m)_       | Medium           |🔒| |
+1179| [Reformat Department Table](https://leetcode.com/problems/reformat-department-table/) | [MySQL](./MySQL/reformat-department-table.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
