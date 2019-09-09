@@ -1093,7 +1093,6 @@
 1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | [C++](./C++/longest-common-subsequence.cpp) [Python](./Python/longest-common-subsequence.py) | _O(m * n)_ | _O(min(m, n))_ | Medium || |
 1155 | [Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/) | [C++](./C++/number-of-dice-rolls-with-target-sum.cpp) [Python](./Python/number-of-dice-rolls-with-target-sum.py) | _O(d * f * t)_ | _O(t)_ | Medium || |
 1182 | [Shortest Distance to Target Color](https://leetcode.com/problems/shortest-distance-to-target-color/) | [C++](./C++/shortest-distance-to-target-color.cpp) [Python](./Python/shortest-distance-to-target-color.py) | _O(n)_ | _O(n)_ | Medium |🔒| |
-
 1186| [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/)|[C++](./C++/maximum-subarray-sum-with-one-deletion.cpp) [Python](./Python/maximum-subarray-sum-with-one-deletion.py)| _O(n)_     | _O(1)_         | Medium         ||
 1187 | [Make Array Strictly Increasing](https://leetcode.com/problems/make-array-strictly-increasing/) | [C++](./C++/make-array-strictly-increasing.cpp) [Python](./Python/make-array-strictly-increasing.py) | _O(n^2 * logn)_ | _O(n)_ | Hard || |
 
