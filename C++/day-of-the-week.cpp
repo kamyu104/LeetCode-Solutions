@@ -13,7 +13,7 @@ public:
             --year;
         }
         int c = year / 100, y = year % 100;
-        const auto& w = ((y + y / 4 + c / 4 - 2 * c + 13 * (month + 1) / 5 + day - 1) % 7 + 7) % 7;
+        const auto& w = ((c / 4 - 2 * c + y + y / 4 + 13 * (month + 1) / 5 + day - 1) % 7 + 7) % 7;
         return DAYS[w];
     }
 };
