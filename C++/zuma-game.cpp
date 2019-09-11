@@ -1,4 +1,4 @@
-// for this problem, it should either relax restriction on time complexity or
+// for this problem, it should either relax time limit or
 // add a description that a ball can be only inserted beside a ball with same color
 
 // Time:  O((b+h) * h!*(b+h-1)!/(b-1)!)
