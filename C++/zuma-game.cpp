@@ -63,6 +63,8 @@ private:
 
 // Time:  O(b * b! * h!)
 // Space: O(b * b! * h!)
+// if a ball can be only inserted beside a ball with same color,
+// we can do by this solution
 class Solution_WRONG_GREEDY_BUT_ACCEPT {
 public:
     int findMinStep(string board, string hand) {
