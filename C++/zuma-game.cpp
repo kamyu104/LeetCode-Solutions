@@ -94,13 +94,13 @@ private:
                     break;
                 }
                 if (k < board.size() - 1 && board[k] == board[k + 1]) {
-                    string next_board = shrink(board.substr(0, k) + board.substr(k + 2));
-                    string next_hand = hand.substr(0, i) + hand.substr(i + 1);
+                    const auto& next_board = shrink(board.substr(0, k) + board.substr(k + 2));
+                    const auto& next_hand = hand.substr(0, i) + hand.substr(i + 1);
                     result = min(result, findMinStepHelper(next_board, next_hand, lookup) + 1);
                     ++k;
                 } else if (i > 0 && hand[i] == hand[i - 1]) {
-                    string next_board = shrink(board.substr(0, k) + board.substr(k + 1));
-                    string next_hand = hand.substr(0, i - 1) + hand.substr(i + 1);
+                    const auto& next_board = shrink(board.substr(0, k) + board.substr(k + 1));
+                    const auto& next_hand = hand.substr(0, i - 1) + hand.substr(i + 1);
                     result = min(result, findMinStepHelper(next_board, next_hand, lookup) + 2);
                 }
                 j = k + 1;
