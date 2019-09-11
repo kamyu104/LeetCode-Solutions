@@ -8,7 +8,6 @@ class Solution_TLE_BUT_CORRECT {
 public:
     int findMinStep(string board, string hand) {
         unordered_map<string, unordered_map<string, int>> lookup;
-        sort(hand.begin(), hand.end()); 
         int result = findMinStepHelper(board, hand, &lookup);
         return result > hand.size() ? -1 : result;
     }
