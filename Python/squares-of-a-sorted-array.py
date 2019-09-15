@@ -13,19 +13,12 @@ class Solution(object):
         left = right-1
 
         result = []
-        while 0 <= left and right < len(A):
-            if A[left]**2 < A[right]**2:
+        while 0 <= left or right < len(A):
+            if right == len(A) or \
+               (0 <= left and A[left]**2 < A[right]**2):
                 result.append(A[left]**2)
                 left -= 1
             else:
                 result.append(A[right]**2)
                 right += 1
-
-        while left >= 0:
-            result.append(A[left]**2)
-            left -= 1
-        while right < len(A):
-            result.append(A[right]**2)
-            right += 1
-
         return result
