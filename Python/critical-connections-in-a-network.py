@@ -21,7 +21,7 @@ class Solution(object):
                 dfs(edges, u, v, idx, lowlinks, lookup, result)
                 lowlinks[u] = min(lowlinks[u], lowlinks[v])
                 if lowlinks[v] > curr_idx:
-                    # if any lowlink of neighbors is large than curr_idx
+                    # if any lowlink of neighbors is larger than curr_idx
                     result.append([u, v])
         
         edges = [[] for _ in xrange(n)]
