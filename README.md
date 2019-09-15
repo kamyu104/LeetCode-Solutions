@@ -932,7 +932,7 @@
 0913| [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | [C++](./C++/cat-and-mouse.cpp) [Python](./Python/cat-and-mouse.py) | _O(n^3)_          | _O(n^2)_          | Hard           |||
 1020| [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | [C++](./C++/number-of-enclaves.cpp) [Python](./Python/number-of-enclaves.py) | _O(m * n)_          | _O(m * n)_          | Medium           |||
 1059| [All Paths from Source Lead to Destination](https://leetcode.com/problems/all-paths-from-source-lead-to-destination/) | [C++](./C++/all-paths-from-source-lead-to-destination.cpp) [Python](./Python/all-paths-from-source-lead-to-destination.py) | _O(n + e)_          | _O(n + e)_          | Medium           |🔒||
-1191| [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) | [C++](./C++/critical-connections-in-a-network.cpp) [Python](./Python/critical-connections-in-a-network.py) | _O(\|V\| + \|E\|)_           | _O(\|V\| + \|E\|)_          | Hard           |||
+1191| [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) | [C++](./C++/critical-connections-in-a-network.cpp) [Python](./Python/critical-connections-in-a-network.py) | _O(\|V\| + \|E\|)_           | _O(\|V\| + \|E\|)_          | Hard           || `Tarjan's Algorithm` |
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
