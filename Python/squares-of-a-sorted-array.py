@@ -12,7 +12,6 @@ class Solution(object):
         """
         right = bisect.bisect_left(A, 0)
         left = right-1
-
         result = []
         while 0 <= left or right < len(A):
             if right == len(A) or \
