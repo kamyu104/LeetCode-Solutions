@@ -36,6 +36,7 @@ private:
             dfs(edges, u, v, idx, lowlinks, lookup, result);
             (*lowlinks)[u] = min((*lowlinks)[u], (*lowlinks)[v]);
             if ((*lowlinks)[v] > curr_idx) {
+                // if any lowlink of neighbors is larger than curr_idx
                 result->push_back({u, v});
             }
         }
