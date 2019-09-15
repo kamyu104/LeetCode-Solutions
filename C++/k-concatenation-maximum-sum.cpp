@@ -14,8 +14,7 @@ public:
 
 private:
     int maxSubKArray(const vector<int>& nums, int k) {
-        int result = 0;
-        int curr = 0;
+        int result = 0, curr = 0;
         for (int i = 0; i < k; ++i) {
             for (const auto& x : nums) {
                 curr = max(curr + x, x);
