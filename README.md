@@ -932,7 +932,7 @@
 0913| [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | [C++](./C++/cat-and-mouse.cpp) [Python](./Python/cat-and-mouse.py) | _O(n^3)_          | _O(n^2)_          | Hard           |||
 1020| [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | [C++](./C++/number-of-enclaves.cpp) [Python](./Python/number-of-enclaves.py) | _O(m * n)_          | _O(m * n)_          | Medium           |||
 1059| [All Paths from Source Lead to Destination](https://leetcode.com/problems/all-paths-from-source-lead-to-destination/) | [C++](./C++/all-paths-from-source-lead-to-destination.cpp) [Python](./Python/all-paths-from-source-lead-to-destination.py) | _O(n + e)_          | _O(n + e)_          | Medium           |🔒||
-1191| [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) | [C++](./C++/critical-connections-in-a-network.cpp) [Python](./Python/critical-connections-in-a-network.py) | _O(\|V\| + \|E\|)_           | _O(\|V\| + \|E\|)_          | Hard           || `Tarjan's Algorithm` |
+1192| [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) | [C++](./C++/critical-connections-in-a-network.cpp) [Python](./Python/critical-connections-in-a-network.py) | _O(\|V\| + \|E\|)_           | _O(\|V\| + \|E\|)_          | Hard           || `Tarjan's Algorithm` |
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1098,7 +1098,7 @@
 1182 | [Shortest Distance to Target Color](https://leetcode.com/problems/shortest-distance-to-target-color/) | [C++](./C++/shortest-distance-to-target-color.cpp) [Python](./Python/shortest-distance-to-target-color.py) | _O(n)_ | _O(n)_ | Medium |🔒| |
 1186| [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/)|[C++](./C++/maximum-subarray-sum-with-one-deletion.cpp) [Python](./Python/maximum-subarray-sum-with-one-deletion.py)| _O(n)_     | _O(1)_         | Medium         ||
 1187 | [Make Array Strictly Increasing](https://leetcode.com/problems/make-array-strictly-increasing/) | [C++](./C++/make-array-strictly-increasing.cpp) [Python](./Python/make-array-strictly-increasing.py) | _O(n^2 * logn)_ | _O(n)_ | Hard || |
-1190 | [K-Concatenation Maximum Sum](https://leetcode.com/problems/k-concatenation-maximum-sum/) | [C++](./C++/k-concatenation-maximum-sum.cpp) [Python](./Python/k-concatenation-maximum-sum.py) | _O(n)_ | _O(1)_ | Medium || |
+1191 | [K-Concatenation Maximum Sum](https://leetcode.com/problems/k-concatenation-maximum-sum/) | [C++](./C++/k-concatenation-maximum-sum.cpp) [Python](./Python/k-concatenation-maximum-sum.py) | _O(n)_ | _O(1)_ | Medium || |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
