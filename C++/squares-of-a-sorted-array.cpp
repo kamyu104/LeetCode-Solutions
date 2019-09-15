@@ -11,8 +11,9 @@ public:
         int left = right - 1;
 
         vector<int> result;
-        while (0 <= left && right < A.size()) {
-            if (A[left] * A[left] < A[right] * A[right]) {
+        while (0 <= left || right < A.size()) {
+            if (right == A.size() ||
+                (0 <= left && A[left] * A[left] < A[right] * A[right])) {
                 result.emplace_back(A[left] * A[left]);
                 --left;
             } else {
@@ -20,16 +21,6 @@ public:
                 ++right;
             }
         }
-
-        while (left >= 0) {
-            result.emplace_back(A[left] * A[left]);
-            --left;
-        }
-        while (right < A.size()) {
-            result.emplace_back(A[right] * A[right]);
-            ++right;
-        }
-
         return result;
     }
 };
