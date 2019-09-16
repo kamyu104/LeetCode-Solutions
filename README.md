@@ -1216,7 +1216,7 @@
 1115| [Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately/)     | [C++](./C++/print-foobar-alternately.cpp) [Python](./Python/print-foobar-alternately.py)  | _O(n)_ | _O(1)_ | Medium ||
 1116| [Print Zero Even Odd](https://leetcode.com/problems/print-zero-even-odd/)| [C++](./C++/print-zero-even-odd.cpp) [Python](./Python/print-zero-even-odd.py) | _O(n)_ | _O(1)_ | Medium ||
 1117| [Building H2O](https://leetcode.com/problems/building-h2o/) | [C++](./C++/building-h2o.cpp) [Python](./Python/building-h2o.py) | _O(n)_ | _O(1)_| Hard |||
-1188| [Design Bounded Blocking Queue](https://leetcode.com/problems/design-bounded-blocking-queue/) | [C++](./C++/design-bounded-blocking-queue.cpp) [Python](./Python/design-bounded-blocking-queue.py) | _O(n)_ | _O(1)_| Medium |||
+1188| [Design Bounded Blocking Queue](https://leetcode.com/problems/design-bounded-blocking-queue/) | [C++](./C++/design-bounded-blocking-queue.cpp) [Python](./Python/design-bounded-blocking-queue.py) | _O(n)_ | _O(1)_| Medium | 🔒 ||
 
 ## SQL
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
