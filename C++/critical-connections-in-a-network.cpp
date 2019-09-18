@@ -1,7 +1,7 @@
 // Time:  O(|V| + |E|)
 // Space: O(|V| + |E|)
 
-// variant of Tarjan's algorithm
+// variant of Tarjan's algorithm (https://www.geeksforgeeks.org/bridge-in-a-graph/)
 class Solution {
 public:
     vector<vector<int>> criticalConnections(int n, vector<vector<int>>& connections) {
