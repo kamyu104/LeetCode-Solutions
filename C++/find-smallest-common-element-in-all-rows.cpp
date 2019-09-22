@@ -8,7 +8,7 @@ public:
         unordered_set<int> intersections(mat[0].cbegin(), mat[0].cend());
         for (int i = 1; i < mat.size(); ++i) {
             const auto a = move(intersections);
-            unordered_set<int> b(mat[i].cbegin(), mat[i].cend());
+            const unordered_set<int> b(mat[i].cbegin(), mat[i].cend());
             copy_if(a.cbegin(), a.cend(),
                     inserter(intersections, intersections.begin()),
                     [&b](const int x){ return b.count(x); });
