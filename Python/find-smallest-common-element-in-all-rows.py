@@ -11,7 +11,9 @@ class Solution(object):
         intersections = set(mat[0])
         for i in xrange(1, len(mat)):
             intersections &= set(mat[i])
-        return min(intersections or [-1])
+            if not intersections:
+                return -1
+        return min(intersections)
 
 
 # Time:  O(m * n)
