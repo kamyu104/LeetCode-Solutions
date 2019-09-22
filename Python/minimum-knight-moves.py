@@ -29,7 +29,7 @@ class Solution(object):
         x, y = abs(x), abs(y)
         if x < y:
             x, y = y, x
-        lookup = {(0, 0):0, (1, 0):3, (2, 2):4}  # special cses
+        lookup = {(0, 0):0, (1, 0):3, (2, 2):4}  # special cases
         if (x, y) in lookup:
             return lookup[(x, y)]
         delta = x-y
