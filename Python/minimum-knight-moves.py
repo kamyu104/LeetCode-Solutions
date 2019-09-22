@@ -14,9 +14,9 @@ class Solution(object):
                 x, y = y, x
             if x == 0 and y == 0:
                 return 0
-            if x == 1 and y == 1:
+            if (x, y) == (1, 1):
                 return 2  # (0, 0) => (-1, 2) => (1, 1)
-            if x == 1 and y == 0:
+            if (x, y) == (1, 0):
                 return 3  # (0, 0) => (-2, 1) => (0, 2) => (1, 0)
             if (x, y) not in lookup:
                 lookup[(x, y)] = min(dp(x-1, y-2, lookup),
