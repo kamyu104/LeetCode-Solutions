@@ -8,16 +8,13 @@ class Solution(object):
         :type y: int
         :rtype: int
         """
+        COST = {(0, 0):0, (1, 1):2, (1, 0):3}  # special cases
         def dp(x, y, lookup):
             x, y = abs(x), abs(y)
             if x < y:
                 x, y = y, x
-            if (x, y) == (0, 0):
-                return 0
-            if (x, y) == (1, 1):
-                return 2  # (0, 0) => (-1, 2) => (1, 1)
-            if (x, y) == (1, 0):
-                return 3  # (0, 0) => (-2, 1) => (0, 2) => (1, 0)
+            if (x, y) in COST:
+                return COST[(x, y)]
             if (x, y) not in lookup:
                 lookup[(x, y)] = min(dp(x-1, y-2, lookup),
                                      dp(x-2, y-1, lookup)) + 1
