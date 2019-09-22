@@ -1,5 +1,5 @@
 // Time:  O(m * n)
-// Space: O(m)
+// Space: O(n)
 
 class Solution {
 public:
@@ -20,7 +20,7 @@ public:
 };
 
 // Time:  O(m * n)
-// Space: O(m)
+// Space: O(n)
 class Solution2 {
 public:
     int smallestCommonElement(vector<vector<int>>& mat) {
