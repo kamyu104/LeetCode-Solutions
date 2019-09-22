@@ -65,7 +65,7 @@ public:
     };
 
     int minKnightMoves(int x, int y) {
-        unordered_map<pair<int, int>, int, PairHash<int>> lookup =
+        static unordered_map<pair<int, int>, int, PairHash<int>> lookup =
             {{{0, 0}, 0}, {{1, 1}, 2}, {{1, 0}, 3}};  // special cases
         return dp(x, y, &lookup);
     }
