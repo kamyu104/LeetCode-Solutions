@@ -2,7 +2,7 @@
 // Space: O(1)
 
 class Solution {
-public:
+private:
     template <typename T>
     struct PairHash {
         size_t operator()(const pair<T, T>& p) const {
@@ -13,6 +13,7 @@ public:
         }
     };
 
+public:
     int minKnightMoves(int x, int y) {
         // we can observe from:
         // [0]
@@ -54,6 +55,11 @@ public:
 // Space: O(n^2)
 class Solution2 {
 public:
+    int minKnightMoves(int x, int y) {
+        return dp(x, y);
+    }
+
+private:
     template <typename T>
     struct PairHash {
         size_t operator()(const pair<T, T>& p) const {
@@ -64,11 +70,6 @@ public:
         }
     };
 
-    int minKnightMoves(int x, int y) {
-        return dp(x, y);
-    }
-
-private:
     int dp(int x, int y) {
         static unordered_map<pair<int, int>, int, PairHash<int>> lookup =
             {{{0, 0}, 0}, {{1, 1}, 2}, {{1, 0}, 3}};  // special cases
