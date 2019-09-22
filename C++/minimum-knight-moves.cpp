@@ -21,18 +21,14 @@ public:
 private:
     int dp(int x, int y,
            unordered_map<pair<int, int>, int, PairHash<int>> *lookup) {
+        static const unordered_map<pair<int, int>, int, PairHash<int>> COST =
+            {{{0, 0}, 0}, {{1, 1}, 2}, {{1, 0}, 3}};  // special cases
         x = abs(x), y = abs(y);
         if (x < y) {
             swap(x, y);
         }
-        if (x == 0 && y == 0) {
-            return 0;
-        }
-        if (x == 1 && y == 1) {
-            return 2;  // (0, 0) => (-1, 2) => (1, 1)
-        }
-        if (x == 1 && y == 0) {
-            return 3;  // (0, 0) => (-2, 1) => (0, 2) => (1, 0)
+        if (COST.count({x, y})) {
+            return COST.at({x, y});
         }
         if (!lookup->count({x, y})) {
             (*lookup)[{x, y}] = min(dp(x - 1, y - 2, lookup),
