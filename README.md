@@ -220,6 +220,7 @@
 1169 | [Invalid Transactions](https://leetcode.com/problems/invalid-transactions/) | [C++](./C++/invalid-transactions.cpp) [Python](./Python/invalid-transactions.py) | _O(nlogn)_ | _O(n)_      | Medium         || Sliding Window, Line Sweep
 1176 | [Diet Plan Performance](https://leetcode.com/problems/diet-plan-performance/) | [C++](./C++/diet-plan-performance.cpp) [Python](./Python/diet-plan-performance.py) | _O(n)_ | _O(1)_      | Easy         || Sliding Window
 1184 | [Distance Between Bus Stops](https://leetcode.com/problems/distance-between-bus-stops/) | [C++](./C++/distance-between-bus-stops.cpp) [Python](./Python/distance-between-bus-stops.py) | _O(n)_ | _O(1)_      | Easy         || 
+1200 | [Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/) | [C++](./C++/minimum-absolute-difference.cpp) [Python](./Python/minimum-absolute-difference.py) | _O(nlogn)_ | _O(n)_      | Easy         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -825,6 +826,7 @@
 1095 |[Find in Mountain Array](https://leetcode.com/problems/find-in-mountain-array/)| [C++](./C++/find-in-mountain-array.cpp)  [Python](./Python/find-in-mountain-array.py) | _O(logn)_ | _O(1)_ | Hard | | |
 1110 | [Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/) | [C++](./C++/delete-nodes-and-return-forest.cpp) [Python](./Python/delete-nodes-and-return-forest.py) | _O(n)_ | _O(h + d)_ | Medium | |
 1170 | [Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/) | [C++](./C++/compare-strings-by-frequency-of-the-smallest-character.cpp) [Python](./Python/compare-strings-by-frequency-of-the-smallest-character.py) | _O((m + n)logn)_ | _O(n)_ | Easy | |
+1201 | [Ugly Number III](https://leetcode.com/problems/ugly-number-iii/) | [C++](./C++/ugly-number-iii.cpp) [Python](./Python/ugly-number-iii.py) | _O(logn)_ | _O(1)_ | Medium | | Inclusion-Exclusion Principle
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -889,6 +891,7 @@
 1161|[Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)| [C++](./C++/maximum-level-sum-of-a-binary-tree.cpp) [Python](./Python/maximum-level-sum-of-a-binary-tree.py)| _O(n)_ | _O(w)_ | Medium | | DFS |
 1162|[As Far from Land as Possible](https://leetcode.com/problems/as-far-from-land-as-possible/)| [C++](./C++/as-far-from-land-as-possible.cpp) [Python](./Python/as-far-from-land-as-possible.py)| _O(m * n)_ | _O(m * n)_ | Medium | | |
 1163|[Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order/)| [C++](./C++/last-substring-in-lexicographical-order.cpp) [Python](./Python/last-substring-in-lexicographical-order.py)| _O(n)_ | _O(n)_ | Hard | | |
+1203| [Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/)| [C++](./C++/sort-items-by-groups-respecting-dependencies.cpp) [Python](./Python/sort-items-by-groups-respecting-dependencies.py)   | _O(n + e)_          | _O(n + e)_          | Hard         || Topological Sort |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -935,6 +938,7 @@
 1020| [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | [C++](./C++/number-of-enclaves.cpp) [Python](./Python/number-of-enclaves.py) | _O(m * n)_          | _O(m * n)_          | Medium           |||
 1059| [All Paths from Source Lead to Destination](https://leetcode.com/problems/all-paths-from-source-lead-to-destination/) | [C++](./C++/all-paths-from-source-lead-to-destination.cpp) [Python](./Python/all-paths-from-source-lead-to-destination.py) | _O(n + e)_          | _O(n + e)_          | Medium           |🔒||
 1192| [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) | [C++](./C++/critical-connections-in-a-network.cpp) [Python](./Python/critical-connections-in-a-network.py) | _O(\|V\| + \|E\|)_           | _O(\|V\| + \|E\|)_          | Hard           || `Tarjan's Algorithm`, `Bridge Finding Algorithm` |
+1202| [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | [C++](./C++/smallest-string-with-swaps.cpp) [Python](./Python/smallest-string-with-swaps.py) | _O(nlogn)_          | _O(n)_          | Medium           || Union Find |
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
