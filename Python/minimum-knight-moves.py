@@ -38,6 +38,7 @@ class Solution(object):
         # if 2y <= x, every period 4 of y with same delta is increased by 2
         return delta - 2*((delta-y)//4)
 
+
 # Time:  O(n^2)
 # Space: O(n^2)
 class Solution2(object):
