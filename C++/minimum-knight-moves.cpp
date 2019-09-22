@@ -65,22 +65,20 @@ public:
     };
 
     int minKnightMoves(int x, int y) {
-        static unordered_map<pair<int, int>, int, PairHash<int>> lookup =
-            {{{0, 0}, 0}, {{1, 1}, 2}, {{1, 0}, 3}};  // special cases
-        return dp(x, y, &lookup);
+        return dp(x, y);
     }
 
 private:
-    int dp(int x, int y,
-           unordered_map<pair<int, int>, int, PairHash<int>> *lookup) {
+    int dp(int x, int y) {
+        static unordered_map<pair<int, int>, int, PairHash<int>> lookup =
+            {{{0, 0}, 0}, {{1, 1}, 2}, {{1, 0}, 3}};  // special cases
         x = abs(x), y = abs(y);
         if (x < y) {
             swap(x, y);
         }
-        if (!lookup->count({x, y})) {
-            (*lookup)[{x, y}] = min(dp(x - 1, y - 2, lookup),
-                                    dp(x - 2, y - 1, lookup)) + 1;
+        if (!lookup.count({x, y})) {
+            lookup[{x, y}] = min(dp(x - 1, y - 2), dp(x - 2, y - 1)) + 1;
         }
-        return (*lookup)[{x, y}];
+        return lookup[{x, y}];
     }
 };
