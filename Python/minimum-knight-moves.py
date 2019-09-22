@@ -8,7 +8,7 @@ class Solution(object):
         :type y: int
         :rtype: int
         """
-        # we can observere from:
+        # we can observe from:
         # [0]
         # [3, 2]
         # [2, 1, 4]
