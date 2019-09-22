@@ -36,10 +36,10 @@ public:
         if (x < y) {
             swap(x, y);
         }
-        unordered_map<pair<int, int>, int, PairHash<int>> lookup =
+        static const unordered_map<pair<int, int>, int, PairHash<int>> lookup =
             {{{0, 0}, 0}, {{1, 0}, 3}, {{2, 2}, 4}};  // special cases
         if (lookup.count({x, y})) {
-            return lookup[{x, y}];
+            return lookup.at({x, y});
         }
         const auto& delta = x - y;
         if (y > delta) {  // if 2y > x, every period 3 of y with same delta is increased by 2
