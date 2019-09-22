@@ -12,10 +12,11 @@ public:
             copy_if(a.cbegin(), a.cend(),
                     inserter(intersections, intersections.begin()),
                     [&b](const int x){ return b.count(x); });
+            if (intersections.empty()) {
+                return -1;
+            }
         }
-        return intersections.empty()
-               ? -1
-               : *min_element(intersections.cbegin(), intersections.cend());
+        return *min_element(intersections.cbegin(), intersections.cend());
     }
 };
 
