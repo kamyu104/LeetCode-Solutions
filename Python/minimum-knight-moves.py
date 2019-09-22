@@ -12,7 +12,7 @@ class Solution(object):
             x, y = abs(x), abs(y)
             if x < y:
                 x, y = y, x
-            if x == 0 and y == 0:
+            if (x, y) == (0, 0):
                 return 0
             if (x, y) == (1, 1):
                 return 2  # (0, 0) => (-1, 2) => (1, 1)
