@@ -46,8 +46,8 @@ class Solution(object):
         return k - 2*((k-y)//4)
 
 
-# Time:  O(n^2)
-# Space: O(n^2)
+# Time:  O(n)
+# Space: O(n)
 class Solution2(object):
     def __init__(self):
         self.__lookup = {(0, 0):0, (1, 1):2, (1, 0):3}  # special cases
