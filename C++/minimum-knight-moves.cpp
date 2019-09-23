@@ -42,15 +42,19 @@ public:
         if (lookup.count({x, y})) {
             return lookup.at({x, y});
         }
-        const auto& delta = x - y;
-        if (y > delta) {
-            // if 2y > x, every period 3 of y with same delta is increased by 2 (diagonal line)
-            // ex. (1, 1) ~ (11, 11) ~ ... : 2,4(special case),2 => 4,4,4 => 6,6,6 => 8,8,8 => ...
-            return delta + 2 * ((y - delta - 1) / 3 + 1);
+        const auto& k = x - y;
+        if (y > k) {
+            // if 2y > x, every period 3 of y with same delta is increased by 2
+            // and start from (2k, k) with (k) (diagonal line)
+            // ex. (0, 0) ~ (12, 12) ~ ... : 0 => 2,4(special case),2 => 4,4,4 => 6,6,6 => 8,8,8 => ...
+            // ex. (2, 1) ~ (14, 13) ~ ... : 1 => 3,3,3 => 5,5,5 => 7,7,7 => 9,9,9 => ...
+            return k + 2 * ((y - k - 1) / 3 + 1);
         }
-        // if 2y <= x, every period 4 of y with same delta is increased by 2 (vertical line)
+        // if 2y <= x, every period 4 of y with same delta is increased by 2
+        // and start from (2k, k) with (k) (vertical line)
         // ex. (0, 0) ~ (11, 0) ~ ... : 0,3(special case),2,3 => 2,3,4,5 => 4,5,6,7 => ...
-        return delta - 2 * ((delta - y) / 4);
+        // ex. (2, 1) ~ (13, 1) ~ ... : 1,2,3,4 => 3,4,5,6 => 5,6,7,8 => ...
+        return k - 2 * ((k - y) / 4);
     }
 };
 
