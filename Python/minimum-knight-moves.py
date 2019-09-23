@@ -62,7 +62,7 @@ class Solution2(object):
             x, y = abs(x), abs(y)
             if x < y:
                 x, y = y, x
-            if (x, y) not in self.__lookup:
+            if (x, y) not in self.__lookup:  # greedy, smaller x, y is always better if not special cases
                 self.__lookup[(x, y)] = min(dp(x-1, y-2), dp(x-2, y-1)) + 1
             return self.__lookup[(x, y)]
         return dp(x, y)
