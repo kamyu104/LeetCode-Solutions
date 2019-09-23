@@ -11,19 +11,19 @@ class Solution(object):
         # we can observe from:
         # [0]
         # [3, 2]
-        # [2, 1, 4]
+        # [2,(1),4]
         # [3, 2, 3, 2]
-        # [2, 3, 2, 3, 4]
+        # [2, 3,(2) 3, 4]
         # [3, 4, 3, 4, 3, 4]
-        # [4, 3, 4, 3, 4, 5, 4]
+        # [4, 3, 4,(3),4, 5, 4]
         # [5, 4, 5, 4, 5, 4, 5, 6]
-        # [4, 5, 4, 5, 4, 5, 6, 5, 6]
+        # [4, 5, 4, 5,(4),5, 6, 5, 6]
         # [5, 6, 5, 6, 5, 6, 5, 6, 7, 6]
-        # [6, 5, 6, 5, 6, 5, 6, 7, 6, 7, 8]
+        # [6, 5, 6, 5, 6,(5),6, 7, 6, 7, 8]
         # [7, 6, 7, 6, 7, 6, 7, 6, 7, 8, 7, 8]
-        # [6, 7, 6, 7, 6, 7, 6, 7, 8, 7, 8, 9, 8]
+        # [6, 7, 6, 7, 6, 7,(6),7, 8, 7, 8, 9, 8]
         # [7, 8, 7, 8, 7, 8, 7, 8, 7, 8, 9, 8, 9, 10]
-        # [8, 7, 8, 7, 8, 7, 8, 7, 8, 9, 8, 9, 10, 9, 10]
+        # [8, 7, 8, 7, 8, 7, 8,(7),8, 9, 8, 9, 10, 9, 10]
         # [9, 8, 9, 8, 9, 8, 9, 8, 9, 8, 9, 10, 9, 10, 11, 10]
 
         x, y = abs(x), abs(y)
@@ -33,9 +33,12 @@ class Solution(object):
         if (x, y) in lookup:
             return lookup[(x, y)]
         delta = x-y
-        if y > delta:  # if 2y > x, every period 3 of y with same delta is increased by 2
+        if y > delta:
+            # if 2y > x, every period 3 of y with same delta is increased by 2
+            # ex. (1, 1) ~ (11, 11) ~ ... : 2,4(special case),2 => 4,4,4 => 6,6,6 => 8,8,8 => ...
             return delta - 2*((delta-y)//3)
         # if 2y <= x, every period 4 of y with same delta is increased by 2
+        # ex. (0, 0) ~ (0, 11) ~ ... : 0,3(special case),2,3 => 2,3,4,5 => 4,5,6,7 => ...
         return delta - 2*((delta-y)//4)
 
 
