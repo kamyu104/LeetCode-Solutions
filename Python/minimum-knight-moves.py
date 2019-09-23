@@ -34,10 +34,10 @@ class Solution(object):
             return lookup[(x, y)]
         delta = x-y
         if y > delta:
-            # if 2y > x, every period 3 of y with same delta is increased by 2
+            # if 2y > x, every period 3 of y with same delta is increased by 2 (diagonal line)
             # ex. (1, 1) ~ (11, 11) ~ ... : 2,4(special case),2 => 4,4,4 => 6,6,6 => 8,8,8 => ...
             return delta - 2*((delta-y)//3)
-        # if 2y <= x, every period 4 of y with same delta is increased by 2
+        # if 2y <= x, every period 4 of y with same delta is increased by 2 (vertical line)
         # ex. (0, 0) ~ (11, 0) ~ ... : 0,3(special case),2,3 => 2,3,4,5 => 4,5,6,7 => ...
         return delta - 2*((delta-y)//4)
 
