@@ -84,7 +84,7 @@ private:
         if (x < y) {
             swap(x, y);
         }
-        if (!lookup.count({x, y})) {
+        if (!lookup.count({x, y})) {  // greedy, smaller x, y is always better if not special cases
             lookup[{x, y}] = min(dp(x - 1, y - 2), dp(x - 2, y - 1)) + 1;
         }
         return lookup[{x, y}];
