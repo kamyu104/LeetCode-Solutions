@@ -4,10 +4,10 @@
 SELECT person_name 
 FROM   (SELECT person_name, 
                @accu := @accu + weight AS accu 
-        FROM   (SELECT * 
+        FROM   (SELECT person_name, weight
                 FROM   queue 
                 ORDER  BY turn) q, 
-               (SELECT @accu := 0) vars) tmp 
+               (SELECT @accu := 0) vars) t 
 WHERE  accu <= 1000 
 ORDER  BY accu DESC 
 LIMIT  1; 
