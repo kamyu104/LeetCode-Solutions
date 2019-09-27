@@ -13,7 +13,7 @@ FROM (
                 amount,
                 'approved' AS TYPE
          FROM Transactions AS t
-         WHERE state='approved' )
+         WHERE state = 'approved' )
       UNION ALL
         (SELECT left(c.trans_date, 7) AS MONTH,
                 t.country,
