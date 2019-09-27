@@ -1,21 +1,25 @@
 # Time:  O(n)
 # Space: O(n)
 
-select month, country,
-    sum(IF( type = "approved", 1, 0)) as approved_count,
-    sum(IF( type = "approved", amount, 0)) as approved_amount,
-    sum(IF( type = "chargeback", 1, 0)) as chargeback_count,
-    sum(IF( type = "chargeback", amount, 0)) as chargeback_amount
-from (
-    (
-    select left(t.trans_date, 7) as month, t.country, amount,'approved' as type
-    from Transactions as t
-    where state='approved'
-    ) 
-    union all (
-    select left(c.trans_date, 7) as month, t.country, amount,'chargeback' as type
-    from Transactions as t inner join Chargebacks as c
-    on t.id = c.trans_id
-    )
-) as tt
-group by tt.month, tt.country
+SELECT MONTH,
+       country,
+       sum(IF(TYPE = "approved", 1, 0)) AS approved_count,
+       sum(IF(TYPE = "approved", amount, 0)) AS approved_amount,
+       sum(IF(TYPE = "chargeback", 1, 0)) AS chargeback_count,
+       sum(IF(TYPE = "chargeback", amount, 0)) AS chargeback_amount
+FROM (
+        (SELECT left(t.trans_date, 7) AS MONTH,
+                t.country,
+                amount,
+                'approved' AS TYPE
+         FROM Transactions AS t
+         WHERE state='approved' )
+      UNION ALL
+        (SELECT left(c.trans_date, 7) AS MONTH,
+                t.country,
+                amount,
+                'chargeback' AS TYPE
+         FROM Transactions AS t
+         INNER JOIN Chargebacks AS c ON t.id = c.trans_id)) AS tt
+GROUP BY tt.month,
+         tt.country;
