@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-SELECT MONTH,
+SELECT month,
        country,
        sum(IF(TYPE = 'approved', 1, 0)) AS approved_count,
        sum(IF(TYPE = 'approved', amount, 0)) AS approved_amount,
