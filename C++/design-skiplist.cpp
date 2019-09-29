@@ -43,7 +43,7 @@ public:
         }
     }
     
-    bool search(int target) {
+    bool search(int target) const {
         return find(target, find_prev_nodes(target)) != nullptr;
     }
     
@@ -82,7 +82,7 @@ public:
     }
     
 private:
-    SkipNode *find(int num, const vector<SkipNode *>& prevs) {
+    SkipNode *find(int num, const vector<SkipNode *>& prevs) const {
         if (!prevs.empty()) {
             auto candidate = prevs[0]->nexts[0];
             if (candidate && candidate->num == num) {
@@ -92,7 +92,7 @@ private:
         return nullptr;
     }
     
-    vector<SkipNode *> find_prev_nodes(int num) {
+    vector<SkipNode *> find_prev_nodes(int num) const {
         vector<SkipNode *> prevs(head_->nexts.size());
         auto curr = head_;
         for (int i = head_->nexts.size() - 1; i >= 0; --i) {
@@ -116,7 +116,7 @@ private:
         return level;
     }
     
-    void print_list() {
+    void print_list() const {
         for (int i = head_->nexts.size() - 1; i >= 0; --i) {
             auto curr = head_->nexts[i];
             cout << curr->num;
@@ -163,7 +163,7 @@ public:
         
     }
     
-    bool search(int target) {
+    bool search(int target) const {
         return find(target, find_prev_nodes(target)) != nullptr;
     }
     
@@ -201,7 +201,7 @@ public:
     }
 
 private:
-    shared_ptr<SkipNode> find(int num, const vector<shared_ptr<SkipNode>>& prevs) {
+    shared_ptr<SkipNode> find(int num, const vector<shared_ptr<SkipNode>>& prevs) const {
         if (!prevs.empty()) {
             auto candidate = prevs[0]->nexts[0];
             if (candidate && candidate->num == num) {
@@ -211,7 +211,7 @@ private:
         return nullptr;
     }
     
-    vector<shared_ptr<SkipNode>> find_prev_nodes(int num) {
+    vector<shared_ptr<SkipNode>> find_prev_nodes(int num) const {
         vector<shared_ptr<SkipNode>> prevs(head_->nexts.size());
         auto curr = head_;
         for (int i = head_->nexts.size() - 1; i >= 0; --i) {
@@ -235,7 +235,7 @@ private:
         return level;
     }
     
-    void print_list() {
+    void print_list() const {
         for (int i = head_->nexts.size() - 1; i >= 0; --i) {
             auto curr = head_->nexts[i];
             cout << curr->num;
