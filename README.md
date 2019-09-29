@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1205%20%2F%201205-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Update](https://img.shields.io/badge/update-weekly-green.svg) ![Progress](https://img.shields.io/badge/progress-1210%20%2F%201210-ff69b4.svg) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104) ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)
 
 * R.I.P. to my old Leetcode repository, where there were `5.7k+` stars and `2.2k+` forks (ever the top 3 in the field).
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -221,6 +221,7 @@
 1176 | [Diet Plan Performance](https://leetcode.com/problems/diet-plan-performance/) | [C++](./C++/diet-plan-performance.cpp) [Python](./Python/diet-plan-performance.py) | _O(n)_ | _O(1)_      | Easy         || Sliding Window
 1184 | [Distance Between Bus Stops](https://leetcode.com/problems/distance-between-bus-stops/) | [C++](./C++/distance-between-bus-stops.cpp) [Python](./Python/distance-between-bus-stops.py) | _O(n)_ | _O(1)_      | Easy         || 
 1200 | [Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/) | [C++](./C++/minimum-absolute-difference.cpp) [Python](./Python/minimum-absolute-difference.py) | _O(nlogn)_ | _O(n)_      | Easy         || 
+1208 | [Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/) | [C++](./C++/get-equal-substrings-within-budget.cpp) [Python](./Python/get-equal-substrings-within-budget.py) | _O(n)_ | _O(1)_      | Medium         || Sliding Window
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -397,6 +398,7 @@
 1063| [Number of Valid Subarrays](https://leetcode.com/problems/number-of-valid-subarrays/)| [C++](./C++/number-of-valid-subarrays.cpp)  [Python](./Python/number-of-valid-subarrays.py)| _O(n)_ | _O(n)_         | Hard           | 🔒 | Mono Stack
 1130| [Minimum Cost Tree From Leaf Values](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/)| [C++](./C++/minimum-cost-tree-from-leaf-values.cpp)  [Python](./Python/minimum-cost-tree-from-leaf-values.py)| _O(n)_ | _O(n)_         | Medium           || Mono Stack
 1190| [Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/)| [C++](./C++/reverse-substrings-between-each-pair-of-parentheses.cpp)  [Python](./Python/reverse-substrings-between-each-pair-of-parentheses.py)| _O(n^2)_ | _O(n)_         | Medium           ||
+1209 | [Remove All Adjacent Duplicates in String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/) | [C++](./C++/remove-all-adjacent-duplicates-in-string-ii.cpp) [Python](./Python/remove-all-adjacent-duplicates-in-string-ii.py) | _O(n)_ | _O(n)_      | Medium         ||
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -567,6 +569,7 @@
 1160| [Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) |[C++](./C++/find-words-that-can-be-formed-by-characters.cpp)  [Python](./Python/find-words-that-can-be-formed-by-characters.py) | _O(m * n)_ | _O(1)_ | Easy         ||
 1165| [Single-Row Keyboard](https://leetcode.com/problems/single-row-keyboard/) | [C++](./C++/single-row-keyboard.cpp) [Python](./Python/single-row-keyboard.py)  | _O(n)_ |  _O(1)_ | Easy         |🔒||
 1198| [Find Smallest Common Element in All Rows](https://leetcode.com/problems/find-smallest-common-element-in-all-rows/) | [C++](./C++/find-smallest-common-element-in-all-rows.cpp) [Python](./Python/find-smallest-common-element-in-all-rows.py)  | _O(m * n)_ |  _O(n)_ | Medium         |🔒||
+1207| [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | [C++](./C++/unique-number-of-occurrences.cpp) [Python](./Python/unique-number-of-occurrences.py)  | _O(n)_ |  _O(n)_ | Easy         |||
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -892,6 +895,7 @@
 1162|[As Far from Land as Possible](https://leetcode.com/problems/as-far-from-land-as-possible/)| [C++](./C++/as-far-from-land-as-possible.cpp) [Python](./Python/as-far-from-land-as-possible.py)| _O(m * n)_ | _O(m * n)_ | Medium | | |
 1163|[Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order/)| [C++](./C++/last-substring-in-lexicographical-order.cpp) [Python](./Python/last-substring-in-lexicographical-order.py)| _O(n)_ | _O(n)_ | Hard | | |
 1203| [Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/)| [C++](./C++/sort-items-by-groups-respecting-dependencies.cpp) [Python](./Python/sort-items-by-groups-respecting-dependencies.py)   | _O(n + e)_          | _O(n + e)_          | Hard         || Topological Sort |
+1210| [Minimum Moves to Reach Target with Rotations](https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/)| [C++](./C++/minimum-moves-to-reach-target-with-rotations.cpp) [Python](./Python/minimum-moves-to-reach-target-with-rotations.py)   | _O(n)_          | _O(n)_          | Hard         |||
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1216,6 +1220,7 @@
 1146| [Snapshot Array](https://leetcode.com/problems/snapshot-array/) | [C++](./C++/snapshot-array.cpp) [Python](./Python/snapshot-array.py) | set: _O(1)_<br> get: _O(logn)_ | _O(n)_ | Medium |||
 1166| [Design File System](https://leetcode.com/problems/design-file-system/) | [C++](./C++/design-file-system.cpp) [Python](./Python/design-file-system.py) | create: _O(n)_<br>get: _O(n)_ | _O(n)_ | Medium |🔒| |
 1172| [Dinner Plate Stacks](https://leetcode.com/problems/dinner-plate-stacks/) | [C++](./C++/dinner-plate-stacks.cpp) [Python](./Python/dinner-plate-stacks.py) | push: _O(logn)_<br>pop: _O(1)_, amortized<br>popAtStack: _(logn)_ | _O(n * c)_ | Hard | | |
+1206| [Design Skiplist](https://leetcode.com/problems/design-skiplist/) | [C++](./C++/design-skiplist.cpp) [Python](./Python/design-skiplist.py) | _O(logn)_, amortized<br> | _O(n)_ | Hard | | |
 
 ## Concurrency
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
