@@ -47,12 +47,12 @@ class Skiplist(object):
         :rtype: bool
         """
         prev_nodes = self.__find_prev_nodes(num)
-        curr_level_node = self.__find(num, prev_nodes)
-        if not curr_level_node:
+        curr = self.__find(num, prev_nodes)
+        if not curr:
             return False
         self.__len -= 1   
-        for i in reversed(xrange(len(curr_level_node.next))):
-            prev_nodes[i].next[i] = curr_level_node.next[i]
+        for i in reversed(xrange(len(curr.next))):
+            prev_nodes[i].next[i] = curr.next[i]
             if not self.__head.next[i]:
                 self.__head.next.pop()
         return True
@@ -66,11 +66,11 @@ class Skiplist(object):
 
     def __find_prev_nodes(self, num):
         prev_nodes = [None]*len(self.__head.next)
-        curr_level_node = self.__head
+        curr = self.__head
         for i in reversed(xrange(len(self.__head.next))):
-            while curr_level_node.next[i] and curr_level_node.next[i].num < num:
-                curr_level_node = curr_level_node.next[i]
-            prev_nodes[i] = curr_level_node
+            while curr.next[i] and curr.next[i].num < num:
+                curr = curr.next[i]
+            prev_nodes[i] = curr
         return prev_nodes
 
     def __random_height(self):
