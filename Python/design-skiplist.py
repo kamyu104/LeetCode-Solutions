@@ -1,7 +1,7 @@
 # Time:  O(logn) on average for each operation
 # Space: O(n)
 
-# see proof in reference :
+# see proof in references:
 # 1. https://kunigami.blog/2012/09/25/skip-lists-in-python/
 # 2. http://opendatastructures.org/ods-cpp/4_4_Analysis_Skiplists.html
 # 3. https://brilliant.org/wiki/skip-lists/
