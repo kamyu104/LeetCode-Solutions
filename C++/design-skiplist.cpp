@@ -105,10 +105,11 @@ private:
     }
     
     int random_level() {
-        static const int P_INV = 2;  // P_INV = 4 in redis implementation
+        static const int P_NUMERATOR = 1;
+        static const int P_DENOMINATOR = 2;  // P = 1/4 in redis implementation
         static const int MAX_LEVEL = 32;  // enough for 2^32 elements
         int level = 1;
-        while (uniform_int_distribution<int>{1, P_INV}(gen_) <= 1 &&
+        while (uniform_int_distribution<int>{1, P_DENOMINATOR}(gen_) <= P_NUMERATOR &&
                level < MAX_LEVEL) {
             ++level;
         }
@@ -223,10 +224,11 @@ private:
     }
     
     int random_level() {
-        static const int P_INV = 2;  // P_INV = 4 in redis implementation
+        static const int P_NUMERATOR = 1;
+        static const int P_DENOMINATOR = 2;  // P = 1/4 in redis implementation
         static const int MAX_LEVEL = 32;  // enough for 2^32 elements
         int level = 1;
-        while (uniform_int_distribution<int>{1, P_INV}(gen_) <= 1 &&
+        while (uniform_int_distribution<int>{1, P_DENOMINATOR}(gen_) <= P_NUMERATOR &&
                level < MAX_LEVEL) {
             ++level;
         }
