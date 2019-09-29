@@ -17,7 +17,6 @@ class Skiplist(object):
     def __init__(self):
         self.__head = SkipNode()
         self.__len = 0
-        self.__max_height = 0
 
     def search(self, target):
         """
@@ -33,8 +32,8 @@ class Skiplist(object):
         :rtype: None
         """
         node = SkipNode(self.__random_height(), num)
-        self.__max_height = max(self.__max_height, len(node.next))
-        self.__head.next.extend([None]*(self.__max_height-len(self.__head.next)))
+        if len(self.__head.next) < len(node.next): 
+            self.__head.next.extend([None]*(len(node.next)-len(self.__head.next)))
         prev_nodes = self.__find_prev_nodes(num)
         for i in xrange(len(node.next)):
             node.next[i] = prev_nodes[i].next[i]
@@ -54,7 +53,6 @@ class Skiplist(object):
         for i in reversed(xrange(len(curr_level_node.next))):
             prev_nodes[i].next[i] = curr_level_node.next[i]
             if not self.__head.next[i]:
-                self.__max_height -= 1
                 self.__head.next.pop()
         return True
     
@@ -70,9 +68,9 @@ class Skiplist(object):
         return None
 
     def __find_prev_nodes(self, num):
-        prev_nodes = {}
+        prev_nodes = [None]*len(self.__head.next)
         curr_level_node = self.__head
-        for i in reversed(xrange(self.__max_height)):
+        for i in reversed(xrange(len(self.__head.next))):
             while curr_level_node.next[i] and curr_level_node.next[i].num < num:
                 curr_level_node = curr_level_node.next[i]
             prev_nodes[i] = curr_level_node
