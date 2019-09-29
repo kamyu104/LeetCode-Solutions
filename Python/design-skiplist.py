@@ -78,6 +78,9 @@ class Skiplist(object):
             level += 1
         return level
     
+    def __contains__(self, key):
+        return True if self.search(key) else False
+
     def __len__(self):
         return self.__len
     
