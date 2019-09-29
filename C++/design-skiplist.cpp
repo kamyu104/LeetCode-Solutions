@@ -14,8 +14,8 @@ private:
         }
     
         SkipNode(int level, int num)
-         : num(num)
-         , nexts(level) {
+          : num(num)
+          , nexts(level) {
             
         }
 
@@ -25,9 +25,9 @@ private:
 
 public:
     Skiplist()
-    : gen_((random_device())())
-    , len_(0)
-    , head_(new SkipNode()) {
+      : gen_((random_device())())
+      , len_(0)
+      , head_(new SkipNode()) {
         
     }
     
@@ -145,8 +145,8 @@ private:
         }
     
         SkipNode(int level, int num)
-         : num(num)
-         , nexts(level) {
+          : num(num)
+          , nexts(level) {
             
         }
 
@@ -156,9 +156,9 @@ private:
 
 public:
     Skiplist2()
-    : gen_((random_device())())
-    , len_(0)
-    , head_(make_shared<SkipNode>()) {
+      : gen_((random_device())())
+      , len_(0)
+      , head_(make_shared<SkipNode>()) {
         
     }
     
