@@ -64,12 +64,11 @@ public:
         --len_;
         for (int i = curr->nexts.size() - 1; i >= 0; --i) {
             prevs[i]->nexts[i] = curr->nexts[i];
-            curr->nexts[i] = nullptr;
             if (!head_->nexts[i]) {
                 head_->nexts.pop_back();
             }
         }
-        delete curr;
+        curr->nexts[0] = nullptr, delete curr;
         return true;
     }
 
