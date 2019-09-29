@@ -57,10 +57,10 @@ class Skiplist(object):
                 self.__head.next.pop()
         return True
     
-    def __find(self, target, prev_nodes):
+    def __find(self, num, prev_nodes):
         if prev_nodes:
             candidate = prev_nodes[0].next[0]
-            if candidate and candidate.num == target:
+            if candidate and candidate.num == num:
                 return candidate
         return None
 
