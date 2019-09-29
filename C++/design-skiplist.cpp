@@ -75,7 +75,7 @@ public:
     }
 
 private:
-    SkipNode *find(int num, const vector<SkipNode *> &prevs) {
+    SkipNode *find(int num, const vector<SkipNode *>& prevs) {
         if (!prevs.empty()) {
             auto candidate = prevs[0]->nexts[0];
             if (candidate && candidate->num == num) {
