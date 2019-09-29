@@ -14,7 +14,7 @@ class SkipNode(object):
 
 
 class Skiplist(object):
-    P_INV = 2  # P_INV = 4 in redis implementation
+    P_NUMERATOR, P_DENOMINATOR = 1, 2  # P = 1/4 in redis implementation
     MAX_LEVEL = 32  # enough for 2^32 elements
 
     def __init__(self):
@@ -76,7 +76,8 @@ class Skiplist(object):
 
     def __random_level(self):
         level = 1
-        while random.randint(1, Skiplist.P_INV) <= 1 and level < Skiplist.MAX_LEVEL:
+        while random.randint(1, Skiplist.P_DENOMINATOR) <= Skiplist.P_NUMERATOR and \
+              level < Skiplist.MAX_LEVEL:
             level += 1
         return level
 
