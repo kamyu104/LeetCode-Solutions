@@ -105,10 +105,10 @@ private:
     }
     
     int random_level() {
-        static const int P = 2;
-        static const int MAX_LEVEL = 16;
+        static const double P = 0.25;
+        static const int MAX_LEVEL = 32; // enough for 2^32 elements
         int level = 1;
-        while (uniform_int_distribution<int>{1, P}(gen_) != 1 &&
+        while (uniform_int_distribution<int>{1, 0xFFFF}(gen_) < P * 0xFFFF &&
                level < MAX_LEVEL) {
             ++level;
         }
@@ -223,10 +223,10 @@ private:
     }
     
     int random_level() {
-        static const int P = 2;
-        static const int MAX_LEVEL = 16;
+        static const double P = 0.25;
+        static const int MAX_LEVEL = 32;  // enough for 2^32 elements
         int level = 1;
-        while (uniform_int_distribution<int>{1, P}(gen_) != 1 &&
+        while (uniform_int_distribution<int>{1, 0xFFFF}(gen_) < P * 0xFFFF &&
                level < MAX_LEVEL) {
             ++level;
         }
