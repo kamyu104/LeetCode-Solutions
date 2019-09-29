@@ -70,7 +70,7 @@ class Skiplist(object):
         return None
 
     def __find_prev_nodes(self, num):
-        prev_nodes = [None]*self.__max_height
+        prev_nodes = {}
         curr_level_node = self.__head
         for i in reversed(xrange(self.__max_height)):
             while curr_level_node.next[i] and curr_level_node.next[i].num < num:
