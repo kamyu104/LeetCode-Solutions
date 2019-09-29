@@ -85,8 +85,8 @@ class Skiplist(object):
         result = []
         for i in reversed(xrange(len(self.__head.nexts))):
             result.append([])
-            curr = self.__head
-            while curr.nexts[i]:
-                result[-1].append(str(curr.nexts[i].num))
+            curr = self.__head.nexts[i]
+            while curr:
+                result[-1].append(str(curr.num))
                 curr = curr.nexts[i]
         return "\n".join(map(lambda x: "->".join(x), result))
