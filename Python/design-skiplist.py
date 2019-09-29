@@ -76,7 +76,7 @@ class Skiplist(object):
 
     def __random_level(self):
         level = 1
-        while random.randint(1, Skiplist.P_inv) != 1 and level < Skiplist.MAX_LEVEL:
+        while random.randint(1, Skiplist.P_inv) == 1 and level < Skiplist.MAX_LEVEL:
             level += 1
         return level
 
