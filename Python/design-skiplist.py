@@ -12,8 +12,8 @@ class SkipNode(object):
 
 
 class Skiplist(object):
-    MAX_HEIGHT = 16
     P = 2
+    MAX_HEIGHT = 16
 
     def __init__(self):
         self.__head = SkipNode()
