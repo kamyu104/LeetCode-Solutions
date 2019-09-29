@@ -89,7 +89,7 @@ private:
     }
     
     int random_level() {
-        static const int P = 1;
+        static const int P = 2;
         static const int MAX_LEVEL = 16;
         int level = 1;
         while (uniform_int_distribution<int>{1, P}(gen_) != 1 &&
