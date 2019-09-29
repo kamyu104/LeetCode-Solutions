@@ -15,12 +15,6 @@ private:
          , nexts(level) {
             
         }
-        
-        ~SkipNode() {
-            if (!nexts.empty() && nexts[0]) {
-                delete nexts[0];
-            }
-        }
 
         int num;
         vector<SkipNode *> nexts;
@@ -35,7 +29,15 @@ public:
     }
     
     ~Skiplist() {
-        delete head_;
+        if (head_->nexts.empty()) {
+            return;
+        }
+        auto curr = head_->nexts[0];
+        while (curr) {
+            auto next = curr->nexts[0];
+            delete curr;
+            curr = next;
+        }
     }
     
     bool search(int target) {
@@ -68,7 +70,6 @@ public:
                 head_->nexts.pop_back();
             }
         }
-        curr->nexts[0] = nullptr;  // clear reference to next node
         delete curr;
         return true;
     }
