@@ -57,10 +57,6 @@ class Skiplist(object):
         return True
     
     def __find(self, target, prev_nodes):
-        """
-        :type target: int
-        :rtype: bool
-        """
         if prev_nodes:
             candidate = prev_nodes[0].next[0]
             if candidate and candidate.num == target:
