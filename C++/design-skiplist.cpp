@@ -101,11 +101,11 @@ private:
     
     void print_list() {
         for (int i = head_->nexts.size() - 1; i >= 0; --i) {
-            auto curr = head_;
-            cout << curr->nexts[i]->num;
+            auto curr = head_->nexts[i];
+            cout << curr->num;
             curr = curr->nexts[i];
-            while (curr->nexts[i]) {
-                cout << "->" << curr->nexts[i]->num;
+            while (curr) {
+                cout << "->" << curr->num;
                 curr = curr->nexts[i];
             }
             cout << endl;
