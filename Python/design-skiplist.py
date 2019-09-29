@@ -14,8 +14,8 @@ class SkipNode(object):
 
 
 class Skiplist(object):
-    P = 2
-    MAX_LEVEL = 16
+    P_inv = 2
+    MAX_LEVEL = 32  # enough for 2^32 elements
 
     def __init__(self):
         self.__head = SkipNode()
@@ -76,7 +76,7 @@ class Skiplist(object):
 
     def __random_level(self):
         level = 1
-        while random.randint(1, Skiplist.P) != 1 and level < Skiplist.MAX_LEVEL:
+        while random.randint(1, Skiplist.P_inv) != 1 and level < Skiplist.MAX_LEVEL:
             level += 1
         return level
 
