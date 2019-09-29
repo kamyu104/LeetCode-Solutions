@@ -68,7 +68,8 @@ public:
                 head_->nexts.pop_back();
             }
         }
-        curr->nexts[0] = nullptr, delete curr;
+        curr->nexts[0] = nullptr;  // clear reference to next node
+        delete curr;
         return true;
     }
 
