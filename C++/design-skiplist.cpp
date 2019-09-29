@@ -66,7 +66,7 @@ public:
     }
 
 private:
-    shared_ptr<SkipNode> find(int num, vector<shared_ptr<SkipNode>> prevs) {
+    shared_ptr<SkipNode> find(int num, const vector<shared_ptr<SkipNode>>& prevs) {
         if (!prevs.empty()) {
             auto candidate = prevs[0]->nexts[0];
             if (candidate && candidate->num == num) {
