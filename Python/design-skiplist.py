@@ -6,14 +6,14 @@
 import random
 
 class SkipNode(object):
-    def __init__(self, height=0, num=None):
+    def __init__(self, level=0, num=None):
         self.num = num
-        self.next = [None]*height
+        self.next = [None]*level
 
 
 class Skiplist(object):
     P = 2
-    MAX_HEIGHT = 16
+    MAX_LEVEL = 16
 
     def __init__(self):
         self.__head = SkipNode()
@@ -32,7 +32,7 @@ class Skiplist(object):
         :type num: int
         :rtype: None
         """
-        node = SkipNode(self.__random_height(), num)
+        node = SkipNode(self.__random_level(), num)
         if len(self.__head.next) < len(node.next): 
             self.__head.next.extend([None]*(len(node.next)-len(self.__head.next)))
         prevs = self.__find_prev_nodes(num)
@@ -73,11 +73,11 @@ class Skiplist(object):
             prevs[i] = curr
         return prevs
 
-    def __random_height(self):
-        height = 1
-        while random.randint(1, Skiplist.P) != 1 and height < Skiplist.MAX_HEIGHT:
-            height += 1
-        return height
+    def __random_level(self):
+        level = 1
+        while random.randint(1, Skiplist.P) != 1 and level < Skiplist.MAX_LEVEL:
+            level += 1
+        return level
     
     def __str__(self):
         result = []
