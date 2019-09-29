@@ -90,7 +90,7 @@ private:
     }
     
     vector<SkipNode *> find_prev_nodes(int num) {
-        vector<SkipNode *> prevs(head_->nexts.size(), nullptr);
+        vector<SkipNode *> prevs(head_->nexts.size());
         auto curr = head_;
         for (int i = head_->nexts.size() - 1; i >= 0; --i) {
             while (curr->nexts[i] && curr->nexts[i]->num < num) {
