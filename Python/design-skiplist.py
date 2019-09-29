@@ -8,7 +8,7 @@ import random
 class SkipNode(object):
     def __init__(self, level=0, num=None):
         self.num = num
-        self.next = [None]*level
+        self.nexts = [None]*level
 
 
 class Skiplist(object):
@@ -33,12 +33,12 @@ class Skiplist(object):
         :rtype: None
         """
         node = SkipNode(self.__random_level(), num)
-        if len(self.__head.next) < len(node.next): 
-            self.__head.next.extend([None]*(len(node.next)-len(self.__head.next)))
+        if len(self.__head.nexts) < len(node.nexts): 
+            self.__head.nexts.extend([None]*(len(node.nexts)-len(self.__head.nexts)))
         prevs = self.__find_prev_nodes(num)
-        for i in xrange(len(node.next)):
-            node.next[i] = prevs[i].next[i]
-            prevs[i].next[i] = node
+        for i in xrange(len(node.nexts)):
+            node.nexts[i] = prevs[i].nexts[i]
+            prevs[i].nexts[i] = node
         self.__len += 1
 
     def erase(self, num):
@@ -51,25 +51,25 @@ class Skiplist(object):
         if not curr:
             return False
         self.__len -= 1   
-        for i in reversed(xrange(len(curr.next))):
-            prevs[i].next[i] = curr.next[i]
-            if not self.__head.next[i]:
-                self.__head.next.pop()
+        for i in reversed(xrange(len(curr.nexts))):
+            prevs[i].nexts[i] = curr.nexts[i]
+            if not self.__head.nexts[i]:
+                self.__head.nexts.pop()
         return True
     
     def __find(self, num, prevs):
         if prevs:
-            candidate = prevs[0].next[0]
+            candidate = prevs[0].nexts[0]
             if candidate and candidate.num == num:
                 return candidate
         return None
 
     def __find_prev_nodes(self, num):
-        prevs = [None]*len(self.__head.next)
+        prevs = [None]*len(self.__head.nexts)
         curr = self.__head
-        for i in reversed(xrange(len(self.__head.next))):
-            while curr.next[i] and curr.next[i].num < num:
-                curr = curr.next[i]
+        for i in reversed(xrange(len(self.__head.nexts))):
+            while curr.nexts[i] and curr.nexts[i].num < num:
+                curr = curr.nexts[i]
             prevs[i] = curr
         return prevs
 
@@ -81,10 +81,10 @@ class Skiplist(object):
     
     def __str__(self):
         result = []
-        for i in reversed(xrange(len(self.__head.next))):
+        for i in reversed(xrange(len(self.__head.nexts))):
             result.append([])
             curr = self.__head
-            while curr.next[i]:
-                result[-1].append(str(curr.next[i].num))
-                curr = curr.next[i]
+            while curr.nexts[i]:
+                result[-1].append(str(curr.nexts[i].num))
+                curr = curr.nexts[i]
         return "\n".join(map(lambda x: "->".join(x), result))
