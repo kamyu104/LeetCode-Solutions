@@ -24,8 +24,8 @@ class Skiplist(object):
         :type target: int
         :rtype: bool
         """
-        prev_nodes = self.__find_prev_nodes(target)
-        return self.__find(target, prev_nodes)
+        prevs = self.__find_prev_nodes(target)
+        return self.__find(target, prevs)
         
     def add(self, num):
         """
@@ -35,10 +35,10 @@ class Skiplist(object):
         node = SkipNode(self.__random_height(), num)
         if len(self.__head.next) < len(node.next): 
             self.__head.next.extend([None]*(len(node.next)-len(self.__head.next)))
-        prev_nodes = self.__find_prev_nodes(num)
+        prevs = self.__find_prev_nodes(num)
         for i in xrange(len(node.next)):
-            node.next[i] = prev_nodes[i].next[i]
-            prev_nodes[i].next[i] = node
+            node.next[i] = prevs[i].next[i]
+            prevs[i].next[i] = node
         self.__len += 1
 
     def erase(self, num):
@@ -46,32 +46,32 @@ class Skiplist(object):
         :type num: int
         :rtype: bool
         """
-        prev_nodes = self.__find_prev_nodes(num)
-        curr = self.__find(num, prev_nodes)
+        prevs = self.__find_prev_nodes(num)
+        curr = self.__find(num, prevs)
         if not curr:
             return False
         self.__len -= 1   
         for i in reversed(xrange(len(curr.next))):
-            prev_nodes[i].next[i] = curr.next[i]
+            prevs[i].next[i] = curr.next[i]
             if not self.__head.next[i]:
                 self.__head.next.pop()
         return True
     
-    def __find(self, num, prev_nodes):
-        if prev_nodes:
-            candidate = prev_nodes[0].next[0]
+    def __find(self, num, prevs):
+        if prevs:
+            candidate = prevs[0].next[0]
             if candidate and candidate.num == num:
                 return candidate
         return None
 
     def __find_prev_nodes(self, num):
-        prev_nodes = [None]*len(self.__head.next)
+        prevs = [None]*len(self.__head.next)
         curr = self.__head
         for i in reversed(xrange(len(self.__head.next))):
             while curr.next[i] and curr.next[i].num < num:
                 curr = curr.next[i]
-            prev_nodes[i] = curr
-        return prev_nodes
+            prevs[i] = curr
+        return prevs
 
     def __random_height(self):
         height = 1
