@@ -12,6 +12,7 @@ class SkipNode(object):
 
 
 class Skiplist(object):
+    MAX_HEIGHT = 16
     P = 2
 
     def __init__(self):
@@ -74,7 +75,7 @@ class Skiplist(object):
 
     def __random_height(self):
         height = 1
-        while random.randint(1, Skiplist.P) != 1:
+        while random.randint(1, Skiplist.P) != 1 and height < Skiplist.MAX_HEIGHT:
             height += 1
         return height
     
