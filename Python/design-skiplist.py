@@ -24,8 +24,7 @@ class Skiplist(object):
         :type target: int
         :rtype: bool
         """
-        prevs = self.__find_prev_nodes(target)
-        return self.__find(target, prevs)
+        return self.__find(target, self.__find_prev_nodes(target))
         
     def add(self, num):
         """
@@ -78,6 +77,9 @@ class Skiplist(object):
         while random.randint(1, Skiplist.P) != 1 and level < Skiplist.MAX_LEVEL:
             level += 1
         return level
+    
+    def __len__(self):
+        return self.__len
     
     def __str__(self):
         result = []
