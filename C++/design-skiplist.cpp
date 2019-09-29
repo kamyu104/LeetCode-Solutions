@@ -74,6 +74,10 @@ public:
         return true;
     }
 
+    int size() const {
+        return len_;
+    }
+    
 private:
     SkipNode *find(int num, const vector<SkipNode *>& prevs) {
         if (!prevs.empty()) {
