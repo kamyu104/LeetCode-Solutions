@@ -7,6 +7,7 @@
 # 3. https://brilliant.org/wiki/skip-lists/
 import random
 
+
 class SkipNode(object):
     def __init__(self, level=0, num=None):
         self.num = num
