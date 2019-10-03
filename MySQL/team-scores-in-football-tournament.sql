@@ -26,7 +26,7 @@ FROM
       SELECT guest_team AS team_id,
              'DRAW' AS RESULT
       FROM Matches
-      WHERE host_goals = guest_goals ) m
+      WHERE host_goals = guest_goals) m
    ON t.team_id = m.team_id
    GROUP BY t.team_id) r
 ORDER BY num_points DESC,
