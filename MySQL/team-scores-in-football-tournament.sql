@@ -5,7 +5,7 @@ SELECT *
 FROM
   (SELECT t.team_id,
           t.team_name,
-          IFNULL(SUM(m.result = 'WIN') * 3 + SUM(m.result = 'DRAW') * 1, 0) AS num_points
+          COALESCE(SUM(m.result = 'WIN') * 3 + SUM(m.result = 'DRAW') * 1, 0) AS num_points
    FROM TEAMS t
    LEFT JOIN
      (SELECT host_team AS team_id,
