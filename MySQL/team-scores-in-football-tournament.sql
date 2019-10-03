@@ -2,8 +2,8 @@
 # Space: O(n)
 
 SELECT t.team_id,
-      t.team_name,
-      IFNULL(SUM(m.points), 0) AS num_points
+       t.team_name,
+       IFNULL(SUM(m.points), 0) AS num_points
 FROM TEAMS t
 LEFT JOIN
  (SELECT host_team AS team_id,
