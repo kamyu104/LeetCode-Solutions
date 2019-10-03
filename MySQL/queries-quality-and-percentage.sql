@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(1)
+# Space: O(n)
 
 SELECT query_name,
        ROUND(AVG(rating * 100 / POSITION)) / 100 AS quality,
