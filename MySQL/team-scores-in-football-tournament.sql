@@ -5,28 +5,23 @@ SELECT *
 FROM
   (SELECT t.team_id,
           t.team_name,
-          COALESCE(SUM(m.points), 0) AS num_points
+          IFNULL(SUM(m.points), 0) AS num_points
    FROM TEAMS t
    LEFT JOIN
      (SELECT host_team AS team_id,
-             3 AS points
+             CASE
+                 WHEN host_goals > guest_goals THEN 3
+                 WHEN host_goals = guest_goals THEN 1
+                 ELSE 0
+             END AS points
       FROM Matches
-      WHERE host_goals > guest_goals
-      UNION ALL
-      SELECT host_team AS team_id,
-             1 AS points
-      FROM Matches
-      WHERE host_goals = guest_goals
-      UNION ALL
-      SELECT guest_team AS team_id,
-             3 AS points
-      FROM Matches
-      WHERE host_goals < guest_goals
-      UNION ALL
-      SELECT guest_team AS team_id,
-             1 AS points
-      FROM Matches
-      WHERE host_goals = guest_goals) m
+      UNION ALL SELECT guest_team AS team_id,
+                       CASE
+                           WHEN host_goals < guest_goals THEN 3
+                           WHEN host_goals = guest_goals THEN 1
+                           ELSE 0
+                       END AS points
+      FROM Matches) m
    ON t.team_id = m.team_id
    GROUP BY t.team_id) r
 ORDER BY num_points DESC,
