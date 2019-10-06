@@ -4,6 +4,10 @@
 class Solution {
 public:
     int longestPalindromeSubseq(string s) {
+        if (s == string(s.rbegin(), s.rend())) {  // optional, to optimize special case
+            return s.length();
+        }
+        
         vector<vector<int>> dp(2, vector<int>(s.size(), 1));
         for (int i = s.length() - 2; i >= 0; --i) {
             for (int j = i + 1; j < s.length(); ++j) {
