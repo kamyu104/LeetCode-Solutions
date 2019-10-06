@@ -684,6 +684,7 @@
 1175| [Prime Arrangements](https://leetcode.com/problems/prime-arrangements/) | [C++](./C++/prime-arrangements.cpp) [Python](./Python/prime-arrangements.py) | _O(n)_ | _O(n)_ |  Easy ||
 1185| [Day of the Week](https://leetcode.com/problems/day-of-the-week/) | [C++](./C++/day-of-the-week.cpp) [Python](./Python/day-of-the-week.py) | _O(1)_ | _O(1)_ |  Easy || `Zeller Formula`
 1197 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves/) | [C++](./C++/minimum-knight-moves.cpp) [Python](./Python/minimum-knight-moves.py) | _O(1)_ | _O(1)_ | Medium |🔒| DP, Math |
+1217 | [Play with Chips](https://leetcode.com/problems/play-with-chips/) | [C++](./C++/play-with-chips.cpp) [Python](./Python/play-with-chips.py) | _O(n)_ | _O(1)_ | Medium |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -984,6 +985,7 @@
 0996| [Number of Squareful Arrays](https://leetcode.com/problems/number-of-squareful-arrays/)    | [C++](./C++/number-of-squareful-arrays.cpp) [Python](./Python/number-of-squareful-arrays.py) | _O(n!)_    | _O(n^2)_          | Hard         ||
 1087| [Brace Expansion](https://leetcode.com/problems/brace-expansion/) | [C++](./C++/brace-expansion.cpp) [Python](./Python/brace-expansion.py)  | _O(p * l * log(p * l))_ | _O(p * l)_ | Medium         |🔒||
 1096| [Brace Expansion II](https://leetcode.com/problems/brace-expansion-ii/) | [C++](./C++/brace-expansion-ii.cpp) [Python](./Python/brace-expansion-ii.py)  | _O(p * l * log(p * l))_ | _O(p * l)_ | Hard         |||
+1219| [Path with Maximum Gold](https://leetcode.com/problems/path-with-maximum-gold/) | [C++](./C++/path-with-maximum-gold.cpp) [Python](./Python/path-with-maximum-gold.py)  | _O(m^2 * n^2)_ | _O(m * n)_ | Medium         |||
 
 ## Dynamic Programming
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1113,6 +1115,8 @@
 1187 | [Make Array Strictly Increasing](https://leetcode.com/problems/make-array-strictly-increasing/) | [C++](./C++/make-array-strictly-increasing.cpp) [Python](./Python/make-array-strictly-increasing.py) | _O(n^2 * logn)_ | _O(n)_ | Hard || |
 1191 | [K-Concatenation Maximum Sum](https://leetcode.com/problems/k-concatenation-maximum-sum/) | [C++](./C++/k-concatenation-maximum-sum.cpp) [Python](./Python/k-concatenation-maximum-sum.py) | _O(n)_ | _O(1)_ | Medium || |
 1216 | [Valid Palindrome III](https://leetcode.com/problems/valid-palindrome-iii/) | [C++](./C++/valid-palindrome-iii.cpp) [Python](./Python/valid-palindrome-iii.py) | _O(n^2)_ | _O(n)_ | Hard | 🔒, variant of [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) ||
+1218 | [Longest Arithmetic Subsequence of Given Difference](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-differenc/) | [C++](./C++/longest-arithmetic-subsequence-of-given-differenc.cpp) [Python](./Python/longest-arithmetic-subsequence-of-given-differenc.py) | _O(n)_ | _O(n)_ | Medium | ||
+1220| [Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation/) | [C++](./C++/count-vowels-permutation.cpp) [Python](./Python/count-vowels-permutation.py) | _O(logn)_ | _O(1)_ | Hard || Matrix Exponentiation |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
