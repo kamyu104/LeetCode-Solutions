@@ -1115,7 +1115,7 @@
 1187 | [Make Array Strictly Increasing](https://leetcode.com/problems/make-array-strictly-increasing/) | [C++](./C++/make-array-strictly-increasing.cpp) [Python](./Python/make-array-strictly-increasing.py) | _O(n^2 * logn)_ | _O(n)_ | Hard || |
 1191 | [K-Concatenation Maximum Sum](https://leetcode.com/problems/k-concatenation-maximum-sum/) | [C++](./C++/k-concatenation-maximum-sum.cpp) [Python](./Python/k-concatenation-maximum-sum.py) | _O(n)_ | _O(1)_ | Medium || |
 1216 | [Valid Palindrome III](https://leetcode.com/problems/valid-palindrome-iii/) | [C++](./C++/valid-palindrome-iii.cpp) [Python](./Python/valid-palindrome-iii.py) | _O(n^2)_ | _O(n)_ | Hard | 🔒, variant of [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) ||
-1218 | [Longest Arithmetic Subsequence of Given Difference](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-differenc/) | [C++](./C++/longest-arithmetic-subsequence-of-given-differenc.cpp) [Python](./Python/longest-arithmetic-subsequence-of-given-differenc.py) | _O(n)_ | _O(n)_ | Medium | ||
+1218 | [Longest Arithmetic Subsequence of Given Difference](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/) | [C++](./C++/longest-arithmetic-subsequence-of-given-difference.cpp) [Python](./Python/longest-arithmetic-subsequence-of-given-difference.py) | _O(n)_ | _O(n)_ | Medium | ||
 1220| [Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation/) | [C++](./C++/count-vowels-permutation.cpp) [Python](./Python/count-vowels-permutation.py) | _O(logn)_ | _O(1)_ | Hard || Matrix Exponentiation |
 
 ## Greedy
