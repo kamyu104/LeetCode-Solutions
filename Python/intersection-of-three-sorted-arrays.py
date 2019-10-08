@@ -38,5 +38,5 @@ class Solution2(object):
         :type arr3: List[int]
         :rtype: List[int]
         """
-        intersect = reduce(set.intersection, map(set, [arr1, arr2, arr3]))
+        intersect = reduce(set.intersection, map(set, [arr2, arr3]))
         return [x for x in arr1 if x in intersect]
