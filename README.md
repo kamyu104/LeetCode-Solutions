@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1220%20%2F%201220-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1224%20%2F%201224-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -231,6 +231,7 @@
 1184 | [Distance Between Bus Stops](https://leetcode.com/problems/distance-between-bus-stops/) | [C++](./C++/distance-between-bus-stops.cpp) [Python](./Python/distance-between-bus-stops.py) | _O(n)_ | _O(1)_      | Easy         || 
 1200 | [Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/) | [C++](./C++/minimum-absolute-difference.cpp) [Python](./Python/minimum-absolute-difference.py) | _O(nlogn)_ | _O(n)_      | Easy         || 
 1208 | [Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/) | [C++](./C++/get-equal-substrings-within-budget.cpp) [Python](./Python/get-equal-substrings-within-budget.py) | _O(n)_ | _O(1)_      | Medium         || Sliding Window
+1222 | [Queens That Can Attack the King](https://leetcode.com/problems/queens-that-can-attack-the-king/) | [C++](./C++/queens-that-can-attack-the-king.cpp) [Python](./Python/queens-that-can-attack-the-king.py) | _O(1)_ | _O(1)_      | Medium         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -579,6 +580,7 @@
 1165| [Single-Row Keyboard](https://leetcode.com/problems/single-row-keyboard/) | [C++](./C++/single-row-keyboard.cpp) [Python](./Python/single-row-keyboard.py)  | _O(n)_ |  _O(1)_ | Easy         |🔒||
 1198| [Find Smallest Common Element in All Rows](https://leetcode.com/problems/find-smallest-common-element-in-all-rows/) | [C++](./C++/find-smallest-common-element-in-all-rows.cpp) [Python](./Python/find-smallest-common-element-in-all-rows.py)  | _O(m * n)_ |  _O(n)_ | Medium         |🔒||
 1207| [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | [C++](./C++/unique-number-of-occurrences.cpp) [Python](./Python/unique-number-of-occurrences.py)  | _O(n)_ |  _O(n)_ | Easy         |||
+1224| [Maximum Equal Frequency](https://leetcode.com/problems/maximum-equal-frequency/) | [C++](./C++/maximum-equal-frequency.cpp) [Python](./Python/maximum-equal-frequency.py)  | _O(n)_ |  _O(n)_ | Hard         |||
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1126,6 +1128,7 @@
 1216 | [Valid Palindrome III](https://leetcode.com/problems/valid-palindrome-iii/) | [C++](./C++/valid-palindrome-iii.cpp) [Python](./Python/valid-palindrome-iii.py) | _O(n^2)_ | _O(n)_ | Hard | 🔒, variant of [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) ||
 1218 | [Longest Arithmetic Subsequence of Given Difference](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/) | [C++](./C++/longest-arithmetic-subsequence-of-given-difference.cpp) [Python](./Python/longest-arithmetic-subsequence-of-given-difference.py) | _O(n)_ | _O(n)_ | Medium | ||
 1220| [Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation/) | [C++](./C++/count-vowels-permutation.cpp) [Python](./Python/count-vowels-permutation.py) | _O(logn)_ | _O(1)_ | Hard || Matrix Exponentiation |
+1223 | [Dice Roll Simulation](https://leetcode.com/problems/dice-roll-simulation/) | [C++](./C++/dice-roll-simulation.cpp) [Python](./Python/dice-roll-simulation.py) | _O(m * n)_ | _O(m)_ | Medium | ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1182,6 +1185,7 @@
 1183| [Maximum Number of Ones](https://leetcode.com/problems/maximum-number-of-ones/) | [C++](./C++/maximum-number-of-ones.cpp) [Python](./Python/maximum-number-of-ones.py) |  _O(1)_ | _O(1)_   | Hard |🔒||
 1196 | [How Many Apples Can You Put into the Basket](https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/) | [C++](./C++/how-many-apples-can-you-put-into-the-basket.cpp) [Python](./Python/how-many-apples-can-you-put-into-the-basket.py) | _O(nlogn)_ | _O(n)_ | Easy |🔒|
 1199 | [Minimum Time to Build Blocks](https://leetcode.com/problems/minimum-time-to-build-blocks/) | [C++](./C++/minimum-time-to-build-blocks.cpp) [Python](./Python/minimum-time-to-build-blocks.py) | _O(nlogn)_ | _O(n)_ | Hard |🔒|
+1221 | [Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings/) | [C++](./C++/split-a-string-in-balanced-strings.cpp) [Python](./Python/split-a-string-in-balanced-strings.py) | _O(n)_ | _O(1)_ | Easy ||
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
