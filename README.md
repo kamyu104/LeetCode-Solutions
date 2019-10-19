@@ -1309,8 +1309,8 @@
 1204| [Last Person to Fit in the Elevator](https://leetcode.com/problems/last-person-to-fit-in-the-elevator/) | [MySQL](./MySQL/last-person-to-fit-in-the-elevator.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
 1205| [Monthly Transactions II](https://leetcode.com/problems/monthly-transactions-ii/) | [MySQL](./MySQL/monthly-transactions-ii.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1211| [Queries Quality and Percentage](https://leetcode.com/problems/queries-quality-and-percentage/) | [MySQL](./MySQL/queries-quality-and-percentage.sql) | _O(n)_ | _O(n)_       | Easy           || |
-1212| [Team Scores in Football Tournament](https://leetcode.com/team-scores-in-football-tournament/) | [MySQL](./MySQL/team-scores-in-football-tournament.sql) | _O(nlogn)_ | _O(n)_       | Medium           || |
-1225| [Report Contiguous Dates](https://leetcode.com/report-contiguous-dates/) | [MySQL](./MySQL/report-contiguous-dates.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
+1212| [Team Scores in Football Tournament](https://leetcode.com/problems/team-scores-in-football-tournament/) | [MySQL](./MySQL/team-scores-in-football-tournament.sql) | _O(nlogn)_ | _O(n)_       | Medium           || |
+1225| [Report Contiguous Dates](https://leetcode.com/problems/report-contiguous-dates/) | [MySQL](./MySQL/report-contiguous-dates.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
