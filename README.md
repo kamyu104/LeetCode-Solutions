@@ -696,6 +696,7 @@
 1185| [Day of the Week](https://leetcode.com/problems/day-of-the-week/) | [C++](./C++/day-of-the-week.cpp) [Python](./Python/day-of-the-week.py) | _O(1)_ | _O(1)_ |  Easy || `Zeller Formula`
 1197 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves/) | [C++](./C++/minimum-knight-moves.cpp) [Python](./Python/minimum-knight-moves.py) | _O(1)_ | _O(1)_ | Medium |🔒| DP, Math |
 1217 | [Play with Chips](https://leetcode.com/problems/play-with-chips/) | [C++](./C++/play-with-chips.cpp) [Python](./Python/play-with-chips.py) | _O(n)_ | _O(1)_ | Medium |||
+1227 | [Airplane Seat Assignment Probability](https://leetcode.com/problems/airplane-seat-assignment-probability/) | [C++](./C++/airplane-seat-assignment-probability.cpp) [Python](./Python/airplane-seat-assignment-probability.py) | _O(1)_ | _O(1)_ | Medium |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1252,6 +1253,7 @@
 1117| [Building H2O](https://leetcode.com/problems/building-h2o/) | [C++](./C++/building-h2o.cpp) [Python](./Python/building-h2o.py) | _O(n)_ | _O(1)_| Hard |||
 1188| [Design Bounded Blocking Queue](https://leetcode.com/problems/design-bounded-blocking-queue/) | [C++](./C++/design-bounded-blocking-queue.cpp) [Python](./Python/design-bounded-blocking-queue.py) | _O(n)_ | _O(1)_| Medium | 🔒 ||
 1195| [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded/)| [C++](./C++/fizz-buzz-multithreaded.cpp) [Python](./Python/fizz-buzz-multithreaded.py) | _O(n)_ | _O(1)_ | Medium ||
+1226| [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers/)| [C++](./C++/the-dining-philosophers.cpp) [Python](./Python/the-dining-philosophers.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## SQL
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1308,6 +1310,7 @@
 1205| [Monthly Transactions II](https://leetcode.com/problems/monthly-transactions-ii/) | [MySQL](./MySQL/monthly-transactions-ii.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1211| [Queries Quality and Percentage](https://leetcode.com/problems/queries-quality-and-percentage/) | [MySQL](./MySQL/queries-quality-and-percentage.sql) | _O(n)_ | _O(n)_       | Easy           || |
 1212| [Team Scores in Football Tournament](https://leetcode.com/team-scores-in-football-tournament/) | [MySQL](./MySQL/team-scores-in-football-tournament.sql) | _O(nlogn)_ | _O(n)_       | Medium           || |
+1225| [Report Contiguous Dates](https://leetcode.com/report-contiguous-dates/) | [MySQL](./MySQL/report-contiguous-dates.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
