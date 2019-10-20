@@ -19,3 +19,14 @@ class Solution(object):
             else:
                 left = mid+1
         return arr[0] + d*left
+
+
+# Time:  O(n)
+# Space: O(1)
+class Solution2(object):
+    def missingNumber(self, arr):
+        """
+        :type arr: List[int]
+        :rtype: int
+        """
+        return (min(arr)+max(arr))*(len(arr)+1)//2 - sum(arr)
