@@ -23,3 +23,15 @@ private:
         return arr[x] != arr[0] + d * x;
     }
 };
+
+// Time:  O(logn)
+// Space: O(1)
+class Solution2 {
+public:
+    int missingNumber(vector<int>& arr) {
+        return (*min_element(arr.cbegin(), arr.cend()) +
+                *max_element(arr.cbegin(), arr.cend())) *
+               (arr.size() + 1) / 2 -
+               accumulate(arr.cbegin(), arr.cend(), 0);
+    }
+};
