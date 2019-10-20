@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1227%20%2F%201227-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1235%20%2F%201235-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -334,6 +334,8 @@
 1177 | [Can Make Palindrome from Substring](https://leetcode.com/problems/can-make-palindrome-from-substring/) | [C++](./C++/can-make-palindrome-from-substring.cpp) [Python](./Python/can-make-palindrome-from-substring.py) | _O(m + n)_ | _O(n)_ | Medium | |
 1178 | [Number of Valid Words for Each Puzzle](https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/) | [C++](./C++/number-of-valid-words-for-each-puzzle.cpp) [Python](./Python/number-of-valid-words-for-each-puzzle.py) | _O(n * l + m * L)_ | _O(L!)_ | Hard | | Trie, Bit Manipulation
 1189 | [Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/) | [C++](./C++/maximum-number-of-balloons.cpp) [Python](./Python/maximum-number-of-balloons.py) | _O(n)_ | _O(1)_ | Easy | | Hash
+1233 | [Remove Sub-Folders from the Filesystem](https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/) | [C++](./C++/remove-sub-folders-from-the-filesystem.cpp) [Python](./Python/remove-sub-folders-from-the-filesystem.py) | _O(n)_ | _O(t)_ | Medium | | Trie
+1234 | [Replace the Substring for Balanced String](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) | [C++](./C++/replace-the-substring-for-balanced-string.cpp) [Python](./Python/replace-the-substring-for-balanced-string.py) | _O(n)_ | _O(t)_ | Medium | | Two Pointers, Sliding Window
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -697,6 +699,7 @@
 1197 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves/) | [C++](./C++/minimum-knight-moves.cpp) [Python](./Python/minimum-knight-moves.py) | _O(1)_ | _O(1)_ | Medium |🔒| DP, Math |
 1217 | [Play with Chips](https://leetcode.com/problems/play-with-chips/) | [C++](./C++/play-with-chips.cpp) [Python](./Python/play-with-chips.py) | _O(n)_ | _O(1)_ | Medium |||
 1227 | [Airplane Seat Assignment Probability](https://leetcode.com/problems/airplane-seat-assignment-probability/) | [C++](./C++/airplane-seat-assignment-probability.cpp) [Python](./Python/airplane-seat-assignment-probability.py) | _O(1)_ | _O(1)_ | Medium |||
+1232 | [Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/) | [C++](./C++/check-if-it-is-a-straight-line.cpp) [Python](./Python/check-if-it-is-a-straight-line.py) | _O(1)_ | _O(1)_ | Easy |||
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -728,6 +731,7 @@
 1086 | [High Five](https://leetcode.com/problems/high-five/) | [C++](./C++/high-five.cpp) [Python](./Python/high-five.py) | _O(nlogn)_ | _O(n)_ | Easy | 🔒||
 1094| [Car Pooling](https://leetcode.com/problems/car-pooling/) | [C++](./C++/car-pooling.cpp) [Python](./Python/car-pooling.py) | _O(nlogn)_   | _O(n)_        | Medium         | variant of [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | |
 1122| [Relative Sort Array](https://leetcode.com/problems/relative-sort-array/) | [C++](./C++/relative-sort-array.cpp) [Python](./Python/relative-sort-array.py) | _O(nlogn)_   | _O(n)_        | Easy         ||
+1229| [Meeting Scheduler](https://leetcode.com/problems/meeting-scheduler/) | [C++](./C++/meeting-scheduler.cpp) [Python](./Python/meeting-scheduler.py) | _O(nlogn)_   | _O(n)_        | Medium         || Line Sweep, Heap
 
 ## Two Pointers
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -845,6 +849,8 @@
 1110 | [Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/) | [C++](./C++/delete-nodes-and-return-forest.cpp) [Python](./Python/delete-nodes-and-return-forest.py) | _O(n)_ | _O(h + d)_ | Medium | |
 1170 | [Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/) | [C++](./C++/compare-strings-by-frequency-of-the-smallest-character.cpp) [Python](./Python/compare-strings-by-frequency-of-the-smallest-character.py) | _O((m + n)logn)_ | _O(n)_ | Easy | |
 1201 | [Ugly Number III](https://leetcode.com/problems/ugly-number-iii/) | [C++](./C++/ugly-number-iii.cpp) [Python](./Python/ugly-number-iii.py) | _O(logn)_ | _O(1)_ | Medium | | Inclusion-Exclusion Principle
+1228 | [Missing Number In Arithmetic Progression](https://leetcode.com/problems/missing-number-in-arithmetic-progression/) | [C++](./C++/missing-number-in-arithmetic-progression.cpp) [Python](./Python/missing-number-in-arithmetic-progression.py) | _O(logn)_ | _O(1)_ | Easy | |
+1231 | [Divide Chocolate](https://leetcode.com/problems/divide-chocolate/) | [C++](./C++/divide-chocolate.cpp) [Python](./Python/divide-chocolate.py) | _O(nlogn)_ | _O(1)_ | Hard | |
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1130,6 +1136,8 @@
 1218 | [Longest Arithmetic Subsequence of Given Difference](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/) | [C++](./C++/longest-arithmetic-subsequence-of-given-difference.cpp) [Python](./Python/longest-arithmetic-subsequence-of-given-difference.py) | _O(n)_ | _O(n)_ | Medium | ||
 1220| [Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation/) | [C++](./C++/count-vowels-permutation.cpp) [Python](./Python/count-vowels-permutation.py) | _O(logn)_ | _O(1)_ | Hard || Matrix Exponentiation |
 1223 | [Dice Roll Simulation](https://leetcode.com/problems/dice-roll-simulation/) | [C++](./C++/dice-roll-simulation.cpp) [Python](./Python/dice-roll-simulation.py) | _O(m * n)_ | _O(m)_ | Medium | ||
+1230 | [Toss Strange Coins](https://leetcode.com/problems/toss-strange-coins/) | [C++](./C++/toss-strange-coins.cpp) [Python](./Python/toss-strange-coins.py) | _O(n^2)_ | _O(n)_ | Medium | ||
+1235 | [Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/) | [C++](./C++/maximum-profit-in-job-scheduling.cpp) [Python](./Python/maximum-profit-in-job-scheduling.py) | _O(nlogn)_ | _O(n)_ | Hard | | DP, Heap |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
