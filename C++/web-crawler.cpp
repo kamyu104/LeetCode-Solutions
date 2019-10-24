@@ -18,8 +18,7 @@ public:
             const auto& from_url = result[i];
             const auto& name = hostname(from_url);
             for (const auto& to_url: htmlParser.getUrls(from_url)) {
-                if (!lookup.count(to_url) &&
-                    name == hostname(to_url)) {
+                if (!lookup.count(to_url) && name == hostname(to_url)) {
                     result.emplace_back(to_url);
                     lookup.emplace(to_url);
                 }
