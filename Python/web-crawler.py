@@ -25,7 +25,7 @@ class Solution(object):
         def hostname(url):
             pos = url.find('/', len(SCHEME))
             if pos == -1:
-                pos = len(url)
+                return url
             return url[:pos]
 
         result = [startUrl]
