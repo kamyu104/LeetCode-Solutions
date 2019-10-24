@@ -33,8 +33,7 @@ class Solution(object):
         for from_url in result:
             name = hostname(from_url)
             for to_url in htmlParser.getUrls(from_url):
-                if to_url not in lookup and \
-                   name == hostname(to_url):
+                if to_url not in lookup and name == hostname(to_url):
                     result.append(to_url)
                     lookup.add(to_url)
         return result
