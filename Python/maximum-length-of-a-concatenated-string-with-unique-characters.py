@@ -1,5 +1,5 @@
 # Time:  O(n) ~ O(2^n)
-# Space: O(2^n)
+# Space: O(1) ~ O(2^n)
 
 power = [1]
 log2 = {1:0}
