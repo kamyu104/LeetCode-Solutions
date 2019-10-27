@@ -3,13 +3,9 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1236%20%2F%201236-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1240%20%2F%201240-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
-<!---
-![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
-![Today](https://visitor-count-badge.herokuapp.com/today.svg?repo_id=kamyu104.leetcode.solutions)
--->
 
 * R.I.P. to my old Leetcode repository, where there were `5.7k+` stars and `2.2k+` forks (ever the top 3 in the field).
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
@@ -702,6 +698,8 @@
 1217 | [Play with Chips](https://leetcode.com/problems/play-with-chips/) | [C++](./C++/play-with-chips.cpp) [Python](./Python/play-with-chips.py) | _O(n)_ | _O(1)_ | Medium |||
 1227 | [Airplane Seat Assignment Probability](https://leetcode.com/problems/airplane-seat-assignment-probability/) | [C++](./C++/airplane-seat-assignment-probability.cpp) [Python](./Python/airplane-seat-assignment-probability.py) | _O(1)_ | _O(1)_ | Medium |||
 1232 | [Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/) | [C++](./C++/check-if-it-is-a-straight-line.cpp) [Python](./Python/check-if-it-is-a-straight-line.py) | _O(1)_ | _O(1)_ | Easy |||
+1237 | [Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/) | [C++](./C++/find-positive-integer-solution-for-a-given-equation.cpp) [Python](./Python/find-positive-integer-solution-for-a-given-equation.py) | _O(n)_ | _O(1)_ | Easy |||
+1238| [Circular Permutation in Binary Representation](https://leetcode.com/problems/circular-permutation-in-binary-representation/)     | [C++](./C++/circular-permutation-in-binary-representation.cpp) [Python](./Python/circular-permutation-in-binary-representation.py)  | _O(2^n)_        | _O(1)_          | Medium         | variant of [Gray Code](https://leetcode.com/problems/gray-code/) |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1006,6 +1004,7 @@
 1087| [Brace Expansion](https://leetcode.com/problems/brace-expansion/) | [C++](./C++/brace-expansion.cpp) [Python](./Python/brace-expansion.py)  | _O(p * l * log(p * l))_ | _O(p * l)_ | Medium         |🔒||
 1096| [Brace Expansion II](https://leetcode.com/problems/brace-expansion-ii/) | [C++](./C++/brace-expansion-ii.cpp) [Python](./Python/brace-expansion-ii.py)  | _O(p * l * log(p * l))_ | _O(p * l)_ | Hard         |||
 1219| [Path with Maximum Gold](https://leetcode.com/problems/path-with-maximum-gold/) | [C++](./C++/path-with-maximum-gold.cpp) [Python](./Python/path-with-maximum-gold.py)  | _O(m^2 * n^2)_ | _O(m * n)_ | Medium         |||
+1240| [Tiling a Rectangle with the Fewest Squares](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/) | [C++](./C++/tiling-a-rectangle-with-the-fewest-squares.cpp) [Python](./Python/tiling-a-rectangle-with-the-fewest-squares.py)  | _O(n^2 * m^2 * m^(n * m))_ | _O(n * m)_ | Hard         |||
 
 ## Dynamic Programming
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1140,6 +1139,7 @@
 1223 | [Dice Roll Simulation](https://leetcode.com/problems/dice-roll-simulation/) | [C++](./C++/dice-roll-simulation.cpp) [Python](./Python/dice-roll-simulation.py) | _O(m * n)_ | _O(m)_ | Medium | ||
 1230 | [Toss Strange Coins](https://leetcode.com/problems/toss-strange-coins/) | [C++](./C++/toss-strange-coins.cpp) [Python](./Python/toss-strange-coins.py) | _O(n^2)_ | _O(n)_ | Medium | ||
 1235 | [Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/) | [C++](./C++/maximum-profit-in-job-scheduling.cpp) [Python](./Python/maximum-profit-in-job-scheduling.py) | _O(nlogn)_ | _O(n)_ | Hard | | DP, Heap |
+1239 | [Maximum Length of a Concatenated String with Unique Characters](https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/) | [C++](./C++/maximum-length-of-a-concatenated-string-with-unique-characters.cpp) [Python](./Python/maximum-length-of-a-concatenated-string-with-unique-characters.py) | _O(n)_ ~ _O(2^n)_ | _O(1)_ ~ _O(2^n)_ | Medium | | DP, Bit Manipulation |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
