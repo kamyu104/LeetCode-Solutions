@@ -54,13 +54,13 @@ public:
         {
             unique_lock<mutex> lock{m_};
             cv_.wait(lock, [this]() { return q_.empty() && !working_count_; });
-            for (const auto& worker : workers) {
+            for (const auto& t : workers) {
                 q_.emplace();
             }
             cv_.notify_all();
         }
-        for (auto& worker : workers) {
-            worker.join();
+        for (auto& t : workers) {
+            t.join();
         }
         return vector<string>(lookup.cbegin(), lookup.cend());
     }
