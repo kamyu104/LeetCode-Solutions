@@ -39,7 +39,7 @@ class Solution(object):
                 return url
             return url[:pos]
 
-        def worker(startUrl, lookup):
+        def worker(htmlParser, lookup):
             while True:
                 with self.__cv:
                     while not self.__q:
@@ -66,7 +66,7 @@ class Solution(object):
         self.__q = collections.deque([startUrl])
         lookup = set([startUrl])
         for i in xrange(self.NUMBER_OF_WORKERS):
-            t = threading.Thread(target=worker, args=(startUrl, lookup,))
+            t = threading.Thread(target=worker, args=(htmlParser, lookup))
             t.start()
             workers.append(t)        
         with self.__cv:
