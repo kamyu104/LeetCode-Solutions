@@ -59,7 +59,7 @@ class Solution(object):
                            self.__cv.notifyAll()
                 with self.__cv:
                     self.__working_count -= 1
-                    if not self.__q and self.__working_count == 0:
+                    if not self.__q and not self.__working_count:
                         self.__cv.notifyAll()
 
         workers = []
