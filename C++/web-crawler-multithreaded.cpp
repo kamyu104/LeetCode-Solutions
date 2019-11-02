@@ -32,13 +32,11 @@ public:
                     if (name != hostname(to_url)) {
                         continue;
                     }
-                    {
-                        unique_lock<mutex> lock{m_};
-                        if (!lookup->count(to_url)) {
-                            lookup->emplace(to_url);
-                            q_.emplace(to_url);
-                            cv_.notify_all();
-                        }
+                    unique_lock<mutex> lock{m_};
+                    if (!lookup->count(to_url)) {
+                        lookup->emplace(to_url);
+                        q_.emplace(to_url);
+                        cv_.notify_all();
                     }
                 }
                 {
