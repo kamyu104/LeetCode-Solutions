@@ -15,7 +15,7 @@ public:
         q_.emplace(startUrl);
         unordered_set<string> lookup = {startUrl};
         vector<thread> workers;
-        const auto& worker = [this, &htmlParser](unordered_set<string> *lookup) {
+        const auto& worker = [this](HtmlParser *htmlParser, unordered_set<string> *lookup) {
             while (true) {
                 string from_url;
                 {
@@ -28,7 +28,7 @@ public:
                     ++working_count_;
                 }
                 const auto& name = hostname(from_url);
-                for (const auto& to_url: htmlParser.getUrls(from_url)) {
+                for (const auto& to_url: htmlParser->getUrls(from_url)) {
                     if (name != hostname(to_url)) {
                         continue;
                     }
@@ -49,7 +49,7 @@ public:
             }
         };
         for (int i = 0; i < NUMBER_OF_WORKERS; ++i) {
-            workers.emplace_back(worker, &lookup);
+            workers.emplace_back(worker, &htmlParser, &lookup);
         }
         {
             unique_lock<mutex> lock{m_};
