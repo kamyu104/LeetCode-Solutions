@@ -73,7 +73,7 @@ private:
         return url.substr(0, url.find('/', scheme.length()));
     }
 
-    static const int NUMBER_OF_WORKERS = 8;
+    static const int NUMBER_OF_WORKERS = 4;
     queue<string> q_;
     int working_count_ = 0;
     mutex m_;
