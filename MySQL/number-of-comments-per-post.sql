@@ -1,4 +1,4 @@
-# Time:  O(n^2)
+# Time:  O(n)
 # Space: O(n)
 
 SELECT a.sub_id                 AS post_id, 
