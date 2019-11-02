@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1242%20%2F%201242-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1246%20%2F%201246-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 
@@ -918,6 +918,7 @@
 1203| [Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/)| [C++](./C++/sort-items-by-groups-respecting-dependencies.cpp) [Python](./Python/sort-items-by-groups-respecting-dependencies.py)   | _O(n + e)_          | _O(n + e)_          | Hard         || Topological Sort |
 1210| [Minimum Moves to Reach Target with Rotations](https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/)| [C++](./C++/minimum-moves-to-reach-target-with-rotations.cpp) [Python](./Python/minimum-moves-to-reach-target-with-rotations.py)   | _O(n)_          | _O(n)_          | Hard         |||
 1215| [Stepping Numbers](https://leetcode.com/problems/stepping-numbers/)| [C++](./C++/stepping-numbers.cpp) [Python](./Python/stepping-numbers.py)   | _O(logk + r)_          | _O(k)_          | Medium         |🔒| Precompute, Binary Search |
+1245| [Tree Diameter](https://leetcode.com/problems/tree-diameter/)| [C++](./C++/tree-diameter.cpp) [Python](./Python/tree-diameter.py)   | _O(\|V\| + \|E\|)_         | _O(\|E\|)_          | Medium         |||
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1140,6 +1141,7 @@
 1230 | [Toss Strange Coins](https://leetcode.com/problems/toss-strange-coins/) | [C++](./C++/toss-strange-coins.cpp) [Python](./Python/toss-strange-coins.py) | _O(n^2)_ | _O(n)_ | Medium | ||
 1235 | [Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/) | [C++](./C++/maximum-profit-in-job-scheduling.cpp) [Python](./Python/maximum-profit-in-job-scheduling.py) | _O(nlogn)_ | _O(n)_ | Hard | | DP, Heap |
 1239 | [Maximum Length of a Concatenated String with Unique Characters](https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/) | [C++](./C++/maximum-length-of-a-concatenated-string-with-unique-characters.cpp) [Python](./Python/maximum-length-of-a-concatenated-string-with-unique-characters.py) | _O(n)_ ~ _O(2^n)_ | _O(1)_ ~ _O(2^n)_ | Medium | | DP, Bit Manipulation |
+1246 | [Palindrome Removal](https://leetcode.com/problems/palindrome-removal/) | [C++](./C++/palindrome-removal.cpp) [Python](./Python/palindrome-removal.py) | _O(n^3)_ | _O(n^2)_ | Hard | | |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1222,6 +1224,7 @@
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 0874 | [Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/)  | [C++](./C++/walking-robot-simulation.cpp) [Python](./Python/walking-robot-simulation.py) | _O(n + k)_| _O(k)_| Easy           ||| 
 1138 | [Alphabet Board Path](https://leetcode.com/problems/alphabet-board-path/)  | [C++](./C++/alphabet-board-path.cpp) [Python](./Python/alphabet-board-path.py) | _O(n)_| _O(1)_| Medium           ||| 
+1243| [Array Transformation](https://leetcode.com/problems/array-transformation/) | [C++](./C++/array-transformation.cpp) [Python](./Python/array-transformation.py) | _O(n^2)_ | _O(n)_ | Easy           ||| 
 
 ## Design
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1254,6 +1257,7 @@
 1172| [Dinner Plate Stacks](https://leetcode.com/problems/dinner-plate-stacks/) | [C++](./C++/dinner-plate-stacks.cpp) [Python](./Python/dinner-plate-stacks.py) | push: _O(logn)_<br>pop: _O(1)_, amortized<br>popAtStack: _(logn)_ | _O(n * c)_ | Hard | | |
 1206| [Design Skiplist](https://leetcode.com/problems/design-skiplist/) | [C++](./C++/design-skiplist.cpp) [Python](./Python/design-skiplist.py) | _O(logn)_, on average | _O(n)_ | Hard | | |
 1236| [Web Crawler](https://leetcode.com/problems/web-crawler/) | [C++](./C++/web-crawler.cpp) [Python](./Python/web-crawler.py) | _O(\|V\| + \|E\|)_ | _O(\|V\|)_ | Medium |🔒| | BFS, DFS |
+1244| [Design A Leaderboard](https://leetcode.com/problems/design-a-leaderboard/) | [C++](./C++/design-a-leaderboard.cpp) [Python](./Python/design-a-leaderboard.py) | ctor: _O(1)_<br> add: _O(1)_<br> top: _O(n)_<br> reset: _O(1)_ | _O(n)_ | Medium | | | |
 
 ## Concurrency
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
