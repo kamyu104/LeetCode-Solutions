@@ -24,7 +24,6 @@ class Solution(object):
     def __init__(self):
         self.__cv = threading.Condition()
         self.__q = Queue.Queue()
-        self.__working_count = 0
 
     def crawl(self, startUrl, htmlParser):
         """
