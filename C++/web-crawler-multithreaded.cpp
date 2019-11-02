@@ -15,7 +15,7 @@ public:
         q_.emplace(startUrl);
         unordered_set<string> lookup = {startUrl};
         vector<thread> workers;
-        const auto& worker = [&](unordered_set<string> *lookup) {
+        const auto& worker = [this, &htmlParser](unordered_set<string> *lookup) {
             while (true) {
                 string from_url;
                 {
@@ -87,7 +87,7 @@ public:
         unordered_set<string> lookup = {startUrl};
         vector<thread> workers;
         for (int i = 0; i < NUMBER_OF_WORKERS; ++i) {
-            workers.emplace_back(bind(&Solution::worker, this, &htmlParser, &lookup));
+            workers.emplace_back(bind(&Solution2::worker, this, &htmlParser, &lookup));
         }
         {
             unique_lock<mutex> lock{m_};
