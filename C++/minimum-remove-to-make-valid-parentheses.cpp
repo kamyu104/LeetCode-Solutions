@@ -4,7 +4,6 @@
 class Solution {
 public:
     string minRemoveToMakeValid(string s) {
-        unordered_set<int> lookup;
         int count = 0;
         for (auto i = 0; i < s.size(); ++i) {
             if (s[i] == '(') {
