@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1246%20%2F%201246-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1250%20%2F%201250-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 
@@ -700,6 +700,7 @@
 1232 | [Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/) | [C++](./C++/check-if-it-is-a-straight-line.cpp) [Python](./Python/check-if-it-is-a-straight-line.py) | _O(1)_ | _O(1)_ | Easy |||
 1237 | [Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/) | [C++](./C++/find-positive-integer-solution-for-a-given-equation.cpp) [Python](./Python/find-positive-integer-solution-for-a-given-equation.py) | _O(n)_ | _O(1)_ | Easy |||
 1238| [Circular Permutation in Binary Representation](https://leetcode.com/problems/circular-permutation-in-binary-representation/)     | [C++](./C++/circular-permutation-in-binary-representation.cpp) [Python](./Python/circular-permutation-in-binary-representation.py)  | _O(2^n)_        | _O(1)_          | Medium         | variant of [Gray Code](https://leetcode.com/problems/gray-code/) |
+1250 | [Check If It Is a Good Array](https://leetcode.com/problems/check-if-it-is-a-good-array/) | [C++](./C++/check-if-it-is-a-good-array.cpp) [Python](./Python/check-if-it-is-a-good-array.py) | _O(nlogn)_ | _O(1)_ | Hard || `Bézout's identity` |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -766,6 +767,7 @@
 1040 | [Moving Stones Until Consecutive II](https://leetcode.com/problems/moving-stones-until-consecutive-ii/) | [C++](./C++/moving-stones-until-consecutive-ii.cpp) [Python](./Python/moving-stones-until-consecutive-ii.py) | _O(nlogn)_ | _O(1)_      | Medium         ||
 1213 | [Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays/) | [C++](./C++/intersection-of-three-sorted-arrays.cpp) [Python](./Python/intersection-of-three-sorted-arrays.py) | _O(n)_ | _O(1)_      | Easy         |🔒|
 1214 | [Two Sum BSTs](https://leetcode.com/problems/two-sum-bsts/) | [C++](./C++/two-sum-bsts.cpp) [Python](./Python/two-sum-bsts.py) | _O(n)_ | _O(n)_      | Medium         |🔒| Stack |
+1248| [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) |[C++](./C++/count-number-of-nice-subarrays.cpp)  [Python](./Python/count-number-of-nice-subarrays.py) | _O(n)_ | _O(k)_ | Medium         | variant of [Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/) | Two Pointers, Sliding Window
 
 ## Recursion
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1199,6 +1201,8 @@
 1196 | [How Many Apples Can You Put into the Basket](https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/) | [C++](./C++/how-many-apples-can-you-put-into-the-basket.cpp) [Python](./Python/how-many-apples-can-you-put-into-the-basket.py) | _O(nlogn)_ | _O(n)_ | Easy |🔒|
 1199 | [Minimum Time to Build Blocks](https://leetcode.com/problems/minimum-time-to-build-blocks/) | [C++](./C++/minimum-time-to-build-blocks.cpp) [Python](./Python/minimum-time-to-build-blocks.py) | _O(nlogn)_ | _O(n)_ | Hard |🔒|
 1221 | [Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings/) | [C++](./C++/split-a-string-in-balanced-strings.cpp) [Python](./Python/split-a-string-in-balanced-strings.py) | _O(n)_ | _O(1)_ | Easy ||
+1247 | [Minimum Swaps to Make Strings Equal](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/) | [C++](./C++/minimum-swaps-to-make-strings-equal.cpp) [Python](./Python/minimum-swaps-to-make-strings-equal.py) | _O(n)_ | _O(1)_ | Easy ||
+1249 | [Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | [C++](./C++/minimum-remove-to-make-valid-parentheses.cpp) [Python](./Python/minimum-remove-to-make-valid-parentheses.py) | _O(n)_ | _O(1)_ | Medium | | Stack
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
