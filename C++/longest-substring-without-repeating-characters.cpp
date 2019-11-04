@@ -10,8 +10,8 @@ public:
         for (size_t i = 0; i < s.size(); ++i) {
             if (last_occurrence.count(s[i]) &&
                 last_occurrence[s[i]] >= starting_idx) {
-                    result = max(result, i - starting_idx);
-                    starting_idx = last_occurrence[s[i]] + 1;
+                result = max(result, i - starting_idx);
+                starting_idx = last_occurrence[s[i]] + 1;
             }
             last_occurrence[s[i]] = i;
         }
