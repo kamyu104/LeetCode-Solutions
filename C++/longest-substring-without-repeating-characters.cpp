@@ -4,7 +4,7 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        unordered_map<char, int> last_occurrence;
+        unordered_map<char, size_t> last_occurrence;
         size_t starting_idx = 0;
         size_t result = 0;
         for (size_t i = 0; i < s.size(); ++i) {
