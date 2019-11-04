@@ -8,24 +8,20 @@ public:
             return 0;
         }
 
-        auto num = n / 2;
-        vector<int> is_prime(n, true);
-
+        vector<int> is_prime(n / 2, true);
+        auto cnt = is_prime.size();
         for (int i = 3; i * i < n; i += 2) {
-            if (!is_prime[i]) {
+            if (!is_prime[i / 2]) {
                 continue;
             }
-
             for (int j = i * i; j < n; j += 2 * i) {
-                if (!is_prime[j]) {
+                if (!is_prime[j / 2]) {
                     continue;
                 }
-
-                --num;
-                is_prime[j] = false;
+                --cnt;
+                is_prime[j / 2] = false;
             }
         }
-
-        return num;
+        return cnt;
     }
 };

@@ -17,7 +17,7 @@ class Solution(object):
         p = []
         for key, val in counts.iteritems():
             p.append((-val, key))
-        self.kthElement(p, k)
+        self.kthElement(p, k-1)
 
         result = []
         sorted_p = sorted(p[:k])
@@ -42,11 +42,11 @@ class Solution(object):
         while left <= right:
             pivot_idx = randint(left, right)
             new_pivot_idx = PartitionAroundPivot(left, right, pivot_idx, nums)
-            if new_pivot_idx == k - 1:
+            if new_pivot_idx == k:
                 return
-            elif new_pivot_idx > k - 1:
+            elif new_pivot_idx > k:
                 right = new_pivot_idx - 1
-            else:  # new_pivot_idx < k - 1.
+            else:  # new_pivot_idx < k.
                 left = new_pivot_idx + 1
 
 

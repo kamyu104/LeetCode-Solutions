@@ -27,14 +27,14 @@ class Solution(object):
             while left <= right:
                 pivot_idx = randint(left, right)
                 new_pivot_idx = PartitionAroundPivot(left, right, pivot_idx, nums)
-                if new_pivot_idx == k - 1:
+                if new_pivot_idx == k:
                     return nums[new_pivot_idx]
-                elif new_pivot_idx > k - 1:
+                elif new_pivot_idx > k:
                     right = new_pivot_idx - 1
-                else:  # new_pivot_idx < k - 1.
+                else:  # new_pivot_idx < k.
                     left = new_pivot_idx + 1
 
-        median = kthElement(nums, len(nums)/2 + 1)
+        median = kthElement(nums, len(nums)//2)
         return sum(abs(num - median) for num in nums)
 
     def minMoves22(self, nums):

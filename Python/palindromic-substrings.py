@@ -20,5 +20,5 @@ class Solution(object):
                 if i+P[i] > R:
                     C, R = i, i+P[i]
             return P
-        return sum((max_len+1)/2 for max_len in manacher(s))
+        return sum((max_len+1)//2 for max_len in manacher(s))
 

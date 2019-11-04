@@ -4,18 +4,14 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        return solution(s);
-    }
-private:
-    int solution(const string& s) {
-        unordered_map<char, int> lastOccurrence;
-        int startIdx = 0, result = 0;
-        for (auto i = 0; i < s.size(); ++i) {
-            if (lastOccurrence.find(s[i]) != lastOccurrence.cend() && lastOccurrence[s[i]] >= startIdx) {
-                startIdx = lastOccurrence[s[i]];
+        int result = 0;
+        unordered_map<char, int> lookup;
+        for (int left = 0, right = 0; right < s.length(); ++right) {
+            if (lookup.count(s[right])) {
+                left = max(left, lookup[s[right]] + 1);
             }
-            lastOccurrence[s[i]] = i;
-            result = max(result, i - startIdx);
+            lookup[s[right]] = right;
+            result = max(result, right - left + 1);
         }
         return result;
     }

@@ -18,7 +18,7 @@ public:
 
 private:
     bool check(int n, int K, int N) {
-        // Each combinatin of n moves with k broken eggs could represent a unique F.
+        // Each combination of n moves with k broken eggs could represent a unique F.
         // Thus, the range size of F that all cominations can cover 
         // is the sum of C(n, k), k = 1..K
         int total = 0, c = 1;

@@ -14,6 +14,6 @@ public:
             min_sum = min(min_sum, cur_min);
             total += a;
         }
-        return max_sum > 0 ? max(max_sum, total - min_sum) : max_sum;
+        return max_sum >= 0 ? max(max_sum, total - min_sum) : max_sum;
     }
 };

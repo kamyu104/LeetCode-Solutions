@@ -7,7 +7,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        if s == s[::-1]:
+        if s == s[::-1]:  # optional, to optimize special case
             return len(s)
 
         dp = [[1] * len(s) for _ in xrange(2)]

@@ -1,5 +1,5 @@
 // Time:  O(n + w), n is the size of S, w is the size of words
-// Space: O(1)
+// Space: O(k), k is the number of words
 
 class Solution {
 public:

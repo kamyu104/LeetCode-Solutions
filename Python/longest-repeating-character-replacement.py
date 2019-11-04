@@ -1,6 +1,9 @@
 # Time:  O(n)
 # Space: O(1)
 
+import collections
+
+
 class Solution(object):
     def characterReplacement(self, s, k):
         """
@@ -8,21 +11,14 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        res = 0
-
-        cnts = [0] * 26
-        times, i, j = k, 0, 0
-        while j < len(s):
-            cnts[ord(s[j]) - ord('A')] += 1
-            if s[j] != s[i]:
-                times -= 1
-                if times < 0:
-                    res = max(res, j - i)
-                    while i < j and times < 0:
-                        cnts[ord(s[i]) - ord('A')] -= 1
-                        i += 1
-                        times = k - (j - i + 1 - cnts[ord(s[i]) - ord('A')])
-            j += 1
-
-        return max(res, j - i + min(i, times))
+        result, max_count = 0, 0
+        count = collections.Counter()
+        for i in xrange(len(s)):
+            count[s[i]] += 1
+            max_count = max(max_count, count[s[i]])
+            if result - max_count >= k:
+                count[s[i-result]] -= 1
+            else:
+                result += 1
+        return result
 
