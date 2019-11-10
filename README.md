@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1251%20%2F%201251-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1255%20%2F%201255-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -232,6 +232,7 @@
 1200 | [Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/) | [C++](./C++/minimum-absolute-difference.cpp) [Python](./Python/minimum-absolute-difference.py) | _O(nlogn)_ | _O(n)_      | Easy         || 
 1208 | [Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/) | [C++](./C++/get-equal-substrings-within-budget.cpp) [Python](./Python/get-equal-substrings-within-budget.py) | _O(n)_ | _O(1)_      | Medium         || Sliding Window
 1222 | [Queens That Can Attack the King](https://leetcode.com/problems/queens-that-can-attack-the-king/) | [C++](./C++/queens-that-can-attack-the-king.cpp) [Python](./Python/queens-that-can-attack-the-king.py) | _O(1)_ | _O(1)_      | Medium         || 
+1252 | [Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/) | [C++](./C++/cells-with-odd-values-in-a-matrix.cpp) [Python](./Python/cells-with-odd-values-in-a-matrix.py) | _O(n + m)_ | _O(n + m)_      | Easy         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -970,6 +971,7 @@
 1059| [All Paths from Source Lead to Destination](https://leetcode.com/problems/all-paths-from-source-lead-to-destination/) | [C++](./C++/all-paths-from-source-lead-to-destination.cpp) [Python](./Python/all-paths-from-source-lead-to-destination.py) | _O(n + e)_          | _O(n + e)_          | Medium           |🔒||
 1192| [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) | [C++](./C++/critical-connections-in-a-network.cpp) [Python](./Python/critical-connections-in-a-network.py) | _O(\|V\| + \|E\|)_           | _O(\|V\| + \|E\|)_          | Hard           || `Tarjan's Algorithm`, `Bridge Finding Algorithm` |
 1202| [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | [C++](./C++/smallest-string-with-swaps.cpp) [Python](./Python/smallest-string-with-swaps.py) | _O(nlogn)_          | _O(n)_          | Medium           || Union Find |
+1254| [Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/) | [C++](./C++/number-of-closed-islands.cpp) [Python](./Python/number-of-closed-islands.py) | _O(m * n)_          | _O(1)_          | Medium           |||
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1010,6 +1012,7 @@
 1096| [Brace Expansion II](https://leetcode.com/problems/brace-expansion-ii/) | [C++](./C++/brace-expansion-ii.cpp) [Python](./Python/brace-expansion-ii.py)  | _O(p * l * log(p * l))_ | _O(p * l)_ | Hard         |||
 1219| [Path with Maximum Gold](https://leetcode.com/problems/path-with-maximum-gold/) | [C++](./C++/path-with-maximum-gold.cpp) [Python](./Python/path-with-maximum-gold.py)  | _O(m^2 * n^2)_ | _O(m * n)_ | Medium         |||
 1240| [Tiling a Rectangle with the Fewest Squares](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/) | [C++](./C++/tiling-a-rectangle-with-the-fewest-squares.cpp) [Python](./Python/tiling-a-rectangle-with-the-fewest-squares.py)  | _O(n^2 * m^2 * m^(n * m))_ | _O(n * m)_ | Hard         |||
+1255| [Maximum Score Words Formed by Letters](https://leetcode.com/problems/maximum-score-words-formed-by-letters/) | [C++](./C++/maximum-score-words-formed-by-letters.cpp) [Python](./Python/maximum-score-words-formed-by-letters.py)  | _O(n * 2^n)_ | _O(n)_ | Hard         |||
 
 ## Dynamic Programming
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1205,6 +1208,7 @@
 1221 | [Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings/) | [C++](./C++/split-a-string-in-balanced-strings.cpp) [Python](./Python/split-a-string-in-balanced-strings.py) | _O(n)_ | _O(1)_ | Easy ||
 1247 | [Minimum Swaps to Make Strings Equal](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/) | [C++](./C++/minimum-swaps-to-make-strings-equal.cpp) [Python](./Python/minimum-swaps-to-make-strings-equal.py) | _O(n)_ | _O(1)_ | Easy ||
 1249 | [Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | [C++](./C++/minimum-remove-to-make-valid-parentheses.cpp) [Python](./Python/minimum-remove-to-make-valid-parentheses.py) | _O(n)_ | _O(1)_ | Medium | | Stack
+1253 | [Reconstruct a 2-Row Binary Matrix](https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/) | [C++](./C++/reconstruct-a-2-row-binary-matrix.cpp) [Python](./Python/reconstruct-a-2-row-binary-matrix.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
