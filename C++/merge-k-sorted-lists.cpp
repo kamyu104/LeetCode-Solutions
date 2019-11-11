@@ -1,4 +1,4 @@
-// Time:  O(n * logk)
+// Time:  O(n * logk), n is the length of the result list.
 // Space: O(1)
 
 /**
