@@ -1,4 +1,4 @@
-// Time:  O(logk * n * k)
+// Time:  O(n * k * logk)
 // Space: O(1)
 
 /**
