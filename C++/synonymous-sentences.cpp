@@ -45,7 +45,7 @@ private:
         (*inv_lookup)[(*lookup)[x]] = x;
     }
     
-    vector<string> split(const string& s, const char delim) {
+    vector<string> split(const string& s, const char delim) const {
         vector<string> tokens;
         stringstream ss(s);
         string token;
@@ -57,7 +57,7 @@ private:
         return tokens;
     }
     
-    vector<string> product(const vector<vector<string>>& options) {
+    vector<string> product(const vector<vector<string>>& options) const {
         vector<string> result;
         int total = 1;
         for (const auto& opt : options) {
