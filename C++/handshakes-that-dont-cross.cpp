@@ -25,7 +25,7 @@ private:
         return pow(x, m - 2, m);
     }
 
-	int pow(uint64_t a, int b, int m) {
+    int pow(uint64_t a, int b, int m) {  // O(logMOD) = O(1)
         a %= m;
         uint64_t result = 1;
         while (b) {
