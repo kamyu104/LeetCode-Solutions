@@ -3,6 +3,7 @@
 # Space: O(p*l)
 
 import collections
+import itertools
 
 
 class UnionFind(object):
