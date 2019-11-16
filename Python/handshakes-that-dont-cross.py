@@ -20,7 +20,7 @@ class Solution(object):
             return result
 
         n = num_people//2
-        return nCr(2*n, n, MOD)*inv(n+1, MOD)%MOD  # Catalan number
+        return nCr(2*n, n, MOD)*inv(n+1, MOD) % MOD  # Catalan number
 
 
 # Time:  O(n^2)
