@@ -21,7 +21,7 @@ private:
         return result;
     }
     
-    int inv(int x, int m) {
+    int inv(int x, int m) {  // Euler's Theorem
         return pow(x, m - 2, m);
     }
 
