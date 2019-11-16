@@ -508,7 +508,7 @@
 1120 |[Maximum Average Subtree](https://leetcode.com/problems/maximum-average-subtree/)| [C++](./C++/maximum-average-subtree.cpp)  [Python](./Python/maximum-average-subtree.py) | _O(n)_ | _O(h)_ | Easy |🔒| DFS |
 1123 |[Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/)| [C++](./C++/lowest-common-ancestor-of-deepest-leaves.cpp)  [Python](./Python/lowest-common-ancestor-of-deepest-leaves.py) | _O(n)_ | _O(h)_ | Medium || DFS |
 1145 |[Binary Tree Coloring Game](https://leetcode.com/problems/binary-tree-coloring-game/)| [C++](./C++/binary-tree-coloring-game.cpp)  [Python](./Python/binary-tree-coloring-game.py) | _O(n)_ | _O(h)_ | Medium || DFS |
-1157 |[Smallest Common Region](https://leetcode.com/problems/smallest-common-region/)| [C++](./C++/smallest-common-region.cpp)  [Python](./Python/smallest-common-region.py) | _O(m * n)_ | _O(n)_ | Medium |||
+1257 |[Smallest Common Region](https://leetcode.com/problems/smallest-common-region/)| [C++](./C++/smallest-common-region.cpp)  [Python](./Python/smallest-common-region.py) | _O(m * n)_ | _O(n)_ | Medium |||
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
