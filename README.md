@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1255%20%2F%201255-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1259%20%2F%201259-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -508,6 +508,7 @@
 1120 |[Maximum Average Subtree](https://leetcode.com/problems/maximum-average-subtree/)| [C++](./C++/maximum-average-subtree.cpp)  [Python](./Python/maximum-average-subtree.py) | _O(n)_ | _O(h)_ | Easy |🔒| DFS |
 1123 |[Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/)| [C++](./C++/lowest-common-ancestor-of-deepest-leaves.cpp)  [Python](./Python/lowest-common-ancestor-of-deepest-leaves.py) | _O(n)_ | _O(h)_ | Medium || DFS |
 1145 |[Binary Tree Coloring Game](https://leetcode.com/problems/binary-tree-coloring-game/)| [C++](./C++/binary-tree-coloring-game.cpp)  [Python](./Python/binary-tree-coloring-game.py) | _O(n)_ | _O(h)_ | Medium || DFS |
+1157 |[Smallest Common Region](https://leetcode.com/problems/smallest-common-region/)| [C++](./C++/smallest-common-region.cpp)  [Python](./Python/smallest-common-region.py) | _O(m * n)_ | _O(n)_ | Medium |||
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -704,6 +705,8 @@
 1237 | [Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/) | [C++](./C++/find-positive-integer-solution-for-a-given-equation.cpp) [Python](./Python/find-positive-integer-solution-for-a-given-equation.py) | _O(n)_ | _O(1)_ | Easy |||
 1238| [Circular Permutation in Binary Representation](https://leetcode.com/problems/circular-permutation-in-binary-representation/)     | [C++](./C++/circular-permutation-in-binary-representation.cpp) [Python](./Python/circular-permutation-in-binary-representation.py)  | _O(2^n)_        | _O(1)_          | Medium         | variant of [Gray Code](https://leetcode.com/problems/gray-code/) |
 1250 | [Check If It Is a Good Array](https://leetcode.com/problems/check-if-it-is-a-good-array/) | [C++](./C++/check-if-it-is-a-good-array.cpp) [Python](./Python/check-if-it-is-a-good-array.py) | _O(nlogn)_ | _O(1)_ | Hard || `Bézout's identity` |
+1256| [Encode Number](https://leetcode.com/problems/encode-number/)     | [C++](./C++/encode-number.cpp) [Python](./Python/encode-number.py)  | _O(logn)_        | _O(1)_          | Medium         | |
+1259| [Handshakes That Don't Cross](https://leetcode.com/problems/handshakes-that-dont-cross/)     | [C++](./C++/handshakes-that-dont-cross.cpp) [Python](./Python/handshakes-that-dont-cross.py)  | _O(n)_        | _O(1)_          | Hard         | | `Catalan Number`, DP
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1013,6 +1016,7 @@
 1219| [Path with Maximum Gold](https://leetcode.com/problems/path-with-maximum-gold/) | [C++](./C++/path-with-maximum-gold.cpp) [Python](./Python/path-with-maximum-gold.py)  | _O(m^2 * n^2)_ | _O(m * n)_ | Medium         |||
 1240| [Tiling a Rectangle with the Fewest Squares](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/) | [C++](./C++/tiling-a-rectangle-with-the-fewest-squares.cpp) [Python](./Python/tiling-a-rectangle-with-the-fewest-squares.py)  | _O(n^2 * m^2 * m^(n * m))_ | _O(n * m)_ | Hard         |||
 1255| [Maximum Score Words Formed by Letters](https://leetcode.com/problems/maximum-score-words-formed-by-letters/) | [C++](./C++/maximum-score-words-formed-by-letters.cpp) [Python](./Python/maximum-score-words-formed-by-letters.py)  | _O(n * 2^n)_ | _O(n)_ | Hard         |||
+1258| [Synonymous Sentences](https://leetcode.com/problems/synonymous-sentences/) | [C++](./C++/synonymous-sentences.cpp) [Python](./Python/synonymous-sentences.py)  | _O(p * l * log(p * l))_ | _O(p * l)_ | Medium         || Union Find |
 
 ## Dynamic Programming
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
