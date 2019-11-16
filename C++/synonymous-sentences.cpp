@@ -76,7 +76,7 @@ private:
         return result;
     }
     
-	  string join(const vector<string>& strings, const string& delim) const {
+    string join(const vector<string>& strings, const string& delim) const {
         ostringstream imploded;
         copy(strings.begin(), prev(strings.end()), ostream_iterator<string>(imploded, delim.c_str()));
         return imploded.str() + *prev(strings.end());
