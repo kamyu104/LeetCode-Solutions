@@ -8,7 +8,7 @@ class Solution(object):
         :rtype: int
         """
         MOD = 10**9+7
-        def inv(x, m):
+        def inv(x, m):  # Euler's Theorem
             return pow(x, m-2, m)  # O(logMOD) = O(1)
 
         def nCr(n, k, m):
