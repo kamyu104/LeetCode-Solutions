@@ -67,9 +67,9 @@ private:
                     continue;
                 }
                 if (dot({dx, dy}, {t.first - b.first, t.second - b.second}) > 0) {
-                    closer.push_back({nb, b});
+                    closer.emplace_back(nb, b);
                 } else {
-                    detour.push_back({nb, b});
+                    detour.emplace_back(nb, b);
                 }
             }
         }
