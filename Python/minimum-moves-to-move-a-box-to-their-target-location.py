@@ -1,7 +1,7 @@
 # Time:  O(m^2 * n^2)
 # Space: O(m^2 * n^2)
 
-# A* algorithm without heap
+# a star algorithm without heap
 class Solution(object):
     def minPushBox(self, grid):
         """
@@ -14,7 +14,7 @@ class Solution(object):
 
         def can_reach(b, p, t):
             closer, detour = [p], []
-            lookup = set([b])
+            lookup = set(closer+[b])
             while True:
                 if not closer:
                     if not detour:
@@ -23,15 +23,13 @@ class Solution(object):
                 p = closer.pop()
                 if p == t:
                     break
-                if p in lookup:
-                    continue
-                lookup.add(p)
                 for dx, dy in directions:
                     np = (p[0]+dx, p[1]+dy)
                     if not (0 <= np[0] < len(grid) and 0 <= np[1] < len(grid[0]) and
                        grid[np[0]][np[1]] != '#' and np not in lookup):
                         continue
                     (closer if dot((dx, dy), (t[0]-p[0], t[1]-p[1])) > 0 else detour).append(np)
+                    lookup.add(np)
             return True
 
         def g(p1, p2):
@@ -40,7 +38,7 @@ class Solution(object):
         def a_star(b, p, t):
             f, h = g(b, t), 2
             closer, detour = [(b, p)], []
-            lookup = set()
+            lookup = set(closer)
             while True:
                 if not closer:
                     if not detour:
@@ -50,9 +48,6 @@ class Solution(object):
                 b, p = closer.pop()
                 if b == t:
                     break
-                if b in lookup:
-                    continue
-                lookup.add((b, p))
                 for dx, dy in directions:
                     nb, np = (b[0]+dx, b[1]+dy), (b[0]-dx, b[1]-dy)
                     if not (0 <= nb[0] < len(grid) and 0 <= nb[1] < len(grid[0]) and
@@ -61,6 +56,7 @@ class Solution(object):
                             (nb, b) not in lookup and can_reach(b, p, np)):
                         continue
                     (closer if dot((dx, dy), (t[0]-b[0], t[1]-b[1])) > 0 else detour).append((nb, b))
+                    lookup.add((nb, b))
             return f
         
         b, p, t = None, None, None
