@@ -15,14 +15,12 @@ class Solution(object):
         def can_reach(b, p, t):
             closer, detour = [p], []
             lookup = set([b])
-            while True:
+            while closer or detour:
                 if not closer:
-                    if not detour:
-                        return False
                     closer, detour = detour, closer
                 p = closer.pop()
                 if p == t:
-                    break
+                    return True
                 if p in lookup:
                     continue
                 lookup.add(p)
@@ -32,7 +30,7 @@ class Solution(object):
                        grid[np[0]][np[1]] != '#' and np not in lookup):
                         continue
                     (closer if dot((dx, dy), (t[0]-p[0], t[1]-p[1])) > 0 else detour).append(np)
-            return True
+            return False
 
         def g(p1, p2):
             return abs(p1[0]-p2[0])+abs(p1[1]-p2[1])
@@ -41,15 +39,13 @@ class Solution(object):
             f, h = g(b, t), 2
             closer, detour = [(b, p)], []
             lookup = set()
-            while True:
+            while closer or detour:
                 if not closer:
-                    if not detour:
-                        return -1
                     f += h
                     closer, detour = detour, closer
                 b, p = closer.pop()
                 if b == t:
-                    break
+                    return f
                 if (b, p) in lookup:
                     continue
                 lookup.add((b, p))
@@ -61,7 +57,7 @@ class Solution(object):
                             (nb, b) not in lookup and can_reach(b, p, np)):
                         continue
                     (closer if dot((dx, dy), (t[0]-b[0], t[1]-b[1])) > 0 else detour).append((nb, b))
-            return f
+            return -1
         
         b, p, t = None, None, None
         for i in xrange(len(grid)):
