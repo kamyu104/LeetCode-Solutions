@@ -76,9 +76,9 @@ private:
         return -1;
     }
     
-    inline int g(const pair<int, int>& p1,
-                 const pair<int, int>& p2) {
-        return abs(p1.first - p2.first) + abs(p1.second - p2.second);
+    inline int g(const pair<int, int>& a,
+                 const pair<int, int>& b) {
+        return abs(a.first - b.first) + abs(a.second - b.second);
     }
     
     int can_reach(const vector<vector<char>>& grid,
