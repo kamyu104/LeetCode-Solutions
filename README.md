@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1259%20%2F%201259-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1263%20%2F%201263-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -233,6 +233,7 @@
 1208 | [Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/) | [C++](./C++/get-equal-substrings-within-budget.cpp) [Python](./Python/get-equal-substrings-within-budget.py) | _O(n)_ | _O(1)_      | Medium         || Sliding Window
 1222 | [Queens That Can Attack the King](https://leetcode.com/problems/queens-that-can-attack-the-king/) | [C++](./C++/queens-that-can-attack-the-king.cpp) [Python](./Python/queens-that-can-attack-the-king.py) | _O(1)_ | _O(1)_      | Medium         || 
 1252 | [Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/) | [C++](./C++/cells-with-odd-values-in-a-matrix.cpp) [Python](./Python/cells-with-odd-values-in-a-matrix.py) | _O(n + m)_ | _O(n + m)_      | Easy         || 
+1260 | [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/) | [C++](./C++/shift-2d-grid.cpp) [Python](./Python/shift-2d-grid.py) | _O(n)_ | _O(1)_      | Easy         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -509,6 +510,7 @@
 1123 |[Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/)| [C++](./C++/lowest-common-ancestor-of-deepest-leaves.cpp)  [Python](./Python/lowest-common-ancestor-of-deepest-leaves.py) | _O(n)_ | _O(h)_ | Medium || DFS |
 1145 |[Binary Tree Coloring Game](https://leetcode.com/problems/binary-tree-coloring-game/)| [C++](./C++/binary-tree-coloring-game.cpp)  [Python](./Python/binary-tree-coloring-game.py) | _O(n)_ | _O(h)_ | Medium || DFS |
 1257 |[Smallest Common Region](https://leetcode.com/problems/smallest-common-region/)| [C++](./C++/smallest-common-region.cpp)  [Python](./Python/smallest-common-region.py) | _O(m * n)_ | _O(n)_ | Medium |||
+1261 |[Find Elements in a Contaminated Binary Tree](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/)| [C++](./C++/find-elements-in-a-contaminated-binary-tree.cpp)  [Python](./Python/find-elements-in-a-contaminated-binary-tree.py) | _O(n)_ | _O(h)_ | Medium || DFS|
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -927,6 +929,7 @@
 1210| [Minimum Moves to Reach Target with Rotations](https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/)| [C++](./C++/minimum-moves-to-reach-target-with-rotations.cpp) [Python](./Python/minimum-moves-to-reach-target-with-rotations.py)   | _O(n)_          | _O(n)_          | Hard         |||
 1215| [Stepping Numbers](https://leetcode.com/problems/stepping-numbers/)| [C++](./C++/stepping-numbers.cpp) [Python](./Python/stepping-numbers.py)   | _O(logk + r)_          | _O(k)_          | Medium         |🔒| Precompute, Binary Search |
 1245| [Tree Diameter](https://leetcode.com/problems/tree-diameter/)| [C++](./C++/tree-diameter.cpp) [Python](./Python/tree-diameter.py)   | _O(\|V\| + \|E\|)_         | _O(\|E\|)_          | Medium         |||
+1263|[Minimum Moves to Move a Box to Their Target Location](https://leetcode.com/problems/minimum-moves-to-move-a-box-to-their-target-location/)| [C++](./C++/minimum-moves-to-move-a-box-to-their-target-location.cpp) [Python](./Python/minimum-moves-to-move-a-box-to-their-target-location.py)| _O(m^2 * n^2)_ | _O(m^2 * n^2)_ | Hard | | `A* Search Algorithm` |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1153,6 +1156,7 @@
 1235 | [Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/) | [C++](./C++/maximum-profit-in-job-scheduling.cpp) [Python](./Python/maximum-profit-in-job-scheduling.py) | _O(nlogn)_ | _O(n)_ | Hard | | DP, Heap |
 1239 | [Maximum Length of a Concatenated String with Unique Characters](https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/) | [C++](./C++/maximum-length-of-a-concatenated-string-with-unique-characters.cpp) [Python](./Python/maximum-length-of-a-concatenated-string-with-unique-characters.py) | _O(n)_ ~ _O(2^n)_ | _O(1)_ ~ _O(2^n)_ | Medium | | DP, Bit Manipulation |
 1246 | [Palindrome Removal](https://leetcode.com/problems/palindrome-removal/) | [C++](./C++/palindrome-removal.cpp) [Python](./Python/palindrome-removal.py) | _O(n^3)_ | _O(n^2)_ | Hard | | |
+1262 | [Greatest Sum Divisible by Three](https://leetcode.com/problems/greatest-sum-divisible-by-three/) | [C++](./C++/greatest-sum-divisible-by-three.cpp) [Python](./Python/greatest-sum-divisible-by-three.py) | _O(n)_ | _O(1)_ | Medium | | |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
