@@ -9,8 +9,8 @@ class Solution(object):
         :rtype: int
         """
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
-        def dot(p1, p2):
-            return p1[0]*p2[0]+p1[1]*p2[1]
+        def dot(a, b):
+            return a[0]*b[0]+a[1]*b[1]
 
         def can_reach(grid, b, p, t):
             closer, detour = [p], []
@@ -32,8 +32,8 @@ class Solution(object):
                     (closer if dot((dx, dy), (t[0]-p[0], t[1]-p[1])) > 0 else detour).append(np)
             return False
 
-        def g(p1, p2):
-            return abs(p1[0]-p2[0])+abs(p1[1]-p2[1])
+        def g(a, b):
+            return abs(a[0]-b[0])+abs(a[1]-b[1])
         
         def a_star(grid, b, p, t):
             f, dh = g(b, t), 2
