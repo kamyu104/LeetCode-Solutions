@@ -12,7 +12,7 @@ class Solution(object):
         def dot(p1, p2):
             return p1[0]*p2[0]+p1[1]*p2[1]
 
-        def can_reach(b, p, t):
+        def can_reach(grid, b, p, t):
             closer, detour = [p], []
             lookup = set([b])
             while closer or detour:
@@ -35,7 +35,7 @@ class Solution(object):
         def g(p1, p2):
             return abs(p1[0]-p2[0])+abs(p1[1]-p2[1])
         
-        def a_star(b, p, t):
+        def a_star(grid, b, p, t):
             f, dh = g(b, t), 2
             closer, detour = [(b, p)], []
             lookup = set()
@@ -54,7 +54,7 @@ class Solution(object):
                     if not (0 <= nb[0] < len(grid) and 0 <= nb[1] < len(grid[0]) and
                             0 <= np[0] < len(grid) and  0 <= np[1] < len(grid[0]) and
                             grid[nb[0]][nb[1]] != '#' and grid[np[0]][np[1]] != '#' and
-                            (nb, b) not in lookup and can_reach(b, p, np)):
+                            (nb, b) not in lookup and can_reach(grid, b, p, np)):
                         continue
                     (closer if dot((dx, dy), (t[0]-b[0], t[1]-b[1])) > 0 else detour).append((nb, b))
             return -1
@@ -68,4 +68,4 @@ class Solution(object):
                     p = (i, j)
                 elif grid[i][j] == 'T':
                     t = (i, j)
-        return a_star(b, p, t)
+        return a_star(grid, b, p, t)
