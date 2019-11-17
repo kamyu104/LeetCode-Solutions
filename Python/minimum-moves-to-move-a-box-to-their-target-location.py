@@ -36,12 +36,12 @@ class Solution(object):
             return abs(p1[0]-p2[0])+abs(p1[1]-p2[1])
         
         def a_star(b, p, t):
-            f, h = g(b, t), 2
+            f, dh = g(b, t), 2
             closer, detour = [(b, p)], []
             lookup = set()
             while closer or detour:
                 if not closer:
-                    f += h
+                    f += dh
                     closer, detour = detour, closer
                 b, p = closer.pop()
                 if b == t:
