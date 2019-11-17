@@ -1,7 +1,7 @@
 # Time:  O(m^2 * n^2)
 # Space: O(m^2 * n^2)
 
-# a star algorithm without heap
+# A* algorithm without heap
 class Solution(object):
     def minPushBox(self, grid):
         """
