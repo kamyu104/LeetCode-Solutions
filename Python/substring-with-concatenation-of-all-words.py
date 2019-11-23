@@ -36,9 +36,6 @@ class Solution(object):
                         left += k
                     if count == n:
                         result.append(left)
-                        tmp[s[left:left+k]] -= 1
-                        count -= 1
-                        left += k
                 else:
                     tmp = collections.defaultdict(int)
                     count = 0
