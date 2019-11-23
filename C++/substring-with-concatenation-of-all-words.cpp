@@ -34,9 +34,6 @@ public:
                     }
                     if (count == n) {
                         result.emplace_back(left);
-                        --tmp[s.substr(left, k)];
-                        --count;
-                        left += k;
                     }
                 } else {
                     tmp.clear();
