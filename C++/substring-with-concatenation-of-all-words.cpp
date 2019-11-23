@@ -50,7 +50,6 @@ public:
 };
 
 
-
 // Time:  O((m - n * k) * n * k) ~ O(m * n * k), m is the length of the string,
 //                                               n is the size of the dictionary,
 //                                               k is the length of each word
