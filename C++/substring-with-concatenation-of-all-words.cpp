@@ -7,8 +7,9 @@
 class Solution {
 public:
     vector<int> findSubstring(string s, vector<string>& words) {
-        if (words.empty())
+        if (words.empty()) {
             return {};
+        }
         
         vector<int> result;
         const int m = s.length(), n = words.size(), k = words.front().length();
