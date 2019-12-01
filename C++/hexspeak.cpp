@@ -29,9 +29,8 @@ public:
 class Solution2 {
 public:
     string toHexspeak(string num) {
-        uint64_t n = stoul(num);
         stringstream ss;
-        ss << hex << uppercase  << n;
+        ss << hex << uppercase  << stoul(num);
         string result(ss.str());
         for (auto i = 0; i < result.length(); ++i) {
             if ('2' <= result[i] && result[i] <= '9') {
