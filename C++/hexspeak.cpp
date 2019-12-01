@@ -23,7 +23,6 @@ public:
     }
 };
 
-
 // Time:  O(n)
 // Space: O(n)
 class Solution2 {
