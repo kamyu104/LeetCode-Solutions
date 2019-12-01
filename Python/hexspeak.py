@@ -7,11 +7,11 @@ class Solution(object):
         :type num: str
         :rtype: str
         """
-        n = int(num)
         lookup = {0:'O', 1:'I'}
         for i in xrange(6):
             lookup[10+i] = chr(ord('A')+i)
         result = []
+        n = int(num)
         while n:
             n, r = divmod(n, 16)
             if r not in lookup:
