@@ -22,3 +22,28 @@ public:
         return result;
     }
 };
+
+
+// Time:  O(n)
+// Space: O(n)
+class Solution2 {
+public:
+    string toHexspeak(string num) {
+        uint64_t n = stoul(num);
+        stringstream ss;
+        ss << hex << uppercase  << n;
+        string result(ss.str());
+        for (auto i = 0; i < result.length(); ++i) {
+            if ('2' <= result[i] && result[i] <= '9') {
+                return "ERROR";
+            }
+            if (result[i] == '0') {
+                result[i] = 'O';
+            }
+            if (result[i] == '1') {
+                result[i] = 'I';
+            }
+        }
+        return result;
+    }
+};
