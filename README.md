@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1269%20%2F%201269-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1278%20%2F%201278-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -235,6 +235,7 @@
 1252 | [Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/) | [C++](./C++/cells-with-odd-values-in-a-matrix.cpp) [Python](./Python/cells-with-odd-values-in-a-matrix.py) | _O(n + m)_ | _O(n + m)_      | Easy         || 
 1260 | [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/) | [C++](./C++/shift-2d-grid.cpp) [Python](./Python/shift-2d-grid.py) | _O(n)_ | _O(1)_      | Easy         || 
 1267 | [Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate/) | [C++](./C++/count-servers-that-communicate.cpp) [Python](./Python/count-servers-that-communicate.py) | _O(m * n)_ | _O(m + n)_      | Medium         || 
+1275 | [Find Winner on a Tic Tac Toe Game](https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/) | [C++](./C++/find-winner-on-a-tic-tac-toe-game.cpp) [Python](./Python/find-winner-on-a-tic-tac-toe-game.py) | _O(1)_ | _O(1)_      | Easy         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -339,6 +340,7 @@
 1189 | [Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/) | [C++](./C++/maximum-number-of-balloons.cpp) [Python](./Python/maximum-number-of-balloons.py) | _O(n)_ | _O(1)_ | Easy | | Hash
 1233 | [Remove Sub-Folders from the Filesystem](https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/) | [C++](./C++/remove-sub-folders-from-the-filesystem.cpp) [Python](./Python/remove-sub-folders-from-the-filesystem.py) | _O(n)_ | _O(t)_ | Medium | | Trie
 1234 | [Replace the Substring for Balanced String](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) | [C++](./C++/replace-the-substring-for-balanced-string.cpp) [Python](./Python/replace-the-substring-for-balanced-string.py) | _O(n)_ | _O(t)_ | Medium | | Two Pointers, Sliding Window
+1271 | [Hexspeak](https://leetcode.com/problems/hexspeak/) | [C++](./C++/hexspeak.cpp) [Python](./Python/hexspeak.py) | _O(n)_ | _O(1)_ | Easy | |
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -712,6 +714,7 @@
 1256| [Encode Number](https://leetcode.com/problems/encode-number/)     | [C++](./C++/encode-number.cpp) [Python](./Python/encode-number.py)  | _O(logn)_        | _O(1)_          | Medium         | |
 1259| [Handshakes That Don't Cross](https://leetcode.com/problems/handshakes-that-dont-cross/)     | [C++](./C++/handshakes-that-dont-cross.cpp) [Python](./Python/handshakes-that-dont-cross.py)  | _O(n)_        | _O(1)_          | Hard         | | `Catalan Number`, DP
 1266| [Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/)     | [C++](./C++/minimum-time-visiting-all-points.cpp) [Python](./Python/minimum-time-visiting-all-points.py)  | _O(n)_        | _O(1)_          | Easy         | |
+1276| [Number of Burgers with No Waste of Ingredients](https://leetcode.com/problems/number-of-burgers-with-no-waste-of-ingredients/)     | [C++](./C++/number-of-burgers-with-no-waste-of-ingredients.cpp) [Python](./Python/number-of-burgers-with-no-waste-of-ingredients.py)  | _O(1)_        | _O(1)_          | Medium         | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -864,6 +867,7 @@
 1201 | [Ugly Number III](https://leetcode.com/problems/ugly-number-iii/) | [C++](./C++/ugly-number-iii.cpp) [Python](./Python/ugly-number-iii.py) | _O(logn)_ | _O(1)_ | Medium | | Inclusion-Exclusion Principle
 1228 | [Missing Number In Arithmetic Progression](https://leetcode.com/problems/missing-number-in-arithmetic-progression/) | [C++](./C++/missing-number-in-arithmetic-progression.cpp) [Python](./Python/missing-number-in-arithmetic-progression.py) | _O(logn)_ | _O(1)_ | Easy | |
 1231 | [Divide Chocolate](https://leetcode.com/problems/divide-chocolate/) | [C++](./C++/divide-chocolate.cpp) [Python](./Python/divide-chocolate.py) | _O(nlogn)_ | _O(1)_ | Hard | |
+1274 | [Number of Ships in a Rectangle](https://leetcode.com/problems/number-of-ships-in-a-rectangle/) | [C++](./C++/number-of-ships-in-a-rectangle.cpp) [Python](./Python/number-of-ships-in-a-rectangle.py) | _O(log(m * n))_ | _O(log(m * n))_ | Hard | | Divide and Conquer
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -981,6 +985,7 @@
 1192| [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) | [C++](./C++/critical-connections-in-a-network.cpp) [Python](./Python/critical-connections-in-a-network.py) | _O(\|V\| + \|E\|)_           | _O(\|V\| + \|E\|)_          | Hard           || `Tarjan's Algorithm`, `Bridge Finding Algorithm` |
 1202| [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | [C++](./C++/smallest-string-with-swaps.cpp) [Python](./Python/smallest-string-with-swaps.py) | _O(nlogn)_          | _O(n)_          | Medium           || Union Find |
 1254| [Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/) | [C++](./C++/number-of-closed-islands.cpp) [Python](./Python/number-of-closed-islands.py) | _O(m * n)_          | _O(1)_          | Medium           |||
+1273| [Delete Tree Nodes](https://leetcode.com/problems/delete-tree-nodes/) | [C++](./C++/delete-tree-nodes.cpp) [Python](./Python/delete-tree-nodes.py) | _O(n)_          | _O(n)_          | Medium           || DFS, DP |
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1161,6 +1166,8 @@
 1246 | [Palindrome Removal](https://leetcode.com/problems/palindrome-removal/) | [C++](./C++/palindrome-removal.cpp) [Python](./Python/palindrome-removal.py) | _O(n^3)_ | _O(n^2)_ | Hard | | |
 1262 | [Greatest Sum Divisible by Three](https://leetcode.com/problems/greatest-sum-divisible-by-three/) | [C++](./C++/greatest-sum-divisible-by-three.cpp) [Python](./Python/greatest-sum-divisible-by-three.py) | _O(n)_ | _O(1)_ | Medium | | |
 1269 | [Number of Ways to Stay in the Same Place After Some Steps](https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/) | [C++](./C++/number-of-ways-to-stay-in-the-same-place-after-some-steps.cpp) [Python](./Python/number-of-ways-to-stay-in-the-same-place-after-some-steps.py) | _O(n^2)_ | _O(n)_ | Hard | | |
+1277 | [Count Square Submatrices with All Ones](https://leetcode.com/problems/count-square-submatrices-with-all-ones/) | [C++](./C++/count-square-submatrices-with-all-ones.cpp) [Python](./Python/count-square-submatrices-with-all-ones.py) | _O(m * n)_ | _O(1)_ | Medium | | |
+1278 | [Palindrome Partitioning III](https://leetcode.com/problems/palindrome-partitioning-iii/) | [C++](./C++/palindrome-partitioning-iii.cpp) [Python](./Python/palindrome-partitioning-iii.py) | _O(k * n^2)_ | _O(n^2)_ | Hard | | |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1221,6 +1228,7 @@
 1247 | [Minimum Swaps to Make Strings Equal](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/) | [C++](./C++/minimum-swaps-to-make-strings-equal.cpp) [Python](./Python/minimum-swaps-to-make-strings-equal.py) | _O(n)_ | _O(1)_ | Easy ||
 1249 | [Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | [C++](./C++/minimum-remove-to-make-valid-parentheses.cpp) [Python](./Python/minimum-remove-to-make-valid-parentheses.py) | _O(n)_ | _O(1)_ | Medium | | Stack
 1253 | [Reconstruct a 2-Row Binary Matrix](https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/) | [C++](./C++/reconstruct-a-2-row-binary-matrix.cpp) [Python](./Python/reconstruct-a-2-row-binary-matrix.py) | _O(n)_ | _O(1)_ | Medium ||
+1272 | [Remove Interval](https://leetcode.com/problems/remove-interval/) | [C++](./C++/remove-interval.cpp) [Python](./Python/remove-interval.py) | _O(n)_ | _O(1)_ | Medium || Line Sweep
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1353,6 +1361,7 @@
 1241| [Number of Comments per Post](https://leetcode.com/problems/number-of-comments-per-post/) | [MySQL](./MySQL/number-of-comments-per-post.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1251| [Average Selling Price](https://leetcode.com/problems/average-selling-price/) | [MySQL](./MySQL/average-selling-price.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1264| [Page Recommendations](https://leetcode.com/problems/page-recommendations/) | [MySQL](./MySQL/page-recommendations.sql) | _O(m + n)_ | _O(m)_       | Medium           |🔒| |
+1270| [All People Report to the Given Manager](https://leetcode.com/problems/all-people-report-to-the-given-manager/) | [MySQL](./MySQL/all-people-report-to-the-given-manager.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
