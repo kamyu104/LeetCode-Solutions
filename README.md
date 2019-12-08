@@ -1305,7 +1305,7 @@
 1195| [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded/)| [C++](./C++/fizz-buzz-multithreaded.cpp) [Python](./Python/fizz-buzz-multithreaded.py) | _O(n)_ | _O(1)_ | Medium ||
 1226| [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers/)| [C++](./C++/the-dining-philosophers.cpp) [Python](./Python/the-dining-philosophers.py) | _O(n)_ | _O(1)_ | Medium ||
 1242| [Web Crawler Multithreaded](https://leetcode.com/problems/web-crawler-multithreaded/)| [C++](./C++/web-crawler-multithreaded.cpp) [Python](./Python/web-crawler-multithreaded.py) |  _O(\|V\| + \|E\|)_ | _O(\|V\|)_ | Medium |🔒| | BFS, DFS |
-1279| [Traffic Light Controlled Intersection](https://leetcode.com/problems/traffic-light-controlled-intersection/)| [C++](./C++/traffic-light-controlled-intersection.cpp) [Python](./Python/traffic-light-controlled-intersection.py) |  _O(n)_ | _O(n)_ | Easy |🔒| | |
+1279| [Traffic Light Controlled Intersection](https://leetcode.com/problems/traffic-light-controlled-intersection/)| [C++](./C++/traffic-light-controlled-intersection.cpp) [Python](./Python/traffic-light-controlled-intersection.py) |  _O(n)_ | _O(1)_ | Easy |🔒| | |
 
 ## SQL
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
