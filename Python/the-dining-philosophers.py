@@ -6,7 +6,7 @@ import threading
 
 class DiningPhilosophers(object):
     def __init__(self):
-        self.__m = [threading.Condition() for _ in xrange(5)]
+        self.__lock = [threading.Lock() for _ in xrange(5)]
 
     # call the functions directly to execute, for example, eat()
     def wantsToEat(self, philosopher, pickLeftFork, pickRightFork, eat, putLeftFork, putRightFork):
@@ -26,8 +26,8 @@ class DiningPhilosophers(object):
         else:
             first, second = right, left
 
-        with self.__m[first]:
-            with self.__m[second]:
+        with self.__lock[first]:
+            with self.__lock[second]:
                 pickLeftFork()
                 pickRightFork()
                 eat()
