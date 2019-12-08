@@ -1,5 +1,5 @@
-// Time:  O(m * n * 2^(m * n))
-// Space: O(m * n * 2^(m * n))
+// Time:  O((m * n) * 2^(m * n))
+// Space: O((m * n) * 2^(m * n))
 
 class Solution {
 public:
