@@ -7,7 +7,7 @@ import threading
 class TrafficLight(object):
     
     def __init__(self):
-        self.__lock = threading.Lock()
+        self.__l = threading.Lock()
         self.__light = 1
 
     def carArrived(self, carId, roadId, direction, turnGreen, crossCar):
@@ -19,7 +19,7 @@ class TrafficLight(object):
         :type crossCar: method --> // Use crossCar() to make car cross the intersection
         :rtype: void
         """
-        with self.__lock:
+        with self.__l:
             if self.__light != roadId:
                 self.__light = roadId
                 turnGreen()
