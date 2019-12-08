@@ -939,7 +939,7 @@
 1215| [Stepping Numbers](https://leetcode.com/problems/stepping-numbers/)| [C++](./C++/stepping-numbers.cpp) [Python](./Python/stepping-numbers.py)   | _O(logk + r)_          | _O(k)_          | Medium         |🔒| Precompute, Binary Search |
 1245| [Tree Diameter](https://leetcode.com/problems/tree-diameter/)| [C++](./C++/tree-diameter.cpp) [Python](./Python/tree-diameter.py)   | _O(\|V\| + \|E\|)_         | _O(\|E\|)_          | Medium         |||
 1263|[Minimum Moves to Move a Box to Their Target Location](https://leetcode.com/problems/minimum-moves-to-move-a-box-to-their-target-location/)| [C++](./C++/minimum-moves-to-move-a-box-to-their-target-location.cpp) [Python](./Python/minimum-moves-to-move-a-box-to-their-target-location.py)| _O(m^2 * n^2)_ | _O(m^2 * n^2)_ | Hard | | `A* Search Algorithm` |
-1284| [Minimum Number of Flips to Convert Binary Matrix to Zero Matrix](https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/)| [C++](./C++/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix.cpp) [Python](./Python/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix.py)   | _O(m * n * 2^(m * n))_         | _O(m * n * 2^(m * n))_          | Hard         |||
+1284| [Minimum Number of Flips to Convert Binary Matrix to Zero Matrix](https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/)| [C++](./C++/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix.cpp) [Python](./Python/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix.py)   | _O((m * n) * 2^(m * n))_         | _O((m * n) * 2^(m * n))_          | Hard         |||
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1367,7 +1367,7 @@
 1251| [Average Selling Price](https://leetcode.com/problems/average-selling-price/) | [MySQL](./MySQL/average-selling-price.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1264| [Page Recommendations](https://leetcode.com/problems/page-recommendations/) | [MySQL](./MySQL/page-recommendations.sql) | _O(m + n)_ | _O(m)_       | Medium           |🔒| |
 1270| [All People Report to the Given Manager](https://leetcode.com/problems/all-people-report-to-the-given-manager/) | [MySQL](./MySQL/all-people-report-to-the-given-manager.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
-1280| [Students and Examinations](https://leetcode.com/problems/students-and-examinations/) | [MySQL](./MySQL/students-and-examinations.sql) | _O(m * n * logn(m * n))_ | _O(m * n)_       | Easy           |🔒| |
+1280| [Students and Examinations](https://leetcode.com/problems/students-and-examinations/) | [MySQL](./MySQL/students-and-examinations.sql) | _O((m * n) * log(m * n))_ | _O(m * n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
