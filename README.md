@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1278%20%2F%201278-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1284%20%2F%201284-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -715,6 +715,7 @@
 1259| [Handshakes That Don't Cross](https://leetcode.com/problems/handshakes-that-dont-cross/)     | [C++](./C++/handshakes-that-dont-cross.cpp) [Python](./Python/handshakes-that-dont-cross.py)  | _O(n)_        | _O(1)_          | Hard         | | `Catalan Number`, DP
 1266| [Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/)     | [C++](./C++/minimum-time-visiting-all-points.cpp) [Python](./Python/minimum-time-visiting-all-points.py)  | _O(n)_        | _O(1)_          | Easy         | |
 1276| [Number of Burgers with No Waste of Ingredients](https://leetcode.com/problems/number-of-burgers-with-no-waste-of-ingredients/)     | [C++](./C++/number-of-burgers-with-no-waste-of-ingredients.cpp) [Python](./Python/number-of-burgers-with-no-waste-of-ingredients.py)  | _O(1)_        | _O(1)_          | Medium         | |
+1281| [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)     | [C++](./C++/subtract-the-product-and-sum-of-digits-of-an-integer.cpp) [Python](./Python/subtract-the-product-and-sum-of-digits-of-an-integer.py)  | _O(logn)_        | _O(1)_          | Easy         | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -868,6 +869,7 @@
 1228 | [Missing Number In Arithmetic Progression](https://leetcode.com/problems/missing-number-in-arithmetic-progression/) | [C++](./C++/missing-number-in-arithmetic-progression.cpp) [Python](./Python/missing-number-in-arithmetic-progression.py) | _O(logn)_ | _O(1)_ | Easy | |
 1231 | [Divide Chocolate](https://leetcode.com/problems/divide-chocolate/) | [C++](./C++/divide-chocolate.cpp) [Python](./Python/divide-chocolate.py) | _O(nlogn)_ | _O(1)_ | Hard | |
 1274 | [Number of Ships in a Rectangle](https://leetcode.com/problems/number-of-ships-in-a-rectangle/) | [C++](./C++/number-of-ships-in-a-rectangle.cpp) [Python](./Python/number-of-ships-in-a-rectangle.py) | _O(log(m * n))_ | _O(log(m * n))_ | Hard | | Divide and Conquer
+1283 | [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | [C++](./C++/find-the-smallest-divisor-given-a-threshold.cpp) [Python](./Python/find-the-smallest-divisor-given-a-threshold.py) | _O(logn)_ | _O(1)_ | Medium | |
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -937,6 +939,7 @@
 1215| [Stepping Numbers](https://leetcode.com/problems/stepping-numbers/)| [C++](./C++/stepping-numbers.cpp) [Python](./Python/stepping-numbers.py)   | _O(logk + r)_          | _O(k)_          | Medium         |🔒| Precompute, Binary Search |
 1245| [Tree Diameter](https://leetcode.com/problems/tree-diameter/)| [C++](./C++/tree-diameter.cpp) [Python](./Python/tree-diameter.py)   | _O(\|V\| + \|E\|)_         | _O(\|E\|)_          | Medium         |||
 1263|[Minimum Moves to Move a Box to Their Target Location](https://leetcode.com/problems/minimum-moves-to-move-a-box-to-their-target-location/)| [C++](./C++/minimum-moves-to-move-a-box-to-their-target-location.cpp) [Python](./Python/minimum-moves-to-move-a-box-to-their-target-location.py)| _O(m^2 * n^2)_ | _O(m^2 * n^2)_ | Hard | | `A* Search Algorithm` |
+1284| [Minimum Number of Flips to Convert Binary Matrix to Zero Matrix](https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/)| [C++](./C++/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix.cpp) [Python](./Python/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix.py)   | _O(m * n * 2^(m * n))_         | _O(m * n * 2^(m * n))_          | Hard         |||
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1229,6 +1232,7 @@
 1249 | [Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | [C++](./C++/minimum-remove-to-make-valid-parentheses.cpp) [Python](./Python/minimum-remove-to-make-valid-parentheses.py) | _O(n)_ | _O(1)_ | Medium | | Stack
 1253 | [Reconstruct a 2-Row Binary Matrix](https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/) | [C++](./C++/reconstruct-a-2-row-binary-matrix.cpp) [Python](./Python/reconstruct-a-2-row-binary-matrix.py) | _O(n)_ | _O(1)_ | Medium ||
 1272 | [Remove Interval](https://leetcode.com/problems/remove-interval/) | [C++](./C++/remove-interval.cpp) [Python](./Python/remove-interval.py) | _O(n)_ | _O(1)_ | Medium || Line Sweep
+1282 | [Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/) | [C++](./C++/group-the-people-given-the-group-size-they-belong-to.cpp) [Python](./Python/group-the-people-given-the-group-size-they-belong-to.py) | _O(n)_ | _O(n)_ | Medium ||
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1301,6 +1305,7 @@
 1195| [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded/)| [C++](./C++/fizz-buzz-multithreaded.cpp) [Python](./Python/fizz-buzz-multithreaded.py) | _O(n)_ | _O(1)_ | Medium ||
 1226| [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers/)| [C++](./C++/the-dining-philosophers.cpp) [Python](./Python/the-dining-philosophers.py) | _O(n)_ | _O(1)_ | Medium ||
 1242| [Web Crawler Multithreaded](https://leetcode.com/problems/web-crawler-multithreaded/)| [C++](./C++/web-crawler-multithreaded.cpp) [Python](./Python/web-crawler-multithreaded.py) |  _O(\|V\| + \|E\|)_ | _O(\|V\|)_ | Medium |🔒| | BFS, DFS |
+1279| [Traffic Light Controlled Intersection](https://leetcode.com/problems/traffic-light-controlled-intersection/)| [C++](./C++/traffic-light-controlled-intersection.cpp) [Python](./Python/traffic-light-controlled-intersection.py) |  _O(n)_ | _O(n)_ | Easy |🔒| | |
 
 ## SQL
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1362,6 +1367,7 @@
 1251| [Average Selling Price](https://leetcode.com/problems/average-selling-price/) | [MySQL](./MySQL/average-selling-price.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1264| [Page Recommendations](https://leetcode.com/problems/page-recommendations/) | [MySQL](./MySQL/page-recommendations.sql) | _O(m + n)_ | _O(m)_       | Medium           |🔒| |
 1270| [All People Report to the Given Manager](https://leetcode.com/problems/all-people-report-to-the-given-manager/) | [MySQL](./MySQL/all-people-report-to-the-given-manager.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
+1280| [Students and Examinations](https://leetcode.com/problems/students-and-examinations/) | [MySQL](./MySQL/students-and-examinations.sql) | _O(m * n * logn(m * n))_ | _O(m * n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
