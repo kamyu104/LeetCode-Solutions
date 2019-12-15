@@ -12,7 +12,7 @@ public:
     }
     
     string next() {
-        iterative_dfs();
+        iterative_backtracking();
         return curr_;
     }
     
@@ -21,7 +21,7 @@ public:
     }
 
 private:
-    void iterative_dfs() {
+    void iterative_backtracking() {
         while (!stk_.empty()) {
             const auto cb = move(stk_.back());
             stk_.pop_back();
