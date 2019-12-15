@@ -1,5 +1,5 @@
 # Time:  O(m * n * k)
-# Space: O(m * n * k)
+# Space: O(m * n)
 
 class Solution(object):
     def shortestPath(self, grid, k):
@@ -18,7 +18,7 @@ class Solution(object):
         def a_star(grid, b, t, k):
             f, dh = g(b, t), 2
             closer, detour = [(b, k)], []
-            lookup = set()
+            lookup = {}
             while closer or detour:
                 if not closer:
                     f += dh
@@ -26,9 +26,9 @@ class Solution(object):
                 b, k = closer.pop()
                 if b == t:
                     return f
-                if (b, k) in lookup:
+                if b in lookup and lookup[b] >= k:
                     continue
-                lookup.add((b, k))
+                lookup[b] = k
                 for dx, dy in directions:
                     nb = (b[0]+dx, b[1]+dy)
                     if not (0 <= nb[0] < len(grid) and 0 <= nb[1] < len(grid[0]) and
