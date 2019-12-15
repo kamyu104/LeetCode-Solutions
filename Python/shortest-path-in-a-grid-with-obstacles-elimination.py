@@ -25,11 +25,11 @@ class Solution(object):
                     f += dh
                     closer, detour = detour, closer
                 b, k = closer.pop()
+                if b == t:
+                    return f
                 if b in lookup and lookup[b] >= k:
                     continue
                 lookup[b] = k
-                if b == t:
-                    return f
                 for dx, dy in directions:
                     nb = (b[0]+dx, b[1]+dy)
                     if not (0 <= nb[0] < len(grid) and 0 <= nb[1] < len(grid[0]) and
