@@ -10,6 +10,7 @@ public:
                 dp[i][j] = dp[i - 1][j] + dp[i][j - 1] - dp[i - 1][j - 1] + mat[i - 1][j - 1];
             }
         }
+        
         int left = 0, right = min(mat.size(), mat[0].size());
         while (left <= right) {
             const auto mid = left + (right - left) / 2;
