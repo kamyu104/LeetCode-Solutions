@@ -1,5 +1,5 @@
-# Time:  O(m^2 * n^2)
-# Space: O(m^2 * n^2)
+# Time:  O(m * n * k)
+# Space: O(m * n * k)
 
 class Solution(object):
     def shortestPath(self, grid, k):
