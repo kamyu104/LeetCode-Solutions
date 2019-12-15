@@ -4,10 +4,10 @@
 class CombinationIterator {
 public:
     CombinationIterator(string characters, int combinationLength)
-     :  characters_(characters)
-     ,  combinationLength_(combinationLength)
-     ,  last_(prev(characters.cend(), combinationLength), characters.cend())
-     ,  stk_{bind(&CombinationIterator::divide, this, 0)} {
+    : characters_(characters)
+    , combinationLength_(combinationLength)
+    , last_(prev(characters.cend(), combinationLength), characters.cend())
+    , stk_{bind(&CombinationIterator::divide, this, 0)} {
          
     }
     
