@@ -19,11 +19,11 @@ class Solution(object):
                 if not closer:
                     closer, detour = detour, closer
                 p = closer.pop()
+                if p == t:
+                    return True
                 if p in lookup:
                     continue
                 lookup.add(p)
-                if p == t:
-                    return True
                 for dx, dy in directions:
                     np = (p[0]+dx, p[1]+dy)
                     if not (0 <= np[0] < len(grid) and 0 <= np[1] < len(grid[0]) and
@@ -44,11 +44,11 @@ class Solution(object):
                     f += dh
                     closer, detour = detour, closer
                 b, p = closer.pop()
+                if b == t:
+                    return f
                 if (b, p) in lookup:
                     continue
                 lookup.add((b, p))
-                if b == t:
-                    return f
                 for dx, dy in directions:
                     nb, np = (b[0]+dx, b[1]+dy), (b[0]-dx, b[1]-dy)
                     if not (0 <= nb[0] < len(grid) and 0 <= nb[1] < len(grid[0]) and
