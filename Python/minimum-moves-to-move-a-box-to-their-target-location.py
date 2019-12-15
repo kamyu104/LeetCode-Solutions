@@ -52,7 +52,7 @@ class Solution(object):
                 for dx, dy in directions:
                     nb, np = (b[0]+dx, b[1]+dy), (b[0]-dx, b[1]-dy)
                     if not (0 <= nb[0] < len(grid) and 0 <= nb[1] < len(grid[0]) and
-                            0 <= np[0] < len(grid) and  0 <= np[1] < len(grid[0]) and
+                            0 <= np[0] < len(grid) and 0 <= np[1] < len(grid[0]) and
                             grid[nb[0]][nb[1]] != '#' and grid[np[0]][np[1]] != '#' and
                             (nb, b) not in lookup and can_reach(grid, b, p, np)):
                         continue
