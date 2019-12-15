@@ -45,15 +45,15 @@ private:
                 swap(closer, detour);
             }
             const auto [b, p] = closer.back(); closer.pop_back();
-            if (b == t) {
-                return f;
-            }
             if (lookup.count({b.first * grid[0].size() + b.second,
                               p.first * grid[0].size() + p.second})) {
                 continue;
             }
             lookup.emplace(b.first * grid[0].size() + b.second,
                            p.first * grid[0].size() + p.second);
+            if (b == t) {
+                return f;
+            }
             for (const auto& [dx, dy] : directions) {
                 pair<int, int> nb = {b.first + dx, b.second + dy}, np = {b.first - dx, b.second - dy};
                 if (!(0 <= nb.first && nb.first < grid.size() &&
@@ -93,13 +93,13 @@ private:
                 swap(closer, detour);
             }
             auto p = closer.back(); closer.pop_back();
-            if (p == t) {
-                return true;
-            }
             if (lookup.count(p.first * grid[0].size() + p.second)) {
                 continue;
             }
             lookup.emplace(p.first * grid[0].size() + p.second);
+            if (p == t) {
+                return true;
+            }
             for (const auto& [dx, dy] : directions) {
                 pair<int, int> np = {p.first + dx, p.second + dy};
                 if (!(0 <= np.first && np.first < grid.size() &&
