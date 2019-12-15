@@ -25,14 +25,14 @@ private:
                 swap(closer, detour);
             }
             const auto [b, k] = closer.back(); closer.pop_back();
-            if (b == t) {
-                return f;
-            }
             if (lookup.count(b.first * grid[0].size() + b.second) &&
                 lookup[b.first * grid[0].size() + b.second] >= k) {
                 continue;
             }
             lookup[b.first * grid[0].size() + b.second] = k;
+            if (b == t) {
+                return f;
+            }
             for (const auto& [dx, dy] : directions) {
                 pair<int, int> nb = {b.first + dx, b.second + dy};
                 if (!(0 <= nb.first && nb.first < grid.size() &&
