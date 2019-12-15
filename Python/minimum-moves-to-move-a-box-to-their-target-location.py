@@ -19,11 +19,11 @@ class Solution(object):
                 if not closer:
                     closer, detour = detour, closer
                 p = closer.pop()
-                if p == t:
-                    return True
                 if p in lookup:
                     continue
                 lookup.add(p)
+                if p == t:
+                    return True
                 for dx, dy in directions:
                     np = (p[0]+dx, p[1]+dy)
                     if not (0 <= np[0] < len(grid) and 0 <= np[1] < len(grid[0]) and
