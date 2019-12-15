@@ -43,11 +43,11 @@ class CombinationIterator2(object):
         """
         self.__characters = characters
         self.__combinationLength = combinationLength
-        self.__it = self.__iterative_dfs()
+        self.__it = self.__iterative_backtracking()
         self.__curr = None
         self.__last = characters[-combinationLength:]
         
-    def __iterative_dfs(self):
+    def __iterative_backtracking(self):
         def conquer():
             if len(curr) == self.__combinationLength:
                 return curr
