@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1293%20%2F%201293-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1298%20%2F%201298-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -236,6 +236,7 @@
 1260 | [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/) | [C++](./C++/shift-2d-grid.cpp) [Python](./Python/shift-2d-grid.py) | _O(n)_ | _O(1)_      | Easy         || 
 1267 | [Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate/) | [C++](./C++/count-servers-that-communicate.cpp) [Python](./Python/count-servers-that-communicate.py) | _O(m * n)_ | _O(m + n)_      | Medium         || 
 1275 | [Find Winner on a Tic Tac Toe Game](https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/) | [C++](./C++/find-winner-on-a-tic-tac-toe-game.cpp) [Python](./Python/find-winner-on-a-tic-tac-toe-game.py) | _O(1)_ | _O(1)_      | Easy         || 
+1295 | [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | [C++](./C++/find-numbers-with-even-number-of-digits.cpp) [Python](./Python/find-numbers-with-even-number-of-digits.py) | _O(nlog(logm))_ | _O(logm)_      | Easy         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -341,6 +342,7 @@
 1233 | [Remove Sub-Folders from the Filesystem](https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/) | [C++](./C++/remove-sub-folders-from-the-filesystem.cpp) [Python](./Python/remove-sub-folders-from-the-filesystem.py) | _O(n)_ | _O(t)_ | Medium | | Trie
 1234 | [Replace the Substring for Balanced String](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) | [C++](./C++/replace-the-substring-for-balanced-string.cpp) [Python](./Python/replace-the-substring-for-balanced-string.py) | _O(n)_ | _O(t)_ | Medium | | Two Pointers, Sliding Window
 1271 | [Hexspeak](https://leetcode.com/problems/hexspeak/) | [C++](./C++/hexspeak.cpp) [Python](./Python/hexspeak.py) | _O(n)_ | _O(1)_ | Easy | |
+1297 | [Maximum Number of Occurrences of a Substring](https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/) | [C++](./C++/maximum-number-of-occurrences-of-a-substring.cpp) [Python](./Python/maximum-number-of-occurrences-of-a-substring.py) | _O(n)_ | _O(n)_ | Medium | | Sliding Window, `Rabin-Karp Algorithm`
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -944,6 +946,7 @@
 1284| [Minimum Number of Flips to Convert Binary Matrix to Zero Matrix](https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/)| [C++](./C++/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix.cpp) [Python](./Python/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix.py)   | _O((m * n) * 2^(m * n))_         | _O((m * n) * 2^(m * n))_          | Hard         |||
 1291|[Sequential Digits](https://leetcode.com/problems/sequential-digits/)| [C++](./C++/sequential-digits.cpp) [Python](./Python/sequential-digits.py)| _O(1)_ | _O(1)_ | Medium | | |
 1293|[Shortest Path in a Grid with Obstacles Elimination](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/)| [C++](./C++/shortest-path-in-a-grid-with-obstacles-elimination.cpp) [Python](./Python/shortest-path-in-a-grid-with-obstacles-elimination.py)| _O(m * n * k)_ | _O(m * n)_ | Hard | | `A* Search Algorithm` |
+1298|[Maximum Candies You Can Get from Boxes](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes/)| [C++](./C++/maximum-candies-you-can-get-from-boxes.cpp) [Python](./Python/maximum-candies-you-can-get-from-boxes.py)| _O(n^2)_ | _O(n)_ | Hard | | |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1240,6 +1243,7 @@
 1272 | [Remove Interval](https://leetcode.com/problems/remove-interval/) | [C++](./C++/remove-interval.cpp) [Python](./Python/remove-interval.py) | _O(n)_ | _O(1)_ | Medium || Line Sweep
 1282 | [Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/) | [C++](./C++/group-the-people-given-the-group-size-they-belong-to.cpp) [Python](./Python/group-the-people-given-the-group-size-they-belong-to.py) | _O(n)_ | _O(n)_ | Medium ||
 1288 | [Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) | [C++](./C++/remove-covered-intervals.cpp) [Python](./Python/remove-covered-intervals.py) | _O(nlogn)_ | _O(1)_ | Medium | | Line Sweep
+1296 | [Divide Array in Sets of K Consecutive Numbers](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/) | [C++](./C++/divide-array-in-sets-of-k-consecutive-numbers.cpp) [Python](./Python/divide-array-in-sets-of-k-consecutive-numbers.py) | _O(nlogn)_ | _O(n)_ | Medium ||
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1377,6 +1381,7 @@
 1270| [All People Report to the Given Manager](https://leetcode.com/problems/all-people-report-to-the-given-manager/) | [MySQL](./MySQL/all-people-report-to-the-given-manager.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1280| [Students and Examinations](https://leetcode.com/problems/students-and-examinations/) | [MySQL](./MySQL/students-and-examinations.sql) | _O((m * n) * log(m * n))_ | _O(m * n)_       | Easy           |🔒| |
 1285| [Find the Start and End Number of Continuous Ranges](https://leetcode.com/problems/find-the-start-and-end-number-of-continuous-ranges/) | [MySQL](./MySQL/find-the-start-and-end-number-of-continuous-ranges.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
+1294| [Weather Type in Each Country](https://leetcode.com/problems/weather-type-in-each-country/) | [MySQL](./MySQL/weather-type-in-each-country.sql) | _O(m + n)_ | _O(n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
