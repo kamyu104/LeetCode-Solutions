@@ -40,6 +40,7 @@ private:
             }
             return false;
         }
+
         const auto& total = accumulate(words.cbegin(), words.cend(), carry,
                                        [&j, &lookup](const auto& x, const auto& y) {
                                            return (j < y.length()) ? x + (*lookup)[y[j]] : x;
