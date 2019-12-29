@@ -56,7 +56,7 @@ private:
         }
         (*lookup)[result[j]] = val;
         used->emplace(val);
-        if (backtracking(words, result, 0, j+1, carry, lookup, used)) {
+        if (backtracking(words, result, 0, j + 1, carry, lookup, used)) {
             return true;
         }
         used->erase(val);
