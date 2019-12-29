@@ -19,7 +19,7 @@ private:
                       unordered_map<char, int> *lookup,
                       unordered_set<int> *used) {
         if (j == result.length()) {
-            return true;
+            return carry == 0;
         }
 
         if (i != words.size()) {
