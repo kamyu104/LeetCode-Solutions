@@ -1,4 +1,4 @@
-# Time:  O(10!* n * l)
+# Time:  O(10! * n * l)
 # Space: O(n * l)
 
 import collections
