@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1298%20%2F%201298-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1307%20%2F%201307-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -13,7 +13,7 @@
 * Since free questions may be even mistakenly taken down by some companies, only solutions will be post on now.
 * There are new LeetCode questions every week. I'll keep updating for full summary and better solutions.
 * For more problem solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
-* For more challenging problem solutions, you can also see my `GoogleCodeJam`, `FacebookHackerCup` repositories.
+* For more challenging problem solutions, you can also see my [GoogleCodeJam](https://github.com/kamyu104/GoogleCodeJam-2019), [FacebookHackerCup](https://github.com/kamyu104/FacebookHackerCup-2019) repositories.
 * Hope you enjoy the journey of learning data structures and algorithms.
 * Notes: "🔒" means your subscription of [LeetCode premium membership](https://leetcode.com/subscribe/) is required for reading the question.
 
@@ -237,6 +237,8 @@
 1267 | [Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate/) | [C++](./C++/count-servers-that-communicate.cpp) [Python](./Python/count-servers-that-communicate.py) | _O(m * n)_ | _O(m + n)_      | Medium         || 
 1275 | [Find Winner on a Tic Tac Toe Game](https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/) | [C++](./C++/find-winner-on-a-tic-tac-toe-game.cpp) [Python](./Python/find-winner-on-a-tic-tac-toe-game.py) | _O(1)_ | _O(1)_      | Easy         || 
 1295 | [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | [C++](./C++/find-numbers-with-even-number-of-digits.cpp) [Python](./Python/find-numbers-with-even-number-of-digits.py) | _O(nlog(logm))_ | _O(logm)_      | Easy         || 
+1299 | [Replace Elements with Greatest Element on Right Side](https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/) | [C++](./C++/replace-elements-with-greatest-element-on-right-side.cpp) [Python](./Python/replace-elements-with-greatest-element-on-right-side.py) | _O(n)_ | _O(1)_      | Easy         || 
+1304 | [Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/) | [C++](./C++/find-n-unique-integers-sum-up-to-zero.cpp) [Python](./Python/find-n-unique-integers-sum-up-to-zero.py) | _O(n)_ | _O(1)_      | Easy         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -719,6 +721,7 @@
 1266| [Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/)     | [C++](./C++/minimum-time-visiting-all-points.cpp) [Python](./Python/minimum-time-visiting-all-points.py)  | _O(n)_        | _O(1)_          | Easy         | |
 1276| [Number of Burgers with No Waste of Ingredients](https://leetcode.com/problems/number-of-burgers-with-no-waste-of-ingredients/)     | [C++](./C++/number-of-burgers-with-no-waste-of-ingredients.cpp) [Python](./Python/number-of-burgers-with-no-waste-of-ingredients.py)  | _O(1)_        | _O(1)_          | Medium         | |
 1281| [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)     | [C++](./C++/subtract-the-product-and-sum-of-digits-of-an-integer.cpp) [Python](./Python/subtract-the-product-and-sum-of-digits-of-an-integer.py)  | _O(logn)_        | _O(1)_          | Easy         | |
+1300| [Sum of Mutated Array Closest to Target](https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/)     | [C++](./C++/sum-of-mutated-array-closest-to-target.cpp) [Python](./Python/sum-of-mutated-array-closest-to-target.py)  | _O(nlogn)_        | _O(1)_          | Medium         | | Binary Search
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -786,6 +789,7 @@
 1213 | [Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays/) | [C++](./C++/intersection-of-three-sorted-arrays.cpp) [Python](./Python/intersection-of-three-sorted-arrays.py) | _O(n)_ | _O(1)_      | Easy         |🔒|
 1214 | [Two Sum BSTs](https://leetcode.com/problems/two-sum-bsts/) | [C++](./C++/two-sum-bsts.cpp) [Python](./Python/two-sum-bsts.py) | _O(n)_ | _O(n)_      | Medium         |🔒| Stack |
 1248| [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) |[C++](./C++/count-number-of-nice-subarrays.cpp)  [Python](./Python/count-number-of-nice-subarrays.py) | _O(n)_ | _O(k)_ | Medium         | variant of [Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/) | Two Pointers, Sliding Window
+1305 |[All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/)| [C++](./C++/all-elements-in-two-binary-search-trees.cpp)  [Python](./Python/all-elements-in-two-binary-search-trees.py) | _O(n)_ | _O(h)_ | Medium || Stack |
 
 ## Recursion
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -947,6 +951,8 @@
 1291|[Sequential Digits](https://leetcode.com/problems/sequential-digits/)| [C++](./C++/sequential-digits.cpp) [Python](./Python/sequential-digits.py)| _O(1)_ | _O(1)_ | Medium | | |
 1293|[Shortest Path in a Grid with Obstacles Elimination](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/)| [C++](./C++/shortest-path-in-a-grid-with-obstacles-elimination.cpp) [Python](./Python/shortest-path-in-a-grid-with-obstacles-elimination.py)| _O(m * n * k)_ | _O(m * n)_ | Hard | | `A* Search Algorithm` |
 1298|[Maximum Candies You Can Get from Boxes](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes/)| [C++](./C++/maximum-candies-you-can-get-from-boxes.cpp) [Python](./Python/maximum-candies-you-can-get-from-boxes.py)| _O(n^2)_ | _O(n)_ | Hard | | |
+1302|[Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/)| [C++](./C++/deepest-leaves-sum.cpp) [Python](./Python/deepest-leaves-sum.py)| _O(n)_ | _O(w)_ | Medium | | |
+1306|[Jump Game III](https://leetcode.com/problems/jump-game-iii/)| [C++](./C++/jump-game-iii.cpp) [Python](./Python/jump-game-iii.py)| _O(n)_ | _O(n)_ | Medium | | |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1038,6 +1044,7 @@
 1240| [Tiling a Rectangle with the Fewest Squares](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/) | [C++](./C++/tiling-a-rectangle-with-the-fewest-squares.cpp) [Python](./Python/tiling-a-rectangle-with-the-fewest-squares.py)  | _O(n^2 * m^2 * m^(n * m))_ | _O(n * m)_ | Hard         |||
 1255| [Maximum Score Words Formed by Letters](https://leetcode.com/problems/maximum-score-words-formed-by-letters/) | [C++](./C++/maximum-score-words-formed-by-letters.cpp) [Python](./Python/maximum-score-words-formed-by-letters.py)  | _O(n * 2^n)_ | _O(n)_ | Hard         |||
 1258| [Synonymous Sentences](https://leetcode.com/problems/synonymous-sentences/) | [C++](./C++/synonymous-sentences.cpp) [Python](./Python/synonymous-sentences.py)  | _O(p * l * log(p * l))_ | _O(p * l)_ | Medium         || Union Find |
+1307| [Verbal Arithmetic Puzzle](https://leetcode.com/problems/verbal-arithmetic-puzzle/) | [C++](./C++/verbal-arithmetic-puzzle.cpp) [Python](./Python/verbal-arithmetic-puzzle.py)  | _O(10! * n * l)_ | _O(n * l)_ | Hard         |||
 
 ## Dynamic Programming
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1180,6 +1187,7 @@
 1278 | [Palindrome Partitioning III](https://leetcode.com/problems/palindrome-partitioning-iii/) | [C++](./C++/palindrome-partitioning-iii.cpp) [Python](./Python/palindrome-partitioning-iii.py) | _O(k * n^2)_ | _O(n^2)_ | Hard | | |
 1289 | [Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii/) | [C++](./C++/minimum-falling-path-sum-ii.cpp) [Python](./Python/minimum-falling-path-sum-ii.py) | _O(m * n)_ | _O(1)_ | Hard | | |
 1292 | [Maximum Side Length of a Square with Sum Less than or Equal to Threshold](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/) | [C++](./C++/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold.cpp) [Python](./Python/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold.py) | _O(m * n * log(min(m, n)))_ | _O(m * n)_ | Medium | | Binary Search |
+1301 | [Number of Paths with Max Score](https://leetcode.com/problems/number-of-paths-with-max-score/) | [C++](./C++/number-of-paths-with-max-score.cpp) [Python](./Python/number-of-paths-with-max-score.py) | _O(n^2)_ | _O(n)_ | Hard | | |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1382,6 +1390,7 @@
 1280| [Students and Examinations](https://leetcode.com/problems/students-and-examinations/) | [MySQL](./MySQL/students-and-examinations.sql) | _O((m * n) * log(m * n))_ | _O(m * n)_       | Easy           |🔒| |
 1285| [Find the Start and End Number of Continuous Ranges](https://leetcode.com/problems/find-the-start-and-end-number-of-continuous-ranges/) | [MySQL](./MySQL/find-the-start-and-end-number-of-continuous-ranges.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1294| [Weather Type in Each Country](https://leetcode.com/problems/weather-type-in-each-country/) | [MySQL](./MySQL/weather-type-in-each-country.sql) | _O(m + n)_ | _O(n)_       | Easy           |🔒| |
+1303| [Find the Team Size](https://leetcode.com/problems/find-the-team-size/) | [MySQL](./MySQL/find-the-team-size.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
