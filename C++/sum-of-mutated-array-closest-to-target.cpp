@@ -42,8 +42,7 @@ public:
 class Solution3 {
 public:
     int findBestValue(vector<int>& arr, int target) {
-        const auto& max_arr = *max_element(arr.cbegin(), arr.cend());
-        int left = 1, right = max_arr;
+        int left = 1, right = *max_element(arr.cbegin(), arr.cend());
         while (left <= right) {
             const auto& mid = left + (right - left) / 2;
             if (check(arr, mid, target)) {
