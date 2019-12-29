@@ -58,8 +58,7 @@ class Solution3(object):
         def check(arr, v, target):
             return total(arr, v) >= target
         
-        max_arr = max(arr)
-        left, right = 1, max_arr
+        left, right = 1, max(arr)
         while left <= right:
             mid = left + (right-left)//2
             if check(arr, mid, target):
