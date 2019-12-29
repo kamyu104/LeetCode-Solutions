@@ -13,7 +13,7 @@ class Solution(object):
         """
         def backtracking(words, result, i, j, carry, lookup, used):
             if j == len(result):
-                return True
+                return carry == 0
 
             if i != len(words):
                 if j >= len(words[i]) or words[i][j] in lookup:
