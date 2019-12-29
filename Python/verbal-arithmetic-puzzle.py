@@ -3,6 +3,7 @@
 
 import collections
 
+
 class Solution(object):
     def isSolvable(self, words, result):
         """
@@ -32,7 +33,7 @@ class Solution(object):
             if result[j] in lookup:
                 return val == lookup[result[j]] and \
                        backtracking(words, result, 0, j+1, carry, lookup, used)
-            if val in used or (val== 0 and j == len(result)-1):
+            if val in used or (val == 0 and j == len(result)-1):
                 return False
             lookup[result[j]] = val
             used.add(val)
