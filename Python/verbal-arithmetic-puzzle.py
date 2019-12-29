@@ -85,7 +85,7 @@ class Solution2(object):
                     del lookup[words[word_idxs[i]][j]]
                 return False
 
-            carry, val = divmod(carry + sum(lookup[w[j]] for w in words if j < len(w)), 10)
+            carry, val = divmod(carry + sum(lookup[words[k][j]] for k in word_idxs), 10)
             if result[j] in lookup:
                 restore = [k for k in word_idxs if j+1 >= len(words[k])]
                 word_idxs[:] = [k for k in word_idxs if j+1 < len(words[k])]
