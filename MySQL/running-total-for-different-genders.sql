@@ -6,7 +6,7 @@ SELECT gender,
        CASE 
          WHEN gender = 'F' THEN @f_accu := @f_accu + score_points 
          ELSE @m_accu := @m_accu + score_points 
-       end total 
+       END total 
 FROM   scores, 
        (SELECT @f_accu := 0, 
                @m_accu := 0) init 
