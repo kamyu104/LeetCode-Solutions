@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1308%20%2F%201308-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1312%20%2F%201308-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -90,6 +90,7 @@
 0762 | [Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/) | [C++](./C++/prime-number-of-set-bits-in-binary-representation.cpp) [Python](./Python/prime-number-of-set-bits-in-binary-representation.py) | _O(1)_ | _O(1)_ | Easy ||
 0868 | [Binary Gap](https://leetcode.com/problems/binary-gap/) | [C++](./C++/binary-gap.cpp) [Python](./Python/binary-gap.py) | _O(1)_ | _O(1)_ | Easy ||
 0898 | [Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/) | [C++](./C++/bitwise-ors-of-subarrays.cpp) [Python](./Python/bitwise-ors-of-subarrays.py) | _O(n)_ | _O(1)_ | Medium ||
+1310 | [XOR Queries of a Subarray](https://leetcode.com/problems/xor-queries-of-a-subarray/) | [C++](./C++/xor-queries-of-a-subarray.cpp) [Python](./Python/xor-queries-of-a-subarray.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## Array
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -345,6 +346,7 @@
 1234 | [Replace the Substring for Balanced String](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) | [C++](./C++/replace-the-substring-for-balanced-string.cpp) [Python](./Python/replace-the-substring-for-balanced-string.py) | _O(n)_ | _O(t)_ | Medium | | Two Pointers, Sliding Window
 1271 | [Hexspeak](https://leetcode.com/problems/hexspeak/) | [C++](./C++/hexspeak.cpp) [Python](./Python/hexspeak.py) | _O(n)_ | _O(1)_ | Easy | |
 1297 | [Maximum Number of Occurrences of a Substring](https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/) | [C++](./C++/maximum-number-of-occurrences-of-a-substring.cpp) [Python](./Python/maximum-number-of-occurrences-of-a-substring.py) | _O(n)_ | _O(n)_ | Medium | | Sliding Window, `Rabin-Karp Algorithm`
+1309 | [Decrypt String from Alphabet to Integer Mapping](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/) | [C++](./C++/decrypt-string-from-alphabet-to-integer-mapping.cpp) [Python](./Python/decrypt-string-from-alphabet-to-integer-mapping.py) | _O(n)_ | _O(1)_ | Easy | |
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -953,6 +955,7 @@
 1298|[Maximum Candies You Can Get from Boxes](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes/)| [C++](./C++/maximum-candies-you-can-get-from-boxes.cpp) [Python](./Python/maximum-candies-you-can-get-from-boxes.py)| _O(n^2)_ | _O(n)_ | Hard | | |
 1302|[Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/)| [C++](./C++/deepest-leaves-sum.cpp) [Python](./Python/deepest-leaves-sum.py)| _O(n)_ | _O(w)_ | Medium | | |
 1306|[Jump Game III](https://leetcode.com/problems/jump-game-iii/)| [C++](./C++/jump-game-iii.cpp) [Python](./Python/jump-game-iii.py)| _O(n)_ | _O(n)_ | Medium | | |
+1311|[Get Watched Videos by Your Friends](https://leetcode.com/problems/get-watched-videos-by-your-friends/)| [C++](./C++/get-watched-videos-by-your-friends.cpp) [Python](./Python/get-watched-videos-by-your-friends.py)| _O(n + vlogv)_ | _O(w)_ | Medium | | |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1188,6 +1191,7 @@
 1289 | [Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii/) | [C++](./C++/minimum-falling-path-sum-ii.cpp) [Python](./Python/minimum-falling-path-sum-ii.py) | _O(m * n)_ | _O(1)_ | Hard | | |
 1292 | [Maximum Side Length of a Square with Sum Less than or Equal to Threshold](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/) | [C++](./C++/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold.cpp) [Python](./Python/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold.py) | _O(m * n * log(min(m, n)))_ | _O(m * n)_ | Medium | | Binary Search |
 1301 | [Number of Paths with Max Score](https://leetcode.com/problems/number-of-paths-with-max-score/) | [C++](./C++/number-of-paths-with-max-score.cpp) [Python](./Python/number-of-paths-with-max-score.py) | _O(n^2)_ | _O(n)_ | Hard | | |
+1312 | [Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/) | [C++](./C++/minimum-insertion-steps-to-make-a-string-palindrome.cpp) [Python](./Python/minimum-insertion-steps-to-make-a-string-palindrome.py) | _O(n^2)_ | _O(n)_ | Hard | variant of [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
