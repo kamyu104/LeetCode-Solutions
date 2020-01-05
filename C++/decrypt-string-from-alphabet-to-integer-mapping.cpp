@@ -51,3 +51,27 @@ private:
         return 'a' + stoi(s) - 1;
     }
 };
+
+// Time:  O(n)
+// Space: O(n)
+// regex solution
+class Solution3 {
+public:
+    string freqAlphabets(string s) {
+        string result;
+        int submatches[] = { 1, 2 };
+        const auto e = regex("(\\d\\d#)|(\\d)");
+        for (regex_token_iterator<string::const_iterator> it(s.cbegin(), s.cend(), e, submatches), end;
+             it != end;) {
+            const auto& a = (it++)->str();
+            const auto& b = (it++)->str();
+            result.push_back(alpha(!a.empty() ? a : b));
+        }
+        return result;
+    }
+
+private:
+    char alpha(const string& s) {
+        return 'a' + stoi(s) - 1;
+    }
+};
