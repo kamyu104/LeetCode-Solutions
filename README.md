@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com/problemset/algorithms/)
 
-![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11%2F14-orange.svg)&nbsp;
+![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
 ![Progress](https://img.shields.io/badge/progress-1312%20%2F%201312-ff69b4.svg)&nbsp;
