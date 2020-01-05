@@ -47,7 +47,7 @@ class Solution2(object):
         return "".join(reversed(result))
 
 # Time:  O(n)
-# Space: O(n)
+# Space: O(1)
 import re
 
 
