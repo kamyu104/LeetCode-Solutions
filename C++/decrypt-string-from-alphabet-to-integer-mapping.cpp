@@ -53,7 +53,7 @@ private:
 };
 
 // Time:  O(n)
-// Space: O(n)
+// Space: O(1)
 // regex solution
 class Solution3 {
 public:
