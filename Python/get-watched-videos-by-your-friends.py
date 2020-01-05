@@ -1,6 +1,9 @@
 # Time:  O(n + vlogv), v is the number of the level videos
 # Space: O(w)
 
+import collections
+
+
 class Solution(object):
     def watchedVideosByFriends(self, watchedVideos, friends, id, level):
         """
