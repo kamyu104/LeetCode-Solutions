@@ -16,8 +16,8 @@ class Solution(object):
                 if pattern[j + 1] == pattern[i]:
                     j += 1
                 prefix[i] = j
-                if (j+1) and (i+1) % ((i+1) - (j+1)) == 0:
-                    if (i+1) // ((i+1) - (j+1)) % 2 == 0:
+                if (j+1) and (i+1) % ((i+1) - (j+1)) == 0 and \
+                   (i+1) // ((i+1) - (j+1)) % 2 == 0:
                         result.add(pattern[:i+1])
             return len(prefix)-(prefix[-1]+1) \
                    if prefix[-1]+1 and len(prefix) % (len(prefix)-(prefix[-1]+1)) == 0 \
