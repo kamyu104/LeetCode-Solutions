@@ -5,6 +5,43 @@ class Solution {
 public:
     int distinctEchoSubstrings(string text) {
         unordered_set<string> result;
+        int l = text.length() - 1;
+        for (int i = 0; i <= l; ++i)  {
+            l = min(l, KMP(text.substr(i), &result));
+        }
+        return result.size();
+    }
+
+private:
+    int KMP(const string& pattern, unordered_set<string> *result) {
+        vector<int> prefix(pattern.length(), -1);
+        int j = -1;
+        for (int i = 1; i < pattern.length(); ++i) {
+            while (j > -1 && pattern[j + 1] != pattern[i]) {
+                j = prefix[j];
+            }
+            if (pattern[j + 1] == pattern[i]) {
+                ++j;
+            }
+            prefix[i] = j;
+            if ((j + 1) && (i + 1) % ((i + 1) - (j + 1)) == 0) {
+                if ((i + 1) / ((i + 1) - (j + 1)) % 2 == 0) {
+                    result->emplace(pattern.substr(0, i + 1));
+                }
+            }
+        }
+        return (prefix.back() + 1 && (prefix.size() % (prefix.size() - (prefix.back() + 1)) == 0))
+               ? (prefix.size() - (prefix.back() + 1))
+               : numeric_limits<int>::max();
+    }
+};
+
+// Time:  O(n^2 + d), d is the duplicated of result substrings size
+// Space: O(r), r is the size of result substrings set
+class Solution2 {
+public:
+    int distinctEchoSubstrings(string text) {
+        unordered_set<string> result;
         for (int l = 1; l <= text.length() / 2; ++l) {
             int count = 0;
             for (int i = 0; i < l; ++i) {
@@ -26,7 +63,7 @@ public:
 
 // Time:  O(n^2 + d), d is the duplicated of result substrings size
 // Space: O(r), r is the size of result substrings set
-class Solution2 {
+class Solution3 {
 public:
     int distinctEchoSubstrings(string text) {
         static int MOD = 1e9 + 7;
