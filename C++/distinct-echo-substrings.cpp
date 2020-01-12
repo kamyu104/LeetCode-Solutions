@@ -6,7 +6,7 @@ public:
     int distinctEchoSubstrings(string text) {
         unordered_set<string> result;
         int l = text.length() - 1;
-        for (int i = 0; i <= l; ++i)  {
+        for (int i = 0; i < l; ++i)  {
             l = min(l, KMP(text, i, &result));
         }
         return result.size();
