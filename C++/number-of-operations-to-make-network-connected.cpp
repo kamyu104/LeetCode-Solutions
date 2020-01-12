@@ -1,5 +1,5 @@
 // Time:  O(|E| + |V|)
-// Space: O(|V)
+// Space: O(|V|)
 
 class Solution {
 public:
@@ -49,7 +49,7 @@ private:
 };
 
 // Time:  O(|E| + |V|)
-// Space: O(|V)
+// Space: O(|V|)
 class Solution2 {
 public:
     int makeConnected(int n, vector<vector<int>>& connections) {
