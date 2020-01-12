@@ -1,5 +1,5 @@
 # Time:  O(|E| + |V|)
-# Space: O(|V)
+# Space: O(|V|)
 
 class UnionFind(object):
     def __init__(self, n):
@@ -36,7 +36,7 @@ class Solution(object):
 
 
 # Time:  O(|E| + |V|)
-# Space: O(|V)
+# Space: O(|V|)
 import collections
 
 
