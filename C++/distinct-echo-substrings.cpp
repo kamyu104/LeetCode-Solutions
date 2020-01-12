@@ -7,26 +7,26 @@ public:
         unordered_set<string> result;
         int l = text.length() - 1;
         for (int i = 0; i <= l; ++i)  {
-            l = min(l, KMP(text.substr(i), &result));
+            l = min(l, KMP(text, i, &result));
         }
         return result.size();
     }
 
 private:
-    int KMP(const string& pattern, unordered_set<string> *result) {
-        vector<int> prefix(pattern.length(), -1);
+    int KMP(const string& text, int l, unordered_set<string> *result) {
+        vector<int> prefix(text.length() - l, -1);
         int j = -1;
-        for (int i = 1; i < pattern.length(); ++i) {
-            while (j > -1 && pattern[j + 1] != pattern[i]) {
+        for (int i = 1; i < prefix.size(); ++i) {
+            while (j > -1 && text[l + j + 1] != text[l + i]) {
                 j = prefix[j];
             }
-            if (pattern[j + 1] == pattern[i]) {
+            if (text[l + j + 1] == text[l + i]) {
                 ++j;
             }
             prefix[i] = j;
             if ((j + 1) && (i + 1) % ((i + 1) - (j + 1)) == 0 &&
                 (i + 1) / ((i + 1) - (j + 1)) % 2 == 0) {
-                result->emplace(pattern.substr(0, i + 1));
+                result->emplace(text.substr(l, i + 1));
             }
         }
         return (prefix.back() + 1 && (prefix.size() % (prefix.size() - (prefix.back() + 1)) == 0))
