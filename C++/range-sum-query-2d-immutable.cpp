@@ -14,13 +14,9 @@ public:
             sums_.emplace_back(n + 1, 0);
         }
         for (int i = 1; i <= m; ++i) {
-            for (int j = 0; j <= n; ++j) {
-                sums_[i][j] = sums_[i][j - 1] + matrix[i - 1][j - 1];
-            }
-        }
-        for (int j = 0; j <= n; ++j) {
-            for (int i = 1; i <= m; ++i) {
-                sums_[i][j] += sums_[i - 1][j];
+            for (int j = 1; j <= n; ++j) {
+                sums_[i][j] = sums_[i][j - 1] + sums_[i - 1][j] -
+                              sums_[i - 1][j - 1] + matrix[i - 1][j - 1];
             }
         }
     }
