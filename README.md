@@ -242,7 +242,7 @@
 1299 | [Replace Elements with Greatest Element on Right Side](https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/) | [C++](./C++/replace-elements-with-greatest-element-on-right-side.cpp) [Python](./Python/replace-elements-with-greatest-element-on-right-side.py) | _O(n)_ | _O(1)_      | Easy         || 
 1304 | [Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/) | [C++](./C++/find-n-unique-integers-sum-up-to-zero.cpp) [Python](./Python/find-n-unique-integers-sum-up-to-zero.py) | _O(n)_ | _O(1)_      | Easy         || 
 1313 | [Decompress Run-Length Encoded List](https://leetcode.com/problems/decompress-run-length-encoded-list/) | [C++](./C++/decompress-run-length-encoded-list.cpp) [Python](./Python/decompress-run-length-encoded-list.py) | _O(n)_ | _O(1)_      | Easy         || 
-1316 | [Distinct Echo Substrings](https://leetcode.com/problems/distinct-echo-substrings/) | [C++](./C++/distinct-echo-substrings.cpp) [Python](./Python/distinct-echo-substrings.py) | _O(n^2 + d)_ | _O(r)_      | Hard         || Sliding Window, `Rabin-Karp Algorithm`
+1316 | [Distinct Echo Substrings](https://leetcode.com/problems/distinct-echo-substrings/) | [C++](./C++/distinct-echo-substrings.cpp) [Python](./Python/distinct-echo-substrings.py) | _O(n^2 + d)_ | _O(r)_      | Hard         || `KMP Algorithm`, Sliding Window, `Rabin-Karp Algorithm`
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
