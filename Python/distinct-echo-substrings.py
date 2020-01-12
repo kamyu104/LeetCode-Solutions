@@ -8,12 +8,12 @@ class Solution(object):
         :rtype: int
         """
         def KMP(pattern, result):
-            prefix = [-1] * len(pattern)
+            prefix = [-1]*len(pattern)
             j = -1
             for i in xrange(1, len(pattern)):
-                while j > -1 and pattern[j + 1] != pattern[i]:
+                while j > -1 and pattern[j+1] != pattern[i]:
                     j = prefix[j]
-                if pattern[j + 1] == pattern[i]:
+                if pattern[j+1] == pattern[i]:
                     j += 1
                 prefix[i] = j
                 if (j+1) and (i+1) % ((i+1) - (j+1)) == 0 and \
