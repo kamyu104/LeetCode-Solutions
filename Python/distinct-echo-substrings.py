@@ -18,7 +18,7 @@ class Solution(object):
                 prefix[i] = j
                 if (j+1) and (i+1) % ((i+1) - (j+1)) == 0 and \
                    (i+1) // ((i+1) - (j+1)) % 2 == 0:
-                        result.add(pattern[:i+1])
+                    result.add(pattern[:i+1])
             return len(prefix)-(prefix[-1]+1) \
                    if prefix[-1]+1 and len(prefix) % (len(prefix)-(prefix[-1]+1)) == 0 \
                    else float("inf")
