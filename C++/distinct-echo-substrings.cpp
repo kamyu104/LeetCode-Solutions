@@ -24,10 +24,9 @@ private:
                 ++j;
             }
             prefix[i] = j;
-            if ((j + 1) && (i + 1) % ((i + 1) - (j + 1)) == 0) {
-                if ((i + 1) / ((i + 1) - (j + 1)) % 2 == 0) {
-                    result->emplace(pattern.substr(0, i + 1));
-                }
+            if ((j + 1) && (i + 1) % ((i + 1) - (j + 1)) == 0 &&
+                (i + 1) / ((i + 1) - (j + 1)) % 2 == 0) {
+                result->emplace(pattern.substr(0, i + 1));
             }
         }
         return (prefix.back() + 1 && (prefix.size() % (prefix.size() - (prefix.back() + 1)) == 0))
