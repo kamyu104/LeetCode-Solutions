@@ -38,4 +38,4 @@ class Solution2(object):
                 new_dp[c, b] = min(new_dp.get((c, b), float("inf")), dp[a, b] + distance(a, c))
                 new_dp[a, c] = min(new_dp.get((a, c), float("inf")), dp[a, b] + distance(b, c))
             dp = new_dp
-        return min(dp.values())
+        return min(dp.itervalues())
