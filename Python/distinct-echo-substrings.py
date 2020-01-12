@@ -7,6 +7,38 @@ class Solution(object):
         :type text: str
         :rtype: int
         """
+        def KMP(pattern, result):
+            prefix = [-1] * len(pattern)
+            j = -1
+            for i in xrange(1, len(pattern)):
+                while j > -1 and pattern[j + 1] != pattern[i]:
+                    j = prefix[j]
+                if pattern[j + 1] == pattern[i]:
+                    j += 1
+                prefix[i] = j
+                if (j+1) and (i+1) % ((i+1) - (j+1)) == 0:
+                    if (i+1) // ((i+1) - (j+1)) % 2 == 0:
+                        result.add(pattern[:i+1])
+            return len(prefix)-(prefix[-1]+1) \
+                   if prefix[-1]+1 and len(prefix) % (len(prefix)-(prefix[-1]+1)) == 0 \
+                   else float("inf")
+
+        result = set()
+        i, l = 0, len(text)-1
+        while i <= l:
+            l = min(l, KMP(text[i:], result))
+            i += 1
+        return len(result)
+
+
+# Time:  O(n^2 + d), d is the duplicated of result substrings size
+# Space: O(r), r is the size of result substrings set
+class Solution2(object):
+    def distinctEchoSubstrings(self, text):
+        """
+        :type text: str
+        :rtype: int
+        """
         result = set()
         for l in xrange(1, len(text)//2+1):
             count = sum(text[i] == text[i+l] for i in xrange(l))
@@ -21,7 +53,7 @@ class Solution(object):
 
 # Time:  O(n^2 + d), d is the duplicated of result substrings size
 # Space: O(r), r is the size of result substrings set
-class Solution2(object):
+class Solution3(object):
     def distinctEchoSubstrings(self, text):
         """
         :type text: str
