@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1312%20%2F%201312-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1320%20%2F%201320-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -91,6 +91,7 @@
 0868 | [Binary Gap](https://leetcode.com/problems/binary-gap/) | [C++](./C++/binary-gap.cpp) [Python](./Python/binary-gap.py) | _O(1)_ | _O(1)_ | Easy ||
 0898 | [Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/) | [C++](./C++/bitwise-ors-of-subarrays.cpp) [Python](./Python/bitwise-ors-of-subarrays.py) | _O(n)_ | _O(1)_ | Medium ||
 1310 | [XOR Queries of a Subarray](https://leetcode.com/problems/xor-queries-of-a-subarray/) | [C++](./C++/xor-queries-of-a-subarray.cpp) [Python](./Python/xor-queries-of-a-subarray.py) | _O(n)_ | _O(1)_ | Medium ||
+1318 | [Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/) | [C++](./C++/minimum-flips-to-make-a-or-b-equal-to-c.cpp) [Python](./Python/minimum-flips-to-make-a-or-b-equal-to-c.py) | _O(1)_ | _O(1)_ | Medium ||
 
 ## Array
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -240,6 +241,8 @@
 1295 | [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | [C++](./C++/find-numbers-with-even-number-of-digits.cpp) [Python](./Python/find-numbers-with-even-number-of-digits.py) | _O(nlog(logm))_ | _O(logm)_      | Easy         || 
 1299 | [Replace Elements with Greatest Element on Right Side](https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/) | [C++](./C++/replace-elements-with-greatest-element-on-right-side.cpp) [Python](./Python/replace-elements-with-greatest-element-on-right-side.py) | _O(n)_ | _O(1)_      | Easy         || 
 1304 | [Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/) | [C++](./C++/find-n-unique-integers-sum-up-to-zero.cpp) [Python](./Python/find-n-unique-integers-sum-up-to-zero.py) | _O(n)_ | _O(1)_      | Easy         || 
+1313 | [Decompress Run-Length Encoded List](https://leetcode.com/problems/decompress-run-length-encoded-list/) | [C++](./C++/decompress-run-length-encoded-list.cpp) [Python](./Python/decompress-run-length-encoded-list.py) | _O(n)_ | _O(1)_      | Easy         || 
+1316 | [Distinct Echo Substrings](https://leetcode.com/problems/distinct-echo-substrings/) | [C++](./C++/distinct-echo-substrings.cpp) [Python](./Python/distinct-echo-substrings.py) | _O(n^2 + d)_ | _O(r)_      | Hard         || Sliding Window, `Rabin-Karp Algorithm`
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -724,6 +727,7 @@
 1276| [Number of Burgers with No Waste of Ingredients](https://leetcode.com/problems/number-of-burgers-with-no-waste-of-ingredients/)     | [C++](./C++/number-of-burgers-with-no-waste-of-ingredients.cpp) [Python](./Python/number-of-burgers-with-no-waste-of-ingredients.py)  | _O(1)_        | _O(1)_          | Medium         | |
 1281| [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)     | [C++](./C++/subtract-the-product-and-sum-of-digits-of-an-integer.cpp) [Python](./Python/subtract-the-product-and-sum-of-digits-of-an-integer.py)  | _O(logn)_        | _O(1)_          | Easy         | |
 1300| [Sum of Mutated Array Closest to Target](https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/)     | [C++](./C++/sum-of-mutated-array-closest-to-target.cpp) [Python](./Python/sum-of-mutated-array-closest-to-target.py)  | _O(nlogn)_        | _O(1)_          | Medium         | | Binary Search
+1317| [Convert Integer to the Sum of Two No-Zero Integers](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/)     | [C++](./C++/convert-integer-to-the-sum-of-two-no-zero-integers.cpp) [Python](./Python/convert-integer-to-the-sum-of-two-no-zero-integers.py)  | _O(logn)_        | _O(logn)_          | Easy         | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1005,6 +1009,8 @@
 1202| [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | [C++](./C++/smallest-string-with-swaps.cpp) [Python](./Python/smallest-string-with-swaps.py) | _O(nlogn)_          | _O(n)_          | Medium           || Union Find |
 1254| [Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/) | [C++](./C++/number-of-closed-islands.cpp) [Python](./Python/number-of-closed-islands.py) | _O(m * n)_          | _O(1)_          | Medium           |||
 1273| [Delete Tree Nodes](https://leetcode.com/problems/delete-tree-nodes/) | [C++](./C++/delete-tree-nodes.cpp) [Python](./Python/delete-tree-nodes.py) | _O(n)_          | _O(n)_          | Medium           || DFS, DP |
+1315| [Sum of Nodes with Even-Valued Grandparent](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/) | [C++](./C++/sum-of-nodes-with-even-valued-grandparent.cpp) [Python](./Python/sum-of-nodes-with-even-valued-grandparent.py) | _O(n)_          | _O(h)_          | Medium           |||
+1319| [Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected/) | [C++](./C++/number-of-operations-to-make-network-connected.cpp) [Python](./Python/number-of-operations-to-make-network-connected.py) | _O(\|E\| + \|V\|)_          | _O(\|V\|)_          | Medium           || Union Find|
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1192,6 +1198,8 @@
 1292 | [Maximum Side Length of a Square with Sum Less than or Equal to Threshold](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/) | [C++](./C++/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold.cpp) [Python](./Python/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold.py) | _O(m * n * log(min(m, n)))_ | _O(m * n)_ | Medium | | Binary Search |
 1301 | [Number of Paths with Max Score](https://leetcode.com/problems/number-of-paths-with-max-score/) | [C++](./C++/number-of-paths-with-max-score.cpp) [Python](./Python/number-of-paths-with-max-score.py) | _O(n^2)_ | _O(n)_ | Hard | | |
 1312 | [Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/) | [C++](./C++/minimum-insertion-steps-to-make-a-string-palindrome.cpp) [Python](./Python/minimum-insertion-steps-to-make-a-string-palindrome.py) | _O(n^2)_ | _O(n)_ | Hard | variant of [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | |
+1314 | [Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/) | [C++](./C++/matrix-block-sum.cpp) [Python](./Python/matrix-block-sum.py) | _O(m * n)_ | _O(m * n)_ | Medium | variant of [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/) | |
+1320 | [Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/) | [C++](./C++/minimum-distance-to-type-a-word-using-two-fingers.cpp) [Python](./Python/minimum-distance-to-type-a-word-using-two-fingers.py) | _O(n)_ | _O(1)_ | Hard | | |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
