@@ -6,8 +6,11 @@ public:
     int distinctEchoSubstrings(string text) {
         unordered_set<string> result;
         int l = text.length() - 1;
-        for (int i = 0; i < min(2 * l, int(text.length())); ++i)  {  // aaaaaaabcdefabcdefabcdef
-            l = min(l, KMP(text, i, &result));
+        for (int i = 0; i < l; ++i)  {  // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcdefabcdefabcdef
+            const auto& substr_len = KMP(text, i, &result);
+            if (substr_len != numeric_limits<int>::max()) {
+                l = min(l, i + substr_len);
+            }
         }
         return result.size();
     }
