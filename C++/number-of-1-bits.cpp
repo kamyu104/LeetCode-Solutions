@@ -13,7 +13,7 @@ public:
     }
 };
 
-// Time:  O(32/4) = O(8)
+// Time:  O(logn/4) = O(32/4) = O(8)
 // Space: O(1)
 // https://github.com/gcc-mirror/gcc/blob/master/libgcc/libgcc2.c#L856
 class Solution2 {
@@ -39,7 +39,7 @@ private:
     };
 };
 
-// Time:  O(logn) = O(32)
+// Time:  O(logn/4) = O(32/4) = O(8)
 // Space: O(1)
 class Solution3 {
 public:
