@@ -12,6 +12,7 @@ class Solution(object):
         n = (n & 0x0000FFFF) + ((n >> 16) & 0x0000FFFF)
         return n
 
+
 # Time:  O(logn/4) = O(32/4) = O(8)
 # Space: O(1) 
 # https://github.com/gcc-mirror/gcc/blob/master/libgcc/libgcc2.c#L856
