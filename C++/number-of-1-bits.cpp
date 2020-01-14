@@ -20,8 +20,8 @@ class Solution2 {
 public:
     int hammingWeight(uint32_t n) {
         int result = 0;
-        for (int i = 0; i < sizeof(n) * 8; i += 8) {
-            result += popcount_tab_[(n >> i) & 0xff];
+        for (; n; n >>= 8) {
+            result += popcount_tab_[n & 0xff];
         }
         return result;
     }
