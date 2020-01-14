@@ -13,10 +13,44 @@ public:
     }
 };
 
+// https://github.com/gcc-mirror/gcc/blob/master/libgcc/libgcc2.c#L856
+// Time:  O(32/4) = O(8)
+// Space: O(1)
+class Solution2 {
+public:
+    int hammingWeight(uint32_t n) {
+        int result = 0;
+        for (int i = 0; i < sizeof(n) * 8; i += 8) {
+            result += __popcount_tab[(n >> i) & 0xff];
+        }
+        return result;
+    }
+
+private:
+    static constexpr int __popcount_tab[256] = {
+        0,1,1,2,1,2,2,3,1,2,2,3,2,3,3,4,1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,
+        1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
+        1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
+        2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
+        1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
+        2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
+        2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
+        3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,4,5,5,6,5,6,6,7,5,6,6,7,6,7,7,8
+    };
+};
 
 // Time:  O(logn) = O(32)
 // Space: O(1)
-class Solution2 {
+class Solution3 {
+public:
+    int hammingWeight(uint32_t n) {
+        return __builtin_popcount(n);
+    }
+};
+
+// Time:  O(logn) = O(32)
+// Space: O(1)
+class Solution4 {
 public:
     int hammingWeight(uint32_t n) {
         int count = 0;
