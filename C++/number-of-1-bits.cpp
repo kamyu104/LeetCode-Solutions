@@ -21,13 +21,13 @@ public:
     int hammingWeight(uint32_t n) {
         int result = 0;
         for (int i = 0; i < sizeof(n) * 8; i += 8) {
-            result += __popcount_tab[(n >> i) & 0xff];
+            result += popcount_tab_[(n >> i) & 0xff];
         }
         return result;
     }
 
 private:
-    static constexpr int __popcount_tab[256] = {
+    static constexpr int popcount_tab_[256] = {
         0,1,1,2,1,2,2,3,1,2,2,3,2,3,3,4,1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,
         1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
         1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
