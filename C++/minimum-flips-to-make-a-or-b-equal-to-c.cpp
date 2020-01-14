@@ -24,8 +24,7 @@ private:
 class Solution2 {
 public:
     int minFlips(int a, int b, int c) {
-        int diff = (a | b) ^ c;
-        return __builtin_popcount(diff) + __builtin_popcount(diff & (a & b));
+        return (c = ((a | b) ^ c)) != 0 ? __builtin_popcount(c) + __builtin_popcount(c & (a & b)) : 0;
     }
 };
 
