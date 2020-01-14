@@ -12,10 +12,35 @@ class Solution(object):
         n = (n & 0x0000FFFF) + ((n >> 16) & 0x0000FFFF)
         return n
 
+# Time:  O(32/4) = O(8)
+# Space: O(1)    
+class Solution2(object):
+    def __init__(self):
+        self.__popcount_tab = \
+        [ \
+            0,1,1,2,1,2,2,3,1,2,2,3,2,3,3,4,1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5, \
+            1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6, \
+            1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6, \
+            2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7, \
+            1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6, \
+            2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7, \
+            2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7, \
+            3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,4,5,5,6,5,6,6,7,5,6,6,7,6,7,7,8 \
+        ]
+
+    # @param n, an integer
+    # @return an integer
+    def hammingWeight(self, n):
+        result = 0
+        for i in xrange(0, 32, 8):
+            result += self.__popcount_tab[n & 0xff]
+            n >>= 8
+        return result
+
     
 # Time:  O(logn) = O(32)
 # Space: O(1)
-class Solution2(object):
+class Solution3(object):
     # @param n, an integer
     # @return an integer
     def hammingWeight(self, n):
