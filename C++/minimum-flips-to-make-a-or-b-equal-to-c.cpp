@@ -25,7 +25,8 @@ class Solution2 {
 public:
     int minFlips(int a, int b, int c) {
         // be care of evaluation order https://en.cppreference.com/w/cpp/language/eval_order
-        return (c ^= (a | b)) ? __builtin_popcount(c) + __builtin_popcount(c & (a & b)) : 0;
+        // return __builtin_popcount(c ^= (a | b)) + __builtin_popcount(c & (a & b));  // Sequenced-before rules (since c++11)
+        return (c ^= (a | b)) ? __builtin_popcount(c) + __builtin_popcount(c & (a & b)) : 0;  // compatible before c++11
     }
 };
 
