@@ -34,7 +34,7 @@ class Solution2(object):
     # @return an integer
     def hammingWeight(self, n):
         result = 0
-        for i in xrange(0, 32, 8):
+        while n:
             result += self.__popcount_tab[n & 0xff]
             n >>= 8
         return result
