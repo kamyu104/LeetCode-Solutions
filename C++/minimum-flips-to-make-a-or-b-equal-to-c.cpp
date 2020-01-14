@@ -5,6 +5,16 @@ class Solution {
 public:
     int minFlips(int a, int b, int c) {
         int diff = (a | b) ^ c;
+        return __builtin_popcount(diff) + __builtin_popcount(diff & (a & b));
+    }
+};
+
+// Time:  O(31)
+// Space: O(1)
+class Solution2 {
+public:
+    int minFlips(int a, int b, int c) {
+        int diff = (a | b) ^ c;
         return number_of_1_bits(diff) + number_of_1_bits(diff & (a & b));
     }
 
@@ -18,7 +28,7 @@ private:
 
 // Time:  O(31)
 // Space: O(1)
-class Solution2 {
+class Solution3 {
 public:
     int minFlips(int a, int b, int c) {
         int result = 0;
