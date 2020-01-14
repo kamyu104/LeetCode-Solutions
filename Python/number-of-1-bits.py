@@ -1,4 +1,4 @@
-# Time:  O(log(logn)) = O(5)
+# Time:  O(32), bit shift in python is not O(1), it's O(k), k is the number of bits shifted
 # Space: O(1)
 
 class Solution(object):
