@@ -13,7 +13,8 @@ class Solution(object):
         return n
 
 # Time:  O(32/4) = O(8)
-# Space: O(1)    
+# Space: O(1) 
+# https://github.com/gcc-mirror/gcc/blob/master/libgcc/libgcc2.c#L856
 class Solution2(object):
     def __init__(self):
         self.__popcount_tab = \
