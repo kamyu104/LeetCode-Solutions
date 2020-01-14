@@ -19,7 +19,7 @@ private:
     }
 };
 
-// Time:  O(31)
+// Time:  O(logn/4) = O(32/4) = O(8)
 // Space: O(1)
 class Solution2 {
 public:
