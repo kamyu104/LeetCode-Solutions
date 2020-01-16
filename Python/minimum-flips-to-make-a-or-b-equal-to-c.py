@@ -16,8 +16,7 @@ class Solution(object):
                 result += 1
             return result
 
-        diff = (a|b)^c
-        return number_of_1_bits(diff) + number_of_1_bits(diff & (a&b))
+        return number_of_1_bits((a|b)^c) + number_of_1_bits(a&b&~c)
 
 
 # Time:  O(31)
