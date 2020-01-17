@@ -8,7 +8,7 @@ public:
         string digits;
         while (curr) { 
             if (curr % 10 == 0 ||
-                (curr % 10 == 1 and curr != 1)) {
+                (curr % 10 == 1 && curr != 1)) {
                 digits.push_back('2');
                 curr -= 10;  // carry
             } else {
