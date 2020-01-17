@@ -9,8 +9,7 @@ class Solution(object):
         """
         curr, digits = n, []
         while curr: 
-            if curr % 10 == 0 or \
-               (curr % 10 == 1 and curr != 1):
+            if curr % 10 == 0 or (curr % 10 == 1 and curr != 1):
                 digits.append('2')
                 curr -= 10  # carry
             else:
