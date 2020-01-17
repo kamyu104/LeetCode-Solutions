@@ -4,17 +4,14 @@
 class Solution {
 public:
     vector<int> getNoZeroIntegers(int n) {
-        int curr = n;
         string digits;
-        while (curr) { 
-            if (curr % 10 == 0 ||
-                (curr % 10 == 1 && curr != 1)) {
+        for (int curr = n; curr; curr /= 10) { 
+            if (curr % 10 == 0 || (curr % 10 == 1 && curr != 1)) {
                 digits.push_back('2');
                 curr -= 10;  // carry
             } else {
                 digits.push_back('1');
             }
-            curr /= 10;
         }
         reverse(digits.begin(), digits.end());
         int a = stoi(digits);
