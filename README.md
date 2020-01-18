@@ -1405,7 +1405,7 @@
 1303| [Find the Team Size](https://leetcode.com/problems/find-the-team-size/) | [MySQL](./MySQL/find-the-team-size.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1308| [Running Total for Different Genders](https://leetcode.com/problems/running-total-for-different-genders/) | [MySQL](./MySQL/running-total-for-different-genders.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
 1321| [Restaurant Growth](https://leetcode.com/problems/restaurant-growth/) | [MySQL](./MySQL/restaurant-growth.sql) | _O(n^2)_ | _O(n)_       | Medium           |🔒| |
-1322| [Ads Performance](https://leetcode.com/problems/ads-performance/) | [MySQL](./MySQL/ads-performance.sql) | _O(n^2)_ | _O(n)_       | Easy           |🔒| |
+1322| [Ads Performance](https://leetcode.com/problems/ads-performance/) | [MySQL](./MySQL/ads-performance.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
