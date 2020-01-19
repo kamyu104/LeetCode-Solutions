@@ -1,5 +1,5 @@
 # Time:  O(logn)
-# Space: O(logn)
+# Space: O(1)
 
 class Solution(object):
     def getNoZeroIntegers(self, n):
@@ -7,16 +7,14 @@ class Solution(object):
         :type n: int
         :rtype: List[int]
         """
-        curr, digits = n, []
+        a, curr, base = 0, n, 1
         while curr: 
             if curr % 10 == 0 or (curr % 10 == 1 and curr != 1):
-                digits.append('2')
+                a += base
                 curr -= 10  # carry
-            else:
-                digits.append('1')
+            a += base
+            base *= 10
             curr //= 10
-        digits.reverse()
-        a = int("".join(digits))
         return [a, n-a]
 
 
