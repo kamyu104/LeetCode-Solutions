@@ -1,20 +1,17 @@
 // Time:  O(logn)
-// Space: O(logn)
+// Space: O(1)
 
 class Solution {
 public:
     vector<int> getNoZeroIntegers(int n) {
-        string digits;
-        for (int curr = n; curr; curr /= 10) { 
+        int a = 0;
+        for (int curr = n, base = 1; curr; curr /= 10, base *= 10) { 
             if (curr % 10 == 0 || (curr % 10 == 1 && curr != 1)) {
-                digits.push_back('2');
+                a += 1 * base;
                 curr -= 10;  // carry
-            } else {
-                digits.push_back('1');
             }
+            a += 1 * base;
         }
-        reverse(digits.begin(), digits.end());
-        int a = stoi(digits);
         return {a, n - a};
     }
 };
