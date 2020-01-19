@@ -5,12 +5,12 @@ class Solution {
 public:
     vector<int> getNoZeroIntegers(int n) {
         int a = 0;
-        for (int curr = n, base = 1; curr; curr /= 10, base *= 10) { 
+        for (int curr = n, base = 1; curr; base *= 10, curr /= 10) { 
             if (curr % 10 == 0 || (curr % 10 == 1 && curr != 1)) {
-                a += 1 * base;
+                a += base;
                 curr -= 10;  // carry
             }
-            a += 1 * base;
+            a += base;
         }
         return {a, n - a};
     }
