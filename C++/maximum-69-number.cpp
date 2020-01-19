@@ -4,13 +4,13 @@
 class Solution {
 public:
     int maximum69Number (int num) {
-        int extra = 0;
+        int change = 0;
         for (int curr = num, base = 3; curr; base *= 10, curr /= 10) {
             if (curr % 10 == 6) {
-                extra = base;
+                change = base;
             }
         }
-        return num + extra;
+        return num + change;
     }
 };
 
