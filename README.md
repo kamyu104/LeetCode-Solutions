@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1322%20%2F%201322-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1326%20%2F%201326-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -350,6 +350,7 @@
 1271 | [Hexspeak](https://leetcode.com/problems/hexspeak/) | [C++](./C++/hexspeak.cpp) [Python](./Python/hexspeak.py) | _O(n)_ | _O(1)_ | Easy | |
 1297 | [Maximum Number of Occurrences of a Substring](https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/) | [C++](./C++/maximum-number-of-occurrences-of-a-substring.cpp) [Python](./Python/maximum-number-of-occurrences-of-a-substring.py) | _O(n)_ | _O(n)_ | Medium | | Sliding Window, `Rabin-Karp Algorithm`
 1309 | [Decrypt String from Alphabet to Integer Mapping](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/) | [C++](./C++/decrypt-string-from-alphabet-to-integer-mapping.cpp) [Python](./Python/decrypt-string-from-alphabet-to-integer-mapping.py) | _O(n)_ | _O(1)_ | Easy | |
+1324 | [Print Words Vertically](https://leetcode.com/problems/print-words-vertically/) | [C++](./C++/print-words-vertically.cpp) [Python](./Python/print-words-vertically.py) | _O(n)_ | _O(n)_ | Medium | |
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -525,6 +526,7 @@
 1145 |[Binary Tree Coloring Game](https://leetcode.com/problems/binary-tree-coloring-game/)| [C++](./C++/binary-tree-coloring-game.cpp)  [Python](./Python/binary-tree-coloring-game.py) | _O(n)_ | _O(h)_ | Medium || DFS |
 1257 |[Smallest Common Region](https://leetcode.com/problems/smallest-common-region/)| [C++](./C++/smallest-common-region.cpp)  [Python](./Python/smallest-common-region.py) | _O(m * n)_ | _O(n)_ | Medium |||
 1261 |[Find Elements in a Contaminated Binary Tree](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/)| [C++](./C++/find-elements-in-a-contaminated-binary-tree.cpp)  [Python](./Python/find-elements-in-a-contaminated-binary-tree.py) | _O(n)_ | _O(h)_ | Medium || DFS|
+1325 |[Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/)| [C++](./C++/delete-leaves-with-a-given-value.cpp)  [Python](./Python/delete-leaves-with-a-given-value.py) | _O(n)_ | _O(h)_ | Medium || DFS|
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -728,6 +730,7 @@
 1281| [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)     | [C++](./C++/subtract-the-product-and-sum-of-digits-of-an-integer.cpp) [Python](./Python/subtract-the-product-and-sum-of-digits-of-an-integer.py)  | _O(logn)_        | _O(1)_          | Easy         | |
 1300| [Sum of Mutated Array Closest to Target](https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/)     | [C++](./C++/sum-of-mutated-array-closest-to-target.cpp) [Python](./Python/sum-of-mutated-array-closest-to-target.py)  | _O(nlogn)_        | _O(1)_          | Medium         | | Binary Search
 1317| [Convert Integer to the Sum of Two No-Zero Integers](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/)     | [C++](./C++/convert-integer-to-the-sum-of-two-no-zero-integers.cpp) [Python](./Python/convert-integer-to-the-sum-of-two-no-zero-integers.py)  | _O(logn)_        | _O(logn)_          | Easy         | |
+1323| [Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/)     | [C++](./C++/maximum-69-number.cpp) [Python](./Python/maximum-69-number.py)  | _O(logn)_        | _O(1)_          | Easy         | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1264,6 +1267,7 @@
 1282 | [Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/) | [C++](./C++/group-the-people-given-the-group-size-they-belong-to.cpp) [Python](./Python/group-the-people-given-the-group-size-they-belong-to.py) | _O(n)_ | _O(n)_ | Medium ||
 1288 | [Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) | [C++](./C++/remove-covered-intervals.cpp) [Python](./Python/remove-covered-intervals.py) | _O(nlogn)_ | _O(1)_ | Medium | | Line Sweep
 1296 | [Divide Array in Sets of K Consecutive Numbers](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/) | [C++](./C++/divide-array-in-sets-of-k-consecutive-numbers.cpp) [Python](./Python/divide-array-in-sets-of-k-consecutive-numbers.py) | _O(nlogn)_ | _O(n)_ | Medium ||
+1326| [Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/)  | [C++](./C++/minimum-number-of-taps-to-open-to-water-a-garden.cpp) [Python](./Python/minimum-number-of-taps-to-open-to-water-a-garden.py) | _O(n)_        | _O(n)_          | Hard           | variant of [Jump Game II](https://leetcode.com/problems/jump-game-ii/) |
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
