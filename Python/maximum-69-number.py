@@ -7,13 +7,13 @@ class Solution(object):
         :type num: int
         :rtype: int
         """
-        curr, base, extra = num, 3, 0
+        curr, base, change = num, 3, 0
         while curr:
             if curr%10 == 6:
-                extra = base
+                change = base
             base *= 10
             curr //= 10
-        return num+extra
+        return num+change
 
 
 # Time:  O(logn)
