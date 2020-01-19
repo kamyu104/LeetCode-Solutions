@@ -5,9 +5,9 @@ class Solution {
 public:
     int maximum69Number (int num) {
         int extra = 0;
-        for (int curr = num, power = 3; curr; power *= 10, curr /= 10) {
+        for (int curr = num, base = 3; curr; base *= 10, curr /= 10) {
             if (curr % 10 == 6) {
-                extra = power;
+                extra = base;
             }
         }
         return num + extra;
