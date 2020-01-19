@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(h)
+# Space: O(n)
 
 import itertools
 
