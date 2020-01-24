@@ -10,4 +10,4 @@ FROM   (SELECT product_id,
         GROUP  BY product_id) o 
        INNER JOIN products p 
               ON o.product_id = p.product_id 
-HAVING o.unit >= 100 
+WHERE o.unit >= 100 
