@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1326%20%2F%201326-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1327%20%2F%201327-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -1410,6 +1410,7 @@
 1308| [Running Total for Different Genders](https://leetcode.com/problems/running-total-for-different-genders/) | [MySQL](./MySQL/running-total-for-different-genders.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
 1321| [Restaurant Growth](https://leetcode.com/problems/restaurant-growth/) | [MySQL](./MySQL/restaurant-growth.sql) | _O(n^2)_ | _O(n)_       | Medium           |🔒| |
 1322| [Ads Performance](https://leetcode.com/problems/ads-performance/) | [MySQL](./MySQL/ads-performance.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
+1327| [List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/) | [MySQL](./MySQL/list-the-products-ordered-in-a-period.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
