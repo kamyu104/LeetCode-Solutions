@@ -10,7 +10,7 @@ public:
                 lookup[i - j].emplace_back(mat[i][j]);
             }
         }
-        for (auto& [k, v] : lookup) {
+        for (auto& [_, v] : lookup) {
             sort(v.begin(), v.end());
         }
         for (int i = mat.size() - 1; i >= 0; --i) {
