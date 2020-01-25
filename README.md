@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1327%20%2F%201327-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1331%20%2F%201331-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -243,6 +243,8 @@
 1304 | [Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/) | [C++](./C++/find-n-unique-integers-sum-up-to-zero.cpp) [Python](./Python/find-n-unique-integers-sum-up-to-zero.py) | _O(n)_ | _O(1)_      | Easy         || 
 1313 | [Decompress Run-Length Encoded List](https://leetcode.com/problems/decompress-run-length-encoded-list/) | [C++](./C++/decompress-run-length-encoded-list.cpp) [Python](./Python/decompress-run-length-encoded-list.py) | _O(n)_ | _O(1)_      | Easy         || 
 1316 | [Distinct Echo Substrings](https://leetcode.com/problems/distinct-echo-substrings/) | [C++](./C++/distinct-echo-substrings.cpp) [Python](./Python/distinct-echo-substrings.py) | _O(n^2 + d)_ | _O(r)_      | Hard         || `KMP Algorithm`, Sliding Window, `Rabin-Karp Algorithm`
+1329 | [Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally/) | [C++](./C++/sort-the-matrix-diagonally.cpp) [Python](./Python/sort-the-matrix-diagonally.py) | _O(m * n * log(min(m, n))_ | _O(m * n)_      | Medium         || Sort
+1331 | [Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/) | [C++](./C++/rank-transform-of-an-array.cpp) [Python](./Python/rank-transform-of-an-array.py) | _O(nlogn)_ | _O(n)_      | Easy         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -351,6 +353,7 @@
 1297 | [Maximum Number of Occurrences of a Substring](https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/) | [C++](./C++/maximum-number-of-occurrences-of-a-substring.cpp) [Python](./Python/maximum-number-of-occurrences-of-a-substring.py) | _O(n)_ | _O(n)_ | Medium | | Sliding Window, `Rabin-Karp Algorithm`
 1309 | [Decrypt String from Alphabet to Integer Mapping](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/) | [C++](./C++/decrypt-string-from-alphabet-to-integer-mapping.cpp) [Python](./Python/decrypt-string-from-alphabet-to-integer-mapping.py) | _O(n)_ | _O(1)_ | Easy | |
 1324 | [Print Words Vertically](https://leetcode.com/problems/print-words-vertically/) | [C++](./C++/print-words-vertically.cpp) [Python](./Python/print-words-vertically.py) | _O(n)_ | _O(n)_ | Medium | |
+1328 | [Break a Palindrome](https://leetcode.com/problems/break-a-palindrome/) | [C++](./C++/break-a-palindrome.cpp) [Python](./Python/break-a-palindrome.py) | _O(n)_ | _O(1)_ | Medium | |
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -731,6 +734,7 @@
 1300| [Sum of Mutated Array Closest to Target](https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/)     | [C++](./C++/sum-of-mutated-array-closest-to-target.cpp) [Python](./Python/sum-of-mutated-array-closest-to-target.py)  | _O(nlogn)_        | _O(1)_          | Medium         | | Binary Search
 1317| [Convert Integer to the Sum of Two No-Zero Integers](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/)     | [C++](./C++/convert-integer-to-the-sum-of-two-no-zero-integers.cpp) [Python](./Python/convert-integer-to-the-sum-of-two-no-zero-integers.py)  | _O(logn)_        | _O(1)_          | Easy         | |
 1323| [Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/)     | [C++](./C++/maximum-69-number.cpp) [Python](./Python/maximum-69-number.py)  | _O(logn)_        | _O(1)_          | Easy         | |
+1330| [Reverse Subarray To Maximize Array Value](https://leetcode.com/problems/reverse-subarray-to-maximize-array-value/)     | [C++](./C++/reverse-subarray-to-maximize-array-value.cpp) [Python](./Python/reverse-subarray-to-maximize-array-value.py)  | _O(n)_        | _O(1)_          | Hard         | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
