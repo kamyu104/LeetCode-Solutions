@@ -1,5 +1,5 @@
-# Time:  O(nlogn)
-# Space: O(1)
+# Time:  O(rlogr), r is the number of result
+# Space: O(r)
 
 class Solution(object):
     def filterRestaurants(self, restaurants, veganFriendly, maxPrice, maxDistance):
@@ -10,5 +10,12 @@ class Solution(object):
         :type maxDistance: int
         :rtype: List[int]
         """
-        restaurants.sort(key=lambda (i, r, v, p, d): (-r, -i))
-        return [i for i, r, v, p, d in restaurants if v >= veganFriendly and p <= maxPrice and d <= maxDistance]
+        result, lookup = [], {}
+        for j, (i, _, v, p, d) in enumerate(restaurants):
+            if v >= veganFriendly and p <= maxPrice and d <= maxDistance:
+                lookup[i] = j
+                result.append(i)
+        result.sort(key=lambda i: (-restaurants[lookup[i]][1], -restaurants[lookup[i]][0]))
+        return result        
+
+                                           
