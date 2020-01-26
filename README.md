@@ -245,7 +245,7 @@
 1316 | [Distinct Echo Substrings](https://leetcode.com/problems/distinct-echo-substrings/) | [C++](./C++/distinct-echo-substrings.cpp) [Python](./Python/distinct-echo-substrings.py) | _O(n^2 + d)_ | _O(r)_      | Hard         || `KMP Algorithm`, Sliding Window, `Rabin-Karp Algorithm`
 1329 | [Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally/) | [C++](./C++/sort-the-matrix-diagonally.cpp) [Python](./Python/sort-the-matrix-diagonally.py) | _O(m * n * log(min(m, n))_ | _O(m * n)_      | Medium         || Sort
 1331 | [Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/) | [C++](./C++/rank-transform-of-an-array.cpp) [Python](./Python/rank-transform-of-an-array.py) | _O(nlogn)_ | _O(n)_      | Easy         || 
-1333 | [Filter Restaurants by Vegan-Friendly, Price and Distance](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/) | [C++](./C++/filter-restaurants-by-vegan-friendly-price-and-distance.cpp) [Python](./Python/filter-restaurants-by-vegan-friendly-price-and-distance.py) | _O(nlogn)_ | _O(1)_      | Medium         || Sort
+1333 | [Filter Restaurants by Vegan-Friendly, Price and Distance](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/) | [C++](./C++/filter-restaurants-by-vegan-friendly-price-and-distance.cpp) [Python](./Python/filter-restaurants-by-vegan-friendly-price-and-distance.py) | _O(rlogr)_ | _O(r)_      | Medium         || Sort
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
