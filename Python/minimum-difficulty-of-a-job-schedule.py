@@ -1,5 +1,5 @@
 # Time:  O(n^2 * d)
-# Space: O(n * d)
+# Space: O(n^2)
 
 class Solution(object):
     def minDifficulty(self, jobDifficulty, d):
