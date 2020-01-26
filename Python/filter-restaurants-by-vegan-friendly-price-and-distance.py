@@ -16,6 +16,4 @@ class Solution(object):
                 lookup[i] = j
                 result.append(i)
         result.sort(key=lambda i: (-restaurants[lookup[i]][1], -restaurants[lookup[i]][0]))
-        return result        
-
-                                           
+        return result
