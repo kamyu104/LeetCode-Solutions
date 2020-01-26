@@ -1209,7 +1209,7 @@
 1312 | [Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/) | [C++](./C++/minimum-insertion-steps-to-make-a-string-palindrome.cpp) [Python](./Python/minimum-insertion-steps-to-make-a-string-palindrome.py) | _O(n^2)_ | _O(n)_ | Hard | variant of [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | |
 1314 | [Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/) | [C++](./C++/matrix-block-sum.cpp) [Python](./Python/matrix-block-sum.py) | _O(m * n)_ | _O(m * n)_ | Medium | variant of [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/) | |
 1320 | [Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/) | [C++](./C++/minimum-distance-to-type-a-word-using-two-fingers.cpp) [Python](./Python/minimum-distance-to-type-a-word-using-two-fingers.py) | _O(n)_ | _O(1)_ | Hard | | |
-1335 | [Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/) | [C++](./C++/minimum-difficulty-of-a-job-schedule.cpp) [Python](./Python/minimum-difficulty-of-a-job-schedule.py) | _O(n^2 * d)_ | _O(n * d)_ | Hard | | |
+1335 | [Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/) | [C++](./C++/minimum-difficulty-of-a-job-schedule.cpp) [Python](./Python/minimum-difficulty-of-a-job-schedule.py) | _O(n^2 * d)_ | _O(n^2)_ | Hard | | |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
