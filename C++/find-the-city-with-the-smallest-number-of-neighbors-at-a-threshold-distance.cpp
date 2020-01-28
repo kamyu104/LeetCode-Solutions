@@ -22,12 +22,12 @@ public:
              }
         }
         int result = -1, min_num = numeric_limits<int>::max();
-        for (int i = 0; i < n; ++i) {
+        for (int i = n - 1; i >= 0; --i) {
             int num = accumulate(dist[i].cbegin(), dist[i].cend(), 0,
                                  [&distanceThreshold](const auto& a, const auto& b) {
                                      return a + (b <= distanceThreshold);
                                  });
-            if (num <= min_num) {
+            if (num < min_num) {
                 min_num = num;
                 result = i;
             }
