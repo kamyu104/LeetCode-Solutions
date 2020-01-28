@@ -15,7 +15,8 @@ public:
         }
         sort(result.begin(), result.end(),
              [&restaurants, &lookup](const auto& i, const auto& j) {
-                 return vector<int>{-restaurants[lookup[i]][1], -restaurants[lookup[i]][0]} < vector<int>{-restaurants[lookup[j]][1], -restaurants[lookup[j]][0]};
+                 return vector<int>{-restaurants[lookup[i]][1], -restaurants[lookup[i]][0]} <
+                        vector<int>{-restaurants[lookup[j]][1], -restaurants[lookup[j]][0]};
              });
         return result;
     }
