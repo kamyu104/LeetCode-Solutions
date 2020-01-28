@@ -1,5 +1,5 @@
-# Time:  O(n^2 * d)
-# Space: O(n^2)
+# Time:  O(d * n^2)
+# Space: O(d * n)
 
 class Solution(object):
     def minDifficulty(self, jobDifficulty, d):
@@ -10,17 +10,15 @@ class Solution(object):
         """
         if len(jobDifficulty) < d:
             return -1;
-
-        max_in_range = [[0]*len(jobDifficulty) for _ in xrange(len(jobDifficulty))]
-        for i in xrange(len(jobDifficulty)):
-            max_in_range[i][i] = jobDifficulty[i]
-            for j in xrange(i+1, len(jobDifficulty)):
-                max_in_range[i][j] = max(max_in_range[i][j-1], jobDifficulty[j])
         
-        dp = [[float("inf")]*d for _ in xrange(len(jobDifficulty))]
-        for i in xrange(len(jobDifficulty)):
-            dp[i][0] = max_in_range[0][i]
-            for j in xrange(1, d):
-                for k in reversed(xrange(i)):
-                    dp[i][j] = min(dp[i][j], dp[k][j-1] + max_in_range[k+1][i])
-        return dp[len(jobDifficulty)-1][d-1]
+        dp = [[float("inf")]*len(jobDifficulty) for _ in xrange(d)]
+        dp[0][0] = jobDifficulty[0]
+        for i in xrange(1, len(jobDifficulty)):
+            dp[0][i] = max(dp[0][i-1], jobDifficulty[i])
+        for i in xrange(1, d):
+            for j in xrange(i, len(jobDifficulty)):
+                curr_max = jobDifficulty[j]
+                for k in reversed(xrange(i, j+1)):
+                    curr_max = max(curr_max, jobDifficulty[k])
+                    dp[i][j] = min(dp[i][j], dp[i-1][k-1] + curr_max)
+        return dp[d-1][len(jobDifficulty)-1]
