@@ -9,7 +9,8 @@ public:
         }
 
         vector<vector<int>> dp(d,
-                               vector<int>(jobDifficulty.size(), numeric_limits<int>::max()));
+                               vector<int>(jobDifficulty.size(),
+                                           numeric_limits<int>::max()));
         dp[0][0] = jobDifficulty[0];
         for (int i = 1; i < jobDifficulty.size(); ++i) {
             dp[0][i] = max(dp[0][i - 1], jobDifficulty[i]);
