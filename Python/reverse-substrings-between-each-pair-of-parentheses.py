@@ -17,7 +17,7 @@ class Solution(object):
         result = []
         i, d = 0, 1
         while i < len(s):
-            if s[i] == '(' or s[i] == ')':
+            if i in lookup:
                 i = lookup[i]
                 d *= -1
             else:
