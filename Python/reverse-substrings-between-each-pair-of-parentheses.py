@@ -43,5 +43,5 @@ class Solution2(object):
                 end.reverse()
                 stk[-1].extend(end)
             else:
-                stk[-1].append(c)    
+                stk[-1].append(c)
         return "".join(stk.pop())
