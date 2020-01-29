@@ -16,7 +16,7 @@ public:
         }
         string result;
         for (int i = 0, d = 1; i < s.length(); i += d) {
-            if (s[i] == '(' || s[i] == ')') {
+            if (lookup.count(i)) {
                 i = lookup[i];
                 d *= -1;
             } else {
