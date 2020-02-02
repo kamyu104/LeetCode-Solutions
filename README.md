@@ -245,7 +245,7 @@
 1316 | [Distinct Echo Substrings](https://leetcode.com/problems/distinct-echo-substrings/) | [C++](./C++/distinct-echo-substrings.cpp) [Python](./Python/distinct-echo-substrings.py) | _O(n^2 + d)_ | _O(r)_      | Hard         || `KMP Algorithm`, Sliding Window, `Rabin-Karp Algorithm`
 1329 | [Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally/) | [C++](./C++/sort-the-matrix-diagonally.cpp) [Python](./Python/sort-the-matrix-diagonally.py) | _O(m * n * log(min(m, n))_ | _O(m * n)_      | Medium         || Sort
 1331 | [Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/) | [C++](./C++/rank-transform-of-an-array.cpp) [Python](./Python/rank-transform-of-an-array.py) | _O(nlogn)_ | _O(n)_      | Easy         || 
-1337 | [Filter Restaurants by Vegan-Friendly, Price and Distance](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/) | [C++](./C++/filter-restaurants-by-vegan-friendly-price-and-distance.cpp) [Python](./Python/filter-restaurants-by-vegan-friendly-price-and-distance.py) | _O(rlogr)_ | _O(r)_      | Medium         || Sort
+1338 | [Filter Restaurants by Vegan-Friendly, Price and Distance](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/) | [C++](./C++/filter-restaurants-by-vegan-friendly-price-and-distance.cpp) [Python](./Python/filter-restaurants-by-vegan-friendly-price-and-distance.py) | _O(rlogr)_ | _O(r)_      | Medium         || Sort
 1341 | [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) | [C++](./C++/rthe-k-weakest-rows-in-a-matrix.cpp) [Python](./Python/the-k-weakest-rows-in-a-matrix.py) | _O(m * n + klogk)_ | _O(m)_      | Easy         || Quick Select
 
 ## String
@@ -356,7 +356,7 @@
 1309 | [Decrypt String from Alphabet to Integer Mapping](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/) | [C++](./C++/decrypt-string-from-alphabet-to-integer-mapping.cpp) [Python](./Python/decrypt-string-from-alphabet-to-integer-mapping.py) | _O(n)_ | _O(1)_ | Easy | |
 1324 | [Print Words Vertically](https://leetcode.com/problems/print-words-vertically/) | [C++](./C++/print-words-vertically.cpp) [Python](./Python/print-words-vertically.py) | _O(n)_ | _O(n)_ | Medium | |
 1328 | [Break a Palindrome](https://leetcode.com/problems/break-a-palindrome/) | [C++](./C++/break-a-palindrome.cpp) [Python](./Python/break-a-palindrome.py) | _O(n)_ | _O(1)_ | Medium | |
-1336 | [Remove Palindromic Subsequences](https://leetcode.com/problems/remove-palindromic-subsequences/) | [C++](./C++/remove-palindromic-subsequences.cpp) [Python](./Python/remove-palindromic-subsequences.py) | _O(n)_ | _O(1)_ | Easy | |
+1337 | [Remove Palindromic Subsequences](https://leetcode.com/problems/remove-palindromic-subsequences/) | [C++](./C++/remove-palindromic-subsequences.cpp) [Python](./Python/remove-palindromic-subsequences.py) | _O(n)_ | _O(1)_ | Easy | |
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1211,7 +1211,7 @@
 1312 | [Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/) | [C++](./C++/minimum-insertion-steps-to-make-a-string-palindrome.cpp) [Python](./Python/minimum-insertion-steps-to-make-a-string-palindrome.py) | _O(n^2)_ | _O(n)_ | Hard | variant of [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | |
 1314 | [Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/) | [C++](./C++/matrix-block-sum.cpp) [Python](./Python/matrix-block-sum.py) | _O(m * n)_ | _O(m * n)_ | Medium | variant of [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/) | |
 1320 | [Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/) | [C++](./C++/minimum-distance-to-type-a-word-using-two-fingers.cpp) [Python](./Python/minimum-distance-to-type-a-word-using-two-fingers.py) | _O(n)_ | _O(1)_ | Hard | | |
-1339 | [Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/) | [C++](./C++/minimum-difficulty-of-a-job-schedule.cpp) [Python](./Python/minimum-difficulty-of-a-job-schedule.py) | _O(d * n^2)_ | _O(d * n)_ | Hard | | |
+1340 | [Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/) | [C++](./C++/minimum-difficulty-of-a-job-schedule.cpp) [Python](./Python/minimum-difficulty-of-a-job-schedule.py) | _O(d * n^2)_ | _O(d * n)_ | Hard | | |
 1344 | [Jump Game V](https://leetcode.com/problems/jump-game-v/) | [C++](./C++/jump-game-v.cpp) [Python](./Python/jump-game-v.py) | _O(nlogn)_ | _O(n)_ | Hard | | Mono Stack, Segment Tree |
 
 ## Greedy
@@ -1292,7 +1292,7 @@
 1101 | [The Earliest Moment When Everyone Become Friends](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/) | [C++](./C++/the-earliest-moment-when-everyone-become-friends.cpp) [Python](./Python/the-earliest-moment-when-everyone-become-friends.py) | _O(nlogn)_ | _O(n)_ | Medium           |🔒| Union Find |
 1135 | [Connecting Cities With Minimum Cost](https://leetcode.com/problems/connecting-cities-with-minimum-cost/) | [C++](./C++/connecting-cities-with-minimum-cost.cpp) [Python](./Python/connecting-cities-with-minimum-cost.py) | _O(nlogn)_ | _O(n)_ | Medium           |🔒| Union Find, `Kruskal's Algorithm`, MST |
 1168 | [Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) | [C++](./C++/optimize-water-distribution-in-a-village.cpp) [Python](./Python/optimize-water-distribution-in-a-village.py) | _O(nlogn)_ | _O(n)_ | Hard           |🔒| Union Find |
-1338 | [Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | [C++](./C++/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.cpp) [Python](./Python/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.py) | _O(n^3)_ | _O(n^2)_ | Medium           || `Floyd-Warshall Algorithm`|
+1339 | [Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | [C++](./C++/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.cpp) [Python](./Python/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.py) | _O(n^3)_ | _O(n^2)_ | Medium           || `Floyd-Warshall Algorithm`|
 
 ## Geometry
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
