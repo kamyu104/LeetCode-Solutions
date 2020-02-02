@@ -160,9 +160,10 @@ public:
         for (const auto& [_, i] : sorted_arr) {
             dp[i] = 1;
             for (int j = left[i]; j <= right[i]; ++j) {
-                if (j != i) {
-                    dp[i] = max(dp[i], dp[j] + 1);
+                if (j == i) {
+                    continue;
                 }
+                dp[i] = max(dp[i], dp[j] + 1);
             }
         }
         return *max_element(dp.cbegin(), dp.cend());
@@ -214,9 +215,10 @@ private:
         }
         (*lookup)[i] = 1;
         for (int j = left[i]; j <= right[i]; ++j) {
-            if (j != i) {
-                (*lookup)[i] = max((*lookup)[i], dp(arr, d, j, left, right, lookup) + 1);
+            if (j == i) {
+                continue;
             }
+            (*lookup)[i] = max((*lookup)[i], dp(arr, d, j, left, right, lookup) + 1);
         }
         return (*lookup)[i];
     }
