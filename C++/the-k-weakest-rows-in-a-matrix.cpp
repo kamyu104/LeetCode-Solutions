@@ -13,7 +13,7 @@ public:
                 }
                 lookup.emplace(i);
                 result.emplace_back(i);
-                if (!--k) {
+                if (result.size() == k) {
                     return result;
                 }
             }
@@ -24,7 +24,7 @@ public:
             }
             lookup.emplace(i);
             result.emplace_back(i);
-            if (!--k) {
+            if (result.size() == k) {
                 break;
             }
         }
@@ -44,7 +44,7 @@ public:
                     continue;
                 }
                 lookup[i] = true;
-                if (!--k) {
+                if (lookup.size() == k) {
                     return lookup.keys();
                 }
             }
@@ -54,7 +54,7 @@ public:
                 continue;
             }
             lookup[i] = true;
-            if (!--k) {
+            if (lookup.size() == k) {
                 break;
             }
         }
@@ -90,6 +90,10 @@ private:
                           return x.first;
                       });
             return result;
+        }
+        
+        int size() const {
+            return list_.size();
         }
     
     private:
