@@ -156,7 +156,7 @@ class Solution3(object):
         :rtype: int
         """
         def dp(arr, d, i, left, right, lookup):
-            if lookup[i] > 0:
+            if lookup[i]:
                 return lookup[i]
             lookup[i] = 1
             for j in xrange(left[i], right[i]+1):
