@@ -140,7 +140,7 @@ class Solution3(object):
         :type d: int
         :rtype: int
         """
-        def dp(arr, i, lookup):
+        def dp(arr, d, i, lookup):
             if lookup[i]:
                 return lookup[i]
             lookup[i] = 1
@@ -148,8 +148,8 @@ class Solution3(object):
                 for j in xrange(i+di, i+di*(d+1), di):
                     if not (0 <= j < len(arr) and arr[i] > arr[j]):
                         break
-                    lookup[i] = max(lookup[i], dp(arr, j, lookup)+1)
+                    lookup[i] = max(lookup[i], dp(arr, d, j, lookup)+1)
             return lookup[i]
 
         lookup = [0]*len(arr)
-        return max(itertools.imap(lambda x: dp(arr, x, lookup), xrange(len(arr))))
+        return max(itertools.imap(lambda x: dp(arr, d, x, lookup), xrange(len(arr))))
