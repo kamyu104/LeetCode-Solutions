@@ -179,30 +179,30 @@ class Solution3 {
 public:
     int maxJumps(vector<int>& arr, int d) {
         vector<int> left(arr.size());
-        deque<int> decreasing_deq;
+        deque<int> decreasing_dq;
         iota(left.begin(), left.end(), 0);
         for (int i = 0; i < arr.size(); ++i) {
-            if (!decreasing_deq.empty() && i - decreasing_deq.front() == d + 1) {
-                decreasing_deq.pop_front();
+            if (!decreasing_dq.empty() && i - decreasing_dq.front() == d + 1) {
+                decreasing_dq.pop_front();
             }
-            while (!decreasing_deq.empty() && arr[decreasing_deq.back()] < arr[i]) {
-                left[i] = decreasing_deq.back();
-                decreasing_deq.pop_back();
+            while (!decreasing_dq.empty() && arr[decreasing_dq.back()] < arr[i]) {
+                left[i] = decreasing_dq.back();
+                decreasing_dq.pop_back();
             }
-            decreasing_deq.emplace_back(i);
+            decreasing_dq.emplace_back(i);
         }
         vector<int> right(arr.size());
-        decreasing_deq.clear();
+        decreasing_dq.clear();
         iota(right.begin(), right.end(), 0);
         for (int i = arr.size() - 1; i >= 0; --i) {
-            if (!decreasing_deq.empty() && decreasing_deq.front() - i == d + 1) {
-                decreasing_deq.pop_front();
+            if (!decreasing_dq.empty() && decreasing_dq.front() - i == d + 1) {
+                decreasing_dq.pop_front();
             }
-            while (!decreasing_deq.empty() && arr[decreasing_deq.back()] < arr[i]) {
-                right[i] = decreasing_deq.back();
-                decreasing_deq.pop_back();
+            while (!decreasing_dq.empty() && arr[decreasing_dq.back()] < arr[i]) {
+                right[i] = decreasing_dq.back();
+                decreasing_dq.pop_back();
             }
-            decreasing_deq.emplace_back(i);
+            decreasing_dq.emplace_back(i);
         }
 
         int result = 0;
