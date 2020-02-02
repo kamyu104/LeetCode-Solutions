@@ -246,7 +246,7 @@
 1329 | [Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally/) | [C++](./C++/sort-the-matrix-diagonally.cpp) [Python](./Python/sort-the-matrix-diagonally.py) | _O(m * n * log(min(m, n))_ | _O(m * n)_      | Medium         || Sort
 1331 | [Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/) | [C++](./C++/rank-transform-of-an-array.cpp) [Python](./Python/rank-transform-of-an-array.py) | _O(nlogn)_ | _O(n)_      | Easy         || 
 1338 | [Filter Restaurants by Vegan-Friendly, Price and Distance](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/) | [C++](./C++/filter-restaurants-by-vegan-friendly-price-and-distance.cpp) [Python](./Python/filter-restaurants-by-vegan-friendly-price-and-distance.py) | _O(rlogr)_ | _O(r)_      | Medium         || Sort
-1341 | [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) | [C++](./C++/rthe-k-weakest-rows-in-a-matrix.cpp) [Python](./Python/the-k-weakest-rows-in-a-matrix.py) | _O(m * n + klogk)_ | _O(m)_      | Easy         || Quick Select
+1341 | [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) | [C++](./C++/the-k-weakest-rows-in-a-matrix.cpp) [Python](./Python/the-k-weakest-rows-in-a-matrix.py) | _O(m * n)_ | _O(k)_      | Easy         || Quick Select
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
