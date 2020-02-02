@@ -182,7 +182,7 @@ public:
         deque<int> decreasing_deq;
         iota(left.begin(), left.end(), 0);
         for (int i = 0; i < arr.size(); ++i) {
-            if (!decreasing_deq.empty() && i - decreasing_deq.front() > d) {
+            if (!decreasing_deq.empty() && i - decreasing_deq.front() == d + 1) {
                 decreasing_deq.pop_front();
             }
             while (!decreasing_deq.empty() && arr[decreasing_deq.back()] < arr[i]) {
@@ -195,7 +195,7 @@ public:
         decreasing_deq.clear();
         iota(right.begin(), right.end(), 0);
         for (int i = arr.size() - 1; i >= 0; --i) {
-            if (!decreasing_deq.empty() && decreasing_deq.front() - i > d) {
+            if (!decreasing_deq.empty() && decreasing_deq.front() - i == d + 1) {
                 decreasing_deq.pop_front();
             }
             while (!decreasing_deq.empty() && arr[decreasing_deq.back()] < arr[i]) {
