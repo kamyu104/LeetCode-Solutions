@@ -121,7 +121,7 @@ class Solution2(object):
         dp = [1]*len(arr)
         for a, i in sorted([a, i] for i, a in enumerate(arr)):
             for di in [-1, 1]:
-                for j in xrange(i+di, i+di + d*di, di):
+                for j in xrange(i+di, i+di*(d+1), di):
                     if not (0 <= j < len(arr) and arr[i] > arr[j]):
                         break
                     dp[i] = max(dp[i], dp[j]+1)
@@ -145,7 +145,7 @@ class Solution3(object):
                 return lookup[i]
             lookup[i] = 1
             for di in [-1, 1]:
-                for j in xrange(i+di, i+di + d*di, di):
+                for j in xrange(i+di, i+di*(d+1), di):
                     if not (0 <= j < len(arr) and arr[i] > arr[j]):
                         break
                     lookup[i] = max(lookup[i], dp(arr, j, lookup)+1)
