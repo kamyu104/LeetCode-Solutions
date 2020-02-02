@@ -177,7 +177,7 @@ public:
     }
 };
 
-// Time:  O(n) ~ O(n * d)
+// Time:  O(n) ~ O(n * d), if all elements of arr are unique, it could be O(n)
 // Space: O(n)
 // sliding window + top-down dp
 class Solution3 {
