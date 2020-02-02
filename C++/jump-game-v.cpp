@@ -177,7 +177,7 @@ public:
     }
 };
 
-// Time:  O(n * d)
+// Time:  O(n) ~ O(n * d)
 // Space: O(n)
 // sliding window + top-down dp
 class Solution3 {
