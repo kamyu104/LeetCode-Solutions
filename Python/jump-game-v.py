@@ -102,9 +102,8 @@ class Solution(object):
                     right[i] = decreasing_stk[-1]
                 decreasing_stk.pop()
             decreasing_stk.append(i)
+
         segment_tree = SegmentTree(len(arr))
-        dp = [0]*len(arr)
         for _, i in sorted([x, i] for i, x in enumerate(arr)):
-            dp[i] = segment_tree.query(left[i], right[i]) + 1
-            segment_tree.update(i, i, dp[i])
+            segment_tree.update(i, i, segment_tree.query(left[i], right[i]) + 1)
         return segment_tree.query(0, len(arr)-1)
