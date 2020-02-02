@@ -15,16 +15,14 @@ class Solution(object):
                     continue
                 lookup.add(i)
                 result.append(i)
-                k -= 1
-                if not k:
+                if len(result) == k:
                     return result
         for i in xrange(len(mat)):
             if i in lookup:
                 continue
             lookup.add(i)
             result.append(i)
-            k -= 1
-            if not k:
+            if len(result) == k:
                 break
         return result
 
@@ -47,15 +45,13 @@ class Solution2(object):
                 if mat[i][j] or i in lookup:
                     continue
                 lookup[i] = True
-                k -= 1
-                if not k:
+                if len(lookup) == k:
                     return lookup.keys()
         for i in xrange(len(mat)):
             if i in lookup:
                 continue
             lookup[i] = True
-            k -= 1
-            if not k:
+            if len(lookup) == k:
                 break
         return lookup.keys()
 
