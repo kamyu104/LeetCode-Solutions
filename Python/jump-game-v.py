@@ -102,8 +102,53 @@ class Solution(object):
                     right[i] = decreasing_stk[-1]
                 decreasing_stk.pop()
             decreasing_stk.append(i)
-
         segment_tree = SegmentTree(len(arr))
         for _, i in sorted([x, i] for i, x in enumerate(arr)):
             segment_tree.update(i, i, segment_tree.query(left[i], right[i]) + 1)
         return segment_tree.query(0, len(arr)-1)
+
+
+# Time:  O(max(nlogn, n * d))
+# Space: O(n) 
+class Solution2(object):
+    def maxJumps(self, arr, d):
+        """
+        :type arr: List[int]
+        :type d: int
+        :rtype: int
+        """
+        dp = [1]*len(arr)
+        for a, i in sorted([a, i] for i, a in enumerate(arr)):
+            for di in [-1, 1]:
+                for j in xrange(i+di, i+di + d*di, di):
+                    if not (0 <= j < len(arr) and arr[i] > arr[j]):
+                        break
+                    dp[i] = max(dp[i], dp[j]+1)
+        return max(dp)
+
+
+# Time:  O(n * d)
+# Space: O(n) 
+import itertools
+
+
+class Solution3(object):
+    def maxJumps(self, arr, d):
+        """
+        :type arr: List[int]
+        :type d: int
+        :rtype: int
+        """
+        def dp(arr, i, lookup):
+            if lookup[i]:
+                return lookup[i]
+            lookup[i] = 1
+            for di in [-1, 1]:
+                for j in xrange(i+di, i+di + d*di, di):
+                    if not (0 <= j < len(arr) and arr[i] > arr[j]):
+                        break
+                    lookup[i] = max(lookup[i], dp(arr, j, lookup)+1)
+            return lookup[i]
+
+        lookup = [0]*len(arr)
+        return max(itertools.imap(lambda x: dp(arr, x, lookup), xrange(len(arr))))
