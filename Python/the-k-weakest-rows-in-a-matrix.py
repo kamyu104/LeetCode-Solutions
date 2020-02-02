@@ -1,10 +1,40 @@
 # Time:  O(m * n)
 # Space: O(k)
 
+class Solution(object):
+    def kWeakestRows(self, mat, k):
+        """
+        :type mat: List[List[int]]
+        :type k: int
+        :rtype: List[int]
+        """
+        result, lookup = [], set()
+        for j in xrange(len(mat[0])):
+            for i in xrange(len(mat)):
+                if mat[i][j] or i in lookup:
+                    continue
+                lookup.add(i)
+                result.append(i)
+                k -= 1
+                if not k:
+                    return result
+        for i in xrange(len(mat)):
+            if i in lookup:
+                continue
+            lookup.add(i)
+            result.append(i)
+            k -= 1
+            if not k:
+                break
+        return result
+
+
+# Time:  O(m * n)
+# Space: O(k)
 import collections
 
 
-class Solution(object):
+class Solution2(object):
     def kWeakestRows(self, mat, k):
         """
         :type mat: List[List[int]]
@@ -35,7 +65,7 @@ class Solution(object):
 import random
 
 
-class Solution2(object):
+class Solution3(object):
     def kWeakestRows(self, mat, k):
         """
         :type mat: List[List[int]]
