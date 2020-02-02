@@ -52,6 +52,7 @@ private:
             return (*lookup)[i];
         }
         (*lookup)[i] = 1;
+        // each dp[j] will be visited at most twice 
         for (const auto& j : left[i]) {
             (*lookup)[i] = max((*lookup)[i], dp(arr, d, j, left, right, lookup) + 1);
         }
@@ -105,6 +106,7 @@ public:
         vector<int> dp(arr.size(), 1);
         for (const auto& [_, i] : sorted_arr) {
             dp[i] = 1;
+            // each dp[j] will be visited at most twice 
             for (const auto& j : left[i]) {
                 dp[i] = max(dp[i], dp[j] + 1);
             }
