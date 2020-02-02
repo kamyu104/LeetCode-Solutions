@@ -22,10 +22,10 @@ public:
             }
             lookup[i] = true;
             if (!--k) {
-                return lookup.keys();
+                break;
             }
         }
-        return {};
+        return lookup.keys();
     }
 
 private:
