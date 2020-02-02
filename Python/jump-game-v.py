@@ -169,20 +169,20 @@ class Solution3(object):
                 lookup[i] = max(lookup[i], dp(arr, d, j, left, right, lookup)+1)
             return lookup[i]
 
-        left, decreasing_deq = range(len(arr)), collections.deque()
+        left, decreasing_dq = range(len(arr)), collections.deque()
         for i in xrange(len(arr)):
-            if decreasing_deq and i - decreasing_deq[0] == d+1:
-                decreasing_deq.popleft()
-            while decreasing_deq and arr[decreasing_deq[-1]] < arr[i]:
-                left[i] = decreasing_deq.pop()
-            decreasing_deq.append(i)
-        right, decreasing_deq = range(len(arr)), collections.deque()
+            if decreasing_dq and i - decreasing_dq[0] == d+1:
+                decreasing_dq.popleft()
+            while decreasing_dq and arr[decreasing_dq[-1]] < arr[i]:
+                left[i] = decreasing_dq.pop()
+            decreasing_dq.append(i)
+        right, decreasing_dq = range(len(arr)), collections.deque()
         for i in reversed(xrange(len(arr))):
-            if decreasing_deq and decreasing_deq[0] - i == d+1:
-                decreasing_deq.popleft()
-            while decreasing_deq and arr[decreasing_deq[-1]] < arr[i]:
-                right[i] = decreasing_deq.pop()
-            decreasing_deq.append(i)
+            if decreasing_dq and decreasing_dq[0] - i == d+1:
+                decreasing_dq.popleft()
+            while decreasing_dq and arr[decreasing_dq[-1]] < arr[i]:
+                right[i] = decreasing_dq.pop()
+            decreasing_dq.append(i)
 
         lookup = [0]*len(arr)
         return max(itertools.imap(lambda x: dp(arr, d, x, left, right, lookup), xrange(len(arr))))
