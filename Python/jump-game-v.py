@@ -81,6 +81,7 @@ class SegmentTree(object):
         return ",".join(map(str, showList))
 
 
+# mono stack + bottom-up dp + segment tree
 class Solution(object):
     def maxJumps(self, arr, d):
         """
@@ -110,7 +111,8 @@ class Solution(object):
 
 
 # Time:  O(max(nlogn, n * d))
-# Space: O(n) 
+# Space: O(n)
+# mono stack + bottom-up dp
 class Solution2(object):
     def maxJumps(self, arr, d):
         """
@@ -145,9 +147,11 @@ class Solution2(object):
 
 # Time:  O(n * d)
 # Space: O(n) 
+import collections
 import itertools
 
 
+# sliding window + top-down dp
 class Solution3(object):
     def maxJumps(self, arr, d):
         """
@@ -165,20 +169,20 @@ class Solution3(object):
                 lookup[i] = max(lookup[i], dp(arr, d, j, left, right, lookup)+1)
             return lookup[i]
 
-        left, decreasing_stk = range(len(arr)), []
+        left, decreasing_deq = range(len(arr)), collections.deque()
         for i in xrange(len(arr)):
-            while decreasing_stk and arr[decreasing_stk[-1]] < arr[i]:
-                if i - decreasing_stk[-1] <= d:
-                    left[i] = decreasing_stk[-1]
-                decreasing_stk.pop()
-            decreasing_stk.append(i)
-        right, decreasing_stk = range(len(arr)), []
+            if decreasing_deq and i - decreasing_deq[0] > d:
+                decreasing_deq.popleft()
+            while decreasing_deq and arr[decreasing_deq[-1]] < arr[i]:
+                left[i] = decreasing_deq.pop()
+            decreasing_deq.append(i)
+        right, decreasing_deq = range(len(arr)), collections.deque()
         for i in reversed(xrange(len(arr))):
-            while decreasing_stk and arr[decreasing_stk[-1]] < arr[i]:
-                if decreasing_stk[-1] - i <= d:
-                    right[i] = decreasing_stk[-1]
-                decreasing_stk.pop()
-            decreasing_stk.append(i)
+            if decreasing_deq and decreasing_deq[0] - i > d:
+                decreasing_deq.popleft()
+            while decreasing_deq and arr[decreasing_deq[-1]] < arr[i]:
+                right[i] = decreasing_deq.pop()
+            decreasing_deq.append(i)
 
         lookup = [0]*len(arr)
         return max(itertools.imap(lambda x: dp(arr, d, x, left, right, lookup), xrange(len(arr))))
