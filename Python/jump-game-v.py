@@ -135,10 +135,11 @@ class Solution2(object):
 
         dp = [0]*len(arr)
         for a, i in sorted([a, i] for i, a in enumerate(arr)):
-            max_dp = 0
+            dp[i] = 1
             for j in xrange(left[i], right[i]+1):
-                max_dp = max(max_dp, dp[j])
-            dp[i] = max_dp+1
+                if j == i:
+                    continue
+                dp[i] = max(dp[i], dp[j]+1)
         return max(dp)
 
 
@@ -157,12 +158,11 @@ class Solution3(object):
         def dp(arr, d, i, left, right, lookup):
             if lookup[i] > 0:
                 return lookup[i]
-            max_dp = 0
+            lookup[i] = 1
             for j in xrange(left[i], right[i]+1):
                 if j == i:
                     continue
-                max_dp = max(max_dp, dp(arr, d, j, left, right, lookup))
-            lookup[i] = max_dp+1
+                lookup[i] = max(lookup[i], dp(arr, d, j, left, right, lookup)+1)
             return lookup[i]
 
         left, decreasing_stk = range(len(arr)), []
