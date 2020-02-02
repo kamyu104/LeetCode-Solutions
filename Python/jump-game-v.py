@@ -147,7 +147,7 @@ class Solution2(object):
         return max(dp)
 
 
-# Time:  O(n * d)
+# Time:  O(n) ~ O(n * d), if all elements of arr are unique, it could be O(n)
 # Space: O(n) 
 import collections
 import itertools
