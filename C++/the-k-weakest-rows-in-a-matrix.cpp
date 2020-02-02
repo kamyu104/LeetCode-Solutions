@@ -52,10 +52,9 @@ private:
         
         vector<K> keys() const {
             vector<K> result;
-            for (const auto& [k, _] : list_) {
-                result.emplace_back(k);
+            for (auto cit = list_.crbegin(); cit != list_.crend(); ++cit) {
+                result.emplace_back(cit->first);
             }
-            reverse(result.begin(), result.end());
             return result;
         }
     
