@@ -1,10 +1,40 @@
-# Time:  O(m * n + klogk)
-# Space: O(m)
+# Time:  O(m * n)
+# Space: O(k)
 
-import random
+import collections
 
 
 class Solution(object):
+    def kWeakestRows(self, mat, k):
+        """
+        :type mat: List[List[int]]
+        :type k: int
+        :rtype: List[int]
+        """
+        lookup = collections.OrderedDict()
+        for j in xrange(len(mat[0])):
+            for i in xrange(len(mat)):
+                if mat[i][j] or i in lookup:
+                    continue
+                lookup[i] = True
+                k -= 1
+                if not k:
+                    return lookup.keys()
+        for i in xrange(len(mat)):
+            if i in lookup:
+                continue
+            lookup[i] = True
+            k -= 1
+            if not k:
+                return lookup.keys()
+
+
+# Time:  O(m * n + klogk)
+# Space: O(m)
+import random
+
+
+class Solution2(object):
     def kWeakestRows(self, mat, k):
         """
         :type mat: List[List[int]]
