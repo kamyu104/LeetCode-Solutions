@@ -1,6 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
+// mono stack + bottom-up dp + segment tree
 class Solution {
 public:
     int maxJumps(vector<int>& arr, int d) {
@@ -124,6 +125,7 @@ private:
 
 // Time:  O(max(nlogn, n * d))
 // Space: O(n)
+// mono stack + bottom-up dp
 class Solution2 {
 public:
     int maxJumps(vector<int>& arr, int d) {
@@ -172,31 +174,35 @@ public:
 
 // Time:  O(n * d)
 // Space: O(n)
+// sliding window + top-down dp
 class Solution3 {
 public:
     int maxJumps(vector<int>& arr, int d) {
-        vector<int> left(arr.size()), decreasing_stk;
+        vector<int> left(arr.size());
+        deque<int> decreasing_deq;
         iota(left.begin(), left.end(), 0);
         for (int i = 0; i < arr.size(); ++i) {
-            while (!decreasing_stk.empty() && arr[decreasing_stk.back()] < arr[i]) {
-                if (i - decreasing_stk.back() <= d) {
-                    left[i] = decreasing_stk.back();
-                }
-                decreasing_stk.pop_back();
+            if (!decreasing_deq.empty() && i - decreasing_deq.front() > d) {
+                decreasing_deq.pop_front();
             }
-            decreasing_stk.emplace_back(i);
+            while (!decreasing_deq.empty() && arr[decreasing_deq.back()] < arr[i]) {
+                left[i] = decreasing_deq.back();
+                decreasing_deq.pop_back();
+            }
+            decreasing_deq.emplace_back(i);
         }
         vector<int> right(arr.size());
-        decreasing_stk.clear();
+        decreasing_deq.clear();
         iota(right.begin(), right.end(), 0);
         for (int i = arr.size() - 1; i >= 0; --i) {
-            while (!decreasing_stk.empty() && arr[decreasing_stk.back()] < arr[i]) {
-                if (decreasing_stk.back() - i <= d) {
-                    right[i] = decreasing_stk.back();
-                }
-                decreasing_stk.pop_back();
+            if (!decreasing_deq.empty() && decreasing_deq.front() - i > d) {
+                decreasing_deq.pop_front();
             }
-            decreasing_stk.emplace_back(i);
+            while (!decreasing_deq.empty() && arr[decreasing_deq.back()] < arr[i]) {
+                right[i] = decreasing_deq.back();
+                decreasing_deq.pop_back();
+            }
+            decreasing_deq.emplace_back(i);
         }
 
         int result = 0;
