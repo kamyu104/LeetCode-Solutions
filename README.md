@@ -1212,7 +1212,7 @@
 1314 | [Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/) | [C++](./C++/matrix-block-sum.cpp) [Python](./Python/matrix-block-sum.py) | _O(m * n)_ | _O(m * n)_ | Medium | variant of [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/) | |
 1320 | [Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/) | [C++](./C++/minimum-distance-to-type-a-word-using-two-fingers.cpp) [Python](./Python/minimum-distance-to-type-a-word-using-two-fingers.py) | _O(n)_ | _O(1)_ | Hard | | |
 1340 | [Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/) | [C++](./C++/minimum-difficulty-of-a-job-schedule.cpp) [Python](./Python/minimum-difficulty-of-a-job-schedule.py) | _O(d * n^2)_ | _O(d * n)_ | Hard | | |
-1344 | [Jump Game V](https://leetcode.com/problems/jump-game-v/) | [C++](./C++/jump-game-v.cpp) [Python](./Python/jump-game-v.py) | _O(nlogn)_ | _O(n)_ | Hard | | Mono Stack, Segment Tree |
+1344 | [Jump Game V](https://leetcode.com/problems/jump-game-v/) | [C++](./C++/jump-game-v.cpp) [Python](./Python/jump-game-v.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sliding Window, Mono Stack, Segment Tree |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
