@@ -198,8 +198,9 @@ public:
             }
             decreasing_stk.emplace_back(i);
         }
-        vector<int> lookup(arr.size());
+
         int result = 0;
+        vector<int> lookup(arr.size());
         for (int i = 0; i < arr.size(); ++i) {
             result = max(result, dp(arr, d, i, left, right, &lookup));
         }
