@@ -118,13 +118,27 @@ class Solution2(object):
         :type d: int
         :rtype: int
         """
-        dp = [1]*len(arr)
+        left, decreasing_stk = range(len(arr)), []
+        for i in xrange(len(arr)):
+            while decreasing_stk and arr[decreasing_stk[-1]] < arr[i]:
+                if i - decreasing_stk[-1] <= d:
+                    left[i] = decreasing_stk[-1]
+                decreasing_stk.pop()
+            decreasing_stk.append(i)
+        right, decreasing_stk = range(len(arr)), []
+        for i in reversed(xrange(len(arr))):
+            while decreasing_stk and arr[decreasing_stk[-1]] < arr[i]:
+                if decreasing_stk[-1] - i <= d:
+                    right[i] = decreasing_stk[-1]
+                decreasing_stk.pop()
+            decreasing_stk.append(i)
+
+        dp = [0]*len(arr)
         for a, i in sorted([a, i] for i, a in enumerate(arr)):
-            for di in [-1, 1]:
-                for j in xrange(i+di, i+di*(d+1), di):
-                    if not (0 <= j < len(arr) and arr[i] > arr[j]):
-                        break
-                    dp[i] = max(dp[i], dp[j]+1)
+            max_dp = 0
+            for j in xrange(left[i], right[i]+1):
+                max_dp = max(max_dp, dp[j])
+            dp[i] = max_dp+1
         return max(dp)
 
 
@@ -140,16 +154,31 @@ class Solution3(object):
         :type d: int
         :rtype: int
         """
-        def dp(arr, d, i, lookup):
-            if lookup[i]:
+        def dp(arr, d, i, left, right, lookup):
+            if lookup[i] > 0:
                 return lookup[i]
-            lookup[i] = 1
-            for di in [-1, 1]:
-                for j in xrange(i+di, i+di*(d+1), di):
-                    if not (0 <= j < len(arr) and arr[i] > arr[j]):
-                        break
-                    lookup[i] = max(lookup[i], dp(arr, d, j, lookup)+1)
+            max_dp = 0
+            for j in xrange(left[i], right[i]+1):
+                if j == i:
+                    continue
+                max_dp = max(max_dp, dp(arr, d, j, left, right, lookup))
+            lookup[i] = max_dp+1
             return lookup[i]
 
+        left, decreasing_stk = range(len(arr)), []
+        for i in xrange(len(arr)):
+            while decreasing_stk and arr[decreasing_stk[-1]] < arr[i]:
+                if i - decreasing_stk[-1] <= d:
+                    left[i] = decreasing_stk[-1]
+                decreasing_stk.pop()
+            decreasing_stk.append(i)
+        right, decreasing_stk = range(len(arr)), []
+        for i in reversed(xrange(len(arr))):
+            while decreasing_stk and arr[decreasing_stk[-1]] < arr[i]:
+                if decreasing_stk[-1] - i <= d:
+                    right[i] = decreasing_stk[-1]
+                decreasing_stk.pop()
+            decreasing_stk.append(i)
+
         lookup = [0]*len(arr)
-        return max(itertools.imap(lambda x: dp(arr, d, x, lookup), xrange(len(arr))))
+        return max(itertools.imap(lambda x: dp(arr, d, x, left, right, lookup), xrange(len(arr))))
