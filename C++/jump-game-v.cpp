@@ -129,24 +129,29 @@ private:
 class Solution2 {
 public:
     int maxJumps(vector<int>& arr, int d) {
-        vector<int> left(arr.size()), decreasing_stk;
-        iota(left.begin(), left.end(), 0);
+        vector<vector<int>> left(arr.size());
+        vector<int>decreasing_stk;
         for (int i = 0; i < arr.size(); ++i) {
             while (!decreasing_stk.empty() && arr[decreasing_stk.back()] < arr[i]) {
                 if (i - decreasing_stk.back() <= d) {
-                    left[i] = decreasing_stk.back();
+                    if (!left[i].empty() && arr[left[i].back()] != arr[decreasing_stk.back()]) {
+                        left[i].clear();
+                    }
+                    left[i].emplace_back(decreasing_stk.back());
                 }
                 decreasing_stk.pop_back();
             }
             decreasing_stk.emplace_back(i);
         }
-        vector<int> right(arr.size());
+        vector<vector<int>> right(arr.size());
         decreasing_stk.clear();
-        iota(right.begin(), right.end(), 0);
         for (int i = arr.size() - 1; i >= 0; --i) {
             while (!decreasing_stk.empty() && arr[decreasing_stk.back()] < arr[i]) {
                 if (decreasing_stk.back() - i <= d) {
-                    right[i] = decreasing_stk.back();
+                    if (!right[i].empty() && arr[right[i].back()] != arr[decreasing_stk.back()]) {
+                        right[i].clear();
+                    }
+                    right[i].emplace_back(decreasing_stk.back());
                 }
                 decreasing_stk.pop_back();
             }
@@ -161,10 +166,10 @@ public:
         vector<int> dp(arr.size(), 1);
         for (const auto& [_, i] : sorted_arr) {
             dp[i] = 1;
-            for (int j = left[i]; j <= right[i]; ++j) {
-                if (j == i) {
-                    continue;
-                }
+            for (const auto& j : left[i]) {
+                dp[i] = max(dp[i], dp[j] + 1);
+            }
+            for (const auto& j : right[i]) {
                 dp[i] = max(dp[i], dp[j] + 1);
             }
         }
@@ -178,28 +183,32 @@ public:
 class Solution3 {
 public:
     int maxJumps(vector<int>& arr, int d) {
-        vector<int> left(arr.size());
+        vector<vector<int>> left(arr.size());
         deque<int> decreasing_dq;
-        iota(left.begin(), left.end(), 0);
         for (int i = 0; i < arr.size(); ++i) {
             if (!decreasing_dq.empty() && i - decreasing_dq.front() == d + 1) {
                 decreasing_dq.pop_front();
             }
             while (!decreasing_dq.empty() && arr[decreasing_dq.back()] < arr[i]) {
-                left[i] = decreasing_dq.back();
+                if (!left[i].empty() && arr[left[i].back()] != arr[decreasing_dq.back()]) {
+                    left[i].clear();
+                }
+                left[i].emplace_back(decreasing_dq.back());
                 decreasing_dq.pop_back();
             }
             decreasing_dq.emplace_back(i);
         }
-        vector<int> right(arr.size());
+        vector<vector<int>> right(arr.size());
         decreasing_dq.clear();
-        iota(right.begin(), right.end(), 0);
         for (int i = arr.size() - 1; i >= 0; --i) {
             if (!decreasing_dq.empty() && decreasing_dq.front() - i == d + 1) {
                 decreasing_dq.pop_front();
             }
             while (!decreasing_dq.empty() && arr[decreasing_dq.back()] < arr[i]) {
-                right[i] = decreasing_dq.back();
+                if (!right[i].empty() && arr[right[i].back()] != arr[decreasing_dq.back()]) {
+                    right[i].clear();
+                }
+                right[i].emplace_back(decreasing_dq.back());
                 decreasing_dq.pop_back();
             }
             decreasing_dq.emplace_back(i);
@@ -215,16 +224,16 @@ public:
 
 private:
     int dp(const vector<int>& arr, int d, int i,
-           const vector<int>& left, const vector<int>& right,
+           const vector<vector<int>>& left, const vector<vector<int>>& right,
            vector<int> *lookup) {
         if ((*lookup)[i]) {
             return (*lookup)[i];
         }
         (*lookup)[i] = 1;
-        for (int j = left[i]; j <= right[i]; ++j) {
-            if (j == i) {
-                continue;
-            }
+        for (const auto& j : left[i]) {
+            (*lookup)[i] = max((*lookup)[i], dp(arr, d, j, left, right, lookup) + 1);
+        }
+        for (const auto& j : right[i]) {
             (*lookup)[i] = max((*lookup)[i], dp(arr, d, j, left, right, lookup) + 1);
         }
         return (*lookup)[i];
