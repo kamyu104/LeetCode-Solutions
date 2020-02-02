@@ -26,7 +26,8 @@ class Solution(object):
             lookup[i] = True
             k -= 1
             if not k:
-                return lookup.keys()
+                break
+        return lookup.keys()
 
 
 # Time:  O(m * n + klogk)
