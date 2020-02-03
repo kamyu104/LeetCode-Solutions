@@ -14,12 +14,15 @@ public:
         }
         int result = 0, total = 0;
         for (int c = arr.size() - 1; c >= 0; -- c) {
-            for (int i = 0; i < counting_sort[c]; ++i) {
-                ++result;
-                total += c + 1;
-                if (total * 2 >= arr.size()) {
-                    return result;
-                }
+            if (!counting_sort[c]) {
+                continue;
+            }
+            int count = min(counting_sort[c],
+                            ((int(arr.size()) + 1) / 2 - total - 1) / (c + 1) + 1);
+            result += count;
+            total += count *(c + 1);
+            if (total >= (arr.size() + 1) / 2) {
+                break;
             }
         }
         return result;
