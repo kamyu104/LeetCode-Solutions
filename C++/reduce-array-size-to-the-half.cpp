@@ -13,7 +13,7 @@ public:
             ++counting_sort[c - 1];
         }
         int result = 0, total = 0;
-        for (int c = arr.size() - 1; c >= 0; -- c) {
+        for (int c = arr.size() - 1; c >= 0; --c) {
             if (!counting_sort[c]) {
                 continue;
             }
