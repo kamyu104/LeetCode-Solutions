@@ -6,13 +6,14 @@ class Solution {
 public:
     void sortColors(vector<int>& nums) {
         const int target = 1;
-        for (int i = 0, j = 0, n = nums.size() - 1; j <= n;) {
-            if (nums[j] < target) {
-                swap(nums[i++], nums[j++]);
-            } else if (nums[j] > target) {
-                swap(nums[j], nums[n--]);
+        for (int i = 0, left = 0, right = nums.size() - 1; i <= right;) {
+            if (nums[i] > target) {
+                swap(nums[i], nums[right--]);
             } else {
-                ++j;
+                if (nums[i] < target) {
+                    swap(nums[left++], nums[i]);
+                } 
+                ++i;
             }
         }
     }
