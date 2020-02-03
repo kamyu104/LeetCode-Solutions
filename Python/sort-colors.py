@@ -8,18 +8,15 @@ class Solution(object):
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         def triPartition(nums, target):
-            i, j, n = 0, 0, len(nums) - 1
-
-            while j <= n:
-                if nums[j] < target:
-                    nums[i], nums[j] = nums[j], nums[i]
-                    i += 1
-                    j += 1
-                elif nums[j] > target:
-                    nums[j], nums[n] = nums[n], nums[j]
-                    n -= 1
+            i, left, right = 0, 0, len(nums)-1
+            while i <= right:
+                if nums[i] > target:
+                    nums[i], nums[right] = nums[right], nums[i]
+                    right -= 1
                 else:
-                    j += 1
+                    if nums[i] < target:
+                        nums[left], nums[i] = nums[i], nums[left]
+                        left += 1
+                    i += 1
 
         triPartition(nums, 1)
-
