@@ -9,7 +9,7 @@ FROM   (SELECT @max_count := CAST(@max_count - 1 AS SIGNED) AS transactions_coun
                         FROM   transactions 
                         GROUP  BY user_id, 
                                   transaction_date 
-                        ORDER  BY NULL) AS max) AS c
+                        ORDER  BY NULL) AS tmp) AS c
                CROSS JOIN (SELECT user_id 
                            FROM   visits 
                            UNION ALL 
