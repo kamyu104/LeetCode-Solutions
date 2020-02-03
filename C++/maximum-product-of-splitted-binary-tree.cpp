@@ -13,7 +13,7 @@
 class Solution {
 public:
     int maxProduct(TreeNode* root) {
-        static int MOD = 1e9 + 7;
+        static const int MOD = 1e9 + 7;
         int64_t result = 0;
         dfs(root, dfs(root, 0, &result), &result);
         return result % MOD;
