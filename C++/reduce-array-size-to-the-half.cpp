@@ -20,7 +20,7 @@ public:
             int count = min(counting_sort[c],
                             ((int(arr.size()) + 1) / 2 - total - 1) / (c + 1) + 1);
             result += count;
-            total += count *(c + 1);
+            total += count * (c + 1);
             if (total >= (arr.size() + 1) / 2) {
                 break;
             }
