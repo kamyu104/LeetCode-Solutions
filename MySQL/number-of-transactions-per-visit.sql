@@ -16,7 +16,7 @@ FROM   (SELECT @count := CAST(@count + 1 AS SIGNED) AS transactions_count
                            SELECT user_id 
                            FROM   transactions) AS m_n
         WHERE  @count < @max_count
-        ) AS seq
+       ) AS seq
        LEFT JOIN (SELECT transactions_count, 
                          Count(1) AS visits_Count 
                   FROM   (SELECT Count(transaction_date) AS transactions_count 
