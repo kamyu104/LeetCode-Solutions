@@ -1423,7 +1423,7 @@
 1321| [Restaurant Growth](https://leetcode.com/problems/restaurant-growth/) | [MySQL](./MySQL/restaurant-growth.sql) | _O(n^2)_ | _O(n)_       | Medium           |🔒| |
 1322| [Ads Performance](https://leetcode.com/problems/ads-performance/) | [MySQL](./MySQL/ads-performance.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
 1327| [List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/) | [MySQL](./MySQL/list-the-products-ordered-in-a-period.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
-1336| [Number of Transactions per Visit](https://leetcode.com/problems/number-of-transactions-per-visit/) | [MySQL](./MySQL/number-of-transactions-per-visit.sql) | _O(m + n + rlogr)_ | _O(m + n)_       | Medium           |🔒| |
+1336| [Number of Transactions per Visit](https://leetcode.com/problems/number-of-transactions-per-visit/) | [MySQL](./MySQL/number-of-transactions-per-visit.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
