@@ -8,7 +8,7 @@ class Solution(object):
     def distinctSubarraysWithAtMostKOdds(self, A, K):
         def countDistinct(A, left, right, trie):  # Time: O(n), Space: O(t)
             result = 0
-            for i in xrange(left, right):
+            for i in reversed(xrange(left, right+1)):
                 if A[i] not in trie:
                     result += 1
                 trie = trie[A[i]]
@@ -20,11 +20,9 @@ class Solution(object):
         for right in xrange(len(A)):
             count += A[right]%2
             while count > K:
-                result += countDistinct(A, left, right, trie)
                 count -= A[left]%2
                 left += 1
-        for i in xrange(left, len(A)):
-            result += countDistinct(A, i, len(A), trie)
+            result += countDistinct(A, left, right, trie)
         return result
 
 
