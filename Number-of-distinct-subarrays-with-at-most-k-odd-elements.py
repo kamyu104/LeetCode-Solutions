@@ -25,11 +25,3 @@ class Solution(object):
             result += countDistinct(A, left, right, trie)
         return result
 
-
-sol = Solution()
-cases = [([3, 2, 3, 4], 1),
-         ([1, 3, 9, 5], 2),
-         ([3, 2, 3, 2], 1),
-         ([2, 2, 5, 6, 9, 2, 11, 9, 2, 11, 12], 1)]
-for t in cases:
-    print sol.distinctSubarraysWithAtMostKOdds(*t)
