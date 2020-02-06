@@ -5,7 +5,7 @@ import collections
 
 
 class Solution(object):
-    def distinctSubarraysWithAtMostKOdds(self, A, K):
+    def distinctSubarraysWithAtMostKOddIntegers(self, A, K):
         def countDistinct(A, left, right, trie):  # Time: O(n), Space: O(t)
             result = 0
             for i in reversed(xrange(left, right+1)):
