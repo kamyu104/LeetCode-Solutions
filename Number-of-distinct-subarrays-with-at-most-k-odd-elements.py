@@ -5,7 +5,7 @@ import collections
 
 
 class Solution(object):
-    def distinctSubarraysWithKOdds(self, A, K):
+    def distinctSubarraysWithAtMostKOdds(self, A, K):
         def countDistinct(A, left, right, trie):  # Time: O(n), Space: O(t)
             result = 0
             for i in xrange(left, right):
@@ -34,4 +34,4 @@ cases = [([3, 2, 3, 4], 1),
          ([3, 2, 3, 2], 1),
          ([2, 2, 5, 6, 9, 2, 11, 9, 2, 11, 12], 1)]
 for t in cases:
-    print sol.distinctSubarraysWithKOdds(*t)
+    print sol.distinctSubarraysWithAtMostKOdds(*t)
