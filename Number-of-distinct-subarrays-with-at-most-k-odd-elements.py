@@ -24,4 +24,3 @@ class Solution(object):
                 left += 1
             result += countDistinct(A, left, right, trie)
         return result
-
