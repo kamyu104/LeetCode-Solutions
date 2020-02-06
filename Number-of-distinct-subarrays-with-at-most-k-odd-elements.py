@@ -14,21 +14,19 @@ class Solution(object):
                 trie = trie[A[i]]
             return result
         
-        def atMostK(A, K):  # Time: O(n^2), Space: O(t)
-            _trie = lambda: collections.defaultdict(_trie)
-            trie = _trie()
-            result, left, count = 0, 0, 0
-            for right in xrange(len(A)):
-                count += A[right]%2
-                while count > K:
-                    result += countDistinct(A, left, right, trie)
-                    count -= A[left]%2
-                    left += 1
-            for i in xrange(left, len(A)):
-                result += countDistinct(A, i, len(A), trie)
-            return result
-        
-        return atMostK(A, K)
+        _trie = lambda: collections.defaultdict(_trie)
+        trie = _trie()
+        result, left, count = 0, 0, 0
+        for right in xrange(len(A)):
+            count += A[right]%2
+            while count > K:
+                result += countDistinct(A, left, right, trie)
+                count -= A[left]%2
+                left += 1
+        for i in xrange(left, len(A)):
+            result += countDistinct(A, i, len(A), trie)
+        return result
+
 
 sol = Solution()
 cases = [([3, 2, 3, 4], 1),
