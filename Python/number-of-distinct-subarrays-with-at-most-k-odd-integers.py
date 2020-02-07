@@ -4,7 +4,7 @@
 import collections
 
 
-# sliding window solution
+# sliding window + trie solution
 class Solution(object):
     def distinctSubarraysWithAtMostKOddIntegers(self, A, K):
         def countDistinct(A, left, right, trie):  # Time: O(n), Space: O(t)
@@ -29,7 +29,7 @@ class Solution(object):
 
 # Time:  O(n^2)
 # Space: O(t), t is the size of trie
-# suffix solution
+# suffix tree solution
 class Solution2(object):
     def distinctSubarraysWithAtMostKOddIntegers(self, A, K):
         def countDistinct(A, left, right, trie):  # Time: O(n), Space: O(t)
