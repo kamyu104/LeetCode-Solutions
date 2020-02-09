@@ -135,8 +135,8 @@ class Solution2(object):
         def Hungarian(seats):
             result = 0
             matching = [[-1]*len(seats[0]) for _ in xrange(len(seats))]
-            for j in xrange(0, len(seats[0]), 2):
-                for i in xrange(len(seats)):
+            for i in xrange(len(seats)):
+                for j in xrange(0, len(seats[0]), 2):
                     if seats[i][j] != '.':
                         continue
                     lookup = [[False]*len(seats[0]) for _ in xrange(len(seats))]
