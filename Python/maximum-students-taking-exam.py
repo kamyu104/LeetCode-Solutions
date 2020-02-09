@@ -92,27 +92,26 @@ class Solution(object):
         :type seats: List[List[str]]
         :rtype: int
         """
-        directions = [(-1, -1), (0, -1), (-1, 1), (0, 1)]
+        directions = [(-1, -1), (0, -1), (1, -1), (-1, 1), (0, 1), (1, 1)]
         E, count = collections.defaultdict(list), 0
         for i in xrange(len(seats)):
             for j in xrange(len(seats[0])):
                 if seats[i][j] != '.':
                     continue
                 count += 1
+                if j%2:
+                    continue
                 for dx, dy in directions:
                     ni, nj = i+dx, j+dy
                     if 0 <= ni < len(seats) and \
                        0 <= nj < len(seats[0]) and \
                        seats[ni][nj] == '.':
-                        if j%2 == 0:
-                            E[i*len(seats[0])+j].append(ni*len(seats[0])+nj)
-                        else:
-                            E[ni*len(seats[0])+nj].append(i*len(seats[0])+j)
+                        E[i*len(seats[0])+j].append(ni*len(seats[0])+nj)
         return count-len(bipartiteMatch(E)[0])
 
 
 # Time:  O(|V| * |E|) = O(m^2 * n^2)
-# Space: O(|V|) = O(m * n)
+# Space: O(|V| + |E|) = O(m * n)
 # Hungarian bipartite matching
 class Solution2(object):
     def maxStudents(self, seats):
