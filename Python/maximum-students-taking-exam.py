@@ -85,6 +85,7 @@ def bipartiteMatch(graph):
         for v in unmatched: recurse(v)
 
 
+# Hopcroft-Karp bipartite matching
 class Solution(object):
     def maxStudents(self, seats):
         """
@@ -109,9 +110,9 @@ class Solution(object):
         return count-len(bipartiteMatch(E)[0])
 
 
-# Time:  O(m^2 * n^2)
-# Space: O(m * n)
-# 
+# Time:  O(|V| * |E|) = O(m^2 * n^2)
+# Space: O(|V|) = O(m * n)
+# Hungarian bipartite matching
 class Solution2(object):
     def maxStudents(self, seats):
         """
@@ -121,13 +122,16 @@ class Solution2(object):
         directions = [(-1, -1), (0, -1), (1, -1), (-1, 1), (0, 1), (1, 1)]
         def dfs(node, lookup, matching):
             i, j = node
+            if lookup[i][j]:
+                return False
+            lookup[i][j] = True
             for dx, dy in directions:
                 ni, nj = i+dx, j+dy
                 if 0 <= ni < len(seats) and 0 <= nj < len(seats[0]) and \
-                    seats[ni][nj] == '.' and not lookup[ni][nj]:
-                    lookup[ni][nj] = True
+                    seats[ni][nj] == '.':
                     if matching[ni][nj] == -1 or dfs(matching[ni][nj], lookup, matching):
-                        matching[ni][nj] = (i,j)
+                        matching[ni][nj] = (i, j)
+                        matching[i][j] = (ni, nj)
                         return True
             return False
         
