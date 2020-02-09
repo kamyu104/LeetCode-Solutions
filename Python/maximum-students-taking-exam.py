@@ -1,7 +1,7 @@
 # Time:  O(m * n * sqrt(m * n))
 # Space: O(m * n)
 
-# same problem but much smaller dataset from google codejam 2008 round 3 problem C
+# solution is the same from google codejam 2008 round 3 problem C
 # https://github.com/kamyu104/GoogleCodeJam-2008/blob/master/Round%203/no_cheating.py
 
 import collections
