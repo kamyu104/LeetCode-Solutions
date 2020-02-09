@@ -9,9 +9,6 @@ class Solution(object):
         """
         result = 0
         while num:
-            if num%2:
-                num -= 1
-            else:
-                num //= 2
-            result += 1
-        return result
+            result += 2 if num%2 else 1
+            num //= 2
+        return result-1
