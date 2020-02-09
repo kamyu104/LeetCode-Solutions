@@ -120,15 +120,15 @@ class Solution2(object):
         :rtype: int
         """
         directions = [(-1, -1), (0, -1), (1, -1), (-1, 1), (0, 1), (1, 1)]
-        def dfs(node, lookup, matching):
-            i, j = node
+        def dfs(seats, e, lookup, matching):
+            i, j = e
             for dx, dy in directions:
                 ni, nj = i+dx, j+dy
                 if 0 <= ni < len(seats) and 0 <= nj < len(seats[0]) and \
                     seats[ni][nj] == '.' and not lookup[ni][nj]:
                     lookup[ni][nj] = True
-                    if matching[ni][nj] == -1 or dfs(matching[ni][nj], lookup, matching):
-                        matching[ni][nj] = (i,j)
+                    if matching[ni][nj] == -1 or dfs(seats, matching[ni][nj], lookup, matching):
+                        matching[ni][nj] = e
                         return True
             return False
         
@@ -140,7 +140,7 @@ class Solution2(object):
                     if seats[i][j] != '.':
                         continue
                     lookup = [[False]*len(seats[0]) for _ in xrange(len(seats))]
-                    if dfs((i, j), lookup, matching):
+                    if dfs(seats, (i, j), lookup, matching):
                         result += 1
             return result
           
