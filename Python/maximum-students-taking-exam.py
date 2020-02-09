@@ -149,7 +149,7 @@ class Solution2(object):
             for j in xrange(len(seats[0])):
                 if seats[i][j] == '.':
                     count += 1
-        return count - Hungarian(seats)
+        return count-Hungarian(seats)
 
 
 # Time:  O(m * 2^n * 2^n) = O(m * 4^n)
