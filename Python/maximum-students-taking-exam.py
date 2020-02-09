@@ -91,20 +91,61 @@ class Solution(object):
         :type seats: List[List[str]]
         :rtype: int
         """
-        DIRECTIONS = [(-1, -1), (0, -1), (-1, 1), (0, 1)]
-        M, N = len(seats), len(seats[0])
+        directions = [(-1, -1), (0, -1), (-1, 1), (0, 1)]
         E, count = collections.defaultdict(list), 0
-        for i in xrange(M):
-            for j in xrange(N):
+        for i in xrange(len(seats)):
+            for j in xrange(len(seats[0])):
                 if seats[i][j] != '.':
                     continue
                 count += 1
-                for dx, dy in DIRECTIONS:
+                for dx, dy in directions:
                     ni, nj = i+dx, j+dy
-                    if 0 <= ni < M and 0 <= nj < N and \
+                    if 0 <= ni < len(seats) and 0 <= nj < len(seats[0]) and \
                         seats[ni][nj] == '.':
                         if j%2 == 0:
-                            E[i*N+j].append(ni*N+nj)
+                            E[i*len(seats[0])+j].append(ni*len(seats[0])+nj)
                         else:
-                            E[ni*N+nj].append(i*N+j)
+                            E[ni*len(seats[0])+nj].append(i*len(seats[0])+j)
         return count-len(bipartiteMatch(E)[0])
+
+
+# Time:  O(m^2 * n^2)
+# Space: O(m * n)
+# 
+class Solution2(object):
+    def maxStudents(self, seats):
+        """
+        :type seats: List[List[str]]
+        :rtype: int
+        """
+        directions = [(-1, -1), (0, -1), (1, -1), (-1, 1), (0, 1), (1, 1)]
+        def dfs(node, lookup, matching):
+            i, j = node
+            for dx, dy in directions:
+                ni, nj = i+dx, j+dy
+                if 0 <= ni < len(seats) and 0 <= nj < len(seats[0]) and \
+                    seats[ni][nj] == '.' and not lookup[ni][nj]:
+                    lookup[ni][nj] = True
+                    if matching[ni][nj] == -1 or dfs(matching[ni][nj], lookup, matching):
+                        matching[ni][nj] = (i,j)
+                        return True
+            return False
+        
+        def Hungarian(seats):
+            result = 0
+            matching = [[-1]*len(seats[0]) for _ in xrange(len(seats))]
+            for j in xrange(0, len(seats[0]), 2):
+                for i in xrange(len(seats)):
+                    if seats[i][j] != '.':
+                        continue
+                    lookup = [[False]*len(seats[0]) for _ in xrange(len(seats))]
+                    if dfs((i, j), lookup, matching):
+                        result += 1
+            return result
+          
+        count = 0
+        for i in xrange(len(seats)):
+            for j in xrange(len(seats[0])):
+                if seats[i][j] == '.':
+                    count += 1
+        return count - Hungarian(seats)
