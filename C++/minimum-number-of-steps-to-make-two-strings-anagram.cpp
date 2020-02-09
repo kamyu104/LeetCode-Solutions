@@ -17,9 +17,7 @@ private:
     vector<int> counter(const string& s) const {
         vector<int> count(26);
         for (const auto& c : s) {
-            if (isalpha(c)) {
-                ++count[tolower(c) - 'a'];
-            }
+            ++count[c - 'a'];
         }
         return count;
     }
