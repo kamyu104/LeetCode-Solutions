@@ -123,17 +123,13 @@ class Solution2(object):
         directions = [(-1, -1), (0, -1), (1, -1), (-1, 1), (0, 1), (1, 1)]
         def dfs(node, lookup, matching):
             i, j = node
-            if lookup[i][j]:
-                return False
-            lookup[i][j] = True
             for dx, dy in directions:
                 ni, nj = i+dx, j+dy
-                if 0 <= ni < len(seats) and \
-                   0 <= nj < len(seats[0]) and \
-                   seats[ni][nj] == '.':
+                if 0 <= ni < len(seats) and 0 <= nj < len(seats[0]) and \
+                    seats[ni][nj] == '.' and not lookup[ni][nj]:
+                    lookup[ni][nj] = True
                     if matching[ni][nj] == -1 or dfs(matching[ni][nj], lookup, matching):
-                        matching[ni][nj] = (i, j)
-                        matching[i][j] = (ni, nj)
+                        matching[ni][nj] = (i,j)
                         return True
             return False
         
