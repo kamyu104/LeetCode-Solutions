@@ -6,13 +6,9 @@ public:
     int numberOfSteps (int num) {
         int result = 0;
         while (num) {
-            if (num & 1) {
-                --num;
-            } else {
-                num >>= 1;
-            }
-            ++result;
+            result += (num & 1) ? 2 : 1;
+            num >>= 1;
         }
-        return result;
+        return result - 1;
     }
 };
