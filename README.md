@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1340%20%2F%201340-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1349%20%2F%201349-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -92,6 +92,7 @@
 0898 | [Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/) | [C++](./C++/bitwise-ors-of-subarrays.cpp) [Python](./Python/bitwise-ors-of-subarrays.py) | _O(n)_ | _O(1)_ | Medium ||
 1310 | [XOR Queries of a Subarray](https://leetcode.com/problems/xor-queries-of-a-subarray/) | [C++](./C++/xor-queries-of-a-subarray.cpp) [Python](./Python/xor-queries-of-a-subarray.py) | _O(n)_ | _O(1)_ | Medium ||
 1318 | [Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/) | [C++](./C++/minimum-flips-to-make-a-or-b-equal-to-c.cpp) [Python](./Python/minimum-flips-to-make-a-or-b-equal-to-c.py) | _O(1)_ | _O(1)_ | Medium ||
+1342 | [Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/) | [C++](./C++/number-of-steps-to-reduce-a-number-to-zero.cpp) [Python](./Python/number-of-steps-to-reduce-a-number-to-zero.py) | _O(logn)_ | _O(1)_ | Easy ||
 
 ## Array
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -247,6 +248,8 @@
 1331 | [Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/) | [C++](./C++/rank-transform-of-an-array.cpp) [Python](./Python/rank-transform-of-an-array.py) | _O(nlogn)_ | _O(n)_      | Easy         || 
 1333 | [Filter Restaurants by Vegan-Friendly, Price and Distance](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/) | [C++](./C++/filter-restaurants-by-vegan-friendly-price-and-distance.cpp) [Python](./Python/filter-restaurants-by-vegan-friendly-price-and-distance.py) | _O(rlogr)_ | _O(r)_      | Medium         || Sort
 1337 | [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) | [C++](./C++/the-k-weakest-rows-in-a-matrix.cpp) [Python](./Python/the-k-weakest-rows-in-a-matrix.py) | _O(m * n)_ | _O(k)_      | Easy         || OrderedDict, Quick Select
+1343 | [Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | [C++](./C++/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold.cpp) [Python](./Python/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold.py) | _O(n)_ | _O(1)_      | Medium         || 
+1346 | [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/) | [C++](./C++/check-if-n-and-its-double-exist.cpp) [Python](./Python/check-if-n-and-its-double-exist.py) | _O(n)_ | _O(n)_      | Easy         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -357,6 +360,7 @@
 1324 | [Print Words Vertically](https://leetcode.com/problems/print-words-vertically/) | [C++](./C++/print-words-vertically.cpp) [Python](./Python/print-words-vertically.py) | _O(n)_ | _O(n)_ | Medium | |
 1328 | [Break a Palindrome](https://leetcode.com/problems/break-a-palindrome/) | [C++](./C++/break-a-palindrome.cpp) [Python](./Python/break-a-palindrome.py) | _O(n)_ | _O(1)_ | Medium | |
 1332 | [Remove Palindromic Subsequences](https://leetcode.com/problems/remove-palindromic-subsequences/) | [C++](./C++/remove-palindromic-subsequences.cpp) [Python](./Python/remove-palindromic-subsequences.py) | _O(n)_ | _O(1)_ | Easy | |
+1347 | [Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) | [C++](./C++/minimum-number-of-steps-to-make-two-strings-anagram.cpp) [Python](./Python/minimum-number-of-steps-to-make-two-strings-anagram.py) | _O(n)_ | _O(1)_ | Medium | |
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -739,6 +743,7 @@
 1317| [Convert Integer to the Sum of Two No-Zero Integers](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/)     | [C++](./C++/convert-integer-to-the-sum-of-two-no-zero-integers.cpp) [Python](./Python/convert-integer-to-the-sum-of-two-no-zero-integers.py)  | _O(logn)_        | _O(1)_          | Easy         | |
 1323| [Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/)     | [C++](./C++/maximum-69-number.cpp) [Python](./Python/maximum-69-number.py)  | _O(logn)_        | _O(1)_          | Easy         | |
 1330| [Reverse Subarray To Maximize Array Value](https://leetcode.com/problems/reverse-subarray-to-maximize-array-value/)     | [C++](./C++/reverse-subarray-to-maximize-array-value.cpp) [Python](./Python/reverse-subarray-to-maximize-array-value.py)  | _O(n)_        | _O(1)_          | Hard         | |
+1344| [Angle Between Hands of a Clock](https://leetcode.com/problems/angle-between-hands-of-a-clock/)     | [C++](./C++/angle-between-hands-of-a-clock.cpp) [Python](./Python/angle-between-hands-of-a-clock.py)  | _O(1)_        | _O(1)_          | Medium         | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -971,6 +976,7 @@
 1302|[Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/)| [C++](./C++/deepest-leaves-sum.cpp) [Python](./Python/deepest-leaves-sum.py)| _O(n)_ | _O(w)_ | Medium | | |
 1306|[Jump Game III](https://leetcode.com/problems/jump-game-iii/)| [C++](./C++/jump-game-iii.cpp) [Python](./Python/jump-game-iii.py)| _O(n)_ | _O(n)_ | Medium | | |
 1311|[Get Watched Videos by Your Friends](https://leetcode.com/problems/get-watched-videos-by-your-friends/)| [C++](./C++/get-watched-videos-by-your-friends.cpp) [Python](./Python/get-watched-videos-by-your-friends.py)| _O(n + vlogv)_ | _O(w)_ | Medium | | |
+1345|[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)| [C++](./C++/jump-game-iv.cpp) [Python](./Python/jump-game-iv.py)| _O(n)_ | _O(n)_ | Hard | | |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1213,6 +1219,7 @@
 1320 | [Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/) | [C++](./C++/minimum-distance-to-type-a-word-using-two-fingers.cpp) [Python](./Python/minimum-distance-to-type-a-word-using-two-fingers.py) | _O(n)_ | _O(1)_ | Hard | | |
 1335 | [Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/) | [C++](./C++/minimum-difficulty-of-a-job-schedule.cpp) [Python](./Python/minimum-difficulty-of-a-job-schedule.py) | _O(d * n^2)_ | _O(d * n)_ | Hard | | |
 1340 | [Jump Game V](https://leetcode.com/problems/jump-game-v/) | [C++](./C++/jump-game-v.cpp) [Python](./Python/jump-game-v.py) | _O(n)_ | _O(n)_ | Hard | | Sliding Window, Mono Stack, Segment Tree |
+1349 | [Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam/) | [C++](./C++/maximum-students-taking-exam.cpp) [Python](./Python/maximum-students-taking-exam.py) | _O((m * n) * sqrt(m * n))_ | _O(m + n)_ | Hard | [GCJ2008 - Round 3](https://code.google.com/codejam/contest/32002/dashboard#s=p2) | Bipartite Matching, `Hopcroft-Karp Bipartite Matching`, `Hungarian Bipartite Matching` |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1341,6 +1348,7 @@
 1244| [Design A Leaderboard](https://leetcode.com/problems/design-a-leaderboard/) | [C++](./C++/design-a-leaderboard.cpp) [Python](./Python/design-a-leaderboard.py) | ctor: _O(1)_<br> add: _O(1)_<br> top: _O(n)_<br> reset: _O(1)_ | _O(n)_ | Medium | | |
 1268| [Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/) | [C++](./C++/search-suggestions-system.cpp) [Python](./Python/search-suggestions-system.py) | ctor: _O(n * l)_<br> suggest: _O(l^2)_ | _O(t)_ | Medium ||  Trie |
 1286| [Iterator for Combination](https://leetcode.com/problems/iterator-for-combination/) | [C++](./C++/iterator-for-combination.cpp) [Python](./Python/iterator-for-combination.py) | _O(k)_ | _O(k)_ | Medium ||  Stack |
+1348| [Tweet Counts Per Frequency](https://leetcode.com/problems/tweet-counts-per-frequency/) | [C++](./C++/tweet-counts-per-frequency.cpp) [Python](./Python/tweet-counts-per-frequency.py) | add: _O(logn)_<br>query: _O(c)_ | _O(n)_ | Medium |||
 
 ## Concurrency
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1424,6 +1432,7 @@
 1322| [Ads Performance](https://leetcode.com/problems/ads-performance/) | [MySQL](./MySQL/ads-performance.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
 1327| [List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/) | [MySQL](./MySQL/list-the-products-ordered-in-a-period.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1336| [Number of Transactions per Visit](https://leetcode.com/problems/number-of-transactions-per-visit/) | [MySQL](./MySQL/number-of-transactions-per-visit.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒| |
+1341| [Movie Rating](https://leetcode.com/problems/movie-rating/) | [MySQL](./MySQL/movie-rating.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
