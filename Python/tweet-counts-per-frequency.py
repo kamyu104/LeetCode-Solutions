@@ -1,5 +1,5 @@
 # Time:  add:   O(logn),
-#        query: O(f), f is the total freq of matching records
+#        query: O(c), c is the total count of matching records
 # Space: O(n)
 
 import collections
