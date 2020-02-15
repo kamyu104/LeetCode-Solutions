@@ -4,7 +4,7 @@ SELECT s.id,
        s.name 
 FROM   students s 
        LEFT JOIN departments d 
-              ON s.department_id = d.id 
+              ON d.id = s.department_id 
 WHERE  d.id IS NULL; 
 
 # Time:  O(n) 
