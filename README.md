@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1349%20%2F%201349-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1350%20%2F%201350-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -1433,6 +1433,7 @@
 1327| [List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/) | [MySQL](./MySQL/list-the-products-ordered-in-a-period.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1336| [Number of Transactions per Visit](https://leetcode.com/problems/number-of-transactions-per-visit/) | [MySQL](./MySQL/number-of-transactions-per-visit.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒| |
 1341| [Movie Rating](https://leetcode.com/problems/movie-rating/) | [MySQL](./MySQL/movie-rating.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
+1350| [Students With Invalid Departments](https://leetcode.com/problems/students-with-invalid-departments/) | [MySQL](./MySQL/students-with-invalid-departments.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
