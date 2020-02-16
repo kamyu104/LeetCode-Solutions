@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1350%20%2F%201350-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1354%20%2F%201354-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -250,6 +250,7 @@
 1337 | [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) | [C++](./C++/the-k-weakest-rows-in-a-matrix.cpp) [Python](./Python/the-k-weakest-rows-in-a-matrix.py) | _O(m * n)_ | _O(k)_      | Easy         || OrderedDict, Quick Select
 1343 | [Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | [C++](./C++/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold.cpp) [Python](./Python/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold.py) | _O(n)_ | _O(1)_      | Medium         || 
 1346 | [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/) | [C++](./C++/check-if-n-and-its-double-exist.cpp) [Python](./Python/check-if-n-and-its-double-exist.py) | _O(n)_ | _O(n)_      | Easy         || 
+1351 | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | [C++](./C++/count-negative-numbers-in-a-sorted-matrix.cpp) [Python](./Python/count-negative-numbers-in-a-sorted-matrix.py) | _O(m + n)_ | _O(1)_      | Easy         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1286,6 +1287,8 @@
 1296 | [Divide Array in Sets of K Consecutive Numbers](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/) | [C++](./C++/divide-array-in-sets-of-k-consecutive-numbers.cpp) [Python](./Python/divide-array-in-sets-of-k-consecutive-numbers.py) | _O(nlogn)_ | _O(n)_ | Medium ||
 1326| [Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/)  | [C++](./C++/minimum-number-of-taps-to-open-to-water-a-garden.cpp) [Python](./Python/minimum-number-of-taps-to-open-to-water-a-garden.py) | _O(n)_        | _O(n)_          | Hard           | variant of [Jump Game II](https://leetcode.com/problems/jump-game-ii/) |
 1338 | [Reduce Array Size to The Half](https://leetcode.com/problems/reduce-array-size-to-the-half/) | [C++](./C++/reduce-array-size-to-the-half.cpp) [Python](./Python/reduce-array-size-to-the-half.py) | _O(n)_ | _O(n)_ | Medium || Counting Sort
+1353| [Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/)  | [C++](./C++/maximum-number-of-events-that-can-be-attended.cpp) [Python](./Python/maximum-number-of-events-that-can-be-attended.py) | _O(r + nlogn)_        | _O(n)_          | Medium           | | Heap, Sort |
+1354| [Construct Target Array With Multiple Sums](https://leetcode.com/problems/construct-target-array-with-multiple-sums/)  | [C++](./C++/construct-target-array-with-multiple-sums.cpp) [Python](./Python/construct-target-array-with-multiple-sums.py) | _O(log(max(t)) * logn)_        | _O(n)_          | Hard           | | Heap |
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1349,6 +1352,7 @@
 1268| [Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/) | [C++](./C++/search-suggestions-system.cpp) [Python](./Python/search-suggestions-system.py) | ctor: _O(n * l)_<br> suggest: _O(l^2)_ | _O(t)_ | Medium ||  Trie |
 1286| [Iterator for Combination](https://leetcode.com/problems/iterator-for-combination/) | [C++](./C++/iterator-for-combination.cpp) [Python](./Python/iterator-for-combination.py) | _O(k)_ | _O(k)_ | Medium ||  Stack |
 1348| [Tweet Counts Per Frequency](https://leetcode.com/problems/tweet-counts-per-frequency/) | [C++](./C++/tweet-counts-per-frequency.cpp) [Python](./Python/tweet-counts-per-frequency.py) | add: _O(logn)_<br>query: _O(c)_ | _O(n)_ | Medium |||
+1352| [Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/) | [C++](./C++/product-of-the-last-k-numbers.cpp) [Python](./Python/product-of-the-last-k-numbers.py) | ctor: _O(1)_<br>add: _O(1)_<br>get: _O(1)_ | _O(n)_ | Medium |||
 
 ## Concurrency
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
