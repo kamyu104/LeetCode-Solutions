@@ -1,7 +1,7 @@
 # Time:  O(r + nlogn), r is the max end day of events
 # Space: O(n)
 
-import collections
+import heapq
 
 
 class Solution(object):
