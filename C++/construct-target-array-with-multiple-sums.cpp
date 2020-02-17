@@ -8,8 +8,8 @@ public:
         // (2) y + remain = total
         // (1) - (2) => x - y = y - total
         //           => x = 2*y - total
-        auto total = accumulate(begin(target), end(target), 0ll);
-        priority_queue<int> max_heap(target.cbegin(), target.cend());
+        auto total = accumulate(cbegin(target), cend(target), 0ll);
+        priority_queue<int> max_heap(cbegin(target), cend(target));
         while (total != target.size()) {
             const auto y = max_heap.top(); max_heap.pop();
             const auto& remain = total - y;
