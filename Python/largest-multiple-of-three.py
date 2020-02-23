@@ -11,8 +11,8 @@ class Solution(object):
         :rtype: str
         """
         lookup = {0: [],
-                  1: [(1,), (4,), (7,), (2, 2), (2, 5), (5, 5), (2, 8), (5, 8), (8, 8)],
-                  2: [(2,), (5,), (8,), (1, 1), (1, 4), (4, 4), (1, 7), (4, 7), (7, 7)]}
+                  1: [(1,), (4,), (7,), (2, 2), (5, 2), (5, 5), (8, 2), (8, 5), (8, 8)],
+                  2: [(2,), (5,), (8,), (1, 1), (4, 1), (4, 4), (7, 1), (7, 4), (7, 7)]}
         count = collections.Counter(digits)
         for deletes in lookup[sum(digits)%3]:
             delete_count = collections.Counter(deletes)
