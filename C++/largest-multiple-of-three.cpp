@@ -30,8 +30,8 @@ private:
                    [&count](const auto& kvp) {
                        return (*count)[kvp.first] >= kvp.second;
                    })) {
-            for (const auto& d : deletes) {
-                --(*count)[d];
+            for (const auto& [k, v] : delete_count) {
+                (*count)[k] -= v;
             }
             return true;
         }
@@ -89,8 +89,8 @@ private:
                    [&count](const auto& kvp) {
                        return (*count)[kvp.first] >= kvp.second;
                    })) {
-            for (const auto& d : deletes) {
-                --(*count)[d];
+            for (const auto& [k, v] : delete_count) {
+                (*count)[k] -= v;
             }
             return true;
         }
