@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1354%20%2F%201354-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1363%20%2F%201363-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -362,6 +362,7 @@
 1328 | [Break a Palindrome](https://leetcode.com/problems/break-a-palindrome/) | [C++](./C++/break-a-palindrome.cpp) [Python](./Python/break-a-palindrome.py) | _O(n)_ | _O(1)_ | Medium | |
 1332 | [Remove Palindromic Subsequences](https://leetcode.com/problems/remove-palindromic-subsequences/) | [C++](./C++/remove-palindromic-subsequences.cpp) [Python](./Python/remove-palindromic-subsequences.py) | _O(n)_ | _O(1)_ | Easy | |
 1347 | [Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) | [C++](./C++/minimum-number-of-steps-to-make-two-strings-anagram.cpp) [Python](./Python/minimum-number-of-steps-to-make-two-strings-anagram.py) | _O(n)_ | _O(1)_ | Medium | |
+1358 | [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | [C++](./C++/number-of-substrings-containing-all-three-characters.cpp) [Python](./Python/number-of-substrings-containing-all-three-characters.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -745,6 +746,10 @@
 1323| [Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/)     | [C++](./C++/maximum-69-number.cpp) [Python](./Python/maximum-69-number.py)  | _O(logn)_        | _O(1)_          | Easy         | |
 1330| [Reverse Subarray To Maximize Array Value](https://leetcode.com/problems/reverse-subarray-to-maximize-array-value/)     | [C++](./C++/reverse-subarray-to-maximize-array-value.cpp) [Python](./Python/reverse-subarray-to-maximize-array-value.py)  | _O(n)_        | _O(1)_          | Hard         | |
 1344| [Angle Between Hands of a Clock](https://leetcode.com/problems/angle-between-hands-of-a-clock/)     | [C++](./C++/angle-between-hands-of-a-clock.cpp) [Python](./Python/angle-between-hands-of-a-clock.py)  | _O(1)_        | _O(1)_          | Medium         | |
+1359| [Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/)     | [C++](./C++/count-all-valid-pickup-and-delivery-options.cpp) [Python](./Python/count-all-valid-pickup-and-delivery-options.py)  | _O(n)_        | _O(1)_          | Hard         | |
+1360| [Number of Days Between Two Dates](https://leetcode.com/problems/number-of-days-between-two-dates/) | [C++](./C++/number-of-days-between-two-dates.cpp) [Python](./Python/number-of-days-between-two-dates.py) | _O(1)_ | _O(1)_ |  Easy | variant of [Day of the Year](https://leetcode.com/problems/day-of-the-year/ |
+1362| [Closest Divisors](https://leetcode.com/problems/closest-divisors/) | [C++](./C++/closest-divisors.cpp) [Python](./Python/closest-divisors.py) | _O(sqrt(n))_ | _O(1)_ |  Medium | |
+1363| [Largest Multiple of Three](https://leetcode.com/problems/largest-multiple-of-three/) | [C++](./C++/largest-multiple-of-three.cpp) [Python](./Python/largest-multiple-of-three.py) | _O(n)_ | _O(1)_ |  Hard | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -777,6 +782,7 @@
 1094| [Car Pooling](https://leetcode.com/problems/car-pooling/) | [C++](./C++/car-pooling.cpp) [Python](./Python/car-pooling.py) | _O(nlogn)_   | _O(n)_        | Medium         | variant of [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | |
 1122| [Relative Sort Array](https://leetcode.com/problems/relative-sort-array/) | [C++](./C++/relative-sort-array.cpp) [Python](./Python/relative-sort-array.py) | _O(nlogn)_   | _O(n)_        | Easy         ||
 1229| [Meeting Scheduler](https://leetcode.com/problems/meeting-scheduler/) | [C++](./C++/meeting-scheduler.cpp) [Python](./Python/meeting-scheduler.py) | _O(nlogn)_   | _O(n)_        | Medium         || Line Sweep, Heap
+1356| [Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/) | [C++](./C++/sort-integers-by-the-number-of-1-bits.cpp) [Python](./Python/sort-integers-by-the-number-of-1-bits.py) | _O(nlogn)_   | _O(1)_        | Easy         || Bit Manipulation
 
 ## Two Pointers
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1303,6 +1309,7 @@
 1135 | [Connecting Cities With Minimum Cost](https://leetcode.com/problems/connecting-cities-with-minimum-cost/) | [C++](./C++/connecting-cities-with-minimum-cost.cpp) [Python](./Python/connecting-cities-with-minimum-cost.py) | _O(nlogn)_ | _O(n)_ | Medium           |🔒| Union Find, `Kruskal's Algorithm`, MST |
 1168 | [Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) | [C++](./C++/optimize-water-distribution-in-a-village.cpp) [Python](./Python/optimize-water-distribution-in-a-village.py) | _O(nlogn)_ | _O(n)_ | Hard           |🔒| Union Find |
 1334 | [Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | [C++](./C++/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.cpp) [Python](./Python/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.py) | _O(n^3)_ | _O(n^2)_ | Medium           || `Floyd-Warshall Algorithm`|
+1361 | [Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes/)  | [C++](./C++/validate-binary-tree-nodes.cpp) [Python](./Python/validate-binary-tree-nodes.py) | _O(n)_| _O(n)_| Medium           || DFS, Tree | 
 
 ## Geometry
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1353,6 +1360,7 @@
 1286| [Iterator for Combination](https://leetcode.com/problems/iterator-for-combination/) | [C++](./C++/iterator-for-combination.cpp) [Python](./Python/iterator-for-combination.py) | _O(k)_ | _O(k)_ | Medium ||  Stack |
 1348| [Tweet Counts Per Frequency](https://leetcode.com/problems/tweet-counts-per-frequency/) | [C++](./C++/tweet-counts-per-frequency.cpp) [Python](./Python/tweet-counts-per-frequency.py) | add: _O(logn)_<br>query: _O(c)_ | _O(n)_ | Medium |||
 1352| [Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/) | [C++](./C++/product-of-the-last-k-numbers.cpp) [Python](./Python/product-of-the-last-k-numbers.py) | ctor: _O(1)_<br>add: _O(1)_<br>get: _O(1)_ | _O(n)_ | Medium |||
+1357| [Apply Discount Every n Orders](https://leetcode.com/problems/apply-discount-every-n-orders/) | [C++](./C++/apply-discount-every-n-orders.cpp) [Python](./Python/apply-discount-every-n-orders.py) | ctor: _O(m)_<br>getBill: _O(p)_ | _O(m)_ | Medium |||
 
 ## Concurrency
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1438,6 +1446,7 @@
 1336| [Number of Transactions per Visit](https://leetcode.com/problems/number-of-transactions-per-visit/) | [MySQL](./MySQL/number-of-transactions-per-visit.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒| |
 1341| [Movie Rating](https://leetcode.com/problems/movie-rating/) | [MySQL](./MySQL/movie-rating.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
 1350| [Students With Invalid Departments](https://leetcode.com/problems/students-with-invalid-departments/) | [MySQL](./MySQL/students-with-invalid-departments.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
+1355| [Activity Participants](https://leetcode.com/problems/activity-participants/) | [MySQL](./MySQL/activity-participants.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
