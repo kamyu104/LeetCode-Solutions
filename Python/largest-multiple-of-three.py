@@ -41,10 +41,10 @@ class Solution2(object):
                 for j in xrange(i+1):
                     yield [i, j]
 
-        count, total = collections.Counter(digits), sum(digits)
-        for deletes in candidates_gen(total%3):
+        count, r = collections.Counter(digits), sum(digits)%3
+        for deletes in candidates_gen(r):
             delete_count = collections.Counter(deletes)
-            if sum(deletes)%3 == total%3 and \
+            if sum(deletes)%3 == r and \
                all(count[k] >= v for k, v in delete_count.iteritems()):
                 for k, v in delete_count.iteritems():
                     count[k] -= v
