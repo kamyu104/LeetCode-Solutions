@@ -20,9 +20,7 @@ class Solution(object):
                     count[d] -= 1
                 break
         result = "".join(str(d)*count[d] for d in reversed(xrange(10)))
-        if result and result[0] == '0':
-            return "0"
-        return result
+        return "0" if result and result[0] == '0' else result
     
 
 # Time:  O(n)
@@ -50,6 +48,4 @@ class Solution2(object):
                     count[d] -= 1
                 break
         result = "".join(str(d)*count[d] for d in reversed(xrange(10)))
-        if result and result[0] == '0':
-            return "0"
-        return result
+        return "0" if result and result[0] == '0' else result
