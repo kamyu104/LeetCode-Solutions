@@ -6,8 +6,8 @@ public:
     string largestMultipleOfThree(vector<int>& digits) {
         static const unordered_map<int, vector<vector<int>>> lookup = {
             {0, {}},
-            {1, {{1}, {4}, {7}, {2, 2}, {2, 5}, {5, 5}, {2, 8}, {5, 8}, {8, 8}}},
-            {2, {{2}, {5}, {8}, {1, 1}, {1, 4}, {4, 4}, {1, 7}, {4, 7}, {7, 7}}}
+            {1, {{1}, {4}, {7}, {2, 2}, {5, 2}, {5, 5}, {8, 2}, {8, 5}, {8, 8}}},
+            {2, {{2}, {5}, {8}, {1, 1}, {4, 1}, {4, 4}, {7, 1}, {7, 4}, {7, 7}}}
         };
         unordered_map<int, int> count = counter(digits);
         const auto& r = accumulate(cbegin(digits), cend(digits), 0) % 3;
