@@ -12,7 +12,7 @@ public:
         unordered_map<int, int> count = counter(digits);
         const auto& total = accumulate(cbegin(digits), cend(digits), 0);
         for (const auto& deletes : lookup.at(total % 3)) {
-            if (remove(deletes, total, &count)) {
+            if (remove(deletes, &count)) {
                 break;
             }
         }
@@ -24,9 +24,8 @@ public:
     }
 
 private:
-    bool remove(const vector<int>& deletes, int total, unordered_map<int, int> *count) {
-        if (accumulate(cbegin(deletes), cend(deletes), 0) % 3 == total % 3 &&
-            all_of(cbegin(deletes), cend(deletes),
+    bool remove(const vector<int>& deletes, unordered_map<int, int> *count) {
+        if (all_of(cbegin(deletes), cend(deletes),
                    [&count, &deletes](const auto& x) {
                        return (*count)[x] >= std::count(cbegin(deletes), cend(deletes), x);
                    })) {
