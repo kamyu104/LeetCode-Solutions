@@ -25,9 +25,10 @@ public:
 
 private:
     bool remove(const vector<int>& deletes, unordered_map<int, int> *count) {
-        if (all_of(cbegin(deletes), cend(deletes),
-                   [&deletes, &count](const auto& x) {
-                       return (*count)[x] >= std::count(cbegin(deletes), cend(deletes), x);
+        const auto& delete_count = counter(deletes);
+        if (all_of(cbegin(delete_count), cend(delete_count),
+                   [&count](const auto& kvp) {
+                       return (*count)[kvp.first] >= kvp.second;
                    })) {
             for (const auto& d : deletes) {
                 --(*count)[d];
@@ -82,10 +83,11 @@ public:
 
 private:
     bool remove(const vector<int>& deletes, int total, unordered_map<int, int> *count) {
+        const auto& delete_count = counter(deletes);
         if (accumulate(cbegin(deletes), cend(deletes), 0) % 3 == total % 3 &&
-            all_of(cbegin(deletes), cend(deletes),
-                   [&deletes, &count](const auto& x) {
-                       return (*count)[x] >= std::count(cbegin(deletes), cend(deletes), x);
+            all_of(cbegin(delete_count), cend(delete_count),
+                   [&count](const auto& kvp) {
+                       return (*count)[kvp.first] >= kvp.second;
                    })) {
             for (const auto& d : deletes) {
                 --(*count)[d];
