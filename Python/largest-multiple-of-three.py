@@ -14,9 +14,9 @@ class Solution(object):
                   1: [(1,), (4,), (7,), (2, 2), (2, 5), (5, 5), (2, 8), (5, 8), (8, 8)],
                   2: [(2,), (5,), (8,), (1, 1), (1, 4), (4, 4), (1, 7), (4, 7), (7, 7)]}
         count = collections.Counter(digits)
-        for candidate in lookup[sum(digits)%3]:
-            if all(count[d] >= candidate.count(d) for d in candidate):
-                for d in candidate:
+        for deletes in lookup[sum(digits)%3]:
+            if all(count[k] >= v for k, v in collections.Counter(deletes).iteritems()):
+                for d in deletes:
                     count[d] -= 1
                 break
         result = "".join(str(d)*count[d] for d in reversed(xrange(10)))
@@ -43,7 +43,7 @@ class Solution2(object):
         count, total = collections.Counter(digits), sum(digits)
         for deletes in candidates_gen(total%3):
             if sum(deletes)%3 == total%3 and \
-               all(count[d] >= deletes.count(d) for d in deletes):
+               all(count[k] >= v for k, v in collections.Counter(deletes).iteritems()):
                 for d in deletes:
                     count[d] -= 1
                 break
