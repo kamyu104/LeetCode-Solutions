@@ -6,7 +6,6 @@ public:
     int missingNumber(vector<int>& arr) {
         const auto& d = (arr.back() - arr[0]) / static_cast<int>(arr.size());
         int left = 0, right = arr.size() - 1;
-        cout << left << " " << right << endl;
         while (left <= right) {
             const auto& mid = left + (right - left) / 2;
             if (check(arr, d, mid)) {
