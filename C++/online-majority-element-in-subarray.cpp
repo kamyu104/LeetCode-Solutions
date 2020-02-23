@@ -159,7 +159,6 @@ private:
                 return {-1, -1};
             }
             if (range_left <= left && right <= range_right) {
-                cout << idx << endl;
                 if (tree_[idx] != -1) {
                     const auto& c = count_(tree_[idx], range_left, range_right);
                     if (c * 2 > range_right - range_left + 1) {
