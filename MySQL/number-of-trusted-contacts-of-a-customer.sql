@@ -1,4 +1,4 @@
-# Time:  O(n + m + l), n, m, l are the sizes of invoices, customers, contacts
+# Time:  O(n + m + l + nlogn), n, m, l are the sizes of invoices, customers, contacts
 # Space: O(n + m + l)
 
 SELECT i.invoice_id, 
