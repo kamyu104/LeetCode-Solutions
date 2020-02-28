@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1363%20%2F%201363-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1364%20%2F%201364-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -1447,6 +1447,7 @@
 1341| [Movie Rating](https://leetcode.com/problems/movie-rating/) | [MySQL](./MySQL/movie-rating.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
 1350| [Students With Invalid Departments](https://leetcode.com/problems/students-with-invalid-departments/) | [MySQL](./MySQL/students-with-invalid-departments.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1355| [Activity Participants](https://leetcode.com/problems/activity-participants/) | [MySQL](./MySQL/activity-participants.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
+1364| [Number of Trusted Contacts of a Customer](https://leetcode.com/problems/number-of-trusted-contacts-of-a-customer/) | [MySQL](./MySQL/number-of-trusted-contacts-of-a-customer.sql) | _O(n + m + l + nlogn)_ | _O(n + m + l)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
