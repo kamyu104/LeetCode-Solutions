@@ -25,3 +25,19 @@ private:
         return count;
     }
 };
+
+// Time:  O(nlogn)
+// Space: O(n)
+class Solution2 {
+public:
+    vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
+        vector<int> sorted_nums(nums);
+        sort(begin(sorted_nums), end(sorted_nums));
+        vector<int> result;
+        for (const auto& i : nums) {
+            result.emplace_back(distance(cbegin(sorted_nums),
+                                         lower_bound(cbegin(sorted_nums), cend(sorted_nums), i)));
+        }
+        return result;
+    }
+};
