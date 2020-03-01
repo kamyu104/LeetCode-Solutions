@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1364%20%2F%201364-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1368%20%2F%201368-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -783,6 +783,8 @@
 1122| [Relative Sort Array](https://leetcode.com/problems/relative-sort-array/) | [C++](./C++/relative-sort-array.cpp) [Python](./Python/relative-sort-array.py) | _O(nlogn)_   | _O(n)_        | Easy         ||
 1229| [Meeting Scheduler](https://leetcode.com/problems/meeting-scheduler/) | [C++](./C++/meeting-scheduler.cpp) [Python](./Python/meeting-scheduler.py) | _O(nlogn)_   | _O(n)_        | Medium         || Line Sweep, Heap
 1356| [Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/) | [C++](./C++/sort-integers-by-the-number-of-1-bits.cpp) [Python](./Python/sort-integers-by-the-number-of-1-bits.py) | _O(nlogn)_   | _O(1)_        | Easy         || Bit Manipulation
+1365| [How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/) | [C++](./C++/how-many-numbers-are-smaller-than-the-current-number.cpp) [Python](./Python/how-many-numbers-are-smaller-than-the-current-number.py) | _O(n)_   | _O(n)_        | Easy         || Counting Sort
+1366| [Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes/) | [C++](./C++/rank-teams-by-votes.cpp) [Python](./Python/rank-teams-by-votes.py) | _O(m * (n + mlogm))_   | _O(m^2)_        | Medium         ||
 
 ## Two Pointers
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -984,6 +986,7 @@
 1306|[Jump Game III](https://leetcode.com/problems/jump-game-iii/)| [C++](./C++/jump-game-iii.cpp) [Python](./Python/jump-game-iii.py)| _O(n)_ | _O(n)_ | Medium | | |
 1311|[Get Watched Videos by Your Friends](https://leetcode.com/problems/get-watched-videos-by-your-friends/)| [C++](./C++/get-watched-videos-by-your-friends.cpp) [Python](./Python/get-watched-videos-by-your-friends.py)| _O(n + vlogv)_ | _O(w)_ | Medium | | |
 1345|[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)| [C++](./C++/jump-game-iv.cpp) [Python](./Python/jump-game-iv.py)| _O(n)_ | _O(n)_ | Hard | | |
+1368|[Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/)| [C++](./C++/minimum-cost-to-make-at-least-one-valid-path-in-a-grid.cpp) [Python](./Python/minimum-cost-to-make-at-least-one-valid-path-in-a-grid.py)| _O(m * n)_ | _O(m * n)_ | Hard | | |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1035,6 +1038,7 @@
 1273| [Delete Tree Nodes](https://leetcode.com/problems/delete-tree-nodes/) | [C++](./C++/delete-tree-nodes.cpp) [Python](./Python/delete-tree-nodes.py) | _O(n)_          | _O(n)_          | Medium           || DFS, DP |
 1315| [Sum of Nodes with Even-Valued Grandparent](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/) | [C++](./C++/sum-of-nodes-with-even-valued-grandparent.cpp) [Python](./Python/sum-of-nodes-with-even-valued-grandparent.py) | _O(n)_          | _O(h)_          | Medium           |||
 1319| [Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected/) | [C++](./C++/number-of-operations-to-make-network-connected.cpp) [Python](./Python/number-of-operations-to-make-network-connected.py) | _O(\|E\| + \|V\|)_          | _O(\|V\|)_          | Medium           || Union Find|
+1367| [Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/) | [C++](./C++/linked-list-in-binary-tree.cpp) [Python](./Python/linked-list-in-binary-tree.py) | _O(n + l)_          | _O(h + l)_          | Medium           || `KMP Algorithm` |
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
