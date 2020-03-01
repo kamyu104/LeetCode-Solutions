@@ -53,6 +53,8 @@ class Solution2(object):
             b, d = dq.popleft()
             if b == (R-1, C-1):
                 return d
+            if lookup[b] < d:
+                continue
             for nd, (dr, dc) in enumerate(directions, 1):
                 nb = (b[0]+dr, b[1]+dc)
                 cost = 1-(nd == grid[b[0]][b[1]])
