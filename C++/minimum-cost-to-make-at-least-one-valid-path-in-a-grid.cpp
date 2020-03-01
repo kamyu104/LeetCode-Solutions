@@ -5,8 +5,7 @@
 class Solution {
 public:
     int minCost(vector<vector<int>>& grid) {
-        pair<int, int> b = {0, 0};
-        pair<int, int> t = {grid.size() - 1, grid[0].size() - 1}; 
+        const pair<int, int> b = {0, 0}, t = {grid.size() - 1, grid[0].size() - 1}; 
         return a_star(grid, b, t);
     }
 
@@ -59,9 +58,9 @@ public:
     int minCost(vector<vector<int>>& grid) {
         static const vector<tuple<int, int, int>> directions = {{1, 0, 1}, {2, 0, -1},
                                                                 {3, 1, 0}, {4, -1, 0}};
-        const pair<int, int> t = make_pair(grid.size() - 1, grid[0].size() - 1);
-        deque<pair<pair<int, int>, int>> dq = {{{0, 0}, 0}};
-        unordered_map<int, int> lookup = {{0, 0}};
+        const pair<int, int> b = {0, 0}, t = {grid.size() - 1, grid[0].size() - 1}; 
+        deque<pair<pair<int, int>, int>> dq = {{b, 0}};
+        unordered_map<int, int> lookup = {b};
         while (!dq.empty()) {
             const auto [b, d] = dq.front(); dq.pop_front();
             if (b == t) {
