@@ -62,8 +62,8 @@ class Solution2(object):
                         (nb not in lookup or lookup[nb] > d+cost)):
                     continue
                 lookup[nb] = d+cost
-                if cost:
-                    dq.append((nb, d+cost))
-                else:
+                if not cost:
                     dq.appendleft((nb, d))
+                else:
+                    dq.append((nb, d+cost))
         return -1  # never reach here
