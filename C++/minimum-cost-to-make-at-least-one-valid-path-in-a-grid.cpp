@@ -71,7 +71,7 @@ public:
             }
             for (const auto& [nd, dr, dc] : directions) {
                 const auto& nb = make_pair(b.first + dr, b.second + dc);
-                const auto& cost = 1 - (nd == grid[b.first][b.second]);
+                const auto& cost = nd != grid[b.first][b.second] ? 1 : 0;
                 if (!(0 <= nb.first && nb.first < grid.size() &&
                       0 <= nb.second && nb.second < grid[0].size() &&
                       (!lookup.count(nb.first * grid[0].size() + nb.second) ||
