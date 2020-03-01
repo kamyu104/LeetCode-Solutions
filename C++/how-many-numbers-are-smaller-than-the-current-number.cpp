@@ -1,12 +1,12 @@
-// Time:  O(n), n is the max number of nums
-// Space: O(n)
+// Time:  O(n + m), m is the max number of nums
+// Space: O(m)
 
 class Solution {
 public:
     vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
-        const auto& n = *max_element(cbegin(nums), cend(nums));
+        const auto& m = *max_element(cbegin(nums), cend(nums));
         auto count = counter(nums);
-        for (int i = 0; i <= n; ++i) {
+        for (int i = 0; i <= m; ++i) {
             count[i] += count[i - 1];
         }
         vector<int> result;
