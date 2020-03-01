@@ -35,13 +35,12 @@ private:
             lookup.emplace(b.first * grid[0].size() + b.second);
             for (const auto& [nd, dr, dc] : directions) {
                 const pair<int, int>& nb = {b.first + dr, b.second + dc};
-                const auto& cost = 1 - (nd == grid[b.first][b.second]);
                 if (!(0 <= nb.first && nb.first < grid.size() &&
                       0 <= nb.second && nb.second < grid[0].size() &&
                       !lookup.count(nb.first * grid[0].size() + nb.second))) {
                     continue;
                 }
-                if (!cost) {
+                if (nd == grid[b.first][b.second]) {
                     closer.emplace_back(nb);
                 } else {
                     detour.emplace_back(nb);
