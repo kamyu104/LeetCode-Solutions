@@ -1,5 +1,5 @@
-# Time:  O(n), n is the max number of nums
-# Space: O(n)
+# Time:  O(n + m), m is the max number of nums
+# Space: O(m)
 
 import collections
 
