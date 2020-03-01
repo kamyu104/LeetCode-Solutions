@@ -15,25 +15,23 @@ class Solution(object):
         def a_star(grid, b, t):
             R, C = len(grid), len(grid[0])
             f, dh = 0, 1
-            closer, detour = [(b, 0)], []
-            lookup = {(0, 0): 0}
+            closer, detour = [b], []
+            lookup = set()
             while closer or detour:
                 if not closer:
                     f += dh
                     closer, detour = detour, closer
-                b, d = closer.pop()
+                b = closer.pop()
                 if b == t:
                     return f
-                if b in lookup and lookup[b] < d:
+                if b in lookup:
                     continue
+                lookup.add(b)
                 for nd, (dr, dc) in enumerate(directions, 1):
                     nb = (b[0]+dr, b[1]+dc)
-                    cost = 1-(nd == grid[b[0]][b[1]])
-                    if not (0 <= nb[0] < R and 0 <= nb[1] < C and
-                            (nb not in lookup or lookup[nb] > d+cost)):
+                    if not (0 <= nb[0] < R and 0 <= nb[1] < C and nb not in lookup):
                         continue
-                    lookup[nb] = d+cost
-                    (closer if not cost else detour).append(((nb, d+cost)))
+                    (closer if nd == grid[b[0]][b[1]] else detour).append(nb)
             return -1
 
         return a_star(grid, (0, 0), (len(grid)-1, len(grid[0])-1))
