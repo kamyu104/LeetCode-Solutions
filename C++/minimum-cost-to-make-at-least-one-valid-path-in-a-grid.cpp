@@ -58,29 +58,31 @@ public:
     int minCost(vector<vector<int>>& grid) {
         static const vector<tuple<int, int, int>> directions = {{1, 0, 1}, {2, 0, -1},
                                                                 {3, 1, 0}, {4, -1, 0}};
-        deque<tuple<int, int, int>> dq = {{0, 0, 0}};
+        const pair<int, int> t = make_pair(grid.size() - 1, grid[0].size() - 1);
+        deque<pair<pair<int, int>, int>> dq = {{{0, 0}, 0}};
         unordered_map<int, int> lookup = {{0, 0}};
         while (!dq.empty()) {
-            const auto [d, r, c] = dq.front(); dq.pop_front();
-            if (r == grid.size() - 1 && c == grid[0].size() - 1) {
+            const auto [b, d] = dq.front(); dq.pop_front();
+            if (b == t) {
                 return d;
             }
-            if (lookup[r * grid[0].size() + c] < d) {
+            if (lookup[b.first * grid[0].size() + b.second] < d) {
                 continue;
             }
             for (const auto& [nd, dr, dc] : directions) {
-                const auto& [nr, nc] = make_pair(r + dr, c + dc);
-                const auto& cost = 1 - (nd == grid[r][c]);
-                if (!(0 <= nr && nr < grid.size() && 0 <= nc && nc < grid[0].size() &&
-                      (!lookup.count(nr * grid[0].size() + nc) ||
-                       lookup[nr * grid[0].size() + nc] > d + cost))) {
+                const auto& nb = make_pair(b.first + dr, b.second + dc);
+                const auto& cost = 1 - (nd == grid[b.first][b.second]);
+                if (!(0 <= nb.first && nb.first < grid.size() &&
+                      0 <= nb.second && nb.second < grid[0].size() &&
+                      (!lookup.count(nb.first * grid[0].size() + nb.second) ||
+                       lookup[nb.first * grid[0].size() + nb.second] > d + cost))) {
                     continue;
                 }
-                lookup[nr * grid[0].size() + nc] = d + cost;
+                lookup[nb.first * grid[0].size() + nb.second] = d + cost;
                 if (!cost) {
-                    dq.emplace_front(d, nr, nc);
+                    dq.emplace_front(nb, d);
                 } else {
-                    dq.emplace_back(d + cost, nr, nc);
+                    dq.emplace_back(nb, d + cost);
                 }
             }
         }
