@@ -18,7 +18,7 @@ private:
         static const vector<tuple<int, int, int>> directions = {{1, 0, 1}, {2, 0, -1},
                                                                 {3, 1, 0}, {4, -1, 0}};
         int f = 0, dh = 1;
-        vector<pair<int, int>> closer({b}), detour;
+        vector<pair<int, int>> closer = {b}, detour;
         unordered_set<int> lookup;
         while (!closer.empty() || !detour.empty()) {
             if (closer.empty()) {
