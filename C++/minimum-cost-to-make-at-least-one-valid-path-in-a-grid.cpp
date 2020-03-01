@@ -65,6 +65,9 @@ public:
             if (r == grid.size() - 1 && c == grid[0].size() - 1) {
                 return d;
             }
+            if (lookup[r * grid[0].size() + c] < d) {
+                continue;
+            }
             for (const auto& [nd, dr, dc] : directions) {
                 const auto& [nr, nc] = make_pair(r + dr, c + dc);
                 const auto& cost = 1 - (nd == grid[r][c]);
