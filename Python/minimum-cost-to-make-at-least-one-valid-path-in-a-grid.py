@@ -39,6 +39,7 @@ class Solution(object):
     
 # Time:  O(m * n)
 # Space: O(m * n)
+#  0-1 bfs solution
 class Solution2(object):
     def minCost(self, grid):
         """
