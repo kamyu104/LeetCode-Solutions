@@ -77,10 +77,10 @@ public:
                     continue;
                 }
                 lookup[nr * grid[0].size() + nc] = d + cost;
-                if (cost) {
-                    dq.emplace_back(d + cost, nr, nc);
-                } else {
+                if (!cost) {
                     dq.emplace_front(d, nr, nc);
+                } else {
+                    dq.emplace_back(d + cost, nr, nc);
                 }
             }
         }
