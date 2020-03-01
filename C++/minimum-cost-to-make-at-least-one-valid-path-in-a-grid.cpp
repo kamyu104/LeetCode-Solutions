@@ -18,31 +18,33 @@ private:
         static const vector<tuple<int, int, int>> directions = {{1, 0, 1}, {2, 0, -1},
                                                                 {3, 1, 0}, {4, -1, 0}};
         int f = 0, dh = 1;
-        vector<pair<pair<int, int>, int>> closer{{b, 0}}, detour;
-        unordered_map<int, int> lookup;
+        vector<pair<int, int>> closer({b}), detour;
+        unordered_set<int> lookup;
         while (!closer.empty() || !detour.empty()) {
             if (closer.empty()) {
                 f += dh;
                 swap(closer, detour);
             }
-            const auto [b, d] = closer.back(); closer.pop_back();
+            const auto b = closer.back(); closer.pop_back();
             if (b == t) {
                 return f;
             }
+            if (lookup.count(b.first * grid[0].size() + b.second)) {
+                continue;
+            }
+            lookup.emplace(b.first * grid[0].size() + b.second);
             for (const auto& [nd, dr, dc] : directions) {
                 const pair<int, int>& nb = {b.first + dr, b.second + dc};
                 const auto& cost = 1 - (nd == grid[b.first][b.second]);
                 if (!(0 <= nb.first && nb.first < grid.size() &&
                       0 <= nb.second && nb.second < grid[0].size() &&
-                      (!lookup.count(nb.first * grid[0].size() + nb.second) ||
-                       lookup[nb.first * grid[0].size() + nb.second] > d + cost))) {
+                      !lookup.count(nb.first * grid[0].size() + nb.second))) {
                     continue;
                 }
-                lookup[nb.first * grid[0].size() + nb.second] = d + cost;
                 if (!cost) {
-                    closer.emplace_back(nb, d);
+                    closer.emplace_back(nb);
                 } else {
-                    detour.emplace_back(nb, d + cost);
+                    detour.emplace_back(nb);
                 }
             }
         }
