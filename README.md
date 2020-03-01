@@ -986,7 +986,7 @@
 1306|[Jump Game III](https://leetcode.com/problems/jump-game-iii/)| [C++](./C++/jump-game-iii.cpp) [Python](./Python/jump-game-iii.py)| _O(n)_ | _O(n)_ | Medium | | |
 1311|[Get Watched Videos by Your Friends](https://leetcode.com/problems/get-watched-videos-by-your-friends/)| [C++](./C++/get-watched-videos-by-your-friends.cpp) [Python](./Python/get-watched-videos-by-your-friends.py)| _O(n + vlogv)_ | _O(w)_ | Medium | | |
 1345|[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)| [C++](./C++/jump-game-iv.cpp) [Python](./Python/jump-game-iv.py)| _O(n)_ | _O(n)_ | Hard | | |
-1368|[Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/)| [C++](./C++/minimum-cost-to-make-at-least-one-valid-path-in-a-grid.cpp) [Python](./Python/minimum-cost-to-make-at-least-one-valid-path-in-a-grid.py)| _O(m * n)_ | _O(m * n)_ | Hard | | `A* Search Algorithm`, Deque |
+1368|[Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/)| [C++](./C++/minimum-cost-to-make-at-least-one-valid-path-in-a-grid.cpp) [Python](./Python/minimum-cost-to-make-at-least-one-valid-path-in-a-grid.py)| _O(m * n)_ | _O(m * n)_ | Hard | | `A* Search Algorithm`, 0-1 BFS, Deque |
 
 ## Depth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
