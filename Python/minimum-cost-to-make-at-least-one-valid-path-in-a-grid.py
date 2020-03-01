@@ -47,11 +47,12 @@ class Solution2(object):
         """
         directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
         R, C = len(grid), len(grid[0])
+        t = (R-1, C-1)
         dq = collections.deque([((0, 0), 0)])
         lookup = {(0, 0): 0}
         while dq:
             b, d = dq.popleft()
-            if b == (R-1, C-1):
+            if b == t:
                 return d
             if lookup[b] < d:
                 continue
