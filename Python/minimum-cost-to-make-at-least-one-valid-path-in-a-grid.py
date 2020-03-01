@@ -48,9 +48,9 @@ class Solution2(object):
         """
         directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
         R, C = len(grid), len(grid[0])
-        t = (R-1, C-1)
-        dq = collections.deque([((0, 0), 0)])
-        lookup = {(0, 0): 0}
+        b, t = (0, 0), (R-1, C-1)
+        dq = collections.deque([(b, 0)])
+        lookup = {b: 0}
         while dq:
             b, d = dq.popleft()
             if b == t:
