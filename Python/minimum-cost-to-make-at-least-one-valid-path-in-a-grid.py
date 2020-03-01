@@ -57,7 +57,7 @@ class Solution2(object):
                 continue
             for nd, (dr, dc) in enumerate(directions, 1):
                 nb = (b[0]+dr, b[1]+dc)
-                cost = 1-(nd == grid[b[0]][b[1]])
+                cost = 1 if nd != grid[b[0]][b[1]] else 0
                 if not (0 <= nb[0] < R and 0 <= nb[1] < C and
                         (nb not in lookup or lookup[nb] > d+cost)):
                     continue
