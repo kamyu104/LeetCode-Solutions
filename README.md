@@ -783,7 +783,7 @@
 1122| [Relative Sort Array](https://leetcode.com/problems/relative-sort-array/) | [C++](./C++/relative-sort-array.cpp) [Python](./Python/relative-sort-array.py) | _O(nlogn)_   | _O(n)_        | Easy         ||
 1229| [Meeting Scheduler](https://leetcode.com/problems/meeting-scheduler/) | [C++](./C++/meeting-scheduler.cpp) [Python](./Python/meeting-scheduler.py) | _O(nlogn)_   | _O(n)_        | Medium         || Line Sweep, Heap
 1356| [Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/) | [C++](./C++/sort-integers-by-the-number-of-1-bits.cpp) [Python](./Python/sort-integers-by-the-number-of-1-bits.py) | _O(nlogn)_   | _O(1)_        | Easy         || Bit Manipulation
-1365| [How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/) | [C++](./C++/how-many-numbers-are-smaller-than-the-current-number.cpp) [Python](./Python/how-many-numbers-are-smaller-than-the-current-number.py) | _O(n)_   | _O(n)_        | Easy         || Counting Sort
+1365| [How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/) | [C++](./C++/how-many-numbers-are-smaller-than-the-current-number.cpp) [Python](./Python/how-many-numbers-are-smaller-than-the-current-number.py) | _O(n + m)_   | _O(m)_        | Easy         || Counting Sort
 1366| [Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes/) | [C++](./C++/rank-teams-by-votes.cpp) [Python](./Python/rank-teams-by-votes.py) | _O(m * (n + mlogm))_   | _O(m^2)_        | Medium         ||
 
 ## Two Pointers
