@@ -53,6 +53,7 @@ private:
 
 // Time:  O(m * n)
 // Space: O(m * n)
+// 0-1 bfs solution
 class Solution2 {
 public:
     int minCost(vector<vector<int>>& grid) {
