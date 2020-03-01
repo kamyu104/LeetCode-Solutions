@@ -60,7 +60,7 @@ public:
                                                                 {3, 1, 0}, {4, -1, 0}};
         const pair<int, int> b = {0, 0}, t = {grid.size() - 1, grid[0].size() - 1}; 
         deque<pair<pair<int, int>, int>> dq = {{b, 0}};
-        unordered_map<int, int> lookup = {b};
+        unordered_map<int, int> lookup = {{b.first * grid[0].size() + b.second, 0}};
         while (!dq.empty()) {
             const auto [b, d] = dq.front(); dq.pop_front();
             if (b == t) {
