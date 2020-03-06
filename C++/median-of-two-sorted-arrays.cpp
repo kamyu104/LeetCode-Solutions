@@ -84,10 +84,10 @@ private:
         int res = 0;
         for (const auto array : arrays) {
             if (!array->empty()) {
-                res += distance(upper_bound(array->cbegin(), array->cend(), num),
-                                array->cend());
+                res += distance(array->cbegin(),
+                                upper_bound(array->cbegin(), array->cend(), num));
             }
         }
-        return res < target;
+        return res >= target;
     }
 };
