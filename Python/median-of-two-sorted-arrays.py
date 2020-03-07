@@ -12,7 +12,7 @@ class Solution(object):
         if (len1 + len2) % 2 == 1:
             return self.getKth(nums1, nums2, (len1 + len2)/2 + 1)
         else:
-            return (self.getKth(nums1, nums2, (len1 + len2)/2) + \
+            return (self.getKth(nums1, nums2, (len1 + len2)/2) +
                     self.getKth(nums1, nums2, (len1 + len2)/2 + 1)) * 0.5
 
     def getKth(self, A, B, k):
@@ -48,7 +48,7 @@ class Solution_Generic(object):
         if (len1 + len2) % 2 == 1:
             return self.getKth([nums1, nums2], (len1 + len2)/2 + 1)
         else:
-            return (self.getKth([nums1, nums2], (len1 + len2)/2) + \
+            return (self.getKth([nums1, nums2], (len1 + len2)/2) +
                     self.getKth([nums1, nums2], (len1 + len2)/2 + 1)) * 0.5
 
     def getKth(self, arrays, k):
@@ -65,7 +65,7 @@ class Solution_Generic(object):
             res = 0
             for array in arrays:
                 if array:
-                    res += binary_search(array, 0, len(array) - 1, num, \
+                    res += binary_search(array, 0, len(array) - 1, num,
                                          lambda array, x, y: array[x] > y)
             return res >= target
 
