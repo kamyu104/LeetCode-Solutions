@@ -4,9 +4,9 @@
 class Solution {
 public:
     int splitArray(vector<int>& nums, int m) {
-        int left = 0, right = 0;
+        long long left = 0, right = 0;
         for (const auto& num : nums) {
-            left = max(left, num);
+            if (left < num) left = num;
             right += num;
         }
 
@@ -23,7 +23,8 @@ public:
 
 private:
     bool canSplit(vector<int>& nums, int m, int sum) {
-        int cnt = 1, curr_sum = 0;
+        int cnt = 1;
+        long long curr_sum = 0;
         for (const auto& num : nums) {
             curr_sum += num;
             if (curr_sum > sum) {
