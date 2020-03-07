@@ -16,7 +16,8 @@ FROM
   (SELECT @accu := (CASE
                         WHEN username = @prev THEN @accu + 1
                         ELSE 1
-                    END) AS n, @prev := username AS username,
+                    END) AS n,
+          @prev := username AS username,
           activity,
           startDate,
           endDate
