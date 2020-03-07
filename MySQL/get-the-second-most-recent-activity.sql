@@ -7,6 +7,7 @@ GROUP BY username
 HAVING COUNT(1) = 1
 
 UNION ALL
+
 SELECT a.username,
        a.activity,
        a.startDate,
