@@ -19,7 +19,7 @@ private:
                int node, int t, int target,
                unordered_set<int> *lookup) {
         if (!(G.at(node).size() - int(node != ROOT)) || !t) {
-            return double(node == target);
+            return (node == target);
         }
         lookup->emplace(node);
         double result = 0.0;
