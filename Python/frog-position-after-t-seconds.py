@@ -13,10 +13,10 @@ class Solution(object):
         :type target: int
         :rtype: float
         """        
-        def dfs(G, node, t, target, parent):
+        def dfs(G, target, t, node, parent):
             if not (len(G[node])-(parent != 0)) or not t:
                 return float(node == target)
-            result = sum(dfs(G, child, t-1, target, node)
+            result = sum(dfs(G, target, t-1, child, node)
                          for child in G[node] if child != parent)
             return result/(len(G[node])-(parent != 0))
         
@@ -24,4 +24,4 @@ class Solution(object):
         for u, v in edges:
             G[u].append(v)
             G[v].append(u)
-        return dfs(G, 1, t, target, 0)
+        return dfs(G, target, t, 1, 0)
