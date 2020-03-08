@@ -13,17 +13,15 @@ class Solution(object):
         :type target: int
         :rtype: float
         """        
-        def dfs(G, node, t, target, lookup):
-            if not (len(G[node])-(node != ROOT)) or not t:
+        def dfs(G, node, t, target, parent):
+            if not (len(G[node])-(parent != 0)) or not t:
                 return float(node == target)
-            lookup.add(node)
-            result = sum(dfs(G, child, t-1, target, lookup)
-                         for child in G[node] if child not in lookup)
-            return result/(len(G[node])-(node != ROOT))
+            result = sum(dfs(G, child, t-1, target, node)
+                         for child in G[node] if child != parent)
+            return result/(len(G[node])-(parent != 0))
         
-        ROOT = 1
         G = collections.defaultdict(list)
         for u, v in edges:
             G[u].append(v)
             G[v].append(u)
-        return dfs(G, ROOT, t, target, set())
+        return dfs(G, 1, t, target, 0)
