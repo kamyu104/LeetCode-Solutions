@@ -11,7 +11,7 @@ public:
             G[edge[1]].emplace_back(edge[0]);
         }
         unordered_set<int> lookup;
-        return dfs(G, 1, t, target, &lookup);
+        return dfs(G, ROOT, t, target, &lookup);
     }
 
 private:
