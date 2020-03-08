@@ -16,7 +16,7 @@ public:
 private:
     double dfs(const unordered_map<int, vector<int>>& G,
                int target, int t, int node, int parent) {
-        if (!(G.at(node).size() - int(parent != 0)) || !t) {
+        if (!t || !(G.at(node).size() - int(parent != 0))) {
             return (node == target);
         }
         double result = 0.0;
