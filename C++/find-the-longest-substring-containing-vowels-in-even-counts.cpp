@@ -6,7 +6,7 @@ public:
     int findTheLongestSubstring(string s) {
         static const string VOWELS = "aeiou";
         int result = 0, mask = 0;
-        vector<int> lookup(32, -2);
+        vector<int> lookup(1 << VOWELS.length(), -2);
         lookup[0] = -1;
         for (int i = 0; i < s.length(); ++i) {
             const auto& pos = VOWELS.find(s[i]);
