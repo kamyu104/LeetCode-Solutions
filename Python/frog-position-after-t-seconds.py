@@ -14,7 +14,7 @@ class Solution(object):
         :rtype: float
         """        
         def dfs(G, target, t, node, parent):
-            if not (len(G[node])-(parent != 0)) or not t:
+            if not t or not (len(G[node])-(parent != 0)):
                 return float(node == target)
             result = sum(dfs(G, target, t-1, child, node)
                          for child in G[node] if child != parent)
