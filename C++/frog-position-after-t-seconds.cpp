@@ -10,12 +10,12 @@ public:
             G[edge[0]].emplace_back(edge[1]);
             G[edge[1]].emplace_back(edge[0]);
         }
-        return dfs(G, 1, t, target, 0);
+        return dfs(G, target, t, 1, 0);
     }
 
 private:
     double dfs(const unordered_map<int, vector<int>>& G,
-               int node, int t, int target, int parent) {
+               int target, int t, int node, int parent) {
         if (!(G.at(node).size() - int(parent != 0)) || !t) {
             return (node == target);
         }
@@ -24,7 +24,7 @@ private:
             if (child == parent) {
                 continue;
             }
-            result += dfs(G, child, t - 1, target, node);
+            result += dfs(G, target, t - 1, child, node);
         }
         return result / (G.at(node).size() - int(parent != 0));
     }
