@@ -1046,7 +1046,7 @@
 1367| [Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/) | [C++](./C++/linked-list-in-binary-tree.cpp) [Python](./Python/linked-list-in-binary-tree.py) | _O(n + l)_          | _O(h + l)_          | Medium           || `KMP Algorithm` |
 1372| [Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/) | [C++](./C++/longest-zigzag-path-in-a-binary-tree.cpp) [Python](./Python/longest-zigzag-path-in-a-binary-tree.py) | _O(n)_          | _O(h)_          | Medium           |||
 1376| [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/) | [C++](./C++/time-needed-to-inform-all-employees.cpp) [Python](./Python/time-needed-to-inform-all-employees.py) | _O(n)_          | _O(n)_          | Medium           |||
-1377| [Frog Position After T Seconds](https://leetcode.com/problems/frog-position-after-t-seconds/) | [C++](./C++/frog-position-after-t-seconds.cpp) [Python](./Python/frog-position-after-t-seconds.py) | _O(n)_          | _O(n)_          | Hard           |||
+1377| [Frog Position After T Seconds](https://leetcode.com/problems/frog-position-after-t-seconds/) | [C++](./C++/frog-position-after-t-seconds.cpp) [Python](./Python/frog-position-after-t-seconds.py) | _O(n)_          | _O(n)_          | Hard           || DFS, Stack, BFS|
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
