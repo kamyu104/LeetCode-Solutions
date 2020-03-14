@@ -1090,7 +1090,7 @@
 1255| [Maximum Score Words Formed by Letters](https://leetcode.com/problems/maximum-score-words-formed-by-letters/) | [C++](./C++/maximum-score-words-formed-by-letters.cpp) [Python](./Python/maximum-score-words-formed-by-letters.py)  | _O(n * 2^n)_ | _O(n)_ | Hard         |||
 1258| [Synonymous Sentences](https://leetcode.com/problems/synonymous-sentences/) | [C++](./C++/synonymous-sentences.cpp) [Python](./Python/synonymous-sentences.py)  | _O(p * l * log(p * l))_ | _O(p * l)_ | Medium         || Union Find |
 1307| [Verbal Arithmetic Puzzle](https://leetcode.com/problems/verbal-arithmetic-puzzle/) | [C++](./C++/verbal-arithmetic-puzzle.cpp) [Python](./Python/verbal-arithmetic-puzzle.py)  | _O(10! * n * l)_ | _O(n * l)_ | Hard         |||
-1379 | [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) | [C++](./C++/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.cpp) [Python](./Python/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.py) | _O(n)_ | _O(n)_      | Medium         || Stack |
+1379 | [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) | [C++](./C++/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.cpp) [Python](./Python/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.py) | _O(n)_ | _O(h)_      | Medium         || Stack |
 
 ## Dynamic Programming
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
