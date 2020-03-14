@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1377%20%2F%201377-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1379%20%2F%201379-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -1090,6 +1090,7 @@
 1255| [Maximum Score Words Formed by Letters](https://leetcode.com/problems/maximum-score-words-formed-by-letters/) | [C++](./C++/maximum-score-words-formed-by-letters.cpp) [Python](./Python/maximum-score-words-formed-by-letters.py)  | _O(n * 2^n)_ | _O(n)_ | Hard         |||
 1258| [Synonymous Sentences](https://leetcode.com/problems/synonymous-sentences/) | [C++](./C++/synonymous-sentences.cpp) [Python](./Python/synonymous-sentences.py)  | _O(p * l * log(p * l))_ | _O(p * l)_ | Medium         || Union Find |
 1307| [Verbal Arithmetic Puzzle](https://leetcode.com/problems/verbal-arithmetic-puzzle/) | [C++](./C++/verbal-arithmetic-puzzle.cpp) [Python](./Python/verbal-arithmetic-puzzle.py)  | _O(10! * n * l)_ | _O(n * l)_ | Hard         |||
+1379 | [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) | [C++](./C++/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.cpp) [Python](./Python/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.py) | _O(n)_ | _O(n)_      | Medium         || Stack |
 
 ## Dynamic Programming
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1461,6 +1462,7 @@
 1355| [Activity Participants](https://leetcode.com/problems/activity-participants/) | [MySQL](./MySQL/activity-participants.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1364| [Number of Trusted Contacts of a Customer](https://leetcode.com/problems/number-of-trusted-contacts-of-a-customer/) | [MySQL](./MySQL/number-of-trusted-contacts-of-a-customer.sql) | _O(n + m + l + nlogn)_ | _O(n + m + l)_       | Medium           |🔒| |
 1369| [Get the Second Most Recent Activity](https://leetcode.com/problems/get-the-second-most-recent-activity/) | [MySQL](./MySQL/get-the-second-most-recent-activity.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| |
+1378| [Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/) | [MySQL](./MySQL/replace-employee-id-with-the-unique-identifier.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
