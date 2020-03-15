@@ -931,7 +931,7 @@
 0776|[Split BST](https://leetcode.com/problems/split-bst/)| [C++](./C++/split-bst.cpp) [Python](./Python/split-bst.py)| _O(n)_ | _O(h)_ | Medium | 🔒 | |
 0783|[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)| [C++](./C++/minimum-distance-between-bst-nodes.cpp) [Python](./Python/minimum-distance-between-bst-nodes.py)| _O(n)_ | _O(h)_ | Easy | | |
 0510| [Inorder Successor in BST II](https://leetcode.com/problems/inorder-successor-in-bst-ii/)| [C++](./C++/inorder-successor-in-bst-ii.cpp) [Python](./Python/inorder-successor-in-bst-ii.py)   | _O(h)_          | _O(1)_          | Medium         | 🔒 | |
-1373| [Maximum Sum BST in Binary Tree](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/) | [C++](./C++/maximum-sum-bst-in-binary-tree.cpp) [Python](./Python/maximum-sum-bst-in-binary-tree.py) | _O(n)_          | _O(h)_          | Hard           || DFS |
+1373| [Maximum Sum BST in Binary Tree](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/) | [C++](./C++/maximum-sum-bst-in-binary-tree.cpp) [Python](./Python/maximum-sum-bst-in-binary-tree.py) | _O(n)_          | _O(h)_          | Hard           || DFS, Stack |
 1382| [Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/) | [C++](./C++/balance-a-binary-search-tree.cpp) [Python](./Python/balance-a-binary-search-tree.py) | _O(n)_          | _O(h)_          | Medium           || DFS, Stack |
 
 ## Breadth-First Search
