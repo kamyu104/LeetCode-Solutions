@@ -13,11 +13,11 @@
 class Solution {
 public:
     TreeNode* balanceBST(TreeNode* root) {
-        return orderedArrayToBst(inorderTraversal(root));
+        return sortedArrayToBst(inorderTraversal(root));
     }
 
 private:
-    TreeNode *orderedArrayToBst(const vector<int>& arr) {
+    TreeNode *sortedArrayToBst(const vector<int>& arr) {
         TreeNode *result = nullptr;
         vector<tuple<int, int, TreeNode**>> stk = {{0, arr.size(), &result}};
         while (!stk.empty()) {
