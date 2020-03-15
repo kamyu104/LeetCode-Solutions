@@ -13,12 +13,9 @@ class Solution(object):
         :type K: int
         :rtype: float
         """
-        workers = [[float(w)/q, q] for w, q in itertools.izip(wage, quality)]
-        workers.sort()
-        result = float("inf")
-        qsum = 0
+        result, qsum = float("inf"), 0
         max_heap = []
-        for r, q in workers:
+        for r, q in sorted([float(w)/q, q] for w, q in itertools.izip(wage, quality)):
             qsum += q
             heapq.heappush(max_heap, -q)
             if len(max_heap) > K:
