@@ -9,6 +9,7 @@ class TreeNode(object):
         self.right = None
 
 
+# dfs solution with stack
 class Solution(object):
     def balanceBST(self, root):
         """
@@ -54,6 +55,7 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(h)
+# dfs solution with recursion
 class Solution2(object):
     def balanceBST(self, root):
         """
