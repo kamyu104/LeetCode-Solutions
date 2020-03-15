@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1379%20%2F%201379-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1383%20%2F%201383-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -252,6 +252,7 @@
 1346 | [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/) | [C++](./C++/check-if-n-and-its-double-exist.cpp) [Python](./Python/check-if-n-and-its-double-exist.py) | _O(n)_ | _O(n)_      | Easy         || 
 1351 | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | [C++](./C++/count-negative-numbers-in-a-sorted-matrix.cpp) [Python](./Python/count-negative-numbers-in-a-sorted-matrix.py) | _O(m + n)_ | _O(1)_      | Easy         || 
 1375 | [Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii/) | [C++](./C++/bulb-switcher-iii.cpp) [Python](./Python/bulb-switcher-iii.py) | _O(n)_ | _O(1)_      | Medium         ||
+1380 | [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/) | [C++](./C++/lucky-numbers-in-a-matrix.cpp) [Python](./Python/lucky-numbers-in-a-matrix.py) | _O(m * n)_ | _O(m + n)_      | Easy         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -472,6 +473,7 @@
 0871 | [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/) | [C++](./C++/minimum-number-of-refueling-stops.cpp) [Python](./Python/minimum-number-of-refueling-stops.py) | _O(nlogn)_ | _O(n)_ | Hard || Sort |
 1046 | [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [C++](./C++/last-stone-weight.cpp) [Python](./Python/last-stone-weight.py) | _O(nlogn)_ | _O(n)_ | Easy |||
 1057| [Campus Bikes](https://leetcode.com/problems/campus-bikes/) | [C++](./C++/campus-bikes.cpp) [Python](./Python/campus-bikes.py) |  _O((w * b) * log(w * b))_ | _O(w * b)_   | Medium |🔒||
+1383 | [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | [C++](./C++/maximum-performance-of-a-team.cpp) [Python](./Python/maximum-performance-of-a-team.py) | _O(nlogn)_ | _O(n)_ | Hard | variant of [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | Sort |
 
 ## Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -930,6 +932,7 @@
 0783|[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)| [C++](./C++/minimum-distance-between-bst-nodes.cpp) [Python](./Python/minimum-distance-between-bst-nodes.py)| _O(n)_ | _O(h)_ | Easy | | |
 0510| [Inorder Successor in BST II](https://leetcode.com/problems/inorder-successor-in-bst-ii/)| [C++](./C++/inorder-successor-in-bst-ii.cpp) [Python](./Python/inorder-successor-in-bst-ii.py)   | _O(h)_          | _O(1)_          | Medium         | 🔒 | |
 1373| [Maximum Sum BST in Binary Tree](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/) | [C++](./C++/maximum-sum-bst-in-binary-tree.cpp) [Python](./Python/maximum-sum-bst-in-binary-tree.py) | _O(n)_          | _O(h)_          | Hard           || DFS |
+1382| [Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/) | [C++](./C++/balance-a-binary-search-tree.cpp) [Python](./Python/balance-a-binary-search-tree.py) | _O(n)_          | _O(h)_          | Medium           || DFS, Stack |
 
 ## Breadth-First Search
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1374,6 +1377,7 @@
 1348| [Tweet Counts Per Frequency](https://leetcode.com/problems/tweet-counts-per-frequency/) | [C++](./C++/tweet-counts-per-frequency.cpp) [Python](./Python/tweet-counts-per-frequency.py) | add: _O(logn)_<br>query: _O(c)_ | _O(n)_ | Medium |||
 1352| [Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/) | [C++](./C++/product-of-the-last-k-numbers.cpp) [Python](./Python/product-of-the-last-k-numbers.py) | ctor: _O(1)_<br>add: _O(1)_<br>get: _O(1)_ | _O(n)_ | Medium |||
 1357| [Apply Discount Every n Orders](https://leetcode.com/problems/apply-discount-every-n-orders/) | [C++](./C++/apply-discount-every-n-orders.cpp) [Python](./Python/apply-discount-every-n-orders.py) | ctor: _O(m)_<br>getBill: _O(p)_ | _O(m)_ | Medium |||
+1381| [Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/) | [C++](./C++/design-a-stack-with-increment-operation.cpp) [Python](./Python/design-a-stack-with-increment-operation.py) | ctor: _O(1)_<br>push: _O(1)_<br>pop: _O(1)_<br>increment: _O(1)_ | _O(n)_ | Medium |||
 
 ## Concurrency
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
