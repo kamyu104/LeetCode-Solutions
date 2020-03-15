@@ -33,10 +33,10 @@ class Solution(object):
             if not node:
                 ret[:] = [True, 0, float("inf"), float("-inf")]
                 continue
-            tmp = [[], []]
-            stk.append([node, tmp, ret])
-            stk.append([node.right, None, tmp[1]])
-            stk.append([node.left, None, tmp[0]])
+            new_tmp = [[], []]
+            stk.append([node, new_tmp, ret])
+            stk.append([node.right, None, new_tmp[1]])
+            stk.append([node.left, None, new_tmp[0]])
         return result
 
 
