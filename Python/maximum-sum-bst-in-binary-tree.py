@@ -9,7 +9,41 @@ class TreeNode(object):
         self.right = None
 
 
+# dfs solution with stack
 class Solution(object):
+    def maxSumBST(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        result = 0
+        stk = [[root, None, []]]
+        while stk:
+            node, tmp, ret = stk.pop()
+            if tmp:
+                lvalid, lsum, lmin, lmax = tmp[0]
+                rvalid, rsum, rmin, rmax = tmp[1]
+                if lvalid and rvalid and lmax < node.val < rmin:
+                    total = lsum + node.val + rsum
+                    result = max(result, total)
+                    ret[:] = [True, total, min(lmin, node.val), max(node.val, rmax)]
+                else:
+                    ret[:] = [False, 0, 0, 0]
+            else:
+                if not node:
+                    ret[:] = [True, 0, float("inf"), float("-inf")]
+                    continue
+                tmp = [[], []]
+                stk.append([node, tmp, ret])
+                stk.append([node.right, None, tmp[1]])
+                stk.append([node.left, None, tmp[0]])
+        return result
+
+
+# Time:  O(n)
+# Space: O(h)
+# dfs solution with recursion
+class Solution2(object):
     def maxSumBST(self, root):
         """
         :type root: TreeNode
