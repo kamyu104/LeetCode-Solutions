@@ -27,16 +27,16 @@ class Solution(object):
                     total = lsum + node.val + rsum
                     result = max(result, total)
                     ret[:] = [True, total, min(lmin, node.val), max(node.val, rmax)]
-                else:
-                    ret[:] = [False, 0, 0, 0]
-            else:
-                if not node:
-                    ret[:] = [True, 0, float("inf"), float("-inf")]
                     continue
-                tmp = [[], []]
-                stk.append([node, tmp, ret])
-                stk.append([node.right, None, tmp[1]])
-                stk.append([node.left, None, tmp[0]])
+                ret[:] = [False, 0, 0, 0]
+                continue
+            if not node:
+                ret[:] = [True, 0, float("inf"), float("-inf")]
+                continue
+            tmp = [[], []]
+            stk.append([node, tmp, ret])
+            stk.append([node.right, None, tmp[1]])
+            stk.append([node.left, None, tmp[0]])
         return result
 
 
