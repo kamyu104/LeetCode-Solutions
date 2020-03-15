@@ -69,16 +69,17 @@ class Solution2(object):
                 inorderTraversalHelper(node.right, arr)
 
             arr = []
-            inorderTraversalHelper(root, vals)
+            inorderTraversalHelper(root, arr)
             return arr
         
         def orderedArrayToBst(arr, i, j):
             if i >= j:
                 return None
             mid = i + (j-i)//2
-            return TreeNode(arr[mid],
-                            orderedArrayToBst(arr, i, mid),
-                            orderedArrayToBst(arr, mid+1, j))
+            node = TreeNode(arr[mid])
+            node.left = orderedArrayToBst(arr, i, mid)
+            node.right = orderedArrayToBst(arr, mid+1, j)
+            return node
         
         arr = inorderTraversal(root)
         return orderedArrayToBst(arr, 0, len(arr))
