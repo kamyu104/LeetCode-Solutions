@@ -28,21 +28,21 @@ public:
                     const auto& total = lsum + node->val + rsum;
                     result = max(result, total);
                     *ret = {true, total, min(lmin, node->val), max(node->val, rmax)};
-                } else {
-                    *ret = {false, 0, 0, 0};
-                }
-            } else {
-                if (!node) {
-                    *ret = {true, 0,
-                            numeric_limits<int>::max(),
-                            numeric_limits<int>::min()};
                     continue;
                 }
-                const auto& tmp = make_shared<vector<RET>>(2);
-                stk.emplace_back(node, tmp, ret);
-                stk.emplace_back(node->right, nullptr, &((*tmp)[1]));
-                stk.emplace_back(node->left, nullptr, &((*tmp)[0]));
+                *ret = {false, 0, 0, 0};
+                continue;
             }
+            if (!node) {
+                *ret = {true, 0,
+                        numeric_limits<int>::max(),
+                        numeric_limits<int>::min()};
+                continue;
+            }
+            const auto& new_tmp = make_shared<vector<RET>>(2);
+            stk.emplace_back(node, new_tmp, ret);
+            stk.emplace_back(node->right, nullptr, &((*new_tmp)[1]));
+            stk.emplace_back(node->left, nullptr, &((*new_tmp)[0]));
         }
         return result;
     }
