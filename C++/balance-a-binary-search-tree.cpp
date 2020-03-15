@@ -73,7 +73,7 @@ private:
             return nullptr;
         }
         const auto& mid = i + (j - i) / 2;
-        TreeNode *result = new TreeNode(arr[mid]);
+        auto result = new TreeNode(arr[mid]);
         result->left = sortedArrayToBstHelper(arr, i, mid);
         result->right = sortedArrayToBstHelper(arr, mid + 1, j);
         return result;
