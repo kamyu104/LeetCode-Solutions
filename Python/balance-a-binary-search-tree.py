@@ -29,7 +29,7 @@ class Solution(object):
                     stk.append((node.left, False))
             return result
     
-        def orderedArrayToBst(arr):
+        def sortedArrayToBst(arr):
             ROOT, LEFT, RIGHT = range(3)
             result = [None]
             stk = [(0, len(arr), ROOT, result)]
@@ -49,7 +49,7 @@ class Solution(object):
                 stk.append((i, mid, LEFT, [node]))
             return result[0]
         
-        return orderedArrayToBst(inorderTraversal(root))
+        return sortedArrayToBst(inorderTraversal(root))
 
 
 # Time:  O(n)
@@ -72,14 +72,14 @@ class Solution2(object):
             inorderTraversalHelper(root, arr)
             return arr
         
-        def orderedArrayToBst(arr, i, j):
+        def sortedArrayToBst(arr, i, j):
             if i >= j:
                 return None
             mid = i + (j-i)//2
             node = TreeNode(arr[mid])
-            node.left = orderedArrayToBst(arr, i, mid)
-            node.right = orderedArrayToBst(arr, mid+1, j)
+            node.left = sortedArrayToBst(arr, i, mid)
+            node.right = sortedArrayToBst(arr, mid+1, j)
             return node
         
         arr = inorderTraversal(root)
-        return orderedArrayToBst(arr, 0, len(arr))
+        return sortedArrayToBst(arr, 0, len(arr))
