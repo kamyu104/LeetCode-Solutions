@@ -62,26 +62,22 @@ class Solution2(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
-        def inorderTraversal(root):
-            def inorderTraversalHelper(node, arr):
-                if not node:
-                    return
-                inorderTraversalHelper(node.left, arr)
-                arr.append(node.val)
-                inorderTraversalHelper(node.right, arr)
-
-            arr = []
-            inorderTraversalHelper(root, arr)
-            return arr
+        def inorderTraversalHelper(node, arr):
+            if not node:
+                return
+            inorderTraversalHelper(node.left, arr)
+            arr.append(node.val)
+            inorderTraversalHelper(node.right, arr)
         
-        def sortedArrayToBst(arr, i, j):
+        def sortedArrayToBstHelper(arr, i, j):
             if i >= j:
                 return None
             mid = i + (j-i)//2
             node = TreeNode(arr[mid])
-            node.left = sortedArrayToBst(arr, i, mid)
-            node.right = sortedArrayToBst(arr, mid+1, j)
+            node.left = sortedArrayToBstHelper(arr, i, mid)
+            node.right = sortedArrayToBstHelper(arr, mid+1, j)
             return node
         
-        arr = inorderTraversal(root)
-        return sortedArrayToBst(arr, 0, len(arr))
+        arr = []
+        inorderTraversalHelper(root, arr)
+        return sortedArrayToBstHelper(arr, 0, len(arr))
