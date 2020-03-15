@@ -10,6 +10,8 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
+// dfs solution with stack
 class Solution {
 public:
     TreeNode* balanceBST(TreeNode* root) {
@@ -51,5 +53,38 @@ private:
             }
         }
         return result;
+    }
+};
+
+// Time:  O(n)
+// Space: O(h)
+// dfs solution with recursion
+class Solution2 {
+public:
+    TreeNode* balanceBST(TreeNode* root) {
+        vector<int> arr;
+        inorderTraversalHelper(root, &arr);
+        return sortedArrayToBstHelper(arr, 0, arr.size());
+    }
+
+private:
+    TreeNode *sortedArrayToBstHelper(const vector<int>& arr, int i, int j) {
+        if (i >= j) {
+            return nullptr;
+        }
+        const auto& mid = i + (j - i) / 2;
+        TreeNode *result = new TreeNode(arr[mid]);
+        result->left = sortedArrayToBstHelper(arr, i, mid);
+        result->right = sortedArrayToBstHelper(arr, mid + 1, j);
+        return result;
+    }
+    
+    void inorderTraversalHelper(TreeNode* root, vector<int> *arr) {
+        if (!root) {
+            return;
+        }
+        inorderTraversalHelper(root->left, arr);
+        arr->emplace_back(root->val);
+        inorderTraversalHelper(root->right, arr);
     }
 };
