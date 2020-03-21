@@ -5,8 +5,8 @@ SELECT product_id,
        product_name, 
        report_year, 
        (Datediff( 
-           CASE WHEN Year(period_end)   > report_year THEN CONCAT(report_year, '-12-31') ELSE period_end   END,
-           CASE WHEN Year(period_start) < report_year THEN CONCAT(report_year, '-01-01') ELSE period_start END
+           CASE WHEN YEAR(period_end)   > report_year THEN CONCAT(report_year, '-12-31') ELSE period_end   END,
+           CASE WHEN YEAR(period_start) < report_year THEN CONCAT(report_year, '-01-01') ELSE period_start END
         ) + 1) * average_daily_sales AS total_amount
 FROM   (SELECT s.product_id,
                product_name,
