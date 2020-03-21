@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1384%20%2F%201384-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1388%20%2F%201388-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -915,6 +915,7 @@
 1274 | [Number of Ships in a Rectangle](https://leetcode.com/problems/number-of-ships-in-a-rectangle/) | [C++](./C++/number-of-ships-in-a-rectangle.cpp) [Python](./Python/number-of-ships-in-a-rectangle.py) | _O(log(m * n))_ | _O(log(m * n))_ | Hard | | Divide and Conquer
 1283 | [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | [C++](./C++/find-the-smallest-divisor-given-a-threshold.cpp) [Python](./Python/find-the-smallest-divisor-given-a-threshold.py) | _O(logn)_ | _O(1)_ | Medium | |
 1287 | [Element Appearing More Than 25% In Sorted Array](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/) | [C++](./C++/element-appearing-more-than-25-in-sorted-array.cpp) [Python](./Python/element-appearing-more-than-25-in-sorted-array.py) | _O(logn)_ | _O(1)_ | Easy | |
+1385 | [Find the Distance Value Between Two Arrays](https://leetcode.com/problems/efind-the-distance-value-between-two-arrays/) | [C++](./C++/find-the-distance-value-between-two-arrays.cpp) [Python](./Python/find-the-distance-value-between-two-arrays.py) | _O((n + m) * logm)_ | _O(1)_ | Easy | | Binary Search, Two Pointers
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1243,6 +1244,8 @@
 1335 | [Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/) | [C++](./C++/minimum-difficulty-of-a-job-schedule.cpp) [Python](./Python/minimum-difficulty-of-a-job-schedule.py) | _O(d * n^2)_ | _O(d * n)_ | Hard | | |
 1340 | [Jump Game V](https://leetcode.com/problems/jump-game-v/) | [C++](./C++/jump-game-v.cpp) [Python](./Python/jump-game-v.py) | _O(n)_ | _O(n)_ | Hard | | Sliding Window, Mono Stack, Segment Tree |
 1349 | [Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam/) | [C++](./C++/maximum-students-taking-exam.cpp) [Python](./Python/maximum-students-taking-exam.py) | _O(m * n * sqrt(m * n))_ | _O(m + n)_ | Hard | [GCJ2008 - Round 3](https://code.google.com/codejam/contest/32002/dashboard#s=p2) | `Hopcroft-Karp Bipartite Matching`, `Hungarian Bipartite Matching` |
+1387 | [Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value/) | [C++](./C++/sort-integers-by-the-power-value.cpp) [Python](./Python/sort-integers-by-the-power-value.py) | _O(n)_ on average| _O(n)_ | Medium | | Quick Select |
+1388| [Pizza With 3n Slices](https://leetcode.com/problems/pizza-with-3n-slices/)| [C++](./C++/pizza-with-3n-slices.cpp) [Python](./Python/pizza-with-3n-slices.py) | _O(n^2)_          | _O(n)_          | Hard           | variant of [House Robber II](https://leetcode.com/problems/house-robber-ii/) |
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1311,6 +1314,7 @@
 1338 | [Reduce Array Size to The Half](https://leetcode.com/problems/reduce-array-size-to-the-half/) | [C++](./C++/reduce-array-size-to-the-half.cpp) [Python](./Python/reduce-array-size-to-the-half.py) | _O(n)_ | _O(n)_ | Medium || Counting Sort
 1353| [Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/)  | [C++](./C++/maximum-number-of-events-that-can-be-attended.cpp) [Python](./Python/maximum-number-of-events-that-can-be-attended.py) | _O(r + nlogn)_        | _O(n)_          | Medium           | | Heap, Sort |
 1354| [Construct Target Array With Multiple Sums](https://leetcode.com/problems/construct-target-array-with-multiple-sums/)  | [C++](./C++/construct-target-array-with-multiple-sums.cpp) [Python](./Python/construct-target-array-with-multiple-sums.py) | _O(log(max(t)) * logn)_        | _O(n)_          | Hard           | | Heap |
+1386| [Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/)  | [C++](./C++/cinema-seat-allocation.cpp) [Python](./Python/cinema-seat-allocation.py) | _O(n)_        | _O(n)_          | Medium           | | |
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
