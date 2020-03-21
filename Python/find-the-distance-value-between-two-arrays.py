@@ -1,5 +1,5 @@
 # Time:  O(nlogn)
-# Space: O(n)
+# Space: O(1)
 
 class Solution(object):
     def findTheDistanceValue(self, arr1, arr2, d):
@@ -18,3 +18,26 @@ class Solution(object):
             result += arr2[j]-arr1[i] > d
             i += 1
         return result+len(arr1)-i
+
+
+# Time:  O(nlogn)
+# Space: O(1)
+import bisect
+
+
+class Solution2(object):
+    def findTheDistanceValue(self, arr1, arr2, d):
+        """
+        :type arr1: List[int]
+        :type arr2: List[int]
+        :type d: int
+        :rtype: int
+        """
+        arr2.sort()
+        result, i, j = 0, 0, 0
+        for x in arr1:
+            j = bisect.bisect_left(arr2, x)
+            left = arr2[j-1] if j-1 >= 0 else float("-inf")
+            right = arr2[j] if j < len(arr2) else float("inf")
+            result += x-left > d and right-x > d
+        return result
