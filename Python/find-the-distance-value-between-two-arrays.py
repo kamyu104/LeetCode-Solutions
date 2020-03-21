@@ -4,7 +4,7 @@
 import bisect
 
 
-class Solution2(object):
+class Solution(object):
     def findTheDistanceValue(self, arr1, arr2, d):
         """
         :type arr1: List[int]
