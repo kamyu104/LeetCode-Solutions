@@ -16,7 +16,7 @@ public:
 private:
     int power_value(int x) {
         int y = x;
-        if (!Solution::lookup_.count(y)) {
+        if (!Solution::dp_.count(y)) {
             int result = 0;
             while (x > 1) {
                 ++result;
@@ -25,15 +25,19 @@ private:
                 } else {
                     x >>= 1;
                 }
+                if (Solution::dp_.count(x)) {
+                    result += Solution::dp_[x];
+                    break;
+                }
             }
-            Solution::lookup_[y] = result;
+            Solution::dp_[y] = result;
         }
-        return Solution::lookup_[y];
+        return Solution::dp_[y];
     }
     
-    static unordered_map<int, int> lookup_;
+    static unordered_map<int, int> dp_;
 };
-unordered_map<int, int> Solution::lookup_;
+unordered_map<int, int> Solution::dp_;
 
 
 // Time:  O(nlogn)
@@ -52,7 +56,7 @@ public:
 private:
     int power_value(int x) {
         int y = x;
-        if (!Solution2::lookup_.count(y)) {
+        if (!Solution2::dp_.count(y)) {
             int result = 0;
             while (x > 1) {
                 ++result;
@@ -61,12 +65,16 @@ private:
                 } else {
                     x >>= 1;
                 }
+                if (Solution2::dp_.count(x)) {
+                    result += Solution2::dp_[x];
+                    break;
+                }
             }
-            Solution2::lookup_[y] = result;
+            Solution2::dp_[y] = result;
         }
-        return Solution2::lookup_[y];
+        return Solution2::dp_[y];
     }
     
-    static unordered_map<int, int> lookup_;
+    static unordered_map<int, int> dp_;
 };
-unordered_map<int, int> Solution2::lookup_;
+unordered_map<int, int> Solution2::dp_;
