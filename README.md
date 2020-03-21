@@ -915,7 +915,7 @@
 1274 | [Number of Ships in a Rectangle](https://leetcode.com/problems/number-of-ships-in-a-rectangle/) | [C++](./C++/number-of-ships-in-a-rectangle.cpp) [Python](./Python/number-of-ships-in-a-rectangle.py) | _O(log(m * n))_ | _O(log(m * n))_ | Hard | | Divide and Conquer
 1283 | [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | [C++](./C++/find-the-smallest-divisor-given-a-threshold.cpp) [Python](./Python/find-the-smallest-divisor-given-a-threshold.py) | _O(logn)_ | _O(1)_ | Medium | |
 1287 | [Element Appearing More Than 25% In Sorted Array](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/) | [C++](./C++/element-appearing-more-than-25-in-sorted-array.cpp) [Python](./Python/element-appearing-more-than-25-in-sorted-array.py) | _O(logn)_ | _O(1)_ | Easy | |
-1385 | [Find the Distance Value Between Two Arrays](https://leetcode.com/problems/efind-the-distance-value-between-two-arrays/) | [C++](./C++/find-the-distance-value-between-two-arrays.cpp) [Python](./Python/find-the-distance-value-between-two-arrays.py) | _O((n + m) * logm)_ | _O(1)_ | Easy | | Binary Search, Two Pointers
+1385 | [Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/) | [C++](./C++/find-the-distance-value-between-two-arrays.cpp) [Python](./Python/find-the-distance-value-between-two-arrays.py) | _O((n + m) * logm)_ | _O(1)_ | Easy | | Binary Search, Two Pointers
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
