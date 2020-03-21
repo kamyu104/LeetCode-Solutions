@@ -10,7 +10,7 @@
 //   - because it's impossible to have only one unwanted slices between all wanted slices.
 //     if it's true, there will be 3N'/2 unwanted slices rather than 2N' unwanted ones, -><-
 //   - so we can always find a sequence of two unwanted slices with one wanted slice
-//     to take firstly, then take the remaining N ones by induction (QED)
+//     to take firstly, then we can find a way to take the remaining N ones by induction, QED
 
 // better optimized space
 class Solution {
