@@ -31,8 +31,8 @@ public:
     }
 };
 
-// Time:  O(n)
-// Space: O(n)
+// Time:  O(nlogn)
+// Space: O(1)
 class Solution2 {
 public:
     int maxNumberOfFamilies(int n, vector<vector<int>>& reservedSeats) {
