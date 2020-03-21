@@ -25,7 +25,8 @@ FROM   (SELECT s.product_id,
        ) AS y
 WHERE  YEAR(period_start) <= report_year AND 
        YEAR(period_end)   >= report_year
-GROUP  BY product_id, report_year
+GROUP  BY product_id,
+          report_year
 ORDER  BY product_id,
           report_year;
            
