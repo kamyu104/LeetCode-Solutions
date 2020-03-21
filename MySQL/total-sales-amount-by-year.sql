@@ -45,7 +45,7 @@ FROM   ((SELECT product_id,
                             CASE WHEN period_end   > '2018-12-31' THEN '2018-12-31' ELSE period_end   END,
                             CASE WHEN period_start < '2018-01-01' THEN '2018-01-01' ELSE period_start END
                         ) + 1 AS days 
-                 FROM   sales s ) tmp 
+                 FROM   sales s) tmp 
          ) 
         UNION ALL
         (SELECT product_id, 
