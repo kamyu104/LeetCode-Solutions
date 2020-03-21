@@ -15,23 +15,16 @@ public:
 
 private:
     int power_value(int x) {
-        int y = x;
-        if (!Solution::dp_.count(y)) {
-            int result = 0;
-            while (x > 1) {
-                ++result;
-                if (x & 1) {
-                    x = 3 * x + 1;
-                } else {
-                    x >>= 1;
-                }
-                if (Solution::dp_.count(x)) {
-                    result += Solution::dp_[x];
-                    break;
-                }
+        int y = x, result = 0;
+        while (x > 1 && !Solution::dp_.count(x)) {
+            ++result;
+            if (x & 1) {
+                x = 3 * x + 1;
+            } else {
+                x >>= 1;
             }
-            Solution::dp_[y] = result;
         }
+        Solution::dp_[y] = result + Solution::dp_[x];
         return Solution::dp_[y];
     }
     
@@ -55,23 +48,16 @@ public:
 
 private:
     int power_value(int x) {
-        int y = x;
-        if (!Solution2::dp_.count(y)) {
-            int result = 0;
-            while (x > 1) {
-                ++result;
-                if (x & 1) {
-                    x = 3 * x + 1;
-                } else {
-                    x >>= 1;
-                }
-                if (Solution2::dp_.count(x)) {
-                    result += Solution2::dp_[x];
-                    break;
-                }
+        int y = x, result = 0;
+        while (x > 1 && !Solution2::dp_.count(x)) {
+            ++result;
+            if (x & 1) {
+                x = 3 * x + 1;
+            } else {
+                x >>= 1;
             }
-            Solution2::dp_[y] = result;
         }
+        Solution2::dp_[y] = result + Solution2::dp_[x];
         return Solution2::dp_[y];
     }
     
