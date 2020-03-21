@@ -31,7 +31,8 @@ ORDER  BY product_id,
            
            
 # Time:  O(nlogn)
-# Space: O(n)           
+# Space: O(n)
+
 SELECT r.product_id, 
        product_name, 
        report_year, 
@@ -42,11 +43,13 @@ FROM   ((SELECT product_id,
          FROM   (SELECT product_id, 
                         average_daily_sales, 
                         DATEDIFF(
-                            CASE WHEN period_end   > '2018-12-31' THEN '2018-12-31' ELSE period_end   END,
-                            CASE WHEN period_start < '2018-01-01' THEN '2018-01-01' ELSE period_start END
+                             CASE WHEN Year(period_end) > '2018' THEN '2018-12-31'
+                             ELSE period_end END,
+                             CASE WHEN Year(period_start) < '2018'  THEN '2018-01-01'
+                             ELSE period_start END
                         ) + 1 AS days 
-                 FROM   sales s) tmp 
-         ) 
+                 FROM   sales s ) tmp 
+         WHERE  days > 0) 
         UNION ALL
         (SELECT product_id, 
                 '2019'                     AS report_year, 
@@ -54,11 +57,11 @@ FROM   ((SELECT product_id,
          FROM   (SELECT product_id, 
                         average_daily_sales, 
                         DATEDIFF(
-                            CASE WHEN period_end   > '2019-12-31' THEN '2019-12-31' ELSE period_end   END,
-                            CASE WHEN period_start < '2019-01-01' THEN '2019-01-01' ELSE period_start END
+                             CASE WHEN period_end > '2019-12-31' THEN '2019-12-31' ELSE period_end END,
+                             CASE WHEN period_start < '2019-01-01' THEN '2019-01-01' ELSE period_start END
                         ) + 1 AS days 
                  FROM   sales s) tmp 
-        ) 
+         WHERE  days > 0) 
         UNION ALL
         (SELECT product_id, 
                 '2020'                     AS report_year, 
@@ -66,13 +69,17 @@ FROM   ((SELECT product_id,
          FROM   (SELECT product_id, 
                         average_daily_sales, 
                         DATEDIFF(
-                            CASE WHEN period_end   > '2020-12-31' THEN '2020-12-31' ELSE period_end   END,
-                            CASE WHEN period_start < '2020-01-01' THEN '2020-01-01' ELSE period_start END
+                             CASE WHEN Year(period_end) > '2020' THEN '2020-12-31'
+                             ELSE period_end END,
+                             CASE WHEN Year(period_start) < '2020'  THEN '2020-01-01'
+                             ELSE period_start END
                         ) + 1 AS days 
                  FROM   sales s) tmp 
-         ) r
-         INNER JOIN product p
-         ON r.product_id = p.product_id
+         WHERE  days > 0)
+       ) r
+       INNER JOIN product p
+      ON r.product_id = p.product_id
 ORDER  BY r.product_id, 
-          report_year;
+          report_year ;
+          
           
