@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-SELECT r.product_id, 
+SELECT product_id, 
        product_name, 
        report_year, 
        (Datediff( 
@@ -25,8 +25,8 @@ FROM   (SELECT s.product_id,
        ) AS y
 WHERE  YEAR(period_start) <= report_year AND 
        YEAR(period_end)   >= report_year
-GROUP  BY r.product_id, report_year
-ORDER  BY r.product_id,
+GROUP  BY product_id, report_year
+ORDER  BY product_id,
           report_year;
            
            
