@@ -2,7 +2,7 @@
 // Space: O(n)
 
 // [observation]
-// 1. we can never take two adjacent slices.
+// 1. we can never take two adjacent slices
 // 2. if we want some set of N / 3 non-adjacent slices, there is always a way to take
 //
 // [proof]
