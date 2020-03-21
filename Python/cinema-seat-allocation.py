@@ -31,7 +31,7 @@ class Solution(object):
 
 
 # Time:  O(nlogn)
-# Space: O(n)
+# Space: O(1)
 class Solution2(object):
     def maxNumberOfFamilies(self, n, reservedSeats):
         """
