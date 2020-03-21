@@ -1,9 +1,10 @@
 // Time:  O(n^2)
 // Space: O(n)
 
+// by observation:
 // 1. we can never take two adjacent slices.
 // 2. if we want some set of N / 3 non-adjacent slices, there is always a way to take
-// by induction:
+// prove by induction:
 // - for N = 3, it is obviously true.
 // - for N' = N + 3,
 //   - because it's impossible to have only one unwanted slices between all wanted slices.
