@@ -4,7 +4,7 @@
 SELECT product_id, 
        product_name, 
        report_year, 
-       (Datediff( 
+       (DATEDIFF( 
            CASE WHEN YEAR(period_end)   > report_year THEN CONCAT(report_year, '-12-31') ELSE period_end   END,
            CASE WHEN YEAR(period_start) < report_year THEN CONCAT(report_year, '-01-01') ELSE period_start END
         ) + 1) * average_daily_sales AS total_amount
@@ -41,7 +41,7 @@ FROM   ((SELECT product_id,
                 days * average_daily_sales AS total_amount 
          FROM   (SELECT product_id, 
                         average_daily_sales, 
-                        Datediff(
+                        DATEDIFF(
                             CASE WHEN period_end   > '2018-12-31' THEN '2018-12-31' ELSE period_end   END,
                             CASE WHEN period_start < '2018-01-01' THEN '2018-01-01' ELSE period_start END
                         ) + 1 AS days 
@@ -53,7 +53,7 @@ FROM   ((SELECT product_id,
                 days * average_daily_sales AS total_amount 
          FROM   (SELECT product_id, 
                         average_daily_sales, 
-                        Datediff(
+                        DATEDIFF(
                             CASE WHEN period_end   > '2019-12-31' THEN '2019-12-31' ELSE period_end   END,
                             CASE WHEN period_start < '2019-01-01' THEN '2019-01-01' ELSE period_start END
                         ) + 1 AS days 
@@ -65,7 +65,7 @@ FROM   ((SELECT product_id,
                 days * average_daily_sales AS total_amount 
          FROM   (SELECT product_id, 
                         average_daily_sales, 
-                        Datediff(
+                        DATEDIFF(
                             CASE WHEN period_end   > '2020-12-31' THEN '2020-12-31' ELSE period_end   END,
                             CASE WHEN period_start < '2020-01-01' THEN '2020-01-01' ELSE period_start END
                         ) + 1 AS days 
