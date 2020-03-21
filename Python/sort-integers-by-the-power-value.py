@@ -37,7 +37,7 @@ class Solution(object):
                 else:  # new_pivot_idx < n
                     left = new_pivot_idx + 1
                     
-        def collatz_steps(x):
+        def power_value(x):
             y = x
             if x not in Solution.lookup:
                 result = 0
@@ -50,7 +50,7 @@ class Solution(object):
                 Solution.lookup[y] = result
             return Solution.lookup[y], y
         
-        arr = map(collatz_steps, range(lo, hi+1))
+        arr = map(power_value, range(lo, hi+1))
         nth_element(arr, k-1)
         return arr[k-1][1]
 
@@ -67,7 +67,7 @@ class Solution2(object):
         :type k: int
         :rtype: int
         """
-        def collatz_steps(x):
+        def power_value(x):
             y = x
             if x not in Solution2.lookup:
                 result = 0
@@ -80,4 +80,4 @@ class Solution2(object):
                 Solution2.lookup[y] = result
             return Solution2.lookup[y], y
         
-        return sorted(range(lo, hi+1), key=collatz_steps)[k-1]
+        return sorted(range(lo, hi+1), key=power_value)[k-1]
