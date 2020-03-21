@@ -5,7 +5,7 @@ import random
 
 
 class Solution(object):
-    lookup = {}
+    dp = {}
 
     def getKth(self, lo, hi, k):
         """
@@ -39,7 +39,7 @@ class Solution(object):
                     
         def power_value(x):
             y = x
-            if x not in Solution.lookup:
+            if x not in Solution.dp:
                 result = 0
                 while x > 1:
                     result += 1
@@ -47,8 +47,11 @@ class Solution(object):
                         x = 3*x + 1
                     else:
                         x //= 2
-                Solution.lookup[y] = result
-            return Solution.lookup[y], y
+                    if x in Solution.dp:
+                        result += Solution.dp[x]
+                        break
+                Solution.dp[y] = result
+            return Solution.dp[y], y
         
         arr = map(power_value, range(lo, hi+1))
         nth_element(arr, k-1)
@@ -58,7 +61,7 @@ class Solution(object):
 # Time:  O(nlogn)
 # Space: O(n)
 class Solution2(object):
-    lookup = {}
+    dp = {}
 
     def getKth(self, lo, hi, k):
         """
@@ -69,7 +72,7 @@ class Solution2(object):
         """
         def power_value(x):
             y = x
-            if x not in Solution2.lookup:
+            if x not in Solution2.dp:
                 result = 0
                 while x > 1:
                     result += 1
@@ -77,7 +80,10 @@ class Solution2(object):
                         x = 3*x + 1
                     else:
                         x //= 2
-                Solution2.lookup[y] = result
-            return Solution2.lookup[y], y
+                    if x in Solution2.dp:
+                        result += Solution2.dp[x]
+                        break
+                Solution2.dp[y] = result
+            return Solution2.dp[y], y
         
         return sorted(range(lo, hi+1), key=power_value)[k-1]
