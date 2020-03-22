@@ -41,7 +41,7 @@ public:
             suffix = (suffix + (s[i] - 'a') * power % M) % M;
             power = (power * D) % M;
             if (prefix == suffix) {
-                // we assume M is a very large prime without collision
+                // we assume M is a very large prime without hash collision
                 // assert(check(i + 1, s));
                 result = i + 1;
             }
