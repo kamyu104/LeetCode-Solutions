@@ -37,7 +37,7 @@ class Solution(object):
 
     
 # Time:  O(n * sqrt(n))
-# Space: O(sqrt(n))
+# Space: O(1)
 class Solution2(object):
     def sumFourDivisors(self, nums):
         """
