@@ -54,6 +54,9 @@ public:
                 facs.emplace_back(i);
                 if (i != num / i) {
                     facs.emplace_back(num / i);
+                    if (facs.size() > 4) {
+                        break;
+                    }
                 }
             }
             if (facs.size() == 4) {
