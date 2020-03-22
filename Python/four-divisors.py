@@ -54,6 +54,8 @@ class Solution2(object):
                 facs.append(i)
                 if i != num//i:
                     facs.append(num//i)
+                    if len(facs) > 4:
+                        break
                 i += 1
             if len(facs) == 4:            
                 result += sum(facs)
