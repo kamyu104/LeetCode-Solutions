@@ -10,7 +10,7 @@ class Solution(object):
         """
         for i in xrange(len(nums)):
             for j in xrange(i):
-                if index[i] <= index[j]:
+                if index[j] >= index[i]:
                     index[j] += 1
         result = [0]*(len(nums))
         for i in xrange(len(nums)):
