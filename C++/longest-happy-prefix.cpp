@@ -50,9 +50,9 @@ public:
     }
 
 private:
-    bool check(int index, const string& s) {
-        for (int i = 0; i < index; ++i) {
-            if (s[i] != s[s.length() - index + i]) {
+    bool check(int l, const string& s) {
+        for (int i = 0; i < l; ++i) {
+            if (s[i] != s[s.length() - l + i]) {
                 return false;
             }
         }
