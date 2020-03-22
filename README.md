@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1388%20%2F%201388-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1392%20%2F%201392-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -253,6 +253,7 @@
 1351 | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | [C++](./C++/count-negative-numbers-in-a-sorted-matrix.cpp) [Python](./Python/count-negative-numbers-in-a-sorted-matrix.py) | _O(m + n)_ | _O(1)_      | Easy         || 
 1375 | [Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii/) | [C++](./C++/bulb-switcher-iii.cpp) [Python](./Python/bulb-switcher-iii.py) | _O(n)_ | _O(1)_      | Medium         ||
 1380 | [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/) | [C++](./C++/lucky-numbers-in-a-matrix.cpp) [Python](./Python/lucky-numbers-in-a-matrix.py) | _O(m * n)_ | _O(m + n)_      | Easy         ||
+1389 | [Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order/) | [C++](./C++/create-target-array-in-the-given-order.cpp) [Python](./Python/create-target-array-in-the-given-order.py) | _O(n^2)_ | _O(1)_      | Easy         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -368,6 +369,7 @@
 1370 | [Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string/) | [C++](./C++/increasing-decreasing-string.cpp) [Python](./Python/increasing-decreasing-string.py) | _O(n)_ | _O(1)_ | Easy | | Sort |
 1371 | [Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/) | [C++](./C++/find-the-longest-substring-containing-vowels-in-even-counts.cpp) [Python](./Python/find-the-longest-substring-containing-vowels-in-even-counts.py) | _O(n)_ | _O(1)_ | Medium | |
 1374 | [Generate a String With Characters That Have Odd Count](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/) | [C++](./C++/generate-a-string-with-characters-that-have-odd-counts.cpp) [Python](./Python/generate-a-string-with-characters-that-have-odd-counts.py) | _O(n)_ | _O(1)_ | Easy | |
+1392| [Longest Happy Prefix](https://leetcode.com/problems/longest-happy-prefix/) | [C++](./C++/longest-happy-prefix.cpp)  [Python](./Python/longest-happy-prefix.py) | _O(n)_ | _O(n)_ | Hard         || `KMP Algorithm` `Rabin-Karp Algorithm` |
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -756,6 +758,7 @@
 1360| [Number of Days Between Two Dates](https://leetcode.com/problems/number-of-days-between-two-dates/) | [C++](./C++/number-of-days-between-two-dates.cpp) [Python](./Python/number-of-days-between-two-dates.py) | _O(1)_ | _O(1)_ |  Easy | variant of [Day of the Year](https://leetcode.com/problems/day-of-the-year/) |
 1362| [Closest Divisors](https://leetcode.com/problems/closest-divisors/) | [C++](./C++/closest-divisors.cpp) [Python](./Python/closest-divisors.py) | _O(sqrt(n))_ | _O(1)_ |  Medium | |
 1363| [Largest Multiple of Three](https://leetcode.com/problems/largest-multiple-of-three/) | [C++](./C++/largest-multiple-of-three.cpp) [Python](./Python/largest-multiple-of-three.py) | _O(n)_ | _O(1)_ |  Hard | |
+1390| [Four Divisors](https://leetcode.com/problems/four-divisors/) | [C++](./C++/four-divisors.cpp) [Python](./Python/four-divisors.py) | _O(n * sqrt(n))_ | _O(1)_ |  Medium | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1051,6 +1054,7 @@
 1372| [Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/) | [C++](./C++/longest-zigzag-path-in-a-binary-tree.cpp) [Python](./Python/longest-zigzag-path-in-a-binary-tree.py) | _O(n)_          | _O(h)_          | Medium           |||
 1376| [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/) | [C++](./C++/time-needed-to-inform-all-employees.cpp) [Python](./Python/time-needed-to-inform-all-employees.py) | _O(n)_          | _O(n)_          | Medium           |||
 1377| [Frog Position After T Seconds](https://leetcode.com/problems/frog-position-after-t-seconds/) | [C++](./C++/frog-position-after-t-seconds.cpp) [Python](./Python/frog-position-after-t-seconds.py) | _O(n)_          | _O(n)_          | Hard           || DFS, Stack, BFS|
+1391| [Check if There is a Valid Path in a Grid](https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/) | [C++](./C++/check-if-there-is-a-valid-path-in-a-grid.cpp) [Python](./Python/check-if-there-is-a-valid-path-in-a-grid.py) | _O(m * n)_          | _O(1)_          | Medium           || Simulation |
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
