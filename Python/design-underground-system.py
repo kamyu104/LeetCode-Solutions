@@ -1,4 +1,7 @@
-# Time:  O(n)
+# Time:  ctor:       O(1)
+#        checkin:    O(1)
+#        checkout:   O(1)
+#        getaverage: O(1)
 # Space: O(n)
 
 import collections
@@ -37,5 +40,5 @@ class UndergroundSystem(object):
         :type endStation: str
         :rtype: float
         """
-        numer, denom = self.__statistics[startStation, endStation]
-        return float(numer) / denom
+        total_time, cnt = self.__statistics[startStation, endStation]
+        return float(total_time) / cnt
