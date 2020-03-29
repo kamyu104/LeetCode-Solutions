@@ -1,4 +1,7 @@
-// Time:  O(n)
+// Time:  ctor:       O(1)
+//        checkin:    O(1)
+//        checkout:   O(1)
+//        getaverage: O(1)
 // Space: O(n)
 
 class UndergroundSystem {
@@ -18,8 +21,8 @@ public:
     }
     
     double getAverageTime(string startStation, string endStation) {
-        const auto& [numer, denom] = statistics_[startStation][endStation];
-        return double(numer) / denom; 
+        const auto& [total_time, cnt] = statistics_[startStation][endStation];
+        return double(total_time) / cnt; 
     }
 
 private:
