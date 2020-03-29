@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1392%20%2F%201392-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1397%20%2F%201397-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -254,6 +254,7 @@
 1375 | [Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii/) | [C++](./C++/bulb-switcher-iii.cpp) [Python](./Python/bulb-switcher-iii.py) | _O(n)_ | _O(1)_      | Medium         ||
 1380 | [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/) | [C++](./C++/lucky-numbers-in-a-matrix.cpp) [Python](./Python/lucky-numbers-in-a-matrix.py) | _O(m * n)_ | _O(m + n)_      | Easy         ||
 1389 | [Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order/) | [C++](./C++/create-target-array-in-the-given-order.cpp) [Python](./Python/create-target-array-in-the-given-order.py) | _O(n^2)_ | _O(1)_      | Easy         ||
+1394 | [Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array/) | [C++](./C++/find-lucky-integer-in-an-array.cpp) [Python](./Python/find-lucky-integer-in-an-array.py) | _O(n)_ | _O(n)_      | Easy         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1250,6 +1251,8 @@
 1349 | [Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam/) | [C++](./C++/maximum-students-taking-exam.cpp) [Python](./Python/maximum-students-taking-exam.py) | _O(m * n * sqrt(m * n))_ | _O(m + n)_ | Hard | [GCJ2008 - Round 3](https://code.google.com/codejam/contest/32002/dashboard#s=p2) | `Hopcroft-Karp Bipartite Matching`, `Hungarian Bipartite Matching` |
 1387 | [Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value/) | [C++](./C++/sort-integers-by-the-power-value.cpp) [Python](./Python/sort-integers-by-the-power-value.py) | _O(n)_ on average| _O(n)_ | Medium | | Quick Select |
 1388| [Pizza With 3n Slices](https://leetcode.com/problems/pizza-with-3n-slices/)| [C++](./C++/pizza-with-3n-slices.cpp) [Python](./Python/pizza-with-3n-slices.py) | _O(n^2)_          | _O(n)_          | Hard           | variant of [House Robber II](https://leetcode.com/problems/house-robber-ii/) |
+1395| [Count Number of Teams](https://leetcode.com/problems/count-number-of-teams/)| [C++](./C++/count-number-of-teams.cpp) [Python](./Python/count-number-of-teams.py) | _O(n^2)_          | _O(1)_          | Medium           ||
+1397| [Find All Good Strings](https://leetcode.com/problems/find-all-good-strings/)| [C++](./C++/find-all-good-strings.cpp) [Python](./Python/find-all-good-strings.py) | _O(m * n)_          | _O(m)_          | Hard           || `KMP Algorithm`
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1386,6 +1389,7 @@
 1352| [Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/) | [C++](./C++/product-of-the-last-k-numbers.cpp) [Python](./Python/product-of-the-last-k-numbers.py) | ctor: _O(1)_<br>add: _O(1)_<br>get: _O(1)_ | _O(n)_ | Medium |||
 1357| [Apply Discount Every n Orders](https://leetcode.com/problems/apply-discount-every-n-orders/) | [C++](./C++/apply-discount-every-n-orders.cpp) [Python](./Python/apply-discount-every-n-orders.py) | ctor: _O(m)_<br>getBill: _O(p)_ | _O(m)_ | Medium |||
 1381| [Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/) | [C++](./C++/design-a-stack-with-increment-operation.cpp) [Python](./Python/design-a-stack-with-increment-operation.py) | ctor: _O(1)_<br>push: _O(1)_<br>pop: _O(1)_<br>increment: _O(1)_ | _O(n)_ | Medium |||
+1396| [Design Underground System](https://leetcode.com/problems/design-underground-system/) | [C++](./C++/design-underground-system.cpp) [Python](./Python/design-underground-system.py) | ctor: _O(1)_<br>checkin: _O(1)_<br>checkout: _O(1)_<br>getaverage: _O(1)_ | _O(n)_ | Medium |||
 
 ## Concurrency
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1476,6 +1480,7 @@
 1369| [Get the Second Most Recent Activity](https://leetcode.com/problems/get-the-second-most-recent-activity/) | [MySQL](./MySQL/get-the-second-most-recent-activity.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| |
 1378| [Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/) | [MySQL](./MySQL/replace-employee-id-with-the-unique-identifier.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1384| [Total Sales Amount by Year](https://leetcode.com/problems/total-sales-amount-by-year/) | [MySQL](./MySQL/total-sales-amount-by-year.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| |
+1393| [Capital Gain/Loss](https://leetcode.com/problems/capital-gainloss/) | [MySQL](./MySQL/capital-gainloss.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
