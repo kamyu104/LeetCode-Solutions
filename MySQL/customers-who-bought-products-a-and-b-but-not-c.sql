@@ -1,5 +1,5 @@
-# Time:  O(n)
-# Space: O(m)
+# Time:  O(m + n)
+# Space: O(m + n)
 
 SELECT c.customer_id, 
        c.customer_name 
