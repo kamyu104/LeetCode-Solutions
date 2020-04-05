@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1397%20%2F%201397-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1406%20%2F%201406-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -255,6 +255,8 @@
 1380 | [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/) | [C++](./C++/lucky-numbers-in-a-matrix.cpp) [Python](./Python/lucky-numbers-in-a-matrix.py) | _O(m * n)_ | _O(m + n)_      | Easy         ||
 1389 | [Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order/) | [C++](./C++/create-target-array-in-the-given-order.cpp) [Python](./Python/create-target-array-in-the-given-order.py) | _O(n^2)_ | _O(1)_      | Easy         ||
 1394 | [Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array/) | [C++](./C++/find-lucky-integer-in-an-array.cpp) [Python](./Python/find-lucky-integer-in-an-array.py) | _O(n)_ | _O(n)_      | Easy         ||
+1399 | [Count Largest Group](https://leetcode.com/problems/count-largest-group/) | [C++](./C++/count-largest-group.cpp) [Python](./Python/count-largest-group.py) | _O(nlogn)_ | _O(n)_      | Easy         ||
+1404 | [Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | [C++](./C++/number-of-steps-to-reduce-a-number-in-binary-representation-to-one.cpp) [Python](./Python/number-of-steps-to-reduce-a-number-in-binary-representation-to-one.py) | _O(n)_ | _O(1)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -760,6 +762,7 @@
 1362| [Closest Divisors](https://leetcode.com/problems/closest-divisors/) | [C++](./C++/closest-divisors.cpp) [Python](./Python/closest-divisors.py) | _O(sqrt(n))_ | _O(1)_ |  Medium | |
 1363| [Largest Multiple of Three](https://leetcode.com/problems/largest-multiple-of-three/) | [C++](./C++/largest-multiple-of-three.cpp) [Python](./Python/largest-multiple-of-three.py) | _O(n)_ | _O(1)_ |  Hard | |
 1390| [Four Divisors](https://leetcode.com/problems/four-divisors/) | [C++](./C++/four-divisors.cpp) [Python](./Python/four-divisors.py) | _O(n * sqrt(n))_ | _O(1)_ |  Medium | |
+1401| [Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping/) | [C++](./C++/circle-and-rectangle-overlapping.cpp) [Python](./Python/circle-and-rectangle-overlapping.py) | _O(1)_ | _O(1)_ |  Medium | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1253,6 +1256,7 @@
 1388| [Pizza With 3n Slices](https://leetcode.com/problems/pizza-with-3n-slices/)| [C++](./C++/pizza-with-3n-slices.cpp) [Python](./Python/pizza-with-3n-slices.py) | _O(n^2)_          | _O(n)_          | Hard           | variant of [House Robber II](https://leetcode.com/problems/house-robber-ii/) |
 1395| [Count Number of Teams](https://leetcode.com/problems/count-number-of-teams/)| [C++](./C++/count-number-of-teams.cpp) [Python](./Python/count-number-of-teams.py) | _O(n^2)_          | _O(1)_          | Medium           ||
 1397| [Find All Good Strings](https://leetcode.com/problems/find-all-good-strings/)| [C++](./C++/find-all-good-strings.cpp) [Python](./Python/find-all-good-strings.py) | _O(m * n)_          | _O(m)_          | Hard           || `KMP Algorithm`
+1406| [Stone Game III](https://leetcode.com/problems/stone-game-iii/)| [C++](./C++/stone-game-iii.cpp) [Python](./Python/stone-game-iii.py) | _O(n)_          | _O(1)_          | Hard           ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1322,6 +1326,10 @@
 1353| [Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/)  | [C++](./C++/maximum-number-of-events-that-can-be-attended.cpp) [Python](./Python/maximum-number-of-events-that-can-be-attended.py) | _O(r + nlogn)_        | _O(n)_          | Medium           | | Heap, Sort |
 1354| [Construct Target Array With Multiple Sums](https://leetcode.com/problems/construct-target-array-with-multiple-sums/)  | [C++](./C++/construct-target-array-with-multiple-sums.cpp) [Python](./Python/construct-target-array-with-multiple-sums.py) | _O(log(max(t)) * logn)_        | _O(n)_          | Hard           | | Heap |
 1386| [Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/)  | [C++](./C++/cinema-seat-allocation.cpp) [Python](./Python/cinema-seat-allocation.py) | _O(n)_        | _O(n)_          | Medium           | | |
+1400| [Construct K Palindrome Strings](https://leetcode.com/problems/construct-k-palindrome-strings/)  | [C++](./C++/construct-k-palindrome-strings.cpp) [Python](./Python/construct-k-palindrome-strings.py) | _O(n)_        | _O(1)_          | Medium           | | |
+1402| [Reducing Dishes](https://leetcode.com/problems/reducing-dishes/)  | [C++](./C++/reducing-dishes.cpp) [Python](./Python/reducing-dishes.py) | _O(nlogn)_        | _O(1)_          | Hard           | | |
+1403| [Minimum Subsequence in Non-Increasing Order](https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/)  | [C++](./C++/minimum-subsequence-in-non-increasing-order.cpp) [Python](./Python/minimum-subsequence-in-non-increasing-order.py) | _O(nlogn)_        | _O(1)_          | Easy           | | |
+1405| [Longest Happy String](https://leetcode.com/problems/longest-happy-string/)  | [C++](./C++/longest-happy-string.cpp) [Python](./Python/longest-happy-string.py) | _O(n)_        | _O(1)_          | Medium           | | |
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1481,6 +1489,7 @@
 1378| [Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/) | [MySQL](./MySQL/replace-employee-id-with-the-unique-identifier.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1384| [Total Sales Amount by Year](https://leetcode.com/problems/total-sales-amount-by-year/) | [MySQL](./MySQL/total-sales-amount-by-year.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| |
 1393| [Capital Gain/Loss](https://leetcode.com/problems/capital-gainloss/) | [MySQL](./MySQL/capital-gainloss.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
+1398| [Customers Who Bought Products A and B but Not C](https://leetcode.com/problems/customers-who-bought-products-a-and-b-but-not-c/) | [MySQL](./MySQL/capital-gainloss.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
