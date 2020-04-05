@@ -1,5 +1,5 @@
-# Time:  O(m + n)
-# Space: O(m + n)
+# Time:  O(n)
+# Space: O(n)
 
 SELECT stock_name, 
        Sum(CASE 
