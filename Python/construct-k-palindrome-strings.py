@@ -1,6 +1,9 @@
 # Time:  O(n)
 # Space: O(n)
 
+import collections
+
+
 class Solution(object):
     def canConstruct(self, s, k):
         """
