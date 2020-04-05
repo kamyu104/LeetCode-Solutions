@@ -21,11 +21,11 @@ class Solution(object):
             heapq.heappush(max_heap, (-c, 'c'))
         result = []
         while max_heap:
-            count1, c1 = heappop(max_heap)
+            count1, c1 = heapq.heappop(max_heap)
             if len(result) >= 2 and result[-1] == result[-2] == c1:
                 if not max_heap:
                     return "".join(result)
-                count2, c2 = heappop(max_heap)
+                count2, c2 = heapq.heappop(max_heap)
                 result.append(c2)
                 count2 += 1
                 if count2:
@@ -35,7 +35,7 @@ class Solution(object):
             result.append(c1)
             count1 += 1
             if count1 != 0:
-                heappush(max_heap, (count1, c1))
+                heapq.heappush(max_heap, (count1, c1))
         return "".join(result)
 
 
