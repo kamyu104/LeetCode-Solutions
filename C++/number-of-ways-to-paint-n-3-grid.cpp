@@ -49,11 +49,11 @@ class Solution2 {
 public:
     int numOfWays(int n) {
         static const int MOD = 1e9 + 7;
-        uint64_t count_121 = 6, count_123 = 6;
+        uint64_t aba = 6, abc = 6;
         for (int i = 1; i < n; ++i) {
-            tie(count_121, count_123) = pair((3 * count_121 % MOD + 2 * count_123 % MOD) % MOD,
-                                             (2 * count_123 % MOD + 2 * count_121 % MOD) %MOD);
+            tie(aba, abc) = pair((3 * aba % MOD + 2 * abc % MOD) % MOD,
+                                 (2 * abc % MOD + 2 * aba % MOD) %MOD);
         }
-        return (count_121 + count_123) % MOD;
+        return (aba + abc) % MOD;
     }
 };
