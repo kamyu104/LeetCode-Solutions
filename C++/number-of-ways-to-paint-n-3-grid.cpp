@@ -3,10 +3,10 @@
 
 class Solution {
 public:
-    int countVowelPermutation(int n) {
+    int numOfWays(int n) {
         static const vector<vector<int>> T = {{3, 2},
                                               {2, 2}};
-        const auto& result = matrixMult({{6, 6}}, matrixExpo(T, n - 1))[0];
+        const auto result = matrixMult({{6, 6}}, matrixExpo(T, n - 1))[0];
         return (result[0] + result[1]) % MOD;
     }
 
@@ -28,7 +28,7 @@ private:
     }
 
     vector<vector<int>> matrixMult(const vector<vector<int>>& A, const vector<vector<int>>& B) {
-        vector<vector<int>> result(A.size(), vector<int>(A.size()));
+        vector<vector<int>> result(A.size(), vector<int>(B[0].size()));
         for (int i = 0; i < A.size(); ++i) {
             for (int j = 0; j < B[0].size(); ++j) {
                 int64_t entry = 0;
