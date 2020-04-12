@@ -101,8 +101,8 @@ private:
 class Solution {
 public:
     string entityParser(string text) {
-        static vector<string> patterns = {"&quot;", "&apos;", "&amp;", "&gt;", "&lt;", "&frasl;"};
-        static vector<string> chars = {"\"", "'", "&", ">", "<", "/"};
+        static const vector<string> patterns = {"&quot;", "&apos;", "&amp;", "&gt;", "&lt;", "&frasl;"};
+        static const vector<string> chars = {"\"", "'", "&", ">", "<", "/"};
         AhoTrie trie(patterns);
         vector<pair<int, int>> positions;
         for (int i = 0; i < text.length(); ++i) {
@@ -130,8 +130,8 @@ public:
 class Solution2 {
 public:
     string entityParser(string text) {
-        static vector<string> patterns = {"&quot;", "&apos;", "&amp;", "&gt;", "&lt;", "&frasl;"};
-        static vector<string> chars = {"\"", "'", "&", ">", "<", "/"};
+        static const vector<string> patterns = {"&quot;", "&apos;", "&amp;", "&gt;", "&lt;", "&frasl;"};
+        static const vector<string> chars = {"\"", "'", "&", ">", "<", "/"};
         string result;
         for (int i = 0; i != text.length();) {
             if (text[i] != '&') {                    
