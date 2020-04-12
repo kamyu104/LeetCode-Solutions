@@ -1,7 +1,7 @@
-# Time:  O(n + m + z) = O(n), n is the total size of patterns
-#                           , m is the total size of query string
-#                           , z is the number of all matched strings
-#                           , O(n) = O(m) = O(z) in this problem
+# Time:  O(n + m + z) = O(n) ~ O(n^2), n is the total size of patterns
+#                                    , m is the total size of query string
+#                                    , z is the number of all matched strings
+#                                    , O(n) = O(m), O(z) = O(1) ~ O(n^2) in this problem
 # Space: O(t), t is the total size of ac automata trie
 
 import collections
