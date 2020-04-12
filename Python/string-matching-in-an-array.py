@@ -76,11 +76,11 @@ class Solution(object):
         :rtype: List[str]
         """
         trie = AhoTrie(words)
-        result = set()
+        lookup = set()
         for i in xrange(len(words)):
             trie.reset()
             for c in words[i]:
                 for j in trie.step(c):
                     if j != i:
-                        result.add(words[j])
-        return list(result)
+                        lookup.add(j)
+        return [words[i] for i in lookup]
