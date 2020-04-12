@@ -3,7 +3,7 @@
 //                    , z is the number of all matched strings
 // Space: O(t), t is the total size of ac automata trie
 
-	struct AhoNode {
+struct AhoNode {
     vector<AhoNode *> children;
     vector<int> indices;
     AhoNode *suffix;
