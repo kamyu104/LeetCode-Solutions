@@ -6,7 +6,7 @@ public:
     int numOfWays(int n) {
         static const vector<vector<int>> T = {{3, 2},
                                               {2, 2}};
-        const auto result = matrixMult({{6, 6}}, matrixExpo(T, n - 1))[0];
+        const auto result = matrixMult({{6, 6}}, matrixExpo(T, n - 1))[0];  // [a1, a0] * T^(n-1)
         return (result[0] + result[1]) % MOD;
     }
 
