@@ -43,5 +43,5 @@ class Solution2(object):
         aba, abc = 6, 6
         for _ in xrange(n-1):
             aba, abc = (3*aba%MOD + 2*abc%MOD)%MOD, \
-                                   (2*abc%MOD + 2*aba%MOD)%MOD
+                       (2*abc%MOD + 2*aba%MOD)%MOD
         return (aba+abc)%MOD
