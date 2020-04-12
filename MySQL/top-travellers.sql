@@ -1,5 +1,5 @@
-# Time:  O(nlogn) 
-# Space: O(n) 
+# Time:  O(m + nlogn) 
+# Space: O(m + n) 
 
 SELECT name, 
        Ifnull(Sum(distance), 0) AS travelled_distance 
