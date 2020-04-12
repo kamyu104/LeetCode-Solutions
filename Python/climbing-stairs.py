@@ -27,7 +27,7 @@ class Solution(object):
 
         T = [[1, 1],
              [1, 0]]
-        return matrix_expo(T, n)[0][0]
+        return matrix_mult([[1,  1]], matrix_expo(T, n-1))[0][0]  # [a1, a0] * T^(n-1)
 
 
 # Time:  O(n)
