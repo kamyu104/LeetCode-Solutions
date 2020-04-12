@@ -1,6 +1,9 @@
 # Time:  O(logn)
 # Space: O(1)
 
+import itertools
+
+
 class Solution(object):
     def numOfWays(self, n):
         """
