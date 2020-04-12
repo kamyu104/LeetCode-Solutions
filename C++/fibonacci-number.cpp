@@ -6,7 +6,7 @@ public:
     int fib(int N) {
         vector<vector<int>> T = {{1, 1},
                                  {1, 0}};
-        return matrixExpo(T, N)[1][0];
+        return matrixMult({{1, 0}}, matrixExpo(T, N))[0][1]; // [a1, a0] * T^N
     }
 
 private:
@@ -27,7 +27,7 @@ private:
     }
 
     vector<vector<int>> matrixMult(const vector<vector<int>>& A, const vector<vector<int>>& B) {
-        vector<vector<int>> result(A.size(), vector<int>(A.size()));
+        vector<vector<int>> result(A.size(), vector<int>(B[0].size()));
         for (int i = 0; i < A.size(); ++i) {
             for (int j = 0; j < B[0].size(); ++j) {
                 int64_t entry = 0;
