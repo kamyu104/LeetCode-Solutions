@@ -6,7 +6,7 @@ public:
     int climbStairs(int n) {
 	    vector<vector<int>> T = {{1, 1},
                                  {1, 0}};
-        return matrixMult({{1, 1}}, matrixExpo(T, n - 1))[0][0];  // [a1, a0] * T^(n-1)
+        return matrixMult({{1, 0}}, matrixExpo(T, n))[0][0];  // [a0, a(-1)] * T^n
     }
 
 private:
