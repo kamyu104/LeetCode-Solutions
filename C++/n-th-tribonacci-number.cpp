@@ -4,10 +4,10 @@
 class Solution {
 public:
     int tribonacci(int n) {
-        vector<vector<int>> T = {{1, 1, 1},
-                                 {1, 0, 0},
-                                 {0, 1, 0}};
-        return matrixExpo(T, n)[1][0];
+        vector<vector<int>> T = {{1, 1, 0},
+                                 {1, 0, 1},
+                                 {1, 0, 0}};
+        return matrixMult({{1, 0, 0}}, matrixExpo(T, n))[0][1];  // [a1, a0, a(-1)] * T^n
     }
 
 private:
@@ -28,7 +28,7 @@ private:
     }
 
     vector<vector<int>> matrixMult(const vector<vector<int>>& A, const vector<vector<int>>& B) {
-        vector<vector<int>> result(A.size(), vector<int>(A.size()));
+        vector<vector<int>> result(A.size(), vector<int>(B[0].size()));
         for (int i = 0; i < A.size(); ++i) {
             for (int j = 0; j < B[0].size(); ++j) {
                 int64_t entry = 0;
