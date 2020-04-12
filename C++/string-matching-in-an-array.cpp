@@ -101,7 +101,10 @@ private:
     AhoNode *node_;
 };
 
-class Solution {
+
+// Time:  O(n^2 * l), n is the number of strings
+// Space: O(l)      , l is the max length of strings
+class Solution2 {
 public:
     vector<string> stringMatching(vector<string>& words) {
         AhoTrie trie(words);
@@ -123,3 +126,57 @@ public:
         return result;
     }
 };
+
+class Solution {
+public:
+    vector<string> stringMatching(vector<string>& words) {
+        vector<string> result;
+        for (int i = 0; i < words.size(); ++i) {
+            for (int j = 0; j < words.size(); ++j) {
+                if (i != j && kmp(words[j], words[i]) != -1) {
+                    result.emplace_back(words[i]);
+                    break;
+                }
+            }
+            
+        }
+        return result;
+    }
+
+private:
+    int kmp(const string& text, const string& pattern) {
+        if (pattern.empty()) {
+            return 0;
+        }
+        const vector<int> prefix = getPrefix(pattern);
+        int j = -1;
+        for (int i = 0; i < text.length(); ++i) {
+            while (j != -1 && pattern[j + 1] != text[i]) {
+                j = prefix[j];
+            }
+            if (pattern[j + 1] == text[i]) {
+                ++j;
+            }
+            if (j + 1 == pattern.length()) {
+                return i - j;
+            }
+        }
+        return -1;
+    }
+
+    vector<int> getPrefix(const string& pattern) {
+        vector<int> prefix(pattern.length(), -1);
+        int j = -1;
+        for (int i = 1; i < pattern.length(); ++i) {
+            while (j != -1 && pattern[j + 1] != pattern[i]) {
+                j = prefix[j];
+            }
+            if (pattern[j + 1] == pattern[i]) {
+                ++j;
+            }
+            prefix[i] = j;
+        }
+        return prefix;
+    }
+};
+
