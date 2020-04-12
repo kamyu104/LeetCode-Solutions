@@ -124,3 +124,34 @@ public:
         return result;
     }
 };
+
+// Time:  O(n)
+// Space: O(1)
+class Solution2 {
+public:
+    string entityParser(string text) {
+        static vector<string> patterns = {"&quot;", "&apos;", "&amp;", "&gt;", "&lt;", "&frasl;"};
+        static vector<string> chars = {"\"", "'", "&", ">", "<", "/"};
+        string result;
+        for (int i = 0; i != text.length();) {
+            if (text[i] != '&') {                    
+                result.push_back(text[i]);
+                ++i;
+            } else {
+                bool is_found = false;
+                for (int j = 0; j < patterns.size(); ++j) {
+                    if (patterns[j] == text.substr(i, patterns[j].length())) {
+                        is_found = true;
+                        result += chars[j];
+                        i += patterns[j].length();
+                    }
+                }
+                if (!is_found) {
+                    result.push_back(text[i]);
+                    ++i;
+                }
+            }
+        }
+        return result;
+    }
+};
