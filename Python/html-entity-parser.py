@@ -74,7 +74,7 @@ class Solution(object):
         :rtype: str
         """
         patterns = ["&quot;", "&apos;", "&amp;", "&gt;", "&lt;", "&frasl;"]
-        chars = ['"', "'", "&", ">", "<", "/"]
+        chars = ["\"", "'", "&", ">", "<", "/"]
         trie = AhoTrie(patterns)
         positions = []
         for i in xrange(len(text)):
