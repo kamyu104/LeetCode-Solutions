@@ -28,4 +28,19 @@ class Solution(object):
         MOD = 10**9 + 7
         T = [[3, 2],
              [2, 2]]
-        return sum(matrix_mult([[6, 6]], matrix_expo(T, n-1))[0]) % MOD
+        return sum(matrix_mult([[6, 6]], matrix_expo(T, n-1))[0]) % MOD  # [a1, a0] * T^(n-1)
+
+# Time:  O(n)
+# Space: O(1)
+class Solution2(object):
+    def numOfWays(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        MOD = 10**9 + 7
+        count_121, count_123 = 6, 6
+        for _ in xrange(n-1):
+            count_121, count_123 = (3*count_121%MOD + 2*count_123%MOD)%MOD, \
+                                   (2*count_123%MOD + 2*count_121%MOD)%MOD
+        return (count_121+count_123)%MOD
