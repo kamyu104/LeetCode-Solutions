@@ -25,10 +25,10 @@ class Solution(object):
             return [[sum(a*b for a, b in itertools.izip(row, col)) \
                      for col in ZB] for row in A]
 
-        T = [[1, 1, 1],
-             [1, 0, 0],
-             [0, 1, 0]]
-        return matrix_expo(T, n)[1][0]
+        T = [[1, 1, 0],
+             [1, 0, 1],
+             [1, 0, 0]]
+        return matrix_mult([[1, 0, 0]], matrix_expo(T, n))[0][1]  # [a1, a0, a(-1)] * T^n
     
     
 # Time:  O(n)
