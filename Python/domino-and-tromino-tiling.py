@@ -32,7 +32,7 @@ class Solution(object):
              [1, 1, 0, 0],  # #(L) = #(|) + #(「)
              [1, 1, 1, 0]]  # #(=) = #(|) + #(「) + #(L)
 
-        return matrix_expo(T, N)[0][0]  # T^N * [1, 0, 0, 0]
+        return matrix_mult([[1, 0, 0, 0]], matrix_expo(T, N))[0][0] # [a0, a(-1), a(-2), a(-3)] * T^N
 
 
 # Time:  O(n)
