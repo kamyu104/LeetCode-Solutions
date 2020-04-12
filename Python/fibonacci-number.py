@@ -27,7 +27,7 @@ class Solution(object):
 
         T = [[1, 1],
              [1, 0]]
-        return matrix_expo(T, N)[1][0]
+        return matrix_mult([[1, 0]], matrix_expo(T, N))[0][1]  # [a1, a0] * T^N
 
 
 # Time:  O(n)
