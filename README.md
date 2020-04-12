@@ -373,7 +373,7 @@
 1371 | [Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/) | [C++](./C++/find-the-longest-substring-containing-vowels-in-even-counts.cpp) [Python](./Python/find-the-longest-substring-containing-vowels-in-even-counts.py) | _O(n)_ | _O(1)_ | Medium | |
 1374 | [Generate a String With Characters That Have Odd Count](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/) | [C++](./C++/generate-a-string-with-characters-that-have-odd-counts.cpp) [Python](./Python/generate-a-string-with-characters-that-have-odd-counts.py) | _O(n)_ | _O(1)_ | Easy | |
 1392| [Longest Happy Prefix](https://leetcode.com/problems/longest-happy-prefix/) | [C++](./C++/longest-happy-prefix.cpp)  [Python](./Python/longest-happy-prefix.py) | _O(n)_ | _O(n)_ | Hard         || `KMP Algorithm` `Rabin-Karp Algorithm` |
-1408 |[String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)| [C++](./C++/string-matching-in-an-array.cpp) [Python](./Python/string-matching-in-an-array.py) | _O(n)_ | _O(t)_ | Easy || `Aho-Corasick Automata`, Trie |
+1408 |[String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)| [C++](./C++/string-matching-in-an-array.cpp) [Python](./Python/string-matching-in-an-array.py) | _O(n)_ | _O(t)_ | Easy || `KMP Algorithm`, `Aho-Corasick Automata`, Trie |
 1410 |[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser/)| [C++](./C++/html-entity-parser.cpp) [Python](./Python/html-entity-parser.py)| _O(n)_ | _O(t)_ | Medium || `Aho-Corasick Automata`, Trie |
 
 ## Linked List
@@ -1494,6 +1494,7 @@
 1384| [Total Sales Amount by Year](https://leetcode.com/problems/total-sales-amount-by-year/) | [MySQL](./MySQL/total-sales-amount-by-year.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| |
 1393| [Capital Gain/Loss](https://leetcode.com/problems/capital-gainloss/) | [MySQL](./MySQL/capital-gainloss.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1398| [Customers Who Bought Products A and B but Not C](https://leetcode.com/problems/customers-who-bought-products-a-and-b-but-not-c/) | [MySQL](./MySQL/customers-who-bought-products-a-and-b-but-not-c.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒| |
+1407| [String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/) | [MySQL](./MySQL/string-matching-in-an-array.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
