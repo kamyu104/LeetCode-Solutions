@@ -40,8 +40,8 @@ class Solution2(object):
         :rtype: int
         """
         MOD = 10**9 + 7
-        count_121, count_123 = 6, 6
+        aba, abc = 6, 6
         for _ in xrange(n-1):
-            count_121, count_123 = (3*count_121%MOD + 2*count_123%MOD)%MOD, \
-                                   (2*count_123%MOD + 2*count_121%MOD)%MOD
-        return (count_121+count_123)%MOD
+            aba, abc = (3*aba%MOD + 2*abc%MOD)%MOD, \
+                                   (2*abc%MOD + 2*aba%MOD)%MOD
+        return (aba+abc)%MOD
