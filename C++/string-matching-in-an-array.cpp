@@ -101,10 +101,7 @@ private:
     AhoNode *node_;
 };
 
-
-// Time:  O(n^2 * l), n is the number of strings
-// Space: O(l)      , l is the max length of strings
-class Solution2 {
+class Solution {
 public:
     vector<string> stringMatching(vector<string>& words) {
         AhoTrie trie(words);
@@ -127,7 +124,9 @@ public:
     }
 };
 
-class Solution {
+// Time:  O(n^2 * l), n is the number of strings
+// Space: O(l)      , l is the max length of strings
+class Solution2 {
 public:
     vector<string> stringMatching(vector<string>& words) {
         vector<string> result;
@@ -179,4 +178,3 @@ private:
         return prefix;
     }
 };
-
