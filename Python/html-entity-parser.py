@@ -95,7 +95,7 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(1)
-class Solution(object):
+class Solution2(object):
     def entityParser(self, text):
         """
         :type text: str
