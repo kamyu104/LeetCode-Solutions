@@ -75,7 +75,7 @@ class Solution2(object):
             places[i] = binarySearch(sorted_nums, num, lambda x, y: x <= y)
 
         # Count the smaller elements after the number.
-        ans, bit= [0] * len(nums), BIT(len(nums) + 1)
+        ans, bit = [0] * len(nums), BIT(len(nums) + 1)
         for i in reversed(xrange(len(nums))):
             ans[i] = bit.query(places[i])
             bit.add(places[i] + 1, 1)
