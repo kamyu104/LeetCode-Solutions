@@ -30,6 +30,7 @@ class Solution(object):
              [2, 2]]
         return sum(matrix_mult([[6, 6]], matrix_expo(T, n-1))[0]) % MOD  # [a1, a0] * T^(n-1)
 
+
 # Time:  O(n)
 # Space: O(1)
 class Solution2(object):
