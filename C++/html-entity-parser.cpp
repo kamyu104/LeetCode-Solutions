@@ -144,6 +144,7 @@ public:
                         is_found = true;
                         result += chars[j];
                         i += patterns[j].length();
+                        break;
                     }
                 }
                 if (!is_found) {
