@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1406%20%2F%201406-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1411%20%2F%201411-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -373,6 +373,8 @@
 1371 | [Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/) | [C++](./C++/find-the-longest-substring-containing-vowels-in-even-counts.cpp) [Python](./Python/find-the-longest-substring-containing-vowels-in-even-counts.py) | _O(n)_ | _O(1)_ | Medium | |
 1374 | [Generate a String With Characters That Have Odd Count](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/) | [C++](./C++/generate-a-string-with-characters-that-have-odd-counts.cpp) [Python](./Python/generate-a-string-with-characters-that-have-odd-counts.py) | _O(n)_ | _O(1)_ | Easy | |
 1392| [Longest Happy Prefix](https://leetcode.com/problems/longest-happy-prefix/) | [C++](./C++/longest-happy-prefix.cpp)  [Python](./Python/longest-happy-prefix.py) | _O(n)_ | _O(n)_ | Hard         || `KMP Algorithm` `Rabin-Karp Algorithm` |
+1408 |[String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)| [C++](./C++/string-matching-in-an-array.cpp) [Python](./Python/string-matching-in-an-array.py) | _O(n)_ | _O(t)_ | Medium || `Aho-Corasick Automata`, Trie |
+1410 |[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser/)| [C++](./C++/html-entity-parser.cpp) [Python](./Python/html-entity-parser.py)| _O(n)_ | _O(t)_ | Medium || `Aho-Corasick Automata`, Trie |
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -551,6 +553,7 @@
 1261 |[Find Elements in a Contaminated Binary Tree](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/)| [C++](./C++/find-elements-in-a-contaminated-binary-tree.cpp)  [Python](./Python/find-elements-in-a-contaminated-binary-tree.py) | _O(n)_ | _O(h)_ | Medium || DFS|
 1325 |[Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/)| [C++](./C++/delete-leaves-with-a-given-value.cpp)  [Python](./Python/delete-leaves-with-a-given-value.py) | _O(n)_ | _O(h)_ | Medium || DFS|
 1339 |[Maximum Product of Splitted Binary Tree](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/)| [C++](./C++/maximum-product-of-splitted-binary-tree.cpp)  [Python](./Python/maximum-product-of-splitted-binary-tree.py) | _O(n)_ | _O(h)_ | Medium || DFS|
+1409 | [Queries on a Permutation With Key](https://leetcode.com/problems/queries-on-a-permutation-with-key/) | [C++](./C++/queries-on-a-permutation-with-key.cpp) [Python](./Python/queries-on-a-permutation-with-key.py) | _O(nlogn)_ | _O(n)_ | Medium | | BIT, Fenwick Tree
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1257,6 +1260,7 @@
 1395| [Count Number of Teams](https://leetcode.com/problems/count-number-of-teams/)| [C++](./C++/count-number-of-teams.cpp) [Python](./Python/count-number-of-teams.py) | _O(n^2)_          | _O(1)_          | Medium           ||
 1397| [Find All Good Strings](https://leetcode.com/problems/find-all-good-strings/)| [C++](./C++/find-all-good-strings.cpp) [Python](./Python/find-all-good-strings.py) | _O(m * n)_          | _O(m)_          | Hard           || `KMP Algorithm`
 1406| [Stone Game III](https://leetcode.com/problems/stone-game-iii/)| [C++](./C++/stone-game-iii.cpp) [Python](./Python/stone-game-iii.py) | _O(n)_          | _O(1)_          | Hard           ||
+1411| [Number of Ways to Paint N × 3 Grid](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/)| [C++](./C++/number-of-ways-to-paint-n-3-grid.cpp) [Python](./Python/number-of-ways-to-paint-n-3-grid.py) | _O(logn)_    | _O(1)_          | Hard           || Matrix Exponentiation
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
