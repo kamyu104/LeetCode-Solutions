@@ -42,3 +42,18 @@ private:
     }
     const int MOD = 1e9 + 7;
 };
+
+// Time:  O(n)
+// Space: O(1)
+class Solution2 {
+public:
+    int numOfWays(int n) {
+        static const int MOD = 1e9 + 7;
+        uint64_t count_121 = 6, count_123 = 6;
+        for (int i = 1; i < n; ++i) {
+            tie(count_121, count_123) = pair((3 * count_121 % MOD + 2 * count_123 % MOD) % MOD,
+                                             (2 * count_123 % MOD + 2 * count_121 % MOD) %MOD);
+        }
+        return (count_121 + count_123) % MOD;
+    }
+};
