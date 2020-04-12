@@ -373,7 +373,7 @@
 1371 | [Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/) | [C++](./C++/find-the-longest-substring-containing-vowels-in-even-counts.cpp) [Python](./Python/find-the-longest-substring-containing-vowels-in-even-counts.py) | _O(n)_ | _O(1)_ | Medium | |
 1374 | [Generate a String With Characters That Have Odd Count](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/) | [C++](./C++/generate-a-string-with-characters-that-have-odd-counts.cpp) [Python](./Python/generate-a-string-with-characters-that-have-odd-counts.py) | _O(n)_ | _O(1)_ | Easy | |
 1392| [Longest Happy Prefix](https://leetcode.com/problems/longest-happy-prefix/) | [C++](./C++/longest-happy-prefix.cpp)  [Python](./Python/longest-happy-prefix.py) | _O(n)_ | _O(n)_ | Hard         || `KMP Algorithm` `Rabin-Karp Algorithm` |
-1408 |[String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)| [C++](./C++/string-matching-in-an-array.cpp) [Python](./Python/string-matching-in-an-array.py) | _O(n)_ | _O(t)_ | Medium || `Aho-Corasick Automata`, Trie |
+1408 |[String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)| [C++](./C++/string-matching-in-an-array.cpp) [Python](./Python/string-matching-in-an-array.py) | _O(n)_ | _O(t)_ | Easy || `Aho-Corasick Automata`, Trie |
 1410 |[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser/)| [C++](./C++/html-entity-parser.cpp) [Python](./Python/html-entity-parser.py)| _O(n)_ | _O(t)_ | Medium || `Aho-Corasick Automata`, Trie |
 
 ## Linked List
