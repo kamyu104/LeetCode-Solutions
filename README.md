@@ -1494,7 +1494,7 @@
 1384| [Total Sales Amount by Year](https://leetcode.com/problems/total-sales-amount-by-year/) | [MySQL](./MySQL/total-sales-amount-by-year.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| |
 1393| [Capital Gain/Loss](https://leetcode.com/problems/capital-gainloss/) | [MySQL](./MySQL/capital-gainloss.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1398| [Customers Who Bought Products A and B but Not C](https://leetcode.com/problems/customers-who-bought-products-a-and-b-but-not-c/) | [MySQL](./MySQL/customers-who-bought-products-a-and-b-but-not-c.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒| |
-1407| [Top Travellers](https://leetcode.com/problems/top-travellers/) | [MySQL](./MySQL/top-travellers.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
+1407| [Top Travellers](https://leetcode.com/problems/top-travellers/) | [MySQL](./MySQL/top-travellers.sql) | _O(m + nlogn)_ | _O(m + n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
