@@ -106,6 +106,10 @@ class Solution2(object):
             return prefix
             
         def kmp(text, pattern, prefix):
+            if not pattern:
+                return 0
+            if len(text) < len(pattern):
+                return -1
             j = -1
             for i in xrange(len(text)):
                 while j != -1 and pattern[j+1] != text[i]:
