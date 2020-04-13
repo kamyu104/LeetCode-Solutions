@@ -145,6 +145,12 @@ public:
 
 private:
     int kmp(const string& text, const string& pattern, const vector<int>& prefix) {
+        if (pattern.empty()) {
+            return 0;
+        }
+        if (text.length() < pattern.length()) {
+            return -1;
+        }
         int j = -1;
         for (int i = 0; i < text.length(); ++i) {
             while (j != -1 && pattern[j + 1] != text[i]) {
