@@ -127,7 +127,7 @@ class Solution2(object):
 
 
 # Time:  O(n^2 * l^2), n is the number of strings
-# Space: O(l)        , l is the max length of strings
+# Space: O(1)        , l is the max length of strings
 class Solution3(object):
     def stringMatching(self, words):
         """
