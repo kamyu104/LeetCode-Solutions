@@ -105,10 +105,7 @@ class Solution2(object):
                 prefix[i] = j
             return prefix
             
-        def kmp(text, pattern):
-            if not pattern:
-                return 0
-            prefix = getPrefix(pattern)
+        def kmp(text, prefix):
             j = -1
             for i in xrange(len(text)):
                 while j != -1 and pattern[j+1] != text[i]:
@@ -121,8 +118,26 @@ class Solution2(object):
             
         result = []
         for i, pattern in enumerate(words):
+            prefix = getPrefix(pattern)
             for j, text in enumerate(words):
-                if i != j and kmp(text, pattern) != -1:
+                if i != j and kmp(text, prefix) != -1:
+                    result.append(pattern)
+                    break
+        return result
+
+
+# Time:  O(n^2 * l^2), n is the number of strings
+# Space: O(l)        , l is the max length of strings
+class Solution3(object):
+    def stringMatching(self, words):
+        """
+        :type words: List[str]
+        :rtype: List[str]
+        """
+        result = []
+        for i, pattern in enumerate(words):
+            for j, text in enumerate(words):
+                if i != j and pattern in text:
                     result.append(pattern)
                     break
         return result
