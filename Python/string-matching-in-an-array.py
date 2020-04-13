@@ -105,7 +105,7 @@ class Solution2(object):
                 prefix[i] = j
             return prefix
             
-        def kmp(text, prefix):
+        def kmp(text, pattern, prefix):
             j = -1
             for i in xrange(len(text)):
                 while j != -1 and pattern[j+1] != text[i]:
@@ -120,7 +120,7 @@ class Solution2(object):
         for i, pattern in enumerate(words):
             prefix = getPrefix(pattern)
             for j, text in enumerate(words):
-                if i != j and kmp(text, prefix) != -1:
+                if i != j and kmp(text, pattern, prefix) != -1:
                     result.append(pattern)
                     break
         return result
