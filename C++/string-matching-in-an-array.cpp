@@ -177,7 +177,7 @@ private:
 };
 
 // Time:  O(n^2 * l^2), n is the number of strings
-// Space: O(l)        , l is the max length of strings
+// Space: O(1)        , l is the max length of strings
 class Solution3 {
 public:
     vector<string> stringMatching(vector<string>& words) {
@@ -189,7 +189,6 @@ public:
                     break;
                 }
             }
-            
         }
         return result;
     }
