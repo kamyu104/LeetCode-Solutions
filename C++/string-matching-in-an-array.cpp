@@ -131,8 +131,9 @@ public:
     vector<string> stringMatching(vector<string>& words) {
         vector<string> result;
         for (int i = 0; i < words.size(); ++i) {
+            const auto& prefix = getPrefix(words[i]);
             for (int j = 0; j < words.size(); ++j) {
-                if (i != j && kmp(words[j], words[i]) != -1) {
+                if (i != j && kmp(words[j], words[i], prefix) != -1) {
                     result.emplace_back(words[i]);
                     break;
                 }
@@ -143,11 +144,7 @@ public:
     }
 
 private:
-    int kmp(const string& text, const string& pattern) {
-        if (pattern.empty()) {
-            return 0;
-        }
-        const vector<int> prefix = getPrefix(pattern);
+    int kmp(const string& text, const string& pattern, const vector<int>& prefix) {
         int j = -1;
         for (int i = 0; i < text.length(); ++i) {
             while (j != -1 && pattern[j + 1] != text[i]) {
@@ -176,5 +173,24 @@ private:
             prefix[i] = j;
         }
         return prefix;
+    }
+};
+
+// Time:  O(n^2 * l^2), n is the number of strings
+// Space: O(l)        , l is the max length of strings
+class Solution3 {
+public:
+    vector<string> stringMatching(vector<string>& words) {
+        vector<string> result;
+        for (int i = 0; i < words.size(); ++i) {
+            for (int j = 0; j < words.size(); ++j) {
+                if (i != j && words[j].find(words[i]) != string::npos) {
+                    result.emplace_back(words[i]);
+                    break;
+                }
+            }
+            
+        }
+        return result;
     }
 };
