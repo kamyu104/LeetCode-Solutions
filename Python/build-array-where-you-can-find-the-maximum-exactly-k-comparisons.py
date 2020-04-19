@@ -16,7 +16,7 @@ class Solution(object):
         prefix_dp = [[[0]*(k+1) for _ in xrange(m+1)] for _ in xrange(2)]
         for i in xrange(1, m+1):
             dp[1][i][1] = 1
-            prefix_dp[1][i][1] = prefix_dp[1][i-1][1] + dp[1][i][1]
+            prefix_dp[1][i][1] = (prefix_dp[1][i-1][1] + dp[1][i][1])%MOD
         for l in xrange(2, n+1):
             for i in xrange(1, m+1):
                 for j in xrange(1, k+1):
