@@ -24,10 +24,8 @@ public:
         }
         string result;
         while (result.length() < s.length()) {
-            a = next_char(a, a_end, &count);
-            b = next_char(b, b_end, &count);
-            result.push_back(a);
-            result.push_back(b);
+            result.push_back(a = next_char(a, a_end, &count));
+            result.push_back(b = next_char(b, b_end, &count));
         }
         if (result.back() == '\0') {
             result.pop_back();
