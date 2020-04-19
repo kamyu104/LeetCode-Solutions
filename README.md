@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1411%20%2F%201411-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1420%20%2F%201420-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -257,6 +257,7 @@
 1394 | [Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array/) | [C++](./C++/find-lucky-integer-in-an-array.cpp) [Python](./Python/find-lucky-integer-in-an-array.py) | _O(n)_ | _O(n)_      | Easy         ||
 1399 | [Count Largest Group](https://leetcode.com/problems/count-largest-group/) | [C++](./C++/count-largest-group.cpp) [Python](./Python/count-largest-group.py) | _O(nlogn)_ | _O(n)_      | Easy         ||
 1404 | [Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | [C++](./C++/number-of-steps-to-reduce-a-number-in-binary-representation-to-one.cpp) [Python](./Python/number-of-steps-to-reduce-a-number-in-binary-representation-to-one.py) | _O(n)_ | _O(1)_      | Medium         ||
+1413 | [Minimum Value to Get Positive Step by Step Sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/) | [C++](./C++/minimum-value-to-get-positive-step-by-step-sum.cpp) [Python](./Python/minimum-value-to-get-positive-step-by-step-sum.py) | _O(n)_ | _O(1)_      | Easy         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -375,6 +376,7 @@
 1392| [Longest Happy Prefix](https://leetcode.com/problems/longest-happy-prefix/) | [C++](./C++/longest-happy-prefix.cpp)  [Python](./Python/longest-happy-prefix.py) | _O(n)_ | _O(n)_ | Hard         || `KMP Algorithm` `Rabin-Karp Algorithm` |
 1408 |[String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)| [C++](./C++/string-matching-in-an-array.cpp) [Python](./Python/string-matching-in-an-array.py) | _O(n)_ | _O(t)_ | Easy || `KMP Algorithm`, `Aho-Corasick Automata`, Trie |
 1410 |[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser/)| [C++](./C++/html-entity-parser.cpp) [Python](./Python/html-entity-parser.py)| _O(n)_ | _O(t)_ | Medium || `Aho-Corasick Automata`, Trie |
+1417 |[Reformat The String](https://leetcode.com/problems/reformat-the-string/)| [C++](./C++/reformat-the-string.cpp) [Python](./Python/reformat-the-string.py)| _O(n)_ | _O(1)_ | Easy |||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -630,6 +632,7 @@
 1198| [Find Smallest Common Element in All Rows](https://leetcode.com/problems/find-smallest-common-element-in-all-rows/) | [C++](./C++/find-smallest-common-element-in-all-rows.cpp) [Python](./Python/find-smallest-common-element-in-all-rows.py)  | _O(m * n)_ |  _O(n)_ | Medium         |🔒||
 1207| [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | [C++](./C++/unique-number-of-occurrences.cpp) [Python](./Python/unique-number-of-occurrences.py)  | _O(n)_ |  _O(n)_ | Easy         |||
 1224| [Maximum Equal Frequency](https://leetcode.com/problems/maximum-equal-frequency/) | [C++](./C++/maximum-equal-frequency.cpp) [Python](./Python/maximum-equal-frequency.py)  | _O(n)_ |  _O(n)_ | Hard         |||
+1418| [Display Table of Food Orders in a Restaurant](https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant/) | [C++](./C++/display-table-of-food-orders-in-a-restaurant.cpp) [Python](./Python/display-table-of-food-orders-in-a-restaurant.py)  | _O(n + tlogt + flogf)_ |  _O(n)_ | Medium         |||
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -766,6 +769,7 @@
 1363| [Largest Multiple of Three](https://leetcode.com/problems/largest-multiple-of-three/) | [C++](./C++/largest-multiple-of-three.cpp) [Python](./Python/largest-multiple-of-three.py) | _O(n)_ | _O(1)_ |  Hard | |
 1390| [Four Divisors](https://leetcode.com/problems/four-divisors/) | [C++](./C++/four-divisors.cpp) [Python](./Python/four-divisors.py) | _O(n * sqrt(n))_ | _O(1)_ |  Medium | |
 1401| [Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping/) | [C++](./C++/circle-and-rectangle-overlapping.cpp) [Python](./Python/circle-and-rectangle-overlapping.py) | _O(1)_ | _O(1)_ |  Medium | |
+1415| [The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | [C++](./C++/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n.cpp) [Python](./Python/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n.py) | _O(n)_ | _O(1)_ |  Medium | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1261,6 +1265,8 @@
 1397| [Find All Good Strings](https://leetcode.com/problems/find-all-good-strings/)| [C++](./C++/find-all-good-strings.cpp) [Python](./Python/find-all-good-strings.py) | _O(m * n)_          | _O(m)_          | Hard           || `KMP Algorithm`
 1406| [Stone Game III](https://leetcode.com/problems/stone-game-iii/)| [C++](./C++/stone-game-iii.cpp) [Python](./Python/stone-game-iii.py) | _O(n)_          | _O(1)_          | Hard           ||
 1411| [Number of Ways to Paint N × 3 Grid](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/)| [C++](./C++/number-of-ways-to-paint-n-3-grid.cpp) [Python](./Python/number-of-ways-to-paint-n-3-grid.py) | _O(logn)_    | _O(1)_          | Hard           || Matrix Exponentiation
+1416| [Restore The Array](https://leetcode.com/problems/restore-the-array/)| [C++](./C++/restore-the-array.cpp) [Python](./Python/restore-the-array.py) | _O(nlogk)_    | _O(logk)_          | Hard           ||
+1420| [Build Array Where You Can Find The Maximum Exactly K Comparisons](https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/)| [C++](./C++/build-array-where-you-can-find-the-maximum-exactly-k-comparisons.cpp) [Python](./Python/build-array-where-you-can-find-the-maximum-exactly-k-comparisons.py) | _O(n * m * k)_    | _O(m * k)_          | Hard           ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1334,6 +1340,8 @@
 1402| [Reducing Dishes](https://leetcode.com/problems/reducing-dishes/)  | [C++](./C++/reducing-dishes.cpp) [Python](./Python/reducing-dishes.py) | _O(nlogn)_        | _O(1)_          | Hard           | | |
 1403| [Minimum Subsequence in Non-Increasing Order](https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/)  | [C++](./C++/minimum-subsequence-in-non-increasing-order.cpp) [Python](./Python/minimum-subsequence-in-non-increasing-order.py) | _O(nlogn)_        | _O(1)_          | Easy           | | |
 1405| [Longest Happy String](https://leetcode.com/problems/longest-happy-string/)  | [C++](./C++/longest-happy-string.cpp) [Python](./Python/longest-happy-string.py) | _O(n)_        | _O(1)_          | Medium           | | |
+1414| [Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/)  | [C++](./C++/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k.cpp) [Python](./Python/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k.py) | _O(logk)_        | _O(1)_          | Medium           | | |
+1419| [Minimum Number of Frogs Croaking](https://leetcode.com/problems/minimum-number-of-frogs-croaking/)  | [C++](./C++/minimum-number-of-frogs-croaking.cpp) [Python](./Python/minimum-number-of-frogs-croaking.py) | _O(n)_        | _O(1)_          | Medium           | | |
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1495,6 +1503,7 @@
 1393| [Capital Gain/Loss](https://leetcode.com/problems/capital-gainloss/) | [MySQL](./MySQL/capital-gainloss.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1398| [Customers Who Bought Products A and B but Not C](https://leetcode.com/problems/customers-who-bought-products-a-and-b-but-not-c/) | [MySQL](./MySQL/customers-who-bought-products-a-and-b-but-not-c.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒| |
 1407| [Top Travellers](https://leetcode.com/problems/top-travellers/) | [MySQL](./MySQL/top-travellers.sql) | _O(m + nlogn)_ | _O(m + n)_       | Easy           |🔒| |
+1412| [Find the Quiet Students in All Exams](https://leetcode.com/problems/find-the-quiet-students-in-all-exams/) | [MySQL](./MySQL/find-the-quiet-students-in-all-exams.sql) | _O(m + nlogn)_ | _O(m + n)_       | Hard           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
