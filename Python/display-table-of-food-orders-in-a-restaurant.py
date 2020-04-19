@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: List[List[str]]
         """
         table_count = collections.defaultdict(collections.Counter)
-        for name, table, food in orders:
+        for _, table, food in orders:
             table_count[int(table)][food] += 1
         foods = sorted({food for _, _, food in orders})
         result = [["Table"]]
