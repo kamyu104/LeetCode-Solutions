@@ -21,5 +21,5 @@ class Solution(object):
                 curr = 10*curr + int(s[j])
                 if curr > k:
                     break
-                dp[i%len(dp)] = (dp[i%len(dp)] + dp[(j+1)%len(dp)]) % MOD
+                dp[i%len(dp)] = (dp[i%len(dp)] + dp[(j+1)%len(dp)])%MOD
         return dp[0]
