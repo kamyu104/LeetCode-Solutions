@@ -14,12 +14,14 @@ class Solution(object):
         for i in xrange(len(nums)+max(itertools.imap(len, nums))-1):
             new_q = []
             if i < len(nums):
-                q.append((i, 0))
-            for r, c in reversed(q):
+                r, c = i, 0
                 result.append(nums[r][c])
                 if c+1 < len(nums[r]):
                     new_q.append((r, c+1))
-            new_q.reverse()
+            for r, c in q:
+                result.append(nums[r][c])
+                if c+1 < len(nums[r]):
+                    new_q.append((r, c+1))
             q = new_q
         return result
 
