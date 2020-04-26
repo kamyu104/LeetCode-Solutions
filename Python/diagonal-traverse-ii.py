@@ -33,9 +33,9 @@ class Solution2(object):
         :rtype: List[int]
         """
         result = []
-        for i, row in enumerate(nums):
-            for j, num in enumerate(row):
-                if len(result) <= i+j:
+        for r, row in enumerate(nums):
+            for c, num in enumerate(row):
+                if len(result) <= r+c:
                     result.append([])
-                result[i+j].append(num)
+                result[r+c].append(num)
         return [num for row in result for num in reversed(row)]
