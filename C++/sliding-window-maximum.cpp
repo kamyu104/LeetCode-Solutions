@@ -7,7 +7,7 @@ public:
         vector<int> result;
         deque<int> dq;
         for (int i = 0; i < nums.size(); ++i) {
-            if (i >= k && !dq.empty() && i - dq.front() == k) {
+            if (!dq.empty() && i - dq.front() == k) {
                 dq.pop_front();
             }
             while (!dq.empty() && nums[i] >= nums[dq.back()]) {
