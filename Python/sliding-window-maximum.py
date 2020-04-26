@@ -11,8 +11,7 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-        dq = deque()
-        result = []
+        result, dq = [], deque()
         for i in xrange(len(nums)):
             if dq and i-dq[0] == k:
                 dq.popleft()
