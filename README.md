@@ -258,6 +258,7 @@
 1399 | [Count Largest Group](https://leetcode.com/problems/count-largest-group/) | [C++](./C++/count-largest-group.cpp) [Python](./Python/count-largest-group.py) | _O(nlogn)_ | _O(n)_      | Easy         ||
 1404 | [Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | [C++](./C++/number-of-steps-to-reduce-a-number-in-binary-representation-to-one.cpp) [Python](./Python/number-of-steps-to-reduce-a-number-in-binary-representation-to-one.py) | _O(n)_ | _O(1)_      | Medium         ||
 1413 | [Minimum Value to Get Positive Step by Step Sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/) | [C++](./C++/minimum-value-to-get-positive-step-by-step-sum.cpp) [Python](./Python/minimum-value-to-get-positive-step-by-step-sum.py) | _O(n)_ | _O(1)_      | Easy         ||
+1423 | [Maximum Points You Can Obtain from Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/) | [C++](./C++/maximum-points-you-can-obtain-from-cards.cpp) [Python](./Python/maximum-points-you-can-obtain-from-cards.py) | _O(n)_ | _O(1)_      | Medium         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -377,6 +378,7 @@
 1408 |[String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)| [C++](./C++/string-matching-in-an-array.cpp) [Python](./Python/string-matching-in-an-array.py) | _O(n)_ | _O(t)_ | Easy || `KMP Algorithm`, `Aho-Corasick Automata`, Trie |
 1410 |[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser/)| [C++](./C++/html-entity-parser.cpp) [Python](./Python/html-entity-parser.py)| _O(n)_ | _O(t)_ | Medium || `Aho-Corasick Automata`, Trie |
 1417 |[Reformat The String](https://leetcode.com/problems/reformat-the-string/)| [C++](./C++/reformat-the-string.cpp) [Python](./Python/reformat-the-string.py)| _O(n)_ | _O(1)_ | Easy |||
+1422 |[Maximum Score After Splitting a String](https://leetcode.com/problems/maximum-score-after-splitting-a-string/)| [C++](./C++/maximum-score-after-splitting-a-string.cpp) [Python](./Python/maximum-score-after-splitting-a-string.py)| _O(n)_ | _O(1)_ | Easy |||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -458,11 +460,13 @@
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
-0239| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)| [C++](./C++/sliding-window-maximum.cpp) [Python](./Python/sliding-window-maximum.py) | _O(n)_        | _O(k)_          | Hard           | EPI, LintCode |
+0239| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)| [C++](./C++/sliding-window-maximum.cpp) [Python](./Python/sliding-window-maximum.py) | _O(n)_        | _O(k)_          | Hard           | EPI, LintCode | Mono Deque |
 0281| [Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/)| [C++](./C++/zigzag-iterator.cpp) [Python](./Python/zigzag-iterator.py) | _O(n)_        | _O(k)_          | Medium           |🔒||
 0346| [Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/)| [C++](./C++/moving-average-from-data-stream.cpp) [Python](./Python/moving-average-from-data-stream.py) | _O(1)_        | _O(w)_          | Easy           |🔒||
 0862| [Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/)| [C++](./C++/shortest-subarray-with-sum-at-least-k.cpp) [Python](./Python/shortest-subarray-with-sum-at-least-k.py) | _O(n)_        | _O(n)_          | Hard           |||
 0933| [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)| [C++](./C++/number-of-recent-calls.cpp) [Python](./Python/number-of-recent-calls.py) | _O(1)_ on average       | _O(w)_          | Easy           |||
+1424| [Constrained Subset Sum](https://leetcode.com/problems/diagonal-traverse-ii/)| [C++](./C++/diagonal-traverse-ii.cpp) [Python](./Python/diagonal-traverse-ii.py) | _O(m * n)_        | _O(m)_          | Medium           || Mono Deque |
+1425| [Diagonal Traverse II](https://leetcode.com/problems/constrained-subset-sum/)| [C++](./C++/constrained-subset-sum.cpp) [Python](./Python/constrained-subset-sum.py) | _O(n)_        | _O(k)_          | Hard           || Mono Deque |
 
 ## Heap
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1504,6 +1508,7 @@
 1398| [Customers Who Bought Products A and B but Not C](https://leetcode.com/problems/customers-who-bought-products-a-and-b-but-not-c/) | [MySQL](./MySQL/customers-who-bought-products-a-and-b-but-not-c.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒| |
 1407| [Top Travellers](https://leetcode.com/problems/top-travellers/) | [MySQL](./MySQL/top-travellers.sql) | _O(m + nlogn)_ | _O(m + n)_       | Easy           |🔒| |
 1412| [Find the Quiet Students in All Exams](https://leetcode.com/problems/find-the-quiet-students-in-all-exams/) | [MySQL](./MySQL/find-the-quiet-students-in-all-exams.sql) | _O(m + nlogn)_ | _O(m + n)_       | Hard           |🔒| |
+1421| [NPV Queries](https://leetcode.com/problems/npv-queries/) | [MySQL](./MySQL/npv-queries.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
