@@ -14,7 +14,7 @@ class Solution(object):
         dq = deque()
         result = []
         for i in xrange(len(nums)):
-            if i >= k and dq and i-dq[0] == k:
+            if dq and i-dq[0] == k:
                 dq.popleft()
             while dq and nums[i] >= nums[dq[-1]]:
                 dq.pop()
