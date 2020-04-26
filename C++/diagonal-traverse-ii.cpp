@@ -9,21 +9,19 @@ public:
                                        return max(x, y.size());
                                    });
         vector<int> result;
-        vector<pair<int, int>> q;
+        deque<pair<int, int>> dq;
         for (int r = 0; r < nums.size() + n - 1; ++r) {
-            vector<pair<int, int>> new_q;
+            deque<pair<int, int>> new_dq;
             if (r < nums.size()) {
-                q.emplace_back(r, 0);
+                dq.emplace_front(r, 0);
             }
-            for (int i = q.size() - 1; i >= 0; --i) {
-                const auto& [r, c] = q[i];
+            for (const auto& [r, c] : dq) {
                 result.emplace_back(nums[r][c]);
                 if (c + 1 < nums[r].size()) {
-                    new_q.emplace_back(r, c + 1);
+                    new_dq.emplace_back(r, c + 1);
                 }
             }
-            reverse(new_q.begin(), new_q.end());
-            q = move(new_q);
+            dq = move(new_dq);
         }
         return result;
     }
