@@ -11,7 +11,7 @@ public:
                 dq.pop_front();
             }
             const auto& curr = nums[i] + (!dq.empty() ? dq.front().second : 0);
-            while (!dq.empty() && dq.back().second < curr) {
+            while (!dq.empty() && dq.back().second <= curr) {
                 dq.pop_back();
             }
             if (curr > 0) {
