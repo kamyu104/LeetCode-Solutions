@@ -2,6 +2,7 @@
 # Space: O(m)
 
 import itertools
+import collections
 
 
 class Solution(object):
@@ -10,19 +11,16 @@ class Solution(object):
         :type nums: List[List[int]]
         :rtype: List[int]
         """
-        result, q, col = [], [], 0
+        result, dq, col = [], collections.deque(), 0
         for i in xrange(len(nums)+max(itertools.imap(len, nums))-1):
-            new_q = []
+            new_dq = collections.deque()
             if i < len(nums):
-                r, c = i, 0
+                dq.appendleft((i, 0))
+            for r, c in dq:
                 result.append(nums[r][c])
                 if c+1 < len(nums[r]):
-                    new_q.append((r, c+1))
-            for r, c in q:
-                result.append(nums[r][c])
-                if c+1 < len(nums[r]):
-                    new_q.append((r, c+1))
-            q = new_q
+                    new_dq.append((r, c+1))
+            dq = new_dq
         return result
 
 
