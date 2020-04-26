@@ -466,7 +466,7 @@
 0862| [Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/)| [C++](./C++/shortest-subarray-with-sum-at-least-k.cpp) [Python](./Python/shortest-subarray-with-sum-at-least-k.py) | _O(n)_        | _O(n)_          | Hard           |||
 0933| [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)| [C++](./C++/number-of-recent-calls.cpp) [Python](./Python/number-of-recent-calls.py) | _O(1)_ on average       | _O(w)_          | Easy           |||
 1424| [Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii/)| [C++](./C++/diagonal-traverse-ii.cpp) [Python](./Python/diagonal-traverse-ii.py) | _O(m * n)_        | _O(m)_          | Medium           |||
-1425| [Constrained Subset Sum](https://leetcode.com/problems/constrained-subset-sum/)| [C++](./C++/constrained-subset-sum.cpp) [Python](./Python/constrained-subset-sum.py) | _O(n)_        | _O(k)_          | Hard           || Mono Deque |
+1425| [Constrained Subset Sum](https://leetcode.com/problems/constrained-subset-sum/)| [C++](./C++/constrained-subset-sum.cpp) [Python](./Python/constrained-subset-sum.py) | _O(n)_        | _O(k)_          | Hard           | variant of [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Mono Deque |
 
 ## Heap
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
