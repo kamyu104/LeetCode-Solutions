@@ -263,6 +263,7 @@
 1427 | [Perform String Shifts](https://leetcode.com/problems/perform-string-shifts/)| [C++](./C++/perform-string-shifts.cpp) [Python](./Python/perform-string-shifts.py) | _O(n + l)_      | _O(1)_          | Easy         | 🔒 |
 1428 | [Leftmost Column with at Least a One](https://leetcode.com/problems/leftmost-column-with-at-least-a-one/)| [C++](./C++/leftmost-column-with-at-least-a-one.cpp) [Python](./Python/leftmost-column-with-at-least-a-one.py) | _O(m + n)_      | _O(1)_          | Medium         | 🔒 |
 1431 | [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) | [C++](./C++/kids-with-the-greatest-number-of-candies.cpp) [Python](./Python/kids-with-the-greatest-number-of-candies.py) | _O(n)_ | _O(1)_      | Easy         || 
+1437 | [Check If All 1's Are at Least Length K Places Away](https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/) | [C++](./C++/check-if-all-1s-are-at-least-length-k-places-away.cpp) [Python](./Python/check-if-all-1s-are-at-least-length-k-places-away.py) | _O(n)_ | _O(1)_      | Medium         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -384,6 +385,7 @@
 1417 |[Reformat The String](https://leetcode.com/problems/reformat-the-string/)| [C++](./C++/reformat-the-string.cpp) [Python](./Python/reformat-the-string.py)| _O(n)_ | _O(1)_ | Easy |||
 1422 |[Maximum Score After Splitting a String](https://leetcode.com/problems/maximum-score-after-splitting-a-string/)| [C++](./C++/maximum-score-after-splitting-a-string.cpp) [Python](./Python/maximum-score-after-splitting-a-string.py)| _O(n)_ | _O(1)_ | Easy |||
 1432 |[Max Difference You Can Get From Changing an Integer](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/)| [C++](./C++/max-difference-you-can-get-from-changing-an-integer.cpp) [Python](./Python/max-difference-you-can-get-from-changing-an-integer.py)| _O(logn)_ | _O(logn)_ | Medium |||
+1436 |[Destination City](https://leetcode.com/problems/destination-city/)| [C++](./C++/destination-city.cpp) [Python](./Python/destination-city.py)| _O(n)_ | _O(n)_ | Easy |||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -472,6 +474,7 @@
 0933| [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)| [C++](./C++/number-of-recent-calls.cpp) [Python](./Python/number-of-recent-calls.py) | _O(1)_ on average       | _O(w)_          | Easy           |||
 1424| [Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii/)| [C++](./C++/diagonal-traverse-ii.cpp) [Python](./Python/diagonal-traverse-ii.py) | _O(m * n)_        | _O(m)_          | Medium           |||
 1425| [Constrained Subset Sum](https://leetcode.com/problems/constrained-subset-sum/)| [C++](./C++/constrained-subset-sum.cpp) [Python](./Python/constrained-subset-sum.py) | _O(n)_        | _O(k)_          | Hard           | variant of [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Mono Deque |
+1438| [Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)| [C++](./C++/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit.cpp) [Python](./Python/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit.py) | _O(n)_        | _O(n)_          | Hard           | | Mono Deque |
 
 ## Heap
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -492,6 +495,7 @@
 1046 | [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [C++](./C++/last-stone-weight.cpp) [Python](./Python/last-stone-weight.py) | _O(nlogn)_ | _O(n)_ | Easy |||
 1057| [Campus Bikes](https://leetcode.com/problems/campus-bikes/) | [C++](./C++/campus-bikes.cpp) [Python](./Python/campus-bikes.py) |  _O((w * b) * log(w * b))_ | _O(w * b)_   | Medium |🔒||
 1383 | [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | [C++](./C++/maximum-performance-of-a-team.cpp) [Python](./Python/maximum-performance-of-a-team.py) | _O(nlogn)_ | _O(n)_ | Hard | variant of [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | Sort |
+1439 | [Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/) | [C++](./C++/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows.cpp) [Python](./Python/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows.py) | _O(m * klogk)_ | _O(k)_ | Hard |||
 
 ## Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
