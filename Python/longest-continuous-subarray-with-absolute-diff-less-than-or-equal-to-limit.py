@@ -1,6 +1,9 @@
 # Time:  O(n)
 # Space: O(n)
 
+import collections
+
+
 class Solution(object):
     def longestSubarray(self, nums, limit):
         """
@@ -28,6 +31,9 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(n)
+import collections
+
+
 class Solution2(object):
     def longestSubarray(self, nums, limit):
         """
