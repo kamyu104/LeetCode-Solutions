@@ -17,7 +17,7 @@ class Solution(object):
                 heapq.heappush(min_heap, (nums1[c]+nums2[0], 0))
                 c += 1
             while len(result) != k and min_heap:
-                total, c = heappop(min_heap)
+                total, c = heapq.heappop(min_heap)
                 result.append(total)
                 if c+1 == len(nums2):
                     continue
