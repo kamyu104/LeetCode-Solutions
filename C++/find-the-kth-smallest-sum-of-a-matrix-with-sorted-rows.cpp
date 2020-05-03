@@ -29,3 +29,45 @@ private:
         return result;
     }
 };
+
+// Time:  O(k * log(m * MAX_NUM)) ~ O(k * m * log(m * MAX_NUM))
+// Space: O(m)
+class Solution2 {
+public:
+    int kthSmallest(vector<vector<int>>& mat, int k) {
+        static const int MAX_NUM = 5000;
+        int left = mat.size(), right = mat.size() * MAX_NUM;
+        while (left <= right) {
+            const auto& mid = left + (right - left) / 2;
+            const auto& cnt = countArraysHaveSumLessOrEqual(mat, k, 0, mid);
+            if (cnt >= k) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return left;
+    }
+
+private:
+    int countArraysHaveSumLessOrEqual(const vector<vector<int>>& mat, int k, int r, int target) {
+        if (target < 0)  {
+            return 0;
+        }
+        if (r == mat.size()) {
+            return 1;
+        }
+        int result = 0;
+        for (int c = 0; c < mat[0].size(); ++c) {
+            int cnt = countArraysHaveSumLessOrEqual(mat, k - result, r + 1, target - mat[r][c]);
+            if (!cnt) {
+                break;
+            }
+            result += cnt;
+            if (result > k) {
+                break;
+            }
+        }
+        return result;
+    }
+};
