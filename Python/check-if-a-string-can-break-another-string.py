@@ -1,10 +1,37 @@
-# Time:  O(nlogn)
+# Time:  O(n)
 # Space: O(1)
 
-import itertools
+import collections
+import string
 
 
 class Solution(object):
+    def checkIfCanBreak(self, s1, s2):
+        """
+        :type s1: str
+        :type s2: str
+        :rtype: bool
+        """
+        def is_break(counter1, counter2):
+            curr1, curr2 = 0, 0
+            for c in string.ascii_lowercase:
+                curr1 += counter1[c]
+                curr2 += counter2[c]
+                if curr1 < curr2:
+                    return False
+            return True
+
+        counter1, counter2 = collections.Counter(s1), collections.Counter(s2)
+        return is_break(counter1, counter2) or is_break(counter2, counter1)
+
+    
+
+# Time:  O(nlogn)
+# Space: O(1)
+import itertools
+
+
+class Solution2(object):
     def checkIfCanBreak(self, s1, s2):
         """
         :type s1: str
@@ -16,7 +43,10 @@ class Solution(object):
 
 # Time:  O(nlogn)
 # Space: O(1)
-class Solution2(object):
+import itertools
+
+
+class Solution3(object):
     def checkIfCanBreak(self, s1, s2):
         """
         :type s1: str
