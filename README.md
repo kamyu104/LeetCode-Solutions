@@ -262,7 +262,7 @@
 1426 | [Counting Elements](https://leetcode.com/problems/counting-elements/)| [C++](./C++/counting-elements.cpp) [Python](./Python/counting-elements.py) | _O(n)_      | _O(n)_          | Easy         | 🔒 |
 1427 | [Perform String Shifts](https://leetcode.com/problems/perform-string-shifts/)| [C++](./C++/perform-string-shifts.cpp) [Python](./Python/perform-string-shifts.py) | _O(n + l)_      | _O(1)_          | Easy         | 🔒 |
 1428 | [Leftmost Column with at Least a One](https://leetcode.com/problems/leftmost-column-with-at-least-a-one/)| [C++](./C++/leftmost-column-with-at-least-a-one.cpp) [Python](./Python/leftmost-column-with-at-least-a-one.py) | _O(m + n)_      | _O(1)_          | Medium         | 🔒 |
-
+1431 | [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) | [C++](./C++/kids-with-the-greatest-number-of-candies.cpp) [Python](./Python/kids-with-the-greatest-number-of-candies.py) | _O(n)_ | _O(1)_      | Easy         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -383,6 +383,7 @@
 1410 |[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser/)| [C++](./C++/html-entity-parser.cpp) [Python](./Python/html-entity-parser.py)| _O(n)_ | _O(t)_ | Medium || `Aho-Corasick Automata`, Trie |
 1417 |[Reformat The String](https://leetcode.com/problems/reformat-the-string/)| [C++](./C++/reformat-the-string.cpp) [Python](./Python/reformat-the-string.py)| _O(n)_ | _O(1)_ | Easy |||
 1422 |[Maximum Score After Splitting a String](https://leetcode.com/problems/maximum-score-after-splitting-a-string/)| [C++](./C++/maximum-score-after-splitting-a-string.cpp) [Python](./Python/maximum-score-after-splitting-a-string.py)| _O(n)_ | _O(1)_ | Easy |||
+1432 |[Max Difference You Can Get From Changing an Integer](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/)| [C++](./C++/max-difference-you-can-get-from-changing-an-integer.cpp) [Python](./Python/max-difference-you-can-get-from-changing-an-integer.py)| _O(logn)_ | _O(logn)_ | Medium |||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1276,6 +1277,7 @@
 1411| [Number of Ways to Paint N × 3 Grid](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/)| [C++](./C++/number-of-ways-to-paint-n-3-grid.cpp) [Python](./Python/number-of-ways-to-paint-n-3-grid.py) | _O(logn)_    | _O(1)_          | Hard           || Matrix Exponentiation
 1416| [Restore The Array](https://leetcode.com/problems/restore-the-array/)| [C++](./C++/restore-the-array.cpp) [Python](./Python/restore-the-array.py) | _O(nlogk)_    | _O(logk)_          | Hard           ||
 1420| [Build Array Where You Can Find The Maximum Exactly K Comparisons](https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/)| [C++](./C++/build-array-where-you-can-find-the-maximum-exactly-k-comparisons.cpp) [Python](./Python/build-array-where-you-can-find-the-maximum-exactly-k-comparisons.py) | _O(n * m * k)_    | _O(m * k)_          | Hard           ||
+1434| [Number of Ways to Wear Different Hats to Each Other](https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/)| [C++](./C++/number-of-ways-to-wear-different-hats-to-each-other.cpp) [Python](./Python/number-of-ways-to-wear-different-hats-to-each-other.py) | _O(h * 2^n)_    | _O(2^n)_          | Hard           ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1351,6 +1353,7 @@
 1405| [Longest Happy String](https://leetcode.com/problems/longest-happy-string/)  | [C++](./C++/longest-happy-string.cpp) [Python](./Python/longest-happy-string.py) | _O(n)_        | _O(1)_          | Medium           | | |
 1414| [Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/)  | [C++](./C++/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k.cpp) [Python](./Python/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k.py) | _O(logk)_        | _O(1)_          | Medium           | | |
 1419| [Minimum Number of Frogs Croaking](https://leetcode.com/problems/minimum-number-of-frogs-croaking/)  | [C++](./C++/minimum-number-of-frogs-croaking.cpp) [Python](./Python/minimum-number-of-frogs-croaking.py) | _O(n)_        | _O(1)_          | Medium           | | |
+1433| [Check If a String Can Break Another String](https://leetcode.com/problems/check-if-a-string-can-break-another-string/)  | [C++](./C++/check-if-a-string-can-break-another-string.cpp) [Python](./Python/check-if-a-string-can-break-another-string.py) | _O(n)_        | _O(1)_          | Medium           | | |
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1515,6 +1518,7 @@
 1407| [Top Travellers](https://leetcode.com/problems/top-travellers/) | [MySQL](./MySQL/top-travellers.sql) | _O(m + nlogn)_ | _O(m + n)_       | Easy           |🔒| |
 1412| [Find the Quiet Students in All Exams](https://leetcode.com/problems/find-the-quiet-students-in-all-exams/) | [MySQL](./MySQL/find-the-quiet-students-in-all-exams.sql) | _O(m + nlogn)_ | _O(m + n)_       | Hard           |🔒| |
 1421| [NPV Queries](https://leetcode.com/problems/npv-queries/) | [MySQL](./MySQL/npv-queries.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
+1435| [Create a Session Bar Chart](https://leetcode.com/problems/create-a-session-bar-chart/) | [MySQL](./MySQL/create-a-session-bar-chart.sql) | _O(n)_ | _O(1)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
