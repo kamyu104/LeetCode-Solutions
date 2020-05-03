@@ -53,5 +53,5 @@ class Solution3(object):
         :rtype: bool
         """
         s1, s2 = sorted(s1), sorted(s2)
-        return all(a >= b for a, b in izip(s1, s2)) or \
-               all(a <= b for a, b in izip(s1, s2))
+        return all(a >= b for a, b in itertools.izip(s1, s2)) or \
+               all(a <= b for a, b in itertools.izip(s1, s2))
