@@ -20,7 +20,7 @@ class Solution(object):
         q = [root]
         for depth in xrange(len(arr)):
             new_q = []
-            for _ in xrange(len(q)):
+            while q:
                 node = q.pop()
                 if not node or node.val != arr[depth]:
                     continue
