@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1425%20%2F%201425-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1439%20%2F%201439-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -259,6 +259,10 @@
 1404 | [Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | [C++](./C++/number-of-steps-to-reduce-a-number-in-binary-representation-to-one.cpp) [Python](./Python/number-of-steps-to-reduce-a-number-in-binary-representation-to-one.py) | _O(n)_ | _O(1)_      | Medium         ||
 1413 | [Minimum Value to Get Positive Step by Step Sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/) | [C++](./C++/minimum-value-to-get-positive-step-by-step-sum.cpp) [Python](./Python/minimum-value-to-get-positive-step-by-step-sum.py) | _O(n)_ | _O(1)_      | Easy         ||
 1423 | [Maximum Points You Can Obtain from Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/) | [C++](./C++/maximum-points-you-can-obtain-from-cards.cpp) [Python](./Python/maximum-points-you-can-obtain-from-cards.py) | _O(n)_ | _O(1)_      | Medium         || Sliding Window
+1426 | [Counting Elements](https://leetcode.com/problems/counting-elements/)| [C++](./C++/counting-elements.cpp) [Python](./Python/counting-elements.py) | _O(n)_      | _O(n)_          | Easy         | 🔒 |
+1427 | [Perform String Shifts](https://leetcode.com/problems/perform-string-shifts/)| [C++](./C++/perform-string-shifts.cpp) [Python](./Python/perform-string-shifts.py) | _O(n + l)_      | _O(1)_          | Easy         | 🔒 |
+1428 | [Leftmost Column with at Least a One](https://leetcode.com/problems/leftmost-column-with-at-least-a-one/)| [C++](./C++/leftmost-column-with-at-least-a-one.cpp) [Python](./Python/leftmost-column-with-at-least-a-one.py) | _O(m + n)_      | _O(1)_          | Medium         | 🔒 |
+
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -560,6 +564,7 @@
 1325 |[Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/)| [C++](./C++/delete-leaves-with-a-given-value.cpp)  [Python](./Python/delete-leaves-with-a-given-value.py) | _O(n)_ | _O(h)_ | Medium || DFS|
 1339 |[Maximum Product of Splitted Binary Tree](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/)| [C++](./C++/maximum-product-of-splitted-binary-tree.cpp)  [Python](./Python/maximum-product-of-splitted-binary-tree.py) | _O(n)_ | _O(h)_ | Medium || DFS|
 1409 | [Queries on a Permutation With Key](https://leetcode.com/problems/queries-on-a-permutation-with-key/) | [C++](./C++/queries-on-a-permutation-with-key.cpp) [Python](./Python/queries-on-a-permutation-with-key.py) | _O(nlogn)_ | _O(n)_ | Medium | | BIT, Fenwick Tree
+1430 | [Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/)| [C++](./C++/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree.cpp) [Python](./Python/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | 🔒 |  BFS, DFS, Stack
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1414,6 +1419,7 @@
 1357| [Apply Discount Every n Orders](https://leetcode.com/problems/apply-discount-every-n-orders/) | [C++](./C++/apply-discount-every-n-orders.cpp) [Python](./Python/apply-discount-every-n-orders.py) | ctor: _O(m)_<br>getBill: _O(p)_ | _O(m)_ | Medium |||
 1381| [Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/) | [C++](./C++/design-a-stack-with-increment-operation.cpp) [Python](./Python/design-a-stack-with-increment-operation.py) | ctor: _O(1)_<br>push: _O(1)_<br>pop: _O(1)_<br>increment: _O(1)_ | _O(n)_ | Medium |||
 1396| [Design Underground System](https://leetcode.com/problems/design-underground-system/) | [C++](./C++/design-underground-system.cpp) [Python](./Python/design-underground-system.py) | ctor: _O(1)_<br>checkin: _O(1)_<br>checkout: _O(1)_<br>getaverage: _O(1)_ | _O(n)_ | Medium |||
+1429 | [First Unique Number](https://leetcode.com/problems/first-unique-number/)| [C++](./C++/first-unique-number.cpp) [Python](./Python/first-unique-number.py) | ctor: _O(k)_<br>add: _O(1)_<br>showFirstUnique: _O(1)_ | _O(n)_ | Medium | 🔒 | LinkedHashSet 
 
 ## Concurrency
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
