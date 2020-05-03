@@ -30,7 +30,7 @@ private:
     }
 };
 
-// Time:  O(k * log(m * MAX_NUM)) ~ O(k * m * log(m * MAX_NUM))
+// Time:  O((k + m) * log(m * MAX_NUM)) ~ O(k * m * log(m * MAX_NUM))
 // Space: O(m)
 class Solution2 {
 public:
@@ -50,7 +50,7 @@ public:
     }
 
 private:
-    int countArraysHaveSumLessOrEqual(const vector<vector<int>>& mat, int k, int r, int target) {
+    int countArraysHaveSumLessOrEqual(const vector<vector<int>>& mat, int k, int r, int target) {  // Time: O(k + m) ~ O(k * m)
         if (target < 0)  {
             return 0;
         }
