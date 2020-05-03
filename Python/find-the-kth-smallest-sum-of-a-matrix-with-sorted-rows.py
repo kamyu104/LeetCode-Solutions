@@ -30,7 +30,7 @@ class Solution(object):
         return result[k-1]
 
 
-# Time:  O(k * log(m * MAX_NUM)) ~ O(k * m * log(m * MAX_NUM))
+# Time:  O((k + m) * log(m * MAX_NUM)) ~ O(k * m * log(m * MAX_NUM))
 # Space: O(m)
 class Solution2(object):
     def kthSmallest(self, mat, k):
@@ -39,7 +39,7 @@ class Solution2(object):
         :type k: int
         :rtype: int
         """        
-        def countArraysHaveSumLessOrEqual(mat, k, r, target):  # Time: O(k) ~ O(k * m)
+        def countArraysHaveSumLessOrEqual(mat, k, r, target):  # Time: O(k + m) ~ O(k * m)
             if target < 0:
                 return 0
             if r == len(mat):
