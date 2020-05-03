@@ -23,7 +23,6 @@ class Solution(object):
 
         counter1, counter2 = collections.Counter(s1), collections.Counter(s2)
         return is_break(counter1, counter2) or is_break(counter2, counter1)
-
     
 
 # Time:  O(nlogn)
