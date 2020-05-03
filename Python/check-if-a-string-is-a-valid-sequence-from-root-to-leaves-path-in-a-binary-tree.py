@@ -26,7 +26,7 @@ class Solution(object):
                     continue
                 if depth+1 == len(arr) and node.left == node.right:
                     return True
-                new_q.extend(child for child in (node.left, node.right) if child)
+                new_q.extend(child for child in (node.left, node.right))
             q = new_q
         return False
 
