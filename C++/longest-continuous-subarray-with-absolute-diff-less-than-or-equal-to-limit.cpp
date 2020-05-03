@@ -45,7 +45,7 @@ public:
                 min_dq.pop_back();
             }
             min_dq.emplace_back(right);
-            while (nums[max_dq[0]] - nums[min_dq[0]] > limit) {
+            while (nums[max_dq[0]] - nums[min_dq[0]] > limit) {  // both always exist "right" element
                 if (max_dq[0] == left) {
                     max_dq.pop_front();
                 }
