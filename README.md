@@ -495,7 +495,7 @@
 1046 | [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [C++](./C++/last-stone-weight.cpp) [Python](./Python/last-stone-weight.py) | _O(nlogn)_ | _O(n)_ | Easy |||
 1057| [Campus Bikes](https://leetcode.com/problems/campus-bikes/) | [C++](./C++/campus-bikes.cpp) [Python](./Python/campus-bikes.py) |  _O((w * b) * log(w * b))_ | _O(w * b)_   | Medium |🔒||
 1383 | [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | [C++](./C++/maximum-performance-of-a-team.cpp) [Python](./Python/maximum-performance-of-a-team.py) | _O(nlogn)_ | _O(n)_ | Hard | variant of [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | Sort |
-1439 | [Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/) | [C++](./C++/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows.cpp) [Python](./Python/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows.py) | _O(m * klogk)_ | _O(k)_ | Hard |||
+1439 | [Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/) | [C++](./C++/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows.cpp) [Python](./Python/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows.py) | _O(m * klogk)_ | _O(k)_ | Hard || Binary Search |
 
 ## Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
