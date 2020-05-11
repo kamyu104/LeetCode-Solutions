@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1439%20%2F%201439-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1444%20%2F%201444-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -463,6 +463,7 @@
 1130| [Minimum Cost Tree From Leaf Values](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/)| [C++](./C++/minimum-cost-tree-from-leaf-values.cpp)  [Python](./Python/minimum-cost-tree-from-leaf-values.py)| _O(n)_ | _O(n)_         | Medium           || Mono Stack
 1190| [Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/)| [C++](./C++/reverse-substrings-between-each-pair-of-parentheses.cpp)  [Python](./Python/reverse-substrings-between-each-pair-of-parentheses.py)| _O(n)_ | _O(n)_         | Medium           ||
 1209 | [Remove All Adjacent Duplicates in String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/) | [C++](./C++/remove-all-adjacent-duplicates-in-string-ii.cpp) [Python](./Python/remove-all-adjacent-duplicates-in-string-ii.py) | _O(n)_ | _O(n)_      | Medium         ||
+1441 | [Build an Array With Stack Operations](https://leetcode.com/problems/build-an-array-with-stack-operations/) | [C++](./C++/build-an-array-with-stack-operations.cpp) [Python](./Python/build-an-array-with-stack-operations.py) | _O(n)_ | _O(1)_      | Easy         ||
 
 ## Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -784,6 +785,7 @@
 1390| [Four Divisors](https://leetcode.com/problems/four-divisors/) | [C++](./C++/four-divisors.cpp) [Python](./Python/four-divisors.py) | _O(n * sqrt(n))_ | _O(1)_ |  Medium | |
 1401| [Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping/) | [C++](./C++/circle-and-rectangle-overlapping.cpp) [Python](./Python/circle-and-rectangle-overlapping.py) | _O(1)_ | _O(1)_ |  Medium | |
 1415| [The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | [C++](./C++/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n.cpp) [Python](./Python/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n.py) | _O(n)_ | _O(1)_ |  Medium | |
+1442| [Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/) | [C++](./C++/count-triplets-that-can-form-two-arrays-of-equal-xor.cpp) [Python](./Python/count-triplets-that-can-form-two-arrays-of-equal-xor.py) | _O(n)_ | _O(n)_ |  Medium | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1080,6 +1082,7 @@
 1376| [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/) | [C++](./C++/time-needed-to-inform-all-employees.cpp) [Python](./Python/time-needed-to-inform-all-employees.py) | _O(n)_          | _O(n)_          | Medium           |||
 1377| [Frog Position After T Seconds](https://leetcode.com/problems/frog-position-after-t-seconds/) | [C++](./C++/frog-position-after-t-seconds.cpp) [Python](./Python/frog-position-after-t-seconds.py) | _O(n)_          | _O(n)_          | Hard           || DFS, Stack, BFS|
 1391| [Check if There is a Valid Path in a Grid](https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/) | [C++](./C++/check-if-there-is-a-valid-path-in-a-grid.cpp) [Python](./Python/check-if-there-is-a-valid-path-in-a-grid.py) | _O(m * n)_          | _O(1)_          | Medium           || Simulation |
+1443| [Minimum Time to Collect All Apples in a Tree](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/) | [C++](./C++/minimum-time-to-collect-all-apples-in-a-tree.cpp) [Python](./Python/minimum-time-to-collect-all-apples-in-a-tree.py) | _O(n)_          | _O(n)_          | Medium           || DFS, Stack |
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1282,6 +1285,7 @@
 1416| [Restore The Array](https://leetcode.com/problems/restore-the-array/)| [C++](./C++/restore-the-array.cpp) [Python](./Python/restore-the-array.py) | _O(nlogk)_    | _O(logk)_          | Hard           ||
 1420| [Build Array Where You Can Find The Maximum Exactly K Comparisons](https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/)| [C++](./C++/build-array-where-you-can-find-the-maximum-exactly-k-comparisons.cpp) [Python](./Python/build-array-where-you-can-find-the-maximum-exactly-k-comparisons.py) | _O(n * m * k)_    | _O(m * k)_          | Hard           ||
 1434| [Number of Ways to Wear Different Hats to Each Other](https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/)| [C++](./C++/number-of-ways-to-wear-different-hats-to-each-other.cpp) [Python](./Python/number-of-ways-to-wear-different-hats-to-each-other.py) | _O(h * 2^n)_    | _O(2^n)_          | Hard           ||
+1444| [Number of Ways of Cutting a Pizza](https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/)| [C++](./C++/number-of-ways-of-cutting-a-pizza.cpp) [Python](./Python/number-of-ways-of-cutting-a-pizza.py) | _O(m * n * k * (m + n))_    | _O(m * n * k)_          | Hard           ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1523,6 +1527,7 @@
 1412| [Find the Quiet Students in All Exams](https://leetcode.com/problems/find-the-quiet-students-in-all-exams/) | [MySQL](./MySQL/find-the-quiet-students-in-all-exams.sql) | _O(m + nlogn)_ | _O(m + n)_       | Hard           |🔒| |
 1421| [NPV Queries](https://leetcode.com/problems/npv-queries/) | [MySQL](./MySQL/npv-queries.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1435| [Create a Session Bar Chart](https://leetcode.com/problems/create-a-session-bar-chart/) | [MySQL](./MySQL/create-a-session-bar-chart.sql) | _O(n)_ | _O(1)_       | Easy           |🔒| |
+1444| [Create a Session Bar Chart](https://leetcode.com/problems/evaluate-boolean-expression/) | [MySQL](./MySQL/evaluate-boolean-expression.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
