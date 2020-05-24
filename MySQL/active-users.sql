@@ -28,7 +28,7 @@ FROM
                      l.login_date) a_l,
            (SELECT @accu := 0,
                    @prev := "",
-                   @login_date := "1970-01-01") init
+                   @login_date := "") init
         )
   ) r
 WHERE r.accu = 5;
