@@ -14,4 +14,4 @@ class Solution(object):
             for a in xrange(1, b):
                 g = fractions.gcd(a, b)
                 lookup.add((a//g, b//g))
-        return ["{}/{}".format(*fr) for fr in lookup]
+        return map(lambda x: "{}/{}".format(*x), lookup)
