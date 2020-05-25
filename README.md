@@ -264,6 +264,7 @@
 1428 | [Leftmost Column with at Least a One](https://leetcode.com/problems/leftmost-column-with-at-least-a-one/)| [C++](./C++/leftmost-column-with-at-least-a-one.cpp) [Python](./Python/leftmost-column-with-at-least-a-one.py) | _O(m + n)_      | _O(1)_          | Medium         | 🔒 |
 1431 | [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) | [C++](./C++/kids-with-the-greatest-number-of-candies.cpp) [Python](./Python/kids-with-the-greatest-number-of-candies.py) | _O(n)_ | _O(1)_      | Easy         || 
 1437 | [Check If All 1's Are at Least Length K Places Away](https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/) | [C++](./C++/check-if-all-1s-are-at-least-length-k-places-away.cpp) [Python](./Python/check-if-all-1s-are-at-least-length-k-places-away.py) | _O(n)_ | _O(1)_      | Medium         || 
+1450 | [Number of Students Doing Homework at a Given Time](https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/) | [C++](./C++/number-of-students-doing-homework-at-a-given-time.cpp) [Python](./Python/number-of-students-doing-homework-at-a-given-time.py) | _O(n)_ | _O(1)_      | Easy         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -650,6 +651,7 @@
 1207| [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | [C++](./C++/unique-number-of-occurrences.cpp) [Python](./Python/unique-number-of-occurrences.py)  | _O(n)_ |  _O(n)_ | Easy         |||
 1224| [Maximum Equal Frequency](https://leetcode.com/problems/maximum-equal-frequency/) | [C++](./C++/maximum-equal-frequency.cpp) [Python](./Python/maximum-equal-frequency.py)  | _O(n)_ |  _O(n)_ | Hard         |||
 1418| [Display Table of Food Orders in a Restaurant](https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant/) | [C++](./C++/display-table-of-food-orders-in-a-restaurant.cpp) [Python](./Python/display-table-of-food-orders-in-a-restaurant.py)  | _O(n + tlogt + flogf)_ |  _O(n)_ | Medium         |||
+1452| [People Whose List of Favorite Companies Is Not a Subset of Another List](https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list/) | [C++](./C++/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list.cpp) [Python](./Python/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list.py) | _O(n * m * l + n^2 * m)_   | _O(n * m * l)_        | Medium         ||
 
 ## Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -824,6 +826,7 @@
 1356| [Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/) | [C++](./C++/sort-integers-by-the-number-of-1-bits.cpp) [Python](./Python/sort-integers-by-the-number-of-1-bits.py) | _O(nlogn)_   | _O(1)_        | Easy         || Bit Manipulation
 1365| [How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/) | [C++](./C++/how-many-numbers-are-smaller-than-the-current-number.cpp) [Python](./Python/how-many-numbers-are-smaller-than-the-current-number.py) | _O(n + m)_   | _O(m)_        | Easy         || Counting Sort
 1366| [Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes/) | [C++](./C++/rank-teams-by-votes.cpp) [Python](./Python/rank-teams-by-votes.py) | _O(m * (n + mlogm))_   | _O(m^2)_        | Medium         ||
+1451| [Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence/) | [C++](./C++/rearrange-words-in-a-sentence.cpp) [Python](./Python/rearrange-words-in-a-sentence.py) | _O(nlogn)_   | _O(n)_        | Medium         || String
 
 ## Two Pointers
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1387,6 +1390,7 @@
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 0587 | [Erect the Fence](https://leetcode.com/problems/erect-the-fence/)  | [C++](./C++/erect-the-fence.cpp) [Python](./Python/erect-the-fence.py) | _O(nlogn)_| _O(n)_| Hard           || Convex Hull, `Monotone Chain` | 
 0892 | [Surface Area of 3D Shapes](https://leetcode.com/problems/surface-area-of-3d-shapes/)  | [C++](./C++/surface-area-of-3d-shapes.cpp) [Python](./Python/surface-area-of-3d-shapes.py) | _O(n^2)_| _O(1)_| Easy           ||| 
+1453 | [Maximum Number of Darts Inside of a Circular Dartboard](https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/)  | [C++](./C++/maximum-number-of-darts-inside-of-a-circular-dartboard.cpp) [Python](./Python/maximum-number-of-darts-inside-of-a-circular-dartboard.py) | _O(n^2 * logn)_| _O(n)_| Hard           |||
 
 ## Simulation
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
