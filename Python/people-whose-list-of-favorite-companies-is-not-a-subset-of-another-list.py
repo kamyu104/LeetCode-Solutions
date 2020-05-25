@@ -28,7 +28,6 @@ class Solution(object):
 # Space: O(n * c * l)
 class UnionFind(object):
     def __init__(self, data):
-        
         self.data = [set(d) for d in data]
         self.set = range(len(data))
 
