@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1444%20%2F%201444-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1458%20%2F%201458-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -386,6 +386,7 @@
 1422 |[Maximum Score After Splitting a String](https://leetcode.com/problems/maximum-score-after-splitting-a-string/)| [C++](./C++/maximum-score-after-splitting-a-string.cpp) [Python](./Python/maximum-score-after-splitting-a-string.py)| _O(n)_ | _O(1)_ | Easy |||
 1432 |[Max Difference You Can Get From Changing an Integer](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/)| [C++](./C++/max-difference-you-can-get-from-changing-an-integer.cpp) [Python](./Python/max-difference-you-can-get-from-changing-an-integer.py)| _O(logn)_ | _O(logn)_ | Medium |||
 1436 |[Destination City](https://leetcode.com/problems/destination-city/)| [C++](./C++/destination-city.cpp) [Python](./Python/destination-city.py)| _O(n)_ | _O(n)_ | Easy |||
+1446 |[Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)| [C++](./C++/consecutive-characters.cpp) [Python](./Python/consecutive-characters.py)| _O(n)_ | _O(1)_ | Easy |||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -571,6 +572,7 @@
 1339 |[Maximum Product of Splitted Binary Tree](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/)| [C++](./C++/maximum-product-of-splitted-binary-tree.cpp)  [Python](./Python/maximum-product-of-splitted-binary-tree.py) | _O(n)_ | _O(h)_ | Medium || DFS|
 1409 | [Queries on a Permutation With Key](https://leetcode.com/problems/queries-on-a-permutation-with-key/) | [C++](./C++/queries-on-a-permutation-with-key.cpp) [Python](./Python/queries-on-a-permutation-with-key.py) | _O(nlogn)_ | _O(n)_ | Medium | | BIT, Fenwick Tree
 1430 | [Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/)| [C++](./C++/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree.cpp) [Python](./Python/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | 🔒 |  BFS, DFS, Stack
+1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)| [C++](./C++/count-good-nodes-in-binary-tree.cpp) [Python](./Python/count-good-nodes-in-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | 🔒 | DFS, Stack
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -786,6 +788,7 @@
 1401| [Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping/) | [C++](./C++/circle-and-rectangle-overlapping.cpp) [Python](./Python/circle-and-rectangle-overlapping.py) | _O(1)_ | _O(1)_ |  Medium | |
 1415| [The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | [C++](./C++/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n.cpp) [Python](./Python/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n.py) | _O(n)_ | _O(1)_ |  Medium | |
 1442| [Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/) | [C++](./C++/count-triplets-that-can-form-two-arrays-of-equal-xor.cpp) [Python](./Python/count-triplets-that-can-form-two-arrays-of-equal-xor.py) | _O(n)_ | _O(n)_ |  Medium | |
+1447| [Simplified Fractions](https://leetcode.com/problems/simplified-fractions/) | [C++](./C++/simplified-fractions.cpp) [Python](./Python/simplified-fractions.py) | _O(n^2 * logn)_ | _O(n^2)_ |  Medium | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1286,6 +1289,7 @@
 1420| [Build Array Where You Can Find The Maximum Exactly K Comparisons](https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/)| [C++](./C++/build-array-where-you-can-find-the-maximum-exactly-k-comparisons.cpp) [Python](./Python/build-array-where-you-can-find-the-maximum-exactly-k-comparisons.py) | _O(n * m * k)_    | _O(m * k)_          | Hard           ||
 1434| [Number of Ways to Wear Different Hats to Each Other](https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/)| [C++](./C++/number-of-ways-to-wear-different-hats-to-each-other.cpp) [Python](./Python/number-of-ways-to-wear-different-hats-to-each-other.py) | _O(h * 2^n)_    | _O(2^n)_          | Hard           ||
 1444| [Number of Ways of Cutting a Pizza](https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/)| [C++](./C++/number-of-ways-of-cutting-a-pizza.cpp) [Python](./Python/number-of-ways-of-cutting-a-pizza.py) | _O(m * n * k * (m + n))_    | _O(m * n * k)_          | Hard           ||
+1449| [Form Largest Integer With Digits That Add up to Target](https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/)| [C++](./C++/form-largest-integer-with-digits-that-add-up-to-target.cpp) [Python](./Python/form-largest-integer-with-digits-that-add-up-to-target.py) | _O(t)_    | _O(t)_          | Hard           ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1528,6 +1532,7 @@
 1421| [NPV Queries](https://leetcode.com/problems/npv-queries/) | [MySQL](./MySQL/npv-queries.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1435| [Create a Session Bar Chart](https://leetcode.com/problems/create-a-session-bar-chart/) | [MySQL](./MySQL/create-a-session-bar-chart.sql) | _O(n)_ | _O(1)_       | Easy           |🔒| |
 1440| [Evaluate Boolean Expression](https://leetcode.com/problems/evaluate-boolean-expression/) | [MySQL](./MySQL/evaluate-boolean-expression.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
+1445| [Apples & Oranges](https://leetcode.com/problems/apples-oranges/) | [MySQL](./MySQL/apples-oranges.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
