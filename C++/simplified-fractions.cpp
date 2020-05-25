@@ -19,16 +19,7 @@ public:
         return result;
     }
 
-private:
-    int gcd(int a, int b) {
-        while (b != 0) {
-            int tmp = b;
-            b = a % b;
-            a = tmp;
-        }
-        return a;
-    }
-    
+private:    
     template <typename T>
     struct PairHash {
         size_t operator()(const pair<T, T>& p) const {
