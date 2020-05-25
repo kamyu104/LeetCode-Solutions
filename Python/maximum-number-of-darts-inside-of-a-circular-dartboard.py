@@ -1,5 +1,5 @@
 # Time:  O(n^2 * logn)
-# Space: O(1)
+# Space: O(n)
 
 import math
 
