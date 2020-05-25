@@ -1,6 +1,6 @@
-# Time:  O(n^2 * c * l), n is favoriteCompanies.length
-#                      , c is the max of favoriteCompanies[i].length
-#                      , l is the max of favoriteCompanies[i][j].length
+# Time:  O(n * c * l + n^2 * c), n is favoriteCompanies.length
+#                              , c is the max of favoriteCompanies[i].length
+#                              , l is the max of favoriteCompanies[i][j].length
 # Space: O(n * c * l)
 
 class Solution(object):
@@ -9,10 +9,16 @@ class Solution(object):
         :type favoriteCompanies: List[List[str]]
         :rtype: List[int]
         """
-        lookup = [set(c) for c in favoriteCompanies]
-        return [i for i, c1 in enumerate(lookup)
+        lookup, comps = {}, []
+        for cs in favoriteCompanies:
+            comps.append(set())
+            for c in cs:
+                if c not in lookup:
+                    lookup[c] = len(lookup)
+                comps[-1].add(lookup[c])
+        return [i for i, c1 in enumerate(comps)
                 if not any(i != j and len(c1) < len(c2) and c1 < c2
-                           for j, c2 in enumerate(lookup))]
+                           for j, c2 in enumerate(comps))]
     
 
 
@@ -22,6 +28,7 @@ class Solution(object):
 # Space: O(n * c * l)
 class UnionFind(object):
     def __init__(self, data):
+        
         self.data = [set(d) for d in data]
         self.set = range(len(data))
 
