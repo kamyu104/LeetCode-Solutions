@@ -1,7 +1,7 @@
-// Time:  O(n * c * l + n^2 * c), n is favoriteCompanies.length
-//                              , c is the max of favoriteCompanies[i].length
+// Time:  O(n * m * l + n^2 * m), n is favoriteCompanies.length
+//                              , m is the max of favoriteCompanies[i].length
 //                              , l is the max of favoriteCompanies[i][j].length
-// Space: O(n * c * l)
+// Space: O(n * m * l)
 
 class Solution {
 public:
