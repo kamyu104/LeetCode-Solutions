@@ -20,7 +20,7 @@ class Solution(object):
                 if i == j:
                     continue
                 dx, dy = points[i][0]-points[j][0], points[i][1]-points[j][1]
-                d = sqrt(dx**2 + dy**2)
+                d = math.sqrt(dx**2 + dy**2)
                 if d > 2*r:
                     continue
                 delta, angle = math.acos(d/(2*r)), math.atan2(dy, dx)
