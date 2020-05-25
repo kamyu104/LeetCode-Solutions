@@ -1540,7 +1540,7 @@
 1421| [NPV Queries](https://leetcode.com/problems/npv-queries/) | [MySQL](./MySQL/npv-queries.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1435| [Create a Session Bar Chart](https://leetcode.com/problems/create-a-session-bar-chart/) | [MySQL](./MySQL/create-a-session-bar-chart.sql) | _O(n)_ | _O(1)_       | Easy           |🔒| |
 1440| [Evaluate Boolean Expression](https://leetcode.com/problems/evaluate-boolean-expression/) | [MySQL](./MySQL/evaluate-boolean-expression.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
-1445| [Apples & Oranges](https://leetcode.com/problems/apples-oranges/) | [MySQL](./MySQL/apples-oranges.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
+1445| [Apples & Oranges](https://leetcode.com/problems/apples-oranges/) | [MySQL](./MySQL/apples-oranges.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1454| [Active Users](https://leetcode.com/problems/active-users/) | [MySQL](./MySQL/active-users.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
 
 ## Shell Script
