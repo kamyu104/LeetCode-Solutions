@@ -33,7 +33,6 @@ public:
 
 // Time:  O(n)
 // Space: O(h)
-
 class Solution2 {
 public:
     int goodNodes(TreeNode* root) {
