@@ -9,12 +9,11 @@ public:
         for (const auto& n : balls) {  // O(k) times
             unordered_map<pair<int, int>, uint64_t, PairHash<int>> new_dp;
             for (const auto& kvp : dp) {  // O(k^2 * n) times
-                const auto& cands = nCrs(n);
                 const auto& [ndiff, cdiff] = kvp.first;
-                for (int k = 0; k < cands.size(); ++k) {  // O(n) times
+                for (int k = 0, new_count = 1; k <= n; ++k, new_count *= n - k + 1, new_count /= k) {  // O(n) times
                     const auto& new_ndiff = ndiff + (k - (n - k));
                     const auto& new_cdiff = (k == 0) ? cdiff - 1 : ((k == n) ? cdiff + 1 : cdiff);
-                    new_dp[pair(new_ndiff, new_cdiff)] += kvp.second * cands[k];
+                    new_dp[pair(new_ndiff, new_cdiff)] += kvp.second * new_count;
                 }
             }
             dp = move(new_dp);
@@ -24,18 +23,6 @@ public:
     }
 
 private:
-    vector<uint64_t> nCrs(int n) {  // Time: O(n), Space: O(n)
-        vector<uint64_t> cs;
-        uint64_t c = 1;
-        cs.emplace_back(c);
-        for (int k = 1; k <= n; ++k) {
-            c *= n - k + 1;
-            c /= k;
-            cs.emplace_back(c);
-        }
-        return cs;
-    }
-
     uint64_t nCr(int n, int r) {  // Time: O(n), Space: O(1)
         if (n - r < r) {
             return nCr(n, n - r);
