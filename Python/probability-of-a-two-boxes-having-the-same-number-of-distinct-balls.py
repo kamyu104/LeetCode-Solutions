@@ -10,29 +10,25 @@ class Solution(object):
         :type balls: List[int]
         :rtype: float
         """
-        def nCr(n, r):
-            if n-r < r:
-                return nCr(n, n-r)
+        def nCrs(n):  # Time: O(n), Space: O(n)
+            cs = []
             c = 1
-            for k in xrange(1, r+1):
+            cs.append(c)
+            for k in xrange(1, n+1):
                 c *= n-k+1
                 c //= k
-            return c
+                cs.append(c)
+            return cs
         
-        def candidates(n, lookup):  # Time: O(n^2), Space: O(n)
-            if n not in lookup:
-                lookup[n] = [nCr(n, i) for i in xrange(n+1)]
-            return lookup[n]
-        
-        dp, lookup = collections.defaultdict(int), {}
+        dp = collections.defaultdict(int)
         dp[0, 0] = 1  # dp[i, j] is the number of ways with number difference i and color difference j
         for n in balls:  # O(k) times
             new_dp = collections.defaultdict(int)
             for (ndiff, cdiff), count in dp.iteritems():  # O(k^2 * n) times
-                for k, new_count in enumerate(candidates(n, lookup)):  # O(n) times
+                for k, new_count in enumerate(nCrs(n)):  # O(n) times
                     new_ndiff = ndiff+(k-(n-k))
                     new_cdiff = cdiff-1 if k == 0 else (cdiff+1 if k == n else cdiff)
                     new_dp[new_ndiff, new_cdiff] += count*new_count
             dp = new_dp
         total = sum(balls)
-        return float(dp[0, 0])/nCr(total, total//2)
+        return float(dp[0, 0])/nCrs(total)[total//2]
