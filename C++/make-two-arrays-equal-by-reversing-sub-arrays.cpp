@@ -16,3 +16,14 @@ private:
         return count;
     }
 };
+
+// Time:  O(nlogn)
+// Space: O(1)
+class Solution2 {
+public:
+    bool canBeEqual(vector<int>& target, vector<int>& arr) {
+        sort(begin(target), end(target));
+        sort(begin(arr), end(arr));
+        return target == arr;
+    }
+};
