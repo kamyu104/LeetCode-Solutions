@@ -6,7 +6,7 @@ public:
     double getProbability(vector<int>& balls) {
         unordered_map<pair<int, int>, uint64_t, PairHash<int>> dp;
         unordered_map<int, vector<int>> lookup;
-        dp[pair(0, 0)] = 1;  // dp[i, j] is the ways of number difference i and color difference j
+        dp[pair(0, 0)] = 1;  // dp[i, j] is the number of ways with number difference i and color difference j
         for (const auto& n : balls) {  // O(k) times
             unordered_map<pair<int, int>, uint64_t, PairHash<int>> new_dp;
             for (const auto& kvp : dp) {  // O(k^2 * n) times
