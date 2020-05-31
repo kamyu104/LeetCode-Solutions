@@ -5,12 +5,11 @@ class Solution {
 public:
     double getProbability(vector<int>& balls) {
         unordered_map<pair<int, int>, uint64_t, PairHash<int>> dp;
-        unordered_map<int, vector<int>> lookup;
-        dp[pair(0, 0)] = 1;  // dp[i, j] is the number of ways with number difference i and color difference j
+        dp[pair(0, 0)] = 1;  // dp[i, j] is the ways of number difference i and color difference j
         for (const auto& n : balls) {  // O(k) times
             unordered_map<pair<int, int>, uint64_t, PairHash<int>> new_dp;
             for (const auto& kvp : dp) {  // O(k^2 * n) times
-                const auto& cands = candidates(n, &lookup);
+                const auto& cands = nCrs(n);
                 const auto& [ndiff, cdiff] = kvp.first;
                 for (int k = 0; k < cands.size(); ++k) {  // O(n) times
                     const auto& new_ndiff = ndiff + (k - (n - k));
@@ -25,7 +24,19 @@ public:
     }
 
 private:
-    uint64_t nCr(int n, int r) {
+    vector<uint64_t> nCrs(int n) {  // Time: O(n), Space: O(n)
+        vector<uint64_t> cs;
+        uint64_t c = 1;
+        cs.emplace_back(c);
+        for (int k = 1; k <= n; ++k) {
+            c *= n - k + 1;
+            c /= k;
+            cs.emplace_back(c);
+        }
+        return cs;
+    }
+
+    uint64_t nCr(int n, int r) {  // Time: O(n), Space: O(1)
         if (n - r < r) {
             return nCr(n, n - r);
         }
@@ -36,16 +47,7 @@ private:
         }
         return c;
     }
-        
-    vector<int> candidates(int n, unordered_map<int, vector<int>> *lookup) {  // Time: O(n^2), Space: O(n)
-        if (!lookup->count(n)) {
-            for (int i = 0; i <= n; ++i) {
-                (*lookup)[n].emplace_back(nCr(n, i));
-            }
-        }
-        return (*lookup)[n];
-    }
-    
+
     template <typename T>
     struct PairHash {
         size_t operator()(const pair<T, T>& p) const {
