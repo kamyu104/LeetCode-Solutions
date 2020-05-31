@@ -25,7 +25,7 @@ class Solution(object):
             return lookup[n]
         
         dp, lookup = collections.defaultdict(int), {}
-        dp[0, 0] = 1  # dp[i, j] is the ways of number difference i and color difference j
+        dp[0, 0] = 1  # dp[i, j] is the number of ways with number difference i and color difference j
         for n in balls:  # O(k) times
             new_dp = collections.defaultdict(int)
             for (ndiff, cdiff), count in dp.iteritems():  # O(k^2 * n) times
