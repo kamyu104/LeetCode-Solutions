@@ -12,11 +12,10 @@ class Solution(object):
         """
         def nCrs(n):  # Time: O(n), Space: O(1)
             c = 1
-            yield c
-            for k in xrange(1, n+1):
-                c *= n-k+1
-                c //= k
+            for k in xrange(n+1):
                 yield c
+                c *= n-(k+1)+1
+                c //= k+1
         
         def nCr(n, r):  # Time: O(n), Space: O(1)
             if n-r < r:
