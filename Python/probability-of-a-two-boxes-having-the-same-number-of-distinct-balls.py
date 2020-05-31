@@ -28,11 +28,11 @@ class Solution(object):
         dp[0, 0] = 1  # dp[i, j] is the ways of number difference i and color difference j
         for n in balls:  # O(k) times
             new_dp = collections.defaultdict(int)
-            for ndiff, cdiff in dp:  # O(k^2 * n) times
-                for k, count in enumerate(candidates(n, lookup)):  # O(n) times
+            for (ndiff, cdiff), count in dp.iteritems():  # O(k^2 * n) times
+                for k, new_count in enumerate(candidates(n, lookup)):  # O(n) times
                     new_ndiff = ndiff+(k-(n-k))
                     new_cdiff = cdiff-1 if k == 0 else (cdiff+1 if k == n else cdiff)
-                    new_dp[new_ndiff, new_cdiff] += dp[ndiff, cdiff]*count
+                    new_dp[new_ndiff, new_cdiff] += count*new_count
             dp = new_dp
         total = sum(balls)
         return float(dp[0, 0])/nCr(total, total//2)
