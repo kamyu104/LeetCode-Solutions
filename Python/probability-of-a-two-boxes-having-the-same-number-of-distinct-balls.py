@@ -19,9 +19,9 @@ class Solution(object):
                 c //= k
             return c
         
-        def candidates(lookup, n):  # Time: O(n^2), Space: O(n)
+        def candidates(n, lookup):  # Time: O(n^2), Space: O(n)
             if n not in lookup:
-                lookup[n] = {i:nCr(n, i) for i in xrange(n+1)}
+                lookup[n] = [nCr(n, i) for i in xrange(n+1)]
             return lookup[n]
         
         dp, lookup = collections.defaultdict(int), {}
@@ -29,7 +29,7 @@ class Solution(object):
         for n in balls:  # O(k) times
             new_dp = collections.defaultdict(int)
             for ndiff, cdiff in dp:  # O(k^2 * n) times
-                for k, count in candidates(lookup, n).iteritems():  # O(n) times
+                for k, count in enumerate(candidates(n, lookup)):  # O(n) times
                     new_ndiff = ndiff+(k-(n-k))
                     new_cdiff = cdiff-1 if k == 0 else (cdiff+1 if k == n else cdiff)
                     new_dp[new_ndiff, new_cdiff] += dp[ndiff, cdiff]*count
