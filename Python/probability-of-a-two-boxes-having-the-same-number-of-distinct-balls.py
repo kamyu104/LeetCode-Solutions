@@ -10,15 +10,13 @@ class Solution(object):
         :type balls: List[int]
         :rtype: float
         """
-        def nCrs(n):  # Time: O(n), Space: O(n)
-            cs = []
+        def nCrs(n):  # Time: O(n), Space: O(1)
             c = 1
-            cs.append(c)
+            yield c
             for k in xrange(1, n+1):
                 c *= n-k+1
                 c //= k
-                cs.append(c)
-            return cs
+                yield c
         
         def nCr(n, r):  # Time: O(n), Space: O(1)
             if n-r < r:
