@@ -267,6 +267,7 @@
 1450 | [Number of Students Doing Homework at a Given Time](https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/) | [C++](./C++/number-of-students-doing-homework-at-a-given-time.cpp) [Python](./Python/number-of-students-doing-homework-at-a-given-time.py) | _O(n)_ | _O(1)_      | Easy         || 
 1464 | [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) | [C++](./C++/maximum-product-of-two-elements-in-an-array.cpp) [Python](./Python/maximum-product-of-two-elements-in-an-array.py) | _O(n)_ | _O(1)_      | Easy         || 
 1465 | [Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts](https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/) | [C++](./C++/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts.cpp) [Python](./Python/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts.py) | _O(hlogh + wlogw)_ | _O(1)_      | Medium         || 
+1460 | [Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/) | [C++](./C++/make-two-arrays-equal-by-reversing-sub-arrays.cpp) [Python](./Python/make-two-arrays-equal-by-reversing-sub-arrays.py) | _O(n)_ | _O(n)_      | Easy         || 
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -392,6 +393,7 @@
 1446 |[Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)| [C++](./C++/consecutive-characters.cpp) [Python](./Python/consecutive-characters.py)| _O(n)_ | _O(1)_ | Easy |||
 1455| [Check If a Word Occurs As a Prefix of Any Word in a Sentence](https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/) | [C++](./C++/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence.cpp) [Python](./Python/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence.py) | _O(n)_ | _O(n)_ | Easy || `KMP Algorithm` |
 1456| [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [C++](./C++/maximum-number-of-vowels-in-a-substring-of-given-length.cpp) [Python](./Python/maximum-number-of-vowels-in-a-substring-of-given-length.py) | _O(n)_ | _O(1)_ | Medium || Sliding Window |
+1461| [Check If a String Contains All Binary Codes of Size K](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) | [C++](./C++/check-if-a-string-contains-all-binary-codes-of-size-k.cpp) [Python](./Python/check-if-a-string-contains-all-binary-codes-of-size-k.py) | _O(n * k)_ | _O(k * 2^k)_ | Medium || Bit Manipulation |
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1300,6 +1302,7 @@
 1444| [Number of Ways of Cutting a Pizza](https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/)| [C++](./C++/number-of-ways-of-cutting-a-pizza.cpp) [Python](./Python/number-of-ways-of-cutting-a-pizza.py) | _O(m * n * k * (m + n))_    | _O(m * n * k)_          | Hard           ||
 1449| [Form Largest Integer With Digits That Add up to Target](https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/)| [C++](./C++/form-largest-integer-with-digits-that-add-up-to-target.cpp) [Python](./Python/form-largest-integer-with-digits-that-add-up-to-target.py) | _O(t)_    | _O(t)_          | Hard           ||
 1458| [Max Dot Product of Two Subsequences](https://leetcode.com/problems/max-dot-product-of-two-subsequences/)| [C++](./C++/max-dot-product-of-two-subsequences.cpp) [Python](./Python/max-dot-product-of-two-subsequences.py) | _O(m * n)_    | _O(min(m, n))_          | Hard           ||
+1463| [Cherry Pickup II](https://leetcode.com/problems/cherry-pickup-ii/)| [C++](./C++/cherry-pickup-ii.cpp) [Python](./Python/cherry-pickup-ii.py) | _O(m * n^2)_    | _O(n^2)_          | Hard           ||
 1467| [Probability of a Two Boxes Having The Same Number of Distinct Balls](https://leetcode.com/problems/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls/)| [C++](./C++/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls.cpp) [Python](./Python/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls.py) | _O(k^3 * n^2)_    | _O(k^2 * n)_          | Hard           ||
 
 ## Greedy
@@ -1392,6 +1395,7 @@
 1168 | [Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) | [C++](./C++/optimize-water-distribution-in-a-village.cpp) [Python](./Python/optimize-water-distribution-in-a-village.py) | _O(nlogn)_ | _O(n)_ | Hard           |🔒| Union Find |
 1334 | [Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | [C++](./C++/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.cpp) [Python](./Python/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.py) | _O(n^3)_ | _O(n^2)_ | Medium           || `Floyd-Warshall Algorithm`|
 1361 | [Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes/)  | [C++](./C++/validate-binary-tree-nodes.cpp) [Python](./Python/validate-binary-tree-nodes.py) | _O(n)_| _O(n)_| Medium           || DFS, Tree | 
+1462 | [Course Schedule IV](https://leetcode.com/problems/course-schedule-iv/)  | [C++](./C++/course-schedule-iv.cpp) [Python](./Python/course-schedule-iv.py) | _O(n^3)_| _O(n^2)_| Medium           || `Floyd-Warshall Algorithm` |
 
 ## Geometry
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1546,6 +1550,7 @@
 1440| [Evaluate Boolean Expression](https://leetcode.com/problems/evaluate-boolean-expression/) | [MySQL](./MySQL/evaluate-boolean-expression.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1445| [Apples & Oranges](https://leetcode.com/problems/apples-oranges/) | [MySQL](./MySQL/apples-oranges.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1454| [Active Users](https://leetcode.com/problems/active-users/) | [MySQL](./MySQL/active-users.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
+1459| [Rectangles Area](https://leetcode.com/problems/rectangles-area/) | [MySQL](./MySQL/rectangles-area.sql) | _O(n^2)_ | _O(n^2)_       | Medium           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
