@@ -20,6 +20,15 @@ class Solution(object):
                 cs.append(c)
             return cs
         
+        def nCr(n, r):  # Time: O(n), Space: O(1)
+            if n-r < r:
+                return nCr(n, n-r)
+            c = 1
+            for k in xrange(1, r+1):
+                c *= n-k+1
+                c //= k
+            return c
+        
         dp = collections.defaultdict(int)
         dp[0, 0] = 1  # dp[i, j] is the number of ways with number difference i and color difference j
         for n in balls:  # O(k) times
@@ -31,4 +40,4 @@ class Solution(object):
                     new_dp[new_ndiff, new_cdiff] += count*new_count
             dp = new_dp
         total = sum(balls)
-        return float(dp[0, 0])/nCrs(total)[total//2]
+        return float(dp[0, 0])/nCr(total, total//2)
