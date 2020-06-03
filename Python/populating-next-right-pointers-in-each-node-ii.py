@@ -1,45 +1,32 @@
 # Time:  O(n)
 # Space: O(1)
 
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-        self.next = None
-
-    def __repr__(self):
-        if self is None:
-            return "Nil"
-        else:
-            return "{} -> {}".format(self.val, repr(self.next))
+"""
+# Definition for a Node.
+class Node(object):
+    def __init__(self, val=0, left=None, right=None, next=None):
+        self.val = val
+        self.left = left
+        self.right = right
+        self.next = next
+"""
 
 class Solution(object):
     # @param root, a tree node
     # @return nothing
     def connect(self, root):
         head = root
-        while head:
-            prev, cur, next_head = None, head, None
-            while cur:
-                if next_head is None:
-                    if cur.left:
-                        next_head = cur.left
-                    elif cur.right:
-                        next_head = cur.right
-
-                if cur.left:
-                    if prev:
-                        prev.next = cur.left
-                    prev = cur.left
-
-                if cur.right:
-                    if prev:
-                        prev.next = cur.right
-                    prev = cur.right
-
-                cur = cur.next
-            head = next_head
-
-
-
+        pre = Node(0)
+        cur = pre
+        while root:
+            while root:
+                if root.left:
+                    cur.next = root.left
+                    cur = cur.next
+                if root.right:
+                    cur.next = root.right
+                    cur = cur.next
+                root = root.next
+            root, cur = pre.next, pre
+            cur.next = None
+        return head
