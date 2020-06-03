@@ -1,7 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
 
-"""
 # Definition for a Node.
 class Node(object):
     def __init__(self, val=0, left=None, right=None, next=None):
@@ -9,7 +8,7 @@ class Node(object):
         self.left = left
         self.right = right
         self.next = next
-"""
+
 
 class Solution(object):
     # @param root, a tree node
