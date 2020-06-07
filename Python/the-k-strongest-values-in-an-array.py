@@ -34,7 +34,7 @@ class Solution2(object):
         """
         arr.sort()
         m = arr[(len(arr)-1)//2]
-        arr.sort(lambda a, b: cmp(abs(b-m), abs(a-m)) if abs(a-m) != abs(b-m) else cmp(b, a))
+        arr.sort(key=lambda x: (-abs(x-m), -x))
         return arr[:k]
 
 
