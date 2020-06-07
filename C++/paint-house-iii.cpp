@@ -42,3 +42,45 @@ public:
         return (result != numeric_limits<int>::max()) ? result : -1;
     }
 };
+
+// Time:  O(m * t * n^2)
+// Space: O(t *n)
+class Solution2 {
+public:
+    int minCost(vector<int>& houses, vector<vector<int>>& cost, int m, int n, int target) {
+        const auto& hash = [&](int a, int b) {
+            return a * (n + 1) + b;
+        };
+        const auto& unhash = [&](int a_b) {
+            return pair(a_b / (n + 1), a_b % (n + 1));
+        };
+        unordered_map<int, int> dp = {{hash(0, 0), 0}};
+        for (int i = 0; i < houses.size(); ++i) {
+            unordered_map<int, int> new_dp;
+            int left = houses[i], right = houses[i];
+            if (!houses[i]) {
+                left = 1, right = n;
+            }
+            for (int nk = left; nk <= right; ++nk) {
+                for (const auto& [j_k, _] : dp) {
+                    const auto& [j, k] = unhash(j_k);
+                    int nj = j + int(k != nk);
+                    if (nj > target) {
+                        continue;
+                    }
+                    new_dp[hash(nj, nk)] = min(new_dp.count(hash(nj, nk)) ? new_dp[hash(nj, nk)]
+                                               : numeric_limits<int>::max(), 
+                                               dp[hash(j, k)] + ((nk != houses[i]) ? cost[i][nk - 1] : 0));
+                }
+            }
+            dp = move(new_dp);
+        }
+        int result = numeric_limits<int>::max();
+        for (const auto& [j_k, v] : dp) {
+            if (unhash(j_k).first == target) {
+                result = min(result, v);
+            }
+        }
+        return (result != numeric_limits<int>::max()) ? result : -1;
+    }
+};
