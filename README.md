@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1467%20%2F%201467-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1473%20%2F%201473-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -579,8 +579,9 @@
 1339 |[Maximum Product of Splitted Binary Tree](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/)| [C++](./C++/maximum-product-of-splitted-binary-tree.cpp)  [Python](./Python/maximum-product-of-splitted-binary-tree.py) | _O(n)_ | _O(h)_ | Medium || DFS|
 1409 | [Queries on a Permutation With Key](https://leetcode.com/problems/queries-on-a-permutation-with-key/) | [C++](./C++/queries-on-a-permutation-with-key.cpp) [Python](./Python/queries-on-a-permutation-with-key.py) | _O(nlogn)_ | _O(n)_ | Medium | | BIT, Fenwick Tree
 1430 | [Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/)| [C++](./C++/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree.cpp) [Python](./Python/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | 🔒 |  BFS, DFS, Stack
-1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)| [C++](./C++/count-good-nodes-in-binary-tree.cpp) [Python](./Python/count-good-nodes-in-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | 🔒 | DFS, Stack
-1457 | [Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/)| [C++](./C++/pseudo-palindromic-paths-in-a-binary-tree.cpp) [Python](./Python/pseudo-palindromic-paths-in-a-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | 🔒 | DFS, Stack
+1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)| [C++](./C++/count-good-nodes-in-binary-tree.cpp) [Python](./Python/count-good-nodes-in-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | | DFS, Stack
+1457 | [Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/)| [C++](./C++/pseudo-palindromic-paths-in-a-binary-tree.cpp) [Python](./Python/pseudo-palindromic-paths-in-a-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | | DFS, Stack
+1469 | [Find All The Lonely Nodes](https://leetcode.com/problems/find-all-the-lonely-nodes/)| [C++](./C++/find-all-the-lonely-nodes.cpp) [Python](./Python/find-all-the-lonely-nodes.py) | _O(n)_ | _O(h)_ | Easy | 🔒 | DFS, Stack
 
 ## Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1551,6 +1552,7 @@
 1445| [Apples & Oranges](https://leetcode.com/problems/apples-oranges/) | [MySQL](./MySQL/apples-oranges.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1454| [Active Users](https://leetcode.com/problems/active-users/) | [MySQL](./MySQL/active-users.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
 1459| [Rectangles Area](https://leetcode.com/problems/rectangles-area/) | [MySQL](./MySQL/rectangles-area.sql) | _O(n^2)_ | _O(n^2)_       | Medium           |🔒| |
+1468| [Calculate Salaries](https://leetcode.com/problems/calculate-salaries/) | [MySQL](./MySQL/calculate-salaries.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
