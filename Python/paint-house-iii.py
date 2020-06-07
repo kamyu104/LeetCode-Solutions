@@ -1,5 +1,5 @@
 # Time:  O(m * t * n^2)
-# Space: O(t *n)
+# Space: O(t * n)
 
 class Solution(object):
     def minCost(self, houses, cost, m, n, target):
@@ -28,7 +28,7 @@ class Solution(object):
 
 
 # Time:  O(m * t * n^2)
-# Space: O(t *n)
+# Space: O(t * n)
 class Solution2(object):
     def minCost(self, houses, cost, m, n, target):
         dp = {(0, 0): 0}
