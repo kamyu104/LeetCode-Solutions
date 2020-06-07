@@ -31,6 +31,14 @@ class Solution(object):
 # Space: O(t * n)
 class Solution2(object):
     def minCost(self, houses, cost, m, n, target):
+        """
+        :type houses: List[int]
+        :type cost: List[List[int]]
+        :type m: int
+        :type n: int
+        :type target: int
+        :rtype: int
+        """
         dp = {(0, 0): 0}
         for i, p in enumerate(houses):
             new_dp = {}
