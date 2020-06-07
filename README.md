@@ -268,6 +268,8 @@
 1460 | [Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/) | [C++](./C++/make-two-arrays-equal-by-reversing-sub-arrays.cpp) [Python](./Python/make-two-arrays-equal-by-reversing-sub-arrays.py) | _O(n)_ | _O(n)_      | Easy         || 
 1464 | [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) | [C++](./C++/maximum-product-of-two-elements-in-an-array.cpp) [Python](./Python/maximum-product-of-two-elements-in-an-array.py) | _O(n)_ | _O(1)_      | Easy         || 
 1465 | [Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts](https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/) | [C++](./C++/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts.cpp) [Python](./Python/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts.py) | _O(hlogh + wlogw)_ | _O(1)_      | Medium         || 
+1470 | [Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/) | [C++](./C++/shuffle-the-array.cpp) [Python](./Python/shuffle-the-array.py) | _O(n)_ | _O(1)_      | Easy         ||
+1471 | [The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array/) | [C++](./C++/the-k-strongest-values-in-an-array.cpp) [Python](./Python/the-k-strongest-values-in-an-array.py) | _O(n)_ | _O(1)_      | Medium         || Quick Select
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1305,6 +1307,7 @@
 1458| [Max Dot Product of Two Subsequences](https://leetcode.com/problems/max-dot-product-of-two-subsequences/)| [C++](./C++/max-dot-product-of-two-subsequences.cpp) [Python](./Python/max-dot-product-of-two-subsequences.py) | _O(m * n)_    | _O(min(m, n))_          | Hard           ||
 1463| [Cherry Pickup II](https://leetcode.com/problems/cherry-pickup-ii/)| [C++](./C++/cherry-pickup-ii.cpp) [Python](./Python/cherry-pickup-ii.py) | _O(m * n^2)_    | _O(n^2)_          | Hard           ||
 1467| [Probability of a Two Boxes Having The Same Number of Distinct Balls](https://leetcode.com/problems/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls/)| [C++](./C++/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls.cpp) [Python](./Python/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls.py) | _O(k^3 * n^2)_    | _O(k^2 * n)_          | Hard           || Binomial Coefficients
+1473| [Paint House III](https://leetcode.com/problems/paint-house-iii/)| [C++](./C++/paint-house-iii.cpp) [Python](./Python/paint-house-iii.py) | _O(m * t * n^2)_    | _O(t * n)_          | Hard           ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1452,6 +1455,7 @@
 1381| [Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/) | [C++](./C++/design-a-stack-with-increment-operation.cpp) [Python](./Python/design-a-stack-with-increment-operation.py) | ctor: _O(1)_<br>push: _O(1)_<br>pop: _O(1)_<br>increment: _O(1)_ | _O(n)_ | Medium |||
 1396| [Design Underground System](https://leetcode.com/problems/design-underground-system/) | [C++](./C++/design-underground-system.cpp) [Python](./Python/design-underground-system.py) | ctor: _O(1)_<br>checkin: _O(1)_<br>checkout: _O(1)_<br>getaverage: _O(1)_ | _O(n)_ | Medium |||
 1429 | [First Unique Number](https://leetcode.com/problems/first-unique-number/)| [C++](./C++/first-unique-number.cpp) [Python](./Python/first-unique-number.py) | ctor: _O(k)_<br>add: _O(1)_<br>showFirstUnique: _O(1)_ | _O(n)_ | Medium | 🔒 | LinkedHashSet 
+1472| [Design Browser History](https://leetcode.com/problems/design-browser-history/) | [C++](./C++/design-browser-history.cpp) [Python](./Python/design-browser-history.py) | ctor: _O(1)_<br>visit: _O(1)_<br>back: _O(1)_<br>forward: _O(1)_ | _O(n)_ | Medium |||
 
 ## Concurrency
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
