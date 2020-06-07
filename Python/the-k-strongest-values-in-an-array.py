@@ -24,7 +24,6 @@ class Solution(object):
 
 # Time:  O(nlogn)
 # Space: O(1)
-
 class Solution2(object):
     def getStrongest(self, arr, k):
         """
