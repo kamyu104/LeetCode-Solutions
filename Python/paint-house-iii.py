@@ -1,4 +1,4 @@
-# Time:  O(m*t*n^2)
+# Time:  O(m * t * n^2)
 # Space: O(t *n)
 
 class Solution(object):
@@ -27,7 +27,7 @@ class Solution(object):
         return result if result != float("inf") else -1
 
 
-# Time:  O(m*t*n^2)
+# Time:  O(m * t * n^2)
 # Space: O(t *n)
 class Solution2(object):
     def minCost(self, houses, cost, m, n, target):
