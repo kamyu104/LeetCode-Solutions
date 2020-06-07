@@ -10,6 +10,30 @@ class Solution(object):
         """
         arr.sort()
         m = arr[(len(arr)-1)//2]
+        result = []
+        left, right = 0, len(arr)-1
+        while len(result) < k:
+            if m-arr[left] > arr[right]-m:
+                result.append(arr[left])
+                left += 1
+            else:
+                result.append(arr[right])
+                right -= 1
+        return result
+
+
+# Time:  O(nlogn)
+# Space: O(1)
+
+class Solution2(object):
+    def getStrongest(self, arr, k):
+        """
+        :type arr: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+        arr.sort()
+        m = arr[(len(arr)-1)//2]
         arr.sort(lambda a, b: cmp(abs(b-m), abs(a-m)) if abs(a-m) != abs(b-m) else cmp(b, a))
         return arr[:k]
 
