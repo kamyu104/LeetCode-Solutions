@@ -3,24 +3,28 @@
 
 class Solution {
 public:
-    vector<int> shuffle(vector<int>& nums, int n) {
-        static const auto& dest = [](int i, int n) {
-            return (i < n) ? 2 * i : 2 * (i - n) + 1;
-        };
-        for (int i = 0; i < nums.size(); ++i) {
-            if (nums[i] < 0) {
-                continue;
-            }
-            int j = i;
-            do {
-                j = dest(j, n);
-                swap(nums[i], nums[j]);
-                nums[j] = -nums[j];
-            } while (j != i);
-        }
-        for (auto& num : nums) {
-            num = -num;
-        }
-        return nums;
+    vector<int> getStrongest(vector<int>& arr, int k) {
+        nth_element(begin(arr), begin(arr) + (arr.size() - 1) / 2, end(arr));
+        const auto m = arr[(arr.size() -1) / 2];
+        nth_element(begin(arr), begin(arr) + k, end(arr), [&](int a, int b) { 
+            return abs(a - m) != abs(b - m) ?  abs(a - m) > abs(b - m) : a > b; 
+        });
+        arr.resize(k);
+        return arr;
+    }
+};
+
+// Time:  O(nlogn)
+// Space: O(1)
+class Solution2 {
+public:
+    vector<int> getStrongest(vector<int>& arr, int k) {
+        sort(begin(arr), end(arr));
+        const auto m = arr[(arr.size() -1) / 2];
+        sort(begin(arr), end(arr), [&](int a, int b) { 
+            return abs(a - m) != abs(b - m) ?  abs(a - m) > abs(b - m) : a > b; 
+        });
+        arr.resize(k);
+        return arr;
     }
 };
