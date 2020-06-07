@@ -1,5 +1,5 @@
 // Time:  O(m * t * n^2)
-// Space: O(t *n)
+// Space: O(t * n)
 
 class Solution {
 public:
@@ -44,7 +44,7 @@ public:
 };
 
 // Time:  O(m * t * n^2)
-// Space: O(t *n)
+// Space: O(t * n)
 class Solution2 {
 public:
     int minCost(vector<int>& houses, vector<vector<int>>& cost, int m, int n, int target) {
