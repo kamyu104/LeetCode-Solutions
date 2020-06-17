@@ -6,19 +6,23 @@
 class TreeAncestor {
 public:
     TreeAncestor(int n, vector<int>& parent) {
+        vector<int> q;
         for (const auto& p : parent) {
             parent_.emplace_back(vector<int>(p != -1, p));
+            if (p != -1) {
+                q.emplace_back(parent_.size() - 1);
+            }
         }
-        for (int i = 0, max_depth = 1; i < max_depth; ++i) {
-            for (auto& p : parent_) {
-                if (!(i < p.size() && i < parent_[p[i]].size())) {
+        for (int i = 0; !q.empty(); ++i) {
+            vector<int> new_q;
+            for (const auto& curr : q) {
+                if (!(i < parent_[parent_[curr][i]].size())) {
                     continue;
                 }
-                p.emplace_back(parent_[p[i]][i]);
-                if (p.size() > max_depth) {
-                    max_depth = p.size();
-                }
+                parent_[curr].emplace_back(parent_[parent_[curr][i]][i]);
+                new_q.emplace_back(curr);
             }
+            q = move(new_q);
         }
     }
     
