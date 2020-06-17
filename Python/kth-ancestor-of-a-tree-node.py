@@ -14,15 +14,13 @@ class TreeAncestor(object):
         """
         par = [[p] for p in parent]
         i, max_depth = 0, 1
-        while i != max_depth:
-            for curr in xrange(len(par)):
-                if not (i < len(par[curr]) and par[curr][i] != -1):
+        while i < max_depth:
+            for p in par:
+                if not (i < len(p) and p[i] != -1):
                     continue
-                par[curr].append(par[par[curr][i]][i]
-                                 if i < len(par[par[curr][i]]) 
-                                 else -1)
-                if len(par[curr]) > max_depth:
-                    max_depth = len(par[curr])
+                p.append(par[p[i]][i] if i < len(par[p[i]]) else -1)
+                if len(p) > max_depth:
+                    max_depth = len(p)
             i += 1
         self.__parent = par
 
