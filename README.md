@@ -1464,7 +1464,7 @@
 1429 | [First Unique Number](https://leetcode.com/problems/first-unique-number/)| [C++](./C++/first-unique-number.cpp) [Python](./Python/first-unique-number.py) | ctor: _O(k)_<br>add: _O(1)_<br>showFirstUnique: _O(1)_ | _O(n)_ | Medium | 🔒 | LinkedHashSet 
 1472| [Design Browser History](https://leetcode.com/problems/design-browser-history/) | [C++](./C++/design-browser-history.cpp) [Python](./Python/design-browser-history.py) | ctor: _O(1)_<br>visit: _O(1)_<br>back: _O(1)_<br>forward: _O(1)_ | _O(n)_ | Medium |||
 1476| [Subrectangle Queries](https://leetcode.com/problems/subrectangle-queries/) | [C++](./C++/subrectangle-queries.cpp) [Python](./Python/subrectangle-queries.py) | ctor: _O(1)_<br>update: _O(1)_<br>get: _O(u)_ | _O(u)_ | Medium |||
-1483| [Kth Ancestor of a Tree Node](https://leetcode.com/problems/kth-ancestor-of-a-tree-node/) | [C++](./C++/kth-ancestor-of-a-tree-node.cpp) [Python](./Python/kth-ancestor-of-a-tree-node.py) | ctor: O(n * logh)<br>get: O(logh) | _O(n * logh)_ | Hard || DP, Binary Jump |
+1483| [Kth Ancestor of a Tree Node](https://leetcode.com/problems/kth-ancestor-of-a-tree-node/) | [C++](./C++/kth-ancestor-of-a-tree-node.cpp) [Python](./Python/kth-ancestor-of-a-tree-node.py) | ctor: _O(n * logh)_<br>get: _O(logh)_ | _O(n * logh)_ | Hard || DP, Binary Jump |
 
 ## Concurrency
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
