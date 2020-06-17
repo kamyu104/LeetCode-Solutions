@@ -13,14 +13,16 @@ class TreeAncestor(object):
         :type parent: List[int]
         """
         par = [[p] if p != -1 else [] for p in parent]
-        i, max_depth = 0, 1
-        while i < max_depth:
-            for p in par:
-                if not (i < len(p) and i < len(par[p[i]])):
+        q = [par[i] for i, p in enumerate(parent) if p != -1]
+        i = 0
+        while q:
+            new_q = []
+            for p in q:
+                if not (i < len(par[p[i]])):
                     continue
                 p.append(par[p[i]][i])
-                if len(p) > max_depth:
-                    max_depth = len(p)
+                new_q.append(p)
+            q = new_q
             i += 1
         self.__parent = par
 
