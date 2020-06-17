@@ -2,7 +2,7 @@
 //        get:  O(logh)
 // Space: O(n * logh)
 
-// binary jump solution (frequently seen in competitive programming)
+// binary jump solution (frequently used in competitive programming)
 class TreeAncestor {
 public:
     TreeAncestor(int n, vector<int>& parent) {
