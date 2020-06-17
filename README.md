@@ -270,7 +270,8 @@
 1465 | [Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts](https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/) | [C++](./C++/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts.cpp) [Python](./Python/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts.py) | _O(hlogh + wlogw)_ | _O(1)_      | Medium         || 
 1470 | [Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/) | [C++](./C++/shuffle-the-array.cpp) [Python](./Python/shuffle-the-array.py) | _O(n)_ | _O(1)_      | Easy         ||
 1471 | [The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array/) | [C++](./C++/the-k-strongest-values-in-an-array.cpp) [Python](./Python/the-k-strongest-values-in-an-array.py) | _O(n)_ | _O(1)_      | Medium         || Quick Select
-1480 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | [C++](./C++/running-sum-of-1d-array.cpp) [Python](./Python/running-sum-of-1d-arrayy.py) | _O(n)_ | _O(1)_      | Easy         ||
+1475 | [Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/) | [C++](./C++/final-prices-with-a-special-discount-in-a-shop.cpp) [Python](./Python/final-prices-with-a-special-discount-in-a-shop.py) | _O(n)_ | _O(n)_      | Easy         || Mono Stack
+1480 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | [C++](./C++/running-sum-of-1d-array.cpp) [Python](./Python/running-sum-of-1d-array.py) | _O(n)_ | _O(1)_      | Easy         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -427,6 +428,7 @@
 1181| [Before and After Puzzle](https://leetcode.com/problems/before-and-after-puzzle/)| [C++](./C++/before-and-after-puzzle.cpp) [Python](./Python/before-and-after-puzzle.py) | _O(l * rlogr)_       | _O(l * (n + r))_         | Medium         | 🔒 | Hash |
 1265| [Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse/) | [C++](./C++/print-immutable-linked-list-in-reverse.cpp) [Python](./Python/print-immutable-linked-list-in-reverse.py) | _O(n)_       | _O(sqrt(n))_         | Medium         | 🔒 ||
 1290| [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | [C++](./C++/convert-binary-number-in-a-linked-list-to-integer.cpp) [Python](./Python/convert-binary-number-in-a-linked-list-to-integer.py) | _O(n)_       | _O(1)_         | Easy         |||
+1474| [Delete N Nodes After M Nodes of a Linked List](https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-lis/) | [C++](./C++/delete-n-nodes-after-m-nodes-of-a-linked-lis.cpp) [Python](./Python/delete-n-nodes-after-m-nodes-of-a-linked-lis.py) | _O(n)_       | _O(1)_         | Easy         | 🔒 ||
 
 ## Stack
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1311,6 +1313,8 @@
 1463| [Cherry Pickup II](https://leetcode.com/problems/cherry-pickup-ii/)| [C++](./C++/cherry-pickup-ii.cpp) [Python](./Python/cherry-pickup-ii.py) | _O(m * n^2)_    | _O(n^2)_          | Hard           ||
 1467| [Probability of a Two Boxes Having The Same Number of Distinct Balls](https://leetcode.com/problems/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls/)| [C++](./C++/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls.cpp) [Python](./Python/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls.py) | _O(k^3 * n^2)_    | _O(k^2 * n)_          | Hard           || Binomial Coefficients
 1473| [Paint House III](https://leetcode.com/problems/paint-house-iii/)| [C++](./C++/paint-house-iii.cpp) [Python](./Python/paint-house-iii.py) | _O(m * t * n^2)_    | _O(t * n)_          | Hard           ||
+1477| [Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/)| [C++](./C++/find-two-non-overlapping-sub-arrays-each-with-target-sum.cpp) [Python](./Python/find-two-non-overlapping-sub-arrays-each-with-target-sum.py) | _O(n)_    | _O(n)_          | Medium           ||
+1478| [Allocate Mailboxes](https://leetcode.com/problems/allocate-mailboxes/)| [C++](./C++/allocate-mailboxes.cpp) [Python](./Python/allocate-mailboxes.py) | _O(m * n^2)_    | _O(n)_          | Hard           || DP, Math
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1459,6 +1463,7 @@
 1396| [Design Underground System](https://leetcode.com/problems/design-underground-system/) | [C++](./C++/design-underground-system.cpp) [Python](./Python/design-underground-system.py) | ctor: _O(1)_<br>checkin: _O(1)_<br>checkout: _O(1)_<br>getaverage: _O(1)_ | _O(n)_ | Medium |||
 1429 | [First Unique Number](https://leetcode.com/problems/first-unique-number/)| [C++](./C++/first-unique-number.cpp) [Python](./Python/first-unique-number.py) | ctor: _O(k)_<br>add: _O(1)_<br>showFirstUnique: _O(1)_ | _O(n)_ | Medium | 🔒 | LinkedHashSet 
 1472| [Design Browser History](https://leetcode.com/problems/design-browser-history/) | [C++](./C++/design-browser-history.cpp) [Python](./Python/design-browser-history.py) | ctor: _O(1)_<br>visit: _O(1)_<br>back: _O(1)_<br>forward: _O(1)_ | _O(n)_ | Medium |||
+1476| [Subrectangle Queries](https://leetcode.com/problems/subrectangle-queries/) | [C++](./C++/subrectangle-queries.cpp) [Python](./Python/subrectangle-queries.py) | ctor: _O(1)_<br>update: _O(1)_<br>get: _O(u)_ | _O(u)_ | Medium |||
 1483| [Kth Ancestor of a Tree Node](https://leetcode.com/problems/kth-ancestor-of-a-tree-node/) | [C++](./C++/kth-ancestor-of-a-tree-node.cpp) [Python](./Python/kth-ancestor-of-a-tree-node.py) | ctor: O(n * logh)<br>get: O(logh) | _O(n * logh)_ | Hard || DP, Binary Jump |
 
 ## Concurrency
