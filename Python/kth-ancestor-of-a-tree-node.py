@@ -2,7 +2,7 @@
 #        get:  O(logh)
 # Space: O(n * logh)
 
-# binary jump solution (frequently seen in competitive programming)
+# binary jump solution (frequently used in competitive programming)
 # Template:
 # https://github.com/kamyu104/FacebookHackerCup-2019/blob/master/Final%20Round/little_boat_on_the_sea.py
 class TreeAncestor(object):
