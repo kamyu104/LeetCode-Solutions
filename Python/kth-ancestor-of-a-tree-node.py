@@ -13,7 +13,7 @@ class TreeAncestor(object):
         :type parent: List[int]
         """
         par = [[p] for p in parent]
-        i, max_depth, changed = 0, 1, True
+        i, max_depth = 0, 1
         while i != max_depth:
             for curr in xrange(len(par)):
                 if not (i < len(par[curr]) and par[curr][i] != -1):
