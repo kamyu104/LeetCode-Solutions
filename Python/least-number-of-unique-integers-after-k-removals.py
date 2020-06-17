@@ -12,7 +12,7 @@ class Solution(object):
         :rtype: int
         """
         count = collections.Counter(arr)
-        result, count_count = len(count), Counter(count.itervalues())
+        result, count_count = len(count), collections.Counter(count.itervalues())
         for c in xrange(1, len(arr)+1): 
             if k < c*count_count[c]:
                 result -= k//c
