@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1473%20%2F%201473-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1483%20%2F%201483-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp;
@@ -270,6 +270,7 @@
 1465 | [Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts](https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/) | [C++](./C++/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts.cpp) [Python](./Python/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts.py) | _O(hlogh + wlogw)_ | _O(1)_      | Medium         || 
 1470 | [Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/) | [C++](./C++/shuffle-the-array.cpp) [Python](./Python/shuffle-the-array.py) | _O(n)_ | _O(1)_      | Easy         ||
 1471 | [The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array/) | [C++](./C++/the-k-strongest-values-in-an-array.cpp) [Python](./Python/the-k-strongest-values-in-an-array.py) | _O(n)_ | _O(1)_      | Medium         || Quick Select
+1480 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | [C++](./C++/running-sum-of-1d-array.cpp) [Python](./Python/running-sum-of-1d-arrayy.py) | _O(n)_ | _O(1)_      | Easy         ||
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -837,6 +838,7 @@
 1365| [How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/) | [C++](./C++/how-many-numbers-are-smaller-than-the-current-number.cpp) [Python](./Python/how-many-numbers-are-smaller-than-the-current-number.py) | _O(n + m)_   | _O(m)_        | Easy         || Counting Sort
 1366| [Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes/) | [C++](./C++/rank-teams-by-votes.cpp) [Python](./Python/rank-teams-by-votes.py) | _O(m * (n + mlogm))_   | _O(m^2)_        | Medium         ||
 1451| [Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence/) | [C++](./C++/rearrange-words-in-a-sentence.cpp) [Python](./Python/rearrange-words-in-a-sentence.py) | _O(nlogn)_   | _O(n)_        | Medium         || String
+1481| [Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/) | [C++](./C++/least-number-of-unique-integers-after-k-removals.cpp) [Python](./Python/least-number-of-unique-integers-after-k-removals.py) | _O(n)_   | _O(n)_        | Medium         || Counting Sort
 
 ## Two Pointers
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -962,6 +964,7 @@
 1283 | [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | [C++](./C++/find-the-smallest-divisor-given-a-threshold.cpp) [Python](./Python/find-the-smallest-divisor-given-a-threshold.py) | _O(logn)_ | _O(1)_ | Medium | |
 1287 | [Element Appearing More Than 25% In Sorted Array](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/) | [C++](./C++/element-appearing-more-than-25-in-sorted-array.cpp) [Python](./Python/element-appearing-more-than-25-in-sorted-array.py) | _O(logn)_ | _O(1)_ | Easy | |
 1385 | [Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/) | [C++](./C++/find-the-distance-value-between-two-arrays.cpp) [Python](./Python/find-the-distance-value-between-two-arrays.py) | _O((n + m) * logm)_ | _O(1)_ | Easy | | Binary Search, Two Pointers
+1482 | [Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | [C++](./C++/minimum-number-of-days-to-make-m-bouquets.cpp) [Python](./Python/minimum-number-of-days-to-make-m-bouquets.py) | _O(nlogd)_ | _O(1)_ | Medium | |
 
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1456,6 +1459,7 @@
 1396| [Design Underground System](https://leetcode.com/problems/design-underground-system/) | [C++](./C++/design-underground-system.cpp) [Python](./Python/design-underground-system.py) | ctor: _O(1)_<br>checkin: _O(1)_<br>checkout: _O(1)_<br>getaverage: _O(1)_ | _O(n)_ | Medium |||
 1429 | [First Unique Number](https://leetcode.com/problems/first-unique-number/)| [C++](./C++/first-unique-number.cpp) [Python](./Python/first-unique-number.py) | ctor: _O(k)_<br>add: _O(1)_<br>showFirstUnique: _O(1)_ | _O(n)_ | Medium | 🔒 | LinkedHashSet 
 1472| [Design Browser History](https://leetcode.com/problems/design-browser-history/) | [C++](./C++/design-browser-history.cpp) [Python](./Python/design-browser-history.py) | ctor: _O(1)_<br>visit: _O(1)_<br>back: _O(1)_<br>forward: _O(1)_ | _O(n)_ | Medium |||
+1483| [Kth Ancestor of a Tree Node](https://leetcode.com/problems/kth-ancestor-of-a-tree-node/) | [C++](./C++/kth-ancestor-of-a-tree-node.cpp) [Python](./Python/kth-ancestor-of-a-tree-node.py) | ctor: O(n * logh)<br>get: O(logh) | _O(n * logh)_ | Hard || DP, Binary Jump |
 
 ## Concurrency
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1557,6 +1561,7 @@
 1454| [Active Users](https://leetcode.com/problems/active-users/) | [MySQL](./MySQL/active-users.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
 1459| [Rectangles Area](https://leetcode.com/problems/rectangles-area/) | [MySQL](./MySQL/rectangles-area.sql) | _O(n^2)_ | _O(n^2)_       | Medium           |🔒| |
 1468| [Calculate Salaries](https://leetcode.com/problems/calculate-salaries/) | [MySQL](./MySQL/calculate-salaries.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒| |
+1479| [Sales by Day of the Week](https://leetcode.com/problems/sales-by-day-of-the-week/) | [MySQL](./MySQL/sales-by-day-of-the-week.sql) | _O(m + n)_ | _O(n)_       | Hard           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
