@@ -428,7 +428,7 @@
 1181| [Before and After Puzzle](https://leetcode.com/problems/before-and-after-puzzle/)| [C++](./C++/before-and-after-puzzle.cpp) [Python](./Python/before-and-after-puzzle.py) | _O(l * rlogr)_       | _O(l * (n + r))_         | Medium         | 🔒 | Hash |
 1265| [Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse/) | [C++](./C++/print-immutable-linked-list-in-reverse.cpp) [Python](./Python/print-immutable-linked-list-in-reverse.py) | _O(n)_       | _O(sqrt(n))_         | Medium         | 🔒 ||
 1290| [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | [C++](./C++/convert-binary-number-in-a-linked-list-to-integer.cpp) [Python](./Python/convert-binary-number-in-a-linked-list-to-integer.py) | _O(n)_       | _O(1)_         | Easy         |||
-1474| [Delete N Nodes After M Nodes of a Linked List](https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-lis/) | [C++](./C++/delete-n-nodes-after-m-nodes-of-a-linked-lis.cpp) [Python](./Python/delete-n-nodes-after-m-nodes-of-a-linked-lis.py) | _O(n)_       | _O(1)_         | Easy         | 🔒 ||
+1474| [Delete N Nodes After M Nodes of a Linked List](https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/) | [C++](./C++/delete-n-nodes-after-m-nodes-of-a-linked-list.cpp) [Python](./Python/delete-n-nodes-after-m-nodes-of-a-linked-list.py) | _O(n)_       | _O(1)_         | Easy         | 🔒 ||
 
 ## Stack
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
