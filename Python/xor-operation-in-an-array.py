@@ -21,6 +21,9 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(1)
+import operator
+
+
 class Solution2(object):
     def xorOperation(self, n, start):
         """
