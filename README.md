@@ -1394,7 +1394,7 @@
 1414| [Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/)  | [C++](./C++/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k.cpp) [Python](./Python/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k.py) | _O(logk)_        | _O(1)_          | Medium           | | |
 1419| [Minimum Number of Frogs Croaking](https://leetcode.com/problems/minimum-number-of-frogs-croaking/)  | [C++](./C++/minimum-number-of-frogs-croaking.cpp) [Python](./Python/minimum-number-of-frogs-croaking.py) | _O(n)_        | _O(1)_          | Medium           | | |
 1433| [Check If a String Can Break Another String](https://leetcode.com/problems/check-if-a-string-can-break-another-string/)  | [C++](./C++/check-if-a-string-can-break-another-string.cpp) [Python](./Python/check-if-a-string-can-break-another-string.py) | _O(n)_        | _O(1)_          | Medium           | | |
-1488| [Avoid Flood in The City](https://leetcode.com/problems/avoid-flood-in-the-city/)  | [C++](./C++/check-if-a-string-can-break-another-string.cpp) [Python](./Python/avoid-flood-in-the-city.py) | _O(nlogn)_        | _O(n)_          | Medium           | | |
+1488| [Avoid Flood in The City](https://leetcode.com/problems/avoid-flood-in-the-city/)  | [C++](./C++/avoid-flood-in-the-city.cpp) [Python](./Python/avoid-flood-in-the-city.py) | _O(nlogn)_        | _O(n)_          | Medium           | | |
 
 ## Graph
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
