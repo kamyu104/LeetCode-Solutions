@@ -25,8 +25,8 @@ class Solution(object):
                 result.append(node.left.val)
             elif node.right and not node.left:
                 result.append(node.right.val)
-            stk.append((node.right))
-            stk.append((node.left))
+            stk.append(node.right)
+            stk.append(node.left)
         return result
 
 
