@@ -96,13 +96,16 @@ class Solution_Recu(object):
 
 # Time:  O(n)
 # Space: O(n)
+import collections
+
+
 class Solution2(object):
     def copyRandomBinaryTree(self, root):
         """
         :type root: Node
         :rtype: NodeCopy
         """ 
-        lookup = defaultdict(lambda: NodeCopy())
+        lookup = collections.defaultdict(lambda: NodeCopy())
         lookup[None] = None
         stk = [root]
         while stk:
@@ -120,6 +123,9 @@ class Solution2(object):
 
 # Time:  O(n)
 # Space: O(n)
+import collections
+
+
 class Solution2_Recu(object):
     def copyRandomBinaryTree(self, root):
         """
@@ -136,7 +142,7 @@ class Solution2_Recu(object):
             dfs(node.left, lookup)
             dfs(node.right, lookup)
     
-        lookup = defaultdict(lambda: NodeCopy())
+        lookup = collections.defaultdict(lambda: NodeCopy())
         lookup[None] = None
         dfs(root, lookup)
         return lookup[root]
