@@ -1572,7 +1572,7 @@
 1459| [Rectangles Area](https://leetcode.com/problems/rectangles-area/) | [MySQL](./MySQL/rectangles-area.sql) | _O(n^2)_ | _O(n^2)_       | Medium           |🔒| |
 1468| [Calculate Salaries](https://leetcode.com/problems/calculate-salaries/) | [MySQL](./MySQL/calculate-salaries.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒| |
 1479| [Sales by Day of the Week](https://leetcode.com/problems/sales-by-day-of-the-week/) | [MySQL](./MySQL/sales-by-day-of-the-week.sql) | _O(m + n)_ | _O(n)_       | Hard           |🔒| |
-1484| [Sales by Day of the Week](https://leetcode.com/problems/group-sold-products-by-the-date/) | [MySQL](./MySQL/group-sold-products-by-the-date.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
+1484| [Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/) | [MySQL](./MySQL/group-sold-products-by-the-date.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
