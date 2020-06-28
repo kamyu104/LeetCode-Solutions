@@ -22,18 +22,18 @@ public:
         }
         int result = 0;
         while (!max_heap.empty()) {
-            vector<pair<int, int>> new_q;
+            vector<int> new_q;
             for (int i = 0; !max_heap.empty() && i < k; ++i) {
                 const auto [depth, node] = max_heap.top(); max_heap.pop();
                 for (const auto& child : graph[node]) {
                     if (!--degrees[child]) {
-                        new_q.emplace_back(depths[child], child);
+                        new_q.emplace_back(child);
                     }
                 }
             }
             ++result;
-            for (const auto& p : new_q) {
-                max_heap.emplace(p);
+            for (const auto& node : new_q) {
+                max_heap.emplace(depths[node], node);
             }
         }
         return result;
