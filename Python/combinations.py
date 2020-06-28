@@ -20,7 +20,7 @@ class Solution(object):
                 break
             idxs[i] += 1
             for j in xrange(i+1, k):
-                idxs[j] = idxs[j-1] + 1
+                idxs[j] = idxs[j-1]+1
             result.append([nums[i] for i in idxs])
         return result
 
