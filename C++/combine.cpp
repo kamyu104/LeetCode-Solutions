@@ -30,8 +30,7 @@ public:
         iota(begin(nums), end(nums), 1), iota(begin(idxs), end(idxs), 0);
         vector<vector<int>> result;
         add_result(nums, idxs, &result);
-        int i;
-        while ((i = next_pos(n, k, idxs)) >= 0) {
+        for (int i; (i = next_pos(n, k, idxs)) >= 0;) {
             ++idxs[i];
             for (int j = i + 1; j < k; ++j) {
                 idxs[j] = idxs[j - 1] + 1;
