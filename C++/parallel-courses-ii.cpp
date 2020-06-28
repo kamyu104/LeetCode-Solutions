@@ -7,8 +7,8 @@ public:
         unordered_map<int, vector<int>> graph;
         vector<int> degrees(n);
         for (const auto &d: dependencies) {
-            ++degrees[d[1] - 1];
             graph[d[0] - 1].emplace_back(d[1] - 1);
+            ++degrees[d[1] - 1];
         }
         vector<int> depths(n, -1);
         for (int i = 0; i < n; ++i) {
