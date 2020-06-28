@@ -4,7 +4,7 @@
 class Solution {
 public:
     int minNumberOfSemesters(int n, vector<vector<int>>& dependencies, int k) {
-        vector<vector<int>> graph(n);
+        unordered_map<int, vector<int>> graph;
         vector<int> degrees(n);
         for (const auto &d: dependencies) {
             ++degrees[d[1] - 1];
@@ -40,11 +40,14 @@ public:
     }
 
 private:
-    int dfs(const vector<vector<int>> &graph, int idx, vector<int> *depths) {
+    int dfs(const unordered_map<int, vector<int>> &graph,
+            int idx, vector<int> *depths) {
         if ((*depths)[idx] == -1) {
             int depth = 0;
-            for (const auto& child : graph[idx]) {
-                depth = max(depth, dfs(graph, child, depths));
+            if (graph.count(idx)) {
+                for (const auto& child : graph.at(idx)) {
+                    depth = max(depth, dfs(graph, child, depths));
+                }
             }
             (*depths)[idx] = depth + 1;
         }
