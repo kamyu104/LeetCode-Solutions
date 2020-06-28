@@ -1,5 +1,5 @@
 # Time:  O(nlogn + e), e is the number of edges in graph
-# Space: O(n)
+# Space: O(n + e)
 
 import collections
 import heapq
