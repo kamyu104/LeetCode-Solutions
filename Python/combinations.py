@@ -17,7 +17,7 @@ class Solution(object):
                 if idxs[i] != i+n-k:
                     break
             else:
-                return result
+                break
             idxs[i] += 1
             for j in xrange(i+1, k):
                 idxs[j] = idxs[j-1] + 1
