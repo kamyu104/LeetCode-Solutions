@@ -60,7 +60,7 @@ private:
 
 // Time:  O((n * C(c, min(c, k))) * 2^n)
 // Space: O(2^n)
-// embeded combination solution
+// embedded combination solution
 class Solution2 {
 public:
     int minNumberOfSemesters(int n, vector<vector<int>>& dependencies, int k) {
