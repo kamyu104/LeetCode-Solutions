@@ -41,17 +41,17 @@ public:
 
 private:
     int dfs(const unordered_map<int, vector<int>> &graph,
-            int idx, vector<int> *depths) {
-        if ((*depths)[idx] == -1) {
+            int i, vector<int> *depths) {
+        if ((*depths)[i] == -1) {
             int depth = 0;
-            if (graph.count(idx)) {
-                for (const auto& child : graph.at(idx)) {
+            if (graph.count(i)) {
+                for (const auto& child : graph.at(i)) {
                     depth = max(depth, dfs(graph, child, depths));
                 }
             }
-            (*depths)[idx] = depth + 1;
+            (*depths)[i] = depth + 1;
         }
-        return (*depths)[idx];
+        return (*depths)[i];
     }
 };
 
