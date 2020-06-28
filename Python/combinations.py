@@ -8,10 +8,9 @@ class Solution(object):
         :type k: int
         :rtype: List[List[int]]
         """
-        nums = range(1, n+1)
         if k > n:
             return []
-        idxs = range(k)
+        nums, idxs = range(1, n+1), range(k)
         result = [[nums[i] for i in idxs]]
         while True:
             for i in reversed(xrange(k)):
