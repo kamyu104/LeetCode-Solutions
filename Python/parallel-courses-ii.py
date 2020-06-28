@@ -1,7 +1,58 @@
-import itertools
+# Time:  O(nlogn + e), e is the number of edges in graph
+# Space: O(n)
+
+import collections
+import heapq
 
 
 class Solution(object):
+    def minNumberOfSemesters(self, n, dependencies, k):
+        """
+        :type n: int
+        :type dependencies: List[List[int]]
+        :type k: int
+        :rtype: int
+        """
+        def dfs(graph, i, depths):
+            if depths[i] == -1:
+                depths[i] = max(dfs(graph, child, depths) for child in graph[i])+1 if i in graph else 1
+            return depths[i]
+            
+        degrees = [0]*n
+        graph = collections.defaultdict(list)
+        for u, v in dependencies:
+            graph[u-1].append(v-1)
+            degrees[v-1] += 1
+        depths = [-1]*n
+        for i in xrange(n):
+            dfs(graph, i, depths)
+        max_heap = []
+        for i in xrange(n):
+            if not degrees[i]:
+                heapq.heappush(max_heap, (-depths[i], i))
+        result = 0
+        while max_heap:
+            new_q = []
+            for _ in xrange(min(len(max_heap), k)):
+                _, node = heapq.heappop(max_heap)
+                if node not in graph:
+                    continue
+                for child in graph[node]:
+                    degrees[child] -= 1
+                    if not degrees[child]:
+                        new_q.append(child)
+            result += 1
+            for node in new_q:
+                heapq.heappush(max_heap, (-depths[node], node))
+        return result
+
+            
+# Time:  O((n * C(c, min(c, k))) * 2^n)
+# Space: O(2^n)
+import itertools
+
+
+class Solution2(object):
     def minNumberOfSemesters(self, n, dependencies, k):
         """
         :type n: int
