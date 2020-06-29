@@ -400,6 +400,7 @@
 1455| [Check If a Word Occurs As a Prefix of Any Word in a Sentence](https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/) | [C++](./C++/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence.cpp) [Python](./Python/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence.py) | _O(n)_ | _O(n)_ | Easy || `KMP Algorithm` |
 1456| [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [C++](./C++/maximum-number-of-vowels-in-a-substring-of-given-length.cpp) [Python](./Python/maximum-number-of-vowels-in-a-substring-of-given-length.py) | _O(n)_ | _O(1)_ | Medium || Sliding Window |
 1461| [Check If a String Contains All Binary Codes of Size K](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) | [C++](./C++/check-if-a-string-contains-all-binary-codes-of-size-k.cpp) [Python](./Python/check-if-a-string-contains-all-binary-codes-of-size-k.py) | _O(n * k)_ | _O(k * 2^k)_ | Medium || Bit Manipulation |
+1496| [Path Crossing](https://leetcode.com/problems/path-crossing/) | [C++](./C++/path-crossing.cpp) [Python](./Python/path-crossing.py) | _O(n)_ | _O(n)_ | Easy |||
 
 ## Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -491,6 +492,7 @@
 1424| [Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii/)| [C++](./C++/diagonal-traverse-ii.cpp) [Python](./Python/diagonal-traverse-ii.py) | _O(m * n)_        | _O(m)_          | Medium           |||
 1425| [Constrained Subset Sum](https://leetcode.com/problems/constrained-subset-sum/)| [C++](./C++/constrained-subset-sum.cpp) [Python](./Python/constrained-subset-sum.py) | _O(n)_        | _O(k)_          | Hard           | variant of [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Mono Deque |
 1438| [Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)| [C++](./C++/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit.cpp) [Python](./Python/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit.py) | _O(n)_        | _O(n)_          | Hard           | | Mono Deque |
+1499| [Max Value of Equation](https://leetcode.com/problems/max-value-of-equation/)| [C++](./C++/max-value-of-equation.cpp) [Python](./Python/max-value-of-equation.py) | _O(n)_        | _O(n)_          | Hard           | | Mono Deque |
 
 ## Heap
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -809,6 +811,7 @@
 1447| [Simplified Fractions](https://leetcode.com/problems/simplified-fractions/) | [C++](./C++/simplified-fractions.cpp) [Python](./Python/simplified-fractions.py) | _O(n^2 * logn)_ | _O(n^2)_ |  Medium | |
 1486| [XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/) | [C++](./C++/xor-operation-in-an-array.cpp) [Python](./Python/xor-operation-in-an-array.py) | _O(1)_ | _O(1)_ |  Easy | |
 1492| [The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/) | [C++](./C++/the-kth-factor-of-n.cpp) [Python](./Python/the-kth-factor-of-n.py) | _O(sqrt(n))_ | _O(1)_ |  Medium | |
+1497| [Check If Array Pairs Are Divisible by k](https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/) | [C++](./C++/check-if-array-pairs-are-divisible-by-k.cpp) [Python](./Python/check-if-array-pairs-are-divisible-by-k.py) | _O(n)_ | _O(k)_ |  Medium | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -882,6 +885,7 @@
 1214 | [Two Sum BSTs](https://leetcode.com/problems/two-sum-bsts/) | [C++](./C++/two-sum-bsts.cpp) [Python](./Python/two-sum-bsts.py) | _O(n)_ | _O(n)_      | Medium         |🔒| Stack |
 1248| [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) |[C++](./C++/count-number-of-nice-subarrays.cpp)  [Python](./Python/count-number-of-nice-subarrays.py) | _O(n)_ | _O(k)_ | Medium         | variant of [Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/) | Two Pointers, Sliding Window
 1305 |[All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/)| [C++](./C++/all-elements-in-two-binary-search-trees.cpp)  [Python](./Python/all-elements-in-two-binary-search-trees.py) | _O(n)_ | _O(h)_ | Medium || Stack |
+1498 |[Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems//number-of-subsequences-that-satisfy-the-given-sum-condition/)| [C++](./C++//number-of-subsequences-that-satisfy-the-given-sum-condition.cpp)  [Python](./Python//number-of-subsequences-that-satisfy-the-given-sum-condition.py) | _O(nlogn)_ | _O(n)_ | Medium || Two Pointers |
 
 ## Recursion
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1578,6 +1582,7 @@
 1468| [Calculate Salaries](https://leetcode.com/problems/calculate-salaries/) | [MySQL](./MySQL/calculate-salaries.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒| |
 1479| [Sales by Day of the Week](https://leetcode.com/problems/sales-by-day-of-the-week/) | [MySQL](./MySQL/sales-by-day-of-the-week.sql) | _O(m + n)_ | _O(n)_       | Hard           |🔒| |
 1484| [Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/) | [MySQL](./MySQL/group-sold-products-by-the-date.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
+1495| [Friendly Movies Streamed Last Month](https://leetcode.com/problems/friendly-movies-streamed-last-month/) | [MySQL](./MySQL/friendly-movies-streamed-last-month.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 
 ## Shell Script
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
