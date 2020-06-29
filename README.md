@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1489%20%2F%201489-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1499%20%2F%201499-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 <!-- ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp; -->
@@ -272,6 +272,8 @@
 1471 | [The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array/) | [C++](./C++/the-k-strongest-values-in-an-array.cpp) [Python](./Python/the-k-strongest-values-in-an-array.py) | _O(n)_ | _O(1)_      | Medium         || Quick Select
 1475 | [Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/) | [C++](./C++/final-prices-with-a-special-discount-in-a-shop.cpp) [Python](./Python/final-prices-with-a-special-discount-in-a-shop.py) | _O(n)_ | _O(n)_      | Easy         || Mono Stack
 1480 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | [C++](./C++/running-sum-of-1d-array.cpp) [Python](./Python/running-sum-of-1d-array.py) | _O(n)_ | _O(1)_      | Easy         ||
+1491 | [Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/) | [C++](./C++/average-salary-excluding-the-minimum-and-maximum-salary.cpp) [Python](./Python/average-salary-excluding-the-minimum-and-maximum-salary.py) | _O(n)_ | _O(1)_      | Easy         ||
+1493| [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | [C++](./C++/longest-subarray-of-1s-after-deleting-one-element.cpp) [Python](./Python/longest-subarray-of-1s-after-deleting-one-element.py) | _O(n)_ | _O(1)_ |  Medium | | Sliding Window
 
 ## String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -806,6 +808,7 @@
 1442| [Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/) | [C++](./C++/count-triplets-that-can-form-two-arrays-of-equal-xor.cpp) [Python](./Python/count-triplets-that-can-form-two-arrays-of-equal-xor.py) | _O(n)_ | _O(n)_ |  Medium | |
 1447| [Simplified Fractions](https://leetcode.com/problems/simplified-fractions/) | [C++](./C++/simplified-fractions.cpp) [Python](./Python/simplified-fractions.py) | _O(n^2 * logn)_ | _O(n^2)_ |  Medium | |
 1486| [XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/) | [C++](./C++/xor-operation-in-an-array.cpp) [Python](./Python/xor-operation-in-an-array.py) | _O(1)_ | _O(1)_ |  Easy | |
+1492| [The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/) | [C++](./C++/the-kth-factor-of-n.cpp) [Python](./Python/the-kth-factor-of-n.py) | _O(sqrt(n))_ | _O(1)_ |  Medium | |
 
 ## Sort
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1108,6 +1111,7 @@
 1443| [Minimum Time to Collect All Apples in a Tree](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/) | [C++](./C++/minimum-time-to-collect-all-apples-in-a-tree.cpp) [Python](./Python/minimum-time-to-collect-all-apples-in-a-tree.py) | _O(n)_          | _O(n)_          | Medium           || DFS, Stack |
 1466| [Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | [C++](./C++/reorder-routes-to-make-all-paths-lead-to-the-city-zero.cpp) [Python](./Python/reorder-routes-to-make-all-paths-lead-to-the-city-zero.py) | _O(n)_          | _O(n)_          | Medium           || DFS, Stack |
 1485| [Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer/) | [C++](./C++/clone-binary-tree-with-random-pointer.cpp) [Python](./Python/clone-binary-tree-with-random-pointer.py) | _O(n)_          | _O(h)_          | Medium           |🔒| DFS, Stack |
+1490| [Clone N-ary Tree](https://leetcode.com/problems/clone-n-ary-tree/) | [C++](./C++/clone-n-ary-tree.cpp) [Python](./Python/clone-n-ary-tree.py) | _O(n)_          | _O(h)_          | Medium           |🔒| DFS, Stack |
 
 ## Backtracking
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1318,6 +1322,7 @@
 1473| [Paint House III](https://leetcode.com/problems/paint-house-iii/)| [C++](./C++/paint-house-iii.cpp) [Python](./Python/paint-house-iii.py) | _O(m * t * n^2)_    | _O(t * n)_          | Hard           ||
 1477| [Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/)| [C++](./C++/find-two-non-overlapping-sub-arrays-each-with-target-sum.cpp) [Python](./Python/find-two-non-overlapping-sub-arrays-each-with-target-sum.py) | _O(n)_    | _O(n)_          | Medium           ||
 1478| [Allocate Mailboxes](https://leetcode.com/problems/allocate-mailboxes/)| [C++](./C++/allocate-mailboxes.cpp) [Python](./Python/allocate-mailboxes.py) | _O(m * n^2)_    | _O(n)_          | Hard           || DP, Math
+1494| [Parallel Courses II](https://leetcode.com/problems/parallel-courses-ii/)| [C++](./C++/parallel-courses-ii.cpp) [Python](./Python/parallel-courses-ii.py) | _O((n * C(c, min(c, k))) * 2^n)_    | _O(2^n)_          | Hard           ||
 
 ## Greedy
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
