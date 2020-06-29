@@ -39,7 +39,7 @@ import heapq
 # 9
 # [[1,4],[1,5],[3,5],[3,6],[2,6],[2,7],[8,4],[8,5],[9,6],[9,7]]
 # 3
-class Solution_Wrong(object):
+class Solution_WA(object):
     def minNumberOfSemesters(self, n, dependencies, k):
         """
         :type n: int
