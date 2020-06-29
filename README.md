@@ -96,7 +96,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -283,7 +283,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -416,7 +416,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -453,7 +453,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -507,7 +507,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -526,7 +526,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -553,7 +553,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -636,7 +636,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -721,7 +721,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -869,7 +869,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -912,7 +912,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -955,7 +955,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -994,7 +994,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -1057,7 +1057,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -1081,7 +1081,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -1149,7 +1149,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -1215,7 +1215,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -1265,7 +1265,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -1438,7 +1438,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -1521,7 +1521,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -1544,7 +1544,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -1557,7 +1557,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -1570,7 +1570,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -1620,7 +1620,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -1639,7 +1639,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -1736,7 +1736,7 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
 
@@ -1750,6 +1750,6 @@
 
 <br/>
 <div align="right">
-    <b><a href="#algorithms">back to top</a></b>
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
 <br/>
