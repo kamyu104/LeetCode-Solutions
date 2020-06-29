@@ -36,6 +36,8 @@ import collections
 import heapq
 
 # wrong greedy solution
+# since the priority of courses are hard to decide especially for those courses with zero indegrees are of the same outdegrees and depth
+# e.x.
 # 9
 # [[1,4],[1,5],[3,5],[3,6],[2,6],[2,7],[8,4],[8,5],[9,6],[9,7]]
 # 3
