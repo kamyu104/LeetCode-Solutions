@@ -1,64 +1,8 @@
-// Time:  O(nlogn + e), e is the number of edges in graph
-// Space: O(n + e)
-
-class Solution {
-public:
-    int minNumberOfSemesters(int n, vector<vector<int>>& dependencies, int k) {
-        unordered_map<int, vector<int>> graph;
-        vector<int> degrees(n);
-        for (const auto &d: dependencies) {
-            graph[d[0] - 1].emplace_back(d[1] - 1);
-            ++degrees[d[1] - 1];
-        }
-        vector<int> depths(n, -1);
-        for (int i = 0; i < n; ++i) {
-            dfs(graph, i, &depths);
-        }
-        priority_queue<pair<int, int>> max_heap;
-        for (int i = 0; i < n; ++i) {
-            if (!degrees[i]) {
-                max_heap.emplace(depths[i], i);
-            }
-        }
-        int result = 0;
-        while (!max_heap.empty()) {
-            vector<int> new_q;
-            for (int i = 0; !max_heap.empty() && i < k; ++i) {
-                const auto [depth, node] = max_heap.top(); max_heap.pop();
-                for (const auto& child : graph[node]) {
-                    if (!--degrees[child]) {
-                        new_q.emplace_back(child);
-                    }
-                }
-            }
-            ++result;
-            for (const auto& node : new_q) {
-                max_heap.emplace(depths[node], node);
-            }
-        }
-        return result;
-    }
-
-private:
-    int dfs(const unordered_map<int, vector<int>> &graph,
-            int i, vector<int> *depths) {
-        if ((*depths)[i] == -1) {
-            int depth = 0;
-            if (graph.count(i)) {
-                for (const auto& child : graph.at(i)) {
-                    depth = max(depth, dfs(graph, child, depths));
-                }
-            }
-            (*depths)[i] = depth + 1;
-        }
-        return (*depths)[i];
-    }
-};
-
 // Time:  O((n * C(c, min(c, k))) * 2^n)
 // Space: O(2^n)
+
 // concise dp solution
-class Solution2 {
+class Solution {
 public:
     int minNumberOfSemesters(int n, vector<vector<int>>& dependencies, int k) {
         vector<int> reqs(n);
@@ -117,7 +61,7 @@ private:
 // Time:  O((n * C(c, min(c, k))) * 2^n)
 // Space: O(2^n)
 // embedded combination dp solution
-class Solution3 {
+class Solution2 {
 public:
     int minNumberOfSemesters(int n, vector<vector<int>>& dependencies, int k) {
         static const auto& choice_mask =
@@ -166,5 +110,65 @@ public:
             }
         }
         return dp.back();
+    }
+};
+
+// Time:  O(nlogn + e), e is the number of edges in graph
+// Space: O(n + e)
+// wrong greedy solution, ex
+// 9
+// [[1,4],[1,5],[3,5],[3,6],[2,6],[2,7],[8,4],[8,5],[9,6],[9,7]]
+// 3
+class Solution_WA {
+public:
+    int minNumberOfSemesters(int n, vector<vector<int>>& dependencies, int k) {
+        unordered_map<int, vector<int>> graph;
+        vector<int> degrees(n);
+        for (const auto &d: dependencies) {
+            graph[d[0] - 1].emplace_back(d[1] - 1);
+            ++degrees[d[1] - 1];
+        }
+        vector<int> depths(n, -1);
+        for (int i = 0; i < n; ++i) {
+            dfs(graph, i, &depths);
+        }
+        priority_queue<pair<int, int>> max_heap;
+        for (int i = 0; i < n; ++i) {
+            if (!degrees[i]) {
+                max_heap.emplace(depths[i], i);
+            }
+        }
+        int result = 0;
+        while (!max_heap.empty()) {
+            vector<int> new_q;
+            for (int i = 0; !max_heap.empty() && i < k; ++i) {
+                const auto [depth, node] = max_heap.top(); max_heap.pop();
+                for (const auto& child : graph[node]) {
+                    if (!--degrees[child]) {
+                        new_q.emplace_back(child);
+                    }
+                }
+            }
+            ++result;
+            for (const auto& node : new_q) {
+                max_heap.emplace(depths[node], node);
+            }
+        }
+        return result;
+    }
+
+private:
+    int dfs(const unordered_map<int, vector<int>> &graph,
+            int i, vector<int> *depths) {
+        if ((*depths)[i] == -1) {
+            int depth = 0;
+            if (graph.count(i)) {
+                for (const auto& child : graph.at(i)) {
+                    depth = max(depth, dfs(graph, child, depths));
+                }
+            }
+            (*depths)[i] = depth + 1;
+        }
+        return (*depths)[i];
     }
 };
