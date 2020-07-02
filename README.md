@@ -1617,7 +1617,7 @@
 1472| [Design Browser History](https://leetcode.com/problems/design-browser-history/) | [C++](./C++/design-browser-history.cpp) [Python](./Python/design-browser-history.py) | ctor: _O(1)_<br>visit: _O(1)_<br>back: _O(1)_<br>forward: _O(1)_ | _O(n)_ | Medium |||
 1476| [Subrectangle Queries](https://leetcode.com/problems/subrectangle-queries/) | [C++](./C++/subrectangle-queries.cpp) [Python](./Python/subrectangle-queries.py) | ctor: _O(1)_<br>update: _O(1)_<br>get: _O(u)_ | _O(u)_ | Medium |||
 1483| [Kth Ancestor of a Tree Node](https://leetcode.com/problems/kth-ancestor-of-a-tree-node/) | [C++](./C++/kth-ancestor-of-a-tree-node.cpp) [Python](./Python/kth-ancestor-of-a-tree-node.py) | ctor: _O(n * logh)_<br>get: _O(logh)_ | _O(n * logh)_ | Hard || DP, Binary Jump |
-1500| [Design a File Sharing System](https://leetcode.com/problems/design-a-file-sharing-system/) | [C++](./C++/design-a-file-sharing-system.cpp) [Python](./Python/design-a-file-sharing-system.py) | ctor: _O(1)_<br>join: _O(logu + c)_<br>leave: _O(logu + c)_<br>request: _O(u)_ | _O(u)_ | Medium | 🔒 | |
+1500| [Design a File Sharing System](https://leetcode.com/problems/design-a-file-sharing-system/) | [C++](./C++/design-a-file-sharing-system.cpp) [Python](./Python/design-a-file-sharing-system.py) | ctor: _O(1)_<br>join: _O(logu + c)_<br>leave: _O(logu + c)_<br>request: _O(u)_ | _O(u * c)_ | Medium | 🔒 | |
 
 <br/>
 <div align="right">
