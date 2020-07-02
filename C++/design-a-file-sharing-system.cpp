@@ -2,7 +2,7 @@
 //        join:    O(logu + c), u is the number of total joined users
 //        leave:   O(logu + c), c is the number of chunks
 //        request: O(u)
-// Space: O(u)
+// Space: O(u * c)
 
 // "u ~= n" solution, n is the average number of users who own the chunk
 class FileSharing {
@@ -58,7 +58,7 @@ private:
 //        join:    O(logu + c), u is the number of total joined users
 //        leave:   O(logu + c), c is the number of chunks
 //        request: O(nlogn)   , n is the average number of users who own the chunk
-// Space: O(u + m)
+// Space: O(u * c + m)
 // "u >> n" solution
 class FileSharing2 {
 public:
