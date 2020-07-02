@@ -58,7 +58,7 @@ class FileSharing(object):
 #        join:    O(logu + c), u is the number of total joined users
 #        leave:   O(logu + c), c is the number of chunks
 #        request: O(nlogn)   , n is the average number of users who own the chunk
-# Space: O(u + m), m is the total number of unique chunks
+# Space: O(u + m)
 import collections
 import heapq
 
