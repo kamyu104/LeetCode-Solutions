@@ -1,7 +1,7 @@
 # Time:  ctor:    O(1)
 #        join:    O(logu + c), u is the number of total joined users
 #        leave:   O(logu + c), c is the number of chunks
-#        request: O(u)
+#        request: O(u)       ,
 # Space: O(u)
 
 import collections
@@ -34,7 +34,7 @@ class FileSharing(object):
         """
         if userID not in self.__users:
             return
-        self.__users[userID] = set()
+        self.__users.pop(userID)
         heapq.heappush(self.__min_heap, userID)
 
     def request(self, userID, chunkID):
@@ -58,7 +58,7 @@ class FileSharing(object):
 #        join:    O(logu + c), u is the number of total joined users
 #        leave:   O(logu + c), c is the number of chunks
 #        request: O(nlogn)   , n is the average number of users who own the chunk
-# Space: O(u + m)
+# Space: O(u + m), m is the total number of unique chunks
 import collections
 import heapq
 
@@ -94,7 +94,7 @@ class FileSharing2(object):
             return
         for c in self.__users[userID]:
             self.__chunks[c].remove(userID)
-        self.__users[userID] = set()
+        self.__users.pop(userID)
         heapq.heappush(self.__min_heap, userID)
 
     def request(self, userID, chunkID):
