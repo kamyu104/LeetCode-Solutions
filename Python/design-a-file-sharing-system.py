@@ -4,7 +4,6 @@
 #        request: O(u)       ,
 # Space: O(u)
 
-import collections
 import heapq
 
 
@@ -15,7 +14,8 @@ class FileSharing(object):
         """
         :type m: int
         """
-        self.__users = collections.defaultdict(set) 
+        self.__users = []
+        self.__lookup = set()
         self.__min_heap = []
 
     def join(self, ownedChunks):
@@ -23,8 +23,13 @@ class FileSharing(object):
         :type ownedChunks: List[int]
         :rtype: int
         """
-        userID = heapq.heappop(self.__min_heap) if self.__min_heap else len(self.__users)+1
-        self.__users[userID] = set(ownedChunks)
+        if self.__min_heap:
+            userID = heapq.heappop(self.__min_heap)
+        else:
+            userID = len(self.__users)+1
+            self.__users.append(set())
+        self.__users[userID-1] = set(ownedChunks)
+        self.__lookup.add(userID)
         return userID
 
     def leave(self, userID):
@@ -32,9 +37,10 @@ class FileSharing(object):
         :type userID: int
         :rtype: None
         """
-        if userID not in self.__users:
+        if userID not in self.__lookup:
             return
-        self.__users.pop(userID)
+        self.__lookup.remove(userID)
+        self.__users[userID-1] = []
         heapq.heappush(self.__min_heap, userID)
 
     def request(self, userID, chunkID):
@@ -44,13 +50,13 @@ class FileSharing(object):
         :rtype: List[int]
         """
         result = []
-        for u, chunks in self.__users.iteritems():
+        for u, chunks in enumerate(self.__users, 1):
             if chunkID not in chunks:
                 continue
             result.append(u)
         if not result:
             return
-        self.__users[userID].add(chunkID)
+        self.__users[userID-1].add(chunkID)
         return result
 
 
@@ -70,7 +76,8 @@ class FileSharing2(object):
         """
         :type m: int
         """
-        self.__users = collections.defaultdict(set) 
+        self.__users = []
+        self.__lookup = set() 
         self.__chunks = collections.defaultdict(set)
         self.__min_heap = []
 
@@ -79,8 +86,13 @@ class FileSharing2(object):
         :type ownedChunks: List[int]
         :rtype: int
         """
-        userID = heapq.heappop(self.__min_heap) if self.__min_heap else len(self.__users)+1
-        self.__users[userID] = set(ownedChunks)
+        if self.__min_heap:
+            userID = heapq.heappop(self.__min_heap)
+        else:
+            userID = len(self.__users)+1
+            self.__users.append(set())
+        self.__users[userID-1] = set(ownedChunks)
+        self.__lookup.add(userID)
         for c in ownedChunks:
             self.__chunks[c].add(userID)
         return userID
@@ -90,11 +102,12 @@ class FileSharing2(object):
         :type userID: int
         :rtype: None
         """
-        if userID not in self.__users:
+        if userID not in self.__lookup:
             return
-        for c in self.__users[userID]:
+        for c in self.__users[userID-1]:
             self.__chunks[c].remove(userID)
-        self.__users.pop(userID)
+        self.__lookup.remove(userID)
+        self.__users[userID-1] = []
         heapq.heappush(self.__min_heap, userID)
 
     def request(self, userID, chunkID):
@@ -106,6 +119,6 @@ class FileSharing2(object):
         result = sorted(self.__chunks[chunkID])
         if not result:
             return
-        self.__users[userID].add(chunkID)
+        self.__users[userID-1].add(chunkID)
         self.__chunks[chunkID].add(userID)
         return result
