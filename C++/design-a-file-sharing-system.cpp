@@ -4,6 +4,7 @@
 //        request: O(u)
 // Space: O(u)
 
+// "u ~= n" solution, n is the average number of users who own the chunk
 class FileSharing {
 public:
     FileSharing(int m) {
@@ -57,7 +58,8 @@ private:
 //        join:    O(logu + c), u is the number of total joined users
 //        leave:   O(logu + c), c is the number of chunks
 //        request: O(nlogn)   , n is the average number of users who own the chunk
-// Space: O(u + m), m is the total number of unique chunks
+// Space: O(u + m)
+// "u >> n" solution
 class FileSharing2 {
 public:
     FileSharing2(int m) {
