@@ -1,7 +1,7 @@
 # Time:  ctor:    O(1)
 #        join:    O(logu + c), u is the number of total joined users
 #        leave:   O(logu + c), c is the number of chunks
-#        request: O(u)       ,
+#        request: O(u)
 # Space: O(u * c)
 
 import heapq
