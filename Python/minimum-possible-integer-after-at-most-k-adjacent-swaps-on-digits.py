@@ -38,7 +38,7 @@ class Solution(object):
             for d in xrange(10):
                 if lookup[d] and bit.sum(lookup[d][0]) <= k:
                     k -= bit.sum(lookup[d][0])
-                    bit.add(lookup[d].popleft()+1,-1)
+                    bit.add(lookup[d].popleft()+1, -1)
                     result.append(d)
                     break
         return "".join(map(str, result))
