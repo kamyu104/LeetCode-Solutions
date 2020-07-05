@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1500%20%2F%201500-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1505%20%2F%201505-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)<br>
 <!-- ![Total](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=kamyu104.leetcode.solutions)&nbsp; -->
@@ -280,6 +280,8 @@
 1480 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | [C++](./C++/running-sum-of-1d-array.cpp) [Python](./Python/running-sum-of-1d-array.py) | _O(n)_ | _O(1)_      | Easy         ||
 1491 | [Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/) | [C++](./C++/average-salary-excluding-the-minimum-and-maximum-salary.cpp) [Python](./Python/average-salary-excluding-the-minimum-and-maximum-salary.py) | _O(n)_ | _O(1)_      | Easy         ||
 1493| [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | [C++](./C++/longest-subarray-of-1s-after-deleting-one-element.cpp) [Python](./Python/longest-subarray-of-1s-after-deleting-one-element.py) | _O(n)_ | _O(1)_ |  Medium | | Sliding Window
+1502 | [Can Make Arithmetic Progression From Sequence](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/) | [C++](./C++/can-make-arithmetic-progression-from-sequence.cpp) [Python](./Python/can-make-arithmetic-progression-from-sequence.py) | _O(n)_ | _O(1)_      | Easy         ||
+1503 | [Last Moment Before All Ants Fall Out of a Plank](https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/) | [C++](./C++/last-moment-before-all-ants-fall-out-of-a-plank.cpp) [Python](./Python/last-moment-before-all-ants-fall-out-of-a-plank.py) | _O(n)_ | _O(1)_      | Medium         ||
 
 <br/>
 <div align="right">
@@ -633,6 +635,7 @@
 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)| [C++](./C++/count-good-nodes-in-binary-tree.cpp) [Python](./Python/count-good-nodes-in-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | | DFS, Stack
 1457 | [Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/)| [C++](./C++/pseudo-palindromic-paths-in-a-binary-tree.cpp) [Python](./Python/pseudo-palindromic-paths-in-a-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | | DFS, Stack
 1469 | [Find All The Lonely Nodes](https://leetcode.com/problems/find-all-the-lonely-nodes/)| [C++](./C++/find-all-the-lonely-nodes.cpp) [Python](./Python/find-all-the-lonely-nodes.py) | _O(n)_ | _O(h)_ | Easy | 🔒 | DFS, Stack
+1505 | [Minimum Possible Integer After at Most K Adjacent Swaps On Digits](https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/) | [C++](./C++/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits.cpp) [Python](./Python/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits.py) | _O(nlogn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
 
 <br/>
 <div align="right">
@@ -1435,6 +1438,7 @@
 1477| [Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/)| [C++](./C++/find-two-non-overlapping-sub-arrays-each-with-target-sum.cpp) [Python](./Python/find-two-non-overlapping-sub-arrays-each-with-target-sum.py) | _O(n)_    | _O(n)_          | Medium           ||
 1478| [Allocate Mailboxes](https://leetcode.com/problems/allocate-mailboxes/)| [C++](./C++/allocate-mailboxes.cpp) [Python](./Python/allocate-mailboxes.py) | _O(m * n^2)_    | _O(n)_          | Hard           || DP, Math
 1494| [Parallel Courses II](https://leetcode.com/problems/parallel-courses-ii/)| [C++](./C++/parallel-courses-ii.cpp) [Python](./Python/parallel-courses-ii.py) | _O((n * C(c, min(c, k))) * 2^n)_    | _O(2^n)_          | Hard           ||
+1504 | [Count Submatrices With All Ones](https://leetcode.com/problems/count-submatrices-with-all-ones/) | [C++](./C++/count-submatrices-with-all-ones.cpp) [Python](./Python/count-submatrices-with-all-ones.py) | _O(m * n)_ | _O(n)_ | Medium | | Mono Stack
 
 <br/>
 <div align="right">
@@ -1734,6 +1738,7 @@
 1479| [Sales by Day of the Week](https://leetcode.com/problems/sales-by-day-of-the-week/) | [MySQL](./MySQL/sales-by-day-of-the-week.sql) | _O(m + n)_ | _O(n)_       | Hard           |🔒| |
 1484| [Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/) | [MySQL](./MySQL/group-sold-products-by-the-date.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
 1495| [Friendly Movies Streamed Last Month](https://leetcode.com/problems/friendly-movies-streamed-last-month/) | [MySQL](./MySQL/friendly-movies-streamed-last-month.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
+1501| [Countries You Can Safely Invest In](https://leetcode.com/problems/countries-you-can-safely-invest-in/) | [MySQL](./MySQL/countries-you-can-safely-invest-in.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 
 <br/>
 <div align="right">
