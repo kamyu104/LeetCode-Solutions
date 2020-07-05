@@ -35,15 +35,15 @@ public:
         unordered_map<int, deque<int>> lookup;
         BIT bit(num.length() + 1);
         for (int i = 0; i < num.length(); ++i) {
-            lookup[num[i] - '0'].emplace_back(i);
+            lookup[num[i] - '0'].emplace_back(i + 1);
             bit.add(i + 1, 1);
         }
         string result;
         for (int i = 0; i < num.length(); ++i) {
             for (int d = 0; d <= 9; ++d) {
-                if (!lookup[d].empty() && bit.sum(lookup[d].front()) <= k) {
-                    k -= bit.sum(lookup[d].front());
-                    bit.add(lookup[d].front() + 1, -1);
+                if (!lookup[d].empty() && bit.sum(lookup[d].front() - 1) <= k) {
+                    k -= bit.sum(lookup[d].front() - 1);
+                    bit.add(lookup[d].front(), -1);
                     lookup[d].pop_front();
                     result.push_back('0' + d);
                     break;
