@@ -32,13 +32,13 @@ class Solution(object):
         bit = BIT(len(num)+1)
         for i, d in enumerate(num):
             bit.add(i+1, 1)
-            lookup[int(d)].append(i)
+            lookup[int(d)].append(i+1)
         result = []
         for _ in xrange(len(num)):
             for d in xrange(10):
-                if lookup[d] and bit.sum(lookup[d][0]) <= k:
-                    k -= bit.sum(lookup[d][0])
-                    bit.add(lookup[d].popleft()+1, -1)
+                if lookup[d] and bit.sum(lookup[d][0]-1) <= k:
+                    k -= bit.sum(lookup[d][0]-1)
+                    bit.add(lookup[d].popleft(), -1)
                     result.append(d)
                     break
         return "".join(map(str, result))
