@@ -28,7 +28,7 @@ class Solution(object):
         :type k: int
         :rtype: str
         """
-        lookup = collections.defaultdict(deque)
+        lookup = collections.defaultdict(collections.deque)
         bit = BIT(len(num)+1)
         for i, d in enumerate(num):
             bit.add(i+1, 1)
