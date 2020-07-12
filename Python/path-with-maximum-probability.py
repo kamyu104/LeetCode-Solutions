@@ -2,10 +2,10 @@
 #        if we can further to use Fibonacci heap, it would be O(|E| + |V| * log|V|)
 # Space: O(|E| + |V|) = O(|E|)
 
-
 import collections
 import itertools
 import heapq
+
 
 class Solution(object):
     def maxProbability(self, n, edges, succProb, start, end):
