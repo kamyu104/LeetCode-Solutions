@@ -25,7 +25,7 @@ class Solution(object):
         result, lookup = collections.defaultdict(float), set()
         result[start] = 1.0
         while max_heap and len(lookup) != len(adj):
-            curr, u = heappop(max_heap)
+            curr, u = heapq.heappop(max_heap)
             if u in lookup:
                 continue
             lookup.add(u)
@@ -35,5 +35,5 @@ class Solution(object):
                 if v in result and result[v] >= -curr*w:
                     continue
                 result[v] = -curr*w
-                heappush(max_heap, (-result[v], v))
+                heapq.heappush(max_heap, (-result[v], v))
         return result[end]
