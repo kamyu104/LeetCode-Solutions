@@ -8,7 +8,7 @@
 class Solution {
 public:
     double getMinDistSum(vector<vector<int>>& positions) {
-        static const double EPS = 1e-7;
+        static const double EPS = 1e-6;
         pair<double, double> median;
         median.first = (accumulate(cbegin(positions), cend(positions), 0.0,
                                    [](const auto& a, const auto& b) {
@@ -19,7 +19,7 @@ public:
                                         return a + b[1];
                                      }) / positions.size());
         pair<double, double> prev_median = {-1.0, -1.0};
-        while (prev_median.first < 0 || norm(median, prev_median) > EPS) {
+        while (prev_median.first < 0 || norm(median, prev_median) * positions.size() > EPS) {
             const auto& [stopped, new_median] = geometry_median(positions, median);
             if (stopped) {
                 break;
