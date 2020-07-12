@@ -1,5 +1,5 @@
 # Time:  O(n + klogk)
-# Space: O(1)
+# Space: O(k)
 
 import random
 
