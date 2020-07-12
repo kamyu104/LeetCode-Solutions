@@ -1,6 +1,7 @@
 // Time:  O(nlog(sum(nums)))
 // Space: O(n)
 
+// binary search + sliding window solution
 class Solution {
 public:
     int rangeSum(vector<int>& nums, int n, int left, int right) {
@@ -63,6 +64,7 @@ private:
 
 // Time:  O(rlogr), worst: O(n^2 * logn)
 // Space: O(n)
+// heap solution
 class Solution2 {
 public:
     int rangeSum(vector<int>& nums, int n, int left, int right) {
