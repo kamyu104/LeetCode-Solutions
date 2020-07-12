@@ -13,11 +13,11 @@ public:
         median.first = (accumulate(cbegin(positions), cend(positions), 0.0,
                                    [](const auto& a, const auto& b) {
                                        return a + b[0];
-                                    }) / positions.size());
+                                   }) / positions.size());
         median.second = (accumulate(cbegin(positions), cend(positions), 0.0,
                                     [](const auto& a, const auto& b) {
                                         return a + b[1];
-                                     }) / positions.size());
+                                    }) / positions.size());
         pair<double, double> prev_median = {-1.0, -1.0};
         while (prev_median.first < 0 || norm(median, prev_median) * positions.size() > EPS) {
             const auto& [stopped, new_median] = geometry_median(positions, median);
@@ -40,8 +40,9 @@ private:
                     (p1.second - p2.second) * (p1.second - p2.second));
     }
         
-    pair<bool, pair<double, double>> geometry_median(const vector<vector<int>>& positions,
-                                       const pair<double, double>& median) {
+    pair<bool, pair<double, double>> geometry_median(
+        const vector<vector<int>>& positions,
+        const pair<double, double>& median) {
         pair<double, double> numerator = {0.0, 0.0};
         double denominator = 0.0;
         for (const auto& p : positions) {
