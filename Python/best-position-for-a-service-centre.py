@@ -11,7 +11,7 @@ class Solution(object):
         :type positions: List[List[int]]
         :rtype: float
         """
-        EPS = 1e-9
+        EPS = 1e-6
         def norm(p1, p2):
             return ((p1[0]-p2[0])**2 + (p1[1]-p2[1])**2)**0.5
         
@@ -31,7 +31,7 @@ class Solution(object):
         median = [float(sum(p[0] for p in positions))/len(positions),
                   float(sum(p[1] for p in positions))/len(positions)]
         prev_median = [float("-inf"), float("-inf")]
-        while norm(median, prev_median) > EPS:
+        while norm(median, prev_median)*len(positions) > EPS:
             err, new_median = geometry_median(positions, median)
             if err:
                 break
