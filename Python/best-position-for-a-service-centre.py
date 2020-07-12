@@ -4,6 +4,7 @@
 # see reference:
 # - https://en.wikipedia.org/wiki/Geometric_median
 # - https://wikimedia.org/api/rest_v1/media/math/render/svg/b4f9f2b042ee722e92a0536893f9e70524523909
+# Weiszfeld's algorithm
 class Solution(object):
     def getMinDistSum(self, positions):
         """
