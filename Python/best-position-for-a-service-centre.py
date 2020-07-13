@@ -32,8 +32,8 @@ class Solution(object):
                   float(sum(p[1] for p in positions))/len(positions)]
         prev_median = [float("-inf"), float("-inf")]
         while norm(median, prev_median)*len(positions) > EPS:
-            err, new_median = geometry_median(positions, median)
-            if err:
+            stopped, new_median = geometry_median(positions, median)
+            if stopped:
                 break
             median, prev_median = new_median, median
         return sum(norm(median, p) for p in positions)
