@@ -50,7 +50,7 @@ class Solution2(object):
         DIRECTIONS = [(0, 1), (1, 0), (0, -1), (-1, 0)]
         EPS = 1e-6
         def dist(positions, p):
-            return sum(sqrt((p[0]-x)**2 + (p[1]-y)**2) for x, y in positions)
+            return sum(((p[0]-x)**2 + (p[1]-y)**2)**0.5 for x, y in positions)
         
         median = [0.0, 0.0]
         median[0] = float(sum(x for x, _ in positions))/len(positions)
