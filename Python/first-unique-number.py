@@ -25,7 +25,6 @@ class FirstUnique(object):
             return next(iter(self.__q))
         return -1
     
-
     def add(self, value):
         """
         :type value: int
