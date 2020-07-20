@@ -2,7 +2,7 @@
 // Space: O(logm)
 
 class Solution {
-   public:
+public:
     int closestToTarget(std::vector<int>& arr, int target) {
         static const int LOGM = 20;
         BitCount count(LOGM);
@@ -22,7 +22,7 @@ class Solution {
         return result;
     }
 
-   private:
+private:
     class BitCount {
     public:
         BitCount(int n) : n_(n), count_(n) {
