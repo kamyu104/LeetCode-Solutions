@@ -22,7 +22,7 @@ class BitCount(object):
             base <<= 1
         return self
             
-    def number(self, min_count):
+    def bit_and(self, min_count):
         num, base = 0, 1
         for i in xrange(self.__n):
             if self.__count[i] >= min_count:
@@ -44,7 +44,7 @@ class Solution(object):
         for right in xrange(len(arr)):
             count += arr[right]
             while left <= right:
-                f = count.number(right-left+1)
+                f = count.bit_and(right-left+1)
                 result = min(result, abs(f-target))
                 if f >= target:
                     break
