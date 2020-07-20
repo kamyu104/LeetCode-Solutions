@@ -33,3 +33,37 @@ class Solution(object):
             right = new_right
             result[-1] = s[left:right+1]
         return result
+
+
+# Time:  O(n)
+# space: O(1)
+class Solution2(object):
+    def maxNumOfSubstrings(self, s):
+        """
+        :type s: str
+        :rtype: List[str]
+        """
+        first, last = [float("inf")]*26, [float("-inf")]*26
+        for i, c in enumerate(s):
+            first[ord(c)-ord('a')] = min(first[ord(c)-ord('a')], i)
+            last[ord(c)-ord('a')] = max(last[ord(c)-ord('a')], i)
+        intervals = []
+        for c in xrange(len(first)):
+            if first[c] == float("inf"):
+                continue
+            left, right = first[c], last[c]
+            i = left
+            while i <= right:
+                left = min(left, first[ord(s[i])-ord('a')])
+                right = max(right, last[ord(s[i])-ord('a')])
+                i += 1
+            if left == first[c]:
+                intervals.append((right, left))
+        intervals.sort()
+        result, prev = [], -1
+        for right, left in intervals:
+            if left <= prev:
+                continue
+            result.append(s[left:right+1])
+            prev = right
+        return result
