@@ -39,8 +39,7 @@ class Solution(object):
         :rtype: int
         """
         count = BitCount(max(arr).bit_length())
-        result = float("inf")
-        left = 0
+        result, left = float("inf"), 0
         for right in xrange(len(arr)):
             count += arr[right]
             while left <= right:
