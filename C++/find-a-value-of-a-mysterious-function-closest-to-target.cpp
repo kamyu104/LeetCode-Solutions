@@ -25,8 +25,8 @@ private:
     class BitCount {
     public:
         BitCount(int n)
-          : n_(n)
-          , l_(0)
+          : l_(0)
+          , n_(n)
           , count_(n) {
             
         }
@@ -59,9 +59,9 @@ private:
             }
         }
 
-    private:        
-        int n_;
+    private:
         int l_;
+        int n_;
         vector<int> count_;
     };
 };
