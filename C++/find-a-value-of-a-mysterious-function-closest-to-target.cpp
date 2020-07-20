@@ -11,7 +11,7 @@ class Solution {
         for (int right = 0; right < arr.size(); ++right) {
             count += arr[right];
             while (left <= right) {
-                int f = count.number(right - left + 1);
+                int f = count.bitAnd(right - left + 1);
                 result = min(result, abs(f - target));
                 if (f >= target) {
                     break;
@@ -29,7 +29,7 @@ class Solution {
             
         }
 
-        int number(int min_count) const {
+        int bitAnd(int min_count) const {
             int num = 0;
             for (int i = 0; i < n_; ++i) {
                 if (count_[i] >= min_count) {
