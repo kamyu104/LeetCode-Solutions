@@ -3,9 +3,9 @@
 
 class BitCount(object):
     def __init__(self, n):
+        self.__l = 0
         self.__n = n
         self.__count = [0]*n
-        self.__l = 0
     
     def __iadd__(self, num):
         self.__l += 1
