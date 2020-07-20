@@ -7,8 +7,7 @@ public:
         static const int LOGM = 20;
         BitCount count(LOGM);
         int result = numeric_limits<int>::max();
-        int left = 0;
-        for (int right = 0; right < arr.size(); ++right) {
+        for (int left = 0, right = 0; right < arr.size(); ++right) {
             count += arr[right];
             while (left <= right) {
                 int f = count.bitAnd(right - left + 1);
