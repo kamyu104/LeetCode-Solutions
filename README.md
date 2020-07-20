@@ -962,7 +962,7 @@
 1305 |[All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/)| [C++](./C++/all-elements-in-two-binary-search-trees.cpp)  [Python](./Python/all-elements-in-two-binary-search-trees.py) | _O(n)_ | _O(h)_ | Medium || Stack |
 1498 |[Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems//number-of-subsequences-that-satisfy-the-given-sum-condition/)| [C++](./C++//number-of-subsequences-that-satisfy-the-given-sum-condition.cpp)  [Python](./Python//number-of-subsequences-that-satisfy-the-given-sum-condition.py) | _O(nlogn)_ | _O(n)_ | Medium || Two Pointers |
 1508| [Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/) |[C++](./C++/range-sum-of-sorted-subarray-sums.cpp)  [Python](./Python/range-sum-of-sorted-subarray-sums.py) | _O(nlog(sum(nums)))_ | _O(n)_ | Medium         | | Binary Search, Two Pointers, Sliding Window
-1521| [Find a Value of a Mysterious Function Closest to Target](https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target/)| [C++](./C++/find-a-value-of-a-mysterious-function-closest-to-target.cpp) [Python](./Python/find-a-value-of-a-mysterious-function-closest-to-target.py) | _O(nlogm)_    | _O(logm)_          | Hard           || DP, Two Pointers
+1521| [Find a Value of a Mysterious Function Closest to Target](https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target/)| [C++](./C++/find-a-value-of-a-mysterious-function-closest-to-target.cpp) [Python](./Python/find-a-value-of-a-mysterious-function-closest-to-target.py) | _O(nlogm)_    | _O(logm)_          | Hard           || DP, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
