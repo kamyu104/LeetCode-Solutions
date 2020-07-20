@@ -5,8 +5,10 @@ class BitCount(object):
     def __init__(self, n):
         self.__n = n
         self.__count = [0]*n
+        self.__l = 0
     
     def __iadd__(self, num):
+        self.__l += 1
         base = 1
         for i in xrange(self.__n):
             if num&base:
@@ -15,6 +17,7 @@ class BitCount(object):
         return self
 
     def __isub__(self, num):
+        self.__l -= 1
         base = 1
         for i in xrange(self.__n):
             if num&base:
@@ -22,10 +25,10 @@ class BitCount(object):
             base <<= 1
         return self
             
-    def bit_and(self, min_count):
+    def bit_and(self):
         num, base = 0, 1
         for i in xrange(self.__n):
-            if self.__count[i] >= min_count:
+            if self.__count[i] == self.__l:
                 num |= base
             base <<= 1
         return num
@@ -43,7 +46,7 @@ class Solution(object):
         for right in xrange(len(arr)):
             count += arr[right]
             while left <= right:
-                f = count.bit_and(right-left+1)
+                f = count.bit_and()
                 result = min(result, abs(f-target))
                 if f >= target:
                     break
