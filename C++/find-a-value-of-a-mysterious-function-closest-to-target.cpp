@@ -10,7 +10,7 @@ public:
         for (int left = 0, right = 0; right < arr.size(); ++right) {
             count += arr[right];
             while (left <= right) {
-                int f = count.bitAnd();
+                const auto& f = count.bitAnd();
                 result = min(result, abs(f - target));
                 if (f >= target) {
                     break;
