@@ -59,7 +59,7 @@ class Solution2(object):
                 i += 1
             if left == first[c]:
                 intervals.append((right, left))
-        intervals.sort()
+        intervals.sort()  # Time: O(26log26)
         result, prev = [], -1
         for right, left in intervals:
             if left <= prev:
