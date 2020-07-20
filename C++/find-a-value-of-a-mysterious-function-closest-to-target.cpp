@@ -10,7 +10,7 @@ public:
         for (int left = 0, right = 0; right < arr.size(); ++right) {
             count += arr[right];
             while (left <= right) {
-                int f = count.bitAnd(right - left + 1);
+                int f = count.bitAnd();
                 result = min(result, abs(f - target));
                 if (f >= target) {
                     break;
@@ -24,14 +24,17 @@ public:
 private:
     class BitCount {
     public:
-        BitCount(int n) : n_(n), count_(n) {
+        BitCount(int n)
+          : n_(n)
+          , l_(0)
+          , count_(n) {
             
         }
 
-        int bitAnd(int min_count) const {
+        int bitAnd() const {
             int num = 0;
             for (int i = 0; i < n_; ++i) {
-                if (count_[i] >= min_count) {
+                if (count_[i] == l_) {
                     num |= 1 << i;
                 }
             }
@@ -39,6 +42,7 @@ private:
         }
 
         void operator+=(int num) {
+            ++l_;
             for (int i = 0; i < n_; ++i) {
                 if (num & (1 << i)) {
                     ++count_[i];
@@ -47,6 +51,7 @@ private:
         }
         
         void operator-=(int num) {
+            --l_;
             for (int i = 0; i < n_; ++i) {
                 if (num & (1 << i)) {
                     --count_[i];
@@ -56,6 +61,7 @@ private:
 
     private:        
         int n_;
+        int l_;
         vector<int> count_;
     };
 };
