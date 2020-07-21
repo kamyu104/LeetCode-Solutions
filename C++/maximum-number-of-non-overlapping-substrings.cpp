@@ -61,12 +61,9 @@ public:
             if (first[c] == numeric_limits<int>::max()) {
                 continue;
             }
-            int left = first[c], right = last[c];
-            for (int i = left; i <= right; ++i) {
-                left = min(left, first[s[i] - 'a']);
-                right = max(right, last[s[i] - 'a']);
-            }
-            if (left == first[c]) {
+            int left = first[c];
+            int right = findRightFromLeft(s, first, last, left);
+            if (right != -1) {
                 intervals.emplace_back(right, left);
             }
         }
@@ -81,5 +78,20 @@ public:
             prev = right;
         }
         return result;
+    }
+
+private:
+    int findRightFromLeft(const string &s,
+                          const vector<int>& first,
+                          const vector<int>& last,
+                          int left) {
+        int right = last[s[left] - 'a'];
+        for (auto i = left; i <= right; ++i) {
+            if (first[s[i] - 'a'] < left) {
+                return -1;
+            }
+            right = max(right, last[s[i] - 'a']);
+        }
+        return right;
     }
 };
