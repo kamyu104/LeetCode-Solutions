@@ -61,8 +61,7 @@ public:
             if (first[c] == numeric_limits<int>::max()) {
                 continue;
             }
-            int left = first[c];
-            int right = findRightFromLeft(s, first, last, left);
+            int left = first[c], right = findRightFromLeft(s, first, last, first[c]);
             if (right != -1) {
                 intervals.emplace_back(right, left);
             }
