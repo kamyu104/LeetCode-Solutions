@@ -43,6 +43,15 @@ class Solution2(object):
         :type s: str
         :rtype: List[str]
         """
+        def find_right_from_left(s, first, last, left):
+            right, i = last[ord(s[left])-ord('a')], left
+            while i <= right:
+                if first[ord(s[i])-ord('a')] < left:
+                    return -1
+                right = max(right, last[ord(s[i])-ord('a')])
+                i += 1
+            return right
+
         first, last = [float("inf")]*26, [float("-inf")]*26
         for i, c in enumerate(s):
             first[ord(c)-ord('a')] = min(first[ord(c)-ord('a')], i)
@@ -51,13 +60,8 @@ class Solution2(object):
         for c in xrange(len(first)):
             if first[c] == float("inf"):
                 continue
-            left, right = first[c], last[c]
-            i = left
-            while i <= right:
-                left = min(left, first[ord(s[i])-ord('a')])
-                right = max(right, last[ord(s[i])-ord('a')])
-                i += 1
-            if left == first[c]:
+            left, right = first[c], find_right_from_left(s, first, last, first[c])
+            if right != -1:
                 intervals.append((right, left))
         intervals.sort()  # Time: O(26log26)
         result, prev = [], -1
