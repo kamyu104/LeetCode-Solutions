@@ -1,6 +1,9 @@
 # Time:  O(n)
 # Space: O(1)
 
+import itertools
+
+
 class Solution(object):
     def restoreString(self, s, indices):
         """
@@ -9,6 +12,6 @@ class Solution(object):
         :rtype: str
         """
         result = ['']*len(s)
-        for i, c in enumerate(s):
-            result[indices[i]] = c
+        for i, c in itertools.izip(indices, s):
+            result[i] = c
         return "".join(result)
