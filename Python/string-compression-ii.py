@@ -27,7 +27,6 @@ class Solution(object):
                         keep += 1
                     else:
                         delete += 1
-                    if j+delete > k:
-                        break
-                    dp[m][j+delete] = min(dp[m][j+delete], dp[i-1][j]+length(keep));
+                    if j+delete <= k:
+                        dp[m][j+delete] = min(dp[m][j+delete], dp[i-1][j]+length(keep));
         return dp[len(s)][k]
