@@ -30,9 +30,7 @@ public:
 private:
     int length(int cnt) {
         int l = ((cnt >= 2) ? 2 : 1);
-        for (; cnt >= 10; cnt /= 10) {
-            ++l;
-        }
+        for (; cnt >= 10; cnt /= 10, ++l);
         return l;
     }
 };
