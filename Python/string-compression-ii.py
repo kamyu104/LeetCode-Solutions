@@ -8,9 +8,8 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        def length(keep):
-            l = 2 if keep >= 2 else 1
-            cnt = keep
+        def length(cnt):
+            l = 2 if cnt >= 2 else 1
             while cnt >= 10:
                 l += 1
                 cnt //= 10
