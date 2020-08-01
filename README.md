@@ -1073,7 +1073,7 @@
 1287 | [Element Appearing More Than 25% In Sorted Array](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/) | [C++](./C++/element-appearing-more-than-25-in-sorted-array.cpp) [Python](./Python/element-appearing-more-than-25-in-sorted-array.py) | _O(logn)_ | _O(1)_ | Easy | |
 1385 | [Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/) | [C++](./C++/find-the-distance-value-between-two-arrays.cpp) [Python](./Python/find-the-distance-value-between-two-arrays.py) | _O((n + m) * logm)_ | _O(1)_ | Easy | | Binary Search, Two Pointers
 1482 | [Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | [C++](./C++/minimum-number-of-days-to-make-m-bouquets.cpp) [Python](./Python/minimum-number-of-days-to-make-m-bouquets.py) | _O(nlogd)_ | _O(1)_ | Medium | |
-1533 | [Find the Index of the Large Integer](https://leetcode.com/problems/find-the-index-of-the-large-integer/) | [C++](./C++/find-the-index-of-the-large-integer.cpp) [Python](./Python/find-the-index-of-the-large-integer.py) | _O(logn)_ | _O(1)_ | Medium | |
+1533 | [Find the Index of the Large Integer](https://leetcode.com/problems/find-the-index-of-the-large-integer/) | [C++](./C++/find-the-index-of-the-large-integer.cpp) [Python](./Python/find-the-index-of-the-large-integer.py) | _O(logn)_ | _O(1)_ | Medium | 🔒 |
 
 <br/>
 <div align="right">
