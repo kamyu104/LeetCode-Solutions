@@ -1,9 +1,6 @@
 # Time:  O(n)
 # Space: O(1)
 
-import itertools
-
-
 # in-place solution
 class Solution(object):
     def restoreString(self, s, indices):
