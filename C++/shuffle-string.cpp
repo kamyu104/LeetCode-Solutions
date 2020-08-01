@@ -17,7 +17,7 @@ public:
             s[i] = move;
         }
         for (auto& c : s) {
-            c = - c;
+            c = -c;
         }
         return s;
     }
