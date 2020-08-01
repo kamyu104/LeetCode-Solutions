@@ -8,6 +8,14 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+        def length(keep):
+            l = 2 if keep >= 2 else 1
+            cnt = keep
+            while cnt >= 10:
+                l += 1
+                cnt //= 10
+            return l
+
         dp = [[len(s)]*(k+1) for _ in xrange(len(s)+1)]
         dp[0][0] = 0
         for i in xrange(1, len(s)+1):
@@ -22,10 +30,5 @@ class Solution(object):
                         delete += 1
                     if j+delete > k:
                         break
-                    length = dp[i-1][j]+(2 if keep >= 2 else 1)
-                    cnt = keep
-                    while cnt >= 10:
-                        length += 1
-                        cnt //= 10
-                    dp[m][j+delete] = min(dp[m][j+delete], length);
+                    dp[m][j+delete] = min(dp[m][j+delete], dp[i-1][j]+length(keep));
         return dp[len(s)][k]
