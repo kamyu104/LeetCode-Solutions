@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1521%20%2F%201521-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1533%20%2F%201533-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
@@ -415,6 +415,8 @@
 1461| [Check If a String Contains All Binary Codes of Size K](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) | [C++](./C++/check-if-a-string-contains-all-binary-codes-of-size-k.cpp) [Python](./Python/check-if-a-string-contains-all-binary-codes-of-size-k.py) | _O(n * k)_ | _O(k * 2^k)_ | Medium || Bit Manipulation |
 1496| [Path Crossing](https://leetcode.com/problems/path-crossing/) | [C++](./C++/path-crossing.cpp) [Python](./Python/path-crossing.py) | _O(n)_ | _O(n)_ | Easy |||
 1507| [Reformat Date](https://leetcode.com/problems/reformat-date/) | [C++](./C++/reformat-date.cpp) [Python](./Python/reformat-date.py) | _O(n)_ | _O(1)_ | Easy |||
+1528| [Shuffle String](https://leetcode.com/problems/shuffle-string/) | [C++](./C++/shuffle-string.cpp) [Python](./Python/shuffle-string.py) | _O(n)_ | _O(1)_ | Easy |||
+1529| [Bulb Switcher IV](https://leetcode.com/problems/bulb-switcher-iv/) | [C++](./C++/bulb-switcher-iv.cpp) [Python](./Python/bulb-switcher-iv.py) | _O(n)_ | _O(1)_ | Medium |||
 
 <br/>
 <div align="right">
@@ -638,6 +640,7 @@
 1505 | [Minimum Possible Integer After at Most K Adjacent Swaps On Digits](https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/) | [C++](./C++/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits.cpp) [Python](./Python/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits.py) | _O(nlogn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
 1506 | [Find Root of N-Ary Tree](https://leetcode.com/problems/find-root-of-n-ary-tree/)| [C++](./C++/find-root-of-n-ary-tree.cpp) [Python](./Python/find-root-of-n-ary-tree.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Bit Manipulation
 1516 | [Move Sub-Tree of N-Ary Tree](https://leetcode.com/problems/move-sub-tree-of-n-ary-tree/)| [C++](./C++/move-sub-tree-of-n-ary-tree.cpp) [Python](./Python/move-sub-tree-of-n-ary-tree.py) | _O(n)_ | _O(h)_ | Hard | 🔒 | DFS, Stack
+1530 | [Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/)| [C++](./C++/number-of-good-leaf-nodes-pairs.cpp) [Python](./Python/number-of-good-leaf-nodes-pairs.py) | _O(n)_ | _O(h)_ | Medium | | DFS, Stack
 
 <br/>
 <div align="right">
@@ -1064,6 +1067,7 @@
 1287 | [Element Appearing More Than 25% In Sorted Array](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/) | [C++](./C++/element-appearing-more-than-25-in-sorted-array.cpp) [Python](./Python/element-appearing-more-than-25-in-sorted-array.py) | _O(logn)_ | _O(1)_ | Easy | |
 1385 | [Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/) | [C++](./C++/find-the-distance-value-between-two-arrays.cpp) [Python](./Python/find-the-distance-value-between-two-arrays.py) | _O((n + m) * logm)_ | _O(1)_ | Easy | | Binary Search, Two Pointers
 1482 | [Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | [C++](./C++/minimum-number-of-days-to-make-m-bouquets.cpp) [Python](./Python/minimum-number-of-days-to-make-m-bouquets.py) | _O(nlogd)_ | _O(1)_ | Medium | |
+1533 | [Find the Index of the Large Integer](https://leetcode.com/problems/find-the-index-of-the-large-integer/) | [C++](./C++/find-the-index-of-the-large-integer.cpp) [Python](./Python/find-the-index-of-the-large-integer.py) | _O(logn)_ | _O(1)_ | Medium | |
 
 <br/>
 <div align="right">
@@ -1449,6 +1453,7 @@
 1494| [Parallel Courses II](https://leetcode.com/problems/parallel-courses-ii/)| [C++](./C++/parallel-courses-ii.cpp) [Python](./Python/parallel-courses-ii.py) | _O((n * C(c, min(c, k))) * 2^n)_    | _O(2^n)_          | Hard           ||
 1504 | [Count Submatrices With All Ones](https://leetcode.com/problems/count-submatrices-with-all-ones/) | [C++](./C++/count-submatrices-with-all-ones.cpp) [Python](./Python/count-submatrices-with-all-ones.py) | _O(m * n)_ | _O(n)_ | Medium | | Mono Stack
 1510| [Stone Game IV](https://leetcode.com/problems/stone-game-iv/)| [C++](./C++/stone-game-iv.cpp) [Python](./Python/stone-game-iv.py) | _O(n * sqrt(n))_    | _O(n)_          | Hard           ||
+1531| [String Compression II](https://leetcode.com/problems/string-compression-ii/)| [C++](./C++/string-compression-ii.cpp) [Python](./Python/string-compression-ii.py) | _O(n^2 * k)_    | _O(n * k)_          | Hard           ||
 
 <br/>
 <div align="right">
@@ -1754,6 +1759,8 @@
 1501| [Countries You Can Safely Invest In](https://leetcode.com/problems/countries-you-can-safely-invest-in/) | [MySQL](./MySQL/countries-you-can-safely-invest-in.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
 1511| [Customer Order Frequency](https://leetcode.com/problems/customer-order-frequency/) | [MySQL](./MySQL/customer-order-frequency.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1517| [Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/) | [MySQL](./MySQL/find-users-with-valid-e-mails.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| Regex |
+1527| [Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/) | [MySQL](./MySQL/patients-with-a-condition.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| Regex |
+1532| [The Most Recent Three Orders](https://leetcode.com/problems/the-most-recent-three-orders/) | [MySQL](./MySQL/the-most-recent-three-orders.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
