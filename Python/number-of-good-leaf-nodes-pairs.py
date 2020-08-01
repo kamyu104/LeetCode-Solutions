@@ -1,6 +1,9 @@
 # Time:  O(n)
 # Space: O(h)
 
+import collections
+
+
 # Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
@@ -18,7 +21,7 @@ class Solution(object):
         """
         def iter_dfs(distance, root):
             result = 0
-            stk = [(1, (root, [Counter()]))]
+            stk = [(1, (root, [collections.Counter()]))]
             while stk:
                 step, params = stk.pop()
                 if step == 1:
@@ -28,7 +31,7 @@ class Solution(object):
                     if not node.left and not node.right:
                         ret[0][0] = 1
                         continue
-                    left, right = [Counter()], [Counter()]
+                    left, right = [collections.Counter()], [collections.Counter()]
                     stk.append((2, (left, right, ret)))
                     stk.append((1, (node.right, right)))
                     stk.append((1, (node.left, left)))
@@ -38,7 +41,7 @@ class Solution(object):
                         for right_d,right_c in right[0].iteritems():
                             if left_d+right_d+2 <= distance:
                                 result += left_c*right_c
-                    ret[0] = Counter({k+1:v for k,v in (left[0]+right[0]).iteritems()})
+                    ret[0] = collections.Counter({k+1:v for k,v in (left[0]+right[0]).iteritems()})
             return result
         
         return iter_dfs(distance, root)
@@ -46,6 +49,9 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(h)
+import collections
+
+
 class Solution2(object):
     def countPairs(self, root, distance):
         """
@@ -55,15 +61,15 @@ class Solution2(object):
         """
         def dfs(distance, node):
             if not node:
-                return 0, Counter()
+                return 0, collections.Counter()
             if not node.left and not node.right:
-                return 0, Counter([0])
+                return 0, collections.Counter([0])
             left, right = dfs(distance, node.left), dfs(distance, node.right)
             result = left[0]+right[0]
             for left_d, left_c in left[1].iteritems():
                 for right_d,right_c in right[1].iteritems():
                     if left_d+right_d+2 <= distance:
                         result += left_c*right_c
-            return result, Counter({k+1:v for k,v in (left[1]+right[1]).iteritems()})
+            return result, collections.Counter({k+1:v for k,v in (left[1]+right[1]).iteritems()})
         
         return dfs(distance, root)[0]
