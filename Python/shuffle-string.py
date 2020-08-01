@@ -9,16 +9,16 @@ class Solution(object):
         :type indices: List[int]
         :rtype: str
         """
-        result = map(ord, s)
+        result = list(s)
         for i, c in enumerate(result):
-            if c < 0:
+            if indices[i] == i:
                 continue
-            move, j = -c, indices[i]
+            move, j = c, indices[i]
             while j != i:
                 result[j], move = move, result[j]
-                move, j = -move, indices[j]
+                indices[j], j = j, indices[j]
             result[i] = move
-        return "".join(map(lambda x: chr(-x), result))
+        return "".join(result)
 
 
 # Time:  O(n)
