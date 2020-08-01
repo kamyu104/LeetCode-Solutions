@@ -18,17 +18,21 @@ public:
                     } else {
                         ++del;
                     }
-                    if (j + del > k) {
-                        break;
+                    if (j + del <= k) {
+                        dp[m][j + del] = min(dp[m][j + del], dp[i - 1][j] + length(keep));
                     }
-                    int length = dp[i - 1][j] + ((keep >= 2) ? 2 : 1);
-                    for (int cnt = keep; cnt >= 10; cnt /= 10) {
-                        ++length;
-                    }
-                    dp[m][j + del] = min(dp[m][j + del], length);
                 }
             }
         }
         return dp[s.length()][k];
+    }
+
+private:
+    int length(int cnt) {
+        int l = ((cnt >= 2) ? 2 : 1);
+        for (; cnt >= 10; cnt /= 10) {
+            ++l;
+        }
+        return l;
     }
 };
