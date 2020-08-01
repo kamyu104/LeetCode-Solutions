@@ -6,18 +6,14 @@ class Solution {
 public:
     string restoreString(string s, vector<int>& indices) {
         for (int i = 0; i < s.length(); ++i) {
-            if (s[i] < 0) {
+            if (indices[i] == i) {
                 continue;
             }
-            char move = -s[i];
-            for (int j = indices[i]; j != i ; j = indices[j]) {
+            auto move = s[i];
+            for (int j = indices[i]; j != i; swap(indices[j], j)) {
                 swap(s[j], move);
-                move = -move;
             }
             s[i] = move;
-        }
-        for (auto& c : s) {
-            c = -c;
         }
         return s;
     }
