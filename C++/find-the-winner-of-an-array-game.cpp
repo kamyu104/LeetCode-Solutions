@@ -10,8 +10,7 @@ public:
                 result = arr[i];
                 count = 0;
             }
-            ++count;
-            if (count == k) {
+            if (++count == k) {
                 break;
             }
         }
