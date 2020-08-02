@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1533%20%2F%201533-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1537%20%2F%201537-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
@@ -281,6 +281,8 @@
 1493| [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | [C++](./C++/longest-subarray-of-1s-after-deleting-one-element.cpp) [Python](./Python/longest-subarray-of-1s-after-deleting-one-element.py) | _O(n)_ | _O(1)_ |  Medium | | Sliding Window
 1502 | [Can Make Arithmetic Progression From Sequence](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/) | [C++](./C++/can-make-arithmetic-progression-from-sequence.cpp) [Python](./Python/can-make-arithmetic-progression-from-sequence.py) | _O(n)_ | _O(1)_      | Easy         ||
 1503 | [Last Moment Before All Ants Fall Out of a Plank](https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/) | [C++](./C++/last-moment-before-all-ants-fall-out-of-a-plank.cpp) [Python](./Python/last-moment-before-all-ants-fall-out-of-a-plank.py) | _O(n)_ | _O(1)_      | Medium         ||
+1534 | [Count Good Triplets](https://leetcode.com/problems/count-good-triplets/) | [C++](./C++/count-good-triplets.cpp) [Python](./Python/count-good-triplets.py) | _O(n^3)_ | _O(1)_      | Easy         ||
+1535 | [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | [C++](./C++/find-the-winner-of-an-array-game.cpp) [Python](./Python/find-the-winner-of-an-array-game.py) | _O(n)_ | _O(1)_      | Medium         ||
 
 <br/>
 <div align="right">
@@ -881,6 +883,7 @@
 1512| [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) | [C++](./C++/number-of-good-pairs.cpp) [Python](./Python/number-of-good-pairs.py) | _O(n)_ | _O(1)_ |  Easy | |
 1513| [Number of Substrings With Only 1s](https://leetcode.com/problems/number-of-substrings-with-only-1s/) | [C++](./C++/number-of-substrings-with-only-1s.cpp) [Python](./Python/number-of-substrings-with-only-1s.py) | _O(n)_ | _O(1)_ |  Medium | |
 1525| [Number of Good Ways to Split a String](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/) | [C++](./C++/number-of-good-ways-to-split-a-string.cpp) [Python](./Python/number-of-good-ways-to-split-a-string.py) | _O(n)_ | _O(1)_ |  Medium | |
+1537| [Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) | [C++](./C++/get-the-maximum-score.cpp) [Python](./Python/get-the-maximum-score.py) | _O(m + n)_ | _O(1)_ |  Hard | |
 
 <br/>
 <div align="right">
@@ -1544,6 +1547,7 @@
 1518| [Water Bottles](https://leetcode.com/problems/water-bottles/)  | [C++](./C++/water-bottles.cpp) [Python](./Python/water-bottles.py) | _O(logn/logm)_        | _O(1)_          | Easy           | | |
 1520| [Maximum Number of Non-Overlapping Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/)  | [C++](./C++/maximum-number-of-non-overlapping-substrings.cpp) [Python](./Python/maximum-number-of-non-overlapping-substrings.py) | _O(n)_        | _O(1)_          | Medium           | | |
 1526| [Minimum Number of Increments on Subarrays to Form a Target Array](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/)  | [C++](./C++/minimum-number-of-increments-on-subarrays-to-form-a-target-array.cpp) [Python](./Python/minimum-number-of-increments-on-subarrays-to-form-a-target-array.py) | _O(n)_        | _O(1)_          | Hard           | | |
+1536| [Minimum Swaps to Arrange a Binary Grid](https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/)  | [C++](./C++/minimum-swaps-to-arrange-a-binary-grid.cpp) [Python](./Python/minimum-swaps-to-arrange-a-binary-grid.py) | _O(n^2)_        | _O(1)_          | Medium           | | |
 
 <br/>
 <div align="right">
