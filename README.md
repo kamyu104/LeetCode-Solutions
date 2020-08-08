@@ -24,7 +24,7 @@
 * [Linked List](https://github.com/kamyu104/LeetCode-Solutions#linked-list)
 * [Stack](https://github.com/kamyu104/LeetCode-Solutions#stack)
 * [Queue](https://github.com/kamyu104/LeetCode-Solutions#queue)
-* [Heap](https://github.com/kamyu104/LeetCode-Solutions#heap)
+* [Binary Heap](https://github.com/kamyu104/LeetCode-Solutions#binary-heap)
 * [Tree](https://github.com/kamyu104/LeetCode-Solutions#tree)
 * [Hash Table](https://github.com/kamyu104/LeetCode-Solutions#hash-table)
 * [Math](https://github.com/kamyu104/LeetCode-Solutions#math)
@@ -536,7 +536,7 @@
 </div>
 <br/>
 
-## Heap
+## Binary Heap
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 0264| [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/) | [C++](./C++/ugly-number-ii.cpp)  [Python](./Python/ugly-number-ii.py)  | _O(n)_ | _O(1)_ | Medium         | CTCI, LintCode | BST, Heap |
