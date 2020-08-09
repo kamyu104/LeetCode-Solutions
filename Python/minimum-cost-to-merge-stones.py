@@ -1,4 +1,4 @@
-# Time:  O(n^3/k)
+# Time:  O(n^3 / k)
 # Space: O(n^2)
 
 class Solution(object):
