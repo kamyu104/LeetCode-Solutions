@@ -16,9 +16,7 @@ class Solution(object):
         dp = [[0]*len(stones) for _ in xrange(len(stones))]
         for l in xrange(K-1, len(stones)):
             for i in xrange(len(stones)-l):
-                dp[i][i+l] = float("inf")
-                for j in xrange(i, i+l, K-1):
-                    dp[i][i+l] = min(dp[i][i+l], dp[i][j]+dp[j+1][i+l])
+                dp[i][i+l] = min(dp[i][j]+dp[j+1][i+l] for j in xrange(i, i+l, K-1))
                 if l % (K-1) == 0:
                     dp[i][i+l] += prefix[i+l+1] - prefix[i]
         return dp[0][len(stones)-1]
