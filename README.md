@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1537%20%2F%201537-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1547%20%2F%201547-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
@@ -283,6 +283,7 @@
 1503 | [Last Moment Before All Ants Fall Out of a Plank](https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/) | [C++](./C++/last-moment-before-all-ants-fall-out-of-a-plank.cpp) [Python](./Python/last-moment-before-all-ants-fall-out-of-a-plank.py) | _O(n)_ | _O(1)_      | Medium         ||
 1534 | [Count Good Triplets](https://leetcode.com/problems/count-good-triplets/) | [C++](./C++/count-good-triplets.cpp) [Python](./Python/count-good-triplets.py) | _O(n^3)_ | _O(1)_      | Easy         ||
 1535 | [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | [C++](./C++/find-the-winner-of-an-array-game.cpp) [Python](./Python/find-the-winner-of-an-array-game.py) | _O(n)_ | _O(1)_      | Medium         ||
+1538 | [Guess the Majority in a Hidden Array](https://leetcode.com/problems/guess-the-majority-in-a-hidden-array/) | [C++](./C++/guess-the-majority-in-a-hidden-array.cpp) [Python](./Python/guess-the-majority-in-a-hidden-array.py) | _O(n)_ | _O(1)_      | Medium         |🔒|
 
 <br/>
 <div align="right">
@@ -419,6 +420,8 @@
 1507| [Reformat Date](https://leetcode.com/problems/reformat-date/) | [C++](./C++/reformat-date.cpp) [Python](./Python/reformat-date.py) | _O(n)_ | _O(1)_ | Easy |||
 1528| [Shuffle String](https://leetcode.com/problems/shuffle-string/) | [C++](./C++/shuffle-string.cpp) [Python](./Python/shuffle-string.py) | _O(n)_ | _O(1)_ | Easy |||
 1529| [Bulb Switcher IV](https://leetcode.com/problems/bulb-switcher-iv/) | [C++](./C++/bulb-switcher-iv.cpp) [Python](./Python/bulb-switcher-iv.py) | _O(n)_ | _O(1)_ | Medium |||
+1540| [Can Convert String in K Moves](https://leetcode.com/problems/can-convert-string-in-k-moves/) | [C++](./C++/can-convert-string-in-k-moves.cpp) [Python](./Python/can-convert-string-in-k-moves.py) | _O(n)_ | _O(1)_ | Medium |||
+1542| [Find Longest Awesome Substring](https://leetcode.com/problems/find-longest-awesome-substring/) | [C++](./C++/find-longest-awesome-substring.cpp) [Python](./Python/find-longest-awesome-substring.py) | _O(n)_ | _O(1)_ | Hard |||
 
 <br/>
 <div align="right">
@@ -510,6 +513,7 @@
 1190| [Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/)| [C++](./C++/reverse-substrings-between-each-pair-of-parentheses.cpp)  [Python](./Python/reverse-substrings-between-each-pair-of-parentheses.py)| _O(n)_ | _O(n)_         | Medium           ||
 1209 | [Remove All Adjacent Duplicates in String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/) | [C++](./C++/remove-all-adjacent-duplicates-in-string-ii.cpp) [Python](./Python/remove-all-adjacent-duplicates-in-string-ii.py) | _O(n)_ | _O(n)_      | Medium         ||
 1441 | [Build an Array With Stack Operations](https://leetcode.com/problems/build-an-array-with-stack-operations/) | [C++](./C++/build-an-array-with-stack-operations.cpp) [Python](./Python/build-an-array-with-stack-operations.py) | _O(n)_ | _O(1)_      | Easy         ||
+1541 | [Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/) | [C++](./C++/minimum-insertions-to-balance-a-parentheses-string.cpp) [Python](./Python/minimum-insertions-to-balance-a-parentheses-string.py) | _O(n)_ | _O(1)_      | Medium         ||
 
 <br/>
 <div align="right">
@@ -1077,6 +1081,7 @@
 1385 | [Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/) | [C++](./C++/find-the-distance-value-between-two-arrays.cpp) [Python](./Python/find-the-distance-value-between-two-arrays.py) | _O((n + m) * logm)_ | _O(1)_ | Easy | | Binary Search, Two Pointers
 1482 | [Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | [C++](./C++/minimum-number-of-days-to-make-m-bouquets.cpp) [Python](./Python/minimum-number-of-days-to-make-m-bouquets.py) | _O(nlogd)_ | _O(1)_ | Medium | |
 1533 | [Find the Index of the Large Integer](https://leetcode.com/problems/find-the-index-of-the-large-integer/) | [C++](./C++/find-the-index-of-the-large-integer.cpp) [Python](./Python/find-the-index-of-the-large-integer.py) | _O(logn)_ | _O(1)_ | Medium | 🔒 |
+1539 | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | [C++](./C++/kth-missing-positive-number.cpp) [Python](./Python/kth-missing-positive-number.py) | _O(logn)_ | _O(1)_ | Easy | |
 
 <br/>
 <div align="right">
