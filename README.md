@@ -422,6 +422,8 @@
 1529| [Bulb Switcher IV](https://leetcode.com/problems/bulb-switcher-iv/) | [C++](./C++/bulb-switcher-iv.cpp) [Python](./Python/bulb-switcher-iv.py) | _O(n)_ | _O(1)_ | Medium |||
 1540| [Can Convert String in K Moves](https://leetcode.com/problems/can-convert-string-in-k-moves/) | [C++](./C++/can-convert-string-in-k-moves.cpp) [Python](./Python/can-convert-string-in-k-moves.py) | _O(n)_ | _O(1)_ | Medium |||
 1542| [Find Longest Awesome Substring](https://leetcode.com/problems/find-longest-awesome-substring/) | [C++](./C++/find-longest-awesome-substring.cpp) [Python](./Python/find-longest-awesome-substring.py) | _O(n)_ | _O(1)_ | Hard |||
+1544| [Make The String Great](https://leetcode.com/problems/make-the-string-great/) | [C++](./C++/make-the-string-great.cpp) [Python](./Python/make-the-string-great.py) | _O(n)_ | _O(1)_ | Easy |||
+1545| [Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/) | [C++](./C++/find-kth-bit-in-nth-binary-string.cpp) [Python](./Python/find-kth-bit-in-nth-binary-string.py) | _O(n)_ | _O(1)_ | Medium |||
 
 <br/>
 <div align="right">
@@ -1466,6 +1468,7 @@
 1510| [Stone Game IV](https://leetcode.com/problems/stone-game-iv/)| [C++](./C++/stone-game-iv.cpp) [Python](./Python/stone-game-iv.py) | _O(n * sqrt(n))_    | _O(n)_          | Hard           ||
 1524| [Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/)| [C++](./C++/number-of-sub-arrays-with-odd-sum.cpp) [Python](./Python/number-of-sub-arrays-with-odd-sum.py) | _O(n)_    | _O(1)_          | Medium           ||
 1531| [String Compression II](https://leetcode.com/problems/string-compression-ii/)| [C++](./C++/string-compression-ii.cpp) [Python](./Python/string-compression-ii.py) | _O(n^2 * k)_    | _O(n * k)_          | Hard           ||
+1547| [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/)| [C++](./C++/minimum-cost-to-cut-a-stick.cpp) [Python](./Python/minimum-cost-to-cut-a-stick.py) | _O(n^3)_    | _O(n^2)_          | Hard           ||
 
 <br/>
 <div align="right">
@@ -1553,6 +1556,7 @@
 1520| [Maximum Number of Non-Overlapping Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/)  | [C++](./C++/maximum-number-of-non-overlapping-substrings.cpp) [Python](./Python/maximum-number-of-non-overlapping-substrings.py) | _O(n)_        | _O(1)_          | Medium           | | |
 1526| [Minimum Number of Increments on Subarrays to Form a Target Array](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/)  | [C++](./C++/minimum-number-of-increments-on-subarrays-to-form-a-target-array.cpp) [Python](./Python/minimum-number-of-increments-on-subarrays-to-form-a-target-array.py) | _O(n)_        | _O(1)_          | Hard           | | |
 1536| [Minimum Swaps to Arrange a Binary Grid](https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/)  | [C++](./C++/minimum-swaps-to-arrange-a-binary-grid.cpp) [Python](./Python/minimum-swaps-to-arrange-a-binary-grid.py) | _O(n^2)_        | _O(1)_          | Medium           | | |
+1546| [Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/)| [C++](./C++/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target.cpp) [Python](./Python/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target.py) | _O(n)_    | _O(n)_          | Medium           ||
 
 <br/>
 <div align="right">
@@ -1775,6 +1779,7 @@
 1517| [Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/) | [MySQL](./MySQL/find-users-with-valid-e-mails.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| Regex |
 1527| [Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/) | [MySQL](./MySQL/patients-with-a-condition.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| Regex |
 1532| [The Most Recent Three Orders](https://leetcode.com/problems/the-most-recent-three-orders/) | [MySQL](./MySQL/the-most-recent-three-orders.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+1543| [Fix Product Name Format](https://leetcode.com/problems/fix-product-name-format/) | [MySQL](./MySQL/fix-product-name-format.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
