@@ -25,7 +25,7 @@ public:
                 }
                 a_b.emplace_back(j);
             }
-            int value_a_b_3_4 = reader.query(a_b[0], a_b[1], 3, 4);
+            const auto& value_a_b_3_4 = reader.query(a_b[0], a_b[1], 3, 4);
             if (value_a_b_3_4 == value_0_1_2_4) {  // nums[i] == nums[3]
                 ++count_a;
             } else {
