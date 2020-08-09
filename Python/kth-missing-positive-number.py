@@ -18,4 +18,4 @@ class Solution(object):
                 right = mid-1
             else:
                 left = mid+1
-        return left+k
+        return left+k  # arr[left-1] + (k-(arr[left-1]-((left-1)+1)))
