@@ -7,6 +7,6 @@ class Solution(object):
         :type x: int
         :rtype: int
         """
-        return int(x ** 2)
+        return int(x ** 0.5)
 
 
