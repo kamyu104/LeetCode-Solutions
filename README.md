@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1547%20%2F%201547-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1553%20%2F%201553-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
@@ -284,6 +284,7 @@
 1534 | [Count Good Triplets](https://leetcode.com/problems/count-good-triplets/) | [C++](./C++/count-good-triplets.cpp) [Python](./Python/count-good-triplets.py) | _O(n^3)_ | _O(1)_      | Easy         ||
 1535 | [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | [C++](./C++/find-the-winner-of-an-array-game.cpp) [Python](./Python/find-the-winner-of-an-array-game.py) | _O(n)_ | _O(1)_      | Medium         ||
 1538 | [Guess the Majority in a Hidden Array](https://leetcode.com/problems/guess-the-majority-in-a-hidden-array/) | [C++](./C++/guess-the-majority-in-a-hidden-array.cpp) [Python](./Python/guess-the-majority-in-a-hidden-array.py) | _O(n)_ | _O(1)_      | Medium         |🔒|
+1550 | [Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/) | [C++](./C++/three-consecutive-odds.cpp) [Python](./Python/three-consecutive-odds.py) | _O(n)_ | _O(1)_      | Easy         ||
 
 <br/>
 <div align="right">
@@ -890,6 +891,7 @@
 1513| [Number of Substrings With Only 1s](https://leetcode.com/problems/number-of-substrings-with-only-1s/) | [C++](./C++/number-of-substrings-with-only-1s.cpp) [Python](./Python/number-of-substrings-with-only-1s.py) | _O(n)_ | _O(1)_ |  Medium | |
 1525| [Number of Good Ways to Split a String](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/) | [C++](./C++/number-of-good-ways-to-split-a-string.cpp) [Python](./Python/number-of-good-ways-to-split-a-string.py) | _O(n)_ | _O(1)_ |  Medium | |
 1537| [Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) | [C++](./C++/get-the-maximum-score.cpp) [Python](./Python/get-the-maximum-score.py) | _O(m + n)_ | _O(1)_ |  Hard | |
+1551| [Minimum Operations to Make Array Equal](https://leetcode.com/problems/minimum-operations-to-make-array-equal/) | [C++](./C++/minimum-operations-to-make-array-equal.cpp) [Python](./Python/minimum-operations-to-make-array-equal.py) | _O(1)_ | _O(1)_ |  Medium | |
 
 <br/>
 <div align="right">
@@ -1084,6 +1086,7 @@
 1482 | [Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | [C++](./C++/minimum-number-of-days-to-make-m-bouquets.cpp) [Python](./Python/minimum-number-of-days-to-make-m-bouquets.py) | _O(nlogd)_ | _O(1)_ | Medium | |
 1533 | [Find the Index of the Large Integer](https://leetcode.com/problems/find-the-index-of-the-large-integer/) | [C++](./C++/find-the-index-of-the-large-integer.cpp) [Python](./Python/find-the-index-of-the-large-integer.py) | _O(logn)_ | _O(1)_ | Medium | 🔒 |
 1539 | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | [C++](./C++/kth-missing-positive-number.cpp) [Python](./Python/kth-missing-positive-number.py) | _O(logn)_ | _O(1)_ | Easy | |
+1552 | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/) | [C++](./C++/magnetic-force-between-two-balls.cpp) [Python](./Python/magnetic-force-between-two-balls.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | |
 
 <br/>
 <div align="right">
@@ -1469,6 +1472,8 @@
 1524| [Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/)| [C++](./C++/number-of-sub-arrays-with-odd-sum.cpp) [Python](./Python/number-of-sub-arrays-with-odd-sum.py) | _O(n)_    | _O(1)_          | Medium           ||
 1531| [String Compression II](https://leetcode.com/problems/string-compression-ii/)| [C++](./C++/string-compression-ii.cpp) [Python](./Python/string-compression-ii.py) | _O(n^2 * k)_    | _O(n * k)_          | Hard           ||
 1547| [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/)| [C++](./C++/minimum-cost-to-cut-a-stick.cpp) [Python](./Python/minimum-cost-to-cut-a-stick.py) | _O(n^3)_    | _O(n^2)_          | Hard           ||
+1548| [The Most Similar Path in a Graph](https://leetcode.com/problems/the-most-similar-path-in-a-graph/)| [C++](./C++/the-most-similar-path-in-a-graph.cpp) [Python](./Python/the-most-similar-path-in-a-graph.py) | _O(n^ * m)_    | _O(n * m)_          | Hard           | 🔒 |
+1553| [Minimum Number of Days to Eat N Oranges](https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/)| [C++](./C++/minimum-number-of-days-to-eat-n-oranges.cpp) [Python](./Python/minimum-number-of-days-to-eat-n-oranges.py) | _O((logn)^2)_    | _O((logn)^2)_          | Hard           ||
 
 <br/>
 <div align="right">
@@ -1780,6 +1785,7 @@
 1527| [Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/) | [MySQL](./MySQL/patients-with-a-condition.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| Regex |
 1532| [The Most Recent Three Orders](https://leetcode.com/problems/the-most-recent-three-orders/) | [MySQL](./MySQL/the-most-recent-three-orders.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 1543| [Fix Product Name Format](https://leetcode.com/problems/fix-product-name-format/) | [MySQL](./MySQL/fix-product-name-format.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+1549| [The Most Recent Orders for Each Product](https://leetcode.com/problems/the-most-recent-orders-for-each-product/) | [MySQL](./MySQL/the-most-recent-orders-for-each-product.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
