@@ -127,7 +127,7 @@ class TweetCounts(object):
         :rtype: List[int]
         """
         delta = self.__lookup[freq]
-        result = [0]*((endTime- startTime)//delta+1)
+        result = [0]*((endTime-startTime)//delta+1)
         it = self.__records[tweetName].lower_bound(startTime)
         while it is not None and it.val <= endTime:
             result[(it.val-startTime)//delta] += 1
