@@ -12,7 +12,7 @@ public:
                     grid[i][j] == grid[i][j - 1] &&
                     union_find.find_set(index(grid[0].size(), i - 1, j)) ==
                     union_find.find_set(index(grid[0].size(), i, j - 1))) {
-                        return true;
+                    return true;
                 }
                 if (i && grid[i][j] == grid[i - 1][j]) {
                     union_find.union_set(index(grid[0].size(), i - 1, j),
@@ -74,8 +74,8 @@ public:
                 if (!grid[i][j]) {
                     continue;
                 }
-                vector<pair<int, int>> q = {{i, j}};
                 char val = grid[i][j];
+                vector<pair<int, int>> q = {{i, j}};
                 while (!q.empty()) {
                     vector<pair<int, int>> new_q;
                     for (const auto& [r, c] : q) {
