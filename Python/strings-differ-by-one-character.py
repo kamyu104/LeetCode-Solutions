@@ -11,10 +11,12 @@ class Solution(object):
         :rtype: bool
         """
         MOD, P = 10**9+7, 113
+
         hashes = [0]*len(dict)
-        for i in xrange(len(dict)):
-            for j in xrange(len(dict[0])):
-                hashes[i] = (P*hashes[i] + (ord(dict[i][j])-ord('a'))) % MOD
+        for i, word in enumerate(dict):
+            for c in word:
+                hashes[i] = (P*hashes[i] + (ord(c)-ord('a'))) % MOD
+
         base = 1
         for p in reversed(xrange(len(dict[0]))):        
             lookup = collections.defaultdict(list)
