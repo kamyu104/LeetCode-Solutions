@@ -9,7 +9,7 @@ public:
             for (int j = 0; j < grid[0].size(); ++j) {
                 if (i) {
                     union_find.union_set(index(grid.size(), i - 1, j, S),
-                                         index(grid.size(),i, j, N));
+                                         index(grid.size(), i, j, N));
                 }
                 if (j) {
                     union_find.union_set(index(grid.size(), i, j - 1, E),
