@@ -11,25 +11,28 @@ class Solution(object):
         prefix = [0]
         for v in stoneValue:
             prefix.append(prefix[-1] + v)
-        
+
+        mid = range(n)
+
         dp = [[0]*n for _ in xrange(n)]
         for i in xrange(n):
             dp[i][i] = stoneValue[i]
-        p = range(n)
+
         max_score = 0
         for l in xrange(2, n+1):
             for i in xrange(n-l+1):
                 j = i+l-1
-                while prefix[p[i]]-prefix[i] < prefix[j+1]-prefix[p[i]]:
-                    p[i] += 1
+                while prefix[mid[i]]-prefix[i] < prefix[j+1]-prefix[mid[i]]:
+                    mid[i] += 1
+                p = mid[i]
                 max_score = 0
-                if prefix[p[i]]-prefix[i] == prefix[j+1]-prefix[p[i]]:
-                    max_score = max(dp[i][p[i]-1], dp[j][p[i]])
+                if prefix[p]-prefix[i] == prefix[j+1]-prefix[p]:
+                    max_score = max(dp[i][p-1], dp[j][p])
                 else:
-                    if i <= p[i]-2:
-                        max_score = max(max_score, dp[i][p[i]-2])
-                    if p[i] <= j:
-                        max_score = max(max_score, dp[j][p[i]])
+                    if i <= p-2:
+                        max_score = max(max_score, dp[i][p-2])
+                    if p <= j:
+                        max_score = max(max_score, dp[j][p])
                 dp[i][j] = max(dp[i][j-1], (prefix[j+1]-prefix[i]) + max_score)
                 dp[j][i] = max(dp[j][i+1], (prefix[j+1]-prefix[i]) + max_score)
         return max_score
