@@ -11,7 +11,7 @@ public:
         vector<vector<int>> mid(n, vector<int>(n));
         for (int l = 1; l <= n; ++l) {
             for (int i = 0; i <= n - l; ++i) {
-                int j = i + l - 1;
+                const int j = i + l - 1;
                 int p = (l == 1) ? i + 1 : mid[i][j - 1];
                 while (prefix[p] - prefix[i] < prefix[j + 1] - prefix[p]) {
                     ++p;  // Time: O(n^2) in total
@@ -28,7 +28,7 @@ public:
         vector<vector<int>> dp(n, vector<int>(n));
         for (int l = 2; l <= n; ++l) {
             for (int i = 0; i <= n - l; ++i) {
-                int j = i + l - 1;
+                const int j = i + l - 1;
                 const auto& p = mid[i][j];
                 int max_score = 0;
                 if (prefix[p] - prefix[i] == prefix[j + 1] - prefix[p]) {
