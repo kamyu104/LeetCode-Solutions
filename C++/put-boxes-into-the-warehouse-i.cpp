@@ -1,13 +1,12 @@
-// Time:  O(nlogn)
+// Time:  O(nlogn + m)
 // Space: O(1)
 
 class Solution {
 public:
     int maxBoxesInWarehouse(vector<int>& boxes, vector<int>& warehouse) {
         sort(begin(boxes), end(boxes));
-        int min_h = warehouse[0];
-        for (auto& h : warehouse) {
-            h = min_h = min(min_h, h);
+        for (int i = 1; i < warehouse.size(); ++i) {
+            warehouse[i] = min(warehouse[i], warehouse[i - 1]);
         }
         int result = 0, curr = 0;
         for (int i = warehouse.size() - 1; i >= 0; --i) {
