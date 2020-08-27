@@ -286,7 +286,7 @@
 1535 | [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | [C++](./C++/find-the-winner-of-an-array-game.cpp) [Python](./Python/find-the-winner-of-an-array-game.py) | _O(n)_ | _O(1)_      | Medium         ||
 1538 | [Guess the Majority in a Hidden Array](https://leetcode.com/problems/guess-the-majority-in-a-hidden-array/) | [C++](./C++/guess-the-majority-in-a-hidden-array.cpp) [Python](./Python/guess-the-majority-in-a-hidden-array.py) | _O(n)_ | _O(1)_      | Medium         |🔒|
 1550 | [Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/) | [C++](./C++/three-consecutive-odds.cpp) [Python](./Python/three-consecutive-odds.py) | _O(n)_ | _O(1)_      | Easy         ||
-1559 | [Detect Cycles in 2D Grid](https://leetcode.com/problems/detect-cycles-in-2d-grid/) | [C++](./C++/detect-cycles-in-2d-grid.cpp) [Python](./Python/detect-cycles-in-2d-grid.py) | _O(m * n)_ | _O(m * n)_      | Hard         ||
+1559 | [Detect Cycles in 2D Grid](https://leetcode.com/problems/detect-cycles-in-2d-grid/) | [C++](./C++/detect-cycles-in-2d-grid.cpp) [Python](./Python/detect-cycles-in-2d-grid.py) | _O(m * n)_ | _O(m * n)_      | Hard         || Union Find, BFS
 1560 | [Most Visited Sector in a Circular Track](https://leetcode.com/problems/most-visited-sector-in-a-circular-track/) | [C++](./C++/most-visited-sector-in-a-circular-track.cpp) [Python](./Python/most-visited-sector-in-a-circular-track.py) | _O(n)_ | _O(1)_      | Easy         ||
 1562 | [Find Latest Group of Size M](https://leetcode.com/problems/find-latest-group-of-size-m/) | [C++](./C++/find-latest-group-of-size-m.cpp) [Python](./Python/find-latest-group-of-size-m.py) | _O(n)_ | _O(n)_      | Medium         ||
 
