@@ -29,7 +29,7 @@ public:
         for (int l = 2; l <= n; ++l) {
             for (int i = 0; i <= n - l; ++i) {
                 const int j = i + l - 1;
-                const auto& p = mid[i][j];
+                const int p = mid[i][j];
                 int max_score = 0;
                 if (prefix[p] - prefix[i] == prefix[j + 1] - prefix[p]) {
                     max_score = max(rmq[i][p - 1], rmq[j][p]);
