@@ -7,6 +7,50 @@ public:
         const int n = stoneValue.size();
         vector<int> prefix(n + 1);
         partial_sum(cbegin(stoneValue), cend(stoneValue), begin(prefix) + 1);
+        
+        vector<int> p(n);
+        iota(begin(p), end(p), 0);
+
+        vector<vector<int>> dp(n, vector<int>(n));
+        for (int i = 0; i < n; ++i) {
+            dp[i][i] = stoneValue[i];
+        }
+
+        int max_score = 0;
+        for (int l = 1; l < n; ++l) {
+            for (int i = 0; i < n - l; ++i) {
+                const int j = i + l;
+                while (prefix[p[i] + 1] - prefix[i] < prefix[j + 1] - prefix[p[i] + 1]) {
+                    ++p[i];
+                }
+                max_score = 0;
+                if (prefix[p[i] + 1] - prefix[i] == prefix[j + 1] - prefix[p[i] + 1]) {
+                    max_score = max(dp[i][p[i]], dp[j][p[i] + 1]);
+                } else {
+                    if (i <= p[i] - 1) {
+                        max_score = max(max_score, dp[i][p[i] - 1]);
+                    }
+                    if (p[i] + 1 <= j) {
+                        max_score = max(max_score, dp[j][p[i] + 1]);
+                    }
+                }
+                dp[i][j] = max(dp[i][j - 1], (prefix[j + 1] - prefix[i]) + max_score);
+                dp[j][i] = max(dp[j][i + 1], (prefix[j + 1] - prefix[i]) + max_score);
+            }
+        }
+        return max_score;
+    }
+};
+
+
+// Time:  O(n^2)
+// Space: O(n^2)
+class Solution2 {
+public:
+    int stoneGameV(vector<int>& stoneValue) {
+        const int n = stoneValue.size();
+        vector<int> prefix(n + 1);
+        partial_sum(cbegin(stoneValue), cend(stoneValue), begin(prefix) + 1);
 
         vector<vector<int>> mid(n, vector<int>(n));
         for (int l = 1; l <= n; ++l) {
