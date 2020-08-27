@@ -17,9 +17,9 @@ class Solution(object):
             dp[i][i] = stoneValue[i]
         p = range(n)
         max_score = 0
-        for l in xrange(1, n):
-            for i in xrange(n-l):
-                j = i+l
+        for l in xrange(2, n+1):
+            for i in xrange(n-l+1):
+                j = i+l-1
                 while prefix[p[i]+1]-prefix[i] < prefix[j+1]-prefix[p[i]+1]:
                     p[i] += 1
                 max_score = 0
