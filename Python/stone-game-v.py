@@ -23,7 +23,7 @@ class Solution(object):
             for i in xrange(n-l+1):
                 j = i+l-1
                 while prefix[mid[i]]-prefix[i] < prefix[j+1]-prefix[mid[i]]:
-                    mid[i] += 1  # Time: O(n^2) in 
+                    mid[i] += 1  # Time: O(n^2) in total
                 p = mid[i]
                 max_score = 0
                 if prefix[p]-prefix[i] == prefix[j+1]-prefix[p]:
