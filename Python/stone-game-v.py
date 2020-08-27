@@ -15,10 +15,11 @@ class Solution(object):
         mid = [[0]*n for _ in xrange(n)]
         for l in xrange(1, n+1):
             for i in xrange(n-l+1):
-                p = i+1 if l == 1 else mid[i][i+l-2]
-                while prefix[p]-prefix[i] < prefix[i+l]-prefix[p]:
+                j = i+l-1
+                p = i+1 if l == 1 else mid[i][j-1]
+                while prefix[p]-prefix[i] < prefix[j+1]-prefix[p]:
                     p += 1  # Time: O(n^2) in total
-                mid[i][i+l-1] = p
+                mid[i][j] = p
         
         rmq = [[0]*n for _ in xrange(n)]
         for i in xrange(n):
@@ -27,16 +28,17 @@ class Solution(object):
         dp = [[0]*n for _ in xrange(n)]
         for l in xrange(2, n+1):
             for i in xrange(n-l+1):
-                p = mid[i][i+l-1]
+                j = i+l-1
+                p = mid[i][j]
                 max_score = 0
-                if prefix[p]-prefix[i] == prefix[i+l]-prefix[p]:
-                    max_score = max(rmq[i][p-1], rmq[p][i+l-1])
+                if prefix[p]-prefix[i] == prefix[j+1]-prefix[p]:
+                    max_score = max(rmq[i][p-1], rmq[p][j])
                 else:
                     if i <= p-2:
                         max_score = max(max_score, rmq[i][p-2])
-                    if p <= i+l-1:
-                        max_score = max(max_score, rmq[i+l-1][p])
-                dp[i][i+l-1] = max_score
-                rmq[i][i+l-1] = max(rmq[i][i+l-2], (prefix[i+l]-prefix[i]) + max_score)
-                rmq[i+l-1][i] = max(rmq[i+l-1][i+1], (prefix[i+l]-prefix[i]) + max_score)
+                    if p <= j:
+                        max_score = max(max_score, rmq[j][p])
+                dp[i][j] = max_score
+                rmq[i][j] = max(rmq[i][j-1], (prefix[j+1]-prefix[i]) + max_score)
+                rmq[j][i] = max(rmq[j][i+1], (prefix[j+1]-prefix[i]) + max_score)
         return dp[0][n-1]
