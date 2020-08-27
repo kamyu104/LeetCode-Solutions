@@ -55,7 +55,7 @@ class Solution2(object):
         for l in xrange(1, n+1):
             for i in xrange(n-l+1):
                 j = i+l-1
-                p = i+1 if l == 1 else mid[i][j-1]
+                p = i if l == 1 else mid[i][j-1]
                 while prefix[p]-prefix[i] < prefix[j+1]-prefix[p]:
                     p += 1  # Time: O(n^2) in total
                 mid[i][j] = p
