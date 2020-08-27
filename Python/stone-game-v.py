@@ -11,6 +11,42 @@ class Solution(object):
         prefix = [0]
         for v in stoneValue:
             prefix.append(prefix[-1] + v)
+        
+        dp = [[0]*n for _ in xrange(n)]
+        for i in xrange(n):
+            dp[i][i] = stoneValue[i]
+        p = range(n)
+        max_score = 0
+        for l in xrange(1, n):
+            for i in xrange(n-l):
+                j = i+l
+                while prefix[p[i]+1]-prefix[i] < prefix[j+1]-prefix[p[i]+1]:
+                    p[i] += 1
+                max_score = 0
+                if prefix[p[i]+1]-prefix[i] == prefix[j+1]-prefix[p[i]+1]:
+                    max_score = max(dp[i][p[i]], dp[j][p[i]+1])
+                else:
+                    if i <= p[i]-1:
+                        max_score = max(max_score, dp[i][p[i]-1])
+                    if p[i]+1 <= j:
+                        max_score = max(max_score, dp[j][p[i]+1])
+                dp[i][j] = max(dp[i][j-1], (prefix[j+1]-prefix[i]) + max_score)
+                dp[j][i] = max(dp[j][i+1], (prefix[j+1]-prefix[i]) + max_score)
+        return max_score
+
+
+# Time:  O(n^2)
+# Space: O(n^2)
+class Solution2(object):
+    def stoneGameV(self, stoneValue):
+        """
+        :type stoneValue: List[int]
+        :rtype: int
+        """
+        n = len(stoneValue)
+        prefix = [0]
+        for v in stoneValue:
+            prefix.append(prefix[-1] + v)
 
         mid = [[0]*n for _ in xrange(n)]
         for l in xrange(1, n+1):
