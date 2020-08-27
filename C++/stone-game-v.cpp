@@ -21,7 +21,7 @@ public:
             for (int i = 0; i <= n - l; ++i) {
                 const int j = i + l - 1;
                 while (prefix[mid[i]] - prefix[i] < prefix[j + 1] - prefix[mid[i]]) {
-                    ++mid[i];
+                    ++mid[i];  // Time: O(n^2) in total
                 }
                 const int p = mid[i];
                 max_score = 0;
