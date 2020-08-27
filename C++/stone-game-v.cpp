@@ -8,8 +8,8 @@ public:
         vector<int> prefix(n + 1);
         partial_sum(cbegin(stoneValue), cend(stoneValue), begin(prefix) + 1);
         
-        vector<int> p(n);
-        iota(begin(p), end(p), 0);
+        vector<int> mid(n);
+        iota(begin(mid), end(mid), 0);
 
         vector<vector<int>> dp(n, vector<int>(n));
         for (int i = 0; i < n; ++i) {
@@ -17,21 +17,22 @@ public:
         }
 
         int max_score = 0;
-        for (int l = 1; l < n; ++l) {
-            for (int i = 0; i < n - l; ++i) {
-                const int j = i + l;
-                while (prefix[p[i] + 1] - prefix[i] < prefix[j + 1] - prefix[p[i] + 1]) {
-                    ++p[i];
+        for (int l = 2; l <= n; ++l) {
+            for (int i = 0; i <= n - l; ++i) {
+                const int j = i + l - 1;
+                while (prefix[mid[i]] - prefix[i] < prefix[j + 1] - prefix[mid[i]]) {
+                    ++mid[i];
                 }
+                const int p = mid[i];
                 max_score = 0;
-                if (prefix[p[i] + 1] - prefix[i] == prefix[j + 1] - prefix[p[i] + 1]) {
-                    max_score = max(dp[i][p[i]], dp[j][p[i] + 1]);
+                if (prefix[p] - prefix[i] == prefix[j + 1] - prefix[p]) {
+                    max_score = max(dp[i][p - 1], dp[j][p]);
                 } else {
-                    if (i <= p[i] - 1) {
-                        max_score = max(max_score, dp[i][p[i] - 1]);
+                    if (i <= p - 2) {
+                        max_score = max(max_score, dp[i][p - 2]);
                     }
-                    if (p[i] + 1 <= j) {
-                        max_score = max(max_score, dp[j][p[i] + 1]);
+                    if (p <= j) {
+                        max_score = max(max_score, dp[j][p]);
                     }
                 }
                 dp[i][j] = max(dp[i][j - 1], (prefix[j + 1] - prefix[i]) + max_score);
