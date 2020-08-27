@@ -32,7 +32,7 @@ class Solution(object):
                 p = mid[i][j]
                 max_score = 0
                 if prefix[p]-prefix[i] == prefix[j+1]-prefix[p]:
-                    max_score = max(rmq[i][p-1], rmq[p][j])
+                    max_score = max(rmq[i][p-1], rmq[j][p])
                 else:
                     if i <= p-2:
                         max_score = max(max_score, rmq[i][p-2])
