@@ -20,16 +20,16 @@ class Solution(object):
         for l in xrange(2, n+1):
             for i in xrange(n-l+1):
                 j = i+l-1
-                while prefix[p[i]+1]-prefix[i] < prefix[j+1]-prefix[p[i]+1]:
+                while prefix[p[i]]-prefix[i] < prefix[j+1]-prefix[p[i]]:
                     p[i] += 1
                 max_score = 0
-                if prefix[p[i]+1]-prefix[i] == prefix[j+1]-prefix[p[i]+1]:
-                    max_score = max(dp[i][p[i]], dp[j][p[i]+1])
+                if prefix[p[i]]-prefix[i] == prefix[j+1]-prefix[p[i]]:
+                    max_score = max(dp[i][p[i]-1], dp[j][p[i]])
                 else:
-                    if i <= p[i]-1:
-                        max_score = max(max_score, dp[i][p[i]-1])
-                    if p[i]+1 <= j:
-                        max_score = max(max_score, dp[j][p[i]+1])
+                    if i <= p[i]-2:
+                        max_score = max(max_score, dp[i][p[i]-2])
+                    if p[i] <= j:
+                        max_score = max(max_score, dp[j][p[i]])
                 dp[i][j] = max(dp[i][j-1], (prefix[j+1]-prefix[i]) + max_score)
                 dp[j][i] = max(dp[j][i+1], (prefix[j+1]-prefix[i]) + max_score)
         return max_score
