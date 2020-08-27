@@ -36,7 +36,7 @@ class Solution(object):
                         max_score = max(max_score, rmq[i][p-2])
                     if p <= i+l-1:
                         max_score = max(max_score, rmq[i+l-1][p])
-                dp[i][i+l-1] = max_score;
+                dp[i][i+l-1] = max_score
                 rmq[i][i+l-1] = max(rmq[i][i+l-2], (prefix[i+l]-prefix[i]) + max_score)
                 rmq[i+l-1][i] = max(rmq[i+l-1][i+1], (prefix[i+l]-prefix[i]) + max_score)
         return dp[0][n-1]
