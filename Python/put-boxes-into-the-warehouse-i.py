@@ -9,9 +9,8 @@ class Solution(object):
         :rtype: int
         """
         boxes.sort()
-        min_h = warehouse[0]
-        for i in xrange(len(warehouse)):
-            warehouse[i] = min_h = min(min_h, warehouse[i])
+        for i in xrange(1, len(warehouse)):
+            warehouse[i] = min(warehouse[i], warehouse[i-1])
         result, curr = 0, 0
         for h in reversed(warehouse):
             if boxes[curr] > h:
