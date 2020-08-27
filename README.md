@@ -430,7 +430,7 @@
 1544| [Make The String Great](https://leetcode.com/problems/make-the-string-great/) | [C++](./C++/make-the-string-great.cpp) [Python](./Python/make-the-string-great.py) | _O(n)_ | _O(1)_ | Easy |||
 1545| [Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/) | [C++](./C++/find-kth-bit-in-nth-binary-string.cpp) [Python](./Python/find-kth-bit-in-nth-binary-string.py) | _O(n)_ | _O(1)_ | Medium |||
 1554| [Strings Differ by One Character](https://leetcode.com/problems/strings-differ-by-one-character/) | [C++](./C++/strings-differ-by-one-character.cpp) [Python](./Python/strings-differ-by-one-character.py) | _O(n * m)_ | _O(n)_ | Medium || `Rabin-Karp Algorithm` |
-1556| [Thousand Separator](https://leetcode.com/problems/thousand-separator/) | [C++](./C++/find-kth-bit-in-nth-binary-string.cpp) [Python](./Python/thousand-separator.py) | _O(n)_ | _O(1)_ | Easy |||
+1556| [Thousand Separator](https://leetcode.com/problems/thousand-separator/) | [C++](./C++/thousand-separator.cpp) [Python](./Python/thousand-separator.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
