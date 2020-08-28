@@ -18,6 +18,7 @@ class Solution(object):
         for i in xrange(n):
             dp[i][i] = stoneValue[i]
 
+        max_score = 0
         for l in xrange(2, n+1):
             for i in xrange(n-l+1):
                 j = i+l-1
@@ -34,7 +35,7 @@ class Solution(object):
                         max_score = max(max_score, dp[j][p])
                 dp[i][j] = max(dp[i][j-1], (prefix[j+1]-prefix[i]) + max_score)
                 dp[j][i] = max(dp[j][i+1], (prefix[j+1]-prefix[i]) + max_score)
-        return dp[0][n-1]-(prefix[n]-prefix[0])
+        return max_score
 
 
 # Time:  O(n^2)
