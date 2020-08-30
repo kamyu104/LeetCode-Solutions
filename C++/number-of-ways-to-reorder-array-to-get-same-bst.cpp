@@ -22,7 +22,7 @@ public:
 
 private:
     int iter_dfs(const vector<int>& nums) {
-        using RET = int64_t;
+        using RET = int;
         RET result = 0;
         vector<tuple<int, shared_ptr<vector<int>>, shared_ptr<RET>, shared_ptr<RET>, RET *>> stk;
         stk.emplace_back(1, make_shared<vector<int>>(cbegin(nums), cend(nums)), nullptr, nullptr, &result);
@@ -47,8 +47,8 @@ private:
                 stk.emplace_back(1, right, nullptr, nullptr, ret2.get());
                 stk.emplace_back(1, left, nullptr, nullptr, ret1.get());
             } else if (step == 2) {
-                *ret = (*ret) * (*ret1) % MOD;
-                *ret = (*ret) * (*ret2) % MOD;
+                *ret = int64_t(*ret) * (*ret1) % MOD;
+                *ret = int64_t(*ret) * (*ret2) % MOD;
             }
         }
         return result;
