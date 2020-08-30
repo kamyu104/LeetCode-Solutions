@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1564%20%2F%201564-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1569%20%2F%201569-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
@@ -289,6 +289,7 @@
 1559 | [Detect Cycles in 2D Grid](https://leetcode.com/problems/detect-cycles-in-2d-grid/) | [C++](./C++/detect-cycles-in-2d-grid.cpp) [Python](./Python/detect-cycles-in-2d-grid.py) | _O(m * n)_ | _O(m * n)_      | Hard         || Union Find, BFS
 1560 | [Most Visited Sector in a Circular Track](https://leetcode.com/problems/most-visited-sector-in-a-circular-track/) | [C++](./C++/most-visited-sector-in-a-circular-track.cpp) [Python](./Python/most-visited-sector-in-a-circular-track.py) | _O(n)_ | _O(1)_      | Easy         ||
 1562 | [Find Latest Group of Size M](https://leetcode.com/problems/find-latest-group-of-size-m/) | [C++](./C++/find-latest-group-of-size-m.cpp) [Python](./Python/find-latest-group-of-size-m.py) | _O(n)_ | _O(n)_      | Medium         ||
+1566 | [ Detect Pattern of Length M Repeated K or More Times](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/) | [C++](./C++/detect-pattern-of-length-m-repeated-k-or-more-times.cpp) [Python](./Python/detect-pattern-of-length-m-repeated-k-or-more-times.py) | _O(n)_ | _O(1)_      | Easy         ||
 
 <br/>
 <div align="right">
@@ -1482,6 +1483,7 @@
 1548| [The Most Similar Path in a Graph](https://leetcode.com/problems/the-most-similar-path-in-a-graph/)| [C++](./C++/the-most-similar-path-in-a-graph.cpp) [Python](./Python/the-most-similar-path-in-a-graph.py) | _O(n^ * m)_    | _O(n * m)_          | Hard           | 🔒 |
 1553| [Minimum Number of Days to Eat N Oranges](https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/)| [C++](./C++/minimum-number-of-days-to-eat-n-oranges.cpp) [Python](./Python/minimum-number-of-days-to-eat-n-oranges.py) | _O((logn)^2)_    | _O((logn)^2)_          | Hard           ||
 1563| [Stone Game V](https://leetcode.com/problems/stone-game-v/)| [C++](./C++/stone-game-v.cpp) [Python](./Python/stone-game-v.py) | _O(n^2)_    | _O(n^2)_          | Hard           ||
+1569| [Number of Ways to Reorder Array to Get Same BST](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/)| [C++](./C++/detect-pattern-of-length-m-repeated-k-or-more-times.cpp) [Python](./Python/detect-pattern-of-length-m-repeated-k-or-more-times.py) | _O(n^2)_    | _O(n^2)_          | Hard           || DFS
 
 <br/>
 <div align="right">
@@ -1571,6 +1573,8 @@
 1536| [Minimum Swaps to Arrange a Binary Grid](https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/)  | [C++](./C++/minimum-swaps-to-arrange-a-binary-grid.cpp) [Python](./Python/minimum-swaps-to-arrange-a-binary-grid.py) | _O(n^2)_        | _O(1)_          | Medium           | | |
 1546| [Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/)| [C++](./C++/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target.cpp) [Python](./Python/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target.py) | _O(n)_    | _O(n)_          | Medium           ||
 1564| [Put Boxes Into the Warehouse I](https://leetcode.com/problems/put-boxes-into-the-warehouse-i/)| [C++](./C++/put-boxes-into-the-warehouse-i.cpp) [Python](./Python/put-boxes-into-the-warehouse-i.py) | _O(nlogn + m)_    | _O(1)_          | Medium           | 🔒 |
+1567| [Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/)| [C++](./C++/maximum-length-of-subarray-with-positive-product.cpp) [Python](./Python/maximum-length-of-subarray-with-positive-product.py) | _O(n)_    | _O(1)_          | Medium           ||
+1568| [Minimum Number of Days to Disconnect Island](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/)| [C++](./C++/minimum-number-of-days-to-disconnect-island.cpp) [Python](./Python/minimum-number-of-days-to-disconnect-island.py) | _O(m^2 * n^2)_    | _O(m * n)_          | Medium           || DFS
 
 <br/>
 <div align="right">
@@ -1797,6 +1801,7 @@
 1543| [Fix Product Name Format](https://leetcode.com/problems/fix-product-name-format/) | [MySQL](./MySQL/fix-product-name-format.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 1549| [The Most Recent Orders for Each Product](https://leetcode.com/problems/the-most-recent-orders-for-each-product/) | [MySQL](./MySQL/the-most-recent-orders-for-each-product.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 1555| [Bank Account Summary](https://leetcode.com/problems/bank-account-summary/) | [MySQL](./MySQL/bank-account-summary.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒||
+1565| [Unique Orders and Customers Per Month](https://leetcode.com/problems/unique-orders-and-customers-per-month/) | [MySQL](./MySQL/unique-orders-and-customers-per-month.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
