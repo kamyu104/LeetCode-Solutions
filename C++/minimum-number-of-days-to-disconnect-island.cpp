@@ -46,9 +46,8 @@ private:
         (*lookup)[i][j] = 1;
         while (!stk.empty()) {
             auto [i, j] = stk.back(); stk.pop_back();
-            for (const auto [di, dj] : directions) {
-                const auto [ni, nj] = pair(i + di, j + dj);
-                
+            for (const auto& [di, dj] : directions) {
+                const auto& [ni, nj] = pair(i + di, j + dj);
                 if (!(0 <= ni && ni < grid.size() &&
                       0 <= nj && nj < grid[0].size() &&
                       grid[ni][nj] &&
