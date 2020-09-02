@@ -5,8 +5,8 @@ class Solution {
 public:
     int totalFruit(vector<int>& tree) {
         unordered_map<int, int> count;
-        int result = 0, i = 0;
-        for (int j = 0; j < tree.size(); ++j) {
+        int result = 0;
+        for (int i = 0, j = 0; j < tree.size(); ++j) {
             ++count[tree[j]];
             while (count.size() > 2) {
                 --count[tree[i]];
