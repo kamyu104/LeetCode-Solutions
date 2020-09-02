@@ -18,7 +18,7 @@ public:
                 bst.erase(bst.find(num));
             }
             // Every search costs time: O(logk).
-            const auto it = bst.lower_bound(nums[i] - t);
+            const auto it = bst.lower_bound(static_cast<int64_t>(nums[i]) - t);
             if (it == bst.cend() || (*it - nums[i]) > t) {
                 // Not found.
                 window.emplace(nums[i]);
