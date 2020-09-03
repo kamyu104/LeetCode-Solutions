@@ -9,7 +9,6 @@ class SparseVector:
         """
         self.lookup = {i:v for i, v in enumerate(nums) if v}
 
-    # Return the dotProduct of two sparse vectors
     def dotProduct(self, vec):
         """
         :type vec: 'SparseVector'
