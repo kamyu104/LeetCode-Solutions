@@ -12,8 +12,9 @@ class Solution(object):
         :rtype: str
         """
         count, remain = collections.Counter(t), len(t)
-        i = left = right = 0 
-        for j, c in enumerate(s, 1):
+        i = 0
+        left = right = -1
+        for j, c in enumerate(s):
             remain -= count[c] > 0
             count[c] -= 1
             if remain:
@@ -21,9 +22,9 @@ class Solution(object):
             while i < j and count[s[i]] < 0:
                 count[s[i]] += 1
                 i += 1
-            if not right or j-i < right-left:
+            if right == -1 or j-i+1 < right-left+1:
                 left, right = i, j
-        return s[left:right]
+        return s[left:right+1]
 
 
 # Time:  O(n)
