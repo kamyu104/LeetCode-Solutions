@@ -35,10 +35,6 @@ class Solution2(object):
                 result[i+j] += int(num1[i])*int(num2[j])
                 result[i+j+1] += result[i+j]//10
                 result[i+j] %= 10
-
-        for i in reversed(xrange(len(result))):
-            if result[i]:
-                break
         for i in reversed(xrange(len(result))):
             if result[i]:
                 break
