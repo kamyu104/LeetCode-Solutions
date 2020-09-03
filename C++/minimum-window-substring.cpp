@@ -17,7 +17,7 @@ public:
             if (total) {
                 continue;
             }
-            while (i < j && count[s[i]] < 0) {
+            while (count[s[i]] < 0) {
                 ++count[s[i++]];
             }
             if (right == -1 || j - i + 1 < right - left + 1) {
