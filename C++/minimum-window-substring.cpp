@@ -8,12 +8,12 @@ public:
         for (const auto& c : t) {
             ++count[c];
         }
-        int total = t.length();
+        int remain = t.length();
         int left = -1, right = -1;
         for (int i = 0, j = 0; j < s.length(); ++j) {
-            total -= count[s[j]] > 0;
+            remain -= count[s[j]] > 0;
             --count[s[j]];
-            if (total) {
+            if (remain) {
                 continue;
             }
             while (count[s[i]] < 0) {
