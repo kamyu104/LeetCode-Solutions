@@ -1,7 +1,37 @@
 // Time:  O(n)
 // Space: O(k)
 
+
 class Solution {
+public:
+    string minWindow(string s, string t) {
+        unordered_map<int, int> count;
+        for (const auto& c : t) {
+            ++count[c];
+        }
+        int total = t.length();
+        int left = -1, right = -1;
+        for (int i = 0, j = 0; j < s.length(); ++j) {
+            total -= count[s[j]] > 0;
+            --count[s[j]];
+            if (total) {
+                continue;
+            }
+            while (i < j && count[s[i]] < 0) {
+                ++count[s[i++]];
+            }
+            if (right == -1 || j - i + 1 < right - left + 1) {
+                left = i;
+                right = j;
+            }
+        }
+        return left >= 0 ? s.substr(left, right - left + 1) : "";
+    }
+};
+
+// Time:  O(n)
+// Space: O(k)
+class Solution2 {
 public:
     string minWindow(string s, string t) {
         if (s.empty() || s.length() < t.length()) {
