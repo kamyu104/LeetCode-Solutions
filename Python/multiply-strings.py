@@ -16,8 +16,8 @@ class Solution(object):
                 result[i+j+1] %= 10
         for i in xrange(len(result)):
             if result[i]:
-                return "".join(map(lambda x: str(x), result[i:]))
-        return "0"
+                break
+        return "".join(map(lambda x: str(x), result[i:]))
 
 # Time:  O(m * n)
 # Space: O(m + n)
