@@ -39,7 +39,6 @@ class Solution2(object):
         for i in reversed(xrange(len(result))):
             if result[i]:
                 break
-        print result
         for i in reversed(xrange(len(result))):
             if result[i]:
                 break
