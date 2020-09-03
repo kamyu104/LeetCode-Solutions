@@ -11,8 +11,7 @@ public:
         int remain = t.length();
         int left = -1, right = -1;
         for (int i = 0, j = 0; j < s.length(); ++j) {
-            remain -= count[s[j]] > 0;
-            --count[s[j]];
+            remain -= count[s[j]]-- > 0;
             if (remain) {
                 continue;
             }
