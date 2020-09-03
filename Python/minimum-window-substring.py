@@ -18,7 +18,7 @@ class Solution(object):
             count[c] -= 1
             if remain:
                 continue
-            while count[s[i]] < 0:
+            while count[s[i]] < 0:  # greedily discard uneeds
                 count[s[i]] += 1
                 i += 1
             if right == -1 or j-i+1 < right-left+1:
