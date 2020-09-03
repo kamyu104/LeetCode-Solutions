@@ -20,7 +20,7 @@ public:
         int result = 0;
         for (const auto& [i, v] : a->lookup_) {
             if (b->lookup_.count(i)) {
-                result += a->lookup_[i] * b->lookup_[i];
+                result += v * b->lookup_[i];
             }
         }
         return result;
