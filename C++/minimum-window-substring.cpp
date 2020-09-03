@@ -1,7 +1,6 @@
 // Time:  O(n)
 // Space: O(k)
 
-
 class Solution {
 public:
     string minWindow(string s, string t) {
