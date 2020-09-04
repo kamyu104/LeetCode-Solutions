@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1570%20%2F%201570-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1571%20%2F%201571-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
@@ -1803,6 +1803,7 @@
 1549| [The Most Recent Orders for Each Product](https://leetcode.com/problems/the-most-recent-orders-for-each-product/) | [MySQL](./MySQL/the-most-recent-orders-for-each-product.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 1555| [Bank Account Summary](https://leetcode.com/problems/bank-account-summary/) | [MySQL](./MySQL/bank-account-summary.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒||
 1565| [Unique Orders and Customers Per Month](https://leetcode.com/problems/unique-orders-and-customers-per-month/) | [MySQL](./MySQL/unique-orders-and-customers-per-month.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+1571| [Warehouse Manager](https://leetcode.com/problems/warehouse-manager/) | [MySQL](./MySQL/warehouse-manager.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
