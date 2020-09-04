@@ -23,13 +23,8 @@ class Solution(object):
         """
         read_bytes = 0
         buffer = [''] * 4
-        for i in xrange(n / 4 + 1):
-            size = read4(buffer)
-            if size:
-                size = min(size, n-read_bytes)
-                buf[read_bytes:read_bytes+size] = buffer[:size]
-                read_bytes += size
-            else:
-                break
+        for i in xrange((n+4-1)//4):
+            size = min(read4(buffer), n-read_bytes)
+            buf[read_bytes:read_bytes+size] = buffer[:size]
+            read_bytes += size
         return read_bytes
-
