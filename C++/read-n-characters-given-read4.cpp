@@ -13,14 +13,10 @@ public:
     int read(char *buf, int n) {
         int read_bytes = 0;
         char buffer[4];
-        for (int i = 0; i <= n / 4; ++i) {
-            if (int size = read4(buffer)) {
-                size = min(size, n - read_bytes);
-                for (int j = 0; j < size; ++j) {
-                    buf[read_bytes++] = buffer[j];
-                }
-            } else {
-                break;
+        for (int i = 0; i < (n + 4 - 1) / 4; ++i) {
+            int size = min(read4(buffer), n - read_bytes);
+            for (int j = 0; j < size; ++j) {
+                buf[read_bytes++] = buffer[j];
             }
         }
         return read_bytes;
