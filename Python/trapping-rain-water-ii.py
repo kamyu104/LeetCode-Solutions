@@ -24,7 +24,7 @@ class Solution(object):
             is_visited[i][0] = True
             heappush(heap, [heightMap[i][n-1], i, n-1])
             is_visited[i][n-1] = True
-        for j in xrange(n):
+        for j in xrange(1, n-1):
             heappush(heap, [heightMap[0][j], 0, j])
             is_visited[0][j] = True
             heappush(heap, [heightMap[m-1][j], m-1, j])
