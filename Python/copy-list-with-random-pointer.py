@@ -1,9 +1,9 @@
 # Time:  O(n)
 # Space: O(1)
 
-class RandomListNode(object):
+class Node(object):
     def __init__(self, x):
-        self.label = x
+        self.val = x
         self.next = None
         self.random = None
 
@@ -14,7 +14,7 @@ class Solution(object):
         # copy and combine copied list with original list
         current = head
         while current:
-            copied = RandomListNode(current.label)
+            copied = Node(current.val)
             copied.next = current.next
             current.next = copied
             current = copied.next
@@ -27,7 +27,7 @@ class Solution(object):
             current = current.next.next
 
         # split copied list from combined one
-        dummy = RandomListNode(0)
+        dummy = Node(0)
         copied_current, current = dummy, head
         while current:
             copied_current.next = current.next
@@ -41,11 +41,11 @@ class Solution2(object):
     # @param head, a RandomListNode
     # @return a RandomListNode
     def copyRandomList(self, head):
-        dummy = RandomListNode(0)
+        dummy = Node(0)
         current, prev, copies = head, dummy, {}
 
         while current:
-            copied = RandomListNode(current.label)
+            copied = Node(current.val)
             copies[current] = copied
             prev.next = copied
             prev, current = prev.next, current.next
@@ -69,12 +69,12 @@ class Solution3(object):
         :type head: RandomListNode
         :rtype: RandomListNode
         """
-        clone = defaultdict(lambda: RandomListNode(0))
+        clone = defaultdict(lambda: Node(0))
         clone[None] = None
         cur = head
 
         while cur:
-            clone[cur].label = cur.label
+            clone[cur].val = cur.val
             clone[cur].next = clone[cur.next]
             clone[cur].random = clone[cur.random]
             cur = cur.next
