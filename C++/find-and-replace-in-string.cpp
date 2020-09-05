@@ -6,8 +6,8 @@ public:
     string findReplaceString(string S, vector<int>& indexes, vector<string>& sources, vector<string>& targets) {
         vector<pair<int, string>> bucket(S.size());
         for (int i = 0; i < indexes.size(); ++i)  {
-            if (S.find(sources[i], indexes[i]) == indexes[i]) {
-                bucket[indexes[i]] = {sources[i].size(), targets[i]};
+            if (S.compare(indexes[i], sources[i].length(), sources[i]) == 0) {
+                bucket[indexes[i]] = {sources[i].length(), targets[i]};
             }
         }
         string result;
