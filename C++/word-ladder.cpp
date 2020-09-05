@@ -40,8 +40,8 @@ public:
     }
 };
 
-// Time:  O(26 * d * l)
-// Time:  O(d * l)
+// Time:  O(26 * d * l) = O(d * l), d is the size of wordlist, l is the max length of words
+// Space: O(d * l)
 class Solution2 {
 public:
     int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
@@ -50,10 +50,8 @@ public:
             return 0;
         }
         int ladder = 2;
-        for (unordered_set<string> q = {beginWord};
-             !q.empty();
-             ++ladder) {
-            unordered_set<string> new_q;
+        for (vector<string> q = {beginWord}; !q.empty(); ++ladder) {
+            vector<string> new_q;
             for (const auto& word : q) {
                 auto new_word = word;
                 for (int i = 0; i < new_word.length(); ++i) {
@@ -65,7 +63,7 @@ public:
                         }
                         if (lookup.count(new_word)) {
                             lookup.erase(new_word);
-                            new_q.emplace(new_word);
+                            new_q.emplace_back(new_word);
                         }
                     }
                     new_word[i] = prev;
