@@ -25,7 +25,7 @@ public:
             heap_.emplace(Cell{i, n_ - 1, heightMap[i][n_ - 1]});
             is_visited_[i][n_ - 1] = true;
         }
-        for (int j = 0; j < n_; ++j) {
+        for (int j = 1; j < n_ - 1; ++j) {
             heap_.emplace(Cell{0, j, heightMap[0][j]});
             is_visited_[0][j] = true;
             heap_.emplace(Cell{m_ - 1, j, heightMap[m_ - 1][j]});
