@@ -4,7 +4,7 @@
 class Solution {
 public:
     string findReplaceString(string S, vector<int>& indexes, vector<string>& sources, vector<string>& targets) {
-        vector<pair<int, string>> bucket(S.size());
+        vector<pair<int, string>> bucket(S.length());
         for (int i = 0; i < indexes.size(); ++i)  {
             if (S.compare(indexes[i], sources[i].length(), sources[i]) == 0) {
                 bucket[indexes[i]] = {sources[i].length(), targets[i]};
