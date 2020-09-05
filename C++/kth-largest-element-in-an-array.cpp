@@ -12,13 +12,14 @@ public:
             int pivot_idx = dis(gen);
             int new_pivot_idx = PartitionAroundPivot(left, right, pivot_idx, &nums);
             if (new_pivot_idx == k - 1) {
-                return nums[new_pivot_idx];
+                break;
             } else if (new_pivot_idx > k - 1) {
                 right = new_pivot_idx - 1;
             } else {  // new_pivot_idx < k - 1.
                 left = new_pivot_idx + 1;
             }
         }
+        return nums[k - 1];
     }
     
     int PartitionAroundPivot(int left, int right, int pivot_idx, vector<int>* nums) {
