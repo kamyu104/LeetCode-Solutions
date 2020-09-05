@@ -35,12 +35,11 @@ class Solution(object):
             return None
         left, right = 0, len(lists) - 1
         while right > 0:
+            lists[left] = mergeTwoLists(lists[left], lists[right])
+            left += 1
+            right -= 1
             if left >= right:
                 left = 0
-            else:
-                lists[left] = mergeTwoLists(lists[left], lists[right])
-                left += 1
-                right -= 1
         return lists[0]
 
 
