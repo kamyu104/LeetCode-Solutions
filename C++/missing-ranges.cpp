@@ -5,9 +5,9 @@ class Solution {
 public:
     vector<string> findMissingRanges(vector<int>& nums, int lower, int upper) {
         vector<string> ranges;
-        for (int i = 0, pre = lower - 1, cur = 0; i <= nums.size(); ++i, pre = cur) {
+        for (int64_t i = 0, pre = static_cast<int64_t>(lower) - 1, cur = 0; i <= nums.size(); ++i, pre = cur) {
             if (i == nums.size()) {
-                cur = upper + 1;
+                cur = static_cast<int64_t>(upper) + 1;
             } else {
                 cur = nums[i];
             }
@@ -18,6 +18,7 @@ public:
         return ranges;
     }
 
+private:
     string getRange(const int lower, const int upper) {
         if (lower == upper) {
             return to_string(lower);
