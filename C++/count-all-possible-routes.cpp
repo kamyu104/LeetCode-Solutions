@@ -18,7 +18,7 @@ public:
                     if (k + amount > fuel) {
                         continue;
                     }
-                    dp[i][k] = (dp[i][k] + dp[j][k + amount]) % MOD;
+                    dp[i][k] = (static_cast<int64_t>(dp[i][k]) + dp[j][k + amount]) % MOD;
                 }
             }
         }
