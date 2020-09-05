@@ -1,4 +1,4 @@
-// Time:  O(n) ~ O(n^2)
+// Time:  O(n) on average, using Median of Medians could achieve O(n) (Intro Select)
 // Space: O(1)
 
 class Solution {
