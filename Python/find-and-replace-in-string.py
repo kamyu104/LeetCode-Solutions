@@ -10,21 +10,20 @@ class Solution(object):
         :type targets: List[str]
         :rtype: str
         """
-        S = list(S)
         bucket = [None] * len(S)
         for i in xrange(len(indexes)):
-            if all(indexes[i]+k < len(S) and
-                   S[indexes[i]+k] == sources[i][k]
+            if all(indexes[i]+k < len(S) and S[indexes[i]+k] == sources[i][k]
                    for k in xrange(len(sources[i]))):
                 bucket[indexes[i]] = (len(sources[i]), list(targets[i]))
         result = []
-        last = 0
-        for i in xrange(len(S)):
+        i = 0
+        while i < len(S):
             if bucket[i]:
                 result.extend(bucket[i][1])
-                last = i + bucket[i][0]
-            elif i >= last:
+                i += bucket[i][0]
+            else:
                 result.append(S[i])
+                i += 1
         return "".join(result)
 
 
