@@ -11,13 +11,12 @@ public:
             }
         }
         string result;
-        int last = 0;
-        for (int i = 0; i < S.length(); ++i) {
+        for (int i = 0; i < S.length();) {
             if (bucket[i].first) {
                 result += bucket[i].second;
-                last = i + bucket[i].first;
-            } else if (i >= last) {
-                result.push_back(S[i]);
+                i += bucket[i].first;
+            } else {
+                result.push_back(S[i++]);
             }
         }
         return result;
