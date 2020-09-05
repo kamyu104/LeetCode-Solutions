@@ -4,13 +4,8 @@
 class Solution {
 public:
     bool backspaceCompare(string S, string T) {
-        int skipS = 0, skipT = 0;
-        for (int i = S.length() - 1, j = T.length() - 1;
-             i >= 0 || j >= 0;
-             --i, --j) {
-            auto x = findNextChar(S, &i, &skipS);
-            auto y = findNextChar(T, &j, &skipT);
-            if (x != y) {
+        for (int i = S.length() - 1, j = T.length() - 1; i >= 0 || j >= 0; --i, --j) {
+            if (findNextChar(S, &i) != findNextChar(T, &j)) {
                 return false;
             }
         }
@@ -18,12 +13,13 @@ public:
     }
 
 private:
-    char findNextChar(const string& s, int *i, int *skip) {
+    char findNextChar(const string& s, int *i) {
+        int skip = 0;
         for (; *i >= 0; --(*i)) {
             if (s[*i] == '#') {
-                ++(*skip);
-            } else if ((*skip) > 0) {
-                --(*skip);
+                ++skip;
+            } else if (skip > 0) {
+                --skip;
             } else {
                 return s[*i];
             }
