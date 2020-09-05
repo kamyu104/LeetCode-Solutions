@@ -20,12 +20,11 @@ public:
 
         int left = 0, right = lists.size() - 1;
         while (right > 0) {
+            lists[left] = mergeTwoLists(lists[left], lists[right]);
+            ++left;
+            --right;
             if (left >= right) {
                 left = 0;
-            } else {
-                lists[left] = mergeTwoLists(lists[left], lists[right]);
-                ++left;
-                --right;
             }
         }
         return lists[0];
