@@ -2,6 +2,27 @@
 # Space: O(1)
 
 class Solution(object):
+    def trap(self, height):
+        """
+        :type height: List[int]
+        :rtype: int
+        """
+        result, left, right, level = 0, 0, len(height)-1, 0
+        while left < right:
+            if height[left] < height[right]:
+                lower = height[left]
+                left += 1
+            else:
+                lower = height[right]
+                right -= 1
+            level = max(level, lower)
+            result += level-lower
+        return result
+
+
+# Time:  O(n)
+# Space: O(1)
+class Solution2(object):
     # @param A, a list of integers
     # @return an integer
     def trap(self, A):
@@ -27,7 +48,7 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(n)
-class Solution2(object):
+class Solution3(object):
     # @param A, a list of integers
     # @return an integer
     def trap(self, A):
