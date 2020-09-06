@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1571%20%2F%201571-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1579%20%2F%201579-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
@@ -289,7 +289,9 @@
 1559 | [Detect Cycles in 2D Grid](https://leetcode.com/problems/detect-cycles-in-2d-grid/) | [C++](./C++/detect-cycles-in-2d-grid.cpp) [Python](./Python/detect-cycles-in-2d-grid.py) | _O(m * n)_ | _O(m * n)_      | Hard         || Union Find, BFS
 1560 | [Most Visited Sector in a Circular Track](https://leetcode.com/problems/most-visited-sector-in-a-circular-track/) | [C++](./C++/most-visited-sector-in-a-circular-track.cpp) [Python](./Python/most-visited-sector-in-a-circular-track.py) | _O(n)_ | _O(1)_      | Easy         ||
 1562 | [Find Latest Group of Size M](https://leetcode.com/problems/find-latest-group-of-size-m/) | [C++](./C++/find-latest-group-of-size-m.cpp) [Python](./Python/find-latest-group-of-size-m.py) | _O(n)_ | _O(n)_      | Medium         ||
-1566 | [ Detect Pattern of Length M Repeated K or More Times](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/) | [C++](./C++/detect-pattern-of-length-m-repeated-k-or-more-times.cpp) [Python](./Python/detect-pattern-of-length-m-repeated-k-or-more-times.py) | _O(n)_ | _O(1)_      | Easy         ||
+1566 | [Detect Pattern of Length M Repeated K or More Times](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/) | [C++](./C++/detect-pattern-of-length-m-repeated-k-or-more-times.cpp) [Python](./Python/detect-pattern-of-length-m-repeated-k-or-more-times.py) | _O(n)_ | _O(1)_      | Easy         ||
+1572 | [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/) | [C++](./C++/matrix-diagonal-sum.cpp) [Python](./Python/matrix-diagonal-sum.py) | _O(n)_ | _O(1)_      | Easy         ||
+1574 | [Shortest Subarray to be Removed to Make Array Sorted](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/) | [C++](./C++/shortest-subarray-to-be-removed-to-make-array-sorted.cpp) [Python](./Python/shortest-subarray-to-be-removed-to-make-array-sorted.py) | _O(n)_ | _O(1)_      | Medium         ||
 
 <br/>
 <div align="right">
@@ -432,6 +434,8 @@
 1545| [Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/) | [C++](./C++/find-kth-bit-in-nth-binary-string.cpp) [Python](./Python/find-kth-bit-in-nth-binary-string.py) | _O(n)_ | _O(1)_ | Medium |||
 1554| [Strings Differ by One Character](https://leetcode.com/problems/strings-differ-by-one-character/) | [C++](./C++/strings-differ-by-one-character.cpp) [Python](./Python/strings-differ-by-one-character.py) | _O(n * m)_ | _O(n)_ | Medium || `Rabin-Karp Algorithm` |
 1556| [Thousand Separator](https://leetcode.com/problems/thousand-separator/) | [C++](./C++/thousand-separator.cpp) [Python](./Python/thousand-separator.py) | _O(n)_ | _O(1)_ | Easy |||
+1573| [Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string/) | [C++](./C++/number-of-ways-to-split-a-string.cpp) [Python](./Python/number-of-ways-to-split-a-string.py) | _O(n)_ | _O(1)_ | Medium |||
+1576| [Replace All ?'s to Avoid Consecutive Repeating Characters](https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/) | [C++](./C++/replace-all-s-to-avoid-consecutive-repeating-characters.cpp) [Python](./Python/replace-all-s-to-avoid-consecutive-repeating-characters.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -746,6 +750,7 @@
 1418| [Display Table of Food Orders in a Restaurant](https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant/) | [C++](./C++/display-table-of-food-orders-in-a-restaurant.cpp) [Python](./Python/display-table-of-food-orders-in-a-restaurant.py)  | _O(n + tlogt + flogf)_ |  _O(n)_ | Medium         |||
 1452| [People Whose List of Favorite Companies Is Not a Subset of Another List](https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list/) | [C++](./C++/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list.cpp) [Python](./Python/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list.py) | _O(n * m * l + n^2 * m)_   | _O(n * m * l)_        | Medium         ||
 1487| [Making File Names Unique](https://leetcode.com/problems/making-file-names-unique/) | [C++](./C++/making-file-names-unique.cpp) [Python](./Python/making-file-names-unique.py) | _O(n)_   | _O(n)_        | Medium         ||
+1577| [Number of Ways Where Square of Number Is Equal to Product of Two Numbers](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) | [C++](./C++/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers.cpp) [Python](./Python/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers.py) | _O(m * n)_   | _O(m + n)_        | Medium         ||
 
 <br/>
 <div align="right">
@@ -1484,6 +1489,7 @@
 1553| [Minimum Number of Days to Eat N Oranges](https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/)| [C++](./C++/minimum-number-of-days-to-eat-n-oranges.cpp) [Python](./Python/minimum-number-of-days-to-eat-n-oranges.py) | _O((logn)^2)_    | _O((logn)^2)_          | Hard           ||
 1563| [Stone Game V](https://leetcode.com/problems/stone-game-v/)| [C++](./C++/stone-game-v.cpp) [Python](./Python/stone-game-v.py) | _O(n^2)_    | _O(n^2)_          | Hard           ||
 1569| [Number of Ways to Reorder Array to Get Same BST](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/)| [C++](./C++/detect-pattern-of-length-m-repeated-k-or-more-times.cpp) [Python](./Python/detect-pattern-of-length-m-repeated-k-or-more-times.py) | _O(n^2)_    | _O(n^2)_          | Hard           || DFS
+1575| [Count All Possible Routes](https://leetcode.com/problems/count-all-possible-routes/)| [C++](./C++/count-all-possible-routes.cpp) [Python](./Python/count-all-possible-routes.py) | _O(nlogn + n * f)_    | _O(n * f)_          | Hard           || Math
 
 <br/>
 <div align="right">
@@ -1575,6 +1581,7 @@
 1564| [Put Boxes Into the Warehouse I](https://leetcode.com/problems/put-boxes-into-the-warehouse-i/)| [C++](./C++/put-boxes-into-the-warehouse-i.cpp) [Python](./Python/put-boxes-into-the-warehouse-i.py) | _O(nlogn + m)_    | _O(1)_          | Medium           | 🔒 |
 1567| [Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/)| [C++](./C++/maximum-length-of-subarray-with-positive-product.cpp) [Python](./Python/maximum-length-of-subarray-with-positive-product.py) | _O(n)_    | _O(1)_          | Medium           ||
 1568| [Minimum Number of Days to Disconnect Island](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/)| [C++](./C++/minimum-number-of-days-to-disconnect-island.cpp) [Python](./Python/minimum-number-of-days-to-disconnect-island.py) | _O(m^2 * n^2)_    | _O(m * n)_          | Medium           || DFS
+1578| [Minimum Deletion Cost to Avoid Repeating Letters](https://leetcode.com/problems/minimum-deletion-cost-to-avoid-repeating-letters/)| [C++](./C++/minimum-deletion-cost-to-avoid-repeating-letters.cpp) [Python](./Python/minimum-deletion-cost-to-avoid-repeating-letters.py) | _O(n)_    | _O(1)_          | Medium           ||
 
 <br/>
 <div align="right">
@@ -1599,6 +1606,7 @@
 1462 | [Course Schedule IV](https://leetcode.com/problems/course-schedule-iv/)  | [C++](./C++/course-schedule-iv.cpp) [Python](./Python/course-schedule-iv.py) | _O(n^3)_| _O(n^2)_| Medium           || `Floyd-Warshall Algorithm` |
 1489 | [Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/)  | [C++](./C++/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree.cpp) [Python](./Python/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree.py) | _O(nlogn)_| _O(n)_| Hard           || `Kruskal Algorithm` |
 1557 | [Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/)  | [C++](./C++/minimum-number-of-vertices-to-reach-all-nodes.cpp) [Python](./Python/minimum-number-of-vertices-to-reach-all-nodes.py) | _O(e)_| _O(n)_| Medium           ||| 
+1579 | [Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/)  | [C++](./C++/remove-max-number-of-edges-to-keep-graph-fully-traversable.cpp) [Python](./Python/remove-max-number-of-edges-to-keep-graph-fully-traversable.py) | _O(n + m)_| _O(n)_| Hard           || Union Find | 
 
 <br/>
 <div align="right">
