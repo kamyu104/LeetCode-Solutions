@@ -39,14 +39,14 @@ public:
     bool check(TreeNode *root, int n) {
         //       1(1)
         //     /      \
-        //   2(0)     3(1)
-        //  /  \      /
-        // 4(0) 5(1) 6(0)
+        //   2(0)     3(1)   ↑
+        //  /  \      /      d
+        // 4(0) 5(1) 6(0)    ↓
         int base = 1;
         while (base <= n) {
             base <<= 1;
         }
-        base >>= 2;
+        base >>= 2;  // 
         TreeNode *node = root;
         while (base) {
             if ((n & base) == 0) {
