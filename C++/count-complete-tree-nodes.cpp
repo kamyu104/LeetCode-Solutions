@@ -46,7 +46,7 @@ public:
         while (base <= n) {
             base <<= 1;
         }
-        base >>= 2;  // 
+        base >>= 2;  // base = 2^d
         TreeNode *node = root;
         while (base) {
             if ((n & base) == 0) {
