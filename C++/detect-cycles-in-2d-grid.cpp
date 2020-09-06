@@ -64,7 +64,7 @@ private:
 };
 
 // Time:  O(m * n)
-// Space: O(m + n)
+// Space: O(m * n)
 class Solution2 {
 public:
     bool containsCycle(vector<vector<char>>& grid) {
