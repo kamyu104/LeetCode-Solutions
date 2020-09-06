@@ -44,7 +44,7 @@ class Solution(object):
 
 
 # Time:  O(m * n)
-# Space: O(m + n)
+# Space: O(m * n)
 class Solution2(object):
     def containsCycle(self, grid):
         """
