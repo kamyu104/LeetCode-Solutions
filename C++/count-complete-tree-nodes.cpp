@@ -35,22 +35,26 @@ public:
         return right;  // find the the first node from right exists
     }
 
-private:
     // Check if the nth node exist.
     bool check(TreeNode *root, int n) {
-        int k = 1;
-        while (k <= n) {
-            k <<= 1;
+        //       1(1)
+        //     /      \
+        //   2(0)     3(1)
+        //  /  \      /
+        // 4(0) 5(1) 6(0)
+        int base = 1;
+        while (base <= n) {
+            base <<= 1;
         }
-        k >>= 2;
+        base >>= 2;
         TreeNode *node = root;
-        while (k > 0) {
-            if ((n & k) == 0) {
+        while (base) {
+            if ((n & base) == 0) {
                 node = node->left;
             } else {
                 node = node->right;
             }
-            k >>= 1;
+            base >>= 1;
         }
         return node != nullptr;
     }
