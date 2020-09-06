@@ -23,28 +23,25 @@ public:
             node = node->left;
             ++level;
         }
-
-        // Binary search.
-        int left = pow(2, level), right = pow(2, level + 1);
-        while (left < right) {
+        int left = pow(2, level), right = pow(2, level + 1) - 1;
+        while (left <= right) {
             int mid = left + (right - left) / 2;
-            if (!exist(root, mid)) {
-                right = mid;
+            if (!check(root, mid)) {
+                right = mid - 1;
             } else {
                 left = mid + 1;
             }
         }
-        return left - 1;
+        return right;  // find the the first node from right exists
     }
 
     // Check if the nth node exist.
-    bool exist(TreeNode *root, int n) {
+    bool check(TreeNode *root, int n) {
         int k = 1;
         while (k <= n) {
             k <<= 1;
         }
         k >>= 2;
-
         TreeNode *node = root;
         while (k > 0) {
             if ((n & k) == 0) {
