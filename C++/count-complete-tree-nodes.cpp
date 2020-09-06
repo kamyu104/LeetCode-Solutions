@@ -65,6 +65,7 @@ public:
         return right;  // find the the first node from right exists
     }
 
+private:
     // Check if the nth node exist.
     bool check(TreeNode *root, int n) {
         //       1(1)
