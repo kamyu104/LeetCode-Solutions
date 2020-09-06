@@ -56,24 +56,28 @@ class Solution2(object):
         :rtype: int
         """
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+        def dfs(grid, i, j):
+            if grid[i][j] == '0':
+                return False
+            grid[i][j] = '0'
+            stk = [(i, j)]
+            while stk:
+                r, c = stk.pop()
+                for dr, dc in directions:
+                    nr, nc = r+dr, c+dc
+                    if not (0 <= nr < len(grid) and
+                            0 <= nc < len(grid[0]) and
+                            grid[nr][nc] == '1'):
+                        continue
+                    grid[nr][nc] ='0'
+                    stk.append((nr, nc))
+            return True
+
         count = 0
         for i in xrange(len(grid)):
             for j in xrange(len(grid[0])):
-                if grid[i][j] == '0':
-                    continue
-                grid[i][j] = '0'
-                stk = [(i, j)]
-                while stk:
-                    r, c = stk.pop()
-                    for dr, dc in directions:
-                        nr, nc = r+dr, c+dc
-                        if not (0 <= nr < len(grid) and
-                                0 <= nc < len(grid[0]) and
-                                grid[nr][nc] == '1'):
-                            continue
-                        grid[nr][nc] ='0'
-                        stk.append((nr, nc))
-                count += 1
+                if dfs(grid, i, j):
+                    count += 1
         return count
 
  
@@ -87,24 +91,28 @@ class Solution3(object):
         :rtype: int
         """
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+        def bfs(grid, i, j):
+            if grid[i][j] == '0':
+                return False
+            grid[i][j] ='0'
+            q = [(i, j)]
+            while q:
+                new_q = []
+                for r, c in q:
+                    for dr, dc in directions:
+                        nr, nc = r+dr, c+dc
+                        if not (0 <= nr < len(grid) and
+                                0 <= nc < len(grid[0]) and
+                                grid[nr][nc] == '1'):
+                            continue
+                        grid[nr][nc] ='0'
+                        new_q.append((nr, nc))
+                q = new_q
+            return True
+
         count = 0
         for i in xrange(len(grid)):
             for j in xrange(len(grid[0])):
-                if grid[i][j] == '0':
-                    continue
-                grid[i][j] ='0'
-                q = [(i, j)]
-                while q:
-                    new_q = []
-                    for r, c in q:
-                        for dr, dc in directions:
-                            nr, nc = r+dr, c+dc
-                            if not (0 <= nr < len(grid) and
-                                    0 <= nc < len(grid[0]) and
-                                    grid[nr][nc] == '1'):
-                                continue
-                            grid[nr][nc] ='0'
-                            new_q.append((nr, nc))
-                    q = new_q
-                count += 1
+                if bfs(grid, i, j):
+                    count += 1
         return count
