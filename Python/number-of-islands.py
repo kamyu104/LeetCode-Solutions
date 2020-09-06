@@ -69,7 +69,7 @@ class Solution2(object):
                             0 <= nc < len(grid[0]) and
                             grid[nr][nc] == '1'):
                         continue
-                    grid[nr][nc] ='0'
+                    grid[nr][nc] = '0'
                     stk.append((nr, nc))
             return True
 
@@ -105,7 +105,7 @@ class Solution3(object):
                                 0 <= nc < len(grid[0]) and
                                 grid[nr][nc] == '1'):
                             continue
-                        grid[nr][nc] ='0'
+                        grid[nr][nc] = '0'
                         new_q.append((nr, nc))
                 q = new_q
             return True
