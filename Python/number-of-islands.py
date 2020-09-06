@@ -83,6 +83,9 @@ class Solution2(object):
  
 # Time:  O(m * n)
 # Space: O(m * n)
+import collections
+
+
 # bfs solution
 class Solution3(object):
     def numIslands(self, grid):
@@ -95,19 +98,17 @@ class Solution3(object):
             if grid[i][j] == '0':
                 return False
             grid[i][j] ='0'
-            q = [(i, j)]
+            q = collections.deque([(i, j)])
             while q:
-                new_q = []
-                for r, c in q:
-                    for dr, dc in directions:
-                        nr, nc = r+dr, c+dc
-                        if not (0 <= nr < len(grid) and
-                                0 <= nc < len(grid[0]) and
-                                grid[nr][nc] == '1'):
-                            continue
-                        grid[nr][nc] = '0'
-                        new_q.append((nr, nc))
-                q = new_q
+                r, c = q.popleft()
+                for dr, dc in directions:
+                    nr, nc = r+dr, c+dc
+                    if not (0 <= nr < len(grid) and
+                            0 <= nc < len(grid[0]) and
+                            grid[nr][nc] == '1'):
+                        continue
+                    grid[nr][nc] = '0'
+                    q.append((nr, nc))
             return True
 
         count = 0
