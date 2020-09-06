@@ -133,23 +133,20 @@ private:
             return false;
         }
         (*grid)[i][j] = '0';
-        vector<pair<int, int>> q = {{i, j}};
+        queue<pair<int, int>> q({{i, j}});
         while (!q.empty()) {
-            vector<pair<int, int>> new_q;
-            for (const auto& [r, c] : q) {
-                for (const auto& d : directions) {
-                    const auto nr = r + d.first;
-                    const auto nc = c + d.second;
-                    if (!(0 <= nr && nr < grid->size() &&
-                          0 <= nc && nc < (*grid)[0].size() &&
-                          (*grid)[nr][nc] == '1')) {
-                        continue;
-                    }
-                    (*grid)[nr][nc] = '0';
-                    new_q.emplace_back(nr, nc);
+            const auto [r, c] = q.front(); q.pop();
+            for (const auto& d : directions) {
+                const auto nr = r + d.first;
+                const auto nc = c + d.second;
+                if (!(0 <= nr && nr < grid->size() &&
+                      0 <= nc && nc < (*grid)[0].size() &&
+                      (*grid)[nr][nc] == '1')) {
+                    continue;
                 }
+                (*grid)[nr][nc] = '0';
+                q.emplace(nr, nc);
             }
-            q = move(new_q);
         }
         return true;
     }
