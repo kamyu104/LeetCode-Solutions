@@ -1,52 +1,68 @@
-// Time:  O(|V| + |E||)
+// Time:  O(|V| + |E|)
 // Space: O(|E|)
 
-// Topological sort solution.
+// dfs solution
 class Solution {
 public:
-    vector<int> findOrder(int numCourses, vector<pair<int, int>>& prerequisites) {
-        vector<int> res;
-        // Store courses with in-degree zero.
-        queue<int> zeroInDegree;
-        
-        // in-degree, out-degree
-        unordered_map<int, unordered_set<int>> inDegree;
-        unordered_map<int, unordered_set<int>> outDegree;
-        for (int i = 0; i < prerequisites.size(); ++i) {
-            inDegree[prerequisites[i].first].insert(prerequisites[i].second);
-            outDegree[prerequisites[i].second].insert(prerequisites[i].first);
+    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+        unordered_map<int, unordered_set<int>> in_degree, out_degree;
+        for (const auto& p : prerequisites) {
+            in_degree[p[0]].emplace(p[1]);
+            out_degree[p[1]].emplace(p[0]);
         }
-        
-        // Put all the courses with in-degree zero into queue.
-        for(int i = 0; i < numCourses; ++i) {
-            if(inDegree.find(i) == inDegree.end()) {
-                zeroInDegree.push(i);
+        queue<int> q;
+        for (int i = 0; i < numCourses; ++i) {
+            if (!in_degree.count(i)) {
+                q.emplace(i);
             }
         }
-        
-        // V+E
-        while(!zeroInDegree.empty()) {
-            // Take the course which prerequisites are all taken.
-            int prerequisite = zeroInDegree.front();
-            res.emplace_back(prerequisite);
-            zeroInDegree.pop();
-            for (const auto & course: outDegree[prerequisite]) {
-                // Update info of all the courses with the taken prerequisite.
-                inDegree[course].erase(prerequisite);
-                // If all the prerequisites are taken, add the course to the queue.
-                if (inDegree[course].empty()) {
-                    zeroInDegree.push(course);
+        vector<int> result;
+        while (!q.empty()) {
+            const auto node = q.front(); q.pop();
+            result.emplace_back(node);
+            for (const auto& i : out_degree[node]) {
+                in_degree[i].erase(node);
+                if (in_degree[i].empty()) {
+                    q.emplace(i);
+                    in_degree.erase(i);
                 }
             }
-            // Mark the course as taken.
-            outDegree.erase(prerequisite);
+            out_degree.erase(node);
         }
-        
-        // All of the courses have been taken.
-        if (!outDegree.empty()) {
-            return {};
+        return in_degree.empty() && out_degree.empty() ? result : vector<int>();
+    }
+};
+
+// Time:  O(|V| + |E|)
+// Space: O(|E|)
+// bfs solution
+class Solution2 {
+public:
+    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+        unordered_map<int, unordered_set<int>> in_degree, out_degree;
+        for (const auto& p : prerequisites) {
+            in_degree[p[0]].emplace(p[1]);
+            out_degree[p[1]].emplace(p[0]);
         }
-        
-        return res;
+        vector<int> stk;
+        for (int i = 0; i < numCourses; ++i) {
+            if (!in_degree.count(i)) {
+                stk.emplace_back(i);
+            }
+        }
+        vector<int> result;
+        while (!stk.empty()) {
+            const auto node = stk.back(); stk.pop_back();
+            result.emplace_back(node);
+            for (const auto& i : out_degree[node]) {
+                in_degree[i].erase(node);
+                if (in_degree[i].empty()) {
+                    stk.emplace_back(i);
+                    in_degree.erase(i);
+                }
+            }
+            out_degree.erase(node);
+        }
+        return in_degree.empty() && out_degree.empty() ? result : vector<int>();
     }
 };
