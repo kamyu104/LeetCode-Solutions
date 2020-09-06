@@ -1,42 +1,72 @@
-# Time:  O(h * logn) = O((logn)^2)
+# Time:  O(h * h) = O((logn)^2)
 # Space: O(1)
 
+# Definition for a binary tree node.
+class TreeNode(object):
+    def __init__(self, val=0, left=None, right=None):
+        pass
+
+
 class Solution(object):
-    # @param {TreeNode} root
-    # @return {integer}
     def countNodes(self, root):
-        if root is None:
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        def height(root):
+            h = -1
+            while root:
+                h += 1
+                root = root.left
+            return h
+
+        result, h = 0, height(root)
+        while root:
+            if height(root.right) == h-1:
+                result += 2**h
+                root = root.right
+            else:
+                result += 2**(h-1)
+                root = root.left
+            h -= 1
+        return result
+
+    
+# Time:  O(h * logn) = O((logn)^2)
+# Space: O(1)
+class Solution2(object):
+    def countNodes(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        def check(node, n):
+            base = 1
+            while base <= n:
+                base <<= 1
+            base >>= 2
+
+            while base:
+                if (n & base) == 0:
+                    node = node.left
+                else:
+                    node = node.right
+                base >>= 1
+            return bool(node)
+
+        if not root:
             return 0
 
         node, level = root, 0
-        while node.left is not None:
+        while node.left:
             node = node.left
             level += 1
 
-        # Binary search.
-        left, right = 2 ** level, 2 ** (level + 1)
-        while left < right:
-            mid = left + (right - left) / 2
-            if not self.exist(root, mid):
-                right = mid
+        left, right = 2**level, 2**(level+1)-1
+        while left <= right:
+            mid = left+(right-left)//2
+            if not check(root, mid):
+                right = mid-1
             else:
-                left = mid + 1
-
-        return left - 1
-
-    # Check if the nth node exist.
-    def exist(self, root, n):
-        k = 1
-        while k <= n:
-            k <<= 1
-        k >>= 2
-
-        node = root
-        while k > 0:
-            if (n & k) == 0:
-                node = node.left
-            else:
-                node = node.right
-            k >>= 1
-        return node is not None
-
+                left = mid+1
+        return right
