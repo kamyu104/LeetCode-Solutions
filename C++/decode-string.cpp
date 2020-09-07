@@ -5,28 +5,27 @@ class Solution {
 public:
     string decodeString(string s) {
         string curr;
-        stack<int> nums;
-        stack<string> strs;
+        vector<int> nums;
+        vector<string> strs;
         int n = 0;
         for (const auto& c: s) {
             if (isdigit(c)) {
                 n = n * 10 + c - '0';
+            } else if (isalpha(c)) {
+                curr += c;
             } else if (c == '[') {
-                nums.emplace(n);
+                nums.emplace_back(n);
+                strs.emplace_back(curr);
                 n = 0;
-                strs.emplace(curr);
                 curr.clear();
             } else if (c == ']') {
-                for (; nums.top() > 0; --nums.top()) {
-                    strs.top() += curr;
+                for (; nums.back() > 0; --nums.back()) {
+                    strs.back() += curr;
                 }
-                nums.pop();
-                curr = strs.top();
-                strs.pop();
-            } else {
-                curr += c;
+                nums.pop_back();
+                curr = move(strs.back()); strs.pop_back();
             }
         }
-        return strs.empty() ? curr : strs.top();
+        return curr;
     }
 };
