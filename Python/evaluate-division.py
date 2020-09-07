@@ -19,10 +19,10 @@ class UnionFind(object):
 
     def union_set(self, x, y, r):
         (xp, xr), (yp, yr) =  map(self.find_set, (x, y))
-        if xp != yp:
-            self.set[xp] = (yp, r*yr/xr)
-            return True
-        return False
+        if xp == yp:
+            return False
+        self.set[xp] = (yp, r*yr/xr)
+        return True
 
     def query_set(self, x, y):
         if x not in self.set or y not in self.set:
