@@ -116,7 +116,7 @@ class Solution3(object):
         return [adj[a].get(b, -1.0) for a, b in queries]
 
     
-# Time:  O(e + q * n)
+# Time:  O(e + q * n), at most O(n^3 + q)
 # Space: O(e)
 import collections
 
