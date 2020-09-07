@@ -85,11 +85,11 @@ private:
     double bfs(const unordered_map<string, unordered_map<string, double>>& adj,
             const string& a, const string& b,
             unordered_map<string, unordered_map<string, double>> *lookup) {
-        if (lookup->count(a) && (*lookup)[a].count(b)) {
-            return (*lookup)[a][b];
-        }
         if (!adj.count(a) || !adj.count(b)) {
             return -1.0;
+        }
+        if (lookup->count(a) && (*lookup)[a].count(b)) {
+            return (*lookup)[a][b];
         }
         unordered_set<string> visited = {a};
         queue<pair<string, double>> q({{a, 1.0}});
