@@ -1,4 +1,4 @@
-# Time:  O((e + q) * α(n))
+# Time:  O((e + q) * α(n)) ~= O(e + q)
 # Space: O(n)
 
 import itertools
