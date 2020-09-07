@@ -9,9 +9,7 @@ class UnionFind(object):
         self.set = {}
 
     def find_set(self, x):
-        if x not in self.set:
-            self.set[x] = (x, 1.0)
-        xp, xr = self.set[x]
+        xp, xr = self.set.setdefault(x, (x, 1.0))
         if x != xp:
             pp, pr = self.find_set(xp)  # path compression.
             self.set[x] = (pp, xr*pr)
