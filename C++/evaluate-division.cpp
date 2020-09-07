@@ -142,7 +142,7 @@ public:
     }
 };
 
-// Time:  O(e + q * n)
+// Time:  O(e + q * n), at most O(n^3 + q)
 // Space: O(e)
 class Solution4 {
 public:
