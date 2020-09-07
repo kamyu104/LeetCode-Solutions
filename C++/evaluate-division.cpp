@@ -6,14 +6,12 @@ public:
     vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {
         UnionFind union_find;
         for (int i = 0; i < equations.size(); ++i) {
-            const auto& a = equations[i][0], &b = equations[i][1];
-            union_find.union_set(a, b, values[i]);
+            union_find.union_set(equations[i][0], equations[i][1], values[i]);
         }
         
         vector<double> result;
         for (const auto& q : queries) {
-            const auto& a = q[0], &b = q[1];
-            result.emplace_back(union_find.query_set(a, b));
+            result.emplace_back(union_find.query_set(q[0], q[1]));
         }
         return result;
     }
