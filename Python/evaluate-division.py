@@ -67,7 +67,7 @@ class Solution2(object):
             adj[a][b] = k
             adj[b][a] = 1.0/k
 
-        def bfs(a, b, lookup):
+        def bfs(adj, a, b, lookup):
             if (a, b) in lookup:
                 return lookup[a, b]
             if a not in adj or b not in adj:
@@ -88,7 +88,7 @@ class Solution2(object):
             return -1.0
 
         lookup = {}
-        return [bfs(a, b, lookup) for a, b in queries]
+        return [bfs(adj, a, b, lookup) for a, b in queries]
 
 
 # Time:  O(n^3 + q)
