@@ -10,6 +10,9 @@ class Solution(object):
         """
         directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
 
+        if not matrix:
+            return 0
+        
         in_degree = [[0]*len(matrix[0]) for _ in xrange(len(matrix))]
         for i in xrange(len(matrix)):
             for j in xrange(len(matrix[0])):
@@ -66,6 +69,8 @@ class Solution2(object):
             max_lengths[i][j] = max_depth + 1
             return max_lengths[i][j]
 
+        if not matrix:
+            return 0
         result = 0
         max_lengths = [[0 for _ in xrange(len(matrix[0]))] for _ in xrange(len(matrix))]
         for i in xrange(len(matrix)):
