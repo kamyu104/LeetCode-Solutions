@@ -68,10 +68,10 @@ class Solution2(object):
             adj[b][a] = 1.0/k
 
         def bfs(adj, a, b, lookup):
-            if (a, b) in lookup:
-                return lookup[a, b]
             if a not in adj or b not in adj:
                 return -1.0
+            if (a, b) in lookup:
+                return lookup[a, b]
             visited = {a}
             q = collections.deque([(a, 1.0)])
             while q:
