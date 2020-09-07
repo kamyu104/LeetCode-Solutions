@@ -1,10 +1,129 @@
-# Time:  O(e + q * |V|!), |V| is the number of variables
-# Space: O(e)
+# Time:  O((e + q) * α(n))
+# Space: O(n)
 
-import collections
+import itertools
+
+
+class UnionFind(object):
+    def __init__(self):
+        self.set = {}
+
+    def find_set(self, x):
+        if x not in self.set:
+            self.set[x] = (x, 1.0)
+        xp, xr = self.set[x]
+        if x != xp:
+            pp, pr = self.find_set(xp)  # path compression.
+            self.set[x] = (pp, xr*pr)
+        return self.set[x]
+
+    def union_set(self, x, y, r):
+        (xp, xr), (yp, yr) =  map(self.find_set, (x, y))
+        if xp != yp:
+            self.set[xp] = (yp, r*yr/xr)
+            return False
+        return True
+
+    def query_set(self, x, y):
+        (xp, xr), (yp, yr) =  map(self.find_set, (x, y))
+        return xr/yr if xp == yp else -1.0
 
 
 class Solution(object):
+    def calcEquation(self, equations, values, queries):
+        """
+        :type equations: List[List[str]]
+        :type values: List[float]
+        :type queries: List[List[str]]
+        :rtype: List[float]
+        """
+        union_find = UnionFind()
+        for (a, b), k in itertools.izip(equations, values):
+            union_find.union_set(a, b, k)
+        return [union_find.query_set(a, b)
+                if a in union_find.set and
+                   b in union_find.set
+                else -1.0 
+                for a, b in queries]
+
+
+# Time:  O(e + q * n), at most O(n^3 + q)
+# Space: O(n^2)
+# bfs solution
+import collections
+import itertools
+
+
+class Solution2(object):
+    def calcEquation(self, equations, values, queries):
+        """
+        :type equations: List[List[str]]
+        :type values: List[float]
+        :type queries: List[List[str]]
+        :rtype: List[float]
+        """
+        adj = collections.defaultdict(dict)
+        for (a, b), k in itertools.izip(equations, values):
+            adj[a][b] = k
+            adj[b][a] = 1.0/k
+
+        def bfs(a, b, lookup):
+            if (a, b) in lookup:
+                return lookup[a, b]
+            if a not in adj or b not in adj:
+                return -1.0
+            visited = {a}
+            q = collections.deque([(a, 1.0)])
+            while q:
+                u, val = q.popleft()
+                if u == b:
+                    lookup[a, b] = val
+                    return val
+                for v, k in adj[u].iteritems():
+                    if v in visited:
+                        continue                    
+                    visited.add(v)
+                    q.append((v, val*k))
+            lookup[a, b] = -1.0
+            return -1.0
+
+        lookup = {}
+        return [bfs(a, b, lookup) for a, b in queries]
+
+
+# Time:  O(n^3 + q)
+# Space: O(n^2)
+import collections
+import itertools
+
+
+# variant of floyd–warshall algorithm solution
+class Solution3(object):
+    def calcEquation(self, equations, values, queries):
+        """
+        :type equations: List[List[str]]
+        :type values: List[float]
+        :type queries: List[List[str]]
+        :rtype: List[float]
+        """
+        adj = collections.defaultdict(dict)
+        for (a, b), k in itertools.izip(equations, values):
+            adj[a][a] = adj[b][b] = 1.0
+            adj[a][b] = k
+            adj[b][a] = 1.0/k
+        for k in adj:
+            for i in adj[k]:
+                for j in adj[k]:
+                    adj[i][j] = adj[i][k]*adj[k][j]
+        return [adj[a].get(b, -1.0) for a, b in queries]
+
+    
+# Time:  O(e + q * n)
+# Space: O(e)
+import collections
+
+
+class Solution4(object):
     def calcEquation(self, equations, values, query):
         """
         :type equations: List[List[str]]
