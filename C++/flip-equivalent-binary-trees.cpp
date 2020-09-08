@@ -1,4 +1,3 @@
-
 // Time:  O(n)
 // Space: O(h)
 
@@ -11,6 +10,8 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
+// bfs solution
 class Solution {
 public:
     bool flipEquiv(TreeNode* root1, TreeNode* root2) {
