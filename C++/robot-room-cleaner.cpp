@@ -39,21 +39,21 @@ public:
 private:
     void dfs(const pair<int, int>& pos, Robot& robot, int dir,
              unordered_set<pair<int, int>, PairHash<int>> *lookup) {
-        if (lookup->count(pos)) {
-            return;
-        }
-        lookup->emplace(pos);
-
-        robot.clean();
         static const vector<pair<int, int>> directions{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-        for (int i = 0; i < directions.size(); ++i, dir = (dir + 1) % directions.size()) {
-            if (robot.move()) {
-                dfs({pos.first + directions[dir].first,
-                     pos.second + directions[dir].second},
-                     robot, dir, lookup);
-                goBack(robot);
+        
+        robot.clean();
+        for (int i = 0; i < directions.size(); ++i, dir = (dir + 1) % directions.size(), robot.turnRight()) {
+            const auto& new_pos = pair(pos.first + directions[dir].first,
+                                       pos.second + directions[dir].second);
+            if (lookup->count(new_pos)) {
+                continue;
             }
-            robot.turnRight();
+            lookup->emplace(new_pos);
+            if (!robot.move()) {
+                continue;
+            }
+            dfs(new_pos, robot, dir, lookup);
+            goBack(robot);
         }
     }
 
