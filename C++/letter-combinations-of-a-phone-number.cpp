@@ -33,12 +33,12 @@ public:
         }
         vector<string> result;
         string curr;
-        dfs(digits, &curr, &result);
+        letterCombinationsRecu(digits, &curr, &result);
         return result;
     }
 
 private:
-    void dfs(const string &digits, string *curr, vector<string> *result) {
+    void letterCombinationsRecu(const string &digits, string *curr, vector<string> *result) {
         static const vector<string> lookup = {" ", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
         
         if (size(*curr) == size(digits)) {
@@ -47,7 +47,7 @@ private:
         }
         for (const auto& c: lookup[digits[size(*curr)] - '0']) {
             curr->push_back(c);
-            dfs(digits, curr, result);
+            letterCombinationsRecu(digits, curr, result);
             curr->pop_back();
         }
     }
