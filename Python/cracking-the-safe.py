@@ -31,14 +31,11 @@ class Solution2(object):
         """
         total = k**n
         M = total//k
-        unique_rolling_hash, base = 0, 1
-        for i in xrange(n-1):
-            unique_rolling_hash += (k-1)*base
-            base *= k
-        result = [str(k-1)]*(n-1)
+        unique_rolling_hash = 0
+        result = [str(0)]*(n-1)
         lookup = set()
         while len(lookup) < total:
-            for i in xrange(k):
+            for i in reversed(xrange(k)):
                 new_unique_rolling_hash = unique_rolling_hash*k + i
                 if new_unique_rolling_hash not in lookup:
                     lookup.add(new_unique_rolling_hash)
@@ -59,7 +56,7 @@ class Solution3(object):
         """
         M = k**(n-1)
         def dfs(k, unique_rolling_hash, lookup, result):
-            for i in xrange(k):
+            for i in reversed(xrange(k)):
                 new_unique_rolling_hash = unique_rolling_hash*k + i
                 if new_unique_rolling_hash not in lookup:
                     lookup.add(new_unique_rolling_hash)
@@ -67,11 +64,8 @@ class Solution3(object):
                     dfs(k, new_unique_rolling_hash%M, lookup, result)
                     break
 
-        unique_rolling_hash, base = 0, 1
-        for i in xrange(n-1):
-            unique_rolling_hash += (k-1)*base
-            base *= k
-        result = [str(k-1)]*(n-1)
+        unique_rolling_hash = 0
+        result = [str(0)]*(n-1)
         lookup = set()
         dfs(k, unique_rolling_hash, lookup, result)
         return "".join(result)
