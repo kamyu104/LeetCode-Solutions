@@ -35,14 +35,16 @@ class Solution2(object):
 
         def letterCombinationsRecu(result, digits, curr, n):
             if n == len(digits):
-                result.append(curr)
+                result.append("".join(curr))
                 return
             for choice in lookup[int(digits[n])]:
-                letterCombinationsRecu(result, digits, curr+choice, n+1)
+                curr.append(choice)
+                letterCombinationsRecu(result, digits, curr, n+1)
+                curr.pop()
 
         if not digits:
             return []
         result = []
-        letterCombinationsRecu(result, digits, "", 0)
+        letterCombinationsRecu(result, digits, [], 0)
         return result
 
