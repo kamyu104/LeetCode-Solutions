@@ -40,7 +40,7 @@ public:
         unordered_set<int> lookup;
         const int total = pow(k, n);
         while (lookup.size() < total) {
-            for (int i = k - 1; i >= 0; --i) {  // preorder like traversal relative to initial result to avoid getting stuck
+            for (int i = k - 1; i >= 0; --i) {  // preorder like traversal relative to initial result to avoid getting stuck, i.e. don't use 0 until there is no other choice
                 const auto& new_unique_rolling_hash = unique_rolling_hash * k + i;
                 if (!lookup.count(new_unique_rolling_hash)) {
                     lookup.emplace(new_unique_rolling_hash);
@@ -69,7 +69,7 @@ public:
 
 private:
     void dfs(int k, int M, int unique_rolling_hash, unordered_set<int> *lookup, string *result) {
-        for (int i = k - 1; i >= 0; --i) {  // preorder like traversal relative to initial result to avoid getting stuck
+        for (int i = k - 1; i >= 0; --i) {  // preorder like traversal relative to initial result to avoid getting stuck, i.e. don't use 0 until there is no other choice
             const auto& new_unique_rolling_hash = unique_rolling_hash * k + i;
             if (!lookup->count(new_unique_rolling_hash)) {
                 lookup->emplace(new_unique_rolling_hash);
@@ -91,7 +91,7 @@ public:
         const int total = pow(k, n);
         while (lookup.size() < total) {
             const auto& node = result.substr(result.length() - n + 1);
-            for (int i = 0; i < k; ++i) {  // preorder like traversal relative to initial result to avoid getting stuck
+            for (int i = 0; i < k; ++i) {  // preorder like traversal relative to initial result to avoid getting stuck, i.e. don't use k-1 until there is no other choice
                 const auto& neighbor = node + to_string(i);
                 if (!lookup.count(neighbor)) {
                     lookup.emplace(neighbor);
@@ -118,7 +118,7 @@ public:
 
 private:
     void dfs(int k, const string& node, unordered_set<string> *lookup, string *result) {
-        for (int i = 0; i < k; ++i) {  // preorder like traversal relative to initial result to avoid getting stuck
+        for (int i = 0; i < k; ++i) {  // preorder like traversal relative to initial result to avoid getting stuck, i.e. don't use k-1 until there is no other choice
             const auto& neighbor = node + to_string(i);
             if (!lookup->count(neighbor)) {
                 lookup->emplace(neighbor);
