@@ -11,14 +11,14 @@ private:
 
     TrieNode *buildTrie(const vector<string>& words) {
         TrieNode *root = new TrieNode();
-        for (int j = 0; j < words.size(); ++j) {
+        for (int i = 0; i < size(words); ++i) {
             TrieNode* t = root;
-            for (int i = 0; i < words[j].size(); ++i) {
-                if (!t->children[words[j][i] - 'a']) {
-                    t->children[words[j][i] - 'a'] = new TrieNode();
+            for (int j = 0; j < size(words[i]); ++j) {
+                if (!t->children[words[i][j] - 'a']) {
+                    t->children[words[i][j] - 'a'] = new TrieNode();
                 }
-                t = t->children[words[j][i] - 'a'];
-                t->indices.push_back(j);
+                t = t->children[words[i][j] - 'a'];
+                t->indices.emplace_back(i);
             }
         }
         return root;
@@ -42,12 +42,13 @@ public:
 private:
     void wordSquaresHelper(const vector<string>& words, TrieNode *trie, vector<string> *curr,
                            vector<vector<string>> *result) {
-        if (curr->size() >= words[0].length()) {
-            return result->emplace_back(*curr);
+        if (size(*curr) == size(words[0])) {
+            result->emplace_back(*curr);
+            return;
         }
         
         TrieNode *node = trie;     
-        for (int i = 0; i < curr->size(); ++i) {
+        for (int i = 0; i < size(*curr); ++i) {
             if (!(node = node->children[(*curr)[i][curr->size()] - 'a'])) {
                 return;
             }
