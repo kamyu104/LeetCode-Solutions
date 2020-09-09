@@ -31,17 +31,18 @@ class Solution2(object):
         :type digits: str
         :rtype: List[str]
         """
-        def letterCombinationsRecu(result, digits, lookup, curr, n):
+        lookup = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"]
+
+        def letterCombinationsRecu(result, digits, curr, n):
             if n == len(digits):
                 result.append(curr)
                 return
             for choice in lookup[int(digits[n])]:
-                letterCombinationsRecu(result, digits, lookup, curr+choice, n+1)
+                letterCombinationsRecu(result, digits, curr+choice, n+1)
 
         if not digits:
             return []
         result = []
-        lookup = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"]
-        letterCombinationsRecu(result, digits, lookup, "", 0)
+        letterCombinationsRecu(result, digits, "", 0)
         return result
 
