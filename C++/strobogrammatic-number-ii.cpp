@@ -1,4 +1,4 @@
-// Time:  O(n^2 * 5^(n/2))
+// Time:  O(n * 5^(n/2))
 // Space: O(n)
 
 class Solution {
