@@ -1,4 +1,5 @@
-// Time:  O((e + q) * α(n)) ~= O(e + q)
+// Time:  O((e + q) * α(n)) ~= O(e + q), using either one of "path compression" and "union by rank" results in amortized O(logn)
+//                                     , using  both results in α(n) ~= O(1)
 // Space: O(n)
 
 class Solution {
