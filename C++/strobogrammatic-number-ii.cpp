@@ -15,7 +15,6 @@ public:
             vector<string> new_result;
             for (const auto& num : result) {
                 for (const auto& [a, b] : lookup) {
-                    
                     if (i != n - 2 || a != "0") {
                         new_result.emplace_back(a + num + b);
                     }
@@ -45,7 +44,6 @@ private:
         } else if (k == 1) {
             return {"0", "1", "8"};
         }
-    
         vector<string> result;
         for (const auto& num : findStrobogrammaticRecu(n, k - 2)) {
             for (const auto& kvp : lookup) {
