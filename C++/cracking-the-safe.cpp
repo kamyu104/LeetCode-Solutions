@@ -36,14 +36,11 @@ public:
     string crackSafe(int n, int k) {
         const int M = pow(k, n - 1);
         int unique_rolling_hash = 0;
-        for (int i = 0, base = 1; i < n - 1; ++i, base *= k) {
-            unique_rolling_hash += (k - 1) * base;
-        }
-        string result(n - 1, '0' + k - 1);
+        string result(n - 1, '0');
         unordered_set<int> lookup;
         const int total = pow(k, n);
         while (lookup.size() < total) {
-            for (int i = 0; i < k; ++i) {
+            for (int i = k - 1; i >= 0; --i) {
                 const auto& new_unique_rolling_hash = unique_rolling_hash * k + i;
                 if (!lookup.count(new_unique_rolling_hash)) {
                     lookup.emplace(new_unique_rolling_hash);
@@ -64,18 +61,15 @@ public:
     string crackSafe(int n, int k) {
         const int M = pow(k, n - 1);
         int unique_rolling_hash = 0;
-        for (int i = 0, base = 1; i < n - 1; ++i, base *= k) {
-            unique_rolling_hash += (k - 1) * base;
-        }
         unordered_set<int> lookup;
-        string result(n - 1, '0' + k - 1);
+        string result(n - 1, '0');
         dfs(k, M, unique_rolling_hash, &lookup, &result);
         return result;
     }
 
 private:
     void dfs(int k, int M, int unique_rolling_hash, unordered_set<int> *lookup, string *result) {
-        for (int i = 0; i < k; ++i) {
+        for (int i = k - 1; i >= 0; --i) {
             const auto& new_unique_rolling_hash = unique_rolling_hash * k + i;
             if (!lookup->count(new_unique_rolling_hash)) {
                 lookup->emplace(new_unique_rolling_hash);
