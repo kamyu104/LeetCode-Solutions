@@ -35,7 +35,7 @@ class Solution2(object):
         result = [str(0)]*(n-1)
         lookup = set()
         while len(lookup) < total:
-            for i in reversed(xrange(k)):  # preorder like traversal relative to initial result to avoid getting stuck
+            for i in reversed(xrange(k)):  # preorder like traversal relative to initial result to avoid getting stuck, i.e. don't use 0 until there is no other choice
                 new_unique_rolling_hash = unique_rolling_hash*k + i
                 if new_unique_rolling_hash not in lookup:
                     lookup.add(new_unique_rolling_hash)
@@ -56,7 +56,7 @@ class Solution3(object):
         """
         M = k**(n-1)
         def dfs(k, unique_rolling_hash, lookup, result):
-            for i in reversed(xrange(k)):  # preorder like traversal relative to initial result to avoid getting stuck
+            for i in reversed(xrange(k)):  # preorder like traversal relative to initial result to avoid getting stuck, i.e. don't use 0 until there is no other choice
                 new_unique_rolling_hash = unique_rolling_hash*k + i
                 if new_unique_rolling_hash not in lookup:
                     lookup.add(new_unique_rolling_hash)
@@ -85,7 +85,7 @@ class Solution4(object):
         total = k**n
         while len(lookup) < total:
             node = result[len(result)-n+1:]
-            for i in xrange(k):  # preorder like traversal relative to initial result to avoid getting stuck
+            for i in xrange(k):  # preorder like traversal relative to initial result to avoid getting stuck, i.e. don't use k-1 until there is no other choice
                 neighbor = "".join(node) + str(i)
                 if neighbor not in lookup:
                     lookup.add(neighbor)
@@ -104,7 +104,7 @@ class Solution5(object):
         :rtype: str
         """
         def dfs(k, node, lookup, result):
-            for i in xrange(k):  # preorder like traversal relative to initial result to avoid getting stuck
+            for i in xrange(k):  # preorder like traversal relative to initial result to avoid getting stuck, i.e. don't use k-1 until there is no other choice
                 neighbor = node + str(i)
                 if neighbor not in lookup:
                     lookup.add(neighbor)
