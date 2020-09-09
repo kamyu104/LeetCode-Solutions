@@ -8,7 +8,7 @@ public:
         vector<string> result;
         vector<tuple<string, int, int>> stk = {{"", n, n}};
         while (!stk.empty()) {
-            auto [curr, left, right] = move(stk.back()); stk.pop_back();
+            const auto [curr, left, right] = move(stk.back()); stk.pop_back();
             if (left == 0 && right == 0) {
                 result.emplace_back(curr);
             }
