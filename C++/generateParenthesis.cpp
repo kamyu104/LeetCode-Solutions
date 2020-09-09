@@ -1,20 +1,49 @@
-// Time Complexity: O(2^n/n)??
-// Space Complexity: O(n)
+// Time:  O(4^n / n^(3/2)) ~= Catalan numbers
+// Space: O(n)
 
+// iterative solution
 class Solution {
-    public:
-        void generator(vector<string> &ans, string s, int l, int r,  int n) {
-            if(l==n) {
-                ans.push_back(s.append(n-r, ')'));
-                return;
+public:
+    vector<string> generateParenthesis(int n) {
+        vector<string> result;
+        vector<tuple<string, int, int>> stk = {{"", n, n}};
+        while (!stk.empty()) {
+            auto [curr, left, right] = move(stk.back()); stk.pop_back();
+            if (left == 0 && right == 0) {
+                result.emplace_back(curr);
             }
-            generator(ans, s+"(", l+1, r, n);
-            if(l>r) generator(ans, s+")", l, r+1, n);
+            if (left < right) {
+                stk.emplace_back(curr + ")", left, right - 1);
+            }
+            if (left > 0) {
+                stk.emplace_back(curr + "(", left - 1, right);
+            }
+        }
+        return result;
+    }
+};
 
+// Time:  O(4^n / n^(3/2)) ~= Catalan numbers
+// Space: O(n)
+// recursive solution
+class Solution2 {
+public:
+    vector<string> generateParenthesis(int n) {
+        vector<string> result;
+        generateParenthesisRecu("", n, n, &result);
+        return result;
+    }
+
+private:
+    void generateParenthesisRecu(const string& curr, int left, int right, vector<string> *result) {
+        if (left == 0 && right == 0) {
+            result->emplace_back(curr);
         }
-        vector<string> generateParenthesis(int n) {
-            vector<string> ans;
-            generator(ans, "", 0, 0, n);
-            return ans;
+        if (left > 0) {
+            generateParenthesisRecu(curr + "(", left - 1, right, result);
         }
+        if (left < right) {
+            generateParenthesisRecu(curr + ")", left, right - 1, result);
+        }
+    }
 };
