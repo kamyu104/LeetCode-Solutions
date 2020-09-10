@@ -1,5 +1,5 @@
-// Time:  O(m * n * h), h is height of trie
-// Space: O(26^h)
+// Time:  O(m * n * 4 * 3^(h - 1)) ~= O(m * n * 3^h), h is the height of trie
+// Space: O(t), t is the number of nodes in trie
 
 class Solution {
 private:
