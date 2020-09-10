@@ -44,24 +44,25 @@ class Solution_Generic(object):
         :type nums2: List[int]
         :rtype: float
         """
-        len1, len2 = len(nums1), len(nums2)
-        if (len1 + len2) % 2 == 1:
-            return self.getKth([nums1, nums2], (len1 + len2)/2 + 1)
+        array = [nums1, nums2]
+        total = sum(len(nums) for nums in array)
+        if total % 2 == 1:
+            return self.getKth(array, total//2 + 1)
         else:
-            return (self.getKth([nums1, nums2], (len1 + len2)/2) +
-                    self.getKth([nums1, nums2], (len1 + len2)/2 + 1)) * 0.5
+            return (self.getKth(array, total//2) +
+                    self.getKth(array, total//2 + 1)) * 0.5
 
     def getKth(self, arrays, k):
-        def binary_search(array, left, right, target, compare):
+        def binary_search(array, left, right, target, check):
             while left <= right:
-                mid = left + (right - left) / 2
-                if compare(array, mid, target):
-                    right = mid - 1
+                mid = left + (right-left)//2
+                if check(array, mid, target):
+                    right = mid-1
                 else:
-                    left = mid + 1
+                    left = mid+1
             return left
 
-        def match(arrays, num, target):
+        def check(arrays, num, target):
             res = 0
             for array in arrays:
                 if array:
@@ -74,8 +75,7 @@ class Solution_Generic(object):
             if array:
                 left = min(left, array[0])
                 right = max(right, array[-1])
-
-        return binary_search(arrays, left, right, k, match)
+        return binary_search(arrays, left, right, k, check)
 
 class Solution_3(object):
     def findMedianSortedArrays(self, A, B):
