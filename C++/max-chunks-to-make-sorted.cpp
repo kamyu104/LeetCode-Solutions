@@ -12,3 +12,26 @@ public:
         return result;
     }
 };
+
+// Time:  O(n)
+// Space: O(1)
+// mono stack solution
+class Solution2 {
+public:
+    int maxChunksToSorted(vector<int>& arr) {
+        vector<int> increasing_stk;
+        for (const auto& num : arr) {
+            if (increasing_stk.empty() || increasing_stk.back() <= num) {
+                increasing_stk.emplace_back(num);
+                continue;
+            }
+            int max_num = increasing_stk.back();
+            while (!increasing_stk.empty() && increasing_stk.back() > num) {
+                increasing_stk.pop_back();
+            }
+            increasing_stk.emplace_back(max_num);
+        }
+        return size(increasing_stk);
+    }
+};
+
