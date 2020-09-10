@@ -25,7 +25,7 @@ public:
                 increasing_stk.emplace_back(num);
                 continue;
             }
-            int max_num = increasing_stk.back();
+            int max_num = increasing_stk.back(); increasing_stk.pop_back();
             while (!increasing_stk.empty() && increasing_stk.back() > num) {
                 increasing_stk.pop_back();
             }
