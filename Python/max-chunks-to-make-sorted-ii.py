@@ -17,7 +17,7 @@ class Solution(object):
             while increasing_stk and increasing_stk[-1] > num:
                 increasing_stk.pop()
             increasing_stk.append(max_num)
-        return len(increasing_stk
+        return len(increasing_stk)
 
 
 # Time:  O(nlogn)
