@@ -16,14 +16,13 @@ public:
         }
         vector<string> result;
         for (int i = 0; i < total; ++i) {
-            int k = i;
+            int k = i,  base = total;
             string curr;
-            for (int j = size(digits) - 1; j >= 0; --j) {
-                const auto& choices = lookup[digits[j] - '0'];
-                curr.push_back(choices[k % size(choices)]);
-                k /= size(choices);
+            for (const auto& digit : digits) {
+                const auto& choices = lookup[digit - '0'];
+                base /= size(choices);
+                curr.push_back(choices[(k / base) % size(choices)]);
             }
-            reverse(begin(curr), end(curr));
             result.emplace_back(move(curr));
         }
         return result;
