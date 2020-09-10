@@ -26,11 +26,8 @@ class Solution2(object):
         """
         result, increasing_stk = 0, []
         for num in arr:
-            if not increasing_stk or increasing_stk[-1] <= num:
-                increasing_stk.append(num)
-                continue
-            max_num = increasing_stk.pop()
+            max_num = num if not increasing_stk else max(increasing_stk[-1], num)
             while increasing_stk and increasing_stk[-1] > num:
                 increasing_stk.pop()
             increasing_stk.append(max_num)
-        return len(increasing_stk)
+        return len(increasing_stk
