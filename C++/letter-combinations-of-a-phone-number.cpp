@@ -16,7 +16,7 @@ public:
         }
         vector<string> result;
         for (int i = 0; i < total; ++i) {
-            int k = i,  base = total;
+            int k = i, base = total;
             string curr;
             for (const auto& digit : digits) {
                 const auto& choices = lookup[digit - '0'];
