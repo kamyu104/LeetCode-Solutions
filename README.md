@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++11-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1579%20%2F%201579-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1580%20%2F%201580-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
@@ -1577,10 +1577,11 @@
 1526| [Minimum Number of Increments on Subarrays to Form a Target Array](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/)  | [C++](./C++/minimum-number-of-increments-on-subarrays-to-form-a-target-array.cpp) [Python](./Python/minimum-number-of-increments-on-subarrays-to-form-a-target-array.py) | _O(n)_        | _O(1)_          | Hard           | | |
 1536| [Minimum Swaps to Arrange a Binary Grid](https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/)  | [C++](./C++/minimum-swaps-to-arrange-a-binary-grid.cpp) [Python](./Python/minimum-swaps-to-arrange-a-binary-grid.py) | _O(n^2)_        | _O(1)_          | Medium           | | |
 1546| [Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/)| [C++](./C++/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target.cpp) [Python](./Python/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target.py) | _O(n)_    | _O(n)_          | Medium           ||
-1564| [Put Boxes Into the Warehouse I](https://leetcode.com/problems/put-boxes-into-the-warehouse-i/)| [C++](./C++/put-boxes-into-the-warehouse-i.cpp) [Python](./Python/put-boxes-into-the-warehouse-i.py) | _O(nlogn + m)_    | _O(1)_          | Medium           | 🔒 |
+1564| [Put Boxes Into the Warehouse I](https://leetcode.com/problems/put-boxes-into-the-warehouse-i/)| [C++](./C++/put-boxes-into-the-warehouse-i.cpp) [Python](./Python/put-boxes-into-the-warehouse-i.py) | _O(nlogn)_    | _O(1)_          | Medium           | 🔒 |
 1567| [Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/)| [C++](./C++/maximum-length-of-subarray-with-positive-product.cpp) [Python](./Python/maximum-length-of-subarray-with-positive-product.py) | _O(n)_    | _O(1)_          | Medium           ||
 1568| [Minimum Number of Days to Disconnect Island](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/)| [C++](./C++/minimum-number-of-days-to-disconnect-island.cpp) [Python](./Python/minimum-number-of-days-to-disconnect-island.py) | _O(m^2 * n^2)_    | _O(m * n)_          | Medium           || DFS
 1578| [Minimum Deletion Cost to Avoid Repeating Letters](https://leetcode.com/problems/minimum-deletion-cost-to-avoid-repeating-letters/)| [C++](./C++/minimum-deletion-cost-to-avoid-repeating-letters.cpp) [Python](./Python/minimum-deletion-cost-to-avoid-repeating-letters.py) | _O(n)_    | _O(1)_          | Medium           ||
+1580| [Put Boxes Into the Warehouse II](https://leetcode.com/problems/put-boxes-into-the-warehouse-ii/)| [C++](./C++/put-boxes-into-the-warehouse-ii.cpp) [Python](./Python/put-boxes-into-the-warehouse-ii.py) | _O(nlogn)_    | _O(1)_          | Medium           | 🔒 |
 
 <br/>
 <div align="right">
