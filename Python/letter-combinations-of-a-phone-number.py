@@ -17,12 +17,11 @@ class Solution(object):
             total *= len(lookup[int(digit)])
         result = []
         for i in xrange(total):
-            curr = [""]
-            for digit in reversed(digits):
+            base, curr = total, [""]
+            for digit in digits:
                 choices = lookup[int(digit)]
-                curr.append(choices[i%len(choices)])
-                i //= len(choices)
-            curr.reverse()
+                base //= len(choices)
+                curr.append(choices[(i//base)%len(choices)])
             result.append("".join(curr))
         return result
 
