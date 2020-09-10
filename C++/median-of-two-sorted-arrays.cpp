@@ -50,11 +50,15 @@ class Solution_Generic {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         vector<vector<int> *> arrays{&nums1, &nums2};
-        if ((nums1.size() + nums2.size()) % 2 == 1) {
-            return findKthInSortedArrays(arrays, (nums1.size() + nums2.size()) / 2 + 1);
+        int total = accumulate(cbegin(arrays), cend(arrays), 0,
+                               [](const auto& x, const auto& y) {
+                                   return x + size(*y);
+                               });
+        if (total % 2 == 1) {
+            return findKthInSortedArrays(arrays, total / 2 + 1);
         } else {
-            return (findKthInSortedArrays(arrays, (nums1.size() + nums2.size()) / 2) +
-                    findKthInSortedArrays(arrays, (nums1.size() + nums2.size()) / 2 + 1)) / 2.0;
+            return (findKthInSortedArrays(arrays, total / 2) +
+                    findKthInSortedArrays(arrays, total / 2 + 1)) / 2.0;
         }
     }
 
@@ -63,7 +67,7 @@ private:
         int left = numeric_limits<int>::max();
         int right = numeric_limits<int>::min();
         for (const auto array : arrays) {
-            if (!array->empty()) {
+            if (!empty(*array)) {
                 left = min(left, array->front());
                 right = max(right, array->back());
             }
@@ -71,7 +75,7 @@ private:
         // left xxxxxxxooooooo right, find first xo or oo
         while (left <= right) {
             const auto mid = left + (right - left) / 2;
-            if (match(arrays, mid, k)) {
+            if (check(arrays, mid, k)) {
                 right = mid - 1;
             } else {
                 left = mid + 1;
@@ -80,7 +84,7 @@ private:
         return left;
     }
 
-    bool match(const vector<vector<int> *>& arrays, int num, int target) {
+    bool check(const vector<vector<int> *>& arrays, int num, int target) {
         int res = 0;
         for (const auto array : arrays) {
             if (!array->empty()) {
