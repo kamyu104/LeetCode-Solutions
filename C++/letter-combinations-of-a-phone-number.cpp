@@ -31,7 +31,7 @@ public:
 };
         
 // Time:  O(n * 4^n)
-// Space: O(n
+// Space: O(n)
 // iterative solution
 class Solution2 {
 public:
