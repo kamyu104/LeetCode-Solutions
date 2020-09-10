@@ -1,4 +1,4 @@
-// Time:  O(nlogn)
+// Time:  O(nlogn + m)
 // Space: O(1)
 
 class Solution {
