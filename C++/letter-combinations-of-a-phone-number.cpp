@@ -1,7 +1,39 @@
 // Time:  O(n * 4^n)
 // Space: O(n)
 
+// iterative solution
 class Solution {
+public:
+    vector<string> letterCombinations(string digits) {
+        static const vector<string> lookup = {" ", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        
+        if (digits.empty()) {
+            return {};
+        }
+        int total = 1;
+        for (const auto& digit : digits) {
+            total *= size(lookup[digit - '0']);
+        }
+        vector<string> result;
+        for (int i = 0; i < total; ++i) {
+            int k = i;
+            string curr;
+            for (int j = size(digits) - 1; j >= 0; --j) {
+                const auto& choices = lookup[digits[j] - '0'];
+                curr.push_back(choices[k % size(choices)]);
+                k /= size(choices);
+            }
+            reverse(begin(curr), end(curr));
+            result.emplace_back(move(curr));
+        }
+        return result;
+    }
+};
+        
+// Time:  O(n * 4^n)
+// Space: O(n
+// iterative solution
+class Solution2 {
 public:
     vector<string> letterCombinations(string digits) {
         static const vector<string> lookup = {" ", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
@@ -25,7 +57,7 @@ public:
 // Time:  O(n * 4^n)
 // Space: O(n)
 // recursive solution
-class Solution2 {
+class Solution3 {
 public:
     vector<string> letterCombinations(string digits) {
         if (digits.empty()) {
