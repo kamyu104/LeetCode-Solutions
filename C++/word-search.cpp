@@ -1,5 +1,5 @@
-// Time Complexity: O(m * n * 4 ^ p), where m is board width, n is board height, p is word length
-// Space Complexity: O(m * n + p)
+// Time:  O(m * n * 4 * 3^(l - 1)) ~= O(m * n * 3^l), l is the length of the word
+// Space: O(l)
 
 class Solution {
     public:
