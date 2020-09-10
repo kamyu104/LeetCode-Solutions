@@ -4,7 +4,7 @@
 class Solution {
 public:
     int maxBoxesInWarehouse(vector<int>& boxes, vector<int>& warehouse) {
-        sort(begin(boxes), end(boxes), greater<int>());
+        sort(rbegin(boxes), rend(boxes));
         int left = 0, right = size(warehouse) - 1;
         for (const auto& h : boxes) {
             if (h <= warehouse[left]) {
