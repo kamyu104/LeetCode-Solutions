@@ -7,7 +7,7 @@ public:
     vector<string> letterCombinations(string digits) {
         static const vector<string> lookup = {" ", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
         
-        if (digits.empty()) {
+        if (empty(digits)) {
             return {};
         }
         int total = 1;
@@ -37,7 +37,7 @@ public:
     vector<string> letterCombinations(string digits) {
         static const vector<string> lookup = {" ", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
         
-        if (digits.empty()) {
+        if (empty(digits)) {
             return {};
         }
         vector<string> result = {""};
@@ -59,7 +59,7 @@ public:
 class Solution3 {
 public:
     vector<string> letterCombinations(string digits) {
-        if (digits.empty()) {
+        if (empty(digits)) {
             return {};
         }
         vector<string> result;
