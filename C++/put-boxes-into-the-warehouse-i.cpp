@@ -28,7 +28,7 @@ public:
             warehouse[i] = min(warehouse[i], warehouse[i - 1]);
         }
         int result = 0, curr = 0;
-        for (int i = size(warehouse)- 1; i >= 0; --i) {
+        for (int i = size(warehouse) - 1; i >= 0; --i) {
             if (boxes[curr] > warehouse[i]) {
                 continue;
             }
