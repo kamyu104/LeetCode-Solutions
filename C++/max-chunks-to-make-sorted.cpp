@@ -21,12 +21,8 @@ public:
     int maxChunksToSorted(vector<int>& arr) {
         vector<int> increasing_stk;
         for (const auto& num : arr) {
-            if (increasing_stk.empty() || increasing_stk.back() <= num) {
-                increasing_stk.emplace_back(num);
-                continue;
-            }
-            int max_num = increasing_stk.back(); increasing_stk.pop_back();
-            while (!increasing_stk.empty() && increasing_stk.back() > num) {
+            int max_num = empty(increasing_stk) ? num : max(increasing_stk.back(), num);
+            while (!empty(increasing_stk) && increasing_stk.back() > num) {
                 increasing_stk.pop_back();
             }
             increasing_stk.emplace_back(max_num);
