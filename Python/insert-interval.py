@@ -1,33 +1,22 @@
 # Time:  O(n)
 # Space: O(1)
 
-class Interval(object):
-    def __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
-
-    def __repr__(self):
-        return "[{}, {}]".format(self.start, self.end)
-
-
 class Solution(object):
     def insert(self, intervals, newInterval):
         """
-        :type intervals: List[Interval]
-        :type newInterval: Interval
-        :rtype: List[Interval]
+        :type intervals: List[List[int]]
+        :type newInterval: List[int]
+        :rtype: List[List[int]]
         """
         result = []
         i = 0
-        while i < len(intervals) and newInterval.start > intervals[i].end:
+        while i < len(intervals) and newInterval[0] > intervals[i][1]:
             result += intervals[i],
             i += 1
-        while i < len(intervals) and newInterval.end >= intervals[i].start:
-            newInterval = Interval(min(newInterval.start, intervals[i].start), \
-                                   max(newInterval.end, intervals[i].end))
+        while i < len(intervals) and newInterval[1] >= intervals[i][0]:
+            newInterval = [min(newInterval[0], intervals[i][0]),
+                           max(newInterval[1], intervals[i][1])]
             i += 1
-        result += newInterval,
-        result += intervals[i:]
+        result.append(newInterval)
+        result.extend(intervals[i:])
         return result
-
-
