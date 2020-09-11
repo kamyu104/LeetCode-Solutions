@@ -74,7 +74,7 @@ class Solution2(object):
         return result
 
 
-# Time:  O(nlogn)
+# Time:  O(nlogn) ~ O(n^2)
 # Space: O(n)
 # BST solution.
 class Solution3(object):
