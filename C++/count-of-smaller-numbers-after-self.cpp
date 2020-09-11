@@ -34,7 +34,7 @@ private:
         
         void add(int i, int val) {
             ++i;
-            for (; i < bit_.size(); i += lower_bit(i)) {
+            for (; i < size(bit_); i += lower_bit(i)) {
                 bit_[i] += val;
             }
         }
