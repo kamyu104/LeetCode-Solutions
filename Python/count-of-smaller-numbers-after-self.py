@@ -34,6 +34,7 @@ class Solution(object):
         countAndMergeSort(num_idxs, 0, len(num_idxs) - 1, counts)
         return counts
 
+
 # Time:  O(nlogn)
 # Space: O(n)
 # BIT solution.
@@ -43,26 +44,18 @@ class Solution2(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        def binarySearch(A, target, compare):
-            start, end = 0, len(A) - 1
-            while start <= end:
-                mid = start + (end - start) / 2
-                if compare(target, A[mid]):
-                    end = mid - 1
-                else:
-                    start = mid + 1
-            return start
-
-        class BIT(object):
+        class BIT(object):  # 0-indexed.
             def __init__(self, n):
-                self.__bit = [0] * n
+                self.__bit = [0]*(n+1)  # Extra one for dummy node.
 
             def add(self, i, val):
+                i += 1  # Extra one for dummy node.
                 while i < len(self.__bit):
                     self.__bit[i] += val
                     i += (i & -i)
 
             def query(self, i):
+                i += 1  # Extra one for dummy node.
                 ret = 0
                 while i > 0:
                     ret += self.__bit[i]
@@ -70,16 +63,16 @@ class Solution2(object):
                 return ret
 
         # Get the place (position in the ascending order) of each number.
-        sorted_nums, places = sorted(nums), [0] * len(nums)
-        for i, num in enumerate(nums):
-            places[i] = binarySearch(sorted_nums, num, lambda x, y: x <= y)
+        sorted_nums = sorted(zip(nums, range(len(nums))))
+        lookup = {i:new_i for new_i, (_, i) in enumerate(sorted_nums)}
 
         # Count the smaller elements after the number.
-        ans, bit = [0] * len(nums), BIT(len(nums) + 1)
+        result, bit = [0]*len(nums), BIT(len(nums))
         for i in reversed(xrange(len(nums))):
-            ans[i] = bit.query(places[i])
-            bit.add(places[i] + 1, 1)
-        return ans
+            result[i] = bit.query(lookup[i]-1)
+            bit.add(lookup[i], 1)
+        return result
+
 
 # Time:  O(nlogn)
 # Space: O(n)
