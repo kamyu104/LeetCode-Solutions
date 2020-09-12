@@ -5,11 +5,11 @@ class Solution {
 public:
     int maxProduct(vector<int>& nums) {
         int result = numeric_limits<int>::min();
-        int min_product = 1, max_product = 1;
+        int curr_min = 1, curr_max = 1;
         for (const auto& num : nums) {
-            tie(min_product, max_product) = pair(min({num, min_product * num, max_product * num}),
-                                                 max({num, min_product * num, max_product * num}));
-            result = max(result, max_product);
+            tie(curr_min, curr_max) = pair(min({num, curr_min * num, curr_max * num}),
+                                           max({num, curr_min * num, curr_max * num}));
+            result = max(result, curr_max);
         }
         return result;
     }
