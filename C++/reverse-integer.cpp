@@ -7,11 +7,11 @@ public:
         int result = 0;
         while (x) {
             if (result > numeric_limits<int>::max() / 10 ||
-                (result == numeric_limits<int>::max() / 10 && x % 10 > 7)) {
+                (result == numeric_limits<int>::max() / 10 && x % 10 > numeric_limits<int>::max() % 10)) {
                 return 0;
             }
             if (result < numeric_limits<int>::min() /10 ||
-                (result == numeric_limits<int>::min() / 10 && x % 10 < -8)) {
+                (result == numeric_limits<int>::min() / 10 && x % 10 < numeric_limits<int>::min() % 10)) {
                 return 0;
             }
             result *= 10;
