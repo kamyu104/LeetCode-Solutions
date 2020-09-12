@@ -51,3 +51,28 @@ private:
         return ret;
     }
 };
+
+// Time:  O(n^2)
+// Space: O(1)
+class Solution2 {
+public:
+    string longestPalindrome(string s) {
+        int left = -1, right = -1;
+        for (int i = 0; i < size(s); ++i) {
+            int len = max(expand(s, i, i), expand(s, i, i + 1));
+            if (len > right - left) {
+                right = i + len / 2;
+                left = right - len + 1;
+            }
+        }
+        return left >= 0 ? s.substr(left, right - left + 1) : "";
+    }
+
+private:
+    int expand(const string& s, int left, int right) {
+        while (left >= 0 && right < size(s) && s[left] == s[right]) {
+            --left, ++right;
+        }
+        return right - left + 1 - 2;
+    }
+};
