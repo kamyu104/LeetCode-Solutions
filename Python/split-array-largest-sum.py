@@ -20,7 +20,7 @@ class Solution(object):
         left, right = max(nums), sum(nums)
         while left <= right:
             mid = left + (right - left) // 2
-            if canSplit(nums, m, mid):
+            if check(nums, m, mid):
                 right = mid - 1
             else:
                 left = mid + 1
