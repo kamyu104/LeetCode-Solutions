@@ -57,10 +57,10 @@ private:
 class Solution2 {
 public:
     string longestPalindrome(string s) {
-        int left = -1, right = -1;
+        int left = -1, right = -2;
         for (int i = 0; i < size(s); ++i) {
             int len = max(expand(s, i, i), expand(s, i, i + 1));
-            if (len > right - left) {
+            if (len > right - left - 1) {
                 right = i + len / 2;
                 left = right - len + 1;
             }
