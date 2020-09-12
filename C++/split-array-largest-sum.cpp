@@ -4,15 +4,11 @@
 class Solution {
 public:
     int splitArray(vector<int>& nums, int m) {
-        long long left = 0, right = 0;
-        for (const auto& num : nums) {
-            if (left < num) left = num;
-            right += num;
-        }
-
+        int64_t left = *max_element(cbegin(nums), cend(nums));
+        int64_t right = accumulate(cbegin(nums), cend(nums), 0LL);
         while (left <= right) {
             const auto mid = left + (right - left) / 2;
-            if (canSplit(nums, m, mid)) {
+            if (check(nums, m, mid)) {
                 right = mid - 1;
             } else {
                 left = mid + 1;
@@ -22,12 +18,12 @@ public:
     }
 
 private:
-    bool canSplit(vector<int>& nums, int m, int sum) {
+    bool check(vector<int>& nums, int m, int total) {
         int cnt = 1;
-        long long curr_sum = 0;
+        int64_t curr_sum = 0;
         for (const auto& num : nums) {
             curr_sum += num;
-            if (curr_sum > sum) {
+            if (curr_sum > total) {
                 curr_sum = num;
                 ++cnt;
             }
