@@ -18,7 +18,7 @@ public:
     }
 
 private:
-    bool check(vector<int>& nums, int m, int total) {
+    bool check(vector<int>& nums, int m, int64_t total) {
         int cnt = 1;
         int64_t curr_sum = 0;
         for (const auto& num : nums) {
