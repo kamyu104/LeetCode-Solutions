@@ -6,7 +6,7 @@ class Solution {
 public:
     Solution(vector<int> w) :
         prefix_sum_(w.size()),
-        uni_((random_device())()) {
+        gen_((random_device())()) {
 
         partial_sum(w.cbegin(), w.cend(), prefix_sum_.begin(), plus<int>());
         uni_ = uniform_int_distribution<int>{0, prefix_sum_.back() - 1};
