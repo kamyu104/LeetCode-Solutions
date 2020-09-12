@@ -9,13 +9,13 @@ class Solution(object):
         :rtype: int
         """
         INF = 0x7fffffff  # Using float("inf") would be slower.
-        amounts = [INF] * (amount + 1)
-        amounts[0] = 0
+        dp = [INF] * (amount + 1)
+        dp[0] = 0
         for i in xrange(amount + 1):
-            if amounts[i] != INF:
+            if dp[i] != INF:
                 for coin in coins:
                     if i + coin <= amount:
-                        amounts[i + coin] = min(amounts[i + coin], amounts[i] + 1)
-        return amounts[amount] if amounts[amount] != INF else -1
+                        dp[i + coin] = min(dp[i + coin], dp[i] + 1)
+        return dp[amount] if dp[amount] != INF else -1
 
 
