@@ -4,7 +4,7 @@
 class RandomizedSet {
 public:
     /** Initialize your data structure here. */
-    RandomizedSet() {
+    RandomizedSet() : gen_(random_device()()) {
         
     }
     
@@ -37,12 +37,14 @@ public:
     
     /** Get a random element from the set. */
     int getRandom() {
-        return set_[rand() % set_.size()];
+        uniform_int_distribution<int> dist(0, set_.size() - 1);
+        return set_[dist(gen_)];
     }
 
 private:
     vector<int> set_;
     unordered_map<int, int> used_;
+    default_random_engine gen_;
 };
 
 /**
