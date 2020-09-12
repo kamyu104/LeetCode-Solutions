@@ -5,7 +5,7 @@
 class AutocompleteSystem {
 public:
     AutocompleteSystem(vector<string> sentences, vector<int> times) : cur_node_(&trie_) {
-        for (int i = 0; i < sentences.size(); ++i) {
+        for (int i = 0; i < size(sentences); ++i) {
             sentence_to_count_[sentences[i]] = times[i];
             trie_.insert(sentences[i], sentence_to_count_[sentences[i]]);
         }
@@ -62,15 +62,17 @@ private:
         
         // Time:  O(1)
         void add_info(const string& s, int times) {
-            auto it = find_if(infos_.begin(), infos_.end(),
-                         [&s, &times](const pair<int, string>& p){ return p.second == s;} );
-            if (it != infos_.end()) {
+            auto it = find_if(begin(infos_), end(infos_),
+                              [&s, &times](const pair<int, string>& p) {
+                                  return p.second == s;
+                              } );
+	        if (it != end(infos_)) {
                 it->first = -times;
             } else {
                 infos_.emplace_back(-times, s);
             }
-            sort(infos_.begin(), infos_.end());
-            if (infos_.size() > TOP_COUNT) {
+            sort(begin(infos_), end(infos_));
+            if (size(infos_) > TOP_COUNT) {
                 infos_.pop_back();
             }
         }
