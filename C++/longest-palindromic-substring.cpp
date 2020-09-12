@@ -73,6 +73,6 @@ private:
         while (left >= 0 && right < size(s) && s[left] == s[right]) {
             --left, ++right;
         }
-        return right - left + 1 - 2;
+        return (right - left + 1) - 2;
     }
 };
