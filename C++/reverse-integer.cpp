@@ -6,13 +6,16 @@ public:
     int reverse(int x) {
         int result = 0;
         while (x) {
-            auto prev = result;
+            if (result > numeric_limits<int>::max() / 10 ||
+                (result == numeric_limits<int>::max() / 10 && x % 10 > 7)) {
+                return 0;
+            }
+            if (result < numeric_limits<int>::min() /10 ||
+                (result == numeric_limits<int>::min() / 10 && x % 10 < -8)) {
+                return 0;
+            }
             result *= 10;
             result += x % 10;
-            if (result / 10 != prev) {
-                result = 0;
-                break;
-            }
             x /= 10;
         }
         return result;
