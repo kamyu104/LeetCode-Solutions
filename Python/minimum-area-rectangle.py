@@ -30,7 +30,7 @@ class Solution(object):
                 for i in xrange(j):
                     y1, y2 = p[x][i], p[x][j]
                     if (y1, y2) in lookup:
-                        result = min(result, (x-lookup[y1, y2]) * abs(y2-y1))
+                        result = min(result, (x-lookup[y1, y2]) * (y2-y1))
                     lookup[y1, y2] = x
         return result if result != float("inf") else 0
  
