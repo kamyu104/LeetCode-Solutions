@@ -8,15 +8,15 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        idx = [[] for _ in xrange(10)]
+        idxs = [[] for _ in xrange(10)]
         for i in reversed(xrange(len(s))):
-            idx[int(s[i])].append(i)
+            idxs[int(s[i])].append(i)
         for c in t:
             d = int(c)
-            if not idx[d]:
+            if not idxs[d]:
                 return False
             for k in xrange(d):  # a char can be moved left to the current position if it meets no smaller one
-                if idx[k] and idx[k][-1] < idx[d][-1]:
+                if idxs[k] and idxs[k][-1] < idxs[d][-1]:
                     return False
-            idx[d].pop()
+            idxs[d].pop()
         return True
