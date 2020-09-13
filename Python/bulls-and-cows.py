@@ -17,22 +17,14 @@ class Solution(object):
         :rtype: str
         """
         A, B = 0, 0
-        s_lookup, g_lookup = defaultdict(int), defaultdict(int)
+        lookup = defaultdict(int)
         for s, g in izip(secret, guess):
             if s == g:
                 A += 1
             else:
-                if s_lookup[g]:
-                    s_lookup[g] -= 1
-                    B += 1
-                else:
-                    g_lookup[g] += 1
-                if g_lookup[s]:
-                    g_lookup[s] -= 1
-                    B += 1
-                else:
-                    s_lookup[s] += 1
-
+                B += int(lookup[s] < 0) + int(lookup[g] > 0)
+                lookup[s] += 1
+                lookup[g] -= 1
         return "%dA%dB" % (A, B)
 
 
