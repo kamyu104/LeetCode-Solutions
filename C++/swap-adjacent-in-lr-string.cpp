@@ -1,6 +1,10 @@
 // Time:  O(n)
 // Space: O(1)
 
+// the followings are invariant if the number of 'X' in both strings are the same
+// 1. the ordering of 'L', 'R' in both strings are the same
+// 2. for each position (i, j) of paired 'L' character in both strings, i >= j
+// 3. for each position (i, j) of paired 'R' character in both strings, i <= j
 class Solution {
 public:
     bool canTransform(string start, string end) {
