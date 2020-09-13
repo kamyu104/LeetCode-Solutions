@@ -69,10 +69,11 @@ private:
 };
 
 // Time:  ctor:   O(m * n),
-//        update: O(logm + logn),
-//        query:  O(logm + logn)
+//        update: O(max(m, n)),
+//        query:  O(max(m, n))
 // Space: O(m * n)
-// Quad Segment Tree solution.
+// Quad Tree solution.
+// see complexity analysis of quad tree: https://apps.topcoder.com/forums/?module=Thread&threadID=633075
 class NumMatrix2 {
 public:
     NumMatrix2(vector<vector<int>> &matrix) : matrix_(matrix) {
