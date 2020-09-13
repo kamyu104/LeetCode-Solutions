@@ -10,11 +10,11 @@ public:
         }
         for (const auto& c : t) {
             int d = c - '0';
-            if (idx[d].empty()) {
+            if (empty(idx[d])) {
                 return false;
             }
             for (int i = 0; i < d; ++i) {  // a char can be moved left to the current position if it meets no smaller one
-                if (!idx[i].empty() && idx[i].back() < idx[d].back()) {
+                if (!empty(idx[i]) && idx[i].back() < idx[d].back()) {
                     return false;
                 }
             }
