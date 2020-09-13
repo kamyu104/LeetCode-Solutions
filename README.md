@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1581%20%2F%201581-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1585%20%2F%201585-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
@@ -292,6 +292,8 @@
 1566 | [Detect Pattern of Length M Repeated K or More Times](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/) | [C++](./C++/detect-pattern-of-length-m-repeated-k-or-more-times.cpp) [Python](./Python/detect-pattern-of-length-m-repeated-k-or-more-times.py) | _O(n)_ | _O(1)_      | Easy         ||
 1572 | [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/) | [C++](./C++/matrix-diagonal-sum.cpp) [Python](./Python/matrix-diagonal-sum.py) | _O(n)_ | _O(1)_      | Easy         ||
 1574 | [Shortest Subarray to be Removed to Make Array Sorted](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/) | [C++](./C++/shortest-subarray-to-be-removed-to-make-array-sorted.cpp) [Python](./Python/shortest-subarray-to-be-removed-to-make-array-sorted.py) | _O(n)_ | _O(1)_      | Medium         ||
+1582 | [Special Positions in a Binary Matrix](https://leetcode.com/problems/special-positions-in-a-binary-matrix/) | [C++](./C++/special-positions-in-a-binary-matrix.cpp) [Python](./Python/special-positions-in-a-binary-matrix.py) | _O(n^2)_ | _O(n)_      | Easy         ||
+1583 | [Count Unhappy Friends](https://leetcode.com/problems/count-unhappy-friends/) | [C++](./C++/count-unhappy-friends.cpp) [Python](./Python/count-unhappy-friends.py) | _O(n^2)_ | _O(n^2)_      | Medium         ||
 
 <br/>
 <div align="right">
@@ -1582,6 +1584,7 @@
 1568| [Minimum Number of Days to Disconnect Island](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/)| [C++](./C++/minimum-number-of-days-to-disconnect-island.cpp) [Python](./Python/minimum-number-of-days-to-disconnect-island.py) | _O(m^2 * n^2)_    | _O(m * n)_          | Medium           || DFS
 1578| [Minimum Deletion Cost to Avoid Repeating Letters](https://leetcode.com/problems/minimum-deletion-cost-to-avoid-repeating-letters/)| [C++](./C++/minimum-deletion-cost-to-avoid-repeating-letters.cpp) [Python](./Python/minimum-deletion-cost-to-avoid-repeating-letters.py) | _O(n)_    | _O(1)_          | Medium           ||
 1580| [Put Boxes Into the Warehouse II](https://leetcode.com/problems/put-boxes-into-the-warehouse-ii/)| [C++](./C++/put-boxes-into-the-warehouse-ii.cpp) [Python](./Python/put-boxes-into-the-warehouse-ii.py) | _O(nlogn)_    | _O(1)_          | Medium           | 🔒 |
+1585| [Check If String Is Transformable With Substring Sort Operations](https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations/)| [C++](./C++/check-if-string-is-transformable-with-substring-sort-operations.cpp) [Python](./Python/check-if-string-is-transformable-with-substring-sort-operations.py) | _O(n)_    | _O(n)_          | Hard           ||
 
 <br/>
 <div align="right">
@@ -1608,6 +1611,7 @@
 1489 | [Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/)  | [C++](./C++/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree.cpp) [Python](./Python/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree.py) | _O(nlogn)_| _O(n)_| Hard           || `Kruskal Algorithm` |
 1557 | [Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/)  | [C++](./C++/minimum-number-of-vertices-to-reach-all-nodes.cpp) [Python](./Python/minimum-number-of-vertices-to-reach-all-nodes.py) | _O(e)_| _O(n)_| Medium           ||| 
 1579 | [Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/)  | [C++](./C++/remove-max-number-of-edges-to-keep-graph-fully-traversable.cpp) [Python](./Python/remove-max-number-of-edges-to-keep-graph-fully-traversable.py) | _O(n + m)_| _O(n)_| Hard           || Union Find | 
+1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)  | [C++](./C++/min-cost-to-connect-all-points.cpp) [Python](./Python/min-cost-to-connect-all-points.py) | _O(n^2)_| _O(n)_| Medium           || Union Find, `Kruskal's Algorithm`, MST | 
 
 <br/>
 <div align="right">
