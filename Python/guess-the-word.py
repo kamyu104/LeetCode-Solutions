@@ -29,7 +29,7 @@ class Solution(object):
                   for i in xrange(len(wordlist))]
         possible = range(len(wordlist))
         n = 0
-        while possible and n < 6:
+        while n < 6:
             guess = solve(H, possible)
             n = master.guess(wordlist[guess])
             possible = [j for j in possible if H[guess][j] == n]
@@ -61,7 +61,7 @@ class Solution2(object):
                   for i in xrange(len(wordlist))]
         possible = range(len(wordlist))
         n = 0
-        while possible and n < 6:
+        while n < 6:
             guess = solve(H, possible)
             n = master.guess(wordlist[guess])
             possible = [j for j in possible if H[guess][j] == n]
