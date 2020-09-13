@@ -13,7 +13,7 @@ public:
             if (idx[d].empty()) {
                 return false;
             }
-            for (int i = 0; i < d; ++i) {  // a char can be moved to the current position if it meets no smaller one
+            for (int i = 0; i < d; ++i) {  // a char can be moved left to the current position if it meets no smaller one
                 if (!idx[i].empty() && idx[i].back() < idx[d].back()) {
                     return false;
                 }
