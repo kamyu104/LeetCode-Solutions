@@ -22,7 +22,7 @@ public:
                 } else if (nums[left] + nums[right] > target) {
                     --right;
                 } else {
-                    result.push_back({nums[i], nums[left], nums[right]});
+                    result.push_back({nums[left], nums[right], nums[i]});
                     while (left < right && nums[left] == nums[left + 1]) {
                         ++left;
                     }
