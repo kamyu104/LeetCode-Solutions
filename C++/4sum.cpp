@@ -14,7 +14,7 @@ public:
                 if (j != i + 1 && nums[j] == nums[j - 1]) {
                     continue;
                 }
-                int total = target - nums[i] - nums[j];
+                const auto& total = target - nums[i] - nums[j];
                 int left = j + 1, right = size(nums) - 1;
                 while (left < right) {
                     if (nums[left] + nums[right] == total) {
