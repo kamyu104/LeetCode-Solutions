@@ -8,21 +8,22 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        nums, result, min_diff, i = sorted(nums), float("inf"), float("inf"), 0
-        while i < len(nums) - 2:
-            if i == 0 or nums[i] != nums[i - 1]:
-                j, k = i + 1, len(nums) - 1
-                while j < k:
-                    diff = nums[i] + nums[j] + nums[k] - target
-                    if abs(diff) < min_diff:
-                        min_diff = abs(diff)
-                        result = nums[i] + nums[j] + nums[k]
-                    if diff < 0:
-                        j += 1
-                    elif diff > 0:
-                        k -= 1
-                    else:
-                        return target
-            i += 1
+        result, min_diff = 0, float("inf")
+        nums.sort()
+        for i in reversed(xrange(2, len(nums))):
+            if i+1 < len(nums) and nums[i] == nums[i+1]:
+                continue
+            left, right = 0, i-1
+            while left < right:
+                total = nums[left]+nums[right]+nums[i]
+                if total < target:
+                    left += 1
+                elif total > target:
+                    right -= 1
+                else:
+                    return target
+                if abs(total-target) < min_diff:
+                    min_diff = abs(total-target)
+                    result = total
         return result
 
