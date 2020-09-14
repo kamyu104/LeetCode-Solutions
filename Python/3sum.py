@@ -1,10 +1,38 @@
 # Time:  O(n^2)
 # Space: O(1)
 
-import collections
-
-
 class Solution(object):
+    def threeSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        result = []
+        nums.sort()
+        for i in reversed(xrange(2, len(nums))):
+            if i+1 < len(nums) and nums[i] == nums[i+1]:
+                continue
+            target = -nums[i]
+            left, right = 0, i-1
+            while left < right:
+                if nums[left]+nums[right] < target:
+                    left += 1
+                elif nums[left]+nums[right] > target:
+                    right -= 1
+                else:
+                    result.append([nums[left], nums[right], nums[i]])
+                    while left < right and nums[left] == nums[left+1]:
+                        left += 1
+                    while left < right and nums[right] == nums[right-1]:
+                        right -= 1
+                    left += 1
+                    right -= 1
+        return result
+
+
+# Time:  O(n^2)
+# Space: O(1)
+class Solution2(object):
     def threeSum(self, nums):
         """
         :type nums: List[int]
@@ -28,25 +56,4 @@ class Solution(object):
                             k -= 1
             i += 1
         return result
-
-    def threeSum2(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
-        d = collections.Counter(nums)
-        nums_2 = [x[0] for x in d.items() if x[1] > 1]
-        nums_new = sorted([x[0] for x in d.items()])
-        rtn = [[0, 0, 0]] if d[0] >= 3 else []
-        for i, j in enumerate(nums_new):
-            if j <= 0:
-                numss2 = nums_new[i + 1:]
-                for x, y in enumerate(numss2):
-                    if 0 - j - y in [j, y] and 0 - j - y in nums_2:
-                        if sorted([j, y, 0 - j - y]) not in rtn:
-                            rtn.append(sorted([j, y, 0 - j - y]))
-                    if 0 - j - y not in [j, y] and 0 - j - y in nums_new:
-                        if sorted([j, y, 0 - j - y]) not in rtn:
-                            rtn.append(sorted([j, y, 0 - j - y]))
-        return rtn
 
