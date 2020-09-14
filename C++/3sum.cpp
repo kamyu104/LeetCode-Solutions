@@ -3,10 +3,6 @@
 
 class Solution {
 public:
-    /**
-     * @param numbers : Give an array numbers of n integer
-     * @return : Find all unique triplets in the array which gives the sum of zero.
-     */
     vector<vector<int>> threeSum(vector<int> &nums) {
         sort(begin(nums), end(nums));
         vector<vector<int>> result;
