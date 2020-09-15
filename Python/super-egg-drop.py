@@ -17,7 +17,7 @@ class Solution(object):
             #    (2) f(n, K-1) = f(n-1, K-1)+1+f(n-1, K-2)
             # let g(n, K) = f(n, K)-f(n, K-1), (1)-(2)
             # => g(n, K) = g(n-1, K)+g(n-1, K-1), it is binomial coefficient
-            # => g(n, K) = C(n, K) = f(n, K)-f(n, K-1)
+            # => C(n, K) = g(n, K) = f(n, K)-f(n, K-1)
             # => f(n, K) = C(n, K)+f(n, K-1) = C(n, K) + C(n, K-1) + ... + C(n, 1) + f(n, 0) = sum(C(n, k) for k in [1, K])
             # => check sum(C(n, k) for k in [1, K]) >= N
             total, c = 0, 1
