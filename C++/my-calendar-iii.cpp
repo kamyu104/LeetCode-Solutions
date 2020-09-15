@@ -1,7 +1,7 @@
 // Time:  O(nlogn) ~ O(n^2)
 // Space: O(n)
 
-class MyCalendarThree{
+class MyCalendarThree {
 public:
     MyCalendarThree() {
         events_.emplace(-1, 0);
@@ -25,7 +25,7 @@ private:
 // Space: O(n)
 class MyCalendarThree2 {
 public:
-    MyCalendarThree() {
+    MyCalendarThree2() {
         
     }
     
