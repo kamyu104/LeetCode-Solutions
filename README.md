@@ -168,7 +168,7 @@
 0724 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | [C++](./C++/find-pivot-index.cpp) [Python](./Python/find-pivot-index.py) | _O(n)_ | _O(1)_ | Easy ||
 0729 | [My Calendar I](https://leetcode.com/problems/my-calendar-i/) | [C++](./C++/my-calendar-i.cpp) [Python](./Python/my-calendar-i.py) | _O(nlogn)_ | _O(n)_ | Medium ||
 0731 | [My Calendar II](https://leetcode.com/problems/my-calendar-ii/) | [C++](./C++/my-calendar-ii.cpp) [Python](./Python/my-calendar-ii.py) | _O(n^2)_ | _O(n)_ | Medium ||
-0732 | [My Calendar III](https://leetcode.com/problems/my-calendar-iii/) | [C++](./C++/my-calendar-iii.cpp) [Python](./Python/my-calendar-iii.py) | _O(n^2)_ | _O(n)_ | Hard ||
+0732 | [My Calendar III](https://leetcode.com/problems/my-calendar-iii/) | [C++](./C++/my-calendar-iii.cpp) [Python](./Python/my-calendar-iii.py) | _O(nlogn)_ ~ _O(n^2)_ | _O(n)_ | Hard ||
 0747 | [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/) | [C++](./C++/largest-number-at-least-twice-of-others.cpp) [Python](./Python/largest-number-at-least-twice-of-others.py) | _O(n)_ | _O(1)_ | Easy ||
 0755 | [Pour Water](https://leetcode.com/problems/pour-water/) | [C++](./C++/pour-water.cpp) [Python](./Python/pour-water.py) | _O(v * n)_ | _O(1)_ | Medium ||
 0766 | [Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/) | [C++](./C++/toeplitz-matrix.cpp) [Python](./Python/toeplitz-matrix.py) | _O(m * n)_ | _O(1)_ | Easy ||
