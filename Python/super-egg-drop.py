@@ -22,7 +22,7 @@ class Solution(object):
             # => C(n, K) = g(n, K) = f(n, K)-f(n, K-1),
             #    which also implies if we have one more egg with n moves and x-1 egges, we can have more C(n, x) floors solvable
             # => f(n, K) = C(n, K)+f(n, K-1) = C(n, K) + C(n, K-1) + ... + C(n, 1) + f(n, 0) = sum(C(n, k) for k in [1, K])
-            # => all we have to do is to check sum(C(n, k) for k in [1, K]) >= N
+            # => all we have to do is to check sum(C(n, k) for k in [1, K]) >= N,
             #    if true, there must exist a 1-to-1 mapping from each F in [1, N] to each sucess and failure sequence of every C(n, k) combinations for k in [1, K]
             total, c = 0, 1
             for k in xrange(1, K+1):
