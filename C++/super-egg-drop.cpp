@@ -26,7 +26,7 @@ private:
         // => f(n, K) = (X+f(n-1, K-1))-(X-f(n-1, K))+1 = f(n-1, K-1)+f(n-1, K)+1
         // => (1) f(n, K)   = f(n-1, K)  +1+f(n-1, K-1)
         //    (2) f(n, K-1) = f(n-1, K-1)+1+f(n-1, K-2)
-        // let g(n, K) = f(n, K)-f(n, K-1), and we substract (1) by (2)
+        // let g(n, K) = f(n, K)-f(n, K-1), and we subtract (1) by (2)
         // => g(n, K) = g(n-1, K)+g(n-1, K-1), obviously, it is binomial coefficient
 	    // => C(n, K) = g(n, K) = f(n, K)-f(n, K-1),
         //    which also implies if we have one more egg with n moves and x-1 egges, we can have more C(n, x) floors solvable
