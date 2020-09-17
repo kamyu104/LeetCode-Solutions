@@ -9,10 +9,11 @@ class Solution(object):
         :rtype: int
         """
         DIGIT = 1
-        result = int(DIGIT == 0)
+        is_zero = int(DIGIT == 0)
+        result = is_zero
         base = 1
         while n >= base:
-            result += (n//(10*base)-int(DIGIT == 0))*base + \
+            result += (n//(10*base)-is_zero)*base + \
                       min(base, max(n%(10*base) - DIGIT*base + 1, 0))
             base *= 10
         return result
