@@ -9,8 +9,8 @@ class Solution(object):
         """
         pivot, result = 1, 0
         while n >= pivot:
-            result += (n//(10*pivot))*pivot + \
-                      min(pivot, max(n%(10*pivot) - pivot + 1, 0))
+            result += (n//(10*pivot))*pivot +
+                       min(pivot, max(n%(10*pivot) - pivot + 1, 0))
             pivot *= 10
         return result
 
