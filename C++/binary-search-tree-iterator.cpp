@@ -33,7 +33,7 @@ private:
         }
     }
 
-	vector<TreeNode *> stk_;
+    vector<TreeNode *> stk_;
 };
 
 /**
