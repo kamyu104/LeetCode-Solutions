@@ -1,6 +1,7 @@
 // Time:  O(n) on average, using Median of Medians could achieve O(n) (Intro Select)
 // Space: O(1)
 
+// optimized for duplicated nums
 class Solution {
 public:
     int findKthLargest(vector<int>& nums, int k) {
