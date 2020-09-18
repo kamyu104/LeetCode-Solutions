@@ -21,9 +21,9 @@ public:
     }
     
     int next() {
-        TreeNode *curr = stk_.back(); stk_.pop_back();
-        traverseLeft(curr->right);
-        return curr->val;
+        TreeNode *node = stk_.back(); stk_.pop_back();
+        traverseLeft(node->right);
+        return node->val;
     }
 
 private:
