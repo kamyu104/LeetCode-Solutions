@@ -4,6 +4,48 @@
 class Solution {
 public:
     int findKthLargest(vector<int>& nums, int k) {
+        return nth_element(nums, k - 1);
+    }
+    
+private:
+    int nth_element(vector<int>& nums, int n) {
+        int left = 0, right = size(nums) - 1;
+        default_random_engine gen((random_device())());
+        while (left <= right) {
+            // Generates a random int in [left, right].
+            uniform_int_distribution<int> dis(left, right);
+            int pivot_idx = dis(gen);
+            const auto& [mid_left, mid_right] = TriPartition(left, right, nums[pivot_idx], &nums);
+            if (mid_left <= n && n <= mid_right) {
+                break;
+            } else if (mid_left > n) {
+                right = mid_left - 1;
+            } else {  // mid_right < n.
+                left = mid_right + 1;
+            }
+        }
+        return nums[n];
+    }
+    pair<int, int> TriPartition(int left, int right, int target, vector<int> *nums) {
+        for (int mid = left; mid <= right;) {
+            if ((*nums)[mid] == target) {
+                ++mid;
+            } else if ((*nums)[mid] > target) {
+                swap((*nums)[left++], (*nums)[mid]);
+                ++mid;
+            } else {
+                swap((*nums)[mid], (*nums)[right--]);
+            }
+        }
+        return {left, right};
+    }
+};
+
+// Time:  O(n) on average, using Median of Medians could achieve O(n) (Intro Select)
+// Space: O(1)
+class Solution2 {
+public:
+    int findKthLargest(vector<int>& nums, int k) {
         int left = 0, right = nums.size() - 1;
         default_random_engine gen((random_device())());
         while (left <= right) {
@@ -39,7 +81,7 @@ public:
 
 // Time:  O(n) ~ O(n^2)
 // Space: O(1)
-class Solution2 {
+class Solution3 {
 public:
     int findKthLargest(vector<int>& nums, int k) {
         nth_element(nums.begin(), next(nums.begin(), k - 1), nums.end(), greater<int>());
