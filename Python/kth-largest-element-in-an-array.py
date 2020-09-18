@@ -4,6 +4,7 @@
 from random import randint
 
 
+# optimized for duplicated nums
 class Solution(object):
     def findKthLargest(self, nums, k):
         """
