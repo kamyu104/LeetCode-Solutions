@@ -1650,7 +1650,7 @@
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 0146| [LRU Cache](https://leetcode.com/problems/lru-cache/)     | [C++](./C++/lru-cache.cpp) [Python](./Python/lru-cache.py)  | _O(1)_ | _O(k)_ | Hard || OrderedDict
 0225| [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)     | [C++](./C++/implement-stack-using-queues.cpp) [Python](./Python/implement-stack-using-queues.py)  | push: _O(n)_, pop: _O(1)_, top: _O(1)_ | _O(n)_ | Easy ||
-0173| [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | [C++](./C++/binary-search-tree-iterator.cpp) [Python](./Python/binary-search-tree-iterator.py) | _O(1)_| _O(h)_| Medium ||   
+0173| [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | [C++](./C++/binary-search-tree-iterator.cpp) [Python](./Python/binary-search-tree-iterator.py) | _O(1)_, amortized | _O(h)_| Medium ||   
 0284| [Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)| [C++](./C++/peeking-iterator.cpp) [Python](./Python/peeking-iterator.py) | _O(1)_ | _O(1)_ | Medium ||
 0348| [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) | [C++](./C++/design-tic-tac-toe.cpp) [Python](./Python/design-tic-tac-toe.py) | _O(1)_ | _O(n^2)_ | Medium |🔒||
 0353| [Design Snake Game](https://leetcode.com/problems/design-snake-game/) | [C++](./C++/design-snake-game.cpp) [Python](./Python/design-snake-game.py) | _O(1)_ | _O(s)_ | Medium |🔒| Deque |
@@ -1692,7 +1692,7 @@
 1483| [Kth Ancestor of a Tree Node](https://leetcode.com/problems/kth-ancestor-of-a-tree-node/) | [C++](./C++/kth-ancestor-of-a-tree-node.cpp) [Python](./Python/kth-ancestor-of-a-tree-node.py) | ctor: _O(n * logh)_<br>get: _O(logh)_ | _O(n * logh)_ | Hard || DP, Binary Jump |
 1500| [Design a File Sharing System](https://leetcode.com/problems/design-a-file-sharing-system/) | [C++](./C++/design-a-file-sharing-system.cpp) [Python](./Python/design-a-file-sharing-system.py) | ctor: _O(1)_<br>join: _O(logu + c)_<br>leave: _O(logu + c)_<br>request: _O(u)_ | _O(u * c)_ | Medium | 🔒 | |
 1570| [Dot Product of Two Sparse Vectors](https://leetcode.com/problems/dot-product-of-two-sparse-vectors/) | [C++](./C++/dot-product-of-two-sparse-vectors.cpp) [Python](./Python/dot-product-of-two-sparse-vectors.py) | ctor: _O(n)_<br>dot_product: _O(min(n, m))_ | _O(n)_ | Medium | 🔒 | |
-1586| [Binary Search Tree Iterator II](https://leetcode.com/problems/binary-search-tree-iterator-ii/) | [C++](./C++/binary-search-tree-iterator-ii.cpp) [Python](./Python/binary-search-tree-iterator-ii.py) | _O(1)_| _O(h)_| Medium | 🔒 |   
+1586| [Binary Search Tree Iterator II](https://leetcode.com/problems/binary-search-tree-iterator-ii/) | [C++](./C++/binary-search-tree-iterator-ii.cpp) [Python](./Python/binary-search-tree-iterator-ii.py) | _O(1)_, amortized | _O(h)_| Medium | 🔒 |   
 
 <br/>
 <div align="right">
