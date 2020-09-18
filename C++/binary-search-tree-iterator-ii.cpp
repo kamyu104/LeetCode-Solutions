@@ -24,9 +24,9 @@ public:
     
     int next() {
         if (++pos_ == size(vals_)) {
-            TreeNode *curr = stk_.back(); stk_.pop_back();
-            traverseLeft(curr->right);
-            vals_.emplace_back(curr->val);
+            TreeNode *node = stk_.back(); stk_.pop_back();
+            traverseLeft(node->right);
+            vals_.emplace_back(node->val);
         }
         return vals_[pos_];
     }
