@@ -5,11 +5,12 @@
 class Solution {
 public:
     int findKthLargest(vector<int>& nums, int k) {
-        return nth_element(nums, k - 1);
+        nth_element(nums, k - 1);
+        return nums[k - 1];
     }
     
 private:
-    int nth_element(vector<int>& nums, int n) {
+    void nth_element(vector<int>& nums, int n) {
         int left = 0, right = size(nums) - 1;
         default_random_engine gen((random_device())());
         while (left <= right) {
@@ -18,15 +19,15 @@ private:
             int pivot_idx = dis(gen);
             const auto& [pivot_left, pivot_right] = TriPartition(left, right, nums[pivot_idx], &nums);
             if (pivot_left <= n && n <= pivot_right) {
-                break;
+                return;
             } else if (pivot_left > n) {
                 right = pivot_left - 1;
             } else {  // mid_right < n.
                 left = pivot_right + 1;
             }
         }
-        return nums[n];
     }
+    
     pair<int, int> TriPartition(int left, int right, int target, vector<int> *nums) {
         for (int mid = left; mid <= right;) {
             if ((*nums)[mid] == target) {
