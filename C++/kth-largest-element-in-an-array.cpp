@@ -16,13 +16,13 @@ private:
             // Generates a random int in [left, right].
             uniform_int_distribution<int> dis(left, right);
             int pivot_idx = dis(gen);
-            const auto& [mid_left, mid_right] = TriPartition(left, right, nums[pivot_idx], &nums);
-            if (mid_left <= n && n <= mid_right) {
+            const auto& [pivot_left, pivot_right] = TriPartition(left, right, nums[pivot_idx], &nums);
+            if (pivot_left <= n && n <= pivot_right) {
                 break;
-            } else if (mid_left > n) {
-                right = mid_left - 1;
+            } else if (pivot_left > n) {
+                right = pivot_left - 1;
             } else {  // mid_right < n.
-                left = mid_right + 1;
+                left = pivot_right + 1;
             }
         }
         return nums[n];
