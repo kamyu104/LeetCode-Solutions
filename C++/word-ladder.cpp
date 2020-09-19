@@ -1,5 +1,5 @@
-// Time:  O(26 * d * l) = O(d * l), d is the size of wordlist, l is the max length of words
-// Space: O(d * l)
+// Time:  O(b^(d/2)), b is the branch factor of bfs, d is the result depth
+// Space: O(w * l), w is the number of words, l is the max length of words
 
 // two-end bfs
 class Solution {
@@ -45,8 +45,8 @@ public:
     }
 };
 
-// Time:  O(26 * d * l) = O(d * l), d is the size of wordlist, l is the max length of words
-// Space: O(d * l)
+// Time:  O(b^d), b is the branch factor of bfs, d is the result depth
+// Space: O(w * l), w is the number of words, l is the max length of words
 class Solution2 {
 public:
     int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
