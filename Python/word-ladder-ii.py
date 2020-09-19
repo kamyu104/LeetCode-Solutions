@@ -13,12 +13,13 @@ class Solution(object):
         :type wordList: List[str]
         :rtype: List[List[str]]
         """
-        def backtracking(tree, word): 
-            return [[word]] if word == endWord else [[word] + path for new_word in tree[word] for path in backtracking(tree, new_word)]
+        def backtracking(tree, beginWord, word): 
+            return [[beginWord]] if word == beginWord else [path + [word] for new_word in tree[word] for path in backtracking(tree, beginWord, new_word)]
 
-        if endWord not in wordList:
+        words = set(wordList)
+        if endWord not in words:
             return []
-        tree, words = collections.defaultdict(set), set(wordList)
+        tree = collections.defaultdict(set)
         is_found, left, right, is_reversed = False, {beginWord}, {endWord},  False
         while left and not is_found:
             words -= set(left)
@@ -30,11 +31,11 @@ class Solution(object):
                             is_found = True
                         else: 
                             new_left.add(new_word)
-                        tree[new_word].add(word) if is_reversed else tree[word].add(new_word)
+                        tree[new_word].add(word) if not is_reversed else tree[word].add(new_word)
             left = new_left
             if len(left) > len(right): 
                 left, right, is_reversed = right, left, not is_reversed
-        return backtracking(tree, beginWord)
+        return backtracking(tree, beginWord, endWord)
 
 
 # Time:  O(n * d), n is length of string, d is size of dictionary
