@@ -1,5 +1,7 @@
-# Time:  O(n * d), n is length of string, d is size of dictionary
-# Space: O(d)
+# Time:  O(26 * d * l + r), d is the size of wordlist,
+#                         , l is the max length of words
+#                         , r is the total size of result
+# Space: O(d * l)
 
 from collections import defaultdict
 from string import ascii_lowercase
