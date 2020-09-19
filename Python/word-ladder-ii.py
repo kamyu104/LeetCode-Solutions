@@ -22,7 +22,7 @@ class Solution(object):
         if endWord not in words:
             return []
         tree = defaultdict(set)
-        is_found, left, right, is_reversed = False, {beginWord}, {endWord},  False
+        is_found, left, right, is_reversed = False, {beginWord}, {endWord}, False
         while left and not is_found:
             words -= set(left)
             new_left = set()
