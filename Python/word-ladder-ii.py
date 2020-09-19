@@ -21,7 +21,7 @@ class Solution(object):
             return []
         tree = defaultdict(set)
         is_found, left, right, is_reversed = False, {beginWord}, {endWord}, False
-        while left and not is_found:
+        while left:
             words -= set(left)
             new_left = set()
             for word in left:
@@ -33,6 +33,8 @@ class Solution(object):
                     else: 
                         new_left.add(new_word)
                     tree[new_word].add(word) if not is_reversed else tree[word].add(new_word)
+            if is_found:
+                break
             left = new_left
             if len(left) > len(right): 
                 left, right, is_reversed = right, left, not is_reversed
