@@ -7,7 +7,7 @@ class Solution(object):
         :type arr: List[int]
         :rtype: int
         """
-        def ceil(a, b):
+        def ceil_divide(a, b):
             return (a+(b-1))//b
  
         # begin\pos |0   i       (n-1)
@@ -24,4 +24,4 @@ class Solution(object):
         # because the number of 1 is always equal to or one more than the number of 0, (always begins with 1010... and alternatively flips)
         # so there are ceil((i-0+1)*((len(arr)-1)-i+1)/2) odd length subarrays with x
         # 
-        return sum(x * ceil((i-0+1)*((len(arr)-1)-i+1), 2) for i, x in enumerate(arr))
+        return sum(x * ceil_divide((i-0+1)*((len(arr)-1)-i+1), 2) for i, x in enumerate(arr))
