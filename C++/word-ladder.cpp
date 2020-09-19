@@ -5,30 +5,30 @@
 class Solution {
 public:
     int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
-        unordered_set<string> lookup(cbegin(wordList), cend(wordList));
-        if (!lookup.count(endWord)) {
+        unordered_set<string> words(cbegin(wordList), cend(wordList));
+        if (!words.count(endWord)) {
             return 0;
         }
-        lookup.erase(endWord);
         int ladder = 2;
-        for (unordered_set<string> left = {beginWord}, right = {endWord};
-             !left.empty() && !right.empty();
-             ++ladder) {
-            if (left.size() > right.size()) {
-                swap(left, right);
+        unordered_map<string, unordered_set<string>> tree;
+        unordered_set<string> left = {beginWord}, right = {endWord};
+        while (!empty(left)) {
+            for (const auto& word : left) {
+                words.erase(word);
             }
             unordered_set<string> new_left;
             for (const auto& word : left) {
                 auto new_word = word;
-                for (int i = 0; i < new_word.length(); ++i) {
+                for (int i = 0; i < size(new_word); ++i) {
                     char prev = new_word[i];
                     for (int j = 0; j < 26; ++j) {
                         new_word[i] = 'a' + j;
+                        if (!words.count(new_word)) {
+                            continue;
+                        }
                         if (right.count(new_word)) {
                             return ladder;
-                        }
-                        if (lookup.count(new_word)) {
-                            lookup.erase(new_word);
+                        } else {
                             new_left.emplace(new_word);
                         }
                     }
@@ -36,6 +36,10 @@ public:
                 }
             }
             left = move(new_left);
+            ++ladder;
+            if (size(left) > size(right)) {
+                swap(left, right);
+            }
         }
         return 0;
     }
