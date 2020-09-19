@@ -16,7 +16,7 @@ class Solution(object):
         words = set(wordList)
         if endWord not in words:
             return 0
-        is_found, left, right, is_reversed = False, {beginWord}, {endWord},  False
+        left, right = {beginWord}, {endWord}
         ladder = 2
         while left:
             words -= set(left)
@@ -32,7 +32,7 @@ class Solution(object):
             left = new_left
             ladder += 1
             if len(left) > len(right): 
-                left, right, is_reversed = right, left, not is_reversed
+                left, right = right, left
         return 0
 
 
