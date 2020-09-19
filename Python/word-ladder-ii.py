@@ -26,12 +26,13 @@ class Solution(object):
             new_left = set()
             for word in left:
                 for new_word in [word[:i]+c+word[i+1:] for i in xrange(len(beginWord)) for c in ascii_lowercase]:
-                    if new_word in words:
-                        if new_word in right: 
-                            is_found = True
-                        else: 
-                            new_left.add(new_word)
-                        tree[new_word].add(word) if not is_reversed else tree[word].add(new_word)
+                    if new_word not in words:
+                        continue
+                    if new_word in right: 
+                        is_found = True
+                    else: 
+                        new_left.add(new_word)
+                    tree[new_word].add(word) if not is_reversed else tree[word].add(new_word)
             left = new_left
             if len(left) > len(right): 
                 left, right, is_reversed = right, left, not is_reversed
