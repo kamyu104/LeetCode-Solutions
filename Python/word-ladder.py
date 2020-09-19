@@ -13,9 +13,9 @@ class Solution(object):
         :type wordList: List[str]
         :rtype: int
         """
-        if endWord not in wordList:
-            return 0
         words = set(wordList)
+        if endWord not in words:
+            return 0
         is_found, left, right, is_reversed = False, {beginWord}, {endWord},  False
         ladder = 2
         while left:
@@ -23,11 +23,12 @@ class Solution(object):
             new_left = set()
             for word in left:
                 for new_word in [word[:i]+c+word[i+1:] for i in xrange(len(beginWord)) for c in ascii_lowercase]:
-                    if new_word in words:
-                        if new_word in right: 
-                            return ladder
-                        else: 
-                            new_left.add(new_word)
+                    if new_word not in words:
+                        continue
+                    if new_word in right: 
+                        return ladder
+                    else: 
+                        new_left.add(new_word)
             left = new_left
             ladder += 1
             if len(left) > len(right): 
