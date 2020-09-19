@@ -11,7 +11,7 @@ public:
         unordered_map<string, unordered_set<string>> tree;
         unordered_set<string> left = {beginWord}, right = {endWord};
         bool is_found = false, is_reversed = false;
-        while (!empty(left) && !is_found) {
+        while (!empty(left)) {
             for (const auto& word : left) {
                 words.erase(word);
             }
@@ -38,6 +38,9 @@ public:
                     }
                     new_word[i] = prev;
                 }
+            }
+            if (is_found) {
+                break;
             }
             left = move(new_left);
             if (size(left) > size(right)) {
