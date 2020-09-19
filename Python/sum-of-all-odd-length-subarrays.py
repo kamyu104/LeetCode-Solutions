@@ -10,12 +10,12 @@ class Solution(object):
         def ceil(a, b):
             return (a+(b-1))//b
  
-        # begin\pos | 0  i       (n-1)
+        # begin\pos |0   i       (n-1)
         # ----------------------------
-        # 0            --101....      ↑
-        # 1             -010....     i-0+1
-        # i              101....      ↓
-        #                ← (n-1-i+1) →
+        # 0          --101....      ↑
+        # 1           -010....    i-0+1
+        # i            101....      ↓
+        #              ← (n-1-i+1) →
         #
         # for each number x with its position i, we want to know how many odd length subarrays is with x,
         # as the graph depicted above,
