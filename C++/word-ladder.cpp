@@ -9,6 +9,7 @@ public:
         if (!lookup.count(endWord)) {
             return 0;
         }
+        lookup.erase(endWord);
         int ladder = 2;
         for (unordered_set<string> left = {beginWord}, right = {endWord};
              !left.empty() && !right.empty();
