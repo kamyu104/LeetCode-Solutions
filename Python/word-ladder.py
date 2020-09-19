@@ -13,27 +13,26 @@ class Solution(object):
         :type wordList: List[str]
         :rtype: int
         """
-        lookup = set(wordList)
-        if endWord not in lookup:
+        if endWord not in wordList:
             return 0
-        lookup.remove(endWord)
+        tree, words = collections.defaultdict(set), set(wordList)
+        is_found, left, right, is_reversed = False, {beginWord}, {endWord},  False
         ladder = 2
-        left, right = set([beginWord]), set([endWord])
-        while left and right:
-            if len(left) > len(right):
-                left, right = right, left
-            new_left = []
+        while left:
+            words -= set(left)
+            new_left = set()
             for word in left:
-                for i in xrange(len(word)):
-                    for j in ascii_lowercase:
-                        new_word = word[:i] + j + word[i+1:]
-                        if new_word in right:
+                for new_word in [word[:i]+c+word[i+1:] for i in xrange(len(beginWord)) for c in ascii_lowercase]:
+                    if new_word in words:
+                        if new_word in right: 
                             return ladder
-                        if new_word in lookup:
-                            lookup.remove(new_word)
-                            new_left.append(new_word)
+                        else: 
+                            new_left.add(new_word)
+                        tree[new_word].add(word) if is_reversed else tree[word].add(new_word)
             left = new_left
             ladder += 1
+            if len(left) > len(right): 
+                left, right, is_reversed = right, left, not is_reversed
         return 0
 
 
