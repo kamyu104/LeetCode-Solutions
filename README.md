@@ -1139,7 +1139,7 @@
 0107| [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)| [C++](./C++/binary-tree-level-order-traversal-ii.cpp) [Python](./Python/binary-tree-level-order-traversal-ii.py) | _O(n)_| _O(n)_| Easy  ||
 0103| [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)| [Python](./Python/binary-tree-zigzag-level-order-traversal.py) | _O(n)_| _O(n)_| Medium  ||  
 0117| [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)|[Python](./Python/populating-next-right-pointers-in-each-node-ii.py)| _O(n)_ | _O(1)_ | Hard ||
-0127| [Word Ladder](https://leetcode.com/problems/word-ladder/)|[C++](./C++/word-ladder.cpp) [Python](./Python/word-ladder.py) | _O(d * l)_      | _O(d * l)_          | Medium         ||
+0127| [Word Ladder](https://leetcode.com/problems/word-ladder/)|[C++](./C++/word-ladder.cpp) [Python](./Python/word-ladder.py) | _O(d * l)_      | _O(d * l)_          | Medium         || Bi-BFS
 0130| [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)|[C++](./C++/surrounded-regions.cpp) [Python](./Python/surrounded-regions.py)| _O(m * n)_ | _O(m + n)_ | Medium         ||
 0133| [Clone Graph](https://leetcode.com/problems/clone-graph/)| [Python](./Python/clone-graph.py)   | _O(n)_          | _O(n)_          | Medium         ||
 0207| [Course Schedule](https://leetcode.com/problems/course-schedule/)| [C++](./C++/course-schedule.cpp) [Python](./Python/course-schedule.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         || Topological Sort |
@@ -1281,7 +1281,7 @@
 0093| [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [Python](./Python/restore-ip-addresses.py) | _O(1)_ | _O(1)_ | Medium         ||
 0078| [Subsets](https://leetcode.com/problems/subsets/)       | [C++](./C++/subsets.cpp)  [Python](./Python/subsets.py)    | _O(n * 2^n)_    | _O(1)_          | Medium         ||
 0090| [Subsets II](https://leetcode.com/problems/subsets-ii/)    | [C++](./C++/subsets-ii.cpp) [Python](./Python/subsets-ii.py) | _O(n * 2^n)_    | _O(1)_          | Medium         ||
-0126| [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/)   |[Python](./Python/word-ladder-ii.py) | _O(n * d)_ | _O(d)_         | Hard         ||
+0126| [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/)   |[C++](./C++/word-ladder-ii.py) [Python](./Python/word-ladder-ii.py) | _O(n * l + r)_ | _O(n * l)_         | Hard         || Bi-BFS
 0131| [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | [Python](./Python/palindrome-partitioning.py) | _O(n^2)_ ~ _O(2^n)_ | _O(n^2)_ | Medium ||
 0140| [Word Break II](https://leetcode.com/problems/word-break-ii/)  | [C++](./C++/word-break-ii.cpp) [Python](./Python/word-break-ii.py) |  _O(n * l^2 + n * r)_      | _O(n^2)_       | Hard           ||
 0212| [Word Search II](https://leetcode.com/problems/word-search-ii/) | [C++](./C++/word-search-ii.cpp) [Python](./Python/word-search-ii.py) | _O(m * n * 3^h)_ | _O(t)_  | Hard         | LintCode | Trie, DFS
