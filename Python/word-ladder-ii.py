@@ -21,7 +21,7 @@ class Solution(object):
         words = set(wordList)
         if endWord not in words:
             return []
-        tree = collections.defaultdict(set)
+        tree = defaultdict(set)
         is_found, left, right, is_reversed = False, {beginWord}, {endWord},  False
         while left and not is_found:
             words -= set(left)
