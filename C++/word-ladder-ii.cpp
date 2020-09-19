@@ -1,7 +1,5 @@
-// Time:  O(26 * d * l + r), d is the size of wordlist,
-//                         , l is the max length of words
-//                         , r is the total size of result
-// Space: O(d * l)
+// Time:  O(b^(d/2)), b is the branch factor of bfs, d is the result depth
+// Space: O(w * l), w is the number of words, l is the max length of words
 
 class Solution {
 public:
