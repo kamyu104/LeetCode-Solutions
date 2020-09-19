@@ -13,6 +13,40 @@ class Solution(object):
         :type wordList: List[str]
         :rtype: List[List[str]]
         """
+        def backtracking(tree, word): 
+            return [[word]] if word == endWord else [[word] + path for new_word in tree[word] for path in backtracking(tree, new_word)]
+
+        if endWord not in wordList:
+            return []
+        tree, words = collections.defaultdict(set), set(wordList)
+        is_found, left, right, is_reversed = False, {beginWord}, {endWord},  False
+        while left and not is_found:
+            words -= set(left)
+            new_left = set()
+            for word in left:
+                for new_word in [word[:i]+c+word[i+1:] for i in xrange(len(beginWord)) for c in ascii_lowercase]:
+                    if new_word in words:
+                        if new_word in right: 
+                            is_found = True
+                        else: 
+                            new_left.add(new_word)
+                        tree[new_word].add(word) if is_reversed else tree[word].add(new_word)
+            left = new_left
+            if len(left) > len(right): 
+                left, right, is_reversed = right, left, not is_reversed
+        return backtracking(tree, beginWord)
+
+
+# Time:  O(n * d), n is length of string, d is size of dictionary
+# Space: O(d)
+class Solution2(object):
+    def findLadders(self, beginWord, endWord, wordList):
+        """
+        :type beginWord: str
+        :type endWord: str
+        :type wordList: List[str]
+        :rtype: List[List[str]]
+        """
         dictionary = set(wordList)
         result, cur, visited, found, trace = [], [beginWord], set([beginWord]), False, defaultdict(list)
 
@@ -39,8 +73,11 @@ class Solution(object):
 
     def backtrack(self, result, trace, path, word):
         if not trace[word]:
-            result.append([word] + path)
+            path.append(word)
+            result.append(path[::-1])
+            path.pop()
         else:
             for prev in trace[word]:
-                self.backtrack(result, trace, [word] + path, prev)
-
+                path.append(word)
+                self.backtrack(result, trace, path, prev)
+                path.pop()
