@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1587%20%2F%201587-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1595%20%2F%201595-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
@@ -421,6 +421,7 @@
 1556| [Thousand Separator](https://leetcode.com/problems/thousand-separator/) | [C++](./C++/thousand-separator.cpp) [Python](./Python/thousand-separator.py) | _O(n)_ | _O(1)_ | Easy |||
 1573| [Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string/) | [C++](./C++/number-of-ways-to-split-a-string.cpp) [Python](./Python/number-of-ways-to-split-a-string.py) | _O(n)_ | _O(1)_ | Medium |||
 1576| [Replace All ?'s to Avoid Consecutive Repeating Characters](https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/) | [C++](./C++/replace-all-s-to-avoid-consecutive-repeating-characters.cpp) [Python](./Python/replace-all-s-to-avoid-consecutive-repeating-characters.py) | _O(n)_ | _O(1)_ | Easy |||
+1592| [Rearrange Spaces Between Words](https://leetcode.com/problems/rearrange-spaces-between-words/) | [C++](./C++/rearrange-spaces-between-words.cpp) [Python](./Python/rearrange-spaces-between-words.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -732,6 +733,7 @@
 1452| [People Whose List of Favorite Companies Is Not a Subset of Another List](https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list/) | [C++](./C++/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list.cpp) [Python](./Python/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list.py) | _O(n * m * l + n^2 * m)_   | _O(n * m * l)_        | Medium         ||
 1487| [Making File Names Unique](https://leetcode.com/problems/making-file-names-unique/) | [C++](./C++/making-file-names-unique.cpp) [Python](./Python/making-file-names-unique.py) | _O(n)_   | _O(n)_        | Medium         ||
 1577| [Number of Ways Where Square of Number Is Equal to Product of Two Numbers](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) | [C++](./C++/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers.cpp) [Python](./Python/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers.py) | _O(m * n)_   | _O(m + n)_        | Medium         ||
+1590| [Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p/) |[C++](./C++/make-sum-divisible-by-p.cpp)  [Python](./Python/make-sum-divisible-by-p.py) | _O(n)_ | _O(p)_ | Medium         | variant of [Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/) |
 
 <br/>
 <div align="right">
@@ -931,6 +933,7 @@
 1509| [Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/) | [C++](./C++/minimum-difference-between-largest-and-smallest-value-in-three-moves.cpp) [Python](./Python/minimum-difference-between-largest-and-smallest-value-in-three-moves.py) | _O(n + klogk)_   | _O(1)_        | Medium         || Quick Select
 1523| [Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/) | [C++](./C++/count-odd-numbers-in-an-interval-range.cpp) [Python](./Python/count-odd-numbers-in-an-interval-range.py) | _O(1)_   | _O(1)_        | Easy         ||
 1561| [Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/) | [C++](./C++/maximum-number-of-coins-you-can-get.cpp) [Python](./Python/maximum-number-of-coins-you-can-get.py) | _O(nlogn)_   | _O(1)_        | Medium         ||
+1588| [Sum of All Odd Length Subarrays](https://leetcode.com/problems/sum-of-all-odd-length-subarrays/) | [C++](./C++/sum-of-all-odd-length-subarrays.cpp) [Python](./Python/sum-of-all-odd-length-subarrays.py) | _O(n)_   | _O(1)_        | Easy         ||
 
 <br/>
 <div align="right">
@@ -1307,6 +1310,7 @@
 1258| [Synonymous Sentences](https://leetcode.com/problems/synonymous-sentences/) | [C++](./C++/synonymous-sentences.cpp) [Python](./Python/synonymous-sentences.py)  | _O(p * l * log(p * l))_ | _O(p * l)_ | Medium         || Union Find |
 1307| [Verbal Arithmetic Puzzle](https://leetcode.com/problems/verbal-arithmetic-puzzle/) | [C++](./C++/verbal-arithmetic-puzzle.cpp) [Python](./Python/verbal-arithmetic-puzzle.py)  | _O(10! * n * l)_ | _O(n * l)_ | Hard         |||
 1379 | [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) | [C++](./C++/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.cpp) [Python](./Python/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.py) | _O(n)_ | _O(h)_      | Medium         || Stack |
+1593 | [Split a String Into the Max Number of Unique Substrings](https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/) | [C++](./C++/split-a-string-into-the-max-number-of-unique-substrings.cpp) [Python](./Python/split-a-string-into-the-max-number-of-unique-substrings.py) | _O(n * 2^(n - 1))_ | _O(n)_      | Medium         |||
 
 <br/>
 <div align="right">
@@ -1490,6 +1494,8 @@
 1563| [Stone Game V](https://leetcode.com/problems/stone-game-v/)| [C++](./C++/stone-game-v.cpp) [Python](./Python/stone-game-v.py) | _O(n^2)_    | _O(n^2)_          | Hard           ||
 1569| [Number of Ways to Reorder Array to Get Same BST](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/)| [C++](./C++/detect-pattern-of-length-m-repeated-k-or-more-times.cpp) [Python](./Python/detect-pattern-of-length-m-repeated-k-or-more-times.py) | _O(n^2)_    | _O(n^2)_          | Hard           || DFS
 1575| [Count All Possible Routes](https://leetcode.com/problems/count-all-possible-routes/)| [C++](./C++/count-all-possible-routes.cpp) [Python](./Python/count-all-possible-routes.py) | _O(nlogn + n * f)_    | _O(n * f)_          | Hard           || Math
+1594| [Maximum Non Negative Product in a Matrix](https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/)| [C++](./C++/maximum-non-negative-product-in-a-matrix.cpp) [Python](./Python/maximum-non-negative-product-in-a-matrix.py) | _O(m * n)_    | _O(n)_          | Medium           || 
+1595| [Minimum Cost to Connect Two Groups of Points](https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/)| [C++](./C++/minimum-cost-to-connect-two-groups-of-points.cpp) [Python](./Python/minimum-cost-to-connect-two-groups-of-points.py) | _O(m * n * 2^n)_    | _O(2^n)_          | Hard           ||
 
 <br/>
 <div align="right">
@@ -1584,6 +1590,8 @@
 1578| [Minimum Deletion Cost to Avoid Repeating Letters](https://leetcode.com/problems/minimum-deletion-cost-to-avoid-repeating-letters/)| [C++](./C++/minimum-deletion-cost-to-avoid-repeating-letters.cpp) [Python](./Python/minimum-deletion-cost-to-avoid-repeating-letters.py) | _O(n)_    | _O(1)_          | Medium           ||
 1580| [Put Boxes Into the Warehouse II](https://leetcode.com/problems/put-boxes-into-the-warehouse-ii/)| [C++](./C++/put-boxes-into-the-warehouse-ii.cpp) [Python](./Python/put-boxes-into-the-warehouse-ii.py) | _O(nlogn)_    | _O(1)_          | Medium           | 🔒 |
 1585| [Check If String Is Transformable With Substring Sort Operations](https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations/)| [C++](./C++/check-if-string-is-transformable-with-substring-sort-operations.cpp) [Python](./Python/check-if-string-is-transformable-with-substring-sort-operations.py) | _O(n)_    | _O(n)_          | Hard           ||
+1589| [Maximum Sum Obtained of Any Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/)| [C++](./C++/maximum-sum-obtained-of-any-permutation.cpp) [Python](./Python/maximum-sum-obtained-of-any-permutation.py) | _O(nlogn)_    | _O(n)_          | Medium           || 
+1591 | [Strange Printer II](https://leetcode.com/problems/strange-printer-ii/) | [C++](./C++/strange-printer-ii.cpp) [Python](./Python/strange-printer-ii.py) | _O(c * m * n + e)_ | _O(e)_ | Hard ||
 
 <br/>
 <div align="right">
