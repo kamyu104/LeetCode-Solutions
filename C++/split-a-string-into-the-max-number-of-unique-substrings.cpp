@@ -19,7 +19,7 @@ public:
                 if ((mask & base) || base == 0) {
                     if (!lookup.emplace(curr).second) {
                         unique = false;
-                        mask = base ? (mask | (base - 1)) + 1 : mask + 1;  // pruning
+                        mask = base ? (mask | (base - 1)) + 1 : mask + 1;  // pruning, try next mask without base
                         break;
                     }
                     curr.clear();
