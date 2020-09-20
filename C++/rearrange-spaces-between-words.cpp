@@ -5,8 +5,8 @@
 class Solution {
 public:
     string reorderSpaces(string text) {
-        // count spaces and words 
-        int space_count = 0, word_count = 0;
+        // count words and spaces
+        int word_count = 0, space_count = 0;
         for (int i = 0; i < size(text); ++i) {
             if (text[i] == ' ') {
                 ++space_count;
@@ -17,12 +17,12 @@ public:
         // rearrange the spaces to the right
         int left = 0, curr = 0;
         for (int i = 0; i < size(text); ++i) {
-            bool is_swapped = false;
+            bool has_word = false;
             while (i < size(text) && text[i] != ' ') {
                 swap(text[left++], text[i++]);
-                is_swapped = true;
+                has_word = true;
             }
-            if (is_swapped) {
+            if (has_word) {
                 ++left;
             }
         }
@@ -31,12 +31,12 @@ public:
         int extra_count = word_count - 1 > 0 ? space_count % (word_count - 1) : space_count;
         int right = size(text) - 1 - extra_count;
         for (int i = size(text) - 1; i >= 0; --i) {
-            bool is_swapped = false;
+            bool has_word = false;
             while (i >= 0 && text[i] != ' ') {
                 swap(text[right--], text[i--]);
-                is_swapped = true;
+                has_word = true;
             }
-            if (is_swapped) {
+            if (has_word) {
                 right -= equal_count;
             }
         }
