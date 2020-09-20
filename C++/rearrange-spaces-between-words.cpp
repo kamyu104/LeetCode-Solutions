@@ -23,7 +23,7 @@ public:
                 has_word = true;
             }
             if (has_word) {
-                ++left;
+                ++left;  // keep one space
             }
         }
         // rearrange the spaces to the left
@@ -37,7 +37,7 @@ public:
                 has_word = true;
             }
             if (has_word) {
-                right -= equal_count;
+                right -= equal_count;  // keep equal_count spaces
             }
         }
         return text;
