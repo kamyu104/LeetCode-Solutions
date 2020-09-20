@@ -30,13 +30,13 @@ class Solution(object):
             return False
 
         boxes = collections.defaultdict(lambda:[len(targetGrid), len(targetGrid[0]), -1, -1])
-        adj = collections.defaultdict(set)
         for r, row in enumerate(targetGrid):
             for c, v in enumerate(row):
                 boxes[v][0] = min(boxes[v][0], r)
                 boxes[v][1] = min(boxes[v][1], c)
                 boxes[v][2] = max(boxes[v][2], r)
                 boxes[v][3] = max(boxes[v][3], c)
+        adj = collections.defaultdict(set)
         for color, (min_r, min_c, max_r, max_c) in boxes.iteritems():
             for r in xrange(min_r, max_r+1):
                 for c in xrange(min_c, max_c+1):
