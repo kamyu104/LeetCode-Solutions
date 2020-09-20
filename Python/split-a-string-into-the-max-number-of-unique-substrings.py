@@ -16,13 +16,13 @@ class Solution(object):
     
         result = 1
         total = 2**(len(s)-1)
-        for bitmask in xrange(total):
-            if popcount(bitmask) < result:
+        for mask in xrange(total):
+            if popcount(mask) < result:
                 continue
             lookup, curr, base = set(), [], 1
             for i in xrange(len(s)):
                 curr.append(s[i])
-                if (bitmask&base) or base == total:
+                if (mask&base) or base == total:
                     if "".join(curr) in lookup:
                         break
                     lookup.add("".join(curr))
