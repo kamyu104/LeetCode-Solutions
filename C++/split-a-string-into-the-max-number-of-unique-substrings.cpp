@@ -16,7 +16,7 @@ public:
             for (uint32_t i = 0, base = 1; i < size(s); ++i, base <<= 1) {
                 curr.push_back(s[i]);
                 if ((bitmask & base) || base == total) {
-                    if(!lookup.emplace(curr).second) {
+                    if (!lookup.emplace(curr).second) {
                         unique = false;
                         break;
                     }
