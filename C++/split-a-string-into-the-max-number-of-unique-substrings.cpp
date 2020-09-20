@@ -4,7 +4,7 @@
 class Solution {
 public:
     int maxUniqueSplit(string s) {
-        uint32_t result = 1;
+        int result = 1;
         int total = 1 << (size(s) - 1);
         for (uint32_t bitmask = 0; bitmask < total; ++bitmask)  {
             if(__builtin_popcount(bitmask) < result) {
@@ -26,7 +26,7 @@ public:
             if (!unique) {
                 continue;
             }
-            result = max(result, uint32_t(size(lookup)));
+            result = max(result, int(size(lookup)));
         }
         return result;
     }
