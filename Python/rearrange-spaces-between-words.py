@@ -27,7 +27,7 @@ class Solution(object):
                 i += 1
                 has_word = True
             if has_word:
-                left += 1
+                left += 1  # keep one space
             i += 1
 
         # rearrange all the spaces to the left
@@ -42,6 +42,6 @@ class Solution(object):
                 i -= 1
                 has_word = True
             if has_word:
-                right -= equal_count
+                right -= equal_count  # keep equal_count spaces
             i -= 1
         return "".join(text)
