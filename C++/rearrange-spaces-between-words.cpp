@@ -5,8 +5,8 @@
 class Solution {
 public:
     string reorderSpaces(string text) {
-        // count words and spaces
-        int word_count = 0, space_count = 0;
+        // count spaces and words
+        int space_count = 0, word_count = 0;
         for (int i = 0; i < size(text); ++i) {
             if (text[i] == ' ') {
                 ++space_count;
