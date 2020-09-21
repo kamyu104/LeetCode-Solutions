@@ -31,11 +31,11 @@ class Solution(object):
 
         boxes = collections.defaultdict(lambda:[len(targetGrid), len(targetGrid[0]), -1, -1])
         for r, row in enumerate(targetGrid):
-            for c, v in enumerate(row):
-                boxes[v][0] = min(boxes[v][0], r)
-                boxes[v][1] = min(boxes[v][1], c)
-                boxes[v][2] = max(boxes[v][2], r)
-                boxes[v][3] = max(boxes[v][3], c)
+            for c, color in enumerate(row):
+                boxes[color][0] = min(boxes[color][0], r)
+                boxes[color][1] = min(boxes[color][1], c)
+                boxes[color][2] = max(boxes[color][2], r)
+                boxes[color][3] = max(boxes[color][3], c)
         adj = collections.defaultdict(set)
         for color, (min_r, min_c, max_r, max_c) in boxes.iteritems():
             for r in xrange(min_r, max_r+1):
