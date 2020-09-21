@@ -5,9 +5,9 @@ class Solution {
 public:
     int missingElement(vector<int>& nums, int k) {
         int left = 0, right = nums.size() - 1;
-        while (left <= right) {
+        while (left <= right) {  // find the largest right s.t. k > missingCount(nums, x)
             const auto& mid = left + (right - left) / 2;
-            if (check(nums, k, mid)) {
+            if (!check(nums, k, mid)) {
                 right = mid - 1;
             } else {
                 left = mid + 1;
@@ -22,6 +22,6 @@ private:
     }
     
     bool check(const vector<int>& nums, int k, int x) {
-        return k <= missingCount(nums, x);
+        return k > missingCount(nums, x);
     }
 };
