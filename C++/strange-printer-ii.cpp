@@ -8,13 +8,14 @@ public:
         unordered_map<int, vector<int>> boxes;
         for (int r = 0; r < size(targetGrid); ++r) {
             for (int c = 0; c < size(targetGrid[r]); ++c) {
-                if (!boxes.count(targetGrid[r][c])) {
-                    boxes[targetGrid[r][c]] = {r, c, r, c};
+                int color = targetGrid[r][c];
+                if (!boxes.count(color)) {
+                    boxes[color] = {r, c, r, c};
                 } else {
-                    boxes[targetGrid[r][c]][0] = min(boxes[targetGrid[r][c]][0], r);
-                    boxes[targetGrid[r][c]][1] = min(boxes[targetGrid[r][c]][1], c);
-                    boxes[targetGrid[r][c]][2] = max(boxes[targetGrid[r][c]][2], r);
-                    boxes[targetGrid[r][c]][3] = max(boxes[targetGrid[r][c]][3], c);
+                    boxes[color][0] = min(boxes[color][0], r);
+                    boxes[color][1] = min(boxes[color][1], c);
+                    boxes[color][2] = max(boxes[color][2], r);
+                    boxes[color][3] = max(boxes[color][3], c);
                 }
             } 
         }
