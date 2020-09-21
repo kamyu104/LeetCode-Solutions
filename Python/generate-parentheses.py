@@ -8,16 +8,26 @@ class Solution(object):
         :type n: int
         :rtype: List[str]
         """
-        result = []
-        stk = [("", n, n)]
+        result, curr = [], []
+        stk = [(1, (n, n))]
         while stk:
-            curr, left, right = stk.pop()
-            if left == 0 and right == 0:
-                result.append(curr)
-            if left < right:
-                stk.append((curr+")", left, right-1))
-            if left > 0:
-                stk.append((curr+"(", left-1, right))
+            step, args = stk.pop()
+            if step == 1:
+                left, right = args
+                if left == 0 and right == 0:
+                    result.append("".join(curr))
+                if left < right:
+                    stk.append((3, tuple()))
+                    stk.append((1, (left, right-1)))
+                    stk.append((2, (')')))
+                if left > 0:
+                    stk.append((3, tuple()))
+                    stk.append((1, (left-1, right)))
+                    stk.append((2, ('(')))
+            elif step == 2:
+                curr.append(args[0])
+            elif step == 3:
+                curr.pop()
         return result
 
 
@@ -30,14 +40,18 @@ class Solution2(object):
         :type n: int
         :rtype: List[str]
         """
-        def generateParenthesisRecu(result, current, left, right):
+        def generateParenthesisRecu(left, right, curr, result):
             if left == 0 and right == 0:
-                result.append(current)
+                result.append("".join(curr))
             if left > 0:
-                generateParenthesisRecu(result, current + "(", left-1, right)
+                curr.append('(')
+                generateParenthesisRecu(left-1, right, curr, result)
+                curr.pop()
             if left < right:
-                generateParenthesisRecu(result, current + ")", left, right-1)
+                curr.append(')')
+                generateParenthesisRecu(left, right-1, curr, result)
+                curr.pop()
 
         result = []
-        generateParenthesisRecu(result, "", n, n)
+        generateParenthesisRecu(n, n, [], result)
         return result
