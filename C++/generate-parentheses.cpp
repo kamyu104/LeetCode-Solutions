@@ -30,20 +30,25 @@ class Solution2 {
 public:
     vector<string> generateParenthesis(int n) {
         vector<string> result;
-        generateParenthesisRecu("", n, n, &result);
+        string curr;
+        generateParenthesisRecu(n, n, &curr, &result);
         return result;
     }
 
 private:
-    void generateParenthesisRecu(const string& curr, int left, int right, vector<string> *result) {
+    void generateParenthesisRecu(int left, int right, string *curr, vector<string> *result) {
         if (left == 0 && right == 0) {
-            result->emplace_back(curr);
+            result->emplace_back(*curr);
         }
         if (left > 0) {
-            generateParenthesisRecu(curr + "(", left - 1, right, result);
+            curr->push_back('(');
+            generateParenthesisRecu(left - 1, right, curr, result);
+            curr->pop_back();
         }
         if (left < right) {
-            generateParenthesisRecu(curr + ")", left, right - 1, result);
+            curr->push_back(')');
+            generateParenthesisRecu(left, right - 1, curr, result);
+            curr->pop_back();
         }
     }
 };
