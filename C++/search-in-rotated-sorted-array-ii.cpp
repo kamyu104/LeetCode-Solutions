@@ -1,4 +1,4 @@
-// Time:  O(logn)
+// Time:  O(logn) on average, O(n) at worst
 // Space: O(1)
 
 class Solution {
