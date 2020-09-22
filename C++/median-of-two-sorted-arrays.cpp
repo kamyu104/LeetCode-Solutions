@@ -87,7 +87,7 @@ private:
     bool check(const vector<vector<int> *>& arrays, int num, int target) {
         int res = 0;
         for (const auto array : arrays) {
-            if (!array->empty()) {
+            if (!array->empty()) {  // count the number of values which are less or equal to num
                 res += distance(array->cbegin(),
                                 upper_bound(array->cbegin(), array->cend(), num));
             }
