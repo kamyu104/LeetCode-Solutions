@@ -65,7 +65,7 @@ class Solution_Generic(object):
         def check(arrays, num, target):
             res = 0
             for array in arrays:
-                if array:
+                if array:  # count the number of values which are less or equal to num
                     res += binary_search(array, 0, len(array) - 1, num,
                                          lambda array, x, y: array[x] > y)
             return res >= target
