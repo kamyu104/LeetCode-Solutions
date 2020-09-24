@@ -25,7 +25,7 @@ class Poly(collections.Counter):
         return self
 
     def __sub__(self, other):
-        self.update({k: -v for k, v in other.items()})
+        self.update({k: -v for k, v in other.iteritems()})
         return self
 
     def __mul__(self, other):
@@ -48,14 +48,14 @@ class Poly(collections.Counter):
             return result
 
         result = Poly()
-        for k1, v1 in self.items():
-            for k2, v2 in other.items():
+        for k1, v1 in self.iteritems():
+            for k2, v2 in other.iteritems():
                 result.update({tuple(merge(k1, k2)): v1*v2})
         return result
 
     def eval(self, lookup):
         result = Poly()
-        for polies, c in self.items():
+        for polies, c in self.iteritems():
             key = []
             for var in polies:
                 if var in lookup:
@@ -67,7 +67,7 @@ class Poly(collections.Counter):
 
     def to_list(self):
         return ["*".join((str(v),) + k)
-                for k, v in sorted(self.items(),
+                for k, v in sorted(self.iteritems(),
                                    key=lambda x: (-len(x[0]), x[0]))
                 if v]
 
