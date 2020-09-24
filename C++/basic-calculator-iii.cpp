@@ -38,6 +38,7 @@ public:
         return operands.top();
     }
 
+private:
     template<typename T>
     void compute(stack<T> *operands, stack<char> *operators) {
         const auto right = operands->top(); operands->pop();
