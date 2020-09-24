@@ -20,7 +20,7 @@ public:
             } else if (s[i] == '(') {
                 operators.emplace(s[i]);
             } else if (s[i] == ')') {
-                while (!empty(operators) && operators.top() != '(') {
+                while (operators.top() != '(') {
                     compute(&operands, &operators);
                 }
                 operators.pop();
