@@ -26,7 +26,7 @@ class Solution(object):
             elif s[i] == '(':
                 operators.append(s[i])
             elif s[i] == ')':
-                while operators and operators[-1] != '(':
+                while operators[-1] != '(':
                     compute(operands, operators)
                 operators.pop()
             elif s[i] in precedence:
