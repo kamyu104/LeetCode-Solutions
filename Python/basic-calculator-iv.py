@@ -8,6 +8,7 @@
 
 import collections
 import itertools
+import operator
 
 
 class Poly(collections.Counter):
