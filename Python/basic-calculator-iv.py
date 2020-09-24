@@ -79,6 +79,47 @@ class Solution(object):
         :type evalints: List[int]
         :rtype: List[str]
         """
+        ops = {'+':operator.add, '-':operator.sub, '*':operator.mul}
+        def compute(operands, operators):
+            right, left = operands.pop(), operands.pop()
+            operands.append(ops[operators.pop()](left, right))
+
+        def parse(s):
+            precedence = {'+':0, '-':0, '*':1}
+            operands, operators, operand = [], [], []
+            for i in xrange(len(s)):
+                if s[i].isalnum():
+                    operand.append(s[i])
+                    if i == len(s)-1 or not s[i+1].isalnum():
+                        operands.append(Poly("".join(operand)))
+                        operand = []
+                elif s[i] == '(':
+                    operators.append(s[i])
+                elif s[i] == ')':
+                    while operators[-1] != '(':
+                        compute(operands, operators)
+                    operators.pop()
+                elif s[i] in precedence:
+                    while operators and operators[-1] in precedence and \
+                          precedence[operators[-1]] >= precedence[s[i]]:
+                        compute(operands, operators)
+                    operators.append(s[i])
+            while operators:
+                compute(operands, operators)
+            return operands[-1]
+
+        lookup = dict(itertools.izip(evalvars, evalints))
+        return parse(expression).eval(lookup).to_list()
+
+
+class Solution2(object):
+    def basicCalculatorIV(self, expression, evalvars, evalints):
+        """
+        :type expression: str
+        :type evalvars: List[str]
+        :type evalints: List[int]
+        :rtype: List[str]
+        """
         def compute(operands, operators):
             left, right = operands.pop(), operands.pop()
             op = operators.pop()
