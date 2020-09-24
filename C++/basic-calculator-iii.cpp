@@ -21,36 +21,36 @@ public:
                 operators.emplace(s[i]);
             } else if (s[i] == ')') {
                 while (!empty(operators) && operators.top() != '(') {
-                    compute(operands, operators);
+                    compute(&operands, &operators);
                 }
                 operators.pop();
             } else if (precedence.count(s[i])) {
                 while (!empty(operators) && precedence.count(operators.top()) && 
                        precedence.at(operators.top()) >= precedence.at(s[i])) {
-                     compute(operands, operators);
+                     compute(&operands, &operators);
                 }
                 operators.emplace(s[i]);
             }
         }
         while (!empty(operators)) {
-            compute(operands, operators);
+            compute(&operands, &operators);
         }
         return operands.top();
     }
 
     template<typename T>
-    void compute(stack<T>& operands, stack<char>& operators) {
-        const auto right = operands.top(); operands.pop();
-        const auto left = operands.top(); operands.pop();
-        const char op = operators.top(); operators.pop();
+    void compute(stack<T> *operands, stack<char> *operators) {
+        const auto right = operands->top(); operands->pop();
+        const auto left = operands->top(); operands->pop();
+        const char op = operators->top(); operators->pop();
         if (op == '+') {
-            operands.emplace(left + right);
+            operands->emplace(left + right);
         } else if (op == '-') {
-            operands.emplace(left - right);
+            operands->emplace(left - right);
         } else if (op == '*') {
-            operands.emplace(left * right);
+            operands->emplace(left * right);
         } else if (op == '/') {
-            operands.emplace(left / right);
+            operands->emplace(left / right);
         }
     }
 };
