@@ -26,7 +26,7 @@ class Solution(object):
 # Time:  O((n + r) * 2^r)
 # Space: O(n + r)
 # full search solution (much slower)
-class Solution(object):
+class Solution2(object):
     def maximumRequests(self, n, requests):
         """
         :type n: int
