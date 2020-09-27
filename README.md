@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1597%20%2F%201597-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1601%20%2F%201601-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
@@ -422,6 +422,7 @@
 1573| [Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string/) | [C++](./C++/number-of-ways-to-split-a-string.cpp) [Python](./Python/number-of-ways-to-split-a-string.py) | _O(n)_ | _O(1)_ | Medium |||
 1576| [Replace All ?'s to Avoid Consecutive Repeating Characters](https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/) | [C++](./C++/replace-all-s-to-avoid-consecutive-repeating-characters.cpp) [Python](./Python/replace-all-s-to-avoid-consecutive-repeating-characters.py) | _O(n)_ | _O(1)_ | Easy |||
 1592| [Rearrange Spaces Between Words](https://leetcode.com/problems/rearrange-spaces-between-words/) | [C++](./C++/rearrange-spaces-between-words.cpp) [Python](./Python/rearrange-spaces-between-words.py) | _O(n)_ | _O(1)_ | Easy |||
+1598| [Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/) | [C++](./C++/crawler-log-folder.cpp) [Python](./Python/crawler-log-folder.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -1485,7 +1486,7 @@
 1473| [Paint House III](https://leetcode.com/problems/paint-house-iii/)| [C++](./C++/paint-house-iii.cpp) [Python](./Python/paint-house-iii.py) | _O(m * t * n^2)_    | _O(t * n)_          | Hard           ||
 1477| [Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/)| [C++](./C++/find-two-non-overlapping-sub-arrays-each-with-target-sum.cpp) [Python](./Python/find-two-non-overlapping-sub-arrays-each-with-target-sum.py) | _O(n)_    | _O(n)_          | Medium           ||
 1478| [Allocate Mailboxes](https://leetcode.com/problems/allocate-mailboxes/)| [C++](./C++/allocate-mailboxes.cpp) [Python](./Python/allocate-mailboxes.py) | _O(m * n^2)_    | _O(n)_          | Hard           || DP, Math
-1494| [Parallel Courses II](https://leetcode.com/problems/parallel-courses-ii/)| [C++](./C++/parallel-courses-ii.cpp) [Python](./Python/parallel-courses-ii.py) | _O((n * C(c, min(c, k))) * 2^n)_    | _O(2^n)_          | Hard           ||
+1494| [Parallel Courses II](https://leetcode.com/problems/parallel-courses-ii/)| [C++](./C++/parallel-courses-ii.cpp) [Python](./Python/parallel-courses-ii.py) | _O((n * C(c, min(c, k))) * 2^n)_    | _O(2^n)_          | Hard           || Combinations
 1504 | [Count Submatrices With All Ones](https://leetcode.com/problems/count-submatrices-with-all-ones/) | [C++](./C++/count-submatrices-with-all-ones.cpp) [Python](./Python/count-submatrices-with-all-ones.py) | _O(m * n)_ | _O(n)_ | Medium | | Mono Stack
 1510| [Stone Game IV](https://leetcode.com/problems/stone-game-iv/)| [C++](./C++/stone-game-iv.cpp) [Python](./Python/stone-game-iv.py) | _O(n * sqrt(n))_    | _O(n)_          | Hard           ||
 1524| [Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/)| [C++](./C++/number-of-sub-arrays-with-odd-sum.cpp) [Python](./Python/number-of-sub-arrays-with-odd-sum.py) | _O(n)_    | _O(1)_          | Medium           ||
@@ -1594,6 +1595,7 @@
 1585| [Check If String Is Transformable With Substring Sort Operations](https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations/)| [C++](./C++/check-if-string-is-transformable-with-substring-sort-operations.cpp) [Python](./Python/check-if-string-is-transformable-with-substring-sort-operations.py) | _O(n)_    | _O(n)_          | Hard           ||
 1589| [Maximum Sum Obtained of Any Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/)| [C++](./C++/maximum-sum-obtained-of-any-permutation.cpp) [Python](./Python/maximum-sum-obtained-of-any-permutation.py) | _O(nlogn)_    | _O(n)_          | Medium           || 
 1591 | [Strange Printer II](https://leetcode.com/problems/strange-printer-ii/) | [C++](./C++/strange-printer-ii.cpp) [Python](./Python/strange-printer-ii.py) | _O(c * m * n + e)_ | _O(e)_ | Hard ||
+1599 | [Maximum Profit of Operating a Centennial Wheel](https://leetcode.com/problems/maximum-profit-of-operating-a-centennial-wheel/) | [C++](./C++/maximum-profit-of-operating-a-centennial-wheel.cpp) [Python](./Python/maximum-profit-of-operating-a-centennial-wheel.py) | _O(n)_ | _O(1)_ | Medium ||
 
 <br/>
 <div align="right">
@@ -1621,6 +1623,7 @@
 1557 | [Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/)  | [C++](./C++/minimum-number-of-vertices-to-reach-all-nodes.cpp) [Python](./Python/minimum-number-of-vertices-to-reach-all-nodes.py) | _O(e)_| _O(n)_| Medium           ||| 
 1579 | [Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/)  | [C++](./C++/remove-max-number-of-edges-to-keep-graph-fully-traversable.cpp) [Python](./Python/remove-max-number-of-edges-to-keep-graph-fully-traversable.py) | _O(n + m)_| _O(n)_| Hard           || Union Find | 
 1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)  | [C++](./C++/min-cost-to-connect-all-points.cpp) [Python](./Python/min-cost-to-connect-all-points.py) | _O(n^2)_| _O(n)_| Medium           || Union Find, `Kruskal's Algorithm`, MST | 
+1601 | [Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-request/)  | [C++](./C++/maximum-number-of-achievable-transfer-request.cpp) [Python](./Python/maximum-number-of-achievable-transfer-request.py) | _O((n + r) * 2^r)_| _O(n + r)_| Hard           || Combinations | 
 
 <br/>
 <div align="right">
@@ -1703,6 +1706,7 @@
 1500| [Design a File Sharing System](https://leetcode.com/problems/design-a-file-sharing-system/) | [C++](./C++/design-a-file-sharing-system.cpp) [Python](./Python/design-a-file-sharing-system.py) | ctor: _O(1)_<br>join: _O(logu + c)_<br>leave: _O(logu + c)_<br>request: _O(u)_ | _O(u * c)_ | Medium | 🔒 | |
 1570| [Dot Product of Two Sparse Vectors](https://leetcode.com/problems/dot-product-of-two-sparse-vectors/) | [C++](./C++/dot-product-of-two-sparse-vectors.cpp) [Python](./Python/dot-product-of-two-sparse-vectors.py) | ctor: _O(n)_<br>dot_product: _O(min(n, m))_ | _O(n)_ | Medium | 🔒 | |
 1586| [Binary Search Tree Iterator II](https://leetcode.com/problems/binary-search-tree-iterator-ii/) | [C++](./C++/binary-search-tree-iterator-ii.cpp) [Python](./Python/binary-search-tree-iterator-ii.py) | _O(1)_, amortized | _O(h)_| Medium | 🔒 |   
+1600| [Throne Inheritance](https://leetcode.com/problems/throne-inheritance/) | [C++](./C++/throne-inheritance.cpp) [Python](./Python/throne-inheritance.py) | ctor: _O(1)_<br>birth: _O(1)_<br>death: _O(1)_<br>inherit: _O(n)_ | _O(n)_| Medium | |  
 
 <br/>
 <div align="right">
