@@ -9,9 +9,9 @@ class Solution(object):
         """
         result = 0
         for log in logs:
-            if log == '../':
+            if log == "../":
                 if result > 0:
                     result -= 1
-            elif log != './':
+            elif log != "./":
                 result += 1
         return result
