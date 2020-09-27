@@ -27,7 +27,7 @@ public:
     }
 
 private:
-	bool combinations(int n, int k, const function<bool (const vector<int>&)>& callback) {
+    bool combinations(int n, int k, const function<bool (const vector<int>&)>& callback) {
         static const auto& next_pos =
             [](const auto& n, const auto& k, const auto& idxs) {
                 int i = k - 1;
