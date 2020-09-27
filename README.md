@@ -1623,7 +1623,7 @@
 1557 | [Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/)  | [C++](./C++/minimum-number-of-vertices-to-reach-all-nodes.cpp) [Python](./Python/minimum-number-of-vertices-to-reach-all-nodes.py) | _O(e)_| _O(n)_| Medium           ||| 
 1579 | [Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/)  | [C++](./C++/remove-max-number-of-edges-to-keep-graph-fully-traversable.cpp) [Python](./Python/remove-max-number-of-edges-to-keep-graph-fully-traversable.py) | _O(n + m)_| _O(n)_| Hard           || Union Find | 
 1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)  | [C++](./C++/min-cost-to-connect-all-points.cpp) [Python](./Python/min-cost-to-connect-all-points.py) | _O(n^2)_| _O(n)_| Medium           || Union Find, `Kruskal's Algorithm`, MST | 
-1601 | [Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-request/)  | [C++](./C++/maximum-number-of-achievable-transfer-request.cpp) [Python](./Python/maximum-number-of-achievable-transfer-request.py) | _O((n + r) * 2^r)_| _O(n + r)_| Hard           || Combinations, Backtracking | 
+1601 | [Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/)  | [C++](./C++/maximum-number-of-achievable-transfer-requests.cpp) [Python](./Python/maximum-number-of-achievable-transfer-requests.py) | _O((n + r) * 2^r)_| _O(n + r)_| Hard           || Combinations, Backtracking | 
 
 <br/>
 <div align="right">
