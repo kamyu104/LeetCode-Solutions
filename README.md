@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1601%20%2F%201601-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1602%20%2F%201602-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
@@ -1200,6 +1200,7 @@
 1345|[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)| [C++](./C++/jump-game-iv.cpp) [Python](./Python/jump-game-iv.py)| _O(n)_ | _O(n)_ | Hard | | |
 1368|[Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/)| [C++](./C++/minimum-cost-to-make-at-least-one-valid-path-in-a-grid.cpp) [Python](./Python/minimum-cost-to-make-at-least-one-valid-path-in-a-grid.py)| _O(m * n)_ | _O(m * n)_ | Hard | | `A* Search Algorithm`, 0-1 BFS, Deque |
 1514|[Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)| [C++](./C++/path-with-maximum-probability.cpp) [Python](./Python/path-with-maximum-probability.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium | | `Dijkstra's Algorithm` |
+1602|[Find Nearest Right Node in Binary Tree](https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/)| [C++](./C++/find-nearest-right-node-in-binary-tree.cpp) [Python](./Python/find-nearest-right-node-in-binary-tree.py)| _O(n)_ | _O(w)_ | Medium |🔒| 
 
 <br/>
 <div align="right">
