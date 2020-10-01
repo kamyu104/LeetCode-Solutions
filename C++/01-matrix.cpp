@@ -16,7 +16,7 @@ public:
             }
         }
 
-        const vector<pair<int, int>> dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+        const vector<pair<int, int>> dirs = { { -1 , 0 }, { 1 , 0 } , { 0 , -1 } , { 0 , 1 } };
         while (!queue.empty()) {
             auto cell = queue.front();
             queue.pop();
