@@ -28,9 +28,8 @@ public:
                         }
                         if (right.count(new_word)) {
                             return ladder;
-                        } else {
-                            new_left.emplace(new_word);
                         }
+                        new_left.emplace(new_word);
                     }
                     new_word[i] = prev;
                 }
