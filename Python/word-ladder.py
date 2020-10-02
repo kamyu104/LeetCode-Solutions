@@ -19,7 +19,7 @@ class Solution(object):
         left, right = {beginWord}, {endWord}
         ladder = 2
         while left:
-            words -= set(left)
+            words -= left
             new_left = set()
             for word in left:
                 for new_word in [word[:i]+c+word[i+1:] for i in xrange(len(beginWord)) for c in ascii_lowercase]:
