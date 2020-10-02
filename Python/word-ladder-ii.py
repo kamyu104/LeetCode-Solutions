@@ -22,7 +22,7 @@ class Solution(object):
         tree = defaultdict(set)
         is_found, left, right, is_reversed = False, {beginWord}, {endWord}, False
         while left:
-            words -= set(left)
+            words -= left
             new_left = set()
             for word in left:
                 for new_word in [word[:i]+c+word[i+1:] for i in xrange(len(beginWord)) for c in ascii_lowercase]:
