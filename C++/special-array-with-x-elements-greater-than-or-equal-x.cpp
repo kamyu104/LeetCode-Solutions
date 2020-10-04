@@ -71,12 +71,12 @@ private:
 };
 
 // Time:  O(n)
-// Space: O(1)
+// Space: O(n)
 // binary search + counting sort solution
 class Solution3 {
 public:
     int specialArray(vector<int>& nums) {
-        nums = counting_sort(nums, true);
+        nums = counting_sort(nums, true);  // extra O(n) space for stable sort
         int left = 0, right = size(nums) - 1;
         while (left <= right) {
             const auto& mid = left + (right - left) / 2;
