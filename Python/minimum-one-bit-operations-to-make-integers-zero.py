@@ -36,7 +36,7 @@ class Solution2(object):
         #
         # [observation2]:
         # let pos be an array of positions where the bit is 1 in ascending order:
-	    # f(0XX...X) + f(1XX...X) = f(100...0)
+	# f(0XX...X) + f(1XX...X) = f(100...0)
         # f(1XX...X) = f(100...0) - f(0XX...X)
         #            = (2^(pos[k-1]+1)-1) - f(0XX...X)
         # by mathematical induction
