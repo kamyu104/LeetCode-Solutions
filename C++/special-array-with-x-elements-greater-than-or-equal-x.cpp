@@ -50,7 +50,7 @@ private:
             count[i] += count[i - 1];
         }
         vector<int> result(size(*nums));
-        for (int i = size(*nums) - 1; i >= 0; --i) {  // stable sort
+        for (int i = size(*nums) - 1; i >= 0; --i) {  // stable sort and inplace
             if ((*nums)[i] < 0) {  // processed
                 continue;
             }
