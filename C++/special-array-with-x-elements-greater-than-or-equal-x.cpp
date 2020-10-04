@@ -100,10 +100,14 @@ private:
             count[i] += count[i - 1];
         }
         vector<int> result(size(nums));
-        for (int i = size(nums) - 1; i >= 0; --i) {  // stable sort
-            result[--count[nums[i]]] = nums[i];
-        }
-        if (is_reverse) {
+        if (!is_reverse) {
+            for (int i = size(nums) - 1; i >= 0; --i) {  // stable sort
+                result[--count[nums[i]]] = nums[i];
+            }
+        } else {
+            for (const auto& num : nums) {  // stable sort
+                result[--count[num]] = num;
+            }
             reverse(begin(result), end(result));
         }
         return result;
