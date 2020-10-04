@@ -64,7 +64,7 @@ private:
         for (auto& num : *nums) {
             num = ~num;  // restore values
         }
-        if (is_reverse) {
+        if (is_reverse) {  // unstable sort
             reverse(begin(*nums), end(*nums));
         }
     }
