@@ -52,7 +52,7 @@ class Solution2(object):
                 right = mid-1
             else:
                 left = mid+1
-        return -1 if left < len(nums) and left == nums[left] else left
+        return -1 if left < len(nums) and nums[left] == left else left
 
 
 # Time:  O(nlogn)
