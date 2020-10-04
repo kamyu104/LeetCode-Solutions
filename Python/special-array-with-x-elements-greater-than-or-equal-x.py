@@ -78,8 +78,8 @@ class Solution3(object):
                 count[i] += count[i-1]
             result = [0]*len(nums)
             for num in reversed(nums):  # stable sort
-                result[count[num]-1] = num
                 count[num] -= 1
+                result[count[num]] = num
             if reverse:
                 result.reverse()
             return result
