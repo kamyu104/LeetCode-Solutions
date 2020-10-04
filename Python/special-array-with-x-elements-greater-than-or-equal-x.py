@@ -61,7 +61,7 @@ class Solution2(object):
 
 
 # Time:  O(n)
-# Space: O(1)
+# Space: O(n)
 # counting sort + binary search solution
 class Solution3(object):
     def specialArray(self, nums):
@@ -70,7 +70,7 @@ class Solution3(object):
         :rtype: int
         """
         MAX_NUM = 1000
-        def counting_sort(nums, reverse=False):  # Time: O(n)
+        def counting_sort(nums, reverse=False):  # Time: O(n), Space: O(n)
             count = [0]*(MAX_NUM+1)
             for num in nums:
                 count[num] += 1
@@ -88,7 +88,7 @@ class Solution3(object):
                 result.reverse()
             return result
     
-        nums = counting_sort(nums, reverse=True)
+        nums = counting_sort(nums, reverse=True)  # extra O(n) space for stable sort
         left, right = 0, len(nums)-1
         while left <= right:  # Time: O(logn)
             mid = left + (right-left)//2
