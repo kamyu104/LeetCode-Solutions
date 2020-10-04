@@ -15,6 +15,15 @@ class Solution(object):
                 n >>= 1
             return result
         
+        # [observation]
+        # 000
+        # 001
+        # 011
+        # 010
+        # 110
+        # 111
+        # 101
+        # 100
 	# f(0XX...X) + f(1XX...X) = f(100...0) implies n is a gray code
         # => f(n) is actually the inverse of gray code
         return gray_to_binary(n)
@@ -35,7 +44,15 @@ class Solution2(object):
         # by mathematical induction
         # => f(2^k) = 2^(k+1)-1
         #
-        # [observation2]:
+        # [observation2]
+        # 000
+        # 001
+        # 011
+        # 010
+        # 110
+        # 111
+        # 101
+        # 100
         # let pos be an array of positions where the bit is 1 in ascending order:
 	# f(0XX...X) + f(1XX...X) = f(100...0)
         # f(1XX...X) = f(100...0) - f(0XX...X)
