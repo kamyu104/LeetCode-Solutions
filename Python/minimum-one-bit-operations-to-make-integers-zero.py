@@ -15,7 +15,8 @@ class Solution(object):
                 n >>= 1
             return result
         
-        # f(n) is actually the inverse of gray code
+	# f(0XX...X) + f(1XX...X) = f(100...0) implies it is a gray code
+        # => f(n) is actually the inverse of gray code
         return gray_to_binary(n)
 
 
