@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1602%20%2F%201602-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1611%20%2F%201611-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -559,6 +559,7 @@
 1057| [Campus Bikes](https://leetcode.com/problems/campus-bikes/) | [C++](./C++/campus-bikes.cpp) [Python](./Python/campus-bikes.py) |  _O((w * b) * log(w * b))_ | _O(w * b)_   | Medium |🔒||
 1383 | [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | [C++](./C++/maximum-performance-of-a-team.cpp) [Python](./Python/maximum-performance-of-a-team.py) | _O(nlogn)_ | _O(n)_ | Hard | variant of [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | Sort |
 1439 | [Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/) | [C++](./C++/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows.cpp) [Python](./Python/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows.py) | _O(m * klogk)_ | _O(k)_ | Hard || Binary Search |
+1606 | [Find Servers That Handled Most Number of Requests](https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/) | [C++](./C++/find-servers-that-handled-most-number-of-requests.cpp) [Python](./Python/find-servers-that-handled-most-number-of-requests.py) | _O(nlogk)_ | _O(k)_ | Hard | | SortedList |
 
 <br/>
 <div align="right">
@@ -889,6 +890,7 @@
 1525| [Number of Good Ways to Split a String](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/) | [C++](./C++/number-of-good-ways-to-split-a-string.cpp) [Python](./Python/number-of-good-ways-to-split-a-string.py) | _O(n)_ | _O(1)_ |  Medium | |
 1537| [Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) | [C++](./C++/get-the-maximum-score.cpp) [Python](./Python/get-the-maximum-score.py) | _O(m + n)_ | _O(1)_ |  Hard | |
 1551| [Minimum Operations to Make Array Equal](https://leetcode.com/problems/minimum-operations-to-make-array-equal/) | [C++](./C++/minimum-operations-to-make-array-equal.cpp) [Python](./Python/minimum-operations-to-make-array-equal.py) | _O(1)_ | _O(1)_ |  Medium | |
+1611| [Minimum One Bit Operations to Make Integers Zero](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/)     | [C++](./C++/minimum-one-bit-operations-to-make-integers-zero.cpp) [Python](./Python/minimum-one-bit-operations-to-make-integers-zero.py)  | _O(logn)_        | _O(1)_          | Hard         | variant of [Gray Code](https://leetcode.com/problems/gray-code/) |
 
 <br/>
 <div align="right">
@@ -936,6 +938,7 @@
 1523| [Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/) | [C++](./C++/count-odd-numbers-in-an-interval-range.cpp) [Python](./Python/count-odd-numbers-in-an-interval-range.py) | _O(1)_   | _O(1)_        | Easy         ||
 1561| [Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/) | [C++](./C++/maximum-number-of-coins-you-can-get.cpp) [Python](./Python/maximum-number-of-coins-you-can-get.py) | _O(nlogn)_   | _O(1)_        | Medium         ||
 1588| [Sum of All Odd Length Subarrays](https://leetcode.com/problems/sum-of-all-odd-length-subarrays/) | [C++](./C++/sum-of-all-odd-length-subarrays.cpp) [Python](./Python/sum-of-all-odd-length-subarrays.py) | _O(n)_   | _O(1)_        | Easy         ||
+1608| [Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/) | [C++](./C++/special-array-with-x-elements-greater-than-or-equal-x.cpp) [Python](./Python/special-array-with-x-elements-greater-than-or-equal-x.py) | _O(n)_   | _O(1)_        | Easy         | variant of [H-Index](https://leetcode.com/problems/h-index/) | Counting Sort, Binary Search
 
 <br/>
 <div align="right">
@@ -1001,6 +1004,7 @@
 1498 |[Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems//number-of-subsequences-that-satisfy-the-given-sum-condition/)| [C++](./C++//number-of-subsequences-that-satisfy-the-given-sum-condition.cpp)  [Python](./Python//number-of-subsequences-that-satisfy-the-given-sum-condition.py) | _O(nlogn)_ | _O(n)_ | Medium || Two Pointers |
 1508| [Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/) |[C++](./C++/range-sum-of-sorted-subarray-sums.cpp)  [Python](./Python/range-sum-of-sorted-subarray-sums.py) | _O(nlog(sum(nums)))_ | _O(n)_ | Medium         | | Binary Search, Two Pointers, Sliding Window
 1521| [Find a Value of a Mysterious Function Closest to Target](https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target/)| [C++](./C++/find-a-value-of-a-mysterious-function-closest-to-target.cpp) [Python](./Python/find-a-value-of-a-mysterious-function-closest-to-target.py) | _O(nlogm)_    | _O(logm)_          | Hard           || DP, Two Pointers, Sliding Window
+1604 | [Alert Using Same Key-Card Three or More Times in a One Hour Period](https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/) | [C++](./C++/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period.cpp) [Python](./Python/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sliding Window |
 
 <br/>
 <div align="right">
@@ -1200,6 +1204,7 @@
 1368|[Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/)| [C++](./C++/minimum-cost-to-make-at-least-one-valid-path-in-a-grid.cpp) [Python](./Python/minimum-cost-to-make-at-least-one-valid-path-in-a-grid.py)| _O(m * n)_ | _O(m * n)_ | Hard | | `A* Search Algorithm`, 0-1 BFS, Deque |
 1514|[Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)| [C++](./C++/path-with-maximum-probability.cpp) [Python](./Python/path-with-maximum-probability.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium | | `Dijkstra's Algorithm` |
 1602|[Find Nearest Right Node in Binary Tree](https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/)| [C++](./C++/find-nearest-right-node-in-binary-tree.cpp) [Python](./Python/find-nearest-right-node-in-binary-tree.py)| _O(n)_ | _O(w)_ | Medium |🔒| 
+1609|[Even Odd Tree](https://leetcode.com/problems/even-odd-tree/)| [C++](./C++/even-odd-tree.cpp) [Python](./Python/even-odd-tree.py)| _O(n)_ | _O(w)_ | Medium || 
 
 <br/>
 <div align="right">
@@ -1596,6 +1601,7 @@
 1589| [Maximum Sum Obtained of Any Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/)| [C++](./C++/maximum-sum-obtained-of-any-permutation.cpp) [Python](./Python/maximum-sum-obtained-of-any-permutation.py) | _O(nlogn)_    | _O(n)_          | Medium           || 
 1591 | [Strange Printer II](https://leetcode.com/problems/strange-printer-ii/) | [C++](./C++/strange-printer-ii.cpp) [Python](./Python/strange-printer-ii.py) | _O(c * m * n + e)_ | _O(e)_ | Hard ||
 1599 | [Maximum Profit of Operating a Centennial Wheel](https://leetcode.com/problems/maximum-profit-of-operating-a-centennial-wheel/) | [C++](./C++/maximum-profit-of-operating-a-centennial-wheel.cpp) [Python](./Python/maximum-profit-of-operating-a-centennial-wheel.py) | _O(n)_ | _O(1)_ | Medium ||
+1605 | [Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/) | [C++](./C++/find-valid-matrix-given-row-and-column-sums.cpp) [Python](./Python/find-valid-matrix-given-row-and-column-sums.py) | _O(m + n)_ | _O(1)_ | Medium ||
 
 <br/>
 <div align="right">
@@ -1638,6 +1644,7 @@
 0892 | [Surface Area of 3D Shapes](https://leetcode.com/problems/surface-area-of-3d-shapes/)  | [C++](./C++/surface-area-of-3d-shapes.cpp) [Python](./Python/surface-area-of-3d-shapes.py) | _O(n^2)_| _O(1)_| Easy           ||| 
 1453 | [Maximum Number of Darts Inside of a Circular Dartboard](https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/)  | [C++](./C++/maximum-number-of-darts-inside-of-a-circular-dartboard.cpp) [Python](./Python/maximum-number-of-darts-inside-of-a-circular-dartboard.py) | _O(n^2 * logn)_| _O(n)_| Hard           || Line Sweep |
 1515 | [Best Position for a Service Centre](https://leetcode.com/problems/best-position-for-a-service-centre/)  | [C++](./C++/best-position-for-a-service-centre.cpp) [Python](./Python/best-position-for-a-service-centre.py) | _O(n * iter)_| _O(n)_| Hard           || Geometric Median, Gradient Descent, Weiszfeld's Algorithm |
+1610 | [Maximum Number of Visible Points](https://leetcode.com/problems/maximum-number-of-visible-points/)  | [C++](./C++/maximum-number-of-visible-points.cpp) [Python](./Python/maximum-number-of-visible-points.py) | _O(nlogn)_| _O(n)_| Hard           || Sliding Window |
 
 <br/>
 <div align="right">
@@ -1707,6 +1714,7 @@
 1570| [Dot Product of Two Sparse Vectors](https://leetcode.com/problems/dot-product-of-two-sparse-vectors/) | [C++](./C++/dot-product-of-two-sparse-vectors.cpp) [Python](./Python/dot-product-of-two-sparse-vectors.py) | ctor: _O(n)_<br>dot_product: _O(min(n, m))_ | _O(n)_ | Medium | 🔒 | |
 1586| [Binary Search Tree Iterator II](https://leetcode.com/problems/binary-search-tree-iterator-ii/) | [C++](./C++/binary-search-tree-iterator-ii.cpp) [Python](./Python/binary-search-tree-iterator-ii.py) | _O(1)_, amortized | _O(h)_| Medium | 🔒 |   
 1600| [Throne Inheritance](https://leetcode.com/problems/throne-inheritance/) | [C++](./C++/throne-inheritance.cpp) [Python](./Python/throne-inheritance.py) | ctor: _O(1)_<br>birth: _O(1)_<br>death: _O(1)_<br>inherit: _O(n)_ | _O(n)_| Medium | |  
+1603| [Design Parking System](https://leetcode.com/problems/design-parking-system/) | [C++](./C++/design-parking-system.cpp) [Python](./Python/design-parking-system.py) | _O(1)_ | _O(1)_| Easy | | 
 
 <br/>
 <div align="right">
@@ -1836,6 +1844,7 @@
 1581| [Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/) | [MySQL](./MySQL/customer-who-visited-but-did-not-make-any-transactions.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1587| [Bank Account Summary II](https://leetcode.com/problems/bank-account-summary-ii/) | [MySQL](./MySQL/bank-account-summary-ii.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒||
 1596| [The Most Frequently Ordered Products for Each Customer](https://leetcode.com/problems/the-most-frequently-ordered-products-for-each-customer/) | [MySQL](./MySQL/the-most-frequently-ordered-products-for-each-customer.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
+1607| [Sellers With No Sales](https://leetcode.com/problems/sellers-with-no-sales/) | [MySQL](./MySQL/sellers-with-no-sales.sql) | _O(nlogm)_ | _O(n + m)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
