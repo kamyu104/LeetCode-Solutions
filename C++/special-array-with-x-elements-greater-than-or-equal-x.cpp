@@ -101,8 +101,7 @@ private:
         }
         vector<int> result(size(nums));
         for (int i = size(nums) - 1; i >= 0; --i) {  // stable sort
-            result[count[nums[i]] - 1] = nums[i];
-            --count[nums[i]];
+            result[--count[nums[i]]] = nums[i];
         }
         if (is_reverse) {
             reverse(begin(result), end(result));
