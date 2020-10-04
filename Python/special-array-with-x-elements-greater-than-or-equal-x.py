@@ -46,7 +46,7 @@ class Solution2(object):
                 nums[i] = ~nums[i]
             for i in xrange(len(nums)):
                 nums[i] = ~nums[i]  # restore values
-            if reverse:
+            if reverse:  # unstable sort
                 nums.reverse()
     
         inplace_counting_sort(nums, reverse=True)
@@ -77,10 +77,14 @@ class Solution3(object):
             for i in xrange(1, len(count)):
                 count[i] += count[i-1]
             result = [0]*len(nums)
-            for num in reversed(nums):  # stable sort
-                count[num] -= 1
-                result[count[num]] = num
-            if reverse:
+            if not reverse:
+                for num in reversed(nums):  # stable sort
+                    count[num] -= 1
+                    result[count[num]] = num
+            else:
+                for num in nums:  # stable sort
+                    count[num] -= 1
+                    result[count[num]] = num
                 result.reverse()
             return result
     
