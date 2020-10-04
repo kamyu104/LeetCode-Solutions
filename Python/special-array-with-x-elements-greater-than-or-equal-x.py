@@ -36,7 +36,7 @@ class Solution2(object):
                 count[num] += 1
             for i in xrange(1, len(count)):
                 count[i] += count[i-1]
-            for i in reversed(xrange(len(nums))):  # stable sort and inplace
+            for i in reversed(xrange(len(nums))):  # inplace but unstable sort
                 if nums[i] < 0:  # processed
                     continue
                 while i != count[nums[i]]-1:
