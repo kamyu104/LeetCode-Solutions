@@ -4,7 +4,8 @@
 class Solution {
 public:
     vector<int> busiestServers(int k, vector<int>& arrival, vector<int>& load) {
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap_of_endtimes;         priority_queue<int, vector<int>, greater<int>> min_heap_of_nodes_after_curr;
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap_of_endtimes;
+        priority_queue<int, vector<int>, greater<int>> min_heap_of_nodes_after_curr;
         priority_queue<int, vector<int>, greater<int>> min_heap_of_nodes_before_curr;
         for (int i = 0; i < k; ++i) {
             min_heap_of_nodes_before_curr.emplace(i);
@@ -46,7 +47,8 @@ public:
 class Solution2 {
 public:
     vector<int> busiestServers(int k, vector<int>& arrival, vector<int>& load) {
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap_of_endtimes;         set<int> availables;
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap_of_endtimes;
+        set<int> availables;
         for (int i = 0; i < k; ++i) {
             availables.emplace(i);
         }
