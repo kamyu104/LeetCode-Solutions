@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1611%20%2F%201611-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1612%20%2F%201612-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -651,6 +651,7 @@
 1519| [Number of Nodes in the Sub-Tree With the Same Label](https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/) | [C++](./C++/number-of-nodes-in-the-sub-tree-with-the-same-label.cpp) [Python](./Python/number-of-nodes-in-the-sub-tree-with-the-same-label.py) | _O(n)_          | _O(h)_          | Medium           || DFS, Stack |
 1522| [Diameter of N-Ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree/) | [C++](./C++/diameter-of-n-ary-tree.cpp) [Python](./Python/diameter-of-n-ary-tree.py) | _O(n)_          | _O(h)_          | Medium           |🔒| DFS, Stack |
 1530 | [Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/)| [C++](./C++/number-of-good-leaf-nodes-pairs.cpp) [Python](./Python/number-of-good-leaf-nodes-pairs.py) | _O(n)_ | _O(h)_ | Medium | | DFS, Stack
+1612 | [Check If Two Expression Trees are Equivalent](https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/)  | [C++](./C++/check-if-two-expression-trees-are-equivalent.cpp) [Python](./Python/check-if-two-expression-trees-are-equivalent.py) | _O(n)_| _O(1)_| Medium           || `Morris Traversal`, Inorder Traversal, Stack, Hash Table | 
 
 <br/>
 <div align="right">
