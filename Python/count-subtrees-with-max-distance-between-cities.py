@@ -38,7 +38,7 @@ class Solution(object):
             v -= 1
             adj[u].append(v)
             adj[v].append(u)
-        lookup, result = [0 for _ in xrange(n)], [0 for _ in xrange(n-1)]
+        lookup, result = [0]*n, [0]*(n-1)
         for i in xrange(n):  # Time: sum(O(k^5) for k in [1, n]) = O(n^6)
             dp = [[[0]*n for _ in xrange(n)] for _ in xrange(n)]
             count = [1]*n
@@ -95,7 +95,7 @@ class Solution2(object):
             v -= 1
             adj[u].append(v)
             adj[v].append(u)
-        result = [0 for _ in xrange(n-1)]
+        result = [0]*(n-1)
         for mask in xrange(1, 2**n):
             max_d = max_distance(n, edges, adj, mask)
             if max_d-1 >= 0:
