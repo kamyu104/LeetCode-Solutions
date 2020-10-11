@@ -1,4 +1,4 @@
-// Time:  O(n^5)
+// Time:  O(n^6)
 // Space: O(n^3)
 
 class Solution {
@@ -11,10 +11,10 @@ public:
             adj[v].emplace_back(u);
         }
         vector<int> lookup(n), result(n - 1);
-        for (int i = 0; i < n; ++i) {
+        for (int i = 0; i < n; ++i) {  // Time: sum(O(k^5) for k in [1, n]) = O(n^6)
             vector<vector<vector<int>>> dp(n, vector<vector<int>>(n, vector<int>(n)));
             vector<int> count(n, 1);
-            dfs(n, adj, i, -1, lookup, &count, &dp);
+            dfs(n, adj, i, -1, lookup, &count, &dp);  // Time: O(k^5), k is the number of the remaining cities
             lookup[i] = 1;
             for (int d = 1; d <= n - 1; ++d) {
                 for (int max_d = 1; max_d <= n - 1; ++max_d) {
