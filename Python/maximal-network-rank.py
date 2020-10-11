@@ -1,6 +1,9 @@
 # Time:  O(nlogn) ~ O(n^2)
 # Space: O(n + m)
 
+import collections
+
+
 # optimized from Solution2
 class Solution(object):
     def maximalNetworkRank(self, n, roads):
@@ -33,6 +36,9 @@ class Solution(object):
 
 # Time:  O(n^2)
 # Space: O(n + m)
+import collections
+
+
 class Solution2(object):
     def maximalNetworkRank(self, n, roads):
         """
