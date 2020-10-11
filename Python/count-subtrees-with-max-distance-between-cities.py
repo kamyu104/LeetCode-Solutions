@@ -57,6 +57,7 @@ class Solution(object):
 # Time:  O(n * 2^n)
 # Space: O(n)
 import collections
+import math
 
 
 class Solution2(object):
@@ -66,28 +67,31 @@ class Solution2(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        def bfs(adj, node_set, start):
+        def popcount(mask):
+            count = 0
+            while mask:
+                mask &= mask-1
+                count += 1
+            return count
+
+        def bfs(adj, mask, start):
             q = collections.deque([(start, 0)])
-            lookup = {start}
+            lookup = 1<<start
+            count = popcount(mask)-1
             u, d = None, None
             while q:
                 u, d = q.popleft()
                 for v in adj[u]:
-                    if v not in node_set or v in lookup:
+                    if not (mask&(1<<v)) or (lookup&(1<<v)):
                         continue
-                    lookup.add(v)     
+                    lookup |= 1<<v  
+                    count -= 1
                     q.append((v, d+1))
-            return len(lookup) == len(node_set), u, d
+            return count == 0, u, d
         
         def max_distance(n, edges, adj, mask):
-            node_set = set()
-            base = 1
-            for i in xrange(n):
-                if mask & base:
-                    node_set.add(i)
-                base <<= 1
-            is_valid, farthest, _ = bfs(adj, node_set, next(iter(node_set), None))
-            return bfs(adj, node_set, farthest)[-1] if is_valid else 0
+            is_valid, farthest, _ = bfs(adj, mask, int(math.log(mask&-mask, 2)))
+            return bfs(adj, mask, farthest)[-1] if is_valid else 0
 
         adj = collections.defaultdict(list)
         for u, v in edges:
@@ -101,3 +105,4 @@ class Solution2(object):
             if d-1 >= 0:
                 result[d-1] += 1
         return result
+
