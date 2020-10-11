@@ -77,9 +77,9 @@ public:
         vector<int> result(n - 1);
         int total = 1 << n;
         for (int mask = 1; mask < total; ++mask) {
-            int d = maxDistance(n, edges, adj, mask);
-            if (d - 1 >= 0) {
-                ++result[d - 1];
+            int max_d = maxDistance(n, edges, adj, mask);
+            if (max_d - 1 >= 0) {
+                ++result[max_d - 1];
             }
         }
         return result;
