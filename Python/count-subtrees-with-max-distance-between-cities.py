@@ -19,7 +19,8 @@ class Solution(object):
                 dfs(n, adj, child, curr, lookup, count, dp)
                 children.append(child)
             for child in children:
-                new_dp_curr = [row[:] for row in dp[curr]];
+                new_dp_curr = [row[:] for row in dp[curr]]
+                dp[child][0][0] = 1
                 for d in xrange(count[child]):
                     for max_d in xrange(count[child]):
                         new_dp_curr[d+1][max(max_d, d+1)] += dp[child][d][max_d]
@@ -33,7 +34,6 @@ class Solution(object):
                                     dp[curr][curr_d][curr_max_d]*dp[child][child_d][child_max_d]
                 dp[curr] = new_dp_curr
                 count[curr] += count[child]
-            dp[curr][0][0] = 1
 
         adj = collections.defaultdict(list)
         for u, v in edges:
