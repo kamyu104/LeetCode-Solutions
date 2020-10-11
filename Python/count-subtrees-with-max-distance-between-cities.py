@@ -1,4 +1,4 @@
-# Time:  O(n^5)
+# Time:  O(n^6)
 # Space: O(n^3)
 
 import collections
@@ -43,10 +43,10 @@ class Solution(object):
             adj[u].append(v)
             adj[v].append(u)
         lookup, result = [0 for _ in xrange(n)], [0 for _ in xrange(n-1)]
-        for i in xrange(n):
+        for i in xrange(n):  # Time: sum(O(k^5) for k in [1, n]) = O(n^6)
             dp = [[[0]*n for _ in xrange(n)] for _ in xrange(n)]
             count = [1]*n
-            dfs(n, adj, i, -1, lookup, count, dp)
+            dfs(n, adj, i, -1, lookup, count, dp)  # Time: O(k^5), k is the number of the remaining cities
             lookup[i] = 1
             for d in xrange(1, n):
                 for max_d in xrange(1, n):
