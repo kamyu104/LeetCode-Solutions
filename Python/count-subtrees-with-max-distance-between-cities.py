@@ -26,7 +26,7 @@ class Solution(object):
                         new_dp_curr[d+1][max(max_d, d+1)] += dp[child][d][max_d]
                 for curr_d in xrange(count[curr]):
                     for curr_max_d in xrange(count[curr]):
-                        if not dp[curr][curr_d][curr_max_d]:
+                        if not dp[curr][curr_d][curr_max_d]:  # pruning
                             continue
                         for child_d in xrange(count[child]):
                             for child_max_d in xrange(count[child]):
