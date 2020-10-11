@@ -32,22 +32,18 @@ private:
              vector<int> *count,
              vector<vector<vector<int>>> *dp) {
     
-        vector<int> children;
         for (const auto& child : adj[curr]) {
             if (child == parent || lookup[child]) {
                 continue;
             }
             dfs(n, adj, child, curr, lookup, count, dp);
-            children.emplace_back(child);
         }
-        for (const auto& child : children) {
-            vector<vector<int>> new_dp_curr = (*dp)[curr];
-            (*dp)[child][0][0] = 1;
-            for (int d = 0; d < (*count)[child]; ++d) {
-                for (int max_d = 0; max_d < (*count)[child]; ++max_d) {
-                    new_dp_curr[d + 1][max(max_d, d + 1)] += (*dp)[child][d][max_d];
-                }
+        (*dp)[curr][0][0] = 1;
+        for (const auto& child : adj[curr]) {
+            if (child == parent || lookup[child]) {
+                continue;
             }
+            vector<vector<int>> new_dp_curr = (*dp)[curr];
             for (int curr_d = 0; curr_d < (*count)[curr]; ++curr_d) {
                 for (int curr_max_d = 0; curr_max_d < (*count)[curr]; ++curr_max_d) {
                     if (!(*dp)[curr][curr_d][curr_max_d]) {  // pruning
