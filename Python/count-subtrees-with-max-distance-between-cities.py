@@ -12,18 +12,15 @@ class Solution(object):
         :rtype: List[int]
         """
         def dfs(n, adj, curr, parent, lookup, count, dp):
-            children = []
             for child in adj[curr]:
                 if child == parent or lookup[child]:
                     continue
                 dfs(n, adj, child, curr, lookup, count, dp)
-                children.append(child)
-            for child in children:
+            dp[curr][0][0] = 1
+            for child in adj[curr]:
+                if child == parent or lookup[child]:
+                    continue
                 new_dp_curr = [row[:] for row in dp[curr]]
-                dp[child][0][0] = 1
-                for d in xrange(count[child]):
-                    for max_d in xrange(count[child]):
-                        new_dp_curr[d+1][max(max_d, d+1)] += dp[child][d][max_d]
                 for curr_d in xrange(count[curr]):
                     for curr_max_d in xrange(count[curr]):
                         if not dp[curr][curr_d][curr_max_d]:  # pruning
