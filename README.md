@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1612%20%2F%201612-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1617%20%2F%201617-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -422,6 +422,7 @@
 1576| [Replace All ?'s to Avoid Consecutive Repeating Characters](https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/) | [C++](./C++/replace-all-s-to-avoid-consecutive-repeating-characters.cpp) [Python](./Python/replace-all-s-to-avoid-consecutive-repeating-characters.py) | _O(n)_ | _O(1)_ | Easy |||
 1592| [Rearrange Spaces Between Words](https://leetcode.com/problems/rearrange-spaces-between-words/) | [C++](./C++/rearrange-spaces-between-words.cpp) [Python](./Python/rearrange-spaces-between-words.py) | _O(n)_ | _O(1)_ | Easy |||
 1598| [Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/) | [C++](./C++/crawler-log-folder.cpp) [Python](./Python/crawler-log-folder.py) | _O(n)_ | _O(1)_ | Easy |||
+1614| [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/) | [C++](./C++/maximum-nesting-depth-of-the-parentheses.cpp) [Python](./Python/maximum-nesting-depth-of-the-parentheses.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -1505,6 +1506,7 @@
 1575| [Count All Possible Routes](https://leetcode.com/problems/count-all-possible-routes/)| [C++](./C++/count-all-possible-routes.cpp) [Python](./Python/count-all-possible-routes.py) | _O(nlogn + n * f)_    | _O(n * f)_          | Hard           || Math
 1594| [Maximum Non Negative Product in a Matrix](https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/)| [C++](./C++/maximum-non-negative-product-in-a-matrix.cpp) [Python](./Python/maximum-non-negative-product-in-a-matrix.py) | _O(m * n)_    | _O(n)_          | Medium           || 
 1595| [Minimum Cost to Connect Two Groups of Points](https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/)| [C++](./C++/minimum-cost-to-connect-two-groups-of-points.cpp) [Python](./Python/minimum-cost-to-connect-two-groups-of-points.py) | _O(m * n * 2^n)_    | _O(2^n)_          | Hard           ||
+1617| [Count Subtrees With Max Distance Between Cities](https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities/)| [C++](./C++/count-subtrees-with-max-distance-between-cities.cpp) [Python](./Python/count-subtrees-with-max-distance-between-cities.py) | _O(n^6)_    | _O(n^3)_          | Hard           || Backtracking, Graph
 
 <br/>
 <div align="right">
@@ -1603,6 +1605,7 @@
 1591 | [Strange Printer II](https://leetcode.com/problems/strange-printer-ii/) | [C++](./C++/strange-printer-ii.cpp) [Python](./Python/strange-printer-ii.py) | _O(c * m * n + e)_ | _O(e)_ | Hard ||
 1599 | [Maximum Profit of Operating a Centennial Wheel](https://leetcode.com/problems/maximum-profit-of-operating-a-centennial-wheel/) | [C++](./C++/maximum-profit-of-operating-a-centennial-wheel.cpp) [Python](./Python/maximum-profit-of-operating-a-centennial-wheel.py) | _O(n)_ | _O(1)_ | Medium ||
 1605 | [Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/) | [C++](./C++/find-valid-matrix-given-row-and-column-sums.cpp) [Python](./Python/find-valid-matrix-given-row-and-column-sums.py) | _O(m + n)_ | _O(1)_ | Medium ||
+1616 | [Split Two Strings to Make Palindrome](https://leetcode.com/problems/split-two-strings-to-make-palindrome/) | [C++](./C++/split-two-strings-to-make-palindrome.cpp) [Python](./Python/split-two-strings-to-make-palindrome.py) | _O(n)_ | _O(1)_ | Medium || Two Pointers
 
 <br/>
 <div align="right">
@@ -1631,6 +1634,7 @@
 1579 | [Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/)  | [C++](./C++/remove-max-number-of-edges-to-keep-graph-fully-traversable.cpp) [Python](./Python/remove-max-number-of-edges-to-keep-graph-fully-traversable.py) | _O(n + m)_| _O(n)_| Hard           || Union Find | 
 1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)  | [C++](./C++/min-cost-to-connect-all-points.cpp) [Python](./Python/min-cost-to-connect-all-points.py) | _O(n^2)_| _O(n)_| Medium           || Union Find, `Kruskal's Algorithm`, MST | 
 1601 | [Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/)  | [C++](./C++/maximum-number-of-achievable-transfer-requests.cpp) [Python](./Python/maximum-number-of-achievable-transfer-requests.py) | _O((n + r) * 2^r)_| _O(n + r)_| Hard           || Combinations, Backtracking | 
+1615 | [Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank/)  | [C++](./C++/maximal-network-rank.cpp) [Python](./Python/maximal-network-rank.py) | _O(m + nlogn)_ ~ _O(n^2)_ | _O(n + m)_| Medium           ||| 
 
 <br/>
 <div align="right">
@@ -1846,6 +1850,7 @@
 1587| [Bank Account Summary II](https://leetcode.com/problems/bank-account-summary-ii/) | [MySQL](./MySQL/bank-account-summary-ii.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒||
 1596| [The Most Frequently Ordered Products for Each Customer](https://leetcode.com/problems/the-most-frequently-ordered-products-for-each-customer/) | [MySQL](./MySQL/the-most-frequently-ordered-products-for-each-customer.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 1607| [Sellers With No Sales](https://leetcode.com/problems/sellers-with-no-sales/) | [MySQL](./MySQL/sellers-with-no-sales.sql) | _O(nlogm)_ | _O(n + m)_       | Medium           |🔒||
+1613| [Find the Missing IDs](https://leetcode.com/problems/find-the-missing-ids/) | [MySQL](./MySQL/find-the-missing-ids.sql) | _O(n^2)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
