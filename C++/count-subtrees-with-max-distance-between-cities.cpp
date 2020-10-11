@@ -16,8 +16,8 @@ public:
             vector<int> count(n, 1);
             dfs(n, adj, i, -1, lookup, &count, &dp);  // Time: O(k^5), k is the number of the remaining cities
             lookup[i] = 1;
-            for (int d = 1; d <= n - 1; ++d) {
-                for (int max_d = 1; max_d <= n - 1; ++max_d) {
+            for (int d = 1; d < n; ++d) {
+                for (int max_d = 1; max_d < n; ++max_d) {
                     result[max_d - 1] += dp[i][d][max_d];
                 }
             }
