@@ -1,4 +1,4 @@
-# Time:  O(nlogn) ~ O(n^2)
+# Time:  O(m + nlogn) ~ O(n^2)
 # Space: O(n + m)
 
 import collections
