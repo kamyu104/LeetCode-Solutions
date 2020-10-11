@@ -97,8 +97,8 @@ class Solution2(object):
             adj[v].append(u)
         result = [0 for _ in xrange(n-1)]
         for mask in xrange(1, 2**n):
-            d = max_distance(n, edges, adj, mask)
-            if d-1 >= 0:
-                result[d-1] += 1
+            max_d = max_distance(n, edges, adj, mask)
+            if max_d-1 >= 0:
+                result[max_d-1] += 1
         return result
 
