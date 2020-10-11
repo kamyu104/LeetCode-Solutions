@@ -61,8 +61,8 @@ private:
                     }
                 }
             }
-            (*dp)[curr] = move(new_dp_curr);
             (*count)[curr] += (*count)[child];
+            (*dp)[curr] = move(new_dp_curr);
         }
     }
 };
