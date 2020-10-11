@@ -1,4 +1,4 @@
-// Time:  O(nlogn) ~ O(n^2)
+// Time:  O(m + nlogn) ~ O(n^2)
 // Space: O(m + n)
 
 class Solution {
