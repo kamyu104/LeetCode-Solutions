@@ -50,7 +50,7 @@ private:
             }
             for (int curr_d = 0; curr_d < (*count)[curr]; ++curr_d) {
                 for (int curr_max_d = 0; curr_max_d < (*count)[curr]; ++curr_max_d) {
-                    if (!(*dp)[curr][curr_d][curr_max_d]) {
+                    if (!(*dp)[curr][curr_d][curr_max_d]) {  // pruning
                         continue;
                     }
                     for (int child_d = 0; child_d < (*count)[child]; ++child_d) {
