@@ -14,11 +14,11 @@ public:
         }
         vector<int> sorted_idx(n);
         iota(begin(sorted_idx), end(sorted_idx), 0);
-        sorted_idx= counting_sort(sorted_idx,
-                                  [&degree](const auto& x) {
-                                      return degree[x];
-                                  },
-                                  true);
+        sorted_idx = counting_sort(sorted_idx,
+                                   [&degree](const auto& x) {
+                                       return degree[x];
+                                   },
+                                   true);
         int m = 2;
         for (; m < n; ++m) {
             if (degree[sorted_idx[m]] != degree[sorted_idx[1]]) {
