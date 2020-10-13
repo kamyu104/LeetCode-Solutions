@@ -16,8 +16,8 @@ public:
             vector<int> count(n, 1);
             dfs(n, adj, i, -1, lookup, &count, &dp);  // Time: O(k^5), k is the number of the remaining cities
             lookup[i] = 1;
-            for (int d = 1; d < n; ++d) {
-                for (int max_d = d; max_d < min(2 * d + 1, n); ++max_d) {
+            for (int d = 1; d < n; ++d) {  // for each depth from city i
+                for (int max_d = d; max_d < min(2 * d + 1, n); ++max_d) {  // for each max distance
                     result[max_d - 1] += dp[i][d][max_d];
                 }
             }
