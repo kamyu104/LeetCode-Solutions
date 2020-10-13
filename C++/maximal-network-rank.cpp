@@ -1,5 +1,6 @@
 // Time:  O(m + nlogn + k^2), k is the number of values greater or equal to top2
 // Space: O(m + n)
+
 class Solution {
 public:
     int maximalNetworkRank(int n, vector<vector<int>>& roads) {
