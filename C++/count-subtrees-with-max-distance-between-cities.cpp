@@ -52,7 +52,7 @@ private:
                     for (int child_d = 0; child_d < (*count)[child]; ++child_d) {
                         for (int child_max_d = child_d; child_max_d < min(2 * child_d + 1, (*count)[child]); ++child_max_d) {
                             new_dp_curr[max(curr_d, child_d + 1)][max({curr_max_d, child_max_d, curr_d + child_d + 1})] +=
-                                (*dp)[curr][curr_d][curr_max_d] * (*dp)[child][child_d][child_max_d];
+                                (*dp)[curr][curr_d][curr_max_d] * (*dp)[child][child_d][child_max_d];  // count subtrees with new child
                         }
                     }
                 }
