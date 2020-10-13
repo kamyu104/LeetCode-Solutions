@@ -28,7 +28,7 @@ class Solution(object):
                         for child_d in xrange(count[child]):
                             for child_max_d in xrange(child_d, min(2*child_d+1, count[child])):
                                 new_dp_curr[max(curr_d, child_d+1)][max(curr_max_d, child_max_d, curr_d+child_d+1)] += \
-                                    dp[curr][curr_d][curr_max_d]*dp[child][child_d][child_max_d]
+                                    dp[curr][curr_d][curr_max_d]*dp[child][child_d][child_max_d]  # count subtrees with new child
                 count[curr] += count[child]  # merge child to count subtrees
                 dp[curr] = new_dp_curr
 
