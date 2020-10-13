@@ -29,7 +29,7 @@ class Solution(object):
                             for child_max_d in xrange(count[child]):
                                 new_dp_curr[max(curr_d, child_d+1)][max(curr_max_d, child_max_d, curr_d+child_d+1)] += \
                                     dp[curr][curr_d][curr_max_d]*dp[child][child_d][child_max_d]
-                count[curr] += count[child]
+                count[curr] += count[child]  # merge child and count subtrees
                 dp[curr] = new_dp_curr
 
         adj = collections.defaultdict(list)
