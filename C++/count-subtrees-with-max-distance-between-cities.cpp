@@ -17,7 +17,7 @@ public:
             dfs(n, adj, i, -1, lookup, &count, &dp);  // Time: O(k^5), k is the number of the remaining cities
             lookup[i] = 1;
             for (int d = 1; d < n; ++d) {
-                for (int max_d = 1; max_d < n; ++max_d) {
+                for (int max_d = 1; max_d < min(2 * d + 1, n); ++max_d) {
                     result[max_d - 1] += dp[i][d][max_d];
                 }
             }
@@ -45,12 +45,12 @@ private:
             }
             vector<vector<int>> new_dp_curr = (*dp)[curr];
             for (int curr_d = 0; curr_d < (*count)[curr]; ++curr_d) {
-                for (int curr_max_d = 0; curr_max_d < (*count)[curr]; ++curr_max_d) {
+                for (int curr_max_d = 0; curr_max_d < min(2 * curr_d + 1, (*count)[curr]); ++curr_max_d) {
                     if (!(*dp)[curr][curr_d][curr_max_d]) {  // pruning
                         continue;
                     }
                     for (int child_d = 0; child_d < (*count)[child]; ++child_d) {
-                        for (int child_max_d = 0; child_max_d < (*count)[child]; ++child_max_d) {
+                        for (int child_max_d = 0; child_max_d < min(2 * child_d + 1, (*count)[child]); ++child_max_d) {
                             new_dp_curr[max(curr_d, child_d + 1)][max({curr_max_d, child_max_d, curr_d + child_d + 1})] +=
                                 (*dp)[curr][curr_d][curr_max_d] * (*dp)[child][child_d][child_max_d];
                         }
