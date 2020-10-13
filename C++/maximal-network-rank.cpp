@@ -1,4 +1,4 @@
-// Time:  O(m + nlogn + k^2), k is the number of values greater or equal to top2
+// Time:  O(m + n + k^2), k is the number of values greater or equal to top2
 // Space: O(m + n)
 
 class Solution {
