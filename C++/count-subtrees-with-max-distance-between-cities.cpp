@@ -57,7 +57,7 @@ private:
                     }
                 }
             }
-            (*count)[curr] += (*count)[child];
+            (*count)[curr] += (*count)[child];  // merge child and count subtrees
             (*dp)[curr] = move(new_dp_curr);
         }
     }
