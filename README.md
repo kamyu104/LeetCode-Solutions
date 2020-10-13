@@ -1634,7 +1634,7 @@
 1579 | [Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/)  | [C++](./C++/remove-max-number-of-edges-to-keep-graph-fully-traversable.cpp) [Python](./Python/remove-max-number-of-edges-to-keep-graph-fully-traversable.py) | _O(n + m)_| _O(n)_| Hard           || Union Find | 
 1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)  | [C++](./C++/min-cost-to-connect-all-points.cpp) [Python](./Python/min-cost-to-connect-all-points.py) | _O(n^2)_| _O(n)_| Medium           || Union Find, `Kruskal's Algorithm`, MST | 
 1601 | [Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/)  | [C++](./C++/maximum-number-of-achievable-transfer-requests.cpp) [Python](./Python/maximum-number-of-achievable-transfer-requests.py) | _O((n + r) * 2^r)_| _O(n + r)_| Hard           || Combinations, Backtracking | 
-1615 | [Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank/)  | [C++](./C++/maximal-network-rank.cpp) [Python](./Python/maximal-network-rank.py) | _O(m + nlogn)_ ~ _O(n^2)_ | _O(n + m)_| Medium           ||| 
+1615 | [Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank/)  | [C++](./C++/maximal-network-rank.cpp) [Python](./Python/maximal-network-rank.py) | _O(m + n + k^2)_ | _O(m + n)_ | Medium           || Counting Sort | 
 
 <br/>
 <div align="right">
