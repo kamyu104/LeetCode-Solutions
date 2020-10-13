@@ -44,8 +44,8 @@ class Solution(object):
             count = [1]*n
             dfs(n, adj, i, -1, lookup, count, dp)  # Time: O(k^5), k is the number of the remaining cities
             lookup[i] = 1
-            for d in xrange(1, n):
-                for max_d in xrange(d, min(2*d+1, n)):
+            for d in xrange(1, n):  # for each depth from city i
+                for max_d in xrange(d, min(2*d+1, n)):  # for each max distance
                     result[max_d-1] += dp[i][d][max_d]
         return result
     
