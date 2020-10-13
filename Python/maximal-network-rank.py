@@ -48,7 +48,8 @@ class Solution(object):
                 if degree[sorted_idx[i]]+degree[sorted_idx[j]]-int(sorted_idx[i] in adj and sorted_idx[j] in adj[sorted_idx[i]]) > result:  # if equal to ideal sum of top2 values, break
                     return degree[sorted_idx[i]]+degree[sorted_idx[j]]-int(sorted_idx[i] in adj and sorted_idx[j] in adj[sorted_idx[i]])                                                 
         return result
-    
+
+
 # Time:  O(m + nlogn + k^2), k is the number of values greater or equal to top2
 # Space: O(m + n)
 import collections
