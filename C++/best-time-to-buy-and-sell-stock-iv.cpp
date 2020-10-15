@@ -28,7 +28,7 @@ public:
                 profits.emplace_back(prices[last_p] - prices[v]);  // count [prices[v], prices[last_p]] interval
                 v = last_v;  
             }
-            v_p.emplace_back(v, p);  // keep [prices[last_v], prices[p]] interval to process
+            v_p.emplace_back(v, p);  // keep [prices[last_v], prices[p]] interval to check overlapped
         }        
         while (!empty(v_p))  {
             const auto [v, p] = move(v_p.back()); v_p.pop_back();
