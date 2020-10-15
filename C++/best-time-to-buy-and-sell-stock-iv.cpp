@@ -38,6 +38,6 @@ public:
             k = size(profits);
         }
         nth_element(begin(profits), begin(profits) + k, end(profits), greater<int>());
-        return accumulate(cbegin(profits), cbegin(profits) + k, 0);
+        return accumulate(cbegin(profits), cbegin(profits) + k, 0);  // top k intervals
     }
 };
