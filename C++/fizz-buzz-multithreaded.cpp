@@ -37,7 +37,7 @@ public:
     }
 
     // printFizzBuzz() outputs "fizzbuzz".
-	void fizzbuzz(function<void()> printFizzBuzz) {
+    void fizzbuzz(function<void()> printFizzBuzz) {
         for (int i = 1; i <= n_; ++i) {
             {
                 unique_lock<mutex> l(m_);
