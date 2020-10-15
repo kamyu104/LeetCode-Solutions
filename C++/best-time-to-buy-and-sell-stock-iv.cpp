@@ -23,7 +23,7 @@ public:
             }
             while (!empty(v_p) && (prices[p] >= prices[v_p.back().second])) {  // overlapped
                 // prices[last_v] <= prices[v] <= prices[last_p] <= prices[p],
-                // treat overlapped as [prices[v], prices[last_p]], [prices[last_v], prices[p]] intervals with invariant max profit
+                // treat overlapped as [prices[v], prices[last_p]], [prices[last_v], prices[p]] intervals due to invariant max profit
                 const auto [last_v, last_p] = move(v_p.back()); v_p.pop_back();
                 profits.emplace_back(prices[last_p] - prices[v]);  // count [prices[v], prices[last_p]] interval
                 v = last_v;  
