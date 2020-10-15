@@ -36,8 +36,9 @@ public:
         }
         if (k > size(profits)) {
             k = size(profits);
+        } else {
+            nth_element(begin(profits), begin(profits) + k, end(profits), greater<int>());
         }
-        nth_element(begin(profits), begin(profits) + k, end(profits), greater<int>());
         return accumulate(cbegin(profits), cbegin(profits) + k, 0);  // top k intervals
     }
 };
