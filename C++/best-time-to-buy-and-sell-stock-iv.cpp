@@ -17,11 +17,11 @@ public:
                     break;
                 }
             };            
-            while (!empty(v_p) && (prices[v] < prices[v_p.back().first])) {  // not overlapped
+            while (!empty(v_p) && (prices[v_p.back().first] > prices[v])) {  // not overlapped
                 const auto [v, p] = move(v_p.back()); v_p.pop_back();
                 profits.emplace_back(prices[p] - prices[v]);  // count [prices[v], prices[p]] interval
             }
-            while (!empty(v_p) && (prices[p] >= prices[v_p.back().second])) {  // overlapped
+            while (!empty(v_p) && (prices[v_p.back().second] <= prices[p])) {  // overlapped
                 // prices[last_v] <= prices[v] <= prices[last_p] <= prices[p],
                 // treat overlapped as [prices[v], prices[last_p]], [prices[last_v], prices[p]] intervals due to invariant max profit
                 const auto [last_v, last_p] = move(v_p.back()); v_p.pop_back();
