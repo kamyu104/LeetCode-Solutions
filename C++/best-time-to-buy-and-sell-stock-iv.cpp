@@ -5,7 +5,7 @@ class Solution {
 public:
     int maxProfit(int k, vector<int> &prices) {
         vector<int> profits;
-        vector<pair<int, int>> v_p_stk;  // v is increasing, p is strictly decreasing
+        vector<pair<int, int>> v_p_stk;  // mono stack, where v is increasing and p is strictly decreasing
         for (int v = -1, p = -1; p + 1 < size(prices);) { // at most O(n) peaks, so v_p_stk and profits are both at most O(n) space
             for (v = p + 1; v + 1 < size(prices); ++v) {
                 if (prices[v] < prices[v + 1]) {
