@@ -6,7 +6,7 @@ public:
     int maxProfit(int k, vector<int> &prices) {
         vector<int> profits;
         vector<pair<int, int>> v_p;
-        for (int v = -1, p = -1; p + 1 < size(prices);)  {
+        for (int v = -1, p = -1; p + 1 < size(prices);) { // at most O(n) peaks, so v_p and profits are both at most O(n) space
             for (v = p + 1; v + 1 < size(prices); ++v) {
                 if (prices[v] < prices[v + 1]) {
                     break;
