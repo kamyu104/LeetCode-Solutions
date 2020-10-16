@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1617%20%2F%201617-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1618%20%2F%201618-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1112,6 +1112,7 @@
 1533 | [Find the Index of the Large Integer](https://leetcode.com/problems/find-the-index-of-the-large-integer/) | [C++](./C++/find-the-index-of-the-large-integer.cpp) [Python](./Python/find-the-index-of-the-large-integer.py) | _O(logn)_ | _O(1)_ | Medium | 🔒 |
 1539 | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | [C++](./C++/kth-missing-positive-number.cpp) [Python](./Python/kth-missing-positive-number.py) | _O(logn)_ | _O(1)_ | Easy | |
 1552 | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/) | [C++](./C++/magnetic-force-between-two-balls.cpp) [Python](./Python/magnetic-force-between-two-balls.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | |
+1618 | [Maximum Font to Fit a Sentence in a Screen](https://leetcode.com/problems/maximum-font-to-fit-a-sentence-in-a-screen/) | [C++](./C++/maximum-font-to-fit-a-sentence-in-a-screen.cpp) [Python](./Python/maximum-font-to-fit-a-sentence-in-a-screen.py) | _O(n + logm)_ | _O(1)_ | Medium |🔒|
 
 <br/>
 <div align="right">
