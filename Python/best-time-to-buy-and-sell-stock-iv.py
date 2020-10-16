@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-from random import randint
+import random
 
 
 class Solution(object):
@@ -28,7 +28,7 @@ class Solution(object):
 
             left, right = 0, len(nums)-1
             while left <= right:
-                pivot_idx = randint(left, right)
+                pivot_idx = random.randint(left, right)
                 pivot_left, pivot_right = tri_partition(nums, left, right, nums[pivot_idx], compare)
                 if pivot_left <= n <= pivot_right:
                     return
