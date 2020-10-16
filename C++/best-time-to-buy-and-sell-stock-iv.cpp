@@ -11,12 +11,12 @@ public:
                 if (prices[v] < prices[v + 1]) {
                     break;
                 }
-            };
+            }
             for (p = v; p + 1 < size(prices); ++p) {
                 if (prices[p] > prices[p + 1]) {
                     break;
                 }
-            };            
+            }
             while (!empty(v_p_stk) && (prices[v_p_stk.back().first] > prices[v])) {  // not overlapped
                 const auto [v, p] = move(v_p_stk.back()); v_p_stk.pop_back();
                 profits.emplace_back(prices[p] - prices[v]);  // count [prices[v], prices[p]] interval
