@@ -32,8 +32,8 @@ class Solution(object):
         :rtype: int
         """
         def check(count, w, h, fonts, fontInfo, x):  # Time: O(1)
-            return (fontInfo.getHeight(fonts[mid]) <= h and
-                    sum(cnt * fontInfo.getWidth(fonts[mid], c) for c, cnt in count.iteritems()) <= w)
+            return (fontInfo.getHeight(fonts[x]) <= h and
+                    sum(cnt * fontInfo.getWidth(fonts[x], c) for c, cnt in count.iteritems()) <= w)
 
         count = collections.Counter(text)
         left, right = 0, len(fonts)-1
