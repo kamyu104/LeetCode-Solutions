@@ -1,4 +1,4 @@
-// Time:  O(n)
+	// Time:  O(n)
 // Space: O(n)
 
 class Solution {
@@ -37,7 +37,7 @@ public:
         if (k > size(profits)) {
             k = size(profits);
         } else {
-            nth_element(begin(profits), begin(profits) + k, end(profits), greater<int>());
+            nth_element(begin(profits), begin(profits) + k - 1, end(profits), greater<int>());
         }
         return accumulate(cbegin(profits), cbegin(profits) + k, 0);  // top k profits of nonoverlapped intervals
     }
