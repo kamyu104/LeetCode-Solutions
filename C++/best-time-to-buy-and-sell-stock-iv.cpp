@@ -1,4 +1,4 @@
-	// Time:  O(n)
+// Time:  O(n)
 // Space: O(n)
 
 class Solution {
@@ -18,8 +18,8 @@ public:
                 }
             }
             while (!empty(v_p_stk) && (prices[v_p_stk.back().first] > prices[v])) {  // not overlapped
-                const auto [v, p] = move(v_p_stk.back()); v_p_stk.pop_back();
-                profits.emplace_back(prices[p] - prices[v]);  // count [prices[v], prices[p]] interval
+                const auto [last_v, last_p] = move(v_p_stk.back()); v_p_stk.pop_back();
+                profits.emplace_back(prices[last_p] - prices[last_v]);  // count [prices[last_v], prices[last_p]] interval
             }
             while (!empty(v_p_stk) && (prices[v_p_stk.back().second] <= prices[p])) {  // overlapped
                 // prices[last_v] <= prices[v] <= prices[last_p] <= prices[p],
@@ -31,8 +31,8 @@ public:
             v_p_stk.emplace_back(v, p);  // keep [prices[last_v], prices[p]] interval to check overlapped
         }        
         while (!empty(v_p_stk))  {
-            const auto [v, p] = move(v_p_stk.back()); v_p_stk.pop_back();
-            profits.emplace_back(prices[p] - prices[v]);  // count [prices[v], prices[p]] interval
+            const auto [last_v, last_p] = move(v_p_stk.back()); v_p_stk.pop_back();
+            profits.emplace_back(prices[last_p] - prices[last_v]);  // count [prices[last_v], prices[last_p]] interval
         }
         if (k > size(profits)) {
             k = size(profits);
