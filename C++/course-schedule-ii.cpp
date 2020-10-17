@@ -5,31 +5,31 @@
 class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        unordered_map<int, unordered_set<int>> in_degree, out_degree;
+        unordered_map<int, unordered_set<int>> outDegree;
+        unordered_map<int, int> requirementsCnt;
         for (const auto& p : prerequisites) {
-            in_degree[p[0]].emplace(p[1]);
-            out_degree[p[1]].emplace(p[0]);
+            requirementsCnt[p[0]]++;
+            outDegree[p[1]].emplace(p[0]);
         }
         queue<int> q;
         for (int i = 0; i < numCourses; ++i) {
-            if (!in_degree.count(i)) {
+            if (requirementsCnt[i] == 0) {
                 q.emplace(i);
             }
         }
         vector<int> result;
         while (!q.empty()) {
-            const auto node = q.front(); q.pop();
+            const auto node = q.front(); 
+            q.pop();
             result.emplace_back(node);
-            for (const auto& i : out_degree[node]) {
-                in_degree[i].erase(node);
-                if (in_degree[i].empty()) {
+            for (const auto& i : outDegree[node]) {
+                requirementsCnt[i]--;
+                if (requirementsCnt[i] == 0) {
                     q.emplace(i);
-                    in_degree.erase(i);
                 }
             }
-            out_degree.erase(node);
         }
-        return in_degree.empty() && out_degree.empty() ? result : vector<int>();
+        return result.size() == numCourses ? result : vector<int>();
     }
 };
 
