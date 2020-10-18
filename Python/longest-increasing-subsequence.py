@@ -146,9 +146,9 @@ class Solution3(object):
         sorted_nums = sorted(set(nums))
         lookup = {num:i for i, num in enumerate(sorted_nums)}
         segment_tree = SegmentTree(len(lookup))
-        for i in xrange(len(nums)):
-            segment_tree.update(lookup[nums[i]], lookup[nums[i]],
-                                (segment_tree.query(0, lookup[nums[i]]-1) if lookup[nums[i]] >= 1 else 0) + 1)
+        for num in nums:
+            segment_tree.update(lookup[num], lookup[num],
+                                (segment_tree.query(0, lookup[num]-1) if lookup[num] >= 1 else 0) + 1)
         return segment_tree.query(0, len(lookup)-1) if len(lookup) >= 1 else 0
 
 
