@@ -81,7 +81,7 @@ class SegmentTree(object):  # 0-based index
         return ",".join(map(str, showList))
 
 
-# optimized from Solution2
+# optimized from Solution3
 class Solution(object):
     def bestTeamScore(self, scores, ages):
         """
@@ -99,12 +99,33 @@ class Solution(object):
         return segment_tree.query(0, len(lookup)-1)
 
 
+ # Time:  O(nlogn)
+# Space: O(n)
+# optimized from Solution4
+class Solution2(object):
+    def bestTeamScore(self, scores, ages):
+        """
+        :type scores: List[int]
+        :type ages: List[int]
+        :rtype: int
+        """
+        players = sorted(zip(ages, scores))
+        sorted_scores = sorted(set(scores))
+        lookup = {score:i for i, score in enumerate(sorted_scores)}  # coordinate compression
+        segment_tree = SegmentTree(len(lookup))
+        result = 0
+        for age, score in players:
+            segment_tree.update(lookup[score], lookup[score], segment_tree.query(0, lookup[score])+score)
+        return segment_tree.query(0, len(lookup)-1)
+ 
+
 # Time:  O(n^2)
 # Space: O(n)
 import collections
 
 
-class Solution2(object):
+# optimized from Solution5
+class Solution3(object):
     def bestTeamScore(self, scores, ages):
         """
         :type scores: List[int]
@@ -113,17 +134,61 @@ class Solution2(object):
         """
         players = sorted(zip(scores, ages))
         sorted_ages = sorted(set(ages))
-        age_score = collections.defaultdict(int)
+        dp = collections.defaultdict(int)
         result = 0
         for score, age in players:
-            age_score[age] = max(age_score[a] for a in sorted_ages if a <= age) + score
-        return max(age_score.itervalues())
+            dp[age] = max(dp[a] for a in sorted_ages if a <= age) + score
+        return max(dp.itervalues())
+
+
+# Time:  O(n^2)
+# Space: O(n)
+import collections
+
+
+# optimized from Solution6
+class Solution4(object):
+    def bestTeamScore(self, scores, ages):
+        """
+        :type scores: List[int]
+        :type ages: List[int]
+        :rtype: int
+        """
+        players = sorted(zip(ages, scores))
+        sorted_scores = sorted(set(scores))
+        dp = collections.defaultdict(int)
+        result = 0
+        for age, score in players:
+            dp[score] = max(dp[s] for s in sorted_scores if s <= score) + score
+        return max(dp.itervalues())
 
 
 # Time:  O(n^2)
 # Space: O(n)
 # longest_increasing_subsequence like dp solution
-class Solution3(object):
+class Solution5(object):
+    def bestTeamScore(self, scores, ages):
+        """
+        :type scores: List[int]
+        :type ages: List[int]
+        :rtype: int
+        """
+        players = sorted(zip(scores, ages))
+        dp = [0]*len(players)
+        result = 0
+        for i in xrange(len(players)):
+            dp[i] = players[i][0]
+            for j in xrange(i):
+                if players[j][1] <= players[i][1]:
+                    dp[i] = max(dp[i], dp[j] + players[i][0])
+            result = max(result, dp[i])
+        return result
+
+
+# Time:  O(n^2)
+# Space: O(n)
+# longest_increasing_subsequence like dp solution
+class Solution6(object):
     def bestTeamScore(self, scores, ages):
         """
         :type scores: List[int]
