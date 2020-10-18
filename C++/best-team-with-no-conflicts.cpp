@@ -4,24 +4,25 @@
 // optimized from Solution2
 class Solution {
 public:
-   int bestTeamScore(vector<int>& scores, vector<int>& ages) {
-       vector<pair<int, int>> players;
-       for (int i = 0; i < size(scores); ++i) {
-           players.emplace_back(scores[i], ages[i]);
-       }
-       sort(begin(players), end(players));
-       set<int> sorted_ages(cbegin(ages), cend(ages));
-       unordered_map<int, int> lookup;
-       for (const auto& age : sorted_ages) {
-           lookup[age] = size(lookup);
-       }
-       SegmentTree segment_tree(size(lookup));
-       int result = 0;
-       for (const auto& [score, age] : players) {
-           segment_tree.update(lookup[age], lookup[age], segment_tree.query(0, lookup[age]) + score);
-       }
-       return segment_tree.query(0, size(lookup) - 1);
-   }
+    int bestTeamScore(vector<int>& scores, vector<int>& ages) {
+        vector<pair<int, int>> players;
+        for (int i = 0; i < size(scores); ++i) {
+            players.emplace_back(scores[i], ages[i]);
+        }
+        sort(begin(players), end(players));
+        set<int> sorted_ages(cbegin(ages), cend(ages));
+        unordered_map<int, int> lookup;
+        for (const auto& age : sorted_ages) {
+            lookup[age] = size(lookup);
+        }
+        SegmentTree segment_tree(size(lookup));
+        int result = 0;
+        for (const auto& [score, age] : players) {
+            segment_tree.update(lookup[age], lookup[age], segment_tree.query(0, lookup[age]) + score);
+        }
+        return segment_tree.query(0, size(lookup) - 1);
+    }
+
 private:
     class SegmentTree {
     public:
@@ -103,27 +104,27 @@ private:
 // Space: O(n)
 class Solution2 {
 public:
-   int bestTeamScore(vector<int>& scores, vector<int>& ages) {
-       vector<pair<int, int>> players;
-       for (int i = 0; i < size(scores); ++i) {
-           players.emplace_back(scores[i], ages[i]);
-       }
-       sort(begin(players), end(players));
-       set<int> sorted_ages(cbegin(ages), cend(ages));
-       unordered_map<int, int> age_score;
-       int result = 0;
-       for (const auto& [score, age] : players) {
-           for (const auto& a : sorted_ages) {
-               if (a > age) {
-                   break;
-               }
-               age_score[age] = max(age_score[age], age_score[a]);
-           }
-           age_score[age] += score;
+    int bestTeamScore(vector<int>& scores, vector<int>& ages) {
+        vector<pair<int, int>> players;
+        for (int i = 0; i < size(scores); ++i) {
+            players.emplace_back(scores[i], ages[i]);
+        }
+        sort(begin(players), end(players));
+        set<int> sorted_ages(cbegin(ages), cend(ages));
+        unordered_map<int, int> age_score;
+        int result = 0;
+        for (const auto& [score, age] : players) {
+            for (const auto& a : sorted_ages) {
+                if (a > age) {
+                    break;
+                }
+                age_score[age] = max(age_score[age], age_score[a]);
+            }
+            age_score[age] += score;
            result = max(result, age_score[age]);
-       }
-       return result;
-   }
+        }
+        return result;
+    }
 };
 
 // Time:  O(n^2)
@@ -131,23 +132,23 @@ public:
 // longest_increasing_subsequence like dp solution
 class Solution3 {
 public:
-   int bestTeamScore(vector<int>& scores, vector<int>& ages) {
-       vector<pair<int, int>> players;
-       for (size_t i = 0; i < scores.size(); ++i) {
-           players.emplace_back(ages[i], scores[i]);
-       }
-       sort(begin(players), end(players));
-       vector<int> dp(size(scores));
-       int result = 0;
-       for (int i = 0; i < size(players); ++i) {
-           dp[i] = players[i].second;
-           for (int j = 0; j < i; ++j) {
-               if (players[j].second <= players[i].second) {
-                   dp[i] = max(dp[i], dp[j] + players[i].second);
-               }
-           }
-           result = max(result, dp[i]);
-       }
-       return result;
-   }
+    int bestTeamScore(vector<int>& scores, vector<int>& ages) {
+        vector<pair<int, int>> players;
+        for (size_t i = 0; i < scores.size(); ++i) {
+            players.emplace_back(ages[i], scores[i]);
+        }
+        sort(begin(players), end(players));
+        vector<int> dp(size(scores));
+        int result = 0;
+        for (int i = 0; i < size(players); ++i) {
+            dp[i] = players[i].second;
+            for (int j = 0; j < i; ++j) {
+                if (players[j].second <= players[i].second) {
+                    dp[i] = max(dp[i], dp[j] + players[i].second);
+                }
+            }
+            result = max(result, dp[i]);
+        }
+        return result;
+    }
 };
