@@ -1861,7 +1861,7 @@
 1596| [The Most Frequently Ordered Products for Each Customer](https://leetcode.com/problems/the-most-frequently-ordered-products-for-each-customer/) | [MySQL](./MySQL/the-most-frequently-ordered-products-for-each-customer.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 1607| [Sellers With No Sales](https://leetcode.com/problems/sellers-with-no-sales/) | [MySQL](./MySQL/sellers-with-no-sales.sql) | _O(nlogm)_ | _O(n + m)_       | Medium           |🔒||
 1613| [Find the Missing IDs](https://leetcode.com/problems/find-the-missing-ids/) | [MySQL](./MySQL/find-the-missing-ids.sql) | _O(n^2)_ | _O(n)_       | Medium           |🔒||
-1623| [All Valid Triplets That Can Represent a Country](https://leetcode.com/problems/all-valid-triplets-that-can-represent-a-country/) | [MySQL](./MySQL/all-valid-triplets-that-can-represent-a-country.sql) | _O(n^3)_ | _O(n^3)_       | Medium           |🔒||
+1623| [All Valid Triplets That Can Represent a Country](https://leetcode.com/problems/all-valid-triplets-that-can-represent-a-country/) | [MySQL](./MySQL/all-valid-triplets-that-can-represent-a-country.sql) | _O(n^3)_ | _O(n^3)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
