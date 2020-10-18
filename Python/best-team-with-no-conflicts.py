@@ -99,7 +99,7 @@ class Solution(object):
         return segment_tree.query(0, len(lookup)-1)
 
 
- # Time:  O(nlogn)
+# Time:  O(nlogn)
 # Space: O(n)
 # optimized from Solution4
 class Solution2(object):
