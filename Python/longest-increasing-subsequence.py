@@ -1,7 +1,32 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
+import bisect
+
+
 class Solution(object):
+    def lengthOfLIS(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        LIS = []
+        def insert(target):
+            left = bisect.bisect_left(LIS, target)
+            # If not found, append the target.
+            if left == len(LIS):
+                LIS.append(target)
+            else:
+                LIS[left] = target
+    
+        for num in nums:
+            insert(num)
+        return len(LIS)
+
+
+# Time:  O(nlogn)
+# Space: O(n)
+class Solution2(object):
     def lengthOfLIS(self, nums):
         """
         :type nums: List[int]
@@ -111,8 +136,8 @@ class SegmentTree(object):  # 0-based index
 
 # Time:  O(nlogn)
 # Space: O(n)
-# optimized from Solution3
-class Solution2(object):
+# optimized from Solution4
+class Solution3(object):
     def lengthOfLIS(self, nums):
         """
         :type nums: List[int]
@@ -130,7 +155,7 @@ class Solution2(object):
 # Time:  O(n^2)
 # Space: O(n)
 # Traditional DP solution.
-class Solution3(object):
+class Solution4(object):
     def lengthOfLIS(self, nums):
         """
         :type nums: List[int]
