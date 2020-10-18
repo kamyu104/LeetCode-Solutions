@@ -148,7 +148,7 @@ class Solution3(object):
         segment_tree = SegmentTree(len(lookup))
         for num in nums:
             segment_tree.update(lookup[num], lookup[num],
-                                (segment_tree.query(0, lookup[num]-1) if lookup[num] >= 1 else 0) + 1)
+                                segment_tree.query(0, lookup[num]-1)+1 if lookup[num] >= 1 else 1)
         return segment_tree.query(0, len(lookup)-1) if len(lookup) >= 1 else 0
 
 
