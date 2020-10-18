@@ -101,7 +101,10 @@ class Solution(object):
 
 # Time:  O(n^2)
 # Space: O(n)
-class Solution(object):
+import collections
+
+
+class Solution2(object):
     def bestTeamScore(self, scores, ages):
         """
         :type scores: List[int]
