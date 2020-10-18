@@ -1,28 +1,27 @@
 # Time:  O(1), excluding precomputation time
 # Space: O(n)
 
-class Solution(object):
-    def __init__(self):
-        MOD = 10**9+7
-        MAX_N = 1000
-        self.__fact = [0]*(2*MAX_N-1+1)
-        self.__inv = [0]*(2*MAX_N-1+1)
-        self.__inv_fact = [0]*(2*MAX_N-1+1)
-        self.__fact[0] = self.__inv_fact[0] = self.__fact[1] = self.__inv_fact[1] = self.__inv[1] = 1
-        for i in xrange(2, len(self.__fact)):
-            self.__fact[i] = self.__fact[i-1]*i % MOD
-            self.__inv[i] = self.__inv[MOD%i]*(MOD-MOD//i) % MOD  # https://cp-algorithms.com/algebra/module-inverse.html
-            self.__inv_fact[i] = self.__inv_fact[i-1]*self.__inv[i] % MOD
+# precompute
+MOD = 10**9+7
+MAX_N = 1000
+fact = [0]*(2*MAX_N-1+1)
+inv = [0]*(2*MAX_N-1+1)
+inv_fact = [0]*(2*MAX_N-1+1)
+fact[0] = inv_fact[0] = fact[1] = inv_fact[1] = inv[1] = 1
+for i in xrange(2, len(fact)):
+    fact[i] = fact[i-1]*i % MOD
+    inv[i] = inv[MOD%i]*(MOD-MOD//i) % MOD  # https://cp-algorithms.com/algebra/module-inverse.html
+    inv_fact[i] = inv_fact[i-1]*inv[i] % MOD
 
+class Solution(object):
     def numberOfSets(self, n, k):
         """
         :type n: int
         :type k: int
         :rtype: int
         """
-        MOD = 10**9+7
         def nCr(n, k, mod):
-            return (self.__fact[n]*self.__inv_fact[n-k] % mod) * self.__inv_fact[k] % mod
+            return (fact[n]*inv_fact[n-k] % mod) * inv_fact[k] % mod
     
         # find k segments with 1+ length and (k+1) spaces with 0+ length s.t. total length is n-1
         # => find k segments with 0+ length and (k+1) spaces with 0+ length s.t. total length is n-k-1
