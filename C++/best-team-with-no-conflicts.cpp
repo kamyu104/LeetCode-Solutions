@@ -1,4 +1,4 @@
-// Time:  O(nlogn)
+// Time:  O(nloga)
 // Space: O(n)
 
 // optimized from Solution3
@@ -100,7 +100,7 @@ private:
     };
 };
 
-// Time:  O(nlogn)
+// Time:  O(nlogs)
 // Space: O(n)
 // optimized from Solution4
 class Solution2 {
@@ -201,7 +201,7 @@ private:
     };
 };
 
-// Time:  O(n^2)
+// Time:  O(n * a)
 // Space: O(n)
 // optimized from Solution5
 class Solution3 {
@@ -230,7 +230,7 @@ public:
     }
 };
 
-// Time:  O(n^2)
+// Time:  O(n * s)
 // Space: O(n)
 // optimized from Solution6
 class Solution4 {
