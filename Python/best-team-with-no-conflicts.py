@@ -1,4 +1,4 @@
-# Time:  O(nlogn)
+# Time:  O(nloga)
 # Space: O(n)
 
 # Range Maximum Query
@@ -99,7 +99,7 @@ class Solution(object):
         return segment_tree.query(0, len(lookup)-1)
 
 
-# Time:  O(nlogn)
+# Time:  O(nlogs)
 # Space: O(n)
 # optimized from Solution4
 class Solution2(object):
@@ -119,7 +119,7 @@ class Solution2(object):
         return segment_tree.query(0, len(lookup)-1)
  
 
-# Time:  O(n^2)
+# Time:  O(n * a)
 # Space: O(n)
 import collections
 
@@ -141,7 +141,7 @@ class Solution3(object):
         return max(dp.itervalues())
 
 
-# Time:  O(n^2)
+# Time:  O(n * s)
 # Space: O(n)
 import collections
 
