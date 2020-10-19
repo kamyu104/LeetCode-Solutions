@@ -1513,7 +1513,7 @@
 1594| [Maximum Non Negative Product in a Matrix](https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/)| [C++](./C++/maximum-non-negative-product-in-a-matrix.cpp) [Python](./Python/maximum-non-negative-product-in-a-matrix.py) | _O(m * n)_    | _O(n)_          | Medium           || 
 1595| [Minimum Cost to Connect Two Groups of Points](https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/)| [C++](./C++/minimum-cost-to-connect-two-groups-of-points.cpp) [Python](./Python/minimum-cost-to-connect-two-groups-of-points.py) | _O(m * n * 2^n)_    | _O(2^n)_          | Hard           ||
 1617| [Count Subtrees With Max Distance Between Cities](https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities/)| [C++](./C++/count-subtrees-with-max-distance-between-cities.cpp) [Python](./Python/count-subtrees-with-max-distance-between-cities.py) | _O(n^6)_    | _O(n^3)_          | Hard           || Backtracking, Graph
-1626| [Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts/)| [C++](./C++/best-team-with-no-conflicts.cpp) [Python](./Python/best-team-with-no-conflicts.py) | _O(nlogn)_    | _O(n)_          | Medium           | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Sort, DP, Segment Tree
+1626| [Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts/)| [C++](./C++/best-team-with-no-conflicts.cpp) [Python](./Python/best-team-with-no-conflicts.py) | _O(nloga)_    | _O(n)_          | Medium           | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Sort, DP, Segment Tree
 
 <br/>
 <div align="right">
