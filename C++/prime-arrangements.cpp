@@ -1,4 +1,4 @@
-// Time:  O(n)
+// Time:  O(n/2 + n/3 + ... + n/p) = O(nlog(logn)), see https://mathoverflow.net/questions/4596/on-the-series-1-2-1-3-1-5-1-7-1-11
 // Space: O(n)
 
 class Solution {
