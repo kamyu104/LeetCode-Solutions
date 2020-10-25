@@ -72,7 +72,6 @@ public:
     NodeRecu *right = nullptr;
 };
 
-
 class TreeBuilder {
 public:
     Node* buildTree(vector<string>& postfix) {
