@@ -6,7 +6,7 @@
 class Node {
 public:
     virtual ~Node () {};
-    virtual int evaluate() const { return 0; };
+    virtual int evaluate() const = 0;
 protected:
 };
 
