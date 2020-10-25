@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1627%20%2F%201627-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1633%20%2F%201633-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -284,6 +284,7 @@
 1582 | [Special Positions in a Binary Matrix](https://leetcode.com/problems/special-positions-in-a-binary-matrix/) | [C++](./C++/special-positions-in-a-binary-matrix.cpp) [Python](./Python/special-positions-in-a-binary-matrix.py) | _O(n^2)_ | _O(n)_      | Easy         ||
 1583 | [Count Unhappy Friends](https://leetcode.com/problems/count-unhappy-friends/) | [C++](./C++/count-unhappy-friends.cpp) [Python](./Python/count-unhappy-friends.py) | _O(n^2)_ | _O(n^2)_      | Medium         ||
 1619 | [Mean of Array After Removing Some Elements](https://leetcode.com/problems/mean-of-array-after-removing-some-elements/) | [C++](./C++/mean-of-array-after-removing-some-elements.cpp) [Python](./Python/mean-of-array-after-removing-some-elements.py) | _O(n)_ | _O(1)_      | Easy         || Quick Select
+1629 | [Slowest Key](https://leetcode.com/problems/slowest-key/) | [C++](./C++/slowest-key.cpp) [Python](./Python/slowest-key.py) | _O(n)_ | _O(1)_      | Easy         ||
 
 <br/>
 <div align="right">
@@ -945,6 +946,7 @@
 1608| [Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/) | [C++](./C++/special-array-with-x-elements-greater-than-or-equal-x.cpp) [Python](./Python/special-array-with-x-elements-greater-than-or-equal-x.py) | _O(n)_   | _O(1)_        | Easy         | variant of [H-Index](https://leetcode.com/problems/h-index/) | Counting Sort, Binary Search
 1620| [Coordinate With Maximum Network Quality](https://leetcode.com/problems/coordinate-with-maximum-network-quality/) | [C++](./C++/coordinate-with-maximum-network-quality.cpp) [Python](./Python/coordinate-with-maximum-network-quality.py) | _O(n^2)_ | _O(1)_| Medium | |
 1621| [Number of Sets of K Non-Overlapping Line Segments](https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/) | [C++](./C++/number-of-sets-of-k-non-overlapping-line-segments.cpp) [Python](./Python/number-of-sets-of-k-non-overlapping-line-segments.py) | _O(1)_ | _O(n)_| Medium | |  Binomial Coefficients, `Euler's Theorem`
+1630| [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/) | [C++](./C++/arithmetic-subarrays.cpp) [Python](./Python/arithmetic-subarrays.py) | _O(n * q)_ | _O(n)_| Medium | | Arithmetic Series
 
 <br/>
 <div align="right">
@@ -1613,6 +1615,7 @@
 1599 | [Maximum Profit of Operating a Centennial Wheel](https://leetcode.com/problems/maximum-profit-of-operating-a-centennial-wheel/) | [C++](./C++/maximum-profit-of-operating-a-centennial-wheel.cpp) [Python](./Python/maximum-profit-of-operating-a-centennial-wheel.py) | _O(n)_ | _O(1)_ | Medium ||
 1605 | [Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/) | [C++](./C++/find-valid-matrix-given-row-and-column-sums.cpp) [Python](./Python/find-valid-matrix-given-row-and-column-sums.py) | _O(m + n)_ | _O(1)_ | Medium ||
 1616 | [Split Two Strings to Make Palindrome](https://leetcode.com/problems/split-two-strings-to-make-palindrome/) | [C++](./C++/split-two-strings-to-make-palindrome.cpp) [Python](./Python/split-two-strings-to-make-palindrome.py) | _O(n)_ | _O(1)_ | Medium || Two Pointers
+1632 | [Rank Transform of a Matrix](https://leetcode.com/problems/rank-transform-of-a-matrix/) | [C++](./C++/rank-transform-of-a-matrix.cpp) [Python](./Python/rank-transform-of-a-matrix.py) | _O(m * n * log(m * n))_ | _O(m * n)_ | Hard || Union Find
 
 <br/>
 <div align="right">
@@ -1643,7 +1646,7 @@
 1601 | [Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/)  | [C++](./C++/maximum-number-of-achievable-transfer-requests.cpp) [Python](./Python/maximum-number-of-achievable-transfer-requests.py) | _O((n + r) * 2^r)_| _O(n + r)_| Hard           || Combinations, Backtracking | 
 1615 | [Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank/)  | [C++](./C++/maximal-network-rank.cpp) [Python](./Python/maximal-network-rank.py) | _O(m + n + k^2)_ | _O(m + n)_ | Medium           || Counting Sort | 
 1627 | [Graph Connectivity With Threshold](https://leetcode.com/problems/graph-connectivity-with-threshold/)  | [C++](./C++/graph-connectivity-with-threshold.cpp) [Python](./Python/graph-connectivity-with-threshold.py) | _O(nlogn + q)_| _O(n)_| Hard           || Union Find, Math | 
-
+1631 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)  | [C++](./C++/path-with-minimum-effort.cpp) [Python](./Python/path-with-minimum-effort.py) | _O(m * n * log(m * n))_| _O(m * n)_| Medium           || BFS, Bi-BFS, `Dijkstra's Algorithm` | 
 
 <br/>
 <div align="right">
@@ -1730,6 +1733,7 @@
 1600| [Throne Inheritance](https://leetcode.com/problems/throne-inheritance/) | [C++](./C++/throne-inheritance.cpp) [Python](./Python/throne-inheritance.py) | ctor: _O(1)_<br>birth: _O(1)_<br>death: _O(1)_<br>inherit: _O(n)_ | _O(n)_| Medium | |  
 1603| [Design Parking System](https://leetcode.com/problems/design-parking-system/) | [C++](./C++/design-parking-system.cpp) [Python](./Python/design-parking-system.py) | _O(1)_ | _O(1)_| Easy | | 
 1622| [Fancy Sequence](https://leetcode.com/problems/fancy-sequence/) | [C++](./C++/fancy-sequence.cpp) [Python](./Python/fancy-sequence.py) | _O(1)_ | _O(n)_| Hard | |  `Euler's Theorem`
+1628| [Design an Expression Tree With Evaluate Function](https://leetcode.com/problems/design-an-expression-tree-with-evaluate-function/) | [C++](./C++/design-an-expression-tree-with-evaluate-function.cpp) [Python](./Python/design-an-expression-tree-with-evaluate-function.py) | _O(n)_ | _O(h)_| Medium | 🔒 |
 
 <br/>
 <div align="right">
@@ -1862,6 +1866,7 @@
 1607| [Sellers With No Sales](https://leetcode.com/problems/sellers-with-no-sales/) | [MySQL](./MySQL/sellers-with-no-sales.sql) | _O(nlogm)_ | _O(n + m)_       | Medium           |🔒||
 1613| [Find the Missing IDs](https://leetcode.com/problems/find-the-missing-ids/) | [MySQL](./MySQL/find-the-missing-ids.sql) | _O(n^2)_ | _O(n)_       | Medium           |🔒||
 1623| [All Valid Triplets That Can Represent a Country](https://leetcode.com/problems/all-valid-triplets-that-can-represent-a-country/) | [MySQL](./MySQL/all-valid-triplets-that-can-represent-a-country.sql) | _O(n^3)_ | _O(n^3)_       | Easy           |🔒||
+1633| [Percentage of Users Attended a Contest](https://leetcode.com/problems/percentage-of-users-attended-a-contest/) | [MySQL](./MySQL/percentage-of-users-attended-a-contest.sql) | _O(m + nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
