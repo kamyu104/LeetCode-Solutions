@@ -32,7 +32,7 @@ private:
 class Logger2 {
 public:
     /** Initialize your data structure here. */
-    Logger() {
+    Logger2() {
         
     }
     
