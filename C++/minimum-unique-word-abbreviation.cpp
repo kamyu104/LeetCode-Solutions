@@ -58,8 +58,7 @@ private:
     
     string bits_to_abbr(const string& target, int bits) {
         string abbr;
-        int pre = 0;
-        for (int i = 0, prev = 0; i < size(target); ++i, bits >>= 1) {
+        for (int i = 0, pre = 0; i < size(target); ++i, bits >>= 1) {
             if (bits & 1) {
                 if (i - pre > 0) {
                     abbr += to_string(i - pre);
