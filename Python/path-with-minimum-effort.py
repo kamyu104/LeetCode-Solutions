@@ -15,13 +15,17 @@ class Solution(object):
         dst = (len(heights)-1, len(heights[0])-1)
         dist = [[float("inf")]*len(heights[0]) for _ in xrange(len(heights))]
         min_heap = [(0, 0, 0)]
+        lookup = [[False]*len(heights[0]) for _ in xrange(len(heights))]
         while min_heap:
             d, r, c = heapq.heappop(min_heap)
+            if d > dist[r][c]:
+                continue
             if (r, c) == dst:
                 return d
+            lookup[r][c] = True
             for dr, dc in directions:
                 nr, nc = r+dr, c+dc
-                if not (0 <= nr < len(heights) and 0 <= nc < len(heights[0])):
+                if not (0 <= nr < len(heights) and 0 <= nc < len(heights[0]) and not lookup[nr][nc]):
                     continue
                 nd = max(d, abs(heights[nr][nc]-heights[r][c]))
                 if nd < dist[nr][nc]:
