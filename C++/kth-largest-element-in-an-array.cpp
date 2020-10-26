@@ -22,7 +22,7 @@ private:
                 return;
             } else if (pivot_left > n) {
                 right = pivot_left - 1;
-            } else {  // mid_right < n.
+            } else {  // pivot_right < n.
                 left = pivot_right + 1;
             }
         }
