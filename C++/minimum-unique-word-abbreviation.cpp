@@ -45,7 +45,7 @@ private:
     int bits_len(const string& target, int bits) {
         int total = target.length();
         for (int i = 0; i < target.length() - 1; ++i) {
-            if (((bits >> i) & 3) == 0) {
+            if (((bits >> i) & 0b11) == 0) {
                 --total;
             }
         }
