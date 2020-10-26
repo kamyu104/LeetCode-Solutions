@@ -22,10 +22,8 @@ public:
     int move(string direction) {
         const auto x = snake_.back()[0] + direction_[direction].first;
         const auto y = snake_.back()[1] + direction_[direction].second;
-        const auto tail = snake_.back();
-
-        auto it = lookup_.find(hash(snake_.front()[0], snake_.front()[1]));
-        lookup_.erase(it);
+        const auto tail = snake_.front();
+        lookup_.erase(hash(tail[0], tail[1]));
         snake_.pop_front();
         if (!valid(x, y)) {
             return -1;
@@ -45,7 +43,7 @@ private:
         if (x < 0 || x >= height_ || y < 0 || y >= width_) {
             return false;
         }
-        return lookup_.find(hash(x, y)) == lookup_.end();
+        return !lookup_.count(hash(x, y));
     }
 
     int hash(int x, int y) {
@@ -54,7 +52,7 @@ private:
 
     int width_, height_, score_;
     deque<vector<int>> food_, snake_;
-    unordered_multiset<int> lookup_;
+    unordered_set<int> lookup_;
     unordered_map<string, pair<int, int>> direction_ = {{"U", {-1, 0}}, {"L", {0, -1}},
                                                         {"R", {0, 1}}, {"D", {1, 0}}};
 };
