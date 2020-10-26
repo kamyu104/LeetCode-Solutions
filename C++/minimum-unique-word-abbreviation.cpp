@@ -14,7 +14,7 @@ public:
         int bits = (1 << target.length()) - 1;
         for (int i = 0; i < (1 << target.length()); ++i) {
             if (all_of(diffs.begin(), diffs.end(), [&i](int d) { return d & i; } )) {
-                if (bits_len(target, i) > bits_len(target, bits)) {
+                if (bits_len(target, i) < bits_len(target, bits)) {
                     bits = i;
                 }
             }
@@ -43,15 +43,13 @@ private:
     }
 
     int bits_len(const string& target, int bits) {
-        int sum = 0;
-
+        int total = target.length();
         for (int i = 0; i < target.length() - 1; ++i) {
             if (((bits >> i) & 3) == 0) {
-                ++sum;
+                --total;
             }
         }
-
-        return sum;
+        return total;
     }
 
     string bits_to_abbr(const string& target, int bits) {
