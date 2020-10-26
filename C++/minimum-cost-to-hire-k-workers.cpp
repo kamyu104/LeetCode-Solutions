@@ -15,7 +15,7 @@ public:
         for (const auto& [ratio, q]: workers) {
             sum += q;
             max_heap.emplace(q);
-            if (max_heap.size() > K) {
+            if (max_heap.size() > K) {  // keep k smallest q to make sum as small as possible
                 sum -= max_heap.top(), max_heap.pop();
             }
             if (max_heap.size() == K) {
