@@ -42,8 +42,8 @@ private:
     void update(int key, int value) {
         int freq = 0;
         if (key_to_nodeit_.count(key)) {
-            auto new_node = *key_to_nodeit_[key];        
-            freq = std::get<FREQ>(new_node);
+            auto old_node = *key_to_nodeit_[key];        
+            freq = std::get<FREQ>(old_node);
             freq_to_nodes_[freq].erase(key_to_nodeit_[key]);
             if (freq_to_nodes_[freq].empty()) {
                 freq_to_nodes_.erase(freq);
