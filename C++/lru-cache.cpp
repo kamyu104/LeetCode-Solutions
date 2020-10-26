@@ -9,19 +9,22 @@ public:
     }
     
     int get(int key) {
-        if (map_.find(key) != map_.end()) {
-            // It key exists, update it.
-            const auto value = map_[key]->second;
-            update(key, value);
-            return value;
-        } else {
+        if (!map_.count(key)) {
             return -1;
         }
+        // It key exists, update it.
+        const auto value = map_[key]->second;
+        update(key, value);
+        return value;
     }
     
     void put(int key, int value) {
+        if (capa_ <= 0) {
+            return;
+        }
+
         // If cache is full while inserting, remove the last one.
-        if (map_.find(key) == map_.end() && list_.size() == capa_) {
+        if (!map_.count(key) && list_.size() == capa_) {
             auto del = list_.front(); list_.pop_front();
             map_.erase(del.first);
         }
@@ -52,23 +55,26 @@ public:
     }
     
     int get(int key) {
-        if (map_.find(key) != map_.end()) {
-            // It key exists, update it.
-            const auto value = map_[key]->second;
-            update(key, value);
-            return value;
-        } else {
+        if (!map_.count(key)) {
             return -1;
         }
+        // It key exists, update it.
+        const auto value = map_[key]->second;
+        update(key, value);
+        return value;
     }
     
     void put(int key, int value) {
+        if (capa_ <= 0) {
+            return;
+        }
+    
         // If cache is full while inserting, remove the last one.
-        if (map_.find(key) == map_.end() && list_.size() == capa_) {
+        if (!map_.count(key) && list_.size() == capa_) {
             auto del = list_.back(); list_.pop_back();
             map_.erase(del.first);
         }
-         update(key, value);
+        update(key, value);
     }
     
 private:
