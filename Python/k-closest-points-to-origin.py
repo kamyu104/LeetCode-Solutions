@@ -38,7 +38,7 @@ class Solution(object):
                 else:  # new_pivot_idx < k.
                     left = new_pivot_idx + 1
                     
-        kthElement(points, K, lambda a, b: dist(a) < dist(b))
+        kthElement(points, K-1, lambda a, b: dist(a) < dist(b))
         return points[:K]
 
     
