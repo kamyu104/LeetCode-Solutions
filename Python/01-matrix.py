@@ -8,7 +8,6 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
         """
-        dp = [[float("inf")]*len(matrix[0]) for _ in xrange(len(matrix))]
         for i in xrange(len(matrix)):
             for j in xrange(len(matrix[i])):
                 if not matrix[i][j]:
