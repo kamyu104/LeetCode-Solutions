@@ -63,6 +63,7 @@ class UnionFind(object):  # Time: (n * α(n)), Space: O(n)
         return True
 
 
+# union find solution
 class Solution2(object):
     def minimumEffortPath(self, heights):
         """
