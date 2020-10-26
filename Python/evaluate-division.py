@@ -29,11 +29,11 @@ class UnionFind(object):
         elif self.rank[xp] > self.rank[yp]:
             # to make y/xp = 1/r*xr and merge xp into yp
             # => since y/yp = yr, we can merge with yp/xp = 1/r*xr/yr 
-            self.set[yp] = (xp, 1/r*xr/yr)
+            self.set[yp] = (xp, 1.0/r*xr/yr)
         else:
             # to make y/xp = 1/r*xr and merge xp into yp
             # => since y/yp = yr, we can merge with yp/xp = 1/r*xr/yr 
-            self.set[yp] = (xp, 1/r*xr/yr)
+            self.set[yp] = (xp, 1.0/r*xr/yr)
             self.rank[xp] += 1 
         return True
 
