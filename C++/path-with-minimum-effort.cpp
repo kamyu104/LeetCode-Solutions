@@ -34,10 +34,93 @@ public:
     }
 };
 
+// Time:  O(m * n * log(m * n) + m * n * α(m * n)) = O(m * n * log(m * n))
+// Space: O(m * n)
+// union find solution
+class Solution2 {
+public:
+    int minimumEffortPath(vector<vector<int>>& heights) {
+        vector<tuple<int, int, int>> diffs;
+        for (int i = 0; i < size(heights); ++i) {
+            for (int j = 0; j < size(heights[0]); ++j) {
+                if (i > 0) {
+                    diffs.emplace_back(abs(heights[i][j] - heights[i - 1][j]), 
+                                       index(size(heights[0]), i - 1, j),
+                                       index(size(heights[0]), i, j));
+                }
+                if (j > 0) {
+                    diffs.emplace_back(abs(heights[i][j] - heights[i][j - 1]),
+                                       index(size(heights[0]), i, j - 1),
+                                       index(size(heights[0]), i, j));
+                }
+            }
+        }
+        sort(begin(diffs), end(diffs));
+        UnionFind union_find(size(heights) * size(heights[0]));
+        for (const auto& [d, i, j] : diffs) {
+            if (union_find.union_set(i, j)) {
+                if (union_find.find_set(index(size(heights[0]), 0, 0)) ==
+                    union_find.find_set(index(size(heights[0]), size(heights) - 1, size(heights[0]) - 1))) {
+                    return d;
+                }
+            }
+        }
+        return 0;
+    }
+
+private:
+    class UnionFind {
+    public:
+        UnionFind(const int n)
+         : set_(n)
+         , rank_(n)
+         , count_(n) {
+            iota(set_.begin(), set_.end(), 0);
+        }
+
+        int find_set(const int x) {
+           if (set_[x] != x) {
+               set_[x] = find_set(set_[x]);  // Path compression.
+           }
+           return set_[x];
+        }
+
+        bool union_set(const int x, const int y) {
+            int x_root = find_set(x), y_root = find_set(y);
+            if (x_root == y_root) {
+                return false;
+            }
+            if (rank_[x_root] < rank_[y_root]) {  // Union by rank.
+                set_[x_root] = y_root;
+            } else if (rank_[x_root] > rank_[y_root]) {
+                set_[y_root] = x_root;
+            } else {
+                set_[y_root] = x_root;
+                ++rank_[x_root];
+            }
+            --count_;
+            return true;
+        }
+
+        int size() const {
+            return count_;
+        }
+
+    private:
+        vector<int> set_;
+        vector<int> rank_;
+        int count_;
+    };
+    
+    int index(int n, int i, int j) {
+        return i * n + j;
+    }
+};
+
 // Time:  O(m * n * logh)
 // Space: O(m * n)
 // bi-bfs solution
-class Solution2 {
+class Solution3 {
 public:
     int minimumEffortPath(vector<vector<int>>& heights) {
         static const int MAX_H = 1e6;
@@ -103,7 +186,7 @@ private:
 // Time:  O(m * n * logh)
 // Space: O(m * n)
 // bfs solution
-class Solution3 {
+class Solution4 {
 public:
     int minimumEffortPath(vector<vector<int>>& heights) {
         static const int MAX_H = 1e6;
