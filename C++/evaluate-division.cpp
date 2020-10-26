@@ -41,7 +41,7 @@ private:
             if (xp == yp) {
                 return false;
             }
-            if (rank_[xp] < rank_[yp]) {
+            if (rank_[xp] < rank_[yp]) {  // Union by rank.
                 set_[xp] = pair(yp, r * yr / xr);
             } else if (rank_[xp] > rank_[yp]) {
                 set_[yp] = pair(xp, 1.0 / r * xr / yr);
