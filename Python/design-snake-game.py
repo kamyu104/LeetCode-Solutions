@@ -40,10 +40,8 @@ class SnakeGame(object):
                    (x, y) not in self.__lookup
         d = self.__direction[direction]
         x, y = self.__snake[-1][0] + d[0], self.__snake[-1][1] + d[1]
-
-        tail = self.__snake[0]
-        self.__lookup.remove(tail)
-        self.__snake.popleft()
+        self.__lookup.remove(self.__snake[0])
+        tail = self.__snake.popleft()
         if not valid(x, y):
             return -1
         elif self.__f != len(self.__food) and (self.__food[self.__f][0], self.__food[self.__f][1]) == (x, y):
