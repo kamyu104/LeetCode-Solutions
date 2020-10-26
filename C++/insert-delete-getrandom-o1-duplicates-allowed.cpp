@@ -4,7 +4,7 @@
 class RandomizedCollection {
 public:
     /** Initialize your data structure here. */
-    RandomizedCollection() {
+    RandomizedCollection() : gen_(random_device()()) {
         
     }
     
@@ -38,12 +38,14 @@ public:
     
     /** Get a random element from the collection. */
     int getRandom() {
-        return list_[rand() % list_.size()].first;
+        uniform_int_distribution<int> dist(0, list_.size() - 1);
+        return list_[dist(gen_)].first;
     }
 
 private:
     vector<pair<int, int>> list_;
     unordered_map<int, vector<int>> used_;
+    default_random_engine gen_;
 };
 
 /**
