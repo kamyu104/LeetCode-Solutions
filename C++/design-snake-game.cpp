@@ -8,11 +8,14 @@ public:
         @param height - screen height 
         @param food - A list of food positions
         E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */
-    SnakeGame(int width, int height, vector<vector<int>>& food) :
-               width_{width}, height_{height}, score_{0},
-               food_{food.begin(), food.end()}, snake_{{0, 0}}  {
-                   
-        lookup_.emplace(0);
+    SnakeGame(int width, int height, vector<vector<int>>& food)
+     : food_(food)
+     , f_{0}
+     , width_{width}
+     , height_{height}
+     , score_{0}
+     , snake_{{0, 0}}
+     , lookup_{{0}} {
     }
     
     /** Moves the snake.
@@ -27,9 +30,9 @@ public:
         snake_.pop_front();
         if (!valid(x, y)) {
             return -1;
-        } else if (!food_.empty() && food_.front()[0] == x && food_.front()[1] == y) {
+        } else if (f_ != size(food_) && food_[f_][0] == x && food_[f_][1] == y) {
             ++score_;
-            food_.pop_front();
+            ++f_;
             snake_.push_front(tail);
             lookup_.emplace(hash(tail[0], tail[1]));
         }
@@ -50,8 +53,9 @@ private:
         return x * width_ + y;
     }
 
-    int width_, height_, score_;
-    deque<vector<int>> food_, snake_;
+    const vector<vector<int>>& food_;
+    int f_, width_, height_, score_;
+    deque<vector<int>> snake_;
     unordered_set<int> lookup_;
     unordered_map<string, pair<int, int>> direction_ = {{"U", {-1, 0}}, {"L", {0, -1}},
                                                         {"R", {0, 1}}, {"D", {1, 0}}};
