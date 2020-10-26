@@ -1172,7 +1172,7 @@
 0490| [The Maze](https://leetcode.com/problems/the-maze/)| [C++](./C++/the-maze.cpp) [Python](./Python/the-maze.py) | _O(max(r, c) * w)_ | _O(w)_ | Medium | | |
 0499| [The Maze III](https://leetcode.com/problems/the-maze-iii/)| [C++](./C++/the-maze-iii.cpp) [Python](./Python/the-maze-iii.py) | _O(max(r, c) * wlogw)_ | _O(w^2)_ | Hard | | |
 0505| [The Maze II](https://leetcode.com/problems/the-maze-ii/)| [C++](./C++/the-maze-ii.cpp) [Python](./Python/the-maze-ii.py) | _O(max(r, c) * wlogw)_ | _O(w)_ | Medium | | |
-0542| [01 Matrix](https://leetcode.com/problems/01-matrix/)| [C++](./C++/01-matrix.cpp) [Python](./Python/01-matrix.py)   | _O(m * n)_          | _O(m * n)_          | Medium         || DP
+0542| [01 Matrix](https://leetcode.com/problems/01-matrix/)| [C++](./C++/01-matrix.cpp) [Python](./Python/01-matrix.py)   | _O(m * n)_          | _O(1)_          | Medium         || DP
 0666| [Path Sum IV](https://leetcode.com/problems/path-sum-iv/)| [C++](./C++/path-sum-iv.cpp) [Python](./Python/path-sum-iv.py)   | _O(n)_          | _O(w)_          | Medium         |🔒| Topological Sort |
 0675|[Cut Off Trees for Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/)| [C++](./C++/cut-off-trees-for-golf-event.cpp) [Python](./Python/cut-off-trees-for-golf-event.py)| _O(t * m * n)_ | _O(m * n)_ | Hard | | `A* Search Algorithm` |
 0742|[Closest Leaf in a Binary Tree](https://leetcode.com/problems/closest-leaf-in-a-binary-tree/)| [C++](./C++/closest-leaf-in-a-binary-tree.cpp) [Python](./Python/closest-leaf-in-a-binary-tree.py)| _O(n)_ | _O(n)_ | Medium | | |
