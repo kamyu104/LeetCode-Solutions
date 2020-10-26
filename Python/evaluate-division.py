@@ -13,13 +13,15 @@ class UnionFind(object):
         xp, xr = self.set.setdefault(x, (x, 1.0))
         if x != xp:
             pp, pr = self.find_set(xp)  # path compression.
-            self.set[x] = (pp, xr*pr)
+            self.set[x] = (pp, xr*pr)  # x/pp = xr*pr
         return self.set[x]
 
     def union_set(self, x, y, r):
         (xp, xr), (yp, yr) =  map(self.find_set, (x, y))
         if xp == yp:
             return False
+        # to make x/yp = r*yr and merge xp into yp
+        # => since x/xp = xr, we can merge with xp/yp = r*yr/xr 
         self.set[xp] = (yp, r*yr/xr)
         return True
 
