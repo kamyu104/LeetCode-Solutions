@@ -41,8 +41,8 @@ public:
     }
 };
 
-// Time:  O(n!)
-// Space: O(n)
+// Time:  O(k * C(n, k))
+// Space: O(k)
 class Solution2 {
     public:
         void dfs(int n, int k, int start, vector<int> &path, vector<vector<int> > &ans) {
