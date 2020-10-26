@@ -78,7 +78,7 @@
 0389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | [C++](./C++/find-the-difference.cpp) [Python](./Python/find-the-difference.py) | _O(n)_ | _O(1)_ | Easy | |
 0393 | [UTF-8 Validation](https://leetcode.com/problems/utf-8-validation/) | [C++](./C++/utf-8-validation.cpp) [Python](./Python/utf-8-validation.py) | _O(n)_ | _O(1)_ | Medium | |
 0401 | [Binary Watch](https://leetcode.com/problems/binary-watch/) | [C++](./C++/binary-watch.cpp) [Python](./Python/binary-watch.py) | _O(1)_ | _O(1)_ | Easy | |
-0411 | [Minimum Unique Word Abbreviation](https://leetcode.com/problems/minimum-unique-word-abbreviation/) | [C++](./C++/minimum-unique-word-abbreviation.cpp) [Python](./Python/minimum-unique-word-abbreviation.py) | _O(n * 2^n)_ | _O(n)_ | Hard | 🔒 |
+0411 | [Minimum Unique Word Abbreviation](https://leetcode.com/problems/minimum-unique-word-abbreviation/) | [C++](./C++/minimum-unique-word-abbreviation.cpp) [Python](./Python/minimum-unique-word-abbreviation.py) | _O((d + n) * 2^n)_ | _O(d)_ | Hard | 🔒 |
 0421 | [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | [C++](./C++/maximum-xor-of-two-numbers-in-an-array.cpp) [Python](./Python/maximum-xor-of-two-numbers-in-an-array.py) | _O(n)_ | _O(n)_ | Medium ||
 0461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance/) | [C++](./C++/hamming-distance.cpp) [Python](./Python/hamming-distance.py) | _O(1)_ | _O(1)_ | Easy ||
 0477 | [Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/) | [C++](./C++/total-hamming-distance.cpp) [Python](./Python/total-hamming-distance.py) | _O(n)_ | _O(1)_ | Medium ||
