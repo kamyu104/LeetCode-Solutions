@@ -27,11 +27,11 @@ private:
                              vector<int> *diffs) {
 
         for (const auto& word : dictionary) {
-            if (word.length() != target.length()) {
+            if (size(word) != size(target)) {
                 continue;
             }
             int bits = 0;
-            for (int i = 0; i < word.length(); ++i) {
+            for (int i = 0; i < size(word); ++i) {
                 if (target[i] != word[i]) {
                     bits |= 1 << i;
                 }
