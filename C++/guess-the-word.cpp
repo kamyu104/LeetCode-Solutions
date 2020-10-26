@@ -32,17 +32,17 @@ private:
     int find_guess_with_most_frequent_chars(
         const vector<string>& wordlist,
         const vector<int>& possible) {
-        vector<int> count(26);
+        vector<vector<int>> count(6, vector<int>(26));
         for (int i = 0; i < 6; ++i) {
             for (const auto& p : possible) {
-                ++count[wordlist[p][i] - 'a'];
+                ++count[i][wordlist[p][i] - 'a'];
             }
         }
         int guess = 0, max_score = 0;
         for (const auto& p : possible) {
             int score = 0;
             for (int i = 0; i < 6; ++i) {
-                score += count[wordlist[p][i] - 'a'];
+                score += count[i][wordlist[p][i] - 'a'];
             }
             if (score > max_score) {
                 max_score = score;
