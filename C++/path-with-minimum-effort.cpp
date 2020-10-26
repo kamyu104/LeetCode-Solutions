@@ -15,13 +15,13 @@ public:
         vector<vector<int>> lookup(size(heights), vector<int>(size(heights[0])));
         while (!empty(min_heap)) {
             const auto [d, r, c] = min_heap.top(); min_heap.pop();
-            if (d > dist[r][c]) {
+            if (lookup[r][c]) {
                 continue;
             }
+            lookup[r][c] = true;
             if (r == size(heights) - 1 && c == size(heights[0]) - 1) {
                 return d;
             }
-            lookup[r][c] = true;
             for (const auto& [dr, dc] : directions) {
                 int nr = r + dr, nc = c + dc;
                 if (!(0 <= nr && nr < size(heights) &&
