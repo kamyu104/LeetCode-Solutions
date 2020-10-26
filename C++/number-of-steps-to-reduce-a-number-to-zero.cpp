@@ -9,6 +9,6 @@ public:
             result += (num & 1) ? 2 : 1;
             num >>= 1;
         }
-        return result - 1;
+        return max(result - 1, 0);
     }
 };
