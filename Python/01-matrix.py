@@ -23,9 +23,10 @@ class Solution(object):
             cell = queue.popleft()
             for dir in dirs:
                 i, j = cell[0]+dir[0], cell[1]+dir[1]
-                if not (0 <= i < len(matrix)) or not (0 <= j < len(matrix[0])) or \
-                   matrix[i][j] <= matrix[cell[0]][cell[1]]+1:
-                        continue
+                if not (0 <= i < len(matrix) and
+                        0 <= j < len(matrix[0]) and
+                        matrix[i][j] > matrix[cell[0]][cell[1]]+1):
+                    continue
                 queue.append((i, j))
                 matrix[i][j] = matrix[cell[0]][cell[1]]+1
 
