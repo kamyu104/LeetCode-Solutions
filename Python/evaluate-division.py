@@ -40,7 +40,7 @@ class UnionFind(object):
     def query_set(self, x, y):
         if x not in self.set or y not in self.set:
             return -1.0
-        (xp, xr), (yp, yr) =  map(self.find_set, (x, y))
+        (xp, xr), (yp, yr) = map(self.find_set, (x, y))
         return xr/yr if xp == yp else -1.0
 
 
@@ -67,7 +67,7 @@ class UnionFindPathCompressionOnly(object):
     def query_set(self, x, y):
         if x not in self.set or y not in self.set:
             return -1.0
-        (xp, xr), (yp, yr) =  map(self.find_set, (x, y))
+        (xp, xr), (yp, yr) = map(self.find_set, (x, y))
         return xr/yr if xp == yp else -1.0
 
 
