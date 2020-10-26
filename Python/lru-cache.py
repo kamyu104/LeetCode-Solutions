@@ -49,12 +49,12 @@ class LRUCache(object):
 
     # @return an integer
     def get(self, key):
-        if key in self.dict:
-            val = self.dict[key].val
-            self.list.delete(self.dict[key])
-            self._insert(key, val)
-            return val
-        return -1
+        if key not in self.dict:
+            return -1
+        val = self.dict[key].val
+        self.list.delete(self.dict[key])
+        self._insert(key, val)
+        return val
 
 
     # @param key, an integer
