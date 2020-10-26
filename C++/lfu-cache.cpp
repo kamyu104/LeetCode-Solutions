@@ -3,28 +3,16 @@
 
 class LFUCache {
 public:
-    LFUCache(int capacity) : capa_(capacity), size_(0), min_freq_(0) {
+    LFUCache(int capacity) : capa_(capacity), size_(0), min_freq_(numeric_limits<int>::max()) {
     }
     
     int get(int key) {
         if (!key_to_nodeit_.count(key)) {
             return -1;
         }
-        
-        auto new_node = *key_to_nodeit_[key];        
-        auto& freq = std::get<FREQ>(new_node);
-        freq_to_nodes_[freq].erase(key_to_nodeit_[key]);
-        if (freq_to_nodes_[freq].empty()) {
-            freq_to_nodes_.erase(freq);
-            if (min_freq_ == freq) {
-                ++min_freq_;
-            }
-        }
-        ++freq;
-        freq_to_nodes_[freq].emplace_back(move(new_node));
-        key_to_nodeit_[key] = prev(freq_to_nodes_[freq].end());
-
-        return std::get<VAL>(*key_to_nodeit_[key]);
+        const auto value = std::get<VAL>(*key_to_nodeit_[key]);
+        update(key, value);
+        return value;
     }
     
    void put(int key, int value) {
@@ -32,12 +20,7 @@ public:
             return;
         }
 
-        if (get(key) != -1) {
-            std::get<VAL>(*key_to_nodeit_[key]) = value;
-            return;
-        }
-        
-        if (size_ == capa_) {
+        if (!key_to_nodeit_.count(key) && size_ == capa_) {
             key_to_nodeit_.erase(std::get<KEY>(freq_to_nodes_[min_freq_].front()));
             freq_to_nodes_[min_freq_].pop_front();
             if (freq_to_nodes_[min_freq_].empty()) {
@@ -45,11 +28,7 @@ public:
             }
             --size_;
         }
-        
-        min_freq_ = 1;
-        freq_to_nodes_[min_freq_].emplace_back(key, value, min_freq_);
-        key_to_nodeit_[key] = prev(freq_to_nodes_[min_freq_].end());
-        ++size_;
+        update(key, value);
     }
 
 private:
@@ -59,6 +38,26 @@ private:
     int min_freq_;
     unordered_map<int, list<tuple<int, int, int>>> freq_to_nodes_;            // freq to list of {key, val, freq}
     unordered_map<int, list<tuple<int, int, int>>::iterator> key_to_nodeit_;  // key to list iterator
+
+    void update(int key, int value) {
+        int freq = 0;
+        if (key_to_nodeit_.count(key)) {
+            auto new_node = *key_to_nodeit_[key];        
+            freq = std::get<FREQ>(new_node);
+            freq_to_nodes_[freq].erase(key_to_nodeit_[key]);
+            if (freq_to_nodes_[freq].empty()) {
+                freq_to_nodes_.erase(freq);
+                if (min_freq_ == freq) {
+                    ++min_freq_;
+                }
+            }
+            --size_;
+        }
+        min_freq_ = min(min_freq_, ++freq);
+        freq_to_nodes_[freq].emplace_back(key, value, freq);
+        key_to_nodeit_[key] = prev(freq_to_nodes_[freq].end());
+        ++size_;
+    }
 };
 
 /**
