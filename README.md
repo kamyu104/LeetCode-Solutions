@@ -1646,7 +1646,7 @@
 1601 | [Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/)  | [C++](./C++/maximum-number-of-achievable-transfer-requests.cpp) [Python](./Python/maximum-number-of-achievable-transfer-requests.py) | _O((n + r) * 2^r)_| _O(n + r)_| Hard           || Combinations, Backtracking | 
 1615 | [Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank/)  | [C++](./C++/maximal-network-rank.cpp) [Python](./Python/maximal-network-rank.py) | _O(m + n + k^2)_ | _O(m + n)_ | Medium           || Counting Sort | 
 1627 | [Graph Connectivity With Threshold](https://leetcode.com/problems/graph-connectivity-with-threshold/)  | [C++](./C++/graph-connectivity-with-threshold.cpp) [Python](./Python/graph-connectivity-with-threshold.py) | _O(nlogn + q)_| _O(n)_| Hard           || Union Find, Math | 
-1631 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)  | [C++](./C++/path-with-minimum-effort.cpp) [Python](./Python/path-with-minimum-effort.py) | _O(m * n * log(m * n))_| _O(m * n)_| Medium           || BFS, Bi-BFS, `Dijkstra's Algorithm` | 
+1631 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)  | [C++](./C++/path-with-minimum-effort.cpp) [Python](./Python/path-with-minimum-effort.py) | _O(m * n * log(m * n))_| _O(m * n)_| Medium           || BFS, Bi-BFS, Union Find, `Dijkstra's Algorithm` | 
 
 <br/>
 <div align="right">
