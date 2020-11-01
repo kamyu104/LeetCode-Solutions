@@ -1,4 +1,4 @@
-// Time:  O(l * (w + n))
+// Time:  O(l * (w + n)), l is the length of a word, w is the number of words, n is the length of target
 // Space: O(n)
 
 // optimized from Solution2
@@ -22,7 +22,7 @@ public:
     }
 };
 
-// Time:  O(l * (w + n))
+// Time:  O(l * (w + n)), l is the length of a word, w is the number of words, n is the length of target
 // Space: O(n)
 class Solution2 {
 public:
