@@ -10,7 +10,7 @@ public:
             if (diff > 0) {
                 min_heap.emplace(diff);
             }
-            if (size(min_heap) <= ladders) {  // ladders are reserved for top diffs
+            if (size(min_heap) <= ladders) {  // ladders are reserved for largest diffs
                 continue;
             }
             auto h = min_heap.top(); min_heap.pop();
