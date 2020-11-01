@@ -10,12 +10,12 @@ public:
             if (diff > 0) {
                 min_heap.emplace(diff);
             }
-            if (size(min_heap) <= ladders) {
+            if (size(min_heap) <= ladders) {  // ladders are reserved for top diffs
                 continue;
             }
             auto h = min_heap.top(); min_heap.pop();
-            bricks -= h;
-            if (bricks < 0) {
+            bricks -= h;  // use bricks if ladders are not enough
+            if (bricks < 0) {  // not enough bricks
                 return i;
             }
         }
