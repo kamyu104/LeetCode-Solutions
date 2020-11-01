@@ -8,12 +8,12 @@ public:
         string result;
         while (r + c) {
             int count = nCr(r + (c - 1), r);  // the number of HX..X combinations
-            if (k <= count) {  // kth instruction is one of HX..X combinations, so go right
+            if (k <= count) {  // the kth instruction is one of HX..X combinations, so go right
                 --c;
                 result.push_back('H');
-            } else {  // kth instruction is one of VX..X combinations, so go down
+            } else {  // the kth instruction is one of VX..X combinations, so go down
                 --r;
-                k -= count;  // kth of XX..X combinations is the (k-count)th of X..X combinations
+                k -= count;  // the kth one of XX..X combinations is the (k-count)th one of X..X combinations
                 result.push_back('V');
             }
         }
