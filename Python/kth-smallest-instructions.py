@@ -27,7 +27,7 @@ class Solution(object):
                 c -= 1
                 result.append('H')
             else:  # the kth instruction is one of VX..X combinations, so go down
-                r -= 1
                 k -= count  # the kth one of XX..X combinations is the (k-count)th one of X..X combinations
+                r -= 1
                 result.append('V')
         return "".join(result)
