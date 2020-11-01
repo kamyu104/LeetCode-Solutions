@@ -24,18 +24,18 @@ year_month_cte AS (
     WHERE month < max_month
 ),
 drivers_count_cte AS(
-        SELECT MAX(YEAR(d.join_date)) 'year',
-               MAX(MONTH(d.join_date)) 'month',
-               COUNT(d.driver_id) drivers_count
-        FROM drivers d
-        GROUP BY LEFT(d.join_date, 7)
+    SELECT MAX(YEAR(d.join_date)) 'year',
+           MAX(MONTH(d.join_date)) 'month',
+           COUNT(d.driver_id) drivers_count
+    FROM drivers d
+    GROUP BY LEFT(d.join_date, 7)
 ),
 rides_count_cte AS (
-        SELECT MAX(YEAR(r.requested_at)) 'year',
-               MAX(MONTH(r.requested_at)) 'month',
-               COUNT(a.ride_id) accepted_rides
-        FROM rides r LEFT JOIN acceptedrides a ON r.ride_id = a.ride_id
-        GROUP BY LEFT(r.requested_at, 7)    
+    SELECT MAX(YEAR(r.requested_at)) 'year',
+           MAX(MONTH(r.requested_at)) 'month',
+           COUNT(a.ride_id) accepted_rides
+    FROM rides r LEFT JOIN acceptedrides a ON r.ride_id = a.ride_id
+    GROUP BY LEFT(r.requested_at, 7)    
 )
 
 SELECT month,
