@@ -12,8 +12,8 @@ public:
                 --c;
                 result.push_back('H');
             } else {  // the kth instruction is one of VX..X combinations, so go down
-                --r;
                 k -= count;  // the kth one of XX..X combinations is the (k-count)th one of X..X combinations
+                --r;
                 result.push_back('V');
             }
         }
