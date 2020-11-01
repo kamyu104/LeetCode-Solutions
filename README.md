@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1634%20%2F%201634-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1643%20%2F%201643-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -426,6 +426,7 @@
 1598| [Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/) | [C++](./C++/crawler-log-folder.cpp) [Python](./Python/crawler-log-folder.py) | _O(n)_ | _O(1)_ | Easy |||
 1614| [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/) | [C++](./C++/maximum-nesting-depth-of-the-parentheses.cpp) [Python](./Python/maximum-nesting-depth-of-the-parentheses.py) | _O(n)_ | _O(1)_ | Easy |||
 1624| [Largest Substring Between Two Equal Characters](https://leetcode.com/problems/largest-substring-between-two-equal-characters/) | [C++](./C++/largest-substring-between-two-equal-characters.cpp) [Python](./Python/largest-substring-between-two-equal-characters.py) | _O(n)_ | _O(1)_ | Easy |||
+1638| [Count Substrings That Differ by One Character](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/) | [C++](./C++/count-substrings-that-differ-by-one-character.cpp) [Python](./Python/count-substrings-that-differ-by-one-character.py) | _O(m * n)_ | _O(1)_ | Medium | variant of [Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) | Tricky |
 
 <br/>
 <div align="right">
@@ -565,6 +566,7 @@
 1383 | [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | [C++](./C++/maximum-performance-of-a-team.cpp) [Python](./Python/maximum-performance-of-a-team.py) | _O(nlogn)_ | _O(n)_ | Hard | variant of [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | Sort |
 1439 | [Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/) | [C++](./C++/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows.cpp) [Python](./Python/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows.py) | _O(m * klogk)_ | _O(k)_ | Hard || Binary Search |
 1606 | [Find Servers That Handled Most Number of Requests](https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/) | [C++](./C++/find-servers-that-handled-most-number-of-requests.cpp) [Python](./Python/find-servers-that-handled-most-number-of-requests.py) | _O(nlogk)_ | _O(k)_ | Hard | | SortedList |
+1642 | [Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/) | [C++](./C++/furthest-building-you-can-reach.cpp) [Python](./Python/furthest-building-you-can-reach.py) | _O(nlogk)_ | _O(k)_ | Medium | | |
 
 <br/>
 <div align="right">
@@ -743,6 +745,7 @@
 1487| [Making File Names Unique](https://leetcode.com/problems/making-file-names-unique/) | [C++](./C++/making-file-names-unique.cpp) [Python](./Python/making-file-names-unique.py) | _O(n)_   | _O(n)_        | Medium         ||
 1577| [Number of Ways Where Square of Number Is Equal to Product of Two Numbers](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) | [C++](./C++/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers.cpp) [Python](./Python/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers.py) | _O(m * n)_   | _O(m + n)_        | Medium         ||
 1590| [Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p/) |[C++](./C++/make-sum-divisible-by-p.cpp)  [Python](./Python/make-sum-divisible-by-p.py) | _O(n)_ | _O(p)_ | Medium         | variant of [Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/) |
+1640| [Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/) | [C++](./C++/check-array-formation-through-concatenation.cpp) [Python](./Python/check-array-formation-through-concatenation.py) | _O(n)_   | _O(n)_        | Easy         ||
 
 <br/>
 <div align="right">
@@ -897,6 +900,8 @@
 1537| [Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) | [C++](./C++/get-the-maximum-score.cpp) [Python](./Python/get-the-maximum-score.py) | _O(m + n)_ | _O(1)_ |  Hard | |
 1551| [Minimum Operations to Make Array Equal](https://leetcode.com/problems/minimum-operations-to-make-array-equal/) | [C++](./C++/minimum-operations-to-make-array-equal.cpp) [Python](./Python/minimum-operations-to-make-array-equal.py) | _O(1)_ | _O(1)_ |  Medium | |
 1611| [Minimum One Bit Operations to Make Integers Zero](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/)     | [C++](./C++/minimum-one-bit-operations-to-make-integers-zero.cpp) [Python](./Python/minimum-one-bit-operations-to-make-integers-zero.py)  | _O(logn)_        | _O(1)_          | Hard         | variant of [Gray Code](https://leetcode.com/problems/gray-code/) |
+1641| [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/) | [C++](./C++/count-sorted-vowel-strings.cpp) [Python](./Python/count-sorted-vowel-strings.py) | _O(1)_ | _O(1)_ |  Medium | |
+1643| [Kth Smallest Instructions](https://leetcode.com/problems/kth-smallest-instructions/) | [C++](./C++/kth-smallest-instructions.cpp) [Python](./Python/kth-smallest-instructions.py) | _O((m + n)^2)_ | _O(1)_ |  Medium | |
 
 <br/>
 <div align="right">
@@ -948,6 +953,8 @@
 1620| [Coordinate With Maximum Network Quality](https://leetcode.com/problems/coordinate-with-maximum-network-quality/) | [C++](./C++/coordinate-with-maximum-network-quality.cpp) [Python](./Python/coordinate-with-maximum-network-quality.py) | _O(n^2)_ | _O(1)_| Medium | |
 1621| [Number of Sets of K Non-Overlapping Line Segments](https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/) | [C++](./C++/number-of-sets-of-k-non-overlapping-line-segments.cpp) [Python](./Python/number-of-sets-of-k-non-overlapping-line-segments.py) | _O(1)_ | _O(n)_| Medium | |  Binomial Coefficients, `Euler's Theorem`
 1630| [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/) | [C++](./C++/arithmetic-subarrays.cpp) [Python](./Python/arithmetic-subarrays.py) | _O(n * q)_ | _O(n)_| Medium | | Arithmetic Series
+1636| [Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/) | [C++](./C++/sort-array-by-increasing-frequency.cpp) [Python](./Python/sort-array-by-increasing-frequency.py) | _O(nlogn)_ | _O(n)_| Easy | |
+1637| [Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/) | [C++](./C++/widest-vertical-area-between-two-points-containing-no-points.cpp) [Python](./Python/widest-vertical-area-between-two-points-containing-no-points.py) | _O(nlogn)_ | _O(n)_| Medium | |
 
 <br/>
 <div align="right">
@@ -1517,6 +1524,7 @@
 1595| [Minimum Cost to Connect Two Groups of Points](https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/)| [C++](./C++/minimum-cost-to-connect-two-groups-of-points.cpp) [Python](./Python/minimum-cost-to-connect-two-groups-of-points.py) | _O(m * n * 2^n)_    | _O(2^n)_          | Hard           ||
 1617| [Count Subtrees With Max Distance Between Cities](https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities/)| [C++](./C++/count-subtrees-with-max-distance-between-cities.cpp) [Python](./Python/count-subtrees-with-max-distance-between-cities.py) | _O(n^6)_    | _O(n^3)_          | Hard           || Backtracking, Graph
 1626| [Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts/)| [C++](./C++/best-team-with-no-conflicts.cpp) [Python](./Python/best-team-with-no-conflicts.py) | _O(nloga)_    | _O(n)_          | Medium           | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Sort, DP, Segment Tree
+1639| [Number of Ways to Form a Target String Given a Dictionary](https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/)| [C++](./C++/number-of-ways-to-form-a-target-string-given-a-dictionary.cpp) [Python](./Python/number-of-ways-to-form-a-target-string-given-a-dictionary.py) | _O(l * (w + n))_    | _O(n)_          | Medium           | | 
 
 <br/>
 <div align="right">
@@ -1868,6 +1876,7 @@
 1613| [Find the Missing IDs](https://leetcode.com/problems/find-the-missing-ids/) | [MySQL](./MySQL/find-the-missing-ids.sql) | _O(n^2)_ | _O(n)_       | Medium           |🔒||
 1623| [All Valid Triplets That Can Represent a Country](https://leetcode.com/problems/all-valid-triplets-that-can-represent-a-country/) | [MySQL](./MySQL/all-valid-triplets-that-can-represent-a-country.sql) | _O(n^3)_ | _O(n^3)_       | Easy           |🔒||
 1633| [Percentage of Users Attended a Contest](https://leetcode.com/problems/percentage-of-users-attended-a-contest/) | [MySQL](./MySQL/percentage-of-users-attended-a-contest.sql) | _O(m + nlogn)_ | _O(n)_       | Easy           |🔒||
+1635| [Hopper Company Queries I](https://leetcode.com/problems/hopper-company-queries-i/) | [MySQL](./MySQL/hopper-company-queries-i.sql) | _O(dlogd + r)_ | _O(d + r)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
