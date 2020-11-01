@@ -4,7 +4,7 @@
 class Solution {
 public:
     int countVowelStrings(int n) {
-        return nCr(n + 4, 4);  // H(5, n) = nCr(n+5-1, n) = nCr(n+4, 4)
+        return nCr(n + 4, 4);  // H(5, n) = C(n+5-1, n) = C(n+4, 4)
     }
 
 private:
