@@ -17,9 +17,9 @@ class Solution(object):
             diff = heights[i+1]-heights[i]
             if diff > 0:
                 heapq.heappush(min_heap, diff)
-            if len(min_heap) <= ladders:
+            if len(min_heap) <= ladders:  # ladders are reserved for top diffs
                 continue
-            bricks -= heapq.heappop(min_heap)
-            if bricks < 0:
+            bricks -= heapq.heappop(min_heap)  # use bricks if ladders are not enough
+            if bricks < 0:  # not enough bricks
                 return i
         return len(heights)-1
