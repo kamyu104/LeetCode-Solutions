@@ -901,7 +901,7 @@
 1551| [Minimum Operations to Make Array Equal](https://leetcode.com/problems/minimum-operations-to-make-array-equal/) | [C++](./C++/minimum-operations-to-make-array-equal.cpp) [Python](./Python/minimum-operations-to-make-array-equal.py) | _O(1)_ | _O(1)_ |  Medium | |
 1611| [Minimum One Bit Operations to Make Integers Zero](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/)     | [C++](./C++/minimum-one-bit-operations-to-make-integers-zero.cpp) [Python](./Python/minimum-one-bit-operations-to-make-integers-zero.py)  | _O(logn)_        | _O(1)_          | Hard         | variant of [Gray Code](https://leetcode.com/problems/gray-code/) |
 1641| [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/) | [C++](./C++/count-sorted-vowel-strings.cpp) [Python](./Python/count-sorted-vowel-strings.py) | _O(1)_ | _O(1)_ |  Medium | | Binomial Coefficients
-1643| [Kth Smallest Instructions](https://leetcode.com/problems/kth-smallest-instructions/) | [C++](./C++/kth-smallest-instructions.cpp) [Python](./Python/kth-smallest-instructions.py) | _O((m + n)^2)_ | _O(1)_ |  Medium | | Binomial Coefficients
+1643| [Kth Smallest Instructions](https://leetcode.com/problems/kth-smallest-instructions/) | [C++](./C++/kth-smallest-instructions.cpp) [Python](./Python/kth-smallest-instructions.py) | _O((m + n)^2)_ | _O(1)_ |  Hard | | Binomial Coefficients
 
 <br/>
 <div align="right">
