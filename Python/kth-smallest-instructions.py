@@ -23,11 +23,11 @@ class Solution(object):
         result = []
         while r+c:
             count = nCr(r+(c-1), r)  # the number of HX..X combinations
-            if k <= count:  # kth instruction is one of HX..X combinations, so go right
+            if k <= count:  # the kth instruction is one of HX..X combinations, so go right
                 c -= 1
                 result.append('H')
-            else:  # kth instruction is one of VX..X combinations, so go down
+            else:  # the kth instruction is one of VX..X combinations, so go down
                 r -= 1
-                k -= count  # kth of XX..X combinations is the (k-count)th of X..X combinations
+                k -= count  # the kth one of XX..X combinations is the (k-count)th one of X..X combinations
                 result.append('V')
         return "".join(result)
