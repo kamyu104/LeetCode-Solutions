@@ -49,7 +49,7 @@ class Solution_TLE(object):
             if end - start <= 0:  # The size of range [start, end] less than 2 is always with count 0.
                 return 0
 
-            mid = start + (end - start) / 2
+            mid = start + (end - start) // 2
             smallerMergeSort(idxs, start, mid, counts)
             smallerMergeSort(idxs, mid + 1, end, counts)
             r = start
@@ -71,7 +71,7 @@ class Solution_TLE(object):
             if end - start <= 0:  # The size of range [start, end] less than 2 is always with count 0.
                 return 0
 
-            mid = start + (end - start) / 2
+            mid = start + (end - start) // 2
             largerMergeSort(idxs, start, mid, counts)
             largerMergeSort(idxs, mid + 1, end, counts)
             r = start
