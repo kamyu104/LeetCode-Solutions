@@ -94,5 +94,5 @@ class Solution_TLE(object):
         for i, inst in enumerate(instructions):
             idxs.append((inst, i))
         smallerMergeSort(idxs[:], 0, len(idxs)-1, smaller_counts)
-        largerMergeSort(idxs[:], 0, len(idxs)-1, larger_counts)
+        largerMergeSort(idxs, 0, len(idxs)-1, larger_counts)
         return sum(min(s, l) for s, l in itertools.izip(smaller_counts, larger_counts)) % MOD
