@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1643%20%2F%201643-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1649%20%2F%201649-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -285,6 +285,7 @@
 1583 | [Count Unhappy Friends](https://leetcode.com/problems/count-unhappy-friends/) | [C++](./C++/count-unhappy-friends.cpp) [Python](./Python/count-unhappy-friends.py) | _O(n^2)_ | _O(n^2)_      | Medium         ||
 1619 | [Mean of Array After Removing Some Elements](https://leetcode.com/problems/mean-of-array-after-removing-some-elements/) | [C++](./C++/mean-of-array-after-removing-some-elements.cpp) [Python](./Python/mean-of-array-after-removing-some-elements.py) | _O(n)_ | _O(1)_      | Easy         || Quick Select
 1629 | [Slowest Key](https://leetcode.com/problems/slowest-key/) | [C++](./C++/slowest-key.cpp) [Python](./Python/slowest-key.py) | _O(n)_ | _O(1)_      | Easy         ||
+1646 | [Get Maximum in Generated Array](https://leetcode.com/problems/get-maximum-in-generated-array/) | [C++](./C++/get-maximum-in-generated-array.cpp) [Python](./Python/get-maximum-in-generated-array.py) | _O(n)_ | _O(n)_ | Easy ||
 
 <br/>
 <div align="right">
@@ -587,7 +588,7 @@
 0297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [C++](./C++/serialize-and-deserialize-binary-tree.cpp) [Python](./Python/serialize-and-deserialize-binary-tree.py) | _O(n)_ | _O(h)_ | Hard | LintCode | DFS
 0307 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [C++](./C++/range-sum-query-mutable.cpp) [Python](./Python/range-sum-query-mutable.py) | ctor: _O(n)_, update: _O(logn)_, query:  _O(logn)_ | _O(n)_ | Medium | LintCode | DFS, Segment Tree, BIT, Fenwick Tree
 0308 | [Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable/) | [C++](./C++/range-sum-query-2d-mutable.cpp) [Python](./Python/range-sum-query-2d-mutable.py) | ctor: _O(m * n)_, update: _O(logm * logn)_, query:  _O(logm * logn)_ | _O(m * n)_ | Hard | 🔒 | DFS, Quad Tree, 2D BIT, 2D Fenwick Tree
-0315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)| [C++](./C++/count-of-smaller-numbers-after-self.cpp) [Python](./Python/count-of-smaller-numbers-after-self.py)| _O(nlogn)_ | _O(n)_ | Hard | LintCode | BST, BIT, Fenwick Tree, Divide and Conquer |
+0315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)| [C++](./C++/count-of-smaller-numbers-after-self.cpp) [Python](./Python/count-of-smaller-numbers-after-self.py)| _O(nlogn)_ | _O(n)_ | Hard | LintCode | BST, BIT, Fenwick Tree, Divide and Conquer, Merge Sort |
 0525| [Contiguous Array](https://leetcode.com/problems/contiguous-array/) |[C++](./C++/contiguous-array.cpp)  [Python](./Python/contiguous-array.py) | _O(n)_ | _O(n)_ | Medium         | |
 0529 | [Minesweeper](https://leetcode.com/problems/minesweeper/) | [C++](./C++/minesweeper.cpp) [Python](./Python/minesweeper.py) | _O(m * n)_ | _O(m + n)_ | Medium    || 
 0536 | [Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string/) | [C++](./C++/construct-binary-tree-from-string.cpp) [Python](./Python/construct-binary-tree-from-string.py) | _O(n)_ | _O(h)_ | Medium    | 🔒 |
@@ -659,6 +660,7 @@
 1522| [Diameter of N-Ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree/) | [C++](./C++/diameter-of-n-ary-tree.cpp) [Python](./Python/diameter-of-n-ary-tree.py) | _O(n)_          | _O(h)_          | Medium           |🔒| DFS, Stack |
 1530 | [Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/)| [C++](./C++/number-of-good-leaf-nodes-pairs.cpp) [Python](./Python/number-of-good-leaf-nodes-pairs.py) | _O(n)_ | _O(h)_ | Medium | | DFS, Stack
 1612 | [Check If Two Expression Trees are Equivalent](https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/)  | [C++](./C++/check-if-two-expression-trees-are-equivalent.cpp) [Python](./Python/check-if-two-expression-trees-are-equivalent.py) | _O(n)_| _O(1)_| Medium           |🔒| `Morris Traversal`, Inorder Traversal, Stack, Hash Table | 
+1649|[Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions/)| [C++](./C++/create-sorted-array-through-instructions.cpp) [Python](./Python/create-sorted-array-through-instructions.py)| _O(nlogn)_ | _O(n)_ | Hard | variant of [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | BIT, Fenwick Tree, Merge Sort |
 
 <br/>
 <div align="right">
@@ -1127,6 +1129,7 @@
 1539 | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | [C++](./C++/kth-missing-positive-number.cpp) [Python](./Python/kth-missing-positive-number.py) | _O(logn)_ | _O(1)_ | Easy | |
 1552 | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/) | [C++](./C++/magnetic-force-between-two-balls.cpp) [Python](./Python/magnetic-force-between-two-balls.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | |
 1618 | [Maximum Font to Fit a Sentence in a Screen](https://leetcode.com/problems/maximum-font-to-fit-a-sentence-in-a-screen/) | [C++](./C++/maximum-font-to-fit-a-sentence-in-a-screen.cpp) [Python](./Python/maximum-font-to-fit-a-sentence-in-a-screen.py) | _O(n + logm)_ | _O(1)_ | Medium |🔒|
+1648 | [Sell Diminishing-Valued Colored Balls](https://leetcode.com/problems/sell-diminishing-valued-colored-balls/) | [C++](./C++/sell-diminishing-valued-colored-balls.cpp) [Python](./Python/sell-diminishing-valued-colored-balls.py) | _O(nlogm)_ | _O(1)_ | Medium | |
 
 <br/>
 <div align="right">
@@ -1625,6 +1628,7 @@
 1605 | [Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/) | [C++](./C++/find-valid-matrix-given-row-and-column-sums.cpp) [Python](./Python/find-valid-matrix-given-row-and-column-sums.py) | _O(m + n)_ | _O(1)_ | Medium ||
 1616 | [Split Two Strings to Make Palindrome](https://leetcode.com/problems/split-two-strings-to-make-palindrome/) | [C++](./C++/split-two-strings-to-make-palindrome.cpp) [Python](./Python/split-two-strings-to-make-palindrome.py) | _O(n)_ | _O(1)_ | Medium || Two Pointers
 1632 | [Rank Transform of a Matrix](https://leetcode.com/problems/rank-transform-of-a-matrix/) | [C++](./C++/rank-transform-of-a-matrix.cpp) [Python](./Python/rank-transform-of-a-matrix.py) | _O(m * n * log(m * n))_ | _O(m * n)_ | Hard || Union Find
+1647 | [Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/) | [C++](./C++/minimum-deletions-to-make-character-frequencies-unique.cpp) [Python](./Python/minimum-deletions-to-make-character-frequencies-unique.py) | _O(n)_ | _O(1)_ | Medium ||
 
 <br/>
 <div align="right">
@@ -1877,6 +1881,7 @@
 1623| [All Valid Triplets That Can Represent a Country](https://leetcode.com/problems/all-valid-triplets-that-can-represent-a-country/) | [MySQL](./MySQL/all-valid-triplets-that-can-represent-a-country.sql) | _O(n^3)_ | _O(n^3)_       | Easy           |🔒||
 1633| [Percentage of Users Attended a Contest](https://leetcode.com/problems/percentage-of-users-attended-a-contest/) | [MySQL](./MySQL/percentage-of-users-attended-a-contest.sql) | _O(m + nlogn)_ | _O(n)_       | Easy           |🔒||
 1635| [Hopper Company Queries I](https://leetcode.com/problems/hopper-company-queries-i/) | [MySQL](./MySQL/hopper-company-queries-i.sql) | _O(dlogd + r)_ | _O(d + r)_       | Hard           |🔒||
+1645| [Hopper Company Queries II](https://leetcode.com/problems/hopper-company-queries-ii/) | [MySQL](./MySQL/hopper-company-queries-ii.sql) | _O(dlogd + r)_ | _O(d + r)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
