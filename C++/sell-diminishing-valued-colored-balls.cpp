@@ -18,7 +18,7 @@ public:
         uint64_t result = 0;
         for (const auto& cnt : inventory) {
             if (cnt >= left) {
-                result = (result + uint64_t(left + cnt) * (cnt - left + 1) / 2) % MOD;
+                result = (result + (uint64_t(left + cnt) * (cnt - left + 1) / 2) % MOD) % MOD;
             }
         }
         // assert(orders - count(inventory, left) >= 0);
