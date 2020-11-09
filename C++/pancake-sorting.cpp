@@ -6,8 +6,7 @@ public:
     vector<int> pancakeSort(vector<int>& arr) {
         BIT bit(size(arr));
         vector<int> result;
-        bit.add(arr[0] - 1, 1);
-        for (int i = 1; i < size(arr); bit.add(arr[i++] - 1, 1)) {
+        for (int i = 0; i < size(arr); bit.add(arr[i++] - 1, 1)) {
             int n = bit.query((arr[i] - 1) - 1);
             if (n == i) {
                 continue;
