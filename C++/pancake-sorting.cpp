@@ -12,11 +12,11 @@ public:
             if (n == i) {  // already sorted
                 continue;
             }
-            if (n == 0) {                    // (0..n-1)i
+            if (n == 0) {                    // (0..i-1)i
                 if (i > 1) {
-                    result.emplace_back(i);  // (n-1..0)i
+                    result.emplace_back(i);  // (i-1..0)i
                 }
-                result.emplace_back(i + 1);  // i(0..n-1)
+                result.emplace_back(i + 1);  // i(0..i-1)
             } else {                         // (0..n-1)n(n+1..i-1)i
                 if (n > 1) {
                     result.emplace_back(n);  // (n-1..0)n(n+1..i-1)i
