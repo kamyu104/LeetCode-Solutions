@@ -18,7 +18,7 @@ public:
                 }
                 result.emplace_back(i + 1);
             } else {
-                if (n > 1){
+                if (n > 1) {
                     result.emplace_back(n);
                 }
                 result.emplace_back(i);
