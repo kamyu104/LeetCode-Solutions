@@ -117,7 +117,9 @@ private:
             while (r <= mid && (*idxs)[r].first <= (*idxs)[i].first) {
                 tmp.emplace_back((*idxs)[r++]);
             }
-            tmp.emplace_back((*idxs)[i]);
+            if (r <= mid) {
+                tmp.emplace_back((*idxs)[i]);
+            }
             (*counts)[(*idxs)[i].second] += mid - r + 1;
         }
         while (r <= mid) {
