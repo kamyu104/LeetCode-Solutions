@@ -12,18 +12,18 @@ public:
             if (n == i) {
                 continue;
             }
-            if (n == 0) {
+            if (n == 0) {                    // (0..n-1)i
                 if (i > 1) {
-                    result.emplace_back(i);
+                    result.emplace_back(i);  // (n-1..0)i
                 }
-                result.emplace_back(i + 1);
-            } else {
+                result.emplace_back(i + 1);  // i(0..n-1)
+            } else {                         // (0..n-1)n(n+1..i-1)i
                 if (n > 1) {
-                    result.emplace_back(n);
+                    result.emplace_back(n);  // (n-1..0)n(n+1..i-1)i
                 }
-                result.emplace_back(i);
-                result.emplace_back(i + 1);
-                result.emplace_back(n + 1);
+                result.emplace_back(i);      // (i-1..n+1)n(0..n-1)i
+                result.emplace_back(i + 1);  // i(n-1..0)n(n+1..i-1)
+                result.emplace_back(n + 1);  // (0..n-1)in(n+1..i-1)
             }
         }
         return result;
