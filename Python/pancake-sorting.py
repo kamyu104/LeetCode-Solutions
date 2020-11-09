@@ -32,10 +32,10 @@ class Solution(object):
             bit.add(arr[i]-1, 1)
             if n == i:  # already sorted
                 continue
-            if n == 0:                # (0..n-1)i
+            if n == 0:                # (0..i-1)i
                 if i > 1:
-                    result.append(i)  # (n-1..0)i
-                result.append(i+1)    # i(0..n-1)
+                    result.append(i)  # (i-1..0)i
+                result.append(i+1)    # i(0..i-1)
             else:                     # (0..n-1)n(n+1..i-1)i
                 if n > 1:
                     result.append(n)  # (n-1..0)n(n+1..i-1)i
