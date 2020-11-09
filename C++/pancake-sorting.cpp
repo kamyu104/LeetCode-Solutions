@@ -9,7 +9,7 @@ public:
         bit.add(arr[0] - 1, 1);
         for (int i = 1; i < size(arr); bit.add(arr[i++] - 1, 1)) {
             int count = bit.query((arr[i] - 1) - 1);
-            if (count  >= i) {
+            if (count >= i) {
                 continue;
             }
             if (count == 0) {
