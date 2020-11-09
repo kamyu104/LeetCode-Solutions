@@ -82,7 +82,7 @@ class Solution2(object):
         smaller_counts = [0]*len(arr)
         for i, x in enumerate(arr):
             idxs.append((x, i))
-        smallerMergeSort(idxs[:], 0, len(idxs)-1, smaller_counts)
+        smallerMergeSort(idxs, 0, len(idxs)-1, smaller_counts)
         result = []
         for i, n in enumerate(smaller_counts):
             if n == i:  # already sorted
