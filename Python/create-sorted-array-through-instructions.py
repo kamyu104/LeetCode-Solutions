@@ -81,7 +81,8 @@ class Solution_TLE(object):
                 while r <= mid and idxs[r][0] <= idxs[i][0]:
                     tmp.append(idxs[r])
                     r += 1
-                tmp.append(idxs[i])
+                if r <= mid:
+                    tmp.append(idxs[i])
                 counts[idxs[i][1]] += mid - r + 1
             while r <= mid:
                 tmp.append(idxs[r])
