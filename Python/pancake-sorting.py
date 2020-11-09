@@ -27,8 +27,7 @@ class Solution(object):
         """
         bit = BIT(len(arr))
         result = []
-        bit.add(arr[0]-1, 1)
-        for i in xrange(1, len(arr)):
+        for i in xrange(len(arr)):
             n = bit.query((arr[i]-1)-1)
             bit.add(arr[i]-1, 1)
             if n == i:
