@@ -9,7 +9,7 @@ public:
         for (int i = 0; i < size(arr); ++i) {
             int n = bit.query((arr[i] - 1) - 1);
             bit.add(arr[i] - 1, 1);
-            if (n == i) {
+            if (n == i) {  // already sorted
                 continue;
             }
             if (n == 0) {                    // (0..n-1)i
