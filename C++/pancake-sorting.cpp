@@ -8,22 +8,22 @@ public:
         vector<int> result;
         bit.add(arr[0] - 1, 1);
         for (int i = 1; i < size(arr); bit.add(arr[i++] - 1, 1)) {
-            int count = bit.query((arr[i] - 1) - 1);
-            if (count >= i) {
+            int n = bit.query((arr[i] - 1) - 1);
+            if (n >= i) {
                 continue;
             }
-            if (count == 0) {
+            if (n == 0) {
                 if (i > 1) {
                     result.emplace_back(i);
                 }
                 result.emplace_back(i + 1);
             } else {
-                if (count > 1){
-                    result.emplace_back(count);
+                if (n > 1){
+                    result.emplace_back(n);
                 }
                 result.emplace_back(i);
                 result.emplace_back(i + 1);
-                result.emplace_back(count + 1);
+                result.emplace_back(n + 1);
             }
         }
         return result;
