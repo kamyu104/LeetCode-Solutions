@@ -70,7 +70,7 @@ class Solution2 {
 public:
     int maxJumps(vector<int>& arr, int d) {
         vector<vector<int>> left(arr.size());
-        vector<int>decreasing_stk;
+        vector<int> decreasing_stk;
         for (int i = 0; i < arr.size(); ++i) {
             while (!decreasing_stk.empty() && arr[decreasing_stk.back()] < arr[i]) {
                 if (i - decreasing_stk.back() <= d) {
