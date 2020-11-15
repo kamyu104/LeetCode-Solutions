@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: int
         """
         max_f = max(forbidden)
-        max_val = x+b if a >= b or x > max_f else max_f+a+b
+        max_val = x+b if a >= b else max(x, max_f)+a+b
         lookup = set()      
         for pos in forbidden:
             lookup.add((pos, True))
