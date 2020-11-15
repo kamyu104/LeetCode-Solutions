@@ -5,7 +5,7 @@ class Solution {
 public:
     int minimumJumps(vector<int>& forbidden, int a, int b, int x) {
         int max_f = *max_element(cbegin(forbidden), cend(forbidden));
-        int max_val = (a >= b || x > max_f) ? x + b : max_f + a + b;
+        int max_val = (a >= b) ? x + b : max(x, max_f) + a + b;
         vector<unordered_set<int>> lookup(2); 
         for (const auto& pos : forbidden) {
             lookup[0].emplace(pos);
