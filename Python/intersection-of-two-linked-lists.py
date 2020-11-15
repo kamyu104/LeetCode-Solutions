@@ -11,30 +11,7 @@ class Solution(object):
     # @return the intersected ListNode
     def getIntersectionNode(self, headA, headB):
         curA, curB = headA, headB
-        begin, tailA, tailB = None, None, None
-
-        # a->c->b->c
-        # b->c->a->c
-        while curA and curB:
-            if curA == curB:
-                begin = curA
-                break
-
-            if curA.next:
-                curA = curA.next
-            elif tailA is None:
-                tailA = curA
-                curA = headB
-            else:
-                break
-
-            if curB.next:
-                curB = curB.next
-            elif tailB is None:
-                tailB = curB
-                curB = headA
-            else:
-                break
-
-        return begin
-
+        while curA != curB:
+            curA = curA.next if curA else headB
+            curB = curB.next if curB else headA
+        return curA
