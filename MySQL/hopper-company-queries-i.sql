@@ -1,5 +1,5 @@
-# Time:  O(dlogd + r)
-# Space: O(d + r)
+# Time:  O(d + r + tlogt)
+# Space: O(d + r + t)
 
 WITH RECURSIVE year_cte AS (
     SELECT MIN(YEAR(join_date)) year,
