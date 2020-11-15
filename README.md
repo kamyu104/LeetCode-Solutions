@@ -466,6 +466,7 @@
 1290| [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | [C++](./C++/convert-binary-number-in-a-linked-list-to-integer.cpp) [Python](./Python/convert-binary-number-in-a-linked-list-to-integer.py) | _O(n)_       | _O(1)_         | Easy         |||
 1474| [Delete N Nodes After M Nodes of a Linked List](https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/) | [C++](./C++/delete-n-nodes-after-m-nodes-of-a-linked-list.cpp) [Python](./Python/delete-n-nodes-after-m-nodes-of-a-linked-list.py) | _O(n)_       | _O(1)_         | Easy         | 🔒 ||
 1634| [Add Two Polynomials Represented as Linked Lists](https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/)| [C++](./C++/add-two-polynomials-represented-as-linked-lists.cpp) [Python](./Python/add-two-polynomials-represented-as-linked-lists.py) | _O(m + n)_       | _O(1)_         | Medium         | 🔒 ||
+1650| [Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/)| [C++](./C++/lowest-common-ancestor-of-a-binary-tree-iii.cpp)  [Python](./Python/lowest-common-ancestor-of-a-binary-tree-iii.py) | _O(h)_ | _O(1)_         | Medium           |🔒, variant of [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) |
 
 <br/>
 <div align="right">
@@ -1880,8 +1881,9 @@
 1613| [Find the Missing IDs](https://leetcode.com/problems/find-the-missing-ids/) | [MySQL](./MySQL/find-the-missing-ids.sql) | _O(n^2)_ | _O(n)_       | Medium           |🔒||
 1623| [All Valid Triplets That Can Represent a Country](https://leetcode.com/problems/all-valid-triplets-that-can-represent-a-country/) | [MySQL](./MySQL/all-valid-triplets-that-can-represent-a-country.sql) | _O(n^3)_ | _O(n^3)_       | Easy           |🔒||
 1633| [Percentage of Users Attended a Contest](https://leetcode.com/problems/percentage-of-users-attended-a-contest/) | [MySQL](./MySQL/percentage-of-users-attended-a-contest.sql) | _O(m + nlogn)_ | _O(n)_       | Easy           |🔒||
-1635| [Hopper Company Queries I](https://leetcode.com/problems/hopper-company-queries-i/) | [MySQL](./MySQL/hopper-company-queries-i.sql) | _O(dlogd + r)_ | _O(d + r)_       | Hard           |🔒||
-1645| [Hopper Company Queries II](https://leetcode.com/problems/hopper-company-queries-ii/) | [MySQL](./MySQL/hopper-company-queries-ii.sql) | _O(dlogd + r)_ | _O(d + r)_       | Hard           |🔒||
+1635| [Hopper Company Queries I](https://leetcode.com/problems/hopper-company-queries-i/) | [MySQL](./MySQL/hopper-company-queries-i.sql) | _O(d + r + tlogt)_ | _O(d + r + t)_       | Hard           |🔒||
+1645| [Hopper Company Queries II](https://leetcode.com/problems/hopper-company-queries-ii/) | [MySQL](./MySQL/hopper-company-queries-ii.sql) | _O(d + r + tlogt)_ | _O(d + r + t)_       | Hard           |🔒||
+1651| [Hopper Company Queries III](https://leetcode.com/problems/hopper-company-queries-iii/) | [MySQL](./MySQL/hopper-company-queries-iii.sql) | _O(d + r + tlogt)_ | _O(d + r + t)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
