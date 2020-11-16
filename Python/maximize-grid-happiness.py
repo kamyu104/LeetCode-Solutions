@@ -25,38 +25,41 @@ class Solution(object):
                     + (120 - 30*(left(curr) != 0) - 30*(up(curr) != 0))*(t == 1)
                     + (40 + 20*(left(curr) != 0) + 20*(up(curr) != 0))*(t == 2))
         
-        result = 0
-        stk = [(2, ([], introvertsCount, extrovertsCount, 0))]
-        while stk:
-            step, params = stk.pop()
-            if step == 2:
-                curr, ins, exs, total = params
-                if ins < 0 or exs < 0:
-                    continue                
-                if len(curr) == m*n or (ins == 0 and exs == 0):
-                    result = max(result, total)                
-                    continue
-                if total + (ins+exs)*120 < result:  # pruning
-                    continue
-                stk.append((3, (curr,)))
-                stk.append((2, (curr, ins, exs-1, count_total(curr, 2, total))))
-                stk.append((1, (curr, 2)))
-
-                stk.append((3, (curr,)))
-                stk.append((2, (curr, ins-1, exs, count_total(curr, 1, total))))
-                stk.append((1, (curr, 1)))
-
-                if left(curr) or up(curr):  # leave unoccupied iff left or up is occupied
+        def iter_backtracking(ins, exs):
+            result = 0
+            stk = [(2, ([], ins, exs, 0))]
+            while stk:
+                step, params = stk.pop()
+                if step == 2:
+                    curr, ins, exs, total = params
+                    if ins < 0 or exs < 0:
+                        continue                
+                    if len(curr) == m*n or (ins == 0 and exs == 0):
+                        result = max(result, total)                
+                        continue
+                    if total + (ins+exs)*120 < result:  # pruning
+                        continue
                     stk.append((3, (curr,)))
-                    stk.append((2, (curr, ins, exs, total)))
-                    stk.append((1, (curr, 0)))
-            elif step == 1:
-                curr, x = params
-                curr.append(x)
-            elif step == 3:
-                curr = params[0]
-                curr.pop()
-        return result
+                    stk.append((2, (curr, ins, exs-1, count_total(curr, 2, total))))
+                    stk.append((1, (curr, 2)))
+
+                    stk.append((3, (curr,)))
+                    stk.append((2, (curr, ins-1, exs, count_total(curr, 1, total))))
+                    stk.append((1, (curr, 1)))
+
+                    if left(curr) or up(curr):  # leave unoccupied iff left or up is occupied
+                        stk.append((3, (curr,)))
+                        stk.append((2, (curr, ins, exs, total)))
+                        stk.append((1, (curr, 0)))
+                elif step == 1:
+                    curr, x = params
+                    curr.append(x)
+                elif step == 3:
+                    curr = params[0]
+                    curr.pop()
+            return result
+          
+        return iter_backtracking(introvertsCount, extrovertsCount)
 
 
 # Time:  O(C(m * n, i) * C(m * n - i, e))
