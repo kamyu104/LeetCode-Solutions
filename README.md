@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1649%20%2F%201649-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1655%20%2F%201659-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -286,6 +286,7 @@
 1619 | [Mean of Array After Removing Some Elements](https://leetcode.com/problems/mean-of-array-after-removing-some-elements/) | [C++](./C++/mean-of-array-after-removing-some-elements.cpp) [Python](./Python/mean-of-array-after-removing-some-elements.py) | _O(n)_ | _O(1)_      | Easy         || Quick Select
 1629 | [Slowest Key](https://leetcode.com/problems/slowest-key/) | [C++](./C++/slowest-key.cpp) [Python](./Python/slowest-key.py) | _O(n)_ | _O(1)_      | Easy         ||
 1646 | [Get Maximum in Generated Array](https://leetcode.com/problems/get-maximum-in-generated-array/) | [C++](./C++/get-maximum-in-generated-array.cpp) [Python](./Python/get-maximum-in-generated-array.py) | _O(n)_ | _O(n)_ | Easy ||
+1652 | [Defuse the Bomb](https://leetcode.com/problems/defuse-the-bomb/) | [C++](./C++/defuse-the-bomb.cpp) [Python](./Python/defuse-the-bomb.py) | _O(n)_ | _O(1)_ | Easy ||
 
 <br/>
 <div align="right">
@@ -1227,6 +1228,7 @@
 1602|[Find Nearest Right Node in Binary Tree](https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/)| [C++](./C++/find-nearest-right-node-in-binary-tree.cpp) [Python](./Python/find-nearest-right-node-in-binary-tree.py)| _O(n)_ | _O(w)_ | Medium |🔒| 
 1609|[Even Odd Tree](https://leetcode.com/problems/even-odd-tree/)| [C++](./C++/even-odd-tree.cpp) [Python](./Python/even-odd-tree.py)| _O(n)_ | _O(w)_ | Medium || 
 1625|[Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/)| [C++](./C++/lexicographically-smallest-string-after-applying-operations.cpp) [Python](./Python/lexicographically-smallest-string-after-applying-operations.py)| _O(n^2)_ | _O(1)_ | Medium || BFS, String 
+1654|[Minimum Jumps to Reach Home](https://leetcode.com/problems/minimum-jumps-to-reach-home/)| [C++](./C++/minimum-jumps-to-reach-home.cpp) [Python](./Python/minimum-jumps-to-reach-home.py)| _O(max(x, max(forbidden)) + a + b)_ | _O(max(x, max(forbidden)) + a + b)_ | Medium || BFS 
 
 <br/>
 <div align="right">
@@ -1529,6 +1531,7 @@
 1617| [Count Subtrees With Max Distance Between Cities](https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities/)| [C++](./C++/count-subtrees-with-max-distance-between-cities.cpp) [Python](./Python/count-subtrees-with-max-distance-between-cities.py) | _O(n^6)_    | _O(n^3)_          | Hard           || Backtracking, Graph
 1626| [Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts/)| [C++](./C++/best-team-with-no-conflicts.cpp) [Python](./Python/best-team-with-no-conflicts.py) | _O(nloga)_    | _O(n)_          | Medium           | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Sort, DP, Segment Tree
 1639| [Number of Ways to Form a Target String Given a Dictionary](https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/)| [C++](./C++/number-of-ways-to-form-a-target-string-given-a-dictionary.cpp) [Python](./Python/number-of-ways-to-form-a-target-string-given-a-dictionary.py) | _O(l * (w + n))_    | _O(n)_          | Hard           | | 
+1655| [Distribute Repeating Integers](https://leetcode.com/problems/distribute-repeating-integers/)| [C++](./C++/distribute-repeating-integers.cpp) [Python](./Python/distribute-repeating-integers.py) | _O(n + m * 3^m)_    | _O(n + 2^m)_          | Hard           | | 
 
 <br/>
 <div align="right">
@@ -1630,6 +1633,7 @@
 1616 | [Split Two Strings to Make Palindrome](https://leetcode.com/problems/split-two-strings-to-make-palindrome/) | [C++](./C++/split-two-strings-to-make-palindrome.cpp) [Python](./Python/split-two-strings-to-make-palindrome.py) | _O(n)_ | _O(1)_ | Medium || Two Pointers
 1632 | [Rank Transform of a Matrix](https://leetcode.com/problems/rank-transform-of-a-matrix/) | [C++](./C++/rank-transform-of-a-matrix.cpp) [Python](./Python/rank-transform-of-a-matrix.py) | _O(m * n * log(m * n))_ | _O(m * n)_ | Hard || Union Find
 1647 | [Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/) | [C++](./C++/minimum-deletions-to-make-character-frequencies-unique.cpp) [Python](./Python/minimum-deletions-to-make-character-frequencies-unique.py) | _O(n)_ | _O(1)_ | Medium ||
+1653 | [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | [C++](./C++/minimum-deletions-to-make-string-balanced.cpp) [Python](./Python/minimum-deletions-to-make-string-balanced.py) | _O(n)_ | _O(1)_ | Medium ||
 
 <br/>
 <div align="right">
