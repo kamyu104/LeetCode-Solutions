@@ -24,7 +24,7 @@ public:
         for (const auto& [_, cnt] : count) {
             cnts.emplace_back(cnt);
         }
-        if (size(quantity) < size(cnts)) {
+        if (size(quantity) < size(cnts)) {  // at most use top m cnts
             nth_element(begin(cnts), begin(cnts) + size(quantity) - 1, end(cnts), greater<int>());
             cnts.resize(size(quantity));
         }
