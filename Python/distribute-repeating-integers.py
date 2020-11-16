@@ -1,5 +1,5 @@
 # Time:  O(n + m * 3^m) 
-# Space: O(2^m)
+# Space: O(n + 2^m)
 
 import collections
 import random
