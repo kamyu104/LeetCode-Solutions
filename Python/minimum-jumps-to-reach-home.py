@@ -1,5 +1,5 @@
-# Time:  O(max(x, max(forbidden)) + a + b)
-# Space: O(max(x, max(forbidden)) + a + b)
+# Time:  O(max(x, max(forbidden)) + a + (b+a))
+# Space: O(max(x, max(forbidden)) + a + (b+a))
 
 class Solution(object):
     def minimumJumps(self, forbidden, a, b, x):
@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: int
         """
         max_f = max(forbidden)
-        max_val = x+b if a >= b else max(x, max_f)+a+b
+        max_val = x+b if a >= b else max(x, max_f)+a+(b+a)  # a may be a non-periodic area, b is a periodic area which requires extra a => (b+a)
         lookup = set()      
         for pos in forbidden:
             lookup.add((pos, True))
