@@ -1,4 +1,4 @@
-// Time:  O(m * 3^m) 
+// Time:  O(n + m * 3^m) 
 // Space: O(2^m)
 
 class Solution {
