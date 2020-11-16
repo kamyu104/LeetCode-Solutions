@@ -1,11 +1,11 @@
-// Time:  O(max(x, max(forbidden)) + a + b)
-// Space: O(max(x, max(forbidden)) + a + b)
+// Time:  O(max(x, max(forbidden)) + a +(b+a))
+// Space: O(max(x, max(forbidden)) + a + (b+a))
 
 class Solution {
 public:
     int minimumJumps(vector<int>& forbidden, int a, int b, int x) {
         int max_f = *max_element(cbegin(forbidden), cend(forbidden));
-        int max_val = (a >= b) ? x + b : max(x, max_f) + a + b;
+        int max_val = (a >= b) ? x + b : max(x, max_f) + a + b;  // a may be a non-periodic area, b is a periodic area which requires extra a => (b+a)
         vector<unordered_set<int>> lookup(2); 
         for (const auto& pos : forbidden) {
             lookup[0].emplace(pos);
