@@ -24,7 +24,7 @@ class Solution(object):
         dp[0][0] = 1
         i = 0
         cnts = sorted(count.itervalues(), reverse=True)[:len(quantity)]
-        for cnt in cnts:  # Time: O(n)
+        for cnt in cnts:  # Time: O(m)
             dp[(i+1)%2] = [0]*(total+1)
             # Time: O(3^m), see https://cp-algorithms.com/algebra/all-submasks.html
             for mask in reversed(xrange(total+1)):
