@@ -1,4 +1,4 @@
-# Time:  O(n * 4^m) 
+# Time:  O(m * 3^m) 
 # Space: O(2^m)
 
 import collections
@@ -23,14 +23,16 @@ class Solution(object):
         dp = [[0]*(total+1) for _ in xrange(2)]
         dp[0][0] = 1
         i = 0
-        for num, cnt in count.iteritems():  # Time: O(n)
+        cnts = sorted(count.itervalues(), reverse=True)[:len(quantity)]
+        for cnt in cnts:  # Time: O(n)
             dp[(i+1)%2] = [0]*(total+1)
-            for mask in reversed(xrange(total+1)):  # Time: O(2^m)
+            # Time: O(3^m), see https://cp-algorithms.com/algebra/all-submasks.html
+            for mask in reversed(xrange(total+1)):
                 dp[(i+1)%2][mask] |= dp[i%2][mask]
                 sub_mask = mask
-                while sub_mask > 0:  # Time: O(2^m)
+                while sub_mask > 0:
                     if requirement[sub_mask] <= cnt and dp[i%2][mask^sub_mask]:
                         dp[(i+1)%2][mask] = 1
                     sub_mask = (sub_mask-1)&mask
             i += 1
-        return dp[len(count)%2][total]
+        return dp[len(cnts)%2][total]
