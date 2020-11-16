@@ -1,4 +1,4 @@
-// Time:  O(max(x, max(forbidden)) + a +(b+a))
+// Time:  O(max(x, max(forbidden)) + a + (b+a))
 // Space: O(max(x, max(forbidden)) + a + (b+a))
 
 class Solution {
