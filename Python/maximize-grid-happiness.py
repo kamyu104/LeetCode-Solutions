@@ -1,5 +1,5 @@
 # Time:  O(C(m * n, i) * C(m * n - i, e))
-# Space: O(m + n)
+# Space: O(min(m * n, i + e))
 
 class Solution(object):
     def getMaxGridHappiness(self, m, n, introvertsCount, extrovertsCount):
@@ -60,7 +60,7 @@ class Solution(object):
 
 
 # Time:  O(C(m * n, i) * C(m * n - i, e))
-# Space: O(m + n)
+# Space: O(min(m * n, i + e))
 class Solution2(object):
     def getMaxGridHappiness(self, m, n, introvertsCount, extrovertsCount):
         """
