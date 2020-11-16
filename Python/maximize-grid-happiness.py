@@ -25,31 +25,31 @@ class Solution(object):
                     + (120 - 30*(left(curr) != 0) - 30*(up(curr) != 0))*(t == 1)
                     + (40 + 20*(left(curr) != 0) + 20*(up(curr) != 0))*(t == 2))
         
-        def iter_backtracking(ins, exs):
+        def iter_backtracking(i, e):
             result = 0
-            stk = [(2, ([], ins, exs, 0))]
+            stk = [(2, ([], i, e, 0))]
             while stk:
                 step, params = stk.pop()
                 if step == 2:
-                    curr, ins, exs, total = params
-                    if ins < 0 or exs < 0:
+                    curr, i, e, total = params
+                    if i < 0 or e < 0:
                         continue                
-                    if len(curr) == m*n or (ins == 0 and exs == 0):
+                    if len(curr) == m*n or (i == 0 and e == 0):
                         result = max(result, total)                
                         continue
-                    if total + (ins+exs)*120 < result:  # pruning
+                    if total + (i+e)*120 < result:  # pruning
                         continue
                     stk.append((3, (curr,)))
-                    stk.append((2, (curr, ins, exs-1, count_total(curr, 2, total))))
+                    stk.append((2, (curr, i, e-1, count_total(curr, 2, total))))
                     stk.append((1, (curr, 2)))
 
                     stk.append((3, (curr,)))
-                    stk.append((2, (curr, ins-1, exs, count_total(curr, 1, total))))
+                    stk.append((2, (curr, i-1, e, count_total(curr, 1, total))))
                     stk.append((1, (curr, 1)))
 
                     if left(curr) or up(curr):  # leave unoccupied iff left or up is occupied
                         stk.append((3, (curr,)))
-                        stk.append((2, (curr, ins, exs, total)))
+                        stk.append((2, (curr, i, e, total)))
                         stk.append((1, (curr, 0)))
                 elif step == 1:
                     curr, x = params
@@ -88,27 +88,27 @@ class Solution2(object):
                     + (120 - 30*(left(curr) != 0) - 30*(up(curr) != 0))*(t == 1)
                     + (40 + 20*(left(curr) != 0) + 20*(up(curr) != 0))*(t == 2))
         
-        def backtracking(curr, ins, exs, total, result):
-            if ins < 0 or exs < 0:
+        def backtracking(curr, i, e, total, result):
+            if i < 0 or e < 0:
                 return                
-            if len(curr) == m*n or (ins == 0 and exs == 0):
+            if len(curr) == m*n or (i == 0 and e == 0):
                 result[0] = max(result[0], total)                
                 return
-            if total + (ins+exs)*120 < result[0]:  # pruning
+            if total + (i+e)*120 < result[0]:  # pruning
                 return
             if left(curr) or up(curr):  # leave unoccupied iff left or up is occupied
                 curr.append(0)
-                backtracking(curr, ins, exs, total, result)
+                backtracking(curr, i, e, total, result)
                 curr.pop()
 
             new_total = count_total(curr, 1, total)
             curr.append(1)
-            backtracking(curr, ins-1, exs, new_total, result)
+            backtracking(curr, i-1, e, new_total, result)
             curr.pop()
             
             new_total = count_total(curr, 2, total)
             curr.append(2)
-            backtracking(curr, ins, exs-1, new_total, result)
+            backtracking(curr, i, e-1, new_total, result)
             curr.pop()
 
         result = [0]
