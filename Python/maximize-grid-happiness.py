@@ -26,10 +26,10 @@ class Solution(object):
                     + (40 + 20*(left(curr) != 0) + 20*(up(curr) != 0))*(t == 2))
         
         result = 0
-        stk = [(1, ([], introvertsCount, extrovertsCount, 0))]
+        stk = [(2, ([], introvertsCount, extrovertsCount, 0))]
         while stk:
             step, params = stk.pop()
-            if step == 1:
+            if step == 2:
                 curr, ins, exs, total = params
                 if ins < 0 or exs < 0:
                     continue                
@@ -39,18 +39,18 @@ class Solution(object):
                 if total + (ins+exs)*120 < result:  # pruning
                     continue
                 stk.append((3, (curr,)))
-                stk.append((1, (curr, ins, exs-1, count_total(curr, 2, total))))
-                stk.append((2, (curr, 2)))
+                stk.append((2, (curr, ins, exs-1, count_total(curr, 2, total))))
+                stk.append((1, (curr, 2)))
 
                 stk.append((3, (curr,)))
-                stk.append((1, (curr, ins-1, exs, count_total(curr, 1, total))))
-                stk.append((2, (curr, 1)))
+                stk.append((2, (curr, ins-1, exs, count_total(curr, 1, total))))
+                stk.append((1, (curr, 1)))
 
                 if left(curr) or up(curr):  # leave unoccupied iff left or up is occupied
                     stk.append((3, (curr,)))
-                    stk.append((1, (curr, ins, exs, total)))
-                    stk.append((2, (curr, 0)))
-            elif step == 2:
+                    stk.append((2, (curr, ins, exs, total)))
+                    stk.append((1, (curr, 0)))
+            elif step == 1:
                 curr, x = params
                 curr.append(x)
             elif step == 3:
