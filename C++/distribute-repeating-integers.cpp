@@ -24,8 +24,10 @@ public:
         for (const auto& [_, cnt] : count) {
             cnts.emplace_back(cnt);
         }
-        nth_element(begin(cnts), begin(cnts) + size(quantity) - 1, end(cnts), greater<int>());
-        cnts.resize(min(size(cnts), size(quantity)));
+        if (size(quantity) < size(cnts)) {
+            nth_element(begin(cnts), begin(cnts) + size(quantity) - 1, end(cnts), greater<int>());
+            cnts.resize(size(quantity));
+        }
         for (int i = 0; i < size(cnts); ++i) {  // Time: O(m)
             dp[(i + 1) % 2] = vector<int>(total + 1);
             // Time: O(3^m), see https://cp-algorithms.com/algebra/all-submasks.html
