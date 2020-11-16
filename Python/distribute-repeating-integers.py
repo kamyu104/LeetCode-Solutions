@@ -23,7 +23,7 @@ class Solution(object):
         dp = [[0]*(total+1) for _ in xrange(2)]
         dp[0][0] = 1
         i = 0
-        cnts = sorted(count.itervalues(), reverse=True)[:len(quantity)]
+        cnts = sorted(count.itervalues(), reverse=True)[:len(quantity)]  # at most use top m cnts
         for cnt in cnts:  # Time: O(m)
             dp[(i+1)%2] = [0]*(total+1)
             # Time: O(3^m), see https://cp-algorithms.com/algebra/all-submasks.html
