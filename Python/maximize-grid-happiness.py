@@ -49,10 +49,9 @@ class Solution(object):
                         stk.append((2, (i, e, total)))
                         stk.append((1, (0,)))
                 elif step == 1:
-                    curr, x = params
+                    x = params[0]
                     curr.append(x)
                 elif step == 3:
-                    curr = params[0]
                     curr.pop()
             return result
           
@@ -61,7 +60,7 @@ class Solution(object):
 
 # Time:  O(C(m * n, i) * C(m * n - i, e))
 # Space: O(min(m * n, i + e))
-class Solution(object):
+class Solution2(object):
     def getMaxGridHappiness(self, m, n, introvertsCount, extrovertsCount):
         """
         :type m: int
