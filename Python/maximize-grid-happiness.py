@@ -29,22 +29,20 @@ class Solution(object):
             while stk:
                 step, params = stk.pop()
                 if step == 2:
-                    curr, i, e, total = params
-                    if i < 0 or e < 0:
-                        continue                
+                    curr, i, e, total = params             
                     if len(curr) == m*n or (i == 0 and e == 0):
                         result = max(result, total)                
                         continue
                     if total + (i+e)*120 < result:  # pruning
                         continue
-                    stk.append((3, (curr,)))
-                    stk.append((2, (curr, i, e-1, count_total(curr, 2, total))))
-                    stk.append((1, (curr, 2)))
-
-                    stk.append((3, (curr,)))
-                    stk.append((2, (curr, i-1, e, count_total(curr, 1, total))))
-                    stk.append((1, (curr, 1)))
-
+                    if e > 0:
+                        stk.append((3, (curr,)))
+                        stk.append((2, (curr, i, e-1, count_total(curr, 2, total))))
+                        stk.append((1, (curr, 2)))
+                    if i > 0:
+                        stk.append((3, (curr,)))
+                        stk.append((2, (curr, i-1, e, count_total(curr, 1, total))))
+                        stk.append((1, (curr, 1)))
                     if left(curr) or up(curr):  # leave unoccupied iff left or up is occupied
                         stk.append((3, (curr,)))
                         stk.append((2, (curr, i, e, total)))
@@ -84,9 +82,7 @@ class Solution2(object):
                     + (120 - 30*((left(curr) != 0)+(up(curr) != 0)))*(t == 1)
                     + ( 40 + 20*((left(curr) != 0)+(up(curr) != 0)))*(t == 2))
         
-        def backtracking(i, e, total, curr, result):
-            if i < 0 or e < 0:
-                return                
+        def backtracking(i, e, total, curr, result):              
             if len(curr) == m*n or (i == 0 and e == 0):
                 result[0] = max(result[0], total)                
                 return
@@ -96,16 +92,16 @@ class Solution2(object):
                 curr.append(0)
                 backtracking(i, e, total, curr, result)
                 curr.pop()
-
-            new_total = count_total(curr, 1, total)
-            curr.append(1)
-            backtracking(i-1, e, new_total, curr, result)
-            curr.pop()
-            
-            new_total = count_total(curr, 2, total)
-            curr.append(2)
-            backtracking(i, e-1, new_total, curr, result)
-            curr.pop()
+            if i > 0:
+                new_total = count_total(curr, 1, total)
+                curr.append(1)
+                backtracking(i-1, e, new_total, curr, result)
+                curr.pop()
+            if e > 0:
+                new_total = count_total(curr, 2, total)
+                curr.append(2)
+                backtracking(i, e-1, new_total, curr, result)
+                curr.pop()
 
         result = [0]
         backtracking(introvertsCount, extrovertsCount, 0, [], result)
