@@ -11,10 +11,10 @@ class Solution(object):
         :rtype: int
         """
         def left(curr):
-            return len(curr)%n and curr[-1]
+            return curr[-1] if len(curr)%n else 0
 
         def up(curr):
-            return len(curr) >= n and curr[-n]
+            return curr[-n] if len(curr) >= n else 0 
 
         def count_total(curr, t, total):
             return (total
@@ -70,10 +70,10 @@ class Solution2(object):
         :rtype: int
         """
         def left(curr):
-            return len(curr)%n and curr[-1]
+            return curr[-1] if len(curr)%n else 0
 
         def up(curr):
-            return len(curr) >= n and curr[-n]
+            return curr[-n] if len(curr) >= n else 0 
 
         def count_total(curr, t, total):
             return (total
