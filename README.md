@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1655%20%2F%201659-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1659%20%2F%201659-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -750,6 +750,7 @@
 1577| [Number of Ways Where Square of Number Is Equal to Product of Two Numbers](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) | [C++](./C++/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers.cpp) [Python](./Python/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers.py) | _O(m * n)_   | _O(m + n)_        | Medium         ||
 1590| [Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p/) |[C++](./C++/make-sum-divisible-by-p.cpp)  [Python](./Python/make-sum-divisible-by-p.py) | _O(n)_ | _O(p)_ | Medium         | variant of [Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/) |
 1640| [Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/) | [C++](./C++/check-array-formation-through-concatenation.cpp) [Python](./Python/check-array-formation-through-concatenation.py) | _O(n)_   | _O(n)_        | Easy         ||
+1657| [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/) | [C++](./C++/determine-if-two-strings-are-close.cpp) [Python](./Python/determine-if-two-strings-are-close.py) | _O(n)_   | _O(1)_        | Medium         ||
 
 <br/>
 <div align="right">
@@ -906,6 +907,7 @@
 1611| [Minimum One Bit Operations to Make Integers Zero](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/)     | [C++](./C++/minimum-one-bit-operations-to-make-integers-zero.cpp) [Python](./Python/minimum-one-bit-operations-to-make-integers-zero.py)  | _O(logn)_        | _O(1)_          | Hard         | variant of [Gray Code](https://leetcode.com/problems/gray-code/) |
 1641| [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/) | [C++](./C++/count-sorted-vowel-strings.cpp) [Python](./Python/count-sorted-vowel-strings.py) | _O(1)_ | _O(1)_ |  Medium | | Binomial Coefficients
 1643| [Kth Smallest Instructions](https://leetcode.com/problems/kth-smallest-instructions/) | [C++](./C++/kth-smallest-instructions.cpp) [Python](./Python/kth-smallest-instructions.py) | _O((m + n)^2)_ | _O(1)_ |  Hard | | Binomial Coefficients
+1658| [Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | [C++](./C++/minimum-operations-to-reduce-x-to-zero.cpp) [Python](./Python/minimum-operations-to-reduce-x-to-zero.py) | _O(n)_ | _O(1)_ |  Medium | |
 
 <br/>
 <div align="right">
@@ -1343,6 +1345,7 @@
 1307| [Verbal Arithmetic Puzzle](https://leetcode.com/problems/verbal-arithmetic-puzzle/) | [C++](./C++/verbal-arithmetic-puzzle.cpp) [Python](./Python/verbal-arithmetic-puzzle.py)  | _O(10! * n * l)_ | _O(n * l)_ | Hard         |||
 1379 | [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) | [C++](./C++/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.cpp) [Python](./Python/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.py) | _O(n)_ | _O(h)_      | Medium         || Stack |
 1593 | [Split a String Into the Max Number of Unique Substrings](https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/) | [C++](./C++/split-a-string-into-the-max-number-of-unique-substrings.cpp) [Python](./Python/split-a-string-into-the-max-number-of-unique-substrings.py) | _O(n * 2^(n - 1))_ | _O(n)_      | Medium         |||
+1659 | [Maximize Grid Happiness](https://leetcode.com/problems/maximize-grid-happiness/) | [C++](./C++/maximize-grid-happiness.cpp) [Python](./Python/maximize-grid-happiness.py) | _O(C(m * n, i) * C(m * n - i, e))_ | _O(min(m * n, i + e))_      | Hard         || Pruning |
 
 <br/>
 <div align="right">
@@ -1752,7 +1755,7 @@
 1603| [Design Parking System](https://leetcode.com/problems/design-parking-system/) | [C++](./C++/design-parking-system.cpp) [Python](./Python/design-parking-system.py) | _O(1)_ | _O(1)_| Easy | | 
 1622| [Fancy Sequence](https://leetcode.com/problems/fancy-sequence/) | [C++](./C++/fancy-sequence.cpp) [Python](./Python/fancy-sequence.py) | _O(1)_ | _O(n)_| Hard | |  `Euler's Theorem`
 1628| [Design an Expression Tree With Evaluate Function](https://leetcode.com/problems/design-an-expression-tree-with-evaluate-function/) | [C++](./C++/design-an-expression-tree-with-evaluate-function.cpp) [Python](./Python/design-an-expression-tree-with-evaluate-function.py) | _O(n)_ | _O(h)_| Medium | 🔒 |
-
+1656| [Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/) | [C++](./C++/design-an-ordered-stream.cpp) [Python](./Python/design-an-ordered-stream.py) | _O(1)_, amortized | _O(n)_| Easy | |
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
