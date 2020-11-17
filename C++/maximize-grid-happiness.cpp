@@ -58,7 +58,7 @@ private:
 
     int count_total(int n, const vector<int>& curr, int t, int total) {
         return (total
-	            - 30 * ((left(n, curr) == 1) + (up(n, curr) == 1))
+	        - 30 * ((left(n, curr) == 1) + (up(n, curr) == 1))
                 + 20 * ((left(n, curr) == 2) + (up(n, curr) == 2))
                 + (120 - 30 * ((left(n, curr) != 0) + (up(n, curr) != 0))) * (t == 1)
                 + ( 40 + 20 * ((left(n, curr) != 0) + (up(n, curr) != 0))) * (t == 2));
@@ -115,7 +115,7 @@ private:
 
     int count_total(int n, const vector<int>& curr, int t, int total) {
         return (total
-	            - 30 * ((left(n, curr) == 1) + (up(n, curr) == 1))
+	        - 30 * ((left(n, curr) == 1) + (up(n, curr) == 1))
                 + 20 * ((left(n, curr) == 2) + (up(n, curr) == 2))
                 + (120 - 30 * ((left(n, curr) != 0) + (up(n, curr) != 0))) * (t == 1)
                 + ( 40 + 20 * ((left(n, curr) != 0) + (up(n, curr) != 0))) * (t == 2));
