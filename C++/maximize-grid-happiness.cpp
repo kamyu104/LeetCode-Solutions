@@ -1,6 +1,7 @@
 // Time:  O(C(m * n, i) * C(m * n - i, e))
 // Space: O(min(m * n, i + e))
 
+// iterative solution, 660 ms
 class Solution {
 public:
     int getMaxGridHappiness(int m, int n, int introvertsCount, int extrovertsCount) {
@@ -67,6 +68,7 @@ private:
 
 // Time:  O(C(m * n, i) * C(m * n - i, e))
 // Space: O(min(m * n, i + e))
+// recursive solution, 104 ms
 class Solution2 {
 public:
     int getMaxGridHappiness(int m, int n, int introvertsCount, int extrovertsCount) {
