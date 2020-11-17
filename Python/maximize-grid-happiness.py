@@ -18,12 +18,10 @@ class Solution(object):
 
         def count_total(curr, t, total):
             return (total
-                    - 30*(left(curr) == 1)
-                    - 30*(up(curr) == 1)
-                    + 20*(left(curr) == 2)
-                    + 20*(up(curr) == 2)
-                    + (120 - 30*(left(curr) != 0) - 30*(up(curr) != 0))*(t == 1)
-                    + (40 + 20*(left(curr) != 0) + 20*(up(curr) != 0))*(t == 2))
+                    - 30*((left(curr) == 1)+(up(curr) == 1))
+                    + 20*((left(curr) == 2)+(up(curr) == 2))
+                    + (120 - 30*((left(curr) != 0)+(up(curr) != 0)))*(t == 1)
+                    + ( 40 + 20*((left(curr) != 0)+(up(curr) != 0)))*(t == 2))
         
         def iter_backtracking(i, e):
             result = 0
@@ -81,12 +79,10 @@ class Solution2(object):
 
         def count_total(curr, t, total):
             return (total
-                    - 30*(left(curr) == 1)
-                    - 30*(up(curr) == 1)
-                    + 20*(left(curr) == 2)
-                    + 20*(up(curr) == 2)
-                    + (120 - 30*(left(curr) != 0) - 30*(up(curr) != 0))*(t == 1)
-                    + (40 + 20*(left(curr) != 0) + 20*(up(curr) != 0))*(t == 2))
+                    - 30*((left(curr) == 1)+(up(curr) == 1))
+                    + 20*((left(curr) == 2)+(up(curr) == 2))
+                    + (120 - 30*((left(curr) != 0)+(up(curr) != 0)))*(t == 1)
+                    + ( 40 + 20*((left(curr) != 0)+(up(curr) != 0)))*(t == 2))
         
         def backtracking(curr, i, e, total, result):
             if i < 0 or e < 0:
