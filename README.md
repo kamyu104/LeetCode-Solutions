@@ -907,7 +907,6 @@
 1611| [Minimum One Bit Operations to Make Integers Zero](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/)     | [C++](./C++/minimum-one-bit-operations-to-make-integers-zero.cpp) [Python](./Python/minimum-one-bit-operations-to-make-integers-zero.py)  | _O(logn)_        | _O(1)_          | Hard         | variant of [Gray Code](https://leetcode.com/problems/gray-code/) |
 1641| [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/) | [C++](./C++/count-sorted-vowel-strings.cpp) [Python](./Python/count-sorted-vowel-strings.py) | _O(1)_ | _O(1)_ |  Medium | | Binomial Coefficients
 1643| [Kth Smallest Instructions](https://leetcode.com/problems/kth-smallest-instructions/) | [C++](./C++/kth-smallest-instructions.cpp) [Python](./Python/kth-smallest-instructions.py) | _O((m + n)^2)_ | _O(1)_ |  Hard | | Binomial Coefficients
-1658| [Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | [C++](./C++/minimum-operations-to-reduce-x-to-zero.cpp) [Python](./Python/minimum-operations-to-reduce-x-to-zero.py) | _O(n)_ | _O(1)_ |  Medium | |
 
 <br/>
 <div align="right">
@@ -1027,6 +1026,7 @@
 1508| [Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/) |[C++](./C++/range-sum-of-sorted-subarray-sums.cpp)  [Python](./Python/range-sum-of-sorted-subarray-sums.py) | _O(nlog(sum(nums)))_ | _O(n)_ | Medium         | | Binary Search, Two Pointers, Sliding Window
 1521| [Find a Value of a Mysterious Function Closest to Target](https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target/)| [C++](./C++/find-a-value-of-a-mysterious-function-closest-to-target.cpp) [Python](./Python/find-a-value-of-a-mysterious-function-closest-to-target.py) | _O(nlogm)_    | _O(logm)_          | Hard           || DP, Two Pointers, Sliding Window
 1604 | [Alert Using Same Key-Card Three or More Times in a One Hour Period](https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/) | [C++](./C++/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period.cpp) [Python](./Python/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period.py) | _O(nlogn)_ | _O(n)_ | Medium | | Two Pointers, Sliding Window |
+1658| [Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | [C++](./C++/minimum-operations-to-reduce-x-to-zero.cpp) [Python](./Python/minimum-operations-to-reduce-x-to-zero.py) | _O(n)_ | _O(1)_ |  Medium | | Two Pointers |
 
 <br/>
 <div align="right">
