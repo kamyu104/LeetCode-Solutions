@@ -84,7 +84,7 @@ class Solution2(object):
                     + (120 - 30*((left(curr) != 0)+(up(curr) != 0)))*(t == 1)
                     + ( 40 + 20*((left(curr) != 0)+(up(curr) != 0)))*(t == 2))
         
-        def backtracking(curr, i, e, total, result):
+        def backtracking(i, e, total, curr, result):
             if i < 0 or e < 0:
                 return                
             if len(curr) == m*n or (i == 0 and e == 0):
@@ -94,19 +94,19 @@ class Solution2(object):
                 return
             if left(curr) or up(curr):  # leave unoccupied iff left or up is occupied
                 curr.append(0)
-                backtracking(curr, i, e, total, result)
+                backtracking(i, e, total, curr, result)
                 curr.pop()
 
             new_total = count_total(curr, 1, total)
             curr.append(1)
-            backtracking(curr, i-1, e, new_total, result)
+            backtracking(i-1, e, new_total, curr, result)
             curr.pop()
             
             new_total = count_total(curr, 2, total)
             curr.append(2)
-            backtracking(curr, i, e-1, new_total, result)
+            backtracking(i, e-1, new_total, curr, result)
             curr.pop()
 
         result = [0]
-        backtracking([], introvertsCount, extrovertsCount, 0, result)
+        backtracking(introvertsCount, extrovertsCount, 0, [], result)
         return result[0]
