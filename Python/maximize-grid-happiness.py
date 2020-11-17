@@ -25,28 +25,29 @@ class Solution(object):
         
         def iter_backtracking(i, e):
             result = 0
-            stk = [(2, ([], i, e, 0))]
+            curr = []
+            stk = [(2, (i, e, 0))]
             while stk:
                 step, params = stk.pop()
                 if step == 2:
-                    curr, i, e, total = params             
+                    i, e, total = params             
                     if len(curr) == m*n or (i == 0 and e == 0):
                         result = max(result, total)                
                         continue
                     if total + (i+e)*120 < result:  # pruning
                         continue
                     if e > 0:
-                        stk.append((3, (curr,)))
-                        stk.append((2, (curr, i, e-1, count_total(curr, 2, total))))
-                        stk.append((1, (curr, 2)))
+                        stk.append((3, tuple()))
+                        stk.append((2, (i, e-1, count_total(curr, 2, total))))
+                        stk.append((1, (2,)))
                     if i > 0:
-                        stk.append((3, (curr,)))
-                        stk.append((2, (curr, i-1, e, count_total(curr, 1, total))))
-                        stk.append((1, (curr, 1)))
+                        stk.append((3, tuple()))
+                        stk.append((2, (i-1, e, count_total(curr, 1, total))))
+                        stk.append((1, (1,)))
                     if left(curr) or up(curr):  # leave unoccupied iff left or up is occupied
-                        stk.append((3, (curr,)))
-                        stk.append((2, (curr, i, e, total)))
-                        stk.append((1, (curr, 0)))
+                        stk.append((3, tuple()))
+                        stk.append((2, (i, e, total)))
+                        stk.append((1, (0,)))
                 elif step == 1:
                     curr, x = params
                     curr.append(x)
@@ -60,7 +61,7 @@ class Solution(object):
 
 # Time:  O(C(m * n, i) * C(m * n - i, e))
 # Space: O(min(m * n, i + e))
-class Solution2(object):
+class Solution(object):
     def getMaxGridHappiness(self, m, n, introvertsCount, extrovertsCount):
         """
         :type m: int
