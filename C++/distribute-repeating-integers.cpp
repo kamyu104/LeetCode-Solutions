@@ -35,8 +35,8 @@ public:
             // => Time: O(3^m), see https://cp-algorithms.com/algebra/all-submasks.html
             for (int mask = total; mask >= 0; --mask) {
                 dp[(i + 1) % 2][mask] |= dp[i % 2][mask];
-                for (int subMask = mask; subMask > 0; subMask = (subMask - 1) & mask) {
-                    if (requirement[subMask] <= cnts[i] && dp[i % 2][mask ^ subMask]) {
+                for (int submask = mask; submask > 0; submask = (submask - 1) & mask) {
+                    if (requirement[submask] <= cnts[i] && dp[i % 2][mask ^ submask]) {
                         dp[(i + 1) % 2][mask] = 1;
                     }
                 }
