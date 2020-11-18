@@ -61,10 +61,10 @@ class Solution(object):
             # => Time: O(3^m), see https://cp-algorithms.com/algebra/all-submasks.html
             for mask in reversed(xrange(total+1)):
                 dp[(i+1)%2][mask] |= dp[i%2][mask]
-                sub_mask = mask
-                while sub_mask > 0:
-                    if requirement[sub_mask] <= cnt and dp[i%2][mask^sub_mask]:
+                submask = mask
+                while submask > 0:
+                    if requirement[submask] <= cnt and dp[i%2][mask^submask]:
                         dp[(i+1)%2][mask] = 1
-                    sub_mask = (sub_mask-1)&mask
+                    submask = (submask-1)&mask
             i += 1
         return dp[len(cnts)%2][total]
