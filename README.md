@@ -1534,7 +1534,7 @@
 1617| [Count Subtrees With Max Distance Between Cities](https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities/)| [C++](./C++/count-subtrees-with-max-distance-between-cities.cpp) [Python](./Python/count-subtrees-with-max-distance-between-cities.py) | _O(n^6)_    | _O(n^3)_          | Hard           || Backtracking, Graph
 1626| [Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts/)| [C++](./C++/best-team-with-no-conflicts.cpp) [Python](./Python/best-team-with-no-conflicts.py) | _O(nloga)_    | _O(n)_          | Medium           | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Sort, DP, Segment Tree
 1639| [Number of Ways to Form a Target String Given a Dictionary](https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/)| [C++](./C++/number-of-ways-to-form-a-target-string-given-a-dictionary.cpp) [Python](./Python/number-of-ways-to-form-a-target-string-given-a-dictionary.py) | _O(l * (w + n))_    | _O(n)_          | Hard           | | 
-1655| [Distribute Repeating Integers](https://leetcode.com/problems/distribute-repeating-integers/)| [C++](./C++/distribute-repeating-integers.cpp) [Python](./Python/distribute-repeating-integers.py) | _O(n + m * 3^m)_    | _O(n + 2^m)_          | Hard           | | 
+1655| [Distribute Repeating Integers](https://leetcode.com/problems/distribute-repeating-integers/)| [C++](./C++/distribute-repeating-integers.cpp) [Python](./Python/distribute-repeating-integers.py) | _O(n + m * 3^m)_    | _O(n + 2^m)_          | Hard           | | Submask Enumeration
 
 <br/>
 <div align="right">
