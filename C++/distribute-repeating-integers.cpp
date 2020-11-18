@@ -30,7 +30,9 @@ public:
         }
         for (int i = 0; i < size(cnts); ++i) {  // Time: O(m)
             dp[(i + 1) % 2] = vector<int>(total + 1);
-            // Time: O(3^m), see https://cp-algorithms.com/algebra/all-submasks.html
+            // submask enumeration:
+            // => sum(nCr(m, k) * 2^k for k in xrange(m)) = (1 + 2)^m = 3^m
+            // => Time: O(3^m), see https://cp-algorithms.com/algebra/all-submasks.html
             for (int mask = total; mask >= 0; --mask) {
                 dp[(i + 1) % 2][mask] |= dp[i % 2][mask];
                 for (int subMask = mask; subMask > 0; subMask = (subMask - 1) & mask) {
