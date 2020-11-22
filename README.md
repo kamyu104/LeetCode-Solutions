@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1661%20%2F%201661-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1665%20%2F%201665-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -429,6 +429,7 @@
 1614| [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/) | [C++](./C++/maximum-nesting-depth-of-the-parentheses.cpp) [Python](./Python/maximum-nesting-depth-of-the-parentheses.py) | _O(n)_ | _O(1)_ | Easy |||
 1624| [Largest Substring Between Two Equal Characters](https://leetcode.com/problems/largest-substring-between-two-equal-characters/) | [C++](./C++/largest-substring-between-two-equal-characters.cpp) [Python](./Python/largest-substring-between-two-equal-characters.py) | _O(n)_ | _O(1)_ | Easy |||
 1638| [Count Substrings That Differ by One Character](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/) | [C++](./C++/count-substrings-that-differ-by-one-character.cpp) [Python](./Python/count-substrings-that-differ-by-one-character.py) | _O(m * n)_ | _O(1)_ | Medium | variant of [Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) | Tricky |
+1662| [Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/) | [C++](./C++/check-if-two-string-arrays-are-equivalent.cpp) [Python](./Python/check-if-two-string-arrays-are-equivalent.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -1536,6 +1537,7 @@
 1626| [Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts/)| [C++](./C++/best-team-with-no-conflicts.cpp) [Python](./Python/best-team-with-no-conflicts.py) | _O(nloga)_    | _O(n)_          | Medium           | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Sort, DP, Segment Tree
 1639| [Number of Ways to Form a Target String Given a Dictionary](https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/)| [C++](./C++/number-of-ways-to-form-a-target-string-given-a-dictionary.cpp) [Python](./Python/number-of-ways-to-form-a-target-string-given-a-dictionary.py) | _O(l * (w + n))_    | _O(n)_          | Hard           | | 
 1655| [Distribute Repeating Integers](https://leetcode.com/problems/distribute-repeating-integers/)| [C++](./C++/distribute-repeating-integers.cpp) [Python](./Python/distribute-repeating-integers.py) | _O(n + m * 3^m)_    | _O(n + 2^m)_          | Hard           | | Submask Enumeration
+1664| [Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/)| [C++](./C++/ways-to-make-a-fair-array.cpp) [Python](./Python/ways-to-make-a-fair-array.py) | _O(n)_    | _O(1)_          | Medium           | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -1638,6 +1640,8 @@
 1632 | [Rank Transform of a Matrix](https://leetcode.com/problems/rank-transform-of-a-matrix/) | [C++](./C++/rank-transform-of-a-matrix.cpp) [Python](./Python/rank-transform-of-a-matrix.py) | _O(m * n * log(m * n))_ | _O(m * n)_ | Hard || Union Find
 1647 | [Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/) | [C++](./C++/minimum-deletions-to-make-character-frequencies-unique.cpp) [Python](./Python/minimum-deletions-to-make-character-frequencies-unique.py) | _O(n)_ | _O(1)_ | Medium ||
 1653 | [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | [C++](./C++/minimum-deletions-to-make-string-balanced.cpp) [Python](./Python/minimum-deletions-to-make-string-balanced.py) | _O(n)_ | _O(1)_ | Medium ||
+1663 | [Smallest String With A Given Numeric Value](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/) | [C++](./C++/smallest-string-with-a-given-numeric-value.cpp) [Python](./Python/smallest-string-with-a-given-numeric-value.py) | _O(n)_ | _O(1)_ | Medium ||
+1665 | [Minimum Initial Energy to Finish Tasks](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/) | [C++](./C++/minimum-initial-energy-to-finish-tasks.cpp) [Python](./Python/minimum-initial-energy-to-finish-tasks.py) | _O(nlogn)_ | _O(1)_ | Hard ||
 
 <br/>
 <div align="right">
