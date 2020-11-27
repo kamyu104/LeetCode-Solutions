@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1665%20%2F%201665-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1666%20%2F%201666-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -664,6 +664,7 @@
 1530 | [Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/)| [C++](./C++/number-of-good-leaf-nodes-pairs.cpp) [Python](./Python/number-of-good-leaf-nodes-pairs.py) | _O(n)_ | _O(h)_ | Medium | | DFS, Stack
 1612 | [Check If Two Expression Trees are Equivalent](https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/)  | [C++](./C++/check-if-two-expression-trees-are-equivalent.cpp) [Python](./Python/check-if-two-expression-trees-are-equivalent.py) | _O(n)_| _O(1)_| Medium           |🔒| `Morris Traversal`, Inorder Traversal, Stack, Hash Table | 
 1649|[Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions/)| [C++](./C++/create-sorted-array-through-instructions.cpp) [Python](./Python/create-sorted-array-through-instructions.py)| _O(nlogn)_ | _O(n)_ | Hard | variant of [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | BIT, Fenwick Tree, Merge Sort |
+1666 | [Change the Root of a Binary Tree](https://leetcode.com/problems/change-the-root-of-a-binary-tree/)  | [C++](./C++/change-the-root-of-a-binary-tree.cpp) [Python](./Python/change-the-root-of-a-binary-tree.py) | _O(h)_| _O(1)_| Medium           |🔒| | 
 
 <br/>
 <div align="right">
