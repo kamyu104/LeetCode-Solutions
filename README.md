@@ -1898,7 +1898,7 @@
 1645| [Hopper Company Queries II](https://leetcode.com/problems/hopper-company-queries-ii/) | [MySQL](./MySQL/hopper-company-queries-ii.sql) | _O(d + r + tlogt)_ | _O(d + r + t)_       | Hard           |🔒||
 1651| [Hopper Company Queries III](https://leetcode.com/problems/hopper-company-queries-iii/) | [MySQL](./MySQL/hopper-company-queries-iii.sql) | _O(d + r + tlogt)_ | _O(d + r + t)_       | Hard           |🔒||
 1661| [Average Time of Process per Machine](https://leetcode.com/problems/average-time-of-process-per-machine/) | [MySQL](./MySQL/average-time-of-process-per-machine.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
-1667| [Change the Root of a Binary Tree](https://leetcode.com/problems/fix-names-in-a-table/) | [MySQL](./MySQL/fix-names-in-a-table.sql) | _O(h)_ | _O(1)_       | Easy           |🔒||
+1667| [Fix Names in a Table](https://leetcode.com/problems/fix-names-in-a-table/) | [MySQL](./MySQL/fix-names-in-a-table.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
