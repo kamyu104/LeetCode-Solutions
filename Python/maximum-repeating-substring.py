@@ -63,7 +63,7 @@ class Solution2(object):
 
         new_word = word*(len(sequence)//len(word))
         prefix = getPrefix(new_word)
-        result, j, prev = 0, -1, -1
+        result, j = 0, -1
         for i in xrange(len(sequence)):
             while j > -1 and new_word[j+1] != sequence[i]:
                 j = prefix[j]
