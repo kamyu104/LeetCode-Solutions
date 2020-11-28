@@ -28,9 +28,9 @@ public:
 
 private:
     vector<int> getPrefix(const string& pattern) {
-        vector<int> prefix(pattern.length(), -1);
+        vector<int> prefix(size(pattern), -1);
         int j = -1;
-        for (int i = 1; i < pattern.length(); ++i) {
+        for (int i = 1; i < size(pattern); ++i) {
             while (j > -1 && pattern[j + 1] != pattern[i]) {
                 j = prefix[j];
             }
@@ -75,9 +75,9 @@ public:
 
 private:
     vector<int> getPrefix(const string& pattern) {
-        vector<int> prefix(pattern.length(), -1);
+        vector<int> prefix(size(pattern), -1);
         int j = -1;
-        for (int i = 1; i < pattern.length(); ++i) {
+        for (int i = 1; i < size(pattern); ++i) {
             while (j > -1 && pattern[j + 1] != pattern[i]) {
                 j = prefix[j];
             }
