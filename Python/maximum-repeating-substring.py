@@ -1,5 +1,5 @@
-# Time:  O(n)
-# Space: O(m)
+# Time:  O(n), n is the length of sequence
+# Space: O(m), m is the length of word
 
 # optimized kmp solution
 class Solution(object):
@@ -37,7 +37,7 @@ class Solution(object):
         return result
 
 
-# Time:  O(n)
+# Time:  O(n), n is the length of sequence
 # Space: O(n)
 # kmp solution
 class Solution2(object):
