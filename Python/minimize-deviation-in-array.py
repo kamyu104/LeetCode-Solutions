@@ -1,6 +1,9 @@
 # Time:  O((n * log(max_num)) * logn)
 # Space: O(n)
 
+import heapq
+
+
 class Solution(object):
     def minimumDeviation(self, nums):
         """
