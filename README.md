@@ -1648,7 +1648,7 @@
 1653 | [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | [C++](./C++/minimum-deletions-to-make-string-balanced.cpp) [Python](./Python/minimum-deletions-to-make-string-balanced.py) | _O(n)_ | _O(1)_ | Medium ||
 1663 | [Smallest String With A Given Numeric Value](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/) | [C++](./C++/smallest-string-with-a-given-numeric-value.cpp) [Python](./Python/smallest-string-with-a-given-numeric-value.py) | _O(n)_ | _O(1)_ | Medium ||
 1665 | [Minimum Initial Energy to Finish Tasks](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/) | [C++](./C++/minimum-initial-energy-to-finish-tasks.cpp) [Python](./Python/minimum-initial-energy-to-finish-tasks.py) | _O(nlogn)_ | _O(1)_ | Hard ||
-1673 | [Find the Most Competitive Subsequence](https://leetcode.com/problems/find-the-most-competitive-subsequence/) | [C++](./C++/find-the-most-competitive-subsequence.cpp) [Python](./Python/find-the-most-competitive-subsequence.py) | _O(n)_ | _O(k)_ | Meidum | Stack, Greedy |
+1673 | [Find the Most Competitive Subsequence](https://leetcode.com/problems/find-the-most-competitive-subsequence/) | [C++](./C++/find-the-most-competitive-subsequence.cpp) [Python](./Python/find-the-most-competitive-subsequence.py) | _O(n)_ | _O(k)_ | Meidum || Stack, Greedy
 1674 | [Minimum Moves to Make Array Complementary](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/) | [C++](./C++/minimum-moves-to-make-array-complementary.cpp) [Python](./Python/minimum-moves-to-make-array-complementary.py) | _O(n + k)_ | _O(k)_ | Meidum ||
 
 <br/>
