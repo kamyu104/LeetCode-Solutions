@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1675%20%2F%201675-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1676%20%2F%201676-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1302,6 +1302,8 @@
 1391| [Check if There is a Valid Path in a Grid](https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/) | [C++](./C++/check-if-there-is-a-valid-path-in-a-grid.cpp) [Python](./Python/check-if-there-is-a-valid-path-in-a-grid.py) | _O(m * n)_          | _O(1)_          | Medium           || Simulation |
 1466| [Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | [C++](./C++/reorder-routes-to-make-all-paths-lead-to-the-city-zero.cpp) [Python](./Python/reorder-routes-to-make-all-paths-lead-to-the-city-zero.py) | _O(n)_          | _O(n)_          | Medium           || DFS, Stack |
 1485| [Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer/) | [C++](./C++/clone-binary-tree-with-random-pointer.cpp) [Python](./Python/clone-binary-tree-with-random-pointer.py) | _O(n)_          | _O(h)_          | Medium           |🔒| DFS, Stack |
+1644| [Lowest Common Ancestor of a Binary Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/) | [C++](./C++/lowest-common-ancestor-of-a-binary-tree-ii.cpp) [Python](./Python/lowest-common-ancestor-of-a-binary-tree-ii.py) | _O(n)_          | _O(h)_          | Medium           |🔒| DFS, Stack |
+1676| [Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/) | [C++](./C++/lowest-common-ancestor-of-a-binary-tree-iv.cpp) [Python](./Python/lowest-common-ancestor-of-a-binary-tree-iv.py) | _O(n)_          | _O(h)_          | Medium           |🔒| DFS, Stack |
 
 <br/>
 <div align="right">
