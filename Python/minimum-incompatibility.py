@@ -1,4 +1,4 @@
-# Time:  O(nlogn + k^2)
+# Time:  O(nlogn + k * n)
 # Space: O(n)
 
 import collections
@@ -22,14 +22,14 @@ class Solution(object):
                     continue
                 for i in xrange(len(stks)):
                     stks[i].append(x)
-                sorted_keys.remove(x)
+                sorted_keys.remove(x)  # O(k)
             curr = 0
             while sorted_keys:
                 for i, x in enumerate(sorted_keys[:]):
                     stks[curr].append(x)
                     count[x] -= 1
                     if not count[x]:
-                        sorted_keys.remove(x)
+                        sorted_keys.remove(x)  # O(k)
                     if len(stks[curr]) == len(nums)//k:  # total time = O(n/k * k) = O(n)
                         curr += 1
                         for x in sorted_keys[:]:
