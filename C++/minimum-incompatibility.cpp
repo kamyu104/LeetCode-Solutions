@@ -12,7 +12,7 @@ public:
             if (__builtin_popcount(mask) % (size(nums) / k) != 0) {
                 continue;
             }
-			// submask enumeration:
+            // submask enumeration:
             // => sum(nCr(m, k) * 2^k for k in xrange(m+1)) = (1 + 2)^m = 3^m
             // => Time: O(3^m), see https://cp-algorithms.com/algebra/all-submasks.html
             for (int submask = mask; submask; submask = (submask - 1) & mask) {
