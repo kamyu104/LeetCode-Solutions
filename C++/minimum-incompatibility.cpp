@@ -14,44 +14,39 @@ private:
         for (const auto& num : nums) {
             ++count[num];
         }
-        for (const auto& [_, v] : count) {
-            if (v > k) {
+        for (const auto& [_, cnt] : count) {
+            if (cnt > k) {
                 return -1;
             }
         }
+        
         vector<vector<int>> stks(k);
-        for (auto it = begin(count); it != end(count);) {
-            if (it->second != size(stks)) {
-                ++it;
-                continue;
-            }
-            for (auto& stk : stks) {
-                stk.emplace_back(it->first);
-            }
-            it = count.erase(it);  // O(logk)
-        }
         int curr = 0;
-        while (!empty(count)) {
-            for (auto it = begin(count); it != end(count);) {
-                stks[curr].emplace_back(it->first);
-                --it->second;
-                if (!count[it->first]) {
-                    it = count.erase(it);  // O(logk)
-                } else {
-                    ++it;
+        int remain = size(nums);
+        const auto fill = [&count, &stks, &curr, &remain]() {
+                              for (auto& [x, cnt] : count) {
+                                  if (cnt != size(stks) - curr) {
+                                      continue;
+                                  }
+                                  for (int i = curr; i < size(stks); ++i) {
+                                      stks[i].emplace_back(x);
+                                  }
+                                  remain -= cnt;
+                                  cnt = 0;
+                              }
+                          };
+        fill();
+        while (remain) {
+            for (auto& [x, cnt] : count) {
+                if (!cnt) {
+                    continue;
                 }
-                if (size(stks[curr]) == size(nums) / k) {  // total time = O(n * k)
+                stks[curr].emplace_back(x);
+                --remain;
+                --cnt;
+                if (size(stks[curr]) == size(nums) / k) { 
                     ++curr;
-                    for (auto jt = begin(count); jt != end(count);) {
-                        if (jt->second != size(stks) - curr) {
-                            ++jt;
-                            continue;
-                        }
-                        for (int i = curr; i < size(stks); ++i) {
-                            stks[i].emplace_back(jt->first);
-                        }
-                        jt = count.erase(jt);
-                    }
+                    fill();
                     break;
                 }
             }
