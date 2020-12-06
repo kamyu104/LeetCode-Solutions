@@ -1,7 +1,71 @@
-// Time:  O(max(n * 2^n, 3^n))
-// Space: O(2^n)
+// Time:  O(nlogn)
+// Space: O(n)
 
 class Solution {
+public:
+    int minimumIncompatibility(vector<int>& nums, int k) {
+        return min(greedy<less<int>>(nums, k), greedy<greater<int>>(nums, k));
+    }
+
+private:
+    template<typename T>
+    int greedy(const vector<int>& nums, int k) {
+        map<int, int, T> count;
+        for (const auto& num : nums) {
+            ++count[num];
+        }
+        for (const auto& [_, v] : count) {
+            if (v > k) {
+                return -1;
+            }
+        }
+        vector<vector<int>> stks(k);
+        for (auto it = begin(count); it != end(count);) {
+            if (it->second != size(stks)) {
+                ++it;
+                continue;
+            }
+            for (auto& stk : stks) {
+                stk.emplace_back(it->first);
+            }
+            it = count.erase(it);
+        }
+        int curr = 0;
+        while (!empty(count)) {
+            for (auto it = begin(count); it != end(count);) {
+                stks[curr].emplace_back(it->first);
+                --it->second;
+                if (!count[it->first]) {
+                    it = count.erase(it);
+                } else {
+                    ++it;
+                }
+                if (size(stks[curr]) == size(nums) / k) { 
+                    ++curr;
+                    for (auto jt = begin(count); jt != end(count);) {
+                        if (jt->second != size(stks) - curr) {
+                            ++jt;
+                            continue;
+                        }
+                        for (int i = curr; i < size(stks); ++i) {
+                            stks[i].emplace_back(jt->first);
+                        }
+                        jt = count.erase(jt);
+                    }
+                    break;
+                }
+            }
+        }
+        return accumulate(cbegin(stks), cend(stks), 0,
+                          [](const auto& a, const auto& b) {
+                              return a + (*max_element(cbegin(b), cend(b)) - *min_element(cbegin(b), cend(b)));
+                          });
+    }
+};
+
+// Time:  O(max(n * 2^n, 3^n))
+// Space: O(2^n)
+class Solution2 {
 public:
     int minimumIncompatibility(vector<int>& nums, int k) {
         const vector<int> candidates = findCandidates(nums, k);  // Time: O(n * 2^n)
