@@ -23,20 +23,17 @@ private:
         vector<vector<int>> stks(k);
         int curr = 0;
         int remain = size(nums);
-        const auto fill = [&count, &stks, &curr, &remain]() {
-                              for (auto& [x, cnt] : count) {
-                                  if (cnt != size(stks) - curr) {
-                                      continue;
-                                  }
-                                  for (int i = curr; i < size(stks); ++i) {
-                                      stks[i].emplace_back(x);
-                                  }
-                                  remain -= cnt;
-                                  cnt = 0;
-                              }
-                          };
-        fill();
         while (remain) {
+            for (auto& [x, cnt] : count) {
+                if (cnt != size(stks) - curr) {
+                    continue;
+                }
+                for (int i = curr; i < size(stks); ++i) {
+                    stks[i].emplace_back(x);
+                }
+                remain -= cnt;
+                cnt = 0;
+            }
             for (auto& [x, cnt] : count) {
                 if (!cnt) {
                     continue;
@@ -46,7 +43,6 @@ private:
                 --cnt;
                 if (size(stks[curr]) == size(nums) / k) { 
                     ++curr;
-                    fill();
                     break;
                 }
             }
