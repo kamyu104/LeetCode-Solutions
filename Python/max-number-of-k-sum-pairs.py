@@ -11,14 +11,12 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        lookup = collections.Counter(nums)
+        count = collections.Counter()
         result = 0
-        for num, cnt in lookup.iteritems():
-            if k-num == num:
-                result += cnt//2
-            elif k-num in lookup:
-                cnt = min(cnt, lookup[k-num])
-                result += cnt
-                lookup[num] -= cnt
-                lookup[k-num] -= cnt
+        for x in nums:
+            if k-x in count and count[k-x]:
+                count[k-x] -= 1
+                result += 1
+            else:
+                count[x] += 1
         return result
