@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1676%20%2F%201676-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1681%20%2F%201681-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -432,6 +432,7 @@
 1638| [Count Substrings That Differ by One Character](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/) | [C++](./C++/count-substrings-that-differ-by-one-character.cpp) [Python](./Python/count-substrings-that-differ-by-one-character.py) | _O(m * n)_ | _O(1)_ | Medium | variant of [Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) | Tricky |
 1662| [Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/) | [C++](./C++/check-if-two-string-arrays-are-equivalent.cpp) [Python](./Python/check-if-two-string-arrays-are-equivalent.py) | _O(n)_ | _O(1)_ | Easy |||
 1668| [Maximum Repeating Substring](https://leetcode.com/problems/maximum-repeating-substring/) | [C++](./C++/maximum-repeating-substring.cpp) [Python](./Python/maximum-repeating-substring.py) | _O(n)_ | _O(m)_ | Easy || `KMP Algorithm` |
+1678| [Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/) | [C++](./C++/goal-parser-interpretation.cpp) [Python](./Python/goal-parser-interpretation.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -757,6 +758,7 @@
 1590| [Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p/) |[C++](./C++/make-sum-divisible-by-p.cpp)  [Python](./Python/make-sum-divisible-by-p.py) | _O(n)_ | _O(p)_ | Medium         | variant of [Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/) |
 1640| [Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/) | [C++](./C++/check-array-formation-through-concatenation.cpp) [Python](./Python/check-array-formation-through-concatenation.py) | _O(n)_   | _O(n)_        | Easy         ||
 1657| [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/) | [C++](./C++/determine-if-two-strings-are-close.cpp) [Python](./Python/determine-if-two-strings-are-close.py) | _O(n)_   | _O(1)_        | Medium         ||
+1679| [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/) | [C++](./C++/max-number-of-k-sum-pairs.cpp) [Python](./Python/max-number-of-k-sum-pairs.py) | _O(n)_   | _O(n)_        | Medium         ||
 
 <br/>
 <div align="right">
@@ -966,6 +968,7 @@
 1630| [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/) | [C++](./C++/arithmetic-subarrays.cpp) [Python](./Python/arithmetic-subarrays.py) | _O(n * q)_ | _O(n)_| Medium | | Arithmetic Series
 1636| [Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/) | [C++](./C++/sort-array-by-increasing-frequency.cpp) [Python](./Python/sort-array-by-increasing-frequency.py) | _O(nlogn)_ | _O(n)_| Easy | |
 1637| [Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/) | [C++](./C++/widest-vertical-area-between-two-points-containing-no-points.cpp) [Python](./Python/widest-vertical-area-between-two-points-containing-no-points.py) | _O(nlogn)_ | _O(n)_| Medium | |
+1680| [Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/) | [C++](./C++/concatenation-of-consecutive-binary-numbers.cpp) [Python](./Python/concatenation-of-consecutive-binary-numbers.py) | _O(n)_ | _O(1)_| Medium | |
 
 <br/>
 <div align="right">
@@ -1546,6 +1549,7 @@
 1639| [Number of Ways to Form a Target String Given a Dictionary](https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/)| [C++](./C++/number-of-ways-to-form-a-target-string-given-a-dictionary.cpp) [Python](./Python/number-of-ways-to-form-a-target-string-given-a-dictionary.py) | _O(l * (w + n))_    | _O(n)_          | Hard           | | 
 1655| [Distribute Repeating Integers](https://leetcode.com/problems/distribute-repeating-integers/)| [C++](./C++/distribute-repeating-integers.cpp) [Python](./Python/distribute-repeating-integers.py) | _O(n + m * 3^m)_    | _O(n + 2^m)_          | Hard           | | Submask Enumeration
 1664| [Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/)| [C++](./C++/ways-to-make-a-fair-array.cpp) [Python](./Python/ways-to-make-a-fair-array.py) | _O(n)_    | _O(1)_          | Medium           | | Prefix Sum
+1681| [Minimum Incompatibility](https://leetcode.com/problems/minimum-incompatibility/)| [C++](./C++/minimum-incompatibility.cpp) [Python](./Python/minimum-incompatibility.py) | _O(max(n * 2^n, 3^n))_    | _O(2^n)_          | Medium           | | Backtracking
 
 <br/>
 <div align="right">
@@ -1909,6 +1913,7 @@
 1651| [Hopper Company Queries III](https://leetcode.com/problems/hopper-company-queries-iii/) | [MySQL](./MySQL/hopper-company-queries-iii.sql) | _O(d + r + tlogt)_ | _O(d + r + t)_       | Hard           |🔒||
 1661| [Average Time of Process per Machine](https://leetcode.com/problems/average-time-of-process-per-machine/) | [MySQL](./MySQL/average-time-of-process-per-machine.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1667| [Fix Names in a Table](https://leetcode.com/problems/fix-names-in-a-table/) | [MySQL](./MySQL/fix-names-in-a-table.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+1677| [Product's Worth Over Invoices](https://leetcode.com/problems/products-worth-over-invoices/) | [MySQL](./MySQL/products-worth-over-invoices.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
