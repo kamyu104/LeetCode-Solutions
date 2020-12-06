@@ -1,10 +1,55 @@
-# Time:  O(sum(i*d * nCr(i*d, d) * nCr(n, i*d) for i in xrange(1, k+1))) < O(sum(n * 2^m * nCr(n, m) for m in xrange(n+1))) = O(n * 3^n)
-# Space: O(n * k)
+# Time:  O(nlogn + k^2)
+# Space: O(n)
 
-import itertools
+import collections
 
 
 class Solution(object):
+    def minimumIncompatibility(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        def greedy(nums, k, is_reversed):
+            count = collections.Counter(nums)
+            if max(count.itervalues()) > k:
+                return -1
+            sorted_keys = sorted(count.keys(), reverse=is_reversed)
+            stks = [[] for _ in xrange(k)] 
+            for x in sorted_keys[:]:
+                if count[x] != len(stks):
+                    continue
+                for i in xrange(len(stks)):
+                    stks[i].append(x)
+                sorted_keys.remove(x)
+            curr = 0
+            while sorted_keys:
+                for i, x in enumerate(sorted_keys[:]):
+                    stks[curr].append(x)
+                    count[x] -= 1
+                    if not count[x]:
+                        sorted_keys.remove(x)
+                    if len(stks[curr]) == len(nums)//k:  # total time = O(n/k * k) = O(n)
+                        curr += 1
+                        for x in sorted_keys[:]:
+                            if count[x] != len(stks)-curr:
+                                continue
+                            for i in xrange(curr, len(stks)):
+                                stks[i].append(x)
+                            sorted_keys.remove(x)
+                        break
+            return sum([max(stk)-min(stk) for stk in stks])
+
+        return min(greedy(nums, k, False), greedy(nums, k, True)) 
+
+
+# Time:  O(sum(i*d * nCr(i*d, d) * nCr(n, i*d) for i in xrange(1, k+1))) < O(sum(n * 2^m * nCr(n, m) for m in xrange(n+1))) = O(n * 3^n)
+# Space: O(n * k)
+import itertools
+
+
+class Solution2(object):
     def minimumIncompatibility(self, nums, k):
         """
         :type nums: List[int]
