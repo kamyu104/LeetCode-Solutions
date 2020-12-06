@@ -57,7 +57,7 @@ class Solution(object):
         for cnt in cnts:  # Time: O(m)
             dp[(i+1)%2] = [0]*(total+1)
             # submask enumeration:
-            # => sum(nCr(m, k) * 2^k for k in xrange(m)) = (1 + 2)^m = 3^m
+            # => sum(nCr(m, k) * 2^k for k in xrange(m+1)) = (1 + 2)^m = 3^m
             # => Time: O(3^m), see https://cp-algorithms.com/algebra/all-submasks.html
             for mask in reversed(xrange(total+1)):
                 dp[(i+1)%2][mask] |= dp[i%2][mask]
