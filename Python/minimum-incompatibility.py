@@ -83,8 +83,8 @@ class Solution_TLE(object):
             if popcount(mask) % m != 0:
                 continue
             # submask enumeration:
-            # => sum(nCr(m, k) * 2^k for k in xrange(m+1)) = (1 + 2)^m = 3^m
-            # => Time: O(3^m), see https://cp-algorithms.com/algebra/all-submasks.html
+            # => sum(nCr(n, k) * 2^k for k in xrange(n+1)) = (1 + 2)^n = 3^n
+            # => Time: O(3^n), see https://cp-algorithms.com/algebra/all-submasks.html
             submask = mask
             while submask:
                 dp[mask] = min(dp[mask], dp[mask-submask] + candidates[submask])
