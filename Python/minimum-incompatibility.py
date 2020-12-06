@@ -1,6 +1,9 @@
 # Time:  O(sum(i*d * nCr(i*d, d) * nCr(n, i*d) for i in xrange(1, k+1))) < O(sum(n * 2^m * nCr(n, m) for m in xrange(n+1))) = O(n * 3^n)
 # Space: O(n * k)
 
+import itertools
+
+
 class Solution(object):
     def minimumIncompatibility(self, nums, k):
         """
