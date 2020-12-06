@@ -1,4 +1,4 @@
-// Time:  O(nlogn + klogk) = O(nlogn)
+// Time:  O(nlogn + k * n)
 // Space: O(n)
 
 class Solution {
@@ -40,7 +40,7 @@ private:
                 } else {
                     ++it;
                 }
-                if (size(stks[curr]) == size(nums) / k) {  // total time = O(n/k * k) = O(n)
+                if (size(stks[curr]) == size(nums) / k) {  // total time = O(n * k)
                     ++curr;
                     for (auto jt = begin(count); jt != end(count);) {
                         if (jt->second != size(stks) - curr) {
