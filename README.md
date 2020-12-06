@@ -1549,7 +1549,7 @@
 1639| [Number of Ways to Form a Target String Given a Dictionary](https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/)| [C++](./C++/number-of-ways-to-form-a-target-string-given-a-dictionary.cpp) [Python](./Python/number-of-ways-to-form-a-target-string-given-a-dictionary.py) | _O(l * (w + n))_    | _O(n)_          | Hard           | | 
 1655| [Distribute Repeating Integers](https://leetcode.com/problems/distribute-repeating-integers/)| [C++](./C++/distribute-repeating-integers.cpp) [Python](./Python/distribute-repeating-integers.py) | _O(n + m * 3^m)_    | _O(n + 2^m)_          | Hard           | | Submask Enumeration
 1664| [Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/)| [C++](./C++/ways-to-make-a-fair-array.cpp) [Python](./Python/ways-to-make-a-fair-array.py) | _O(n)_    | _O(1)_          | Medium           | | Prefix Sum
-1681| [Minimum Incompatibility](https://leetcode.com/problems/minimum-incompatibility/)| [C++](./C++/minimum-incompatibility.cpp) [Python](./Python/minimum-incompatibility.py) | _O(max(n * 2^n, 3^n))_    | _O(2^n)_          | Medium           | | Combinations, Backtracking
+1681| [Minimum Incompatibility](https://leetcode.com/problems/minimum-incompatibility/)| [C++](./C++/minimum-incompatibility.cpp) [Python](./Python/minimum-incompatibility.py) | _O(max(n * 2^n, 3^n))_    | _O(2^n)_          | Medium           | | Combinations, Backtracking, Submask Enumeration
 
 <br/>
 <div align="right">
