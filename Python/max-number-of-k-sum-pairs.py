@@ -11,9 +11,7 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        lookup = collections.Counter()
-        for num in nums:
-            lookup[num] += 1
+        lookup = collections.Counter(nums)
         result = 0
         for num, cnt in lookup.iteritems():
             if k-num == num:
