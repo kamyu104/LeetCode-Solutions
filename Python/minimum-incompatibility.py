@@ -1,4 +1,4 @@
-# Time:  O(sum(i*d * nCr(i*d, d) * nCr(len(nums), i*d) for i in xrange(1, k+1)))
+# Time:  O(sum(i*d * nCr(i*d, d) * nCr(n, i*d) for i in xrange(1, k+1))) < O(sum(n * 2^m * nCr(n, m) for m in xrange(n+1))) = O(n * 3^n)
 # Space: O(n * k)
 
 class Solution(object):
@@ -82,6 +82,9 @@ class Solution_TLE(object):
         for mask in xrange(total+1):
             if popcount(mask) % m != 0:
                 continue
+            # submask enumeration:
+            # => sum(nCr(m, k) * 2^k for k in xrange(m+1)) = (1 + 2)^m = 3^m
+            # => Time: O(3^m), see https://cp-algorithms.com/algebra/all-submasks.html
             submask = mask
             while submask:
                 dp[mask] = min(dp[mask], dp[mask-submask] + candidates[submask])
