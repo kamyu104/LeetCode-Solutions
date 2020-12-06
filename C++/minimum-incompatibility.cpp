@@ -1,4 +1,4 @@
-// Time:  O(nlogn)
+// Time:  O(nlogn + klogk) = O(nlogn)
 // Space: O(n)
 
 class Solution {
@@ -28,7 +28,7 @@ private:
             for (auto& stk : stks) {
                 stk.emplace_back(it->first);
             }
-            it = count.erase(it);
+            it = count.erase(it);  // O(logk)
         }
         int curr = 0;
         while (!empty(count)) {
@@ -36,11 +36,11 @@ private:
                 stks[curr].emplace_back(it->first);
                 --it->second;
                 if (!count[it->first]) {
-                    it = count.erase(it);
+                    it = count.erase(it);  // O(logk)
                 } else {
                     ++it;
                 }
-                if (size(stks[curr]) == size(nums) / k) { 
+                if (size(stks[curr]) == size(nums) / k) {  // total time = O(n/k * k) = O(n)
                     ++curr;
                     for (auto jt = begin(count); jt != end(count);) {
                         if (jt->second != size(stks) - curr) {
