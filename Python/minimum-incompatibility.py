@@ -17,16 +17,15 @@ class Solution(object):
                 return -1
             sorted_keys = sorted(count.keys(), reverse=is_reversed)
             stks = [[] for _ in xrange(k)] 
-            remain = len(nums)
-            for x in sorted_keys:
-                if count[x] != len(stks):
-                    continue
-                for i in xrange(len(stks)):
-                    stks[i].append(x)
-                remain -= count[x]
-                count[x] = 0
-            curr = 0
+            curr, remain = 0, len(nums)
             while remain:
+                for x in sorted_keys:
+                    if count[x] != len(stks)-curr:
+                        continue
+                    for i in xrange(curr, len(stks)):
+                        stks[i].append(x)
+                    remain -= count[x]
+                    count[x] = 0
                 for i, x in enumerate(sorted_keys):
                     if not count[x]:
                         continue
@@ -35,13 +34,6 @@ class Solution(object):
                     count[x] -= 1
                     if len(stks[curr]) == len(nums)//k:  # total time = O(k * n)
                         curr += 1
-                        for x in sorted_keys:
-                            if count[x] != len(stks)-curr:
-                                continue
-                            for i in xrange(curr, len(stks)):
-                                stks[i].append(x)
-                            remain -= count[x]
-                            count[x] = 0
                         break
             return sum([max(stk)-min(stk) for stk in stks])
 
