@@ -1,134 +1,7 @@
-// Time:  O(nlogn)
-// Space: O(n)
-
-// optimized from Solution2
-class Solution {
-public:
-    int minimumIncompatibility(vector<int>& nums, int k) {
-        return min(greedy<less<int>>(nums, k), greedy<greater<int>>(nums, k));  // two possible minimas
-    }
-
-private:
-    template<typename T>
-    int greedy(const vector<int>& nums, int k) {
-        map<int, int, T> count;
-        for (const auto& num : nums) {
-            ++count[num];
-        }
-        unordered_map<int, list<int>> freq_to_nodes;
-        unordered_map<int, list<int>::iterator> key_to_nodeit;
-        for (const auto& [x, cnt] : count) {
-            freq_to_nodes[cnt].emplace_back(x);
-            key_to_nodeit[x] = prev(end(freq_to_nodes[cnt]));
-            if (cnt > k) {
-                return -1;
-            }
-        }
-        vector<vector<int>> stks(k);
-        int curr = 0;
-        while (!empty(count)) {  // the while loop runs O(k) times
-            if (freq_to_nodes.count(size(stks) - curr)) {  // fill the deterministic elements into the remaining subsets
-                for (const auto& x : freq_to_nodes[size(stks) - curr]) {  // total time = O(n)
-                    for (int i = curr; i < size(stks); ++i) {
-                        stks[i].emplace_back(x);
-                    }
-                    key_to_nodeit.erase(x);
-                    count.erase(x);
-                }
-                freq_to_nodes.erase(size(stks) - curr);
-            }
-            // greedily fill the contiguous ordered elements into the first vacant subset until it is full,
-            // otherwise, the result sum would get larger
-            vector<int> to_delete;
-            for (auto& [x, cnt] : count) {
-                stks[curr].emplace_back(x);
-                freq_to_nodes[cnt].erase(key_to_nodeit[x]);
-                if (empty(freq_to_nodes[cnt])) {
-                    freq_to_nodes.erase(cnt);
-                }
-                --cnt;  // total time = O(n)
-                if (!cnt) {
-                    key_to_nodeit.erase(x);
-                    to_delete.emplace_back(x);
-                } else {
-                    freq_to_nodes[cnt].emplace_back(x);
-                    key_to_nodeit[x] = prev(end(freq_to_nodes[cnt]));
-                }
-                if (size(stks[curr]) == size(nums) / k) { 
-                    ++curr;
-                    break;
-                }
-            }
-            for (const auto& x : to_delete) {
-                count.erase(x);  // total time = O(nlogn)
-            }
-        }
-        return accumulate(cbegin(stks), cend(stks), 0,
-                          [](const auto& a, const auto& b) {
-                              return a + (*max_element(cbegin(b), cend(b)) - *min_element(cbegin(b), cend(b)));
-                          });
-    }
-};
-
-// Time:  O(nlogn + k * n)
-// Space: O(n)
-class Solution2 {
-public:
-    int minimumIncompatibility(vector<int>& nums, int k) {
-        return min(greedy<less<int>>(nums, k), greedy<greater<int>>(nums, k));  // two possible minimas
-    }
-
-private:
-    template<typename T>
-    int greedy(const vector<int>& nums, int k) {
-        map<int, int, T> count;
-        for (const auto& num : nums) {
-            ++count[num];
-        }
-        for (const auto& [_, cnt] : count) {
-            if (cnt > k) {
-                return -1;
-            }
-        }
-        vector<vector<int>> stks(k);
-        int curr = 0;
-        int remain = size(nums);
-        while (remain) {  // the while loop runs O(k) times, and the inner loops runs O(n) times
-            for (auto& [x, cnt] : count) {  // fill the deterministic elements into the remaining subsets
-                if (cnt != size(stks) - curr) {
-                    continue;
-                }
-                for (int i = curr; i < size(stks); ++i) {
-                    stks[i].emplace_back(x);
-                }
-                remain -= cnt;
-                cnt = 0;
-            }
-            // greedily fill the contiguous ordered elements into the first vacant subset until it is full,
-            // otherwise, the result sum would get larger
-            for (auto& [x, cnt] : count) {
-                if (!cnt) {
-                    continue;
-                }
-                stks[curr].emplace_back(x);
-                --remain;
-                --cnt;
-                if (size(stks[curr]) == size(nums) / k) { 
-                    ++curr;
-                    break;
-                }
-            }
-        }
-        return accumulate(cbegin(stks), cend(stks), 0,
-                          [](const auto& a, const auto& b) {
-                              return a + (*max_element(cbegin(b), cend(b)) - *min_element(cbegin(b), cend(b)));
-                          });
-    }
-};
-
 // Time:  O(max(n * 2^n, 3^n))
 // Space: O(2^n)
-class Solution3 {
+
+class Solution {
 public:
     int minimumIncompatibility(vector<int>& nums, int k) {
         const vector<int> candidates = findCandidates(nums, k);  // Time: O(n * 2^n)
@@ -263,5 +136,138 @@ private:
             }
             callback(idxs);
         }
+    }
+};
+
+// Time:  O(nlogn)
+// Space: O(n)
+// wrong with greedy solution
+// nums = [15, 9, 7, 10, 15, 14, 12, 2, 10, 8, 10, 13, 4, 11, 2]
+// k = 5
+// optimized from Solution_Wrong_Greedy
+class Solution_Wrong_Greedy_Map {
+public:
+    int minimumIncompatibility(vector<int>& nums, int k) {
+        return min(greedy<less<int>>(nums, k), greedy<greater<int>>(nums, k));  // two possible minimas
+    }
+
+private:
+    template<typename T>
+    int greedy(const vector<int>& nums, int k) {
+        map<int, int, T> count;
+        for (const auto& num : nums) {
+            ++count[num];
+        }
+        unordered_map<int, list<int>> freq_to_nodes;
+        unordered_map<int, list<int>::iterator> key_to_nodeit;
+        for (const auto& [x, cnt] : count) {
+            freq_to_nodes[cnt].emplace_back(x);
+            key_to_nodeit[x] = prev(end(freq_to_nodes[cnt]));
+            if (cnt > k) {
+                return -1;
+            }
+        }
+        vector<vector<int>> stks(k);
+        int curr = 0;
+        while (!empty(count)) {  // the while loop runs O(k) times
+            if (freq_to_nodes.count(size(stks) - curr)) {  // fill the deterministic elements into the remaining subsets
+                for (const auto& x : freq_to_nodes[size(stks) - curr]) {  // total time = O(n)
+                    for (int i = curr; i < size(stks); ++i) {
+                        stks[i].emplace_back(x);
+                    }
+                    key_to_nodeit.erase(x);
+                    count.erase(x);
+                }
+                freq_to_nodes.erase(size(stks) - curr);
+            }
+            // greedily fill the contiguous ordered elements into the first vacant subset until it is full,
+            // otherwise, the result sum would get larger
+            vector<int> to_delete;
+            for (auto& [x, cnt] : count) {
+                stks[curr].emplace_back(x);
+                freq_to_nodes[cnt].erase(key_to_nodeit[x]);
+                if (empty(freq_to_nodes[cnt])) {
+                    freq_to_nodes.erase(cnt);
+                }
+                --cnt;  // total time = O(n)
+                if (!cnt) {
+                    key_to_nodeit.erase(x);
+                    to_delete.emplace_back(x);
+                } else {
+                    freq_to_nodes[cnt].emplace_back(x);
+                    key_to_nodeit[x] = prev(end(freq_to_nodes[cnt]));
+                }
+                if (size(stks[curr]) == size(nums) / k) { 
+                    ++curr;
+                    break;
+                }
+            }
+            for (const auto& x : to_delete) {
+                count.erase(x);  // total time = O(nlogn)
+            }
+        }
+        return accumulate(cbegin(stks), cend(stks), 0,
+                          [](const auto& a, const auto& b) {
+                              return a + (*max_element(cbegin(b), cend(b)) - *min_element(cbegin(b), cend(b)));
+                          });
+    }
+};
+
+// Time:  O(nlogn + k * n)
+// Space: O(n)
+// wrong with greedy solution
+// nums = [15, 9, 7, 10, 15, 14, 12, 2, 10, 8, 10, 13, 4, 11, 2]
+// k = 5
+class Solution_Wrong_Greedy {
+public:
+    int minimumIncompatibility(vector<int>& nums, int k) {
+        return min(greedy<less<int>>(nums, k), greedy<greater<int>>(nums, k));  // two possible minimas
+    }
+
+private:
+    template<typename T>
+    int greedy(const vector<int>& nums, int k) {
+        map<int, int, T> count;
+        for (const auto& num : nums) {
+            ++count[num];
+        }
+        for (const auto& [_, cnt] : count) {
+            if (cnt > k) {
+                return -1;
+            }
+        }
+        vector<vector<int>> stks(k);
+        int curr = 0;
+        int remain = size(nums);
+        while (remain) {  // the while loop runs O(k) times, and the inner loops runs O(n) times
+            for (auto& [x, cnt] : count) {  // fill the deterministic elements into the remaining subsets
+                if (cnt != size(stks) - curr) {
+                    continue;
+                }
+                for (int i = curr; i < size(stks); ++i) {
+                    stks[i].emplace_back(x);
+                }
+                remain -= cnt;
+                cnt = 0;
+            }
+            // greedily fill the contiguous ordered elements into the first vacant subset until it is full,
+            // otherwise, the result sum would get larger
+            for (auto& [x, cnt] : count) {
+                if (!cnt) {
+                    continue;
+                }
+                stks[curr].emplace_back(x);
+                --remain;
+                --cnt;
+                if (size(stks[curr]) == size(nums) / k) { 
+                    ++curr;
+                    break;
+                }
+            }
+        }
+        return accumulate(cbegin(stks), cend(stks), 0,
+                          [](const auto& a, const auto& b) {
+                              return a + (*max_element(cbegin(b), cend(b)) - *min_element(cbegin(b), cend(b)));
+                          });
     }
 };
