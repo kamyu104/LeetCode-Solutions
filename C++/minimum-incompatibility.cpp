@@ -4,7 +4,7 @@
 class Solution {
 public:
     int minimumIncompatibility(vector<int>& nums, int k) {
-        return min(greedy<less<int>>(nums, k), greedy<greater<int>>(nums, k));
+        return min(greedy<less<int>>(nums, k), greedy<greater<int>>(nums, k));  // two possible minimas
     }
 
 private:
