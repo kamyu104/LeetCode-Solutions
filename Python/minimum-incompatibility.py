@@ -19,7 +19,7 @@ class Solution(object):
             stks = [[] for _ in xrange(k)] 
             curr, remain = 0, len(nums)
             while remain:
-                for x in sorted_keys:
+                for x in sorted_keys:  # total time = O(k * n)
                     if count[x] != len(stks)-curr:
                         continue
                     for i in xrange(curr, len(stks)):
@@ -32,7 +32,7 @@ class Solution(object):
                     stks[curr].append(x)
                     remain -= 1
                     count[x] -= 1
-                    if len(stks[curr]) == len(nums)//k:  # total time = O(k * n)
+                    if len(stks[curr]) == len(nums)//k:
                         curr += 1
                         break
             return sum([max(stk)-min(stk) for stk in stks])
