@@ -26,7 +26,7 @@ private:
         }
         vector<vector<int>> stks(k);
         int curr = 0;
-        while (!empty(count)) {  // the while loop runs O(k) times, and the inner loops runs O(n) times
+        while (!empty(count)) {  // the while loop runs O(k) times
             if (freq_to_nodes.count(size(stks) - curr)) {  // fill the deterministic elements into the remaining subsets
                 for (const auto& x : freq_to_nodes[size(stks) - curr]) {  // total time = O(n)
                     for (int i = curr; i < size(stks); ++i) {
@@ -39,26 +39,28 @@ private:
             }
             // greedily fill the contiguous ordered elements into the first vacant subset until it is full,
             // otherwise, the result sum would get larger
-            for (auto it = begin(count); it != end(count);) {  // total time = O(nlogn)
-                auto& [x, cnt] = *it;
+            vector<int> to_delete;
+            for (auto& [x, cnt] : count) {
                 stks[curr].emplace_back(x);
                 freq_to_nodes[cnt].erase(key_to_nodeit[x]);
                 if (empty(freq_to_nodes[cnt])) {
                     freq_to_nodes.erase(cnt);
                 }
-                --cnt;
+                --cnt;  // total time = O(n)
                 if (!cnt) {
                     key_to_nodeit.erase(x);
-                    it = count.erase(it);
+                    to_delete.emplace_back(x);
                 } else {
                     freq_to_nodes[cnt].emplace_back(x);
                     key_to_nodeit[x] = prev(end(freq_to_nodes[cnt]));
-                    ++it;
                 }
                 if (size(stks[curr]) == size(nums) / k) { 
                     ++curr;
                     break;
                 }
+            }
+            for (const auto& x : to_delete) {
+                count.erase(x);  // total time = O(nlogn)
             }
         }
         return accumulate(cbegin(stks), cend(stks), 0,
