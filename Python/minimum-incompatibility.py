@@ -175,7 +175,7 @@ class SkipList(object):
         return "\n".join(map(lambda x: "->".join(x), result))
 
 
-# optimized from Solution3
+# optimized from Solution3, using SkipList
 class Solution2(object):
     def minimumIncompatibility(self, nums, k):
         """
