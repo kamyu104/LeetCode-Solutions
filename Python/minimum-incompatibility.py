@@ -136,7 +136,7 @@ class Solution(object):
                 freq_to_nodes[count[x]][x] = count[x]
             stks = [[] for _ in xrange(k)] 
             curr = 0
-            while count:  # the while loop runs O(k) times, and the inner loops runs O(n) times
+            while ordered_set:  # the while loop runs O(k) times, and the inner loops runs O(n) times
                 if len(stks)-curr in freq_to_nodes:  # fill the deterministic elements into the remaining subsets
                     for x in freq_to_nodes[len(stks)-curr].iterkeys():
                         for i in xrange(curr, len(stks)):
