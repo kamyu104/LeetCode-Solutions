@@ -34,7 +34,9 @@ private:
                 remain -= cnt;
                 cnt = 0;
             }
-            for (auto& [x, cnt] : count) {  // greedily fill the element until the first subset is full
+            // greedily fill the contiguous ordered elements into the first vacant subset until it is full,
+            // otherwise, the result sum would get larger
+            for (auto& [x, cnt] : count) {
                 if (!cnt) {
                     continue;
                 }
