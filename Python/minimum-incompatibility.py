@@ -25,7 +25,7 @@ class Solution(object):
             curr = 0
             while ordered_set:  # the while loop runs O(k) times, and the inner loops runs O(n) times
                 if len(stks)-curr in freq_to_nodes:  # fill the deterministic elements into the remaining subsets
-                    for x in freq_to_nodes[len(stks)-curr].iterkeys():
+                    for x in freq_to_nodes[len(stks)-curr].iterkeys():  # total time = O(n)
                         for i in xrange(curr, len(stks)):
                             stks[i].append(x)
                         count.pop(x)
@@ -50,7 +50,7 @@ class Solution(object):
                         curr += 1
                         break
                 for x in to_remove:
-                    ordered_set.remove(x)
+                    ordered_set.remove(x)  # total time = O(nlogn)
             return sum([max(stk)-min(stk) for stk in stks])
 
         return min(greedy(nums, k, False), greedy(nums, k, True))  # two possible minimas
@@ -196,7 +196,7 @@ class Solution2(object):
             curr = 0
             while ordered_set:  # the while loop runs O(k) times, and the inner loops runs O(n) times
                 if len(stks)-curr in freq_to_nodes:  # fill the deterministic elements into the remaining subsets
-                    for x in freq_to_nodes[len(stks)-curr].iterkeys():
+                    for x in freq_to_nodes[len(stks)-curr].iterkeys():  # total time = O(n)
                         for i in xrange(curr, len(stks)):
                             stks[i].append(x)
                         count.pop(x)
@@ -214,7 +214,7 @@ class Solution2(object):
                     count[x] -= 1
                     if not count[x]:
                         count.pop(x)
-                        it = ordered_set.remove(it)
+                        it = ordered_set.remove(it)  # total time = O(nlogn)
                     else:
                         freq_to_nodes[count[x]][x] = count[x]
                         it = it.nexts[0]
