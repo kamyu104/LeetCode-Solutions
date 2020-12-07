@@ -5,7 +5,7 @@ import collections
 import sortedcontainers
 
 
-# optimized from Solution3, using SortedList (which is not supported in GoogleCodeJam / GoogleCodeKickStart)
+# optimized from Solution3, using SortedList (which is not supported in GoogleCodeJam / GoogleKickStart)
 class Solution(object):
     def minimumIncompatibility(self, nums, k):
         """
