@@ -40,7 +40,7 @@ class Solution(object):
                     freq_to_nodes[count[x]].pop(x)
                     if not freq_to_nodes[count[x]]:
                         freq_to_nodes.pop(count[x])
-                    count[x] -= 1
+                    count[x] -= 1  # total time = O(n)
                     if not count[x]:
                         count.pop(x)
                         to_remove.append(x)
@@ -210,7 +210,7 @@ class Solution2(object):
                     freq_to_nodes[count[x]].pop(x)
                     if not freq_to_nodes[count[x]]:
                         freq_to_nodes.pop(count[x])
-                    count[x] -= 1
+                    count[x] -= 1  # total time = O(n)
                     if not count[x]:
                         count.pop(x)
                         it = ordered_set.remove(it)  # total time = O(nlogn)
