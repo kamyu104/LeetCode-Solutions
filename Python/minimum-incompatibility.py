@@ -2,6 +2,64 @@
 # Space: O(n)
 
 import collections
+import sortedcontainers
+
+
+# optimized from Solution3, using sortedcontainers
+class Solution(object):
+    def minimumIncompatibility(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        def greedy(nums, k, is_reversed):
+            count = collections.Counter(nums)
+            if max(count.itervalues()) > k:
+                return -1
+            ordered_set = sortedcontainers.SortedList(count.iterkeys())
+            freq_to_nodes = collections.defaultdict(collections.OrderedDict)
+            for x in ordered_set:
+                freq_to_nodes[count[x]][x] = count[x]
+            stks = [[] for _ in xrange(k)] 
+            curr = 0
+            while ordered_set:  # the while loop runs O(k) times, and the inner loops runs O(n) times
+                if len(stks)-curr in freq_to_nodes:  # fill the deterministic elements into the remaining subsets
+                    for x in freq_to_nodes[len(stks)-curr].iterkeys():
+                        for i in xrange(curr, len(stks)):
+                            stks[i].append(x)
+                        count.pop(x)
+                        ordered_set.remove(x)
+                    freq_to_nodes.pop(len(stks)-curr)
+                # greedily fill the contiguous ordered elements into the first vacant subset until it is full,
+                # otherwise, the result sum would get larger
+                to_remove = set()
+                direction = (lambda x:x) if not is_reversed else reversed
+                for x in direction(ordered_set):
+                    stks[curr].append(x)
+                    freq_to_nodes[count[x]].pop(x)
+                    if not freq_to_nodes[count[x]]:
+                        freq_to_nodes.pop(count[x])
+                    count[x] -= 1
+                    if not count[x]:
+                        count.pop(x)
+                        to_remove.add(x)
+                    else:
+                        freq_to_nodes[count[x]][x] = count[x]
+                    if len(stks[curr]) == len(nums)//k:
+                        curr += 1
+                        break
+                for x in to_remove:
+                    ordered_set.remove(x)
+            return sum([abs(max(stk)-min(stk)) for stk in stks])
+
+        return min(greedy(nums, k, False), greedy(nums, k, True))  # two possible minimas
+
+
+# Time:  O(nlogn)
+# Space: O(n)
+
+import collections
 from random import randint, seed
 
 
@@ -117,8 +175,8 @@ class SkipList(object):
         return "\n".join(map(lambda x: "->".join(x), result))
 
 
-# optimized from Solution2
-class Solution(object):
+# optimized from Solution3
+class Solution2(object):
     def minimumIncompatibility(self, nums, k):
         """
         :type nums: List[int]
