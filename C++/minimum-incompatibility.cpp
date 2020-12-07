@@ -183,7 +183,7 @@ private:
                 freq_to_nodes.erase(size(stks) - curr);
             }
             // greedily fill the contiguous ordered elements into the first vacant subset until it is full,
-            // otherwise, the result sum would get larger
+            // otherwise, the result sum would get larger => in fact, this is wrong
             vector<int> to_delete;
             for (auto& [x, cnt] : count) {
                 stks[curr].emplace_back(x);
@@ -255,7 +255,7 @@ private:
                 cnt = 0;
             }
             // greedily fill the contiguous ordered elements into the first vacant subset until it is full,
-            // otherwise, the result sum would get larger
+            // otherwise, the result sum would get larger => in fact, this is wrong
             for (auto& [x, cnt] : count) {
                 if (!cnt) {
                     continue;
