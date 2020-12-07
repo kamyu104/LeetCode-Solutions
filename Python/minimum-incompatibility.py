@@ -51,7 +51,7 @@ class Solution(object):
                         break
                 for x in to_remove:
                     ordered_set.remove(x)
-            return sum([abs(max(stk)-min(stk)) for stk in stks])
+            return sum([max(stk)-min(stk) for stk in stks])
 
         return min(greedy(nums, k, False), greedy(nums, k, True))  # two possible minimas
 
