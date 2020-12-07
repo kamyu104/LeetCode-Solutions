@@ -1,4 +1,4 @@
-# Time:  O(nlogn + k * n)
+# Time:  O(nlogn + k * n), could be improved to O(nlogn) by ordered map or skip list
 # Space: O(n)
 
 import collections
