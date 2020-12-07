@@ -131,7 +131,7 @@ class Solution_Wrong_Greedy_SortedList(object):
                         ordered_set.remove(x)
                     freq_to_nodes.pop(len(stks)-curr)
                 # greedily fill the contiguous ordered elements into the first vacant subset until it is full,
-                # otherwise, the result sum would get larger
+                # otherwise, the result sum would get larger => in fact, this is wrong
                 to_remove = []
                 direction = (lambda x:x) if not is_reversed else reversed
                 for x in direction(ordered_set):
@@ -305,7 +305,7 @@ class Solution_Wrong_Greedy_SkipList(object):
                         ordered_set.remove(ordered_set.find(x))
                     freq_to_nodes.pop(len(stks)-curr)
                 # greedily fill the contiguous ordered elements into the first vacant subset until it is full,
-                # otherwise, the result sum would get larger
+                # otherwise, the result sum would get larger => in fact, this is wrong
                 it = ordered_set.begin()
                 while it != ordered_set.end():
                     x = it.val
@@ -359,7 +359,7 @@ class Solution_Wrong_Greedy(object):
                     remain -= count[x]
                     count[x] = 0
                 # greedily fill the contiguous ordered elements into the first vacant subset until it is full,
-                # otherwise, the result sum would get larger
+                # otherwise, the result sum would get larger => in fact, this is wrong
                 for x in sorted_keys:
                     if not count[x]:
                         continue
