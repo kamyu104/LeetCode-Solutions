@@ -1,6 +1,35 @@
 # Time:  O(1), per operation.
 # Space: O(k), k is the capacity of cache.
 
+import collections
+
+
+# using OrderedDict
+class LRUCache(object):
+    def __init__(self, capacity):
+        self.cache = collections.OrderedDict()
+        self.capacity = capacity
+
+    def get(self, key):
+        if key not in self.cache:
+            return -1
+        val = self.cache[key]
+        del self.cache[key]
+        self.cache[key] = val
+        return val
+
+    def put(self, key, value):
+        if key in self.cache:
+            del self.cache[key]
+        elif len(self.cache) == self.capacity:
+            self.cache.popitem(last=False)
+        self.cache[key] = value
+
+
+# Time:  O(1), per operation.
+# Space: O(k), k is the capacity of cache.
+
+
 class ListNode(object):
     def __init__(self, key, val):
         self.val = val
@@ -33,7 +62,7 @@ class LinkedList(object):
             self.tail = node.prev
         node.next, node.prev = None, None  # make node clean
 
-class LRUCache(object):
+class LRUCache2(object):
 
     # @param capacity, an integer
     def __init__(self, capacity):
@@ -67,27 +96,3 @@ class LRUCache(object):
             del self.dict[self.list.head.key]
             self.list.delete(self.list.head)
         self._insert(key, val)
-
-
-import collections
-class LRUCache2(object):
-    def __init__(self, capacity):
-        self.cache = collections.OrderedDict()
-        self.capacity = capacity
-
-    def get(self, key):
-        if key not in self.cache:
-            return -1
-        val = self.cache[key]
-        del self.cache[key]
-        self.cache[key] = val
-        return val
-
-    def put(self, key, value):
-        if key in self.cache:
-            del self.cache[key]
-        elif len(self.cache) == self.capacity:
-            self.cache.popitem(last=False)
-        self.cache[key] = value
-
-
