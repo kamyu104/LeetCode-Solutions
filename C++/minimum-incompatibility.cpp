@@ -1,6 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
+// optimized from Solution2
 class Solution {
 public:
     int minimumIncompatibility(vector<int>& nums, int k) {
