@@ -4,7 +4,6 @@
 import collections
 
 
-VAL, FREQ = range(2)
 # using OrderedDict
 class LFUCache(object):
 
@@ -25,7 +24,7 @@ class LFUCache(object):
         """
         if key not in self.__key_to_freq:
             return -1
-        value = self.__freq_to_nodes[self.__key_to_freq[key]][key][0]
+        value = self.__freq_to_nodes[self.__key_to_freq[key]][key]
         self.__update(key, value)
         return value
 
@@ -39,7 +38,7 @@ class LFUCache(object):
             return
 
         if key not in self.__key_to_freq and self.__size == self.__capa:
-            del self.__key_to_freq[self.__freq_to_nodes[self.__min_freq].popitem(last=False)[VAL]]
+            del self.__key_to_freq[self.__freq_to_nodes[self.__min_freq].popitem(last=False)[0]]
             if not self.__freq_to_nodes[self.__min_freq]:
                 del self.__freq_to_nodes[self.__min_freq]
             self.__size -= 1
@@ -48,7 +47,7 @@ class LFUCache(object):
     def __update(self, key, value):
         freq = 0
         if key in self.__key_to_freq:
-            freq = self.__freq_to_nodes[self.__key_to_freq[key]][key][FREQ]
+            freq = self.__key_to_freq[key]
             del self.__freq_to_nodes[freq][key]
             if not self.__freq_to_nodes[freq]:
                 del self.__freq_to_nodes[freq]
@@ -59,7 +58,7 @@ class LFUCache(object):
         freq += 1
         self.__min_freq = min(self.__min_freq, freq)
         self.__key_to_freq[key] = freq
-        self.__freq_to_nodes[freq][key] = (value, freq)
+        self.__freq_to_nodes[freq][key] = value
         self.__size += 1
 
 
