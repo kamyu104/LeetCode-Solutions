@@ -19,7 +19,6 @@ private:
                 return -1;
             }
         }
-        
         vector<vector<int>> stks(k);
         int curr = 0;
         int remain = size(nums);
