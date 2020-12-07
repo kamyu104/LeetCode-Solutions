@@ -33,7 +33,7 @@ class Solution(object):
                     freq_to_nodes.pop(len(stks)-curr)
                 # greedily fill the contiguous ordered elements into the first vacant subset until it is full,
                 # otherwise, the result sum would get larger
-                to_remove = set()
+                to_remove = []
                 direction = (lambda x:x) if not is_reversed else reversed
                 for x in direction(ordered_set):
                     stks[curr].append(x)
@@ -43,7 +43,7 @@ class Solution(object):
                     count[x] -= 1
                     if not count[x]:
                         count.pop(x)
-                        to_remove.add(x)
+                        to_remove.append(x)
                     else:
                         freq_to_nodes[count[x]][x] = count[x]
                     if len(stks[curr]) == len(nums)//k:
