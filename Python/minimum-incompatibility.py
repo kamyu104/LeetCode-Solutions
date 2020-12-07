@@ -26,7 +26,7 @@ class Solution(object):
                         stks[i].append(x)
                     remain -= count[x]
                     count[x] = 0
-                for x in sorted_keys:  # greedily fill the element until the first subset is full
+                for x in sorted_keys:  # greedily fill the contiguous ordered elements into the first vacant subset until it is full, otherwise it would get worse
                     if not count[x]:
                         continue
                     stks[curr].append(x)
