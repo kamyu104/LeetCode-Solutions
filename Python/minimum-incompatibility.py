@@ -5,7 +5,7 @@ import collections
 import sortedcontainers
 
 
-# optimized from Solution3, using sortedcontainers
+# optimized from Solution3, using SortedList
 class Solution(object):
     def minimumIncompatibility(self, nums, k):
         """
