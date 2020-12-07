@@ -1,7 +1,82 @@
-// Time:  O(nlogn + k * n)
+// Time:  O(nlogn)
 // Space: O(n)
 
 class Solution {
+public:
+    int minimumIncompatibility(vector<int>& nums, int k) {
+        return min(greedy<less<int>>(nums, k), greedy<greater<int>>(nums, k));  // two possible minimas
+    }
+
+private:
+    template<typename T>
+    int greedy(const vector<int>& nums, int k) {
+        map<int, int, T> count;
+        for (const auto& num : nums) {
+            ++count[num];
+        }
+        unordered_map<int, list<int>> freq_to_nodes;
+        unordered_map<int, list<int>::iterator> key_to_nodeit;
+        for (const auto& [x, cnt] : count) {
+            freq_to_nodes[cnt].emplace_back(x);
+            key_to_nodeit[x] = prev(end(freq_to_nodes[cnt]));
+            if (cnt > k) {
+                return -1;
+            }
+        }
+        vector<vector<int>> stks(k);
+        int curr = 0;
+        int remain = size(nums);
+        while (remain) {  // the while loop runs O(k) times, and the inner loops runs O(n) times
+            if (freq_to_nodes.count(size(stks) - curr)) {  // fill the deterministic elements into the remaining subsets
+                for (const auto& x : freq_to_nodes[size(stks) - curr]) {  // total time = O(n)
+                    for (int i = curr; i < size(stks); ++i) {
+                        stks[i].emplace_back(x);
+                    }
+                    key_to_nodeit.erase(x);
+                    count.erase(x);
+                }
+                remain -= (size(stks) - curr) * size(freq_to_nodes[size(stks) - curr]);
+                freq_to_nodes.erase(size(stks) - curr);
+            }
+            // greedily fill the contiguous ordered elements into the first vacant subset until it is full,
+            // otherwise, the result sum would get larger
+            for (auto it = begin(count); it != end(count);) {  // total time = O(nlogn)
+                if (!it->second) {
+                    ++it;
+                    continue;
+                }
+                stks[curr].emplace_back(it->first);
+                auto& [x, cnt] = *it;
+                freq_to_nodes[cnt].erase(key_to_nodeit[x]);
+                if (empty(freq_to_nodes[cnt])) {
+                    freq_to_nodes.erase(cnt);
+                }
+                --remain;
+                --cnt;
+                if (!cnt) {
+                    key_to_nodeit.erase(x);
+                    it = count.erase(it);
+                } else {
+                    freq_to_nodes[cnt].emplace_back(x);
+                    key_to_nodeit[x] = prev(end(freq_to_nodes[cnt]));
+                    ++it;
+                }
+                if (size(stks[curr]) == size(nums) / k) { 
+                    ++curr;
+                    break;
+                }
+            }
+        }
+        return accumulate(cbegin(stks), cend(stks), 0,
+                          [](const auto& a, const auto& b) {
+                              return a + (*max_element(cbegin(b), cend(b)) - *min_element(cbegin(b), cend(b)));
+                          });
+    }
+};
+
+// Time:  O(nlogn + k * n)
+// Space: O(n)
+class Solution2 {
 public:
     int minimumIncompatibility(vector<int>& nums, int k) {
         return min(greedy<less<int>>(nums, k), greedy<greater<int>>(nums, k));  // two possible minimas
@@ -57,7 +132,7 @@ private:
 
 // Time:  O(max(n * 2^n, 3^n))
 // Space: O(2^n)
-class Solution2 {
+class Solution3 {
 public:
     int minimumIncompatibility(vector<int>& nums, int k) {
         const vector<int> candidates = findCandidates(nums, k);  // Time: O(n * 2^n)
