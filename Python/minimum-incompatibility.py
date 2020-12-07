@@ -226,12 +226,12 @@ class Solution2(object):
         return min(greedy(nums, k, False), greedy(nums, k, True))  # two possible minimas
 
 
-# Time:  O(nlogn + k * n), could be improved to O(nlogn) by ordered map or skip list
+# Time:  O(nlogn + k * n), could be improved to O(nlogn) by skiplist or orderedlist
 # Space: O(n)
 import collections
 
 
-class Solution2(object):
+class Solution3(object):
     def minimumIncompatibility(self, nums, k):
         """
         :type nums: List[int]
@@ -274,7 +274,7 @@ class Solution2(object):
 import itertools
 
 
-class Solution3(object):
+class Solution4(object):
     def minimumIncompatibility(self, nums, k):
         """
         :type nums: List[int]
