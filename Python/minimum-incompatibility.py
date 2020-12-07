@@ -39,7 +39,7 @@ class Solution(object):
                         break
             return sum([max(stk)-min(stk) for stk in stks])
 
-        return min(greedy(nums, k, False), greedy(nums, k, True)) 
+        return min(greedy(nums, k, False), greedy(nums, k, True))  # two possible minimas
 
 
 # Time:  O(sum(i*d * nCr(i*d, d) * nCr(n, i*d) for i in xrange(1, k+1))) < O(sum(n * 2^m * nCr(n, m) for m in xrange(n+1))) = O(n * 3^n)
