@@ -102,6 +102,8 @@ import sortedcontainers
 # wrong with greedy solution
 # nums = [15, 9, 7, 10, 15, 14, 12, 2, 10, 8, 10, 13, 4, 11, 2]
 # k = 5
+# greedy  => [[2, 4, 7], [2, 8, 9], [10, 11, 12], [10, 13, 15], [10, 14, 15]] => 24
+# correct => [[2, 4, 7], [2, 8, 10], [9, 10, 11], [10, 12, 15], [13, 14, 15]] => 22
 # optimized from Solution_Greedy, using SortedList (which is not supported in GoogleCodeJam / GoogleKickStart)
 class Solution_Wrong_Greedy_SortedList(object):
     def minimumIncompatibility(self, nums, k):
@@ -273,6 +275,8 @@ class SkipList(object):
 # wrong with greedy solution
 # nums = [15, 9, 7, 10, 15, 14, 12, 2, 10, 8, 10, 13, 4, 11, 2]
 # k = 5
+# greedy  => [[2, 4, 7], [2, 8, 9], [10, 11, 12], [10, 13, 15], [10, 14, 15]] => 24
+# correct => [[2, 4, 7], [2, 8, 10], [9, 10, 11], [10, 12, 15], [13, 14, 15]] => 22
 # optimized from Solution_Wrong_Greedy, using SkipList
 class Solution_Wrong_Greedy_SkipList(object):
     def minimumIncompatibility(self, nums, k):
@@ -330,6 +334,8 @@ import collections
 # wrong with greedy solution
 # nums = [15, 9, 7, 10, 15, 14, 12, 2, 10, 8, 10, 13, 4, 11, 2]
 # k = 5
+# greedy  => [[2, 4, 7], [2, 8, 9], [10, 11, 12], [10, 13, 15], [10, 14, 15]] => 24
+# correct => [[2, 4, 7], [2, 8, 10], [9, 10, 11], [10, 12, 15], [13, 14, 15]] => 22
 class Solution_Wrong_Greedy(object):
     def minimumIncompatibility(self, nums, k):
         """
