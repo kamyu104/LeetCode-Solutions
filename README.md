@@ -1655,7 +1655,7 @@
 1665 | [Minimum Initial Energy to Finish Tasks](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/) | [C++](./C++/minimum-initial-energy-to-finish-tasks.cpp) [Python](./Python/minimum-initial-energy-to-finish-tasks.py) | _O(nlogn)_ | _O(1)_ | Hard ||
 1673 | [Find the Most Competitive Subsequence](https://leetcode.com/problems/find-the-most-competitive-subsequence/) | [C++](./C++/find-the-most-competitive-subsequence.cpp) [Python](./Python/find-the-most-competitive-subsequence.py) | _O(n)_ | _O(k)_ | Meidum || Stack, Greedy
 1674 | [Minimum Moves to Make Array Complementary](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/) | [C++](./C++/minimum-moves-to-make-array-complementary.cpp) [Python](./Python/minimum-moves-to-make-array-complementary.py) | _O(n + k)_ | _O(k)_ | Meidum ||
-1681| [Minimum Incompatibility](https://leetcode.com/problems/minimum-incompatibility/)| [C++](./C++/minimum-incompatibility.cpp) [Python](./Python/minimum-incompatibility.py) | _O(nlogn + k * n)_    | _O(n)_          | Medium           | | Combinations, Backtracking, Submask Enumeration, Greedy
+1681| [Minimum Incompatibility](https://leetcode.com/problems/minimum-incompatibility/)| [C++](./C++/minimum-incompatibility.cpp) [Python](./Python/minimum-incompatibility.py) | _O(nlogn + k * n)_    | _O(n)_          | Hard           | | Combinations, Backtracking, Submask Enumeration, Greedy
 
 <br/>
 <div align="right">
