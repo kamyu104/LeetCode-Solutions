@@ -1549,7 +1549,6 @@
 1639| [Number of Ways to Form a Target String Given a Dictionary](https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/)| [C++](./C++/number-of-ways-to-form-a-target-string-given-a-dictionary.cpp) [Python](./Python/number-of-ways-to-form-a-target-string-given-a-dictionary.py) | _O(l * (w + n))_    | _O(n)_          | Hard           | | 
 1655| [Distribute Repeating Integers](https://leetcode.com/problems/distribute-repeating-integers/)| [C++](./C++/distribute-repeating-integers.cpp) [Python](./Python/distribute-repeating-integers.py) | _O(n + m * 3^m)_    | _O(n + 2^m)_          | Hard           | | Submask Enumeration
 1664| [Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/)| [C++](./C++/ways-to-make-a-fair-array.cpp) [Python](./Python/ways-to-make-a-fair-array.py) | _O(n)_    | _O(1)_          | Medium           | | Prefix Sum
-1681| [Minimum Incompatibility](https://leetcode.com/problems/minimum-incompatibility/)| [C++](./C++/minimum-incompatibility.cpp) [Python](./Python/minimum-incompatibility.py) | _O(max(n * 2^n, 3^n))_    | _O(2^n)_          | Medium           | | Combinations, Backtracking, Submask Enumeration
 
 <br/>
 <div align="right">
@@ -1656,6 +1655,7 @@
 1665 | [Minimum Initial Energy to Finish Tasks](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/) | [C++](./C++/minimum-initial-energy-to-finish-tasks.cpp) [Python](./Python/minimum-initial-energy-to-finish-tasks.py) | _O(nlogn)_ | _O(1)_ | Hard ||
 1673 | [Find the Most Competitive Subsequence](https://leetcode.com/problems/find-the-most-competitive-subsequence/) | [C++](./C++/find-the-most-competitive-subsequence.cpp) [Python](./Python/find-the-most-competitive-subsequence.py) | _O(n)_ | _O(k)_ | Meidum || Stack, Greedy
 1674 | [Minimum Moves to Make Array Complementary](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/) | [C++](./C++/minimum-moves-to-make-array-complementary.cpp) [Python](./Python/minimum-moves-to-make-array-complementary.py) | _O(n + k)_ | _O(k)_ | Meidum ||
+1681| [Minimum Incompatibility](https://leetcode.com/problems/minimum-incompatibility/)| [C++](./C++/minimum-incompatibility.cpp) [Python](./Python/minimum-incompatibility.py) | _O(nlogn + k * n)_    | _O(n)_          | Medium           | | Combinations, Backtracking, Submask Enumeration, Greedy
 
 <br/>
 <div align="right">
