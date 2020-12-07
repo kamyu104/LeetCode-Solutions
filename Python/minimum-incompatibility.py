@@ -18,15 +18,15 @@ class Solution(object):
             sorted_keys = sorted(count.keys(), reverse=is_reversed)
             stks = [[] for _ in xrange(k)] 
             curr, remain = 0, len(nums)
-            while remain:
-                for x in sorted_keys:  # total time = O(k * n)
+            while remain:  # the while loop runs O(k) times, and the inner loops runs O(n) times
+                for x in sorted_keys:  # fill the determinated elements into the remaining subsets
                     if count[x] != len(stks)-curr:
                         continue
                     for i in xrange(curr, len(stks)):
                         stks[i].append(x)
                     remain -= count[x]
                     count[x] = 0
-                for x in sorted_keys:
+                for x in sorted_keys:  # greedily fill the element until the first subset is full
                     if not count[x]:
                         continue
                     stks[curr].append(x)
