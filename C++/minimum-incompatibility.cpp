@@ -23,8 +23,8 @@ private:
         vector<vector<int>> stks(k);
         int curr = 0;
         int remain = size(nums);
-        while (remain) {
-            for (auto& [x, cnt] : count) {
+        while (remain) {  // the while loop runs O(k) times, and the inner loops runs O(n) times
+            for (auto& [x, cnt] : count) {  // fill the deterministic elements into the remaining subsets
                 if (cnt != size(stks) - curr) {
                     continue;
                 }
@@ -34,7 +34,7 @@ private:
                 remain -= cnt;
                 cnt = 0;
             }
-            for (auto& [x, cnt] : count) {
+            for (auto& [x, cnt] : count) {  // greedily fill the element until the first subset is full
                 if (!cnt) {
                     continue;
                 }
