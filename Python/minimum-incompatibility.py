@@ -19,7 +19,7 @@ class Solution(object):
             stks = [[] for _ in xrange(k)] 
             curr, remain = 0, len(nums)
             while remain:  # the while loop runs O(k) times, and the inner loops runs O(n) times
-                for x in sorted_keys:  # fill the determinated elements into the remaining subsets
+                for x in sorted_keys:  # fill the deterministic elements into the remaining subsets
                     if count[x] != len(stks)-curr:
                         continue
                     for i in xrange(curr, len(stks)):
