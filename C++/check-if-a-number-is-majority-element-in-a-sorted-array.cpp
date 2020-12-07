@@ -16,6 +16,6 @@ public:
         }
         const auto& l = lower_bound(nums.cbegin(), nums.cend(), target);
         const auto& r = upper_bound(nums.cbegin(), nums.cend(), target);
-        return r - l;
+        return (r - l) * 2 > nums.size();
     }
 };
