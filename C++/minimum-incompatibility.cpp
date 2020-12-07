@@ -40,8 +40,8 @@ private:
             // greedily fill the contiguous ordered elements into the first vacant subset until it is full,
             // otherwise, the result sum would get larger
             for (auto it = begin(count); it != end(count);) {  // total time = O(nlogn)
-                stks[curr].emplace_back(it->first);
                 auto& [x, cnt] = *it;
+                stks[curr].emplace_back(x);
                 freq_to_nodes[cnt].erase(key_to_nodeit[x]);
                 if (empty(freq_to_nodes[cnt])) {
                     freq_to_nodes.erase(cnt);
