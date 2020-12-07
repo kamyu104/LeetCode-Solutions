@@ -26,7 +26,7 @@ class Solution(object):
                         stks[i].append(x)
                     remain -= count[x]
                     count[x] = 0
-                for i, x in enumerate(sorted_keys):
+                for x in sorted_keys:
                     if not count[x]:
                         continue
                     stks[curr].append(x)
