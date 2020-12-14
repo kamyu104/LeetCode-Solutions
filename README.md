@@ -971,7 +971,7 @@
 1637| [Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/) | [C++](./C++/widest-vertical-area-between-two-points-containing-no-points.cpp) [Python](./Python/widest-vertical-area-between-two-points-containing-no-points.py) | _O(nlogn)_ | _O(n)_| Medium | |
 1680| [Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/) | [C++](./C++/concatenation-of-consecutive-binary-numbers.cpp) [Python](./Python/concatenation-of-consecutive-binary-numbers.py) | _O(n)_ | _O(1)_| Medium | |
 1685| [Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/) | [C++](./C++/sum-of-absolute-differences-in-a-sorted-array.cpp) [Python](./Python/sum-of-absolute-differences-in-a-sorted-array.py) | _O(n)_ | _O(1)_| Medium | |
-1688| [Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/) | [C++](./C++/count-of-matches-in-tournamenty.cpp) [Python](./Python/count-of-matches-in-tournament.py) | _O(1)_ | _O(1)_| Easy | |
+1688| [Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/) | [C++](./C++/count-of-matches-in-tournament.cpp) [Python](./Python/count-of-matches-in-tournament.py) | _O(1)_ | _O(1)_| Easy | |
 
 <br/>
 <div align="right">
