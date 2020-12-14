@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1681%20%2F%201681-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1691%20%2F%201691-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -433,6 +433,7 @@
 1662| [Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/) | [C++](./C++/check-if-two-string-arrays-are-equivalent.cpp) [Python](./Python/check-if-two-string-arrays-are-equivalent.py) | _O(n)_ | _O(1)_ | Easy |||
 1668| [Maximum Repeating Substring](https://leetcode.com/problems/maximum-repeating-substring/) | [C++](./C++/maximum-repeating-substring.cpp) [Python](./Python/maximum-repeating-substring.py) | _O(n)_ | _O(m)_ | Easy || `KMP Algorithm` |
 1678| [Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/) | [C++](./C++/goal-parser-interpretation.cpp) [Python](./Python/goal-parser-interpretation.py) | _O(n)_ | _O(1)_ | Easy |||
+1684| [Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings/) | [C++](./C++/count-the-number-of-consistent-strings.cpp) [Python](./Python/count-the-number-of-consistent-strings.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -969,6 +970,8 @@
 1636| [Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/) | [C++](./C++/sort-array-by-increasing-frequency.cpp) [Python](./Python/sort-array-by-increasing-frequency.py) | _O(nlogn)_ | _O(n)_| Easy | |
 1637| [Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/) | [C++](./C++/widest-vertical-area-between-two-points-containing-no-points.cpp) [Python](./Python/widest-vertical-area-between-two-points-containing-no-points.py) | _O(nlogn)_ | _O(n)_| Medium | |
 1680| [Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/) | [C++](./C++/concatenation-of-consecutive-binary-numbers.cpp) [Python](./Python/concatenation-of-consecutive-binary-numbers.py) | _O(n)_ | _O(1)_| Medium | |
+1685| [Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/) | [C++](./C++/sum-of-absolute-differences-in-a-sorted-array.cpp) [Python](./Python/sum-of-absolute-differences-in-a-sorted-array.py) | _O(n)_ | _O(1)_| Medium | |
+1688| [Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/) | [C++](./C++/count-of-matches-in-tournamenty.cpp) [Python](./Python/count-of-matches-in-tournament.py) | _O(1)_ | _O(1)_| Easy | |
 
 <br/>
 <div align="right">
@@ -1036,6 +1039,7 @@
 1521| [Find a Value of a Mysterious Function Closest to Target](https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target/)| [C++](./C++/find-a-value-of-a-mysterious-function-closest-to-target.cpp) [Python](./Python/find-a-value-of-a-mysterious-function-closest-to-target.py) | _O(nlogm)_    | _O(logm)_          | Hard           || DP, Two Pointers, Sliding Window
 1604 | [Alert Using Same Key-Card Three or More Times in a One Hour Period](https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/) | [C++](./C++/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period.cpp) [Python](./Python/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period.py) | _O(nlogn)_ | _O(n)_ | Medium | | Two Pointers, Sliding Window |
 1658| [Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | [C++](./C++/minimum-operations-to-reduce-x-to-zero.cpp) [Python](./Python/minimum-operations-to-reduce-x-to-zero.py) | _O(n)_ | _O(1)_ |  Medium | | Two Pointers |
+1687 | [Delivering Boxes from Storage to Ports](https://leetcode.com/problems/delivering-boxes-from-storage-to-ports/) | [C++](./C++/delivering-boxes-from-storage-to-ports.cpp) [Python](./Python/delivering-boxes-from-storage-to-ports.py) | _O(nlogn)_ | _O(n)_ | Hard | | Two Pointers, Sliding Window |
 
 <br/>
 <div align="right">
@@ -1550,6 +1554,9 @@
 1655| [Distribute Repeating Integers](https://leetcode.com/problems/distribute-repeating-integers/)| [C++](./C++/distribute-repeating-integers.cpp) [Python](./Python/distribute-repeating-integers.py) | _O(n + m * 3^m)_    | _O(n + 2^m)_          | Hard           | | Submask Enumeration
 1664| [Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/)| [C++](./C++/ways-to-make-a-fair-array.cpp) [Python](./Python/ways-to-make-a-fair-array.py) | _O(n)_    | _O(1)_          | Medium           | | Prefix Sum
 1681| [Minimum Incompatibility](https://leetcode.com/problems/minimum-incompatibility/)| [C++](./C++/minimum-incompatibility.cpp) [Python](./Python/minimum-incompatibility.py) | _O(max(n * 2^n, 3^n))_    | _O(2^n)_          | Hard           | | Combinations, Backtracking, Submask Enumeration
+1682 | [Longest Palindromic Subsequence II](https://leetcode.com/problems/longest-palindromic-subsequence-ii/) | [C++](./C++/longest-palindromic-subsequence-ii.cpp) [Python](./Python/longest-palindromic-subsequence-ii.py) | _O(n^2)_ | _O(n)_ | Medium ||🔒|
+1690 | [Stone Game VII](https://leetcode.com/problems/stone-game-vii/) | [C++](./C++/stone-game-vii.cpp) [Python](./Python/stone-game-vii.py) | _O(n^2)_ | _O(n)_ | Medium |||
+1691 | [Maximum Height by Stacking Cuboids](https://leetcode.com/problems/maximum-height-by-stacking-cuboids/) | [C++](./C++/maximum-height-by-stacking-cuboids.cpp) [Python](./Python/maximum-height-by-stacking-cuboids.py) | _O(n^2)_ | _O(n)_ | Hard |||
 
 <br/>
 <div align="right">
@@ -1656,6 +1663,8 @@
 1665 | [Minimum Initial Energy to Finish Tasks](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/) | [C++](./C++/minimum-initial-energy-to-finish-tasks.cpp) [Python](./Python/minimum-initial-energy-to-finish-tasks.py) | _O(nlogn)_ | _O(1)_ | Hard ||
 1673 | [Find the Most Competitive Subsequence](https://leetcode.com/problems/find-the-most-competitive-subsequence/) | [C++](./C++/find-the-most-competitive-subsequence.cpp) [Python](./Python/find-the-most-competitive-subsequence.py) | _O(n)_ | _O(k)_ | Meidum || Stack, Greedy
 1674 | [Minimum Moves to Make Array Complementary](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/) | [C++](./C++/minimum-moves-to-make-array-complementary.cpp) [Python](./Python/minimum-moves-to-make-array-complementary.py) | _O(n + k)_ | _O(k)_ | Meidum ||
+1686 | [Stone Game VI](https://leetcode.com/problems/stone-game-vi/) | [C++](./C++/stone-game-vi.cpp) [Python](./Python/stone-game-vi.py) | _O(nlogn)_ | _O(n)_ | Medium ||
+1689 | [Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) | [C++](./C++/partitioning-into-minimum-number-of-deci-binary-numbers.cpp) [Python](./Python/partitioning-into-minimum-number-of-deci-binary-numbers.py) | _O(n)_ | _O(1)_ | Medium ||
 
 <br/>
 <div align="right">
@@ -1914,6 +1923,7 @@
 1661| [Average Time of Process per Machine](https://leetcode.com/problems/average-time-of-process-per-machine/) | [MySQL](./MySQL/average-time-of-process-per-machine.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1667| [Fix Names in a Table](https://leetcode.com/problems/fix-names-in-a-table/) | [MySQL](./MySQL/fix-names-in-a-table.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 1677| [Product's Worth Over Invoices](https://leetcode.com/problems/products-worth-over-invoices/) | [MySQL](./MySQL/products-worth-over-invoices.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+1683| [Invalid Tweets](https://leetcode.com/problems/invalid-tweets/) | [MySQL](./MySQL/invalid-tweets.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
