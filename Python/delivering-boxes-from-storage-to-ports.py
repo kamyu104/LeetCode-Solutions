@@ -18,7 +18,7 @@ class Solution(object):
             curr += boxes[right][1]
             while right-left+1 > maxBoxes or \
                   curr > maxWeight or \
-                  (left+1 < right+1 and dp[left+1] == dp[left]):
+                  (left+1 < right+1 and dp[left+1] == dp[left]):  # greedily drop box to make cost as smaller as possible
                 curr -= boxes[left][1]
                 if boxes[left+1][0] != boxes[left][0]:
                     cost -= 1
