@@ -13,7 +13,7 @@ public:
             curr += boxes[right][1];
             while (right - left + 1 > maxBoxes ||
                    curr > maxWeight ||
-                   (left + 1 < right + 1 && dp[left + 1] == dp[left])) {
+                   (left + 1 < right + 1 && dp[left + 1] == dp[left])) {  // greedily drop box to make cost as smaller as possible
                 curr -= boxes[left][1];
                 if (boxes[left + 1][0] != boxes[left][0]) {
                     --cost;
