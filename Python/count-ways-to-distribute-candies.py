@@ -9,8 +9,8 @@ class Solution(object):
         :rtype: int
         """
         MOD = 10**9+7
-        dp = [1]*(k+1)
+        dp = [1]*k
         for i in xrange(1, n):
-            for j in reversed(xrange(2, min(i, k)+1)):
-                dp[j] = (j*dp[j] + dp[j-1]) % MOD
-        return dp[k]
+            for j in reversed(xrange(1, min(i, k))):
+                dp[j] = ((j+1)*dp[j] + dp[j-1]) % MOD
+        return dp[k-1]
