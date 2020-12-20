@@ -12,9 +12,7 @@ public:
             }
         }
         int dst_len = src_len + (src_len - 1) / 3;
-        if (dst_len > size(number)) {  // make sure the size of result buffer is enough
-            number.resize(dst_len);
-        }
+        number.resize(dst_len);  // resize the buffer to expected final size
         for (int i = src_len - 1, curr = dst_len - 1, l = (3 - src_len % 3) % 3; i >= 0; --i, ++l) {
             if (l && l % 3 == 0) {  // group by 3 digits
                 number[curr--] = '-';
@@ -23,9 +21,6 @@ public:
         }
         if (dst_len >= 3 && number[dst_len - 2] == '-') {  // adjust for the 4 digits case
             swap(number[dst_len - 3], number[dst_len - 2]);
-        }
-        if (dst_len < size(number)) {  // resize the result buffer
-            number.resize(dst_len);
         }
         return number;
     }
