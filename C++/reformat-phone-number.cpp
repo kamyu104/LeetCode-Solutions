@@ -6,9 +6,9 @@ class Solution {
 public:
     string reformatNumber(string number) {
         int src_len = 0;
-        for (int i = 0; i < size(number); ++i) {  // remove non-digit characters
-            if (isdigit(number[i])) {
-                number[src_len++] = number[i];
+        for (const auto& c : number) {  // remove non-digit characters
+            if (isdigit(c)) {
+                number[src_len++] = c;
             }
         }
         int dst_len = src_len + (src_len - 1) / 3;
