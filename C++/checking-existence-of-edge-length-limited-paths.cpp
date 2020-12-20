@@ -9,6 +9,7 @@ public:
         }
         sort(begin(edgeList), end(edgeList), [&](const auto& a, const auto& b) { return a[2] < b[2]; });
         sort(begin(queries), end(queries), [&](const auto& a, const auto& b) { return a[2] < b[2]; });
+        
         UnionFind union_find(n);
         vector<bool> result(size(queries));
         int curr = 0;
