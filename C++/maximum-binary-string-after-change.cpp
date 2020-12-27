@@ -13,7 +13,7 @@ public:
             }
             c = '1';
         }
-        if (ones < size(binary)) {
+        if (ones != size(binary)) {
             binary[ones + zeros - 1] = '0';
         }
         return binary;
