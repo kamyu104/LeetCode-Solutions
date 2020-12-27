@@ -19,9 +19,9 @@ public:
                             };
         uint64_t result = numeric_limits<uint64_t>::max();
         for (int i = 0; i < size(idxs) - k + 1; ++i) {
-            result = min(result, -score(i, i + (k + 1) / 2 - 1) + score(i + k / 2, i + k - 1));
+            result = min(result, -score(i, i + (k + 1) / 2 - 1) + score(i + k / 2, i + k - 1));  // take each i+k//2 as median, find min dist to median
         }
-        result -= (k / 2) * ((k + 1) / 2);
+        result -= (k / 2) * ((k + 1) / 2);  // rollback extra moves to the expected positions
         return result;
     }
 };
