@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1697%20%2F%201697-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1707%20%2F%201707-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -91,6 +91,7 @@
 1318 | [Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/) | [C++](./C++/minimum-flips-to-make-a-or-b-equal-to-c.cpp) [Python](./Python/minimum-flips-to-make-a-or-b-equal-to-c.py) | _O(1)_ | _O(1)_ | Medium ||
 1342 | [Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/) | [C++](./C++/number-of-steps-to-reduce-a-number-to-zero.cpp) [Python](./Python/number-of-steps-to-reduce-a-number-to-zero.py) | _O(logn)_ | _O(1)_ | Easy ||
 1558 | [Minimum Numbers of Function Calls to Make Target Array](https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/) | [C++](./C++/minimum-numbers-of-function-calls-to-make-target-array.cpp) [Python](./Python/minimum-numbers-of-function-calls-to-make-target-array.py) | _O(nlogn)_ | _O(1)_ | Medium || Greedy
+1707 | [Maximum XOR With an Element From Array](https://leetcode.com/problems/maximum-xor-with-an-element-from-array/) | [C++](./C++/maximum-xor-with-an-element-from-array.cpp) [Python](./Python/maximum-xor-with-an-element-from-array.py) | _O(nlogn + mlogm)_ | _O(n)_ | Hard || Greedy, Trie
 
 <br/>
 <div align="right">
@@ -288,6 +289,9 @@
 1646 | [Get Maximum in Generated Array](https://leetcode.com/problems/get-maximum-in-generated-array/) | [C++](./C++/get-maximum-in-generated-array.cpp) [Python](./Python/get-maximum-in-generated-array.py) | _O(n)_ | _O(n)_ | Easy ||
 1652 | [Defuse the Bomb](https://leetcode.com/problems/defuse-the-bomb/) | [C++](./C++/defuse-the-bomb.cpp) [Python](./Python/defuse-the-bomb.py) | _O(n)_ | _O(1)_ | Easy ||
 1672 | [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | [C++](./C++/richest-customer-wealth.cpp) [Python](./Python/richest-customer-wealth.py) | _O(m * n)_ | _O(1)_ | Easy ||
+1700 | [Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/) | [C++](./C++/number-of-students-unable-to-eat-lunch.cpp) [Python](./Python/number-of-students-unable-to-eat-lunch.py) | _O(n)_ | _O(1)_ | Easy ||
+1701 | [Average Waiting Time](https://leetcode.com/problems/average-waiting-time/) | [C++](./C++/average-waiting-time.cpp) [Python](./Python/average-waiting-time.py) | _O(n)_ | _O(1)_ | Medium ||
+1706 | [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall/) | [C++](./C++/where-will-the-ball-fall.cpp) [Python](./Python/where-will-the-ball-fall.py) | _O(m * n)_ | _O(1)_ | Medium ||
 
 <br/>
 <div align="right">
@@ -435,6 +439,8 @@
 1678| [Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/) | [C++](./C++/goal-parser-interpretation.cpp) [Python](./Python/goal-parser-interpretation.py) | _O(n)_ | _O(1)_ | Easy |||
 1684| [Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings/) | [C++](./C++/count-the-number-of-consistent-strings.cpp) [Python](./Python/count-the-number-of-consistent-strings.py) | _O(n)_ | _O(1)_ | Easy |||
 1694| [Reformat Phone Number](https://leetcode.com/problems/reformat-phone-number/) | [C++](./C++/reformat-phone-number.cpp) [Python](./Python/reformat-phone-number.py) | _O(n)_ | _O(1)_ | Easy || Inplace |
+1698| [Number of Distinct Substrings in a String](https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/) | [C++](./C++/number-of-distinct-substrings-in-a-string.cpp) [Python](./Python/number-of-distinct-substrings-in-a-string.py) | _O(n^2)_ | _O(t)_ | Medium | 🔒 | Trie |
+1704| [Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/) | [C++](./C++/determine-if-string-halves-are-alike.cpp) [Python](./Python/determine-if-string-halves-are-alike.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -974,6 +980,7 @@
 1680| [Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/) | [C++](./C++/concatenation-of-consecutive-binary-numbers.cpp) [Python](./Python/concatenation-of-consecutive-binary-numbers.py) | _O(n)_ | _O(1)_| Medium | |
 1685| [Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/) | [C++](./C++/sum-of-absolute-differences-in-a-sorted-array.cpp) [Python](./Python/sum-of-absolute-differences-in-a-sorted-array.py) | _O(n)_ | _O(1)_| Medium | |
 1688| [Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/) | [C++](./C++/count-of-matches-in-tournament.cpp) [Python](./Python/count-of-matches-in-tournament.py) | _O(1)_ | _O(1)_| Easy | |
+1703| [Minimum Adjacent Swaps for K Consecutive Ones](https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/) | [C++](./C++/minimum-adjacent-swaps-for-k-consecutive-ones.cpp) [Python](./Python/minimum-adjacent-swaps-for-k-consecutive-ones.py) | _O(n)_ | _O(n)_| Hard | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -1669,6 +1676,8 @@
 1674 | [Minimum Moves to Make Array Complementary](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/) | [C++](./C++/minimum-moves-to-make-array-complementary.cpp) [Python](./Python/minimum-moves-to-make-array-complementary.py) | _O(n + k)_ | _O(k)_ | Meidum ||
 1686 | [Stone Game VI](https://leetcode.com/problems/stone-game-vi/) | [C++](./C++/stone-game-vi.cpp) [Python](./Python/stone-game-vi.py) | _O(nlogn)_ | _O(n)_ | Medium ||
 1689 | [Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) | [C++](./C++/partitioning-into-minimum-number-of-deci-binary-numbers.cpp) [Python](./Python/partitioning-into-minimum-number-of-deci-binary-numbers.py) | _O(n)_ | _O(1)_ | Medium ||
+1702 | [Maximum Binary String After Change](https://leetcode.com/problems/maximum-binary-string-after-change/) | [C++](./C++/maximum-binary-string-after-change.cpp) [Python](./Python/maximum-binary-string-after-change.py) | _O(n)_ | _O(1)_ | Medium ||
+1705 | [Maximum Number of Eaten Apples](https://leetcode.com/problems/maximum-number-of-eaten-apples/) | [C++](./C++/maximum-number-of-eaten-apples.cpp) [Python](./Python/maximum-number-of-eaten-apples.py) | _O(nlogn)_ | _O(n)_ | Medium || Heap
 
 <br/>
 <div align="right">
@@ -1930,6 +1939,7 @@
 1677| [Product's Worth Over Invoices](https://leetcode.com/problems/products-worth-over-invoices/) | [MySQL](./MySQL/products-worth-over-invoices.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 1683| [Invalid Tweets](https://leetcode.com/problems/invalid-tweets/) | [MySQL](./MySQL/invalid-tweets.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1693| [Daily Leads and Partners](https://leetcode.com/problems/daily-leads-and-partners/) | [MySQL](./MySQL/daily-leads-and-partners.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+1699| [Number of Calls Between Two Persons](https://leetcode.com/problems/number-of-calls-between-two-persons/) | [MySQL](./MySQL/number-of-calls-between-two-persons.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
