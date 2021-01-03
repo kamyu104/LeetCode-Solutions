@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1707%20%2F%201707-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1713%20%2F%201713-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -768,6 +768,7 @@
 1640| [Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/) | [C++](./C++/check-array-formation-through-concatenation.cpp) [Python](./Python/check-array-formation-through-concatenation.py) | _O(n)_   | _O(n)_        | Easy         ||
 1657| [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/) | [C++](./C++/determine-if-two-strings-are-close.cpp) [Python](./Python/determine-if-two-strings-are-close.py) | _O(n)_   | _O(1)_        | Medium         ||
 1679| [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/) | [C++](./C++/max-number-of-k-sum-pairs.cpp) [Python](./Python/max-number-of-k-sum-pairs.py) | _O(n)_   | _O(n)_        | Medium         ||
+1711| [Count Good Meals](https://leetcode.com/problems/count-good-meals/)      | [C++](./C++/count-good-meals.cpp) [Python](./Python/count-good-meals.py)      | _O(n)_         | _O(1)_          | Medium         ||
 
 <br/>
 <div align="right">
@@ -1050,6 +1051,7 @@
 1658| [Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | [C++](./C++/minimum-operations-to-reduce-x-to-zero.cpp) [Python](./Python/minimum-operations-to-reduce-x-to-zero.py) | _O(n)_ | _O(1)_ |  Medium | | Two Pointers |
 1687 | [Delivering Boxes from Storage to Ports](https://leetcode.com/problems/delivering-boxes-from-storage-to-ports/) | [C++](./C++/delivering-boxes-from-storage-to-ports.cpp) [Python](./Python/delivering-boxes-from-storage-to-ports.py) | _O(nlogn)_ | _O(n)_ | Hard | | Two Pointers, Sliding Window |
 1695 | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/) | [C++](./C++/maximum-erasure-value.cpp) [Python](./Python/maximum-erasure-value.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers, Sliding Window |
+1712 | [Ways to Split Array Into Three Subarrays](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/) | [C++](./C++/ways-to-split-array-into-three-subarrays.cpp) [Python](./Python/ways-to-split-array-into-three-subarrays.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers, Prefix Sum |
 
 <br/>
 <div align="right">
@@ -1158,6 +1160,7 @@
 1618 | [Maximum Font to Fit a Sentence in a Screen](https://leetcode.com/problems/maximum-font-to-fit-a-sentence-in-a-screen/) | [C++](./C++/maximum-font-to-fit-a-sentence-in-a-screen.cpp) [Python](./Python/maximum-font-to-fit-a-sentence-in-a-screen.py) | _O(n + logm)_ | _O(1)_ | Medium |🔒|
 1648 | [Sell Diminishing-Valued Colored Balls](https://leetcode.com/problems/sell-diminishing-valued-colored-balls/) | [C++](./C++/sell-diminishing-valued-colored-balls.cpp) [Python](./Python/sell-diminishing-valued-colored-balls.py) | _O(nlogm)_ | _O(1)_ | Medium | |
 1671| [Minimum Number of Removals to Make Mountain Array](https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/) | [C++](./C++/minimum-number-of-removals-to-make-mountain-array.cpp)  [Python](./Python/minimum-number-of-removals-to-make-mountain-array.py)  | _O(nlogn)_ | _O(n)_ | Medium         | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Binary Search, DP|
+1713| [Minimum Operations to Make a Subsequence](https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/) | [C++](./C++/minimum-operations-to-make-a-subsequence.cpp)  [Python](./Python/minimum-operations-to-make-a-subsequence.py)  | _O(nlogn)_ | _O(n)_ | Hard         | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Binary Search, Segment Tree |
 
 <br/>
 <div align="right">
@@ -1235,7 +1238,6 @@
 1136| [Parallel Courses](https://leetcode.com/problems/parallel-courses/)| [C++](./C++/parallel-courses.cpp) [Python](./Python/parallel-courses.py)   | _O(\|V\| + \|E\|)_         | _O(\|E\|)_          | Hard         |🔒| Topological Sort |
 1161|[Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)| [C++](./C++/maximum-level-sum-of-a-binary-tree.cpp) [Python](./Python/maximum-level-sum-of-a-binary-tree.py)| _O(n)_ | _O(w)_ | Medium | | DFS |
 1162|[As Far from Land as Possible](https://leetcode.com/problems/as-far-from-land-as-possible/)| [C++](./C++/as-far-from-land-as-possible.cpp) [Python](./Python/as-far-from-land-as-possible.py)| _O(m * n)_ | _O(m * n)_ | Medium | | |
-1163|[Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order/)| [C++](./C++/last-substring-in-lexicographical-order.cpp) [Python](./Python/last-substring-in-lexicographical-order.py)| _O(n)_ | _O(1)_ | Hard | | |
 1203| [Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/)| [C++](./C++/sort-items-by-groups-respecting-dependencies.cpp) [Python](./Python/sort-items-by-groups-respecting-dependencies.py)   | _O(n + e)_          | _O(n + e)_          | Hard         || Topological Sort |
 1210| [Minimum Moves to Reach Target with Rotations](https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/)| [C++](./C++/minimum-moves-to-reach-target-with-rotations.cpp) [Python](./Python/minimum-moves-to-reach-target-with-rotations.py)   | _O(n)_          | _O(n)_          | Hard         |||
 1215| [Stepping Numbers](https://leetcode.com/problems/stepping-numbers/)| [C++](./C++/stepping-numbers.cpp) [Python](./Python/stepping-numbers.py)   | _O(logk + r)_          | _O(k)_          | Medium         |🔒| Precompute, Binary Search |
@@ -1626,6 +1628,7 @@
 1081| [Smallest Subsequence of Distinct Characters](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/) | [C++](./C++/smallest-subsequence-of-distinct-characters.cpp) [Python](./Python/smallest-subsequence-of-distinct-characters.py) | _O(n)_| _O(1)_| Medium | same as [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) | Mono Stack |
 1090 | [Largest Values From Labels](https://leetcode.com/problems/largest-values-from-labels/) | [C++](./C++/largest-values-from-labels.cpp) [Python](./Python/largest-values-from-labels.py) | _O(nlogn)_ | _O(n)_ | Medium ||
 1111 | [Maximum Nesting Depth of Two Valid Parentheses Strings](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/) | [C++](./C++/maximum-nesting-depth-of-two-valid-parentheses-strings.cpp) [Python](./Python/maximum-nesting-depth-of-two-valid-parentheses-strings.py) | _O(n)_ | _O(1)_ | Medium ||
+1163|[Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order/)| [C++](./C++/last-substring-in-lexicographical-order.cpp) [Python](./Python/last-substring-in-lexicographical-order.py)| _O(n)_ | _O(1)_ | Hard | | |
 1167| [Minimum Cost to Connect Sticks](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) | [C++](./C++/minimum-cost-to-connect-sticks.cpp) [Python](./Python/minimum-cost-to-connect-sticks.py) |  _O(nlogn)_ | _O(n)_   | Medium |🔒|| Heap
 1183| [Maximum Number of Ones](https://leetcode.com/problems/maximum-number-of-ones/) | [C++](./C++/maximum-number-of-ones.cpp) [Python](./Python/maximum-number-of-ones.py) |  _O(1)_ | _O(1)_   | Hard |🔒||
 1196 | [How Many Apples Can You Put into the Basket](https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/) | [C++](./C++/how-many-apples-can-you-put-into-the-basket.cpp) [Python](./Python/how-many-apples-can-you-put-into-the-basket.py) | _O(nlogn)_ | _O(n)_ | Easy |🔒|
@@ -1678,6 +1681,8 @@
 1689 | [Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) | [C++](./C++/partitioning-into-minimum-number-of-deci-binary-numbers.cpp) [Python](./Python/partitioning-into-minimum-number-of-deci-binary-numbers.py) | _O(n)_ | _O(1)_ | Medium ||
 1702 | [Maximum Binary String After Change](https://leetcode.com/problems/maximum-binary-string-after-change/) | [C++](./C++/maximum-binary-string-after-change.cpp) [Python](./Python/maximum-binary-string-after-change.py) | _O(n)_ | _O(1)_ | Medium ||
 1705 | [Maximum Number of Eaten Apples](https://leetcode.com/problems/maximum-number-of-eaten-apples/) | [C++](./C++/maximum-number-of-eaten-apples.cpp) [Python](./Python/maximum-number-of-eaten-apples.py) | _O(nlogn)_ | _O(n)_ | Medium || Heap
+1708|[Largest Subarray Length K](https://leetcode.com/problems/largest-subarray-length-k/)| [C++](./C++/largest-subarray-length-k.cpp) [Python](./Python/largest-subarray-length-k.py)| _O(n)_ | _O(1)_ | Easy | 🔒, variant of [Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order/) | |
+1710|[Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/)| [C++](./C++/maximum-units-on-a-truck.cpp) [Python](./Python/maximum-units-on-a-truck.py)| _O(nlogn)_ | _O(1)_ | Easy | | |
 
 <br/>
 <div align="right">
@@ -1940,6 +1945,7 @@
 1683| [Invalid Tweets](https://leetcode.com/problems/invalid-tweets/) | [MySQL](./MySQL/invalid-tweets.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1693| [Daily Leads and Partners](https://leetcode.com/problems/daily-leads-and-partners/) | [MySQL](./MySQL/daily-leads-and-partners.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1699| [Number of Calls Between Two Persons](https://leetcode.com/problems/number-of-calls-between-two-persons/) | [MySQL](./MySQL/number-of-calls-between-two-persons.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
+1709| [Biggest Window Between Visits](https://leetcode.com/problems/biggest-window-between-visits/) | [MySQL](./MySQL/biggest-window-between-visits.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
