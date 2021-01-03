@@ -18,6 +18,6 @@ public:
             }
             l = 0;
         }
-        return vector<int>(cbegin(nums) + left, cbegin(nums) + left + k);
+        return {cbegin(nums) + left, cbegin(nums) + left + k};
     }
 };
