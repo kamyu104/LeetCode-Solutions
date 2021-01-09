@@ -8,6 +8,8 @@ class Solution(object):
         :type T: int
         :rtype: int
         """
+        if T == 0:
+            return 0
         result = 1
         curr_reachable, reachable = 0, 0
         clips.sort()
