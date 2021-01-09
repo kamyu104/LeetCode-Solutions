@@ -4,6 +4,9 @@
 class Solution {
 public:
     int videoStitching(vector<vector<int>>& clips, int T) {
+        if (T == 0) {
+            return 0;
+        }
         int result = 1;
         int curr_reachable = 0, reachable = 0;
         sort(clips.begin(), clips.end());
