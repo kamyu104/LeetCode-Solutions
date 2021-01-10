@@ -10,5 +10,5 @@ class Solution(object):
         """
         result = [first]
         for x in encoded:
-            result.append(x^result[-1])
+            result.append(result[-1]^x)
         return result
