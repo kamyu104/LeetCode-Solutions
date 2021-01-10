@@ -40,7 +40,7 @@ private:
                 continue;
             }
             (*lookup)[node] = true;
-            (*idxs).emplace_back(node);
+            idxs->emplace_back(node);
             for (const auto& child : adj[node]) {
                 stk.emplace_back(child);
             }
