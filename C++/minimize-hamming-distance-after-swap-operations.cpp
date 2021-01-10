@@ -30,12 +30,9 @@ public:
     }
 
 private:
-    void iter_flood_fill(
-        const vector<unordered_set<int>>& adj,
-        int node,
-        vector<bool> *lookup,
-        vector<int> *idxs) {
-        
+    void iter_flood_fill(const vector<unordered_set<int>>& adj,
+                         int node,
+                         vector<bool> *lookup, vector<int> *idxs) {
         vector<int> stk = {node};
         while (!empty(stk)) {
             auto node = stk.back(); stk.pop_back();
@@ -44,7 +41,6 @@ private:
             }
             (*lookup)[node] = true;
             (*idxs).emplace_back(node);
-            
             for (const auto& child : adj[node]) {
                 stk.emplace_back(child);
             }
