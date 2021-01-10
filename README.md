@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1713%20%2F%201713-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1723%20%2F%201723-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -292,6 +292,8 @@
 1700 | [Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/) | [C++](./C++/number-of-students-unable-to-eat-lunch.cpp) [Python](./Python/number-of-students-unable-to-eat-lunch.py) | _O(n)_ | _O(1)_ | Easy ||
 1701 | [Average Waiting Time](https://leetcode.com/problems/average-waiting-time/) | [C++](./C++/average-waiting-time.cpp) [Python](./Python/average-waiting-time.py) | _O(n)_ | _O(1)_ | Medium ||
 1706 | [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall/) | [C++](./C++/where-will-the-ball-fall.cpp) [Python](./Python/where-will-the-ball-fall.py) | _O(m * n)_ | _O(1)_ | Medium ||
+1714 | [Sum Of Special Evenly-Spaced Elements In Array](https://leetcode.com/problems/sum-of-special-evenly-spaced-elements-in-array/) | [C++](./C++/sum-of-special-evenly-spaced-elements-in-array.cpp) [Python](./Python/sum-of-special-evenly-spaced-elements-in-array.py) | _O(n * sqrt(n))_ | _O(n * sqrt(n))_ | Hard | 	🔒 |
+1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array/) | [C++](./C++/decode-xored-array.cpp) [Python](./Python/decode-xored-array.py) | _O(n)_ | _O(1)_ | Easy ||
 
 <br/>
 <div align="right">
@@ -481,6 +483,7 @@
 1634| [Add Two Polynomials Represented as Linked Lists](https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/)| [C++](./C++/add-two-polynomials-represented-as-linked-lists.cpp) [Python](./Python/add-two-polynomials-represented-as-linked-lists.py) | _O(m + n)_       | _O(1)_         | Medium         | 🔒 ||
 1650| [Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/)| [C++](./C++/lowest-common-ancestor-of-a-binary-tree-iii.cpp)  [Python](./Python/lowest-common-ancestor-of-a-binary-tree-iii.py) | _O(h)_ | _O(1)_         | Medium           |🔒, variant of [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) |
 1669| [Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/)| [C++](./C++/merge-in-between-linked-lists.cpp)  [Python](./Python/merge-in-between-linked-lists.py) | _O(m + n)_ | _O(1)_         | Medium           ||
+1721| [Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)| [C++](./C++/swapping-nodes-in-a-linked-list.cpp)  [Python](./Python/swapping-nodes-in-a-linked-list.py) | _O(n)_ | _O(1)_         | Medium           ||
 
 <br/>
 <div align="right">
@@ -982,6 +985,7 @@
 1685| [Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/) | [C++](./C++/sum-of-absolute-differences-in-a-sorted-array.cpp) [Python](./Python/sum-of-absolute-differences-in-a-sorted-array.py) | _O(n)_ | _O(1)_| Medium | |
 1688| [Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/) | [C++](./C++/count-of-matches-in-tournament.cpp) [Python](./Python/count-of-matches-in-tournament.py) | _O(1)_ | _O(1)_| Easy | |
 1703| [Minimum Adjacent Swaps for K Consecutive Ones](https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/) | [C++](./C++/minimum-adjacent-swaps-for-k-consecutive-ones.cpp) [Python](./Python/minimum-adjacent-swaps-for-k-consecutive-ones.py) | _O(n)_ | _O(n)_| Hard | | Prefix Sum
+1716| [Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/) | [C++](./C++/calculate-money-in-leetcode-bank.cpp) [Python](./Python/calculate-money-in-leetcode-bank.py) | _O(1)_ | _O(1)_| Easy | | Arithmetic Sequence
 
 <br/>
 <div align="right">
@@ -1323,6 +1327,7 @@
 1485| [Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer/) | [C++](./C++/clone-binary-tree-with-random-pointer.cpp) [Python](./Python/clone-binary-tree-with-random-pointer.py) | _O(n)_          | _O(h)_          | Medium           |🔒| DFS, Stack |
 1644| [Lowest Common Ancestor of a Binary Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/) | [C++](./C++/lowest-common-ancestor-of-a-binary-tree-ii.cpp) [Python](./Python/lowest-common-ancestor-of-a-binary-tree-ii.py) | _O(n)_          | _O(h)_          | Medium           |🔒| DFS, Stack |
 1676| [Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/) | [C++](./C++/lowest-common-ancestor-of-a-binary-tree-iv.cpp) [Python](./Python/lowest-common-ancestor-of-a-binary-tree-iv.py) | _O(n)_          | _O(h)_          | Medium           |🔒| DFS, Stack |
+1722| [Minimize Hamming Distance After Swap Operations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/) | [C++](./C++/minimize-hamming-distance-after-swap-operations.cpp) [Python](./Python/minimize-hamming-distance-after-swap-operations.py) | _O(n)_          | _O(n)_          | Medium           || Flood Fill, Union Find |
 
 <br/>
 <div align="right">
@@ -1375,6 +1380,8 @@
 1379 | [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) | [C++](./C++/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.cpp) [Python](./Python/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.py) | _O(n)_ | _O(h)_      | Medium         || Stack |
 1593 | [Split a String Into the Max Number of Unique Substrings](https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/) | [C++](./C++/split-a-string-into-the-max-number-of-unique-substrings.cpp) [Python](./Python/split-a-string-into-the-max-number-of-unique-substrings.py) | _O(n * 2^(n - 1))_ | _O(n)_      | Medium         |||
 1659 | [Maximize Grid Happiness](https://leetcode.com/problems/maximize-grid-happiness/) | [C++](./C++/maximize-grid-happiness.cpp) [Python](./Python/maximize-grid-happiness.py) | _O(C(m * n, i) * C(m * n - i, e))_ | _O(min(m * n, i + e))_      | Hard         || Pruning |
+1718 | [Construct the Lexicographically Largest Valid Sequence](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/) | [C++](./C++/construct-the-lexicographically-largest-valid-sequence.cpp) [Python](./Python/construct-the-lexicographically-largest-valid-sequence.py) | _O(n!)_ | _O(b)_      | Medium         || Backtracking |
+1723 | [Find Minimum Time to Finish All Jobs](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/) | [C++](./C++/find-minimum-time-to-finish-all-jobs.cpp) [Python](./Python/find-minimum-time-to-finish-all-jobs.py) | _O(k^n * logr)_ | _O(n + k)_      | Hard         || Backtracking, Pruning, Binary Search |
 
 <br/>
 <div align="right">
@@ -1683,6 +1690,7 @@
 1705 | [Maximum Number of Eaten Apples](https://leetcode.com/problems/maximum-number-of-eaten-apples/) | [C++](./C++/maximum-number-of-eaten-apples.cpp) [Python](./Python/maximum-number-of-eaten-apples.py) | _O(nlogn)_ | _O(n)_ | Medium || Heap
 1708|[Largest Subarray Length K](https://leetcode.com/problems/largest-subarray-length-k/)| [C++](./C++/largest-subarray-length-k.cpp) [Python](./Python/largest-subarray-length-k.py)| _O(n)_ | _O(1)_ | Easy | 🔒, variant of [Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order/) | |
 1710|[Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/)| [C++](./C++/maximum-units-on-a-truck.cpp) [Python](./Python/maximum-units-on-a-truck.py)| _O(nlogn)_ | _O(1)_ | Easy | | |
+1717|[Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings/)| [C++](./C++/maximum-score-from-removing-substrings.cpp) [Python](./Python/maximum-score-from-removing-substrings.py)| _O(n)_ | _O(1)_ | Medium | | |
 
 <br/>
 <div align="right">
@@ -1715,6 +1723,7 @@
 1627 | [Graph Connectivity With Threshold](https://leetcode.com/problems/graph-connectivity-with-threshold/)  | [C++](./C++/graph-connectivity-with-threshold.cpp) [Python](./Python/graph-connectivity-with-threshold.py) | _O(nlogn + q)_| _O(n)_| Hard           || Union Find, Math | 
 1631 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)  | [C++](./C++/path-with-minimum-effort.cpp) [Python](./Python/path-with-minimum-effort.py) | _O(m * n * log(m * n))_| _O(m * n)_| Medium           || Binary Search, DFS, BFS, Bi-BFS, Union Find, `Dijkstra's Algorithm` | 
 1697 | [Checking Existence of Edge Length Limited Paths](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/)  | [C++](./C++/checking-existence-of-edge-length-limited-paths.cpp) [Python](./Python/checking-existence-of-edge-length-limited-paths.py) | _O(nlogn + mlogm)_| _O(n)_| Hard           || Union Find | 
+1719 | [Number Of Ways To Reconstruct A Tree](https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/)  | [C++](./C++/number-of-ways-to-reconstruct-a-tree.cpp) [Python](./Python/number-of-ways-to-reconstruct-a-tree.py) | _O(nlogn)_| _O(n)_| Hard           ||| 
 
 <br/>
 <div align="right">
@@ -1946,6 +1955,7 @@
 1693| [Daily Leads and Partners](https://leetcode.com/problems/daily-leads-and-partners/) | [MySQL](./MySQL/daily-leads-and-partners.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1699| [Number of Calls Between Two Persons](https://leetcode.com/problems/number-of-calls-between-two-persons/) | [MySQL](./MySQL/number-of-calls-between-two-persons.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 1709| [Biggest Window Between Visits](https://leetcode.com/problems/biggest-window-between-visits/) | [MySQL](./MySQL/biggest-window-between-visits.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+1715| [Count Apples and Oranges](https://leetcode.com/problems/count-apples-and-oranges/) | [MySQL](./MySQL/count-apples-and-oranges.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
