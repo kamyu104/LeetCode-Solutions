@@ -19,7 +19,6 @@ public:
              [&adj](const auto& a, const auto& b) {
                  return size(adj[a]) > size(adj[b]);
              });
-        int result = 1;
         for (const auto& node : nodes) {
             lookup.emplace(node);
             int parent = 0;
@@ -42,6 +41,6 @@ public:
                 return 0;
             }
         }
-        return result + mul;
+        return 1 + mul;
     }
 };
