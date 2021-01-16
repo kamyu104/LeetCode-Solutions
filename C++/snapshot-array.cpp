@@ -9,9 +9,9 @@ public:
     
     void set(int index, int val) {
         if (!A_.count(index)) {
-            A_[index].emplace_back(-1, 0);
+            A_[index][0] = 0;
         }
-        A_[index].emplace_back(snap_id_, val);
+        A_[index][snap_id_] = val;
     }
     
     int snap() {
@@ -20,15 +20,14 @@ public:
     
     int get(int index, int snap_id) {
         if (!A_.count(index)) {
-            A_[index].emplace_back(-1, 0);
+            A_[index][0] = 0;
         }
-        const auto& it = prev(upper_bound(A_[index].cbegin(), A_[index].cend(),
-                                          make_pair(snap_id + 1, 0)));
+        const auto& it = prev(A_[index].upper_bound(snap_id));
         return it->second;
     }
 
 private:
-    unordered_map<int, vector<pair<int, int>>> A_;
+    unordered_map<int, map<int, int>> A_;
     int snap_id_ = 0;
 };
 
