@@ -72,6 +72,7 @@ class UnionFind(object):  # Time: (n * α(n)), Space: O(n)
     def snap(self):
         self.snap_id += 1
 
+
 class DistanceLimitedPathsExist(object):
 
     def __init__(self, n, edgeList):
