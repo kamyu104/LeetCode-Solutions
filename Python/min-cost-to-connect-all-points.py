@@ -30,7 +30,7 @@ class Solution(object):
 class UnionFind(object):  # Time: (n * α(n)), Space: O(n)
     def __init__(self, n):
         self.set = range(n)
-        self.rank = range(n)
+        self.rank = [0]*n
 
     def find_set(self, x):
         stk = []
