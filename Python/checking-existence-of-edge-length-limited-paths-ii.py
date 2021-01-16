@@ -39,6 +39,7 @@ class SnapshotArray(object):
  
 
 class UnionFind(object):  # Time: (n * α(n)), Space: O(n)
+
     def __init__(self, n):
         self.snap_id = 0
         self.set = SnapshotArray(n)
