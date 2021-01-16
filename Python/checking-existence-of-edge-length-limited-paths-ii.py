@@ -15,7 +15,6 @@ class SnapshotArray(object):
         """
         self.__snaps = collections.defaultdict(lambda:sortedcontainers.SortedList([(0, 0)]))
 
-
     def set(self, index, val, snap_id):
         """
         :type index: int
@@ -26,7 +25,6 @@ class SnapshotArray(object):
         if i != len(self.__snaps[index]) and self.__snaps[index][i][0] == snap_id:
             self.__snaps[index].remove(self.__snaps[index][i])
         self.__snaps[index].add((snap_id, val))
-
 
     def get(self, index, snap_id):
         """
