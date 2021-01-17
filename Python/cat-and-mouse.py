@@ -22,13 +22,13 @@ class Solution(object):
                     if nc != HOLE:
                         yield m, nc, MOUSE^CAT^t
 
-        color = collections.defaultdict(int)
         degree = {}
         ignore = set(graph[HOLE])
         for m in xrange(len(graph)):
             for c in xrange(len(graph)):
                 degree[m, c, MOUSE] = len(graph[m])
                 degree[m, c, CAT] = len(graph[c])-(c in ignore)
+        color = collections.defaultdict(int)
         q = collections.deque()
         for i in xrange(len(graph)):
             if i == HOLE:
