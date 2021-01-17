@@ -33,9 +33,9 @@ class Solution(object):
         for i in xrange(len(graph)):
             if i == HOLE:
                 continue
+            color[HOLE, i, CAT] = MOUSE
+            q.append((HOLE, i, CAT, MOUSE))
             for t in [MOUSE, CAT]:
-                color[HOLE, i, t] = MOUSE
-                q.append((HOLE, i, t, MOUSE))
                 color[i, i, t] = CAT
                 q.append((i, i, t, CAT))
         while q:
