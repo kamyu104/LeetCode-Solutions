@@ -41,9 +41,6 @@ class TreeInfos(object):  # Time: O(NlogN), Space: O(NlogN), N is the number of 
             while stk:
                 stk.pop()()
         self.L, self.R, self.P, self.W = L, R, P, W
-
-    def size(self, curr):
-        return self.R[curr]-self.L[curr]+1
     
     def is_ancestor(self, a, b):  # includes itself
         return self.L[a] <= self.L[b] <= self.R[b] <= self.R[a]
