@@ -15,8 +15,7 @@ class Solution(object):
         def parents(m, c, t):
             if t == CAT:
                 for nm in graph[m]:
-                    if nm != HOLE:
-                        yield nm, c, MOUSE^CAT^t
+                    yield nm, c, MOUSE^CAT^t
             else:
                 for nc in graph[c]:
                     if nc != HOLE:
@@ -73,7 +72,8 @@ class Solution2(object):
                     yield nm
             else:
                 for nc in graph[c]:
-                    yield nc
+                    if nc != HOLE:
+                        yield nc
 
         color = collections.defaultdict(int)
         degree = {}
@@ -96,12 +96,12 @@ class Solution2(object):
             i, j, t = q1.popleft()
             if t == CAT:
                 for ni in parents(i, j, t):
-                    if ni != HOLE and j != HOLE and ni != j and color[ni, j, MOUSE] == DRAW:
+                    if color[ni, j, MOUSE] == DRAW:
                         color[ni, j, MOUSE] = MOUSE
                         q1.append((ni, j, MOUSE))
             else:
                 for nj in parents(i, j, t):
-                    if i != HOLE and nj != HOLE and i != nj and color[i, nj, CAT] == DRAW:
+                    if color[i, nj, CAT] == DRAW:
                         degree[i, nj, CAT] -= 1
                         if not degree[i, nj, CAT]:
                             color[i, nj, CAT] = MOUSE
@@ -110,12 +110,12 @@ class Solution2(object):
             i, j, t = q2.popleft()
             if t == MOUSE:
                 for nj in parents(i, j, t):
-                    if i != HOLE and nj != HOLE and i != nj and color[i, nj, CAT] == DRAW:
+                    if color[i, nj, CAT] == DRAW:
                         color[i, nj, CAT] = CAT
                         q2.append((i, nj, CAT))
             else:
                 for ni in parents(i, j, t):
-                    if ni != HOLE and j != HOLE and ni != j and color[ni, j, MOUSE] == DRAW:
+                    if color[ni, j, MOUSE] == DRAW:
                         degree[ni, j, MOUSE] -= 1
                         if not degree[ni, j, MOUSE]:
                             color[ni, j, MOUSE] = CAT
