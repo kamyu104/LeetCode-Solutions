@@ -1,6 +1,90 @@
 # Time:  O((m * n)^2 * (m + n))
 # Space: O((m * n)^2)
+
 class Solution(object):
+    def canMouseWin(self, grid, catJump, mouseJump):
+        """
+        :type grid: List[str]
+        :type catJump: int
+        :type mouseJump: int
+        :rtype: bool
+        """
+        directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+        DRAW, MOUSE, CAT = 0, 1, 2
+        def parents(m, c, t):
+            if t == CAT:
+                for nm in graph[m, MOUSE^CAT^t]:
+                    if nm != FOOD:
+                        yield nm, c, MOUSE^CAT^t
+            else:
+                for nc in graph[c, MOUSE^CAT^t]:
+                    if nc != FOOD:
+                        yield m, nc, MOUSE^CAT^t
+
+        R, C = len(grid), len(grid[0])
+        N = R*C
+        WALLS = set()
+        FOOD, MOUSE_START, CAT_START = [-1]*3
+        for i in xrange(R):
+            for j in xrange(C):
+                if grid[i][j] == 'M':
+                    MOUSE_START = i*C + j
+                elif grid[i][j] == 'C':
+                    CAT_START = i*C + j
+                elif grid[i][j] == 'F':
+                    FOOD = i*C + j
+                elif grid[i][j] == '#':
+                    WALLS.add(i*C + j)
+
+        graph = collections.defaultdict(set)
+        jump = {MOUSE:mouseJump, CAT:catJump}
+        for r in xrange(R):
+            for c in xrange(C):
+                if grid[r][c] == '#':
+                    continue
+                pos = r*C + c
+                for t in [MOUSE, CAT]:
+                    for dr, dc in directions:
+                        for d in xrange(jump[t]+1):
+                            nr, nc = r+dr*d, c+dc*d
+                            if not (0 <= nr < R and 0 <= nc < C and grid[nr][nc] != '#'):
+                                break
+                            graph[pos, t].add(nr*C + nc)
+
+        degree = {}
+        for m in xrange(N):
+            for c in xrange(N):
+                degree[m, c, CAT] = len(graph[c, CAT])
+                degree[m, c, MOUSE] = len(graph[m, MOUSE])
+        color = collections.defaultdict(int)
+        q = collections.deque()
+        for i in xrange(N):
+            if i in WALLS or i == FOOD:
+                continue
+            color[FOOD, i, CAT] = MOUSE
+            q.append((FOOD, i, CAT, MOUSE))
+            for t in [MOUSE, CAT]:
+                color[i, i, t] = CAT
+                q.append((i, i, t, CAT))
+        while q:
+            i, j, t, c = q.popleft()
+            for ni, nj, nt in parents(i, j, t):
+                if color[ni, nj, nt] != DRAW:
+                    continue
+                if nt == c:
+                    color[ni, nj, nt] = c
+                    q.append((ni, nj, nt, c))
+                    continue
+                degree[ni, nj, nt] -= 1
+                if not degree[ni, nj, nt]:
+                    color[ni, nj, nt] = c
+                    q.append((ni, nj, nt, c))
+        return color[MOUSE_START, CAT_START, MOUSE] == MOUSE
+
+
+# Time:  O((m * n)^2 * (m + n))
+# Space: O((m * n)^2)
+class Solution2(object):
     def canMouseWin(self, grid, catJump, mouseJump):
         """
         :type grid: List[str]
