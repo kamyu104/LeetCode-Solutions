@@ -15,7 +15,8 @@ class Solution(object):
         def parents(m, c, t):
             if t == CAT:
                 for nm in graph[m]:
-                    yield nm, c, MOUSE^CAT^t
+                    if nm != HOLE:
+                        yield nm, c, MOUSE^CAT^t
             else:
                 for nc in graph[c]:
                     if nc != HOLE:
