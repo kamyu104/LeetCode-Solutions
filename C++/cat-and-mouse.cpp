@@ -70,7 +70,9 @@ private:
         vector<tuple<int, int, int>> result;
         if (t == CAT) {
             for (const auto& nm : graph[m]) {
-                result.emplace_back(nm, c, MOUSE ^ CAT ^ t);
+                if (nm != HOLE) {
+                    result.emplace_back(nm, c, MOUSE ^ CAT ^ t);
+                }
             }
         } else {
             for (const auto& nc : graph[c]) {
