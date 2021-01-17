@@ -26,12 +26,12 @@ class Solution(object):
         for m in xrange(len(graph)):
             for c in xrange(len(graph)):
                 degree[m, c, MOUSE] = len(graph[m])
-                degree[m, c, CAT] = len(graph[c])-(0 in graph[c])
+                degree[m, c, CAT] = len(graph[c])-(HOLE in graph[c])
         q = collections.deque()
         for i in xrange(len(graph)):
             for t in [MOUSE, CAT]:
                 color[HOLE, i, t] = MOUSE
-                q.append((0, i, t, MOUSE))
+                q.append((HOLE, i, t, MOUSE))
                 if i > 0:
                     color[i, i, t] = CAT
                     q.append((i, i, t, CAT))
