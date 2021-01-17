@@ -14,12 +14,10 @@ class Solution(object):
         def parents(m, c, t):
             if t == CAT:
                 for nm in graph[m, MOUSE^CAT^t]:
-                    if nm != FOOD:
-                        yield nm, c, MOUSE^CAT^t
+                    yield nm, c, MOUSE^CAT^t
             else:
                 for nc in graph[c, MOUSE^CAT^t]:
-                    if nc != FOOD:
-                        yield m, nc, MOUSE^CAT^t
+                    yield m, nc, MOUSE^CAT^t
 
         R, C = len(grid), len(grid[0])
         N = R*C
@@ -94,6 +92,14 @@ class Solution2(object):
         """
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
         DRAW, MOUSE, CAT = 0, 1, 2
+        def parents(m, c, t):
+            if t == CAT:
+                for nm in graph[m, MOUSE^CAT^t]:
+                    yield nm, c, MOUSE^CAT^t
+            else:
+                for nc in graph[c, MOUSE^CAT^t]:
+                    yield m, nc, MOUSE^CAT^t
+
         R, C = len(grid), len(grid[0])
         N = R*C
         WALLS = set()
@@ -136,35 +142,33 @@ class Solution2(object):
                 continue
             color[FOOD, i, CAT] = MOUSE
             q1.append((FOOD, i, CAT))
-            # for t in [MOUSE, CAT]:
-            #     color[i, i, t] = CAT
-            #     q2.append((i, i, t))
+            for t in [MOUSE, CAT]:
+                color[i, i, t] = CAT
+                # q2.append((i, i, t))
         while q1:
             i, j, t = q1.popleft()
-            if t == CAT:
-                for ni in graph[i, MOUSE]:
-                    if ni != FOOD and j != FOOD and ni != j and color[ni, j, MOUSE] == DRAW:
-                        color[ni, j, MOUSE] = MOUSE
-                        q1.append((ni, j, MOUSE))
-            else:
-                for nj in graph[j, CAT]:
-                    if i != FOOD and nj != FOOD and i != nj and color[i, nj, CAT] == DRAW:
-                        degree[i, nj, CAT] -= 1
-                        if not degree[i, nj, CAT]:
-                            color[i, nj, CAT] = MOUSE
-                            q1.append((i, nj, CAT))
+            for ni, nj, nt in parents(i, j, t):
+                if color[ni, nj, nt] != DRAW:
+                    continue
+                if t == CAT:
+                    color[ni, nj, nt] = MOUSE
+                    q1.append((ni, nj, nt))
+                else:
+                    degree[ni, nj, nt] -= 1
+                    if not degree[ni, nj, nt]:
+                        color[ni, nj, nt] = MOUSE
+                        q1.append((ni, nj, nt))
         # while q2:
         #     i, j, t = q2.popleft()
-        #     if t == MOUSE:
-        #         for nj in graph[j, CAT]:
-        #             if i != FOOD and nj != FOOD and i != nj and color[i, nj, CAT] == DRAW:
-        #                 color[i, nj, CAT] = CAT
-        #                 q2.append((i, nj, CAT))
-        #     else:
-        #         for ni in graph[i, MOUSE]:
-        #             if ni != FOOD and j != FOOD and ni != j and color[ni, j, MOUSE] == DRAW:
-        #                 degree[ni, j, MOUSE] -= 1
-        #                 if not degree[ni, j, MOUSE]:
-        #                     color[ni, j, MOUSE] = CAT
-        #                     q2.append((ni, j, MOUSE))
+        #     for ni, nj, nt in parents(i, j, t):
+        #         if color[ni, nj, nt] != DRAW:
+        #             continue
+        #         if t == MOUSE:
+        #             color[ni, nj, nt] = CAT
+        #             q2.append((ni, nj, nt))
+        #         else:
+        #             degree[ni, nj, nt] -= 1
+        #             if not degree[ni, nj, nt]:
+        #                 color[ni, nj, nt] = CAT
+        #                 q2.append((ni, nj, nt))
         return color[MOUSE_START, CAT_START, MOUSE] == MOUSE
