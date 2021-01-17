@@ -32,7 +32,7 @@ class Solution(object):
             for t in [MOUSE, CAT]:
                 color[HOLE, i, t] = MOUSE
                 q.append((HOLE, i, t, MOUSE))
-                if i > 0:
+                if i != HOLE:
                     color[i, i, t] = CAT
                     q.append((i, i, t, CAT))
         while q:
