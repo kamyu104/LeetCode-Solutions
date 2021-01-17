@@ -56,8 +56,8 @@ public:
                 }
                 --degree[make_tuple(ni, nj, nt)];
                 if (!degree[make_tuple(ni, nj, nt)]) {
-                    color[make_tuple(ni, nj, nt)] = MOUSE ^ CAT ^ nt;
-                    q.emplace(ni, nj, nt, MOUSE ^ CAT ^ nt);
+                    color[make_tuple(ni, nj, nt)] = c;
+                    q.emplace(ni, nj, nt, c);
                 }
             }
         }
