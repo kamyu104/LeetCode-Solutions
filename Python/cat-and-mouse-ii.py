@@ -13,7 +13,7 @@ class Solution(object):
         :rtype: bool
         """
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
-        DRAW, MOUSE, CAT = 0, 1, 2
+        DRAW, MOUSE, CAT = range(3)
         def parents(m, c, t):
             if t == CAT:
                 for nm in graph[m, MOUSE^CAT^t]:
@@ -99,7 +99,7 @@ class Solution2(object):
         :rtype: bool
         """
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
-        DRAW, MOUSE, CAT = 0, 1, 2
+        DRAW, MOUSE, CAT = range(3)
         def parents(m, c, t):
             if t == CAT:
                 for nm in graph[m, MOUSE^CAT^t]:
