@@ -23,7 +23,7 @@ class TreeInfos(object):  # Time: O(NlogN), Space: O(NlogN), N is the number of 
         def divide(curr, parent, weight):
             stk.append(partial(postprocess, curr))
             for child, w in reversed(children[curr]):
-                if child == -1 or child == parent:
+                if child == parent:
                     continue
                 stk.append(partial(divide, child, curr, w))
             stk.append(partial(preprocess, curr, parent, weight))
