@@ -49,6 +49,6 @@ class Solution(object):
                     continue
                 degree[ni, nj, nt] -= 1
                 if not degree[ni, nj, nt]:
-                    color[ni, nj, nt] = MOUSE^CAT^nt
-                    q.append((ni, nj, nt, MOUSE^CAT^nt))
+                    color[ni, nj, nt] = c
+                    q.append((ni, nj, nt, c))
         return color[MOUSE_START, CAT_START, MOUSE]
