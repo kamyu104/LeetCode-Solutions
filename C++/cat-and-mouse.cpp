@@ -15,52 +15,69 @@ private:
             return seed;
         }
     };
-    using Lookup = unordered_map<tuple<int, int, bool>, int, TupleHash<int, int, bool>>;
+    using Lookup = unordered_map<tuple<int, int, int>, int, TupleHash<int, int, int>>;
 
-public:
-    int catMouseGame(vector<vector<int>>& graph) {
-        Lookup lookup;
-        return move(graph, &lookup, MOUSE_START, CAT_START, true);
-    }
-
-private:
     enum Location {HOLE, MOUSE_START, CAT_START};
     enum Result {DRAW, MOUSE, CAT};
 
-    int move(const vector<vector<int>>& graph, Lookup *lookup, int i, int other_i, bool is_mouse_turn) {
-        const auto& key = make_tuple(i, other_i, is_mouse_turn);
-        if (lookup->count(key)) {
-            return (*lookup)[key];
+public:
+    int catMouseGame(vector<vector<int>>& graph) {
+        Lookup degree;
+        unordered_set<int> ignore(cbegin(graph[HOLE]), cend(graph[HOLE]));
+        for (int m = 0; m < size(graph); ++m) {
+            for (int c = 0; c < size(graph); ++c) {
+                degree[make_tuple(m, c, MOUSE)] = size(graph[m]);
+                degree[make_tuple(m, c, CAT)] = size(graph[c]) - ignore.count(c);
+            }
         }
+        Lookup color;
+        queue<tuple<int, int, int, int>> q;
+        for(int i = 0; i < size(graph); ++i) {
+            for (const auto& t : {MOUSE, CAT}) {
+                color[make_tuple(HOLE, i, t)] = MOUSE;
+                q.emplace(HOLE, i, t, MOUSE);
+                if (i != HOLE) {
+                    color[make_tuple(i, i, t)] = CAT;
+                    q.emplace(i, i, t, CAT);
+                }
+            }
+        }
+        while (!empty(q)) {
+            const auto [i, j, t, c] = q.front(); q.pop();
+            for (const auto& [ni, nj, nt] : parents(graph, i, j, t)) {
+                if (color[make_tuple(ni, nj, nt)] != DRAW) {
+                    continue;
+                }
+                if (nt == c) {
+                    color[make_tuple(ni, nj, nt)] = c;
+                    q.emplace(ni, nj, nt, c);
+                    continue;
+                }
+                --degree[make_tuple(ni, nj, nt)];
+                if (!degree[make_tuple(ni, nj, nt)]) {
+                    color[make_tuple(ni, nj, nt)] = MOUSE ^ CAT ^ nt;
+                    q.emplace(ni, nj, nt, MOUSE ^ CAT ^ nt);
+                }
+            }
+        }
+        return color[make_tuple(MOUSE_START, CAT_START, MOUSE)];
+    }
 
-        (*lookup)[key] = DRAW;
-        int skip, target, win, lose;
-        if (is_mouse_turn) {
-            tie(skip, target, win, lose) = make_tuple(other_i, HOLE, MOUSE, CAT);
+private:
+    vector<tuple<int, int, int>> parents(const vector<vector<int>>& graph,
+                                         int m, int c, int t) {
+        vector<tuple<int, int, int>> result;
+        if (t == CAT) {
+            for (const auto& nm : graph[m]) {
+                result.emplace_back(nm, c, MOUSE ^ CAT ^ t);
+            }
         } else {
-            tie(skip, target, win, lose) = make_tuple(HOLE, other_i, CAT, MOUSE);
-        }
-        for (const auto& nei : graph[i]) {
-            if (nei == target) {
-                (*lookup)[key] = win;
-                return win;
+            for (const auto& nc : graph[c]) {
+                if (nc != HOLE) {
+                    result.emplace_back(m, nc, MOUSE ^ CAT ^ t);
+                }
             }
         }
-        int result = lose;
-        for (const auto& nei : graph[i]) {             
-            if (nei == skip) {
-                continue;
-            }
-            auto tmp = move(graph, lookup, other_i, nei, !is_mouse_turn);
-            if (tmp == win) {
-                result = win;
-                break;
-            }
-            if (tmp == DRAW) {
-                result = DRAW;
-            }
-        }
-        (*lookup)[key] = result;
         return result;
     }
 };
