@@ -43,7 +43,7 @@ class Solution(object):
         for m in xrange(N):
             for c in xrange(N):
                 degree[m, c, CAT] = len(graph[c, CAT])
-                degree[m, c, MOUSE] = len(graph[m, MOUSE])
+                # degree[m, c, MOUSE] = len(graph[m, MOUSE])
         color = collections.defaultdict(int)
         q1 = collections.deque()
         # q2 = collections.deque()
