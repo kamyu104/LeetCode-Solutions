@@ -33,13 +33,14 @@ public:
         Lookup color;
         queue<tuple<int, int, int, int>> q;
         for(int i = 0; i < size(graph); ++i) {
+            if (i == HOLE) {
+                continue;
+            }
             for (const auto& t : {MOUSE, CAT}) {
                 color[make_tuple(HOLE, i, t)] = MOUSE;
                 q.emplace(HOLE, i, t, MOUSE);
-                if (i != HOLE) {
-                    color[make_tuple(i, i, t)] = CAT;
-                    q.emplace(i, i, t, CAT);
-                }
+                color[make_tuple(i, i, t)] = CAT;
+                q.emplace(i, i, t, CAT);
             }
         }
         while (!empty(q)) {
