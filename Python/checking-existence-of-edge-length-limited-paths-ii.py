@@ -49,7 +49,7 @@ class TreeInfos(object):  # Time: O(NlogN), Space: O(NlogN), N is the number of 
         return self.L[a] <= self.L[b] <= self.R[b] <= self.R[a]
     
     def max_weights(self, a, b):
-        def walk(a, b):
+        def binary_lift(a, b):
             w = 0
             for i in reversed(xrange(len(self.P[a]))):  # O(logN)
                 if i < len(self.P[a]) and not self.is_ancestor(self.P[a][i], b):
@@ -59,9 +59,9 @@ class TreeInfos(object):  # Time: O(NlogN), Space: O(NlogN), N is the number of 
 
         w = 0
         if not self.is_ancestor(a, b):
-            w = max(w, walk(a, b))
+            w = max(w, binary_lift(a, b))
         if not self.is_ancestor(b, a):
-            w = max(w, walk(b, a))
+            w = max(w, binary_lift(b, a))
         return w
 
     
