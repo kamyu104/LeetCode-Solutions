@@ -69,11 +69,11 @@ class Solution2(object):
         def parents(m, c, t):
             if t == CAT:
                 for nm in graph[m]:
-                    yield nm
+                    yield nm, c, MOUSE^CAT^t
             else:
                 for nc in graph[c]:
                     if nc != HOLE:
-                        yield nc
+                        yield m, nc, MOUSE^CAT^t
 
         color = collections.defaultdict(int)
         degree = {}
@@ -94,30 +94,28 @@ class Solution2(object):
                 q2.append((i, i, t))
         while q1:
             i, j, t = q1.popleft()
-            if t == CAT:
-                for ni in parents(i, j, t):
-                    if color[ni, j, MOUSE] == DRAW:
-                        color[ni, j, MOUSE] = MOUSE
-                        q1.append((ni, j, MOUSE))
-            else:
-                for nj in parents(i, j, t):
-                    if color[i, nj, CAT] == DRAW:
-                        degree[i, nj, CAT] -= 1
-                        if not degree[i, nj, CAT]:
-                            color[i, nj, CAT] = MOUSE
-                            q1.append((i, nj, CAT))
+            for ni, nj, nt in parents(i, j, t):
+                if color[ni, nj, nt] != DRAW:
+                    continue
+                if t == CAT:
+                    color[ni, nj, nt] = MOUSE
+                    q1.append((ni, nj, nt))
+                else:
+                    degree[ni, nj, nt] -= 1
+                    if not degree[ni, nj, nt]:
+                        color[ni, nj, nt] = MOUSE
+                        q1.append((ni, nj, nt))
         while q2:
             i, j, t = q2.popleft()
-            if t == MOUSE:
-                for nj in parents(i, j, t):
-                    if color[i, nj, CAT] == DRAW:
-                        color[i, nj, CAT] = CAT
-                        q2.append((i, nj, CAT))
-            else:
-                for ni in parents(i, j, t):
-                    if color[ni, j, MOUSE] == DRAW:
-                        degree[ni, j, MOUSE] -= 1
-                        if not degree[ni, j, MOUSE]:
-                            color[ni, j, MOUSE] = CAT
-                            q2.append((ni, j, MOUSE))
+            for ni, nj, nt in parents(i, j, t):
+                if color[ni, nj, nt] != DRAW:
+                    continue
+                if t == MOUSE:
+                    color[ni, nj, nt] = CAT
+                    q2.append((ni, nj, nt))
+                else:
+                    degree[ni, nj, nt] -= 1
+                    if not degree[ni, nj, nt]:
+                        color[ni, nj, nt] = CAT
+                        q2.append((ni, nj, nt))
         return color[MOUSE_START, CAT_START, MOUSE]
