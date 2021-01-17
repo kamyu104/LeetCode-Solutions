@@ -1,6 +1,6 @@
 # Time:  ctor:  O(mlogm + m * α(n) + nlogn) ~= O(mlogm + nlogn)
 #        query: O(α(n) + logn) ~= O(logn)
-# Space: O(nlogn + min(m, n^2))
+# Space: O(nlogn + m)
 
 from functools import partial
 
