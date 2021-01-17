@@ -1,6 +1,9 @@
 # Time:  O((m * n)^2 * (m + n))
 # Space: O((m * n)^2)
 
+import collections
+
+
 class Solution(object):
     def canMouseWin(self, grid, catJump, mouseJump):
         """
@@ -82,6 +85,9 @@ class Solution(object):
 
 # Time:  O((m * n)^2 * (m + n))
 # Space: O((m * n)^2)
+import collections
+
+
 class Solution2(object):
     def canMouseWin(self, grid, catJump, mouseJump):
         """
