@@ -23,10 +23,11 @@ class Solution(object):
 
         color = collections.defaultdict(int)
         degree = {}
+        ignore = set(graph[HOLE])
         for m in xrange(len(graph)):
             for c in xrange(len(graph)):
                 degree[m, c, MOUSE] = len(graph[m])
-                degree[m, c, CAT] = len(graph[c])-(HOLE in graph[c])
+                degree[m, c, CAT] = len(graph[c])-(c in ignore)
         q = collections.deque()
         for i in xrange(len(graph)):
             for t in [MOUSE, CAT]:
@@ -49,4 +50,3 @@ class Solution(object):
                     color[ni, nj, nt] = MOUSE^CAT^nt
                     q.append((ni, nj, nt, MOUSE^CAT^nt))
         return color[MOUSE_START, CAT_START, MOUSE]
-
