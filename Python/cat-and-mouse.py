@@ -30,12 +30,13 @@ class Solution(object):
                 degree[m, c, CAT] = len(graph[c])-(c in ignore)
         q = collections.deque()
         for i in xrange(len(graph)):
+            if i == HOLE:
+                continue
             for t in [MOUSE, CAT]:
                 color[HOLE, i, t] = MOUSE
                 q.append((HOLE, i, t, MOUSE))
-                if i != HOLE:
-                    color[i, i, t] = CAT
-                    q.append((i, i, t, CAT))
+                color[i, i, t] = CAT
+                q.append((i, i, t, CAT))
         while q:
             i, j, t, c = q.popleft()
             for ni, nj, nt in parents(i, j, t):
