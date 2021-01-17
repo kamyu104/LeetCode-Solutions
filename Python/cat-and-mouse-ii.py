@@ -64,6 +64,8 @@ class Solution(object):
                 continue
             color[FOOD, i, CAT] = MOUSE
             q.append((FOOD, i, CAT, MOUSE))
+            color[i, FOOD, MOUSE] = CAT
+            q.append((i, FOOD, MOUSE, CAT))
             for t in [MOUSE, CAT]:
                 color[i, i, t] = CAT
                 q.append((i, i, t, CAT))
@@ -148,6 +150,8 @@ class Solution2(object):
                 continue
             color[FOOD, i, CAT] = MOUSE
             q1.append((FOOD, i, CAT))
+            color[i, FOOD, MOUSE] = CAT
+            # q2.append((i, FOOD, MOUSE))
             for t in [MOUSE, CAT]:
                 color[i, i, t] = CAT
                 # q2.append((i, i, t))
