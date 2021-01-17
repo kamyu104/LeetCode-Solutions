@@ -36,9 +36,9 @@ public:
             if (i == HOLE) {
                 continue;
             }
+            color[make_tuple(HOLE, i, CAT)] = MOUSE;
+            q.emplace(HOLE, i, CAT, MOUSE);
             for (const auto& t : {MOUSE, CAT}) {
-                color[make_tuple(HOLE, i, t)] = MOUSE;
-                q.emplace(HOLE, i, t, MOUSE);
                 color[make_tuple(i, i, t)] = CAT;
                 q.emplace(i, i, t, CAT);
             }
