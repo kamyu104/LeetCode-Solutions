@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: int
         """
         HOLE, MOUSE_START, CAT_START = range(3)
-        DRAW, MOUSE, CAT = 0, 1, 2
+        DRAW, MOUSE, CAT = range(3)
         def parents(m, c, t):
             if t == CAT:
                 for nm in graph[m]:
@@ -65,7 +65,7 @@ class Solution2(object):
         :rtype: int
         """
         HOLE, MOUSE_START, CAT_START = range(3)
-        DRAW, MOUSE, CAT = 0, 1, 2
+        DRAW, MOUSE, CAT = range(3)
         def parents(m, c, t):
             if t == CAT:
                 for nm in graph[m]:
