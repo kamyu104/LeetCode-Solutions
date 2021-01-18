@@ -2,21 +2,7 @@
 // Space: O((m * n)^2)
 
 class Solution {
-    private:
-    template <typename A, typename B, typename C>
-    struct TupleHash {
-        size_t operator()(const tuple<A, B, C>& p) const {
-            size_t seed = 0;
-            A a; B b; C c;
-            tie(a, b, c) = p;
-            seed ^= std::hash<A>{}(a) + 0x9e3779b9 + (seed<<6) + (seed>>2);
-            seed ^= std::hash<B>{}(b) + 0x9e3779b9 + (seed<<6) + (seed>>2);
-            seed ^= std::hash<C>{}(c) + 0x9e3779b9 + (seed<<6) + (seed>>2);
-            return seed;
-        }
-    };
-    using Lookup = unordered_map<tuple<int, int, int>, int, TupleHash<int, int, int>>;
-
+private:
     enum Result {DRAW, MOUSE, CAT};
 
 public:
@@ -42,7 +28,7 @@ public:
         }
 
         vector<vector<vector<int>>> graph(N, vector<vector<int>>(2));
-        unordered_map<int, int> jump = {{MOUSE, mouseJump}, {CAT, catJump}};
+        vector<int> jump = {mouseJump, catJump};
         for (int r = 0; r < R; ++r) {
             for (int c = 0; c < C; ++c) {
                 if (grid[r][c] == '#') {
@@ -51,7 +37,7 @@ public:
                 int pos = r * C + c;
                 for (const auto& t : {MOUSE, CAT}) {
                     for (const auto& [dr, dc] : directions) {
-                        for (int d = 0; d <= jump[t]; ++d) {
+                        for (int d = 0; d <= jump[t - 1]; ++d) {
                             int nr = r + dr * d, nc = c + dc * d;
                             if (!(0 <= nr && nr < R && 0 <= nc && nc < C && grid[nr][nc] != '#')) {
                                 break;
@@ -62,47 +48,49 @@ public:
                 }
             }
         }
-        Lookup degree;
+
+        vector<vector<vector<int>>> degree(N, vector<vector<int>>(N, vector<int>(2)));
         for (int m = 0; m < size(graph); ++m) {
             for (int c = 0; c < size(graph); ++c) {
-                degree[make_tuple(m, c, MOUSE)] = size(graph[m][MOUSE - 1]);
-                degree[make_tuple(m, c, CAT)] = size(graph[c][CAT - 1]);
+                degree[m][c][MOUSE - 1] = size(graph[m][MOUSE - 1]);
+                degree[m][c][CAT - 1] = size(graph[c][CAT - 1]);
             }
         }
-        Lookup color;
+
+        vector<vector<vector<int>>> color(N, vector<vector<int>>(N, vector<int>(2)));
         queue<tuple<int, int, int, int>> q;
-        for(int i = 0; i < size(graph); ++i) {
+        for (int i = 0; i < size(graph); ++i) {
             if (WALLS.count(i) || i == FOOD) {
                 continue;
             }
-            color[make_tuple(FOOD, i, CAT)] = MOUSE;
+            color[FOOD][i][CAT - 1] = MOUSE;
             q.emplace(FOOD, i, CAT, MOUSE);
-            color[make_tuple(i, FOOD, MOUSE)] = CAT;
+            color[i][FOOD][MOUSE - 1] = CAT;
             q.emplace(i, FOOD, MOUSE, CAT);
             for (const auto& t : {MOUSE, CAT}) {
-                color[make_tuple(i, i, t)] = CAT;
+                color[i][i][t - 1] = CAT;
                 q.emplace(i, i, t, CAT);
             }
         }
         while (!empty(q)) {
             const auto [i, j, t, c] = q.front(); q.pop();
             for (const auto& [ni, nj, nt] : parents(graph, i, j, t)) {
-                if (color[make_tuple(ni, nj, nt)] != DRAW) {
+                if (color[ni][nj][nt - 1] != DRAW) {
                     continue;
                 }
                 if (nt == c) {
-                    color[make_tuple(ni, nj, nt)] = c;
+                    color[ni][nj][nt - 1] = c;
                     q.emplace(ni, nj, nt, c);
                     continue;
                 }
-                --degree[make_tuple(ni, nj, nt)];
-                if (!degree[make_tuple(ni, nj, nt)]) {
-                    color[make_tuple(ni, nj, nt)] = c;
+                --degree[ni][nj][nt - 1];
+                if (!degree[ni][nj][nt - 1]) {
+                    color[ni][nj][nt - 1]= c;
                     q.emplace(ni, nj, nt, c);
                 }
             }
         }
-        return color[make_tuple(MOUSE_START, CAT_START, MOUSE)] == MOUSE;
+        return color[MOUSE_START][CAT_START][MOUSE - 1] == MOUSE;
     }
 
 private:
@@ -125,21 +113,7 @@ private:
 // Time:  O((m * n)^2 * (m + n))
 // Space: O((m * n)^2)
 class Solution2 {
-    private:
-    template <typename A, typename B, typename C>
-    struct TupleHash {
-        size_t operator()(const tuple<A, B, C>& p) const {
-            size_t seed = 0;
-            A a; B b; C c;
-            tie(a, b, c) = p;
-            seed ^= std::hash<A>{}(a) + 0x9e3779b9 + (seed<<6) + (seed>>2);
-            seed ^= std::hash<B>{}(b) + 0x9e3779b9 + (seed<<6) + (seed>>2);
-            seed ^= std::hash<C>{}(c) + 0x9e3779b9 + (seed<<6) + (seed>>2);
-            return seed;
-        }
-    };
-    using Lookup = unordered_map<tuple<int, int, int>, int, TupleHash<int, int, int>>;
-
+private:
     enum Result {DRAW, MOUSE, CAT};
 
 public:
@@ -165,7 +139,7 @@ public:
         }
 
         vector<vector<vector<int>>> graph(N, vector<vector<int>>(2));
-        unordered_map<int, int> jump = {{MOUSE, mouseJump}, {CAT, catJump}};
+        vector<int> jump = {mouseJump, catJump};
         for (int r = 0; r < R; ++r) {
             for (int c = 0; c < C; ++c) {
                 if (grid[r][c] == '#') {
@@ -174,7 +148,7 @@ public:
                 int pos = r * C + c;
                 for (const auto& t : {MOUSE, CAT}) {
                     for (const auto& [dr, dc] : directions) {
-                        for (int d = 0; d <= jump[t]; ++d) {
+                        for (int d = 0; d <= jump[t - 1]; ++d) {
                             int nr = r + dr * d, nc = c + dc * d;
                             if (!(0 <= nr && nr < R && 0 <= nc && nc < C && grid[nr][nc] != '#')) {
                                 break;
@@ -185,43 +159,45 @@ public:
                 }
             }
         }
-        Lookup degree;
+
+        vector<vector<vector<int>>> degree(N, vector<vector<int>>(N, vector<int>(2)));
         for (int m = 0; m < size(graph); ++m) {
             for (int c = 0; c < size(graph); ++c) {
-                degree[make_tuple(m, c, CAT)] = size(graph[c][CAT - 1]);
-                // degree[make_tuple(m, c, MOUSE)] = size(graph[m][MOUSE - 1]);
+                degree[m][c][CAT - 1] = size(graph[c][CAT - 1]);
+                // degree[m][c][MOUSE - 1] = size(graph[m][MOUSE - 1]);
             }
         }
-        Lookup color;
+
+        vector<vector<vector<int>>> color(N, vector<vector<int>>(N, vector<int>(2)));
         queue<tuple<int, int, int>> q1;
         // queue<tuple<int, int, int>> q2;
-        for(int i = 0; i < size(graph); ++i) {
+        for (int i = 0; i < size(graph); ++i) {
             if (WALLS.count(i) || i == FOOD) {
                 continue;
             }
-            color[make_tuple(FOOD, i, CAT)] = MOUSE;
+            color[FOOD][i][CAT - 1] = MOUSE;
             q1.emplace(FOOD, i, CAT);
-            color[make_tuple(i, FOOD, MOUSE)] = CAT;
+            color[i][FOOD][MOUSE - 1] = CAT;
             // q2.emplace(i, FOOD, MOUSE);
             for (const auto& t : {MOUSE, CAT}) {
-                color[make_tuple(i, i, t)] = CAT;
+                color[i][i][t - 1] = CAT;
                 // q2.emplace(i, i, t);
             }
         }
         while (!empty(q1)) {
             const auto [i, j, t] = q1.front(); q1.pop();
             for (const auto& [ni, nj, nt] : parents(graph, i, j, t)) {
-                if (color[make_tuple(ni, nj, nt)] != DRAW) {
+                if (color[ni][nj][nt - 1] != DRAW) {
                     continue;
                 }
                 if (t == CAT) {
-                    color[make_tuple(ni, nj, nt)] = MOUSE;
+                    color[ni][nj][nt - 1] = MOUSE;
                     q1.emplace(ni, nj, nt);
                     continue;
                 }
-                --degree[make_tuple(ni, nj, nt)];
-                if (!degree[make_tuple(ni, nj, nt)]) {
-                    color[make_tuple(ni, nj, nt)] = MOUSE;
+                --degree[ni][nj][nt - 1];
+                if (!degree[ni][nj][nt - 1]) {
+                    color[ni][nj][nt - 1] = MOUSE;
                     q1.emplace(ni, nj, nt);
                 }
             }
@@ -229,22 +205,22 @@ public:
         // while (!empty(q2)) {
         //     const auto [i, j, t] = q2.front(); q2.pop();
         //     for (const auto& [ni, nj, nt] : parents(graph, i, j, t)) {
-        //         if (color[make_tuple(ni, nj, nt)] != DRAW) {
+        //         if (color[ni][nj][nt - 1] != DRAW) {
         //             continue;
         //         }
         //         if (t == MOUSE) {
-        //             color[make_tuple(ni, nj, nt)] = CAT;
+        //             color[ni][nj][nt - 1] = CAT;
         //             q2.emplace(ni, nj, nt);
         //             continue;
         //         }
-        //         --degree[make_tuple(ni, nj, nt)];
-        //         if (!degree[make_tuple(ni, nj, nt)]) {
-        //             color[make_tuple(ni, nj, nt)] = CAT;
+        //         --degree[ni][nj][nt - 1];
+        //         if (!degree[ni][nj][nt - 1]) {
+        //             color[ni][nj][nt - 1] = CAT;
         //             q2.emplace(ni, nj, nt);
         //         }
         //     }
         // }
-        return color[make_tuple(MOUSE_START, CAT_START, MOUSE)] == MOUSE;
+        return color[MOUSE_START][CAT_START][MOUSE - 1] == MOUSE;
     }
 
 private:
