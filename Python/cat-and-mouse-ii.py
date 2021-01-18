@@ -55,8 +55,8 @@ class Solution(object):
         degree = {}
         for m in xrange(N):
             for c in xrange(N):
-                degree[m, c, CAT] = len(graph[c, CAT])
                 degree[m, c, MOUSE] = len(graph[m, MOUSE])
+                degree[m, c, CAT] = len(graph[c, CAT])
         color = collections.defaultdict(int)
         q = collections.deque()
         for i in xrange(N):
@@ -140,8 +140,8 @@ class Solution2(object):
         degree = {}
         for m in xrange(N):
             for c in xrange(N):
-                degree[m, c, CAT] = len(graph[c, CAT])
                 # degree[m, c, MOUSE] = len(graph[m, MOUSE])
+                degree[m, c, CAT] = len(graph[c, CAT])
         color = collections.defaultdict(int)
         q1 = collections.deque()
         # q2 = collections.deque()
