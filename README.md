@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1723%20%2F%201723-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1729%20%2F%201729-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -294,6 +294,7 @@
 1706 | [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall/) | [C++](./C++/where-will-the-ball-fall.cpp) [Python](./Python/where-will-the-ball-fall.py) | _O(m * n)_ | _O(1)_ | Medium ||
 1714 | [Sum Of Special Evenly-Spaced Elements In Array](https://leetcode.com/problems/sum-of-special-evenly-spaced-elements-in-array/) | [C++](./C++/sum-of-special-evenly-spaced-elements-in-array.cpp) [Python](./Python/sum-of-special-evenly-spaced-elements-in-array.py) | _O(n * sqrt(n))_ | _O(n * sqrt(n))_ | Hard | 	🔒 |
 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array/) | [C++](./C++/decode-xored-array.cpp) [Python](./Python/decode-xored-array.py) | _O(n)_ | _O(1)_ | Easy ||
+1726 | [Tuple with Same Product](https://leetcode.com/problems/tuple-with-same-product/) | [C++](./C++/tuple-with-same-product.cpp) [Python](./Python/tuple-with-same-product.py) | _O(n^2)_ | _O(n^2)_ | Medium ||
 
 <br/>
 <div align="right">
@@ -1231,6 +1232,7 @@
 0865|[Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/)| [C++](./C++/shortest-path-to-get-all-keys.cpp) [Python](./Python/shortest-path-to-get-all-keys.py)| _O(k * r * c + k^3*2^k)_ | _O(k*2^k)_ | Hard | | `Dijkstra's Algorithm` |
 0882|[Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)| [C++](./C++/reachable-nodes-in-subdivided-graph.cpp) [Python](./Python/reachable-nodes-in-subdivided-graph.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | | `Dijkstra's Algorithm` |
 0886|[Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)| [C++](./C++/possible-bipartition.cpp) [Python](./Python/possible-bipartition.py)| _O(\|V\| + \|E\|)_ | _O(\|V\| + \|E\|)_ | Medium | | |
+0913| [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | [C++](./C++/cat-and-mouse.cpp) [Python](./Python/cat-and-mouse.py) | _O(n^3)_          | _O(n^2)_          | Hard           || MinMax |
 0934|[Shortest Bridge](https://leetcode.com/problems/shortest-bridge/)| [C++](./C++/shortest-bridge.cpp) [Python](./Python/shortest-bridge.py)| _O(n^2)_ | _O(n^2)_ | Medium | | BFS, DFS |
 0967|[Numbers With Same Consecutive Differences](https://leetcode.com/problems/numbers-with-same-consecutive-differences/)| [C++](./C++/numbers-with-same-consecutive-differences.cpp) [Python](./Python/numbers-with-same-consecutive-differences.py)| _O(2^n)_ | _O(2^n)_ | Medium | | |
 0994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)| [C++](./C++/rotting-oranges.cpp) [Python](./Python/rotting-oranges.py)| _O(m * n)_ | _O(m * n)_ | Easy | | |
@@ -1262,6 +1264,7 @@
 1625|[Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/)| [C++](./C++/lexicographically-smallest-string-after-applying-operations.cpp) [Python](./Python/lexicographically-smallest-string-after-applying-operations.py)| _O(n^2)_ | _O(1)_ | Medium || BFS, String 
 1654|[Minimum Jumps to Reach Home](https://leetcode.com/problems/minimum-jumps-to-reach-home/)| [C++](./C++/minimum-jumps-to-reach-home.cpp) [Python](./Python/minimum-jumps-to-reach-home.py)| _O(max(x, max(forbidden)) + a + b)_ | _O(max(x, max(forbidden)) + a + b)_ | Medium || BFS 
 1660|[Correct a Binary Tree](https://leetcode.com/problems/correct-a-binary-tree/)| [C++](./C++/correct-a-binary-tree.cpp) [Python](./Python/correct-a-binary-tree.py)| _O(n)_ | _O(w)_ | Medium |🔒| BFS 
+1728| [Cat and Mouse II](https://leetcode.com/problems/cat-and-mouse-ii/) | [C++](./C++/cat-and-mouse-ii.cpp) [Python](./Python/cat-and-mouse-ii.py) | _O((m * n)^2 * (m + n))_          | _O((m * n)^2)_          | Hard           | variant of [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | MinMax |
 
 <br/>
 <div align="right">
@@ -1309,7 +1312,6 @@
 0834| [Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/) | [C++](./C++/sum-of-distances-in-tree.cpp) [Python](./Python/sum-of-distances-in-tree.py) | _O(n)_          | _O(n)_          | Hard           |||
 0841| [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) | [C++](./C++/keys-and-rooms.cpp) [Python](./Python/keys-and-rooms.py) | _O(n!)_          | _O(n)_          | Medium           |||
 0851| [Loud and Rich](https://leetcode.com/problems/loud-and-rich/) | [C++](./C++/loud-and-rich.cpp) [Python](./Python/loud-and-rich.py) | _O(q + r)_          | _O(q + r)_          | Medium           |||
-0913| [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | [C++](./C++/cat-and-mouse.cpp) [Python](./Python/cat-and-mouse.py) | _O(n^3)_          | _O(n^2)_          | Hard           |||
 1020| [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | [C++](./C++/number-of-enclaves.cpp) [Python](./Python/number-of-enclaves.py) | _O(m * n)_          | _O(m * n)_          | Medium           |||
 1059| [All Paths from Source Lead to Destination](https://leetcode.com/problems/all-paths-from-source-lead-to-destination/) | [C++](./C++/all-paths-from-source-lead-to-destination.cpp) [Python](./Python/all-paths-from-source-lead-to-destination.py) | _O(n + e)_          | _O(n + e)_          | Medium           |🔒||
 1192| [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) | [C++](./C++/critical-connections-in-a-network.cpp) [Python](./Python/critical-connections-in-a-network.py) | _O(\|V\| + \|E\|)_           | _O(\|V\| + \|E\|)_          | Hard           || `Tarjan's Algorithm`, `Bridge Finding Algorithm` |
@@ -1691,6 +1693,8 @@
 1708|[Largest Subarray Length K](https://leetcode.com/problems/largest-subarray-length-k/)| [C++](./C++/largest-subarray-length-k.cpp) [Python](./Python/largest-subarray-length-k.py)| _O(n)_ | _O(1)_ | Easy | 🔒, variant of [Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order/) | |
 1710|[Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/)| [C++](./C++/maximum-units-on-a-truck.cpp) [Python](./Python/maximum-units-on-a-truck.py)| _O(nlogn)_ | _O(1)_ | Easy | | |
 1717|[Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings/)| [C++](./C++/maximum-score-from-removing-substrings.cpp) [Python](./Python/maximum-score-from-removing-substrings.py)| _O(n)_ | _O(1)_ | Medium | | |
+1725|[Number Of Rectangles That Can Form The Largest Square](https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/)| [C++](./C++/number-of-rectangles-that-can-form-the-largest-square.cpp) [Python](./Python/number-of-rectangles-that-can-form-the-largest-square.py)| _O(n)_ | _O(1)_ | Easy | | |
+1727|[Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/)| [C++](./C++/largest-submatrix-with-rearrangements.cpp) [Python](./Python/largest-submatrix-with-rearrangements.py)| _O(m * nlogn)_ | _O(1)_ | Medium | | Sort |
 
 <br/>
 <div align="right">
@@ -1724,6 +1728,7 @@
 1631 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)  | [C++](./C++/path-with-minimum-effort.cpp) [Python](./Python/path-with-minimum-effort.py) | _O(m * n * log(m * n))_| _O(m * n)_| Medium           || Binary Search, DFS, BFS, Bi-BFS, Union Find, `Dijkstra's Algorithm` | 
 1697 | [Checking Existence of Edge Length Limited Paths](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/)  | [C++](./C++/checking-existence-of-edge-length-limited-paths.cpp) [Python](./Python/checking-existence-of-edge-length-limited-paths.py) | _O(nlogn + mlogm)_| _O(n)_| Hard           || Union Find | 
 1719 | [Number Of Ways To Reconstruct A Tree](https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/)  | [C++](./C++/number-of-ways-to-reconstruct-a-tree.cpp) [Python](./Python/number-of-ways-to-reconstruct-a-tree.py) | _O(nlogn)_| _O(n)_| Hard           ||| 
+1724 | [Checking Existence of Edge Length Limited Paths II](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths-ii/)  | [C++](./C++/checking-existence-of-edge-length-limited-paths-ii.cpp) [Python](./Python/checking-existence-of-edge-length-limited-paths-ii.py) | ctor: _O(nlogn + mlogm)_<br>query: _O(logn)_ | _O(nlogn + m)_| Hard           |🔒| Versioned Union Find, Binary Lifting | 
 
 <br/>
 <div align="right">
@@ -1956,6 +1961,7 @@
 1699| [Number of Calls Between Two Persons](https://leetcode.com/problems/number-of-calls-between-two-persons/) | [MySQL](./MySQL/number-of-calls-between-two-persons.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 1709| [Biggest Window Between Visits](https://leetcode.com/problems/biggest-window-between-visits/) | [MySQL](./MySQL/biggest-window-between-visits.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 1715| [Count Apples and Oranges](https://leetcode.com/problems/count-apples-and-oranges/) | [MySQL](./MySQL/count-apples-and-oranges.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
+1729| [Find Followers Count](https://leetcode.com/problems/find-followers-count/) | [MySQL](./MySQL/find-followers-count.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
