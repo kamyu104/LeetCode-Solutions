@@ -26,16 +26,16 @@ class Solution(object):
         N = R*C
         WALLS = set()
         FOOD, MOUSE_START, CAT_START = [-1]*3
-        for i in xrange(R):
-            for j in xrange(C):
-                if grid[i][j] == 'M':
-                    MOUSE_START = i*C + j
-                elif grid[i][j] == 'C':
-                    CAT_START = i*C + j
-                elif grid[i][j] == 'F':
-                    FOOD = i*C + j
-                elif grid[i][j] == '#':
-                    WALLS.add(i*C + j)
+        for r in xrange(R):
+            for c in xrange(C):
+                if grid[r][c] == 'M':
+                    MOUSE_START = r*C + c
+                elif grid[r][c] == 'C':
+                    CAT_START = r*C + c
+                elif grid[r][c] == 'F':
+                    FOOD = r*C + c
+                elif grid[r][c] == '#':
+                    WALLS.add(r*C + c)
 
         graph = collections.defaultdict(set)
         jump = {MOUSE:mouseJump, CAT:catJump}
@@ -112,16 +112,16 @@ class Solution2(object):
         N = R*C
         WALLS = set()
         FOOD, MOUSE_START, CAT_START = [-1]*3
-        for i in xrange(R):
-            for j in xrange(C):
-                if grid[i][j] == 'M':
-                    MOUSE_START = i*C + j
-                elif grid[i][j] == 'C':
-                    CAT_START = i*C + j
-                elif grid[i][j] == 'F':
-                    FOOD = i*C + j
-                elif grid[i][j] == '#':
-                    WALLS.add(i*C + j)
+        for r in xrange(R):
+            for c in xrange(C):
+                if grid[r][c] == 'M':
+                    MOUSE_START = r*C + c
+                elif grid[r][c] == 'C':
+                    CAT_START = r*C + c
+                elif grid[r][c] == 'F':
+                    FOOD = r*C + c
+                elif grid[r][c] == '#':
+                    WALLS.add(r*C + c)
         graph = collections.defaultdict(set)
         jump = {MOUSE:mouseJump, CAT:catJump}
         for r in xrange(R):
@@ -145,7 +145,7 @@ class Solution2(object):
         color = collections.defaultdict(int)
         q1 = collections.deque()
         # q2 = collections.deque()
-        for i in xrange(len(graph)):
+        for i in xrange(N):
             if i in WALLS or i == FOOD:
                 continue
             color[FOOD, i, CAT] = MOUSE
