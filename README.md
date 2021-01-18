@@ -1232,7 +1232,7 @@
 0865|[Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/)| [C++](./C++/shortest-path-to-get-all-keys.cpp) [Python](./Python/shortest-path-to-get-all-keys.py)| _O(k * r * c + k^3*2^k)_ | _O(k*2^k)_ | Hard | | `Dijkstra's Algorithm` |
 0882|[Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)| [C++](./C++/reachable-nodes-in-subdivided-graph.cpp) [Python](./Python/reachable-nodes-in-subdivided-graph.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | | `Dijkstra's Algorithm` |
 0886|[Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)| [C++](./C++/possible-bipartition.cpp) [Python](./Python/possible-bipartition.py)| _O(\|V\| + \|E\|)_ | _O(\|V\| + \|E\|)_ | Medium | | |
-0913| [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | [C++](./C++/cat-and-mouse.cpp) [Python](./Python/cat-and-mouse.py) | _O(n^3)_          | _O(n^2)_          | Hard           || MinMax |
+0913| [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | [C++](./C++/cat-and-mouse.cpp) [Python](./Python/cat-and-mouse.py) | _O(n^3)_          | _O(n^2)_          | Hard           || MiniMax, Topological Sort |
 0934|[Shortest Bridge](https://leetcode.com/problems/shortest-bridge/)| [C++](./C++/shortest-bridge.cpp) [Python](./Python/shortest-bridge.py)| _O(n^2)_ | _O(n^2)_ | Medium | | BFS, DFS |
 0967|[Numbers With Same Consecutive Differences](https://leetcode.com/problems/numbers-with-same-consecutive-differences/)| [C++](./C++/numbers-with-same-consecutive-differences.cpp) [Python](./Python/numbers-with-same-consecutive-differences.py)| _O(2^n)_ | _O(2^n)_ | Medium | | |
 0994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)| [C++](./C++/rotting-oranges.cpp) [Python](./Python/rotting-oranges.py)| _O(m * n)_ | _O(m * n)_ | Easy | | |
@@ -1264,7 +1264,7 @@
 1625|[Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/)| [C++](./C++/lexicographically-smallest-string-after-applying-operations.cpp) [Python](./Python/lexicographically-smallest-string-after-applying-operations.py)| _O(n^2)_ | _O(1)_ | Medium || BFS, String 
 1654|[Minimum Jumps to Reach Home](https://leetcode.com/problems/minimum-jumps-to-reach-home/)| [C++](./C++/minimum-jumps-to-reach-home.cpp) [Python](./Python/minimum-jumps-to-reach-home.py)| _O(max(x, max(forbidden)) + a + b)_ | _O(max(x, max(forbidden)) + a + b)_ | Medium || BFS 
 1660|[Correct a Binary Tree](https://leetcode.com/problems/correct-a-binary-tree/)| [C++](./C++/correct-a-binary-tree.cpp) [Python](./Python/correct-a-binary-tree.py)| _O(n)_ | _O(w)_ | Medium |🔒| BFS 
-1728| [Cat and Mouse II](https://leetcode.com/problems/cat-and-mouse-ii/) | [C++](./C++/cat-and-mouse-ii.cpp) [Python](./Python/cat-and-mouse-ii.py) | _O((m * n)^2 * (m + n))_          | _O((m * n)^2)_          | Hard           | variant of [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | MinMax |
+1728| [Cat and Mouse II](https://leetcode.com/problems/cat-and-mouse-ii/) | [C++](./C++/cat-and-mouse-ii.cpp) [Python](./Python/cat-and-mouse-ii.py) | _O((m * n)^2 * (m + n))_          | _O((m * n)^2)_          | Hard           | variant of [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | MiniMax, Topological Sort |
 
 <br/>
 <div align="right">
