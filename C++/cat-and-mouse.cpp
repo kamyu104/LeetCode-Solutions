@@ -32,7 +32,7 @@ public:
         }
         Lookup color;
         queue<tuple<int, int, int, int>> q;
-        for(int i = 0; i < size(graph); ++i) {
+        for (int i = 0; i < size(graph); ++i) {
             if (i == HOLE) {
                 continue;
             }
