@@ -163,8 +163,8 @@ public:
         vector<vector<vector<int>>> degree(N, vector<vector<int>>(N, vector<int>(2)));
         for (int m = 0; m < size(graph); ++m) {
             for (int c = 0; c < size(graph); ++c) {
-                degree[m][c][CAT - 1] = size(graph[c][CAT - 1]);
                 // degree[m][c][MOUSE - 1] = size(graph[m][MOUSE - 1]);
+                degree[m][c][CAT - 1] = size(graph[c][CAT - 1]);
             }
         }
 
