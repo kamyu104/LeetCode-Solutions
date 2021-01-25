@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1729%20%2F%201729-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1739%20%2F%201739-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -92,6 +92,8 @@
 1342 | [Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/) | [C++](./C++/number-of-steps-to-reduce-a-number-to-zero.cpp) [Python](./Python/number-of-steps-to-reduce-a-number-to-zero.py) | _O(logn)_ | _O(1)_ | Easy ||
 1558 | [Minimum Numbers of Function Calls to Make Target Array](https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/) | [C++](./C++/minimum-numbers-of-function-calls-to-make-target-array.cpp) [Python](./Python/minimum-numbers-of-function-calls-to-make-target-array.py) | _O(nlogn)_ | _O(1)_ | Medium || Greedy
 1707 | [Maximum XOR With an Element From Array](https://leetcode.com/problems/maximum-xor-with-an-element-from-array/) | [C++](./C++/maximum-xor-with-an-element-from-array.cpp) [Python](./Python/maximum-xor-with-an-element-from-array.py) | _O(nlogn + mlogm)_ | _O(n)_ | Hard || Greedy, Trie
+1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array/) | [C++](./C++/decode-xored-array.cpp) [Python](./Python/decode-xored-array.py) | _O(n)_ | _O(1)_ | Easy ||
+1734 | [Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation/) | [C++](./C++/decode-xored-permutation.cpp) [Python](./Python/decode-xored-permutation.py) | _O(n)_ | _O(1)_ | Medium ||
 
 <br/>
 <div align="right">
@@ -293,8 +295,9 @@
 1701 | [Average Waiting Time](https://leetcode.com/problems/average-waiting-time/) | [C++](./C++/average-waiting-time.cpp) [Python](./Python/average-waiting-time.py) | _O(n)_ | _O(1)_ | Medium ||
 1706 | [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall/) | [C++](./C++/where-will-the-ball-fall.cpp) [Python](./Python/where-will-the-ball-fall.py) | _O(m * n)_ | _O(1)_ | Medium ||
 1714 | [Sum Of Special Evenly-Spaced Elements In Array](https://leetcode.com/problems/sum-of-special-evenly-spaced-elements-in-array/) | [C++](./C++/sum-of-special-evenly-spaced-elements-in-array.cpp) [Python](./Python/sum-of-special-evenly-spaced-elements-in-array.py) | _O(n * sqrt(n))_ | _O(n * sqrt(n))_ | Hard | 	🔒 |
-1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array/) | [C++](./C++/decode-xored-array.cpp) [Python](./Python/decode-xored-array.py) | _O(n)_ | _O(1)_ | Easy ||
 1726 | [Tuple with Same Product](https://leetcode.com/problems/tuple-with-same-product/) | [C++](./C++/tuple-with-same-product.cpp) [Python](./Python/tuple-with-same-product.py) | _O(n^2)_ | _O(n^2)_ | Medium ||
+1732 | [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | [C++](./C++/find-the-highest-altitude.cpp) [Python](./Python/find-the-highest-altitude.py) | _O(n)_ | _O(1)_ | Medium ||
+1738 | [Find Kth Largest XOR Coordinate Value](https://leetcode.com/problems/find-kth-largest-xor-coordinate-value/) | [C++](./C++/find-kth-largest-xor-coordinate-value.cpp) [Python](./Python/find-kth-largest-xor-coordinate-value.py) | _O(m * n)_ on average | _O(m * n)_ | Medium || Quick Select
 
 <br/>
 <div align="right">
@@ -929,6 +932,8 @@
 1611| [Minimum One Bit Operations to Make Integers Zero](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/)     | [C++](./C++/minimum-one-bit-operations-to-make-integers-zero.cpp) [Python](./Python/minimum-one-bit-operations-to-make-integers-zero.py)  | _O(logn)_        | _O(1)_          | Hard         | variant of [Gray Code](https://leetcode.com/problems/gray-code/) |
 1641| [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/) | [C++](./C++/count-sorted-vowel-strings.cpp) [Python](./Python/count-sorted-vowel-strings.py) | _O(1)_ | _O(1)_ |  Medium | | Binomial Coefficients
 1643| [Kth Smallest Instructions](https://leetcode.com/problems/kth-smallest-instructions/) | [C++](./C++/kth-smallest-instructions.cpp) [Python](./Python/kth-smallest-instructions.py) | _O((m + n)^2)_ | _O(1)_ |  Hard | | Binomial Coefficients
+1735| [Count Ways to Make Array With Product](https://leetcode.com/problems/count-ways-to-make-array-with-product/) | [C++](./C++/count-ways-to-make-array-with-product.cpp) [Python](./Python/count-ways-to-make-array-with-product.py) | _O(nlogn)_ | _O(logn)_ |  Hard | | Binomial Coefficients, `Euler's Theorem`
+1739| [Building Boxes](https://leetcode.com/problems/building-boxes/) | [C++](./C++/building-boxes.cpp) [Python](./Python/building-boxes.py) | _O(1)_ | _O(1)_ |  Hard | |
 
 <br/>
 <div align="right">
@@ -1265,6 +1270,7 @@
 1654|[Minimum Jumps to Reach Home](https://leetcode.com/problems/minimum-jumps-to-reach-home/)| [C++](./C++/minimum-jumps-to-reach-home.cpp) [Python](./Python/minimum-jumps-to-reach-home.py)| _O(max(x, max(forbidden)) + a + b)_ | _O(max(x, max(forbidden)) + a + b)_ | Medium || BFS 
 1660|[Correct a Binary Tree](https://leetcode.com/problems/correct-a-binary-tree/)| [C++](./C++/correct-a-binary-tree.cpp) [Python](./Python/correct-a-binary-tree.py)| _O(n)_ | _O(w)_ | Medium |🔒| BFS 
 1728| [Cat and Mouse II](https://leetcode.com/problems/cat-and-mouse-ii/) | [C++](./C++/cat-and-mouse-ii.cpp) [Python](./Python/cat-and-mouse-ii.py) | _O((m * n)^2 * (m + n))_          | _O((m * n)^2)_          | Hard           | variant of [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | MiniMax, Topological Sort |
+1730|[Shortest Path to Get Food](https://leetcode.com/problems/shortest-path-to-get-food/)| [C++](./C++/shortest-path-to-get-food.cpp) [Python](./Python/shortest-path-to-get-food.py)| _O(m * n)_ | _O(m + n)_ | Medium |🔒| BFS 
 
 <br/>
 <div align="right">
@@ -1695,6 +1701,9 @@
 1717|[Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings/)| [C++](./C++/maximum-score-from-removing-substrings.cpp) [Python](./Python/maximum-score-from-removing-substrings.py)| _O(n)_ | _O(1)_ | Medium | | |
 1725|[Number Of Rectangles That Can Form The Largest Square](https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/)| [C++](./C++/number-of-rectangles-that-can-form-the-largest-square.cpp) [Python](./Python/number-of-rectangles-that-can-form-the-largest-square.py)| _O(n)_ | _O(1)_ | Easy | | |
 1727|[Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/)| [C++](./C++/largest-submatrix-with-rearrangements.cpp) [Python](./Python/largest-submatrix-with-rearrangements.py)| _O(m * nlogn)_ | _O(1)_ | Medium | | Sort |
+1733|[Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach/)| [C++](./C++/minimum-number-of-people-to-teach.cpp) [Python](./Python/minimum-number-of-people-to-teach.py)| _O(n * m^2)_ | _O(n * m)_ | Medium | | |
+1736|[Latest Time by Replacing Hidden Digits](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/)| [C++](./C++/latest-time-by-replacing-hidden-digits.cpp) [Python](./Python/latest-time-by-replacing-hidden-digits.py)| _O(1)_ | _O(1)_ | Easy | | |
+1737|[Change Minimum Characters to Satisfy One of Three Conditions](https://leetcode.com/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/)| [C++](./C++/change-minimum-characters-to-satisfy-one-of-three-conditions.cpp) [Python](./Python/change-minimum-characters-to-satisfy-one-of-three-conditions.py)| _O(m + n)_ | _O(1)_ | Medium | |  Prefix Sum |
 
 <br/>
 <div align="right">
@@ -1962,6 +1971,7 @@
 1709| [Biggest Window Between Visits](https://leetcode.com/problems/biggest-window-between-visits/) | [MySQL](./MySQL/biggest-window-between-visits.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 1715| [Count Apples and Oranges](https://leetcode.com/problems/count-apples-and-oranges/) | [MySQL](./MySQL/count-apples-and-oranges.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 1729| [Find Followers Count](https://leetcode.com/problems/find-followers-count/) | [MySQL](./MySQL/find-followers-count.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+1731| [The Number of Employees Which Report to Each Employee](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/) | [MySQL](./MySQL/the-number-of-employees-which-report-to-each-employee.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
