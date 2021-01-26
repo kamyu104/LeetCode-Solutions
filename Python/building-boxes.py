@@ -1,6 +1,9 @@
 # Time:  O(1)
 # Space: O(1)
 
+import math
+
+
 class Solution(object):
     def minimumBoxes(self, n):
         """
@@ -14,5 +17,5 @@ class Solution(object):
             # (h-1)*h*(h+1) < h^3 <= 6n < h*(h+1)*(h+2) < (h+1)^3
             h -= 1
         n -= h*(h+1)*(h+2)//6
-        d = int(ceil((-1+sqrt(1+8*n))/2))  # find min d s.t. d*(d+1)//2 >= n
+        d = int(math.ceil((-1+math.sqrt(1+8*n))/2))  # find min d s.t. d*(d+1)//2 >= n
         return h*(h+1)//2 + d
