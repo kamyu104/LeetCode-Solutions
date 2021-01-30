@@ -57,12 +57,12 @@ class Solution2(object):
         :type q: int
         :rtype: int
         """
-        def dfs(root, p, q, result):
-            if not root:
+        def dfs(node, p, q, result):
+            if not node:
                 return -1
-            left = dfs(root.left, p, q, result)
-            right = dfs(root.right, p, q, result)
-            if root.val in (p, q):
+            left = dfs(node.left, p, q, result)
+            right = dfs(node.right, p, q, result)
+            if node.val in (p, q):
                 if left == right == -1:
                     return 0
                 result[0] = left+1 if left != -1 else right+1
