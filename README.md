@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1739%20%2F%201739-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1741%20%2F%201741-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1336,6 +1336,7 @@
 1644| [Lowest Common Ancestor of a Binary Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/) | [C++](./C++/lowest-common-ancestor-of-a-binary-tree-ii.cpp) [Python](./Python/lowest-common-ancestor-of-a-binary-tree-ii.py) | _O(n)_          | _O(h)_          | Medium           |🔒| DFS, Stack |
 1676| [Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/) | [C++](./C++/lowest-common-ancestor-of-a-binary-tree-iv.cpp) [Python](./Python/lowest-common-ancestor-of-a-binary-tree-iv.py) | _O(n)_          | _O(h)_          | Medium           |🔒| DFS, Stack |
 1722| [Minimize Hamming Distance After Swap Operations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/) | [C++](./C++/minimize-hamming-distance-after-swap-operations.cpp) [Python](./Python/minimize-hamming-distance-after-swap-operations.py) | _O(n)_          | _O(n)_          | Medium           || Flood Fill, Union Find |
+1740 | [Find Distance in a Binary Tree](https://leetcode.com/problems/find-distance-in-a-binary-tree/) | [C++](./C++/find-distance-in-a-binary-tree.cpp) [Python](./Python/find-distance-in-a-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | variant of [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | 🔒 |
 
 <br/>
 <div align="right">
@@ -1972,6 +1973,7 @@
 1715| [Count Apples and Oranges](https://leetcode.com/problems/count-apples-and-oranges/) | [MySQL](./MySQL/count-apples-and-oranges.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 1729| [Find Followers Count](https://leetcode.com/problems/find-followers-count/) | [MySQL](./MySQL/find-followers-count.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 1731| [The Number of Employees Which Report to Each Employee](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/) | [MySQL](./MySQL/the-number-of-employees-which-report-to-each-employee.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+1741| [Find Total Time Spent by Each Employee](https://leetcode.com/problems/find-total-time-spent-by-each-employee/) | [MySQL](./MySQL/find-total-time-spent-by-each-employee.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
