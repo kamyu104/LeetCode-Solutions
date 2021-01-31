@@ -19,9 +19,9 @@ class Solution(object):
                     P[i] = min(R-i, P[i_mirror])
                 while s[i+1+P[i]] == s[i-1-P[i]]:
                     if dp1[i-1-P[i]]:
-                        dp2[i+1+P[i]+1] = True
+                        dp2[(i+1+P[i])+1] = True
                     P[i] += 1
-                if i+1+P[i] == len(s)-1 and dp2[i-1-P[i]+1]:
+                if i+1+P[i] == len(s)-1 and dp2[(i-1-P[i])+1]:
                     return True
                 if i-1-P[i] == 0:
                     dp1[i+1+P[i]] = True
