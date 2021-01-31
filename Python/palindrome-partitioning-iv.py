@@ -34,7 +34,7 @@ class Solution(object):
 
 # Time:  O(n^2)
 # Space: O(n)
-class Solution(object):
+class Solution2(object):
     def checkPartitioning(self, s):
         """
         :type s: str
@@ -45,7 +45,7 @@ class Solution(object):
             for j in xrange(i, len(s)):
                 if s[i] == s[j] and (j-i < 2 or dp[i+1][j-1]):
                     dp[i][j] = True
-        for i in xrange(1, len(s)):
+        for i in xrange(1, len(s)-1):
             for j in xrange(i+1, len(s)):
                 if dp[0][i-1] and dp[i][j-1] and dp[j][-1]:
                     return True
