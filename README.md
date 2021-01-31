@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1741%20%2F%201741-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1745%20%2F%201745-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -298,6 +298,7 @@
 1726 | [Tuple with Same Product](https://leetcode.com/problems/tuple-with-same-product/) | [C++](./C++/tuple-with-same-product.cpp) [Python](./Python/tuple-with-same-product.py) | _O(n^2)_ | _O(n^2)_ | Medium ||
 1732 | [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | [C++](./C++/find-the-highest-altitude.cpp) [Python](./Python/find-the-highest-altitude.py) | _O(n)_ | _O(1)_ | Medium ||
 1738 | [Find Kth Largest XOR Coordinate Value](https://leetcode.com/problems/find-kth-largest-xor-coordinate-value/) | [C++](./C++/find-kth-largest-xor-coordinate-value.cpp) [Python](./Python/find-kth-largest-xor-coordinate-value.py) | _O(m * n)_ on average | _O(m * n)_ | Medium || Quick Select
+1742 | [Maximum Number of Balls in a Box](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/) | [C++](./C++/maximum-number-of-balls-in-a-box.cpp) [Python](./Python/maximum-number-of-balls-in-a-box.py) | _O(nlogm)_ | _O(logm)_ | Easy ||
 
 <br/>
 <div align="right">
@@ -934,6 +935,7 @@
 1643| [Kth Smallest Instructions](https://leetcode.com/problems/kth-smallest-instructions/) | [C++](./C++/kth-smallest-instructions.cpp) [Python](./Python/kth-smallest-instructions.py) | _O((m + n)^2)_ | _O(1)_ |  Hard | | Binomial Coefficients
 1735| [Count Ways to Make Array With Product](https://leetcode.com/problems/count-ways-to-make-array-with-product/) | [C++](./C++/count-ways-to-make-array-with-product.cpp) [Python](./Python/count-ways-to-make-array-with-product.py) | _O(nlogn)_ | _O(logn)_ |  Hard | | Binomial Coefficients, `Euler's Theorem`
 1739| [Building Boxes](https://leetcode.com/problems/building-boxes/) | [C++](./C++/building-boxes.cpp) [Python](./Python/building-boxes.py) | _O(1)_ | _O(1)_ |  Hard | |
+1744| [Can You Eat Your Favorite Candy on Your Favorite Day?](https://leetcode.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/) | [C++](./C++/can-you-eat-your-favorite-candy-on-your-favorite-day.cpp) [Python](./Python/can-you-eat-your-favorite-candy-on-your-favorite-day.py) | _O(n)_ | _O(n)_ |  Medium | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -1586,6 +1588,8 @@
 1690 | [Stone Game VII](https://leetcode.com/problems/stone-game-vii/) | [C++](./C++/stone-game-vii.cpp) [Python](./Python/stone-game-vii.py) | _O(n^2)_ | _O(n)_ | Medium |||
 1691 | [Maximum Height by Stacking Cuboids](https://leetcode.com/problems/maximum-height-by-stacking-cuboids/) | [C++](./C++/maximum-height-by-stacking-cuboids.cpp) [Python](./Python/maximum-height-by-stacking-cuboids.py) | _O(n^2)_ | _O(n)_ | Hard |||
 1692 | [Count Ways to Distribute Candies](https://leetcode.com/problems/count-ways-to-distribute-candies/) | [C++](./C++/count-ways-to-distribute-candies.cpp) [Python](./Python/count-ways-to-distribute-candies.py) | _O(n * k)_ | _O(k)_ | Hard |🔒||
+1745 | [Palindrome Partitioning IV](https://leetcode.com/problems/palindrome-partitioning-iv/) | [C++](./C++/palindrome-partitioning-iv.cpp) [Python](./Python/palindrome-partitioning-iv.py) | _O(n)_ | _O(n)_ | Hard | | DP, `Manacher's Algorithm` |
+
 
 <br/>
 <div align="right">
@@ -1739,6 +1743,7 @@
 1697 | [Checking Existence of Edge Length Limited Paths](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/)  | [C++](./C++/checking-existence-of-edge-length-limited-paths.cpp) [Python](./Python/checking-existence-of-edge-length-limited-paths.py) | _O(nlogn + mlogm)_| _O(n)_| Hard           || Union Find | 
 1719 | [Number Of Ways To Reconstruct A Tree](https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/)  | [C++](./C++/number-of-ways-to-reconstruct-a-tree.cpp) [Python](./Python/number-of-ways-to-reconstruct-a-tree.py) | _O(nlogn)_| _O(n)_| Hard           ||| 
 1724 | [Checking Existence of Edge Length Limited Paths II](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths-ii/)  | [C++](./C++/checking-existence-of-edge-length-limited-paths-ii.cpp) [Python](./Python/checking-existence-of-edge-length-limited-paths-ii.py) | ctor: _O(nlogn + mlogm)_<br>query: _O(logn)_ | _O(nlogn + m)_| Hard           |🔒| Versioned Union Find, Binary Lifting | 
+1743 | [Restore the Array From Adjacent Pairs](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/)  | [C++](./C++/restore-the-array-from-adjacent-pairs.cpp) [Python](./Python/restore-the-array-from-adjacent-pairs.py) | _O(n)_| _O(n)_| Medium           ||| 
 
 <br/>
 <div align="right">
