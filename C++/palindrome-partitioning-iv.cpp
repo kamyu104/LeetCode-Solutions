@@ -20,11 +20,11 @@ private:
             P[i] = (R > i) ? min(R - i, P[i_mirror]) : 0;
             while (T[i + 1 + P[i]] == T[i - 1 - P[i]]) {
                 if (dp1[i - 1 - P[i]]) {
-                    dp2[i + 1 + P[i] + 1] = true;
+                    dp2[(i + 1 + P[i]) + 1] = true;
                 }
                 ++P[i];
             }
-            if (i + 1 + P[i] == n - 1 && dp2[i - 1 - P[i] + 1]) {
+            if (i + 1 + P[i] == n - 1 && dp2[(i - 1 - P[i]) + 1]) {
                 return true;
             }
             if (i - 1 - P[i] == 0) {
