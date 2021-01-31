@@ -52,7 +52,7 @@ private:
 };
 
 // Time:  O(n^2)
-// Space: O(n)
+// Space: O(n^2)
 class Solution2 {
 public:
     bool checkPartitioning(string s) {
