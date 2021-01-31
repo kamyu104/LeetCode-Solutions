@@ -65,8 +65,14 @@ public:
             }
         }
         for (int i = 1; i + 1 < size(s); ++i) {
+            if (!dp[0][i - 1]) {
+                continue;
+            }
             for (int j = i + 1; j < size(s); ++j) {
-                if (dp[0][i - 1] && dp[i][j - 1] && dp[j][size(s) - 1]) {
+                if (!dp[j][size(s) - 1]) {
+                    continue;
+                }
+                if (dp[i][j - 1]) {
                     return true;
                 }
             }
