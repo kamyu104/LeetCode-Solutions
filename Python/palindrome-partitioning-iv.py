@@ -33,7 +33,7 @@ class Solution(object):
 
 
 # Time:  O(n^2)
-# Space: O(n)
+# Space: O(n^2)
 class Solution2(object):
     def checkPartitioning(self, s):
         """
