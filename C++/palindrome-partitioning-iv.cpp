@@ -39,11 +39,11 @@ private:
     }
         
     string preProcess(const string& s) {
-        if (s.empty()) {
+        if (empty(s)) {
             return "^$";
         }
         string ret = "^";
-        for (int i = 0; i < s.length(); ++i) {
+        for (int i = 0; i < size(s); ++i) {
             ret += "#" + s.substr(i, 1);
         }
         ret += "#$";
