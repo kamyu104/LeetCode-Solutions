@@ -10,7 +10,7 @@ public:
 private:
     bool modifiedManacher(const string& s) {
         string T = preProcess(s);
-        const int n = T.length();
+        const int n = size(T);
         vector<int> P(n);
         vector<bool> dp1(n);  // dp1[i]: s[:i] is a palindromic string
         vector<bool> dp2(n);  // dp2[i]: s[:i+1] is composed of 2 palindromic strings
