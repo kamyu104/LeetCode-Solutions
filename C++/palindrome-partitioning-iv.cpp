@@ -6,7 +6,7 @@ public:
     bool checkPartitioning(string s) {
         const auto& P = manacher(s);
         vector<int> prefix, suffix;
-        for (int i = 1; i < size(P) - 1; ++i) {
+        for (int i = 2; i < size(P) - 2; ++i) {
             if (i - 1 - P[i] == 0) {
                 prefix.emplace_back(i);
             }
@@ -16,6 +16,9 @@ public:
         }
         for (const auto& i : prefix) {
             for (const auto& j : suffix) {
+                if (left > right) {
+                    continue;
+                }
                 int left = i + 1 + P[i], right = j - 1 - P[j];
                 int mid = left + (right - left) / 2;
                 if (P[mid] >= mid - left) {
