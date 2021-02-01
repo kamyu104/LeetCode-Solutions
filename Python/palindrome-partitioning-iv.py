@@ -1,4 +1,4 @@
-# Time:  O(n)
+# Time:  O(n^2)
 # Space: O(n)
 
 class Solution(object):
@@ -10,22 +10,26 @@ class Solution(object):
         def modified_manacher(s):
             s = '^#' + '#'.join(s) + '#$'
             P = [0]*len(s)
-            dp = [0]*len(s)  # dp[i]: s[:i] is composed of dp[i] palindromic strings
+            prefix, suffix = [], []
             C, R = 0, 0
             for i in xrange(1, len(s)-1):
                 i_mirror = 2*C-i
                 if R > i:
                     P[i] = min(R-i, P[i_mirror])
                 while s[i+1+P[i]] == s[i-1-P[i]]:
-                    if dp[i-1-P[i]]:
-                        dp[(i+1+P[i])+1] = dp[i-1-P[i]]+1
                     P[i] += 1
-                if i+1+P[i] == len(s)-1 and dp[(i-1-P[i])+1] == 2:
-                    return True
+                if i+1+P[i] == len(s)-1:
+                    suffix.append(i)
                 if i-1-P[i] == 0:
-                    dp[i+1+P[i]] = 1
+                    prefix.append(i)
                 if i+P[i] > R:
                     C, R = i, i+P[i]
+            for i in prefix:
+                for j in suffix:
+                    left, right = i+P[i]+1, j-P[j]-1
+                    mid = left + (right-left)//2
+                    if P[mid] >= mid-left:
+                        return True
             return False
 
         return modified_manacher(s)
