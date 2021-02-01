@@ -1588,7 +1588,7 @@
 1690 | [Stone Game VII](https://leetcode.com/problems/stone-game-vii/) | [C++](./C++/stone-game-vii.cpp) [Python](./Python/stone-game-vii.py) | _O(n^2)_ | _O(n)_ | Medium |||
 1691 | [Maximum Height by Stacking Cuboids](https://leetcode.com/problems/maximum-height-by-stacking-cuboids/) | [C++](./C++/maximum-height-by-stacking-cuboids.cpp) [Python](./Python/maximum-height-by-stacking-cuboids.py) | _O(n^2)_ | _O(n)_ | Hard |||
 1692 | [Count Ways to Distribute Candies](https://leetcode.com/problems/count-ways-to-distribute-candies/) | [C++](./C++/count-ways-to-distribute-candies.cpp) [Python](./Python/count-ways-to-distribute-candies.py) | _O(n * k)_ | _O(k)_ | Hard |🔒||
-1745 | [Palindrome Partitioning IV](https://leetcode.com/problems/palindrome-partitioning-iv/) | [C++](./C++/palindrome-partitioning-iv.cpp) [Python](./Python/palindrome-partitioning-iv.py) | _O(n)_ | _O(n)_ | Hard | | DP, `Manacher's Algorithm` |
+1745 | [Palindrome Partitioning IV](https://leetcode.com/problems/palindrome-partitioning-iv/) | [C++](./C++/palindrome-partitioning-iv.cpp) [Python](./Python/palindrome-partitioning-iv.py) | _O(n^2)_ | _O(n)_ | Hard | | DP, `Manacher's Algorithm` |
 
 
 <br/>
