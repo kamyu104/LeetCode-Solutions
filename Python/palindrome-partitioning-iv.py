@@ -26,7 +26,7 @@ class Solution(object):
                     C, R = i, i+P[i]
             for i in prefix:
                 for j in suffix:
-                    left, right = i+P[i]+1, j-P[j]-1
+                    left, right = i+1+P[i], j-1-P[j]
                     mid = left + (right-left)//2
                     if P[mid] >= mid-left:
                         return True
