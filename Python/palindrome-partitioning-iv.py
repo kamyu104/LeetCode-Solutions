@@ -23,7 +23,7 @@ class Solution(object):
 
         P = manacher(s)
         prefix, suffix = [], []
-        for i in xrange(1, len(P)-1):
+        for i in xrange(2, len(P)-2):
             if i-1-P[i] == 0:
                 prefix.append(i)
             if i+1+P[i] == len(P)-1:
@@ -31,6 +31,8 @@ class Solution(object):
         for i in prefix:
             for j in suffix:
                 left, right = i+1+P[i], j-1-P[j]
+                if left > right:
+                    continue
                 mid = left + (right-left)//2
                 if P[mid] >= mid-left:
                     return True
