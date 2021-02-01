@@ -20,7 +20,7 @@ class Solution(object):
                 if i+P[i] > R:
                     C, R = i, i+P[i]
             return P
-        
+
         P = manacher(s)
         prefix, suffix = [], []
         for i in xrange(1, len(P)-1):
