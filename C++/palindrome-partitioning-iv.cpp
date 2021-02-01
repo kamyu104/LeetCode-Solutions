@@ -1,4 +1,4 @@
-// Time:  O(n)
+// Time:  O(n^2)
 // Space: O(n)
 
 class Solution {
@@ -12,26 +12,32 @@ private:
         string T = preProcess(s);
         const int n = size(T);
         vector<int> P(n);
-        vector<int> dp(n);  // dp[i]: s[:i] is composed of dp[i] palindromic strings
+        vector<int> prefix, suffix;
         int C = 0, R = 0;
         for (int i = 1; i < n - 1; ++i) {
             int i_mirror = 2 * C - i;
             P[i] = (R > i) ? min(R - i, P[i_mirror]) : 0;
             while (T[i + 1 + P[i]] == T[i - 1 - P[i]]) {
-                if (dp[i - 1 - P[i]]) {
-                    dp[(i + 1 + P[i]) + 1] = dp[i - 1 - P[i]] + 1;
-                }
                 ++P[i];
             }
-            if (i + 1 + P[i] == n - 1 && dp[(i - 1 - P[i]) + 1] == 2) {
-                return true;
+            if (i + 1 + P[i] == n - 1) {
+                suffix.emplace_back(i);
             }
             if (i - 1 - P[i] == 0) {
-                dp[i + 1 + P[i]] = 1;
+                prefix.emplace_back(i);
             }
             if (i + P[i] > R) {
                 C = i;
                 R = i + P[i];
+            }
+        }
+        for (const auto& i : prefix) {
+            for (const auto& j : suffix) {
+                int left = i + 1 + P[i], right = j - 1 - P[j];
+                int mid = left + (right - left) / 2;
+                if (P[mid] >= mid - left) {
+                    return true;
+                }
             }
         }
         return false;
