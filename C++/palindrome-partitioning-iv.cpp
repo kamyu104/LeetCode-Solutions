@@ -16,10 +16,10 @@ public:
         }
         for (const auto& i : prefix) {
             for (const auto& j : suffix) {
+                int left = i + 1 + P[i], right = j - 1 - P[j];
                 if (left > right) {
                     continue;
                 }
-                int left = i + 1 + P[i], right = j - 1 - P[j];
                 int mid = left + (right - left) / 2;
                 if (P[mid] >= mid - left) {
                     return true;
