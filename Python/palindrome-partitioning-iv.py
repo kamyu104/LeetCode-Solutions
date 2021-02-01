@@ -20,13 +20,13 @@ class Solution(object):
                 if i+P[i] > R:
                     C, R = i, i+P[i]
             return P
-
+        
         P = manacher(s)
         prefix, suffix = [], []
         for i in xrange(1, len(P)-1):
             if i-1-P[i] == 0:
                 prefix.append(i)
-            if i+1+P[i] == len(s)-1:
+            if i+1+P[i] == len(P)-1:
                 suffix.append(i)
         for i in prefix:
             for j in suffix:
