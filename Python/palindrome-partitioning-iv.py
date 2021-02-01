@@ -7,10 +7,9 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        def modified_manacher(s):
+        def manacher(s):
             s = '^#' + '#'.join(s) + '#$'
             P = [0]*len(s)
-            prefix, suffix = [], []
             C, R = 0, 0
             for i in xrange(1, len(s)-1):
                 i_mirror = 2*C-i
@@ -18,21 +17,24 @@ class Solution(object):
                     P[i] = min(R-i, P[i_mirror])
                 while s[i+1+P[i]] == s[i-1-P[i]]:
                     P[i] += 1
-                if i+1+P[i] == len(s)-1:
-                    suffix.append(i)
-                if i-1-P[i] == 0:
-                    prefix.append(i)
                 if i+P[i] > R:
                     C, R = i, i+P[i]
-            for i in prefix:
-                for j in suffix:
-                    left, right = i+1+P[i], j-1-P[j]
-                    mid = left + (right-left)//2
-                    if P[mid] >= mid-left:
-                        return True
-            return False
+            return P
 
-        return modified_manacher(s)
+        P = manacher(s)
+        prefix, suffix = [], []
+        for i in xrange(1, len(P)-1):
+            if i-1-P[i] == 0:
+                prefix.append(i)
+            if i+1+P[i] == len(s)-1:
+                suffix.append(i)
+        for i in prefix:
+            for j in suffix:
+                left, right = i+1+P[i], j-1-P[j]
+                mid = left + (right-left)//2
+                if P[mid] >= mid-left:
+                    return True
+        return False
 
 
 # Time:  O(n^2)
