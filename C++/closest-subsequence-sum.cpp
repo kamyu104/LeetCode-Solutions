@@ -4,6 +4,20 @@
 class Solution {
 public:
     int minAbsDifference(vector<int>& nums, int goal) {
+        int mx = 0, mn = 0;
+        for (const auto& x : nums) {
+            if (x > 0) {
+                mx += x;
+            } else if (x < 0) {
+                mn += x;
+            }
+        }
+        if (goal > mx) {
+            return goal - mx;
+        }
+        if (goal < mn) {
+            return mn - goal;
+        }
         int result = abs(goal);
         unordered_set<int> sums1{0};
         for (auto i = 0; i < size(nums) / 2; ++i) {
