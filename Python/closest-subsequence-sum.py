@@ -11,6 +11,11 @@ class Solution(object):
         :type goal: int
         :rtype: int
         """
+        mx, mn = sum(x for x in nums if x > 0), sum(x for x in nums if x < 0)
+        if goal > mx:
+            return goal-mx
+        if goal < mn:
+            return mn-goal
         result = abs(goal)
         sums1 = set([0])
         for i in xrange(len(nums)//2):
