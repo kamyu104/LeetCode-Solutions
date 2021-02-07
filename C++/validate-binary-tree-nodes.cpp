@@ -14,13 +14,13 @@ public:
         for (const auto& i : rightChild) {
             roots.erase(i);
         }
-        if (roots.size() != 1) {
+        if (size(roots) != 1) {
             return false;
         }
         const auto& root = *cbegin(roots);
         vector<int> stk({root});
         unordered_set<int> lookup({root});
-        while (!stk.empty()) {
+        while (!empty(stk)) {
             const auto node = stk.back(); stk.pop_back();
             for (const auto& i : {leftChild[node], rightChild[node]}) {
                 if (i < 0) {
@@ -33,6 +33,6 @@ public:
                 stk.emplace_back(i);
             }
         }
-        return true;
+        return size(lookup) == n;
     }
 };
