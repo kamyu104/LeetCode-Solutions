@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1745%20%2F%201745-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1755%20%2F%201755-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -299,6 +299,8 @@
 1732 | [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | [C++](./C++/find-the-highest-altitude.cpp) [Python](./Python/find-the-highest-altitude.py) | _O(n)_ | _O(1)_ | Medium ||
 1738 | [Find Kth Largest XOR Coordinate Value](https://leetcode.com/problems/find-kth-largest-xor-coordinate-value/) | [C++](./C++/find-kth-largest-xor-coordinate-value.cpp) [Python](./Python/find-kth-largest-xor-coordinate-value.py) | _O(m * n)_ on average | _O(m * n)_ | Medium || Quick Select
 1742 | [Maximum Number of Balls in a Box](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/) | [C++](./C++/maximum-number-of-balls-in-a-box.cpp) [Python](./Python/maximum-number-of-balls-in-a-box.py) | _O(nlogm)_ | _O(logm)_ | Easy ||
+1752 | [Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) | [C++](./C++/check-if-array-is-sorted-and-rotated.cpp) [Python](./Python/check-if-array-is-sorted-and-rotated.py) | _O(n)_ | _O(1)_ | Easy ||
+1755 | [Closest Subsequence Sum](https://leetcode.com/problems/closest-subsequence-sum/) | [C++](./C++/closest-subsequence-sum.cpp) [Python](./Python/closest-subsequence-sum.py) | _O(n * 2^(n/2))_ | _O(n * 2^(n/2))_ | Hard || Meet in the Middle
 
 <br/>
 <div align="right">
@@ -777,6 +779,7 @@
 1657| [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/) | [C++](./C++/determine-if-two-strings-are-close.cpp) [Python](./Python/determine-if-two-strings-are-close.py) | _O(n)_   | _O(1)_        | Medium         ||
 1679| [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/) | [C++](./C++/max-number-of-k-sum-pairs.cpp) [Python](./Python/max-number-of-k-sum-pairs.py) | _O(n)_   | _O(n)_        | Medium         ||
 1711| [Count Good Meals](https://leetcode.com/problems/count-good-meals/)      | [C++](./C++/count-good-meals.cpp) [Python](./Python/count-good-meals.py)      | _O(n)_         | _O(1)_          | Medium         ||
+1748| [Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/)      | [C++](./C++/sum-of-unique-elements.cpp) [Python](./Python/sum-of-unique-elements.py)      | _O(n)_         | _O(n)_          | Easy         ||
 
 <br/>
 <div align="right">
@@ -936,6 +939,7 @@
 1735| [Count Ways to Make Array With Product](https://leetcode.com/problems/count-ways-to-make-array-with-product/) | [C++](./C++/count-ways-to-make-array-with-product.cpp) [Python](./Python/count-ways-to-make-array-with-product.py) | _O(nlogn)_ | _O(logn)_ |  Hard | | Binomial Coefficients, `Euler's Theorem`
 1739| [Building Boxes](https://leetcode.com/problems/building-boxes/) | [C++](./C++/building-boxes.cpp) [Python](./Python/building-boxes.py) | _O(1)_ | _O(1)_ |  Hard | |
 1744| [Can You Eat Your Favorite Candy on Your Favorite Day?](https://leetcode.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/) | [C++](./C++/can-you-eat-your-favorite-candy-on-your-favorite-day.cpp) [Python](./Python/can-you-eat-your-favorite-candy-on-your-favorite-day.py) | _O(n)_ | _O(n)_ |  Medium | | Prefix Sum
+1753| [Maximum Score From Removing Stones](https://leetcode.com/problems/maximum-score-from-removing-stones/) | [C++](./C++/maximum-score-from-removing-stones.cpp) [Python](./Python/maximum-score-from-removing-stones.py) | _O(1)_ | _O(1)_ |  Medium | |
 
 <br/>
 <div align="right">
@@ -1064,6 +1068,7 @@
 1687 | [Delivering Boxes from Storage to Ports](https://leetcode.com/problems/delivering-boxes-from-storage-to-ports/) | [C++](./C++/delivering-boxes-from-storage-to-ports.cpp) [Python](./Python/delivering-boxes-from-storage-to-ports.py) | _O(nlogn)_ | _O(n)_ | Hard | | Two Pointers, Sliding Window |
 1695 | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/) | [C++](./C++/maximum-erasure-value.cpp) [Python](./Python/maximum-erasure-value.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers, Sliding Window |
 1712 | [Ways to Split Array Into Three Subarrays](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/) | [C++](./C++/ways-to-split-array-into-three-subarrays.cpp) [Python](./Python/ways-to-split-array-into-three-subarrays.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers, Prefix Sum |
+1750 | [Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/) | [C++](./C++/minimum-length-of-string-after-deleting-similar-ends.cpp) [Python](./Python/minimum-length-of-string-after-deleting-similar-ends.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers |
 
 <br/>
 <div align="right">
@@ -1405,7 +1410,7 @@
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 0010| [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [Python](./Python/regular-expression-matching.py) | _O(m * n)_ | _O(n)_ | Hard ||
 0044| [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | [Python](./Python/wildcard-matching.py) | _O(m * n)_ | _O(1)_    | Hard           || Greedy
-0053| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[C++](./C++/maximum-subarray.cpp) [Python](./Python/maximum-subarray.py)| _O(n)_     | _O(1)_         | Medium         ||
+0053| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[C++](./C++/maximum-subarray.cpp) [Python](./Python/maximum-subarray.py)| _O(n)_     | _O(1)_         | Easy         ||
 0062| [Unique Paths](https://leetcode.com/problems/unique-paths/)    | [Python](./Python/unique-paths.py)| _O(m * n)_      | _O(m + n)_   | Medium         ||
 0063| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [Python](./Python/unique-paths-ii.py) |  _O(m * n)_ | _O(m + n)_   | Medium         ||
 0064| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [Python](./Python/minimum-path-sum.py)| _O(m * n)_ | _O(m + n)_     | Medium         ||
@@ -1589,7 +1594,8 @@
 1691 | [Maximum Height by Stacking Cuboids](https://leetcode.com/problems/maximum-height-by-stacking-cuboids/) | [C++](./C++/maximum-height-by-stacking-cuboids.cpp) [Python](./Python/maximum-height-by-stacking-cuboids.py) | _O(n^2)_ | _O(n)_ | Hard |||
 1692 | [Count Ways to Distribute Candies](https://leetcode.com/problems/count-ways-to-distribute-candies/) | [C++](./C++/count-ways-to-distribute-candies.cpp) [Python](./Python/count-ways-to-distribute-candies.py) | _O(n * k)_ | _O(k)_ | Hard |🔒||
 1745 | [Palindrome Partitioning IV](https://leetcode.com/problems/palindrome-partitioning-iv/) | [C++](./C++/palindrome-partitioning-iv.cpp) [Python](./Python/palindrome-partitioning-iv.py) | _O(n^2)_ | _O(n)_ | Hard | | DP, `Manacher's Algorithm` |
-
+1746| [Maximum Subarray Sum After One Operation](https://leetcode.com/problems/maximum-subarray-sum-after-one-operation/)|[C++](./C++/maximum-subarray-sum-after-one-operation.cpp) [Python](./Python/maximum-subarray-sum-after-one-operation.py)| _O(n)_     | _O(1)_         | Medium         | variant of [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/), 🔒 |
+1751| [Maximum Number of Events That Can Be Attended II](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/)|[C++](./C++/maximum-number-of-events-that-can-be-attended-ii.cpp) [Python](./Python/maximum-number-of-events-that-can-be-attended-ii.py)| _O(nlogn + n * k)_     | _O(n * k)_         | Hard         | | Binary Search
 
 <br/>
 <div align="right">
@@ -1709,6 +1715,8 @@
 1733|[Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach/)| [C++](./C++/minimum-number-of-people-to-teach.cpp) [Python](./Python/minimum-number-of-people-to-teach.py)| _O(n * m^2)_ | _O(n * m)_ | Medium | | |
 1736|[Latest Time by Replacing Hidden Digits](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/)| [C++](./C++/latest-time-by-replacing-hidden-digits.cpp) [Python](./Python/latest-time-by-replacing-hidden-digits.py)| _O(1)_ | _O(1)_ | Easy | | |
 1737|[Change Minimum Characters to Satisfy One of Three Conditions](https://leetcode.com/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/)| [C++](./C++/change-minimum-characters-to-satisfy-one-of-three-conditions.cpp) [Python](./Python/change-minimum-characters-to-satisfy-one-of-three-conditions.py)| _O(m + n)_ | _O(1)_ | Medium | |  Prefix Sum |
+1749| [Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/)|[C++](./C++/maximum-absolute-sum-of-any-subarray.cpp) [Python](./Python/maximum-absolute-sum-of-any-subarray.py)| _O(n)_     | _O(1)_         | Medium         | variant of [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Prefix Sum |
+1754| [Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/)|[C++](./C++/largest-merge-of-two-strings.cpp) [Python](./Python/largest-merge-of-two-strings.py)| _O(m * n)_     | _O(m + n)_         | Medium         |  |  |
 
 <br/>
 <div align="right">
@@ -1979,6 +1987,7 @@
 1729| [Find Followers Count](https://leetcode.com/problems/find-followers-count/) | [MySQL](./MySQL/find-followers-count.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 1731| [The Number of Employees Which Report to Each Employee](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/) | [MySQL](./MySQL/the-number-of-employees-which-report-to-each-employee.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 1741| [Find Total Time Spent by Each Employee](https://leetcode.com/problems/find-total-time-spent-by-each-employee/) | [MySQL](./MySQL/find-total-time-spent-by-each-employee.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+1747| [Leetflex Banned Accounts](https://leetcode.com/problems/leetflex-banned-accounts/) | [MySQL](./MySQL/leetflex-banned-accounts.sql) | _O(n^2)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
