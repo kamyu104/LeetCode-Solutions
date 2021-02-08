@@ -39,7 +39,7 @@ public:
         vector<int> nxt(size(events));
         for (int i = 0; i < size(events); ++i) {
             nxt[i] = distance(cbegin(sorted_starts),
-                               prev(upper_bound(cbegin(sorted_starts), cend(sorted_starts), events[i][1])));
+                              prev(upper_bound(cbegin(sorted_starts), cend(sorted_starts), events[i][1])));
         }
         vector<vector<int>> dp(size(events) + 1, vector<int>(k + 1));
         for (int i = size(events) - 1; i >= 0; --i) {
