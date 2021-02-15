@@ -97,7 +97,7 @@ public:
         --k;
         int left = k / size(buckets_);
         int idx = k % size(buckets_);
-        auto cit = begin(buckets_[left]);
+        auto cit = cbegin(buckets_[left]);
         advance(cit, idx);
         int val = *cit;
         buckets_[left].erase(cit);
