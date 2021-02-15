@@ -89,6 +89,10 @@ class MRUQueue2(object):
 
 # Time:  ctor:  O(n)
 # Space: fetch: O(sqrt(n))
+import collections
+import math
+
+
 # sqrt decomposition solution
 class MRUQueue3(object):
 
