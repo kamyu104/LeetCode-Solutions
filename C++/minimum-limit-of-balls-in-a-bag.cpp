@@ -1,4 +1,4 @@
-// Time:  O(nlogn)
+// Time:  O(nlogn), m is the max of nums
 // Space: O(1)
 
 class Solution {
