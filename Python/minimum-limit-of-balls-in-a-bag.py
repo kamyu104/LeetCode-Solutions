@@ -1,4 +1,4 @@
-# Time:  O(nlogn)
+# Time:  O(nlogm), m is the max of nums
 # Space: O(1)
 
 class Solution(object):
