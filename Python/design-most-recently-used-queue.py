@@ -62,7 +62,7 @@ class BIT(object):  # 0-indexed.
         return (pos+1)-1  # 0-indexed
 
 
-# bit solution
+# fenwick / bit solution
 class MRUQueue2(object):
 
     def __init__(self, n):
@@ -73,7 +73,6 @@ class MRUQueue2(object):
         self.__lookup = {i:i+1 for i in xrange(n)}
         self.__curr = n
         
-
     def fetch(self, k):
         """
         :type k: int
@@ -100,7 +99,6 @@ class MRUQueue3(object):
         self.__buckets = [collections.deque() for _ in xrange(int(math.ceil(n**0.5)))]
         for i in xrange(n):
             self.__buckets[i//len(self.__buckets)].append(i+1)
-        
 
     def fetch(self, k):
         """
