@@ -16,7 +16,7 @@ public:
             if (prev == -1 && i == size(s)) {
                 return s;
             }
-            const auto tmp = longestNiceSubstring(s.substr(prev + 1, i - prev - 1));
+            auto tmp = longestNiceSubstring(s.substr(prev + 1, i - prev - 1));
             if (size(tmp) > size(result)) {
                 result = move(tmp);
             }
