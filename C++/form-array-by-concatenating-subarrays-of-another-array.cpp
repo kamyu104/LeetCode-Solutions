@@ -48,3 +48,20 @@ private:
         return prefix;
     }
 };
+
+// Time:  O(n * m)
+// Space: O(1)
+class Solution2 {
+public:
+    bool canChoose(vector<vector<int>>& groups, vector<int>& nums) {
+        auto cit = cbegin(nums);
+        for (const auto& group: groups) {
+            cit = search(cit, cend(nums), cbegin(group), cend(group));
+            if (cit == cend(nums)) {
+                return false;
+            }
+            cit += size(group);
+        }
+        return true;
+    }
+};
