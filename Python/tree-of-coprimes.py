@@ -66,7 +66,7 @@ class Solution2(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """        
-        def dfs(nums, adj, prev, node, depth, path):
+        def dfs(nums, adj, prev, node, depth, path, result):
             max_d = -1
             for x in path.iterkeys():
                 if fractions.gcd(nums[node], x) != 1:
@@ -78,7 +78,7 @@ class Solution2(object):
             for nei in adj[node]:
                 if nei == prev:
                     continue
-                dfs(nums, adj, node, nei, depth+1, path)
+                dfs(nums, adj, node, nei, depth+1, path, result)
             path[nums[node]].pop()
             if not path[nums[node]]:
                 path.pop(nums[node])
@@ -89,5 +89,5 @@ class Solution2(object):
             adj[u].append(v)
             adj[v].append(u)
         path = collections.defaultdict(list)
-        dfs(nums, adj, -1, 0, 0, path)
+        dfs(nums, adj, -1, 0, 0, path, result)
         return result
