@@ -83,11 +83,11 @@ class Solution2(object):
             if not path[nums[node]]:
                 path.pop(nums[node])
 
-        result = [-1]*len(nums)
         adj = collections.defaultdict(list)
         for u, v in edges:
             adj[u].append(v)
             adj[v].append(u)
+        result = [-1]*len(nums)
         path = collections.defaultdict(list)
         dfs(nums, adj, -1, 0, 0, path, result)
         return result
