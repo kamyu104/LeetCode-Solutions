@@ -12,7 +12,7 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """        
-        def iter_backtracking(nums, adj):
+        def iter_dfs(nums, adj):
             result = [-1]*len(nums)
             path = collections.defaultdict(list)
             stk = [(1, (-1, 0, 0))]
@@ -50,7 +50,7 @@ class Solution(object):
         for u, v in edges:
             adj[u].append(v)
             adj[v].append(u)
-        return iter_backtracking(nums, adj)
+        return iter_dfs(nums, adj)
 
 
 # Time:  O(50 * n) = O(n)
@@ -66,7 +66,7 @@ class Solution2(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """        
-        def backtracking(nums, adj, prev, node, depth, path):
+        def dfs(nums, adj, prev, node, depth, path):
             max_d = -1
             for x in path.iterkeys():
                 if fractions.gcd(nums[node], x) != 1:
@@ -78,7 +78,7 @@ class Solution2(object):
             for nei in adj[node]:
                 if nei == prev:
                     continue
-                backtracking(nums, adj, node, nei, depth+1, path)
+                dfs(nums, adj, node, nei, depth+1, path)
             path[nums[node]].pop()
             if not path[nums[node]]:
                 path.pop(nums[node])
@@ -89,5 +89,5 @@ class Solution2(object):
             adj[u].append(v)
             adj[v].append(u)
         path = collections.defaultdict(list)
-        backtracking(nums, adj, -1, 0, 0, path)
+        dfs(nums, adj, -1, 0, 0, path)
         return result
