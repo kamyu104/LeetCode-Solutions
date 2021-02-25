@@ -451,6 +451,7 @@
 1698| [Number of Distinct Substrings in a String](https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/) | [C++](./C++/number-of-distinct-substrings-in-a-string.cpp) [Python](./Python/number-of-distinct-substrings-in-a-string.py) | _O(n^2)_ | _O(t)_ | Medium | 🔒 | Trie |
 1704| [Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/) | [C++](./C++/determine-if-string-halves-are-alike.cpp) [Python](./Python/determine-if-string-halves-are-alike.py) | _O(n)_ | _O(1)_ | Easy |||
 1763| [Longest Nice Substring](https://leetcode.com/problems/longest-nice-substring/) | [C++](./C++/longest-nice-substring.cpp) [Python](./Python/longest-nice-substring.py) | _O(n)_ | _O(n)_ | Easy |||
+1768| [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | [C++](./C++/merge-strings-alternately.cpp) [Python](./Python/merge-strings-alternately.py) | _O(m + n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -999,6 +1000,7 @@
 1688| [Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/) | [C++](./C++/count-of-matches-in-tournament.cpp) [Python](./Python/count-of-matches-in-tournament.py) | _O(1)_ | _O(1)_| Easy | |
 1703| [Minimum Adjacent Swaps for K Consecutive Ones](https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/) | [C++](./C++/minimum-adjacent-swaps-for-k-consecutive-ones.cpp) [Python](./Python/minimum-adjacent-swaps-for-k-consecutive-ones.py) | _O(n)_ | _O(n)_| Hard | | Prefix Sum
 1716| [Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/) | [C++](./C++/calculate-money-in-leetcode-bank.cpp) [Python](./Python/calculate-money-in-leetcode-bank.py) | _O(1)_ | _O(1)_| Easy | | Arithmetic Sequence
+1772 | [Sort Features by Popularity](https://leetcode.com/problems/sort-features-by-popularity/) | [C++](./C++/sort-features-by-popularity.cpp) [Python](./Python/sort-features-by-popularity.py) | _O(n)_ | _O(1)_ | Medium | 🔒 ||
 
 <br/>
 <div align="right">
@@ -1600,6 +1602,8 @@
 1745 | [Palindrome Partitioning IV](https://leetcode.com/problems/palindrome-partitioning-iv/) | [C++](./C++/palindrome-partitioning-iv.cpp) [Python](./Python/palindrome-partitioning-iv.py) | _O(n^2)_ | _O(n)_ | Hard | | DP, `Manacher's Algorithm` |
 1746| [Maximum Subarray Sum After One Operation](https://leetcode.com/problems/maximum-subarray-sum-after-one-operation/)|[C++](./C++/maximum-subarray-sum-after-one-operation.cpp) [Python](./Python/maximum-subarray-sum-after-one-operation.py)| _O(n)_     | _O(1)_         | Medium         | variant of [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/), 🔒 |
 1751| [Maximum Number of Events That Can Be Attended II](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/)|[C++](./C++/maximum-number-of-events-that-can-be-attended-ii.cpp) [Python](./Python/maximum-number-of-events-that-can-be-attended-ii.py)| _O(nlogn + n * k)_     | _O(n * k)_         | Hard         | | Binary Search
+1770| [Maximum Score from Performing Multiplication Operations](https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/)|[C++](./C++/maximum-score-from-performing-multiplication-operations.cpp) [Python](./Python/maximum-score-from-performing-multiplication-operations.py)| _O(m^2)_     | _O(m)_         | Medium         | |
+1771| [Maximize Palindrome Length From Subsequences](https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/)|[C++](./C++/maximize-palindrome-length-from-subsequences.cpp) [Python](./Python/maximize-palindrome-length-from-subsequences.py)| _O((m + n)^2)_     | _O((m + n)^2)_         | Hard         | |
 
 <br/>
 <div align="right">
@@ -1725,6 +1729,7 @@
 1759| [Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings/)|[C++](./C++/count-number-of-homogenous-substrings.cpp) [Python](./Python/count-number-of-homogenous-substrings.py)| _O(n)_     | _O(1)_         | Medium         |  |  |
 1762| [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view/)|[C++](./C++/buildings-with-an-ocean-view.cpp) [Python](./Python/buildings-with-an-ocean-view.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 |  |
 1764| [Form Array by Concatenating Subarrays of Another Array](https://leetcode.com/problems/form-array-by-concatenating-subarrays-of-another-array/)|[C++](./C++/form-array-by-concatenating-subarrays-of-another-array.cpp) [Python](./Python/form-array-by-concatenating-subarrays-of-another-array.py)| _O(n)_     | _O(n)_         | Medium         |  | `KMP Algorithm` |
+1769| [Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/)|[C++](./C++/minimum-number-of-operations-to-move-all-balls-to-each-box.cpp) [Python](./Python/minimum-number-of-operations-to-move-all-balls-to-each-box.py)| _O(n)_     | _O(1)_         | Medium         |  | |
 
 <br/>
 <div align="right">
