@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1761%20%2F%201761-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1772%20%2F%201772-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -450,6 +450,7 @@
 1694| [Reformat Phone Number](https://leetcode.com/problems/reformat-phone-number/) | [C++](./C++/reformat-phone-number.cpp) [Python](./Python/reformat-phone-number.py) | _O(n)_ | _O(1)_ | Easy || Inplace |
 1698| [Number of Distinct Substrings in a String](https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/) | [C++](./C++/number-of-distinct-substrings-in-a-string.cpp) [Python](./Python/number-of-distinct-substrings-in-a-string.py) | _O(n^2)_ | _O(t)_ | Medium | 🔒 | Trie |
 1704| [Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/) | [C++](./C++/determine-if-string-halves-are-alike.cpp) [Python](./Python/determine-if-string-halves-are-alike.py) | _O(n)_ | _O(1)_ | Easy |||
+1763| [Longest Nice Substring](https://leetcode.com/problems/longest-nice-substring/) | [C++](./C++/longest-nice-substring.cpp) [Python](./Python/longest-nice-substring.py) | _O(n)_ | _O(n)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -1279,6 +1280,7 @@
 1660|[Correct a Binary Tree](https://leetcode.com/problems/correct-a-binary-tree/)| [C++](./C++/correct-a-binary-tree.cpp) [Python](./Python/correct-a-binary-tree.py)| _O(n)_ | _O(w)_ | Medium |🔒| BFS 
 1728| [Cat and Mouse II](https://leetcode.com/problems/cat-and-mouse-ii/) | [C++](./C++/cat-and-mouse-ii.cpp) [Python](./Python/cat-and-mouse-ii.py) | _O((m * n)^2 * (m + n))_          | _O((m * n)^2)_          | Hard           | variant of [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | MiniMax, Topological Sort |
 1730|[Shortest Path to Get Food](https://leetcode.com/problems/shortest-path-to-get-food/)| [C++](./C++/shortest-path-to-get-food.cpp) [Python](./Python/shortest-path-to-get-food.py)| _O(m * n)_ | _O(m + n)_ | Medium |🔒| BFS 
+1765|[Map of Highest Peak](https://leetcode.com/problems/map-of-highest-peak/)| [C++](./C++/map-of-highest-peak.cpp) [Python](./Python/map-of-highest-peak.py)| _O(m * n)_ | _O(m * n)_ | Medium | | BFS 
 
 <br/>
 <div align="right">
@@ -1345,6 +1347,7 @@
 1676| [Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/) | [C++](./C++/lowest-common-ancestor-of-a-binary-tree-iv.cpp) [Python](./Python/lowest-common-ancestor-of-a-binary-tree-iv.py) | _O(n)_          | _O(h)_          | Medium           |🔒| DFS, Stack |
 1722| [Minimize Hamming Distance After Swap Operations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/) | [C++](./C++/minimize-hamming-distance-after-swap-operations.cpp) [Python](./Python/minimize-hamming-distance-after-swap-operations.py) | _O(n)_          | _O(n)_          | Medium           || Flood Fill, Union Find |
 1740 | [Find Distance in a Binary Tree](https://leetcode.com/problems/find-distance-in-a-binary-tree/) | [C++](./C++/find-distance-in-a-binary-tree.cpp) [Python](./Python/find-distance-in-a-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | variant of [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/), 🔒 | |
+1766 | [Tree of Coprimes](https://leetcode.com/problems/tree-of-coprimes/) | [C++](./C++/tree-of-coprimes.cpp) [Python](./Python/tree-of-coprimes.py) | _O(n)_ | _O(n)_ | Hard | | |
 
 <br/>
 <div align="right">
@@ -1720,6 +1723,8 @@
 1754| [Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/)|[C++](./C++/largest-merge-of-two-strings.cpp) [Python](./Python/largest-merge-of-two-strings.py)| _O(m * n)_     | _O(m + n)_         | Medium         |  |  |
 1758| [Minimum Changes To Make Alternating Binary String](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/)|[C++](./C++/minimum-changes-to-make-alternating-binary-string.cpp) [Python](./Python/minimum-changes-to-make-alternating-binary-string.py)| _O(n)_     | _O(1)_         | Easy         |  |  |
 1759| [Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings/)|[C++](./C++/count-number-of-homogenous-substrings.cpp) [Python](./Python/count-number-of-homogenous-substrings.py)| _O(n)_     | _O(1)_         | Medium         |  |  |
+1762| [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view/)|[C++](./C++/buildings-with-an-ocean-view.cpp) [Python](./Python/buildings-with-an-ocean-view.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 |  |
+1764| [Form Array by Concatenating Subarrays of Another Array](https://leetcode.com/problems/form-array-by-concatenating-subarrays-of-another-array/)|[C++](./C++/form-array-by-concatenating-subarrays-of-another-array.cpp) [Python](./Python/form-array-by-concatenating-subarrays-of-another-array.py)| _O(n)_     | _O(n)_         | Medium         |  | `KMP Algorithm` |
 
 <br/>
 <div align="right">
@@ -1995,6 +2000,7 @@
 1741| [Find Total Time Spent by Each Employee](https://leetcode.com/problems/find-total-time-spent-by-each-employee/) | [MySQL](./MySQL/find-total-time-spent-by-each-employee.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 1747| [Leetflex Banned Accounts](https://leetcode.com/problems/leetflex-banned-accounts/) | [MySQL](./MySQL/leetflex-banned-accounts.sql) | _O(n^2)_ | _O(n)_       | Medium           |🔒||
 1757| [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/) | [MySQL](./MySQL/recyclable-and-low-fat-products.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+1767| [Find the Subtasks That Did Not Execute](https://leetcode.com/problems/find-the-subtasks-that-did-not-execute/) | [MySQL](./MySQL/find-the-subtasks-that-did-not-execute.sql) | _O(n * c)_ | _O(n * c)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
