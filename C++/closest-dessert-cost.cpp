@@ -8,7 +8,7 @@ public:
 
         const auto max_base = *max_element(cbegin(baseCosts), cend(baseCosts));
         const auto max_topping = *max_element(cbegin(toppingCosts), cend(toppingCosts));
-        vector<bool> dp(max(max_base, target + (max_topping / 2)) + 1);
+        vector<bool> dp(max(max_base, target + max_topping / 2) + 1);
         for (const auto& b : baseCosts) {
             dp[b] = true;
         }
