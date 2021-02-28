@@ -943,7 +943,7 @@
 1739| [Building Boxes](https://leetcode.com/problems/building-boxes/) | [C++](./C++/building-boxes.cpp) [Python](./Python/building-boxes.py) | _O(1)_ | _O(1)_ |  Hard | |
 1744| [Can You Eat Your Favorite Candy on Your Favorite Day?](https://leetcode.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/) | [C++](./C++/can-you-eat-your-favorite-candy-on-your-favorite-day.cpp) [Python](./Python/can-you-eat-your-favorite-candy-on-your-favorite-day.py) | _O(n)_ | _O(n)_ |  Medium | | Prefix Sum
 1753| [Maximum Score From Removing Stones](https://leetcode.com/problems/maximum-score-from-removing-stones/) | [C++](./C++/maximum-score-from-removing-stones.cpp) [Python](./Python/maximum-score-from-removing-stones.py) | _O(1)_ | _O(1)_ |  Medium | |
-1776| [Car Fleet II](https://leetcode.com/problems/car-fleet-ii/) | [C++](./C++/car-fleet-ii.cpp) [Python](./Python/car-fleet-ii.py) | _O(n)_ | _O(n)_ |  Hard | |
+1776| [Car Fleet II](https://leetcode.com/problems/car-fleet-ii/) | [C++](./C++/car-fleet-ii.cpp) [Python](./Python/car-fleet-ii.py) | _O(n)_ | _O(n)_ |  Hard | | Mono Stack
 
 <br/>
 <div align="right">
