@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1772%20%2F%201772-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1776%20%2F%201776-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -301,6 +301,7 @@
 1742 | [Maximum Number of Balls in a Box](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/) | [C++](./C++/maximum-number-of-balls-in-a-box.cpp) [Python](./Python/maximum-number-of-balls-in-a-box.py) | _O(nlogm)_ | _O(logm)_ | Easy ||
 1752 | [Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) | [C++](./C++/check-if-array-is-sorted-and-rotated.cpp) [Python](./Python/check-if-array-is-sorted-and-rotated.py) | _O(n)_ | _O(1)_ | Easy ||
 1755 | [Closest Subsequence Sum](https://leetcode.com/problems/closest-subsequence-sum/) | [C++](./C++/closest-subsequence-sum.cpp) [Python](./Python/closest-subsequence-sum.py) | _O(n * 2^(n/2))_ | _O(n * 2^(n/2))_ | Hard || Meet in the Middle
+1773 | [Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/) | [C++](./C++/count-items-matching-a-rule.cpp) [Python](./Python/count-items-matching-a-rule.py) | _O(n)_ | _O(1)_ | Easy ||
 
 <br/>
 <div align="right">
@@ -942,6 +943,7 @@
 1739| [Building Boxes](https://leetcode.com/problems/building-boxes/) | [C++](./C++/building-boxes.cpp) [Python](./Python/building-boxes.py) | _O(1)_ | _O(1)_ |  Hard | |
 1744| [Can You Eat Your Favorite Candy on Your Favorite Day?](https://leetcode.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/) | [C++](./C++/can-you-eat-your-favorite-candy-on-your-favorite-day.cpp) [Python](./Python/can-you-eat-your-favorite-candy-on-your-favorite-day.py) | _O(n)_ | _O(n)_ |  Medium | | Prefix Sum
 1753| [Maximum Score From Removing Stones](https://leetcode.com/problems/maximum-score-from-removing-stones/) | [C++](./C++/maximum-score-from-removing-stones.cpp) [Python](./Python/maximum-score-from-removing-stones.py) | _O(1)_ | _O(1)_ |  Medium | |
+1776| [Car Fleet II](https://leetcode.com/problems/car-fleet-ii/) | [C++](./C++/car-fleet-ii.cpp) [Python](./Python/car-fleet-ii.py) | _O(n)_ | _O(n)_ |  Hard | |
 
 <br/>
 <div align="right">
@@ -1604,6 +1606,7 @@
 1751| [Maximum Number of Events That Can Be Attended II](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/)|[C++](./C++/maximum-number-of-events-that-can-be-attended-ii.cpp) [Python](./Python/maximum-number-of-events-that-can-be-attended-ii.py)| _O(nlogn + n * k)_     | _O(n * k)_         | Hard         | | Binary Search
 1770| [Maximum Score from Performing Multiplication Operations](https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/)|[C++](./C++/maximum-score-from-performing-multiplication-operations.cpp) [Python](./Python/maximum-score-from-performing-multiplication-operations.py)| _O(m^2)_     | _O(m)_         | Medium         | |
 1771| [Maximize Palindrome Length From Subsequences](https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/)|[C++](./C++/maximize-palindrome-length-from-subsequences.cpp) [Python](./Python/maximize-palindrome-length-from-subsequences.py)| _O((m + n)^2)_     | _O((m + n)^2)_         | Hard         | |
+1774| [Closest Dessert Cost](https://leetcode.com/problems/closest-dessert-cost/)|[C++](./C++/closest-dessert-cost.cpp) [Python](./Python/closest-dessert-cost.py)| _O(m * t)_     | _O(t)_         | Medium         | |
 
 <br/>
 <div align="right">
@@ -1730,6 +1733,7 @@
 1762| [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view/)|[C++](./C++/buildings-with-an-ocean-view.cpp) [Python](./Python/buildings-with-an-ocean-view.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 |  |
 1764| [Form Array by Concatenating Subarrays of Another Array](https://leetcode.com/problems/form-array-by-concatenating-subarrays-of-another-array/)|[C++](./C++/form-array-by-concatenating-subarrays-of-another-array.cpp) [Python](./Python/form-array-by-concatenating-subarrays-of-another-array.py)| _O(n)_     | _O(n)_         | Medium         |  | `KMP Algorithm` |
 1769| [Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/)|[C++](./C++/minimum-number-of-operations-to-move-all-balls-to-each-box.cpp) [Python](./Python/minimum-number-of-operations-to-move-all-balls-to-each-box.py)| _O(n)_     | _O(1)_         | Medium         |  | |
+1775| [Equal Sum Arrays With Minimum Number of Operations](https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/)|[C++](./C++/equal-sum-arrays-with-minimum-number-of-operations.cpp) [Python](./Python/equal-sum-arrays-with-minimum-number-of-operations.py)| _O(m + n)_     | _O(1)_         | Medium         |  | |
 
 <br/>
 <div align="right">
