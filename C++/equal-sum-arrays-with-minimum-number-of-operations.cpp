@@ -4,7 +4,7 @@
 class Solution {
 public:
     int minOperations(vector<int>& nums1, vector<int>& nums2) {
-        if (6 * size(nums1) < 1 * nums2.size() || 6 * size(nums2) < 1 * size(nums1)) {
+        if (6 * size(nums1) < 1 * size(nums2) || 6 * size(nums2) < 1 * size(nums1)) {
             return -1;
         }
         vector<int> count(6);
