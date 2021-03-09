@@ -1,3 +1,6 @@
+# Time:  O(n)
+# Space: O(1)
+
 class Solution(object):
     def minElements(self, nums, limit, goal):
         """
