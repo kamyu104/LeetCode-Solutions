@@ -1,6 +1,9 @@
 # Time:  O(|E| * log|V|)
 # Space: O(|E| + |V|)
 
+import heapq
+
+
 class Solution(object):
     def countRestrictedPaths(self, n, edges):
         """
