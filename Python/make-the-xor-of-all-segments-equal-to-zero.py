@@ -1,4 +1,4 @@
-# Time:  O(m * n), m is the max number of nums
+# Time:  O(n + k * m), m is the max number of nums
 # Space: O(min(k * m, n))
 
 import collections
