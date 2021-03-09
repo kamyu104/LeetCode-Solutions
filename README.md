@@ -454,6 +454,7 @@
 1704| [Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/) | [C++](./C++/determine-if-string-halves-are-alike.cpp) [Python](./Python/determine-if-string-halves-are-alike.py) | _O(n)_ | _O(1)_ | Easy |||
 1763| [Longest Nice Substring](https://leetcode.com/problems/longest-nice-substring/) | [C++](./C++/longest-nice-substring.cpp) [Python](./Python/longest-nice-substring.py) | _O(n)_ | _O(n)_ | Easy |||
 1768| [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | [C++](./C++/merge-strings-alternately.cpp) [Python](./Python/merge-strings-alternately.py) | _O(m + n)_ | _O(1)_ | Easy |||
+1784| [Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) | [C++](./C++/check-if-binary-string-has-at-most-one-segment-of-ones.cpp) [Python](./Python/check-if-binary-string-has-at-most-one-segment-of-ones.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -1610,6 +1611,7 @@
 1770| [Maximum Score from Performing Multiplication Operations](https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/)|[C++](./C++/maximum-score-from-performing-multiplication-operations.cpp) [Python](./Python/maximum-score-from-performing-multiplication-operations.py)| _O(m^2)_     | _O(m)_         | Medium         | |
 1771| [Maximize Palindrome Length From Subsequences](https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/)|[C++](./C++/maximize-palindrome-length-from-subsequences.cpp) [Python](./Python/maximize-palindrome-length-from-subsequences.py)| _O((m + n)^2)_     | _O((m + n)^2)_         | Hard         | |
 1774| [Closest Dessert Cost](https://leetcode.com/problems/closest-dessert-cost/)|[C++](./C++/closest-dessert-cost.cpp) [Python](./Python/closest-dessert-cost.py)| _O(m * t)_     | _O(t)_         | Medium         | |
+1787| [Make the XOR of All Segments Equal to Zero](https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero/)|[C++](./C++/make-the-xor-of-all-segments-equal-to-zero.cpp) [Python](./Python/make-the-xor-of-all-segments-equal-to-zero.py)| _O(m * n)_     | _O(min(k * m, n))_         | Hard         | |
 
 <br/>
 <div align="right">
@@ -1737,6 +1739,7 @@
 1764| [Form Array by Concatenating Subarrays of Another Array](https://leetcode.com/problems/form-array-by-concatenating-subarrays-of-another-array/)|[C++](./C++/form-array-by-concatenating-subarrays-of-another-array.cpp) [Python](./Python/form-array-by-concatenating-subarrays-of-another-array.py)| _O(n)_     | _O(n)_         | Medium         |  | `KMP Algorithm` |
 1769| [Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/)|[C++](./C++/minimum-number-of-operations-to-move-all-balls-to-each-box.cpp) [Python](./Python/minimum-number-of-operations-to-move-all-balls-to-each-box.py)| _O(n)_     | _O(1)_         | Medium         |  | |
 1775| [Equal Sum Arrays With Minimum Number of Operations](https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/)|[C++](./C++/equal-sum-arrays-with-minimum-number-of-operations.cpp) [Python](./Python/equal-sum-arrays-with-minimum-number-of-operations.py)| _O(m + n)_     | _O(1)_         | Medium         |  | |
+1785| [Minimum Elements to Add to Form a Given Sum](https://leetcode.com/problems/minimum-elements-to-add-to-form-a-given-sum/)|[C++](./C++/minimum-elements-to-add-to-form-a-given-sum.cpp) [Python](./Python/minimum-elements-to-add-to-form-a-given-sum.py)| _O(n)_     | _O(1)_         | Medium         |  | |
 
 <br/>
 <div align="right">
@@ -1775,6 +1778,7 @@
 1761 | [Minimum Degree of a Connected Trio in a Graph](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/)  | [C++](./C++/minimum-degree-of-a-connected-trio-in-a-graph.cpp) [Python](./Python/minimum-degree-of-a-connected-trio-in-a-graph.py) | _O(n^3)_| _O(n^2)_| Hard           ||| 
 1778 | [Shortest Path in a Hidden Grid](https://leetcode.com/problems/shortest-path-in-a-hidden-grid/)  | [C++](./C++/shortest-path-in-a-hidden-grid.cpp) [Python](./Python/shortest-path-in-a-hidden-grid.py) | _O(m * n)_ | _O(m * n)_| Medium           |🔒| DFS, BFS, Bi-BFS | 
 1782 | [Count Pairs Of Nodes](https://leetcode.com/problems/count-pairs-of-nodes/)  | [C++](./C++/count-pairs-of-nodes.cpp) [Python](./Python/count-pairs-of-nodes.py) | _O(n + e + q)_ | _O(n + e)_| Hard           || Counting, Two Pointers | 
+1786 | [Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/)  | [C++](./C++/number-of-restricted-paths-from-first-to-last-node.cpp) [Python](./Python/number-of-restricted-paths-from-first-to-last-node.py) | _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium | | `Dijkstra's Algorithm`, DP |
 
 <br/>
 <div align="right">
