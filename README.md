@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1776%20%2F%201776-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1787%20%2F%201787-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -2010,6 +2010,8 @@
 1747| [Leetflex Banned Accounts](https://leetcode.com/problems/leetflex-banned-accounts/) | [MySQL](./MySQL/leetflex-banned-accounts.sql) | _O(n^2)_ | _O(n)_       | Medium           |🔒||
 1757| [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/) | [MySQL](./MySQL/recyclable-and-low-fat-products.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1767| [Find the Subtasks That Did Not Execute](https://leetcode.com/problems/find-the-subtasks-that-did-not-execute/) | [MySQL](./MySQL/find-the-subtasks-that-did-not-execute.sql) | _O(n * c)_ | _O(n * c)_       | Hard           |🔒||
+1777| [Product's Price for Each Store](https://leetcode.com/problems/products-price-for-each-store/) | [MySQL](./MySQL/products-price-for-each-store.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+1783| [Grand Slam Titles](https://leetcode.com/problems/grand-slam-titles/) | [MySQL](./MySQL/grand-slam-titles.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
