@@ -1611,7 +1611,7 @@
 1770| [Maximum Score from Performing Multiplication Operations](https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/)|[C++](./C++/maximum-score-from-performing-multiplication-operations.cpp) [Python](./Python/maximum-score-from-performing-multiplication-operations.py)| _O(m^2)_     | _O(m)_         | Medium         | |
 1771| [Maximize Palindrome Length From Subsequences](https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/)|[C++](./C++/maximize-palindrome-length-from-subsequences.cpp) [Python](./Python/maximize-palindrome-length-from-subsequences.py)| _O((m + n)^2)_     | _O((m + n)^2)_         | Hard         | |
 1774| [Closest Dessert Cost](https://leetcode.com/problems/closest-dessert-cost/)|[C++](./C++/closest-dessert-cost.cpp) [Python](./Python/closest-dessert-cost.py)| _O(m * t)_     | _O(t)_         | Medium         | |
-1787| [Make the XOR of All Segments Equal to Zero](https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero/)|[C++](./C++/make-the-xor-of-all-segments-equal-to-zero.cpp) [Python](./Python/make-the-xor-of-all-segments-equal-to-zero.py)| _O(m * n)_     | _O(min(k * m, n))_         | Hard         | |
+1787| [Make the XOR of All Segments Equal to Zero](https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero/)|[C++](./C++/make-the-xor-of-all-segments-equal-to-zero.cpp) [Python](./Python/make-the-xor-of-all-segments-equal-to-zero.py)| _O(n + k * m)_     | _O(min(k * m, n))_         | Hard         | |
 
 <br/>
 <div align="right">
