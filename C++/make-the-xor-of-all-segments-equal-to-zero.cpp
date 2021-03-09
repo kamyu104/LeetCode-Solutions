@@ -13,7 +13,7 @@ public:
 
 private:
     int all_are_from_nums(const vector<int>& nums, const vector<unordered_map<int, int>>& cnts) {
-        unordered_map<int, int> dp{{0, 0}}, dp2;
+        unordered_map<int, int> dp{{0, 0}};
         for (const auto& cnt : cnts) {
             unordered_map<int, int> new_dp;
             for (const auto& [x, dp_x] : dp) {
