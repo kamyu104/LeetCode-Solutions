@@ -23,7 +23,7 @@ private:
             }
             dp = move(new_dp);
         }
-        return int(size(nums)) - dp[0];
+        return size(nums) - dp[0];
     }
 
     int one_are_not_from_nums(const vector<int>& nums, const vector<unordered_map<int, int>>& cnts) {
