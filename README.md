@@ -302,6 +302,7 @@
 1752 | [Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) | [C++](./C++/check-if-array-is-sorted-and-rotated.cpp) [Python](./Python/check-if-array-is-sorted-and-rotated.py) | _O(n)_ | _O(1)_ | Easy ||
 1755 | [Closest Subsequence Sum](https://leetcode.com/problems/closest-subsequence-sum/) | [C++](./C++/closest-subsequence-sum.cpp) [Python](./Python/closest-subsequence-sum.py) | _O(n * 2^(n/2))_ | _O(n * 2^(n/2))_ | Hard || Meet in the Middle
 1773 | [Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/) | [C++](./C++/count-items-matching-a-rule.cpp) [Python](./Python/count-items-matching-a-rule.py) | _O(n)_ | _O(1)_ | Easy ||
+1779 | [Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/) | [C++](./C++/find-nearest-point-that-has-the-same-x-or-y-coordinate.cpp) [Python](./Python/find-nearest-point-that-has-the-same-x-or-y-coordinate.py) | _O(n)_ | _O(1)_ | Easy ||
 
 <br/>
 <div align="right">
@@ -783,6 +784,7 @@
 1679| [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/) | [C++](./C++/max-number-of-k-sum-pairs.cpp) [Python](./Python/max-number-of-k-sum-pairs.py) | _O(n)_   | _O(n)_        | Medium         ||
 1711| [Count Good Meals](https://leetcode.com/problems/count-good-meals/)      | [C++](./C++/count-good-meals.cpp) [Python](./Python/count-good-meals.py)      | _O(n)_         | _O(1)_          | Medium         ||
 1748| [Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/)      | [C++](./C++/sum-of-unique-elements.cpp) [Python](./Python/sum-of-unique-elements.py)      | _O(n)_         | _O(n)_          | Easy         ||
+1781| [Sum of Beauty of All Substrings](https://leetcode.com/problems/sum-of-beauty-of-all-substrings/)      | [C++](./C++/sum-of-beauty-of-all-substrings.cpp) [Python](./Python/sum-of-beauty-of-all-substrings.py)      | _O(n^2)_         | _O(1)_          | Medium         ||
 
 <br/>
 <div align="right">
@@ -944,6 +946,7 @@
 1744| [Can You Eat Your Favorite Candy on Your Favorite Day?](https://leetcode.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/) | [C++](./C++/can-you-eat-your-favorite-candy-on-your-favorite-day.cpp) [Python](./Python/can-you-eat-your-favorite-candy-on-your-favorite-day.py) | _O(n)_ | _O(n)_ |  Medium | | Prefix Sum
 1753| [Maximum Score From Removing Stones](https://leetcode.com/problems/maximum-score-from-removing-stones/) | [C++](./C++/maximum-score-from-removing-stones.cpp) [Python](./Python/maximum-score-from-removing-stones.py) | _O(1)_ | _O(1)_ |  Medium | |
 1776| [Car Fleet II](https://leetcode.com/problems/car-fleet-ii/) | [C++](./C++/car-fleet-ii.cpp) [Python](./Python/car-fleet-ii.py) | _O(n)_ | _O(n)_ |  Hard | | Mono Stack
+1780| [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/) | [C++](./C++/check-if-number-is-a-sum-of-powers-of-three.cpp) [Python](./Python/check-if-number-is-a-sum-of-powers-of-three.py) | _O(logn)_ | _O(1)_ |  Medium | |
 
 <br/>
 <div align="right">
@@ -1770,6 +1773,8 @@
 1724 | [Checking Existence of Edge Length Limited Paths II](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths-ii/)  | [C++](./C++/checking-existence-of-edge-length-limited-paths-ii.cpp) [Python](./Python/checking-existence-of-edge-length-limited-paths-ii.py) | ctor: _O(nlogn + mlogm)_<br>query: _O(logn)_ | _O(nlogn + m)_| Hard           |🔒| Versioned Union Find, Binary Lifting | 
 1743 | [Restore the Array From Adjacent Pairs](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/)  | [C++](./C++/restore-the-array-from-adjacent-pairs.cpp) [Python](./Python/restore-the-array-from-adjacent-pairs.py) | _O(n)_| _O(n)_| Medium           ||| 
 1761 | [Minimum Degree of a Connected Trio in a Graph](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/)  | [C++](./C++/minimum-degree-of-a-connected-trio-in-a-graph.cpp) [Python](./Python/minimum-degree-of-a-connected-trio-in-a-graph.py) | _O(n^3)_| _O(n^2)_| Hard           ||| 
+1778 | [Shortest Path in a Hidden Grid](https://leetcode.com/problems/shortest-path-in-a-hidden-grid/)  | [C++](./C++/shortest-path-in-a-hidden-grid.cpp) [Python](./Python/shortest-path-in-a-hidden-grid.py) | _O(m * n)_ | _O(m * n)_| Medium           |🔒| DFS, BFS, Bi-BFS | 
+1782 | [Count Pairs Of Nodes](https://leetcode.com/problems/count-pairs-of-nodes/)  | [C++](./C++/count-pairs-of-nodes.cpp) [Python](./Python/count-pairs-of-nodes.py) | _O(n + e + q)_ | _O(n + e)_| Hard           || Counting, Two Pointers | 
 
 <br/>
 <div align="right">
