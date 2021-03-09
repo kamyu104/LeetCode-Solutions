@@ -38,6 +38,6 @@ private:
             tot_mx += mx;
             mn_mx = min(mn_mx, mx);
         }
-        return size(nums) - (tot_mx - mn);
+        return size(nums) - (tot_mx - mn_mx);
     }
 };
