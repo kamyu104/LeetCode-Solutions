@@ -4,22 +4,16 @@
 class Solution {
 public:
     int largestRectangleArea(vector<int>& heights) {
-        stack<int> increasing_heights;
-        int max_area = 0;
-
-        for (int i = 0; i <= heights.size();) {
-            if (increasing_heights.empty() ||
-                (i < heights.size() && heights[i] > heights[increasing_heights.top()])) {
-                increasing_heights.emplace(i);
-                ++i;
-            } else {
-                auto h = heights[increasing_heights.top()];
-                increasing_heights.pop();
-                auto left = increasing_heights.empty() ? -1 : increasing_heights.top();
-                max_area = max(max_area, h * (i - left - 1));
+        vector<int> stk = {-1};
+        int result = 0;
+        for (int i = 0; i <= size(heights); ++i) {
+            while (stk.back() != -1 &&
+                   (i == size(heights) || heights[stk.back()] >= heights[i])) {
+                int last = stk.back(); stk.pop_back();
+                result = max(result, heights[last] * ((i - 1)- stk.back()));
             }
+            stk.emplace_back(i);
         }
-
-        return max_area;
+        return result;
     }
 };
