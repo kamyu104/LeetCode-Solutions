@@ -35,12 +35,10 @@ public:
         make_heap(min_heap.begin(), min_heap.end(), greater<>());
         int result = 0;
         while (!min_heap.empty()) {
-            pop_heap(min_heap.begin(), min_heap.end(), greater<>());
-            const auto [s, e, p] = min_heap.back();
-            min_heap.pop_back();
+            const auto [s, e, p] = min_heap.front();
+            pop_heap(begin(min_heap), end(min_heap), greater<>()); min_heap.pop_back();
             if (s < e) {
-                min_heap.emplace_back(e, s, result + p);
-                push_heap(min_heap.begin(), min_heap.end(), greater<>());
+                min_heap.emplace_back(e, s, result + p); push_heap(begin(min_heap), end(min_heap), greater<>());
             } else {
                 result = max(result, p);
             }
