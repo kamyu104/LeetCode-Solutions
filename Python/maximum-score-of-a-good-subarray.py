@@ -2,9 +2,10 @@
 # Space: O(n)
 
 class Solution(object):
-    def largestRectangleArea(self, heights):
+    def maximumScore(self, nums, k):
         """
-        :type heights: List[int]
+        :type nums: List[int]
+        :type k: int
         :rtype: int
         """
         result = curr = nums[k]
@@ -47,3 +48,4 @@ class Solution2(object):
             return result
 
         return max(score(nums, k), score(nums[::-1], len(nums)-1-k))
+ 
