@@ -41,10 +41,10 @@ class Solution2(object):
             for i in xrange(k+1, len(nums)):
                 right_prefix[i-k] = min(right_prefix[i-k-1], nums[i])
             result = nums[k]
-            for j in xrange(len(right_prefix)):
-                i = bisect.bisect_left(left_prefix, right_prefix[j])
+            for j, right in enumerate(right_prefix, k):
+                i = bisect.bisect_left(left_prefix, right)
                 if i >= 0:
-                    result = max(result, right_prefix[j]*(k+j-i+1))
+                    result = max(result, right*(j-i+1))
             return result
 
         return max(score(nums, k), score(nums[::-1], len(nums)-1-k))
