@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1787%20%2F%201787-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1793%20%2F%201793-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -455,6 +455,7 @@
 1763| [Longest Nice Substring](https://leetcode.com/problems/longest-nice-substring/) | [C++](./C++/longest-nice-substring.cpp) [Python](./Python/longest-nice-substring.py) | _O(n)_ | _O(n)_ | Easy |||
 1768| [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | [C++](./C++/merge-strings-alternately.cpp) [Python](./Python/merge-strings-alternately.py) | _O(m + n)_ | _O(1)_ | Easy |||
 1784| [Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) | [C++](./C++/check-if-binary-string-has-at-most-one-segment-of-ones.cpp) [Python](./Python/check-if-binary-string-has-at-most-one-segment-of-ones.py) | _O(n)_ | _O(1)_ | Easy |||
+1790| [Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/) | [C++](./C++/check-if-one-string-swap-can-make-strings-equal.cpp) [Python](./Python/check-if-one-string-swap-can-make-strings-equal.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -600,6 +601,7 @@
 1606 | [Find Servers That Handled Most Number of Requests](https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/) | [C++](./C++/find-servers-that-handled-most-number-of-requests.cpp) [Python](./Python/find-servers-that-handled-most-number-of-requests.py) | _O(nlogk)_ | _O(k)_ | Hard | | SortedList |
 1642 | [Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/) | [C++](./C++/furthest-building-you-can-reach.cpp) [Python](./Python/furthest-building-you-can-reach.py) | _O(nlogk)_ | _O(k)_ | Medium | | |
 1675 | [Minimize Deviation in Array](https://leetcode.com/problems/minimize-deviation-in-array/) | [C++](./C++/minimize-deviation-in-array.cpp) [Python](./Python/minimize-deviation-in-array.py) | _O((n * log(max_num)) * logn)_ | _O(n)_ | Hard | | |
+1792 | [Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/) | [C++](./C++/maximum-average-pass-ratio.cpp) [Python](./Python/maximum-average-pass-ratio.py) | _O((n + mlogn)_ | _O(n)_ | Medium | | |
 
 <br/>
 <div align="right">
@@ -1740,6 +1742,9 @@
 1769| [Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/)|[C++](./C++/minimum-number-of-operations-to-move-all-balls-to-each-box.cpp) [Python](./Python/minimum-number-of-operations-to-move-all-balls-to-each-box.py)| _O(n)_     | _O(1)_         | Medium         |  | |
 1775| [Equal Sum Arrays With Minimum Number of Operations](https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/)|[C++](./C++/equal-sum-arrays-with-minimum-number-of-operations.cpp) [Python](./Python/equal-sum-arrays-with-minimum-number-of-operations.py)| _O(m + n)_     | _O(1)_         | Medium         |  | |
 1785| [Minimum Elements to Add to Form a Given Sum](https://leetcode.com/problems/minimum-elements-to-add-to-form-a-given-sum/)|[C++](./C++/minimum-elements-to-add-to-form-a-given-sum.cpp) [Python](./Python/minimum-elements-to-add-to-form-a-given-sum.py)| _O(n)_     | _O(1)_         | Medium         |  | |
+1788| [Maximize the Beauty of the Garden](https://leetcode.com/problems/maximize-the-beauty-of-the-garden/)|[C++](./C++/maximize-the-beauty-of-the-garden.cpp) [Python](./Python/maximize-the-beauty-of-the-garden.py)| _O(n)_     | _O(n)_         | Hard         | 🔒 | |
+1788| [Maximize the Beauty of the Garden](https://leetcode.com/problems/maximize-the-beauty-of-the-garden/)|[C++](./C++/maximize-the-beauty-of-the-garden.cpp) [Python](./Python/maximize-the-beauty-of-the-garden.py)| _O(n)_     | _O(n)_         | Hard         | 🔒 | |
+1793| [Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/)|[C++](./C++/maximum-score-of-a-good-subarray.cpp) [Python](./Python/maximum-score-of-a-good-subarray.py)| _O(n)_     | _O(1)_         | Hard         |  | Greedy, Prefix Sum |
 
 <br/>
 <div align="right">
@@ -1779,6 +1784,7 @@
 1778 | [Shortest Path in a Hidden Grid](https://leetcode.com/problems/shortest-path-in-a-hidden-grid/)  | [C++](./C++/shortest-path-in-a-hidden-grid.cpp) [Python](./Python/shortest-path-in-a-hidden-grid.py) | _O(m * n)_ | _O(m * n)_| Medium           |🔒| DFS, BFS, Bi-BFS | 
 1782 | [Count Pairs Of Nodes](https://leetcode.com/problems/count-pairs-of-nodes/)  | [C++](./C++/count-pairs-of-nodes.cpp) [Python](./Python/count-pairs-of-nodes.py) | _O(n + e + q)_ | _O(n + e)_| Hard           || Counting, Two Pointers | 
 1786 | [Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/)  | [C++](./C++/number-of-restricted-paths-from-first-to-last-node.cpp) [Python](./Python/number-of-restricted-paths-from-first-to-last-node.py) | _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium | | `Dijkstra's Algorithm`, DP |
+1791 | [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/)  | [C++](./C++/find-center-of-star-graph.cpp) [Python](./Python/find-center-of-star-graph.py) | _O(n)_| _O(n)_| Medium           ||| 
 
 <br/>
 <div align="right">
@@ -2021,6 +2027,7 @@
 1767| [Find the Subtasks That Did Not Execute](https://leetcode.com/problems/find-the-subtasks-that-did-not-execute/) | [MySQL](./MySQL/find-the-subtasks-that-did-not-execute.sql) | _O(n * c)_ | _O(n * c)_       | Hard           |🔒||
 1777| [Product's Price for Each Store](https://leetcode.com/problems/products-price-for-each-store/) | [MySQL](./MySQL/products-price-for-each-store.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1783| [Grand Slam Titles](https://leetcode.com/problems/grand-slam-titles/) | [MySQL](./MySQL/grand-slam-titles.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
+1789| [Primary Department for Each Employee](https://leetcode.com/problems/primary-department-for-each-employee/) | [MySQL](./MySQL/primary-department-for-each-employee.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
