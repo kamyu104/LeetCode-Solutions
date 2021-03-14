@@ -34,15 +34,13 @@ class Solution2(object):
         :rtype: int
         """
         def score(nums, k):
-            left_prefix = [nums[k]]*(k+1)
+            prefix = [nums[k]]*(k+1)
             for i in reversed(xrange(k)):
-                left_prefix[i] = min(left_prefix[i+1], nums[i])
-            right_prefix = [nums[k]]*(len(nums)-k)
-            for i in xrange(k+1, len(nums)):
-                right_prefix[i-k] = min(right_prefix[i-k-1], nums[i])
-            result = nums[k]
-            for j, right in enumerate(right_prefix, k):
-                i = bisect.bisect_left(left_prefix, right)
+                prefix[i] = min(prefix[i+1], nums[i])
+            result = right = nums[k]
+            for j in xrange(k+1, len(nums)):
+                right = min(right, nums[j])
+                i = bisect.bisect_left(prefix, right)
                 if i >= 0:
                     result = max(result, right*(j-i+1))
             return result
