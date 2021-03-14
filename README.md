@@ -1743,7 +1743,7 @@
 1775| [Equal Sum Arrays With Minimum Number of Operations](https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/)|[C++](./C++/equal-sum-arrays-with-minimum-number-of-operations.cpp) [Python](./Python/equal-sum-arrays-with-minimum-number-of-operations.py)| _O(m + n)_     | _O(1)_         | Medium         |  | |
 1785| [Minimum Elements to Add to Form a Given Sum](https://leetcode.com/problems/minimum-elements-to-add-to-form-a-given-sum/)|[C++](./C++/minimum-elements-to-add-to-form-a-given-sum.cpp) [Python](./Python/minimum-elements-to-add-to-form-a-given-sum.py)| _O(n)_     | _O(1)_         | Medium         |  | |
 1788| [Maximize the Beauty of the Garden](https://leetcode.com/problems/maximize-the-beauty-of-the-garden/)|[C++](./C++/maximize-the-beauty-of-the-garden.cpp) [Python](./Python/maximize-the-beauty-of-the-garden.py)| _O(n)_     | _O(n)_         | Hard         | 🔒 | |
-1793| [Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/)|[C++](./C++/maximum-score-of-a-good-subarray.cpp) [Python](./Python/maximum-score-of-a-good-subarray.py)| _O(n)_     | _O(1)_         | Hard         |  | Greedy, Prefix Sum |
+1793| [Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/)|[C++](./C++/maximum-score-of-a-good-subarray.cpp) [Python](./Python/maximum-score-of-a-good-subarray.py)| _O(n)_     | _O(1)_         | Hard         |  | Greedy, Prefix Sum. Binary Search |
 
 <br/>
 <div align="right">
