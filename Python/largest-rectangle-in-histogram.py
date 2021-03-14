@@ -2,19 +2,14 @@
 # Space: O(n)
 
 class Solution(object):
-    # @param height, a list of integer
-    # @return an integer
-    def largestRectangleArea(self, height):
-        increasing, area, i = [], 0, 0
-        while i <= len(height):
-            if not increasing or (i < len(height) and height[i] > height[increasing[-1]]):
-                increasing.append(i)
-                i += 1
-            else:
-                last = increasing.pop()
-                if not increasing:
-                    area = max(area, height[last] * i)
-                else:
-                    area = max(area, height[last] * (i - increasing[-1] - 1 ))
-        return area
-
+    def largestRectangleArea(self, heights):
+        """
+        :type heights: List[int]
+        :rtype: int
+        """
+        stk, result, i = [-1], 0, 0
+        for i in xrange(len(heights)+1):
+            while stk[-1] != -1 and (i == len(heights) or heights[stk[-1]] >= heights[i]):
+                result = max(result, heights[stk.pop()]*(i-stk[-1]-1))
+            stk.append(i) 
+        return result
