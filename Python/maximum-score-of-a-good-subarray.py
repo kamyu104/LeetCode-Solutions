@@ -22,6 +22,9 @@ class Solution(object):
 
 # Time:  O(nlogn)
 # Space: O(n)
+import bisect
+
+
 class Solution2(object):
     def maximumScore(self, nums, k):
         """
@@ -43,4 +46,4 @@ class Solution2(object):
                     result = max(result, right_prefix[j]*(k+j-i+1))
             return result
 
-        return max(score(nums, k), score(nums[::-1], len(nums)-k-1))
+        return max(score(nums, k), score(nums[::-1], len(nums)-1-k))
