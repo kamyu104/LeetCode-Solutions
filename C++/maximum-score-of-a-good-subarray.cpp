@@ -23,7 +23,6 @@ public:
 
 // Time:  O(nlogn)
 // Space: O(n)
-
 class Solution2 {
 public:
     int maximumScore(vector<int>& nums, int k) {
