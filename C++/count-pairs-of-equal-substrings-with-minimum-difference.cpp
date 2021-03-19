@@ -5,12 +5,12 @@ class Solution {
 public:
     int countQuadruples(string firstString, string secondString) {
         vector<int> lookup1(26, -1);
-        for (int j = size(firstString) - 1; j >= 0; --j) {
-            lookup1[firstString[j] - 'a'] = j;
+        for (int i = size(firstString) - 1; i >= 0; --i) {
+            lookup1[firstString[i] - 'a'] = i;
         }
         vector<int> lookup2(26, -1);
-        for (int a = 0; a < size(secondString); ++a) {
-            lookup2[secondString[a] - 'a'] = a;
+        for (int i = 0; i < size(secondString); ++i) {
+            lookup2[secondString[i] - 'a'] = i;
         }
         int result = 0, diff = numeric_limits<int>::max();
         for (int i = 0; i < 26; ++i) {
