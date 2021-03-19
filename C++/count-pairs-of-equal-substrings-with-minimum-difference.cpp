@@ -21,7 +21,7 @@ public:
                 diff = lookup1[i] - lookup2[i];
                 result = 0;
             }                
-            result += (lookup1[i] - lookup2[i] == diff);                
+            result += int(lookup1[i] - lookup2[i] == diff);                
         }
         return result;
     }
