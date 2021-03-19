@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1793%20%2F%201793-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1794%20%2F%201794-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1744,6 +1744,7 @@
 1785| [Minimum Elements to Add to Form a Given Sum](https://leetcode.com/problems/minimum-elements-to-add-to-form-a-given-sum/)|[C++](./C++/minimum-elements-to-add-to-form-a-given-sum.cpp) [Python](./Python/minimum-elements-to-add-to-form-a-given-sum.py)| _O(n)_     | _O(1)_         | Medium         |  | |
 1788| [Maximize the Beauty of the Garden](https://leetcode.com/problems/maximize-the-beauty-of-the-garden/)|[C++](./C++/maximize-the-beauty-of-the-garden.cpp) [Python](./Python/maximize-the-beauty-of-the-garden.py)| _O(n)_     | _O(n)_         | Hard         | 🔒 | |
 1793| [Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/)|[C++](./C++/maximum-score-of-a-good-subarray.cpp) [Python](./Python/maximum-score-of-a-good-subarray.py)| _O(n)_     | _O(1)_         | Hard         |  | Greedy, Prefix Sum. Binary Search |
+1794| [Count Pairs of Equal Substrings With Minimum Difference](https://leetcode.com/problems/count-pairs-of-equal-substrings-with-minimum-difference/)|[C++](./C++/count-pairs-of-equal-substrings-with-minimum-difference.cpp) [Python](./Python/count-pairs-of-equal-substrings-with-minimum-difference.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 | |
 
 <br/>
 <div align="right">
