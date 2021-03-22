@@ -18,10 +18,10 @@ class Solution(object):
             dp = collections.Counter(nums)
             while x:
                 if x&1:
-                    result += sum(dp[(x^1)^k]*dp[k] for k in dp.iterkeys())  # count of xor pair with 00001***** pattern
+                    result += sum(dp[(x^1)^k]*dp[k] for k in dp.iterkeys())//2  # count of xor pair with 00001***** pattern
                 dp = collections.Counter({k>>1: dp[k]+dp[k^1] for k in dp.iterkeys()})
                 x >>= 1
-            return result//2
+            return result
     
         return count(nums, high+1)-count(nums, low)
 
