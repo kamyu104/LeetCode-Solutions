@@ -456,6 +456,7 @@
 1768| [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | [C++](./C++/merge-strings-alternately.cpp) [Python](./Python/merge-strings-alternately.py) | _O(m + n)_ | _O(1)_ | Easy |||
 1784| [Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) | [C++](./C++/check-if-binary-string-has-at-most-one-segment-of-ones.cpp) [Python](./Python/check-if-binary-string-has-at-most-one-segment-of-ones.py) | _O(n)_ | _O(1)_ | Easy |||
 1790| [Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/) | [C++](./C++/check-if-one-string-swap-can-make-strings-equal.cpp) [Python](./Python/check-if-one-string-swap-can-make-strings-equal.py) | _O(n)_ | _O(1)_ | Easy |||
+1796| [Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/) | [C++](./C++/second-largest-digit-in-a-string.cpp) [Python](./Python/second-largest-digit-in-a-string.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -1614,6 +1615,7 @@
 1771| [Maximize Palindrome Length From Subsequences](https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/)|[C++](./C++/maximize-palindrome-length-from-subsequences.cpp) [Python](./Python/maximize-palindrome-length-from-subsequences.py)| _O((m + n)^2)_     | _O((m + n)^2)_         | Hard         | |
 1774| [Closest Dessert Cost](https://leetcode.com/problems/closest-dessert-cost/)|[C++](./C++/closest-dessert-cost.cpp) [Python](./Python/closest-dessert-cost.py)| _O(m * t)_     | _O(t)_         | Medium         | |
 1787| [Make the XOR of All Segments Equal to Zero](https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero/)|[C++](./C++/make-the-xor-of-all-segments-equal-to-zero.cpp) [Python](./Python/make-the-xor-of-all-segments-equal-to-zero.py)| _O(n + k * m)_     | _O(min(k * m, n))_         | Hard         | |
+1799| [Maximize Score After N Operations](https://leetcode.com/problems/maximize-score-after-n-operations/)|[C++](./C++/maximize-score-after-n-operations.cpp) [Python](./Python/maximize-score-after-n-operations.py)| _O(n^2 * 2^n)_     | _O(2^n)_         | Hard         | |
 
 <br/>
 <div align="right">
@@ -1745,6 +1747,7 @@
 1788| [Maximize the Beauty of the Garden](https://leetcode.com/problems/maximize-the-beauty-of-the-garden/)|[C++](./C++/maximize-the-beauty-of-the-garden.cpp) [Python](./Python/maximize-the-beauty-of-the-garden.py)| _O(n)_     | _O(n)_         | Hard         | 🔒 | |
 1793| [Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/)|[C++](./C++/maximum-score-of-a-good-subarray.cpp) [Python](./Python/maximum-score-of-a-good-subarray.py)| _O(n)_     | _O(1)_         | Hard         |  | Greedy, Prefix Sum. Binary Search |
 1794| [Count Pairs of Equal Substrings With Minimum Difference](https://leetcode.com/problems/count-pairs-of-equal-substrings-with-minimum-difference/)|[C++](./C++/count-pairs-of-equal-substrings-with-minimum-difference.cpp) [Python](./Python/count-pairs-of-equal-substrings-with-minimum-difference.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 | |
+1798| [Maximum Number of Consecutive Values You Can Make](https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/)|[C++](./C++/maximum-number-of-consecutive-values-you-can-make.cpp) [Python](./Python/maximum-number-of-consecutive-values-you-can-make.py)| _O(nlogn)_     | _O(1)_         | Medium         | | |
 
 <br/>
 <div align="right">
@@ -1875,6 +1878,7 @@
 1656| [Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/) | [C++](./C++/design-an-ordered-stream.cpp) [Python](./Python/design-an-ordered-stream.py) | _O(1)_, amortized | _O(n)_| Easy | |
 1670| [Design Front Middle Back Queue](https://leetcode.com/problems/design-front-middle-back-queue/) | [C++](./C++/design-front-middle-back-queue.cpp) [Python](./Python/design-front-middle-back-queue.py) | _O(1)_ | _O(n)_| Medium | |
 1756| [Design Most Recently Used Queue](https://leetcode.com/problems/design-most-recently-used-queue/) | [C++](./C++/design-most-recently-used-queue.cpp) [Python](./Python/design-most-recently-used-queue.py) | ctor: _O(nlogn)_<br>fetch: _O(logn)_ | _O(n)_| Medium | 🔒 | SortedList, BIT, Fenwick Tree, Square Root Decomposition
+1797| [Design Authentication Manager](https://leetcode.com/problems/design-authentication-manager/) | [C++](./C++/design-authentication-manager.cpp) [Python](./Python/design-authentication-manager.py) | ctor: _O(1)_<br>generate: _O(1)_, amortized<br>renew: _O(1)_, amortized<br>count: _O(1)_, amortized | _O(n)_| Medium | 🔒 | OrderedDict
 
 <br/>
 <div align="right">
