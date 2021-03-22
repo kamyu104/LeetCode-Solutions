@@ -23,7 +23,7 @@ private:
                     continue;
                 }
                 if (dp.count((x ^ 1) ^ k)) {
-                    result += v * dp[(x ^ 1) ^ k];  // current limit is 0...01*****, count xor pair with 0...00***** pattern
+                    result += v * dp[(x ^ 1) ^ k];  // current limit is xxxxx1*****, count xor pair with xxxxx0***** pattern
                 }
             }
             dp = move(new_dp);
@@ -72,7 +72,7 @@ private:
                 int bit = (limit >> i) & 1;
                 if (bit) {
                     if (nodes[idx][curr]) {
-                        result += nodes[nodes[idx][curr]][2];  // current limit is 0...01*****, count xor pair with 0...00***** pattern
+                        result += nodes[nodes[idx][0 ^ curr]][2];  // current limit is xxxxx1*****, count xor pair with xxxxx0***** pattern
                     }
                 }
                 if (!nodes[idx][bit ^ curr]) {
