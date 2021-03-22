@@ -5,7 +5,7 @@ class Solution {
 public:
     int maxScore(vector<int>& nums) {
         vector<int> dp(1 << size(nums));
-        for (int mask = 0; mask < size(dp); ++mask) {
+        for (int mask = 3; mask < size(dp); ++mask) {
             int cnt = __builtin_popcount(mask);
             if (cnt % 2) {
                 continue;
