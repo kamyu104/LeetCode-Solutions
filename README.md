@@ -2036,7 +2036,7 @@
 1777| [Product's Price for Each Store](https://leetcode.com/problems/products-price-for-each-store/) | [MySQL](./MySQL/products-price-for-each-store.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1783| [Grand Slam Titles](https://leetcode.com/problems/grand-slam-titles/) | [MySQL](./MySQL/grand-slam-titles.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 1789| [Primary Department for Each Employee](https://leetcode.com/problems/primary-department-for-each-employee/) | [MySQL](./MySQL/primary-department-for-each-employee.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
-1795| [Rearrange Products Table](https://leetcode.com/problems/rearrange-products-table/) | [MySQL](./MySQL/rearrange-products-table) | _O(n)_ | _O(n)_       | Easy           |🔒||
+1795| [Rearrange Products Table](https://leetcode.com/problems/rearrange-products-table/) | [MySQL](./MySQL/rearrange-products-table.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
