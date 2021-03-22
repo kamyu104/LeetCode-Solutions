@@ -29,7 +29,7 @@ class Solution(object):
             return result
             
         dp = [0]*(2**len(nums))
-        for mask in xrange(len(dp)):
+        for mask in xrange(3, len(dp)):
             cnt = popcount(mask)
             if cnt%2:
                 continue
