@@ -18,7 +18,7 @@ class Solution(object):
             dp = collections.Counter(nums)
             while x:
                 if x&1:
-                    result += sum(dp[(x^1)^k]*dp[k] for k in dp.iterkeys())//2  # current limit is 0...01*****, count xor pair with 0...00***** pattern
+                    result += sum(dp[(x^1)^k]*dp[k] for k in dp.iterkeys())//2  # current limit is xxxxx1*****, count xor pair with xxxxx0***** pattern
                 dp = collections.Counter({k>>1: dp[k]+dp[k^1] for k in dp.iterkeys()})
                 x >>= 1
             return result
@@ -49,7 +49,7 @@ class Trie(object):
             bit = (limit>>i) & 1
             if bit:
                 if curr in node:
-                    result += node[curr]["_count"]  # current limit is 0...01*****, count xor pair with 0...00***** pattern
+                    result += node[0^curr]["_count"]  # current limit is xxxxx1*****, count xor pair with xxxxx0***** pattern
             if bit^curr not in node:
                 break
             node = node[bit^curr]
