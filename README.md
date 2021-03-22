@@ -303,6 +303,7 @@
 1755 | [Closest Subsequence Sum](https://leetcode.com/problems/closest-subsequence-sum/) | [C++](./C++/closest-subsequence-sum.cpp) [Python](./Python/closest-subsequence-sum.py) | _O(n * 2^(n/2))_ | _O(n * 2^(n/2))_ | Hard || Meet in the Middle
 1773 | [Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/) | [C++](./C++/count-items-matching-a-rule.cpp) [Python](./Python/count-items-matching-a-rule.py) | _O(n)_ | _O(1)_ | Easy ||
 1779 | [Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/) | [C++](./C++/find-nearest-point-that-has-the-same-x-or-y-coordinate.cpp) [Python](./Python/find-nearest-point-that-has-the-same-x-or-y-coordinate.py) | _O(n)_ | _O(1)_ | Easy ||
+1800 | [Maximum Ascending Subarray Sum](https://leetcode.com/problems/maximum-ascending-subarray-sum/) | [C++](./C++/maximum-ascending-subarray-sum.cpp) [Python](./Python/maximum-ascending-subarray-sum.py) | _O(n)_ | _O(1)_ | Easy ||
 
 <br/>
 <div align="right">
@@ -1191,6 +1192,7 @@
 1671| [Minimum Number of Removals to Make Mountain Array](https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/) | [C++](./C++/minimum-number-of-removals-to-make-mountain-array.cpp)  [Python](./Python/minimum-number-of-removals-to-make-mountain-array.py)  | _O(nlogn)_ | _O(n)_ | Medium         | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Binary Search, DP|
 1713| [Minimum Operations to Make a Subsequence](https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/) | [C++](./C++/minimum-operations-to-make-a-subsequence.cpp)  [Python](./Python/minimum-operations-to-make-a-subsequence.py)  | _O(nlogn)_ | _O(n)_ | Hard         | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Binary Search, Segment Tree |
 1760 | [Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/) | [C++](./C++/minimum-limit-of-balls-in-a-bag.cpp) [Python](./Python/minimum-limit-of-balls-in-a-bag.py) | _O(nlogm)_ | _O(1)_ | Medium | |
+1802 | [Maximum Value at a Given Index in a Bounded Array](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/) | [C++](./C++/maximum-value-at-a-given-index-in-a-bounded-array.cpp) [Python](./Python/maximum-value-at-a-given-index-in-a-bounded-array.py) | _O(logm)_ | _O(1)_ | Medium | |
 
 <br/>
 <div align="right">
@@ -1616,6 +1618,7 @@
 1774| [Closest Dessert Cost](https://leetcode.com/problems/closest-dessert-cost/)|[C++](./C++/closest-dessert-cost.cpp) [Python](./Python/closest-dessert-cost.py)| _O(m * t)_     | _O(t)_         | Medium         | |
 1787| [Make the XOR of All Segments Equal to Zero](https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero/)|[C++](./C++/make-the-xor-of-all-segments-equal-to-zero.cpp) [Python](./Python/make-the-xor-of-all-segments-equal-to-zero.py)| _O(n + k * m)_     | _O(min(k * m, n))_         | Hard         | |
 1799| [Maximize Score After N Operations](https://leetcode.com/problems/maximize-score-after-n-operations/)|[C++](./C++/maximize-score-after-n-operations.cpp) [Python](./Python/maximize-score-after-n-operations.py)| _O(n^2 * 2^n)_     | _O(2^n)_         | Hard         | |
+1803| [Count Pairs With XOR in a Range](https://leetcode.com/problems/count-pairs-with-xor-in-a-range/)|[C++](./C++/count-pairs-with-xor-in-a-range.cpp) [Python](./Python/count-pairs-with-xor-in-a-range.py)| _O(n)_     | _O(n)_         | Hard         | | DP, Trie
 
 <br/>
 <div align="right">
@@ -1748,6 +1751,7 @@
 1793| [Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/)|[C++](./C++/maximum-score-of-a-good-subarray.cpp) [Python](./Python/maximum-score-of-a-good-subarray.py)| _O(n)_     | _O(1)_         | Hard         |  | Greedy, Prefix Sum. Binary Search |
 1794| [Count Pairs of Equal Substrings With Minimum Difference](https://leetcode.com/problems/count-pairs-of-equal-substrings-with-minimum-difference/)|[C++](./C++/count-pairs-of-equal-substrings-with-minimum-difference.cpp) [Python](./Python/count-pairs-of-equal-substrings-with-minimum-difference.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 | |
 1798| [Maximum Number of Consecutive Values You Can Make](https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/)|[C++](./C++/maximum-number-of-consecutive-values-you-can-make.cpp) [Python](./Python/maximum-number-of-consecutive-values-you-can-make.py)| _O(nlogn)_     | _O(1)_         | Medium         | | |
+1801| [Number of Orders in the Backlog](https://leetcode.com/problems/number-of-orders-in-the-backlog/)|[C++](./C++/number-of-orders-in-the-backlog.cpp) [Python](./Python/number-of-orders-in-the-backlog.py)| _O(nlogn)_     | _O(n)_         | Medium         | | Greedy, Heap |
 
 <br/>
 <div align="right">
