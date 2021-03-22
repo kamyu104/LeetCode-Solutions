@@ -1,4 +1,4 @@
-# Time:  O(logn)
+# Time:  O(logm)
 # Space: O(1)
 
 class Solution(object):
