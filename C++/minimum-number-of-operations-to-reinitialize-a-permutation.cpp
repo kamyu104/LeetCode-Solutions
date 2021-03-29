@@ -46,14 +46,12 @@ public:
 };
 
 // Time:  O(n)
-// Space: O(n)
-class Solution3 {
+// Space: O(1)
+class Solution {
 public:
     int reinitializePermutation(int n) {
         int result = 0;
-        unordered_set<int> lookup;
-        for (int i = 1; !lookup.count(i); i = (i % 2 == 0) ? i / 2 : n / 2 + (i - 1) / 2) {  // find cycle length
-            lookup.emplace(i);
+        for (int i = 1; !result || i != 1; i = (i % 2 == 0) ? i / 2 : n / 2 + (i - 1) / 2) {  // find cycle length
             ++result;
         }
         return result;
