@@ -150,7 +150,7 @@ private:
 
     uint32_t powmod(uint32_t a, uint32_t b, uint32_t mod) {
         a %= mod;
-        uint64_t result = 1;
+        uint32_t result = 1;
         while (b) {
             if (b & 1) {
                 result = mulmod(result, a, mod);
