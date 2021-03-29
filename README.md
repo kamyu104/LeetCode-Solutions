@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1803%20%2F%201803-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1809%20%2F%201809-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -458,6 +458,7 @@
 1784| [Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) | [C++](./C++/check-if-binary-string-has-at-most-one-segment-of-ones.cpp) [Python](./Python/check-if-binary-string-has-at-most-one-segment-of-ones.py) | _O(n)_ | _O(1)_ | Easy |||
 1790| [Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/) | [C++](./C++/check-if-one-string-swap-can-make-strings-equal.cpp) [Python](./Python/check-if-one-string-swap-can-make-strings-equal.py) | _O(n)_ | _O(1)_ | Easy |||
 1796| [Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/) | [C++](./C++/second-largest-digit-in-a-string.cpp) [Python](./Python/second-largest-digit-in-a-string.py) | _O(n)_ | _O(1)_ | Easy |||
+1805| [Number of Different Integers in a String](https://leetcode.com/problems/number-of-different-integers-in-a-string/) | [C++](./C++/number-of-different-integers-in-a-string.cpp) [Python](./Python/number-of-different-integers-in-a-string.py) | _O(n)_ | _O(n)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -790,6 +791,7 @@
 1711| [Count Good Meals](https://leetcode.com/problems/count-good-meals/)      | [C++](./C++/count-good-meals.cpp) [Python](./Python/count-good-meals.py)      | _O(n)_         | _O(1)_          | Medium         ||
 1748| [Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/)      | [C++](./C++/sum-of-unique-elements.cpp) [Python](./Python/sum-of-unique-elements.py)      | _O(n)_         | _O(n)_          | Easy         ||
 1781| [Sum of Beauty of All Substrings](https://leetcode.com/problems/sum-of-beauty-of-all-substrings/)      | [C++](./C++/sum-of-beauty-of-all-substrings.cpp) [Python](./Python/sum-of-beauty-of-all-substrings.py)      | _O(n^2)_         | _O(1)_          | Medium         ||
+1807| [Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/)      | [C++](./C++/evaluate-the-bracket-pairs-of-a-string.cpp) [Python](./Python/evaluate-the-bracket-pairs-of-a-string.py)      | _O(n + m)_         | _O(n + m)_          | Medium         ||
 
 <br/>
 <div align="right">
@@ -952,6 +954,8 @@
 1753| [Maximum Score From Removing Stones](https://leetcode.com/problems/maximum-score-from-removing-stones/) | [C++](./C++/maximum-score-from-removing-stones.cpp) [Python](./Python/maximum-score-from-removing-stones.py) | _O(1)_ | _O(1)_ |  Medium | |
 1776| [Car Fleet II](https://leetcode.com/problems/car-fleet-ii/) | [C++](./C++/car-fleet-ii.cpp) [Python](./Python/car-fleet-ii.py) | _O(n)_ | _O(n)_ |  Hard | | Mono Stack
 1780| [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/) | [C++](./C++/check-if-number-is-a-sum-of-powers-of-three.cpp) [Python](./Python/check-if-number-is-a-sum-of-powers-of-three.py) | _O(logn)_ | _O(1)_ |  Medium | |
+1806| [Minimum Number of Operations to Reinitialize a Permutation](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/) | [C++](./C++/minimum-number-of-operations-to-reinitialize-a-permutation.cpp) [Python](./Python/minimum-number-of-operations-to-reinitialize-a-permutation.py) | _O(sqrt(n))_ | _O(sqrt(n))_ |  Medium | | Discrete Logarithm, Multiplicative Order
+1808| [Maximize Number of Nice Divisors](https://leetcode.com/problems/maximize-number-of-nice-divisors/) | [C++](./C++/maximize-number-of-nice-divisors.cpp) [Python](./Python/maximize-number-of-nice-divisors.py) | _O(logn)_ | _O(1)_ |  Medium | variant of [Integer Break](https://leetcode.com/problems/integer-break/)  |
 
 <br/>
 <div align="right">
@@ -1883,6 +1887,7 @@
 1670| [Design Front Middle Back Queue](https://leetcode.com/problems/design-front-middle-back-queue/) | [C++](./C++/design-front-middle-back-queue.cpp) [Python](./Python/design-front-middle-back-queue.py) | _O(1)_ | _O(n)_| Medium | |
 1756| [Design Most Recently Used Queue](https://leetcode.com/problems/design-most-recently-used-queue/) | [C++](./C++/design-most-recently-used-queue.cpp) [Python](./Python/design-most-recently-used-queue.py) | ctor: _O(nlogn)_<br>fetch: _O(logn)_ | _O(n)_| Medium | 🔒 | SortedList, BIT, Fenwick Tree, Square Root Decomposition
 1797| [Design Authentication Manager](https://leetcode.com/problems/design-authentication-manager/) | [C++](./C++/design-authentication-manager.cpp) [Python](./Python/design-authentication-manager.py) | ctor: _O(1)_<br>generate: _O(1)_, amortized<br>renew: _O(1)_, amortized<br>count: _O(1)_, amortized | _O(n)_| Medium | | OrderedDict
+1804| [Implement Trie II (Prefix Tree)](https://leetcode.com/problems/implement-trie-ii-prefix-tree/) | [C++](./C++/implement-trie-ii-prefix-tree.cpp) [Python](./Python/implement-trie-ii-prefix-tree.py) | ctor: _O(1)_<br>insert: _O(n)_<br>count_word: _O(n)_<br>count_prefix: _O(n)_<br>erase: _O(n)_ | _O(n)_| Medium | 🔒 | Trie
 
 <br/>
 <div align="right">
@@ -2037,6 +2042,7 @@
 1783| [Grand Slam Titles](https://leetcode.com/problems/grand-slam-titles/) | [MySQL](./MySQL/grand-slam-titles.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 1789| [Primary Department for Each Employee](https://leetcode.com/problems/primary-department-for-each-employee/) | [MySQL](./MySQL/primary-department-for-each-employee.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1795| [Rearrange Products Table](https://leetcode.com/problems/rearrange-products-table/) | [MySQL](./MySQL/rearrange-products-table.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+1809| [Ad-Free Sessions](https://leetcode.com/problems/ad-free-sessions/) | [MySQL](./MySQL/ad-free-sessions.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
