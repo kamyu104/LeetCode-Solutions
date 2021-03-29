@@ -36,25 +36,25 @@ class Solution2(object):
         :type n: int
         :rtype: int
         """
+        if n == 2:
+            return 1
         result, i = 0, 1
-        while not result or i > 1:
+        while not result or i != 1:
             i = (i*2)%(n-1)
             result += 1
         return result
 
 
 # Time:  O(n)
-# Space: O(n)
+# Space: O(1)
 class Solution3(object):
     def reinitializePermutation(self, n):
         """
         :type n: int
         :rtype: int
         """
-        result, lookup = 0, set()
-        i = 1
-        while i not in lookup:  # find cycle length
-            lookup.add(i)
+        result, i = 0, 1
+        while not result or i != 1:  # find cycle length
             i = (i//2 if not i%2 else n//2+(i-1)//2)
             result += 1
         return result
