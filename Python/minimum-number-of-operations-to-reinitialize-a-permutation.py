@@ -27,6 +27,7 @@ class Solution(object):
 
         return 1+discrete_log(2, n//2, n-1)  # find min x s.t. 2^x mod (n-1) = n/2, result is x + 1
 
+
 # Time:  O(n)
 # Space: O(1)
 class Solution2(object):
@@ -38,5 +39,22 @@ class Solution2(object):
         result, i = 0, 1
         while not result or i > 1:
             i = (i*2)%(n-1)
+            result += 1
+        return result
+
+
+# Time:  O(n)
+# Space: O(n)
+class Solution3(object):
+    def reinitializePermutation(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        result, lookup = 0, set()
+        i = 1
+        while i not in lookup:  # find cycle length
+            lookup.add(i)
+            i = (i//2 if not i%2 else n//2+(i-1)//2)
             result += 1
         return result
