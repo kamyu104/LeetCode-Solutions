@@ -11,7 +11,7 @@ class Solution(object):
         def discrete_log(a, b, m):
             a %= m
             b %= m
-            n = int(sqrt(m))+1
+            n = int(m**0.5)+1
             an = pow(a, n, m)
             vals = {}
             curr = b
