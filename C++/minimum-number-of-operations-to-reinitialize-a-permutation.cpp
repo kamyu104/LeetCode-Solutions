@@ -47,7 +47,7 @@ public:
 
 // Time:  O(n)
 // Space: O(1)
-class Solution {
+class Solution3 {
 public:
     int reinitializePermutation(int n) {
         int result = 0;
