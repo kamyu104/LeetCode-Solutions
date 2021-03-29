@@ -18,7 +18,7 @@ class Solution(object):
                 has_pair = False
                 result.append(lookup.get("".join(curr), '?'))
                 curr = []
-            elif is_pair:
+            elif has_pair:
                 curr.append(c)
             else:
                 result.append(c)
