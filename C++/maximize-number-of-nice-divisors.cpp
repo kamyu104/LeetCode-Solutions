@@ -8,7 +8,7 @@ public:
         static const int mod = 1e9 + 7;
         
         // given a1 + a2 + ... + ak <= n, find max of a1 * a2 * ... * ak 
-        // => given a1 + a2 + ... + ak <= n, find max of a1 * a2 * ... * ak 
+        // => given a1 + a2 + ... + ak = n, find max of a1 * a2 * ... * ak 
         // => ai is either 3 or 2, see proof in "343. integer break"
         if (primeFactors <= 3) {
             return primeFactors;
