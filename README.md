@@ -1887,7 +1887,7 @@
 1670| [Design Front Middle Back Queue](https://leetcode.com/problems/design-front-middle-back-queue/) | [C++](./C++/design-front-middle-back-queue.cpp) [Python](./Python/design-front-middle-back-queue.py) | _O(1)_ | _O(n)_| Medium | |
 1756| [Design Most Recently Used Queue](https://leetcode.com/problems/design-most-recently-used-queue/) | [C++](./C++/design-most-recently-used-queue.cpp) [Python](./Python/design-most-recently-used-queue.py) | ctor: _O(nlogn)_<br>fetch: _O(logn)_ | _O(n)_| Medium | 🔒 | SortedList, BIT, Fenwick Tree, Square Root Decomposition
 1797| [Design Authentication Manager](https://leetcode.com/problems/design-authentication-manager/) | [C++](./C++/design-authentication-manager.cpp) [Python](./Python/design-authentication-manager.py) | ctor: _O(1)_<br>generate: _O(1)_, amortized<br>renew: _O(1)_, amortized<br>count: _O(1)_, amortized | _O(n)_| Medium | | OrderedDict
-1804| [Implement Trie II (Prefix Tree)](https://leetcode.com/problems/implement-trie-ii-prefix-tree/) | [C++](./C++/implement-trie-ii-prefix-tree.cpp) [Python](./Python/implement-trie-ii-prefix-tree.py) | ctor: _O(1)_<br>insert: _O(n)_<br>count_word: _O(n)_<br>count_prefix: _O(n)_<br>erase: _O(n)_ | _O(n)_| Medium | 🔒 | Trie
+1804| [Implement Trie II (Prefix Tree)](https://leetcode.com/problems/implement-trie-ii-prefix-tree/) | [C++](./C++/implement-trie-ii-prefix-tree.cpp) [Python](./Python/implement-trie-ii-prefix-tree.py) | ctor: _O(1)_<br>insert: _O(n)_<br>count_word: _O(n)_<br>count_prefix: _O(n)_<br>erase: _O(n)_ | _O(t)_| Medium | 🔒 | Trie
 
 <br/>
 <div align="right">
