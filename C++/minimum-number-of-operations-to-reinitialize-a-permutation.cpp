@@ -44,3 +44,18 @@ public:
         return result;
     }
 };
+
+// Time:  O(n)
+// Space: O(n)
+class Solution3 {
+public:
+    int reinitializePermutation(int n) {
+        int result = 0;
+        unordered_set<int> lookup;
+        for (int i = 1; !lookup.count(i); i = (i % 2 == 0) ? i / 2 : n / 2 + (i - 1) / 2) {  // find cycle length
+            lookup.emplace(i);
+            ++result;
+        }
+        return result;
+    }
+};
