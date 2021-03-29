@@ -36,9 +36,11 @@ private:
 class Solution2 {
 public:
     int reinitializePermutation(int n) {
-        int result = 0, i = 1;
-        while (result == 0 || i > 1) {
-            i = i * 2 % (n - 1);
+        if (n == 2) {
+            return 1;
+        }
+        int result = 0;
+        for (int i = 1; !result || i != 1; i = i * 2 % (n - 1)) {  // find cycle length
             ++result;
         }
         return result;
