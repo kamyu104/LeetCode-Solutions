@@ -60,6 +60,12 @@
     * [Data Structure and Algorithms Cheat Sheet](https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md)
 * Python
     * [Time Complexity](https://wiki.python.org/moin/TimeComplexity)
+* Algorithms
+    * https://rosettacode.org/
+    * https://cp-algorithms.com/
+    * https://github.com/kth-competitive-programming/kactl
+* Math
+    * https://math.stackexchange.com/
 
 ## Bit Manipulation
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
