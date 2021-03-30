@@ -61,11 +61,11 @@
 * Python
     * [Time Complexity](https://wiki.python.org/moin/TimeComplexity)
 * Algorithms
-    * https://rosettacode.org/
-    * https://cp-algorithms.com/
-    * https://github.com/kth-competitive-programming/kactl
+    * [Rosetta Code](https://rosettacode.org)
+    * [CP-Algorithms](https://cp-algorithms.com)
+    * [KACTL](https://github.com/kth-competitive-programming/kactl)
 * Math
-    * https://math.stackexchange.com/
+    * [Stack Exchange](https://math.stackexchange.com)
 
 ## Bit Manipulation
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
