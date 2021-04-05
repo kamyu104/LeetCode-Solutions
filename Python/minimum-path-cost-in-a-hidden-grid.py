@@ -51,7 +51,7 @@ class Solution(object):
                     if v in dist and dist[v] <= curr+w:
                         continue
                     dist[v] = curr+w
-                    heappush(min_heap, (curr+w, v))
+                    heapq.heappush(min_heap, (curr+w, v))
             return dist[target] if target in dist else -1 
         
         start = (0, 0)
