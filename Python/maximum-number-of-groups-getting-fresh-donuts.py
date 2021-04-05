@@ -1,5 +1,5 @@
-# Time:  O(b * (n/b+1)^b)
-# Space: O((n/b+1)^b)
+# Time:  O((b/2) * (n/(b/2)+1)^(b/2))
+# Space: O((n/(b/2)+1)^(b/2))
 
 # greedy + memoization solution
 class Solution(object):
@@ -32,13 +32,19 @@ class Solution(object):
         count = [0]*batchSize
         for i in groups:
             count[i%len(count)] += 1
+        result = 0
+        for i in xrange(1, (batchSize+1)//2):  # optimization
+            pair_count = min(count[i], count[batchSize-i]) if 2*i != batchSize else count[i]//2
+            result += pair_count
+            count[i] -= pair_count
+            count[batchSize-i] -= pair_count
         max_mask = reduce(lambda total, c: total*(c+1), count, 1)
         lookup = [0]*max_mask
-        return memoization(count, max_mask-1, 0, lookup)
+        return result+memoization(count, max_mask-1, 0, lookup)
 
 
-# Time:  O(b * (n/b+1)^b)
-# Space: O((n/b+1)^b)
+# Time:  O((b/2) * (n/(b/2)+1)^(b/2))
+# Space: O((n/(b/2)+1)^(b/2))
 # dp solution
 class Solution2(object):
     def maxHappyGroups(self, batchSize, groups):
@@ -50,6 +56,12 @@ class Solution2(object):
         count = [0]*batchSize
         for i in groups:
             count[i%len(count)] += 1
+        result = 0
+        for i in xrange(1, (batchSize+1)//2):  # optimization
+            pair_count = min(count[i], count[batchSize-i]) if 2*i != batchSize else count[i]//2
+            result += pair_count
+            count[i] -= pair_count
+            count[batchSize-i] -= pair_count
         max_mask = reduce(lambda total, c: total*(c+1), count, 1)
         dp = [0]*max_mask
         for mask in xrange(len(dp)):
@@ -64,4 +76,4 @@ class Solution2(object):
                 curr //= c+1
             if mask != len(dp)-1 and remain == 0:
                 dp[mask] += 1
-        return dp[-1]
+        return result+dp[-1]
