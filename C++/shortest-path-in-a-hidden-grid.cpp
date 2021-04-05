@@ -30,8 +30,7 @@ public:
         pair<int, int> target = {0, 0};
         bool found = false;
         vector<vector<bool>> lookup(2 * MAX_M + 1, vector<bool>(2 * MAX_N + 1));
-        vector<vector<char>> grid(2 * MAX_M + 1, vector<char>(2 * MAX_N + 1));
-        grid[MAX_M][MAX_N] = -1;
+        vector<vector<bool>> grid(2 * MAX_M + 1, vector<bool>(2 * MAX_N + 1));
         dfs(start, &target, &master, &found, &lookup, &grid);
         if (!found) {
             return -1;
@@ -40,7 +39,7 @@ public:
     }
 
 private:
-    int bi_bfs(const vector<vector<char>>& grid,
+    int bi_bfs(const vector<vector<bool>>& grid,
                const pair<int, int>& start,
                const pair<int, int>& target) {
         unordered_set<pair<int, int>, PairHash<int>> left = {start}, right = {target};
@@ -80,7 +79,7 @@ private:
              GridMaster *master,
              bool *found,
              vector<vector<bool>> *lookup,
-             vector<vector<char>> *grid) {
+             vector<vector<bool>> *grid) {
         static const unordered_map<char, char> rollback = {
             {'L', 'R'}, {'R', 'L'}, {'U', 'D'}, {'D', 'U'}
         };
@@ -124,8 +123,7 @@ public:
         pair<int, int> target = {0, 0};
         bool found = false;
         vector<vector<bool>> lookup(2 * MAX_M + 1, vector<bool>(2 * MAX_N + 1));
-        vector<vector<char>> grid(2 * MAX_M + 1, vector<char>(2 * MAX_N + 1));
-        grid[MAX_M][MAX_N] = -1;
+        vector<vector<bool>> grid(2 * MAX_M + 1, vector<bool>(2 * MAX_N + 1));
         dfs(start, &target, &master, &found, &lookup, &grid);
         if (!found) {
             return -1;
@@ -134,7 +132,7 @@ public:
     }
 
 private:
-    int bfs(const vector<vector<char>>& grid,
+    int bfs(const vector<vector<bool>>& grid,
             const pair<int, int>& start,
             const pair<int, int>& target) {
         vector<pair<int, int>> q = {start};
@@ -167,7 +165,7 @@ private:
              GridMaster *master,
              bool *found,
              vector<vector<bool>> *lookup,
-             vector<vector<char>> *grid) {
+             vector<vector<bool>> *grid) {
         static const unordered_map<char, char> rollback = {
             {'L', 'R'}, {'R', 'L'}, {'U', 'D'}, {'D', 'U'}
         };
