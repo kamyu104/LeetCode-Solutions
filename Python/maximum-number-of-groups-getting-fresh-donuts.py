@@ -43,10 +43,10 @@ class Solution(object):
             result += pair_count
             count[i] -= pair_count
             count[len(count)-i] -= pair_count
-        count = {i:c for i, c in enumerate(count) if c}
-        max_mask = reduce(lambda total, c: total*(c+1), count.itervalues(), 1)
+        new_count = {i:c for i, c in enumerate(count) if c}
+        max_mask = reduce(lambda total, c: total*(c+1), new_count.itervalues(), 1)
         lookup = [0]*max_mask
-        return result+memoization(batchSize, count, max_mask-1, 0, lookup)
+        return result+memoization(batchSize, new_count, max_mask-1, 0, lookup)
 
 
 # Time:  O((b/2) * (n/(b/2)+1)^(b/2))
@@ -69,13 +69,13 @@ class Solution2(object):
             result += pair_count
             count[i] -= pair_count
             count[len(count)-i] -= pair_count
-        count = {i:c for i, c in enumerate(count) if c}
-        max_mask = reduce(lambda total, c: total*(c+1), count.itervalues(), 1)
+        new_count = {i:c for i, c in enumerate(count) if c}
+        max_mask = reduce(lambda total, c: total*(c+1), new_count.itervalues(), 1)
         dp = [0]*max_mask
         for mask in xrange(len(dp)):
             remain = 0
             curr, basis = mask, 1
-            for i, c in count.iteritems():
+            for i, c in new_count.iteritems():
                 ai = curr%(c+1)
                 if ai:
                     dp[mask] = max(dp[mask], dp[mask-basis])
