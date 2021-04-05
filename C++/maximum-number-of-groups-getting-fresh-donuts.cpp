@@ -19,25 +19,25 @@ public:
 
 private:
     int dfs(vector<int>& count, vector<int>& dp, int mask, int remain) {
-        if (dp[mask]) {
-            return dp[mask];
-        }
-        int curr = mask, basis = 1, i = 0;
-        for (; i < remain; basis *= (count[i] + 1), curr /= (count[i] + 1), ++i);
-        // mask: a0 + a1 * (c0 + 1)  + a2 * (c0 + 1) * (c1 + 1) + ... + a(b-1) * (c0 + 1) * (c1 + 1) * ... * (c(b-2) + 1)
-        int a_remain = curr % (count[remain] + 1);
-        int result = 0;
-        if (a_remain) {  // greedily use remain
-            result = max(result, (remain == 0) + dfs(count, dp, mask - basis, ((remain - i) + size(count)) % size(count)));
-        } else {
-            for (int curr = mask, basis = 1, i = 0; i < size(count); basis *= (count[i] + 1), curr /= (count[i] + 1), ++i) {
-                if (curr % (count[i] + 1) == 0) {
-                    continue;
-                }
+        if (!dp[mask]) {
+            int curr = mask, basis = 1, i = 0;
+            for (; i < remain; basis *= (count[i] + 1), curr /= (count[i] + 1), ++i);
+            // mask: a0 + a1 * (c0 + 1)  + a2 * (c0 + 1) * (c1 + 1) + ... + a(b-1) * (c0 + 1) * (c1 + 1) * ... * (c(b-2) + 1)
+            int a_remain = curr % (count[remain] + 1);
+            int result = 0;
+            if (a_remain) {  // greedily use remain
                 result = max(result, (remain == 0) + dfs(count, dp, mask - basis, ((remain - i) + size(count)) % size(count)));
+            } else {
+                for (int curr = mask, basis = 1, i = 0; i < size(count); basis *= (count[i] + 1), curr /= (count[i] + 1), ++i) {
+                    if (curr % (count[i] + 1) == 0) {
+                        continue;
+                    }
+                    result = max(result, (remain == 0) + dfs(count, dp, mask - basis, ((remain - i) + size(count)) % size(count)));
+                }
             }
+            dp[mask] = result;
         }
-        return dp[mask] = result;
+        return dp[mask];
     }
 };
 
