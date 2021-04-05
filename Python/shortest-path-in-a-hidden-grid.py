@@ -40,7 +40,7 @@ class Solution(object):
                 dfs(nei, target, master, lookup, adj)
                 master.move(rollback[d])
                         
-        def bi_bfs(start, target, adj):
+        def bi_bfs(adj, start, target):
             lookup = set()
             left, right = set([start]), set([target])
             steps = 0
@@ -67,7 +67,7 @@ class Solution(object):
         dfs(start, target, master, set(), adj)
         if not target[0]:
             return -1
-        return bi_bfs(start, target[0], adj)
+        return bi_bfs(adj, start, target[0])
 
 
 # Time:  O(m * n)
@@ -97,7 +97,7 @@ class Solution2(object):
                 dfs(nei, target, master, lookup, adj)
                 master.move(rollback[d])
                         
-        def bfs(start, target, adj):
+        def bfs(adj, start, target):
             q = [start]
             lookup = set(q)
             steps = 0
@@ -121,4 +121,4 @@ class Solution2(object):
         dfs(start, target, master, set(), adj)
         if not target[0]:
             return -1
-        return bfs(start, target[0], adj)
+        return bfs(adj, start, target[0])
