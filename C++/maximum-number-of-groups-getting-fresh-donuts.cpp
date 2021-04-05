@@ -1,5 +1,5 @@
-// Time:  O(b * (n/b+1)^b)
-// Space: O((n/b+1)^b)
+// Time:  O((b/2) * (n/(b/2)+1)^(b/2))
+// Space: O((n/(b/2)+1)^(b/2))
 
 // greedy + memoization solution
 class Solution {
@@ -9,12 +9,20 @@ public:
         for (const auto& i : groups) {
             ++count[i % size(count)];
         }
+        int result = count[0];
+        count[0] = 0;
+        for (int i = 1; i <= size(count) / 2; ++i) {
+            int pair_count = 2 * i != size(count) ? min(count[i], count[size(count) - i]) : count[i] / 2;
+            result += pair_count;
+            count[i] -= pair_count;
+            count[size(count) - i] -= pair_count;
+        }
         int max_mask = accumulate(cbegin(count), cend(count), 1,
                                   [](int total, int c) {
                                       return total * (c + 1);
                                   });
         vector<int> lookup(max_mask);
-        return memoization(count, max_mask - 1, 0, &lookup);
+        return result + memoization(count, max_mask - 1, 0, &lookup);
     }
 
 private:
@@ -41,8 +49,8 @@ private:
     }
 };
 
-// Time:  O(b * (n/b+1)^b)
-// Space: O((n/b+1)^b)
+// Time:  O((b/2) * (n/(b/2)+1)^(b/2))
+// Space: O((n/(b/2)+1)^(b/2))
 // dp solution
 class Solution2 {
 public:
@@ -51,12 +59,19 @@ public:
         for (const auto& i : groups) {
             ++count[i % size(count)];
         }
+        int result = count[0];
+        count[0] = 0;
+        for (int i = 1; i <= size(count) / 2; ++i) {
+            int pair_count = 2 * i != size(count) ? min(count[i], count[size(count) - i]) : count[i] / 2;
+            result += pair_count;
+            count[i] -= pair_count;
+            count[size(count) - i] -= pair_count;
+        }
         int max_mask = accumulate(cbegin(count), cend(count), 1,
                                   [](int total, int c) {
                                       return total * (c + 1);
                                   });
         vector<int> dp(max_mask);
-        int result = 0;
         for (int mask = 0; mask < size(dp); ++mask) {
             int remain = 0;
             for (int curr = mask, basis = 1, i = 0; i < size(count);
@@ -72,6 +87,6 @@ public:
                 ++dp[mask];
             }
         }
-        return dp.back();
+        return result + dp.back();
     }
 };
