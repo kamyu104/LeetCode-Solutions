@@ -1,7 +1,7 @@
 // Time:  O(b * (n/b+1)^b)
 // Space: O((n/b+1)^b)
 
-// greedy + dp solution
+// greedy + memoization solution
 class Solution {
 public:
     int maxHappyGroups(int batchSize, vector<int>& groups) {
@@ -13,31 +13,31 @@ public:
                                   [](int total, int c) {
                                       return total * (c + 1);
                                   });
-        vector<int> dp(max_mask);
-        return memoization(count, max_mask - 1, 0, &dp);
+        vector<int> lookup(max_mask);
+        return memoization(count, max_mask - 1, 0, &lookup);
     }
 
 private:
-    int memoization(const vector<int>& count, int mask, int remain, vector<int> *dp) {
-        if (!(*dp)[mask]) {
+    int memoization(const vector<int>& count, int mask, int remain, vector<int> *lookup) {
+        if (!(*lookup)[mask]) {
             int curr = mask, basis = 1, i = 0;
             for (; i < remain; basis *= (count[i] + 1), curr /= (count[i] + 1), ++i);
             // mask: a0 + a1 * (c0 + 1)  + a2 * (c0 + 1) * (c1 + 1) + ... + a(b-1) * (c0 + 1) * (c1 + 1) * ... * (c(b-2) + 1)
             int a_remain = curr % (count[remain] + 1);
             int result = 0;
             if (a_remain) {  // greedily use remain
-                result = max(result, (remain == 0) + memoization(count, mask - basis, ((remain - i) + size(count)) % size(count), dp));
+                result = max(result, (remain == 0) + memoization(count, mask - basis, ((remain - i) + size(count)) % size(count), lookup));
             } else {
                 for (int curr = mask, basis = 1, i = 0; i < size(count); basis *= (count[i] + 1), curr /= (count[i] + 1), ++i) {
                     if (curr % (count[i] + 1) == 0) {
                         continue;
                     }
-                    result = max(result, (remain == 0) + memoization(count, mask - basis, ((remain - i) + size(count)) % size(count), dp));
+                    result = max(result, (remain == 0) + memoization(count, mask - basis, ((remain - i) + size(count)) % size(count), lookup));
                 }
             }
-            (*dp)[mask] = result;
+            (*lookup)[mask] = result;
         }
-        return (*dp)[mask];
+        return (*lookup)[mask];
     }
 };
 
