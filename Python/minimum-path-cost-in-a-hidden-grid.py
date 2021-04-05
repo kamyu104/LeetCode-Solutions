@@ -45,7 +45,7 @@ class Solution(object):
             min_heap = [(0, start)]
             while min_heap:
                 curr, u = heapq.heappop(min_heap)
-                if u in dist and dist[u] < curr:
+                if dist[u] < curr:
                     continue
                 for v, w in adj[u].iteritems():
                     if v in dist and dist[v] <= curr+w:
