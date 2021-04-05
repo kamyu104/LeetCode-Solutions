@@ -34,11 +34,11 @@ class Solution(object):
             count[i%len(count)] += 1
         result = count[0]
         count[0] = 0
-        for i in xrange(1, (batchSize+1)//2):  # optimization
-            pair_count = min(count[i], count[batchSize-i]) if 2*i != batchSize else count[i]//2
+        for i in xrange(1, len(count)//2+1):  # optimization
+            pair_count = min(count[i], count[len(count)-i]) if 2*i != len(count) else count[i]//2
             result += pair_count
             count[i] -= pair_count
-            count[batchSize-i] -= pair_count
+            count[len(count)-i] -= pair_count
         max_mask = reduce(lambda total, c: total*(c+1), count, 1)
         lookup = [0]*max_mask
         return result+memoization(count, max_mask-1, 0, lookup)
@@ -59,11 +59,11 @@ class Solution2(object):
             count[i%len(count)] += 1
         result = count[0]
         count[0] = 0
-        for i in xrange(1, (batchSize+1)//2):  # optimization
-            pair_count = min(count[i], count[batchSize-i]) if 2*i != batchSize else count[i]//2
+        for i in xrange(1, len(count)//2+1):  # optimization
+            pair_count = min(count[i], count[len(count)-i]) if 2*i != len(count) else count[i]//2
             result += pair_count
             count[i] -= pair_count
-            count[batchSize-i] -= pair_count
+            count[len(count)-i] -= pair_count
         max_mask = reduce(lambda total, c: total*(c+1), count, 1)
         dp = [0]*max_mask
         for mask in xrange(len(dp)):
