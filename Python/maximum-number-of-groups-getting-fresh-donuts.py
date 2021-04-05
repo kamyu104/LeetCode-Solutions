@@ -9,21 +9,25 @@ class Solution(object):
         :type groups: List[int]
         :rtype: int
         """
-        def memoization(count, mask, remain, lookup):
+        def memoization(batchSize, count, mask, remain, lookup):
             if lookup[mask] == 0:
-                curr, basis = mask, 1
-                for i in xrange(remain):
-                    basis *= count[i]+1
-                    curr //= count[i]+1
-                a_remain = curr%(count[remain]+1)
+                a_remain = 0
+                if remain in count:
+                    curr, basis = mask, 1
+                    for i, c in count.iteritems():
+                        if i == remain:
+                            break
+                        basis *= c+1
+                        curr //= c+1
+                    a_remain = curr%(count[remain]+1)
                 result = 0
                 if a_remain:
-                    result = max(result, int(remain == 0) + memoization(count, mask-basis, 0, lookup))
+                    result = max(result, int(remain == 0) + memoization(batchSize, count, mask-basis, 0, lookup))
                 else:
                     curr, basis = mask, 1
-                    for i, c in enumerate(count):
+                    for i, c in count.iteritems():
                         if curr%(c+1):
-                            result = max(result, int(remain == 0) + memoization(count, mask-basis, (remain-i)%len(count), lookup))
+                            result = max(result, int(remain == 0) + memoization(batchSize, count, mask-basis, (remain-i)%batchSize, lookup))
                         basis *= c+1
                         curr //= c+1
                 lookup[mask] = result
@@ -39,9 +43,10 @@ class Solution(object):
             result += pair_count
             count[i] -= pair_count
             count[len(count)-i] -= pair_count
-        max_mask = reduce(lambda total, c: total*(c+1), count, 1)
+        count = {i:c for i, c in enumerate(count) if c}
+        max_mask = reduce(lambda total, c: total*(c+1), count.itervalues(), 1)
         lookup = [0]*max_mask
-        return result+memoization(count, max_mask-1, 0, lookup)
+        return result+memoization(batchSize, count, max_mask-1, 0, lookup)
 
 
 # Time:  O((b/2) * (n/(b/2)+1)^(b/2))
@@ -64,16 +69,17 @@ class Solution2(object):
             result += pair_count
             count[i] -= pair_count
             count[len(count)-i] -= pair_count
-        max_mask = reduce(lambda total, c: total*(c+1), count, 1)
+        count = {i:c for i, c in enumerate(count) if c}
+        max_mask = reduce(lambda total, c: total*(c+1), count.itervalues(), 1)
         dp = [0]*max_mask
         for mask in xrange(len(dp)):
             remain = 0
             curr, basis = mask, 1
-            for i, c in enumerate(count):
+            for i, c in count.iteritems():
                 ai = curr%(c+1)
                 if ai:
                     dp[mask] = max(dp[mask], dp[mask-basis])
-                remain = (remain+ai*i)%len(count)
+                remain = (remain+ai*i)%batchSize
                 basis *= c+1
                 curr //= c+1
             if mask != len(dp)-1 and remain == 0:
