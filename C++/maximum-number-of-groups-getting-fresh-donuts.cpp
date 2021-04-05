@@ -58,7 +58,6 @@ public:
         vector<int> dp(max_mask);
         int result = 0;
         for (int mask = 0; mask < size(dp); ++mask) {
-            dp[mask] = 0;
             int remain = 0;
             for (int curr = mask, basis = 1, i = 0; i < size(count);
                  basis *= (count[i] + 1), curr /= (count[i] + 1), ++i) {  // decode mask
