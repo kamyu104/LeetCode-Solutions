@@ -26,7 +26,7 @@ private:
             int a_remain = curr % (count[remain] + 1);
             int result = 0;
             if (a_remain) {  // greedily use remain
-                result = max(result, (remain == 0) + memoization(count, mask - basis, ((remain - i) + size(count)) % size(count), lookup));
+                result = max(result, (remain == 0) + memoization(count, mask - basis, 0, lookup));
             } else {
                 for (int curr = mask, basis = 1, i = 0; i < size(count); basis *= (count[i] + 1), curr /= (count[i] + 1), ++i) {
                     if (curr % (count[i] + 1) == 0) {
