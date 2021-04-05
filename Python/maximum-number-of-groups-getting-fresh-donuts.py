@@ -32,7 +32,8 @@ class Solution(object):
         count = [0]*batchSize
         for i in groups:
             count[i%len(count)] += 1
-        result = 0
+        result = count[0]
+        count[0] = 0
         for i in xrange(1, (batchSize+1)//2):  # optimization
             pair_count = min(count[i], count[batchSize-i]) if 2*i != batchSize else count[i]//2
             result += pair_count
@@ -56,7 +57,8 @@ class Solution2(object):
         count = [0]*batchSize
         for i in groups:
             count[i%len(count)] += 1
-        result = 0
+        result = count[0]
+        count[0] = 0
         for i in xrange(1, (batchSize+1)//2):  # optimization
             pair_count = min(count[i], count[batchSize-i]) if 2*i != batchSize else count[i]//2
             result += pair_count
