@@ -14,7 +14,7 @@ public:
         vector<int> dist(n, numeric_limits<int>::max()), dp(n);
         dist[n - 1] = 0;
         dp[n - 1] = 1;
-        priority_queue< pair<int, int>, vector< pair<int, int>>, greater< pair<int, int>>> min_heap;
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap;
         min_heap.emplace(0, n - 1);
         while (!empty(min_heap)) {
             const auto [w, u] = min_heap.top(); min_heap.pop();
