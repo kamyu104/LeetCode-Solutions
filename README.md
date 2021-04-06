@@ -466,7 +466,7 @@
 1796| [Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/) | [C++](./C++/second-largest-digit-in-a-string.cpp) [Python](./Python/second-largest-digit-in-a-string.py) | _O(n)_ | _O(1)_ | Easy |||
 1805| [Number of Different Integers in a String](https://leetcode.com/problems/number-of-different-integers-in-a-string/) | [C++](./C++/number-of-different-integers-in-a-string.cpp) [Python](./Python/number-of-different-integers-in-a-string.py) | _O(n)_ | _O(n)_ | Easy |||
 1813| [Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/) | [C++](./C++/sentence-similarity-iii.cpp) [Python](./Python/sentence-similarity-iii.py) | _O(n)_ | _O(1)_ | Medium |||
-1816| [Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) | [C++](./C++/truncate-sentence.cpp) [Python](./Python/truncate-sentence.py) | _O(n)_ | _O(1)_ | East |||
+1816| [Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) | [C++](./C++/truncate-sentence.cpp) [Python](./Python/truncate-sentence.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
