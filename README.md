@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1809%20%2F%201809-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1819%20%2F%201819-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -465,6 +465,7 @@
 1790| [Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/) | [C++](./C++/check-if-one-string-swap-can-make-strings-equal.cpp) [Python](./Python/check-if-one-string-swap-can-make-strings-equal.py) | _O(n)_ | _O(1)_ | Easy |||
 1796| [Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/) | [C++](./C++/second-largest-digit-in-a-string.cpp) [Python](./Python/second-largest-digit-in-a-string.py) | _O(n)_ | _O(1)_ | Easy |||
 1805| [Number of Different Integers in a String](https://leetcode.com/problems/number-of-different-integers-in-a-string/) | [C++](./C++/number-of-different-integers-in-a-string.cpp) [Python](./Python/number-of-different-integers-in-a-string.py) | _O(n)_ | _O(n)_ | Easy |||
+1813| [Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/) | [C++](./C++/sentence-similarity-iii.cpp) [Python](./Python/sentence-similarity-iii.py) | _O(n)_ | _O(1)_ | Medium |||
 
 <br/>
 <div align="right">
@@ -798,6 +799,7 @@
 1748| [Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/)      | [C++](./C++/sum-of-unique-elements.cpp) [Python](./Python/sum-of-unique-elements.py)      | _O(n)_         | _O(n)_          | Easy         ||
 1781| [Sum of Beauty of All Substrings](https://leetcode.com/problems/sum-of-beauty-of-all-substrings/)      | [C++](./C++/sum-of-beauty-of-all-substrings.cpp) [Python](./Python/sum-of-beauty-of-all-substrings.py)      | _O(n^2)_         | _O(1)_          | Medium         ||
 1807| [Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/)      | [C++](./C++/evaluate-the-bracket-pairs-of-a-string.cpp) [Python](./Python/evaluate-the-bracket-pairs-of-a-string.py)      | _O(n + m)_         | _O(n + m)_          | Medium         ||
+1814| [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/)      | [C++](./C++/count-nice-pairs-in-an-array.cpp) [Python](./Python/count-nice-pairs-in-an-array.py)      | _O(nlogm)_         | _O(n)_          | Medium         ||
 
 <br/>
 <div align="right">
@@ -962,6 +964,8 @@
 1780| [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/) | [C++](./C++/check-if-number-is-a-sum-of-powers-of-three.cpp) [Python](./Python/check-if-number-is-a-sum-of-powers-of-three.py) | _O(logn)_ | _O(1)_ |  Medium | |
 1806| [Minimum Number of Operations to Reinitialize a Permutation](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/) | [C++](./C++/minimum-number-of-operations-to-reinitialize-a-permutation.cpp) [Python](./Python/minimum-number-of-operations-to-reinitialize-a-permutation.py) | _O(sqrt(n))_ | _O(sqrt(n))_ |  Medium | | Discrete Logarithm, Multiplicative Order
 1808| [Maximize Number of Nice Divisors](https://leetcode.com/problems/maximize-number-of-nice-divisors/) | [C++](./C++/maximize-number-of-nice-divisors.cpp) [Python](./Python/maximize-number-of-nice-divisors.py) | _O(logn)_ | _O(1)_ |  Medium | variant of [Integer Break](https://leetcode.com/problems/integer-break/)  |
+1812| [Determine Color of a Chessboard Square](https://leetcode.com/problems/determine-color-of-a-chessboard-square/) | [C++](./C++/determine-color-of-a-chessboard-square.cpp) [Python](./Python/determine-color-of-a-chessboard-square.py) | _O(1)_ | _O(1)_ |  Easy |  |
+
 
 <br/>
 <div align="right">
@@ -1762,6 +1766,7 @@
 1794| [Count Pairs of Equal Substrings With Minimum Difference](https://leetcode.com/problems/count-pairs-of-equal-substrings-with-minimum-difference/)|[C++](./C++/count-pairs-of-equal-substrings-with-minimum-difference.cpp) [Python](./Python/count-pairs-of-equal-substrings-with-minimum-difference.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 | |
 1798| [Maximum Number of Consecutive Values You Can Make](https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/)|[C++](./C++/maximum-number-of-consecutive-values-you-can-make.cpp) [Python](./Python/maximum-number-of-consecutive-values-you-can-make.py)| _O(nlogn)_     | _O(1)_         | Medium         | | |
 1801| [Number of Orders in the Backlog](https://leetcode.com/problems/number-of-orders-in-the-backlog/)|[C++](./C++/number-of-orders-in-the-backlog.cpp) [Python](./Python/number-of-orders-in-the-backlog.py)| _O(nlogn)_     | _O(n)_         | Medium         | | Greedy, Heap |
+1815| [Maximum Number of Groups Getting Fresh Donuts](https://leetcode.com/problems/maximum-number-of-groups-getting-fresh-donuts/)|[C++](./C++/maximum-number-of-groups-getting-fresh-donuts.cpp) [Python](./Python/maximum-number-of-groups-getting-fresh-donuts.py)| _O((b/2) * (n/(b/2)+1)^(b/2))_     | _O((n/(b/2)+1)^(b/2))_         | Hard         | | Greedy, DP |
 
 <br/>
 <div align="right">
@@ -1802,6 +1807,7 @@
 1782 | [Count Pairs Of Nodes](https://leetcode.com/problems/count-pairs-of-nodes/)  | [C++](./C++/count-pairs-of-nodes.cpp) [Python](./Python/count-pairs-of-nodes.py) | _O(n + e + q)_ | _O(n + e)_| Hard           || Counting, Two Pointers | 
 1786 | [Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/)  | [C++](./C++/number-of-restricted-paths-from-first-to-last-node.cpp) [Python](./Python/number-of-restricted-paths-from-first-to-last-node.py) | _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium | | `Dijkstra's Algorithm`, DP |
 1791 | [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/)  | [C++](./C++/find-center-of-star-graph.cpp) [Python](./Python/find-center-of-star-graph.py) | _O(n)_| _O(n)_| Medium           ||| 
+1810 | [Minimum Path Cost in a Hidden Grid](https://leetcode.com/problems/minimum-path-cost-in-a-hidden-grid/)  | [C++](./C++/minimum-path-cost-in-a-hidden-grid.cpp) [Python](./Python/sminimum-path-cost-in-a-hidden-grid.py) | _O(m * n * log(m * n))_ | _O(m * n)_| Medium           |🔒| DFS, `Dijkstra's Algorithm`| 
 
 <br/>
 <div align="right">
@@ -2049,6 +2055,7 @@
 1789| [Primary Department for Each Employee](https://leetcode.com/problems/primary-department-for-each-employee/) | [MySQL](./MySQL/primary-department-for-each-employee.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1795| [Rearrange Products Table](https://leetcode.com/problems/rearrange-products-table/) | [MySQL](./MySQL/rearrange-products-table.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1809| [Ad-Free Sessions](https://leetcode.com/problems/ad-free-sessions/) | [MySQL](./MySQL/ad-free-sessions.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+1811| [Find Interview Candidates](https://leetcode.com/problems/find-interview-candidates/) | [MySQL](./MySQL/find-interview-candidates.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
