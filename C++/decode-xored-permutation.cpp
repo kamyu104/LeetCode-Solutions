@@ -5,9 +5,9 @@ class Solution {
 public:
     vector<int> decode(vector<int>& encoded) {
         int curr = 0;
-        for (int i = 0; i <= size(encoded) + 1; ++i) {
+        for (int i = 1; i <= size(encoded) + 1; ++i) {
             curr ^= i;
-            if (i <= size(encoded) && i % 2 == 1) {
+            if (i < size(encoded) && i % 2 == 1) {
                 curr ^= encoded[i];
             }
         }
