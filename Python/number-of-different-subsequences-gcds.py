@@ -17,7 +17,7 @@ class Solution(object):
             for x in xrange(i, max_num+1, i):
                 if x not in nums_set:
                     continue
-                d = fractions.gcd(d, x)
+                d = fractions.gcd(d, x)  # total time: O(log(min(d, x)) = O(logd), where d keeps the same or gets smaller
                 if d == i:
                     result += 1
                     break
