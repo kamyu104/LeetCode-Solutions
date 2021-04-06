@@ -1,5 +1,5 @@
-// Time:  O(n)
-// Space: O(1)
+// Time:  O(nlogm), m is max of nums
+// Space: O(n)
 
 class Solution {
 public:
