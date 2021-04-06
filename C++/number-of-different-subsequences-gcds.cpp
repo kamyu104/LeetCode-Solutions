@@ -1,4 +1,4 @@
-// Time:  O(m * (1 + 1/2 + 1/3 + ... + 1/m)) = O(mlogm), m is max of nums
+// Time:  O(n + m * (1 + 1/2 + 1/3 + ... + 1/m)) = O(n + mlogm), m is max of nums
 // Space: O(n)
 
 class Solution {
