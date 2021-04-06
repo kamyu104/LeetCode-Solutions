@@ -8,9 +8,9 @@ class Solution(object):
         :rtype: List[int]
         """
         curr = 0
-        for i in xrange((len(encoded)+1) + 1):
+        for i in xrange(1, (len(encoded)+1) + 1):
             curr ^= i
-            if i <= len(encoded) and i%2 == 1:
+            if i < len(encoded) and i%2 == 1:
                 curr ^= encoded[i]
         result = [curr]
         for x in encoded:
