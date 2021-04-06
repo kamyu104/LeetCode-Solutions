@@ -13,7 +13,7 @@ public:
                 if (!nums_set.count(x)) {
                     continue;
                 }
-                d = gcd(d, x);
+                d = gcd(d, x);  // total time: O(log(min(d, x)) = O(logd), where d keeps the same or gets smaller
                 if (d == i) {
                     ++result;
                     break;
