@@ -28,7 +28,7 @@ public:
                 ++count;
             }
         }
-        return count >= count_if(begin(sentence1), end(sentence1),
+        return count >= count_if(cbegin(sentence1), cend(sentence1),
                                  [](char x) { return x == ' '; }) + 1;
     }
 };
