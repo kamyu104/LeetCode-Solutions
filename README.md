@@ -466,6 +466,7 @@
 1796| [Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/) | [C++](./C++/second-largest-digit-in-a-string.cpp) [Python](./Python/second-largest-digit-in-a-string.py) | _O(n)_ | _O(1)_ | Easy |||
 1805| [Number of Different Integers in a String](https://leetcode.com/problems/number-of-different-integers-in-a-string/) | [C++](./C++/number-of-different-integers-in-a-string.cpp) [Python](./Python/number-of-different-integers-in-a-string.py) | _O(n)_ | _O(n)_ | Easy |||
 1813| [Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/) | [C++](./C++/sentence-similarity-iii.cpp) [Python](./Python/sentence-similarity-iii.py) | _O(n)_ | _O(1)_ | Medium |||
+1816| [Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) | [C++](./C++/truncate-sentence.cpp) [Python](./Python/truncate-sentence.py) | _O(n)_ | _O(1)_ | Medium |||
 
 <br/>
 <div align="right">
@@ -800,6 +801,7 @@
 1781| [Sum of Beauty of All Substrings](https://leetcode.com/problems/sum-of-beauty-of-all-substrings/)      | [C++](./C++/sum-of-beauty-of-all-substrings.cpp) [Python](./Python/sum-of-beauty-of-all-substrings.py)      | _O(n^2)_         | _O(1)_          | Medium         ||
 1807| [Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/)      | [C++](./C++/evaluate-the-bracket-pairs-of-a-string.cpp) [Python](./Python/evaluate-the-bracket-pairs-of-a-string.py)      | _O(n + m)_         | _O(n + m)_          | Medium         ||
 1814| [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/)      | [C++](./C++/count-nice-pairs-in-an-array.cpp) [Python](./Python/count-nice-pairs-in-an-array.py)      | _O(nlogm)_         | _O(n)_          | Medium         ||
+1817| [Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/)      | [C++](./C++/finding-the-users-active-minutes.cpp) [Python](./Python/finding-the-users-active-minutes.py)      | _O(n)_         | _O(n)_          | Medium         ||
 
 <br/>
 <div align="right">
@@ -965,7 +967,7 @@
 1806| [Minimum Number of Operations to Reinitialize a Permutation](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/) | [C++](./C++/minimum-number-of-operations-to-reinitialize-a-permutation.cpp) [Python](./Python/minimum-number-of-operations-to-reinitialize-a-permutation.py) | _O(sqrt(n))_ | _O(sqrt(n))_ |  Medium | | Discrete Logarithm, Multiplicative Order
 1808| [Maximize Number of Nice Divisors](https://leetcode.com/problems/maximize-number-of-nice-divisors/) | [C++](./C++/maximize-number-of-nice-divisors.cpp) [Python](./Python/maximize-number-of-nice-divisors.py) | _O(logn)_ | _O(1)_ |  Medium | variant of [Integer Break](https://leetcode.com/problems/integer-break/)  |
 1812| [Determine Color of a Chessboard Square](https://leetcode.com/problems/determine-color-of-a-chessboard-square/) | [C++](./C++/determine-color-of-a-chessboard-square.cpp) [Python](./Python/determine-color-of-a-chessboard-square.py) | _O(1)_ | _O(1)_ |  Easy |  |
-
+1819| [Number of Different Subsequences GCDs](https://leetcode.com/problems/number-of-different-subsequences-gcds/) | [C++](./C++/number-of-different-subsequences-gcds.cpp) [Python](./Python/number-of-different-subsequences-gcds.py) | _O(n + mlogm)_ | _O(n)_ |  Hard |  |
 
 <br/>
 <div align="right">
@@ -1207,6 +1209,7 @@
 1713| [Minimum Operations to Make a Subsequence](https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/) | [C++](./C++/minimum-operations-to-make-a-subsequence.cpp)  [Python](./Python/minimum-operations-to-make-a-subsequence.py)  | _O(nlogn)_ | _O(n)_ | Hard         | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Binary Search, Segment Tree |
 1760 | [Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/) | [C++](./C++/minimum-limit-of-balls-in-a-bag.cpp) [Python](./Python/minimum-limit-of-balls-in-a-bag.py) | _O(nlogm)_ | _O(1)_ | Medium | |
 1802 | [Maximum Value at a Given Index in a Bounded Array](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/) | [C++](./C++/maximum-value-at-a-given-index-in-a-bounded-array.cpp) [Python](./Python/maximum-value-at-a-given-index-in-a-bounded-array.py) | _O(logm)_ | _O(1)_ | Medium | |
+1818 | [Minimum Absolute Sum Difference](https://leetcode.com/problems/minimum-absolute-sum-difference/) | [C++](./C++/minimum-absolute-sum-difference.cpp) [Python](./Python/minimum-absolute-sum-difference.py) | _O(nlogn)_ | _O(n)_ | Medium | |
 
 <br/>
 <div align="right">
@@ -1807,7 +1810,7 @@
 1782 | [Count Pairs Of Nodes](https://leetcode.com/problems/count-pairs-of-nodes/)  | [C++](./C++/count-pairs-of-nodes.cpp) [Python](./Python/count-pairs-of-nodes.py) | _O(n + e + q)_ | _O(n + e)_| Hard           || Counting, Two Pointers | 
 1786 | [Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/)  | [C++](./C++/number-of-restricted-paths-from-first-to-last-node.cpp) [Python](./Python/number-of-restricted-paths-from-first-to-last-node.py) | _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium | | `Dijkstra's Algorithm`, DP |
 1791 | [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/)  | [C++](./C++/find-center-of-star-graph.cpp) [Python](./Python/find-center-of-star-graph.py) | _O(n)_| _O(n)_| Medium           ||| 
-1810 | [Minimum Path Cost in a Hidden Grid](https://leetcode.com/problems/minimum-path-cost-in-a-hidden-grid/)  | [C++](./C++/minimum-path-cost-in-a-hidden-grid.cpp) [Python](./Python/sminimum-path-cost-in-a-hidden-grid.py) | _O(m * n * log(m * n))_ | _O(m * n)_| Medium           |🔒| DFS, `Dijkstra's Algorithm`| 
+1810 | [Minimum Path Cost in a Hidden Grid](https://leetcode.com/problems/minimum-path-cost-in-a-hidden-grid/)  | [C++](./C++/minimum-path-cost-in-a-hidden-grid.cpp) [Python](./Python/minimum-path-cost-in-a-hidden-grid.py) | _O(m * n * log(m * n))_ | _O(m * n)_| Medium           |🔒| DFS, `Dijkstra's Algorithm`| 
 
 <br/>
 <div align="right">
