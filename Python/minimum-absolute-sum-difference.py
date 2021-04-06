@@ -17,7 +17,7 @@ class Solution(object):
         result = max_change = 0
         for i in xrange(len(nums2)):
             diff = abs(nums1[i]-nums2[i])
-            result = (result + diff) % MOD
+            result = (result+diff)%MOD
             if diff < max_change:
                 continue
             j = bisect.bisect_left(sorted_nums1, nums2[i])
