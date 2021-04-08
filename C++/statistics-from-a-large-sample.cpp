@@ -14,7 +14,7 @@ public:
         const auto& n = accumulate(count.cbegin(), count.cend(), 0);
         double total = 0.0;
         for (int i = 0; i < count.size(); ++i) {
-            total += i * count[i];
+            total += double(i) * count[i];
         }
         const double mean = total / n;
         
