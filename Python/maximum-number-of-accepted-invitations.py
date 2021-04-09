@@ -152,17 +152,14 @@ class Solution2(object):
                 lookup.add(v)
                 if v not in match or augment(grid, match[v], lookup, match):
                     match[v] = u  # greedily match
-                    match[~u] = v  # add ~ to avoid id conflicting
                     return True
             return False
     
         def hungarian(grid):
             match = {}
             for i in xrange(U):
-                if ~i in match:
-                    continue
                 augment(grid, i, set(), match)
-            return len(match)//2  # pair (~u, v), (v, u) counts twice
+            return len(match)
 
         U, V = min(len(grid), len(grid[0])), max(len(grid), len(grid[0]))
         get_grid = (lambda x, y: grid[x][y]) if len(grid) < len(grid[0]) else (lambda x, y: grid[y][x])
@@ -188,17 +185,14 @@ class Solution3(object):
                 lookup.add(v)
                 if v not in match or augment(adj, match[v], lookup, match):
                     match[v] = u  # greedily match
-                    match[~u] = v  # add ~ to avoid id conflicting
                     return True
             return False
     
         def hungarian(adj):
             match = {}
             for i in adj.iterkeys():
-                if ~i in match:
-                    continue
                 augment(adj, i, set(), match)
-            return len(match)//2  # pair (~u, v), (v, u) counts twice
+            return len(match)
         
         adj = collections.defaultdict(list)
         for i in xrange(len(grid)):
