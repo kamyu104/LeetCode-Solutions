@@ -57,9 +57,9 @@ int BipGraph::hopcroftKarp()
     dist = new int[m+1]; 
   
     // Initialize NIL as pair of all vertices 
-    for (int u=0; u<m; u++) 
+    for (int u=0; u<=m; u++) 
         pairU[u] = NIL; 
-    for (int v=0; v<n; v++) 
+    for (int v=0; v<=n; v++) 
         pairV[v] = NIL; 
   
     // Initialize result 
