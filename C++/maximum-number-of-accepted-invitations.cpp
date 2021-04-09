@@ -203,6 +203,7 @@ public:
 
 // Time:  O(|V| * |E|) = O(min(m, n) * (m * n))
 // Space: O(|V|) = O(max(m, n))
+// Hungarian bipartite matching with less space
 class Solution2 {
 public:
     int maximumInvitations(vector<vector<int>>& grid) {
@@ -242,6 +243,7 @@ private:
 
 // Time:  O(|V| * |E|) = O(min(m, n) * (m * n))
 // Space: O(|E|) = O(m * n)
+// Hungarian bipartite matching
 class Solution3 {
 public:
     int maximumInvitations(vector<vector<int>>& grid) {
