@@ -214,7 +214,7 @@ private:
     int hungarian(const vector<vector<int>>& grid) {
         unordered_map<int, int> match;
         for (int i = 0; i < min(size(grid), size(grid[0])); ++i) {
-            unordered_set<int> lookup;
+            unordered_set<int> lookup;  // visited u
             augment(grid, i, &lookup, &match);
         }
         return size(match);
@@ -267,7 +267,7 @@ private:
     int hungarian(const unordered_map<int, vector<int>>& adj) {
         unordered_map<int, int> match;
         for (const auto& [i, _] : adj) {
-            unordered_set<int> lookup;
+            unordered_set<int> lookup;  // visited v
             augment(adj, i, &lookup, &match);
         }
         return size(match);
