@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1819%20%2F%201819-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1820%20%2F%201820-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1811,7 +1811,7 @@
 1786 | [Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/)  | [C++](./C++/number-of-restricted-paths-from-first-to-last-node.cpp) [Python](./Python/number-of-restricted-paths-from-first-to-last-node.py) | _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium | | `Dijkstra's Algorithm`, DP |
 1791 | [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/)  | [C++](./C++/find-center-of-star-graph.cpp) [Python](./Python/find-center-of-star-graph.py) | _O(n)_| _O(n)_| Medium           ||| 
 1810 | [Minimum Path Cost in a Hidden Grid](https://leetcode.com/problems/minimum-path-cost-in-a-hidden-grid/)  | [C++](./C++/minimum-path-cost-in-a-hidden-grid.cpp) [Python](./Python/minimum-path-cost-in-a-hidden-grid.py) | _O(m * n * log(m * n))_ | _O(m * n)_| Medium           |🔒| DFS, `Dijkstra's Algorithm`| 
-
+1820 | [Maximum Number of Accepted Invitations](https://leetcode.com/problems/maximum-number-of-accepted-invitations/) | [C++](./C++/maximum-number-of-accepted-invitations.cpp) [Python](./Python/maximum-number-of-accepted-invitations.py) | _O(m * n * sqrt(m * n))_ | _O(m + n)_ | Medium | 🔒 | `Hopcroft-Karp Bipartite Matching`, `Hungarian Bipartite Matching` |
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
