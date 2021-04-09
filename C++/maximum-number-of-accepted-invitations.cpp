@@ -202,7 +202,7 @@ public:
 };
 
 // Time:  O(|V| * |E|) = O(min(m, n) * (m * n))
-// Space: O(|V|) = O(max(m, n))
+// Space: O(|V|) = O(min(m, n))
 // Hungarian bipartite matching with less space
 class Solution2 {
 public:
