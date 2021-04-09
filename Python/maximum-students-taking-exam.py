@@ -7,6 +7,8 @@
 import collections
 
 
+from functools import partial
+
 # Time:  O(E * sqrt(V))
 # Space: O(V)
 # Source code from http://code.activestate.com/recipes/123641-hopcroft-karp-bipartite-matching/
@@ -14,12 +16,12 @@ import collections
 # David Eppstein, UC Irvine, 27 Apr 2002
 def bipartiteMatch(graph):
     '''Find maximum cardinality matching of a bipartite graph (U,V,E).
-        The input format is a dictionary mapping members of U to a list
-        of their neighbors in V.  The output is a triple (M,A,B) where M is a
-        dictionary mapping members of V to their matches in U, A is the part
-        of the maximum independent set in U, and B is the part of the MIS in V.
-        The same object may occur in both U and V, and is treated as two
-        distinct vertices if this happens.'''
+    The input format is a dictionary mapping members of U to a list
+    of their neighbors in V.  The output is a triple (M,A,B) where M is a
+    dictionary mapping members of V to their matches in U, A is the part
+    of the maximum independent set in U, and B is the part of the MIS in V.
+    The same object may occur in both U and V, and is treated as two
+    distinct vertices if this happens.'''
     
     # initialize greedy matching (redundant, but faster than full search)
     matching = {}
@@ -66,7 +68,7 @@ def bipartiteMatch(graph):
                     if v not in preds:
                         unlayered[v] = None
             return (matching,list(pred),list(unlayered))
-        
+
         # recursively search backward through layers to find alternating paths
         # recursion returns true if found path, false otherwise
         def recurse(v):
@@ -82,7 +84,43 @@ def bipartiteMatch(graph):
                             return 1
             return 0
         
-        for v in unmatched: recurse(v)
+        def recurse_iter(v):
+            def divide(v):
+                if v not in preds:
+                    return
+                L = preds[v]
+                del preds[v]
+                for u in L :
+                    if u in pred and pred[u] is unmatched:  # early return
+                        del pred[u]
+                        matching[v] = u
+                        ret[0] = True
+                        return
+                stk.append(partial(conquer, v, iter(L)))
+
+            def conquer(v, it):
+                for u in it:
+                    if u not in pred:
+                        continue
+                    pu = pred[u]
+                    del pred[u]
+                    stk.append(partial(postprocess, v, u, it))
+                    stk.append(partial(divide, pu))
+                    return
+
+            def postprocess(v, u, it):
+                if not ret[0]:
+                    stk.append(partial(conquer, v, it))
+                    return
+                matching[v] = u
+
+            ret, stk = [False], []
+            stk.append(partial(divide, v))
+            while stk:
+                stk.pop()()
+            return ret[0]
+
+        for v in unmatched: recurse_iter(v)
 
 
 # Hopcroft-Karp bipartite matching
