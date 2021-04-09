@@ -1,4 +1,4 @@
-// Time:  O(m * n * sqrt(m * n))
+// Time:  O(m * n * sqrt(m + n))
 // Space: O(m * n)
 
 // template from https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-2-implementation/
