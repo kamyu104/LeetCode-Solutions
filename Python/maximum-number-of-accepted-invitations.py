@@ -138,6 +138,7 @@ class Solution(object):
 
 # Time:  O(|V| * |E|) = O(min(m, n) * (m * n))
 # Space: O(|V|) = O(max(m, n))
+# Hungarian bipartite matching with less space
 class Solution2(object):
     def maximumInvitations(self, grid):
         """
@@ -170,6 +171,7 @@ class Solution2(object):
 import collections
 
 
+# Hungarian bipartite matching
 class Solution3(object):
     def maximumInvitations(self, grid):
         """
