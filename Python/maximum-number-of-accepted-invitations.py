@@ -21,7 +21,7 @@ class Solution(object):
                     return True
             return False
     
-        def max_bipartite_matching(adj):
+        def max_bipartite_matching(adj, U):
             match = {}
             for i in xrange(U):
                 if i not in match:
@@ -36,4 +36,4 @@ class Solution(object):
                     continue
                 adj[i].append(U+j)  # use U+j to avoid conflicted node_id with i
                 adj[U+j].append(i)
-        return  max_bipartite_matching(adj)
+        return  max_bipartite_matching(adj, U)
