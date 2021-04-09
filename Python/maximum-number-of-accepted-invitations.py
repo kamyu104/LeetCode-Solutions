@@ -136,20 +136,16 @@ class Solution(object):
 
 
 # Time:  O(|V| * |E|) = O(min(m, n) * (m * n))
-# Space: O(|V|) = O(n)
-# Hungarian bipartite matching with less space
+# Space: O(|V|) = O(max(m, n))
 class Solution2(object):
     def maximumInvitations(self, grid):
         """
         :type grid: List[List[int]]
         :rtype: int
         """
-        def get_grid(grid, u, v):
-            return grid[u][v] if len(grid) < len(grid[0]) else grid[v][u]
-
         def augment(grid, u, lookup, match):
-            for v in xrange(max(len(grid), len(grid[0]))):
-                if not get_grid(grid, u, v) or v in lookup:
+            for v in xrange(V):
+                if not get_grid(u, v) or v in lookup:
                     continue
                 lookup.add(v)
                 if v not in match or augment(grid, match[v], lookup, match):
@@ -159,10 +155,12 @@ class Solution2(object):
     
         def hungarian(grid):
             match = {}
-            for i in xrange(min(len(grid), len(grid[0]))):
+            for i in xrange(U):
                 augment(grid, i, set(), match)
             return len(match)
 
+        U, V = min(len(grid), len(grid[0])), max(len(grid), len(grid[0]))
+        get_grid = (lambda x, y: grid[x][y]) if len(grid) < len(grid[0]) else (lambda x, y: grid[y][x])
         return  hungarian(grid)
 
 
@@ -171,7 +169,6 @@ class Solution2(object):
 import collections
 
 
-# Hungarian bipartite matching
 class Solution3(object):
     def maximumInvitations(self, grid):
         """
@@ -204,3 +201,4 @@ class Solution3(object):
                 else:
                     adj[j].append(i)
         return  hungarian(adj)
+    
