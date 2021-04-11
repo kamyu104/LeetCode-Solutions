@@ -20,6 +20,7 @@ class Solution(object):
         
 # Time:  O(n)
 # Space: O(1)
+# dp solution
 class Solution2(object):
     def minSideJumps(self, obstacles):
         """
