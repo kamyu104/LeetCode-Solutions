@@ -1638,7 +1638,6 @@
 1787| [Make the XOR of All Segments Equal to Zero](https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero/)|[C++](./C++/make-the-xor-of-all-segments-equal-to-zero.cpp) [Python](./Python/make-the-xor-of-all-segments-equal-to-zero.py)| _O(n + k * m)_     | _O(min(k * m, n))_         | Hard         | |
 1799| [Maximize Score After N Operations](https://leetcode.com/problems/maximize-score-after-n-operations/)|[C++](./C++/maximize-score-after-n-operations.cpp) [Python](./Python/maximize-score-after-n-operations.py)| _O(n^2 * 2^n)_     | _O(2^n)_         | Hard         | |
 1803| [Count Pairs With XOR in a Range](https://leetcode.com/problems/count-pairs-with-xor-in-a-range/)|[C++](./C++/count-pairs-with-xor-in-a-range.cpp) [Python](./Python/count-pairs-with-xor-in-a-range.py)| _O(n)_     | _O(n)_         | Hard         | | DP, Trie
-1824| [Minimum Sideway Jumps](https://leetcode.com/problems/minimum-sideway-jumps/)|[C++](./C++/minimum-sideway-jumps.cpp) [Python](./Python/minimum-sideway-jumps.py)| _O(n)_     | _O(1)_         | Medium         | |
 
 <br/>
 <div align="right">
@@ -1773,6 +1772,7 @@
 1798| [Maximum Number of Consecutive Values You Can Make](https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/)|[C++](./C++/maximum-number-of-consecutive-values-you-can-make.cpp) [Python](./Python/maximum-number-of-consecutive-values-you-can-make.py)| _O(nlogn)_     | _O(1)_         | Medium         | | |
 1801| [Number of Orders in the Backlog](https://leetcode.com/problems/number-of-orders-in-the-backlog/)|[C++](./C++/number-of-orders-in-the-backlog.cpp) [Python](./Python/number-of-orders-in-the-backlog.py)| _O(nlogn)_     | _O(n)_         | Medium         | | Greedy, Heap |
 1815| [Maximum Number of Groups Getting Fresh Donuts](https://leetcode.com/problems/maximum-number-of-groups-getting-fresh-donuts/)|[C++](./C++/maximum-number-of-groups-getting-fresh-donuts.cpp) [Python](./Python/maximum-number-of-groups-getting-fresh-donuts.py)| _O((b/2) * (n/(b/2)+1)^(b/2))_     | _O((n/(b/2)+1)^(b/2))_         | Hard         | | Greedy, DP |
+1824| [Minimum Sideway Jumps](https://leetcode.com/problems/minimum-sideway-jumps/)|[C++](./C++/minimum-sideway-jumps.cpp) [Python](./Python/minimum-sideway-jumps.py)| _O(n)_     | _O(1)_         | Medium         | | DP, Greedy
 
 <br/>
 <div align="right">
