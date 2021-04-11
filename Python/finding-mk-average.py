@@ -53,7 +53,7 @@ class MKAverage(object):
 
     def __remove(self, num):
         self.__total -= num
-        idx = self.__sl.bisect_left(num)
+        idx = self.__sl.index(num)
         if idx < self.__k:
             self.__first_k -= num
             self.__first_k += self.__sl[self.__k]
