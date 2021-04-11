@@ -1,7 +1,26 @@
 # Time:  O(n)
 # Space: O(1)
 
+# greedy solution
 class Solution(object):
+    def minSideJumps(self, obstacles):
+        """
+        :type obstacles: List[int]
+        :rtype: int
+        """
+        result, lanes = 0, set([2])
+        for i in xrange(len(obstacles)-1):
+            lanes.discard(obstacles[i+1])
+            if lanes:
+                continue
+            result += 1
+            lanes = set(range(1, 4))-set([obstacles[i], obstacles[i+1]])
+        return result
+
+        
+# Time:  O(n)
+# Space: O(1)
+class Solution2(object):
     def minSideJumps(self, obstacles):
         """
         :type obstacles: List[int]
