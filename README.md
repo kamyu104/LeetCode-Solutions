@@ -1772,7 +1772,7 @@
 1798| [Maximum Number of Consecutive Values You Can Make](https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/)|[C++](./C++/maximum-number-of-consecutive-values-you-can-make.cpp) [Python](./Python/maximum-number-of-consecutive-values-you-can-make.py)| _O(nlogn)_     | _O(1)_         | Medium         | | |
 1801| [Number of Orders in the Backlog](https://leetcode.com/problems/number-of-orders-in-the-backlog/)|[C++](./C++/number-of-orders-in-the-backlog.cpp) [Python](./Python/number-of-orders-in-the-backlog.py)| _O(nlogn)_     | _O(n)_         | Medium         | | Greedy, Heap |
 1815| [Maximum Number of Groups Getting Fresh Donuts](https://leetcode.com/problems/maximum-number-of-groups-getting-fresh-donuts/)|[C++](./C++/maximum-number-of-groups-getting-fresh-donuts.cpp) [Python](./Python/maximum-number-of-groups-getting-fresh-donuts.py)| _O((b/2) * (n/(b/2)+1)^(b/2))_     | _O((n/(b/2)+1)^(b/2))_         | Hard         | | Greedy, DP |
-1824| [Minimum Sideway Jumps](https://leetcode.com/problems/minimum-sideway-jumps/)|[C++](./C++/minimum-sideway-jumps.cpp) [Python](./Python/minimum-sideway-jumps.py)| _O(n)_     | _O(1)_         | Medium         | | DP, Greedy
+1824| [Minimum Sideway Jumps](https://leetcode.com/problems/minimum-sideway-jumps/)|[C++](./C++/minimum-sideway-jumps.cpp) [Python](./Python/minimum-sideway-jumps.py)| _O(n)_     | _O(1)_         | Medium         | | Greedy, DP |
 
 <br/>
 <div align="right">
