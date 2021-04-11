@@ -57,7 +57,7 @@ class MKAverage(object):
         if idx < self.__k:
             self.__first_k -= num
             self.__first_k += self.__sl[self.__k]
-        elif idx > len(self.__sl)-1 - self.__k:
+        elif idx > (len(self.__sl)-1)-self.__k:
             self.__last_k -= num
             self.__last_k += self.__sl[-1-self.__k]
         self.__sl.remove(num)
