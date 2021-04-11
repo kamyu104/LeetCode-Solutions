@@ -11,6 +11,7 @@ class Solution(object):
         """
         return reduce(lambda idx, n:(idx+k)%(n+1), xrange(1, n), 0)+1
 
+
 # Time:  O(n)
 # Space: O(n)
 # top-down solution
