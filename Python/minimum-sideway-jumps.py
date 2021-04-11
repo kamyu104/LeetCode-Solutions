@@ -14,7 +14,7 @@ class Solution(object):
             if lanes:
                 continue
             result += 1
-            lanes = set(range(1, 4))-set([obstacles[i], obstacles[i+1]])
+            lanes = set(j for j in xrange(1, 4) if j not in [obstacles[i], obstacles[i+1]])
         return result
 
         
