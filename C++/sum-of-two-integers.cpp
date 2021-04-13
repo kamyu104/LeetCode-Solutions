@@ -7,7 +7,7 @@ public:
         while (b) {
             int carry = a & b;
             a ^= b;
-            b = carry << 1;
+            b = (unsigned int)carry << 1;
         }
         return a;
     }
