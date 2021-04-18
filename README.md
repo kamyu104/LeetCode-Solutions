@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1825%20%2F%201825-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1835%20%2F%201835-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -100,6 +100,7 @@
 1707 | [Maximum XOR With an Element From Array](https://leetcode.com/problems/maximum-xor-with-an-element-from-array/) | [C++](./C++/maximum-xor-with-an-element-from-array.cpp) [Python](./Python/maximum-xor-with-an-element-from-array.py) | _O(nlogn + mlogm)_ | _O(n)_ | Hard || Greedy, Trie
 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array/) | [C++](./C++/decode-xored-array.cpp) [Python](./Python/decode-xored-array.py) | _O(n)_ | _O(1)_ | Easy ||
 1734 | [Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation/) | [C++](./C++/decode-xored-permutation.cpp) [Python](./Python/decode-xored-permutation.py) | _O(n)_ | _O(1)_ | Medium ||
+1829 | [Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/) | [C++](./C++/maximum-xor-for-each-query.cpp) [Python](./Python/maximum-xor-for-each-query.py) | _O(n)_ | _O(1)_ | Medium ||
 
 <br/>
 <div align="right">
@@ -309,7 +310,7 @@
 1755 | [Closest Subsequence Sum](https://leetcode.com/problems/closest-subsequence-sum/) | [C++](./C++/closest-subsequence-sum.cpp) [Python](./Python/closest-subsequence-sum.py) | _O(n * 2^(n/2))_ | _O(n * 2^(n/2))_ | Hard || Meet in the Middle
 1773 | [Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/) | [C++](./C++/count-items-matching-a-rule.cpp) [Python](./Python/count-items-matching-a-rule.py) | _O(n)_ | _O(1)_ | Easy ||
 1779 | [Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/) | [C++](./C++/find-nearest-point-that-has-the-same-x-or-y-coordinate.cpp) [Python](./Python/find-nearest-point-that-has-the-same-x-or-y-coordinate.py) | _O(n)_ | _O(1)_ | Easy ||
-1800 | [Maximum Ascending Subarray Sum](https://leetcode.com/problems/maximum-ascending-subarray-sum/) | [C++](./C++/maximum-ascending-subarray-sum.cpp) [Python](./Python/maximum-ascending-subarray-sum.py) | _O(n)_ | _O(1)_ | Easy ||
+1826 | [Faulty Sensor](https://leetcode.com/problems/faulty-sensor/) | [C++](./C++/faulty-sensor.cpp) [Python](./Python/faulty-sensor.py) | _O(n)_ | _O(1)_ | Easy ||🔒|
 
 <br/>
 <div align="right">
@@ -958,7 +959,7 @@
 1611| [Minimum One Bit Operations to Make Integers Zero](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/)     | [C++](./C++/minimum-one-bit-operations-to-make-integers-zero.cpp) [Python](./Python/minimum-one-bit-operations-to-make-integers-zero.py)  | _O(logn)_        | _O(1)_          | Hard         | variant of [Gray Code](https://leetcode.com/problems/gray-code/) |
 1641| [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/) | [C++](./C++/count-sorted-vowel-strings.cpp) [Python](./Python/count-sorted-vowel-strings.py) | _O(1)_ | _O(1)_ |  Medium | | Binomial Coefficients
 1643| [Kth Smallest Instructions](https://leetcode.com/problems/kth-smallest-instructions/) | [C++](./C++/kth-smallest-instructions.cpp) [Python](./Python/kth-smallest-instructions.py) | _O((m + n)^2)_ | _O(1)_ |  Hard | | Binomial Coefficients
-1735| [Count Ways to Make Array With Product](https://leetcode.com/problems/count-ways-to-make-array-with-product/) | [C++](./C++/count-ways-to-make-array-with-product.cpp) [Python](./Python/count-ways-to-make-array-with-product.py) | _O(nlogn)_ | _O(logn)_ |  Hard | | Binomial Coefficients, `Euler's Theorem`
+1735| [Count Ways to Make Array With Product](https://leetcode.com/problems/count-ways-to-make-array-with-product/) | [C++](./C++/count-ways-to-make-array-with-product.cpp) [Python](./Python/count-ways-to-make-array-with-product.py) | _O(nlogn)_ | _O(logn)_ |  Hard | | Binomial Coefficients, `Euler's Theorem`, Modular Inverse
 1739| [Building Boxes](https://leetcode.com/problems/building-boxes/) | [C++](./C++/building-boxes.cpp) [Python](./Python/building-boxes.py) | _O(1)_ | _O(1)_ |  Hard | |
 1744| [Can You Eat Your Favorite Candy on Your Favorite Day?](https://leetcode.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/) | [C++](./C++/can-you-eat-your-favorite-candy-on-your-favorite-day.cpp) [Python](./Python/can-you-eat-your-favorite-candy-on-your-favorite-day.py) | _O(n)_ | _O(n)_ |  Medium | | Prefix Sum
 1753| [Maximum Score From Removing Stones](https://leetcode.com/problems/maximum-score-from-removing-stones/) | [C++](./C++/maximum-score-from-removing-stones.cpp) [Python](./Python/maximum-score-from-removing-stones.py) | _O(1)_ | _O(1)_ |  Medium | |
@@ -970,6 +971,8 @@
 1819| [Number of Different Subsequences GCDs](https://leetcode.com/problems/number-of-different-subsequences-gcds/) | [C++](./C++/number-of-different-subsequences-gcds.cpp) [Python](./Python/number-of-different-subsequences-gcds.py) | _O(n + mlogm)_ | _O(n)_ |  Hard |  |
 1822| [Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/) | [C++](./C++/sign-of-the-product-of-an-array.cpp) [Python](./Python/sign-of-the-product-of-an-array.py) | _O(n)_ | _O(1)_ |  Easy |  |
 1823| [Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game/) | [C++](./C++/find-the-winner-of-the-circular-game.cpp) [Python](./Python/find-the-winner-of-the-circular-game.py) | _O(n)_ | _O(1)_ |  Medium |  |
+1828| [Queries on Number of Points Inside a Circle](https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/) | [C++](./C++/queries-on-number-of-points-inside-a-circle.cpp) [Python](./Python/queries-on-number-of-points-inside-a-circle.py) | _O(q * n)_ | _O(1)_ |  Medium |  |
+1830| [Minimum Number of Operations to Make String Sorted](https://leetcode.com/problems/minimum-number-of-operations-to-make-string-sorted/) | [C++](./C++/minimum-number-of-operations-to-make-string-sorted.cpp) [Python](./Python/minimum-number-of-operations-to-make-string-sorted.py) | _O(n)_ | _O(max_n)_ |  Hard |  | Modular Inverse |
 
 <br/>
 <div align="right">
@@ -1773,6 +1776,7 @@
 1801| [Number of Orders in the Backlog](https://leetcode.com/problems/number-of-orders-in-the-backlog/)|[C++](./C++/number-of-orders-in-the-backlog.cpp) [Python](./Python/number-of-orders-in-the-backlog.py)| _O(nlogn)_     | _O(n)_         | Medium         | | Greedy, Heap |
 1815| [Maximum Number of Groups Getting Fresh Donuts](https://leetcode.com/problems/maximum-number-of-groups-getting-fresh-donuts/)|[C++](./C++/maximum-number-of-groups-getting-fresh-donuts.cpp) [Python](./Python/maximum-number-of-groups-getting-fresh-donuts.py)| _O((b/2) * (n/(b/2)+1)^(b/2))_     | _O((n/(b/2)+1)^(b/2))_         | Hard         | | Greedy, DP |
 1824| [Minimum Sideway Jumps](https://leetcode.com/problems/minimum-sideway-jumps/)|[C++](./C++/minimum-sideway-jumps.cpp) [Python](./Python/minimum-sideway-jumps.py)| _O(n)_     | _O(1)_         | Medium         | | Greedy, DP |
+1827| [Minimum Operations to Make the Array Increasing](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/)|[C++](./C++/minimum-operations-to-make-the-array-increasing.cpp) [Python](./Python/minimum-operations-to-make-the-array-increasing.py)| _O(n)_     | _O(1)_         | Easy         | |  |
 
 <br/>
 <div align="right">
