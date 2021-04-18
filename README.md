@@ -468,6 +468,7 @@
 1805| [Number of Different Integers in a String](https://leetcode.com/problems/number-of-different-integers-in-a-string/) | [C++](./C++/number-of-different-integers-in-a-string.cpp) [Python](./Python/number-of-different-integers-in-a-string.py) | _O(n)_ | _O(n)_ | Easy |||
 1813| [Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/) | [C++](./C++/sentence-similarity-iii.cpp) [Python](./Python/sentence-similarity-iii.py) | _O(n)_ | _O(1)_ | Medium |||
 1816| [Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) | [C++](./C++/truncate-sentence.cpp) [Python](./Python/truncate-sentence.py) | _O(n)_ | _O(1)_ | Easy |||
+1832| [Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) | [C++](./C++/check-if-the-sentence-is-pangram.cpp) [Python](./Python/check-if-the-sentence-is-pangram.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -708,6 +709,7 @@
 1612 | [Check If Two Expression Trees are Equivalent](https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/)  | [C++](./C++/check-if-two-expression-trees-are-equivalent.cpp) [Python](./Python/check-if-two-expression-trees-are-equivalent.py) | _O(n)_| _O(1)_| Medium           |🔒| `Morris Traversal`, Inorder Traversal, Stack, Hash Table | 
 1649|[Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions/)| [C++](./C++/create-sorted-array-through-instructions.cpp) [Python](./Python/create-sorted-array-through-instructions.py)| _O(nlogn)_ | _O(n)_ | Hard | variant of [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | BIT, Fenwick Tree, Merge Sort |
 1666 | [Change the Root of a Binary Tree](https://leetcode.com/problems/change-the-root-of-a-binary-tree/)  | [C++](./C++/change-the-root-of-a-binary-tree.cpp) [Python](./Python/change-the-root-of-a-binary-tree.py) | _O(h)_| _O(1)_| Medium           |🔒| | 
+1834 | [Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu/)  | [C++](./C++/single-threaded-cpu.cpp) [Python](./Python/single-threaded-cpu.py) | _O(nlogn)_| _O(n)_| Medium           | | | 
 
 <br/>
 <div align="right">
@@ -973,6 +975,7 @@
 1823| [Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game/) | [C++](./C++/find-the-winner-of-the-circular-game.cpp) [Python](./Python/find-the-winner-of-the-circular-game.py) | _O(n)_ | _O(1)_ |  Medium |  |
 1828| [Queries on Number of Points Inside a Circle](https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/) | [C++](./C++/queries-on-number-of-points-inside-a-circle.cpp) [Python](./Python/queries-on-number-of-points-inside-a-circle.py) | _O(q * n)_ | _O(1)_ |  Medium |  |
 1830| [Minimum Number of Operations to Make String Sorted](https://leetcode.com/problems/minimum-number-of-operations-to-make-string-sorted/) | [C++](./C++/minimum-number-of-operations-to-make-string-sorted.cpp) [Python](./Python/minimum-number-of-operations-to-make-string-sorted.py) | _O(n)_ | _O(max_n)_ |  Hard |  | Modular Inverse |
+1835| [Find XOR Sum of All Pairs Bitwise AND](https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/) | [C++](./C++/find-xor-sum-of-all-pairs-bitwise-and.cpp) [Python](./Python/find-xor-sum-of-all-pairs-bitwise-and.py) | _O(n)_ | _O(1)_ |  Hard |  | |
 
 <br/>
 <div align="right">
@@ -1777,6 +1780,7 @@
 1815| [Maximum Number of Groups Getting Fresh Donuts](https://leetcode.com/problems/maximum-number-of-groups-getting-fresh-donuts/)|[C++](./C++/maximum-number-of-groups-getting-fresh-donuts.cpp) [Python](./Python/maximum-number-of-groups-getting-fresh-donuts.py)| _O((b/2) * (n/(b/2)+1)^(b/2))_     | _O((n/(b/2)+1)^(b/2))_         | Hard         | | Greedy, DP |
 1824| [Minimum Sideway Jumps](https://leetcode.com/problems/minimum-sideway-jumps/)|[C++](./C++/minimum-sideway-jumps.cpp) [Python](./Python/minimum-sideway-jumps.py)| _O(n)_     | _O(1)_         | Medium         | | Greedy, DP |
 1827| [Minimum Operations to Make the Array Increasing](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/)|[C++](./C++/minimum-operations-to-make-the-array-increasing.cpp) [Python](./Python/minimum-operations-to-make-the-array-increasing.py)| _O(n)_     | _O(1)_         | Easy         | |  |
+1833| [Maximum Ice Cream Bars](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/)|[C++](./C++/maximum-ice-cream-bars.cpp) [Python](./Python/maximum-ice-cream-bars.py)| _O(nlogn)_     | _O(1)_         | Medium         | |  |
 
 <br/>
 <div align="right">
@@ -2068,6 +2072,7 @@
 1809| [Ad-Free Sessions](https://leetcode.com/problems/ad-free-sessions/) | [MySQL](./MySQL/ad-free-sessions.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1811| [Find Interview Candidates](https://leetcode.com/problems/find-interview-candidates/) | [MySQL](./MySQL/find-interview-candidates.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 1821| [Find Customers With Positive Revenue this Year](https://leetcode.com/problems/find-customers-with-positive-revenue-this-year/) | [MySQL](./MySQL/find-customers-with-positive-revenue-this-year.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+1831| [Maximum Transaction Each Day](https://leetcode.com/problems/maximum-transaction-each-day/) | [MySQL](./MySQL/maximum-transaction-each-day.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
