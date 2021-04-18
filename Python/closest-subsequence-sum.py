@@ -31,7 +31,7 @@ class Solution(object):
                 if x+nums[i] in sums2:
                     continue
                 sums2.add(x+nums[i])
-                ni = bisect.bisect_left(sorted_sums1, goal-x-nums[i]):  # Time: O(2^(n/2)) * O(n/2)
+                ni = bisect.bisect_left(sorted_sums1, goal-x-nums[i])  # Time: O(2^(n/2)) * O(n/2)
                 if ni < len(sorted_sums1):
                     result = min(result, abs(goal-x-nums[i]-sorted_sums1[ni]))
                 if ni > 0:
