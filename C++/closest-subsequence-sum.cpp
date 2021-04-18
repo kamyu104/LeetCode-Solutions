@@ -31,7 +31,7 @@ public:
         vector<int> sorted_sums1(cbegin(sums1), cend(sums1));  // Space: O(2^(n/2))
         sort(begin(sorted_sums1), end(sorted_sums1));  // Time: O((n/2) * 2^(n/2)) = O(n * 2^(n/2))
         unordered_set<int> sums2{0};
-        for (int i = size(nums) / 2; i < size(nums); ++i) {  // O(n) times
+        for (int i = size(nums) / 2; i < size(nums); ++i) {  // O(n/2) times
             for (const auto& x : vector<int>(cbegin(sums2), cend(sums2))) {  // O(2^(n/2)) times
                 if (!sums2.emplace(x + nums[i]).second) {
                     continue;
