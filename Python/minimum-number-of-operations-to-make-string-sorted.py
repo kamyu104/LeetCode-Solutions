@@ -1,5 +1,5 @@
 # Time:  O(26 * n) = O(n)
-# Space: O(26) = O(1)
+# Space: O(max_n) = O(max_n)
 
 inv = [0, 1]
 
@@ -10,7 +10,6 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        
         def inverse(n, m):
             i = len(inv)
             while len(inv) <= n:  # lazy initialization
