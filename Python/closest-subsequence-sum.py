@@ -1,5 +1,5 @@
-# Time:  O(n * 2^(n/2))
-# Space: O(n * 2^(n/2))
+# Time:  O(n^2 * 2^(n/2))
+# Space: O(2^(n/2))
 
 import bisect
 
@@ -24,14 +24,14 @@ class Solution(object):
                     continue
                 sums1.add(x+nums[i])
                 result = min(result, abs(goal-x-nums[i]))  # case of right half part is 0
-        sorted_sums1 = sorted(sums1)
+        sorted_sums1 = sorted(sums1)  # Time: O((n/2) * 2^(n/2)) = O(n * 2^(n/2)), Space: O(2^(n/2))
         sums2 = set([0])
-        for i in xrange(len(nums)//2, len(nums)):
-            for x in list(sums2):
+        for i in xrange(len(nums)//2, len(nums)):  # O(n/2) times
+            for x in list(sums2):  # O(2^(n/2)) times
                 if x+nums[i] in sums2:
                     continue
                 sums2.add(x+nums[i])
-                ni = bisect.bisect_left(sorted_sums1, goal-x-nums[i])
+                ni = bisect.bisect_left(sorted_sums1, goal-x-nums[i]):  # Time: O(n/2)
                 if ni < len(sorted_sums1):
                     result = min(result, abs(goal-x-nums[i]-sorted_sums1[ni]))
                 if ni > 0:
