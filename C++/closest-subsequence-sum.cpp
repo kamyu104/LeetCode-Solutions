@@ -1,4 +1,4 @@
-// Time:  O(n^2 * 2^(n/2))
+// Time:  O(n * 2^(n/2))
 // Space: O(2^(n/2))
 
 class Solution {
@@ -31,12 +31,12 @@ public:
         vector<int> sorted_sums1(cbegin(sums1), cend(sums1));  // Space: O(2^(n/2))
         sort(begin(sorted_sums1), end(sorted_sums1));  // Time: O((n/2) * 2^(n/2)) = O(n * 2^(n/2))
         unordered_set<int> sums2{0};
-        for (int i = size(nums) / 2; i < size(nums); ++i) {  // O(n/2) times
-            for (const auto& x : vector<int>(cbegin(sums2), cend(sums2))) {  // O(2^(n/2)) times
+        for (int i = size(nums) / 2; i < size(nums); ++i) {
+            for (const auto& x : vector<int>(cbegin(sums2), cend(sums2))) {
                 if (!sums2.emplace(x + nums[i]).second) {
                     continue;
                 }
-                auto cit = lower_bound(cbegin(sorted_sums1), cend(sorted_sums1), goal - x - nums[i]);  // Time: O(n/2)
+                auto cit = lower_bound(cbegin(sorted_sums1), cend(sorted_sums1), goal - x - nums[i]);  // Time: O(2^(n/2)) * O(n/2)
                 if (cit != cend(sorted_sums1)) {
                     result = min(result, abs(goal - x - nums[i] - *cit));
                 }
