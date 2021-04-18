@@ -28,7 +28,7 @@ public:
                 result = min(result, abs(goal - x - nums[i]));  // case of right half part is 0
             }
         }
-        vector<int> sorted_sums1(cbegin(sums1), cend(sums1));  // Size: O(2^(n/2))
+        vector<int> sorted_sums1(cbegin(sums1), cend(sums1));  // Space: O(2^(n/2))
         sort(begin(sorted_sums1), end(sorted_sums1));  // Time: O((n/2) * 2^(n/2)) = O(n * 2^(n/2))
         unordered_set<int> sums2{0};
         for (int i = size(nums) / 2; i < size(nums); ++i) {  // O(n) times
