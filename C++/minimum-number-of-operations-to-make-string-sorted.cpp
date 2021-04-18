@@ -1,5 +1,5 @@
 // Time:  O(26 * n) = O(n)
-// Space: O(26) = O(1)
+// Space: O(max_n) = O(max_n)
 
 class Solution {
 public:
@@ -7,7 +7,7 @@ public:
         static const int MOD = 1e9 + 7;
 
         array<int, 26> count = {0};
-        int result = 0, total = 0, comb_total = 1;
+        int result = 0, comb_total = 1;
         for (int i = size(s) - 1; i >= 0; --i) {
             int num = s[i] - 'a';
             comb_total = ((comb_total * int64_t(size(s) - i) % MOD) * inverse(++count[num], MOD)) % MOD;
