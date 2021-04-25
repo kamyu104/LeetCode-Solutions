@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1835%20%2F%201835-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1840%20%2F%201840-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -469,6 +469,7 @@
 1813| [Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/) | [C++](./C++/sentence-similarity-iii.cpp) [Python](./Python/sentence-similarity-iii.py) | _O(n)_ | _O(1)_ | Medium |||
 1816| [Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) | [C++](./C++/truncate-sentence.cpp) [Python](./Python/truncate-sentence.py) | _O(n)_ | _O(1)_ | Easy |||
 1832| [Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) | [C++](./C++/check-if-the-sentence-is-pangram.cpp) [Python](./Python/check-if-the-sentence-is-pangram.py) | _O(n)_ | _O(1)_ | Easy |||
+1839| [Longest Substring Of All Vowels in Order](https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/) | [C++](./C++/longest-substring-of-all-vowels-in-order.cpp) [Python](./Python/longest-substring-of-all-vowels-in-order.py) | _O(n)_ | _O(1)_ | Medium |||
 
 <br/>
 <div align="right">
@@ -510,6 +511,7 @@
 1650| [Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/)| [C++](./C++/lowest-common-ancestor-of-a-binary-tree-iii.cpp)  [Python](./Python/lowest-common-ancestor-of-a-binary-tree-iii.py) | _O(h)_ | _O(1)_         | Medium           |🔒, variant of [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) |
 1669| [Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/)| [C++](./C++/merge-in-between-linked-lists.cpp)  [Python](./Python/merge-in-between-linked-lists.py) | _O(m + n)_ | _O(1)_         | Medium           ||
 1721| [Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)| [C++](./C++/swapping-nodes-in-a-linked-list.cpp)  [Python](./Python/swapping-nodes-in-a-linked-list.py) | _O(n)_ | _O(1)_         | Medium           ||
+1836| [Remove Duplicates From an Unsorted Linked List](https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/)| [C++](./C++/remove-duplicates-from-an-unsorted-linked-list.cpp)  [Python](./Python/remove-duplicates-from-an-unsorted-linked-list.py) | _O(n)_ | _O(n)_         | Medium           | 🔒 |
 
 <br/>
 <div align="right">
@@ -976,6 +978,7 @@
 1828| [Queries on Number of Points Inside a Circle](https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/) | [C++](./C++/queries-on-number-of-points-inside-a-circle.cpp) [Python](./Python/queries-on-number-of-points-inside-a-circle.py) | _O(q * n)_ | _O(1)_ |  Medium |  |
 1830| [Minimum Number of Operations to Make String Sorted](https://leetcode.com/problems/minimum-number-of-operations-to-make-string-sorted/) | [C++](./C++/minimum-number-of-operations-to-make-string-sorted.cpp) [Python](./Python/minimum-number-of-operations-to-make-string-sorted.py) | _O(n)_ | _O(max_n)_ |  Hard |  | Modular Inverse |
 1835| [Find XOR Sum of All Pairs Bitwise AND](https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/) | [C++](./C++/find-xor-sum-of-all-pairs-bitwise-and.cpp) [Python](./Python/find-xor-sum-of-all-pairs-bitwise-and.py) | _O(n)_ | _O(1)_ |  Hard |  | |
+1837| [Sum of Digits in Base K](https://leetcode.com/problems/sum-of-digits-in-base-k/) | [C++](./C++/sum-of-digits-in-base-k.cpp) [Python](./Python/sum-of-digits-in-base-k.py) | _O(logn)_ | _O(1)_ |  Easy |  | |
 
 <br/>
 <div align="right">
@@ -1106,6 +1109,7 @@
 1695 | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/) | [C++](./C++/maximum-erasure-value.cpp) [Python](./Python/maximum-erasure-value.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers, Sliding Window |
 1712 | [Ways to Split Array Into Three Subarrays](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/) | [C++](./C++/ways-to-split-array-into-three-subarrays.cpp) [Python](./Python/ways-to-split-array-into-three-subarrays.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers, Prefix Sum |
 1750 | [Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/) | [C++](./C++/minimum-length-of-string-after-deleting-similar-ends.cpp) [Python](./Python/minimum-length-of-string-after-deleting-similar-ends.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers |
+1838 | [Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element/) | [C++](./C++/frequency-of-the-most-frequent-element.cpp) [Python](./Python/frequency-of-the-most-frequent-element.py) | _O(nlogn)_ | _O(n)_ | Medium | | Two Pointers, Sliding Window |
 
 <br/>
 <div align="right">
@@ -1781,6 +1785,7 @@
 1824| [Minimum Sideway Jumps](https://leetcode.com/problems/minimum-sideway-jumps/)|[C++](./C++/minimum-sideway-jumps.cpp) [Python](./Python/minimum-sideway-jumps.py)| _O(n)_     | _O(1)_         | Medium         | | Greedy, DP |
 1827| [Minimum Operations to Make the Array Increasing](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/)|[C++](./C++/minimum-operations-to-make-the-array-increasing.cpp) [Python](./Python/minimum-operations-to-make-the-array-increasing.py)| _O(n)_     | _O(1)_         | Easy         | |  |
 1833| [Maximum Ice Cream Bars](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/)|[C++](./C++/maximum-ice-cream-bars.cpp) [Python](./Python/maximum-ice-cream-bars.py)| _O(nlogn)_     | _O(1)_         | Medium         | |  |
+1840| [Maximum Building Height](https://leetcode.com/problems/maximum-building-height/)|[C++](./C++/maximum-building-height.cpp) [Python](./Python/maximum-building-height.py)| _O(nlogn)_     | _O(1)_         | Hard         | |  |
 
 <br/>
 <div align="right">
