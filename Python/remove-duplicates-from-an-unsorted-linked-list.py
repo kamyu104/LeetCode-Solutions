@@ -22,8 +22,7 @@ class Solution(object):
         while curr:
             count[curr.val] += 1
             curr = curr.next
-        dummy = ListNode(0, head)
-        curr = dummy
+        curr = dummy = ListNode(0, head)
         while curr.next:
             if count[curr.next.val] == 1:
                 curr = curr.next
