@@ -20,6 +20,7 @@ public:
     void unreserve(int seatNumber) {
         min_heap_.emplace_back(seatNumber); push_heap(begin(min_heap_), end(min_heap_), greater<>());
     }
+
 private:
     vector<int> min_heap_;
 };
