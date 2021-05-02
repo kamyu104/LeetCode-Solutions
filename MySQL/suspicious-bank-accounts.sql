@@ -7,11 +7,11 @@ WITH transaction_cte AS
           SUM(amount) AS total_income,
           a.max_income
    FROM Transactions t
-   LEFT JOIN Accounts a ON a.account_id = t.account_id
+        LEFT JOIN Accounts a
+               ON a.account_id = t.account_id
    WHERE t.type = 'Creditor'
-   GROUP BY 1,
-            2
-   HAVING total_income > a.max_income) ,
+   GROUP BY 1, 2
+   HAVING total_income > a.max_income),
      consecutive_cte AS
   (SELECT account_id,
           LEAD(month, 1) OVER(PARTITION BY account_id
