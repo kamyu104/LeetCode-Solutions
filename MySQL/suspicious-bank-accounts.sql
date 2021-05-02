@@ -15,8 +15,9 @@ WITH transaction_cte AS
      consecutive_cte AS
   (SELECT account_id,
           LEAD(month, 1) OVER(PARTITION BY account_id
-                             ORDER BY month) - month AS month_diff
+                              ORDER BY month) - month AS month_diff
    FROM transaction_cte)
+
 SELECT DISTINCT account_id
 FROM consecutive_cte
 WHERE month_diff = 1;
