@@ -11,7 +11,7 @@ public:
         }
         sort(begin(queries), end(queries), by_size_desc);
         set<int> ids;
-        vector<int> result(size(queries));
+        vector<int> result(size(queries), -1);
         int i = 0;
         for (const auto& q : queries) {
             int r = q[0], s = q[1], idx = q[2];
