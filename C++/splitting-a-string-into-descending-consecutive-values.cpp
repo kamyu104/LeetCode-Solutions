@@ -21,7 +21,6 @@ private:
             if (new_num >= num && num >= 0) {
                 break;
             }
-            cout << new_num << endl;
             if ((num == -1 || (num - 1) == new_num) && backtracking(s, j + 1, new_num, cnt + 1)) {
                 return true;
             }
