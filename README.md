@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1840%20%2F%201840-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1851%20%2F%201851-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1786,6 +1786,8 @@
 1827| [Minimum Operations to Make the Array Increasing](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/)|[C++](./C++/minimum-operations-to-make-the-array-increasing.cpp) [Python](./Python/minimum-operations-to-make-the-array-increasing.py)| _O(n)_     | _O(1)_         | Easy         | |  |
 1833| [Maximum Ice Cream Bars](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/)|[C++](./C++/maximum-ice-cream-bars.cpp) [Python](./Python/maximum-ice-cream-bars.py)| _O(nlogn)_     | _O(1)_         | Medium         | |  |
 1840| [Maximum Building Height](https://leetcode.com/problems/maximum-building-height/)|[C++](./C++/maximum-building-height.cpp) [Python](./Python/maximum-building-height.py)| _O(nlogn)_     | _O(1)_         | Hard         | |  |
+1842| [Next Palindrome Using Same Digits](https://leetcode.com/problems/next-palindrome-using-same-digits/)|[C++](./C++/next-palindrome-using-same-digits.cpp) [Python](./Python/next-palindrome-using-same-digits.py)| _O(nlogn)_     | _O(1)_         | Hard         | 🔒 |  |
+1850| [Minimum Adjacent Swaps to Reach the Kth Smallest Number](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/)|[C++](./C++/minimum-adjacent-swaps-to-reach-the-kth-smallest-number.cpp) [Python](./Python/minimum-adjacent-swaps-to-reach-the-kth-smallest-number.py)| _O((k + n) * n)_     | _O(n)_         | Medium         | |  |
 
 <br/>
 <div align="right">
@@ -2078,6 +2080,8 @@
 1811| [Find Interview Candidates](https://leetcode.com/problems/find-interview-candidates/) | [MySQL](./MySQL/find-interview-candidates.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 1821| [Find Customers With Positive Revenue this Year](https://leetcode.com/problems/find-customers-with-positive-revenue-this-year/) | [MySQL](./MySQL/find-customers-with-positive-revenue-this-year.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1831| [Maximum Transaction Each Day](https://leetcode.com/problems/maximum-transaction-each-day/) | [MySQL](./MySQL/maximum-transaction-each-day.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+1841| [League Statistics](https://leetcode.com/problems/league-statistics/) | [MySQL](./MySQL/league-statistics.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+1843| [Suspicious Bank Accounts](https://leetcode.com/problems/suspicious-bank-accounts/) | [MySQL](./MySQL/suspicious-bank-accounts.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
