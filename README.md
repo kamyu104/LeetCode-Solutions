@@ -311,6 +311,7 @@
 1773 | [Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/) | [C++](./C++/count-items-matching-a-rule.cpp) [Python](./Python/count-items-matching-a-rule.py) | _O(n)_ | _O(1)_ | Easy ||
 1779 | [Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/) | [C++](./C++/find-nearest-point-that-has-the-same-x-or-y-coordinate.cpp) [Python](./Python/find-nearest-point-that-has-the-same-x-or-y-coordinate.py) | _O(n)_ | _O(1)_ | Easy ||
 1826 | [Faulty Sensor](https://leetcode.com/problems/faulty-sensor/) | [C++](./C++/faulty-sensor.cpp) [Python](./Python/faulty-sensor.py) | _O(n)_ | _O(1)_ | Easy ||🔒|
+1848 | [Minimum Distance to the Target Element](https://leetcode.com/problems/minimum-distance-to-the-target-element/) | [C++](./C++/minimum-distance-to-the-target-element.cpp) [Python](./Python/minimum-distance-to-the-target-element.py) | _O(n)_ | _O(1)_ | Easy ||
 
 <br/>
 <div align="right">
@@ -470,6 +471,7 @@
 1816| [Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) | [C++](./C++/truncate-sentence.cpp) [Python](./Python/truncate-sentence.py) | _O(n)_ | _O(1)_ | Easy |||
 1832| [Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) | [C++](./C++/check-if-the-sentence-is-pangram.cpp) [Python](./Python/check-if-the-sentence-is-pangram.py) | _O(n)_ | _O(1)_ | Easy |||
 1839| [Longest Substring Of All Vowels in Order](https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/) | [C++](./C++/longest-substring-of-all-vowels-in-order.cpp) [Python](./Python/longest-substring-of-all-vowels-in-order.py) | _O(n)_ | _O(1)_ | Medium |||
+1844| [Replace All Digits with Characters](https://leetcode.com/problems/replace-all-digits-with-characters/) | [C++](./C++/replace-all-digits-with-characters.cpp) [Python](./Python/replace-all-digits-with-characters.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -1038,6 +1040,8 @@
 1703| [Minimum Adjacent Swaps for K Consecutive Ones](https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/) | [C++](./C++/minimum-adjacent-swaps-for-k-consecutive-ones.cpp) [Python](./Python/minimum-adjacent-swaps-for-k-consecutive-ones.py) | _O(n)_ | _O(n)_| Hard | | Prefix Sum
 1716| [Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/) | [C++](./C++/calculate-money-in-leetcode-bank.cpp) [Python](./Python/calculate-money-in-leetcode-bank.py) | _O(1)_ | _O(1)_| Easy | | Arithmetic Sequence
 1772 | [Sort Features by Popularity](https://leetcode.com/problems/sort-features-by-popularity/) | [C++](./C++/sort-features-by-popularity.cpp) [Python](./Python/sort-features-by-popularity.py) | _O(n)_ | _O(1)_ | Medium | 🔒 ||
+1847 | [Closest Room](https://leetcode.com/problems/closest-room/) | [C++](./C++/closest-room.cpp) [Python](./Python/closest-room.py) | _O(nlogn + klogk + klogn)_ | _O(n + k)_ | Hard | | Sort, Binary Search
+1851 | [Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/) | [C++](./C++/minimum-interval-to-include-each-query.cpp) [Python](./Python/minimum-interval-to-include-each-query.py) | _O(nlogn + klogk + klogn)_ | _O(n + k)_ | Hard | | Sort, Heap, Line Sweep
 
 <br/>
 <div align="right">
@@ -1444,6 +1448,7 @@
 1659 | [Maximize Grid Happiness](https://leetcode.com/problems/maximize-grid-happiness/) | [C++](./C++/maximize-grid-happiness.cpp) [Python](./Python/maximize-grid-happiness.py) | _O(C(m * n, i) * C(m * n - i, e))_ | _O(min(m * n, i + e))_      | Hard         || Pruning |
 1718 | [Construct the Lexicographically Largest Valid Sequence](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/) | [C++](./C++/construct-the-lexicographically-largest-valid-sequence.cpp) [Python](./Python/construct-the-lexicographically-largest-valid-sequence.py) | _O(n!)_ | _O(b)_      | Medium         || Backtracking |
 1723 | [Find Minimum Time to Finish All Jobs](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/) | [C++](./C++/find-minimum-time-to-finish-all-jobs.cpp) [Python](./Python/find-minimum-time-to-finish-all-jobs.py) | _O(k^n * logr)_ | _O(n + k)_      | Hard         || Backtracking, Pruning, Binary Search |
+1849 | [Splitting a String Into Descending Consecutive Values](https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/) | [C++](./C++/splitting-a-string-into-descending-consecutive-values.cpp) [Python](./Python/splitting-a-string-into-descending-consecutive-values.py) | _O(n^2)_ | _O(n)_      | Medium         || |
 
 <br/>
 <div align="right">
@@ -1787,6 +1792,7 @@
 1833| [Maximum Ice Cream Bars](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/)|[C++](./C++/maximum-ice-cream-bars.cpp) [Python](./Python/maximum-ice-cream-bars.py)| _O(nlogn)_     | _O(1)_         | Medium         | |  |
 1840| [Maximum Building Height](https://leetcode.com/problems/maximum-building-height/)|[C++](./C++/maximum-building-height.cpp) [Python](./Python/maximum-building-height.py)| _O(nlogn)_     | _O(1)_         | Hard         | |  |
 1842| [Next Palindrome Using Same Digits](https://leetcode.com/problems/next-palindrome-using-same-digits/)|[C++](./C++/next-palindrome-using-same-digits.cpp) [Python](./Python/next-palindrome-using-same-digits.py)| _O(nlogn)_     | _O(1)_         | Hard         | 🔒 |  |
+1846| [Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/)|[C++](./C++/maximum-element-after-decreasing-and-rearranging.cpp) [Python](./Python/maximum-element-after-decreasing-and-rearranging.py)| _O(nlogn)_     | _O(1)_         | Medium         | |  |
 1850| [Minimum Adjacent Swaps to Reach the Kth Smallest Number](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/)|[C++](./C++/minimum-adjacent-swaps-to-reach-the-kth-smallest-number.cpp) [Python](./Python/minimum-adjacent-swaps-to-reach-the-kth-smallest-number.py)| _O((k + n) * n)_     | _O(n)_         | Medium         | |  |
 
 <br/>
@@ -1922,6 +1928,7 @@
 1797| [Design Authentication Manager](https://leetcode.com/problems/design-authentication-manager/) | [C++](./C++/design-authentication-manager.cpp) [Python](./Python/design-authentication-manager.py) | ctor: _O(1)_<br>generate: _O(1)_, amortized<br>renew: _O(1)_, amortized<br>count: _O(1)_, amortized | _O(n)_| Medium | | OrderedDict
 1804| [Implement Trie II (Prefix Tree)](https://leetcode.com/problems/implement-trie-ii-prefix-tree/) | [C++](./C++/implement-trie-ii-prefix-tree.cpp) [Python](./Python/implement-trie-ii-prefix-tree.py) | ctor: _O(1)_<br>insert: _O(n)_<br>count_word: _O(n)_<br>count_prefix: _O(n)_<br>erase: _O(n)_ | _O(t)_| Medium | 🔒 | Trie
 1825| [Finding MK Average](https://leetcode.com/problems/finding-mk-average/) | [C++](./C++/finding-mk-average.cpp) [Python](./Python/finding-mk-average.py) | ctor: _O(1)_<br>add_element: _O(logn)_<br>calc_mkaverge: _O(1)_ | _O(m)_| Hard | | SortedList
+1845| [Seat Reservation Manager](https://leetcode.com/problems/seat-reservation-manager/) | [C++](./C++/seat-reservation-manager.cpp) [Python](./Python/seat-reservation-manager.py) | ctor: _O(n)_<br>reserve: _O(logn)_<br>unreserve: _O(logn)_ | _O(n)_| Medium | | Heap
 
 <br/>
 <div align="right">
