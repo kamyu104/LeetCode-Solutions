@@ -15,13 +15,10 @@ public:
         int i = 0;
         vector<int> result(size(queries), -1);
         for (const auto& [q, idx] : sorted_queries) {
-            while (i != size(intervals) && intervals[i][0] <= q) {
-                if (intervals[i][1] >= q) {
-                    min_heap.emplace(intervals[i][1] - intervals[i][0] + 1, intervals[i][1]);
-                }
-                ++i;
+            for (; i != size(intervals) && intervals[i][0] <= q; ++i) {
+                min_heap.emplace(intervals[i][1] - intervals[i][0] + 1, i);
             }
-            while (!empty(min_heap) && min_heap.top().second < q) {
+            while (!empty(min_heap) && intervals[min_heap.top().second][1] < q) {
                 min_heap.pop();
             }
             result[idx] = (!empty(min_heap)) ? min_heap.top().first : -1;
