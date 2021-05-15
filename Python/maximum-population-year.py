@@ -12,10 +12,10 @@ class Solution(object):
         for s, e in logs:
             years[s-MIN_YEAR] += 1
             years[e-MIN_YEAR] -= 1
-        max_total = total = 0
-        for i, cnt in enumerate(years):
-            total += cnt
-            if total > max_total:
-                max_total = total
-                result = i+MIN_YEAR
-        return result
+        result = 0
+        for i in xrange(len(years)):
+            if i:
+                years[i] += years[i-1]
+            if years[i] > years[result]:
+                result = i
+        return result+MIN_YEAR
