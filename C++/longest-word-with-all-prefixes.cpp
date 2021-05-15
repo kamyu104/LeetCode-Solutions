@@ -35,7 +35,7 @@ private:
         vector<TrieNode *> stk = {node};
         while (!empty(stk)) {
             const auto node = stk.back(); stk.pop_back();
-            if (node->idx != -1 && (result == -1 || size(words[node->idx]) > size(words[result]))) {
+            if (result == -1 || size(words[node->idx]) > size(words[result])) {
                 result = node->idx;
             }
             for (char c = 'z'; c >= 'a'; --c) {
@@ -84,7 +84,7 @@ public:
 
 private:
     void dfs(const vector<string>& words, TrieNode *node, int *result) {
-        if (node->idx != -1 && (*result == -1 || size(words[node->idx]) > size(words[*result]))) {
+        if (*result == -1 || size(words[node->idx]) > size(words[*result])) {
             *result = node->idx;
         }
         for (char c = 'a'; c <= 'z'; ++c) {
