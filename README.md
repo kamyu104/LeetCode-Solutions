@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1851%20%2F%201851-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1858%20%2F%201858-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -472,6 +472,8 @@
 1832| [Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) | [C++](./C++/check-if-the-sentence-is-pangram.cpp) [Python](./Python/check-if-the-sentence-is-pangram.py) | _O(n)_ | _O(1)_ | Easy |||
 1839| [Longest Substring Of All Vowels in Order](https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/) | [C++](./C++/longest-substring-of-all-vowels-in-order.cpp) [Python](./Python/longest-substring-of-all-vowels-in-order.py) | _O(n)_ | _O(1)_ | Medium |||
 1844| [Replace All Digits with Characters](https://leetcode.com/problems/replace-all-digits-with-characters/) | [C++](./C++/replace-all-digits-with-characters.cpp) [Python](./Python/replace-all-digits-with-characters.py) | _O(n)_ | _O(1)_ | Easy |||
+1854| [Maximum Population Year](https://leetcode.com/problems/maximum-population-year/) | [C++](./C++/maximum-population-year.cpp) [Python](./Python/maximum-population-year.py) | _O(n)_ | _O(1)_ | Easy || Line Sweep |
+1858| [Longest Word With All Prefixes](https://leetcode.com/problems/longest-word-with-all-prefixes/) | [C++](./C++/longest-word-with-all-prefixes.cpp) [Python](./Python/longest-word-with-all-prefixes.py) | _O(n)_ | _O(t)_ | Medium | 🔒 | Trie, DFS |
 
 <br/>
 <div align="right">
@@ -569,6 +571,7 @@
 1441 | [Build an Array With Stack Operations](https://leetcode.com/problems/build-an-array-with-stack-operations/) | [C++](./C++/build-an-array-with-stack-operations.cpp) [Python](./Python/build-an-array-with-stack-operations.py) | _O(n)_ | _O(1)_      | Easy         ||
 1541 | [Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/) | [C++](./C++/minimum-insertions-to-balance-a-parentheses-string.cpp) [Python](./Python/minimum-insertions-to-balance-a-parentheses-string.py) | _O(n)_ | _O(1)_      | Medium         ||
 1597| [Build Binary Expression Tree From Infix Expression](https://leetcode.com/problems/build-binary-expression-tree-from-infix-expression/) | [C++](./C++/build-binary-expression-tree-from-infix-expression.cpp) [Python](./Python/build-binary-expression-tree-from-infix-expression.py) | _O(n)_  | _O(n)_         | Medium           | 🔒, variant of [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/) |
+1856| [Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/) | [C++](./C++/maximum-subarray-min-product.cpp) [Python](./Python/maximum-subarray-min-product.py) | _O(n)_ | _O(n)_ | Medium | variant of [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Mono Stack, Prefix Sum
 
 
 <br/>
@@ -1114,6 +1117,8 @@
 1712 | [Ways to Split Array Into Three Subarrays](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/) | [C++](./C++/ways-to-split-array-into-three-subarrays.cpp) [Python](./Python/ways-to-split-array-into-three-subarrays.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers, Prefix Sum |
 1750 | [Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/) | [C++](./C++/minimum-length-of-string-after-deleting-similar-ends.cpp) [Python](./Python/minimum-length-of-string-after-deleting-similar-ends.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers |
 1838 | [Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element/) | [C++](./C++/frequency-of-the-most-frequent-element.cpp) [Python](./Python/frequency-of-the-most-frequent-element.py) | _O(nlogn)_ | _O(n)_ | Medium | | Two Pointers, Sliding Window |
+1852 | [Distinct Numbers in Each Subarray](https://leetcode.com/problems/distinct-numbers-in-each-subarray/) | [C++](./C++/distinct-numbers-in-each-subarray.cpp) [Python](./Python/distinct-numbers-in-each-subarray.py) | _O(n)_ | _O(k)_ | Medium | 🔒 | Two Pointers, Sliding Window |
+1855 | [Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) | [C++](./C++/maximum-distance-between-a-pair-of-values.cpp) [Python](./Python/maximum-distance-between-a-pair-of-values.py) | _O(n + m)_ | _O(1)_ | Medium | | Two Pointers |
 
 <br/>
 <div align="right">
@@ -1653,6 +1658,7 @@
 1787| [Make the XOR of All Segments Equal to Zero](https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero/)|[C++](./C++/make-the-xor-of-all-segments-equal-to-zero.cpp) [Python](./Python/make-the-xor-of-all-segments-equal-to-zero.py)| _O(n + k * m)_     | _O(min(k * m, n))_         | Hard         | |
 1799| [Maximize Score After N Operations](https://leetcode.com/problems/maximize-score-after-n-operations/)|[C++](./C++/maximize-score-after-n-operations.cpp) [Python](./Python/maximize-score-after-n-operations.py)| _O(n^2 * 2^n)_     | _O(2^n)_         | Hard         | |
 1803| [Count Pairs With XOR in a Range](https://leetcode.com/problems/count-pairs-with-xor-in-a-range/)|[C++](./C++/count-pairs-with-xor-in-a-range.cpp) [Python](./Python/count-pairs-with-xor-in-a-range.py)| _O(n)_     | _O(n)_         | Hard         | | DP, Trie
+1857| [Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/)|[C++](./C++/largest-color-value-in-a-directed-graph.cpp) [Python](./Python/largest-color-value-in-a-directed-graph.py)| _O(n + m)_     | _O(n + m)_         | Hard         | | DP, Topological Sort
 
 <br/>
 <div align="right">
@@ -2089,6 +2095,7 @@
 1831| [Maximum Transaction Each Day](https://leetcode.com/problems/maximum-transaction-each-day/) | [MySQL](./MySQL/maximum-transaction-each-day.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 1841| [League Statistics](https://leetcode.com/problems/league-statistics/) | [MySQL](./MySQL/league-statistics.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 1843| [Suspicious Bank Accounts](https://leetcode.com/problems/suspicious-bank-accounts/) | [MySQL](./MySQL/suspicious-bank-accounts.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+1853| [Convert Date Format](https://leetcode.com/problems/convert-date-format/) | [MySQL](./MySQL/convert-date-format.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
