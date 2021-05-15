@@ -11,7 +11,7 @@ class Solution(object):
         :type words: List[str]
         :rtype: str
         """
-        def iter_dfs(node):
+        def iter_dfs(words, node):
             result = -1
             stk = [node]
             while stk:
@@ -29,7 +29,7 @@ class Solution(object):
         trie["_end"] = -1
         for i, word in enumerate(words):
             reduce(dict.__getitem__, word, trie)["_end"] = i
-        result = iter_dfs(trie)
+        result = iter_dfs(words, trie)
         return words[result] if result != -1 else "" 
 
 
@@ -45,13 +45,13 @@ class Solution2(object):
         :type words: List[str]
         :rtype: str
         """
-        def dfs(node, result):
+        def dfs(words, node, result):
             if result[0] == -1 or len(words[node["_end"]]) > len(words[result[0]]):
                 result[0] = node["_end"]
             for c in string.ascii_lowercase:
                 if c not in node or "_end" not in node[c]:
                     continue
-                dfs(node[c], result)
+                dfs(words, node[c], result)
     
         _trie = lambda: collections.defaultdict(_trie)
         trie = _trie()
@@ -59,5 +59,5 @@ class Solution2(object):
         for i, word in enumerate(words):
             reduce(dict.__getitem__, word, trie)["_end"] = i
         result = [-1]
-        dfs(trie, result)
+        dfs(words, trie, result)
         return words[result[0]] if result[0] != -1 else ""
