@@ -17,9 +17,9 @@ private:
                 p = p->leaves[c].get();
             }
             p->idx = i;
-
         }
     };
+
 public:
     string longestWord(vector<string>& words) {
         auto trie = make_unique<TrieNode>();
@@ -68,7 +68,6 @@ private:
                 p = p->leaves[c].get();
             }
             p->idx = i;
-
         }
     };
 
