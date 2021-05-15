@@ -11,14 +11,15 @@ public:
             ++years[logs[i][0] - MIN_YEAR];
             --years[logs[i][1] - MIN_YEAR];
         }
-        int result = 0, max_total = 0, total = 0;
+        int result = 0;
         for (int i = 0; i < size(years); ++i) {
-            total += years[i];
-            if (total > max_total) {
-                max_total = total;
-                result = i + MIN_YEAR;
+            if (i) {
+                years[i] += years[i - 1];
+            }
+            if (years[i] > years[result]) {
+                result = i;
             }
         }
-        return result;
+        return result + MIN_YEAR;
     }
 };
