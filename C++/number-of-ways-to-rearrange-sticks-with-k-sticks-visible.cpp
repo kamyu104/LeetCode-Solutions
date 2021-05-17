@@ -10,7 +10,7 @@ public:
         for (int i = 2; i <= n; ++i) {
             for (int j = 1; j <= min(i, k); ++j) {
                 // choose the tallest as the last one which would be visible:    dp[i-1][j-1]
-                // choose the non-tallest as the last one which would be hidden: (i-1) * dp[i-1][j]
+                // choose the non-tallest as the last one which would be hidden: (i-1)*dp[i-1][j]
                 dp[i % 2][j] = (dp[(i - 1) % 2][j - 1] + int64_t(i - 1) * dp[(i - 1) % 2][j]) % MOD;
             }
         }
