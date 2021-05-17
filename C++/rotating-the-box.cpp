@@ -10,7 +10,9 @@ public:
                 if (box[i][j] == '.') {
                     continue;
                 }
-                k = (box[i][j] == '*') ? j : k;
+                if (box[i][j] == '*') {
+                    k = j;
+                }
                 result[k--][size(box) -1 - i] = box[i][j];
             }
         }
