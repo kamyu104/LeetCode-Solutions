@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1858%20%2F%201858-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1867%20%2F%201867-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -312,6 +312,7 @@
 1779 | [Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/) | [C++](./C++/find-nearest-point-that-has-the-same-x-or-y-coordinate.cpp) [Python](./Python/find-nearest-point-that-has-the-same-x-or-y-coordinate.py) | _O(n)_ | _O(1)_ | Easy ||
 1826 | [Faulty Sensor](https://leetcode.com/problems/faulty-sensor/) | [C++](./C++/faulty-sensor.cpp) [Python](./Python/faulty-sensor.py) | _O(n)_ | _O(1)_ | Easy ||🔒|
 1848 | [Minimum Distance to the Target Element](https://leetcode.com/problems/minimum-distance-to-the-target-element/) | [C++](./C++/minimum-distance-to-the-target-element.cpp) [Python](./Python/minimum-distance-to-the-target-element.py) | _O(n)_ | _O(1)_ | Easy ||
+1861 | [Rotating the Box](https://leetcode.com/problems/rotating-the-box/) | [C++](./C++/rotating-the-box.cpp) [Python](./Python/rotating-the-box.py) | _O(m * n)_ | _O(1)_ | Medium ||
 
 <br/>
 <div align="right">
@@ -984,6 +985,8 @@
 1830| [Minimum Number of Operations to Make String Sorted](https://leetcode.com/problems/minimum-number-of-operations-to-make-string-sorted/) | [C++](./C++/minimum-number-of-operations-to-make-string-sorted.cpp) [Python](./Python/minimum-number-of-operations-to-make-string-sorted.py) | _O(n)_ | _O(max_n)_ |  Hard |  | Modular Inverse |
 1835| [Find XOR Sum of All Pairs Bitwise AND](https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/) | [C++](./C++/find-xor-sum-of-all-pairs-bitwise-and.cpp) [Python](./Python/find-xor-sum-of-all-pairs-bitwise-and.py) | _O(n)_ | _O(1)_ |  Hard |  | |
 1837| [Sum of Digits in Base K](https://leetcode.com/problems/sum-of-digits-in-base-k/) | [C++](./C++/sum-of-digits-in-base-k.cpp) [Python](./Python/sum-of-digits-in-base-k.py) | _O(logn)_ | _O(1)_ |  Easy |  | |
+1860| [Incremental Memory Leak](https://leetcode.com/problems/incremental-memory-leak/) | [C++](./C++/incremental-memory-leak.cpp) [Python](./Python/incremental-memory-leak.py) | _O(1)_ | _O(1)_ |  Medium | [GCJ2020 - Round 2](https://codingcompetitions.withgoogle.com/codejam/round/000000000019ffb9/00000000003384ea) | |
+1862| [Sum of Floored Pairs](https://leetcode.com/problems/sum-of-floored-pairs/) | [C++](./C++/sum-of-floored-pairs.cpp) [Python](./Python/sum-of-floored-pairs.py) | _O(nlogn)_ | _O(n)_ |  Hard |  | |
 
 <br/>
 <div align="right">
@@ -1045,6 +1048,7 @@
 1772 | [Sort Features by Popularity](https://leetcode.com/problems/sort-features-by-popularity/) | [C++](./C++/sort-features-by-popularity.cpp) [Python](./Python/sort-features-by-popularity.py) | _O(n)_ | _O(1)_ | Medium | 🔒 ||
 1847 | [Closest Room](https://leetcode.com/problems/closest-room/) | [C++](./C++/closest-room.cpp) [Python](./Python/closest-room.py) | _O(nlogn + klogk + klogn)_ | _O(n + k)_ | Hard | | Sort, Binary Search
 1851 | [Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/) | [C++](./C++/minimum-interval-to-include-each-query.cpp) [Python](./Python/minimum-interval-to-include-each-query.py) | _O(nlogn + klogk + klogn)_ | _O(n + k)_ | Hard | | Sort, Heap, Line Sweep
+1859 | [Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/) | [C++](./C++/sorting-the-sentence.cpp) [Python](./Python/sorting-the-sentence.py) | _O(n)_ | _O(n)_ | Easy | | Sort, String
 
 <br/>
 <div align="right">
