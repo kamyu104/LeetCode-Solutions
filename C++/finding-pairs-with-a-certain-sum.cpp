@@ -1,5 +1,5 @@
-// Time:  ctor: O(n1 + n2)
-//        add:  O(1)
+// Time:  ctor:  O(n1 + n2)
+//        add:   O(1)
 //        count: O(n1)
 // Space: O(n1 + n2)
 
