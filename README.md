@@ -987,6 +987,7 @@
 1837| [Sum of Digits in Base K](https://leetcode.com/problems/sum-of-digits-in-base-k/) | [C++](./C++/sum-of-digits-in-base-k.cpp) [Python](./Python/sum-of-digits-in-base-k.py) | _O(logn)_ | _O(1)_ |  Easy |  | |
 1860| [Incremental Memory Leak](https://leetcode.com/problems/incremental-memory-leak/) | [C++](./C++/incremental-memory-leak.cpp) [Python](./Python/incremental-memory-leak.py) | _O(1)_ | _O(1)_ |  Medium | [GCJ2020 - Round 2](https://codingcompetitions.withgoogle.com/codejam/round/000000000019ffb9/00000000003384ea) | |
 1862| [Sum of Floored Pairs](https://leetcode.com/problems/sum-of-floored-pairs/) | [C++](./C++/sum-of-floored-pairs.cpp) [Python](./Python/sum-of-floored-pairs.py) | _O(nlogn)_ | _O(n)_ |  Hard |  | |
+1863| [Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | [C++](./C++/sum-of-all-subset-xor-totals.cpp) [Python](./Python/sum-of-all-subset-xor-totals.py) | _O(n)_ | _O(1)_ |  Easy |  | |
 
 <br/>
 <div align="right">
@@ -1663,6 +1664,7 @@
 1799| [Maximize Score After N Operations](https://leetcode.com/problems/maximize-score-after-n-operations/)|[C++](./C++/maximize-score-after-n-operations.cpp) [Python](./Python/maximize-score-after-n-operations.py)| _O(n^2 * 2^n)_     | _O(2^n)_         | Hard         | |
 1803| [Count Pairs With XOR in a Range](https://leetcode.com/problems/count-pairs-with-xor-in-a-range/)|[C++](./C++/count-pairs-with-xor-in-a-range.cpp) [Python](./Python/count-pairs-with-xor-in-a-range.py)| _O(n)_     | _O(n)_         | Hard         | | DP, Trie
 1857| [Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/)|[C++](./C++/largest-color-value-in-a-directed-graph.cpp) [Python](./Python/largest-color-value-in-a-directed-graph.py)| _O(n + m)_     | _O(n + m)_         | Hard         | | DP, Topological Sort
+1866| [Number of Ways to Rearrange Sticks With K Sticks Visible](https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/)|[C++](./C++/number-of-ways-to-rearrange-sticks-with-k-sticks-visible.cpp) [Python](./Python/number-of-ways-to-rearrange-sticks-with-k-sticks-visible.py)| _O(n * k)_     | _O(k)_         | Hard         | | 
 
 <br/>
 <div align="right">
@@ -1804,6 +1806,7 @@
 1842| [Next Palindrome Using Same Digits](https://leetcode.com/problems/next-palindrome-using-same-digits/)|[C++](./C++/next-palindrome-using-same-digits.cpp) [Python](./Python/next-palindrome-using-same-digits.py)| _O(n)_     | _O(1)_         | Hard         | 🔒 |  |
 1846| [Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/)|[C++](./C++/maximum-element-after-decreasing-and-rearranging.cpp) [Python](./Python/maximum-element-after-decreasing-and-rearranging.py)| _O(nlogn)_     | _O(1)_         | Medium         | |  |
 1850| [Minimum Adjacent Swaps to Reach the Kth Smallest Number](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/)|[C++](./C++/minimum-adjacent-swaps-to-reach-the-kth-smallest-number.cpp) [Python](./Python/minimum-adjacent-swaps-to-reach-the-kth-smallest-number.py)| _O((k + n) * n)_     | _O(n)_         | Medium         | |  |
+1864| [Minimum Number of Swaps to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/)|[C++](./C++/minimum-number-of-swaps-to-make-the-binary-string-alternating.cpp) [Python](./Python/minimum-number-of-swaps-to-make-the-binary-string-alternating.py)| _O(n)_     | _O(1)_         | Medium         | |  |
 
 <br/>
 <div align="right">
@@ -1939,6 +1942,7 @@
 1804| [Implement Trie II (Prefix Tree)](https://leetcode.com/problems/implement-trie-ii-prefix-tree/) | [C++](./C++/implement-trie-ii-prefix-tree.cpp) [Python](./Python/implement-trie-ii-prefix-tree.py) | ctor: _O(1)_<br>insert: _O(n)_<br>count_word: _O(n)_<br>count_prefix: _O(n)_<br>erase: _O(n)_ | _O(t)_| Medium | 🔒 | Trie
 1825| [Finding MK Average](https://leetcode.com/problems/finding-mk-average/) | [C++](./C++/finding-mk-average.cpp) [Python](./Python/finding-mk-average.py) | ctor: _O(1)_<br>add_element: _O(logn)_<br>calc_mkaverge: _O(1)_ | _O(m)_| Hard | | SortedList
 1845| [Seat Reservation Manager](https://leetcode.com/problems/seat-reservation-manager/) | [C++](./C++/seat-reservation-manager.cpp) [Python](./Python/seat-reservation-manager.py) | ctor: _O(n)_<br>reserve: _O(logn)_<br>unreserve: _O(logn)_ | _O(n)_| Medium | | Heap
+1865| [Finding Pairs With a Certain Sum](https://leetcode.com/problems/finding-pairs-with-a-certain-sumr/) | [C++](./C++/finding-pairs-with-a-certain-sum.cpp) [Python](./Python/finding-pairs-with-a-certain-sum.py) | ctor: _O(n1 + n2)_<br>add: _O(1)_<br>count: _O(n1)_ | _O(n1 + n2)_| Medium | | Hash Table
 
 <br/>
 <div align="right">
@@ -2100,6 +2104,7 @@
 1841| [League Statistics](https://leetcode.com/problems/league-statistics/) | [MySQL](./MySQL/league-statistics.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 1843| [Suspicious Bank Accounts](https://leetcode.com/problems/suspicious-bank-accounts/) | [MySQL](./MySQL/suspicious-bank-accounts.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 1853| [Convert Date Format](https://leetcode.com/problems/convert-date-format/) | [MySQL](./MySQL/convert-date-format.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+1867| [Orders With Maximum Quantity Above Average](https://leetcode.com/problems/orders-with-maximum-quantity-above-average/) | [MySQL](./MySQL/orders-with-maximum-quantity-above-average.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
