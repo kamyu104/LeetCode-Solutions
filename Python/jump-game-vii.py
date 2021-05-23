@@ -42,8 +42,6 @@ class Solution2(object):
             for j in xrange(max(i+minJump, reachable+1), min(i+maxJump+1, len(s))):
                 if s[j] != '0':
                     continue
-                if j == len(s)-1:
-                    return True
                 q.append(j)
             reachable = i+maxJump
-        return False
+        return i == len(s)-1
