@@ -1668,7 +1668,7 @@
 1803| [Count Pairs With XOR in a Range](https://leetcode.com/problems/count-pairs-with-xor-in-a-range/)|[C++](./C++/count-pairs-with-xor-in-a-range.cpp) [Python](./Python/count-pairs-with-xor-in-a-range.py)| _O(n)_     | _O(n)_         | Hard         | | DP, Trie
 1857| [Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/)|[C++](./C++/largest-color-value-in-a-directed-graph.cpp) [Python](./Python/largest-color-value-in-a-directed-graph.py)| _O(n + m)_     | _O(n + m)_         | Hard         | | DP, Topological Sort
 1866| [Number of Ways to Rearrange Sticks With K Sticks Visible](https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/)|[C++](./C++/number-of-ways-to-rearrange-sticks-with-k-sticks-visible.cpp) [Python](./Python/number-of-ways-to-rearrange-sticks-with-k-sticks-visible.py)| _O(n * k)_     | _O(k)_         | Hard         | | 
-1871| [Jump Game VII](https://leetcode.com/problems/jump-game-vii/)|[C++](./C++/jump-game-vii.cpp) [Python](./Python/jump-game-vii.py)| _O(n)_     | _O(n)_         | Medium         | | Line Sweep, DP
+1871| [Jump Game VII](https://leetcode.com/problems/jump-game-vii/)|[C++](./C++/jump-game-vii.cpp) [Python](./Python/jump-game-vii.py)| _O(n)_     | _O(n)_         | Medium         | | Line Sweep, DP, BFS
 1872| [Stone Game VIII](https://leetcode.com/problems/stone-game-viii/)|[C++](./C++/stone-game-viii.cpp) [Python](./Python/stone-game-viii.py)| _O(n)_     | _O(1)_         | Hard         | |
 
 
