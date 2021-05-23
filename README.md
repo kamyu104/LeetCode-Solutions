@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1867%20%2F%201867-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1872%20%2F%201872-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -313,6 +313,7 @@
 1826 | [Faulty Sensor](https://leetcode.com/problems/faulty-sensor/) | [C++](./C++/faulty-sensor.cpp) [Python](./Python/faulty-sensor.py) | _O(n)_ | _O(1)_ | Easy ||🔒|
 1848 | [Minimum Distance to the Target Element](https://leetcode.com/problems/minimum-distance-to-the-target-element/) | [C++](./C++/minimum-distance-to-the-target-element.cpp) [Python](./Python/minimum-distance-to-the-target-element.py) | _O(n)_ | _O(1)_ | Easy ||
 1861 | [Rotating the Box](https://leetcode.com/problems/rotating-the-box/) | [C++](./C++/rotating-the-box.cpp) [Python](./Python/rotating-the-box.py) | _O(m * n)_ | _O(1)_ | Medium ||
+1869 | [Longer Contiguous Segments of Ones than Zeros](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/) | [C++](./C++/longer-contiguous-segments-of-ones-than-zeros.cpp) [Python](./Python/longer-contiguous-segments-of-ones-than-zeros.py) | _O(n)_ | _O(1)_ | Easy ||
 
 <br/>
 <div align="right">
@@ -1124,6 +1125,7 @@
 1838 | [Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element/) | [C++](./C++/frequency-of-the-most-frequent-element.cpp) [Python](./Python/frequency-of-the-most-frequent-element.py) | _O(nlogn)_ | _O(n)_ | Medium | | Two Pointers, Sliding Window |
 1852 | [Distinct Numbers in Each Subarray](https://leetcode.com/problems/distinct-numbers-in-each-subarray/) | [C++](./C++/distinct-numbers-in-each-subarray.cpp) [Python](./Python/distinct-numbers-in-each-subarray.py) | _O(n)_ | _O(k)_ | Medium | 🔒 | Two Pointers, Sliding Window |
 1855 | [Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) | [C++](./C++/maximum-distance-between-a-pair-of-values.cpp) [Python](./Python/maximum-distance-between-a-pair-of-values.py) | _O(n + m)_ | _O(1)_ | Medium | | Two Pointers |
+1868 | [Product of Two Run-Length Encoded Arrays](https://leetcode.com/problems/product-of-two-run-length-encoded-arrays/) | [C++](./C++/product-of-two-run-length-encoded-arrays.cpp) [Python](./Python/product-of-two-run-length-encoded-arrays.py) | _O(m + n)_ | _O(1)_ | Medium | 🔒 | Two Pointers |
 
 <br/>
 <div align="right">
@@ -1236,6 +1238,7 @@
 1760 | [Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/) | [C++](./C++/minimum-limit-of-balls-in-a-bag.cpp) [Python](./Python/minimum-limit-of-balls-in-a-bag.py) | _O(nlogm)_ | _O(1)_ | Medium | |
 1802 | [Maximum Value at a Given Index in a Bounded Array](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/) | [C++](./C++/maximum-value-at-a-given-index-in-a-bounded-array.cpp) [Python](./Python/maximum-value-at-a-given-index-in-a-bounded-array.py) | _O(logm)_ | _O(1)_ | Medium | |
 1818 | [Minimum Absolute Sum Difference](https://leetcode.com/problems/minimum-absolute-sum-difference/) | [C++](./C++/minimum-absolute-sum-difference.cpp) [Python](./Python/minimum-absolute-sum-difference.py) | _O(nlogn)_ | _O(n)_ | Medium | |
+1870 | [Minimum Speed to Arrive on Time](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | [C++](./C++/minimum-speed-to-arrive-on-time.cpp) [Python](./Python/minimum-speed-to-arrive-on-time.py) | _O(nlogr)_ | _O(1)_ | Medium | |
 
 <br/>
 <div align="right">
@@ -1665,6 +1668,9 @@
 1803| [Count Pairs With XOR in a Range](https://leetcode.com/problems/count-pairs-with-xor-in-a-range/)|[C++](./C++/count-pairs-with-xor-in-a-range.cpp) [Python](./Python/count-pairs-with-xor-in-a-range.py)| _O(n)_     | _O(n)_         | Hard         | | DP, Trie
 1857| [Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/)|[C++](./C++/largest-color-value-in-a-directed-graph.cpp) [Python](./Python/largest-color-value-in-a-directed-graph.py)| _O(n + m)_     | _O(n + m)_         | Hard         | | DP, Topological Sort
 1866| [Number of Ways to Rearrange Sticks With K Sticks Visible](https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/)|[C++](./C++/number-of-ways-to-rearrange-sticks-with-k-sticks-visible.cpp) [Python](./Python/number-of-ways-to-rearrange-sticks-with-k-sticks-visible.py)| _O(n * k)_     | _O(k)_         | Hard         | | 
+1871| [Jump Game VII](https://leetcode.com/problems/jump-game-vii/)|[C++](./C++/jump-game-vii.cpp) [Python](./Python/jump-game-vii.py)| _O(n)_     | _O(n)_         | Medium         | | Line Sweep, DP
+1872| [Stone Game VIII](https://leetcode.com/problems/stone-game-viii/)|[C++](./C++/stone-game-viii.cpp) [Python](./Python/stone-game-viii.py)| _O(n)_     | _O(1)_         | Hard         | |
+
 
 <br/>
 <div align="right">
