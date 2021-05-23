@@ -21,6 +21,7 @@ class Solution(object):
             dp[i] = cnt > 0 and s[i] == '0'
         return dp[-1]
 
+
 # Time:  O(n)
 # Space: O(n)
 import collections
