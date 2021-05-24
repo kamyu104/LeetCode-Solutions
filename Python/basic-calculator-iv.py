@@ -15,7 +15,7 @@ def clear(result):
     to_remove = [k for k, v in result.iteritems() if v == 0]
     for k in to_remove:
         result.pop(k)
-    return len(to_remove)
+
 
 class Poly(collections.Counter):
     def __init__(self, expr=None):
