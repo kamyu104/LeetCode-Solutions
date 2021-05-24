@@ -7,12 +7,10 @@ class Solution(object):
         :type n: int
         :rtype: str
         """
-        result, dvd = "", n
-
-        while dvd:
-            result += chr((dvd - 1) % 26 + ord('A'))
-            dvd = (dvd - 1) / 26
-
-        return result[::-1]
-
+        result = []
+        while n:
+            result += chr((n-1)%26 + ord('A'))
+            n = (n-1)//26
+        result.reverse()
+        return "".join(result)
 
