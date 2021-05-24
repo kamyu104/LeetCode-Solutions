@@ -46,13 +46,7 @@ class Poly(collections.Counter):
             result = []
             i, j = 0, 0
             while i != len(k1) or j != len(k2):
-                if j == len(k2):
-                    result.append(k1[i])
-                    i += 1
-                elif i == len(k1):
-                    result.append(k2[j])
-                    j += 1
-                elif k1[i] < k2[j]:
+                if j == len(k2) or (i != len(k1) and k1[i] < k2[j]):
                     result.append(k1[i])
                     i += 1
                 else:
