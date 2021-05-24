@@ -11,22 +11,35 @@ import itertools
 import operator
 
 
+def clear(result):
+    to_remove = [k for k, v in result.iteritems() if v == 0]
+    for k in to_remove:
+        result.pop(k)
+    return len(to_remove)
+
 class Poly(collections.Counter):
     def __init__(self, expr=None):
         if expr is None:
             return
         if expr.isdigit():
-            self.update({(): int(expr)})
+            if int(expr):
+                self.update({(): int(expr)})
         else:
             self[(expr,)] += 1
 
     def __add__(self, other):
-        self.update(other)
-        return self
+        result = Poly()
+        result.update(self)
+        result.update(other)
+        clear(result)
+        return result
 
     def __sub__(self, other):
-        self.update({k: -v for k, v in other.iteritems()})
-        return self
+        result = Poly()
+        result.update(self)
+        result.update({k: -v for k, v in other.iteritems()})
+        clear(result)
+        return result
 
     def __mul__(self, other):
         def merge(k1, k2):
@@ -51,6 +64,7 @@ class Poly(collections.Counter):
         for k1, v1 in self.iteritems():
             for k2, v2 in other.iteritems():
                 result.update({tuple(merge(k1, k2)): v1*v2})
+        clear(result)
         return result
 
     def eval(self, lookup):
@@ -63,13 +77,13 @@ class Poly(collections.Counter):
                 else:
                     key.append(var)
             result[tuple(key)] += c
+        clear(result)
         return result
 
     def to_list(self):
         return ["*".join((str(v),) + k)
                 for k, v in sorted(self.iteritems(),
-                                   key=lambda x: (-len(x[0]), x[0]))
-                if v]
+                                   key=lambda x: (-len(x[0]), x[0]))]
 
 
 class Solution(object):
