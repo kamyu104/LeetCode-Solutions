@@ -12,7 +12,9 @@ public:
     Poly(const string& expr) {
         vector<string> key;
         if (is_number(expr)) {
-            polies_[key] = stoi(expr);
+            if (stoi(expr)) {
+                polies_[key] = stoi(expr);
+            }
         } else {
             key.emplace_back(expr);
             ++polies_[key];
