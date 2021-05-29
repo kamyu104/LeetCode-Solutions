@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1872%20%2F%201872-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1875%20%2F%201875-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1813,6 +1813,7 @@
 1846| [Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/)|[C++](./C++/maximum-element-after-decreasing-and-rearranging.cpp) [Python](./Python/maximum-element-after-decreasing-and-rearranging.py)| _O(nlogn)_     | _O(1)_         | Medium         | |  |
 1850| [Minimum Adjacent Swaps to Reach the Kth Smallest Number](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/)|[C++](./C++/minimum-adjacent-swaps-to-reach-the-kth-smallest-number.cpp) [Python](./Python/minimum-adjacent-swaps-to-reach-the-kth-smallest-number.py)| _O((k + n) * n)_     | _O(n)_         | Medium         | |  |
 1864| [Minimum Number of Swaps to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/)|[C++](./C++/minimum-number-of-swaps-to-make-the-binary-string-alternating.cpp) [Python](./Python/minimum-number-of-swaps-to-make-the-binary-string-alternating.py)| _O(n)_     | _O(1)_         | Medium         | |  |
+1874 | [Minimize Product Sum of Two Arrays](https://leetcode.com/problems/minimize-product-sum-of-two-arrays/) | [C++](./C++/minimize-product-sum-of-two-arrays) [Python](./Python/minimize-product-sum-of-two-arrays.py) | _O(nlogn)_ | _O(1)_ | Medium | [GCJ2008 - Round 1A](https://codingcompetitions.withgoogle.com/codejam/round/00000000004330f6/0000000000432f33)| 🔒  |
 
 <br/>
 <div align="right">
@@ -2111,6 +2112,9 @@
 1843| [Suspicious Bank Accounts](https://leetcode.com/problems/suspicious-bank-accounts/) | [MySQL](./MySQL/suspicious-bank-accounts.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 1853| [Convert Date Format](https://leetcode.com/problems/convert-date-format/) | [MySQL](./MySQL/convert-date-format.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1867| [Orders With Maximum Quantity Above Average](https://leetcode.com/problems/orders-with-maximum-quantity-above-average/) | [MySQL](./MySQL/orders-with-maximum-quantity-above-average.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+1873| [Calculate Special Bonus](https://leetcode.com/problems/calculate-special-bonus/) | [MySQL](./MySQL/calculate-special-bonus.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+1875| [Group Employees of the Same Salary](https://leetcode.com/problems/group-employees-of-the-same-salary/) | [MySQL](./MySQL/group-employees-of-the-same-salary.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+
 
 <br/>
 <div align="right">
