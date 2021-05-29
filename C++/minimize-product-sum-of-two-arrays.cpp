@@ -2,7 +2,6 @@
 // Space: O(1)
 
 // Same problem from https://codingcompetitions.withgoogle.com/codejam/round/00000000004330f6/0000000000432f33
-
 class Solution {
 public:
     int minProductSum(vector<int>& nums1, vector<int>& nums2) {
