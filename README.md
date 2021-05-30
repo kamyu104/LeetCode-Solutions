@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1875%20%2F%201875-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1883%20%2F%201883-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -314,6 +314,7 @@
 1848 | [Minimum Distance to the Target Element](https://leetcode.com/problems/minimum-distance-to-the-target-element/) | [C++](./C++/minimum-distance-to-the-target-element.cpp) [Python](./Python/minimum-distance-to-the-target-element.py) | _O(n)_ | _O(1)_ | Easy ||
 1861 | [Rotating the Box](https://leetcode.com/problems/rotating-the-box/) | [C++](./C++/rotating-the-box.cpp) [Python](./Python/rotating-the-box.py) | _O(m * n)_ | _O(1)_ | Medium ||
 1869 | [Longer Contiguous Segments of Ones than Zeros](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/) | [C++](./C++/longer-contiguous-segments-of-ones-than-zeros.cpp) [Python](./Python/longer-contiguous-segments-of-ones-than-zeros.py) | _O(n)_ | _O(1)_ | Easy ||
+1878 | [Get Biggest Three Rhombus Sums in a Grid](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/) | [C++](./C++/get-biggest-three-rhombus-sums-in-a-grid.cpp) [Python](./Python/get-biggest-three-rhombus-sums-in-a-grid.py) | _O(m * n * min(m, n))_ | _O(m * n)_ | Easy ||
 
 <br/>
 <div align="right">
@@ -476,6 +477,7 @@
 1844| [Replace All Digits with Characters](https://leetcode.com/problems/replace-all-digits-with-characters/) | [C++](./C++/replace-all-digits-with-characters.cpp) [Python](./Python/replace-all-digits-with-characters.py) | _O(n)_ | _O(1)_ | Easy |||
 1854| [Maximum Population Year](https://leetcode.com/problems/maximum-population-year/) | [C++](./C++/maximum-population-year.cpp) [Python](./Python/maximum-population-year.py) | _O(n)_ | _O(1)_ | Easy || Line Sweep |
 1858| [Longest Word With All Prefixes](https://leetcode.com/problems/longest-word-with-all-prefixes/) | [C++](./C++/longest-word-with-all-prefixes.cpp) [Python](./Python/longest-word-with-all-prefixes.py) | _O(n)_ | _O(t)_ | Medium | 🔒 | Trie, DFS |
+1876| [Substrings of Size Three with Distinct Characters](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/) | [C++](./C++/substrings-of-size-three-with-distinct-characters.cpp) [Python](./Python/substrings-of-size-three-with-distinct-characters.py) | _O(n)_ | _O(1)_ | Easy | |  |
 
 <br/>
 <div align="right">
@@ -1814,6 +1816,7 @@
 1850| [Minimum Adjacent Swaps to Reach the Kth Smallest Number](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/)|[C++](./C++/minimum-adjacent-swaps-to-reach-the-kth-smallest-number.cpp) [Python](./Python/minimum-adjacent-swaps-to-reach-the-kth-smallest-number.py)| _O((k + n) * n)_     | _O(n)_         | Medium         | |  |
 1864| [Minimum Number of Swaps to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/)|[C++](./C++/minimum-number-of-swaps-to-make-the-binary-string-alternating.cpp) [Python](./Python/minimum-number-of-swaps-to-make-the-binary-string-alternating.py)| _O(n)_     | _O(1)_         | Medium         | |  |
 1874 | [Minimize Product Sum of Two Arrays](https://leetcode.com/problems/minimize-product-sum-of-two-arrays/) | [C++](./C++/minimize-product-sum-of-two-arrays.cpp) [Python](./Python/minimize-product-sum-of-two-arrays.py) | _O(nlogn)_ | _O(1)_ | Medium | [GCJ2008 - Round 1A](https://codingcompetitions.withgoogle.com/codejam/round/00000000004330f6/0000000000432f33), 🔒|  |
+1877 | [Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | [C++](./C++/minimize-maximum-pair-sum-in-array.cpp) [Python](./Python/minimize-maximum-pair-sum-in-arrays.py) | _O(nlogn)_ | _O(1)_ | Medium | |  |
 
 <br/>
 <div align="right">
@@ -1856,6 +1859,8 @@
 1791 | [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/)  | [C++](./C++/find-center-of-star-graph.cpp) [Python](./Python/find-center-of-star-graph.py) | _O(n)_| _O(n)_| Medium           ||| 
 1810 | [Minimum Path Cost in a Hidden Grid](https://leetcode.com/problems/minimum-path-cost-in-a-hidden-grid/)  | [C++](./C++/minimum-path-cost-in-a-hidden-grid.cpp) [Python](./Python/minimum-path-cost-in-a-hidden-grid.py) | _O(m * n * log(m * n))_ | _O(m * n)_| Medium           |🔒| DFS, `Dijkstra's Algorithm`| 
 1820 | [Maximum Number of Accepted Invitations](https://leetcode.com/problems/maximum-number-of-accepted-invitations/) | [C++](./C++/maximum-number-of-accepted-invitations.cpp) [Python](./Python/maximum-number-of-accepted-invitations.py) | _O(m * n * sqrt(m + n))_ | _O(m + n)_ | Medium | 🔒 | `Hopcroft-Karp Bipartite Matching`, `Hungarian Bipartite Matching` |
+1879 | [Minimum XOR Sum of Two Arrays](https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/) | [C++](./C++/minimum-xor-sum-of-two-arrays.cpp) [Python](./Python/minimum-xor-sum-of-two-arrays.py) | _O(n^3)_ | _O(n^2)_ | Hard | | DP, `Hungarian Weighted Bipartite Matching` |
+
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
