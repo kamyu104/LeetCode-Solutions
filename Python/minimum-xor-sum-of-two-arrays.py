@@ -66,7 +66,7 @@ class Solution2(object):
         for mask in xrange(len(dp)):
             bit = 1
             for i in xrange(len(nums2)):
-                if mask&bit == 0:
+                if (mask&bit) == 0:
                     dp[mask|bit] = min(dp[mask|bit], (dp[mask][0]+(nums1[dp[mask][1]]^nums2[i]), dp[mask][1]+1))
                 bit <<= 1
         return dp[-1][0]
