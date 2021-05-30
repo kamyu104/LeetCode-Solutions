@@ -29,8 +29,8 @@ class Solution(object):
                     if total in lookup:
                         continue
                     lookup.add(total)
-                    heappush(min_heap, total)
+                    heapq.heappush(min_heap, total)
                     if len(min_heap) == K+1:                        
-                        lookup.remove(heappop(min_heap))
+                        lookup.remove(heapq.heappop(min_heap))
         min_heap.sort(reverse=True)
         return min_heap
