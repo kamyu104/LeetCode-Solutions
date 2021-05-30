@@ -1,6 +1,9 @@
 # Time:  O(n + mlogn)
 # Space: O(n)
 
+import heapq
+
+
 class Solution(object):
     def assignTasks(self, servers, tasks):
         """
