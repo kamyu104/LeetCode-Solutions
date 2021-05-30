@@ -626,8 +626,8 @@
 1606 | [Find Servers That Handled Most Number of Requests](https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/) | [C++](./C++/find-servers-that-handled-most-number-of-requests.cpp) [Python](./Python/find-servers-that-handled-most-number-of-requests.py) | _O(nlogk)_ | _O(k)_ | Hard | | SortedList |
 1642 | [Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/) | [C++](./C++/furthest-building-you-can-reach.cpp) [Python](./Python/furthest-building-you-can-reach.py) | _O(nlogk)_ | _O(k)_ | Medium | | |
 1675 | [Minimize Deviation in Array](https://leetcode.com/problems/minimize-deviation-in-array/) | [C++](./C++/minimize-deviation-in-array.cpp) [Python](./Python/minimize-deviation-in-array.py) | _O((n * log(max_num)) * logn)_ | _O(n)_ | Hard | | |
-1792 | [Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/) | [C++](./C++/maximum-average-pass-ratio.cpp) [Python](./Python/maximum-average-pass-ratio.py) | _O((n + mlogn)_ | _O(n)_ | Medium | | |
-1882 | [Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/) | [C++](./C++/process-tasks-using-servers.cpp) [Python](./Python/process-tasks-using-servers.py) | _O((n + mlogn)_ | _O(n)_ | Medium | | |
+1792 | [Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/) | [C++](./C++/maximum-average-pass-ratio.cpp) [Python](./Python/maximum-average-pass-ratio.py) | _O(n + mlogn)_ | _O(n)_ | Medium | | |
+1882 | [Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/) | [C++](./C++/process-tasks-using-servers.cpp) [Python](./Python/process-tasks-using-servers.py) | _O(n + mlogn)_ | _O(n)_ | Medium | | |
 
 <br/>
 <div align="right">
