@@ -1,6 +1,7 @@
 # Time:  O(n^3)
 # Space: O(n^2)
 
+# weighted bipartite matching solution
 class Solution(object):
     def minimumXORSum(self, nums1, nums2):
         # Template translated from:
