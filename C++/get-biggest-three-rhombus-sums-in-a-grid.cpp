@@ -36,7 +36,7 @@ public:
             }
         }
         vector<int> result;
-        while (!min_heap.empty()) {
+        while (!empty(min_heap)) {
             result.emplace_back(min_heap.top()); min_heap.pop();
         }
         reverse(begin(result), end(result));
