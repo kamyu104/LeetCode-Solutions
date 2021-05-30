@@ -61,7 +61,7 @@ class Solution2(object):
         :type nums2: List[int]
         :rtype: int
         """
-        dp = [(float("inf"), -1)]*(2**len(nums1))
+        dp = [(float("inf"), float("inf"))]*(2**len(nums1))
         dp[0] = (0, 0)
         for mask in xrange(len(dp)):
             bit = 1
