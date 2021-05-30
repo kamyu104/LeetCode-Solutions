@@ -478,6 +478,7 @@
 1854| [Maximum Population Year](https://leetcode.com/problems/maximum-population-year/) | [C++](./C++/maximum-population-year.cpp) [Python](./Python/maximum-population-year.py) | _O(n)_ | _O(1)_ | Easy || Line Sweep |
 1858| [Longest Word With All Prefixes](https://leetcode.com/problems/longest-word-with-all-prefixes/) | [C++](./C++/longest-word-with-all-prefixes.cpp) [Python](./Python/longest-word-with-all-prefixes.py) | _O(n)_ | _O(t)_ | Medium | 🔒 | Trie, DFS |
 1876| [Substrings of Size Three with Distinct Characters](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/) | [C++](./C++/substrings-of-size-three-with-distinct-characters.cpp) [Python](./Python/substrings-of-size-three-with-distinct-characters.py) | _O(n)_ | _O(1)_ | Easy | |  |
+1880| [Check if Word Equals Summation of Two Words](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/) | [C++](./C++/check-if-word-equals-summation-of-two-words.cpp) [Python](./Python/check-if-word-equals-summation-of-two-words.py) | _O(n)_ | _O(1)_ | Easy | |  |
 
 <br/>
 <div align="right">
@@ -626,6 +627,7 @@
 1642 | [Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/) | [C++](./C++/furthest-building-you-can-reach.cpp) [Python](./Python/furthest-building-you-can-reach.py) | _O(nlogk)_ | _O(k)_ | Medium | | |
 1675 | [Minimize Deviation in Array](https://leetcode.com/problems/minimize-deviation-in-array/) | [C++](./C++/minimize-deviation-in-array.cpp) [Python](./Python/minimize-deviation-in-array.py) | _O((n * log(max_num)) * logn)_ | _O(n)_ | Hard | | |
 1792 | [Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/) | [C++](./C++/maximum-average-pass-ratio.cpp) [Python](./Python/maximum-average-pass-ratio.py) | _O((n + mlogn)_ | _O(n)_ | Medium | | |
+1882 | [Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/) | [C++](./C++/process-tasks-using-servers.cpp) [Python](./Python/process-tasks-using-servers.py) | _O((n + mlogn)_ | _O(n)_ | Medium | | |
 
 <br/>
 <div align="right">
@@ -1672,7 +1674,7 @@
 1866| [Number of Ways to Rearrange Sticks With K Sticks Visible](https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/)|[C++](./C++/number-of-ways-to-rearrange-sticks-with-k-sticks-visible.cpp) [Python](./Python/number-of-ways-to-rearrange-sticks-with-k-sticks-visible.py)| _O(n * k)_     | _O(k)_         | Hard         | | 
 1871| [Jump Game VII](https://leetcode.com/problems/jump-game-vii/)|[C++](./C++/jump-game-vii.cpp) [Python](./Python/jump-game-vii.py)| _O(n)_     | _O(n)_         | Medium         | | Line Sweep, DP, BFS
 1872| [Stone Game VIII](https://leetcode.com/problems/stone-game-viii/)|[C++](./C++/stone-game-viii.cpp) [Python](./Python/stone-game-viii.py)| _O(n)_     | _O(1)_         | Hard         | |
-
+1883| [Minimum Skips to Arrive at Meeting On Time](https://leetcode.com/problems/minimum-skips-to-arrive-at-meeting-on-time/)|[C++](./C++/minimum-skips-to-arrive-at-meeting-on-time.cpp) [Python](./Python/minimum-skips-to-arrive-at-meeting-on-time.py)| _O(n^2)_     | _O(n)_         | Hard         | |
 
 <br/>
 <div align="right">
@@ -1817,6 +1819,7 @@
 1864| [Minimum Number of Swaps to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/)|[C++](./C++/minimum-number-of-swaps-to-make-the-binary-string-alternating.cpp) [Python](./Python/minimum-number-of-swaps-to-make-the-binary-string-alternating.py)| _O(n)_     | _O(1)_         | Medium         | |  |
 1874 | [Minimize Product Sum of Two Arrays](https://leetcode.com/problems/minimize-product-sum-of-two-arrays/) | [C++](./C++/minimize-product-sum-of-two-arrays.cpp) [Python](./Python/minimize-product-sum-of-two-arrays.py) | _O(nlogn)_ | _O(1)_ | Medium | [GCJ2008 - Round 1A](https://codingcompetitions.withgoogle.com/codejam/round/00000000004330f6/0000000000432f33), 🔒|  |
 1877 | [Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | [C++](./C++/minimize-maximum-pair-sum-in-array.cpp) [Python](./Python/minimize-maximum-pair-sum-in-arrays.py) | _O(nlogn)_ | _O(1)_ | Medium | |  |
+1881 | [Maximum Value after Insertion](https://leetcode.com/problems/maximum-value-after-insertion/) | [C++](./C++/maximum-value-after-insertion.cpp) [Python](./Python/maximum-value-after-insertion.py) | _O(n)_ | _O(1)_ | Medium | |  |
 
 <br/>
 <div align="right">
