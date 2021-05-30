@@ -5,6 +5,7 @@ class Solution {
 public:
     vector<int> getBiggestThree(vector<vector<int>>& grid) {
         static const int K = 3;
+
         vector<vector<int>> left{grid}, right{grid};
         for (int i = 1; i < size(grid); ++i) {
             for (int j = 0; j < size(grid[0]) - 1; ++j) {
