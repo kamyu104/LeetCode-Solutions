@@ -12,7 +12,7 @@ class Solution(object):
         def ceil(a, b):
             return (a+b-1)//b
 
-        dp = [0]*((len(dist)-1)+1)  # dp[i]: (min time by i rests) * speed
+        dp = [0]*((len(dist)-1)+1)  # dp[i]: (min time by i skips) * speed
         for i, d in enumerate(dist):
             for j in reversed(xrange(len(dp))):
                 dp[j] = ceil(dp[j]+d, speed)*speed if i < len(dist)-1 else dp[j]+d
