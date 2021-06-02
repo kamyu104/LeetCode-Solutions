@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1883%20%2F%201883-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1884%20%2F%201884-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -993,6 +993,7 @@
 1860| [Incremental Memory Leak](https://leetcode.com/problems/incremental-memory-leak/) | [C++](./C++/incremental-memory-leak.cpp) [Python](./Python/incremental-memory-leak.py) | _O(1)_ | _O(1)_ |  Medium | [GCJ2020 - Round 2](https://codingcompetitions.withgoogle.com/codejam/round/000000000019ffb9/00000000003384ea) | |
 1862| [Sum of Floored Pairs](https://leetcode.com/problems/sum-of-floored-pairs/) | [C++](./C++/sum-of-floored-pairs.cpp) [Python](./Python/sum-of-floored-pairs.py) | _O(nlogn)_ | _O(n)_ |  Hard |  | |
 1863| [Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | [C++](./C++/sum-of-all-subset-xor-totals.cpp) [Python](./Python/sum-of-all-subset-xor-totals.py) | _O(n)_ | _O(1)_ |  Easy |  | |
+1884| [Egg Drop With 2 Eggs and N Floors](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/) | [C++](./C++/egg-drop-with-2-eggs-and-n-floors.cpp) [Python](./Python/egg-drop-with-2-eggs-and-n-floors.py) | _O(1)_ | _O(1)_ |  Medium |  | |
 
 <br/>
 <div align="right">
