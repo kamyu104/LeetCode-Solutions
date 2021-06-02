@@ -993,7 +993,7 @@
 1860| [Incremental Memory Leak](https://leetcode.com/problems/incremental-memory-leak/) | [C++](./C++/incremental-memory-leak.cpp) [Python](./Python/incremental-memory-leak.py) | _O(1)_ | _O(1)_ |  Medium | [GCJ2020 - Round 2](https://codingcompetitions.withgoogle.com/codejam/round/000000000019ffb9/00000000003384ea) | |
 1862| [Sum of Floored Pairs](https://leetcode.com/problems/sum-of-floored-pairs/) | [C++](./C++/sum-of-floored-pairs.cpp) [Python](./Python/sum-of-floored-pairs.py) | _O(nlogn)_ | _O(n)_ |  Hard |  | |
 1863| [Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | [C++](./C++/sum-of-all-subset-xor-totals.cpp) [Python](./Python/sum-of-all-subset-xor-totals.py) | _O(n)_ | _O(1)_ |  Easy |  | |
-1884| [Egg Drop With 2 Eggs and N Floors](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/) | [C++](./C++/egg-drop-with-2-eggs-and-n-floors.cpp) [Python](./Python/egg-drop-with-2-eggs-and-n-floors.py) | _O(1)_ | _O(1)_ |  Medium |  | |
+1884| [Egg Drop With 2 Eggs and N Floors](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/) | [C++](./C++/egg-drop-with-2-eggs-and-n-floors.cpp) [Python](./Python/egg-drop-with-2-eggs-and-n-floors.py) | _O(1)_ | _O(1)_ |  Medium |  | DP |
 
 <br/>
 <div align="right">
