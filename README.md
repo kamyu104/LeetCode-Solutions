@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1884%20%2F%201884-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1885%20%2F%201885-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1131,6 +1131,7 @@
 1852 | [Distinct Numbers in Each Subarray](https://leetcode.com/problems/distinct-numbers-in-each-subarray/) | [C++](./C++/distinct-numbers-in-each-subarray.cpp) [Python](./Python/distinct-numbers-in-each-subarray.py) | _O(n)_ | _O(k)_ | Medium | 🔒 | Two Pointers, Sliding Window |
 1855 | [Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) | [C++](./C++/maximum-distance-between-a-pair-of-values.cpp) [Python](./Python/maximum-distance-between-a-pair-of-values.py) | _O(n + m)_ | _O(1)_ | Medium | | Two Pointers |
 1868 | [Product of Two Run-Length Encoded Arrays](https://leetcode.com/problems/product-of-two-run-length-encoded-arrays/) | [C++](./C++/product-of-two-run-length-encoded-arrays.cpp) [Python](./Python/product-of-two-run-length-encoded-arrays.py) | _O(m + n)_ | _O(1)_ | Medium | 🔒 | Two Pointers |
+1885 | [Count Pairs in Two Arrays](https://leetcode.com/problems/count-pairs-in-two-arrays/) | [C++](./C++/count-pairs-in-two-arrays.cpp) [Python](./Python/count-pairs-in-two-arrays.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Two Pointers |
 
 <br/>
 <div align="right">
