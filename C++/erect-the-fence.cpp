@@ -34,9 +34,8 @@ public:
             }
             hull.emplace_back(points[i]);
         }
-        hull.pop_back();
-
-        for (int i = 1; i < (hull.size() + 1) / 2; ++i) {
+        const int cnt = hull.size() / 2;
+        for (int i = 0; i < cnt; ++i) {
             if (hull[i] != hull.back()) {
                 break;
             }
