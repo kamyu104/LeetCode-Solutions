@@ -15,7 +15,7 @@ class Solution(object):
             return (B[0]-A[0])*(C[1]-A[1]) - (B[1]-A[1])*(C[0]-A[0])
 
         if len(points) <= 1:
-           return points
+            return points
 
         hull = []
         points.sort()
@@ -23,9 +23,7 @@ class Solution(object):
             while len(hull) >= 2 and ccw(hull[-2], hull[-1], points[i]) < 0:
                 hull.pop()
             hull.append(points[i])
-        hull.pop()
-
-        for i in xrange(1, (len(hull)+1)//2):
+        for i in xrange(len(hull)//2):
             if hull[i] != hull[-1]:
                 break
             hull.pop()
