@@ -315,7 +315,7 @@
 1861 | [Rotating the Box](https://leetcode.com/problems/rotating-the-box/) | [C++](./C++/rotating-the-box.cpp) [Python](./Python/rotating-the-box.py) | _O(m * n)_ | _O(1)_ | Medium ||
 1869 | [Longer Contiguous Segments of Ones than Zeros](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/) | [C++](./C++/longer-contiguous-segments-of-ones-than-zeros.cpp) [Python](./Python/longer-contiguous-segments-of-ones-than-zeros.py) | _O(n)_ | _O(1)_ | Easy ||
 1878 | [Get Biggest Three Rhombus Sums in a Grid](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/) | [C++](./C++/get-biggest-three-rhombus-sums-in-a-grid.cpp) [Python](./Python/get-biggest-three-rhombus-sums-in-a-grid.py) | _O(m * n * min(m, n))_ | _O(m * n)_ | Easy ||
-1886 | [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | [C++](./C++/determine-whether-matrix-can-be-obtained-by-rotation.cpp) [Python](./Python/determine-whether-matrix-can-be-obtained-by-rotation.py) | _O(m * n))_ | _O(1)_ | Easy ||
+1886 | [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | [C++](./C++/determine-whether-matrix-can-be-obtained-by-rotation.cpp) [Python](./Python/determine-whether-matrix-can-be-obtained-by-rotation.py) | _O(m * n)_ | _O(1)_ | Easy ||
 
 <br/>
 <div align="right">
@@ -1248,7 +1248,7 @@
 1818 | [Minimum Absolute Sum Difference](https://leetcode.com/problems/minimum-absolute-sum-difference/) | [C++](./C++/minimum-absolute-sum-difference.cpp) [Python](./Python/minimum-absolute-sum-difference.py) | _O(nlogn)_ | _O(n)_ | Medium | |
 1870 | [Minimum Speed to Arrive on Time](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | [C++](./C++/minimum-speed-to-arrive-on-time.cpp) [Python](./Python/minimum-speed-to-arrive-on-time.py) | _O(nlogr)_ | _O(1)_ | Medium | |
 1889 | [Minimum Space Wasted From Packaging](https://leetcode.com/problems/minimum-space-wasted-from-packaging/) | [C++](./C++/minimum-space-wasted-from-packaging.cpp) [Python](./Python/minimum-space-wasted-from-packaging.py) | _O(mlogm + nlogn + mlogn)_ | _O(1)_ | Hard | |
-1889 | [Cutting Ribbons](https://leetcode.com/problems/cutting-ribbons/) | [C++](./C++/cutting-ribbons.cpp) [Python](./Python/cutting-ribbons.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 |
+1891 | [Cutting Ribbons](https://leetcode.com/problems/cutting-ribbons/) | [C++](./C++/cutting-ribbons.cpp) [Python](./Python/cutting-ribbons.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 |
 
 <br/>
 <div align="right">
