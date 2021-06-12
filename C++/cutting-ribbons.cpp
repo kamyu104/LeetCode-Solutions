@@ -1,4 +1,4 @@
-// Time:  O(nlogr), r is sum(ribbons) / k
+// Time:  O(nlogr), r is sum(ribbons)/k
 // Space: O(1)
 
 class Solution {
