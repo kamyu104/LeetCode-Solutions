@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1885%20%2F%201885-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1891%20%2F%201891-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -315,6 +315,7 @@
 1861 | [Rotating the Box](https://leetcode.com/problems/rotating-the-box/) | [C++](./C++/rotating-the-box.cpp) [Python](./Python/rotating-the-box.py) | _O(m * n)_ | _O(1)_ | Medium ||
 1869 | [Longer Contiguous Segments of Ones than Zeros](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/) | [C++](./C++/longer-contiguous-segments-of-ones-than-zeros.cpp) [Python](./Python/longer-contiguous-segments-of-ones-than-zeros.py) | _O(n)_ | _O(1)_ | Easy ||
 1878 | [Get Biggest Three Rhombus Sums in a Grid](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/) | [C++](./C++/get-biggest-three-rhombus-sums-in-a-grid.cpp) [Python](./Python/get-biggest-three-rhombus-sums-in-a-grid.py) | _O(m * n * min(m, n))_ | _O(m * n)_ | Easy ||
+1886 | [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | [C++](./C++/determine-whether-matrix-can-be-obtained-by-rotation.cpp) [Python](./Python/determine-whether-matrix-can-be-obtained-by-rotation.py) | _O(m * n))_ | _O(1)_ | Easy ||
 
 <br/>
 <div align="right">
@@ -1132,6 +1133,7 @@
 1855 | [Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) | [C++](./C++/maximum-distance-between-a-pair-of-values.cpp) [Python](./Python/maximum-distance-between-a-pair-of-values.py) | _O(n + m)_ | _O(1)_ | Medium | | Two Pointers |
 1868 | [Product of Two Run-Length Encoded Arrays](https://leetcode.com/problems/product-of-two-run-length-encoded-arrays/) | [C++](./C++/product-of-two-run-length-encoded-arrays.cpp) [Python](./Python/product-of-two-run-length-encoded-arrays.py) | _O(m + n)_ | _O(1)_ | Medium | 🔒 | Two Pointers |
 1885 | [Count Pairs in Two Arrays](https://leetcode.com/problems/count-pairs-in-two-arrays/) | [C++](./C++/count-pairs-in-two-arrays.cpp) [Python](./Python/count-pairs-in-two-arrays.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Two Pointers |
+1888 | [Minimum Number of Flips to Make the Binary String Alternatings](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | [C++](./C++/minimum-number-of-flips-to-make-the-binary-string-alternating.cpp) [Python](./Python/minimum-number-of-flips-to-make-the-binary-string-alternating.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window |
 
 <br/>
 <div align="right">
@@ -1245,6 +1247,8 @@
 1802 | [Maximum Value at a Given Index in a Bounded Array](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/) | [C++](./C++/maximum-value-at-a-given-index-in-a-bounded-array.cpp) [Python](./Python/maximum-value-at-a-given-index-in-a-bounded-array.py) | _O(logm)_ | _O(1)_ | Medium | |
 1818 | [Minimum Absolute Sum Difference](https://leetcode.com/problems/minimum-absolute-sum-difference/) | [C++](./C++/minimum-absolute-sum-difference.cpp) [Python](./Python/minimum-absolute-sum-difference.py) | _O(nlogn)_ | _O(n)_ | Medium | |
 1870 | [Minimum Speed to Arrive on Time](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | [C++](./C++/minimum-speed-to-arrive-on-time.cpp) [Python](./Python/minimum-speed-to-arrive-on-time.py) | _O(nlogr)_ | _O(1)_ | Medium | |
+1889 | [Minimum Space Wasted From Packaging](https://leetcode.com/problems/minimum-space-wasted-from-packaging/) | [C++](./C++/minimum-space-wasted-from-packaging.cpp) [Python](./Python/minimum-space-wasted-from-packaging.py) | _O(mlogm + nlogn + mlogn)_ | _O(1)_ | Hard | |
+1889 | [Cutting Ribbons](https://leetcode.com/problems/cutting-ribbons/) | [C++](./C++/cutting-ribbons.cpp) [Python](./Python/cutting-ribbons.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 |
 
 <br/>
 <div align="right">
@@ -1822,6 +1826,7 @@
 1874 | [Minimize Product Sum of Two Arrays](https://leetcode.com/problems/minimize-product-sum-of-two-arrays/) | [C++](./C++/minimize-product-sum-of-two-arrays.cpp) [Python](./Python/minimize-product-sum-of-two-arrays.py) | _O(nlogn)_ | _O(1)_ | Medium | [GCJ2008 - Round 1A](https://codingcompetitions.withgoogle.com/codejam/round/00000000004330f6/0000000000432f33), 🔒|  |
 1877 | [Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | [C++](./C++/minimize-maximum-pair-sum-in-array.cpp) [Python](./Python/minimize-maximum-pair-sum-in-array.py) | _O(nlogn)_ | _O(1)_ | Medium | |  |
 1881 | [Maximum Value after Insertion](https://leetcode.com/problems/maximum-value-after-insertion/) | [C++](./C++/maximum-value-after-insertion.cpp) [Python](./Python/maximum-value-after-insertion.py) | _O(n)_ | _O(1)_ | Medium | |  |
+1887 | [Reduction Operations to Make the Array Elements Equal](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/) | [C++](./C++/reduction-operations-to-make-the-array-elements-equal.cpp) [Python](./Python/reduction-operations-to-make-the-array-elements-equal.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort |
 
 <br/>
 <div align="right">
@@ -2124,7 +2129,7 @@
 1867| [Orders With Maximum Quantity Above Average](https://leetcode.com/problems/orders-with-maximum-quantity-above-average/) | [MySQL](./MySQL/orders-with-maximum-quantity-above-average.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1873| [Calculate Special Bonus](https://leetcode.com/problems/calculate-special-bonus/) | [MySQL](./MySQL/calculate-special-bonus.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1875| [Group Employees of the Same Salary](https://leetcode.com/problems/group-employees-of-the-same-salary/) | [MySQL](./MySQL/group-employees-of-the-same-salary.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
-
+1890| [The Latest Login in 2020](https://leetcode.com/problems/the-latest-login-in-2020/) | [MySQL](./MySQL/the-latest-login-in-2020.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
