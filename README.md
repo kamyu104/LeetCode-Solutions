@@ -68,7 +68,7 @@
     * [Stack Exchange](https://math.stackexchange.com)
 * Visualization
     * [VisuAlgo](https://visualgo.net/en)
-    * [Data Structure Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+    * [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
     * [Algorithm Visualizer](https://algorithm-visualizer.org/)
  
 ## Bit Manipulation
