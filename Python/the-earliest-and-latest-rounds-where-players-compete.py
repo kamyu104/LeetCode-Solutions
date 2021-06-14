@@ -16,7 +16,7 @@ class Solution(object):
             if (t, l, r) not in lookup:
                 if l == r:
                     return (1, 1)
-                if l > r:  # memoization(t, l, r) is the same as memoization(t, r, l), just compute one of them
+                if l > r:  # memoization(t, l, r, lookup) is the same as memoization(t, r, l, lookup), just compute one of them
                     l, r, = r, l
                 result = [float("inf"), 0]
                 for i in xrange(l+1):
