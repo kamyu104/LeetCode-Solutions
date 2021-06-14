@@ -10,7 +10,7 @@ class Solution(object):
         def get_sum(prefix, a, b):
             return prefix[b+1]-prefix[a]
 
-        def valid(grid, prefix_row, prefix_col, l, i, j):
+        def check(grid, prefix_row, prefix_col, l, i, j):
             diag, anti_diag = 0, 0
             for d in xrange(l):
                 diag += grid[i+d][j+d]
@@ -34,6 +34,6 @@ class Solution(object):
         for l in reversed(xrange(1, min(len(grid), len(grid[0]))+1)):
             for i in xrange(len(grid)-(l-1)):
                 for j in xrange(len(grid[0])-(l-1)):
-                    if valid(grid, prefix_row, prefix_col, l, i, j):
+                    if check(grid, prefix_row, prefix_col, l, i, j):
                         return l
         return 1
