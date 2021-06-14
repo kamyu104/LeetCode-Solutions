@@ -37,13 +37,13 @@ private:
             }
             vector<int> result = {numeric_limits<int>::max(), 0};
             for (int i = 0; i <= l; ++i) {
-                const auto l_lose_cnt = l - i;
                 const auto nt = (t + 1) / 2;
-                int min_j = max(l_lose_cnt, r - ((t - nt) - l_lose_cnt));  // j >= l_lose_cnt and j >= r-((t-nt)-l_lose_cnt)
-                int max_j = min(r - (i + 1), (nt - (i + 1)) - 1);  // j <= r-(i+1) and j <= (nt-(i+1))-1
+                const auto pair_cnt = t - nt;  // t/2
+                const auto l_lose_cnt = l - i;
+                const auto l_win_cnt = i + 1;
+                int min_j = max(l_lose_cnt, r - (pair_cnt - l_lose_cnt));  // j >= l_lose_cnt and j >= r-(pair_cnt-l_lose_cnt)
+                int max_j = min(r - l_win_cnt, (nt - l_win_cnt) - 1);  // j <= r-l_win_cnt and j <= (nt-l_win_cnt)-1
                 for (int j = min_j; j <= max_j; ++j) {
-                    assert(l_lose_cnt <= j && j <= r - (i + 1) &&
-                           r - ((t - nt) - l_lose_cnt) <= j && j <= (nt - (i + 1)) - 1);
                     const auto& tmp = memoization(nt, i, j, lookup);
                     result = {min(result[0], tmp[0] + 1), max(result[1], tmp[1] + 1)};
                 }
