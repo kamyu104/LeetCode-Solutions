@@ -26,8 +26,8 @@ public:
 private:
     vector<int> memoization(int t, int l, int r, Lookup *lookup) {
         // t: total number of players,
-        // l: number of players left to one of top 2 player,
-        // r: number of players right to the other of top2 player
+        // l: number of players left to the nearest top2 player,
+        // r: number of players right to the nearest top2 player
         if (!lookup->count(tuple(t, l, r))) {
             if (l == r) {
                 return {1, 1};
