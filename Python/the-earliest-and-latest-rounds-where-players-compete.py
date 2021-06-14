@@ -11,8 +11,8 @@ class Solution(object):
         """
         def memoization(t, l, r, lookup):
             # t: total number of players,
-            # l: number of players left to first player,
-            # r: number of players right to second player
+            # l: number of players left to one of top2 player,
+            # r: number of players right to the other of top2 player
             if (t, l, r) not in lookup:
                 if l == r:
                     return (1, 1)
