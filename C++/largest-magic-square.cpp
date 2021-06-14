@@ -15,7 +15,7 @@ public:
         for (int l = min(size(grid), size(grid[0])); l >= 1; --l) {
             for (int i = 0; i + l - 1 < size(grid); ++i) {
                 for (int j = 0; j + l - 1 < size(grid[0]); ++j) {
-                    if (valid(grid, prefix_row, prefix_col, l, i, j)) {
+                    if (check(grid, prefix_row, prefix_col, l, i, j)) {
                         return l;
                     }
                 }
@@ -25,7 +25,7 @@ public:
     }
 
 private:
-    bool valid(const vector<vector<int>>& grid,
+    bool check(const vector<vector<int>>& grid,
                const vector<vector<int>>& prefix_row,
                const vector<vector<int>>& prefix_col,
                int l, int i, int j) {
