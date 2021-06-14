@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1891%20%2F%201891-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1900%20%2F%201900-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -320,6 +320,7 @@
 1869 | [Longer Contiguous Segments of Ones than Zeros](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/) | [C++](./C++/longer-contiguous-segments-of-ones-than-zeros.cpp) [Python](./Python/longer-contiguous-segments-of-ones-than-zeros.py) | _O(n)_ | _O(1)_ | Easy ||
 1878 | [Get Biggest Three Rhombus Sums in a Grid](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/) | [C++](./C++/get-biggest-three-rhombus-sums-in-a-grid.cpp) [Python](./Python/get-biggest-three-rhombus-sums-in-a-grid.py) | _O(m * n * min(m, n))_ | _O(m * n)_ | Easy ||
 1886 | [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | [C++](./C++/determine-whether-matrix-can-be-obtained-by-rotation.cpp) [Python](./Python/determine-whether-matrix-can-be-obtained-by-rotation.py) | _O(m * n)_ | _O(1)_ | Easy ||
+1895 | [Largest Magic Square](https://leetcode.com/problems/largest-magic-square/) | [C++](./C++/largest-magic-square.cpp) [Python](./Python/largest-magic-square.py) | _O(max(m, n) * min(m, n)^3)_ | _O(m * n)_ | Medium ||
 
 <br/>
 <div align="right">
@@ -1253,6 +1254,7 @@
 1870 | [Minimum Speed to Arrive on Time](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | [C++](./C++/minimum-speed-to-arrive-on-time.cpp) [Python](./Python/minimum-speed-to-arrive-on-time.py) | _O(nlogr)_ | _O(1)_ | Medium | |
 1889 | [Minimum Space Wasted From Packaging](https://leetcode.com/problems/minimum-space-wasted-from-packaging/) | [C++](./C++/minimum-space-wasted-from-packaging.cpp) [Python](./Python/minimum-space-wasted-from-packaging.py) | _O(mlogm + nlogn + mlogn)_ | _O(1)_ | Hard | |
 1891 | [Cutting Ribbons](https://leetcode.com/problems/cutting-ribbons/) | [C++](./C++/cutting-ribbons.cpp) [Python](./Python/cutting-ribbons.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 |
+1898 | [Maximum Number of Removable Characters](https://leetcode.com/problems/maximum-number-of-removable-characters/) | [C++](./C++/maximum-number-of-removable-characters.cpp) [Python](./Python/maximum-number-of-removable-characters.py) | _O(rlogn)_ | _O(r)_ | Medium | |
 
 <br/>
 <div align="right">
@@ -1685,6 +1687,8 @@
 1871| [Jump Game VII](https://leetcode.com/problems/jump-game-vii/)|[C++](./C++/jump-game-vii.cpp) [Python](./Python/jump-game-vii.py)| _O(n)_     | _O(n)_         | Medium         | | Line Sweep, DP, BFS
 1872| [Stone Game VIII](https://leetcode.com/problems/stone-game-viii/)|[C++](./C++/stone-game-viii.cpp) [Python](./Python/stone-game-viii.py)| _O(n)_     | _O(1)_         | Hard         | |
 1883| [Minimum Skips to Arrive at Meeting On Time](https://leetcode.com/problems/minimum-skips-to-arrive-at-meeting-on-time/)|[C++](./C++/minimum-skips-to-arrive-at-meeting-on-time.cpp) [Python](./Python/minimum-skips-to-arrive-at-meeting-on-time.py)| _O(n^2)_     | _O(n)_         | Hard         | |
+1896| [Minimum Cost to Change the Final Value of Expression](https://leetcode.com/problems/minimum-cost-to-change-the-final-value-of-expression/)|[C++](./C++/minimum-cost-to-change-the-final-value-of-expression.cpp) [Python](./Python/minimum-cost-to-change-the-final-value-of-expression.py)| _O(n)_     | _O(n)_         | Hard         | | Stack, DP |
+1900| [The Earliest and Latest Rounds Where Players Compete](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/)|[C++](./C++/the-earliest-and-latest-rounds-where-players-compete.cpp) [Python](./Python/the-earliest-and-latest-rounds-where-players-compete.py)| _O(n^4)_     | _O(n^2)_         | Hard         | | |
 
 <br/>
 <div align="right">
@@ -1831,6 +1835,10 @@
 1877 | [Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | [C++](./C++/minimize-maximum-pair-sum-in-array.cpp) [Python](./Python/minimize-maximum-pair-sum-in-array.py) | _O(nlogn)_ | _O(1)_ | Medium | |  |
 1881 | [Maximum Value after Insertion](https://leetcode.com/problems/maximum-value-after-insertion/) | [C++](./C++/maximum-value-after-insertion.cpp) [Python](./Python/maximum-value-after-insertion.py) | _O(n)_ | _O(1)_ | Medium | |  |
 1887 | [Reduction Operations to Make the Array Elements Equal](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/) | [C++](./C++/reduction-operations-to-make-the-array-elements-equal.cpp) [Python](./Python/reduction-operations-to-make-the-array-elements-equal.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort |
+1893 | [Check if All the Integers in a Range Are Covered](https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/) | [C++](./C++/check-if-all-the-integers-in-a-range-are-covered.cpp) [Python](./Python/check-if-all-the-integers-in-a-range-are-covered.py) | _O(n + r)_ | _O(r)_ | Easy | | Line Sweep, Sort |
+1894 | [Find the Student that Will Replace the Chalk](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/) | [C++](./C++/find-the-student-that-will-replace-the-chalk.cpp) [Python](./Python/find-the-student-that-will-replace-the-chalk.py) | _O(n)_ | _O(1)_ | Medium | | |
+1897 | [Redistribute Characters to Make All Strings Equal](https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/) | [C++](./C++/redistribute-characters-to-make-all-strings-equal.cpp) [Python](./Python/redistribute-characters-to-make-all-strings-equal.py) | _O(n)_ | _O(1)_ | Easy | | |
+1899 | [Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | [C++](./C++/merge-triplets-to-form-target-triplet.cpp) [Python](./Python/merge-triplets-to-form-target-triplet.py) | _O(n)_ | _O(1)_ | Medium | | |
 
 <br/>
 <div align="right">
@@ -2134,6 +2142,7 @@
 1873| [Calculate Special Bonus](https://leetcode.com/problems/calculate-special-bonus/) | [MySQL](./MySQL/calculate-special-bonus.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1875| [Group Employees of the Same Salary](https://leetcode.com/problems/group-employees-of-the-same-salary/) | [MySQL](./MySQL/group-employees-of-the-same-salary.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 1890| [The Latest Login in 2020](https://leetcode.com/problems/the-latest-login-in-2020/) | [MySQL](./MySQL/the-latest-login-in-2020.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+1892| [Page Recommendations II](https://leetcode.com/problems/page-recommendations-ii/) | [MySQL](./MySQL/page-recommendations-ii.sql) | _O(n * m)_ | _O(n * m)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
