@@ -1,5 +1,5 @@
 // Time:  O(n^2) states * O(n^2) per states = O(n^4)
-// Space: O(n^2 + (n/2)^2 + (n/4)^2 + ... ) states = O(n^2)
+// Space: O(n^2 + (n/2)^2 + (n/4)^2 + ... ) = O(n^2)
 
 class Solution {
 private:
@@ -43,7 +43,7 @@ private:
                 int max_j = min((r - i) - 1, ((nt - 1) - i) - 1);  // j+1 <= r-i and j+1 <= (nt-1)-i
                 for (int j = min_j; j <= max_j; ++j) {
                     assert(l_lose_cnt <= j && j <= (r - i) - 1 &&
-                           r- ((t - nt) - l_lose_cnt) <= j && j <= ((nt-1) - i) - 1);
+                           r- ((t - nt) - l_lose_cnt) <= j && j <= ((nt - 1) - i) - 1);
                     const auto& tmp = memoization(nt, i, j, lookup);
                     result = {min(result[0], tmp[0] + 1), max(result[1], tmp[1] + 1)};
                 }
