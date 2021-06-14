@@ -43,7 +43,7 @@ private:
                 int max_j = min(r - (i + 1), (nt - (i + 1)) - 1);  // j <= r-(i+1) and j <= (nt-(i+1))-1
                 for (int j = min_j; j <= max_j; ++j) {
                     assert(l_lose_cnt <= j && j <= r - (i + 1) &&
-                           r- ((t - nt) - l_lose_cnt) <= j && j <= (nt - (i + 1)) - 1);
+                           r - ((t - nt) - l_lose_cnt) <= j && j <= (nt - (i + 1)) - 1);
                     const auto& tmp = memoization(nt, i, j, lookup);
                     result = {min(result[0], tmp[0] + 1), max(result[1], tmp[1] + 1)};
                 }
