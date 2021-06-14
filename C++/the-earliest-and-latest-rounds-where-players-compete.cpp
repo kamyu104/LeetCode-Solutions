@@ -32,7 +32,7 @@ private:
             if (l == r) {
                 return {1, 1};
             }
-            if (l > r) {
+            if (l > r) {  // memoization(t, l, r, lookup) is the same as memoization(t, r, l, lookup), just compute one of them
                 swap(l, r);
             }
             vector<int> result = {numeric_limits<int>::max(), 0};
