@@ -1,4 +1,4 @@
-// Time:  O(n^2) states * O(n^2) per states = O(n^4)
+// Time:  O(n^2) states * O(n^2) per state = O(n^4)
 // Space: O(n^2 + (n/2)^2 + (n/4)^2 + ... ) = O(n^2)
 
 class Solution {
