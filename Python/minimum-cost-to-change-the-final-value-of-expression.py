@@ -8,14 +8,11 @@ class Solution(object):
         :rtype: int
         """
         def compute(operands, operators):
-            right, left, op = operands.pop(), operands.pop(), operators.pop()
-            if op == '&':
-                operands.append([min(left[0], right[0]),
-                                 min(left[1]+right[1], min(left[1], right[1])+1)])
-            else:
-                operands.append([min(left[0]+right[0], min(left[0], right[0])+1),
-                                 min(left[1], right[1])])
+            right, left = operands.pop(), operands.pop()
+            operands.append(ops[operators.pop()](left, right))
 
+        ops = {'&':lambda x, y: [min(x[0], y[0]), min(x[1]+y[1], min(x[1], y[1])+1)],
+               '|':lambda x, y: [min(x[0]+y[0], min(x[0], y[0])+1), min(x[1], y[1])]}
         precedence = {'&':0, '|':0}
         operands, operators = [], []
         for c in expression:
@@ -36,7 +33,7 @@ class Solution(object):
             compute(operands, operators)
         return max(operands[-1])
 
- 
+
 # Time:  O(n)
 # Space: O(n)
 class Solution2(object):
