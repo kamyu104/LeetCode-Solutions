@@ -7,6 +7,44 @@ class Solution(object):
         :type expression: str
         :rtype: int
         """
+        def compute(operands, operators):
+            right, left, op = operands.pop(), operands.pop(), operators.pop()
+            if op == '&':
+                operands.append([min(left[0], right[0]),
+                                 min(left[1]+right[1], min(left[1], right[1])+1)])
+            else:
+                operands.append([min(left[0]+right[0], min(left[0], right[0])+1),
+                                 min(left[1], right[1])])
+
+        precedence = {'&':0, '|':0}
+        operands, operators = [], []
+        for c in expression:
+            if c.isdigit():
+                operands.append([int(c != '0'), int(c != '1')])
+            elif c == '(':
+                operators.append(c)
+            elif c == ')':
+                while operators[-1] != '(':
+                    compute(operands, operators)
+                operators.pop()
+            elif c in precedence:
+                while operators and operators[-1] in precedence and \
+                      precedence[operators[-1]] >= precedence[c]:
+                    compute(operands, operators)
+                operators.append(c)
+        while operators:
+            compute(operands, operators)
+        return max(operands[-1])
+
+ 
+# Time:  O(n)
+# Space: O(n)
+class Solution2(object):
+    def minOperationsToFlip(self, expression):
+        """
+        :type expression: str
+        :rtype: int
+        """
         stk = [[None]*3]
         for c in expression:                                
             if c == '(':                                            
