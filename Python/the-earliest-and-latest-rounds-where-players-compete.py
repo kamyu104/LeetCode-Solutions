@@ -27,8 +27,8 @@ class Solution(object):
                         assert(l_lose_cnt <= j <= r-(i+1) and
                                r-((t-nt)-l_lose_cnt) <= j <= (nt-(i+1))-1)
                         tmp = memoization(nt, i, j, lookup)
-                        result = min(result[0], tmp[0]), max(result[1], tmp[1])
-                lookup[t, l, r] = (result[0]+1, result[1]+1)
+                        result = min(result[0], tmp[0]+1), max(result[1], tmp[1]+1)
+                lookup[t, l, r] = result
             return lookup[t, l, r]
         
         return memoization(n, firstPlayer-1, n-secondPlayer, {})
