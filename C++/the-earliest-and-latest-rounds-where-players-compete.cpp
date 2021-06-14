@@ -38,7 +38,7 @@ private:
             vector<int> result = {numeric_limits<int>::max(), 0};
             for (int i = 0; i <= l; ++i) {
                 const auto nt = (t + 1) / 2;
-                const auto pair_cnt = t - nt;  // t/2
+                const auto pair_cnt = t / 2;
                 const auto l_lose_cnt = l - i;
                 const auto l_win_cnt = i + 1;
                 int min_j = max(l_lose_cnt, r - (pair_cnt - l_lose_cnt));  // j >= l_lose_cnt and j >= r-(pair_cnt-l_lose_cnt)
