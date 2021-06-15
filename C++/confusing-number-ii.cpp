@@ -59,7 +59,7 @@ private:
         const auto& choices = (s.length() % 2) ? centers : lookup;
         int p = pow(lookup.size(), int(half_s.length()) - 2) * choices.size();
         for (int i = 0; i < half_s.length(); ++i, p /= lookup.size()) {
-            if (i + 1 == half_s.length()) {
+            if (i == half_s.length() - 1) {
                 for (const auto& kvp : choices) {
                     if (kvp.first == '0' && i == 0) {
                         continue;
