@@ -56,7 +56,6 @@ class Solution(object):
                     total += int("".join(tmp)) <= n
                     break
                 smaller = sum(int(c < half_s[i]) for c in lookup.iterkeys() if i != 0 or c != '0')
-
                 total += smaller * p
                 if half_s[i] not in lookup:
                     break
