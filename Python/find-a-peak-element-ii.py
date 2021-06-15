@@ -20,6 +20,6 @@ class Solution(object):
                 right = mid-1
             else:
                 left = mid+1
-        max_left = max(get_vec(mat, left))
-        result = [left, next(i for i, x in enumerate(get_vec(mat, left)) if x == max_left)]
+        mav_val = max(get_vec(mat, left))
+        result = [left, next(i for i, x in enumerate(get_vec(mat, left)) if x == mav_val)]
         return result if len(mat) > len(mat[0]) else result[::-1]
