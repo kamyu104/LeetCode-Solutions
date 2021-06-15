@@ -35,7 +35,10 @@ private:
         int total = centers.size();
         for (int i = 1; i < s.length(); i += 2) {  // count unconfused numbers for each odd length less than s
             if (i == 1) {
-                valid += total;
+                valid += accumulate(cbegin(centers), cend(centers), 0,
+                                    [](const auto& total, const auto& kvp) {
+                                        return total + (kvp.first != '0');
+                                    });
             } else {
                 valid += total * (lookup.size() - 1);
                 total *= lookup.size();
