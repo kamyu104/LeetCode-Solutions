@@ -15,7 +15,7 @@ private:
         for (int i = 0; i <= s.length(); ++i, p /= lookup.size()) {
             if (i == s.length()) {
                 ++total;
-                continue;
+                break;
             }
             int smaller = 0;
             for (const auto& kvp : lookup) {
@@ -77,7 +77,7 @@ private:
                 if (stoull(tmp) <= n) {
                     ++total;
                 }
-                continue;
+                break;
             }
             int smaller = 0;
             for (const auto& kvp : lookup) {
