@@ -19,9 +19,6 @@ private:
             }
             int smaller = 0;
             for (const auto& kvp : lookup) {
-                if (kvp.first == '0' && s.length() == 1) {
-                    continue;
-                }
                 smaller += int(kvp.first < s[i]);
             }
             total += smaller * p;
@@ -29,7 +26,7 @@ private:
                 break;
             }
         }
-        return total;
+        return total - 1;  // exclude 0
     }
     
     int validCountInLessLength(int n) {  // count unconfused numbers in the pattern of [01689]{1,len(n)-1} in the range of [1, n]
