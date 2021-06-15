@@ -31,7 +31,7 @@ class Solution(object):
             total = len(centers)
             for i in xrange(1, len(s), 2):  # count unconfused numbers for each odd length less than s
                 if i == 1:
-                    valid += len(lookup)-len(centers)
+                    valid += len({k for k in centers.iterkeys() if k != '0'})
                 else:
                     valid += total * (len(lookup)-1)
                     total *= len(lookup)
