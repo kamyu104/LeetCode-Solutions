@@ -22,4 +22,3 @@ class Solution(object):
                 left = mid+1
         max_left = max(get_vec(mat, left))
         return [left, next(i for i, x in enumerate(get_vec(mat, left)) if x == max_left)][::1 if len(mat) > len(mat[0]) else -1]
-    
