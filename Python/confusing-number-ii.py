@@ -1,3 +1,6 @@
+# Time:  O(logn)
+# Space: O(logn)
+
 class Solution(object):
     def confusingNumberII(self, n):
         """
@@ -15,12 +18,12 @@ class Solution(object):
                 if i == len(s):
                     total += 1
                     break
-                smaller = sum(int(c < s[i]) for c in lookup.iterkeys() if len(s) != 1 or c != '0')
+                smaller = sum(int(c < s[i]) for c in lookup.iterkeys())
                 total += smaller * p
                 if s[i] not in lookup:
                     break
                 p //= len(lookup)
-            return total
+            return total-1  # exclude 0
 
         def validCountInLessLength(n):  # count unconfused numbers in the pattern of [01689]{1,len(n)-1} in the range of [1, n]
             s = str(n)
@@ -28,7 +31,7 @@ class Solution(object):
             total = len(centers)
             for i in xrange(1, len(s), 2):  # count unconfused numbers for each odd length less than s
                 if i == 1:
-                    valid += total
+                    valid += len(lookup)-len(centers)
                 else:
                     valid += total * (len(lookup)-1)
                     total *= len(lookup)
@@ -59,5 +62,5 @@ class Solution(object):
                     break
                 p //= len(lookup)
             return total
-        
+
         return totalCount(n) - validCountInLessLength(n) - validCountInFullLength(n)
