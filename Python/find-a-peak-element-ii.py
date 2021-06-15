@@ -8,12 +8,12 @@ class Solution(object):
         :rtype: List[int]
         """
         def get_vec(mat, i):
-            return mat[i] if len(mat) < len(mat[0]) else (mat[j][i] for j in xrange(len(mat)))
+            return mat[i] if len(mat) > len(mat[0]) else (mat[j][i] for j in xrange(len(mat)))
 
         def check(mat, x):
             return max(get_vec(mat, x)) > max(get_vec(mat, x+1))
 
-        left, right = 0, (min(len(mat), len(mat[0]))-1)-1
+        left, right = 0, (max(len(mat), len(mat[0]))-1)-1
         while left <= right:
             mid = left + (right-left)//2
             if check(mat, mid):
@@ -21,4 +21,5 @@ class Solution(object):
             else:
                 left = mid+1
         max_left = max(get_vec(mat, left))
-        return [left, next(i for i, x in enumerate(get_vec(mat, left)) if x == max_left)][::1 if len(mat) < len(mat[0]) else -1]
+        return [left, next(i for i, x in enumerate(get_vec(mat, left)) if x == max_left)][::1 if len(mat) > len(mat[0]) else -1]
+    
