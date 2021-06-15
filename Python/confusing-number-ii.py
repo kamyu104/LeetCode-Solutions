@@ -45,8 +45,8 @@ class Solution(object):
             s = str(n)
             half_s = s[:(len(s)+1)//2]
             total = 0
-            p = len(lookup)**(len(half_s)-2) * len(centers) if (len(s) % 2) else len(lookup)**(len(half_s)-1)
             choices = centers if (len(s) % 2) else lookup
+            p = len(lookup)**(len(half_s)-2) * len(choices)
             for i in xrange(len(half_s)):
                 if i+1 == len(half_s):
                     total += sum(int(c < half_s[i]) for c in choices.iterkeys() if i != 0 or c != '0')
