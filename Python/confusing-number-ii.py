@@ -9,7 +9,6 @@ class Solution(object):
         """
         lookup = {"0":"0", "1":"1", "6":"9", "8":"8", "9":"6"}
         centers = {"0":"0", "1":"1", "8":"8"}
-
         def totalCount(n):  # count all numbers in the pattern of [01689]{1,len(n)} in the range of [1, n]
             s = str(n)
             total = 0 
