@@ -48,7 +48,7 @@ class Solution(object):
             choices = centers if (len(s) % 2) else lookup
             p = len(lookup)**(len(half_s)-2) * len(choices)
             for i in xrange(len(half_s)):
-                if i+1 == len(half_s):
+                if i == len(half_s)-1:
                     total += sum(int(c < half_s[i]) for c in choices.iterkeys() if i != 0 or c != '0')
                     if half_s[i] not in choices:
                         break
