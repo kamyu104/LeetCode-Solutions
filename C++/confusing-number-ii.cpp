@@ -3,24 +3,25 @@
 
 class Solution {
 public:
-    int confusingNumberII(int N) {
-        return totalCount(N) - validCountInLessLength(N) - validCountInFullLength(N);
+    int confusingNumberII(int n) {
+        return totalCount(n) - validCountInLessLength(n) - validCountInFullLength(n);
     }
     
 private:
-    int totalCount(int N) {
-        const auto& s = to_string(N);
+    int totalCount(int n) {  // count all numbers in the pattern of [01689]{1,len(n)} in the range of [1, n]
+        const auto& s = to_string(n);
         int total = 0;
         int p = pow(lookup.size(), s.length() - 1);
-        for (int i = 0; i < s.length(); ++i, p /= lookup.size()) {
-            if (i + 1 == s.length()) {
-                for (const auto& kvp : lookup) {
-                    total += int(kvp.first <= s[i]);
-                }
+        for (int i = 0; i <= s.length(); ++i, p /= lookup.size()) {
+            if (i == s.length()) {
+                ++total;
                 continue;
             }
             int smaller = 0;
             for (const auto& kvp : lookup) {
+                if (kvp.first == '0' && s.length() == 1) {
+                    continue;
+                }
                 smaller += int(kvp.first < s[i]);
             }
             total += smaller * p;
@@ -31,11 +32,11 @@ private:
         return total;
     }
     
-    int validCountInLessLength(int N) {
-        const auto& s = to_string(N);
+    int validCountInLessLength(int n) {  // count unconfused numbers in the pattern of [01689]{1,len(n)-1} in the range of [1, n]
+        const auto& s = to_string(n);
         int valid = 0;
         int total = centers.size();
-        for (int i = 1; i < s.length(); i += 2) {
+        for (int i = 1; i < s.length(); i += 2) {  // count unconfused numbers for each odd length less than s
             if (i == 1) {
                 valid += total;
             } else {
@@ -44,19 +45,19 @@ private:
             }
         }
         total = 1;
-        for (int i = 2; i < s.length(); i += 2) {
+        for (int i = 2; i < s.length(); i += 2) {  // count unconfused numbers for each even length less than s
             valid += total * (lookup.size() - 1);
             total *= lookup.size();
         }
         return valid;
     }
     
-    int validCountInFullLength(int N) {
-        const auto& s = to_string(N);
+    int validCountInFullLength(int n) {  // count unconfused numbers in the pattern of [01689]{len(n)} in the range of [1, n]
+        const auto& s = to_string(n);
         const auto& half_s = s.substr(0, (s.length() + 1) / 2);
         int total = 0;
-        int p = (s.length() % 2) ? pow(lookup.size(), half_s.length() - 2) * centers.size() : 
-                                   pow(lookup.size(), half_s.length() - 1);
+        int p = (s.length() % 2) ? pow(lookup.size(), int(half_s.length()) - 2) * centers.size() : 
+                                   pow(lookup.size(), int(half_s.length()) - 1);
         const auto& choices = (s.length() % 2) ? centers : lookup;
         for (int i = 0; i < half_s.length(); ++i, p /= lookup.size()) {
             if (i + 1 == half_s.length()) {
@@ -73,7 +74,7 @@ private:
                 for (int i = half_s.length() - 1 - (s.length() % 2); i >= 0; --i) {
                     tmp.push_back(lookup.at(half_s[i]));
                 }
-                if (stoull(tmp) <= N) {
+                if (stoull(tmp) <= n) {
                     ++total;
                 }
                 continue;
