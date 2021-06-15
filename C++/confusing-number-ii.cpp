@@ -56,9 +56,8 @@ private:
         const auto& s = to_string(n);
         const auto& half_s = s.substr(0, (s.length() + 1) / 2);
         int total = 0;
-        int p = (s.length() % 2) ? pow(lookup.size(), int(half_s.length()) - 2) * centers.size() : 
-                                   pow(lookup.size(), int(half_s.length()) - 1);
         const auto& choices = (s.length() % 2) ? centers : lookup;
+        int p = pow(lookup.size(), int(half_s.length()) - 2) * choices.size();
         for (int i = 0; i < half_s.length(); ++i, p /= lookup.size()) {
             if (i + 1 == half_s.length()) {
                 for (const auto& kvp : choices) {
