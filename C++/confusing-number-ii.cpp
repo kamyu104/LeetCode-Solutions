@@ -29,11 +29,11 @@ private:
         return total - 1;  // exclude 0
     }
     
-    int validCountInLessLength(int n) {  // count unconfused numbers in the pattern of [01689]{1,len(n)-1} in the range of [1, n]
+    int validCountInLessLength(int n) {  // count unconfusing numbers in the pattern of [01689]{1,len(n)-1} in the range of [1, n]
         const auto& s = to_string(n);
         int valid = 0;
         int total = centers.size();
-        for (int i = 1; i < s.length(); i += 2) {  // count unconfused numbers for each odd length less than s
+        for (int i = 1; i < s.length(); i += 2) {  // count unconfusing numbers for each odd length less than s
             if (i == 1) {
                 valid += accumulate(cbegin(centers), cend(centers), 0,
                                     [](const auto& total, const auto& kvp) {
@@ -45,14 +45,14 @@ private:
             }
         }
         total = 1;
-        for (int i = 2; i < s.length(); i += 2) {  // count unconfused numbers for each even length less than s
+        for (int i = 2; i < s.length(); i += 2) {  // count unconfusing numbers for each even length less than s
             valid += total * (lookup.size() - 1);
             total *= lookup.size();
         }
         return valid;
     }
     
-    int validCountInFullLength(int n) {  // count unconfused numbers in the pattern of [01689]{len(n)} in the range of [1, n]
+    int validCountInFullLength(int n) {  // count unconfusing numbers in the pattern of [01689]{len(n)} in the range of [1, n]
         const auto& s = to_string(n);
         const auto& half_s = s.substr(0, (s.length() + 1) / 2);
         int total = 0;
