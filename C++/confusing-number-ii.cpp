@@ -73,7 +73,7 @@ private:
                 for (int i = half_s.length() - 1 - (s.length() % 2); i >= 0; --i) {
                     tmp.push_back(lookup.at(half_s[i]));
                 }
-                if (stoull(tmp) <= n) {
+                if (stoull(tmp) <= n && n != 0) {
                     ++total;
                 }
                 break;
