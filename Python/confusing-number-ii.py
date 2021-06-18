@@ -24,23 +24,23 @@ class Solution(object):
                 p //= len(lookup)
             return total-1  # exclude 0
 
-        def validCountInLessLength(n):  # count unconfused numbers in the pattern of [01689]{1,len(n)-1} in the range of [1, n]
+        def validCountInLessLength(n):  # count unconfusing numbers in the pattern of [01689]{1,len(n)-1} in the range of [1, n]
             s = str(n)
             valid = 0
             total = len(centers)
-            for i in xrange(1, len(s), 2):  # count unconfused numbers for each odd length less than s
+            for i in xrange(1, len(s), 2):  # count unconfusing numbers for each odd length less than s
                 if i == 1:
                     valid += len({k for k in centers.iterkeys() if k != '0'})
                 else:
                     valid += total * (len(lookup)-1)
                     total *= len(lookup)
             total = 1
-            for i in xrange(2, len(s), 2):  # count unconfused numbers for each even length less than s
+            for i in xrange(2, len(s), 2):  # count unconfusing numbers for each even length less than s
                 valid += total * (len(lookup)-1)
                 total *= len(lookup)
             return valid
 
-        def validCountInFullLength(n):  # count unconfused numbers in the pattern of [01689]{len(n)} in the range of [1, n]
+        def validCountInFullLength(n):  # count unconfusing numbers in the pattern of [01689]{len(n)} in the range of [1, n]
             s = str(n)
             half_s = s[:(len(s)+1)//2]
             total = 0
