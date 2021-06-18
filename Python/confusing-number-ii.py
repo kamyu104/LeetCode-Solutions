@@ -52,7 +52,7 @@ class Solution(object):
                     if half_s[i] not in choices:
                         break
                     tmp = list(half_s)+[lookup[half_s[i]] for i in reversed(xrange(len(half_s)-(len(s) % 2)))]
-                    total += int("".join(tmp)) <= n
+                    total += 0 < int("".join(tmp)) <= n
                     break
                 smaller = sum(int(c < half_s[i]) for c in lookup.iterkeys() if i != 0 or c != '0')
                 total += smaller * p
