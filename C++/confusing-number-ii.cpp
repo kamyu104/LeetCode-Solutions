@@ -104,10 +104,14 @@ private:
 class Solution2 {
 public:
     int confusingNumberII(int n) {
-        return totalCount(n) - validCountInLessLength(n) - validCountInFullLength(n);
+        return f(n) - f(0);
     }
     
 private:
+    int f(int n) {
+        return totalCount(n) - validCountInLessLength(n) - validCountInFullLength(n);
+    }
+
     int totalCount(int n) {  // count all numbers in the pattern of [01689]{1,len(n)} in the range of [0, n]
         const auto& s = to_string(n);
         int total = 0;
