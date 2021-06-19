@@ -126,7 +126,7 @@ class Solution2(object):
                 p //= len(lookup)
             return total
 
-        def f(n):
+        def f(n):  # count confusing numbers in the range of [0, n]
             return totalCount(n) - validCountInLessLength(n) - validCountInFullLength(n)
 
         return f(n) - f(0)  # f(0) is always 0 and could be ignored
