@@ -126,4 +126,7 @@ class Solution2(object):
                 p //= len(lookup)
             return total
 
-        return totalCount(n) - validCountInLessLength(n) - validCountInFullLength(n)
+        def f(n):
+            return totalCount(n) - validCountInLessLength(n) - validCountInFullLength(n)
+
+        return f(n) - f(0)  # f(0) is always 0 and could be ignored
