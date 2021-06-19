@@ -108,7 +108,7 @@ public:
     }
     
 private:
-    int f(int n) {
+    int f(int n) {  // count confusing numbers in the range of [0, n]
         return totalCount(n) - validCountInLessLength(n) - validCountInFullLength(n);
     }
 
