@@ -104,7 +104,7 @@ private:
 class Solution2 {
 public:
     int confusingNumberII(int n) {
-        return f(n) - f(0);
+        return f(n) - f(0);  // f(0) is always 0 and could be ignored
     }
     
 private:
