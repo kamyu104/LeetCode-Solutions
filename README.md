@@ -321,7 +321,7 @@
 1878 | [Get Biggest Three Rhombus Sums in a Grid](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/) | [C++](./C++/get-biggest-three-rhombus-sums-in-a-grid.cpp) [Python](./Python/get-biggest-three-rhombus-sums-in-a-grid.py) | _O(m * n * min(m, n))_ | _O(m * n)_ | Easy ||
 1886 | [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | [C++](./C++/determine-whether-matrix-can-be-obtained-by-rotation.cpp) [Python](./Python/determine-whether-matrix-can-be-obtained-by-rotation.py) | _O(m * n)_ | _O(1)_ | Easy ||
 1895 | [Largest Magic Square](https://leetcode.com/problems/largest-magic-square/) | [C++](./C++/largest-magic-square.cpp) [Python](./Python/largest-magic-square.py) | _O(max(m, n) * min(m, n)^3)_ | _O(m * n)_ | Medium ||
-1906 | [Minimum Absolute Difference Queries](https://leetcode.com/problems/minimum-absolute-difference-queries/) | [C++](./C++/minimum-absolute-difference-queries.cpp) [Python](./Python/minimum-absolute-difference-queries.py) | _O(r * (n + q))_ | _O(r * n)_ | Medium || Prefix Sum
+1906 | [Minimum Absolute Difference Queries](https://leetcode.com/problems/minimum-absolute-difference-queries/) | [C++](./C++/minimum-absolute-difference-queries.cpp) [Python](./Python/minimum-absolute-difference-queries.py) | _O(r * (n + q))_ | _O(r * n)_ | Medium || Prefix Sum, Binary Search
 
 <br/>
 <div align="right">
