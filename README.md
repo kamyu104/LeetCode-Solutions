@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1902%20%2F%201902-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1906%20%2F%201906-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -321,6 +321,7 @@
 1878 | [Get Biggest Three Rhombus Sums in a Grid](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/) | [C++](./C++/get-biggest-three-rhombus-sums-in-a-grid.cpp) [Python](./Python/get-biggest-three-rhombus-sums-in-a-grid.py) | _O(m * n * min(m, n))_ | _O(m * n)_ | Easy ||
 1886 | [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | [C++](./C++/determine-whether-matrix-can-be-obtained-by-rotation.cpp) [Python](./Python/determine-whether-matrix-can-be-obtained-by-rotation.py) | _O(m * n)_ | _O(1)_ | Easy ||
 1895 | [Largest Magic Square](https://leetcode.com/problems/largest-magic-square/) | [C++](./C++/largest-magic-square.cpp) [Python](./Python/largest-magic-square.py) | _O(max(m, n) * min(m, n)^3)_ | _O(m * n)_ | Medium ||
+1906 | [Minimum Absolute Difference Queries](https://leetcode.com/problems/minimum-absolute-difference-queries/) | [C++](./C++/minimum-absolute-difference-queries.cpp) [Python](./Python/minimum-absolute-difference-queries.py) | _O(r * (n + q))_ | _O(r * n)_ | Medium || Prefix Sum
 
 <br/>
 <div align="right">
@@ -485,6 +486,7 @@
 1858| [Longest Word With All Prefixes](https://leetcode.com/problems/longest-word-with-all-prefixes/) | [C++](./C++/longest-word-with-all-prefixes.cpp) [Python](./Python/longest-word-with-all-prefixes.py) | _O(n)_ | _O(t)_ | Medium | 🔒 | Trie, DFS |
 1876| [Substrings of Size Three with Distinct Characters](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/) | [C++](./C++/substrings-of-size-three-with-distinct-characters.cpp) [Python](./Python/substrings-of-size-three-with-distinct-characters.py) | _O(n)_ | _O(1)_ | Easy | |  |
 1880| [Check if Word Equals Summation of Two Words](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/) | [C++](./C++/check-if-word-equals-summation-of-two-words.cpp) [Python](./Python/check-if-word-equals-summation-of-two-words.py) | _O(n)_ | _O(1)_ | Easy | |  |
+1903| [Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/) | [C++](./C++/largest-odd-number-in-string.cpp) [Python](./Python/largest-odd-number-in-string.py) | _O(n)_ | _O(1)_ | Easy | |  |
 
 <br/>
 <div align="right">
@@ -1000,6 +1002,7 @@
 1862| [Sum of Floored Pairs](https://leetcode.com/problems/sum-of-floored-pairs/) | [C++](./C++/sum-of-floored-pairs.cpp) [Python](./Python/sum-of-floored-pairs.py) | _O(nlogn)_ | _O(n)_ |  Hard |  | |
 1863| [Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | [C++](./C++/sum-of-all-subset-xor-totals.cpp) [Python](./Python/sum-of-all-subset-xor-totals.py) | _O(n)_ | _O(1)_ |  Easy |  | |
 1884| [Egg Drop With 2 Eggs and N Floors](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/) | [C++](./C++/egg-drop-with-2-eggs-and-n-floors.cpp) [Python](./Python/egg-drop-with-2-eggs-and-n-floors.py) | _O(1)_ | _O(1)_ |  Medium |  | DP |
+1904| [The Number of Full Rounds You Have Played](https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/) | [C++](./C++/the-number-of-full-rounds-you-have-played.cpp) [Python](./Python/the-number-of-full-rounds-you-have-played.py) | _O(1)_ | _O(1)_ |  Medium |  | |
 
 <br/>
 <div align="right">
@@ -1425,6 +1428,7 @@
 1722| [Minimize Hamming Distance After Swap Operations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/) | [C++](./C++/minimize-hamming-distance-after-swap-operations.cpp) [Python](./Python/minimize-hamming-distance-after-swap-operations.py) | _O(n)_          | _O(n)_          | Medium           || Flood Fill, Union Find |
 1740 | [Find Distance in a Binary Tree](https://leetcode.com/problems/find-distance-in-a-binary-tree/) | [C++](./C++/find-distance-in-a-binary-tree.cpp) [Python](./Python/find-distance-in-a-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | variant of [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/), 🔒 | |
 1766 | [Tree of Coprimes](https://leetcode.com/problems/tree-of-coprimes/) | [C++](./C++/tree-of-coprimes.cpp) [Python](./Python/tree-of-coprimes.py) | _O(n)_ | _O(n)_ | Hard | | |
+1905 | [Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) | [C++](./C++/count-sub-islands.cpp) [Python](./Python/count-sub-islands.py) | _O(m * n)_ | _O(1)_ | Medium | | Flood Fill |
 
 <br/>
 <div align="right">
