@@ -28,8 +28,8 @@ private:
         }
         (*grid2)[i][j] = 0;
         int result = grid1[i][j];
-        for (const auto& [ni, nj] : directions) {
-            result &= dfs(grid1, grid2, i + ni, j + nj);
+        for (const auto& [di, dj] : directions) {
+            result &= dfs(grid1, grid2, i + di, j + dj);
         }
         return result;
     }
