@@ -22,7 +22,7 @@ class Solution(object):
         return result
 
 
-# Time: O(r + n + q * r * logn), r is the max of nums
+# Time:  O(r + n + q * r * logn), r is the max of nums
 # Space: O(r + n)
 import bisect
 
