@@ -14,12 +14,13 @@ public:
         for (const auto& query : queries) {
             int min_diff = INF, prev = -1;
             for (int num = 0; num < size(prefix[0]); ++num) {
-                if (prefix[query[0]][num] < prefix[query[1] + 1][num]) {
-                    if (prev != -1) {
-                        min_diff = min(min_diff, num - prev);
-                    }
-                    prev = num;
+                if (!(prefix[query[0]][num] < prefix[query[1] + 1][num])) {
+                    continue;
                 }
+                if (prev != -1) {
+                    min_diff = min(min_diff, num - prev);
+                }
+                prev = num;
             }
             result.emplace_back((min_diff != INF) ? min_diff : -1);
         }
@@ -42,12 +43,13 @@ public:
             int min_diff = INF, prev = -1;
             for (int num = 0; num < size(idxs); ++num) {
                 const auto cit = lower_bound(cbegin(idxs[num]), cend(idxs[num]), query[0]);
-                if (cit != cend(idxs[num]) && *cit <= query[1]) {
-                    if (prev != -1) {
-                        min_diff = min(min_diff, num - prev);
-                    }
-                    prev = num;
+                if (!(cit != cend(idxs[num]) && *cit <= query[1])) {
+                    continue;
                 }
+                if (prev != -1) {
+                    min_diff = min(min_diff, num - prev);
+                }
+                prev = num;
             }
             result.emplace_back((min_diff != INF) ? min_diff : -1);
         }
