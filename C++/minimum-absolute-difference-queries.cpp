@@ -28,8 +28,8 @@ public:
     }
 };
 
-// Time:  O(r * (n + q)), r is the max of nums
-// Space: O(r * n)
+// Time:  O(r + n + q * r * logn), r is the max of nums
+// Space: O(r + n)
 class Solution2 {
 public:
     vector<int> minDifference(vector<int>& nums, vector<vector<int>>& queries) {
