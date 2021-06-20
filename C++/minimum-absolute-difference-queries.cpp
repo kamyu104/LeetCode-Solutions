@@ -12,15 +12,14 @@ public:
         }
         vector<int> result;
         for (const auto& query : queries) {
-            vector<int> sub_nums;
+            int min_diff = INF, prev = -1;
             for (int num = 0; num < size(prefix[0]); ++num) {
                 if (prefix[query[0]][num] < prefix[query[1] + 1][num]) {
-                    sub_nums.emplace_back(num);
+                    if (prev != -1) {
+                        min_diff = min(min_diff, num - prev);
+                    }
+                    prev = num;
                 }
-            }
-            int min_diff = INF;
-            for (int i = 1; i < size(sub_nums); ++i) {
-                min_diff = min(min_diff, sub_nums[i] - sub_nums[i - 1]);
             }
             result.emplace_back((min_diff != INF) ? min_diff : -1);
         }
