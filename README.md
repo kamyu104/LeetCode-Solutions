@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1906%20%2F%201906-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1908%20%2F%201908-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1695,6 +1695,7 @@
 1883| [Minimum Skips to Arrive at Meeting On Time](https://leetcode.com/problems/minimum-skips-to-arrive-at-meeting-on-time/)|[C++](./C++/minimum-skips-to-arrive-at-meeting-on-time.cpp) [Python](./Python/minimum-skips-to-arrive-at-meeting-on-time.py)| _O(n^2)_     | _O(n)_         | Hard         | |
 1896| [Minimum Cost to Change the Final Value of Expression](https://leetcode.com/problems/minimum-cost-to-change-the-final-value-of-expression/)|[C++](./C++/minimum-cost-to-change-the-final-value-of-expression.cpp) [Python](./Python/minimum-cost-to-change-the-final-value-of-expression.py)| _O(n)_     | _O(n)_         | Hard         | | Stack, DP |
 1900| [The Earliest and Latest Rounds Where Players Compete](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/)|[C++](./C++/the-earliest-and-latest-rounds-where-players-compete.cpp) [Python](./Python/the-earliest-and-latest-rounds-where-players-compete.py)| _O(n^4)_     | _O(n^2)_         | Hard         | | |
+1908| [Game of Nim](https://leetcode.com/problems/game-of-nim/)|[C++](./C++/game-of-nim.cpp) [Python](./Python/game-of-nim.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 | |
 
 <br/>
 <div align="right">
@@ -2149,6 +2150,7 @@
 1875| [Group Employees of the Same Salary](https://leetcode.com/problems/group-employees-of-the-same-salary/) | [MySQL](./MySQL/group-employees-of-the-same-salary.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 1890| [The Latest Login in 2020](https://leetcode.com/problems/the-latest-login-in-2020/) | [MySQL](./MySQL/the-latest-login-in-2020.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1892| [Page Recommendations II](https://leetcode.com/problems/page-recommendations-ii/) | [MySQL](./MySQL/page-recommendations-ii.sql) | _O(n * m)_ | _O(n * m)_       | Hard           |🔒||
+1907| [Count Salary Categories](https://leetcode.com/problems/count-salary-categories/) | [MySQL](./MySQL/count-salary-categories.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
