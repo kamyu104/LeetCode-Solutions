@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1908%20%2F%201908-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1916%20%2F%201916-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -322,6 +322,8 @@
 1886 | [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | [C++](./C++/determine-whether-matrix-can-be-obtained-by-rotation.cpp) [Python](./Python/determine-whether-matrix-can-be-obtained-by-rotation.py) | _O(m * n)_ | _O(1)_ | Easy ||
 1895 | [Largest Magic Square](https://leetcode.com/problems/largest-magic-square/) | [C++](./C++/largest-magic-square.cpp) [Python](./Python/largest-magic-square.py) | _O(max(m, n) * min(m, n)^3)_ | _O(m * n)_ | Medium ||
 1906 | [Minimum Absolute Difference Queries](https://leetcode.com/problems/minimum-absolute-difference-queries/) | [C++](./C++/minimum-absolute-difference-queries.cpp) [Python](./Python/minimum-absolute-difference-queries.py) | _O(r * (n + q))_ | _O(r * n)_ | Medium || Prefix Sum, Binary Search
+1909 | [Remove One Element to Make the Array Strictly Increasing](https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/) | [C++](./C++/remove-one-element-to-make-the-array-strictly-increasing.cpp) [Python](./Python/remove-one-element-to-make-the-array-strictly-increasing.py) | _O(n)_ | _O(1)_ | Easy ||
+1914 | [Cyclically Rotating a Grid](https://leetcode.com/problems/cyclically-rotating-a-grid/) | [C++](./C++/cyclically-rotating-a-grid.cpp) [Python](./Python/cyclically-rotating-a-grid.py) | _O(n)_ | _O(1)_ | Medium ||
 
 <br/>
 <div align="right">
@@ -487,6 +489,7 @@
 1876| [Substrings of Size Three with Distinct Characters](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/) | [C++](./C++/substrings-of-size-three-with-distinct-characters.cpp) [Python](./Python/substrings-of-size-three-with-distinct-characters.py) | _O(n)_ | _O(1)_ | Easy | |  |
 1880| [Check if Word Equals Summation of Two Words](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/) | [C++](./C++/check-if-word-equals-summation-of-two-words.cpp) [Python](./Python/check-if-word-equals-summation-of-two-words.py) | _O(n)_ | _O(1)_ | Easy | |  |
 1903| [Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/) | [C++](./C++/largest-odd-number-in-string.cpp) [Python](./Python/largest-odd-number-in-string.py) | _O(n)_ | _O(1)_ | Easy | |  |
+1910| [Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/) | [C++](./C++/remove-all-occurrences-of-a-substring.cpp) [Python](./Python/remove-all-occurrences-of-a-substring.py) | _O(n + m)_ | _O(n + m)_ | Medium | | `KMP Algorithm` |
 
 <br/>
 <div align="right">
@@ -826,6 +829,7 @@
 1807| [Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/)      | [C++](./C++/evaluate-the-bracket-pairs-of-a-string.cpp) [Python](./Python/evaluate-the-bracket-pairs-of-a-string.py)      | _O(n + m)_         | _O(n + m)_          | Medium         ||
 1814| [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/)      | [C++](./C++/count-nice-pairs-in-an-array.cpp) [Python](./Python/count-nice-pairs-in-an-array.py)      | _O(nlogm)_         | _O(n)_          | Medium         ||
 1817| [Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/)      | [C++](./C++/finding-the-users-active-minutes.cpp) [Python](./Python/finding-the-users-active-minutes.py)      | _O(n)_         | _O(n)_          | Medium         ||
+1915| [Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings/)      | [C++](./C++/number-of-wonderful-substrings.cpp) [Python](./Python/number-of-wonderful-substrings.py)      | _O(n)_         | _O(1)_          | Medium         ||
 
 <br/>
 <div align="right">
@@ -1003,6 +1007,7 @@
 1863| [Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | [C++](./C++/sum-of-all-subset-xor-totals.cpp) [Python](./Python/sum-of-all-subset-xor-totals.py) | _O(n)_ | _O(1)_ |  Easy |  | |
 1884| [Egg Drop With 2 Eggs and N Floors](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/) | [C++](./C++/egg-drop-with-2-eggs-and-n-floors.cpp) [Python](./Python/egg-drop-with-2-eggs-and-n-floors.py) | _O(1)_ | _O(1)_ |  Medium |  | DP |
 1904| [The Number of Full Rounds You Have Played](https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/) | [C++](./C++/the-number-of-full-rounds-you-have-played.cpp) [Python](./Python/the-number-of-full-rounds-you-have-played.py) | _O(1)_ | _O(1)_ |  Medium |  | |
+1916| [Count Ways to Build Rooms in an Ant Colony](https://leetcode.com/problems/count-ways-to-build-rooms-in-an-ant-colony/) | [C++](./C++/count-ways-to-build-rooms-in-an-ant-colony.cpp) [Python](./Python/count-ways-to-build-rooms-in-an-ant-colony.py) | _O(n)_ | _O(n)_ |  Hard |  | |
 
 <br/>
 <div align="right">
@@ -1846,6 +1851,8 @@
 1894 | [Find the Student that Will Replace the Chalk](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/) | [C++](./C++/find-the-student-that-will-replace-the-chalk.cpp) [Python](./Python/find-the-student-that-will-replace-the-chalk.py) | _O(n)_ | _O(1)_ | Medium | | |
 1897 | [Redistribute Characters to Make All Strings Equal](https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/) | [C++](./C++/redistribute-characters-to-make-all-strings-equal.cpp) [Python](./Python/redistribute-characters-to-make-all-strings-equal.py) | _O(n)_ | _O(1)_ | Easy | | |
 1899 | [Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | [C++](./C++/merge-triplets-to-form-target-triplet.cpp) [Python](./Python/merge-triplets-to-form-target-triplet.py) | _O(n)_ | _O(1)_ | Medium | | |
+1911 | [Maximum Alternating Subsequence Sum](https://leetcode.com/problems/maximum-alternating-subsequence-sum/) | [C++](./C++/maximum-alternating-subsequence-sum.cpp) [Python](./Python/maximum-alternating-subsequence-sum.py) | _O(n)_ | _O(1)_ | Medium | variant of [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | |
+1913 | [Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/) | [C++](./C++/maximum-product-difference-between-two-pairs.cpp) [Python](./Python/maximum-product-difference-between-two-pairs.py) | _O(n)_ | _O(1)_ | Medium | | |
 
 <br/>
 <div align="right">
@@ -1983,7 +1990,8 @@
 1804| [Implement Trie II (Prefix Tree)](https://leetcode.com/problems/implement-trie-ii-prefix-tree/) | [C++](./C++/implement-trie-ii-prefix-tree.cpp) [Python](./Python/implement-trie-ii-prefix-tree.py) | ctor: _O(1)_<br>insert: _O(n)_<br>count_word: _O(n)_<br>count_prefix: _O(n)_<br>erase: _O(n)_ | _O(t)_| Medium | 🔒 | Trie
 1825| [Finding MK Average](https://leetcode.com/problems/finding-mk-average/) | [C++](./C++/finding-mk-average.cpp) [Python](./Python/finding-mk-average.py) | ctor: _O(1)_<br>add_element: _O(logn)_<br>calc_mkaverge: _O(1)_ | _O(m)_| Hard | | SortedList
 1845| [Seat Reservation Manager](https://leetcode.com/problems/seat-reservation-manager/) | [C++](./C++/seat-reservation-manager.cpp) [Python](./Python/seat-reservation-manager.py) | ctor: _O(n)_<br>reserve: _O(logn)_<br>unreserve: _O(logn)_ | _O(n)_| Medium | | Heap
-1865| [Finding Pairs With a Certain Sum](https://leetcode.com/problems/finding-pairs-with-a-certain-sumr/) | [C++](./C++/finding-pairs-with-a-certain-sum.cpp) [Python](./Python/finding-pairs-with-a-certain-sum.py) | ctor: _O(n1 + n2)_<br>add: _O(1)_<br>count: _O(n1)_ | _O(n1 + n2)_| Medium | | Hash Table
+1865| [Finding Pairs With a Certain Sum](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/) | [C++](./C++/finding-pairs-with-a-certain-sum.cpp) [Python](./Python/finding-pairs-with-a-certain-sum.py) | ctor: _O(n1 + n2)_<br>add: _O(1)_<br>count: _O(n1)_ | _O(n1 + n2)_| Medium | | Hash Table
+1912| [Design Movie Rental System](https://leetcode.com/problems/design-movie-rental-system/) | [C++](./C++/design-movie-rental-system.cpp) [Python](./Python/design-movie-rental-system.py) | ctor: _O(nlogn)_<br>search: _O(logn)_<br>rent: _O(logn)_<br>drop: _O(logn)_<br>report: _O(logn)_ | _O(n)_| Hard | | Ordered List
 
 <br/>
 <div align="right">
