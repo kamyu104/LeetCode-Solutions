@@ -61,13 +61,13 @@ class Solution2(object):
             l -= (m-1)
             return 0, n-1-l
 
-        def reverse(grid, m, n, i, start, end):
-            while start < end:
-                lr, lc = get_index(m, n, start)
-                rr, rc = get_index(m, n, end)
+        def reverse(grid, m, n, i, left, right):
+            while left < right:
+                lr, lc = get_index(m, n, left)
+                rr, rc = get_index(m, n, right)
                 grid[i+lr][i+lc], grid[i+rr][i+rc] = grid[i+rr][i+rc], grid[i+lr][i+lc]
-                start += 1
-                end -= 1
+                left += 1
+                right -= 1
 
         m, n = len(grid), len(grid[0])
         for i in xrange(min(m, n)//2):
