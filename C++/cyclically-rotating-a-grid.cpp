@@ -62,10 +62,10 @@ public:
 private:
     void reverse(vector<vector<int>> *grid,
                  int m, int n, int i,
-                 int start, int end) {
-        for (; start < end; ++start, --end) {
-            auto [lr, lc] = getIndex(m, n, start);
-            auto [rr, rc] = getIndex(m, n, end);
+                 int left, int right) {
+        for (; left < right; ++left, --right) {
+            auto [lr, lc] = getIndex(m, n, left);
+            auto [rr, rc] = getIndex(m, n, right);
             swap((*grid)[i + lr][i + lc], (*grid)[i + rr][i + rc]);
         }
     }
