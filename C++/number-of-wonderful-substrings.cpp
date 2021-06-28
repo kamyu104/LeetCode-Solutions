@@ -5,7 +5,7 @@ class Solution {
 public:
     long long wonderfulSubstrings(string word) {
         static const int ALPHABET_SIZE = 10;
-        vector<int> count(pow(2, ALPHABET_SIZE) + 1);
+        vector<int> count(pow(2, ALPHABET_SIZE));
         count[0] = 1;
         long long result = 0;
         int curr = 0;
