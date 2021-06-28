@@ -1007,7 +1007,7 @@
 1863| [Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | [C++](./C++/sum-of-all-subset-xor-totals.cpp) [Python](./Python/sum-of-all-subset-xor-totals.py) | _O(n)_ | _O(1)_ |  Easy |  | |
 1884| [Egg Drop With 2 Eggs and N Floors](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/) | [C++](./C++/egg-drop-with-2-eggs-and-n-floors.cpp) [Python](./Python/egg-drop-with-2-eggs-and-n-floors.py) | _O(1)_ | _O(1)_ |  Medium |  | DP |
 1904| [The Number of Full Rounds You Have Played](https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/) | [C++](./C++/the-number-of-full-rounds-you-have-played.cpp) [Python](./Python/the-number-of-full-rounds-you-have-played.py) | _O(1)_ | _O(1)_ |  Medium |  | |
-1916| [Count Ways to Build Rooms in an Ant Colony](https://leetcode.com/problems/count-ways-to-build-rooms-in-an-ant-colony/) | [C++](./C++/count-ways-to-build-rooms-in-an-ant-colony.cpp) [Python](./Python/count-ways-to-build-rooms-in-an-ant-colony.py) | _O(n)_ | _O(n)_ |  Hard |  | |
+1916| [Count Ways to Build Rooms in an Ant Colony](https://leetcode.com/problems/count-ways-to-build-rooms-in-an-ant-colony/) | [C++](./C++/count-ways-to-build-rooms-in-an-ant-colony.cpp) [Python](./Python/count-ways-to-build-rooms-in-an-ant-colony.py) | _O(n)_ | _O(n)_ |  Hard |  | DFS, Tree |
 
 <br/>
 <div align="right">
