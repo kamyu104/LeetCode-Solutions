@@ -19,8 +19,8 @@ public:
             result.push_back(c);
             lookup.emplace_back(i);
             if (i == size(part) - 1) {
-                result.erase(begin(result) + size(result) - size(part), end(result));
-                lookup.erase(begin(lookup) + size(lookup) - size(part), end(lookup));
+                result.resize(size(result) - size(part));
+                lookup.resize(size(lookup) - size(part));
                 i = !empty(lookup) ? lookup.back() : -1;
             }
         }
