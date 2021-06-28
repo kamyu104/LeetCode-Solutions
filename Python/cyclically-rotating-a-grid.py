@@ -13,16 +13,13 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         def get_index(m, n, l):
-            if l-(m-1) < 0:
+            if 0 <= l < m-1:
                 return l, 0
-            l -= (m-1)
-            if l-(n-1) < 0:
-                return m-1, l
-            l -= (n-1)
-            if l-(m-1) < 0:
-                return m-1-l, n-1
-            l -= (m-1)
-            return 0, n-1-l
+            if m-1 <= l < (m-1)+(n-1):
+                return m-1, l-(m-1)
+            if (m-1)+(n-1) <= l < (m-1)+(n-1)+(m-1):
+                return m-1-(l-((m-1)+(n-1))), n-1
+            return 0, n-1-(l-((m-1)+(n-1)+(m-1)))
 
         m, n = len(grid), len(grid[0])
         for i in xrange(min(m, n)//2):
@@ -50,16 +47,13 @@ class Solution2(object):
         :rtype: List[List[int]]
         """
         def get_index(m, n, l):
-            if l-(m-1) < 0:
+            if 0 <= l < m-1:
                 return l, 0
-            l -= (m-1)
-            if l-(n-1) < 0:
-                return m-1, l
-            l -= (n-1)
-            if l-(m-1) < 0:
-                return m-1-l, n-1
-            l -= (m-1)
-            return 0, n-1-l
+            if m-1 <= l < (m-1)+(n-1):
+                return m-1, l-(m-1)
+            if (m-1)+(n-1) <= l < (m-1)+(n-1)+(m-1):
+                return m-1-(l-((m-1)+(n-1))), n-1
+            return 0, n-1-(l-((m-1)+(n-1)+(m-1)))
 
         def reverse(grid, m, n, i, left, right):
             while left < right:
