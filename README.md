@@ -323,7 +323,7 @@
 1895 | [Largest Magic Square](https://leetcode.com/problems/largest-magic-square/) | [C++](./C++/largest-magic-square.cpp) [Python](./Python/largest-magic-square.py) | _O(max(m, n) * min(m, n)^3)_ | _O(m * n)_ | Medium ||
 1906 | [Minimum Absolute Difference Queries](https://leetcode.com/problems/minimum-absolute-difference-queries/) | [C++](./C++/minimum-absolute-difference-queries.cpp) [Python](./Python/minimum-absolute-difference-queries.py) | _O(r * (n + q))_ | _O(r * n)_ | Medium || Prefix Sum, Binary Search
 1909 | [Remove One Element to Make the Array Strictly Increasing](https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/) | [C++](./C++/remove-one-element-to-make-the-array-strictly-increasing.cpp) [Python](./Python/remove-one-element-to-make-the-array-strictly-increasing.py) | _O(n)_ | _O(1)_ | Easy ||
-1914 | [Cyclically Rotating a Grid](https://leetcode.com/problems/cyclically-rotating-a-grid/) | [C++](./C++/cyclically-rotating-a-grid.cpp) [Python](./Python/cyclically-rotating-a-grid.py) | _O(n)_ | _O(1)_ | Medium ||
+1914 | [Cyclically Rotating a Grid](https://leetcode.com/problems/cyclically-rotating-a-grid/) | [C++](./C++/cyclically-rotating-a-grid.cpp) [Python](./Python/cyclically-rotating-a-grid.py) | _O(m * n)_ | _O(1)_ | Medium ||
 
 <br/>
 <div align="right">
