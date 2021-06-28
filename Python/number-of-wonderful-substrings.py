@@ -8,7 +8,7 @@ class Solution(object):
         :rtype: int
         """
         ALPHABET_SIZE = 10
-        count = [0]*(2**ALPHABET_SIZE+1)
+        count = [0]*(2**ALPHABET_SIZE)
         count[0] = 1
         result = curr = 0
         for c in word:
