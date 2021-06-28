@@ -25,19 +25,16 @@ public:
 
 private:
     pair<int, int> getIndex(int m, int n, int l) {
-        if (l - (m - 1) < 0) {
+        if (l < m - 1) {
             return {l, 0};
         }
-        l -= (m - 1);
-        if (l - (n - 1) < 0) {
-            return {m - 1, l};
+        if (l < (m - 1) + (n - 1)) {
+            return {m - 1, l - (m - 1)};
         }
-        l -= (n - 1);
-        if (l - (m - 1) < 0) {
-            return {m - 1 - l, n - 1};
+        if (l < (m - 1) + (n - 1) + (m - 1)) {
+            return {(m - 1) - (l - ((m - 1) + (n - 1))), n - 1};
         }
-        l -= (m - 1);
-        return {0, n - 1 - l};
+        return {0, (n - 1) - (l - ((m - 1) + (n - 1) + (m - 1)))};
     }
 };
 
@@ -71,18 +68,15 @@ private:
     }
 
     pair<int, int> getIndex(int m, int n, int l) {
-        if (l - (m - 1) < 0) {
+        if (l < m - 1) {
             return {l, 0};
         }
-        l -= (m - 1);
-        if (l - (n - 1) < 0) {
-            return {m - 1, l};
+        if (l < (m - 1) + (n - 1)) {
+            return {m - 1, l - (m - 1)};
         }
-        l -= (n - 1);
-        if (l - (m - 1) < 0) {
-            return {m - 1 - l, n - 1};
+        if (l < (m - 1) + (n - 1) + (m - 1)) {
+            return {(m - 1) - (l - ((m - 1) + (n - 1))), n - 1};
         }
-        l -= (m - 1);
-        return {0, n - 1 - l};
+        return {0, (n - 1) - (l - ((m - 1) + (n - 1) + (m - 1)))};
     }
 };
