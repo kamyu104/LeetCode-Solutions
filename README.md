@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1916%20%2F%201916-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1917%20%2F%201917-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -2159,6 +2159,7 @@
 1890| [The Latest Login in 2020](https://leetcode.com/problems/the-latest-login-in-2020/) | [MySQL](./MySQL/the-latest-login-in-2020.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1892| [Page Recommendations II](https://leetcode.com/problems/page-recommendations-ii/) | [MySQL](./MySQL/page-recommendations-ii.sql) | _O(n * m)_ | _O(n * m)_       | Hard           |🔒||
 1907| [Count Salary Categories](https://leetcode.com/problems/count-salary-categories/) | [MySQL](./MySQL/count-salary-categories.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
+1917| [Leetcodify Friends Recommendations](https://leetcode.com/problems/leetcodify-friends-recommendations/) | [MySQL](./MySQL/leetcodify-friends-recommendations.sql) | _O(n^2)_ | _O(n^2)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
