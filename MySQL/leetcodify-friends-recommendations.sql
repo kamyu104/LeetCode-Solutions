@@ -18,10 +18,11 @@ WITH recommend_cte
 SELECT user_id,
        recommended_id
 FROM   recommend_cte a
-WHERE  NOT EXISTS (SELECT 1
-                   FROM   friendship b
-                   WHERE  ( a.user_id = b.user1_id
-                            AND a.recommended_id = b.user2_id )
-                           OR
-                          ( a.user_id = b.user2_id
-                            AND a.recommended_id = b.user1_id )); 
+WHERE  NOT EXISTS
+     (SELECT 1
+      FROM   friendship b
+      WHERE  (a.user_id = b.user1_id
+              AND a.recommended_id = b.user2_id )
+             OR
+             (a.user_id = b.user2_id
+              AND a.recommended_id = b.user1_id)); 
