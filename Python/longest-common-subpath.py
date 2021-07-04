@@ -25,7 +25,7 @@ class Solution(object):
                     return False
             return True
 
-        MOD, P = 10**9+7, (113, 109)
+        MOD, P = 10**9+7, (113, 109)  # MOD could be the min prime of 7-digit number (10**6+3), P could be (2, 3)
         left, right = 1, min(len(p) for p in paths)
         while left <= right:
             mid = left + (right-left)//2
@@ -62,7 +62,7 @@ class Solution2(object):
                     return False
             return True
 
-        MOD, P = 10**11+19, max(x for p in paths for x in p)+1
+        MOD, P = 10**11+19, max(x for p in paths for x in p)+1  # MOD is the min prime of 12-digit number
         left, right = 1, min(len(p) for p in paths)
         while left <= right:
             mid = left + (right-left)//2
