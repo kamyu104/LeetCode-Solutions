@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1919%20%2F%201919-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1923%20%2F%201923-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -324,6 +324,7 @@
 1906 | [Minimum Absolute Difference Queries](https://leetcode.com/problems/minimum-absolute-difference-queries/) | [C++](./C++/minimum-absolute-difference-queries.cpp) [Python](./Python/minimum-absolute-difference-queries.py) | _O(r * (n + q))_ | _O(r * n)_ | Medium || Prefix Sum, Binary Search
 1909 | [Remove One Element to Make the Array Strictly Increasing](https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/) | [C++](./C++/remove-one-element-to-make-the-array-strictly-increasing.cpp) [Python](./Python/remove-one-element-to-make-the-array-strictly-increasing.py) | _O(n)_ | _O(1)_ | Easy ||
 1914 | [Cyclically Rotating a Grid](https://leetcode.com/problems/cyclically-rotating-a-grid/) | [C++](./C++/cyclically-rotating-a-grid.cpp) [Python](./Python/cyclically-rotating-a-grid.py) | _O(m * n)_ | _O(1)_ | Medium ||
+1920 | [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/) | [C++](./C++/build-array-from-permutation.cpp) [Python](./Python/build-array-from-permutation.py) | _O(n)_ | _O(1)_ | Easy || Inplace
 
 <br/>
 <div align="right">
@@ -830,6 +831,7 @@
 1814| [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/)      | [C++](./C++/count-nice-pairs-in-an-array.cpp) [Python](./Python/count-nice-pairs-in-an-array.py)      | _O(nlogm)_         | _O(n)_          | Medium         ||
 1817| [Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/)      | [C++](./C++/finding-the-users-active-minutes.cpp) [Python](./Python/finding-the-users-active-minutes.py)      | _O(n)_         | _O(n)_          | Medium         ||
 1915| [Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings/)      | [C++](./C++/number-of-wonderful-substrings.cpp) [Python](./Python/number-of-wonderful-substrings.py)      | _O(n)_         | _O(1)_          | Medium         ||
+1923| [Longest Common Subpath](https://leetcode.com/problems/longest-common-subpath/)      | [C++](./C++/longest-common-subpath.cpp) [Python](./Python/longest-common-subpath.py)      | _O(m * nlogn)_         | _O(n)_          | Hard         || `Rabin-Karp Algorithm`
 
 <br/>
 <div align="right">
@@ -1008,6 +1010,7 @@
 1884| [Egg Drop With 2 Eggs and N Floors](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/) | [C++](./C++/egg-drop-with-2-eggs-and-n-floors.cpp) [Python](./Python/egg-drop-with-2-eggs-and-n-floors.py) | _O(1)_ | _O(1)_ |  Medium |  | DP |
 1904| [The Number of Full Rounds You Have Played](https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/) | [C++](./C++/the-number-of-full-rounds-you-have-played.cpp) [Python](./Python/the-number-of-full-rounds-you-have-played.py) | _O(1)_ | _O(1)_ |  Medium |  | |
 1916| [Count Ways to Build Rooms in an Ant Colony](https://leetcode.com/problems/count-ways-to-build-rooms-in-an-ant-colony/) | [C++](./C++/count-ways-to-build-rooms-in-an-ant-colony.cpp) [Python](./Python/count-ways-to-build-rooms-in-an-ant-colony.py) | _O(n)_ | _O(n)_ |  Hard |  | DFS, Tree |
+1922| [Count Good Numbers](https://leetcode.com/problems/count-good-numbers/) | [C++](./C++/count-good-numbers.cpp) [Python](./Python/count-good-numbers.py) | _O(logn)_ | _O(1)_ |  Medium |  | |
 
 <br/>
 <div align="right">
@@ -1854,6 +1857,7 @@
 1899 | [Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | [C++](./C++/merge-triplets-to-form-target-triplet.cpp) [Python](./Python/merge-triplets-to-form-target-triplet.py) | _O(n)_ | _O(1)_ | Medium | | |
 1911 | [Maximum Alternating Subsequence Sum](https://leetcode.com/problems/maximum-alternating-subsequence-sum/) | [C++](./C++/maximum-alternating-subsequence-sum.cpp) [Python](./Python/maximum-alternating-subsequence-sum.py) | _O(n)_ | _O(1)_ | Medium | variant of [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | |
 1913 | [Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/) | [C++](./C++/maximum-product-difference-between-two-pairs.cpp) [Python](./Python/maximum-product-difference-between-two-pairs.py) | _O(n)_ | _O(1)_ | Medium | | |
+1921 | [Eliminate Maximum Number of Monsters](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/) | [C++](./C++/eliminate-maximum-number-of-monsters.cpp) [Python](./Python/eliminate-maximum-number-of-monsters.py) | _O(nlogn)_ | _O(1)_ | Medium | | |
 
 <br/>
 <div align="right">
