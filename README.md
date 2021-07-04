@@ -831,7 +831,7 @@
 1814| [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/)      | [C++](./C++/count-nice-pairs-in-an-array.cpp) [Python](./Python/count-nice-pairs-in-an-array.py)      | _O(nlogm)_         | _O(n)_          | Medium         ||
 1817| [Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/)      | [C++](./C++/finding-the-users-active-minutes.cpp) [Python](./Python/finding-the-users-active-minutes.py)      | _O(n)_         | _O(n)_          | Medium         ||
 1915| [Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings/)      | [C++](./C++/number-of-wonderful-substrings.cpp) [Python](./Python/number-of-wonderful-substrings.py)      | _O(n)_         | _O(1)_          | Medium         ||
-1923| [Longest Common Subpath](https://leetcode.com/problems/longest-common-subpath/)      | [C++](./C++/longest-common-subpath.cpp) [Python](./Python/longest-common-subpath.py)      | _O(m * nlogn)_         | _O(n)_          | Hard         || `Rabin-Karp Algorithm`
+1923| [Longest Common Subpath](https://leetcode.com/problems/longest-common-subpath/)      | [C++](./C++/longest-common-subpath.cpp) [Python](./Python/longest-common-subpath.py)      | _O(m * nlogn)_         | _O(n)_          | Hard         || Binary Search, `Rabin-Karp Algorithm`
 
 <br/>
 <div align="right">
