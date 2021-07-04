@@ -43,8 +43,8 @@ private:
     }
     
     unordered_set<vector<int>, VectorHash<int>> RabinKarp(const vector<int>& arr, int x) {
-        static const int MOD = 1e9 + 7;
-        static const vector<int> P = {113, 109};  // double hashing
+        static const int MOD = 1e9 + 7;  // MOD could be the min prime of 7-digit number (1e6+3)
+        static const vector<int> P = {113, 109};  // double hashing, P could be {2, 3}
         vector<int> hashes, powers;
         for (const auto& p : P) {
             int64_t h = 0, power = 1;
@@ -114,7 +114,7 @@ private:
     }
     
     unordered_set<int64_t> RabinKarp(const vector<int>& arr, int x) {
-        static const int64_t MOD = 1e11 + 19;
+        static const int64_t MOD = 1e11 + 19;  // MOD is the min prime of 12-digit number
         static const int64_t P = 1e5 + 1;  // max(x for p in paths for x in p)+1
         int64_t h = 0, power = 1;
         for (int i = 0; i < x; ++i) {
