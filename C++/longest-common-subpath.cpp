@@ -80,3 +80,68 @@ private:
         return result;
     }
 };
+
+// Time:  O(m * nlogn)
+// Space: O(n)
+class Solution2 {
+public:
+    int longestCommonSubpath(int n, vector<vector<int>>& paths) {
+        int left = 1, right = size(*min_element(cbegin(paths), cend(paths),
+                                                [](const auto& x, const auto& y) {
+                                                    return size(x) < size(y);
+                                                }));
+        while (left <= right) {
+            const auto& mid = left + (right - left) / 2;
+            if (!check(paths, mid)) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return right;
+    }
+
+private:
+    bool check(const vector<vector<int>>& paths, int x) {
+        unordered_set<int64_t> intersect = RabinKarp(paths[0], x);
+        for (int i = 1; i < size(paths); ++i) {
+            intersect = set_intersection<int64_t>(intersect, RabinKarp(paths[i], x));
+            if (empty(intersect)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    unordered_set<int64_t> RabinKarp(const vector<int>& arr, int x) {
+        static const int64_t MOD = 1e11 + 19;
+        static const int64_t P = 1e5 + 1;  // max(x for p in paths for x in p)+1
+        int64_t h = 0, power = 1;
+        for (int i = 0; i < x; ++i) {
+            h = (h * P + arr[i]) % MOD;
+            power = (power * P) % MOD;
+        }
+        unordered_set<int64_t> lookup = {h};
+        for (int i = x; i < size(arr); ++i) {
+            h = ((h * P - arr[i - x] * power + arr[i]) % MOD + MOD) % MOD;
+            lookup.emplace(h);
+        }
+        return lookup;
+    }
+
+    template<typename T>
+    unordered_set<T> set_intersection(const unordered_set<T>& a,
+                                      const unordered_set<T>& b) {
+        if (a.size() > b.size()) {
+            return set_intersection(b, a);
+        }
+        unordered_set<T> result;
+        for (const auto& x : a) {
+            if (b.count(x)) {
+                result.emplace(x);
+            }
+        }
+        return result;
+    }
+};
+
