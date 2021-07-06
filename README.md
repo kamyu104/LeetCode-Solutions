@@ -84,7 +84,7 @@
 | 30 ~ 50 | _O(n<sup>5</sup>)_ | Search with Pruning - Branch and Bound |
 | 40 | _O(2<sup>n/2</sup>)_ | 	Meet in the Middle |
 | 20 | _O(2<sup>n</sup>)_ | Backtracking / Generating 2<sup>n</sup> Subsets |
-| 11 | _O(n!)_ | Factorial / Permutations / Combination Algorithm |
+| 11 | _O(n!)_ | Factorial / Permutation / Combination Algorithm |
 
 ## Bit Manipulation
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
