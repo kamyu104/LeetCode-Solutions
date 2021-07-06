@@ -72,8 +72,20 @@
     * [Algorithm Visualizer](https://algorithm-visualizer.org/)
  * Handy Table
     * [Thinking Techniques](https://sites.google.com/site/mostafasibrahim/programming-competitions/thinking-techniques)
-        * ![Thinking Constraints](https://i.imgur.com/dwDJaHI.png)
- 
+
+|  n  | Complexity           |  Possible Algorithms & Techniques       |
+|-----|---------------- | --------------- |
+| 10<sup>18</sup> | _O(logn)_ | Binary & Ternary Search / Matrix Power / Cycle Tricks / Big Simulation Steps / Values ReRank |
+| 10<sup>8</sup> | _O(n)_ | A Linear Solution - May be a greedy/Ad-hoc algorithm |
+| 4 * 10<sup>7</sup> | _O(nlogn)_ | Linear # Calls to Binary & Ternary Search / Pre-processing & Querying / Divide and Conquer |
+| 10<sup>4</sup> | _O(n<sup>2</sup>)_ | Linear # Calls to Binary & Ternary Search / Ad-hoc / DP / Greedy / Divide and Conquer / Branch and Bound |
+| 500 | _O(n<sup>3</sup>)_ | Ad-hoc / DP / Greedy / ...  |
+| 90 | _O(n<sup>4</sup>)_ |  Ad-hoc / DP / Greedy / ... |
+| 30 ~ 50 | _O(n<sup>5</sup>)_ | Search with Pruning - Branch and Bound  |
+| 40 | _O(2<sup>n/2</sup>)_ | 	Meet in the Middle |
+| 20 | _O(2<sup>n</sup>)_ | Backtracking / Generating 2<sup>n</sup> Subsets |
+| 11 | _O(n!)_ | Factorial / Permutations / Combination Algorithm |
+
 ## Bit Manipulation
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
