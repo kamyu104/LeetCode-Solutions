@@ -83,7 +83,7 @@
 | 10<sup>4</sup> | _O(n<sup>2</sup>)_ | Ad-hoc / DP / Greedy / Divide and Conquer / Branch and Bound |
 | 500 | _O(n<sup>3</sup>)_ | Ad-hoc / DP / Greedy / Divide and Conquer / Branch and Bound  |
 | 90 | _O(n<sup>4</sup>)_ | Ad-hoc / DP / Greedy / Divide and Conquer / Branch and Bound |
-| 30 ~ 50 | _O(n<sup>5</sup>)_ | Branch and Bound |
+| 50 | _O(n<sup>5</sup>)_ | Branch and Bound |
 | 40 | _O(nx2<sup>n/2</sup>)_ | 	Meet in the Middle |
 | 20 | _O(n×2<sup>n</sup>)_ | Backtracking / Generating 2<sup>n</sup> Subsets / Bitmask Technique |
 | 11 | _O(n!)_ | Factorial / Permutation / Combination Algorithm |
