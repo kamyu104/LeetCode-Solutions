@@ -72,7 +72,7 @@
     * [Algorithm Visualizer](https://algorithm-visualizer.org/)
  * Handy Table
     * [Thinking Techniques](https://sites.google.com/site/mostafasibrahim/programming-competitions/thinking-techniques)
-        * ![](https://i.imgur.com/7ZTsFAv.png)
+        * ![Thinking Constraints](https://i.imgur.com/dwDJaHI.png)
  
 ## Bit Manipulation
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
