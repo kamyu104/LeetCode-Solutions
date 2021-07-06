@@ -71,7 +71,7 @@
     * [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
     * [Algorithm Visualizer](https://algorithm-visualizer.org/)
  * Handy Table
-    * [Thinking Techniques](https://sites.google.com/site/mostafasibrahim/programming-competitions/thinking-techniques)
+    * [Thinking Techniques](https://sites.google.com/site/mostafasibrahim/programming-competitions/thinking-techniques) as follows:
 
 |  n  | Complexity           |  Possible Algorithms & Techniques       |
 |-----|---------------- | --------------- |
