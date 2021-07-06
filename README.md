@@ -70,6 +70,9 @@
     * [VisuAlgo](https://visualgo.net/en)
     * [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
     * [Algorithm Visualizer](https://algorithm-visualizer.org/)
+ * Handy Table
+    * [Thinking Techniques](https://sites.google.com/site/mostafasibrahim/programming-competitions/thinking-techniques)
+        * ![](https://i.imgur.com/pX5Rdr3.png)
  
 ## Bit Manipulation
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
