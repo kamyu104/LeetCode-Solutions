@@ -77,7 +77,7 @@
 | - | - | - |
 | 10<sup>18</sup> | _O(logn)_ | Binary & Ternary Search / Matrix Power / Cycle Tricks / Big Simulation Steps / Values Reranking |
 | 10<sup>8</sup> | _O(n)_ | A Linear Solution - May be a greedy / ad-hoc algorithm |
-| 4 * 10<sup>7</sup> | _O(nlogn)_ | Linear # Calls to Binary & Ternary Search / Pre-processing & Querying / Divide and Conquer |
+| 4×10<sup>7</sup> | _O(nlogn)_ | Linear # Calls to Binary & Ternary Search / Pre-processing & Querying / Divide and Conquer |
 | 10<sup>4</sup> | _O(n<sup>2</sup>)_ | Ad-hoc / DP / Greedy / Divide and Conquer / Branch and Bound |
 | 500 | _O(n<sup>3</sup>)_ | Ad-hoc / DP / Greedy / Divide and Conquer / Branch and Bound  |
 | 90 | _O(n<sup>4</sup>)_ | Ad-hoc / DP / Greedy / Divide and Conquer / Branch and Bound |
