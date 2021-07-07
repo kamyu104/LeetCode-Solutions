@@ -10,7 +10,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        return reduce(operator.xor, nums, \
+        return reduce(operator.xor, nums,
                       reduce(operator.xor, xrange(len(nums) + 1)))
 
 
