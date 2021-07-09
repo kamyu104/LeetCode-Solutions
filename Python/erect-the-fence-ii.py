@@ -15,7 +15,7 @@ class Solution(object):
             return ((a[0]-b[0])**2 + (a[1]-b[1])**2)**0.5
 
         def inside(c, p):
-            return dist(c[0], p) <= c[1]+EPS
+            return dist(c[0], p) < c[1]+EPS
 
         def circle_center(bx, by, cx, cy):
             B = bx*bx + by*by
@@ -56,7 +56,7 @@ class Solution(object):
             return result
 
         INF = float("inf")
-        EPS = 1e-6
+        EPS = 1e-5
         random.seed(0)
         random.shuffle(trees)
         result = Welzl(trees, [], 0)
