@@ -44,14 +44,14 @@ class Solution(object):
                 return circle_from_2_points(boundaries[0], boundaries[1])
             return circle_from_3_points(boundaries[0], boundaries[1], boundaries[2])
 
-        def welzl(points, boundaries, curr):
+        def Welzl(points, boundaries, curr):
             if curr == len(points) or len(boundaries) == 3:
                 return trivial(boundaries)
-            result = welzl(points, boundaries, curr+1)
+            result = Welzl(points, boundaries, curr+1)
             if result is not None and inside(result, points[curr]):
                 return result
             boundaries.append(points[curr])
-            result = welzl(points, boundaries, curr+1)
+            result = Welzl(points, boundaries, curr+1)
             boundaries.pop()
             return result
 
@@ -59,5 +59,5 @@ class Solution(object):
         EPS = 1e-6
         random.seed(0)
         random.shuffle(trees)
-        result = welzl(trees, [], 0)
+        result = Welzl(trees, [], 0)
         return result[0][0], result[0][1], result[1]
