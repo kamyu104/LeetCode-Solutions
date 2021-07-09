@@ -59,7 +59,7 @@ class Solution(object):
             result = welzl(points, boundaries, curr)
             boundaries.pop()
             return result
-            
+
         INF = float("inf")
         EPS = 1e-6
         random.seed(0)
