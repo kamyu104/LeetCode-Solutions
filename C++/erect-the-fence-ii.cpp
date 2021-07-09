@@ -41,14 +41,6 @@ private:
         if (size(boundaries) == 2) {
             return circle_from_2_points(boundaries[0], boundaries[1]);
         }
-        for (int i = 0; i < 3; ++i) {  // case of collinear points
-            for (int j = i + 1; j < 3; ++j) {
-                const auto& result = circle_from_2_points(boundaries[i], boundaries[j]);
-                if (inside(result, boundaries[3 - i - j])) {
-                    return result;
-                }
-            }
-        }
         return circle_from_3_points(boundaries[0], boundaries[1], boundaries[2]);
     }
 
