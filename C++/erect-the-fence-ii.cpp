@@ -7,12 +7,12 @@ public:
     vector<double> outerTrees(vector<vector<int>>& trees) {
         random_shuffle(begin(trees), end(trees));
         vector<vector<double>> boundaries;
-        const auto& result = welzl(trees, &boundaries, 0);
+        const auto& result = Welzl(trees, &boundaries, 0);
         return {result.first[0], result.first[1], result.second};
     }
 
 private:
-    pair<vector<double>, double> welzl(
+    pair<vector<double>, double> Welzl(
         const vector<vector<int>>& points,
         vector<vector<double>> *boundaries,
         int curr) {
@@ -21,12 +21,12 @@ private:
             return trivial(*boundaries);
         }
         vector<double> p = {double(points[curr][0]), double(points[curr][1])};
-        const auto& result = welzl(points, boundaries, curr + 1);
+        const auto& result = Welzl(points, boundaries, curr + 1);
         if (!empty(result.first) && inside(result, p)) {
             return result;
         }
         boundaries->emplace_back(move(p));
-        const auto& result2 = welzl(points, boundaries, curr + 1);
+        const auto& result2 = Welzl(points, boundaries, curr + 1);
         boundaries->pop_back();
         return result2;
     }
