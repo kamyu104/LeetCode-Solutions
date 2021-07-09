@@ -68,7 +68,10 @@ private:
         return {(cy * B - by * C) / (2 * D), (bx * C - cx * B) / (2 * D)};
     }
 
-    pair<vector<double>, double> circle_from_2_points(const vector<double>& A, const vector<double>& B) {
+    pair<vector<double>, double> circle_from_2_points(
+        const vector<double>& A,
+        const vector<double>& B) {
+
         vector<double> C = {(A[0] + B[0]) / 2.0, (A[1] + B[1]) / 2.0};
         return {C, dist(A, B) / 2.0};
     }
