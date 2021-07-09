@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1923%20%2F%201923-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1924%20%2F%201924-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1933,6 +1933,7 @@
 1453 | [Maximum Number of Darts Inside of a Circular Dartboard](https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/)  | [C++](./C++/maximum-number-of-darts-inside-of-a-circular-dartboard.cpp) [Python](./Python/maximum-number-of-darts-inside-of-a-circular-dartboard.py) | _O(n^2 * logn)_| _O(n)_| Hard           || Line Sweep |
 1515 | [Best Position for a Service Centre](https://leetcode.com/problems/best-position-for-a-service-centre/)  | [C++](./C++/best-position-for-a-service-centre.cpp) [Python](./Python/best-position-for-a-service-centre.py) | _O(n * iter)_| _O(n)_| Hard           || Geometric Median, Gradient Descent, Weiszfeld's Algorithm |
 1610 | [Maximum Number of Visible Points](https://leetcode.com/problems/maximum-number-of-visible-points/)  | [C++](./C++/maximum-number-of-visible-points.cpp) [Python](./Python/maximum-number-of-visible-points.py) | _O(nlogn)_| _O(n)_| Hard           || Two Pointers, Sliding Window |
+1924 | [Erect the Fence II](https://leetcode.com/problems/erect-the-fence-ii/)  | [C++](./C++/erect-the-fence-ii.cpp) [Python](./Python/erect-the-fence-ii.py) | _O(n)_ on average | _O(n)_| Hard           | 🔒 | `Welzl's Algorithm` | 
 
 <br/>
 <div align="right">
