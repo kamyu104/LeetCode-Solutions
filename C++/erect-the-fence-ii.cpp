@@ -26,7 +26,7 @@ private:
             return result;
         }
         boundaries->emplace_back(move(p));
-        const auto& result2 = welzl(points, boundaries, curr);
+        const auto& result2 = welzl(points, boundaries, curr + 1);
         boundaries->pop_back();
         return result2;
     }
