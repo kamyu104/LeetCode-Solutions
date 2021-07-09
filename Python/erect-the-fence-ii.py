@@ -55,7 +55,6 @@ class Solution(object):
             boundaries.pop()
             return result
 
-        INF = float("inf")
         EPS = 1e-5
         random.seed(0)
         random.shuffle(trees)
