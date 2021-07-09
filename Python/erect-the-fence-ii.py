@@ -51,7 +51,7 @@ class Solution(object):
             if result is not None and inside(result, points[curr]):
                 return result
             boundaries.append(points[curr])
-            result = welzl(points, boundaries, curr)
+            result = welzl(points, boundaries, curr+1)
             boundaries.pop()
             return result
 
