@@ -42,11 +42,6 @@ class Solution(object):
                 return [boundaries[0], 0.0]
             if len(boundaries) == 2:
                 return circle_from_2_points(boundaries[0], boundaries[1])
-            for i in xrange(3):  # case of collinear points
-                for j in xrange(i+1, 3):
-                    result = circle_from_2_points(boundaries[i], boundaries[j])
-                    if inside(result, boundaries[3-i-j]):
-                        return result
             return circle_from_3_points(boundaries[0], boundaries[1], boundaries[2])
 
         def welzl(points, boundaries, curr):
