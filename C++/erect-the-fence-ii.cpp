@@ -49,8 +49,8 @@ private:
     }
 
     bool inside(const pair<vector<double>, double>& c, const vector<double>& p) {
-        static const double EPS = 1e-6;
-        return dist(c.first, p) <= c.second + EPS;
+        static const double EPS = 1e-5;
+        return dist(c.first, p) < c.second + EPS;
     }
 
     vector<double> circle_center(int bx, int by, int cx, int cy) {
