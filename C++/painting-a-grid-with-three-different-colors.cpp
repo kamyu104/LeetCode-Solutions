@@ -20,11 +20,16 @@ public:
                 }
             }
         }
+        assert(accumulate(cbegin(adj), cend(adj), 0,
+                          [](const auto& total, const auto& kvp) {
+                              return total + size(kvp.second);
+                          }) <= 2 * pow(3, m));
         unordered_map<int, int> dp;
         for (const auto& mask : masks) {
             ++dp[mask];
-        }       
+        }
         for (int i = 0; i < n - 1; ++i) {  // Time: O(n*3^m), Space: O(2^m)
+            assert(size(dp) <= 3 * 3 * pow(2, m - 2));
             unordered_map<int, int> new_dp;
             for (const auto [mask, v] : dp) {
                 for (const auto& new_mask : adj[mask]) {
@@ -76,6 +81,7 @@ public:
         const int basis = pow(3, m - 1);
         unordered_map<int, int> dp = {{(int(pow(3, m))) - 1, 1}};
         for (int idx = 0; idx < m * n; ++idx) {
+            assert(size(dp) <= 3 * 3 * pow(2, m - 2));
             int r = idx / m;
             int c = idx % m;
             unordered_map<int, int> new_dp;
