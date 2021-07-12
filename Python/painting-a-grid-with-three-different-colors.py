@@ -20,14 +20,14 @@ class Solution(object):
             assert(len(dp) <= 3**2 * 2**(m-2))
             r, c = divmod(idx, m)
             new_dp = collections.Counter()
-            for mask in dp:
+            for mask, v in dp.iteritems():
                 choices = {0, 1, 2}
                 if r > 0:
                     choices.discard(mask%3)  # get up grid
                 if c > 0:
                     choices.discard(mask//basis)  # get left grid
-                for val in choices:
-                    new_mask = (val*basis)+(mask//3)  # encoding mask
-                    new_dp[new_mask] = (new_dp[new_mask]+dp[mask])%MOD 
+                for x in choices:
+                    new_mask = (x*basis)+(mask//3)  # encoding mask
+                    new_dp[new_mask] = (new_dp[new_mask]+v)%MOD 
             dp = new_dp
         return reduce(lambda x,y: (x+y)%MOD, dp.itervalues(), 0)
