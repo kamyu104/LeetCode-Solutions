@@ -1,4 +1,4 @@
-# Time:  O((m + n) * 3^m) = O(n * 3^m)
+# Time:  O(4^m + n * 3^m)
 # Space: O(3^m)
 
 import collections
@@ -27,7 +27,7 @@ class Solution(object):
         masks = []
         backtracking(-1, -1, basis, masks)  # Time:  O(2^m), Space: O(2^m)
         adj = collections.defaultdict(list)
-        for mask in masks:  # Time: O(m*3^m), Space: O(3^m)
+        for mask in masks:  # Time: O(4^m), Space: O(3^m)
             backtracking(mask, -1, basis, adj[mask])
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
         dp = collections.Counter(masks)
