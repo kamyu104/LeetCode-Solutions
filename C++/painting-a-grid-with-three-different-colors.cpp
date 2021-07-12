@@ -1,4 +1,4 @@
-// Time:  O(m * 4^m + n * 3^m)
+// Time:  O(4^m + n * 3^m)
 // Space: O(3^m)
 
 // worse complexity, but faster due to too small m
@@ -10,15 +10,12 @@ public:
         if (m > n) {
             swap(m, n);
         }
+        const int basis = pow(3, m - 1);
         vector<int> masks;
-        backtracking(-1, m, &masks);  // Time:  O(2^m), Space: O(2^m)
+        backtracking(-1, -1, basis, &masks);  // Time: O(2^m), Space: O(2^m)
         unordered_map<int, vector<int>> adj;
-        for (const auto& mask1 : masks) {  // Time: O(m * 4^m), Space: O(3^m)
-            for (const auto& mask2 : masks) {
-                if (check(m, mask1, mask2)) {
-                    adj[mask1].emplace_back(mask2);
-                }
-            }
+        for (const auto& mask : masks) {  // Time: O(m4^m), Space: O(3^m)
+            backtracking(mask, -1, basis, &adj[mask]);
         }
         assert(accumulate(cbegin(adj), cend(adj), 0,
                           [](const auto& total, const auto& kvp) {
@@ -45,25 +42,16 @@ public:
     }
 
 private:
-    void backtracking(int mask, int m, vector<int> *result) {  // Time: O(2^m), Space: O(2^m)
-        if (!m) {
-            result->emplace_back(mask);
+    void backtracking(int mask1, int mask2, int b, vector<int> *result) {  // Time: O(2^m), Space: O(2^m)
+        if (!b) {
+            result->emplace_back(mask2);
             return;
         }
         for (int i = 0; i < 3; ++i) {
-            if (mask == -1 || mask % 3 != i) {
-                backtracking(mask != -1 ? mask * 3 + i : i, m - 1, result);
+            if ((mask1 == -1 || mask1 / b % 3 != i) && (mask2 == -1 || mask2 / (b * 3) % 3 != i)) {
+                backtracking(mask1, mask2 != -1 ? mask2 + i * b : i * b, b / 3, result);
             }
         }
-    }
-    
-    bool check(int m, int mask1, int mask2) {  // Time: O(m)
-        for (; m; mask1 /= 3, mask2 /= 3, --m) {
-            if (mask1 % 3 == mask2 % 3) {
-                return false;
-            }
-        }
-        return true;
     }
 };
 
