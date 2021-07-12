@@ -42,14 +42,14 @@ public:
     }
 
 private:
-    void backtracking(int mask1, int mask2, int b, vector<int> *result) {  // Time: O(2^m), Space: O(2^m)
-        if (!b) {
+    void backtracking(int mask1, int mask2, int basis, vector<int> *result) {  // Time: O(2^m), Space: O(2^m)
+        if (!basis) {
             result->emplace_back(mask2);
             return;
         }
         for (int i = 0; i < 3; ++i) {
-            if ((mask1 == -1 || mask1 / b % 3 != i) && (mask2 == -1 || mask2 / (b * 3) % 3 != i)) {
-                backtracking(mask1, mask2 != -1 ? mask2 + i * b : i * b, b / 3, result);
+            if ((mask1 == -1 || mask1 / basis % 3 != i) && (mask2 == -1 || mask2 / (basis * 3) % 3 != i)) {
+                backtracking(mask1, mask2 != -1 ? mask2 + i * basis : i * basis, basis / 3, result);
             }
         }
     }
