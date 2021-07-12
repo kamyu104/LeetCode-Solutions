@@ -12,15 +12,15 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        MOD = 10**9 + 7
-        def backtracking(prev, m, result):  # Time: O(2^m), Space: O(2^m)
+        MOD = 10**9+7
+        def backtracking(mask, m, result):  # Time: O(2^m), Space: O(2^m)
             if not m:
-                result.append(prev)
+                result.append(mask)
                 return
             for i in xrange(3):
-                if prev != -1 and prev%3 == i:
+                if mask != -1 and mask%3 == i:
                     continue
-                backtracking(prev*3+i if prev != -1 else i, m-1, result)
+                backtracking(mask*3+i if mask != -1 else i, m-1, result)
     
         def check(m, mask1, mask2): # Time: O(m)
             while m:
