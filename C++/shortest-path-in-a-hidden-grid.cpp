@@ -59,9 +59,6 @@ private:
                     if (!grid[nei.first][nei.second] || lookup[nei.first][nei.second]) {
                         continue;
                     }
-                    if (lookup[nei.first][nei.second]) {
-                        continue;
-                    }
                     new_left.emplace(nei);
                 }
             }
