@@ -29,7 +29,7 @@ class Solution(object):
         adj = collections.defaultdict(list)
         for mask in masks:  # Time: O(4^m), Space: O(3^m)
             backtracking(mask, -1, basis, adj[mask])
-        assert(sum(len(v) for v in adj.itervalues()) <= 2*3**m)
+        assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
         dp = collections.Counter(masks)
         for _ in xrange(n-1):  # Time: O(n*3^m), Space: O(2^m)
             assert(len(dp) == 3*2**(m-1))
