@@ -9,7 +9,7 @@ class Solution(object):
         """
         # (1) if both halfs have '?',
         #     alice will optimally choose 9 or 0 from one half to maximize or minimize the diff of both half sums,
-        #     and bob will optimally to choose the same number from the other half to minimize or maximize the diff of both half sums.
+        #     and bob will optimally choose the same number from the other half to minimize or maximize the diff of both half sums.
         #     in the end, it turns that only one half has '?' and the diff of both half sums is still the same as original
         # (2) if smaller half has no '?', then alice wins
         # (3) if smaller half has '?'
