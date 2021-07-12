@@ -71,9 +71,14 @@ public:
         for (int idx = 0; idx < m * n; ++idx) {
             int r = idx / m;
             int c = idx % m;
+            // sliding window with size m doesn't cross rows:
+            //   [3, 2, ..., 2] => 3*2^(m-1) combinations
             assert(r != 0 || c != 0 || size(dp) == 1);
             assert(r != 0 || c == 0 || size(dp) == 3 * pow(2, c - 1));
             assert(r == 0 || c != 0 || size(dp) == 3 * pow(2, m - 1));
+            // sliding window with size m crosses rows:
+            //   [*, ..., *, *, 3, 2, ..., 2] => 3*3 *2^(m-2) combinations
+            //   [2, ..., 2, 3, *, *, ..., *]
             assert(r == 0 || c == 0 || size(dp) == 3 * 3 * pow(2, m - 2));
             unordered_map<int, int> new_dp;
             for (const auto [mask, v] : dp) {
