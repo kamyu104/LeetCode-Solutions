@@ -14,7 +14,7 @@ public:
         vector<int> masks;
         backtracking(-1, -1, basis, &masks);  // Time: O(2^m), Space: O(2^m)
         unordered_map<int, vector<int>> adj;
-        for (const auto& mask : masks) {  // Time: O(m4^m), Space: O(3^m)
+        for (const auto& mask : masks) {  // Time: O(4^m), Space: O(3^m)
             backtracking(mask, -1, basis, &adj[mask]);
         }
         assert(accumulate(cbegin(adj), cend(adj), 0,
