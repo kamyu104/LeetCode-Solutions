@@ -1,4 +1,4 @@
-// Time:  O((m + n) * 3^m) = O(n * 3^m)
+// Time:  O(4^m + n * 3^m)
 // Space: O(3^m)
 
 // worse complexity, but faster due to too small m
@@ -14,7 +14,7 @@ public:
         vector<int> masks;
         backtracking(-1, -1, basis, &masks);  // Time: O(2^m), Space: O(2^m)
         unordered_map<int, vector<int>> adj;
-        for (const auto& mask : masks) {  // Time: O(m*3^m), Space: O(3^m)
+        for (const auto& mask : masks) {  // Time: O(4^m), Space: O(3^m)
             backtracking(mask, -1, basis, &adj[mask]);
         }
         assert(accumulate(cbegin(adj), cend(adj), 0,
