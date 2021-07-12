@@ -14,7 +14,10 @@ class Solution(object):
         # (2) if smaller half has no '?', alice wins
         # (3) if smaller half has '?'
         #     (3.1) cnt of '?' is odd, alice can choose the last number to make the diff of both half sums != 0, alice wins
-        #     (3.2) cnt of '?' is even, bob can always make a pair of sum 9 no matter what alice chooses, so if larger-smaller = cnt/2 * 9, then bob wins
+        #     (3.2) cnt of '?' is even
+        #           (3.2.1) if larger-smaller = cnt/2 * 9, bob can always make a pair of sum 9 no matter what alice chooses, then bob wins
+        #           (3.2.2) if larger-smaller > cnt/2 * 9, alice can always choose 0 no matter what bob chooses, then alice wins
+        #           (3.2.3) if larger-smaller < cnt/2 * 9, alice can always choose 9 no matter what bob chooses, then alice wins
         cnt = total = 0
         for i in xrange(len(num)):
             if num[i] == '?':
