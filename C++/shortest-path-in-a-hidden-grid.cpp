@@ -11,7 +11,7 @@
  */
 
 class Solution {
-public:
+private:
     template <typename T>
     struct PairHash {
         size_t operator()(const pair<T, T>& p) const {
