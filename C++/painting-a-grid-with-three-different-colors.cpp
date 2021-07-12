@@ -26,7 +26,7 @@ public:
             ++dp[mask];
         }
         for (int i = 0; i < n - 1; ++i) {  // Time: O(n*3^m), Space: O(2^m)
-            assert(size(dp) == 3  * pow(2, m - 1));
+            assert(size(dp) == 3 * pow(2, m - 1));
             unordered_map<int, int> new_dp;
             for (const auto [mask, v] : dp) {
                 for (const auto& new_mask : adj[mask]) {
@@ -73,7 +73,7 @@ public:
             int c = idx % m;
             assert(r != 0 || c != 0 || size(dp) == 1);
             assert(r != 0 || c == 0 || size(dp) == 3 * pow(2, c - 1));
-            assert(r == 0 || c != 0 || size(dp) == 3  * pow(2, m - 1));
+            assert(r == 0 || c != 0 || size(dp) == 3 * pow(2, m - 1));
             assert(r == 0 || c == 0 || size(dp) == 3 * 3 * pow(2, m - 2));
             unordered_map<int, int> new_dp;
             for (const auto [mask, v] : dp) {
