@@ -13,13 +13,13 @@ class Solution(object):
         :rtype: int
         """
         MOD = 10**9+7
-        def backtracking(mask1, mask2, b, result):  # Time: O(2^m), Space: O(2^m)
-            if b == 0:
+        def backtracking(mask1, mask2, basis, result):  # Time: O(2^m), Space: O(2^m)
+            if not basis:
                 result.append(mask2)
                 return
             for i in xrange(3):
-                if (mask1 == -1 or mask1//b%3 != i) and (mask2 == -1 or mask2//(b*3)%3 != i):
-                    backtracking(mask1, mask2+i*b if mask2 != -1 else i*b, b//3, result)
+                if (mask1 == -1 or mask1//basis%3 != i) and (mask2 == -1 or mask2//(basis*3)%3 != i):
+                    backtracking(mask1, mask2+i*basis if mask2 != -1 else i*basis, basis//3, result)
  
         if m > n:
             m, n = n, m
