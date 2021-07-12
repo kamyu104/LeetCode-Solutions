@@ -32,7 +32,7 @@ class Solution(object):
         assert(sum(len(v) for v in adj.itervalues()) <= 2*3**m)
         dp = collections.Counter(masks)
         for _ in xrange(n-1):  # Time: O(n*3^m), Space: O(2^m)
-            assert(len(dp) <= 3*2**(m-1))
+            assert(len(dp) == 3*2**(m-1))
             new_dp = collections.Counter()
             for mask, v in dp.iteritems():
                 for new_mask in adj[mask]:
@@ -60,8 +60,11 @@ class Solution2(object):
         basis = 3**(m-1)
         dp = collections.Counter({3**m-1: 1})
         for idx in xrange(m*n):
-            assert(len(dp) <= 3**2 * 2**(m-2))
             r, c = divmod(idx, m)
+            assert(r != 0 or c != 0 or len(dp) == 1)
+            assert(r != 0 or c == 0 or len(dp) == 3*2**(c-1))
+            assert(r == 0 or c != 0 or len(dp) == 3*2**(m-1))
+            assert(r == 0 or c == 0 or len(dp) == 3**2 * 2**(m-2))
             new_dp = collections.Counter()
             for mask, v in dp.iteritems():
                 choices = {0, 1, 2}
