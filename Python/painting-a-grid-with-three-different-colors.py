@@ -1,4 +1,4 @@
-# Time:  O(4^m + (m + n) * 3^m)
+# Time:  O(m * 4^m + n * 3^m)
 # Space: O(3^m)
 
 import collections
@@ -36,7 +36,7 @@ class Solution(object):
         masks = []
         backtracking(-1, m, masks)  # Time:  O(2^m), Space: O(2^m)
         adj = collections.defaultdict(list)
-        for mask1 in masks:  # Time: O(4^m + m*3^m), Space: O(3^m)
+        for mask1 in masks:  # Time: O(m * 4^m), Space: O(3^m)
             for mask2 in masks:
                 if check(m, mask1, mask2):
                     adj[mask1].append(mask2)
