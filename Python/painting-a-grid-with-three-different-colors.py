@@ -1,4 +1,4 @@
-# Time:  O(m * 4^m + n * 3^m)
+# Time:  O(4^m + n * 3^m)
 # Space: O(3^m)
 
 import collections
@@ -13,32 +13,30 @@ class Solution(object):
         :rtype: int
         """
         MOD = 10**9+7
-        def backtracking(mask, m, result):  # Time: O(2^m), Space: O(2^m)
-            if not m:
+        def backtracking(mask, b, result):  # Time: O(2^m), Space: O(2^m)
+            if b == 0:
                 result.append(mask)
                 return
             for i in xrange(3):
-                if mask == -1 or mask%3 != i:
-                    backtracking(mask*3+i if mask != -1 else i, m-1, result)
+                if mask == -1 or mask//(b*3)%3 != i:
+                    backtracking(mask+i*b if mask != -1 else i*b, b//3, result)
     
-        def check(m, mask1, mask2): # Time: O(m)
-            while m:
-                mask1, x = divmod(mask1, 3)
-                mask2, y = divmod(mask2, 3)
-                if x == y:
-                    return False
-                m -= 1
-            return True
-
+        def backtracking2(mask1, mask2, b, result):  # Time: O(2^m), Space: O(3^m)
+            if b == 0:
+                result.append(mask2)
+                return
+            for i in xrange(3):
+                if mask1//b%3 != i and (mask2 == -1 or mask2//(b*3)%3 != i):
+                    backtracking2(mask1, mask2+i*b if mask2 != -1 else i*b, b//3, result)
+ 
         if m > n:
             m, n = n, m
+        basis = 3**(m-1)
         masks = []
-        backtracking(-1, m, masks)  # Time:  O(2^m), Space: O(2^m)
+        backtracking(-1, basis, masks)  # Time:  O(2^m), Space: O(2^m)
         adj = collections.defaultdict(list)
-        for mask1 in masks:  # Time: O(m * 4^m), Space: O(3^m)
-            for mask2 in masks:
-                if check(m, mask1, mask2):
-                    adj[mask1].append(mask2)
+        for mask in masks:  # Time: O(4^m), Space: O(3^m)
+            backtracking2(mask, -1, basis, adj[mask])
         assert(sum(len(v) for v in adj.itervalues()) <= 2*3**m)
         dp = collections.Counter(masks)
         for _ in xrange(n-1):  # Time: O(n*3^m), Space: O(2^m)
@@ -67,8 +65,8 @@ class Solution2(object):
         MOD = 10**9+7
         if m > n:
             m, n = n, m
-        dp = collections.Counter({3**m-1: 1})
         basis = 3**(m-1)
+        dp = collections.Counter({3**m-1: 1})
         for idx in xrange(m*n):
             assert(len(dp) <= 3**2 * 2**(m-2))
             r, c = divmod(idx, m)
