@@ -18,9 +18,8 @@ class Solution(object):
                 result.append(mask)
                 return
             for i in xrange(3):
-                if mask != -1 and mask%3 == i:
-                    continue
-                backtracking(mask*3+i if mask != -1 else i, m-1, result)
+                if mask == -1 or mask%3 != i:
+                    backtracking(mask*3+i if mask != -1 else i, m-1, result)
     
         def check(m, mask1, mask2): # Time: O(m)
             while m:
