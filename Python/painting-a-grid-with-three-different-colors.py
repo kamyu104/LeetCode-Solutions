@@ -13,30 +13,22 @@ class Solution(object):
         :rtype: int
         """
         MOD = 10**9+7
-        def backtracking(mask, b, result):  # Time: O(2^m), Space: O(2^m)
-            if b == 0:
-                result.append(mask)
-                return
-            for i in xrange(3):
-                if mask == -1 or mask//(b*3)%3 != i:
-                    backtracking(mask+i*b if mask != -1 else i*b, b//3, result)
-    
-        def backtracking2(mask1, mask2, b, result):  # Time: O(2^m), Space: O(3^m)
+        def backtracking(mask1, mask2, b, result):  # Time: O(2^m), Space: O(2^m)
             if b == 0:
                 result.append(mask2)
                 return
             for i in xrange(3):
-                if mask1//b%3 != i and (mask2 == -1 or mask2//(b*3)%3 != i):
-                    backtracking2(mask1, mask2+i*b if mask2 != -1 else i*b, b//3, result)
+                if (mask1 == -1 or mask1//b%3 != i) and (mask2 == -1 or mask2//(b*3)%3 != i):
+                    backtracking(mask1, mask2+i*b if mask2 != -1 else i*b, b//3, result)
  
         if m > n:
             m, n = n, m
         basis = 3**(m-1)
         masks = []
-        backtracking(-1, basis, masks)  # Time:  O(2^m), Space: O(2^m)
+        backtracking(-1, -1, basis, masks)  # Time:  O(2^m), Space: O(2^m)
         adj = collections.defaultdict(list)
         for mask in masks:  # Time: O(4^m), Space: O(3^m)
-            backtracking2(mask, -1, basis, adj[mask])
+            backtracking(mask, -1, basis, adj[mask])
         assert(sum(len(v) for v in adj.itervalues()) <= 2*3**m)
         dp = collections.Counter(masks)
         for _ in xrange(n-1):  # Time: O(n*3^m), Space: O(2^m)
