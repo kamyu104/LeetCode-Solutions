@@ -30,7 +30,7 @@ public:
         for (const auto& mask : masks) {
             ++dp[mask];
         }
-        for (int i = 0; i < n - 1; ++i) {  // Time: O(n*3^m), Space: O(2^m)
+        for (int i = 0; i < n - 1; ++i) {  // Time: O(n * 3^m), Space: O(2^m)
             assert(size(dp) == 3 * pow(2, m - 1));
             unordered_map<int, int> new_dp;
             for (const auto [mask, v] : dp) {
