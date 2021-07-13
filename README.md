@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1924%20%2F%201924-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1932%20%2F%201932-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -849,6 +849,7 @@
 1817| [Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/)      | [C++](./C++/finding-the-users-active-minutes.cpp) [Python](./Python/finding-the-users-active-minutes.py)      | _O(n)_         | _O(n)_          | Medium         ||
 1915| [Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings/)      | [C++](./C++/number-of-wonderful-substrings.cpp) [Python](./Python/number-of-wonderful-substrings.py)      | _O(n)_         | _O(1)_          | Medium         ||
 1923| [Longest Common Subpath](https://leetcode.com/problems/longest-common-subpath/)      | [C++](./C++/longest-common-subpath.cpp) [Python](./Python/longest-common-subpath.py)      | _O(m * nlogn)_         | _O(n)_          | Hard         || Binary Search, `Rabin-Karp Algorithm`
+1925| [Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/)      | [C++](./C++/count-square-sum-triples.cpp) [Python](./Python/count-square-sum-triples.py)      | _O(n^2)_         | _O(n)_          | Easy         ||
 
 <br/>
 <div align="right">
@@ -1387,6 +1388,8 @@
 1728| [Cat and Mouse II](https://leetcode.com/problems/cat-and-mouse-ii/) | [C++](./C++/cat-and-mouse-ii.cpp) [Python](./Python/cat-and-mouse-ii.py) | _O((m * n)^2 * (m + n))_          | _O((m * n)^2)_          | Hard           | variant of [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/) | MiniMax, Topological Sort |
 1730|[Shortest Path to Get Food](https://leetcode.com/problems/shortest-path-to-get-food/)| [C++](./C++/shortest-path-to-get-food.cpp) [Python](./Python/shortest-path-to-get-food.py)| _O(m * n)_ | _O(m + n)_ | Medium |🔒| BFS 
 1765|[Map of Highest Peak](https://leetcode.com/problems/map-of-highest-peak/)| [C++](./C++/map-of-highest-peak.cpp) [Python](./Python/map-of-highest-peak.py)| _O(m * n)_ | _O(m * n)_ | Medium | | BFS 
+1926| [Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)|[C++](./C++/nearest-exit-from-entrance-in-maze.cpp) [Python](./Python/nearest-exit-from-entrance-in-maze.py) | _O(m * n)_      | _O(m + n)_          | Medium         | | Bi-BFS
+1928|[Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/)| [C++](./C++/minimum-cost-to-reach-destination-in-time.cpp) [Python](./Python/minimum-cost-to-reach-destination-in-time.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | variant of [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | `Dijkstra's Algorithm` |
 
 <br/>
 <div align="right">
@@ -1875,6 +1878,7 @@
 1911 | [Maximum Alternating Subsequence Sum](https://leetcode.com/problems/maximum-alternating-subsequence-sum/) | [C++](./C++/maximum-alternating-subsequence-sum.cpp) [Python](./Python/maximum-alternating-subsequence-sum.py) | _O(n)_ | _O(1)_ | Medium | variant of [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | |
 1913 | [Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/) | [C++](./C++/maximum-product-difference-between-two-pairs.cpp) [Python](./Python/maximum-product-difference-between-two-pairs.py) | _O(n)_ | _O(1)_ | Medium | | |
 1921 | [Eliminate Maximum Number of Monsters](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/) | [C++](./C++/eliminate-maximum-number-of-monsters.cpp) [Python](./Python/eliminate-maximum-number-of-monsters.py) | _O(nlogn)_ | _O(1)_ | Medium | | |
+1927 | [Sum Game](https://leetcode.com/problems/sum-game/) | [C++](./C++/sum-game.cpp) [Python](./Python/sum-game.py) | _O(n)_ | _O(1)_ | Medium | | |
 
 <br/>
 <div align="right">
