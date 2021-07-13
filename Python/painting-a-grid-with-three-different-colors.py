@@ -36,7 +36,7 @@ class Solution(object):
         #   [3,    2,    1,    2, ...,  2,      1]
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
         dp = collections.Counter(masks)
-        for _ in xrange(n-1):  # Time: O(n*3^m), Space: O(2^m)
+        for _ in xrange(n-1):  # Time: O(n * 3^m), Space: O(2^m)
             assert(len(dp) == 3*2**(m-1))
             new_dp = collections.Counter()
             for mask, v in dp.iteritems():
