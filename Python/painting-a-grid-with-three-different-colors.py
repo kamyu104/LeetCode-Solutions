@@ -27,7 +27,7 @@ class Solution(object):
         masks = []
         backtracking(-1, -1, basis, masks)  # Time: O(2^m), Space: O(2^m)
         adj = collections.defaultdict(list)
-        for mask in masks:  # O(3^m) leaves with O(m) path => Time: O(m * 3^m), Space: O(3^m)
+        for mask in masks:  # O(3^m) leaves in depth O(m) => Time: O(m * 3^m), Space: O(3^m)
             backtracking(mask, -1, basis, adj[mask])
         # 'o' uses the same color with its bottom-left one, 
         # 'x' uses the remaining color different from its left one and bottom-left one,
