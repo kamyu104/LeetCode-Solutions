@@ -1313,7 +1313,7 @@
 1373| [Maximum Sum BST in Binary Tree](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/) | [C++](./C++/maximum-sum-bst-in-binary-tree.cpp) [Python](./Python/maximum-sum-bst-in-binary-tree.py) | _O(n)_          | _O(h)_          | Hard           || DFS, Stack |
 1382| [Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/) | [C++](./C++/balance-a-binary-search-tree.cpp) [Python](./Python/balance-a-binary-search-tree.py) | _O(n)_          | _O(h)_          | Medium           || DFS, Stack |
 1902| [Depth of BST Given Insertion Order](https://depth-of-bst-given-insertion-order/)| [C++](./C++/depth-of-bst-given-insertion-order.cpp) [Python](./Python/depth-of-bst-given-insertion-order.py)   | _O(nlogn)_          | _O(n)_          | Medium         | 🔒 | SortedDict |
-1932| [Merge BSTs to Create Single BST](https://leetcode.com/problems/merge-bsts-to-create-single-bst/)|[C++](./C++/merge-bsts-to-create-single-bst.cpp) [Python](./Python/merge-bsts-to-create-single-bst.py) | _O(n)_      | _O(n)_          | Medium         | | BST, BFS
+1932| [Merge BSTs to Create Single BST](https://leetcode.com/problems/merge-bsts-to-create-single-bst/)|[C++](./C++/merge-bsts-to-create-single-bst.cpp) [Python](./Python/merge-bsts-to-create-single-bst.py) | _O(n)_      | _O(n)_          | Hard         | | BST, BFS
 
 <br/>
 <div align="right">
