@@ -32,7 +32,7 @@ class Solution(object):
         # 'o' uses the same color with its bottom-left one, 
         # 'x' uses the remaining color different from its left one and bottom-left one,
         # k is the cnt of 'o', 
-        #   [2, 1(o), 1(x), 1(o), ..., 1(o), 1(x)],  => nCr(m-1, k) * 3 * 2 * 2^k for k in xrange(m) = 3 * 2 * (2+1)^(m-1) = 2*3^m combinations
+        #   [2, 1(o), 1(x), 1(o), ..., 1(o), 1(x)] => nCr(m-1, k) * 3 * 2 * 2^k for k in xrange(m) = 3 * 2 * (2+1)^(m-1) = 2*3^m combinations
         #   [3,    2,    1,    2, ...,  2,      1]
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
         dp = collections.Counter(masks)
