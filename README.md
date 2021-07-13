@@ -342,6 +342,7 @@
 1909 | [Remove One Element to Make the Array Strictly Increasing](https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/) | [C++](./C++/remove-one-element-to-make-the-array-strictly-increasing.cpp) [Python](./Python/remove-one-element-to-make-the-array-strictly-increasing.py) | _O(n)_ | _O(1)_ | Easy ||
 1914 | [Cyclically Rotating a Grid](https://leetcode.com/problems/cyclically-rotating-a-grid/) | [C++](./C++/cyclically-rotating-a-grid.cpp) [Python](./Python/cyclically-rotating-a-grid.py) | _O(m * n)_ | _O(1)_ | Medium || Inplace
 1920 | [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/) | [C++](./C++/build-array-from-permutation.cpp) [Python](./Python/build-array-from-permutation.py) | _O(n)_ | _O(1)_ | Easy || Inplace
+1929 | [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | [C++](./C++/concatenation-of-array.cpp) [Python](./Python/concatenation-of-array.py) | _O(n)_ | _O(1)_ | Easy ||
 
 <br/>
 <div align="right">
@@ -850,6 +851,7 @@
 1915| [Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings/)      | [C++](./C++/number-of-wonderful-substrings.cpp) [Python](./Python/number-of-wonderful-substrings.py)      | _O(n)_         | _O(1)_          | Medium         ||
 1923| [Longest Common Subpath](https://leetcode.com/problems/longest-common-subpath/)      | [C++](./C++/longest-common-subpath.cpp) [Python](./Python/longest-common-subpath.py)      | _O(m * nlogn)_         | _O(n)_          | Hard         || Binary Search, `Rabin-Karp Algorithm`
 1925| [Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/)      | [C++](./C++/count-square-sum-triples.cpp) [Python](./Python/count-square-sum-triples.py)      | _O(n^2)_         | _O(n)_          | Easy         ||
+1930| [Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/)      | [C++](./C++/unique-length-3-palindromic-subsequences.cpp) [Python](./Python/unique-length-3-palindromic-subsequences.py)      | _O(n)_         | _O(1)_          | Medium         ||
 
 <br/>
 <div align="right">
@@ -1311,6 +1313,7 @@
 1373| [Maximum Sum BST in Binary Tree](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/) | [C++](./C++/maximum-sum-bst-in-binary-tree.cpp) [Python](./Python/maximum-sum-bst-in-binary-tree.py) | _O(n)_          | _O(h)_          | Hard           || DFS, Stack |
 1382| [Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/) | [C++](./C++/balance-a-binary-search-tree.cpp) [Python](./Python/balance-a-binary-search-tree.py) | _O(n)_          | _O(h)_          | Medium           || DFS, Stack |
 1902| [Depth of BST Given Insertion Order](https://depth-of-bst-given-insertion-order/)| [C++](./C++/depth-of-bst-given-insertion-order.cpp) [Python](./Python/depth-of-bst-given-insertion-order.py)   | _O(nlogn)_          | _O(n)_          | Medium         | 🔒 | SortedDict |
+1932| [Merge BSTs to Create Single BST](https://leetcode.com/problems/merge-bsts-to-create-single-bst/)|[C++](./C++/merge-bsts-to-create-single-bst.cpp) [Python](./Python/merge-bsts-to-create-single-bst.py) | _O(n)_      | _O(n)_          | Medium         | | BST, BFS
 
 <br/>
 <div align="right">
@@ -1725,6 +1728,7 @@
 1896| [Minimum Cost to Change the Final Value of Expression](https://leetcode.com/problems/minimum-cost-to-change-the-final-value-of-expression/)|[C++](./C++/minimum-cost-to-change-the-final-value-of-expression.cpp) [Python](./Python/minimum-cost-to-change-the-final-value-of-expression.py)| _O(n)_     | _O(n)_         | Hard         | | Stack, DP |
 1900| [The Earliest and Latest Rounds Where Players Compete](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/)|[C++](./C++/the-earliest-and-latest-rounds-where-players-compete.cpp) [Python](./Python/the-earliest-and-latest-rounds-where-players-compete.py)| _O(n^4)_     | _O(n^2)_         | Hard         | | |
 1908| [Game of Nim](https://leetcode.com/problems/game-of-nim/)|[C++](./C++/game-of-nim.cpp) [Python](./Python/game-of-nim.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 | |
+1931| [Painting a Grid With Three Different Colors](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/)|[C++](./C++/painting-a-grid-with-three-different-colors.cpp) [Python](./Python/painting-a-grid-with-three-different-colors.py)| _O(n * m * 2^m)_     | _O(2^m)_         | Hard         || DP, Backtracking |
 
 <br/>
 <div align="right">
