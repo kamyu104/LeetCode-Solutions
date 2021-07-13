@@ -14,7 +14,7 @@ public:
         vector<int> masks;
         backtracking(-1, -1, basis, &masks);  // Time: O(2^m), Space: O(2^m)
         unordered_map<int, vector<int>> adj;
-        for (const auto& mask : masks) {  // O(3^m) leaves with O(m) path => Time: O(m * 3^m), Space: O(3^m)
+        for (const auto& mask : masks) {  // O(3^m) leaves in depth O(m) => Time: O(m * 3^m), Space: O(3^m)
             backtracking(mask, -1, basis, &adj[mask]);
         }
         // 'o' uses the same color with its bottom-left one, 
