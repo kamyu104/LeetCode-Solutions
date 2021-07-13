@@ -29,6 +29,11 @@ class Solution(object):
         adj = collections.defaultdict(list)
         for mask in masks:  # Time: O(4^m), Space: O(3^m)
             backtracking(mask, -1, basis, adj[mask])
+        # 'o' uses the same color with its bottom-left one, 
+        # 'x' uses the remaining color different from its left one and bottom-left one,
+        # k is the cnt of 'o', 
+        #   [2, 1(o), 1(x), 1(o), ..., 1(o), 1(x)],  => nCr(m-1, k) * 3 * 2 * 2^k for k in xrange(m) = 3 * 2 * (2+1)^(m-1) = 2*3^m combinations
+        #   [3,    2,    1,    2, ...,  2,      1]
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
         dp = collections.Counter(masks)
         for _ in xrange(n-1):  # Time: O(n*3^m), Space: O(2^m)
