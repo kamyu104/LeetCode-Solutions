@@ -25,7 +25,7 @@ class Solution(object):
             m, n = n, m
         basis = 3**(m-1)
         masks = []
-        backtracking(-1, -1, basis, masks)  # Time:  O(2^m), Space: O(2^m)
+        backtracking(-1, -1, basis, masks)  # Time: O(2^m), Space: O(2^m)
         adj = collections.defaultdict(list)
         for mask in masks:  # Time: O(4^m), Space: O(3^m)
             backtracking(mask, -1, basis, adj[mask])
