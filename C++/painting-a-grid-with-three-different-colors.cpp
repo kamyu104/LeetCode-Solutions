@@ -21,15 +21,15 @@ public:
         //   'o' uses the same color with its bottom-left one, 
         //   'x' uses the remaining color different from its left one and bottom-left one,
         //   k is the cnt of 'o', 
-        //    [2, 1(o), 1(x), 1(o), ..., 1(o), 1(x)] => nCr(m-1, k) * 3 * 2 * 2^k for k in xrange(m) = 3 * 2 * (2+1)^(m-1) = 2*3^m combinations
-        //    [3,    2,    1,    2, ...,  2,      1]
+        //    [3, 1(o), 1(x), 1(o), ..., 1(o), 1(x)] => nCr(m-1, k) * 3 * 2 * 2^k for k in xrange(m) = 3 * 2 * (2+1)^(m-1) = 2*3^m combinations
+        //    [2,    2,    1,    2, ...,  2,      1]
         // another proof:
         //   given previous pair of colors, each pair of '?' has 3 choices of colors
-        //     [2, ?, ?, ..., ?] => 3 * 2 * 3^(m-1) = 2*3^m combinations
+        //     [3, ?, ?, ..., ?] => 3 * 2 * 3^(m-1) = 2*3^m combinations
         //         |  |       |
         //         3  3       3
         //         |  |       |
-        //     [3, ?, ?, ..., ?]
+        //     [2, ?, ?, ..., ?]
         assert(accumulate(cbegin(adj), cend(adj), 0,
                           [](const auto& total, const auto& kvp) {
                               return total + size(kvp.second);
