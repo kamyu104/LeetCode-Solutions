@@ -82,7 +82,7 @@ public:
             assert(r != 0 || c == 0 || size(dp) == 3 * pow(2, c - 1));
             assert(r == 0 || c != 0 || size(dp) == 3 * pow(2, m - 1));
             // sliding window with size m crosses rows:
-            //   [*, ..., *, *, 3, 2, ..., 2] => 3*3 *2^(m-2) combinations
+            //   [*, ..., *, *, 3, 2, ..., 2] => 3*3 * 2^(m-2) combinations
             //   [2, ..., 2, 3, *, *, ..., *]
             assert(r == 0 || c == 0 || size(dp) == 3 * 3 * pow(2, m - 2));
             unordered_map<int, int> new_dp;
