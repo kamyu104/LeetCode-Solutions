@@ -71,13 +71,18 @@ class Solution2(object):
         :rtype: int
         """
         MOD = 10**9+7
-        def backtracking(mask, basis, result):  # Time: O(2^m), Space: O(2^m)
-            if not basis:
-                result.add(mask)
-                return
-            for i in xrange(3):
-                if mask == -1 or mask//(basis*3)%3 != i:
-                    backtracking(mask+i*basis if mask != -1 else i*basis, basis//3, result)
+        def find_masks(m, basis):  # Time: 3 + 3*2 + 3*2*2 + ... + 3*2^(m-1) = 3 * (2^m - 1) = O(2^m), Space: O(2^m)
+            masks = set([0])
+            for c in xrange(m):
+                new_masks = set()
+                for mask in masks:
+                    choices = {0, 1, 2}
+                    if c > 0:
+                        choices.discard(mask//basis)  # get left grid
+                    for x in choices:
+                        new_masks.add((x*basis)+(mask//3))  # encoding mask
+                masks = new_masks
+            return masks
 
         def find_adj(m, basis, masks):  # Time: O(m * 3^m), Space: O(3^m)
             adj = collections.defaultdict(set)
@@ -113,7 +118,7 @@ class Solution2(object):
             m, n = n, m
         basis = 3**(m-1)
         masks = set()
-        backtracking(-1, basis, masks)  # Time: O(2^m), Space: O(2^m)
+        masks = find_masks(m, basis)  # alternative of backtracking, Time: O(2^m), Space: O(2^m)
         assert(len(masks) == 3 * 2**(m-1))
         adj = find_adj(m, basis, masks)  # alternative of backtracking, Time: O(m * 3^m), Space: O(3^m)
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
@@ -140,7 +145,7 @@ class Solution3(object):
         if m > n:
             m, n = n, m
         basis = 3**(m-1)
-        dp = collections.Counter({3**m-1: 1})
+        dp = collections.Counter({0: 1})
         for idx in xrange(m*n):
             r, c = divmod(idx, m)
             # sliding window with size m doesn't cross rows:
