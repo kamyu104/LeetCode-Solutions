@@ -102,7 +102,7 @@ public:
     }
 
 private:
-    unordered_set<int> find_masks(int m, int basis) {  // Time: 3 + 3*2 + 3*2*2 + ... + 3*2^(m-1) = 3 * (2^m - 1) = O(m * 3^m), Space: O(3^m)
+    unordered_set<int> find_masks(int m, int basis) {  // Time: 3 + 3*2 + 3*2*2 + ... + 3*2^(m-1) = 3 * (2^m - 1) = O(2^m), Space: O(2^m)
         unordered_set<int> masks = {0};
         for (int c = 0; c < m; ++c) {
             unordered_set<int> new_masks;
