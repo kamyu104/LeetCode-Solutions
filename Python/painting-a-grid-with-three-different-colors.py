@@ -58,12 +58,17 @@ class Solution(object):
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
         lookup = {mask:normalize(m, mask) for mask in masks}  # Time: O(m * 2^m)
         dp = collections.Counter(lookup[mask] for mask in masks)  # normalize colors to speed up performance
+        normalized_adj = collections.defaultdict(lambda:collections.defaultdict(int))
+        for mask1 in masks:
+            for mask2 in adj[mask1]:
+                if mask1 == lookup[mask1]:
+                    normalized_adj[mask1][lookup[mask2]] += 1
         for _ in xrange(n-1):  # Time: O(n * 3^m), Space: O(2^m)
             assert(len(dp) == 3*2**(m-1)//3//(2 if m >= 2 else 1))  # divided by 3 * 2 is since the first two colors are normalized to speed up performance
             new_dp = collections.Counter()
             for mask, v in dp.iteritems():
-                for new_mask in adj[mask]:
-                    new_dp[lookup[new_mask]] = (new_dp[lookup[new_mask]] + v) % MOD
+                for new_mask, cnt in normalized_adj[mask].iteritems():
+                    new_dp[lookup[new_mask]] = (new_dp[lookup[new_mask]] + v*cnt) % MOD
             dp = new_dp
         return reduce(lambda x,y: (x+y)%MOD, dp.itervalues(), 0)  # Time: O(2^m)
 
