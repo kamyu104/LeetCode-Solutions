@@ -21,6 +21,18 @@ class Solution(object):
                 if (mask1 == -1 or mask1//basis%3 != i) and (mask2 == -1 or mask2//(basis*3)%3 != i):
                     backtracking(mask1, mask2+i*basis if mask2 != -1 else i*basis, basis//3, result)
  
+        def normalized(m, basis, mask):
+            norm = {}
+            result = 0
+            while m:
+                mask, x = divmod(mask, 3)
+                if x not in norm:
+                    norm[x] = len(norm)
+                result += norm[x]*basis
+                basis //= 3
+                m -= 1
+            return result
+    
         if m > n:
             m, n = n, m
         basis = 3**(m-1)
@@ -44,15 +56,16 @@ class Solution(object):
         #         |  |       |
         #     [2, ?, ?, ..., ?]
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
-        dp = collections.Counter(masks)
+        dp = collections.Counter(masks[i] for i in xrange(len(masks)//3))
+        lookup = {mask:normalized(m, basis, mask) for mask in masks}  # Time: O(m * 2^m)
         for _ in xrange(n-1):  # Time: O(n * 3^m), Space: O(2^m)
-            assert(len(dp) == 3*2**(m-1))
+            assert(len(dp) <= 3*2**(m-1)//3)
             new_dp = collections.Counter()
             for mask, v in dp.iteritems():
                 for new_mask in adj[mask]:
-                    new_dp[new_mask] = (new_dp[new_mask] + v) % MOD
+                    new_dp[lookup[new_mask]] = (new_dp[lookup[new_mask]] + v) % MOD
             dp = new_dp
-        return reduce(lambda x,y: (x+y)%MOD, dp.itervalues(), 0)  # Time: O(2^m)
+        return 3*reduce(lambda x,y: (x+y)%MOD, dp.itervalues(), 0)%MOD  # Time: O(2^m)
 
 
 # Time:  O(m * 3^m + 2^(3 * m) * logn)
