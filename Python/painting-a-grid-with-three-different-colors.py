@@ -4,7 +4,7 @@
 import collections
 
 
-# better complexity for small m, small n
+# better complexity for small m, large n
 class Solution(object):
     def colorTheGrid(self, m, n):
         """
@@ -60,7 +60,7 @@ import collections
 import itertools
 
 
-# better complexity for small m, large n
+# better complexity for small m, super large n
 # matrix exponentiation solution
 class Solution2(object):
     def colorTheGrid(self, m, n):
