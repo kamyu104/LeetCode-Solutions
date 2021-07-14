@@ -56,8 +56,8 @@ class Solution(object):
         #         |  |       |
         #     [2, ?, ?, ..., ?]
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
-        dp = collections.Counter(masks[i] for i in xrange(len(masks)//3))  # fix the first color to speed up performance
         lookup = {mask:normalized(m, basis, mask) for mask in masks}  # Time: O(m * 2^m)
+        dp = collections.Counter(lookup[mask] for mask in masks)  # fix the first color to speed up performance
         for _ in xrange(n-1):  # Time: O(n * 3^m), Space: O(2^m)
             assert(len(dp) <= 3*2**(m-1)//3)  # divided by 3 is since the first color is fixed to speed up performance
             new_dp = collections.Counter()
@@ -65,7 +65,7 @@ class Solution(object):
                 for new_mask in adj[mask]:
                     new_dp[lookup[new_mask]] = (new_dp[lookup[new_mask]] + v) % MOD
             dp = new_dp
-        return 3*reduce(lambda x,y: (x+y)%MOD, dp.itervalues(), 0)%MOD  # Time: O(2^m)
+        return reduce(lambda x,y: (x+y)%MOD, dp.itervalues(), 0)  # Time: O(2^m)
 
 
 # Time:  O(m * 3^m + 2^(3 * m) * logn)
