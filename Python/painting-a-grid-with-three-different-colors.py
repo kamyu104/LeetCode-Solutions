@@ -159,13 +159,12 @@ class Solution3(object):
             if mask not in lookup[m]:
                 norm = {}
                 result, basis = 0, 1
-                while m:
+                for _ in xrange(m):
                     x = mask//basis%3
                     if x not in norm:
                         norm[x] = len(norm)
                     result += norm[x]*basis
                     basis *= 3
-                    m -= 1
                 lookup[m][mask] = result
             return lookup[m][mask]
 
