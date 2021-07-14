@@ -26,6 +26,7 @@ class Solution(object):
         basis = 3**(m-1)
         masks = []
         backtracking(-1, -1, basis, masks)  # Time: O(2^m), Space: O(2^m)
+        assert(len(masks) == 3 * 2**(m-1))
         adj = collections.defaultdict(list)
         for mask in masks:  # O(3^m) leaves in depth O(m) => Time: O(m * 3^m), Space: O(3^m)
             backtracking(mask, -1, basis, adj[mask])
@@ -96,6 +97,7 @@ class Solution2(object):
         basis = 3**(m-1)
         masks = set()
         backtracking(-1, -1, basis, masks)  # Time: O(2^m), Space: O(2^m)
+        assert(len(masks) == 3 * 2**(m-1))
         adj = collections.defaultdict(set)
         for mask in masks:  # O(3^m) leaves in depth O(m) => Time: O(m * 3^m), Space: O(3^m)
             backtracking(mask, -1, basis, adj[mask])
