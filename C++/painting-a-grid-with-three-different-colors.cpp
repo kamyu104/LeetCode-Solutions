@@ -51,6 +51,10 @@ public:
                 }
             }
         }
+        assert(accumulate(cbegin(normalized_adj), cend(normalized_adj), 0,
+                          [](const auto& total, const auto& kvp) {
+                              return total + size(kvp.second);
+                          }) <= 2 * pow(3, m) / 3 / 2);
         for (int i = 0; i < n - 1; ++i) {  // Time: O(n * 3^m), Space: O(2^m)
             assert(size(dp) == 3 * pow(2, m - 1) / 3 / (m >= 2 ? 2 : 1));  // divided by 3 * 2 is since the first two colors are normalized to speed up performance
             unordered_map<int, int> new_dp;
@@ -119,6 +123,7 @@ public:
         for (const auto& mask : masks) {
             normalized_mask_cnt[lookup[mask]] = (normalized_mask_cnt[lookup[mask]] + 1) % MOD;
         }
+        assert(size(normalized_mask_cnt) == 3 * pow(2, m - 1) / 3 / (m >= 2 ? 2 : 1));  // divided by 3 * 2 is since the first two colors are normalized to speed up performance
         unordered_map<int, unordered_map<int, int>> normalized_adj;
         for (const auto& mask1 : masks) {
             for (const auto& mask2 : adj.at(mask1)) {
@@ -127,6 +132,10 @@ public:
                 }
             }
         }
+        assert(accumulate(cbegin(normalized_adj), cend(normalized_adj), 0,
+                          [](const auto& total, const auto& kvp) {
+                              return total + size(kvp.second);
+                          }) <= 2 * pow(3, m) / 3 / 2);
         vector<vector<int>> matrix;
         vector<vector<int>> counts(1);
         for (const auto& [mask1, cnt] : normalized_mask_cnt) {
