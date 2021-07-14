@@ -54,7 +54,7 @@ class Solution(object):
         return reduce(lambda x,y: (x+y)%MOD, dp.itervalues(), 0)  # Time: O(2^m)
 
 
-# Time:  O(2^(3 * m) * logn)
+# Time:  O(m * 3^m + 2^(3 * m) * logn)
 # Space: O(2^(2 * m))
 import collections
 import itertools
