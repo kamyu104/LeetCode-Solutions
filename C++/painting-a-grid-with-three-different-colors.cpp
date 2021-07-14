@@ -206,6 +206,8 @@ public:
             swap(m, n);
         }
         const int basis = pow(3, m - 1);
+        int b = basis;
+        unordered_map<int, unordered_map<int, int>> lookup;
         unordered_map<int, int> dp = {{0, 1}};
         for (int idx = 0; idx < m * n; ++idx) {
             int r = idx / m;
@@ -213,12 +215,12 @@ public:
             // sliding window with size m doesn't cross rows:
             //   [3, 2, ..., 2] => 3*2^(m-1) combinations
             assert(r != 0 || c != 0 || size(dp) == 1);
-            assert(r != 0 || c == 0 || size(dp) == 3 * pow(2, c - 1));
-            assert(r == 0 || c != 0 || size(dp) == 3 * pow(2, m - 1));
+            assert(r != 0 || c == 0 || size(dp) == 3 * pow(2, c - 1) / 3 / (c >= 2 ? 2 : 1));  // divided by 3 * 2 is since the first two colors are normalized to speed up performance
+            assert(r == 0 || c != 0 || size(dp) == 3 * pow(2, m - 1) / 3 / (m >= 2 ? 2 : 1));  // divided by 3 * 2 is since the first two colors are normalized to speed up performance
             // sliding window with size m crosses rows:
             //   [*, ..., *, *, 3, 2, ..., 2] => 3*3 * 2^(m-2) combinations
             //   [2, ..., 2, 3, *, *, ..., *]
-            assert(r == 0 || c == 0 || size(dp) == 3 * 3 * pow(2, m - 2));
+            assert(r == 0 || c == 0 || size(dp) == (m == 1 ? 1 : m == 2 ? 2 : (3 * 3 * pow(2, m - 2) / 3 / 2)));  // divided by 3 * 2 for m >= 3 is since the first two colors of window are normalized to speed up performance
             unordered_map<int, int> new_dp;
             for (const auto [mask, v] : dp) {
                 vector<bool> used(3);
@@ -232,9 +234,12 @@ public:
                     if (used[x]) {
                         continue;
                     }
-                    const auto new_mask = (x * basis) + (mask / 3);  // encoding mask
+                    const auto new_mask = normalize(min(idx + 1, m), ((x * basis) + (mask / 3)) / b, &lookup) * b;  // encoding mask
                     new_dp[new_mask] = (new_dp[new_mask] + v) % MOD;
                 }
+            }
+            if (b > 1) {
+                b /= 3;
             }
             dp = move(new_dp);
         }
@@ -242,5 +247,21 @@ public:
                           [](const auto& total, const auto& kvp) {
                               return (total + kvp.second) % MOD;
                           });  // Time: O(2^m)
+    }
+
+    int normalize(int m, int mask, unordered_map<int, unordered_map<int, int>> *lookup) {
+        if (!lookup->count(mask)) {
+            unordered_map<int, int> norm;
+            int result = 0, basis = 1;
+            for (int i = 0; i < m; ++i, basis *= 3) {
+                int x = mask / basis % 3;
+                if (!norm.count(x)) {
+                    norm[x] = size(norm);
+                }
+                result += norm[x] * basis;
+            }
+            (*lookup)[m][mask] = result;
+        }
+        return (*lookup)[m][mask];
     }
 };
