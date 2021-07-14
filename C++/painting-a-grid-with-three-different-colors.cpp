@@ -51,10 +51,16 @@ public:
                 }
             }
         }
+        // upper bound divided by 3 * 2 is since the first two colors in upper row are normalized to speed up performance
         assert(accumulate(cbegin(normalized_adj), cend(normalized_adj), 0,
                           [](const auto& total, const auto& kvp) {
                               return total + size(kvp.second);
                           }) <= 2 * pow(3, m) / 3 / 2);
+        // lower bound divided by one more 3 is since one color in lower row could be also normalized
+        assert(accumulate(cbegin(normalized_adj), cend(normalized_adj), 0,
+                          [](const auto& total, const auto& kvp) {
+                              return total + size(kvp.second);
+                          }) >= 2 * pow(3, m) / 3 / 2 / 3);
         for (int i = 0; i < n - 1; ++i) {  // Time: O(n * 3^m), Space: O(2^m)
             assert(size(dp) == 3 * pow(2, m - 1) / 3 / (m >= 2 ? 2 : 1));  // divided by 3 * 2 is since the first two colors are normalized to speed up performance
             unordered_map<int, int> new_dp;
@@ -132,10 +138,16 @@ public:
                 }
             }
         }
+        // upper bound divided by 3 * 2 is since the first two colors in upper row are normalized to speed up performance
         assert(accumulate(cbegin(normalized_adj), cend(normalized_adj), 0,
                           [](const auto& total, const auto& kvp) {
                               return total + size(kvp.second);
                           }) <= 2 * pow(3, m) / 3 / 2);
+        // lower bound divided by one more 3 is since one color in lower row could be also normalized
+        assert(accumulate(cbegin(normalized_adj), cend(normalized_adj), 0,
+                          [](const auto& total, const auto& kvp) {
+                              return total + size(kvp.second);
+                          }) >= 2 * pow(3, m) / 3 / 2 / 3);
         vector<vector<int>> matrix;
         vector<vector<int>> counts(1);
         for (const auto& [mask1, cnt] : normalized_mask_cnt) {
