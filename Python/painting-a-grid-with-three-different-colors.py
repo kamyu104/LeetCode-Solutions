@@ -62,7 +62,7 @@ class Solution(object):
         for mask1 in masks:
             for mask2 in adj[mask1]:
                 if mask1 == lookup[mask1]:
-                    normalized_adj[lookup[mask1]][lookup[mask2]] += 1
+                    normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]]+1)%MOD
         for _ in xrange(n-1):  # Time: O(n * 3^m), Space: O(2^m)
             assert(len(dp) == 3*2**(m-1)//3//(2 if m >= 2 else 1))  # divided by 3 * 2 is since the first two colors are normalized to speed up performance
             new_dp = collections.Counter()
