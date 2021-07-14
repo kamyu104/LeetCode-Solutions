@@ -118,7 +118,7 @@ class Solution2(object):
         return reduce(lambda x,y: (x+y)%MOD,
                       matrix_mult([[1]*len(masks)],
                       matrix_expo([[int(mask2 in adj[mask1]) for mask2 in masks] for mask1 in masks], n-1))[0],
-                      0)
+                      0)  # Time: O((2^m)^3 * logn), Space: O((2^m)^2)
 
 
 # Time:  (m * n grids) * (O(3*3*2^(m-2)) possible states per grid) = O(n * m * 2^m)
