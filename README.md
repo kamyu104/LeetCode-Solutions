@@ -1728,7 +1728,7 @@
 1896| [Minimum Cost to Change the Final Value of Expression](https://leetcode.com/problems/minimum-cost-to-change-the-final-value-of-expression/)|[C++](./C++/minimum-cost-to-change-the-final-value-of-expression.cpp) [Python](./Python/minimum-cost-to-change-the-final-value-of-expression.py)| _O(n)_     | _O(n)_         | Hard         | | Stack, DP |
 1900| [The Earliest and Latest Rounds Where Players Compete](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/)|[C++](./C++/the-earliest-and-latest-rounds-where-players-compete.cpp) [Python](./Python/the-earliest-and-latest-rounds-where-players-compete.py)| _O(n^4)_     | _O(n^2)_         | Hard         | | |
 1908| [Game of Nim](https://leetcode.com/problems/game-of-nim/)|[C++](./C++/game-of-nim.cpp) [Python](./Python/game-of-nim.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 | |
-1931| [Painting a Grid With Three Different Colors](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/)|[C++](./C++/painting-a-grid-with-three-different-colors.cpp) [Python](./Python/painting-a-grid-with-three-different-colors.py)| _O(n * m * 2^m)_     | _O(2^m)_         | Hard         || DP, Backtracking, Matrix Exponentiation |
+1931| [Painting a Grid With Three Different Colors](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/)|[C++](./C++/painting-a-grid-with-three-different-colors.cpp) [Python](./Python/painting-a-grid-with-three-different-colors.py)| _O(n * m * 2^m)_     | _O(2^m)_         | Hard         || DP, Backtracking, Matrix Exponentiation, State Compression |
 
 <br/>
 <div align="right">
