@@ -21,7 +21,7 @@ class Solution(object):
                 if (mask1 == -1 or mask1//basis%3 != i) and (mask2 == -1 or mask2//(basis*3)%3 != i):
                     backtracking(mask1, mask2+i*basis if mask2 != -1 else i*basis, basis//3, result)
  
-        def normalized(m, basis, mask):
+        def normalize(m, basis, mask):
             norm = {}
             result = 0
             while m:
@@ -56,7 +56,7 @@ class Solution(object):
         #         |  |       |
         #     [2, ?, ?, ..., ?]
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
-        lookup = {mask:normalized(m, basis, mask) for mask in masks}  # Time: O(m * 2^m)
+        lookup = {mask:normalize(m, basis, mask) for mask in masks}  # Time: O(m * 2^m)
         dp = collections.Counter(lookup[mask] for mask in masks)  # fix the first color to speed up performance
         for _ in xrange(n-1):  # Time: O(n * 3^m), Space: O(2^m)
             assert(len(dp) <= 3*2**(m-1)//3)  # divided by 3 is since the first color is fixed to speed up performance
