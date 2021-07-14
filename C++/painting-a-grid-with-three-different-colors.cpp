@@ -111,15 +111,32 @@ public:
                           [](const auto& total, const auto& kvp) {
                               return total + size(kvp.second);
                           }) == 2 * pow(3, m));
-        vector<vector<int>> matrix;
+        unordered_map<int, int> lookup;
+        for (const auto& mask : masks) {  // Time: O(m * 2^m)
+            lookup[mask] = normalize(m, mask);
+        }
+        unordered_map<int, int> normalized_mask_cnt;
+        for (const auto& mask : masks) {
+            normalized_mask_cnt[lookup[mask]] = (normalized_mask_cnt[lookup[mask]] + 1) % MOD;
+        }
+        unordered_map<int, unordered_map<int, int>> normalized_adj;
         for (const auto& mask1 : masks) {
-            matrix.emplace_back();
-            for (const auto& mask2 : masks)  {
-                matrix.back().emplace_back(adj.at(mask1).count(mask2));
+            for (const auto& mask2 : adj.at(mask1)) {
+                if (mask1 == lookup[mask1]) {
+                    normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]] + 1) % MOD;
+                }
             }
         }
-        const auto& result = matrixMult(vector<vector<int>>(1, vector<int>(size(masks), 1)),
-                                        matrixExpo(matrix, n - 1));  // Time: O((2^m)^3 * logn), Space: O((2^m)^2)
+        vector<vector<int>> matrix;
+        vector<vector<int>> counts(1);
+        for (const auto& [mask1, cnt] : normalized_mask_cnt) {
+            matrix.emplace_back();
+            for (const auto& [mask2, cnt] : normalized_mask_cnt)  {
+                matrix.back().emplace_back(normalized_adj[mask1][mask2]);
+            }
+            counts[0].emplace_back(cnt);
+        }
+        const auto& result = matrixMult(counts, matrixExpo(matrix, n - 1));  // Time: O((2^m)^3 * logn), Space: O((2^m)^2)
         return accumulate(cbegin(result[0]), cend(result[0]), 0,
                           [](const auto& total, const auto& x) {
                               return (total + x) % MOD;
@@ -195,6 +212,19 @@ private:
                 }
                 result[i][j] = static_cast<int>(entry);
             }
+        }
+        return result;
+    }
+
+    int normalize(int m, int mask) {
+        unordered_map<int, int> norm;
+        int result = 0, basis = 1;
+        for (; m; --m, basis *= 3) {
+            int x = mask / basis % 3;
+            if (!norm.count(x)) {
+                norm[x] = size(norm);
+            }
+            result += norm[x] * basis;
         }
         return result;
     }
