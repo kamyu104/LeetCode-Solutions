@@ -79,8 +79,7 @@ public:
             swap(m, n);
         }
         const int basis = pow(3, m - 1);
-        unordered_set<int> masks;
-        backtracking(-1, basis, &masks);  // Time: O(2^m), Space: O(2^m)
+        const auto& masks = find_masks(m, basis);  // alternative of backtracking, Time: O(2^m), Space: O(2^m)
         assert(size(masks) == 3 * pow(2, m - 1));
         const auto& adj = find_adj(m, basis, masks);  // alternative of backtracking, Time: O(m * 3^m), Space: O(3^m)
         assert(accumulate(cbegin(adj), cend(adj), 0,
@@ -103,16 +102,22 @@ public:
     }
 
 private:
-    void backtracking(int mask, int basis, unordered_set<int> *result) {  // Time: O(2^m), Space: O(2^m)
-        if (!basis) {
-            result->emplace(mask);
-            return;
-        }
-        for (int i = 0; i < 3; ++i) {
-            if (mask == -1 || mask / (basis * 3) % 3 != i) {
-                backtracking(mask != -1 ? mask + i * basis : i * basis, basis / 3, result);
+    unordered_set<int> find_masks(int m, int basis) {  // Time: 3 + 3*2 + 3*2*2 + ... + 3*2^(m-1) = 3 * (2^m - 1) = O(m * 3^m), Space: O(3^m)
+        unordered_set<int> masks = {0};
+        for (int c = 0; c < m; ++c) {
+            unordered_set<int> new_masks;
+            for (const auto& mask : masks) {
+                unordered_set<int> choices = {0, 1, 2};
+                if (c > 0) {
+                    choices.erase(mask / basis);  // get left grid
+                }
+                for (const auto&x : choices) {
+                    new_masks.emplace((x * basis) + (mask / 3));  // encoding mask
+                }
             }
+            masks = move(new_masks);
         }
+        return masks;
     }
 
     unordered_map<int, unordered_set<int>> find_adj(int m, int basis, const unordered_set<int>& masks) {  // Time: O(m * 3^m), Space: O(3^m)
@@ -184,7 +189,7 @@ public:
             swap(m, n);
         }
         const int basis = pow(3, m - 1);
-        unordered_map<int, int> dp = {{(int(pow(3, m))) - 1, 1}};
+        unordered_map<int, int> dp = {{0, 1}};
         for (int idx = 0; idx < m * n; ++idx) {
             int r = idx / m;
             int c = idx % m;
