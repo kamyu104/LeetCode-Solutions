@@ -36,7 +36,7 @@ public:
                               return total + size(kvp.second);
                           }) == 2 * pow(3, m));
         unordered_map<int, int> lookup;
-        for (const auto& mask : masks) {  // fix the first color to speed up performance
+        for (const auto& mask : masks) {  // normalize colors to speed up performance
             lookup[mask] = normalize(m, basis, mask);
         }
         unordered_map<int, int> dp;
@@ -44,7 +44,7 @@ public:
             ++dp[lookup[mask]];
         }
         for (int i = 0; i < n - 1; ++i) {  // Time: O(n * 3^m), Space: O(2^m)
-            assert(size(dp) <= 3 * pow(2, m - 1) / 3);  // divided by 3 is since the first color is fixed to speed up performance
+            assert(size(dp) == 3 * pow(2, m - 1) / 3 / (m >= 2 ? 2 : 1));  // divided by 3 * 2 is since the first two colors are normalized to speed up performance
             unordered_map<int, int> new_dp;
             for (const auto [mask, v] : dp) {
                 for (const auto& new_mask : adj[mask]) {
