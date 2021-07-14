@@ -197,17 +197,17 @@ public:
     }
 
 private:
-    unordered_set<int> find_masks(int m, int basis) {  // Time: 3 + 3*2 + 3*2*2 + ... + 3*2^(m-1) = 3 * (2^m - 1) = O(2^m), Space: O(2^m)
-        unordered_set<int> masks = {0};
+    vector<int> find_masks(int m, int basis) {  // Time: 3 + 3*2 + 3*2*2 + ... + 3*2^(m-1) = 3 * (2^m - 1) = O(2^m), Space: O(2^m)
+        vector<int> masks = {0};
         for (int c = 0; c < m; ++c) {
-            unordered_set<int> new_masks;
+            vector<int> new_masks;
             for (const auto& mask : masks) {
                 unordered_set<int> choices = {0, 1, 2};
                 if (c > 0) {
                     choices.erase(mask / basis);  // get left grid
                 }
                 for (const auto&x : choices) {
-                    new_masks.emplace((x * basis) + (mask / 3));  // encoding mask
+                    new_masks.emplace_back((x * basis) + (mask / 3));  // encoding mask
                 }
             }
             masks = move(new_masks);
@@ -215,13 +215,13 @@ private:
         return masks;
     }
 
-    unordered_map<int, unordered_set<int>> find_adj(int m, int basis, const unordered_set<int>& masks) {  // Time: O(m * 3^m), Space: O(3^m)
-        unordered_map<int, unordered_set<int>> adj;
+    unordered_map<int, vector<int>> find_adj(int m, int basis, const vector<int>& masks) {  // Time: O(m * 3^m), Space: O(3^m)
+        unordered_map<int, vector<int>> adj;
         for (const auto& mask : masks) {  // O(2^m)
-            adj[mask].emplace(mask);
+            adj[mask].emplace_back(mask);
         }
         for (int c = 0; c < m; ++c) {
-            unordered_map<int, unordered_set<int>> new_adj;
+            unordered_map<int, vector<int>> new_adj;
             for (const auto& [mask1, mask2s] : adj) {
                 for (const auto& mask : mask2s) {
                     unordered_set<int> choices = {0, 1, 2};
@@ -230,7 +230,7 @@ private:
                         choices.erase(mask / basis);  // get left grid
                     }
                     for (const auto&x : choices) {
-                        new_adj[mask1].emplace((x * basis) + (mask / 3));  // encoding mask
+                        new_adj[mask1].emplace_back((x * basis) + (mask / 3));  // encoding mask
                     }
                 }
             }
