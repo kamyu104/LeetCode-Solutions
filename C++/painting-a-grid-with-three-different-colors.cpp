@@ -110,7 +110,7 @@ public:
             }
         }
         const auto& result = matrixMult(vector<vector<int>>(1, vector<int>(size(masks), 1)),
-                                        matrixExpo(matrix, n - 1));
+                                        matrixExpo(matrix, n - 1));  // Time: O((2^m)^3 * logn), Space: O((2^m)^2)
         return accumulate(cbegin(result[0]), cend(result[0]), 0,
                           [](const auto& total, const auto& x) {
                               return (total + x) % MOD;
