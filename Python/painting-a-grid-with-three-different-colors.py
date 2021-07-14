@@ -132,6 +132,18 @@ class Solution2(object):
                 K /= 2
             return result
 
+        def normalize(m, mask):
+            norm = {}
+            result, basis = 0, 1
+            while m:
+                x = mask//basis%3
+                if x not in norm:
+                    norm[x] = len(norm)
+                result += norm[x]*basis
+                basis *= 3
+                m -= 1
+            return result
+
         if m > n:
             m, n = n, m
         basis = 3**(m-1)
@@ -140,9 +152,18 @@ class Solution2(object):
         assert(len(masks) == 3 * 2**(m-1))
         adj = find_adj(m, basis, masks)  # alternative of backtracking, Time: O(m * 3^m), Space: O(3^m)
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
+        lookup = {mask:normalize(m, mask) for mask in masks}  # Time: O(m * 2^m)
+        normalized_mask_cnt = collections.Counter(lookup[mask] for mask in masks)
+        normalized_adj = collections.defaultdict(lambda:collections.defaultdict(int))
+        for mask1 in masks:
+            for mask2 in adj[mask1]:
+                if mask1 == lookup[mask1]:
+                    normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]]+1)%MOD
         return reduce(lambda x,y: (x+y)%MOD,
-                      matrix_mult([[1]*len(masks)],
-                      matrix_expo([[int(mask2 in adj[mask1]) for mask2 in masks] for mask1 in masks], n-1))[0],
+                      matrix_mult([normalized_mask_cnt.values()],
+                                   matrix_expo([[normalized_adj[mask1][mask2]
+                                                 for mask2 in normalized_mask_cnt.iterkeys()] 
+                                                 for mask1 in normalized_mask_cnt.iterkeys()], n-1))[0],
                       0)  # Time: O((2^m)^3 * logn), Space: O((2^m)^2)
 
 
