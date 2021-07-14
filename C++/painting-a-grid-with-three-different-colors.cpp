@@ -249,7 +249,7 @@ public:
                           });  // Time: O(2^m)
     }
 
-    int normalize(int m, int mask, unordered_map<int, unordered_map<int, int>> *lookup) {
+    int normalize(int m, int mask, unordered_map<int, unordered_map<int, int>> *lookup) {  // compute and cache, at most O(3*2^(m-3)) time and space
         if (!lookup->count(mask)) {
             unordered_map<int, int> norm;
             int result = 0, basis = 1;
