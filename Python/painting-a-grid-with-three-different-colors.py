@@ -117,7 +117,7 @@ class Solution2(object):
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
         return reduce(lambda x,y: (x+y)%MOD,
                       matrix_mult([[1]*len(masks)],
-                      matrix_expo([[mask2 in adj[mask1] for mask2 in masks] for mask1 in masks], n-1))[0],
+                      matrix_expo([[int(mask2 in adj[mask1]) for mask2 in masks] for mask1 in masks], n-1))[0],
                       0)
 
 
