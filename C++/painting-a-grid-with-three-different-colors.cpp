@@ -37,7 +37,7 @@ public:
                           }) == 2 * pow(3, m));
         unordered_map<int, int> lookup;
         for (const auto& mask : masks) {  // Time: O(m * 2^m)
-            lookup[mask] = normalize(m, basis, mask);
+            lookup[mask] = normalize(m, mask);
         }
         unordered_map<int, int> dp;
         for (const auto& mask : masks) {  // normalize colors to speed up performance
@@ -72,14 +72,15 @@ private:
         }
     }
  
-    int normalize(int m, int basis, int mask) {
+    int normalize(int m, int mask) {
         unordered_map<int, int> norm;
-        int result = 0;
-        for (; m; --m, mask /= 3, basis /= 3) {
-            if (!norm.count(mask % 3)) {
-                norm[mask % 3] = size(norm);
+        int result = 0, basis = 1;
+        for (; m; --m, basis *= 3) {
+            int x = mask / basis % 3;
+            if (!norm.count(x)) {
+                norm[x] = size(norm);
             }
-            result += basis * norm[mask % 3];
+            result += norm[x] * basis;
         }
         return result;
     }
