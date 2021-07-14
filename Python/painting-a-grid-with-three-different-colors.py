@@ -125,7 +125,7 @@ import collections
 
 
 # better complexity for large m, large n
-class Solution2(object):
+class Solution3(object):
     def colorTheGrid(self, m, n):
         """
         :type m: int
