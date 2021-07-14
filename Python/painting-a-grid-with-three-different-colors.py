@@ -79,7 +79,7 @@ class Solution2(object):
                 if mask == -1 or mask//(basis*3)%3 != i:
                     backtracking(mask+i*basis if mask != -1 else i*basis, basis//3, result)
 
-        def find_adj(m, masks):  # Time: O(m * 3^m), Space: O(3^m)
+        def find_adj(m, basis, masks):  # Time: O(m * 3^m), Space: O(3^m)
             adj = collections.defaultdict(set)
             for mask in masks:  # O(2^m)
                 adj[mask].add(mask)
@@ -115,7 +115,7 @@ class Solution2(object):
         masks = set()
         backtracking(-1, basis, masks)  # Time: O(2^m), Space: O(2^m)
         assert(len(masks) == 3 * 2**(m-1))
-        adj = find_adj(m, masks)  # alternative of backtracking, Time: O(m * 3^m), Space: O(3^m)
+        adj = find_adj(m, basis, masks)  # alternative of backtracking, Time: O(m * 3^m), Space: O(3^m)
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
         return reduce(lambda x,y: (x+y)%MOD,
                       matrix_mult([[1]*len(masks)],
