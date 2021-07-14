@@ -92,24 +92,24 @@ class Solution2(object):
         """
         MOD = 10**9+7
         def find_masks(m, basis):  # Time: 3 + 3*2 + 3*2*2 + ... + 3*2^(m-1) = 3 * (2^m - 1) = O(2^m), Space: O(2^m)
-            masks = set([0])
+            masks = [0]
             for c in xrange(m):
-                new_masks = set()
+                new_masks = []
                 for mask in masks:
                     choices = {0, 1, 2}
                     if c > 0:
                         choices.discard(mask//basis)  # get left grid
                     for x in choices:
-                        new_masks.add((x*basis)+(mask//3))  # encoding mask
+                        new_masks.append((x*basis)+(mask//3))  # encoding mask
                 masks = new_masks
             return masks
 
         def find_adj(m, basis, masks):  # Time: O(m * 3^m), Space: O(3^m)
-            adj = collections.defaultdict(set)
+            adj = collections.defaultdict(list)
             for mask in masks:  # O(2^m)
-                adj[mask].add(mask)
+                adj[mask].append(mask)
             for c in xrange(m):
-                new_adj = collections.defaultdict(set)
+                new_adj = collections.defaultdict(list)
                 for mask1, mask2s in adj.iteritems():
                     for mask in mask2s:
                         choices = {0, 1, 2}
@@ -117,7 +117,7 @@ class Solution2(object):
                         if c > 0:
                             choices.discard(mask//basis)  # get left grid
                         for x in choices:
-                            new_adj[mask1].add((x*basis)+(mask//3))  # encoding mask
+                            new_adj[mask1].append((x*basis)+(mask//3))  # encoding mask
                 adj = new_adj
             return adj
  
