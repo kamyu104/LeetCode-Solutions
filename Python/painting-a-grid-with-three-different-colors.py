@@ -61,7 +61,7 @@ import itertools
 
 
 # better complexity for small m, large n
-# matrix exponentiation
+# matrix exponentiation solution
 class Solution2(object):
     def colorTheGrid(self, m, n):
         """
@@ -80,12 +80,10 @@ class Solution2(object):
 
         def matrix_mult(A, B):
             ZB = zip(*B)
-            return [[sum(a*b % MOD for a, b in itertools.izip(row, col)) % MOD
-                     for col in ZB] for row in A]
+            return [[sum(a*b % MOD for a, b in itertools.izip(row, col)) % MOD for col in ZB] for row in A]
  
         def matrix_expo(A, K):
-            result = [[int(i==j) for j in xrange(len(A))] \
-                      for i in xrange(len(A))]
+            result = [[int(i == j) for j in xrange(len(A))] for i in xrange(len(A))]
             while K:
                 if K % 2:
                     result = matrix_mult(result, A)
