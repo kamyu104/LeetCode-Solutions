@@ -35,16 +35,20 @@ public:
                           [](const auto& total, const auto& kvp) {
                               return total + size(kvp.second);
                           }) == 2 * pow(3, m));
+        unordered_map<int, int> lookup;
+        for (const auto& mask : masks) {  // fix the first color to speed up performance
+            lookup[mask] = normalize(m, basis, mask);
+        }
         unordered_map<int, int> dp;
         for (const auto& mask : masks) {
-            ++dp[mask];
+            ++dp[lookup[mask]];
         }
         for (int i = 0; i < n - 1; ++i) {  // Time: O(n * 3^m), Space: O(2^m)
-            assert(size(dp) == 3 * pow(2, m - 1));
+            assert(size(dp) <= 3 * pow(2, m - 1) / 3);  // divided by 3 is since the first color is fixed to speed up performance
             unordered_map<int, int> new_dp;
             for (const auto [mask, v] : dp) {
                 for (const auto& new_mask : adj[mask]) {
-                    new_dp[new_mask] = (new_dp[new_mask] + v) % MOD;
+                    new_dp[lookup[new_mask]] = (new_dp[lookup[new_mask]] + v) % MOD;
                 }
             }
             dp = move(new_dp);
@@ -66,6 +70,18 @@ private:
                 backtracking(mask1, mask2 != -1 ? mask2 + i * basis : i * basis, basis / 3, result);
             }
         }
+    }
+ 
+    int normalize(int m, int basis, int mask) {
+        unordered_map<int, int> norm;
+        int result = 0;
+        for (; m; --m, mask /= 3, basis /= 3) {
+            if (!norm.count(mask % 3)) {
+                norm[mask % 3] = size(norm);
+            }
+            result += basis * norm[mask % 3];
+        }
+        return result;
     }
 };
 
