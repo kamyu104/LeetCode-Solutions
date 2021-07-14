@@ -43,12 +43,20 @@ public:
         for (const auto& mask : masks) {  // normalize colors to speed up performance
             ++dp[lookup[mask]];
         }
+        unordered_map<int, unordered_map<int, int>> normalized_adj;
+        for (const auto& mask1 : masks) {
+            for (const auto& mask2 : adj[mask1]) {
+                if (mask1 == lookup[mask1]) {
+                    ++normalized_adj[lookup[mask1]][lookup[mask2]];
+                }
+            }
+        }
         for (int i = 0; i < n - 1; ++i) {  // Time: O(n * 3^m), Space: O(2^m)
             assert(size(dp) == 3 * pow(2, m - 1) / 3 / (m >= 2 ? 2 : 1));  // divided by 3 * 2 is since the first two colors are normalized to speed up performance
             unordered_map<int, int> new_dp;
             for (const auto [mask, v] : dp) {
-                for (const auto& new_mask : adj[mask]) {
-                    new_dp[lookup[new_mask]] = (new_dp[lookup[new_mask]] + v) % MOD;
+                for (const auto& [new_mask, cnt] : normalized_adj[mask]) {
+                    new_dp[lookup[new_mask]] = (new_dp[lookup[new_mask]] + v * int64_t(cnt)) % MOD;
                 }
             }
             dp = move(new_dp);
