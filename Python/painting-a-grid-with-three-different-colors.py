@@ -72,7 +72,7 @@ class Solution2(object):
         MOD = 10**9+7
         def backtracking(mask1, mask2, basis, result):  # Time: O(2^m), Space: O(2^m)
             if not basis:
-                result.append(mask2)
+                result.add(mask2)
                 return
             for i in xrange(3):
                 if (mask1 == -1 or mask1//basis%3 != i) and (mask2 == -1 or mask2//(basis*3)%3 != i):
@@ -96,9 +96,9 @@ class Solution2(object):
         if m > n:
             m, n = n, m
         basis = 3**(m-1)
-        masks = []
+        masks = set()
         backtracking(-1, -1, basis, masks)  # Time: O(2^m), Space: O(2^m)
-        adj = collections.defaultdict(list)
+        adj = collections.defaultdict(set)
         for mask in masks:  # O(3^m) leaves in depth O(m) => Time: O(m * 3^m), Space: O(3^m)
             backtracking(mask, -1, basis, adj[mask])
         # proof:
