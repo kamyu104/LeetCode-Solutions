@@ -1,7 +1,7 @@
 // Time:  O((m + n) * 3^m) = O(n * 3^m)
 // Space: O(3^m)
 
-// better complexity for small m, small n
+// better complexity for small m, large n
 class Solution {
 public:
     int colorTheGrid(int m, int n) {
@@ -71,7 +71,7 @@ private:
 // Time:  O(2^(3 * m) * logn)
 // Space: O(2^(2 * m))
 
-// better complexity for small m, large n
+// better complexity for small m, super large n
 class Solution2 {
 public:
     int colorTheGrid(int m, int n) {
