@@ -1,4 +1,4 @@
-// Time:  O((m + n) * 3^m) = O(n * 3^m)
+// Time:  O((m + n) * 3^m) = O(n * 3^m) since m <= n
 // Space: O(3^m)
 
 // better complexity for small m, large n
