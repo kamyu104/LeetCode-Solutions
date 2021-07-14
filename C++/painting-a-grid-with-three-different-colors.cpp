@@ -9,10 +9,10 @@ public:
             swap(m, n);
         }
         const int basis = pow(3, m - 1);
-        unordered_set<int> masks;
+        vector<int> masks;
         backtracking(-1, -1, basis, &masks);  // Time: O(2^m), Space: O(2^m)
         assert(size(masks) == 3 * pow(2, m - 1));
-        unordered_map<int, unordered_set<int>> adj;
+        unordered_map<int, vector<int>> adj;
         for (const auto& mask : masks) {  // O(3^m) leaves in depth O(m) => Time: O(m * 3^m), Space: O(3^m)
             backtracking(mask, -1, basis, &adj[mask]);
         }
@@ -64,9 +64,9 @@ public:
     }
 
 private:
-    void backtracking(int mask1, int mask2, int basis, unordered_set<int> *result) {  // Time: O(2^m), Space: O(2^m)
+    void backtracking(int mask1, int mask2, int basis, vector<int> *result) {  // Time: O(2^m), Space: O(2^m)
         if (!basis) {
-            result->emplace(mask2);
+            result->emplace_back(mask2);
             return;
         }
         for (int i = 0; i < 3; ++i) {
