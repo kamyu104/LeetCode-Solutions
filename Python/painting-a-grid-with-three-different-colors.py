@@ -71,13 +71,30 @@ class Solution2(object):
         :rtype: int
         """
         MOD = 10**9+7
-        def backtracking(mask1, mask2, basis, result):  # Time: O(2^m), Space: O(2^m)
+        def backtracking(mask, basis, result):  # Time: O(2^m), Space: O(2^m)
             if not basis:
-                result.add(mask2)
+                result.add(mask)
                 return
             for i in xrange(3):
-                if (mask1 == -1 or mask1//basis%3 != i) and (mask2 == -1 or mask2//(basis*3)%3 != i):
-                    backtracking(mask1, mask2+i*basis if mask2 != -1 else i*basis, basis//3, result)
+                if mask == -1 or mask//(basis*3)%3 != i:
+                    backtracking(mask+i*basis if mask != -1 else i*basis, basis//3, result)
+
+        def find_adj(m, masks):  # Time: O(m * 3^m), Space: O(3^m)
+            adj = collections.defaultdict(set)
+            for mask in masks:  # O(2^m)
+                adj[mask].add(mask)
+            for c in xrange(m):
+                new_adj = collections.defaultdict(set)
+                for mask1, mask2s in adj.iteritems():
+                    for mask in mask2s:
+                        choices = {0, 1, 2}
+                        choices.discard(mask%3)  # get up grid
+                        if c > 0:
+                            choices.discard(mask//basis)  # get left grid
+                        for x in choices:
+                            new_adj[mask1].add((x*basis)+(mask//3))  # encoding mask
+                adj = new_adj
+            return adj
 
         def matrix_mult(A, B):
             ZB = zip(*B)
@@ -96,24 +113,9 @@ class Solution2(object):
             m, n = n, m
         basis = 3**(m-1)
         masks = set()
-        backtracking(-1, -1, basis, masks)  # Time: O(2^m), Space: O(2^m)
+        backtracking(-1, basis, masks)  # Time: O(2^m), Space: O(2^m)
         assert(len(masks) == 3 * 2**(m-1))
-        adj = collections.defaultdict(set)
-        for mask in masks:  # O(3^m) leaves in depth O(m) => Time: O(m * 3^m), Space: O(3^m)
-            backtracking(mask, -1, basis, adj[mask])
-        # proof:
-        #   'o' uses the same color with its bottom-left one, 
-        #   'x' uses the remaining color different from its left one and bottom-left one,
-        #   k is the cnt of 'o', 
-        #     [3, 1(o), 1(x), 1(o), ..., 1(o), 1(x)] => nCr(m-1, k) * 3 * 2 * 2^k for k in xrange(m) = 3 * 2 * (2+1)^(m-1) = 2*3^m combinations
-        #     [2,    2,    1,    2, ...,  2,      1]
-        # another proof:
-        #   given previous pair of colors, each pair of '?' has 3 choices of colors
-        #     [3, ?, ?, ..., ?] => 3 * 2 * 3^(m-1) = 2*3^m combinations
-        #         |  |       |
-        #         3  3       3
-        #         |  |       |
-        #     [2, ?, ?, ..., ?]
+        adj = find_adj(m, masks)  # alternative of backtracking, Time: O(m * 3^m), Space: O(3^m)
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
         return reduce(lambda x,y: (x+y)%MOD,
                       matrix_mult([[1]*len(masks)],
