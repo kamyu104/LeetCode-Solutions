@@ -80,25 +80,9 @@ public:
         }
         const int basis = pow(3, m - 1);
         unordered_set<int> masks;
-        backtracking(-1, -1, basis, &masks);  // Time: O(2^m), Space: O(2^m)
+        backtracking(-1, basis, &masks);  // Time: O(2^m), Space: O(2^m)
         assert(size(masks) == 3 * pow(2, m - 1));
-        unordered_map<int, unordered_set<int>> adj;
-        for (const auto& mask : masks) {  // O(3^m) leaves in depth O(m) => Time: O(m * 3^m), Space: O(3^m)
-            backtracking(mask, -1, basis, &adj[mask]);
-        }
-        // proof:
-        //   'o' uses the same color with its bottom-left one, 
-        //   'x' uses the remaining color different from its left one and bottom-left one,
-        //   k is the cnt of 'o', 
-        //    [3, 1(o), 1(x), 1(o), ..., 1(o), 1(x)] => nCr(m-1, k) * 3 * 2 * 2^k for k in xrange(m) = 3 * 2 * (2+1)^(m-1) = 2*3^m combinations
-        //    [2,    2,    1,    2, ...,  2,      1]
-        // another proof:
-        //   given previous pair of colors, each pair of '?' has 3 choices of colors
-        //     [3, ?, ?, ..., ?] => 3 * 2 * 3^(m-1) = 2*3^m combinations
-        //         |  |       |
-        //         3  3       3
-        //         |  |       |
-        //     [2, ?, ?, ..., ?]
+        const auto& adj = find_adj(m, basis, masks);  // alternative of backtracking, Time: O(m * 3^m), Space: O(3^m)
         assert(accumulate(cbegin(adj), cend(adj), 0,
                           [](const auto& total, const auto& kvp) {
                               return total + size(kvp.second);
@@ -107,7 +91,7 @@ public:
         for (const auto& mask1 : masks) {
             matrix.emplace_back();
             for (const auto& mask2 : masks)  {
-                matrix.back().emplace_back(adj[mask1].count(mask2));
+                matrix.back().emplace_back(adj.at(mask1).count(mask2));
             }
         }
         const auto& result = matrixMult(vector<vector<int>>(1, vector<int>(size(masks), 1)),
@@ -119,16 +103,40 @@ public:
     }
 
 private:
-    void backtracking(int mask1, int mask2, int basis, unordered_set<int> *result) {  // Time: O(2^m), Space: O(2^m)
+    void backtracking(int mask, int basis, unordered_set<int> *result) {  // Time: O(2^m), Space: O(2^m)
         if (!basis) {
-            result->emplace(mask2);
+            result->emplace(mask);
             return;
         }
         for (int i = 0; i < 3; ++i) {
-            if ((mask1 == -1 || mask1 / basis % 3 != i) && (mask2 == -1 || mask2 / (basis * 3) % 3 != i)) {
-                backtracking(mask1, mask2 != -1 ? mask2 + i * basis : i * basis, basis / 3, result);
+            if (mask == -1 || mask / (basis * 3) % 3 != i) {
+                backtracking(mask != -1 ? mask + i * basis : i * basis, basis / 3, result);
             }
         }
+    }
+
+    unordered_map<int, unordered_set<int>> find_adj(int m, int basis, const unordered_set<int>& masks) {  // Time: O(m * 3^m), Space: O(3^m)
+        unordered_map<int, unordered_set<int>> adj;
+        for (const auto& mask : masks) {  // O(2^m)
+            adj[mask].emplace(mask);
+        }
+        for (int c = 0; c < m; ++c) {
+            unordered_map<int, unordered_set<int>> new_adj;
+            for (const auto& [mask1, mask2s] : adj) {
+                for (const auto& mask : mask2s) {
+                    unordered_set<int> choices = {0, 1, 2};
+                    choices.erase(mask % 3);  // get up grid;
+                    if (c > 0) {
+                        choices.erase(mask / basis);  // get left grid
+                    }
+                    for (const auto&x : choices) {
+                        new_adj[mask1].emplace((x * basis) + (mask / 3));  // encoding mask
+                    }
+                }
+            }
+            adj = move(new_adj);
+        }
+        return adj;
     }
 
     vector<vector<int>> matrixExpo(const vector<vector<int>>& A, int pow) {
