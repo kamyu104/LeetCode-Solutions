@@ -59,7 +59,7 @@ class Solution(object):
         lookup = {mask:normalize(m, mask) for mask in masks}  # Time: O(m * 2^m)
         dp = collections.Counter(lookup[mask] for mask in masks)  # normalize colors to speed up performance
         for _ in xrange(n-1):  # Time: O(n * 3^m), Space: O(2^m)
-            assert(len(dp) == 3*2**(m-1)// 3 // (2 if m >= 2 else 1))  # divided by 3 * 2 is since the first two colors are normalized to speed up performance
+            assert(len(dp) == 3*2**(m-1)//3//(2 if m >= 2 else 1))  # divided by 3 * 2 is since the first two colors are normalized to speed up performance
             new_dp = collections.Counter()
             for mask, v in dp.iteritems():
                 for new_mask in adj[mask]:
@@ -155,21 +155,36 @@ class Solution3(object):
         :rtype: int
         """
         MOD = 10**9+7
+        def normalize(m, mask, lookup):  # compute and cache, at most O(3*2^(m-3))
+            if mask not in lookup[m]:
+                norm = {}
+                result, basis = 0, 1
+                while m:
+                    x = mask//basis%3
+                    if x not in norm:
+                        norm[x] = len(norm)
+                    result += norm[x]*basis
+                    basis *= 3
+                    m -= 1
+                lookup[m][mask] = result
+            return lookup[m][mask]
+
         if m > n:
             m, n = n, m
-        basis = 3**(m-1)
+        basis = b = 3**(m-1)
+        lookup = collections.defaultdict(dict)
         dp = collections.Counter({0: 1})
         for idx in xrange(m*n):
             r, c = divmod(idx, m)
             # sliding window with size m doesn't cross rows:
             #   [3, 2, ..., 2] => 3*2^(m-1) combinations
             assert(r != 0 or c != 0 or len(dp) == 1)
-            assert(r != 0 or c == 0 or len(dp) == 3*2**(c-1))
-            assert(r == 0 or c != 0 or len(dp) == 3*2**(m-1))
+            assert(r != 0 or c == 0 or len(dp) == 3*2**(c-1) // 3 // (2 if c >= 2 else 1))  # divided by 3 * 2 is since the first two colors are normalized to speed up performance
+            assert(r == 0 or c != 0 or len(dp) == 3*2**(m-1) // 3 // (2 if m >= 2 else 1))  # divided by 3 * 2 is since the first two colors are normalized to speed up performance
             # sliding window with size m crosses rows:
             #   [*, ..., *, *, 3, 2, ..., 2] => 3*3 * 2^(m-2) combinations
             #   [2, ..., 2, 3, *, *, ..., *]
-            assert(r == 0 or c == 0 or len(dp) == 3**2 * 2**(m-2))
+            assert(r == 0 or c == 0 or len(dp) == (1 if m == 1 else 2 if m == 2 else 3*3 * 2**(m-2) // 3 // 2))  # divided by 3 * 2 for m >= 3 is since the first two colors of window are normalized to speed up performance
             new_dp = collections.Counter()
             for mask, v in dp.iteritems():
                 choices = {0, 1, 2}
@@ -178,7 +193,9 @@ class Solution3(object):
                 if c > 0:
                     choices.discard(mask//basis)  # get left grid
                 for x in choices:
-                    new_mask = (x*basis)+(mask//3)  # encoding mask
-                    new_dp[new_mask] = (new_dp[new_mask]+v)%MOD 
+                    new_mask = normalize(min(idx+1, m), ((x*basis)+(mask//3))//b, lookup)*b  # encoding mask
+                    new_dp[new_mask] = (new_dp[new_mask]+v)%MOD
+            if b > 1:
+                b //= 3
             dp = new_dp
         return reduce(lambda x,y: (x+y)%MOD, dp.itervalues(), 0)  # Time: O(2^m)
