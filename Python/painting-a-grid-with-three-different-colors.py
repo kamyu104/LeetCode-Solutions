@@ -155,7 +155,7 @@ class Solution3(object):
         :rtype: int
         """
         MOD = 10**9+7
-        def normalize(m, mask, lookup):  # compute and cache, at most O(3*2^(m-3))
+        def normalize(m, mask, lookup):  # compute and cache, at most O(3*2^(m-3)) time and space
             if mask not in lookup[m]:
                 norm = {}
                 result, basis = 0, 1
