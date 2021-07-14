@@ -47,7 +47,7 @@ public:
         for (const auto& mask1 : masks) {
             for (const auto& mask2 : adj[mask1]) {
                 if (mask1 == lookup[mask1]) {
-                    ++normalized_adj[lookup[mask1]][lookup[mask2]];
+                    normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]] + 1) % MOD;
                 }
             }
         }
@@ -56,7 +56,7 @@ public:
             unordered_map<int, int> new_dp;
             for (const auto [mask, v] : dp) {
                 for (const auto& [new_mask, cnt] : normalized_adj[mask]) {
-                    new_dp[lookup[new_mask]] = (new_dp[lookup[new_mask]] + v * int64_t(cnt)) % MOD;
+                    new_dp[lookup[new_mask]] = (new_dp[lookup[new_mask]] + (v * int64_t(cnt)) % MOD) % MOD;
                 }
             }
             dp = move(new_dp);
