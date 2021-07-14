@@ -36,11 +36,11 @@ public:
                               return total + size(kvp.second);
                           }) == 2 * pow(3, m));
         unordered_map<int, int> lookup;
-        for (const auto& mask : masks) {  // normalize colors to speed up performance
+        for (const auto& mask : masks) {  // Time: O(m * 2^m)
             lookup[mask] = normalize(m, basis, mask);
         }
         unordered_map<int, int> dp;
-        for (const auto& mask : masks) {
+        for (const auto& mask : masks) {  // normalize colors to speed up performance
             ++dp[lookup[mask]];
         }
         for (int i = 0; i < n - 1; ++i) {  // Time: O(n * 3^m), Space: O(2^m)
