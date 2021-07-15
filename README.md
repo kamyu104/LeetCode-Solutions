@@ -2193,6 +2193,7 @@
 1907| [Count Salary Categories](https://leetcode.com/problems/count-salary-categories/) | [MySQL](./MySQL/count-salary-categories.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 1917| [Leetcodify Friends Recommendations](https://leetcode.com/problems/leetcodify-friends-recommendations/) | [MySQL](./MySQL/leetcodify-friends-recommendations.sql) | _O(n^2)_ | _O(n^2)_       | Hard           |🔒||
 1919| [Leetcodify Similar Friends](https://leetcode.com/problems/leetcodify-similar-friends/) | [MySQL](./MySQL/leetcodify-similar-friends.sql) | _O(n * l)_ | _O(n * l)_       | Hard           |🔒||
+1934| [Confirmation Rate](https://leetcode.com/problems/confirmation-rate/) | [MySQL](./MySQL/confirmation-rate.sql) | _O(n + m)_ | _O(n + m)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
