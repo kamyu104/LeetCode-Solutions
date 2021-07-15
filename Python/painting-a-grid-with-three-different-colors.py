@@ -144,7 +144,7 @@ class Solution2(object):
         basis = 3**(m-1)
         masks = find_masks(m, basis)  # alternative of backtracking, Time: O(2^m), Space: O(2^m)
         assert(len(masks) == 3 * 2**(m-1))
-        adj = find_adj(m, basis, masks)  # alternative of backtracking, Time: O(m * 3^m), Space: O(3^m)
+        adj = find_adj(m, basis, masks)  # alternative of backtracking, Time: O(3^m), Space: O(3^m)
         # proof:
         #   'o' uses the same color with its bottom-left one, 
         #   'x' uses the remaining color different from its left one and bottom-left one,
