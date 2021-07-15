@@ -35,12 +35,12 @@ public:
                 normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]] + 1) % MOD;
             }
         }
-        // upper bound divided by 3 * 2 is since the first two colors in upper row are normalized to speed up performance
+        // divided by 3 * 2 is since the first two colors in upper row are normalized to speed up performance
         assert(accumulate(cbegin(normalized_adj), cend(normalized_adj), 0,
                           [](const auto& total, const auto& kvp) {
                               return total + size(kvp.second);
                           }) <= 2 * pow(3, m) / 3 / 2);
-        // lower bound divided by one more 3 is since one color in lower row could be also normalized
+        // since first two colors in lower row which has at most 3 choices could be also normalized, lower bound is upper bound divided by at most 3
         assert(accumulate(cbegin(normalized_adj), cend(normalized_adj), 0,
                           [](const auto& total, const auto& kvp) {
                               return total + size(kvp.second);
@@ -171,7 +171,7 @@ public:
                           [](const auto& total, const auto& kvp) {
                               return total + size(kvp.second);
                           }) <= 2 * pow(3, m) / 3 / 2);
-        // since one color in lower row could be also normalized, lower bound is upper bound divided by at most 3
+        // since first two colors in lower row which has at most 3 choices could be also normalized, lower bound is upper bound divided by at most 3
         assert(accumulate(cbegin(normalized_adj), cend(normalized_adj), 0,
                           [](const auto& total, const auto& kvp) {
                               return total + size(kvp.second);
