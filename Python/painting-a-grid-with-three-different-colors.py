@@ -75,7 +75,7 @@ class Solution(object):
                       0)  # Time: O((2^m)^3 * logn), Space: O((2^m)^2)
 
 
-# Time:  O((m + n) * 3^m) = O(n * 3^m) since m <= n
+# Time:  O(n * 3^m)
 # Space: O(3^m)
 import collections
 
@@ -102,11 +102,19 @@ class Solution2(object):
                 masks = new_masks
             return masks
 
-        def find_adj(m, basis, masks):  # Time: O(m * 3^m), Space: O(3^m)
+        def find_adj(m, basis, masks):
+            # Time:  3*2^(m-1) * (1 + 2 + 2 * (3/2) + 2 * (3/2)^2 + ... + 2 * (3/2)^(m-2)) =
+            #        3*2^(m-1) * (1+2*((3/2)^(m-1)-1)/((3/2)-1)) =
+            #        3*2^(m-1) * (1+4*((3/2)^(m-1)-1)) =
+            #        3*2^(m-1) * (4*(3/2)^(m-1)-3) =
+            #        4*3^m-9*2^(m-1) =
+            #        O(3^m),
+            # Space: O(3^m)
             adj = collections.defaultdict(list)
             for mask in masks:  # O(2^m)
                 adj[mask].append(mask)
             for c in xrange(m):
+                assert(sum(len(v) for v in adj.itervalues()) == 3**(c) * 2**(m-(c-1)) if c >= 1 else 3 * 2**(m-1))
                 new_adj = collections.defaultdict(list)
                 for mask1, mask2s in adj.iteritems():
                     for mask in mask2s:
@@ -117,6 +125,7 @@ class Solution2(object):
                         for x in choices:
                             new_adj[mask1].append((x*basis)+(mask//3))  # encoding mask
                 adj = new_adj
+            assert(sum(3**(c) * 2**(m-(c-1)) if c >= 1 else 3 * 2**(m-1) for c in xrange(m)) == 4*3**m-9*2**(m-1))
             return adj
  
         def normalize(basis, mask):
