@@ -1,4 +1,4 @@
-# Time:  O(m * 3^m + 2^(3 * m) * logn)
+# Time:  O(3^m + 2^(3 * m) * logn)
 # Space: O(2^(2 * m))
 
 import collections
@@ -54,7 +54,7 @@ class Solution(object):
         backtracking(-1, -1, basis, masks)  # Time: O(2^m), Space: O(2^m)
         assert(len(masks) == 3 * 2**(m-1))
         adj = collections.defaultdict(list)
-        for mask in masks:  # O(3^m) leaves in depth O(m) => Time: O(m * 3^m), Space: O(3^m)
+        for mask in masks:  # O(3^m) leaves which are all in depth m => Time: O(3^m), Space: O(3^m)
             backtracking(mask, -1, basis, adj[mask])
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
         lookup = {mask:normalize(basis, mask) for mask in masks}  # Time: O(m * 2^m)
