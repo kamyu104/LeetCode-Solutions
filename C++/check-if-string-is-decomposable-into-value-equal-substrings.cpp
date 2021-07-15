@@ -9,15 +9,15 @@ public:
         }
         int left;
         for (left = 0; left < size(s); left += 3) {
-            if (std::adjacent_find(cbegin(s) + left + 1, cbegin(s) + min(left + 3, int(size(s))),
-                                   std::not_equal_to<>()) != cbegin(s) + left + 3) {
+            if (std::adjacent_find(cbegin(s) + left, cbegin(s) + min(left + 3, int(size(s))),
+                                   std::not_equal_to<>()) != cbegin(s) + min(left + 3, int(size(s)))) {
                 break;
             }
         }
         int right;
         for (right = size(s) - 1; right >= left + 1  ; right -= 3) {
-            if (std::adjacent_find(cbegin(s) + max(right - 2, left), cbegin(s) + right,
-                                   std::not_equal_to<>()) != cbegin(s) + right) {
+            if (std::adjacent_find(cbegin(s) + max(right - 2, left), cbegin(s) + right + 1,
+                                   std::not_equal_to<>()) != cbegin(s) + right + 1) {
                 break;
             }
         }
