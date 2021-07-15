@@ -60,7 +60,7 @@ class Solution(object):
         for mask in normalized_mask_cnt.iterkeys():  # O(3^m) leaves which are all in depth m => Time: O(3^m), Space: O(3^m)
             backtracking(mask, -1, basis, adj[mask])
         normalized_adj = collections.defaultdict(lambda:collections.defaultdict(int))
-        for mask1, masks2 in adj.items():
+        for mask1, masks2 in adj.iteritems():
             for mask2 in masks2:
                 normalized_adj[mask1][lookup[mask2]] = (normalized_adj[mask1][lookup[mask2]]+1)%MOD
         # divided by 3 * 2 is since the first two colors in upper row are normalized to speed up performance,
@@ -160,8 +160,8 @@ class Solution2(object):
         #         |  |       |
         #     [2, ?, ?, ..., ?]
         normalized_adj = collections.defaultdict(lambda:collections.defaultdict(int))
-        for mask1 in dp.iterkeys():
-            for mask2 in adj[mask1]:
+        for mask1, mask2s in adj.iteritems():
+            for mask2 in mask2s:
                 normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]]+1)%MOD
         # divided by 3 * 2 is since the first two colors in upper row are normalized to speed up performance,
         # since first two colors in lower row which has at most 3 choices could be also normalized, lower bound is upper bound divided by at most 3
