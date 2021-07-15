@@ -212,11 +212,22 @@ private:
     }
 
     unordered_map<int, vector<int>> find_adj(int m, int basis, const vector<int>& masks) {  // Time: O(m * 3^m), Space: O(3^m)
+        // Time:  3*2^(m-1) * (1 + 2 + 2 * (3/2) + 2 * (3/2)^2 + ... + 2 * (3/2)^(m-2)) =
+        //        3*2^(m-1) * (1+2*((3/2)^(m-1)-1)/((3/2)-1)) =
+        //        3*2^(m-1) * (1+4*((3/2)^(m-1)-1)) =
+        //        3*2^(m-1) * (4*(3/2)^(m-1)-3) =
+        //        4*3^m-9*2^(m-1) =
+        //        O(3^m),
+        // Space: O(3^m)
         unordered_map<int, vector<int>> adj;
         for (const auto& mask : masks) {  // O(2^m)
             adj[mask].emplace_back(mask);
         }
         for (int c = 0; c < m; ++c) {
+            assert(accumulate(cbegin(adj), cend(adj), 0,
+                              [](const auto& total, const auto& kvp) {
+                                  return total + size(kvp.second);
+                              }) >= c ? pow(3, c) * pow(2, m - (c-1)) : 3 * pow(2, m - 1));
             unordered_map<int, vector<int>> new_adj;
             for (const auto& [mask1, mask2s] : adj) {
                 for (const auto& mask : mask2s) {
