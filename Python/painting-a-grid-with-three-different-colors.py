@@ -36,16 +36,15 @@ class Solution(object):
                 K /= 2
             return result
 
-        def normalize(m, mask):
+        def normalize(basis, mask):
             norm = {}
-            result, basis = 0, 1
-            while m:
+            result = 0
+            while basis:
                 x = mask//basis%3
                 if x not in norm:
                     norm[x] = len(norm)
                 result += norm[x]*basis
-                basis *= 3
-                m -= 1
+                basis //= 3
             return result
 
         if m > n:
@@ -58,7 +57,7 @@ class Solution(object):
         for mask in masks:  # O(3^m) leaves in depth O(m) => Time: O(m * 3^m), Space: O(3^m)
             backtracking(mask, -1, basis, adj[mask])
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
-        lookup = {mask:normalize(m, mask) for mask in masks}  # Time: O(m * 2^m)
+        lookup = {mask:normalize(basis, mask) for mask in masks}  # Time: O(m * 2^m)
         normalized_mask_cnt = collections.Counter(lookup[mask] for mask in masks)
         assert(len(normalized_mask_cnt) == 3*2**(m-1)//3//(2 if m >= 2 else 1))  # divided by 3 * 2 is since the first two colors are normalized to speed up performance
         normalized_adj = collections.defaultdict(lambda:collections.defaultdict(int))
@@ -120,16 +119,15 @@ class Solution2(object):
                 adj = new_adj
             return adj
  
-        def normalize(m, mask):
+        def normalize(basis, mask):
             norm = {}
-            result, basis = 0, 1
-            while m:
+            result = 0
+            while basis:
                 x = mask//basis%3
                 if x not in norm:
                     norm[x] = len(norm)
                 result += norm[x]*basis
-                basis *= 3
-                m -= 1
+                basis //= 3
             return result
 
         if m > n:
@@ -152,7 +150,7 @@ class Solution2(object):
         #         |  |       |
         #     [2, ?, ?, ..., ?]
         assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
-        lookup = {mask:normalize(m, mask) for mask in masks}  # Time: O(m * 2^m)
+        lookup = {mask:normalize(basis, mask) for mask in masks}  # Time: O(m * 2^m)
         dp = collections.Counter(lookup[mask] for mask in masks)  # normalize colors to speed up performance
         normalized_adj = collections.defaultdict(lambda:collections.defaultdict(int))
         for mask1 in dp.iterkeys():
@@ -185,18 +183,18 @@ class Solution3(object):
         :rtype: int
         """
         MOD = 10**9+7
-        def normalize(m, mask, lookup):  # compute and cache, at most O(3*2^(m-3)) time and space
-            if mask not in lookup[m]:
+        def normalize(basis, mask, lookup):  # compute and cache, at most O(3*2^(m-3)) time and space
+            if mask not in lookup[basis]:
                 norm = {}
-                result, basis = 0, 1
-                for _ in xrange(m):
+                result = 0
+                while basis:
                     x = mask//basis%3
                     if x not in norm:
                         norm[x] = len(norm)
                     result += norm[x]*basis
-                    basis *= 3
-                lookup[m][mask] = result
-            return lookup[m][mask]
+                    basis //= 3
+                lookup[basis][mask] = result
+            return lookup[basis][mask]
 
         if m > n:
             m, n = n, m
@@ -222,7 +220,7 @@ class Solution3(object):
                 if c > 0:
                     choices.discard(mask//basis)  # get left grid
                 for x in choices:
-                    new_mask = normalize(min(idx+1, m), ((x*basis)+(mask//3))//b, lookup)*b  # encoding mask
+                    new_mask = normalize(basis//b, ((x*basis)+(mask//3))//b, lookup)*b  # encoding mask
                     new_dp[new_mask] = (new_dp[new_mask]+v)%MOD
             if b > 1:
                 b //= 3
