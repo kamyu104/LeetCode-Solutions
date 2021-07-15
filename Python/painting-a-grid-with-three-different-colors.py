@@ -53,17 +53,16 @@ class Solution(object):
         masks = []
         backtracking(-1, -1, basis, masks)  # Time: O(2^m), Space: O(2^m)
         assert(len(masks) == 3 * 2**(m-1))
-        adj = collections.defaultdict(list)
-        for mask in masks:  # O(3^m) leaves which are all in depth m => Time: O(3^m), Space: O(3^m)
-            backtracking(mask, -1, basis, adj[mask])
-        assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
         lookup = {mask:normalize(basis, mask) for mask in masks}  # Time: O(m * 2^m)
         normalized_mask_cnt = collections.Counter(lookup[mask] for mask in masks)
         assert(len(normalized_mask_cnt) == 3*2**(m-1)//3//(2 if m >= 2 else 1))  # divided by 3 * 2 is since the first two colors are normalized to speed up performance
+        adj = collections.defaultdict(list)
+        for mask in normalized_mask_cnt.iterkeys():  # O(3^m) leaves which are all in depth m => Time: O(3^m), Space: O(3^m)
+            backtracking(mask, -1, basis, adj[mask])
         normalized_adj = collections.defaultdict(lambda:collections.defaultdict(int))
-        for mask1 in normalized_mask_cnt.iterkeys():
-            for mask2 in adj[mask1]:
-                normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]]+1)%MOD
+        for mask1, masks2 in adj.items():
+            for mask2 in masks2:
+                normalized_adj[mask1][lookup[mask2]] = (normalized_adj[mask1][lookup[mask2]]+1)%MOD
         # divided by 3 * 2 is since the first two colors in upper row are normalized to speed up performance,
         # since first two colors in lower row which has at most 3 choices could be also normalized, lower bound is upper bound divided by at most 3
         assert(2*3**m // 3 // 2 // 3 <= sum(len(v) for v in normalized_adj.itervalues()) <= 2*3**m // 3 // 2)
@@ -102,7 +101,7 @@ class Solution2(object):
                 masks = new_masks
             return masks
 
-        def find_adj(m, basis, masks):
+        def find_adj(m, basis, dp):
             # Time:  3*2^(m-1) * (1 + 2 + 2 * (3/2) + 2 * (3/2)^2 + ... + 2 * (3/2)^(m-2)) =
             #        3*2^(m-1) * (1+2*((3/2)^(m-1)-1)/((3/2)-1)) =
             #        3*2^(m-1) * (1+4*((3/2)^(m-1)-1)) =
@@ -111,10 +110,10 @@ class Solution2(object):
             #        O(3^m),
             # Space: O(3^m)
             adj = collections.defaultdict(list)
-            for mask in masks:  # O(2^m)
+            for mask in dp.iterkeys():  # O(2^m)
                 adj[mask].append(mask)
             for c in xrange(m):
-                assert(sum(len(v) for v in adj.itervalues()) == 3**c * 2**(m-(c-1)) if c >= 1 else 3 * 2**(m-1))
+                assert(sum(len(v) for v in adj.itervalues()) == (3**c * 2**(m-(c-1)) if c >= 1 else 3 * 2**(m-1))//3//(2 if m >= 2 else 1))  # divided by 3 * 2 is since the first two colors are normalized to speed up performance
                 new_adj = collections.defaultdict(list)
                 for mask1, mask2s in adj.iteritems():
                     for mask in mask2s:
@@ -144,7 +143,9 @@ class Solution2(object):
         basis = 3**(m-1)
         masks = find_masks(m, basis)  # alternative of backtracking, Time: O(2^m), Space: O(2^m)
         assert(len(masks) == 3 * 2**(m-1))
-        adj = find_adj(m, basis, masks)  # alternative of backtracking, Time: O(3^m), Space: O(3^m)
+        lookup = {mask:normalize(basis, mask) for mask in masks}  # Time: O(m * 2^m)
+        dp = collections.Counter(lookup[mask] for mask in masks)  # normalize colors to speed up performance
+        adj = find_adj(m, basis, dp)  # alternative of backtracking, Time: O(3^m), Space: O(3^m)
         # proof:
         #   'o' uses the same color with its bottom-left one, 
         #   'x' uses the remaining color different from its left one and bottom-left one,
@@ -158,9 +159,6 @@ class Solution2(object):
         #         3  3       3
         #         |  |       |
         #     [2, ?, ?, ..., ?]
-        assert(sum(len(v) for v in adj.itervalues()) == 2*3**m)
-        lookup = {mask:normalize(basis, mask) for mask in masks}  # Time: O(m * 2^m)
-        dp = collections.Counter(lookup[mask] for mask in masks)  # normalize colors to speed up performance
         normalized_adj = collections.defaultdict(lambda:collections.defaultdict(int))
         for mask1 in dp.iterkeys():
             for mask2 in adj[mask1]:
