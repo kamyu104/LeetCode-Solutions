@@ -120,7 +120,7 @@ private:
     static const int MOD = 1e9 + 7;
 };
 
-// Time:  O((m + n) * 3^m) = O(n * 3^m) since m <= n
+// Time:  O(n * 3^m)
 // Space: O(3^m)
 // better complexity for small m, large n
 class Solution2 {
@@ -134,7 +134,7 @@ public:
         const int basis = pow(3, m - 1);
         const auto& masks = find_masks(m, basis);  // alternative of backtracking, Time: O(2^m), Space: O(2^m)
         assert(size(masks) == 3 * pow(2, m - 1));
-        const auto& adj = find_adj(m, basis, masks);  // alternative of backtracking, Time: O(m * 3^m), Space: O(3^m)
+        const auto& adj = find_adj(m, basis, masks);  // alternative of backtracking, Time: O(3^m), Space: O(3^m)
         // proof:
         //   'o' uses the same color with its bottom-left one, 
         //   'x' uses the remaining color different from its left one and bottom-left one,
@@ -211,7 +211,7 @@ private:
         return masks;
     }
 
-    unordered_map<int, vector<int>> find_adj(int m, int basis, const vector<int>& masks) {  // Time: O(m * 3^m), Space: O(3^m)
+    unordered_map<int, vector<int>> find_adj(int m, int basis, const vector<int>& masks) {
         // Time:  3*2^(m-1) * (1 + 2 + 2 * (3/2) + 2 * (3/2)^2 + ... + 2 * (3/2)^(m-2)) =
         //        3*2^(m-1) * (1+2*((3/2)^(m-1)-1)/((3/2)-1)) =
         //        3*2^(m-1) * (1+4*((3/2)^(m-1)-1)) =
