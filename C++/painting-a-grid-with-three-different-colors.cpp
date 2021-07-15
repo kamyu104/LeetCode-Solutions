@@ -153,8 +153,8 @@ public:
         //         |  |       |
         //     [2, ?, ?, ..., ?]
         unordered_map<int, unordered_map<int, int>> normalized_adj;
-        for (const auto& [mask1, _] : dp) {
-            for (const auto& mask2 : adj.at(mask1)) {
+        for (const auto& [mask1, mask2s] : adj) {
+            for (const auto& mask2 : mask2s) {
                 normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]] + 1) % MOD;
             }
         }
