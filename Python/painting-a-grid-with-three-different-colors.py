@@ -66,7 +66,7 @@ class Solution(object):
             for mask2 in adj[mask1]:
                 normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]]+1)%MOD
         # divided by 3 * 2 is since the first two colors in upper row are normalized to speed up performance,
-        # since one color in lower row could be also normalized, lower bound is upper bound divided by at most 3
+        # since first two colors in lower row which has at most 3 choices could be also normalized, lower bound is upper bound divided by at most 3
         assert(2*3**m // 3 // 2 // 3 <= sum(len(v) for v in normalized_adj.itervalues()) <= 2*3**m // 3 // 2)
         return reduce(lambda x,y: (x+y)%MOD,
                       matrix_mult([normalized_mask_cnt.values()],
@@ -159,7 +159,7 @@ class Solution2(object):
             for mask2 in adj[mask1]:
                 normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]]+1)%MOD
         # divided by 3 * 2 is since the first two colors in upper row are normalized to speed up performance,
-        # since one color in lower row could be also normalized, lower bound is upper bound divided by at most 3
+        # since first two colors in lower row which has at most 3 choices could be also normalized, lower bound is upper bound divided by at most 3
         assert(2*3**m // 3 // 2 // 3 <= sum(len(v) for v in normalized_adj.itervalues()) <= 2*3**m // 3 // 2)
         for _ in xrange(n-1):  # Time: O(n * 3^m), Space: O(2^m)
             assert(len(dp) == 3*2**(m-1)//3//(2 if m >= 2 else 1))  # divided by 3 * 2 is since the first two colors are normalized to speed up performance
