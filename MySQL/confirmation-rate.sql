@@ -1,5 +1,5 @@
-# Time:  O(m + n)
-# Space: O(m + n)
+# Time:  O(n + m)
+# Space: O(n + m)
 
 WITH rate_cte AS
   (SELECT user_id,
