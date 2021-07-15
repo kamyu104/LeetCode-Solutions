@@ -7,6 +7,25 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
+        if len(s)%3 != 2:
+            return False
+        for left in xrange(0, len(s), 3):
+            if any(s[i] != s[left] for i in xrange(left+1, min(left+3, len(s)))):
+                break            
+        for right in reversed(xrange(left+1, len(s), 3)):
+            if any(s[i] != s[right] for i in reversed(xrange(max(right-2, left), right))):
+                break
+        return right-left == 1
+        
+
+# Time:  O(n)
+# Space: O(1)
+class Solution2(object):
+    def isDecomposable(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
         found, i = False, 0
         while i < len(s):
             l = 1
@@ -26,7 +45,7 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(1)
-class Solution2(object):
+class Solution3(object):
     def isDecomposable(self, s):
         """
         :type s: str
