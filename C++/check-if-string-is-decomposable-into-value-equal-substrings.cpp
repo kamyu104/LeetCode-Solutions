@@ -5,6 +5,33 @@ class Solution {
 public:
     bool isDecomposable(string s) {
         bool found = false;
+        for (int i = 0, l; i < size(s); i += l) {
+            l = 1;
+            for (int j = i + 1; j < min(i + 3, int(size(s))); ++j, ++l) {
+                if (s[j] != s[i]) {
+                    break;
+                }
+            }
+            if (l < 2) {
+                return false;
+            }
+            if (l == 2) {
+                if (found) {
+                    return false;
+                }
+                found = true;
+            }
+        }
+        return found;
+    }
+};
+
+// Time:  O(n)
+// Space: O(1)
+class Solution2 {
+public:
+    bool isDecomposable(string s) {
+        bool found = false;
         int l = 0;
         for (int i = 0; i < size(s); ++i) {
             if (!l || s[i] != s[i - 1]) {
