@@ -22,7 +22,7 @@ public:
                           }) == 2 * pow(3, m));
         unordered_map<int, int> lookup;
         for (const auto& mask : masks) {  // Time: O(m * 2^m)
-            lookup[mask] = normalize(m, mask);
+            lookup[mask] = normalize(basis, mask);
         }
         unordered_map<int, int> normalized_mask_cnt;
         for (const auto& mask : masks) {
@@ -104,10 +104,10 @@ private:
         return result;
     }
 
-    int normalize(int m, int mask) {
+    int normalize(int basis, int mask) {
         unordered_map<int, int> norm;
-        int result = 0, basis = 1;
-        for (; m; --m, basis *= 3) {
+        int result = 0;
+        for (; basis; basis /= 3) {
             int x = mask / basis % 3;
             if (!norm.count(x)) {
                 norm[x] = size(norm);
@@ -154,7 +154,7 @@ public:
                           }) == 2 * pow(3, m));
         unordered_map<int, int> lookup;
         for (const auto& mask : masks) {  // Time: O(m * 2^m)
-            lookup[mask] = normalize(m, mask);
+            lookup[mask] = normalize(basis, mask);
         }
         unordered_map<int, int> dp;
         for (const auto& mask : masks) {  // normalize colors to speed up performance
@@ -235,10 +235,10 @@ private:
         return adj;
     }
  
-    int normalize(int m, int mask) {
+    int normalize(int basis, int mask) {
         unordered_map<int, int> norm;
-        int result = 0, basis = 1;
-        for (; m; --m, basis *= 3) {
+        int result = 0;
+        for (; basis; basis /= 3) {
             int x = mask / basis % 3;
             if (!norm.count(x)) {
                 norm[x] = size(norm);
@@ -289,7 +289,7 @@ public:
                     if (used[x]) {
                         continue;
                     }
-                    const auto new_mask = normalize(min(idx + 1, m), ((x * basis) + (mask / 3)) / b, &lookup) * b;  // encoding mask
+                    const auto new_mask = normalize(basis / b, ((x * basis) + (mask / 3)) / b, &lookup) * b;  // encoding mask
                     new_dp[new_mask] = (new_dp[new_mask] + v) % MOD;
                 }
             }
@@ -304,19 +304,19 @@ public:
                           });  // Time: O(2^m)
     }
 
-    int normalize(int m, int mask, unordered_map<int, unordered_map<int, int>> *lookup) {  // compute and cache, at most O(3*2^(m-3)) time and space
-        if (!lookup->count(mask)) {
+    int normalize(int basis, int mask, unordered_map<int, unordered_map<int, int>> *lookup) {  // compute and cache, at most O(3*2^(m-3)) time and space
+        if (!(*lookup)[basis].count(mask)) {
             unordered_map<int, int> norm;
-            int result = 0, basis = 1;
-            for (int i = 0; i < m; ++i, basis *= 3) {
+            int result = 0;
+            for (; basis; basis /= 3) {
                 int x = mask / basis % 3;
                 if (!norm.count(x)) {
                     norm[x] = size(norm);
                 }
                 result += norm[x] * basis;
             }
-            (*lookup)[m][mask] = result;
+            (*lookup)[basis][mask] = result;
         }
-        return (*lookup)[m][mask];
+        return (*lookup)[basis][mask];
     }
 };
