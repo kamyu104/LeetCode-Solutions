@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1932%20%2F%201932-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1933%20%2F%201933-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -509,6 +509,7 @@
 1880| [Check if Word Equals Summation of Two Words](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/) | [C++](./C++/check-if-word-equals-summation-of-two-words.cpp) [Python](./Python/check-if-word-equals-summation-of-two-words.py) | _O(n)_ | _O(1)_ | Easy | |  |
 1903| [Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/) | [C++](./C++/largest-odd-number-in-string.cpp) [Python](./Python/largest-odd-number-in-string.py) | _O(n)_ | _O(1)_ | Easy | |  |
 1910| [Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/) | [C++](./C++/remove-all-occurrences-of-a-substring.cpp) [Python](./Python/remove-all-occurrences-of-a-substring.py) | _O(n + m)_ | _O(n + m)_ | Medium | | `KMP Algorithm` |
+1933| [Check if String Is Decomposable Into Value-Equal Substrings](https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/) | [C++](./C++/check-if-string-is-decomposable-into-value-equal-substrings.cpp) [Python](./Python/check-if-string-is-decomposable-into-value-equal-substrings.py) | _O(n)_ | _O(1)_ |  Easy | 🔒 |
 
 <br/>
 <div align="right">
