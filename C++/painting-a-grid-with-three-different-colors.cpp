@@ -30,11 +30,9 @@ public:
         }
         assert(size(normalized_mask_cnt) == 3 * pow(2, m - 1) / 3 / (m >= 2 ? 2 : 1));  // divided by 3 * 2 is since the first two colors are normalized to speed up performance
         unordered_map<int, unordered_map<int, int>> normalized_adj;
-        for (const auto& mask1 : masks) {
+        for (const auto& [mask1, _] : normalized_mask_cnt) {
             for (const auto& mask2 : adj.at(mask1)) {
-                if (mask1 == lookup[mask1]) {
-                    normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]] + 1) % MOD;
-                }
+                normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]] + 1) % MOD;
             }
         }
         // upper bound divided by 3 * 2 is since the first two colors in upper row are normalized to speed up performance
@@ -163,11 +161,9 @@ public:
             ++dp[lookup[mask]];
         }
         unordered_map<int, unordered_map<int, int>> normalized_adj;
-        for (const auto& mask1 : masks) {
+        for (const auto& [mask1, _] : dp) {
             for (const auto& mask2 : adj.at(mask1)) {
-                if (mask1 == lookup[mask1]) {
-                    normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]] + 1) % MOD;
-                }
+                normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]] + 1) % MOD;
             }
         }
         // divided by 3 * 2 is since the first two colors in upper row are normalized to speed up performance
