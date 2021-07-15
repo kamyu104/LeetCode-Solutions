@@ -12,14 +12,6 @@ public:
         vector<int> masks;
         backtracking(-1, -1, basis, &masks);  // Time: O(2^m), Space: O(2^m)
         assert(size(masks) == 3 * pow(2, m - 1));
-        unordered_map<int, vector<int>> adj;
-        for (const auto& mask : masks) {  // O(3^m) leaves which are all in depth m => Time: O(3^m), Space: O(3^m)
-            backtracking(mask, -1, basis, &adj[mask]);
-        }
-        assert(accumulate(cbegin(adj), cend(adj), 0,
-                          [](const auto& total, const auto& kvp) {
-                              return total + size(kvp.second);
-                          }) == 2 * pow(3, m));
         unordered_map<int, int> lookup;
         for (const auto& mask : masks) {  // Time: O(m * 2^m)
             lookup[mask] = normalize(basis, mask);
@@ -29,10 +21,14 @@ public:
             normalized_mask_cnt[lookup[mask]] = (normalized_mask_cnt[lookup[mask]] + 1) % MOD;
         }
         assert(size(normalized_mask_cnt) == 3 * pow(2, m - 1) / 3 / (m >= 2 ? 2 : 1));  // divided by 3 * 2 is since the first two colors are normalized to speed up performance
+        unordered_map<int, vector<int>> adj;
+        for (const auto& [mask, _] : normalized_mask_cnt) {  // O(3^m) leaves which are all in depth m => Time: O(3^m), Space: O(3^m)
+            backtracking(mask, -1, basis, &adj[mask]);
+        }
         unordered_map<int, unordered_map<int, int>> normalized_adj;
-        for (const auto& [mask1, _] : normalized_mask_cnt) {
-            for (const auto& mask2 : adj.at(mask1)) {
-                normalized_adj[lookup[mask1]][lookup[mask2]] = (normalized_adj[lookup[mask1]][lookup[mask2]] + 1) % MOD;
+        for (const auto& [mask1, mask2s] : adj) {
+            for (const auto& mask2 : mask2s) {
+                normalized_adj[mask1][lookup[mask2]] = (normalized_adj[mask1][lookup[mask2]] + 1) % MOD;
             }
         }
         // divided by 3 * 2 is since the first two colors in upper row are normalized to speed up performance
@@ -134,7 +130,15 @@ public:
         const int basis = pow(3, m - 1);
         const auto& masks = find_masks(m, basis);  // alternative of backtracking, Time: O(2^m), Space: O(2^m)
         assert(size(masks) == 3 * pow(2, m - 1));
-        const auto& adj = find_adj(m, basis, masks);  // alternative of backtracking, Time: O(3^m), Space: O(3^m)
+        unordered_map<int, int> lookup;
+        for (const auto& mask : masks) {  // Time: O(m * 2^m)
+            lookup[mask] = normalize(basis, mask);
+        }
+        unordered_map<int, int> dp;
+        for (const auto& mask : masks) {  // normalize colors to speed up performance
+            ++dp[lookup[mask]];
+        }
+        const auto& adj = find_adj(m, basis, dp);  // alternative of backtracking, Time: O(3^m), Space: O(3^m)
         // proof:
         //   'o' uses the same color with its bottom-left one, 
         //   'x' uses the remaining color different from its left one and bottom-left one,
@@ -148,18 +152,6 @@ public:
         //         3  3       3
         //         |  |       |
         //     [2, ?, ?, ..., ?]
-        assert(accumulate(cbegin(adj), cend(adj), 0,
-                          [](const auto& total, const auto& kvp) {
-                              return total + size(kvp.second);
-                          }) == 2 * pow(3, m));
-        unordered_map<int, int> lookup;
-        for (const auto& mask : masks) {  // Time: O(m * 2^m)
-            lookup[mask] = normalize(basis, mask);
-        }
-        unordered_map<int, int> dp;
-        for (const auto& mask : masks) {  // normalize colors to speed up performance
-            ++dp[lookup[mask]];
-        }
         unordered_map<int, unordered_map<int, int>> normalized_adj;
         for (const auto& [mask1, _] : dp) {
             for (const auto& mask2 : adj.at(mask1)) {
@@ -211,7 +203,7 @@ private:
         return masks;
     }
 
-    unordered_map<int, vector<int>> find_adj(int m, int basis, const vector<int>& masks) {
+    unordered_map<int, vector<int>> find_adj(int m, int basis, const unordered_map<int, int>& dp) {
         // Time:  3*2^(m-1) * (1 + 2 + 2 * (3/2) + 2 * (3/2)^2 + ... + 2 * (3/2)^(m-2)) =
         //        3*2^(m-1) * (1+2*((3/2)^(m-1)-1)/((3/2)-1)) =
         //        3*2^(m-1) * (1+4*((3/2)^(m-1)-1)) =
@@ -220,14 +212,14 @@ private:
         //        O(3^m),
         // Space: O(3^m)
         unordered_map<int, vector<int>> adj;
-        for (const auto& mask : masks) {  // O(2^m)
+        for (const auto& [mask, _] : dp) {  // O(2^m)
             adj[mask].emplace_back(mask);
         }
         for (int c = 0; c < m; ++c) {
             assert(accumulate(cbegin(adj), cend(adj), 0,
                               [](const auto& total, const auto& kvp) {
                                   return total + size(kvp.second);
-                              }) >= c ? pow(3, c) * pow(2, m - (c-1)) : 3 * pow(2, m - 1));
+                              }) == (c ? pow(3, c) * pow(2, m - (c - 1)) : 3 * pow(2, m - 1)) / 3 / (m >= 2 ? 2 : 1));  // divided by 3 * 2 is since the first two colors are normalized to speed up performance
             unordered_map<int, vector<int>> new_adj;
             for (const auto& [mask1, mask2s] : adj) {
                 for (const auto& mask : mask2s) {
