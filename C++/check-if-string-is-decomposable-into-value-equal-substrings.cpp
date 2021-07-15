@@ -32,8 +32,7 @@ class Solution2 {
 public:
     bool isDecomposable(string s) {
         bool found = false;
-        int l = 0;
-        for (int i = 0; i < size(s); ++i) {
+        for (int i = 0, l = 0; i < size(s); ++i) {
             if (!l || s[i] != s[i - 1]) {
                 if (l) {
                     return false;
