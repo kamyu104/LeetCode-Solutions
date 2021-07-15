@@ -114,7 +114,7 @@ class Solution2(object):
             for mask in masks:  # O(2^m)
                 adj[mask].append(mask)
             for c in xrange(m):
-                assert(sum(len(v) for v in adj.itervalues()) == 3**(c) * 2**(m-(c-1)) if c >= 1 else 3 * 2**(m-1))
+                assert(sum(len(v) for v in adj.itervalues()) == 3**c * 2**(m-(c-1)) if c >= 1 else 3 * 2**(m-1))
                 new_adj = collections.defaultdict(list)
                 for mask1, mask2s in adj.iteritems():
                     for mask in mask2s:
@@ -125,7 +125,7 @@ class Solution2(object):
                         for x in choices:
                             new_adj[mask1].append((x*basis)+(mask//3))  # encoding mask
                 adj = new_adj
-            assert(sum(3**(c) * 2**(m-(c-1)) if c >= 1 else 3 * 2**(m-1) for c in xrange(m)) == 4*3**m-9*2**(m-1))
+            assert(sum(3**c * 2**(m-(c-1)) if c >= 1 else 3 * 2**(m-1) for c in xrange(m)) == 4*3**m-9*2**(m-1))
             return adj
  
         def normalize(basis, mask):
