@@ -4,6 +4,32 @@
 class Solution {
 public:
     bool isDecomposable(string s) {
+        if (size(s) % 3 != 2) {
+            return false;
+        }
+        int left;
+        for (left = 0; left < size(s); left += 3) {
+            if (std::adjacent_find(cbegin(s) + left + 1, cbegin(s) + min(left + 3, int(size(s))),
+                                   std::not_equal_to<>()) != cbegin(s) + left + 3) {
+                break;
+            }
+        }
+        int right;
+        for (right = size(s) - 1; right >= left + 1  ; right -= 3) {
+            if (std::adjacent_find(cbegin(s) + max(right - 2, left), cbegin(s) + right,
+                                   std::not_equal_to<>()) != cbegin(s) + right) {
+                break;
+            }
+        }
+        return (right + 3) - left == 1;
+    }
+};
+
+// Time:  O(n)
+// Space: O(1)
+class Solution2 {
+public:
+    bool isDecomposable(string s) {
         bool found = false;
         for (int i = 0, l; i < size(s); i += l) {
             l = 1;
@@ -28,7 +54,7 @@ public:
 
 // Time:  O(n)
 // Space: O(1)
-class Solution2 {
+class Solution3 {
 public:
     bool isDecomposable(string s) {
         bool found = false;
