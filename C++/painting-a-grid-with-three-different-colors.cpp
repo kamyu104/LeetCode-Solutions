@@ -1,4 +1,4 @@
-// Time:  O(3^m + 2^(3 * m) * logn)
+// Time:  O(m * 2^m + 3^m + 2^(3 * m) * logn) = O(2^(3 * m) * logn)
 // Space: O(2^(2 * m))
 
 // better complexity for small m, super large n
