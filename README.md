@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
 ![Progress](https://img.shields.io/badge/progress-1934%20%2F%201934-ff69b4.svg)&nbsp;
-![Travis](https://travis-ci.org/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
+![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
 * R.I.P. to my old Leetcode repository, where there were `5.7k+` stars and `2.2k+` forks (ever the top 3 in the field).
