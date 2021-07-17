@@ -1,24 +1,56 @@
 # Time:  O(n)
 # Space: O(1)
 
-class Solution(object):
-    def intToRoman(self, num):
-        """
-        :type num: int
-        :rtype: str
-        """
-        numeral_map = {1: "I", 4: "IV", 5: "V", 9: "IX", \
-                       10: "X", 40: "XL", 50: "L", 90: "XC", \
-                       100: "C", 400: "CD", 500: "D", 900: "CM", \
-                       1000: "M"}
-        keyset, result = sorted(numeral_map.keys()), []
+class Solution:
+    def intToRoman(self, num: int) -> str:
 
-        while num > 0:
-            for key in reversed(keyset):
-                while num / key > 0:
-                    num -= key
-                    result += numeral_map[key]
+    
+        num_to_roman = {
+            1 : "I",
+            5 : "V",
+            10: "X", 
+            50: "L", 
+            100: "C", 
+            500: "D", 
+            1000: "M", 
+            4: "IV", 
+            40: "XL", 
+            400: "CD", 
+            9: "IX", 
+            90: "XC", 
+            900: "CM"
+        }
+        
+        if num_to_roman.get(num, 0):
+            return num_to_roman[num]
+        
+        output = ''
+        num = str(num)
+        digits = len(num)
+        for i, char in enumerate(num): 
+            
+            multiple = (10**(digits-i-1))
+            n = int(char)*multiple
+            
+            
+            # perform lookup 
+            if num_to_roman.get(n, 0):
+                output += num_to_roman[n]
+                continue
+            
+            val = n//multiple
+            if val < 5:
+                output += num_to_roman[multiple]*val
+            
+            else: 
+                output += num_to_roman[multiple*5]
+                val = val - 5
+                output += num_to_roman[multiple]*val
+                
+            
+        return output
 
-        return "".join(result)
-
-
+            
+        
+        
+        
