@@ -190,11 +190,14 @@ private:
         for (int c = 0; c < m; ++c) {
             vector<int> new_masks;
             for (const auto& mask : masks) {
-                unordered_set<int> choices = {0, 1, 2};
+                vector<bool> used(3);
                 if (c > 0) {
-                    choices.erase(mask / basis);  // get left grid
+                    used[mask / basis] = true;  // get left grid
                 }
-                for (const auto&x : choices) {
+                for (int x = 0; x < 3; ++x) {
+                    if (used[x]) {
+                        continue;
+                    }
                     new_masks.emplace_back((x * basis) + (mask / 3));  // encoding mask
                 }
             }
@@ -223,12 +226,15 @@ private:
             unordered_map<int, vector<int>> new_adj;
             for (const auto& [mask1, mask2s] : adj) {
                 for (const auto& mask : mask2s) {
-                    unordered_set<int> choices = {0, 1, 2};
-                    choices.erase(mask % 3);  // get up grid;
+                    vector<bool> used(3);
+                    used[mask % 3] = true;  // get up grid
                     if (c > 0) {
-                        choices.erase(mask / basis);  // get left grid
+                        used[mask / basis] = true;  // get left grid
                     }
-                    for (const auto&x : choices) {
+                    for (int x = 0; x < 3; ++x) {
+                        if (used[x]) {
+                            continue;
+                        }
                         new_adj[mask1].emplace_back((x * basis) + (mask / 3));  // encoding mask
                     }
                 }
