@@ -190,20 +190,23 @@ class Solution3(object):
         :rtype: int
         """
         MOD = 10**9+7
-        def normalize(basis, mask):
-            norm = {}
-            result = 0
-            while basis:
-                x = mask//basis%3
-                if x not in norm:
-                    norm[x] = len(norm)
-                result += norm[x]*basis
-                basis //= 3
-            return result
+        def normalize(basis, mask, lookup):  # compute and cache, at most O(3*2^(m-3)) time and space
+            if mask not in lookup[basis]:
+                norm = {}
+                result, b = 0, basis
+                while b:
+                    x = mask//b%3
+                    if x not in norm:
+                        norm[x] = len(norm)
+                    result += norm[x]*b
+                    b //= 3
+                lookup[basis][mask] = result
+            return lookup[basis][mask]
 
         if m > n:
             m, n = n, m
         basis = b = 3**(m-1)
+        lookup = collections.defaultdict(dict)
         dp = collections.Counter({0: 1})
         for idx in xrange(m*n):
             r, c = divmod(idx, m)
@@ -224,7 +227,7 @@ class Solution3(object):
                 if c > 0:
                     choices.discard(mask//basis)  # get left grid
                 for x in choices:
-                    new_mask = normalize(basis//b, ((x*basis)+(mask//3))//b)*b  # encoding mask
+                    new_mask = normalize(basis//b, ((x*basis)+(mask//3))//b, lookup)*b  # encoding mask
                     new_dp[new_mask] = (new_dp[new_mask]+v)%MOD
             if b > 1:
                 b //= 3
