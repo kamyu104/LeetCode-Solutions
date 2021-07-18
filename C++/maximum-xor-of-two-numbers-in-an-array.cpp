@@ -1,12 +1,12 @@
-// Time:  O(n)
-// Space: O(n)
+// Time:  O(nlogk), k is max(nums)
+// Space: O(nlogk)
 
 class Solution {
 public:
     int findMaximumXOR(vector<int>& nums) {
         int result = 0;
         
-        for (int i = 31; i >= 0; --i) {
+        for (int i = bit_length(*max_element(cbegin(nums), cend(nums))); i >= 0; --i) {
             result <<= 1;
             unordered_set<int> prefixes;
             for (const auto& n : nums) {
@@ -21,5 +21,10 @@ public:
         }
 
         return result;
+    }
+
+private:
+    int bit_length(int x) {
+        return x != 0 ? 32 - __builtin_clz(x) : 1;
     }
 };
