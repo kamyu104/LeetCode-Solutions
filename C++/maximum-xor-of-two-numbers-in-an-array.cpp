@@ -1,5 +1,5 @@
 // Time:  O(nlogk), k is max(nums)
-// Space: O(nlogk)
+// Space: O(n)
 
 class Solution {
 public:
