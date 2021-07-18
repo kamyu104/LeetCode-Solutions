@@ -64,7 +64,7 @@ public:
             max_val = max(max_val, queries[i][1]);
         }
         vector<int> result(size(queries));
-        Trie trie(32 - __builtin_clz(max_val));
+        Trie trie(bit_length(max_val));
         iter_dfs(adj, qs, adj[-1][0], &trie, &result);
         return result;
     }
@@ -96,6 +96,10 @@ private:
                 trie->insert(node, -1);
             }
         }
+    }
+
+    int bit_length(int x) {
+        return x != 0 ? 32 - __builtin_clz(x) : 1;
     }
 };
 
@@ -164,7 +168,7 @@ public:
             max_val = max(max_val, queries[i][1]);
         }
         vector<int> result(size(queries));
-        Trie trie(32 - __builtin_clz(max_val));
+        Trie trie(bit_length(max_val));
         dfs(adj, qs, adj[-1][0], &trie, &result);
         return result;
     }
@@ -188,5 +192,9 @@ private:
             }
         }
         trie->insert(node, -1);
+    }
+
+    int bit_length(int x) {
+        return x != 0 ? 32 - __builtin_clz(x) : 1;
     }
 };
