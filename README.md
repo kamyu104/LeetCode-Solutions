@@ -1732,7 +1732,7 @@
 1900| [The Earliest and Latest Rounds Where Players Compete](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/)|[C++](./C++/the-earliest-and-latest-rounds-where-players-compete.cpp) [Python](./Python/the-earliest-and-latest-rounds-where-players-compete.py)| _O(n^4)_     | _O(n^2)_         | Hard         | | |
 1908| [Game of Nim](https://leetcode.com/problems/game-of-nim/)|[C++](./C++/game-of-nim.cpp) [Python](./Python/game-of-nim.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 | |
 1931| [Painting a Grid With Three Different Colors](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/)|[C++](./C++/painting-a-grid-with-three-different-colors.cpp) [Python](./Python/painting-a-grid-with-three-different-colors.py)| _O(2^(3 * m) * logn)_     | _O(2^(2 * m))_         | Hard         | variant of [Number of Ways to Paint N × 3 Grid](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/) | DP, Backtracking, Matrix Exponentiation, State Compression |
-1937| [Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/)|[C++](./C++/maximum-number-of-points-with-cost.cpp) [Python](./Python/maximum-number-of-points-with-cost.py)| _O(m * n)_     | _O(n)_         | Medium         | | |
+1937| [Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/)|[C++](./C++/maximum-number-of-points-with-cost.cpp) [Python](./Python/maximum-number-of-points-with-cost.py)| _O(m * n)_     | _O(n)_         | Medium         | | Prefix Sum |
 
 <br/>
 <div align="right">
