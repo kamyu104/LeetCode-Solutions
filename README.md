@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1934%20%2F%201934-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1938%20%2F%201938-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -122,6 +122,7 @@
 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array/) | [C++](./C++/decode-xored-array.cpp) [Python](./Python/decode-xored-array.py) | _O(n)_ | _O(1)_ | Easy ||
 1734 | [Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation/) | [C++](./C++/decode-xored-permutation.cpp) [Python](./Python/decode-xored-permutation.py) | _O(n)_ | _O(1)_ | Medium ||
 1829 | [Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/) | [C++](./C++/maximum-xor-for-each-query.cpp) [Python](./Python/maximum-xor-for-each-query.py) | _O(n)_ | _O(1)_ | Medium ||
+1938 | [Maximum Genetic Difference Query](https://leetcode.com/problems/maximum-genetic-difference-query/) | [C++](./C++/maximum-genetic-difference-query.cpp) [Python](./Python/maximum-genetic-difference-query.py) | _O(nlogk + mlogk)_ | _O(n + logk)_ | Hard | variant of [Maximum XOR With an Element From Array](https://leetcode.com/problems/maximum-xor-with-an-element-from-array/) | DFS, Greedy, Trie
 
 <br/>
 <div align="right">
@@ -510,6 +511,7 @@
 1903| [Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/) | [C++](./C++/largest-odd-number-in-string.cpp) [Python](./Python/largest-odd-number-in-string.py) | _O(n)_ | _O(1)_ | Easy | |  |
 1910| [Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/) | [C++](./C++/remove-all-occurrences-of-a-substring.cpp) [Python](./Python/remove-all-occurrences-of-a-substring.py) | _O(n + m)_ | _O(n + m)_ | Medium | | `KMP Algorithm` |
 1933| [Check if String Is Decomposable Into Value-Equal Substrings](https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/) | [C++](./C++/check-if-string-is-decomposable-into-value-equal-substrings.cpp) [Python](./Python/check-if-string-is-decomposable-into-value-equal-substrings.py) | _O(n)_ | _O(1)_ |  Easy | 🔒 |
+1935| [Maximum Number of Words You Can Type](https://leetcode.com/problems/maximum-number-of-words-you-can-type/) | [C++](./C++/maximum-number-of-words-you-can-type.cpp) [Python](./Python/maximum-number-of-words-you-can-type.py) | _O(n)_ | _O(1)_ | Easy | |  |
 
 <br/>
 <div align="right">
@@ -1730,6 +1732,7 @@
 1900| [The Earliest and Latest Rounds Where Players Compete](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/)|[C++](./C++/the-earliest-and-latest-rounds-where-players-compete.cpp) [Python](./Python/the-earliest-and-latest-rounds-where-players-compete.py)| _O(n^4)_     | _O(n^2)_         | Hard         | | |
 1908| [Game of Nim](https://leetcode.com/problems/game-of-nim/)|[C++](./C++/game-of-nim.cpp) [Python](./Python/game-of-nim.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 | |
 1931| [Painting a Grid With Three Different Colors](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/)|[C++](./C++/painting-a-grid-with-three-different-colors.cpp) [Python](./Python/painting-a-grid-with-three-different-colors.py)| _O(2^(3 * m) * logn)_     | _O(2^(2 * m))_         | Hard         | variant of [Number of Ways to Paint N × 3 Grid](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/) | DP, Backtracking, Matrix Exponentiation, State Compression |
+1937| [Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/)|[C++](./C++/maximum-number-of-points-with-cost.cpp) [Python](./Python/maximum-number-of-points-with-cost.py)| _O(m * n)_     | _O(n)_         | Hard         | | |
 
 <br/>
 <div align="right">
@@ -1884,6 +1887,7 @@
 1913 | [Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/) | [C++](./C++/maximum-product-difference-between-two-pairs.cpp) [Python](./Python/maximum-product-difference-between-two-pairs.py) | _O(n)_ | _O(1)_ | Medium | | |
 1921 | [Eliminate Maximum Number of Monsters](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/) | [C++](./C++/eliminate-maximum-number-of-monsters.cpp) [Python](./Python/eliminate-maximum-number-of-monsters.py) | _O(nlogn)_ | _O(1)_ | Medium | | |
 1927 | [Sum Game](https://leetcode.com/problems/sum-game/) | [C++](./C++/sum-game.cpp) [Python](./Python/sum-game.py) | _O(n)_ | _O(1)_ | Medium | | |
+1936 | [Add Minimum Number of Rungs](https://leetcode.com/problems/add-minimum-number-of-rungs/) | [C++](./C++/add-minimum-number-of-rungs.cpp) [Python](./Python/add-minimum-number-of-rungs.py) | _O(n)_ | _O(1)_ | Medium | | |
 
 <br/>
 <div align="right">
