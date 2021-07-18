@@ -49,8 +49,6 @@ class Solution(object):
                         result[i] = trie.query(val)
                     stk.append((2, node))
                     for child in reversed(adj[node]):
-                        if child == "_cnt":
-                            continue
                         stk.append((1, child))
                 elif step == 2:
                     trie.insert(node, -1)
@@ -113,8 +111,6 @@ class Solution2(object):
             for i, val in qs[node]:
                 result[i] = trie.query(val)
             for child in adj[node]:
-                if child == "_cnt":
-                    continue
                 dfs(adj, qs, child, trie, result)
             trie.insert(node, -1)
 
