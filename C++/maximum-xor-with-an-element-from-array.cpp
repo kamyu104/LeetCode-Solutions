@@ -58,7 +58,7 @@ public:
                  return a[2] < b[2];
              });
         vector<int> result(size(queries));
-        Trie trie(32 - __builtin_clz(max_val));
+        Trie trie(bit_length(max_val));
         int j = 0;
         for (const auto& q : queries) {
             int i = q[0], x = q[1], m = q[2];
@@ -68,5 +68,10 @@ public:
             result[i] = trie.query(x);
         }
         return result;
+    }
+
+private:
+    int bit_length(int x) {
+        return x != 0 ? 32 - __builtin_clz(x) : 1;
     }
 };
