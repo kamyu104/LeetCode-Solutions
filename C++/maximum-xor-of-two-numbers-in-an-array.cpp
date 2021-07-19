@@ -14,7 +14,7 @@ public:
             }
             for (const auto& p : prefixes) {
                 if (prefixes.count((result | 1) ^ p)) {
-                    ++result;
+                    result |= 1;
                     break;
                 }
             }
