@@ -22,9 +22,8 @@ class Solution(object):
         return result
 
 
- # Time:  O(nlogk), k is max(nums)
+# Time:  O(nlogk), k is max(nums)
 # Space: O(nlogk)
-
 class Trie(object):
     def __init__(self, bit_length):
         self.__root = {}
