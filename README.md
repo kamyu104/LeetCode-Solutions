@@ -122,7 +122,6 @@
 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array/) | [C++](./C++/decode-xored-array.cpp) [Python](./Python/decode-xored-array.py) | _O(n)_ | _O(1)_ | Easy ||
 1734 | [Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation/) | [C++](./C++/decode-xored-permutation.cpp) [Python](./Python/decode-xored-permutation.py) | _O(n)_ | _O(1)_ | Medium ||
 1829 | [Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/) | [C++](./C++/maximum-xor-for-each-query.cpp) [Python](./Python/maximum-xor-for-each-query.py) | _O(n)_ | _O(1)_ | Medium ||
-1938 | [Maximum Genetic Difference Query](https://leetcode.com/problems/maximum-genetic-difference-query/) | [C++](./C++/maximum-genetic-difference-query.cpp) [Python](./Python/maximum-genetic-difference-query.py) | _O(nlogk + mlogk)_ | _O(n + logk)_ | Hard | variant of [Maximum XOR With an Element From Array](https://leetcode.com/problems/maximum-xor-with-an-element-from-array/) | DFS, Greedy, Trie
 
 <br/>
 <div align="right">
@@ -756,6 +755,7 @@
 1649|[Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions/)| [C++](./C++/create-sorted-array-through-instructions.cpp) [Python](./Python/create-sorted-array-through-instructions.py)| _O(nlogn)_ | _O(n)_ | Hard | variant of [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | BIT, Fenwick Tree, Merge Sort |
 1666 | [Change the Root of a Binary Tree](https://leetcode.com/problems/change-the-root-of-a-binary-tree/)  | [C++](./C++/change-the-root-of-a-binary-tree.cpp) [Python](./Python/change-the-root-of-a-binary-tree.py) | _O(h)_| _O(1)_| Medium           |🔒| | 
 1834 | [Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu/)  | [C++](./C++/single-threaded-cpu.cpp) [Python](./Python/single-threaded-cpu.py) | _O(nlogn)_| _O(n)_| Medium           | | | 
+1938 | [Maximum Genetic Difference Query](https://leetcode.com/problems/maximum-genetic-difference-query/) | [C++](./C++/maximum-genetic-difference-query.cpp) [Python](./Python/maximum-genetic-difference-query.py) | _O(nlogk + mlogk)_ | _O(n + logk)_ | Hard | variant of [Maximum XOR With an Element From Array](https://leetcode.com/problems/maximum-xor-with-an-element-from-array/) | DFS, Greedy, Trie
 
 <br/>
 <div align="right">
