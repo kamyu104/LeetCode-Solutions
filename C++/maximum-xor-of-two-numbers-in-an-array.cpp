@@ -73,6 +73,7 @@ private:
         const int bit_length_;
         vector<array<int, 2>> nodes_;
     };
+
 public:
     int findMaximumXOR(vector<int>& nums) {
         Trie trie(bit_length(*max_element(cbegin(nums), cend(nums))));
