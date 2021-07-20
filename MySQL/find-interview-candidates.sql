@@ -11,7 +11,7 @@ WITH winners_cte AS
    (SELECT bronze_medal AS winner, contest_id
     FROM contests)),
      consecutive_winners_cte AS
-  (SELECT winner, contest_id, row_number() over(PARTITION BY winner ORDER BY contest_id) AS row_num
+  (SELECT winner, contest_id, row_number() OVER (PARTITION BY winner ORDER BY contest_id) AS row_num
    FROM winners_cte),
      candidates_cte AS
   ((SELECT winner AS user_id
