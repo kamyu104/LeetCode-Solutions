@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1938%20%2F%201938-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1939%20%2F%201939-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -2198,6 +2198,7 @@
 1917| [Leetcodify Friends Recommendations](https://leetcode.com/problems/leetcodify-friends-recommendations/) | [MySQL](./MySQL/leetcodify-friends-recommendations.sql) | _O(n^2)_ | _O(n^2)_       | Hard           |🔒||
 1919| [Leetcodify Similar Friends](https://leetcode.com/problems/leetcodify-similar-friends/) | [MySQL](./MySQL/leetcodify-similar-friends.sql) | _O(n * l)_ | _O(n * l)_       | Hard           |🔒||
 1934| [Confirmation Rate](https://leetcode.com/problems/confirmation-rate/) | [MySQL](./MySQL/confirmation-rate.sql) | _O(n + m)_ | _O(n + m)_       | Medium           |🔒||
+1939| [Users That Actively Request Confirmation Messages](https://leetcode.com/problems/users-that-actively-request-confirmation-messages/) | [MySQL](./MySQL/users-that-actively-request-confirmation-messages.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
