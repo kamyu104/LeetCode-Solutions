@@ -15,5 +15,6 @@ public:
                 return i;
             }
         }
+        return p_max;
     }
 };
