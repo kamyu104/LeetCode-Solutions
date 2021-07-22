@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1939%20%2F%201939-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1940%20%2F%201940-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -343,6 +343,7 @@
 1914 | [Cyclically Rotating a Grid](https://leetcode.com/problems/cyclically-rotating-a-grid/) | [C++](./C++/cyclically-rotating-a-grid.cpp) [Python](./Python/cyclically-rotating-a-grid.py) | _O(m * n)_ | _O(1)_ | Medium || Inplace
 1920 | [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/) | [C++](./C++/build-array-from-permutation.cpp) [Python](./Python/build-array-from-permutation.py) | _O(n)_ | _O(1)_ | Easy || Inplace
 1929 | [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | [C++](./C++/concatenation-of-array.cpp) [Python](./Python/concatenation-of-array.py) | _O(n)_ | _O(1)_ | Easy ||
+1940 | [Longest Common Subsequence Between Sorted Arrays](https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/) | [C++](./C++/longest-common-subsequence-between-sorted-arrays.cpp) [Python](./Python/longest-common-subsequence-between-sorted-arrays.py) | _O(m * n)_ | _O(l)_ | Medium | 🔒 |
 
 <br/>
 <div align="right">
