@@ -5,9 +5,9 @@ class Solution {
 public:
     int getSum(int a, int b) {
         while (b) {
-            int carry = a & b;
+            uint32_t carry = a & b;
             a ^= b;
-            b = (unsigned int)carry << 1;
+            b = carry << 1;
         }
         return a;
     }
