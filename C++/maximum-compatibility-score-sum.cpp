@@ -73,3 +73,53 @@ private:
         return result;
     }
 };
+
+// Time:  O(m * 2^m)
+// Space: O(2^m)
+// backtracking + memoization solution
+class Solution2 {
+public:
+    int maxCompatibilitySum(vector<vector<int>>& students, vector<vector<int>>& mentors) {
+        vector<int> s_bitmasks = bitmasks(students);
+        vector<int> m_bitmasks = bitmasks(mentors);
+        int mask = pow(2, size(mentors)) - 1;
+        vector<int> dp(mask + 1, -1);
+        return solve(s_bitmasks, m_bitmasks, 0, mask, size(students), size(students[0]), &dp);
+    }
+
+private:
+    int solve(const vector<int>& s_bitmasks,
+              const vector<int>& m_bitmasks,
+              int i, int mask, int m, int n,
+              vector<int> *dp){
+        if (i == m) {
+            return 0;
+        }
+        if ((*dp)[mask] == -1) {
+            int result = 0;
+            for (int j = 0, basis = 1; j < m; ++j, basis <<= 1) {
+                if (mask & basis) {        
+                    result = max(result,
+                                 n - __builtin_popcount(s_bitmasks[i] ^ m_bitmasks[j]) +
+                                 solve(s_bitmasks, m_bitmasks, i + 1, mask ^ basis, m, n, dp));
+                }
+            }
+            (*dp)[mask] = result;
+        }
+        return (*dp)[mask];
+    }
+
+    vector<int> bitmasks(const vector<vector<int>>& vvi) {
+        vector<int> result;
+        for (const auto& vi : vvi) {
+            int bitmask = 0;
+            for (int i = 0, basis = 1; i < size(vi); ++i, basis <<= 1) {
+                if (vi[i]) {
+                    bitmask |= basis;
+                }
+            }
+            result.emplace_back(bitmask);
+        }
+        return result;
+    }
+};
