@@ -9,7 +9,7 @@ class Solution(object):
         """
         result = []
         for i in reversed(xrange(len(heights))):
-            if not result or heights[i] > heights[result[-1]]:
+            if not result or heights[result[-1]] < heights[i]:
                 result.append(i)
         result.reverse()
         return result
