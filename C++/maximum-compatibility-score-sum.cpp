@@ -82,7 +82,7 @@ public:
     int maxCompatibilitySum(vector<vector<int>>& students, vector<vector<int>>& mentors) {
         vector<int> s_bitmasks = bitmasks(students);
         vector<int> m_bitmasks = bitmasks(mentors);
-        int mask = pow(2, size(mentors)) - 1;
+        int mask = (1 << size(mentors)) - 1;
         vector<int> dp(mask + 1, -1);
         dp[0] = 0;
         return solve(s_bitmasks, m_bitmasks, 0, mask, size(students), size(students[0]), &dp);
