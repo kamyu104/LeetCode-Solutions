@@ -55,6 +55,6 @@ class Solution(object):
         :rtype: int
         """
         def score(s, m):
-            return sum(a == b for a, b in itertools.izip(s, m))
+            return sum(int(a == b) for a, b in itertools.izip(s, m))
 
         return -hungarian([[-score(s, m) for m in mentors] for s in students])[0]
