@@ -73,7 +73,7 @@ public:
             const auto i = size(students) - __builtin_popcount(mask);
             for (int j = 0, basis = 1; j < size(mentors); ++j, basis <<= 1) {
                 if (mask & basis) {
-                    dp[mask] = max(dp[mask], int(size(students[0])) - __builtin_popcount(s_bitmasks[i] ^ m_bitmasks[j]) + dp[mask ^ basis]);
+                    dp[mask] = max(dp[mask], (int(size(students[0])) - __builtin_popcount(s_bitmasks[i] ^ m_bitmasks[j])) + dp[mask ^ basis]);
                 }
             }
         }
