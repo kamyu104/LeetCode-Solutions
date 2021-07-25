@@ -757,7 +757,7 @@
 1666 | [Change the Root of a Binary Tree](https://leetcode.com/problems/change-the-root-of-a-binary-tree/)  | [C++](./C++/change-the-root-of-a-binary-tree.cpp) [Python](./Python/change-the-root-of-a-binary-tree.py) | _O(h)_| _O(1)_| Medium           |🔒| | 
 1834 | [Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu/)  | [C++](./C++/single-threaded-cpu.cpp) [Python](./Python/single-threaded-cpu.py) | _O(nlogn)_| _O(n)_| Medium           | | | 
 1938 | [Maximum Genetic Difference Query](https://leetcode.com/problems/maximum-genetic-difference-query/) | [C++](./C++/maximum-genetic-difference-query.cpp) [Python](./Python/maximum-genetic-difference-query.py) | _O(nlogk + mlogk)_ | _O(n + logk)_ | Hard | variant of [Maximum XOR With an Element From Array](https://leetcode.com/problems/maximum-xor-with-an-element-from-array/) | DFS, Greedy, Trie
-1948| [Delete Duplicate Folders in System](https://leetcode.com/problems/delete-duplicate-folders-in-system/) |[C++](./C++/delete-duplicate-folders-in-system.cpp)  [Python](./Python/delete-duplicate-folders-in-system.py) | _O(m * nlogn + l * t^2)_ | _O(l * t^2)_ | Hard         | variant of [Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/) | Trie, DFS, Hash
+1948| [Delete Duplicate Folders in System](https://leetcode.com/problems/delete-duplicate-folders-in-system/) |[C++](./C++/delete-duplicate-folders-in-system.cpp)  [Python](./Python/delete-duplicate-folders-in-system.py) | _O(m * nlogn + l * t)_ | _O(l * t)_ | Hard         | variant of [Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/) | Trie, DFS, Hash
 
 <br/>
 <div align="right">
