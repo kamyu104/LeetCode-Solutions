@@ -88,14 +88,14 @@ class Solution2(object):
                 result.append(bitmask)
             return result
 
-        s_bitmasks = bitmasks(students)
-        m_bitmasks = bitmasks(mentors)
-        dp = [0]*(2**len(students))
+        nums1 = bitmasks(students)
+        nums2 = bitmasks(mentors)
+        dp = [(0, 0)]*(2**len(nums2))
+        dp[0] = (0, 0)
         for mask in xrange(len(dp)):
-            i = len(students)-popcount(mask)
-            basis = 1
-            for j in xrange(len(mentors)):
-                if mask&basis:
-                    dp[mask] = max(dp[mask], (len(students[0])-popcount(s_bitmasks[i]^m_bitmasks[j])) + dp[mask^basis])
-                basis <<= 1
-        return dp[-1]
+            bit = 1
+            for i in xrange(len(nums2)):
+                if (mask&bit) == 0:
+                    dp[mask|bit] = max(dp[mask|bit], (dp[mask][0]+(len(students[0])-popcount(nums1[dp[mask][1]]^nums2[i])), dp[mask][1]+1))
+                bit <<= 1
+        return dp[-1][0]
