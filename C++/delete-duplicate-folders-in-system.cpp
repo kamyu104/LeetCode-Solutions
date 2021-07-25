@@ -34,12 +34,12 @@ private:
 
         void Insert(const vector<string>& s,
                     unordered_map<string, int> *folder_ids,
-                    unordered_map<int, string> *names) {
+                    unordered_map<int, string> *id_folders) {
             auto p = this;
             for (const auto& c : s) {
                 if (!folder_ids->count(c)) {
                     (*folder_ids)[c] = size(*folder_ids);
-                    (*names)[(*folder_ids)[c]] = c;
+                    (*id_folders)[(*folder_ids)[c]] = c;
                 }
                 const auto folder_id = (*folder_ids)[c];
                 if (!p->leaves.count(folder_id)) {
@@ -54,16 +54,16 @@ public:
     vector<vector<string>> deleteDuplicateFolder(vector<vector<string>>& paths) {
         auto trie = make_unique<TrieNode>();
         unordered_map<string, int> folder_ids;
-        unordered_map<int, string> names;
+        unordered_map<int, string> id_folders;
         for (const auto& path : paths) {
-            trie->Insert(path, &folder_ids, &names);
+            trie->Insert(path, &folder_ids, &id_folders);
         }
         unordered_map<int, TrieNode*> lookup;
         unordered_map<vector<pair<int, int>>, int, VectorPairHash<int>> node_ids;
         mark(trie.get(), &lookup, &node_ids);
         vector<vector<string>> result;
         vector<int> path;
-        sweep(trie.get(), names, &path, &result);
+        sweep(trie.get(), id_folders, &path, &result);
         return result;
     }
 
@@ -92,14 +92,14 @@ private:
     }
 
     void sweep(TrieNode *node,
-               const unordered_map<int, string>& names,
+               const unordered_map<int, string>& id_folders,
                vector<int> *path,
                vector<vector<string>> *result) {
         if (!empty(*path)) {
             result->emplace_back();
             transform(cbegin(*path), cend(*path), back_inserter(result->back()),
-                      [&names](const auto& i) {
-                          return names.at(i);
+                      [&id_folders](const auto& i) {
+                          return id_folders.at(i);
                       });
         }
         for (const auto& [subfolder_id, child] : node->leaves) {
@@ -107,7 +107,7 @@ private:
                 continue;
             }
             path->emplace_back(subfolder_id);
-            sweep(child.get(), names, path, result);
+            sweep(child.get(), id_folders, path, result);
             path->pop_back();
         }
     }
