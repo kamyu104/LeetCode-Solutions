@@ -16,11 +16,12 @@ class Solution(object):
         def mark(node, lookup, ids):
             id_pairs = []
             for subfolder, child in node.iteritems():
-                if child != "_del":
-                    node_id = mark(child, lookup, ids)
-                    if subfolder not in ids:
-                        ids[subfolder] = len(ids)
-                    id_pairs.append((ids[subfolder], node_id))
+                if child == "_del":
+                    continue
+                node_id = mark(child, lookup, ids)
+                if subfolder not in ids:
+                    ids[subfolder] = len(ids)
+                id_pairs.append((ids[subfolder], node_id))
             id_pairs.sort()
             node_id = ids[tuple(id_pairs)]
             if node_id:
