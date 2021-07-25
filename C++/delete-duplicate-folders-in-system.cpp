@@ -29,9 +29,6 @@ private:
 
     class TrieNode { 
     public:
-        bool deleted = false;
-        unordered_map<int, unique_ptr<TrieNode>> leaves;
-
         void Insert(const vector<string>& s,
                     unordered_map<string, int> *folder_ids,
                     unordered_map<int, string> *id_folders) {
@@ -48,6 +45,9 @@ private:
                 p = p->leaves[folder_id].get();
             }
         }
+
+        bool deleted = false;
+        unordered_map<int, unique_ptr<TrieNode>> leaves;
     };
   
 public:
@@ -122,9 +122,6 @@ class Solution2 {
 private:
     class TrieNode { 
     public:
-        bool deleted = false;
-        map<string, unique_ptr<TrieNode>> leaves;
-
         void Insert(const vector<string>& s) {
             auto p = this;
             for (const auto& c : s) {
@@ -134,6 +131,9 @@ private:
                 p = p->leaves[c].get();
             }
         }
+
+        bool deleted = false;
+        map<string, unique_ptr<TrieNode>> leaves;
     };
   
 public:
