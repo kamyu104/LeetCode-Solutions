@@ -1,17 +1,27 @@
-// Time:  O(m * nlogn + l * t), m is the max number of folders in a path,
-//                            , n is the number of paths
-//                            , l is the max length of folder name
-//                            , t is the size of trie
+// Time:  O(n * m * l + tlogt + l * t), m is the max number of folders in a path,
+//                                    , n is the number of paths
+//                                    , l is the max length of folder name
+//                                    , t is the size of trie
 // Space: O(l * t)
 
 class Solution {
 private:
+    template <typename T>
+    struct PairHash {
+        size_t operator()(const pair<T, T>& p) const {
+            size_t seed = 0;
+            seed ^= std::hash<T>{}(p.first)  + 0x9e3779b9 + (seed<<6) + (seed>>2);
+            seed ^= std::hash<T>{}(p.second) + 0x9e3779b9 + (seed<<6) + (seed>>2);
+            return seed;
+        }
+    };
+
     template<typename T>
-    struct VectorHash {
-        size_t operator()(const std::vector<T>& v) const {
+    struct VectorPairHash {
+        size_t operator()(const std::vector<pair<T, T>>& v) const {
             size_t seed = 0;
             for (const auto& i : v) {
-                seed ^= std::hash<T>{}(i)  + 0x9e3779b9 + (seed<<6) + (seed>>2);
+                seed ^= PairHash<T>{}(i)  + 0x9e3779b9 + (seed<<6) + (seed>>2);
             }
             return seed;
         }
@@ -20,7 +30,7 @@ private:
     class TrieNode { 
     public:
         bool deleted = false;
-        map<string, unique_ptr<TrieNode>> leaves;
+        unordered_map<string, unique_ptr<TrieNode>> leaves;
 
         void Insert(const vector<string>& s) {
             auto p = this;
@@ -40,8 +50,9 @@ public:
             trie->Insert(path);
         }
         unordered_map<int, TrieNode*> lookup;
-        unordered_map<vector<string>, int, VectorHash<string>> ids;
-        mark(trie.get(), &lookup, &ids);
+        unordered_map<vector<pair<int, int>>, int, VectorPairHash<int>> node_ids;
+        unordered_map<string, int> folder_ids;
+        mark(trie.get(), &lookup, &node_ids, &folder_ids);
         vector<vector<string>> result;
         vector<string> path;
         sweep(trie.get(), &path, &result);
@@ -51,15 +62,20 @@ public:
 private:
     int mark(TrieNode *node,
              unordered_map<int, TrieNode*> *lookup,
-             unordered_map<vector<string>, int, VectorHash<string>> *ids) {
-        vector<string> serialized_tree;
+             unordered_map<vector<pair<int, int>>, int, VectorPairHash<int>> *node_ids,
+             unordered_map<string, int> *folder_ids) {
+        vector<pair<int, int>> id_pairs;
         for (const auto& [subfolder, child] : node->leaves) {
-            serialized_tree.emplace_back(subfolder + "|" + to_string(mark(child.get(), lookup, ids)));
+            if (!(*folder_ids).count(subfolder)) {
+                (*folder_ids)[subfolder] = size(*folder_ids);
+            }
+            id_pairs.emplace_back(mark(child.get(), lookup, node_ids, folder_ids), (*folder_ids)[subfolder]);
         }
-        if (!ids->count(serialized_tree)) {
-            (*ids)[serialized_tree] = size(*ids);
+        sort(begin(id_pairs), end(id_pairs));
+        if (!node_ids->count(id_pairs)) {
+            (*node_ids)[id_pairs] = size(*node_ids);
         }
-        int node_id = (*ids)[serialized_tree];
+        int node_id = (*node_ids)[id_pairs];
         if (node_id) {
             if (lookup->count(node_id)) {
                 (*lookup)[node_id]->deleted = true;
@@ -86,10 +102,10 @@ private:
     }
 };
 
-// Time:  O(m * nlogn + l * t^2), m is the max number of folders in a path,
-//                              , n is the number of paths
-//                              , l is the max length of folder name
-//                              , t is the size of trie
+// Time:  O(n * m * l + m * tlogt + l * t^2), m is the max number of folders in a path,
+//                                          , n is the number of paths
+//                                          , l is the max length of folder name
+//                                          , t is the size of trie
 // Space: O(l * t^2)
 class Solution2 {
 private:
