@@ -163,7 +163,7 @@ class Solution2(object):
 
         U, V = min(len(grid), len(grid[0])), max(len(grid), len(grid[0]))
         get_grid = (lambda x, y: grid[x][y]) if len(grid) < len(grid[0]) else (lambda x, y: grid[y][x])
-        return  hungarian(grid)
+        return hungarian(grid)
 
 
 # Time:  O(|V| * |E|) = O(min(m, n) * (m * n))
