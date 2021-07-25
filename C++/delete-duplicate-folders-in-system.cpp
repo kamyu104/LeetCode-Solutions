@@ -69,7 +69,7 @@ private:
             if (!(*folder_ids).count(subfolder)) {
                 (*folder_ids)[subfolder] = size(*folder_ids);
             }
-            id_pairs.emplace_back(mark(child.get(), lookup, node_ids, folder_ids), (*folder_ids)[subfolder]);
+            id_pairs.emplace_back((*folder_ids)[subfolder], mark(child.get(), lookup, node_ids, folder_ids));
         }
         sort(begin(id_pairs), end(id_pairs));
         if (!node_ids->count(id_pairs)) {
