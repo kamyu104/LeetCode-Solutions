@@ -91,7 +91,6 @@ class Solution2(object):
         nums1 = bitmasks(students)
         nums2 = bitmasks(mentors)
         dp = [(0, 0)]*(2**len(nums2))
-        dp[0] = (0, 0)
         for mask in xrange(len(dp)):
             bit = 1
             for i in xrange(len(nums2)):
