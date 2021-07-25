@@ -22,15 +22,6 @@ class Solution(object):
                 else:
                     lookup[node_id] = node
             return node_id
-        
-        def getid(root, lookup, trees):
-            if not root:
-                return
-            node_id = lookup[root.val,
-                             getid(root.left, lookup, trees),
-                             getid(root.right, lookup, trees)]
-            trees[node_id].append(root)
-            return node_id
 
         trees = collections.defaultdict(list)
         lookup = collections.defaultdict()
