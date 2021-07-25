@@ -13,17 +13,14 @@ class Solution(object):
         :type paths: List[List[str]]
         :rtype: List[List[str]]
         """
-        def mark(node, lookup, ids):
+        def mark(node, lookup, node_ids):
             id_pairs = []
-            for subfolder, child in node.iteritems():
+            for subfolder_id, child in node.iteritems():
                 if child == "_del":
                     continue
-                node_id = mark(child, lookup, ids)
-                if subfolder not in ids:
-                    ids[subfolder] = len(ids)
-                id_pairs.append((ids[subfolder], node_id))
+                id_pairs.append((subfolder_id, mark(child, lookup, node_ids)))
             id_pairs.sort()
-            node_id = ids[tuple(id_pairs)]
+            node_id = node_ids[tuple(id_pairs)]
             if node_id:
                 if node_id in lookup:
                     lookup[node_id]["_del"]
@@ -32,25 +29,32 @@ class Solution(object):
                     lookup[node_id] = node
             return node_id
 
-        def sweep(node, path, result):
+        def sweep(node, names, path, result):
             if path:
-                result.append(path[:])
+                result.append([names[i] for i in path])
             for subfolder, child in node.iteritems():
                 if "_del" in child:
                     continue
                 path.append(subfolder)
-                sweep(child, path, result)
+                sweep(child, names, path, result)
                 path.pop()
 
         _trie = lambda: collections.defaultdict(_trie)
         trie = _trie()
+        folder_ids = collections.defaultdict()
+        folder_ids.default_factory = folder_ids.__len__
+        names = {}
         for path in paths:
-            reduce(dict.__getitem__, path, trie)
+            node = trie
+            for folder in path:
+                if folder_ids[folder] not in names:
+                    names[folder_ids[folder]] = folder
+                node = node[folder_ids[folder]]
         lookup, result = {}, []
-        ids = collections.defaultdict()
-        ids.default_factory = ids.__len__
-        mark(trie, lookup, ids)
-        sweep(trie, [], result)
+        node_ids = collections.defaultdict()
+        node_ids.default_factory = node_ids.__len__
+        mark(trie, lookup, node_ids)
+        sweep(trie, names, [], result)
         return result
 
 
