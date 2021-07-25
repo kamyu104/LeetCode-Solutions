@@ -1,7 +1,7 @@
-# Time:  O(m * nlogn + l * t), m is the max number of folders in a path,
-#                            , n is the number of paths
-#                            , l is the max length of folder name
-#                            , t is the size of trie
+# Time:  O(n * m * l + tlogt + l * t), m is the max number of folders in a path,
+#                                    , n is the number of paths
+#                                    , l is the max length of folder name
+#                                    , t is the size of trie
 # Space: O(l * t)
 
 import collections
@@ -14,7 +14,15 @@ class Solution(object):
         :rtype: List[List[str]]
         """
         def mark(node, lookup, ids):
-            node_id = ids[tuple("%s|%s" % (subfolder, mark(child, lookup, ids)) for subfolder, child in sorted(node.iteritems()) if child != "_del")]
+            id_pairs = []
+            for subfolder, child in node.iteritems():
+                if child != "_del":
+                    node_id = mark(child, lookup, ids)
+                    if subfolder not in ids:
+                        ids[subfolder] = len(ids)
+                    id_pairs.append((node_id, ids[subfolder]))
+            id_pairs.sort()
+            node_id = ids[tuple(id_pairs)]
             if node_id:
                 if node_id in lookup:
                     lookup[node_id]["_del"]
@@ -45,10 +53,10 @@ class Solution(object):
         return result
 
 
-# Time:  O(m * nlogn + l * t^2), m is the max number of folders in a path,
-#                              , n is the number of paths
-#                              , l is the max length of folder name
-#                              , t is the size of trie
+# Time:  O(n * m * l + m * tlogt + l * t^2), m is the max number of folders in a path,
+#                                          , n is the number of paths
+#                                          , l is the max length of folder name
+#                                          , t is the size of trie
 # Space: O(l * t^2)
 import collections
 
