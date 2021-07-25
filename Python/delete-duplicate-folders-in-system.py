@@ -14,7 +14,7 @@ class Solution(object):
         :rtype: List[List[str]]
         """
         def mark(node, lookup, ids):
-            node_id = ids[tuple("%s %s" % (subfolder, mark(child, lookup, ids)) for subfolder, child in sorted(node.iteritems()) if child != "_del")]
+            node_id = ids[tuple("%s|%s" % (subfolder, mark(child, lookup, ids)) for subfolder, child in sorted(node.iteritems()) if child != "_del")]
             if node_id != 0:
                 if node_id in lookup:
                     lookup[node_id]["_del"]
