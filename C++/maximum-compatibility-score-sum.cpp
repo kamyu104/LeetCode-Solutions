@@ -66,18 +66,19 @@ private:
 class Solution2 {
 public:
     int maxCompatibilitySum(vector<vector<int>>& students, vector<vector<int>>& mentors) {
-        const auto& s_bitmasks = bitmasks(students);
-        const auto& m_bitmasks = bitmasks(mentors);
-        vector<int> dp(1 << size(mentors));
+        const auto& nums1 = bitmasks(students);
+        const auto& nums2 = bitmasks(mentors);
+        vector<pair<int, int>> dp(1 << size(nums2));
         for (int mask = 0; mask < size(dp); ++mask) {
-            const auto i = size(students) - __builtin_popcount(mask);
-            for (int j = 0, basis = 1; j < size(mentors); ++j, basis <<= 1) {
-                if (mask & basis) {
-                    dp[mask] = max(dp[mask], (int(size(students[0])) - __builtin_popcount(s_bitmasks[i] ^ m_bitmasks[j])) + dp[mask ^ basis]);
+            for (int i = 0, bit = 1; i < size(nums2); ++i, bit <<= 1) {
+                if ((mask & bit) == 0) {
+                    dp[mask | bit] = max(dp[mask | bit],
+                                         {dp[mask].first + (size(students[0]) - __builtin_popcount(nums1[dp[mask].second] ^ nums2[i])),
+                                          dp[mask].second + 1});
                 }
             }
         }
-        return dp.back();
+        return dp.back().first;
     }
 
 private:
