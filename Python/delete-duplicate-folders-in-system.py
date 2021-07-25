@@ -14,7 +14,7 @@ class Solution(object):
         :rtype: List[List[str]]
         """
         def mark(node, lookup):
-            serialized_tree = "".join(child + mark(node[child], lookup) for child in sorted(node.iterkeys()) if child != "_del")
+            serialized_tree = "".join(subfolder + mark(child, lookup) for subfolder, child in sorted(node.iteritems()) if child != "_del")
             if serialized_tree:
                 if serialized_tree in lookup:
                     lookup[serialized_tree]["_del"]
