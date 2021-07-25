@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1940%20%2F%201940-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1948%20%2F%201948-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -610,7 +610,7 @@
 1541 | [Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/) | [C++](./C++/minimum-insertions-to-balance-a-parentheses-string.cpp) [Python](./Python/minimum-insertions-to-balance-a-parentheses-string.py) | _O(n)_ | _O(1)_      | Medium         ||
 1597| [Build Binary Expression Tree From Infix Expression](https://leetcode.com/problems/build-binary-expression-tree-from-infix-expression/) | [C++](./C++/build-binary-expression-tree-from-infix-expression.cpp) [Python](./Python/build-binary-expression-tree-from-infix-expression.py) | _O(n)_  | _O(n)_         | Medium           | 🔒, variant of [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/) |
 1856| [Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/) | [C++](./C++/maximum-subarray-min-product.cpp) [Python](./Python/maximum-subarray-min-product.py) | _O(n)_ | _O(n)_ | Medium | variant of [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Mono Stack, Prefix Sum
-
+1944| [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/) | [C++](./C++/number-of-visible-people-in-a-queue.cpp) [Python](./Python/number-of-visible-people-in-a-queue.py) | _O(n)_  | _O(n)_         | Hard           || Mono Stack
 
 <br/>
 <div align="right">
@@ -856,6 +856,8 @@
 1923| [Longest Common Subpath](https://leetcode.com/problems/longest-common-subpath/)      | [C++](./C++/longest-common-subpath.cpp) [Python](./Python/longest-common-subpath.py)      | _O(m * nlogn)_         | _O(n)_          | Hard         || Binary Search, `Rabin-Karp Algorithm`
 1925| [Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/)      | [C++](./C++/count-square-sum-triples.cpp) [Python](./Python/count-square-sum-triples.py)      | _O(n^2)_         | _O(n)_          | Easy         ||
 1930| [Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/)      | [C++](./C++/unique-length-3-palindromic-subsequences.cpp) [Python](./Python/unique-length-3-palindromic-subsequences.py)      | _O(n)_         | _O(1)_          | Medium         ||
+1941| [Check if All Characters Have Equal Number of Occurrences](https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/)      | [C++](./C++/check-if-all-characters-have-equal-number-of-occurrences.cpp) [Python](./Python/check-if-all-characters-have-equal-number-of-occurrences.py)      | _O(n)_         | _O(1)_          | Easy         ||
+1948| [Delete Duplicate Folders in System](https://leetcode.com/problems/delete-duplicate-folders-in-system/) |[C++](./C++/delete-duplicate-folders-in-system.cpp)  [Python](./Python/delete-duplicate-folders-in-system.py) | _O(m * nlogn + l * t^2)_ | _O(l * t^2)_ | Hard         | |
 
 <br/>
 <div align="right">
@@ -1035,6 +1037,7 @@
 1904| [The Number of Full Rounds You Have Played](https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/) | [C++](./C++/the-number-of-full-rounds-you-have-played.cpp) [Python](./Python/the-number-of-full-rounds-you-have-played.py) | _O(1)_ | _O(1)_ |  Medium |  | |
 1916| [Count Ways to Build Rooms in an Ant Colony](https://leetcode.com/problems/count-ways-to-build-rooms-in-an-ant-colony/) | [C++](./C++/count-ways-to-build-rooms-in-an-ant-colony.cpp) [Python](./Python/count-ways-to-build-rooms-in-an-ant-colony.py) | _O(n)_ | _O(n)_ |  Hard |  | DFS, Tree |
 1922| [Count Good Numbers](https://leetcode.com/problems/count-good-numbers/) | [C++](./C++/count-good-numbers.cpp) [Python](./Python/count-good-numbers.py) | _O(logn)_ | _O(1)_ |  Medium |  | |
+1945| [Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/) | [C++](./C++/sum-of-digits-of-string-after-convert.cpp) [Python](./Python/sum-of-digits-of-string-after-convert.py) | _O(n)_ | _O(1)_ |  Easy |  | |
 
 <br/>
 <div align="right">
@@ -1097,6 +1100,9 @@
 1847 | [Closest Room](https://leetcode.com/problems/closest-room/) | [C++](./C++/closest-room.cpp) [Python](./Python/closest-room.py) | _O(nlogn + klogk + klogn)_ | _O(n + k)_ | Hard | | Sort, Binary Search
 1851 | [Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/) | [C++](./C++/minimum-interval-to-include-each-query.cpp) [Python](./Python/minimum-interval-to-include-each-query.py) | _O(nlogn + klogk + klogn)_ | _O(n + k)_ | Hard | | Sort, Heap, Line Sweep
 1859 | [Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/) | [C++](./C++/sorting-the-sentence.cpp) [Python](./Python/sorting-the-sentence.py) | _O(n)_ | _O(n)_ | Easy | | Sort, String
+1942| [The Number of the Smallest Unoccupied Chair](https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/) | [C++](./C++/the-number-of-the-smallest-unoccupied-chair.cpp) [Python](./Python/the-number-of-the-smallest-unoccupied-chair.py) | _O(nlogn)_   | _O(n)_        | Medium         || Line Sweep, Heap
+1943| [Describe the Painting](https://leetcode.com/problems/describe-the-painting/) | [C++](./C++/describe-the-painting.cpp) [Python](./Python/describe-the-painting.py) | _O(nlogn)_   | _O(n)_        | Medium         || Line Sweep
+
 
 <br/>
 <div align="right">
@@ -1889,6 +1895,7 @@
 1921 | [Eliminate Maximum Number of Monsters](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/) | [C++](./C++/eliminate-maximum-number-of-monsters.cpp) [Python](./Python/eliminate-maximum-number-of-monsters.py) | _O(nlogn)_ | _O(1)_ | Medium | | |
 1927 | [Sum Game](https://leetcode.com/problems/sum-game/) | [C++](./C++/sum-game.cpp) [Python](./Python/sum-game.py) | _O(n)_ | _O(1)_ | Medium | | |
 1936 | [Add Minimum Number of Rungs](https://leetcode.com/problems/add-minimum-number-of-rungs/) | [C++](./C++/add-minimum-number-of-rungs.cpp) [Python](./Python/add-minimum-number-of-rungs.py) | _O(n)_ | _O(1)_ | Medium | | |
+1946 | [Largest Number After Mutating Substring](https://leetcode.com/problems/largest-number-after-mutating-substring/) | [C++](./C++/largest-number-after-mutating-substring.cpp) [Python](./Python/largest-number-after-mutating-substring.py) | _O(n)_ | _O(1)_ | Medium | | |
 
 <br/>
 <div align="right">
@@ -1932,6 +1939,7 @@
 1810 | [Minimum Path Cost in a Hidden Grid](https://leetcode.com/problems/minimum-path-cost-in-a-hidden-grid/)  | [C++](./C++/minimum-path-cost-in-a-hidden-grid.cpp) [Python](./Python/minimum-path-cost-in-a-hidden-grid.py) | _O(m * n * log(m * n))_ | _O(m * n)_| Medium           |🔒| DFS, `Dijkstra's Algorithm`| 
 1820 | [Maximum Number of Accepted Invitations](https://leetcode.com/problems/maximum-number-of-accepted-invitations/) | [C++](./C++/maximum-number-of-accepted-invitations.cpp) [Python](./Python/maximum-number-of-accepted-invitations.py) | _O(m * n * sqrt(m + n))_ | _O(m + n)_ | Medium | 🔒 | `Hopcroft-Karp Bipartite Matching`, `Hungarian Bipartite Matching` |
 1879 | [Minimum XOR Sum of Two Arrays](https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/) | [C++](./C++/minimum-xor-sum-of-two-arrays.cpp) [Python](./Python/minimum-xor-sum-of-two-arrays.py) | _O(n^3)_ | _O(n^2)_ | Hard | | DP, `Hungarian Weighted Bipartite Matching` |
+1947 | [Maximum Compatibility Score Sum](https://leetcode.com/problems/maximum-compatibility-score-sum/) | [C++](./C++/maximum-compatibility-score-sum.cpp) [Python](./Python/maximum-compatibility-score-sum.py) | _O(m^2 * (n + m))_ | _O(m^2)_ | Medium | variant of [Minimum XOR Sum of Two Arrays](https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/) | DP, `Hungarian Weighted Bipartite Matching` |
 
 <br/>
 <div align="right">
