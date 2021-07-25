@@ -1,5 +1,5 @@
-# Time:  O(n^3)
-# Space: O(n)
+# Time:  O(m^2 * (n + m))
+# Space: O(m^2)
 
 import itertools
 
