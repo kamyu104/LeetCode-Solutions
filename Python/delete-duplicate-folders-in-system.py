@@ -4,6 +4,9 @@
 #                              , t is the size of trie
 # Space: O(l * t^2)
 
+import collections
+
+
 class Solution(object):
     def deleteDuplicateFolder(self, paths):
         """
