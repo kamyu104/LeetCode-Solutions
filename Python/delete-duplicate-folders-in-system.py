@@ -26,11 +26,11 @@ class Solution(object):
         def sweep(node, path, result):
             if path:
                 result.append(path[:])
-            for child in node.iterkeys():
-                if "_del" in node[child]:
+            for subfolder, child in node.iteritems():
+                if "_del" in child:
                     continue
-                path.append(child)
-                sweep(node[child], path, result)
+                path.append(subfolder)
+                sweep(child, path, result)
                 path.pop()
 
         _trie = lambda: collections.defaultdict(_trie)
