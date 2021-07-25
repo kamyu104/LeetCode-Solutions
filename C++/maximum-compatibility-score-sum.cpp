@@ -85,11 +85,11 @@ public:
         int mask = (1 << size(mentors)) - 1;
         vector<int> dp(mask + 1, -1);
         dp[0] = 0;
-        return solve(s_bitmasks, m_bitmasks, 0, mask, size(students), size(students[0]), &dp);
+        return memoization(s_bitmasks, m_bitmasks, 0, mask, size(students), size(students[0]), &dp);
     }
 
 private:
-    int solve(const vector<int>& s_bitmasks,
+    int memoization(const vector<int>& s_bitmasks,
               const vector<int>& m_bitmasks,
               int i, int mask, int m, int n,
               vector<int> *dp){
@@ -99,7 +99,7 @@ private:
                 if (mask & basis) {        
                     result = max(result,
                                  n - __builtin_popcount(s_bitmasks[i] ^ m_bitmasks[j]) +
-                                 solve(s_bitmasks, m_bitmasks, i + 1, mask ^ basis, m, n, dp));
+                                 memoization(s_bitmasks, m_bitmasks, i + 1, mask ^ basis, m, n, dp));
                 }
             }
             (*dp)[mask] = result;
