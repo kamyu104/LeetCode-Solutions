@@ -58,3 +58,43 @@ class Solution(object):
             return sum(int(a == b) for a, b in itertools.izip(s, m))
 
         return -hungarian([[-score(s, m) for m in mentors] for s in students])[0]
+
+
+# Time:  O(m^2 * (n + m))
+# Space: O(2^m)
+class Solution2(object):
+    def maxCompatibilitySum(self, students, mentors):
+        """
+        :type students: List[List[int]]
+        :type mentors: List[List[int]]
+        :rtype: int
+        """
+        def popcount(n):  # Time: O(logn) ~= O(1) if n is a 32-bit number
+            result = 0
+            while n:
+                n &= n-1
+                result += 1
+            return result
+
+        def bitmasks(vvi):
+            result = []
+            for vi in vvi:
+                bitmask, basis = 0, 1
+                for i in xrange(len(vi)):
+                    if vi[i]:
+                        bitmask |= basis
+                    basis <<= 1
+                result.append(bitmask)
+            return result
+
+        s_bitmasks = bitmasks(students)
+        m_bitmasks = bitmasks(mentors)
+        dp = [0]*(2**len(students))
+        for mask in xrange(len(dp)):
+            i = len(students)-popcount(mask)
+            basis = 1
+            for j in xrange(len(mentors)):
+                if mask&basis:
+                    dp[mask] = max(dp[mask], len(students[0])-popcount(s_bitmasks[i]^m_bitmasks[j])+dp[mask^basis])
+                basis <<= 1
+        return dp[-1]
