@@ -14,14 +14,14 @@ class Solution(object):
         :rtype: List[List[str]]
         """
         def mark(node, lookup):
-            serialized_tree = "".join(subfolder + mark(child, lookup) for subfolder, child in sorted(node.iteritems()) if child != "_del")
-            if serialized_tree:
+            serialized_tree = "(" + "".join(subfolder + mark(child, lookup) for subfolder, child in sorted(node.iteritems()) if child != "_del") + ")"
+            if serialized_tree != "()":
                 if serialized_tree in lookup:
                     lookup[serialized_tree]["_del"]
                     node["_del"]
                 else:
                     lookup[serialized_tree] = node
-            return "(" + serialized_tree + ")"
+            return serialized_tree
         
         def sweep(node, path, result):
             if path:
