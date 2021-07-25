@@ -96,6 +96,6 @@ class Solution2(object):
             basis = 1
             for j in xrange(len(mentors)):
                 if mask&basis:
-                    dp[mask] = max(dp[mask], len(students[0])-popcount(s_bitmasks[i]^m_bitmasks[j])+dp[mask^basis])
+                    dp[mask] = max(dp[mask], (len(students[0])-popcount(s_bitmasks[i]^m_bitmasks[j])) + dp[mask^basis])
                 basis <<= 1
         return dp[-1]
