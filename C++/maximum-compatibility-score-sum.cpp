@@ -70,8 +70,7 @@ public:
         vector<int> m_bitmasks = bitmasks(mentors);
         vector<int> dp(1 << size(mentors));
         for (int mask = 0; mask < size(dp); ++mask) {
-            int i = size(students) - __builtin_popcount(mask);
-            int result = 0;
+            const auto i = size(students) - __builtin_popcount(mask);
             for (int j = 0, basis = 1; j < size(mentors); ++j, basis <<= 1) {
                 if (mask & basis) {        
                     dp[mask] = max(dp[mask], int(size(students[0])) - __builtin_popcount(s_bitmasks[i] ^ m_bitmasks[j]) + dp[mask ^ basis]);
