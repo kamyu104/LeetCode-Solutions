@@ -12,7 +12,7 @@ class Solution(object):
         """
         def getid(root, lookup, trees):
             if not root:
-                return
+                return 0
             node_id = lookup[root.val,
                              getid(root.left, lookup, trees),
                              getid(root.right, lookup, trees)]
