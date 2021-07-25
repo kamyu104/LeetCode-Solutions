@@ -102,7 +102,7 @@ private:
     }
 };
 
-// Time:  O(n * m * l + m * tlogt + l * t^2), m is the max number of folders in a path,
+// Time:  O(n * m * l + l * tlogt + l * t^2), m is the max number of folders in a path,
 //                                          , n is the number of paths
 //                                          , l is the max length of folder name
 //                                          , t is the size of trie
