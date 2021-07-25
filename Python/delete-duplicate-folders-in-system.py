@@ -23,10 +23,6 @@ class Solution(object):
                     lookup[node_id] = node
             return node_id
 
-        trees = collections.defaultdict(list)
-        lookup = collections.defaultdict()
-        lookup.default_factory = lookup.__len__
-        
         def sweep(node, path, result):
             if path:
                 result.append(path[:])
