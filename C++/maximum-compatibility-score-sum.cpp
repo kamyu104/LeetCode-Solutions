@@ -68,10 +68,8 @@ public:
     int maxCompatibilitySum(vector<vector<int>>& students, vector<vector<int>>& mentors) {
         vector<int> s_bitmasks = bitmasks(students);
         vector<int> m_bitmasks = bitmasks(mentors);
-        int mask = (1 << size(mentors)) - 1;
-        vector<int> dp(1 << size(mentors), -1);
-        dp[0] = 0;
-        for (int mask = 1; mask < size(dp); ++mask) {
+        vector<int> dp(1 << size(mentors));
+        for (int mask = 0; mask < size(dp); ++mask) {
             int i = size(students) - __builtin_popcount(mask);
             int result = 0;
             for (int j = 0, basis = 1; j < size(mentors); ++j, basis <<= 1) {
