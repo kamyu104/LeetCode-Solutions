@@ -60,7 +60,7 @@ class Solution(object):
         return -hungarian([[-score(s, m) for m in mentors] for s in students])[0]
 
 
-# Time:  O(m^2 * (n + m))
+# Time:  O(m * (n + 2^m))
 # Space: O(2^m)
 # dp solution
 class Solution2(object):
