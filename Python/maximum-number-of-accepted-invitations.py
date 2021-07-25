@@ -203,4 +203,4 @@ class Solution3(object):
                     adj[i].append(j)
                 else:
                     adj[j].append(i)
-        return  hungarian(adj)
+        return hungarian(adj)
