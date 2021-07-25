@@ -50,10 +50,10 @@ class Solution(object):
                 if folder_ids[folder] not in id_folders:
                     id_folders[folder_ids[folder]] = folder
                 node = node[folder_ids[folder]]
-        lookup, result = {}, []
         node_ids = collections.defaultdict()
         node_ids.default_factory = node_ids.__len__
-        mark(trie, lookup, node_ids)
+        mark(trie, {}, node_ids)
+        result = []
         sweep(trie, id_folders, [], result)
         return result
 
@@ -96,7 +96,7 @@ class Solution2(object):
         trie = _trie()
         for path in paths:
             reduce(dict.__getitem__, path, trie)
-        lookup, result = {}, []
-        mark(trie, lookup)
+        mark(trie, {})
+        result = []
         sweep(trie, [], result)
         return result
