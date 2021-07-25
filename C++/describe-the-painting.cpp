@@ -4,12 +4,12 @@
 class Solution {
 public:
     vector<vector<long long>> splitPainting(vector<vector<int>>& segments) {
-        unordered_map<int, int64_t> events;
+        unordered_map<int, int64_t> counts;
         for (const auto& s : segments) {
-            events[s[0]] += s[2];
-            events[s[1]] -= s[2];
+            counts[s[0]] += s[2];
+            counts[s[1]] -= s[2];
         }
-        vector<pair<int, int64_t>> points(cbegin(events), cend(events));
+        vector<pair<int, int64_t>> points(cbegin(counts), cend(counts));
         sort(begin(points), end(points));
 
         vector<vector<long long>> result;
