@@ -74,7 +74,7 @@ private:
     }
 };
 
-// Time:  O(m * 2^m)
+// Time:  O(m * (n + 2^m))
 // Space: O(2^m)
 // backtracking + memoization solution
 class Solution2 {
