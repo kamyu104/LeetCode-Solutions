@@ -20,7 +20,7 @@ class Solution(object):
                     node_id = mark(child, lookup, ids)
                     if subfolder not in ids:
                         ids[subfolder] = len(ids)
-                    id_pairs.append((node_id, ids[subfolder]))
+                    id_pairs.append((ids[subfolder], node_id))
             id_pairs.sort()
             node_id = ids[tuple(id_pairs)]
             if node_id:
