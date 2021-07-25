@@ -1,72 +1,25 @@
 // Time:  O(n)
 // Space: O(n)
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
-
-namespace std{
-    namespace
-    {
-
-        // Code from boost
-        // Reciprocal of the golden ratio helps spread entropy
-        //     and handles duplicates.
-        // See Mike Seymour in magic-numbers-in-boosthash-combine:
-        //     http://stackoverflow.com/questions/4948780
-
-        template <class T>
-        inline void hash_combine(std::size_t& seed, T const& v)
-        {
-            seed ^= std::hash<T>()(v) + 0x9e3779b9 + (seed<<6) + (seed>>2);
-        }
-
-        // Recursive template code derived from Matthieu M.
-        template <class Tuple, size_t Index = std::tuple_size<Tuple>::value - 1>
-        struct HashValueImpl
-        {
-          static void apply(size_t& seed, Tuple const& tuple)
-          {
-            HashValueImpl<Tuple, Index-1>::apply(seed, tuple);
-            hash_combine(seed, std::get<Index>(tuple));
-          }
-        };
-
-        template <class Tuple>
-        struct HashValueImpl<Tuple,0>
-        {
-          static void apply(size_t& seed, Tuple const& tuple)
-          {
-            hash_combine(seed, std::get<0>(tuple));
-          }
-        };
-    }
-
-    template <typename ... TT>
-    struct hash<std::tuple<TT...>> 
-    {
-        size_t
-        operator()(std::tuple<TT...> const& tt) const
-        {                                              
-            size_t seed = 0;                             
-            HashValueImpl<std::tuple<TT...> >::apply(seed, tt);    
-            return seed;                                 
-        }                                              
-
-    };
-}
-
 class Solution {
+private:
+    template <typename A, typename B, typename C>
+    struct TupleHash {
+        size_t operator()(const tuple<A, B, C>& p) const {
+            size_t seed = 0;
+            A a; B b; C c;
+            tie(a, b, c) = p;
+            seed ^= std::hash<A>{}(a) + 0x9e3779b9 + (seed<<6) + (seed>>2);
+            seed ^= std::hash<B>{}(b) + 0x9e3779b9 + (seed<<6) + (seed>>2);
+            seed ^= std::hash<C>{}(c) + 0x9e3779b9 + (seed<<6) + (seed>>2);
+            return seed;
+        }
+    };
+
 public:
     vector<TreeNode*> findDuplicateSubtrees(TreeNode* root) {
         unordered_map<int, vector<TreeNode *>> trees;
-        unordered_map<tuple<int, int, int>, int> lookup;
+        unordered_map<tuple<int, int, int>, int, TupleHash<int, int, int>> lookup;
         getid(root, &lookup, &trees);
         
         vector<TreeNode *> result;
@@ -80,7 +33,7 @@ public:
 
 private:
     int getid(TreeNode *root,
-              unordered_map<tuple<int, int, int>, int> *lookup,
+              unordered_map<tuple<int, int, int>, int, TupleHash<int, int, int>> *lookup,
               unordered_map<int, vector<TreeNode *>> *trees) {
         auto node_id = 0;
         if (root) {
