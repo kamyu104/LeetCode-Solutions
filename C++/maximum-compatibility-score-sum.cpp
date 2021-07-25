@@ -66,8 +66,8 @@ private:
 class Solution2 {
 public:
     int maxCompatibilitySum(vector<vector<int>>& students, vector<vector<int>>& mentors) {
-        vector<int> s_bitmasks = bitmasks(students);
-        vector<int> m_bitmasks = bitmasks(mentors);
+        const auto& s_bitmasks = bitmasks(students);
+        const auto& m_bitmasks = bitmasks(mentors);
         vector<int> dp(1 << size(mentors));
         for (int mask = 0; mask < size(dp); ++mask) {
             const auto i = size(students) - __builtin_popcount(mask);
