@@ -32,10 +32,10 @@ class Solution(object):
         def sweep(node, names, path, result):
             if path:
                 result.append([names[i] for i in path])
-            for subfolder, child in node.iteritems():
+            for subfolder_id, child in node.iteritems():
                 if "_del" in child:
                     continue
-                path.append(subfolder)
+                path.append(subfolder_id)
                 sweep(child, names, path, result)
                 path.pop()
 
