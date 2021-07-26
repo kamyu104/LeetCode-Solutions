@@ -66,8 +66,8 @@ private:
 class Solution2 {
 public:
     int maxCompatibilitySum(vector<vector<int>>& students, vector<vector<int>>& mentors) {
-        const auto& nums1 = bitmasks(students);
-        const auto& nums2 = bitmasks(mentors);
+        const auto& nums1 = masks(students);
+        const auto& nums2 = masks(mentors);
         vector<pair<int, int>> dp(1 << size(nums2));
         for (int mask = 0; mask < size(dp); ++mask) {
             for (int i = 0, bit = 1; i < size(nums2); ++i, bit <<= 1) {
@@ -82,16 +82,16 @@ public:
     }
 
 private:
-    vector<int> bitmasks(const vector<vector<int>>& vvi) {
+    vector<int> masks(const vector<vector<int>>& vvi) {
         vector<int> result;
         for (const auto& vi : vvi) {
-            int bitmask = 0;
+            int mask = 0;
             for (int i = 0, bit = 1; i < size(vi); ++i, bit <<= 1) {
                 if (vi[i]) {
-                    bitmask |= bit;
+                    mask |= bit;
                 }
             }
-            result.emplace_back(bitmask);
+            result.emplace_back(mask);
         }
         return result;
     }
