@@ -75,19 +75,18 @@ class Solution2(object):
                 result += 1
             return result
 
-        def bitmasks(vvi):
+        def masks(vvi):
             result = []
             for vi in vvi:
-                bitmask, bit = 0, 1
+                mask, bit = 0, 1
                 for i in xrange(len(vi)):
                     if vi[i]:
-                        bitmask |= bit
+                        mask |= bit
                     bit <<= 1
-                result.append(bitmask)
+                result.append(mask)
             return result
 
-        nums1 = bitmasks(students)
-        nums2 = bitmasks(mentors)
+        nums1, nums2 = masks(students), masks(mentors)
         dp = [(0, 0)]*(2**len(nums2))
         for mask in xrange(len(dp)):
             bit = 1
