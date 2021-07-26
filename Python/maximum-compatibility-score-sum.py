@@ -78,11 +78,11 @@ class Solution2(object):
         def bitmasks(vvi):
             result = []
             for vi in vvi:
-                bitmask, basis = 0, 1
+                bitmask, bit = 0, 1
                 for i in xrange(len(vi)):
                     if vi[i]:
-                        bitmask |= basis
-                    basis <<= 1
+                        bitmask |= bit
+                    bit <<= 1
                 result.append(bitmask)
             return result
 
