@@ -23,7 +23,6 @@ private:
         return result;
     }
 
-private:
     // Template modified from:
     // https://github.com/kth-competitive-programming/kactl/blob/main/content/graph/WeightedMatching.h
     pair<int, vector<int>> hungarian(const vector<vector<int>> &a) {  // Time: O(n^2 * m), Space: O(n + m)
