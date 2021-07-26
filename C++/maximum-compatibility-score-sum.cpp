@@ -86,9 +86,9 @@ private:
         vector<int> result;
         for (const auto& vi : vvi) {
             int bitmask = 0;
-            for (int i = 0, basis = 1; i < size(vi); ++i, basis <<= 1) {
+            for (int i = 0, bit = 1; i < size(vi); ++i, bit <<= 1) {
                 if (vi[i]) {
-                    bitmask |= basis;
+                    bitmask |= bit;
                 }
             }
             result.emplace_back(bitmask);
