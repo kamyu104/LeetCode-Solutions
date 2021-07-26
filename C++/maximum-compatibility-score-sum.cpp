@@ -1,6 +1,7 @@
 // Time:  O(m^2 * (n + m))
 // Space: O(m^2)
 
+// weighted bipartite matching solution
 class Solution {
 public:
     int maxCompatibilitySum(vector<vector<int>>& students, vector<vector<int>>& mentors) {
