@@ -12,8 +12,8 @@ class Solution(object):
         """
         accounts = collections.defaultdict(int)
         for src, dst, amount in transactions:
-            accounts[src] -= amount
-            accounts[dst] += amount
+            accounts[src] += amount
+            accounts[dst] -= amount
 
         debts = [account for account in accounts.itervalues() if account]
 
