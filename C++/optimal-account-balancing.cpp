@@ -19,8 +19,8 @@ public:
         vector<int> dp(1 << debts.size());
         vector<int> sums(1 << debts.size());
         for (int i = 0; i < dp.size(); ++i) {
-            for (int j = 0; j < debts.size(); ++j) {
-                if ((i & (1 << j)) == 0) {
+            for (int j = 0, bit = 1; j < debts.size(); ++j, bit <<= 1) {
+                if ((i & bit) == 0) {
                     auto nxt = i | (1 << j);
                     sums[nxt] = sums[i] + debts[j];
                     if (sums[nxt] == 0) {
