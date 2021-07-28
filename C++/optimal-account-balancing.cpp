@@ -21,7 +21,7 @@ public:
         for (int i = 0; i < dp.size(); ++i) {
             for (int j = 0, bit = 1; j < debts.size(); ++j, bit <<= 1) {
                 if ((i & bit) == 0) {
-                    auto nxt = i | (1 << j);
+                    auto nxt = i | bit;
                     sums[nxt] = sums[i] + debts[j];
                     if (sums[nxt] == 0) {
                         dp[nxt] = max(dp[nxt], dp[i] + 1);
