@@ -11,7 +11,7 @@ WITH friendship_cte AS
 SELECT a.user1_id, a.user2_id, COUNT(b.user2_id) AS common_friend
 FROM Friendship AS a
 INNER JOIN friendship_cte AS b
-ON b.user1_id = a.user2_id AND b.user2_id != a.user1_id
+ON b.user1_id = a.user2_id
 WHERE EXISTS (SELECT 1 FROM friendship_cte AS c
               WHERE c.user1_id = a.user1_id
               AND c.user2_id = b.user2_id)
