@@ -10,9 +10,9 @@ public:
             account[transaction[1]] -= transaction[2];
         }
         vector<int> debts;
-        for (const auto& kvp : account) {
-            if (kvp.second) {
-                debts.emplace_back(kvp.second);
+        for (const auto& [_, debt] : account) {
+            if (debt) {
+                debts.emplace_back(debt);
             }
         }
 
