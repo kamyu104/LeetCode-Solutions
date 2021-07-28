@@ -6,8 +6,8 @@ public:
     int minTransfers(vector<vector<int>>& transactions) {
         unordered_map<int, int> account;
         for (const auto& transaction : transactions) {
-            account[transaction[0]] -= transaction[2];
-            account[transaction[1]] += transaction[2];
+            account[transaction[0]] += transaction[2];
+            account[transaction[1]] -= transaction[2];
         }
         vector<int> debts;
         for (const auto& [_, debt] : account) {
