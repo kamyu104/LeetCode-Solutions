@@ -11,9 +11,9 @@ class Solution(object):
         :rtype: int
         """
         accounts = collections.defaultdict(int)
-        for transaction in transactions:
-            accounts[transaction[0]] += transaction[2]
-            accounts[transaction[1]] -= transaction[2]
+        for f, t, a in transactions:
+            accounts[f] -= a
+            accounts[t] += a
 
         debts = [account for account in accounts.itervalues() if account]
 
