@@ -23,7 +23,7 @@ class Solution(object):
             bit = 1
             for j in xrange(len(debts)):
                 if (i & bit) == 0:
-                    nxt = i | (1<<j)
+                    nxt = i | bit
                     sums[nxt] = sums[i]+debts[j]
                     if sums[nxt] == 0:
                         dp[nxt] = max(dp[nxt], dp[i]+1)
