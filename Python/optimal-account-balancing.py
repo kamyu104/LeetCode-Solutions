@@ -15,7 +15,7 @@ class Solution(object):
             accounts[transaction[0]] += transaction[2]
             accounts[transaction[1]] -= transaction[2]
 
-        debts = [account for account in accounts.values() if account]
+        debts = [account for account in accounts.itervalues() if account]
 
         dp = [0]*(2**len(debts))
         sums = [0]*(2**len(debts))
