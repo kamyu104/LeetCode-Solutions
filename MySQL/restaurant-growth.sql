@@ -20,5 +20,5 @@ LEFT JOIN
 ) b 
 ON DATEDIFF(a.visited_on, b.visited_on) BETWEEN 0 AND 6 
 GROUP  BY a.visited_on 
-HAVING Count(b.visited_on) = 7 
+HAVING COUNT(b.visited_on) = 7 
 ORDER  BY NULL;
