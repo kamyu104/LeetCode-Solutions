@@ -1,6 +1,17 @@
-# Time:  O(n^2)
+# Time:  O(nlogn)
 # Space: O(n)
 
+SELECT DISTINCT visited_on, amount, ROUND(amount/7, 2) AS average_amount
+FROM (SELECT visited_on, 
+             SUM(amount)  OVER (ORDER BY visited_on
+                                RANGE BETWEEN INTERVAL 6 DAY PRECEDING
+                                AND CURRENT ROW) as amount,
+             DENSE_RANK() OVER (ORDER BY visited_on) as rnk
+      FROM Customer) AS tmp
+WHERE rnk >= 7;
+
+# Time:  O(n^2)
+# Space: O(n)
 SELECT a.visited_on                AS visited_on, 
        SUM(b.day_sum)              AS amount, 
        ROUND(AVG(b.day_sum), 2)    AS average_amount 
