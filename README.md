@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1949%20%2F%201949-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1950%20%2F%201950-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -611,6 +611,7 @@
 1597| [Build Binary Expression Tree From Infix Expression](https://leetcode.com/problems/build-binary-expression-tree-from-infix-expression/) | [C++](./C++/build-binary-expression-tree-from-infix-expression.cpp) [Python](./Python/build-binary-expression-tree-from-infix-expression.py) | _O(n)_  | _O(n)_         | Medium           | 🔒, variant of [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/) |
 1856| [Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/) | [C++](./C++/maximum-subarray-min-product.cpp) [Python](./Python/maximum-subarray-min-product.py) | _O(n)_ | _O(n)_ | Medium | variant of [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Mono Stack, Prefix Sum
 1944| [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/) | [C++](./C++/number-of-visible-people-in-a-queue.cpp) [Python](./Python/number-of-visible-people-in-a-queue.py) | _O(n)_  | _O(n)_         | Hard           | variant of [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view/) | Mono Stack
+1950| [Maximum of Minimum Values in All Subarrays](https://leetcode.com/problems/maximum-of-minimum-values-in-all-subarrays/) | [C++](./C++/maximum-of-minimum-values-in-all-subarrays.cpp) [Python](./Python/maximum-of-minimum-values-in-all-subarrays.py) | _O(n)_  | _O(n)_         | Medium           | 🔒 | Mono Stack
 
 <br/>
 <div align="right">
