@@ -11,7 +11,7 @@ class Solution(object):
             result = [0]*len(nums)
             stk = [init]
             for i in direction(xrange(len(nums))):
-                while stk[-1] not in (-1, len(nums)) and nums[stk[-1]] >= nums[i]:
+                while stk[-1] != init and nums[stk[-1]] >= nums[i]:
                     stk.pop()
                 result[i] = stk[-1]
                 stk.append(i)
