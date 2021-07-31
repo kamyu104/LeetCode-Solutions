@@ -1,3 +1,4 @@
+
 # Time:  O(nlogn)
 # Space: O(n)
 
@@ -11,5 +12,7 @@ WITH total_cte AS
 )
 
 SELECT visited_on, amount, ROUND(amount/7, 2) AS average_amount
-FROM total_cte
-WHERE DATEDIFF(visited_on, (SELECT MIN(visited_on) FROM total_cte)) >= 6;
+FROM total_cte as a
+INNER JOIN
+(SELECT MIN(visited_on) as min_visited_on FROM total_cte) as b
+ON DATEDIFF(visited_on, min_visited_on) >= 6;
