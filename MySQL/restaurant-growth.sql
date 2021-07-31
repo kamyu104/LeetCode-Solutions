@@ -11,7 +11,7 @@ WITH total_cte AS
 )
 
 SELECT visited_on, amount, ROUND(amount/7, 2) AS average_amount
-FROM total_cte as a
+FROM total_cte AS a
 INNER JOIN
-(SELECT MIN(visited_on) as min_visited_on FROM total_cte) as b
+(SELECT MIN(visited_on) AS min_visited_on FROM total_cte) AS b
 ON DATEDIFF(visited_on, min_visited_on) >= 6;
