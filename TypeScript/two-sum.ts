@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Space: O(1)
+// Space: O(n)
 
 function twoSum(nums: number[], target: number): number[] {
     let lookup = new Map();
