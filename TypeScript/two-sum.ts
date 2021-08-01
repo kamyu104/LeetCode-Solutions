@@ -9,4 +9,5 @@ function twoSum(nums: number[], target: number): number[] {
         }
         lookup.set(nums[i], i);
     }
+    return [];
 };
