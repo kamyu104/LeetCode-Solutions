@@ -12,18 +12,19 @@ class Solution(object):
         """
         # find min r, s.t. 4r^3+6r^2+2r-neededApples >= 0
         # => by depressed cubic (https://en.wikipedia.org/wiki/Cubic_equation#Depressed_cubic)
-        # let x = r+(6/(3*4)), r = x-(1/2)
-        # =>  4(x-(1/2))^3+6(x-(1/2))^2+2(x-(1/2))-neededApples
-        #   = 4(x^3-3/2x^2+3/4x-1/8)
-        #     + 6(x^2-x+1/4)
-        #     + 2(x-1/2)
-        #   = 4x^3-x-neededApples
-        # find x s.t. 4x^3-x-neededApples = 0 => x^3+(-1/4)x+(-neededApples/4) = 0
+        #    let x = r+(6/(3*4)), r = x-(1/2)
+        #    4(x-(1/2))^3+6(x-(1/2))^2+2(x-(1/2))-neededApples
+        #    = 4(x^3-3/2x^2+3/4x-1/8)
+        #      + 6(x^2-x+1/4)
+        #      + 2(x-1/2)
+        #    = 4x^3-x-neededApples >= 0
+        #
+        # find x, s.t. 4x^3-x-neededApples = 0 <=> x^3+(-1/4)x+(-neededApples/4) = 0
         # => by Cardano's formula (https://en.wikipedia.org/wiki/Cubic_equation#Cardano's_formula)
         #    x^3 + px + q = 0, p = (-1/4), q = (-neededApples/4)
         #    x = (-q/2 + ((q/2)^2+(p/3)^3)^(1/2)) + (-q/2 - ((q/2)^2+(p/3)^3)^(1/2))
         #    r = x - 1/2
-        #    min r = ceil(r)
+        # => min r = ceil(r)
 
         a, b, c, d = 4.0, 6.0, 2.0, float(-neededApples)
         p = (3*a*c-b**2)/(3*a**2)  # -1/4.0
@@ -58,8 +59,10 @@ class Solution2(object):
         #
         # each up/down direction forms an arithmetic sequence, there are 2r+1 columns
         # => 2*(1+r)*r/2 * (2r+1)
+        #
         # each left/right direction forms an arithmetic sequence, there are 2r+1 rows
         # => 2*(1+r)*r/2 * (2r+1)
+        #
         # => total = 2 * 2*(1+r)*r/2 * (2r+1) = r*(2r+1)*(2r+2) = 4r^3+6r^2+2r
         # => find min r, s.t. (2r)(2r+1)*(2r+2) >= 2*neededApples
         # => find min x = 2r+2, s.t. (x-2)(x-1)(x) >= 2*neededApples
@@ -104,7 +107,7 @@ class Solution3(object):
         #           = 2*(r*(r+1) + r*(r+1) + r*(2r+1)))*(r+1)/2 - r*(r+1)
         #           = r*(4r+3)*(r+1)-r*(r+1)
         #           = 4r^3+6r^2+2r
-        # find min r, s.t. 4r^3+6r^2+2r >= neededApples
+        # => find min r, s.t. 4r^3+6r^2+2r >= neededApples
 
         def check(neededApples, x):
             return r*(2*r+1)*(2*r+2) >= neededApples
