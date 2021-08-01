@@ -6,7 +6,7 @@ function twoSum(nums: number[], target: number): number[] {
     for (let i = 0; i < nums.length; i += 1) {
         if (lookup.has(target - nums[i])) {
             return [lookup.get(target - nums[i]), i];
-        };
+        }
         lookup.set(nums[i], i);
     }
 };
