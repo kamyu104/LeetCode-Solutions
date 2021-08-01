@@ -25,8 +25,8 @@ public:
         const double p = (3 * a * c - pow(b, 2)) / (3 * pow(a, 2));  // -1/4.0
         const double q = (2 * pow(b, 3) - 9 * a * b * c + 27 * pow(a, 2) * d)/(27 * pow(a, 3));  // -neededApples/4.0
         assert(pow(q / 2, 2) + pow(p / 3, 3) > 0);  // case of only one real root
-        const double x = pow(-q / 2 + pow(pow(q / 2, 2) + pow(p / 3, 3), 1 / 2.0), 1 / 3.0) +
-                         pow(-q / 2 - pow(pow(q / 2, 2) + pow(p / 3, 3), 1 / 2.0), 1 / 3.0);
+        const double x = pow(-q / 2 + pow(pow(q / 2, 2) + pow(p / 3, 3), 1.0 / 2), 1.0 / 3) +
+                         pow(-q / 2 - pow(pow(q / 2, 2) + pow(p / 3, 3), 1.0 / 2), 1.0 / 3);
         return 8 * int64_t(ceil(x - b / (3 * a)));
     }
 };
@@ -60,7 +60,7 @@ public:
         // => find min r, s.t. (2r)(2r+1)*(2r+2) >= 2*neededApples
         // => find min x = 2r+2, s.t. (x-2)(x-1)(x) >= 2*neededApples
 
-        int64_t x = pow(2 * neededApples, 1 / 3.0);
+        int64_t x = pow(2 * neededApples, 1.0 / 3);
         x -= x % 2;
         assert((x - 2) * (x - 1) * x < 2 * neededApples);
         assert(pow(x + 2, 3) >= 2 * neededApples);
@@ -101,7 +101,7 @@ public:
         //           = 4r^3+6r^2+2r
         // => find min r, s.t. 4r^3+6r^2+2r >= neededApples
 
-        int64_t left = 1, right = pow(neededApples / 4.0, 1 / 3.0);
+        int64_t left = 1, right = pow(neededApples / 4.0, 1.0 / 3);
         while (left <= right) {
             const auto& mid = left + (right - left) / 2;
             if (check(neededApples, mid)) {
