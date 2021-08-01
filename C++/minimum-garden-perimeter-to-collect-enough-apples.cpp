@@ -23,7 +23,7 @@ public:
         const double a = 4, b = 6, c = 2, d = -neededApples;
         const double p = (3 * a * c - pow(b, 2)) / (3 * pow(a, 2));  // -1/4.0
         const double q = (2 * pow(b, 3) - 9 * a * b * c + 27 * pow(a, 2) * d)/(27 * pow(a, 3));  // -neededApples/4.0
-        assert(pow(q / 2, 2) + pow(p / 3, 3) > 0);
+        assert(pow(q / 2, 2) + pow(p / 3, 3) > 0);  // case of only one root
         const double x = pow(-q / 2 + pow(pow(q / 2, 2) + pow(p / 3, 3), 1 / 2.0), 1 / 3.0) +
                          pow(-q / 2 - pow(pow(q / 2, 2) + pow(p / 3, 3), 1 / 2.0), 1 / 3.0);
         return 8 * int64_t(ceil(x - b / (3 * a)));
