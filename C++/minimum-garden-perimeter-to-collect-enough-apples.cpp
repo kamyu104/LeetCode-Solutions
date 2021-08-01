@@ -62,8 +62,7 @@ public:
 
         int64_t x = pow(2 * neededApples, 1.0 / 3);
         x -= x % 2;
-        assert((x - 2) * (x - 1) * x < 2 * neededApples);
-        assert(pow(x + 2, 3) >= 2 * neededApples);
+        assert((x - 2) * (x - 1) * x < 2 * neededApples && 2 * neededApples < pow(x + 2, 3));
         x += 2;
         if ((x - 2) * (x - 1) * x < 2 * neededApples) {
             x += 2;
