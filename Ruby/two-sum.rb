@@ -10,7 +10,7 @@ def two_sum(nums, target)
         if lookup.has_key?(target - x)
             return [lookup[target - x], i] 
         end
-        lookup[nums[i]] = i
+        lookup[x] = i
     end
     return []
 end
