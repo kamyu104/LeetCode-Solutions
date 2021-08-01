@@ -8,4 +8,5 @@ class Solution(object):
         :rtype: int
         """
         total, max_num = sum(milestones), max(milestones)
-        return min((total-max_num)+((total-max_num)+1), total)
+        other_total = (total-max_num)
+        return other_total+min(other_total+1, max_num)
