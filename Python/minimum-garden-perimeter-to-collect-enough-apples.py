@@ -22,14 +22,15 @@ class Solution(object):
         # find x, s.t. 4x^3-x-neededApples = 0 <=> x^3+(-1/4)x+(-neededApples/4) = 0
         # => by Cardano's formula (https://en.wikipedia.org/wiki/Cubic_equation#Cardano's_formula)
         #    x^3 + px + q = 0, p = (-1/4), q = (-neededApples/4)
-        #    x = (-q/2 + ((q/2)^2+(p/3)^3)^(1/2)) + (-q/2 - ((q/2)^2+(p/3)^3)^(1/2))
-        #    r = x-(1/2)
+        #    since (q/2)^2+(p/3)^3 = neededApples^2/64-1/1728 > 0 => only one real root
+        #    => x = (-q/2 + ((q/2)^2+(p/3)^3)^(1/2)) + (-q/2 - ((q/2)^2+(p/3)^3)^(1/2))
+        #       r = x-(1/2)
         # => min r = ceil(r)
 
         a, b, c, d = 4.0, 6.0, 2.0, float(-neededApples)
         p = (3*a*c-b**2)/(3*a**2)  # -1/4.0
         q = (2*b**3-9*a*b*c+27*a**2*d)/(27*a**3)  # -neededApples/4.0
-        assert((q/2)**2+(p/3)**3 > 0)  # case of only one root
+        assert((q/2)**2+(p/3)**3 > 0)  # case of only one real root
         x = (-q/2 + ((q/2)**2+(p/3)**3)**0.5)**(1/3.0) + \
             (-q/2 - ((q/2)**2+(p/3)**3)**0.5)**(1/3.0)
         return 8*int(math.ceil(x - b/(3*a)))
