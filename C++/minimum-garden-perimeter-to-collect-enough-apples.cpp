@@ -16,14 +16,15 @@ public:
         // find x, s.t. 4x^3-x-neededApples = 0 <=> x^3+(-1/4)x+(-neededApples/4) = 0
         // => by Cardano's formula (https://en.wikipedia.org/wiki/Cubic_equation#Cardano's_formula)
         //    x^3 + px + q = 0, p = (-1/4), q = (-neededApples/4)
-        //    x = (-q/2 + ((q/2)^2+(p/3)^3)^(1/2)) + (-q/2 - ((q/2)^2+(p/3)^3)^(1/2))
-        //    r = x-(1/2)
+        //    since (q/2)^2+(p/3)^3 = neededApples^2/64-1/1728 > 0 => only one real root
+        //    => x = (-q/2 + ((q/2)^2+(p/3)^3)^(1/2)) + (-q/2 - ((q/2)^2+(p/3)^3)^(1/2))
+        //       r = x-(1/2)
         // => min r = ceil(r)
 
         const double a = 4, b = 6, c = 2, d = -neededApples;
         const double p = (3 * a * c - pow(b, 2)) / (3 * pow(a, 2));  // -1/4.0
         const double q = (2 * pow(b, 3) - 9 * a * b * c + 27 * pow(a, 2) * d)/(27 * pow(a, 3));  // -neededApples/4.0
-        assert(pow(q / 2, 2) + pow(p / 3, 3) > 0);  // case of only one root
+        assert(pow(q / 2, 2) + pow(p / 3, 3) > 0);  // case of only one real root
         const double x = pow(-q / 2 + pow(pow(q / 2, 2) + pow(p / 3, 3), 1 / 2.0), 1 / 3.0) +
                          pow(-q / 2 - pow(pow(q / 2, 2) + pow(p / 3, 3), 1 / 2.0), 1 / 3.0);
         return 8 * int64_t(ceil(x - b / (3 * a)));
