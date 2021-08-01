@@ -22,7 +22,7 @@ class Solution(object):
         # => by Cardano's formula (https://en.wikipedia.org/wiki/Cubic_equation#General_cubic_formula)
         #    x^3 + px + q = 0, p = (-1/4), q = (-neededApples/4)
         #    x = (-q/2 + ((q/2)^2+(p/3)^3)^(1/2)) + (-q/2 - ((q/2)^2+(p/3)^3)^(1/2))
-        #    r = (-q/2 + ((q/2)^2+(p/3)^3)^(1/2)) + (-q/2 - ((q/2)^2+(p/3)^3)^(1/2)) - 1/2
+        #    r = x - 1/2
         #    min r = ceil(r)
         a, b, c, d = 4.0, 6.0, 2.0, float(-neededApples)
         p = (3*a*c-b**2)/(3*a**2)  # -1/4.0
