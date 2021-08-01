@@ -41,8 +41,28 @@ class Solution2(object):
         :type neededApples: int
         :rtype: int
         """
+        # r+r  , (r-1)+r, ..., 1+r, 0+r    , 1+r, ..., (r-1)+r, r+r
+        # r+r-1,                    0+(r-1),                    r+(r-1)
+        # .                          .                            .    
+        # .                          .                            .    
+        # .                          .                            .    
+        # r+1,   (r-1)+1, ..., 1+1, 1+0,  1+1, ...,    (r-1)+1, r+1
+        # r+0,   (r-1)+0, ..., 1+0, 0+0,  1+0, ...,    (r-1)+0, r+0
+        # r+1,   (r-1)+1, ..., 1+1, 1+0,  1+1, ...,    (r-1)+1, r+1
+        # .                          .                            .    
+        # .                          .                            .    
+        # .                          .                            .       
+        # r+r-1,                    0+(r-1),                    r+(r-1)
+        # r+r  , (r-1)+r, ..., 1+r, 0+r    , 1+r, ..., r+(r-1), r+r
+        #
+        # each up/down direction forms an arithmetic sequence, there are 2r+1 columns
+        # => 2*(1+r)*r/2 * (2r+1)
+        # each left/right direction forms an arithmetic sequence, there are 2r+1 rows
+        # => 2*(1+r)*r/2 * (2r+1)
+        # => total = 2 * 2*(1+r)*r/2 * (2r+1) = r*(2r+1)*(2r+2) = 4r^3+6r^2+2r
         # find min r, s.t. (2r)(2r+1)*(2r+2) >= 2*neededApples
         # => find min x = 2r+2, s.t. (x-2)(x-1)(x) >= 2*neededApples
+
         x = int((2*neededApples)**(1/3.0))
         x -= x%2
         assert((x-2)*(x-1)*x < 2*neededApples)
@@ -61,8 +81,6 @@ class Solution3(object):
         :type neededApples: int
         :rtype: int
         """
-        # proof 1
-        #
         # 2r, 2r-1, ..., r+1, r  , r+1, ..., 2*r-1, 2*r
         # 2r-1                r-1,                  2r-1
         # .                   .                     .    
@@ -85,28 +103,7 @@ class Solution3(object):
         #           = 2*(r*(r+1) + r*(r+1) + r*(2r+1)))*(r+1)/2 - r*(r+1)
         #           = r*(4r+3)*(r+1)-r*(r+1)
         #           = 4r^3+6r^2+2r
-        #
-        # proof 2
-        #
-        # r+r  , (r-1)+r, ..., 1+r, 0+r    , 1+r, ..., (r-1)+r, r+r
-        # r+r-1,                    0+(r-1),                    r+(r-1)
-        # .                          .                            .    
-        # .                          .                            .    
-        # .                          .                            .    
-        # r+1,   (r-1)+1, ..., 1+1, 1+0,  1+1, ...,    (r-1)+1, r+1
-        # r+0,   (r-1)+0, ..., 1+0, 0+0,  1+0, ...,    (r-1)+0, r+0
-        # r+1,   (r-1)+1, ..., 1+1, 1+0,  1+1, ...,    (r-1)+1, r+1
-        # .                          .                            .    
-        # .                          .                            .    
-        # .                          .                            .       
-        # r+r-1,                    0+(r-1),                    r+(r-1)
-        # r+r  , (r-1)+r, ..., 1+r, 0+r    , 1+r, ..., r+(r-1), r+r
-        #
-        # each up/down direction forms an arithmetic sequence, there are 2r+1 columns
-        # => 2*(1+r)*r/2 * (2r+1)
-        # each left/right direction forms an arithmetic sequence, there are 2r+1 rows
-        # => 2*(1+r)*r/2 * (2r+1)
-        # => total = 2 * 2*(1+r)*r/2 * (2r+1) = r*(2r+1)*(2r+2) = 4r^3+6r^2+2r
+        # find min r, s.t. 4r^3+6r^2+2r >= neededApples
 
         def check(neededApples, x):
             return r*(2*r+1)*(2*r+2) >= neededApples
