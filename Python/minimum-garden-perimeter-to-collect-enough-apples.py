@@ -29,7 +29,7 @@ class Solution(object):
         a, b, c, d = 4.0, 6.0, 2.0, float(-neededApples)
         p = (3*a*c-b**2)/(3*a**2)  # -1/4.0
         q = (2*b**3-9*a*b*c+27*a**2*d)/(27*a**3)  # -neededApples/4.0
-        assert((q/2)**2+(p/3)**3 > 0)
+        assert((q/2)**2+(p/3)**3 > 0)  # case of only one root
         x = (-q/2 + ((q/2)**2+(p/3)**3)**0.5)**(1/3.0) + \
             (-q/2 - ((q/2)**2+(p/3)**3)**0.5)**(1/3.0)
         return 8*int(math.ceil(x - b/(3*a)))
