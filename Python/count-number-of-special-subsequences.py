@@ -10,7 +10,7 @@ class Solution(object):
         :type neededApples: int
         :rtype: int
         """
-        # 4r^3+6r^2+2r-neededApples
+        # find min r, s.t. 4r^3+6r^2+2r-neededApples >= 0
         # => by depressed cubic (https://en.wikipedia.org/wiki/Cubic_equation#Depressed_cubic)
         # let x = r+(6/(3*4)), r = x-(1/2)
         # =>  4(x-(1/2))^3+6(x-(1/2))^2+2(x-(1/2))-neededApples
@@ -19,7 +19,7 @@ class Solution(object):
         #     + 2(x-1/2)
         #   = 4x^3-x-neededApples
         # find x s.t. 4x^3-x-neededApples = 0 => x^3+(-1/4)x+(-neededApples/4) = 0
-        # => by Cardano's formula (https://en.wikipedia.org/wiki/Cubic_equation#General_cubic_formula)
+        # => by Cardano's formula (https://en.wikipedia.org/wiki/Cubic_equation#Cardano's_formula)
         #    x^3 + px + q = 0, p = (-1/4), q = (-neededApples/4)
         #    x = (-q/2 + ((q/2)^2+(p/3)^3)^(1/2)) + (-q/2 - ((q/2)^2+(p/3)^3)^(1/2))
         #    r = x - 1/2
@@ -60,7 +60,7 @@ class Solution2(object):
         # each left/right direction forms an arithmetic sequence, there are 2r+1 rows
         # => 2*(1+r)*r/2 * (2r+1)
         # => total = 2 * 2*(1+r)*r/2 * (2r+1) = r*(2r+1)*(2r+2) = 4r^3+6r^2+2r
-        # find min r, s.t. (2r)(2r+1)*(2r+2) >= 2*neededApples
+        # => find min r, s.t. (2r)(2r+1)*(2r+2) >= 2*neededApples
         # => find min x = 2r+2, s.t. (x-2)(x-1)(x) >= 2*neededApples
 
         x = int((2*neededApples)**(1/3.0))
