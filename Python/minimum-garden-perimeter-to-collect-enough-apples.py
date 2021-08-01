@@ -31,8 +31,8 @@ class Solution(object):
         p = (3*a*c-b**2)/(3*a**2)  # -1/4.0
         q = (2*b**3-9*a*b*c+27*a**2*d)/(27*a**3)  # -neededApples/4.0
         assert((q/2)**2+(p/3)**3 > 0)  # case of only one real root
-        x = (-q/2 + ((q/2)**2+(p/3)**3)**0.5)**(1/3.0) + \
-            (-q/2 - ((q/2)**2+(p/3)**3)**0.5)**(1/3.0)
+        x = (-q/2 + ((q/2)**2+(p/3)**3)**0.5)**(1.0/3) + \
+            (-q/2 - ((q/2)**2+(p/3)**3)**0.5)**(1.0/3)
         return 8*int(math.ceil(x - b/(3*a)))
                              
 
@@ -68,7 +68,7 @@ class Solution2(object):
         # => find min r, s.t. (2r)(2r+1)*(2r+2) >= 2*neededApples
         # => find min x = 2r+2, s.t. (x-2)(x-1)(x) >= 2*neededApples
 
-        x = int((2*neededApples)**(1/3.0))
+        x = int((2*neededApples)**(1.0/3))
         x -= x%2
         assert((x-2)*(x-1)*x < 2*neededApples)
         assert((x+2)**3 >= 2*neededApples)
@@ -113,7 +113,7 @@ class Solution3(object):
         def check(neededApples, x):
             return r*(2*r+1)*(2*r+2) >= neededApples
 
-        left, right = 1, int((neededApples/4.0)**(1/3.0))
+        left, right = 1, int((neededApples/4.0)**(1.0/3))
         while left <= right:
             mid = left + (right-left)//2
             if check(neededApples, mid):
