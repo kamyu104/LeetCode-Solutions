@@ -70,8 +70,7 @@ class Solution2(object):
 
         x = int((2*neededApples)**(1.0/3))
         x -= x%2
-        assert((x-2)*(x-1)*x < 2*neededApples)
-        assert((x+2)**3 >= 2*neededApples)
+        assert((x-2)*(x-1)*x < 2*neededApples < (x+2)**3)
         x += 2
         if (x-2)*(x-1)*x < 2*neededApples:
             x += 2
