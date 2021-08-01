@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1950%20%2F%201950-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1955%20%2F%201955-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1039,6 +1039,8 @@
 1916| [Count Ways to Build Rooms in an Ant Colony](https://leetcode.com/problems/count-ways-to-build-rooms-in-an-ant-colony/) | [C++](./C++/count-ways-to-build-rooms-in-an-ant-colony.cpp) [Python](./Python/count-ways-to-build-rooms-in-an-ant-colony.py) | _O(n)_ | _O(n)_ |  Hard |  | DFS, Tree |
 1922| [Count Good Numbers](https://leetcode.com/problems/count-good-numbers/) | [C++](./C++/count-good-numbers.cpp) [Python](./Python/count-good-numbers.py) | _O(logn)_ | _O(1)_ |  Medium |  | |
 1945| [Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/) | [C++](./C++/sum-of-digits-of-string-after-convert.cpp) [Python](./Python/sum-of-digits-of-string-after-convert.py) | _O(n)_ | _O(1)_ |  Easy |  | |
+1952| [Three Divisors](https://leetcode.com/problems/three-divisors/) | [C++](./C++/three-divisors.cpp) [Python](./Python/three-divisors.py) | _O(sqrt(n))_ | _O(1)_ |  Easy |  | |
+1954| [Minimum Garden Perimeter to Collect Enough Apples](https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples/) | [C++](./C++/minimum-garden-perimeter-to-collect-enough-apples.cpp) [Python](./Python/minimum-garden-perimeter-to-collect-enough-apples.py) | _O(1)_ | _O(1)_ |  Medium |  | Binary Search, `Cardano's Formula` |
 
 <br/>
 <div align="right">
@@ -1741,6 +1743,7 @@
 1908| [Game of Nim](https://leetcode.com/problems/game-of-nim/)|[C++](./C++/game-of-nim.cpp) [Python](./Python/game-of-nim.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 | |
 1931| [Painting a Grid With Three Different Colors](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/)|[C++](./C++/painting-a-grid-with-three-different-colors.cpp) [Python](./Python/painting-a-grid-with-three-different-colors.py)| _O(2^(3 * m) * logn)_     | _O(2^(2 * m))_         | Hard         | variant of [Number of Ways to Paint N × 3 Grid](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/) | DP, Backtracking, Matrix Exponentiation, State Compression |
 1937| [Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/)|[C++](./C++/maximum-number-of-points-with-cost.cpp) [Python](./Python/maximum-number-of-points-with-cost.py)| _O(m * n)_     | _O(n)_         | Medium         | | Prefix Sum |
+1955| [Count Number of Special Subsequences](https://leetcode.com/problems/count-number-of-special-subsequences/)|[C++](./C++/count-number-of-special-subsequences.cpp) [Python](./Python/count-number-of-special-subsequences.py)| _O(n)_     | _O(1)_         | Hard         | | |
 
 <br/>
 <div align="right">
@@ -1897,6 +1900,7 @@
 1927 | [Sum Game](https://leetcode.com/problems/sum-game/) | [C++](./C++/sum-game.cpp) [Python](./Python/sum-game.py) | _O(n)_ | _O(1)_ | Medium | | |
 1936 | [Add Minimum Number of Rungs](https://leetcode.com/problems/add-minimum-number-of-rungs/) | [C++](./C++/add-minimum-number-of-rungs.cpp) [Python](./Python/add-minimum-number-of-rungs.py) | _O(n)_ | _O(1)_ | Medium | | |
 1946 | [Largest Number After Mutating Substring](https://leetcode.com/problems/largest-number-after-mutating-substring/) | [C++](./C++/largest-number-after-mutating-substring.cpp) [Python](./Python/largest-number-after-mutating-substring.py) | _O(n)_ | _O(1)_ | Medium | | |
+1953 | [Maximum Number of Weeks for Which You Can Work](https://leetcode.com/problems/maximum-number-of-weeks-for-which-you-can-work/) | [C++](./C++/maximum-number-of-weeks-for-which-you-can-work.cpp) [Python](./Python/maximum-number-of-weeks-for-which-you-can-work.py) | _O(n)_ | _O(1)_ | Medium | | |
 
 <br/>
 <div align="right">
@@ -2210,6 +2214,7 @@
 1934| [Confirmation Rate](https://leetcode.com/problems/confirmation-rate/) | [MySQL](./MySQL/confirmation-rate.sql) | _O(n + m)_ | _O(n + m)_       | Medium           |🔒||
 1939| [Users That Actively Request Confirmation Messages](https://leetcode.com/problems/users-that-actively-request-confirmation-messages/) | [MySQL](./MySQL/users-that-actively-request-confirmation-messages.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 1949| [Strong Friendship](https://leetcode.com/problems/strong-friendship/) | [MySQL](./MySQL/strong-friendship.sql) | _O(n^3)_ | _O(n^2)_       | Medium           |🔒||
+1951| [All the Pairs With the Maximum Number of Common Followers](https://leetcode.com/problems/all-the-pairs-with-the-maximum-number-of-common-followers/) | [MySQL](./MySQL/all-the-pairs-with-the-maximum-number-of-common-followers.sql) | _O(n^3)_ | _O(n^2)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
