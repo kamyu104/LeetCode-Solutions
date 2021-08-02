@@ -3,11 +3,11 @@
 
 func twoSum(nums []int, target int) []int {
 	lookup := make(map[int]int)
-	for i, num := range nums {
-		if j, ok := lookup[target-num]; ok {
+	for i, x := range nums {
+		if j, ok := lookup[target-x]; ok {
 			return []int{j, i}
 		}
-		lookup[nums[i]] = i
+		lookup[x] = i
 	}
 	return nil
 }
