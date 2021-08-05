@@ -94,7 +94,7 @@ class Solution(object):
             events.append([[x1,  1], [y1, y2]])
             events.append([[x2, -1], [y1, y2]])
             
-        def check(points, k, l):
+        def check(points, k, l):  # Time: O(nlogn), Space: O(n)
             events = []
             ys = set()
             for x, y in points:
