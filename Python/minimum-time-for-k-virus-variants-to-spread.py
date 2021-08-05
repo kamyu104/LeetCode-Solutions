@@ -153,9 +153,10 @@ class Solution2(object):
                 y_set.add(y-l)
                 y_set.add(y+l+1)
             sorted_y = sorted(y_set)
+            sorted_x = sorted(intervals.iterkeys())
             count = collections.Counter()
-            for i in sorted(intervals.iterkeys()):  # line sweep
-                for y, c in intervals[i].iteritems():
+            for x in sorted_x:  # line sweep
+                for y, c in intervals[x].iteritems():
                     count[y] += c
                 cnt = 0
                 for y in sorted_y:
