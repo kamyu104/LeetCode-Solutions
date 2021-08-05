@@ -90,14 +90,14 @@ class Solution(object):
         """
         def add_rec(rec, intervals):
             x0, y0, x1, y1 = rec
-            intervals.append([[x0, +1], [y0, y1]])
-            intervals.append([[x1, -1], [y0, y1]])
+            intervals.append([[x0,   +1], [y0, y1]])
+            intervals.append([[x1+1, -1], [y0, y1]])
 
         def check(points, k, l):  # Time: O(nlogn), Space: O(n)
             intervals = []
             y_set = set()
             for x, y in points:
-                add_rec([x-l, y-l, (x+l)+1, y+l], intervals)
+                add_rec([x-l, y-l, x+l, y+l], intervals)
                 y_set.add(y-l)
                 y_set.add(y+l)
             intervals.sort()
