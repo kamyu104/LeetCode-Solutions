@@ -1,4 +1,4 @@
-# Time:  O(nlogn * logr), r is the sum of range x and range y
+# Time:  O(nlogn * logr), r is the sum of range x size and range y size
 # Space: O(n)
 
 # Range Maximum Query
@@ -126,7 +126,7 @@ class Solution(object):
         return left
 
 
-# Time:  O(n^2 * logr), r is the sum of range x and range y
+# Time:  O(n^2 * logr), r is the sum of range x size and range y size
 # Space: O(n)
 import collections
 
