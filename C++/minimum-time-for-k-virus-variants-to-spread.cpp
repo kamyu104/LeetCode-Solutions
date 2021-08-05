@@ -114,7 +114,7 @@ private:
         }
     };
 
-    bool check(const vector<vector<int>>& points, int k, int l) {
+    bool check(const vector<vector<int>>& points, int k, int l) {  // Time: O(nlogn), Space: O(n)
         using Event = tuple<int64_t, int64_t, int64_t, int64_t>;
         vector<Event> intervals;
         unordered_set<int64_t> y_set;
@@ -128,11 +128,11 @@ private:
         vector<int64_t> sorted_y(cbegin(y_set), cend(y_set));
         sort(begin(sorted_y), end(sorted_y));
         unordered_map<int64_t, int> y_to_idx;
-        for (int i = 0; i < size(sorted_y); ++i) {
+        for (int i = 0; i < size(sorted_y); ++i) {  // coordinate compression
             y_to_idx[sorted_y[i]] = i;
         }
         SegmentTree st(size(y_to_idx));
-        for (const auto& [x0, v, y0, y1] : intervals) {
+        for (const auto& [x0, v, y0, y1] : intervals) {  // line sweep
             st.update(y_to_idx[y0], y_to_idx[y1], v);
             if (st.query(0, size(y_to_idx) - 1) >= k) {
                 return true;
