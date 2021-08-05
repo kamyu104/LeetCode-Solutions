@@ -166,7 +166,7 @@ private:
         unordered_map<int64_t, unordered_map<int64_t, int>> intervals;
         unordered_set<int64_t> y_set;
         for (const auto& p : points) {
-            // add [y0, y1] by 1 in [x0, x1+1)
+            // add [y0, y1+1) by 1 in [x0, x1+1)
             int64_t x0 = int64_t(p[0]) - l, y0 = int64_t(p[1]) - l, x1 = int64_t(p[0]) + l, y1 = int64_t(p[1]) + l;
             ++intervals[x0][y0];
             --intervals[x0][y1 + 1];
