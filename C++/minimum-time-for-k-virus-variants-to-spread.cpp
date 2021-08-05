@@ -8,14 +8,8 @@ public:
                        [](const auto& v) {
                            return vector<int>({v[0] + v[1], v[0] - v[1]});
                        });
-        const int min_x = (*min_element(cbegin(points), cend(points),
-                                        [](const auto& a, const auto& b) {
-                                            return a[0] < b[0];
-                                        }))[0];
-        const int max_x = (*max_element(cbegin(points), cend(points),
-                                        [](const auto& a, const auto& b) {
-                                            return a[0] < b[0];
-                                        }))[0];
+        const int min_x = (*min_element(cbegin(points), cend(points)))[0];
+        const int max_x = (*max_element(cbegin(points), cend(points)))[0];
         const int min_y = (*min_element(cbegin(points), cend(points),
                                         [](const auto& a, const auto& b) {
                                             return a[1] < b[1];
