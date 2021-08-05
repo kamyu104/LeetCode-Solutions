@@ -81,6 +81,7 @@ class SegmentTree(object):  # 0-based index
         return ",".join(map(str, showList))
 
 
+# competitive programming solution
 class Solution(object):
     def minDayskVariants(self, points, k):
         """
@@ -130,6 +131,7 @@ class Solution(object):
 import collections
 
 
+# interview solution
 class Solution2(object):
     def minDayskVariants(self, points, k):
         """
