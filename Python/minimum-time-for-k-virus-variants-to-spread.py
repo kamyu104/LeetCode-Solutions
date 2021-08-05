@@ -111,8 +111,8 @@ class Solution(object):
             return False
                 
         points = [[(x+y), (x-y)] for x, y in points]  # rotate
-        min_x = min(points, key=lambda x: x[0])[0]
-        max_x = max(points, key=lambda x: x[0])[0]
+        min_x = min(points)[0]
+        max_x = max(points)[0]
         min_y = min(points, key=lambda x: x[1])[1]
         max_y = max(points, key=lambda x: x[1])[1]
         left, right = 0, (max_x-min_x)+(max_y-min_y)
