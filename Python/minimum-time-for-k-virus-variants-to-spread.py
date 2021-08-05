@@ -89,24 +89,24 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        def add_rec(rec, events):
-            x1, x2, y1, y2 = rec
-            events.append([[x1,  1], [y1, y2]])
-            events.append([[x2, -1], [y1, y2]])
-            
+        def add_rec(rec, intervals):
+            x0, y0, x1, y1 = rec
+            intervals.append([[x0, +1], [y0, y1]])
+            intervals.append([[x1, -1], [y0, y1]])
+
         def check(points, k, l):  # Time: O(nlogn), Space: O(n)
-            events = []
-            ys = set()
+            intervals = []
+            y_set = set()
             for x, y in points:
-                add_rec([x-l, (x+l)+1, y-l, y+l], events)
-                ys.add(y-l)
-                ys.add(y+l)
-            events.sort()
-            lookup = {y:i for i, y in enumerate(sorted(ys))}  # coordinate compression
-            st = SegmentTree(len(lookup))
-            for [_, v], [y1, y2] in events:  # line sweep
-                st.update(lookup[y1], lookup[y2], v)
-                if st.query(0, len(lookup)-1) >= k:
+                add_rec([x-l, y-l, (x+l)+1, y+l], intervals)
+                y_set.add(y-l)
+                y_set.add(y+l)
+            intervals.sort()
+            y_to_idx = {y:i for i, y in enumerate(sorted(y_set))}  # coordinate compression
+            st = SegmentTree(len(y_to_idx))
+            for [_, v], [y0, y1] in intervals:  # line sweep
+                st.update(y_to_idx[y0], y_to_idx[y1], v)
+                if st.query(0, len(y_to_idx)-1) >= k:
                     return True
             return False
                 
