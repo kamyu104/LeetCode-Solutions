@@ -111,7 +111,7 @@ class Solution(object):
                     return True
             return False
                 
-        points = [[(x+y), (x-y)] for x, y in points]  # rotate
+        points = [[x+y, x-y] for x, y in points]  # rotate
         min_x = min(points)[0]
         max_x = max(points)[0]
         min_y = min(points, key=lambda x: x[1])[1]
@@ -167,7 +167,7 @@ class Solution2(object):
                         return True
             return False
                 
-        points = [[(x+y), (x-y)] for x, y in points]  # rotate
+        points = [[x+y, x-y] for x, y in points]  # rotate
         min_x = min(points)[0]
         max_x = max(points)[0]
         min_y = min(points, key=lambda x: x[1])[1]
