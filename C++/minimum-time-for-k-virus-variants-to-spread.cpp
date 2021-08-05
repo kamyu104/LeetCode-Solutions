@@ -132,7 +132,7 @@ private:
             y_to_idx[sorted_y[i]] = i;
         }
         SegmentTree st(size(y_to_idx));
-        for (const auto& [x0, v, y0, y1] : intervals) {  // line sweep
+        for (const auto& [_, v, y0, y1] : intervals) {  // line sweep
             st.update(y_to_idx[y0], y_to_idx[y1], v);
             if (st.query(0, size(y_to_idx) - 1) >= k) {
                 return true;
