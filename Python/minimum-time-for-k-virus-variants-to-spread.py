@@ -116,7 +116,7 @@ class Solution(object):
         max_x = max(points)[0]
         min_y = min(points, key=lambda x: x[1])[1]
         max_y = max(points, key=lambda x: x[1])[1]
-        left, right = 0, (max_x-min_x)+(max_y-min_y)
+        left, right = 0, ((max_x-min_x)+(max_y-min_y)+1)//2
         while left <= right:
             mid = left + (right-left)//2
             if check(points, k, mid):
@@ -172,7 +172,7 @@ class Solution2(object):
         max_x = max(points)[0]
         min_y = min(points, key=lambda x: x[1])[1]
         max_y = max(points, key=lambda x: x[1])[1]
-        left, right = 0, (max_x-min_x)+(max_y-min_y)
+        left, right = 0, ((max_x-min_x)+(max_y-min_y)+1)//2
         while left <= right:
             mid = left + (right-left)//2
             if check(points, k, mid):
