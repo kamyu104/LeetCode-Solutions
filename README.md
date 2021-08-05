@@ -1301,7 +1301,6 @@
 1898 | [Maximum Number of Removable Characters](https://leetcode.com/problems/maximum-number-of-removable-characters/) | [C++](./C++/maximum-number-of-removable-characters.cpp) [Python](./Python/maximum-number-of-removable-characters.py) | _O(rlogn)_ | _O(r)_ | Medium | |
 1901 | [Find a Peak Element II](https://leetcode.com/problems/find-a-peak-element-ii/) | [C++](./C++/find-a-peak-element-ii.cpp) [Python](./Python/find-a-peak-element-ii.py) | _O(min(n, m) * log(max(n, m)))_ | _O(1)_ | Medium | |
 1918 | [Kth Smallest Subarray Sum](https://leetcode.com/problems/kth-smallest-subarray-sum/) | [C++](./C++/kth-smallest-subarray-sum.cpp) [Python](./Python/kth-smallest-subarray-sum.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 |
-1956 | [Minimum Time For K Virus Variants to Spread](https://leetcode.com/problems/minimum-time-for-k-virus-variants-to-spread/) | [C++](./C++/minimum-time-for-k-virus-variants-to-spread.cpp) [Python](./Python/minimum-time-for-k-virus-variants-to-spread.py) | _O(nlogn * logr)_ | _O(n)_ | Hard | 🔒 | Binary Search, Line Sweep, Segment Tree, Coordinate Compression
 
 <br/>
 <div align="right">
@@ -1962,6 +1961,7 @@
 1515 | [Best Position for a Service Centre](https://leetcode.com/problems/best-position-for-a-service-centre/)  | [C++](./C++/best-position-for-a-service-centre.cpp) [Python](./Python/best-position-for-a-service-centre.py) | _O(n * iter)_| _O(n)_| Hard           || Geometric Median, Gradient Descent, Weiszfeld's Algorithm |
 1610 | [Maximum Number of Visible Points](https://leetcode.com/problems/maximum-number-of-visible-points/)  | [C++](./C++/maximum-number-of-visible-points.cpp) [Python](./Python/maximum-number-of-visible-points.py) | _O(nlogn)_| _O(n)_| Hard           || Two Pointers, Sliding Window |
 1924 | [Erect the Fence II](https://leetcode.com/problems/erect-the-fence-ii/)  | [C++](./C++/erect-the-fence-ii.cpp) [Python](./Python/erect-the-fence-ii.py) | _O(n)_ on average | _O(n)_| Hard           | 🔒 | `Welzl's Algorithm` | 
+1956 | [Minimum Time For K Virus Variants to Spread](https://leetcode.com/problems/minimum-time-for-k-virus-variants-to-spread/) | [C++](./C++/minimum-time-for-k-virus-variants-to-spread.cpp) [Python](./Python/minimum-time-for-k-virus-variants-to-spread.py) | _O(nlogn * logr)_ | _O(n)_ | Hard | 🔒 | Geometry, Binary Search, Line Sweep, Segment Tree, Coordinate Compression
 
 <br/>
 <div align="right">
