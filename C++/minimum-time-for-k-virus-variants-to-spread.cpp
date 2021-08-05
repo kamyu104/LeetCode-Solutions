@@ -7,7 +7,7 @@ public:
     int minDayskVariants(vector<vector<int>>& points, int k) {
         std::transform(begin(points), end(points), begin(points),
                        [](const auto& v) {
-                           return vector<int>({v[0] + v[1], v[0] - v[1]});
+                           return vector<int>({v[0] + v[1], v[0] - v[1]});  // rotate
                        });
         const auto& compare_y = [](const vector<int>& a, const vector<int>& b) { return a[1] < b[1]; };
         const int min_x = (*min_element(cbegin(points), cend(points)))[0];
@@ -142,7 +142,7 @@ public:
     int minDayskVariants(vector<vector<int>>& points, int k) {
         std::transform(begin(points), end(points), begin(points),
                        [](const auto& v) {
-                           return vector<int>({v[0] + v[1], v[0] - v[1]});
+                           return vector<int>({v[0] + v[1], v[0] - v[1]});  // rotate
                        });
         const auto& compare_y = [](const vector<int>& a, const vector<int>& b) { return a[1] < b[1]; };
         const int min_x = (*min_element(cbegin(points), cend(points)))[0];
