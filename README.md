@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1955%20%2F%201955-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1956%20%2F%201956-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1301,6 +1301,7 @@
 1898 | [Maximum Number of Removable Characters](https://leetcode.com/problems/maximum-number-of-removable-characters/) | [C++](./C++/maximum-number-of-removable-characters.cpp) [Python](./Python/maximum-number-of-removable-characters.py) | _O(rlogn)_ | _O(r)_ | Medium | |
 1901 | [Find a Peak Element II](https://leetcode.com/problems/find-a-peak-element-ii/) | [C++](./C++/find-a-peak-element-ii.cpp) [Python](./Python/find-a-peak-element-ii.py) | _O(min(n, m) * log(max(n, m)))_ | _O(1)_ | Medium | |
 1918 | [Kth Smallest Subarray Sum](https://leetcode.com/problems/kth-smallest-subarray-sum/) | [C++](./C++/kth-smallest-subarray-sum.cpp) [Python](./Python/kth-smallest-subarray-sum.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 |
+1956 | [Minimum Time For K Virus Variants to Spread](https://leetcode.com/problems/minimum-time-for-k-virus-variants-to-spread/) | [C++](./C++/minimum-time-for-k-virus-variants-to-spread.cpp) [Python](./Python/minimum-time-for-k-virus-variants-to-spread.py) | _O(nlogn * logr)_ | _O(n)_ | Hard | 🔒 | Binary Search, Line Sweep, Segment Tree
 
 <br/>
 <div align="right">
