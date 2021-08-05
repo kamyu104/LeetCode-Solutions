@@ -8,16 +8,11 @@ public:
                        [](const auto& v) {
                            return vector<int>({v[0] + v[1], v[0] - v[1]});
                        });
+        const auto& compare_y = [](const vector<int>& a, const vector<int>& b) { return a[1] < b[1]; };
         const int min_x = (*min_element(cbegin(points), cend(points)))[0];
         const int max_x = (*max_element(cbegin(points), cend(points)))[0];
-        const int min_y = (*min_element(cbegin(points), cend(points),
-                                        [](const auto& a, const auto& b) {
-                                            return a[1] < b[1];
-                                        }))[1];
-        const int max_y = (*max_element(cbegin(points), cend(points),
-                                        [](const auto& a, const auto& b) {
-                                            return a[1] < b[1];
-                                        }))[1];
+        const int min_y = (*min_element(cbegin(points), cend(points), compare_y))[1];
+        const int max_y = (*max_element(cbegin(points), cend(points), compare_y))[1];
         int64_t left = 0, right = (int64_t(max_x) - min_x) + (int64_t(max_y) - min_y);
         while (left <= right) {
             const auto& mid = left + (right - left) / 2;
