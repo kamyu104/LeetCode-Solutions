@@ -81,7 +81,6 @@ class SegmentTree(object):  # 0-based index
         return ",".join(map(str, showList))
 
 
-
 class Solution(object):
     def minDayskVariants(self, points, k):
         """
