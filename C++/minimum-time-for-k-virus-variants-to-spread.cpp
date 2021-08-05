@@ -162,7 +162,7 @@ public:
     }
 
 private:
-    bool check(const vector<vector<int>>& points, int k, int l) {  // Time: O(nlogn), Space: O(n)
+    bool check(const vector<vector<int>>& points, int k, int l) {  // Time: O(n^2), Space: O(n)
         unordered_map<int64_t, unordered_map<int64_t, int>> intervals;
         unordered_set<int64_t> y_set;
         for (const auto& p : points) {
