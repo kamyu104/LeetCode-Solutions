@@ -119,10 +119,12 @@ private:
         vector<Event> intervals;
         unordered_set<int64_t> y_set;
         for (const auto& p : points) {
-            intervals.emplace_back(int64_t(p[0]) - l    , +1, int64_t(p[1]) - l, int64_t(p[1]) + l);
-            intervals.emplace_back(int64_t(p[0]) + l + 1, -1, int64_t(p[1]) - l, int64_t(p[1]) + l);
-            y_set.emplace(int64_t(p[1]) - l);
-            y_set.emplace(int64_t(p[1]) + l);
+            // add [y0, y1] by 1 in [x0, x1+1)
+            int64_t x0 = int64_t(p[0]) - l, y0 = int64_t(p[1]) - l, x1 = int64_t(p[0]) + l, y1 = int64_t(p[1]) + l;
+            intervals.emplace_back(x0    , +1, y0, y1);
+            intervals.emplace_back(x1 + 1, -1, y0, y1);
+            y_set.emplace(y0);
+            y_set.emplace(y1);
         }
         sort(begin(intervals), end(intervals));
         vector<int64_t> sorted_y(cbegin(y_set), cend(y_set));
