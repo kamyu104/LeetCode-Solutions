@@ -1,7 +1,6 @@
 # Time:  O(n)
 # Space: O(n)
 
-# manacher
 class Solution(object):
     def maxProduct(self, s):
         """
@@ -44,7 +43,8 @@ class Solution(object):
                 dp[r] = r-l+1
             for i in reversed(xrange(len(s)-1)):
                 dp[i] = max(dp[i], dp[i+1]-2)
-            return list(accumulate(dp[:-1], max))
+            dp.pop()
+            return list(accumulate(dp, max))
         
         l1, l2 = fin_max_len(s), fin_max_len(s[::-1])[::-1]
         return max(x*y for x, y in itertools.izip(l1, l2))
