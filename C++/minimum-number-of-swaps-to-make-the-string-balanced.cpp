@@ -6,8 +6,12 @@ public:
     int minSwaps(string s) {
         int result = 0, curr = 0;
         for (const auto& c : s) {
-            curr = (c == ']') ? curr + 1 : curr - 1;
-            result = max(result, curr);
+            if (c == ']') {
+               ++curr;
+                result = max(result, curr);
+            } else {
+                --curr;
+            }            
         }
         return (result + 1) / 2;
     }
