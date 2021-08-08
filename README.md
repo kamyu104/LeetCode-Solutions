@@ -514,6 +514,8 @@
 1933| [Check if String Is Decomposable Into Value-Equal Substrings](https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/) | [C++](./C++/check-if-string-is-decomposable-into-value-equal-substrings.cpp) [Python](./Python/check-if-string-is-decomposable-into-value-equal-substrings.py) | _O(n)_ | _O(1)_ |  Easy | 🔒 |
 1935| [Maximum Number of Words You Can Type](https://leetcode.com/problems/maximum-number-of-words-you-can-type/) | [C++](./C++/maximum-number-of-words-you-can-type.cpp) [Python](./Python/maximum-number-of-words-you-can-type.py) | _O(n)_ | _O(1)_ | Easy | |  |
 1957 | [Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string/) | [C++](./C++/delete-characters-to-make-fancy-string.cpp) [Python](./Python/delete-characters-to-make-fancy-string.py) | _O(n)_ | _O(1)_ | Easy || Inplace
+1961 | [Check If String Is a Prefix of Array](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/) | [C++](./C++/check-if-string-is-a-prefix-of-array.cpp) [Python](./Python/check-if-string-is-a-prefix-of-array.py) | _O(n)_ | _O(1)_ | Easy ||
+1963| [Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) | [C++](./C++/minimum-number-of-swaps-to-make-the-string-balanced.cpp) [Python](./Python/minimum-number-of-swaps-to-make-the-string-balanced.py) | _O(n)_ | _O(1)_ | Medium | variant of [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/) ||
 
 <br/>
 <div align="right">
@@ -664,6 +666,7 @@
 1675 | [Minimize Deviation in Array](https://leetcode.com/problems/minimize-deviation-in-array/) | [C++](./C++/minimize-deviation-in-array.cpp) [Python](./Python/minimize-deviation-in-array.py) | _O((n * log(max_num)) * logn)_ | _O(n)_ | Hard | | |
 1792 | [Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/) | [C++](./C++/maximum-average-pass-ratio.cpp) [Python](./Python/maximum-average-pass-ratio.py) | _O(n + mlogn)_ | _O(n)_ | Medium | | |
 1882 | [Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/) | [C++](./C++/process-tasks-using-servers.cpp) [Python](./Python/process-tasks-using-servers.py) | _O(n + mlogn)_ | _O(n)_ | Medium | | |
+1962 | [Remove Stones to Minimize the Total](https://leetcode.com/problems/remove-stones-to-minimize-the-total/) | [C++](./C++/remove-stones-to-minimize-the-total.cpp) [Python](./Python/remove-stones-to-minimize-the-total.py) | _O(klogn)_ | _O(1)_ | Medium | | |
 
 <br/>
 <div align="right">
@@ -1303,6 +1306,7 @@
 1898 | [Maximum Number of Removable Characters](https://leetcode.com/problems/maximum-number-of-removable-characters/) | [C++](./C++/maximum-number-of-removable-characters.cpp) [Python](./Python/maximum-number-of-removable-characters.py) | _O(rlogn)_ | _O(r)_ | Medium | |
 1901 | [Find a Peak Element II](https://leetcode.com/problems/find-a-peak-element-ii/) | [C++](./C++/find-a-peak-element-ii.cpp) [Python](./Python/find-a-peak-element-ii.py) | _O(min(n, m) * log(max(n, m)))_ | _O(1)_ | Medium | |
 1918 | [Kth Smallest Subarray Sum](https://leetcode.com/problems/kth-smallest-subarray-sum/) | [C++](./C++/kth-smallest-subarray-sum.cpp) [Python](./Python/kth-smallest-subarray-sum.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 |
+1964| [Find the Longest Valid Obstacle Course at Each Position](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/) | [C++](./C++/find-the-longest-valid-obstacle-course-at-each-position.cpp)  [Python](./Python/find-the-longest-valid-obstacle-course-at-each-position.py)  | _O(nlogn)_ | _O(n)_ | Hard         | variant of Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Binary Search, Segment Tree, DP|
 
 <br/>
 <div align="right">
@@ -2220,6 +2224,7 @@
 1939| [Users That Actively Request Confirmation Messages](https://leetcode.com/problems/users-that-actively-request-confirmation-messages/) | [MySQL](./MySQL/users-that-actively-request-confirmation-messages.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 1949| [Strong Friendship](https://leetcode.com/problems/strong-friendship/) | [MySQL](./MySQL/strong-friendship.sql) | _O(n^3)_ | _O(n^2)_       | Medium           |🔒||
 1951| [All the Pairs With the Maximum Number of Common Followers](https://leetcode.com/problems/all-the-pairs-with-the-maximum-number-of-common-followers/) | [MySQL](./MySQL/all-the-pairs-with-the-maximum-number-of-common-followers.sql) | _O(n^3)_ | _O(n^2)_       | Medium           |🔒||
+1965| [Employees With Missing Information](https://leetcode.com/problems/employees-with-missing-information/) | [MySQL](./MySQL/employees-with-missing-information.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
