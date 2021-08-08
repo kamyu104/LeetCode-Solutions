@@ -17,7 +17,7 @@ public:
     vector<int> gridIllumination(int N, vector<vector<int>>& lamps, vector<vector<int>>& queries) {
         static const vector<pair<int, int>> directions = 
             {{0, -1}, {0, 1}, {-1, 0}, {1, 0},
-             {-1, -1}, {1, -1}, {1, -1}, {1, 1}};
+             {-1, -1}, {1, -1}, {-1, 1}, {1, 1}};
 
         unordered_set<pair<int, int>, PairHash<int>> lookup;
         unordered_map<int, int> row;
