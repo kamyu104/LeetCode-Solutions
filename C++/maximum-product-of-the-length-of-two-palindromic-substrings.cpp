@@ -89,8 +89,8 @@ private:
         for (int i = size(intervals) - 2; i >= 0; --i) {
             dp[i] = max(dp[i], dp[i + 1] - 2);
         }
-        vector<int> result = {dp[0]};
-        for (int i = 1; i < size(dp) - 1; ++i) {
+        vector<int> result = {0};
+        for (int i = 0; i < size(dp); ++i) {
             result.emplace_back(max(result.back(), dp[i]));
         }
         return result;
