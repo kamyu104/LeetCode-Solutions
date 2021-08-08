@@ -22,14 +22,21 @@ class Solution(object):
                     C, R = i, i+P[i]
             return P
 
-        def accumulate(arr, fn):
-            curr = arr[0]
-            yield curr
-            for i in xrange(1, len(arr)):
-                curr = fn(curr, arr[i])
-                yield curr
+        import operator
+        def accumulate(iterable, func=operator.add, initial=None):
+            it = iter(iterable)
+            total = initial
+            if initial is None:
+                try:
+                    total = next(it)
+                except StopIteration:
+                    return
+            yield total
+            for element in it:
+                total = func(total, element)
+                yield total
 
-        def find_max_len(s):
+        def fin_max_len(s):
             P = manacher(s)
             intervals = [[(i-2)//2-P[i]//2, (i-2)//2+P[i]//2] for i in xrange(2,len(P)-2, 2)]
             dp = [0]*len(s)
@@ -39,5 +46,5 @@ class Solution(object):
                 dp[i] = max(dp[i], dp[i+1]-2)
             return list(accumulate(dp[:-1], max))
         
-        l1, l2 = find_max_len(s), find_max_len(s[::-1])[::-1]
+        l1, l2 = fin_max_len(s), fin_max_len(s[::-1])[::-1]
         return max(x*y for x, y in itertools.izip(l1, l2))
