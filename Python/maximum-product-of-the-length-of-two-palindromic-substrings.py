@@ -87,8 +87,7 @@ class Solution2(object):
                 dp[r] = r-l+1
             for i in reversed(xrange(len(s)-1)):
                 dp[i] = max(dp[i], dp[i+1]-2)
-            dp.pop()
-            return list(accumulate(dp, max))
+            return list(accumulate(dp, max, 0))
         
         l1, l2 = fin_max_len(s), fin_max_len(s[::-1])[::-1]
         return max(x*y for x, y in itertools.izip(l1, l2))
