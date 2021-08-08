@@ -9,6 +9,9 @@ class Solution(object):
         """
         result = curr = 0
         for c in s:
-            curr = curr+1 if c == ']' else curr-1
-            result = max(result, curr)
+            if c == ']':
+                curr += 1
+                result = max(result, curr)
+            else:
+                curr -= 1
         return (result+1)//2
