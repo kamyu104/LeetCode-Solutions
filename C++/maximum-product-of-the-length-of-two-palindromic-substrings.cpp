@@ -4,9 +4,9 @@
 class Solution {
 public:
     long long maxProduct(string s) {
-        const auto& l1 = find_len(s);
+        const auto& l1 = find_max_len(s);
         reverse(begin(s), end(s));
-        const auto& l2 = find_len(s);
+        const auto& l2 = find_max_len(s);
         int64_t result = 0;
         for (int i = 0; i < size(l1); ++i) {
             result = max(result, int64_t(l1[i]) * l2[size(l2) - 1 - i]);
@@ -15,7 +15,7 @@ public:
     }
 
 private:
-    vector<int> find_len(const string& s) {
+    vector<int> find_max_len(const string& s) {
         const auto& P = manacher(s);
         vector<pair<int, int>> intervals;
         for (int i = 2; i < size(P) - 2; i += 2) {
