@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1956%20%2F%201956-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1965%20%2F%201965-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -344,6 +344,7 @@
 1920 | [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/) | [C++](./C++/build-array-from-permutation.cpp) [Python](./Python/build-array-from-permutation.py) | _O(n)_ | _O(1)_ | Easy || Inplace
 1929 | [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | [C++](./C++/concatenation-of-array.cpp) [Python](./Python/concatenation-of-array.py) | _O(n)_ | _O(1)_ | Easy ||
 1940 | [Longest Common Subsequence Between Sorted Arrays](https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/) | [C++](./C++/longest-common-subsequence-between-sorted-arrays.cpp) [Python](./Python/longest-common-subsequence-between-sorted-arrays.py) | _O(m * n)_ | _O(l)_ | Medium | 🔒 |
+1958 | [Check if Move is Legal](https://leetcode.com/problems/check-if-move-is-legal/) | [C++](./C++/check-if-move-is-legal.cpp) [Python](./Python/check-if-move-is-legal.py) | _O(1)_ | _O(1)_ | Medium | |
 
 <br/>
 <div align="right">
@@ -512,6 +513,7 @@
 1910| [Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/) | [C++](./C++/remove-all-occurrences-of-a-substring.cpp) [Python](./Python/remove-all-occurrences-of-a-substring.py) | _O(n + m)_ | _O(n + m)_ | Medium | | `KMP Algorithm` |
 1933| [Check if String Is Decomposable Into Value-Equal Substrings](https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/) | [C++](./C++/check-if-string-is-decomposable-into-value-equal-substrings.cpp) [Python](./Python/check-if-string-is-decomposable-into-value-equal-substrings.py) | _O(n)_ | _O(1)_ |  Easy | 🔒 |
 1935| [Maximum Number of Words You Can Type](https://leetcode.com/problems/maximum-number-of-words-you-can-type/) | [C++](./C++/maximum-number-of-words-you-can-type.cpp) [Python](./Python/maximum-number-of-words-you-can-type.py) | _O(n)_ | _O(1)_ | Easy | |  |
+1957 | [Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string/) | [C++](./C++/delete-characters-to-make-fancy-string.cpp) [Python](./Python/delete-characters-to-make-fancy-string.py) | _O(n)_ | _O(1)_ | Easy || Inplace
 
 <br/>
 <div align="right">
@@ -1744,6 +1746,8 @@
 1931| [Painting a Grid With Three Different Colors](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/)|[C++](./C++/painting-a-grid-with-three-different-colors.cpp) [Python](./Python/painting-a-grid-with-three-different-colors.py)| _O(2^(3 * m) * logn)_     | _O(2^(2 * m))_         | Hard         | variant of [Number of Ways to Paint N × 3 Grid](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/) | DP, Backtracking, Matrix Exponentiation, State Compression |
 1937| [Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/)|[C++](./C++/maximum-number-of-points-with-cost.cpp) [Python](./Python/maximum-number-of-points-with-cost.py)| _O(m * n)_     | _O(n)_         | Medium         | | Prefix Sum |
 1955| [Count Number of Special Subsequences](https://leetcode.com/problems/count-number-of-special-subsequences/)|[C++](./C++/count-number-of-special-subsequences.cpp) [Python](./Python/count-number-of-special-subsequences.py)| _O(n)_     | _O(1)_         | Hard         | | |
+1959| [Minimum Total Space Wasted With K Resizing Operations](https://leetcode.com/problems/minimum-total-space-wasted-with-k-resizing-operations/)|[C++](./C++/minimum-total-space-wasted-with-k-resizing-operations.cpp) [Python](./Python/minimum-total-space-wasted-with-k-resizing-operations.py)| _O(n)_     | _O(1)_         | Medium         | | |
+1960| [Maximum Product of the Length of Two Palindromic Substrings](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings/)|[C++](./C++/maximum-product-of-the-length-of-two-palindromic-substrings.cpp) [Python](./Python/maximum-product-of-the-length-of-two-palindromic-substrings.py)| _O(n)_     | _O(n)_         | Hard         | | `Manacher's Algorithm`, DP |
 
 <br/>
 <div align="right">
