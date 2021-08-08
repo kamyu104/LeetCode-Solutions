@@ -8,7 +8,7 @@ public:
              [](const string& a, const string& b) { return a.length() > b.length(); });
         for (int i = 0; i < strs.size(); ++i) {
             bool all_of = true;
-            for (int j = 0; strs[j].length() >= strs[i].length() && j < strs.size(); ++j) {
+            for (int j = 0; j < strs.size() && strs[j].length() >= strs[i].length(); ++j) {
                 if (i != j && isSubsequence(strs[i], strs[j])) {
                     all_of = false;
                     break;
