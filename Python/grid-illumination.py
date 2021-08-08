@@ -13,7 +13,7 @@ class Solution(object):
         :rtype: List[int]
         """
         directions = [(0, -1), (0, 1), (-1, 0), (1, 0),
-                      (-1, -1), (1, -1), (1, -1), (1, 1)]
+                      (-1, -1), (1, -1), (-1, 1), (1, 1)]
 
         lookup = set()
         row = collections.defaultdict(int)
