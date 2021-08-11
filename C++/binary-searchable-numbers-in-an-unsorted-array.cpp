@@ -9,21 +9,16 @@ public:
             right[i - 1] = min(right[i], nums[i - 1]);
         }
         unordered_set<int> result;
-        
         int left = numeric_limits<int>::min();
         for (int i = 0; i < size(nums); ++i) {
             if (left <= nums[i] && nums[i] <= right[i + 1]) {
                 result.emplace(nums[i]);
             }
             left = max(left, nums[i]);
-            
         }
-        int cnt = 0;
-        for (const auto& x : nums) {
-            if (result.count(x)) {
-                ++cnt;
-            }
-        }
-        return cnt;
+        return count_if(cbegin(nums), cend(nums),
+                        [&result](const auto& x) {
+                            return result.count(x);
+                        });
     }
 };
