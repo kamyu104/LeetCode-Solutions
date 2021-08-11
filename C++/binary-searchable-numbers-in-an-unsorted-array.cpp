@@ -16,6 +16,6 @@ public:
             }
             left = max(left, nums[i]);
         }
-        return size(nums);
+        return size(result);
     }
 };
