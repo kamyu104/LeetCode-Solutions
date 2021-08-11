@@ -18,5 +18,4 @@ class Solution(object):
             if left <= nums[i] <= right[i+1]:
                 result.add(nums[i])
             left = max(left, nums[i])
-        cnts = collections.Counter(nums)
-        return len(result) if count_distinct else sum(cnts[x] for x in result)
+        return len(result) if count_distinct else sum(int(x in result) for x in nums)
