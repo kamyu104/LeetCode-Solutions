@@ -16,9 +16,6 @@ public:
             }
             left = max(left, nums[i]);
         }
-        return count_if(cbegin(nums), cend(nums),
-                        [&result](const auto& x) {
-                            return result.count(x);
-                        });
+        return size(nums);
     }
 };
