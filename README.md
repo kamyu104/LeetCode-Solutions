@@ -345,7 +345,7 @@
 1929 | [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | [C++](./C++/concatenation-of-array.cpp) [Python](./Python/concatenation-of-array.py) | _O(n)_ | _O(1)_ | Easy ||
 1940 | [Longest Common Subsequence Between Sorted Arrays](https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/) | [C++](./C++/longest-common-subsequence-between-sorted-arrays.cpp) [Python](./Python/longest-common-subsequence-between-sorted-arrays.py) | _O(m * n)_ | _O(l)_ | Medium | 🔒 |
 1958 | [Check if Move is Legal](https://leetcode.com/problems/check-if-move-is-legal/) | [C++](./C++/check-if-move-is-legal.cpp) [Python](./Python/check-if-move-is-legal.py) | _O(1)_ | _O(1)_ | Medium | |
-1966 | [Binary Searchable Numbers in an Unsorted Array](https://leetcode.com/problems/binary-searchable-numbers-in-an-unsorted-array/) | [C++](./C++/binary-searchable-numbers-in-an-unsorted-array.cpp) [Python](./Python/binary-searchable-numbers-in-an-unsorted-array.py) | _O(n)_ | _O(n)_ | Medium |🔒||
+1966 | [Binary Searchable Numbers in an Unsorted Array](https://leetcode.com/problems/binary-searchable-numbers-in-an-unsorted-array/) | [C++](./C++/binary-searchable-numbers-in-an-unsorted-array.cpp) [Python](./Python/binary-searchable-numbers-in-an-unsorted-array.py) | _O(n)_ | _O(n)_ | Medium |🔒| Prefix Sum |
 
 <br/>
 <div align="right">
