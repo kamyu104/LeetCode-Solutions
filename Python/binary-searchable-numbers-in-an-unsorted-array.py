@@ -16,4 +16,4 @@ class Solution(object):
             if left <= nums[i] <= right[i+1]:
                 result.add(nums[i])
             left = max(left, nums[i])
-        return sum(int(x in result) for x in nums)
+        return len(result)
