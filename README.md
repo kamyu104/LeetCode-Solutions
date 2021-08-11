@@ -331,7 +331,7 @@
 1755 | [Closest Subsequence Sum](https://leetcode.com/problems/closest-subsequence-sum/) | [C++](./C++/closest-subsequence-sum.cpp) [Python](./Python/closest-subsequence-sum.py) | _O(n * 2^(n/2))_ | _O(2^(n/2))_ | Hard || Meet in the Middle
 1773 | [Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/) | [C++](./C++/count-items-matching-a-rule.cpp) [Python](./Python/count-items-matching-a-rule.py) | _O(n)_ | _O(1)_ | Easy ||
 1779 | [Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/) | [C++](./C++/find-nearest-point-that-has-the-same-x-or-y-coordinate.cpp) [Python](./Python/find-nearest-point-that-has-the-same-x-or-y-coordinate.py) | _O(n)_ | _O(1)_ | Easy ||
-1826 | [Faulty Sensor](https://leetcode.com/problems/faulty-sensor/) | [C++](./C++/faulty-sensor.cpp) [Python](./Python/faulty-sensor.py) | _O(n)_ | _O(1)_ | Easy ||🔒|
+1826 | [Faulty Sensor](https://leetcode.com/problems/faulty-sensor/) | [C++](./C++/faulty-sensor.cpp) [Python](./Python/faulty-sensor.py) | _O(n)_ | _O(1)_ | Easy |🔒||
 1848 | [Minimum Distance to the Target Element](https://leetcode.com/problems/minimum-distance-to-the-target-element/) | [C++](./C++/minimum-distance-to-the-target-element.cpp) [Python](./Python/minimum-distance-to-the-target-element.py) | _O(n)_ | _O(1)_ | Easy ||
 1861 | [Rotating the Box](https://leetcode.com/problems/rotating-the-box/) | [C++](./C++/rotating-the-box.cpp) [Python](./Python/rotating-the-box.py) | _O(m * n)_ | _O(1)_ | Medium ||
 1869 | [Longer Contiguous Segments of Ones than Zeros](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/) | [C++](./C++/longer-contiguous-segments-of-ones-than-zeros.cpp) [Python](./Python/longer-contiguous-segments-of-ones-than-zeros.py) | _O(n)_ | _O(1)_ | Easy ||
@@ -345,7 +345,7 @@
 1929 | [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | [C++](./C++/concatenation-of-array.cpp) [Python](./Python/concatenation-of-array.py) | _O(n)_ | _O(1)_ | Easy ||
 1940 | [Longest Common Subsequence Between Sorted Arrays](https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/) | [C++](./C++/longest-common-subsequence-between-sorted-arrays.cpp) [Python](./Python/longest-common-subsequence-between-sorted-arrays.py) | _O(m * n)_ | _O(l)_ | Medium | 🔒 |
 1958 | [Check if Move is Legal](https://leetcode.com/problems/check-if-move-is-legal/) | [C++](./C++/check-if-move-is-legal.cpp) [Python](./Python/check-if-move-is-legal.py) | _O(1)_ | _O(1)_ | Medium | |
-1966 | [Binary Searchable Numbers in an Unsorted Array](https://leetcode.com/problems/binary-searchable-numbers-in-an-unsorted-array/) | [C++](./C++/binary-searchable-numbers-in-an-unsorted-array.cpp) [Python](./Python/binary-searchable-numbers-in-an-unsorted-array.py) | _O(n)_ | _O(n)_ | Medium ||🔒|
+1966 | [Binary Searchable Numbers in an Unsorted Array](https://leetcode.com/problems/binary-searchable-numbers-in-an-unsorted-array/) | [C++](./C++/binary-searchable-numbers-in-an-unsorted-array.cpp) [Python](./Python/binary-searchable-numbers-in-an-unsorted-array.py) | _O(n)_ | _O(n)_ | Medium |🔒||
 
 <br/>
 <div align="right">
