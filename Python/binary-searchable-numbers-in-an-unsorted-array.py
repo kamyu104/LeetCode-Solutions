@@ -1,7 +1,5 @@
 # Time:  O(n)
 # Space: O(n)
-import collections
-
 
 class Solution(object):
     def binarySearchableNumbers(self, nums):
