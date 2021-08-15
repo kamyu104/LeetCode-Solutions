@@ -11,7 +11,6 @@ public:
         vector<vector<bool>> lookup(row, vector<bool>(col));
         for (int i = size(cells) - 1; i >= 0; --i) {
             const int r = cells[i][0] - 1, c = cells[i][1] - 1;
-            lookup[r][c] = true;
             for (const auto& [dr, dc] : directions) {
                 const int nr = r + dr, nc = c + dc;
                 if (!(0 <= nr && nr < row && 0 <= nc && nc < col && lookup[nr][nc])) {
@@ -28,6 +27,7 @@ public:
             if (uf.find_set(start) == uf.find_set(end)) {
                 return i;
             }
+            lookup[r][c] = true;
         }
         return -1;
     }
