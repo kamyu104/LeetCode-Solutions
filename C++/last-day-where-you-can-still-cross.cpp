@@ -8,7 +8,7 @@ public:
 
         const int start = row * col, end = row * col + 1;
         UnionFind uf(row * col + 2);
-        vector<vector<int>> lookup(row, vector<int>(col));
+        vector<vector<bool>> lookup(row, vector<bool>(col));
         for (int i = size(cells) - 1; i >= 0; --i) {
             const int r = cells[i][0] - 1, c = cells[i][1] - 1;
             lookup[r][c] = true;
