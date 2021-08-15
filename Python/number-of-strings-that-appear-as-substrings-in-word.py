@@ -15,7 +15,6 @@ class AhoNode(object):
 
 
 class AhoTrie(object):
-
     def step(self, letter):
         while self.__node and letter not in self.__node.children:
             self.__node = self.__node.suffix
