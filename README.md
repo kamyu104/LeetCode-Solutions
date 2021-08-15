@@ -518,7 +518,7 @@
 1957 | [Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string/) | [C++](./C++/delete-characters-to-make-fancy-string.cpp) [Python](./Python/delete-characters-to-make-fancy-string.py) | _O(n)_ | _O(1)_ | Easy || Inplace
 1961 | [Check If String Is a Prefix of Array](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/) | [C++](./C++/check-if-string-is-a-prefix-of-array.cpp) [Python](./Python/check-if-string-is-a-prefix-of-array.py) | _O(n)_ | _O(1)_ | Easy ||
 1963| [Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) | [C++](./C++/minimum-number-of-swaps-to-make-the-string-balanced.cpp) [Python](./Python/minimum-number-of-swaps-to-make-the-string-balanced.py) | _O(n)_ | _O(1)_ | Medium | variant of [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/) ||
-1968 |[Array With Elements Not Equal to Average of Neighbors](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)| [C++](./C++/number-of-strings-that-appear-as-substrings-in-word.cpp) [Python](./Python/number-of-strings-that-appear-as-substrings-in-word.py) | _O(n * l + m)_ | _O(t)_ | Easy || `KMP Algorithm`, `Aho-Corasick Automata`, Trie |
+1967 |[Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)| [C++](./C++/number-of-strings-that-appear-as-substrings-in-word.cpp) [Python](./Python/number-of-strings-that-appear-as-substrings-in-word.py) | _O(n * l + m)_ | _O(t)_ | Easy || `KMP Algorithm`, `Aho-Corasick Automata`, Trie |
 
 <br/>
 <div align="right">
