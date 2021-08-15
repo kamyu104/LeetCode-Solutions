@@ -27,7 +27,7 @@ class AhoTrie(object):
         self.__node = self.__create_ac_suffix_and_output_links(self.__root)
         self.__lookup = set()  # modified
     
-    def __create_ac_trie(self, patterns):  # Time: O(n), Space: O(t)
+    def __create_ac_trie(self, patterns):  # Time: O(n * l), Space: O(t)
         root = AhoNode()
         for i, pattern in enumerate(patterns):
             node = root
@@ -36,7 +36,7 @@ class AhoTrie(object):
             node.indices.append(i)
         return root
 
-    def __create_ac_suffix_and_output_links(self, root):  # Time: O(n), Space: O(t)
+    def __create_ac_suffix_and_output_links(self, root):  # Time: O(n * l), Space: O(t)
         queue = collections.deque()
         for node in root.children.itervalues():
             queue.append(node)
