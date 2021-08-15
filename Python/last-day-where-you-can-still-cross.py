@@ -47,7 +47,6 @@ class Solution(object):
         for i in reversed(xrange(len(cells))):
             r, c = cells[i]
             r, c = r-1, c-1
-            lookup[r][c] = True
             for dr, dc in directions:
                 nr, nc = r+dr, c+dc
                 if not (0 <= nr < row and 0 <= nc < col and lookup[nr][nc]):
@@ -59,4 +58,5 @@ class Solution(object):
                 uf.union_set(end, index(col, r, c))
             if uf.find_set(start) == uf.find_set(end):
                 return i
+            lookup[r][c] = True
         return -1
