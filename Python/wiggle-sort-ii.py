@@ -11,38 +11,44 @@ class Solution(object):
         med = (len(nums) - 1) / 2
         nums[::2], nums[1::2] = nums[med::-1], nums[:med:-1]
 
+
 # Time:  O(n) ~ O(n^2)
 # Space: O(1)
-# Tri Partition (aka Dutch National Flag Problem) with virtual index solution. (TLE)
+# Tri Partition (aka Dutch National Flag Problem) with virtual index solution.
 from random import randint
+
+
 class Solution2(object):
     def wiggleSort(self, nums):
         """
         :type nums: List[int]
-        :rtype: void Do not return anything, modify nums in-place instead.
+        :rtype: None Do not return anything, modify nums in-place instead.
         """
-        def findKthLargest(nums, k):
-            left, right = 0, len(nums) - 1
+        def nth_element(nums, n, compare=lambda a, b: a < b):
+            def tri_partition(nums, left, right, target, compare):
+                mid = left
+                while mid <= right:
+                    if nums[mid] == target:
+                        mid += 1
+                    elif compare(nums[mid], target):
+                        nums[left], nums[mid] = nums[mid], nums[left]
+                        left += 1
+                        mid += 1
+                    else:
+                        nums[mid], nums[right] = nums[right], nums[mid]
+                        right -= 1
+                return left, right
+
+            left, right = 0, len(nums)-1
             while left <= right:
                 pivot_idx = randint(left, right)
-                new_pivot_idx = partitionAroundPivot(left, right, pivot_idx, nums)
-                if new_pivot_idx == k - 1:
-                    return nums[new_pivot_idx]
-                elif new_pivot_idx > k - 1:
-                    right = new_pivot_idx - 1
-                else:  # new_pivot_idx < k - 1.
-                    left = new_pivot_idx + 1
-
-        def partitionAroundPivot(left, right, pivot_idx, nums):
-            pivot_value = nums[pivot_idx]
-            new_pivot_idx = left
-            nums[pivot_idx], nums[right] = nums[right], nums[pivot_idx]
-            for i in xrange(left, right):
-                if nums[i] > pivot_value:
-                    nums[i], nums[new_pivot_idx] = nums[new_pivot_idx], nums[i]
-                    new_pivot_idx += 1
-            nums[right], nums[new_pivot_idx] = nums[new_pivot_idx], nums[right]
-            return new_pivot_idx
+                pivot_left, pivot_right = tri_partition(nums, left, right, nums[pivot_idx], compare)
+                if pivot_left <= n <= pivot_right:
+                    return
+                elif pivot_left > n:
+                    right = pivot_left-1
+                else:  # pivot_right < n.
+                    left = pivot_right+1
 
         def reversedTriPartitionWithVI(nums, val):
             def idx(i, N):
@@ -61,7 +67,6 @@ class Solution2(object):
                 else:
                     j += 1
 
-        mid = (len(nums) - 1) / 2
-        findKthLargest(nums, mid + 1)
+        mid = (len(nums)-1)//2
+        nth_element(nums, mid)
         reversedTriPartitionWithVI(nums, nums[mid])
-
