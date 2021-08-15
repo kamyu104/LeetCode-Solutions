@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1966%20%2F%201966-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1970%20%2F%201970-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -346,6 +346,7 @@
 1940 | [Longest Common Subsequence Between Sorted Arrays](https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/) | [C++](./C++/longest-common-subsequence-between-sorted-arrays.cpp) [Python](./Python/longest-common-subsequence-between-sorted-arrays.py) | _O(m * n)_ | _O(l)_ | Medium | 🔒 |
 1958 | [Check if Move is Legal](https://leetcode.com/problems/check-if-move-is-legal/) | [C++](./C++/check-if-move-is-legal.cpp) [Python](./Python/check-if-move-is-legal.py) | _O(1)_ | _O(1)_ | Medium | |
 1966 | [Binary Searchable Numbers in an Unsorted Array](https://leetcode.com/problems/binary-searchable-numbers-in-an-unsorted-array/) | [C++](./C++/binary-searchable-numbers-in-an-unsorted-array.cpp) [Python](./Python/binary-searchable-numbers-in-an-unsorted-array.py) | _O(n)_ | _O(n)_ | Medium |🔒| Prefix Sum |
+1970 | [Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/) | [C++](./C++/last-day-where-you-can-still-cross.cpp) [Python](./Python/last-day-where-you-can-still-cross.py) | _O(m * n)_ | _O(m * n)_ | Hard | variant of [Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit/) | Union Find
 
 <br/>
 <div align="right">
@@ -517,6 +518,7 @@
 1957 | [Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string/) | [C++](./C++/delete-characters-to-make-fancy-string.cpp) [Python](./Python/delete-characters-to-make-fancy-string.py) | _O(n)_ | _O(1)_ | Easy || Inplace
 1961 | [Check If String Is a Prefix of Array](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/) | [C++](./C++/check-if-string-is-a-prefix-of-array.cpp) [Python](./Python/check-if-string-is-a-prefix-of-array.py) | _O(n)_ | _O(1)_ | Easy ||
 1963| [Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) | [C++](./C++/minimum-number-of-swaps-to-make-the-string-balanced.cpp) [Python](./Python/minimum-number-of-swaps-to-make-the-string-balanced.py) | _O(n)_ | _O(1)_ | Medium | variant of [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/) ||
+1968 |[Array With Elements Not Equal to Average of Neighbors](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)| [C++](./C++/number-of-strings-that-appear-as-substrings-in-word.cpp) [Python](./Python/number-of-strings-that-appear-as-substrings-in-word.py) | _O(n * l + m)_ | _O(t)_ | Easy || `KMP Algorithm`, `Aho-Corasick Automata`, Trie |
 
 <br/>
 <div align="right">
@@ -1047,6 +1049,7 @@
 1945| [Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/) | [C++](./C++/sum-of-digits-of-string-after-convert.cpp) [Python](./Python/sum-of-digits-of-string-after-convert.py) | _O(n)_ | _O(1)_ |  Easy |  | |
 1952| [Three Divisors](https://leetcode.com/problems/three-divisors/) | [C++](./C++/three-divisors.cpp) [Python](./Python/three-divisors.py) | _O(sqrt(n))_ | _O(1)_ |  Easy |  | |
 1954| [Minimum Garden Perimeter to Collect Enough Apples](https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples/) | [C++](./C++/minimum-garden-perimeter-to-collect-enough-apples.cpp) [Python](./Python/minimum-garden-perimeter-to-collect-enough-apples.py) | _O(1)_ | _O(1)_ |  Medium |  | Binary Search, `Cardano's Formula` |
+1969| [Minimum Non-Zero Product of the Array Elements](https://leetcode.com/problems/minimum-non-zero-product-of-the-array-elements/) | [C++](./C++/minimum-non-zero-product-of-the-array-elements.cpp) [Python](./Python/minimum-non-zero-product-of-the-array-elements.py) | _O(min(p, logM))_ | _O(1)_ |  Medium |  | |
 
 <br/>
 <div align="right">
@@ -1111,7 +1114,7 @@
 1859 | [Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/) | [C++](./C++/sorting-the-sentence.cpp) [Python](./Python/sorting-the-sentence.py) | _O(n)_ | _O(n)_ | Easy | | Sort, String
 1942| [The Number of the Smallest Unoccupied Chair](https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/) | [C++](./C++/the-number-of-the-smallest-unoccupied-chair.cpp) [Python](./Python/the-number-of-the-smallest-unoccupied-chair.py) | _O(nlogn)_   | _O(n)_        | Medium         || Line Sweep, Heap
 1943| [Describe the Painting](https://leetcode.com/problems/describe-the-painting/) | [C++](./C++/describe-the-painting.cpp) [Python](./Python/describe-the-painting.py) | _O(nlogn)_   | _O(n)_        | Medium         || Line Sweep
-
+1968| [Array With Elements Not Equal to Average of Neighbors](https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/) | [C++](./C++/array-with-elements-not-equal-to-average-of-neighbors.cpp) [Python](./Python/array-with-elements-not-equal-to-average-of-neighbors.py) | _O(n)_  on average | _O(1)_        | Medium         | variant of [Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/) | Tri Partition |
 
 <br/>
 <div align="right">
