@@ -68,6 +68,7 @@ class AhoTrie(object):
                 output = output.output
         return result
 
+
 # ac automata solution
 class Solution(object):
     def numOfStrings(self, patterns, word):
