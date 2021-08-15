@@ -54,12 +54,12 @@ private:
 
     uint32_t powmod(uint32_t a, uint32_t b, uint32_t mod) {
         a %= mod;
-        uint64_t result = 1;
+        uint32_t result = 1;
         while (b) {
             if (b & 1) {
-                result = result * a % mod;
+                result = mulmod(result, a, mod);
             }
-            a = uint64_t(a) * a % mod;
+            a = mulmod(a, a, mod);
             b >>= 1;
         }
         return result;
