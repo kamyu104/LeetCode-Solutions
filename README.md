@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1970%20%2F%201970-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1971%20%2F%201971-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1957,6 +1957,7 @@
 1820 | [Maximum Number of Accepted Invitations](https://leetcode.com/problems/maximum-number-of-accepted-invitations/) | [C++](./C++/maximum-number-of-accepted-invitations.cpp) [Python](./Python/maximum-number-of-accepted-invitations.py) | _O(m * n * sqrt(m + n))_ | _O(m + n)_ | Medium | 🔒 | `Hopcroft-Karp Bipartite Matching`, `Hungarian Bipartite Matching` |
 1879 | [Minimum XOR Sum of Two Arrays](https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/) | [C++](./C++/minimum-xor-sum-of-two-arrays.cpp) [Python](./Python/minimum-xor-sum-of-two-arrays.py) | _O(n^3)_ | _O(n^2)_ | Hard | | DP, `Hungarian Weighted Bipartite Matching` |
 1947 | [Maximum Compatibility Score Sum](https://leetcode.com/problems/maximum-compatibility-score-sum/) | [C++](./C++/maximum-compatibility-score-sum.cpp) [Python](./Python/maximum-compatibility-score-sum.py) | _O(m^2 * (n + m))_ | _O(m^2)_ | Medium | variant of [Minimum XOR Sum of Two Arrays](https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/) | DP, `Hungarian Weighted Bipartite Matching` |
+1971 | [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/)  | [C++](./C++/find-if-path-exists-in-graph.cpp) [Python](./Python/find-if-path-exists-in-graph.py) | _O(\|V\| + \|E\|)_| _O(\|V\| + \|E\|)_| Easy           || BFS, Bi-BFS| 
 
 <br/>
 <div align="right">
