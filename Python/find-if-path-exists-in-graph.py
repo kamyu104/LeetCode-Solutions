@@ -15,7 +15,7 @@ class Solution(object):
         :rtype: bool
         """
         def bi_bfs(adj, start, target):
-            left, right = set([start]), set([target])
+            left, right = {start}, {target}
             lookup = set()
             steps = 0
             while left:
