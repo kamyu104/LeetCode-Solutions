@@ -41,7 +41,7 @@ class Solution(object):
                 master.move(rollback[d])
                         
         def bi_bfs(adj, start, target):
-            left, right = set([start]), set([target])
+            left, right = {start}, {target}
             lookup = set()
             steps = 0
             while left:
