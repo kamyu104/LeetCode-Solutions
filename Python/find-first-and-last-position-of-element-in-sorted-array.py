@@ -16,7 +16,7 @@ class Solution(object):
         right = self.binarySearch(len(nums), lambda i: nums[i] > target)
         return [left, right - 1]
 
-    def binarySearch(self, n, check):
+    def binarySearch(self, n, check):  # usually use
         left, right = 0, n-1
         while left <= right:
             mid = left + (right-left)//2
@@ -26,7 +26,7 @@ class Solution(object):
                 left = mid+1
         return left
 
-    def binarySearch2(self, n, check):
+    def binarySearch2(self, n, check):  # frequently use
         left, right = 0, n
         while left < right:
             mid = left + (right-left)//2
@@ -36,7 +36,7 @@ class Solution(object):
                 left = mid+1
         return left
 
-    def binarySearch3(self, n, check):
+    def binarySearch3(self, n, check):  # never use
         left, right = -1, n-1
         while left < right:
             mid = right - (right-left)//2
@@ -46,7 +46,7 @@ class Solution(object):
                 left = mid
         return left+1
 
-    def binarySearch4(self, n, check):
+    def binarySearch4(self, n, check):  # sometimes use
         left, right = -1, n
         while right-left >= 2:
             mid = left + (right-left)//2
