@@ -118,7 +118,7 @@ private:
                 left = mid;
             }
         }
-        return left >= 0 && nums[left] >= target ? left : right;
+        return right;
     }
 
     int upper_bound(const vector<int> &nums, int target) {
@@ -132,6 +132,6 @@ private:
                 left = mid;
             }
         }
-        return left >= 0 && nums[left] > target ? left : right;
+        return right;
     }
 };
