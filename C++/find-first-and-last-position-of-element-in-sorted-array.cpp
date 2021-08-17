@@ -27,12 +27,12 @@ public:
 
 private:
     int lower_bound(const vector<int> &nums, int target) {
-        int left = 0, right = size(nums);
+        int left = 0, right = size(nums) - 1;
         // Find min left s.t. A[left] >= target.
-        while (left < right) {
+        while (left <= right) {
             const auto mid = left + (right - left) / 2;
             if (nums[mid] >= target) {
-                right = mid;
+                right = mid - 1;
             } else {
                 left = mid + 1;
             }
@@ -41,12 +41,11 @@ private:
     }
 
     int upper_bound(const vector<int> &nums, int target) {
-        int left = 0, right = size(nums);
-        // Find min left s.t. A[left] > target.
-        while (left < right) {
+        int left = 0, right = size(nums) - 1;
+        while (left <= right) {
             const auto mid = left + (right - left) / 2;
             if (nums[mid] > target) {
-                right = mid;
+                right = mid - 1;
             } else {
                 left = mid + 1;
             }
@@ -68,12 +67,12 @@ public:
 
 private:
     int lower_bound(const vector<int> &nums, int target) {
-        int left = 0, right = size(nums) - 1;
+        int left = 0, right = size(nums);
         // Find min left s.t. A[left] >= target.
-        while (left <= right) {
+        while (left < right) {
             const auto mid = left + (right - left) / 2;
             if (nums[mid] >= target) {
-                right = mid - 1;
+                right = mid;
             } else {
                 left = mid + 1;
             }
@@ -82,11 +81,12 @@ private:
     }
 
     int upper_bound(const vector<int> &nums, int target) {
-        int left = 0, right = size(nums) - 1;
-        while (left <= right) {
+        int left = 0, right = size(nums);
+        // Find min left s.t. A[left] > target.
+        while (left < right) {
             const auto mid = left + (right - left) / 2;
             if (nums[mid] > target) {
-                right = mid - 1;
+                right = mid;
             } else {
                 left = mid + 1;
             }
