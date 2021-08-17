@@ -54,4 +54,4 @@ class Solution(object):
                 right = mid
             else:
                 left = mid
-        return right  # left+1
+        return right  # right = left+1
