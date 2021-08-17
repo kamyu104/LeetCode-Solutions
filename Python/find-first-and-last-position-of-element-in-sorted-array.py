@@ -17,16 +17,6 @@ class Solution(object):
         return [left, right - 1]
 
     def binarySearch(self, n, check):
-        left, right = 0, n
-        while left < right:
-            mid = left + (right-left)//2
-            if check(mid):
-                right = mid
-            else:
-                left = mid+1
-        return left
-
-    def binarySearch2(self, n, check):
         left, right = 0, n-1
         while left <= right:
             mid = left + (right-left)//2
@@ -36,9 +26,19 @@ class Solution(object):
                 left = mid+1
         return left
 
+    def binarySearch2(self, n, check):
+        left, right = 0, n
+        while left < right:
+            mid = left + (right-left)//2
+            if check(mid):
+                right = mid
+            else:
+                left = mid+1
+        return left
+
     def binarySearch3(self, n, check):
         left, right = -1, n
-        while right - left >= 2:
+        while right-left >= 2:
             mid = left + (right-left)//2
             if check(mid):
                 right = mid
