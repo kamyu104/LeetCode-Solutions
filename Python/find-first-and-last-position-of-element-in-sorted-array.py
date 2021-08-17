@@ -37,7 +37,7 @@ class Solution(object):
         return left
 
     def binarySearch3(self, n, check):  # never use
-        left, right = -1, n-1  # search in (0, n-1]
+        left, right = -1, n-1  # search in (-1, n-1]
         while left < right:
             mid = right - (right-left)//2
             if check(mid):
