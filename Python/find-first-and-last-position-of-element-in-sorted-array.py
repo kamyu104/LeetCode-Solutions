@@ -38,12 +38,10 @@ class Solution(object):
 
     def binarySearch3(self, compare, nums, target):
         left, right = -1, len(nums)
-        while left + 1 < right:
+        while right - left >= 2:
             mid = left + (right - left) / 2
             if compare(nums[mid], target):
                 right = mid
             else:
                 left = mid
-        return left if left != -1 and compare(nums[left], target) else right
-
-
+        return right
