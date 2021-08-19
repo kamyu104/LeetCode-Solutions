@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1971%20%2F%201971-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1973%20%2F%201973-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1484,6 +1484,7 @@
 1740 | [Find Distance in a Binary Tree](https://leetcode.com/problems/find-distance-in-a-binary-tree/) | [C++](./C++/find-distance-in-a-binary-tree.cpp) [Python](./Python/find-distance-in-a-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | variant of [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/), 🔒 | |
 1766 | [Tree of Coprimes](https://leetcode.com/problems/tree-of-coprimes/) | [C++](./C++/tree-of-coprimes.cpp) [Python](./Python/tree-of-coprimes.py) | _O(n)_ | _O(n)_ | Hard | | |
 1905 | [Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) | [C++](./C++/count-sub-islands.cpp) [Python](./Python/count-sub-islands.py) | _O(m * n)_ | _O(1)_ | Medium | | Flood Fill |
+1973 | [Count Nodes Equal to Sum of Descendants](https://leetcode.com/problems/count-nodes-equal-to-sum-of-descendants/) | [C++](./C++/count-nodes-equal-to-sum-of-descendants.cpp) [Python](./Python/count-nodes-equal-to-sum-of-descendants.py) | _O(n)_ | _O(h)_ | Medium | 🔒 | |
 
 <br/>
 <div align="right">
@@ -2230,6 +2231,7 @@
 1949| [Strong Friendship](https://leetcode.com/problems/strong-friendship/) | [MySQL](./MySQL/strong-friendship.sql) | _O(n^3)_ | _O(n^2)_       | Medium           |🔒||
 1951| [All the Pairs With the Maximum Number of Common Followers](https://leetcode.com/problems/all-the-pairs-with-the-maximum-number-of-common-followers/) | [MySQL](./MySQL/all-the-pairs-with-the-maximum-number-of-common-followers.sql) | _O(n^3)_ | _O(n^2)_       | Medium           |🔒||
 1965| [Employees With Missing Information](https://leetcode.com/problems/employees-with-missing-information/) | [MySQL](./MySQL/employees-with-missing-information.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+1972| [First and Last Call On the Same Day](https://leetcode.com/problems/first-and-last-call-on-the-same-day/) | [MySQL](./MySQL/first-and-last-call-on-the-same-day.sql) | _O(n)_ | _O(n)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
