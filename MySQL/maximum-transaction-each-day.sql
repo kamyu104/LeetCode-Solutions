@@ -3,7 +3,7 @@
 
 SELECT transaction_id
 FROM (SELECT transaction_id, 
-             DENSE_RANK() OVER(PARTITION BY DATE(day) ORDER BY amount DESC) AS ranks
+             RANK() OVER(PARTITION BY DATE(day) ORDER BY amount DESC) AS ranks
       FROM Transactions) tmp
 WHERE ranks = 1
 ORDER BY transaction_id;
