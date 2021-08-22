@@ -27,7 +27,7 @@ class Solution(object):
 # Time:  O(eloge) = O(n^2 * logn)
 # Space: O(e) = O(n^2)
 # kruskal's algorithm
-class UnionFind(object):  # Time: (n * α(n)), Space: O(n)
+class UnionFind(object):  # Time: O(n * α(n)), Space: O(n)
     def __init__(self, n):
         self.set = range(n)
         self.rank = [0]*n

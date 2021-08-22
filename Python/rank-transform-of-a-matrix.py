@@ -4,7 +4,7 @@
 import collections
 
 
-class UnionFind(object):  # Time: (n * α(n)), Space: O(n)
+class UnionFind(object):  # Time: O(n * α(n)), Space: O(n)
     def __init__(self, n, cb):
         self.set = range(n)
         self.rank = [0]*n

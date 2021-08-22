@@ -62,7 +62,7 @@ class TreeInfos(object):  # Time: O(NlogN), Space: O(NlogN), N is the number of 
         return w
 
     
-class UnionFind(object):  # Time: (n * α(n)), Space: O(n)
+class UnionFind(object):  # Time: O(n * α(n)), Space: O(n)
     def __init__(self, n):
         self.set = range(n)
         self.rank = [0]*n
@@ -156,7 +156,7 @@ class SnapshotArray(object):
         return self.__snaps[index][i][1]   
  
 
-class VersionedUnionFind(object):  # Time: (n * α(n)), Space: O(n)
+class VersionedUnionFind(object):  # Time: O(n * α(n)), Space: O(n)
 
     def __init__(self, n):
         self.snap_id = 0

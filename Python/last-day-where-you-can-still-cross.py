@@ -1,7 +1,7 @@
 # Time:  O(m * n + c *  α(c)) = O(m * n)
 # Space: O(m * n)
 
-class UnionFind(object):  # Time: (n * α(n)), Space: O(n)
+class UnionFind(object):  # Time: O(n * α(n)), Space: O(n)
     def __init__(self, n):
         self.set = range(n)
         self.rank = [0]*n
