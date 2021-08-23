@@ -35,7 +35,7 @@ class Solution(object):
                 new_sorted_nums.append(x-new_shift)
             dp = new_dp
             sorted_nums = new_sorted_nums
-            if shift in new_dp:
+            if shift in dp:
                 result.append(new_shift)
             else:
                 result.append(-new_shift)
@@ -72,7 +72,7 @@ class Solution2(object):
                 new_sorted_nums.append(x-new_shift)
             dp = new_dp
             sorted_nums = new_sorted_nums
-            if shift in new_dp:
+            if shift in dp:
                 result.append(new_shift)
             else:
                 result.append(-new_shift)
