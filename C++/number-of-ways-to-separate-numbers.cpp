@@ -7,7 +7,7 @@ public:
         static const int MOD = 1e9 + 7;
 
         const auto& lcp = find_longest_common_prefix(num);
-        vector<vector<int64_t>> dp(size(num), vector<int64_t>(size(num)));
+        vector<vector<int64_t>> dp(size(num), vector<int64_t>(size(num)));  // dp[i][l]: the count of numbers ending at num[i], where the length of the last number is l+1
         dp[0][0] = int(num[0] != '0');
         for (int i = 1; i < size(num); ++i) {
             dp[i][i] = dp[i - 1][i - 1];
@@ -35,7 +35,7 @@ public:
 
 private:
     vector<vector<int64_t>> find_longest_common_prefix(const string& num) {
-        vector<vector<int64_t>> lcp(size(num) + 1, vector<int64_t>(size(num) + 1));
+        vector<vector<int64_t>> lcp(size(num) + 1, vector<int64_t>(size(num) + 1));  // lcp[i][j]: longest length of the common prefix which starts at num[i], num[j]
         for (int i = size(lcp) - 2; i >= 0; --i) {
             for (int j = size(lcp[i]) - 2; j >= 0; --j) {
                 if (num[i] == num[j]) {
