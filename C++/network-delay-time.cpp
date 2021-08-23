@@ -16,6 +16,7 @@ public:
         int result = 0;
         unordered_set<int> lookup;
         unordered_map<int, int> best;
+        best[K - 1] = 0;
         priority_queue<P, vector<P>, greater<P>> min_heap;
         min_heap.emplace(0, K - 1);
         while (!min_heap.empty() && lookup.size() != N) {
