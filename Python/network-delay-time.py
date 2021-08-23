@@ -21,6 +21,7 @@ class Solution(object):
         result = 0
         lookup = set()
         best = collections.defaultdict(lambda: float("inf"))
+        best[K-1] = 0
         min_heap = [(0, K-1)]
         while min_heap and len(lookup) != N:
             result, u = heapq.heappop(min_heap)
