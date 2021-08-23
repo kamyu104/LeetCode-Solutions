@@ -59,7 +59,6 @@ private:
 
 // Time:  O(n * 2^n), len(sums) = 2^n
 // Space: O(2^n)
-// concise solution
 class Solution2 {
 public:
     vector<int> recoverArray(int n, vector<int>& sums) {
