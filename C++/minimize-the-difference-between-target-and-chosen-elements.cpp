@@ -11,10 +11,10 @@ public:
         if (chosen_min >= target) {
             return chosen_min - target;
         }
-        vector<char> dp(2 * target - chosen_min);
-        dp[0] = 1;
+        vector<uint8_t> dp(2 * target - chosen_min);
+        dp[0] = true;
         for (const auto& row : mat) {
-            vector<char> new_dp(2 * target - chosen_min);
+            vector<uint8_t> new_dp(2 * target - chosen_min);
             for (int total = 0; total < size(dp); ++total) {
                 if (!dp[total]) {
                     continue;
