@@ -22,7 +22,7 @@ class Solution(object):
         result = [0]*(basis.bit_length()-1)
         sorted_nums = sorted(dp.iterkeys())  # Time: O(2^n * log(2^n)) = O(n * 2^n)
         shift = 0
-        while len(result) < n-1:  # log(2^n) times, Total Time: O(2^n)
+        while len(result) != n:  # log(2^n) times, Total Time: O(2^n)
             new_dp = {}
             new_sorted_nums = []
             new_shift = sorted_nums[0]-sorted_nums[1]
@@ -40,8 +40,6 @@ class Solution(object):
             else:
                 result.append(-new_shift)
                 shift -= new_shift
-        if len(result) == n-1:
-            result.append(sum(dp) - 2*shift)
         return result
 
 
@@ -61,7 +59,7 @@ class Solution2(object):
         result = []
         sorted_nums = sorted(dp.iterkeys())  # Time: O(2^n * log(2^n)) = O(n * 2^n)
         shift = 0
-        while len(result) < n-1:  # log(2^n) times, Total Time: O(2^n)
+        while len(result) != n:  # log(2^n) times, Total Time: O(2^n)
             new_dp = {}
             new_sorted_nums = []
             new_shift = sorted_nums[0]-sorted_nums[1] if dp[sorted_nums[0]] == 1 else 0
@@ -79,6 +77,4 @@ class Solution2(object):
             else:
                 result.append(-new_shift)
                 shift -= new_shift
-        if len(result) == n-1:
-            result.append(sum(dp) - 2*shift)
         return result
