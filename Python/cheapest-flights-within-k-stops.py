@@ -20,6 +20,7 @@ class Solution(object):
         for u, v, w in flights:
             adj[u].append((v, w))
         best = collections.defaultdict(lambda: collections.defaultdict(lambda: float("inf")))
+        best[src][K+1] = 0
         min_heap = [(0, src, K+1)]
         while min_heap:
             result, u, k = heapq.heappop(min_heap)
