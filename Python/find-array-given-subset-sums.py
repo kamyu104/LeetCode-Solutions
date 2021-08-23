@@ -1,4 +1,4 @@
-# Time:  O(n * 2^n)
+# Time:  O(n * 2^n), len(sums) = 2^n
 # Space: O(2^n)
 
 import collections
@@ -43,7 +43,7 @@ class Solution(object):
         return result
 
 
-# Time:  O(n * 2^n)
+# Time:  O(n * 2^n), len(sums) = 2^n
 # Space: O(2^n)
 import collections
 
