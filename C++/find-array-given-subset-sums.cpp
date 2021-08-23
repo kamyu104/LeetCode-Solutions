@@ -26,7 +26,7 @@ public:
             }
         }
         vector<int> result(bit_length(basis) - 1);
-        while (size(result) != n) {  // log(2^n) times, each time costs O(2^n), Total Time: O(2^n)
+        while (size(result) != n) {  // log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
             unordered_map<int, int> new_dp;
             vector<int> new_sorted_nums;
             const int new_shift = (dp[sorted_nums[0]] == 1) ? sorted_nums[0] - sorted_nums[1] : 0;
@@ -73,7 +73,7 @@ public:
         sort(begin(sorted_nums), end(sorted_nums));  // Time: O(2^n * log(2^n)) = O(n * 2^n)
         int shift = 0;
         vector<int> result;
-        while (size(result) != n) {  // log(2^n) times, each time costs O(2^n), Total Time: O(2^n)
+        while (size(result) != n) {  // log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
             unordered_map<int, int> new_dp;
             vector<int> new_sorted_nums;
             const int new_shift = (dp[sorted_nums[0]] == 1) ? sorted_nums[0] - sorted_nums[1] : 0;
@@ -89,6 +89,53 @@ public:
             dp = move(new_dp);
             sorted_nums = move(new_sorted_nums);
             if (dp.count(shift)) {
+                result.emplace_back(new_shift);
+            } else {
+                result.emplace_back(-new_shift);
+                shift -= new_shift;
+            }
+        }
+        return result;
+    }
+};
+
+// Time:  O(n * (2^n + r)), len(sums) = 2^n
+//                        , r = max(sums)-min(sums)
+// Space: O(2^n + r)
+// optimized from solution2 (not using unordered_map)
+class Solution3 {
+public:
+    vector<int> recoverArray(int n, vector<int>& sums) {
+        const int min_sum = *min_element(cbegin(sums), cend(sums));
+        const int max_sum = *max_element(cbegin(sums), cend(sums));
+        vector<int> dp(max_sum - min_sum + 1);
+        for (const auto& sum : sums) {
+            ++dp[sum - min_sum];
+        }
+        vector<int> sorted_nums;
+        for (int x = min_sum; x <= max_sum; ++x) {
+            if (dp[x - min_sum]) {
+                sorted_nums.emplace_back(x);
+            }
+        }
+        int shift = 0;
+        vector<int> result;
+        while (size(result) != n) { // log(2^n) times, each time costs O(2^(n-len(result)))+O(r), Total Time: O(2^n + n * r)
+            vector<int> new_dp(max_sum - min_sum + 1);
+            vector<int> new_sorted_nums;
+            const int new_shift = (dp[sorted_nums[0] - min_sum] == 1) ? sorted_nums[0] - sorted_nums[1] : 0;
+            assert(new_shift <= 0);
+            for (const auto& x : sorted_nums) {
+                if (!dp[x - min_sum]) {
+                    continue;
+                }
+                dp[(x - new_shift) - min_sum] -= new_shift ? dp[x - min_sum] : dp[x - min_sum] / 2;
+                new_dp[(x - new_shift) - min_sum] = dp[x - min_sum];
+                new_sorted_nums.emplace_back(x - new_shift);
+            }
+            dp = move(new_dp);
+            sorted_nums = move(new_sorted_nums);
+            if (dp[shift - min_sum]) {
                 result.emplace_back(new_shift);
             } else {
                 result.emplace_back(-new_shift);
