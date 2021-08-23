@@ -17,7 +17,7 @@ class Solution(object):
         total = reduce(operator.ior, dp.itervalues(), 0)
         basis = total&-total  # find rightmost bit 1
         if basis > 1:
-            for k in dp:
+            for k in dp.iterkeys():
                 dp[k] //= basis
         sorted_nums = sorted(dp.iterkeys())  # Time: O(2^n * log(2^n)) = O(n * 2^n)
         shift = 0
