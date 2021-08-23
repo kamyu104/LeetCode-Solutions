@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1973%20%2F%201973-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1982%20%2F%201982-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -519,6 +519,7 @@
 1961 | [Check If String Is a Prefix of Array](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/) | [C++](./C++/check-if-string-is-a-prefix-of-array.cpp) [Python](./Python/check-if-string-is-a-prefix-of-array.py) | _O(n)_ | _O(1)_ | Easy ||
 1963| [Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) | [C++](./C++/minimum-number-of-swaps-to-make-the-string-balanced.cpp) [Python](./Python/minimum-number-of-swaps-to-make-the-string-balanced.py) | _O(n)_ | _O(1)_ | Medium | variant of [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/) ||
 1967 |[Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)| [C++](./C++/number-of-strings-that-appear-as-substrings-in-word.cpp) [Python](./Python/number-of-strings-that-appear-as-substrings-in-word.py) | _O(n * l + m)_ | _O(t)_ | Easy || `KMP Algorithm`, `Aho-Corasick Automata`, Trie |
+1974| [Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) | [C++](./C++/minimum-time-to-type-word-using-special-typewriter.cpp) [Python](./Python/minimum-time-to-type-word-using-special-typewriter.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -1050,6 +1051,8 @@
 1952| [Three Divisors](https://leetcode.com/problems/three-divisors/) | [C++](./C++/three-divisors.cpp) [Python](./Python/three-divisors.py) | _O(sqrt(n))_ | _O(1)_ |  Easy |  | |
 1954| [Minimum Garden Perimeter to Collect Enough Apples](https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples/) | [C++](./C++/minimum-garden-perimeter-to-collect-enough-apples.cpp) [Python](./Python/minimum-garden-perimeter-to-collect-enough-apples.py) | _O(1)_ | _O(1)_ |  Medium |  | Binary Search, `Cardano's Formula` |
 1969| [Minimum Non-Zero Product of the Array Elements](https://leetcode.com/problems/minimum-non-zero-product-of-the-array-elements/) | [C++](./C++/minimum-non-zero-product-of-the-array-elements.cpp) [Python](./Python/minimum-non-zero-product-of-the-array-elements.py) | _O(min(p, logM))_ | _O(1)_ |  Medium |  | |
+1979| [Find Greatest Common Divisor of Array](https://leetcode.com/problems/find-greatest-common-divisor-of-array/) | [C++](./C++/find-greatest-common-divisor-of-array.cpp) [Python](./Python/find-greatest-common-divisor-of-array.py) | _O(n)_ | _O(1)_ |  Easy |  | |
+1980| [Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/) | [C++](./C++/find-unique-binary-string.cpp) [Python](./Python/find-unique-binary-string.py) | _O(n)_ | _O(1)_ |  Medium |  | `Cantor Diagonalization` |
 
 <br/>
 <div align="right">
@@ -1757,6 +1760,9 @@
 1955| [Count Number of Special Subsequences](https://leetcode.com/problems/count-number-of-special-subsequences/)|[C++](./C++/count-number-of-special-subsequences.cpp) [Python](./Python/count-number-of-special-subsequences.py)| _O(n)_     | _O(1)_         | Hard         | | |
 1959| [Minimum Total Space Wasted With K Resizing Operations](https://leetcode.com/problems/minimum-total-space-wasted-with-k-resizing-operations/)|[C++](./C++/minimum-total-space-wasted-with-k-resizing-operations.cpp) [Python](./Python/minimum-total-space-wasted-with-k-resizing-operations.py)| _O(k * n^2)_     | _O(k * n)_         | Medium         | | |
 1960| [Maximum Product of the Length of Two Palindromic Substrings](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings/)|[C++](./C++/maximum-product-of-the-length-of-two-palindromic-substrings.cpp) [Python](./Python/maximum-product-of-the-length-of-two-palindromic-substrings.py)| _O(n)_     | _O(n)_         | Hard         | | `Manacher's Algorithm`, DP |
+1977| [Number of Ways to Separate Numbers](https://leetcode.com/problems/number-of-ways-to-separate-numbers/)|[C++](./C++/number-of-ways-to-separate-numbers.cpp) [Python](./Python/number-of-ways-to-separate-numbers.py)| _O(n^2)_     | _O(n^2)_         | Hard         | | DP |
+1981| [Minimize the Difference Between Target and Chosen Elements](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/)|[C++](./C++/minimize-the-difference-between-target-and-chosen-elements.cpp) [Python](./Python/minimize-the-difference-between-target-and-chosen-elements.py)| _O(t * n^2)_     | _O(t)_         | Medium         | | DP, Pruning |
+1982| [Find Array Given Subset Sums](https://leetcode.com/problems/find-array-given-subset-sums/)|[C++](./C++/find-array-given-subset-sums.cpp) [Python](./Python/find-array-given-subset-sums.py)| _O(n * 2^n)_     | _O(2^n)_         | Hard         | | DP |
 
 <br/>
 <div align="right">
@@ -1914,6 +1920,7 @@
 1936 | [Add Minimum Number of Rungs](https://leetcode.com/problems/add-minimum-number-of-rungs/) | [C++](./C++/add-minimum-number-of-rungs.cpp) [Python](./Python/add-minimum-number-of-rungs.py) | _O(n)_ | _O(1)_ | Medium | | |
 1946 | [Largest Number After Mutating Substring](https://leetcode.com/problems/largest-number-after-mutating-substring/) | [C++](./C++/largest-number-after-mutating-substring.cpp) [Python](./Python/largest-number-after-mutating-substring.py) | _O(n)_ | _O(1)_ | Medium | | |
 1953 | [Maximum Number of Weeks for Which You Can Work](https://leetcode.com/problems/maximum-number-of-weeks-for-which-you-can-work/) | [C++](./C++/maximum-number-of-weeks-for-which-you-can-work.cpp) [Python](./Python/maximum-number-of-weeks-for-which-you-can-work.py) | _O(n)_ | _O(1)_ | Medium | | |
+1975 | [Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum/) | [C++](./C++/maximum-matrix-sum.cpp) [Python](./Python/maximum-matrix-sum.py) | _O(n^2)_ | _O(1)_ | Medium | | |
 
 <br/>
 <div align="right">
@@ -1959,6 +1966,7 @@
 1879 | [Minimum XOR Sum of Two Arrays](https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/) | [C++](./C++/minimum-xor-sum-of-two-arrays.cpp) [Python](./Python/minimum-xor-sum-of-two-arrays.py) | _O(n^3)_ | _O(n^2)_ | Hard | | DP, `Hungarian Weighted Bipartite Matching` |
 1947 | [Maximum Compatibility Score Sum](https://leetcode.com/problems/maximum-compatibility-score-sum/) | [C++](./C++/maximum-compatibility-score-sum.cpp) [Python](./Python/maximum-compatibility-score-sum.py) | _O(m^2 * (n + m))_ | _O(m^2)_ | Medium | variant of [Minimum XOR Sum of Two Arrays](https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/) | DP, `Hungarian Weighted Bipartite Matching` |
 1971 | [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/)  | [C++](./C++/find-if-path-exists-in-graph.cpp) [Python](./Python/find-if-path-exists-in-graph.py) | _O(\|V\| + \|E\|)_| _O(\|V\| + \|E\|)_| Easy           || DFS, BFS, Bi-BFS| 
+1976 | [Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/)  | [C++](./C++/number-of-ways-to-arrive-at-destination.cpp) [Python](./Python/number-of-ways-to-arrive-at-destination.py) | _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium | | `Dijkstra's Algorithm` |
 
 <br/>
 <div align="right">
@@ -2232,6 +2240,7 @@
 1951| [All the Pairs With the Maximum Number of Common Followers](https://leetcode.com/problems/all-the-pairs-with-the-maximum-number-of-common-followers/) | [MySQL](./MySQL/all-the-pairs-with-the-maximum-number-of-common-followers.sql) | _O(n^3)_ | _O(n^2)_       | Medium           |🔒||
 1965| [Employees With Missing Information](https://leetcode.com/problems/employees-with-missing-information/) | [MySQL](./MySQL/employees-with-missing-information.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 1972| [First and Last Call On the Same Day](https://leetcode.com/problems/first-and-last-call-on-the-same-day/) | [MySQL](./MySQL/first-and-last-call-on-the-same-day.sql) | _O(n)_ | _O(n)_       | Hard           |🔒||
+1978| [Employees Whose Manager Left the Company](https://leetcode.com/problemsemployees-whose-manager-left-the-company/) | [MySQL](./MySQL/employees-whose-manager-left-the-company.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
