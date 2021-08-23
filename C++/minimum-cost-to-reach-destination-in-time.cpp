@@ -16,6 +16,7 @@ public:
         }
         
         unordered_map<int, int> best;
+        best[0] = 0;
         using T = tuple<int, int, int>;
         priority_queue<T, vector<T>, greater<T>> min_heap;
         min_heap.emplace(passingFees[0], 0, 0);
