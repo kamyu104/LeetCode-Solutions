@@ -100,8 +100,8 @@ public:
     }
 };
 
-// Time:  O(n * (2^n + r)), len(sums) = 2^n
-//                        , r = max(sums)-min(sums)
+// Time:  O(2^n + n * r), len(sums) = 2^n
+//                      , r = max(sums)-min(sums)
 // Space: O(2^n + r)
 // optimized from solution2 (not using unordered_map), runtime: 148 ms
 class Solution3 {
