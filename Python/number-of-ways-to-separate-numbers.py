@@ -29,7 +29,7 @@ class Solution(object):
             accu = 0
             for l in xrange(len(num)-i+1):
                 ni = i+l-1
-                dp[ni][l-1] = accu  # accumulated count where the length of the second to last number is shorter than the length of the last number
+                dp[ni][l-1] = accu  # accumulated count where the length of the second to last number ending at num[i-1] is shorter than the length of the last number ending at num[i+l-1]
                 if i-l < 0:
                     continue
                 if num[i-l] != '0' and is_less_or_equal_to_with_same_length(num, lcp, i-l, i, l):
