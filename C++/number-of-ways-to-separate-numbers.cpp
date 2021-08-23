@@ -20,8 +20,7 @@ public:
                 if (i - l < 0) {
                     continue;
                 }
-                if (num[i - l] != '0' &&
-                    is_less_or_equal_to_with_same_length(num, lcp, i - l, i, l)) {
+                if (num[i - l] != '0' && is_less_or_equal_to_with_same_length(num, lcp, i - l, i, l)) {
                     dp[ni][l - 1] = (dp[ni][l - 1] + dp[i - 1][l - 1]) % MOD;
                 }
                 accu = (accu + dp[i - 1][l - 1]) % MOD;
