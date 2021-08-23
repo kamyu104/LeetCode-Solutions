@@ -26,7 +26,7 @@ public:
             }
         }
         vector<int> result(bit_length(basis) - 1);
-        while (size(result) != n) { // log(2^n) times, each time costs O(2^n), Total Time: O(2^n)
+        while (size(result) != n) {  // log(2^n) times, each time costs O(2^n), Total Time: O(2^n)
             unordered_map<int, int> new_dp;
             vector<int> new_sorted_nums;
             const int new_shift = (dp[sorted_nums[0]] == 1) ? sorted_nums[0] - sorted_nums[1] : 0;
@@ -73,7 +73,7 @@ public:
         sort(begin(sorted_nums), end(sorted_nums));  // Time: O(2^n * log(2^n)) = O(n * 2^n)
         int shift = 0;
         vector<int> result;
-        while (size(result) != n) { // log(2^n) times, each time costs O(2^n), Total Time: O(2^n)
+        while (size(result) != n) {  // log(2^n) times, each time costs O(2^n), Total Time: O(2^n)
             unordered_map<int, int> new_dp;
             vector<int> new_sorted_nums;
             const int new_shift = (dp[sorted_nums[0]] == 1) ? sorted_nums[0] - sorted_nums[1] : 0;
