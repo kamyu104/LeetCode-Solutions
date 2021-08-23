@@ -13,6 +13,7 @@ public:
         }
         
         unordered_map<int, unordered_map<int, int>> best;
+        best[src][K + 1] = 0;
         using T = tuple<int, int, int>;
         priority_queue<T, vector<T>, greater<T>> min_heap;
         min_heap.emplace(0, src, K + 1);
