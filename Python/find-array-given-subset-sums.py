@@ -19,9 +19,9 @@ class Solution(object):
         if basis > 1:
             for k in dp:
                 dp[k] //= basis
-        result = [0]*(basis.bit_length()-1)
         sorted_nums = sorted(dp.iterkeys())  # Time: O(2^n * log(2^n)) = O(n * 2^n)
         shift = 0
+        result = [0]*(basis.bit_length()-1)
         while len(result) != n:  # log(2^n) times, each time costs O(2^n), Total Time: O(2^n)
             new_dp = {}
             new_sorted_nums = []
@@ -56,9 +56,9 @@ class Solution2(object):
         :rtype: List[int]
         """
         dp = {k: v for k, v in collections.Counter(sums).iteritems()}
-        result = []
         sorted_nums = sorted(dp.iterkeys())  # Time: O(2^n * log(2^n)) = O(n * 2^n)
         shift = 0
+        result = []
         while len(result) != n:  # log(2^n) times, each time costs O(2^n), Total Time: O(2^n)
             new_dp = {}
             new_sorted_nums = []
