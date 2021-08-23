@@ -16,7 +16,7 @@ public:
             }
             for (int l = 1, accu = 0; i + l - 1 < size(num); ++l) {
                 const int ni = i + l - 1;
-                dp[ni][l - 1] = accu;  // accumulated count where the length of the second to last number is shorter than the length of the last number
+                dp[ni][l - 1] = accu;  // accumulated count where the length of the second to last number ending at num[i-1] is shorter than the length of the last number ending at num[i+l-1]
                 if (i - l < 0) {
                     continue;
                 }
