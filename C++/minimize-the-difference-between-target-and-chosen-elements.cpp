@@ -1,5 +1,5 @@
-// Time:  O(target * n^2)
-// Space: O(target)
+// Time:  O(t * n^2), t is target
+// Space: O(t)
 
 class Solution {
 public:
