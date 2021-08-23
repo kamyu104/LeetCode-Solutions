@@ -5,7 +5,7 @@ import collections
 import operator
 
 
-# optimized from solution2
+# optimized from solution2, runtime: 1044 ms
 class Solution(object):
     def recoverArray(self, n, sums):
         """
@@ -48,6 +48,7 @@ class Solution(object):
 import collections
 
 
+# runtime: 1024 ms
 class Solution2(object):
     def recoverArray(self, n, sums):
         """
@@ -87,7 +88,7 @@ class Solution2(object):
 import collections
 
 
-# optimized from solution2 (not using dict)
+# optimized from solution2 (not using dict), runtime: 968 ms
 class Solution3(object):
     def recoverArray(self, n, sums):
         """
