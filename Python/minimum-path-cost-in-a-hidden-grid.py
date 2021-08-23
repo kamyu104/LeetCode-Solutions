@@ -41,7 +41,7 @@ class Solution(object):
                 adj[nei][pos] = master.move(rollback[d])
                         
         def dijkstra(adj, start, target):
-            dist = {}
+            dist = {start:0}
             min_heap = [(0, start)]
             while min_heap:
                 curr, u = heapq.heappop(min_heap)
