@@ -20,6 +20,7 @@ class Solution(object):
             adj[u].append((v, w))
             adj[v].append((u, w))
         best = collections.defaultdict(lambda:float("inf"))
+        best[0] = 0
         min_heap = [(passingFees[0], 0, 0)]
         while min_heap:
             result, u, w = heapq.heappop(min_heap)
