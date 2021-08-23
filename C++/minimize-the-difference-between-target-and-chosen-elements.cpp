@@ -1,6 +1,7 @@
 // Time:  O(t * n^2), t is target
 // Space: O(t)
 
+// optimized from solution_tle (not using unordered_set)
 class Solution {
 public:
     int minimizeTheDifference(vector<vector<int>>& mat, int target) {
