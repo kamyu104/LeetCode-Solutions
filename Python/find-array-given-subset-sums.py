@@ -102,7 +102,7 @@ class Solution3(object):
         sorted_nums = [x for x in xrange(min_sum, max_sum+1) if dp[x-min_sum]]  # Time: O(r)
         shift = 0
         result = []
-        while len(result) != n:  # log(2^n) times, each time costs O(2^(n-len(result))+O(r), Total Time: O(2^n + n * r)
+        while len(result) != n:  # log(2^n) times, each time costs O(2^(n-len(result)))+O(r), Total Time: O(2^n + n * r)
             new_dp = [0]*(max_sum-min_sum+1)
             new_sorted_nums = []
             new_shift = sorted_nums[0]-sorted_nums[1] if dp[sorted_nums[0]-min_sum] == 1 else 0
