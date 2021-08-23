@@ -10,6 +10,7 @@ public:
 
         using T = tuple<int, int, int>;
         vector<vector<int>> dist(size(heights), vector<int>(size(heights[0]), numeric_limits<int>::max()));
+        dist[0][0] = 0;
         priority_queue<T, vector<T>, greater<T>> min_heap;
         min_heap.emplace(0, 0, 0);
         vector<vector<int>> lookup(size(heights), vector<int>(size(heights[0])));
