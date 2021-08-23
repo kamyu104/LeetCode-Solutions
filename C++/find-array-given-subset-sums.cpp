@@ -1,7 +1,7 @@
 // Time:  O(n * 2^n), len(sums) = 2^n
 // Space: O(2^n)
 
-// optimized from solution2
+// optimized from solution2, runtime: 344 ms
 class Solution {
 public:
     vector<int> recoverArray(int n, vector<int>& sums) {
@@ -59,6 +59,7 @@ private:
 
 // Time:  O(n * 2^n), len(sums) = 2^n
 // Space: O(2^n)
+// runtime: 344 ms
 class Solution2 {
 public:
     vector<int> recoverArray(int n, vector<int>& sums) {
@@ -102,7 +103,7 @@ public:
 // Time:  O(n * (2^n + r)), len(sums) = 2^n
 //                        , r = max(sums)-min(sums)
 // Space: O(2^n + r)
-// optimized from solution2 (not using unordered_map)
+// optimized from solution2 (not using unordered_map), runtime: 148 ms
 class Solution3 {
 public:
     vector<int> recoverArray(int n, vector<int>& sums) {
