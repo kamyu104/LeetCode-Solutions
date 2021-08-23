@@ -82,7 +82,7 @@ class Solution2(object):
 
 
 
-# Time:  O(n * (2^n + r)), len(sums) = 2^n
+# Time:  O(2^n + n * r), len(sums) = 2^n
 #                        , r = max(sums)-min(sums)
 # Space: O(2^n + r)
 import collections
