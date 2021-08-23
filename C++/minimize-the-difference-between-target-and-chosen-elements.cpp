@@ -55,7 +55,7 @@ public:
             unordered_set<int> new_dp;
             for (const auto& total : dp) {
                 for (const auto& x : row) {
-                    if ((total + x) - target <= target - chosen_min) {
+                    if ((total + x) - target < target - chosen_min) {
                         new_dp.emplace(total + x);
                     }
                 }
