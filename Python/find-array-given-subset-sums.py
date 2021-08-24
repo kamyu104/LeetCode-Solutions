@@ -9,7 +9,7 @@ class Solution(object):
         :type sums: List[int]
         :rtype: List[int]
         """
-        sums.sort()
+        sums.sort()  # Time: O(2^n * log(2^n)) = O(n * 2^n)
         shift, l = 0, len(sums)
         result = []
         for _ in xrange(n):  # log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
