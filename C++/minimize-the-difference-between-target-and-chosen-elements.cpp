@@ -1,8 +1,45 @@
-// Time:  O(t * n^2), t is target
-// Space: O(t)
+// Time:  O(max_t * m * n), max_t is max_target
+// Space: O(max_t)
 
-// optimized from solution_tle (not using unordered_set)
+// optimized from solution2 (using bitset), runtime: 36 ms
 class Solution {
+public:
+    int minimizeTheDifference(vector<vector<int>>& mat, int target) {
+        static const int MAX_TARGET = 800;
+
+        int chosen_min = 0;
+        for (const auto& row : mat) {
+            chosen_min += *min_element(cbegin(row), cend(row));
+        }
+        if (chosen_min >= target) {
+            return chosen_min - target;
+        }
+        bitset<2 * MAX_TARGET + 1> bs(1);
+        for (const auto& row : mat) {
+            bitset<2 * MAX_TARGET + 1> new_bs;
+            for (const auto& x : unordered_set<int>(cbegin(row), cend(row))) {
+                new_bs |= bs << x;
+            }
+            bs = move(new_bs);
+        }
+        int result = size(bs);
+        for (int total = chosen_min; total < size(bs); ++total) {
+            if (!bs[total]) {
+                continue;
+            }
+            result = min(result, abs(target - total));
+            if (total > target) {
+                break;
+            }
+        }
+        return result;
+    }
+};
+
+// Time:  O(t * m * n), t is target
+// Space: O(t)
+// optimized from solution_tle (not using unordered_set), runtime: 192 ms
+class Solution2 {
 public:
     int minimizeTheDifference(vector<vector<int>>& mat, int target) {
         int chosen_min = 0;
@@ -29,17 +66,20 @@ public:
             dp = move(new_dp);
         }
         int result = numeric_limits<int>::max();
-        for (int total = 0; total < size(dp); ++total) {
+        for (int total = chosen_min; total < size(dp); ++total) {
             if (!dp[total]) {
                 continue;
             }
             result = min(result, abs(target - total));
+            if (total > target) {
+                break;
+            }
         }
         return result;
     }
 };
 
-// Time:  O(t * n^2), t is target
+// Time:  O(t * m * n), t is target
 // Space: O(t)
 class Solution_TLE {
 public:
