@@ -8,7 +8,7 @@ public:
         sort(begin(sums), end(sums));  // Time: O(2^n * log(2^n)) = O(n * 2^n)
         int shift = 0, l = size(sums);
         vector<int> result;
-        for (; size(result) != n; l /= 2) {  // log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
+        for (; n; --n, l /= 2) {  // log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
             const int new_shift = sums[0] - sums[1];
             assert(new_shift <= 0);
             bool has_zero = false;
@@ -54,7 +54,7 @@ public:
         }
         int shift = 0;
         vector<int> result;
-        while (size(result) != n) { // log(2^n) times, each time costs O(2^(n-len(result)))+O(r), Total Time: O(2^n + n * r)
+        while (n--) { // log(2^n) times, each time costs O(2^(n-len(result)))+O(r), Total Time: O(2^n + n * r)
             vector<int> new_dp(max_sum - min_sum + 1);
             vector<int> new_sorted_nums;
             const int new_shift = (dp[sorted_nums[0] - min_sum] == 1) ? sorted_nums[0] - sorted_nums[1] : 0;
@@ -107,7 +107,8 @@ public:
             }
         }
         vector<int> result(bit_length(basis) - 1);
-        while (size(result) != n) {  // log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
+        n -= bit_length(basis) - 1;
+        while (n--) {  // log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
             unordered_map<int, int> new_dp;
             vector<int> new_sorted_nums;
             const int new_shift = (dp[sorted_nums[0]] == 1) ? sorted_nums[0] - sorted_nums[1] : 0;
@@ -155,7 +156,7 @@ public:
         sort(begin(sorted_nums), end(sorted_nums));  // Time: O(2^n * log(2^n)) = O(n * 2^n)
         int shift = 0;
         vector<int> result;
-        while (size(result) != n) {  // log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
+        while (n--) {  // log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
             unordered_map<int, int> new_dp;
             vector<int> new_sorted_nums;
             const int new_shift = (dp[sorted_nums[0]] == 1) ? sorted_nums[0] - sorted_nums[1] : 0;
