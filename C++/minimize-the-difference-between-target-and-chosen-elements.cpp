@@ -14,9 +14,9 @@ public:
         if (chosen_min >= target) {
             return chosen_min - target;
         }
-        bitset<2 * MAX_TARGET + 1> bs(1);
+        bitset<(2 * MAX_TARGET - 2) + 1> bs(1); // total < 2*target - 1
         for (const auto& row : mat) {
-            bitset<2 * MAX_TARGET + 1> new_bs;
+            bitset<(2 * MAX_TARGET - 2) + 1> new_bs;
             for (const auto& x : unordered_set<int>(cbegin(row), cend(row))) {
                 new_bs |= bs << x;
             }
