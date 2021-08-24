@@ -13,7 +13,7 @@ public:
             assert(new_shift <= 0);
             bool has_zero = false;
             for (int i = 0, j = 0, k = 0; i < l; ++i) {
-                if (k < j && sums[k] == sums[i]) {
+                if (k < j && sums[k] == sums[i]) {  // skip shifted one
                     ++k;
                 } else {
                     if (shift == sums[i] - new_shift) {
