@@ -17,7 +17,7 @@ class Solution(object):
             assert(new_shift <= 0)
             has_zero, j, k = False, 0, 0
             for i in xrange(l):
-                if k < j and sums[k] == sums[i]:
+                if k < j and sums[k] == sums[i]:  # skip shifted one
                     k += 1
                 else:
                     if shift == sums[i]-new_shift:
