@@ -8,7 +8,7 @@ public:
         sort(begin(sums), end(sums));  // Time: O(2^n * log(2^n)) = O(n * 2^n)
         int shift = 0, l = size(sums);
         vector<int> result;
-        for (; n; --n, l /= 2) {  // log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
+        for (; n--; l /= 2) {  // log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
             const int new_shift = sums[0] - sums[1];
             assert(new_shift <= 0);
             bool has_zero = false;
