@@ -41,7 +41,7 @@ public:
             }
             dp = move(new_dp);
             sorted_nums = move(new_sorted_nums);
-            if (dp.count(shift)) {  // contain 0, choose either side
+            if (dp.count(shift)) {  // contain 0, choose this side
                 result.emplace_back(new_shift);
             } else {  // contain no 0, choose another side and shift 0 offset
                 result.emplace_back(-new_shift);
@@ -89,7 +89,7 @@ public:
             }
             dp = move(new_dp);
             sorted_nums = move(new_sorted_nums);
-            if (dp.count(shift)) {  // contain 0, choose either side
+            if (dp.count(shift)) {  // contain 0, choose this side
                 result.emplace_back(new_shift);
             } else {  // contain no 0, choose another side and shift 0 offset
                 result.emplace_back(-new_shift);
@@ -136,7 +136,7 @@ public:
             }
             dp = move(new_dp);
             sorted_nums = move(new_sorted_nums);
-            if (dp[shift - min_sum]) {  // contain 0, choose either side
+            if (dp[shift - min_sum]) {  // contain 0, choose this side
                 result.emplace_back(new_shift);
             } else {  // contain no 0, choose another side and shift 0 offset
                 result.emplace_back(-new_shift);
