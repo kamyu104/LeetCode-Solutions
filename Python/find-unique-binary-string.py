@@ -20,7 +20,7 @@ class Solution2(object):
         :rtype: str
         """
         lookup = set(map(lambda x: int(x, 2), nums))  # Time: O(k * n) = O(n^2)
-        return next(bin(i)[2:].zfill(len(nums[0])) for i in xrange(2**len(nums[0])) if i not in lookup)  # Time: O(k) = O(n)
+        return next(bin(i)[2:].zfill(len(nums[0])) for i in xrange(2**len(nums[0])) if i not in lookup)  # Time: O(k + n) = O(n)
 
 
 # Time:  O(k * n + n * 2^n) = O(n * 2^n), k is len(nums)
@@ -32,5 +32,5 @@ class Solution_Extra(object):
         :type nums: List[str]
         :rtype: List[str]
         """
-        lookup = set(map(lambda x: int(x, 2), nums))  # Time: O(k * n + n * 2^n) = O(n * 2^n)
+        lookup = set(map(lambda x: int(x, 2), nums))  # Time: O(k * n) = O(n * 2^n)
         return [bin(i)[2:].zfill(len(nums[0])) for i in xrange(2**len(nums[0])) if i not in lookup]  # Time: O(2^n + n * (2^n - k))
