@@ -1,7 +1,7 @@
 // Time:  O(max_t * m * n), max_t is max_target
 // Space: O(max_t)
 
-// optimized from solution2 (using bitset), runtime: 36 ms
+// optimized from solution2 (using bitset), runtime: 32 ms
 class Solution {
 public:
     int minimizeTheDifference(vector<vector<int>>& mat, int target) {
@@ -17,7 +17,7 @@ public:
         bitset<(2 * MAX_TARGET - 2) + 1> bs(1); // total < 2*target - 1
         for (const auto& row : mat) {
             bitset<(2 * MAX_TARGET - 2) + 1> new_bs;
-            for (const auto& x : unordered_set<int>(cbegin(row), cend(row))) {
+            for (const auto& x : row) {
                 new_bs |= bs << x;
             }
             bs = move(new_bs);
