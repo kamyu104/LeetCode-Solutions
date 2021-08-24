@@ -35,9 +35,9 @@ class Solution(object):
                 new_sorted_nums.append(x-new_shift)
             dp = new_dp
             sorted_nums = new_sorted_nums
-            if shift in dp:
+            if shift in dp:  # contain 0, choose either side
                 result.append(new_shift)
-            else:
+            else:  # contain no 0, choose another side and shift 0 offset
                 result.append(-new_shift)
                 shift -= new_shift
         return result
@@ -73,9 +73,9 @@ class Solution2(object):
                 new_sorted_nums.append(x-new_shift)
             dp = new_dp
             sorted_nums = new_sorted_nums
-            if shift in dp:
+            if shift in dp:  # contain 0, choose either side
                 result.append(new_shift)
-            else:
+            else:  # contain no 0, choose another side and shift 0 offset
                 result.append(-new_shift)
                 shift -= new_shift
         return result
@@ -116,9 +116,9 @@ class Solution3(object):
                 new_sorted_nums.append(x-new_shift)
             dp = new_dp
             sorted_nums = new_sorted_nums
-            if dp[shift-min_sum]:
+            if dp[shift-min_sum]:  # contain 0, choose either side
                 result.append(new_shift)
-            else:
+            else:  # contain no 0, choose another side and shift 0 offset
                 result.append(-new_shift)
                 shift -= new_shift
         return result
