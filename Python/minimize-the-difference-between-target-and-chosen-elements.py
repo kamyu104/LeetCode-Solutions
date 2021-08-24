@@ -1,4 +1,4 @@
-# Time:  O(t * n^2), t is target
+# Time:  O(t * m * n), t is target
 # Space: O(t)
 
 class Solution(object):
