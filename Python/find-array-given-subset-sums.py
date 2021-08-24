@@ -22,7 +22,7 @@ class Solution(object):
         sorted_nums = sorted(dp.iterkeys())  # Time: O(2^n * log(2^n)) = O(n * 2^n)
         shift = 0
         result = [0]*(basis.bit_length()-1)
-        while len(result) != n:  # log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
+        for _ in xrange(n):  # log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
             new_dp = {}
             new_sorted_nums = []
             new_shift = sorted_nums[0]-sorted_nums[1]
@@ -60,7 +60,7 @@ class Solution2(object):
         sorted_nums = sorted(dp.iterkeys())  # Time: O(2^n * log(2^n)) = O(n * 2^n)
         shift = 0
         result = []
-        while len(result) != n:  # log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
+        for _ in xrange(n):  # log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
             new_dp = {}
             new_sorted_nums = []
             new_shift = sorted_nums[0]-sorted_nums[1] if dp[sorted_nums[0]] == 1 else 0
@@ -103,7 +103,7 @@ class Solution3(object):
         sorted_nums = [x for x in xrange(min_sum, max_sum+1) if dp[x-min_sum]]  # Time: O(r)
         shift = 0
         result = []
-        while len(result) != n:  # log(2^n) times, each time costs O(2^(n-len(result)))+O(r), Total Time: O(2^n + n * r)
+        for _ in xrange(n):  # log(2^n) times, each time costs O(2^(n-len(result)))+O(r), Total Time: O(2^n + n * r)
             new_dp = [0]*(max_sum-min_sum+1)
             new_sorted_nums = []
             new_shift = sorted_nums[0]-sorted_nums[1] if dp[sorted_nums[0]-min_sum] == 1 else 0
