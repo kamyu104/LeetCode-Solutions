@@ -1762,7 +1762,7 @@
 1960| [Maximum Product of the Length of Two Palindromic Substrings](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings/)|[C++](./C++/maximum-product-of-the-length-of-two-palindromic-substrings.cpp) [Python](./Python/maximum-product-of-the-length-of-two-palindromic-substrings.py)| _O(n)_     | _O(n)_         | Hard         | | `Manacher's Algorithm`, DP |
 1977| [Number of Ways to Separate Numbers](https://leetcode.com/problems/number-of-ways-to-separate-numbers/)|[C++](./C++/number-of-ways-to-separate-numbers.cpp) [Python](./Python/number-of-ways-to-separate-numbers.py)| _O(n^2)_     | _O(n^2)_         | Hard         | | DP |
 1981| [Minimize the Difference Between Target and Chosen Elements](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/)|[C++](./C++/minimize-the-difference-between-target-and-chosen-elements.cpp) [Python](./Python/minimize-the-difference-between-target-and-chosen-elements.py)| _O(t * m * n)_     | _O(t)_         | Medium         | | DP, Pruning |
-1982| [Find Array Given Subset Sums](https://leetcode.com/problems/find-array-given-subset-sums/)|[C++](./C++/find-array-given-subset-sums.cpp) [Python](./Python/find-array-given-subset-sums.py)| _O(n * 2^n)_     | _O(1)_         | Hard         | | DP |
+1982| [Find Array Given Subset Sums](https://leetcode.com/problems/find-array-given-subset-sums/)|[C++](./C++/find-array-given-subset-sums.cpp) [Python](./Python/find-array-given-subset-sums.py)| _O(n * 2^n)_     | _O(1)_         | Hard         | | Math, DP |
 
 <br/>
 <div align="right">
