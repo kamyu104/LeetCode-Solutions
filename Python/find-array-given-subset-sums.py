@@ -7,11 +7,11 @@
 #   let d is a number of a solution of [S1, ..., S(2^n)]
 #   let Sq = x1+...+xi where 1 <= i <= n-1
 #   let [d]+[x1, ..., xi]+[x(i+1), ..., x(n-1)] is a solution
-#   => new_sums([S1-d,....S(2^n)-d])
+#   => new_sums([S1, ..., S(2^n)], d)
 #      = subset_sums([x1, ..., xi]+[x(i+1), ..., x(n-1)])
 #   if we choose -d as a number of a solution of [S1, ..., S(2^n)]
-#   => new_sums([S1-(-d), ..., S(2^n)-(-d)])
-#      = new_sums([S1-(x1+x2+...xi), ..., S(2^n)-(x1+x2+...xi)])
+#   => new_sums([S1, ..., S(2^n)], -d)
+#      = new_sums([S1, ..., S(2^n)], -(x1+...+xi))
 #      = subset_sums([(-x1), ..., (-xi)]+[x(i+1), x(n-1)])
 #      => [-d]+[(-x1), ..., (-xi)]+[x(i+1), x(n-1)] is also a solution
 #
