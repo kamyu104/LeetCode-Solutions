@@ -7,17 +7,17 @@
 #   let d is a number of a solution of [S1, ..., S(2^n)]
 #   let Sq = x1+...+xi where 1 <= i <= n-1
 #   let [d]+[x1, ..., xi]+[x(i+1), ..., x(n-1)] is a solution
-#   => new_sum([S1-d,....S(2^n)-d])
-#      = subset_sum([x1, ..., xi]+[x(i+1), ..., x(n-1)])
+#   => new_sums([S1-d,....S(2^n)-d])
+#      = subset_sums([x1, ..., xi]+[x(i+1), ..., x(n-1)])
 #   if we choose -d as a number of a solution of [S1, ..., S(2^n)]
-#   => new_sum([S1-(-d), ..., S(2^n)-(-d)])
-#      = new_sum([S1-(x1+x2+...xi), ..., S(2^n)-(x1+x2+...xi)])
-#      = subset_sum([(-x1), ..., (-xi)]+[x(i+1), x(n-1)])
+#   => new_sums([S1-(-d), ..., S(2^n)-(-d)])
+#      = new_sums([S1-(x1+x2+...xi), ..., S(2^n)-(x1+x2+...xi)])
+#      = subset_sums([(-x1), ..., (-xi)]+[x(i+1), x(n-1)])
 #      => [-d]+[(-x1), ..., (-xi)]+[x(i+1), x(n-1)] is also a solution
-
+#
 # [conclusion]
-# - if +d/-d both contain zero, we can choose either one
-# - if only one of +d/-d contains zero, we can only choose the one with zero since subset_sum must contain zero
+# - if new_sums with +d/-d both contain zero, we can choose either one
+# - if only one of new_sums with +d/-d contains zero, we can only choose the one with zero since subset_sums must contain zero
 
 # optimized from solution4 (not using dict), runtime: 1040 ms
 class Solution(object):
