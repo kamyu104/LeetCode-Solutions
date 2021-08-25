@@ -13,7 +13,7 @@
 //   => new_sum([S1-(-d), ..., S(2^n)-(-d)])
 //      = new_sum([S1-(x1+x2+...xi), ..., S(2^n)-(x1+x2+...xi)])
 //      = subset_sum([(-x1), ..., (-xi)]+[x(i+1), x(n-1)])
-//      => [-d]+[(-x1), ..., (-xi)]+[x(i+1), x(n-1)] is another solution
+//      => [-d]+[(-x1), ..., (-xi)]+[x(i+1), x(n-1)] is also a solution
 //
 // [conclusion]
 // - if +d/-d both contain zero, we can choose either one
