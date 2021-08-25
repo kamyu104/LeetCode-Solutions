@@ -2,7 +2,7 @@
 # Space: O(1)
 
 # [proof]
-# - let d = sorted_sums[0]-sorted_sums[1] and d != -d, where one of +d/-d is the smallest positive or largest negative number of the original solution of [S1, ..., S(2^n)]
+# - let d = sorted_sums[0]-sorted_sums[1] and d != -d (d = 0 is trival), where one of +d/-d is the smallest positive or largest negative number of the original solution of [S1, ..., S(2^n)]
 # - given Sp-d = 0 for some p in [1, 2^n] and Sq-(-d) = 0 for some q in [1, 2^n]
 #   assume d is a number of the original solution of [S1, ..., S(2^n)] (the proof where -d is a number of the original solution is vice versa)
 #   let Sq = x1+...+xi where 1 <= i <= n-1
