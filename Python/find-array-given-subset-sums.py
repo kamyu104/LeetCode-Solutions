@@ -1,6 +1,24 @@
 # Time:  O(n * 2^n), len(sums) = 2^n
 # Space: O(1)
 
+# [proof]
+# - let d = sorted_sums[0]-sorted_sums[1]
+# - given Sp-d = 0 for some p in [1, 2^n] and Sq-(-d) = 0 for some q in [1, 2^n]
+#   let d is a number of a solution of [S1, ..., S(2^n)]
+#   since -d = Sq, let Sq = x1+...+xi where 1 <= i <= n-1
+#   let [d]+[x1, ..., xi]+[x(i+1), ..., x(n-1)] is a solution
+#   => new_sum([S1-d,....S(2^n)-d])
+#      = subset_sum([x1, ..., xi]+[x(i+1), ..., x(n-1)])
+#   if we choose -d as a number of a solution of [S1, ..., S(2^n)]
+#   => new_sum([S1-(-d), ..., S(2^n)-(-d)])
+#      = new_sum([S1-(x1+x2+...xi), ..., S(2^n)-(x1+x2+...xi)])
+#      = subset_sum([(-x1), ..., (-xi)]+[x(i+1), x(n-1)])
+#      => [-d]+[(-x1), ..., (-xi)]+[x(i+1), x(n-1)] is another solution
+
+# [conclusion]
+# - if +d/-d both contain zero, we can choose either one
+# - if only one of +d/-d contains zero, we can only choose the one with zero since subset_sum must contain zero
+
 # optimized from solution4 (not using dict), runtime: 1040 ms
 class Solution(object):
     def recoverArray(self, n, sums):
@@ -51,22 +69,22 @@ class Solution2(object):
         dp = [0]*(max_sum-min_sum+1)
         for x in sums:
             dp[x-min_sum] += 1
-        sorted_nums = [x for x in xrange(min_sum, max_sum+1) if dp[x-min_sum]]  # Time: O(r)
+        sorted_sums = [x for x in xrange(min_sum, max_sum+1) if dp[x-min_sum]]  # Time: O(r)
         shift = 0
         result = []
         for _ in xrange(n):  # log(2^n) times, each time costs O(2^(n-len(result)))+O(r), Total Time: O(2^n + n * r)
             new_dp = [0]*(max_sum-min_sum+1)
-            new_sorted_nums = []
-            new_shift = sorted_nums[0]-sorted_nums[1] if dp[sorted_nums[0]-min_sum] == 1 else 0
+            new_sorted_sums = []
+            new_shift = sorted_sums[0]-sorted_sums[1] if dp[sorted_sums[0]-min_sum] == 1 else 0
             assert(new_shift <= 0)
-            for x in sorted_nums:
+            for x in sorted_sums:
                 if not dp[x-min_sum]:
                     continue
                 dp[(x-new_shift)-min_sum] -= dp[x-min_sum] if new_shift else dp[x-min_sum]//2
                 new_dp[(x-new_shift)-min_sum] = dp[x-min_sum]
-                new_sorted_nums.append(x-new_shift)
+                new_sorted_sums.append(x-new_shift)
             dp = new_dp
-            sorted_nums = new_sorted_nums
+            sorted_sums = new_sorted_sums
             if dp[shift-min_sum]:  # contain 0, choose this side
                 result.append(new_shift)
             else:  # contain no 0, choose another side and shift 0 offset
@@ -95,22 +113,22 @@ class Solution3(object):
         if basis > 1:
             for k in dp.iterkeys():
                 dp[k] //= basis
-        sorted_nums = sorted(dp.iterkeys())  # Time: O(2^n * log(2^n)) = O(n * 2^n)
+        sorted_sums = sorted(dp.iterkeys())  # Time: O(2^n * log(2^n)) = O(n * 2^n)
         shift = 0
         result = [0]*(basis.bit_length()-1)
         for _ in xrange(n-len(result)):  # log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
             new_dp = {}
-            new_sorted_nums = []
-            new_shift = sorted_nums[0]-sorted_nums[1]
+            new_sorted_sums = []
+            new_shift = sorted_sums[0]-sorted_sums[1]
             assert(new_shift < 0)
-            for x in sorted_nums:
+            for x in sorted_sums:
                 if not dp[x]:
                     continue
                 dp[x-new_shift] -= dp[x]
                 new_dp[x-new_shift] = dp[x]
-                new_sorted_nums.append(x-new_shift)
+                new_sorted_sums.append(x-new_shift)
             dp = new_dp
-            sorted_nums = new_sorted_nums
+            sorted_sums = new_sorted_sums
             if shift in dp:  # contain 0, choose this side
                 result.append(new_shift)
             else:  # contain no 0, choose another side and shift 0 offset
@@ -133,22 +151,22 @@ class Solution4(object):
         :rtype: List[int]
         """
         dp = {k: v for k, v in collections.Counter(sums).iteritems()}
-        sorted_nums = sorted(dp.iterkeys())  # Time: O(2^n * log(2^n)) = O(n * 2^n)
+        sorted_sums = sorted(dp.iterkeys())  # Time: O(2^n * log(2^n)) = O(n * 2^n)
         shift = 0
         result = []
         for _ in xrange(n):  # log(2^n) times, each time costs O(2^(n-len(result))), Total Time: O(2^n)
             new_dp = {}
-            new_sorted_nums = []
-            new_shift = sorted_nums[0]-sorted_nums[1] if dp[sorted_nums[0]] == 1 else 0
+            new_sorted_sums = []
+            new_shift = sorted_sums[0]-sorted_sums[1] if dp[sorted_sums[0]] == 1 else 0
             assert(new_shift <= 0)
-            for x in sorted_nums:
+            for x in sorted_sums:
                 if not dp[x]:
                     continue
                 dp[x-new_shift] -= dp[x] if new_shift else dp[x]//2
                 new_dp[x-new_shift] = dp[x]
-                new_sorted_nums.append(x-new_shift)
+                new_sorted_sums.append(x-new_shift)
             dp = new_dp
-            sorted_nums = new_sorted_nums
+            sorted_sums = new_sorted_sums
             if shift in dp:  # contain 0, choose this side
                 result.append(new_shift)
             else:  # contain no 0, choose another side and shift 0 offset
