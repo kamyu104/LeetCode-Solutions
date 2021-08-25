@@ -16,7 +16,7 @@
 #      => [-d]+[(-x1), ..., (-xi)]+[x(i+1), ..., x(n-1)] is also a solution
 #
 # [conclusion]
-# - if new_sums with +d/-d both contain zero, we can choose either one
+# - if new_sums with +d/-d (including d = 0) both contain zero, we can choose either one
 # - if only one of new_sums with +d/-d contains zero, we can only choose the one with zero since subset_sums must contain zero
 
 # optimized from solution4 (not using dict), runtime: 1040 ms
