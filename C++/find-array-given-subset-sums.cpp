@@ -5,7 +5,7 @@
 // - let d = sorted_sums[0]-sorted_sums[1]
 // - given Sp-d = 0 for some p in [1, 2^n] and Sq-(-d) = 0 for some q in [1, 2^n]
 //   let d is a number of a solution of [S1, ..., S(2^n)]
-//   since -d = Sq, let Sq = x1+...+xi where 1 <= i <= n-1
+//   let Sq = x1+...+xi where 1 <= i <= n-1
 //   let [d]+[x1, ..., xi]+[x(i+1), ..., x(n-1)] is a solution
 //   => new_sum([S1-d,....S(2^n)-d])
 //      = subset_sum([x1, ..., xi]+[x(i+1), ..., x(n-1)])
