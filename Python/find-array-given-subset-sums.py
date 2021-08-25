@@ -2,7 +2,7 @@
 # Space: O(1)
 
 # [proof]
-# - let d = sorted_sums[0]-sorted_sums[1] and d != 0
+# - let d = sorted_sums[0]-sorted_sums[1] and d != -d
 # - given Sp-d = 0 for some p in [1, 2^n] and Sq-(-d) = 0 for some q in [1, 2^n]
 #   let d is a number of a solution of [S1, ..., S(2^n)]
 #   let Sq = x1+...+xi where 1 <= i <= n-1
