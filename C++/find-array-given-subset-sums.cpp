@@ -6,7 +6,7 @@
 // - given Sp-d = 0 for some p in [1, 2^n] and Sq-(-d) = 0 for some q in [1, 2^n]
 //   assume d is a number of the original solution of [S1, ..., S(2^n)] (the proof where -d is a number of the original solution is vice versa)
 //   let Sq = x1+...+xi where 1 <= i <= n-1
-//   let [d]+[x1, ..., xi]+[x(i+1), ..., x(n-1)] is the original solution
+//   let [d]+[x1, ..., xi]+[x(i+1), ..., x(n-1)] be the original solution
 //   => new_sums([S1, ..., S(2^n)], d)
 //      = subset_sums([x1, ..., xi]+[x(i+1), ..., x(n-1)])
 //   if we choose -d as a number of a solution of [S1, ..., S(2^n)]
