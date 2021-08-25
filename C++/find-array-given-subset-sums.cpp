@@ -1,6 +1,24 @@
 // Time:  O(n * 2^n), len(sums) = 2^n
 // Space: O(1)
 
+// [proof]
+// - let d = sorted_sums[0]-sorted_sums[1]
+// - given Sp-d = 0 for some p in [1, 2^n] and Sq-(-d) = 0 for some q in [1, 2^n]
+//   let d is a number of a solution of [S1, ..., S(2^n)]
+//   since -d = Sq, let Sq = x1+x2+...xi
+//   let [d]+[x1, ..., xi]+[x(i+1), ..., x(n-1)] is a solution
+//   => new_sum([S1-d,....S(2^n)-d])
+//      = subset_sum([x1, ..., xi]+[x(i+1), ..., x(n-1)])
+//   if we choose -d as a number of a solution of [S1, ..., S(2^n)]
+//   => new_sum([S1-(-d), ..., S(2^n)-(-d)])
+//      = new_sum([S1-(x1+x2+...xi), ..., S(2^n)-(x1+x2+...xi)])
+//      = subset_sum([(-x1), ..., (-xi)]+[x(i+1), x(n-1)])
+//      => [-d]+[(-x1), ..., (-xi)]+[x(i+1), x(n-1)] is another solution
+//
+// [conclusion]
+// - if +d/-d both contain zero, we can choose either one
+// - if only one of +d/-d contains zero, we can only choose the one with zero since subset_sum must contain zero
+
 // optimized from solution4 (not using unordered_map), runtime: 188 ms
 class Solution {
 public:
