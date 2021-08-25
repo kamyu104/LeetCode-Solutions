@@ -12,8 +12,8 @@
 #   if we choose -d as a number of a solution of [S1, ..., S(2^n)]
 #   => new_sums([S1, ..., S(2^n)], -d)
 #      = new_sums([S1, ..., S(2^n)], -(x1+...+xi))
-#      = subset_sums([(-x1), ..., (-xi)]+[x(i+1), x(n-1)])
-#      => [-d]+[(-x1), ..., (-xi)]+[x(i+1), x(n-1)] is also a solution
+#      = subset_sums([(-x1), ..., (-xi)]+[x(i+1), ..., x(n-1)])
+#      => [-d]+[(-x1), ..., (-xi)]+[x(i+1), ..., x(n-1)] is also a solution
 #
 # [conclusion]
 # - if new_sums with +d/-d both contain zero, we can choose either one
