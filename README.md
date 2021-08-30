@@ -1767,7 +1767,7 @@
 1977| [Number of Ways to Separate Numbers](https://leetcode.com/problems/number-of-ways-to-separate-numbers/)|[C++](./C++/number-of-ways-to-separate-numbers.cpp) [Python](./Python/number-of-ways-to-separate-numbers.py)| _O(n^2)_     | _O(n^2)_         | Hard         | | DP |
 1981| [Minimize the Difference Between Target and Chosen Elements](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/)|[C++](./C++/minimize-the-difference-between-target-and-chosen-elements.cpp) [Python](./Python/minimize-the-difference-between-target-and-chosen-elements.py)| _O(t * m * n)_     | _O(t)_         | Medium         | | DP, Pruning |
 1986| [Minimum Number of Work Sessions to Finish the Tasks](https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/)|[C++](./C++/minimum-number-of-work-sessions-to-finish-the-tasks.cpp) [Python](./Python/minimum-number-of-work-sessions-to-finish-the-tasks.py)| _O(n * 2^n)_     | _O(2^n)_         | Medium         | | DP |
-1987| [Number of Unique Good Subsequences](https://leetcode.com/problems/number-of-unique-good-subsequences/)|[C++](./C++/number-of-unique-good-subsequences.cpp) [Python](./Python/number-of-unique-good-subsequences.py)| _O(n)_     | _O(1)_         | Hard         | | DP |
+1987| [Number of Unique Good Subsequences](https://leetcode.com/problems/number-of-unique-good-subsequences/)|[C++](./C++/number-of-unique-good-subsequences.cpp) [Python](./Python/number-of-unique-good-subsequences.py)| _O(n)_     | _O(1)_         | Hard         | variant of [Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/) | DP |
 
 <br/>
 <div align="right">
