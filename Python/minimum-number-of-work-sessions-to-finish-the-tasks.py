@@ -1,7 +1,7 @@
 # Time:  O(n * 2^n)
 # Space: O(2^n)
 
-class Solution2(object):
+class Solution(object):
     def minSessions(self, tasks, sessionTime):
         """
         :type tasks: List[int]
