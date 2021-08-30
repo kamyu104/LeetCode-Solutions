@@ -13,5 +13,5 @@ class Solution(object):
         MOD = 10**9+7
         result, dp = 0, [0]*26
         for c in S:
-            result, dp[ord(c)-ord('a')] = (result+1+(result-dp[ord(c)-ord('a')]))%MOD, (result+1)%MOD
+            result, dp[ord(c)-ord('a')] = (result+((result+1)-dp[ord(c)-ord('a')]))%MOD, (result+1)%MOD
         return result
