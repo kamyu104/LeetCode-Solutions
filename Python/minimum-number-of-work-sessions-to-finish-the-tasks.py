@@ -36,7 +36,7 @@ class Solution2(object):
         # dp[mask][0]: min number of sessions by choosing tasks in mask bitset
         # dp[mask][1]: min used time of last session by choosing tasks in mask bitset
         dp = [[float("inf")]*2 for _ in xrange(1<<len(tasks))]
-        dp[0] = [1, 0]
+        dp[0] = [0, sessionTime]
         for mask in xrange(len(dp)-1):
             basis = 1
             for task in tasks:
