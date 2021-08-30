@@ -9,9 +9,9 @@ public:
         int result = 0;  // sum of dp
         for (const auto& c : S) {
             tie(result, dp[c - 'a']) =
-                make_pair(((2 * result) % M - dp[c - 'a'] + 1) % M,
+                make_pair(((2 * result) % M - dp[c - 'a'] + 1 + M) % M,
                           (result + 1) % M);
         }
-        return (result + M) % M;
+        return result;
     }
 };
