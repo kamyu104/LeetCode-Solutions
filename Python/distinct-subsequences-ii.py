@@ -10,8 +10,8 @@ class Solution(object):
         :type S: str
         :rtype: int
         """
-        M = 10**9 + 7
+        MOD = 10**9+7
         result, dp = 0, [0]*26
         for c in S:
-            result, dp[ord(c)-ord('a')] = 2*result-dp[ord(c)-ord('a')]+1, result+1
-        return result % M
+            result, dp[ord(c)-ord('a')] = (result+1+(result-dp[ord(c)-ord('a')]))%MOD, (result+1)%MOD
+        return result
