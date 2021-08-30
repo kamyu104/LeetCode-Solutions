@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1982%20%2F%201982-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1988%20%2F%201988-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -347,6 +347,7 @@
 1958 | [Check if Move is Legal](https://leetcode.com/problems/check-if-move-is-legal/) | [C++](./C++/check-if-move-is-legal.cpp) [Python](./Python/check-if-move-is-legal.py) | _O(1)_ | _O(1)_ | Medium | |
 1966 | [Binary Searchable Numbers in an Unsorted Array](https://leetcode.com/problems/binary-searchable-numbers-in-an-unsorted-array/) | [C++](./C++/binary-searchable-numbers-in-an-unsorted-array.cpp) [Python](./Python/binary-searchable-numbers-in-an-unsorted-array.py) | _O(n)_ | _O(n)_ | Medium |🔒| Prefix Sum |
 1970 | [Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/) | [C++](./C++/last-day-where-you-can-still-cross.cpp) [Python](./Python/last-day-where-you-can-still-cross.py) | _O(m * n)_ | _O(m * n)_ | Hard | variant of [Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit/) | Union Find
+1983 | [Widest Pair of Indices With Equal Range Sum](https://leetcode.com/problems/widest-pair-of-indices-with-equal-range-sum/) | [C++](./C++/widest-pair-of-indices-with-equal-range-sum.cpp) [Python](./Python/widest-pair-of-indices-with-equal-range-sum.py) | _O(n)_ | _O(n)_ | Medium | variant of [Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/), 🔒 | Prefix Sum
 
 <br/>
 <div align="right">
@@ -1119,6 +1120,7 @@
 1942| [The Number of the Smallest Unoccupied Chair](https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/) | [C++](./C++/the-number-of-the-smallest-unoccupied-chair.cpp) [Python](./Python/the-number-of-the-smallest-unoccupied-chair.py) | _O(nlogn)_   | _O(n)_        | Medium         || Line Sweep, Heap
 1943| [Describe the Painting](https://leetcode.com/problems/describe-the-painting/) | [C++](./C++/describe-the-painting.cpp) [Python](./Python/describe-the-painting.py) | _O(nlogn)_   | _O(n)_        | Medium         || Line Sweep
 1968| [Array With Elements Not Equal to Average of Neighbors](https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/) | [C++](./C++/array-with-elements-not-equal-to-average-of-neighbors.cpp) [Python](./Python/array-with-elements-not-equal-to-average-of-neighbors.py) | _O(n)_  on average | _O(1)_        | Medium         | variant of [Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/) | Quick Select, Tri Partition |
+1985 | [Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/) | [C++](./C++/find-the-kth-largest-integer-in-the-array.cpp) [Python](./Python/find-the-kth-largest-integer-in-the-array.py) | _O(n)_ on average| _O(n)_ | Medium | | Quick Select |
 
 <br/>
 <div align="right">
@@ -1196,6 +1198,7 @@
 1868 | [Product of Two Run-Length Encoded Arrays](https://leetcode.com/problems/product-of-two-run-length-encoded-arrays/) | [C++](./C++/product-of-two-run-length-encoded-arrays.cpp) [Python](./Python/product-of-two-run-length-encoded-arrays.py) | _O(m + n)_ | _O(1)_ | Medium | 🔒 | Two Pointers |
 1885 | [Count Pairs in Two Arrays](https://leetcode.com/problems/count-pairs-in-two-arrays/) | [C++](./C++/count-pairs-in-two-arrays.cpp) [Python](./Python/count-pairs-in-two-arrays.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Two Pointers |
 1888 | [Minimum Number of Flips to Make the Binary String Alternatings](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | [C++](./C++/minimum-number-of-flips-to-make-the-binary-string-alternating.cpp) [Python](./Python/minimum-number-of-flips-to-make-the-binary-string-alternating.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window |
+1984 | [Minimum Difference Between Highest and Lowest of K Scores](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [C++](./C++/minimum-difference-between-highest-and-lowest-of-k-scores.cpp) [Python](./Python/minimum-difference-between-highest-and-lowest-of-k-scores.py) | _O(nlogn)_ | _O(1)_ | Easy | | Two Pointers, Sliding Window |
 
 <br/>
 <div align="right">
@@ -1763,6 +1766,8 @@
 1960| [Maximum Product of the Length of Two Palindromic Substrings](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings/)|[C++](./C++/maximum-product-of-the-length-of-two-palindromic-substrings.cpp) [Python](./Python/maximum-product-of-the-length-of-two-palindromic-substrings.py)| _O(n)_     | _O(n)_         | Hard         | | `Manacher's Algorithm`, DP |
 1977| [Number of Ways to Separate Numbers](https://leetcode.com/problems/number-of-ways-to-separate-numbers/)|[C++](./C++/number-of-ways-to-separate-numbers.cpp) [Python](./Python/number-of-ways-to-separate-numbers.py)| _O(n^2)_     | _O(n^2)_         | Hard         | | DP |
 1981| [Minimize the Difference Between Target and Chosen Elements](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/)|[C++](./C++/minimize-the-difference-between-target-and-chosen-elements.cpp) [Python](./Python/minimize-the-difference-between-target-and-chosen-elements.py)| _O(t * m * n)_     | _O(t)_         | Medium         | | DP, Pruning |
+1986| [Minimum Number of Work Sessions to Finish the Tasks](https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/)|[C++](./C++/minimum-number-of-work-sessions-to-finish-the-tasks.cpp) [Python](./Python/minimum-number-of-work-sessions-to-finish-the-tasks.py)| _O(n * 2^n)_     | _O(2^n)_         | Medium         | | DP |
+1987| [Number of Unique Good Subsequences](https://leetcode.com/problems/number-of-unique-good-subsequences/)|[C++](./C++/number-of-unique-good-subsequences.cpp) [Python](./Python/number-of-unique-good-subsequences.py)| _O(n)_     | _O(1)_         | Hard         | | DP |
 
 <br/>
 <div align="right">
@@ -2240,7 +2245,8 @@
 1951| [All the Pairs With the Maximum Number of Common Followers](https://leetcode.com/problems/all-the-pairs-with-the-maximum-number-of-common-followers/) | [MySQL](./MySQL/all-the-pairs-with-the-maximum-number-of-common-followers.sql) | _O(n^3)_ | _O(n^2)_       | Medium           |🔒||
 1965| [Employees With Missing Information](https://leetcode.com/problems/employees-with-missing-information/) | [MySQL](./MySQL/employees-with-missing-information.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 1972| [First and Last Call On the Same Day](https://leetcode.com/problems/first-and-last-call-on-the-same-day/) | [MySQL](./MySQL/first-and-last-call-on-the-same-day.sql) | _O(n)_ | _O(n)_       | Hard           |🔒||
-1978| [Employees Whose Manager Left the Company](https://leetcode.com/problemsemployees-whose-manager-left-the-company/) | [MySQL](./MySQL/employees-whose-manager-left-the-company.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+1978| [Employees Whose Manager Left the Company](https://leetcode.com/problems/employees-whose-manager-left-the-company/) | [MySQL](./MySQL/employees-whose-manager-left-the-company.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+1988| [Find Cutoff Score for Each School](https://leetcode.com/problems/find-cutoff-score-for-each-schooly/) | [MySQL](./MySQL/find-cutoff-score-for-each-school.sql) | _O(n * m)_ | _O(n * m)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
