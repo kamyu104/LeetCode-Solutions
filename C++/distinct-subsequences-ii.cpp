@@ -8,7 +8,7 @@ public:
         vector<int> dp(26);
         int result = 0;  // sum of dp
         for (const auto& c : S) {
-            const int delta = (result + 1 - dp[c - 'a'] + MOD) % MOD;
+            const int delta = ((result + 1) - dp[c - 'a'] + MOD) % MOD;
             tie(result, dp[c - 'a']) = pair((result + delta) % MOD, (result + 1) % MOD);
         }
         return result;
