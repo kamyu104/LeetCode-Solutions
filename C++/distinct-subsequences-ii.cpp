@@ -4,13 +4,11 @@
 class Solution {
 public:
     int distinctSubseqII(string S) {
-        static const int M = 1e9 + 7;
+        static const int MOD = 1e9 + 7;
         vector<int> dp(26);
         int result = 0;  // sum of dp
         for (const auto& c : S) {
-            tie(result, dp[c - 'a']) =
-                make_pair(((2 * result) % M - dp[c - 'a'] + 1 + M) % M,
-                          (result + 1) % M);
+            tie(result, dp[c - 'a']) = pair((result + 1 + (result - dp[c - 'a'] + MOD) % MOD) % MOD, result + 1);
         }
         return result;
     }
