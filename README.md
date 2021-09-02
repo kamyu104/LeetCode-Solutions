@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1988%20%2F%201988-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1989%20%2F%201989-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1199,7 +1199,7 @@
 1885 | [Count Pairs in Two Arrays](https://leetcode.com/problems/count-pairs-in-two-arrays/) | [C++](./C++/count-pairs-in-two-arrays.cpp) [Python](./Python/count-pairs-in-two-arrays.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Two Pointers |
 1888 | [Minimum Number of Flips to Make the Binary String Alternatings](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | [C++](./C++/minimum-number-of-flips-to-make-the-binary-string-alternating.cpp) [Python](./Python/minimum-number-of-flips-to-make-the-binary-string-alternating.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window |
 1984 | [Minimum Difference Between Highest and Lowest of K Scores](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [C++](./C++/minimum-difference-between-highest-and-lowest-of-k-scores.cpp) [Python](./Python/minimum-difference-between-highest-and-lowest-of-k-scores.py) | _O(nlogn)_ | _O(1)_ | Easy | | Two Pointers, Sliding Window |
-
+1989 | [Maximum Number of People That Can Be Caught in Tag](https://leetcode.com/problems/maximum-number-of-people-that-can-be-caught-in-tag/) | [C++](./C++/maximum-number-of-people-that-can-be-caught-in-tag.cpp) [Python](./Python/maximum-number-of-people-that-can-be-caught-in-tag.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Greedy, Two Pointers, Sliding Window
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
