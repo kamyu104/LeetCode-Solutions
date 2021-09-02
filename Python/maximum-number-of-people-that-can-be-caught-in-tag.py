@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-# greedy with two pointer solution
+# greedy with two pointers solution
 class Solution(object):
     def catchMaximumAmountofPeople(self, team, dist):
         """
