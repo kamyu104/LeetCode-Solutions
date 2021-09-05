@@ -36,12 +36,12 @@ class Solution(object):
         dp = [0]*(1<<len(primes))  # dp[i] = the number of different good subsets of which the total product equals to the product of the primes in bitset i
         dp[0] = 1
         cnts = collections.Counter(nums)
-        for x, val in cnts.iteritems():
+        for x, cnt in cnts.iteritems():
             if x == 1 or any(x%(p*p) == 0 for p in primes if p*p <= x):
                 continue
             mask = to_mask(primes, x)
             for i in xrange(len(dp)-1):
                 if i&mask:
                     continue
-                dp[i|mask] = (dp[i|mask]+val*dp[i])%MOD
+                dp[i|mask] = (dp[i|mask]+cnt*dp[i])%MOD
         return (pow(2, cnts[1], MOD))*(reduce(lambda total, x: (total+x)%MOD, dp, 0)-1)%MOD
