@@ -13,7 +13,7 @@ public:
             ++cnts[x];
         }
         for (const auto& [x, val] : cnts) {
-            if (x == 1 || any_of(cbegin(primes), cend(primes), [&x=x](const auto& p) { return p * p <= x && x % (p * p) == 0;} )) {  // &x=x is to avoid the problem that lambda function captures variables declared from structured binding
+            if (x == 1 || any_of(cbegin(primes), cend(primes), [&x=x](const auto& p) { return p * p <= x && x % (p * p) == 0;} )) {  // [&x=x] is to avoid the problem that lambda function captures variables declared from structured binding
                 continue;
             }
             const uint32_t mask = to_mask(primes, x);
