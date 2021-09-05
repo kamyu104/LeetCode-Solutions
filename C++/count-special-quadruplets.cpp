@@ -12,7 +12,7 @@ public:
         for (const auto& x : nums) {
             ++cnts[x];
         }
-        for (const auto& [x, val] : cnts) {
+        for (const auto& [x, cnt] : cnts) {
             if (x == 1 || any_of(cbegin(primes), cend(primes), [&x=x](const auto& p) { return p * p <= x && x % (p * p) == 0;} )) {  // [&x=x] is to avoid the problem that lambda function captures variables declared from structured binding
                 continue;
             }
@@ -21,7 +21,7 @@ public:
                 if (i & mask) {
                     continue;
                 }
-                dp[i | mask] = (dp[i | mask] + static_cast<uint64_t>(val) * dp[i]) % MOD;
+                dp[i | mask] = (dp[i | mask] + static_cast<uint64_t>(cnt) * dp[i]) % MOD;
             }
         }
         return powmod(2, cnts[1], MOD) * (accumulate(cbegin(dp), cend(dp), 0ull,
