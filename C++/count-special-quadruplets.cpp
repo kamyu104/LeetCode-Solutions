@@ -27,7 +27,7 @@ public:
         return powmod(2, cnts[1], MOD) * (accumulate(cbegin(dp), cend(dp), 0ull,
                                                      [](const auto& total, const auto& x) {
                                                          return (total + x) % MOD;
-                                                      }) - 1) % MOD;
+                                                     }) - 1) % MOD;
     }
 
 private:
