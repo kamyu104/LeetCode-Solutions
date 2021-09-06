@@ -1,5 +1,5 @@
 # Time:  O(n * α(n) + m * log(logm)) ~= O(n + m), m is the max of nums
-# Space: O(n)
+# Space: O(n + m)
 
 import itertools
 
