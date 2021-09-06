@@ -21,7 +21,7 @@ public:
     }
 };
 
-// Time:  O(n^2) ~ O(n^4)
+// Time:  O(n^3) ~ O(n^4)
 // Space: O(n^2)
 class Solution2 {
 public:
