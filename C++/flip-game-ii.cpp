@@ -2,7 +2,7 @@
 // Space: O(c)
 
 // The best theory solution (DP, O(n + c^2)) could be seen here:
-// https://leetcode.com/discuss/64344/theory-matters-from-backtracking-128ms-to-dp-0ms
+// https://leetcode.com/problems/flip-game-ii/discuss/73954/theory-matters-from-backtracking128ms-to-dp-0ms
 class Solution {
 public:
     bool canWin(string s) {
