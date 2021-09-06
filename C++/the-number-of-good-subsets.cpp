@@ -5,7 +5,7 @@ class Solution {
 public:
     int numberOfGoodSubsets(vector<int>& nums) {
         static const int MOD = 1e9 + 7;
-        const auto& primes = find_primes(*max_element(cbegin(nums), cend(nums)));
+        const auto& primes = sieve_of_eratosthenes(*max_element(cbegin(nums), cend(nums)));
         vector<int> dp(1 << size(primes));  // dp[i] = the number of different good subsets of which the total product equals to the product of the primes in bitset i
         dp[0] = 1;
         unordered_map<int, int> cnts;
@@ -31,7 +31,7 @@ public:
     }
 
 private:
-    vector<int> find_primes(int n) {
+    vector<int> sieve_of_eratosthenes(int n) {  // Time: O(n * log(logn)), Space: O(n)
         if (n < 2) {
             return {};
         }
