@@ -10,7 +10,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        def find_primes(n):
+        def sieve_of_eratosthenes(n):  # Time: O(n * log(logn)), Space: O(n)
             if n < 2:
                 return []
             primes = [2]
@@ -32,7 +32,7 @@ class Solution(object):
             return mask
 
         MOD = 10**9+7
-        primes = find_primes(max(nums))
+        primes = sieve_of_eratosthenes(max(nums))
         dp = [0]*(1<<len(primes))  # dp[i] = the number of different good subsets of which the total product equals to the product of the primes in bitset i
         dp[0] = 1
         cnts = collections.Counter(nums)
