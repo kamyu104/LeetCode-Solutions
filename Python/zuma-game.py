@@ -77,6 +77,7 @@ class Solution(object):
             return result
         
         board, hand = list(board), list(hand)
+        hand.sort()
         result = findMinStepHelper(board, hand, collections.defaultdict(dict))
         if result == float("inf"):
             result = findMinStepHelper2(board, hand, collections.defaultdict(dict))
