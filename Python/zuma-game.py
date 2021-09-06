@@ -1,5 +1,5 @@
-# Time:  O((b+h) * h!*(b+h-1)!/(b-1)!)
-# Space: O((b+h) * h!*(b+h-1)!/(b-1)!)
+# Time:  O((b * h) * b * b! * h!)
+# Space: O(b * b! * h!)
 
 import collections
 
