@@ -20,3 +20,27 @@ public:
         return result;
     }
 };
+
+// Time:  O(n^2) ~ O(n^3)
+// Space: O(n^2)
+class Solution2 {
+public:
+    int countQuadruplets(vector<int>& nums) {
+        int result = 0;
+        unordered_map<int, vector<int>> lookup;
+        for (int d = size(nums) - 1; d >= 3; --d) {
+            for (int c = 2; c < d; ++c) {
+                lookup[nums[d] - nums[c]].emplace_back(c);
+            }
+        }
+        for (int b = 1; b < size(nums) - 2; ++b) {
+            for (int a = 0; a < b; ++a) {
+                result += accumulate(cbegin(lookup[nums[a] + nums[b]]), cend(lookup[nums[a] + nums[b]]), 0,
+                                     [&b](const auto&total, const auto& x) {
+                                         return b < x ? total + 1 : total;
+                                     });
+            }
+        }
+        return result;
+    }
+};
