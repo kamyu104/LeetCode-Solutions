@@ -100,7 +100,7 @@ class Solution_TLE_BUT_CORRECT(object):
 import collections
 
 
-# greedy solution without proof (may not correct)
+# greedy solution without proof (possibly incorrect)
 class Solution_GREEDY_ACCEPT_BUT_NOT_PROVED(object):
     def findMinStep(self, board, hand):
         """
