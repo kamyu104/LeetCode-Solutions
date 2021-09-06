@@ -2131,6 +2131,16 @@
 0512 | [Game Play Analysis II](https://leetcode.com/problems/game-play-analysis-ii/) | [MySQL](./MySQL/game-play-analysis-ii.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 0534 | [Game Play Analysis III](https://leetcode.com/problems/game-play-analysis-iii/) | [MySQL](./MySQL/game-play-analysis-iii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
 0550 | [Game Play Analysis IV](https://leetcode.com/problems/game-play-analysis-iv/) | [MySQL](./MySQL/game-play-analysis-iv.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
+0570 | [Managers with at Least 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/) | [MySQL](./MySQL/managers-with-at-least-5-direct-reports.sql) | _O(n)_ | _O(n)_       | Medium         |🔒||
+0571 | [Find Median Given Frequency of Numbers](https://leetcode.com/problems/find-median-given-frequency-of-numbers/) | [MySQL](./MySQL/find-median-given-frequency-of-numbers.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+0574 | [Winning Candidate](https://leetcode.com/problems/winning-candidate/) | [MySQL](./MySQL/winning-candidate.sql) | _O(nlogn)_ | _O(n)_       | Medium         |🔒||
+0577 | [Employee Bonus](https://leetcode.com/problems/employee-bonus/) | [MySQL](./MySQL/employee-bonus.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+0578 | [Get Highest Answer Rate Question](https://leetcode.com/problems/get-highest-answer-rate-question/) | [MySQL](./MySQL/get-highest-answer-rate-question.sql) | _O(nlogn)_ | _O(n)_       | Medium         |🔒||
+0579 | [Find Cumulative Salary of an Employee](https://leetcode.com/problems/find-cumulative-salary-of-an-employee/) | [MySQL](./MySQL/find-cumulative-salary-of-an-employee.sql) | _O(n^2)_ | _O(n)_       | Hard           |🔒||
+0580 | [Count Student Number in Departments](https://leetcode.com/problems/count-student-number-in-departments/) | [MySQL](./MySQL/count-student-number-in-departments.sql) | _O(s + dlogd)_ | _O(s + d)_       | Medium         |🔒||
+0584 | [Find Customer Referee](https://leetcode.com/problems/find-customer-referee/) | [MySQL](./MySQL/find-customer-referee.sql) | _O(n)_ | _O(1)_       | Easy           |🔒||
+0585 | [Investments in 2016](https://leetcode.com/problems/investments-in-2016/) | [MySQL](./MySQL/investments-in-2016.sql) | _O(n^2)_ | _O(n)_       | Medium         |🔒||
+0586 | [Customer Placing the Largest Number of Orders](https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/) | [MySQL](./MySQL/customer-placing-the-largest-number-of-orders.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 1045 | [Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products/) | [MySQL](./MySQL/customers-who-bought-all-products.sql) | _O(n + k)_ | _O(n + k)_       | Medium           |🔒| |
 1050 | [Actors and Directors Who Cooperated At Least Three Times](https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/) | [MySQL](./MySQL/actors-and-directors-who-cooperated-at-least-three-times.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1068 | [Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/) | [MySQL](./MySQL/product-sales-analysis-i.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒| |
