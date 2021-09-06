@@ -2131,6 +2131,7 @@
 0512 | [Game Play Analysis II](https://leetcode.com/problems/game-play-analysis-ii/) | [MySQL](./MySQL/game-play-analysis-ii.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 0534 | [Game Play Analysis III](https://leetcode.com/problems/game-play-analysis-iii/) | [MySQL](./MySQL/game-play-analysis-iii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| |
 0550 | [Game Play Analysis IV](https://leetcode.com/problems/game-play-analysis-iv/) | [MySQL](./MySQL/game-play-analysis-iv.sql) | _O(n)_ | _O(n)_       | Medium           |🔒| |
+0569 | [Median Employee Salary](https://leetcode.com/problems/median-employee-salary/) | [MySQL](./MySQL/median-employee-salary.sql) | _O(nlogn)_ | _O(n)_       | Hard         |🔒||
 0570 | [Managers with at Least 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/) | [MySQL](./MySQL/managers-with-at-least-5-direct-reports.sql) | _O(n)_ | _O(n)_       | Medium         |🔒||
 0571 | [Find Median Given Frequency of Numbers](https://leetcode.com/problems/find-median-given-frequency-of-numbers/) | [MySQL](./MySQL/find-median-given-frequency-of-numbers.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 0574 | [Winning Candidate](https://leetcode.com/problems/winning-candidate/) | [MySQL](./MySQL/winning-candidate.sql) | _O(nlogn)_ | _O(n)_       | Medium         |🔒||
