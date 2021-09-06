@@ -58,7 +58,7 @@ private:
 // Time:  O((b+h) * h!*(b+h-1)!/(b-1)!)
 // Space: O((b+h) * h!*(b+h-1)!/(b-1)!)
 // brute force solution
-class Solution_TLE_BUT_CORRECT {
+class Solution_TLE {
 public:
     int findMinStep(string board, string hand) {
         unordered_map<string, unordered_map<string, int>> lookup;
