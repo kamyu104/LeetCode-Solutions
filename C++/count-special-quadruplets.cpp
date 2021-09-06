@@ -21,16 +21,16 @@ public:
     }
 };
 
-// Time:  O(n^2) ~ O(n^3)
+// Time:  O(n^2) ~ O(n^4)
 // Space: O(n^2)
 class Solution2 {
 public:
     int countQuadruplets(vector<int>& nums) {
         int result = 0;
-        unordered_map<int, vector<int>> lookup;
+        unordered_map<int, unordered_set<int>> lookup;
         for (int d = size(nums) - 1; d >= 3; --d) {
             for (int c = 2; c < d; ++c) {
-                lookup[nums[d] - nums[c]].emplace_back(c);
+                lookup[nums[d] - nums[c]].emplace(c);
             }
         }
         for (int b = 1; b < size(nums) - 2; ++b) {
