@@ -2141,6 +2141,16 @@
 0584 | [Find Customer Referee](https://leetcode.com/problems/find-customer-referee/) | [MySQL](./MySQL/find-customer-referee.sql) | _O(n)_ | _O(1)_       | Easy           |🔒||
 0585 | [Investments in 2016](https://leetcode.com/problems/investments-in-2016/) | [MySQL](./MySQL/investments-in-2016.sql) | _O(n^2)_ | _O(n)_       | Medium         |🔒||
 0586 | [Customer Placing the Largest Number of Orders](https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/) | [MySQL](./MySQL/customer-placing-the-largest-number-of-orders.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+0595 | [Big Countries](https://leetcode.com/problems/big-countries/) | [MySQL](./MySQL/big-countries.sql) | _O(n)_ | _O(1)_       | Easy           |  ||
+0596 | [Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/) | [MySQL](./MySQL/classes-more-than-5-students.sql) | _O(n)_ | _O(n)_       | Easy           |  ||
+0597 | [Friend Requests I: Overall Acceptance Rate](https://leetcode.com/problems/friend-requests-i-overall-acceptance-rate/) | [MySQL](./MySQL/friend-requests-i-overall-acceptance-rate.sql) | _O(rlogr + aloga)_ | _O(r + a)_       | Easy           |🔒||
+0601 | [Human Traffic of Stadium](https://leetcode.com/problems/human-traffic-of-stadium/) | [MySQL](./MySQL/human-traffic-of-stadium.sql) | _O(n^3)_ | _O(n^3)_       | Hard           |  ||
+0602 | [Friend Requests II: Who Has the Most Friends](https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/) | [MySQL](./MySQL/friend-requests-ii-who-has-the-most-friends.sql) | _O(nlogn)_ | _O(n)_       | Medium         |🔒||
+0603 | [Consecutive Available Seats](https://leetcode.com/problems/consecutive-available-seats/) | [MySQL](./MySQL/consecutive-available-seats.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+0607 | [Sales Person](https://leetcode.com/problems/sales-person/) | [MySQL](./MySQL/sales-person.sql) | _O(s * o)_ | _O(s + o)_       | Easy           |🔒||
+0608 | [Tree Node](https://leetcode.com/problems/tree-node/) | [MySQL](./MySQL/tree-node.sql) | _O(n^2)_ | _O(n)_       | Medium         |🔒||
+0610 | [Triangle Judgement](https://leetcode.com/problems/triangle-judgement/) | [MySQL](./MySQL/triangle-judgement.sql) | _O(n)_ | _O(1)_       | Easy           |🔒||
+0612 | [Shortest Distance in a Plane](https://leetcode.com/problems/shortest-distance-in-a-plane/) | [MySQL](./MySQL/shortest-distance-in-a-plane.sql) | _O(n^2)_ | _O(n^2)_       | Medium         |🔒||
 1045 | [Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products/) | [MySQL](./MySQL/customers-who-bought-all-products.sql) | _O(n + k)_ | _O(n + k)_       | Medium           |🔒| |
 1050 | [Actors and Directors Who Cooperated At Least Three Times](https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/) | [MySQL](./MySQL/actors-and-directors-who-cooperated-at-least-three-times.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1068 | [Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/) | [MySQL](./MySQL/product-sales-analysis-i.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒| |
