@@ -4,7 +4,7 @@
 import collections
 
 
-# brute force solution with optimization
+# fixed greedy solution
 class Solution(object):
     def findMinStep(self, board, hand):
         """
