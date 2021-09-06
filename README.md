@@ -350,8 +350,8 @@
 1970| [Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/) | [C++](./C++/last-day-where-you-can-still-cross.cpp) [Python](./Python/last-day-where-you-can-still-cross.py) | _O(m * n)_ | _O(m * n)_ | Hard | variant of [Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit/) | Union Find
 1983| [Widest Pair of Indices With Equal Range Sum](https://leetcode.com/problems/widest-pair-of-indices-with-equal-range-sum/) | [C++](./C++/widest-pair-of-indices-with-equal-range-sum.cpp) [Python](./Python/widest-pair-of-indices-with-equal-range-sum.py) | _O(n)_ | _O(n)_ | Medium | variant of [Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/), 🔒 | Prefix Sum
 1991| [Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array/) | [C++](./C++/find-the-middle-index-in-array.cpp) [Python](./Python/find-the-middle-index-in-array.py) | _O(n)_ | _O(1)_ | Easy | | Prefix Sum
-1992| [Find All Groups of Farmland](https://leetcode.com/problems/find-all-groups-of-farmland/) | [C++](./C++/find-all-groups-of-farmland) [Python](./Python/find-all-groups-of-farmland.py) | _O(m * n)_ | _O(1)_ | Medium | variant of [Number of Islands](https://leetcode.com/problems/number-of-islands/) | 
-1998| [GCD Sort of an Array](https://leetcode.com/problems/gcd-sort-of-an-array/) | [C++](./C++/gcd-sort-of-an-array) [Python](./Python/gcd-sort-of-an-array.py) | _O(n + m)_ | _O(n + m)_ | Hard |  | Union Find, `Sieve of Eratosthenes`
+1992| [Find All Groups of Farmland](https://leetcode.com/problems/find-all-groups-of-farmland/) | [C++](./C++/find-all-groups-of-farmland.cpp) [Python](./Python/find-all-groups-of-farmland.py) | _O(m * n)_ | _O(1)_ | Medium | variant of [Number of Islands](https://leetcode.com/problems/number-of-islands/) | 
+1998| [GCD Sort of an Array](https://leetcode.com/problems/gcd-sort-of-an-array/) | [C++](./C++/gcd-sort-of-an-array.cpp) [Python](./Python/gcd-sort-of-an-array.py) | _O(n + m)_ | _O(n + m)_ | Hard |  | Union Find, `Sieve of Eratosthenes`
 
 <br/>
 <div align="right">
@@ -872,6 +872,7 @@
 1925| [Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/)      | [C++](./C++/count-square-sum-triples.cpp) [Python](./Python/count-square-sum-triples.py)      | _O(n^2)_         | _O(n)_          | Easy         ||
 1930| [Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/)      | [C++](./C++/unique-length-3-palindromic-subsequences.cpp) [Python](./Python/unique-length-3-palindromic-subsequences.py)      | _O(n)_         | _O(1)_          | Medium         ||
 1941| [Check if All Characters Have Equal Number of Occurrences](https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/)      | [C++](./C++/check-if-all-characters-have-equal-number-of-occurrences.cpp) [Python](./Python/check-if-all-characters-have-equal-number-of-occurrences.py)      | _O(n)_         | _O(1)_          | Easy         ||
+1995| [Count Special Quadruplets](https://leetcode.com/problems/count-special-quadruplets/)         | [C++](./C++/count-special-quadruplets.cpp) [Python](./Python/count-special-quadruplets.py)        | _O(n^3)_    | _O(n)_    | Easy         | variant of [4 Sum](https://leetcode.com/problems/4sum/) |
 
 <br/>
 <div align="right">
@@ -1204,7 +1205,6 @@
 1888| [Minimum Number of Flips to Make the Binary String Alternatings](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | [C++](./C++/minimum-number-of-flips-to-make-the-binary-string-alternating.cpp) [Python](./Python/minimum-number-of-flips-to-make-the-binary-string-alternating.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window |
 1984| [Minimum Difference Between Highest and Lowest of K Scores](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [C++](./C++/minimum-difference-between-highest-and-lowest-of-k-scores.cpp) [Python](./Python/minimum-difference-between-highest-and-lowest-of-k-scores.py) | _O(nlogn)_ | _O(1)_ | Easy | | Two Pointers, Sliding Window |
 1989| [Maximum Number of People That Can Be Caught in Tag](https://leetcode.com/problems/maximum-number-of-people-that-can-be-caught-in-tag/) | [C++](./C++/maximum-number-of-people-that-can-be-caught-in-tag.cpp) [Python](./Python/maximum-number-of-people-that-can-be-caught-in-tag.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Greedy, Two Pointers, Sliding Window
-1995| [Count Special Quadruplets](https://leetcode.com/problems/count-special-quadruplets/)         | [C++](./C++/count-special-quadruplets.cpp) [Python](./Python/count-special-quadruplets.py)        | _O(n^3)_    | _O(n)_    | Easy         | variant of [4 Sum](https://leetcode.com/problems/4sum/) | Two Pointers
 
 <br/>
 <div align="right">
@@ -2078,7 +2078,7 @@
 1845| [Seat Reservation Manager](https://leetcode.com/problems/seat-reservation-manager/) | [C++](./C++/seat-reservation-manager.cpp) [Python](./Python/seat-reservation-manager.py) | ctor: _O(n)_<br>reserve: _O(logn)_<br>unreserve: _O(logn)_ | _O(n)_| Medium | | Heap
 1865| [Finding Pairs With a Certain Sum](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/) | [C++](./C++/finding-pairs-with-a-certain-sum.cpp) [Python](./Python/finding-pairs-with-a-certain-sum.py) | ctor: _O(n1 + n2)_<br>add: _O(1)_<br>count: _O(n1)_ | _O(n1 + n2)_| Medium | | Hash Table
 1912| [Design Movie Rental System](https://leetcode.com/problems/design-movie-rental-system/) | [C++](./C++/design-movie-rental-system.cpp) [Python](./Python/design-movie-rental-system.py) | ctor: _O(nlogn)_<br>search: _O(logn)_<br>rent: _O(logn)_<br>drop: _O(logn)_<br>report: _O(logn)_ | _O(n)_| Hard | | Ordered List
-1993| [Operations on Tree](https://leetcode.com/problems/operations-on-tree/) | [C++](./C++/operations-on-tree.cpp) [Python](./Python/operations-on-tree.py) | ctor: _O(n)_<br>lock: _O(1)_<br>unlock: _O(1)_<br>upgrad: _O(n)_ | _O(n)_| Medium | |
+1993| [Operations on Tree](https://leetcode.com/problems/operations-on-tree/) | [C++](./C++/operations-on-tree.cpp) [Python](./Python/operations-on-tree.py) | ctor: _O(n)_<br>lock: _O(1)_<br>unlock: _O(1)_<br>upgrade: _O(n)_ | _O(n)_| Medium | |
 
 <br/>
 <div align="right">
