@@ -35,16 +35,16 @@ private:
     }
     
     string shrink(string s) {  // Time: O(n^2), Space: O(1)
-        bool is_stopped = false;
-        while (!is_stopped) {
-            is_stopped = true;
+        bool changed = true;
+        while (changed) {
+            changed = false;
             for (int start = 0, i = 0; start < size(s); ++start) {
                 while(i < size(s) && s[start] == s[i]) {
                     ++i;
                 }
                 if (i - start >= 3) {
                     s = s.substr(0, start) + s.substr(i); 
-                    is_stopped = false;
+                    changed = true;
                     break;
                 } 
             }
