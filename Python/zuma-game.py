@@ -30,17 +30,12 @@ class Solution(object):
             return result
 
         def findMinStepHelper2(board, hand, lookup):
-            if not board: return 0
-            if not hand: return float("inf")
-            if tuple(hand) in lookup[tuple(board)]: return lookup[tuple(board)][tuple(hand)]
-
             result = float("inf")
             for i in xrange(len(hand)):
                 for j in xrange(len(board)+1):
                     next_board = shrink(board[0:j] + hand[i:i+1] + board[j:])
                     next_hand = hand[0:i] + hand[i+1:]
                     result = min(result, findMinStepHelper(next_board, next_hand, lookup) + 1)
-            lookup[tuple(board)][tuple(hand)] = result
             return result
 
         def find(board, c, j):
