@@ -2151,6 +2151,14 @@
 0608 | [Tree Node](https://leetcode.com/problems/tree-node/) | [MySQL](./MySQL/tree-node.sql) | _O(n^2)_ | _O(n)_       | Medium         |🔒||
 0610 | [Triangle Judgement](https://leetcode.com/problems/triangle-judgement/) | [MySQL](./MySQL/triangle-judgement.sql) | _O(n)_ | _O(1)_       | Easy           |🔒||
 0612 | [Shortest Distance in a Plane](https://leetcode.com/problems/shortest-distance-in-a-plane/) | [MySQL](./MySQL/shortest-distance-in-a-plane.sql) | _O(n^2)_ | _O(n^2)_       | Medium         |🔒||
+0613 | [Shortest Distance in a Line](https://leetcode.com/problems/shortest-distance-in-a-line/) | [MySQL](./MySQL/shortest-distance-in-a-line.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+0614 | [Second Degree Follower](https://leetcode.com/problems/second-degree-follower/) | [MySQL](./MySQL/second-degree-follower.sql) | _O(nlogn)_ | _O(n)_       | Medium         |🔒||
+0615 | [Average Salary: Departments VS Company](https://leetcode.com/problems/average-salary-departments-vs-company/) | [MySQL](./MySQL/average-salary-departments-vs-company.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+0618 | [Students Report By Geography](https://leetcode.com/problems/students-report-by-geography/) | [MySQL](./MySQL/students-report-by-geography.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+0619 | [Biggest Single Number](https://leetcode.com/problems/biggest-single-number/) | [MySQL](./MySQL/biggest-single-number.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+0620 | [Not Boring Movies](https://leetcode.com/problems/not-boring-movies/) | [MySQL](./MySQL/not-boring-movies.sql) | _O(nlogn)_ | _O(1)_       | Easy           |  ||
+0626 | [Exchange Seats](https://leetcode.com/problems/exchange-seats/) | [MySQL](./MySQL/exchange-seats.sql) | _O(nlogn)_ | _O(n)_       | Medium         |  ||
+0627 | [Swap Salary](https://leetcode.com/problems/swap-salary/) | [MySQL](./MySQL/swap-salary.sql) | _O(n)_ | _O(1)_       | Easy           |  ||
 1045 | [Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products/) | [MySQL](./MySQL/customers-who-bought-all-products.sql) | _O(n + k)_ | _O(n + k)_       | Medium           |🔒| |
 1050 | [Actors and Directors Who Cooperated At Least Three Times](https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/) | [MySQL](./MySQL/actors-and-directors-who-cooperated-at-least-three-times.sql) | _O(n)_ | _O(n)_       | Easy           |🔒| |
 1068 | [Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/) | [MySQL](./MySQL/product-sales-analysis-i.sql) | _O(m + n)_ | _O(m + n)_       | Easy           |🔒| |
