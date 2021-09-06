@@ -51,7 +51,7 @@ import collections
 
 
 # brute force solution
-class Solution_TLE_BUT_CORRECT(object):
+class Solution_TLE(object):
     def findMinStep(self, board, hand):
         """
         :type board: str
