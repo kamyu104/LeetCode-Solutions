@@ -358,7 +358,7 @@
 1983 | [Widest Pair of Indices With Equal Range Sum](https://leetcode.com/problems/widest-pair-of-indices-with-equal-range-sum/) | [C++](./C++/widest-pair-of-indices-with-equal-range-sum.cpp) [Python](./Python/widest-pair-of-indices-with-equal-range-sum.py) | _O(n)_ | _O(n)_ | Medium | variant of [Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/), 🔒 | Prefix Sum
 1991 | [Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array/) | [C++](./C++/find-the-middle-index-in-array.cpp) [Python](./Python/find-the-middle-index-in-array.py) | _O(n)_ | _O(1)_ | Easy | | Prefix Sum
 1992 | [Find All Groups of Farmland](https://leetcode.com/problems/find-all-groups-of-farmland/) | [C++](./C++/find-all-groups-of-farmland.cpp) [Python](./Python/find-all-groups-of-farmland.py) | _O(m * n)_ | _O(1)_ | Medium | variant of [Number of Islands](https://leetcode.com/problems/number-of-islands/) | 
-1998 | [GCD Sort of an Array](https://leetcode.com/problems/gcd-sort-of-an-array/) | [C++](./C++/gcd-sort-of-an-array.cpp) [Python](./Python/gcd-sort-of-an-array.py) | _O(n + m)_ | _O(n + m)_ | Hard |  | Union Find, `Sieve of Eratosthenes`
+1998 | [GCD Sort of an Array](https://leetcode.com/problems/gcd-sort-of-an-array/) | [C++](./C++/gcd-sort-of-an-array.cpp) [Python](./Python/gcd-sort-of-an-array.py) | _O(nlogn + m)_ | _O(n + m)_ | Hard |  | Union Find, `Sieve of Eratosthenes`
 
 <br/>
 <div align="right">
