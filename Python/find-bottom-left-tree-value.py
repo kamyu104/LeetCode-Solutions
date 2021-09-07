@@ -21,7 +21,7 @@ class Solution(object):
 
 
 # Time:  O(n)
-# Space: O(h)
+# Space: O()
 import collections
 
 
