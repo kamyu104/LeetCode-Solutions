@@ -37,7 +37,7 @@ private:
 };
 
 // Time:  O(n)
-// Space: O(n)
+// Space: O(w)
 class Solution2 {
 public:
     int findBottomLeftValue(TreeNode* root) {
