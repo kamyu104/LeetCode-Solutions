@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(1)
+# Space: O(h)
 
 class Solution(object):
     def findMode(self, root):
