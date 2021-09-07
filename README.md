@@ -181,7 +181,7 @@
 0487 | [Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/) | [C++](./C++/max-consecutive-ones-ii.cpp) [Python](./Python/max-consecutive-ones-ii.py) | _O(n)_       | _O(1)_          | Medium         | 🔒 | Array |
 0495 | [Teemo Attacking](https://leetcode.com/problems/teemo-attacking/) | [C++](./C++/teemo-attacking.cpp) [Python](./Python/teemo-attacking.py) | _O(n)_       | _O(1)_          | Easy         || Array, Simulation |
 0498 | [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse/) | [C++](./C++/diagonal-traverse.cpp) [Python](./Python/diagonal-traverse.py) | _O(m * n)_       | _O(1)_          | Medium         || Array |
-0506 | [Relative Ranks](https://leetcode.com/problems/relative-ranks/) | [C++](./C++/relative-rankscpp) [Python](./Python/relative-ranks.py) | _O(nlogn)_       | _O(n)_          | Easy         || Array, Sort |
+0506 | [Relative Ranks](https://leetcode.com/problems/relative-ranks/) | [C++](./C++/relative-ranks.cpp) [Python](./Python/relative-ranks.py) | _O(nlogn)_       | _O(n)_          | Easy         || Array, Sort |
 0531 | [Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i/) | [C++](./C++/lonely-pixel-i.cpp) [Python](./Python/lonely-pixel-i.py) | _O(m * n)_ | _O(m + n)_ | Medium         |🔒||
 0533 | [Lonely Pixel II](https://leetcode.com/problems/lonely-pixel-ii/) | [C++](./C++/lonely-pixel-ii.cpp) [Python](./Python/lonely-pixel-ii.py) | _O(m * n)_ | _O(m * n)_ | Medium         |🔒||
 0565 | [Array Nesting](https://leetcode.com/problems/array-nesting/) | [C++](./C++/array-nesting.cpp) [Python](./Python/array-nesting.py) | _O(n)_ | _O(1)_ | Medium         |||
