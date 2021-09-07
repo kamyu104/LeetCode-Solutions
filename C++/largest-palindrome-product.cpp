@@ -9,8 +9,8 @@ public:
         }
         // let x = 10^n-i, y = 10^n-j, s.t. palindrome = x*y
         // => (10^n-i)*(10^n-j) = (10^n-i-j)*10^n + i*j
-        // assume i*j < 10^n (in fact, it only works for 2 <= n <= 8, not general)
-        // => let left = (10^n-i-j), right = i*j, k = i+j
+        // assume i*j < 10^n (in fact, it only works for 2 <= n <= 8, not general),
+        // let left = (10^n-i-j), right = i*j, k = i+j
         // => left = 10^n-k, right = i*(k-i)
         // => i^2 - k*i + right = 0
         // => i = (k+(k^2-right*4)^(0.5))/2 or (k+(k^2-right*4)^(0.5))/2 where i is a integer
