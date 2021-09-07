@@ -1,4 +1,4 @@
-# Time:  O(10^n)
+# Time:  O(n * 10^n)
 # Space: O(n)
 
 class Solution(object):
