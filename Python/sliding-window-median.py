@@ -1,4 +1,4 @@
-# Time:  O(nlogk)
+# Time:  O(nlogn)
 # Space: O(n)
 
 import collections
