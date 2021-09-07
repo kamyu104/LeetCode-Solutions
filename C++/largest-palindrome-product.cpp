@@ -16,7 +16,7 @@ public:
         // => i = (k+(k^2-right*4)^(0.5))/2 or (k+(k^2-right*4)^(0.5))/2 where i is a integer
         const int upper = pow(10, n) - 1;
         for (int k = 2; k <= upper; ++k) {
-            int left = pow(10, n) - k;
+            const int left = pow(10, n) - k;
             auto s = to_string(left);
             reverse(begin(s), end(s));
             const int right = stoi(s);
