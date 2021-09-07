@@ -21,7 +21,7 @@ class Solution(object):
 
 
 # Time:  O(n)
-# Space: O(n)
+# Space: O(h)
 class Solution2(object):
     def findBottomLeftValue(self, root):
         """
