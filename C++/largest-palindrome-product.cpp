@@ -52,7 +52,7 @@ public:
         int lower = pow(10, n - 1);
         for (int i = static_cast<uint64_t>(upper) * upper / pow(10, n); i >= lower; --i) {
             auto candidate = buildPalindrome(i);
-            for (long long y = upper / 11 * 11; y >= lower; y -= 11) {
+            for (long long y = upper / 11 * 11; y >= lower; y -= 11) {  // y must be dividible by 11 because even-number-length palindrome meets modulo 11 digit check
                 if (candidate / y > upper) {
                     break;
                 }
