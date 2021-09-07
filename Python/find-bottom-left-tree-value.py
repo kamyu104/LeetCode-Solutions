@@ -22,15 +22,18 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(h)
+import collections
+
+
 class Solution2(object):
     def findBottomLeftValue(self, root):
         """
         :type root: TreeNode
         :rtype: int
         """
-        last_node, queue = None, [root]
-        while queue:
-            last_node = queue.pop(0)
-            queue.extend([n for n in [last_node.right, last_node.left] if n])
-        return last_node.value
+        last_node, q = None, collections.deque([root])
+        while q:
+            last_node = q.popleft()
+            q.extend([n for n in [last_node.right, last_node.left] if n])
+        return last_node.val
 
