@@ -14,13 +14,13 @@ public:
         // => left = 10^n-k, right = i*(k-i)
         // => i^2 - k*i + right = 0
         // => i = (k+(k^2-right*4)^(0.5))/2 or (k+(k^2-right*4)^(0.5))/2 where i is a integer
-        int upper = pow(10, n) - 1;
+        const int upper = pow(10, n) - 1;
         for (int k = 2; k <= upper; ++k) {
             int left = pow(10, n) - k;
             auto s = to_string(left);
             reverse(begin(s), end(s));
-            int right = stoi(s);
-            int d = k * k - right * 4;
+            const int right = stoi(s);
+            const int d = k * k - right * 4;
             if (d < 0) {
                 continue;
             }
@@ -48,8 +48,8 @@ public:
         if (n == 1) {
             return 9;
         }
-        int upper = pow(10, n) - 1;
-        int lower = pow(10, n - 1);
+        const int upper = pow(10, n) - 1;
+        const int lower = pow(10, n - 1);
         for (int i = static_cast<uint64_t>(upper) * upper / pow(10, n); i >= lower; --i) {
             auto candidate = buildPalindrome(i);
             for (long long y = upper / 11 * 11; y >= lower; y -= 11) {  // y must be divisible by 11 because even-number-length palindrome meets modulo 11 digit check
