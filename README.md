@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1998%20%2F%201998-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-1999%20%2F%201999-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1594,6 +1594,7 @@
 1718 | [Construct the Lexicographically Largest Valid Sequence](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/) | [C++](./C++/construct-the-lexicographically-largest-valid-sequence.cpp) [Python](./Python/construct-the-lexicographically-largest-valid-sequence.py) | _O(n!)_ | _O(b)_      | Medium         || Backtracking |
 1723 | [Find Minimum Time to Finish All Jobs](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/) | [C++](./C++/find-minimum-time-to-finish-all-jobs.cpp) [Python](./Python/find-minimum-time-to-finish-all-jobs.py) | _O(k^n * logr)_ | _O(n + k)_      | Hard         || Backtracking, Pruning, Binary Search |
 1849 | [Splitting a String Into Descending Consecutive Values](https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/) | [C++](./C++/splitting-a-string-into-descending-consecutive-values.cpp) [Python](./Python/splitting-a-string-into-descending-consecutive-values.py) | _O(n^2)_ | _O(n)_      | Medium         || |
+1999 | [Smallest Greater Multiple Made of Two Digits](https://leetcode.com/problems/smallest-greater-multiple-made-of-two-digits/) | [C++](./C++/smallest-greater-multiple-made-of-two-digits.cpp) [Python](./Python/smallest-greater-multiple-made-of-two-digits.py) | _O(1)_ | _O(1)_      | Medium         || Backtracking, Bit Manipulation |
 
 <br/>
 <div align="right">
