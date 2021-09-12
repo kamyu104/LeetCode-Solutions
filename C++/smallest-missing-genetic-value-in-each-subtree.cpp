@@ -10,8 +10,8 @@ public:
             return result;
         }
         vector<vector<int>> adj(size(parents));
-        for (int i = 1; i < size(parents); ++i) {
-            adj[parents[i]].emplace_back(i);
+        for (int j = 1; j < size(parents); ++j) {
+            adj[parents[j]].emplace_back(j);
         }
         unordered_set<int> lookup;
         for (int miss = 1; i >= 0; i = parents[i]) {
@@ -30,7 +30,7 @@ private:
 
         vector<int> stk = {i};
         while (!empty(stk)) {
-            const int i = stk.back(); stk.pop_back();
+            i = stk.back(); stk.pop_back();
             if (lookup->count(nums[i])) {
                 continue;
             }
