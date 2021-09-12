@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-1999%20%2F%201999-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2003%20%2F%202003-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -536,6 +536,7 @@
 1963 | [Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) | [C++](./C++/minimum-number-of-swaps-to-make-the-string-balanced.cpp) [Python](./Python/minimum-number-of-swaps-to-make-the-string-balanced.py) | _O(n)_ | _O(1)_ | Medium | variant of [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/) ||
 1967 | [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)| [C++](./C++/number-of-strings-that-appear-as-substrings-in-word.cpp) [Python](./Python/number-of-strings-that-appear-as-substrings-in-word.py) | _O(n * l + m)_ | _O(t)_ | Easy || `KMP Algorithm`, `Aho-Corasick Automata`, Trie |
 1974 | [Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) | [C++](./C++/minimum-time-to-type-word-using-special-typewriter.cpp) [Python](./Python/minimum-time-to-type-word-using-special-typewriter.py) | _O(n)_ | _O(1)_ | Easy |||
+2000 | [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) | [C++](./C++/reverse-prefix-of-word.cpp) [Python](./Python/reverse-prefix-of-word.py) | _O(n)_ | _O(1)_ | Easy |||
 
 <br/>
 <div align="right">
@@ -804,6 +805,7 @@
 1834 | [Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu/)  | [C++](./C++/single-threaded-cpu.cpp) [Python](./Python/single-threaded-cpu.py) | _O(nlogn)_| _O(n)_| Medium           | | | 
 1938 | [Maximum Genetic Difference Query](https://leetcode.com/problems/maximum-genetic-difference-query/) | [C++](./C++/maximum-genetic-difference-query.cpp) [Python](./Python/maximum-genetic-difference-query.py) | _O(nlogk + mlogk)_ | _O(n + logk)_ | Hard | variant of [Maximum XOR With an Element From Array](https://leetcode.com/problems/maximum-xor-with-an-element-from-array/) | DFS, Greedy, Trie
 1948 | [Delete Duplicate Folders in System](https://leetcode.com/problems/delete-duplicate-folders-in-system/) |[C++](./C++/delete-duplicate-folders-in-system.cpp)  [Python](./Python/delete-duplicate-folders-in-system.py) | _O(n * m * l + tlogt + l * t)_ | _O(l * t)_ | Hard         | variant of [Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/) | Trie, DFS, Hash
+2003 | [Smallest Missing Genetic Value in Each Subtree](https://leetcode.com/problems/smallest-missing-genetic-value-in-each-subtree/) |[C++](./C++/smallest-missing-genetic-value-in-each-subtree.cpp)  [Python](./Python/smallest-missing-genetic-value-in-each-subtree.py) | _O(n)_ | _O(n)_ | Hard         | | DFS, Stack
 
 <br/>
 <div align="right">
@@ -1095,6 +1097,7 @@
 1979 | [Find Greatest Common Divisor of Array](https://leetcode.com/problems/find-greatest-common-divisor-of-array/) | [C++](./C++/find-greatest-common-divisor-of-array.cpp) [Python](./Python/find-greatest-common-divisor-of-array.py) | _O(n)_ | _O(1)_ |  Easy |  | |
 1980 | [Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/) | [C++](./C++/find-unique-binary-string.cpp) [Python](./Python/find-unique-binary-string.py) | _O(n)_ | _O(1)_ |  Medium |  | `Cantor Diagonalization` |
 1982 | [Find Array Given Subset Sums](https://leetcode.com/problems/find-array-given-subset-sums/)|[C++](./C++/find-array-given-subset-sums.cpp) [Python](./Python/find-array-given-subset-sums.py)| _O(n * 2^n)_     | _O(1)_         | Hard         | | Math, DP, OrderedDict |
+2001 | [Number of Pairs of Interchangeable Rectangles](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/)|[C++](./C++/number-of-pairs-of-interchangeable-rectangles.cpp) [Python](./Python/number-of-pairs-of-interchangeable-rectangles.py)| _O(n)_     | _O(n)_         | Medium         | | Math |
 
 <br/>
 <div align="right">
@@ -1820,6 +1823,7 @@
 1987 | [Number of Unique Good Subsequences](https://leetcode.com/problems/number-of-unique-good-subsequences/)|[C++](./C++/number-of-unique-good-subsequences.cpp) [Python](./Python/number-of-unique-good-subsequences.py)| _O(n)_     | _O(1)_         | Hard         | variant of [Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/) | DP |
 1994 | [The Number of Good Subsets](https://leetcode.com/problems/the-number-of-good-subsets/)|[C++](./C++/the-number-of-good-subsets.cpp) [Python](./Python/the-number-of-good-subsets.py)| _O(n * 2^p)_     | _O(2^p)_         | Hard         |  | DP, `Sieve of Eratosthenes` |
 1997 | [First Day Where You Have Been in All the Rooms](https://leetcode.com/problems/first-day-where-you-have-been-in-all-the-rooms/)|[C++](./C++/first-day-where-you-have-been-in-all-the-rooms.cpp) [Python](./Python/first-day-where-you-have-been-in-all-the-rooms.py)| _O(n)_     | _O(n)_         | Medium         |  | DP |
+2002 | [Maximum Product of the Length of Two Palindromic Subsequences](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/)| [C++](./C++/maximum-product-of-the-length-of-two-palindromic-subsequences.cpp) [Python](./Python/maximum-product-of-the-length-of-two-palindromic-subsequences.py) | _O(3^n)_    | _O(2^n)_          | Medium           | | DP, Submask Enumeration
 
 <br/>
 <div align="right">
