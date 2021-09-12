@@ -19,13 +19,14 @@ class Solution(object):
                     stk.append(j)
 
         result = [1]*len(parents)
-        if 1 not in nums:
+        i = next((i for i in xrange(len(nums)) if nums[i] == 1), -1)
+        if i == -1:
             return result
-        adj = [[] for i in xrange(len(parents))]
-        for i in xrange(1, len(parents)):
-            adj[parents[i]].append(i)
+        adj = [[] for _ in xrange(len(parents))]
+        for j in xrange(1, len(parents)):
+            adj[parents[j]].append(j)
         lookup = set()
-        i, miss = nums.index(1), 1
+        miss = 1
         while i >= 0:
             iter_dfs(adj, nums, i, lookup)
             while miss in lookup:
