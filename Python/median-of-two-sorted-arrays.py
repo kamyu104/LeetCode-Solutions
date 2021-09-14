@@ -18,13 +18,14 @@ class Solution(object):
     def getKth(self, A, B, k):
         m, n = len(A), len(B)
         if m > n:
-            return self.getKth(B, A, k)
+            m, n = n, m
+            A, B = B, A
 
-        left, right = 0, m
-        while left < right:
+        left, right = 0, m - 1
+        while left <= right:
             mid = left + (right - left) / 2
             if 0 <= k - 1 - mid < n and A[mid] >= B[k - 1 - mid]:
-                right = mid
+                right = mid - 1
             else:
                 left = mid + 1
 
