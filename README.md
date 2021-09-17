@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2003%20%2F%202003-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2005%20%2F%202005-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1098,6 +1098,7 @@
 1980 | [Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/) | [C++](./C++/find-unique-binary-string.cpp) [Python](./Python/find-unique-binary-string.py) | _O(n)_ | _O(1)_ |  Medium |  | `Cantor Diagonalization` |
 1982 | [Find Array Given Subset Sums](https://leetcode.com/problems/find-array-given-subset-sums/)|[C++](./C++/find-array-given-subset-sums.cpp) [Python](./Python/find-array-given-subset-sums.py)| _O(n * 2^n)_     | _O(1)_         | Hard         | | Math, DP, OrderedDict |
 2001 | [Number of Pairs of Interchangeable Rectangles](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/)|[C++](./C++/number-of-pairs-of-interchangeable-rectangles.cpp) [Python](./Python/number-of-pairs-of-interchangeable-rectangles.py)| _O(n)_     | _O(n)_         | Medium         | | Math |
+2005 | [Subtree Removal Game with Fibonacci Tree](https://leetcode.com/problems/subtree-removal-game-with-fibonacci-tree/)|[C++](./C++/subtree-removal-game-with-fibonacci-tree.cpp) [Python](./Python/subtree-removal-game-with-fibonacci-tree.py)| _O(1)_     | _O(1)_         | Hard         | | Math, `Sprague-Grundy Theorem`, `Colon Principle` |
 
 <br/>
 <div align="right">
@@ -1572,7 +1573,7 @@
 0254 | [Factor Combinations](https://leetcode.com/problems/factor-combinations/) | [C++](./C++/factor-combinations.cpp)  [Python](./Python/factor-combinations.py)  | _O(nlogn)_ | _O(logn)_ | Medium         |🔒||
 0267 | [Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/) | [C++](./C++/palindrome-permutation-ii.cpp) [Python](./Python/palindrome-permutation-ii.py)  | _O(n * n!)_ |  _O(n)_ | Medium         |🔒||
 0291 | [Word Pattern II](https://leetcode.com/problems/word-pattern-ii/) | [C++](./C++/word-pattern-ii.cpp)  [Python](./Python/word-pattern-ii.py)  | _O(n * C(n - 1, c - 1))_ | _O(n + c)_ | Hard         |🔒||
-0294 | [Flip Game II](https://leetcode.com/problems/flip-game-ii/) | [C++](./C++/flip-game-ii.cpp) [Python](./Python/flip-game-ii.py)  | _O(n + c^2)_ | _O(c)_ | Medium         |🔒| DP, Hash |
+0294 | [Flip Game II](https://leetcode.com/problems/flip-game-ii/) | [C++](./C++/flip-game-ii.cpp) [Python](./Python/flip-game-ii.py)  | _O(n + c^2)_ | _O(c)_ | Medium         |🔒| DP, Hash, `Sprague-Grundy Theorem` |
 0320 | [Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/) | [C++](./C++/generalized-abbreviation.cpp) [Python](./Python/generalized-abbreviation.py)  | _O(n * 2^n)_ | _O(n)_ | Medium         |🔒||
 0425 | [Word Squares](https://leetcode.com/problems/word-squares/) | [C++](./C++/word-squares.cpp) [Python](./Python/word-squares.py)  | _O(n^2 * n!)_ | _O(n^2)_ | Hard         |🔒||
 0488 | [Zuma Game](https://leetcode.com/problems/zuma-game/) | [C++](./C++/zuma-game.cpp) [Python](./Python/zuma-game.py) | _O((b+h) * h!*(b+h-1)!/(b-1)!)_       | _O((b+h) * h!*(b+h-1)!/(b-1)!)_          | Hard         || Backtracking |
@@ -2340,6 +2341,7 @@
 1978 | [Employees Whose Manager Left the Company](https://leetcode.com/problems/employees-whose-manager-left-the-company/) | [MySQL](./MySQL/employees-whose-manager-left-the-company.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 1988 | [Find Cutoff Score for Each School](https://leetcode.com/problems/find-cutoff-score-for-each-schooly/) | [MySQL](./MySQL/find-cutoff-score-for-each-school.sql) | _O(n * m)_ | _O(n * m)_       | Medium           |🔒||
 1990 | [Count the Number of Experiments](https://leetcode.com/problems/count-the-number-of-experiments/) | [MySQL](./MySQL/count-the-number-of-experiments.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+2004 | [The Number of Seniors and Juniors to Join the Company](https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company/) | [MySQL](./MySQL/the-number-of-seniors-and-juniors-to-join-the-company.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
