@@ -7,7 +7,9 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """ 
-        return n%6 != 1  # the cycle period is 6 observed from solution2, which could be proved by mathematical induction
+        # a pattern appears every 6 grundy numbers in binary forms:
+        # 0000, (XXXX+1)01, (XXXX+1)11, (((XXXX+1))^((XXXX+1)+1))10, (XXXX+1)11, (XXXX+1)11
+        return n%6 != 1
 
 
 # Time:  O(n)
