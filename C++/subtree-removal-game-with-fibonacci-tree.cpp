@@ -4,7 +4,7 @@
 class Solution {
 public:
     bool findGameWinner(int n) {
-        // every 6 grundy numbers in binary:
+        // a pattern appears every 6 grundy numbers in binary forms:
         // 0000, (XXXX+1)01, (XXXX+1)11, (((XXXX+1))^((XXXX+1)+1))10, (XXXX+1)11, (XXXX+1)11
         return n % 6 != 1;
     }
