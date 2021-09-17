@@ -4,7 +4,9 @@
 class Solution {
 public:
     bool findGameWinner(int n) {
-        return n % 6 != 1;  // the cycle period is 6 observed from solution2, which could be proved by mathematical induction
+        // every 6 grundy numbers in binary:
+        // 0000, (XXXX+1)01, (XXXX+1)11, (((XXXX+1))^((XXXX+1)+1))10, (XXXX+1)11, (XXXX+1)11
+        return n % 6 != 1;
     }
 };
 
