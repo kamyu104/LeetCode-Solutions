@@ -26,7 +26,7 @@ public:
 class Solution2 {
 public:
     bool findGameWinner(int n) {
-        vector<int> grundy = {0, 1};
+        vector<int> grundy = {0, 1};  // 0-indexed
         for (int i = 2; i < n; ++i) {
             grundy[i % 2] = (grundy[(i - 1) % 2] + 1) ^ (grundy[(i - 2) % 2] + 1);  // colon principle, replace the branches by a non-branching stalk of length equal to their nim sum
         }
