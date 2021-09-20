@@ -1,5 +1,5 @@
 // Time:  O(nlogn)
-// Space: O(n)
+// Space: O(1)
 
 class Solution {
 public:
@@ -18,7 +18,7 @@ public:
 };
 
 // Time:  O(nlogn)
-// Space: O(n)
+// Space: O(1)
 class Solution2 {
 public:
     int minOperations(vector<int>& nums) {
