@@ -4,14 +4,9 @@
 class Solution {
 public:
     int finalValueAfterOperations(vector<string>& operations) {
-        int result = 0;
-        for (const auto& op : operations) {
-            if (op[1] == '+') {
-                ++result;
-            } else {
-                --result;
-            }
-        }
-        return result;
+        return accumulate(cbegin(operations), cend(operations), 0,
+                          [](const auto& total, const auto& x) {
+                              return total + ((x[1] == '+') ? 1 : -1);
+                          });
     }
 };
