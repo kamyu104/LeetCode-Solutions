@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2005%20%2F%202005-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2014%20%2F%202014-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -359,6 +359,9 @@
 1991 | [Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array/) | [C++](./C++/find-the-middle-index-in-array.cpp) [Python](./Python/find-the-middle-index-in-array.py) | _O(n)_ | _O(1)_ | Easy | | Prefix Sum
 1992 | [Find All Groups of Farmland](https://leetcode.com/problems/find-all-groups-of-farmland/) | [C++](./C++/find-all-groups-of-farmland.cpp) [Python](./Python/find-all-groups-of-farmland.py) | _O(m * n)_ | _O(1)_ | Medium | variant of [Number of Islands](https://leetcode.com/problems/number-of-islands/) | 
 1998 | [GCD Sort of an Array](https://leetcode.com/problems/gcd-sort-of-an-array/) | [C++](./C++/gcd-sort-of-an-array.cpp) [Python](./Python/gcd-sort-of-an-array.py) | _O(nlogn + m)_ | _O(n + m)_ | Hard |  | Union Find, `Sieve of Eratosthenes`
+2007 | [Find Original Array From Doubled Array](https://leetcode.com/problems/find-original-array-from-doubled-array/) | [C++](./C++/find-original-array-from-doubled-array.cpp) [Python](./Python/find-original-array-from-doubled-array.py) | _O(n + klogk)_ | _O(k)_      | Medium         | variant of [Array of Doubled Pairs](https://leetcode.com/problems/array-of-doubled-pairs/) |
+2011 | [Final Value of Variable After Performing Operations](https://leetcode.com/problems/final-value-of-variable-after-performing-operations/) | [C++](./C++/final-value-of-variable-after-performing-operations.cpp) [Python](./Python/final-value-of-variable-after-performing-operations.py) | _O(n)_ | _O(1)_      | Easy         | |
+2012 | [Sum of Beauty in the Array](https://leetcode.com/problems/sum-of-beauty-in-the-array/) | [C++](./C++/sum-of-beauty-in-the-array.cpp) [Python](./Python/sum-of-beauty-in-the-array.py) | _O(n)_ | _O(n)_ | Medium || Prefix Sum
 
 <br/>
 <div align="right">
@@ -906,6 +909,7 @@
 1930 | [Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/)      | [C++](./C++/unique-length-3-palindromic-subsequences.cpp) [Python](./Python/unique-length-3-palindromic-subsequences.py)      | _O(n)_         | _O(1)_          | Medium         ||
 1941 | [Check if All Characters Have Equal Number of Occurrences](https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/)      | [C++](./C++/check-if-all-characters-have-equal-number-of-occurrences.cpp) [Python](./Python/check-if-all-characters-have-equal-number-of-occurrences.py)      | _O(n)_         | _O(1)_          | Easy         ||
 1995 | [Count Special Quadruplets](https://leetcode.com/problems/count-special-quadruplets/)         | [C++](./C++/count-special-quadruplets.cpp) [Python](./Python/count-special-quadruplets.py)        | _O(n^3)_    | _O(n)_    | Easy         | variant of [4 Sum](https://leetcode.com/problems/4sum/) |
+2006 | [Count Number of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/)      | [C++](./C++/count-number-of-pairs-with-absolute-difference-k.cpp) [Python](./Python/count-number-of-pairs-with-absolute-difference-k.py)      | _O(n)_         | _O(n)_          | Easy         | variant of [Two Sum](https://leetcode.com/problems/two-sum/) |
 
 <br/>
 <div align="right">
@@ -1246,6 +1250,7 @@
 1888 | [Minimum Number of Flips to Make the Binary String Alternatings](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | [C++](./C++/minimum-number-of-flips-to-make-the-binary-string-alternating.cpp) [Python](./Python/minimum-number-of-flips-to-make-the-binary-string-alternating.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window |
 1984 | [Minimum Difference Between Highest and Lowest of K Scores](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [C++](./C++/minimum-difference-between-highest-and-lowest-of-k-scores.cpp) [Python](./Python/minimum-difference-between-highest-and-lowest-of-k-scores.py) | _O(nlogn)_ | _O(1)_ | Easy | | Two Pointers, Sliding Window |
 1989 | [Maximum Number of People That Can Be Caught in Tag](https://leetcode.com/problems/maximum-number-of-people-that-can-be-caught-in-tag/) | [C++](./C++/maximum-number-of-people-that-can-be-caught-in-tag.cpp) [Python](./Python/maximum-number-of-people-that-can-be-caught-in-tag.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Greedy, Two Pointers, Sliding Window
+2009 | [Minimum Number of Operations to Make Array Continuous](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/) | [C++](./C++/minimum-number-of-operations-to-make-array-continuous.cpp) [Python](./Python/minimum-number-of-operations-to-make-array-continuous.py) | _O(nlogn)_ | _O(n)_ | Hard || Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -1599,6 +1604,7 @@
 1723 | [Find Minimum Time to Finish All Jobs](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/) | [C++](./C++/find-minimum-time-to-finish-all-jobs.cpp) [Python](./Python/find-minimum-time-to-finish-all-jobs.py) | _O(k^n * logr)_ | _O(n + k)_      | Hard         || Backtracking, Pruning, Binary Search |
 1849 | [Splitting a String Into Descending Consecutive Values](https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/) | [C++](./C++/splitting-a-string-into-descending-consecutive-values.cpp) [Python](./Python/splitting-a-string-into-descending-consecutive-values.py) | _O(n^2)_ | _O(n)_      | Medium         || |
 1999 | [Smallest Greater Multiple Made of Two Digits](https://leetcode.com/problems/smallest-greater-multiple-made-of-two-digits/) | [C++](./C++/smallest-greater-multiple-made-of-two-digits.cpp) [Python](./Python/smallest-greater-multiple-made-of-two-digits.py) | _O(1)_ | _O(1)_      | Medium         |🔒| Backtracking, Bit Manipulation |
+2014 | [Longest Subsequence Repeated k Times](https://leetcode.com/problems/longest-subsequence-repeated-k-times/) | [C++](./C++/longest-subsequence-repeated-k-times.cpp) [Python](./Python/longest-subsequence-repeated-k-times.py) | _O(n * (n/k)!)_ | _O(n/k)_      | Hard         | | |
 
 <br/>
 <div align="right">
@@ -1825,6 +1831,7 @@
 1994 | [The Number of Good Subsets](https://leetcode.com/problems/the-number-of-good-subsets/)|[C++](./C++/the-number-of-good-subsets.cpp) [Python](./Python/the-number-of-good-subsets.py)| _O(n * 2^p)_     | _O(2^p)_         | Hard         |  | DP, `Sieve of Eratosthenes` |
 1997 | [First Day Where You Have Been in All the Rooms](https://leetcode.com/problems/first-day-where-you-have-been-in-all-the-rooms/)|[C++](./C++/first-day-where-you-have-been-in-all-the-rooms.cpp) [Python](./Python/first-day-where-you-have-been-in-all-the-rooms.py)| _O(n)_     | _O(n)_         | Medium         |  | DP |
 2002 | [Maximum Product of the Length of Two Palindromic Subsequences](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/)| [C++](./C++/maximum-product-of-the-length-of-two-palindromic-subsequences.cpp) [Python](./Python/maximum-product-of-the-length-of-two-palindromic-subsequences.py) | _O(3^n)_    | _O(2^n)_          | Medium           | | DP, Submask Enumeration
+2008 | [Maximum Earnings From Taxi](https://leetcode.com/problems/maximum-earnings-from-taxi/)| [C++](./C++/maximum-earnings-from-taxi.cpp) [Python](./Python/maximum-earnings-from-taxi.py) | _O(n + mlogm)_    | _O(n)_          | Medium           | | DP
 
 <br/>
 <div align="right">
@@ -2134,6 +2141,7 @@
 1865 | [Finding Pairs With a Certain Sum](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/) | [C++](./C++/finding-pairs-with-a-certain-sum.cpp) [Python](./Python/finding-pairs-with-a-certain-sum.py) | ctor: _O(n1 + n2)_<br>add: _O(1)_<br>count: _O(n1)_ | _O(n1 + n2)_| Medium | | Hash Table
 1912 | [Design Movie Rental System](https://leetcode.com/problems/design-movie-rental-system/) | [C++](./C++/design-movie-rental-system.cpp) [Python](./Python/design-movie-rental-system.py) | ctor: _O(nlogn)_<br>search: _O(logn)_<br>rent: _O(logn)_<br>drop: _O(logn)_<br>report: _O(logn)_ | _O(n)_| Hard | | Ordered List
 1993 | [Operations on Tree](https://leetcode.com/problems/operations-on-tree/) | [C++](./C++/operations-on-tree.cpp) [Python](./Python/operations-on-tree.py) | ctor: _O(n)_<br>lock: _O(1)_<br>unlock: _O(1)_<br>upgrade: _O(n)_ | _O(n)_| Medium | |
+2013 | [Detect Squares](https://leetcode.com/problems/detect-squares/) | [C++](./C++/detect-squares.cpp) [Python](./Python/detect-squares.py) | ctor: _O(1)_<br>add: _O(1)_<br>count: _O(n)_ | _O(n)_| Medium | |
 
 <br/>
 <div align="right">
@@ -2342,6 +2350,7 @@
 1988 | [Find Cutoff Score for Each School](https://leetcode.com/problems/find-cutoff-score-for-each-schooly/) | [MySQL](./MySQL/find-cutoff-score-for-each-school.sql) | _O(n * m)_ | _O(n * m)_       | Medium           |🔒||
 1990 | [Count the Number of Experiments](https://leetcode.com/problems/count-the-number-of-experiments/) | [MySQL](./MySQL/count-the-number-of-experiments.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 2004 | [The Number of Seniors and Juniors to Join the Company](https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company/) | [MySQL](./MySQL/the-number-of-seniors-and-juniors-to-join-the-company.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+2005 | [The Number of Seniors and Juniors to Join the Company II](https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company-ii/) | [MySQL](./MySQL/the-number-of-seniors-and-juniors-to-join-the-company.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
