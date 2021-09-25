@@ -55,7 +55,7 @@ private:
         int binary_lift(int k) const {
             int total = 0;
             int pos = 0;
-            for (int i = floor_log2_x(size(bit_)); i >= 0; --i) {
+            for (int i = floor_log2_x(size(bit_) - 1); i >= 0; --i) {
                 if (pos + (1 << i) < size(bit_) && !(total + bit_[pos + (1 << i)] >= k)) {
                     total += bit_[pos + (1 << i)];
                     pos += (1 << i);
