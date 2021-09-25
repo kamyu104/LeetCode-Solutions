@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2014%20%2F%202014-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2015%20%2F%202015-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1171,6 +1171,7 @@
 1968 | [Array With Elements Not Equal to Average of Neighbors](https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/) | [C++](./C++/array-with-elements-not-equal-to-average-of-neighbors.cpp) [Python](./Python/array-with-elements-not-equal-to-average-of-neighbors.py) | _O(n)_  on average | _O(1)_        | Medium         | variant of [Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/) | Quick Select, Tri Partition |
 1985 | [Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/) | [C++](./C++/find-the-kth-largest-integer-in-the-array.cpp) [Python](./Python/find-the-kth-largest-integer-in-the-array.py) | _O(n)_ on average| _O(n)_ | Medium | | Quick Select |
 1996 | [The Number of Weak Characters in the Game](https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/) | [C++](./C++/the-number-of-weak-characters-in-the-game.cpp) [Python](./Python/the-number-of-weak-characters-in-the-game.py) | _O(nlogn)_ | _O(1)_ | Medium | | |
+2015 | [Average Height of Buildings in Each Segment](https://leetcode.com/problems/average-height-of-buildings-in-each-segment/) | [C++](./C++/average-height-of-buildings-in-each-segment.cpp) [Python](./Python/average-height-of-buildings-in-each-segment.py) | _O(nlogn)_   | _O(n)_        | Medium         | 🔒 | Line Sweep
 
 <br/>
 <div align="right">
