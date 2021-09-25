@@ -51,7 +51,7 @@ class BIT(object):  # 0-indexed.
         return ret
 
     def binary_lift(self, k):
-        floor_log2_n = len(self.__bit).bit_length()-1
+        floor_log2_n = (len(self.__bit)-1).bit_length()-1
         pow_i = 2**floor_log2_n
         total = pos = 0  # 1-indexed
         for i in reversed(xrange(floor_log2_n+1)):  # O(logN)
