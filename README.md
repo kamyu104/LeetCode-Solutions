@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2015%20%2F%202015-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2020%20%2F%202020-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -362,6 +362,9 @@
 2007 | [Find Original Array From Doubled Array](https://leetcode.com/problems/find-original-array-from-doubled-array/) | [C++](./C++/find-original-array-from-doubled-array.cpp) [Python](./Python/find-original-array-from-doubled-array.py) | _O(n + klogk)_ | _O(k)_      | Medium         | variant of [Array of Doubled Pairs](https://leetcode.com/problems/array-of-doubled-pairs/) |
 2011 | [Final Value of Variable After Performing Operations](https://leetcode.com/problems/final-value-of-variable-after-performing-operations/) | [C++](./C++/final-value-of-variable-after-performing-operations.cpp) [Python](./Python/final-value-of-variable-after-performing-operations.py) | _O(n)_ | _O(1)_      | Easy         | |
 2012 | [Sum of Beauty in the Array](https://leetcode.com/problems/sum-of-beauty-in-the-array/) | [C++](./C++/sum-of-beauty-in-the-array.cpp) [Python](./Python/sum-of-beauty-in-the-array.py) | _O(n)_ | _O(n)_ | Medium || Prefix Sum
+2016 | [Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/)| [C++](./C++/maximum-difference-between-increasing-elements.cpp) [Python](./Python/maximum-difference-between-increasing-elements.py) | _O(n)_ | _O(1)_ | Easy | variant of [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |
+2017 | [Grid Game](https://leetcode.com/problems/grid-game/) | [C++](./C++/grid-game.cpp) [Python](./Python/grid-game.py) | _O(n)_ | _O(1)_ | Medium || Prefix Sum
+2018 | [Check if Word Can Be Placed In Crossword](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/) | [C++](./C++/check-if-word-can-be-placed-in-crossword.cpp) [Python](./Python/check-if-word-can-be-placed-in-crossword.py) | _O(m * n)_ | _O(1)_ | Medium ||
 
 <br/>
 <div align="right">
@@ -1833,6 +1836,7 @@
 1997 | [First Day Where You Have Been in All the Rooms](https://leetcode.com/problems/first-day-where-you-have-been-in-all-the-rooms/)|[C++](./C++/first-day-where-you-have-been-in-all-the-rooms.cpp) [Python](./Python/first-day-where-you-have-been-in-all-the-rooms.py)| _O(n)_     | _O(n)_         | Medium         |  | DP |
 2002 | [Maximum Product of the Length of Two Palindromic Subsequences](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/)| [C++](./C++/maximum-product-of-the-length-of-two-palindromic-subsequences.cpp) [Python](./Python/maximum-product-of-the-length-of-two-palindromic-subsequences.py) | _O(3^n)_    | _O(2^n)_          | Medium           | | DP, Submask Enumeration
 2008 | [Maximum Earnings From Taxi](https://leetcode.com/problems/maximum-earnings-from-taxi/)| [C++](./C++/maximum-earnings-from-taxi.cpp) [Python](./Python/maximum-earnings-from-taxi.py) | _O(n + mlogm)_    | _O(n)_          | Medium           | | DP
+2019 | [The Score of Students Solving Math Expression](https://leetcode.com/problems/the-score-of-students-solving-math-expression/) | [C++](./C++/the-score-of-students-solving-math-expression.cpp) [Python](./Python/the-score-of-students-solving-math-expression.py) | _O(n^3 * a^2)_ | _O(n^2)_ | Hard | variant of [Burst Balloons](https://leetcode.com/problems/burst-balloons/) |
 
 <br/>
 <div align="right">
@@ -2352,6 +2356,7 @@
 1990 | [Count the Number of Experiments](https://leetcode.com/problems/count-the-number-of-experiments/) | [MySQL](./MySQL/count-the-number-of-experiments.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 2004 | [The Number of Seniors and Juniors to Join the Company](https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company/) | [MySQL](./MySQL/the-number-of-seniors-and-juniors-to-join-the-company.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 2010 | [The Number of Seniors and Juniors to Join the Company II](https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company-ii/) | [MySQL](./MySQL/the-number-of-seniors-and-juniors-to-join-the-company.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+2020 | [Number of Accounts That Did Not Stream](https://leetcode.com/problems/number-of-accounts-that-did-not-stream/) | [MySQL](./MySQL/number-of-accounts-that-did-not-stream.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
