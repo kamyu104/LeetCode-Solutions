@@ -47,4 +47,3 @@ private:
         return !transposed ? mat[i][j] : mat[j][i];
     }
 };
-                                  
