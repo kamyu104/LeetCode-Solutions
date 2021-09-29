@@ -3,6 +3,30 @@
 
 class Solution {
 public:
+    vector<double> medianSlidingWindow(vector<int>& nums, int k) {
+        multiset<int> min_bst(cbegin(nums), cbegin(nums) + k);
+        auto mid = next(cbegin(min_bst), k / 2);
+        vector<double> result = {(double(*mid) + *prev(mid, 1 - k % 2)) / 2};
+        for (int i = k; i < size(nums); ++i) {
+            min_bst.emplace(nums[i]);
+            if (nums[i] < *mid) {
+                --mid;
+            }
+            if (nums[i - k] <= *mid) {
+                ++mid;
+            }
+            min_bst.erase(min_bst.lower_bound(nums[i - k]));
+            result.emplace_back((double(*mid) + *prev(mid, 1 - k % 2)) / 2);
+        }
+        return result;
+    }
+};
+
+
+// Time:  O(nlogk)
+// Space: O(k)
+class Solution2 {
+public:
 vector<double> medianSlidingWindow(vector<int>& nums, int k) {
         multiset<int, less<int>> min_bst;
         multiset<int, greater<int>> max_bst;
