@@ -17,7 +17,7 @@ class Solution(object):
         result = [(sl[k//2]+sl[k//2-(1-k%2)])/2]
         for i in xrange(k, len(nums)):
             sl.add(float(nums[i]))
-            del sl[sl.bisect_left(nums[i-k])]
+            sl.remove(nums[i-k])
             result.append((sl[k//2]+sl[k//2-(1-k%2)])/2)
         return result
 
