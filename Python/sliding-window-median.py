@@ -1,5 +1,5 @@
-# Time:  O(nlogn)
-# Space: O(n)
+# Time:  O(nlogk)
+# Space: O(k)
 
 import collections
 import heapq
@@ -14,7 +14,7 @@ class Solution(object):
         """
         min_heap, max_heap = [], []
         for i in xrange(k):
-            if k%2:
+            if i%2 == 0:
                 heapq.heappush(min_heap, -heapq.heappushpop(max_heap, -nums[i]))
             else:
                 heapq.heappush(max_heap, -heapq.heappushpop(min_heap, nums[i]))
