@@ -1,5 +1,5 @@
-# Time:  O(nlogk)
-# Space: O(k)
+# Time:  O(nlogn) due to lazy delete
+# Space: O(n)
 
 import collections
 import heapq
