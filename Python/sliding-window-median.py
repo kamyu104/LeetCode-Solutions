@@ -11,9 +11,7 @@ class Solution(object):
         :type k: int
         :rtype: List[float]
         """
-        sl = SortedList()
-        for i in xrange(k):
-            sl.add(float(nums[i]))
+        sl = SortedList(float(nums[i])for i in xrange(k))
         result = [(sl[k//2]+sl[k//2-(1-k%2)])/2]
         for i in xrange(k, len(nums)):
             sl.add(float(nums[i]))
