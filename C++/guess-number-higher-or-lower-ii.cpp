@@ -4,15 +4,17 @@
 class Solution {
 public:
     int getMoneyAmount(int n) {
-        vector<vector<int>> pay(n + 1, vector<int>(n));
+        vector<vector<int>> dp(n + 1, vector<int>(n + 1));  // dp[i][j]: min pay in [i+1, j+1)
         for (int i = n - 1; i >= 0; --i) {
-            for (int j = i + 1; j < n; ++j) {
-                pay[i][j] = numeric_limits<int>::max();
-                for (int k = i; k <= j; ++k) {
-                    pay[i][j] = min(pay[i][j], k + 1 + max(pay[i][k - 1], pay[k + 1][j]));
+            for (int j = i + 2; j <= n; ++j) {
+                dp[i][j] = numeric_limits<int>::max();
+                for (int k = i; k < j; ++k) {
+                    if (max(dp[i][k], dp[k + 1][j]) != numeric_limits<int>::max()) {
+                        dp[i][j] = min(dp[i][j], k + 1 + max(dp[i][k], dp[k + 1][j]));
+                    }
                 }
             }
         }
-        return pay[0][n - 1];
+        return dp[0][n];
     }
 };
