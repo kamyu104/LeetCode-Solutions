@@ -9,8 +9,8 @@ public:
             for (int j = i + 2; j <= n; ++j) {
                 dp[i][j] = numeric_limits<int>::max();
                 for (int k = i; k < j; ++k) {
-                    if (max(dp[i][k], dp[k + 1][j]) != numeric_limits<int>::max()) {
-                        dp[i][j] = min(dp[i][j], k + 1 + max(dp[i][k], dp[k + 1][j]));
+                    if (max(dp[i][k], dp[k + 1][j]) < dp[i][j] - (k + 1)) {
+                        dp[i][j] = (k + 1) + max(dp[i][k], dp[k + 1][j]);
                     }
                 }
             }
