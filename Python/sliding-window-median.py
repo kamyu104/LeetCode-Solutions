@@ -68,7 +68,7 @@ class Solution2(object):
                 if not to_remove[min_heap[0]]:
                     del to_remove[min_heap[0]]
                 heapq.heappop(min_heap)
-            if len(min_heap)+len(max_heap) > 2*k:
+            if len(min_heap)+len(max_heap) > 2*k:  # full delete
                 rebuild_heap(max_heap, to_remove, -1)
                 rebuild_heap(min_heap, to_remove, 1)
             result.append(float(min_heap[0]) if k%2 else (min_heap[0]-max_heap[0])/2.0)
