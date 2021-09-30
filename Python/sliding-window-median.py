@@ -33,7 +33,14 @@ class Solution2(object):
         :type k: int
         :rtype: List[float]
         """
-        def rebuild_heap(heap, to_remove, sign):  # Time: O(k), Space: O(k)
+        def lazy_delete(heap, to_remove, sign):
+            while heap and sign*heap[0] in to_remove:
+                to_remove[sign*heap[0]] -= 1
+                if not to_remove[sign*heap[0]]:
+                    del to_remove[sign*heap[0]]
+                heapq.heappop(heap)
+
+        def full_delete(heap, to_remove, sign):  # Time: O(k), Space: O(k)
             result = []
             for x in heap:
                 if sign*x not in to_remove:
@@ -58,19 +65,11 @@ class Solution2(object):
             if nums[i-k] > -max_heap[0]:
                 heapq.heappush(min_heap, -heapq.heappop(max_heap))
             to_remove[nums[i-k]] += 1
-            while max_heap and -max_heap[0] in to_remove:  # lazy delete
-                to_remove[-max_heap[0]] -= 1
-                if not to_remove[-max_heap[0]]:
-                    del to_remove[-max_heap[0]]
-                heapq.heappop(max_heap)
-            while min_heap[0] in to_remove:
-                to_remove[min_heap[0]] -= 1
-                if not to_remove[min_heap[0]]:
-                    del to_remove[min_heap[0]]
-                heapq.heappop(min_heap)
+            lazy_delete(max_heap, to_remove, -1)
+            lazy_delete(min_heap, to_remove, 1)
             if len(min_heap)+len(max_heap) > 2*k:  # full delete
-                rebuild_heap(max_heap, to_remove, -1)
-                rebuild_heap(min_heap, to_remove, 1)
+                full_delete(max_heap, to_remove, -1)
+                full_delete(min_heap, to_remove, 1)
             result.append(float(min_heap[0]) if k%2 else (min_heap[0]-max_heap[0])/2.0)
         return result
 
@@ -88,6 +87,13 @@ class Solution3(object):
         :type k: int
         :rtype: List[float]
         """
+        def lazy_delete(heap, to_remove, sign):
+            while heap and sign*heap[0] in to_remove:
+                to_remove[sign*heap[0]] -= 1
+                if not to_remove[sign*heap[0]]:
+                    del to_remove[sign*heap[0]]
+                heapq.heappop(heap)
+
         min_heap, max_heap = [], []
         for i in xrange(k):
             if i%2 == 0:
@@ -101,15 +107,7 @@ class Solution3(object):
             if nums[i-k] > -max_heap[0]:
                 heapq.heappush(min_heap, -heapq.heappop(max_heap))
             to_remove[nums[i-k]] += 1
-            while max_heap and -max_heap[0] in to_remove:  # lazy delete
-                to_remove[-max_heap[0]] -= 1
-                if not to_remove[-max_heap[0]]:
-                    del to_remove[-max_heap[0]]
-                heapq.heappop(max_heap)
-            while min_heap[0] in to_remove:
-                to_remove[min_heap[0]] -= 1
-                if not to_remove[min_heap[0]]:
-                    del to_remove[min_heap[0]]
-                heapq.heappop(min_heap)
+            lazy_delete(max_heap, to_remove, -1)
+            lazy_delete(min_heap, to_remove, 1)
             result.append(float(min_heap[0]) if k%2 else (min_heap[0]-max_heap[0])/2.0)
         return result
