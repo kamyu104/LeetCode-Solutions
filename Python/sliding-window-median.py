@@ -67,7 +67,7 @@ class Solution2(object):
             to_remove[nums[i-k]] += 1
             lazy_delete(max_heap, to_remove, -1)
             lazy_delete(min_heap, to_remove, 1)
-            if len(min_heap)+len(max_heap) > 2*k:  # full delete
+            if len(min_heap)+len(max_heap) > 2*k:
                 full_delete(max_heap, to_remove, -1)
                 full_delete(min_heap, to_remove, 1)
             result.append(float(min_heap[0]) if k%2 else (min_heap[0]-max_heap[0])/2.0)
