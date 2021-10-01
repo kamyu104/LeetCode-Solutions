@@ -42,11 +42,10 @@ class Solution2(object):
         for x, y, h in buildings:
             count[x] = (count[x][0]+1, count[x][1]+h)
             count[y] = (count[y][0]-1, count[y][1]-h)
-        points = sorted(count.iteritems())
         result = []
         total = cnt = 0
         prev = -1
-        for curr, (c, h) in points:
+        for curr, (c, h) in sorted(count.iteritems()):
             if cnt:
                 if result and result[-1][1] == prev and result[-1][2] == total//cnt:
                     result[-1][1] = curr
