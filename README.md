@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2020%20%2F%202020-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2021%20%2F%202021-ff69b4.svg)&nbsp;
 ![Travis](https://travis-ci.com/kamyu104/LeetCode-Solutions.svg?branch=master)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1175,6 +1175,7 @@
 1985 | [Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/) | [C++](./C++/find-the-kth-largest-integer-in-the-array.cpp) [Python](./Python/find-the-kth-largest-integer-in-the-array.py) | _O(n)_ on average| _O(n)_ | Medium | | Quick Select |
 1996 | [The Number of Weak Characters in the Game](https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/) | [C++](./C++/the-number-of-weak-characters-in-the-game.cpp) [Python](./Python/the-number-of-weak-characters-in-the-game.py) | _O(nlogn)_ | _O(1)_ | Medium | | |
 2015 | [Average Height of Buildings in Each Segment](https://leetcode.com/problems/average-height-of-buildings-in-each-segment/) | [C++](./C++/average-height-of-buildings-in-each-segment.cpp) [Python](./Python/average-height-of-buildings-in-each-segment.py) | _O(nlogn)_   | _O(n)_        | Medium         | 🔒 | Line Sweep
+2021 | [Brightest Position on Street](https://leetcode.com/problems/brightest-position-on-street/) | [C++](./C++/brightest-position-on-street.cpp) [Python](./Python/brightest-position-on-street.py) | _O(nlogn)_   | _O(n)_        | Medium         | 🔒 | Line Sweep
 
 <br/>
 <div align="right">
