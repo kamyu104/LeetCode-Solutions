@@ -1,9 +1,6 @@
 # Time:  O(n * iter), iter is the number of iterations
 # Space: O(1)
 
-# see reference:
-# - https://en.wikipedia.org/wiki/Geometric_median
-# - https://wikimedia.org/api/rest_v1/media/math/render/svg/b3fb215363358f12687100710caff0e86cd9d26b
 # Weiszfeld's algorithm
 class Solution(object):
     def getMinDistSum(self, positions):
