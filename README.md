@@ -364,7 +364,6 @@
 1856 | [Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/) | [C++](./C++/maximum-subarray-min-product.cpp) [Python](./Python/maximum-subarray-min-product.py) | _O(n)_ | _O(n)_ | Medium | variant of [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Mono Stack, Prefix Sum
 1944 | [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/) | [C++](./C++/number-of-visible-people-in-a-queue.cpp) [Python](./Python/number-of-visible-people-in-a-queue.py) | _O(n)_  | _O(n)_         | Hard           | variant of [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view/) | Mono Stack
 1950 | [Maximum of Minimum Values in All Subarrays](https://leetcode.com/problems/maximum-of-minimum-values-in-all-subarrays/) | [C++](./C++/maximum-of-minimum-values-in-all-subarrays.cpp) [Python](./Python/maximum-of-minimum-values-in-all-subarrays.py) | _O(n)_  | _O(n)_         | Medium           | 🔒 | Mono Stack
-2030 | [Smallest K-Length Subsequence With Occurrences of a Letter](https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/) | [C++](./C++/smallest-k-length-subsequence-with-occurrences-of-a-letter.cpp) [Python](./Python/smallest-k-length-subsequence-with-occurrences-of-a-letter.py) | _O(n)_  | _O(n)_         | Hard           | | Mono Stack
 
 <br/>
 <div align="right">
@@ -1096,6 +1095,7 @@
 1953 | [Maximum Number of Weeks for Which You Can Work](https://leetcode.com/problems/maximum-number-of-weeks-for-which-you-can-work/) | [C++](./C++/maximum-number-of-weeks-for-which-you-can-work.cpp) [Python](./Python/maximum-number-of-weeks-for-which-you-can-work.py) | _O(n)_ | _O(1)_ | Medium | | |
 1975 | [Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum/) | [C++](./C++/maximum-matrix-sum.cpp) [Python](./Python/maximum-matrix-sum.py) | _O(n^2)_ | _O(1)_ | Medium | | |
 2027 | [Minimum Moves to Convert String](https://leetcode.com/problems/minimum-moves-to-convert-string/) | [C++](./C++/minimum-moves-to-convert-string.cpp) [Python](./Python/minimum-moves-to-convert-string.py) | _O(n)_ | _O(1)_ | Easy | | |
+2030 | [Smallest K-Length Subsequence With Occurrences of a Letter](https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/) | [C++](./C++/smallest-k-length-subsequence-with-occurrences-of-a-letter.cpp) [Python](./Python/smallest-k-length-subsequence-with-occurrences-of-a-letter.py) | _O(n)_  | _O(n)_         | Hard           | | Mono Stack, Greedy
 
 <br/>
 <div align="right">
