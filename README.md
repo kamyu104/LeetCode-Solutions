@@ -1110,7 +1110,7 @@
 1982 | [Find Array Given Subset Sums](https://leetcode.com/problems/find-array-given-subset-sums/)|[C++](./C++/find-array-given-subset-sums.cpp) [Python](./Python/find-array-given-subset-sums.py)| _O(n * 2^n)_     | _O(1)_         | Hard         | | Math, DP, OrderedDict |
 2001 | [Number of Pairs of Interchangeable Rectangles](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/)|[C++](./C++/number-of-pairs-of-interchangeable-rectangles.cpp) [Python](./Python/number-of-pairs-of-interchangeable-rectangles.py)| _O(n)_     | _O(n)_         | Medium         | | Math |
 2005 | [Subtree Removal Game with Fibonacci Tree](https://leetcode.com/problems/subtree-removal-game-with-fibonacci-tree/)|[C++](./C++/subtree-removal-game-with-fibonacci-tree.cpp) [Python](./Python/subtree-removal-game-with-fibonacci-tree.py)| _O(1)_     | _O(1)_         | Hard         |🔒| Math, `Sprague-Grundy Theorem`, `Colon Principle` |
-2028 | [Find Missing Observations](https://leetcode.com/problems/find-missing-observations/)|[C++](./C++/find-missing-observations.cpp) [Python](./Python/find-missing-observations.py)| _O(n)_     | _O(1)_         | Hard         |🔒| |
+2028 | [Find Missing Observations](https://leetcode.com/problems/find-missing-observations/)|[C++](./C++/find-missing-observations.cpp) [Python](./Python/find-missing-observations.py)| _O(n)_     | _O(1)_         | Medium         | | |
 2029 | [Stone Game IX](https://leetcode.com/problems/stone-game-ix/)|[C++](./C++/stone-game-ix.cpp) [Python](./Python/stone-game-ix.py)| _O(n)_     | _O(1)_         | Medium         | |
 
 <br/>
@@ -2366,7 +2366,7 @@
 2004 | [The Number of Seniors and Juniors to Join the Company](https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company/) | [MySQL](./MySQL/the-number-of-seniors-and-juniors-to-join-the-company.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 2010 | [The Number of Seniors and Juniors to Join the Company II](https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company-ii/) | [MySQL](./MySQL/the-number-of-seniors-and-juniors-to-join-the-company.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 2020 | [Number of Accounts That Did Not Stream](https://leetcode.com/problems/number-of-accounts-that-did-not-stream/) | [MySQL](./MySQL/number-of-accounts-that-did-not-stream.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒||
-2026 | [ Low-Quality Problems](https://leetcode.com/problems/low-quality-problems/) | [MySQL](./MySQL/low-quality-problems.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+2026 | [ Low-Quality Problems](https://leetcode.com/problems/low-quality-problems/) | [MySQL](./MySQL/low-quality-problems.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
