@@ -10,7 +10,7 @@ public:
             ++count[s[i]];
             max_count = max(max_count, count[s[i]]);
             if (result - max_count >= k) {
-                --count[s[i-result]];
+                --count[s[i - result]];
             } else {
                 ++result;
             }
