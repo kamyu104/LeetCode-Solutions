@@ -16,7 +16,7 @@ public:
             // - assumed count[2] is the least one:
             //   2(,2,1)*,1,(,1)* => bob loses
             //            ^
-            return count[1] and count[2];
+            return count[1] && count[2];
         }
         // if abs(count[1]-count[2]) >= 3, then alice takes the most one at first, the remains are deterministic for bob to lose:
         // - assumed count[1] is the most one
