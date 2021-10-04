@@ -14,7 +14,7 @@
 * Hope you enjoy the journey of learning data structures and algorithms.
 * Notes: "🔒" means your subscription of [LeetCode premium membership](https://leetcode.com/subscribe/) is required for reading the question.
 
-## Problems
+## Solutions
 - [0001 - 1000](./0001-1000.md)
 
 ## Algorithms
