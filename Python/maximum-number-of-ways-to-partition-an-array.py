@@ -11,8 +11,8 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        right = collections.Counter()
         total = sum(nums)
+        right = collections.Counter()
         prefix = 0
         for i in xrange(len(nums)-1):
             prefix += nums[i]
