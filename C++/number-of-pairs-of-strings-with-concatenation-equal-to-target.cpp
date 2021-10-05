@@ -15,7 +15,7 @@ public:
                 result += cnt1;
                 ++lookup[size(num)];
             }
-            if (!target.compare(size(target) - size(num), size(num), num)) {
+            if (!target.compare(size(target) - size(num), size(num), num)) {  // in c++ 20, we can directly use ends_with, see https://en.cppreference.com/w/cpp/string/basic_string/ends_with
                 result += cnt2;
                 ++lookup[-size(num)];
             }
@@ -38,10 +38,10 @@ public:
             if (!target.compare(0, size(num), num)) {  // in c++ 20, we can directly use starts_with, see https://en.cppreference.com/w/cpp/string/basic_string/starts_with
                 result += suffix[size(target) - size(num)];
             }
-            if (!target.compare(size(target) - size(num), size(num), num)) {
+            if (!target.compare(size(target) - size(num), size(num), num)) {  // in c++ 20, we can directly use ends_with, see https://en.cppreference.com/w/cpp/string/basic_string/ends_with
                 result += prefix[size(target) - size(num)];
             }
-            if (!target.compare(0, size(num), num)) {  // in c++ 20, we can directly use ends_with, see https://en.cppreference.com/w/cpp/string/basic_string/ends_with
+            if (!target.compare(0, size(num), num)) {
                 ++prefix[size(num)];
             }
             if (!target.compare(size(target) - size(num), size(num), num)) {
