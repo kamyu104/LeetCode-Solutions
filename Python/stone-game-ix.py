@@ -12,7 +12,7 @@ class Solution(object):
         """
         count = collections.Counter(x%3 for x in stones)
         if count[0]%2 == 0:
-            # if both counts are not zero, then alice takes the least one at first, the remains are deterministic for bob to lose:
+            # iff both counts are not zero, then alice takes the least one at first, the remains are deterministic for bob to lose:
             # - assumed count[1] is the least one:
             #   1(,1,2)*,2,(,2)* => bob loses
             #            ^
@@ -20,7 +20,7 @@ class Solution(object):
             #   2(,2,1)*,1,(,1)* => bob loses
             #            ^
             return count[1] and count[2]
-        # if abs(count[1] - count[2]) >= 3, then alice takes the most one at first, the remains are deterministic for bob to lose:
+        # iff abs(count[1] - count[2]) >= 3, then alice takes the most one at first, the remains are deterministic for bob to lose:
         # - assumed count[1] is the most one
         #   1(,1,2)*,0,1(,2,1)*,1,(,1)* => bob loses
         #                       ^
