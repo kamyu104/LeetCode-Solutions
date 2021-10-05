@@ -14,13 +14,12 @@ class Solution(object):
         lookup = collections.Counter()
         result = 0
         for num in nums:
+            cnt1, cnt2 = lookup[-(len(target)-len(num))], lookup[len(target)-len(num)]
             if target.startswith(num):
-                result += lookup[-(len(target)-len(num))]
-            if target.endswith(num):
-                result += lookup[len(target)-len(num)]
-            if target.startswith(num):
+                result += cnt1
                 lookup[len(num)] += 1
             if target.endswith(num):
+                result += cnt2
                 lookup[-len(num)] += 1
         return result
 
