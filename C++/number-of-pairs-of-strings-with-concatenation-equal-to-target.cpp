@@ -10,16 +10,13 @@ public:
             if (size(num) > size(target)) {
                 continue;
             }
+            const int cnt1 = lookup[-(size(target) - size(num))], cnt2 = lookup[size(target) - size(num)];
             if (!target.compare(0, size(num), num)) {  // in c++ 20, we can directly use starts_with, see https://en.cppreference.com/w/cpp/string/basic_string/starts_with
-                result += lookup[-(size(target) - size(num))];
-            }
-            if (!target.compare(size(target) - size(num), size(num), num)) {
-                result += lookup[size(target) - size(num)];
-            }
-            if (!target.compare(0, size(num), num)) {  // in c++ 20, we can directly use ends_with, see https://en.cppreference.com/w/cpp/string/basic_string/ends_with
+                result += cnt1;
                 ++lookup[size(num)];
             }
             if (!target.compare(size(target) - size(num), size(num), num)) {
+                result += cnt2;
                 ++lookup[-size(num)];
             }
         }
