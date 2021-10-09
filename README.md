@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2030%20%2F%202030-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2031%20%2F%202031-ff69b4.svg)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
 * R.I.P. to my old Leetcode repository, where there were `5.7k+` stars and `2.2k+` forks (ever the top 3 in the field).
@@ -975,6 +975,7 @@
 2002 | [Maximum Product of the Length of Two Palindromic Subsequences](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/)| [C++](./C++/maximum-product-of-the-length-of-two-palindromic-subsequences.cpp) [Python](./Python/maximum-product-of-the-length-of-two-palindromic-subsequences.py) | _O(3^n)_    | _O(2^n)_          | Medium           | | DP, Submask Enumeration
 2008 | [Maximum Earnings From Taxi](https://leetcode.com/problems/maximum-earnings-from-taxi/)| [C++](./C++/maximum-earnings-from-taxi.cpp) [Python](./Python/maximum-earnings-from-taxi.py) | _O(n + mlogm)_    | _O(n)_          | Medium           | | DP
 2019 | [The Score of Students Solving Math Expression](https://leetcode.com/problems/the-score-of-students-solving-math-expression/) | [C++](./C++/the-score-of-students-solving-math-expression.cpp) [Python](./Python/the-score-of-students-solving-math-expression.py) | _O(n^3 * a^2)_ | _O(n^2)_ | Hard | variant of [Burst Balloons](https://leetcode.com/problems/burst-balloons/) |
+2031 | [Count Subarrays With More Ones Than Zeros](https://leetcode.com/problems/count-subarrays-with-more-ones-than-zeros/) | [C++](./C++/count-subarrays-with-more-ones-than-zeros.cpp) [Python](./Python/count-subarrays-with-more-ones-than-zeros.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, DP
 
 <br/>
 <div align="right">
