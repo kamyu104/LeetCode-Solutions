@@ -12,9 +12,9 @@ class Solution(object):
         """
         MOD = 10**9+7
 
-        result = total = same = more = 0
         lookup = collections.defaultdict(int)
         lookup[0] = 1
+        result = total = same = more = 0
         for x in nums:
             total += 1 if x == 1 else -1
             new_same = lookup[total]
