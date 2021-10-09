@@ -6,10 +6,9 @@ public:
     int subarraysWithMoreZerosThanOnes(vector<int>& nums) {
         static const int MOD = 1e9 + 7;
 
-        int same = 0, more = 0;
         vector<int> lookup(2 * size(nums) + 1);
         lookup[0 + size(nums)] = 1;
-        int result = 0, total = 0;
+        int result = 0, total = 0, same = 0, more = 0;
         for (const auto& num : nums) {
             total += (num == 1) ? 1 : -1;
             const int new_same = lookup[total + size(nums)];
