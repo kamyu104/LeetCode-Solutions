@@ -1,5 +1,7 @@
-# Time:  O(m * n)
+# Time:  O(m * n) on average
 # Space: O(m * n)
+
+import random
 
 class Solution(object):
     def minOperations(self, grid, x):
