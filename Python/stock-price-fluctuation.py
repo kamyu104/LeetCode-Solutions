@@ -79,7 +79,7 @@ class StockPrice2(object):
         self.__lookup[timestamp] = price
         heapq.heappush(self.__min_heap, (price, timestamp))
         heapq.heappush(self.__max_heap, (-price, timestamp))
-        if len(self.__min_heap) > 2*len(self.__lookup):  # avoid too much expired data
+        if len(self.__min_heap) > 2*len(self.__lookup):  # avoid too much expired or duplicated data
             full_delete(self.__min_heap, 1)
             full_delete(self.__max_heap, -1)
 
