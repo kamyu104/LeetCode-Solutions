@@ -38,13 +38,13 @@ class StockPrice(object):
         """
         :rtype: int
         """
-        return self.__sl_by_price[-1]
+        return next(reversed(self.__sl_by_price))
 
     def minimum(self):
         """
         :rtype: int
         """
-        return self.__sl_by_price[0]
+        return next(iter(self.__sl_by_price))
 
 
 # Time:  ctor:    O(1)
