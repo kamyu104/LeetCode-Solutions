@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2031%20%2F%202031-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2035%20%2F%202035-ff69b4.svg)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
 * R.I.P. to my old Leetcode repository, where there were `5.7k+` stars and `2.2k+` forks (ever the top 3 in the field).
@@ -227,6 +227,8 @@
 2017 | [Grid Game](https://leetcode.com/problems/grid-game/) | [C++](./C++/grid-game.cpp) [Python](./Python/grid-game.py) | _O(n)_ | _O(1)_ | Medium || Prefix Sum
 2018 | [Check if Word Can Be Placed In Crossword](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/) | [C++](./C++/check-if-word-can-be-placed-in-crossword.cpp) [Python](./Python/check-if-word-can-be-placed-in-crossword.py) | _O(m * n)_ | _O(1)_ | Medium ||
 2022 | [Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array/) | [C++](./C++/convert-1d-array-into-2d-array.cpp) [Python](./Python/convert-1d-array-into-2d-array.py) | _O(m * n)_ | _O(1)_ | Easy ||
+2033 | [Minimum Operations to Make a Uni-Value Grid](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/) | [C++](./C++/minimum-operations-to-make-a-uni-value-grid.cpp) [Python](./Python/minimum-operations-to-make-a-uni-value-grid.py) | _O(m * n)_  on average | _O(m * n)_ | Medium | variant of [Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Quick Select
+2035 | [Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) | [C++](./C++/partition-array-into-two-arrays-to-minimize-sum-difference.cpp) [Python](./Python/partition-array-into-two-arrays-to-minimize-sum-difference.py) | _O(n * 2^n)_ | _O(2^n)_ | Hard || Meet in the Middle
 
 <br/>
 <div align="right">
@@ -487,6 +489,7 @@
 2006 | [Count Number of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/)      | [C++](./C++/count-number-of-pairs-with-absolute-difference-k.cpp) [Python](./Python/count-number-of-pairs-with-absolute-difference-k.py)      | _O(n)_         | _O(n)_          | Easy         | variant of [Two Sum](https://leetcode.com/problems/two-sum/) |
 2023 | [Number of Pairs of Strings With Concatenation Equal to Target](https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/)      | [C++](./C++/number-of-pairs-of-strings-with-concatenation-equal-to-target.cpp) [Python](./Python/number-of-pairs-of-strings-with-concatenation-equal-to-target.py)      | _O(n * l)_         | _O(n)_          | Medium         | variant of [Two Sum](https://leetcode.com/problems/two-sum/) |
 2025 | [Maximum Number of Ways to Partition an Array](https://leetcode.com/problems/maximum-number-of-ways-to-partition-an-array/) | [C++](./C++/maximum-number-of-ways-to-partition-an-array.cpp) [Python](./Python/maximum-number-of-ways-to-partition-an-array.py) | _O(n)_ | _O(n)_ | Hard || Prefix Sum
+2032 | [Two Out of Three](https://leetcode.com/problems/two-out-of-three/) | [C++](./C++/two-out-of-three.cpp) [Python](./Python/two-out-of-three.py) | _O(n)_ | _O(min(n, r))_ | Easy || Counting
 
 <br/>
 <div align="right">
@@ -1209,6 +1212,7 @@
 1912 | [Design Movie Rental System](https://leetcode.com/problems/design-movie-rental-system/) | [C++](./C++/design-movie-rental-system.cpp) [Python](./Python/design-movie-rental-system.py) | ctor: _O(nlogn)_<br>search: _O(logn)_<br>rent: _O(logn)_<br>drop: _O(logn)_<br>report: _O(logn)_ | _O(n)_| Hard | | Ordered List
 1993 | [Operations on Tree](https://leetcode.com/problems/operations-on-tree/) | [C++](./C++/operations-on-tree.cpp) [Python](./Python/operations-on-tree.py) | ctor: _O(n)_<br>lock: _O(1)_<br>unlock: _O(1)_<br>upgrade: _O(n)_ | _O(n)_| Medium | |
 2013 | [Detect Squares](https://leetcode.com/problems/detect-squares/) | [C++](./C++/detect-squares.cpp) [Python](./Python/detect-squares.py) | ctor: _O(1)_<br>add: _O(1)_<br>count: _O(n)_ | _O(n)_| Medium | |
+2034 | [Stock Price Fluctuation](https://leetcode.com/problems/stock-price-fluctuation/) | [C++](./C++/stock-price-fluctuation.cpp) [Python](./Python/stock-price-fluctuation.py) | ctor: _O(1)_<br>update: _O(logn)_<br>current: _O(1)_<br>max: _O(1)_<br>min: _O(1)_ | _O(n)_ | Medium | | Sorted List, Heap
 
 <br/>
 <div align="right">
