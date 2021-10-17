@@ -39,7 +39,7 @@ class Solution(object):
         dist_to_dst, dist_to_src = bfs(adj, 0, n-1), bfs(adj, n-1, 0)
 
         dist = dist_to_dst[n-1]+2  # always exists
-        for i in xrange(n):
+        for i in xrange(n):  # case of detour
             if i not in dist_to_dst or i not in dist_to_src:
                 continue
             if dist_to_dst[i]+dist_to_src[i] > dist_to_dst[n-1]:  # find if there exists dist_to_dst[n-1]+1
