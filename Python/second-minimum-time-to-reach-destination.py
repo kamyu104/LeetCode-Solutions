@@ -34,7 +34,7 @@ class Solution(object):
                 steps += 1
                 if len(left) > len(right): 
                     left, right = right, left
-            return result+2
+            return result+2  # modified
 
         def calc_time(time, change, dist):
             result = 0
