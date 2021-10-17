@@ -1,5 +1,5 @@
-// Time:  O(|V| + |E|)
-// Space: O(|V| + |E|)
+// Time:  O(|V| + |E|) = O(|E|) since graph is connected, O(|E|) >= O(|V|)
+// Space: O(|V| + |E|) = O(|E|)
 
 class Solution {
 public:
