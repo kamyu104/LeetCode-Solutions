@@ -40,8 +40,6 @@ class Solution(object):
 
         dist = dist_to_dst[n-1]+2  # always exists
         for i in xrange(n):  # case of detour
-            if i not in dist_to_dst or i not in dist_to_src:
-                continue
             if dist_to_dst[i]+dist_to_src[i] > dist_to_dst[n-1]:  # find if there exists dist_to_dst[n-1]+1
                 dist = min(dist, dist_to_dst[i]+dist_to_src[i])
         return calc_time(time, change, dist)
