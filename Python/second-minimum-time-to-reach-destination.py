@@ -62,14 +62,16 @@ class Solution2(object):
         :type change: int
         :rtype: int
         """
+        INF = float("inf")
         def bfs(adj, start):
             q = [start]
-            dist = {start:0}
+            dist = [INF]*len(adj)
+            dist[start] = 0
             while q:
                 new_q = []
                 for u in q:
                     for v in adj[u]:
-                        if v in dist:
+                        if dist[v] != INF:
                             continue
                         dist[v] = dist[u]+1
                         new_q.append(v)
