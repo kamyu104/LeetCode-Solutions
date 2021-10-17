@@ -10,19 +10,21 @@ class Solution(object):
         :type change: int
         :rtype: int
         """
+        # Template:
+        # https://github.com/kamyu104/LeetCode-Solutions/blob/master/Python/find-if-path-exists-in-graph.py
         def bi_bfs(adj, start, target):
             left, right = {start}, {target}
             lookup = set()
             result = steps = 0
-            while left and (not result or result+2 > steps):
+            while left and (not result or result+2 > steps):  # modified
                 for pos in left:
                     lookup.add(pos)
                 new_left = set()
                 for pos in left: 
                     if pos in right:
-                        if result and result < steps:
+                        if result and result < steps:  # modified
                             return result+1
-                        elif not result:
+                        elif not result:  # modifeid
                             result = steps
                     for nei in adj[pos]:
                         if nei in lookup:
