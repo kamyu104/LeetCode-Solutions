@@ -22,10 +22,10 @@ class Solution(object):
                 if nums1[i] == 0: 
                     if target >= 0:
                         cnt += len(nums2)
-                else: 
-                    while 0 <= right and nums1[i]*nums2[right] > target:
-                        right -= 1
-                    cnt += right-0+1
+                    continue
+                while right >= 0 and nums1[i]*nums2[right] > target:
+                    right -= 1
+                cnt += right-0+1
             return cnt >= k
 
         neg_cnt = sum(x < 0 for x in nums1)
