@@ -22,10 +22,10 @@ class Solution(object):
                 new_left = set()
                 for pos in left: 
                     if pos in right:
-                        if result and result < steps:  # modified
-                            return result+1
-                        elif not result:  # modifeid
+                        if not result:  # modified
                             result = steps
+                        elif result < steps:  # modifeid
+                            return result+1
                     for nei in adj[pos]:
                         if nei in lookup:
                             continue
