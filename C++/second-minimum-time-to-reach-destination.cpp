@@ -71,12 +71,12 @@ public:
         }
         const auto& dist_to_end = bfs(adj, 0);
         const auto& dist_to_start = bfs(adj, n - 1);
-        int dist = dist_to_end[n - 1] + 2;
+        int dist = dist_to_end[n - 1] + 2;  // always exists
         for (int i = 0; i < n; ++i) {
             if (dist_to_end[i] + dist_to_start[i] == dist_to_end[n - 1]) {
                 continue;
             }
-            dist = min(dist, dist_to_end[i] + dist_to_start[i]);
+            dist = min(dist, dist_to_end[i] + dist_to_start[i]);  // find second min
             if (dist == dist_to_end[n - 1] + 1) {
                 break;
             }
