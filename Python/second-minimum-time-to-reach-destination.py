@@ -17,19 +17,19 @@ class Solution(object):
             lookup = set()
             result = steps = 0
             while left and (not result or result+2 > steps):  # modified
-                for pos in left:
-                    lookup.add(pos)
+                for u in left:
+                    lookup.add(u)
                 new_left = set()
-                for pos in left: 
-                    if pos in right:
+                for u in left: 
+                    if u in right:
                         if not result:  # modified
                             result = steps
                         elif result < steps:  # modifeid
                             return result+1
-                    for nei in adj[pos]:
-                        if nei in lookup:
+                    for v in adj[u]:
+                        if v in lookup:
                             continue
-                        new_left.add(nei)
+                        new_left.add(v)
                 left = new_left
                 steps += 1
                 if len(left) > len(right): 
