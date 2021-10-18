@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2035%20%2F%202035-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2045%20%2F%202045-ff69b4.svg)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
 * R.I.P. to my old Leetcode repository, where there were `5.7k+` stars and `2.2k+` forks (ever the top 3 in the field).
@@ -322,6 +322,8 @@
 1967 | [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)| [C++](./C++/number-of-strings-that-appear-as-substrings-in-word.cpp) [Python](./Python/number-of-strings-that-appear-as-substrings-in-word.py) | _O(n * l + m)_ | _O(t)_ | Easy || `KMP Algorithm`, `Aho-Corasick Automata`, Trie |
 1974 | [Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) | [C++](./C++/minimum-time-to-type-word-using-special-typewriter.cpp) [Python](./Python/minimum-time-to-type-word-using-special-typewriter.py) | _O(n)_ | _O(1)_ | Easy |||
 2000 | [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) | [C++](./C++/reverse-prefix-of-word.cpp) [Python](./Python/reverse-prefix-of-word.py) | _O(n)_ | _O(1)_ | Easy |||
+2042 | [Check if Numbers Are Ascending in a Sentence](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/) | [C++](./C++/check-if-numbers-are-ascending-in-a-sentence.cpp) [Python](./Python/check-if-numbers-are-ascending-in-a-sentence.py) | _O(n)_ | _O(1)_ | Easy |||
+
 
 <br/>
 <div align="right">
@@ -803,6 +805,7 @@
 1926 | [Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)|[C++](./C++/nearest-exit-from-entrance-in-maze.cpp) [Python](./Python/nearest-exit-from-entrance-in-maze.py) | _O(m * n)_      | _O(m + n)_          | Medium         | | Bi-BFS
 1928 | [Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/)| [C++](./C++/minimum-cost-to-reach-destination-in-time.cpp) [Python](./Python/minimum-cost-to-reach-destination-in-time.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | variant of [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | `Dijkstra's Algorithm` |
 2039 | [The Time When the Network Becomes Idle](https://leetcode.com/problems/the-time-when-the-network-becomes-idle/)| [C++](./C++/the-time-when-the-network-becomes-idle.cpp) [Python](./Python/the-time-when-the-network-becomes-idle.py)| _O(\|E\|)_ | _O(\|E\|)_ | Medium | | Math |
+2045 | [Second Minimum Time to Reach Destination](https://leetcode.com/problems/second-minimum-time-to-reach-destination/)| [C++](./C++/second-minimum-time-to-reach-destination.cpp) [Python](./Python/second-minimum-time-to-reach-destination.py)| _O(\|E\|)_ | _O(\|E\|)_ | Hard | | Bi-BFS |
 
 <br/>
 <div align="right">
@@ -982,6 +985,7 @@
 2008 | [Maximum Earnings From Taxi](https://leetcode.com/problems/maximum-earnings-from-taxi/)| [C++](./C++/maximum-earnings-from-taxi.cpp) [Python](./Python/maximum-earnings-from-taxi.py) | _O(n + mlogm)_    | _O(n)_          | Medium           | | DP
 2019 | [The Score of Students Solving Math Expression](https://leetcode.com/problems/the-score-of-students-solving-math-expression/) | [C++](./C++/the-score-of-students-solving-math-expression.cpp) [Python](./Python/the-score-of-students-solving-math-expression.py) | _O(n^3 * a^2)_ | _O(n^2)_ | Hard | variant of [Burst Balloons](https://leetcode.com/problems/burst-balloons/) |
 2031 | [Count Subarrays With More Ones Than Zeros](https://leetcode.com/problems/count-subarrays-with-more-ones-than-zeros/) | [C++](./C++/count-subarrays-with-more-ones-than-zeros.cpp) [Python](./Python/count-subarrays-with-more-ones-than-zeros.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, DP
+2044 | [Count Number of Maximum Bitwise-OR Subsets](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | [C++](./C++/count-number-of-maximum-bitwise-or-subsets.cpp) [Python](./Python/count-number-of-maximum-bitwise-or-subsets.py) | _O(min(2^n, m * n))_ | _O(min(2^n, m))_ | Medium | | DP
 
 <br/>
 <div align="right">
@@ -1103,7 +1107,7 @@
 1975 | [Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum/) | [C++](./C++/maximum-matrix-sum.cpp) [Python](./Python/maximum-matrix-sum.py) | _O(n^2)_ | _O(1)_ | Medium | | |
 2027 | [Minimum Moves to Convert String](https://leetcode.com/problems/minimum-moves-to-convert-string/) | [C++](./C++/minimum-moves-to-convert-string.cpp) [Python](./Python/minimum-moves-to-convert-string.py) | _O(n)_ | _O(1)_ | Easy | | |
 2030 | [Smallest K-Length Subsequence With Occurrences of a Letter](https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/) | [C++](./C++/smallest-k-length-subsequence-with-occurrences-of-a-letter.cpp) [Python](./Python/smallest-k-length-subsequence-with-occurrences-of-a-letter.py) | _O(n)_  | _O(n)_         | Hard           | | Mono Stack, Greedy
-2036 | [Maximum Alternating Subarray Sum](https://leetcode.com/problems/maximum-alternating-subarray-sum/) | [C++](./C++/maximum-alternating-subarray-sum.cpp) [Python](./Python/maximum-alternating-subarray-sum.py) | _O(n)_ | _O(1)_ | Medium | variant of [Maximum Alternating Subsequence Sum](https://leetcode.com/problems/maximum-alternating-subsequence-sum/) | 🔒 | Greedy, `Kadane's Algorithm`
+2036 | [Maximum Alternating Subarray Sum](https://leetcode.com/problems/maximum-alternating-subarray-sum/) | [C++](./C++/maximum-alternating-subarray-sum.cpp) [Python](./Python/maximum-alternating-subarray-sum.py) | _O(n)_ | _O(1)_ | Medium | variant of [Maximum Alternating Subsequence Sum](https://leetcode.com/problems/maximum-alternating-subsequence-sum/), 🔒 | Greedy, `Kadane's Algorithm`
 2037 | [Minimum Number of Moves to Seat Everyone](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/) | [C++](./C++/minimum-number-of-moves-to-seat-everyone.cpp) [Python](./Python/minimum-number-of-moves-to-seat-everyone.py) | _O(nlogn)_ | _O(1)_ | Easy | | Greedy|
 
 <br/>
@@ -1218,6 +1222,7 @@
 1993 | [Operations on Tree](https://leetcode.com/problems/operations-on-tree/) | [C++](./C++/operations-on-tree.cpp) [Python](./Python/operations-on-tree.py) | ctor: _O(n)_<br>lock: _O(1)_<br>unlock: _O(1)_<br>upgrade: _O(n)_ | _O(n)_| Medium | |
 2013 | [Detect Squares](https://leetcode.com/problems/detect-squares/) | [C++](./C++/detect-squares.cpp) [Python](./Python/detect-squares.py) | ctor: _O(1)_<br>add: _O(1)_<br>count: _O(n)_ | _O(n)_| Medium | |
 2034 | [Stock Price Fluctuation](https://leetcode.com/problems/stock-price-fluctuation/) | [C++](./C++/stock-price-fluctuation.cpp) [Python](./Python/stock-price-fluctuation.py) | ctor: _O(1)_<br>update: _O(logn)_<br>current: _O(1)_<br>max: _O(1)_<br>min: _O(1)_ | _O(n)_ | Medium | | Sorted List, Heap
+2043 | [Simple Bank System](https://leetcode.com/problems/simple-bank-system/) | [C++](./C++/simple-bank-system.cpp) [Python](./Python/simple-bank-system.py) | ctor: _O(1)_<br>transer: _O(1)_<br>deposit: _O(1)_<br>withdraw: _O(1)_ | _O(1)_ | Medium | |
 
 <br/>
 <div align="right">
@@ -1382,7 +1387,8 @@
 2004 | [The Number of Seniors and Juniors to Join the Company](https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company/) | [MySQL](./MySQL/the-number-of-seniors-and-juniors-to-join-the-company.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 2010 | [The Number of Seniors and Juniors to Join the Company II](https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company-ii/) | [MySQL](./MySQL/the-number-of-seniors-and-juniors-to-join-the-company.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 2020 | [Number of Accounts That Did Not Stream](https://leetcode.com/problems/number-of-accounts-that-did-not-stream/) | [MySQL](./MySQL/number-of-accounts-that-did-not-stream.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒||
-2026 | [ Low-Quality Problems](https://leetcode.com/problems/low-quality-problems/) | [MySQL](./MySQL/low-quality-problems.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+2026 | [Low-Quality Problems](https://leetcode.com/problems/low-quality-problems/) | [MySQL](./MySQL/low-quality-problems.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+2041 | [Accepted Candidates From the Interviews](https://leetcode.com/problems/accepted-candidates-from-the-interviews/) | [MySQL](./MySQL/accepted-candidates-from-the-interviews.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
