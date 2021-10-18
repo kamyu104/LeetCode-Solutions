@@ -229,6 +229,7 @@
 2022 | [Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array/) | [C++](./C++/convert-1d-array-into-2d-array.cpp) [Python](./Python/convert-1d-array-into-2d-array.py) | _O(m * n)_ | _O(1)_ | Easy ||
 2033 | [Minimum Operations to Make a Uni-Value Grid](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/) | [C++](./C++/minimum-operations-to-make-a-uni-value-grid.cpp) [Python](./Python/minimum-operations-to-make-a-uni-value-grid.py) | _O(m * n)_  on average | _O(m * n)_ | Medium | variant of [Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Math, Median, Quick Select
 2035 | [Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) | [C++](./C++/partition-array-into-two-arrays-to-minimize-sum-difference.cpp) [Python](./Python/partition-array-into-two-arrays-to-minimize-sum-difference.py) | _O(n * 2^n)_ | _O(2^n)_ | Hard || Meet in the Middle
+2038 | [Remove Colored Pieces if Both Neighbors are the Same Color](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/) | [C++](./C++/remove-colored-pieces-if-both-neighbors-are-the-same-color.cpp) [Python](./Python/remove-colored-pieces-if-both-neighbors-are-the-same-color.py) | _O(n)_ | _O(1)_ | Medium || 
 
 <br/>
 <div align="right">
@@ -689,6 +690,7 @@
 1989 | [Maximum Number of People That Can Be Caught in Tag](https://leetcode.com/problems/maximum-number-of-people-that-can-be-caught-in-tag/) | [C++](./C++/maximum-number-of-people-that-can-be-caught-in-tag.cpp) [Python](./Python/maximum-number-of-people-that-can-be-caught-in-tag.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Greedy, Two Pointers, Sliding Window
 2009 | [Minimum Number of Operations to Make Array Continuous](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/) | [C++](./C++/minimum-number-of-operations-to-make-array-continuous.cpp) [Python](./Python/minimum-number-of-operations-to-make-array-continuous.py) | _O(nlogn)_ | _O(1)_ | Hard || Two Pointers, Sliding Window
 2024 | [Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/) | [C++](./C++/maximize-the-confusion-of-an-exam.cpp) [Python](./Python/maximize-the-confusion-of-an-exam.py) | _O(n)_| _O(1)_| Medium | variant of [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Sliding Window |
+2040 | [Kth Smallest Product of Two Sorted Arrays](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/) | [C++](./C++/kth-smallest-product-of-two-sorted-arrays.cpp) [Python](./Python/kth-smallest-product-of-two-sorted-arrays.py) | _O((m + n) * logr)_| _O(1)_| Hard | | Binary Search, Two Pointers |
 
 <br/>
 <div align="right">
@@ -800,6 +802,7 @@
 1765 | [Map of Highest Peak](https://leetcode.com/problems/map-of-highest-peak/)| [C++](./C++/map-of-highest-peak.cpp) [Python](./Python/map-of-highest-peak.py)| _O(m * n)_ | _O(m * n)_ | Medium | | BFS 
 1926 | [Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)|[C++](./C++/nearest-exit-from-entrance-in-maze.cpp) [Python](./Python/nearest-exit-from-entrance-in-maze.py) | _O(m * n)_      | _O(m + n)_          | Medium         | | Bi-BFS
 1928 | [Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/)| [C++](./C++/minimum-cost-to-reach-destination-in-time.cpp) [Python](./Python/minimum-cost-to-reach-destination-in-time.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | variant of [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | `Dijkstra's Algorithm` |
+2039 | [The Time When the Network Becomes Idle](https://leetcode.com/problems/the-time-when-the-network-becomes-idle/)| [C++](./C++/the-time-when-the-network-becomes-idle.cpp) [Python](./Python/the-time-when-the-network-becomes-idle.py)| _O(\|E\|)_ | _O(\|E\|)_ | Medium | | Math |
 
 <br/>
 <div align="right">
@@ -1100,6 +1103,8 @@
 1975 | [Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum/) | [C++](./C++/maximum-matrix-sum.cpp) [Python](./Python/maximum-matrix-sum.py) | _O(n^2)_ | _O(1)_ | Medium | | |
 2027 | [Minimum Moves to Convert String](https://leetcode.com/problems/minimum-moves-to-convert-string/) | [C++](./C++/minimum-moves-to-convert-string.cpp) [Python](./Python/minimum-moves-to-convert-string.py) | _O(n)_ | _O(1)_ | Easy | | |
 2030 | [Smallest K-Length Subsequence With Occurrences of a Letter](https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/) | [C++](./C++/smallest-k-length-subsequence-with-occurrences-of-a-letter.cpp) [Python](./Python/smallest-k-length-subsequence-with-occurrences-of-a-letter.py) | _O(n)_  | _O(n)_         | Hard           | | Mono Stack, Greedy
+2036 | [Maximum Alternating Subarray Sum](https://leetcode.com/problems/maximum-alternating-subarray-sum/) | [C++](./C++/maximum-alternating-subarray-sum.cpp) [Python](./Python/maximum-alternating-subarray-sum.py) | _O(n)_ | _O(1)_ | Medium | variant of [Maximum Alternating Subsequence Sum](https://leetcode.com/problems/maximum-alternating-subsequence-sum/) | 🔒 | Greedy, `Kadane's Algorithm`
+2037 | [Minimum Number of Moves to Seat Everyone](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/) | [C++](./C++/minimum-number-of-moves-to-seat-everyone.cpp) [Python](./Python/minimum-number-of-moves-to-seat-everyone.py) | _O(nlogn)_ | _O(1)_ | Easy | | Greedy|
 
 <br/>
 <div align="right">
