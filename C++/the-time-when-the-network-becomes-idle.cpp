@@ -16,7 +16,7 @@ public:
         while (!empty(q)) {
             vector<int> new_q;
             for (const auto& u : q) {
-                for (int v : adj[u]) {
+                for (const auto& v : adj[u]) {
                     if (lookup[v]) {
                         continue;
                     }
