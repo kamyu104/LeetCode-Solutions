@@ -5,22 +5,56 @@ class Solution {
 public:
     ListNode* sortLinkedList(ListNode* head) {
         ListNode dummy;
-        auto tail = &dummy;
-        while (head) {
-            auto nxt = head->next;
-            if (head->val >= 0) {
-                head->next = nullptr;
-                tail->next = head;
-                tail = head;
+        auto tail = &dummy, curr = head;
+        while (curr) {
+            auto nxt = curr->next;
+            if (curr->val >= 0) {
+                curr->next = nullptr;
+                tail->next = curr;
+                tail = curr;
             } else {
-                head->next = dummy.next;
-                dummy.next = head;
                 if (tail == &dummy) {
-                    tail = head;
+                    tail = curr;
                 }
+                curr->next = dummy.next;
+                dummy.next = curr;
             }
-            head = nxt;
+            curr = nxt;
         }
         return dummy.next;
+    }
+};
+
+
+// Time:  O(n)
+// Space: O(1)
+class Solution2 {
+public:
+    ListNode* sortLinkedList(ListNode* head) {
+        auto curr = head;
+        head = nullptr;
+        ListNode *tail = nullptr;
+        while (curr) {
+            auto nxt = curr->next;
+            if (curr->val >= 0) {
+                if (!head) {
+                    head = curr;
+                }
+                curr->next = nullptr;
+                if (tail) {
+                    tail->next = curr;
+                }
+                tail = curr;
+                
+            } else {
+                if (!tail) {
+                    tail = curr;
+                }
+                curr->next = head;
+                head = curr;
+            }
+            curr = nxt;
+        }
+        return head;
     }
 };
