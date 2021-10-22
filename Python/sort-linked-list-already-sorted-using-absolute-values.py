@@ -7,9 +7,7 @@ class ListNode(object):
         self.val = val
         self.next = next
 
-    
-# Time:  O(n)
-# Space: O(1)
+
 class Solution(object):
     def sortLinkedList(self, head):
         """
