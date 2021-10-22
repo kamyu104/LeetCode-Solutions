@@ -18,13 +18,8 @@ class Solution(object):
         """
         tail, curr, head.next = head, head.next, None
         while curr:
-            nxt = curr.next
             if curr.val > 0:
-                curr.next = None
-                tail.next = curr
-                tail = curr
+                curr.next, tail.next, tail, curr = None, curr, curr, curr.next
             else:
-                curr.next = head
-                head = curr
-            curr = nxt
+                curr.next, head, curr = head, curr, curr.next
         return head
