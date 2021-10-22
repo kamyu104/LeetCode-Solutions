@@ -21,7 +21,7 @@ class Solution(object):
         head.next = None
         while curr:
             nxt = curr.next
-            if curr.val >= 0:
+            if curr.val > 0:
                 curr.next = None
                 tail.next = curr
                 tail = curr
