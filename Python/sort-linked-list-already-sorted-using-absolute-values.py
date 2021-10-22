@@ -16,8 +16,7 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        tail, curr = head, head.next
-        head.next = None
+        tail, curr, head.next = head, head.next, None
         while curr:
             nxt = curr.next
             if curr.val > 0:
