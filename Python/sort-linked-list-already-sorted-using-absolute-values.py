@@ -23,10 +23,10 @@ class Solution(object):
                 tail.next = curr
                 tail = curr
             else:
-                curr.next = dummy.next
-                dummy.next = curr
                 if tail is dummy:
                     tail = curr
+                curr.next = dummy.next
+                dummy.next = curr
             curr = nxt
         return dummy.next
 
@@ -44,16 +44,16 @@ class Solution2(object):
         while curr:
             nxt = curr.next
             if curr.val >= 0:
+                if head is None:
+                    head = curr
                 curr.next = None
                 if tail:
                     tail.next = curr
                 tail = curr
-                if head is None:
-                    head = tail
             else:
+                if tail is None:
+                    tail = curr
                 curr.next = head if head else None
                 head = curr
-                if tail is None:
-                    tail = head
             curr = nxt
         return head
