@@ -53,7 +53,7 @@ class Solution2(object):
             else:
                 if tail is None:
                     tail = curr
-                curr.next = head if head else None
+                curr.next = head
                 head = curr
             curr = nxt
         return head
