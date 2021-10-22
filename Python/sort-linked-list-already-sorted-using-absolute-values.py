@@ -15,16 +15,45 @@ class Solution(object):
         :rtype: Optional[ListNode]
         """
         tail = dummy = ListNode()
-        while head:
-            nxt = head.next
-            if head.val >= 0:
-                head.next = None
-                tail.next = head
-                tail = head
+        curr = head
+        while curr:
+            nxt = curr.next
+            if curr.val >= 0:
+                curr.next = None
+                tail.next = curr
+                tail = curr
             else:
-                head.next = dummy.next
-                dummy.next = head
+                curr.next = dummy.next
+                dummy.next = curr
                 if tail is dummy:
-                    tail = head
-            head = nxt
+                    tail = curr
+            curr = nxt
         return dummy.next
+
+    
+# Time:  O(n)
+# Space: O(1)
+class Solution2(object):
+    def sortLinkedList(self, head):
+        """
+        :type head: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
+        curr = head
+        head = tail = None
+        while curr:
+            nxt = curr.next
+            if curr.val >= 0:
+                curr.next = None
+                if tail:
+                    tail.next = curr
+                tail = curr
+                if head is None:
+                    head = tail
+            else:
+                curr.next = head if head else None
+                head = curr
+                if tail is None:
+                    tail = head
+            curr = nxt
+        return head
