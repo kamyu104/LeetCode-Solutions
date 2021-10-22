@@ -32,26 +32,22 @@ class Solution(object):
     
 # Time:  O(n)
 # Space: O(1)
-class Solution2(object):
+class Solution(object):
     def sortLinkedList(self, head):
         """
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        curr = head
-        head = tail = None
+        tail = head
+        curr = head.next
+        head.next = None
         while curr:
             nxt = curr.next
             if curr.val >= 0:
-                if head is None:
-                    head = curr
                 curr.next = None
-                if tail:
-                    tail.next = curr
+                tail.next = curr
                 tail = curr
             else:
-                if tail is None:
-                    tail = curr
                 curr.next = head
                 head = curr
             curr = nxt
