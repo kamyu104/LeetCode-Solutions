@@ -14,8 +14,9 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        tail = dummy = ListNode()
-        curr = head
+        dummy = ListNode(next=head)
+        tail, curr = head, head.next
+        head.next = None
         while curr:
             nxt = curr.next
             if curr.val >= 0:
@@ -23,8 +24,6 @@ class Solution(object):
                 tail.next = curr
                 tail = curr
             else:
-                if tail is dummy:
-                    tail = curr
                 curr.next = dummy.next
                 dummy.next = curr
             curr = nxt
