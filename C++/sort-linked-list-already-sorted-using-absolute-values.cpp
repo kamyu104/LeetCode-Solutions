@@ -9,7 +9,7 @@ public:
         head->next = nullptr;
         while (curr) {
             auto nxt = curr->next;
-            if (curr->val >= 0) {
+            if (curr->val > 0) {
                 curr->next = nullptr;
                 tail->next = curr;
                 tail = curr;
