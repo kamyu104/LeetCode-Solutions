@@ -32,7 +32,7 @@ class Solution(object):
     
 # Time:  O(n)
 # Space: O(1)
-class Solution(object):
+class Solution2(object):
     def sortLinkedList(self, head):
         """
         :type head: Optional[ListNode]
