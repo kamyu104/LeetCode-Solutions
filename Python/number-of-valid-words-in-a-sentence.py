@@ -15,7 +15,7 @@ class Solution(object):
                 token = hyphen = 0
                 continue
             if sentence[i].isdigit() or \
-               (sentence[i] in '!.,' and not (i == len(sentence)-1 or sentence[i+1] == ' ')) or \
+               (sentence[i] in "!.," and not (i == len(sentence)-1 or sentence[i+1] == ' ')) or \
                (sentence[i] == '-' and not (hyphen == 0 and 0 < i < len(sentence)-1 and sentence[i-1].isalpha() and sentence[i+1].isalpha())):
                 token = -1
                 continue
