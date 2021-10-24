@@ -24,8 +24,9 @@ class Solution(object):
                       444224, 444242, 444422, 515555, 551555, 555155, 555515, 555551, 666666, 1224444]
         return candidates[bisect.bisect_right(candidates, n)]
 
-# Time:  O(l * p) = O(1), p is the count of permutations, l is the max length of numbers
-# Space: O(c) = O(1)
+
+# Time:  O(l * p) = O(1), p is the count of all candidates' permutations, l is the max length of numbers
+# Space: O(l + c) = O(1), c is the count of candidates
 class Solution2(object):
     def nextBeautifulNumber(self, n):
         """
