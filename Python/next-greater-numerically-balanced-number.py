@@ -1,5 +1,5 @@
-# Time:  O(log110) = O(1)
-# Space: O(110) = O(1)
+# Time:  O(logc) = O(1)
+# Space: O(c) = O(1)
 
 import bisect
 
@@ -25,8 +25,8 @@ class Solution(object):
         return candidates[bisect.bisect_right(candidates, n)]
 
 
-# Time:  O(l * p) = O(1), p is the count of all candidates' permutations, l is the max length of numbers
-# Space: O(l + c) = O(1), c is the count of candidates
+# Time:  O(l * c) = O(1), c is the count of all candidates' permutations, l is the max length of permutations
+# Space: O(l * b) = O(1), b is the count of balanced
 class Solution2(object):
     def nextBeautifulNumber(self, n):
         """
