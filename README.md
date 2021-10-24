@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2046%20%2F%202046-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2050%20%2F%202050-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -324,7 +324,8 @@
 1974 | [Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) | [C++](./C++/minimum-time-to-type-word-using-special-typewriter.cpp) [Python](./Python/minimum-time-to-type-word-using-special-typewriter.py) | _O(n)_ | _O(1)_ | Easy |||
 2000 | [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) | [C++](./C++/reverse-prefix-of-word.cpp) [Python](./Python/reverse-prefix-of-word.py) | _O(n)_ | _O(1)_ | Easy |||
 2042 | [Check if Numbers Are Ascending in a Sentence](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/) | [C++](./C++/check-if-numbers-are-ascending-in-a-sentence.cpp) [Python](./Python/check-if-numbers-are-ascending-in-a-sentence.py) | _O(n)_ | _O(1)_ | Easy |||
-
+2047 | [Number of Valid Words in a Sentence](https://leetcode.com/problems/number-of-valid-words-in-a-sentence/) | [C++](./C++/number-of-valid-words-in-a-sentence.cpp) [Python](./Python/number-of-valid-words-in-a-sentence.py) | _O(n)_ | _O(1)_ | Easy |||
+2048 | [Next Greater Numerically Balanced Number](https://leetcode.com/problems/next-greater-numerically-balanced-number/) | [C++](./C++/next-greater-numerically-balanced-number.cpp) [Python](./Python/next-greater-numerically-balanced-number.py) | _O(1)_ | _O(1)_ | Medium || Permutations, Precompute, Binary Search |
 
 <br/>
 <div align="right">
@@ -808,6 +809,7 @@
 1928 | [Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/)| [C++](./C++/minimum-cost-to-reach-destination-in-time.cpp) [Python](./Python/minimum-cost-to-reach-destination-in-time.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | variant of [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | `Dijkstra's Algorithm` |
 2039 | [The Time When the Network Becomes Idle](https://leetcode.com/problems/the-time-when-the-network-becomes-idle/)| [C++](./C++/the-time-when-the-network-becomes-idle.cpp) [Python](./Python/the-time-when-the-network-becomes-idle.py)| _O(\|E\|)_ | _O(\|E\|)_ | Medium | | Math |
 2045 | [Second Minimum Time to Reach Destination](https://leetcode.com/problems/second-minimum-time-to-reach-destination/)| [C++](./C++/second-minimum-time-to-reach-destination.cpp) [Python](./Python/second-minimum-time-to-reach-destination.py)| _O(\|E\|)_ | _O(\|E\|)_ | Hard | | Bi-BFS |
+2050 | [Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/)| [C++](./C++/parallel-courses-iii.cpp) [Python](./Python/parallel-courses-iii.py)   | _O(\|V\| + \|E\|)_         | _O(\|E\|)_          | Hard         | variant of [Parallel Courses](https://leetcode.com/problems/parallel-courses/) | Topological Sort |
 
 <br/>
 <div align="right">
@@ -840,6 +842,7 @@
 1766 | [Tree of Coprimes](https://leetcode.com/problems/tree-of-coprimes/) | [C++](./C++/tree-of-coprimes.cpp) [Python](./Python/tree-of-coprimes.py) | _O(n)_ | _O(n)_ | Hard | | |
 1905 | [Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) | [C++](./C++/count-sub-islands.cpp) [Python](./Python/count-sub-islands.py) | _O(m * n)_ | _O(1)_ | Medium | | Flood Fill |
 1973 | [Count Nodes Equal to Sum of Descendants](https://leetcode.com/problems/count-nodes-equal-to-sum-of-descendants/) | [C++](./C++/count-nodes-equal-to-sum-of-descendants.cpp) [Python](./Python/count-nodes-equal-to-sum-of-descendants.py) | _O(n)_ | _O(h)_ | Medium | 🔒 | |
+2049 | [Count Nodes With the Highest Score](https://leetcode.com/problems/count-nodes-with-the-highest-score/) | [C++](./C++/count-nodes-with-the-highest-score.cpp) [Python](./Python/count-nodes-with-the-highest-score.py) | _O(n)_ | _O(n)_ | Medium | | |
 
 <br/>
 <div align="right">
