@@ -25,7 +25,7 @@ class Solution(object):
         return candidates[bisect.bisect_right(candidates, n)]
 
 
-# Time:  O(l * c) = O(1), c is the count of all candidates' permutations, l is the max length of permutations
+# Time:  O(l * c) = O(1), c is the count of all balanced's permutations, l is the max length of permutations
 # Space: O(l * b) = O(1), b is the count of balanced
 class Solution2(object):
     def nextBeautifulNumber(self, n):
