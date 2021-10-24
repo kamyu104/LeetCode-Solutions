@@ -10,7 +10,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        # precomputed by generating all candidates' permutations in solution2
+        # precomputed by generating all balanced' permutations in solution2
         candidates = [     1,     22,    122,    212,    221,    333  , 1333,   3133,   3313,   3331,
                         4444,  14444,  22333,  23233,  23323,  23332,  32233,  32323,  32332,  33223,
                        33232,  33322,  41444,  44144,  44414,  44441,  55555, 122333, 123233, 123323,
