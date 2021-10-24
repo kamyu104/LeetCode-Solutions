@@ -73,8 +73,7 @@ class Solution2(object):
                 result = min(result, int("".join(x)))
                 continue
             while True:
-                d = int("".join(x))
-                if d > n:
+                if x > s:
                     result = min(result, int("".join(x)))
                 if not next_permutation(x, 0, len(x)):
                     break
