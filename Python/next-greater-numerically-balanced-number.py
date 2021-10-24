@@ -11,6 +11,7 @@ class Solution(object):
         :rtype: int
         """
         # precomputed by generating all balanced's permutations in solution2
+        # candidates = sorted(set(int("".join(perm)) for x in [1, 22, 122, 333, 1333, 4444, 14444, 22333, 55555, 122333, 155555, 224444, 666666] for perm in itertools.permutations(str(x)))) + [1224444]
         candidates = [     1,     22,    122,    212,    221,    333  , 1333,   3133,   3313,   3331,
                         4444,  14444,  22333,  23233,  23323,  23332,  32233,  32323,  32332,  33223,
                        33232,  33322,  41444,  44144,  44414,  44441,  55555, 122333, 123233, 123323,
@@ -37,16 +38,16 @@ class Solution2(object):
         :rtype: int
         """
         # obtained by manually enumerating min number of permutations in each length
-        balanced = ["1",
-                    "22",
-                    "122", "333",
-                    "1333", "4444",
-                    "14444", "22333", "55555",
-                    "122333", "155555", "224444", "666666"]
+        balanced = [1,
+                    22,
+                    122, 333,
+                    1333, 4444,
+                    14444, 22333, 55555,
+                    122333, 155555, 224444, 666666]
         s = tuple(str(n))
         result = 1224444
         for x in balanced:
-            x = tuple(x)
+            x = tuple(str(x))
             if len(x) < len(s):
                 continue
             if len(x) > len(s):
