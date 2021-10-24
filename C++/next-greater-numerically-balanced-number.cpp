@@ -4,7 +4,7 @@
 class Solution {
 public:
     int nextBeautifulNumber(int n) {
-        // precomputed by generating all balanced' permutations in solution2
+        // precomputed by generating all balanced's permutations in solution2
         static const vector<int> candidates =  {
                  1,     22,    122,    212,    221,    333  , 1333,   3133,   3313,   3331,
               4444,  14444,  22333,  23233,  23323,  23332,  32233,  32323,  32332,  33223,
