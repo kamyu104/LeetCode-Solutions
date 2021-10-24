@@ -28,17 +28,18 @@ class Solution2 {
 public:
     int nextBeautifulNumber(int n) {
         // obtained by manually enumerating min number of permutations in each length
-        static const vector<string> balanced = {
-            "1",
-            "22",
-            "122", "333",
-            "1333", "4444",
-            "14444", "22333", "55555",
-            "122333", "155555", "224444", "666666"
+        static const vector<int> balanced = {
+            1,
+            22,
+            122, 333,
+            1333, 4444,
+            14444, 22333, 55555,
+            122333, 155555, 224444, 666666
         };
         const auto& s = to_string(n);
         int result = 1224444;
-        for (auto x : balanced) {
+        for (const auto& i : balanced) {
+            auto x = to_string(i);
             if (size(x) < size(s)) {
                 continue;
             }
