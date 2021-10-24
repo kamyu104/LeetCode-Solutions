@@ -57,13 +57,14 @@ class Solution2(object):
             reverse(nums, k+1, end)
             return True
 
-        s = list(str(n))
+        # obtained by manually enumerating min number of permutations in each length
         balanced = ['1',
                     '22',
                     '122', '333',
                     '1333', '4444',
                     '14444', '22333', '55555',
-                    '122333', '155555', '224444', '666666']  # obtained by manually enumerating min number of permutations in each length
+                    '122333', '155555', '224444', '666666']
+        s = list(str(n))
         result = 1224444
         for x in balanced:
             x = list(x)
