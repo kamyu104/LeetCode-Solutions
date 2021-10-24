@@ -58,12 +58,12 @@ class Solution2(object):
             return True
 
         # obtained by manually enumerating min number of permutations in each length
-        balanced = ['1',
-                    '22',
-                    '122', '333',
-                    '1333', '4444',
-                    '14444', '22333', '55555',
-                    '122333', '155555', '224444', '666666']
+        balanced = ["1",
+                    "22",
+                    "122", "333",
+                    "1333", "4444",
+                    "14444", "22333", "55555",
+                    "122333", "155555", "224444", "666666"]
         s = list(str(n))
         result = 1224444
         for x in balanced:
