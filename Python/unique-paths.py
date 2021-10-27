@@ -21,7 +21,7 @@ class Solution(object):
 
 
 # Time:  O(m * n)
-# Space: O(m + n)
+# Space: O(min(m, n))
 class Solution2(object):
     def uniquePaths(self, m, n):
         """
