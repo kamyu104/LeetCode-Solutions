@@ -1,7 +1,49 @@
 # Time:  O(s + n * k), n is the number of the word_lens
-# Space: O(n)
+# Space: O(k)
+
+import collections
+
 
 class Solution(object):
+    def minimumCost(self, sentence, k):
+        """
+        :type sentence: str
+        :type k: int
+        :rtype: int
+        """
+        def lens(sentence):
+            j = len(sentence)-1
+            for i in reversed(xrange(-1, len(sentence))):
+                if i == -1 or sentence[i] == ' ':
+                    yield j-i
+                    j = i-1
+                
+        if len(sentence) <= k:
+            return 0
+
+        dp, word_lens = collections.deque(), collections.deque()
+        t1 = t2 = -1
+        for l in lens(sentence):
+            dp.append(float("inf"))
+            word_lens.append(l)
+            t1 += l+1
+            t2 += l+1
+            if t1 <= k:
+                dp[-1] = 0
+                continue
+            while t2-(word_lens[0]+1) > k:  # minimize len(word_lens) s.t. sum(word_lens) > k
+                t2 -= (word_lens.popleft()+1)
+                dp.popleft()
+            total = l
+            for j in reversed(xrange(len(dp)-1)):
+                dp[-1] = min(dp[-1], dp[j] + (k-total)**2)
+                total += (word_lens[j]+1)
+        return dp[-1]
+
+
+# Time:  O(s + n * k), n is the number of the word_lens
+# Space: O(n)
+class Solution2(object):
     def minimumCost(self, sentence, k):
         """
         :type sentence: str
@@ -36,7 +78,7 @@ class Solution(object):
 
 # Time:  O(s + n * k), n is the number of the word_lens
 # Space: O(n)
-class Solution2(object):
+class Solution3(object):
     def minimumCost(self, sentence, k):
         """
         :type sentence: str
