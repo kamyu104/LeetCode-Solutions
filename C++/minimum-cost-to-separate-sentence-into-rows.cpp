@@ -38,10 +38,6 @@ public:
 class Solution2 {
 public:
     int minimumCost(string sentence, int k) {
-        if (size(sentence) <= k) {
-            return 0;
-        }
-
         vector<int> word_lens;
         for (int i = 0, j = 0; i <= size(sentence); ++i) {
             if (i != size(sentence) && sentence[i] != ' ') {
@@ -52,7 +48,7 @@ public:
         }
         vector<int> dp(size(word_lens), numeric_limits<int>::max());  // dp[i]: min cost of word_lens[i:]
         int i = size(word_lens) - 1;
-        for (int total = -1; total + (word_lens[i] + 1) <= k; --i) {  // find max i s.t. the length of the last line > k
+        for (int total = -1; i >= 0 && total + (word_lens[i] + 1) <= k; --i) {  // find max i s.t. the length of the last line > k
             total += (word_lens[i] + 1);
             dp[i] = 0;
         }
@@ -70,10 +66,6 @@ public:
 class Solution3 {
 public:
     int minimumCost(string sentence, int k) {
-        if (size(sentence) <= k) {
-            return 0;
-        }
-
         vector<int> word_lens;
         for (int i = 0, j = 0; i <= size(sentence); ++i) {
             if (i != size(sentence) && sentence[i] != ' ') {
@@ -93,7 +85,7 @@ public:
             }
         }
         int i = size(word_lens) - 1;
-        for (int total = -1; total + (word_lens[i] + 1) <= k; --i) {  // find max i s.t. the length of the last line > k
+        for (int total = -1; i >= 0 && total + (word_lens[i] + 1) <= k; --i) {  // find max i s.t. the length of the last line > k
             total += (word_lens[i] + 1);
         }
         return *min_element(cbegin(dp) + (i + 1), cend(dp));
