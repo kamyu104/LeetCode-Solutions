@@ -21,8 +21,8 @@ class Solution(object):
         dp, word_lens = [], []  # dp[i]: min cost of word_lens[-1-i:]
         t = -1
         for l in lens(sentence):
-            dp.append(float("inf"))
             word_lens.append(l)
+            dp.append(float("inf"))
             t += l+1
             if t <= k:
                 dp[-1] = 0
