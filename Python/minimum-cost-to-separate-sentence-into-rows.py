@@ -65,7 +65,7 @@ class Solution2(object):
                 if total > k:
                     break
         i, total = len(word_lens)-1, -1
-        while total + (word_lens[i]+1) <= k:  # find min i s.t. the length of the last line <= k
+        while total + (word_lens[i]+1) <= k:  # find max i s.t. the length of the last line > k
             total += (word_lens[i]+1)
             i -= 1
         return min(dp[j] for j in xrange(i+1, len(dp)))
