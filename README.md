@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2050%20%2F%202050-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2052%20%2F%202052-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -991,6 +991,7 @@
 2019 | [The Score of Students Solving Math Expression](https://leetcode.com/problems/the-score-of-students-solving-math-expression/) | [C++](./C++/the-score-of-students-solving-math-expression.cpp) [Python](./Python/the-score-of-students-solving-math-expression.py) | _O(n^3 * a^2)_ | _O(n^2)_ | Hard | variant of [Burst Balloons](https://leetcode.com/problems/burst-balloons/) |
 2031 | [Count Subarrays With More Ones Than Zeros](https://leetcode.com/problems/count-subarrays-with-more-ones-than-zeros/) | [C++](./C++/count-subarrays-with-more-ones-than-zeros.cpp) [Python](./Python/count-subarrays-with-more-ones-than-zeros.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, DP
 2044 | [Count Number of Maximum Bitwise-OR Subsets](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | [C++](./C++/count-number-of-maximum-bitwise-or-subsets.cpp) [Python](./Python/count-number-of-maximum-bitwise-or-subsets.py) | _O(min(2^n, m * n))_ | _O(min(2^n, m))_ | Medium | | DP
+2052 | [Minimum Cost to Separate Sentence Into Rows](https://leetcode.com/problems/minimum-cost-to-separate-sentence-into-rows/) | [C++](./C++/minimum-cost-to-separate-sentence-into-rows.cpp) [Python](./Python/minimum-cost-to-separate-sentence-into-rows.py) | _O(s + n * k)_ | _O(n)_ | Medium | 🔒 | DP
 
 <br/>
 <div align="right">
@@ -1394,6 +1395,7 @@
 2020 | [Number of Accounts That Did Not Stream](https://leetcode.com/problems/number-of-accounts-that-did-not-stream/) | [MySQL](./MySQL/number-of-accounts-that-did-not-stream.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒||
 2026 | [Low-Quality Problems](https://leetcode.com/problems/low-quality-problems/) | [MySQL](./MySQL/low-quality-problems.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 2041 | [Accepted Candidates From the Interviews](https://leetcode.com/problems/accepted-candidates-from-the-interviews/) | [MySQL](./MySQL/accepted-candidates-from-the-interviews.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒||
+2051 | [The Category of Each Member in the Store](https://leetcode.com/problems/the-category-of-each-member-in-the-store/) | [MySQL](./MySQL/the-category-of-each-member-in-the-store.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
