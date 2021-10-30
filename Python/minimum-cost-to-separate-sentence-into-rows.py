@@ -14,9 +14,6 @@ class Solution(object):
                 if i == -1 or sentence[i] == ' ':
                     yield j-i
                     j = i-1
-                
-        if len(sentence) <= k:
-            return 0
 
         dp, word_lens = [], []  # dp[i]: min cost of word_lens[-1-i:]
         t = -1
@@ -35,7 +32,7 @@ class Solution(object):
                     word_lens = word_lens[j:]  # minimize len(word_lens) s.t. sum(word_lens) > k
                     dp = dp[j:]
                     break
-        return dp[-1]
+        return dp[-1] if dp else 0
 
 
 # Time:  O(s + n * k), n is the number of the word_lens
