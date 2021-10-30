@@ -32,8 +32,8 @@ class Solution(object):
                 dp[-1] = min(dp[-1], dp[j] + (k-total)**2)
                 total += (word_lens[j]+1)
                 if total > k:
-                    word_lens[:] = word_lens[j:]  # minimize len(word_lens) s.t. sum(word_lens) > k
-                    dp[:] = dp[j:]
+                    word_lens = word_lens[j:]  # minimize len(word_lens) s.t. sum(word_lens) > k
+                    dp = dp[j:]
                     break
         return dp[-1]
 
