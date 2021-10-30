@@ -60,7 +60,7 @@ public:
             }
         }
         int i = size(word_lens) - 1;
-        for (int total = -1; total + (word_lens[i] + 1) <= k; --i) {  // find min i s.t. the length of the last line <= k
+        for (int total = -1; total + (word_lens[i] + 1) <= k; --i) {  // find max i s.t. the length of the last line > k
             total += (word_lens[i] + 1);
         }
         return *min_element(cbegin(dp) + (i + 1), cend(dp));
