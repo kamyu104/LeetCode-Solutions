@@ -1,5 +1,5 @@
 // Time:  O(s + n * k), n is the number of the word_lens
-// Space: O(n)
+// Space: O(k)
 
 class Solution {
 public:
