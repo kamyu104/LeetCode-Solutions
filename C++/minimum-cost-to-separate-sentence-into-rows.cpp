@@ -4,7 +4,7 @@
 class Solution {
 public:
     int minimumCost(string sentence, int k) {
-        vector<int> dp, word_lens;  // dp[i]: min cost of word_lens[-1-i:]
+        vector<int> word_lens, dp;  // dp[i]: min cost of word_lens[-1-i:]
         for (int i = size(sentence) - 1, j = size(sentence) - 1, t = -1; i >= -1; --i) {
             if (i != -1 && sentence[i] != ' ') {
                 continue;
