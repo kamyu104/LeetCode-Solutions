@@ -9,7 +9,7 @@ public:
         }
 
         vector<int> dp, word_lens;  // dp[i]: min cost of word_lens[-1-i:]
-        for (int i = size(sentence) - 1, j = size(sentence) - 1, t1 = -1, t2 = -1; i >= -1; --i) {
+        for (int i = size(sentence) - 1, j = size(sentence) - 1, t = -1; i >= -1; --i) {
             if (i != -1 && sentence[i] != ' ') {
                 continue;
             }
@@ -17,9 +17,8 @@ public:
             j = i - 1;
             dp.emplace_back(numeric_limits<int>::max());
             word_lens.emplace_back(l);
-            t1 += l + 1;
-            t2 += l + 1;
-            if (t1 <= k) {
+            t += l + 1;
+            if (t <= k) {
                 dp.back() = 0;
                 continue;
             }
