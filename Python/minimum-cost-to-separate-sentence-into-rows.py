@@ -21,24 +21,24 @@ class Solution(object):
         if len(sentence) <= k:
             return 0
 
-        dp, word_lens = collections.deque(), collections.deque()
+        dp, word_lens = collections.deque(), collections.deque()  # dp[i]: min cost of word_lens[i:]
         t1 = t2 = -1
         for l in lens(sentence):
-            dp.append(float("inf"))
-            word_lens.append(l)
+            dp.appendleft(float("inf"))
+            word_lens.appendleft(l)
             t1 += l+1
             t2 += l+1
             if t1 <= k:
-                dp[-1] = 0
+                dp[0] = 0
                 continue
-            while t2-(word_lens[0]+1) > k:  # minimize len(word_lens) s.t. sum(word_lens) > k
-                t2 -= (word_lens.popleft()+1)
-                dp.popleft()
+            while t2-(word_lens[-1]+1) > k:  # minimize len(word_lens) s.t. sum(word_lens) > k
+                t2 -= (word_lens.pop()+1)
+                dp.pop()
             total = l
-            for j in reversed(xrange(len(dp)-1)):
-                dp[-1] = min(dp[-1], dp[j] + (k-total)**2)
+            for j in xrange(1, len(dp)):
+                dp[0] = min(dp[0], dp[j] + (k-total)**2)
                 total += (word_lens[j]+1)
-        return dp[-1]
+        return dp[0]
 
 
 # Time:  O(s + n * k), n is the number of the word_lens
@@ -60,7 +60,7 @@ class Solution2(object):
                 continue
             word_lens.append(i-j)
             j = i+1
-        dp = [float("inf")]*(len(word_lens))  # dp[i]: min cost of sentence[i:]
+        dp = [float("inf")]*(len(word_lens))  # dp[i]: min cost of word_lens[i:]
         i, total = len(word_lens)-1, -1
         while total + (word_lens[i]+1) <= k:  # find max i s.t. the length of the last line > k
             total += (word_lens[i]+1)
