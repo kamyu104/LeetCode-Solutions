@@ -15,8 +15,8 @@ public:
             }
             const int l = j - i;
             j = i - 1;
-            dp.emplace_back(numeric_limits<int>::max());
             word_lens.emplace_back(l);
+            dp.emplace_back(numeric_limits<int>::max());
             t += l + 1;
             if (t <= k) {
                 dp.back() = 0;
