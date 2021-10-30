@@ -44,8 +44,6 @@ class Solution2(object):
         :type k: int
         :rtype: int
         """
-        if len(sentence) <= k:
-            return 0
 
         word_lens = []
         j = 0
@@ -56,7 +54,7 @@ class Solution2(object):
             j = i+1
         dp = [float("inf")]*(len(word_lens))  # dp[i]: min cost of word_lens[i:]
         i, total = len(word_lens)-1, -1
-        while total + (word_lens[i]+1) <= k:  # find max i s.t. the length of the last line > k
+        while i >= 0 and total + (word_lens[i]+1) <= k:  # find max i s.t. the length of the last line > k
             total += (word_lens[i]+1)
             dp[i] = 0
             i -= 1
@@ -79,9 +77,6 @@ class Solution3(object):
         :type k: int
         :rtype: int
         """
-        if len(sentence) <= k:
-            return 0
-
         word_lens = []
         j = 0
         for i in xrange(len(sentence)+1):
@@ -101,7 +96,7 @@ class Solution3(object):
                 if total > k:
                     break
         i, total = len(word_lens)-1, -1
-        while total + (word_lens[i]+1) <= k:  # find max i s.t. the length of the last line > k
+        while i >= 0 and total + (word_lens[i]+1) <= k:  # find max i s.t. the length of the last line > k
             total += (word_lens[i]+1)
             i -= 1
         return min(dp[j] for j in xrange(i+1, len(dp)))
