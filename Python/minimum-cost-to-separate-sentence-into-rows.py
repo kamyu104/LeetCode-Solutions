@@ -44,7 +44,6 @@ class Solution2(object):
         :type k: int
         :rtype: int
         """
-
         word_lens = []
         j = 0
         for i in xrange(len(sentence)+1):
