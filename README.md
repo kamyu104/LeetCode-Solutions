@@ -991,7 +991,7 @@
 2019 | [The Score of Students Solving Math Expression](https://leetcode.com/problems/the-score-of-students-solving-math-expression/) | [C++](./C++/the-score-of-students-solving-math-expression.cpp) [Python](./Python/the-score-of-students-solving-math-expression.py) | _O(n^3 * a^2)_ | _O(n^2)_ | Hard | variant of [Burst Balloons](https://leetcode.com/problems/burst-balloons/) |
 2031 | [Count Subarrays With More Ones Than Zeros](https://leetcode.com/problems/count-subarrays-with-more-ones-than-zeros/) | [C++](./C++/count-subarrays-with-more-ones-than-zeros.cpp) [Python](./Python/count-subarrays-with-more-ones-than-zeros.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, DP
 2044 | [Count Number of Maximum Bitwise-OR Subsets](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | [C++](./C++/count-number-of-maximum-bitwise-or-subsets.cpp) [Python](./Python/count-number-of-maximum-bitwise-or-subsets.py) | _O(min(2^n, m * n))_ | _O(min(2^n, m))_ | Medium | | DP
-2052 | [Minimum Cost to Separate Sentence Into Rows](https://leetcode.com/problems/minimum-cost-to-separate-sentence-into-rows/) | [C++](./C++/minimum-cost-to-separate-sentence-into-rows.cpp) [Python](./Python/minimum-cost-to-separate-sentence-into-rows.py) | _O(s + n * k)_ | _O(n)_ | Medium | 🔒 | DP
+2052 | [Minimum Cost to Separate Sentence Into Rows](https://leetcode.com/problems/minimum-cost-to-separate-sentence-into-rows/) | [C++](./C++/minimum-cost-to-separate-sentence-into-rows.cpp) [Python](./Python/minimum-cost-to-separate-sentence-into-rows.py) | _O(s + n * k)_ | _O(k)_ | Medium | 🔒 | DP
 
 <br/>
 <div align="right">
