@@ -8,7 +8,7 @@ public:
             return 0;
         }
 
-        vector<int> dp, word_lens;  // dp[i]: min cost of word_lens[i:]
+        vector<int> dp, word_lens;  // dp[i]: min cost of word_lens[-1-i:]
         for (int i = size(sentence) - 1, j = size(sentence) - 1, t1 = -1, t2 = -1; i >= -1; --i) {
             if (i != -1 && sentence[i] != ' ') {
                 continue;
