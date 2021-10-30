@@ -24,11 +24,11 @@ class Solution(object):
             total += (word_lens[i]+1)
             dp[i] = 0
             i -= 1
-        for j in reversed(xrange(i+1)):
-            total = word_lens[j]
-            for l in xrange(j+1, len(dp)):
-                dp[j] = min(dp[j], dp[l] + (k-total)**2)
-                total += (word_lens[l]+1)
+        for i in reversed(xrange(i+1)):
+            total = word_lens[i]
+            for j in xrange(i+1, len(dp)):
+                dp[i] = min(dp[i], dp[j] + (k-total)**2)
+                total += (word_lens[j]+1)
                 if total > k:
                     break
         return dp[0]
