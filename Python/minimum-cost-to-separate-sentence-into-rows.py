@@ -15,7 +15,7 @@ class Solution(object):
                     yield j-i
                     j = i-1
 
-        dp, word_lens = [], []  # dp[i]: min cost of word_lens[-1-i:]
+        word_lens, dp = [], []  # dp[i]: min cost of word_lens[-1-i:]
         t = -1
         for l in lens(sentence):
             word_lens.append(l)
