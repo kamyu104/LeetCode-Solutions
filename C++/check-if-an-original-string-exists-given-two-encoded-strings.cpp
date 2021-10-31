@@ -58,13 +58,14 @@ private:
         for (int i = 0; i < size(s); ++i) {
             for (int j = i, curr = 0, basis = 1; j >= 0; --j, basis *= 10) {
                 curr += (s[j] - '0') * basis;
-                if (s[j] != '0') {
-                    if (j == 0) {
-                        dp[i].emplace(curr);
-                    } else {
-                        for (const auto& x : dp[j - 1]) {
-                            dp[i].emplace(x + curr);
-                        }
+                if (s[j] == '0') {
+                    continue;
+                }
+                if (j == 0) {
+                    dp[i].emplace(curr);
+                } else {
+                    for (const auto& x : dp[j - 1]) {
+                        dp[i].emplace(x + curr);
                     }
                 }
             }
