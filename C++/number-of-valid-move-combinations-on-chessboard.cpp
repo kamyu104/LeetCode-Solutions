@@ -26,7 +26,7 @@ private:
         int mask = all_mask;
         if (!((*lookup)[r][c] & mask)) {
             (*lookup)[r][c] += mask;  // stopped at (r, c)
-            result += backtracking(pieces, positions, i+1, lookup);
+            result += backtracking(pieces, positions, i + 1, lookup);
             (*lookup)[r][c] -= mask;
         }
         for (const auto& [dr, dc] : directions.at(pieces[i])) {
