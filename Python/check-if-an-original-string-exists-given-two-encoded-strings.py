@@ -115,6 +115,8 @@ class Solution3(object):
         for i in xrange(len(s1)+1):
             if i:
                 dp[(i-1)%w] = [set() for _ in xrange(len(s2)+1)]
+            if i != len(s1) and s1[i] == '0':
+                continue
             for j in xrange(len(s2)+1):
                 for k in dp[i%w][j]:
                     if i != len(s1) and j != len(s2) and s1[i] == s2[j] and k == 0:
