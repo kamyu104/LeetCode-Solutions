@@ -10,7 +10,7 @@ public:
     }
 
 private:
-    int backtracking(const vector<string>& pieces, const vector<vector<int>>&  positions, int i, vector<vector<int>> *lookup) {
+    int backtracking(const vector<string>& pieces, const vector<vector<int>>& positions, int i, vector<vector<int>> *lookup) {
         static const unordered_map<string, vector<pair<int, int>>> directions = {
             {"rook", {{0, 1}, {1, 0}, {0, -1}, {-1, 0}}},
             {"bishop", {{1, 1}, {1, -1}, {-1, 1}, {-1, -1}}},
