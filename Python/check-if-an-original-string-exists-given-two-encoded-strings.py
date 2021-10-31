@@ -110,37 +110,35 @@ class Solution3(object):
         """
         MAX_DIGIT_LEN = 3
         w = 1+MAX_DIGIT_LEN
-        dp = [[{} for _ in xrange(len(s2)+1)] for _ in xrange(w)]
-        dp[0][0][0] = True
+        dp = [[set() for _ in xrange(len(s2)+1)] for _ in xrange(w)]
+        dp[0][0].add(0)
         for i in xrange(len(s1)+1):
             if i:
-                dp[(i-1)%w] = [{} for _ in xrange(len(s2)+1)]
+                dp[(i-1)%w] = [set() for _ in xrange(len(s2)+1)]
             for j in xrange(len(s2)+1):
-                for k, v in dp[i%w][j].iteritems():
-                    if not v:
-                        continue
+                for k in dp[i%w][j]:
                     if i != len(s1) and j != len(s2) and s1[i] == s2[j] and k == 0:
-                        dp[(i+1)%w][j+1][k] = True
+                        dp[(i+1)%w][j+1].add(k)
                     if k <= 0 and i != len(s1):
                         if s1[i].isalpha():
                             if k:
-                                dp[(i+1)%w][j][k+1] = True
+                                dp[(i+1)%w][j].add(k+1)
                         elif s1[i] != '0':
                             curr = 0
                             for ni in xrange(i, len(s1)):
                                 if not s1[ni].isdigit():
                                     break
                                 curr = curr*10 + int(s1[ni])
-                                dp[(ni+1)%w][j][k+curr] = True
+                                dp[(ni+1)%w][j].add(k+curr)
                     if k >= 0 and j != len(s2):
                         if s2[j].isalpha():
                             if k:
-                                dp[i%w][j+1][k-1] = True
+                                dp[i%w][j+1].add(k-1)
                         elif s2[j] != '0':
                             curr = 0
                             for nj in xrange(j, len(s2)):
                                 if not s2[nj].isdigit():
                                     break
                                 curr = curr*10 + int(s2[nj])
-                                dp[i%w][nj+1][k-curr] = True
-        return 0 in dp[len(s1)%w][len(s2)] and dp[len(s1)%w][len(s2)][0]
+                                dp[i%w][nj+1].add(k-curr)
+        return 0 in dp[len(s1)%w][len(s2)]
