@@ -135,49 +135,49 @@ public:
         if (size(s1) < size(s2)) {
             swap(s1, s2);
         }
-        vector<vector<unordered_map<int, bool>>> dp(w, vector<unordered_map<int, bool>>(size(s2) + 1));
-        dp[0][0][0] = true;
+        vector<vector<unordered_set<int>>> dp(w, vector<unordered_set<int>>(size(s2) + 1));
+        dp[0][0].emplace(0);
         for (int i = 0; i <= size(s1); ++i) {
             if (i >= 1) {
-                dp[(i - 1) % w] = vector<unordered_map<int, bool>>(size(s2) + 1);
+                dp[(i - 1) % w] = vector<unordered_set<int>>(size(s2) + 1);
+            }
+            if (i != size(s1) && s1[i] == '0') {
+                continue;
             }
             for (int j = 0; j <= size(s2); ++j) {
-                for (const auto& [k, v] : dp[i % w][j]) {
-                    if (!v) {
-                        continue;
-                    }
+                for (const auto& k : dp[i % w][j]) {
                     if (i != size(s1) && j != size(s2) && s1[i] == s2[j] && k == 0) {
-                        dp[(i + 1) % w][j + 1][k] = true;
+                        dp[(i + 1) % w][j + 1].emplace(k);
                     }
                     if (k <= 0 && i != size(s1)) {
                         if (isalpha(s1[i])) {
                             if (k) {
-                                dp[(i + 1) % w][j][k + 1] = true;
+                                dp[(i + 1) % w][j].emplace(k + 1);
                             }
                         } else if (s1[i] != '0') {
                             int curr = 0;
                             for (int ni = i; ni < size(s1) && isdigit(s1[ni]); ++ni) {
                                 curr = curr * 10 + (s1[ni] - '0');
-                                dp[(ni + 1) % w][j][k + curr] = true;
+                                dp[(ni + 1) % w][j].emplace(k + curr);
                             }
                         }
                     }
                     if (k >= 0 && j != size(s2)) {
                         if (isalpha(s2[j])) {
                             if (k) {
-                                dp[i % w][j + 1][k - 1] = true;
+                                dp[i % w][j + 1].emplace(k - 1);
                             }
                         } else if (s2[j] != '0') {
                             int curr = 0;
                             for (int nj = j; nj < size(s2) && isdigit(s2[nj]); ++nj) {
                                 curr = curr * 10 + (s2[nj] - '0');
-                                dp[i % w][nj + 1][k - curr] = true;
+                                dp[i % w][nj + 1].emplace(k - curr);
                             }
                         }
                     }
                 }
             }
         }
-        return dp[size(s1) % w][size(s2)][0];
+        return dp[size(s1) % w][size(s2)].count(0);
     }
 };
