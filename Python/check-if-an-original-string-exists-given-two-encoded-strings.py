@@ -15,12 +15,13 @@ class Solution(object):
                 curr, basis = 0, 1
                 for j in reversed(xrange(i+1)):
                     curr += int(s[j])*basis
-                    if s[j] != '0':
-                        if j == 0:
-                            dp[i].add(curr)
-                        else:
-                            dp[i].update(x+curr for x in dp[j-1])
                     basis *= 10
+                    if s[j] == '0':
+                        continue
+                    if j == 0:
+                        dp[i].add(curr)
+                    else:
+                        dp[i].update(x+curr for x in dp[j-1])        
             return dp[-1]
     
         def memoization(s1, s2, i, j, k, lookup):
