@@ -51,7 +51,7 @@ class Solution(object):
                 elif k > 0:
                     lookup[(i, j, k)] = memoization(s1, s2, i, j+1, k-1, lookup) if j != len(s2) else False
                 else:
-                    lookup[(i, j, k)] = memoization(s1, s2, i+1, j+1, 0, lookup) if i != len(s1) and j != len(s2) and s1[i] == s2[j] else False
+                    lookup[(i, j, k)] = memoization(s1, s2, i+1, j+1, k, lookup) if i != len(s1) and j != len(s2) and s1[i] == s2[j] else False
             return lookup[(i, j, k)]
 
         return memoization(s1, s2, 0, 0, 0, {})
@@ -92,7 +92,7 @@ class Solution2(object):
                 elif k > 0:
                     lookup[(i, j, k)] = memoization(s1, s2, i, j+1, k-1, lookup) if j != len(s2) else False
                 else:
-                    lookup[(i, j, k)] = memoization(s1, s2, i+1, j+1, 0, lookup) if i != len(s1) and j != len(s2) and s1[i] == s2[j] else False
+                    lookup[(i, j, k)] = memoization(s1, s2, i+1, j+1, k, lookup) if i != len(s1) and j != len(s2) and s1[i] == s2[j] else False
             return lookup[(i, j, k)]
 
         return memoization(s1, s2, 0, 0, 0, {})
