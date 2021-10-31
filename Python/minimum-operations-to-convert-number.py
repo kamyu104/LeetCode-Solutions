@@ -10,8 +10,6 @@ class Solution(object):
         :rtype: int
         """
         MAX_X = 1000
-        if start == goal:
-            return 0
         nums = [y for y in nums if y and any(0 <= nx <= MAX_X for nx in (y, goal-y, goal+y, goal^y))]
         q = [(start, 0)]
         lookup = {start}
