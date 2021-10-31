@@ -47,7 +47,7 @@ private:
             } else if (k > 0) {
                 (*lookup)[i][j][k] = (j != size(s2)) ? memoization(s1, s2, i, j + 1, k - 1, lookup) : false;
             } else {
-                (*lookup)[i][j][k] = (i != size(s1) && j != size(s2) && s1[i] == s2[j]) ? memoization(s1, s2, i + 1, j + 1, 0, lookup) : false;
+                (*lookup)[i][j][k] = (i != size(s1) && j != size(s2) && s1[i] == s2[j]) ? memoization(s1, s2, i + 1, j + 1, k, lookup) : false;
             }
         }
         return (*lookup)[i][j][k];
@@ -116,7 +116,7 @@ private:
             } else if (k > 0) {
                 (*lookup)[i][j][k] = (j != size(s2)) ? memoization(s1, s2, i, j + 1, k - 1, lookup) : false;
             } else {
-                (*lookup)[i][j][k] = (i != size(s1) && j != size(s2) && s1[i] == s2[j]) ? memoization(s1, s2, i + 1, j + 1, 0, lookup) : false;
+                (*lookup)[i][j][k] = (i != size(s1) && j != size(s2) && s1[i] == s2[j]) ? memoization(s1, s2, i + 1, j + 1, k, lookup) : false;
             }
         }
         return (*lookup)[i][j][k];
