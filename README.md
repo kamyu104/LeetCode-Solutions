@@ -999,7 +999,7 @@
 2031 | [Count Subarrays With More Ones Than Zeros](https://leetcode.com/problems/count-subarrays-with-more-ones-than-zeros/) | [C++](./C++/count-subarrays-with-more-ones-than-zeros.cpp) [Python](./Python/count-subarrays-with-more-ones-than-zeros.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, DP
 2044 | [Count Number of Maximum Bitwise-OR Subsets](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | [C++](./C++/count-number-of-maximum-bitwise-or-subsets.cpp) [Python](./Python/count-number-of-maximum-bitwise-or-subsets.py) | _O(min(2^n, m * n))_ | _O(min(2^n, m))_ | Medium | | DP
 2052 | [Minimum Cost to Separate Sentence Into Rows](https://leetcode.com/problems/minimum-cost-to-separate-sentence-into-rows/) | [C++](./C++/minimum-cost-to-separate-sentence-into-rows.cpp) [Python](./Python/minimum-cost-to-separate-sentence-into-rows.py) | _O(s + n * k)_ | _O(k)_ | Medium | 🔒 | DP
-2060 | [Check if an Original String Exists Given Two Encoded Strings](https://leetcode.com/problems/check-if-an-original-string-exists-given-two-encoded-strings/) | [C++](./C++/check-if-an-original-string-exists-given-two-encoded-strings.cpp) [Python](./Python/check-if-an-original-string-exists-given-two-encoded-strings.py) | _O(m * n * k)_ | _O(m * n * k)_ | Hard | | DP, Memoization
+2060 | [Check if an Original String Exists Given Two Encoded Strings](https://leetcode.com/problems/check-if-an-original-string-exists-given-two-encoded-strings/) | [C++](./C++/check-if-an-original-string-exists-given-two-encoded-strings.cpp) [Python](./Python/check-if-an-original-string-exists-given-two-encoded-strings.py) | _O(m * n * k)_ | _O(min(m, n) * k)_ | Hard | | DP, Memoization
 
 <br/>
 <div align="right">
