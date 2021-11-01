@@ -232,6 +232,7 @@
 2035 | [Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) | [C++](./C++/partition-array-into-two-arrays-to-minimize-sum-difference.cpp) [Python](./Python/partition-array-into-two-arrays-to-minimize-sum-difference.py) | _O(n * 2^n)_ | _O(2^n)_ | Hard || Meet in the Middle
 2038 | [Remove Colored Pieces if Both Neighbors are the Same Color](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/) | [C++](./C++/remove-colored-pieces-if-both-neighbors-are-the-same-color.cpp) [Python](./Python/remove-colored-pieces-if-both-neighbors-are-the-same-color.py) | _O(n)_ | _O(1)_ | Medium || 
 2055 | [Plates Between Candles](https://leetcode.com/problems/plates-between-candles/) | [C++](./C++/plates-between-candles.cpp) [Python](./Python/plates-between-candles.py) | _O(n + q)_ | _O(n)_ | Medium || Prefix Sum 
+2057 | [Smallest Index With Equal Value](https://leetcode.com/problems/smallest-index-with-equal-value/) | [C++](./C++/smallest-index-with-equal-value.cpp) [Python](./Python/smallest-index-with-equal-value.py) | _O(n)_ | _O(1)_ | Easy ||
 
 <br/>
 <div align="right">
@@ -348,6 +349,7 @@
 1669 | [Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/)| [C++](./C++/merge-in-between-linked-lists.cpp)  [Python](./Python/merge-in-between-linked-lists.py) | _O(m + n)_ | _O(1)_         | Medium           ||
 1721 | [Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)| [C++](./C++/swapping-nodes-in-a-linked-list.cpp)  [Python](./Python/swapping-nodes-in-a-linked-list.py) | _O(n)_ | _O(1)_         | Medium           ||
 1836 | [Remove Duplicates From an Unsorted Linked List](https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/)| [C++](./C++/remove-duplicates-from-an-unsorted-linked-list.cpp)  [Python](./Python/remove-duplicates-from-an-unsorted-linked-list.py) | _O(n)_ | _O(n)_         | Medium           | 🔒 |
+2058 | [Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/)| [C++](./C++/find-the-minimum-and-maximum-number-of-nodes-between-critical-points.cpp)  [Python](./Python/find-the-minimum-and-maximum-number-of-nodes-between-critical-points.py) | _O(n)_ | _O(1)_         | Medium           ||
 
 <br/>
 <div align="right">
@@ -813,6 +815,7 @@
 2039 | [The Time When the Network Becomes Idle](https://leetcode.com/problems/the-time-when-the-network-becomes-idle/)| [C++](./C++/the-time-when-the-network-becomes-idle.cpp) [Python](./Python/the-time-when-the-network-becomes-idle.py)| _O(\|E\|)_ | _O(\|E\|)_ | Medium | | Math |
 2045 | [Second Minimum Time to Reach Destination](https://leetcode.com/problems/second-minimum-time-to-reach-destination/)| [C++](./C++/second-minimum-time-to-reach-destination.cpp) [Python](./Python/second-minimum-time-to-reach-destination.py)| _O(\|E\|)_ | _O(\|E\|)_ | Hard | | Bi-BFS |
 2050 | [Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/)| [C++](./C++/parallel-courses-iii.cpp) [Python](./Python/parallel-courses-iii.py)   | _O(\|V\| + \|E\|)_         | _O(\|E\|)_          | Hard         | variant of [Parallel Courses](https://leetcode.com/problems/parallel-courses/) | Topological Sort |
+2059 | [Minimum Operations to Convert Number](https://leetcode.com/problems/minimum-operations-to-convert-number/)| [C++](./C++/minimum-operations-to-convert-number.cpp) [Python](./Python/minimum-operations-to-convert-number.py)| _O(m * n)_ | _O(m)_ | Medium | | |
 
 <br/>
 <div align="right">
@@ -996,6 +999,7 @@
 2031 | [Count Subarrays With More Ones Than Zeros](https://leetcode.com/problems/count-subarrays-with-more-ones-than-zeros/) | [C++](./C++/count-subarrays-with-more-ones-than-zeros.cpp) [Python](./Python/count-subarrays-with-more-ones-than-zeros.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, DP
 2044 | [Count Number of Maximum Bitwise-OR Subsets](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | [C++](./C++/count-number-of-maximum-bitwise-or-subsets.cpp) [Python](./Python/count-number-of-maximum-bitwise-or-subsets.py) | _O(min(2^n, m * n))_ | _O(min(2^n, m))_ | Medium | | DP
 2052 | [Minimum Cost to Separate Sentence Into Rows](https://leetcode.com/problems/minimum-cost-to-separate-sentence-into-rows/) | [C++](./C++/minimum-cost-to-separate-sentence-into-rows.cpp) [Python](./Python/minimum-cost-to-separate-sentence-into-rows.py) | _O(s + n * k)_ | _O(k)_ | Medium | 🔒 | DP
+2060 | [Check if an Original String Exists Given Two Encoded Strings](https://leetcode.com/problems/check-if-an-original-string-exists-given-two-encoded-strings/) | [C++](./C++/check-if-an-original-string-exists-given-two-encoded-strings.cpp) [Python](./Python/check-if-an-original-string-exists-given-two-encoded-strings.py) | _O(m * n * k)_ | _O(m * n * k)_ | Hard | | DP
 
 <br/>
 <div align="right">
