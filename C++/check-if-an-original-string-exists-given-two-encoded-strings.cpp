@@ -69,7 +69,7 @@ private:
                 }
             }
         }
-        return result;
+        return result;  // vector is much faster than unordered_set even if vector has duplications in this case
     }
 
     unordered_set<int> general_possible_numbers(const string& s) {  // Time: O(2^l), Space: O(2^l), l is the length of consecutive digits s, and l is at most 3
