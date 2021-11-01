@@ -14,19 +14,18 @@
 class Solution {
 public:
     vector<int> nodesBetweenCriticalPoints(ListNode* head) {
-        int first = 0, last = 0, result = numeric_limits<int>::max();
-        for (int i = 0, prev = head->val;
-             head->next;
-             ++i, prev = head->val, head = head->next) {
-
+        int first = -1, last = -1, result = numeric_limits<int>::max();
+        int prev = head->val;
+        head = head->next;
+        for (int i = 0; head->next; ++i, prev = head->val, head = head->next) {
             if (!((max(prev, head->next->val) < head->val) || 
                   (min(prev, head->next->val) > head->val))) {
                 continue;
             }
-            if (!first) {
+            if (first == -1) {
                 first = i;
             }
-            if (last) {
+            if (last != -1) {
                 result = min(result, i - last);
             }
             last = i;
