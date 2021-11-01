@@ -2,10 +2,12 @@
 # Space: O(1)
 
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
 class Solution(object):
     def nodesBetweenCriticalPoints(self, head):
         """
@@ -25,4 +27,4 @@ class Solution(object):
             i += 1
             prev = head.val
             head = head.next
-        return [result, last-first] if first != last else [-1, -1]
+        return [result, last-first] if last != first else [-1, -1]
