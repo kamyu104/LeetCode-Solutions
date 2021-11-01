@@ -54,8 +54,8 @@ class Solution2(object):
                     break
             return result
         
-        MAX_NUM = 5000
-        left, right = len(mat), len(mat)*MAX_NUM
+        max_num = max(x for row in mat for x in row)
+        left, right = len(mat), len(mat)*max_num
         while left <= right:
             mid = left + (right-left)//2
             cnt = countArraysHaveSumLessOrEqual(mat, k, 0, mid)
