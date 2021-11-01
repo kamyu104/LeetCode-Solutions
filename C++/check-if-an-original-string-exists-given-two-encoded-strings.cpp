@@ -53,7 +53,7 @@ private:
         return (*lookup)[i][j][k];
     }
 
-    unordered_set<int> possible_numbers(const string& s) {  // Time: O(2^l), Space: O(2^l), l is the length of consecutive digits s
+    unordered_set<int> possible_numbers(const string& s) {  // Time: O(2^l), Space: O(2^l), l is the length of consecutive digits s, and l is at most 3
         vector<unordered_set<int>> dp(size(s));
         for (int i = 0; i < size(s); ++i) {
             for (int j = i, curr = 0, basis = 1; j >= 0; --j, basis *= 10) {
