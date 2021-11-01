@@ -14,14 +14,14 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: List[int]
         """
-        first = last = 0
+        first = last = -1
         result = float("inf")
-        i, prev = 0, head.val
+        i, prev, head = 0, head.val, head.next
         while head.next:
             if max(prev, head.next.val) < head.val or min(prev, head.next.val) > head.val:
-                if not first:
+                if first == -1:
                     first = i
-                if last:
+                if last != -1:
                     result = min(result, i-last)
                 last = i
             i += 1
