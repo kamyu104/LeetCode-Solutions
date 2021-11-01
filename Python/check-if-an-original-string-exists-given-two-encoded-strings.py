@@ -122,7 +122,7 @@ class Solution3(object):
                     if i != len(s1) and j != len(s2) and s1[i] == s2[j] and k == 0:
                         dp[(i+1)%w][j+1].add(k)
                     if k <= 0 and i != len(s1):
-                        if s1[i].isalpha():
+                        if not s1[i].isdigit():
                             if k:
                                 dp[(i+1)%w][j].add(k+1)
                         elif s1[i] != '0':
@@ -133,7 +133,7 @@ class Solution3(object):
                                 curr = curr*10 + int(s1[ni])
                                 dp[(ni+1)%w][j].add(k+curr)
                     if k >= 0 and j != len(s2):
-                        if s2[j].isalpha():
+                        if not s2[j].isdigit():
                             if k:
                                 dp[i%w][j+1].add(k-1)
                         elif s2[j] != '0':
