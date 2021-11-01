@@ -4,14 +4,14 @@
 class Solution {
 public:
     vector<int> platesBetweenCandles(string s, vector<vector<int>>& queries) {
-        vector<int> left(size(s)), prefix(size(s));
+        vector<int> left(size(s));
+        unordered_map<int, int> prefix;
         for (int i = 0, curr = -1, cnt = 0; i < size(s); ++i) {
             if (s[i] == '|') {
                 curr = i;
-                ++cnt;
+                prefix[i] = ++cnt;
             }
             left[i] = curr;
-            prefix[i] = cnt;
         }
         vector<int> right(size(s));
         for (int i = size(s) - 1, curr = size(s), cnt = 0; i >= 0; --i) {
