@@ -150,7 +150,7 @@ public:
                         dp[(i + 1) % w][j + 1].emplace(k);
                     }
                     if (k <= 0 && i != size(s1)) {
-                        if (isalpha(s1[i])) {
+                        if (!isdigit(s1[i])) {
                             if (k) {
                                 dp[(i + 1) % w][j].emplace(k + 1);
                             }
@@ -163,7 +163,7 @@ public:
                         }
                     }
                     if (k >= 0 && j != size(s2)) {
-                        if (isalpha(s2[j])) {
+                        if (!isdigit(s2[j])) {
                             if (k) {
                                 dp[i % w][j + 1].emplace(k - 1);
                             }
