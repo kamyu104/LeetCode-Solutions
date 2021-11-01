@@ -9,7 +9,7 @@ class Solution(object):
         :type s2: str
         :rtype: bool
         """
-        def possible_numbers(s):  # Time: O(2^l), Space: O(2^l), l is the length of consecutive digits
+        def possible_numbers(s):  # Time: O(2^l), Space: O(2^l), l is the length of consecutive digits, and l is at most 3
             dp = [set() for _ in xrange(len(s))]
             for i in xrange(len(s)):
                 curr, basis = 0, 1
