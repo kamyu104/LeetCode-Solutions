@@ -22,7 +22,7 @@ private:
                         break;
                     }
                 }
-                for (const auto& x : possible_numbers(s1.substr(i, ni - i))) {
+                for (const auto& x : optimized_possible_numbers(s1.substr(i, ni - i))) {
                     if (memoization(s1, s2, ni, j, k + x, lookup)) {
                         (*lookup)[i][j][k] = true;
                         break;
@@ -36,7 +36,7 @@ private:
                         break;
                     }
                 }
-                for (const auto& x : possible_numbers(s2.substr(j, nj - j))) {
+                for (const auto& x : optimized_possible_numbers(s2.substr(j, nj - j))) {
                     if (memoization(s1, s2, i, nj, k - x, lookup)) {
                         (*lookup)[i][j][k] = true;
                         break;
@@ -53,7 +53,26 @@ private:
         return (*lookup)[i][j][k];
     }
 
-    unordered_set<int> possible_numbers(const string& s) {  // Time: O(2^l), Space: O(2^l), l is the length of consecutive digits s, and l is at most 3
+    unordered_set<int> optimized_possible_numbers(const string& s) {  // Time: O(2^l), Space: O(2^l), l is the length of consecutive digits s, and l is at most 3
+        assert(size(s) <= 3);
+        unordered_set<int> result = {stoi(s)};
+        if (size(s) >= 2) {
+            if (s[1] != '0') {
+                result.emplace(stoi(s.substr(0, 1 - 0)) + stoi(s.substr(1)));
+            }
+        }
+        if (size(s) >= 3) {
+            if (s[2] != '0') {
+                result.emplace(stoi(s.substr(0, 2 - 0)) + stoi(s.substr(2)));
+                if (s[1] != '0') {
+                    result.emplace(stoi(s.substr(0, 1 - 0)) + stoi(s.substr(1, 2 - 1)) + stoi(s.substr(2)));
+                }
+            }
+        }
+        return result;
+    }
+
+    unordered_set<int> general_possible_numbers(const string& s) {  // Time: O(2^l), Space: O(2^l), l is the length of consecutive digits s, and l is at most 3
         vector<unordered_set<int>> dp(size(s));
         for (int i = 0; i < size(s); ++i) {
             for (int j = i, curr = 0, basis = 1; j >= 0; --j, basis *= 10) {
