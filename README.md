@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2052%20%2F%202052-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2060%20%2F%202060-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -231,6 +231,7 @@
 2033 | [Minimum Operations to Make a Uni-Value Grid](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/) | [C++](./C++/minimum-operations-to-make-a-uni-value-grid.cpp) [Python](./Python/minimum-operations-to-make-a-uni-value-grid.py) | _O(m * n)_  on average | _O(m * n)_ | Medium | variant of [Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Math, Median, Quick Select
 2035 | [Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) | [C++](./C++/partition-array-into-two-arrays-to-minimize-sum-difference.cpp) [Python](./Python/partition-array-into-two-arrays-to-minimize-sum-difference.py) | _O(n * 2^n)_ | _O(2^n)_ | Hard || Meet in the Middle
 2038 | [Remove Colored Pieces if Both Neighbors are the Same Color](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/) | [C++](./C++/remove-colored-pieces-if-both-neighbors-are-the-same-color.cpp) [Python](./Python/remove-colored-pieces-if-both-neighbors-are-the-same-color.py) | _O(n)_ | _O(1)_ | Medium || 
+2055 | [Plates Between Candles](https://leetcode.com/problems/plates-between-candles/) | [C++](./C++/plates-between-candles.cpp) [Python](./Python/plates-between-candles.py) | _O(n + q)_ | _O(n)_ | Medium || Prefix Sum 
 
 <br/>
 <div align="right">
@@ -405,6 +406,7 @@
 1792 | [Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/) | [C++](./C++/maximum-average-pass-ratio.cpp) [Python](./Python/maximum-average-pass-ratio.py) | _O(n + mlogn)_ | _O(n)_ | Medium | | |
 1882 | [Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/) | [C++](./C++/process-tasks-using-servers.cpp) [Python](./Python/process-tasks-using-servers.py) | _O(n + mlogn)_ | _O(n)_ | Medium | | |
 1962 | [Remove Stones to Minimize the Total](https://leetcode.com/problems/remove-stones-to-minimize-the-total/) | [C++](./C++/remove-stones-to-minimize-the-total.cpp) [Python](./Python/remove-stones-to-minimize-the-total.py) | _O(klogn)_ | _O(1)_ | Medium | | |
+2054 | [Two Best Non-Overlapping Events](https://leetcode.com/problems/two-best-non-overlapping-events/) | [C++](./C++/two-best-non-overlapping-events.cpp) [Python](./Python/two-best-non-overlapping-events.py) | _O(nlogn)_ | _O(n)_ | Medium | | Line Sweep, Heap |
 
 <br/>
 <div align="right">
@@ -495,6 +497,7 @@
 2023 | [Number of Pairs of Strings With Concatenation Equal to Target](https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/)      | [C++](./C++/number-of-pairs-of-strings-with-concatenation-equal-to-target.cpp) [Python](./Python/number-of-pairs-of-strings-with-concatenation-equal-to-target.py)      | _O(n * l)_         | _O(n)_          | Medium         | variant of [Two Sum](https://leetcode.com/problems/two-sum/) |
 2025 | [Maximum Number of Ways to Partition an Array](https://leetcode.com/problems/maximum-number-of-ways-to-partition-an-array/) | [C++](./C++/maximum-number-of-ways-to-partition-an-array.cpp) [Python](./Python/maximum-number-of-ways-to-partition-an-array.py) | _O(n)_ | _O(n)_ | Hard || Prefix Sum
 2032 | [Two Out of Three](https://leetcode.com/problems/two-out-of-three/) | [C++](./C++/two-out-of-three.cpp) [Python](./Python/two-out-of-three.py) | _O(n)_ | _O(min(n, r))_ | Easy || Counting
+2053 | [Kth Distinct String in an Array](https://leetcode.com/problems/kth-distinct-string-in-an-array/) | [C++](./C++/kth-distinct-string-in-an-array.cpp) [Python](./Python/kth-distinct-string-in-an-array.py) | _O(n)_ | _O(n)_ | Easy || 
 
 <br/>
 <div align="right">
@@ -868,6 +871,7 @@
 1849 | [Splitting a String Into Descending Consecutive Values](https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/) | [C++](./C++/splitting-a-string-into-descending-consecutive-values.cpp) [Python](./Python/splitting-a-string-into-descending-consecutive-values.py) | _O(n^2)_ | _O(n)_      | Medium         || |
 1999 | [Smallest Greater Multiple Made of Two Digits](https://leetcode.com/problems/smallest-greater-multiple-made-of-two-digits/) | [C++](./C++/smallest-greater-multiple-made-of-two-digits.cpp) [Python](./Python/smallest-greater-multiple-made-of-two-digits.py) | _O(1)_ | _O(1)_      | Medium         |🔒| Backtracking, Bit Manipulation |
 2014 | [Longest Subsequence Repeated k Times](https://leetcode.com/problems/longest-subsequence-repeated-k-times/) | [C++](./C++/longest-subsequence-repeated-k-times.cpp) [Python](./Python/longest-subsequence-repeated-k-times.py) | _O(n * (n/k)!)_ | _O(n/k)_      | Hard         | | |
+2056 | [Number of Valid Move Combinations On Chessboard](https://leetcode.com/problems/number-of-valid-move-combinations-on-chessboard/) | [C++](./C++/number-of-valid-move-combinations-on-chessboard.cpp) [Python](./Python/number-of-valid-move-combinations-on-chessboard.py) | _O(1)_ | _O(1)_      | Hard         | | |
 
 <br/>
 <div align="right">
