@@ -9,7 +9,7 @@ class Solution(object):
         :type s2: str
         :rtype: bool
         """
-        def possible_numbers(s):  # Time: O(2^l), Space: O(2^l), l is the length of consecutive digits, and l is at most 3
+        def general_possible_numbers(s):  # Time: O(2^l), Space: O(2^l), l is the length of consecutive digits, and l is at most 3
             dp = [set() for _ in xrange(len(s))]
             for i in xrange(len(s)):
                 curr, basis = 0, 1
@@ -23,6 +23,19 @@ class Solution(object):
                     else:
                         dp[i].update(x+curr for x in dp[j-1])        
             return dp[-1]
+
+        def optimized_possible_numbers(s):
+            assert(len(s) <= 3)
+            result = {int(s)}
+            if len(s) >= 2:
+                if s[1] != '0':
+                    result.add(int(s[:1])+int(s[1:]))
+            if len(s) == 3:
+                if s[2] != '0':
+                    result.add(int(s[:2])+int(s[2:]))
+                    if s[1] != '0':
+                        result.add(int(s[0])+int(s[1])+int(s[2:]))
+            return result
     
         def memoization(s1, s2, i, j, k, lookup):
             if (i, j, k) not in lookup:
@@ -33,7 +46,7 @@ class Solution(object):
                     for ni in xrange(i+1, len(s1)+1):
                         if ni == len(s1) or not s1[ni].isdigit():
                             break
-                    for x in possible_numbers(s1[i:ni]):
+                    for x in optimized_possible_numbers(s1[i:ni]):
                         if memoization(s1, s2, ni, j, k+x, lookup):
                             lookup[(i, j, k)] = True
                             break
@@ -42,7 +55,7 @@ class Solution(object):
                     for nj in xrange(j+1, len(s2)+1):
                         if nj == len(s2) or not s2[nj].isdigit():
                             break
-                    for x in possible_numbers(s2[j:nj]):
+                    for x in optimized_possible_numbers(s2[j:nj]):
                         if memoization(s1, s2, i, nj, k-x, lookup):
                             lookup[(i, j, k)] = True
                             break
