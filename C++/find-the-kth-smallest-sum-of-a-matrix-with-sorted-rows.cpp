@@ -35,8 +35,11 @@ private:
 class Solution2 {
 public:
     int kthSmallest(vector<vector<int>>& mat, int k) {
-        static const int MAX_NUM = 5000;
-        int left = mat.size(), right = mat.size() * MAX_NUM;
+        int max_num = 0;
+        for (const auto& row : mat) {
+            max_num = max(max_num, *max_element(cbegin(row), cend(row)));
+        }
+        int left = mat.size(), right = mat.size() * max_num;
         while (left <= right) {
             const auto& mid = left + (right - left) / 2;
             const auto& cnt = countArraysHaveSumLessOrEqual(mat, k, 0, mid);
