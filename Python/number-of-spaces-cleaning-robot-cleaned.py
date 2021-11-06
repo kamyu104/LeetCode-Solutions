@@ -8,8 +8,9 @@ class Solution(object):
         :rtype: int
         """
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
-        d = r = c = 0
-        while not room[r][c]&(1<<(d+1)): 
+        result = d = r = c = 0
+        while not room[r][c]&(1<<(d+1)):
+            result += (room[r][c]>>1) == 0
             room[r][c] |= (1<<(d+1))
             dr, dc = directions[d]
             nr, nc = r+dr, c+dc
@@ -17,4 +18,4 @@ class Solution(object):
                 r, c = nr, nc
             else:
                 d = (d+1)%4
-        return sum(x>>1 != 0 for row in room for x in row)
+        return result
