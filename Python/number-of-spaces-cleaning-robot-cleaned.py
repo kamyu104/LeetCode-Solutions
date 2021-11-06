@@ -8,7 +8,7 @@ class Solution(object):
         :rtype: int
         """
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
-        result = d = r = c = 0
+        result = r = c = d = 0
         while not room[r][c]&(1<<(d+1)):
             result += (room[r][c]>>1) == 0
             room[r][c] |= (1<<(d+1))
