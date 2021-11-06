@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2060%20%2F%202060-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2061%20%2F%202061-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1190,6 +1190,7 @@
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 1138 | [Alphabet Board Path](https://leetcode.com/problems/alphabet-board-path/)  | [C++](./C++/alphabet-board-path.cpp) [Python](./Python/alphabet-board-path.py) | _O(n)_| _O(1)_| Medium           ||| 
 1243 | [Array Transformation](https://leetcode.com/problems/array-transformation/) | [C++](./C++/array-transformation.cpp) [Python](./Python/array-transformation.py) | _O(n^2)_ | _O(n)_ | Easy           ||| 
+2061 | [Number of Spaces Cleaning Robot Cleaned](https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/) | [C++](./C++/number-of-spaces-cleaning-robot-cleaned.cpp) [Python](./Python/number-of-spaces-cleaning-robot-cleaned.py) | _O(m * n)_ | _O(1)_ | Medium           |🔒|| 
 
 <br/>
 <div align="right">
