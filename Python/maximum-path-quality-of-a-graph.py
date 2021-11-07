@@ -1,9 +1,6 @@
 # Time:  O(|V| + |E| + 4^(maxTime/min(edges))) = O(|V| + |E| + 4^10)
 # Space: O(|V| + |E| + maxTime/min(edges)) = O(|V| + |E| + 10)
 
-import collections
-
-
 class Solution(object):
     def maximalPathQuality(self, values, edges, maxTime):
         """
@@ -13,7 +10,7 @@ class Solution(object):
         :rtype: int
         """
         def iter_dfs(adj):
-            lookup = collections.Counter()
+            lookup = [0]*len(adj)
             result = 0
             stk = [(1, (0, maxTime, 0))]
             while stk:
@@ -44,9 +41,6 @@ class Solution(object):
 
 # Time:  O(|V| + |E| + 4^(maxTime/min(edges))) = O(|V| + |E| + 4^10)
 # Space: O(|V| + |E| + maxTime/min(edges)) = O(|V| + |E| + 10)
-import collections
-
-
 class Solution2(object):
     def maximalPathQuality(self, values, edges, maxTime):
         """
@@ -72,5 +66,5 @@ class Solution2(object):
             adj[u].append((v, t))
             adj[v].append((u, t))
         result = [0]
-        dfs(values, adj, 0, maxTime, 0, collections.Counter(), result)
+        dfs(values, adj, 0, maxTime, 0, [0]*len(adj), result)
         return result[0]
