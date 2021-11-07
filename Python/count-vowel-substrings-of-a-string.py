@@ -45,7 +45,7 @@ class Solution2(object):
         """
         VOWELS = set("aeiou")
         k = 5
-        def atMost(word, k):
+        def atMostK(word, k):
             cnt = collections.Counter()
             result = left = 0
             for right, c in enumerate(word):
@@ -62,4 +62,4 @@ class Solution2(object):
                 result += right-left+1
             return result
 
-        return atMost(word, k) - atMost(word, k-1)
+        return atMostK(word, k) - atMostK(word, k-1)
