@@ -1,5 +1,5 @@
-# Time:  O(|V| + |E|)
-# Space: O(|V| + |E|)
+# Time: O(|V| + |E| + 4^(maxTime/min(times))) = O(|V| + |E| + 4^10)
+# Time: O(|V| + |E| + (maxTime/min(times))) = O(|V| + |E| + 10)
 
 class Solution(object):
     def maximalPathQuality(self, values, edges, maxTime):
@@ -47,8 +47,8 @@ class Solution(object):
         return iter_dfs(adj)
 
 
-# Time:  O(|V| + |E|)
-# Space: O(|V| + |E|)
+# Time: O(|V| + |E| + 4^(maxTime/min(times))) = O(|V| + |E| + 4^10)
+# Time: O(|V| + |E| + (maxTime/min(times))) = O(|V| + |E| + 10)
 class Solution2(object):
     def maximalPathQuality(self, values, edges, maxTime):
         """
