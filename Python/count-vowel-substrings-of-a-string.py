@@ -21,7 +21,7 @@ class Solution(object):
                     j = k = i+1
                     continue
                 cnt[c] += 1
-                while len(cnt) == x:
+                while len(cnt) > x-1:
                     cnt[word[k]] -= 1
                     if not cnt[word[k]]:
                         del cnt[word[k]]
