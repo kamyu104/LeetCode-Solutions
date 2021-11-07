@@ -21,7 +21,7 @@ class Solution(object):
             cnt[c] += 1
             while len(cnt) == 5:
                 cnt[word[k]] -= 1
-                if cnt[word[k]] == 0:
+                if not cnt[word[k]]:
                     del cnt[word[k]]
                 k += 1
             result += k-j
