@@ -17,8 +17,8 @@ private:
                  const vector<vector<pair<int, int>>>& adj,
                  int maxTime) {
 
-        unordered_map<int, int> lookup;
-        unordered_map<int, unordered_set<int>> lookup2;
+        vector<int> lookup(size(values));
+        vector<unordered_set<int>> lookup2(size(values));
         int result = 0;
         vector<tuple<int, int, int, int, int>> stk = {{1, 0, -1, maxTime, 0}};
         while (!empty(stk)) {
@@ -62,8 +62,8 @@ public:
             adj[edge[0]].emplace_back(edge[1], edge[2]);
             adj[edge[1]].emplace_back(edge[0], edge[2]);
         }
-        unordered_map<int, int> lookup;
-        unordered_map<int, unordered_set<int>> lookup2;
+        vector<int> lookup(size(values));
+        vector<unordered_set<int>> lookup2(size(values));
         int result = 0;
         dfs(values, adj, 0, maxTime, 0, &lookup, &lookup2, &result);
         return result;
@@ -73,8 +73,8 @@ private:
     void dfs(const vector<int>& values,
              const vector<vector<pair<int, int>>>& adj,
              int u, int time, int total,
-             unordered_map<int, int> *lookup,
-             unordered_map<int, unordered_set<int>> *lookup2,
+             vector<int> *lookup,
+             vector<unordered_set<int>> *lookup2,
              int *result) {
 
         if (++(*lookup)[u] == 1) {
