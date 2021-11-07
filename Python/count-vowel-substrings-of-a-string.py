@@ -11,21 +11,25 @@ class Solution(object):
         :rtype: int
         """
         VOWELS = set("aeiou")
-        cnt = collections.Counter()
-        result = j = k = 0
-        for i, c in enumerate(word):
-            if c not in VOWELS:
-                cnt = collections.Counter()
-                j = k = i+1
-                continue
-            cnt[c] += 1
-            while len(cnt) == 5:
-                cnt[word[k]] -= 1
-                if not cnt[word[k]]:
-                    del cnt[word[k]]
-                k += 1
-            result += k-j
-        return result
+        k = 5
+        def atLeast(word, x):
+            cnt = collections.Counter()
+            result = j = k = 0
+            for i, c in enumerate(word):
+                if c not in VOWELS:
+                    cnt = collections.Counter()
+                    j = k = i+1
+                    continue
+                cnt[c] += 1
+                while len(cnt) == x:
+                    cnt[word[k]] -= 1
+                    if not cnt[word[k]]:
+                        del cnt[word[k]]
+                    k += 1
+                result += k-j
+            return result
+
+        return atLeast(word, k)
 
 
 # Time:  O(n)
