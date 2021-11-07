@@ -21,7 +21,7 @@ private:
                 continue;
             }
             ++cnt[word[i]];
-            for (; size(cnt) == 5; ++k) {
+            for (; size(cnt) > x - 1; ++k) {
                 --cnt[word[k]];
                 if (!cnt[word[k]]) {
                     cnt.erase(word[k]);
