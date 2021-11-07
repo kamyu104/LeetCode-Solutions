@@ -8,4 +8,4 @@ class Solution(object):
         :rtype: int
         """
         VOWELS = set("aeiou")
-        return sum((i+1) * (len(word)-i) for i, c in enumerate(word) if c in VOWELS)
+        return sum((i-0+1) * ((len(word)-1)-i+1) for i, c in enumerate(word) if c in VOWELS)
