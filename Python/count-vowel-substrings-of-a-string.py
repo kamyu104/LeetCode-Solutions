@@ -44,12 +44,12 @@ class Solution2(object):
         def atMost(word, k):
             cnt = collections.Counter()
             result = left = 0
-            for right in xrange(len(word)):
-                if word[right] not in VOWELS:
+            for right, c in enumerate(word):
+                if c not in VOWELS:
                     cnt = collections.Counter()
                     left = right+1
                     continue
-                cnt[word[right]] += 1
+                cnt[c] += 1
                 while len(cnt) > k:
                     cnt[word[left]] -=1
                     if not cnt[word[left]]:
