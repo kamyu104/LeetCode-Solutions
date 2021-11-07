@@ -10,8 +10,7 @@ class Solution(object):
         :rtype: int
         """
         def iter_dfs(adj):
-            lookup = [0]*len(adj)
-            lookup2 = set()
+            lookup, lookup2 = [0]*len(adj), set()
             result = 0
             stk = [(1, (0, maxTime, 0))]
             while stk:
@@ -70,7 +69,6 @@ class Solution2(object):
                     lookup2.remove((u, v))
             lookup[u] -= 1
 
-        
         adj = [[] for _ in xrange(len(values))]
         for u, v, t in edges:
             adj[u].append((v, t))
