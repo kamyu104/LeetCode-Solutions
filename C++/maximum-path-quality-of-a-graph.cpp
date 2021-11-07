@@ -94,3 +94,45 @@ private:
         --(*lookup)[u];
     }
 };
+
+// Time:  O(|V| + |E| + 4^(maxTime/min(times))) = O(|V| + |E| + 4^10)
+// Space: O(|V| + |E|)
+class Solution3 {
+public:
+    int maximalPathQuality(vector<int>& values, vector<vector<int>>& edges, int maxTime) {
+        vector<vector<pair<int, int>>> adj(size(values));
+        for (const auto& edge : edges) {
+            adj[edge[0]].emplace_back(edge[1], edge[2]);
+            adj[edge[1]].emplace_back(edge[0], edge[2]);
+        }
+        vector<int> lookup(size(values));
+        vector<unordered_set<int>> lookup2(size(values));
+        return dfs(values, adj, 0, maxTime, 0, &lookup, &lookup2);
+    }
+
+private:
+    int dfs(const vector<int>& values,
+            const vector<vector<pair<int, int>>>& adj,
+            int u, int time, int total,
+            vector<int> *lookup,
+            vector<unordered_set<int>> *lookup2) {
+
+        if (++(*lookup)[u] == 1) {
+            total += values[u];
+        }
+        int result = 0;
+        if (!u) {
+            result = max(result, total);
+        }
+        for (const auto& [v, t] : adj[u]) {
+            if ((*lookup2)[u].count(v) || time < t) {  // same directed edge won't be visited twice
+                continue;
+            }
+            (*lookup2)[u].emplace(v);
+            result = max(result, dfs(values, adj, v, time - t, total, lookup, lookup2));
+            (*lookup2)[u].erase(v);
+        }
+        --(*lookup)[u];
+        return result;
+    }
+};
