@@ -37,7 +37,7 @@ private:
                     }
                     stk.emplace_back(3, u, v, -1, -1);
                     stk.emplace_back(1, v, -1, time - t, total);
-                    stk.emplace_back(2, u, v, -1, -1);
+                    stk.emplace_back(2, u, v, -1, -1);  // same directed edge won't be visted twice
                 }
             } else if (step == 2) {
                 lookup2[u].emplace(v);
@@ -87,7 +87,7 @@ private:
             if ((*lookup2)[u].count(v) || time < t) {
                 continue;
             }
-            (*lookup2)[u].emplace(v);
+            (*lookup2)[u].emplace(v);  // same directed edge won't be visted twice
             dfs(values, adj, v, time - t, total, lookup, lookup2, result);
             (*lookup2)[u].erase(v);
         }
