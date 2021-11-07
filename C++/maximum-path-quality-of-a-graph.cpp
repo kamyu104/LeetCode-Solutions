@@ -120,10 +120,7 @@ private:
         if (++(*lookup)[u] == 1) {
             total += values[u];
         }
-        int result = 0;
-        if (!u) {
-            result = max(result, total);
-        }
+        int result = !u ? total : 0;
         for (const auto& [v, t] : adj[u]) {
             if ((*lookup2)[u].count(v) || time < t) {  // same directed edge won't be visited twice
                 continue;
