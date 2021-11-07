@@ -32,12 +32,12 @@ private:
                 }
                 stk.emplace_back(4, u, -1, -1, -1);
                 for (const auto& [v, t] : adj[u]) {
-                    if (lookup2[u].count(v) || time < t) {
+                    if (lookup2[u].count(v) || time < t) {  // same directed edge won't be visited twice
                         continue;
                     }
                     stk.emplace_back(3, u, v, -1, -1);
                     stk.emplace_back(1, v, -1, time - t, total);
-                    stk.emplace_back(2, u, v, -1, -1);  // same directed edge won't be visted twice
+                    stk.emplace_back(2, u, v, -1, -1);
                 }
             } else if (step == 2) {
                 lookup2[u].emplace(v);
@@ -84,10 +84,10 @@ private:
             *result = max(*result, total);
         }
         for (const auto& [v, t] : adj[u]) {
-            if ((*lookup2)[u].count(v) || time < t) {
+            if ((*lookup2)[u].count(v) || time < t) {  // same directed edge won't be visited twice
                 continue;
             }
-            (*lookup2)[u].emplace(v);  // same directed edge won't be visted twice
+            (*lookup2)[u].emplace(v);
             dfs(values, adj, v, time - t, total, lookup, lookup2, result);
             (*lookup2)[u].erase(v);
         }
