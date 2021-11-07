@@ -9,7 +9,7 @@ class Solution(object):
         :type maxTime: int
         :rtype: int
         """
-        def iter_dfs(adj):
+        def iter_dfs(values, adj):
             lookup, lookup2 = [0]*len(adj), set()
             result = 0
             stk = [(1, (0, maxTime, 0))]
@@ -44,7 +44,7 @@ class Solution(object):
         for u, v, t in edges:
             adj[u].append((v, t))
             adj[v].append((u, t))
-        return iter_dfs(adj)
+        return iter_dfs(values, adj)
 
 
 # Time: O(|V| + |E| + 4^(maxTime/min(times))) = O(|V| + |E| + 4^10)
