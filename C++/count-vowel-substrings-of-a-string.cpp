@@ -9,25 +9,25 @@ public:
     }
 
 private:
-    int atLeastK(const string& word, int x) {
+    int atLeastK(const string& word, int k) {
         static const unordered_set<int> VOWELS = {'a', 'e', 'i', 'o', 'u'};
 
         unordered_map<int, int> cnt;
         int result = 0;
-        for (int i = 0, j = 0, k = 0; i < size(word); ++i) {
+        for (int i = 0, left = 0, right = 0; i < size(word); ++i) {
             if (!VOWELS.count(word[i])) {
                 cnt.clear();
-                j = k = i + 1;
+                left = right = i + 1;
                 continue;
             }
             ++cnt[word[i]];
-            for (; size(cnt) > x - 1; ++k) {
-                --cnt[word[k]];
-                if (!cnt[word[k]]) {
-                    cnt.erase(word[k]);
+            for (; size(cnt) > k - 1; ++right) {
+                --cnt[word[right]];
+                if (!cnt[word[right]]) {
+                    cnt.erase(word[right]);
                 }
             }
-            result += k - j;
+            result += right - left;
         }
         return result;
     }
