@@ -10,8 +10,8 @@ class Solution(object):
         """
         def atMost(nums, k):
             result, left, count = 0, 0, 0
-            for right in xrange(len(nums)):
-                count += nums[right]%2
+            for right, x in enumerate(nums):
+                count += x%2
                 while count > k:
                     count -= nums[left]%2
                     left += 1
