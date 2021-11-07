@@ -12,7 +12,7 @@ class Solution(object):
         """
         VOWELS = set("aeiou")
         k = 5
-        def atLeast(word, x):
+        def atLeastK(word, x):
             cnt = collections.Counter()
             result = j = k = 0
             for i, c in enumerate(word):
@@ -29,7 +29,7 @@ class Solution(object):
                 result += k-j
             return result
 
-        return atLeast(word, k)
+        return atLeastK(word, k)
 
 
 # Time:  O(n)
