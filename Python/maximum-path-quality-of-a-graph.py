@@ -32,7 +32,7 @@ class Solution(object):
                     lookup[u] -= 1
             return result
 
-        adj = [[] for _ in values]
+        adj = [[] for _ in xrange(len(values))]
         for u, v, t in edges:
             adj[u].append((v, t))
             adj[v].append((u, t))
