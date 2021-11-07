@@ -1,5 +1,5 @@
-# Time:  O(|V| + |E| + 4^(maxTime/min(times))) = O(|V| + |E| + 4^10)
-# Space: O(|V| + |E| + maxTime/min(times)) = O(|V| + |E| + 10)
+# Time:  O(|V| + |E|)
+# Space: O(|V| + |E|)
 
 class Solution(object):
     def maximalPathQuality(self, values, edges, maxTime):
@@ -11,6 +11,7 @@ class Solution(object):
         """
         def iter_dfs(adj):
             lookup = [0]*len(adj)
+            lookup2 = set()
             result = 0
             stk = [(1, (0, maxTime, 0))]
             while stk:
@@ -22,11 +23,19 @@ class Solution(object):
                         total += values[u]
                     if not u:
                         result = max(result, total)
-                    stk.append((2, (u,)))
+                    stk.append((4, (u,)))
                     for v, t in reversed(adj[u]):
-                        if time >= t and lookup[v]+1 <= len(adj[v])+int(not v):
+                        if (u, v) not in lookup2 and time >= t:
+                            stk.append((3, (u, v)))
                             stk.append((1, (v, time-t, total)))
+                            stk.append((2, (u, v)))
                 elif step == 2:
+                    u, v = args
+                    lookup2.add((u, v))
+                elif step == 3:
+                    u, v = args
+                    lookup2.remove((u, v))
+                elif step == 4:
                     u = args[0]
                     lookup[u] -= 1
             return result
@@ -38,8 +47,8 @@ class Solution(object):
         return iter_dfs(adj)
 
 
-# Time:  O(|V| + |E| + 4^(maxTime/min(times))) = O(|V| + |E| + 4^10)
-# Space: O(|V| + |E| + maxTime/min(times)) = O(|V| + |E| + 10)
+# Time:  O(|V| + |E|)
+# Space: O(|V| + |E|)
 class Solution2(object):
     def maximalPathQuality(self, values, edges, maxTime):
         """
@@ -48,21 +57,24 @@ class Solution2(object):
         :type maxTime: int
         :rtype: int
         """
-        def dfs(values, adj, u, time, total, lookup, result):
+        def dfs(values, adj, u, time, total, lookup, lookup2, result):
             lookup[u] += 1
             if lookup[u] == 1:
                 total += values[u]
             if not u:
                 result[0] = max(result[0], total)
             for v, t in adj[u]:
-                if time >= t and lookup[v]+1 <= len(adj[v])+int(not v):
-                    dfs(values, adj, v, time-t, total, lookup, result)
+                if (u, v) not in lookup2 and time >= t:
+                    lookup2.add((u, v))
+                    dfs(values, adj, v, time-t, total, lookup, lookup2, result)
+                    lookup2.remove((u, v))
             lookup[u] -= 1
 
+        
         adj = [[] for _ in xrange(len(values))]
         for u, v, t in edges:
             adj[u].append((v, t))
             adj[v].append((u, t))
         result = [0]
-        dfs(values, adj, 0, maxTime, 0, [0]*len(adj), result)
+        dfs(values, adj, 0, maxTime, 0, [0]*len(adj), set(), result)
         return result[0]
