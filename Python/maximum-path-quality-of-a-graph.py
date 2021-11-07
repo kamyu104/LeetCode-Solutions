@@ -94,9 +94,7 @@ class Solution3(object):
             lookup[u] += 1
             if lookup[u] == 1:
                 total += values[u]
-            result = 0
-            if not u:
-                result = max(result, total)
+            result = total if not u else 0
             for v, t in adj[u]:
                 if (u, v) in lookup2 or time < t:  # same directed edge won't be visited twice
                     continue
