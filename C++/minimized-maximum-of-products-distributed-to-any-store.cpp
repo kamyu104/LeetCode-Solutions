@@ -1,4 +1,4 @@
-// Time:  O(nlogr), r is the max quantity
+// Time:  O(nlogm), m is the max of quantities
 // Space: O(1)
 
 class Solution {
