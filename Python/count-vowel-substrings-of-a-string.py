@@ -12,21 +12,21 @@ class Solution(object):
         """
         VOWELS = set("aeiou")
         k = 5
-        def atLeastK(word, x):
+        def atLeastK(word, k):
             cnt = collections.Counter()
-            result = j = k = 0
+            result = left = right = 0
             for i, c in enumerate(word):
                 if c not in VOWELS:
                     cnt = collections.Counter()
-                    j = k = i+1
+                    left = right = i+1
                     continue
                 cnt[c] += 1
-                while len(cnt) > x-1:
-                    cnt[word[k]] -= 1
-                    if not cnt[word[k]]:
-                        del cnt[word[k]]
-                    k += 1
-                result += k-j
+                while len(cnt) > k-1:
+                    cnt[word[right]] -= 1
+                    if not cnt[word[right]]:
+                        del cnt[word[right]]
+                    right += 1
+                result += right-left
             return result
 
         return atLeastK(word, k)
