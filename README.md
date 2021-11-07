@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2061%20%2F%202061-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2065%20%2F%202065-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -604,6 +604,7 @@
 2005 | [Subtree Removal Game with Fibonacci Tree](https://leetcode.com/problems/subtree-removal-game-with-fibonacci-tree/)|[C++](./C++/subtree-removal-game-with-fibonacci-tree.cpp) [Python](./Python/subtree-removal-game-with-fibonacci-tree.py)| _O(1)_     | _O(1)_         | Hard         |🔒| Math, `Sprague-Grundy Theorem`, `Colon Principle` |
 2028 | [Find Missing Observations](https://leetcode.com/problems/find-missing-observations/)|[C++](./C++/find-missing-observations.cpp) [Python](./Python/find-missing-observations.py)| _O(n)_     | _O(1)_         | Medium         | | |
 2029 | [Stone Game IX](https://leetcode.com/problems/stone-game-ix/)|[C++](./C++/stone-game-ix.cpp) [Python](./Python/stone-game-ix.py)| _O(n)_     | _O(1)_         | Medium         | |
+2063 | [Vowels of All Substrings](https://leetcode.com/problems/vowels-of-all-substrings/)|[C++](./C++/vowels-of-all-substrings.cpp) [Python](./Python/vowels-of-all-substrings.py)| _O(n)_     | _O(1)_         | Medium         | | Combinatorics
 
 <br/>
 <div align="right">
@@ -701,6 +702,7 @@
 2024 | [Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/) | [C++](./C++/maximize-the-confusion-of-an-exam.cpp) [Python](./Python/maximize-the-confusion-of-an-exam.py) | _O(n)_| _O(1)_| Medium | variant of [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Sliding Window |
 2040 | [Kth Smallest Product of Two Sorted Arrays](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/) | [C++](./C++/kth-smallest-product-of-two-sorted-arrays.cpp) [Python](./Python/kth-smallest-product-of-two-sorted-arrays.py) | _O((m + n) * logr)_| _O(1)_| Hard | | Binary Search, Two Pointers |
 2046 | [Sort Linked List Already Sorted Using Absolute Values](https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/)| [C++](./C++/sort-linked-list-already-sorted-using-absolute-values.cpp)  [Python](./Python/sort-linked-list-already-sorted-using-absolute-values.py) | _O(n)_ | _O(1)_         | Medium           | 🔒 | Linked List
+2062 | [Count Vowel Substrings of a String](https://leetcode.com/problems/count-vowel-substrings-of-a-string/) | [C++](./C++/count-vowel-substrings-of-a-string.cpp) [Python](./Python/count-vowel-substrings-of-a-string.py) | _O(n)_ | _O(1)_ | Easy || Sliding Window
 
 <br/>
 <div align="right">
@@ -755,7 +757,7 @@
 1901 | [Find a Peak Element II](https://leetcode.com/problems/find-a-peak-element-ii/) | [C++](./C++/find-a-peak-element-ii.cpp) [Python](./Python/find-a-peak-element-ii.py) | _O(min(n, m) * log(max(n, m)))_ | _O(1)_ | Medium | |
 1918 | [Kth Smallest Subarray Sum](https://leetcode.com/problems/kth-smallest-subarray-sum/) | [C++](./C++/kth-smallest-subarray-sum.cpp) [Python](./Python/kth-smallest-subarray-sum.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 |
 1964 | [Find the Longest Valid Obstacle Course at Each Position](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/) | [C++](./C++/find-the-longest-valid-obstacle-course-at-each-position.cpp)  [Python](./Python/find-the-longest-valid-obstacle-course-at-each-position.py)  | _O(nlogn)_ | _O(n)_ | Hard         | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Binary Search, Segment Tree, DP|
-
+2064 | [Minimized Maximum of Products Distributed to Any Store](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/) | [C++](./C++/minimized-maximum-of-products-distributed-to-any-store.cpp) [Python](./Python/minimized-maximum-of-products-distributed-to-any-store.py) | _O(nlogm)_ | _O(1)_ | Medium | variant of [Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/) |
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -849,6 +851,7 @@
 1905 | [Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) | [C++](./C++/count-sub-islands.cpp) [Python](./Python/count-sub-islands.py) | _O(m * n)_ | _O(1)_ | Medium | | Flood Fill |
 1973 | [Count Nodes Equal to Sum of Descendants](https://leetcode.com/problems/count-nodes-equal-to-sum-of-descendants/) | [C++](./C++/count-nodes-equal-to-sum-of-descendants.cpp) [Python](./Python/count-nodes-equal-to-sum-of-descendants.py) | _O(n)_ | _O(h)_ | Medium | 🔒 | |
 2049 | [Count Nodes With the Highest Score](https://leetcode.com/problems/count-nodes-with-the-highest-score/) | [C++](./C++/count-nodes-with-the-highest-score.cpp) [Python](./Python/count-nodes-with-the-highest-score.py) | _O(n)_ | _O(n)_ | Medium | | |
+2065 | [Maximum Path Quality of a Graph](https://leetcode.com/problems/maximum-path-quality-of-a-graph/) | [C++](./C++/maximum-path-quality-of-a-graph.cpp) [Python](./Python/maximum-path-quality-of-a-graph.py) | _O(\|V\| + \|E\| + 4^10)_ | _O(\|V\| + \|E\| )_ | Hard | | Pruning |
 
 <br/>
 <div align="right">
