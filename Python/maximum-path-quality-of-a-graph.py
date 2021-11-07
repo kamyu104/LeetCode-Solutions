@@ -24,7 +24,7 @@ class Solution(object):
                         result = max(result, total)
                     stk.append((4, (u,)))
                     for v, t in reversed(adj[u]):
-                        if (u, v) in lookup2 or time < t:
+                        if (u, v) in lookup2 or time < t:  # same directed edge won't be visited twice
                             continue
                         stk.append((3, (u, v)))
                         stk.append((1, (v, time-t, total)))
@@ -64,7 +64,7 @@ class Solution2(object):
             if not u:
                 result[0] = max(result[0], total)
             for v, t in adj[u]:
-                if (u, v) in lookup2 or time < t:
+                if (u, v) in lookup2 or time < t:  # same directed edge won't be visited twice
                     continue
                 lookup2.add((u, v))
                 dfs(values, adj, v, time-t, total, lookup, lookup2, result)
