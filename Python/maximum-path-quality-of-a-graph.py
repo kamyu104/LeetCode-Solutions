@@ -23,10 +23,9 @@ class Solution(object):
                     if not u:
                         result = max(result, total)
                     stk.append((2, (u,)))
-                    for v, t in adj[u]:
-                        if time < t:
-                            continue                 
-                        stk.append((1, (v, time-t, total)))
+                    for v, t in reversed(adj[u]):
+                        if time >= t:
+                            stk.append((1, (v, time-t, total)))
                 elif step == 2:
                     u = args[0]
                     lookup[u] -= 1
@@ -56,9 +55,8 @@ class Solution2(object):
             if not u:
                 result[0] = max(result[0], total)
             for v, t in adj[u]:
-                if time < t:
-                    continue
-                dfs(values, adj, v, time-t, total, lookup, result)
+                if time >= t:
+                    dfs(values, adj, v, time-t, total, lookup, result)
             lookup[u] -= 1
 
         adj = [[] for _ in xrange(len(values))]
