@@ -4,6 +4,12 @@
 class Solution {
 public:
     int countVowelSubstrings(string word) {
+        static const int k = 5;
+        return atLeast(word, k);
+    }
+
+private:
+    int atLeast(const string& word, int x) {
         static const unordered_set<int> VOWELS = {'a', 'e', 'i', 'o', 'u'};
 
         unordered_map<int, int> cnt;
