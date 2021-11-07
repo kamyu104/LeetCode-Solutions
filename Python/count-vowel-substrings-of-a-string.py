@@ -43,7 +43,7 @@ class Solution2(object):
         k = 5
         def atMost(word, k):
             cnt = collections.Counter()
-            result, left, count = 0, 0, 0
+            result = left = 0
             for right in xrange(len(word)):
                 if word[right] not in VOWELS:
                     cnt = collections.Counter()
