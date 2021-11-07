@@ -22,8 +22,7 @@ private:
             }
             ++cnt[word[i]];
             for (; size(cnt) > k - 1; ++right) {
-                --cnt[word[right]];
-                if (!cnt[word[right]]) {
+                if (!--cnt[word[right]]) {
                     cnt.erase(word[right]);
                 }
             }
@@ -56,11 +55,10 @@ private:
                 continue;
             }
             ++cnt[word[right]];
-            while (size(cnt) > k) {
+            for (; size(cnt) > k; ++left) {
                 if (!--cnt[word[left]]) {
                     cnt.erase(word[left]);
                 }
-                ++left;
             }
             result += right - left + 1;
         }
