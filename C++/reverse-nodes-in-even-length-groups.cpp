@@ -24,8 +24,8 @@ public:
                 curr = nxt;
             }
             auto tail = prev->next;
-            prev->next = last;
             tail->next = curr;
+            prev->next = last;
             prev = tail;
         }
         return head;
