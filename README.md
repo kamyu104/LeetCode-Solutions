@@ -1418,7 +1418,7 @@
 2041 | [Accepted Candidates From the Interviews](https://leetcode.com/problems/accepted-candidates-from-the-interviews/) | [MySQL](./MySQL/accepted-candidates-from-the-interviews.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒||
 2051 | [The Category of Each Member in the Store](https://leetcode.com/problems/the-category-of-each-member-in-the-store/) | [MySQL](./MySQL/the-category-of-each-member-in-the-store.sql) | _O(m + n)_ | _O(m + n)_       | Medium           |🔒||
 2066 | [Account Balance](https://leetcode.com/problems/account-balance/) | [MySQL](./MySQL/account-balance.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
-2072 | [The Winner University](https://leetcode.com/problems/the-winner-university/) | [MySQL](./MySQL/the-winner-university.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+2072 | [The Winner University](https://leetcode.com/problems/the-winner-university/) | [MySQL](./MySQL/the-winner-university.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
