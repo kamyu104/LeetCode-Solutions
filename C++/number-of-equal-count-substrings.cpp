@@ -14,7 +14,6 @@ public:
                     equal_cnt -= static_cast<int>(cnt[s[i - count * l]]-- == count);
                 }
                 result += static_cast<int>(equal_cnt == l);
-                
             }
         }
         return result;
