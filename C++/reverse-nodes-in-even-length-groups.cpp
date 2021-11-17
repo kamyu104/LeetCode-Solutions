@@ -9,7 +9,7 @@ public:
         while (prev->next) {
             auto curr = prev;
             int cnt = 0;
-            for (int _ = 0; _ < l && curr->next; ++_, ++cnt, curr = curr->next);
+            for (; cnt < l && curr->next; ++cnt, curr = curr->next);
             ++l;
             if (cnt % 2) {
                 prev = curr;
@@ -17,7 +17,7 @@ public:
             }
             curr = prev->next;
             ListNode *last = nullptr;
-            for (int _ = 0; _ < cnt; ++_) {
+            while (cnt--) {
                 auto nxt = curr->next;
                 curr->next = last;
                 last = curr;
