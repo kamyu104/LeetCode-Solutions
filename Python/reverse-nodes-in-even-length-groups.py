@@ -28,5 +28,5 @@ class Solution(object):
             curr, last = prev.next, None
             for _ in xrange(cnt):
                 curr.next, curr, last = last, curr.next, curr
-            prev.next, prev.next.next, prev = last, curr, prev.next
+            prev.next.next, prev.next, prev = curr, last, prev.next
         return head
