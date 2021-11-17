@@ -351,6 +351,7 @@
 1721 | [Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)| [C++](./C++/swapping-nodes-in-a-linked-list.cpp)  [Python](./Python/swapping-nodes-in-a-linked-list.py) | _O(n)_ | _O(1)_         | Medium           ||
 1836 | [Remove Duplicates From an Unsorted Linked List](https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/)| [C++](./C++/remove-duplicates-from-an-unsorted-linked-list.cpp)  [Python](./Python/remove-duplicates-from-an-unsorted-linked-list.py) | _O(n)_ | _O(n)_         | Medium           | 🔒 |
 2058 | [Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/)| [C++](./C++/find-the-minimum-and-maximum-number-of-nodes-between-critical-points.cpp)  [Python](./Python/find-the-minimum-and-maximum-number-of-nodes-between-critical-points.py) | _O(n)_ | _O(1)_         | Medium           ||
+2074 | [Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/) | [C++](./C++/reverse-nodes-in-even-length-groups.cpp) [Python](./Python/reverse-nodes-in-even-length-groups.py) | _O(n)_  | _O(1)_         | Medium           | |
 
 <br/>
 <div align="right">
@@ -375,7 +376,6 @@
 1856 | [Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/) | [C++](./C++/maximum-subarray-min-product.cpp) [Python](./Python/maximum-subarray-min-product.py) | _O(n)_ | _O(n)_ | Medium | variant of [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Mono Stack, Prefix Sum
 1944 | [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/) | [C++](./C++/number-of-visible-people-in-a-queue.cpp) [Python](./Python/number-of-visible-people-in-a-queue.py) | _O(n)_  | _O(n)_         | Hard           | variant of [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view/) | Mono Stack
 1950 | [Maximum of Minimum Values in All Subarrays](https://leetcode.com/problems/maximum-of-minimum-values-in-all-subarrays/) | [C++](./C++/maximum-of-minimum-values-in-all-subarrays.cpp) [Python](./Python/maximum-of-minimum-values-in-all-subarrays.py) | _O(n)_  | _O(n)_         | Medium           | 🔒 | Mono Stack
-2074 | [Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/) | [C++](./C++/reverse-nodes-in-even-length-groups.cpp) [Python](./Python/reverse-nodes-in-even-length-groups.py) | _O(n)_  | _O(1)_         | Medium           | |
 
 <br/>
 <div align="right">
