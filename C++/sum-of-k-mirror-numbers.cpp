@@ -52,30 +52,16 @@ public:
         string s = "0";
         int64_t result = 0;
         while (n--) {
-            result += mirror_num(k, &s);
+            int64_t x;
+            do {
+                x = next_num_in_base_k(k, &s);
+            } while (!is_mirror(to_string(x)));
+            result += x;
         }
         return result;
     }
 
 private:
-    int64_t mirror_num(int k, string *s) {
-        int64_t result;
-        do {
-            result = next_num_in_base_k(k, s);
-        } while (!is_mirror(to_string(result)));
-        return result;
-    }
-
-    bool is_mirror(const string& s) {
-        int left = 0, right = size(s) - 1;
-        while (left < right) {
-            if (s[left++] != s[right--]) {
-                return false;
-            }
-        }
-        return true;
-    }
-    
     int64_t next_num_in_base_k(int k, string *s) {
         int result = 0;
         for (int i = size(*s) / 2; i < size(*s); ++i) {
@@ -98,5 +84,15 @@ private:
             result += (s[i] - '0') * base;
         }
         return result;
+    }
+
+    bool is_mirror(const string& s) {
+        int left = 0, right = size(s) - 1;
+        while (left < right) {
+            if (s[left++] != s[right--]) {
+                return false;
+            }
+        }
+        return true;
     }
 };
