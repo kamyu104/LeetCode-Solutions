@@ -11,7 +11,7 @@ public:
         while (n--) {
             int64_t x;
             do {
-                x = get_mirror(prefix_num[even]++, base1, even);
+                x = mirror(prefix_num[even]++, base1, even);
                 if (++cnt[even] == total[even]) {
                     cnt[even] = 0;
                     total[even] *= base1;
@@ -24,7 +24,7 @@ public:
     }
 
 private:
-    int64_t get_mirror(int n, int base, bool even) {
+    int64_t mirror(int n, int base, bool even) {
         int64_t result = n;
         if (!even) {
             n /= base;
