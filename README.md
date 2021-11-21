@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2076%20%2F%202076-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2081%20%2F%202081-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -234,6 +234,8 @@
 2055 | [Plates Between Candles](https://leetcode.com/problems/plates-between-candles/) | [C++](./C++/plates-between-candles.cpp) [Python](./Python/plates-between-candles.py) | _O(n + q)_ | _O(n)_ | Medium || Prefix Sum 
 2057 | [Smallest Index With Equal Value](https://leetcode.com/problems/smallest-index-with-equal-value/) | [C++](./C++/smallest-index-with-equal-value.cpp) [Python](./Python/smallest-index-with-equal-value.py) | _O(n)_ | _O(1)_ | Easy ||
 2075 | [Decode the Slanted Ciphertext](https://leetcode.com/problems/decode-the-slanted-ciphertext/) | [C++](./C++/decode-the-slanted-ciphertext.cpp) [Python](./Python/decode-the-slanted-ciphertext.py) | _O(n)_ | _O(1)_ | Medium ||
+2078 | [Two Furthest Houses With Different Colors](https://leetcode.com/problems/two-furthest-houses-with-different-colors/) | [C++](./C++/two-furthest-houses-with-different-colors.cpp) [Python](./Python/two-furthest-houses-with-different-colors.py) | _O(n)_ | _O(1)_ | Easy ||
+2079 | [Watering Plants](https://leetcode.com/problems/watering-plants/) | [C++](./C++/watering-plants.cpp) [Python](./Python/watering-plants.py) | _O(n)_ | _O(1)_ | Medium ||
 
 <br/>
 <div align="right">
@@ -329,6 +331,7 @@
 2042 | [Check if Numbers Are Ascending in a Sentence](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/) | [C++](./C++/check-if-numbers-are-ascending-in-a-sentence.cpp) [Python](./Python/check-if-numbers-are-ascending-in-a-sentence.py) | _O(n)_ | _O(1)_ | Easy |||
 2047 | [Number of Valid Words in a Sentence](https://leetcode.com/problems/number-of-valid-words-in-a-sentence/) | [C++](./C++/number-of-valid-words-in-a-sentence.cpp) [Python](./Python/number-of-valid-words-in-a-sentence.py) | _O(n)_ | _O(1)_ | Easy |||
 2048 | [Next Greater Numerically Balanced Number](https://leetcode.com/problems/next-greater-numerically-balanced-number/) | [C++](./C++/next-greater-numerically-balanced-number.cpp) [Python](./Python/next-greater-numerically-balanced-number.py) | _O(1)_ | _O(1)_ | Medium || Permutations, Precompute, Binary Search |
+2081 | [Sum of k-Mirror Numbers](https://leetcode.com/problems/sum-of-k-mirror-numbers/) | [C++](./C++/sum-of-k-mirror-numbers.cpp) [Python](./Python/sum-of-k-mirror-numbers.py) | _O(10^6)_ | _O(1)_ | Hard || String, Palindrome, Brute Force |
 
 <br/>
 <div align="right">
@@ -1174,6 +1177,7 @@
 1971 | [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/)  | [C++](./C++/find-if-path-exists-in-graph.cpp) [Python](./Python/find-if-path-exists-in-graph.py) | _O(\|V\| + \|E\|)_| _O(\|V\| + \|E\|)_| Easy           || DFS, BFS, Bi-BFS| 
 1976 | [Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/)  | [C++](./C++/number-of-ways-to-arrive-at-destination.cpp) [Python](./Python/number-of-ways-to-arrive-at-destination.py) | _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium | | `Dijkstra's Algorithm` |
 2076 | [Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/)  | [C++](./C++/process-restricted-friend-requests.cpp) [Python](./Python/process-restricted-friend-requests.py) | _O(n * r)_ | _O(n)_ | Hard | | Union Find |
+2077 | [Paths in Maze That Lead to Same Room](https://leetcode.com/problems/paths-in-maze-that-lead-to-same-room/)  | [C++](./C++/paths-in-maze-that-lead-to-same-room.cpp) [Python](./Python/paths-in-maze-that-lead-to-same-room.py) | _O(n^3)_ | _O(n)_ | Medium | 🔒 | |
 
 <br/>
 <div align="right">
@@ -1250,6 +1254,7 @@
 2034 | [Stock Price Fluctuation](https://leetcode.com/problems/stock-price-fluctuation/) | [C++](./C++/stock-price-fluctuation.cpp) [Python](./Python/stock-price-fluctuation.py) | ctor: _O(1)_<br>update: _O(logn)_<br>current: _O(1)_<br>max: _O(1)_<br>min: _O(1)_ | _O(n)_ | Medium | | Sorted List, Heap
 2043 | [Simple Bank System](https://leetcode.com/problems/simple-bank-system/) | [C++](./C++/simple-bank-system.cpp) [Python](./Python/simple-bank-system.py) | ctor: _O(1)_<br>transer: _O(1)_<br>deposit: _O(1)_<br>withdraw: _O(1)_ | _O(1)_ | Medium | |
 2069 | [Walking Robot Simulation II](https://leetcode.com/problems/walking-robot-simulation-ii/) | [C++](./C++/walking-robot-simulation-ii.cpp) [Python](./Python/walking-robot-simulation-ii.py) | _O(1)_ | _O(1)_ | Medium | | Simulation, Math
+2080 | [Range Frequency Queries](https://leetcode.com/problems/range-frequency-queries/) | [C++](./C++/range-frequency-queries.cpp) [Python](./Python/range-frequency-queries.py) | ctor: _O(n)_<br>query: _O(logn)_ | _O(n)_ | Medium | | Binary Search
 
 <br/>
 <div align="right">
