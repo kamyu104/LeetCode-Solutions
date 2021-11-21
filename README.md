@@ -67,8 +67,9 @@
     * [Rosetta Code](https://rosettacode.org)
     * [CP-Algorithms](https://cp-algorithms.com)
     * [KACTL](https://github.com/kth-competitive-programming/kactl)
+    * [Codeforces](https://codeforces.com/)
 * Math
-    * [Stack Exchange](https://math.stackexchange.com)
+    * [Stack Exchange](https://math.stackexchange.com)     
 * Visualization
     * [VisuAlgo](https://visualgo.net/en)
     * [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
