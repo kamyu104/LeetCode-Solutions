@@ -8,7 +8,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        def get_mirror(n, base, even):
+        def mirror(n, base, even):
             result = n
             if not even:
                 n //= base
@@ -17,6 +17,19 @@ class Solution(object):
                 n //= base
             return result
 
+        def num_gen(base):
+            prefix_num, cnt, total = [1]*2, [0]*2, [base-1]*2
+            even = False
+            while True:
+                x = mirror(prefix_num[even], base, even)
+                prefix_num[even] += 1
+                cnt[even] += 1
+                if cnt[even] == total[even]:
+                    cnt[even] = 0
+                    total[even] *= base
+                    even = not even
+                yield x
+
         def reverse(n, base):
             result = 0
             while n:
@@ -24,23 +37,16 @@ class Solution(object):
                 n = n//base
             return result
 
-        result = 0
-        base1, base2 = k, 10  # (10, k) is slower
-        prefix_num, cnt, total = [1]*2, [0]*2, [base1-1]*2
-        even = False
-        for _ in xrange(n):
+        def mirror_num(gen, base):
             while True:
-                x = get_mirror(prefix_num[even], base1, even)
-                prefix_num[even] += 1
-                cnt[even] += 1
-                if cnt[even] == total[even]:
-                    cnt[even] = 0
-                    total[even] *= base1
-                    even = not even
-                if x == reverse(x, base2):
+                x = next(gen)
+                if x == reverse(x, base):
                     break
-            result += x
-        return result
+            return x
+
+        base1, base2 = k, 10  # (10, k) is slower
+        gen = num_gen(base1)
+        return sum(mirror_num(gen, base2) for _ in xrange(n))
 
 
 # Time:  O(10^6), the most times of finding x is 665502 (k = 7, n = 30)
