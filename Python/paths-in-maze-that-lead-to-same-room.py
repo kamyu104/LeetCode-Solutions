@@ -11,4 +11,4 @@ class Solution(object):
         adj = [set() for _ in xrange(n)]
         for u, v in corridors:
             adj[min(u, v)-1].add(max(u, v)-1)
-        return sum(sum((k in adj[i]) for j in adj[i] for k in adj[j]) for i in xrange(n))
+        return sum(k in adj[i] for i in xrange(n) for j in adj[i] for k in adj[j])
