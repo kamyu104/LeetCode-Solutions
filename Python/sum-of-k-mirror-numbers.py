@@ -8,9 +8,9 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        def mirror(n, base, even):
+        def mirror(n, base, odd):
             result = n
-            if not even:
+            if odd:
                 n //= base
             while n:
                 result = result*base+n%base
@@ -19,15 +19,15 @@ class Solution(object):
 
         def num_gen(base):
             prefix_num, cnt, total = [1]*2, [0]*2, [base-1]*2
-            even = False
+            odd = 1
             while True:
-                x = mirror(prefix_num[even], base, even)
-                prefix_num[even] += 1
-                cnt[even] += 1
-                if cnt[even] == total[even]:
-                    cnt[even] = 0
-                    total[even] *= base
-                    even = not even
+                x = mirror(prefix_num[odd], base, odd)
+                prefix_num[odd] += 1
+                cnt[odd] += 1
+                if cnt[odd] == total[odd]:
+                    cnt[odd] = 0
+                    total[odd] *= base
+                    odd ^= 1
                 yield x
 
         def reverse(n, base):
