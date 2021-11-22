@@ -6,14 +6,13 @@ public:
     long long kMirror(int k, int n) {
         const int base1 = k, base2 = 10;  // (10, k) is slower
         int64_t result = 0;
-        vector<int> prefix_num(2, 1), cnt(2), total(2, base1 - 1);
+        vector<int> prefix_num(2, 1), total(2, base1);
         uint8_t odd = 1;
         while (n--) {
             int64_t x;
             do {
-                x = mirror(prefix_num[odd]++, base1, odd);
-                if (++cnt[odd] == total[odd]) {
-                    cnt[odd] = 0;
+                x = mirror(prefix_num[odd], base1, odd);
+                if (++prefix_num[odd] == total[odd]) {
                     total[odd] *= base1;
                     odd ^= 1;
                 }
