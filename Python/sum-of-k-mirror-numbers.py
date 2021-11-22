@@ -18,14 +18,12 @@ class Solution(object):
             return result
 
         def num_gen(base):
-            prefix_num, cnt, total = [1]*2, [0]*2, [base-1]*2
+            prefix_num, total = [1]*2, [base]*2
             odd = 1
             while True:
                 x = mirror(prefix_num[odd], base, odd)
                 prefix_num[odd] += 1
-                cnt[odd] += 1
-                if cnt[odd] == total[odd]:
-                    cnt[odd] = 0
+                if prefix_num[odd] == total[odd]:
                     total[odd] *= base
                     odd ^= 1
                 yield x
