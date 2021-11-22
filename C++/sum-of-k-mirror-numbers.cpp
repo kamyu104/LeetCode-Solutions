@@ -7,15 +7,15 @@ public:
         const int base1 = k, base2 = 10;  // (10, k) is slower
         int64_t result = 0;
         vector<int> prefix_num(2, 1), cnt(2), total(2, base1 - 1);
-        bool even = false;
+        uint8_t odd = 1;
         while (n--) {
             int64_t x;
             do {
-                x = mirror(prefix_num[even]++, base1, even);
-                if (++cnt[even] == total[even]) {
-                    cnt[even] = 0;
-                    total[even] *= base1;
-                    even = !even;
+                x = mirror(prefix_num[odd]++, base1, odd);
+                if (++cnt[odd] == total[odd]) {
+                    cnt[odd] = 0;
+                    total[odd] *= base1;
+                    odd ^= 1;
                 }
             } while (x != reverse(x, base2));
             result += x;
@@ -24,9 +24,9 @@ public:
     }
 
 private:
-    int64_t mirror(int n, int base, bool even) {
+    int64_t mirror(int n, int base, bool odd) {
         int64_t result = n;
-        if (!even) {
+        if (odd) {
             n /= base;
         }
         for (; n; n /= base) {
