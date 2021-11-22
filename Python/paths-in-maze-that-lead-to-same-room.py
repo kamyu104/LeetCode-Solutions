@@ -1,5 +1,5 @@
-# Time:  O(n^3)
-# Space: O(n)
+# Time:  O(|V|^3)
+# Space: O(|E|)
 
 class Solution(object):
     def numberOfPaths(self, n, corridors):
