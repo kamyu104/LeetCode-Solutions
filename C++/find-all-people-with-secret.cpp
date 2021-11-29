@@ -35,7 +35,7 @@ public:
             }
             adj.clear();
         }
-        return vector<int>(cbegin(result), cend(result));
+        return {cbegin(result), cend(result)};
     }
 };
 
@@ -72,7 +72,7 @@ public:
             }
             adj.clear();
         }
-        return vector<int>(cbegin(result), cend(result));
+        return {cbegin(result), cend(result)};
     }
 };
 
