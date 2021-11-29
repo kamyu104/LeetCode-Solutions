@@ -107,9 +107,9 @@ class Solution3(object):
         :type firstPerson: int
         :rtype: List[int]
         """
+        meetings.sort(key=lambda x: x[2])
         uf = UnionFind(n)
         uf.union_set(0, firstPerson)
-        meetings.sort(key=lambda x: x[2])
         grp = set()
         for i, (x, y, _) in enumerate(meetings):
             grp.add(x)
