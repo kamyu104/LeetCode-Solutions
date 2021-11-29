@@ -110,15 +110,15 @@ class Solution3(object):
         meetings.sort(key=lambda x: x[2])
         uf = UnionFind(n)
         uf.union_set(0, firstPerson)
-        grp = set()
+        groups = set()
         for i, (x, y, _) in enumerate(meetings):
-            grp.add(x)
-            grp.add(y)
+            groups.add(x)
+            groups.add(y)
             uf.union_set(x, y)
             if i+1 != len(meetings) and meetings[i+1][2] == meetings[i][2]:
                 continue
-            while grp:
-                x = grp.pop()
+            while groups:
+                x = groups.pop()
                 if uf.find_set(x) != uf.find_set(0):
                     uf.reset(x)
         return [i for i in xrange(n) if uf.find_set(i) == uf.find_set(0)]
