@@ -9,7 +9,7 @@ public:
 
 private:
     vector<int64_t> linear_sieve_of_eratosthenes(int64_t n) {  // Time: O(n), Space: O(n)
-        vector<int64_t> spf(n + 1);
+        vector<int64_t> spf(n + 1, -1);
         vector<int64_t> primes;
         for (int64_t i = 2; i <= n; ++i) {
             if (spf[i] == 0) {
