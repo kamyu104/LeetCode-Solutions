@@ -21,7 +21,7 @@ private:
                     break;
                 }
                 spf[i * p] = p;
-                if (p > spf[i]) {
+                if (p == spf[i]) {
                     break;
                 }
             }
