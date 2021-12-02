@@ -17,13 +17,10 @@ private:
                 primes.emplace_back(i);
             }
             for (const auto& p : primes) {
-                if (i * p > n) {
+                if (i * p > n || p > spf[i]) {
                     break;
                 }
                 spf[i * p] = p;
-                if (p == spf[i]) {
-                    break;
-                }
             }
         }
         return primes;
