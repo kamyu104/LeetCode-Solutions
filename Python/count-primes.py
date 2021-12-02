@@ -23,17 +23,28 @@ class Solution(object):
 
         return cnt
 
-    def countPrimes2(self, n):
+
+# Time:  O(n)
+# Space: O(n)
+class Solution_TLE(object):
+    def countPrimes(self, n):
         """
         :type n: int
         :rtype: int
         """
-        if n < 3:
-            return 0
-        primes = [True] * n
-        primes[0] = primes[1] = False
-        for i in range(2, int(n ** 0.5) + 1):
-            if primes[i]:
-                primes[i * i: n: i] = [False] * len(primes[i * i: n: i])
-        return sum(primes)
-
+        def linear_sieve_of_eratosthenes(n):
+            if n < 2:
+                return []
+            primes = []
+            spf = range(n+1)  # the smallest prime factor
+            spf[0] = spf[1] = -1
+            for i in xrange(2, n+1):
+                if spf[i] == i:
+                    primes.append(i)
+                for p in primes:
+                    if i*p > n or p > spf[i]:
+                        break
+                    spf[i*p] = p
+            return primes
+    
+        return len(linear_sieve_of_eratosthenes(n-1))
