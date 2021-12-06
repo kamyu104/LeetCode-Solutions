@@ -13,7 +13,7 @@ class Solution(object):
         for i in xrange(1, 10):
             for j in xrange(10):
                 for k in xrange(0, 10, 2):
-                    if cnt[i] > 0 and cnt[j] > (i == j) and cnt[k] > (k == i) + (k == j):
+                    if cnt[i] > 0 and cnt[j] > (j == i) and cnt[k] > (k == i) + (k == j):
                         result.append(i*100 + j*10 + k)
         return result
 
