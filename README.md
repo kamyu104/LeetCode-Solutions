@@ -356,7 +356,7 @@
 1836 | [Remove Duplicates From an Unsorted Linked List](https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/)| [C++](./C++/remove-duplicates-from-an-unsorted-linked-list.cpp)  [Python](./Python/remove-duplicates-from-an-unsorted-linked-list.py) | _O(n)_ | _O(n)_         | Medium           | 🔒 |
 2058 | [Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/)| [C++](./C++/find-the-minimum-and-maximum-number-of-nodes-between-critical-points.cpp)  [Python](./Python/find-the-minimum-and-maximum-number-of-nodes-between-critical-points.py) | _O(n)_ | _O(1)_         | Medium           ||
 2074 | [Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/) | [C++](./C++/reverse-nodes-in-even-length-groups.cpp) [Python](./Python/reverse-nodes-in-even-length-groups.py) | _O(n)_  | _O(1)_         | Medium           | |
-2095 | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | [C++](./C++/delete-the-middle-node-of-a-linked-list.cpp) [Python](./Python/delete-the-middle-node-of-a-linked-list.py) | _O(n)_  | _O(1)_         | Medium           | |
+2095 | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | [C++](./C++/delete-the-middle-node-of-a-linked-list.cpp) [Python](./Python/delete-the-middle-node-of-a-linked-list.py) | _O(n)_  | _O(1)_         | Medium           | | Two Pointers
 
 <br/>
 <div align="right">
@@ -1191,7 +1191,7 @@
 2076 | [Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/)  | [C++](./C++/process-restricted-friend-requests.cpp) [Python](./Python/process-restricted-friend-requests.py) | _O(n * r)_ | _O(n)_ | Hard | | Union Find |
 2077 | [Paths in Maze That Lead to Same Room](https://leetcode.com/problems/paths-in-maze-that-lead-to-same-room/)  | [C++](./C++/paths-in-maze-that-lead-to-same-room.cpp) [Python](./Python/paths-in-maze-that-lead-to-same-room.py) | _O(\|V\|^3)_ | _O(\|E\|)_ | Medium | 🔒 | |
 2092 | [Find All People With Secret](https://leetcode.com/problems/find-all-people-with-secret/)  | [C++](./C++/find-all-people-with-secret.cpp) [Python](./Python/find-all-people-with-secret.py) | _O(nlogn)_ | _O(nlogn)_ | Hard | | BFS, DFS, Union Find |
-2093 | [Minimum Path Cost in a Hidden Grid](https://leetcode.com/problems/minimum-path-cost-in-a-hidden-grid/)  | [C++](./C++/minimum-path-cost-in-a-hidden-grid.cpp) [Python](./Python/minimum-path-cost-in-a-hidden-grid.py) | _O(\|E\| * log\|V\|)_ | _O(\|V\| + \|E\|)_ | Medium           |🔒| DFS, `Dijkstra's Algorithm`| 
+2093 | [Minimum Path Cost in a Hidden Grid](https://leetcode.com/problems/minimum-path-cost-in-a-hidden-grid/)  | [C++](./C++/minimum-path-cost-in-a-hidden-grid.cpp) [Python](./Python/minimum-path-cost-in-a-hidden-grid.py) | _O(\|E\| * log\|V\|)_ | _O(\|V\| + \|E\|)_ | Medium           |🔒| `Dijkstra's Algorithm`| 
 2097 | [Valid Arrangement of Pairs](https://leetcode.com/problems/valid-arrangement-of-pairs/) | [C++](./C++/valid-arrangement-of-pairs.cpp)  [Python](./Python/valid-arrangement-of-pairs.py)  |  _O(\|V\| + \|E\|)_ | _O(\|V\| + \|E\|)_ | Hard | variant of [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) | `Hierholzer's Algorithm` |
 
 <br/>
