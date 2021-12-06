@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2092%20%2F%202092-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2097%20%2F%202097-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -356,6 +356,7 @@
 1836 | [Remove Duplicates From an Unsorted Linked List](https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/)| [C++](./C++/remove-duplicates-from-an-unsorted-linked-list.cpp)  [Python](./Python/remove-duplicates-from-an-unsorted-linked-list.py) | _O(n)_ | _O(n)_         | Medium           | 🔒 |
 2058 | [Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/)| [C++](./C++/find-the-minimum-and-maximum-number-of-nodes-between-critical-points.cpp)  [Python](./Python/find-the-minimum-and-maximum-number-of-nodes-between-critical-points.py) | _O(n)_ | _O(1)_         | Medium           ||
 2074 | [Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/) | [C++](./C++/reverse-nodes-in-even-length-groups.cpp) [Python](./Python/reverse-nodes-in-even-length-groups.py) | _O(n)_  | _O(1)_         | Medium           | |
+2095 | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | [C++](./C++/delete-the-middle-node-of-a-linked-list.cpp) [Python](./Python/delete-the-middle-node-of-a-linked-list.py) | _O(n)_  | _O(1)_         | Medium           | |
 
 <br/>
 <div align="right">
@@ -461,6 +462,7 @@
 1938 | [Maximum Genetic Difference Query](https://leetcode.com/problems/maximum-genetic-difference-query/) | [C++](./C++/maximum-genetic-difference-query.cpp) [Python](./Python/maximum-genetic-difference-query.py) | _O(nlogk + mlogk)_ | _O(n + logk)_ | Hard | variant of [Maximum XOR With an Element From Array](https://leetcode.com/problems/maximum-xor-with-an-element-from-array/) | DFS, Greedy, Trie
 1948 | [Delete Duplicate Folders in System](https://leetcode.com/problems/delete-duplicate-folders-in-system/) |[C++](./C++/delete-duplicate-folders-in-system.cpp)  [Python](./Python/delete-duplicate-folders-in-system.py) | _O(n * m * l + tlogt + l * t)_ | _O(l * t)_ | Hard         | variant of [Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/) | Trie, DFS, Hash
 2003 | [Smallest Missing Genetic Value in Each Subtree](https://leetcode.com/problems/smallest-missing-genetic-value-in-each-subtree/) |[C++](./C++/smallest-missing-genetic-value-in-each-subtree.cpp)  [Python](./Python/smallest-missing-genetic-value-in-each-subtree.py) | _O(n)_ | _O(n)_ | Hard         | | DFS, Stack
+2096 | [Step-By-Step Directions From a Binary Tree Node to Another](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/) |[C++](./C++/step-by-step-directions-from-a-binary-tree-node-to-another.cpp)  [Python](./Python/step-by-step-directions-from-a-binary-tree-node-to-another.py) | _O(n)_ | _O(h)_ | Medium         | | DFS, Stack
 
 <br/>
 <div align="right">
@@ -893,6 +895,7 @@
 1999 | [Smallest Greater Multiple Made of Two Digits](https://leetcode.com/problems/smallest-greater-multiple-made-of-two-digits/) | [C++](./C++/smallest-greater-multiple-made-of-two-digits.cpp) [Python](./Python/smallest-greater-multiple-made-of-two-digits.py) | _O(1)_ | _O(1)_      | Medium         |🔒| Backtracking, Bit Manipulation |
 2014 | [Longest Subsequence Repeated k Times](https://leetcode.com/problems/longest-subsequence-repeated-k-times/) | [C++](./C++/longest-subsequence-repeated-k-times.cpp) [Python](./Python/longest-subsequence-repeated-k-times.py) | _O(n * (n/k)!)_ | _O(n/k)_      | Hard         | | |
 2056 | [Number of Valid Move Combinations On Chessboard](https://leetcode.com/problems/number-of-valid-move-combinations-on-chessboard/) | [C++](./C++/number-of-valid-move-combinations-on-chessboard.cpp) [Python](./Python/number-of-valid-move-combinations-on-chessboard.py) | _O(1)_ | _O(1)_      | Hard         | | |
+2094 | [Finding 3-Digit Even Numbers](https://leetcode.com/problems/finding-3-digit-even-numbers/) | [C++](./C++/finding-3-digit-even-numbers.cpp) [Python](./Python/finding-3-digit-even-numbers.py) | _O(n)_ | _O(1)_      | Easy         | | |
 
 <br/>
 <div align="right">
@@ -1188,6 +1191,8 @@
 2076 | [Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/)  | [C++](./C++/process-restricted-friend-requests.cpp) [Python](./Python/process-restricted-friend-requests.py) | _O(n * r)_ | _O(n)_ | Hard | | Union Find |
 2077 | [Paths in Maze That Lead to Same Room](https://leetcode.com/problems/paths-in-maze-that-lead-to-same-room/)  | [C++](./C++/paths-in-maze-that-lead-to-same-room.cpp) [Python](./Python/paths-in-maze-that-lead-to-same-room.py) | _O(\|V\|^3)_ | _O(\|E\|)_ | Medium | 🔒 | |
 2092 | [Find All People With Secret](https://leetcode.com/problems/find-all-people-with-secret/)  | [C++](./C++/find-all-people-with-secret.cpp) [Python](./Python/find-all-people-with-secret.py) | _O(nlogn)_ | _O(nlogn)_ | Hard | | BFS, DFS, Union Find |
+1810 | [Minimum Path Cost in a Hidden Grid](https://leetcode.com/problems/minimum-path-cost-in-a-hidden-grid/)  | [C++](./C++/minimum-path-cost-in-a-hidden-grid.cpp) [Python](./Python/minimum-path-cost-in-a-hidden-grid.py) | _O(m * n * log(m * n))_ | _O(m * n)_| Medium           |🔒| DFS, `Dijkstra's Algorithm`| 
+2097 | [Valid Arrangement of Pairs](https://leetcode.com/problems/valid-arrangement-of-pairs/) | [C++](./C++/valid-arrangement-of-pairs.cpp)  [Python](./Python/valid-arrangement-of-pairs.py)  |  _O(\|E\| * log\|V\|)_ | _O(\|V\| + \|E\|)_ | Hard | variant of [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) | `Hierholzer's Algorithm` |
 
 <br/>
 <div align="right">
