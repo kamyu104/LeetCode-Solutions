@@ -2,6 +2,9 @@
 # Space: O(|V| + |E|)
 # Hierholzer Algorithm
 
+import collections
+
+
 class Solution(object):
     def findItinerary(self, tickets):
         """
