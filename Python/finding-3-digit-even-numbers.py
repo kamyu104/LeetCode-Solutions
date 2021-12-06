@@ -55,4 +55,5 @@ class Solution2(object):
         digit_cnt = map(list, cnt.iteritems())
         result = []
         backtracking([], digit_cnt, result)
-        return sorted(result)
+        result.sort()
+        return result
