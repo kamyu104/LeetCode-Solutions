@@ -1,4 +1,4 @@
-// Time:  O(|V| + |E|log|E|)
+// Time:  O(|V| + |E|log|V|)
 // Space: O(|V| + |E|)
 
 // Hierholzer Algorithm
