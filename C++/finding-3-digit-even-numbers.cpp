@@ -24,7 +24,8 @@ private:
             return;
         }
         for (int i = 0; i < size(*cnt); ++i) {
-            if ((*cnt)[i] == 0 || (empty(*curr) && (i == 0)) ||
+            if ((*cnt)[i] == 0 ||
+                (empty(*curr) && (i == 0)) ||
                 (size(*curr) == k - 1 && i % 2 != 0)) {
                 continue;
             }
