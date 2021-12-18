@@ -1,7 +1,7 @@
 // Time:  O(|V|^2 | + |V| * |E|)
 // Space: O(|V| + |E|)
 
-// dfs solution
+// bfs solution
 class Solution {
 public:
     int maximumDetonation(vector<vector<int>>& bombs) {
