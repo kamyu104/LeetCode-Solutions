@@ -8,17 +8,17 @@ public:
         
     }
     void add(string name, int score) {
-        auto cit1 = s.emplace(-score, name).first;
-        if (cit == cend(s) || *cit1 < *cit) {
-            --cit;
+        auto cit1 = lookup_.emplace(-score, name).first;
+        if (cit_ == cend(lookup_) || *cit1 < *cit_) {
+            --cit_;
         }
     }
     
     string get() {
-        return (cit++)->second;
+        return (cit_++)->second;
     }
 
 private:
-    set<pair<int, string>> s;
-    set<pair<int, string>>::const_iterator cit = cend(s);
+    set<pair<int, string>> lookup_;
+    set<pair<int, string>>::const_iterator cit_ = cend(lookup_);
 };
