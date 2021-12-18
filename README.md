@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2097%20%2F%202097-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2107%20%2F%202107-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -237,6 +237,9 @@
 2075 | [Decode the Slanted Ciphertext](https://leetcode.com/problems/decode-the-slanted-ciphertext/) | [C++](./C++/decode-the-slanted-ciphertext.cpp) [Python](./Python/decode-the-slanted-ciphertext.py) | _O(n)_ | _O(1)_ | Medium ||
 2078 | [Two Furthest Houses With Different Colors](https://leetcode.com/problems/two-furthest-houses-with-different-colors/) | [C++](./C++/two-furthest-houses-with-different-colors.cpp) [Python](./Python/two-furthest-houses-with-different-colors.py) | _O(n)_ | _O(1)_ | Easy ||
 2079 | [Watering Plants](https://leetcode.com/problems/watering-plants/) | [C++](./C++/watering-plants.cpp) [Python](./Python/watering-plants.py) | _O(n)_ | _O(1)_ | Medium ||
+2098 | [Subsequence of Size K With the Largest Even Sum](https://leetcode.com/problems/subsequence-of-size-k-with-the-largest-even-sum/) | [C++](./C++/subsequence-of-size-k-with-the-largest-even-sum.cpp) [Python](./Python/subsequence-of-size-k-with-the-largest-even-sum.py) | _O(n)_ on average | _O(1)_ | Medium | 🔒 | Quick Select
+2099 | [Find Subsequence of Length K With the Largest Sum](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/) | [C++](./C++/find-subsequence-of-length-k-with-the-largest-sum.cpp) [Python](./Python/find-subsequence-of-length-k-with-the-largest-sum.py) | _O(n)_ on average | _O(n)_ | Easy | | Quick Select
+2100 | [Find Good Days to Rob the Bank](https://leetcode.com/problems/find-good-days-to-rob-the-bank/) | [C++](./C++/find-good-days-to-rob-the-bank.cpp) [Python](./Python/find-good-days-to-rob-the-bank.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -1208,6 +1211,7 @@
 1610 | [Maximum Number of Visible Points](https://leetcode.com/problems/maximum-number-of-visible-points/)  | [C++](./C++/maximum-number-of-visible-points.cpp) [Python](./Python/maximum-number-of-visible-points.py) | _O(nlogn)_| _O(n)_| Hard           || Two Pointers, Sliding Window |
 1924 | [Erect the Fence II](https://leetcode.com/problems/erect-the-fence-ii/)  | [C++](./C++/erect-the-fence-ii.cpp) [Python](./Python/erect-the-fence-ii.py) | _O(n)_ on average | _O(n)_| Hard           | 🔒 | `Welzl's Algorithm` | 
 1956 | [Minimum Time For K Virus Variants to Spread](https://leetcode.com/problems/minimum-time-for-k-virus-variants-to-spread/) | [C++](./C++/minimum-time-for-k-virus-variants-to-spread.cpp) [Python](./Python/minimum-time-for-k-virus-variants-to-spread.py) | _O(nlogn * logr)_ | _O(n)_ | Hard | 🔒 | Geometry, Binary Search, Line Sweep, Segment Tree, Coordinate Compression
+2101 | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs/) | [C++](./C++/detonate-the-maximum-bombs.cpp) [Python](./Python/detonate-the-maximum-bombs.py) | _O(\|V\|^2 + \V\| * \|E\|)_ | _O(\V\| + \|E\|)_ | Medium | | Graph
 
 <br/>
 <div align="right">
@@ -1270,6 +1274,7 @@
 2043 | [Simple Bank System](https://leetcode.com/problems/simple-bank-system/) | [C++](./C++/simple-bank-system.cpp) [Python](./Python/simple-bank-system.py) | ctor: _O(1)_<br>transer: _O(1)_<br>deposit: _O(1)_<br>withdraw: _O(1)_ | _O(1)_ | Medium | |
 2069 | [Walking Robot Simulation II](https://leetcode.com/problems/walking-robot-simulation-ii/) | [C++](./C++/walking-robot-simulation-ii.cpp) [Python](./Python/walking-robot-simulation-ii.py) | _O(1)_ | _O(1)_ | Medium | | Simulation, Math
 2080 | [Range Frequency Queries](https://leetcode.com/problems/range-frequency-queries/) | [C++](./C++/range-frequency-queries.cpp) [Python](./Python/range-frequency-queries.py) | ctor: _O(n)_<br>query: _O(logn)_ | _O(n)_ | Medium | | Binary Search
+2102 | [Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/) | [C++](./C++/sequentially-ordinal-rank-tracker.cpp) [Python](./Python/sequentially-ordinal-rank-tracker.py) | add: _O(logn)_<br>get: _O(logn)_ | _O(n)_ | Hard | |
 
 <br/>
 <div align="right">
