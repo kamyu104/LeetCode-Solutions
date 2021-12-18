@@ -1279,7 +1279,7 @@
 2043 | [Simple Bank System](https://leetcode.com/problems/simple-bank-system/) | [C++](./C++/simple-bank-system.cpp) [Python](./Python/simple-bank-system.py) | ctor: _O(1)_<br>transer: _O(1)_<br>deposit: _O(1)_<br>withdraw: _O(1)_ | _O(1)_ | Medium | |
 2069 | [Walking Robot Simulation II](https://leetcode.com/problems/walking-robot-simulation-ii/) | [C++](./C++/walking-robot-simulation-ii.cpp) [Python](./Python/walking-robot-simulation-ii.py) | _O(1)_ | _O(1)_ | Medium | | Simulation, Math
 2080 | [Range Frequency Queries](https://leetcode.com/problems/range-frequency-queries/) | [C++](./C++/range-frequency-queries.cpp) [Python](./Python/range-frequency-queries.py) | ctor: _O(n)_<br>query: _O(logn)_ | _O(n)_ | Medium | | Binary Search
-2102 | [Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/) | [C++](./C++/sequentially-ordinal-rank-tracker.cpp) [Python](./Python/sequentially-ordinal-rank-tracker.py) | add: _O(logn)_<br>get: _O(logn)_ | _O(n)_ | Hard | |
+2102 | [Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/) | [C++](./C++/sequentially-ordinal-rank-tracker.cpp) [Python](./Python/sequentially-ordinal-rank-tracker.py) | add: _O(logn)_<br>get: _O(logn)_ | _O(n)_ | Hard | | Sorted List
 
 <br/>
 <div align="right">
