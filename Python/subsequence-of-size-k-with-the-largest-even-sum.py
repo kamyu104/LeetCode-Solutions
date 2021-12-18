@@ -37,7 +37,7 @@ class Solution(object):
                 else:  # pivot_right < n.
                     left = pivot_right+1
 
-        nth_element(nums, k, compare=lambda a, b: a > b)
+        nth_element(nums, k-1, compare=lambda a, b: a > b)
         total = sum(nums[i] for i in xrange(k))
         if total%2 == 0:
             return total
