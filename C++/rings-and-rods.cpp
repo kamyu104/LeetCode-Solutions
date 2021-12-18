@@ -10,6 +10,6 @@ public:
         for (int i = 0; i < size(rings); i += 2) {
             rods[rings[i + 1] - '0'] |= bits.at(rings[i]);
         }
-        return count_if(begin(rods), end(rods), [](const auto& x) { return x.second == 0b111; });
+        return count_if(cbegin(rods), cend(rods), [](const auto& x) { return x.second == 0b111; });
     }
 };
