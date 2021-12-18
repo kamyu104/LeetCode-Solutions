@@ -4,6 +4,7 @@
 import random
 
 
+# quick select solution
 class Solution(object):
     def largestEvenSum(self, nums, k):
         """
