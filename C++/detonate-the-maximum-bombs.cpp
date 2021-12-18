@@ -1,4 +1,4 @@
-// Time:  O(|V|^2 | + |V| * |E|)
+// Time:  O(|V|^2 + |V| * |E|)
 // Space: O(|V| + |E|)
 
 // bfs solution
