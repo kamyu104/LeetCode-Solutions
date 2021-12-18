@@ -240,6 +240,7 @@
 2098 | [Subsequence of Size K With the Largest Even Sum](https://leetcode.com/problems/subsequence-of-size-k-with-the-largest-even-sum/) | [C++](./C++/subsequence-of-size-k-with-the-largest-even-sum.cpp) [Python](./Python/subsequence-of-size-k-with-the-largest-even-sum.py) | _O(n)_ on average | _O(1)_ | Medium | 🔒 | Quick Select
 2099 | [Find Subsequence of Length K With the Largest Sum](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/) | [C++](./C++/find-subsequence-of-length-k-with-the-largest-sum.cpp) [Python](./Python/find-subsequence-of-length-k-with-the-largest-sum.py) | _O(n)_ on average | _O(n)_ | Easy | | Quick Select
 2100 | [Find Good Days to Rob the Bank](https://leetcode.com/problems/find-good-days-to-rob-the-bank/) | [C++](./C++/find-good-days-to-rob-the-bank.cpp) [Python](./Python/find-good-days-to-rob-the-bank.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
+2106 | [Maximum Fruits Harvested After at Most K Steps](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/) | [C++](./C++/maximum-fruits-harvested-after-at-most-k-steps.cpp) [Python](./Python/maximum-fruits-harvested-after-at-most-k-steps.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -336,6 +337,7 @@
 2047 | [Number of Valid Words in a Sentence](https://leetcode.com/problems/number-of-valid-words-in-a-sentence/) | [C++](./C++/number-of-valid-words-in-a-sentence.cpp) [Python](./Python/number-of-valid-words-in-a-sentence.py) | _O(n)_ | _O(1)_ | Easy |||
 2048 | [Next Greater Numerically Balanced Number](https://leetcode.com/problems/next-greater-numerically-balanced-number/) | [C++](./C++/next-greater-numerically-balanced-number.cpp) [Python](./Python/next-greater-numerically-balanced-number.py) | _O(1)_ | _O(1)_ | Medium || Permutations, Precompute, Binary Search |
 2081 | [Sum of k-Mirror Numbers](https://leetcode.com/problems/sum-of-k-mirror-numbers/) | [C++](./C++/sum-of-k-mirror-numbers.cpp) [Python](./Python/sum-of-k-mirror-numbers.py) | _O(10^6)_ | _O(1)_ | Hard || String, Palindrome, Brute Force |
+2103 | [Rings and Rods](https://leetcode.com/problems/rings-and-rods/) | [C++](./C++/rings-and-rods.cpp) [Python](./Python/rings-and-rods.py) | _O(n)_ | _O(1)_ | Easy || |
 
 <br/>
 <div align="right">
@@ -384,6 +386,7 @@
 1856 | [Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/) | [C++](./C++/maximum-subarray-min-product.cpp) [Python](./Python/maximum-subarray-min-product.py) | _O(n)_ | _O(n)_ | Medium | variant of [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Mono Stack, Prefix Sum
 1944 | [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/) | [C++](./C++/number-of-visible-people-in-a-queue.cpp) [Python](./Python/number-of-visible-people-in-a-queue.py) | _O(n)_  | _O(n)_         | Hard           | variant of [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view/) | Mono Stack
 1950 | [Maximum of Minimum Values in All Subarrays](https://leetcode.com/problems/maximum-of-minimum-values-in-all-subarrays/) | [C++](./C++/maximum-of-minimum-values-in-all-subarrays.cpp) [Python](./Python/maximum-of-minimum-values-in-all-subarrays.py) | _O(n)_  | _O(n)_         | Medium           | 🔒 | Mono Stack
+2104 | [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges/) | [C++](./C++/sum-of-subarray-ranges.cpp) [Python](./Python/sum-of-subarray-ranges.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack, Prefix Sum
 
 <br/>
 <div align="right">
@@ -723,6 +726,8 @@
 2062 | [Count Vowel Substrings of a String](https://leetcode.com/problems/count-vowel-substrings-of-a-string/) | [C++](./C++/count-vowel-substrings-of-a-string.cpp) [Python](./Python/count-vowel-substrings-of-a-string.py) | _O(n)_ | _O(1)_ | Easy | variant of [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) | Sliding Window
 2067 | [Number of Equal Count Substrings](https://leetcode.com/problems/number-of-equal-count-substrings/) | [C++](./C++/number-of-equal-count-substrings.cpp) [Python](./Python/number-of-equal-count-substrings.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Sliding Window
 2090 | [K Radius Subarray Averages](https://leetcode.com/problems/k-radius-subarray-averages/) | [C++](./C++/k-radius-subarray-averages.cpp) [Python](./Python/k-radius-subarray-averages.py) | _O(n)_ | _O(1)_ | Medium || Sliding Window
+2105 | [Watering Plants II](https://leetcode.com/problems/watering-plants-ii/) | [C++](./C++/watering-plants-ii.cpp) [Python](./Python/watering-plants-ii.py) | _O(n)_ | _O(1)_ | Medium || Simulation
+2107 | [Number of Unique Flavors After Sharing K Candies](https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/) | [C++](./C++/number-of-unique-flavors-after-sharing-k-candies.cpp) [Python](./Python/number-of-unique-flavors-after-sharing-k-candies.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Sliding Window
 
 <br/>
 <div align="right">
