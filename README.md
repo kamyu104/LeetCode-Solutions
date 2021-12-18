@@ -1216,7 +1216,7 @@
 1610 | [Maximum Number of Visible Points](https://leetcode.com/problems/maximum-number-of-visible-points/)  | [C++](./C++/maximum-number-of-visible-points.cpp) [Python](./Python/maximum-number-of-visible-points.py) | _O(nlogn)_| _O(n)_| Hard           || Two Pointers, Sliding Window |
 1924 | [Erect the Fence II](https://leetcode.com/problems/erect-the-fence-ii/)  | [C++](./C++/erect-the-fence-ii.cpp) [Python](./Python/erect-the-fence-ii.py) | _O(n)_ on average | _O(n)_| Hard           | 🔒 | `Welzl's Algorithm` | 
 1956 | [Minimum Time For K Virus Variants to Spread](https://leetcode.com/problems/minimum-time-for-k-virus-variants-to-spread/) | [C++](./C++/minimum-time-for-k-virus-variants-to-spread.cpp) [Python](./Python/minimum-time-for-k-virus-variants-to-spread.py) | _O(nlogn * logr)_ | _O(n)_ | Hard | 🔒 | Geometry, Binary Search, Line Sweep, Segment Tree, Coordinate Compression
-2101 | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs/) | [C++](./C++/detonate-the-maximum-bombs.cpp) [Python](./Python/detonate-the-maximum-bombs.py) | _O(\|V\|^2 + \V\| * \|E\|)_ | _O(\V\| + \|E\|)_ | Medium | | Graph
+2101 | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs/) | [C++](./C++/detonate-the-maximum-bombs.cpp) [Python](./Python/detonate-the-maximum-bombs.py) | _O(\|V\|^2 + \V\| * \|E\|)_ | _O(\V\| + \|E\|)_ | Medium | | Graph, DFS, BFS
 
 <br/>
 <div align="right">
