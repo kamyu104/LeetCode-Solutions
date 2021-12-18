@@ -4,6 +4,7 @@
 import random
 
 
+# quick select solution
 class Solution(object):
     def maxSubsequence(self, nums, k):
         """
