@@ -11,7 +11,7 @@ class Solution(object):
         adj = [[] for _ in xrange(len(bombs))]
         for i, (xi, yi, ri) in enumerate(bombs):
             for j, (xj, yj, _) in enumerate(bombs):
-                if i == j:
+                if j == i:
                     continue
                 if (xi-xj)**2+(yi-yj)**2 <= ri**2:
                     adj[i].append(j)
@@ -46,7 +46,7 @@ class Solution2(object):
         adj = [[] for _ in xrange(len(bombs))]
         for i, (xi, yi, ri) in enumerate(bombs):
             for j, (xj, yj, _) in enumerate(bombs):
-                if i == j:
+                if j == i:
                     continue
                 if (xi-xj)**2+(yi-yj)**2 <= ri**2:
                     adj[i].append(j)
