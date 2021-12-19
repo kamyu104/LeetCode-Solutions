@@ -339,7 +339,7 @@
 2081 | [Sum of k-Mirror Numbers](https://leetcode.com/problems/sum-of-k-mirror-numbers/) | [C++](./C++/sum-of-k-mirror-numbers.cpp) [Python](./Python/sum-of-k-mirror-numbers.py) | _O(10^6)_ | _O(1)_ | Hard || String, Palindrome, Brute Force |
 2103 | [Rings and Rods](https://leetcode.com/problems/rings-and-rods/) | [C++](./C++/rings-and-rods.cpp) [Python](./Python/rings-and-rods.py) | _O(n)_ | _O(1)_ | Easy || |
 2108 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/) | [C++](./C++/find-first-palindromic-string-in-the-array.cpp) [Python](./Python/find-first-palindromic-string-in-the-array.py) | _O(n)_ | _O(1)_ | Easy || |
-2109 | [Adding Spaces to a String](https://leetcode.com/problems/adding-spaces-to-a-string/) | [C++](./C++/adding-spaces-to-a-string.cpp) [Python](./Python/adding-spaces-to-a-string.py) | _O(n)_ | _O(1)_ | Easy || Inplace |
+2109 | [Adding Spaces to a String](https://leetcode.com/problems/adding-spaces-to-a-string/) | [C++](./C++/adding-spaces-to-a-string.cpp) [Python](./Python/adding-spaces-to-a-string.py) | _O(n)_ | _O(1)_ | Medium || Inplace |
 
 
 <br/>
