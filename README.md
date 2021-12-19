@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2107%20%2F%202107-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2111%20%2F%202111-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -338,6 +338,9 @@
 2048 | [Next Greater Numerically Balanced Number](https://leetcode.com/problems/next-greater-numerically-balanced-number/) | [C++](./C++/next-greater-numerically-balanced-number.cpp) [Python](./Python/next-greater-numerically-balanced-number.py) | _O(1)_ | _O(1)_ | Medium || Permutations, Precompute, Binary Search |
 2081 | [Sum of k-Mirror Numbers](https://leetcode.com/problems/sum-of-k-mirror-numbers/) | [C++](./C++/sum-of-k-mirror-numbers.cpp) [Python](./Python/sum-of-k-mirror-numbers.py) | _O(10^6)_ | _O(1)_ | Hard || String, Palindrome, Brute Force |
 2103 | [Rings and Rods](https://leetcode.com/problems/rings-and-rods/) | [C++](./C++/rings-and-rods.cpp) [Python](./Python/rings-and-rods.py) | _O(n)_ | _O(1)_ | Easy || |
+2108 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/) | [C++](./C++/find-first-palindromic-string-in-the-array.cpp) [Python](./Python/find-first-palindromic-string-in-the-array.py) | _O(n)_ | _O(1)_ | Easy || |
+2109 | [Adding Spaces to a String](https://leetcode.com/problems/adding-spaces-to-a-string/) | [C++](./C++/adding-spaces-to-a-string.cpp) [Python](./Python/adding-spaces-to-a-string.py) | _O(n)_ | _O(1)_ | Easy || Inplace |
+
 
 <br/>
 <div align="right">
@@ -624,6 +627,7 @@
 2073 | [Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets/)|[C++](./C++/time-needed-to-buy-tickets.cpp) [Python](./Python/time-needed-to-buy-tickets.py)| _O(n)_     | _O(1)_         | Easy         | | Simulation, Math
 2083 | [Substrings That Begin and End With the Same Letter](https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/)|[C++](./C++/substrings-that-begin-and-end-with-the-same-letter.cpp) [Python](./Python/substrings-that-begin-and-end-with-the-same-letter.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 | Combinatorics
 2091 | [Removing Minimum and Maximum From Array](https://leetcode.com/problems/removing-minimum-and-maximum-from-array/)|[C++](./C++/removing-minimum-and-maximum-from-array.cpp) [Python](./Python/removing-minimum-and-maximum-from-array.py)| _O(n)_     | _O(1)_         | Medium         | | Math
+2110 | [Number of Smooth Descent Periods of a Stock](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/)|[C++](./C++/number-of-smooth-descent-periods-of-a-stock.cpp) [Python](./Python/number-of-smooth-descent-periods-of-a-stock.py)| _O(n)_     | _O(1)_         | Medium         | | Math, Combinatorics
 
 <br/>
 <div align="right">
@@ -783,6 +787,8 @@
 1918 | [Kth Smallest Subarray Sum](https://leetcode.com/problems/kth-smallest-subarray-sum/) | [C++](./C++/kth-smallest-subarray-sum.cpp) [Python](./Python/kth-smallest-subarray-sum.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 |
 1964 | [Find the Longest Valid Obstacle Course at Each Position](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/) | [C++](./C++/find-the-longest-valid-obstacle-course-at-each-position.cpp)  [Python](./Python/find-the-longest-valid-obstacle-course-at-each-position.py)  | _O(nlogn)_ | _O(n)_ | Hard         | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Binary Search, Segment Tree, DP|
 2064 | [Minimized Maximum of Products Distributed to Any Store](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/) | [C++](./C++/minimized-maximum-of-products-distributed-to-any-store.cpp) [Python](./Python/minimized-maximum-of-products-distributed-to-any-store.py) | _O(nlogm)_ | _O(1)_ | Medium | variant of [Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/) |
+2111 | [Minimum Operations to Make the Array K-Increasing](https://leetcode.com/problems/minimum-operations-to-make-the-array-k-increasing/) | [C++](./C++/minimum-operations-to-make-the-array-k-increasing.cpp) [Python](./Python/minimum-operations-to-make-the-array-k-increasing.py) | _O(nlog(n/k))_ | _O(n/k)_ | Hard | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) |
+
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
