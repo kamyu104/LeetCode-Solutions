@@ -6,7 +6,7 @@ public:
     long long interchangeableRectangles(vector<vector<int>>& rectangles) {
         unordered_map<int, unordered_map<int, int>> lookup;
         for (const auto& rect : rectangles) {
-            const int g = gcd(rect[0], rect[1]);  // Time: O((logx)^2) ~= O(1)
+            const int g = gcd(rect[0], rect[1]);  // Time: O(logx) ~= O(1)
             ++lookup[rect[0] / g][rect[1] / g];
         }
         int64_t result = 0;
