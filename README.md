@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2111%20%2F%202111-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2112%20%2F%202112-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1457,6 +1457,7 @@
 2072 | [The Winner University](https://leetcode.com/problems/the-winner-university/) | [MySQL](./MySQL/the-winner-university.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 2082 | [The Number of Rich Customers](https://leetcode.com/problems/the-number-of-rich-customers/) | [MySQL](./MySQL/the-number-of-rich-customers.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 2084 | [Drop Type 1 Orders for Customers With Type 0 Orders](https://leetcode.com/problems/drop-type-1-orders-for-customers-with-type-0-orders/) | [MySQL](./MySQL/drop-type-1-orders-for-customers-with-type-0-orders.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2112 | [The Airport With the Most Traffic](https://leetcode.com/problems/the-airport-with-the-most-traffic/) | [MySQL](./MySQL/the-airport-with-the-most-traffic.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
