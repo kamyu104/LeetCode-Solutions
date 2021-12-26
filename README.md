@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2112%20%2F%202112-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2122%20%2F%202122-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -241,6 +241,9 @@
 2099 | [Find Subsequence of Length K With the Largest Sum](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/) | [C++](./C++/find-subsequence-of-length-k-with-the-largest-sum.cpp) [Python](./Python/find-subsequence-of-length-k-with-the-largest-sum.py) | _O(n)_ on average | _O(n)_ | Easy | | Quick Select
 2100 | [Find Good Days to Rob the Bank](https://leetcode.com/problems/find-good-days-to-rob-the-bank/) | [C++](./C++/find-good-days-to-rob-the-bank.cpp) [Python](./Python/find-good-days-to-rob-the-bank.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
 2106 | [Maximum Fruits Harvested After at Most K Steps](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/) | [C++](./C++/maximum-fruits-harvested-after-at-most-k-steps.cpp) [Python](./Python/maximum-fruits-harvested-after-at-most-k-steps.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum
+2113 | [Elements in Array After Removing and Replacing Elements](https://leetcode.com/problems/elements-in-array-after-removing-and-replacing-elements/) | [C++](./C++/elements-in-array-after-removing-and-replacing-elements.cpp) [Python](./Pythonelements-in-array-after-removing-and-replacing-elements.py) | _O(n)_ | _O(1)_ | Medium | 🔒 |
+2121 | [Intervals Between Identical Elements](https://leetcode.com/problems/intervals-between-identical-elements/) | [C++](./C++/intervals-between-identical-elements.cpp) [Python](./Python/intervals-between-identical-elements.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
+2122 | [Recover the Original Array](https://leetcode.com/problems/recover-the-original-array/) | [C++](./C++/recover-the-original-array.cpp) [Python](./Python/recover-the-original-array.py) | _O(n^2)_ | _O(n)_ | Hard | |
 
 <br/>
 <div align="right">
@@ -340,6 +343,8 @@
 2103 | [Rings and Rods](https://leetcode.com/problems/rings-and-rods/) | [C++](./C++/rings-and-rods.cpp) [Python](./Python/rings-and-rods.py) | _O(n)_ | _O(1)_ | Easy || |
 2108 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/) | [C++](./C++/find-first-palindromic-string-in-the-array.cpp) [Python](./Python/find-first-palindromic-string-in-the-array.py) | _O(n)_ | _O(1)_ | Easy || |
 2109 | [Adding Spaces to a String](https://leetcode.com/problems/adding-spaces-to-a-string/) | [C++](./C++/adding-spaces-to-a-string.cpp) [Python](./Python/adding-spaces-to-a-string.py) | _O(n)_ | _O(1)_ | Medium || Inplace |
+2114 | [Maximum Number of Words Found in Sentences](https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/) | [C++](./C++/maximum-number-of-words-found-in-sentences.cpp) [Python](./Python/maximum-number-of-words-found-in-sentences.py) | _O(n)_ | _O(1)_ | Easy |||
+2116 | [Check if a Parentheses String Can Be Valid](https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/) | [C++](./C++/check-if-a-parentheses-string-can-be-valid.cpp) [Python](./Python/check-if-a-parentheses-string-can-be-valid.py) | _O(n)_ | _O(1)_ | Medium |||
 
 
 <br/>
@@ -519,6 +524,7 @@
 2053 | [Kth Distinct String in an Array](https://leetcode.com/problems/kth-distinct-string-in-an-array/) | [C++](./C++/kth-distinct-string-in-an-array.cpp) [Python](./Python/kth-distinct-string-in-an-array.py) | _O(n)_ | _O(n)_ | Easy || 
 2068 | [Check Whether Two Strings are Almost Equivalent](https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/) | [C++](./C++/check-whether-two-strings-are-almost-equivalent.cpp) [Python](./Python/check-whether-two-strings-are-almost-equivalent.py) | _O(n)_ | _O(1)_ | Easy || 
 2085 | [Count Common Words With One Occurrence](https://leetcode.com/problems/count-common-words-with-one-occurrence/) | [C++](./C++/count-common-words-with-one-occurrence.cpp) [Python](./Python/count-common-words-with-one-occurrence.py) | _O(m + n)_ | _O(m + n)_ | Easy || 
+2120 | [Execution of All Suffix Instructions Staying in a Grid](https://leetcode.com/problems/execution-of-all-suffix-instructions-staying-in-a-grid/) | [C++](./C++/execution-of-all-suffix-instructions-staying-in-a-grid.cpp) [Python](./Python/execution-of-all-suffix-instructions-staying-in-a-grid.py) | _O(m)_ | _O(m)_ | Medium || 
 
 <br/>
 <div align="right">
@@ -628,6 +634,8 @@
 2083 | [Substrings That Begin and End With the Same Letter](https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/)|[C++](./C++/substrings-that-begin-and-end-with-the-same-letter.cpp) [Python](./Python/substrings-that-begin-and-end-with-the-same-letter.py)| _O(n)_     | _O(1)_         | Medium         | 🔒 | Combinatorics
 2091 | [Removing Minimum and Maximum From Array](https://leetcode.com/problems/removing-minimum-and-maximum-from-array/)|[C++](./C++/removing-minimum-and-maximum-from-array.cpp) [Python](./Python/removing-minimum-and-maximum-from-array.py)| _O(n)_     | _O(1)_         | Medium         | | Math
 2110 | [Number of Smooth Descent Periods of a Stock](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/)|[C++](./C++/number-of-smooth-descent-periods-of-a-stock.cpp) [Python](./Python/number-of-smooth-descent-periods-of-a-stock.py)| _O(n)_     | _O(1)_         | Medium         | | Math, Combinatorics
+2117 | [Abbreviating the Product of a Range](https://leetcode.com/problems/abbreviating-the-product-of-a-range/)|[C++](./C++/abbreviating-the-product-of-a-range.cpp) [Python](./Python/abbreviating-the-product-of-a-range.py)| _O(r - l)_     | _O(1)_         | Hard         | | Math
+2119 | [A Number After a Double Reversal](https://leetcode.com/problems/a-number-after-a-double-reversal/)|[C++](./C++/a-number-after-a-double-reversal.cpp) [Python](./Python/a-number-after-a-double-reversal.py)| _O(1)_     | _O(1)_         | Easy         | | Math
 
 <br/>
 <div align="right">
@@ -849,6 +857,7 @@
 2045 | [Second Minimum Time to Reach Destination](https://leetcode.com/problems/second-minimum-time-to-reach-destination/)| [C++](./C++/second-minimum-time-to-reach-destination.cpp) [Python](./Python/second-minimum-time-to-reach-destination.py)| _O(\|E\|)_ | _O(\|E\|)_ | Hard | | Bi-BFS |
 2050 | [Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/)| [C++](./C++/parallel-courses-iii.cpp) [Python](./Python/parallel-courses-iii.py)   | _O(\|V\| + \|E\|)_         | _O(\|E\|)_          | Hard         | variant of [Parallel Courses](https://leetcode.com/problems/parallel-courses/) | Topological Sort |
 2059 | [Minimum Operations to Convert Number](https://leetcode.com/problems/minimum-operations-to-convert-number/)| [C++](./C++/minimum-operations-to-convert-number.cpp) [Python](./Python/minimum-operations-to-convert-number.py)| _O(m * n)_ | _O(m)_ | Medium | | |
+2115 | [Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/)| [C++](./C++/find-all-possible-recipes-from-given-supplies.cpp) [Python](./Python/find-all-possible-recipes-from-given-supplies.py)   | _O(\|E\|)_         | _O(\|E\|)_          | Medium         |�| Topological Sort |
 
 <br/>
 <div align="right">
@@ -1458,6 +1467,7 @@
 2082 | [The Number of Rich Customers](https://leetcode.com/problems/the-number-of-rich-customers/) | [MySQL](./MySQL/the-number-of-rich-customers.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 2084 | [Drop Type 1 Orders for Customers With Type 0 Orders](https://leetcode.com/problems/drop-type-1-orders-for-customers-with-type-0-orders/) | [MySQL](./MySQL/drop-type-1-orders-for-customers-with-type-0-orders.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2112 | [The Airport With the Most Traffic](https://leetcode.com/problems/the-airport-with-the-most-traffic/) | [MySQL](./MySQL/the-airport-with-the-most-traffic.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
+2118 | [Build the Equation](https://leetcode.com/problems/build-the-equation/) | [MySQL](./MySQL/build-the-equation.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
