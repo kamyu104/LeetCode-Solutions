@@ -11,6 +11,7 @@ class Solution(object):
         :rtype: List[int]
         """
         def check(k, cnt, result):
+            cnt = collections.Counter(cnt)
             for x in nums:
                 if cnt[x] == 0:
                     continue
@@ -29,6 +30,6 @@ class Solution(object):
                 continue
             k //= 2
             result = []
-            if  check(k, cnt.copy(), result):
+            if  check(k, cnt, result):
                 return result
         return []
