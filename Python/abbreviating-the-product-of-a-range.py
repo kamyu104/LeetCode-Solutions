@@ -24,8 +24,8 @@ class Solution(object):
             if q:
                 abbr = True
         if not abbr:
-            return '%se%s' % (curr, zeros)
+            return "%se%s" % (curr, zeros)
         decimal = reduce(lambda x, y: (x+y)%1, (math.log10(i) for i in xrange(left, right+1)))
         prefix = str(int(10**(decimal+(PREFIX_LEN-1))))
         suffix = str(curr % 10**SUFFIX_LEN).zfill(SUFFIX_LEN)
-        return '%s...%se%s' % (prefix, suffix, zeros)
+        return "%s...%se%s" % (prefix, suffix, zeros)
