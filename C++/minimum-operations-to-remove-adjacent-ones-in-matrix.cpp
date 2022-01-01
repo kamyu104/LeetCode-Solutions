@@ -99,7 +99,6 @@ private:
                     const int x = get_id(i, j);
                     const int y = get_id(ni, nj);
                     adj->resize(size((*ids)[0]));
-                    assert(x < size(*adj));
                     (*adj)[x].emplace_back(y);
                 }
                 if ((*lookup)[ni][nj]) {
