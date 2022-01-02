@@ -76,8 +76,8 @@ private:
         if ((*lookup)[i][j]) {
             return;
         }
-        auto get_id = [&grid, &ids](int i, int j) {
-            const int x = size(grid[0]) * i + j, color = (i + j) % 2;
+        auto get_id = [&grid, &ids](int i, int j, int color) {
+            const int x = size(grid[0]) * i + j;
             if (!(*ids)[color].count(x)) {
                 (*ids)[color][x] = size((*ids)[color]);
             }
@@ -96,8 +96,8 @@ private:
                     continue;
                 }
                 if (!color) {
-                    const int x = get_id(i, j);
-                    const int y = get_id(ni, nj);
+                    const int x = get_id(i, j, color);
+                    const int y = get_id(ni, nj, color ^ 1);
                     adj->resize(size((*ids)[0]));
                     (*adj)[x].emplace_back(y);
                 }
