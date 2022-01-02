@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2122%20%2F%202122-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2127%20%2F%202127-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -345,6 +345,7 @@
 2109 | [Adding Spaces to a String](https://leetcode.com/problems/adding-spaces-to-a-string/) | [C++](./C++/adding-spaces-to-a-string.cpp) [Python](./Python/adding-spaces-to-a-string.py) | _O(n)_ | _O(1)_ | Medium || Inplace |
 2114 | [Maximum Number of Words Found in Sentences](https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/) | [C++](./C++/maximum-number-of-words-found-in-sentences.cpp) [Python](./Python/maximum-number-of-words-found-in-sentences.py) | _O(n)_ | _O(1)_ | Easy |||
 2116 | [Check if a Parentheses String Can Be Valid](https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/) | [C++](./C++/check-if-a-parentheses-string-can-be-valid.cpp) [Python](./Python/check-if-a-parentheses-string-can-be-valid.py) | _O(n)_ | _O(1)_ | Medium |||
+2124 | [Check if All A's Appears Before All B's](https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/) | [C++](./C++/check-if-all-as-appears-before-all-bs.cpp) [Python](./Python/check-if-all-as-appears-before-all-bs.py) | _O(n)_ | _O(1)_ | Easy |||
 
 
 <br/>
@@ -636,6 +637,7 @@
 2110 | [Number of Smooth Descent Periods of a Stock](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/)|[C++](./C++/number-of-smooth-descent-periods-of-a-stock.cpp) [Python](./Python/number-of-smooth-descent-periods-of-a-stock.py)| _O(n)_     | _O(1)_         | Medium         | | Math, Combinatorics
 2117 | [Abbreviating the Product of a Range](https://leetcode.com/problems/abbreviating-the-product-of-a-range/)|[C++](./C++/abbreviating-the-product-of-a-range.cpp) [Python](./Python/abbreviating-the-product-of-a-range.py)| _O(r - l)_     | _O(1)_         | Hard         | | Math
 2119 | [A Number After a Double Reversal](https://leetcode.com/problems/a-number-after-a-double-reversal/)|[C++](./C++/a-number-after-a-double-reversal.cpp) [Python](./Python/a-number-after-a-double-reversal.py)| _O(1)_     | _O(1)_         | Easy         | | Math
+2125 | [Number of Laser Beams in a Bank](https://leetcode.com/problems/number-of-laser-beams-in-a-bank/)|[C++](./C++/number-of-laser-beams-in-a-bank.cpp) [Python](./Python/number-of-laser-beams-in-a-bank.py)| _O(m * n)_     | _O(1)_         | Medium         | | Math
 
 <br/>
 <div align="right">
@@ -968,7 +970,6 @@
 1320 | [Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/) | [C++](./C++/minimum-distance-to-type-a-word-using-two-fingers.cpp) [Python](./Python/minimum-distance-to-type-a-word-using-two-fingers.py) | _O(n)_ | _O(1)_ | Hard | | |
 1335 | [Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/) | [C++](./C++/minimum-difficulty-of-a-job-schedule.cpp) [Python](./Python/minimum-difficulty-of-a-job-schedule.py) | _O(d * n^2)_ | _O(d * n)_ | Hard | | |
 1340 | [Jump Game V](https://leetcode.com/problems/jump-game-v/) | [C++](./C++/jump-game-v.cpp) [Python](./Python/jump-game-v.py) | _O(n)_ | _O(n)_ | Hard | | Sliding Window, Mono Stack, Segment Tree |
-1349 | [Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam/) | [C++](./C++/maximum-students-taking-exam.cpp) [Python](./Python/maximum-students-taking-exam.py) | _O(m * n * sqrt(m * n))_ | _O(m + n)_ | Hard | [GCJ2008 - Round 3](https://codingcompetitions.withgoogle.com/codejam/round/00000000004329f5/000000000043314f) | `Hopcroft-Karp Bipartite Matching`, `Hungarian Bipartite Matching` |
 1387 | [Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value/) | [C++](./C++/sort-integers-by-the-power-value.cpp) [Python](./Python/sort-integers-by-the-power-value.py) | _O(n)_ on average| _O(n)_ | Medium | | Quick Select |
 1388 | [Pizza With 3n Slices](https://leetcode.com/problems/pizza-with-3n-slices/)| [C++](./C++/pizza-with-3n-slices.cpp) [Python](./Python/pizza-with-3n-slices.py) | _O(n^2)_          | _O(n)_          | Hard           | variant of [House Robber II](https://leetcode.com/problems/house-robber-ii/) |
 1395 | [Count Number of Teams](https://leetcode.com/problems/count-number-of-teams/)| [C++](./C++/count-number-of-teams.cpp) [Python](./Python/count-number-of-teams.py) | _O(n^2)_          | _O(1)_          | Medium           ||
@@ -1171,6 +1172,7 @@
 2071 | [Maximum Number of Tasks You Can Assign](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/) | [C++](./C++/maximum-number-of-tasks-you-can-assign.cpp) [Python](./Python/maximum-number-of-tasks-you-can-assign.py) | _O(n * (logn)^2)_ | _O(n)_ | Hard | | Greedy, Binary Search, Sorted List |
 2086 | [Minimum Number of Buckets Required to Collect Rainwater from Houses](https://leetcode.com/problems/minimum-number-of-buckets-required-to-collect-rainwater-from-houses/) | [C++](./C++/minimum-number-of-buckets-required-to-collect-rainwater-from-houses.cpp) [Python](./Python/minimum-number-of-buckets-required-to-collect-rainwater-from-houses.py) | _O(n)_ | _O(1)_ | Medium | | Greedy |
 2087 | [Minimum Cost Homecoming of a Robot in a Grid](https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) | [C++](./C++/minimum-cost-homecoming-of-a-robot-in-a-grid.cpp) [Python](./Python/minimum-cost-homecoming-of-a-robot-in-a-grid.py) | _O(m + n)_ | _O(1)_ | Medium | | Greedy |
+2126 | [Destroying Asteroids](https://leetcode.com/problems/destroying-asteroids/) | [C++](./C++/destroying-asteroids.cpp) [Python](./Python/destroying-asteroids.py) | _O(nlogn)_ | _O(1)_ | Medium | | Greedy |
 
 <br/>
 <div align="right">
@@ -1186,6 +1188,7 @@
 1135 | [Connecting Cities With Minimum Cost](https://leetcode.com/problems/connecting-cities-with-minimum-cost/) | [C++](./C++/connecting-cities-with-minimum-cost.cpp) [Python](./Python/connecting-cities-with-minimum-cost.py) | _O(nlogn)_ | _O(n)_ | Medium           |🔒| Union Find, `Kruskal's Algorithm`, MST |
 1168 | [Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) | [C++](./C++/optimize-water-distribution-in-a-village.cpp) [Python](./Python/optimize-water-distribution-in-a-village.py) | _O(nlogn)_ | _O(n)_ | Hard           |🔒| Union Find |
 1334 | [Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | [C++](./C++/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.cpp) [Python](./Python/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.py) | _O(n^3)_ | _O(n^2)_ | Medium           || `Floyd-Warshall Algorithm`|
+1349 | [Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam/) | [C++](./C++/maximum-students-taking-exam.cpp) [Python](./Python/maximum-students-taking-exam.py) | _O(m * n * sqrt(m * n))_ | _O(m + n)_ | Hard | [GCJ2008 - Round 3](https://codingcompetitions.withgoogle.com/codejam/round/00000000004329f5/000000000043314f) | `Hopcroft-Karp Bipartite Matching`, `Hungarian Bipartite Matching`, Maximum Independent Set |
 1361 | [Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes/)  | [C++](./C++/validate-binary-tree-nodes.cpp) [Python](./Python/validate-binary-tree-nodes.py) | _O(n)_| _O(n)_| Medium           || DFS, Tree | 
 1462 | [Course Schedule IV](https://leetcode.com/problems/course-schedule-iv/)  | [C++](./C++/course-schedule-iv.cpp) [Python](./Python/course-schedule-iv.py) | _O(n^3)_| _O(n^2)_| Medium           || `Floyd-Warshall Algorithm` |
 1489 | [Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/)  | [C++](./C++/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree.cpp) [Python](./Python/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree.py) | _O(nlogn)_| _O(n)_| Hard           || `Kruskal Algorithm` |
@@ -1216,6 +1219,8 @@
 2092 | [Find All People With Secret](https://leetcode.com/problems/find-all-people-with-secret/)  | [C++](./C++/find-all-people-with-secret.cpp) [Python](./Python/find-all-people-with-secret.py) | _O(nlogn)_ | _O(nlogn)_ | Hard | | BFS, DFS, Union Find |
 2093 | [Minimum Path Cost in a Hidden Grid](https://leetcode.com/problems/minimum-cost-to-reach-city-with-discounts/)  | [C++](./C++/minimum-cost-to-reach-city-with-discounts.cpp) [Python](./Python/minimum-cost-to-reach-city-with-discounts.py) | _O(\|E\| * log\|V\|)_ | _O(\|V\| + \|E\|)_ | Medium           | variant of [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/), 🔒 | `Dijkstra's Algorithm`, DP | 
 2097 | [Valid Arrangement of Pairs](https://leetcode.com/problems/valid-arrangement-of-pairs/) | [C++](./C++/valid-arrangement-of-pairs.cpp)  [Python](./Python/valid-arrangement-of-pairs.py)  |  _O(\|V\| + \|E\|)_ | _O(\|V\| + \|E\|)_ | Hard | variant of [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) | `Hierholzer's Algorithm` |
+2123 | [Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam/) | [C++](./C++/maximum-students-taking-exam.cpp) [Python](./Python/maximum-students-taking-exam.py) | _O(m * n * sqrt(m * n))_ | _O(m + n)_ | Hard | variant of [Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam/), 🔒 | `Hopcroft-Karp Bipartite Matching`, Maximum Independent Set |
+2127 | [Maximum Employees to Be Invited to a Meeting](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/) | [C++](./C++/maximum-employees-to-be-invited-to-a-meeting.cpp) [Python](./Python/maximum-employees-to-be-invited-to-a-meeting.py) | _O(n)_ | _O(n)_ | Hard |  |  |
 
 <br/>
 <div align="right">
