@@ -29,6 +29,6 @@ class Solution(object):
                 continue
             k //= 2
             result = []
-            if  check(k, collections.Counter(cnt), result):
+            if check(k, collections.Counter(cnt), result):
                 return result
         return []
