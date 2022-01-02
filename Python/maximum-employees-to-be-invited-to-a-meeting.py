@@ -37,10 +37,6 @@ class Solution(object):
         inv_adj = [[] for _ in xrange(len(favorite))]  
         for u, v in enumerate(favorite):
             inv_adj[v].append(u)
-        result = cycle_2s = 0
-        for u, l in find_cycles(favorite):
-            if l > 2:
-                result = max(result, l)
-                continue
-            cycle_2s += bfs(inv_adj, u, favorite[u])+bfs(inv_adj, favorite[u], u)
-        return max(result, cycle_2s)
+        cycles = find_cycles(favorite)
+        return max(max([l for _, l in cycles if l > 2] or [0]),
+                   sum(bfs(inv_adj, u, favorite[u]) + bfs(inv_adj, favorite[u], u) for u, l in cycles if l == 2))
