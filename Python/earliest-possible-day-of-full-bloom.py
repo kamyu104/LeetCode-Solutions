@@ -11,7 +11,7 @@ class Solution(object):
         order = range(len(growTime))
         order.sort(key=lambda x: growTime[x], reverse=True)
         result = curr = 0
-        for i, idx in enumerate(order):
-            curr += plantTime[idx]
-            result = max(result, curr+growTime[idx])
+        for i in order:
+            curr += plantTime[i]
+            result = max(result, curr+growTime[i])
         return result
