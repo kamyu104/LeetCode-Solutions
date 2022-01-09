@@ -9,6 +9,7 @@ class Solution2(object):
         """
         return all(len(set(row)) == len(matrix) for row in matrix) and all(len(set(matrix[i][j] for i in xrange(len(matrix)))) == len(matrix) for j in xrange(len(matrix[0])))
 
+
 # Time:  O(n^2)
 # Space: O(1)
 # [[1,3,3,4,4],[4,1,3,3,4],[4,4,1,3,3],[3,4,4,1,3],[3,3,4,4,1]]
