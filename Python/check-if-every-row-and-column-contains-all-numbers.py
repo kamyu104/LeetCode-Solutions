@@ -1,7 +1,17 @@
 # Time:  O(m * n)
-# Space: O(1)
+# Space: O(n)
 
 class Solution(object):
+    def checkValid(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: bool
+        """
+        return all(len(set(row)) == len(matrix) for row in matrix) and all(len(set(matrix[i][j] for i in xrange(len(matrix)))) == len(matrix) for j in xrange(len(matrix[0])))
+
+
+# [[1,1,1,4],[1,1,4,1],[1,4,1,1],[4,1,1,1]]
+class Solution_Wrong(object):
     def checkValid(self, matrix):
         """
         :type matrix: List[List[int]]
