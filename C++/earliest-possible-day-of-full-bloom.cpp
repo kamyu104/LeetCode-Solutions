@@ -8,7 +8,7 @@ public:
         iota(begin(order), end(order), 0);
         sort(begin(order), end(order),
              [&growTime](const auto& a, const auto& b) {
-                return growTime[a] > growTime[b]; 
+                 return growTime[a] > growTime[b]; 
              });
         int result = 0, curr = 0;
         for (const auto& i : order) {
