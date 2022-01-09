@@ -1,4 +1,4 @@
-// Time:  O(m * n)
+// Time:  O(n^2)
 // Space: O(1)
 
 class Solution{
@@ -18,7 +18,7 @@ public:
     }
 };
 
-// Time:  O(m * n)
+// Time:  O(n^2)
 // Space: O(n)
 class Solution2 {
 public:
