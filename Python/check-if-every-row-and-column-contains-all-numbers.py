@@ -1,4 +1,4 @@
-# Time:  O(m * n)
+# Time:  O(n^2)
 # Space: O(1)
 
 class Solution(object):
@@ -11,7 +11,7 @@ class Solution(object):
                all(reduce(lambda x, y: x^y, (matrix[i][j]^(i+1) for i in xrange(len(matrix)))) == 0 for j in xrange(len(matrix[0])))
 
 
-# Time:  O(m * n)
+# Time:  O(n^2)
 # Space: O(n)
 class Solution2(object):
     def checkValid(self, matrix):
