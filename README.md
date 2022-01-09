@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2127%20%2F%202127-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2136%20%2F%202136-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -244,6 +244,8 @@
 2113 | [Elements in Array After Removing and Replacing Elements](https://leetcode.com/problems/elements-in-array-after-removing-and-replacing-elements/) | [C++](./C++/elements-in-array-after-removing-and-replacing-elements.cpp) [Python](./Python/elements-in-array-after-removing-and-replacing-elements.py) | _O(n)_ | _O(1)_ | Medium | 🔒 |
 2121 | [Intervals Between Identical Elements](https://leetcode.com/problems/intervals-between-identical-elements/) | [C++](./C++/intervals-between-identical-elements.cpp) [Python](./Python/intervals-between-identical-elements.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
 2122 | [Recover the Original Array](https://leetcode.com/problems/recover-the-original-array/) | [C++](./C++/recover-the-original-array.cpp) [Python](./Python/recover-the-original-array.py) | _O(n^2)_ | _O(n)_ | Hard | |
+2128 | [Remove All Ones With Row and Column Flips](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/) | [C++](./C++/remove-all-ones-with-row-and-column-flips.cpp) [Python](./Python/remove-all-ones-with-row-and-column-flips.py) | _O(m * n)_ | _O(1)_ | Medium | 🔒 |
+2132 | [Stamping the Grid](https://leetcode.com/problems/stamping-the-grid/) | [C++](./C++/stamping-the-grid.cpp) [Python](./Python/stamping-the-grid.py) | _O(m * n)_ | _O(m * n)_ | Hard | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -346,7 +348,9 @@
 2114 | [Maximum Number of Words Found in Sentences](https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/) | [C++](./C++/maximum-number-of-words-found-in-sentences.cpp) [Python](./Python/maximum-number-of-words-found-in-sentences.py) | _O(n)_ | _O(1)_ | Easy |||
 2116 | [Check if a Parentheses String Can Be Valid](https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/) | [C++](./C++/check-if-a-parentheses-string-can-be-valid.cpp) [Python](./Python/check-if-a-parentheses-string-can-be-valid.py) | _O(n)_ | _O(1)_ | Medium |||
 2124 | [Check if All A's Appears Before All B's](https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/) | [C++](./C++/check-if-all-as-appears-before-all-bs.cpp) [Python](./Python/check-if-all-as-appears-before-all-bs.py) | _O(n)_ | _O(1)_ | Easy |||
-
+2129 | [Capitalize the Title](https://leetcode.com/problems/capitalize-the-title/) | [C++](./C++/capitalize-the-title.cpp) [Python](./Python/capitalize-the-title.py) | _O(n)_ | _O(1)_ | Easy |||
+2131 | [Longest Palindrome by Concatenating Two Letter Words](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/) | [C++](./C++/longest-palindrome-by-concatenating-two-letter-words.cpp) [Python](./Python/longest-palindrome-by-concatenating-two-letter-words.py) | _O(n)_ | _O(n)_ | Medium |||
+2135 | [Count Words Obtained After Adding a Letter](https://leetcode.com/problems/count-words-obtained-after-adding-a-letter/) | [C++](./C++/count-words-obtained-after-adding-a-letter.cpp) [Python](./Python/count-words-obtained-after-adding-a-letter.py) | _O(n)_ | _O(n)_ | Medium || Bitmask |
 
 <br/>
 <div align="right">
@@ -371,6 +375,7 @@
 2058 | [Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/)| [C++](./C++/find-the-minimum-and-maximum-number-of-nodes-between-critical-points.cpp)  [Python](./Python/find-the-minimum-and-maximum-number-of-nodes-between-critical-points.py) | _O(n)_ | _O(1)_         | Medium           ||
 2074 | [Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/) | [C++](./C++/reverse-nodes-in-even-length-groups.cpp) [Python](./Python/reverse-nodes-in-even-length-groups.py) | _O(n)_  | _O(1)_         | Medium           | |
 2095 | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | [C++](./C++/delete-the-middle-node-of-a-linked-list.cpp) [Python](./Python/delete-the-middle-node-of-a-linked-list.py) | _O(n)_  | _O(1)_         | Medium           | | Two Pointers
+2230 | [Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | [C++](./C++/maximum-twin-sum-of-a-linked-list.cpp) [Python](./Python/maximum-twin-sum-of-a-linked-list.py) | _O(n)_  | _O(1)_         | Medium           | | Two Pointers
 
 <br/>
 <div align="right">
@@ -638,6 +643,7 @@
 2117 | [Abbreviating the Product of a Range](https://leetcode.com/problems/abbreviating-the-product-of-a-range/)|[C++](./C++/abbreviating-the-product-of-a-range.cpp) [Python](./Python/abbreviating-the-product-of-a-range.py)| _O(r - l)_     | _O(1)_         | Hard         | | Math
 2119 | [A Number After a Double Reversal](https://leetcode.com/problems/a-number-after-a-double-reversal/)|[C++](./C++/a-number-after-a-double-reversal.cpp) [Python](./Python/a-number-after-a-double-reversal.py)| _O(1)_     | _O(1)_         | Easy         | | Math
 2125 | [Number of Laser Beams in a Bank](https://leetcode.com/problems/number-of-laser-beams-in-a-bank/)|[C++](./C++/number-of-laser-beams-in-a-bank.cpp) [Python](./Python/number-of-laser-beams-in-a-bank.py)| _O(m * n)_     | _O(1)_         | Medium         | | Math
+2133 | [Check if Every Row and Column Contains All Numbers](https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/)|[C++](./C++/check-if-every-row-and-column-contains-all-numbers.cpp) [Python](./Python/check-if-every-row-and-column-contains-all-numbers.py)| _O(m * n)_     | _O(1)_         | Easy         | | Math
 
 <br/>
 <div align="right">
@@ -742,6 +748,8 @@
 2090 | [K Radius Subarray Averages](https://leetcode.com/problems/k-radius-subarray-averages/) | [C++](./C++/k-radius-subarray-averages.cpp) [Python](./Python/k-radius-subarray-averages.py) | _O(n)_ | _O(1)_ | Medium || Sliding Window
 2105 | [Watering Plants II](https://leetcode.com/problems/watering-plants-ii/) | [C++](./C++/watering-plants-ii.cpp) [Python](./Python/watering-plants-ii.py) | _O(n)_ | _O(1)_ | Medium || Simulation
 2107 | [Number of Unique Flavors After Sharing K Candies](https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/) | [C++](./C++/number-of-unique-flavors-after-sharing-k-candies.cpp) [Python](./Python/number-of-unique-flavors-after-sharing-k-candies.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Sliding Window
+2134 | [Minimum Swaps to Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/) | [C++](./C++/minimum-swaps-to-group-all-1s-together-ii.cpp) [Python](./Python/minimum-swaps-to-group-all-1s-together-ii.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window
+
 
 <br/>
 <div align="right">
@@ -1173,6 +1181,7 @@
 2086 | [Minimum Number of Buckets Required to Collect Rainwater from Houses](https://leetcode.com/problems/minimum-number-of-buckets-required-to-collect-rainwater-from-houses/) | [C++](./C++/minimum-number-of-buckets-required-to-collect-rainwater-from-houses.cpp) [Python](./Python/minimum-number-of-buckets-required-to-collect-rainwater-from-houses.py) | _O(n)_ | _O(1)_ | Medium | | Greedy |
 2087 | [Minimum Cost Homecoming of a Robot in a Grid](https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) | [C++](./C++/minimum-cost-homecoming-of-a-robot-in-a-grid.cpp) [Python](./Python/minimum-cost-homecoming-of-a-robot-in-a-grid.py) | _O(m + n)_ | _O(1)_ | Medium | | Greedy |
 2126 | [Destroying Asteroids](https://leetcode.com/problems/destroying-asteroids/) | [C++](./C++/destroying-asteroids.cpp) [Python](./Python/destroying-asteroids.py) | _O(nlogn)_ | _O(1)_ | Medium | | Greedy |
+2136 | [Earliest Possible Day of Full Bloom](https://leetcode.com/problems/earliest-possible-day-of-full-bloom/) | [C++](./C++/earliest-possible-day-of-full-bloom.cpp) [Python](./Python/earliest-possible-day-of-full-bloom.py) | _O(nlogn)_ | _O(n)_ | Hard | | Greedy |
 
 <br/>
 <div align="right">
