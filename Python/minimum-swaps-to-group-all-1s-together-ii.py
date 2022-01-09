@@ -8,7 +8,7 @@ class Solution(object):
         :rtype: int
         """
         result = cnt = w = nums.count(1)
-        for i in xrange(len(nums)*2):
+        for i in xrange(len(nums)+(w-1)):
             if i >= w:
                 cnt += nums[(i-w)%len(nums)]
             cnt -= nums[i%len(nums)]
