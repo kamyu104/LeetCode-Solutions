@@ -375,7 +375,7 @@
 2058 | [Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/)| [C++](./C++/find-the-minimum-and-maximum-number-of-nodes-between-critical-points.cpp)  [Python](./Python/find-the-minimum-and-maximum-number-of-nodes-between-critical-points.py) | _O(n)_ | _O(1)_         | Medium           ||
 2074 | [Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/) | [C++](./C++/reverse-nodes-in-even-length-groups.cpp) [Python](./Python/reverse-nodes-in-even-length-groups.py) | _O(n)_  | _O(1)_         | Medium           | |
 2095 | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | [C++](./C++/delete-the-middle-node-of-a-linked-list.cpp) [Python](./Python/delete-the-middle-node-of-a-linked-list.py) | _O(n)_  | _O(1)_         | Medium           | | Two Pointers
-2230 | [Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | [C++](./C++/maximum-twin-sum-of-a-linked-list.cpp) [Python](./Python/maximum-twin-sum-of-a-linked-list.py) | _O(n)_  | _O(1)_         | Medium           | | Two Pointers
+2130 | [Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | [C++](./C++/maximum-twin-sum-of-a-linked-list.cpp) [Python](./Python/maximum-twin-sum-of-a-linked-list.py) | _O(n)_  | _O(1)_         | Medium           | | Two Pointers
 
 <br/>
 <div align="right">
