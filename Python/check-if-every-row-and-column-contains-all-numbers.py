@@ -1,7 +1,7 @@
 # Time:  O(n^2)
 # Space: O(n)
 
-class Solution2(object):
+class Solution(object):
     def checkValid(self, matrix):
         """
         :type matrix: List[List[int]]
