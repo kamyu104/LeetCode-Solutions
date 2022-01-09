@@ -643,7 +643,7 @@
 2117 | [Abbreviating the Product of a Range](https://leetcode.com/problems/abbreviating-the-product-of-a-range/)|[C++](./C++/abbreviating-the-product-of-a-range.cpp) [Python](./Python/abbreviating-the-product-of-a-range.py)| _O(r - l)_     | _O(1)_         | Hard         | | Math
 2119 | [A Number After a Double Reversal](https://leetcode.com/problems/a-number-after-a-double-reversal/)|[C++](./C++/a-number-after-a-double-reversal.cpp) [Python](./Python/a-number-after-a-double-reversal.py)| _O(1)_     | _O(1)_         | Easy         | | Math
 2125 | [Number of Laser Beams in a Bank](https://leetcode.com/problems/number-of-laser-beams-in-a-bank/)|[C++](./C++/number-of-laser-beams-in-a-bank.cpp) [Python](./Python/number-of-laser-beams-in-a-bank.py)| _O(m * n)_     | _O(1)_         | Medium         | | Math
-2133 | [Check if Every Row and Column Contains All Numbers](https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/)|[C++](./C++/check-if-every-row-and-column-contains-all-numbers.cpp) [Python](./Python/check-if-every-row-and-column-contains-all-numbers.py)| _O(m * n)_     | _O(1)_         | Easy         | | Math
+2133 | [Check if Every Row and Column Contains All Numbers](https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/)|[C++](./C++/check-if-every-row-and-column-contains-all-numbers.cpp) [Python](./Python/check-if-every-row-and-column-contains-all-numbers.py)| _O(n^2)_     | _O(1)_         | Easy         | | Math
 
 <br/>
 <div align="right">
