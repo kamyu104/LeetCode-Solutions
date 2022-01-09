@@ -21,7 +21,7 @@ public:
 // Time:  O(n^2)
 // Space: O(1)
 // [[1,3,3,4,4],[4,1,3,3,4],[4,4,1,3,3],[3,4,4,1,3],[3,3,4,4,1]]
-class Solution_Wrong{
+class Solution_Wrong {
 public:
     bool checkValid(vector<vector<int>>& matrix) {
         for (int i = 0; i < size(matrix); ++i) {
