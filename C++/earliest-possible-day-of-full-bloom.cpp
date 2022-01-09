@@ -10,10 +10,10 @@ public:
              [&growTime](const auto& a, const auto& b) {
                 return growTime[a] > growTime[b]; 
              });
-        int result = 0;
-        for (int i = 0, curr = 0; i < size(order); ++i) {
-            curr += plantTime[order[i]];
-            result = max(result, curr + growTime[order[i]]);
+        int result = 0, curr = 0;
+        for (const auto& i : order) {
+            curr += plantTime[i];
+            result = max(result, curr + growTime[i]);
         }
         return result;
     }
