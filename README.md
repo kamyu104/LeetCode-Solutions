@@ -351,7 +351,7 @@
 2129 | [Capitalize the Title](https://leetcode.com/problems/capitalize-the-title/) | [C++](./C++/capitalize-the-title.cpp) [Python](./Python/capitalize-the-title.py) | _O(n)_ | _O(1)_ | Easy |||
 2131 | [Longest Palindrome by Concatenating Two Letter Words](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/) | [C++](./C++/longest-palindrome-by-concatenating-two-letter-words.cpp) [Python](./Python/longest-palindrome-by-concatenating-two-letter-words.py) | _O(n)_ | _O(n)_ | Medium |||
 2135 | [Count Words Obtained After Adding a Letter](https://leetcode.com/problems/count-words-obtained-after-adding-a-letter/) | [C++](./C++/count-words-obtained-after-adding-a-letter.cpp) [Python](./Python/count-words-obtained-after-adding-a-letter.py) | _O(n)_ | _O(n)_ | Medium || Bitmask |
-2138 | [Divide a String Into Groups of Size k](https://leetcode.com/problems/solving-questions-with-brainpower/) | [C++](./C++/solving-questions-with-brainpower.cpp) [Python](./Python/solving-questions-with-brainpower.py) | _O(n)_ | _O(1)_ | Easy || |
+2138 | [Divide a String Into Groups of Size k](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/) | [C++](./C++/divide-a-string-into-groups-of-size-k.cpp) [Python](./Python/divide-a-string-into-groups-of-size-k.py) | _O(n)_ | _O(1)_ | Easy || |
 
 <br/>
 <div align="right">
