@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2136%20%2F%202136-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2141%20%2F%202141-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -351,6 +351,7 @@
 2129 | [Capitalize the Title](https://leetcode.com/problems/capitalize-the-title/) | [C++](./C++/capitalize-the-title.cpp) [Python](./Python/capitalize-the-title.py) | _O(n)_ | _O(1)_ | Easy |||
 2131 | [Longest Palindrome by Concatenating Two Letter Words](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/) | [C++](./C++/longest-palindrome-by-concatenating-two-letter-words.cpp) [Python](./Python/longest-palindrome-by-concatenating-two-letter-words.py) | _O(n)_ | _O(n)_ | Medium |||
 2135 | [Count Words Obtained After Adding a Letter](https://leetcode.com/problems/count-words-obtained-after-adding-a-letter/) | [C++](./C++/count-words-obtained-after-adding-a-letter.cpp) [Python](./Python/count-words-obtained-after-adding-a-letter.py) | _O(n)_ | _O(n)_ | Medium || Bitmask |
+2138 | [Divide a String Into Groups of Size k](https://leetcode.com/problems/solving-questions-with-brainpower/) | [C++](./C++/solving-questions-with-brainpower.cpp) [Python](./Python/solving-questions-with-brainpower.py) | _O(n)_ | _O(1)_ | Easy || |
 
 <br/>
 <div align="right">
@@ -806,6 +807,7 @@
 1964 | [Find the Longest Valid Obstacle Course at Each Position](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/) | [C++](./C++/find-the-longest-valid-obstacle-course-at-each-position.cpp)  [Python](./Python/find-the-longest-valid-obstacle-course-at-each-position.py)  | _O(nlogn)_ | _O(n)_ | Hard         | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Binary Search, Segment Tree, DP|
 2064 | [Minimized Maximum of Products Distributed to Any Store](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/) | [C++](./C++/minimized-maximum-of-products-distributed-to-any-store.cpp) [Python](./Python/minimized-maximum-of-products-distributed-to-any-store.py) | _O(nlogm)_ | _O(1)_ | Medium | variant of [Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/) |
 2111 | [Minimum Operations to Make the Array K-Increasing](https://leetcode.com/problems/minimum-operations-to-make-the-array-k-increasing/) | [C++](./C++/minimum-operations-to-make-the-array-k-increasing.cpp) [Python](./Python/minimum-operations-to-make-the-array-k-increasing.py) | _O(nlog(n/k))_ | _O(n/k)_ | Hard | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) |
+2137 | [Pour Water Between Buckets to Make Water Levels Equal](https://leetcode.com/problems/pour-water-between-buckets-to-make-water-levels-equal/) | [C++](./C++/pour-water-between-buckets-to-make-water-levels-equal.cpp) [Python](./Python/pour-water-between-buckets-to-make-water-levels-equal.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 |
 
 <br/>
 <div align="right">
@@ -1054,6 +1056,7 @@
 2052 | [Minimum Cost to Separate Sentence Into Rows](https://leetcode.com/problems/minimum-cost-to-separate-sentence-into-rows/) | [C++](./C++/minimum-cost-to-separate-sentence-into-rows.cpp) [Python](./Python/minimum-cost-to-separate-sentence-into-rows.py) | _O(s + n * k)_ | _O(k)_ | Medium | 🔒 | DP
 2060 | [Check if an Original String Exists Given Two Encoded Strings](https://leetcode.com/problems/check-if-an-original-string-exists-given-two-encoded-strings/) | [C++](./C++/check-if-an-original-string-exists-given-two-encoded-strings.cpp) [Python](./Python/check-if-an-original-string-exists-given-two-encoded-strings.py) | _O(m * n * k)_ | _O(min(m, n) * k)_ | Hard | | DP, Memoization
 2088 | [Count Fertile Pyramids in a Land](https://leetcode.com/problems/count-fertile-pyramids-in-a-land/) | [C++](./C++/count-fertile-pyramids-in-a-land.cpp) [Python](./Python/count-fertile-pyramids-in-a-land.py) | _O(m * n)_ | _O(n)_ | Hard | | DP
+2140 | [Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/) | [C++](./C++/solving-questions-with-brainpower.cpp) [Python](./Python/solving-questions-with-brainpower.py) | _O(n)_ | _O(n)_ | Medium | | DP
 
 <br/>
 <div align="right">
@@ -1182,6 +1185,8 @@
 2087 | [Minimum Cost Homecoming of a Robot in a Grid](https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) | [C++](./C++/minimum-cost-homecoming-of-a-robot-in-a-grid.cpp) [Python](./Python/minimum-cost-homecoming-of-a-robot-in-a-grid.py) | _O(m + n)_ | _O(1)_ | Medium | | Greedy |
 2126 | [Destroying Asteroids](https://leetcode.com/problems/destroying-asteroids/) | [C++](./C++/destroying-asteroids.cpp) [Python](./Python/destroying-asteroids.py) | _O(nlogn)_ | _O(1)_ | Medium | | Greedy |
 2136 | [Earliest Possible Day of Full Bloom](https://leetcode.com/problems/earliest-possible-day-of-full-bloom/) | [C++](./C++/earliest-possible-day-of-full-bloom.cpp) [Python](./Python/earliest-possible-day-of-full-bloom.py) | _O(nlogn)_ | _O(n)_ | Hard | | Greedy |
+2139 | [Minimum Moves to Reach Target Score](https://leetcode.com/problems/minimum-moves-to-reach-target-score/) | [C++](./C++/minimum-moves-to-reach-target-score.cpp) [Python](./Python/minimum-moves-to-reach-target-score.py) | _O(logn)_ | _O(1)_ | Medium | | |
+2141 | [Maximum Running Time of N Computers](https://leetcode.com/problems/maximum-running-time-of-n-computers/) | [C++](./C++/maximum-running-time-of-n-computers.cpp) [Python](./Python/maximum-running-time-of-n-computers.py) | _O(nlogm)_ | _O(1)_ | Hard | | |
 
 <br/>
 <div align="right">
