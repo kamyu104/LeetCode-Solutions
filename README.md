@@ -1186,7 +1186,7 @@
 2126 | [Destroying Asteroids](https://leetcode.com/problems/destroying-asteroids/) | [C++](./C++/destroying-asteroids.cpp) [Python](./Python/destroying-asteroids.py) | _O(nlogn)_ | _O(1)_ | Medium | | Greedy |
 2136 | [Earliest Possible Day of Full Bloom](https://leetcode.com/problems/earliest-possible-day-of-full-bloom/) | [C++](./C++/earliest-possible-day-of-full-bloom.cpp) [Python](./Python/earliest-possible-day-of-full-bloom.py) | _O(nlogn)_ | _O(n)_ | Hard | | Greedy |
 2139 | [Minimum Moves to Reach Target Score](https://leetcode.com/problems/minimum-moves-to-reach-target-score/) | [C++](./C++/minimum-moves-to-reach-target-score.cpp) [Python](./Python/minimum-moves-to-reach-target-score.py) | _O(logn)_ | _O(1)_ | Medium | | |
-2141 | [Maximum Running Time of N Computers](https://leetcode.com/problems/maximum-running-time-of-n-computers/) | [C++](./C++/maximum-running-time-of-n-computers.cpp) [Python](./Python/maximum-running-time-of-n-computers.py) | _O(nlogm)_ | _O(1)_ | Hard | | |
+2141 | [Maximum Running Time of N Computers](https://leetcode.com/problems/maximum-running-time-of-n-computers/) | [C++](./C++/maximum-running-time-of-n-computers.cpp) [Python](./Python/maximum-running-time-of-n-computers.py) | _O(nlogm)_ | _O(1)_ | Hard | | Greedy, Binary Search |
 
 <br/>
 <div align="right">
