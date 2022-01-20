@@ -1057,7 +1057,7 @@
 2060 | [Check if an Original String Exists Given Two Encoded Strings](https://leetcode.com/problems/check-if-an-original-string-exists-given-two-encoded-strings/) | [C++](./C++/check-if-an-original-string-exists-given-two-encoded-strings.cpp) [Python](./Python/check-if-an-original-string-exists-given-two-encoded-strings.py) | _O(m * n * k)_ | _O(min(m, n) * k)_ | Hard | | DP, Memoization
 2088 | [Count Fertile Pyramids in a Land](https://leetcode.com/problems/count-fertile-pyramids-in-a-land/) | [C++](./C++/count-fertile-pyramids-in-a-land.cpp) [Python](./Python/count-fertile-pyramids-in-a-land.py) | _O(m * n)_ | _O(n)_ | Hard | | DP
 2140 | [Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/) | [C++](./C++/solving-questions-with-brainpower.cpp) [Python](./Python/solving-questions-with-brainpower.py) | _O(n)_ | _O(n)_ | Medium | | DP
-2143 | [Choose Numbers From Two Arrays in Range](https://leetcode.com/problems/choose-numbers-from-two-arrays-in-range/) | [C++](./C++/choose-numbers-from-two-arrays-in-range.cpp) [Python](./Python/choose-numbers-from-two-arrays-in-range.py) | _O(n^2 * v)_ | _O(n * v)_ | Hard | | DP
+2143 | [Choose Numbers From Two Arrays in Range](https://leetcode.com/problems/choose-numbers-from-two-arrays-in-range/) | [C++](./C++/choose-numbers-from-two-arrays-in-range.cpp) [Python](./Python/choose-numbers-from-two-arrays-in-range.py) | _O(n^2 * v)_ | _O(n * v)_ | Hard | 🔒 | DP
 
 <br/>
 <div align="right">
