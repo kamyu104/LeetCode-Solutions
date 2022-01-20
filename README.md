@@ -1488,7 +1488,7 @@
 2084 | [Drop Type 1 Orders for Customers With Type 0 Orders](https://leetcode.com/problems/drop-type-1-orders-for-customers-with-type-0-orders/) | [MySQL](./MySQL/drop-type-1-orders-for-customers-with-type-0-orders.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2112 | [The Airport With the Most Traffic](https://leetcode.com/problems/the-airport-with-the-most-traffic/) | [MySQL](./MySQL/the-airport-with-the-most-traffic.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 2118 | [Build the Equation](https://leetcode.com/problems/build-the-equation/) | [MySQL](./MySQL/build-the-equation.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
-2142 | [The Number of Passengers in Each Bus I](https://leetcode.com/problems/the-number-of-passengers-in-each-bus-i/) | [MySQL](./MySQL/the-number-of-passengers-in-each-bus-i.sql) | _O(p * b + blogb)_ | _O(p * b)_       | Hard           |🔒||
+2142 | [The Number of Passengers in Each Bus I](https://leetcode.com/problems/the-number-of-passengers-in-each-bus-i/) | [MySQL](./MySQL/the-number-of-passengers-in-each-bus-i.sql) | _O(p * b + blogb)_ | _O(p * b)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
