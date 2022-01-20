@@ -66,7 +66,7 @@ private:
                               [&s, &times](const pair<int, string>& p) {
                                   return p.second == s;
                               } );
-	        if (it != end(infos_)) {
+	    if (it != end(infos_)) {
                 it->first = -times;
             } else {
                 infos_.emplace_back(-times, s);
