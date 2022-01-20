@@ -18,7 +18,9 @@ public:
                 new_dp[v - nums2[i]] = (new_dp[v - nums2[i]] + c) % MOD;
             }
             dp = move(new_dp);
-            result = (result + dp[0]) % MOD;
+            if (dp.count(0)) {
+                result = (result + dp[0]) % MOD;
+            }
         }
         return result;
     }
