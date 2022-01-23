@@ -8,6 +8,27 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
+        pos, neg = 0, 1
+        result = [0]*len(nums)
+        for x in nums:
+            if x > 0:
+                result[pos] = x
+                pos += 2
+            else:
+                result[neg] = x
+                neg += 2
+        return result
+
+
+# Time:  O(n)
+# Space: O(1)
+# generator
+class Solution2(object):
+    def rearrangeArray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
         def pos():
             for x in nums:
                 if x > 0:
@@ -26,7 +47,7 @@ class Solution(object):
 # Time:  O(n)
 # Space: O(n)
 # array, implementation
-class Solution2(object):
+class Solution3(object):
     def rearrangeArray(self, nums):
         """
         :type nums: List[int]
