@@ -5,29 +5,15 @@
 class Solution {
 public:
     vector<int> rearrangeArray(vector<int>& nums) {
-        int pos = 0, neg = 0;
-        auto next_pos = [&nums, &pos]() {
-            for (; pos < size(nums); ++pos) {
-                if (nums[pos] > 0) {
-                    return nums[pos++];
-                }
-            }
-            return -1;
-        };
-        auto next_neg = [&nums, &neg]() {
-            for (; neg < size(nums); ++neg) {
-                if (nums[neg] < 0) {
-                    return nums[neg++];
-                }
-            }
-            return -1;
-        };
-        vector<int> result;
-        for (int i = 0; i < size(nums); ++i) {
-            if (i % 2 == 0) {
-                result.emplace_back(next_pos());
+        int pos = 0, neg = 1;
+        vector<int> result(size(nums));
+        for (const auto& x : nums) {
+            if (x > 0) {
+                result[pos] = x;
+                pos += 2;
             } else {
-                result.emplace_back(next_neg());
+                result[neg] = x;
+                neg += 2;
             }
         }
         return result;
