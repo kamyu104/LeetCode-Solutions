@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2143%20%2F%202143-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2151%20%2F%202151-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -103,6 +103,7 @@
 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array/) | [C++](./C++/decode-xored-array.cpp) [Python](./Python/decode-xored-array.py) | _O(n)_ | _O(1)_ | Easy ||
 1734 | [Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation/) | [C++](./C++/decode-xored-permutation.cpp) [Python](./Python/decode-xored-permutation.py) | _O(n)_ | _O(1)_ | Medium ||
 1829 | [Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/) | [C++](./C++/maximum-xor-for-each-query.cpp) [Python](./Python/maximum-xor-for-each-query.py) | _O(n)_ | _O(1)_ | Medium ||
+2151 | [Maximum Good People Based on Statements](https://leetcode.com/problems/maximum-good-people-based-on-statements/) | [C++](./C++/maximum-good-people-based-on-statements.cpp) [Python](./Python/maximum-good-people-based-on-statements.py) | _O(n^2 * 2^n)_ | _O(1)_ | Hard || Bitmask, Brute Force
 
 <br/>
 <div align="right">
@@ -532,6 +533,7 @@
 2068 | [Check Whether Two Strings are Almost Equivalent](https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/) | [C++](./C++/check-whether-two-strings-are-almost-equivalent.cpp) [Python](./Python/check-whether-two-strings-are-almost-equivalent.py) | _O(n)_ | _O(1)_ | Easy || 
 2085 | [Count Common Words With One Occurrence](https://leetcode.com/problems/count-common-words-with-one-occurrence/) | [C++](./C++/count-common-words-with-one-occurrence.cpp) [Python](./Python/count-common-words-with-one-occurrence.py) | _O(m + n)_ | _O(m + n)_ | Easy || 
 2120 | [Execution of All Suffix Instructions Staying in a Grid](https://leetcode.com/problems/execution-of-all-suffix-instructions-staying-in-a-grid/) | [C++](./C++/execution-of-all-suffix-instructions-staying-in-a-grid.cpp) [Python](./Python/execution-of-all-suffix-instructions-staying-in-a-grid.py) | _O(m)_ | _O(m)_ | Medium || 
+2150 | [Find All Lonely Numbers in the Array](https://leetcode.com/problems/find-all-lonely-numbers-in-the-array/) | [C++](./C++/find-all-lonely-numbers-in-the-array.cpp) [Python](./Python/find-all-lonely-numbers-in-the-array.py) | _O(n)_ | _O(n)_ | Medium || 
 
 <br/>
 <div align="right">
@@ -645,6 +647,8 @@
 2119 | [A Number After a Double Reversal](https://leetcode.com/problems/a-number-after-a-double-reversal/)|[C++](./C++/a-number-after-a-double-reversal.cpp) [Python](./Python/a-number-after-a-double-reversal.py)| _O(1)_     | _O(1)_         | Easy         | | Math
 2125 | [Number of Laser Beams in a Bank](https://leetcode.com/problems/number-of-laser-beams-in-a-bank/)|[C++](./C++/number-of-laser-beams-in-a-bank.cpp) [Python](./Python/number-of-laser-beams-in-a-bank.py)| _O(m * n)_     | _O(1)_         | Medium         | | Math
 2133 | [Check if Every Row and Column Contains All Numbers](https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/)|[C++](./C++/check-if-every-row-and-column-contains-all-numbers.cpp) [Python](./Python/check-if-every-row-and-column-contains-all-numbers.py)| _O(n^2)_     | _O(n)_         | Easy         | | Math
+2145 | [Count the Hidden Sequences](https://leetcode.com/problems/count-the-hidden-sequences/)|[C++](./C++/count-the-hidden-sequences.cpp) [Python](./Python/count-the-hidden-sequences.py)| _O(n)_     | _O(1)_         | Medium         | | Math
+2148 | [Count Elements With Strictly Smaller and Greater Elements](https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/)|[C++](./C++/count-elements-with-strictly-smaller-and-greater-elements.cpp) [Python](./Python/count-elements-with-strictly-smaller-and-greater-elements.py)| _O(n)_     | _O(1)_         | Easy         | | Math
 
 <br/>
 <div align="right">
@@ -750,7 +754,7 @@
 2105 | [Watering Plants II](https://leetcode.com/problems/watering-plants-ii/) | [C++](./C++/watering-plants-ii.cpp) [Python](./Python/watering-plants-ii.py) | _O(n)_ | _O(1)_ | Medium || Simulation
 2107 | [Number of Unique Flavors After Sharing K Candies](https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/) | [C++](./C++/number-of-unique-flavors-after-sharing-k-candies.cpp) [Python](./Python/number-of-unique-flavors-after-sharing-k-candies.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Sliding Window
 2134 | [Minimum Swaps to Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/) | [C++](./C++/minimum-swaps-to-group-all-1s-together-ii.cpp) [Python](./Python/minimum-swaps-to-group-all-1s-together-ii.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window
-
+2149 | [Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | [C++](./C++/rearrange-array-elements-by-sign.cpp) [Python](./Python/rearrange-array-elements-by-sign.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
 
 <br/>
 <div align="right">
@@ -870,6 +874,7 @@
 2050 | [Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/)| [C++](./C++/parallel-courses-iii.cpp) [Python](./Python/parallel-courses-iii.py)   | _O(\|V\| + \|E\|)_         | _O(\|E\|)_          | Hard         | variant of [Parallel Courses](https://leetcode.com/problems/parallel-courses/) | Topological Sort |
 2059 | [Minimum Operations to Convert Number](https://leetcode.com/problems/minimum-operations-to-convert-number/)| [C++](./C++/minimum-operations-to-convert-number.cpp) [Python](./Python/minimum-operations-to-convert-number.py)| _O(m * n)_ | _O(m)_ | Medium | | |
 2115 | [Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/)| [C++](./C++/find-all-possible-recipes-from-given-supplies.cpp) [Python](./Python/find-all-possible-recipes-from-given-supplies.py)   | _O(\|E\|)_         | _O(\|E\|)_          | Medium         | | Topological Sort |
+2146 | [K Highest Ranked Items Within a Price Range](https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range/)| [C++](./C++/k-highest-ranked-items-within-a-price-range.cpp) [Python](./Python/k-highest-ranked-items-within-a-price-range.py)   | _O(m * n + klogk)_         | _O(m * n)_          | Medium         | | BFS, Quick Select, Sort |
 
 <br/>
 <div align="right">
@@ -1188,6 +1193,8 @@
 2136 | [Earliest Possible Day of Full Bloom](https://leetcode.com/problems/earliest-possible-day-of-full-bloom/) | [C++](./C++/earliest-possible-day-of-full-bloom.cpp) [Python](./Python/earliest-possible-day-of-full-bloom.py) | _O(nlogn)_ | _O(n)_ | Hard | | Greedy |
 2139 | [Minimum Moves to Reach Target Score](https://leetcode.com/problems/minimum-moves-to-reach-target-score/) | [C++](./C++/minimum-moves-to-reach-target-score.cpp) [Python](./Python/minimum-moves-to-reach-target-score.py) | _O(logn)_ | _O(1)_ | Medium | | |
 2141 | [Maximum Running Time of N Computers](https://leetcode.com/problems/maximum-running-time-of-n-computers/) | [C++](./C++/maximum-running-time-of-n-computers.cpp) [Python](./Python/maximum-running-time-of-n-computers.py) | _O(nlogm)_ | _O(1)_ | Hard | | Greedy, Binary Search |
+2144 | [Minimum Cost of Buying Candies With Discount](https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/) | [C++](./C++/minimum-cost-of-buying-candies-with-discount.cpp) [Python](./Python/minimum-cost-of-buying-candies-with-discount.py) | _O(nlogn)_ | _O(1)_ | Easy | | Greedy, Sort |
+2147 | [Number of Ways to Divide a Long Corridor](https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/) | [C++](./C++/number-of-ways-to-divide-a-long-corridor.cpp) [Python](./Python/number-of-ways-to-divide-a-long-corridor.py) | _O(n)_ | _O(1)_ | Hard | | Greedy, Combinatorics |
 
 <br/>
 <div align="right">
