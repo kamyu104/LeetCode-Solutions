@@ -38,7 +38,7 @@ public:
             for (int j = i + 1; j < size(points); ++j) {
                 const int x2 = points[j][0], y2 = points[j][1];
                 // (x-x1)/(x2-x1) = (y-y1)/(y2-y1)
-                // => (y2-y1)x -(x2-x1)y = x1(y2-y1) - y1(x2-x1)
+                // => (y2-y1)x - (x2-x1)y = x1(y2-y1) - y1(x2-x1)
                 int a = y2 - y1;
                 int b = -(x2 - x1);
                 int c = x1 * (y2 - y1) - y1 * (x2 - x1);
