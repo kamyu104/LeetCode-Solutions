@@ -38,16 +38,10 @@ class Solution(object):
         :type words: List[str]
         :rtype: List[int]
         """
-        def bitmask(x):
-            mask = 0
-            for c in x:
-                mask |= 1<<(ord(c)-ord('a'))
-            return mask
-
         uf = UnionFind(len(words))
         lookup = {}
         for i, x in enumerate(words):
-            mask = bitmask(x)
+            mask = reduce(lambda x, y: x|(1<<(ord(y)-ord('a'))), x, 0)
             if mask not in lookup:
                 lookup[mask] = i
             uf.union_set(i, lookup[mask])
