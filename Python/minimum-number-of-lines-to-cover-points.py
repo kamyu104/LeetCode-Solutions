@@ -31,7 +31,7 @@ class Solution(object):
             for j in xrange(i+1, len(points)):
                 x2, y2 = points[j]
                 # (x-x1)/(x2-x1) = (y-y1)/(y2-y1)
-                # => (y2-y1)x -(x2-x1)y = x1(y2-y1) - y1(x2-x1)
+                # => (y2-y1)x - (x2-x1)y = x1(y2-y1) - y1(x2-x1)
                 a, b, c = (y2-y1), -(x2-x1), x1*(y2-y1)-y1*(x2-x1) 
                 g = gcd(gcd(a, b), c)
                 a, b, c = a//g, b//g, c//g
