@@ -31,7 +31,7 @@ class UnionFind(object):  # Time: O(n * alpha(n)), Space: O(n)
         return True
 
 
-# union find
+# bitmasks, union find
 class Solution(object):
     def groupStrings(self, words):
         """
