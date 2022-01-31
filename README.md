@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2151%20%2F%202151-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2157%20%2F%202157-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -247,6 +247,7 @@
 2122 | [Recover the Original Array](https://leetcode.com/problems/recover-the-original-array/) | [C++](./C++/recover-the-original-array.cpp) [Python](./Python/recover-the-original-array.py) | _O(n^2)_ | _O(n)_ | Hard | |
 2128 | [Remove All Ones With Row and Column Flips](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/) | [C++](./C++/remove-all-ones-with-row-and-column-flips.cpp) [Python](./Python/remove-all-ones-with-row-and-column-flips.py) | _O(m * n)_ | _O(1)_ | Medium | 🔒 |
 2132 | [Stamping the Grid](https://leetcode.com/problems/stamping-the-grid/) | [C++](./C++/stamping-the-grid.cpp) [Python](./Python/stamping-the-grid.py) | _O(m * n)_ | _O(m * n)_ | Hard | | Prefix Sum
+2155 | [All Divisions With the Highest Score of a Binary Array](https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/) | [C++](./C++/all-divisions-with-the-highest-score-of-a-binary-array.cpp) [Python](./Python/all-divisions-with-the-highest-score-of-a-binary-array.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -353,6 +354,8 @@
 2131 | [Longest Palindrome by Concatenating Two Letter Words](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/) | [C++](./C++/longest-palindrome-by-concatenating-two-letter-words.cpp) [Python](./Python/longest-palindrome-by-concatenating-two-letter-words.py) | _O(n)_ | _O(n)_ | Medium |||
 2135 | [Count Words Obtained After Adding a Letter](https://leetcode.com/problems/count-words-obtained-after-adding-a-letter/) | [C++](./C++/count-words-obtained-after-adding-a-letter.cpp) [Python](./Python/count-words-obtained-after-adding-a-letter.py) | _O(n)_ | _O(n)_ | Medium || Bitmask |
 2138 | [Divide a String Into Groups of Size k](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/) | [C++](./C++/divide-a-string-into-groups-of-size-k.cpp) [Python](./Python/divide-a-string-into-groups-of-size-k.py) | _O(n)_ | _O(1)_ | Easy || |
+2156 | [Find Substring With Given Hash Value](https://leetcode.com/problems/find-substring-with-given-hash-value/) | [C++](./C++/find-substring-with-given-hash-value.cpp) [Python](./Python/find-substring-with-given-hash-value.py) | _O(n)_ | _O(1)_ | Medium | | `Rabin-Karp Algorithm`, Rolling Hash
+2157 | [Groups of Strings](https://leetcode.com/problems/groups-of-strings/) | [C++](./C++/groups-of-strings.cpp) [Python](./Python/groups-of-strings.py) | _O(26 * n)_ | _O(26 * n)_ | Hard | | Bitmasks, Union Find
 
 <br/>
 <div align="right">
@@ -534,6 +537,7 @@
 2085 | [Count Common Words With One Occurrence](https://leetcode.com/problems/count-common-words-with-one-occurrence/) | [C++](./C++/count-common-words-with-one-occurrence.cpp) [Python](./Python/count-common-words-with-one-occurrence.py) | _O(m + n)_ | _O(m + n)_ | Easy || 
 2120 | [Execution of All Suffix Instructions Staying in a Grid](https://leetcode.com/problems/execution-of-all-suffix-instructions-staying-in-a-grid/) | [C++](./C++/execution-of-all-suffix-instructions-staying-in-a-grid.cpp) [Python](./Python/execution-of-all-suffix-instructions-staying-in-a-grid.py) | _O(m)_ | _O(m)_ | Medium || 
 2150 | [Find All Lonely Numbers in the Array](https://leetcode.com/problems/find-all-lonely-numbers-in-the-array/) | [C++](./C++/find-all-lonely-numbers-in-the-array.cpp) [Python](./Python/find-all-lonely-numbers-in-the-array.py) | _O(n)_ | _O(n)_ | Medium || 
+2154 | [Keep Multiplying Found Values by Two](https://leetcode.com/problems/keep-multiplying-found-values-by-two/) | [C++](./C++/keep-multiplying-found-values-by-two.cpp) [Python](./Python/keep-multiplying-found-values-by-two.py) | _O(n)_ | _O(n)_ | Easy || 
 
 <br/>
 <div align="right">
@@ -649,6 +653,7 @@
 2133 | [Check if Every Row and Column Contains All Numbers](https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/)|[C++](./C++/check-if-every-row-and-column-contains-all-numbers.cpp) [Python](./Python/check-if-every-row-and-column-contains-all-numbers.py)| _O(n^2)_     | _O(n)_         | Easy         | | Math
 2145 | [Count the Hidden Sequences](https://leetcode.com/problems/count-the-hidden-sequences/)|[C++](./C++/count-the-hidden-sequences.cpp) [Python](./Python/count-the-hidden-sequences.py)| _O(n)_     | _O(1)_         | Medium         | | Math
 2148 | [Count Elements With Strictly Smaller and Greater Elements](https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/)|[C++](./C++/count-elements-with-strictly-smaller-and-greater-elements.cpp) [Python](./Python/count-elements-with-strictly-smaller-and-greater-elements.py)| _O(n)_     | _O(1)_         | Easy         | | Math
+2152 | [Minimum Number of Lines to Cover Points](https://leetcode.com/problems/minimum-number-of-lines-to-cover-points/)|[C++](./C++/minimum-number-of-lines-to-cover-points.cpp) [Python](./Python/minimum-number-of-lines-to-cover-points.py)| _O(n * 2^n)_     | _O(n^2)_         | Medium         | 🔒 | Math, Hash Table, Bitmasks
 
 <br/>
 <div align="right">
@@ -1496,6 +1501,7 @@
 2112 | [The Airport With the Most Traffic](https://leetcode.com/problems/the-airport-with-the-most-traffic/) | [MySQL](./MySQL/the-airport-with-the-most-traffic.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 2118 | [Build the Equation](https://leetcode.com/problems/build-the-equation/) | [MySQL](./MySQL/build-the-equation.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 2142 | [The Number of Passengers in Each Bus I](https://leetcode.com/problems/the-number-of-passengers-in-each-bus-i/) | [MySQL](./MySQL/the-number-of-passengers-in-each-bus-i.sql) | _O(p * b + blogb)_ | _O(p * b)_       | Medium           |🔒||
+2153 | [The Number of Passengers in Each Bus II](https://leetcode.com/problems/the-number-of-passengers-in-each-bus-ii/) | [MySQL](./MySQL/the-number-of-passengers-in-each-bus-ii.sql) | _O(p * b + blogb)_ | _O(p * b)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
