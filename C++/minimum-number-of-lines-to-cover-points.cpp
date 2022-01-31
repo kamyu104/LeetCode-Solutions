@@ -1,7 +1,7 @@
 // Time:  O(n^2 + n*2^n) = O(n*2^n)
 // Space: O(n^2)
 
-// math, bitmasks
+// math, hash table, bitmasks
 class Solution {
 private:
     template <typename A, typename B, typename C>
