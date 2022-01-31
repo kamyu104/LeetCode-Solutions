@@ -1,5 +1,5 @@
 // Time:  O(26 * n)
-// Space: O(n)
+// Space: O(26 * n)
 
 // bitmasks, union find
 class Solution {
