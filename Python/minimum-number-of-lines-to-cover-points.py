@@ -4,7 +4,7 @@
 import collections
 
 
-# math, bitmasks
+# math, hash table, bitmasks
 class Solution(object):
     def minimumLines(self, points):
         """
