@@ -58,9 +58,7 @@ public:
         int result = numeric_limits<int>::max();
         const int mask_upper_bound = 1 << size(lines);
         for (int mask = 0; mask < mask_upper_bound; ++mask) {
-            const int cnt = __builtin_popcount(mask);
             unordered_set<pair<int, int>, PairHash<int>> covered;
-            
             for (int i = 0, bit = 1; bit <= mask; bit <<= 1, ++i) {
                 if (mask & bit) {
                     for (const auto& x : lookup[lines[i]]) {
@@ -68,7 +66,7 @@ public:
                     }
                 }
             }
-            result = min(result, cnt + ceil_divide(size(points) - size(covered), 2));
+            result = min(result, __builtin_popcount(mask) + ceil_divide(size(points) - size(covered), 2));
         }
         return result;
     }
