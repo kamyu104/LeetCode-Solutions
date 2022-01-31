@@ -50,7 +50,7 @@ public:
         }
         vector<tuple<int, int, int>> lines;
         for (const auto& [l, p] : lookup) {
-            if (size(p) > 2) {
+            if (size(p) > 2) {  // filter to improve performance
                 lines.emplace_back(l);
             }
         }
