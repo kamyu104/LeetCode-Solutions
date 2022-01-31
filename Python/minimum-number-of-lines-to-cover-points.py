@@ -41,13 +41,12 @@ class Solution(object):
         assert(len(lines) <= (len(points))//2)  # 1 extra colinear point per 2 points
         result = float("inf")
         for mask in xrange(1<<len(lines)):
-            i, cnt = 0, popcount(mask)
             covered = set()
-            bit = 1
+            bit, i = 1, 0
             while bit <= mask:
                 if mask&bit:
                     covered.update(lookup[lines[i]])
                 bit <<= 1                        
                 i += 1
-            result = min(result, cnt + ceil_divide(len(points)-len(covered), 2))
+            result = min(result, popcount(mask) + ceil_divide(len(points)-len(covered), 2))
         return result
