@@ -1,7 +1,7 @@
 // Time:  O(26 * n)
 // Space: O(n)
 
-// union find
+// bitmasks, union find
 class Solution {
 public:
     vector<int> groupStrings(vector<string>& words) {
