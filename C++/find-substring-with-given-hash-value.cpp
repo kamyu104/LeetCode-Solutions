@@ -7,7 +7,7 @@ public:
     string subStrHash(string s, int power, int modulo, int k, int hashValue) {
         int idx = 0;
         for (int64_t i = size(s) - 1, pw = 1, h = 0; i >= 0; --i) {
-            if (i > size(s) - k) {
+            if ((size(s) - 1) - i + 1 <= k - 1) {
                 pw = (pw * power) % modulo;
             } 
             if (i + k < size(s)) {
