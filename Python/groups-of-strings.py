@@ -24,9 +24,9 @@ class UnionFind(object):  # Time: O(n * alpha(n)), Space: O(n)
         if self.rank[x] > self.rank[y]:  # union by rank
             x, y = y, x
         self.set[x] = self.set[y]
-        self.size[y] += self.size[x]
         if self.rank[x] == self.rank[y]:
             self.rank[y] += 1
+        self.size[y] += self.size[x]
         self.total -= 1
         return True
 
