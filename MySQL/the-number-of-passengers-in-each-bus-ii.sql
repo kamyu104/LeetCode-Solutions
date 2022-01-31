@@ -1,5 +1,5 @@
 # Time:  O(p * b + blogb)
-# Space: O(P * b)
+# Space: O(p * b)
 
 WITH arrival_time_cte AS
 (
@@ -11,7 +11,8 @@ WITH arrival_time_cte AS
     ORDER BY arrival_time
 )
 
-SELECT bus_id, passengers_cnt FROM
+SELECT bus_id, passengers_cnt
+FROM
 (
     SELECT bus_id, capacity, prefix_sum,
            @passengers_cnt := LEAST(capacity, prefix_sum-@accum) as passengers_cnt, 
