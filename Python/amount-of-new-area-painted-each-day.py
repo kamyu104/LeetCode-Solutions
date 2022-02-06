@@ -19,7 +19,7 @@ class Solution(object):
         min_heap = []
         lookup = [False]*len(paint)
         result = [0]*len(paint)
-        pos = -1
+        prev = -1
         for pos in sorted(points.iterkeys()):
             while min_heap and lookup[min_heap[0]]:
                 heapq.heappop(min_heap)
