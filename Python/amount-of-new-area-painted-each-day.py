@@ -62,7 +62,6 @@ class Solution2(object):
                     sl.add(i)
                 else:
                     sl.remove(i)
-            
         return result
 
 
