@@ -1,4 +1,4 @@
-# Time:  O(r + nlogn), r is the max position
+# Time:  O(nlogn)
 # Space: O(n)
 
 import collections
@@ -19,22 +19,22 @@ class Solution(object):
         min_heap = []
         lookup = [False]*len(paint)
         result = [0]*len(paint)
-        for pos in xrange(max(points.iterkeys())+1):
-            if pos in points:
-                for t, i in points[pos]:
-                    if t:
-                        heapq.heappush(min_heap, i)
-                    else:
-                        lookup[i] = True
-                i += 1
+        pos = -1
+        for pos in sorted(points.iterkeys()):
             while min_heap and lookup[min_heap[0]]:
                 heapq.heappop(min_heap)
             if min_heap:
-                result[min_heap[0]] += 1
+                result[min_heap[0]] += pos-prev
+            prev = pos
+            for t, i in points[pos]:
+                if t:
+                    heapq.heappush(min_heap, i)
+                else:
+                    lookup[i] = True
         return result
                     
             
-# Time:  O(r + nlogn), r is the max position
+# Time:  O(nlogn)
 # Space: O(n)
 from sortedcontainers import SortedList
 
@@ -52,16 +52,17 @@ class Solution2(object):
             points[e].append((False, i))
         sl = SortedList()
         result = [0]*len(paint)
-        for pos in xrange(max(points.iterkeys())+1):
-            if pos in points:
-                for t, i in points[pos]:
-                    if t:
-                        sl.add(i)
-                    else:
-                        sl.remove(i)
-                i += 1
+        prev = -1
+        for pos in sorted(points.iterkeys()):
             if sl:
-                result[sl[0]] += 1
+                result[sl[0]] += pos-prev
+            prev = pos
+            for t, i in points[pos]:
+                if t:
+                    sl.add(i)
+                else:
+                    sl.remove(i)
+            
         return result
 
 
