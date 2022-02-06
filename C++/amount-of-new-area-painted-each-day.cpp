@@ -123,73 +123,67 @@ public:
     }
 };
 
-// Time:  O(r + nlogn), r is the max position
+// Time:  O(nlogn)
 // Space: O(n)
 // line sweep, heap
 class Solution2 {
 public:
     vector<int> amountPainted(vector<vector<int>>& paint) {
-        unordered_map<int, vector<pair<int, int>>> points;
+        map<int, vector<pair<int, int>>> points;
         for (int i = 0; i < size(paint); ++i) {
             points[paint[i][0]].emplace_back(1, i);
             points[paint[i][1]].emplace_back(0, i);
         }
-        const int max_pos = (*max_element(cbegin(paint), cend(paint),
-            [](const auto& x, const auto& y) { return x[1] < y[1]; }
-        ))[1];
         priority_queue<int, vector<int>, greater<int>> min_heap;
         vector<bool> lookup(size(paint));
         vector<int> result(size(paint));
-        for (int pos = 0; pos <= max_pos; ++pos) {
-            if (points.count(pos)) {
-                for (const auto& [t, i] : points[pos]) {
-                    if (t) {
-                        min_heap.emplace(i);
-                    } else {
-                        lookup[i] = true;
-                    }
-                }
-            }
-            while (!empty(min_heap) && lookup[min_heap.top()]) {
+        int prev = -1;
+        for (const auto& [pos, v] : points) {
+             while (!empty(min_heap) && lookup[min_heap.top()]) {
                 min_heap.pop();
             }
             if (!empty(min_heap)) {
-                ++result[min_heap.top()];
+                result[min_heap.top()] += pos - prev;
+            }
+            prev = pos;
+            for (const auto& [t, i] : v) {
+                if (t) {
+                    min_heap.emplace(i);
+                } else {
+                    lookup[i] = true;
+                }
             }
         }
         return result;
     }
 };
 
-// Time:  O(r + nlogn), r is the max position
+// Time:  O(nlogn)
 // Space: O(n)
 // line sweep, bst
 class Solution3 {
 public:
     vector<int> amountPainted(vector<vector<int>>& paint) {
-        unordered_map<int, vector<pair<int, int>>> points;
+        map<int, vector<pair<int, int>>> points;
         for (int i = 0; i < size(paint); ++i) {
             points[paint[i][0]].emplace_back(1, i);
             points[paint[i][1]].emplace_back(0, i);
         }
-        const int max_pos = (*max_element(cbegin(paint), cend(paint),
-            [](const auto& x, const auto& y) { return x[1] < y[1]; }
-        ))[1];
         set<int> bst;
         vector<int> result(size(paint));
-        for (int pos = 0; pos <= max_pos; ++pos) {
-            if (points.count(pos)) {
-                for (const auto& [t, i] : points[pos]) {
-                    if (t) {
-                        bst.emplace(i);
-                    } else {
-                        bst.erase(i);
-                    }
-                }
-            }
+        int prev = -1;
+        for (const auto& [pos, v] : points) {
             if (!empty(bst)) {
-                ++result[*begin(bst)];
+                result[*begin(bst)] += pos - prev;
             }
+            prev = pos;
+            for (const auto& [t, i] : v) {
+                if (t) {
+                    bst.emplace(i);
+                } else {
+                    bst.erase(i);
+                }
+            }            
         }
         return result;
     }
