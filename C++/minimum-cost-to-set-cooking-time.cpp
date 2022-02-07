@@ -16,7 +16,7 @@ public:
             }
             return result;
         };
-        int m = targetSeconds / 60, s =targetSeconds % 60;
+        int m = targetSeconds / 60, s = targetSeconds % 60;
         return min(cost(m, s), cost(m - 1, s + 60));
     }
 };
