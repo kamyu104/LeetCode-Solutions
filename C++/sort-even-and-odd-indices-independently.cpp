@@ -18,16 +18,14 @@ public:
                 x = ~x;  // restored
             }
         };
-        const auto& index = [&nums](int i) {
+        partition([&nums](int i) {
             return (i % 2 == 0) ? i / 2 : (static_cast<int>(size(nums)) + 1) / 2 + i / 2;
-        };
-        partition(index, &nums);
+        }, &nums);
         inplace_counting_sort(&nums, 0, (size(nums) + 1) / 2 - 1, false);
         inplace_counting_sort(&nums, (size(nums) + 1) / 2, size(nums) - 1, true);
-        const auto& inverse_index = [&nums](int i) {
+        partition([&nums](int i) {
             return (i < (size(nums) + 1) / 2) ? 2 * i : 1 + 2 * (i - (size(nums) + 1) / 2);
-        };
-        partition(inverse_index, &nums);
+        }, &nums);
         return nums;
     }
 
@@ -83,16 +81,14 @@ public:
                 x = ~x;  // restore values
             }
         };
-        const auto& index = [&nums](int i) {
+        partition([&nums](int i) {
             return (i % 2 == 0) ? i / 2 : (static_cast<int>(size(nums)) + 1) / 2 + i / 2;
-        };
-        partition(index, &nums);
+        }, &nums);
         sort(begin(nums), begin(nums) + (size(nums) + 1) / 2);
         sort(begin(nums) + (size(nums) + 1) / 2, end(nums), greater<int>());
-        const auto& inverse_index = [&nums](int i) {
+        partition([&nums](int i) {
             return (i < (size(nums) + 1) / 2) ? 2 * i : 1 + 2 * (i - (size(nums) + 1) / 2);
-        };
-        partition(inverse_index, &nums);
+        }, &nums);
         return nums;
     }
 };
