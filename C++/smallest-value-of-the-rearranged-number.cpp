@@ -6,10 +6,7 @@ class Solution {
 public:
     long long smallestNumber(long long num) {
         int64_t sign = (num >= 0) ? 1 : -1;
-        if (num < 0) {
-            num = -num;
-        }
-        string nums = to_string(num);
+        string nums = to_string(abs(num));
         if (sign == 1) {
             sort(begin(nums), end(nums));
         } else {
