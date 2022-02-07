@@ -49,7 +49,6 @@ private:
         for (int i = 1; i < size(count); ++i) {
             count[i] += count[i - 1];
         }
-        vector<int> result(size(*nums));
         for (int i = size(*nums) - 1; i >= 0; --i) {  // inplace but unstable sort
             if ((*nums)[i] < 0) {  // processed
                 continue;
