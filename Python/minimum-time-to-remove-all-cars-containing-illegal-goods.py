@@ -8,10 +8,10 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        result, dp = len(s), 0
+        result, left = len(s), 0
         for i, c in enumerate(s):
-            dp = min(dp+2*(c == '1'), i+1)
-            result = min(result, dp+((len(s)-1)-i))
+            left = min(left+2*(c == '1'), i+1)
+            result = min(result, left+((len(s)-1)-i))
         return result
 
 
