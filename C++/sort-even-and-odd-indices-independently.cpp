@@ -7,11 +7,10 @@ public:
     vector<int> sortEvenOdd(vector<int>& nums) {
         const auto& partition = [](const auto& index, vector<int> *nums) {
             for (int i = 0; i < size(*nums); ++i) {
-                int j = index(i);
-                while ((*nums)[i] > 0) {
-                    swap((*nums)[i], (*nums)[j]);
-                    (*nums)[j] = ~(*nums)[j];  // visited
+                int j = i;
+                while ((*nums)[i] >= 0) {
                     j = index(j);
+                    tie((*nums)[i], (*nums)[j]) = pair((*nums)[j], ~(*nums)[i]);
                 }
             }
             for (auto& x : (*nums)) {
@@ -46,12 +45,11 @@ private:
             if ((*nums)[i] < 0) {  // processed
                 continue;
             }
-            while (i != left + count[(*nums)[i]] - 1) {
+            while ((*nums)[i] >= 0) {
                 --count[(*nums)[i]];
-                tie((*nums)[left + count[(*nums)[i]]], (*nums)[i]) = pair(~(*nums)[i], (*nums)[left + count[(*nums)[i]]]);
+                const int j = left + count[(*nums)[i]];
+                tie((*nums)[i], (*nums)[j]) = pair((*nums)[j], ~(*nums)[i]);
             }
-            --count[(*nums)[i]];
-            (*nums)[i] = ~(*nums)[i];
         }
         for (int i = left; i <= right; ++i) {
             (*nums)[i] = ~(*nums)[i];  // restore values
@@ -70,11 +68,10 @@ public:
     vector<int> sortEvenOdd(vector<int>& nums) {
         const auto& partition = [](const auto& index, vector<int> *nums) {
             for (int i = 0; i < size(*nums); ++i) {
-                int j = index(i);
-                while ((*nums)[i] > 0) {
-                    swap((*nums)[i], (*nums)[j]);
-                    (*nums)[j] = ~(*nums)[j];  // processed
+                int j = i;
+                while ((*nums)[i] >= 0) {
                     j = index(j);
+                    tie((*nums)[i], (*nums)[j]) = pair((*nums)[j], ~(*nums)[i]);
                 }
             }
             for (auto& x : (*nums)) {
