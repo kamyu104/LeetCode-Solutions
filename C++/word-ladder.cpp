@@ -10,7 +10,6 @@ public:
             return 0;
         }
         int ladder = 2;
-        unordered_map<string, unordered_set<string>> tree;
         unordered_set<string> left = {beginWord}, right = {endWord};
         while (!empty(left)) {
             for (const auto& word : left) {
