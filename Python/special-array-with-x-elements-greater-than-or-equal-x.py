@@ -37,13 +37,10 @@ class Solution2(object):
             for i in xrange(1, len(count)):
                 count[i] += count[i-1]
             for i in reversed(xrange(len(nums))):  # inplace but unstable sort
-                if nums[i] < 0:  # processed
-                    continue
-                while i != count[nums[i]]-1:
+                while nums[i] >= 0:
                     count[nums[i]] -= 1
-                    nums[count[nums[i]]], nums[i] = ~nums[i], nums[count[nums[i]]]
-                count[nums[i]] -= 1
-                nums[i] = ~nums[i]
+                    j = count[nums[i]]
+                    nums[i], nums[j] = nums[j], ~nums[i]
             for i in xrange(len(nums)):
                 nums[i] = ~nums[i]  # restore values
             if reverse:  # unstable sort
