@@ -42,9 +42,6 @@ private:
             count[i] += count[i - 1];
         }
         for (int i = right; i >= left; --i) {  // inplace but unstable sort
-            if ((*nums)[i] < 0) {  // processed
-                continue;
-            }
             while ((*nums)[i] >= 0) {
                 --count[(*nums)[i]];
                 const int j = left + count[(*nums)[i]];
