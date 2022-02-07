@@ -9,14 +9,8 @@ class Solution(object):
         :type pivot: int
         :rtype: List[int]
         """
-        less = great = 0
-        for x in nums:
-            if x < pivot:
-                less += 1
-            elif x > pivot:
-                great += 1
         result = [pivot]*len(nums)
-        left, right = 0, len(nums)-great
+        left, right = 0, len(nums)-sum(x > pivot for x in nums)
         for x in nums:
             if x < pivot:
                 result[left] = x
