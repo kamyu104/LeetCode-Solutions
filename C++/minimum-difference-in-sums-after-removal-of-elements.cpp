@@ -9,7 +9,7 @@ public:
         for (int i = 0; i < size(nums) / 3; ++i) {
             max_heap.emplace(nums[i]);
         }
-        vector<int64_t> prefix(size(nums) / 3 + 1, accumulate(cbegin(nums), cbegin(nums) + size(nums) / 3, 0ull));
+        vector<int64_t> prefix(size(nums) / 3 + 1, accumulate(cbegin(nums), cbegin(nums) + size(nums) / 3, 0ll));
         for (int i = 0; i < size(nums) / 3; ++i) {
             max_heap.emplace(nums[i + size(nums) / 3]);
             const int x = max_heap.top(); max_heap.pop();
@@ -20,7 +20,7 @@ public:
         for (int i = size(nums) - 1; i >= size(nums) / 3 * 2; --i) {
             min_heap.emplace(nums[i]);
         }
-        int64_t suffix = accumulate(cbegin(nums) + size(nums) / 3 * 2, cend(nums), 0ull);
+        int64_t suffix = accumulate(cbegin(nums) + size(nums) / 3 * 2, cend(nums), 0ll);
         int64_t result = prefix[size(nums) / 3] - suffix;
         for (int i = size(nums) / 3 - 1; i >= 0; --i) {
             min_heap.emplace(nums[i + size(nums) / 3]);
