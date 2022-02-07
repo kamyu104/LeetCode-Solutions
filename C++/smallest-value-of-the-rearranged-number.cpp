@@ -28,15 +28,11 @@ private:
             count[i] += count[i - 1];
         }
         for (int i = size(*nums) - 1; i >= 0; --i) {  // inplace but unstable sort
-            if ((*nums)[i] < 0) {  // processed
-                continue;
-            }
-            while (i != count[(*nums)[i]] - 1) {
+            while ((*nums)[i] >= 0) {
                 --count[(*nums)[i]];
-                tie((*nums)[count[(*nums)[i]]], (*nums)[i]) = pair(~(*nums)[i], (*nums)[count[(*nums)[i]]]);
+                const int j = count[(*nums)[i]];
+                tie((*nums)[i], (*nums)[j]) = pair((*nums)[j], ~(*nums)[i]);
             }
-            --count[(*nums)[i]];
-            (*nums)[i] = ~(*nums)[i];
         }
         for (auto& num : *nums) {
             num = ~num;  // restore values
