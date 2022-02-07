@@ -5,10 +5,11 @@
 class Solution {
 public:
     int minimumTime(string s) {
-        int result = size(s), left = 0;
-        for (int i = 0; i < size(s); ++i) {
-            left = min(left + 2 * (s[i] == '1'), i + 1);
-            result = min(result, left + ((static_cast<int>(size(s)) - 1) - i));
+        int left = 0;
+        int result = left + size(s);
+        for (int i = 1; i <= size(s); ++i) {
+            left = min(left + 2 * (s[i - 1] == '1'), i);
+            result = min(result, left + static_cast<int>(size(s)) - i);
         }
         return result;
     }
