@@ -441,6 +441,7 @@
 1882 | [Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/) | [C++](./C++/process-tasks-using-servers.cpp) [Python](./Python/process-tasks-using-servers.py) | _O(n + mlogn)_ | _O(n)_ | Medium | | |
 1962 | [Remove Stones to Minimize the Total](https://leetcode.com/problems/remove-stones-to-minimize-the-total/) | [C++](./C++/remove-stones-to-minimize-the-total.cpp) [Python](./Python/remove-stones-to-minimize-the-total.py) | _O(klogn)_ | _O(1)_ | Medium | | |
 2054 | [Two Best Non-Overlapping Events](https://leetcode.com/problems/two-best-non-overlapping-events/) | [C++](./C++/two-best-non-overlapping-events.cpp) [Python](./Python/two-best-non-overlapping-events.py) | _O(nlogn)_ | _O(n)_ | Medium | | Line Sweep, Heap |
+2163 | [Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/) | [C++](./C++/minimum-difference-in-sums-after-removal-of-elements.cpp) [Python](./Python/minimum-difference-in-sums-after-removal-of-elements.py) | _O(nlogn)_ | _O(n)_ | Hard | | Heap, Prefix Sum |
 
 <br/>
 <div align="right">
@@ -702,6 +703,8 @@
 2021 | [Brightest Position on Street](https://leetcode.com/problems/brightest-position-on-street/) | [C++](./C++/brightest-position-on-street.cpp) [Python](./Python/brightest-position-on-street.py) | _O(nlogn)_   | _O(n)_        | Medium         | 🔒 | Line Sweep
 2070 | [Most Beautiful Item for Each Query](https://leetcode.com/problems/most-beautiful-item-for-each-query/) | [C++](./C++/most-beautiful-item-for-each-query.cpp) [Python](./Python/most-beautiful-item-for-each-query.py) | _O(nlogn + qlogn)_ | _O(1)_ | Medium | | Sort, Binary Search |
 2089 | [Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/) | [C++](./C++/find-target-indices-after-sorting-array.cpp) [Python](./Python/find-target-indices-after-sorting-array.py) | _O(n)_ | _O(1)_ | Easy | | Counting Sort |
+2158 | [Amount of New Area Painted Each Day](https://leetcode.com/problemsamount-of-new-area-painted-each-day/) | [C++](./C++/amount-of-new-area-painted-each-day.cpp) [Python](./Python/amount-of-new-area-painted-each-day.py) | _O(nlogr)_   | _O(r)_        | Hard         | 🔒 | Line Sweep, Sorted List, Heap, Segment Tree
+2164 | [Sort Even and Odd Indices Independently](https://leetcode.com/problems/sort-even-and-odd-indices-independently/) | [C++](./C++/sort-even-and-odd-indices-independently.cpp) [Python](./Python/sort-even-and-odd-indices-independently.py) | _O(n)_ | _O(c)_ | Easy | | Counting Sort, Inplace |
 
 <br/>
 <div align="right">
@@ -760,6 +763,7 @@
 2107 | [Number of Unique Flavors After Sharing K Candies](https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/) | [C++](./C++/number-of-unique-flavors-after-sharing-k-candies.cpp) [Python](./Python/number-of-unique-flavors-after-sharing-k-candies.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Sliding Window
 2134 | [Minimum Swaps to Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/) | [C++](./C++/minimum-swaps-to-group-all-1s-together-ii.cpp) [Python](./Python/minimum-swaps-to-group-all-1s-together-ii.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window
 2149 | [Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | [C++](./C++/rearrange-array-elements-by-sign.cpp) [Python](./Python/rearrange-array-elements-by-sign.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
+2161 | [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) | [C++](./C++/partition-array-according-to-given-pivot.cpp) [Python](./Python/partition-array-according-to-given-pivot.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers
 
 <br/>
 <div align="right">
@@ -1068,6 +1072,7 @@
 2088 | [Count Fertile Pyramids in a Land](https://leetcode.com/problems/count-fertile-pyramids-in-a-land/) | [C++](./C++/count-fertile-pyramids-in-a-land.cpp) [Python](./Python/count-fertile-pyramids-in-a-land.py) | _O(m * n)_ | _O(n)_ | Hard | | DP
 2140 | [Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/) | [C++](./C++/solving-questions-with-brainpower.cpp) [Python](./Python/solving-questions-with-brainpower.py) | _O(n)_ | _O(n)_ | Medium | | DP
 2143 | [Choose Numbers From Two Arrays in Range](https://leetcode.com/problems/choose-numbers-from-two-arrays-in-range/) | [C++](./C++/choose-numbers-from-two-arrays-in-range.cpp) [Python](./Python/choose-numbers-from-two-arrays-in-range.py) | _O(n^2 * v)_ | _O(n * v)_ | Hard | 🔒 | DP
+2167 | [Minimum Time to Remove All Cars Containing Illegal Goods](https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/) | [C++](./C++/minimum-time-to-remove-all-cars-containing-illegal-goods.cpp) [Python](./Python/minimum-time-to-remove-all-cars-containing-illegal-goods.py) | _O(n)_ | _O(1)_ | Hard || DP
 
 <br/>
 <div align="right">
@@ -1200,6 +1205,8 @@
 2141 | [Maximum Running Time of N Computers](https://leetcode.com/problems/maximum-running-time-of-n-computers/) | [C++](./C++/maximum-running-time-of-n-computers.cpp) [Python](./Python/maximum-running-time-of-n-computers.py) | _O(nlogm)_ | _O(1)_ | Hard | | Greedy, Binary Search |
 2144 | [Minimum Cost of Buying Candies With Discount](https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/) | [C++](./C++/minimum-cost-of-buying-candies-with-discount.cpp) [Python](./Python/minimum-cost-of-buying-candies-with-discount.py) | _O(nlogn)_ | _O(1)_ | Easy | | Greedy, Sort |
 2147 | [Number of Ways to Divide a Long Corridor](https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/) | [C++](./C++/number-of-ways-to-divide-a-long-corridor.cpp) [Python](./Python/number-of-ways-to-divide-a-long-corridor.py) | _O(n)_ | _O(1)_ | Hard | | Greedy, Combinatorics |
+2160 | [Minimum Sum of Four Digit Number After Splitting Digits](https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/) | [C++](./C++/minimum-sum-of-four-digit-number-after-splitting-digits.cpp) [Python](./Python/minimum-sum-of-four-digit-number-after-splitting-digits.py) | _O(1)_ | _O(1)_ | Easy | | Greedy |
+2165 | [Smallest Value of the Rearranged Number](https://leetcode.com/problems/smallest-value-of-the-rearranged-number/) | [C++](./C++/smallest-value-of-the-rearranged-number.cpp) [Python](./Python/smallest-value-of-the-rearranged-number.py) | _O(d)_ | _O(d)_ | Medium | | Greedy, Counting Sort |
 
 <br/>
 <div align="right">
@@ -1277,6 +1284,7 @@
 1138 | [Alphabet Board Path](https://leetcode.com/problems/alphabet-board-path/)  | [C++](./C++/alphabet-board-path.cpp) [Python](./Python/alphabet-board-path.py) | _O(n)_| _O(1)_| Medium           ||| 
 1243 | [Array Transformation](https://leetcode.com/problems/array-transformation/) | [C++](./C++/array-transformation.cpp) [Python](./Python/array-transformation.py) | _O(n^2)_ | _O(n)_ | Easy           ||| 
 2061 | [Number of Spaces Cleaning Robot Cleaned](https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/) | [C++](./C++/number-of-spaces-cleaning-robot-cleaned.cpp) [Python](./Python/number-of-spaces-cleaning-robot-cleaned.py) | _O(m * n)_ | _O(1)_ | Medium           |🔒|| 
+2162 | [Minimum Cost to Set Cooking Time](https://leetcode.com/problems/minimum-cost-to-set-cooking-time/) | [C++](./C++/minimum-cost-to-set-cooking-time.cpp) [Python](./Python/minimum-cost-to-set-cooking-time.py) | _O(1)_ | _O(1)_ | Medium           || 
 
 <br/>
 <div align="right">
@@ -1327,6 +1335,7 @@
 2069 | [Walking Robot Simulation II](https://leetcode.com/problems/walking-robot-simulation-ii/) | [C++](./C++/walking-robot-simulation-ii.cpp) [Python](./Python/walking-robot-simulation-ii.py) | _O(1)_ | _O(1)_ | Medium | | Simulation, Math
 2080 | [Range Frequency Queries](https://leetcode.com/problems/range-frequency-queries/) | [C++](./C++/range-frequency-queries.cpp) [Python](./Python/range-frequency-queries.py) | ctor: _O(n)_<br>query: _O(logn)_ | _O(n)_ | Medium | | Binary Search
 2102 | [Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/) | [C++](./C++/sequentially-ordinal-rank-tracker.cpp) [Python](./Python/sequentially-ordinal-rank-tracker.py) | add: _O(logn)_<br>get: _O(logn)_ | _O(n)_ | Hard | | Sorted List
+2166 | [Design Bitset](https://leetcode.com/problems/design-bitset/) | [C++](./C++/design-bitset.cpp) [Python](./Python/design-bitset.py) | ctor: _O(n)_<br>fix: _O(1)_<br>fix: _O(1)_<br>unfix: _O(1)_<br>flip: _O(1)_<br>all: _O(1)_<br>one: _O(1)_<br>count: _O(1)_<br>toString: _O(n)_ | _O(n)_ | Medium | |
 
 <br/>
 <div align="right">
@@ -1502,6 +1511,7 @@
 2118 | [Build the Equation](https://leetcode.com/problems/build-the-equation/) | [MySQL](./MySQL/build-the-equation.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 2142 | [The Number of Passengers in Each Bus I](https://leetcode.com/problems/the-number-of-passengers-in-each-bus-i/) | [MySQL](./MySQL/the-number-of-passengers-in-each-bus-i.sql) | _O(p * b + blogb)_ | _O(p * b)_       | Medium           |🔒||
 2153 | [The Number of Passengers in Each Bus II](https://leetcode.com/problems/the-number-of-passengers-in-each-bus-ii/) | [MySQL](./MySQL/the-number-of-passengers-in-each-bus-ii.sql) | _O(p * b + blogb)_ | _O(p * b)_       | Hard           |🔒||
+2159 | [Order Two Columns Independently](https://leetcode.com/problems/order-two-columns-independently/) | [MySQL](./MySQL/order-two-columns-independently.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
