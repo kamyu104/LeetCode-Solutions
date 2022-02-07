@@ -8,6 +8,15 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
+        def partition(index, nums):
+            for i in xrange(len(nums)):
+                j = index(i)
+                while nums[i] > 0:
+                    nums[i], nums[j] = nums[j], ~nums[i]  # processed
+                    j = index(j)
+            for i in xrange(len(nums)):
+                nums[i] = ~nums[i]  # restore values
+
         def inplace_counting_sort(nums, left, right, reverse=False):  # Time: O(n)
             if right-left+1 == 0:
                 return
@@ -31,26 +40,11 @@ class Solution(object):
                     nums[left], nums[right] = nums[right], nums[left]
                     left += 1
                     right -= 1
-    
-        def partition(index, nums):
-            for i in xrange(len(nums)):
-                j = index(i)
-                while nums[i] > 0:
-                    nums[i], nums[j] = nums[j], ~nums[i]  # processed
-                    j = index(j)
-            for i in xrange(len(nums)):
-                nums[i] = ~nums[i]  # restore values
-        
-        def index(i):
-            return i//2 if i%2 == 0 else (len(nums)+1)//2+i//2
 
-        def inverse_index(i):
-            return 2*i if i < (len(nums)+1)//2 else 1+2*(i-(len(nums)+1)//2)
-
-        partition(index, nums)
+        partition(lambda i: i//2 if i%2 == 0 else (len(nums)+1)//2+i//2, nums)
         inplace_counting_sort(nums, 0, (len(nums)+1)//2-1)
         inplace_counting_sort(nums, (len(nums)+1)//2, len(nums)-1, True)
-        partition(inverse_index, nums)
+        partition(lambda i: 2*i if i < (len(nums)+1)//2 else 1+2*(i-(len(nums)+1)//2), nums)
         return nums
 
 
@@ -72,15 +66,9 @@ class Solution2(object):
             for i in xrange(len(nums)):
                 nums[i] = ~nums[i]  # restore values
         
-        def index(i):
-            return i//2 if i%2 == 0 else (len(nums)+1)//2+i//2
-
-        def inverse_index(i):
-            return 2*i if i < (len(nums)+1)//2 else 1+2*(i-(len(nums)+1)//2)
-
-        partition(index, nums)
+        partition(lambda i: i//2 if i%2 == 0 else (len(nums)+1)//2+i//2, nums)
         nums[:(len(nums)+1)//2], nums[(len(nums)+1)//2:] = sorted(nums[:(len(nums)+1)//2]), sorted(nums[(len(nums)+1)//2:], reverse=True)
-        partition(inverse_index, nums)
+        partition(lambda i: 2*i if i < (len(nums)+1)//2 else 1+2*(i-(len(nums)+1)//2), nums)
         return nums
 
 
