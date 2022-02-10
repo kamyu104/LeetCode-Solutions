@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2167%20%2F%202167-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2168%20%2F%202168-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -356,6 +356,7 @@
 2138 | [Divide a String Into Groups of Size k](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/) | [C++](./C++/divide-a-string-into-groups-of-size-k.cpp) [Python](./Python/divide-a-string-into-groups-of-size-k.py) | _O(n)_ | _O(1)_ | Easy || |
 2156 | [Find Substring With Given Hash Value](https://leetcode.com/problems/find-substring-with-given-hash-value/) | [C++](./C++/find-substring-with-given-hash-value.cpp) [Python](./Python/find-substring-with-given-hash-value.py) | _O(n)_ | _O(1)_ | Medium | | `Rabin-Karp Algorithm`, Rolling Hash
 2157 | [Groups of Strings](https://leetcode.com/problems/groups-of-strings/) | [C++](./C++/groups-of-strings.cpp) [Python](./Python/groups-of-strings.py) | _O(26 * n)_ | _O(26 * n)_ | Hard | | Bitmasks, Union Find
+2168 | [Unique Substrings With Equal Digit Frequency](https://leetcode.com/problems/unique-substrings-with-equal-digit-frequency/) | [C++](./C++/unique-substrings-with-equal-digit-frequency.cpp) [Python](./Python/unique-substrings-with-equal-digit-frequency.py) | _O(n^2)_ | _O(n^2)_ | Medium | 🔒 | `Rabin-Karp Algorithm`, Rolling Hash
 
 <br/>
 <div align="right">
