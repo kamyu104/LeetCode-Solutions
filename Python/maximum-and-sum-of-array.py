@@ -88,8 +88,8 @@ class Solution3(object):
             return result
 
         dp = [0]*(3**numSlots)
-        for mask in xrange(len(dp)):
-            i = 2*numSlots-count(mask)
+        for mask in xrange(1, len(dp)):
+            i = count(mask)-1
             x = nums[i] if i < len(nums) else 0
             base = 1
             for slot in xrange(1, numSlots+1):
