@@ -68,3 +68,26 @@ class Solution2(object):
         """
         adj = [[-((nums[i] if i < len(nums) else 0) &(x//2))for x in xrange(2, (2*numSlots+1)+1)] for i in xrange(2*numSlots)]
         return -sum(adj[r][c] for r, c in itertools.izip(*hungarian(adj)))    
+
+ 
+# Time:  O(n * 3^n)
+# Space: O(3^n)
+# dp
+class Solution3(object):
+    def maximumANDSum(self, nums, numSlots):
+        """
+        :type nums: List[int]
+        :type numSlots: int
+        :rtype: int
+        """
+        dp = [0]*(3**numSlots)
+        for x in nums:
+            new_dp = [0]*(3**numSlots)
+            for mask, i in enumerate(dp):
+                curr = 1
+                for slot in xrange(1, numSlots+1):
+                    if mask//curr%3:
+                        new_dp[mask] = max(new_dp[mask], (x&slot)+dp[mask-curr])
+                    curr *= 3
+            dp = new_dp
+        return dp[-1]
