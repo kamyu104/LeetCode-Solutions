@@ -1,5 +1,5 @@
-# Time:  O(n^3)
-# Space: O(n^2)
+# Time:  O(s^2 * n)
+# Space: O(s * n)
 
 # weighted bipartite matching solution
 class Solution(object):
@@ -52,8 +52,8 @@ class Solution(object):
         return -hungarian([[-((nums[i] if i < len(nums) else 0) &(x//2))for x in xrange(2, (2*numSlots+1)+1)] for i in xrange(2*numSlots)])[0]
 
 
-# Time:  O(n^3)
-# Space: O(n^2)
+# Time:  O(s^2 * n)
+# Space: O(s * n)
 from scipy.optimize import linear_sum_assignment as hungarian
 import itertools
 
@@ -69,9 +69,9 @@ class Solution2(object):
         adj = [[-((nums[i] if i < len(nums) else 0) &(x//2))for x in xrange(2, (2*numSlots+1)+1)] for i in xrange(2*numSlots)]
         return -sum(adj[r][c] for r, c in itertools.izip(*hungarian(adj)))    
 
- 
-# Time:  O(n * 3^n)
-# Space: O(3^n)
+
+# Time:  O(n * s * 3^s)
+# Space: O(3^s)
 # dp
 class Solution3(object):
     def maximumANDSum(self, nums, numSlots):
