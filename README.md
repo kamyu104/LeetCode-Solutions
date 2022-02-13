@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2168%20%2F%202168-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2172%20%2F%202172-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -540,6 +540,7 @@
 2120 | [Execution of All Suffix Instructions Staying in a Grid](https://leetcode.com/problems/execution-of-all-suffix-instructions-staying-in-a-grid/) | [C++](./C++/execution-of-all-suffix-instructions-staying-in-a-grid.cpp) [Python](./Python/execution-of-all-suffix-instructions-staying-in-a-grid.py) | _O(m)_ | _O(m)_ | Medium || 
 2150 | [Find All Lonely Numbers in the Array](https://leetcode.com/problems/find-all-lonely-numbers-in-the-array/) | [C++](./C++/find-all-lonely-numbers-in-the-array.cpp) [Python](./Python/find-all-lonely-numbers-in-the-array.py) | _O(n)_ | _O(n)_ | Medium || 
 2154 | [Keep Multiplying Found Values by Two](https://leetcode.com/problems/keep-multiplying-found-values-by-two/) | [C++](./C++/keep-multiplying-found-values-by-two.cpp) [Python](./Python/keep-multiplying-found-values-by-two.py) | _O(n)_ | _O(n)_ | Easy || 
+2170 | [Minimum Operations to Make the Array Alternating](https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/) | [C++](./C++/minimum-operations-to-make-the-array-alternating.cpp) [Python](./Python/minimum-operations-to-make-the-array-alternating.py) | _O(n)_ | _O(n)_ | Medium ||  Freq Table
 
 <br/>
 <div align="right">
@@ -656,6 +657,8 @@
 2145 | [Count the Hidden Sequences](https://leetcode.com/problems/count-the-hidden-sequences/)|[C++](./C++/count-the-hidden-sequences.cpp) [Python](./Python/count-the-hidden-sequences.py)| _O(n)_     | _O(1)_         | Medium         | | Math
 2148 | [Count Elements With Strictly Smaller and Greater Elements](https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/)|[C++](./C++/count-elements-with-strictly-smaller-and-greater-elements.cpp) [Python](./Python/count-elements-with-strictly-smaller-and-greater-elements.py)| _O(n)_     | _O(1)_         | Easy         | | Math
 2152 | [Minimum Number of Lines to Cover Points](https://leetcode.com/problems/minimum-number-of-lines-to-cover-points/)|[C++](./C++/minimum-number-of-lines-to-cover-points.cpp) [Python](./Python/minimum-number-of-lines-to-cover-points.py)| _O(n * 2^n)_     | _O(n^2)_         | Medium         | 🔒 | Math, Hash Table, Bitmasks
+2169 | [Count Operations to Obtain Zero](https://leetcode.com/problems/count-operations-to-obtain-zero/)|[C++](./C++/count-operations-to-obtain-zero.cpp) [Python](./Python/count-operations-to-obtain-zero.py)| _O(log(min(m, n)))_     | _O(1)_         | Easy         | | Math
+2171 | [Removing Minimum Number of Magic Beans](https://leetcode.com/problems/removing-minimum-number-of-magic-beans/)|[C++](./C++/removing-minimum-number-of-magic-beans.cpp) [Python](./Python/removing-minimum-number-of-magic-beans.py)| _O(nlogn)_     | _O(1)_         | Medium         | | Math
 
 <br/>
 <div align="right">
@@ -1256,6 +1259,7 @@
 2097 | [Valid Arrangement of Pairs](https://leetcode.com/problems/valid-arrangement-of-pairs/) | [C++](./C++/valid-arrangement-of-pairs.cpp)  [Python](./Python/valid-arrangement-of-pairs.py)  |  _O(\|V\| + \|E\|)_ | _O(\|V\| + \|E\|)_ | Hard | variant of [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) | `Hierholzer's Algorithm`, Eulerian Path |
 2123 | [Minimum Operations to Remove Adjacent Ones in Matrix](https://leetcode.com/problems/minimum-operations-to-remove-adjacent-ones-in-matrix/) | [C++](./C++/minimum-operations-to-remove-adjacent-ones-in-matrix.cpp) [Python](./Python/minimum-operations-to-remove-adjacent-ones-in-matrix.py) | _O(m * n * sqrt(m * n))_ | _O(m + n)_ | Hard | variant of [Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam/), 🔒 | `Hopcroft-Karp Bipartite Matching`, Maximum Independent Set |
 2127 | [Maximum Employees to Be Invited to a Meeting](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/) | [C++](./C++/maximum-employees-to-be-invited-to-a-meeting.cpp) [Python](./Python/maximum-employees-to-be-invited-to-a-meeting.py) | _O(n)_ | _O(n)_ | Hard |  |  |
+2172 | [Maximum AND Sum of Array](https://leetcode.com/problems/maximum-and-sum-of-array/) | [C++](./C++/maximum-and-sum-of-array.cpp) [Python](./Python/maximum-and-sum-of-array.py) | _O(n^3)_ | _O(n^2)_ | Hard | variant of [Maximum Compatibility Score Sum](https://leetcode.com/problems/maximum-compatibility-score-sum/) | DP, `Hungarian Weighted Bipartite Matching` |
 
 <br/>
 <div align="right">
