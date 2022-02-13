@@ -69,9 +69,10 @@ public:
         vector<int> dp(pow(3, numSlots));
         for (int mask = 0; mask < size(dp); ++mask) {
             const int i = 2 * numSlots - count(mask);
+            const int x = (i < size(nums)) ? nums[i] : 0;
             for (int slot = 1, base = 1; slot <= numSlots; ++slot, base *= 3) {
                 if (mask / base % 3) {
-                    dp[mask] = max(dp[mask], ((i < size(nums) ? nums[i] : 0) & slot) + dp[mask - base]);
+                    dp[mask] = max(dp[mask], (x & slot) + dp[mask - base]);
                 }
             }
         }
