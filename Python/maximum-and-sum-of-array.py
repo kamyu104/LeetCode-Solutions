@@ -116,10 +116,10 @@ class Solution4(object):
             base = 1
             for slot in xrange(1, numSlots+1):
                 if mask//base%3:
-                     lookup[mask] = max(lookup[mask], (x&slot)+memoiztion(i+1, mask-base))
+                     lookup[mask] = max(lookup[mask], (x&slot)+memoiztion(i-1, mask-base))
                 base *= 3
             return lookup[mask]
         
         lookup = [-1]*(3**numSlots)
         lookup[0] = 0
-        return memoiztion(0, 3**numSlots-1)
+        return memoiztion(2*numSlots-1, 3**numSlots-1)
