@@ -90,12 +90,11 @@ class Solution3(object):
         dp = [0]*(3**numSlots)
         for mask in xrange(len(dp)):
             i = 2*numSlots-count(mask)
-            if i >= len(nums):
-                continue
+            x = nums[i] if i < len(nums) else 0
             base = 1
             for slot in xrange(1, numSlots+1):
                 if mask//base%3:
-                    dp[mask] = max(dp[mask], (nums[i]&slot)+dp[mask-base])
+                    dp[mask] = max(dp[mask], (x&slot)+dp[mask-base])
                 base *= 3
         return dp[-1]
 
