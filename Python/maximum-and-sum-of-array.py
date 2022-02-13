@@ -90,7 +90,7 @@ class Solution3(object):
         dp = [0]*(3**numSlots)
         for mask in xrange(len(dp)):
             cnt = count(mask)
-            if not (0 <= 2*numSlots-cnt < len(nums)):
+            if 2*numSlots-cnt >= len(nums):
                 continue
             x = nums[2*numSlots-cnt]
             base = 1
