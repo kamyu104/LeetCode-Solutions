@@ -89,15 +89,15 @@ class Solution3(object):
 
         dp = [0]*(3**numSlots)
         for mask in xrange(len(dp)):
-            curr = 1
             i = count(mask)
+            base = 1
             for slot in xrange(1, numSlots+1):
-                if mask//curr%3:
+                if mask//base%3:
                     dp[mask] = max(dp[mask], (nums[i]&slot)+dp[mask-curr])
-                curr *= 3
+                base *= 3
         return dp[-1]
 
- 
+
 # Time:  O(s * 3^s)
 # Space: O(3^s)
 # memoization, top-down dp (easy to implement but slower)
@@ -114,11 +114,11 @@ class Solution4(object):
                 return 0
             if lookup[mask] != -1:
                 return lookup[mask]
-            curr = 1
+            base = 1
             for slot in xrange(1, numSlots+1):
-                if mask//curr%3:
+                if mask//base%3:
                      lookup[mask] = max(lookup[mask], (nums[i]&slot)+memoiztion(i-1, mask-curr))
-                curr *= 3
+                base *= 3
             return lookup[mask]
         
         lookup = [-1]*(3**numSlots)
