@@ -70,7 +70,7 @@ class Solution2(object):
         return -sum(adj[r][c] for r, c in itertools.izip(*hungarian(adj)))    
 
 
-# Time: O(s * 3^s)
+# Time:  O(s * 3^s)
 # Space: O(3^s)
 # bottom-up dp (hard to implement but faster)
 class Solution3(object):
