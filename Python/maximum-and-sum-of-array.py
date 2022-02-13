@@ -1,5 +1,5 @@
-# Time:  O(s^2 * n)
-# Space: O(s * n)
+# Time:  O(n^3)
+# Space: O(n^2)
 
 # weighted bipartite matching solution
 class Solution(object):
@@ -52,8 +52,8 @@ class Solution(object):
         return -hungarian([[-((nums[i] if i < len(nums) else 0) & (x//2)) for x in xrange(2, (2*numSlots+1)+1)] for i in xrange(2*numSlots)])[0]
 
 
-# Time:  O(s^2 * n)
-# Space: O(s * n)
+# Time:  O(n^3)
+# Space: O(n^2)
 from scipy.optimize import linear_sum_assignment as hungarian
 import itertools
 
@@ -70,8 +70,8 @@ class Solution2(object):
         return -sum(adj[r][c] for r, c in itertools.izip(*hungarian(adj)))    
 
 
-# Time:  O(s * 3^s)
-# Space: O(3^s)
+# Time:  O(n * 3^n)
+# Space: O(3^n)
 # bottom-up dp (hard to implement but faster)
 class Solution3(object):
     def maximumANDSum(self, nums, numSlots):
@@ -100,8 +100,8 @@ class Solution3(object):
         return dp[-1]
 
 
-# Time:  O(s * 3^s)
-# Space: O(3^s)
+# Time:  O(n * 3^n)
+# Space: O(3^n)
 # memoization, top-down dp (easy to implement but slower)
 class Solution4(object):
     def maximumANDSum(self, nums, numSlots):
