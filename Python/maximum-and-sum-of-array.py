@@ -70,10 +70,38 @@ class Solution2(object):
         return -sum(adj[r][c] for r, c in itertools.izip(*hungarian(adj)))    
 
 
+# Time: O(n * s * 3^s)
+# Space: O(3^s)
+# bottom-up dp (hard to implement but faster)
+class Solution3(object):
+    def maximumANDSum(self, nums, numSlots):
+        """
+        :type nums: List[int]
+        :type numSlots: int
+        :rtype: int
+        """
+        def count(x):
+            result = 0
+            while x:
+                result += x%3
+                x //= 3
+            return result
+
+        dp = [0]*(3**numSlots)
+        for mask in xrange(len(dp)):
+            curr = 1
+            i = count(mask)
+            for slot in xrange(1, numSlots+1):
+                if mask//curr%3:
+                    dp[mask] = max(dp[mask], (nums[i]&slot)+dp[mask-curr])
+                curr *= 3
+        return dp[-1]
+
+ 
 # Time:  O(s * 3^s)
 # Space: O(3^s)
-# memoization (top-down dp)
-class Solution3(object):
+# memoization, top-down dp (easy to implement but slower)
+class Solution4(object):
     def maximumANDSum(self, nums, numSlots):
         """
         :type nums: List[int]
@@ -95,26 +123,3 @@ class Solution3(object):
         
         lookup = [-1]*(3**numSlots)
         return memoiztion(len(nums)-1, 3**numSlots-1)
-
- 
-# Time:  O(n * s * 3^s)
-# Space: O(3^s)
-# dp
-class Solution4(object):
-    def maximumANDSum(self, nums, numSlots):
-        """
-        :type nums: List[int]
-        :type numSlots: int
-        :rtype: int
-        """
-        dp = [0]*(3**numSlots)
-        for x in nums:
-            new_dp = [0]*(3**numSlots)
-            for mask, i in enumerate(dp):
-                curr = 1
-                for slot in xrange(1, numSlots+1):
-                    if mask//curr%3:
-                        new_dp[mask] = max(new_dp[mask], (x&slot)+dp[mask-curr])
-                    curr *= 3
-            dp = new_dp
-        return dp[-1]
