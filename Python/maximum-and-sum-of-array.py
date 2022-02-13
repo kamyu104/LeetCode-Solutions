@@ -109,7 +109,7 @@ class Solution4(object):
         :type numSlots: int
         :rtype: int
         """
-        def memoiztion(i, mask):
+        def memoiztion(i, mask):  # i is meta data, which could be derived from mask, just for easy implementation
             if lookup[mask] != -1:
                 return lookup[mask]
             x = nums[i] if i < len(nums) else 0
