@@ -70,10 +70,37 @@ class Solution2(object):
         return -sum(adj[r][c] for r, c in itertools.izip(*hungarian(adj)))    
 
 
+# Time:  O(s * 3^s)
+# Space: O(3^s)
+# memoization (top-down dp)
+class Solution3(object):
+    def maximumANDSum(self, nums, numSlots):
+        """
+        :type nums: List[int]
+        :type numSlots: int
+        :rtype: int
+        """
+        def memoiztion(i, mask):
+            result = 0
+            if i < 0:
+                return 0
+            if lookup[mask] != -1:
+                return lookup[mask]
+            curr = 1
+            for slot in xrange(1, numSlots+1):
+                if mask//curr%3:
+                     lookup[mask] = max(lookup[mask], (nums[i]&slot)+memoiztion(i-1, mask-curr))
+                curr *= 3
+            return lookup[mask]
+        
+        lookup = [-1]*(3**numSlots)
+        return memoiztion(len(nums)-1, 3**numSlots-1)
+
+ 
 # Time:  O(n * s * 3^s)
 # Space: O(3^s)
 # dp
-class Solution3(object):
+class Solution4(object):
     def maximumANDSum(self, nums, numSlots):
         """
         :type nums: List[int]
