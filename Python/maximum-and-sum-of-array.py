@@ -110,17 +110,16 @@ class Solution4(object):
         :rtype: int
         """
         def memoiztion(i, mask):
-            result = 0
-            if i == len(nums):
-                return 0
             if lookup[mask] != -1:
                 return lookup[mask]
+            x = nums[i] if i < len(nums) else 0
             base = 1
             for slot in xrange(1, numSlots+1):
                 if mask//base%3:
-                     lookup[mask] = max(lookup[mask], (nums[i]&slot)+memoiztion(i+1, mask-base))
+                     lookup[mask] = max(lookup[mask], (x&slot)+memoiztion(i+1, mask-base))
                 base *= 3
             return lookup[mask]
         
         lookup = [-1]*(3**numSlots)
+        lookup[0] = 0
         return memoiztion(0, 3**numSlots-1)
