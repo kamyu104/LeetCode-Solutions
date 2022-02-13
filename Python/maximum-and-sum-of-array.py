@@ -67,7 +67,7 @@ class Solution2(object):
         :rtype: int
         """
         adj = [[-((nums[i] if i < len(nums) else 0) & (1+x//2)) for x in xrange(2*numSlots)] for i in xrange(2*numSlots)]
-        return -sum(adj[r][c] for r, c in itertools.izip(*hungarian(adj)))    
+        return -sum(adj[i][j] for i, j in itertools.izip(*hungarian(adj)))    
 
 
 # Time:  O(n * 3^n)
