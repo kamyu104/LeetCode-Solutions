@@ -89,11 +89,14 @@ class Solution3(object):
 
         dp = [0]*(3**numSlots)
         for mask in xrange(len(dp)):
-            i = count(mask)
+            cnt = count(mask)
+            if not (0 <= 2*numSlots-cnt < len(nums)):
+                continue
+            x = nums[2*numSlots-cnt]
             base = 1
             for slot in xrange(1, numSlots+1):
                 if mask//base%3:
-                    dp[mask] = max(dp[mask], (nums[i]&slot)+dp[mask-curr])
+                    dp[mask] = max(dp[mask], (x&slot)+dp[mask-base])
                 base *= 3
         return dp[-1]
 
@@ -110,16 +113,16 @@ class Solution4(object):
         """
         def memoiztion(i, mask):
             result = 0
-            if i < 0:
+            if i == len(nums):
                 return 0
             if lookup[mask] != -1:
                 return lookup[mask]
             base = 1
             for slot in xrange(1, numSlots+1):
                 if mask//base%3:
-                     lookup[mask] = max(lookup[mask], (nums[i]&slot)+memoiztion(i-1, mask-curr))
+                     lookup[mask] = max(lookup[mask], (nums[i]&slot)+memoiztion(i+1, mask-base))
                 base *= 3
             return lookup[mask]
         
         lookup = [-1]*(3**numSlots)
-        return memoiztion(len(nums)-1, 3**numSlots-1)
+        return memoiztion(0, 3**numSlots-1)
