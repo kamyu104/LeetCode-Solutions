@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2172%20%2F%202172-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2173%20%2F%202173-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1517,6 +1517,7 @@
 2142 | [The Number of Passengers in Each Bus I](https://leetcode.com/problems/the-number-of-passengers-in-each-bus-i/) | [MySQL](./MySQL/the-number-of-passengers-in-each-bus-i.sql) | _O(p * b + blogb)_ | _O(p * b)_       | Medium           |🔒||
 2153 | [The Number of Passengers in Each Bus II](https://leetcode.com/problems/the-number-of-passengers-in-each-bus-ii/) | [MySQL](./MySQL/the-number-of-passengers-in-each-bus-ii.sql) | _O(p * b + blogb)_ | _O(p * b)_       | Hard           |🔒||
 2159 | [Order Two Columns Independently](https://leetcode.com/problems/order-two-columns-independently/) | [MySQL](./MySQL/order-two-columns-independently.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2173 | [Longest Winning Streak](https://leetcode.com/problems/longest-winning-streak/) | [MySQL](./MySQL/longest-winning-streak.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
