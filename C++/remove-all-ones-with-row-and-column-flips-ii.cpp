@@ -8,27 +8,27 @@ public:
         static const int INF = numeric_limits<int>::max();
 
         vector<int> rows(size(grid));
-        int bit = 1;
-        for (int i = 0; i < size(grid); ++i) {
-            int mask = 0;
-            for (int j = 0; j < size(grid[0]); ++j) {
-                mask += bit;
-                bit <<= 1;
-            }
-            rows[i] = mask;
-        }
-        vector<int> cols(size(grid[0]));
-        bit = 1;
+        int mask = 0, bit = 1;
         for (int j = 0; j < size(grid[0]); ++j) {
-            int mask = 0;
-            int bit2 = bit;
-            for (int i = 0; i < size(grid); ++i) {
-                mask += bit2;
-                bit2 <<= size(grid[0]);
-                }
-            cols[j] = mask;
+            mask += bit;
             bit <<= 1;
         }
+        for (int i = 0; i < size(grid); ++i) {
+            rows[i] = mask;
+            mask <<= size(grid[0]);
+        }
+
+        vector<int> cols(size(grid[0]));
+        mask = 0, bit = 1;
+        for (int i = 0; i < size(grid); ++i) {
+            mask += bit;
+            bit <<= size(grid[0]);
+        }
+        for (int j = 0; j < size(grid[0]); ++j) {
+            cols[j] = mask;
+            mask <<= 1;
+        }
+
         int full_mask = (1 << (size(grid) * size(grid[0]))) - 1;
         vector<vector<int>> masks(size(grid), vector<int>(size(grid[0]), full_mask));
         int target = 0;
@@ -40,6 +40,7 @@ public:
                 bit <<= 1;
             }
         }
+
         vector<int> dp(target + 1, INF);
         dp[0] = 0;
         for (int mask = 1; mask <= target; ++mask) {
