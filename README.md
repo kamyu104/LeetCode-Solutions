@@ -1077,7 +1077,7 @@
 2140 | [Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/) | [C++](./C++/solving-questions-with-brainpower.cpp) [Python](./Python/solving-questions-with-brainpower.py) | _O(n)_ | _O(n)_ | Medium | | DP
 2143 | [Choose Numbers From Two Arrays in Range](https://leetcode.com/problems/choose-numbers-from-two-arrays-in-range/) | [C++](./C++/choose-numbers-from-two-arrays-in-range.cpp) [Python](./Python/choose-numbers-from-two-arrays-in-range.py) | _O(n^2 * v)_ | _O(n * v)_ | Hard | 🔒 | DP
 2167 | [Minimum Time to Remove All Cars Containing Illegal Goods](https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/) | [C++](./C++/minimum-time-to-remove-all-cars-containing-illegal-goods.cpp) [Python](./Python/minimum-time-to-remove-all-cars-containing-illegal-goods.py) | _O(n)_ | _O(1)_ | Hard || DP
-2174 | [Remove All Ones With Row and Column Flips II](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips-ii/) | [C++](./C++/remove-all-ones-with-row-and-column-flips-ii.cpp) [Python](./Python/remove-all-ones-with-row-and-column-flips-ii.py) | _O((m * n) * 2^(m * n))_ | _O(2^(m * n))_ | Hard || DP, Bitmasks
+2174 | [Remove All Ones With Row and Column Flips II](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips-ii/) | [C++](./C++/remove-all-ones-with-row-and-column-flips-ii.cpp) [Python](./Python/remove-all-ones-with-row-and-column-flips-ii.py) | _O((m * n) * 2^(m * n))_ | _O(2^(m * n))_ | Hard | 🔒 | DP, Bitmasks
 
 <br/>
 <div align="right">
