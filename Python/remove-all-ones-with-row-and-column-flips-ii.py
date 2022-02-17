@@ -17,6 +17,7 @@ class Solution(object):
         for i in xrange(len(grid)):
             rows[i] = mask
             mask <<= len(grid[0])
+
         cols = [0]*len(grid[0])
         mask = 0
         bit = 1
@@ -26,6 +27,7 @@ class Solution(object):
         for j in xrange(len(grid[0])):
             cols[j] = mask
             mask <<= 1
+
         full_mask = (1<<(len(grid)*len(grid[0])))-1
         masks = [[full_mask for _ in xrange(len(grid[0]))] for _ in xrange(len(grid))]
         target, bit = 0, 1
@@ -34,6 +36,7 @@ class Solution(object):
                 target += bit*grid[i][j]
                 masks[i][j] -= (rows[i]+cols[j]-bit)
                 bit <<= 1
+
         dp = [float("inf") for _ in xrange(target+1)]
         dp[0] = 0
         for mask in xrange(1, target+1):
