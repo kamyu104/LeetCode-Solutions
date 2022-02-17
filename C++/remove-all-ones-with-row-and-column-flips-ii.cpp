@@ -46,10 +46,8 @@ public:
         for (int mask = 1; mask <= target; ++mask) {
             for (int i = 0; i < size(grid); ++i) {
                 for (int j = 0; j < size(grid[0]); ++j) {
-                    if (grid[i][j]) {
-                        if (dp[mask & masks[i][j]] != INF) {
-                            dp[mask] = min(dp[mask], dp[mask & masks[i][j]] + 1);
-                        }
+                    if (grid[i][j] && dp[mask & masks[i][j]] != INF) {
+                        dp[mask] = min(dp[mask], dp[mask & masks[i][j]] + 1);
                     }
                 }
             }
