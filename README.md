@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2173%20%2F%202173-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2174%20%2F%202174-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1077,6 +1077,7 @@
 2140 | [Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/) | [C++](./C++/solving-questions-with-brainpower.cpp) [Python](./Python/solving-questions-with-brainpower.py) | _O(n)_ | _O(n)_ | Medium | | DP
 2143 | [Choose Numbers From Two Arrays in Range](https://leetcode.com/problems/choose-numbers-from-two-arrays-in-range/) | [C++](./C++/choose-numbers-from-two-arrays-in-range.cpp) [Python](./Python/choose-numbers-from-two-arrays-in-range.py) | _O(n^2 * v)_ | _O(n * v)_ | Hard | 🔒 | DP
 2167 | [Minimum Time to Remove All Cars Containing Illegal Goods](https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/) | [C++](./C++/minimum-time-to-remove-all-cars-containing-illegal-goods.cpp) [Python](./Python/minimum-time-to-remove-all-cars-containing-illegal-goods.py) | _O(n)_ | _O(1)_ | Hard || DP
+2174 | [Remove All Ones With Row and Column Flips II](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips-ii/) | [C++](./C++/remove-all-ones-with-row-and-column-flips-ii.cpp) [Python](./Python/remove-all-ones-with-row-and-column-flips-ii.py) | _O((m * n) * 2^(m * n))_ | _O(2^(m * n))_ | Hard || DP, Bitmasks
 
 <br/>
 <div align="right">
