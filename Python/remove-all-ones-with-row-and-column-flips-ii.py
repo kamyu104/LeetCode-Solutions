@@ -9,23 +9,23 @@ class Solution(object):
         :rtype: int
         """
         rows = [0]*len(grid)
+        mask = 0
+        bit = 1
+        for i in xrange(len(grid[0])):
+            mask += bit
+            bit <<= 1
+        for i in xrange(len(grid)):
+            rows[i] = mask
+            mask <<= len(grid[0])
+        cols = [0]*len(grid[0])
+        mask = 0
         bit = 1
         for i in xrange(len(grid)):
-            mask = 0
-            for j in xrange(len(grid[0])):
-                mask += bit
-                bit <<= 1
-            rows[i] = mask
-        cols = [0]*len(grid[0])
-        bit = 1
+            mask += bit
+            bit <<= len(grid[0])
         for j in xrange(len(grid[0])):
-            mask = 0
-            bit2 = bit
-            for i in xrange(len(grid)):
-                mask += bit2
-                bit2 <<= len(grid[0])
             cols[j] = mask
-            bit <<= 1
+            mask <<= 1
         full_mask = (1<<(len(grid)*len(grid[0])))-1
         masks = [[full_mask for _ in xrange(len(grid[0]))] for _ in xrange(len(grid))]
         target, bit = 0, 1
