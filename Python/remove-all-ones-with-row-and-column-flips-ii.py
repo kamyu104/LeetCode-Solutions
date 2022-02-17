@@ -9,8 +9,7 @@ class Solution(object):
         :rtype: int
         """
         rows = [0]*len(grid)
-        mask = 0
-        bit = 1
+        mask, bit = 0, 1
         for i in xrange(len(grid[0])):
             mask += bit
             bit <<= 1
@@ -19,8 +18,7 @@ class Solution(object):
             mask <<= len(grid[0])
 
         cols = [0]*len(grid[0])
-        mask = 0
-        bit = 1
+        mask, bit = 0, 1
         for i in xrange(len(grid)):
             mask += bit
             bit <<= len(grid[0])
