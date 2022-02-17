@@ -10,7 +10,7 @@ class Solution(object):
         """
         rows = [0]*len(grid)
         mask, bit = 0, 1
-        for i in xrange(len(grid[0])):
+        for _ in xrange(len(grid[0])):
             mask += bit
             bit <<= 1
         for i in xrange(len(grid)):
@@ -19,7 +19,7 @@ class Solution(object):
 
         cols = [0]*len(grid[0])
         mask, bit = 0, 1
-        for i in xrange(len(grid)):
+        for _ in xrange(len(grid)):
             mask += bit
             bit <<= len(grid[0])
         for j in xrange(len(grid[0])):
