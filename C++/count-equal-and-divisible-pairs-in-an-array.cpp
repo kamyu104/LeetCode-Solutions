@@ -1,4 +1,4 @@
-// Time:  O(n * sqrt(k))
+// Time:  O(nlogk + n * sqrt(k))
 // Space: O(n + sqrt(k)), number of factors of k is at most sqrt(k)
 
 // math, number theory
