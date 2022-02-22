@@ -17,10 +17,9 @@ class Solution(object):
                 x, y = y, x%y
             return x
     
-        cnt = collections.defaultdict(int)
+        cnt = collections.Counter()
         for x in nums:
-            x = gcd(x, k)
-            cnt[x] += 1
+            cnt[gcd(x, k)] += 1
         result = 0
         for x in cnt.iterkeys():
             for y in cnt.iterkeys():
