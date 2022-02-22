@@ -4,22 +4,18 @@
 class Solution {
 public:
     vector<int> shuffle(vector<int>& nums, int n) {
-        static const auto& dest = [](int i, int n) {
+        static const auto& index = [&n](int i) {
             return (i < n) ? 2 * i : 2 * (i - n) + 1;
         };
         for (int i = 0; i < nums.size(); ++i) {
-            if (nums[i] < 0) {
-                continue;
-            }
             int j = i;
-            do {
-                j = dest(j, n);
-                swap(nums[i], nums[j]);
-                nums[j] = -nums[j];
-            } while (j != i);
+            while (nums[i] >= 0) {
+                j = index(j);
+                tie(nums[i], nums[j]) = pair(nums[j], ~nums[i]);
+            }
         }
         for (auto& num : nums) {
-            num = -num;
+            num = ~num;
         }
         return nums;
     }
