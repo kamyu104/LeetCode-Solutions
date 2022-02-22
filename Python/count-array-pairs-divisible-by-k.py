@@ -4,7 +4,7 @@
 import collections
 
 
-# math, combinatorics
+# math, number theory
 class Solution(object):
     def countPairs(self, nums, k):
         """
@@ -34,7 +34,7 @@ class Solution(object):
 import collections
 
 
-# math, combinatorics
+# math, number theory
 class Solution2(object):
     def countPairs(self, nums, k):
         """
