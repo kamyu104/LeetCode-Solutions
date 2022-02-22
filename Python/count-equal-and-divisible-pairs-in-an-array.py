@@ -48,11 +48,11 @@ class Solution2(object):
                 x, y = y, x%y
             return x
     
-        idxs = collections.defaultdict(collections.Counter)
+        cnts = collections.defaultdict(collections.Counter)
         for i, x in enumerate(nums):
-            idxs[x][gcd(i, k)] += 1
+            cnts[x][gcd(i, k)] += 1
         result = 0
-        for cnt in idxs.itervalues():
+        for cnt in cnts.itervalues():
             for x in cnt.iterkeys():
                 for y in cnt.iterkeys():
                     if x > y or x*y%k:
