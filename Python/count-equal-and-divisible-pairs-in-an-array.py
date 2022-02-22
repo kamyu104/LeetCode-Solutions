@@ -4,7 +4,7 @@
 import collections
 
 
-# math
+# math, number theory
 class Solution(object):
     def countPairs(self, nums, k):
         """
