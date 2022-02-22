@@ -8,19 +8,14 @@ class Solution(object):
         :type n: int
         :rtype: List[int]
         """
-        def dest(i, n):
+        def index(i):
             return 2*i if i < n else 2*(i-n)+1
     
         for i in xrange(len(nums)):
-            if nums[i] < 0:
-                continue
             j = i
-            while True:
-                j = dest(j, n)
-                nums[i], nums[j] = nums[j], nums[i]
-                nums[j] = -nums[j]
-                if i == j:
-                    break
+            while nums[i] >= 0:
+                j = index(j)
+                nums[i], nums[j] = nums[j], ~nums[i]  # processed
         for i in xrange(len(nums)):
-            nums[i] = -nums[i]
+            nums[i] = ~nums[i]
         return nums
