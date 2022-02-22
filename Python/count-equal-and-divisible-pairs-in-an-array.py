@@ -1,5 +1,5 @@
-# Time:  O(n * sqrt(n))
-# Space: O(n + sqrt(n)) = O(n)
+# Time:  O(n * sqrt(k))
+# Space: O(n + sqrt(k))
 
 import collections
 
