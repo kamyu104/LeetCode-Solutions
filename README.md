@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2174%20%2F%202174-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2183%20%2F%202183-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -490,6 +490,7 @@
 1948 | [Delete Duplicate Folders in System](https://leetcode.com/problems/delete-duplicate-folders-in-system/) |[C++](./C++/delete-duplicate-folders-in-system.cpp)  [Python](./Python/delete-duplicate-folders-in-system.py) | _O(n * m * l + tlogt + l * t)_ | _O(l * t)_ | Hard         | variant of [Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/) | Trie, DFS, Hash
 2003 | [Smallest Missing Genetic Value in Each Subtree](https://leetcode.com/problems/smallest-missing-genetic-value-in-each-subtree/) |[C++](./C++/smallest-missing-genetic-value-in-each-subtree.cpp)  [Python](./Python/smallest-missing-genetic-value-in-each-subtree.py) | _O(n)_ | _O(n)_ | Hard         | | DFS, Stack
 2096 | [Step-By-Step Directions From a Binary Tree Node to Another](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/) |[C++](./C++/step-by-step-directions-from-a-binary-tree-node-to-another.cpp)  [Python](./Python/step-by-step-directions-from-a-binary-tree-node-to-another.py) | _O(n)_ | _O(h)_ | Medium         | | DFS, Stack
+2179 | [Count Good Triplets in an Array](https://leetcode.com/problems/count-good-triplets-in-an-array/)| [C++](./C++/count-good-triplets-in-an-array.cpp) [Python](./Python/count-good-triplets-in-an-array.py)| _O(nlogn)_ | _O(n)_ | Hard | variant of [Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions/) | BIT, Fenwick Tree |
 
 <br/>
 <div align="right">
@@ -659,6 +660,9 @@
 2152 | [Minimum Number of Lines to Cover Points](https://leetcode.com/problems/minimum-number-of-lines-to-cover-points/)|[C++](./C++/minimum-number-of-lines-to-cover-points.cpp) [Python](./Python/minimum-number-of-lines-to-cover-points.py)| _O(n * 2^n)_     | _O(n^2)_         | Medium         | 🔒 | Math, Hash Table, Bitmasks
 2169 | [Count Operations to Obtain Zero](https://leetcode.com/problems/count-operations-to-obtain-zero/)|[C++](./C++/count-operations-to-obtain-zero.cpp) [Python](./Python/count-operations-to-obtain-zero.py)| _O(log(min(m, n)))_     | _O(1)_         | Easy         | | Math, `Euclidean Algorithm`
 2171 | [Removing Minimum Number of Magic Beans](https://leetcode.com/problems/removing-minimum-number-of-magic-beans/)|[C++](./C++/removing-minimum-number-of-magic-beans.cpp) [Python](./Python/removing-minimum-number-of-magic-beans.py)| _O(nlogn)_     | _O(1)_         | Medium         | | Math, Sort
+2176 | [Count Equal and Divisible Pairs in an Array](https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/)|[C++](./C++/count-equal-and-divisible-pairs-in-an-array.cpp) [Python](./Python/count-equal-and-divisible-pairs-in-an-array.py)| _O(n * sqrt(k))_     | _O(n + sqrt(k))_         | Easy         | | Math
+2177 | [Find Three Consecutive Integers That Sum to a Given Number](https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/)|[C++](./C++/find-three-consecutive-integers-that-sum-to-a-given-number.cpp) [Python](./Python/find-three-consecutive-integers-that-sum-to-a-given-number.py)| _O(1)_     | _O(1)_         | Medium         | | Math
+
 
 <br/>
 <div align="right">
@@ -1212,6 +1216,7 @@
 2147 | [Number of Ways to Divide a Long Corridor](https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/) | [C++](./C++/number-of-ways-to-divide-a-long-corridor.cpp) [Python](./Python/number-of-ways-to-divide-a-long-corridor.py) | _O(n)_ | _O(1)_ | Hard | | Greedy, Combinatorics |
 2160 | [Minimum Sum of Four Digit Number After Splitting Digits](https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/) | [C++](./C++/minimum-sum-of-four-digit-number-after-splitting-digits.cpp) [Python](./Python/minimum-sum-of-four-digit-number-after-splitting-digits.py) | _O(1)_ | _O(1)_ | Easy | | Greedy |
 2165 | [Smallest Value of the Rearranged Number](https://leetcode.com/problems/smallest-value-of-the-rearranged-number/) | [C++](./C++/smallest-value-of-the-rearranged-number.cpp) [Python](./Python/smallest-value-of-the-rearranged-number.py) | _O(d)_ | _O(d)_ | Medium | | Greedy, Counting Sort |
+2178 | [Maximum Split of Positive Even Integers](https://leetcode.com/problems/maximum-split-of-positive-even-integers/) | [C++](./C++/maximum-split-of-positive-even-integers.cpp) [Python](./Python/maximum-split-of-positive-even-integers.py) | _O(sqrt(n))_ | _O(1)_ | Medium | | Greedy |
 
 <br/>
 <div align="right">
@@ -1519,6 +1524,7 @@
 2153 | [The Number of Passengers in Each Bus II](https://leetcode.com/problems/the-number-of-passengers-in-each-bus-ii/) | [MySQL](./MySQL/the-number-of-passengers-in-each-bus-ii.sql) | _O(p * b + blogb)_ | _O(p * b)_       | Hard           |🔒||
 2159 | [Order Two Columns Independently](https://leetcode.com/problems/order-two-columns-independently/) | [MySQL](./MySQL/order-two-columns-independently.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2173 | [Longest Winning Streak](https://leetcode.com/problems/longest-winning-streak/) | [MySQL](./MySQL/longest-winning-streak.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+2175 | [The Change in Global Rankings](https://leetcode.com/problems/the-change-in-global-rankings/) | [MySQL](./MySQL/the-change-in-global-rankings.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
