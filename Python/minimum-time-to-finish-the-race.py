@@ -17,7 +17,7 @@ class Solution(object):
         for f, r in tires:
             total = curr = f
             cnt = 0
-            while curr < changeTime+f:  # at worst (f, r) = (1, 2) => 2^(x-1) < changeTime+1, x < ceil(log2( changeTime+1))
+            while curr < changeTime+f:  # at worst (f, r) = (1, 2) => 2^(cnt-1) < changeTime+1, cnt < ceil(log2( changeTime+1))
                 dp[cnt] = min(dp[cnt], total)
                 curr *= r
                 total += curr
