@@ -1087,7 +1087,7 @@
 2167 | [Minimum Time to Remove All Cars Containing Illegal Goods](https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/) | [C++](./C++/minimum-time-to-remove-all-cars-containing-illegal-goods.cpp) [Python](./Python/minimum-time-to-remove-all-cars-containing-illegal-goods.py) | _O(n)_ | _O(1)_ | Hard || DP
 2174 | [Remove All Ones With Row and Column Flips II](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips-ii/) | [C++](./C++/remove-all-ones-with-row-and-column-flips-ii.cpp) [Python](./Python/remove-all-ones-with-row-and-column-flips-ii.py) | _O((m * n) * 2^(m * n))_ | _O(2^(m * n))_ | Medium | 🔒 | DP, Bitmasks
 2184 | [Number of Ways to Build Sturdy Brick Wall](https://leetcode.com/problems/number-of-ways-to-build-sturdy-brick-wall/)|[C++](./C++/number-of-ways-to-build-sturdy-brick-wall.cpp) [Python](./Python/number-of-ways-to-build-sturdy-brick-wall.py)| _O(h * p^2)_     | _O(p^2)_         | Medium         | 🔒, variant of [Painting a Grid With Three Different Colors](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/) | DP, Backtracking, Matrix Exponentiation |
-2188 | [Minimum Time to Finish the Race](https://leetcode.com/problems/minimum-time-to-finish-the-race/) | [C++](./C++/minimum-time-to-finish-the-race.cpp) [Python](./Python/minimum-time-to-finish-the-race.py) | _O((n + l) * logc)_ | _O(n + l + logc)_ | Hard || DP
+2188 | [Minimum Time to Finish the Race](https://leetcode.com/problems/minimum-time-to-finish-the-race/) | [C++](./C++/minimum-time-to-finish-the-race.cpp) [Python](./Python/minimum-time-to-finish-the-race.py) | _O((n + l) * logc)_ | _O(n + l + logc)_ | Hard || Greedy, DP
 
 <br/>
 <div align="right">
