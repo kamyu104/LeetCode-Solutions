@@ -24,11 +24,7 @@ class Solution(object):
 
         patterns, lookup = [], set()
         backtracking(height, width, bricks, 0, 0, lookup, patterns)
-        adj = [[] for _ in xrange(len(patterns))]
-        for i, r1 in enumerate(patterns):
-            for j, r2 in enumerate(patterns):
-                if not (r1 & r2):
-                    adj[i].append(j)
+        adj = [[j for j, r2 in enumerate(patterns) if not (r1 & r2)] for r1 in patterns]
         dp = [[1]*len(patterns), [0]*len(patterns)]
         for i in xrange(height-1):
             for j in xrange(len(patterns)):
