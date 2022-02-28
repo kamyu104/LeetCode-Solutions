@@ -30,7 +30,7 @@ class Solution(object):
                 if not (r1 & r2):
                     adj[i].append(j)
         dp = [[1]*len(patterns), [0]*len(patterns)]
-        for i in xrange(height):
+        for i in xrange(height-1):
             for j in xrange(len(patterns)):
                 dp[(i+1)%2][j] = sum(dp[i%2][k] for k in adj[j]) % MOD
         return sum(dp[(height-1)%2]) % MOD
