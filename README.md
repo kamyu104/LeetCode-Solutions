@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2183%20%2F%202183-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2188%20%2F%202188-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -357,7 +357,8 @@
 2156 | [Find Substring With Given Hash Value](https://leetcode.com/problems/find-substring-with-given-hash-value/) | [C++](./C++/find-substring-with-given-hash-value.cpp) [Python](./Python/find-substring-with-given-hash-value.py) | _O(n)_ | _O(1)_ | Medium | | `Rabin-Karp Algorithm`, Rolling Hash
 2157 | [Groups of Strings](https://leetcode.com/problems/groups-of-strings/) | [C++](./C++/groups-of-strings.cpp) [Python](./Python/groups-of-strings.py) | _O(26 * n)_ | _O(26 * n)_ | Hard | | Bitmasks, Union Find
 2168 | [Unique Substrings With Equal Digit Frequency](https://leetcode.com/problems/unique-substrings-with-equal-digit-frequency/) | [C++](./C++/unique-substrings-with-equal-digit-frequency.cpp) [Python](./Python/unique-substrings-with-equal-digit-frequency.py) | _O(n^2)_ | _O(n^2)_ | Medium | 🔒 | `Rabin-Karp Algorithm`, Rolling Hash
-
+2185 | [Counting Words With a Given Prefix](https://leetcode.com/problems/counting-words-with-a-given-prefix/) | [C++](./C++/counting-words-with-a-given-prefix.cpp) [Python](./Python/counting-words-with-a-given-prefix.py) | _O(n * p)_ | _O(1)_ | Easy | | 
+2186 | [Minimum Number of Steps to Make Two Strings Anagram II](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/) | [C++](./C++/minimum-number-of-steps-to-make-two-strings-anagram-ii.cpp) [Python](./Python/minimum-number-of-steps-to-make-two-strings-anagram-ii.py) | _O(n)_ | _O(1)_ | Medium | variant of [Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) |
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -831,6 +832,7 @@
 2064 | [Minimized Maximum of Products Distributed to Any Store](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/) | [C++](./C++/minimized-maximum-of-products-distributed-to-any-store.cpp) [Python](./Python/minimized-maximum-of-products-distributed-to-any-store.py) | _O(nlogm)_ | _O(1)_ | Medium | variant of [Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/) |
 2111 | [Minimum Operations to Make the Array K-Increasing](https://leetcode.com/problems/minimum-operations-to-make-the-array-k-increasing/) | [C++](./C++/minimum-operations-to-make-the-array-k-increasing.cpp) [Python](./Python/minimum-operations-to-make-the-array-k-increasing.py) | _O(nlog(n/k))_ | _O(n/k)_ | Hard | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) |
 2137 | [Pour Water Between Buckets to Make Water Levels Equal](https://leetcode.com/problems/pour-water-between-buckets-to-make-water-levels-equal/) | [C++](./C++/pour-water-between-buckets-to-make-water-levels-equal.cpp) [Python](./Python/pour-water-between-buckets-to-make-water-levels-equal.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 |
+2187 | [Minimum Time to Complete Trips](https://leetcode.com/problems/minimum-time-to-complete-trips/) | [C++](./C++/minimum-time-to-complete-trips.cpp) [Python](./Python/minimum-time-to-complete-trips.py) | _O(nlogr)_ | _O(1)_ | Medium | |
 
 <br/>
 <div align="right">
@@ -1084,6 +1086,8 @@
 2143 | [Choose Numbers From Two Arrays in Range](https://leetcode.com/problems/choose-numbers-from-two-arrays-in-range/) | [C++](./C++/choose-numbers-from-two-arrays-in-range.cpp) [Python](./Python/choose-numbers-from-two-arrays-in-range.py) | _O(n^2 * v)_ | _O(n * v)_ | Hard | 🔒 | DP
 2167 | [Minimum Time to Remove All Cars Containing Illegal Goods](https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/) | [C++](./C++/minimum-time-to-remove-all-cars-containing-illegal-goods.cpp) [Python](./Python/minimum-time-to-remove-all-cars-containing-illegal-goods.py) | _O(n)_ | _O(1)_ | Hard || DP
 2174 | [Remove All Ones With Row and Column Flips II](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips-ii/) | [C++](./C++/remove-all-ones-with-row-and-column-flips-ii.cpp) [Python](./Python/remove-all-ones-with-row-and-column-flips-ii.py) | _O((m * n) * 2^(m * n))_ | _O(2^(m * n))_ | Medium | 🔒 | DP, Bitmasks
+2184 | [Number of Ways to Build Sturdy Brick Wall](https://leetcode.com/problems/number-of-ways-to-build-sturdy-brick-wall/)|[C++](./C++/number-of-ways-to-build-sturdy-brick-wall.cpp) [Python](./Python/number-of-ways-to-build-sturdy-brick-wall.py)| _O(h * p^2)_     | _O(p^2)_         | Medium         | 🔒. variant of [Painting a Grid With Three Different Colors](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/) | DP, Backtracking, Matrix Exponentiation |
+2188 | [Minimum Time to Finish the Race](https://leetcode.com/problems/minimum-time-to-finish-the-race/) | [C++](./C++/minimum-time-to-finish-the-race.cpp) [Python](./Python/minimum-time-to-finish-the-race.py) | _O((n + l) * logc)_ | _O(n + l + logc)_ | Hard || DP
 
 <br/>
 <div align="right">
