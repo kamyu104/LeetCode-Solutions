@@ -15,7 +15,7 @@ public:
             const int f = tires[i][0], r = tires[i][1];
             for (int64_t curr = f, total = f, cnt = 0;
                  curr < changeTime + f;
-                 curr *= r, total += curr, ++cnt) {  // at worst (f, r) = (1, 2) => 2^(cnt-1) < changeTime+1, cnt < ceil(log2(changeTime+1))
+                 curr *= r, total += curr, ++cnt) {  // at worst (f, r) = (1, 2) => 2^(cnt-1) < changeTime+1 => cnt < ceil(log2(changeTime+1))
                 dp[cnt] = min(dp[cnt], total);
             }
         }
