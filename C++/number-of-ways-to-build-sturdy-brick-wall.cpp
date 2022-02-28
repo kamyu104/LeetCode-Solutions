@@ -26,11 +26,10 @@ public:
                 }
             }
         }
-        int result = 0;
-        for (const auto& x : dp[(height - 1) % 2]) {
-            result = (result + x) % MOD;
-        }
-        return result;
+        return accumulate(cbegin(dp[(height - 1) % 2]), cend(dp[(height - 1) % 2]), 0,
+                          [](const auto& total, const auto& x) {
+                              return (total + x) % MOD;
+                          });  // Time: O(p)
     }
 
 private:
@@ -53,7 +52,6 @@ private:
         for (const auto& x : bricks) {
             backtracking(height, width, bricks, total + x, mask | (1 << (total + x)), lookup, patterns);
         }
-
     }
 };
 
