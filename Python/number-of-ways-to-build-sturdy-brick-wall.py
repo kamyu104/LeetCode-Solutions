@@ -27,8 +27,7 @@ class Solution(object):
         adj = [[j for j, r2 in enumerate(patterns) if not (r1 & r2)] for r1 in patterns]
         dp = [[1]*len(patterns), [0]*len(patterns)]
         for i in xrange(height-1):
-            for j in xrange(len(patterns)):
-                dp[(i+1)%2][j] = sum(dp[i%2][k] for k in adj[j]) % MOD
+            dp[(i+1)%2] = [sum(dp[i%2][k] for k in adj[j]) % MOD for j in xrange(len(patterns))]
         return sum(dp[(height-1)%2]) % MOD
 
 
