@@ -1,9 +1,6 @@
 # Time:  O(h * p^2), p is the number of patterns
 # Space: O(p^2)
 
-import collections
-
-
 # bitmask, backtracking, dp
 class Solution(object):
     def buildWall(self, height, width, bricks):
@@ -27,7 +24,7 @@ class Solution(object):
 
         patterns, lookup = [], set()
         backtracking(height, width, bricks, 0, 0, lookup, patterns)
-        adj = collections.defaultdict(list)
+        adj = [[] for _ in xrange(len(patterns))]
         for i, r1 in enumerate(patterns):
             for j, r2 in enumerate(patterns):
                 if not (r1 & r2):
@@ -42,9 +39,6 @@ class Solution(object):
 # Time:  O(p^3 * logh), p is the number of patterns, p may be up to 512
 # Space: O(p^3)
 # bitmask, backtracking, matrix exponentiation
-import collections
-
-
 class Solution_TLE(object):
     def buildWall(self, height, width, bricks):
         """
