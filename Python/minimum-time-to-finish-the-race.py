@@ -22,7 +22,7 @@ class Solution(object):
                 curr *= r
                 total += curr
                 cnt += 1
-        dp2 = [float("inf")]*numLaps  # dp2[i]: min time to complete i+1 laps with changing a tire
+        dp2 = [float("inf")]*numLaps  # dp2[i]: min time to complete i+1 laps with changing any tire or not
         for i in xrange(numLaps):
             for j in xrange(min(i+1, len(dp))):
                 dp2[i] = min(dp2[i], (dp2[i-j-1]+changeTime if i-j-1 >= 0 else 0)+dp[j])
