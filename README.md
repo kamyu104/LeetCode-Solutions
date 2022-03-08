@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2188%20%2F%202188-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2197%20%2F%202197-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -248,6 +248,7 @@
 2128 | [Remove All Ones With Row and Column Flips](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/) | [C++](./C++/remove-all-ones-with-row-and-column-flips.cpp) [Python](./Python/remove-all-ones-with-row-and-column-flips.py) | _O(m * n)_ | _O(1)_ | Medium | 🔒 |
 2132 | [Stamping the Grid](https://leetcode.com/problems/stamping-the-grid/) | [C++](./C++/stamping-the-grid.cpp) [Python](./Python/stamping-the-grid.py) | _O(m * n)_ | _O(m * n)_ | Hard | | Prefix Sum
 2155 | [All Divisions With the Highest Score of a Binary Array](https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/) | [C++](./C++/all-divisions-with-the-highest-score-of-a-binary-array.cpp) [Python](./Python/all-divisions-with-the-highest-score-of-a-binary-array.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
+2194 | [Cells in a Range on an Excel Sheet](https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/) | [C++](./C++/cells-in-a-range-on-an-excel-sheet.cpp) [Python](./Python/cells-in-a-range-on-an-excel-sheet.py) | _O(26^2)_ | _O(1)_ | Easy | |
 
 <br/>
 <div align="right">
@@ -409,6 +410,7 @@
 1944 | [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/) | [C++](./C++/number-of-visible-people-in-a-queue.cpp) [Python](./Python/number-of-visible-people-in-a-queue.py) | _O(n)_  | _O(n)_         | Hard           | variant of [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view/) | Mono Stack
 1950 | [Maximum of Minimum Values in All Subarrays](https://leetcode.com/problems/maximum-of-minimum-values-in-all-subarrays/) | [C++](./C++/maximum-of-minimum-values-in-all-subarrays.cpp) [Python](./Python/maximum-of-minimum-values-in-all-subarrays.py) | _O(n)_  | _O(n)_         | Medium           | 🔒 | Mono Stack
 2104 | [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges/) | [C++](./C++/sum-of-subarray-ranges.cpp) [Python](./Python/sum-of-subarray-ranges.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack
+2197 | [Replace Non-Coprime Numbers in Array](https://leetcode.com/problems/replace-non-coprime-numbers-in-array/) | [C++](./C++/replace-non-coprime-numbers-in-array.cpp) [Python](./Python/replace-non-coprime-numbers-in-array.py) | _O(nlogm)_ | _O(1)_ | Hard | | Stack, Math
 
 <br/>
 <div align="right">
@@ -493,6 +495,7 @@
 2003 | [Smallest Missing Genetic Value in Each Subtree](https://leetcode.com/problems/smallest-missing-genetic-value-in-each-subtree/) |[C++](./C++/smallest-missing-genetic-value-in-each-subtree.cpp)  [Python](./Python/smallest-missing-genetic-value-in-each-subtree.py) | _O(n)_ | _O(n)_ | Hard         | | DFS, Stack
 2096 | [Step-By-Step Directions From a Binary Tree Node to Another](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/) |[C++](./C++/step-by-step-directions-from-a-binary-tree-node-to-another.cpp)  [Python](./Python/step-by-step-directions-from-a-binary-tree-node-to-another.py) | _O(n)_ | _O(h)_ | Medium         | | DFS, Stack
 2179 | [Count Good Triplets in an Array](https://leetcode.com/problems/count-good-triplets-in-an-array/)| [C++](./C++/count-good-triplets-in-an-array.cpp) [Python](./Python/count-good-triplets-in-an-array.py)| _O(nlogn)_ | _O(n)_ | Hard | variant of [Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions/) | BIT, Fenwick Tree |
+2196 | [Create Binary Tree From Descriptions](https://leetcode.com/problems/create-binary-tree-from-descriptions/)| [C++](./C++/create-binary-tree-from-descriptions.cpp) [Python](./Python/create-binary-tree-from-descriptions.py)| _O(n)_ | _O(n)_ | Medium | | |
 
 <br/>
 <div align="right">
@@ -544,6 +547,7 @@
 2150 | [Find All Lonely Numbers in the Array](https://leetcode.com/problems/find-all-lonely-numbers-in-the-array/) | [C++](./C++/find-all-lonely-numbers-in-the-array.cpp) [Python](./Python/find-all-lonely-numbers-in-the-array.py) | _O(n)_ | _O(n)_ | Medium || 
 2154 | [Keep Multiplying Found Values by Two](https://leetcode.com/problems/keep-multiplying-found-values-by-two/) | [C++](./C++/keep-multiplying-found-values-by-two.cpp) [Python](./Python/keep-multiplying-found-values-by-two.py) | _O(n)_ | _O(n)_ | Easy || 
 2170 | [Minimum Operations to Make the Array Alternating](https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/) | [C++](./C++/minimum-operations-to-make-the-array-alternating.cpp) [Python](./Python/minimum-operations-to-make-the-array-alternating.py) | _O(n)_ | _O(n)_ | Medium ||  Freq Table
+2190 | [Most Frequent Number Following Key In an Array](https://leetcode.com/problems/most-frequent-number-following-key-in-an-array/) | [C++](./C++/most-frequent-number-following-key-in-an-array.cpp) [Python](./Python/most-frequent-number-following-key-in-an-array.py) | _O(n)_ | _O(n)_ | Easy ||  Freq Table
 
 <br/>
 <div align="right">
@@ -716,6 +720,7 @@
 2089 | [Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/) | [C++](./C++/find-target-indices-after-sorting-array.cpp) [Python](./Python/find-target-indices-after-sorting-array.py) | _O(n)_ | _O(1)_ | Easy | | Counting Sort |
 2158 | [Amount of New Area Painted Each Day](https://leetcode.com/problems/amount-of-new-area-painted-each-day/) | [C++](./C++/amount-of-new-area-painted-each-day.cpp) [Python](./Python/amount-of-new-area-painted-each-day.py) | _O(nlogr)_   | _O(r)_        | Hard         | 🔒 | Line Sweep, Sorted List, Heap, Segment Tree
 2164 | [Sort Even and Odd Indices Independently](https://leetcode.com/problems/sort-even-and-odd-indices-independently/) | [C++](./C++/sort-even-and-odd-indices-independently.cpp) [Python](./Python/sort-even-and-odd-indices-independently.py) | _O(n)_ | _O(c)_ | Easy | | Counting Sort, Inplace |
+2191 | [Sort the Jumbled Numbers](https://leetcode.com/problems/sort-the-jumbled-numbers/) | [C++](./C++/sort-the-jumbled-numbers.cpp) [Python](./Python/sort-the-jumbled-numbers.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort |
 
 <br/>
 <div align="right">
@@ -930,6 +935,7 @@
 1973 | [Count Nodes Equal to Sum of Descendants](https://leetcode.com/problems/count-nodes-equal-to-sum-of-descendants/) | [C++](./C++/count-nodes-equal-to-sum-of-descendants.cpp) [Python](./Python/count-nodes-equal-to-sum-of-descendants.py) | _O(n)_ | _O(h)_ | Medium | 🔒 | |
 2049 | [Count Nodes With the Highest Score](https://leetcode.com/problems/count-nodes-with-the-highest-score/) | [C++](./C++/count-nodes-with-the-highest-score.cpp) [Python](./Python/count-nodes-with-the-highest-score.py) | _O(n)_ | _O(n)_ | Medium | | |
 2065 | [Maximum Path Quality of a Graph](https://leetcode.com/problems/maximum-path-quality-of-a-graph/) | [C++](./C++/maximum-path-quality-of-a-graph.cpp) [Python](./Python/maximum-path-quality-of-a-graph.py) | _O(\|V\| + \|E\| + 4^10)_ | _O(\|V\| + \|E\| )_ | Hard | | Pruning |
+2192 | [All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) | [C++](./C++/all-ancestors-of-a-node-in-a-directed-acyclic-graph.cpp) [Python](./Python/all-ancestors-of-a-node-in-a-directed-acyclic-graph.py) | _O(\|V\| * \|E\|)_ | _O(\|V\| * \|E\|)_ | Medium | | DFS, BFS, Topological Sort |
 
 <br/>
 <div align="right">
@@ -1088,6 +1094,7 @@
 2174 | [Remove All Ones With Row and Column Flips II](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips-ii/) | [C++](./C++/remove-all-ones-with-row-and-column-flips-ii.cpp) [Python](./Python/remove-all-ones-with-row-and-column-flips-ii.py) | _O((m * n) * 2^(m * n))_ | _O(2^(m * n))_ | Medium | 🔒 | DP, Bitmasks
 2184 | [Number of Ways to Build Sturdy Brick Wall](https://leetcode.com/problems/number-of-ways-to-build-sturdy-brick-wall/)|[C++](./C++/number-of-ways-to-build-sturdy-brick-wall.cpp) [Python](./Python/number-of-ways-to-build-sturdy-brick-wall.py)| _O(h * p^2)_     | _O(p^2)_         | Medium         | 🔒, variant of [Painting a Grid With Three Different Colors](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/) | DP, Backtracking, Matrix Exponentiation |
 2188 | [Minimum Time to Finish the Race](https://leetcode.com/problems/minimum-time-to-finish-the-race/) | [C++](./C++/minimum-time-to-finish-the-race.cpp) [Python](./Python/minimum-time-to-finish-the-race.py) | _O((n + l) * logc)_ | _O(n + l + logc)_ | Hard || Greedy, DP
+2189 | [Number of Ways to Build House of Cards](https://leetcode.com/problems/number-of-ways-to-build-house-of-cards/) | [C++](./C++/number-of-ways-to-build-house-of-cards.cpp) [Python](./Python/number-of-ways-to-build-house-of-cards.py) | _O(n^2)_ | _O(n)_ | Medium | 🔒 | DP
 
 <br/>
 <div align="right">
@@ -1224,6 +1231,7 @@
 2165 | [Smallest Value of the Rearranged Number](https://leetcode.com/problems/smallest-value-of-the-rearranged-number/) | [C++](./C++/smallest-value-of-the-rearranged-number.cpp) [Python](./Python/smallest-value-of-the-rearranged-number.py) | _O(d)_ | _O(d)_ | Medium | | Greedy, Counting Sort |
 2178 | [Maximum Split of Positive Even Integers](https://leetcode.com/problems/maximum-split-of-positive-even-integers/) | [C++](./C++/maximum-split-of-positive-even-integers.cpp) [Python](./Python/maximum-split-of-positive-even-integers.py) | _O(sqrt(n))_ | _O(1)_ | Medium | | Greedy |
 2182 | [Construct String With Repeat Limit](https://leetcode.com/problems/construct-string-with-repeat-limit/) | [C++](./C++/construct-string-with-repeat-limit.cpp) [Python](./Python/construct-string-with-repeat-limit.py) | _O(n)_ | _O(1)_ | Medium | | Greedy |
+2195 | [Append K Integers With Minimal Sum](append-k-integers-with-minimal-sum.cpp) [Python](./Python/append-k-integers-with-minimal-sum.py) | _O(nlogn)_ | _O(n)_ | Medium | | Greedy |
 
 <br/>
 <div align="right">
@@ -1273,6 +1281,7 @@
 2123 | [Minimum Operations to Remove Adjacent Ones in Matrix](https://leetcode.com/problems/minimum-operations-to-remove-adjacent-ones-in-matrix/) | [C++](./C++/minimum-operations-to-remove-adjacent-ones-in-matrix.cpp) [Python](./Python/minimum-operations-to-remove-adjacent-ones-in-matrix.py) | _O(m * n * sqrt(m * n))_ | _O(m + n)_ | Hard | variant of [Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam/), 🔒 | `Hopcroft-Karp Bipartite Matching`, Maximum Independent Set |
 2127 | [Maximum Employees to Be Invited to a Meeting](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/) | [C++](./C++/maximum-employees-to-be-invited-to-a-meeting.cpp) [Python](./Python/maximum-employees-to-be-invited-to-a-meeting.py) | _O(n)_ | _O(n)_ | Hard |  |  |
 2172 | [Maximum AND Sum of Array](https://leetcode.com/problems/maximum-and-sum-of-array/) | [C++](./C++/maximum-and-sum-of-array.cpp) [Python](./Python/maximum-and-sum-of-array.py) | _O(n^3)_ | _O(n^2)_ | Hard | variant of [Maximum Compatibility Score Sum](https://leetcode.com/problems/maximum-compatibility-score-sum/) | DP, `Hungarian Weighted Bipartite Matching` |
+2193 | [Minimum Number of Moves to Make Palindrome](https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/) | [C++](./C++/minimum-number-of-moves-to-make-palindrome.cpp) [Python](./Python/minimum-number-of-moves-to-make-palindrome.py) | _O(nlogn)_ | _O(n)_ | Hard |  | Greedy, BIT, Fenwick Tree  |
 
 <br/>
 <div align="right">
