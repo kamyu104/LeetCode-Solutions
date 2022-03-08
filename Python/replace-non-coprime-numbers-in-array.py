@@ -8,7 +8,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        def gcd(a, b):  # Time:  O(log(min(a, b)))
+        def gcd(a, b):  # Time: O(log(min(a, b)))
             while b:
                 a, b = b, a%b
             return a
