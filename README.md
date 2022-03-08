@@ -1231,7 +1231,7 @@
 2165 | [Smallest Value of the Rearranged Number](https://leetcode.com/problems/smallest-value-of-the-rearranged-number/) | [C++](./C++/smallest-value-of-the-rearranged-number.cpp) [Python](./Python/smallest-value-of-the-rearranged-number.py) | _O(d)_ | _O(d)_ | Medium | | Greedy, Counting Sort |
 2178 | [Maximum Split of Positive Even Integers](https://leetcode.com/problems/maximum-split-of-positive-even-integers/) | [C++](./C++/maximum-split-of-positive-even-integers.cpp) [Python](./Python/maximum-split-of-positive-even-integers.py) | _O(sqrt(n))_ | _O(1)_ | Medium | | Greedy |
 2182 | [Construct String With Repeat Limit](https://leetcode.com/problems/construct-string-with-repeat-limit/) | [C++](./C++/construct-string-with-repeat-limit.cpp) [Python](./Python/construct-string-with-repeat-limit.py) | _O(n)_ | _O(1)_ | Medium | | Greedy |
-2195 | [Append K Integers With Minimal Sum](append-k-integers-with-minimal-sum.cpp) [Python](./Python/append-k-integers-with-minimal-sum.py) | _O(nlogn)_ | _O(n)_ | Medium | | Greedy |
+2195 | [Append K Integers With Minimal Sum](https://leetcode.com/problems/append-k-integers-with-minimal-sum/)  | [C++](./C++/append-k-integers-with-minimal-sum.cpp) [Python](./Python/append-k-integers-with-minimal-sum.py) | _O(nlogn)_ | _O(n)_ | Medium | | Greedy |
 
 <br/>
 <div align="right">
