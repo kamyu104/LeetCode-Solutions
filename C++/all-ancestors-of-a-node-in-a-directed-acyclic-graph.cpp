@@ -39,8 +39,50 @@ private:
 
 // Time:  O(|V| * |E| * log(|V| * |E|))
 // Space: O(|V| * |E|)
-// topological sort
+// bfs
 class Solution2 {
+public:
+    vector<vector<int>> getAncestors(int n, vector<vector<int>>& edges) {
+        vector<vector<int>> adj(n);
+        for (const auto& e : edges) {
+            adj[e[1]].emplace_back(e[0]);
+        }
+        vector<vector<int>> result(n);
+        for (int u = 0; u < n; ++u) {
+            bfs(adj, u, &result);
+        }
+        return result;
+    }
+
+private:
+    void bfs(const vector<vector<int>>& adj,
+                  int i,
+                  vector<vector<int>> *result) {
+
+        vector<bool> lookup(size(adj));
+        vector<int> q = {i};
+        while (!empty(q)) {
+            vector<int> new_q;
+            for (const auto& u : q) {
+                for (const auto& v: adj[u]) {
+                    if (lookup[v]) {
+                        continue;
+                    }
+                    lookup[v] = true;
+                    new_q.emplace_back(v);
+                    (*result)[i].emplace_back(v);
+                }
+            }
+            q = move(new_q);
+        }
+        sort(begin((*result)[i]), end((*result)[i]));
+    }
+};
+
+// Time:  O(|V| * |E| * log(|V| * |E|))
+// Space: O(|V| * |E|)
+// topological sort
+class Solution3 {
 public:
     vector<vector<int>> getAncestors(int n, vector<vector<int>>& edges) {
         vector<unordered_set<int>> lookup(n);
