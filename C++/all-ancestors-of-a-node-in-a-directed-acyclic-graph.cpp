@@ -56,8 +56,8 @@ public:
 
 private:
     void bfs(const vector<vector<int>>& adj,
-                  int i,
-                  vector<vector<int>> *result) {
+             int i,
+             vector<vector<int>> *result) {
 
         vector<bool> lookup(size(adj));
         vector<int> q = {i};
