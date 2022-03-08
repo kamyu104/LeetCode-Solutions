@@ -720,7 +720,7 @@
 2089 | [Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/) | [C++](./C++/find-target-indices-after-sorting-array.cpp) [Python](./Python/find-target-indices-after-sorting-array.py) | _O(n)_ | _O(1)_ | Easy | | Counting Sort |
 2158 | [Amount of New Area Painted Each Day](https://leetcode.com/problems/amount-of-new-area-painted-each-day/) | [C++](./C++/amount-of-new-area-painted-each-day.cpp) [Python](./Python/amount-of-new-area-painted-each-day.py) | _O(nlogr)_   | _O(r)_        | Hard         | 🔒 | Line Sweep, Sorted List, Heap, Segment Tree
 2164 | [Sort Even and Odd Indices Independently](https://leetcode.com/problems/sort-even-and-odd-indices-independently/) | [C++](./C++/sort-even-and-odd-indices-independently.cpp) [Python](./Python/sort-even-and-odd-indices-independently.py) | _O(n)_ | _O(c)_ | Easy | | Counting Sort, Inplace |
-2191 | [Sort the Jumbled Numbers](https://leetcode.com/problems/sort-the-jumbled-numbers/) | [C++](./C++/sort-the-jumbled-numbers.cpp) [Python](./Python/sort-the-jumbled-numbers.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort |
+2191 | [Sort the Jumbled Numbers](https://leetcode.com/problems/sort-the-jumbled-numbers/) | [C++](./C++/sort-the-jumbled-numbers.cpp) [Python](./Python/sort-the-jumbled-numbers.py) | _O(nlogm + nlogn)_ | _O(n)_ | Medium | | Sort |
 
 <br/>
 <div align="right">
