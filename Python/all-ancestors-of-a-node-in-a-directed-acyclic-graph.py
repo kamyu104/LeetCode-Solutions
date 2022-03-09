@@ -1,5 +1,5 @@
 # Time:  O(|V| * |E|)
-# Space: O(|V| * |E|)
+# Space: O(|V| + |E|)
 
 # dfs
 class Solution(object):
@@ -31,7 +31,7 @@ class Solution(object):
 
 
 # Time:  O(|V| * |E| * log(|V| * |E|))
-# Space: O(|V| * |E|)
+# Space: O(|V| + |E|)
 # bfs
 class Solution2(object):
     def getAncestors(self, n, edges):
@@ -66,7 +66,7 @@ class Solution2(object):
 
 
 # Time:  O(|V| * |E| * log(|V| * |E|))
-# Space: O(|V| * |E|)
+# Space: O(|V| + |E|)
 # topological sort
 class Solution3(object):
     def getAncestors(self, n, edges):
