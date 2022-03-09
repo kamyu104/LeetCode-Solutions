@@ -1,5 +1,5 @@
 // Time:  O(|V| * |E|)
-// Space: O(|V| * |E|)
+// Space: O(|V| + |E|)
 
 // dfs
 class Solution {
@@ -38,7 +38,7 @@ private:
 };
 
 // Time:  O(|V| * |E| * log(|V| * |E|))
-// Space: O(|V| * |E|)
+// Space: O(|V| + |E|)
 // bfs
 class Solution2 {
 public:
@@ -80,7 +80,7 @@ private:
 };
 
 // Time:  O(|V| * |E| * log(|V| * |E|))
-// Space: O(|V| * |E|)
+// Space: O(|V| + |E|)
 // topological sort
 class Solution3 {
 public:
