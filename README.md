@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2197%20%2F%202197-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2203%20%2F%202203-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -249,6 +249,7 @@
 2132 | [Stamping the Grid](https://leetcode.com/problems/stamping-the-grid/) | [C++](./C++/stamping-the-grid.cpp) [Python](./Python/stamping-the-grid.py) | _O(m * n)_ | _O(m * n)_ | Hard | | Prefix Sum
 2155 | [All Divisions With the Highest Score of a Binary Array](https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/) | [C++](./C++/all-divisions-with-the-highest-score-of-a-binary-array.cpp) [Python](./Python/all-divisions-with-the-highest-score-of-a-binary-array.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
 2194 | [Cells in a Range on an Excel Sheet](https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/) | [C++](./C++/cells-in-a-range-on-an-excel-sheet.cpp) [Python](./Python/cells-in-a-range-on-an-excel-sheet.py) | _O(26^2)_ | _O(1)_ | Easy | |
+2202 | [Maximize the Topmost Element After K Moves](https://leetcode.com/problems/maximize-the-topmost-element-after-k-moves/) | [C++](./C++/maximize-the-topmost-element-after-k-moves.cpp) [Python](./Python/maximize-the-topmost-element-after-k-moves.py) | _O(min(n, k))_ | _O(1)_ | Medium | | Constructive Algorithms
 
 <br/>
 <div align="right">
@@ -548,6 +549,7 @@
 2154 | [Keep Multiplying Found Values by Two](https://leetcode.com/problems/keep-multiplying-found-values-by-two/) | [C++](./C++/keep-multiplying-found-values-by-two.cpp) [Python](./Python/keep-multiplying-found-values-by-two.py) | _O(n)_ | _O(n)_ | Easy || 
 2170 | [Minimum Operations to Make the Array Alternating](https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/) | [C++](./C++/minimum-operations-to-make-the-array-alternating.cpp) [Python](./Python/minimum-operations-to-make-the-array-alternating.py) | _O(n)_ | _O(n)_ | Medium ||  Freq Table
 2190 | [Most Frequent Number Following Key In an Array](https://leetcode.com/problems/most-frequent-number-following-key-in-an-array/) | [C++](./C++/most-frequent-number-following-key-in-an-array.cpp) [Python](./Python/most-frequent-number-following-key-in-an-array.py) | _O(n)_ | _O(n)_ | Easy ||  Freq Table
+2201 | [Count Artifacts That Can Be Extracted](https://leetcode.com/problems/count-artifacts-that-can-be-extracted/) | [C++](./C++/count-artifacts-that-can-be-extracted.cpp) [Python](./Python/count-artifacts-that-can-be-extracted.py) | _O(a + d)_ | _O(d)_ | Medium ||  Hash Table
 
 <br/>
 <div align="right">
@@ -670,6 +672,7 @@
 2177 | [Find Three Consecutive Integers That Sum to a Given Number](https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/)|[C++](./C++/find-three-consecutive-integers-that-sum-to-a-given-number.cpp) [Python](./Python/find-three-consecutive-integers-that-sum-to-a-given-number.py)| _O(1)_     | _O(1)_         | Medium         | | Math
 2180 | [Count Integers With Even Digit Sum](https://leetcode.com/problems/count-integers-with-even-digit-sum/)|[C++](./C++/count-integers-with-even-digit-sum.cpp) [Python](./Python/count-integers-with-even-digit-sum.py)| _O(logn)_     | _O(1)_         | Easy         | | Math
 2183 | [Count Array Pairs Divisible by K](https://leetcode.com/problems/count-array-pairs-divisible-by-k/)|[C++](./C++/count-array-pairs-divisible-by-k.cpp) [Python](./Python/count-array-pairs-divisible-by-k.py)| _O(nlogk + k)_     | _O(sqrt(k))_         | Hard         | variant of [Count Equal and Divisible Pairs in an Array](https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/) | Math
+2198 | [Number of Single Divisor Triplets](https://leetcode.com/problems/number-of-single-divisor-triplets/)|[C++](./C++/number-of-single-divisor-triplets.cpp) [Python](./Python/number-of-single-divisor-triplets.py)| _O(d^3)_     | _O(d)_         | Medium         | 🔒 | Math, Combinatorics
 
 <br/>
 <div align="right">
@@ -780,6 +783,7 @@
 2134 | [Minimum Swaps to Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/) | [C++](./C++/minimum-swaps-to-group-all-1s-together-ii.cpp) [Python](./Python/minimum-swaps-to-group-all-1s-together-ii.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window
 2149 | [Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | [C++](./C++/rearrange-array-elements-by-sign.cpp) [Python](./Python/rearrange-array-elements-by-sign.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
 2161 | [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) | [C++](./C++/partition-array-according-to-given-pivot.cpp) [Python](./Python/partition-array-according-to-given-pivot.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers
+2200 | [Find All K-Distant Indices in an Array](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/) | [C++](./C++/find-all-k-distant-indices-in-an-array.cpp) [Python](./Python/find-all-k-distant-indices-in-an-array.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers
 
 <br/>
 <div align="right">
@@ -1231,6 +1235,7 @@
 2165 | [Smallest Value of the Rearranged Number](https://leetcode.com/problems/smallest-value-of-the-rearranged-number/) | [C++](./C++/smallest-value-of-the-rearranged-number.cpp) [Python](./Python/smallest-value-of-the-rearranged-number.py) | _O(d)_ | _O(d)_ | Medium | | Greedy, Counting Sort |
 2178 | [Maximum Split of Positive Even Integers](https://leetcode.com/problems/maximum-split-of-positive-even-integers/) | [C++](./C++/maximum-split-of-positive-even-integers.cpp) [Python](./Python/maximum-split-of-positive-even-integers.py) | _O(sqrt(n))_ | _O(1)_ | Medium | | Greedy |
 2182 | [Construct String With Repeat Limit](https://leetcode.com/problems/construct-string-with-repeat-limit/) | [C++](./C++/construct-string-with-repeat-limit.cpp) [Python](./Python/construct-string-with-repeat-limit.py) | _O(n)_ | _O(1)_ | Medium | | Greedy |
+2193 | [Minimum Number of Moves to Make Palindrome](https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/) | [C++](./C++/minimum-number-of-moves-to-make-palindrome.cpp) [Python](./Python/minimum-number-of-moves-to-make-palindrome.py) | _O(nlogn)_ | _O(n)_ | Hard |  | Greedy, BIT, Fenwick Tree  |
 2195 | [Append K Integers With Minimal Sum](https://leetcode.com/problems/append-k-integers-with-minimal-sum/)  | [C++](./C++/append-k-integers-with-minimal-sum.cpp) [Python](./Python/append-k-integers-with-minimal-sum.py) | _O(nlogn)_ | _O(n)_ | Medium | | Greedy |
 
 <br/>
@@ -1281,7 +1286,7 @@
 2123 | [Minimum Operations to Remove Adjacent Ones in Matrix](https://leetcode.com/problems/minimum-operations-to-remove-adjacent-ones-in-matrix/) | [C++](./C++/minimum-operations-to-remove-adjacent-ones-in-matrix.cpp) [Python](./Python/minimum-operations-to-remove-adjacent-ones-in-matrix.py) | _O(m * n * sqrt(m * n))_ | _O(m + n)_ | Hard | variant of [Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam/), 🔒 | `Hopcroft-Karp Bipartite Matching`, Maximum Independent Set |
 2127 | [Maximum Employees to Be Invited to a Meeting](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/) | [C++](./C++/maximum-employees-to-be-invited-to-a-meeting.cpp) [Python](./Python/maximum-employees-to-be-invited-to-a-meeting.py) | _O(n)_ | _O(n)_ | Hard |  |  |
 2172 | [Maximum AND Sum of Array](https://leetcode.com/problems/maximum-and-sum-of-array/) | [C++](./C++/maximum-and-sum-of-array.cpp) [Python](./Python/maximum-and-sum-of-array.py) | _O(n^3)_ | _O(n^2)_ | Hard | variant of [Maximum Compatibility Score Sum](https://leetcode.com/problems/maximum-compatibility-score-sum/) | DP, `Hungarian Weighted Bipartite Matching` |
-2193 | [Minimum Number of Moves to Make Palindrome](https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/) | [C++](./C++/minimum-number-of-moves-to-make-palindrome.cpp) [Python](./Python/minimum-number-of-moves-to-make-palindrome.py) | _O(nlogn)_ | _O(n)_ | Hard |  | Greedy, BIT, Fenwick Tree  |
+2203 | [Minimum Weighted Subgraph With the Required Paths](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/)| [C++](./C++/minimum-weighted-subgraph-with-the-required-paths.cpp) [Python](./Python/minimum-weighted-subgraph-with-the-required-paths.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | | `Dijkstra's Algorithm` |
 
 <br/>
 <div align="right">
@@ -1541,6 +1546,7 @@
 2159 | [Order Two Columns Independently](https://leetcode.com/problems/order-two-columns-independently/) | [MySQL](./MySQL/order-two-columns-independently.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2173 | [Longest Winning Streak](https://leetcode.com/problems/longest-winning-streak/) | [MySQL](./MySQL/longest-winning-streak.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 2175 | [The Change in Global Rankings](https://leetcode.com/problems/the-change-in-global-rankings/) | [MySQL](./MySQL/the-change-in-global-rankings.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2199 | [Finding the Topic of Each Post](https://leetcode.com/problems/finding-the-topic-of-each-post/) | [MySQL](./MySQL/finding-the-topic-of-each-post.sql) | _O(n * mlogm)_ | _O(n * m)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
