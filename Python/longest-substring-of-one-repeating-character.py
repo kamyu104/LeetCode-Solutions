@@ -9,7 +9,7 @@ import itertools
 class SegmentTree(object):
     def __init__(self, N,
                  build_fn=lambda _: float("inf"),
-                 query_fn=lambda x, y: y if x is None else x if y is None else min(x, y),
+                 query_fn=lambda x, y: x if y is None else min(x, y),
                  update_fn=lambda x: x):
         self.tree = [None]*(2*2**((N-1).bit_length()))
         self.base = len(self.tree)//2
