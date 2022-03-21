@@ -1,6 +1,9 @@
 # Time:  O(n)
 # Space: O(n)
 
+import collections
+
+
 # freq table
 class Solution(object):
     def divideArray(self, nums):
