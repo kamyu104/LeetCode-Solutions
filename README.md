@@ -104,7 +104,7 @@
 1734 | [Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation/) | [C++](./C++/decode-xored-permutation.cpp) [Python](./Python/decode-xored-permutation.py) | _O(n)_ | _O(1)_ | Medium ||
 1829 | [Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/) | [C++](./C++/maximum-xor-for-each-query.cpp) [Python](./Python/maximum-xor-for-each-query.py) | _O(n)_ | _O(1)_ | Medium ||
 2151 | [Maximum Good People Based on Statements](https://leetcode.com/problems/maximum-good-people-based-on-statements/) | [C++](./C++/maximum-good-people-based-on-statements.cpp) [Python](./Python/maximum-good-people-based-on-statements.py) | _O(n^2 * 2^n)_ | _O(1)_ | Hard || Bitmasks, Brute Force
-2212 | [Maximum Points in an Archery Competition](https://leetcode.com/problems/maximum-points-in-an-archery-competition/) | [C++](./C++/maximum-points-in-an-archery-competition.cpp) [Python](./Python/maximum-points-in-an-archery-competition.py) | _O(n * n^2)_ | _O(n)_ | Medium || Bitmasks, Brute Force
+2212 | [Maximum Points in an Archery Competition](https://leetcode.com/problems/maximum-points-in-an-archery-competition/) | [C++](./C++/maximum-points-in-an-archery-competition.cpp) [Python](./Python/maximum-points-in-an-archery-competition.py) | _O(n * 2^n)_ | _O(n)_ | Medium || Bitmasks, Brute Force
 
 <br/>
 <div align="right">
