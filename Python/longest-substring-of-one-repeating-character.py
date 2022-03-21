@@ -4,6 +4,8 @@
 import itertools
 
 
+# Template:
+# https://github.com/kamyu104/FacebookHackerCup-2021/blob/main/Round%203/auth_ore_ization.py
 class SegmentTree(object):
     def __init__(self, N,
                  build_fn=lambda _: float("inf"),
@@ -19,16 +21,11 @@ class SegmentTree(object):
             self.tree[i] = query_fn(self.tree[2*i], self.tree[2*i+1])
 
     def update(self, i, h):
-        def apply(x, h):
-            self.tree[x] = self.update_fn(h)
-
-        def pull(x):
-            while x > 1:
-                x //= 2
-                self.tree[x] = self.query_fn(self.tree[x*2], self.tree[x*2+1])
-
-        apply(i+self.base, h)
-        pull(i+self.base)
+        x = self.base+i
+        self.tree[x] = self.update_fn(h)
+        while x > 1:
+            x //= 2
+            self.tree[x] = self.query_fn(self.tree[x*2], self.tree[x*2+1])
 
     def query(self, L, R):
         if L > R:
