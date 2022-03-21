@@ -37,24 +37,23 @@ class Solution(object):
         :type queryIndices: List[int]
         :rtype: List[int]
         """
-        LEN, LEFT, RIGHT, LEFT_LEN, RIGHT_LEN, MAX_LEN, SIZE = xrange(7)
+        LEFT, RIGHT, LEFT_LEN, RIGHT_LEN, LEN, MAX_LEN, SIZE = xrange(7)
         def build(i):
             return update(s[i])
 
         def update(y):
             result = [0]*SIZE
-            result[LEN] = 1
             result[LEFT] = result[RIGHT] = y
-            result[LEFT_LEN] = result[RIGHT_LEN] = result[MAX_LEN] = 1
+            result[LEN] = result[LEFT_LEN] = result[RIGHT_LEN] = result[MAX_LEN] = 1
             return result
 
         def query(x, y):
             return x if y is None else \
-                   [x[LEN]+y[LEN],
-                    x[LEFT],
+                   [x[LEFT],
                     y[RIGHT],
                     x[LEFT_LEN]+(y[LEFT_LEN] if x[LEFT_LEN] == x[LEN] and x[RIGHT] == y[LEFT] else 0),
                     y[RIGHT_LEN]+(x[RIGHT_LEN] if y[RIGHT_LEN] == y[LEN] and y[LEFT] == x[RIGHT] else 0),
+                    x[LEN]+y[LEN],
                     max(x[MAX_LEN], y[MAX_LEN], x[RIGHT_LEN]+y[LEFT_LEN] if x[RIGHT] == y[LEFT] else 0)]
         
         result = []
@@ -120,24 +119,23 @@ class Solution2(object):
         :type queryIndices: List[int]
         :rtype: List[int]
         """
-        LEN, LEFT, RIGHT, LEFT_LEN, RIGHT_LEN, MAX_LEN, SIZE = xrange(7)
+        LEFT, RIGHT, LEFT_LEN, RIGHT_LEN, LEN, MAX_LEN, SIZE = xrange(7)
         def build(i):
             return update(s[i])
 
         def update(y):
             result = [0]*SIZE
-            result[LEN] = 1
+            result[LEN] = result[LEFT_LEN] = result[RIGHT_LEN] = result[MAX_LEN] = 1
             result[LEFT] = result[RIGHT] = y
-            result[LEFT_LEN] = result[RIGHT_LEN] = result[MAX_LEN] = 1
             return result
 
         def query(x, y):
             return y if x is None else x if y is None else \
-                   [x[LEN]+y[LEN],
-                    x[LEFT],
+                   [x[LEFT],
                     y[RIGHT],
                     x[LEFT_LEN]+(y[LEFT_LEN] if x[LEFT_LEN] == x[LEN] and x[RIGHT] == y[LEFT] else 0),
                     y[RIGHT_LEN]+(x[RIGHT_LEN] if y[RIGHT_LEN] == y[LEN] and y[LEFT] == x[RIGHT] else 0),
+                    x[LEN]+y[LEN],
                     max(x[MAX_LEN], y[MAX_LEN], x[RIGHT_LEN]+y[LEFT_LEN] if x[RIGHT] == y[LEFT] else 0)]
         
         result = []
