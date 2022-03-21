@@ -49,7 +49,7 @@ class Solution(object):
             return result
 
         def query(x, y):
-            return y if x is None else x if y is None else \
+            return x if y is None else \
                    [x[LEN]+y[LEN],
                     x[LEFT],
                     y[RIGHT],
