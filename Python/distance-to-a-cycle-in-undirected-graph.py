@@ -10,11 +10,10 @@ class Solution(object):
         :rtype: List[int]
         """
         def cycle(parent, u, v):
-            result = [v]
-            while parent[v] != u:
+            result = [parent[v], v]
+            while u != parent[v]:
                 result.append(u)
                 u = parent[u]
-            result.append(u)
             return result
     
         def iter_dfs(adj):
