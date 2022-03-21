@@ -9,7 +9,7 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        def cycle(parent, u, v):
+        def cycle(parent, v, u):
             result = [parent[v], v]
             while u != parent[v]:
                 result.append(u)
@@ -26,7 +26,7 @@ class Solution(object):
                     if parent[v] != -2:
                         if v == parent[u]:
                             continue
-                        return cycle(parent, u, v)
+                        return cycle(parent, v, u)
                     parent[v] = u
                     stk.append(v)
 
