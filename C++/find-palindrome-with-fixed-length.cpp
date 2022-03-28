@@ -5,7 +5,7 @@
 class Solution {
 public:
     vector<long long> kthPalindrome(vector<int>& queries, int intLength) {
-        const int64_t max_x = pow(10, (intLength + 1) / 2)  - 1;
+        const long long max_x = pow(10, (intLength + 1) / 2)  - 1;
         const auto& reverse = [](auto x) {
             decltype(x) result = 0;
             for (; x; x /= 10) {
