@@ -13,6 +13,6 @@ class Solution(object):
             if 10**((l-1)//2)+(x-1) > 10**((l+1)//2)-1:
                 return -1
             s = str(10**((l-1)//2)+(x-1))
-            return s+s[::-1][l%2:]
+            return int(s+s[::-1][l%2:])
 
         return [f(intLength, x) for x in queries]
