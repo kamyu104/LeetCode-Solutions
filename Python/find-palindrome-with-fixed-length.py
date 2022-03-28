@@ -25,7 +25,6 @@ class Solution(object):
         return [f(intLength, x) for x in queries]
 
 
-
 # Time:  O(n * l)
 # Space: O(l)
 # math
