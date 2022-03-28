@@ -12,10 +12,10 @@ class Solution(object):
         dp = [0]
         for pile in piles:
             new_dp = [0]*min(len(dp)+len(pile), k+1)
-            for j in xrange(len(dp)):
+            for i in xrange(len(dp)):
                 curr = 0
-                for l in xrange(min(k-j, len(pile))+1):
-                    new_dp[j+l] = max(new_dp[j+l], dp[j]+curr)
-                    curr += pile[l] if l < len(pile) else 0
+                for j in xrange(min(k-i, len(pile))+1):
+                    new_dp[i+j] = max(new_dp[i+j], dp[i]+curr)
+                    curr += pile[j] if j < len(pile) else 0
             dp = new_dp
         return dp[-1]
