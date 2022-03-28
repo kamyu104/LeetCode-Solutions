@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2213%20%2F%202213-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2218%20%2F%202218-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -557,6 +557,7 @@
 2190 | [Most Frequent Number Following Key In an Array](https://leetcode.com/problems/most-frequent-number-following-key-in-an-array/) | [C++](./C++/most-frequent-number-following-key-in-an-array.cpp) [Python](./Python/most-frequent-number-following-key-in-an-array.py) | _O(n)_ | _O(n)_ | Easy ||  Freq Table
 2201 | [Count Artifacts That Can Be Extracted](https://leetcode.com/problems/count-artifacts-that-can-be-extracted/) | [C++](./C++/count-artifacts-that-can-be-extracted.cpp) [Python](./Python/count-artifacts-that-can-be-extracted.py) | _O(a + d)_ | _O(d)_ | Medium ||  Hash Table
 2206 | [Divide Array Into Equal Pairs](https://leetcode.com/problems/divide-array-into-equal-pairs/) | [C++](./C++/divide-array-into-equal-pairs.cpp) [Python](./Python/divide-array-into-equal-pairs.py) | _O(n)_ | _O(n)_ | Easy ||  Hash Table
+2215 | [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/) | [C++](./C++/find-the-difference-of-two-arrays.cpp) [Python](./Python/find-the-difference-of-two-arrays.py) | _O(n)_ | _O(n)_ | Easy ||  Hash Table
 
 <br/>
 <div align="right">
@@ -680,6 +681,7 @@
 2180 | [Count Integers With Even Digit Sum](https://leetcode.com/problems/count-integers-with-even-digit-sum/)|[C++](./C++/count-integers-with-even-digit-sum.cpp) [Python](./Python/count-integers-with-even-digit-sum.py)| _O(logn)_     | _O(1)_         | Easy         | | Math
 2183 | [Count Array Pairs Divisible by K](https://leetcode.com/problems/count-array-pairs-divisible-by-k/)|[C++](./C++/count-array-pairs-divisible-by-k.cpp) [Python](./Python/count-array-pairs-divisible-by-k.py)| _O(nlogk + k)_     | _O(sqrt(k))_         | Hard         | variant of [Count Equal and Divisible Pairs in an Array](https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/) | Math
 2198 | [Number of Single Divisor Triplets](https://leetcode.com/problems/number-of-single-divisor-triplets/)|[C++](./C++/number-of-single-divisor-triplets.cpp) [Python](./Python/number-of-single-divisor-triplets.py)| _O(d^3)_     | _O(d)_         | Medium         | 🔒 | Math, Combinatorics
+2217 | [Find Palindrome With Fixed Length](https://leetcode.com/problems/find-palindrome-with-fixed-length/)|[C++](./C++/find-palindrome-with-fixed-length.cpp) [Python](./Python/find-palindrome-with-fixed-length.py)| _O(n * l)_     | _O(1)_         | Medium         || Math
 
 <br/>
 <div align="right">
@@ -1107,6 +1109,7 @@
 2188 | [Minimum Time to Finish the Race](https://leetcode.com/problems/minimum-time-to-finish-the-race/) | [C++](./C++/minimum-time-to-finish-the-race.cpp) [Python](./Python/minimum-time-to-finish-the-race.py) | _O((n + l) * logc)_ | _O(n + l + logc)_ | Hard || Greedy, DP
 2189 | [Number of Ways to Build House of Cards](https://leetcode.com/problems/number-of-ways-to-build-house-of-cards/) | [C++](./C++/number-of-ways-to-build-house-of-cards.cpp) [Python](./Python/number-of-ways-to-build-house-of-cards.py) | _O(n^2)_ | _O(n)_ | Medium | 🔒 | DP
 2209 | [Minimum White Tiles After Covering With Carpets](https://leetcode.com/problems/minimum-white-tiles-after-covering-with-carpets/) | [C++](./C++/minimum-white-tiles-after-covering-with-carpets.cpp) [Python](./Python/minimum-white-tiles-after-covering-with-carpets.py) | _O(m * n)_ | _O(m * n)_ | Hard || DP
+2218 | [Maximum Value of K Coins From Piles](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/) | [C++](./C++/maximum-value-of-k-coins-from-piles.cpp) [Python](./Python/maximum-value-of-k-coins-from-piles.py) | _O(O(min(n * k^2, m * k)))_ | _O(k)_ | Hard || DP
 
 <br/>
 <div align="right">
@@ -1246,6 +1249,8 @@
 2193 | [Minimum Number of Moves to Make Palindrome](https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/) | [C++](./C++/minimum-number-of-moves-to-make-palindrome.cpp) [Python](./Python/minimum-number-of-moves-to-make-palindrome.py) | _O(nlogn)_ | _O(n)_ | Hard |  | Greedy, BIT, Fenwick Tree  |
 2195 | [Append K Integers With Minimal Sum](https://leetcode.com/problems/append-k-integers-with-minimal-sum/)  | [C++](./C++/append-k-integers-with-minimal-sum.cpp) [Python](./Python/append-k-integers-with-minimal-sum.py) | _O(nlogn)_ | _O(n)_ | Medium | | Greedy |
 2207 | [Maximize Number of Subsequences in a String](https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/)  | [C++](./C++/maximize-number-of-subsequences-in-a-string.cpp) [Python](./Python/maximize-number-of-subsequences-in-a-string.py) | _O(n)_ | _O(1)_ | Medium | | Counting, Greedy |
+2214 | [Minimum Health to Beat Game](https://leetcode.com/problems/minimum-health-to-beat-game/)  | [C++](./C++/minimum-health-to-beat-game.cpp) [Python](./Python/minimum-health-to-beat-game.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Greedy |
+2216 | [Minimum Deletions to Make Array Beautiful](https://leetcode.com/problems/minimum-deletions-to-make-array-beautiful/)  | [C++](./C++/minimum-deletions-to-make-array-beautiful.cpp) [Python](./Python/minimum-deletions-to-make-array-beautiful.py) | _O(n)_ | _O(1)_ | Medium | | Greedy |
 
 <br/>
 <div align="right">
