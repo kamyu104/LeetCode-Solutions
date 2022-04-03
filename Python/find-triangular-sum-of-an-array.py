@@ -8,17 +8,17 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        def inv_mod(x, mod):
-            y = x
-            while y*x%10 != 1:
-                y = y*x%10
-            return y
-
         def exp_mod(p, mod):
             result = [p]
             while result[-1]*p%10 != result[0]:
                  result.append(result[-1]*p%10)
             return [result[-1]]+result[:-1]
+
+        def inv_mod(x, mod):
+            y = x
+            while y*x%10 != 1:
+                y = y*x%10
+            return y
 
         def factor_p(x, p, cnt, diff):
             if x == 0:
