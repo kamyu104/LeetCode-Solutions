@@ -5,13 +5,6 @@
 class Solution {
 public:
     int triangularSum(vector<int>& nums) {
-        const auto& inv_mod = [](const auto& x, const auto& mod) {
-            int y = x;
-            while (y * x % 10 != 1) {
-                y = y * x % 10;
-            }
-            return y;
-        };
         const auto& exp_mod = [](const auto& p, const auto& mod) {
             vector<int> result = {p};
             while (result.back() * p % 10 != result[0]) {
@@ -19,6 +12,13 @@ public:
             }
             rotate(rbegin(result), rbegin(result) + 1, rend(result));
             return result;
+        };
+        const auto& inv_mod = [](const auto& x, const auto& mod) {
+            int y = x;
+            while (y * x % 10 != 1) {
+                y = y * x % 10;
+            }
+            return y;
         };
         const auto& factor_p = [](auto x, const auto& p, auto cnt, auto diff) {
             if (x == 0) {
