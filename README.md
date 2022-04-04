@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2218%20%2F%202218-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2227%20%2F%202227-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -105,6 +105,7 @@
 1829 | [Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/) | [C++](./C++/maximum-xor-for-each-query.cpp) [Python](./Python/maximum-xor-for-each-query.py) | _O(n)_ | _O(1)_ | Medium ||
 2151 | [Maximum Good People Based on Statements](https://leetcode.com/problems/maximum-good-people-based-on-statements/) | [C++](./C++/maximum-good-people-based-on-statements.cpp) [Python](./Python/maximum-good-people-based-on-statements.py) | _O(n^2 * 2^n)_ | _O(1)_ | Hard || Bitmasks, Brute Force
 2212 | [Maximum Points in an Archery Competition](https://leetcode.com/problems/maximum-points-in-an-archery-competition/) | [C++](./C++/maximum-points-in-an-archery-competition.cpp) [Python](./Python/maximum-points-in-an-archery-competition.py) | _O(n * 2^n)_ | _O(n)_ | Medium || Bitmasks, Brute Force
+2220 | [Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/) | [C++](./C++/minimum-bit-flips-to-convert-number.cpp) [Python](./Python/minimum-bit-flips-to-convert-number.py) | _O(logn)_ | _O(1)_ | Easy || Bit Manipulation
 
 <br/>
 <div align="right">
@@ -252,6 +253,7 @@
 2194 | [Cells in a Range on an Excel Sheet](https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/) | [C++](./C++/cells-in-a-range-on-an-excel-sheet.cpp) [Python](./Python/cells-in-a-range-on-an-excel-sheet.py) | _O(26^2)_ | _O(1)_ | Easy | |
 2202 | [Maximize the Topmost Element After K Moves](https://leetcode.com/problems/maximize-the-topmost-element-after-k-moves/) | [C++](./C++/maximize-the-topmost-element-after-k-moves.cpp) [Python](./Python/maximize-the-topmost-element-after-k-moves.py) | _O(min(n, k))_ | _O(1)_ | Medium | | Constructive Algorithms
 2210 | [Count Hills and Valleys in an Array](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/) | [C++](./C++/count-hills-and-valleys-in-an-array.cpp) [Python](./Python/count-hills-and-valleys-in-an-array.py) | _O(n)_ | _O(1)_ | Easy | | Simulation
+2219 | [Maximum Sum Score of Array](https://leetcode.com/problems/maximum-sum-score-of-array/) | [C++](./C++/maximum-sum-score-of-array.cpp) [Python](./Python/maximum-sum-score-of-array.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Prefix Sum
 
 <br/>
 <div align="right">
@@ -365,6 +367,7 @@
 2186 | [Minimum Number of Steps to Make Two Strings Anagram II](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/) | [C++](./C++/minimum-number-of-steps-to-make-two-strings-anagram-ii.cpp) [Python](./Python/minimum-number-of-steps-to-make-two-strings-anagram-ii.py) | _O(n)_ | _O(1)_ | Medium | variant of [Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) |
 2211 | [Count Collisions on a Road](https://leetcode.com/problems/count-collisions-on-a-road/) | [C++](./C++/count-collisions-on-a-road.cpp) [Python](./Python/count-collisions-on-a-road.py) | _O(n)_ | _O(1)_ | Medium | | Counting, Simulation
 2213 | [Longest Substring of One Repeating Character](https://leetcode.com/problems/longest-substring-of-one-repeating-character/) | [C++](./C++/longest-substring-of-one-repeating-character.cpp) [Python](./Python/longest-substring-of-one-repeating-character.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Segment Tree
+2223 | [Sum of Scores of Built Strings](https://leetcode.com/problems/sum-of-scores-of-built-strings/) | [C++](./C++/sum-of-scores-of-built-strings.cpp) [Python](./Python/sum-of-scores-of-built-strings.py) | _O(n)_   | _O(n)_        | Hard         | | `Z-Function`
 
 <br/>
 <div align="right">
@@ -558,6 +561,7 @@
 2201 | [Count Artifacts That Can Be Extracted](https://leetcode.com/problems/count-artifacts-that-can-be-extracted/) | [C++](./C++/count-artifacts-that-can-be-extracted.cpp) [Python](./Python/count-artifacts-that-can-be-extracted.py) | _O(a + d)_ | _O(d)_ | Medium ||  Hash Table
 2206 | [Divide Array Into Equal Pairs](https://leetcode.com/problems/divide-array-into-equal-pairs/) | [C++](./C++/divide-array-into-equal-pairs.cpp) [Python](./Python/divide-array-into-equal-pairs.py) | _O(n)_ | _O(n)_ | Easy ||  Hash Table
 2215 | [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/) | [C++](./C++/find-the-difference-of-two-arrays.cpp) [Python](./Python/find-the-difference-of-two-arrays.py) | _O(n)_ | _O(n)_ | Easy ||  Hash Table
+2225 | [Find Players With Zero or One Losses](https://leetcode.com/problems/find-players-with-zero-or-one-losses/) | [C++](./C++/find-players-with-zero-or-one-losses.cpp) [Python](./Python/find-players-with-zero-or-one-losses.py) | _O(nlogn)_ | _O(n)_ | Medium ||  Hash Table, Sort
 
 <br/>
 <div align="right">
@@ -682,6 +686,7 @@
 2183 | [Count Array Pairs Divisible by K](https://leetcode.com/problems/count-array-pairs-divisible-by-k/)|[C++](./C++/count-array-pairs-divisible-by-k.cpp) [Python](./Python/count-array-pairs-divisible-by-k.py)| _O(nlogk + k)_     | _O(sqrt(k))_         | Hard         | variant of [Count Equal and Divisible Pairs in an Array](https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/) | Math
 2198 | [Number of Single Divisor Triplets](https://leetcode.com/problems/number-of-single-divisor-triplets/)|[C++](./C++/number-of-single-divisor-triplets.cpp) [Python](./Python/number-of-single-divisor-triplets.py)| _O(d^3)_     | _O(d)_         | Medium         | 🔒 | Math, Combinatorics
 2217 | [Find Palindrome With Fixed Length](https://leetcode.com/problems/find-palindrome-with-fixed-length/)|[C++](./C++/find-palindrome-with-fixed-length.cpp) [Python](./Python/find-palindrome-with-fixed-length.py)| _O(n * l)_     | _O(1)_         | Medium         || Math
+2221 | [Find Triangular Sum of an Array](https://leetcode.com/problems/find-triangular-sum-of-an-array/)|[C++](./C++/find-triangular-sum-of-an-array.cpp) [Python](./Python/find-triangular-sum-of-an-array.py)| _O(n)_     | _O(1)_         | Medium         || Simulation, Combinatorics, Number Thoery
 
 <br/>
 <div align="right">
@@ -851,6 +856,7 @@
 2111 | [Minimum Operations to Make the Array K-Increasing](https://leetcode.com/problems/minimum-operations-to-make-the-array-k-increasing/) | [C++](./C++/minimum-operations-to-make-the-array-k-increasing.cpp) [Python](./Python/minimum-operations-to-make-the-array-k-increasing.py) | _O(nlog(n/k))_ | _O(n/k)_ | Hard | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) |
 2137 | [Pour Water Between Buckets to Make Water Levels Equal](https://leetcode.com/problems/pour-water-between-buckets-to-make-water-levels-equal/) | [C++](./C++/pour-water-between-buckets-to-make-water-levels-equal.cpp) [Python](./Python/pour-water-between-buckets-to-make-water-levels-equal.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 |
 2187 | [Minimum Time to Complete Trips](https://leetcode.com/problems/minimum-time-to-complete-trips/) | [C++](./C++/minimum-time-to-complete-trips.cpp) [Python](./Python/minimum-time-to-complete-trips.py) | _O(nlogr)_ | _O(1)_ | Medium | |
+2226 | [Maximum Candies Allocated to K Children](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/) | [C++](./C++/maximum-candies-allocated-to-k-children.cpp) [Python](./Python/maximum-candies-allocated-to-k-children.py) | _O(nlogr)_ | _O(1)_ | Medium | | Binary Search
 
 <br/>
 <div align="right">
@@ -1109,7 +1115,8 @@
 2188 | [Minimum Time to Finish the Race](https://leetcode.com/problems/minimum-time-to-finish-the-race/) | [C++](./C++/minimum-time-to-finish-the-race.cpp) [Python](./Python/minimum-time-to-finish-the-race.py) | _O((n + l) * logc)_ | _O(n + l + logc)_ | Hard || Greedy, DP
 2189 | [Number of Ways to Build House of Cards](https://leetcode.com/problems/number-of-ways-to-build-house-of-cards/) | [C++](./C++/number-of-ways-to-build-house-of-cards.cpp) [Python](./Python/number-of-ways-to-build-house-of-cards.py) | _O(n^2)_ | _O(n)_ | Medium | 🔒 | DP
 2209 | [Minimum White Tiles After Covering With Carpets](https://leetcode.com/problems/minimum-white-tiles-after-covering-with-carpets/) | [C++](./C++/minimum-white-tiles-after-covering-with-carpets.cpp) [Python](./Python/minimum-white-tiles-after-covering-with-carpets.py) | _O(m * n)_ | _O(m * n)_ | Hard || DP
-2218 | [Maximum Value of K Coins From Piles](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/) | [C++](./C++/maximum-value-of-k-coins-from-piles.cpp) [Python](./Python/maximum-value-of-k-coins-from-piles.py) | _O(O(min(n * k^2, m * k)))_ | _O(k)_ | Hard || DP
+2218 | [Maximum Value of K Coins From Piles](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/) | [C++](./C++/maximum-value-of-k-coins-from-piles.cpp) [Python](./Python/maximum-value-of-k-coins-from-piles.py) | _O(min(n * k^2, m * k)))_ | _O(k)_ | Hard || DP
+2222 | [Number of Ways to Select Buildings](https://leetcode.com/problems/number-of-ways-to-select-buildings/) | [C++](./C++/number-of-ways-to-select-buildings.cpp) [Python](./Python/number-of-ways-to-select-buildings.py) | _O(n)_ | _O(1)_ | Medium || DP
 
 <br/>
 <div align="right">
@@ -1251,6 +1258,7 @@
 2207 | [Maximize Number of Subsequences in a String](https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/)  | [C++](./C++/maximize-number-of-subsequences-in-a-string.cpp) [Python](./Python/maximize-number-of-subsequences-in-a-string.py) | _O(n)_ | _O(1)_ | Medium | | Counting, Greedy |
 2214 | [Minimum Health to Beat Game](https://leetcode.com/problems/minimum-health-to-beat-game/)  | [C++](./C++/minimum-health-to-beat-game.cpp) [Python](./Python/minimum-health-to-beat-game.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Greedy |
 2216 | [Minimum Deletions to Make Array Beautiful](https://leetcode.com/problems/minimum-deletions-to-make-array-beautiful/)  | [C++](./C++/minimum-deletions-to-make-array-beautiful.cpp) [Python](./Python/minimum-deletions-to-make-array-beautiful.py) | _O(n)_ | _O(1)_ | Medium | | Greedy |
+2224 | [Minimum Number of Operations to Convert Time](https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/)  | [C++](./C++/minimum-number-of-operations-to-convert-time.cpp) [Python](./Python/minimum-number-of-operations-to-convert-time.py) | _O(1)_ | _O(1)_ | Easy | | Greedy |
 
 <br/>
 <div align="right">
@@ -1383,6 +1391,7 @@
 2080 | [Range Frequency Queries](https://leetcode.com/problems/range-frequency-queries/) | [C++](./C++/range-frequency-queries.cpp) [Python](./Python/range-frequency-queries.py) | ctor: _O(n)_<br>query: _O(logn)_ | _O(n)_ | Medium | | Binary Search
 2102 | [Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/) | [C++](./C++/sequentially-ordinal-rank-tracker.cpp) [Python](./Python/sequentially-ordinal-rank-tracker.py) | add: _O(logn)_<br>get: _O(logn)_ | _O(n)_ | Hard | | Sorted List
 2166 | [Design Bitset](https://leetcode.com/problems/design-bitset/) | [C++](./C++/design-bitset.cpp) [Python](./Python/design-bitset.py) | ctor: _O(n)_<br>fix: _O(1)_<br>fix: _O(1)_<br>unfix: _O(1)_<br>flip: _O(1)_<br>all: _O(1)_<br>one: _O(1)_<br>count: _O(1)_<br>toString: _O(n)_ | _O(n)_ | Medium | |
+2227 | [Encrypt and Decrypt Strings](https://leetcode.com/problems/encrypt-and-decrypt-strings/) | [C++](./C++/encrypt-and-decrypt-strings.cpp) [Python](./Python/encrypt-and-decrypt-strings.py) | ctor: _O(m + d)_<br>encrypt: _O(n)_<br>decrypt: _O(n)_ | _O(n)_ | Hard | | Freq Table
 
 <br/>
 <div align="right">
