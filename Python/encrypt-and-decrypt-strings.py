@@ -7,7 +7,7 @@ import collections
 import itertools
 
 
-# hash
+# freq table
 class Encrypter(object):
 
     def __init__(self, keys, values, dictionary):
