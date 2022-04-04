@@ -3,7 +3,7 @@
 //        decrypt: O(n)
 // Space: O(m + d)
 
-// hash
+// freq table
 class Encrypter {
 public:
     Encrypter(vector<char>& keys, vector<string>& values, vector<string>& dictionary) {
