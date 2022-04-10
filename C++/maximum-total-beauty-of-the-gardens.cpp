@@ -11,10 +11,10 @@ public:
         long long prefix = 0, suffix = accumulate(begin(flowers), it, 0ll);
         long long result = 0;
         for (long long right = 0, left = 0; right <= n; ++right) {
-            const auto total = newFlowers - (static_cast<long long>(n - right) * target - suffix);
-            if (right < n) {
-                suffix -= flowers[right];
+            if (right) {
+                suffix -= flowers[right - 1];
             }
+            const auto total = newFlowers - (static_cast<long long>(n - right) * target - suffix);
             if (total < 0) {
                 continue;
             }
@@ -43,10 +43,10 @@ public:
         }
         long long result = 0, suffix = 0;
         for (long long right = n, left = n; right >= 0; --right) {
-            const auto total = newFlowers - (static_cast<long long>(n - right) * target - suffix);
-            if (right - 1 >= 0) {
-                suffix += flowers[right - 1];
+            if (right != n) {
+                suffix += flowers[right];
             }
+            const auto total = newFlowers - (static_cast<long long>(n - right) * target - suffix);
             if (total < 0) {
                 break;
             }
@@ -91,10 +91,10 @@ public:
         long long suffix = accumulate(begin(flowers), it, 0ll);
         long long result = 0;
         for (long long right = 0; right <= n; ++right) {
-            const auto total = newFlowers - (static_cast<long long>(n - right) * target - suffix);
-            if (right < n) {
-                suffix -= flowers[right];
+            if (right) {
+                suffix -= flowers[right - 1];
             }
+            const auto total = newFlowers - (static_cast<long long>(n - right) * target - suffix);
             if (total < 0) {
                 continue;
             }
@@ -135,10 +135,10 @@ public:
         }
         long long result = 0, suffix = 0;
         for (long long right = n; right >= 0; --right) {
-            const auto total = newFlowers - (static_cast<long long>(n - right) * target - suffix);
-            if (right - 1 >= 0) {
-                suffix += flowers[right - 1];
+            if (right != n) {
+                suffix += flowers[right];
             }
+            const auto total = newFlowers - (static_cast<long long>(n - right) * target - suffix);
             if (total < 0) {
                 break;
             }
