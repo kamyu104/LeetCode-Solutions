@@ -78,3 +78,50 @@ class Solution2(object):
             mn = min((total+prefix[left])//left if left else 0, target-1)
             result = max(result, mn*partial+(len(flowers)-right)*full)
         return result
+
+
+# Time:  O(nlogn)
+# Space: O(n)
+import bisect
+
+
+# sort, prefix sum, binary search
+class Solution3(object):
+    def maximumBeauty(self, flowers, newFlowers, target, full, partial):
+        """
+        :type flowers: List[int]
+        :type newFlowers: int
+        :type target: int
+        :type full: int
+        :type partial: int
+        :rtype: int
+        """
+        def check(prefix, total, x):
+            return (prefix[x]-prefix[x-1])*x-prefix[x] <= total
+
+        def binary_search_right(prefix, total, left, right):
+            while left <= right:
+                mid = left+(right-left)//2
+                if not check(prefix, total, mid):
+                    right = mid-1
+                else:
+                    left = mid+1
+            return right
+    
+        flowers.sort()
+        n = bisect.bisect_left(flowers, target)
+        prefix = [0]*(n+1)
+        for i in xrange(n):
+            prefix[i+1] = prefix[i]+flowers[i]
+        suffix = sum(flowers[i] for i in xrange(n))
+        result = left = 0
+        for right in xrange(n+1):
+            total = newFlowers-((n-right)*target-suffix)
+            if right < n:
+                suffix -= flowers[right]
+            if total < 0:
+                continue
+            left = binary_search_right(prefix, total, 1, right)
+            mn = min((total+prefix[left])//left if left else 0, target-1)
+            result = max(result, mn*partial+(len(flowers)-right)*full)
+        return result
