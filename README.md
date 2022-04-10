@@ -1571,7 +1571,7 @@
 2173 | [Longest Winning Streak](https://leetcode.com/problems/longest-winning-streak/) | [MySQL](./MySQL/longest-winning-streak.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 2175 | [The Change in Global Rankings](https://leetcode.com/problems/the-change-in-global-rankings/) | [MySQL](./MySQL/the-change-in-global-rankings.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2199 | [Finding the Topic of Each Post](https://leetcode.com/problems/finding-the-topic-of-each-post/) | [MySQL](./MySQL/finding-the-topic-of-each-post.sql) | _O(n * mlogm)_ | _O(n * m)_       | Hard           |🔒||
-2205 | [The Number of Users That Are Eligible for Discount](https://leetcode.com/problems/the-number-of-users-that-are-eligible-for-discount/) | [MySQL](./MySQL/the-number-of-users-that-are-eligible-for-discount.sql) | _O(n)_ | _O(n)_       | Hard           |🔒||
+2205 | [The Number of Users That Are Eligible for Discount](https://leetcode.com/problems/the-number-of-users-that-are-eligible-for-discount/) | [MySQL](./MySQL/the-number-of-users-that-are-eligible-for-discount.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
