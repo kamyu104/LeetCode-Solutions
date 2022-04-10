@@ -29,7 +29,7 @@ public:
 };
 
 // Time:  O(nlogn)
-// Space: O(n)
+// Space: O(1)
 // sort, prefix sum, greedy, two pointers, improved from solution4
 class Solution2 {
 public:
