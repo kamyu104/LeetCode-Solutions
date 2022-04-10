@@ -5,8 +5,9 @@
 class Solution {
 public:
     long long maximumBeauty(vector<int>& flowers, long long newFlowers, int target, int full, int partial) {
-        sort(begin(flowers), end(flowers));
-        const long long n = distance(cbegin(flowers), lower_bound(cbegin(flowers), cend(flowers), target));
+        const auto it = partition(begin(flowers), end(flowers), [&target](int x) { return x < target; });
+        sort(begin(flowers), it);
+        const long long n = distance(begin(flowers), it);
         vector<long long> prefix(n + 1);
         for (int i = 0; i < n; ++i) {
             prefix[i + 1] = prefix[i] + flowers[i];
