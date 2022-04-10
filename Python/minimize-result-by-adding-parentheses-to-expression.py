@@ -30,7 +30,9 @@ class Solution(object):
                 if val < min_val:
                     min_val = val
                     result = (i, j)
-        return "".join(itertools.chain((expression[i] for i in xrange(result[0])), '(', (expression[i] for i in xrange(result[0], result[1]+1)), ')', (expression[i] for i in xrange(result[1]+1, len(expression)))))
+        return "".join(itertools.chain((expression[i] for i in xrange(result[0])),
+                                       '(', (expression[i] for i in xrange(result[0], result[1]+1)), ')',
+                                       (expression[i] for i in xrange(result[1]+1, len(expression)))))
 
     
 # Time:  O(n^2)
