@@ -20,9 +20,9 @@ class Solution(object):
         prefix, suffix = 0, sum(flowers[i] for i in xrange(n))
         result = left = 0
         for right in xrange(n+1):
+            if right:
+                suffix -= flowers[right-1]
             total = newFlowers-((n-right)*target-suffix)
-            if right < n:
-                suffix -= flowers[right]
             if total < 0:
                 continue
             while not (left == right or (left and (total+prefix)//left <= flowers[left])):
@@ -57,9 +57,9 @@ class Solution2(object):
         result = suffix = 0
         left = n
         for right in reversed(xrange(n+1)):
+            if right != n:
+                suffix += flowers[right]
             total = newFlowers-((n-right)*target-suffix)
-            if right-1 >= 0:
-                suffix += flowers[right-1]
             if total < 0:
                 continue
             left = min(left, right)
@@ -106,9 +106,9 @@ class Solution3(object):
         suffix = sum(flowers[i] for i in xrange(n))
         result = left = 0
         for right in xrange(n+1):
+            if right:
+                suffix -= flowers[right-1]
             total = newFlowers-((n-right)*target-suffix)
-            if right < n:
-                suffix -= flowers[right]
             if total < 0:
                 continue
             left = binary_search(prefix, total, 0, right-1)
@@ -153,9 +153,9 @@ class Solution4(object):
         result = suffix = 0
         left = n
         for right in reversed(xrange(n+1)):
+            if right != n:
+                suffix += flowers[right]
             total = newFlowers-((n-right)*target-suffix)
-            if right-1 >= 0:
-                suffix += flowers[right-1]
             if total < 0:
                 break
             left = binary_search_right(prefix, total, 1, right)
