@@ -27,7 +27,7 @@ class Solution(object):
                 if val < min_val:
                     min_val = val
                     result = (i, j)
-        return expression[:result[0]] + '(' + expression[result[0]:result[1]+1] + ')' + expression[result[1]+1:]
+        return "".join([expression[:result[0]], '(', expression[result[0]:result[1]+1], ')', expression[result[1]+1:]])
 
     
 # Time:  O(n^2)
@@ -50,4 +50,4 @@ class Solution2(object):
                 if val < min_val:
                     min_val = val
                     result = (i, j)
-        return expression[:result[0]] + '(' + expression[result[0]:result[1]+1] + ')' + expression[result[1]+1:]
+        return "".join([expression[:result[0]], '(', expression[result[0]:result[1]+1], ')', expression[result[1]+1:]])
