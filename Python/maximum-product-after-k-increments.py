@@ -21,13 +21,39 @@ class Solution(object):
                 reduce(lambda x, y: x*y%MOD, (nums[j] for j in xrange(i+1, len(nums))), 1)) % MOD
 
 
+# Time:  O(n + k)
+# Space: O(n)
+import collections
+
+
+# freq table
+class Solution2(object):
+    def maximumProduct(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        MOD = 10**9+7
+        cnt = collections.Counter(nums)
+        min_num = min(cnt.iterkeys())
+        while k:
+            cnt[min_num] -= 1
+            cnt[min_num+1] += 1 
+            if not cnt[min_num]:
+                del cnt[min_num]
+                min_num += 1
+            k -= 1
+        return reduce(lambda total, x: total*pow(x[0], x[1], MOD)%MOD, cnt.iteritems(), 1)
+
+
 # Time:  O(n + klogn)
 # Space: O(1)
 import heapq
 
 
 # heap
-class Solution2(object):
+class Solution3(object):
     def maximumProduct(self, nums, k):
         """
         :type nums: List[int]
