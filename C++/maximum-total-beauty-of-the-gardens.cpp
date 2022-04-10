@@ -1,5 +1,5 @@
 // Time:  O(nlogn)
-// Space: O(n)
+// Space: O(1)
 
 // sort, prefix sum, greedy, two pointers
 class Solution {
@@ -8,24 +8,20 @@ public:
         const auto it = partition(begin(flowers), end(flowers), [&target](int x) { return x < target; });
         sort(begin(flowers), it);
         const long long n = distance(begin(flowers), it);
-        vector<long long> prefix(n + 1);
-        for (int i = 0; i < n; ++i) {
-            prefix[i + 1] = prefix[i] + flowers[i];
-        }
-        vector<long long> suffix(n + 1);
-        for (int i = n - 1; i >= 0; --i) {
-            suffix[i] = suffix[i + 1] + flowers[i];
-        }
+        long long prefix = 0, suffix = accumulate(begin(flowers), it, 0ll);
         long long result = 0, left = 0;
         for (long long right = 0; right <= n; ++right) {
-            const auto total = newFlowers - (static_cast<long long>(n - right) * target -suffix[right]);
+            const auto total = newFlowers - (static_cast<long long>(n - right) * target - suffix);
+            if (right < n) {
+                suffix -= flowers[right];
+            }
             if (total < 0) {
                 continue;
             }
-            while (left + 1 <= right && (left == 0 || (total + prefix[left]) / left > flowers[left])) {
-                ++left;
+            while (left + 1 <= right && (left == 0 || (total + prefix) / left > flowers[left])) {
+                prefix += flowers[left++];
             }
-            const auto mn = min(left ? (total + prefix[left]) / left : 0ll, static_cast<long long>(target) - 1);
+            const auto mn = min(left ? (total + prefix) / left : 0ll, static_cast<long long>(target) - 1);
             result = max(result, mn * partial + (static_cast<long long>(size(flowers)) - right) * full);
         }
         return result;
