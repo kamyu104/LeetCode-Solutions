@@ -1578,7 +1578,7 @@
 2199 | [Finding the Topic of Each Post](https://leetcode.com/problems/finding-the-topic-of-each-post/) | [MySQL](./MySQL/finding-the-topic-of-each-post.sql) | _O(n * mlogm)_ | _O(n * m)_       | Hard           |🔒||
 2205 | [The Number of Users That Are Eligible for Discount](https://leetcode.com/problems/the-number-of-users-that-are-eligible-for-discount/) | [MySQL](./MySQL/the-number-of-users-that-are-eligible-for-discount.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 2228 | [Users With Two Purchases Within Seven Days](https://leetcode.com/problems/users-with-two-purchases-within-seven-days/) | [MySQL](./MySQL/users-with-two-purchases-within-seven-days.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
-2230 | [The Users That Are Eligible for Discount](https://leetcode.com/problems/the-users-that-are-eligible-for-discount/) | [MySQL](./MySQL/the-users-that-are-eligible-for-discount.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+2230 | [The Users That Are Eligible for Discount](https://leetcode.com/problems/the-users-that-are-eligible-for-discount/) | [MySQL](./MySQL/the-users-that-are-eligible-for-discount.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
