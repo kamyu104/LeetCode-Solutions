@@ -63,7 +63,7 @@ class Solution2(object):
             if total < 0:
                 continue
             left = min(left, right)
-            while not ((prefix[left]-prefix[left-1])*left-prefix[left] <= total):
+            while not (left == 0 or (prefix[left]-prefix[left-1])*left-prefix[left] <= total):
                 left -= 1
             mn = min((total+prefix[left])//left if left else 0, target-1)
             result = max(result, mn*partial+(len(flowers)-right)*full)
