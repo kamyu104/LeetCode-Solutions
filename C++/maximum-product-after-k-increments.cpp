@@ -39,11 +39,53 @@ private:
     }
 };
 
+// Time:  O(n + k)
+// Space: O(n)
+// freq table
+class Solution2 {
+public:
+    int maximumProduct(vector<int>& nums, int k) {
+        static const int MOD = 1e9 + 7;
+        unordered_map<int, int> cnt;
+        int min_num = numeric_limits<int>::max();
+        for (const auto& x : nums) {
+            ++cnt[x];
+            min_num = min(min_num, x);
+        }
+        for (; k; --k) {
+            --cnt[min_num];
+            ++cnt[min_num + 1];
+            if (!cnt[min_num]) {
+                cnt.erase(min_num);
+                ++min_num;
+            }
+        }
+        return accumulate(cbegin(cnt), cend(cnt), 1ull,
+                          [=](const auto& total, const auto& x) {
+                              static const int MOD = 1e9 + 7;
+                              return total * powmod(x.first, x.second, MOD) % MOD;
+                          });
+    }
+
+private:
+    uint32_t powmod(uint32_t a, uint32_t b, uint32_t mod) {
+        a %= mod;
+        uint64_t result = 1;
+        while (b) {
+            if (b & 1) {
+                result = result * a % mod;
+            }
+            a = uint64_t(a) * a % mod;
+            b >>= 1;
+        }
+        return result;
+    }
+};
 
 // Time:  O(n + klogn)
 // Space: O(1)
 // heap
-class Solution2 {
+class Solution3 {
 public:
     int maximumProduct(vector<int>& nums, int k) {
         make_heap(begin(nums), end(nums), greater<int>());
