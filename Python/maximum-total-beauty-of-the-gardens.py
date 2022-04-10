@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-# sort, prefix sum, greedy
+# sort, prefix sum, greedy, two pointers
 class Solution(object):
     def maximumBeauty(self, flowers, newFlowers, target, full, partial):
         """
