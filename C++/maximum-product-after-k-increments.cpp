@@ -52,13 +52,15 @@ public:
             ++cnt[x];
             min_num = min(min_num, x);
         }
-        for (; k; --k) {
-            --cnt[min_num];
-            ++cnt[min_num + 1];
+        while (k) {
+            const auto c = min(cnt[min_num], k);
+            cnt[min_num] -= c;
+            cnt[min_num + 1] += c;
             if (!cnt[min_num]) {
                 cnt.erase(min_num);
                 ++min_num;
             }
+            k -= c;
         }
         return accumulate(cbegin(cnt), cend(cnt), 1ull,
                           [=](const auto& total, const auto& x) {
