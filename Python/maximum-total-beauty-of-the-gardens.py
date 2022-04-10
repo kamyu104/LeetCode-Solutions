@@ -1,5 +1,8 @@
 # Time:  O(nlogn)
-# Space: O(n)
+# Space: O(1)
+
+import bisect
+
 
 # sort, prefix sum, greedy, two pointers
 class Solution(object):
@@ -12,17 +15,18 @@ class Solution(object):
         :type partial: int
         :rtype: int
         """
-        partials = sorted(x for x in flowers if x < target)
-        prefix, suffix = 0, sum(partials)
+        flowers.sort()
+        n = bisect.bisect_left(flowers, target)
+        prefix, suffix = 0, sum(flowers[i] for i in xrange(n))
         result = left = 0
-        for right in xrange(len(partials)+1):
-            total = newFlowers-((len(partials)-right)*target-suffix)
-            if right < len(partials):
-                suffix -= partials[right]
+        for right in xrange(n+1):
+            total = newFlowers-((n-right)*target-suffix)
+            if right < n:
+                suffix -= flowers[right]
             if total < 0:
                 continue
-            while left+1 <= right and (left == 0 or (total+prefix)//left > partials[left]):
-                prefix += partials[left]
+            while left+1 <= right and (left == 0 or (total+prefix)//left > flowers[left]):
+                prefix += flowers[left]
                 left += 1
             mn = min((total+prefix)//left if left else 0, target-1)
             result = max(result, mn*partial+(len(flowers)-right)*full)
