@@ -6,12 +6,7 @@ class Solution {
 public:
     long long maximumBeauty(vector<int>& flowers, long long newFlowers, int target, int full, int partial) {
         sort(begin(flowers), end(flowers));
-        long long n = 0;
-        for (; n < size(flowers); ++n) {
-            if (flowers[n] >= target) {
-                break;
-            }
-        }
+        long long n = distance(cbegin(flowers), lower_bound(cbegin(flowers), cend(flowers), target));
         vector<long long> prefix(n + 1);
         for (int i = 0; i < n; ++i) {
             prefix[i + 1] = prefix[i] + flowers[i];
