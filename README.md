@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2227%20%2F%202227-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2234%20%2F%202234-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -368,6 +368,7 @@
 2211 | [Count Collisions on a Road](https://leetcode.com/problems/count-collisions-on-a-road/) | [C++](./C++/count-collisions-on-a-road.cpp) [Python](./Python/count-collisions-on-a-road.py) | _O(n)_ | _O(1)_ | Medium | | Counting, Simulation
 2213 | [Longest Substring of One Repeating Character](https://leetcode.com/problems/longest-substring-of-one-repeating-character/) | [C++](./C++/longest-substring-of-one-repeating-character.cpp) [Python](./Python/longest-substring-of-one-repeating-character.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Segment Tree
 2223 | [Sum of Scores of Built Strings](https://leetcode.com/problems/sum-of-scores-of-built-strings/) | [C++](./C++/sum-of-scores-of-built-strings.cpp) [Python](./Python/sum-of-scores-of-built-strings.py) | _O(n)_   | _O(n)_        | Hard         | | `Z-Function`
+2232 | [Minimize Result by Adding Parentheses to Expression](https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/) | [C++](./C++/minimize-result-by-adding-parentheses-to-expression.cpp) [Python](./Python/minimize-result-by-adding-parentheses-to-expression.py) | _O(n^2)_   | _O(1)_        | Medium         | | Brute Force
 
 <br/>
 <div align="right">
@@ -562,6 +563,7 @@
 2206 | [Divide Array Into Equal Pairs](https://leetcode.com/problems/divide-array-into-equal-pairs/) | [C++](./C++/divide-array-into-equal-pairs.cpp) [Python](./Python/divide-array-into-equal-pairs.py) | _O(n)_ | _O(n)_ | Easy ||  Hash Table
 2215 | [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/) | [C++](./C++/find-the-difference-of-two-arrays.cpp) [Python](./Python/find-the-difference-of-two-arrays.py) | _O(n)_ | _O(n)_ | Easy ||  Hash Table
 2225 | [Find Players With Zero or One Losses](https://leetcode.com/problems/find-players-with-zero-or-one-losses/) | [C++](./C++/find-players-with-zero-or-one-losses.cpp) [Python](./Python/find-players-with-zero-or-one-losses.py) | _O(nlogn)_ | _O(n)_ | Medium ||  Hash Table, Sort
+2229 | [Check if an Array Is Consecutive](https://leetcode.com/problems/check-if-an-array-is-consecutive/) | [C++](./C++/check-if-an-array-is-consecutive.cpp) [Python](./Python/check-if-an-array-is-consecutive.py) | _O(n)_ | _O(n)_ | Easy ||  Hash Table, Sort
 
 <br/>
 <div align="right">
@@ -738,6 +740,8 @@
 2158 | [Amount of New Area Painted Each Day](https://leetcode.com/problems/amount-of-new-area-painted-each-day/) | [C++](./C++/amount-of-new-area-painted-each-day.cpp) [Python](./Python/amount-of-new-area-painted-each-day.py) | _O(nlogr)_   | _O(r)_        | Hard         | 🔒 | Line Sweep, Sorted List, Heap, Segment Tree
 2164 | [Sort Even and Odd Indices Independently](https://leetcode.com/problems/sort-even-and-odd-indices-independently/) | [C++](./C++/sort-even-and-odd-indices-independently.cpp) [Python](./Python/sort-even-and-odd-indices-independently.py) | _O(n)_ | _O(c)_ | Easy | | Counting Sort, Inplace |
 2191 | [Sort the Jumbled Numbers](https://leetcode.com/problems/sort-the-jumbled-numbers/) | [C++](./C++/sort-the-jumbled-numbers.cpp) [Python](./Python/sort-the-jumbled-numbers.py) | _O(nlogm + nlogn)_ | _O(n)_ | Medium | | Sort |
+2231 | [Largest Number After Digit Swaps by Parity](https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/) | [C++](./C++/largest-number-after-digit-swaps-by-parity.cpp) [Python](./Python/largest-number-after-digit-swaps-by-parity.py) | _O(logn)_ | _O(1)_ | Easy | | Counting Sort |
+2233 | [Maximum Product After K Increments](https://leetcode.com/problems/maximum-product-after-k-increments/)|[C++](./C++/maximum-product-after-k-increments.cpp) [Python](./Python/maximum-product-after-k-increments.py)| _O(n + k)_     | _O(n)_         | Medium         || Heap, Freq Table, Sort, Math
 
 <br/>
 <div align="right">
@@ -798,6 +802,7 @@
 2149 | [Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | [C++](./C++/rearrange-array-elements-by-sign.cpp) [Python](./Python/rearrange-array-elements-by-sign.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
 2161 | [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) | [C++](./C++/partition-array-according-to-given-pivot.cpp) [Python](./Python/partition-array-according-to-given-pivot.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers
 2200 | [Find All K-Distant Indices in an Array](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/) | [C++](./C++/find-all-k-distant-indices-in-an-array.cpp) [Python](./Python/find-all-k-distant-indices-in-an-array.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers
+2234 | [Maximum Total Beauty of the Gardens](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/) | [C++](./C++/maximum-total-beauty-of-the-gardens.cpp) [Python](./Python/maximum-total-beauty-of-the-gardens.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Prefix Sum, Greedy, Two Pointers
 
 <br/>
 <div align="right">
@@ -1572,6 +1577,8 @@
 2175 | [The Change in Global Rankings](https://leetcode.com/problems/the-change-in-global-rankings/) | [MySQL](./MySQL/the-change-in-global-rankings.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2199 | [Finding the Topic of Each Post](https://leetcode.com/problems/finding-the-topic-of-each-post/) | [MySQL](./MySQL/finding-the-topic-of-each-post.sql) | _O(n * mlogm)_ | _O(n * m)_       | Hard           |🔒||
 2205 | [The Number of Users That Are Eligible for Discount](https://leetcode.com/problems/the-number-of-users-that-are-eligible-for-discount/) | [MySQL](./MySQL/the-number-of-users-that-are-eligible-for-discount.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+2228 | [Users With Two Purchases Within Seven Days](https://leetcode.com/problems/users-with-two-purchases-within-seven-days/) | [MySQL](./MySQL/users-with-two-purchases-within-seven-days.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2230 | [The Users That Are Eligible for Discount](https://leetcode.com/problems/the-users-that-are-eligible-for-discount/) | [MySQL](./MySQL/the-users-that-are-eligible-for-discount.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
