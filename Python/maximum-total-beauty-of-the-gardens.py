@@ -150,14 +150,14 @@ class Solution4(object):
         prefix = [0]*(n+1)
         for i in xrange(n):
             prefix[i+1] = prefix[i]+flowers[i]
-        suffix = sum(flowers[i] for i in xrange(n))
-        result = left = 0
-        for right in xrange(n+1):
+        result = suffix = 0
+        left = n
+        for right in reversed(xrange(n+1)):
             total = newFlowers-((n-right)*target-suffix)
-            if right < n:
-                suffix -= flowers[right]
+            if right-1 >= 0:
+                suffix += flowers[right-1]
             if total < 0:
-                continue
+                break
             left = binary_search_right(prefix, total, 1, right)
             mn = min((total+prefix[left])//left if left else 0, target-1)
             result = max(result, mn*partial+(len(flowers)-right)*full)
