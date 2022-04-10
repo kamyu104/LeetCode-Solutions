@@ -75,7 +75,7 @@ class Solution2(object):
 import bisect
 
 
-# sort, prefix sum, binary search
+# sort, prefix sum, greedy, binary search
 class Solution3(object):
     def maximumBeauty(self, flowers, newFlowers, target, full, partial):
         """
@@ -122,7 +122,7 @@ class Solution3(object):
 import bisect
 
 
-# sort, prefix sum, binary search
+# sort, prefix sum, greedy, binary search
 class Solution4(object):
     def maximumBeauty(self, flowers, newFlowers, target, full, partial):
         """
