@@ -1,6 +1,9 @@
 # Time:  O(n^2)
 # Space: O(1)
 
+import itertools
+
+
 # brute force
 class Solution(object):
     def minimizeResult(self, expression):
@@ -27,7 +30,7 @@ class Solution(object):
                 if val < min_val:
                     min_val = val
                     result = (i, j)
-        return "".join([expression[:result[0]], '(', expression[result[0]:result[1]+1], ')', expression[result[1]+1:]])
+        return "".join(itertools.chain((expression[i] for i in xrange(result[0])), '(', (expression[i] for i in xrange(result[0], result[1]+1)), ')', (expression[i] for i in xrange(result[1]+1, len(expression)))))
 
     
 # Time:  O(n^2)
