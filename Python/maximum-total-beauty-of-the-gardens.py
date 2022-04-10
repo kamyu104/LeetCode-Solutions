@@ -1,6 +1,9 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
+import bisect
+
+
 # sort, prefix sum, greedy, two pointers
 class Solution(object):
     def maximumBeauty(self, flowers, newFlowers, target, full, partial):
@@ -13,7 +16,7 @@ class Solution(object):
         :rtype: int
         """
         flowers.sort()
-        n = next((j for j in xrange(len(flowers)) if flowers[j] >= target), len(flowers))
+        n = bisect.bisect_left(flowers, target)
         prefix = [0]*(n+1)
         for i in xrange(n):
             prefix[i+1] = prefix[i]+flowers[i]
