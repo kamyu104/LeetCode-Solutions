@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(1)
 
-// sort, prefix sum, greedy, two pointers
+// sort, prefix sum, greedy, two pointers, improved from solution3
 class Solution {
 public:
     long long maximumBeauty(vector<int>& flowers, long long newFlowers, int target, int full, int partial) {
@@ -30,7 +30,7 @@ public:
 
 // Time:  O(nlogn)
 // Space: O(n)
-// sort, prefix sum, greedy, binary search
+// sort, prefix sum, greedy, two pointers, improved from solution4
 class Solution2 {
 public:
     long long maximumBeauty(vector<int>& flowers, long long newFlowers, int target, int full, int partial) {
