@@ -802,7 +802,7 @@
 2149 | [Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | [C++](./C++/rearrange-array-elements-by-sign.cpp) [Python](./Python/rearrange-array-elements-by-sign.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
 2161 | [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) | [C++](./C++/partition-array-according-to-given-pivot.cpp) [Python](./Python/partition-array-according-to-given-pivot.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers
 2200 | [Find All K-Distant Indices in an Array](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/) | [C++](./C++/find-all-k-distant-indices-in-an-array.cpp) [Python](./Python/find-all-k-distant-indices-in-an-array.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers
-2234 | [Maximum Total Beauty of the Gardens](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/) | [C++](./C++/maximum-total-beauty-of-the-gardens.cpp) [Python](./Python/maximum-total-beauty-of-the-gardens.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Prefix Sum, Greedy, Two Pointers
+2234 | [Maximum Total Beauty of the Gardens](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/) | [C++](./C++/maximum-total-beauty-of-the-gardens.cpp) [Python](./Python/maximum-total-beauty-of-the-gardens.py) | _O(nlogn)_ | _O(1)_ | Hard | | Sort, Prefix Sum, Greedy, Two Pointers
 
 <br/>
 <div align="right">
