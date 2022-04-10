@@ -71,7 +71,7 @@ class Solution2(object):
 
 
 # Time:  O(nlogn)
-# Space: O(n)
+# Space: O(1)
 import bisect
 
 
