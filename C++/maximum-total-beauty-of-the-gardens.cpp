@@ -80,7 +80,7 @@ class Solution3 {
 public:
     long long maximumBeauty(vector<int>& flowers, long long newFlowers, int target, int full, int partial) {
         const auto& check = [](const auto& prefix, const auto& total, auto x) {
-            return x == 0 || (prefix[x] - prefix[x - 1]) * x - prefix[x] <= total;
+            return (prefix[x] - prefix[x - 1]) * x - prefix[x] <= total;
         };
         const auto& binary_search_right = [&check](const auto& prefix, const auto& total, auto left, auto right) {
             while (left <= right) {
