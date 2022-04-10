@@ -38,12 +38,13 @@ class Solution2(object):
         cnt = collections.Counter(nums)
         min_num = min(cnt.iterkeys())
         while k:
-            cnt[min_num] -= 1
-            cnt[min_num+1] += 1 
+            c = min(cnt[min_num], k)
+            cnt[min_num] -= c
+            cnt[min_num+1] += c 
             if not cnt[min_num]:
                 del cnt[min_num]
                 min_num += 1
-            k -= 1
+            k -= c
         return reduce(lambda total, x: total*pow(x[0], x[1], MOD)%MOD, cnt.iteritems(), 1)
 
 
