@@ -24,7 +24,7 @@ public:
                 
                 const int a = left / base1, b = left % base1;
                 const int c = right / base2, d = right % base2;
-                const auto val = max(a, 1) * (b + c) * max(d, 1);
+                const auto& val = max(a, 1) * (b + c) * max(d, 1);
                 if (val < min_val) {
                     min_val = val;
                     best = {i, j};
