@@ -27,9 +27,9 @@ class Solution(object):
         for i in xrange(pos):
             base2 = 10**(len(expression)-(pos+1)-1)
             for j in xrange(pos+1, len(expression)):
-                a, b = divmod(left, base1) if left >= base1 else (1, left)
-                c, d = divmod(right, base2) if base2 > 1 else (right, 1)
-                val = a*(b+c)*d
+                a, b = divmod(left, base1)
+                c, d = divmod(right, base2)
+                val = max(a, 1)*(b+c)*max(d, 1)
                 if val < min_val:
                     min_val = val
                     result = (i, j)
