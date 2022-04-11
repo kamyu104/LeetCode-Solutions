@@ -23,9 +23,9 @@ class Solution(object):
         min_val = float("inf")
         pos = expression.index('+')
         left, right = stoi(expression, 0, pos), stoi(expression, pos+1, len(expression))
-        base1 = 10**pos
+        base1, base2_init = 10**pos, 10**(len(expression)-(pos+1)-1)
         for i in xrange(pos):
-            base2 = 10**(len(expression)-(pos+1)-1)
+            base2 = base2_init
             for j in xrange(pos+1, len(expression)):
                 a, b = divmod(left, base1)
                 c, d = divmod(right, base2)
