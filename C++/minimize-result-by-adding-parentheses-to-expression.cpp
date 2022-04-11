@@ -88,7 +88,7 @@ public:
     }
 };
 
-// Time:  O(n^2)
+// Time:  O(n^3)
 // Space: O(n)
 // brute force
 class Solution3 {
