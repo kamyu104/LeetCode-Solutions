@@ -50,7 +50,7 @@ class Solution2(object):
         best = None
         min_val = float("inf")
         pos = expression.index('+')
-        left, right = int(expression[0:pos]), int(expression[pos+1:])
+        left, right = int(expression[0:pos]), int(expression[pos+1:])  # Space: O(n)
         base1, base2_init = 10**pos, 10**(len(expression)-(pos+1)-1)
         for i in xrange(pos):
             base2 = base2_init
@@ -63,7 +63,7 @@ class Solution2(object):
                     best = (i, j)
                 base2 //= 10
             base1 //= 10
-        return "".join([expression[:best[0]], '(', expression[best[0]:best[1]+1], ')', expression[best[1]+1:]])
+        return "".join([expression[:best[0]], '(', expression[best[0]:best[1]+1], ')', expression[best[1]+1:]])  # Space: O(n)
 
     
 # Time:  O(n^3)
@@ -82,8 +82,8 @@ class Solution3(object):
             for j in xrange(pos+1, len(expression)):
                 val = (int(expression[:i] or "1")*
                        (int(expression[i:pos])+int(expression[pos+1:j+1]))*
-                       int(expression[j+1:] or "1"))
+                       int(expression[j+1:] or "1"))  # Space: O(n)
                 if val < min_val:
                     min_val = val
                     best = (i, j)
-        return "".join([expression[:best[0]], '(', expression[best[0]:best[1]+1], ')', expression[best[1]+1:]])
+        return "".join([expression[:best[0]], '(', expression[best[0]:best[1]+1], ')', expression[best[1]+1:]])  # Space: O(n)
