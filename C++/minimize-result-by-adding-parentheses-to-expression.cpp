@@ -46,7 +46,7 @@ public:
 };
 
 // Time:  O(n^2)
-// Space: O(2)
+// Space: O(n)
 // brute force
 class Solution2 {
 public:
