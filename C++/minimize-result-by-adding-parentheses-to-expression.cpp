@@ -21,7 +21,6 @@ public:
         pair<int, int> best;
         for (int i = 0, base1 = pow(10, pos); i < pos; ++i, base1 /= 10) {
             for (int j = pos + 1, base2 = pow(10, size(expression) - (pos + 1) - 1); j < size(expression); ++j, base2 /= 10) {
-                
                 const int a = left / base1, b = left % base1;
                 const int c = right / base2, d = right % base2;
                 const auto& val = max(a, 1) * (b + c) * max(d, 1);
