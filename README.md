@@ -563,7 +563,7 @@
 2206 | [Divide Array Into Equal Pairs](https://leetcode.com/problems/divide-array-into-equal-pairs/) | [C++](./C++/divide-array-into-equal-pairs.cpp) [Python](./Python/divide-array-into-equal-pairs.py) | _O(n)_ | _O(n)_ | Easy ||  Hash Table
 2215 | [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/) | [C++](./C++/find-the-difference-of-two-arrays.cpp) [Python](./Python/find-the-difference-of-two-arrays.py) | _O(n)_ | _O(n)_ | Easy ||  Hash Table
 2225 | [Find Players With Zero or One Losses](https://leetcode.com/problems/find-players-with-zero-or-one-losses/) | [C++](./C++/find-players-with-zero-or-one-losses.cpp) [Python](./Python/find-players-with-zero-or-one-losses.py) | _O(nlogn)_ | _O(n)_ | Medium ||  Hash Table, Sort
-2229 | [Check if an Array Is Consecutive](https://leetcode.com/problems/check-if-an-array-is-consecutive/) | [C++](./C++/check-if-an-array-is-consecutive.cpp) [Python](./Python/check-if-an-array-is-consecutive.py) | _O(n)_ | _O(n)_ | Easy ||  Hash Table, Sort
+2229 | [Check if an Array Is Consecutive](https://leetcode.com/problems/check-if-an-array-is-consecutive/) | [C++](./C++/check-if-an-array-is-consecutive.cpp) [Python](./Python/check-if-an-array-is-consecutive.py) | _O(n)_ | _O(n)_ | Easy |🔒|  Hash Table, Sort
 
 <br/>
 <div align="right">
