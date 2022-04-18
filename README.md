@@ -968,7 +968,7 @@
 2049 | [Count Nodes With the Highest Score](https://leetcode.com/problems/count-nodes-with-the-highest-score/) | [C++](./C++/count-nodes-with-the-highest-score.cpp) [Python](./Python/count-nodes-with-the-highest-score.py) | _O(n)_ | _O(n)_ | Medium | | |
 2065 | [Maximum Path Quality of a Graph](https://leetcode.com/problems/maximum-path-quality-of-a-graph/) | [C++](./C++/maximum-path-quality-of-a-graph.cpp) [Python](./Python/maximum-path-quality-of-a-graph.py) | _O(\|V\| + \|E\| + 4^10)_ | _O(\|V\| + \|E\| )_ | Hard | | Pruning |
 2192 | [All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) | [C++](./C++/all-ancestors-of-a-node-in-a-directed-acyclic-graph.cpp) [Python](./Python/all-ancestors-of-a-node-in-a-directed-acyclic-graph.py) | _O(\|V\| * \|E\|)_ | _O(\|V\| + \|E\|)_ | Medium | | DFS, BFS, Topological Sort |
-2246 | [Longest Path With Different Adjacent Characters](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/) | [C++](./C++/longest-path-with-different-adjacent-characters.cpp) [Python](./Python/longest-path-with-different-adjacent-characters.py) | _O(n)_ | _O(h)_ | Hard | | DFS |
+2246 | [Longest Path With Different Adjacent Characters](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/) | [C++](./C++/longest-path-with-different-adjacent-characters.cpp) [Python](./Python/longest-path-with-different-adjacent-characters.py) | _O(n)_ | _O(h)_ | Hard | | DFS, BFS, Topological Sort |
 
 <br/>
 <div align="right">
