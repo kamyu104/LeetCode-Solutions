@@ -23,7 +23,7 @@ class ATM(object):
         :type amount: int
         :rtype: List[int]
         """
-        result = [0]*5
+        result = [0]*len(self.__cnt)
         for i in reversed(xrange(len(self.__vals))):
             result[i] = min(amount//self.__vals[i], self.__cnt[i])
             amount -= result[i]*self.__vals[i]
