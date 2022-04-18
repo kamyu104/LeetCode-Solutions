@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2234%20%2F%202234-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2246%20%2F%202246-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -254,6 +254,9 @@
 2202 | [Maximize the Topmost Element After K Moves](https://leetcode.com/problems/maximize-the-topmost-element-after-k-moves/) | [C++](./C++/maximize-the-topmost-element-after-k-moves.cpp) [Python](./Python/maximize-the-topmost-element-after-k-moves.py) | _O(min(n, k))_ | _O(1)_ | Medium | | Constructive Algorithms
 2210 | [Count Hills and Valleys in an Array](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/) | [C++](./C++/count-hills-and-valleys-in-an-array.cpp) [Python](./Python/count-hills-and-valleys-in-an-array.py) | _O(n)_ | _O(1)_ | Easy | | Simulation
 2219 | [Maximum Sum Score of Array](https://leetcode.com/problems/maximum-sum-score-of-array/) | [C++](./C++/maximum-sum-score-of-array.cpp) [Python](./Python/maximum-sum-score-of-array.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Prefix Sum
+2237 | [Count Positions on Street With Required Brightness](https://leetcode.com/problems/count-positions-on-street-with-required-brightness/) | [C++](./C++/count-positions-on-street-with-required-brightness.cpp) [Python](./Python/count-positions-on-street-with-required-brightness.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Line Sweep
+2239 | [Find Closest Number to Zero](https://leetcode.com/problems/find-closest-number-to-zero/) | [C++](./C++/find-closest-number-to-zero.cpp) [Python](./Python/find-closest-number-to-zero.py) | _O(n)_ | _O(1)_ | Easy | | Array
+2245 | [Maximum Trailing Zeros in a Cornered Path](https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/) | [C++](./C++/maximum-trailing-zeros-in-a-cornered-path.cpp) [Python](./Python/maximum-trailing-zeros-in-a-cornered-path.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -369,6 +372,7 @@
 2213 | [Longest Substring of One Repeating Character](https://leetcode.com/problems/longest-substring-of-one-repeating-character/) | [C++](./C++/longest-substring-of-one-repeating-character.cpp) [Python](./Python/longest-substring-of-one-repeating-character.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Segment Tree
 2223 | [Sum of Scores of Built Strings](https://leetcode.com/problems/sum-of-scores-of-built-strings/) | [C++](./C++/sum-of-scores-of-built-strings.cpp) [Python](./Python/sum-of-scores-of-built-strings.py) | _O(n)_   | _O(n)_        | Hard         | | `Z-Function`
 2232 | [Minimize Result by Adding Parentheses to Expression](https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/) | [C++](./C++/minimize-result-by-adding-parentheses-to-expression.cpp) [Python](./Python/minimize-result-by-adding-parentheses-to-expression.py) | _O(n^2)_   | _O(1)_        | Medium         | | Brute Force
+2243 | [Calculate Digit Sum of a String](https://leetcode.com/problems/calculate-digit-sum-of-a-string/) | [C++](./C++/calculate-digit-sum-of-a-string.cpp) [Python](./Python/calculate-digit-sum-of-a-string.py) | _O(n)_   | _O(n)_        | Easy         | | Simulation
 
 <br/>
 <div align="right">
@@ -507,6 +511,7 @@
 2096 | [Step-By-Step Directions From a Binary Tree Node to Another](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/) |[C++](./C++/step-by-step-directions-from-a-binary-tree-node-to-another.cpp)  [Python](./Python/step-by-step-directions-from-a-binary-tree-node-to-another.py) | _O(n)_ | _O(h)_ | Medium         | | DFS, Stack
 2179 | [Count Good Triplets in an Array](https://leetcode.com/problems/count-good-triplets-in-an-array/)| [C++](./C++/count-good-triplets-in-an-array.cpp) [Python](./Python/count-good-triplets-in-an-array.py)| _O(nlogn)_ | _O(n)_ | Hard | variant of [Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions/) | BIT, Fenwick Tree |
 2196 | [Create Binary Tree From Descriptions](https://leetcode.com/problems/create-binary-tree-from-descriptions/)| [C++](./C++/create-binary-tree-from-descriptions.cpp) [Python](./Python/create-binary-tree-from-descriptions.py)| _O(n)_ | _O(n)_ | Medium | | |
+2236 | [Root Equals Sum of Children](https://leetcode.com/problems/root-equals-sum-of-children/)| [C++](./C++/root-equals-sum-of-children.cpp) [Python](./Python/root-equals-sum-of-children.py)| _O(1)_ | _O(1)_ | Easy | | Tree |
 
 <br/>
 <div align="right">
@@ -689,6 +694,9 @@
 2198 | [Number of Single Divisor Triplets](https://leetcode.com/problems/number-of-single-divisor-triplets/)|[C++](./C++/number-of-single-divisor-triplets.cpp) [Python](./Python/number-of-single-divisor-triplets.py)| _O(d^3)_     | _O(d)_         | Medium         | 🔒 | Math, Combinatorics
 2217 | [Find Palindrome With Fixed Length](https://leetcode.com/problems/find-palindrome-with-fixed-length/)|[C++](./C++/find-palindrome-with-fixed-length.cpp) [Python](./Python/find-palindrome-with-fixed-length.py)| _O(n * l)_     | _O(1)_         | Medium         || Math
 2221 | [Find Triangular Sum of an Array](https://leetcode.com/problems/find-triangular-sum-of-an-array/)|[C++](./C++/find-triangular-sum-of-an-array.cpp) [Python](./Python/find-triangular-sum-of-an-array.py)| _O(n)_     | _O(1)_         | Medium         || Simulation, Combinatorics, Number Thoery
+2235 | [Add Two Integers](https://leetcode.com/problems/add-two-integers/)|[C++](./C++/add-two-integers.cpp) [Python](./Python/add-two-integers.py)| _O(1)_     | _O(1)_         | Easy         || Math
+2240 | [Number of Ways to Buy Pens and Pencils](https://leetcode.com/problems/number-of-ways-to-buy-pens-and-pencils/)|[C++](./C++/number-of-ways-to-buy-pens-and-pencils.cpp) [Python](./Python/number-of-ways-to-buy-pens-and-pencils.py)| _O(sqrt(t))_     | _O(1)_         | Medium         || Math
+2244 | [Minimum Rounds to Complete All Tasks](https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/)|[C++](./C++/minimum-rounds-to-complete-all-tasks.cpp) [Python](./Python/minimum-rounds-to-complete-all-tasks.py)| _O(n)_     | _O(n)_         | Medium         || Math, Freq Table
 
 <br/>
 <div align="right">
@@ -960,6 +968,7 @@
 2049 | [Count Nodes With the Highest Score](https://leetcode.com/problems/count-nodes-with-the-highest-score/) | [C++](./C++/count-nodes-with-the-highest-score.cpp) [Python](./Python/count-nodes-with-the-highest-score.py) | _O(n)_ | _O(n)_ | Medium | | |
 2065 | [Maximum Path Quality of a Graph](https://leetcode.com/problems/maximum-path-quality-of-a-graph/) | [C++](./C++/maximum-path-quality-of-a-graph.cpp) [Python](./Python/maximum-path-quality-of-a-graph.py) | _O(\|V\| + \|E\| + 4^10)_ | _O(\|V\| + \|E\| )_ | Hard | | Pruning |
 2192 | [All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) | [C++](./C++/all-ancestors-of-a-node-in-a-directed-acyclic-graph.cpp) [Python](./Python/all-ancestors-of-a-node-in-a-directed-acyclic-graph.py) | _O(\|V\| * \|E\|)_ | _O(\|V\| + \|E\|)_ | Medium | | DFS, BFS, Topological Sort |
+2246 | [Longest Path With Different Adjacent Characters](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/) | [C++](./C++/longest-path-with-different-adjacent-characters.cpp) [Python](./Python/longest-path-with-different-adjacent-characters.py) | _O(n)_ | _O(h)_ | Hard | | DFS |
 
 <br/>
 <div align="right">
@@ -1315,6 +1324,7 @@
 2172 | [Maximum AND Sum of Array](https://leetcode.com/problems/maximum-and-sum-of-array/) | [C++](./C++/maximum-and-sum-of-array.cpp) [Python](./Python/maximum-and-sum-of-array.py) | _O(n^3)_ | _O(n^2)_ | Hard | variant of [Maximum Compatibility Score Sum](https://leetcode.com/problems/maximum-compatibility-score-sum/) | DP, `Hungarian Weighted Bipartite Matching` |
 2203 | [Minimum Weighted Subgraph With the Required Paths](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/)| [C++](./C++/minimum-weighted-subgraph-with-the-required-paths.cpp) [Python](./Python/minimum-weighted-subgraph-with-the-required-paths.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | | `Dijkstra's Algorithm` |
 2204 | [Distance to a Cycle in Undirected Graph](https://leetcode.com/problems/distance-to-a-cycle-in-undirected-graph/) | [C++](./C++/distance-to-a-cycle-in-undirected-graph.cpp) [Python](./Python/distance-to-a-cycle-in-undirected-graph.py) | _O(\|V\| + \|E\|)_ | _O(\|V\| + \|E\|)_ | Hard | 🔒 | Graph, DFS, BFS |
+2242 | [Maximum Score of a Node Sequence](https://leetcode.com/problems/maximum-score-of-a-node-sequence/) | [C++](./C++/maximum-score-of-a-node-sequence.cpp) [Python](./Python/maximum-score-of-a-node-sequence.py) | _O(\|V\| + \|E\|)_ | _O(\|V\|)_ | Hard | | Graph |
 
 <br/>
 <div align="right">
@@ -1397,6 +1407,7 @@
 2102 | [Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/) | [C++](./C++/sequentially-ordinal-rank-tracker.cpp) [Python](./Python/sequentially-ordinal-rank-tracker.py) | add: _O(logn)_<br>get: _O(logn)_ | _O(n)_ | Hard | | Sorted List
 2166 | [Design Bitset](https://leetcode.com/problems/design-bitset/) | [C++](./C++/design-bitset.cpp) [Python](./Python/design-bitset.py) | ctor: _O(n)_<br>fix: _O(1)_<br>fix: _O(1)_<br>unfix: _O(1)_<br>flip: _O(1)_<br>all: _O(1)_<br>one: _O(1)_<br>count: _O(1)_<br>toString: _O(n)_ | _O(n)_ | Medium | |
 2227 | [Encrypt and Decrypt Strings](https://leetcode.com/problems/encrypt-and-decrypt-strings/) | [C++](./C++/encrypt-and-decrypt-strings.cpp) [Python](./Python/encrypt-and-decrypt-strings.py) | ctor: _O(m + d)_<br>encrypt: _O(n)_<br>decrypt: _O(n)_ | _O(n)_ | Hard | | Freq Table
+2241 | [Design an ATM Machine](https://leetcode.com/problems/design-an-atm-machine/) | [C++](./C++/design-an-atm-machine.cpp) [Python](./Python/design-an-atm-machine.py) | ctor: _O(1)_<br>deposit: _O(1)_<br>withdraw: _O(1)_ | _O(1)_ | Medium | | Greedy
 
 <br/>
 <div align="right">
@@ -1579,6 +1590,7 @@
 2205 | [The Number of Users That Are Eligible for Discount](https://leetcode.com/problems/the-number-of-users-that-are-eligible-for-discount/) | [MySQL](./MySQL/the-number-of-users-that-are-eligible-for-discount.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 2228 | [Users With Two Purchases Within Seven Days](https://leetcode.com/problems/users-with-two-purchases-within-seven-days/) | [MySQL](./MySQL/users-with-two-purchases-within-seven-days.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2230 | [The Users That Are Eligible for Discount](https://leetcode.com/problems/the-users-that-are-eligible-for-discount/) | [MySQL](./MySQL/the-users-that-are-eligible-for-discount.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+2238 | [Number of Times a Driver Was a Passenger](https://leetcode.com/problems/number-of-times-a-driver-was-a-passenger/) | [MySQL](./MySQL/number-of-times-a-driver-was-a-passenger.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
