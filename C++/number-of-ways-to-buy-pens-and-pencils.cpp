@@ -19,7 +19,7 @@ public:
         const auto& lcm = static_cast<int64_t>(cost1) / gcd(cost1, cost2) * cost2;
         const auto& d = lcm / cost2;
         int64_t result = 0;
-        for (int i = 0; i < min(total / cost1 + 1, static_cast<int>(lcm / cost1)); ++i) {
+        for (int i = 0; i <= min(total / cost1, static_cast<int>(lcm / cost1) - 1); ++i) {
             // total, cost1, cost2 = 120, 7, 5
             // => cnt decreases by a fixed value every lcm(cost1, cost2) 
             // => arithmetic progressions of cnts are as follows
