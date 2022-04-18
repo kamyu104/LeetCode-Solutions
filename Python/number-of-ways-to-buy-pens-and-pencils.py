@@ -28,7 +28,7 @@ class Solution(object):
         lcm = cost1*cost2//gcd(cost1, cost2)
         result = 0
         d = lcm//cost2
-        for x in xrange(0, min((total//cost1+1)*cost1, lcm), cost1):
+        for i in xrange(min(total//cost1+1, lcm//cost1)):
             # total, cost1, cost2 = 120, 7, 5
             # => cnt decreases by a fixed value every lcm(cost1, cost2) 
             # => arithmetic progressions of cnts are as follows
@@ -38,7 +38,7 @@ class Solution(object):
             # cnt  21, 14,  7,   106
             #  |   19, 12,  5,    99
             #  |   18, 11,  4,    92
-            cnt = (total-x)//cost2+1
+            cnt = (total-i*cost1)//cost2+1
             l = ceil_divide(cnt, d)
             result += arithmetic_progression_sum(cnt, -d, l)
         return result
