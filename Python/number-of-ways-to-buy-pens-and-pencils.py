@@ -16,7 +16,13 @@ class Solution(object):
             while b:
                 a, b = b, a%b
             return a
+        
+        def ceil_divide(a, b):
+            return (a+b-1)//b
 
+        def arithmetic_progression(a, d, l):
+            return (a+(a+(l-1)*d))*l//2
+            
         if cost1 < cost2:
             cost1, cost2 = cost2, cost1
         lcm = cost1*cost2//gcd(cost1, cost2)
@@ -33,8 +39,9 @@ class Solution(object):
             #  |   19, 12,  5,    99
             #  |   18, 11,  4,    92
             cnt = x//cost2+1
-            l = (cnt+(lcm//cost2)-1)//(lcm//cost2)
-            result += (cnt+(cnt-(l-1)*(lcm//cost2)))*l//2
+            d = lcm//cost2
+            l = ceil_divide(cnt, d)
+            result += arithmetic_progression(cnt, -d, l)
         return result
 
 
