@@ -41,7 +41,7 @@ public:
             }
             array<int, 2> up = {0, 0};
             for (int i = 0; i < size(grid); ++i) {
-                auto right = j ? sub(left[i].back(), left[i][j - 1]) : left[i].back();
+                const auto& right = j ? sub(left[i].back(), left[i][j - 1]) : left[i].back();
                 result = max({result, count(add(left[i][j], up)), count(add(right, up))});
                 up = add(up, factor(grid[i][j]));
                 const auto& down = sub(total, up);
