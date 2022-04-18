@@ -1,6 +1,6 @@
-// Time:  O(min(t / c1, c2 / g)), c1 = max(cost1, cost2)
-//                              , c2 = min(cost1, cost2)
-//                              ,  g = gcd(c1, c2)
+// Time:  O(min(t / c1, c2 / g)) = O(sqrt(t)), c1 = max(cost1, cost2)
+//                                           , c2 = min(cost1, cost2)
+//                                           ,  g = gcd(c1, c2)
 // Space: O(1)
 
 // math
