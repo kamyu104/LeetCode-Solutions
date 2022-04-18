@@ -15,7 +15,6 @@ public:
         const auto& topological_sort = [&s, &adj](vector<int> *in_degree) {
             int result = 1;
             unordered_map<int, vector<int>> top2;
-    
             vector<pair<int, int>> q;
             for (int i = 0; i < size(*in_degree); ++i) {
                 if (!(*in_degree)[i]) {
