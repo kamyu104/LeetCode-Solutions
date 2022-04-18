@@ -13,10 +13,9 @@ class Solution(object):
         """
         def factor(x):
             cnt = [0]*2
-            y = x
             for i, p in enumerate([2, 5]):
-                while y and y%p == 0:
-                    y //= p
+                while x and x%p == 0:
+                    x //= p
                     cnt[i] += 1
             return cnt
 
