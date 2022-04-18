@@ -25,6 +25,7 @@ class Solution(object):
             if x < 0:
                 break
             # total, cost1, cost2 = 120, 7, 5
+            # => arithmetic progressions of cnts are as follows
             #      ----- l -----  x
             #  |   24, 17, 10, 3 120
             #  |   22, 15,  8, 1 113
