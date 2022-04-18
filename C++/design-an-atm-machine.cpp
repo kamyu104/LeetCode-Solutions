@@ -7,8 +7,8 @@
 class ATM {
 public:
     ATM()
-    : vals_{20, 50, 100, 200, 500}
-    , cnt_(size(vals_)) {
+     :  vals_{20, 50, 100, 200, 500}
+     ,  cnt_(size(vals_)) {
         
     }
     
