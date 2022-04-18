@@ -1,5 +1,5 @@
 # Time:  O(m * n)
-# Spac:  O(m * n)
+# Space: O(m * n)
 
 import itertools
 
