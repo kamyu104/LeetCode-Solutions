@@ -5,12 +5,9 @@
 class Solution {
 public:
     int findClosestNumber(vector<int>& nums) {
-        int result = numeric_limits<int>::max();
-        for (const auto& x : nums) {
-            if (abs(x) < abs(result) || (abs(x) == abs(result) && x > result)) {
-                result = x;
-            }
-        }
-        return result;
+        return *max_element(cbegin(nums), cend(nums),
+                            [](const auto& x, const auto& y) {
+                                return make_pair(-abs(x), x) < make_pair(-abs(y), y);
+                            });
     }
 };
