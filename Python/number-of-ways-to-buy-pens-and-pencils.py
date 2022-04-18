@@ -20,7 +20,7 @@ class Solution(object):
         def ceil_divide(a, b):
             return (a+b-1)//b
 
-        def arithmetic_progression(a, d, l):
+        def arithmetic_progression_sum(a, d, l):
             return (a+(a+(l-1)*d))*l//2
             
         if cost1 < cost2:
@@ -41,7 +41,7 @@ class Solution(object):
             cnt = x//cost2+1
             d = lcm//cost2
             l = ceil_divide(cnt, d)
-            result += arithmetic_progression(cnt, -d, l)
+            result += arithmetic_progression_sum(cnt, -d, l)
         return result
 
 
