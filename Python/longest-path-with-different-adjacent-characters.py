@@ -12,9 +12,10 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        def topological_sort(adj, q):
-            top2 = collections.defaultdict(lambda:[0]*2)
+        def topological_sort(s, adj, in_degree):
             result = 1
+            top2 = collections.defaultdict(lambda:[0]*2)
+            q =  [(i, 1) for i, d in enumerate(in_degree) if not d]
             while q:
                 new_q = []
                 for (u, l) in q:
@@ -38,7 +39,7 @@ class Solution(object):
         for i in xrange(1, len(parent)):
             adj[i].append(parent[i])
             in_degree[parent[i]] += 1
-        return topological_sort(adj, [(i, 1) for i, d in enumerate(in_degree) if not d])
+        return topological_sort(s, adj, in_degree)
 
 
 # Time:  O(n)
