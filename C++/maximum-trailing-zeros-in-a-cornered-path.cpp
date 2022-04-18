@@ -8,9 +8,9 @@ public:
         const auto& factor = [](int x) {
             static const array<int, 2> primes = {2, 5};
             array<int, 2> cnt = {0, 0};
-            for (int i = 0, y = x; i < size(primes); ++i) {
-                while (y && y % primes[i] == 0) {
-                    y /= primes[i];
+            for (int i = 0; i < size(primes); ++i) {
+                while (x && x % primes[i] == 0) {
+                    x /= primes[i];
                     ++cnt[i];
                 }
             }
