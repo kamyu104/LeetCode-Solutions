@@ -1,7 +1,7 @@
 // Time:  O(n * l + r), n = len(nums), l = len(nums[0])
 // Space: O(r), r = max(nums)-min(nums)
 
-// counting sort
+// freq table, counting sort
 class Solution {
 public:
     vector<int> intersection(vector<vector<int>>& nums) {
