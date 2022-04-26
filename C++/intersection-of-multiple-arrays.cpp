@@ -24,7 +24,7 @@ public:
 
 // Time:  O(n * l + r), n = len(nums), l = len(nums[0]), r = max(nums)-min(nums)
 // Space: O(l)
-// set, counting sort
+// hash table, counting sort
 class Solution2 {
 public:
     vector<int> intersection(vector<vector<int>>& nums) {
@@ -55,7 +55,7 @@ public:
 
 // Time:  O(n * l + llogl), n = len(nums), l = len(nums[0])
 // Space: O(l)
-// set, sort
+// hash table, sort
 class Solution3 {
 public:
     vector<int> intersection(vector<vector<int>>& nums) {
