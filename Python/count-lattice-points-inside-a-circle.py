@@ -1,5 +1,5 @@
 # Time:  O(n * r^2)
-# Space: O(min(n * r^2, (max_x-min_x)*(max_y-min_y)))
+# Space: O(min(n * r^2, max_x * max_y))
 
 # math, set
 class Solution(object):
@@ -17,7 +17,7 @@ class Solution(object):
         return len(lookup)
 
 
-# Time:  O(n * (max_x-min_x)*(max_y-min_y))
+# Time:  O(n * max_x * max_y)
 # Space: O(1)
 # math
 class Solution2(object):
@@ -26,13 +26,11 @@ class Solution2(object):
         :type circles: List[List[int]]
         :rtype: int
         """
-        min_x = min(x-r for x, _, r in circles)
         max_x = max(x+r for x, _, r in circles)
-        min_y = min(y-r for _, y, r in circles)
         max_y = max(y+r for _, y, r in circles)
         result = 0
-        for i in xrange(min_x, max_x+1):
-            for j in xrange(min_y, max_y+1):
+        for i in xrange(max_x+1):
+            for j in xrange(max_y+1):
                 if any((i-x)**2+(j-y)**2 <= r**2 for x, y, r in circles):
                     result += 1
         return result
