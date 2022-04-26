@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2246%20%2F%202246-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2253%20%2F%202253-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -697,6 +697,7 @@
 2235 | [Add Two Integers](https://leetcode.com/problems/add-two-integers/)|[C++](./C++/add-two-integers.cpp) [Python](./Python/add-two-integers.py)| _O(1)_     | _O(1)_         | Easy         || Math
 2240 | [Number of Ways to Buy Pens and Pencils](https://leetcode.com/problems/number-of-ways-to-buy-pens-and-pencils/)|[C++](./C++/number-of-ways-to-buy-pens-and-pencils.cpp) [Python](./Python/number-of-ways-to-buy-pens-and-pencils.py)| _O(sqrt(t))_     | _O(1)_         | Medium         || Math
 2244 | [Minimum Rounds to Complete All Tasks](https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/)|[C++](./C++/minimum-rounds-to-complete-all-tasks.cpp) [Python](./Python/minimum-rounds-to-complete-all-tasks.py)| _O(n)_     | _O(n)_         | Medium         || Math, Freq Table
+2249 | [Count Lattice Points Inside a Circle](https://leetcode.com/problems/count-lattice-points-inside-a-circle/)|[C++](./C++/count-lattice-points-inside-a-circle.cpp) [Python](./Python/count-lattice-points-inside-a-circle.py)| _O(n * r^2)_     | _O(min(n * r^2, max_x * max_y))_         | Medium         || Math, Hash Table
 
 <br/>
 <div align="right">
@@ -750,6 +751,8 @@
 2191 | [Sort the Jumbled Numbers](https://leetcode.com/problems/sort-the-jumbled-numbers/) | [C++](./C++/sort-the-jumbled-numbers.cpp) [Python](./Python/sort-the-jumbled-numbers.py) | _O(nlogm + nlogn)_ | _O(n)_ | Medium | | Sort |
 2231 | [Largest Number After Digit Swaps by Parity](https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/) | [C++](./C++/largest-number-after-digit-swaps-by-parity.cpp) [Python](./Python/largest-number-after-digit-swaps-by-parity.py) | _O(logn)_ | _O(1)_ | Easy | | Counting Sort |
 2233 | [Maximum Product After K Increments](https://leetcode.com/problems/maximum-product-after-k-increments/)|[C++](./C++/maximum-product-after-k-increments.cpp) [Python](./Python/maximum-product-after-k-increments.py)| _O(n + k)_     | _O(n)_         | Medium         || Heap, Freq Table, Sort, Math
+2248 | [Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/)|[C++](./C++/intersection-of-multiple-arrays.cpp) [Python](./Pythonintersection-of-multiple-arrays.py)| _O(n * l + r)_     | _O(l)_         | Easy         || Hash Table, Counting Sort
+2151 | [Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/) | [C++](./C++/number-of-flowers-in-full-bloom.cpp) [Python](./Python/number-of-flowers-in-full-bloom.py) | _O(nlogn + mlogn)_   | _O(n)_        | Hard         | | Line Sweep, Binary Search
 
 <br/>
 <div align="right">
@@ -870,6 +873,7 @@
 2137 | [Pour Water Between Buckets to Make Water Levels Equal](https://leetcode.com/problems/pour-water-between-buckets-to-make-water-levels-equal/) | [C++](./C++/pour-water-between-buckets-to-make-water-levels-equal.cpp) [Python](./Python/pour-water-between-buckets-to-make-water-levels-equal.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 |
 2187 | [Minimum Time to Complete Trips](https://leetcode.com/problems/minimum-time-to-complete-trips/) | [C++](./C++/minimum-time-to-complete-trips.cpp) [Python](./Python/minimum-time-to-complete-trips.py) | _O(nlogr)_ | _O(1)_ | Medium | |
 2226 | [Maximum Candies Allocated to K Children](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/) | [C++](./C++/maximum-candies-allocated-to-k-children.cpp) [Python](./Python/maximum-candies-allocated-to-k-children.py) | _O(nlogr)_ | _O(1)_ | Medium | | Binary Search
+2250 | [Count Number of Rectangles Containing Each Point](https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/) | [C++](./C++/count-number-of-rectangles-containing-each-point.cpp) [Python](./Python/count-number-of-rectangles-containing-each-point.py) | _O(nlogn + m * max_y * logn)_ | _O(n)_ | Medium | | Bucket Sort, Binary Search
 
 <br/>
 <div align="right">
@@ -1131,6 +1135,7 @@
 2209 | [Minimum White Tiles After Covering With Carpets](https://leetcode.com/problems/minimum-white-tiles-after-covering-with-carpets/) | [C++](./C++/minimum-white-tiles-after-covering-with-carpets.cpp) [Python](./Python/minimum-white-tiles-after-covering-with-carpets.py) | _O(m * n)_ | _O(m * n)_ | Hard || DP
 2218 | [Maximum Value of K Coins From Piles](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/) | [C++](./C++/maximum-value-of-k-coins-from-piles.cpp) [Python](./Python/maximum-value-of-k-coins-from-piles.py) | _O(min(n * k^2, m * k)))_ | _O(k)_ | Hard || DP
 2222 | [Number of Ways to Select Buildings](https://leetcode.com/problems/number-of-ways-to-select-buildings/) | [C++](./C++/number-of-ways-to-select-buildings.cpp) [Python](./Python/number-of-ways-to-select-buildings.py) | _O(n)_ | _O(1)_ | Medium || DP
+2247 | [Maximum Cost of Trip With K Highways](https://leetcode.com/problems/maximum-cost-of-trip-with-k-highways/) | [C++](./C++/maximum-cost-of-trip-with-k-highways.cpp) [Python](./Python/maximum-cost-of-trip-with-k-highways.py) | _O(n^2 * 2^n)_ | _O(n * 2^n)_ | Hard | 🔒 | DP, Bitmasks, BFS
 
 <br/>
 <div align="right">
@@ -1591,7 +1596,8 @@
 2228 | [Users With Two Purchases Within Seven Days](https://leetcode.com/problems/users-with-two-purchases-within-seven-days/) | [MySQL](./MySQL/users-with-two-purchases-within-seven-days.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2230 | [The Users That Are Eligible for Discount](https://leetcode.com/problems/the-users-that-are-eligible-for-discount/) | [MySQL](./MySQL/the-users-that-are-eligible-for-discount.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 2238 | [Number of Times a Driver Was a Passenger](https://leetcode.com/problems/number-of-times-a-driver-was-a-passenger/) | [MySQL](./MySQL/number-of-times-a-driver-was-a-passenger.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
-
+2252 | [Dynamic Pivoting of a Table](https://leetcode.com/problems/dynamic-pivoting-of-a-table/) | [MySQL](./MySQL/dynamic-pivoting-of-a-table.sql) | _O(m * n)_ | _O(m * n)_       | Hard           |🔒||
+2253 | [Dynamic Unpivoting of a Table](https://leetcode.com/problems/dynamic-unpivoting-of-a-table/) | [MySQL](./MySQL/dynamic-unpivoting-of-a-table.sql) | _O(m * n)_ | _O(m * n)_       | Hard           |🔒||
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
