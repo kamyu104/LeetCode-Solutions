@@ -1596,8 +1596,8 @@
 2228 | [Users With Two Purchases Within Seven Days](https://leetcode.com/problems/users-with-two-purchases-within-seven-days/) | [MySQL](./MySQL/users-with-two-purchases-within-seven-days.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2230 | [The Users That Are Eligible for Discount](https://leetcode.com/problems/the-users-that-are-eligible-for-discount/) | [MySQL](./MySQL/the-users-that-are-eligible-for-discount.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 2238 | [Number of Times a Driver Was a Passenger](https://leetcode.com/problems/number-of-times-a-driver-was-a-passenger/) | [MySQL](./MySQL/number-of-times-a-driver-was-a-passenger.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
-2252 | [Dynamic Pivoting of a Table](https://leetcode.com/problems/dynamic-pivoting-of-a-table/) | [MySQL](./MySQL/dynamic-pivoting-of-a-table.sql) | _O(m * n)_ | _O(m * n)_       | Hard           |🔒||
-2253 | [Dynamic Unpivoting of a Table](https://leetcode.com/problems/dynamic-unpivoting-of-a-table/) | [MySQL](./MySQL/dynamic-unpivoting-of-a-table.sql) | _O(m * n)_ | _O(m * n)_       | Hard           |🔒||
+2252 | [Dynamic Pivoting of a Table](https://leetcode.com/problems/dynamic-pivoting-of-a-table/) | [MySQL](./MySQL/dynamic-pivoting-of-a-table.sql) | _O(n * m)_ | _O(n * m)_       | Hard           |🔒||
+2253 | [Dynamic Unpivoting of a Table](https://leetcode.com/problems/dynamic-unpivoting-of-a-table/) | [MySQL](./MySQL/dynamic-unpivoting-of-a-table.sql) | _O(n * m)_ | _O(n * m)_       | Hard           |🔒||
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
