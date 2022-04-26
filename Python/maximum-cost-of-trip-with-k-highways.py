@@ -64,8 +64,11 @@ class Solution2(object):
                         new_mask = mask|(1<<v)
                         if dp[mask][0]+t < dp[new_mask][0]:
                             continue
+                        if dp[mask][0]+t == dp[new_mask][0]:
+                            dp[new_mask][1].append(v)
+                            continue
                         dp[new_mask][0] = dp[mask][0]+t
-                        dp[new_mask][1].append(v)
+                        dp[new_mask][1] = [v]
                         if bin(mask).count('1') == k:
                             result = max(result, dp[new_mask][0])
         return result
