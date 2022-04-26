@@ -1,7 +1,7 @@
 // Time:  O(n * r^2)
 // Space: O(min(n * r^2, max_x * max_y))
 
-// math, set
+// math, hash table
 class Solution {
 public:
     int countLatticePoints(vector<vector<int>>& circles) {
