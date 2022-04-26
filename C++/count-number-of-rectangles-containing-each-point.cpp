@@ -5,10 +5,10 @@
 class Solution {
 public:
     vector<int> countRectangles(vector<vector<int>>& rectangles, vector<vector<int>>& points) {
-        int max_y = (*max_element(cbegin(rectangles), cend(rectangles),
-                                  [](const auto& a, const auto& b) {
-                                      return a[1] < b[1];
-                                  }))[1];
+        const auto max_y = (*max_element(cbegin(rectangles), cend(rectangles),
+                                         [](const auto& a, const auto& b) {
+                                             return a[1] < b[1];
+                                         }))[1];
         vector<vector<int>> buckets(max_y + 1);
         for (const auto& rec : rectangles) {
             buckets[rec[1]].emplace_back(rec[0]);
