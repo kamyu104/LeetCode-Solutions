@@ -36,7 +36,7 @@ import itertools
 
 
 # combination, dp
-class Solution(object):
+class Solution2(object):
     def maximumCost(self, n, highways, k):
         """
         :type n: int
