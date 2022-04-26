@@ -751,7 +751,7 @@
 2191 | [Sort the Jumbled Numbers](https://leetcode.com/problems/sort-the-jumbled-numbers/) | [C++](./C++/sort-the-jumbled-numbers.cpp) [Python](./Python/sort-the-jumbled-numbers.py) | _O(nlogm + nlogn)_ | _O(n)_ | Medium | | Sort |
 2231 | [Largest Number After Digit Swaps by Parity](https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/) | [C++](./C++/largest-number-after-digit-swaps-by-parity.cpp) [Python](./Python/largest-number-after-digit-swaps-by-parity.py) | _O(logn)_ | _O(1)_ | Easy | | Counting Sort |
 2233 | [Maximum Product After K Increments](https://leetcode.com/problems/maximum-product-after-k-increments/)|[C++](./C++/maximum-product-after-k-increments.cpp) [Python](./Python/maximum-product-after-k-increments.py)| _O(n + k)_     | _O(n)_         | Medium         || Heap, Freq Table, Sort, Math
-2248 | [Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/)|[C++](./C++/intersection-of-multiple-arrays.cpp) [Python](./Pythonintersection-of-multiple-arrays.py)| _O(n * l + r)_     | _O(l)_         | Easy         || Hash Table, Counting Sort
+2248 | [Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/)|[C++](./C++/intersection-of-multiple-arrays.cpp) [Python](./Python/intersection-of-multiple-arrays.py)| _O(n * l + r)_     | _O(l)_         | Easy         || Hash Table, Counting Sort
 2251 | [Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/) | [C++](./C++/number-of-flowers-in-full-bloom.cpp) [Python](./Python/number-of-flowers-in-full-bloom.py) | _O(nlogn + mlogn)_   | _O(n)_        | Hard         | | Line Sweep, Binary Search
 
 <br/>
