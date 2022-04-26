@@ -1,7 +1,7 @@
 # Time:  O(n^2 * 2^n)
 # Space: O(n * 2^n)
 
-# bfs
+# bfs based dp
 class Solution(object):
     def maximumCost(self, n, highways, k):
         """
@@ -17,16 +17,16 @@ class Solution(object):
             adj[c1].append((c2, t))
             adj[c2].append((c1, t))
         result = -1
-        q = [(u, 1<<u, 0) for u in xrange(n)]
-        while q:
-            new_q = []
-            for u, mask, total in q:
+        dp = [(u, 1<<u, 0) for u in xrange(n)]
+        while dp:
+            new_dp = []
+            for u, mask, total in dp:
                 if bin(mask).count('1') == k+1:
                     result = max(result, total)
                 for v, t in adj[u]:
                     if mask&(1<<v) == 0:
-                        new_q.append((v, mask|(1<<v), total+t))
-            q = new_q
+                        new_dp.append((v, mask|(1<<v), total+t))
+            dp = new_dp
         return result
 
 
@@ -35,7 +35,7 @@ class Solution(object):
 import itertools
 
 
-# combination, dp
+# combination based dp
 class Solution2(object):
     def maximumCost(self, n, highways, k):
         """
