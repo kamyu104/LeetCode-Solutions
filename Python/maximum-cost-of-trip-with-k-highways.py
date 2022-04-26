@@ -55,7 +55,7 @@ class Solution(object):
             dp[1<<i][1].append(i)
         result = -1
         for cnt in xrange(1, n+1):
-            for choice in itertools.combinations(range(n), cnt):
+            for choice in itertools.combinations(xrange(n), cnt):
                 mask = reduce(lambda x, y:x|(1<<y), choice, 0)
                 for u in dp[mask][1]:
                     for v, t in adj[u]:
