@@ -3,7 +3,7 @@
 
 CREATE PROCEDURE UnpivotProducts()
 BEGIN
-	  SET SESSION group_concat_max_len = 1000000;
+    SET SESSION group_concat_max_len = 1000000;
     
     SET @sql_query = NULL;
 	  SELECT GROUP_CONCAT(
