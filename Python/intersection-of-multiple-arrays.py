@@ -1,8 +1,25 @@
+# Time:  O(n * l + r), n = len(nums), l = len(nums[0])
+# Space: O(r), r = max(nums)-min(nums)
+
+# counting sort
+class Solution(object):
+    def intersection(self, nums):
+        """
+        :type nums: List[List[int]]
+        :rtype: List[int]
+        """
+        MAX_NUM = 1000
+        cnt = [0]*(MAX_NUM+1)
+        for num in nums:
+            for x in num:
+                cnt[x] += 1
+        return [i for i in xrange(1, MAX_NUM+1) if cnt[i] == len(nums)]
+
+
 # Time:  O(n * l + r), n = len(nums), l = len(nums[0]), r = max(nums)-min(nums)
 # Space: O(l)
-
 # set, counting sort
-class Solution(object):
+class Solution2(object):
     def intersection(self, nums):
         """
         :type nums: List[List[int]]
@@ -17,7 +34,7 @@ class Solution(object):
 # Time:  O(n * l + llogl), n = len(nums), l = len(nums[0])
 # Space: O(l)
 # set, sort
-class Solution2(object):
+class Solution3(object):
     def intersection(self, nums):
         """
         :type nums: List[List[int]]
