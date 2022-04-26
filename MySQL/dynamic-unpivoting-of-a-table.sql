@@ -13,7 +13,7 @@ BEGIN
     )
     INTO @sql_query
     FROM information_schema.columns
-    WHERE table_name = 'products' AND  column_name != 'product_id';
+    WHERE table_name = 'products' AND column_name != 'product_id';
     
     PREPARE sql_query FROM @sql_query;
     EXECUTE sql_query;
