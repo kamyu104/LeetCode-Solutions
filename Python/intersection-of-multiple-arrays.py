@@ -18,7 +18,7 @@ class Solution(object):
 
 # Time:  O(n * l + r), n = len(nums), l = len(nums[0]), r = max(nums)-min(nums)
 # Space: O(l)
-# set, counting sort
+# hash table, counting sort
 class Solution2(object):
     def intersection(self, nums):
         """
@@ -33,7 +33,7 @@ class Solution2(object):
 
 # Time:  O(n * l + llogl), n = len(nums), l = len(nums[0])
 # Space: O(l)
-# set, sort
+# hash table, sort
 class Solution3(object):
     def intersection(self, nums):
         """
