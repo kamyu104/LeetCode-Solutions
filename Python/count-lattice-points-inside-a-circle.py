@@ -1,5 +1,5 @@
 # Time:  O(n * r^2)
-# Space: O(min(n * r^2, (max_x-min_x)*(max_y-min_y))
+# Space: O(min(n * r^2, (max_x-min_x)*(max_y-min_y)))
 
 # math, set
 class Solution(object):
