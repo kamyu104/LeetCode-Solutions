@@ -1,0 +1,53 @@
+// Time:  O(n * l + r), n = len(nums), l = len(nums[0]), r = max(nums)-min(nums)
+// Space: O(l)
+
+// set, counting sort
+class Solution {
+public:
+    vector<int> intersection(vector<vector<int>>& nums) {
+        unordered_set<int> lookup(cbegin(nums[0]), cend(nums[0]));
+        for (int i = 1; i < size(nums); ++i) {
+            unordered_set<int> new_lookup;
+            for (const auto& x : nums[i]) {
+                if (lookup.count(x)) {
+                    new_lookup.emplace(x);
+                }
+            }
+            lookup = move(new_lookup);
+        }
+        if (empty(lookup)) {
+            return {};
+        }
+        const int mn = *min_element(cbegin(lookup), cend(lookup));
+        const int mx = *max_element(cbegin(lookup), cend(lookup));
+        vector<int> result;
+        for (int i = mn; i <= mx; ++i) {
+            if (lookup.count(i)) {
+                result.emplace_back(i);
+            }
+        }
+        return result;
+    }
+};
+
+// Time:  O(n * l + llogl), n = len(nums), l = len(nums[0])
+// Space: O(l)
+// set, sort
+class Solution2 {
+public:
+    vector<int> intersection(vector<vector<int>>& nums) {
+        unordered_set<int> lookup(cbegin(nums[0]), cend(nums[0]));
+        for (int i = 1; i < size(nums); ++i) {
+            unordered_set<int> new_lookup;
+            for (const auto& x : nums[i]) {
+                if (lookup.count(x)) {
+                    new_lookup.emplace(x);
+                }
+            }
+            lookup = move(new_lookup);
+        }
+        vector<int> result(cbegin(lookup), cend(lookup));
+        sort(begin(result), end(result));
+        return result;
+    }
+};
