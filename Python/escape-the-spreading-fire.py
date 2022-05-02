@@ -23,7 +23,7 @@ class Solution(object):
                 new_q = []
                 for r, c, t in q:
                     for dr, dc in DIRECTIONS:
-                        nr, nc = dr+r, dc+c
+                        nr, nc = r+dr, c+dc
                         if not (0 <= nr < len(grid) and 0 <= nc < len(grid[0]) and
                                 grid[nr][nc] != WALL and time[t][nr][nc] == INF and
                                 (t == FIRE or
