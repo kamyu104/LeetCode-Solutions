@@ -9,7 +9,58 @@ class Solution(object):
         :rtype: int
         """
         DIRECTIONS = [(0, 1), (1, 0), (0, -1), (-1, 0)]
-        FIRE, WALL, PERSON = 1, 2, 3
+        GRASS, FIRE, WALL, PERSON = range(4)
+        INF = 10**9
+        def bfs(grid):
+            time = {FIRE:{(len(grid)-1, len(grid[0])-1):INF,
+                          (len(grid)-1, len(grid[0])-2):INF,
+                          (len(grid)-2, len(grid[0])-1):INF},
+                    PERSON:{(len(grid)-1, len(grid[0])-1):INF,
+                            (len(grid)-1, len(grid[0])-2):INF,
+                            (len(grid)-2, len(grid[0])-1):INF}}
+            d = 0
+            q = [(r, c, FIRE) for r in xrange(len(grid)) for c in xrange(len(grid[0])) if grid[r][c] == FIRE]
+            q.append((0, 0, PERSON))
+            while q:
+                new_q = []
+                for r, c, t in q:
+                    for dr, dc in DIRECTIONS:
+                        nr, nc = r+dr, c+dc
+                        if not (0 <= nr < len(grid) and 0 <= nc < len(grid[0]) and
+                                grid[nr][nc] != WALL and
+                                ((t == FIRE and grid[nr][nc] != FIRE) or
+                                 (t == PERSON and (grid[nr][nc] == GRASS or (grid[nr][nc] == FIRE and (nr, nc) == (len(grid)-1, len(grid[0])-1) and d+1 == time[FIRE][nr, nc]))))):
+                            continue
+                        if grid[nr][nc] != FIRE:
+                            grid[nr][nc] = t
+                        new_q.append((nr, nc, t))
+                        if (nr, nc) in time[t]:
+                            time[t][nr, nc] = d+1
+                q = new_q
+                d += 1
+            return time
+
+        time = bfs(grid)
+        if time[PERSON][len(grid)-1, len(grid[0])-1] == INF:
+            return -1
+        if time[FIRE][len(grid)-1, len(grid[0])-1] == INF:
+            return INF
+        diff = time[FIRE][len(grid)-1, len(grid[0])-1]-time[PERSON][len(grid)-1, len(grid[0])-1]
+        return diff if diff+2 in (time[FIRE][len(grid)-1, len(grid[0])-2]-time[PERSON][len(grid)-1, len(grid[0])-2],
+                                  time[FIRE][len(grid)-2, len(grid[0])-1]-time[PERSON][len(grid)-2, len(grid[0])-1]) else diff-1
+
+
+# Time:  O(m * n)
+# Space: O(m * n)
+# bfs
+class Solution2(object):
+    def maximumMinutes(self, grid):
+        """
+        :type grid: List[List[int]]
+        :rtype: int
+        """
+        DIRECTIONS = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+        FIRE, WALL, PERSON = range(1, 4)
         INF = 10**9
         def bfs(grid):
             time = {FIRE:[[INF]*len(grid[0]) for _ in xrange(len(grid))],
