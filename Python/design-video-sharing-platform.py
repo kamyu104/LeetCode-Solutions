@@ -42,11 +42,11 @@ class VideoSharingPlatform(object):
         """
         if videoId not in self.__videos:
             return
+        heapq.heappush(self.__avail_ids, videoId)
         del self.__videos[videoId]
         del self.__likes[videoId]
         del self.__dislikes[videoId]
         del self.__views[videoId]
-        heapq.heappush(self.__avail_ids, videoId)
         
     def watch(self, videoId, startMinute, endMinute):
         """
