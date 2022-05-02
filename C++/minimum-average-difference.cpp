@@ -12,7 +12,7 @@ public:
             prefix += nums[i];
             const int a = prefix / (i + 1);
             const int b = i + 1 < size(nums) ? (total - prefix) / (size(nums) - (i + 1)) : 0;
-            int diff = abs(a - b);
+            const int diff = abs(a - b);
             if (diff < mn) {
                 mn = diff;
                 idx = i;
