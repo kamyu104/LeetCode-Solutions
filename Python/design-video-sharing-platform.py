@@ -8,19 +8,17 @@
 #        getViews:            O(1)
 # Space: O(n * l), n = len(videos), l = max(len(v) for v in videos) 
 
-import collections
 import heapq
 
 
 class VideoSharingPlatform(object):
 
     def __init__(self):
-        self.__videos = {}
+        self.__videos = []
         self.__avail_ids = []
-        self.__max_id = 0
-        self.__likes = collections.Counter()
-        self.__dislikes = collections.Counter()
-        self.__views = collections.Counter()
+        self.__likes = []
+        self.__dislikes = []
+        self.__views = []
 
     def upload(self, video):
         """
@@ -30,8 +28,11 @@ class VideoSharingPlatform(object):
         if self.__avail_ids:
             i = heapq.heappop(self.__avail_ids)
         else:
-            i = self.__max_id
-            self.__max_id += 1
+            i = len(self.__videos)
+            self.__videos.append(None)
+            self.__likes.append(0)
+            self.__dislikes.append(0)
+            self.__views.append(0)
         self.__videos[i] = video
         return i
         
@@ -40,13 +41,11 @@ class VideoSharingPlatform(object):
         :type videoId: int
         :rtype: None
         """
-        if videoId not in self.__videos:
+        if videoId >= len(self.__videos) or not self.__videos[videoId]:
             return
         heapq.heappush(self.__avail_ids, videoId)
-        del self.__videos[videoId]
-        del self.__likes[videoId]
-        del self.__dislikes[videoId]
-        del self.__views[videoId]
+        self.__videos[videoId] = None
+        self.__likes[videoId] = self.__dislikes[videoId] = self.__views[videoId] = 0
         
     def watch(self, videoId, startMinute, endMinute):
         """
@@ -55,7 +54,7 @@ class VideoSharingPlatform(object):
         :type endMinute: int
         :rtype: str
         """
-        if videoId not in self.__videos:
+        if videoId >= len(self.__videos) or not self.__videos[videoId]:
             return "-1"
         self.__views[videoId] += 1
         return self.__videos[videoId][startMinute:endMinute+1]
@@ -65,7 +64,7 @@ class VideoSharingPlatform(object):
         :type videoId: int
         :rtype: None
         """
-        if videoId not in self.__videos:
+        if videoId >= len(self.__videos) or not self.__videos[videoId]:
             return
         self.__likes[videoId] += 1
 
@@ -74,7 +73,7 @@ class VideoSharingPlatform(object):
         :type videoId: int
         :rtype: None
         """
-        if videoId not in self.__videos:
+        if videoId >= len(self.__videos) or not self.__videos[videoId]:
             return
         self.__dislikes[videoId] += 1
 
@@ -83,7 +82,7 @@ class VideoSharingPlatform(object):
         :type videoId: int
         :rtype: List[int]
         """
-        if videoId not in self.__videos:
+        if videoId >= len(self.__videos) or not self.__videos[videoId]:
             return [-1]
         return [self.__likes[videoId], self.__dislikes[videoId]]
 
@@ -92,6 +91,6 @@ class VideoSharingPlatform(object):
         :type videoId: int
         :rtype: int
         """
-        if videoId not in self.__videos:
+        if videoId >= len(self.__videos) or not self.__videos[videoId]:
             return -1
         return self.__views[videoId]
