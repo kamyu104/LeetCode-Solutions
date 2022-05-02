@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2253%20%2F%202253-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2262%20%2F%202262-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -257,6 +257,7 @@
 2237 | [Count Positions on Street With Required Brightness](https://leetcode.com/problems/count-positions-on-street-with-required-brightness/) | [C++](./C++/count-positions-on-street-with-required-brightness.cpp) [Python](./Python/count-positions-on-street-with-required-brightness.py) | _O(n + l)_ | _O(min(n, l))_ | Medium | 🔒 | Line Sweep
 2239 | [Find Closest Number to Zero](https://leetcode.com/problems/find-closest-number-to-zero/) | [C++](./C++/find-closest-number-to-zero.cpp) [Python](./Python/find-closest-number-to-zero.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2245 | [Maximum Trailing Zeros in a Cornered Path](https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/) | [C++](./C++/maximum-trailing-zeros-in-a-cornered-path.cpp) [Python](./Python/maximum-trailing-zeros-in-a-cornered-path.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Prefix Sum
+2256 | [Minimum Average Difference](https://leetcode.com/problems/minimum-average-difference/) | [C++](./C++/minimum-average-difference.cpp) [Python](./Python/minimum-average-difference.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -373,6 +374,7 @@
 2223 | [Sum of Scores of Built Strings](https://leetcode.com/problems/sum-of-scores-of-built-strings/) | [C++](./C++/sum-of-scores-of-built-strings.cpp) [Python](./Python/sum-of-scores-of-built-strings.py) | _O(n)_   | _O(n)_        | Hard         | | `Z-Function`
 2232 | [Minimize Result by Adding Parentheses to Expression](https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/) | [C++](./C++/minimize-result-by-adding-parentheses-to-expression.cpp) [Python](./Python/minimize-result-by-adding-parentheses-to-expression.py) | _O(n^2)_   | _O(1)_        | Medium         | | Brute Force
 2243 | [Calculate Digit Sum of a String](https://leetcode.com/problems/calculate-digit-sum-of-a-string/) | [C++](./C++/calculate-digit-sum-of-a-string.cpp) [Python](./Python/calculate-digit-sum-of-a-string.py) | _O(n)_   | _O(n)_        | Easy         | | Simulation
+2255 | [Count Prefixes of a Given String](https://leetcode.com/problems/count-prefixes-of-a-given-string/) | [C++](./C++/count-prefixes-of-a-given-string.cpp) [Python](./Python/count-prefixes-of-a-given-string.py) | _O(n * l)_   | _O(1)_        | Easy         | | String
 
 <br/>
 <div align="right">
@@ -569,6 +571,8 @@
 2215 | [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/) | [C++](./C++/find-the-difference-of-two-arrays.cpp) [Python](./Python/find-the-difference-of-two-arrays.py) | _O(n)_ | _O(n)_ | Easy ||  Hash Table
 2225 | [Find Players With Zero or One Losses](https://leetcode.com/problems/find-players-with-zero-or-one-losses/) | [C++](./C++/find-players-with-zero-or-one-losses.cpp) [Python](./Python/find-players-with-zero-or-one-losses.py) | _O(nlogn)_ | _O(n)_ | Medium ||  Hash Table, Sort
 2229 | [Check if an Array Is Consecutive](https://leetcode.com/problems/check-if-an-array-is-consecutive/) | [C++](./C++/check-if-an-array-is-consecutive.cpp) [Python](./Python/check-if-an-array-is-consecutive.py) | _O(n)_ | _O(n)_ | Easy |🔒|  Hash Table, Sort
+2260 | [Minimum Consecutive Cards to Pick Up](https://leetcode.com/problems/minimum-consecutive-cards-to-pick-up/) | [C++](./C++/minimum-consecutive-cards-to-pick-up.cpp) [Python](./Python/minimum-consecutive-cards-to-pick-up.py) | _O(n)_ | _O(n)_ | Medium ||  Hash Table
+2261 | [K Divisible Elements Subarrays](https://leetcode.com/problems/k-divisible-elements-subarrays/) | [C++](./C++/k-divisible-elements-subarrays.cpp) [Python](./Python/k-divisible-elements-subarrays.py) | _O(n^2)_ | _O(t)_ | Medium | | Trie, `Rabin-Karp Algorithm`
 
 <br/>
 <div align="right">
@@ -698,6 +702,7 @@
 2240 | [Number of Ways to Buy Pens and Pencils](https://leetcode.com/problems/number-of-ways-to-buy-pens-and-pencils/)|[C++](./C++/number-of-ways-to-buy-pens-and-pencils.cpp) [Python](./Python/number-of-ways-to-buy-pens-and-pencils.py)| _O(sqrt(t))_     | _O(1)_         | Medium         || Math
 2244 | [Minimum Rounds to Complete All Tasks](https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/)|[C++](./C++/minimum-rounds-to-complete-all-tasks.cpp) [Python](./Python/minimum-rounds-to-complete-all-tasks.py)| _O(n)_     | _O(n)_         | Medium         || Math, Freq Table
 2249 | [Count Lattice Points Inside a Circle](https://leetcode.com/problems/count-lattice-points-inside-a-circle/)|[C++](./C++/count-lattice-points-inside-a-circle.cpp) [Python](./Python/count-lattice-points-inside-a-circle.py)| _O(n * r^2)_     | _O(min(n * r^2, max_x * max_y))_         | Medium         || Math, Hash Table
+2262 | [Total Appeal of A String](https://leetcode.com/problems/total-appeal-of-a-string/)|[C++](./C++/total-appeal-of-a-string.cpp) [Python](./Python/total-appeal-of-a-string.py)| _O(n)_     | _O(26)_         | Hard         || Combinatorics
 
 <br/>
 <div align="right">
@@ -937,6 +942,7 @@
 2059 | [Minimum Operations to Convert Number](https://leetcode.com/problems/minimum-operations-to-convert-number/)| [C++](./C++/minimum-operations-to-convert-number.cpp) [Python](./Python/minimum-operations-to-convert-number.py)| _O(m * n)_ | _O(m)_ | Medium | | |
 2115 | [Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/)| [C++](./C++/find-all-possible-recipes-from-given-supplies.cpp) [Python](./Python/find-all-possible-recipes-from-given-supplies.py)   | _O(\|E\|)_         | _O(\|E\|)_          | Medium         | | Topological Sort |
 2146 | [K Highest Ranked Items Within a Price Range](https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range/)| [C++](./C++/k-highest-ranked-items-within-a-price-range.cpp) [Python](./Python/k-highest-ranked-items-within-a-price-range.py)   | _O(m * n + klogk)_         | _O(m * n)_          | Medium         | | BFS, Quick Select, Sort |
+2158 | [Escape the Spreading Fire](https://leetcode.com/problems/escape-the-spreading-fire/)| [C++](./C++/escape-the-spreading-fire.cpp) [Python](./Python/escape-the-spreading-fire.py)   | _O(m * n)_         | _O(m * n)_          | Hard         | | BFS |
 
 <br/>
 <div align="right">
@@ -1278,6 +1284,7 @@
 2214 | [Minimum Health to Beat Game](https://leetcode.com/problems/minimum-health-to-beat-game/)  | [C++](./C++/minimum-health-to-beat-game.cpp) [Python](./Python/minimum-health-to-beat-game.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Greedy |
 2216 | [Minimum Deletions to Make Array Beautiful](https://leetcode.com/problems/minimum-deletions-to-make-array-beautiful/)  | [C++](./C++/minimum-deletions-to-make-array-beautiful.cpp) [Python](./Python/minimum-deletions-to-make-array-beautiful.py) | _O(n)_ | _O(1)_ | Medium | | Greedy |
 2224 | [Minimum Number of Operations to Convert Time](https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/)  | [C++](./C++/minimum-number-of-operations-to-convert-time.cpp) [Python](./Python/minimum-number-of-operations-to-convert-time.py) | _O(1)_ | _O(1)_ | Easy | | Greedy |
+2259 | [Remove Digit From Number to Maximize Result](https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/)  | [C++](./C++/remove-digit-from-number-to-maximize-result.cpp) [Python](./Python/remove-digit-from-number-to-maximize-result.py) | _O(n)_ | _O(1)_ | Easy | | Greedy |
 
 <br/>
 <div align="right">
@@ -1360,6 +1367,7 @@
 1243 | [Array Transformation](https://leetcode.com/problems/array-transformation/) | [C++](./C++/array-transformation.cpp) [Python](./Python/array-transformation.py) | _O(n^2)_ | _O(n)_ | Easy           ||| 
 2061 | [Number of Spaces Cleaning Robot Cleaned](https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/) | [C++](./C++/number-of-spaces-cleaning-robot-cleaned.cpp) [Python](./Python/number-of-spaces-cleaning-robot-cleaned.py) | _O(m * n)_ | _O(1)_ | Medium           |🔒|| 
 2162 | [Minimum Cost to Set Cooking Time](https://leetcode.com/problems/minimum-cost-to-set-cooking-time/) | [C++](./C++/minimum-cost-to-set-cooking-time.cpp) [Python](./Python/minimum-cost-to-set-cooking-time.py) | _O(1)_ | _O(1)_ | Medium           || 
+2257 | [Count Unguarded Cells in the Grid](https://leetcode.com/problems/count-unguarded-cells-in-the-grid/) | [C++](./C++/count-unguarded-cells-in-the-grid.cpp) [Python](./Python/count-unguarded-cells-in-the-grid.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Array, Simulation
 
 <br/>
 <div align="right">
@@ -1413,6 +1421,7 @@
 2166 | [Design Bitset](https://leetcode.com/problems/design-bitset/) | [C++](./C++/design-bitset.cpp) [Python](./Python/design-bitset.py) | ctor: _O(n)_<br>fix: _O(1)_<br>fix: _O(1)_<br>unfix: _O(1)_<br>flip: _O(1)_<br>all: _O(1)_<br>one: _O(1)_<br>count: _O(1)_<br>toString: _O(n)_ | _O(n)_ | Medium | |
 2227 | [Encrypt and Decrypt Strings](https://leetcode.com/problems/encrypt-and-decrypt-strings/) | [C++](./C++/encrypt-and-decrypt-strings.cpp) [Python](./Python/encrypt-and-decrypt-strings.py) | ctor: _O(m + d)_<br>encrypt: _O(n)_<br>decrypt: _O(n)_ | _O(n)_ | Hard | | Freq Table
 2241 | [Design an ATM Machine](https://leetcode.com/problems/design-an-atm-machine/) | [C++](./C++/design-an-atm-machine.cpp) [Python](./Python/design-an-atm-machine.py) | ctor: _O(1)_<br>deposit: _O(1)_<br>withdraw: _O(1)_ | _O(1)_ | Medium | | Greedy
+2254 | [Design Video Sharing Platform](https://leetcode.com/problems/design-video-sharing-platform/) | [C++](./C++/design-video-sharing-platform.cpp) [Python](./Python/design-video-sharing-platform.py) | ctor: _O(1)_<br>upload: _O(logn + l)_<br>remove: _O(logn)_<br>like: _O(1)_<br>dislike: _O(1)_<br>view: _O(1)_<br>getLikesAndDislikes: _O(1)_<br>getViews: _O(1)_ | _O(n * l)_ | Hard | 🔒 | Heap
 
 <br/>
 <div align="right">
