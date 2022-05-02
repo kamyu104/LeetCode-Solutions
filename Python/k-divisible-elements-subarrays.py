@@ -45,21 +45,18 @@ class Solution2(object):
             return all(any(nums[i+k] != nums[j+k] for k in xrange(l)) for j in lookup)
 
         result = 0
-        base = P
+        cnt, h = [0]*len(nums), [0]*len(nums)
         for l in xrange(1, len(nums)+1):
             lookup = collections.defaultdict(list)
-            cnt = h = 0
-            for i in xrange(len(nums)):
-                cnt += (nums[i]%p == 0)
-                h = (h*P+nums[i])%MOD
-                if i-l >= 0:
-                    cnt -= (nums[i-l]%p == 0)
-                    h = (h-nums[i-l]*base)%MOD
-                if i < l-1 or cnt > k or not check(nums, lookup[h], l, i-l+1):
+            for i in xrange(len(nums)-l+1):
+                cnt[i] += (nums[i+l-1]%p == 0)
+                if cnt[i] > k:
                     continue
-                lookup[h].append(i-l+1)
+                h[i] = (h[i]*P+nums[i+l-1])%MOD
+                if not check(nums, lookup[h[i]], l, i):
+                    continue
+                lookup[h[i]].append(i)
                 result += 1
-            base = (base*P)%MOD
         return result
 
 
@@ -76,19 +73,14 @@ class Solution3(object):
         """
         MOD, P = 10**9+7, 200
         result = 0
-        base = P
+        cnt, h = [0]*len(nums), [0]*len(nums)
         for l in xrange(1, len(nums)+1):
             lookup = set()
-            cnt = h = 0
-            for i in xrange(len(nums)):
-                cnt += (nums[i]%p == 0)
-                h = (h*P+nums[i])%MOD
-                if i-l >= 0:
-                    cnt -= (nums[i-l]%p == 0)
-                    h = (h-nums[i-l]*base)%MOD
-                if i < l-1 or cnt > k:
+            for i in xrange(len(nums)-l+1):
+                cnt[i] += (nums[i+l-1]%p == 0)
+                if cnt[i] > k:
                     continue
-                lookup.add(h)  # assumed no collision
+                h[i] = (h[i]*P+nums[i+l-1])%MOD
+                lookup.add(h[i])
             result += len(lookup)
-            base = (base*P)%MOD
         return result
