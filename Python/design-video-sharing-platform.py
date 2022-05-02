@@ -15,8 +15,8 @@ import heapq
 class VideoSharingPlatform(object):
 
     def __init__(self):
-        self.__videos = []
         self.__avails = []
+        self.__videos = []
         self.__likes = []
         self.__dislikes = []
         self.__views = []
