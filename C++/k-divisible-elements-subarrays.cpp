@@ -70,22 +70,20 @@ public:
             }
             return true;
         };
+        vector<int> cnt(size(nums)), h(size(nums));
         int result = 0;
-        auto base = P;
-        for (int l = 1; l <= size(nums); ++l, base = (base * P) % MOD) {
+        for (int l = 1; l <= size(nums); ++l) {
             unordered_map<int, vector<int>> lookup;
-            int cnt = 0, h = 0;
-            for (int i = 0; i < size(nums); ++i) {
-                cnt += (nums[i] % p == 0);
-                h = (h * P + nums[i]) % MOD;
-                if (i - l >= 0) {
-                    cnt -= (nums[i - l] % p == 0);
-                    h = ((h - nums[i - l] * base) % MOD + MOD) % MOD;
-                }
-                if (i < l - 1 || cnt > k || !check(lookup[h], l, i - l + 1)) {
+            for (int i = 0; i + l - 1 < size(nums); ++i) {
+                cnt[i] += (nums[i + l - 1] % p == 0);
+                if (cnt[i] > k) {
                     continue;
                 }
-                lookup[h].emplace_back(i - l + 1);
+                h[i] = (h[i] * P + nums[i + l - 1]) % MOD;
+                if (!check(lookup[h[i]], l, i)) {
+                    continue;
+                }
+                lookup[h[i]].emplace_back(i);
                 ++result;
             }
         }
@@ -101,22 +99,17 @@ public:
     int countDistinct(vector<int>& nums, int k, int p) {
         static const int MOD = 1e9 + 7;
         static const int64_t P = 200;
+        vector<int> cnt(size(nums)), h(size(nums));
         int result = 0;
-        auto base = P;
-        for (int l = 1; l <= size(nums); ++l, base = (base * P) % MOD) {
+        for (int l = 1; l <= size(nums); ++l) {
             unordered_set<int> lookup;
-            int cnt = 0, h = 0;
-            for (int i = 0; i < size(nums); ++i) {
-                cnt += (nums[i] % p == 0);
-                h = (h * P + nums[i]) % MOD;
-                if (i - l >= 0) {
-                    cnt -= (nums[i - l] % p == 0);
-                    h = ((h - nums[i - l] * base) % MOD + MOD) % MOD;
-                }
-                if (i < l - 1 || cnt > k) {
+            for (int i = 0; i + l - 1 < size(nums); ++i) {
+                cnt[i] += (nums[i + l - 1] % p == 0);
+                if (cnt[i] > k) {
                     continue;
                 }
-                lookup.emplace(h);  // assumed no collision
+                h[i] = (h[i] * P + nums[i + l - 1]) % MOD;
+                lookup.emplace(h[i]);
             }
             result += size(lookup);
         }
