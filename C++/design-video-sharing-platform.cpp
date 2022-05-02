@@ -8,6 +8,7 @@
 //        getViews:            O(1)
 // Space: O(n * l), n = len(videos), l = max(len(v) for v in videos) 
 
+// design, heap
 class VideoSharingPlatform {
 public:
     VideoSharingPlatform() {
