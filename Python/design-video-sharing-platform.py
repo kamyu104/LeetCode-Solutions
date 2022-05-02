@@ -11,6 +11,7 @@
 import heapq
 
 
+# design, heap
 class VideoSharingPlatform(object):
 
     def __init__(self):
