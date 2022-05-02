@@ -942,7 +942,7 @@
 2059 | [Minimum Operations to Convert Number](https://leetcode.com/problems/minimum-operations-to-convert-number/)| [C++](./C++/minimum-operations-to-convert-number.cpp) [Python](./Python/minimum-operations-to-convert-number.py)| _O(m * n)_ | _O(m)_ | Medium | | |
 2115 | [Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/)| [C++](./C++/find-all-possible-recipes-from-given-supplies.cpp) [Python](./Python/find-all-possible-recipes-from-given-supplies.py)   | _O(\|E\|)_         | _O(\|E\|)_          | Medium         | | Topological Sort |
 2146 | [K Highest Ranked Items Within a Price Range](https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range/)| [C++](./C++/k-highest-ranked-items-within-a-price-range.cpp) [Python](./Python/k-highest-ranked-items-within-a-price-range.py)   | _O(m * n + klogk)_         | _O(m * n)_          | Medium         | | BFS, Quick Select, Sort |
-2158 | [Escape the Spreading Fire](https://leetcode.com/problems/escape-the-spreading-fire/)| [C++](./C++/escape-the-spreading-fire.cpp) [Python](./Python/escape-the-spreading-fire.py)   | _O(m * n)_         | _O(m * n)_          | Hard         | | BFS |
+2258 | [Escape the Spreading Fire](https://leetcode.com/problems/escape-the-spreading-fire/)| [C++](./C++/escape-the-spreading-fire.cpp) [Python](./Python/escape-the-spreading-fire.py)   | _O(m * n)_         | _O(m * n)_          | Hard         | | BFS |
 
 <br/>
 <div align="right">
