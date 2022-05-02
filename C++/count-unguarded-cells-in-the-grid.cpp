@@ -1,7 +1,7 @@
 // Time:  O(m * n)
 // Space: O(m * n)
 
-// array
+// array, simulation
 class Solution {
 public:
     int countUnguarded(int m, int n, vector<vector<int>>& guards, vector<vector<int>>& walls) {
