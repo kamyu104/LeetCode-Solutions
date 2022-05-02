@@ -4,7 +4,7 @@
 import itertools
 
 
-# array
+# array, simulation
 class Solution(object):
     def countUnguarded(self, m, n, guards, walls):
         """
