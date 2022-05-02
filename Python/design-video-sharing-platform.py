@@ -15,7 +15,7 @@ class VideoSharingPlatform(object):
 
     def __init__(self):
         self.__videos = []
-        self.__avail_ids = []
+        self.__avails = []
         self.__likes = []
         self.__dislikes = []
         self.__views = []
@@ -25,8 +25,8 @@ class VideoSharingPlatform(object):
         :type video: str
         :rtype: int
         """
-        if self.__avail_ids:
-            i = heapq.heappop(self.__avail_ids)
+        if self.__avails:
+            i = heapq.heappop(self.__avails)
         else:
             i = len(self.__videos)
             self.__videos.append(None)
@@ -43,7 +43,7 @@ class VideoSharingPlatform(object):
         """
         if videoId >= len(self.__videos) or not self.__videos[videoId]:
             return
-        heapq.heappush(self.__avail_ids, videoId)
+        heapq.heappush(self.__avails, videoId)
         self.__videos[videoId] = None
         self.__likes[videoId] = self.__dislikes[videoId] = self.__views[videoId] = 0
         
