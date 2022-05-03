@@ -15,10 +15,10 @@ class Solution(object):
         result = 0
         for i, c in enumerate(S):
             k, j = index[c]
-            result += (i-j) * (j-k)
+            result = (result + (i-j) * (j-k)) % M
             index[c] = [j, i]
         for c in index:
             k, j = index[c]
-            result += (len(S)-j) * (j-k)
-        return result % M
+            result = (result + (len(S)-j) * (j-k)) % M
+        return result
 
