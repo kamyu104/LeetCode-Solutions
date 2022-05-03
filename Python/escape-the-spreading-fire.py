@@ -1,6 +1,9 @@
 # Time:  O(m * n)
 # Space: O(m * n)
 
+import collections
+
+
 # bfs
 class Solution(object):
     def maximumMinutes(self, grid):
@@ -12,12 +15,7 @@ class Solution(object):
         GRASS, FIRE, WALL, PERSON = range(4)
         INF = 10**9
         def bfs(grid):
-            time = {FIRE:{(len(grid)-1, len(grid[0])-1):INF,
-                          (len(grid)-1, len(grid[0])-2):INF,
-                          (len(grid)-2, len(grid[0])-1):INF},
-                    PERSON:{(len(grid)-1, len(grid[0])-1):INF,
-                            (len(grid)-1, len(grid[0])-2):INF,
-                            (len(grid)-2, len(grid[0])-1):INF}}
+            time = collections.defaultdict(int)
             d = 0
             q = [(r, c, FIRE) for r in xrange(len(grid)) for c in xrange(len(grid[0])) if grid[r][c] == FIRE]
             q.append((0, 0, PERSON))
@@ -29,25 +27,25 @@ class Solution(object):
                         if not (0 <= nr < len(grid) and 0 <= nc < len(grid[0]) and
                                 grid[nr][nc] != WALL and
                                 ((t == FIRE and grid[nr][nc] != FIRE) or
-                                 (t == PERSON and (grid[nr][nc] == GRASS or (grid[nr][nc] == FIRE and (nr, nc) == (len(grid)-1, len(grid[0])-1) and d+1 == time[FIRE][nr, nc]))))):
+                                 (t == PERSON and (grid[nr][nc] == GRASS or (grid[nr][nc] == FIRE and (nr, nc) == (len(grid)-1, len(grid[0])-1) and d+1 == time[FIRE, nr, nc]))))):
                             continue
                         if grid[nr][nc] != FIRE:
                             grid[nr][nc] = t
-                        if (nr, nc) in time[t]:
-                            time[t][nr, nc] = d+1
+                        if (nr, nc) in ((len(grid)-1, len(grid[0])-1), (len(grid)-1, len(grid[0])-2), (len(grid)-2, len(grid[0])-1)):
+                            time[t, nr, nc] = d+1
                         new_q.append((nr, nc, t))
                 q = new_q
                 d += 1
             return time
 
         time = bfs(grid)
-        if time[PERSON][len(grid)-1, len(grid[0])-1] == INF:
+        if not time[PERSON, len(grid)-1, len(grid[0])-1]:
             return -1
-        if time[FIRE][len(grid)-1, len(grid[0])-1] == INF:
+        if not time[FIRE, len(grid)-1, len(grid[0])-1]:
             return INF
-        diff = time[FIRE][len(grid)-1, len(grid[0])-1]-time[PERSON][len(grid)-1, len(grid[0])-1]
-        return diff if diff+2 in (time[FIRE][len(grid)-1, len(grid[0])-2]-time[PERSON][len(grid)-1, len(grid[0])-2],
-                                  time[FIRE][len(grid)-2, len(grid[0])-1]-time[PERSON][len(grid)-2, len(grid[0])-1]) else diff-1
+        diff = time[FIRE, len(grid)-1, len(grid[0])-1]-time[PERSON, len(grid)-1, len(grid[0])-1]
+        return diff if diff+2 in (time[FIRE, len(grid)-1, len(grid[0])-2]-time[PERSON, len(grid)-1, len(grid[0])-2],
+                                  time[FIRE, len(grid)-2, len(grid[0])-1]-time[PERSON, len(grid)-2, len(grid[0])-1]) else diff-1
 
 
 # Time:  O(m * n)
