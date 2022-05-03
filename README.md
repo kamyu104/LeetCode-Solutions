@@ -702,7 +702,7 @@
 2240 | [Number of Ways to Buy Pens and Pencils](https://leetcode.com/problems/number-of-ways-to-buy-pens-and-pencils/)|[C++](./C++/number-of-ways-to-buy-pens-and-pencils.cpp) [Python](./Python/number-of-ways-to-buy-pens-and-pencils.py)| _O(sqrt(t))_     | _O(1)_         | Medium         || Math
 2244 | [Minimum Rounds to Complete All Tasks](https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/)|[C++](./C++/minimum-rounds-to-complete-all-tasks.cpp) [Python](./Python/minimum-rounds-to-complete-all-tasks.py)| _O(n)_     | _O(n)_         | Medium         || Math, Freq Table
 2249 | [Count Lattice Points Inside a Circle](https://leetcode.com/problems/count-lattice-points-inside-a-circle/)|[C++](./C++/count-lattice-points-inside-a-circle.cpp) [Python](./Python/count-lattice-points-inside-a-circle.py)| _O(n * r^2)_     | _O(min(n * r^2, max_x * max_y))_         | Medium         || Math, Hash Table
-2262 | [Total Appeal of A String](https://leetcode.com/problems/total-appeal-of-a-string/)|[C++](./C++/total-appeal-of-a-string.cpp) [Python](./Python/total-appeal-of-a-string.py)| _O(n)_     | _O(26)_         | Hard         || Combinatorics
+2262 | [Total Appeal of A String](https://leetcode.com/problems/total-appeal-of-a-string/)|[C++](./C++/total-appeal-of-a-string.cpp) [Python](./Python/total-appeal-of-a-string.py)| _O(n)_     | _O(26)_         | Hard         | variant of [Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) | Combinatorics
 
 <br/>
 <div align="right">
