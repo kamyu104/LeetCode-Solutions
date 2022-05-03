@@ -33,9 +33,9 @@ class Solution(object):
                             continue
                         if grid[nr][nc] != FIRE:
                             grid[nr][nc] = t
-                        new_q.append((nr, nc, t))
                         if (nr, nc) in time[t]:
                             time[t][nr, nc] = d+1
+                        new_q.append((nr, nc, t))
                 q = new_q
                 d += 1
             return time
