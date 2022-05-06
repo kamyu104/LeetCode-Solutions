@@ -40,10 +40,10 @@ class Solution2(object):
         def f(nums):
             dp = collections.defaultdict(int)  # dp[i]: min(cnt(j) for j in vals if j <= i)
             for x in nums:
-                prefix = float("inf")
+                prev = -1
                 for i in vals:
-                    prefix = min(prefix, dp[i]+abs(i-x))
-                    dp[i] = prefix
+                    dp[i] = min(dp[i]+abs(i-x), dp[prev]) if prev != -1 else dp[i]+abs(i-x)
+                    prev = i
             return dp[vals[-1]]
 
         return min(f(nums), f((x for x in reversed(nums))))
