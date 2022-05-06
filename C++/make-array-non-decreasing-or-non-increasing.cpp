@@ -36,7 +36,7 @@ public:
             for (auto it = begin; it != end; ++it) {
                 int prev = -1;
                 for (const auto& i : vals) {
-                    dp[i] = prev != -1 ? min(dp[i] + abs(i - *it), dp[prev]) : dp[i] + abs(i - *it);
+                    dp[i] = (prev != -1) ? min(dp[i] + abs(i - *it), dp[prev]) : dp[i] + abs(i - *it);
                     prev = i;
                 }
             }
