@@ -17,6 +17,7 @@ public:
             }
             return result;
         };
+        
         return min(f(cbegin(nums), cend(nums)), f(crbegin(nums), crend(nums)));
     }    
 };
@@ -42,6 +43,7 @@ public:
             }
             return dp[vals.back()];
         };
+        
         return min(f(cbegin(nums), cend(nums)), f(crbegin(nums), crend(nums)));
     }    
 };
