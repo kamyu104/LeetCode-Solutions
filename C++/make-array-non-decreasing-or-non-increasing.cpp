@@ -17,7 +17,6 @@ public:
             }
             return result;
         };
-      
         return min(f(cbegin(nums), cend(nums)), f(crbegin(nums), crend(nums)));
     }    
 };
@@ -35,15 +34,14 @@ public:
             int result = 0;
             unordered_map<int, int> dp;  // dp[i]: min(cnt(j) for j in vals if j <= i)
             for (auto it = begin; it != end; ++it) {
-                int prefix = numeric_limits<int>::max();
+                int prev = -1;
                 for (const auto& i : vals) {
-                    prefix= min(prefix, dp[i] + abs(i - *it));
-                    dp[i] = prefix;
+                    dp[i] = prev != -1 ? min(dp[i] + abs(i - *it), dp[prev]) : dp[i] + abs(i - *it);
+                    prev = i;
                 }
             }
             return dp[vals.back()];
         };
-      
         return min(f(cbegin(nums), cend(nums)), f(crbegin(nums), crend(nums)));
     }    
 };
