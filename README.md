@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2262%20%2F%202262-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2263%20%2F%202263-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1285,6 +1285,7 @@
 2216 | [Minimum Deletions to Make Array Beautiful](https://leetcode.com/problems/minimum-deletions-to-make-array-beautiful/)  | [C++](./C++/minimum-deletions-to-make-array-beautiful.cpp) [Python](./Python/minimum-deletions-to-make-array-beautiful.py) | _O(n)_ | _O(1)_ | Medium | | Greedy |
 2224 | [Minimum Number of Operations to Convert Time](https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/)  | [C++](./C++/minimum-number-of-operations-to-convert-time.cpp) [Python](./Python/minimum-number-of-operations-to-convert-time.py) | _O(1)_ | _O(1)_ | Easy | | Greedy |
 2259 | [Remove Digit From Number to Maximize Result](https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/)  | [C++](./C++/remove-digit-from-number-to-maximize-result.cpp) [Python](./Python/remove-digit-from-number-to-maximize-result.py) | _O(n)_ | _O(1)_ | Easy | | Greedy |
+2263 | [Make Array Non-decreasing or Non-increasing](https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing/)  | [C++](./C++/make-array-non-decreasing-or-non-increasing.cpp) [Python](./Python/make-array-non-decreasing-or-non-increasing.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | DP, Greedy, Heap |
 
 <br/>
 <div align="right">
