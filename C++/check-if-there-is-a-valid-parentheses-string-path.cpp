@@ -10,7 +10,7 @@ public:
         if ((size(grid) + size(grid[0]) - 1) % 2 == 1) {
             return false;
         }
-        vector<pair<int, int>> dp(size(grid[0]) + 1, pair(MAX_M + MAX_N, -(MAX_M + MAX_N)));
+        vector<pair<int, int>> dp(size(grid[0]) + 1, {MAX_M + MAX_N, -(MAX_M + MAX_N)});
         for (int i = 0; i < size(grid); ++i) {
             dp[0] = !i ? pair(0, 0) : pair(MAX_M + MAX_N, -(MAX_M + MAX_N));
             for (int j = 0; j < size(grid[0]); ++j) {
