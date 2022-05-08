@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2263%20%2F%202263-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2267%20%2F%202267-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -375,6 +375,7 @@
 2232 | [Minimize Result by Adding Parentheses to Expression](https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/) | [C++](./C++/minimize-result-by-adding-parentheses-to-expression.cpp) [Python](./Python/minimize-result-by-adding-parentheses-to-expression.py) | _O(n^2)_   | _O(1)_        | Medium         | | Brute Force
 2243 | [Calculate Digit Sum of a String](https://leetcode.com/problems/calculate-digit-sum-of-a-string/) | [C++](./C++/calculate-digit-sum-of-a-string.cpp) [Python](./Python/calculate-digit-sum-of-a-string.py) | _O(n)_   | _O(n)_        | Easy         | | Simulation
 2255 | [Count Prefixes of a Given String](https://leetcode.com/problems/count-prefixes-of-a-given-string/) | [C++](./C++/count-prefixes-of-a-given-string.cpp) [Python](./Python/count-prefixes-of-a-given-string.py) | _O(n * l)_   | _O(1)_        | Easy         | | String
+2264 | [Largest 3-Same-Digit Number in String](https://leetcode.com/problems/largest-3-same-digit-number-in-string/) | [C++](./C++/largest-3-same-digit-number-in-string.cpp) [Python](./Python/largest-3-same-digit-number-in-string.py) | _O(n)_   | _O(1)_        | Easy         | | String
 
 <br/>
 <div align="right">
@@ -979,6 +980,7 @@
 2065 | [Maximum Path Quality of a Graph](https://leetcode.com/problems/maximum-path-quality-of-a-graph/) | [C++](./C++/maximum-path-quality-of-a-graph.cpp) [Python](./Python/maximum-path-quality-of-a-graph.py) | _O(\|V\| + \|E\| + 4^10)_ | _O(\|V\| + \|E\| )_ | Hard | | Pruning |
 2192 | [All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) | [C++](./C++/all-ancestors-of-a-node-in-a-directed-acyclic-graph.cpp) [Python](./Python/all-ancestors-of-a-node-in-a-directed-acyclic-graph.py) | _O(\|V\| * \|E\|)_ | _O(\|V\| + \|E\|)_ | Medium | | DFS, BFS, Topological Sort |
 2246 | [Longest Path With Different Adjacent Characters](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/) | [C++](./C++/longest-path-with-different-adjacent-characters.cpp) [Python](./Python/longest-path-with-different-adjacent-characters.py) | _O(n)_ | _O(h)_ | Hard | | DFS, BFS, Topological Sort |
+2265 | [Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/) | [C++](./C++/count-nodes-equal-to-average-of-subtree.cpp) [Python](./Python/count-nodes-equal-to-average-of-subtree.py) | _O(n)_ | _O(h)_ | Medium | | DFS, Tree |
 
 <br/>
 <div align="right">
@@ -1142,6 +1144,8 @@
 2218 | [Maximum Value of K Coins From Piles](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/) | [C++](./C++/maximum-value-of-k-coins-from-piles.cpp) [Python](./Python/maximum-value-of-k-coins-from-piles.py) | _O(min(n * k^2, m * k)))_ | _O(k)_ | Hard || DP
 2222 | [Number of Ways to Select Buildings](https://leetcode.com/problems/number-of-ways-to-select-buildings/) | [C++](./C++/number-of-ways-to-select-buildings.cpp) [Python](./Python/number-of-ways-to-select-buildings.py) | _O(n)_ | _O(1)_ | Medium || DP
 2247 | [Maximum Cost of Trip With K Highways](https://leetcode.com/problems/maximum-cost-of-trip-with-k-highways/) | [C++](./C++/maximum-cost-of-trip-with-k-highways.cpp) [Python](./Python/maximum-cost-of-trip-with-k-highways.py) | _O(n^2 * 2^n)_ | _O(n * 2^n)_ | Hard | 🔒 | DP, Bitmasks, BFS
+2266 | [Count Number of Texts](https://leetcode.com/problems/count-number-of-texts/) | [C++](./C++/count-number-of-texts.cpp) [Python](./Python/count-number-of-texts.py) | _O(n)_ | _O(1)_ | Medium | | DP
+2267 | [Check if There Is a Valid Parentheses String Path](https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path/) | [C++](./C++/check-if-there-is-a-valid-parentheses-string-path.cpp) [Python](./Python/check-if-there-is-a-valid-parentheses-string-path.py) | _O(m * n)_ | _O(n)_ | Hard | | DP, Bitsets
 
 <br/>
 <div align="right">
