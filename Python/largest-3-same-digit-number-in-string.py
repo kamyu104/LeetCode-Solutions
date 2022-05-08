@@ -29,4 +29,4 @@ class Solution2(object):
         :type num: str
         :rtype: str
         """
-        return max(num[i] if num[i] == num[i+1] == num[i+2] else "" for i in xrange(len(num)-2))*3
+        return max(num[i] if num[i] == num[i+1] == num[i+2] else '' for i in xrange(len(num)-2))*3
