@@ -8,7 +8,7 @@ class Solution(object):
         :type num: str
         :rtype: str
         """
-        result = ""
+        result = ''
         cnt = 0
         for i, x in enumerate(num):
             cnt += 1
