@@ -18,7 +18,7 @@
 ## Solutions
 - [0001 - 1000](./0001-1000.md)
 
-## Algorithms
+## Topics
 
 * [Bit Manipulation](https://github.com/kamyu104/LeetCode-Solutions#bit-manipulation)
 * [Array](https://github.com/kamyu104/LeetCode-Solutions#array)
