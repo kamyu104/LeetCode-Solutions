@@ -14,11 +14,11 @@ class Solution(object):
         for right in xrange(len(tiles)):
             if right-1 >= 0:
                 gap += (tiles[right][0]-1)-tiles[right-1][1]
-            result = max(result, min(tiles[right][1]-tiles[left][0]+1, carpetLen)-gap)
-            while tiles[right][1]-tiles[left][0]+1 > carpetLen:
+            l = tiles[right][1]-carpetLen+1
+            while tiles[left][1] < l-1:
                 left += 1
                 gap -= (tiles[left][0]-1)-tiles[left-1][1]
-                result = max(result, min(tiles[right][1]-tiles[left][0]+1, carpetLen)-gap)
+            result = max(result, min(tiles[right][1]-tiles[left][0]+1, carpetLen)-gap)
         return result
 
 
