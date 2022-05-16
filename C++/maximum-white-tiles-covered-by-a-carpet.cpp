@@ -35,7 +35,7 @@ public:
                 gap += tiles[right][0] - tiles[right - 1][1] - 1;
             }
             const int l = tiles[right][1] - carpetLen + 1;
-            while (tiles[left][1] < l - 1) {
+            while (!(tiles[left][1] + 1 >= l)) {
                 ++left;
                 gap -= tiles[left][0] - tiles[left - 1][1] - 1;
             }
@@ -82,7 +82,7 @@ public:
         for (int right = 0; right < size(tiles); ++right) {
             const int l = tiles[right][1] - carpetLen + 1;
             int left = distance(cbegin(tiles), upper_bound(cbegin(tiles), cend(tiles), vector<int>(1, l)));
-            if (left - 1 >= 0 && tiles[left - 1][1] >= l - 1) {
+            if (left - 1 >= 0 && tiles[left - 1][1] + 1 >= l) {
                 --left;
             }
             const int extra = max(l - tiles[left][0], 0);
