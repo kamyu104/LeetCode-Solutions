@@ -24,6 +24,9 @@ class Solution(object):
 
 # Time:  O(nlogn)
 # Space: O(n)
+import bisect
+
+
 # prefix sum, binary search
 class Solution2(object):
     def maximumWhiteTiles(self, tiles, carpetLen):
