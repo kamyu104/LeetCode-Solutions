@@ -9,14 +9,14 @@ public:
         int result = 0;
         for (int right = 0, left = 0, gap = 0; right < size(tiles); ++right) {
             if (right - 1 >= 0) {
-                gap += (tiles[right][0] - 1) - tiles[right - 1][1];
+                gap += tiles[right][0] - tiles[right - 1][1] - 1;
+            }
+            const int l = tiles[right][1] - carpetLen + 1;
+            while (tiles[left][1] < l - 1) {
+                ++left;
+                gap -= tiles[left][0] - tiles[left - 1][1] - 1;
             }
             result = max(result, min(tiles[right][1] - tiles[left][0] + 1, carpetLen) - gap);
-            while (tiles[right][1] - tiles[left][0] + 1 > carpetLen) {
-                ++left;
-                gap -= (tiles[left][0] - 1) - tiles[left - 1][1];
-                result = max(result, min(tiles[right][1] - tiles[left][0] + 1, carpetLen) - gap);
-            }
         }
         return result;
     }
@@ -39,8 +39,7 @@ public:
                 ++right;
                 gap += tiles[right][0] - tiles[right - 1][1] - 1;
             }
-            const int extra = max(tiles[right][1] - r, 0);
-            result = max(result, ((tiles[right][1] - tiles[left][0] + 1) - gap) - extra);
+            result = max(result, min(tiles[right][1] - tiles[left][0] + 1, carpetLen) - gap);
         }
         return result;
     }
