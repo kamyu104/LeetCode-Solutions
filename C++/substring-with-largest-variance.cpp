@@ -33,10 +33,9 @@ public:
         int result = 0;
         for (const auto& x : alphabets) {
             for (const auto& y: alphabets) {
-                if (x == y) {
-                    continue;
+                if (x != y) {
+                    result = max(result, modified_kadane(x, y));
                 }
-                result = max(result, modified_kadane(x, y));
             }
         }
         return result;
