@@ -42,7 +42,7 @@ class Solution2(object):
                 right += 1
                 gap += tiles[right][0]-tiles[right-1][1]-1
             extra = max(tiles[right][1]-r, 0)
-            result = max(result, ((tiles[right][1]-tiles[left][0]+1)-extra)-gap)
+            result = max(result, ((tiles[right][1]-tiles[left][0]+1)-gap)-extra)
         return result
 
 
