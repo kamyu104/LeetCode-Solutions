@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2267%20%2F%202267-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2276%20%2F%202276-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -106,6 +106,7 @@
 2151 | [Maximum Good People Based on Statements](https://leetcode.com/problems/maximum-good-people-based-on-statements/) | [C++](./C++/maximum-good-people-based-on-statements.cpp) [Python](./Python/maximum-good-people-based-on-statements.py) | _O(n^2 * 2^n)_ | _O(1)_ | Hard || Bitmasks, Brute Force
 2212 | [Maximum Points in an Archery Competition](https://leetcode.com/problems/maximum-points-in-an-archery-competition/) | [C++](./C++/maximum-points-in-an-archery-competition.cpp) [Python](./Python/maximum-points-in-an-archery-competition.py) | _O(n * 2^n)_ | _O(n)_ | Medium || Bitmasks, Brute Force
 2220 | [Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/) | [C++](./C++/minimum-bit-flips-to-convert-number.cpp) [Python](./Python/minimum-bit-flips-to-convert-number.py) | _O(logn)_ | _O(1)_ | Easy || Bit Manipulation
+2275 | [Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/) | [C++](./C++/largest-combination-with-bitwise-and-greater-than-zero.cpp) [Python](./Python/largest-combination-with-bitwise-and-greater-than-zero.py) | _O(nlogr)_ | _O(logr)_ | Medium || Bit Manipulation, Freq Table
 
 <br/>
 <div align="right">
@@ -258,6 +259,9 @@
 2239 | [Find Closest Number to Zero](https://leetcode.com/problems/find-closest-number-to-zero/) | [C++](./C++/find-closest-number-to-zero.cpp) [Python](./Python/find-closest-number-to-zero.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2245 | [Maximum Trailing Zeros in a Cornered Path](https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/) | [C++](./C++/maximum-trailing-zeros-in-a-cornered-path.cpp) [Python](./Python/maximum-trailing-zeros-in-a-cornered-path.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Prefix Sum
 2256 | [Minimum Average Difference](https://leetcode.com/problems/minimum-average-difference/) | [C++](./C++/minimum-average-difference.cpp) [Python](./Python/minimum-average-difference.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
+2270 | [Number of Ways to Split Array](https://leetcode.com/problems/number-of-ways-to-split-array/) | [C++](./C++/number-of-ways-to-split-array.cpp) [Python](./Python/number-of-ways-to-split-array.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
+2271 | [Maximum White Tiles Covered by a Carpet](https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/) | [C++](./C++/maximum-white-tiles-covered-by-a-carpet.cpp) [Python](./Python/maximum-white-tiles-covered-by-a-carpet.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sliding Window, Prefix Sum, Binary Search
+2274 | [Maximum Consecutive Floors Without Special Floors](https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/) | [C++](./C++/maximum-consecutive-floors-without-special-floors.cpp) [Python](./Python/maximum-consecutive-floors-without-special-floors.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort
 
 <br/>
 <div align="right">
@@ -376,6 +380,9 @@
 2243 | [Calculate Digit Sum of a String](https://leetcode.com/problems/calculate-digit-sum-of-a-string/) | [C++](./C++/calculate-digit-sum-of-a-string.cpp) [Python](./Python/calculate-digit-sum-of-a-string.py) | _O(n)_   | _O(n)_        | Easy         | | Simulation
 2255 | [Count Prefixes of a Given String](https://leetcode.com/problems/count-prefixes-of-a-given-string/) | [C++](./C++/count-prefixes-of-a-given-string.cpp) [Python](./Python/count-prefixes-of-a-given-string.py) | _O(n * l)_   | _O(1)_        | Easy         | | String
 2264 | [Largest 3-Same-Digit Number in String](https://leetcode.com/problems/largest-3-same-digit-number-in-string/) | [C++](./C++/largest-3-same-digit-number-in-string.cpp) [Python](./Python/largest-3-same-digit-number-in-string.py) | _O(n)_   | _O(1)_        | Easy         | | String
+2269 | [Find the K-Beauty of a Number](https://leetcode.com/problems/find-the-k-beauty-of-a-number/) | [C++](./C++/find-the-k-beauty-of-a-number.cpp) [Python](./Python/find-the-k-beauty-of-a-number.py) | _O(logn)_   | _O(logn)_        | Easy         | | Sliding Window
+2272 | [Substring With Largest Variance](https://leetcode.com/problems/substring-with-largest-variance/) | [C++](./C++/substring-with-largest-variance.cpp) [Python](./Python/substring-with-largest-variance.py) | _O(a^2 * n)_   | _O(a)_        | Hard         | | `Kadane's Algorithm`
+2273 | [Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/) | [C++](./C++/find-resultant-array-after-removing-anagrams.cpp) [Python](./Python/find-resultant-array-after-removing-anagrams.py) | _O(n * l)_   | _O(1)_        | Easy         | | Freq Table, Sort
 
 <br/>
 <div align="right">
@@ -1290,6 +1297,7 @@
 2224 | [Minimum Number of Operations to Convert Time](https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/)  | [C++](./C++/minimum-number-of-operations-to-convert-time.cpp) [Python](./Python/minimum-number-of-operations-to-convert-time.py) | _O(1)_ | _O(1)_ | Easy | | Greedy |
 2259 | [Remove Digit From Number to Maximize Result](https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/)  | [C++](./C++/remove-digit-from-number-to-maximize-result.cpp) [Python](./Python/remove-digit-from-number-to-maximize-result.py) | _O(n)_ | _O(1)_ | Easy | | Greedy |
 2263 | [Make Array Non-decreasing or Non-increasing](https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing/)  | [C++](./C++/make-array-non-decreasing-or-non-increasing.cpp) [Python](./Python/make-array-non-decreasing-or-non-increasing.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | DP, Greedy, Heap |
+2268 | [Minimum Number of Keypresses](https://leetcode.com/problems/minimum-number-of-keypresses/)  | [C++](./C++/minimum-number-of-keypresses.cpp) [Python](./Python/minimum-number-of-keypresses.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Greedy, Sort |
 
 <br/>
 <div align="right">
@@ -1427,6 +1435,7 @@
 2227 | [Encrypt and Decrypt Strings](https://leetcode.com/problems/encrypt-and-decrypt-strings/) | [C++](./C++/encrypt-and-decrypt-strings.cpp) [Python](./Python/encrypt-and-decrypt-strings.py) | ctor: _O(m + d)_<br>encrypt: _O(n)_<br>decrypt: _O(n)_ | _O(n)_ | Hard | | Freq Table
 2241 | [Design an ATM Machine](https://leetcode.com/problems/design-an-atm-machine/) | [C++](./C++/design-an-atm-machine.cpp) [Python](./Python/design-an-atm-machine.py) | ctor: _O(1)_<br>deposit: _O(1)_<br>withdraw: _O(1)_ | _O(1)_ | Medium | | Greedy
 2254 | [Design Video Sharing Platform](https://leetcode.com/problems/design-video-sharing-platform/) | [C++](./C++/design-video-sharing-platform.cpp) [Python](./Python/design-video-sharing-platform.py) | ctor: _O(1)_<br>upload: _O(logn + l)_<br>remove: _O(logn)_<br>like: _O(1)_<br>dislike: _O(1)_<br>view: _O(1)_<br>getLikesAndDislikes: _O(1)_<br>getViews: _O(1)_ | _O(n * l)_ | Hard | 🔒 | Heap
+2276 | [Count Integers in Intervals](https://leetcode.com/problems/count-integers-in-intervals/) | [C++](./C++/count-integers-in-intervals.cpp) [Python](./Python/count-integers-in-intervals.py) | ctor: _O(1)_<br>add: _O(logn)_, amortized<br>Count: _O(1)_ | _O(n)_ | Hard | | Sorted List
 
 <br/>
 <div align="right">
