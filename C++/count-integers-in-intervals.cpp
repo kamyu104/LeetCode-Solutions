@@ -11,7 +11,7 @@ public:
     }
     
     void add(int left, int right) {
-        auto it = bst_.upper_bound({left + 1});
+        auto it = bst_.upper_bound({left});
         if (it != begin(bst_) && (*prev(it))[1] + 1 >= left) {
             --it;
             left = (*it)[0];
