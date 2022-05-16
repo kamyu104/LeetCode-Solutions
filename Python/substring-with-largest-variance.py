@@ -23,8 +23,8 @@ class Solution(object):
                 curr += 1 if c == x else -1
                 if curr < 0 and remain[0] and remain[1]:
                     curr = lookup[0] = lookup[1] = 0  # reset states if the remain has both x, y
-                if lookup[0] and lookup[1]:  # update result if x, y both exist
-                    result = max(result, curr)
+                if lookup[0] and lookup[1]:
+                    result = max(result, curr)  # update result if x, y both exist
             return result
 
         alphabets = set(s)
