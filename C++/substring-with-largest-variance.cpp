@@ -8,7 +8,6 @@ public:
         const auto& modified_kadane = [&s](const auto& x, const auto& y) {
             int result = 0;
             vector<int> lookup(2);
-            count(cbegin(s), cend(s), x);
             vector<int> remain = {static_cast<int>(count(cbegin(s), cend(s), x)),
                                   static_cast<int>(count(cbegin(s), cend(s), y))};
             int curr = 0;
