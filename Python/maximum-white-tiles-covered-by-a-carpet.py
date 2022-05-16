@@ -85,14 +85,15 @@ class Solution4(object):
         :rtype: int
         """
         tiles.sort()
-        rights = [r for _, r in tiles]
         prefix = [0]*(len(tiles)+1)
         for i, (l, r) in enumerate(tiles):
             prefix[i+1] = prefix[i]+(r-l+1)
         result = 0
         for right, (_, r) in enumerate(tiles):
             l = r-carpetLen+1
-            left = bisect.bisect_left(rights, l-1)
+            left = bisect.bisect_right(tiles, [l])
+            if left-1 >= 0 and tiles[left-1][1] >= l-1:
+                left -= 1
             extra = max(l-tiles[left][0], 0)
             result = max(result, (prefix[right+1]-prefix[left])-extra)
         return result
