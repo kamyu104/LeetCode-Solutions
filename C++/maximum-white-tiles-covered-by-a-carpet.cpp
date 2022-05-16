@@ -35,8 +35,7 @@ public:
         }
         int result = 0;
         for (int i = 0; i < size(tiles); ++i) {
-            const int l = tiles[i][0];
-            const int r = l + carpetLen - 1;
+            const int r = tiles[i][0] + carpetLen - 1;
             const int j = distance(cbegin(tiles), upper_bound(cbegin(tiles), cend(tiles), vector<int>(1, r + 1)));
             const int extra = max(tiles[j - 1][1] - r, 0);
             result = max(result, (prefix[j] - prefix[i]) - extra);
