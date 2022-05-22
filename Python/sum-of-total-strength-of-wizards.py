@@ -9,17 +9,13 @@ class Solution(object):
         :rtype: int
         """
         MOD = 10**9+7
-        prefix = [0]*(len(strength)+1)
+        prefix, prefix2 = [0]*(len(strength)+1), [0]*(len(strength)+1)
         for i in xrange(len(strength)):
             prefix[i+1] = (prefix[i]+strength[i])%MOD
-        prefix2 = [0]*(len(strength)+1)
-        for i in xrange(len(strength)):
             prefix2[i+1] = (prefix2[i]+strength[i]*(i+1))%MOD
-        suffix = [0]*(len(strength)+1)
+        suffix, suffix2 = [0]*(len(strength)+1), [0]*(len(strength)+1)
         for i in reversed(xrange(len(strength))):
             suffix[i] = (suffix[i+1]+strength[i])%MOD
-        suffix2 = [0]*(len(strength)+1)
-        for i in reversed(xrange(len(strength))):
             suffix2[i] = (suffix2[i+1]+strength[i]*(len(strength)-i))%MOD
         stk, result = [-1], 0
         for i in xrange(len(strength)+1):
