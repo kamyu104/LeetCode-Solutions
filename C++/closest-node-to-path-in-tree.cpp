@@ -289,7 +289,7 @@ private:
     };
 };
 
-// Time:  O(n^2 + q * l)
+// Time:  O(n^2 + q * n)
 // Space: O(n^2)
 // bfs
 class Solution4 {
