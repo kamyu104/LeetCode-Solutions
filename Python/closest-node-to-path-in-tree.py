@@ -231,7 +231,7 @@ class Solution3(object):
         return [max((tree_infos.lca(x, y) for x, y in ((start, end), (start, node), (end, node))), key=lambda x: tree_infos.D[x]) for start, end, node in query]
 
 
-# Time:  O(n^2 + q * l)
+# Time:  O(n^2 + q * n)
 # Space: O(n^2)
 # bfs
 class Solution4(object):
