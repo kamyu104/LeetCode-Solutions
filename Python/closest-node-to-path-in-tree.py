@@ -208,7 +208,7 @@ class TreeInfos3(object):  # Time: O(N), Space: O(N), N is the number of nodes
     def lca(self, a, b):  # Time: O(logh)
         while self.D[a] > self.D[b]:
             a = self.P[a]
-        while self.D[b] > self.D[a]:
+        while self.D[a] < self.D[b]:
             b = self.P[b]
         while a != b:
             a, b = self.P[a], self.P[b]
