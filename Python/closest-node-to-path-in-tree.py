@@ -88,8 +88,7 @@ class Solution(object):
         """
         adj = [[] for _ in xrange(n)]
         for u, v in edges:
-            adj[u].append(v)
-            adj[v].append(u)
+            adj[u].append(v), adj[v].append(u)
         pairs = collections.defaultdict(set)
         for start, end, node in query:
             pairs[start].add(end), pairs[end].add(start)
