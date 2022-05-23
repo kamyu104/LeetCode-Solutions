@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2276%20%2F%202276-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2281%20%2F%202281-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -383,6 +383,7 @@
 2269 | [Find the K-Beauty of a Number](https://leetcode.com/problems/find-the-k-beauty-of-a-number/) | [C++](./C++/find-the-k-beauty-of-a-number.cpp) [Python](./Python/find-the-k-beauty-of-a-number.py) | _O(logn)_   | _O(logn)_        | Easy         | | Sliding Window
 2272 | [Substring With Largest Variance](https://leetcode.com/problems/substring-with-largest-variance/) | [C++](./C++/substring-with-largest-variance.cpp) [Python](./Python/substring-with-largest-variance.py) | _O(a^2 * n)_   | _O(a)_        | Hard         | | `Kadane's Algorithm`
 2273 | [Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/) | [C++](./C++/find-resultant-array-after-removing-anagrams.cpp) [Python](./Python/find-resultant-array-after-removing-anagrams.py) | _O(n * l)_   | _O(1)_        | Easy         | | Freq Table, Sort
+2278 | [Percentage of Letter in String](https://leetcode.com/problems/percentage-of-letter-in-string/) | [C++](./C++/percentage-of-letter-in-string.cpp) [Python](./Python/percentage-of-letter-in-string.py) | _O(n)_   | _O(1)_        | Easy         | | String
 
 <br/>
 <div align="right">
@@ -435,6 +436,7 @@
 1950 | [Maximum of Minimum Values in All Subarrays](https://leetcode.com/problems/maximum-of-minimum-values-in-all-subarrays/) | [C++](./C++/maximum-of-minimum-values-in-all-subarrays.cpp) [Python](./Python/maximum-of-minimum-values-in-all-subarrays.py) | _O(n)_  | _O(n)_         | Medium           | 🔒 | Mono Stack
 2104 | [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges/) | [C++](./C++/sum-of-subarray-ranges.cpp) [Python](./Python/sum-of-subarray-ranges.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack
 2197 | [Replace Non-Coprime Numbers in Array](https://leetcode.com/problems/replace-non-coprime-numbers-in-array/) | [C++](./C++/replace-non-coprime-numbers-in-array.cpp) [Python](./Python/replace-non-coprime-numbers-in-array.py) | _O(nlogm)_ | _O(1)_ | Hard | | Stack, Math
+2281 | [Sum of Total Strength of Wizards](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) | [C++](./C++/sum-of-total-strength-of-wizards.cpp) [Python](./Python/sum-of-total-strength-of-wizards.py) | _O(n)_ | _O(n)_ | Hard | variant of [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Mono Stack, Prefix Sum
 
 <br/>
 <div align="right">
@@ -522,6 +524,7 @@
 2179 | [Count Good Triplets in an Array](https://leetcode.com/problems/count-good-triplets-in-an-array/)| [C++](./C++/count-good-triplets-in-an-array.cpp) [Python](./Python/count-good-triplets-in-an-array.py)| _O(nlogn)_ | _O(n)_ | Hard | variant of [Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions/) | BIT, Fenwick Tree |
 2196 | [Create Binary Tree From Descriptions](https://leetcode.com/problems/create-binary-tree-from-descriptions/)| [C++](./C++/create-binary-tree-from-descriptions.cpp) [Python](./Python/create-binary-tree-from-descriptions.py)| _O(n)_ | _O(n)_ | Medium | | |
 2236 | [Root Equals Sum of Children](https://leetcode.com/problems/root-equals-sum-of-children/)| [C++](./C++/root-equals-sum-of-children.cpp) [Python](./Python/root-equals-sum-of-children.py)| _O(1)_ | _O(1)_ | Easy | | Tree |
+2277 | [Closest Node to Path in Tree](https://leetcode.com/problems/closest-node-to-path-in-tree/)| [C++](./C++/closest-node-to-path-in-tree.cpp) [Python](./Python/closest-node-to-path-in-tree.py)| _O(n + q)_ | _O(n)_ | Hard | 🔒 | Tree, BFS, Binary Lifting, `Tarjan's Offline LCA Algorithm` |
 
 <br/>
 <div align="right">
@@ -711,6 +714,7 @@
 2244 | [Minimum Rounds to Complete All Tasks](https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/)|[C++](./C++/minimum-rounds-to-complete-all-tasks.cpp) [Python](./Python/minimum-rounds-to-complete-all-tasks.py)| _O(n)_     | _O(n)_         | Medium         || Math, Freq Table
 2249 | [Count Lattice Points Inside a Circle](https://leetcode.com/problems/count-lattice-points-inside-a-circle/)|[C++](./C++/count-lattice-points-inside-a-circle.cpp) [Python](./Python/count-lattice-points-inside-a-circle.py)| _O(n * r^2)_     | _O(min(n * r^2, max_x * max_y))_         | Medium         || Math, Hash Table
 2262 | [Total Appeal of A String](https://leetcode.com/problems/total-appeal-of-a-string/)|[C++](./C++/total-appeal-of-a-string.cpp) [Python](./Python/total-appeal-of-a-string.py)| _O(n)_     | _O(26)_         | Hard         | variant of [Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) | Combinatorics
+2280 | [Minimum Lines to Represent a Line Chart](https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/)|[C++](./C++/minimum-lines-to-represent-a-line-chart.cpp) [Python](./Python/minimum-lines-to-represent-a-line-chart.py)| _O(nlogn)_     | _O(1)_         | Medium         | | Sort, Math, GCD
 
 <br/>
 <div align="right">
@@ -1298,6 +1302,7 @@
 2259 | [Remove Digit From Number to Maximize Result](https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/)  | [C++](./C++/remove-digit-from-number-to-maximize-result.cpp) [Python](./Python/remove-digit-from-number-to-maximize-result.py) | _O(n)_ | _O(1)_ | Easy | | Greedy |
 2263 | [Make Array Non-decreasing or Non-increasing](https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing/)  | [C++](./C++/make-array-non-decreasing-or-non-increasing.cpp) [Python](./Python/make-array-non-decreasing-or-non-increasing.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | DP, Greedy, Heap |
 2268 | [Minimum Number of Keypresses](https://leetcode.com/problems/minimum-number-of-keypresses/)  | [C++](./C++/minimum-number-of-keypresses.cpp) [Python](./Python/minimum-number-of-keypresses.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Greedy, Sort |
+2279 | [Maximum Bags With Full Capacity of Rocks](https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/)  | [C++](./C++/maximum-bags-with-full-capacity-of-rocks.cpp) [Python](./Python/maximum-bags-with-full-capacity-of-rocks.py) | _O(nlogn)_ | _O(1)_ | Medium | | Greedy, Sort |
 
 <br/>
 <div align="right">
