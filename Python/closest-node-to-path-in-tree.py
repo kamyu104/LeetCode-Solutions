@@ -97,15 +97,15 @@ class Solution(object):
         tree_infos = TreeInfos(adj, pairs)
         return [max((tree_infos.lca[min(x, y), max(x, y)] for x, y in ((start, end), (start, node), (end, node))), key=lambda x: tree_infos.D[x]) for start, end, node in query]
 
- 
+
 # Time:  O(nlogn + qlogn)
 # Space: O(nlogn)
 from functools import partial
 
 # Template:
-# https://github.com/kamyu104/FacebookHackerCup-2021/blob/main/Round%202/chainblock.py
+# https://github.com/kamyu104/GoogleKickStart-2021/blob/main/Round%20H/dependent_events2.py
 class TreeInfos2(object):  # Time: O(NlogN), Space: O(NlogN), N is the number of nodes
-    def __init__(self, children, cb=lambda *x:None, cb2=lambda *x:None):  # modified
+    def __init__(self, children):  # modified
         def preprocess(curr, parent):
             # depth of the node i
             D[curr] = 1 if parent == -1 else D[parent]+1
@@ -114,10 +114,8 @@ class TreeInfos2(object):  # Time: O(NlogN), Space: O(NlogN), N is the number of
                 P[curr].append(parent)
             i = 0
             while i < len(P[curr]) and i < len(P[P[curr][i]]):
-                cb(P, curr, i)
                 P[curr].append(P[P[curr][i]][i])
                 i += 1
-            cb2(curr, parent)  # added
             # the subtree of the node i is represented by traversal index L[i]..R[i]
             C[0] += 1
             L[curr] = C[0]
