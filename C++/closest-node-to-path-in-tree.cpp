@@ -289,6 +289,59 @@ private:
     };
 };
 
+// Time:  O(n^2 + q * l)
+// Space: O(n^2)
+// bfs
+class Solution4 {
+public:
+    vector<int> closestNode(int n, vector<vector<int>>& edges, vector<vector<int>>& query) {
+        vector<vector<int>> adj(n);
+        for (const auto& e : edges) {
+            adj[e[0]].emplace_back(e[1]), adj[e[1]].emplace_back(e[0]);
+        }
+        const auto& bfs = [&adj](int root) {
+            vector<int> dist(size(adj), size(adj));
+            vector<int> q = {root};
+            dist[root] = 0;
+            for (int d = 0; !empty(q); ++d) {
+                vector<int> new_q;
+                for (const auto& u : q) {
+                    for (const auto& v : adj[u]) {
+                        if (d + 1 >= dist[v]) {
+                            continue;
+                        }
+                        dist[v] = d + 1;
+                        new_q.emplace_back(v);
+                    }
+                }
+                q = move(new_q);
+            }
+            return dist;
+        };
+        vector<vector<int>> dist(n);
+        for (int i = 0; i < n; ++i) {
+            dist[i] = bfs(i);
+        }
+        vector<int> result;
+        for (const auto& q : query) {
+            int x = q[1];
+            for (int u = q[0]; u != q[1];) {
+                if (dist[q[2]][u] < dist[q[2]][x]) {
+                    x = u;
+                }
+                for (const auto& v : adj[u]) {
+                    if (dist[v][q[1]] < dist[u][q[1]]) {
+                        u = v;
+                        break;
+                    }
+                }
+            }
+            result.emplace_back(x);
+        }
+        return result;
+    }
+};
+
 // Time:  O(n^2 + q * n)
 // Space: O(n^2)
 // bfs
