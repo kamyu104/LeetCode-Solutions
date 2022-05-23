@@ -6,7 +6,7 @@ from functools import partial
 
 
 # Template:
-# https://github.com/kamyu104/FacebookHackerCup-2021/blob/main/Round%202/chainblock2.py
+# https://github.com/kamyu104/GoogleKickStart-2021/blob/main/Round%20H/dependent_events3.py
 # Tarjan's Offline LCA Algorithm
 class UnionFind(object):  # Time: O(n * alpha(n)), Space: O(n)
     def __init__(self, n):
