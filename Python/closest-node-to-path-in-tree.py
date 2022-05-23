@@ -98,4 +98,4 @@ class Solution(object):
             pairs[start].add(node), pairs[node].add(start)
             pairs[end].add(node), pairs[node].add(end)
         tree_infos = TreeInfos(adj, pairs)
-        return [max((tree_infos.lca[min(x, y), max(x, y)] for x, y in ((start, end), (start, node), (end, node))), key=lambda x:tree_infos.D[x]) for start, end, node in query]
+        return [max((tree_infos.lca[min(x, y), max(x, y)] for x, y in ((start, end), (start, node), (end, node))), key=lambda x: tree_infos.D[x]) for start, end, node in query]
