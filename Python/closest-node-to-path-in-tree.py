@@ -181,7 +181,7 @@ from functools import partial
 
 # Template:
 # https://github.com/kamyu104/GoogleKickStart-2021/blob/main/Round%20H/dependent_events2.py
-class TreeInfos3(object):  # Time: O(NlogN), Space: O(NlogN), N is the number of nodes
+class TreeInfos3(object):  # Time: O(N), Space: O(N), N is the number of nodes
     def __init__(self, children):  # modified
         def preprocess(curr, parent):
             # depth of the node i
@@ -205,7 +205,7 @@ class TreeInfos3(object):  # Time: O(NlogN), Space: O(NlogN), N is the number of
             stk.pop()()
         self.D, self.P = D, P
 
-    def lca(self, a, b):
+    def lca(self, a, b):  # Time: O(logh)
         while self.D[a] > self.D[b]:
             a = self.P[a]
         while self.D[b] > self.D[a]:
