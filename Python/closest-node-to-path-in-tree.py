@@ -92,8 +92,6 @@ class Solution(object):
             adj[v].append(u)
         pairs = collections.defaultdict(set)
         for start, end, node in query:
-            if start > end:
-                start, end = end, start
             pairs[start].add(end), pairs[end].add(start)
             pairs[start].add(node), pairs[node].add(start)
             pairs[end].add(node), pairs[node].add(end)
