@@ -13,11 +13,8 @@ class Solution(object):
         for i in xrange(len(capacity)):
             capacity[i] -= rocks[i]
         capacity.sort()
-        result = 0
-        for c in capacity:
-            cnt = min(c, additionalRocks)
-            additionalRocks -= cnt
-            c -= cnt
-            if not c:
-                result += 1
-        return result
+        for i, c in enumerate(capacity):
+            if c > additionalRocks:
+                return i
+            additionalRocks -= c
+        return len(capacity)
