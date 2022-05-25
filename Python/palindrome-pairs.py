@@ -37,6 +37,7 @@ class Solution(object):
                         res.append([lookup[prefix], i])
         return res
 
+
 # Time:  O(n * k^2), n is the number of the words, k is the max length of the words.
 # Space: O(n * k^2)
 # Manacher solution.
