@@ -6,20 +6,22 @@ public:
     vector<vector<int>> palindromePairs(vector<string>& words) {
         vector<vector<int>> res;
         unordered_map<string, int> lookup;
+        unordered_set<int> lookup2;
         for (int i = 0; i < words.size(); ++i) {
             lookup[words[i]] = i;
+            lookup2.emplace(size(words[i]));
         }
 
         for (int i = 0; i < words.size(); ++i) {
             for (int j = 0; j <= words[i].length(); ++j) {
-                if (is_palindrome(words[i], j, words[i].length() - 1)) {
+                if (lookup2.count(j) && is_palindrome(words[i], j, words[i].length() - 1)) {
                     string suffix = words[i].substr(0, j); 
                     reverse(suffix.begin(), suffix.end());
                     if (lookup.find(suffix) != lookup.end() && i != lookup[suffix]) {
                         res.push_back({i, lookup[suffix]});
                     }
                 }
-                if (j > 0 && is_palindrome(words[i], 0, j - 1)) {
+                if (j > 0 && lookup2.count(size(words[i]) - j) && is_palindrome(words[i], 0, j - 1)) {
                     string prefix = words[i].substr(j);
                     reverse(prefix.begin(), prefix.end());
                     if (lookup.find(prefix) != lookup.end() && lookup[prefix] != i) {
@@ -45,7 +47,7 @@ private:
 // Time:  O(n * k^2), n is the number of the words, k is the max length of the words.
 // Space: O(n * k^2)
 // Manacher solution.
-class Solution2 {
+class Solution2_TLE {
 public:
     vector<vector<int>> palindromePairs(vector<string>& words) {
         unordered_multimap<string, int> prefix, suffix;
