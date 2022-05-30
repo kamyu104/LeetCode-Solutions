@@ -31,7 +31,7 @@ public:
     }
     
     bool scatter(int k, int maxRow) {
-        if (k > st_.query(0, maxRow)) {
+        if (k > st_.query(i_, maxRow)) {
             return false;
         }
         for (int i = i_; i <= maxRow && k; ++i) {
@@ -150,7 +150,8 @@ public:
     }
     
     bool scatter(int k, int maxRow) {
-        if (k > st_->query(0, maxRow)[1]) {
+        const auto cnt = st_->query(i_, maxRow);
+        if (empty(cnt) || cnt[1] < k) {
             return false;
         }
         for (int i = i_; i <= maxRow && k; ++i) {
@@ -201,14 +202,9 @@ private:
         }
 
         T query(int L, int R) {
-            T none;
-            if (L > R) {
-                return none;
-            }
             L += base;
             R += base;
-            auto left = none;
-            auto right = none;
+            T left, right;
             for (; L <= R; L /= 2, R /= 2) {
                 if (L & 1) {
                     left = query_fn_(left, tree[L]);
