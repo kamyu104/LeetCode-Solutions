@@ -224,8 +224,8 @@ private:
 
         vector<T> tree;
         int base;
-    private:
 
+    private:
         const function<T(const int&)> build_fn_;
         const function<T(const T&)> update_fn_;
         const function<T(const T&, const T&)> query_fn_;
