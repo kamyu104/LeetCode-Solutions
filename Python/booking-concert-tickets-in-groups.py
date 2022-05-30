@@ -27,8 +27,6 @@ class SegmentTree(object):
             self.tree[x] = self.query_fn(self.tree[x*2], self.tree[x*2+1])
 
     def query(self, L, R):
-        if L > R:
-            return None
         L += self.base
         R += self.base
         left = right = None
@@ -83,7 +81,8 @@ class BookMyShow(object):
         :type maxRow: int
         :rtype: bool
         """
-        if k > self.__st.query(0, maxRow)[1]:
+        cnt = self.__st.query(self.__i, maxRow)
+        if not cnt or cnt[1] < k:
             return False
         for i in xrange(self.__i, maxRow+1):
             cnt = self.__st.tree[self.__st.base+i][1]
