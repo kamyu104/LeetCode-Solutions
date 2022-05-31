@@ -57,6 +57,7 @@ public:
             result += decimals;
             return result;
         };
+
         string result;
         for (const auto& x : split(sentence, ' ')) {
             if (x[0] == '$' && size(x) - 1 > 0 && all_of(cbegin(x) + 1, cend(x), ::isdigit)) {
