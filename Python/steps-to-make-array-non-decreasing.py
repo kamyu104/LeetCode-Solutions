@@ -8,7 +8,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        dp = [0]*len(nums)  # dp[i]: number of rounds for a[i] to remove all the covered elements
+        dp = [0]*len(nums)  # dp[i]: number of rounds for nums[i] to remove all the covered elements
         stk = []
         for i in reversed(xrange(len(nums))):
             while stk and nums[stk[-1]] < nums[i]:
@@ -26,7 +26,7 @@ class Solution2(object):
         :type nums: List[int]
         :rtype: int
         """
-        dp = [0]*len(nums)  # dp[i]: number of rounds for a[i] to be removed
+        dp = [0]*len(nums)  # dp[i]: number of rounds for nums[i] to be removed
         stk = []
         for i in xrange(len(nums)):
             curr = 0
