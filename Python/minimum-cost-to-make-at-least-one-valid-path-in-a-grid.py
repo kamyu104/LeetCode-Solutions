@@ -1,9 +1,6 @@
 # Time:  O(m * n)
 # Space: O(m * n)
 
-import collections
-
-
 # A* Search Algorithm without heap
 class Solution(object):
     def minCost(self, grid):
