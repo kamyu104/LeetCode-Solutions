@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2281%20%2F%202281-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2290%20%2F%202290-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -384,6 +384,7 @@
 2272 | [Substring With Largest Variance](https://leetcode.com/problems/substring-with-largest-variance/) | [C++](./C++/substring-with-largest-variance.cpp) [Python](./Python/substring-with-largest-variance.py) | _O(a^2 * n)_   | _O(a)_        | Hard         | | `Kadane's Algorithm`
 2273 | [Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/) | [C++](./C++/find-resultant-array-after-removing-anagrams.cpp) [Python](./Python/find-resultant-array-after-removing-anagrams.py) | _O(n * l)_   | _O(1)_        | Easy         | | Freq Table, Sort
 2278 | [Percentage of Letter in String](https://leetcode.com/problems/percentage-of-letter-in-string/) | [C++](./C++/percentage-of-letter-in-string.cpp) [Python](./Python/percentage-of-letter-in-string.py) | _O(n)_   | _O(1)_        | Easy         | | String
+2288 | [Apply Discount to Prices](https://leetcode.com/problems/apply-discount-to-prices/) | [C++](./C++/apply-discount-to-prices.cpp) [Python](./Python/apply-discount-to-prices.py) | _O(n)_   | _O(1)_        | Medium         | | String
 
 <br/>
 <div align="right">
@@ -437,6 +438,7 @@
 2104 | [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges/) | [C++](./C++/sum-of-subarray-ranges.cpp) [Python](./Python/sum-of-subarray-ranges.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack
 2197 | [Replace Non-Coprime Numbers in Array](https://leetcode.com/problems/replace-non-coprime-numbers-in-array/) | [C++](./C++/replace-non-coprime-numbers-in-array.cpp) [Python](./Python/replace-non-coprime-numbers-in-array.py) | _O(nlogm)_ | _O(1)_ | Hard | | Stack, Math
 2281 | [Sum of Total Strength of Wizards](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) | [C++](./C++/sum-of-total-strength-of-wizards.cpp) [Python](./Python/sum-of-total-strength-of-wizards.py) | _O(n)_ | _O(n)_ | Hard | variant of [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Mono Stack, Prefix Sum
+2282 | [Number of People That Can Be Seen in a Grid](https://leetcode.com/problems/number-of-people-that-can-be-seen-in-a-grid/) | [C++](./C++/number-of-people-that-can-be-seen-in-a-grid.cpp) [Python](./Python/number-of-people-that-can-be-seen-in-a-grid.py) | _O(m * n)_  | _O(m + n)_         | Medium           | 🔒, variant of [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/) | Mono Stack
 
 <br/>
 <div align="right">
@@ -584,6 +586,9 @@
 2229 | [Check if an Array Is Consecutive](https://leetcode.com/problems/check-if-an-array-is-consecutive/) | [C++](./C++/check-if-an-array-is-consecutive.cpp) [Python](./Python/check-if-an-array-is-consecutive.py) | _O(n)_ | _O(n)_ | Easy |🔒|  Hash Table, Sort
 2260 | [Minimum Consecutive Cards to Pick Up](https://leetcode.com/problems/minimum-consecutive-cards-to-pick-up/) | [C++](./C++/minimum-consecutive-cards-to-pick-up.cpp) [Python](./Python/minimum-consecutive-cards-to-pick-up.py) | _O(n)_ | _O(n)_ | Medium ||  Hash Table
 2261 | [K Divisible Elements Subarrays](https://leetcode.com/problems/k-divisible-elements-subarrays/) | [C++](./C++/k-divisible-elements-subarrays.cpp) [Python](./Python/k-divisible-elements-subarrays.py) | _O(n^2)_ | _O(t)_ | Medium | | Trie, `Rabin-Karp Algorithm`
+2183 | [Check if Number Has Equal Digit Count and Digit Value](https://leetcode.com/problems/check-if-number-has-equal-digit-count-and-digit-value/) | [C++](./C++/check-if-number-has-equal-digit-count-and-digit-value.cpp) [Python](./Python/check-if-number-has-equal-digit-count-and-digit-value.py) | _O(n)_ | _O(1)_ | Easy ||  Freq Table
+2184 | [Sender With Largest Word Count](https://leetcode.com/problems/sender-with-largest-word-count/) | [C++](./C++/sender-with-largest-word-count.cpp) [Python](./Python/sender-with-largest-word-count.py) | _O(n * l)_ | _O(n)_ | Medium ||  Freq Table
+2187 | [Rearrange Characters to Make Target String](https://leetcode.com/problems/rearrange-characters-to-make-target-string/) | [C++](./C++/rearrange-characters-to-make-target-string.cpp) [Python](./Python/rearrange-characters-to-make-target-string.py) | _O(n + m)_ | _O(1)_ | Easy ||  Freq Table
 
 <br/>
 <div align="right">
@@ -955,6 +960,7 @@
 2115 | [Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/)| [C++](./C++/find-all-possible-recipes-from-given-supplies.cpp) [Python](./Python/find-all-possible-recipes-from-given-supplies.py)   | _O(\|E\|)_         | _O(\|E\|)_          | Medium         | | Topological Sort |
 2146 | [K Highest Ranked Items Within a Price Range](https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range/)| [C++](./C++/k-highest-ranked-items-within-a-price-range.cpp) [Python](./Python/k-highest-ranked-items-within-a-price-range.py)   | _O(m * n + klogk)_         | _O(m * n)_          | Medium         | | BFS, Quick Select, Sort |
 2258 | [Escape the Spreading Fire](https://leetcode.com/problems/escape-the-spreading-fire/)| [C++](./C++/escape-the-spreading-fire.cpp) [Python](./Python/escape-the-spreading-fire.py)   | _O(m * n)_         | _O(m * n)_          | Hard         | | BFS |
+2190 | [Minimum Obstacle Removal to Reach Corner](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/)| [C++](./C++/minimum-obstacle-removal-to-reach-corner.cpp) [Python](./Python/minimum-obstacle-removal-to-reach-corner.py)| _O(m * n)_ | _O(m * n)_ | Hard | variant of [Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/) | `A* Search Algorithm`, 0-1 BFS, Deque |
 
 <br/>
 <div align="right">
@@ -1157,6 +1163,7 @@
 2247 | [Maximum Cost of Trip With K Highways](https://leetcode.com/problems/maximum-cost-of-trip-with-k-highways/) | [C++](./C++/maximum-cost-of-trip-with-k-highways.cpp) [Python](./Python/maximum-cost-of-trip-with-k-highways.py) | _O(n^2 * 2^n)_ | _O(n * 2^n)_ | Hard | 🔒 | DP, Bitmasks, BFS
 2266 | [Count Number of Texts](https://leetcode.com/problems/count-number-of-texts/) | [C++](./C++/count-number-of-texts.cpp) [Python](./Python/count-number-of-texts.py) | _O(n)_ | _O(1)_ | Medium | | DP
 2267 | [Check if There Is a Valid Parentheses String Path](https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path/) | [C++](./C++/check-if-there-is-a-valid-parentheses-string-path.cpp) [Python](./Python/check-if-there-is-a-valid-parentheses-string-path.py) | _O(m * n)_ | _O(n)_ | Hard | | DP, Bitsets
+2289 | [Steps to Make Array Non-decreasing](https://leetcode.com/problems/steps-to-make-array-non-decreasing/) | [C++](./C++/steps-to-make-array-non-decreasing.cpp) [Python](./Python/steps-to-make-array-non-decreasing.py) | _O(n)_ | _O(n)_ | Hard | | DP, Mono Stack
 
 <br/>
 <div align="right">
@@ -1303,6 +1310,7 @@
 2263 | [Make Array Non-decreasing or Non-increasing](https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing/)  | [C++](./C++/make-array-non-decreasing-or-non-increasing.cpp) [Python](./Python/make-array-non-decreasing-or-non-increasing.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | DP, Greedy, Heap |
 2268 | [Minimum Number of Keypresses](https://leetcode.com/problems/minimum-number-of-keypresses/)  | [C++](./C++/minimum-number-of-keypresses.cpp) [Python](./Python/minimum-number-of-keypresses.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Greedy, Sort |
 2279 | [Maximum Bags With Full Capacity of Rocks](https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/)  | [C++](./C++/maximum-bags-with-full-capacity-of-rocks.cpp) [Python](./Python/maximum-bags-with-full-capacity-of-rocks.py) | _O(nlogn)_ | _O(1)_ | Medium | | Greedy, Sort |
+2285 | [Maximum Total Importance of Roads](https://leetcode.com/problems/maximum-total-importance-of-roads/)  | [C++](./C++/maximum-total-importance-of-roads.cpp) [Python](./Python/maximum-total-importance-of-roads.py) | _O(n)_ | _O(n)_ | Medium | | Greedy, Counting Sort |
 
 <br/>
 <div align="right">
@@ -1441,6 +1449,7 @@
 2241 | [Design an ATM Machine](https://leetcode.com/problems/design-an-atm-machine/) | [C++](./C++/design-an-atm-machine.cpp) [Python](./Python/design-an-atm-machine.py) | ctor: _O(1)_<br>deposit: _O(1)_<br>withdraw: _O(1)_ | _O(1)_ | Medium | | Greedy
 2254 | [Design Video Sharing Platform](https://leetcode.com/problems/design-video-sharing-platform/) | [C++](./C++/design-video-sharing-platform.cpp) [Python](./Python/design-video-sharing-platform.py) | ctor: _O(1)_<br>upload: _O(logn + l)_<br>remove: _O(logn)_<br>like: _O(1)_<br>dislike: _O(1)_<br>view: _O(1)_<br>getLikesAndDislikes: _O(1)_<br>getViews: _O(1)_ | _O(n * l)_ | Hard | 🔒 | Heap
 2276 | [Count Integers in Intervals](https://leetcode.com/problems/count-integers-in-intervals/) | [C++](./C++/count-integers-in-intervals.cpp) [Python](./Python/count-integers-in-intervals.py) | ctor: _O(1)_<br>add: _O(logn)_, amortized<br>Count: _O(1)_ | _O(n)_ | Hard | | Sorted List
+2286 | [Booking Concert Tickets in Groups](https://leetcode.com/problems/booking-concert-tickets-in-groups/) | [C++](./C++/booking-concert-tickets-in-groups.cpp) [Python](./Python/booking-concert-tickets-in-groups.py) | ctor: _O(n)_<br>gather: _O(logn)_<br>scatter: _O(logn)_, amortized | _O(n)_ | Hard | | Segment Tree, Binary Search
 
 <br/>
 <div align="right">
