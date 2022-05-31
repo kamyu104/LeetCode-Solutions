@@ -60,25 +60,24 @@ public:
                                                                 {3, 1, 0}, {4, -1, 0}};
         const pair<int, int> b = {0, 0}, t = {grid.size() - 1, grid[0].size() - 1}; 
         deque<pair<pair<int, int>, int>> dq = {{b, 0}};
-        unordered_map<int, int> lookup = {{b.first * grid[0].size() + b.second, 0}};
+        unordered_set<int> lookup;
         while (!dq.empty()) {
             const auto [b, d] = dq.front(); dq.pop_front();
             if (b == t) {
                 return d;
             }
-            if (lookup[b.first * grid[0].size() + b.second] < d) {
+            if (lookup.count(b.first * grid[0].size() + b.second)) {
                 continue;
             }
+            lookup.emplace(b.first * grid[0].size() + b.second);
             for (const auto& [nd, dr, dc] : directions) {
                 const auto& nb = make_pair(b.first + dr, b.second + dc);
                 const auto& cost = nd != grid[b.first][b.second] ? 1 : 0;
                 if (!(0 <= nb.first && nb.first < grid.size() &&
                       0 <= nb.second && nb.second < grid[0].size() &&
-                      (!lookup.count(nb.first * grid[0].size() + nb.second) ||
-                       lookup[nb.first * grid[0].size() + nb.second] > d + cost))) {
+                      !lookup.count(nb.first * grid[0].size() + nb.second))) {
                     continue;
                 }
-                lookup[nb.first * grid[0].size() + nb.second] = d + cost;
                 if (!cost) {
                     dq.emplace_front(nb, d);
                 } else {
