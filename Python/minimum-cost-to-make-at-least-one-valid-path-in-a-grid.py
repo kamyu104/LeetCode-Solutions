@@ -15,7 +15,7 @@ class Solution(object):
         def a_star(grid, b, t):
             f, dh = 0, 1
             closer, detour = [b], []
-            lookup = set()
+            lookup = [[0]*len(grid[0]) for _ in xrange(len(grid))]
             while closer or detour:
                 if not closer:
                     f += dh
@@ -23,19 +23,19 @@ class Solution(object):
                 b = closer.pop()
                 if b == t:
                     return f
-                if b in lookup:
+                if lookup[b[0]][b[1]]:
                     continue
-                lookup.add(b)
+                lookup[b[0]][b[1]] = True
                 for nd, (dr, dc) in enumerate(directions, 1):
                     nb = (b[0]+dr, b[1]+dc)
-                    if not (0 <= nb[0] < len(grid) and 0 <= nb[1] < len(grid[0]) and nb not in lookup):
+                    if not (0 <= nb[0] < len(grid) and 0 <= nb[1] < len(grid[0]) and not lookup[nb[0]][nb[1]]):
                         continue
                     (closer if nd == grid[b[0]][b[1]] else detour).append(nb)
             return -1
 
         return a_star(grid, (0, 0), (len(grid)-1, len(grid[0])-1))
 
-    
+
 # Time:  O(m * n)
 # Space: O(m * n)
 #  0-1 bfs solution
@@ -48,17 +48,17 @@ class Solution2(object):
         directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
         b, t = (0, 0), (len(grid)-1, len(grid[0])-1)
         dq = collections.deque([(b, 0)])
-        lookup = set()
+        lookup = [[0]*len(grid[0]) for _ in xrange(len(grid))]
         while dq:
             b, d = dq.popleft()
             if b == t:
                 return d
-            if b in lookup:
-                continue
-            lookup.add(b)
+            if lookup[b[0]][b[1]]:
+                    continue
+            lookup[b[0]][b[1]] = True
             for nd, (dr, dc) in enumerate(directions, 1):
                 nb = (b[0]+dr, b[1]+dc)
-                if not (0 <= nb[0] < len(grid) and 0 <= nb[1] < len(grid[0]) and nb not in lookup):
+                if not (0 <= nb[0] < len(grid) and 0 <= nb[1] < len(grid[0]) and not lookup[nb[0]][nb[1]]):
                     continue
                 if nd == grid[b[0]][b[1]]:
                     dq.appendleft((nb, d))
