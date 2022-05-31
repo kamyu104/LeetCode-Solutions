@@ -42,7 +42,7 @@ class SegmentTree(object):
         return self.query_fn(left, right)
 
 
-# design, segment tree
+# design, segment tree, binary search
 class BookMyShow(object):
 
     def __init__(self, n, m):
