@@ -12,7 +12,7 @@ class Solution(object):
         def a_star(grid, b, t):
             f, dh = 0, 1
             closer, detour = [b], []
-            lookup = [[0]*len(grid[0]) for _ in xrange(len(grid))]
+            lookup = [[False]*len(grid[0]) for _ in xrange(len(grid))]
             while closer or detour:
                 if not closer:
                     f += dh
@@ -48,7 +48,7 @@ class Solution2(object):
         directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
         b, t = (0, 0), (len(grid)-1, len(grid[0])-1)
         dq = collections.deque([(b, 0)])
-        lookup = [[0]*len(grid[0]) for _ in xrange(len(grid))]
+        lookup = [[False]*len(grid[0]) for _ in xrange(len(grid))]
         while dq:
             b, d = dq.popleft()
             if b == t:
