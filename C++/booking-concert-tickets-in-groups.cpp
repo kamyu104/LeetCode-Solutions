@@ -3,7 +3,7 @@
 //        scatter: O(logn), amortized
 // Space: O(n)
 
-// design, segment tree, optimized from bookmyshow2
+// design, segment tree, binary search, optimized from bookmyshow2
 class BookMyShow {
 public:
     BookMyShow(int n, int m)
@@ -105,7 +105,7 @@ private:
 //        gather:  O(logn)
 //        scatter: O(logn), amortized
 // Space: O(n)
-// design, segment tree
+// design, segment tree, binary search
 class BookMyShow2 {
 public:
     BookMyShow2(int n, int m)
