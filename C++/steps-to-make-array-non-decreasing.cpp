@@ -5,7 +5,7 @@
 class Solution {
 public:
     int totalSteps(vector<int>& nums) {
-        vector<int> dp(size(nums));  // dp[i]: number of rounds for a[i] to remove all the covered elements
+        vector<int> dp(size(nums));  // dp[i]: number of rounds for nums[i] to remove all the covered elements
          vector<int> stk;
         for (int i = size(nums) - 1; i >= 0; --i) {
             while (!empty(stk) && nums[stk.back()] < nums[i]) {
@@ -23,7 +23,7 @@ public:
 class Solution2 {
 public:
     int totalSteps(vector<int>& nums) {
-        vector<int> dp(size(nums));  // dp[i]: number of rounds for a[i] to be removed
+        vector<int> dp(size(nums));  // dp[i]: number of rounds for nums[i] to be removed
          vector<int> stk;
         for (int i = 0; i < size(nums); ++i) {
             int curr = 0;
