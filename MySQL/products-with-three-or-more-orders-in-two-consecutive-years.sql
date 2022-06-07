@@ -7,7 +7,7 @@ WITH consecutive_cte AS
          LEAD(YEAR(purchase_date), 1) OVER(PARTITION BY product_id
                                            ORDER BY YEAR(purchase_date)) - YEAR(purchase_date) AS year_diff
   FROM orders
-  GROUP BY curr_year, product_id
+  GROUP BY 1, 2
   HAVING COUNT(order_id) >= 3
   ORDER BY NULL
  )
