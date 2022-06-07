@@ -20,6 +20,7 @@ public:
 
 // Time:  O(n)
 // Space: O(1)
+// dp
 class Solution2 {
 public:
     int maximumProfit(vector<int>& present, vector<int>& future, int budget) {
