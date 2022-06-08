@@ -1,5 +1,5 @@
-# Time:  O(n)
-# Space: O(1)
+# Time:  O(n * b)
+# Space: O(b)
 
 import itertools
 
@@ -22,8 +22,8 @@ class Solution(object):
         return dp[-1]
 
 
-# Time:  O(n)
-# Space: O(1)
+# Time:  O(n * b)
+# Space: O(b)
 import itertools
 
 
