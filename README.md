@@ -262,6 +262,7 @@
 2270 | [Number of Ways to Split Array](https://leetcode.com/problems/number-of-ways-to-split-array/) | [C++](./C++/number-of-ways-to-split-array.cpp) [Python](./Python/number-of-ways-to-split-array.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
 2271 | [Maximum White Tiles Covered by a Carpet](https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/) | [C++](./C++/maximum-white-tiles-covered-by-a-carpet.cpp) [Python](./Python/maximum-white-tiles-covered-by-a-carpet.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sliding Window, Prefix Sum, Binary Search
 2274 | [Maximum Consecutive Floors Without Special Floors](https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/) | [C++](./C++/maximum-consecutive-floors-without-special-floors.cpp) [Python](./Python/maximum-consecutive-floors-without-special-floors.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort
+2293 | [Min Max Game](https://leetcode.com/problems/min-max-game/) | [C++](./C++/min-max-game.cpp) [Python](./Python/min-max-game.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 
 <br/>
 <div align="right">
@@ -589,6 +590,7 @@
 2283 | [Check if Number Has Equal Digit Count and Digit Value](https://leetcode.com/problems/check-if-number-has-equal-digit-count-and-digit-value/) | [C++](./C++/check-if-number-has-equal-digit-count-and-digit-value.cpp) [Python](./Python/check-if-number-has-equal-digit-count-and-digit-value.py) | _O(n)_ | _O(1)_ | Easy ||  Freq Table
 2284 | [Sender With Largest Word Count](https://leetcode.com/problems/sender-with-largest-word-count/) | [C++](./C++/sender-with-largest-word-count.cpp) [Python](./Python/sender-with-largest-word-count.py) | _O(n * l)_ | _O(n)_ | Medium ||  Freq Table
 2287 | [Rearrange Characters to Make Target String](https://leetcode.com/problems/rearrange-characters-to-make-target-string/) | [C++](./C++/rearrange-characters-to-make-target-string.cpp) [Python](./Python/rearrange-characters-to-make-target-string.py) | _O(n + m)_ | _O(1)_ | Easy ||  Freq Table
+2295 | [Replace Elements in an Array](https://leetcode.com/problems/replace-elements-in-an-array/) | [C++](./C++/replace-elements-in-an-array.cpp) [Python](./Python/replace-elements-in-an-array.py) | _O(n)_ | _O(n)_ | Medium || Hash Table
 
 <br/>
 <div align="right">
@@ -1164,6 +1166,7 @@
 2266 | [Count Number of Texts](https://leetcode.com/problems/count-number-of-texts/) | [C++](./C++/count-number-of-texts.cpp) [Python](./Python/count-number-of-texts.py) | _O(n)_ | _O(1)_ | Medium | | DP
 2267 | [Check if There Is a Valid Parentheses String Path](https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path/) | [C++](./C++/check-if-there-is-a-valid-parentheses-string-path.cpp) [Python](./Python/check-if-there-is-a-valid-parentheses-string-path.py) | _O(m * n)_ | _O(n)_ | Hard | | DP, Bitsets
 2289 | [Steps to Make Array Non-decreasing](https://leetcode.com/problems/steps-to-make-array-non-decreasing/) | [C++](./C++/steps-to-make-array-non-decreasing.cpp) [Python](./Python/steps-to-make-array-non-decreasing.py) | _O(n)_ | _O(n)_ | Hard | | DP, Mono Stack
+2291 | [Maximum Profit From Trading Stocks](https://leetcode.com/problems/maximum-profit-from-trading-stocks/) | [C++](./C++/maximum-profit-from-trading-stocks.cpp) [Python](./Python/maximum-profit-from-trading-stocks.py) | _O(n * b)_ | _O(b)_ | Medium | 🔒 | DP
 
 <br/>
 <div align="right">
@@ -1311,6 +1314,7 @@
 2268 | [Minimum Number of Keypresses](https://leetcode.com/problems/minimum-number-of-keypresses/)  | [C++](./C++/minimum-number-of-keypresses.cpp) [Python](./Python/minimum-number-of-keypresses.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Greedy, Sort |
 2279 | [Maximum Bags With Full Capacity of Rocks](https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/)  | [C++](./C++/maximum-bags-with-full-capacity-of-rocks.cpp) [Python](./Python/maximum-bags-with-full-capacity-of-rocks.py) | _O(nlogn)_ | _O(1)_ | Medium | | Greedy, Sort |
 2285 | [Maximum Total Importance of Roads](https://leetcode.com/problems/maximum-total-importance-of-roads/)  | [C++](./C++/maximum-total-importance-of-roads.cpp) [Python](./Python/maximum-total-importance-of-roads.py) | _O(n)_ | _O(n)_ | Medium | | Greedy, Counting Sort |
+2294 | [Partition Array Such That Maximum Difference Is K](https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/)  | [C++](./C++/partition-array-such-that-maximum-difference-is-k.cpp) [Python](./Python/partition-array-such-that-maximum-difference-is-k.py) | _O(nlogn)_ | _O(1)_ | Medium | | Greedy |
 
 <br/>
 <div align="right">
@@ -1450,6 +1454,7 @@
 2254 | [Design Video Sharing Platform](https://leetcode.com/problems/design-video-sharing-platform/) | [C++](./C++/design-video-sharing-platform.cpp) [Python](./Python/design-video-sharing-platform.py) | ctor: _O(1)_<br>upload: _O(logn + l)_<br>remove: _O(logn)_<br>like: _O(1)_<br>dislike: _O(1)_<br>view: _O(1)_<br>getLikesAndDislikes: _O(1)_<br>getViews: _O(1)_ | _O(n * l)_ | Hard | 🔒 | Heap
 2276 | [Count Integers in Intervals](https://leetcode.com/problems/count-integers-in-intervals/) | [C++](./C++/count-integers-in-intervals.cpp) [Python](./Python/count-integers-in-intervals.py) | ctor: _O(1)_<br>add: _O(logn)_, amortized<br>Count: _O(1)_ | _O(n)_ | Hard | | Sorted List
 2286 | [Booking Concert Tickets in Groups](https://leetcode.com/problems/booking-concert-tickets-in-groups/) | [C++](./C++/booking-concert-tickets-in-groups.cpp) [Python](./Python/booking-concert-tickets-in-groups.py) | ctor: _O(n)_<br>gather: _O(logn)_<br>scatter: _O(logn)_, amortized | _O(n)_ | Hard | | Segment Tree, Binary Search
+2296 | [Design a Text Editor](https://leetcode.com/problems/design-a-text-editor/) | [C++](./C++/design-a-text-editor.cpp) [Python](./Python/design-a-text-editor.py) | ctor: _O(1)_<br>addText: _O(l)_<br>deleteText: _O(k)_<br>cursorLeft: _O(k)_<br>cursorRight: _O(k)_ | _O(n)_ | Hard | | Stack
 
 <br/>
 <div align="right">
@@ -1635,6 +1640,8 @@
 2238 | [Number of Times a Driver Was a Passenger](https://leetcode.com/problems/number-of-times-a-driver-was-a-passenger/) | [MySQL](./MySQL/number-of-times-a-driver-was-a-passenger.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 2252 | [Dynamic Pivoting of a Table](https://leetcode.com/problems/dynamic-pivoting-of-a-table/) | [MySQL](./MySQL/dynamic-pivoting-of-a-table.sql) | _O(n * m)_ | _O(n * m)_       | Hard           |🔒||
 2253 | [Dynamic Unpivoting of a Table](https://leetcode.com/problems/dynamic-unpivoting-of-a-table/) | [MySQL](./MySQL/dynamic-unpivoting-of-a-table.sql) | _O(n * m)_ | _O(n * m)_       | Hard           |🔒||
+2292 | [Products With Three or More Orders in Two Consecutive Years](https://leetcode.com/problems/products-with-three-or-more-orders-in-two-consecutive-years/) | [MySQL](./MySQL/products-with-three-or-more-orders-in-two-consecutive-years.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
