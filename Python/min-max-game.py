@@ -1,7 +1,7 @@
-# Time:  O(nlogn)
+# Time:  O(n)
 # Space: O(1)
 
-# merge sort, optimized from solution2
+# simulation, optimized from solution2
 class Solution(object):
     def minMaxGame(self, nums):
         """
@@ -17,9 +17,9 @@ class Solution(object):
         return nums[0]
 
 
-# Time:  O(nlogn)
+# Time:  O(n)
 # Space: O(n)
-# merge sort
+# simulation
 class Solution2(object):
     def minMaxGame(self, nums):
         """
