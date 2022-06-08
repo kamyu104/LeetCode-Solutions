@@ -36,8 +36,7 @@ class TextEditor(object):
         :type k: int
         :rtype: str
         """
-        cnt = min(k, len(self.__left))
-        for _ in xrange(cnt):
+        for _ in xrange(min(k, len(self.__left))):
             self.__right.append(self.__left.pop())
         return self.__last_characters()
 
@@ -46,8 +45,7 @@ class TextEditor(object):
         :type k: int
         :rtype: str
         """
-        cnt = min(k, len(self.__right))
-        for _ in xrange(cnt):
+        for _ in xrange(min(k, len(self.__right))):
             self.__left.append(self.__right.pop())
         return self.__last_characters()
 
