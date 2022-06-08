@@ -1,7 +1,7 @@
-// Time:  O(nlogn)
+// Time:  O(n)
 // Space: O(n)
 
-// merge sort, optimized from solution2
+// simulation, optimized from solution2
 class Solution {
 public:
     int minMaxGame(vector<int>& nums) {
@@ -14,9 +14,9 @@ public:
     }
 };
 
-// Time:  O(nlogn)
+// Time:  O(n)
 // Space: O(n)
-// merge sort
+// simulation
 class Solution2 {
 public:
     int minMaxGame(vector<int>& nums) {
