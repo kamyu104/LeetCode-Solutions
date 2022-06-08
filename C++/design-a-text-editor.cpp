@@ -29,7 +29,7 @@ public:
         for (int _ = 0; _ < cnt; ++_) {
             right_.push_back(left_.back()); left_.pop_back();
         }
-        return last_10();
+        return last_characters();
     }
     
     string cursorRight(int k) {
@@ -37,14 +37,15 @@ public:
         for (int _ = 0; _ < cnt; ++_) {
             left_.push_back(right_.back()); right_.pop_back();
         }
-        return last_10();
+        return last_characters();
     }
 
 private:
-    string last_10() {
-        return left_.substr(max(static_cast<int>(size(left_)) - 10, 0), 10);
+    string last_characters() {
+        return left_.substr(max(static_cast<int>(size(left_)) - LAST_COUNT, 0), LAST_COUNT);
     }
 
+    static const int LAST_COUNT = 10;
     string left_;
     string right_;
 };
