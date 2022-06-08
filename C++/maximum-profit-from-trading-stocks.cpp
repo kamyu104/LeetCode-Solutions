@@ -1,5 +1,5 @@
-// Time:  O(n)
-// Space: O(1)
+// Time:  O(n * b)
+// Space: O(b)
 
 // dp, optimized from solution2
 class Solution {
@@ -18,8 +18,8 @@ public:
     }
 };
 
-// Time:  O(n)
-// Space: O(1)
+// Time:  O(n * b)
+// Space: O(b)
 // dp
 class Solution2 {
 public:
