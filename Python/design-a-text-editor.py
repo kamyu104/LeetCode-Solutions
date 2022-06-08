@@ -26,18 +26,14 @@ class TextEditor(object):
         :type k: int
         :rtype: int
         """
-        cnt = min(k, len(self.__left))
-        for _ in xrange(cnt):
-            self.__left.pop()
-        return cnt
+        return self.__move(k, self.__left, None)
 
     def cursorLeft(self, k):
         """
         :type k: int
         :rtype: str
         """
-        for _ in xrange(min(k, len(self.__left))):
-            self.__right.append(self.__left.pop())
+        self.__move(k, self.__left, self.__right)
         return self.__last_characters()
 
     def cursorRight(self, k):
@@ -45,9 +41,16 @@ class TextEditor(object):
         :type k: int
         :rtype: str
         """
-        for _ in xrange(min(k, len(self.__right))):
-            self.__left.append(self.__right.pop())
+        self.__move(k, self.__right, self.__left)
         return self.__last_characters()
+
+    def __move(self, k, src, dst):
+        cnt = min(k, len(src))
+        for _ in xrange(cnt):
+            if dst is not None:
+                dst.append(src[-1])
+            src.pop()
+        return cnt
 
     def __last_characters(self):
         return "".join(self.__left[-self.__LAST_COUNT:])
