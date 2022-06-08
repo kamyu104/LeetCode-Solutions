@@ -9,6 +9,7 @@
 class TextEditor(object):
 
     def __init__(self):
+        self.__LAST_COUNT = 10
         self.__left = []
         self.__right = []
 
@@ -38,7 +39,7 @@ class TextEditor(object):
         cnt = min(k, len(self.__left))
         for _ in xrange(cnt):
             self.__right.append(self.__left.pop())
-        return self.__last_10()
+        return self.__last_characters()
 
     def cursorRight(self, k):
         """
@@ -48,7 +49,7 @@ class TextEditor(object):
         cnt = min(k, len(self.__right))
         for _ in xrange(cnt):
             self.__left.append(self.__right.pop())
-        return self.__last_10()
+        return self.__last_characters()
 
-    def __last_10(self):
-        return "".join(self.__left[-10:])
+    def __last_characters(self):
+        return "".join(self.__left[-self.__LAST_COUNT:])
