@@ -17,30 +17,31 @@ public:
     }
     
     int deleteText(int k) {
-        const int cnt = min(k, static_cast<int>(size(left_)));
-        for (int _ = 0; _ < cnt; ++_) {
-            left_.pop_back();
-        }
-        return cnt;
+        return move(k, &left_, nullptr);
     }
     
     string cursorLeft(int k) {
-        const int cnt = min(k, static_cast<int>(size(left_)));
-        for (int _ = 0; _ < cnt; ++_) {
-            right_.push_back(left_.back()); left_.pop_back();
-        }
+        move(k, &left_, &right_);
         return last_characters();
     }
     
     string cursorRight(int k) {
-        const int cnt = min(k, static_cast<int>(size(right_)));
-        for (int _ = 0; _ < cnt; ++_) {
-            left_.push_back(right_.back()); right_.pop_back();
-        }
+        move(k, &right_, &left_);
         return last_characters();
     }
 
 private:
+    int move(const int k, string *src, string *dst) {
+        const int cnt = min(k, static_cast<int>(size(*src)));
+        for (int _ = 0; _ < cnt; ++_) {
+            if (dst) {
+                dst->push_back(src->back());
+            }
+            src->pop_back();
+        }
+        return cnt;
+    }
+
     string last_characters() {
         return left_.substr(max(static_cast<int>(size(left_)) - LAST_COUNT, 0), LAST_COUNT);
     }
