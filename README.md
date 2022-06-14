@@ -387,7 +387,7 @@
 2278 | [Percentage of Letter in String](https://leetcode.com/problems/percentage-of-letter-in-string/) | [C++](./C++/percentage-of-letter-in-string.cpp) [Python](./Python/percentage-of-letter-in-string.py) | _O(n)_   | _O(1)_        | Easy         | | String
 2288 | [Apply Discount to Prices](https://leetcode.com/problems/apply-discount-to-prices/) | [C++](./C++/apply-discount-to-prices.cpp) [Python](./Python/apply-discount-to-prices.py) | _O(n)_   | _O(1)_        | Medium         | | String
 2299 | [Strong Password Checker II](https://leetcode.com/problems/strong-password-checker-ii/) | [C++](./C++/strong-password-checker-ii.cpp) [Python](./Python/strong-password-checker-ii.py) | _O(n)_   | _O(1)_        | Easy         | | String
-2301 | [Match Substring After Replacement](https://leetcode.com/problems/match-substring-after-replacement/) | [C++](./C++/match-substring-after-replacement.cpp) [Python](./Python/match-substring-after-replacement.py) | _O(n * s)_   | _O(m)_        | Hard         | | Brute Force
+2301 | [Match Substring After Replacement](https://leetcode.com/problems/match-substring-after-replacement/) | [C++](./C++/match-substring-after-replacement.cpp) [Python](./Python/match-substring-after-replacement.py) | _O(n * k)_   | _O(m)_        | Hard         | | Brute Force
 
 <br/>
 <div align="right">
