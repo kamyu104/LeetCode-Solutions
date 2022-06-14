@@ -1,5 +1,5 @@
-# Time:  O(n * s)
-# Space: O(m)
+# Time:  O(n * k), n = len(s), k = len(sub)
+# Space: O(m), m = len(mappings)
 
 import collections
 
@@ -27,8 +27,8 @@ class Solution(object):
         return any(check(i) for i in xrange(len(s)-len(sub)+1))
 
 
-# Time:  O(n * s)
-# Space: O(m)
+# Time:  O(n * k), n = len(s), k = len(sub)
+# Space: O(m), m = len(mappings)
 import collections
 
 
