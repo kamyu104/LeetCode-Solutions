@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2296%20%2F%202296-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2306%20%2F%202306-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -386,6 +386,8 @@
 2273 | [Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/) | [C++](./C++/find-resultant-array-after-removing-anagrams.cpp) [Python](./Python/find-resultant-array-after-removing-anagrams.py) | _O(n * l)_   | _O(1)_        | Easy         | | Freq Table, Sort
 2278 | [Percentage of Letter in String](https://leetcode.com/problems/percentage-of-letter-in-string/) | [C++](./C++/percentage-of-letter-in-string.cpp) [Python](./Python/percentage-of-letter-in-string.py) | _O(n)_   | _O(1)_        | Easy         | | String
 2288 | [Apply Discount to Prices](https://leetcode.com/problems/apply-discount-to-prices/) | [C++](./C++/apply-discount-to-prices.cpp) [Python](./Python/apply-discount-to-prices.py) | _O(n)_   | _O(1)_        | Medium         | | String
+2299 | [Strong Password Checker II](https://leetcode.com/problems/strong-password-checker-ii/) | [C++](./C++/strong-password-checker-ii.cpp) [Python](./Python/strong-password-checker-ii.py) | _O(n)_   | _O(1)_        | Easy         | | String
+2301 | [Match Substring After Replacement](https://leetcode.com/problems/match-substring-after-replacement/) | [C++](./C++/match-substring-after-replacement.cpp) [Python](./Python/match-substring-after-replacement.py) | _O(n * s)_   | _O(m)_        | Hard         | | Brute Force
 
 <br/>
 <div align="right">
@@ -591,6 +593,7 @@
 2284 | [Sender With Largest Word Count](https://leetcode.com/problems/sender-with-largest-word-count/) | [C++](./C++/sender-with-largest-word-count.cpp) [Python](./Python/sender-with-largest-word-count.py) | _O(n * l)_ | _O(n)_ | Medium ||  Freq Table
 2287 | [Rearrange Characters to Make Target String](https://leetcode.com/problems/rearrange-characters-to-make-target-string/) | [C++](./C++/rearrange-characters-to-make-target-string.cpp) [Python](./Python/rearrange-characters-to-make-target-string.py) | _O(n + m)_ | _O(1)_ | Easy ||  Freq Table
 2295 | [Replace Elements in an Array](https://leetcode.com/problems/replace-elements-in-an-array/) | [C++](./C++/replace-elements-in-an-array.cpp) [Python](./Python/replace-elements-in-an-array.py) | _O(n + m)_ | _O(n)_ | Medium || Hash Table
+2306 | [Naming a Company](https://leetcode.com/problems/naming-a-company/) | [C++](./C++/naming-a-company.cpp) [Python](./Python/naming-a-company.py) | _O(26^2 * n * l)_ | _O(n * l)_ | Hard || Hash Table, Math
 
 <br/>
 <div align="right">
@@ -838,6 +841,7 @@
 2161 | [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) | [C++](./C++/partition-array-according-to-given-pivot.cpp) [Python](./Python/partition-array-according-to-given-pivot.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers
 2200 | [Find All K-Distant Indices in an Array](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/) | [C++](./C++/find-all-k-distant-indices-in-an-array.cpp) [Python](./Python/find-all-k-distant-indices-in-an-array.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers
 2234 | [Maximum Total Beauty of the Gardens](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/) | [C++](./C++/maximum-total-beauty-of-the-gardens.cpp) [Python](./Python/maximum-total-beauty-of-the-gardens.py) | _O(nlogn)_ | _O(1)_ | Hard | | Sort, Prefix Sum, Greedy, Binary Search, Two Pointers
+2302 | [Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/) | [C++](./C++/count-subarrays-with-score-less-than-k.cpp) [Python](./Python/count-subarrays-with-score-less-than-k.py) | _O(n)_ | _O(1)_ | Hard | | Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -898,6 +902,7 @@
 2187 | [Minimum Time to Complete Trips](https://leetcode.com/problems/minimum-time-to-complete-trips/) | [C++](./C++/minimum-time-to-complete-trips.cpp) [Python](./Python/minimum-time-to-complete-trips.py) | _O(nlogr)_ | _O(1)_ | Medium | |
 2226 | [Maximum Candies Allocated to K Children](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/) | [C++](./C++/maximum-candies-allocated-to-k-children.cpp) [Python](./Python/maximum-candies-allocated-to-k-children.py) | _O(nlogr)_ | _O(1)_ | Medium | | Binary Search
 2250 | [Count Number of Rectangles Containing Each Point](https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/) | [C++](./C++/count-number-of-rectangles-containing-each-point.cpp) [Python](./Python/count-number-of-rectangles-containing-each-point.py) | _O(nlogn + m * max_y * logn)_ | _O(n)_ | Medium | | Bucket Sort, Binary Search
+2300 | [Successful Pairs of Spells and Potions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/) | [C++](./C++/successful-pairs-of-spells-and-potions.cpp) [Python](./Python/successful-pairs-of-spells-and-potions.py) | _O(mlogm + nlogm)_ | _O(1)_ | Medium | | Binary Search
 
 <br/>
 <div align="right">
@@ -1167,6 +1172,9 @@
 2267 | [Check if There Is a Valid Parentheses String Path](https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path/) | [C++](./C++/check-if-there-is-a-valid-parentheses-string-path.cpp) [Python](./Python/check-if-there-is-a-valid-parentheses-string-path.py) | _O(m * n)_ | _O(n)_ | Hard | | DP, Bitsets
 2289 | [Steps to Make Array Non-decreasing](https://leetcode.com/problems/steps-to-make-array-non-decreasing/) | [C++](./C++/steps-to-make-array-non-decreasing.cpp) [Python](./Python/steps-to-make-array-non-decreasing.py) | _O(n)_ | _O(n)_ | Hard | | DP, Mono Stack
 2291 | [Maximum Profit From Trading Stocks](https://leetcode.com/problems/maximum-profit-from-trading-stocks/) | [C++](./C++/maximum-profit-from-trading-stocks.cpp) [Python](./Python/maximum-profit-from-trading-stocks.py) | _O(n * b)_ | _O(b)_ | Medium | 🔒 | DP
+2297 | [Jump Game IX](https://leetcode.com/problems/jump-game-ix/) | [C++](./C++/jump-game-ix.cpp) [Python](./Python/jump-game-ix.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | DP, Mono Stack
+2304 | [Minimum Path Cost in a Grid](https://leetcode.com/problems/minimum-path-cost-in-a-grid/) | [C++](./C++/minimum-path-cost-in-a-grid.cpp) [Python](./Python/minimum-path-cost-in-a-grid.py) | _O(m * n^2)_ | _O(n)_ | Medium | | DP
+2305 | [Fair Distribution of Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/) | [C++](./C++/fair-distribution-of-cookies.cpp) [Python](./Python/fair-distribution-of-cookies.py) | _O(k * 3^n)_ | _O(2^n)_ | Medium | | DP, Submask Enumeration
 
 <br/>
 <div align="right">
@@ -1398,6 +1406,7 @@
 2061 | [Number of Spaces Cleaning Robot Cleaned](https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/) | [C++](./C++/number-of-spaces-cleaning-robot-cleaned.cpp) [Python](./Python/number-of-spaces-cleaning-robot-cleaned.py) | _O(m * n)_ | _O(1)_ | Medium           |🔒|| 
 2162 | [Minimum Cost to Set Cooking Time](https://leetcode.com/problems/minimum-cost-to-set-cooking-time/) | [C++](./C++/minimum-cost-to-set-cooking-time.cpp) [Python](./Python/minimum-cost-to-set-cooking-time.py) | _O(1)_ | _O(1)_ | Medium           || 
 2257 | [Count Unguarded Cells in the Grid](https://leetcode.com/problems/count-unguarded-cells-in-the-grid/) | [C++](./C++/count-unguarded-cells-in-the-grid.cpp) [Python](./Python/count-unguarded-cells-in-the-grid.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Array, Simulation
+2303 | [Calculate Amount Paid in Taxes](https://leetcode.com/problems/calculate-amount-paid-in-taxes/) | [C++](./C++/calculate-amount-paid-in-taxes.cpp) [Python](./Python/calculate-amount-paid-in-taxes.py) | _O(n)_ | _O(1)_ | Easy | | Simulation
 
 <br/>
 <div align="right">
@@ -1641,6 +1650,7 @@
 2252 | [Dynamic Pivoting of a Table](https://leetcode.com/problems/dynamic-pivoting-of-a-table/) | [MySQL](./MySQL/dynamic-pivoting-of-a-table.sql) | _O(n * m)_ | _O(n * m)_       | Hard           |🔒||
 2253 | [Dynamic Unpivoting of a Table](https://leetcode.com/problems/dynamic-unpivoting-of-a-table/) | [MySQL](./MySQL/dynamic-unpivoting-of-a-table.sql) | _O(n * m)_ | _O(n * m)_       | Hard           |🔒||
 2292 | [Products With Three or More Orders in Two Consecutive Years](https://leetcode.com/problems/products-with-three-or-more-orders-in-two-consecutive-years/) | [MySQL](./MySQL/products-with-three-or-more-orders-in-two-consecutive-years.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2298 | [Tasks Count in the Weekend](https://leetcode.com/problems/tasks-count-in-the-weekend/) | [MySQL](./MySQL/tasks-count-in-the-weekend.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
