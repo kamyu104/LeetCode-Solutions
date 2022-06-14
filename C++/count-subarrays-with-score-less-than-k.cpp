@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// sliding window
+// sliding window, two pointers
 class Solution {
 public:
     long long countSubarrays(vector<int>& nums, long long k) {
