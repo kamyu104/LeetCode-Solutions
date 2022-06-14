@@ -5,16 +5,18 @@
 class Solution {
 public:
     bool matchReplacement(string s, string sub, vector<vector<char>>& mappings) {
-        const auto& transform = [](char c) {
+        const auto& f = [](char c) {
             return ::isdigit(c) ? c - '0' : (::islower(c) ? c - 'a' + 10 : c - 'A' + 36);
         };
         vector<vector<bool>> lookup(62, vector<bool>(62));
         for (const auto& m : mappings) {
-            lookup[transform(m[0])][transform(m[1])] = true;
+            lookup[f(m[0])][f(m[1])] = true;
         }
+        transform(begin(s), end(s), begin(s), f);
+        transform(begin(sub), end(sub), begin(sub), f);
         const auto& check = [&](int i) {
             for (int j = 0; j < size(sub); ++j) {
-                if (sub[j] != s[i + j] && (!lookup[transform(sub[j])][transform(s[i + j])])) {
+                if (sub[j] != s[i + j] && (!lookup[sub[j]][s[i + j]])) {
                     return false;
                 }
             }
