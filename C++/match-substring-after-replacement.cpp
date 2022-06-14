@@ -1,5 +1,5 @@
-// Time:  O(n * s)
-// Space: O(m)
+// Time:  O(n * k), n = len(s), k = len(sub)
+// Space: O(m), m = len(mappings)
 
 // brute force
 class Solution {
@@ -31,8 +31,8 @@ public:
     }
 };
 
-// Time:  O(n * s)
-// Space: O(m)
+// Time:  O(n * k), n = len(s), k = len(sub)
+// Space: O(m), m = len(mappings)
 // brute force
 class Solution2 {
 public:
