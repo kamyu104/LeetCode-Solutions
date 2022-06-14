@@ -1,7 +1,7 @@
 // Time:  O(26^2 * n * l)
 // Space: O(n * l)
 
-// math
+// hash table, math
 class Solution {
 public:
     long long distinctNames(vector<string>& ideas) {
