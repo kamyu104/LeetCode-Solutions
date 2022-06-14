@@ -13,6 +13,5 @@ public:
                any_of(cbegin(password), cend(password), ::isdigit) &&
                any_of(cbegin(password), cend(password), [&](const auto& c) { return SPECIAL.count(c); }) &&
                adjacent_find(cbegin(password), cend(password)) == cend(password);
-              
     }
 };
