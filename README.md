@@ -593,7 +593,7 @@
 2284 | [Sender With Largest Word Count](https://leetcode.com/problems/sender-with-largest-word-count/) | [C++](./C++/sender-with-largest-word-count.cpp) [Python](./Python/sender-with-largest-word-count.py) | _O(n * l)_ | _O(n)_ | Medium ||  Freq Table
 2287 | [Rearrange Characters to Make Target String](https://leetcode.com/problems/rearrange-characters-to-make-target-string/) | [C++](./C++/rearrange-characters-to-make-target-string.cpp) [Python](./Python/rearrange-characters-to-make-target-string.py) | _O(n + m)_ | _O(1)_ | Easy ||  Freq Table
 2295 | [Replace Elements in an Array](https://leetcode.com/problems/replace-elements-in-an-array/) | [C++](./C++/replace-elements-in-an-array.cpp) [Python](./Python/replace-elements-in-an-array.py) | _O(n + m)_ | _O(n)_ | Medium || Hash Table
-2306 | [Naming a Company](https://leetcode.com/problems/naming-a-company/) | [C++](./C++/naming-a-company.cpp) [Python](./Python/naming-a-company.py) | _O(26^2 * n * l)_ | _O(n * l)_ | Hard || Hash Table, Math
+2306 | [Naming a Company](https://leetcode.com/problems/naming-a-company/) | [C++](./C++/naming-a-company.cpp) [Python](./Python/naming-a-company.py) | _O(26 * n * l)_ | _O(n * l)_ | Hard || Hash Table, Math
 
 <br/>
 <div align="right">
