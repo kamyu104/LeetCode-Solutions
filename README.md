@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2306%20%2F%202306-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2308%20%2F%202308-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1375,6 +1375,7 @@
 2203 | [Minimum Weighted Subgraph With the Required Paths](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/)| [C++](./C++/minimum-weighted-subgraph-with-the-required-paths.cpp) [Python](./Python/minimum-weighted-subgraph-with-the-required-paths.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | | `Dijkstra's Algorithm` |
 2204 | [Distance to a Cycle in Undirected Graph](https://leetcode.com/problems/distance-to-a-cycle-in-undirected-graph/) | [C++](./C++/distance-to-a-cycle-in-undirected-graph.cpp) [Python](./Python/distance-to-a-cycle-in-undirected-graph.py) | _O(\|V\| + \|E\|)_ | _O(\|V\| + \|E\|)_ | Hard | 🔒 | Graph, DFS, BFS |
 2242 | [Maximum Score of a Node Sequence](https://leetcode.com/problems/maximum-score-of-a-node-sequence/) | [C++](./C++/maximum-score-of-a-node-sequence.cpp) [Python](./Python/maximum-score-of-a-node-sequence.py) | _O(\|V\| + \|E\|)_ | _O(\|V\|)_ | Hard | | Graph |
+2307 | [Check for Contradictions in Equations](https://leetcode.com/problems/check-for-contradictions-in-equations/) | [C++](./C++/check-for-contradictions-in-equations.cpp)  [Python](./Python/check-for-contradictions-in-equations.py)  | _O(e + q)_ | _O(e)_ | Hard         | 🔒, variant of [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | DFS, Union Find|
 
 <br/>
 <div align="right">
@@ -1651,6 +1652,7 @@
 2253 | [Dynamic Unpivoting of a Table](https://leetcode.com/problems/dynamic-unpivoting-of-a-table/) | [MySQL](./MySQL/dynamic-unpivoting-of-a-table.sql) | _O(n * m)_ | _O(n * m)_       | Hard           |🔒||
 2292 | [Products With Three or More Orders in Two Consecutive Years](https://leetcode.com/problems/products-with-three-or-more-orders-in-two-consecutive-years/) | [MySQL](./MySQL/products-with-three-or-more-orders-in-two-consecutive-years.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2298 | [Tasks Count in the Weekend](https://leetcode.com/problems/tasks-count-in-the-weekend/) | [MySQL](./MySQL/tasks-count-in-the-weekend.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
+2308 | [Arrange Table by Gender](https://leetcode.com/problems/arrange-table-by-gender/) | [MySQL](./MySQL/arrange-table-by-gender.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
