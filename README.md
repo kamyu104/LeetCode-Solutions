@@ -1375,7 +1375,7 @@
 2203 | [Minimum Weighted Subgraph With the Required Paths](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/)| [C++](./C++/minimum-weighted-subgraph-with-the-required-paths.cpp) [Python](./Python/minimum-weighted-subgraph-with-the-required-paths.py)| _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | | `Dijkstra's Algorithm` |
 2204 | [Distance to a Cycle in Undirected Graph](https://leetcode.com/problems/distance-to-a-cycle-in-undirected-graph/) | [C++](./C++/distance-to-a-cycle-in-undirected-graph.cpp) [Python](./Python/distance-to-a-cycle-in-undirected-graph.py) | _O(\|V\| + \|E\|)_ | _O(\|V\| + \|E\|)_ | Hard | 🔒 | Graph, DFS, BFS |
 2242 | [Maximum Score of a Node Sequence](https://leetcode.com/problems/maximum-score-of-a-node-sequence/) | [C++](./C++/maximum-score-of-a-node-sequence.cpp) [Python](./Python/maximum-score-of-a-node-sequence.py) | _O(\|V\| + \|E\|)_ | _O(\|V\|)_ | Hard | | Graph |
-2307 | [Check for Contradictions in Equations](https://leetcode.com/problems/check-for-contradictions-in-equations/) | [C++](./C++/check-for-contradictions-in-equations.cpp)  [Python](./Python/check-for-contradictions-in-equations.py)  | _O(e + q)_ | _O(e)_ | Hard         | 🔒, variant of [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | DFS, Union Find|
+2307 | [Check for Contradictions in Equations](https://leetcode.com/problems/check-for-contradictions-in-equations/) | [C++](./C++/check-for-contradictions-in-equations.cpp)  [Python](./Python/check-for-contradictions-in-equations.py)  | _O(e + q)_ | _O(n)_ | Hard         | 🔒, variant of [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | DFS, Union Find|
 
 <br/>
 <div align="right">
