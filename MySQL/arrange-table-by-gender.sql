@@ -3,7 +3,7 @@
 
 WITH genders_cte AS (
     SELECT *,
-           RANK() OVER(PARTITION BY gender ORDER BY user_id) AS rnk,
+           RANK() OVER(PARTITION BY gender ORDER BY user_id) AS rnk1,
            CASE gender
                 WHEN 'female' THEN 1
                 WHEN 'other'  THEN 2
@@ -15,4 +15,4 @@ WITH genders_cte AS (
 
 SELECT user_id, gender
 FROM genders_cte
-ORDER BY rnk, rnk2;
+ORDER BY rnk1, rnk2;
