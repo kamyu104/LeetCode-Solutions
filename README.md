@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2308%20%2F%202308-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2312%20%2F%202312-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -594,6 +594,7 @@
 2287 | [Rearrange Characters to Make Target String](https://leetcode.com/problems/rearrange-characters-to-make-target-string/) | [C++](./C++/rearrange-characters-to-make-target-string.cpp) [Python](./Python/rearrange-characters-to-make-target-string.py) | _O(n + m)_ | _O(1)_ | Easy ||  Freq Table
 2295 | [Replace Elements in an Array](https://leetcode.com/problems/replace-elements-in-an-array/) | [C++](./C++/replace-elements-in-an-array.cpp) [Python](./Python/replace-elements-in-an-array.py) | _O(n + m)_ | _O(n)_ | Medium || Hash Table
 2306 | [Naming a Company](https://leetcode.com/problems/naming-a-company/) | [C++](./C++/naming-a-company.cpp) [Python](./Python/naming-a-company.py) | _O(26 * n * l)_ | _O(n * l)_ | Hard || Hash Table, Math
+2309 | [Greatest English Letter in Upper and Lower Case](https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/) | [C++](./C++/greatest-english-letter-in-upper-and-lower-case.cpp) [Python](./Python/greatest-english-letter-in-upper-and-lower-case.py) | _O(n)_ | _O(1)_ | Easy || Freq Table, Hash Table
 
 <br/>
 <div align="right">
@@ -725,6 +726,7 @@
 2249 | [Count Lattice Points Inside a Circle](https://leetcode.com/problems/count-lattice-points-inside-a-circle/)|[C++](./C++/count-lattice-points-inside-a-circle.cpp) [Python](./Python/count-lattice-points-inside-a-circle.py)| _O(n * r^2)_     | _O(min(n * r^2, max_x * max_y))_         | Medium         || Math, Hash Table
 2262 | [Total Appeal of A String](https://leetcode.com/problems/total-appeal-of-a-string/)|[C++](./C++/total-appeal-of-a-string.cpp) [Python](./Python/total-appeal-of-a-string.py)| _O(n)_     | _O(26)_         | Hard         | variant of [Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) | Combinatorics
 2280 | [Minimum Lines to Represent a Line Chart](https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/)|[C++](./C++/minimum-lines-to-represent-a-line-chart.cpp) [Python](./Python/minimum-lines-to-represent-a-line-chart.py)| _O(nlogn)_     | _O(1)_         | Medium         | | Sort, Math, GCD
+2310 | [Sum of Numbers With Units Digit K](https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/)|[C++](./C++/sum-of-numbers-with-units-digit-k.cpp) [Python](./Python/sum-of-numbers-with-units-digit-k.py)| _O(1)_     | _O(1)_         | Medium         | | Math
 
 <br/>
 <div align="right">
@@ -1175,6 +1177,7 @@
 2297 | [Jump Game IX](https://leetcode.com/problems/jump-game-ix/) | [C++](./C++/jump-game-ix.cpp) [Python](./Python/jump-game-ix.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | DP, Mono Stack
 2304 | [Minimum Path Cost in a Grid](https://leetcode.com/problems/minimum-path-cost-in-a-grid/) | [C++](./C++/minimum-path-cost-in-a-grid.cpp) [Python](./Python/minimum-path-cost-in-a-grid.py) | _O(m * n^2)_ | _O(n)_ | Medium | | DP
 2305 | [Fair Distribution of Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/) | [C++](./C++/fair-distribution-of-cookies.cpp) [Python](./Python/fair-distribution-of-cookies.py) | _O(k * 3^n)_ | _O(2^n)_ | Medium | | DP, Submask Enumeration
+2312 | [Selling Pieces of Wood](https://leetcode.com/problems/selling-pieces-of-wood/) | [C++](./C++/selling-pieces-of-wood.cpp) [Python](./Python/selling-pieces-of-wood.py) | _O(m * n * (m + n))_ | _O(m + n)_ | Hard | | DP
 
 <br/>
 <div align="right">
@@ -1323,6 +1326,7 @@
 2279 | [Maximum Bags With Full Capacity of Rocks](https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/)  | [C++](./C++/maximum-bags-with-full-capacity-of-rocks.cpp) [Python](./Python/maximum-bags-with-full-capacity-of-rocks.py) | _O(nlogn)_ | _O(1)_ | Medium | | Greedy, Sort |
 2285 | [Maximum Total Importance of Roads](https://leetcode.com/problems/maximum-total-importance-of-roads/)  | [C++](./C++/maximum-total-importance-of-roads.cpp) [Python](./Python/maximum-total-importance-of-roads.py) | _O(n)_ | _O(n)_ | Medium | | Greedy, Counting Sort |
 2294 | [Partition Array Such That Maximum Difference Is K](https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/)  | [C++](./C++/partition-array-such-that-maximum-difference-is-k.cpp) [Python](./Python/partition-array-such-that-maximum-difference-is-k.py) | _O(nlogn)_ | _O(1)_ | Medium | | Greedy |
+2311 | [Longest Binary Subsequence Less Than or Equal to K](https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/)  | [C++](./C++/longest-binary-subsequence-less-than-or-equal-to-k.cpp) [Python](./Python/longest-binary-subsequence-less-than-or-equal-to-k.py) | _O(n)_ | _O(1)_ | Medium | | Greedy |
 
 <br/>
 <div align="right">
