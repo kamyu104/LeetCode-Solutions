@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-# greedy, kadane algorithm
+# greedy, kadane's algorithm
 class Solution(object):
     def maximumsSplicedArray(self, nums1, nums2):
         """
