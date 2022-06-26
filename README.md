@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2312%20%2F%202312-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2322%20%2F%202322-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -107,6 +107,7 @@
 2212 | [Maximum Points in an Archery Competition](https://leetcode.com/problems/maximum-points-in-an-archery-competition/) | [C++](./C++/maximum-points-in-an-archery-competition.cpp) [Python](./Python/maximum-points-in-an-archery-competition.py) | _O(n * 2^n)_ | _O(n)_ | Medium || Bitmasks, Brute Force
 2220 | [Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/) | [C++](./C++/minimum-bit-flips-to-convert-number.cpp) [Python](./Python/minimum-bit-flips-to-convert-number.py) | _O(logn)_ | _O(1)_ | Easy || Bit Manipulation
 2275 | [Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/) | [C++](./C++/largest-combination-with-bitwise-and-greater-than-zero.cpp) [Python](./Python/largest-combination-with-bitwise-and-greater-than-zero.py) | _O(nlogr)_ | _O(logr)_ | Medium || Bit Manipulation, Freq Table
+2317 | [Maximum XOR After Operations](https://leetcode.com/problems/maximum-xor-after-operations/) | [C++](./C++/maximum-xor-after-operations.cpp) [Python](./Python/maximum-xor-after-operations.py) | _O(n)_ | _O(1)_ | Medium || Bit Manipulation, Greedy
 
 <br/>
 <div align="right">
@@ -263,6 +264,7 @@
 2271 | [Maximum White Tiles Covered by a Carpet](https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/) | [C++](./C++/maximum-white-tiles-covered-by-a-carpet.cpp) [Python](./Python/maximum-white-tiles-covered-by-a-carpet.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sliding Window, Prefix Sum, Binary Search
 2274 | [Maximum Consecutive Floors Without Special Floors](https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/) | [C++](./C++/maximum-consecutive-floors-without-special-floors.cpp) [Python](./Python/maximum-consecutive-floors-without-special-floors.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort
 2293 | [Min Max Game](https://leetcode.com/problems/min-max-game/) | [C++](./C++/min-max-game.cpp) [Python](./Python/min-max-game.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
+2319 | [Check if Matrix Is X-Matrix](https://leetcode.com/problems/check-if-matrix-is-x-matrix/) | [C++](./C++/check-if-matrix-is-x-matrix.cpp) [Python](./Python/check-if-matrix-is-x-matrix.py) | _O(n^2)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -388,6 +390,7 @@
 2288 | [Apply Discount to Prices](https://leetcode.com/problems/apply-discount-to-prices/) | [C++](./C++/apply-discount-to-prices.cpp) [Python](./Python/apply-discount-to-prices.py) | _O(n)_   | _O(1)_        | Medium         | | String
 2299 | [Strong Password Checker II](https://leetcode.com/problems/strong-password-checker-ii/) | [C++](./C++/strong-password-checker-ii.cpp) [Python](./Python/strong-password-checker-ii.py) | _O(n)_   | _O(1)_        | Easy         | | String
 2301 | [Match Substring After Replacement](https://leetcode.com/problems/match-substring-after-replacement/) | [C++](./C++/match-substring-after-replacement.cpp) [Python](./Python/match-substring-after-replacement.py) | _O(n * k)_   | _O(m)_        | Hard         | | Brute Force
+2315 | [Count Asterisks](https://leetcode.com/problems/count-asterisks/) | [C++](./C++/count-asterisks.cpp) [Python](./Python/count-asterisks.py) | _O(n)_   | _O(1)_        | Easy         | | String
 
 <br/>
 <div align="right">
@@ -970,6 +973,7 @@
 2146 | [K Highest Ranked Items Within a Price Range](https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range/)| [C++](./C++/k-highest-ranked-items-within-a-price-range.cpp) [Python](./Python/k-highest-ranked-items-within-a-price-range.py)   | _O(m * n + klogk)_         | _O(m * n)_          | Medium         | | BFS, Quick Select, Sort |
 2258 | [Escape the Spreading Fire](https://leetcode.com/problems/escape-the-spreading-fire/)| [C++](./C++/escape-the-spreading-fire.cpp) [Python](./Python/escape-the-spreading-fire.py)   | _O(m * n)_         | _O(m * n)_          | Hard         | | BFS |
 2290 | [Minimum Obstacle Removal to Reach Corner](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/)| [C++](./C++/minimum-obstacle-removal-to-reach-corner.cpp) [Python](./Python/minimum-obstacle-removal-to-reach-corner.py)| _O(m * n)_ | _O(m * n)_ | Hard | variant of [Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/) | `A* Search Algorithm`, 0-1 BFS, Deque |
+2316 | [Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/)| [C++](./C++/count-unreachable-pairs-of-nodes-in-an-undirected-graph.cpp) [Python](./Python/count-unreachable-pairs-of-nodes-in-an-undirected-graph.py)| _O(n)_ | _O(n)_ | Medium | | Flood Fill, BFS, Math |
 
 <br/>
 <div align="right">
@@ -1007,6 +1011,7 @@
 2192 | [All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) | [C++](./C++/all-ancestors-of-a-node-in-a-directed-acyclic-graph.cpp) [Python](./Python/all-ancestors-of-a-node-in-a-directed-acyclic-graph.py) | _O(\|V\| * \|E\|)_ | _O(\|V\| + \|E\|)_ | Medium | | DFS, BFS, Topological Sort |
 2246 | [Longest Path With Different Adjacent Characters](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/) | [C++](./C++/longest-path-with-different-adjacent-characters.cpp) [Python](./Python/longest-path-with-different-adjacent-characters.py) | _O(n)_ | _O(h)_ | Hard | | DFS, BFS, Topological Sort |
 2265 | [Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/) | [C++](./C++/count-nodes-equal-to-average-of-subtree.cpp) [Python](./Python/count-nodes-equal-to-average-of-subtree.py) | _O(n)_ | _O(h)_ | Medium | | DFS, Tree |
+2322 | [Minimum Score After Removals on a Tree](https://leetcode.com/problems/minimum-score-after-removals-on-a-tree/) | [C++](./C++/minimum-score-after-removals-on-a-tree.cpp) [Python](./Python/minimum-score-after-removals-on-a-tree.py) | _O(n^2)_ | _O(n)_ | Hard | | DFS, Tree |
 
 <br/>
 <div align="right">
@@ -1178,6 +1183,9 @@
 2304 | [Minimum Path Cost in a Grid](https://leetcode.com/problems/minimum-path-cost-in-a-grid/) | [C++](./C++/minimum-path-cost-in-a-grid.cpp) [Python](./Python/minimum-path-cost-in-a-grid.py) | _O(m * n^2)_ | _O(n)_ | Medium | | DP
 2305 | [Fair Distribution of Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/) | [C++](./C++/fair-distribution-of-cookies.cpp) [Python](./Python/fair-distribution-of-cookies.py) | _O(k * 3^n)_ | _O(2^n)_ | Medium | | DP, Submask Enumeration
 2312 | [Selling Pieces of Wood](https://leetcode.com/problems/selling-pieces-of-wood/) | [C++](./C++/selling-pieces-of-wood.cpp) [Python](./Python/selling-pieces-of-wood.py) | _O(m * n * (m + n))_ | _O(m + n)_ | Hard | | DP
+2313 | [Minimum Flips in Binary Tree to Get Result](https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/) | [C++](./C++/minimum-flips-in-binary-tree-to-get-result.cpp) [Python](./Python/minimum-flips-in-binary-tree-to-get-result.py) | _O(n)_ | _O(h)_ | Hard | 🔒 | Tree DP
+2318 | [Number of Distinct Roll Sequences](https://leetcode.com/problems/number-of-distinct-roll-sequences/) | [C++](./C++/number-of-distinct-roll-sequences.cpp) [Python](./Python/number-of-distinct-roll-sequences.py) | _O(6^3 * n)_ | _O(6^2)_ | Hard | | DP
+2320 | [Count Number of Ways to Place Houses](https://leetcode.com/problems/count-number-of-ways-to-place-houses/)| [C++](./C++/count-number-of-ways-to-place-houses.cpp) [Python](./Python/count-number-of-ways-to-place-houses.py) | _O(logn)_    | _O(1)_          | Medium           | variant of [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Matrix Exponentiation
 
 <br/>
 <div align="right">
@@ -1327,6 +1335,7 @@
 2285 | [Maximum Total Importance of Roads](https://leetcode.com/problems/maximum-total-importance-of-roads/)  | [C++](./C++/maximum-total-importance-of-roads.cpp) [Python](./Python/maximum-total-importance-of-roads.py) | _O(n)_ | _O(n)_ | Medium | | Greedy, Counting Sort |
 2294 | [Partition Array Such That Maximum Difference Is K](https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/)  | [C++](./C++/partition-array-such-that-maximum-difference-is-k.cpp) [Python](./Python/partition-array-such-that-maximum-difference-is-k.py) | _O(nlogn)_ | _O(1)_ | Medium | | Greedy |
 2311 | [Longest Binary Subsequence Less Than or Equal to K](https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/)  | [C++](./C++/longest-binary-subsequence-less-than-or-equal-to-k.cpp) [Python](./Python/longest-binary-subsequence-less-than-or-equal-to-k.py) | _O(n)_ | _O(1)_ | Medium | | Greedy |
+2321 | [Maximum Score Of Spliced Array](https://leetcode.com/problems/maximum-score-of-spliced-array/) | [C++](./C++/maximum-score-of-spliced-array.cpp) [Python](./Python/maximum-score-of-spliced-array.py) | _O(n)_ | _O(1)_ | Hard | | Greedy, `Kadane's Algorithm`
 
 <br/>
 <div align="right">
@@ -1657,6 +1666,7 @@
 2292 | [Products With Three or More Orders in Two Consecutive Years](https://leetcode.com/problems/products-with-three-or-more-orders-in-two-consecutive-years/) | [MySQL](./MySQL/products-with-three-or-more-orders-in-two-consecutive-years.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2298 | [Tasks Count in the Weekend](https://leetcode.com/problems/tasks-count-in-the-weekend/) | [MySQL](./MySQL/tasks-count-in-the-weekend.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 2308 | [Arrange Table by Gender](https://leetcode.com/problems/arrange-table-by-gender/) | [MySQL](./MySQL/arrange-table-by-gender.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2314 | [The First Day of the Maximum Recorded Degree in Each City](https://leetcode.com/problems/the-first-day-of-the-maximum-recorded-degree-in-each-city/) | [MySQL](./MySQL/the-first-day-of-the-maximum-recorded-degree-in-each-city.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
