@@ -1,8 +1,130 @@
 // Time:  O(n^2)
 // Space: O(n)
 
-// dfs with recursion
+// dfs with stack
 class Solution {
+public:
+    int minimumScore(vector<int>& nums, vector<vector<int>>& edges) {
+        vector<vector<int>> adj(size(nums));
+        for (const auto& e : edges) {
+            adj[e[0]].emplace_back(e[1]);
+            adj[e[1]].emplace_back(e[0]);
+        }
+        vector<int> left(size(nums)), right(size(nums));
+        const auto& iter_dfs = [&]() {
+            int cnt = 0;
+            vector<tuple<int, int, int>> stk;
+            stk.emplace_back(1, 0, -1);
+            while (!empty(stk)) {
+                const auto [step, u, p] = stk.back(); stk.pop_back();
+                if (step == 1) {
+                    left[u] = cnt++;
+                    stk.emplace_back(2, u, p);
+                    for (const auto& v : adj[u]) {
+                        if (v == p) {
+                            continue;
+                        }
+                        stk.emplace_back(1, v, u);
+                    }
+                } else if (step == 2) {
+                    for (const auto& v : adj[u]) {
+                        if (v == p) {
+                            continue;
+                        }
+                        nums[u] ^= nums[v];
+                    }
+                    right[u] = cnt;
+                }
+            }
+        };
+        
+        const auto& is_ancestor = [&](int a, int b) {
+            return left[a] <= left[b] && right[b] <= right[a];
+        };
+
+        iter_dfs();
+        int result = numeric_limits<int>::max();
+        for (int i = 1; i < size(nums); ++i) {
+            for (int j = i + 1; j < size(nums); ++j) {
+                int a, b, c;
+                if (is_ancestor(i, j)) {
+                    a = nums[0] ^ nums[i];
+                    b = nums[i] ^ nums[j];
+                    c = nums[j];
+                } else if (is_ancestor(j, i)) {
+                    a = nums[0] ^ nums[j];
+                    b = nums[j] ^ nums[i];
+                    c = nums[i];
+                } else {
+                    a = nums[0] ^ nums[i] ^ nums[j];
+                    b = nums[i];
+                    c = nums[j];
+                }
+                result = min(result, max({a, b, c}) - min({a, b, c}));
+            }
+        }
+        return result;
+    }
+};
+
+// Time:  O(n^2)
+// Space: O(n)
+// dfs with recursion
+class Solution2 {
+public:
+    int minimumScore(vector<int>& nums, vector<vector<int>>& edges) {
+        vector<vector<int>> adj(size(nums));
+        for (const auto& e : edges) {
+            adj[e[0]].emplace_back(e[1]);
+            adj[e[1]].emplace_back(e[0]);
+        }
+        int cnt = 0;
+        vector<int> left(size(nums)), right(size(nums));
+        function<void(int, int)> dfs = [&](int u, int p) {
+            left[u] = cnt++;
+            for (const auto& v : adj[u]) {
+                if (v == p) {
+                    continue;
+                }
+                dfs(v, u);
+                nums[u] ^= nums[v];
+            }
+            right[u] = cnt;
+        };
+        
+        const auto& is_ancestor = [&](int a, int b) {
+            return left[a] <= left[b] && right[b] <= right[a];
+        };
+
+        dfs(0, -1);
+        int result = numeric_limits<int>::max();
+        for (int i = 1; i < size(nums); ++i) {
+            for (int j = i + 1; j < size(nums); ++j) {
+                int a, b, c;
+                if (is_ancestor(i, j)) {
+                    a = nums[0] ^ nums[i];
+                    b = nums[i] ^ nums[j];
+                    c = nums[j];
+                } else if (is_ancestor(j, i)) {
+                    a = nums[0] ^ nums[j];
+                    b = nums[j] ^ nums[i];
+                    c = nums[i];
+                } else {
+                    a = nums[0] ^ nums[i] ^ nums[j];
+                    b = nums[i];
+                    c = nums[j];
+                }
+                result = min(result, max({a, b, c}) - min({a, b, c}));
+            }
+        }
+        return result;
+    }
+};
+
+// Time:  O(n^2)
+// Space: O(n)
+// dfs with recursion
+class Solution3 {
 public:
     int minimumScore(vector<int>& nums, vector<vector<int>>& edges) {
         vector<vector<int>> adj(size(nums));
@@ -46,7 +168,7 @@ public:
 // Time:  O(n^2)
 // Space: O(n)
 // dfs with stack
-class Solution_TLE {
+class Solution4_TLE {
 public:
     int minimumScore(vector<int>& nums, vector<vector<int>>& edges) {
         vector<vector<int>> adj(size(nums));
