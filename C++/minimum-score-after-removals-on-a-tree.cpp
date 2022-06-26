@@ -48,17 +48,11 @@ public:
             for (int j = i + 1; j < size(nums); ++j) {
                 int a, b, c;
                 if (is_ancestor(i, j)) {
-                    a = nums[0] ^ nums[i];
-                    b = nums[i] ^ nums[j];
-                    c = nums[j];
+                    tie(a, b, c) = tuple(nums[0] ^ nums[i], nums[i] ^ nums[j], nums[j]);
                 } else if (is_ancestor(j, i)) {
-                    a = nums[0] ^ nums[j];
-                    b = nums[j] ^ nums[i];
-                    c = nums[i];
+                    tie(a, b, c) = tuple(nums[0] ^ nums[j], nums[j] ^ nums[i], nums[i]);
                 } else {
-                    a = nums[0] ^ nums[i] ^ nums[j];
-                    b = nums[i];
-                    c = nums[j];
+                    tie(a, b, c) = tuple(nums[0] ^ nums[i] ^ nums[j], nums[i], nums[j]);
                 }
                 result = min(result, max({a, b, c}) - min({a, b, c}));
             }
@@ -102,17 +96,11 @@ public:
             for (int j = i + 1; j < size(nums); ++j) {
                 int a, b, c;
                 if (is_ancestor(i, j)) {
-                    a = nums[0] ^ nums[i];
-                    b = nums[i] ^ nums[j];
-                    c = nums[j];
+                    tie(a, b, c) = tuple(nums[0] ^ nums[i], nums[i] ^ nums[j], nums[j]);
                 } else if (is_ancestor(j, i)) {
-                    a = nums[0] ^ nums[j];
-                    b = nums[j] ^ nums[i];
-                    c = nums[i];
+                    tie(a, b, c) = tuple(nums[0] ^ nums[j], nums[j] ^ nums[i], nums[i]);
                 } else {
-                    a = nums[0] ^ nums[i] ^ nums[j];
-                    b = nums[i];
-                    c = nums[j];
+                    tie(a, b, c) = tuple(nums[0] ^ nums[i] ^ nums[j], nums[i], nums[j]);
                 }
                 result = min(result, max({a, b, c}) - min({a, b, c}));
             }
