@@ -1,5 +1,8 @@
-# Time:  O(n)
+# Time:  O(logn)
 # Space: O(1)
+
+import itertools
+
 
 # matrix exponentiation
 class Solution(object):
@@ -38,6 +41,6 @@ class Solution2(object):
         """
         MOD = 10**9+7
         prev, curr = 0, 1
-        for i in xrange(n+1):
+        for _ in xrange(n+1):
             prev, curr = curr, (prev+curr)%MOD
         return pow(curr, 2, MOD)
