@@ -54,17 +54,17 @@ class Solution2(object):
                 step, args = stk.pop()
                 if step == 1:
                     u, p, ret = args
-                    new_ret = []
-                    stk.append((2, (u, new_ret, ret)))
+                    new_rets = []
+                    stk.append((2, (u, new_rets, ret)))
                     for v in adj[u]:
                         if v == p:
                             continue
-                        new_ret.append([0])
-                        stk.append((1, (v, u, new_ret[-1])))
+                        new_rets.append([0])
+                        stk.append((1, (v, u, new_rets[-1])))
                 elif step == 2:
-                    u, new_ret, ret = args
+                    u, new_rets, ret = args
                     ret[0] = nums[u]
-                    for x in new_ret:
+                    for x in new_rets:
                         ret[0] ^= x[0]
                     result.append(ret[0])
             return result
