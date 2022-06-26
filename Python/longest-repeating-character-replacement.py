@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(1)
+# Space: O(1); O(n) and n = 26
 
 import collections
 
