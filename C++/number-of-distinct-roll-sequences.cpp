@@ -36,12 +36,12 @@ public:
             }
             dp = move(new_dp);
         }
-        int result = 0;
-        for (int i = 0; i < 6; ++i) {
-            for (int j = 0; j < 6; ++j) {
-                result = (result + dp[i][j]) % MOD;
-            }
-        }
-        return result;
+        return accumulate(cbegin(dp), cend(dp), 0,
+                          [&](int total, const auto& x) {
+                              return (total + accumulate(cbegin(x), cend(x), 0,
+                                                         [&](int total, int x) {
+                                                             return (total + x) % MOD;
+                                                         })) % MOD;
+                          });
     }
 };
