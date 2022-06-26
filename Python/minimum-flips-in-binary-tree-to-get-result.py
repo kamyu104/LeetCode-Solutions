@@ -18,10 +18,12 @@ class Solution(object):
         :rtype: int
         """
         INF = float("inf")
-        OP = {2: lambda x, y: x or y,
-              3: lambda x, y: x and y,
-              4: lambda x, y: x^y ,
-              5: lambda x, y: not x if x is not None else not y}
+        OP = {
+            2: lambda x, y: x or y,
+            3: lambda x, y: x and y,
+            4: lambda x, y: x^y ,
+            5: lambda x, y: not x if x is not None else not y
+        }
         
         def iter_dfs(root, result):
             ret = collections.defaultdict(lambda: INF)
@@ -64,10 +66,12 @@ class Solution2(object):
         :rtype: int
         """
         INF = float("inf")
-        OP = {2: lambda x, y: x or y,
-              3: lambda x, y: x and y,
-              4: lambda x, y: x^y ,
-              5: lambda x, y: not x if x is not None else not y}
+        OP = {
+            2: lambda x, y: x or y,
+            3: lambda x, y: x and y,
+            4: lambda x, y: x^y ,
+            5: lambda x, y: not x if x is not None else not y
+        }
         
         def dfs(node):
             if not node:
