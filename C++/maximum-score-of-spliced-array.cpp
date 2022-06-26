@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// greedy, kadane algorithm
+// greedy, kadane's algorithm
 class Solution {
 public:
     int maximumsSplicedArray(vector<int>& nums1, vector<int>& nums2) {
