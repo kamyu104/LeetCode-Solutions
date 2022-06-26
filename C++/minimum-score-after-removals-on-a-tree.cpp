@@ -11,6 +11,10 @@ public:
             adj[e[1]].emplace_back(e[0]);
         }
         vector<int> left(size(nums)), right(size(nums));
+        const auto& is_ancestor = [&](int a, int b) {
+            return left[a] <= left[b] && right[b] <= right[a];
+        };
+
         const auto& iter_dfs = [&]() {
             int cnt = 0;
             vector<tuple<int, int, int>> stk;
@@ -36,10 +40,6 @@ public:
                     right[u] = cnt;
                 }
             }
-        };
-        
-        const auto& is_ancestor = [&](int a, int b) {
-            return left[a] <= left[b] && right[b] <= right[a];
         };
 
         iter_dfs();
@@ -74,6 +74,10 @@ public:
         }
         int cnt = 0;
         vector<int> left(size(nums)), right(size(nums));
+        const auto& is_ancestor = [&](int a, int b) {
+            return left[a] <= left[b] && right[b] <= right[a];
+        };
+
         function<void(int, int)> dfs = [&](int u, int p) {
             left[u] = cnt++;
             for (const auto& v : adj[u]) {
@@ -84,10 +88,6 @@ public:
                 nums[u] ^= nums[v];
             }
             right[u] = cnt;
-        };
-        
-        const auto& is_ancestor = [&](int a, int b) {
-            return left[a] <= left[b] && right[b] <= right[a];
         };
 
         dfs(0, -1);
