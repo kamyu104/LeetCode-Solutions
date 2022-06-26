@@ -6,8 +6,7 @@ class Solution {
 public:
     int minimumFlips(TreeNode* root, bool result) {
         static const int INF = numeric_limits<int>::max();
-        static unordered_map<int, function<int(int, int)>> OP =
-        {
+        static unordered_map<int, function<int(int, int)>> OP = {
             {2, [](int x, int y) { return x | y; }},
             {3, [](int x, int y) { return x & y; }},
             {4, [](int x, int y) { return x ^ y; }},
@@ -58,8 +57,7 @@ class Solution2 {
 public:
     int minimumFlips(TreeNode* root, bool result) {
         static const int INF = numeric_limits<int>::max();
-        static unordered_map<int, function<int(int, int)>> OP =
-        {
+        static unordered_map<int, function<int(int, int)>> OP = {
             {2, [](int x, int y) { return x | y; }},
             {3, [](int x, int y) { return x & y; }},
             {4, [](int x, int y) { return x ^ y; }},
