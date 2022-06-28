@@ -36,7 +36,7 @@ public:
             for (int j = 0; j < size(grid[0]); ++j) {
                 const int d = (grid[i][j] == '(') ? 1 : -1;
                 dp[j + 1] = {min(dp[j + 1].first, dp[j].first) + d, max(dp[j + 1].second, dp[j].second) + d};
-                // bitset pattern is like xxx1010101xxxx (in fact, it is not always true)
+                // bitset pattern is like xxx1010101xxxx (in fact, it is not always true in this problem)
                 if (dp[j + 1].second < 0) {
                     dp[j + 1] = {MAX_M + MAX_N, -(MAX_M + MAX_N)};
                 } else {
