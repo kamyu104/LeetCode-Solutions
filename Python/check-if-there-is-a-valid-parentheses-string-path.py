@@ -38,6 +38,7 @@ class Solution_WA(object):
             for j in xrange(len(grid[0])):
                 d = 1 if grid[i][j] == '(' else -1
                 dp[j+1] = [min(dp[j+1][0], dp[j][0])+d, max(dp[j+1][1], dp[j][1])+d]
+                # bitset pattern is like xxx1010101xxxx (in fact, it is not always true in this problem)
                 if dp[j+1][1] < 0:
                     dp[j+1] = [float("inf"), float("-inf")]
                 else:
