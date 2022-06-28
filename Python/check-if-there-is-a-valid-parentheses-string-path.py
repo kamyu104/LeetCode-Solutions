@@ -1,9 +1,6 @@
 # Time:  O((m * n) * (m + n) / 32)
 # Space: O(n * (m + n) / 32)
 
-import collections
-
-
 # dp with bitsets
 class Solution(object):
     def hasValidPath(self, grid):
