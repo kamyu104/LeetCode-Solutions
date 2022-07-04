@@ -1,6 +1,7 @@
 // Time:  O(n + m)
 // Space: O(1)
 
+// string, hash table
 class Solution {
 public:
     string decodeMessage(string key, string message) {
