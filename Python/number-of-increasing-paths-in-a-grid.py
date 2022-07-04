@@ -10,15 +10,15 @@ class Solution(object):
         """
         MOD = 10**9+7
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
-        degree = [[0]*len(grid[0]) for _ in xrange(len(grid))]
+        in_degree = [[0]*len(grid[0]) for _ in xrange(len(grid))]
         q = []
         for i in xrange(len(grid)):
             for j in xrange(len(grid[0])):
                 for di, dj in directions:
                     ni, nj = i+di, j+dj
                     if 0 <= ni < len(grid) and 0 <= nj < len(grid[0]) and grid[i][j] > grid[ni][nj]:
-                        degree[i][j] += 1
-                if not degree[i][j]:
+                        in_degree[i][j] += 1
+                if not in_degree[i][j]:
                     q.append((i, j))
         dp = [[1]*len(grid[0]) for _ in xrange(len(grid))]
         result = 0
@@ -31,8 +31,8 @@ class Solution(object):
                     if not (0 <= ni < len(grid) and 0 <= nj < len(grid[0]) and grid[i][j] < grid[ni][nj]):
                         continue
                     dp[ni][nj] = (dp[ni][nj]+dp[i][j])%MOD
-                    degree[ni][nj] -= 1
-                    if not degree[ni][nj]:
+                    in_degree[ni][nj] -= 1
+                    if not in_degree[ni][nj]:
                         new_q.append((ni, nj))
             q = new_q
         return result
