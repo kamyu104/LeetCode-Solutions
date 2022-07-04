@@ -8,7 +8,7 @@ public:
         static const int MOD = 1e9 + 7;
         static const vector<pair<int, int>> directions = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
 
-        vector<vector<int>> degree(size(grid), vector<int>(size(grid[0])));
+        vector<vector<int>> in_degree(size(grid), vector<int>(size(grid[0])));
         vector<pair<int, int>> q;
         for (int i = 0; i < size(grid); ++i) {
             for (int j = 0; j < size(grid[0]); ++j) {
@@ -17,10 +17,10 @@ public:
                     if (0 <= ni && ni < size(grid) &&
                         0 <= nj && nj < size(grid[0]) &&
                         grid[i][j] > grid[ni][nj]) {
-                        ++degree[i][j];
+                        ++in_degree[i][j];
                     }
                 }
-                if (!degree[i][j]) {
+                if (!in_degree[i][j]) {
                     q.emplace_back(i, j);
                 }
             }
@@ -39,8 +39,8 @@ public:
                         continue;
                     }
                     dp[ni][nj] = (dp[ni][nj] + dp[i][j]) % MOD;
-                    --degree[ni][nj];
-                    if (!degree[ni][nj]) {
+                    --in_degree[ni][nj];
+                    if (!in_degree[ni][nj]) {
                         new_q.emplace_back(ni, nj);
                     }
                 }
