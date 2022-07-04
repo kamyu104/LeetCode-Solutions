@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2322%20%2F%202322-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2329%20%2F%202329-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -265,6 +265,7 @@
 2274 | [Maximum Consecutive Floors Without Special Floors](https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/) | [C++](./C++/maximum-consecutive-floors-without-special-floors.cpp) [Python](./Python/maximum-consecutive-floors-without-special-floors.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort
 2293 | [Min Max Game](https://leetcode.com/problems/min-max-game/) | [C++](./C++/min-max-game.cpp) [Python](./Python/min-max-game.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 2319 | [Check if Matrix Is X-Matrix](https://leetcode.com/problems/check-if-matrix-is-x-matrix/) | [C++](./C++/check-if-matrix-is-x-matrix.cpp) [Python](./Python/check-if-matrix-is-x-matrix.py) | _O(n^2)_ | _O(1)_ | Easy | | Array
+2326 | [Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/) | [C++](./C++/spiral-matrix-iv.cpp) [Python](./Python/spiral-matrix-iv.py) | _O(m * n)_ | _O(1)_ | Medium | | Linked List, Array
 
 <br/>
 <div align="right">
@@ -598,6 +599,7 @@
 2295 | [Replace Elements in an Array](https://leetcode.com/problems/replace-elements-in-an-array/) | [C++](./C++/replace-elements-in-an-array.cpp) [Python](./Python/replace-elements-in-an-array.py) | _O(n + m)_ | _O(n)_ | Medium || Hash Table
 2306 | [Naming a Company](https://leetcode.com/problems/naming-a-company/) | [C++](./C++/naming-a-company.cpp) [Python](./Python/naming-a-company.py) | _O(26 * n * l)_ | _O(n * l)_ | Hard || Hash Table, Math
 2309 | [Greatest English Letter in Upper and Lower Case](https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/) | [C++](./C++/greatest-english-letter-in-upper-and-lower-case.cpp) [Python](./Python/greatest-english-letter-in-upper-and-lower-case.py) | _O(n)_ | _O(1)_ | Easy || Freq Table, Hash Table
+2325 | [Decode the Message](https://leetcode.com/problems/decode-the-message/) | [C++](./C++/decode-the-message.cpp) [Python](./Python/decode-the-message.py) | _O(n + m)_ | _O(1)_ | Easy || String, Hash Table
 
 <br/>
 <div align="right">
@@ -1186,6 +1188,8 @@
 2313 | [Minimum Flips in Binary Tree to Get Result](https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/) | [C++](./C++/minimum-flips-in-binary-tree-to-get-result.cpp) [Python](./Python/minimum-flips-in-binary-tree-to-get-result.py) | _O(n)_ | _O(h)_ | Hard | 🔒 | Tree DP
 2318 | [Number of Distinct Roll Sequences](https://leetcode.com/problems/number-of-distinct-roll-sequences/) | [C++](./C++/number-of-distinct-roll-sequences.cpp) [Python](./Python/number-of-distinct-roll-sequences.py) | _O(6^3 * n)_ | _O(6^2)_ | Hard | | DP
 2320 | [Count Number of Ways to Place Houses](https://leetcode.com/problems/count-number-of-ways-to-place-houses/)| [C++](./C++/count-number-of-ways-to-place-houses.cpp) [Python](./Python/count-number-of-ways-to-place-houses.py) | _O(logn)_    | _O(1)_          | Medium           | variant of [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Matrix Exponentiation
+2327 | [Number of People Aware of a Secret](https://leetcode.com/problems/number-of-people-aware-of-a-secret/)| [C++](./C++/number-of-people-aware-of-a-secret.cpp) [Python](./Python/number-of-people-aware-of-a-secret.py) | _O(n)_    | _O(f)_          | Medium           | | DP
+2328 | [Number of Increasing Paths in a Grid](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/)| [C++](./C++/number-of-increasing-paths-in-a-grid.cpp) [Python](./Python/number-of-increasing-paths-in-a-grid.py) | _O(m * n)_    | _O(m * n)_          | Hard           | | Memoization
 
 <br/>
 <div align="right">
@@ -1336,6 +1340,7 @@
 2294 | [Partition Array Such That Maximum Difference Is K](https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/)  | [C++](./C++/partition-array-such-that-maximum-difference-is-k.cpp) [Python](./Python/partition-array-such-that-maximum-difference-is-k.py) | _O(nlogn)_ | _O(1)_ | Medium | | Greedy |
 2311 | [Longest Binary Subsequence Less Than or Equal to K](https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/)  | [C++](./C++/longest-binary-subsequence-less-than-or-equal-to-k.cpp) [Python](./Python/longest-binary-subsequence-less-than-or-equal-to-k.py) | _O(n)_ | _O(1)_ | Medium | | Greedy |
 2321 | [Maximum Score Of Spliced Array](https://leetcode.com/problems/maximum-score-of-spliced-array/) | [C++](./C++/maximum-score-of-spliced-array.cpp) [Python](./Python/maximum-score-of-spliced-array.py) | _O(n)_ | _O(1)_ | Hard | | Greedy, `Kadane's Algorithm`
+2323 | [Find Minimum Time to Finish All Jobs II](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/) | [C++](./C++/find-minimum-time-to-finish-all-jobs-ii.cpp) [Python](./Python/find-minimum-time-to-finish-all-jobs-ii.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Greedy
 
 <br/>
 <div align="right">
@@ -1667,6 +1672,8 @@
 2298 | [Tasks Count in the Weekend](https://leetcode.com/problems/tasks-count-in-the-weekend/) | [MySQL](./MySQL/tasks-count-in-the-weekend.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 2308 | [Arrange Table by Gender](https://leetcode.com/problems/arrange-table-by-gender/) | [MySQL](./MySQL/arrange-table-by-gender.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2314 | [The First Day of the Maximum Recorded Degree in Each City](https://leetcode.com/problems/the-first-day-of-the-maximum-recorded-degree-in-each-city/) | [MySQL](./MySQL/the-first-day-of-the-maximum-recorded-degree-in-each-city.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2324 | [Product Sales Analysis IV](https://leetcode.com/problems/product-sales-analysis-iv/) | [MySQL](./MySQL/product-sales-analysis-iv.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2329 | [Product Sales Analysis V](https://leetcode.com/problems/product-sales-analysis-v/) | [MySQL](./MySQL/product-sales-analysis-v.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
