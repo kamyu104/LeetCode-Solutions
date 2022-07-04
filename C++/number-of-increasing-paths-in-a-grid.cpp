@@ -13,7 +13,7 @@ public:
         for (int i = 0; i < size(grid); ++i) {
             for (int j = 0; j < size(grid[0]); ++j) {
                 for (const auto& [di, dj] : directions) {
-                    int ni = i + di, nj = j + dj;
+                    const int ni = i + di, nj = j + dj;
                     if (0 <= ni && ni < size(grid) &&
                         0 <= nj && nj < size(grid[0]) &&
                         grid[i][j] > grid[ni][nj]) {
@@ -32,7 +32,7 @@ public:
             for (const auto& [i, j] : q) {
                 result = (result + dp[i][j]) % MOD;
                 for (const auto& [di, dj] : directions) {
-                    int ni = i + di, nj = j + dj;
+                    const int ni = i + di, nj = j + dj;
                     if (!(0 <= ni && ni < size(grid) &&
                           0 <= nj && nj < size(grid[0]) &&
                           grid[i][j] < grid[ni][nj])) {
