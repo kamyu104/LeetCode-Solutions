@@ -16,7 +16,7 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: List[List[int]]
         """
-        directions = [[0, 1], [1, 0], [0, -1], [-1, 0]]
+        directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
         result = [[-1]*n for _ in xrange(m)]
         i = j = d = 0
         while head:
