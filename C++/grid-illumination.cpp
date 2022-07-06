@@ -3,23 +3,8 @@
 
 class Solution {
 public:
-    template <typename T>
-    struct PairHash {
-        size_t operator()(const pair<T, T>& p) const {
-            size_t seed = 0;
-            seed ^= std::hash<T>{}(p.first)  + 0x9e3779b9 + (seed<<6) + (seed>>2);
-            seed ^= std::hash<T>{}(p.second) + 0x9e3779b9 + (seed<<6) + (seed>>2);
-            return seed;
-        }
-    };
-
-public:
     vector<int> gridIllumination(int N, vector<vector<int>>& lamps, vector<vector<int>>& queries) {
-        static const vector<pair<int, int>> directions = 
-            {{0, -1}, {0, 1}, {-1, 0}, {1, 0},
-             {-1, -1}, {1, -1}, {-1, 1}, {1, 1}};
-
-        unordered_set<pair<int, int>, PairHash<int>> lookup;
+        unordered_set<int64_t> lookup;
         unordered_map<int, int> row;
         unordered_map<int, int> col;
         unordered_map<int, int> diag;
@@ -27,7 +12,9 @@ public:
         for (const auto& lamp : lamps) {
             int r, c;
             tie(r, c) = make_pair(lamp[0], lamp[1]);
-            lookup.emplace(r, c);
+            if (!lookup.emplace(static_cast<int64_t>(r) * N + c).second) {
+                continue;
+            }
             ++row[r];
             ++col[c];
             ++diag[r - c];
@@ -38,24 +25,21 @@ public:
         for (const auto& query : queries) {
             int r, c;
             tie(r, c) = make_pair(query[0], query[1]);
-            if (row[r] || col[c] ||
-                diag[r - c] || anti[r + c]) {
-                result.emplace_back(1);
-            } else {
+            if (!(row[r] || col[c] || diag[r - c] || anti[r + c])) {
                 result.emplace_back(0);
+                continue;
             }
-            for (const auto& d : directions) {
-                int nr, nc;
-                tie(nr, nc) = make_pair(r + d.first, c + d.second);
-                if (!(0 <= nr && nr < N && 0 <= nc && nc < N &&
-                      lookup.count(make_pair(nr, nc)))) {
-                    continue;
+            result.emplace_back(1);
+            for (int nr = max(r - 1, 0); nr <= min(r + 1, N - 1); ++nr) {
+                for (int nc = max(c - 1, 0); nc <= min(c + 1, N - 1); ++nc) {
+                    if (!lookup.erase(static_cast<int64_t>(nr) * N + nc)) {
+                        continue;
+                    }
+                    --row[nr];
+                    --col[nc];
+                    --diag[nr - nc];
+                    --anti[nr + nc];
                 }
-                lookup.erase(make_pair(nr, nc));
-                --row[nr];
-                --col[nc];
-                --diag[nr - nc];
-                --anti[nr + nc];
             }
         }
         return result;
