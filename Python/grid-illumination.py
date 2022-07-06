@@ -33,8 +33,8 @@ class Solution(object):
                 result.append(0)
                 continue
             result.append(1)                
-            for nr in xrange(r-1, (r+1)+1):
-                for nc in xrange(c-1, (c+1)+1):
+            for nr in xrange(max(r-1, 0), min(r+1, N-1)+1):
+                for nc in xrange(max(c-1, 0), min(c+1, N-1)+1):
                     if (nr, nc) not in lookup:
                         continue
                     lookup.remove((nr, nc))
