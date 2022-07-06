@@ -5,10 +5,7 @@ class Solution {
 public:
     vector<int> gridIllumination(int N, vector<vector<int>>& lamps, vector<vector<int>>& queries) {
         unordered_set<int64_t> lookup;
-        unordered_map<int, int> row;
-        unordered_map<int, int> col;
-        unordered_map<int, int> diag;
-        unordered_map<int, int> anti;
+        unordered_map<int, int> row, col, diag, anti;
         for (const auto& lamp : lamps) {
             int r, c;
             tie(r, c) = make_pair(lamp[0], lamp[1]);
