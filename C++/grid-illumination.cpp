@@ -2,51 +2,46 @@
 // Space: O(l)
 
 class Solution {
- public:
-  vector<int> gridIllumination(int N, vector<vector<int>>& lamps,
-                               vector<vector<int>>& queries) {
-    vector<int> ans;
-    unordered_map<int, int> rows;
-    unordered_map<int, int> cols;
-    unordered_map<int, int> diag1;
-    unordered_map<int, int> diag2;
-    unordered_set<pair<int, int>, pairHash> lampsSet;
-
-    for (vector<int>& lamp : lamps) {
-      int i = lamp[0];
-      int j = lamp[1];
-      if (lampsSet.insert({i, j}).second) {
-        ++rows[i];
-        ++cols[j];
-        ++diag1[i + j];
-        ++diag2[i - j];
-      }
-    }
-
-    for (const auto& q : queries) {
-      int i = q[0];
-      int j = q[1];
-      if (rows[i] || cols[j] || diag1[i + j] || diag2[i - j]) {
-        ans.push_back(1);
-        for (int y = max(0, i - 1); y < min(N, i + 2); ++y)
-          for (int x = max(0, j - 1); x < min(N, j + 2); ++x)
-            if (lampsSet.erase({y, x})) {
-              --rows[y];
-              --cols[x];
-              --diag1[y + x];
-              --diag2[y - x];
+public:
+    vector<int> gridIllumination(int N, vector<vector<int>>& lamps, vector<vector<int>>& queries) {
+        unordered_set<int64_t> lookup;
+        unordered_map<int, int> row;
+        unordered_map<int, int> col;
+        unordered_map<int, int> diag;
+        unordered_map<int, int> anti;
+        for (const auto& lamp : lamps) {
+            int r, c;
+            tie(r, c) = make_pair(lamp[0], lamp[1]);
+            if (!lookup.emplace(static_cast<int64_t>(r) * N + c).second) {
+                continue;
             }
-      } else
-        ans.push_back(0);
+            ++row[r];
+            ++col[c];
+            ++diag[r - c];
+            ++anti[r + c];
+        }
+        
+        vector<int> result;
+        for (const auto& query : queries) {
+            int r, c;
+            tie(r, c) = make_pair(query[0], query[1]);
+            if (!(row[r] || col[c] || diag[r - c] || anti[r + c])) {
+                result.emplace_back(0);
+                continue;
+            }
+            result.emplace_back(1);
+            for (int nr = max(r - 1, 0); nr <= min(r + 1, N - 1); ++nr) {
+                for (int nc = max(c - 1, 0); nc <= min(c + 1, N - 1); ++nc) {
+                    if (!lookup.erase(static_cast<int64_t>(nr) * N + nc)) {
+                        continue;
+                    }
+                    --row[nr];
+                    --col[nc];
+                    --diag[nr - nc];
+                    --anti[nr + nc];
+                }
+            }
+        }
+        return result;
     }
-
-    return ans;
-  }
-
- private:
-  struct pairHash {
-    size_t operator()(const pair<int, int>& p) const {
-      return p.first ^ p.second;
-    }
-  };
 };

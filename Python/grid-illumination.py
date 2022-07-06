@@ -12,9 +12,6 @@ class Solution(object):
         :type queries: List[List[int]]
         :rtype: List[int]
         """
-        directions = [(0, -1), (0, 1), (-1, 0), (1, 0),
-                      (-1, -1), (1, -1), (-1, 1), (1, 1)]
-
         lookup = set()
         row = collections.defaultdict(int)
         col = collections.defaultdict(int)
@@ -22,6 +19,8 @@ class Solution(object):
         anti = collections.defaultdict(int)
         
         for r, c in lamps:
+            if (r, c) in lookup:
+                continue
             lookup.add((r, c))
             row[r] += 1
             col[c] += 1
@@ -30,19 +29,17 @@ class Solution(object):
         
         result = []
         for r, c in queries:
-            if row[r] or col[c] or \
-               diag[r-c] or anti[r+c]:
-                result.append(1)
-            else:
+            if not (row[r] or col[c] or diag[r-c] or anti[r+c]):
                 result.append(0)
-            for d in directions:
-                nc, nr = r+d[0], c+d[1]
-                if not (0 <= nr < N and 0 <= nc < N and \
-                        (nr, nc) in lookup):
-                    continue
-                lookup.remove((nr, nc))
-                row[nr] -= 1
-                col[nc] -= 1
-                diag[nr-nc] -= 1
-                anti[nr+nc] -= 1
+                continue
+            result.append(1)                
+            for nr in xrange(r-1, (r+1)+1):
+                for nc in xrange(c-1, (c+1)+1):
+                    if (nr, nc) not in lookup:
+                        continue
+                    lookup.remove((nr, nc))
+                    row[nr] -= 1
+                    col[nc] -= 1
+                    diag[nr-nc] -= 1
+                    anti[nr+nc] -= 1
         return result
