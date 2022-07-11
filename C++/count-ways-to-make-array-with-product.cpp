@@ -1,91 +1,97 @@
-// Time:  O(nlogn)
-// Space: O(logn)
+// Time:  O(sqrt(m) + n + qlogm + q * sqrt(m) / log(sqrt(m))), m is max(k for _, k in queries)
+// Space: O(sqrt(m) + n + logm)
 
 class Solution {
 public:
-    Solution()
-     : fact_((MAX_F + MAX_N - 1) + 1)
-     , inv_((MAX_F + MAX_N - 1) + 1)
-     , inv_fact_((MAX_F + MAX_N - 1) + 1)
-     , sieve_(MAX_N + 1) {
-
-        fact_[0] = inv_fact_[0] = fact_[1] = inv_fact_[1] = inv_[1] = 1;
-        for (int i = 2; i < size(fact_); ++i) {
-            fact_[i] = mulmod(fact_[i - 1], i, MOD);
-            inv_[i] = mulmod(inv_[MOD % i], MOD - MOD / i, MOD);  // https://cp-algorithms.com/algebra/module-inverse.html
-            inv_fact_[i] = mulmod(inv_fact_[i - 1], inv_[i], MOD);
-        }
-
-        iota(begin(sieve_), end(sieve_), 0);
-        for (int i = 2; i <= MAX_N; ++i) {
-            if (sieve_[i] != i) {
-                continue;
-            }
-            for (int j = i * i; j <= MAX_N; j += i) {
-                sieve_[j] = i;
-            }
-        }
-    }
-
     vector<int> waysToFillArray(vector<vector<int>>& queries) {
+        int m = 0;
+        for (const auto& q : queries) {
+            m = max(m, q[1]);
+        }
+        const auto& primes = linear_sieve_of_eratosthenes(sqrt(m));
+        const auto& get_factors = [&](int x) {
+            unordered_map<int, int> factors;
+            for (const auto& p : primes) {
+                if (x < p) {
+                    break;
+                }
+                for (; x % p == 0; x /= p) {
+                    ++factors[p];
+                }
+            }
+            if (x != 1) {
+                ++factors[x];
+            }
+            return factors;
+        };
+
         vector<int> result;
         for (const auto& q : queries) {
             const int n = q[0], k = q[1];
-            const auto& factors = get_factors(k);
-            int curr = 1;
-            for (const auto& [p, f] : factors) {
-                curr = mulmod(curr, nCr(f + n - 1, f, MOD), MOD);  // H(n, f)
+            int64_t total = 1;
+            for (const auto& [_, c] : get_factors(k)) {
+                total = mulmod(total, nCr(n + c - 1, c));  // H(n, c) = nCr(n + c - 1, n)
             }
-            result.emplace_back(curr);
+            result.emplace_back(total);
         }
         return result;
     }
 
 private:
-    unordered_map<int, int> get_factors(int k) {
-        unordered_map<int, int> factors;
-        while (k > 1) {
-            ++factors[sieve_[k]];
-            k /= sieve_[k];
+    int nCr(int n, int k) {
+        while (size(inv_) <= n) {  // lazy initialization
+            fact_.emplace_back(mulmod(fact_.back(), size(inv_)));
+            inv_.emplace_back(mulmod(inv_[MOD % size(inv_)], MOD - MOD / size(inv_)));  // https://cp-algorithms.com/algebra/module-inverse.html
+            inv_fact_.emplace_back(mulmod(inv_fact_.back(), inv_.back()));
         }
-        return factors;
+        return mulmod(mulmod(fact_[n], inv_fact_[n - k]), inv_fact_[k]);
     }
 
-    int nCr(int n, int k, uint32_t mod) {
-        return mulmod(mulmod(fact_[n], inv_fact_[n - k], mod), inv_fact_[k], mod);
-    }
-
-    uint32_t addmod(uint32_t a, uint32_t b, uint32_t mod) {  // avoid overflow
-        a %= mod, b %= mod;
-        if (mod - a <= b) {
-            b -= mod;  // relied on unsigned integer overflow in order to give the expected results
+    uint32_t addmod(uint32_t a, uint32_t b) {  // avoid overflow
+        a %= MOD, b %= MOD;
+        if (MOD - a <= b) {
+            b -= MOD;  // relied on unsigned integer overflow in order to give the expected results
         }
         return a + b;
     }
 
     // reference: https://stackoverflow.com/questions/12168348/ways-to-do-modulo-multiplication-with-primitive-types
-    uint32_t mulmod(uint32_t a, uint32_t b, uint32_t mod)  {  // avoid overflow
-        a %= mod, b %= mod;
+    uint32_t mulmod(uint32_t a, uint32_t b)  {  // avoid overflow
+        a %= MOD, b %= MOD;
         uint32_t result = 0;
         if (a < b) {
             swap(a, b);
         }
         while (b > 0)  { 
             if (b % 2 == 1) {
-                result = addmod(result, a, mod);
+                result = addmod(result, a);
             }
-            a = addmod(a, a, mod);
+            a = addmod(a, a);
             b /= 2; 
         } 
         return result; 
     }
-    
-    static const int MOD = 1e9 + 7;
-    static const int MAX_N = 10000;
-    static const int MAX_F = 13;  // floor(log2(MAX_N));
 
-    vector<int> fact_;
-    vector<int> inv_;
-    vector<int> inv_fact_;
-    vector<int> sieve_;
+    vector<int64_t> linear_sieve_of_eratosthenes(int64_t n) {  // Time: O(n), Space: O(n)
+        vector<int64_t> spf(n + 1, -1);
+        vector<int64_t> primes;
+        for (int64_t i = 2; i <= n; ++i) {
+            if (spf[i] == -1) {
+                spf[i] = i;
+                primes.emplace_back(i);
+            }
+            for (const auto& p : primes) {
+                if (i * p > n || p > spf[i]) {
+                    break;
+                }
+                spf[i * p] = p;
+            }
+        }
+        return primes;
+    }
+   
+    static const uint32_t MOD = 1e9 + 7;
+    vector<int> fact_ = {1, 1};
+    vector<int> inv_ = {1, 1};
+    vector<int> inv_fact_ = {1, 1};
 };
