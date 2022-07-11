@@ -20,7 +20,7 @@ public:
     }
     
     void addBack(int num) {
-        if (num >= n_ || bst_.count(num)) {
+        if (num >= n_) {
             return;
         }
         bst_.emplace(num);
