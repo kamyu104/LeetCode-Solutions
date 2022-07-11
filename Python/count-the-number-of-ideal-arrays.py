@@ -49,7 +49,6 @@ class Solution(object):
         primes = linear_sieve_of_eratosthenes(int(maxValue**0.5))
         result = 0
         for x in xrange(1, maxValue+1):
-            factors = get_factors(x)
             total = 1
             for c in factors.itervalues():
                 total = (total*nCr(n+c-1, c))%MOD  # H(n, c) = nCr(n+c-1, n)
