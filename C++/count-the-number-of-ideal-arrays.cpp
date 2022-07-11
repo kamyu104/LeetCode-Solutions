@@ -6,23 +6,26 @@ class Solution {
 public:
     int idealArrays(int n, int maxValue) {
         const auto& primes = linear_sieve_of_eratosthenes(sqrt(maxValue));
-        int result = 0;
-        for (int i = 1; i <= maxValue; ++i) {
-            int x = i;
-            unordered_map<int, int> dp;
+        const auto& get_factors = [&](int x) {
+            unordered_map<int, int> factors;
             for (const auto& p : primes) {
                 if (x < p) {
                     break;
                 }
                 for (; x % p == 0; x /= p) {
-                    ++dp[p];
+                    ++factors[p];
                 }
             }
             if (x != 1) {
-                ++dp[x];
+                ++factors[x];
             }
+            return factors;
+        };
+
+        int result = 0;
+        for (int i = 1; i <= maxValue; ++i) {
             int64_t total = 1;
-            for (const auto& [_, c] : dp) {
+            for (const auto& [_, c] : get_factors(i)) {
                 total = mulmod(total, nCr(n + c - 1, c));  // H(n, c) = nCr(n + c - 1, n)
             }
             result = addmod(result, total);
