@@ -1,4 +1,4 @@
-// Time:  O(nlogm + n * sqrt(m) / log(sqrt(m)))
+// Time:  O(sqrt(m) + nlogm + n * sqrt(m) / log(sqrt(m)))
 // Space: O(sqrt(m))
 
 // dp, factorization, combinatorics
