@@ -12,7 +12,7 @@ private:
         vector<int64_t> spf(n + 1, -1);
         vector<int64_t> primes;
         for (int64_t i = 2; i <= n; ++i) {
-            if (spf[i] == 0) {
+            if (spf[i] == -1) {
                 spf[i] = i;
                 primes.emplace_back(i);
             }
