@@ -10,6 +10,7 @@ class Solution(object):
         """
         return max(max(amount), (sum(amount)+1)//2)
 
+
 # Time:  O(1)
 # Space: O(1)
 # constructive algorithms
