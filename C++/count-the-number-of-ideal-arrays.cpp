@@ -23,9 +23,9 @@ public:
         };
 
         int result = 0;
-        for (int i = 1; i <= maxValue; ++i) {
+        for (int k = 1; k <= maxValue; ++k) {
             int64_t total = 1;
-            for (const auto& [_, c] : get_factors(i)) {
+            for (const auto& [_, c] : get_factors(k)) {
                 total = mulmod(total, nCr(n + c - 1, c));  // H(n, c) = nCr(n + c - 1, n)
             }
             result = addmod(result, total);
