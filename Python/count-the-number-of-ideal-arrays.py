@@ -34,21 +34,25 @@ class Solution(object):
                     spf[i*p] = p
             return primes
 
-        primes = linear_sieve_of_eratosthenes(int(maxValue**0.5))
-        result = 0
-        for x in xrange(1, maxValue+1):
-            dp = collections.Counter()
+        def get_factors(x):
+            factors = collections.Counter()
             for p in primes:
                 if x < p:
                     break
                 while x%p == 0:
-                    dp[p] += 1
+                    factors[p] += 1
                     x //= p
             if x != 1:
-                dp[x] += 1
+                factors[x] += 1
+            return factors
+
+        primes = linear_sieve_of_eratosthenes(int(maxValue**0.5))
+        result = 0
+        for x in xrange(1, maxValue+1):
+            factors = get_factors(x)
             total = 1
-            for c in dp.itervalues():
-                total = (total*nCr(n+c-1, c))%MOD  # H(n, c) = nCr(n + c - 1, n)
+            for c in factors.itervalues():
+                total = (total*nCr(n+c-1, c))%MOD  # H(n, c) = nCr(n+c-1, n)
             result = (result+total)%MOD
         return result
 
