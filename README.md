@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2329%20%2F%202329-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2338%20%2F%202338-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -446,6 +446,7 @@
 2197 | [Replace Non-Coprime Numbers in Array](https://leetcode.com/problems/replace-non-coprime-numbers-in-array/) | [C++](./C++/replace-non-coprime-numbers-in-array.cpp) [Python](./Python/replace-non-coprime-numbers-in-array.py) | _O(nlogm)_ | _O(1)_ | Hard | | Stack, Math
 2281 | [Sum of Total Strength of Wizards](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) | [C++](./C++/sum-of-total-strength-of-wizards.cpp) [Python](./Python/sum-of-total-strength-of-wizards.py) | _O(n)_ | _O(n)_ | Hard | variant of [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Mono Stack, Prefix Sum
 2282 | [Number of People That Can Be Seen in a Grid](https://leetcode.com/problems/number-of-people-that-can-be-seen-in-a-grid/) | [C++](./C++/number-of-people-that-can-be-seen-in-a-grid.cpp) [Python](./Python/number-of-people-that-can-be-seen-in-a-grid.py) | _O(m * n)_  | _O(m + n)_         | Medium           | 🔒, variant of [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/) | Mono Stack
+2334 | [Subarray With Elements Greater Than Varying Threshold](https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/) | [C++](./C++/subarray-with-elements-greater-than-varying-threshold.cpp) [Python](./Python/subarray-with-elements-greater-than-varying-threshold.py) | _O(n)_ | _O(n)_ | Hard | variant of [[Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/) | Mono Stack
 
 <br/>
 <div align="right">
@@ -732,6 +733,7 @@
 2262 | [Total Appeal of A String](https://leetcode.com/problems/total-appeal-of-a-string/)|[C++](./C++/total-appeal-of-a-string.cpp) [Python](./Python/total-appeal-of-a-string.py)| _O(n)_     | _O(26)_         | Hard         | variant of [Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) | Combinatorics
 2280 | [Minimum Lines to Represent a Line Chart](https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/)|[C++](./C++/minimum-lines-to-represent-a-line-chart.cpp) [Python](./Python/minimum-lines-to-represent-a-line-chart.py)| _O(nlogn)_     | _O(1)_         | Medium         | | Sort, Math, GCD
 2310 | [Sum of Numbers With Units Digit K](https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/)|[C++](./C++/sum-of-numbers-with-units-digit-k.cpp) [Python](./Python/sum-of-numbers-with-units-digit-k.py)| _O(1)_     | _O(1)_         | Medium         | | Math
+2335 | [Minimum Amount of Time to Fill Cups](https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups/)|[C++](./C++/minimum-amount-of-time-to-fill-cups.cpp) [Python](./Python/minimum-amount-of-time-to-fill-cups.py)| _O(1)_     | _O(1)_         | Easy         | | Math, Constructive Algorithms
 
 <br/>
 <div align="right">
@@ -849,6 +851,9 @@
 2200 | [Find All K-Distant Indices in an Array](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/) | [C++](./C++/find-all-k-distant-indices-in-an-array.cpp) [Python](./Python/find-all-k-distant-indices-in-an-array.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers
 2234 | [Maximum Total Beauty of the Gardens](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/) | [C++](./C++/maximum-total-beauty-of-the-gardens.cpp) [Python](./Python/maximum-total-beauty-of-the-gardens.py) | _O(nlogn)_ | _O(1)_ | Hard | | Sort, Prefix Sum, Greedy, Binary Search, Two Pointers
 2302 | [Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/) | [C++](./C++/count-subarrays-with-score-less-than-k.cpp) [Python](./Python/count-subarrays-with-score-less-than-k.py) | _O(n)_ | _O(1)_ | Hard | | Two Pointers, Sliding Window
+2330 | [Valid Palindrome IV](https://leetcode.com/problems/valid-palindrome-iv/) | [C++](./C++/valid-palindrome-iv.cpp) [Python](./Python/valid-palindrome-iv.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | String, Two Pointers |
+2332 | [The Latest Time to Catch a Bus](https://leetcode.com/problems/the-latest-time-to-catch-a-bus/) | [C++](./C++/the-latest-time-to-catch-a-bus.cpp) [Python](./Python/the-latest-time-to-catch-a-bus.py) | _O(nlogn + mlogm)_ | _O(1)_ | Medium | | String, Two Pointers |
+2337 | [Move Pieces to Obtain a String](https://leetcode.com/problems/move-pieces-to-obtain-a-string/) | [C++](./C++/move-pieces-to-obtain-a-string.cpp) [Python](./Python/move-pieces-to-obtain-a-string.py) | _O(n + m)_ | _O(1)_ | Medium | | String, Two Pointers |
 
 <br/>
 <div align="right">
@@ -910,6 +915,7 @@
 2226 | [Maximum Candies Allocated to K Children](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/) | [C++](./C++/maximum-candies-allocated-to-k-children.cpp) [Python](./Python/maximum-candies-allocated-to-k-children.py) | _O(nlogr)_ | _O(1)_ | Medium | | Binary Search
 2250 | [Count Number of Rectangles Containing Each Point](https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/) | [C++](./C++/count-number-of-rectangles-containing-each-point.cpp) [Python](./Python/count-number-of-rectangles-containing-each-point.py) | _O(nlogn + m * max_y * logn)_ | _O(n)_ | Medium | | Bucket Sort, Binary Search
 2300 | [Successful Pairs of Spells and Potions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/) | [C++](./C++/successful-pairs-of-spells-and-potions.cpp) [Python](./Python/successful-pairs-of-spells-and-potions.py) | _O(mlogm + nlogm)_ | _O(1)_ | Medium | | Binary Search
+2333 | [Minimum Sum of Squared Difference](https://leetcode.com/problems/minimum-sum-of-squared-difference/) | [C++](./C++/minimum-sum-of-squared-difference.cpp) [Python](./Python/minimum-sum-of-squared-difference.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | | Binary Search
 
 <br/>
 <div align="right">
@@ -1014,6 +1020,7 @@
 2246 | [Longest Path With Different Adjacent Characters](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/) | [C++](./C++/longest-path-with-different-adjacent-characters.cpp) [Python](./Python/longest-path-with-different-adjacent-characters.py) | _O(n)_ | _O(h)_ | Hard | | DFS, BFS, Topological Sort |
 2265 | [Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/) | [C++](./C++/count-nodes-equal-to-average-of-subtree.cpp) [Python](./Python/count-nodes-equal-to-average-of-subtree.py) | _O(n)_ | _O(h)_ | Medium | | DFS, Tree |
 2322 | [Minimum Score After Removals on a Tree](https://leetcode.com/problems/minimum-score-after-removals-on-a-tree/) | [C++](./C++/minimum-score-after-removals-on-a-tree.cpp) [Python](./Python/minimum-score-after-removals-on-a-tree.py) | _O(n^2)_ | _O(n)_ | Hard | | DFS, Tree |
+2331 | [Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree/) | [C++](./C++/evaluate-boolean-binary-tree.cpp) [Python](./Python/evaluate-boolean-binary-tree.py) | _O(n)_ | _O(h)_ | Easy | | DFS |
 
 <br/>
 <div align="right">
@@ -1190,6 +1197,7 @@
 2320 | [Count Number of Ways to Place Houses](https://leetcode.com/problems/count-number-of-ways-to-place-houses/)| [C++](./C++/count-number-of-ways-to-place-houses.cpp) [Python](./Python/count-number-of-ways-to-place-houses.py) | _O(logn)_    | _O(1)_          | Medium           | variant of [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Matrix Exponentiation
 2327 | [Number of People Aware of a Secret](https://leetcode.com/problems/number-of-people-aware-of-a-secret/)| [C++](./C++/number-of-people-aware-of-a-secret.cpp) [Python](./Python/number-of-people-aware-of-a-secret.py) | _O(n)_    | _O(f)_          | Medium           | | DP
 2328 | [Number of Increasing Paths in a Grid](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/)| [C++](./C++/number-of-increasing-paths-in-a-grid.cpp) [Python](./Python/number-of-increasing-paths-in-a-grid.py) | _O(m * n)_    | _O(m * n)_          | Hard           | | Memoization, Topological Sort, DP
+2338 | [Count the Number of Ideal Arrays](https://leetcode.com/problems/count-the-number-of-ideal-arrays/)| [C++](./C++/count-the-number-of-ideal-arrays.cpp) [Python](./Python/count-the-number-of-ideal-arrays.py) | _O(n * mlogm)_    | _O(n + m)_          | Hard           | | DP, Combinatorics
 
 <br/>
 <div align="right">
@@ -1483,6 +1491,7 @@
 2276 | [Count Integers in Intervals](https://leetcode.com/problems/count-integers-in-intervals/) | [C++](./C++/count-integers-in-intervals.cpp) [Python](./Python/count-integers-in-intervals.py) | ctor: _O(1)_<br>add: _O(logn)_, amortized<br>Count: _O(1)_ | _O(n)_ | Hard | | Sorted List
 2286 | [Booking Concert Tickets in Groups](https://leetcode.com/problems/booking-concert-tickets-in-groups/) | [C++](./C++/booking-concert-tickets-in-groups.cpp) [Python](./Python/booking-concert-tickets-in-groups.py) | ctor: _O(n)_<br>gather: _O(logn)_<br>scatter: _O(logn)_, amortized | _O(n)_ | Hard | | Segment Tree, Binary Search
 2296 | [Design a Text Editor](https://leetcode.com/problems/design-a-text-editor/) | [C++](./C++/design-a-text-editor.cpp) [Python](./Python/design-a-text-editor.py) | ctor: _O(1)_<br>addText: _O(l)_<br>deleteText: _O(k)_<br>cursorLeft: _O(k)_<br>cursorRight: _O(k)_ | _O(n)_ | Hard | | Stack
+2336 | [Smallest Number in Infinite Set](https://leetcode.com/problems/smallest-number-in-infinite-set/) | [C++](./C++/smallest-number-in-infinite-set.cpp) [Python](./Python/smallest-number-in-infinite-set.py) | ctor: _O(1)_<br>popSmallest: _O(logn)_<br>addBack: _O(logn)_ | _O(n)_ | Medium | | Heap, BST
 
 <br/>
 <div align="right">
