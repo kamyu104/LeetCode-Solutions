@@ -5,12 +5,12 @@
 class Solution {
 public:
     int idealArrays(int n, int maxValue) {
-        static const vector<int> PRIMES = linear_sieve_of_eratosthenes(sqrt(1e4));
+        const auto& primes = linear_sieve_of_eratosthenes(sqrt(maxValue));
         int result = 0;
         for (int i = 1; i <= maxValue; ++i) {
             int x = i;
             unordered_map<int, int> dp;
-            for (const auto& p : PRIMES) {
+            for (const auto& p : primes) {
                 if (x < p) {
                     break;
                 }
@@ -22,8 +22,8 @@ public:
                 ++dp[x];
             }
             int64_t total = 1;
-            for (const auto& [k, v] : dp) {
-                total = mulmod(total, nCr(n + v - 1, v));  // H(n, v) = nCr(n + v - 1, n)
+            for (const auto& [_, c] : dp) {
+                total = mulmod(total, nCr(n + c - 1, c));  // H(n, c) = nCr(n + c - 1, n)
             }
             result = addmod(result, total);
         }
@@ -65,11 +65,11 @@ private:
         return result; 
     }
 
-    vector<int> linear_sieve_of_eratosthenes(int n) {  // Time: O(n), Space: O(n)
-        vector<int> spf(n + 1);
-        vector<int> primes;
-        for (int i = 2; i <= n; ++i) {
-            if (spf[i] == 0) {
+    vector<int64_t> linear_sieve_of_eratosthenes(int64_t n) {  // Time: O(n), Space: O(n)
+        vector<int64_t> spf(n + 1, -1);
+        vector<int64_t> primes;
+        for (int64_t i = 2; i <= n; ++i) {
+            if (spf[i] == -1) {
                 spf[i] = i;
                 primes.emplace_back(i);
             }
@@ -82,6 +82,7 @@ private:
         }
         return primes;
     }
+   
     static const uint32_t MOD = 1e9 + 7;
     vector<int> fact_ = {1, 1};
     vector<int> inv_ = {1, 1};
