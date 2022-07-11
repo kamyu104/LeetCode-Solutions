@@ -1,27 +1,5 @@
-# Time:  O(nlogn)
-# Space: O(logn)
-
-import collections
-
-
-MAX_N = 10**4 
-MOD = 10**9+7
-MAX_F = MAX_N.bit_length()-1  # floor_log2_MAX_N
-fact = [0]*((MAX_F+MAX_N-1)+1)
-inv = [0]*((MAX_F+MAX_N-1)+1)
-inv_fact = [0]*((MAX_F+MAX_N-1)+1)
-fact[0] = inv_fact[0] = fact[1] = inv_fact[1] = inv[1] = 1
-for i in xrange(2, len(fact)):
-    fact[i] = fact[i-1]*i % MOD
-    inv[i] = inv[MOD%i]*(MOD-MOD//i) % MOD  # https://cp-algorithms.com/algebra/module-inverse.html
-    inv_fact[i] = inv_fact[i-1]*inv[i] % MOD
-
-sieve = range(MAX_N+1)
-for i in xrange(2, MAX_N+1):
-    if sieve[i] != i:
-        continue
-    for j in xrange(i*i, MAX_N+1, i):
-        sieve[j] = i
+# Time:  O(sqrt(m) + n + qlogm + q * sqrt(m) / log(sqrt(m))), m is max(k for _, k in queries)
+# Space: O(sqrt(m) + n + logm)
 
 class Solution(object):
     def waysToFillArray(self, queries):
@@ -29,21 +7,45 @@ class Solution(object):
         :type queries: List[List[int]]
         :rtype: List[int]
         """
-        def nCr(n, k, mod):
-            return (fact[n]*inv_fact[n-k] % mod) * inv_fact[k] % mod
-        
-        def get_factors(k):
+        MOD = 10**9+7
+        fact, inv, inv_fact = [[1]*2 for _ in xrange(3)]
+        def nCr(n, k):
+            while len(inv) <= n:  # lazy initialization
+                fact.append(fact[-1]*len(inv) % MOD)
+                inv.append(inv[MOD%len(inv)]*(MOD-MOD//len(inv)) % MOD)  # https://cp-algorithms.com/algebra/module-inverse.html
+                inv_fact.append(inv_fact[-1]*inv[-1] % MOD)
+            return (fact[n]*inv_fact[n-k] % MOD) * inv_fact[k] % MOD
+
+        def linear_sieve_of_eratosthenes(n):  # Time: O(n), Space: O(n)
+            primes = []
+            spf = [-1]*(n+1)  # the smallest prime factor
+            for i in xrange(2, n+1):
+                if spf[i] == -1:
+                    spf[i] = i
+                    primes.append(i)
+                for p in primes:
+                    if i*p > n or p > spf[i]:
+                        break
+                    spf[i*p] = p
+            return primes
+
+        def get_factors(x):
             factors = collections.Counter()
-            while k > 1:
-                factors[sieve[k]] += 1
-                k //= sieve[k]
+            for p in primes:
+                if x < p:
+                    break
+                while x%p == 0:
+                    factors[p] += 1
+                    x //= p
+            if x != 1:
+                factors[x] += 1
             return factors
 
+        primes = linear_sieve_of_eratosthenes(int(max(k for _, k in queries)**0.5))
         result = []
         for n, k in queries:
-            factors = get_factors(k)
-            curr = 1
-            for f in factors.itervalues():
-                curr *= nCr(f+n-1,f, MOD)  # H(n, f)
-            result.append(curr % MOD)
+            total = 1
+            for c in get_factors(k).itervalues():
+                total *= nCr(n+c-1,c, MOD)  # H(n, c) = nCr(n+c-1, n)
+            result.append(total % MOD)
         return result
