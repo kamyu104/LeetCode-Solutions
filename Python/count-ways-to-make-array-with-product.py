@@ -1,6 +1,9 @@
 # Time:  O(sqrt(m) + n + qlogm + q * sqrt(m) / log(sqrt(m))), m is max(k for _, k in queries)
 # Space: O(sqrt(m) + n + logm)
 
+import collections
+
+
 class Solution(object):
     def waysToFillArray(self, queries):
         """
