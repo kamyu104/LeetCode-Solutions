@@ -59,7 +59,7 @@ import collections
 
 
 # dp, combinatorics
-class Solutio2n(object):
+class Solution2(object):
     def idealArrays(self, n, maxValue):
         """
         :type n: int
