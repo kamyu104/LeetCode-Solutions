@@ -1,5 +1,5 @@
-// Time:  O(sqrt(m) + nlogm + n * sqrt(m) / log(sqrt(m)))
-// Space: O(sqrt(m) + n)
+// Time:  O(sqrt(m) + n + mlogm + m * sqrt(m) / log(sqrt(m)))
+// Space: O(sqrt(m) + n + logm)
 
 // dp, factorization, combinatorics
 class Solution {
