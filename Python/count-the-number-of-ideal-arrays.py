@@ -34,7 +34,7 @@ class Solution(object):
                     spf[i*p] = p
             return primes
 
-        def get_factors(x):
+        def prime_factors(x):
             factors = collections.Counter()
             for p in primes:
                 if x < p:
@@ -50,7 +50,7 @@ class Solution(object):
         result = 0
         for k in xrange(1, maxValue+1):
             total = 1
-            for c in get_factors(k).itervalues():
+            for c in prime_factors(k).itervalues():
                 total = (total*nCr(n+c-1, c))%MOD  # H(n, c) = nCr(n+c-1, n)
             result = (result+total)%MOD
         return result
