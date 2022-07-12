@@ -16,8 +16,8 @@ public:
             }
             result *= count + 1;
         }
-        if (N > 1) {
-            result *= 2;
+        if (N != 1) {
+            result *= 1 + 1;
         }
         return result;
     }
