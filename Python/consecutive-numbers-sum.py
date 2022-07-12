@@ -12,7 +12,7 @@ class Solution(object):
         # => x = (2^k * M - (l-1)*l/2) / l = 2^k * M/l - (l-1)/2 is a positive integer
         # => l is either 2^(k+1)*M/f or f (f is factors of M)
         # => the answer is the number of all odd factors of M
-        # if prime factorization of N is 2^k * p1^a * p2^b * ..
+        # if prime factorization of N is 2^k * p1^a * p2^b * ...
         # => answer is the number of all odd factors = (a+1) * (b+1) * ...
         result = 1
         while N % 2 == 0:
