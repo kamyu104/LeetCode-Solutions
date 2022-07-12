@@ -49,6 +49,6 @@ class Solution(object):
         for n, k in queries:
             total = 1
             for c in prime_factors(k).itervalues():
-                total *= nCr(n+c-1,c, MOD)  # H(n, c) = nCr(n+c-1, n)
+                total *= nCr(n+c-1, c)  # H(n, c) = nCr(n+c-1, n)
             result.append(total % MOD)
         return result
