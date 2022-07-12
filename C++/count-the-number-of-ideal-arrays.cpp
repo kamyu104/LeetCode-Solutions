@@ -6,7 +6,7 @@ class Solution {
 public:
     int idealArrays(int n, int maxValue) {
         const auto& primes = linear_sieve_of_eratosthenes(sqrt(maxValue));
-        const auto& get_factors = [&](int x) {
+        const auto& prime_factors = [&](int x) {
             unordered_map<int, int> factors;
             for (const auto& p : primes) {
                 if (x < p) {
@@ -25,7 +25,7 @@ public:
         int result = 0;
         for (int k = 1; k <= maxValue; ++k) {
             int64_t total = 1;
-            for (const auto& [_, c] : get_factors(k)) {
+            for (const auto& [_, c] : prime_factors(k)) {
                 total = mulmod(total, nCr(n + c - 1, c));  // H(n, c) = nCr(n + c - 1, n)
             }
             result = addmod(result, total);
