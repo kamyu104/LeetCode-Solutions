@@ -9,7 +9,7 @@ public:
             m = max(m, q[1]);
         }
         const auto& primes = linear_sieve_of_eratosthenes(sqrt(m));
-        const auto& get_factors = [&](int x) {
+        const auto& prime_factors = [&](int x) {
             unordered_map<int, int> factors;
             for (const auto& p : primes) {
                 if (x < p) {
@@ -29,7 +29,7 @@ public:
         for (const auto& q : queries) {
             const int n = q[0], k = q[1];
             int64_t total = 1;
-            for (const auto& [_, c] : get_factors(k)) {
+            for (const auto& [_, c] : prime_factors(k)) {
                 total = mulmod(total, nCr(n + c - 1, c));  // H(n, c) = nCr(n + c - 1, n)
             }
             result.emplace_back(total);
