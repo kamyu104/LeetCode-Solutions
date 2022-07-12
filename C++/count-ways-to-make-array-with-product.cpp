@@ -1,4 +1,4 @@
-// Time:  O(sqrt(m) + n + qlogm + q * sqrt(m) / log(sqrt(m))), m is max(k for _, k in queries)
+// Time:  O(sqrt(m) + n + q * (logm + sqrt(m)/log(sqrt(m)))), m is max(k for _, k in queries)
 // Space: O(sqrt(m) + n + logm)
 
 class Solution {
