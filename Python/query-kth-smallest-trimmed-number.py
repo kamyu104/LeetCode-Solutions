@@ -1,5 +1,5 @@
-# Time:  O(q + n * l)
-# Space: O(l + n + q)
+# Time:  O(q + n * t)
+# Space: O(t + n + q)
 
 # radix sort
 class Solution(object):
@@ -9,12 +9,13 @@ class Solution(object):
         :type queries: List[List[int]]
         :rtype: List[int]
         """
-        lookup = [[] for _ in xrange(len(nums[0])+1)]
+        max_t = max(t for _, t in queries)
+        lookup = [[] for _ in xrange(max_t+1)]
         for i, (k, t) in enumerate(queries):
             lookup[t].append((k, i))
         result = [0]*len(queries)
         idxs = range(len(nums))
-        for l in xrange(1, len(nums[0])+1):
+        for l in xrange(1, max_t+1):
             cnt = [0]*10
             for i in idxs:
                 d = int(nums[i][-l])
@@ -33,7 +34,7 @@ class Solution(object):
 
             
 # Time:  O(q * n * t) on average
-# Space: O(n)
+# Space: O(n + q)
 import random
 
 
@@ -87,8 +88,8 @@ class Solution2(object):
         return result
 
 
-# Time:  O(q + nlogn * l)
-# Space: O(l + n + q)
+# Time:  O(q + nlogn * t)
+# Space: O(t + n + q)
 # sort
 class Solution3(object):
     def smallestTrimmedNumbers(self, nums, queries):
@@ -105,12 +106,13 @@ class Solution3(object):
                     return 1
             return cmp(a, b)
 
-        lookup = [[] for _ in xrange(len(nums[0])+1)]
+        max_t = max(t for _, t in queries)
+        lookup = [[] for _ in xrange(max_t+1)]
         for i, (k, t) in enumerate(queries):
             lookup[t].append((k, i))
         result = [0]*len(queries)
         idxs = range(len(nums))
-        for t in xrange(1, len(nums[0])+1):
+        for t in xrange(1, max_t+1):
             if not lookup[t]:
                 continue
             idxs.sort(cmp=compare)
