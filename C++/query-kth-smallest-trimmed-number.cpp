@@ -1,18 +1,22 @@
-// Time:  O(q + n * l)
-// Space: O(l + n + q)
+// Time:  O(q + n * t)
+// Space: O(t + n + q)
 
 // radix sort
 class Solution {
 public:
     vector<int> smallestTrimmedNumbers(vector<string>& nums, vector<vector<int>>& queries) {
-        vector<vector<pair<int, int>>> lookup(size(nums[0]) + 1);
+        int max_t = 0;
+        for (int i = 0; i < size(queries); ++i) {
+            max_t = max(max_t, queries[i][1]);
+        }
+        vector<vector<pair<int, int>>> lookup(max_t + 1);
         for (int i = 0; i < size(queries); ++i) {
             lookup[queries[i][1]].emplace_back(queries[i][0], i);
         }
         vector<int> idxs(size(nums));
         iota(begin(idxs), end(idxs), 0);
         vector<int> result(size(queries));
-        for (int l = 1; l <= size(nums[0]); ++l) {
+        for (int l = 1; l <= max_t; ++l) {
             vector<int> cnt(10);
             for (int i = 0; i < size(idxs); ++i) {
                 const int d = nums[idxs[i]][size(nums[idxs[i]]) - l]- '0';
@@ -37,7 +41,7 @@ public:
 };
 
 // Time:  O(q * n * t) on average
-// Space: O(n)
+// Space: O(n + q)
 // quick select
 class Solution2 {
 public:
@@ -59,20 +63,24 @@ public:
     }
 };
 
-// Time:  O(q + nlogn * l)
-// Space: O(l + n + q)
+// Time:  O(q + nlogn * t)
+// Space: O(t + n + q)
 // sort
 class Solution3 {
 public:
     vector<int> smallestTrimmedNumbers(vector<string>& nums, vector<vector<int>>& queries) {
-        vector<vector<pair<int, int>>> lookup(size(nums[0]) + 1);
+        int max_t = 0;
+        for (int i = 0; i < size(queries); ++i) {
+            max_t = max(max_t, queries[i][1]);
+        }
+        vector<vector<pair<int, int>>> lookup(max_t + 1);
         for (int i = 0; i < size(queries); ++i) {
             lookup[queries[i][1]].emplace_back(queries[i][0], i);
         }
         vector<int> idxs(size(nums));
         iota(begin(idxs), end(idxs), 0);
         vector<int> result(size(queries));
-        for (int t = 1; t <= size(nums[0]); ++t) {
+        for (int t = 1; t <= max_t; ++t) {
             if (empty(lookup[t])) {
                 continue;
             }
