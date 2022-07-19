@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2338%20%2F%202338-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2344%20%2F%202344-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -601,6 +601,8 @@
 2306 | [Naming a Company](https://leetcode.com/problems/naming-a-company/) | [C++](./C++/naming-a-company.cpp) [Python](./Python/naming-a-company.py) | _O(26 * n * l)_ | _O(n * l)_ | Hard || Hash Table, Math
 2309 | [Greatest English Letter in Upper and Lower Case](https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/) | [C++](./C++/greatest-english-letter-in-upper-and-lower-case.cpp) [Python](./Python/greatest-english-letter-in-upper-and-lower-case.py) | _O(n)_ | _O(1)_ | Easy || Freq Table, Hash Table
 2325 | [Decode the Message](https://leetcode.com/problems/decode-the-message/) | [C++](./C++/decode-the-message.cpp) [Python](./Python/decode-the-message.py) | _O(n + m)_ | _O(1)_ | Easy || String, Hash Table
+2341 | [Maximum Number of Pairs in Array](https://leetcode.com/problems/maximum-number-of-pairs-in-array/) | [C++](./C++/maximum-number-of-pairs-in-array.cpp) [Python](./Python/maximum-number-of-pairs-in-array.py) | _O(n)_ | _O(r)_ | Easy || Freq Table
+2342 | [Max Sum of a Pair With Equal Sum of Digits](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) | [C++](./C++/max-sum-of-a-pair-with-equal-sum-of-digits.cpp) [Python](./Python/max-sum-of-a-pair-with-equal-sum-of-digits.py) | _O(nlogr)_ | _O(n)_ | Medium || Hash Table, Greedy
 
 <br/>
 <div align="right">
@@ -735,6 +737,7 @@
 2310 | [Sum of Numbers With Units Digit K](https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/)|[C++](./C++/sum-of-numbers-with-units-digit-k.cpp) [Python](./Python/sum-of-numbers-with-units-digit-k.py)| _O(1)_     | _O(1)_         | Medium         | | Math
 2335 | [Minimum Amount of Time to Fill Cups](https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups/)|[C++](./C++/minimum-amount-of-time-to-fill-cups.cpp) [Python](./Python/minimum-amount-of-time-to-fill-cups.py)| _O(1)_     | _O(1)_         | Easy         | | Math, Constructive Algorithms
 2338 | [Count the Number of Ideal Arrays](https://leetcode.com/problems/count-the-number-of-ideal-arrays/)| [C++](./C++/count-the-number-of-ideal-arrays.cpp) [Python](./Python/count-the-number-of-ideal-arrays.py) | _O(sqrt(m) + n + m * (logm + sqrt(m)/log(sqrt(m))))_    | _O(sqrt(m) + n + logm)_          | Hard           | variant of [Count Ways to Make Array With Product](https://leetcode.com/problems/count-ways-to-make-array-with-product/) | DP, `Linear Sieve of Eratosthenes`, Factorization, Combinatorics
+2344 | [Minimum Deletions to Make Array Divisible](https://leetcode.com/problems/minimum-deletions-to-make-array-divisible/)|[C++](./C++/minimum-deletions-to-make-array-divisible.cpp) [Python](./Python/minimum-deletions-to-make-array-divisible.py)| _O(n + m + logr)_     | _O(1)_         | Hard         | | Math, GCD
 
 <br/>
 <div align="right">
@@ -790,6 +793,7 @@
 2233 | [Maximum Product After K Increments](https://leetcode.com/problems/maximum-product-after-k-increments/)|[C++](./C++/maximum-product-after-k-increments.cpp) [Python](./Python/maximum-product-after-k-increments.py)| _O(n + k)_     | _O(n)_         | Medium         || Heap, Freq Table, Sort, Math
 2248 | [Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/)|[C++](./C++/intersection-of-multiple-arrays.cpp) [Python](./Python/intersection-of-multiple-arrays.py)| _O(n * l + r)_     | _O(l)_         | Easy         || Hash Table, Counting Sort
 2251 | [Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/) | [C++](./C++/number-of-flowers-in-full-bloom.cpp) [Python](./Python/number-of-flowers-in-full-bloom.py) | _O(nlogn + mlogn)_   | _O(n)_        | Hard         | | Line Sweep, Binary Search
+2343 | [Query Kth Smallest Trimmed Number](https://leetcode.com/problems/query-kth-smallest-trimmed-number/) | [C++](./C++/query-kth-smallest-trimmed-number.cpp) [Python](./Python/query-kth-smallest-trimmed-number.py) | _O(q + n * l)_   | _O(l + n + q)_        | Medium         | | Sort, Quick Select, Radix Sort
 
 <br/>
 <div align="right">
@@ -1349,6 +1353,7 @@
 2311 | [Longest Binary Subsequence Less Than or Equal to K](https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/)  | [C++](./C++/longest-binary-subsequence-less-than-or-equal-to-k.cpp) [Python](./Python/longest-binary-subsequence-less-than-or-equal-to-k.py) | _O(n)_ | _O(1)_ | Medium | | Greedy |
 2321 | [Maximum Score Of Spliced Array](https://leetcode.com/problems/maximum-score-of-spliced-array/) | [C++](./C++/maximum-score-of-spliced-array.cpp) [Python](./Python/maximum-score-of-spliced-array.py) | _O(n)_ | _O(1)_ | Hard | | Greedy, `Kadane's Algorithm`
 2323 | [Find Minimum Time to Finish All Jobs II](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/) | [C++](./C++/find-minimum-time-to-finish-all-jobs-ii.cpp) [Python](./Python/find-minimum-time-to-finish-all-jobs-ii.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Greedy
+2340 | [Minimum Adjacent Swaps to Make a Valid Array](https://leetcode.com/problems/minimum-adjacent-swaps-to-make-a-valid-array/) | [C++](./C++/minimum-adjacent-swaps-to-make-a-valid-array.cpp) [Python](./Python/minimum-adjacent-swaps-to-make-a-valid-array.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Array, Greedy
 
 <br/>
 <div align="right">
@@ -1683,6 +1688,7 @@
 2314 | [The First Day of the Maximum Recorded Degree in Each City](https://leetcode.com/problems/the-first-day-of-the-maximum-recorded-degree-in-each-city/) | [MySQL](./MySQL/the-first-day-of-the-maximum-recorded-degree-in-each-city.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2324 | [Product Sales Analysis IV](https://leetcode.com/problems/product-sales-analysis-iv/) | [MySQL](./MySQL/product-sales-analysis-iv.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2329 | [Product Sales Analysis V](https://leetcode.com/problems/product-sales-analysis-v/) | [MySQL](./MySQL/product-sales-analysis-v.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2339 | [All the Matches of the League](https://leetcode.com/problems/all-the-matches-of-the-league/) | [MySQL](./MySQL/all-the-matches-of-the-league.sql) | _O(n^2)_ | _O(n^2)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
