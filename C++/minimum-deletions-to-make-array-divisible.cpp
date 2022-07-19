@@ -1,5 +1,5 @@
 // Time:  O(n + m + logr), r is max(nums)
-// Space: O(n)
+// Space: O(1)
 
 // math, gcd
 class Solution {
