@@ -793,7 +793,7 @@
 2233 | [Maximum Product After K Increments](https://leetcode.com/problems/maximum-product-after-k-increments/)|[C++](./C++/maximum-product-after-k-increments.cpp) [Python](./Python/maximum-product-after-k-increments.py)| _O(n + k)_     | _O(n)_         | Medium         || Heap, Freq Table, Sort, Math
 2248 | [Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/)|[C++](./C++/intersection-of-multiple-arrays.cpp) [Python](./Python/intersection-of-multiple-arrays.py)| _O(n * l + r)_     | _O(l)_         | Easy         || Hash Table, Counting Sort
 2251 | [Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/) | [C++](./C++/number-of-flowers-in-full-bloom.cpp) [Python](./Python/number-of-flowers-in-full-bloom.py) | _O(nlogn + mlogn)_   | _O(n)_        | Hard         | | Line Sweep, Binary Search
-2343 | [Query Kth Smallest Trimmed Number](https://leetcode.com/problems/query-kth-smallest-trimmed-number/) | [C++](./C++/query-kth-smallest-trimmed-number.cpp) [Python](./Python/query-kth-smallest-trimmed-number.py) | _O(q + n * l)_   | _O(l + n + q)_        | Medium         | | Sort, Quick Select, Radix Sort
+2343 | [Query Kth Smallest Trimmed Number](https://leetcode.com/problems/query-kth-smallest-trimmed-number/) | [C++](./C++/query-kth-smallest-trimmed-number.cpp) [Python](./Python/query-kth-smallest-trimmed-number.py) | _O(q + n * t)_   | _O(t + n + q)_        | Medium         | | Sort, Quick Select, Radix Sort
 
 <br/>
 <div align="right">
