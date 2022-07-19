@@ -1,4 +1,4 @@
-# Time:  O(n + m + logr), r is max(nums)
+# Time:  O(n + m + logr), r is max(numsDivide)
 # Space: O(n)
 
 # gcd
