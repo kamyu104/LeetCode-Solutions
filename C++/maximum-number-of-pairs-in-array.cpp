@@ -5,8 +5,7 @@
 class Solution {
 public:
     vector<int> numberOfPairs(vector<int>& nums) {
-        static const int MAX_NUM = 100;
-        vector<int> cnt(MAX_NUM + 1);
+        vector<int> cnt(*max_element(cbegin(nums), cend(nums)) + 1);
         int pair_cnt = 0;
         for (const auto& x : nums) {
             cnt[x] ^= 1;
