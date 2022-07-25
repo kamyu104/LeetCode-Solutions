@@ -8,7 +8,7 @@ class Solution(object):
         :type peaks: List[List[int]]
         :rtype: int
         """
-        peaks.sort(key=lambda x: (x[0]-x[1], -(x[0]+x[1])))
+        peaks.sort(key=lambda x: (x[0]-x[1], -(x[0]+x[1])))  # rotate points by 45 degrees and we only care the largest new y in the same new x
         result = mx = 0
         for i in xrange(len(peaks)):
             if peaks[i][0]+peaks[i][1] <= mx:
@@ -38,7 +38,7 @@ class Solution2(object):
         for i in xrange(len(peaks)):
             while stk and is_covered(peaks[stk[-1]], peaks[i]):
                 stk.pop()
-            if (i-1 == -1 or peaks[i-1] != peaks[i]) and (not stk or not is_covered(peaks[i], peaks[stk[-1]])):
+            if (i-1 == -1 or peaks[i-1] != peaks[i]) and (not stk or not is_covered(peaks[i], peaks[stk[-1]])):  # not duplicted and not covered
                 stk.append(i)
         return len(stk)
             
