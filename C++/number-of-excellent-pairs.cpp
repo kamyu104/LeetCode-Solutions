@@ -1,5 +1,5 @@
-// Time:  O(n + (logn)^2)
-// Space: O(logn)
+// Time:  O(n + (logn)^2) = O(n)
+// Space: O(n + logn) = O(n)
 
 // bit manipulation, freq table, combinatorics
 class Solution {
