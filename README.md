@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2344%20%2F%202344-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2354%20%2F%202354-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -603,6 +603,10 @@
 2325 | [Decode the Message](https://leetcode.com/problems/decode-the-message/) | [C++](./C++/decode-the-message.cpp) [Python](./Python/decode-the-message.py) | _O(n + m)_ | _O(1)_ | Easy || String, Hash Table
 2341 | [Maximum Number of Pairs in Array](https://leetcode.com/problems/maximum-number-of-pairs-in-array/) | [C++](./C++/maximum-number-of-pairs-in-array.cpp) [Python](./Python/maximum-number-of-pairs-in-array.py) | _O(n)_ | _O(r)_ | Easy || Freq Table
 2342 | [Max Sum of a Pair With Equal Sum of Digits](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) | [C++](./C++/max-sum-of-a-pair-with-equal-sum-of-digits.cpp) [Python](./Python/max-sum-of-a-pair-with-equal-sum-of-digits.py) | _O(nlogr)_ | _O(n)_ | Medium || Hash Table, Greedy
+2347 | [Best Poker Hand](https://leetcode.com/problems/best-poker-hand/) | [C++](./C++/best-poker-hand.cpp) [Python](./Python/best-poker-hand.py) | _O(1)_ | _O(1)_ | Easy || Freq Table
+2351 | [First Letter to Appear Twice](https://leetcode.com/problems/first-letter-to-appear-twice/) | [C++](./C++/first-letter-to-appear-twice.cpp) [Python](./Python/first-letter-to-appear-twice.py) | _O(n)_ | _O(1)_ | Easy || String, Hash Table
+2352 | [Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/) | [C++](./C++/equal-row-and-column-pairs.cpp) [Python](./Python/equal-row-and-column-pairs.py) | _O(n^2)_ | _O(n^2)_ | Medium ||  Hash Table
+2354 | [Number of Excellent Pairs](https://leetcode.com/problems/number-of-excellent-pairs/) | [C++](./C++/number-of-excellent-pairs.cpp) [Python](./Python/number-of-excellent-pairs.py) | _O(n)_ | _O(n)_ | Hard ||  Bit Manipulation, Sort, Two Pointers, Freq Table, Combinatorics
 
 <br/>
 <div align="right">
@@ -738,6 +742,8 @@
 2335 | [Minimum Amount of Time to Fill Cups](https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups/)|[C++](./C++/minimum-amount-of-time-to-fill-cups.cpp) [Python](./Python/minimum-amount-of-time-to-fill-cups.py)| _O(1)_     | _O(1)_         | Easy         | | Math, Constructive Algorithms
 2338 | [Count the Number of Ideal Arrays](https://leetcode.com/problems/count-the-number-of-ideal-arrays/)| [C++](./C++/count-the-number-of-ideal-arrays.cpp) [Python](./Python/count-the-number-of-ideal-arrays.py) | _O(sqrt(m) + n + m * (logm + sqrt(m)/log(sqrt(m))))_    | _O(sqrt(m) + n + logm)_          | Hard           | variant of [Count Ways to Make Array With Product](https://leetcode.com/problems/count-ways-to-make-array-with-product/) | DP, `Linear Sieve of Eratosthenes`, Factorization, Combinatorics
 2344 | [Minimum Deletions to Make Array Divisible](https://leetcode.com/problems/minimum-deletions-to-make-array-divisible/)|[C++](./C++/minimum-deletions-to-make-array-divisible.cpp) [Python](./Python/minimum-deletions-to-make-array-divisible.py)| _O(n + m + logr)_     | _O(1)_         | Hard         | | Math, GCD
+2345 | [Finding the Number of Visible Mountains](https://leetcode.com/problems/finding-the-number-of-visible-mountains/)|[C++](./C++/finding-the-number-of-visible-mountains.cpp) [Python](./Python/finding-the-number-of-visible-mountains.py)| _O(nlogn)_     | _O(1)_         | Medium         | 🔒 | Math, Sort, Mono Stack
+2350 | [Shortest Impossible Sequence of Rolls](https://leetcode.com/problems/shortest-impossible-sequence-of-rolls/)|[C++](./C++/shortest-impossible-sequence-of-rolls.cpp) [Python](./Python/shortest-impossible-sequence-of-rolls.py)| _O(n)_     | _O(k)_         | Hard         | | Constructive Algorithms
 
 <br/>
 <div align="right">
@@ -859,6 +865,7 @@
 2330 | [Valid Palindrome IV](https://leetcode.com/problems/valid-palindrome-iv/) | [C++](./C++/valid-palindrome-iv.cpp) [Python](./Python/valid-palindrome-iv.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | String, Two Pointers |
 2332 | [The Latest Time to Catch a Bus](https://leetcode.com/problems/the-latest-time-to-catch-a-bus/) | [C++](./C++/the-latest-time-to-catch-a-bus.cpp) [Python](./Python/the-latest-time-to-catch-a-bus.py) | _O(nlogn + mlogm)_ | _O(1)_ | Medium | | String, Two Pointers |
 2337 | [Move Pieces to Obtain a String](https://leetcode.com/problems/move-pieces-to-obtain-a-string/) | [C++](./C++/move-pieces-to-obtain-a-string.cpp) [Python](./Python/move-pieces-to-obtain-a-string.py) | _O(n + m)_ | _O(1)_ | Medium | | String, Two Pointers |
+2348 | [Number of Zero-Filled Subarrays](https://leetcode.com/problems/number-of-zero-filled-subarrays/) | [C++](./C++/number-of-zero-filled-subarrays.cpp) [Python](./Python/number-of-zero-filled-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Combinatorics |
 
 <br/>
 <div align="right">
@@ -1497,6 +1504,8 @@
 2286 | [Booking Concert Tickets in Groups](https://leetcode.com/problems/booking-concert-tickets-in-groups/) | [C++](./C++/booking-concert-tickets-in-groups.cpp) [Python](./Python/booking-concert-tickets-in-groups.py) | ctor: _O(n)_<br>gather: _O(logn)_<br>scatter: _O(logn)_, amortized | _O(n)_ | Hard | | Segment Tree, Binary Search
 2296 | [Design a Text Editor](https://leetcode.com/problems/design-a-text-editor/) | [C++](./C++/design-a-text-editor.cpp) [Python](./Python/design-a-text-editor.py) | ctor: _O(1)_<br>addText: _O(l)_<br>deleteText: _O(k)_<br>cursorLeft: _O(k)_<br>cursorRight: _O(k)_ | _O(n)_ | Hard | | Stack
 2336 | [Smallest Number in Infinite Set](https://leetcode.com/problems/smallest-number-in-infinite-set/) | [C++](./C++/smallest-number-in-infinite-set.cpp) [Python](./Python/smallest-number-in-infinite-set.py) | ctor: _O(1)_<br>popSmallest: _O(logn)_<br>addBack: _O(logn)_ | _O(n)_ | Medium | | Heap, BST
+2349 | [Design a Number Container System](https://leetcode.com/problems/design-a-number-container-system/) | [C++](./C++/design-a-number-container-system.cpp) [Python](./Python/design-a-number-container-system.py) | ctor: _O(1)_<br>change: _O(logn)_<br>find: _O(1)_ | _O(n)_ | Medium | | Sorted List, BST
+2353 | [Design a Food Rating System](https://leetcode.com/problems/design-a-food-rating-system/) | [C++](./C++/design-a-food-rating-system.cpp) [Python](./Python/design-a-food-rating-system.py) | ctor: _O(nlogn)_<br>changeRating: _O(logn)_<br>highestRated: _O(1)_ | _O(n)_ | Medium | | Sorted List, BST
 
 <br/>
 <div align="right">
@@ -1689,6 +1698,7 @@
 2324 | [Product Sales Analysis IV](https://leetcode.com/problems/product-sales-analysis-iv/) | [MySQL](./MySQL/product-sales-analysis-iv.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2329 | [Product Sales Analysis V](https://leetcode.com/problems/product-sales-analysis-v/) | [MySQL](./MySQL/product-sales-analysis-v.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2339 | [All the Matches of the League](https://leetcode.com/problems/all-the-matches-of-the-league/) | [MySQL](./MySQL/all-the-matches-of-the-league.sql) | _O(n^2)_ | _O(n^2)_       | Easy           |🔒||
+2346 | [Compute the Rank as a Percentage](https://leetcode.com/problems/compute-the-rank-as-a-percentage/) | [MySQL](./MySQL/compute-the-rank-as-a-percentage.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
