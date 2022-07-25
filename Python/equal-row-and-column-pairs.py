@@ -2,6 +2,7 @@
 # Space: O(n^2)
 
 import collections
+import itertools
 
 
 # hash table
