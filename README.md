@@ -447,7 +447,7 @@
 2281 | [Sum of Total Strength of Wizards](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) | [C++](./C++/sum-of-total-strength-of-wizards.cpp) [Python](./Python/sum-of-total-strength-of-wizards.py) | _O(n)_ | _O(n)_ | Hard | variant of [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Mono Stack, Prefix Sum
 2282 | [Number of People That Can Be Seen in a Grid](https://leetcode.com/problems/number-of-people-that-can-be-seen-in-a-grid/) | [C++](./C++/number-of-people-that-can-be-seen-in-a-grid.cpp) [Python](./Python/number-of-people-that-can-be-seen-in-a-grid.py) | _O(m * n)_  | _O(m + n)_         | Medium           | 🔒, variant of [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/) | Mono Stack
 2334 | [Subarray With Elements Greater Than Varying Threshold](https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/) | [C++](./C++/subarray-with-elements-greater-than-varying-threshold.cpp) [Python](./Python/subarray-with-elements-greater-than-varying-threshold.py) | _O(n)_ | _O(n)_ | Hard | variant of [Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/) | Mono Stack
-2355 | [Maximum Number of Books You Can Takemaximum-number-of-books-you-can-take/) | [C++](./C++/maximum-number-of-books-you-can-take.cpp) [Python](./Python/maximum-number-of-books-you-can-take.py) | _O(n)_  | _O(n)_         | Hard           | 🔒 | Mono Stack, Math
+2355 | [Maximum Number of Books You Can Take](https://leetcode.com/problems/maximum-number-of-books-you-can-take/) | [C++](./C++/maximum-number-of-books-you-can-take.cpp) [Python](./Python/maximum-number-of-books-you-can-take.py) | _O(n)_  | _O(n)_         | Hard           | 🔒 | Mono Stack, Math
 
 <br/>
 <div align="right">
@@ -1705,7 +1705,7 @@
 2329 | [Product Sales Analysis V](https://leetcode.com/problems/product-sales-analysis-v/) | [MySQL](./MySQL/product-sales-analysis-v.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2339 | [All the Matches of the League](https://leetcode.com/problems/all-the-matches-of-the-league/) | [MySQL](./MySQL/all-the-matches-of-the-league.sql) | _O(n^2)_ | _O(n^2)_       | Easy           |🔒||
 2346 | [Compute the Rank as a Percentage](https://leetcode.com/problems/compute-the-rank-as-a-percentage/) | [MySQL](./MySQL/compute-the-rank-as-a-percentage.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
-2356 | [Number of Unique Subjects Taught by Each Teachernumber-of-unique-subjects-taught-by-each-teacher/) | [MySQL](./MySQL/number-of-unique-subjects-taught-by-each-teacher.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+2356 | [Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/) | [MySQL](./MySQL/number-of-unique-subjects-taught-by-each-teacher.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
