@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// hash table
+// graph, hash table
 class Solution {
 public:
     int closestMeetingNode(vector<int>& edges, int node1, int node2) {
