@@ -1212,7 +1212,7 @@
 2320 | [Count Number of Ways to Place Houses](https://leetcode.com/problems/count-number-of-ways-to-place-houses/)| [C++](./C++/count-number-of-ways-to-place-houses.cpp) [Python](./Python/count-number-of-ways-to-place-houses.py) | _O(logn)_    | _O(1)_          | Medium           | variant of [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Matrix Exponentiation
 2327 | [Number of People Aware of a Secret](https://leetcode.com/problems/number-of-people-aware-of-a-secret/)| [C++](./C++/number-of-people-aware-of-a-secret.cpp) [Python](./Python/number-of-people-aware-of-a-secret.py) | _O(n)_    | _O(f)_          | Medium           | | DP
 2328 | [Number of Increasing Paths in a Grid](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/)| [C++](./C++/number-of-increasing-paths-in-a-grid.cpp) [Python](./Python/number-of-increasing-paths-in-a-grid.py) | _O(m * n)_    | _O(m * n)_          | Hard           | | Memoization, Topological Sort, DP
-2361 | [Minimum Costs Using the Train Line](https://leetcode.com/problems/minimum-costs-using-the-train-line/)| [C++](./C++/minimum-costs-using-the-train-line.cpp) [Python](./Python/minimum-costs-using-the-train-line.py) | _O(n)_    | _O(1)_          | Hard           | | DP
+2361 | [Minimum Costs Using the Train Line](https://leetcode.com/problems/minimum-costs-using-the-train-line/)| [C++](./C++/minimum-costs-using-the-train-line.cpp) [Python](./Python/minimum-costs-using-the-train-line.py) | _O(n)_    | _O(1)_          | Hard           | 🔒 | DP
 
 <br/>
 <div align="right">
