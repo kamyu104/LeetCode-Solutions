@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2354%20%2F%202354-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2361%20%2F%202361-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -447,6 +447,7 @@
 2281 | [Sum of Total Strength of Wizards](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) | [C++](./C++/sum-of-total-strength-of-wizards.cpp) [Python](./Python/sum-of-total-strength-of-wizards.py) | _O(n)_ | _O(n)_ | Hard | variant of [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Mono Stack, Prefix Sum
 2282 | [Number of People That Can Be Seen in a Grid](https://leetcode.com/problems/number-of-people-that-can-be-seen-in-a-grid/) | [C++](./C++/number-of-people-that-can-be-seen-in-a-grid.cpp) [Python](./Python/number-of-people-that-can-be-seen-in-a-grid.py) | _O(m * n)_  | _O(m + n)_         | Medium           | 🔒, variant of [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/) | Mono Stack
 2334 | [Subarray With Elements Greater Than Varying Threshold](https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/) | [C++](./C++/subarray-with-elements-greater-than-varying-threshold.cpp) [Python](./Python/subarray-with-elements-greater-than-varying-threshold.py) | _O(n)_ | _O(n)_ | Hard | variant of [Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/) | Mono Stack
+2355 | [Maximum Number of Books You Can Takemaximum-number-of-books-you-can-take/) | [C++](./C++/maximum-number-of-books-you-can-take.cpp) [Python](./Python/maximum-number-of-books-you-can-take.py) | _O(n)_  | _O(n)_         | Hard           | 🔒 | Mono Stack, Math
 
 <br/>
 <div align="right">
@@ -607,6 +608,7 @@
 2351 | [First Letter to Appear Twice](https://leetcode.com/problems/first-letter-to-appear-twice/) | [C++](./C++/first-letter-to-appear-twice.cpp) [Python](./Python/first-letter-to-appear-twice.py) | _O(n)_ | _O(1)_ | Easy || String, Hash Table
 2352 | [Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/) | [C++](./C++/equal-row-and-column-pairs.cpp) [Python](./Python/equal-row-and-column-pairs.py) | _O(n^2)_ | _O(n^2)_ | Medium ||  Hash Table
 2354 | [Number of Excellent Pairs](https://leetcode.com/problems/number-of-excellent-pairs/) | [C++](./C++/number-of-excellent-pairs.cpp) [Python](./Python/number-of-excellent-pairs.py) | _O(n)_ | _O(n)_ | Hard ||  Bit Manipulation, Sort, Two Pointers, Freq Table, Combinatorics
+2357 | [Make Array Zero by Subtracting Equal Amounts](https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/) | [C++](./C++/make-array-zero-by-subtracting-equal-amounts.cpp) [Python](./Python/make-array-zero-by-subtracting-equal-amounts.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
 
 <br/>
 <div align="right">
@@ -744,6 +746,7 @@
 2344 | [Minimum Deletions to Make Array Divisible](https://leetcode.com/problems/minimum-deletions-to-make-array-divisible/)|[C++](./C++/minimum-deletions-to-make-array-divisible.cpp) [Python](./Python/minimum-deletions-to-make-array-divisible.py)| _O(n + m + logr)_     | _O(1)_         | Hard         | | Math, GCD
 2345 | [Finding the Number of Visible Mountains](https://leetcode.com/problems/finding-the-number-of-visible-mountains/)|[C++](./C++/finding-the-number-of-visible-mountains.cpp) [Python](./Python/finding-the-number-of-visible-mountains.py)| _O(nlogn)_     | _O(1)_         | Medium         | 🔒 | Math, Sort, Mono Stack
 2350 | [Shortest Impossible Sequence of Rolls](https://leetcode.com/problems/shortest-impossible-sequence-of-rolls/)|[C++](./C++/shortest-impossible-sequence-of-rolls.cpp) [Python](./Python/shortest-impossible-sequence-of-rolls.py)| _O(n)_     | _O(k)_         | Hard         | | Constructive Algorithms
+2358 | [Maximum Number of Groups Entering a Competition](https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/)|[C++](./C++/maximum-number-of-groups-entering-a-competition.cpp) [Python](./Python/maximum-number-of-groups-entering-a-competition.py)| _O(1)_     | _O(1)_         | Medium         | | Constructive Algorithms, Math
 
 <br/>
 <div align="right">
@@ -1209,6 +1212,7 @@
 2320 | [Count Number of Ways to Place Houses](https://leetcode.com/problems/count-number-of-ways-to-place-houses/)| [C++](./C++/count-number-of-ways-to-place-houses.cpp) [Python](./Python/count-number-of-ways-to-place-houses.py) | _O(logn)_    | _O(1)_          | Medium           | variant of [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Matrix Exponentiation
 2327 | [Number of People Aware of a Secret](https://leetcode.com/problems/number-of-people-aware-of-a-secret/)| [C++](./C++/number-of-people-aware-of-a-secret.cpp) [Python](./Python/number-of-people-aware-of-a-secret.py) | _O(n)_    | _O(f)_          | Medium           | | DP
 2328 | [Number of Increasing Paths in a Grid](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/)| [C++](./C++/number-of-increasing-paths-in-a-grid.cpp) [Python](./Python/number-of-increasing-paths-in-a-grid.py) | _O(m * n)_    | _O(m * n)_          | Hard           | | Memoization, Topological Sort, DP
+2361 | [Minimum Costs Using the Train Line](https://leetcode.com/problems/minimum-costs-using-the-train-line/)| [C++](./C++/minimum-costs-using-the-train-line.cpp) [Python](./Python/minimum-costs-using-the-train-line.py) | _O(n)_    | _O(1)_          | Hard           | | DP
 
 <br/>
 <div align="right">
@@ -1414,6 +1418,8 @@
 2204 | [Distance to a Cycle in Undirected Graph](https://leetcode.com/problems/distance-to-a-cycle-in-undirected-graph/) | [C++](./C++/distance-to-a-cycle-in-undirected-graph.cpp) [Python](./Python/distance-to-a-cycle-in-undirected-graph.py) | _O(\|V\| + \|E\|)_ | _O(\|V\| + \|E\|)_ | Hard | 🔒 | Graph, DFS, BFS |
 2242 | [Maximum Score of a Node Sequence](https://leetcode.com/problems/maximum-score-of-a-node-sequence/) | [C++](./C++/maximum-score-of-a-node-sequence.cpp) [Python](./Python/maximum-score-of-a-node-sequence.py) | _O(\|V\| + \|E\|)_ | _O(\|V\|)_ | Hard | | Graph |
 2307 | [Check for Contradictions in Equations](https://leetcode.com/problems/check-for-contradictions-in-equations/) | [C++](./C++/check-for-contradictions-in-equations.cpp)  [Python](./Python/check-for-contradictions-in-equations.py)  | _O(e + q)_ | _O(n)_ | Hard         | 🔒, variant of [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | DFS, Union Find|
+2359 | [Find Closest Node to Given Two Nodes](https://leetcode.com/problems/find-closest-node-to-given-two-nodes/) | [C++](./C++/find-closest-node-to-given-two-nodes.cpp)  [Python](./Python/find-closest-node-to-given-two-nodes.py)  | _O(n)_ | _O(n)_ | Medium         | | Graph, Hash Table, DFS |
+2360 | [Longest Cycle in a Graph](https://leetcode.com/problems/longest-cycle-in-a-graph/) | [C++](./C++/longest-cycle-in-a-graph.cpp)  [Python](./Python/longest-cycle-in-a-graph.py)  | _O(n)_ | _O(n)_ | Hard         | | Graph, Hash Table, DFS |
 
 <br/>
 <div align="right">
@@ -1699,6 +1705,7 @@
 2329 | [Product Sales Analysis V](https://leetcode.com/problems/product-sales-analysis-v/) | [MySQL](./MySQL/product-sales-analysis-v.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2339 | [All the Matches of the League](https://leetcode.com/problems/all-the-matches-of-the-league/) | [MySQL](./MySQL/all-the-matches-of-the-league.sql) | _O(n^2)_ | _O(n^2)_       | Easy           |🔒||
 2346 | [Compute the Rank as a Percentage](https://leetcode.com/problems/compute-the-rank-as-a-percentage/) | [MySQL](./MySQL/compute-the-rank-as-a-percentage.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2356 | [Number of Unique Subjects Taught by Each Teachernumber-of-unique-subjects-taught-by-each-teacher/) | [MySQL](./MySQL/number-of-unique-subjects-taught-by-each-teacher.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
