@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# hash table
+# graph, hash table
 class Solution(object):
     def closestMeetingNode(self, edges, node1, node2):
         """
