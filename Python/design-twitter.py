@@ -1,10 +1,11 @@
-# Time:  O(klogu), k is most recently number of tweets,
-#                  u is the number of the user's following.
+# Time:  O(u + klogk), k is most recently number of tweets,
+#                      u is the number of the user's following.
 # Space: O(t + f), t is the total number of tweets,
 #                  f is the total number of followings.
 
 import collections
 import heapq
+import random
 
 
 class Twitter(object):
@@ -34,13 +35,41 @@ class Twitter(object):
         :type userId: int
         :rtype: List[int]
         """
-        max_heap = []
+        def nth_element(nums, n, compare=lambda a, b: a < b):
+            def tri_partition(nums, left, right, target, compare):
+                mid = left
+                while mid <= right:
+                    if nums[mid] == target:
+                        mid += 1
+                    elif compare(nums[mid], target):
+                        nums[left], nums[mid] = nums[mid], nums[left]
+                        left += 1
+                        mid += 1
+                    else:
+                        nums[mid], nums[right] = nums[right], nums[mid]
+                        right -= 1
+                return left, right
+
+            left, right = 0, len(nums)-1
+            while left <= right:
+                pivot_idx = random.randint(left, right)
+                pivot_left, pivot_right = tri_partition(nums, left, right, nums[pivot_idx], compare)
+                if pivot_left <= n <= pivot_right:
+                    return
+                elif pivot_left > n:
+                    right = pivot_left-1
+                else:  # pivot_right < n.
+                    left = pivot_right+1
+
+        candidates = []
         if self.__messages[userId]:
-            heapq.heappush(max_heap, (-self.__messages[userId][-1][0], userId, 0))
+            candidates.append((-self.__messages[userId][-1][0], userId, 0))
         for uid in self.__followings[userId]:
             if self.__messages[uid]:
-                heapq.heappush(max_heap, (-self.__messages[uid][-1][0], uid, 0))
-
+                candidates.append((-self.__messages[uid][-1][0], uid, 0))
+        nth_element(candidates, self.__number_of_most_recent_tweets-1)
+        max_heap = candidates[:self.__number_of_most_recent_tweets]
+        heapq.heapify(max_heap)
         result = []
         while max_heap and len(result) < self.__number_of_most_recent_tweets:
             t, uid, curr = heapq.heappop(max_heap)
@@ -68,6 +97,3 @@ class Twitter(object):
         :rtype: void
         """
         self.__followings[followerId].discard(followeeId)
-
-
-
