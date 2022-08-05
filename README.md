@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2361%20%2F%202361-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2362%20%2F%202362-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1706,6 +1706,7 @@
 2339 | [All the Matches of the League](https://leetcode.com/problems/all-the-matches-of-the-league/) | [MySQL](./MySQL/all-the-matches-of-the-league.sql) | _O(n^2)_ | _O(n^2)_       | Easy           |🔒||
 2346 | [Compute the Rank as a Percentage](https://leetcode.com/problems/compute-the-rank-as-a-percentage/) | [MySQL](./MySQL/compute-the-rank-as-a-percentage.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2356 | [Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/) | [MySQL](./MySQL/number-of-unique-subjects-taught-by-each-teacher.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+2362 | [Generate the Invoice](https://leetcode.com/problems/generate-the-invoice/) | [MySQL](./MySQL/generate-the-invoice.sql) | _O(m + nlogn)_ | _O(n + m)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
