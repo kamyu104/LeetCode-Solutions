@@ -1,5 +1,5 @@
-// Time:  O(klogu), k is most recently number of tweets,
-//                  u is the number of the user's following.
+// Time:  O(u + klogk), k is most recently number of tweets,
+//                      u is the number of the user's following.
 // Space: O(t + f), t is the total number of tweets,
 //                  f is the total number of followings.
 
@@ -18,20 +18,24 @@ public:
     /** Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent. */
     vector<int> getNewsFeed(int userId) {
         using RIT = deque<pair<size_t, int>>::reverse_iterator;
-        priority_queue<tuple<size_t, RIT, RIT>> heap;
 
+        vector<tuple<size_t, RIT, RIT>> candidates;
         if (messages_[userId].size()) {
-            heap.emplace(make_tuple(messages_[userId].rbegin()->first,
+            candidates.emplace_back(messages_[userId].rbegin()->first,
                                     messages_[userId].rbegin(),
-                                    messages_[userId].rend()));
+                                    messages_[userId].rend());
         }
         for (const auto& id : followings_[userId]) {
             if (messages_[id].size()) {
-                heap.emplace(make_tuple(messages_[id].rbegin()->first,
+                candidates.emplace_back(messages_[id].rbegin()->first,
                                         messages_[id].rbegin(),
-                                        messages_[id].rend()));
+                                        messages_[id].rend());
             }
         }
+        if (size(candidates) > number_of_most_recent_tweets_) {
+            nth_element(begin(candidates), begin(candidates) + number_of_most_recent_tweets_ - 1, end(candidates));
+        }
+        priority_queue<tuple<size_t, RIT, RIT>> heap(cbegin(candidates), cbegin(candidates) + min(size(candidates), number_of_most_recent_tweets_));
         vector<int> res;
         while (!heap.empty() && res.size() < number_of_most_recent_tweets_) {
             const auto& top = heap.top();
@@ -70,13 +74,3 @@ private:
     unordered_map<int, deque<pair<size_t, int>>> messages_;
     size_t time_;
 };
-
-/**
- * Your Twitter object will be instantiated and called as such:
- * Twitter obj = new Twitter();
- * obj.postTweet(userId,tweetId);
- * vector<int> param_2 = obj.getNewsFeed(userId);
- * obj.follow(followerId,followeeId);
- * obj.unfollow(followerId,followeeId);
- */
- 
