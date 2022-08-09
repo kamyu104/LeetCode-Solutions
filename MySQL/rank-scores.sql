@@ -9,7 +9,7 @@ SELECT Ranks.Score, Ranks.Rank FROM Scores LEFT JOIN
        ON Scores.Score = Ranks.Score
        ORDER by Score DESC
 
- SELECT Score,  (SELECT COUNT(DISTINCT(Score)) FROM  Scores b WHERE b.Score > a.Score) + 1 AS Rank
+ SELECT Score,  (SELECT COUNT(DISTINCT(Score)) FROM  Scores b WHERE b.Score > a.Score) + 1 AS `Rank`
        FROM Scores a
        ORDER by Score DESC
 
