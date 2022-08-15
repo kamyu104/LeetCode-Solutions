@@ -9,7 +9,7 @@ class Solution(object):
         """
         def P(m, n):
             result = 1
-            for _ in xrange(min(m, n)):
+            for _ in xrange(n):
                 result *= m
                 m -= 1
             return result
