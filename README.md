@@ -612,6 +612,7 @@
 2363 | [Merge Similar Items](https://leetcode.com/problems/merge-similar-items/) | [C++](./C++/merge-similar-items.cpp) [Python](./Python/merge-similar-items.py) | _O((m + n) * log(m + n))_ | _O(m + n)_ | Easy || Freq Table
 2364 | [Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/) | [C++](./C++/count-number-of-bad-pairs.cpp) [Python](./Python/count-number-of-bad-pairs.py) | _O(n)_ | _O(n)_ | Medium | variant of [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/) | Hash Table
 2365 | [Task Scheduler II](https://leetcode.com/problems/task-scheduler-ii/) | [C++](./C++/task-scheduler-ii.cpp) [Python](./Python/task-scheduler-ii.py) | _O(n)_ | _O(n)_ | Medium || Hash Table
+2367 | [Number of Arithmetic Triplets](https://leetcode.com/problems/number-of-arithmetic-triplets/) | [C++](./C++/number-of-arithmetic-triplets.cpp) [Python](./Python/number-of-arithmetic-triplets.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
 
 <br/>
 <div align="right">
@@ -1000,6 +1001,7 @@
 2258 | [Escape the Spreading Fire](https://leetcode.com/problems/escape-the-spreading-fire/)| [C++](./C++/escape-the-spreading-fire.cpp) [Python](./Python/escape-the-spreading-fire.py)   | _O(m * n)_         | _O(m * n)_          | Hard         | | BFS |
 2290 | [Minimum Obstacle Removal to Reach Corner](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/)| [C++](./C++/minimum-obstacle-removal-to-reach-corner.cpp) [Python](./Python/minimum-obstacle-removal-to-reach-corner.py)| _O(m * n)_ | _O(m * n)_ | Hard | variant of [Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/) | `A* Search Algorithm`, 0-1 BFS, Deque |
 2316 | [Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/)| [C++](./C++/count-unreachable-pairs-of-nodes-in-an-undirected-graph.cpp) [Python](./Python/count-unreachable-pairs-of-nodes-in-an-undirected-graph.py)| _O(n)_ | _O(n)_ | Medium | | Flood Fill, BFS, Math |
+2368 | [Reachable Nodes With Restrictions](https://leetcode.com/problems/reachable-nodes-with-restrictions/)| [C++](./C++/reachable-nodes-with-restrictions.cpp) [Python](./Python/reachable-nodes-with-restrictions.py)| _O(n)_ | _O(n)_ | Medium | | BFS |
 
 <br/>
 <div align="right">
@@ -1216,6 +1218,8 @@
 2327 | [Number of People Aware of a Secret](https://leetcode.com/problems/number-of-people-aware-of-a-secret/)| [C++](./C++/number-of-people-aware-of-a-secret.cpp) [Python](./Python/number-of-people-aware-of-a-secret.py) | _O(n)_    | _O(f)_          | Medium           | | DP
 2328 | [Number of Increasing Paths in a Grid](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/)| [C++](./C++/number-of-increasing-paths-in-a-grid.cpp) [Python](./Python/number-of-increasing-paths-in-a-grid.py) | _O(m * n)_    | _O(m * n)_          | Hard           | | Memoization, Topological Sort, DP
 2361 | [Minimum Costs Using the Train Line](https://leetcode.com/problems/minimum-costs-using-the-train-line/)| [C++](./C++/minimum-costs-using-the-train-line.cpp) [Python](./Python/minimum-costs-using-the-train-line.py) | _O(n)_    | _O(1)_          | Hard           | 🔒 | DP
+2369 | [Check if There is a Valid Partition For The Array](https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/)| [C++](./C++/check-if-there-is-a-valid-partition-for-the-array.cpp) [Python](./Python/check-if-there-is-a-valid-partition-for-the-array.py) | _O(n)_    | _O(1)_          | Medium           | | DP
+2370 | [Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence/)| [C++](./C++/longest-ideal-subsequence.cpp) [Python](./Python/longest-ideal-subsequence.py) | _O(n)_    | _O(1)_          | Medium           | | DP
 
 <br/>
 <div align="right">
@@ -1369,6 +1373,7 @@
 2323 | [Find Minimum Time to Finish All Jobs II](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/) | [C++](./C++/find-minimum-time-to-finish-all-jobs-ii.cpp) [Python](./Python/find-minimum-time-to-finish-all-jobs-ii.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Greedy
 2340 | [Minimum Adjacent Swaps to Make a Valid Array](https://leetcode.com/problems/minimum-adjacent-swaps-to-make-a-valid-array/) | [C++](./C++/minimum-adjacent-swaps-to-make-a-valid-array.cpp) [Python](./Python/minimum-adjacent-swaps-to-make-a-valid-array.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Array, Greedy
 2366 | [Minimum Replacements to Sort the Array](https://leetcode.com/problems/minimum-replacements-to-sort-the-array/) | [C++](./C++/minimum-replacements-to-sort-the-array.cpp) [Python](./Python/minimum-replacements-to-sort-the-array.py) | _O(n)_ | _O(1)_ | Hard | | Greedy, Math
+2371 | [Minimize Maximum Value in a Grid](https://leetcode.com/problems/minimize-maximum-value-in-a-grid/) | [C++](./C++/minimize-maximum-value-in-a-grid.cpp) [Python](./Python/minimize-maximum-value-in-a-grid.py) | _O((m * n) * log(m * n))_   | _O(m * n)_        | Hard         | 🔒 | Sort, Greedy
 
 <br/>
 <div align="right">
@@ -1711,6 +1716,7 @@
 2346 | [Compute the Rank as a Percentage](https://leetcode.com/problems/compute-the-rank-as-a-percentage/) | [MySQL](./MySQL/compute-the-rank-as-a-percentage.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2356 | [Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/) | [MySQL](./MySQL/number-of-unique-subjects-taught-by-each-teacher.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 2362 | [Generate the Invoice](https://leetcode.com/problems/generate-the-invoice/) | [MySQL](./MySQL/generate-the-invoice.sql) | _O(m + nlogn)_ | _O(n + m)_       | Hard           |🔒||
+2372 | [Calculate the Influence of Each Salesperson](https://leetcode.com/problems/calculate-the-influence-of-each-salesperson/) | [MySQL](./MySQL/calculate-the-influence-of-each-salesperson.sql) | _O(sp + c + s)_ | _O(sp + c + s)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
