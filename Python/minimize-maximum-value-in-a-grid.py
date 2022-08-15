@@ -1,7 +1,7 @@
 # Time:  O((m * n) * log(m * n))
 # Space: O(m * n)
 
-# sort
+# sort, greedy
 class Solution(object):
     def minScore(self, grid):
         """
