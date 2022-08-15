@@ -39,9 +39,8 @@ public:
 private:
     int P(int m, int n) const {
         int result = 1;
-        while (n > 0) {
-            result *= m - n + 1;
-            --n;
+        while (n--) {
+            result *= m--;
         }
         return result;
     }
