@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// freq table
+// hash table
 class Solution {
 public:
     long long taskSchedulerII(vector<int>& tasks, int space) {
