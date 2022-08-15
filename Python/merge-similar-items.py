@@ -1,7 +1,7 @@
 # Time:  O((m + n) * log(m + n))
 # Space: O(m + n)
 
-# freq table
+# freq table, sort
 class Solution(object):
     def mergeSimilarItems(self, items1, items2):
         """
