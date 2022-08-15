@@ -1,7 +1,7 @@
 // Time:  O((m + n) * log(m + n))
 // Space: O(m + n)
 
-// freq table
+// freq table, sort
 class Solution {
 public:
     vector<vector<int>> mergeSimilarItems(vector<vector<int>>& items1, vector<vector<int>>& items2) {
