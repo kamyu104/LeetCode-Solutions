@@ -19,7 +19,7 @@ public:
             result += P(9, 1) * P(9, i - 1);
         }
         unordered_set<int> lookup;
-        for (int i = 0; i < digits.length(); ++i) {
+        for (int i = 0; i < size(digits); ++i) {
             for (int d = int(i == 0); d < digits[i] - '0'; ++d) {
                 if (lookup.count(d)) {
                     continue;
