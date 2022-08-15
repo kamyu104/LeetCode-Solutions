@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2362%20%2F%202362-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2376%20%2F%202376-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -609,6 +609,9 @@
 2352 | [Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/) | [C++](./C++/equal-row-and-column-pairs.cpp) [Python](./Python/equal-row-and-column-pairs.py) | _O(n^2)_ | _O(n^2)_ | Medium ||  Hash Table
 2354 | [Number of Excellent Pairs](https://leetcode.com/problems/number-of-excellent-pairs/) | [C++](./C++/number-of-excellent-pairs.cpp) [Python](./Python/number-of-excellent-pairs.py) | _O(n)_ | _O(n)_ | Hard ||  Bit Manipulation, Sort, Two Pointers, Freq Table, Combinatorics
 2357 | [Make Array Zero by Subtracting Equal Amounts](https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/) | [C++](./C++/make-array-zero-by-subtracting-equal-amounts.cpp) [Python](./Python/make-array-zero-by-subtracting-equal-amounts.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
+2363 | [Merge Similar Items](https://leetcode.com/problems/merge-similar-items/) | [C++](./C++/merge-similar-items.cpp) [Python](./Python/merge-similar-items.py) | _O((m + n) * log(m + n))_ | _O(m + n)_ | Easy || Freq Table
+2364 | [Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/) | [C++](./C++/count-number-of-bad-pairs.cpp) [Python](./Python/count-number-of-bad-pairs.py) | _O(n)_ | _O(n)_ | Medium | variant of [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/) | Hash Table
+2365 | [Task Scheduler II](https://leetcode.com/problems/task-scheduler-ii/) | [C++](./C++/task-scheduler-ii.cpp) [Python](./Python/task-scheduler-ii.py) | _O(n)_ | _O(n)_ | Medium || Hash Table
 
 <br/>
 <div align="right">
@@ -1365,6 +1368,7 @@
 2321 | [Maximum Score Of Spliced Array](https://leetcode.com/problems/maximum-score-of-spliced-array/) | [C++](./C++/maximum-score-of-spliced-array.cpp) [Python](./Python/maximum-score-of-spliced-array.py) | _O(n)_ | _O(1)_ | Hard | | Greedy, `Kadane's Algorithm`
 2323 | [Find Minimum Time to Finish All Jobs II](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/) | [C++](./C++/find-minimum-time-to-finish-all-jobs-ii.cpp) [Python](./Python/find-minimum-time-to-finish-all-jobs-ii.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Greedy
 2340 | [Minimum Adjacent Swaps to Make a Valid Array](https://leetcode.com/problems/minimum-adjacent-swaps-to-make-a-valid-array/) | [C++](./C++/minimum-adjacent-swaps-to-make-a-valid-array.cpp) [Python](./Python/minimum-adjacent-swaps-to-make-a-valid-array.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Array, Greedy
+2366 | [Minimum Replacements to Sort the Array](https://leetcode.com/problems/minimum-replacements-to-sort-the-array/) | [C++](./C++/minimum-replacements-to-sort-the-array.cpp) [Python](./Python/minimum-replacements-to-sort-the-array.py) | _O(n)_ | _O(1)_ | Hard | | Greedy, Math
 
 <br/>
 <div align="right">
