@@ -1,7 +1,7 @@
 // Time:  O((m * n) * log(m * n))
 // Space: O(m * n)
 
-// sort
+// sort, greedy
 class Solution {
 public:
     vector<vector<int>> minScore(vector<vector<int>>& grid) {
