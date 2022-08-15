@@ -266,6 +266,7 @@
 2293 | [Min Max Game](https://leetcode.com/problems/min-max-game/) | [C++](./C++/min-max-game.cpp) [Python](./Python/min-max-game.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 2319 | [Check if Matrix Is X-Matrix](https://leetcode.com/problems/check-if-matrix-is-x-matrix/) | [C++](./C++/check-if-matrix-is-x-matrix.cpp) [Python](./Python/check-if-matrix-is-x-matrix.py) | _O(n^2)_ | _O(1)_ | Easy | | Array
 2326 | [Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/) | [C++](./C++/spiral-matrix-iv.cpp) [Python](./Python/spiral-matrix-iv.py) | _O(m * n)_ | _O(1)_ | Medium | | Linked List, Array
+2373 | [Largest Local Values in a Matrix](https://leetcode.com/problems/largest-local-values-in-a-matrix/) | [C++](./C++/largest-local-values-in-a-matrix.cpp) [Python](./Python/largest-local-values-in-a-matrix.py) | _O(n^2)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -613,6 +614,7 @@
 2364 | [Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/) | [C++](./C++/count-number-of-bad-pairs.cpp) [Python](./Python/count-number-of-bad-pairs.py) | _O(n)_ | _O(n)_ | Medium | variant of [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/) | Hash Table
 2365 | [Task Scheduler II](https://leetcode.com/problems/task-scheduler-ii/) | [C++](./C++/task-scheduler-ii.cpp) [Python](./Python/task-scheduler-ii.py) | _O(n)_ | _O(n)_ | Medium || Hash Table
 2367 | [Number of Arithmetic Triplets](https://leetcode.com/problems/number-of-arithmetic-triplets/) | [C++](./C++/number-of-arithmetic-triplets.cpp) [Python](./Python/number-of-arithmetic-triplets.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
+2374 | [Node With Highest Edge Score](https://leetcode.com/problems/node-with-highest-edge-score/) | [C++](./C++/node-with-highest-edge-score.cpp) [Python](./Python/node-with-highest-edge-score.py) | _O(n)_ | _O(n)_ | Medium || Hash Table
 
 <br/>
 <div align="right">
@@ -751,6 +753,7 @@
 2345 | [Finding the Number of Visible Mountains](https://leetcode.com/problems/finding-the-number-of-visible-mountains/)|[C++](./C++/finding-the-number-of-visible-mountains.cpp) [Python](./Python/finding-the-number-of-visible-mountains.py)| _O(nlogn)_     | _O(1)_         | Medium         | 🔒 | Math, Sort, Mono Stack
 2350 | [Shortest Impossible Sequence of Rolls](https://leetcode.com/problems/shortest-impossible-sequence-of-rolls/)|[C++](./C++/shortest-impossible-sequence-of-rolls.cpp) [Python](./Python/shortest-impossible-sequence-of-rolls.py)| _O(n)_     | _O(k)_         | Hard         | | Constructive Algorithms
 2358 | [Maximum Number of Groups Entering a Competition](https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/)|[C++](./C++/maximum-number-of-groups-entering-a-competition.cpp) [Python](./Python/maximum-number-of-groups-entering-a-competition.py)| _O(1)_     | _O(1)_         | Medium         | | Constructive Algorithms, Math
+2376 | [Count Special Integers](https://leetcode.com/problems/count-special-integers/)|[C++](./C++/count-special-integers.cpp) [Python](./Python/count-special-integers.py)| _O(logn)_     | _O(logn)_         | Hard         | variant of [Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits/) | Combinatorics
 
 <br/>
 <div align="right">
@@ -1374,6 +1377,7 @@
 2340 | [Minimum Adjacent Swaps to Make a Valid Array](https://leetcode.com/problems/minimum-adjacent-swaps-to-make-a-valid-array/) | [C++](./C++/minimum-adjacent-swaps-to-make-a-valid-array.cpp) [Python](./Python/minimum-adjacent-swaps-to-make-a-valid-array.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Array, Greedy
 2366 | [Minimum Replacements to Sort the Array](https://leetcode.com/problems/minimum-replacements-to-sort-the-array/) | [C++](./C++/minimum-replacements-to-sort-the-array.cpp) [Python](./Python/minimum-replacements-to-sort-the-array.py) | _O(n)_ | _O(1)_ | Hard | | Greedy, Math
 2371 | [Minimize Maximum Value in a Grid](https://leetcode.com/problems/minimize-maximum-value-in-a-grid/) | [C++](./C++/minimize-maximum-value-in-a-grid.cpp) [Python](./Python/minimize-maximum-value-in-a-grid.py) | _O((m * n) * log(m * n))_   | _O(m * n)_        | Hard         | 🔒 | Sort, Greedy
+2375 | [Construct Smallest Number From DI String](https://leetcode.com/problems/construct-smallest-number-from-di-string/) | [C++](./C++/construct-smallest-number-from-di-string.cpp) [Python](./Python/construct-smallest-number-from-di-string.py) | _O(n)_   | _O(1)_        | Medium         | | Constructive Algorithms, Greedy
 
 <br/>
 <div align="right">
