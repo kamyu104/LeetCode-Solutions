@@ -1,7 +1,7 @@
 // Time:  O(nlogn + klogk)
 // Space: O(n + k)
 
-// heap
+// bfs, heap
 class Solution {
 public:
     long long kSum(vector<int>& nums, int k) {
