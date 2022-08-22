@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(h)
 
-// iterative dfs
+// iterative dfs, tree dp
 class Solution {
 public:
     int amountOfTime(TreeNode* root, int start) {
@@ -46,7 +46,7 @@ public:
 
 // Time:  O(n)
 // Space: O(h)
-// dfs
+// dfs, tree dp
 class Solution2 {
 public:
     int amountOfTime(TreeNode* root, int start) {
