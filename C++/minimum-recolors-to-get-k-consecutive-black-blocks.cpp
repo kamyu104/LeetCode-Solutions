@@ -12,7 +12,7 @@ public:
                 continue;
             }
             result = min(result, curr);
-            curr -= static_cast<int>(blocks[i] == 'W');
+            curr -= static_cast<int>(blocks[i + 1 - k] == 'W');
         }
         return result;
     }
