@@ -13,7 +13,7 @@ public:
         multiset<long long> segments = {prefix.back()};
         vector<long long> result;
         for (const auto& q : removeQueries) {
-            auto it = removed_idxs.emplace(q).first;
+            const auto it = removed_idxs.emplace(q).first;
             const int left = *prev(it), right = *next(it);
             segments.erase(segments.find(prefix[right] - prefix[left + 1]));
             segments.emplace(prefix[q] - prefix[left + 1]);
