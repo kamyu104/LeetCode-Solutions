@@ -4,7 +4,7 @@
 import heapq
 
 
-# heap
+# bfs, heap
 class Solution(object):
     def kSum(self, nums, k):
         """
