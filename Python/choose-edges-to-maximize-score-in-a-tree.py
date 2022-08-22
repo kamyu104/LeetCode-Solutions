@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# iterative dfs
+# iterative dfs, tree dp
 class Solution(object):
     def maxScore(self, edges):
         """
@@ -35,7 +35,7 @@ class Solution(object):
     
 # Time:  O(n)
 # Space: O(n)
-# dfs
+# dfs, tree dp
 class Solution2(object):
     def maxScore(self, edges):
         """
