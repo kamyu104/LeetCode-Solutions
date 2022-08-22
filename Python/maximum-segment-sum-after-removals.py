@@ -5,7 +5,7 @@ class UnionFind(object):  # Time: O(n * alpha(n)), Space: O(n)
     def __init__(self, nums):
         self.set = range(len(nums))
         self.rank = [0]*len(nums)
-        self.total = nums[:]
+        self.size = nums[:]
 
     def find_set(self, x):
         stk = []
@@ -25,11 +25,11 @@ class UnionFind(object):  # Time: O(n * alpha(n)), Space: O(n)
         self.set[x] = self.set[y]
         if self.rank[x] == self.rank[y]:
             self.rank[y] += 1
-        self.total[y] += self.total[x]
+        self.size[y] += self.size[x]
         return True
 
-    def size(self, x):
-        return self.total[self.find_set(x)]
+    def total(self, x):
+        return self.size[self.find_set(x)]
 
 
 # union find
@@ -50,7 +50,7 @@ class Solution(object):
                 uf.union_set(q-1, q)
             if q+1 < len(nums) and lookup[q+1]:
                 uf.union_set(q, q+1)
-            result[i-1] = max(result[i], uf.size(q))   
+            result[i-1] = max(result[i], uf.total(q))   
         return result
 
 
