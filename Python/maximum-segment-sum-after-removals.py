@@ -41,8 +41,8 @@ class Solution(object):
         :rtype: List[int]
         """
         result = [0]*len(removeQueries)
-        uf = UnionFind(nums)
         lookup = [0]*len(nums)
+        uf = UnionFind(nums)
         for i in reversed(xrange(1, len(removeQueries))): 
             q = removeQueries[i]
             lookup[q] = 1
