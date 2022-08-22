@@ -1,11 +1,66 @@
-# Time:  O(nlogn)
+# Time:  O(n)
 # Space: O(n)
 
+class UnionFind(object):  # Time: O(n * alpha(n)), Space: O(n)
+    def __init__(self, nums):
+        self.set = range(len(nums))
+        self.rank = [0]*len(nums)
+        self.total = nums[:]
+
+    def find_set(self, x):
+        stk = []
+        while self.set[x] != x:  # path compression
+            stk.append(x)
+            x = self.set[x]
+        while stk:
+            self.set[stk.pop()] = x
+        return x
+
+    def union_set(self, x, y):
+        x, y = self.find_set(x), self.find_set(y)
+        if x == y:
+            return False
+        if self.rank[x] > self.rank[y]:  # union by rank
+            x, y = y, x
+        self.set[x] = self.set[y]
+        if self.rank[x] == self.rank[y]:
+            self.rank[y] += 1
+        self.total[y] += self.total[x]
+        return True
+
+    def size(self, x):
+        return self.total[self.find_set(x)]
+
+
+# union find
+class Solution(object):
+    def maximumSegmentSum(self, nums, removeQueries):
+        """
+        :type nums: List[int]
+        :type removeQueries: List[int]
+        :rtype: List[int]
+        """
+        result = [0]*len(removeQueries)
+        uf = UnionFind(nums)
+        lookup = [0]*len(nums)
+        for i in reversed(xrange(1, len(removeQueries))): 
+            q = removeQueries[i]
+            lookup[q] = 1
+            if q-1 >= 0 and lookup[q-1]:
+                uf.union_set(q-1, q)
+            if q+1 < len(nums) and lookup[q+1]:
+                uf.union_set(q, q+1)
+            result[i-1] = max(result[i], uf.size(q))   
+        return result
+
+
+# Time:  O(nlogn)
+# Space: O(n)
 from sortedcontainers import SortedList
 
 
 # prefix sum, sorted list
-class Solution(object):
+class Solution2(object):
     def maximumSegmentSum(self, nums, removeQueries):
         """
         :type nums: List[int]
