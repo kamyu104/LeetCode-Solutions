@@ -488,6 +488,7 @@
 2054 | [Two Best Non-Overlapping Events](https://leetcode.com/problems/two-best-non-overlapping-events/) | [C++](./C++/two-best-non-overlapping-events.cpp) [Python](./Python/two-best-non-overlapping-events.py) | _O(nlogn)_ | _O(n)_ | Medium | | Line Sweep, Heap |
 2163 | [Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/) | [C++](./C++/minimum-difference-in-sums-after-removal-of-elements.cpp) [Python](./Python/minimum-difference-in-sums-after-removal-of-elements.py) | _O(nlogn)_ | _O(n)_ | Hard | | Heap, Prefix Sum |
 2208 | [Minimum Operations to Halve Array Sum](https://leetcode.com/problems/minimum-operations-to-halve-array-sum/) | [C++](./C++/minimum-operations-to-halve-array-sum.cpp) [Python](./Python/minimum-operations-to-halve-array-sum.py) | _O(nlogn)_ | _O(n)_ | Medium | | Heap |
+2386 | [Find the K-Sum of an Array](https://leetcode.com/problems/find-the-k-sum-of-an-array/) | [C++](./C++/find-the-k-sum-of-an-array.cpp) [Python](./Python/find-the-k-sum-of-an-array.py) | _O(nlogn + klogk)_ | _O(n + k)_ | Hard | | BFS, Heap |
 
 <br/>
 <div align="right">
@@ -1047,6 +1048,7 @@
 2265 | [Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/) | [C++](./C++/count-nodes-equal-to-average-of-subtree.cpp) [Python](./Python/count-nodes-equal-to-average-of-subtree.py) | _O(n)_ | _O(h)_ | Medium | | DFS, Tree |
 2322 | [Minimum Score After Removals on a Tree](https://leetcode.com/problems/minimum-score-after-removals-on-a-tree/) | [C++](./C++/minimum-score-after-removals-on-a-tree.cpp) [Python](./Python/minimum-score-after-removals-on-a-tree.py) | _O(n^2)_ | _O(n)_ | Hard | | DFS, Tree |
 2331 | [Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree/) | [C++](./C++/evaluate-boolean-binary-tree.cpp) [Python](./Python/evaluate-boolean-binary-tree.py) | _O(n)_ | _O(h)_ | Easy | | DFS |
+2385 | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/) | [C++](./C++/amount-of-time-for-binary-tree-to-be-infected.cpp) [Python](./Python/amount-of-time-for-binary-tree-to-be-infected.py) | _O(n)_ | _O(h)_ | Medium | | BFS, DFS, Tree DP |
 
 <br/>
 <div align="right">
@@ -1383,6 +1385,8 @@
 2366 | [Minimum Replacements to Sort the Array](https://leetcode.com/problems/minimum-replacements-to-sort-the-array/) | [C++](./C++/minimum-replacements-to-sort-the-array.cpp) [Python](./Python/minimum-replacements-to-sort-the-array.py) | _O(n)_ | _O(1)_ | Hard | | Greedy, Math
 2371 | [Minimize Maximum Value in a Grid](https://leetcode.com/problems/minimize-maximum-value-in-a-grid/) | [C++](./C++/minimize-maximum-value-in-a-grid.cpp) [Python](./Python/minimize-maximum-value-in-a-grid.py) | _O((m * n) * log(m * n))_   | _O(m * n)_        | Hard         | 🔒 | Sort, Greedy
 2375 | [Construct Smallest Number From DI String](https://leetcode.com/problems/construct-smallest-number-from-di-string/) | [C++](./C++/construct-smallest-number-from-di-string.cpp) [Python](./Python/construct-smallest-number-from-di-string.py) | _O(n)_   | _O(1)_        | Medium         | | Constructive Algorithms, Greedy
+2383 | [Minimum Hours of Training to Win a Competition](https://leetcode.com/problems/minimum-hours-of-training-to-win-a-competition/) | [C++](./C++/minimum-hours-of-training-to-win-a-competition.cpp) [Python](./Python/minimum-hours-of-training-to-win-a-competition.py) | _O(n)_ | _O(1)_ | Easy | | Greedy
+2384 | [Largest Palindromic Number](https://leetcode.com/problems/largest-palindromic-number/) | [C++](./C++/largest-palindromic-number.cpp) [Python](./Python/largest-palindromic-number.py) | _O(n)_ | _O(1)_ | Medium | | Freq Table, Greedy
 
 <br/>
 <div align="right">
