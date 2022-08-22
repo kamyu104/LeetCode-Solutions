@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// iterative dfs
+// iterative dfs, tree dp
 class Solution {
 public:
     long long maxScore(vector<vector<int>>& edges) {
@@ -45,7 +45,7 @@ public:
 
 // Time:  O(n)
 // Space: O(n)
-// dfs
+// dfs, tree dp
 class Solution2 {
 public:
     long long maxScore(vector<vector<int>>& edges) {
