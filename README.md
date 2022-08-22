@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2376%20%2F%202376-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2386%20%2F%202386-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -267,6 +267,7 @@
 2319 | [Check if Matrix Is X-Matrix](https://leetcode.com/problems/check-if-matrix-is-x-matrix/) | [C++](./C++/check-if-matrix-is-x-matrix.cpp) [Python](./Python/check-if-matrix-is-x-matrix.py) | _O(n^2)_ | _O(1)_ | Easy | | Array
 2326 | [Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/) | [C++](./C++/spiral-matrix-iv.cpp) [Python](./Python/spiral-matrix-iv.py) | _O(m * n)_ | _O(1)_ | Medium | | Linked List, Array
 2373 | [Largest Local Values in a Matrix](https://leetcode.com/problems/largest-local-values-in-a-matrix/) | [C++](./C++/largest-local-values-in-a-matrix.cpp) [Python](./Python/largest-local-values-in-a-matrix.py) | _O(n^2)_ | _O(1)_ | Easy | | Array
+2382 | [Maximum Segment Sum After Removals](https://leetcode.com/problems/maximum-segment-sum-after-removals/) | [C++](./C++/maximum-segment-sum-after-removals.cpp) [Python](./Python/maximum-segment-sum-after-removals.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Sorted List, BST, Union Find
 
 <br/>
 <div align="right">
@@ -393,6 +394,7 @@
 2299 | [Strong Password Checker II](https://leetcode.com/problems/strong-password-checker-ii/) | [C++](./C++/strong-password-checker-ii.cpp) [Python](./Python/strong-password-checker-ii.py) | _O(n)_   | _O(1)_        | Easy         | | String
 2301 | [Match Substring After Replacement](https://leetcode.com/problems/match-substring-after-replacement/) | [C++](./C++/match-substring-after-replacement.cpp) [Python](./Python/match-substring-after-replacement.py) | _O(n * k)_   | _O(m)_        | Hard         | | Brute Force
 2315 | [Count Asterisks](https://leetcode.com/problems/count-asterisks/) | [C++](./C++/count-asterisks.cpp) [Python](./Python/count-asterisks.py) | _O(n)_   | _O(1)_        | Easy         | | String
+2381 | [Shifting Letters II](https://leetcode.com/problems/shifting-letters-ii/) | [C++](./C++/shifting-letters-ii.cpp) [Python](./Python/shifting-letters-ii.py) | _O(n)_   | _O(n)_        | Medium         | | Line Sweep
 
 <br/>
 <div align="right">
@@ -876,6 +878,7 @@
 2332 | [The Latest Time to Catch a Bus](https://leetcode.com/problems/the-latest-time-to-catch-a-bus/) | [C++](./C++/the-latest-time-to-catch-a-bus.cpp) [Python](./Python/the-latest-time-to-catch-a-bus.py) | _O(nlogn + mlogm)_ | _O(1)_ | Medium | | String, Two Pointers |
 2337 | [Move Pieces to Obtain a String](https://leetcode.com/problems/move-pieces-to-obtain-a-string/) | [C++](./C++/move-pieces-to-obtain-a-string.cpp) [Python](./Python/move-pieces-to-obtain-a-string.py) | _O(n + m)_ | _O(1)_ | Medium | | String, Two Pointers |
 2348 | [Number of Zero-Filled Subarrays](https://leetcode.com/problems/number-of-zero-filled-subarrays/) | [C++](./C++/number-of-zero-filled-subarrays.cpp) [Python](./Python/number-of-zero-filled-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Combinatorics |
+2379 | [Minimum Recolors to Get K Consecutive Black Blocks](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) | [C++](./C++/minimum-recolors-to-get-k-consecutive-black-blocks.cpp) [Python](./Python/minimum-recolors-to-get-k-consecutive-black-blocks.py) | _O(n)_ | _O(1)_ | Easy | | Sliding Window
 
 <br/>
 <div align="right">
@@ -1223,6 +1226,8 @@
 2361 | [Minimum Costs Using the Train Line](https://leetcode.com/problems/minimum-costs-using-the-train-line/)| [C++](./C++/minimum-costs-using-the-train-line.cpp) [Python](./Python/minimum-costs-using-the-train-line.py) | _O(n)_    | _O(1)_          | Hard           | 🔒 | DP
 2369 | [Check if There is a Valid Partition For The Array](https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/)| [C++](./C++/check-if-there-is-a-valid-partition-for-the-array.cpp) [Python](./Python/check-if-there-is-a-valid-partition-for-the-array.py) | _O(n)_    | _O(1)_          | Medium           | | DP
 2370 | [Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence/)| [C++](./C++/longest-ideal-subsequence.cpp) [Python](./Python/longest-ideal-subsequence.py) | _O(n)_    | _O(1)_          | Medium           | | DP
+2378 | [Choose Edges to Maximize Score in a Tree](https://leetcode.com/problems/choose-edges-to-maximize-score-in-a-tree/) | [C++](./C++/choose-edges-to-maximize-score-in-a-tree.cpp) [Python](./Python/choose-edges-to-maximize-score-in-a-tree.py) | _O(n)_          | _O(n)_          | Medium           |🔒| DFS, Stack, Tree DP |
+2380 | [Time Needed to Rearrange a Binary String](https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/)| [C++](./C++/time-needed-to-rearrange-a-binary-string.cpp) [Python](./Python/time-needed-to-rearrange-a-binary-string.py) | _O(n)_    | _O(1)_          | Medium           | | DP
 
 <br/>
 <div align="right">
@@ -1721,6 +1726,7 @@
 2356 | [Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/) | [MySQL](./MySQL/number-of-unique-subjects-taught-by-each-teacher.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 2362 | [Generate the Invoice](https://leetcode.com/problems/generate-the-invoice/) | [MySQL](./MySQL/generate-the-invoice.sql) | _O(m + nlogn)_ | _O(n + m)_       | Hard           |🔒||
 2372 | [Calculate the Influence of Each Salesperson](https://leetcode.com/problems/calculate-the-influence-of-each-salesperson/) | [MySQL](./MySQL/calculate-the-influence-of-each-salesperson.sql) | _O(sp + c + s)_ | _O(sp + c + s)_       | Medium           |🔒||
+2377 | [Sort the Olympic Table](https://leetcode.com/problems/sort-the-olympic-table/) | [MySQL](./MySQL/sort-the-olympic-table.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
