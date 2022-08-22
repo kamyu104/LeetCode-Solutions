@@ -7,7 +7,7 @@ class TreeNode(object):
         pass
 
 
-# iterative dfs
+# iterative dfs, tree dp
 class Solution(object):
     def amountOfTime(self, root, start):
         """
@@ -48,7 +48,7 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(h)
-# dfs
+# dfs, tree dp
 class Solution2(object):
     def amountOfTime(self, root, start):
         """
