@@ -9,7 +9,7 @@ class Solution(object):
         :rtype: int
         """
         result = cnt = 0
-        for i, c in enumerate(s): 
+        for c in s: 
             if c == '0':
                 cnt += 1
                 continue
