@@ -24,6 +24,8 @@ class Encrypter(object):
         :type word1: str
         :rtype: str
         """
+        if any(c not in self.__lookup for c in word1):
+            return ""
         return "".join(self.__lookup[c] for c in word1)
 
     def decrypt(self, word2):
