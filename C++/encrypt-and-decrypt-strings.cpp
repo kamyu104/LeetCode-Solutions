@@ -18,7 +18,9 @@ public:
     string encrypt(string word1) {
         string result;
         for (const auto& c : word1) {
-            if (!lookup_.count(c)) return "";
+            if (!lookup_.count(c)) {
+                return "";
+            }
             result += lookup_[c];
         }
         return result;
