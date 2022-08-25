@@ -4,7 +4,7 @@
 class Solution {
 public:
     int minOperations(vector<int>& nums) {
-        int result = 0, max_len = 0;
+        int result = 0, max_len = 1;
         for (const auto& num : nums) {
             result += __builtin_popcount(num);
             max_len = max(max_len, bit_length(num));
