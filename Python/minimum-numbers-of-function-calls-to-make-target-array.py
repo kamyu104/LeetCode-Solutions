@@ -17,6 +17,6 @@ class Solution(object):
         result, max_len = 0, 0
         for num in nums:
             result += popcount(num)
-            max_len = max(max_len, num.bit_length())
+            max_len = max(max_len, max(num.bit_length(), 1))
         return result + max_len-1
             
