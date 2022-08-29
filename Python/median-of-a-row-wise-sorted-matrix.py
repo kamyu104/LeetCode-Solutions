@@ -1,4 +1,4 @@
-# Time:  O(logr * mlogn), r = O(right-left+1) = O(10^6), logr = O(20)
+# Time:  O(logr * mlogn), r = O(right-left+1) = O(10^6), O(logr) = O(20)
 # Space: O(1)
 
 import bisect
