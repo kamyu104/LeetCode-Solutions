@@ -9,11 +9,12 @@ public:
             unordered_map<char, int> lookup;
             for (int i = size(garbage) - 1; i >= 0; --i) {
                 for (const auto& c : garbage[i]) {
-                    if (!lookup.count(c)) {
-                        lookup[c] = i;
-                        if (size(lookup) == 3) {
-                            return lookup;
-                        }
+                    if (lookup.count(c)) {
+                        continue;
+                    }
+                    lookup[c] = i;
+                    if (size(lookup) == 3) {
+                        return lookup;
                     }
                 }
             }
