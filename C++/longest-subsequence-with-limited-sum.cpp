@@ -1,7 +1,7 @@
 // Time:  O(nlogn + qlogn)
 // Space: O(1)
 
-// sort, greedy, binary search
+// greedy, sort, binary search
 class Solution {
 public:
     vector<int> answerQueries(vector<int>& nums, vector<int>& queries) {
