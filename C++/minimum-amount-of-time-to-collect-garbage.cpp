@@ -1,7 +1,7 @@
-// Time:  O(n * l), l = max(g for g in garbage) = O(10)
+// Time:  O(n * l), l = max(len(g) for g in garbage) = O(10)
 // Space: O(1)
 
-// simulation
+// simulation, prefix sum
 class Solution {
 public:
     int garbageCollection(vector<string>& garbage, vector<int>& travel) {
@@ -25,9 +25,9 @@ public:
     }
 };
 
-// Time:  O(n * l), l = max(g for g in garbage) = O(10)
+// Time:  O(n * l), l = max(len(g) for g in garbage) = O(10)
 // Space: O(1)
-// simulation
+// simulation, prefix sum
 class Solution2 {
 public:
     int garbageCollection(vector<string>& garbage, vector<int>& travel) {
