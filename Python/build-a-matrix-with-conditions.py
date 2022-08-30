@@ -1,4 +1,4 @@
-# Time:  O(k + r + c), r = len(rowConditions), c = len(colConditions)
+# Time:  O(k^2 + r + c), r = len(rowConditions), c = len(colConditions)
 # Space: O(k + r + c)
 
 # topological sort
@@ -33,8 +33,10 @@ class Solution(object):
             return result
 
         row_order = topological_sort(rowConditions)
+        if len(row_order) != k:
+            return []
         col_order = topological_sort(colConditions)
-        if not (len(row_order) == k and len(col_order) == k):
+        if len(col_order) != k:
             return []
         row_idx = {x:i for i, x in enumerate(row_order)}
         col_idx = {x:i for i, x in enumerate(col_order)}
