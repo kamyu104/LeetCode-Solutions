@@ -20,6 +20,7 @@ public:
             }
             return lookup;
         };
+
         vector<int> lasts;
         for (const auto& [_, v] : find_lasts()) {
             lasts.emplace_back(v);
