@@ -8,22 +8,27 @@ class Solution(object):
         :type garbage: List[str]
         :type travel: List[int]
         :rtype: int
-        """
-        result = 0
-        lookup = {}
-        for i in reversed(xrange(len(garbage))):
-            for c in garbage[i]:
-                if c not in lookup:
+        """        
+        def find_lasts():
+            lookup = {}
+            for i in reversed(xrange(len(garbage))):
+                for c in garbage[i]:
+                    if c in lookup:
+                        continue
                     lookup[c] = i
-            result += len(garbage[i])
-        lasts = sorted(lookup.itervalues(), reverse=True)
-        curr = 0
+                    if len(lookup) == 3:
+                        return lookup
+            return lookup
+            
+        lasts = sorted(find_lasts().itervalues(), reverse=True)
+        result = curr = 0
         for i in xrange(len(garbage)):
             while lasts and lasts[-1] == i:
                 result += curr
                 lasts.pop()
             if i < len(travel):
                 curr += travel[i]
+            result += len(garbage[i])
         return result
 
 
