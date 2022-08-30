@@ -19,11 +19,9 @@ class Solution(object):
         lasts = sorted(lookup.itervalues(), reverse=True)
         curr = 0
         for i in xrange(len(garbage)):
-            while lasts[-1] == i:
+            while lasts and lasts[-1] == i:
                 result += curr
                 lasts.pop()
-                if not lasts:
-                    break
             if i < len(travel):
                 curr += travel[i]
         return result
