@@ -945,7 +945,7 @@
 2300 | [Successful Pairs of Spells and Potions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/) | [C++](./C++/successful-pairs-of-spells-and-potions.cpp) [Python](./Python/successful-pairs-of-spells-and-potions.py) | _O(mlogm + nlogm)_ | _O(1)_ | Medium | | Binary Search
 2333 | [Minimum Sum of Squared Difference](https://leetcode.com/problems/minimum-sum-of-squared-difference/) | [C++](./C++/minimum-sum-of-squared-difference.cpp) [Python](./Python/minimum-sum-of-squared-difference.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | | Binary Search
 2387 | [Median of a Row Wise Sorted Matrix](https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/) | [C++](./C++/median-of-a-row-wise-sorted-matrix.cpp) [Python](./Python/median-of-a-row-wise-sorted-matrix.py) | _O(logr * mlogn)_ | _O(1)_ | Medium | 🔒 | Binary Search |
-2389 | [Longest Subsequence With Limited Sum](https://leetcode.com/problems/longest-subsequence-with-limited-sum/) | [C++](./C++/longest-subsequence-with-limited-sum.cpp) [Python](./Python/longest-subsequence-with-limited-sum.py) | _O(nlogn + qlogn)_ | _O(1)_ | Easy | | Binary Search |
+2389 | [Longest Subsequence With Limited Sum](https://leetcode.com/problems/longest-subsequence-with-limited-sum/) | [C++](./C++/longest-subsequence-with-limited-sum.cpp) [Python](./Python/longest-subsequence-with-limited-sum.py) | _O(nlogn + qlogn)_ | _O(1)_ | Easy | | Sort, Greedy, Binary Search |
 
 <br/>
 <div align="right">
