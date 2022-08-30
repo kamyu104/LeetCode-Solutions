@@ -1,7 +1,7 @@
-# Time:  O(n * l), l = max(g for g in garbage) = O(10)
+# Time:  O(n * l), l = max(len(g) for g in garbage) = O(10)
 # Space: O(1)
 
-# simulation
+# simulation, prefix sum
 class Solution(object):
     def garbageCollection(self, garbage, travel):
         """
@@ -21,9 +21,9 @@ class Solution(object):
         return result
 
 
-# Time:  O(n * l), l = max(g for g in garbage) = O(10)
+# Time:  O(n * l), l = max(len(g) for g in garbage) = O(10)
 # Space: O(1)
-# simulation
+# simulation, prefix sum
 class Solution2(object):
     def garbageCollection(self, garbage, travel):
         """
