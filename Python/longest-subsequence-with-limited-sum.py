@@ -4,7 +4,7 @@
 import bisect
 
 
-# binary search
+# sort, greedy, binary search
 class Solution(object):
     def answerQueries(self, nums, queries):
         """
