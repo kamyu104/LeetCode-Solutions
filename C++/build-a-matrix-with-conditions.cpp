@@ -1,4 +1,4 @@
-// Time:  O(k + r + c), r = len(rowConditions), c = len(colConditions)
+// Time:  O(k^2 + r + c), r = len(rowConditions), c = len(colConditions)
 // Space: O(k + r + c)
 
 // topological sort
@@ -38,8 +38,11 @@ public:
         };
 
         const auto& row_order = topological_sort(rowConditions);
+        if (size(row_order) != k) {
+            return {};
+        }
         const auto& col_order = topological_sort(colConditions);
-        if (!(size(row_order) == k && size(col_order) == k)) {
+        if (size(col_order) != k) {
             return {};
         }
         vector<int> row_idx(k);
