@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2386%20%2F%202386-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2392%20%2F%202392-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -268,6 +268,7 @@
 2326 | [Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/) | [C++](./C++/spiral-matrix-iv.cpp) [Python](./Python/spiral-matrix-iv.py) | _O(m * n)_ | _O(1)_ | Medium | | Linked List, Array
 2373 | [Largest Local Values in a Matrix](https://leetcode.com/problems/largest-local-values-in-a-matrix/) | [C++](./C++/largest-local-values-in-a-matrix.cpp) [Python](./Python/largest-local-values-in-a-matrix.py) | _O(n^2)_ | _O(1)_ | Easy | | Array
 2382 | [Maximum Segment Sum After Removals](https://leetcode.com/problems/maximum-segment-sum-after-removals/) | [C++](./C++/maximum-segment-sum-after-removals.cpp) [Python](./Python/maximum-segment-sum-after-removals.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Sorted List, BST, Union Find
+2391 | [Minimum Amount of Time to Collect Garbage](https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/) | [C++](./C++/minimum-amount-of-time-to-collect-garbage.cpp) [Python](./Python/minimum-amount-of-time-to-collect-garbage.py) | _O(n * l)_ | _O(1)_ | Medium | | Prefix Sum, Simulation
 
 <br/>
 <div align="right">
@@ -395,6 +396,7 @@
 2301 | [Match Substring After Replacement](https://leetcode.com/problems/match-substring-after-replacement/) | [C++](./C++/match-substring-after-replacement.cpp) [Python](./Python/match-substring-after-replacement.py) | _O(n * k)_   | _O(m)_        | Hard         | | Brute Force
 2315 | [Count Asterisks](https://leetcode.com/problems/count-asterisks/) | [C++](./C++/count-asterisks.cpp) [Python](./Python/count-asterisks.py) | _O(n)_   | _O(1)_        | Easy         | | String
 2381 | [Shifting Letters II](https://leetcode.com/problems/shifting-letters-ii/) | [C++](./C++/shifting-letters-ii.cpp) [Python](./Python/shifting-letters-ii.py) | _O(n)_   | _O(n)_        | Medium         | | Line Sweep
+2390 | [Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/) | [C++](./C++/removing-stars-from-a-string.cpp) [Python](./Python/removing-stars-from-a-string.py) | _O(n)_   | _O(n)_        | Medium         | | String, Stack
 
 <br/>
 <div align="right">
@@ -942,6 +944,8 @@
 2250 | [Count Number of Rectangles Containing Each Point](https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/) | [C++](./C++/count-number-of-rectangles-containing-each-point.cpp) [Python](./Python/count-number-of-rectangles-containing-each-point.py) | _O(nlogn + m * max_y * logn)_ | _O(n)_ | Medium | | Bucket Sort, Binary Search
 2300 | [Successful Pairs of Spells and Potions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/) | [C++](./C++/successful-pairs-of-spells-and-potions.cpp) [Python](./Python/successful-pairs-of-spells-and-potions.py) | _O(mlogm + nlogm)_ | _O(1)_ | Medium | | Binary Search
 2333 | [Minimum Sum of Squared Difference](https://leetcode.com/problems/minimum-sum-of-squared-difference/) | [C++](./C++/minimum-sum-of-squared-difference.cpp) [Python](./Python/minimum-sum-of-squared-difference.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | | Binary Search
+2387 | [Median of a Row Wise Sorted Matrix](https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/) | [C++](./C++/median-of-a-row-wise-sorted-matrix.cpp) [Python](./Python/median-of-a-row-wise-sorted-matrix.py) | _O(logr * mlogn)_ | _O(1)_ | Medium | 🔒 | Binary Search |
+2389 | [Longest Subsequence With Limited Sum](https://leetcode.com/problems/longest-subsequence-with-limited-sum/) | [C++](./C++/longest-subsequence-with-limited-sum.cpp) [Python](./Python/longest-subsequence-with-limited-sum.py) | _O(nlogn + qlogn)_ | _O(1)_ | Easy | | Binary Search |
 
 <br/>
 <div align="right">
@@ -1442,6 +1446,7 @@
 2307 | [Check for Contradictions in Equations](https://leetcode.com/problems/check-for-contradictions-in-equations/) | [C++](./C++/check-for-contradictions-in-equations.cpp)  [Python](./Python/check-for-contradictions-in-equations.py)  | _O(e + q)_ | _O(n)_ | Hard         | 🔒, variant of [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | DFS, Union Find|
 2359 | [Find Closest Node to Given Two Nodes](https://leetcode.com/problems/find-closest-node-to-given-two-nodes/) | [C++](./C++/find-closest-node-to-given-two-nodes.cpp)  [Python](./Python/find-closest-node-to-given-two-nodes.py)  | _O(n)_ | _O(n)_ | Medium         | | Graph, Hash Table, DFS |
 2360 | [Longest Cycle in a Graph](https://leetcode.com/problems/longest-cycle-in-a-graph/) | [C++](./C++/longest-cycle-in-a-graph.cpp)  [Python](./Python/longest-cycle-in-a-graph.py)  | _O(n)_ | _O(n)_ | Hard         | | Graph, Hash Table, DFS |
+2392 | [Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/) | [C++](./C++/build-a-matrix-with-conditions.cpp)  [Python](./Python/build-a-matrix-with-conditions.py)  | _O(k^2 + r + c)_ | _O(k + r + c)_ | Hard         | | Graph, Topological Sort |
 
 <br/>
 <div align="right">
@@ -1731,6 +1736,7 @@
 2362 | [Generate the Invoice](https://leetcode.com/problems/generate-the-invoice/) | [MySQL](./MySQL/generate-the-invoice.sql) | _O(m + nlogn)_ | _O(n + m)_       | Hard           |🔒||
 2372 | [Calculate the Influence of Each Salesperson](https://leetcode.com/problems/calculate-the-influence-of-each-salesperson/) | [MySQL](./MySQL/calculate-the-influence-of-each-salesperson.sql) | _O(sp + c + s)_ | _O(sp + c + s)_       | Medium           |🔒||
 2377 | [Sort the Olympic Table](https://leetcode.com/problems/sort-the-olympic-table/) | [MySQL](./MySQL/sort-the-olympic-table.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+2388 | [Change Null Values in a Table to the Previous Value](https://leetcode.com/problems/change-null-values-in-a-table-to-the-previous-value/) | [MySQL](./MySQL/change-null-values-in-a-table-to-the-previous-value.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
