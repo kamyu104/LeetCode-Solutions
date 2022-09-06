@@ -1,4 +1,4 @@
-// Time:  O(n + mlogn)
+// Time:  O(mlogm + n + mlogn)
 // Space: O(n)
 
 // one heap solution
@@ -27,7 +27,7 @@ public:
     }
 };
 
-// Time:  O(n + mlogn)
+// Time:  O(mlogm + n + mlogn)
 // Space: O(n)
 // two heaps solution
 class Solution2 {
