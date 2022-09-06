@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2392%20%2F%202392-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2402%20%2F%202402-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -108,6 +108,7 @@
 2220 | [Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/) | [C++](./C++/minimum-bit-flips-to-convert-number.cpp) [Python](./Python/minimum-bit-flips-to-convert-number.py) | _O(logn)_ | _O(1)_ | Easy || Bit Manipulation
 2275 | [Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/) | [C++](./C++/largest-combination-with-bitwise-and-greater-than-zero.cpp) [Python](./Python/largest-combination-with-bitwise-and-greater-than-zero.py) | _O(nlogr)_ | _O(logr)_ | Medium || Bit Manipulation, Freq Table
 2317 | [Maximum XOR After Operations](https://leetcode.com/problems/maximum-xor-after-operations/) | [C++](./C++/maximum-xor-after-operations.cpp) [Python](./Python/maximum-xor-after-operations.py) | _O(n)_ | _O(1)_ | Medium || Bit Manipulation, Greedy
+2397 | [Maximum Rows Covered by Columns](https://leetcode.com/problems/maximum-rows-covered-by-columns/) | [C++](./C++/maximum-rows-covered-by-columns.cpp) [Python](./Python/maximum-rows-covered-by-columns.py) | _O(m * n + m * C(n, k))_ | _O(m)_ | Medium || Bitmasks, `Hakmem Item 175`
 
 <br/>
 <div align="right">
@@ -467,6 +468,7 @@
 1438 | [Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)| [C++](./C++/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit.cpp) [Python](./Python/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit.py) | _O(n)_        | _O(n)_          | Hard           | | Mono Deque |
 1499 | [Max Value of Equation](https://leetcode.com/problems/max-value-of-equation/)| [C++](./C++/max-value-of-equation.cpp) [Python](./Python/max-value-of-equation.py) | _O(n)_        | _O(n)_          | Hard           | | Mono Deque |
 1696 | [Jump Game VI](https://leetcode.com/problems/jump-game-vi/) | [C++](./C++/jump-game-vi.cpp) [Python](./Python/jump-game-vi.py) | _O(n)_ | _O(k)_ | Medium | | Mono Deque, Sliding Window |
+2398 | [Maximum Number of Robots Within Budget](https://leetcode.com/problems/maximum-number-of-robots-within-budget/) | [C++](./C++/maximum-number-of-robots-within-budget.cpp) [Python](./Python/maximum-number-of-robots-within-budget.py) | _O(n)_ | _O(n)_ | Hard | | Mono Deque, Sliding Window, Two Pointers |
 
 <br/>
 <div align="right">
@@ -620,6 +622,7 @@
 2365 | [Task Scheduler II](https://leetcode.com/problems/task-scheduler-ii/) | [C++](./C++/task-scheduler-ii.cpp) [Python](./Python/task-scheduler-ii.py) | _O(n)_ | _O(n)_ | Medium || Hash Table
 2367 | [Number of Arithmetic Triplets](https://leetcode.com/problems/number-of-arithmetic-triplets/) | [C++](./C++/number-of-arithmetic-triplets.cpp) [Python](./Python/number-of-arithmetic-triplets.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
 2374 | [Node With Highest Edge Score](https://leetcode.com/problems/node-with-highest-edge-score/) | [C++](./C++/node-with-highest-edge-score.cpp) [Python](./Python/node-with-highest-edge-score.py) | _O(n)_ | _O(n)_ | Medium || Hash Table
+2395 | [Find Subarrays With Equal Sum](https://leetcode.com/problems/find-subarrays-with-equal-sum/) | [C++](./C++/find-subarrays-with-equal-sum.cpp) [Python](./Python/find-subarrays-with-equal-sum.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
 
 <br/>
 <div align="right">
@@ -759,6 +762,7 @@
 2350 | [Shortest Impossible Sequence of Rolls](https://leetcode.com/problems/shortest-impossible-sequence-of-rolls/)|[C++](./C++/shortest-impossible-sequence-of-rolls.cpp) [Python](./Python/shortest-impossible-sequence-of-rolls.py)| _O(n)_     | _O(k)_         | Hard         | | Constructive Algorithms
 2358 | [Maximum Number of Groups Entering a Competition](https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/)|[C++](./C++/maximum-number-of-groups-entering-a-competition.cpp) [Python](./Python/maximum-number-of-groups-entering-a-competition.py)| _O(1)_     | _O(1)_         | Medium         | | Constructive Algorithms, Math
 2376 | [Count Special Integers](https://leetcode.com/problems/count-special-integers/)|[C++](./C++/count-special-integers.cpp) [Python](./Python/count-special-integers.py)| _O(logn)_     | _O(logn)_         | Hard         | variant of [Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits/) | Combinatorics
+2396 | [Strictly Palindromic Number](https://leetcode.com/problems/strictly-palindromic-number/)|[C++](./C++/strictly-palindromic-number.cpp) [Python](./Python/strictly-palindromic-number.py)| _O(1)_     | _O(1)_         | Medium         || Math
 
 <br/>
 <div align="right">
@@ -882,6 +886,7 @@
 2337 | [Move Pieces to Obtain a String](https://leetcode.com/problems/move-pieces-to-obtain-a-string/) | [C++](./C++/move-pieces-to-obtain-a-string.cpp) [Python](./Python/move-pieces-to-obtain-a-string.py) | _O(n + m)_ | _O(1)_ | Medium | | String, Two Pointers |
 2348 | [Number of Zero-Filled Subarrays](https://leetcode.com/problems/number-of-zero-filled-subarrays/) | [C++](./C++/number-of-zero-filled-subarrays.cpp) [Python](./Python/number-of-zero-filled-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Combinatorics |
 2379 | [Minimum Recolors to Get K Consecutive Black Blocks](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) | [C++](./C++/minimum-recolors-to-get-k-consecutive-black-blocks.cpp) [Python](./Python/minimum-recolors-to-get-k-consecutive-black-blocks.py) | _O(n)_ | _O(1)_ | Easy | | Sliding Window
+2393 | [Count Strictly Increasing Subarrays](https://leetcode.com/problems/count-strictly-increasing-subarrays/) | [C++](./C++/count-strictly-increasing-subarrays.cpp) [Python](./Python/count-strictly-increasing-subarrays.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Two Pointers |
 
 <br/>
 <div align="right">
@@ -1737,6 +1742,7 @@
 2372 | [Calculate the Influence of Each Salesperson](https://leetcode.com/problems/calculate-the-influence-of-each-salesperson/) | [MySQL](./MySQL/calculate-the-influence-of-each-salesperson.sql) | _O(sp + c + s)_ | _O(sp + c + s)_       | Medium           |🔒||
 2377 | [Sort the Olympic Table](https://leetcode.com/problems/sort-the-olympic-table/) | [MySQL](./MySQL/sort-the-olympic-table.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 2388 | [Change Null Values in a Table to the Previous Value](https://leetcode.com/problems/change-null-values-in-a-table-to-the-previous-value/) | [MySQL](./MySQL/change-null-values-in-a-table-to-the-previous-value.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2394 | [Employees With Deductions](https://leetcode.com/problems/employees-with-deductions/) | [MySQL](./MySQL/employees-with-deductions.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
