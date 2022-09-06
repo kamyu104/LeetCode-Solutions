@@ -13,7 +13,7 @@ class Solution(object):
         :rtype: int
         """
         meetings.sort()
-        min_heap = [(-1, i) for i in xrange(n)]
+        min_heap = [(meetings[0][0], i) for i in xrange(n)]
         result = [0]*n
         for s, e in meetings:
             while min_heap and min_heap[0][0] < s:
