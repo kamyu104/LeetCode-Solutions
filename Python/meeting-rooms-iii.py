@@ -1,4 +1,4 @@
-# Time:  O(n + mlogn)
+# Time:  O(mlogm + n + mlogn)
 # Space: O(n)
 
 import heapq
@@ -25,7 +25,7 @@ class Solution(object):
         return max(xrange(n), key=lambda x:result[x])
 
 
-# Time:  O(n + mlogn)
+# Time:  O(mlogm + n + mlogn)
 # Space: O(n)
 import heapq
 
