@@ -493,6 +493,7 @@
 2163 | [Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/) | [C++](./C++/minimum-difference-in-sums-after-removal-of-elements.cpp) [Python](./Python/minimum-difference-in-sums-after-removal-of-elements.py) | _O(nlogn)_ | _O(n)_ | Hard | | Heap, Prefix Sum |
 2208 | [Minimum Operations to Halve Array Sum](https://leetcode.com/problems/minimum-operations-to-halve-array-sum/) | [C++](./C++/minimum-operations-to-halve-array-sum.cpp) [Python](./Python/minimum-operations-to-halve-array-sum.py) | _O(nlogn)_ | _O(n)_ | Medium | | Heap |
 2386 | [Find the K-Sum of an Array](https://leetcode.com/problems/find-the-k-sum-of-an-array/) | [C++](./C++/find-the-k-sum-of-an-array.cpp) [Python](./Python/find-the-k-sum-of-an-array.py) | _O(nlogn + klogk)_ | _O(n + k)_ | Hard | | BFS, Heap |
+2402 | [Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/) | [C++](./C++/meeting-rooms-iii.cpp) [Python](./Python/meeting-rooms-iii.py) | _O(mlogm + n + mlogn)_ | _O(n)_ | Hard | | Heap |
 
 <br/>
 <div align="right">
@@ -623,6 +624,7 @@
 2367 | [Number of Arithmetic Triplets](https://leetcode.com/problems/number-of-arithmetic-triplets/) | [C++](./C++/number-of-arithmetic-triplets.cpp) [Python](./Python/number-of-arithmetic-triplets.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
 2374 | [Node With Highest Edge Score](https://leetcode.com/problems/node-with-highest-edge-score/) | [C++](./C++/node-with-highest-edge-score.cpp) [Python](./Python/node-with-highest-edge-score.py) | _O(n)_ | _O(n)_ | Medium || Hash Table
 2395 | [Find Subarrays With Equal Sum](https://leetcode.com/problems/find-subarrays-with-equal-sum/) | [C++](./C++/find-subarrays-with-equal-sum.cpp) [Python](./Python/find-subarrays-with-equal-sum.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
+2399 | [Check Distances Between Same Letters](https://leetcode.com/problems/check-distances-between-same-letters/) | [C++](./C++/check-distances-between-same-letters.cpp) [Python](./Python/check-distances-between-same-letters.py) | _O(n)_ | _O(1)_ | Easy || Hash Table
 
 <br/>
 <div align="right">
@@ -763,6 +765,7 @@
 2358 | [Maximum Number of Groups Entering a Competition](https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/)|[C++](./C++/maximum-number-of-groups-entering-a-competition.cpp) [Python](./Python/maximum-number-of-groups-entering-a-competition.py)| _O(1)_     | _O(1)_         | Medium         | | Constructive Algorithms, Math
 2376 | [Count Special Integers](https://leetcode.com/problems/count-special-integers/)|[C++](./C++/count-special-integers.cpp) [Python](./Python/count-special-integers.py)| _O(logn)_     | _O(logn)_         | Hard         | variant of [Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits/) | Combinatorics
 2396 | [Strictly Palindromic Number](https://leetcode.com/problems/strictly-palindromic-number/)|[C++](./C++/strictly-palindromic-number.cpp) [Python](./Python/strictly-palindromic-number.py)| _O(1)_     | _O(1)_         | Medium         || Math
+2400 | [Number of Ways to Reach a Position After Exactly k Steps](https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/)|[C++](./C++/number-of-ways-to-reach-a-position-after-exactly-k-steps.cpp) [Python](./Python/number-of-ways-to-reach-a-position-after-exactly-k-steps.py)| _O(k)_     | _O(k)_         | Medium         || Combinatorics
 
 <br/>
 <div align="right">
@@ -887,6 +890,7 @@
 2348 | [Number of Zero-Filled Subarrays](https://leetcode.com/problems/number-of-zero-filled-subarrays/) | [C++](./C++/number-of-zero-filled-subarrays.cpp) [Python](./Python/number-of-zero-filled-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Combinatorics |
 2379 | [Minimum Recolors to Get K Consecutive Black Blocks](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) | [C++](./C++/minimum-recolors-to-get-k-consecutive-black-blocks.cpp) [Python](./Python/minimum-recolors-to-get-k-consecutive-black-blocks.py) | _O(n)_ | _O(1)_ | Easy | | Sliding Window
 2393 | [Count Strictly Increasing Subarrays](https://leetcode.com/problems/count-strictly-increasing-subarrays/) | [C++](./C++/count-strictly-increasing-subarrays.cpp) [Python](./Python/count-strictly-increasing-subarrays.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Two Pointers |
+2401 | [Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/) | [C++](./C++/longest-nice-subarray.cpp) [Python](./Python/longest-nice-subarray.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window, Two Pointers |
 
 <br/>
 <div align="right">
