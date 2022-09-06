@@ -6,7 +6,7 @@ class Solution {
 public:
     int mostBooked(int n, vector<vector<int>>& meetings) {
         sort(begin(meetings), end(meetings));
-        vector<pair<int64_t, int>> rooms(n, {-1, -1});
+        vector<pair<int64_t, int>> rooms(n, {meetings[0][0], -1});
         int i = 0;
         for (auto& room : rooms) {
             room.second = i++;
