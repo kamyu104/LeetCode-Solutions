@@ -19,8 +19,7 @@ public:
         for (auto x : nums) {
             --x;
             const int i = distance(cbegin(sorted_nums), lower_bound(cbegin(sorted_nums), cend(sorted_nums), x - k));
-            const int mx = st.query(i, num_to_idx[x] - 1) + 1;
-            st.update(num_to_idx[x], mx);
+            st.update(num_to_idx[x], st.query(i, num_to_idx[x] - 1) + 1);
         }
         return st.query(0, size(num_to_idx) - 1);
     }
