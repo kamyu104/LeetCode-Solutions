@@ -21,7 +21,7 @@ public:
             const int i = distance(cbegin(sorted_nums), lower_bound(cbegin(sorted_nums), cend(sorted_nums), x - k));
             st.update(num_to_idx[x], st.query(i, num_to_idx[x] - 1) + 1);
         }
-        return st.query(0, size(num_to_idx) - 1);
+        return st.tree[1];  // st.query(0, size(num_to_idx) - 1)
     }
 
 private:
