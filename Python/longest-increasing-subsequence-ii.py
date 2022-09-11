@@ -1,6 +1,9 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
+import bisect
+
+
 # Range Maximum Query
 class SegmentTree(object):
     def __init__(self, N,
