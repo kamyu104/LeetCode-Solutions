@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2402%20%2F%202402-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2407%20%2F%202407-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -270,6 +270,8 @@
 2373 | [Largest Local Values in a Matrix](https://leetcode.com/problems/largest-local-values-in-a-matrix/) | [C++](./C++/largest-local-values-in-a-matrix.cpp) [Python](./Python/largest-local-values-in-a-matrix.py) | _O(n^2)_ | _O(1)_ | Easy | | Array
 2382 | [Maximum Segment Sum After Removals](https://leetcode.com/problems/maximum-segment-sum-after-removals/) | [C++](./C++/maximum-segment-sum-after-removals.cpp) [Python](./Python/maximum-segment-sum-after-removals.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Sorted List, BST, Union Find
 2391 | [Minimum Amount of Time to Collect Garbage](https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/) | [C++](./C++/minimum-amount-of-time-to-collect-garbage.cpp) [Python](./Python/minimum-amount-of-time-to-collect-garbage.py) | _O(n * l)_ | _O(1)_ | Medium | | Prefix Sum, Simulation
+2406 | [Divide Intervals Into Minimum Number of Groups](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/) | [C++](./C++/divide-intervals-into-minimum-number-of-groups.cpp) [Python](./Python/divide-intervals-into-minimum-number-of-groups.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort, Line Sweep
+2407 | [Longest Increasing Subsequence II](https://leetcode.com/problems/longest-increasing-subsequence-ii/) | [C++](./C++/longest-increasing-subsequence-ii.cpp) [Python](./Python/longest-increasing-subsequence-ii.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Segment Tree, Coordinate Compression
 
 <br/>
 <div align="right">
@@ -625,6 +627,8 @@
 2374 | [Node With Highest Edge Score](https://leetcode.com/problems/node-with-highest-edge-score/) | [C++](./C++/node-with-highest-edge-score.cpp) [Python](./Python/node-with-highest-edge-score.py) | _O(n)_ | _O(n)_ | Medium || Hash Table
 2395 | [Find Subarrays With Equal Sum](https://leetcode.com/problems/find-subarrays-with-equal-sum/) | [C++](./C++/find-subarrays-with-equal-sum.cpp) [Python](./Python/find-subarrays-with-equal-sum.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
 2399 | [Check Distances Between Same Letters](https://leetcode.com/problems/check-distances-between-same-letters/) | [C++](./C++/check-distances-between-same-letters.cpp) [Python](./Python/check-distances-between-same-letters.py) | _O(n)_ | _O(1)_ | Easy || Hash Table
+2404 | [Most Frequent Even Element](https://leetcode.com/problems/most-frequent-even-element/) | [C++](./C++/most-frequent-even-element.cpp) [Python](./Python/most-frequent-even-element.py) | _O(n)_ | _O(n)_ | Easy || Freq Table
+2405 | [Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/) | [C++](./C++/optimal-partition-of-string.cpp) [Python](./Python/optimal-partition-of-string.py) | _O(n)_ | _O(n)_ | Medium || Freq Table
 
 <br/>
 <div align="right">
@@ -1243,6 +1247,7 @@
 2370 | [Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence/)| [C++](./C++/longest-ideal-subsequence.cpp) [Python](./Python/longest-ideal-subsequence.py) | _O(n)_    | _O(1)_          | Medium           | | DP
 2378 | [Choose Edges to Maximize Score in a Tree](https://leetcode.com/problems/choose-edges-to-maximize-score-in-a-tree/) | [C++](./C++/choose-edges-to-maximize-score-in-a-tree.cpp) [Python](./Python/choose-edges-to-maximize-score-in-a-tree.py) | _O(n)_          | _O(n)_          | Medium           |🔒| DFS, Stack, Tree DP |
 2380 | [Time Needed to Rearrange a Binary String](https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/)| [C++](./C++/time-needed-to-rearrange-a-binary-string.cpp) [Python](./Python/time-needed-to-rearrange-a-binary-string.py) | _O(n)_    | _O(1)_          | Medium           | | DP
+2403 | [Minimum Time to Kill All Monsters](https://leetcode.com/problems/minimum-time-to-kill-all-monsters/)| [C++](./C++/minimum-time-to-kill-all-monsters.cpp) [Python](./Python/minimum-time-to-kill-all-monsters.py) | _O(n * 2^n)_    | _O(2^n)_          | Hard           |🔒| Bitmasks, DP
 
 <br/>
 <div align="right">
