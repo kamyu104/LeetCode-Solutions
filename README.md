@@ -271,7 +271,7 @@
 2382 | [Maximum Segment Sum After Removals](https://leetcode.com/problems/maximum-segment-sum-after-removals/) | [C++](./C++/maximum-segment-sum-after-removals.cpp) [Python](./Python/maximum-segment-sum-after-removals.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Sorted List, BST, Union Find
 2391 | [Minimum Amount of Time to Collect Garbage](https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/) | [C++](./C++/minimum-amount-of-time-to-collect-garbage.cpp) [Python](./Python/minimum-amount-of-time-to-collect-garbage.py) | _O(n * l)_ | _O(1)_ | Medium | | Prefix Sum, Simulation
 2406 | [Divide Intervals Into Minimum Number of Groups](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/) | [C++](./C++/divide-intervals-into-minimum-number-of-groups.cpp) [Python](./Python/divide-intervals-into-minimum-number-of-groups.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort, Line Sweep
-2407 | [Longest Increasing Subsequence II](https://leetcode.com/problems/longest-increasing-subsequence-ii/) | [C++](./C++/longest-increasing-subsequence-ii.cpp) [Python](./Python/longest-increasing-subsequence-ii.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Segment Tree, Coordinate Compression
+2407 | [Longest Increasing Subsequence II](https://leetcode.com/problems/longest-increasing-subsequence-ii/) | [C++](./C++/longest-increasing-subsequence-ii.cpp) [Python](./Python/longest-increasing-subsequence-ii.py) | _O(nlogn)_   | _O(n)_        | Hard         | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Segment Tree, Coordinate Compression
 
 <br/>
 <div align="right">
