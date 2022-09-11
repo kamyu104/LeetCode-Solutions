@@ -1,5 +1,5 @@
-# Time:  O(nlogr), r = max(nums)
-# Space: O(r)
+# Time:  O(nlogn)
+# Space: O(n)
 
 # Range Maximum Query
 class SegmentTree(object):
@@ -41,7 +41,7 @@ class SegmentTree(object):
         return self.query_fn(left, right)
 
 
-# segment tree
+# segment tree with coordinate compression
 class Solution(object):
     def lengthOfLIS(self, nums, k):
         """
@@ -49,11 +49,15 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+        sorted_nums = sorted({x-1 for x in nums})
+        num_to_idx = {x:i for i, x in enumerate(sorted_nums)}
         result = 0
-        st = SegmentTree(max(nums))
+        st = SegmentTree(len(num_to_idx))
         for x in nums:
             x -= 1
-            mx = st.query(max(x-k, 0), x-1)+1
-            st.update(x, mx)
+            i = bisect.bisect_left(sorted_nums, x-k)
+            mx = st.query(i, num_to_idx[x]-1)+1
+            st.update(num_to_idx[x], mx)
             result = max(result, mx)
         return result
+
