@@ -15,16 +15,14 @@ public:
         for (int i = 0; i < size(sorted_nums); ++i) {
             num_to_idx[sorted_nums[i]] = i;
         }
-        int result = 0;
         SegmentTree st(size(num_to_idx));
         for (auto x : nums) {
             --x;
             const int i = distance(cbegin(sorted_nums), lower_bound(cbegin(sorted_nums), cend(sorted_nums), x - k));
             const int mx = st.query(i, num_to_idx[x] - 1) + 1;
             st.update(num_to_idx[x], mx);
-            result = max(result, mx);
         }
-        return result;
+        return st.query(0, size(num_to_idx) - 1);
     }
 
 private:
