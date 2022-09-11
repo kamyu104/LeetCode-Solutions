@@ -628,7 +628,6 @@
 2395 | [Find Subarrays With Equal Sum](https://leetcode.com/problems/find-subarrays-with-equal-sum/) | [C++](./C++/find-subarrays-with-equal-sum.cpp) [Python](./Python/find-subarrays-with-equal-sum.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
 2399 | [Check Distances Between Same Letters](https://leetcode.com/problems/check-distances-between-same-letters/) | [C++](./C++/check-distances-between-same-letters.cpp) [Python](./Python/check-distances-between-same-letters.py) | _O(n)_ | _O(1)_ | Easy || Hash Table
 2404 | [Most Frequent Even Element](https://leetcode.com/problems/most-frequent-even-element/) | [C++](./C++/most-frequent-even-element.cpp) [Python](./Python/most-frequent-even-element.py) | _O(n)_ | _O(n)_ | Easy || Freq Table
-2405 | [Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/) | [C++](./C++/optimal-partition-of-string.cpp) [Python](./Python/optimal-partition-of-string.py) | _O(n)_ | _O(n)_ | Medium || Freq Table
 
 <br/>
 <div align="right">
@@ -1405,6 +1404,7 @@
 2375 | [Construct Smallest Number From DI String](https://leetcode.com/problems/construct-smallest-number-from-di-string/) | [C++](./C++/construct-smallest-number-from-di-string.cpp) [Python](./Python/construct-smallest-number-from-di-string.py) | _O(n)_   | _O(1)_        | Medium         | | Constructive Algorithms, Greedy
 2383 | [Minimum Hours of Training to Win a Competition](https://leetcode.com/problems/minimum-hours-of-training-to-win-a-competition/) | [C++](./C++/minimum-hours-of-training-to-win-a-competition.cpp) [Python](./Python/minimum-hours-of-training-to-win-a-competition.py) | _O(n)_ | _O(1)_ | Easy | | Greedy
 2384 | [Largest Palindromic Number](https://leetcode.com/problems/largest-palindromic-number/) | [C++](./C++/largest-palindromic-number.cpp) [Python](./Python/largest-palindromic-number.py) | _O(n)_ | _O(1)_ | Medium | | Freq Table, Greedy
+2405 | [Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/) | [C++](./C++/optimal-partition-of-string.cpp) [Python](./Python/optimal-partition-of-string.py) | _O(n)_ | _O(n)_ | Medium || Greedy, Hash Table
 
 <br/>
 <div align="right">
