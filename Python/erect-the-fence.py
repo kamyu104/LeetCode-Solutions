@@ -40,7 +40,9 @@ class Solution(object):
         # Concatenation of the lower and upper hulls gives the convex hull.
         # Last point of each list is omitted because it is repeated at the beginning of the other list. 
         result = lower[:-1] + upper[:-1]
+
+        # added
         l = len(result)-1
-        while len(result) < 2*l and result[l] == result[len(result)-l]:
+        while len(result)-l < l and result[len(result)-l] == result[l]:
             l -= 1
         return result[:l+1]
