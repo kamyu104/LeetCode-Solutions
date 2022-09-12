@@ -36,9 +36,14 @@ public:
             H[k++] = P[i-1];
         }
 
-        H.resize(k-1);
-        sort(begin(H), end(H));
-        H.erase(unique(begin(H), end(H)), end(H));
+        H.resize(--k);
+        
+        // added
+        int l = k - 1;
+        while ((k - l) < l && H[k-l] == H[l]) {
+            --l;
+        }
+        H.resize(l + 1);
         return H;
     }
 };
