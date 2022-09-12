@@ -42,7 +42,4 @@ class Solution(object):
         result = lower[:-1] + upper[:-1]
 
         # added
-        l = len(result)-1
-        while len(result)-l < l and result[len(result)-l] == result[l]:
-            l -= 1
-        return result[:l+1]
+        return result if result[1] != result[-1] else result[:len(result)//2+1]
