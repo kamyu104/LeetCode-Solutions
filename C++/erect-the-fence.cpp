@@ -39,11 +39,9 @@ public:
         H.resize(--k);
         
         // added
-        int l = k - 1;
-        while ((k - l) < l && H[k-l] == H[l]) {
-            --l;
+        if (H[1] == H[k - 1]) {
+            H.resize(k / 2 + 1);
         }
-        H.resize(l + 1);
         return H;
     }
 };
