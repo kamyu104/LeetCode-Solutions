@@ -36,10 +36,8 @@ public:
             H[k++] = P[i-1];
         }
 
-        H.resize(--k);
-        
-        // added
-        if (H[1] == H[k - 1]) {
+        H.resize(--k);        
+        if (H[1] == H[k - 1]) {  // modified
             H.resize(k / 2 + 1);
         }
         return H;
