@@ -40,6 +40,4 @@ class Solution(object):
         # Concatenation of the lower and upper hulls gives the convex hull.
         # Last point of each list is omitted because it is repeated at the beginning of the other list. 
         result = lower[:-1] + upper[:-1]
-
-        # added
-        return result if result[1] != result[-1] else result[:len(result)//2+1]
+        return result if result[1] != result[-1] else result[:len(result)//2+1]  # modified
