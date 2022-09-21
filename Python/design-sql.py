@@ -1,4 +1,4 @@
-# Time:  ctor:       O(t), t is the number of tables
+# Time:  ctor:       O(t * max_m), t is the number of tables, max_m is the max number of columns in all tables
 #        insertRow:  O(m), m is the number of columns
 #        deleteRow:  O(1)
 #        selectCell: O(m)
