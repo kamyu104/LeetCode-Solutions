@@ -41,4 +41,4 @@ class SQL(object):
         :type columnId: int
         :rtype: str
         """
-        return self.__table[name][rowId][columnId-1] if self.__table[name][rowId][-1] == "" else None
+        return self.__table[name][rowId][columnId-1] if self.__table[name][rowId][-1] == "" else ""
