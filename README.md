@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2407%20%2F%202407-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2416%20%2F%202416-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -109,6 +109,7 @@
 2275 | [Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/) | [C++](./C++/largest-combination-with-bitwise-and-greater-than-zero.cpp) [Python](./Python/largest-combination-with-bitwise-and-greater-than-zero.py) | _O(nlogr)_ | _O(logr)_ | Medium || Bit Manipulation, Freq Table
 2317 | [Maximum XOR After Operations](https://leetcode.com/problems/maximum-xor-after-operations/) | [C++](./C++/maximum-xor-after-operations.cpp) [Python](./Python/maximum-xor-after-operations.py) | _O(n)_ | _O(1)_ | Medium || Bit Manipulation, Greedy
 2397 | [Maximum Rows Covered by Columns](https://leetcode.com/problems/maximum-rows-covered-by-columns/) | [C++](./C++/maximum-rows-covered-by-columns.cpp) [Python](./Python/maximum-rows-covered-by-columns.py) | _O(m * n + m * C(n, k))_ | _O(m)_ | Medium || Bitmasks, `Hakmem Item 175`
+2411 | [Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/) | [C++](./C++/smallest-subarrays-with-maximum-bitwise-or.cpp) [Python](./Python/smallest-subarrays-with-maximum-bitwise-or.py) | _O(n)_ | _O(1)_ | Medium || Bitmasks, Hash Table
 
 <br/>
 <div align="right">
@@ -400,6 +401,8 @@
 2315 | [Count Asterisks](https://leetcode.com/problems/count-asterisks/) | [C++](./C++/count-asterisks.cpp) [Python](./Python/count-asterisks.py) | _O(n)_   | _O(1)_        | Easy         | | String
 2381 | [Shifting Letters II](https://leetcode.com/problems/shifting-letters-ii/) | [C++](./C++/shifting-letters-ii.cpp) [Python](./Python/shifting-letters-ii.py) | _O(n)_   | _O(n)_        | Medium         | | Line Sweep
 2390 | [Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/) | [C++](./C++/removing-stars-from-a-string.cpp) [Python](./Python/removing-stars-from-a-string.py) | _O(n)_   | _O(n)_        | Medium         | | String, Stack
+2414 | [Length of the Longest Alphabetical Continuous Substring](https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/) | [C++](./C++/length-of-the-longest-alphabetical-continuous-substring.cpp) [Python](./Python/length-of-the-longest-alphabetical-continuous-substring.py) | _O(n)_   | _O(1)_        | Medium         | | String
+2416 | [Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/) | [C++](./C++/sum-of-prefix-scores-of-strings.cpp) [Python](./Python/sum-of-prefix-scores-of-strings.py) | _O(n * l)_   | _O(t)_        | Hard         | | Trie
 
 <br/>
 <div align="right">
@@ -769,6 +772,8 @@
 2376 | [Count Special Integers](https://leetcode.com/problems/count-special-integers/)|[C++](./C++/count-special-integers.cpp) [Python](./Python/count-special-integers.py)| _O(logn)_     | _O(logn)_         | Hard         | variant of [Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits/) | Combinatorics
 2396 | [Strictly Palindromic Number](https://leetcode.com/problems/strictly-palindromic-number/)|[C++](./C++/strictly-palindromic-number.cpp) [Python](./Python/strictly-palindromic-number.py)| _O(1)_     | _O(1)_         | Medium         || Math
 2400 | [Number of Ways to Reach a Position After Exactly k Steps](https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/)|[C++](./C++/number-of-ways-to-reach-a-position-after-exactly-k-steps.cpp) [Python](./Python/number-of-ways-to-reach-a-position-after-exactly-k-steps.py)| _O(k)_     | _O(k)_         | Medium         || Combinatorics
+2409 | [Count Days Spent Together](https://leetcode.com/problems/count-days-spent-together/) | [C++](./C++/count-days-spent-together.cpp) [Python](./Python/count-days-spent-together.py) | _O(1)_   | _O(1)_        | Easy         | | String, Math, Prefix Sum
+2413 | [Smallest Even Multiple](https://leetcode.com/problems/smallest-even-multiple/) | [C++](./C++/smallest-even-multiple.cpp) [Python](./Python/smallest-even-multiple.py) | _O(1)_   | _O(1)_        | Easy         | | Math, Bit Manipulation
 
 <br/>
 <div align="right">
@@ -1025,6 +1030,7 @@
 2290 | [Minimum Obstacle Removal to Reach Corner](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/)| [C++](./C++/minimum-obstacle-removal-to-reach-corner.cpp) [Python](./Python/minimum-obstacle-removal-to-reach-corner.py)| _O(m * n)_ | _O(m * n)_ | Hard | variant of [Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/) | `A* Search Algorithm`, 0-1 BFS, Deque |
 2316 | [Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/)| [C++](./C++/count-unreachable-pairs-of-nodes-in-an-undirected-graph.cpp) [Python](./Python/count-unreachable-pairs-of-nodes-in-an-undirected-graph.py)| _O(n)_ | _O(n)_ | Medium | | Flood Fill, BFS, Math |
 2368 | [Reachable Nodes With Restrictions](https://leetcode.com/problems/reachable-nodes-with-restrictions/)| [C++](./C++/reachable-nodes-with-restrictions.cpp) [Python](./Python/reachable-nodes-with-restrictions.py)| _O(n)_ | _O(n)_ | Medium | | BFS |
+2415 | [Reverse Odd Levels of Binary Tree](https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/)| [C++](./C++/reverse-odd-levels-of-binary-tree.cpp) [Python](./Python/reverse-odd-levels-of-binary-tree.py)| _O(n)_ | _O(n)_ | Medium | | BFS |
 
 <br/>
 <div align="right">
@@ -1405,6 +1411,8 @@
 2383 | [Minimum Hours of Training to Win a Competition](https://leetcode.com/problems/minimum-hours-of-training-to-win-a-competition/) | [C++](./C++/minimum-hours-of-training-to-win-a-competition.cpp) [Python](./Python/minimum-hours-of-training-to-win-a-competition.py) | _O(n)_ | _O(1)_ | Easy | | Greedy
 2384 | [Largest Palindromic Number](https://leetcode.com/problems/largest-palindromic-number/) | [C++](./C++/largest-palindromic-number.cpp) [Python](./Python/largest-palindromic-number.py) | _O(n)_ | _O(1)_ | Medium | | Freq Table, Greedy
 2405 | [Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/) | [C++](./C++/optimal-partition-of-string.cpp) [Python](./Python/optimal-partition-of-string.py) | _O(n)_ | _O(n)_ | Medium || Greedy, Hash Table
+2410 | [Maximum Matching of Players With Trainers](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/) | [C++](./C++/maximum-matching-of-players-with-trainers.cpp) [Python](./Python/maximum-matching-of-players-with-trainers.py) | _O(nlogn + mlogm)_ | _O(1)_ | Medium || Greedy, Sort
+2412 | [Minimum Money Required Before Transactions](https://leetcode.com/problems/minimum-money-required-before-transactions/) | [C++](./C++/minimum-money-required-before-transactions.cpp) [Python](./Python/minimum-money-required-before-transactions.py) | _O(n)_ | _O(1)_ | Hard || Greedy, Constructive Algorithms
 
 <br/>
 <div align="right">
@@ -1553,6 +1561,7 @@
 2336 | [Smallest Number in Infinite Set](https://leetcode.com/problems/smallest-number-in-infinite-set/) | [C++](./C++/smallest-number-in-infinite-set.cpp) [Python](./Python/smallest-number-in-infinite-set.py) | ctor: _O(1)_<br>popSmallest: _O(logn)_<br>addBack: _O(logn)_ | _O(n)_ | Medium | | Heap, BST
 2349 | [Design a Number Container System](https://leetcode.com/problems/design-a-number-container-system/) | [C++](./C++/design-a-number-container-system.cpp) [Python](./Python/design-a-number-container-system.py) | ctor: _O(1)_<br>change: _O(logn)_<br>find: _O(1)_ | _O(n)_ | Medium | | Sorted List, BST
 2353 | [Design a Food Rating System](https://leetcode.com/problems/design-a-food-rating-system/) | [C++](./C++/design-a-food-rating-system.cpp) [Python](./Python/design-a-food-rating-system.py) | ctor: _O(nlogn)_<br>changeRating: _O(logn)_<br>highestRated: _O(1)_ | _O(n)_ | Medium | | Sorted List, BST
+2408 | [Design SQL](https://leetcode.com/problems/design-sql/) | [C++](./C++/design-sql.cpp) [Python](./Python/design-sql.py) | ctor: _O(t * l)_<br>insertRow: _O(l)_<br>deleteRow: _O(1)_<br>selectCell: _O(l)_ | _O(d)_ | Medium | 🔒 | Hash Table
 
 <br/>
 <div align="right">
