@@ -20,7 +20,7 @@ private:
         }
 
         void insert(const vector<int>& nums, int i, int k, int p) {
-            int curr = 0, result = 0, cnt = 0;
+            int curr = 0, cnt = 0;
             for (int j = i; j < size(nums); ++j) {
                 cnt += (nums[j] % p == 0);
                 if (cnt > k) {
