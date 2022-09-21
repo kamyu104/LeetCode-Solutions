@@ -1561,7 +1561,7 @@
 2336 | [Smallest Number in Infinite Set](https://leetcode.com/problems/smallest-number-in-infinite-set/) | [C++](./C++/smallest-number-in-infinite-set.cpp) [Python](./Python/smallest-number-in-infinite-set.py) | ctor: _O(1)_<br>popSmallest: _O(logn)_<br>addBack: _O(logn)_ | _O(n)_ | Medium | | Heap, BST
 2349 | [Design a Number Container System](https://leetcode.com/problems/design-a-number-container-system/) | [C++](./C++/design-a-number-container-system.cpp) [Python](./Python/design-a-number-container-system.py) | ctor: _O(1)_<br>change: _O(logn)_<br>find: _O(1)_ | _O(n)_ | Medium | | Sorted List, BST
 2353 | [Design a Food Rating System](https://leetcode.com/problems/design-a-food-rating-system/) | [C++](./C++/design-a-food-rating-system.cpp) [Python](./Python/design-a-food-rating-system.py) | ctor: _O(nlogn)_<br>changeRating: _O(logn)_<br>highestRated: _O(1)_ | _O(n)_ | Medium | | Sorted List, BST
-2408 | [Design SQL](https://leetcode.com/problems/design-sql/) | [C++](./C++/design-sql.cpp) [Python](./Python/design-sql.py) | ctor: _O(t * l)_<br>insertRow: _O(l)_<br>deleteRow: _O(1)_<br>selectCell: _O(l)_ | _O(d)_ | Medium | 🔒 | Hash Table
+2408 | [Design SQL](https://leetcode.com/problems/design-sql/) | [C++](./C++/design-sql.cpp) [Python](./Python/design-sql.py) | ctor: _O(t * max_m)_<br>insertRow: _O(m)_<br>deleteRow: _O(1)_<br>selectCell: _O(m)_ | _O(d)_ | Medium | 🔒 | Hash Table
 
 <br/>
 <div align="right">
