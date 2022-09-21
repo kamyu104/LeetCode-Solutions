@@ -1,6 +1,9 @@
 # Time:  O(n^2)
 # Space: O(t), t is the size of trie
 
+import collections
+
+
 # trie
 class Solution(object):
     def countDistinct(self, nums, k, p):
