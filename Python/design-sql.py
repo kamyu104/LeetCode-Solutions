@@ -23,7 +23,7 @@ class SQL(object):
         :type row: List[str]
         :rtype: None
         """
-        row.append(False)  # soft delete
+        row.append("")  # soft delete
         self.__table[name].append(row)
 
     def deleteRow(self, name, rowId):
@@ -32,7 +32,7 @@ class SQL(object):
         :type rowId: int
         :rtype: None
         """
-        self.__table[name][rowId][-1] = True  # soft delete
+        self.__table[name][rowId][-1] = "deleted"  # soft delete
 
     def selectCell(self, name, rowId, columnId):
         """
@@ -41,4 +41,4 @@ class SQL(object):
         :type columnId: int
         :rtype: str
         """
-        return self.__table[name][rowId][columnId-1] if self.__table[name][rowId][-1] == False else None
+        return self.__table[name][rowId][columnId-1] if self.__table[name][rowId][-1] == "" else None
