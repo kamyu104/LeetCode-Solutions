@@ -1,8 +1,8 @@
 # Time:  ctor:       O(t), t is the number of tables
-#        insertRow:  O(l), l is the number of columns
+#        insertRow:  O(m), m is the number of columns
 #        deleteRow:  O(1)
 #        selectCell: O(l)
-# Space: O(n * l), n is the number of rows
+# Space: O(n * m), n is the number of rows
 
 import itertools
 
