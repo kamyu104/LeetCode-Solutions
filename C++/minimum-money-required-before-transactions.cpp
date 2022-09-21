@@ -10,6 +10,7 @@ public:
             last = max(last, static_cast<int64_t>(t[0] - max(t[0] - t[1], 0)));  // t[0] - max(t[0] - t[1], 0) == min(t[0], t[1])
             result += max(t[0] - t[1], 0);
         }
-        return result + last;
+        result += last;
+        return result;
     }
 };
