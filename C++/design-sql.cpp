@@ -1,8 +1,8 @@
-// Time:  ctor:       O(t), t is the number of tables
-//        insertRow:  O(l), l is the number of columns
+// Time:  ctor:       O(t * max_m), t is the number of tables, max_m is the max number of columns in all tables
+//        insertRow:  O(m), m is the number of columns
 //        deleteRow:  O(1)
-//        selectCell: O(l)
-// Space: O(n * l), n is the number of records
+//        selectCell: O(m)
+// Space: O(d), d is the total size of data
 
 // hash table
 class SQL {
