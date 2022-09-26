@@ -21,7 +21,7 @@ class Solution(object):
                 right = [len(digits)//2-left[0], len(digits)//2-left[1]]
                 if any(x < 0 for x in right):
                     continue
-                d = digits[i]+2 if right[(digits[i]+1)%2] == 0 else digits[i]+1
+                d = digits[i]+1 if right[(digits[i]+1)%2]-1 >= 0 else digits[i]+2
                 if d > 9:
                     continue
                 right[d%2] -= 1
