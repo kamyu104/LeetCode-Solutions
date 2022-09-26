@@ -49,7 +49,7 @@ private:
                 ++rank_[y];
             }
             const int cx = cnt_[x][v], cy = cnt_[y][v];  // added
-            cnt_[y][v] = cx + cy;  // added
+            cnt_[y] = {{v, cx + cy}};  // added
             return cx * cy;  // modified
         }
 
