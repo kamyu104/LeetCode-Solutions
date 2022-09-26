@@ -11,24 +11,21 @@ class Solution(object):
         digits = map(int, str(n))
         result = []
         if len(digits)%2 == 0:            
-            left_even = sum(d%2 == 0 for d in digits)
-            if left_even == len(digits)//2:
+            left = [0]*2
+            for d in digits:
+                left[d%2] += 1
+            if left[0] == len(digits)//2:
                 return n
             for i in reversed(xrange(len(digits)//2, len(digits))):
-                if digits[i]%2 == 0:
-                    left_even -= 1
-                left_odd = i-left_even
-                right_even, right_odd = len(digits)//2-left_even, len(digits)//2-left_odd
-                if right_even < 0 or right_odd < 0:
+                left[digits[i]%2] -= 1
+                right = [len(digits)//2-left[0], len(digits)//2-left[1]]
+                if any(x < 0 for x in right):
                     continue
-                d = digits[i]+2 if (right_odd == 0 and digits[i]%2 == 0) or (right_even == 0 and digits[i]%2 == 1) else digits[i]+1
+                d = digits[i]+2 if right[(digits[i]+1)%2] == 0 else digits[i]+1
                 if d > 9:
                     continue
-                if d%2 == 0:
-                    right_even -= 1
-                else:
-                    right_odd -= 1
-                result = digits[:i]+[d]+[0]*right_even+[1]*right_odd
+                right[d%2] -= 1
+                result = digits[:i]+[d]+[0]*right[0]+[1]*right[1]
                 break
         if not result:
             l = len(digits)//2+1
