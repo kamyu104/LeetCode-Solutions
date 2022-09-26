@@ -33,7 +33,7 @@ class UnionFind(object):  # Time: O(n * alpha(n)), Space: O(n)
         return cx*cy  # modified
 
 
-# union find
+# tree, sort, union find
 class Solution(object):
     def numberOfGoodPaths(self, vals, edges):
         """
