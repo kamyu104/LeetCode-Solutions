@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2416%20%2F%202416-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2421%20%2F%202421-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -110,6 +110,7 @@
 2317 | [Maximum XOR After Operations](https://leetcode.com/problems/maximum-xor-after-operations/) | [C++](./C++/maximum-xor-after-operations.cpp) [Python](./Python/maximum-xor-after-operations.py) | _O(n)_ | _O(1)_ | Medium || Bit Manipulation, Greedy
 2397 | [Maximum Rows Covered by Columns](https://leetcode.com/problems/maximum-rows-covered-by-columns/) | [C++](./C++/maximum-rows-covered-by-columns.cpp) [Python](./Python/maximum-rows-covered-by-columns.py) | _O(m * n + m * C(n, k))_ | _O(m)_ | Medium || Bitmasks, `Hakmem Item 175`
 2411 | [Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/) | [C++](./C++/smallest-subarrays-with-maximum-bitwise-or.cpp) [Python](./Python/smallest-subarrays-with-maximum-bitwise-or.py) | _O(n)_ | _O(1)_ | Medium || Bitmasks, Hash Table
+2419 | [Longest Subarray With Maximum Bitwise AND](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/) | [C++](./C++/longest-subarray-with-maximum-bitwise-and.cpp) [Python](./Python/longest-subarray-with-maximum-bitwise-and.py) | _O(n)_ | _O(1)_ | Medium || Bit Manipulation
 
 <br/>
 <div align="right">
@@ -550,6 +551,7 @@
 2196 | [Create Binary Tree From Descriptions](https://leetcode.com/problems/create-binary-tree-from-descriptions/)| [C++](./C++/create-binary-tree-from-descriptions.cpp) [Python](./Python/create-binary-tree-from-descriptions.py)| _O(n)_ | _O(n)_ | Medium | | |
 2236 | [Root Equals Sum of Children](https://leetcode.com/problems/root-equals-sum-of-children/)| [C++](./C++/root-equals-sum-of-children.cpp) [Python](./Python/root-equals-sum-of-children.py)| _O(1)_ | _O(1)_ | Easy | | Tree |
 2277 | [Closest Node to Path in Tree](https://leetcode.com/problems/closest-node-to-path-in-tree/)| [C++](./C++/closest-node-to-path-in-tree.cpp) [Python](./Python/closest-node-to-path-in-tree.py)| _O(n + q)_ | _O(n)_ | Hard | 🔒 | Tree, BFS, Binary Lifting, `Tarjan's Offline LCA Algorithm` |
+2421 | [Number of Good Paths](https://leetcode.com/problems/number-of-good-paths/)| [C++](./C++/number-of-good-paths.cpp) [Python](./Python/number-of-good-paths.py)| _O(nlogn)_ | _O(n)_ | Hard | | Sort, Union Find |
 
 <br/>
 <div align="right">
@@ -830,6 +832,7 @@
 2248 | [Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/)|[C++](./C++/intersection-of-multiple-arrays.cpp) [Python](./Python/intersection-of-multiple-arrays.py)| _O(n * l + r)_     | _O(l)_         | Easy         || Hash Table, Counting Sort
 2251 | [Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/) | [C++](./C++/number-of-flowers-in-full-bloom.cpp) [Python](./Python/number-of-flowers-in-full-bloom.py) | _O(nlogn + mlogn)_   | _O(n)_        | Hard         | | Line Sweep, Binary Search
 2343 | [Query Kth Smallest Trimmed Number](https://leetcode.com/problems/query-kth-smallest-trimmed-number/) | [C++](./C++/query-kth-smallest-trimmed-number.cpp) [Python](./Python/query-kth-smallest-trimmed-number.py) | _O(q + n * t)_   | _O(t + n + q)_        | Medium         | | Sort, Quick Select, Radix Sort
+2418 | [Sort the People](https://leetcode.com/problems/sort-the-people/) | [C++](./C++/sort-the-people.cpp) [Python](./Python/sort-the-people.py) | _O(nlogn)_   | _O(n)_        | Easy         | | Sort
 
 <br/>
 <div align="right">
@@ -1253,6 +1256,7 @@
 2378 | [Choose Edges to Maximize Score in a Tree](https://leetcode.com/problems/choose-edges-to-maximize-score-in-a-tree/) | [C++](./C++/choose-edges-to-maximize-score-in-a-tree.cpp) [Python](./Python/choose-edges-to-maximize-score-in-a-tree.py) | _O(n)_          | _O(n)_          | Medium           |🔒| DFS, Stack, Tree DP |
 2380 | [Time Needed to Rearrange a Binary String](https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/)| [C++](./C++/time-needed-to-rearrange-a-binary-string.cpp) [Python](./Python/time-needed-to-rearrange-a-binary-string.py) | _O(n)_    | _O(1)_          | Medium           | | DP
 2403 | [Minimum Time to Kill All Monsters](https://leetcode.com/problems/minimum-time-to-kill-all-monsters/)| [C++](./C++/minimum-time-to-kill-all-monsters.cpp) [Python](./Python/minimum-time-to-kill-all-monsters.py) | _O(n * 2^n)_    | _O(2^n)_          | Hard           |🔒| Bitmasks, DP
+2420 | [Find All Good Indices](https://leetcode.com/problems/find-all-good-indices/)| [C++](./C++/find-all-good-indices.cpp) [Python](./Python/find-all-good-indices.py) | _O(n)_    | _O(n)_          | Medium           | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -1413,6 +1417,7 @@
 2405 | [Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/) | [C++](./C++/optimal-partition-of-string.cpp) [Python](./Python/optimal-partition-of-string.py) | _O(n)_ | _O(n)_ | Medium || Greedy, Hash Table
 2410 | [Maximum Matching of Players With Trainers](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/) | [C++](./C++/maximum-matching-of-players-with-trainers.cpp) [Python](./Python/maximum-matching-of-players-with-trainers.py) | _O(nlogn + mlogm)_ | _O(1)_ | Medium || Greedy, Sort
 2412 | [Minimum Money Required Before Transactions](https://leetcode.com/problems/minimum-money-required-before-transactions/) | [C++](./C++/minimum-money-required-before-transactions.cpp) [Python](./Python/minimum-money-required-before-transactions.py) | _O(n)_ | _O(1)_ | Hard || Greedy, Constructive Algorithms
+2417 | [Closest Fair Integer](https://leetcode.com/problems/closest-fair-integer/) | [C++](./C++/closest-fair-integer.cpp) [Python](./Python/closest-fair-integer.py) | _O(logn)_   | _O(logn)_        | Medium         | 🔒 | Constructive Algorithms, Greedy
 
 <br/>
 <div align="right">
