@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// union find
+// tree, sort, union find
 class Solution {
 public:
     int numberOfGoodPaths(vector<int>& vals, vector<vector<int>>& edges) {
