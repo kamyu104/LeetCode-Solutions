@@ -56,6 +56,6 @@ private:
     private:
         vector<int> set_;
         vector<int> rank_;
-        vector<unordered_map<int, int>> cnt_;
+        vector<unordered_map<int, int>> cnt_;  // added
     };
 };
