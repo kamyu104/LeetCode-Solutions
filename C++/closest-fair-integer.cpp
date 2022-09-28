@@ -5,7 +5,7 @@
 class Solution {
 public:
     int closestFair(int n) {
-        string digits = to_string(n);
+        const auto& digits = to_string(n);
         string result;
         if (size(digits) % 2 == 0) {
             vector<int> left(2);
