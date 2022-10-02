@@ -43,15 +43,14 @@ public:
         for (const auto& c : word) {
             --cnt[c - 'a'];
             int i = 0;
-            for (int expect = 0; i < size(cnt); ++i) {
+            for (int prev = 0; i < size(cnt); ++i) {
                 if (!cnt[i]) {
                     continue;
                 }
-                if (!expect) {
-                    expect = cnt[i];
-                } else if (expect != cnt[i]) {
+                if (prev && prev != cnt[i]) {
                     break;
                 }
+                prev = cnt[i];
             }
             if (i == size(cnt)) {
                 return true;
