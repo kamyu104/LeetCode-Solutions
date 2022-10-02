@@ -23,9 +23,8 @@ class Solution(object):
         return (a == 1 and cnt[a] == 1) or (a+1 == b and cnt[b] == 1)
 
 
-# Time:  O(n^2)
+# Time:  O(26 * n)
 # Space: O(1)
-
 import collections
 
 
@@ -36,9 +35,13 @@ class Solution2(object):
         :type word: str
         :rtype: bool
         """
-        for i in xrange(len(word)):
-            nw = (word[j] for j in xrange(len(word)) if j != i)
-            cnt = collections.Counter(collections.Counter(collections.Counter(nw)).itervalues())
-            if len(cnt) == 1:
+        cnt = collections.Counter(collections.Counter(word))
+        for c in word:
+            cnt[c] -= 1
+            if cnt[c] == 0:
+                del cnt[c]
+            cnt2 = collections.Counter(cnt.itervalues())
+            if len(cnt2) == 1:
                 return True
+            cnt[c] += 1
         return False
