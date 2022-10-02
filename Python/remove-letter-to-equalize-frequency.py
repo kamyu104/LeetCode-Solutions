@@ -38,9 +38,7 @@ class Solution2(object):
         cnt = collections.Counter(collections.Counter(word))
         for c in word:
             cnt[c] -= 1
-            if cnt[c] == 0:
-                del cnt[c]
-            cnt2 = collections.Counter(cnt.itervalues())
+            cnt2 = collections.Counter(c for c in cnt.itervalues() if c)
             if len(cnt2) == 1:
                 return True
             cnt[c] += 1
