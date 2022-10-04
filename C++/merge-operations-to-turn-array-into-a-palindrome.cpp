@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// constructive algorithms, two pointers
+// constructive algorithms, greedy, two pointers
 class Solution {
 public:
     int minimumOperations(vector<int>& nums) {
