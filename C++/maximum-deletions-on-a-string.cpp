@@ -25,7 +25,7 @@ public:
 
         vector<int> dp(size(s), 1);  // dp[i]: max operation count of s[i:]
         for (int i = size(s) - 2; i >= 0; --i) {
-            const auto& lps = longest_prefix_suffix(i);  // lps[j]: longest prefix / suffix length of s[i:j+1]                
+            const auto& lps = longest_prefix_suffix(i);  // lps[j]: longest prefix suffix length of s[i:j+1]                
             for (int j = 1; j < size(lps); j += 2) {
                 if (2 * lps[j] == j + 1) {
                     dp[i] = max(dp[i], dp[i + lps[j]] + 1);
