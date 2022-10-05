@@ -8,7 +8,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        def longest_prefix_suffix(i):
+        def longest_prefix_suffix(i):  # Time: O(n), Space: O(n)
             lps = [0]*(len(s)-i)
             l = 0
             for j in xrange(1, len(lps)):
