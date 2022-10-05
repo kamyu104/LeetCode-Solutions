@@ -1,7 +1,7 @@
 # Time:  O(n^2)
 # Space: O(n)
 
-# dp, lps algorithm
+# dp, kmp algorithm
 class Solution(object):
     def deleteString(self, s):
         """
