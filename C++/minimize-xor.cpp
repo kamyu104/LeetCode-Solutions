@@ -1,7 +1,7 @@
 // Time:  O(logn)
 // Space: O(1)
 
-// bit manipulation
+// bit manipulation, greedy
 class Solution {
 public:
     int minimizeXor(int num1, int num2) {
