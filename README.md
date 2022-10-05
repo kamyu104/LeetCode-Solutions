@@ -985,7 +985,7 @@
 1382 | [Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/) | [C++](./C++/balance-a-binary-search-tree.cpp) [Python](./Python/balance-a-binary-search-tree.py) | _O(n)_          | _O(h)_          | Medium           || DFS, Stack |
 1902 | [Depth of BST Given Insertion Order](https://depth-of-bst-given-insertion-order/)| [C++](./C++/depth-of-bst-given-insertion-order.cpp) [Python](./Python/depth-of-bst-given-insertion-order.py)   | _O(nlogn)_          | _O(n)_          | Medium         | 🔒 | Sorted Dict |
 1932 | [Merge BSTs to Create Single BST](https://leetcode.com/problems/merge-bsts-to-create-single-bst/)|[C++](./C++/merge-bsts-to-create-single-bst.cpp) [Python](./Python/merge-bsts-to-create-single-bst.py) | _O(n)_      | _O(n)_          | Hard         | | BST, BFS
-2426 | [Number of Pairs Satisfying Inequality](https://leetcode.com/problems/number-of-pairs-satisfying-inequality/)|[C++](./C++/number-of-pairs-satisfying-inequality.cpp) [Python](./Python/number-of-pairs-satisfying-inequality.py) | _O(nlogn)_      | _O(n)_          | Hard         | | Merge Sort, BIT, Fenwick Tree, Coordinate Compression, Sorted List, Ordered Set, Binary Search
+2426 | [Number of Pairs Satisfying Inequality](https://leetcode.com/problems/number-of-pairs-satisfying-inequality/)|[C++](./C++/number-of-pairs-satisfying-inequality.cpp) [Python](./Python/number-of-pairs-satisfying-inequality.py) | _O(nlogn)_      | _O(n)_          | Hard         | | Merge Sort, Two Pointers, BIT, Fenwick Tree, Coordinate Compression, Sorted List, Ordered Set, Binary Search
 
 <br/>
 <div align="right">
