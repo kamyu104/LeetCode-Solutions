@@ -15,7 +15,7 @@ public:
                 while (l != 0 && s[i + l] != s[i + j]) {
                     l = lps[l - 1];
                 }
-                if (s[i + l] == s[i + j]) {
+                if (s[i + j] == s[i + l]) {
                     ++l;
                 }
                 lps[j] = l;
