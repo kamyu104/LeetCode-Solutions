@@ -12,7 +12,7 @@ class Solution(object):
             prefix = [-1]*(len(pattern)-start)
             j = -1
             for i in xrange(1, len(pattern)-start):
-                while j > -1 and pattern[start+j+1] != pattern[start+i]:
+                while j != -1 and pattern[start+j+1] != pattern[start+i]:
                     j = prefix[j]
                 if pattern[start+j+1] == pattern[start+i]:
                     j += 1
