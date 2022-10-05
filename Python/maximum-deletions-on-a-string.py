@@ -10,14 +10,14 @@ class Solution(object):
         """
         if all(x == s[0] for x in s):
             return len(s)
-        dp = [[0]*(len(s)+1) for i in xrange(2)]  # dp[i%2][j]: max prefix length of s[i:] and s[j:]
-        dp2 = [1]*len(s)  # dp2[i]: max operation count of s[i:]
+        dp2 = [[0]*(len(s)+1) for i in xrange(2)]  # dp2[i%2][j]: max prefix length of s[i:] and s[j:]
+        dp = [1]*len(s)  # dp[i]: max operation count of s[i:]
         for i in reversed(xrange(len(s)-1)):
             for j in xrange(i+1, len(s)):
-                dp[i%2][j] = dp[(i+1)%2][j+1]+1 if s[j] == s[i] else 0
-                if dp[i%2][j] >= j-i:
-                    dp2[i] = max(dp2[i], dp2[j]+1)
-        return dp2[0]
+                dp2[i%2][j] = dp2[(i+1)%2][j+1]+1 if s[j] == s[i] else 0
+                if dp2[i%2][j] >= j-i:
+                    dp[i] = max(dp[i], dp[j]+1)
+        return dp[0]
 
 
 # Time:  O(n^2)
@@ -42,7 +42,7 @@ class Solution2(object):
 
         if all(x == s[0] for x in s):
             return len(s)
-        dp = [1]*len(s)  # dp[i]: max operations of s[i:]
+        dp = [1]*len(s)  # dp[i]: max operation count of s[i:]
         for i in reversed(xrange(len(s)-1)):
             prefix = getPrefix(s, i)  # prefix[j]+1: longest prefix suffix length of s[i:j+1]
             for j in xrange(1, len(prefix), 2):
@@ -73,7 +73,7 @@ class Solution3(object):
             for idx, p in enumerate(P):
                 power[idx].append((power[idx][-1]*p)%MOD)
                 prefix[idx].append((prefix[idx][-1]*p+(ord(x)-ord('a')))%MOD)
-        dp = [1]*len(s)  # dp[i]: max operations of s[i:]
+        dp = [1]*len(s)  # dp[i]: max operation count of s[i:]
         for i in reversed(xrange(len(s)-1)):
             for j in xrange(1, (len(s)-i)//2+1):
                 if hash(i, i+j-1) == hash(i+j, i+2*j-1):
