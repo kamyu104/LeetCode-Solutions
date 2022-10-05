@@ -1,5 +1,5 @@
 # Time:  O(m * n)
-# Space: O(m * n)
+# Space: O(1)
 
 # brute force
 class Solution(object):
