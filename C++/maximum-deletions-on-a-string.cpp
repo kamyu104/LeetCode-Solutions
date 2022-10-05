@@ -62,7 +62,7 @@ public:
 
 // Time:  O(n^2)
 // Space: O(n)
-// rolling hash
+// dp, rolling hash
 class Solution3 {
 public:
     int deleteString(string s) {
