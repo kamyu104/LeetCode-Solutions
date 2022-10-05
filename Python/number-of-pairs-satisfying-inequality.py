@@ -47,7 +47,7 @@ class BIT(object):  # 0-indexed.
         return ret
 
 
-# bit, fenwick tree
+# bit, fenwick tree, coordinate compression
 class Solution2(object):
     def numberOfPairs(self, nums1, nums2, diff):
         """
