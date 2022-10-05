@@ -9,7 +9,7 @@ public:
             return size(s);
         }
         
-        const auto& longest_prefix_suffix = [&](int i) {
+        const auto& longest_prefix_suffix = [&](int i) {  // Time: O(n), Space: O(n)
             vector<int> lps(size(s) - i);
             for (int j = 1, l = 0; j < size(lps); ++j) {
                 while (l != 0 && s[i + l] != s[i + j]) {
