@@ -53,7 +53,7 @@ class Solution2(object):
 
 # Time:  O(n^2)
 # Space: O(n)
-# rolling hash
+# dp, rolling hash
 class Solution3(object):
     def deleteString(self, s):
         """
