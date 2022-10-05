@@ -71,7 +71,7 @@ class Solution2(object):
 import itertools
 
 
-# merge sort
+# merge sort, two pointers
 class Solution3(object):
     def numberOfPairs(self, nums1, nums2, diff):
         """
