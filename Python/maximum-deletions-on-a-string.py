@@ -11,7 +11,7 @@ class Solution(object):
         def longest_prefix_suffix(i):
             lps = [0]*(len(s)-i)
             l = 0
-            for j in xrange(1, len(s)-i):
+            for j in xrange(1, len(lps)):
                 while l != 0 and s[i+l] != s[i+j]:
                     l = lps[l-1]
                 if s[i+j] == s[i+l]:
@@ -28,7 +28,7 @@ class Solution(object):
                 if 2*lps[j] == j+1:
                     dp[i] = max(dp[i], dp[i+(j+1)//2]+1)
         return dp[0]
-   
+
 
 # Time:  O(n^2)
 # Space: O(n^2)
