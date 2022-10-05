@@ -78,7 +78,7 @@ private:
 
 // Time:  O(nlogn)
 // Space: O(n)
-// merge sort
+// merge sort, two pointers
 class Solution3 {
 public:
     long long numberOfPairs(vector<int>& nums1, vector<int>& nums2, int diff) {
