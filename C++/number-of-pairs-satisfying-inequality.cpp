@@ -22,7 +22,7 @@ public:
 
 // Time:  O(nlogn)
 // Space: O(n)
-// bit, fenwick tree
+// bit, fenwick tree, coordinate compression
 class Solution2 {
 public:
     long long numberOfPairs(vector<int>& nums1, vector<int>& nums2, int diff) {
