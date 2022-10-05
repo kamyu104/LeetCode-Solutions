@@ -8,7 +8,7 @@ public:
         if (all_of(cbegin(s), cend(s), [&](const auto& x) { return x == s[0]; })) {
             return size(s);
         }
-        vector<vector<int>> dp(2, vector<int>(size(s) + 1));  // dp[i % 2][j]: max prefix length of s[i:] and s[j:]
+        vector<vector<int>> dp(2, vector<int>(size(s) + 1));  // dp[i%2][j]: max prefix length of s[i:] and s[j:]
         vector<int> dp2(size(s), 1);  // dp2[i]: max operation count of s[i:]
         for (int i = size(s) - 2; i >= 0; --i) {
             for (int j = i + 1; j < size(s); ++j) {
