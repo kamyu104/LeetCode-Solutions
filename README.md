@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2421%20%2F%202421-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2430%20%2F%202430-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -111,6 +111,8 @@
 2397 | [Maximum Rows Covered by Columns](https://leetcode.com/problems/maximum-rows-covered-by-columns/) | [C++](./C++/maximum-rows-covered-by-columns.cpp) [Python](./Python/maximum-rows-covered-by-columns.py) | _O(m * n + m * C(n, k))_ | _O(m)_ | Medium || Bitmasks, `Hakmem Item 175`
 2411 | [Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/) | [C++](./C++/smallest-subarrays-with-maximum-bitwise-or.cpp) [Python](./Python/smallest-subarrays-with-maximum-bitwise-or.py) | _O(n)_ | _O(1)_ | Medium || Bitmasks, Hash Table
 2419 | [Longest Subarray With Maximum Bitwise AND](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/) | [C++](./C++/longest-subarray-with-maximum-bitwise-and.cpp) [Python](./Python/longest-subarray-with-maximum-bitwise-and.py) | _O(n)_ | _O(1)_ | Medium || Bit Manipulation
+2425 | [Bitwise XOR of All Pairings](https://leetcode.com/problems/bitwise-xor-of-all-pairings/) | [C++](./C++/bitwise-xor-of-all-pairings.cpp) [Python](./Python/bitwise-xor-of-all-pairings.py) | _O(n)_ | _O(1)_ | Medium || Bit Manipulation
+2429 | [Minimize XOR](https://leetcode.com/problems/minimize-xor/) | [C++](./C++/minimize-xor.cpp) [Python](./Python/minimize-xor.py) | _O(logn)_ | _O(1)_ | Medium || Bit Manipulation
 
 <br/>
 <div align="right">
@@ -274,6 +276,7 @@
 2391 | [Minimum Amount of Time to Collect Garbage](https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/) | [C++](./C++/minimum-amount-of-time-to-collect-garbage.cpp) [Python](./Python/minimum-amount-of-time-to-collect-garbage.py) | _O(n * l)_ | _O(1)_ | Medium | | Prefix Sum, Simulation
 2406 | [Divide Intervals Into Minimum Number of Groups](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/) | [C++](./C++/divide-intervals-into-minimum-number-of-groups.cpp) [Python](./Python/divide-intervals-into-minimum-number-of-groups.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort, Line Sweep
 2407 | [Longest Increasing Subsequence II](https://leetcode.com/problems/longest-increasing-subsequence-ii/) | [C++](./C++/longest-increasing-subsequence-ii.cpp) [Python](./Python/longest-increasing-subsequence-ii.py) | _O(nlogn)_   | _O(n)_        | Hard         | variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Segment Tree, Coordinate Compression
+2428 | [Maximum Sum of an Hourglass](https://leetcode.com/problems/maximum-sum-of-an-hourglass/) | [C++](./C++/maximum-sum-of-an-hourglass.cpp) [Python](./Python/maximum-sum-of-an-hourglass.py) | _O(m * n)_   | _O(1)_        | Medium         | | Brute Force
 
 <br/>
 <div align="right">
@@ -633,6 +636,7 @@
 2395 | [Find Subarrays With Equal Sum](https://leetcode.com/problems/find-subarrays-with-equal-sum/) | [C++](./C++/find-subarrays-with-equal-sum.cpp) [Python](./Python/find-subarrays-with-equal-sum.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
 2399 | [Check Distances Between Same Letters](https://leetcode.com/problems/check-distances-between-same-letters/) | [C++](./C++/check-distances-between-same-letters.cpp) [Python](./Python/check-distances-between-same-letters.py) | _O(n)_ | _O(1)_ | Easy || Hash Table
 2404 | [Most Frequent Even Element](https://leetcode.com/problems/most-frequent-even-element/) | [C++](./C++/most-frequent-even-element.cpp) [Python](./Python/most-frequent-even-element.py) | _O(n)_ | _O(n)_ | Easy || Freq Table
+2423 | [Remove Letter To Equalize Frequency](https://leetcode.com/problems/remove-letter-to-equalize-frequency/) | [C++](./C++/remove-letter-to-equalize-frequency.cpp) [Python](./Python/remove-letter-to-equalize-frequency.py) | _O(n)_ | _O(1)_ | Easy || Brute Force, Freq Table
 
 <br/>
 <div align="right">
@@ -776,6 +780,7 @@
 2400 | [Number of Ways to Reach a Position After Exactly k Steps](https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/)|[C++](./C++/number-of-ways-to-reach-a-position-after-exactly-k-steps.cpp) [Python](./Python/number-of-ways-to-reach-a-position-after-exactly-k-steps.py)| _O(k)_     | _O(k)_         | Medium         || Combinatorics
 2409 | [Count Days Spent Together](https://leetcode.com/problems/count-days-spent-together/) | [C++](./C++/count-days-spent-together.cpp) [Python](./Python/count-days-spent-together.py) | _O(1)_   | _O(1)_        | Easy         | | String, Math, Prefix Sum
 2413 | [Smallest Even Multiple](https://leetcode.com/problems/smallest-even-multiple/) | [C++](./C++/smallest-even-multiple.cpp) [Python](./Python/smallest-even-multiple.py) | _O(1)_   | _O(1)_        | Easy         | | Math, Bit Manipulation
+2427 | [Number of Common Factors](https://leetcode.com/problems/number-of-common-factors/) | [C++](./C++/number-of-common-factors.cpp) [Python](./Python/number-of-common-factors.py) | _O(log(min(a, b)) + sqrt(gcd))_   | _O(1)_        | Easy         | | Math
 
 <br/>
 <div align="right">
@@ -980,6 +985,7 @@
 1382 | [Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/) | [C++](./C++/balance-a-binary-search-tree.cpp) [Python](./Python/balance-a-binary-search-tree.py) | _O(n)_          | _O(h)_          | Medium           || DFS, Stack |
 1902 | [Depth of BST Given Insertion Order](https://depth-of-bst-given-insertion-order/)| [C++](./C++/depth-of-bst-given-insertion-order.cpp) [Python](./Python/depth-of-bst-given-insertion-order.py)   | _O(nlogn)_          | _O(n)_          | Medium         | 🔒 | Sorted Dict |
 1932 | [Merge BSTs to Create Single BST](https://leetcode.com/problems/merge-bsts-to-create-single-bst/)|[C++](./C++/merge-bsts-to-create-single-bst.cpp) [Python](./Python/merge-bsts-to-create-single-bst.py) | _O(n)_      | _O(n)_          | Hard         | | BST, BFS
+2426 | [Number of Pairs Satisfying Inequality](https://leetcode.com/problems/number-of-pairs-satisfying-inequality/)|[C++](./C++/number-of-pairs-satisfying-inequality.cpp) [Python](./Python/number-of-pairs-satisfying-inequality.py) | _O(nlogn)_      | _O(n)_          | Hard         | | Sorted List, Ordered Set, Binary Search
 
 <br/>
 <div align="right">
@@ -1257,6 +1263,7 @@
 2380 | [Time Needed to Rearrange a Binary String](https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/)| [C++](./C++/time-needed-to-rearrange-a-binary-string.cpp) [Python](./Python/time-needed-to-rearrange-a-binary-string.py) | _O(n)_    | _O(1)_          | Medium           | | DP
 2403 | [Minimum Time to Kill All Monsters](https://leetcode.com/problems/minimum-time-to-kill-all-monsters/)| [C++](./C++/minimum-time-to-kill-all-monsters.cpp) [Python](./Python/minimum-time-to-kill-all-monsters.py) | _O(n * 2^n)_    | _O(2^n)_          | Hard           |🔒| Bitmasks, DP
 2420 | [Find All Good Indices](https://leetcode.com/problems/find-all-good-indices/)| [C++](./C++/find-all-good-indices.cpp) [Python](./Python/find-all-good-indices.py) | _O(n)_    | _O(n)_          | Medium           | | Prefix Sum
+2430 | [Maximum Deletions on a String](https://leetcode.com/problems/maximum-deletions-on-a-string/)| [C++](./C++/maximum-deletions-on-a-string.cpp) [Python](./Python/maximum-deletions-on-a-string.py) | _O(n^2)_    | _O(n^2)_          | Hard           | | DP
 
 <br/>
 <div align="right">
@@ -1418,6 +1425,7 @@
 2410 | [Maximum Matching of Players With Trainers](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/) | [C++](./C++/maximum-matching-of-players-with-trainers.cpp) [Python](./Python/maximum-matching-of-players-with-trainers.py) | _O(nlogn + mlogm)_ | _O(1)_ | Medium || Greedy, Sort
 2412 | [Minimum Money Required Before Transactions](https://leetcode.com/problems/minimum-money-required-before-transactions/) | [C++](./C++/minimum-money-required-before-transactions.cpp) [Python](./Python/minimum-money-required-before-transactions.py) | _O(n)_ | _O(1)_ | Hard || Greedy, Constructive Algorithms
 2417 | [Closest Fair Integer](https://leetcode.com/problems/closest-fair-integer/) | [C++](./C++/closest-fair-integer.cpp) [Python](./Python/closest-fair-integer.py) | _O(logn)_   | _O(logn)_        | Medium         | 🔒 | Constructive Algorithms, Greedy
+2422 | [Merge Operations to Turn Array Into a Palindrome](https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/) | [C++](./C++/merge-operations-to-turn-array-into-a-palindrome.cpp) [Python](./Python/merge-operations-to-turn-array-into-a-palindrome.py) | _O(n)_   | _O(1)_        | Medium         | 🔒 | Constructive Algorithms, Greedy, Two Pointers
 
 <br/>
 <div align="right">
@@ -1567,6 +1575,7 @@
 2349 | [Design a Number Container System](https://leetcode.com/problems/design-a-number-container-system/) | [C++](./C++/design-a-number-container-system.cpp) [Python](./Python/design-a-number-container-system.py) | ctor: _O(1)_<br>change: _O(logn)_<br>find: _O(1)_ | _O(n)_ | Medium | | Sorted List, BST
 2353 | [Design a Food Rating System](https://leetcode.com/problems/design-a-food-rating-system/) | [C++](./C++/design-a-food-rating-system.cpp) [Python](./Python/design-a-food-rating-system.py) | ctor: _O(nlogn)_<br>changeRating: _O(logn)_<br>highestRated: _O(1)_ | _O(n)_ | Medium | | Sorted List, BST
 2408 | [Design SQL](https://leetcode.com/problems/design-sql/) | [C++](./C++/design-sql.cpp) [Python](./Python/design-sql.py) | ctor: _O(t * max_m)_<br>insertRow: _O(m)_<br>deleteRow: _O(1)_<br>selectCell: _O(m)_ | _O(d)_ | Medium | 🔒 | Hash Table
+2424 | [Longest Uploaded Prefix](https://leetcode.com/problems/longest-uploaded-prefix/) | [C++](./C++/longest-uploaded-prefix.cpp) [Python](./Python/longest-uploaded-prefix.py) | ctor: _O(1)_<br>upload: _O(1)_, amortized <br>longest: _O(1)_ | _O(n)_ | Medium | | Hash Table
 
 <br/>
 <div align="right">
