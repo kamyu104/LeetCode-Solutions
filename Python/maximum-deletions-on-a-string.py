@@ -26,7 +26,7 @@ class Solution(object):
             lps = longest_prefix_suffix(i)  # lps[j]: longest prefix / suffix length of s[i:j+1]
             for j in xrange(1, len(lps), 2):
                 if 2*lps[j] == j+1:
-                    dp[i] = max(dp[i], dp[i+(j+1)//2]+1)
+                    dp[i] = max(dp[i], dp[i+lps[j]]+1)
         return dp[0]
 
 
