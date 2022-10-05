@@ -1263,7 +1263,7 @@
 2380 | [Time Needed to Rearrange a Binary String](https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/)| [C++](./C++/time-needed-to-rearrange-a-binary-string.cpp) [Python](./Python/time-needed-to-rearrange-a-binary-string.py) | _O(n)_    | _O(1)_          | Medium           | | DP
 2403 | [Minimum Time to Kill All Monsters](https://leetcode.com/problems/minimum-time-to-kill-all-monsters/)| [C++](./C++/minimum-time-to-kill-all-monsters.cpp) [Python](./Python/minimum-time-to-kill-all-monsters.py) | _O(n * 2^n)_    | _O(2^n)_          | Hard           |🔒| Bitmasks, DP
 2420 | [Find All Good Indices](https://leetcode.com/problems/find-all-good-indices/)| [C++](./C++/find-all-good-indices.cpp) [Python](./Python/find-all-good-indices.py) | _O(n)_    | _O(n)_          | Medium           | | Prefix Sum
-2430 | [Maximum Deletions on a String](https://leetcode.com/problems/maximum-deletions-on-a-string/)| [C++](./C++/maximum-deletions-on-a-string.cpp) [Python](./Python/maximum-deletions-on-a-string.py) | _O(n^2)_    | _O(n)_          | Hard           | | DP, Longest Prefix Suffix Algorithm
+2430 | [Maximum Deletions on a String](https://leetcode.com/problems/maximum-deletions-on-a-string/)| [C++](./C++/maximum-deletions-on-a-string.cpp) [Python](./Python/maximum-deletions-on-a-string.py) | _O(n^2)_    | _O(n)_          | Hard           | | DP, Longest Prefix Suffix, `KMP Algorithm`
 
 <br/>
 <div align="right">
