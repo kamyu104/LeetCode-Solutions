@@ -1,4 +1,4 @@
-# Time:  O(sqrt(log(min(a, b))))
+# Time:  O(log(min(a, b)) + sqrt(gcd))
 # Space: O(1)
 
 # math
