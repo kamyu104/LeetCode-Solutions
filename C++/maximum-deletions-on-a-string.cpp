@@ -9,7 +9,7 @@ public:
             return size(s);
         }
         vector<vector<int>> dp(size(s) + 1, vector<int>(size(s) + 1));  // dp[i][j]: max prefix length of s[i:] and s[j:]
-        vector<int> dp2(size(s), 1);  // dp2[i]: max operations of s[i:]
+        vector<int> dp2(size(s), 1);  // dp2[i]: max operation count of s[i:]
         for (int i = size(s) - 2; i >= 0; --i) {
             for (int j = i + 1; j < size(s); ++j) {
                 if (s[j] == s[i]) {
