@@ -112,7 +112,7 @@
 2411 | [Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/) | [C++](./C++/smallest-subarrays-with-maximum-bitwise-or.cpp) [Python](./Python/smallest-subarrays-with-maximum-bitwise-or.py) | _O(n)_ | _O(1)_ | Medium || Bitmasks, Hash Table
 2419 | [Longest Subarray With Maximum Bitwise AND](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/) | [C++](./C++/longest-subarray-with-maximum-bitwise-and.cpp) [Python](./Python/longest-subarray-with-maximum-bitwise-and.py) | _O(n)_ | _O(1)_ | Medium || Bit Manipulation
 2425 | [Bitwise XOR of All Pairings](https://leetcode.com/problems/bitwise-xor-of-all-pairings/) | [C++](./C++/bitwise-xor-of-all-pairings.cpp) [Python](./Python/bitwise-xor-of-all-pairings.py) | _O(n)_ | _O(1)_ | Medium || Bit Manipulation
-2429 | [Minimize XOR](https://leetcode.com/problems/minimize-xor/) | [C++](./C++/minimize-xor.cpp) [Python](./Python/minimize-xor.py) | _O(logn)_ | _O(1)_ | Medium || Bit Manipulation
+2429 | [Minimize XOR](https://leetcode.com/problems/minimize-xor/) | [C++](./C++/minimize-xor.cpp) [Python](./Python/minimize-xor.py) | _O(logn)_ | _O(1)_ | Medium || Bit Manipulation, Greedy
 
 <br/>
 <div align="right">
