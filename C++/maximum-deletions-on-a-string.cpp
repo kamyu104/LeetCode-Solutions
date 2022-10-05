@@ -1,7 +1,7 @@
 // Time:  O(n^2)
 // Space: O(n)
 
-// dp, lps algorithm
+// dp, kmp algorithm
 class Solution {
 public:
     int deleteString(string s) {
@@ -9,26 +9,27 @@ public:
             return size(s);
         }
         
-        const auto& longest_prefix_suffix = [&](int i) {  // Time: O(n), Space: O(n)
-            vector<int> lps(size(s) - i);
-            for (int j = 1, l = 0; j < size(lps); ++j) {
-                while (l != 0 && s[i + l] != s[i + j]) {
-                    l = lps[l - 1];
+        const auto& getPrefix = [](const auto& pattern, int start) {  // Time: O(n), Space: O(n)
+            vector<int> prefix(size(pattern) - start, -1);
+            int j = -1;
+            for (int i = 1; start + i < size(pattern); ++i) {
+                while (j != -1 && pattern[start + j + 1] != pattern[start + i]) {
+                    j = prefix[j];
                 }
-                if (s[i + j] == s[i + l]) {
-                    ++l;
+                if (pattern[start + j + 1] == pattern[start + i]) {
+                    ++j;
                 }
-                lps[j] = l;
+                prefix[i] = j;
             }
-            return lps;
+            return prefix;
         };
 
         vector<int> dp(size(s), 1);  // dp[i]: max operation count of s[i:]
         for (int i = size(s) - 2; i >= 0; --i) {
-            const auto& lps = longest_prefix_suffix(i);  // lps[j]: longest prefix suffix length of s[i:j+1]                
-            for (int j = 1; j < size(lps); j += 2) {
-                if (2 * lps[j] == j + 1) {
-                    dp[i] = max(dp[i], dp[i + lps[j]] + 1);
+            const auto& prefix = getPrefix(s, i);  // prefix[j] + 1: longest prefix suffix length of s[i:j+1]                
+            for (int j = 1; j < size(prefix); j += 2) {
+                if (2 * (prefix[j] + 1) == j + 1) {
+                    dp[i] = max(dp[i], dp[i + (prefix[j] + 1)] + 1);
                 }
             }
         }
