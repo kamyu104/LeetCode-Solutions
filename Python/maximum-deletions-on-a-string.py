@@ -23,7 +23,7 @@ class Solution(object):
             return len(s)
         dp = [1]*len(s)  # dp[i]: max operations of s[i:]
         for i in reversed(xrange(len(s)-1)):
-            lps = longest_prefix_suffix(i)  # lps[j]: longest prefix / suffix length of s[i:j+1]
+            lps = longest_prefix_suffix(i)  # lps[j]: longest prefix suffix length of s[i:j+1]
             for j in xrange(1, len(lps), 2):
                 if 2*lps[j] == j+1:
                     dp[i] = max(dp[i], dp[i+lps[j]]+1)
