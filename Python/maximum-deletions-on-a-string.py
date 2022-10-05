@@ -14,7 +14,7 @@ class Solution(object):
             for j in xrange(1, len(lps)):
                 while l != 0 and s[i+l] != s[i+j]:
                     l = lps[l-1]
-                if s[i+j] == s[i+l]:
+                if s[i+l] == s[i+j]:
                     l += 1
                 lps[j] = l
             return lps
