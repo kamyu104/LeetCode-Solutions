@@ -8,25 +8,25 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        def longest_prefix_suffix(i):  # Time: O(n), Space: O(n)
-            lps = [0]*(len(s)-i)
-            l = 0
-            for j in xrange(1, len(lps)):
-                while l != 0 and s[i+l] != s[i+j]:
-                    l = lps[l-1]
-                if s[i+l] == s[i+j]:
-                    l += 1
-                lps[j] = l
-            return lps
+        def getPrefix(pattern, start):
+            prefix = [-1]*(len(pattern)-start)
+            j = -1
+            for i in xrange(1, len(pattern)-start):
+                while j > -1 and pattern[start+j+1] != pattern[start+i]:
+                    j = prefix[j]
+                if pattern[start+j+1] == pattern[start+i]:
+                    j += 1
+                prefix[i] = j
+            return prefix
 
         if all(x == s[0] for x in s):
             return len(s)
         dp = [1]*len(s)  # dp[i]: max operations of s[i:]
         for i in reversed(xrange(len(s)-1)):
-            lps = longest_prefix_suffix(i)  # lps[j]: longest prefix suffix length of s[i:j+1]
-            for j in xrange(1, len(lps), 2):
-                if 2*lps[j] == j+1:
-                    dp[i] = max(dp[i], dp[i+lps[j]]+1)
+            prefix = getPrefix(s, i)  # prefix[j]+1: longest prefix suffix length of s[i:j+1]
+            for j in xrange(1, len(prefix), 2):
+                if 2*(prefix[j]+1) == j+1:
+                    dp[i] = max(dp[i], dp[i+(prefix[j]+1)]+1)
         return dp[0]
 
 
