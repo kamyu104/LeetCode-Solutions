@@ -1,7 +1,7 @@
 # Time:  O(logn)
 # Space: O(1)
 
-# bit manipulation
+# bit manipulation, greedy
 class Solution(object):
     def minimizeXor(self, num1, num2):
         """
