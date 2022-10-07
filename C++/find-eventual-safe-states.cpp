@@ -23,14 +23,8 @@ private:
             return (*lookup)[node] == BLACK;
         }
         (*lookup)[node] = GRAY;
-        for (const auto& child : graph[node]) {
-            if ((*lookup)[child] == BLACK) {
-                continue;
-            }
-            if ((*lookup)[child] == GRAY ||
-                !dfs(graph, child, lookup)) {
-                return false;
-            }
+        if (any_of(cbegin(graph[node]), cend(graph[node]), [&](const auto& child) { return ! dfs(graph, child, lookup); })) {
+            return false;
         }
         (*lookup)[node] = BLACK;
         return true;
