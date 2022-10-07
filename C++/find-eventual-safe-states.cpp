@@ -6,27 +6,26 @@ public:
     enum Color { WHITE, GRAY, BLACK };
     
     vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
+        vector<Color> lookup(size(graph));
+
+        const function<bool(int)> dfs = [&](int node) {
+            if (lookup[node] != WHITE) {
+                return lookup[node] == BLACK;
+            }
+            lookup[node] = GRAY;
+            if (any_of(cbegin(graph[node]), cend(graph[node]), [&](const auto& child) { return ! dfs(child); })) {
+                return false;
+            }
+            lookup[node] = BLACK;
+            return true;
+        };
+
         vector<int> result;
-        unordered_map<int, Color> lookup;
-        for (int i = 0; i < graph.size(); ++i) {
-            if (dfs(graph, i, &lookup)) {
+        for (int i = 0; i < size(graph); ++i) {
+            if (dfs(i)) {
                 result.emplace_back(i);
             }
         }
         return result;
-    }
-
-private:
-    bool dfs(const vector<vector<int>>& graph, int node,
-             unordered_map<int, Color> *lookup) {
-        if ((*lookup)[node] != WHITE) {
-            return (*lookup)[node] == BLACK;
-        }
-        (*lookup)[node] = GRAY;
-        if (any_of(cbegin(graph[node]), cend(graph[node]), [&](const auto& child) { return ! dfs(graph, child, lookup); })) {
-            return false;
-        }
-        (*lookup)[node] = BLACK;
-        return true;
     }
 };
