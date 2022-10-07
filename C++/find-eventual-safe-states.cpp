@@ -6,7 +6,7 @@ public:
     enum Color { WHITE, GRAY, BLACK };
     
     vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
-        vector<Color> lookup(size(graph));
+        vector<Color> lookup(size(graph), WHITE);
 
         const function<bool(int)> dfs = [&](int node) {
             if (lookup[node] != WHITE) {
