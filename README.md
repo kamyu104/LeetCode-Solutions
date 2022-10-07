@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2430%20%2F%202430-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2431%20%2F%202431-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1264,6 +1264,7 @@
 2403 | [Minimum Time to Kill All Monsters](https://leetcode.com/problems/minimum-time-to-kill-all-monsters/)| [C++](./C++/minimum-time-to-kill-all-monsters.cpp) [Python](./Python/minimum-time-to-kill-all-monsters.py) | _O(n * 2^n)_    | _O(2^n)_          | Hard           |🔒| Bitmasks, DP
 2420 | [Find All Good Indices](https://leetcode.com/problems/find-all-good-indices/)| [C++](./C++/find-all-good-indices.cpp) [Python](./Python/find-all-good-indices.py) | _O(n)_    | _O(n)_          | Medium           | | Prefix Sum
 2430 | [Maximum Deletions on a String](https://leetcode.com/problems/maximum-deletions-on-a-string/)| [C++](./C++/maximum-deletions-on-a-string.cpp) [Python](./Python/maximum-deletions-on-a-string.py) | _O(n^2)_    | _O(n)_          | Hard           | | DP, `Rabin-Karp Algorithm`, Rolling Hash, Longest Prefix Suffix, `KMP Algorithm`
+2431 | [Maximize Total Tastiness of Purchased Fruits](https://leetcode.com/problems/maximize-total-tastiness-of-purchased-fruits/)| [C++](./C++/maximize-total-tastiness-of-purchased-fruits.cpp) [Python](./Python/maximize-total-tastiness-of-purchased-fruits.py) | _O(n * a * c)_    | _O(a * c)_          | Hard           |🔒| DP
 
 <br/>
 <div align="right">
