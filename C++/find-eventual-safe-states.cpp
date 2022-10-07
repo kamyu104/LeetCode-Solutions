@@ -13,7 +13,7 @@ public:
                 return lookup[node] == BLACK;
             }
             lookup[node] = GRAY;
-            if (any_of(cbegin(graph[node]), cend(graph[node]), [&](const auto& child) { return ! dfs(child); })) {
+            if (any_of(cbegin(graph[node]), cend(graph[node]), [&](const auto& child) { return !dfs(child); })) {
                 return false;
             }
             lookup[node] = BLACK;
