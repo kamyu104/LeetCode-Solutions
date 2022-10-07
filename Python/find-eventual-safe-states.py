@@ -1,9 +1,6 @@
 # Time:  O(|V| + |E|)
 # Space: O(|V|)
 
-import collections
-
-
 class Solution(object):
     def eventualSafeNodes(self, graph):
         """
@@ -21,5 +18,5 @@ class Solution(object):
             lookup[node] = BLACK
             return True
 
-        lookup = collections.defaultdict(int)
+        lookup = [WHITE]*len(graph)
         return filter(lambda node: dfs(graph, node, lookup), xrange(len(graph)))
