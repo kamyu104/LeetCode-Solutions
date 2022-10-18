@@ -13,8 +13,7 @@ class Solution(object):
                 a, b = b, a%b
             return a
 
-        result = 1
-        g = 0
+        result, g = 1, 0
         for x in nums:
             g = gcd(g, x)
             if g == 1:
