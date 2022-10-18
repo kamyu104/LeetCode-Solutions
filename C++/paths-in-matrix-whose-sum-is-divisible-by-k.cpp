@@ -12,8 +12,7 @@ public:
             for (int j = 0; j < size(grid[0]); ++j) {
                 vector<int> cnt(k);
                 for (int l = 0; l < k; ++l) {
-                    const int nl = (((l - grid[i][j]) % k) + k) % k;
-                    cnt[l] = ((j - 1 >= 0 ? dp[j - 1][nl] : 0) + dp[j][nl]) % MOD;
+                    cnt[(l + grid[i][j]) % k] = ((j - 1 >= 0 ? dp[j - 1][l] : 0) + dp[j][l]) % MOD;
                 }
                 dp[j] = move(cnt);
             }
