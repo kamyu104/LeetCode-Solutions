@@ -14,16 +14,16 @@ class Solution(object):
             if total == 1:
                 return False
             if num <= 18:
-                return (num%2 == 0) or (num == 11 and total in (0, 100))
+                return (num%2 == 0) or (num == 11 and total in (0, 11))
             for x in (num%10, 10+num%10):
-                if not (1 <= x <= 18 and x*11 <= num):
+                base = 11
+                if not (1 <= x <= 18 and x*base <= num):
                     continue
-                base = 100
-                while x*(base+1) <= num:
-                    base *= 10
+                while x*((base-1)*10+1) <= num:
+                    base = (base-1)*10+1
                 if not (total == 0 or total == base):
                     continue
-                if backtracking((num-x*(base//10+1))//10, base//100):
+                if backtracking((num-x*base)//10, base//100+1):
                     return True
             return False
 
