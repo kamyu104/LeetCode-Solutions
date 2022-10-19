@@ -1,4 +1,4 @@
-// Time:  O(n^2)
+// Time:  O(n * sqrt(n))
 // Space: O(n)
 
 // bfs, greedy
@@ -53,7 +53,7 @@ public:
     }
 };
 
-// Time:  O(n^2)
+// Time:  O(n * sqrt(n))
 // Space: O(n)
 // iterative dfs, greedy
 class Solution2 {
@@ -102,7 +102,7 @@ public:
     }
 };
 
-// Time:  O(n^2)
+// Time:  O(n * sqrt(n))
 // Space: O(n)
 // dfs, greedy
 class Solution3 {
