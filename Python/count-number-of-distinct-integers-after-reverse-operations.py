@@ -12,7 +12,7 @@ class Solution(object):
             result = 0
             while n:
                 result = result*10 + n%10
-                n //= 10            
+                n //= 10
             return result
 
         return len({y for x in nums for y in (x, reverse(x))})
