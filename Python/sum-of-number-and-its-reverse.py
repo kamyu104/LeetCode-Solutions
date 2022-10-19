@@ -43,7 +43,7 @@ class Solution2(object):
             result = 0
             while n:
                 result = result*10 + n%10
-                n //= 10            
+                n //= 10
             return result
 
         return any(x+reverse(x) == num for x in xrange(num//2, num+1))
