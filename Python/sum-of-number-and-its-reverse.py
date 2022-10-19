@@ -8,7 +8,7 @@ class Solution(object):
         :type num: int
         :rtype: bool
         """
-        def backtracking(num, total=0):
+        def backtracking(num, total):
             if num == 0:
                 return True
             if total == 1:
@@ -27,7 +27,7 @@ class Solution(object):
                     return True
             return False
 
-        return backtracking(num)
+        return backtracking(num, 0)
 
 
 # Time:  O(nlogn)
