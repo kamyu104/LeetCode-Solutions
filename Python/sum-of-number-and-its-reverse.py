@@ -1,8 +1,39 @@
+# Time:  O(log10(n) * 2^(log10(n)/2)) = O(n^(1/(2*log2(10))) * log10(n))
+# Space: O(log10(n))
+
+# backtracking
+class Solution(object):
+    def sumOfNumberAndReverse(self, num):
+        """
+        :type num: int
+        :rtype: bool
+        """
+        def backtracking(num, total=0):
+            if num == 0:
+                return True
+            if total == 1:
+                return False
+            if num <= 18:
+                return (num%2 == 0) or (num == 11 and total in (0, 100))
+            for x in (num%10, 10+num%10):
+                if not (1 <= x <= 18 and x*11 <= num):
+                    continue
+                base = 100
+                while x*(base+1) <= num:
+                    base *= 10
+                if not (total == 0 or total == base):
+                    continue
+                if backtracking((num-x*(base//10+1))//10, base//100):
+                    return True
+            return False
+
+        return backtracking(num)
+
+
 # Time:  O(nlogn)
 # Space: O(1)
-
 # brute force
-class Solution(object):
+class Solution2(object):
     def sumOfNumberAndReverse(self, num):
         """
         :type num: int
@@ -21,7 +52,7 @@ class Solution(object):
 # Time:  O(nlogn)
 # Space: O(logn)
 # brute force
-class Solution2(object):
+class Solution3(object):
     def sumOfNumberAndReverse(self, num):
         """
         :type num: int
