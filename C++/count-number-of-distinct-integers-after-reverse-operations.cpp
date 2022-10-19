@@ -1,4 +1,4 @@
-// Time:  O(nlogn)
+// Time:  O(nlogr), r = max(nums)
 // Space: O(n)
 
 // hash table
