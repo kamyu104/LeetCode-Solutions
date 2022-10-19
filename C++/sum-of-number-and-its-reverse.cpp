@@ -1,5 +1,5 @@
 // Time:  O(nlogn)
-// Space: O(logn)
+// Space: O(1)
 
 // brute force
 class Solution {
