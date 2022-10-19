@@ -787,7 +787,7 @@
 2413 | [Smallest Even Multiple](https://leetcode.com/problems/smallest-even-multiple/) | [C++](./C++/smallest-even-multiple.cpp) [Python](./Python/smallest-even-multiple.py) | _O(1)_   | _O(1)_        | Easy         | | Math, Bit Manipulation
 2427 | [Number of Common Factors](https://leetcode.com/problems/number-of-common-factors/) | [C++](./C++/number-of-common-factors.cpp) [Python](./Python/number-of-common-factors.py) | _O(log(min(a, b)) + sqrt(gcd))_   | _O(1)_        | Easy         | | Math
 2437 | [Number of Valid Clock Times](https://leetcode.com/problems/number-of-valid-clock-times/) | [C++](./C++/number-of-valid-clock-times.cpp) [Python](./Python/number-of-valid-clock-times.py) | _O(1)_   | _O(1)_        | Easy         | | Combinatorics
-2443 | [Sum of Number and Its Reverse](https://leetcode.com/problems/sum-of-number-and-its-reverse/) | [C++](./C++/sum-of-number-and-its-reverse.cpp) [Python](./Python/sum-of-number-and-its-reverse.py) | _O(nlogr)_   | _O(1)_        | Medium         | | Brute Force
+2443 | [Sum of Number and Its Reverse](https://leetcode.com/problems/sum-of-number-and-its-reverse/) | [C++](./C++/sum-of-number-and-its-reverse.cpp) [Python](./Python/sum-of-number-and-its-reverse.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Brute Force
 
 <br/>
 <div align="right">
