@@ -1,4 +1,4 @@
-// Time:  O(nlogr), r is the max of nums
+// Time:  O(nlogr), r = max(nums)
 // Space: O(1)
 
 // greedy
