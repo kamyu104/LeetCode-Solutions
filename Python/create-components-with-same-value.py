@@ -1,4 +1,4 @@
-# Time:  O(n)
+# Time:  O(n^2)
 # Space: O(n)
 
 # bfs, greedy
@@ -40,7 +40,7 @@ class Solution(object):
         return 0
 
 
-# Time:  O(n)
+# Time:  O(n^2)
 # Space: O(n)
 # iterative dfs, greedy
 class Solution2(object):
@@ -82,7 +82,7 @@ class Solution2(object):
         return 0
 
 
-# Time:  O(n)
+# Time:  O(n^2)
 # Space: O(n)
 # dfs, greedy
 class Solution3(object):
