@@ -28,7 +28,7 @@ class Solution(object):
                         continue
                     while x*((base-1)*10+1) <= num:
                         base = (base-1)*10+1
-                if base <= num//x and backtracking((num-x*base)//10, base//100+1):
+                if num-x*base >= 0 and backtracking((num-x*base)//10, base//100+1):
                     return True
             return False
 
