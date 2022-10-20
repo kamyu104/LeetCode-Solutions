@@ -1,4 +1,4 @@
-// Time:  O(2^(log10(n)/2)) = O( n^(1/(2*log2(10))))
+// Time:  O(2^(log10(n)/2)) = O(n^(1/(2*log2(10))))
 // Space: O(log10(n))
 
 // backtracking
