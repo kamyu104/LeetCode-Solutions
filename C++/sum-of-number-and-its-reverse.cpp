@@ -15,6 +15,9 @@ public:
             if (num <= 18) {
                 return (num % 2 == 0) || (num == 11 && total == 0);
             }
+            if (total == 2) {
+                return false;
+            }
             for (const auto& x : {num % 10, 10 + num % 10}) {
                 if (!(1 <= x && x <= 18)) {
                     continue;
@@ -25,7 +28,7 @@ public:
                 } else {
                     for (; x * ((base - 1) * 10 + 1) <= num; base = (base - 1) * 10 + 1);
                 }
-                if (11 <= base && base <= num / x && backtracking((num - x * base) / 10, base / 100 + 1)) {
+                if (num - x * base >= 0 && backtracking((num - x * base) / 10, base / 100 + 1)) {
                     return true;
                 }
             }
