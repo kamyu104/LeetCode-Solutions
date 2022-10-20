@@ -8,21 +8,21 @@ class Solution(object):
         :type num: int
         :rtype: bool
         """
-        def backtracking(num, total):
+        def backtracking(num, chosen):
             if num == 0:
                 return True
-            if total == 1:
+            if chosen == 1:
                 return False
             if num <= 18:
-                return (num%2 == 0) or (num == 11 and total == 0)
-            if total == 2:
+                return (num%2 == 0) or (num == 11 and chosen == 0)
+            if chosen == 2:
                 return False
             for x in (num%10, 10+num%10):
                 if not (1 <= x <= 18):
                     continue
                 base = 11
-                if total:
-                    base = total
+                if chosen:
+                    base = chosen
                 else:
                     while x*((base-1)*10+1) <= num:
                         base = (base-1)*10+1
