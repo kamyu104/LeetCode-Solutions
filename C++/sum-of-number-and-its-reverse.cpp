@@ -5,17 +5,17 @@
 class Solution {
 public:
     bool sumOfNumberAndReverse(int num) {
-        const function<int(int, int)> backtracking = [&](int num, int total) {
+        const function<int(int, int)> backtracking = [&](int num, int chosen) {
             if (num == 0) {
                 return true;
             }
-            if (total == 1) {
+            if (chosen == 1) {
                 return false;
             }
             if (num <= 18) {
-                return (num % 2 == 0) || (num == 11 && total == 0);
+                return (num % 2 == 0) || (num == 11 && chosen == 0);
             }
-            if (total == 2) {
+            if (chosen == 2) {
                 return false;
             }
             for (const auto& x : {num % 10, 10 + num % 10}) {
@@ -23,8 +23,8 @@ public:
                     continue;
                 }
                 int base = 11;
-                if (total) {
-                    base = total;
+                if (chosen) {
+                    base = chosen;
                 } else {
                     for (; x * ((base - 1) * 10 + 1) <= num; base = (base - 1) * 10 + 1);
                 }
