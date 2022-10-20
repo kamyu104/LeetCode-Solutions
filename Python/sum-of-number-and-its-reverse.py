@@ -20,12 +20,10 @@ class Solution(object):
             for x in (num%10, 10+num%10):
                 if not (1 <= x <= 18):
                     continue
+                base = 11
                 if total:
                     base = total
                 else:
-                    base = 11
-                    if not (x*base <= num):
-                        continue
                     while x*((base-1)*10+1) <= num:
                         base = (base-1)*10+1
                 if num-x*base >= 0 and backtracking((num-x*base)//10, base//100+1):
