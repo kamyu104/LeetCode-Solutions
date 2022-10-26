@@ -18,10 +18,10 @@ public:
         const int64_t total = accumulate(cbegin(cost), cend(cost), 0ll);
         int left = *min_element(cbegin(nums), cend(nums));
         int right = *max_element(cbegin(nums), cend(nums));
-        const int64_t target = (total + 1) / 2;
+        const int64_t median = (total + 1) / 2;
         while (left <= right) {
             const int mid = left + (right - left) / 2;
-            if (check(mid, target)) {
+            if (check(mid, median)) {
                 right = mid - 1;
             } else {
                 left = mid + 1;
