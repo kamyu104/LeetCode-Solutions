@@ -1,6 +1,9 @@
 # Time:  O(nlogn)
 # Space: O(1)
 
+import itertools
+
+
 # math, binary search
 class Solution(object):
     def minCost(self, nums, cost):
@@ -14,10 +17,10 @@ class Solution(object):
     
         total = sum(cost)
         left, right = min(nums), max(nums)
-        target = (total+1)//2
+        median = (total+1)//2
         while left <= right:
             mid = left+(right-left)//2
-            if check(mid, target):
+            if check(mid, median):
                 right = mid-1
             else:
                 left = mid+1
