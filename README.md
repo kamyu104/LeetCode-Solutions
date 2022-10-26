@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2444%20%2F%202444-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2450%20%2F%202450-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -280,6 +280,7 @@
 2432 | [The Employee That Worked on the Longest Task](https://leetcode.com/problems/the-employee-that-worked-on-the-longest-task/) | [C++](./C++/the-employee-that-worked-on-the-longest-task.cpp) [Python](./Python/the-employee-that-worked-on-the-longest-task.py) | _O(l)_   | _O(1)_        | Easy         | | Array
 2433 | [Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/) | [C++](./C++/find-the-original-array-of-prefix-xor.cpp) [Python](./Python/find-the-original-array-of-prefix-xor.py) | _O(n)_   | _O(1)_        | Medium         | | Array
 2438 | [Range Product Queries of Powers](https://leetcode.com/problems/range-product-queries-of-powers/) | [C++](./C++/range-product-queries-of-powers.cpp) [Python](./Python/range-product-queries-of-powers.py) | _O(logn + qlogr)_   | _O(logn)_        | Medium         | | Prefix Sum
+2446 | [Determine if Two Events Have Conflict](https://leetcode.com/problems/determine-if-two-events-have-conflict/) | [C++](./C++/determine-if-two-events-have-conflict.cpp) [Python](./Python/determine-if-two-events-have-conflict.py) | _O(1)_   | _O(1)_        | Easy         | | Array
 
 <br/>
 <div align="right">
@@ -787,6 +788,7 @@
 2413 | [Smallest Even Multiple](https://leetcode.com/problems/smallest-even-multiple/) | [C++](./C++/smallest-even-multiple.cpp) [Python](./Python/smallest-even-multiple.py) | _O(1)_   | _O(1)_        | Easy         | | Math, Bit Manipulation
 2427 | [Number of Common Factors](https://leetcode.com/problems/number-of-common-factors/) | [C++](./C++/number-of-common-factors.cpp) [Python](./Python/number-of-common-factors.py) | _O(log(min(a, b)) + sqrt(gcd))_   | _O(1)_        | Easy         | | Math
 2437 | [Number of Valid Clock Times](https://leetcode.com/problems/number-of-valid-clock-times/) | [C++](./C++/number-of-valid-clock-times.cpp) [Python](./Python/number-of-valid-clock-times.py) | _O(1)_   | _O(1)_        | Easy         | | Combinatorics
+2450 | [Number of Distinct Binary Strings After Applying Operations](https://leetcode.com/problems/number-of-distinct-binary-strings-after-applying-operations/) | [C++](./C++/number-of-distinct-binary-strings-after-applying-operations.cpp) [Python](./Python/number-of-distinct-binary-strings-after-applying-operations.py) | _O(logn)_   | _O(1)_        | Hard         | 🔒 | Combinatorics
 
 <br/>
 <div align="right">
@@ -978,6 +980,7 @@
 2333 | [Minimum Sum of Squared Difference](https://leetcode.com/problems/minimum-sum-of-squared-difference/) | [C++](./C++/minimum-sum-of-squared-difference.cpp) [Python](./Python/minimum-sum-of-squared-difference.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | | Binary Search
 2387 | [Median of a Row Wise Sorted Matrix](https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/) | [C++](./C++/median-of-a-row-wise-sorted-matrix.cpp) [Python](./Python/median-of-a-row-wise-sorted-matrix.py) | _O(logr * mlogn)_ | _O(1)_ | Medium | 🔒 | Binary Search |
 2389 | [Longest Subsequence With Limited Sum](https://leetcode.com/problems/longest-subsequence-with-limited-sum/) | [C++](./C++/longest-subsequence-with-limited-sum.cpp) [Python](./Python/longest-subsequence-with-limited-sum.py) | _O(nlogn + qlogn)_ | _O(1)_ | Easy | | Greedy, Sort, Binary Search |
+2448 | [Minimum Cost to Make Array Equal](https://leetcode.com/problems/minimum-cost-to-make-array-equal/) | [C++](./C++/minimum-cost-to-make-array-equal.cpp) [Python](./Python/minimum-cost-to-make-array-equal.py) | _O(nlogn)_ | _O(1)_ | Hard | | Math, Binary Search, Prefix Sum |
 
 <br/>
 <div align="right">
@@ -1087,6 +1090,7 @@
 2322 | [Minimum Score After Removals on a Tree](https://leetcode.com/problems/minimum-score-after-removals-on-a-tree/) | [C++](./C++/minimum-score-after-removals-on-a-tree.cpp) [Python](./Python/minimum-score-after-removals-on-a-tree.py) | _O(n^2)_ | _O(n)_ | Hard | | DFS, Tree |
 2331 | [Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree/) | [C++](./C++/evaluate-boolean-binary-tree.cpp) [Python](./Python/evaluate-boolean-binary-tree.py) | _O(n)_ | _O(h)_ | Easy | | DFS |
 2385 | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/) | [C++](./C++/amount-of-time-for-binary-tree-to-be-infected.cpp) [Python](./Python/amount-of-time-for-binary-tree-to-be-infected.py) | _O(n)_ | _O(h)_ | Medium | | BFS, DFS, Tree DP |
+2445 | [Number of Nodes With Value One](https://leetcode.com/problems/number-of-nodes-with-value-one/)| [C++](./C++/number-of-nodes-with-value-one.cpp) [Python](./Python/number-of-nodes-with-value-one.py)| _O(q + h)_ | _O(q + h)_ | Medium | 🔒 | Tree, DFS, BFS |
 
 <br/>
 <div align="right">
@@ -1274,6 +1278,7 @@
 2430 | [Maximum Deletions on a String](https://leetcode.com/problems/maximum-deletions-on-a-string/)| [C++](./C++/maximum-deletions-on-a-string.cpp) [Python](./Python/maximum-deletions-on-a-string.py) | _O(n^2)_    | _O(n)_          | Hard           | | DP, `Rabin-Karp Algorithm`, Rolling Hash, Longest Prefix Suffix, `KMP Algorithm`
 2431 | [Maximize Total Tastiness of Purchased Fruits](https://leetcode.com/problems/maximize-total-tastiness-of-purchased-fruits/)| [C++](./C++/maximize-total-tastiness-of-purchased-fruits.cpp) [Python](./Python/maximize-total-tastiness-of-purchased-fruits.py) | _O(n * a * c)_    | _O(a * c)_          | Medium           |🔒| DP
 2435 | [Paths in Matrix Whose Sum Is Divisible by K](https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/)| [C++](./C++/paths-in-matrix-whose-sum-is-divisible-by-k.cpp) [Python](./Python/paths-in-matrix-whose-sum-is-divisible-by-k.py) | _O(m * n * k)_    | _O(n * k)_          | Hard           || DP
+2447 | [Number of Subarrays With GCD Equal to K](https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/)| [C++](./C++/number-of-subarrays-with-gcd-equal-to-k.cpp) [Python](./Python/number-of-subarrays-with-gcd-equal-to-k.py) | _O(nlogr)_    | _O(logr)_          | Medium           || DP
 
 <br/>
 <div align="right">
@@ -1440,6 +1445,7 @@
 2436 | [Minimum Split Into Subarrays With GCD Greater Than One](https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/) | [C++](./C++/minimum-split-into-subarrays-with-gcd-greater-than-one.cpp) [Python](./Python/minimum-split-into-subarrays-with-gcd-greater-than-one.py) | _O(nlogr)_   | _O(1)_        | Medium         | 🔒 | Greedy
 2439 | [Minimize Maximum of Array](https://leetcode.com/problems/minimize-maximum-of-array/) | [C++](./C++/minimize-maximum-of-array.cpp) [Python](./Python/minimize-maximum-of-array.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 2440 | [Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/) | [C++](./C++/create-components-with-same-value.cpp) [Python](./Python/create-components-with-same-value.py) | _O(n * sqrt(n))_   | _O(n)_        | Hard         | | BFS, DFS, Greedy
+2449 | [Minimum Number of Operations to Make Arrays Similar](https://leetcode.com/problems/minimum-number-of-operations-to-make-arrays-similar/) | [C++](./C++/minimum-number-of-operations-to-make-arrays-similar.cpp) [Python](./Python/minimum-number-of-operations-to-make-arrays-similar.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Greedy, Sort
 
 <br/>
 <div align="right">
