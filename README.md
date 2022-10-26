@@ -788,7 +788,7 @@
 2413 | [Smallest Even Multiple](https://leetcode.com/problems/smallest-even-multiple/) | [C++](./C++/smallest-even-multiple.cpp) [Python](./Python/smallest-even-multiple.py) | _O(1)_   | _O(1)_        | Easy         | | Math, Bit Manipulation
 2427 | [Number of Common Factors](https://leetcode.com/problems/number-of-common-factors/) | [C++](./C++/number-of-common-factors.cpp) [Python](./Python/number-of-common-factors.py) | _O(log(min(a, b)) + sqrt(gcd))_   | _O(1)_        | Easy         | | Math
 2437 | [Number of Valid Clock Times](https://leetcode.com/problems/number-of-valid-clock-times/) | [C++](./C++/number-of-valid-clock-times.cpp) [Python](./Python/number-of-valid-clock-times.py) | _O(1)_   | _O(1)_        | Easy         | | Combinatorics
-2450 | [Number of Distinct Binary Strings After Applying Operations](https://leetcode.com/problems/number-of-distinct-binary-strings-after-applying-operations/) | [C++](./C++/number-of-distinct-binary-strings-after-applying-operations.cpp) [Python](./Python/number-of-distinct-binary-strings-after-applying-operations.py) | _O(logn)_   | _O(1)_        | Hard         | 🔒 | Combinatorics
+2450 | [Number of Distinct Binary Strings After Applying Operations](https://leetcode.com/problems/number-of-distinct-binary-strings-after-applying-operations/) | [C++](./C++/number-of-distinct-binary-strings-after-applying-operations.cpp) [Python](./Python/number-of-distinct-binary-strings-after-applying-operations.py) | _O(logn)_   | _O(1)_        | Medium         | 🔒 | Combinatorics
 
 <br/>
 <div align="right">
