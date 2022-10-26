@@ -43,10 +43,9 @@ public:
     long long minCost(vector<int>& nums, vector<int>& cost) {
         vector<int> idxs(size(nums));
         iota(begin(idxs), end(idxs), 0);
-        sort(begin(idxs), end(idxs),
-             [&](const auto& a, const auto& b) {
-                 return nums[a] < nums[b];
-             });
+        sort(begin(idxs), end(idxs), [&](const auto& a, const auto& b) {
+            return nums[a] < nums[b];
+        });
         vector<int64_t> prefix(size(cost) + 1);
         int64_t left = 0;
         for (int i = 0; i < size(cost); ++i) {
