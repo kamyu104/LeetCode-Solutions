@@ -980,7 +980,7 @@
 2333 | [Minimum Sum of Squared Difference](https://leetcode.com/problems/minimum-sum-of-squared-difference/) | [C++](./C++/minimum-sum-of-squared-difference.cpp) [Python](./Python/minimum-sum-of-squared-difference.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | | Binary Search
 2387 | [Median of a Row Wise Sorted Matrix](https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/) | [C++](./C++/median-of-a-row-wise-sorted-matrix.cpp) [Python](./Python/median-of-a-row-wise-sorted-matrix.py) | _O(logr * mlogn)_ | _O(1)_ | Medium | 🔒 | Binary Search |
 2389 | [Longest Subsequence With Limited Sum](https://leetcode.com/problems/longest-subsequence-with-limited-sum/) | [C++](./C++/longest-subsequence-with-limited-sum.cpp) [Python](./Python/longest-subsequence-with-limited-sum.py) | _O(nlogn + qlogn)_ | _O(1)_ | Easy | | Greedy, Sort, Binary Search |
-2448 | [Minimum Cost to Make Array Equal](https://leetcode.com/problems/minimum-cost-to-make-array-equal/) | [C++](./C++/minimum-cost-to-make-array-equal.cpp) [Python](./Python/minimum-cost-to-make-array-equal.py) | _O(nlogn)_ | _O(1)_ | Hard | | Math, Binary Search, Prefix Sum |
+2448 | [Minimum Cost to Make Array Equal](https://leetcode.com/problems/minimum-cost-to-make-array-equal/) | [C++](./C++/minimum-cost-to-make-array-equal.cpp) [Python](./Python/minimum-cost-to-make-array-equal.py) | _O(nlogn)_ | _O(n)_ | Hard | | Math, Binary Search, Prefix Sum |
 
 <br/>
 <div align="right">
