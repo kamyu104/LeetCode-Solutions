@@ -13,8 +13,8 @@ public:
         sort(begin(target), end(target), cmp);
         int64_t result = 0;
         for (int i = 0; i < size(nums); ++i) {
-            result += abs(nums[i] - target[i]);
+            result += abs(nums[i] - target[i]) / 2;
         }
-        return result / 4;
+        return result / 2;
     }
 };
