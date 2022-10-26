@@ -1,6 +1,9 @@
 # Time:  O(nlogn)
 # Space: O(1)
 
+import itertools
+
+
 # greedy, sort
 class Solution(object):
     def makeSimilar(self, nums, target):
