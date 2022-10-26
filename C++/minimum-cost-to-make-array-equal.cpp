@@ -1,5 +1,5 @@
 // Time:  O(nlogn)
-// Space: O(1)
+// Space: O(n)
 
 // math, binary search
 class Solution {
@@ -23,7 +23,6 @@ public:
             return cnt >= t;
         };
 
-        
         vector<int> idxs(size(nums));
         iota(begin(idxs), end(idxs), 0);
         sort(begin(idxs), end(idxs), [&](const auto& a, const auto& b) {
@@ -46,8 +45,44 @@ public:
 
 // Time:  O(nlogn)
 // Space: O(n)
-// prefix sum
+// binary search
 class Solution2 {
+public:
+    long long minCost(vector<int>& nums, vector<int>& cost) {
+        const auto& f = [&](int x) {
+            int64_t result = 0;
+            for (int i = 0; i < size(nums); ++i) {
+                result += static_cast<int64_t>(abs(nums[i] - x)) * cost[i];
+            }
+            return result;
+        };
+        
+        vector<int> idxs(size(nums));
+        iota(begin(idxs), end(idxs), 0);
+        sort(begin(idxs), end(idxs), [&](const auto& a, const auto& b) {
+            return nums[a] < nums[b];
+        });
+        const auto& check = [&](int x) {
+            return x + 1 == size(idxs) || f(nums[idxs[x]]) < f(nums[idxs[x + 1]]);
+        };
+
+        int left = 0, right = size(idxs) - 1;
+        while (left <= right) {
+            const int mid = left + (right - left) / 2;
+            if (check(mid)) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return f(nums[idxs[left]]);
+    }
+};
+
+// Time:  O(nlogn)
+// Space: O(n)
+// prefix sum
+class Solution3 {
 public:
     long long minCost(vector<int>& nums, vector<int>& cost) {
         vector<int> idxs(size(nums));
