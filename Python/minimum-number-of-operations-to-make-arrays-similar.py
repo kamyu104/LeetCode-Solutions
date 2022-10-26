@@ -11,4 +11,4 @@ class Solution(object):
         """
         nums.sort(key=lambda x: (x%2, x))
         target.sort(key=lambda x: (x%2, x))
-        return sum(abs(x-y) for x, y in itertools.izip(nums, target))//4
+        return sum(abs(x-y)//2 for x, y in itertools.izip(nums, target))//2
