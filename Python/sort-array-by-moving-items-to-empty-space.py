@@ -15,14 +15,14 @@ class Solution(object):
             a = nums[:]
             result = 0
             for i in xrange(len(a)):
-                l, found = 1, (a[i] == 0)
+                l, has_zero = 1, (a[i] == 0)
                 while index(a[i]) != i:
                     j = index(a[i])
                     a[i], a[j] = a[j], a[i]
                     l += 1
-                    found |= (a[i] == 0)
+                    has_zero |= (a[i] == 0)
                 if l >= 2:
-                    result += l-1 if found else l+1
+                    result += l-1 if has_zero else l+1
             return result
 
         return min(min_moves(0), min_moves(1))
