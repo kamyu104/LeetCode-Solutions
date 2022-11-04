@@ -14,7 +14,7 @@ public:
             for (int i = 0; i < size(a); ++i) {
                 int l = 1;
                 bool has_zero = (a[i] == 0);
-                for (; index(a[i]) != i; has_zero |= (a[i] == 0), ++l) {
+                for (; index(a[i]) != i; ++l, has_zero |= (a[i] == 0)) {
                     swap(a[i], a[index(a[i])]);
                 }
                 if (l >= 2) {
