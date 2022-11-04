@@ -8,16 +8,18 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        def index(x, d):
-            return d*(len(nums)-1) if x == 0 else x-d
+        
     
         def min_moves(d):
+            def index(x):
+                return d*(len(nums)-1) if x == 0 else x-d
+
             a = nums[:]
             result = 0
             for i in xrange(len(a)):
                 l, found = 1, (a[i] == 0)
-                while index(a[i], d) != i:
-                    j = index(a[i], d)
+                while index(a[i]) != i:
+                    j = index(a[i])
                     a[i], a[j] = a[j], a[i]
                     l += 1
                     found |= (a[i] == 0)
