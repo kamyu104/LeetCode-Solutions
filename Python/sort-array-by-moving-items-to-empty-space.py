@@ -15,14 +15,18 @@ class Solution(object):
             a = nums[:]
             result = 0
             for i in xrange(len(a)):
-                l = 1
-                while index(a[i], d) != i:
+                l, found = 0, False
+                while True:
+                    if a[i] == 0:
+                        found = True
+                    l += 1
+                    if index(a[i], d) == i:
+                        break
                     j = index(a[i], d)
                     a[i], a[j] = a[j], a[i]
-                    l += 1
                 if l >= 2:
-                    result += l+1  # add one zero which may be overcounted
-            return result-2*int(nums[d*(len(nums)-1)] != 0) # subtract overcounted zero
+                    result += l-1 if found else l+1
+            return result
 
         return min(min_moves(0), min_moves(1))
 
