@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// greedy
+// greedy, sort
 class Solution {
 public:
     int sortArray(vector<int>& nums) {
