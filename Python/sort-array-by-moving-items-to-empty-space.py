@@ -23,7 +23,7 @@ class Solution(object):
                     else:
                         i = len(nums)
                         continue
-                    ni = i                    
+                    ni = i
                 lookup[0], lookup[ni] = lookup[ni], lookup[0]
                 result += 1
             return result
