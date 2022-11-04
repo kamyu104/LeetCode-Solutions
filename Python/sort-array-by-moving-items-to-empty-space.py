@@ -19,8 +19,8 @@ class Solution(object):
                     continue
                 l = 0
                 while not lookup[nums[i]]:
-                    l += 1
                     lookup[nums[i]] = True
+                    l += 1
                     i = index(nums[i])
                 result -= 1
                 if l >= 2:
