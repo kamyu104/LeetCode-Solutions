@@ -8,6 +8,34 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        def index(x, d):
+            return d*(len(nums)-1) if x == 0 else x-d
+    
+        def min_moves(d):
+            a = nums[:]
+            result = 0
+            for i in xrange(len(a)):
+                l = 1
+                while index(a[i], d) != i:
+                    j = index(a[i], d)
+                    a[i], a[j] = a[j], a[i]
+                    l += 1
+                if l >= 2:
+                    result += l+1  # add one zero which may be overcounted
+            return result-2*int(nums[d*(len(nums)-1)] != 0) # subtract overcounted zero
+
+        return min(min_moves(0), min_moves(1))
+
+
+# Time:  O(n)
+# Space: O(n)
+# greedy
+class Solution2(object):
+    def sortArray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
         def min_moves(d):
             lookup = [0]*len(nums)
             for i, x in enumerate(nums):
