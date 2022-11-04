@@ -8,8 +8,6 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        
-    
         def min_moves(d):
             def index(x):
                 return d*(len(nums)-1) if x == 0 else x-d
