@@ -15,15 +15,12 @@ class Solution(object):
             a = nums[:]
             result = 0
             for i in xrange(len(a)):
-                l, found = 0, False
-                while True:
-                    if a[i] == 0:
-                        found = True
-                    l += 1
-                    if index(a[i], d) == i:
-                        break
+                l, found = 1, (a[i] == 0)
+                while index(a[i], d) != i:
                     j = index(a[i], d)
                     a[i], a[j] = a[j], a[i]
+                    l += 1
+                    found |= (a[i] == 0)
                 if l >= 2:
                     result += l-1 if found else l+1
             return result
