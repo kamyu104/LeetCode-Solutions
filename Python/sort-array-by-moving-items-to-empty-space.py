@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# greedy
+# greedy, sort
 class Solution(object):
     def sortArray(self, nums):
         """
