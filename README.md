@@ -1454,7 +1454,7 @@
 2440 | [Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/) | [C++](./C++/create-components-with-same-value.cpp) [Python](./Python/create-components-with-same-value.py) | _O(n * sqrt(n))_   | _O(n)_        | Hard         | | BFS, DFS, Greedy
 2449 | [Minimum Number of Operations to Make Arrays Similar](https://leetcode.com/problems/minimum-number-of-operations-to-make-arrays-similar/) | [C++](./C++/minimum-number-of-operations-to-make-arrays-similar.cpp) [Python](./Python/minimum-number-of-operations-to-make-arrays-similar.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Greedy, Sort
 2457 | [Minimum Addition to Make Integer Beautiful](https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/) | [C++](./C++/minimum-addition-to-make-integer-beautiful.cpp) [Python](./Python/minimum-addition-to-make-integer-beautiful.py) | _O(logn)_   | _O(1)_        | Medium         | | Greedy
-2459 | [Sort Array by Moving Items to Empty Space](https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/) | [C++](./C++/sort-array-by-moving-items-to-empty-space.cpp) [Python](./Python/sort-array-by-moving-items-to-empty-space.py) | _O(n)_   | _O(1)_        | Hard         | 🔒 | Greedy, Sort
+2459 | [Sort Array by Moving Items to Empty Space](https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/) | [C++](./C++/sort-array-by-moving-items-to-empty-space.cpp) [Python](./Python/sort-array-by-moving-items-to-empty-space.py) | _O(n)_   | _O(n)_        | Hard         | 🔒 | Greedy, Sort
 
 <br/>
 <div align="right">
