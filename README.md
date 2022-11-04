@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2450%20%2F%202450-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2459%20%2F%202459-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -467,6 +467,7 @@
 2282 | [Number of People That Can Be Seen in a Grid](https://leetcode.com/problems/number-of-people-that-can-be-seen-in-a-grid/) | [C++](./C++/number-of-people-that-can-be-seen-in-a-grid.cpp) [Python](./Python/number-of-people-that-can-be-seen-in-a-grid.py) | _O(m * n)_  | _O(m + n)_         | Medium           | 🔒, variant of [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/) | Mono Stack
 2334 | [Subarray With Elements Greater Than Varying Threshold](https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/) | [C++](./C++/subarray-with-elements-greater-than-varying-threshold.cpp) [Python](./Python/subarray-with-elements-greater-than-varying-threshold.py) | _O(n)_ | _O(n)_ | Hard | variant of [Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/) | Mono Stack
 2355 | [Maximum Number of Books You Can Take](https://leetcode.com/problems/maximum-number-of-books-you-can-take/) | [C++](./C++/maximum-number-of-books-you-can-take.cpp) [Python](./Python/maximum-number-of-books-you-can-take.py) | _O(n)_  | _O(n)_         | Hard           | 🔒 | Mono Stack, Math
+2454 | [Next Greater Element IV](https://leetcode.com/problems/next-greater-element-iv/) | [C++](./C++/next-greater-element-iv.cpp) [Python](./Python/next-greater-element-iv.py) | _O(n)_ | _O(n)_ | Hard | | Mono Stack
 
 <br/>
 <div align="right">
@@ -643,6 +644,10 @@
 2423 | [Remove Letter To Equalize Frequency](https://leetcode.com/problems/remove-letter-to-equalize-frequency/) | [C++](./C++/remove-letter-to-equalize-frequency.cpp) [Python](./Python/remove-letter-to-equalize-frequency.py) | _O(n)_ | _O(1)_ | Easy || Brute Force, Freq Table
 2441 | [Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/) | [C++](./C++/largest-positive-integer-that-exists-with-its-negative.cpp) [Python](./Python/largest-positive-integer-that-exists-with-its-negative.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
 2442 | [Count Number of Distinct Integers After Reverse Operations](https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/) | [C++](./C++/count-number-of-distinct-integers-after-reverse-operations.cpp) [Python](./Python/count-number-of-distinct-integers-after-reverse-operations.py) | _O(nlogr)_ | _O(n)_ | Medium || Hash Table
+2451 | [Odd String Difference](https://leetcode.com/problems/odd-string-difference/) | [C++](./C++/odd-string-difference.cpp) [Python](./Python/odd-string-difference.py) | _O(m * n)_ | _O(1)_ | Easy || Freq Table
+2452 | [Words Within Two Edits of Dictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/) | [C++](./C++/words-within-two-edits-of-dictionary.cpp) [Python](./Python/words-within-two-edits-of-dictionary.py) | _O(25 * l * (n + q))_ | _O(25 * l * n)_ | Medium | [MHC2022 Round 3](https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-3/problems/C) | Brute Force, Hash
+2453 | [Destroy Sequential Targets](https://leetcode.com/problems/destroy-sequential-targets/) | [C++](./C++/destroy-sequential-targets.cpp) [Python](./Python/destroy-sequential-targets.py) | _O(n)_ | _O(s)_ | Medium | | Freq Table
+2456 | [Most Popular Video Creator](https://leetcode.com/problems/most-popular-video-creator/) | [C++](./C++/most-popular-video-creator.cpp) [Python](./Python/most-popular-video-creator.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
 
 <br/>
 <div align="right">
@@ -789,6 +794,7 @@
 2427 | [Number of Common Factors](https://leetcode.com/problems/number-of-common-factors/) | [C++](./C++/number-of-common-factors.cpp) [Python](./Python/number-of-common-factors.py) | _O(log(min(a, b)) + sqrt(gcd))_   | _O(1)_        | Easy         | | Math
 2437 | [Number of Valid Clock Times](https://leetcode.com/problems/number-of-valid-clock-times/) | [C++](./C++/number-of-valid-clock-times.cpp) [Python](./Python/number-of-valid-clock-times.py) | _O(1)_   | _O(1)_        | Easy         | | Combinatorics
 2450 | [Number of Distinct Binary Strings After Applying Operations](https://leetcode.com/problems/number-of-distinct-binary-strings-after-applying-operations/) | [C++](./C++/number-of-distinct-binary-strings-after-applying-operations.cpp) [Python](./Python/number-of-distinct-binary-strings-after-applying-operations.py) | _O(logn)_   | _O(1)_        | Medium         | 🔒 | Combinatorics
+2455 | [Average Value of Even Numbers That Are Divisible by Three](https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/) | [C++](./C++/average-value-of-even-numbers-that-are-divisible-by-three.cpp) [Python](./Python/average-value-of-even-numbers-that-are-divisible-by-three.py) | _O(n)_   | _O(1)_        | Easy         | | Math
 
 <br/>
 <div align="right">
@@ -1091,6 +1097,7 @@
 2331 | [Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree/) | [C++](./C++/evaluate-boolean-binary-tree.cpp) [Python](./Python/evaluate-boolean-binary-tree.py) | _O(n)_ | _O(h)_ | Easy | | DFS |
 2385 | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/) | [C++](./C++/amount-of-time-for-binary-tree-to-be-infected.cpp) [Python](./Python/amount-of-time-for-binary-tree-to-be-infected.py) | _O(n)_ | _O(h)_ | Medium | | BFS, DFS, Tree DP |
 2445 | [Number of Nodes With Value One](https://leetcode.com/problems/number-of-nodes-with-value-one/)| [C++](./C++/number-of-nodes-with-value-one.cpp) [Python](./Python/number-of-nodes-with-value-one.py)| _O(q + h)_ | _O(q + h)_ | Medium | 🔒 | Tree, DFS, BFS |
+2458 | [Height of Binary Tree After Subtree Removal Queries](https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/)| [C++](./C++/height-of-binary-tree-after-subtree-removal-queries.cpp) [Python](./Python/height-of-binary-tree-after-subtree-removal-queries.py)| _O(n)_ | _O(n)_ | Hard | | Tree, DFS |
 
 <br/>
 <div align="right">
@@ -1446,6 +1453,8 @@
 2439 | [Minimize Maximum of Array](https://leetcode.com/problems/minimize-maximum-of-array/) | [C++](./C++/minimize-maximum-of-array.cpp) [Python](./Python/minimize-maximum-of-array.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 2440 | [Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/) | [C++](./C++/create-components-with-same-value.cpp) [Python](./Python/create-components-with-same-value.py) | _O(n * sqrt(n))_   | _O(n)_        | Hard         | | BFS, DFS, Greedy
 2449 | [Minimum Number of Operations to Make Arrays Similar](https://leetcode.com/problems/minimum-number-of-operations-to-make-arrays-similar/) | [C++](./C++/minimum-number-of-operations-to-make-arrays-similar.cpp) [Python](./Python/minimum-number-of-operations-to-make-arrays-similar.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Greedy, Sort
+2457 | [Minimum Addition to Make Integer Beautiful](https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/) | [C++](./C++/minimum-addition-to-make-integer-beautiful.cpp) [Python](./Python/minimum-addition-to-make-integer-beautiful.py) | _O(logn)_   | _O(1)_        | Medium         | | Greedy
+2459 | [Sort Array by Moving Items to Empty Space](https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/) | [C++](./C++/sort-array-by-moving-items-to-empty-space.cpp) [Python](./Python/sort-array-by-moving-items-to-empty-space.py) | _O(n)_   | _O(1)_        | Hard         | 🔒 | Greedy, Sort
 
 <br/>
 <div align="right">
