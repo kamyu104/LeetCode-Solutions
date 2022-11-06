@@ -8,7 +8,7 @@ public:
         static const int64_t INF = numeric_limits<int64_t>::max();
         sort(begin(robot), end(robot));
         sort(begin(factory), end(factory));
-        vector<int64_t> dp(size(robot), INF);  // dp[j]: min of factory[:i+1] and robot[:j]
+        vector<int64_t> dp(size(robot), INF);  // dp[j]: min of factory[:i] and robot[:j+1]
         for (int i = 0; i < size(factory); ++i) {
             int64_t prefix = 0;
             deque<pair<int64_t, int>> dq = {{0, -1}};
