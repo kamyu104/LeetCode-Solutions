@@ -13,7 +13,7 @@ class Solution(object):
         :rtype: int
         """
         robot.sort(), factory.sort()
-        dp = [float("inf")]*(len(robot))  # dp[j]: min of factory[:i+1] and robot[:j]
+        dp = [float("inf")]*(len(robot))  # dp[j]: min of factory[:i] and robot[:j+1]
         for i in xrange(len(factory)):
             prefix = 0
             dq = collections.deque([(0, -1)])
