@@ -29,7 +29,7 @@ public:
     }
 };
 
-// Time:  O(mlogm + nlogn + m * n * k)
+// Time:  O(mlogm + nlogn + m * n * l), l is the max limit
 // Space: O(n)
 // sort, dp
 class Solution2 {
