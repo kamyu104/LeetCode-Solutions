@@ -17,7 +17,6 @@ class Solution(object):
         for i in xrange(len(factory)):
             prefix = 0
             dq = collections.deque([(0, -1)])
-            new_dp = [float("inf")]*(len(robot))
             for j in xrange(len(robot)):
                 prefix += abs(robot[j]-factory[i][0])
                 if j-dq[-1][1] == factory[i][1]+1:
@@ -25,6 +24,5 @@ class Solution(object):
                 while dq and dq[0][0] >= dp[j]-prefix:
                     dq.popleft()
                 dq.appendleft((dp[j]-prefix, j))
-                new_dp[j] = dq[-1][0]+prefix
-            dp = new_dp
+                dp[j] = dq[-1][0]+prefix
         return dp[-1]
