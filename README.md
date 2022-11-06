@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2459%20%2F%202459-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2463%20%2F%202463-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -281,6 +281,7 @@
 2433 | [Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/) | [C++](./C++/find-the-original-array-of-prefix-xor.cpp) [Python](./Python/find-the-original-array-of-prefix-xor.py) | _O(n)_   | _O(1)_        | Medium         | | Array
 2438 | [Range Product Queries of Powers](https://leetcode.com/problems/range-product-queries-of-powers/) | [C++](./C++/range-product-queries-of-powers.cpp) [Python](./Python/range-product-queries-of-powers.py) | _O(logn + qlogr)_   | _O(logn)_        | Medium         | | Prefix Sum
 2446 | [Determine if Two Events Have Conflict](https://leetcode.com/problems/determine-if-two-events-have-conflict/) | [C++](./C++/determine-if-two-events-have-conflict.cpp) [Python](./Python/determine-if-two-events-have-conflict.py) | _O(1)_   | _O(1)_        | Easy         | | Array
+2460 | [Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/) | [C++](./C++/apply-operations-to-an-array.cpp) [Python](./Python/apply-operations-to-an-array.py) | _O(n)_   | _O(1)_        | Easy         | | Inplace, Array
 
 <br/>
 <div align="right">
@@ -508,6 +509,7 @@
 2208 | [Minimum Operations to Halve Array Sum](https://leetcode.com/problems/minimum-operations-to-halve-array-sum/) | [C++](./C++/minimum-operations-to-halve-array-sum.cpp) [Python](./Python/minimum-operations-to-halve-array-sum.py) | _O(nlogn)_ | _O(n)_ | Medium | | Heap |
 2386 | [Find the K-Sum of an Array](https://leetcode.com/problems/find-the-k-sum-of-an-array/) | [C++](./C++/find-the-k-sum-of-an-array.cpp) [Python](./Python/find-the-k-sum-of-an-array.py) | _O(nlogn + klogk)_ | _O(n + k)_ | Hard | | BFS, Heap |
 2402 | [Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/) | [C++](./C++/meeting-rooms-iii.cpp) [Python](./Python/meeting-rooms-iii.py) | _O(mlogm + n + mlogn)_ | _O(n)_ | Hard | | Heap |
+2462 | [Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/) | [C++](./C++/total-cost-to-hire-k-workers.cpp) [Python](./Python/total-cost-to-hire-k-workers.py) | _O(c + klogc)_ | _O(c)_ | Medium | | Heap, Two Pointers |
 
 <br/>
 <div align="right">
@@ -922,6 +924,7 @@
 2393 | [Count Strictly Increasing Subarrays](https://leetcode.com/problems/count-strictly-increasing-subarrays/) | [C++](./C++/count-strictly-increasing-subarrays.cpp) [Python](./Python/count-strictly-increasing-subarrays.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Two Pointers |
 2401 | [Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/) | [C++](./C++/longest-nice-subarray.cpp) [Python](./Python/longest-nice-subarray.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window, Two Pointers |
 2444 | [Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/) | [C++](./C++/count-subarrays-with-fixed-bounds.cpp) [Python](./Python/count-subarrays-with-fixed-bounds.py) | _O(n)_ | _O(1)_ | Hard | | Two Pointers |
+2461 | [Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/) | [C++](./C++/maximum-sum-of-distinct-subarrays-with-length-k.cpp) [Python](./Python/maximum-sum-of-distinct-subarrays-with-length-k.py) | _O(n)_ | _O(k)_ | Medium | | Two Pointers |
 
 <br/>
 <div align="right">
@@ -1286,6 +1289,7 @@
 2431 | [Maximize Total Tastiness of Purchased Fruits](https://leetcode.com/problems/maximize-total-tastiness-of-purchased-fruits/)| [C++](./C++/maximize-total-tastiness-of-purchased-fruits.cpp) [Python](./Python/maximize-total-tastiness-of-purchased-fruits.py) | _O(n * a * c)_    | _O(a * c)_          | Medium           |🔒| DP
 2435 | [Paths in Matrix Whose Sum Is Divisible by K](https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/)| [C++](./C++/paths-in-matrix-whose-sum-is-divisible-by-k.cpp) [Python](./Python/paths-in-matrix-whose-sum-is-divisible-by-k.py) | _O(m * n * k)_    | _O(n * k)_          | Hard           || DP
 2447 | [Number of Subarrays With GCD Equal to K](https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/)| [C++](./C++/number-of-subarrays-with-gcd-equal-to-k.cpp) [Python](./Python/number-of-subarrays-with-gcd-equal-to-k.py) | _O(nlogr)_    | _O(logr)_          | Medium           || DP
+2453 | [Minimum Total Distance Traveled](https://leetcode.com/problems/minimum-total-distance-traveled/)| [C++](./C++/minimum-total-distance-traveled.cpp) [Python](./Python/minimum-total-distance-traveled.py) | _O(mlogm + nlogn + m * n)_    | _O(m * n)_          | Hard           || Sort, DP, Prefix Sum, Mono Deque
 
 <br/>
 <div align="right">
