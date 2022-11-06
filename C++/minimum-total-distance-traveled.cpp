@@ -1,30 +1,29 @@
-# Time:  O(mlogm + nlogn + m * n)
-# Space: O(m * n)
+// Time:  O(mlogm + nlogn + m * n)
+// Space: O(m * n)
 
-import collections
-
-
-# sort, dp, prefix sum, mono deque
-class Solution(object):
-    def minimumTotalDistance(self, robot, factory):
-        """
-        :type robot: List[int]
-        :type factory: List[List[int]]
-        :rtype: int
-        """
-        robot.sort(), factory.sort()
-        dp = [[float("inf")]*(len(robot)) for _ in xrange(len(factory)+1)]  # dp[i][j]: min of factory[:i+1] and robot[:j]
-        for i in xrange(len(factory)):
-            prefix = 0
-            dq = collections.deque([(0, -1)])
-            for j in xrange(len(robot)):
-                prefix += abs(robot[j]-factory[i][0])
-                if j-dq[-1][1] == factory[i][1]+1:
-                    dq.pop()
-                while dq and dq[0][0] >= dp[i][j]-prefix:
-                    dq.popleft()
-                dq.appendleft((dp[i][j]-prefix, j))
-                dp[i+1][j] = dq[-1][0]+prefix
-        return dp[-1][-1]
-
-
+// sort, dp, prefix sum, mono deque
+class Solution {
+public:
+    long long minimumTotalDistance(vector<int>& robot, vector<vector<int>>& factory) {
+        static const int64_t INF = numeric_limits<int64_t>::max();
+        sort(begin(robot), end(robot));
+        sort(begin(factory), end(factory));
+        vector<vector<int64_t>> dp(size(factory) + 1, vector<int64_t>(size(robot), INF));  // dp[i][j]: min of factory[:i+1] and robot[:j]
+        for (int i = 0; i < size(factory); ++i) {
+            int64_t prefix = 0;
+            deque<pair<int64_t, int>> dq = {{0, -1}};
+            for (int j = 0; j < size(robot); ++j) {
+                prefix += abs(robot[j] - factory[i][0]);
+                if (j - dq.back().second == factory[i][1] + 1) {
+                    dq.pop_back();
+                }
+                while (!empty(dq) && dq.front().first >= (dp[i][j] != INF ? dp[i][j] - prefix : INF)) {
+                    dq.pop_front();
+                }
+                dq.emplace_front((dp[i][j] != INF ? dp[i][j] - prefix : INF), j);
+                dp[i + 1][j] = dq.back().first != INF ? dq.back().first + prefix : INF;
+            }
+        }
+        return dp.back().back();
+    }
+};
