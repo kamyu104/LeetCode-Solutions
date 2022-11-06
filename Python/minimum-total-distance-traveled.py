@@ -13,12 +13,13 @@ class Solution(object):
         :rtype: int
         """
         robot.sort(), factory.sort()
-        dp = [float("inf")]*(len(robot))  # dp[j]: min of factory[:i] and robot[:j+1]
+        dp = [float("inf")]*(len(robot)+1)  # dp[j]: min of factory[:i] and robot[:j]
+        dp[0] = 0
         for i in xrange(len(factory)):
             prefix = 0
-            dq = collections.deque([(0, -1)])
-            for j in xrange(len(robot)):
-                prefix += abs(robot[j]-factory[i][0])
+            dq = collections.deque([(dp[0]-prefix, 0)])
+            for j in xrange(1, len(robot)+1):
+                prefix += abs(robot[j-1]-factory[i][0])
                 if j-dq[-1][1] == factory[i][1]+1:
                     dq.pop()
                 while dq and dq[0][0] >= dp[j]-prefix:
