@@ -8,12 +8,13 @@ public:
         static const int64_t INF = numeric_limits<int64_t>::max();
         sort(begin(robot), end(robot));
         sort(begin(factory), end(factory));
-        vector<int64_t> dp(size(robot), INF);  // dp[j]: min of factory[:i] and robot[:j+1]
+        vector<int64_t> dp(size(robot) + 1, INF);  // dp[j]: min of factory[:i] and robot[:j]
+        dp[0] = 0;
         for (int i = 0; i < size(factory); ++i) {
             int64_t prefix = 0;
-            deque<pair<int64_t, int>> dq = {{0, -1}};
-            for (int j = 0; j < size(robot); ++j) {
-                prefix += abs(robot[j] - factory[i][0]);
+            deque<pair<int64_t, int>> dq = {{dp[0] - prefix, 0}};
+            for (int j = 1; j <= size(robot); ++j) {
+                prefix += abs(robot[j - 1] - factory[i][0]);
                 if (j - dq.back().second == factory[i][1] + 1) {
                     dq.pop_back();
                 }
