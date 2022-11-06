@@ -41,18 +41,15 @@ public:
         vector<int64_t> dp(size(robot) + 1, INF);  // dp[j]: min of factory[:i] and robot[:j]
         dp[0] = 0;
         for (int i = 0; i < size(factory); ++i) {
-            vector<int64_t> new_dp(size(robot) + 1, INF);
-            new_dp[0] = 0;
-            for (int j = 1; j <= size(robot); ++j) {
+            for (int j = size(robot); j >= 1; --j) {
                 int64_t prefix = 0;
                 for (int k = 0; k <= min(factory[i][1], j); ++k) {
-                    new_dp[j] = min(new_dp[j], dp[j - k] != INF ? dp[j - k] + prefix : INF);
+                    dp[j] = min(dp[j], dp[j - k] != INF ? dp[j - k] + prefix : INF);
                     if ((j - 1) - k >= 0) {
                         prefix += abs(robot[(j - 1) - k] - factory[i][0]);
                     }
                 }
             }
-            dp = move(new_dp);
         }
         return dp.back();
     }
