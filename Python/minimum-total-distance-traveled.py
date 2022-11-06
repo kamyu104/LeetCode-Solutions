@@ -13,7 +13,7 @@ class Solution(object):
         :rtype: int
         """
         robot.sort(), factory.sort()
-        dp = [float("inf")]*(len(robot)+1)  # dp[j]: min of factory[:i+1] and robot[:j]
+        dp = [float("inf")]*(len(robot)+1)  # dp[j] at i: min of factory[:i+1] and robot[:j]
         dp[0] = 0
         for i in xrange(len(factory)):
             prefix = 0
@@ -43,7 +43,7 @@ class Solution2(object):
         :rtype: int
         """
         robot.sort(), factory.sort()
-        dp = [float("inf")]*(len(robot)+1)  # dp[j]: min of factory[:i+1] and robot[:j]
+        dp = [float("inf")]*(len(robot)+1)  # dp[j] at i: min of factory[:i+1] and robot[:j]
         dp[0] = 0
         for i in xrange(len(factory)):
             for j in reversed(xrange(1, len(robot)+1)):
