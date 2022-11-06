@@ -4,7 +4,7 @@
 import heapq
 
 
-# heap
+# heap, two pointers
 class Solution(object):
     def totalCost(self, costs, k, candidates):
         """
