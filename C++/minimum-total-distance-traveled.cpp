@@ -8,7 +8,7 @@ public:
         static const int64_t INF = numeric_limits<int64_t>::max();
         sort(begin(robot), end(robot));
         sort(begin(factory), end(factory));
-        vector<int64_t> dp(size(robot) + 1, INF);  // dp[j]: min of factory[:i+1] and robot[:j]
+        vector<int64_t> dp(size(robot) + 1, INF);  // dp[j] at i: min of factory[:i+1] and robot[:j]
         dp[0] = 0;
         for (int i = 0; i < size(factory); ++i) {
             int64_t prefix = 0;
@@ -38,7 +38,7 @@ public:
         static const int64_t INF = numeric_limits<int64_t>::max();
         sort(begin(robot), end(robot));
         sort(begin(factory), end(factory));
-        vector<int64_t> dp(size(robot) + 1, INF);  // dp[j]: min of factory[:i+1] and robot[:j]
+        vector<int64_t> dp(size(robot) + 1, INF);  // dp[j] at i: min of factory[:i+1] and robot[:j]
         dp[0] = 0;
         for (int i = 0; i < size(factory); ++i) {
             for (int j = size(robot); j >= 1; --j) {
