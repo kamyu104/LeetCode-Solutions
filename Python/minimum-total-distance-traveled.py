@@ -46,13 +46,10 @@ class Solution2(object):
         dp = [float("inf")]*(len(robot)+1)  # dp[j]: min of factory[:i] and robot[:j]
         dp[0] = 0
         for i in xrange(len(factory)):
-            new_dp = [float("inf")]*(len(robot)+1)
-            new_dp[0] = 0
-            for j in xrange(1, len(robot)+1):
+            for j in reversed(xrange(1, len(robot)+1)):
                 prefix = 0
                 for k in xrange(min(factory[i][1], j)+1):
-                    new_dp[j] = min(new_dp[j], dp[j-k]+prefix)
+                    dp[j] = min(dp[j], dp[j-k]+prefix)
                     if (j-1)-k >= 0:
                         prefix += abs(robot[(j-1)-k]-factory[i][0])
-            dp = new_dp
         return dp[-1]
