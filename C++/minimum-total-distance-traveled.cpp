@@ -12,7 +12,6 @@ public:
         for (int i = 0; i < size(factory); ++i) {
             int64_t prefix = 0;
             deque<pair<int64_t, int>> dq = {{0, -1}};
-            vector<int64_t> new_dp(size(robot), INF);
             for (int j = 0; j < size(robot); ++j) {
                 prefix += abs(robot[j] - factory[i][0]);
                 if (j - dq.back().second == factory[i][1] + 1) {
@@ -22,9 +21,8 @@ public:
                     dq.pop_front();
                 }
                 dq.emplace_front((dp[j] != INF ? dp[j] - prefix : INF), j);
-                new_dp[j] = dq.back().first != INF ? dq.back().first + prefix : INF;
+                dp[j] = dq.back().first != INF ? dq.back().first + prefix : INF;
             }
-            dp = move(new_dp);
         }
         return dp.back();
     }
