@@ -1289,7 +1289,7 @@
 2431 | [Maximize Total Tastiness of Purchased Fruits](https://leetcode.com/problems/maximize-total-tastiness-of-purchased-fruits/)| [C++](./C++/maximize-total-tastiness-of-purchased-fruits.cpp) [Python](./Python/maximize-total-tastiness-of-purchased-fruits.py) | _O(n * a * c)_    | _O(a * c)_          | Medium           |🔒| DP
 2435 | [Paths in Matrix Whose Sum Is Divisible by K](https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/)| [C++](./C++/paths-in-matrix-whose-sum-is-divisible-by-k.cpp) [Python](./Python/paths-in-matrix-whose-sum-is-divisible-by-k.py) | _O(m * n * k)_    | _O(n * k)_          | Hard           || DP
 2447 | [Number of Subarrays With GCD Equal to K](https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/)| [C++](./C++/number-of-subarrays-with-gcd-equal-to-k.cpp) [Python](./Python/number-of-subarrays-with-gcd-equal-to-k.py) | _O(nlogr)_    | _O(logr)_          | Medium           || DP
-2453 | [Minimum Total Distance Traveled](https://leetcode.com/problems/minimum-total-distance-traveled/)| [C++](./C++/minimum-total-distance-traveled.cpp) [Python](./Python/minimum-total-distance-traveled.py) | _O(mlogm + nlogn + m * n)_    | _O(m * n)_          | Hard           || Sort, DP, Prefix Sum, Mono Deque
+2463 | [Minimum Total Distance Traveled](https://leetcode.com/problems/minimum-total-distance-traveled/)| [C++](./C++/minimum-total-distance-traveled.cpp) [Python](./Python/minimum-total-distance-traveled.py) | _O(mlogm + nlogn + m * n)_    | _O(m * n)_          | Hard           || Sort, DP, Prefix Sum, Mono Deque
 
 <br/>
 <div align="right">
