@@ -1,5 +1,5 @@
 # Time:  O(mlogm + nlogn + m * n)
-# Space: O(m * n)
+# Space: O(n)
 
 import collections
 
@@ -13,16 +13,18 @@ class Solution(object):
         :rtype: int
         """
         robot.sort(), factory.sort()
-        dp = [[float("inf")]*(len(robot)) for _ in xrange(len(factory)+1)]  # dp[i][j]: min of factory[:i+1] and robot[:j]
+        dp = [float("inf")]*(len(robot))  # dp[j]: min of factory[:i+1] and robot[:j]
         for i in xrange(len(factory)):
             prefix = 0
             dq = collections.deque([(0, -1)])
+            new_dp = [float("inf")]*(len(robot))
             for j in xrange(len(robot)):
                 prefix += abs(robot[j]-factory[i][0])
                 if j-dq[-1][1] == factory[i][1]+1:
                     dq.pop()
-                while dq and dq[0][0] >= dp[i][j]-prefix:
+                while dq and dq[0][0] >= dp[j]-prefix:
                     dq.popleft()
-                dq.appendleft((dp[i][j]-prefix, j))
-                dp[i+1][j] = dq[-1][0]+prefix
-        return dp[-1][-1]
+                dq.appendleft((dp[j]-prefix, j))
+                new_dp[j] = dq[-1][0]+prefix
+            dp = new_dp
+        return dp[-1]
