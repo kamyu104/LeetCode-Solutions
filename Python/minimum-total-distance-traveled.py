@@ -29,7 +29,7 @@ class Solution(object):
         return dp[-1]
 
 
-# Time:  O(mlogm + nlogn + m * n * k)
+# Time:  O(mlogm + nlogn + m * n * l), l is the max limit
 # Space: O(n)
 import collections
 
