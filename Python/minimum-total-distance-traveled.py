@@ -4,7 +4,7 @@
 import collections
 
 
-# dp, mono deque
+# sort, dp, prefix sum, mono deque
 class Solution(object):
     def minimumTotalDistance(self, robot, factory):
         """
@@ -13,18 +13,16 @@ class Solution(object):
         :rtype: int
         """
         robot.sort(), factory.sort()
-        dp = [[float("inf")]*(len(factory)+1) for _ in xrange(len(robot))]  # dp[i][j]: min of robot[:i+1] and factory[:j]
-        for j in xrange(len(factory)):
+        dp = [[float("inf")]*(len(robot)) for _ in xrange(len(factory)+1)]  # dp[i][j]: min of factory[:i+1] and robot[:j]
+        for i in xrange(len(factory)):
             prefix = 0
             dq = collections.deque([(0, -1)])
-            for i in xrange(len(robot)):
-                prefix += abs(robot[i]-factory[j][0])
-                if i-dq[-1][1] == factory[j][1]+1:
+            for j in xrange(len(robot)):
+                prefix += abs(robot[j]-factory[i][0])
+                if j-dq[-1][1] == factory[i][1]+1:
                     dq.pop()
                 while dq and dq[0][0] >= dp[i][j]-prefix:
                     dq.popleft()
-                dq.appendleft((dp[i][j]-prefix, i))
-                dp[i][j+1] = dq[-1][0]+prefix
+                dq.appendleft((dp[i][j]-prefix, j))
+                dp[i+1][j] = dq[-1][0]+prefix
         return dp[-1][-1]
-
-
