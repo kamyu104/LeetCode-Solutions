@@ -15,14 +15,14 @@ public:
             deque<pair<int64_t, int>> dq = {{dp[0] - prefix, 0}};  // pattern of min in the sliding window
             for (int j = 1; j <= size(robot); ++j) {
                 prefix += abs(robot[j - 1] - factory[i][0]);
-                if (j - dq.back().second == factory[i][1] + 1) {
-                    dq.pop_back();
-                }
-                while (!empty(dq) && dq.front().first >= (dp[j] != INF ? dp[j] - prefix : INF)) {
+                if (j - dq.front().second == factory[i][1] + 1) {
                     dq.pop_front();
                 }
-                dq.emplace_front((dp[j] != INF ? dp[j] - prefix : INF), j);
-                dp[j] = dq.back().first != INF ? dq.back().first + prefix : INF;
+                while (!empty(dq) && dq.back().first >= (dp[j] != INF ? dp[j] - prefix : INF)) {
+                    dq.pop_back();
+                }
+                dq.emplace_back((dp[j] != INF ? dp[j] - prefix : INF), j);
+                dp[j] = dq.front().first != INF ? dq.front().first + prefix : INF;
             }
         }
         return dp.back();
