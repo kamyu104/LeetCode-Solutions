@@ -42,11 +42,11 @@ public:
         dp[0] = 0;
         for (int i = 0; i < size(factory); ++i) {
             for (int j = size(robot); j >= 1; --j) {
-                int64_t prefix = 0;
+                int64_t curr = 0;
                 for (int k = 0; k <= min(factory[i][1], j); ++k) {
-                    dp[j] = min(dp[j], dp[j - k] != INF ? dp[j - k] + prefix : INF);
+                    dp[j] = min(dp[j], dp[j - k] != INF ? dp[j - k] + curr : INF);
                     if ((j - 1) - k >= 0) {
-                        prefix += abs(robot[(j - 1) - k] - factory[i][0]);
+                        curr += abs(robot[(j - 1) - k] - factory[i][0]);
                     }
                 }
             }
