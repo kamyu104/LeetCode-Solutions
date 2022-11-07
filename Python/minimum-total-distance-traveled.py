@@ -20,12 +20,12 @@ class Solution(object):
             dq = collections.deque([(dp[0]-prefix, 0)])  # pattern of min in the sliding window
             for j in xrange(1, len(robot)+1):
                 prefix += abs(robot[j-1]-factory[i][0])
-                if j-dq[-1][1] == factory[i][1]+1:
-                    dq.pop()
-                while dq and dq[0][0] >= dp[j]-prefix:
+                if j-dq[0][1] == factory[i][1]+1:
                     dq.popleft()
-                dq.appendleft((dp[j]-prefix, j))
-                dp[j] = dq[-1][0]+prefix
+                while dq and dq[-1][0] >= dp[j]-prefix:
+                    dq.pop()
+                dq.append((dp[j]-prefix, j))
+                dp[j] = dq[0][0]+prefix
         return dp[-1]
 
 
