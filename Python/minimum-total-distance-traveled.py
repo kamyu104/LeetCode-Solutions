@@ -47,9 +47,9 @@ class Solution2(object):
         dp[0] = 0
         for i in xrange(len(factory)):
             for j in reversed(xrange(1, len(robot)+1)):
-                prefix = 0
+                curr = 0
                 for k in xrange(min(factory[i][1], j)+1):
-                    dp[j] = min(dp[j], dp[j-k]+prefix)
+                    dp[j] = min(dp[j], dp[j-k]+curr)
                     if (j-1)-k >= 0:
-                        prefix += abs(robot[(j-1)-k]-factory[i][0])
+                        curr += abs(robot[(j-1)-k]-factory[i][0])
         return dp[-1]
