@@ -12,7 +12,7 @@ public:
         dp[0] = 0;
         for (int i = 0; i < size(factory); ++i) {
             int64_t prefix = 0;
-            deque<pair<int64_t, int>> dq = {{dp[0] - prefix, 0}};  // pattern of min in the sliding window
+            deque<pair<int64_t, int>> dq = {{dp[0] - prefix, 0}};  // pattern of min in the sliding window with size (limit+1)
             for (int j = 1; j <= size(robot); ++j) {
                 prefix += abs(robot[j - 1] - factory[i][0]);
                 if (j - dq.front().second == factory[i][1] + 1) {
