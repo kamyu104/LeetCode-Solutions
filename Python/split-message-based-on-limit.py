@@ -1,4 +1,4 @@
-# Time:  O(n)
+# Time:  O(nlogr), r is the number of messages
 # Space: O(1)
 
 # brute force, linear search (binary search doesn't work)
