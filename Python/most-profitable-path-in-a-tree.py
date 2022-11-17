@@ -33,7 +33,7 @@ class Solution(object):
                         lookup[u][1] = min(lookup[u][1], lookup[v][1])
                     if ah == lookup[u][1]:
                         lookup[u][0] += amount[u]//2
-                    if ah < lookup[u][1]:
+                    elif ah < lookup[u][1]:
                         lookup[u][0] += amount[u]
                     lookup[u][1] += 1
             return lookup[0][0]
@@ -69,7 +69,7 @@ class Solution2(object):
                 bh = min(bh, h)
             if ah == bh:
                 result += amount[u]//2
-            if ah < bh:
+            elif ah < bh:
                 result += amount[u]
             return result, bh+1
 
