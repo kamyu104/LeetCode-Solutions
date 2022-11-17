@@ -22,6 +22,8 @@ class Solution(object):
                             continue
                         stk.append((1, (v, u, ah+1)))
                 elif step == 2:
+                    if len(adj[u])+(u == 0) == 1:
+                        lookup[u][0] = 0
                     if u == bob:
                         lookup[u][1] = 0
                     for v in adj[u]:
@@ -29,8 +31,6 @@ class Solution(object):
                             continue
                         lookup[u][0] = max(lookup[u][0], lookup[v][0])
                         lookup[u][1] = min(lookup[u][1], lookup[v][1])
-                    if lookup[u][0] == float("-inf"):
-                        lookup[u][0] = 0
                     if ah == lookup[u][1]:
                         lookup[u][0] += amount[u]//2
                     if ah < lookup[u][1]:
@@ -59,7 +59,7 @@ class Solution2(object):
         """
         def dfs(u, ah):
             lookup[u] = True
-            result = float("-inf")
+            result = 0 if len(adj[u])+(u == 0) == 1 else float("-inf")
             bh = 0 if u == bob else float("inf")
             for v in adj[u]:
                 if lookup[v]:
@@ -67,8 +67,6 @@ class Solution2(object):
                 r, h = dfs(v, ah+1)
                 result = max(result, r)
                 bh = min(bh, h)
-            if result == float("-inf"):
-                result = 0
             if ah == bh:
                 result += amount[u]//2
             if ah < bh:
