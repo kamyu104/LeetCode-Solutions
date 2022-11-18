@@ -24,7 +24,7 @@ public:
 
 // Time:  O(n^2)
 // Space: O(1)
-// dp
+// brute force
 class Solution2 {
 public:
     int subarrayGCD(vector<int>& nums, int k) {
