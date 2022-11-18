@@ -1,4 +1,4 @@
-// Time:  O(n + wlogw)
+// Time:  O(nlogn)
 // Space: O(w)
 
 // bfs, sort
