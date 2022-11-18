@@ -1,8 +1,5 @@
-# Time:  O(nlogr), r = max(nums)
+# Time:  O(n * (logr)^2), r = max(nums)
 # Space: O(logr)
-
-import collections
-
 
 # dp
 class Solution(object):
@@ -27,4 +24,30 @@ class Solution(object):
                     new_dp[gcd(g, x)] += cnt
             dp = new_dp
             result += dp[k]
+        return result
+
+
+# Time:  O(n^2)
+# Space: O(1)
+# brute force
+class Solution2(object):
+    def subarrayGCD(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        def gcd(a, b):
+            while b:
+                a, b = b, a%b
+            return a
+
+        result = 0
+        for i in xrange(len(nums)):
+            g = 0
+            for j in xrange(i, len(nums)):
+                if nums[j]%k:
+                    break
+                g = gcd(g, nums[j])
+                result += int(g == k)
         return result
