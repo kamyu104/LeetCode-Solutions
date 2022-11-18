@@ -798,6 +798,7 @@
 2450 | [Number of Distinct Binary Strings After Applying Operations](https://leetcode.com/problems/number-of-distinct-binary-strings-after-applying-operations/) | [C++](./C++/number-of-distinct-binary-strings-after-applying-operations.cpp) [Python](./Python/number-of-distinct-binary-strings-after-applying-operations.py) | _O(logn)_   | _O(1)_        | Medium         | 🔒 | Combinatorics
 2455 | [Average Value of Even Numbers That Are Divisible by Three](https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/) | [C++](./C++/average-value-of-even-numbers-that-are-divisible-by-three.cpp) [Python](./Python/average-value-of-even-numbers-that-are-divisible-by-three.py) | _O(n)_   | _O(1)_        | Easy         | | Math
 2468 | [Split Message Based on Limit](https://leetcode.com/problems/split-message-based-on-limit/) | [C++](./C++/split-message-based-on-limit.cpp) [Python](./Python/split-message-based-on-limit.py) | _O(n + rlogr)_   | _O(1)_        | Hard         | | Brute Force, Math
+2469 | [Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/) | [C++](./C++/convert-the-temperature.cpp) [Python](./Python/convert-the-temperature.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 
 <br/>
 <div align="right">
@@ -1061,6 +1062,7 @@
 2316 | [Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/)| [C++](./C++/count-unreachable-pairs-of-nodes-in-an-undirected-graph.cpp) [Python](./Python/count-unreachable-pairs-of-nodes-in-an-undirected-graph.py)| _O(n)_ | _O(n)_ | Medium | | Flood Fill, BFS, Math |
 2368 | [Reachable Nodes With Restrictions](https://leetcode.com/problems/reachable-nodes-with-restrictions/)| [C++](./C++/reachable-nodes-with-restrictions.cpp) [Python](./Python/reachable-nodes-with-restrictions.py)| _O(n)_ | _O(n)_ | Medium | | BFS |
 2415 | [Reverse Odd Levels of Binary Tree](https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/)| [C++](./C++/reverse-odd-levels-of-binary-tree.cpp) [Python](./Python/reverse-odd-levels-of-binary-tree.py)| _O(n)_ | _O(n)_ | Medium | | BFS |
+2471 | [Minimum Number of Operations to Sort a Binary Tree by Level](https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/)| [C++](./C++/minimum-number-of-operations-to-sort-a-binary-tree-by-level.cpp) [Python](./Python/minimum-number-of-operations-to-sort-a-binary-tree-by-level.py)| _O(nlogn)_ | _O(n)_ | Medium | | Sort, BFS |
 
 <br/>
 <div align="right">
@@ -1132,6 +1134,7 @@
 2056 | [Number of Valid Move Combinations On Chessboard](https://leetcode.com/problems/number-of-valid-move-combinations-on-chessboard/) | [C++](./C++/number-of-valid-move-combinations-on-chessboard.cpp) [Python](./Python/number-of-valid-move-combinations-on-chessboard.py) | _O(1)_ | _O(1)_      | Hard         | | |
 2094 | [Finding 3-Digit Even Numbers](https://leetcode.com/problems/finding-3-digit-even-numbers/) | [C++](./C++/finding-3-digit-even-numbers.cpp) [Python](./Python/finding-3-digit-even-numbers.py) | _O(n)_ | _O(1)_      | Easy         | | |
 2443 | [Sum of Number and Its Reverse](https://leetcode.com/problems/sum-of-number-and-its-reverse/) | [C++](./C++/sum-of-number-and-its-reverse.cpp) [Python](./Python/sum-of-number-and-its-reverse.py) | _O(n^(1/(2*log2(10))))_   | _O(log10(n)/2)_        | Medium         | | Brute Force, Backtracking
+
 
 <br/>
 <div align="right">
@@ -1295,6 +1298,7 @@
 2463 | [Minimum Total Distance Traveled](https://leetcode.com/problems/minimum-total-distance-traveled/)| [C++](./C++/minimum-total-distance-traveled.cpp) [Python](./Python/minimum-total-distance-traveled.py) | _O(mlogm + nlogn + m * n)_    | _O(n)_          | Hard           || Sort, DP, Prefix Sum, Mono Deque
 2464 | [Minimum Subarrays in a Valid Split](https://leetcode.com/problems/minimum-subarrays-in-a-valid-split/)| [C++](./C++/minimum-subarrays-in-a-valid-split.cpp) [Python](./Python/minimum-subarrays-in-a-valid-split.py) | _O(n^2 * logr)_    | _O(n)_          | Medium           | 🔒 | DP
 2466 | [Count Ways To Build Good Strings](https://leetcode.com/problems/count-ways-to-build-good-strings/)| [C++](./C++/count-ways-to-build-good-strings.cpp) [Python](./Python/count-ways-to-build-good-strings.py) | _O(n)_    | _O(n)_          | Medium           | | DP
+2470 | [Number of Subarrays With LCM Equal to K](https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-/)| [C++](./C++/number-of-subarrays-with-lcm-equal-to-.cpp) [Python](./Python/number-of-subarrays-with-lcm-equal-to-.py) | _O(n * sqrt(k) * logk)_    | _O(sqrt(k))_          | Medium           | variant of [Number of Subarrays With GCD Equal to K](https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/) | DP
 
 <br/>
 <div align="right">
@@ -1464,6 +1468,7 @@
 2449 | [Minimum Number of Operations to Make Arrays Similar](https://leetcode.com/problems/minimum-number-of-operations-to-make-arrays-similar/) | [C++](./C++/minimum-number-of-operations-to-make-arrays-similar.cpp) [Python](./Python/minimum-number-of-operations-to-make-arrays-similar.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Greedy, Sort
 2457 | [Minimum Addition to Make Integer Beautiful](https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/) | [C++](./C++/minimum-addition-to-make-integer-beautiful.cpp) [Python](./Python/minimum-addition-to-make-integer-beautiful.py) | _O(logn)_   | _O(1)_        | Medium         | | Greedy
 2459 | [Sort Array by Moving Items to Empty Space](https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/) | [C++](./C++/sort-array-by-moving-items-to-empty-space.cpp) [Python](./Python/sort-array-by-moving-items-to-empty-space.py) | _O(n)_   | _O(n)_        | Hard         | 🔒 | Greedy, Sort
+2472 | [Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/) | [C++](./C++/maximum-number-of-non-overlapping-palindrome-substrings.cpp) [Python](./Python/maximum-number-of-non-overlapping-palindrome-substrings.py) | _O(n * k)_   | _O(1)_        | Hard         || Two Pointers, Greedy
 
 <br/>
 <div align="right">
@@ -1520,6 +1525,7 @@
 2359 | [Find Closest Node to Given Two Nodes](https://leetcode.com/problems/find-closest-node-to-given-two-nodes/) | [C++](./C++/find-closest-node-to-given-two-nodes.cpp)  [Python](./Python/find-closest-node-to-given-two-nodes.py)  | _O(n)_ | _O(n)_ | Medium         | | Graph, Hash Table, DFS |
 2360 | [Longest Cycle in a Graph](https://leetcode.com/problems/longest-cycle-in-a-graph/) | [C++](./C++/longest-cycle-in-a-graph.cpp)  [Python](./Python/longest-cycle-in-a-graph.py)  | _O(n)_ | _O(n)_ | Hard         | | Graph, Hash Table, DFS |
 2392 | [Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/) | [C++](./C++/build-a-matrix-with-conditions.cpp)  [Python](./Python/build-a-matrix-with-conditions.py)  | _O(k^2 + r + c)_ | _O(k + r + c)_ | Hard         | | Graph, Topological Sort |
+2473 | [Minimum Cost to Buy Apples](https://leetcode.com/problems/minimum-cost-to-buy-apples/)  | [C++](./C++/minimum-cost-to-buy-apples.cpp) [Python](./Python/minimum-cost-to-buy-apples.py) | _O(n * rlogn)_ | _O(n)_| Medium           |🔒| `Dijkstra's Algorithm`| 
 
 <br/>
 <div align="right">
