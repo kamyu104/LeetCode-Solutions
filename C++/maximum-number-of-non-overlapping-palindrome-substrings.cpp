@@ -1,7 +1,7 @@
 // Time:  O(n * k)
 // Space: O(1)
 
-// greedy
+// two pointers, greedy
 class Solution {
 public:
     int maxPalindromes(string s, int k) {
