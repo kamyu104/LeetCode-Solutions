@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2463%20%2F%202463-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2473%20%2F%202473-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -797,6 +797,7 @@
 2437 | [Number of Valid Clock Times](https://leetcode.com/problems/number-of-valid-clock-times/) | [C++](./C++/number-of-valid-clock-times.cpp) [Python](./Python/number-of-valid-clock-times.py) | _O(1)_   | _O(1)_        | Easy         | | Combinatorics
 2450 | [Number of Distinct Binary Strings After Applying Operations](https://leetcode.com/problems/number-of-distinct-binary-strings-after-applying-operations/) | [C++](./C++/number-of-distinct-binary-strings-after-applying-operations.cpp) [Python](./Python/number-of-distinct-binary-strings-after-applying-operations.py) | _O(logn)_   | _O(1)_        | Medium         | 🔒 | Combinatorics
 2455 | [Average Value of Even Numbers That Are Divisible by Three](https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/) | [C++](./C++/average-value-of-even-numbers-that-are-divisible-by-three.cpp) [Python](./Python/average-value-of-even-numbers-that-are-divisible-by-three.py) | _O(n)_   | _O(1)_        | Easy         | | Math
+2468 | [Split Message Based on Limit](https://leetcode.com/problems/split-message-based-on-limit/) | [C++](./C++/split-message-based-on-limit.cpp) [Python](./Python/split-message-based-on-limit.py) | _O(n + rlogr)_   | _O(1)_        | Hard         | | Brute Force, Math
 
 <br/>
 <div align="right">
@@ -925,6 +926,7 @@
 2401 | [Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/) | [C++](./C++/longest-nice-subarray.cpp) [Python](./Python/longest-nice-subarray.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window, Two Pointers |
 2444 | [Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/) | [C++](./C++/count-subarrays-with-fixed-bounds.cpp) [Python](./Python/count-subarrays-with-fixed-bounds.py) | _O(n)_ | _O(1)_ | Hard | variant of [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | Two Pointers |
 2461 | [Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/) | [C++](./C++/maximum-sum-of-distinct-subarrays-with-length-k.cpp) [Python](./Python/maximum-sum-of-distinct-subarrays-with-length-k.py) | _O(n)_ | _O(k)_ | Medium | | Two Pointers |
+2465 | [Number of Distinct Averages](https://leetcode.com/problems/number-of-distinct-averages/) | [C++](./C++/number-of-distinct-averages.cpp) [Python](./Python/number-of-distinct-averages.py) | _O(nlogn)_ | _O(n)_ | Easy | | Two Pointers, Hash Table |
 
 <br/>
 <div align="right">
@@ -1101,6 +1103,7 @@
 2385 | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/) | [C++](./C++/amount-of-time-for-binary-tree-to-be-infected.cpp) [Python](./Python/amount-of-time-for-binary-tree-to-be-infected.py) | _O(n)_ | _O(h)_ | Medium | | BFS, DFS, Tree DP |
 2445 | [Number of Nodes With Value One](https://leetcode.com/problems/number-of-nodes-with-value-one/)| [C++](./C++/number-of-nodes-with-value-one.cpp) [Python](./Python/number-of-nodes-with-value-one.py)| _O(q + h)_ | _O(q + h)_ | Medium | 🔒 | Tree, DFS, BFS |
 2458 | [Height of Binary Tree After Subtree Removal Queries](https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/)| [C++](./C++/height-of-binary-tree-after-subtree-removal-queries.cpp) [Python](./Python/height-of-binary-tree-after-subtree-removal-queries.py)| _O(n)_ | _O(n)_ | Hard | | Tree, DFS |
+2467 | [Most Profitable Path in a Tree](https://leetcode.com/problems/most-profitable-path-in-a-tree/)| [C++](./C++/most-profitable-path-in-a-tree.cpp) [Python](./Python/most-profitable-path-in-a-tree.py)| _O(n)_ | _O(n)_ | Medium | | Tree, DFS |
 
 <br/>
 <div align="right">
@@ -1290,6 +1293,8 @@
 2435 | [Paths in Matrix Whose Sum Is Divisible by K](https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/)| [C++](./C++/paths-in-matrix-whose-sum-is-divisible-by-k.cpp) [Python](./Python/paths-in-matrix-whose-sum-is-divisible-by-k.py) | _O(m * n * k)_    | _O(n * k)_          | Hard           || DP
 2447 | [Number of Subarrays With GCD Equal to K](https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/)| [C++](./C++/number-of-subarrays-with-gcd-equal-to-k.cpp) [Python](./Python/number-of-subarrays-with-gcd-equal-to-k.py) | _O(nlogr)_    | _O(logr)_          | Medium           || DP
 2463 | [Minimum Total Distance Traveled](https://leetcode.com/problems/minimum-total-distance-traveled/)| [C++](./C++/minimum-total-distance-traveled.cpp) [Python](./Python/minimum-total-distance-traveled.py) | _O(mlogm + nlogn + m * n)_    | _O(n)_          | Hard           || Sort, DP, Prefix Sum, Mono Deque
+2464 | [Minimum Subarrays in a Valid Split](https://leetcode.com/problems/minimum-subarrays-in-a-valid-split/)| [C++](./C++/minimum-subarrays-in-a-valid-split.cpp) [Python](./Python/minimum-subarrays-in-a-valid-split.py) | _O(n^2 * logr)_    | _O(n)_          | Medium           | 🔒 | DP
+2466 | [Count Ways To Build Good Strings](https://leetcode.com/problems/count-ways-to-build-good-strings/)| [C++](./C++/count-ways-to-build-good-strings.cpp) [Python](./Python/count-ways-to-build-good-strings.py) | _O(n)_    | _O(n)_          | Medium           | | DP
 
 <br/>
 <div align="right">
