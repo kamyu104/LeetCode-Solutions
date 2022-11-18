@@ -10,7 +10,9 @@ class Solution(object):
         :rtype: List[str]
         """
         cnt, l, total, base = 1, 1, len(message)+1, 1
-        while 3+l*2 < limit and total+(3+l)*cnt > limit*cnt:
+        while 3+l*2 < limit:
+            if total+(3+l)*cnt <= limit*cnt:
+                break
             cnt += 1
             if cnt == base*10:
                 l += 1
