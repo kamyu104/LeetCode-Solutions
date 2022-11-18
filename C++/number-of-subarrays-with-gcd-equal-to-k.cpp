@@ -21,3 +21,23 @@ public:
         return result;
     }
 };
+
+// Time:  O(n^2)
+// Space: O(1)
+// dp
+class Solution2 {
+public:
+    int subarrayGCD(vector<int>& nums, int k) {
+        int result = 0;
+        for (int i = 0; i < size(nums); ++i) {
+            for (int j = i, g = 0; j < size(nums); ++j) {
+                if (nums[j] % k) {
+                    break;
+                }
+                g = gcd(g, nums[j]);
+                result += static_cast<int>(g == k);
+            }
+        }
+        return result;
+    }
+};
