@@ -1,4 +1,4 @@
-// Time:  O(n * rlogn)
+// Time:  O(n * rlogn), r = len(roads)
 // Space: O(n)
 
 // dijkstra's algorithm
