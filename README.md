@@ -1062,7 +1062,7 @@
 2316 | [Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/)| [C++](./C++/count-unreachable-pairs-of-nodes-in-an-undirected-graph.cpp) [Python](./Python/count-unreachable-pairs-of-nodes-in-an-undirected-graph.py)| _O(n)_ | _O(n)_ | Medium | | Flood Fill, BFS, Math |
 2368 | [Reachable Nodes With Restrictions](https://leetcode.com/problems/reachable-nodes-with-restrictions/)| [C++](./C++/reachable-nodes-with-restrictions.cpp) [Python](./Python/reachable-nodes-with-restrictions.py)| _O(n)_ | _O(n)_ | Medium | | BFS |
 2415 | [Reverse Odd Levels of Binary Tree](https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/)| [C++](./C++/reverse-odd-levels-of-binary-tree.cpp) [Python](./Python/reverse-odd-levels-of-binary-tree.py)| _O(n)_ | _O(n)_ | Medium | | BFS |
-2471 | [Minimum Number of Operations to Sort a Binary Tree by Level](https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/)| [C++](./C++/minimum-number-of-operations-to-sort-a-binary-tree-by-level.cpp) [Python](./Python/minimum-number-of-operations-to-sort-a-binary-tree-by-level.py)| _O(nlogn)_ | _O(n)_ | Medium | | Sort, BFS |
+2471 | [Minimum Number of Operations to Sort a Binary Tree by Level](https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/)| [C++](./C++/minimum-number-of-operations-to-sort-a-binary-tree-by-level.cpp) [Python](./Python/minimum-number-of-operations-to-sort-a-binary-tree-by-level.py)| _O(nlogn)_ | _O(w)_ | Medium | | Sort, BFS |
 
 <br/>
 <div align="right">
