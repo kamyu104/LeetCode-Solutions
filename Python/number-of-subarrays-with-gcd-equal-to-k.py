@@ -1,4 +1,4 @@
-# Time:  O(n * (logr)^2), r = max(nums)
+# Time:  O(n * logr), r = max(nums)
 # Space: O(logr)
 
 # dp
