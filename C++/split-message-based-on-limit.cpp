@@ -6,7 +6,10 @@ class Solution {
 public:
     vector<string> splitMessage(string message, int limit) {
         int cnt = 1, l = 1;
-        for (int total = size(message) + 1, base = 1; 3 + l * 2 < limit && total + (3 + l) * cnt > limit * cnt;) {
+        for (int total = size(message) + 1, base = 1; 3 + l * 2 < limit;) {
+            if (total + (3 + l) * cnt <= limit * cnt) {
+                break;
+            }
             ++cnt;
             if (cnt == 10 * base) {
                 ++l;
