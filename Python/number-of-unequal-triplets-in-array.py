@@ -4,7 +4,7 @@
 import collections
 
 
-# dp, freq table
+# freq table, dp
 class Solution(object):
     def unequalTriplets(self, nums):
         """
