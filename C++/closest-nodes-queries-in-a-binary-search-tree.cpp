@@ -24,21 +24,21 @@ public:
             return inorder;
         };
 
-         const auto& inorder = iter_dfs();
-         vector<vector<int>> result;
-         for (const auto& q : queries) {
-             const auto cit = lower_bound(cbegin(inorder), cend(inorder), q);
-             if (cit == cend(inorder)) {
-                 result.push_back({*prev(cit), -1});
-             } else if (*cit == q) {
-                 result.push_back({*cit, *cit});
-             } else if (cit == cbegin(inorder)) {
-                 result.push_back({-1, *cit});
-             } else {
-                 result.push_back({*prev(cit), *cit});
-             }
-         }
-         return result;
+        const auto& inorder = iter_dfs();
+        vector<vector<int>> result;
+        for (const auto& q : queries) {
+            const auto cit = lower_bound(cbegin(inorder), cend(inorder), q);
+            if (cit == cend(inorder)) {
+                result.push_back({*prev(cit), -1});
+            } else if (*cit == q) {
+                result.push_back({*cit, *cit});
+            } else if (cit == cbegin(inorder)) {
+                result.push_back({-1, *cit});
+            } else {
+                result.push_back({*prev(cit), *cit});
+            }
+        }
+        return result;
     }
 };
 
@@ -58,20 +58,20 @@ public:
             dfs(node->right);
         };
 
-         dfs(root);
-         vector<vector<int>> result;
-         for (const auto& q : queries) {
-             const auto cit = lower_bound(cbegin(inorder), cend(inorder), q);
-             if (cit == cend(inorder)) {
-                 result.push_back({*prev(cit), -1});
-             } else if (*cit == q) {
-                 result.push_back({*cit, *cit});
-             } else if (cit == cbegin(inorder)) {
-                 result.push_back({-1, *cit});
-             } else {
-                 result.push_back({*prev(cit), *cit});
-             }
-         }
-         return result;
+        dfs(root);
+        vector<vector<int>> result;
+        for (const auto& q : queries) {
+            const auto cit = lower_bound(cbegin(inorder), cend(inorder), q);
+            if (cit == cend(inorder)) {
+                result.push_back({*prev(cit), -1});
+            } else if (*cit == q) {
+                result.push_back({*cit, *cit});
+            } else if (cit == cbegin(inorder)) {
+                result.push_back({-1, *cit});
+            } else {
+                result.push_back({*prev(cit), *cit});
+            }
+        }
+        return result;
     }
 };
