@@ -13,7 +13,7 @@ class Solution(object):
         """
         K = 3
         cnt = collections.Counter()
-        dp = [0]*K  # dp[i]: number of unequal (i+1)-plets 
+        dp = [0]*K  # dp[i]: number of unequal (i+1)-plets
         for x in nums:
             other_cnt = 1
             for i in xrange(K):
