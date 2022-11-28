@@ -1,5 +1,8 @@
 # Time:  O(n)
-# Space: O(1)
+# Space: O(k) = O(3)
+
+import collections
+
 
 # dp, freq table
 class Solution(object):
