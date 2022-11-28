@@ -1,5 +1,5 @@
 # Time:  O(n * k) = O(3 * n)
-# Space: O(k) = O(3)
+# Space: O(n + k) = O(n)
 
 import collections
 
