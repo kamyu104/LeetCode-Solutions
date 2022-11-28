@@ -18,6 +18,6 @@ class Solution(object):
             cnt[x] += 1
             other_cnt = 1
             for i in xrange(K):
-                dp[i] = dp[i]+other_cnt
+                dp[i] += other_cnt
                 other_cnt = dp[i]-cnt[x]*other_cnt
         return dp[K-1]
