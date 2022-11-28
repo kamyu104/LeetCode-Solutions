@@ -42,7 +42,6 @@ public:
     }
 };
 
-
 // Time:  O(n + qlogn)
 // Space: O(n)
 // dfs, binary search
