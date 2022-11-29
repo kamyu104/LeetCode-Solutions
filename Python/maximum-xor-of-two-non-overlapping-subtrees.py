@@ -1,7 +1,7 @@
 # Time:  O(nlogr), r is sum(values)
 # Space: O(n)
 
-# iterative dfs, trie
+# iterative dfs, trie, greedy
 class Trie(object):
     def __init__(self, bit_length):
         self.__root = {}
@@ -86,7 +86,7 @@ class Solution(object):
 
 # Time:  O(nlogr), r is sum(values)
 # Space: O(n)
-# dfs, trie
+# dfs, trie, greedy
 class Trie(object):
     def __init__(self, bit_length):
         self.__root = {}
