@@ -6,7 +6,7 @@ public:
     int findMaximumXOR(vector<int>& nums) {
         int result = 0;
         
-        for (int i = bit_length(*max_element(cbegin(nums), cend(nums))); i >= 0; --i) {
+        for (int i = bit_length(*max_element(cbegin(nums), cend(nums))) - 1; i >= 0; --i) {
             result <<= 1;
             unordered_set<int> prefixes;
             for (const auto& n : nums) {
@@ -42,7 +42,7 @@ private:
 
         void insert(int num) {
             int idx = 0;
-            for (int i = bit_length_; i >= 0; --i) {
+            for (int i = bit_length_ - 1; i >= 0; --i) {
                 int curr = (num >> i) & 1;
                 if (!nodes_[idx][curr]) {
                     nodes_.emplace_back();
@@ -57,7 +57,7 @@ private:
                 return -1;
             }
             int result = 0, idx = 0;
-            for (int i = bit_length_; i >= 0; --i) {
+            for (int i = bit_length_ - 1; i >= 0; --i) {
                 int curr = (num >> i) & 1;
                 if (nodes_[idx][1 ^ curr]) {
                     idx = nodes_[idx][1 ^ curr];
