@@ -9,7 +9,7 @@ public:
         int result = 0;
         for (char i = '0'; i <= '9'; ++i) {
             for (char j = '0'; j <= '9'; ++j) {
-                string pattern = {i, j, '*', j, i};
+                const string pattern = {i, j, '*', j, i};
                 vector<int> dp(5 + 1);
                 dp[0] = 1;
                 for (int k = 0; k < size(s); ++k) {
