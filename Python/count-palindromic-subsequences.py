@@ -1,5 +1,5 @@
-# Time:  O(100 * n)
-# Space: O(1)
+# Time:  O(10^(l/2) * n * l), l = 5
+# Space: O(l)
 
 # dp
 class Solution(object):
