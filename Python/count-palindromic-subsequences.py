@@ -1,7 +1,7 @@
 # Time:  O(10^(l/2) * n), l = 5
 # Space: O(10^(l/2) * n)
 
-# dp
+# dp, prefix sum
 class Solution(object):
     def countPalindromes(self, s):
         """
