@@ -93,7 +93,7 @@ class Solution2(object):
                 for u in q:
                     for v in adj[u]:
                         if v in q:
-                            return -1
+                            return 0
                         if lookup[v]:
                             continue
                         lookup[v] = True
@@ -113,7 +113,7 @@ class Solution2(object):
                 continue
             group = bfs(u)
             mx = max(bfs2(u) for u in group)
-            if mx == -1:
+            if mx == 0:
                 return -1
             result += mx
         return result
