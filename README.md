@@ -1074,7 +1074,7 @@
 2415 | [Reverse Odd Levels of Binary Tree](https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/)| [C++](./C++/reverse-odd-levels-of-binary-tree.cpp) [Python](./Python/reverse-odd-levels-of-binary-tree.py)| _O(n)_ | _O(n)_ | Medium | | BFS |
 2471 | [Minimum Number of Operations to Sort a Binary Tree by Level](https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/)| [C++](./C++/minimum-number-of-operations-to-sort-a-binary-tree-by-level.cpp) [Python](./Python/minimum-number-of-operations-to-sort-a-binary-tree-by-level.py)| _O(nlogn)_ | _O(w)_ | Medium | | Sort, BFS |
 2492 | [Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/)| [C++](./C++/minimum-score-of-a-path-between-two-cities.cpp) [Python](./Python/minimum-score-of-a-path-between-two-cities.py)| _O(n + m)_ | _O(n + m)_ | Medium | | BFS |
-2493 | [Divide Nodes Into the Maximum Number of Groups](https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/)| [C++](./C++/divide-nodes-into-the-maximum-number-of-groups.cpp) [Python](./Python/divide-nodes-into-the-maximum-number-of-groups.py)| _O(n^2)_ | _O(n)_ | Medium | | BFS, DFS |
+2493 | [Divide Nodes Into the Maximum Number of Groups](https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/)| [C++](./C++/divide-nodes-into-the-maximum-number-of-groups.cpp) [Python](./Python/divide-nodes-into-the-maximum-number-of-groups.py)| _O(n^2)_ | _O(n)_ | Medium | variant of [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/) | BFS, DFS |
 
 <br/>
 <div align="right">
