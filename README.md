@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2473%20%2F%202473-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2493%20%2F%202493-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -993,6 +993,7 @@
 2387 | [Median of a Row Wise Sorted Matrix](https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/) | [C++](./C++/median-of-a-row-wise-sorted-matrix.cpp) [Python](./Python/median-of-a-row-wise-sorted-matrix.py) | _O(logr * mlogn)_ | _O(1)_ | Medium | 🔒 | Binary Search |
 2389 | [Longest Subsequence With Limited Sum](https://leetcode.com/problems/longest-subsequence-with-limited-sum/) | [C++](./C++/longest-subsequence-with-limited-sum.cpp) [Python](./Python/longest-subsequence-with-limited-sum.py) | _O(nlogn + qlogn)_ | _O(1)_ | Easy | | Greedy, Sort, Binary Search |
 2448 | [Minimum Cost to Make Array Equal](https://leetcode.com/problems/minimum-cost-to-make-array-equal/) | [C++](./C++/minimum-cost-to-make-array-equal.cpp) [Python](./Python/minimum-cost-to-make-array-equal.py) | _O(nlogn)_ | _O(n)_ | Hard | | Math, Binary Search, Prefix Sum |
+2476 | [Closest Nodes Queries in a Binary Search Tree](https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/) | [C++](./C++/closest-nodes-queries-in-a-binary-search-tree.cpp) [Python](./Python/closest-nodes-queries-in-a-binary-search-tree.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | DFS, Binary Search |
 
 <br/>
 <div align="right">
@@ -1106,6 +1107,7 @@
 2445 | [Number of Nodes With Value One](https://leetcode.com/problems/number-of-nodes-with-value-one/)| [C++](./C++/number-of-nodes-with-value-one.cpp) [Python](./Python/number-of-nodes-with-value-one.py)| _O(q + h)_ | _O(q + h)_ | Medium | 🔒 | Tree, DFS, BFS |
 2458 | [Height of Binary Tree After Subtree Removal Queries](https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/)| [C++](./C++/height-of-binary-tree-after-subtree-removal-queries.cpp) [Python](./Python/height-of-binary-tree-after-subtree-removal-queries.py)| _O(n)_ | _O(n)_ | Hard | | Tree, DFS |
 2467 | [Most Profitable Path in a Tree](https://leetcode.com/problems/most-profitable-path-in-a-tree/)| [C++](./C++/most-profitable-path-in-a-tree.cpp) [Python](./Python/most-profitable-path-in-a-tree.py)| _O(n)_ | _O(n)_ | Medium | | Tree, DFS |
+2477 | [Minimum Fuel Cost to Report to the Capital](https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital/)| [C++](./C++/minimum-fuel-cost-to-report-to-the-capital.cpp) [Python](./Python/minimum-fuel-cost-to-report-to-the-capital.py)| _O(n)_ | _O(h)_ | Medium | | Tree, DFS |
 
 <br/>
 <div align="right">
@@ -1299,6 +1301,9 @@
 2464 | [Minimum Subarrays in a Valid Split](https://leetcode.com/problems/minimum-subarrays-in-a-valid-split/)| [C++](./C++/minimum-subarrays-in-a-valid-split.cpp) [Python](./Python/minimum-subarrays-in-a-valid-split.py) | _O(n^2 * logr)_    | _O(n)_          | Medium           | 🔒 | DP
 2466 | [Count Ways To Build Good Strings](https://leetcode.com/problems/count-ways-to-build-good-strings/)| [C++](./C++/count-ways-to-build-good-strings.cpp) [Python](./Python/count-ways-to-build-good-strings.py) | _O(n)_    | _O(n)_          | Medium           | | DP
 2470 | [Number of Subarrays With LCM Equal to K](https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/)| [C++](./C++/number-of-subarrays-with-lcm-equal-to-k.cpp) [Python](./Python/number-of-subarrays-with-lcm-equal-to-k.py) | _O(n * sqrt(k) * logk)_    | _O(sqrt(k))_          | Medium           | variant of [Number of Subarrays With GCD Equal to K](https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/) | DP
+2470 | [Number of Subarrays With LCM Equal to K](https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/)| [C++](./C++/number-of-subarrays-with-lcm-equal-to-k.cpp) [Python](./Python/number-of-subarrays-with-lcm-equal-to-k.py) | _O(n * sqrt(k) * logk)_    | _O(sqrt(k))_          | Medium           | variant of [Number of Subarrays With GCD Equal to K](https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/) | DP
+2475 | [Number of Unequal Triplets in Array](https://leetcode.com/problems/number-of-unequal-triplets-in-array/)| [C++](./C++/number-of-unequal-triplets-in-array.cpp) [Python](./Python/number-of-unequal-triplets-in-array.py) | _O(n)_    | _O(n)_          | Easy           | | DP, Math
+2478 | [Number of Beautiful Partitions](https://leetcode.com/problems/number-of-beautiful-partitions/)| [C++](./C++/number-of-beautiful-partitions.cpp) [Python](./Python/number-of-beautiful-partitions.py) | _O(n * k)_    | _O(n)_          | Hard           | | DP
 
 <br/>
 <div align="right">
@@ -1819,6 +1824,7 @@
 2377 | [Sort the Olympic Table](https://leetcode.com/problems/sort-the-olympic-table/) | [MySQL](./MySQL/sort-the-olympic-table.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 2388 | [Change Null Values in a Table to the Previous Value](https://leetcode.com/problems/change-null-values-in-a-table-to-the-previous-value/) | [MySQL](./MySQL/change-null-values-in-a-table-to-the-previous-value.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2394 | [Employees With Deductions](https://leetcode.com/problems/employees-with-deductions/) | [MySQL](./MySQL/employees-with-deductions.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
+2474 | [Customers With Strictly Increasing Purchases](https://leetcode.com/problems/customers-with-strictly-increasing-purchases/) | [MySQL](./MySQL/customers-with-strictly-increasing-purchases.sql) | _O(n)_ | _O(n)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
