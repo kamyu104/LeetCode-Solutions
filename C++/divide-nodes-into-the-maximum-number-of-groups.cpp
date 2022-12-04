@@ -10,22 +10,22 @@ public:
             adj[e[0] - 1].emplace_back(e[1] - 1);
             adj[e[1] - 1].emplace_back(e[0] - 1);
         }
-        vector<int> lookup(n);
+        vector<int> lookup(n, -1);
         const auto& iter_dfs = [&](int u) {
             vector<int> group;
             vector<int> stk = {u};
-            ++lookup[u];
+            lookup[u] = 0;
             while (!empty(stk)) {
                 const auto u = stk.back(); stk.pop_back();
                 group.emplace_back(u);
                 for (const auto& v : adj[u]) {
-                    if (lookup[v]) {
-                        if (lookup[v] % 2 == lookup[u] % 2) {  // odd-length cycle
+                    if (lookup[v] != -1) {
+                        if (lookup[v] == lookup[u]) {  // odd-length cycle, not bipartite
                             return vector<int>();
                         }
                         continue;
                     }
-                    lookup[v] = lookup[u] + 1;
+                    lookup[v] = lookup[u] ^ 1;
                     stk.emplace_back(v);
                 }
             }
@@ -54,7 +54,7 @@ public:
 
         int result = 0;
         for (int u = 0; u < n; ++u) {
-            if (lookup[u]) {
+            if (lookup[u] != -1) {
                 continue;
             }
             const auto& group = iter_dfs(u);
