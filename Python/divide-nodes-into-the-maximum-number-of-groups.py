@@ -12,16 +12,16 @@ class Solution(object):
         def iter_dfs(u):
             group = []
             stk = [u]
-            lookup[u] += 1
+            lookup[u] = 0
             while stk:
                 u = stk.pop()
                 group.append(u)
                 for v in adj[u]:
-                    if lookup[v]:
-                        if lookup[v]%2 == lookup[u]%2:  # odd-length cycle
+                    if lookup[v] != -1:
+                        if lookup[v] == lookup[u]:  # odd-length cycle, not bipartite
                             return []
                         continue
-                    lookup[v] = lookup[u]+1
+                    lookup[v] = lookup[u]^1
                     stk.append(v)
             return group
 
@@ -47,9 +47,9 @@ class Solution(object):
             adj[u-1].append(v-1)
             adj[v-1].append(u-1)
         result = 0
-        lookup = [0]*n
+        lookup = [-1]*n
         for u in xrange(n):
-            if lookup[u]:
+            if lookup[u] != -1:
                 continue
             group = iter_dfs(u)
             if not group:
