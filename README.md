@@ -282,6 +282,7 @@
 2438 | [Range Product Queries of Powers](https://leetcode.com/problems/range-product-queries-of-powers/) | [C++](./C++/range-product-queries-of-powers.cpp) [Python](./Python/range-product-queries-of-powers.py) | _O(logn + qlogr)_   | _O(logn)_        | Medium         | | Prefix Sum
 2446 | [Determine if Two Events Have Conflict](https://leetcode.com/problems/determine-if-two-events-have-conflict/) | [C++](./C++/determine-if-two-events-have-conflict.cpp) [Python](./Python/determine-if-two-events-have-conflict.py) | _O(1)_   | _O(1)_        | Easy         | | Array
 2460 | [Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/) | [C++](./C++/apply-operations-to-an-array.cpp) [Python](./Python/apply-operations-to-an-array.py) | _O(n)_   | _O(1)_        | Easy         | | Inplace, Array
+2482 | [Difference Between Ones and Zeros in Row and Column](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/) | [C++](./C++/difference-between-ones-and-zeros-in-row-and-column.cpp) [Python](./Python/difference-between-ones-and-zeros-in-row-and-column.py) | _O(m * n)_   | _O(m + n)_        | Medium         | | Array
 
 <br/>
 <div align="right">
@@ -650,6 +651,7 @@
 2452 | [Words Within Two Edits of Dictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/) | [C++](./C++/words-within-two-edits-of-dictionary.cpp) [Python](./Python/words-within-two-edits-of-dictionary.py) | _O(25 * l * (n + q))_ | _O(25 * l * n)_ | Medium | variant of [MHC2022 - Round 3](https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-3/problems/C) | Brute Force, Hash
 2453 | [Destroy Sequential Targets](https://leetcode.com/problems/destroy-sequential-targets/) | [C++](./C++/destroy-sequential-targets.cpp) [Python](./Python/destroy-sequential-targets.py) | _O(n)_ | _O(s)_ | Medium | | Freq Table
 2456 | [Most Popular Video Creator](https://leetcode.com/problems/most-popular-video-creator/) | [C++](./C++/most-popular-video-creator.cpp) [Python](./Python/most-popular-video-creator.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
+2484 | [Count Palindromic Subsequences](https://leetcode.com/problems/count-palindromic-subsequences/) | [C++](./C++/count-palindromic-subsequences.cpp) [Python](./Python/count-palindromic-subsequences.py) | _O(100 * n)_ | _O(100 * n)_ | Hard | | Freq Table, Prefix Sum, DP
 
 <br/>
 <div align="right">
@@ -799,6 +801,7 @@
 2455 | [Average Value of Even Numbers That Are Divisible by Three](https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/) | [C++](./C++/average-value-of-even-numbers-that-are-divisible-by-three.cpp) [Python](./Python/average-value-of-even-numbers-that-are-divisible-by-three.py) | _O(n)_   | _O(1)_        | Easy         | | Math
 2468 | [Split Message Based on Limit](https://leetcode.com/problems/split-message-based-on-limit/) | [C++](./C++/split-message-based-on-limit.cpp) [Python](./Python/split-message-based-on-limit.py) | _O(n + rlogr)_   | _O(1)_        | Hard         | | Brute Force, Math
 2469 | [Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/) | [C++](./C++/convert-the-temperature.cpp) [Python](./Python/convert-the-temperature.py) | _O(1)_   | _O(1)_        | Easy         | | Math
+2481 | [Minimum Cuts to Divide a Circle](https://leetcode.com/problems/minimum-cuts-to-divide-a-circle/) | [C++](./C++/minimum-cuts-to-divide-a-circle.cpp) [Python](./Python/minimum-cuts-to-divide-a-circle.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 
 <br/>
 <div align="right">
@@ -1475,6 +1478,7 @@
 2459 | [Sort Array by Moving Items to Empty Space](https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/) | [C++](./C++/sort-array-by-moving-items-to-empty-space.cpp) [Python](./Python/sort-array-by-moving-items-to-empty-space.py) | _O(n)_   | _O(n)_        | Hard         | 🔒 | Greedy, Sort
 2472 | [Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/) | [C++](./C++/maximum-number-of-non-overlapping-palindrome-substrings.cpp) [Python](./Python/maximum-number-of-non-overlapping-palindrome-substrings.py) | _O(n * k)_   | _O(1)_        | Hard         || Two Pointers, Greedy
 2479 | [Maximum XOR of Two Non-Overlapping Subtrees](https://leetcode.com/problems/maximum-xor-of-two-non-overlapping-subtrees/) | [C++](./C++/maximum-xor-of-two-non-overlapping-subtrees.cpp) [Python](./Python/maximum-xor-of-two-non-overlapping-subtrees.py) | _O(nlogr)_   | _O(n)_        | Hard         | 🔒, variant of [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | DFS, Trie, Greedy
+2483 | [Minimum Penalty for a Shop](https://leetcode.com/problems/minimum-penalty-for-a-shop/) | [C++](./C++/minimum-penalty-for-a-shop.cpp) [Python](./Python/minimum-penalty-for-a-shop.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 
 <br/>
 <div align="right">
