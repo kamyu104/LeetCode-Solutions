@@ -12,11 +12,12 @@ public:
         }
         vector<int> lookup(n);
         const auto& iter_dfs = [&](int u) {
-            vector<int> group = {u};
+            vector<int> group;
             vector<int> stk = {u};
             ++lookup[u];
             while (!empty(stk)) {
                 const auto u = stk.back(); stk.pop_back();
+                group.emplace_back(u);
                 for (const auto& v : adj[u]) {
                     if (lookup[v]) {
                         if (lookup[v] % 2 == lookup[u] % 2) {  // odd-length cycle
@@ -24,8 +25,7 @@ public:
                         }
                         continue;
                     }
-                    lookup[v] = lookup[u] + 1;;
-                    group.emplace_back(v);
+                    lookup[v] = lookup[u] + 1;
                     stk.emplace_back(v);
                 }
             }
