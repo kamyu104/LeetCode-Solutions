@@ -7,9 +7,9 @@ public:
     int countPalindromes(string s) {
         static const int MOD = 1e9 + 7;
         vector<int> cnt(10);
-        vector<vector<vector<int64_t>>> left(1, vector<vector<int64_t>>(10, vector<int64_t>(10)));
+        vector<vector<vector<int64_t>>> left(size(s) + 1, vector<vector<int64_t>>(10, vector<int64_t>(10)));
         for (int k = 0; k < size(s); ++k) {
-            left.emplace_back(left.back());
+            left[k + 1] = left[k];
             for (int i = 0; i < 10; ++i) {
                 left[k + 1][s[k] - '0'][i] += cnt[i];
             }
