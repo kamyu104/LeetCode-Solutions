@@ -413,6 +413,7 @@
 2390 | [Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/) | [C++](./C++/removing-stars-from-a-string.cpp) [Python](./Python/removing-stars-from-a-string.py) | _O(n)_   | _O(n)_        | Medium         | | String, Stack
 2414 | [Length of the Longest Alphabetical Continuous Substring](https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/) | [C++](./C++/length-of-the-longest-alphabetical-continuous-substring.cpp) [Python](./Python/length-of-the-longest-alphabetical-continuous-substring.py) | _O(n)_   | _O(1)_        | Medium         | | String
 2416 | [Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/) | [C++](./C++/sum-of-prefix-scores-of-strings.cpp) [Python](./Python/sum-of-prefix-scores-of-strings.py) | _O(n * l)_   | _O(t)_        | Hard         | | Trie
+2490 | [Circular Sentence](https://leetcode.com/problems/circular-sentence/) | [C++](./C++/circular-sentence.cpp) [Python](./Python/circular-sentence.py) | _O(n)_   | _O(1)_        | Easy         | | String
 
 <br/>
 <div align="right">
@@ -654,7 +655,8 @@
 2456 | [Most Popular Video Creator](https://leetcode.com/problems/most-popular-video-creator/) | [C++](./C++/most-popular-video-creator.cpp) [Python](./Python/most-popular-video-creator.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
 2484 | [Count Palindromic Subsequences](https://leetcode.com/problems/count-palindromic-subsequences/) | [C++](./C++/count-palindromic-subsequences.cpp) [Python](./Python/count-palindromic-subsequences.py) | _O(100 * n)_ | _O(100 * n)_ | Hard | | Freq Table, Prefix Sum, DP
 2488 | [Count Subarrays With Median K](https://leetcode.com/problems/count-subarrays-with-median-k/) | [C++](./C++/count-subarrays-with-median-k.cpp) [Python](./Python/count-subarrays-with-median-k.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, Prefix Sum
-2489 | [Number of Substrings With Fixed Ratio](https://leetcode.com/problems/number-of-substrings-with-fixed-ratio/) | [C++](./C++/number-of-substrings-with-fixed-ratio.cpp) [Python](./Python/number-of-substrings-with-fixed-ratio.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Prefix Sum
+2489 | [Number of Substrings With Fixed Ratio](https://leetcode.com/problems/number-of-substrings-with-fixed-ratio/) | [C++](./C++/number-of-substrings-with-fixed-ratio.cpp) [Python](./Python/number-of-substrings-with-fixed-ratio.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Freq Table, Prefix Sum
+2491 | [Divide Players Into Teams of Equal Skill](https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/) | [C++](./C++/divide-players-into-teams-of-equal-skill.cpp) [Python](./Python/divide-players-into-teams-of-equal-skill.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
 
 <br/>
 <div align="right">
@@ -1071,6 +1073,8 @@
 2368 | [Reachable Nodes With Restrictions](https://leetcode.com/problems/reachable-nodes-with-restrictions/)| [C++](./C++/reachable-nodes-with-restrictions.cpp) [Python](./Python/reachable-nodes-with-restrictions.py)| _O(n)_ | _O(n)_ | Medium | | BFS |
 2415 | [Reverse Odd Levels of Binary Tree](https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/)| [C++](./C++/reverse-odd-levels-of-binary-tree.cpp) [Python](./Python/reverse-odd-levels-of-binary-tree.py)| _O(n)_ | _O(n)_ | Medium | | BFS |
 2471 | [Minimum Number of Operations to Sort a Binary Tree by Level](https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/)| [C++](./C++/minimum-number-of-operations-to-sort-a-binary-tree-by-level.cpp) [Python](./Python/minimum-number-of-operations-to-sort-a-binary-tree-by-level.py)| _O(nlogn)_ | _O(w)_ | Medium | | Sort, BFS |
+2492 | [Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/)| [C++](./C++/minimum-score-of-a-path-between-two-cities.cpp) [Python](./Python/minimum-score-of-a-path-between-two-cities.py)| _O(n + m)_ | _O(n + m)_ | Medium | | BFS |
+2493 | [Divide Nodes Into the Maximum Number of Groups](https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/)| [C++](./C++/divide-nodes-into-the-maximum-number-of-groups.cpp) [Python](./Python/divide-nodes-into-the-maximum-number-of-groups.py)| _O(n^2)_ | _O(n)_ | Medium | | BFS, DFS |
 
 <br/>
 <div align="right">
