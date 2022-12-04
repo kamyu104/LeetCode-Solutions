@@ -20,5 +20,5 @@ class Solution(object):
             if stk:
                 stk[-1].next = head
             stk.append(head)
-            head.next, head = None, head.next
+            head = head.next
         return stk[0]
