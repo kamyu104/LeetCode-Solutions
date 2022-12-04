@@ -10,18 +10,18 @@ class Solution(object):
         :rtype: int
         """
         def iter_dfs(u):
-            group = [u]
+            group = []
             stk = [u]
             lookup[u] += 1
             while stk:
                 u = stk.pop()
+                group.append(u)
                 for v in adj[u]:
                     if lookup[v]:
                         if lookup[v]%2 == lookup[u]%2:  # odd-length cycle
                             return []
                         continue
                     lookup[v] = lookup[u]+1
-                    group.append(v)
                     stk.append(v)
             return group
 
