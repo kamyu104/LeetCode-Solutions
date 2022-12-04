@@ -439,6 +439,7 @@
 2095 | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | [C++](./C++/delete-the-middle-node-of-a-linked-list.cpp) [Python](./Python/delete-the-middle-node-of-a-linked-list.py) | _O(n)_  | _O(1)_         | Medium           | | Two Pointers
 2130 | [Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | [C++](./C++/maximum-twin-sum-of-a-linked-list.cpp) [Python](./Python/maximum-twin-sum-of-a-linked-list.py) | _O(n)_  | _O(1)_         | Medium           | | Two Pointers
 2181 | [Merge Nodes in Between Zeros](https://leetcode.com/problems/merge-nodes-in-between-zeros/) | [C++](./C++/merge-nodes-in-between-zeros.cpp) [Python](./Python/merge-nodes-in-between-zeros.py) | _O(n)_  | _O(1)_         | Medium           | | Two Pointers
+2487 | [Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/) | [C++](./C++/remove-nodes-from-linked-list.cpp) [Python](./Python/remove-nodes-from-linked-list.py) | _O(n)_  | _O(n)_         | Medium           | | Mono Stack
 
 <br/>
 <div align="right">
@@ -652,6 +653,8 @@
 2453 | [Destroy Sequential Targets](https://leetcode.com/problems/destroy-sequential-targets/) | [C++](./C++/destroy-sequential-targets.cpp) [Python](./Python/destroy-sequential-targets.py) | _O(n)_ | _O(s)_ | Medium | | Freq Table
 2456 | [Most Popular Video Creator](https://leetcode.com/problems/most-popular-video-creator/) | [C++](./C++/most-popular-video-creator.cpp) [Python](./Python/most-popular-video-creator.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
 2484 | [Count Palindromic Subsequences](https://leetcode.com/problems/count-palindromic-subsequences/) | [C++](./C++/count-palindromic-subsequences.cpp) [Python](./Python/count-palindromic-subsequences.py) | _O(100 * n)_ | _O(100 * n)_ | Hard | | Freq Table, Prefix Sum, DP
+2488 | [Count Subarrays With Median K](https://leetcode.com/problems/count-subarrays-with-median-k/) | [C++](./C++/count-subarrays-with-median-k.cpp) [Python](./Python/count-subarrays-with-median-k.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, Prefix Sum
+2489 | [Number of Substrings With Fixed Ratio](https://leetcode.com/problems/number-of-substrings-with-fixed-ratio/) | [C++](./C++/number-of-substrings-with-fixed-ratio.cpp) [Python](./Python/number-of-substrings-with-fixed-ratio.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Prefix Sum
 
 <br/>
 <div align="right">
@@ -802,6 +805,7 @@
 2468 | [Split Message Based on Limit](https://leetcode.com/problems/split-message-based-on-limit/) | [C++](./C++/split-message-based-on-limit.cpp) [Python](./Python/split-message-based-on-limit.py) | _O(n + rlogr)_   | _O(1)_        | Hard         | | Brute Force, Math
 2469 | [Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/) | [C++](./C++/convert-the-temperature.cpp) [Python](./Python/convert-the-temperature.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 2481 | [Minimum Cuts to Divide a Circle](https://leetcode.com/problems/minimum-cuts-to-divide-a-circle/) | [C++](./C++/minimum-cuts-to-divide-a-circle.cpp) [Python](./Python/minimum-cuts-to-divide-a-circle.py) | _O(1)_   | _O(1)_        | Easy         | | Math
+2485 | [Find the Pivot Integer](https://leetcode.com/problems/find-the-pivot-integer/) | [C++](./C++/find-the-pivot-integer.cpp) [Python](./Python/find-the-pivot-integer.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 
 <br/>
 <div align="right">
@@ -1479,6 +1483,7 @@
 2472 | [Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/) | [C++](./C++/maximum-number-of-non-overlapping-palindrome-substrings.cpp) [Python](./Python/maximum-number-of-non-overlapping-palindrome-substrings.py) | _O(n * k)_   | _O(1)_        | Hard         || Two Pointers, Greedy
 2479 | [Maximum XOR of Two Non-Overlapping Subtrees](https://leetcode.com/problems/maximum-xor-of-two-non-overlapping-subtrees/) | [C++](./C++/maximum-xor-of-two-non-overlapping-subtrees.cpp) [Python](./Python/maximum-xor-of-two-non-overlapping-subtrees.py) | _O(nlogr)_   | _O(n)_        | Hard         | 🔒, variant of [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | DFS, Trie, Greedy
 2483 | [Minimum Penalty for a Shop](https://leetcode.com/problems/minimum-penalty-for-a-shop/) | [C++](./C++/minimum-penalty-for-a-shop.cpp) [Python](./Python/minimum-penalty-for-a-shop.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+2486 | [Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/) | [C++](./C++/append-characters-to-string-to-make-subsequence.cpp) [Python](./Python/append-characters-to-string-to-make-subsequence.py) | _O(n)_   | _O(1)_        | Medium         | | Two Pointers, Greedy
 
 <br/>
 <div align="right">
