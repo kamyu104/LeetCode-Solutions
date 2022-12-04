@@ -1474,6 +1474,7 @@
 2457 | [Minimum Addition to Make Integer Beautiful](https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/) | [C++](./C++/minimum-addition-to-make-integer-beautiful.cpp) [Python](./Python/minimum-addition-to-make-integer-beautiful.py) | _O(logn)_   | _O(1)_        | Medium         | | Greedy
 2459 | [Sort Array by Moving Items to Empty Space](https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/) | [C++](./C++/sort-array-by-moving-items-to-empty-space.cpp) [Python](./Python/sort-array-by-moving-items-to-empty-space.py) | _O(n)_   | _O(n)_        | Hard         | 🔒 | Greedy, Sort
 2472 | [Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/) | [C++](./C++/maximum-number-of-non-overlapping-palindrome-substrings.cpp) [Python](./Python/maximum-number-of-non-overlapping-palindrome-substrings.py) | _O(n * k)_   | _O(1)_        | Hard         || Two Pointers, Greedy
+2479 | [Maximum XOR of Two Non-Overlapping Subtrees](https://leetcode.com/problems/maximum-xor-of-two-non-overlapping-subtrees/) | [C++](./C++/maximum-xor-of-two-non-overlapping-subtrees.cpp) [Python](./Python/maximum-xor-of-two-non-overlapping-subtrees.py) | _O(nlogr)_   | _O(n)_        | Hard         | 🔒, variant of [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | DFS, Trie, Greedy
 
 <br/>
 <div align="right">
@@ -1825,6 +1826,7 @@
 2388 | [Change Null Values in a Table to the Previous Value](https://leetcode.com/problems/change-null-values-in-a-table-to-the-previous-value/) | [MySQL](./MySQL/change-null-values-in-a-table-to-the-previous-value.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2394 | [Employees With Deductions](https://leetcode.com/problems/employees-with-deductions/) | [MySQL](./MySQL/employees-with-deductions.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 2474 | [Customers With Strictly Increasing Purchases](https://leetcode.com/problems/customers-with-strictly-increasing-purchases/) | [MySQL](./MySQL/customers-with-strictly-increasing-purchases.sql) | _O(n)_ | _O(n)_       | Hard           |🔒||
+2480 | [Form a Chemical Bond](https://leetcode.com/problems/form-a-chemical-bond/) | [MySQL](./MySQL/form-a-chemical-bond.sql) | _O(n^2)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
