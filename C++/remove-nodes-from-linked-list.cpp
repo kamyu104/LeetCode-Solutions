@@ -14,7 +14,7 @@ public:
                 stk.back()->next = head;
             }
             stk.emplace_back(head);
-            tie(head->next, head) = make_pair(nullptr, head->next);
+            hea = head->next;
         }
         return stk[0];
     }
