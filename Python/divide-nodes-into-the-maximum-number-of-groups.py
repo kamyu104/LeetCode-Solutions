@@ -57,6 +57,7 @@ class Solution(object):
             result += max(bfs(x) for x in group)
         return result
 
+
 # Time:  O(n^2)
 # Space: O(n)
 # bfs
