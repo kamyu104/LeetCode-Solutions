@@ -6,7 +6,7 @@ class Solution {
 public:
     ListNode* removeNodes(ListNode* head) {
         vector<ListNode *> stk;
-        while (head) {
+        for (; head; head = head->next) {
             while (!empty(stk) && stk.back()->val < head->val) {
                 stk.pop_back();
             }
@@ -14,7 +14,6 @@ public:
                 stk.back()->next = head;
             }
             stk.emplace_back(head);
-            hea = head->next;
         }
         return stk[0];
     }
