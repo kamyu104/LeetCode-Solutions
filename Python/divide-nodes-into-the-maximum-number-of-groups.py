@@ -54,7 +54,7 @@ class Solution(object):
             group = iter_dfs(u)
             if not group:
                 return -1
-            result += max(bfs(x) for x in group)
+            result += max(bfs(u) for u in group)
         return result
 
 
@@ -113,8 +113,11 @@ class Solution2(object):
             if lookup[u]:
                 continue
             group = bfs(u)
-            mx = max(bfs2(u) for u in group)
-            if mx == 0:
-                return -1
+            mx = 0
+            for u in group:
+                d = bfs2(u)
+                if d == 0:
+                    return -1
+                mx = max(mx, d)
             result += mx
         return result
