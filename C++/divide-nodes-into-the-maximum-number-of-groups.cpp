@@ -62,8 +62,8 @@ public:
                 return -1;
             }
             int mx = 0;
-            for (const auto& x : group) {
-                mx = max(mx, bfs(x));
+            for (const auto& u : group) {
+                mx = max(mx, bfs(u));
             }
             result += mx;
         }
@@ -133,12 +133,13 @@ public:
                 continue;
             }
             const auto& group = bfs(u);
-            int mx = -1;
-            for (const auto& x : group) {
-                mx = max(mx, bfs2(x));
-            }
-            if (mx == 0) {
-                return -1;
+            int mx = 0;
+            for (const auto& u : group) {
+                const int d = bfs2(u);
+                if (d == 0) {
+                    return -1;
+                }
+                mx = max(mx, d);
             }
             result += mx;
         }
