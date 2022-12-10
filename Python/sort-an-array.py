@@ -8,22 +8,22 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        def mergeSort(start, end, nums):
-            if end - start <= 1:
+        def mergeSort(left, right, nums):
+            if left >= right:
                 return
-            mid = start + (end - start) // 2
-            mergeSort(start, mid, nums)
-            mergeSort(mid, end,  nums)
-            right = mid
+            mid = left + (right-left)//2
+            mergeSort(left, mid, nums)
+            mergeSort(mid+1, right,  nums)
+            r = mid+1
             tmp = []
-            for left in xrange(start, mid):
-                while right < end and nums[right] < nums[left]:
-                    tmp.append(nums[right])
-                    right += 1
-                tmp.append(nums[left])
-            nums[start:start+len(tmp)] = tmp
+            for l in xrange(left, mid+1):
+                while r <= right and nums[r] < nums[l]:
+                    tmp.append(nums[r])
+                    r += 1
+                tmp.append(nums[l])
+            nums[left:left+len(tmp)] = tmp
 
-        mergeSort(0, len(nums), nums)
+        mergeSort(0, len(nums)-1, nums)
         return nums
 
 
@@ -37,36 +37,38 @@ class Solution2(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        def kthElement(nums, left, k, right, compare):
-            def PartitionAroundPivot(left, right, pivot_idx, nums, compare):
-                new_pivot_idx = left
-                nums[pivot_idx], nums[right] = nums[right], nums[pivot_idx]
-                for i in xrange(left, right):
-                    if compare(nums[i], nums[right]):
-                        nums[i], nums[new_pivot_idx] = nums[new_pivot_idx], nums[i]
-                        new_pivot_idx += 1
+        def nth_element(nums, left, n, right, compare=lambda a, b: a < b):
+            def tri_partition(nums, left, right, target):
+                i = left
+                while i <= right:
+                    if compare(nums[i], target):
+                        nums[i], nums[left] = nums[left], nums[i]
+                        left += 1
+                        i += 1
+                    elif compare(target, nums[i]):
+                        nums[i], nums[right] = nums[right], nums[i]
+                        right -= 1
+                    else:
+                        i += 1
+                return left, right
 
-                nums[right], nums[new_pivot_idx] = nums[new_pivot_idx], nums[right]
-                return new_pivot_idx
-
-            right -= 1
             while left <= right:
                 pivot_idx = random.randint(left, right)
-                new_pivot_idx = PartitionAroundPivot(left, right, pivot_idx, nums, compare)
-                if new_pivot_idx == k:
+                pivot_left, pivot_right = tri_partition(nums, left, right, nums[pivot_idx])
+                if pivot_left <= n <= pivot_right:
                     return
-                elif new_pivot_idx > k:
-                    right = new_pivot_idx - 1
-                else:  # new_pivot_idx < k.
-                    left = new_pivot_idx + 1
-                    
-        def quickSort(start, end, nums):
-            if end - start <= 1:
-                return
-            mid = start + (end - start) / 2
-            kthElement(nums, start, mid, end, lambda a, b: a < b)
-            quickSort(start, mid, nums)
-            quickSort(mid, end, nums)
+                elif pivot_left > n:
+                    right = pivot_left-1
+                else:  # pivot_right < n.
+                    left = pivot_right+1
 
-        quickSort(0, len(nums), nums)
+        def quickSort(left, right, nums):
+            if left > right:
+                return
+            mid = left + (right-left)//2
+            nth_element(nums, left, mid, right)
+            quickSort(left, mid-1, nums)
+            quickSort(mid+1, right, nums)
+
+        quickSort(0, len(nums)-1, nums)
         return nums
