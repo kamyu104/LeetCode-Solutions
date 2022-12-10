@@ -9,7 +9,7 @@ class Solution(object):
         :rtype: List[int]
         """
         def mergeSort(left, right, nums):
-            if left >= right:
+            if left == right:
                 return
             mid = left + (right-left)//2
             mergeSort(left, mid, nums)
