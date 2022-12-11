@@ -9,9 +9,9 @@ class Solution(object):
         """
         def countAndMergeSort(num_idxs, start, end, counts):
             if end - start <= 0:  # The size of range [start, end] less than 2 is always with count 0.
-                return 0
+                return
 
-            mid = start + (end - start) / 2
+            mid = start + (end - start) // 2
             countAndMergeSort(num_idxs, start, mid, counts)
             countAndMergeSort(num_idxs, mid + 1, end, counts)
             r = mid + 1
