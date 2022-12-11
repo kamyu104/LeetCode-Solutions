@@ -7,8 +7,7 @@ class Solution(object):
         :type n: int
         :rtype: List[List[str]]
         """
-        def dfs(curr, cols, main_diag, anti_diag, result):
-            row, n = len(curr), len(cols)
+        def dfs(row):
             if row == n:
                 result.append(map(lambda x: '.'*x + "Q" + '.'*(n-x-1), curr))
                 return
@@ -17,13 +16,13 @@ class Solution(object):
                     continue
                 cols[i] = main_diag[row+i] = anti_diag[row-i+(n-1)] = True
                 curr.append(i)
-                dfs(curr, cols, main_diag, anti_diag, result)
+                dfs(row+1)
                 curr.pop()
                 cols[i] = main_diag[row+i] = anti_diag[row-i+(n-1)] = False
 
-        result = []
+        result, curr = [], []
         cols, main_diag, anti_diag = [False]*n, [False]*(2*n-1), [False]*(2*n-1)
-        dfs([], cols, main_diag, anti_diag, result)
+        dfs(0)
         return result
 
 
