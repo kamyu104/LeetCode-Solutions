@@ -12,13 +12,14 @@ class Solution(object):
                 return 1
             result = 0
             for i in xrange(n):
-                if cols[i] or main_diag[row+i] or anti_diag[row-i+n]:
+                if cols[i] or main_diag[row+i] or anti_diag[row-i+(n-1)]:
                     continue
-                cols[i] = main_diag[row+i] = anti_diag[row-i+n] = True
+                cols[i] = main_diag[row+i] = anti_diag[row-i+(n-1)] = True
                 result += dfs(row+1)
-                cols[i] = main_diag[row+i] = anti_diag[row-i+n] = False
+                cols[i] = main_diag[row+i] = anti_diag[row-i+(n-1)] = False
             return result
 
         result = []
-        cols, main_diag, anti_diag = [False]*n, [False]*(2*n), [False]*(2*n)
+        cols, main_diag, anti_diag = [False]*n, [False]*(2*n-1), [False]*(2*n-1)
         return dfs(0)
+
