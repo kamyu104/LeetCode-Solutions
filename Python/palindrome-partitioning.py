@@ -8,7 +8,7 @@ class Solution(object):
         n = len(s)
 
         is_palindrome = [[0 for j in xrange(n)] for i in xrange(n)]
-        for i in reversed(xrange(0, n)):
+        for i in reversed(xrange(n)):
             for j in xrange(i, n):
                 is_palindrome[i][j] = s[i] == s[j] and ((j - i < 2) or is_palindrome[i + 1][j - 1])
 
