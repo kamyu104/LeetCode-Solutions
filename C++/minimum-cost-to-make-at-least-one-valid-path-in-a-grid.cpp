@@ -18,25 +18,25 @@ private:
                                                                 {3, 1, 0}, {4, -1, 0}};
         int f = 0, dh = 1;
         vector<pair<int, int>> closer = {b}, detour;
-        vector<vector<bool>> lookup(size(grid), vector<bool>(size(grid[0])));
+        unordered_set<int> lookup;
         while (!closer.empty() || !detour.empty()) {
             if (closer.empty()) {
                 f += dh;
                 swap(closer, detour);
             }
             const auto b = closer.back(); closer.pop_back();
+            if (lookup.count(b.first * size(grid[0]) + b.second)) {
+                continue;
+            }
+            lookup.emplace(b.first * size(grid[0]) + b.second);
             if (b == t) {
                 return f;
             }
-            if (lookup[b.first][b.second]) {
-                continue;
-            }
-            lookup[b.first][b.second] = true;
             for (const auto& [nd, dr, dc] : directions) {
                 const pair<int, int>& nb = {b.first + dr, b.second + dc};
                 if (!(0 <= nb.first && nb.first < grid.size() &&
                       0 <= nb.second && nb.second < grid[0].size() &&
-                      !lookup[nb.first][nb.second])) {
+                      !lookup.count(nb.first * size(grid[0]) + nb.second))) {
                     continue;
                 }
                 if (nd == grid[b.first][b.second]) {
@@ -60,22 +60,22 @@ public:
                                                                 {3, 1, 0}, {4, -1, 0}};
         const pair<int, int> b = {0, 0}, t = {grid.size() - 1, grid[0].size() - 1}; 
         deque<pair<pair<int, int>, int>> dq = {{b, 0}};
-        vector<vector<bool>> lookup(size(grid), vector<bool>(size(grid[0])));
+        unordered_set<int> lookup;
         while (!dq.empty()) {
             const auto [b, d] = dq.front(); dq.pop_front();
+            if (lookup.count(b.first * size(grid[0]) + b.second)) {
+                continue;
+            }
+            lookup.emplace(b.first * size(grid[0]) + b.second);
             if (b == t) {
                 return d;
             }
-            if (lookup[b.first][b.second]) {
-                continue;
-            }
-            lookup[b.first][b.second] = true;
             for (const auto& [nd, dr, dc] : directions) {
                 const auto& nb = make_pair(b.first + dr, b.second + dc);
                 const auto& cost = nd != grid[b.first][b.second] ? 1 : 0;
                 if (!(0 <= nb.first && nb.first < grid.size() &&
                       0 <= nb.second && nb.second < grid[0].size() &&
-                      !lookup[nb.first][nb.second])) {
+                      !lookup.count(nb.first * size(grid[0]) + nb.second))) {
                     continue;
                 }
                 if (!cost) {
