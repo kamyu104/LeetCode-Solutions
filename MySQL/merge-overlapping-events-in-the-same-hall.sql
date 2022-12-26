@@ -5,7 +5,7 @@ WITH event_cte AS (
   SELECT IFNULL(start_day > MAX(end_day) OVER w, 1) AS is_new_event_start,
          hall_id,
          start_day,
-  	     end_day
+         end_day
   FROM HallEvents
   WINDOW w AS (PARTITION BY hall_id 
                ORDER BY start_day ASC, end_day ASC
@@ -17,7 +17,8 @@ event_id_cte AS (
          start_day,
          end_day
   FROM event_cte
-  WINDOW w AS (PARTITION BY hall_id ORDER BY start_day ASC, end_day ASC)
+  WINDOW w AS (PARTITION BY hall_id
+               ORDER BY start_day ASC, end_day ASC)
 )
 SELECT hall_id,
        MIN(start_day) AS start_day,
