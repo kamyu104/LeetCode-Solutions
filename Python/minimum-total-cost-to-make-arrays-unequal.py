@@ -47,7 +47,7 @@ class Solution(object):
                 adj[v].append(u)
         result = float("-inf")
         for u in xrange(len(vals)):
-            if k <= len(adj[u]):
+            if 1 <= k <= len(adj[u]):
                 nth_element(adj[u], k-1, lambda a, b: vals[a] > vals[b])
             result = max(result, vals[u]+sum(vals[adj[u][i]] for i in range(min(k, len(adj[u])))))
         return result
