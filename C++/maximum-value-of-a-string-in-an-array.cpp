@@ -6,8 +6,10 @@ class Solution {
 public:
     int maximumValue(vector<string>& strs) {
         int result = 0;
-        for (const auto& x : strs) {
-            result = max(result, all_of(cbegin(x), cend(x), ::isdigit) ? stoi(x) : static_cast<int>(size(x)));
+        for (const auto& s : strs) {
+            result = max(result, all_of(cbegin(s), cend(s), ::isdigit) 
+                                 ? stoi(s)
+                                 : static_cast<int>(size(s)));
         }
         return result;
     }
