@@ -5,8 +5,8 @@
 class Solution {
 public:
     int captureForts(vector<int>& forts) {
-        int result = 0, left = 0;
-        for (int right = 0; right < size(forts); ++right) {
+        int result = 0;
+        for (int right = 0, left = 0; right < size(forts); ++right) {
             if (!forts[right]) {
                 continue;
             }
