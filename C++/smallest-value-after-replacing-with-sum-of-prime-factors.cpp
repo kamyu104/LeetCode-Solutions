@@ -28,7 +28,7 @@ public:
         while (true) {
             int curr = n, new_n =0;
             for (const auto& p : PRIMES) {
-                if (p > curr) {
+                if (p * p > curr) {
                     continue;
                 }
                 while (curr % p == 0) {
