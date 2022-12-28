@@ -48,10 +48,10 @@ class Solution2(object):
         def lcm(a, b):
             return a//gcd(a, b)*b
 
-        def check(x):
-            return (x-x//divisor1 >= uniqueCnt1 and
-                    x-x//divisor2 >= uniqueCnt2 and
-                    x-x//l >= uniqueCnt1+uniqueCnt2)
+        def check(cnt):
+            return (cnt-cnt//divisor1 >= uniqueCnt1 and
+                    cnt-cnt//divisor2 >= uniqueCnt2 and
+                    cnt-cnt//l >= uniqueCnt1+uniqueCnt2)
 
         l = lcm(divisor1, divisor2)
         left, right = 2, 2**31-1
