@@ -27,7 +27,7 @@ class Solution(object):
         while True:
             curr, new_n = n, 0
             for p in PRIMES:
-                if p > curr:
+                if p**2 > curr:
                     break
                 while curr%p == 0:
                     curr //= p
