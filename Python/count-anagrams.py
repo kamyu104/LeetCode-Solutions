@@ -13,18 +13,18 @@ class Solution(object):
         """
         MOD = 10**9+7
         fact, inv, inv_fact = [[1]*2 for _ in xrange(3)]
-        def init(n):
+        def lazy_init(n):
             while len(inv) <= n:  # lazy initialization
                 fact.append(fact[-1]*len(inv) % MOD)
                 inv.append(inv[MOD%len(inv)]*(MOD-MOD//len(inv)) % MOD)  # https://cp-algorithms.com/algebra/module-inverse.html
                 inv_fact.append(inv_fact[-1]*inv[-1] % MOD)
 
         def factorial(n):
-            init(n)
+            lazy_init(n)
             return fact[n]
 
         def inv_factorial(n):
-            init(n)
+            lazy_init(n)
             return inv_fact[n]
 
         def count(j, i):
