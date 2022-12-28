@@ -9,7 +9,7 @@ public:
         vector<int> fact = {1, 1};
         vector<int> inv = {1, 1};
         vector<int> inv_fact = {1, 1};
-        const auto& init = [&](int n) {
+        const auto& lazy_init = [&](int n) {
             while (size(inv) <= n) {  // lazy initialization
                 fact.emplace_back((static_cast<int64_t>(fact.back()) * size(inv)) % MOD);
                 inv.emplace_back((static_cast<int64_t>(inv[MOD % size(inv)]) * (MOD - MOD / size(inv))) % MOD);  // https://cp-algorithms.com/algebra/module-inverse.html
@@ -18,12 +18,12 @@ public:
         };
 
         const auto& factorial = [&](int n) {
-            init(n);
+            lazy_init(n);
             return fact[n];
         };
 
         const auto& inv_factorial = [&](int n) {
-            init(n);
+            lazy_init(n);
             return inv_fact[n];
         };
 
