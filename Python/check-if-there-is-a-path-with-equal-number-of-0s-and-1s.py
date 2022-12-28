@@ -8,7 +8,7 @@ class Solution(object):
         :type grid: List[List[int]]
         :rtype: bool
         """
-        if (len(grid)+len(grid[0])-1)%2 != 0:
+        if (len(grid)+len(grid[0])-1)%2:
             return False
         dp_left = [[float("inf")]*(len(grid[0])+1) for _ in xrange(2)]
         dp_left[0][1] = dp_left[1][0] = 0
