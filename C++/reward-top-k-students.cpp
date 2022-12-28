@@ -10,11 +10,11 @@ public:
         vector<pair<int, int>> arr;
         for (int i = 0; i < size(report); ++i) {
             int score = 0;
-            for (int j = 0, k = 0; j < size(report[i]); ++j) {
-                if (j + 1 == size(report[i]) || report[i][j + 1] == ' ') {
-                    const auto& w = report[i].substr(k, j - k + 1);
+            for (int right = 0, left = 0; right < size(report[i]); ++right) {
+                if (right + 1 == size(report[i]) || report[i][right + 1] == ' ') {
+                    const auto& w = report[i].substr(left, right - left + 1);
                     score += pos.count(w) ? 3 : neg.count(w) ? -1 : 0;
-                    k = j + 2;
+                    left = right + 2;
                 }
             }
             arr.emplace_back(-score, student_id[i]);
