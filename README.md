@@ -664,7 +664,7 @@
 2489 | [Number of Substrings With Fixed Ratio](https://leetcode.com/problems/number-of-substrings-with-fixed-ratio/) | [C++](./C++/number-of-substrings-with-fixed-ratio.cpp) [Python](./Python/number-of-substrings-with-fixed-ratio.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Freq Table, Prefix Sum
 2491 | [Divide Players Into Teams of Equal Skill](https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/) | [C++](./C++/divide-players-into-teams-of-equal-skill.cpp) [Python](./Python/divide-players-into-teams-of-equal-skill.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
 2501 | [Longest Square Streak in an Array](https://leetcode.com/problems/longest-square-streak-in-an-array/) | [C++](./C++/longest-square-streak-in-an-array.cpp) [Python](./Python/longest-square-streak-in-an-array.py) | _O(nlogn)_ | _O(n)_ | Medium | | Hash Table, DP
-2506 | [Count Pairs Of Similar Strings](https://leetcode.com/problems/count-pairs-of-similar-strings/) | [C++](./C++/count-pairs-of-similar-strings.cpp) [Python](./Python/count-pairs-of-similar-strings.py) | _O(n * l)_ | _O(n)_ | Easy | | Freq Table
+2506 | [Count Pairs Of Similar Strings](https://leetcode.com/problems/count-pairs-of-similar-strings/) | [C++](./C++/count-pairs-of-similar-strings.cpp) [Python](./Python/count-pairs-of-similar-strings.py) | _O(n * l)_ | _O(n)_ | Easy | | Freq Table, Bitmask
 
 <br/>
 <div align="right">
