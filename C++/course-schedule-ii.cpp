@@ -19,8 +19,7 @@ public:
         }
         vector<int> result;
         while (!q.empty()) {
-            const auto node = q.front(); 
-            q.pop();
+            const auto node = q.front(); q.pop();
             result.emplace_back(node);
             for (const auto& i : adj[node]) {
                 if (!--in_degree[i]) {
