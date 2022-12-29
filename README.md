@@ -113,7 +113,7 @@
 2419 | [Longest Subarray With Maximum Bitwise AND](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/) | [C++](./C++/longest-subarray-with-maximum-bitwise-and.cpp) [Python](./Python/longest-subarray-with-maximum-bitwise-and.py) | _O(n)_ | _O(1)_ | Medium || Bit Manipulation
 2425 | [Bitwise XOR of All Pairings](https://leetcode.com/problems/bitwise-xor-of-all-pairings/) | [C++](./C++/bitwise-xor-of-all-pairings.cpp) [Python](./Python/bitwise-xor-of-all-pairings.py) | _O(n)_ | _O(1)_ | Medium || Bit Manipulation
 2429 | [Minimize XOR](https://leetcode.com/problems/minimize-xor/) | [C++](./C++/minimize-xor.cpp) [Python](./Python/minimize-xor.py) | _O(logn)_ | _O(1)_ | Medium || Bit Manipulation, Greedy
-2505 | [Bitwise OR of All Subsequence Sums](https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/) | [C++](./C++/bitwise-or-of-all-subsequence-sums.cpp) [Python](./Python/bitwise-or-of-all-subsequence-sums.py) | _O(logn)_ | _O(1)_ | Medium |🔒| Bit Manipulation
+2505 | [Bitwise OR of All Subsequence Sums](https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/) | [C++](./C++/bitwise-or-of-all-subsequence-sums.cpp) [Python](./Python/bitwise-or-of-all-subsequence-sums.py) | _O(n)_ | _O(1)_ | Medium |🔒| Bit Manipulation
 
 <br/>
 <div align="right">
