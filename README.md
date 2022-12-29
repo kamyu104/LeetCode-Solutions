@@ -285,6 +285,7 @@
 2460 | [Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/) | [C++](./C++/apply-operations-to-an-array.cpp) [Python](./Python/apply-operations-to-an-array.py) | _O(n)_   | _O(1)_        | Easy         | | Inplace, Array
 2482 | [Difference Between Ones and Zeros in Row and Column](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/) | [C++](./C++/difference-between-ones-and-zeros-in-row-and-column.cpp) [Python](./Python/difference-between-ones-and-zeros-in-row-and-column.py) | _O(m * n)_   | _O(m + n)_        | Medium         | | Array
 2500 | [Delete Greatest Value in Each Row](https://leetcode.com/problems/delete-greatest-value-in-each-row/) | [C++](./C++/delete-greatest-value-in-each-row.cpp) [Python](./Python/delete-greatest-value-in-each-row.py) | _O(m * nlogn)_   | _O(1)_        | Easy         | | Array
+2515 | [Shortest Distance to Target String in a Circular Array](https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/) | [C++](./C++/shortest-distance-to-target-string-in-a-circular-array.cpp) [Python](./Python/shortest-distance-to-target-string-in-a-circular-array.py) | _O(n)_   | _O(1)_        | Easy         | | Array
 
 <br/>
 <div align="right">
@@ -516,6 +517,7 @@
 2386 | [Find the K-Sum of an Array](https://leetcode.com/problems/find-the-k-sum-of-an-array/) | [C++](./C++/find-the-k-sum-of-an-array.cpp) [Python](./Python/find-the-k-sum-of-an-array.py) | _O(nlogn + klogk)_ | _O(n + k)_ | Hard | | BFS, Heap |
 2402 | [Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/) | [C++](./C++/meeting-rooms-iii.cpp) [Python](./Python/meeting-rooms-iii.py) | _O(mlogm + n + mlogn)_ | _O(n)_ | Hard | | Heap |
 2462 | [Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/) | [C++](./C++/total-cost-to-hire-k-workers.cpp) [Python](./Python/total-cost-to-hire-k-workers.py) | _O(c + klogc)_ | _O(c)_ | Medium | | Heap, Two Pointers |
+2519 | [Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/) | [C++](./C++/count-the-number-of-k-big-indices.cpp) [Python](./Python/count-the-number-of-k-big-indices.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | Heap, Sorted Set, Sorted List |
 
 <br/>
 <div align="right">
@@ -947,6 +949,7 @@
 2461 | [Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/) | [C++](./C++/maximum-sum-of-distinct-subarrays-with-length-k.cpp) [Python](./Python/maximum-sum-of-distinct-subarrays-with-length-k.py) | _O(n)_ | _O(k)_ | Medium | | Two Pointers |
 2465 | [Number of Distinct Averages](https://leetcode.com/problems/number-of-distinct-averages/) | [C++](./C++/number-of-distinct-averages.cpp) [Python](./Python/number-of-distinct-averages.py) | _O(nlogn)_ | _O(n)_ | Easy | | Two Pointers, Hash Table |
 2511 | [Maximum Enemy Forts That Can Be Captured](https://leetcode.com/problems/maximum-enemy-forts-that-can-be-captured/) | [C++](./C++/maximum-enemy-forts-that-can-be-captured.cpp) [Python](./Python/maximum-enemy-forts-that-can-be-captured.py) | _O(n)_ | _O(1)_ | Easy | | Array, Two Pointers |
+2516 | [Take K of Each Character From Left and Right](https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/) | [C++](./C++/take-k-of-each-character-from-left-and-right.cpp) [Python](./Python/take-k-of-each-character-from-left-and-right.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window, Two Pointers |
 
 <br/>
 <div align="right">
@@ -1013,7 +1016,8 @@
 2389 | [Longest Subsequence With Limited Sum](https://leetcode.com/problems/longest-subsequence-with-limited-sum/) | [C++](./C++/longest-subsequence-with-limited-sum.cpp) [Python](./Python/longest-subsequence-with-limited-sum.py) | _O(nlogn + qlogn)_ | _O(1)_ | Easy | | Greedy, Sort, Binary Search |
 2448 | [Minimum Cost to Make Array Equal](https://leetcode.com/problems/minimum-cost-to-make-array-equal/) | [C++](./C++/minimum-cost-to-make-array-equal.cpp) [Python](./Python/minimum-cost-to-make-array-equal.py) | _O(nlogn)_ | _O(n)_ | Hard | | Math, Binary Search, Prefix Sum |
 2476 | [Closest Nodes Queries in a Binary Search Tree](https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/) | [C++](./C++/closest-nodes-queries-in-a-binary-search-tree.cpp) [Python](./Python/closest-nodes-queries-in-a-binary-search-tree.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | DFS, Binary Search |
-2513 | [Minimize the Maximum of Two Arrays](https://leetcode.com/problems/minimize-the-maximum-of-two-arrayse/) | [C++](./C++/minimize-the-maximum-of-two-arrays.cpp) [Python](./Python/minimize-the-maximum-of-two-arrays.py) | _O(log(min(d1, d2)))_ | _O(1)_ | Medium | | Number Theory, Binary Search |
+2513 | [Minimize the Maximum of Two Arrays](https://leetcode.com/problems/minimize-the-maximum-of-two-arrays/) | [C++](./C++/minimize-the-maximum-of-two-arrays.cpp) [Python](./Python/minimize-the-maximum-of-two-arrays.py) | _O(log(min(d1, d2)))_ | _O(1)_ | Medium | | Number Theory, Binary Search |
+2517 | [Maximum Tastiness of Candy Basket](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/) | [C++](./C++/maximum-tastiness-of-candy-basket.cpp) [Python](./Python/maximum-tastiness-of-candy-basket.py) | _O(nlogr)_ | _O(1)_ | Medium | | Binary Search, Greedy |
 
 <br/>
 <div align="right">
@@ -1329,6 +1333,7 @@
 2478 | [Number of Beautiful Partitions](https://leetcode.com/problems/number-of-beautiful-partitions/)| [C++](./C++/number-of-beautiful-partitions.cpp) [Python](./Python/number-of-beautiful-partitions.py) | _O(n * k)_    | _O(n)_          | Hard           | | DP
 2495 | [Number of Subarrays Having Even Product](https://leetcode.com/problems/number-of-subarrays-having-even-product/)| [C++](./C++/number-of-subarrays-having-even-product.cpp) [Python](./Python/number-of-subarrays-having-even-product.py) | _O(n)_    | _O(1)_          | Medium           | 🔒 | DP, Math
 2510 | [Check if There is a Path With Equal Number of 0's And 1's](https://leetcode.com/problems/check-if-there-is-a-path-with-equal-number-of-0s-and-1s/)| [C++](./C++/check-if-there-is-a-path-with-equal-number-of-0s-and-1s.cpp) [Python](./Python/check-if-there-is-a-path-with-equal-number-of-0s-and-1s.py) | _O(m * n)_    | _O(n)_          | Medium           | 🔒 | DP
+2518 | [Number of Great Partitions](https://leetcode.com/problems/number-of-great-partitions/)| [C++](./C++/number-of-great-partitions.cpp) [Python](./Python/number-of-great-partitions.py) | _O(n * k)_    | _O(k)_          | Hard           | | Knapsack DP
 
 <br/>
 <div align="right">
