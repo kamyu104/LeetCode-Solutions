@@ -38,7 +38,7 @@ public:
 #include <ext/pb_ds/tree_policy.hpp>
 using namespace __gnu_pbds;
 
-// sorted set
+// ordered set
 class Solution2 {
 public:
     int kBigIndices(vector<int>& nums, int k) {
