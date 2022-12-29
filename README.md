@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2493%20%2F%202493-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2519%20%2F%202519-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -414,6 +414,7 @@
 2414 | [Length of the Longest Alphabetical Continuous Substring](https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/) | [C++](./C++/length-of-the-longest-alphabetical-continuous-substring.cpp) [Python](./Python/length-of-the-longest-alphabetical-continuous-substring.py) | _O(n)_   | _O(1)_        | Medium         | | String
 2416 | [Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/) | [C++](./C++/sum-of-prefix-scores-of-strings.cpp) [Python](./Python/sum-of-prefix-scores-of-strings.py) | _O(n * l)_   | _O(t)_        | Hard         | | Trie
 2490 | [Circular Sentence](https://leetcode.com/problems/circular-sentence/) | [C++](./C++/circular-sentence.cpp) [Python](./Python/circular-sentence.py) | _O(n)_   | _O(1)_        | Easy         | | String
+2496 | [Maximum Value of a String in an Array](https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/) | [C++](./C++/maximum-value-of-a-string-in-an-array.cpp) [Python](./Python/maximum-value-of-a-string-in-an-array.py) | _O(n * l)_   | _O(1)_        | Easy         | | String
 
 <br/>
 <div align="right">
@@ -865,6 +866,7 @@
 2251 | [Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/) | [C++](./C++/number-of-flowers-in-full-bloom.cpp) [Python](./Python/number-of-flowers-in-full-bloom.py) | _O(nlogn + mlogn)_   | _O(n)_        | Hard         | | Line Sweep, Binary Search
 2343 | [Query Kth Smallest Trimmed Number](https://leetcode.com/problems/query-kth-smallest-trimmed-number/) | [C++](./C++/query-kth-smallest-trimmed-number.cpp) [Python](./Python/query-kth-smallest-trimmed-number.py) | _O(q + n * t)_   | _O(t + n + q)_        | Medium         | | Sort, Quick Select, Radix Sort
 2418 | [Sort the People](https://leetcode.com/problems/sort-the-people/) | [C++](./C++/sort-the-people.cpp) [Python](./Python/sort-the-people.py) | _O(nlogn)_   | _O(n)_        | Easy         | | Sort
+2497 | [Maximum Star Sum of a Graph](https://leetcode.com/problems/maximum-star-sum-of-a-graph/) | [C++](./C++/maximum-star-sum-of-a-graph.cpp) [Python](./Python/maximum-star-sum-of-a-graph.py) | _O(n)_   | _O(n)_        | Medium         | | Sort, Quick Select
 
 <br/>
 <div align="right">
@@ -1315,6 +1317,7 @@
 2470 | [Number of Subarrays With LCM Equal to K](https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/)| [C++](./C++/number-of-subarrays-with-lcm-equal-to-k.cpp) [Python](./Python/number-of-subarrays-with-lcm-equal-to-k.py) | _O(n * sqrt(k) * logk)_    | _O(sqrt(k))_          | Medium           | variant of [Number of Subarrays With GCD Equal to K](https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/) | DP
 2475 | [Number of Unequal Triplets in Array](https://leetcode.com/problems/number-of-unequal-triplets-in-array/)| [C++](./C++/number-of-unequal-triplets-in-array.cpp) [Python](./Python/number-of-unequal-triplets-in-array.py) | _O(n)_    | _O(n)_          | Easy           | | DP, Freq Table, Math
 2478 | [Number of Beautiful Partitions](https://leetcode.com/problems/number-of-beautiful-partitions/)| [C++](./C++/number-of-beautiful-partitions.cpp) [Python](./Python/number-of-beautiful-partitions.py) | _O(n * k)_    | _O(n)_          | Hard           | | DP
+2495 | [Number of Subarrays Having Even Product](https://leetcode.com/problems/number-of-subarrays-having-even-product/)| [C++](./C++/number-of-subarrays-having-even-product.cpp) [Python](./Python/number-of-subarrays-having-even-product.py) | _O(n)_    | _O(1)_          | Medium           | 🔒 | DP, Math
 
 <br/>
 <div align="right">
@@ -1488,6 +1491,8 @@
 2479 | [Maximum XOR of Two Non-Overlapping Subtrees](https://leetcode.com/problems/maximum-xor-of-two-non-overlapping-subtrees/) | [C++](./C++/maximum-xor-of-two-non-overlapping-subtrees.cpp) [Python](./Python/maximum-xor-of-two-non-overlapping-subtrees.py) | _O(nlogr)_   | _O(n)_        | Hard         | 🔒, variant of [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | DFS, Trie, Greedy
 2483 | [Minimum Penalty for a Shop](https://leetcode.com/problems/minimum-penalty-for-a-shop/) | [C++](./C++/minimum-penalty-for-a-shop.cpp) [Python](./Python/minimum-penalty-for-a-shop.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 2486 | [Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/) | [C++](./C++/append-characters-to-string-to-make-subsequence.cpp) [Python](./Python/append-characters-to-string-to-make-subsequence.py) | _O(n)_   | _O(1)_        | Medium         | | Two Pointers, Greedy
+2498 | [Frog Jump II](https://leetcode.com/problems/frog-jump-ii/) | [C++](./C++/frog-jump-ii.cpp) [Python](./Python/frog-jump-ii.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+2499 | [Minimum Total Cost to Make Arrays Unequal](https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal/) | [C++](./C++/minimum-total-cost-to-make-arrays-unequal.cpp) [Python](./Python/minimum-total-cost-to-make-arrays-unequal.py) | _O(n)_   | _O(n)_        | Hard         | | Greedy
 
 <br/>
 <div align="right">
@@ -1840,6 +1845,7 @@
 2394 | [Employees With Deductions](https://leetcode.com/problems/employees-with-deductions/) | [MySQL](./MySQL/employees-with-deductions.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 2474 | [Customers With Strictly Increasing Purchases](https://leetcode.com/problems/customers-with-strictly-increasing-purchases/) | [MySQL](./MySQL/customers-with-strictly-increasing-purchases.sql) | _O(n)_ | _O(n)_       | Hard           |🔒||
 2480 | [Form a Chemical Bond](https://leetcode.com/problems/form-a-chemical-bond/) | [MySQL](./MySQL/form-a-chemical-bond.sql) | _O(n^2)_ | _O(n)_       | Easy           |🔒||
+2494 | [Merge Overlapping Events in the Same Hall](https://leetcode.com/problems/merge-overlapping-events-in-the-same-hall/) | [MySQL](./MySQL/merge-overlapping-events-in-the-same-hall.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
