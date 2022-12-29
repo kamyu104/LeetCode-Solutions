@@ -1,7 +1,7 @@
 // Time:  O(|V| + |E|)
 // Space: O(|E|)
 
-// bfs solution
+// Kahn’s algorithm (bfs solution)
 class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
