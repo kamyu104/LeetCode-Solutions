@@ -13,7 +13,6 @@ class Solution(object):
         :rtype: List[int]
         """
         adj = collections.defaultdict(list)
-        adj = collections.defaultdict(list)
         in_degree = collections.Counter()
         for u, v in prerequisites:
             in_degree[u] += 1
