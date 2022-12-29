@@ -28,7 +28,7 @@ class Solution(object):
                    count(uniqueCnt1+uniqueCnt2, divisor1, divisor2))
 
 
-# Time:  Olog(min(d1, d2)) + logr)
+# Time:  O(log(min(d1, d2)) + logr)
 # Space: O(1)
 # binary search
 class Solution2(object):
