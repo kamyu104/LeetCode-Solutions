@@ -113,6 +113,7 @@
 2419 | [Longest Subarray With Maximum Bitwise AND](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/) | [C++](./C++/longest-subarray-with-maximum-bitwise-and.cpp) [Python](./Python/longest-subarray-with-maximum-bitwise-and.py) | _O(n)_ | _O(1)_ | Medium || Bit Manipulation
 2425 | [Bitwise XOR of All Pairings](https://leetcode.com/problems/bitwise-xor-of-all-pairings/) | [C++](./C++/bitwise-xor-of-all-pairings.cpp) [Python](./Python/bitwise-xor-of-all-pairings.py) | _O(n)_ | _O(1)_ | Medium || Bit Manipulation
 2429 | [Minimize XOR](https://leetcode.com/problems/minimize-xor/) | [C++](./C++/minimize-xor.cpp) [Python](./Python/minimize-xor.py) | _O(logn)_ | _O(1)_ | Medium || Bit Manipulation, Greedy
+2505 | [Bitwise OR of All Subsequence Sums](https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/) | [C++](./C++/bitwise-or-of-all-subsequence-sums.cpp) [Python](./Python/bitwise-or-of-all-subsequence-sums.py) | _O(logn)_ | _O(1)_ | Medium |🔒| Bit Manipulation
 
 <br/>
 <div align="right">
@@ -283,6 +284,7 @@
 2446 | [Determine if Two Events Have Conflict](https://leetcode.com/problems/determine-if-two-events-have-conflict/) | [C++](./C++/determine-if-two-events-have-conflict.cpp) [Python](./Python/determine-if-two-events-have-conflict.py) | _O(1)_   | _O(1)_        | Easy         | | Array
 2460 | [Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/) | [C++](./C++/apply-operations-to-an-array.cpp) [Python](./Python/apply-operations-to-an-array.py) | _O(n)_   | _O(1)_        | Easy         | | Inplace, Array
 2482 | [Difference Between Ones and Zeros in Row and Column](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/) | [C++](./C++/difference-between-ones-and-zeros-in-row-and-column.cpp) [Python](./Python/difference-between-ones-and-zeros-in-row-and-column.py) | _O(m * n)_   | _O(m + n)_        | Medium         | | Array
+2500 | [Delete Greatest Value in Each Row](https://leetcode.com/problems/delete-greatest-value-in-each-row/) | [C++](./C++/delete-greatest-value-in-each-row.cpp) [Python](./Python/delete-greatest-value-in-each-row.py) | _O(m * nlogn)_   | _O(1)_        | Easy         | | Array
 
 <br/>
 <div align="right">
@@ -658,6 +660,7 @@
 2488 | [Count Subarrays With Median K](https://leetcode.com/problems/count-subarrays-with-median-k/) | [C++](./C++/count-subarrays-with-median-k.cpp) [Python](./Python/count-subarrays-with-median-k.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, Prefix Sum
 2489 | [Number of Substrings With Fixed Ratio](https://leetcode.com/problems/number-of-substrings-with-fixed-ratio/) | [C++](./C++/number-of-substrings-with-fixed-ratio.cpp) [Python](./Python/number-of-substrings-with-fixed-ratio.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Freq Table, Prefix Sum
 2491 | [Divide Players Into Teams of Equal Skill](https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/) | [C++](./C++/divide-players-into-teams-of-equal-skill.cpp) [Python](./Python/divide-players-into-teams-of-equal-skill.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
+2501 | [Longest Square Streak in an Array](https://leetcode.com/problems/longest-square-streak-in-an-array/) | [C++](./C++/longest-square-streak-in-an-array.cpp) [Python](./Python/longest-square-streak-in-an-array.py) | _O(nlogn)_ | _O(n)_ | Medium | | Hash Table, DP
 
 <br/>
 <div align="right">
@@ -1077,6 +1080,7 @@
 2471 | [Minimum Number of Operations to Sort a Binary Tree by Level](https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/)| [C++](./C++/minimum-number-of-operations-to-sort-a-binary-tree-by-level.cpp) [Python](./Python/minimum-number-of-operations-to-sort-a-binary-tree-by-level.py)| _O(nlogn)_ | _O(w)_ | Medium | | Sort, BFS |
 2492 | [Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/)| [C++](./C++/minimum-score-of-a-path-between-two-cities.cpp) [Python](./Python/minimum-score-of-a-path-between-two-cities.py)| _O(n + m)_ | _O(n + m)_ | Medium | | BFS |
 2493 | [Divide Nodes Into the Maximum Number of Groups](https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/)| [C++](./C++/divide-nodes-into-the-maximum-number-of-groups.cpp) [Python](./Python/divide-nodes-into-the-maximum-number-of-groups.py)| _O(n^2)_ | _O(n)_ | Medium | variant of [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/) | BFS, DFS |
+2503 | [Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/)| [C++](./C++/maximum-number-of-points-from-grid-queries.cpp) [Python](./Python/maximum-number-of-points-from-grid-queries.py)| _O((m * n + q) * log(m * n))_ | _O(m * n)_ | Hard || BFS, Heap, Prefix Sum, Binary Search |
 
 <br/>
 <div align="right">
@@ -1644,6 +1648,7 @@
 2353 | [Design a Food Rating System](https://leetcode.com/problems/design-a-food-rating-system/) | [C++](./C++/design-a-food-rating-system.cpp) [Python](./Python/design-a-food-rating-system.py) | ctor: _O(nlogn)_<br>changeRating: _O(logn)_<br>highestRated: _O(1)_ | _O(n)_ | Medium | | Sorted List, BST
 2408 | [Design SQL](https://leetcode.com/problems/design-sql/) | [C++](./C++/design-sql.cpp) [Python](./Python/design-sql.py) | ctor: _O(t * max_m)_<br>insertRow: _O(m)_<br>deleteRow: _O(1)_<br>selectCell: _O(m)_ | _O(d)_ | Medium | 🔒 | Hash Table
 2424 | [Longest Uploaded Prefix](https://leetcode.com/problems/longest-uploaded-prefix/) | [C++](./C++/longest-uploaded-prefix.cpp) [Python](./Python/longest-uploaded-prefix.py) | ctor: _O(1)_<br>upload: _O(1)_, amortized <br>longest: _O(1)_ | _O(n)_ | Medium | | Hash Table
+2502 | [Design Memory Allocator](https://leetcode.com/problems/design-memory-allocator/) | [C++](./C++/design-memory-allocator.cpp) [Python](./Python/design-memory-allocator.py) | ctor: _O(1)_<br>allocate: _O(logn)_<br>free: _O(logn)_ | _O(n)_ | Medium | | Sorted List
 
 <br/>
 <div align="right">
@@ -1846,6 +1851,7 @@
 2474 | [Customers With Strictly Increasing Purchases](https://leetcode.com/problems/customers-with-strictly-increasing-purchases/) | [MySQL](./MySQL/customers-with-strictly-increasing-purchases.sql) | _O(n)_ | _O(n)_       | Hard           |🔒||
 2480 | [Form a Chemical Bond](https://leetcode.com/problems/form-a-chemical-bond/) | [MySQL](./MySQL/form-a-chemical-bond.sql) | _O(n^2)_ | _O(n)_       | Easy           |🔒||
 2494 | [Merge Overlapping Events in the Same Hall](https://leetcode.com/problems/merge-overlapping-events-in-the-same-hall/) | [MySQL](./MySQL/merge-overlapping-events-in-the-same-hall.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+2504 | [Concatenate the Name and the Profession](https://leetcode.com/problems/concatenate-the-name-and-the-profession/) | [MySQL](./MySQL/concatenate-the-name-and-the-profession.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
