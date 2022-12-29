@@ -517,7 +517,7 @@
 2386 | [Find the K-Sum of an Array](https://leetcode.com/problems/find-the-k-sum-of-an-array/) | [C++](./C++/find-the-k-sum-of-an-array.cpp) [Python](./Python/find-the-k-sum-of-an-array.py) | _O(nlogn + klogk)_ | _O(n + k)_ | Hard | | BFS, Heap |
 2402 | [Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/) | [C++](./C++/meeting-rooms-iii.cpp) [Python](./Python/meeting-rooms-iii.py) | _O(mlogm + n + mlogn)_ | _O(n)_ | Hard | | Heap |
 2462 | [Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/) | [C++](./C++/total-cost-to-hire-k-workers.cpp) [Python](./Python/total-cost-to-hire-k-workers.py) | _O(c + klogc)_ | _O(c)_ | Medium | | Heap, Two Pointers |
-2519 | [Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/) | [C++](./C++/count-the-number-of-k-big-indices.cpp) [Python](./Python/count-the-number-of-k-big-indices.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | Heap, Ordered Set, Sorted List |
+2519 | [Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/) | [C++](./C++/count-the-number-of-k-big-indices.cpp) [Python](./Python/count-the-number-of-k-big-indices.py) | _O(nlogk)_ | _O(n)_ | Hard | 🔒 | Heap, Ordered Set, Sorted List |
 
 <br/>
 <div align="right">
