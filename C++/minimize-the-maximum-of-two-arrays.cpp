@@ -1,4 +1,4 @@
-// Time:  Olog(min(d1, d2)))
+// Time:  O(log(min(d1, d2)))
 // Space: O(1)
 
 // number theory
@@ -16,7 +16,7 @@ public:
     }
 };
 
-// Time:  Olog(min(d1, d2)) + logr)
+// Time:  O(log(min(d1, d2)) + logr)
 // Space: O(1)
 // binary search
 class Solution2 {
