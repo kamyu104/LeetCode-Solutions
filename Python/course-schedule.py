@@ -33,6 +33,9 @@ class Solution(object):
 
 # Time:  O(|V| + |E|)
 # Space: O(|E|)
+import collections
+
+
 # dfs solution
 class Solution2(object):
     def canFinish(self, numCourses, prerequisites):
