@@ -47,7 +47,6 @@ class Solution2(object):
             in_degree[u] += 1
             adj[v].append(u)
         result = []
-        q = [u for u in xrange(numCourses) if u not in in_degree]
         stk = [u for u in xrange(numCourses) if u not in in_degree]
         while stk:
             u = stk.pop()
