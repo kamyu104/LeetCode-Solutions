@@ -4,7 +4,7 @@
 import collections
 
 
-# bfs solution
+# khan's algorithm (bfs solution)
 class Solution(object):
     def canFinish(self, numCourses, prerequisites):
         """
@@ -12,21 +12,23 @@ class Solution(object):
         :type prerequisites: List[List[int]]
         :rtype: List[int]
         """
-        in_degree = collections.defaultdict(set)
-        out_degree = collections.defaultdict(set)
-        for i, j in prerequisites:
-            in_degree[i].add(j)
-            out_degree[j].add(i)
-        q = collections.deque([i for i in xrange(numCourses) if i not in in_degree])
+        adj = collections.defaultdict(list)
+        in_degree = collections.Counter()
+        for u, v in prerequisites:
+            in_degree[u] += 1
+            adj[v].append(u)
+        result = []
+        q = [u for u in xrange(numCourses) if u not in in_degree]
         while q:
-            node = q.popleft()
-            for i in out_degree[node]:
-                in_degree[i].remove(node)
-                if not in_degree[i]:
-                    q.append(i)
-                    del in_degree[i]
-            del out_degree[node]
-        return not in_degree and not out_degree
+            new_q = []
+            for u in q:
+                result.append(u)
+                for v in adj[u]:
+                    in_degree[v] -= 1
+                    if in_degree[v] == 0:
+                        new_q.append(v)
+            q = new_q
+        return len(result) == numCourses
 
 
 # Time:  O(|V| + |E|)
@@ -39,18 +41,19 @@ class Solution2(object):
         :type prerequisites: List[List[int]]
         :rtype: List[int]
         """
-        in_degree = collections.defaultdict(set)
-        out_degree = collections.defaultdict(set)
-        for i, j in prerequisites:
-            in_degree[i].add(j)
-            out_degree[j].add(i)
-        stk = [i for i in xrange(numCourses) if i not in in_degree]
+        adj = collections.defaultdict(list)
+        in_degree = collections.Counter()
+        for u, v in prerequisites:
+            in_degree[u] += 1
+            adj[v].append(u)
+        result = []
+        q = [u for u in xrange(numCourses) if u not in in_degree]
+        stk = [u for u in xrange(numCourses) if u not in in_degree]
         while stk:
-            node = stk.pop()
-            for i in out_degree[node]:
-                in_degree[i].remove(node)
-                if not in_degree[i]:
-                    stk.append(i)
-                    del in_degree[i]
-            del out_degree[node]
-        return not in_degree and not out_degree
+            u = stk.pop()
+            result.append(u)
+            for v in adj[u]:
+                in_degree[v] -= 1
+                if in_degree[v] == 0:
+                    stk.append(v)
+        return len(result) == numCourses
