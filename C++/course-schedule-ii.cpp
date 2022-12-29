@@ -5,31 +5,30 @@
 class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        unordered_map<int, unordered_set<int>> in_degree, out_degree;
+        unordered_map<int, vector<int>> adj;
+        unordered_map<int, int> in_degree;
         for (const auto& p : prerequisites) {
-            in_degree[p[0]].emplace(p[1]);
-            out_degree[p[1]].emplace(p[0]);
+            ++in_degree[p[0]];
+            adj[p[1]].emplace_back(p[0]);
         }
         queue<int> q;
         for (int i = 0; i < numCourses; ++i) {
-            if (!in_degree.count(i)) {
+            if (!in_degree[i]) {
                 q.emplace(i);
             }
         }
         vector<int> result;
         while (!q.empty()) {
-            const auto node = q.front(); q.pop();
+            const auto node = q.front(); 
+            q.pop();
             result.emplace_back(node);
-            for (const auto& i : out_degree[node]) {
-                in_degree[i].erase(node);
-                if (in_degree[i].empty()) {
+            for (const auto& i : adj[node]) {
+                if (!--in_degree[i]) {
                     q.emplace(i);
-                    in_degree.erase(i);
                 }
             }
-            out_degree.erase(node);
         }
-        return in_degree.empty() && out_degree.empty() ? result : vector<int>();
+        return size(result) == numCourses ? result : vector<int>();
     }
 };
 
@@ -39,14 +38,15 @@ public:
 class Solution2 {
 public:
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        unordered_map<int, unordered_set<int>> in_degree, out_degree;
+        unordered_map<int, unordered_set<int>> adj;
+        unordered_map<int, int> in_degree;
         for (const auto& p : prerequisites) {
-            in_degree[p[0]].emplace(p[1]);
-            out_degree[p[1]].emplace(p[0]);
+            ++in_degree[p[0]];
+            adj[p[1]].emplace(p[0]);
         }
         vector<int> stk;
         for (int i = 0; i < numCourses; ++i) {
-            if (!in_degree.count(i)) {
+            if (!in_degree[i]) {
                 stk.emplace_back(i);
             }
         }
@@ -54,15 +54,12 @@ public:
         while (!stk.empty()) {
             const auto node = stk.back(); stk.pop_back();
             result.emplace_back(node);
-            for (const auto& i : out_degree[node]) {
-                in_degree[i].erase(node);
-                if (in_degree[i].empty()) {
+            for (const auto& i : adj[node]) {
+                if (!--in_degree[i]) {
                     stk.emplace_back(i);
-                    in_degree.erase(i);
                 }
             }
-            out_degree.erase(node);
         }
-        return in_degree.empty() && out_degree.empty() ? result : vector<int>();
+        return size(result) == numCourses ? result : vector<int>();
     }
 };
