@@ -44,17 +44,16 @@ public:
     int kBigIndices(vector<int>& nums, int k) {
         using ordered_set = tree<pair<int, int>, null_type, less<pair<int, int>>, rb_tree_tag, tree_order_statistics_node_update>;
         ordered_set os1, os2;
-        unordered_map<int, int> lookup;
-        for (const auto& x : nums) {
-            os2.insert({x, lookup[x]++});
+        for (int i = 0; i < size(nums); ++i) {
+            os2.insert({nums[i], i});
         }
         int result = 0;
-        for (const auto& x : nums) {
-            os2.erase({x, --lookup[x]});  
-            if (os1.order_of_key({x, 0}) >= k && os2.order_of_key({x, 0}) >= k) {
+        for (int i = 0; i < size(nums); ++i) {
+            os2.erase({nums[i], i});  
+            if (os1.order_of_key({nums[i], 0}) >= k && os2.order_of_key({nums[i], 0}) >= k) {
                 ++result;
             }
-            os1.insert({x, lookup[x]});
+            os1.insert({nums[i], i});
         }
         return result;
     }
