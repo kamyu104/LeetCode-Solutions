@@ -570,7 +570,7 @@
 2236 | [Root Equals Sum of Children](https://leetcode.com/problems/root-equals-sum-of-children/)| [C++](./C++/root-equals-sum-of-children.cpp) [Python](./Python/root-equals-sum-of-children.py)| _O(1)_ | _O(1)_ | Easy | | Tree |
 2277 | [Closest Node to Path in Tree](https://leetcode.com/problems/closest-node-to-path-in-tree/)| [C++](./C++/closest-node-to-path-in-tree.cpp) [Python](./Python/closest-node-to-path-in-tree.py)| _O(n + q)_ | _O(n)_ | Hard | 🔒 | Tree, BFS, Binary Lifting, `Tarjan's Offline LCA Algorithm` |
 2421 | [Number of Good Paths](https://leetcode.com/problems/number-of-good-paths/)| [C++](./C++/number-of-good-paths.cpp) [Python](./Python/number-of-good-paths.py)| _O(nlogn)_ | _O(n)_ | Hard | | Sort, Union Find |
-2509 | [Cycle Length Queries in a Tree](https://leetcode.com/problems/cycle-length-queries-in-a-tree/)| [C++](./C++/cycle-length-queries-in-a-tree.cpp) [Python](./Python/cycle-length-queries-in-a-tree.py)| _O(q * n)_ | _O(n)_ | Hard | | Tree, LCA |
+2509 | [Cycle Length Queries in a Tree](https://leetcode.com/problems/cycle-length-queries-in-a-tree/)| [C++](./C++/cycle-length-queries-in-a-tree.cpp) [Python](./Python/cycle-length-queries-in-a-tree.py)| _O(q * n)_ | _O(1)_ | Hard | | Tree, LCA |
 
 <br/>
 <div align="right">
