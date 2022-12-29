@@ -568,6 +568,7 @@
 2236 | [Root Equals Sum of Children](https://leetcode.com/problems/root-equals-sum-of-children/)| [C++](./C++/root-equals-sum-of-children.cpp) [Python](./Python/root-equals-sum-of-children.py)| _O(1)_ | _O(1)_ | Easy | | Tree |
 2277 | [Closest Node to Path in Tree](https://leetcode.com/problems/closest-node-to-path-in-tree/)| [C++](./C++/closest-node-to-path-in-tree.cpp) [Python](./Python/closest-node-to-path-in-tree.py)| _O(n + q)_ | _O(n)_ | Hard | 🔒 | Tree, BFS, Binary Lifting, `Tarjan's Offline LCA Algorithm` |
 2421 | [Number of Good Paths](https://leetcode.com/problems/number-of-good-paths/)| [C++](./C++/number-of-good-paths.cpp) [Python](./Python/number-of-good-paths.py)| _O(nlogn)_ | _O(n)_ | Hard | | Sort, Union Find |
+2509 | [Cycle Length Queries in a Tree](https://leetcode.com/problems/cycle-length-queries-in-a-tree/)| [C++](./C++/cycle-length-queries-in-a-tree.cpp) [Python](./Python/cycle-length-queries-in-a-tree.py)| _O(q * n)_ | _O(n)_ | Hard | | Tree, LCA |
 
 <br/>
 <div align="right">
@@ -661,6 +662,7 @@
 2489 | [Number of Substrings With Fixed Ratio](https://leetcode.com/problems/number-of-substrings-with-fixed-ratio/) | [C++](./C++/number-of-substrings-with-fixed-ratio.cpp) [Python](./Python/number-of-substrings-with-fixed-ratio.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Freq Table, Prefix Sum
 2491 | [Divide Players Into Teams of Equal Skill](https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/) | [C++](./C++/divide-players-into-teams-of-equal-skill.cpp) [Python](./Python/divide-players-into-teams-of-equal-skill.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
 2501 | [Longest Square Streak in an Array](https://leetcode.com/problems/longest-square-streak-in-an-array/) | [C++](./C++/longest-square-streak-in-an-array.cpp) [Python](./Python/longest-square-streak-in-an-array.py) | _O(nlogn)_ | _O(n)_ | Medium | | Hash Table, DP
+2506 | [Count Pairs Of Similar Strings](https://leetcode.com/problems/count-pairs-of-similar-strings/) | [C++](./C++/count-pairs-of-similar-strings.cpp) [Python](./Python/count-pairs-of-similar-strings.py) | _O(n * l)_ | _O(n)_ | Easy | | Freq Table
 
 <br/>
 <div align="right">
@@ -812,6 +814,7 @@
 2469 | [Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/) | [C++](./C++/convert-the-temperature.cpp) [Python](./Python/convert-the-temperature.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 2481 | [Minimum Cuts to Divide a Circle](https://leetcode.com/problems/minimum-cuts-to-divide-a-circle/) | [C++](./C++/minimum-cuts-to-divide-a-circle.cpp) [Python](./Python/minimum-cuts-to-divide-a-circle.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 2485 | [Find the Pivot Integer](https://leetcode.com/problems/find-the-pivot-integer/) | [C++](./C++/find-the-pivot-integer.cpp) [Python](./Python/find-the-pivot-integer.py) | _O(1)_   | _O(1)_        | Easy         | | Math
+2514 | [Count Anagrams](https://leetcode.com/problems/count-anagrams/) | [C++](./C++/count-anagrams.cpp) [Python](./Python/count-anagrams.py) | _O(n)_   | _O(n)_        | Hard         | | Math, Combinatorics
 
 <br/>
 <div align="right">
@@ -870,6 +873,7 @@
 2343 | [Query Kth Smallest Trimmed Number](https://leetcode.com/problems/query-kth-smallest-trimmed-number/) | [C++](./C++/query-kth-smallest-trimmed-number.cpp) [Python](./Python/query-kth-smallest-trimmed-number.py) | _O(q + n * t)_   | _O(t + n + q)_        | Medium         | | Sort, Quick Select, Radix Sort
 2418 | [Sort the People](https://leetcode.com/problems/sort-the-people/) | [C++](./C++/sort-the-people.cpp) [Python](./Python/sort-the-people.py) | _O(nlogn)_   | _O(n)_        | Easy         | | Sort
 2497 | [Maximum Star Sum of a Graph](https://leetcode.com/problems/maximum-star-sum-of-a-graph/) | [C++](./C++/maximum-star-sum-of-a-graph.cpp) [Python](./Python/maximum-star-sum-of-a-graph.py) | _O(n)_   | _O(n)_        | Medium         | | Sort, Quick Select
+2512 | [Reward Top K Students](https://leetcode.com/problems/reward-top-k-students/) | [C++](./C++/reward-top-k-students.cpp) [Python](./Python/reward-top-k-students.py) | _O(pf * l + nf * l + n * l + klogk)_   | _O(pf * l + nf * l + n)_        | Medium         | | Partial Sort, Quick Select
 
 <br/>
 <div align="right">
@@ -942,6 +946,7 @@
 2444 | [Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/) | [C++](./C++/count-subarrays-with-fixed-bounds.cpp) [Python](./Python/count-subarrays-with-fixed-bounds.py) | _O(n)_ | _O(1)_ | Hard | variant of [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | Two Pointers |
 2461 | [Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/) | [C++](./C++/maximum-sum-of-distinct-subarrays-with-length-k.cpp) [Python](./Python/maximum-sum-of-distinct-subarrays-with-length-k.py) | _O(n)_ | _O(k)_ | Medium | | Two Pointers |
 2465 | [Number of Distinct Averages](https://leetcode.com/problems/number-of-distinct-averages/) | [C++](./C++/number-of-distinct-averages.cpp) [Python](./Python/number-of-distinct-averages.py) | _O(nlogn)_ | _O(n)_ | Easy | | Two Pointers, Hash Table |
+2511 | [Maximum Enemy Forts That Can Be Captured](https://leetcode.com/problems/maximum-enemy-forts-that-can-be-captured/) | [C++](./C++/maximum-enemy-forts-that-can-be-captured.cpp) [Python](./Python/maximum-enemy-forts-that-can-be-captured.py) | _O(n)_ | _O(1)_ | Easy | | Array, Two Pointers |
 
 <br/>
 <div align="right">
@@ -1008,6 +1013,7 @@
 2389 | [Longest Subsequence With Limited Sum](https://leetcode.com/problems/longest-subsequence-with-limited-sum/) | [C++](./C++/longest-subsequence-with-limited-sum.cpp) [Python](./Python/longest-subsequence-with-limited-sum.py) | _O(nlogn + qlogn)_ | _O(1)_ | Easy | | Greedy, Sort, Binary Search |
 2448 | [Minimum Cost to Make Array Equal](https://leetcode.com/problems/minimum-cost-to-make-array-equal/) | [C++](./C++/minimum-cost-to-make-array-equal.cpp) [Python](./Python/minimum-cost-to-make-array-equal.py) | _O(nlogn)_ | _O(n)_ | Hard | | Math, Binary Search, Prefix Sum |
 2476 | [Closest Nodes Queries in a Binary Search Tree](https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/) | [C++](./C++/closest-nodes-queries-in-a-binary-search-tree.cpp) [Python](./Python/closest-nodes-queries-in-a-binary-search-tree.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | DFS, Binary Search |
+2513 | [Minimize the Maximum of Two Arrays](https://leetcode.com/problems/minimize-the-maximum-of-two-arrayse/) | [C++](./C++/minimize-the-maximum-of-two-arrays.cpp) [Python](./Python/minimize-the-maximum-of-two-arrays.py) | _O(log(min(d1, d2)))_ | _O(1)_ | Medium | | Number Theory, Binary Search |
 
 <br/>
 <div align="right">
@@ -1322,6 +1328,7 @@
 2475 | [Number of Unequal Triplets in Array](https://leetcode.com/problems/number-of-unequal-triplets-in-array/)| [C++](./C++/number-of-unequal-triplets-in-array.cpp) [Python](./Python/number-of-unequal-triplets-in-array.py) | _O(n)_    | _O(n)_          | Easy           | | DP, Freq Table, Math
 2478 | [Number of Beautiful Partitions](https://leetcode.com/problems/number-of-beautiful-partitions/)| [C++](./C++/number-of-beautiful-partitions.cpp) [Python](./Python/number-of-beautiful-partitions.py) | _O(n * k)_    | _O(n)_          | Hard           | | DP
 2495 | [Number of Subarrays Having Even Product](https://leetcode.com/problems/number-of-subarrays-having-even-product/)| [C++](./C++/number-of-subarrays-having-even-product.cpp) [Python](./Python/number-of-subarrays-having-even-product.py) | _O(n)_    | _O(1)_          | Medium           | 🔒 | DP, Math
+2510 | [Check if There is a Path With Equal Number of 0's And 1's](https://leetcode.com/problems/check-if-there-is-a-path-with-equal-number-of-0s-and-1s/)| [C++](./C++/check-if-there-is-a-path-with-equal-number-of-0s-and-1s.cpp) [Python](./Python/check-if-there-is-a-path-with-equal-number-of-0s-and-1s.py) | _O(m * n)_    | _O(n)_          | Medium           | 🔒 | DP
 
 <br/>
 <div align="right">
@@ -1554,6 +1561,7 @@
 2360 | [Longest Cycle in a Graph](https://leetcode.com/problems/longest-cycle-in-a-graph/) | [C++](./C++/longest-cycle-in-a-graph.cpp)  [Python](./Python/longest-cycle-in-a-graph.py)  | _O(n)_ | _O(n)_ | Hard         | | Graph, Hash Table, DFS |
 2392 | [Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/) | [C++](./C++/build-a-matrix-with-conditions.cpp)  [Python](./Python/build-a-matrix-with-conditions.py)  | _O(k^2 + r + c)_ | _O(k + r + c)_ | Hard         | | Graph, Topological Sort |
 2473 | [Minimum Cost to Buy Apples](https://leetcode.com/problems/minimum-cost-to-buy-apples/)  | [C++](./C++/minimum-cost-to-buy-apples.cpp) [Python](./Python/minimum-cost-to-buy-apples.py) | _O(n * rlogn)_ | _O(n)_| Medium           |🔒| `Dijkstra's Algorithm`| 
+2508 | [Add Edges to Make Degrees of All Nodes Even](https://leetcode.com/problems/add-edges-to-make-degrees-of-all-nodes-even/)  | [C++](./C++/add-edges-to-make-degrees-of-all-nodes-even.cpp) [Python](./Python/add-edges-to-make-degrees-of-all-nodes-even.py) | _O(n)_ | _O(n)_| Hard           || Graph | 
 
 <br/>
 <div align="right">
@@ -1586,6 +1594,7 @@
 2162 | [Minimum Cost to Set Cooking Time](https://leetcode.com/problems/minimum-cost-to-set-cooking-time/) | [C++](./C++/minimum-cost-to-set-cooking-time.cpp) [Python](./Python/minimum-cost-to-set-cooking-time.py) | _O(1)_ | _O(1)_ | Medium           || 
 2257 | [Count Unguarded Cells in the Grid](https://leetcode.com/problems/count-unguarded-cells-in-the-grid/) | [C++](./C++/count-unguarded-cells-in-the-grid.cpp) [Python](./Python/count-unguarded-cells-in-the-grid.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Array, Simulation
 2303 | [Calculate Amount Paid in Taxes](https://leetcode.com/problems/calculate-amount-paid-in-taxes/) | [C++](./C++/calculate-amount-paid-in-taxes.cpp) [Python](./Python/calculate-amount-paid-in-taxes.py) | _O(n)_ | _O(1)_ | Easy | | Simulation
+2507 | [Smallest Value After Replacing With Sum of Prime Factors](https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/) | [C++](./C++/smallest-value-after-replacing-with-sum-of-prime-factors.cpp) [Python](./Python/smallest-value-after-replacing-with-sum-of-prime-factors.py) | _O(s * logn)_ | _O(max_n^0.5)_ | Medium | | Number Theory, Simulation
 
 <br/>
 <div align="right">
