@@ -13,7 +13,7 @@ public:
         }
         queue<int> q;
         for (int i = 0; i < numCourses; ++i) {
-            if (!in_degree[i]) {
+            if (!in_degree.count(i)) {
                 q.emplace(i);
             }
         }
@@ -45,7 +45,7 @@ public:
         }
         vector<int> stk;
         for (int i = 0; i < numCourses; ++i) {
-            if (!in_degree[i]) {
+            if (!in_degree.count(i)) {
                 stk.emplace_back(i);
             }
         }
