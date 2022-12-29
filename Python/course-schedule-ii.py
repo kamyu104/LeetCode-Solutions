@@ -4,7 +4,7 @@
 import collections
 
 
-# khan's algorithm (bfs solution)
+# Khan's algorithm (bfs solution)
 class Solution(object):
     def findOrder(self, numCourses, prerequisites):
         """
