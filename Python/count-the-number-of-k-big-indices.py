@@ -13,21 +13,21 @@ class Solution(object):
         :rtype: int
         """
         right = [False]*len(nums)
-        min_heap1 = []
+        max_heap1 = []
         for i in reversed(xrange(len(nums))):
-            if len(min_heap1) == k and nums[i] > -min_heap1[0]:
+            if len(max_heap1) == k and nums[i] > -max_heap1[0]:
                 right[i] = True
-            heapq.heappush(min_heap1, -nums[i])
-            if len(min_heap1) == k+1:
-                heapq.heappop(min_heap1)
+            heapq.heappush(max_heap1, -nums[i])
+            if len(max_heap1) == k+1:
+                heapq.heappop(max_heap1)
         result = 0
-        min_heap2 = []
+        max_heap2 = []
         for i in xrange(len(nums)):
-            if len(min_heap2) == k and nums[i] > -min_heap2[0] and right[i]:
+            if len(max_heap2) == k and nums[i] > -max_heap2[0] and right[i]:
                 result += 1
-            heapq.heappush(min_heap2, -nums[i])
-            if len(min_heap2) == k+1:
-                heapq.heappop(min_heap2)
+            heapq.heappush(max_heap2, -nums[i])
+            if len(max_heap2) == k+1:
+                heapq.heappop(max_heap2)
         return result
 
 
