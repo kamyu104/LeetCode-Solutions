@@ -1,11 +1,11 @@
-// Time:  O(nlogr), r is max(price) - min(price)
+// Time:  O(nlogr), r = max(price)-min(price)
 // Space: O(1)
 
 // binary search, greedy
 class Solution {
 public:
     int maximumTastiness(vector<int>& price, int k) {
-        const auto& check = [&](int x) {
+        const auto& check = [&](int x) {  // find max cnt if smallest absolute difference >= x
             int cnt = 0, prev = 0;
             for (int i = 0, j = 0; i < size(price); ++i) {
                 if (prev && price[i] - prev < x) {
