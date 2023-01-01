@@ -1,5 +1,5 @@
 // Time:  precompute: O(sqrt(MAX_N))
-//        runtime:    O(nlog(logn))
+//        runtime:    O(n + min(nlog(logn), MAX_N * log(log(MAX_N))))
 // Space: O(sqrt(MAX_N))
 
 // number theory
