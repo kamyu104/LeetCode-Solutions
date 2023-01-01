@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2519%20%2F%202519-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2523%20%2F%202523-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -817,6 +817,9 @@
 2481 | [Minimum Cuts to Divide a Circle](https://leetcode.com/problems/minimum-cuts-to-divide-a-circle/) | [C++](./C++/minimum-cuts-to-divide-a-circle.cpp) [Python](./Python/minimum-cuts-to-divide-a-circle.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 2485 | [Find the Pivot Integer](https://leetcode.com/problems/find-the-pivot-integer/) | [C++](./C++/find-the-pivot-integer.cpp) [Python](./Python/find-the-pivot-integer.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 2514 | [Count Anagrams](https://leetcode.com/problems/count-anagrams/) | [C++](./C++/count-anagrams.cpp) [Python](./Python/count-anagrams.py) | _O(n)_   | _O(n)_        | Hard         | | Math, Combinatorics
+2520 | [Count the Digits That Divide a Number](https://leetcode.com/problems/count-the-digits-that-divide-a-number/) | [C++](./C++/count-the-digits-that-divide-a-number.cpp) [Python](./Python/count-the-digits-that-divide-a-number.py) | _O(logn)_   | _O(1)_        | Easy         | | Math
+2521 | [Distinct Prime Factors of Product of Array](https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/) | [C++](./C++/distinct-prime-factors-of-product-of-array.cpp) [Python](./Python/distinct-prime-factors-of-product-of-array.py) | precompute: _O(sqrt(MAX_N))_<br>runtime: O(nlogn)   | _O(sqrt(MAX_N))_        | Medium         | | Number Theory, `Linear Sieve of Eratosthenes`
+2523 | [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/) | [C++](./C++/closest-prime-numbers-in-range.cpp) [Python](./Python/closest-prime-numbers-in-range.py) | precompute: _O(MAX_N * log(MAX_N))_<br>runtime: O(log(MAX_N))   | _O(MAX_N)_        | Medium         | | Number Theory, `Linear Sieve of Eratosthenes`, Segment Tree
 
 <br/>
 <div align="right">
@@ -1509,6 +1512,7 @@
 2486 | [Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/) | [C++](./C++/append-characters-to-string-to-make-subsequence.cpp) [Python](./Python/append-characters-to-string-to-make-subsequence.py) | _O(n)_   | _O(1)_        | Medium         | | Two Pointers, Greedy
 2498 | [Frog Jump II](https://leetcode.com/problems/frog-jump-ii/) | [C++](./C++/frog-jump-ii.cpp) [Python](./Python/frog-jump-ii.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 2499 | [Minimum Total Cost to Make Arrays Unequal](https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal/) | [C++](./C++/minimum-total-cost-to-make-arrays-unequal.cpp) [Python](./Python/minimum-total-cost-to-make-arrays-unequal.py) | _O(n)_   | _O(n)_        | Hard         | | Greedy
+2522 | [Partition String Into Substrings With Values at Most K](https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal/) | [C++](./C++/partition-string-into-substrings-with-values-at-most-k.cpp) [Python](./Python/partition-string-into-substrings-with-values-at-most-k.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 
 <br/>
 <div align="right">
