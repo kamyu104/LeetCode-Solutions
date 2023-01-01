@@ -47,6 +47,7 @@ def linear_sieve_of_eratosthenes(n):
             spf[i*p] = p
     return primes  # len(primes) = O(n/(logn-1)), reference: https://math.stackexchange.com/questions/264544/how-to-find-number-of-prime-numbers-up-to-to-n
 
+
 MAX_N = 10**6
 PRIMES = linear_sieve_of_eratosthenes(MAX_N)
 ST = SegmentTree(len(PRIMES)-1,
