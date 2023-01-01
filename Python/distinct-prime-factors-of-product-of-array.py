@@ -1,5 +1,5 @@
 # Time:  precompute: O(sqrt(MAX_N))
-#        runtime:    O(nlogn)
+#        runtime:    O(nlog(logn))
 # Space: O(sqrt(MAX_N))
 
 # number theory
@@ -26,7 +26,7 @@ class Solution(object):
         :rtype: int
         """
         result = set()
-        for x in nums:
+        for x in set(nums):  # Time: O(n/p1 + n/p2 + ... + n/pk) = O(n * (1/p1 + 1/p2 + ... + 1/pk)) = O(nlog(logn))
             for p in PRIMES:
                 if p > x:
                     break
