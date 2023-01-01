@@ -55,6 +55,26 @@ class Solution3(object):
         :type height: List[int]
         :rtype: int
         """
+        right = [0]*len(height)
+        mx = 0
+        for i in reversed(xrange(len(height))):
+            right[i] = mx
+            mx = max(mx, height[i])
+        result = left = 0
+        for i in xrange(len(height)):
+            left = max(left, height[i])
+            result += max(min(left, right[i])-height[i], 0)
+        return result
+
+
+# Time:  O(n)
+# Space: O(n)
+class Solution4(object):
+    def trap(self, height):
+        """
+        :type height: List[int]
+        :rtype: int
+        """
         result = 0
         stk = []
         for i in xrange(len(height)):
@@ -67,4 +87,3 @@ class Solution3(object):
                 result += (height[i] - prev) * (i - stk[-1] - 1)
             stk.append(i)
         return result
-
