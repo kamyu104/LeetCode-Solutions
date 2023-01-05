@@ -15,7 +15,7 @@ class Solution(object):
         MOD = 10**9+7
         def powmod(n, p):
             if (n, p) not in lookup:
-                lookup[n, p] = (lookup[n, p-1]*n)%MOD if p >= 2 else n%MOD
+                lookup[n, p] = (lookup[n, p-1]*n)%MOD if p >= 2 else n%MOD  # assumed powmod(n, p-1) was accessed before powmod(n, p)
             return lookup[n, p]
 
         cnt = collections.Counter()
