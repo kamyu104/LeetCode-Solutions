@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// two pointers, freq table, hash table
+// two pointers, sliding window, freq table, hash table
 class Solution {
 public:
     int maxFrequencyScore(vector<int>& nums, int k) {
@@ -40,7 +40,7 @@ public:
 
 // Time:  O(n)
 // Space: O(n)
-// two pointers, freq table
+// two pointers, sliding window, freq table
 class Solution2 {
 public:
     int maxFrequencyScore(vector<int>& nums, int k) {
