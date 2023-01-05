@@ -13,14 +13,14 @@ class Solution(object):
         :rtype: int
         """
         MOD = 10**9+7
+        lookup = {}
         def powmod(n, p):
             if (n, p) not in lookup:
                 lookup[n, p] = (lookup[n, p-1]*n)%MOD if p >= 2 else n%MOD  # assumed powmod(n, p-1) was accessed before powmod(n, p)
             return lookup[n, p]
 
-        cnt = collections.Counter()
-        lookup = {}
         result = curr = 0
+        cnt = collections.Counter()
         for i in xrange(len(nums)):
             if i >= k:
                 curr = (curr-powmod(nums[i-k], cnt[nums[i-k]]))%MOD
@@ -50,8 +50,8 @@ class Solution2(object):
         :rtype: int
         """
         MOD = 10**9+7
-        cnt = collections.Counter()
         result = curr = 0
+        cnt = collections.Counter()
         for i in xrange(len(nums)):
             if i >= k:
                 curr = (curr-pow(nums[i-k], cnt[nums[i-k]], MOD))%MOD
