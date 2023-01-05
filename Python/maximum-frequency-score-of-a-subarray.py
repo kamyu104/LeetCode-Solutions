@@ -4,7 +4,7 @@
 import collections
 
 
-# two pointers, freq table, hash table
+# two pointers, sliding window freq table, hash table
 class Solution(object):
     def maxFrequencyScore(self, nums, k):
         """
@@ -41,7 +41,7 @@ class Solution(object):
 import collections
 
 
-# two pointers, freq table
+# two pointers, sliding window, freq table
 class Solution2(object):
     def maxFrequencyScore(self, nums, k):
         """
