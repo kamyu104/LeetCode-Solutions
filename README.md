@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2523%20%2F%202523-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2524%20%2F%202524-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -953,6 +953,7 @@
 2465 | [Number of Distinct Averages](https://leetcode.com/problems/number-of-distinct-averages/) | [C++](./C++/number-of-distinct-averages.cpp) [Python](./Python/number-of-distinct-averages.py) | _O(nlogn)_ | _O(n)_ | Easy | | Two Pointers, Hash Table |
 2511 | [Maximum Enemy Forts That Can Be Captured](https://leetcode.com/problems/maximum-enemy-forts-that-can-be-captured/) | [C++](./C++/maximum-enemy-forts-that-can-be-captured.cpp) [Python](./Python/maximum-enemy-forts-that-can-be-captured.py) | _O(n)_ | _O(1)_ | Easy | | Array, Two Pointers |
 2516 | [Take K of Each Character From Left and Right](https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/) | [C++](./C++/take-k-of-each-character-from-left-and-right.cpp) [Python](./Python/take-k-of-each-character-from-left-and-right.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window, Two Pointers |
+2524 | [Maximum Frequency Score of a Subarray](https://leetcode.com/problems/maximum-frequency-score-of-a-subarray/) | [C++](./C++/maximum-frequency-score-of-a-subarray.cpp) [Python](./Python/maximum-frequency-score-of-a-subarray.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Sliding Window, Two Pointers, Freq Table, Hash Table |
 
 <br/>
 <div align="right">
