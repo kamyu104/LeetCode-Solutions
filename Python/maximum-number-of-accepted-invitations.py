@@ -146,10 +146,10 @@ class Solution2(object):
         :rtype: int
         """
         def augment(grid, u, lookup, match):
-            lookup.add(u)
             for v in xrange(V):
-                if not get_grid(u, v) or (v in match and match[v] in lookup):
+                if not get_grid(u, v) or v in lookup:
                     continue
+                lookup.add(v)
                 if v not in match or augment(grid, match[v], lookup, match):
                     match[v] = u  # greedily match
                     return True
