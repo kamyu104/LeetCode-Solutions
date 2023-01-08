@@ -223,11 +223,11 @@ private:
     bool augment(const vector<vector<int>>& grid, int u,
                  unordered_set<int> *lookup,
                  unordered_map<int, int> *match) {
-        lookup->emplace(u);
         for (int v = 0; v < max(size(grid), size(grid[0])); ++v) {
-            if (!get_grid(grid, u, v) || (match->count(v) && lookup->count((*match)[v]))) {
+            if (!get_grid(grid, u, v) || lookup->count(v)) {
                 continue;
             }
+            lookup->emplace(v);
             if (!match->count(v) || augment(grid, (*match)[v], lookup, match)) {
                 (*match)[v] = u;
                 return true;
