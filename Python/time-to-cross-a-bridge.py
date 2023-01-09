@@ -29,7 +29,7 @@ class Solution(object):
                 result += time[i][2]
                 heapq.heappush(left_ware, (result+time[i][3], i))
                 n -= 1
-            elif left_bridge and n > len(right_ware):
+            elif left_bridge and n-len(right_ware):
                 _, i = heapq.heappop(left_bridge)
                 i = -i
                 result += time[i][0]
