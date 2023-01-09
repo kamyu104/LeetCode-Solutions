@@ -1,7 +1,7 @@
-// Time:  O(nlogn)
-// Space: O(n)
+// Time:  O(k + nlogk)
+// Space: O(k)
 
-// heap
+// heap, simulation
 class Solution {
 public:
     int findCrossingTime(int n, int k, vector<vector<int>>& time) {
