@@ -519,7 +519,7 @@
 2402 | [Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/) | [C++](./C++/meeting-rooms-iii.cpp) [Python](./Python/meeting-rooms-iii.py) | _O(mlogm + n + mlogn)_ | _O(n)_ | Hard | | Heap |
 2462 | [Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/) | [C++](./C++/total-cost-to-hire-k-workers.cpp) [Python](./Python/total-cost-to-hire-k-workers.py) | _O(c + klogc)_ | _O(c)_ | Medium | | Heap, Two Pointers |
 2519 | [Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/) | [C++](./C++/count-the-number-of-k-big-indices.cpp) [Python](./Python/count-the-number-of-k-big-indices.py) | _O(nlogk)_ | _O(n)_ | Hard | 🔒 | Heap, Ordered Set, Sorted List |
-2530 | [Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) | [C++](./C++/maximal-score-after-applying-k-operations.cpp) [Python](./Python/maximal-score-after-applying-k-operations.py) | _O(n + klogn)_ | _O(n)_ | Medium | | Heap |
+2530 | [Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) | [C++](./C++/maximal-score-after-applying-k-operations.cpp) [Python](./Python/maximal-score-after-applying-k-operations.py) | _O(n + klogn)_ | _O(n)_ | Medium | | Heap, Simulation |
 2532 | [Time to Cross a Bridge](https://leetcode.com/problems/time-to-cross-a-bridge/) | [C++](./C++/time-to-cross-a-bridge.cpp) [Python](./Python/time-to-cross-a-bridge.py) | _O(k + nlogk)_ | _O(k)_ | Hard | | Heap, Simulation |
 
 <br/>
