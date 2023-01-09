@@ -35,14 +35,14 @@ public:
                 if (curr >= target) {
                     continue;
                 }
-                const auto d = target - curr;
-                if (d > cnt) {
+                const auto diff = target - curr;
+                if (diff > cnt) {
                     return false;
                 }
-                cnt -= d;
-                curr += d;
+                cnt -= diff;
+                curr += diff;
                 if (i + r < size(arr)) {
-                    arr[i + r] += d;
+                    arr[i + r] += diff;
                 }
             }
             return true;
