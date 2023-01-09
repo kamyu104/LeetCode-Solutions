@@ -26,7 +26,7 @@ public:
                 result += time[i][2];
                 left_ware.emplace(result + time[i][3], i);
                 --n;
-            } else if (!empty(left_bridge) && n > size(right_ware)) {
+            } else if (!empty(left_bridge) && n - size(right_ware)) {
                 const auto [_, i] = left_bridge.top(); left_bridge.pop();
                 result += time[i][0];
                 right_ware.emplace(result + time[i][1], i);
