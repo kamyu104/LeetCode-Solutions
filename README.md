@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2524%20%2F%202524-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2532%20%2F%202532-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -114,6 +114,7 @@
 2425 | [Bitwise XOR of All Pairings](https://leetcode.com/problems/bitwise-xor-of-all-pairings/) | [C++](./C++/bitwise-xor-of-all-pairings.cpp) [Python](./Python/bitwise-xor-of-all-pairings.py) | _O(n)_ | _O(1)_ | Medium || Bit Manipulation
 2429 | [Minimize XOR](https://leetcode.com/problems/minimize-xor/) | [C++](./C++/minimize-xor.cpp) [Python](./Python/minimize-xor.py) | _O(logn)_ | _O(1)_ | Medium || Bit Manipulation, Greedy
 2505 | [Bitwise OR of All Subsequence Sums](https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/) | [C++](./C++/bitwise-or-of-all-subsequence-sums.cpp) [Python](./Python/bitwise-or-of-all-subsequence-sums.py) | _O(n)_ | _O(1)_ | Medium |🔒| Bit Manipulation
+2527 | [Find Xor-Beauty of Array](https://leetcode.com/problems/find-xor-beauty-of-array/) | [C++](./C++/find-xor-beauty-of-array.cpp) [Python](./Python/find-xor-beauty-of-array.py) | _O(n)_ | _O(1)_ | Medium | | Bit Manipulation, Math
 
 <br/>
 <div align="right">
@@ -518,6 +519,8 @@
 2402 | [Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/) | [C++](./C++/meeting-rooms-iii.cpp) [Python](./Python/meeting-rooms-iii.py) | _O(mlogm + n + mlogn)_ | _O(n)_ | Hard | | Heap |
 2462 | [Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/) | [C++](./C++/total-cost-to-hire-k-workers.cpp) [Python](./Python/total-cost-to-hire-k-workers.py) | _O(c + klogc)_ | _O(c)_ | Medium | | Heap, Two Pointers |
 2519 | [Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/) | [C++](./C++/count-the-number-of-k-big-indices.cpp) [Python](./Python/count-the-number-of-k-big-indices.py) | _O(nlogk)_ | _O(n)_ | Hard | 🔒 | Heap, Ordered Set, Sorted List |
+2530 | [Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) | [C++](./C++/maximal-score-after-applying-k-operations.cpp) [Python](./Python/maximal-score-after-applying-k-operations.py) | _O(n + klogn)_ | _O(n)_ | Medium | | Heap |
+2532 | [Time to Cross a Bridge](https://leetcode.com/problems/time-to-cross-a-bridge/) | [C++](./C++/time-to-cross-a-bridge.cpp) [Python](./Python/time-to-cross-a-bridge.py) | _O(k + nlogk)_ | _O(k)_ | Hard | | Heap, Simulation |
 
 <br/>
 <div align="right">
@@ -665,6 +668,7 @@
 2491 | [Divide Players Into Teams of Equal Skill](https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/) | [C++](./C++/divide-players-into-teams-of-equal-skill.cpp) [Python](./Python/divide-players-into-teams-of-equal-skill.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
 2501 | [Longest Square Streak in an Array](https://leetcode.com/problems/longest-square-streak-in-an-array/) | [C++](./C++/longest-square-streak-in-an-array.cpp) [Python](./Python/longest-square-streak-in-an-array.py) | _O(nlogn)_ | _O(n)_ | Medium | | Hash Table, DP
 2506 | [Count Pairs Of Similar Strings](https://leetcode.com/problems/count-pairs-of-similar-strings/) | [C++](./C++/count-pairs-of-similar-strings.cpp) [Python](./Python/count-pairs-of-similar-strings.py) | _O(n * l)_ | _O(n)_ | Easy | | Freq Table, Bitmask
+2531 | [Make Number of Distinct Characters Equal](https://leetcode.com/problems/make-number-of-distinct-characters-equal/) | [C++](./C++/make-number-of-distinct-characters-equal.cpp) [Python](./Python/make-number-of-distinct-characters-equal.py) | _O(m + n)_ | _O(1)_ | Medium | | Freq Table
 
 <br/>
 <div align="right">
@@ -819,7 +823,8 @@
 2514 | [Count Anagrams](https://leetcode.com/problems/count-anagrams/) | [C++](./C++/count-anagrams.cpp) [Python](./Python/count-anagrams.py) | _O(n)_   | _O(n)_        | Hard         | | Math, Combinatorics
 2520 | [Count the Digits That Divide a Number](https://leetcode.com/problems/count-the-digits-that-divide-a-number/) | [C++](./C++/count-the-digits-that-divide-a-number.cpp) [Python](./Python/count-the-digits-that-divide-a-number.py) | _O(logn)_   | _O(1)_        | Easy         | | Math
 2521 | [Distinct Prime Factors of Product of Array](https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/) | [C++](./C++/distinct-prime-factors-of-product-of-array.cpp) [Python](./Python/distinct-prime-factors-of-product-of-array.py) | precompute: _O(sqrt(MAX_N))_<br>runtime: _O(m + nlog(logn))_   | _O(sqrt(MAX_N))_        | Medium         | | Number Theory, `Linear Sieve of Eratosthenes`
-2523 | [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/) | [C++](./C++/closest-prime-numbers-in-range.cpp) [Python](./Python/closest-prime-numbers-in-range.py) | precompute: _O(MAX_N * log(MAX_N))_<br>runtime: O(log(MAX_N))   | _O(MAX_N)_        | Medium         | | Number Theory, `Linear Sieve of Eratosthenes`, Segment Tree
+2523 | [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/) | [C++](./C++/closest-prime-numbers-in-range.cpp) [Python](./Python/closest-prime-numbers-in-range.py) | precompute: _O(MAX_N * log(MAX_N))_<br>runtime: _O(log(MAX_N))_   | _O(MAX_N)_        | Medium         | | Number Theory, `Linear Sieve of Eratosthenes`, Segment Tree
+2525 | [Categorize Box According to Criteria](https://leetcode.com/problems/categorize-box-according-to-criteria/) | [C++](./C++/categorize-box-according-to-criteria.cpp) [Python](./Python/categorize-box-according-to-criteria.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 
 <br/>
 <div align="right">
@@ -1022,6 +1027,8 @@
 2476 | [Closest Nodes Queries in a Binary Search Tree](https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/) | [C++](./C++/closest-nodes-queries-in-a-binary-search-tree.cpp) [Python](./Python/closest-nodes-queries-in-a-binary-search-tree.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | DFS, Binary Search |
 2513 | [Minimize the Maximum of Two Arrays](https://leetcode.com/problems/minimize-the-maximum-of-two-arrays/) | [C++](./C++/minimize-the-maximum-of-two-arrays.cpp) [Python](./Python/minimize-the-maximum-of-two-arrays.py) | _O(log(min(d1, d2)))_ | _O(1)_ | Medium | | Number Theory, Binary Search |
 2517 | [Maximum Tastiness of Candy Basket](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/) | [C++](./C++/maximum-tastiness-of-candy-basket.cpp) [Python](./Python/maximum-tastiness-of-candy-basket.py) | _O(nlogr)_ | _O(1)_ | Medium | | Binary Search, Greedy |
+2528 | [Maximize the Minimum Powered City](https://leetcode.com/problems/maximize-the-minimum-powered-city/) | [C++](./C++/maximize-the-minimum-powered-city.cpp) [Python](./Python/maximize-the-minimum-powered-city.py) | _O(nlogk)_ | _O(n)_ | Hard | | Binary Search, Sliding Window, Greedy |
+2529 | [Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/) | [C++](./C++/maximum-count-of-positive-integer-and-negative-integer.cpp) [Python](./Python/maximum-count-of-positive-integer-and-negative-integer.py) | _O(logn)_ | _O(1)_ | Easy | | Binary Search |
 
 <br/>
 <div align="right">
@@ -1668,6 +1675,7 @@
 2408 | [Design SQL](https://leetcode.com/problems/design-sql/) | [C++](./C++/design-sql.cpp) [Python](./Python/design-sql.py) | ctor: _O(t * max_m)_<br>insertRow: _O(m)_<br>deleteRow: _O(1)_<br>selectCell: _O(m)_ | _O(d)_ | Medium | 🔒 | Hash Table
 2424 | [Longest Uploaded Prefix](https://leetcode.com/problems/longest-uploaded-prefix/) | [C++](./C++/longest-uploaded-prefix.cpp) [Python](./Python/longest-uploaded-prefix.py) | ctor: _O(1)_<br>upload: _O(1)_, amortized <br>longest: _O(1)_ | _O(n)_ | Medium | | Hash Table
 2502 | [Design Memory Allocator](https://leetcode.com/problems/design-memory-allocator/) | [C++](./C++/design-memory-allocator.cpp) [Python](./Python/design-memory-allocator.py) | ctor: _O(1)_<br>allocate: _O(logn)_<br>free: _O(logn)_ | _O(n)_ | Medium | | Sorted List
+2526 | [Find Consecutive Integers from a Data Stream](https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream/) | [C++](./C++/find-consecutive-integers-from-a-data-stream.cpp) [Python](./Python/find-consecutive-integers-from-a-data-stream.py) | _O(1)_ | _O(1)_ | Medium | | Array
 
 <br/>
 <div align="right">
