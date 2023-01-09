@@ -4,7 +4,7 @@
 import heapq
 
 
-# heap
+# heap, simulation
 class Solution(object):
     def findCrossingTime(self, n, k, time):
         """
