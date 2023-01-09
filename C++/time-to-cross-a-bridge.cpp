@@ -31,7 +31,7 @@ public:
                 result += time[i][0];
                 right_ware.emplace(result + time[i][1], i);
             } else {
-                result = min(!empty(left_ware) && n > size(right_ware) ? left_ware.top().first : numeric_limits<int>::max(),
+                result = min(!empty(left_ware) ? left_ware.top().first : numeric_limits<int>::max(),
                              !empty(right_ware) ? right_ware.top().first : numeric_limits<int>::max());
             }
         }
