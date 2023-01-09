@@ -35,6 +35,6 @@ class Solution(object):
                 result += time[i][0]
                 heapq.heappush(right_ware, (result+time[i][1], i))
             else:
-                result = min(left_ware[0][0] if left_ware and n > len(right_ware) else float("inf"),
+                result = min(left_ware[0][0] if left_ware else float("inf"),
                              right_ware[0][0] if right_ware else float("inf"))
         return result
