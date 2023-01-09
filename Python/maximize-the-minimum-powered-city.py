@@ -32,13 +32,13 @@ class Solution(object):
                     curr -= arr[i-(r+1)]
                 if curr >= target:
                     continue
-                d = target-curr
-                if d > cnt:
+                diff = target-curr
+                if diff > cnt:
                     return False
-                cnt -= d
-                curr += d
+                cnt -= diff
+                curr += diff
                 if i+r < len(arr):
-                    arr[i+r] += d
+                    arr[i+r] += diff
             return True
 
         mn = min_power() 
