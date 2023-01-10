@@ -9,8 +9,8 @@ public:
         for (int i = 0; i < k; ++i) {
             workers.emplace_back(time[i][0] + time[i][2], i);
         }
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> left_ware, right_ware;
         priority_queue<pair<int, int>> left_bridge(cbegin(workers), cend(workers)), right_bridge;
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> left_ware, right_ware;
         int result = 0;
         while (n) {
             while (!empty(left_ware) && left_ware.top().first <= result) {
