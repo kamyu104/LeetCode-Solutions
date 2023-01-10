@@ -7,10 +7,10 @@ public:
     int findCrossingTime(int n, int k, vector<vector<int>>& time) {
         vector<pair<int, int>> workers;
         for (int i = 0; i < k; ++i) {
-            workers.emplace_back(0, i);
+            workers.emplace_back(time[i][0] + time[i][2], i);
         }
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> left_ware(cbegin(workers), cend(workers)), right_ware;
-        priority_queue<pair<int, int>> left_bridge, right_bridge;
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> left_ware, right_ware;
+        priority_queue<pair<int, int>> left_bridge(cbegin(workers), cend(workers)), right_bridge;
         int result = 0;
         while (n) {
             while (!empty(left_ware) && left_ware.top().first <= result) {
