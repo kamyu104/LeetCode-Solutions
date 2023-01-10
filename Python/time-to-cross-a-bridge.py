@@ -13,7 +13,7 @@ class Solution(object):
         :type time: List[List[int]]
         :rtype: int
         """
-        left_ware, left_bridge, right_bridge, right_ware = [], [(-(time[i][0]+time[i][2]), -i) for i in xrange(k)], [], []
+        left_bridge, right_ware, right_bridge, left_ware = [(-(time[i][0]+time[i][2]), -i) for i in xrange(k)], [], [], []
         heapq.heapify(left_bridge)
         result = 0
         while n:
