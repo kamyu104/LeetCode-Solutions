@@ -27,9 +27,9 @@ class Solution(object):
 
 
 # Time:  O(n), n = maxLength
-# Space: O(n)
+# Space: O(w), w = max(oneGroup, zeroGroup)+1
 # dp
-class Solution2(object):
+class Solution(object):
     def goodBinaryStrings(self, minLength, maxLength, oneGroup, zeroGroup):
         """
         :type minLength: int
@@ -39,13 +39,16 @@ class Solution2(object):
         :rtype: int
         """
         MOD = 10**9+7
-        dp = [0]*(maxLength+1)
+        result = 0
+        w = max(oneGroup, zeroGroup)+1
+        dp = [0]*w
         dp[0] = 1
         for i in xrange(maxLength+1):
-            if not dp[i]:
-                continue
-            if i+oneGroup < len(dp):
-                dp[i+oneGroup] = (dp[i+oneGroup]+dp[i])%MOD
-            if i+zeroGroup < len(dp):
-                dp[i+zeroGroup] = (dp[i+zeroGroup]+dp[i])%MOD
-        return reduce(lambda total, i: (total+dp[i])%MOD, xrange(minLength, maxLength+1), 0)
+            if i >= minLength:
+                result = (result+dp[i%w])%MOD
+            if i+oneGroup <= maxLength:
+                dp[(i+oneGroup)%w] = (dp[(i+oneGroup)%w]+dp[i%w])%MOD
+            if i+zeroGroup <= maxLength:
+                dp[(i+zeroGroup)%w] = (dp[(i+zeroGroup)%w]+dp[i%w])%MOD
+            dp[i%w] = 0
+        return result
