@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2532%20%2F%202532-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2533%20%2F%202533-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1345,6 +1345,7 @@
 2495 | [Number of Subarrays Having Even Product](https://leetcode.com/problems/number-of-subarrays-having-even-product/)| [C++](./C++/number-of-subarrays-having-even-product.cpp) [Python](./Python/number-of-subarrays-having-even-product.py) | _O(n)_    | _O(1)_          | Medium           | 🔒 | DP, Math
 2510 | [Check if There is a Path With Equal Number of 0's And 1's](https://leetcode.com/problems/check-if-there-is-a-path-with-equal-number-of-0s-and-1s/)| [C++](./C++/check-if-there-is-a-path-with-equal-number-of-0s-and-1s.cpp) [Python](./Python/check-if-there-is-a-path-with-equal-number-of-0s-and-1s.py) | _O(m * n)_    | _O(n)_          | Medium           | 🔒 | DP
 2518 | [Number of Great Partitions](https://leetcode.com/problems/number-of-great-partitions/)| [C++](./C++/number-of-great-partitions.cpp) [Python](./Python/number-of-great-partitions.py) | _O(n * k)_    | _O(k)_          | Hard           | | Knapsack DP
+2533 | [Number of Good Binary Strings](https://leetcode.com/problems/number-of-good-binary-strings/)| [C++](./C++/number-of-good-binary-strings.cpp) [Python](./Python/number-of-good-binary-strings.py) | _O(n)_    | _O(w)_          | Medium           | 🔒 | DP
 
 <br/>
 <div align="right">
