@@ -19,9 +19,9 @@ class Solution(object):
                 result[q[direction[0]].popleft()] = curr[0]
                 curr[0] += 1
     
-        ENTERING, EXITING = range(2)
+        UNKNOWN, ENTERING, EXITING = range(-1, 1+1)
         result = [0]*len(arrival)
-        curr, direction = [float("-inf")], [EXITING]
+        curr, direction = [float("-inf")], [UNKNOWN]
         q = [collections.deque(), collections.deque()]
         for i, (a, s) in enumerate(itertools.izip(arrival, state)):
             go_until(a-1)
