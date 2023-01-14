@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2533%20%2F%202533-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2534%20%2F%202534-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -520,7 +520,6 @@
 2462 | [Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/) | [C++](./C++/total-cost-to-hire-k-workers.cpp) [Python](./Python/total-cost-to-hire-k-workers.py) | _O(c + klogc)_ | _O(c)_ | Medium | | Heap, Two Pointers |
 2519 | [Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/) | [C++](./C++/count-the-number-of-k-big-indices.cpp) [Python](./Python/count-the-number-of-k-big-indices.py) | _O(nlogk)_ | _O(n)_ | Hard | 🔒 | Heap, Ordered Set, Sorted List |
 2530 | [Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) | [C++](./C++/maximal-score-after-applying-k-operations.cpp) [Python](./Python/maximal-score-after-applying-k-operations.py) | _O(n + klogn)_ | _O(n)_ | Medium | | Heap, Simulation |
-2532 | [Time to Cross a Bridge](https://leetcode.com/problems/time-to-cross-a-bridge/) | [C++](./C++/time-to-cross-a-bridge.cpp) [Python](./Python/time-to-cross-a-bridge.py) | _O(k + nlogk)_ | _O(k)_ | Hard | | Heap, Simulation |
 
 <br/>
 <div align="right">
@@ -1613,6 +1612,8 @@
 2257 | [Count Unguarded Cells in the Grid](https://leetcode.com/problems/count-unguarded-cells-in-the-grid/) | [C++](./C++/count-unguarded-cells-in-the-grid.cpp) [Python](./Python/count-unguarded-cells-in-the-grid.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Array, Simulation
 2303 | [Calculate Amount Paid in Taxes](https://leetcode.com/problems/calculate-amount-paid-in-taxes/) | [C++](./C++/calculate-amount-paid-in-taxes.cpp) [Python](./Python/calculate-amount-paid-in-taxes.py) | _O(n)_ | _O(1)_ | Easy | | Simulation
 2507 | [Smallest Value After Replacing With Sum of Prime Factors](https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/) | [C++](./C++/smallest-value-after-replacing-with-sum-of-prime-factors.cpp) [Python](./Python/smallest-value-after-replacing-with-sum-of-prime-factors.py) | _O(s * logn)_ | _O(max_n^0.5)_ | Medium | | Number Theory, Simulation
+2532 | [Time to Cross a Bridge](https://leetcode.com/problems/time-to-cross-a-bridge/) | [C++](./C++/time-to-cross-a-bridge.cpp) [Python](./Python/time-to-cross-a-bridge.py) | _O(k + nlogk)_ | _O(k)_ | Hard | | Heap, Simulation |
+2534 | [Time Taken to Cross the Door](https://leetcode.com/problems/time-taken-to-cross-the-door/) | [C++](./C++/time-taken-to-cross-the-door.cpp) [Python](./Python/time-taken-to-cross-the-door.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Queue, Simulation |
 
 <br/>
 <div align="right">
