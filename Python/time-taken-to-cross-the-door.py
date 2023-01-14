@@ -21,7 +21,7 @@ class Solution(object):
     
         ENTERING, EXITING = range(2)
         result = [0]*len(arrival)
-        curr, direction = [0], [EXITING]
+        curr, direction = [float("-inf")], [EXITING]
         q = [collections.deque(), collections.deque()]
         for i, (a, s) in enumerate(itertools.izip(arrival, state)):
             go_until(a-1)
