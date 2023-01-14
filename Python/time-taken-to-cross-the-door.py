@@ -2,6 +2,7 @@
 # Space: O(n)
 
 import collections
+import itertools
 
 
 # queue, simulation
