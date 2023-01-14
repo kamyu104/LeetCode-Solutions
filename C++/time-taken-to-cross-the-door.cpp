@@ -5,9 +5,9 @@
 class Solution {
 public:
     vector<int> timeTaken(vector<int>& arrival, vector<int>& state) {
-        enum {ENTERING, EXITING};
+        enum {UNKNOWN = -1, ENTERING, EXITING};
         vector<int> result(size(arrival));
-        int curr = numeric_limits<int>::min(), direction = EXITING;
+        int curr = numeric_limits<int>::min(), direction = UNKNOWN;
         vector<queue<int>> q(2);
         const auto& go_until = [&](int t) {
             while (curr <= t && any_of(cbegin(q), cend(q), [](const auto& x) { return !empty(x); })) {
