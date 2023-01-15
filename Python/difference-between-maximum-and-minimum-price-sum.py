@@ -86,7 +86,7 @@ class Solution3(object):
         :rtype: int
         """
         def iter_dfs():
-            dp = [price[u] for u in xrange(n)]  # max_sum
+            dp = [0]*n  # max_sum
             stk = [(1, 0, -1)]
             while stk:
                 step, u, p = stk.pop()
@@ -97,6 +97,7 @@ class Solution3(object):
                             continue
                         stk.append((1, v, u))
                 elif step == 2:
+                    dp[u] = price[u]
                     for v in adj[u]:
                         if v == p:
                             continue
