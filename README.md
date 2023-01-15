@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2534%20%2F%202534-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2538%20%2F%202538-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -287,6 +287,8 @@
 2482 | [Difference Between Ones and Zeros in Row and Column](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/) | [C++](./C++/difference-between-ones-and-zeros-in-row-and-column.cpp) [Python](./Python/difference-between-ones-and-zeros-in-row-and-column.py) | _O(m * n)_   | _O(m + n)_        | Medium         | | Array
 2500 | [Delete Greatest Value in Each Row](https://leetcode.com/problems/delete-greatest-value-in-each-row/) | [C++](./C++/delete-greatest-value-in-each-row.cpp) [Python](./Python/delete-greatest-value-in-each-row.py) | _O(m * nlogn)_   | _O(1)_        | Easy         | | Array
 2515 | [Shortest Distance to Target String in a Circular Array](https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/) | [C++](./C++/shortest-distance-to-target-string-in-a-circular-array.cpp) [Python](./Python/shortest-distance-to-target-string-in-a-circular-array.py) | _O(n)_   | _O(1)_        | Easy         | | Array
+2535 | [Difference Between Element Sum and Digit Sum of an Array](https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/) | [C++](./C++/difference-between-element-sum-and-digit-sum-of-an-array.cpp) [Python](./Python/difference-between-element-sum-and-digit-sum-of-an-array.py) | _O(nlogr)_   | _O(1)_        | Easy         | | Array
+2536 | [Increment Submatrices by One](https://leetcode.com/problems/increment-submatrices-by-one/) | [C++](./C++/increment-submatrices-by-one.cpp) [Python](./Python/increment-submatrices-by-one.py) | _O(q + n^2)_   | _O(1)_        | Medium         | | Line Sweep, Difference Matrix, Difference Array
 
 <br/>
 <div align="right">
@@ -958,6 +960,7 @@
 2511 | [Maximum Enemy Forts That Can Be Captured](https://leetcode.com/problems/maximum-enemy-forts-that-can-be-captured/) | [C++](./C++/maximum-enemy-forts-that-can-be-captured.cpp) [Python](./Python/maximum-enemy-forts-that-can-be-captured.py) | _O(n)_ | _O(1)_ | Easy | | Array, Two Pointers |
 2516 | [Take K of Each Character From Left and Right](https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/) | [C++](./C++/take-k-of-each-character-from-left-and-right.cpp) [Python](./Python/take-k-of-each-character-from-left-and-right.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window, Two Pointers |
 2524 | [Maximum Frequency Score of a Subarray](https://leetcode.com/problems/maximum-frequency-score-of-a-subarray/) | [C++](./C++/maximum-frequency-score-of-a-subarray.cpp) [Python](./Python/maximum-frequency-score-of-a-subarray.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Sliding Window, Two Pointers, Freq Table, Hash Table |
+2537 | [Count the Number of Good Subarrays](https://leetcode.com/problems/count-the-number-of-good-subarrays/) | [C++](./C++/count-the-number-of-good-subarrays.cpp) [Python](./Python/count-the-number-of-good-subarrays.py) | _O(n)_ | _O(n)_ | Medium | | Sliding Window, Two Pointers |
 
 <br/>
 <div align="right">
@@ -1345,6 +1348,7 @@
 2510 | [Check if There is a Path With Equal Number of 0's And 1's](https://leetcode.com/problems/check-if-there-is-a-path-with-equal-number-of-0s-and-1s/)| [C++](./C++/check-if-there-is-a-path-with-equal-number-of-0s-and-1s.cpp) [Python](./Python/check-if-there-is-a-path-with-equal-number-of-0s-and-1s.py) | _O(m * n)_    | _O(n)_          | Medium           | 🔒 | DP
 2518 | [Number of Great Partitions](https://leetcode.com/problems/number-of-great-partitions/)| [C++](./C++/number-of-great-partitions.cpp) [Python](./Python/number-of-great-partitions.py) | _O(n * k)_    | _O(k)_          | Hard           | | Knapsack DP
 2533 | [Number of Good Binary Strings](https://leetcode.com/problems/number-of-good-binary-strings/)| [C++](./C++/number-of-good-binary-strings.cpp) [Python](./Python/number-of-good-binary-strings.py) | _O(n)_    | _O(w)_          | Medium           | 🔒 | DP
+2538 | [Difference Between Maximum and Minimum Price Sum](https://leetcode.com/problems/difference-between-maximum-and-minimum-price-sum/)| [C++](./C++/difference-between-maximum-and-minimum-price-sum.cpp) [Python](./Python/difference-between-maximum-and-minimum-price-sum.py) | _O(n)_    | _O(n)_          | Hard           | | DFS, Tree DP
 
 <br/>
 <div align="right">
