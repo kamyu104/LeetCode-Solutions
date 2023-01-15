@@ -9,7 +9,7 @@ public:
         unordered_map<int, int> cnt;
         for (int right = 0, left = 0; right < size(nums); ++right) {
             curr += cnt[nums[right]]++;
-            while (!(curr < k)) {
+            while (curr >= k) {
                 curr -= --cnt[nums[left++]];
             }
             result += left;
