@@ -17,20 +17,20 @@ public:
         if (!((bucket_cnt - 1) * k + count_if(cbegin(cnts), cend(cnts), [&](const auto& x) { return x.second == bucket_cnt; }) <= size(s))) {
             return "";
         }
-        vector<char> sorted_cnts;
+        vector<char> partial_sorted_cnts;
         for (const auto& [c, v] : cnts) {
             if (v == bucket_cnt) {
-                sorted_cnts.emplace_back(c);
+                partial_sorted_cnts.emplace_back(c);
             }
         }
         for (const auto& [c, v] : cnts) {
             if (v != bucket_cnt) {
-                sorted_cnts.emplace_back(c);
+                partial_sorted_cnts.emplace_back(c);
             }
         }
         string result(size(s), 0);
         int i = (size(s) - 1) % k;
-        for (const auto& c : sorted_cnts) {
+        for (const auto& c : partial_sorted_cnts) {
             for (int _ = 0; _ < cnts[c]; ++_) {
                 result[i] = c;
                 i += k;
