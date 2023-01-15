@@ -1,4 +1,4 @@
-// Time:  O(n + clogc)
+// Time:  O(n)
 // Space: O(c)
 
 class Solution {
