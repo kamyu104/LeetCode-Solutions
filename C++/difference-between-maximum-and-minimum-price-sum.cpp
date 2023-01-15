@@ -10,7 +10,6 @@ public:
             adj[e[0]].emplace_back(e[1]);
             adj[e[1]].emplace_back(e[0]);
         }
-        
         const auto& iter_dfs = [&]() {
             int64_t result = 0;
             using RET = vector<int64_t>;
