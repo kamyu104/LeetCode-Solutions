@@ -15,7 +15,7 @@ class Solution(object):
         bucket_cnt = max(cnts.itervalues())
         result = [0]*len(barcodes)
         i = (len(barcodes)-1)%k
-        for c in itertools.chain((c for c, v in cnts.iteritems() if v == bucket_cnt), sorted([c for c, v in cnts.iteritems() if v != bucket_cnt], key=lambda x: cnts[x])):
+        for c in itertools.chain((c for c, v in cnts.iteritems() if v == bucket_cnt), (c for c, v in cnts.iteritems() if v != bucket_cnt)):
             for _ in xrange(cnts[c]):
                 result[i] = c
                 i += k
