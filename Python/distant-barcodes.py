@@ -1,10 +1,35 @@
-# Time:  O(klogk), k is the number of distinct barcodes
+# Time:  O(n), k is the number of distinct barcodes
 # Space: O(k)
 
 import collections
 
 
 class Solution(object):
+    def rearrangeBarcodes(self, barcodes):
+        """
+        :type barcodes: List[int]
+        :rtype: List[int]
+        """
+        k = 2
+        cnts = collections.Counter(barcodes)
+        bucket_cnt = max(cnts.itervalues())
+        result = [0]*len(barcodes)
+        i = (len(barcodes)-1)%k
+        for c in itertools.chain((c for c, v in cnts.iteritems() if v == bucket_cnt), sorted([c for c, v in cnts.iteritems() if v != bucket_cnt], key=lambda x: cnts[x])):
+            for _ in xrange(cnts[c]):
+                result[i] = c
+                i += k
+                if i >= len(result):
+                    i = (i-1)%k
+        return result
+
+    
+# Time:  O(n + klogk), k is the number of distinct barcodes
+# Space: O(k)
+import collections
+
+
+class Solution2(object):
     def rearrangeBarcodes(self, barcodes):
         """
         :type barcodes: List[int]
