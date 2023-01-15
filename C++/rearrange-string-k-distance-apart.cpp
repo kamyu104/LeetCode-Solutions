@@ -44,8 +44,59 @@ public:
 };
 
 // Time:  O(n)
-// Space: O(n)
+// Space: O(c)
+// reference: https://codeforces.com/blog/entry/110184 1774B - Coloring
 class Solution2 {
+public:
+    string rearrangeString(string s, int k) {
+        if (!k) {
+            return s;
+        }
+        unordered_map<char, int> cnts;
+        for (const auto& c : s) {
+            ++cnts[c];
+        }
+        const int bucket_cnt = (size(s) + k - 1) / k;
+        const int mx = max_element(cbegin(cnts), cend(cnts), [](const auto& a, const auto& b) {
+            return a.second < b.second;
+        })->second;
+        if (!(mx <= bucket_cnt && count_if(cbegin(cnts), cend(cnts), [&](const auto& x) { return x.second == bucket_cnt; }) <= (size(s) - 1) % k + 1)) {
+            return "";
+        }
+        vector<char> partial_sorted_cnts;
+        for (const auto& [c, v] : cnts) {
+            if (v == bucket_cnt) {
+                partial_sorted_cnts.emplace_back(c);
+            }
+        }
+        for (const auto& [c, v] : cnts) {
+            if (v <= bucket_cnt - 2) {
+                partial_sorted_cnts.emplace_back(c);
+            }
+        }
+        for (const auto& [c, v] : cnts) {
+            if (v == bucket_cnt - 1) {
+                partial_sorted_cnts.emplace_back(c);
+            }
+        }
+        string result(size(s), 0);
+        int i = 0;
+        for (const auto& c : partial_sorted_cnts) {
+            for (int _ = 0; _ < cnts[c]; ++_) {
+                result[i] = c;
+                i += k;
+                if (i >= size(result)) {
+                    i = i % k + 1;
+                }
+            }
+        }
+        return result;
+    }
+};
+
+// Time:  O(n)
+// Space: O(n)
+class Solution3 {
 public:
     string rearrangeString(string s, int k) {
         unordered_map<char, int> cnts;
@@ -94,7 +145,7 @@ public:
 
 // Time:  O(nlogc), c is the count of unique characters.
 // Space: O(c)
-class Solution3 {
+class Solution4 {
 public:
     string rearrangeString(string s, int k) {
         if (k == 0) {
