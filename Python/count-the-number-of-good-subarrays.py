@@ -17,7 +17,7 @@ class Solution(object):
         for right in xrange(len(nums)):
             curr += cnt[nums[right]]
             cnt[nums[right]] += 1
-            while not curr < k:
+            while curr >= k:
                 cnt[nums[left]] -= 1
                 curr -= cnt[nums[left]]
                 left += 1
