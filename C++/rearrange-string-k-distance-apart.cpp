@@ -1,5 +1,5 @@
-// Time:  O(n)
-// Space: O(n)
+// Time:  O(n + clogc)
+// Space: O(c)
 
 class Solution {
 public:
@@ -39,7 +39,7 @@ public:
     }
 };
 
-// Time:  O(n)
+// Time:  O(n + clogc)
 // Space: O(n)
 class Solution2 {
 public:
