@@ -46,7 +46,7 @@ public:
 
 // Time:  O(n)
 // Space: O(n)
-// iterative dfs, tree dp
+// dfs, tree dp
 class Solution2 {
 public:
     long long maxOutput(int n, vector<vector<int>>& edges, vector<int>& price) {
