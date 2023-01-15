@@ -1,6 +1,9 @@
 # Time:  O(n + clogc)
 # Space: O(c)
 
+import collections
+
+
 class Solution(object):
     def rearrangeString(self, s, k):
         """
@@ -27,6 +30,9 @@ class Solution(object):
 
 # Time:  O(n + clogc)
 # Space: O(n)
+import collections
+
+
 class Solution2(object):
     def rearrangeString(self, s, k):
         """
