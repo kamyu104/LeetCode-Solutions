@@ -2,6 +2,32 @@
 # Space: O(n)
 
 class Solution(object):
+    def rearrangeString(self, s, k):
+        """
+        :type s: str
+        :type k: int
+        :rtype: str
+        """
+        if not k:
+            return s
+        cnts = collections.Counter(s)
+        bucket_cnt = max(cnts.itervalues())
+        if not ((bucket_cnt-1)*k+sum(x == bucket_cnt for x in cnts.itervalues()) <= len(s)):
+            return ""
+        result = [0]*len(s)
+        i = (len(s)-1)%k
+        for c in sorted(cnts.keys(), key=lambda x: cnts[x], reverse=True):
+            for _ in xrange(cnts[c]):
+                result[i] = c
+                i += k
+                if i >= len(result):
+                    i = (i-1)%k
+        return "".join(result)
+
+
+# Time:  O(n)
+# Space: O(n)
+class Solution2(object):
     def rearrangeString(self, str, k):
         """
         :type str: str
@@ -36,7 +62,7 @@ class Solution(object):
 # Space: O(c)
 from collections import Counter
 from heapq import heappush, heappop
-class Solution2(object):
+class Solution3(object):
     def rearrangeString(self, s, k):
         """
         :type str: str
