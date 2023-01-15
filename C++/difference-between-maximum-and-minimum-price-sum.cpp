@@ -28,7 +28,7 @@ public:
                     if (v == p) {
                         continue;
                     }
-                    const auto& new_ret = make_shared<RET>(vector<int64_t>{price[v], 0});
+                    const auto& new_ret = make_shared<RET>(vector<int64_t>{price[v], 0});  // [max_sum, max_sum_without_last_node]
                     stk.emplace_back(3, u, -1, -1, new_ret, ret);
                     stk.emplace_back(1, v, u, -1, nullptr, new_ret.get());
                 } else if (step == 3) {
@@ -57,7 +57,7 @@ public:
         }
         int64_t result = 0;
         const function<vector<int64_t>(int, int)> dfs = [&](int u, int p) {
-            vector<int64_t> dp = {price[u], 0};
+            vector<int64_t> dp = {price[u], 0};  // [max_sum, max_sum_without_last_node]
             for (const auto& v : adj[u]) {
                 if (v == p) {
                     continue;
