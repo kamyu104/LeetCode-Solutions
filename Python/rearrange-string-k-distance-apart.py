@@ -36,15 +36,15 @@ class Solution2(object):
         """
         cnts = collections.Counter(s)
         bucket_cnt = max(cnts.itervalues())
-        blocks = [[] for _ in xrange(bucket_cnt)]
+        buckets = [[] for _ in xrange(bucket_cnt)]
         i = 0
         for c in sorted(cnts.keys(), key=lambda x: cnts[x], reverse=True):
             for _ in xrange(cnts[c]):
-                blocks[i].append(c)
+                buckets[i].append(c)
                 i = (i+1) % max(cnts[c], bucket_cnt-1)
-        if any(len(blocks[i]) < k for i in xrange(bucket_cnt-1)):
+        if any(len(buckets[i]) < k for i in xrange(len(buckets)-1)):
             return ""
-        return "".join(map(lambda x : "".join(x), blocks))
+        return "".join(map(lambda x : "".join(x), buckets))
 
 
 # Time:  O(nlogc), c is the count of unique characters.
