@@ -18,12 +18,16 @@ public:
             return "";
         }
         vector<char> sorted_cnts;
-        for (const auto& [c, _] : cnts) {
-            sorted_cnts.emplace_back(c);
+        for (const auto& [c, v] : cnts) {
+            if (v == bucket_cnt) {
+                sorted_cnts.emplace_back(c);
+            }
         }
-        sort(begin(sorted_cnts), end(sorted_cnts), [&](const auto& a, const auto& b) {
-            return cnts[a] > cnts[b];
-        });
+        for (const auto& [c, v] : cnts) {
+            if (v != bucket_cnt) {
+                sorted_cnts.emplace_back(c);
+            }
+        }
         string result(size(s), 0);
         int i = (size(s) - 1) % k;
         for (const auto& c : sorted_cnts) {
