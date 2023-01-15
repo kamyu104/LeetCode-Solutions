@@ -2,6 +2,7 @@
 # Space: O(k)
 
 import collections
+import itertools
 
 
 class Solution(object):
