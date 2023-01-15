@@ -1,5 +1,5 @@
-# Time:  O(n)
-# Space: O(n)
+# Time:  O(n + clogc)
+# Space: O(c)
 
 class Solution(object):
     def rearrangeString(self, s, k):
@@ -25,7 +25,7 @@ class Solution(object):
         return "".join(result)
 
 
-# Time:  O(n)
+# Time:  O(n + clogc)
 # Space: O(n)
 class Solution2(object):
     def rearrangeString(self, s, k):
