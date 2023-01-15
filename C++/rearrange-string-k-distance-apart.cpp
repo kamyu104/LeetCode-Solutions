@@ -43,7 +43,7 @@ public:
     }
 };
 
-// Time:  O(n + clogc)
+// Time:  O(n)
 // Space: O(n)
 class Solution2 {
 public:
@@ -52,17 +52,28 @@ public:
         for (const auto& c : s) {
             ++cnts[c];
         }
-        vector<char> sorted_cnts;
-        for (const auto& [c, _] : cnts) {
-            sorted_cnts.emplace_back(c);
+        const int bucket_cnt = max_element(cbegin(cnts), cend(cnts), [](const auto& a, const auto& b) {
+            return a.second < b.second;
+        })->second;
+        vector<char> partial_sorted_cnts;
+        for (const auto& [c, v] : cnts) {
+            if (v == bucket_cnt) {
+                partial_sorted_cnts.emplace_back(c);
+            }
         }
-        sort(begin(sorted_cnts), end(sorted_cnts), [&](const auto& a, const auto& b) {
-            return cnts[a] > cnts[b];
-        });
-        const int bucket_cnt = cnts[sorted_cnts[0]];
+        for (const auto& [c, v] : cnts) {
+            if (v == bucket_cnt - 1) {
+                partial_sorted_cnts.emplace_back(c);
+            }
+        }
+        for (const auto& [c, v] : cnts) {
+            if (v <= bucket_cnt - 2) {
+                partial_sorted_cnts.emplace_back(c);
+            }
+        }
         vector<string> buckets(bucket_cnt);
         int i = 0;
-        for (const auto& c : sorted_cnts) {
+        for (const auto& c : partial_sorted_cnts) {
             for (int _ = 0; _ < cnts[c]; ++_) {
                 buckets[i].push_back(c);
                 i = (i + 1) % max(cnts[c], bucket_cnt - 1);
