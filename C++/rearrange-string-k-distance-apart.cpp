@@ -3,52 +3,53 @@
 
 class Solution {
 public:
-    string rearrangeString(string str, int k) {
-        int cnts [26] = {0};
-        for (int i = 0;  i < str.length(); ++i) {
-            ++cnts[str[i] - 'a'];
+    string rearrangeString(string s, int k) {
+        unordered_map<char, int> cnts;
+        for (const auto& c : s) {
+            ++cnts[c];
         }
-
-        vector<pair<int, char>> sorted_cnts;
-        for (int i = 0; i < 26; ++i) {
-            sorted_cnts.emplace_back(cnts[i], i + 'a');
+        vector<char> sorted_cnts;
+        for (const auto& [c, v] : cnts) {
+            sorted_cnts.emplace_back(c);
         }
-        sort(sorted_cnts.begin(), sorted_cnts.end(), greater<pair<int, char>>());
-
-        const auto max_cnt = sorted_cnts[0].first;
-        string blocks[max_cnt];
+        sort(begin(sorted_cnts), end(sorted_cnts), [&](const auto& a, const auto& b) {
+            return cnts[a] > cnts[b];
+        });
+        const int bucket_cnt = cnts[sorted_cnts[0]];
+        vector<string> buckets(bucket_cnt);
         int i = 0;
-        for (const auto& cnt : sorted_cnts) {
-            for (int j = 0; j < cnt.first; ++j) {
-                blocks[i].push_back(cnt.second);
-                i = (i + 1) % max(cnt.first, max_cnt - 1);
+        for (const auto& c : sorted_cnts) {
+            for (int _ = 0; _ < cnts[c]; ++_) {
+                
+                buckets[i].push_back(c);
+                i = (i + 1) % max(cnts[c], bucket_cnt - 1);
+                assert(i < size(buckets));
             }
         }
-
         string result;
-        for (int i = 0; i < max_cnt - 1; ++i) {
-            if (blocks[i].length() < k) {
+        for (int i = 0; i < size(buckets) - 1; ++i) {
+            if (buckets[i].length() < k) {
                 return "";
             } else {
-                result += blocks[i];
+                result += buckets[i];
             }
         }
-        result += blocks[max_cnt - 1];
+        result += buckets[bucket_cnt - 1];
         return result;
     }
 };
 
 // Time:  O(nlogc), c is the count of unique characters.
 // Space: O(c)
-class Solution2 {
+class Solution3 {
 public:
-    string rearrangeString(string str, int k) {
+    string rearrangeString(string s, int k) {
         if (k == 0) {
-            return str;
+            return s;
         }
 
         unordered_map<char, int> cnts;
-        for (const auto& c : str) {
+        for (const auto& c : s) {
             ++cnts[c];
         }
 
@@ -60,7 +61,7 @@ public:
         string result;
         while (!heap.empty()) {
             vector<pair<int, char>> used_cnt_chars;
-            int cnt = min(k, static_cast<int>(str.length() - result.length()));
+            int cnt = min(k, static_cast<int>(s.length() - result.length()));
             for (int i = 0; i < cnt; ++i) {
                 if (heap.empty()) {
                     return "";
