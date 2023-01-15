@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# iterative dfs
+# iterative dfs, tree dp
 class Solution(object):
     def maxOutput(self, n, edges, price):
         """
@@ -45,7 +45,7 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(n)
-# dfs
+# dfs, tree dp
 class Solution2(object):
     def maxOutput(self, n, edges, price):
         """
