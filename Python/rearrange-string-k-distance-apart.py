@@ -4,6 +4,7 @@
 import collections
 import itertools
 
+
 class Solution(object):
     def rearrangeString(self, s, k):
         """
@@ -28,9 +29,10 @@ class Solution(object):
         return "".join(result)
 
 
-# Time:  O(n + clogc)
+# Time:  O(n)
 # Space: O(n)
 import collections
+import itertools
 
 
 class Solution2(object):
@@ -44,7 +46,9 @@ class Solution2(object):
         bucket_cnt = max(cnts.itervalues())
         buckets = [[] for _ in xrange(bucket_cnt)]
         i = 0
-        for c in sorted(cnts.keys(), key=lambda x: cnts[x], reverse=True):
+        for c in itertools.chain((c for c, v in cnts.iteritems() if v == bucket_cnt),
+                                 (c for c, v in cnts.iteritems() if v == bucket_cnt-1),
+                                 (c for c, v in cnts.iteritems() if v <= bucket_cnt-2)):
             for _ in xrange(cnts[c]):
                 buckets[i].append(c)
                 i = (i+1) % max(cnts[c], bucket_cnt-1)
