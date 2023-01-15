@@ -26,7 +26,7 @@ class Solution(object):
                     v = adj[u][i]
                     if v == p:
                         continue
-                    new_ret = [price[v], 0]  # [max_path_sum, max_path_sum_without_last_price]
+                    new_ret = [price[v], 0]  # [max_path_sum, max_path_sum_without_last_node]
                     stk.append((3, (u, new_ret, ret)))
                     stk.append((1, (v, u, new_ret)))
                 elif step == 3:
@@ -55,7 +55,7 @@ class Solution2(object):
         :rtype: int
         """
         def dfs(u, p):
-            dp = [price[u], 0]  # [max_path_sum, max_path_sum_without_last_price]
+            dp = [price[u], 0]  # [max_path_sum, max_path_sum_without_last_node]
             for v in adj[u]:
                 if v == p:
                     continue
