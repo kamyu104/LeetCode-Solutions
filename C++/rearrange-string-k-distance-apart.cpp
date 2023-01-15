@@ -66,7 +66,7 @@ public:
         }
         string result;
         for (int i = 0; i < size(buckets) - 1; ++i) {
-            if (buckets[i].length() < k) {
+            if (size(buckets[i]) < k) {
                 return "";
             } else {
                 result += buckets[i];
