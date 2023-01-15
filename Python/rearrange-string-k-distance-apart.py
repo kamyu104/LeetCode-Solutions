@@ -1,8 +1,8 @@
-# Time:  O(n + clogc)
+# Time:  O(n)
 # Space: O(c)
 
 import collections
-
+import itertools
 
 class Solution(object):
     def rearrangeString(self, s, k):
@@ -19,7 +19,7 @@ class Solution(object):
             return ""
         result = [0]*len(s)
         i = (len(s)-1)%k
-        for c in sorted(cnts.keys(), key=lambda x: cnts[x], reverse=True):
+        for c in itertools.chain((c for c, v in cnts.iteritems() if v == bucket_cnt), (c for c, v in cnts.iteritems() if v != bucket_cnt)):
             for _ in xrange(cnts[c]):
                 result[i] = c
                 i += k
@@ -87,4 +87,3 @@ class Solution3(object):
                 heappush(heap, cnt_char)
 
         return "".join(result)
-
