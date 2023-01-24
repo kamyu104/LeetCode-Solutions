@@ -1533,7 +1533,7 @@
 2499 | [Minimum Total Cost to Make Arrays Unequal](https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal/) | [C++](./C++/minimum-total-cost-to-make-arrays-unequal.cpp) [Python](./Python/minimum-total-cost-to-make-arrays-unequal.py) | _O(n)_   | _O(n)_        | Hard         | | Greedy
 2522 | [Partition String Into Substrings With Values at Most K](https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal/) | [C++](./C++/partition-string-into-substrings-with-values-at-most-k.cpp) [Python](./Python/partition-string-into-substrings-with-values-at-most-k.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 2541 | [Minimum Operations to Make Array Equal II](https://leetcode.com/problems/minimum-operations-to-make-array-equal-ii/) | [C++](./C++/minimum-operations-to-make-array-equal-ii.cpp) [Python](./Python/minimum-operations-to-make-array-equal-ii.py) | _O(n)_ | _O(1)_ |  Medium | | Greedy
-2542 | [Maximum Subsequence Score](https://leetcode.com/problems/maximum-subsequence-score/) | [C++](./C++/maximum-subsequence-score.cpp) [Python](./Python/maximum-subsequence-score.py) | _O(nlogn)_ | _O(n)_ | Medium | variant of [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | Greedy |
+2542 | [Maximum Subsequence Score](https://leetcode.com/problems/maximum-subsequence-score/) | [C++](./C++/maximum-subsequence-score.cpp) [Python](./Python/maximum-subsequence-score.py) | _O(nlogn)_ | _O(n)_ | Medium | variant of [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | Greedy, Heap |
 
 <br/>
 <div align="right">
