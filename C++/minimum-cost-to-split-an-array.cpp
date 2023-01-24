@@ -8,7 +8,7 @@ public:
         vector<int> dp(size(nums) + 1, numeric_limits<int>::max());
         dp[0] = 0;
         for (int i = 0; i + 1 < size(dp); ++i) {
-            unordered_map<int, int> cnt;
+            vector<int> cnt(size(nums));
             int d = 0;
             for (int j = i + 1; j < size(dp); ++j) {
                 if (++cnt[nums[j - 1]] == 1) {
