@@ -22,5 +22,5 @@ class Solution(object):
             heapq.heappush(min_heap, s)
             if len(min_heap) > k:
                 s_sum -= heapq.heappop(min_heap)
-            result = max(result,s_sum*e)
+            result = max(result, s_sum*e)
         return result % MOD
