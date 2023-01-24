@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2538%20%2F%202538-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2547%20%2F%202547-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -826,6 +826,8 @@
 2521 | [Distinct Prime Factors of Product of Array](https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/) | [C++](./C++/distinct-prime-factors-of-product-of-array.cpp) [Python](./Python/distinct-prime-factors-of-product-of-array.py) | precompute: _O(sqrt(MAX_N))_<br>runtime: _O(m + nlog(logn))_   | _O(sqrt(MAX_N))_        | Medium         | | Number Theory, `Linear Sieve of Eratosthenes`
 2523 | [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/) | [C++](./C++/closest-prime-numbers-in-range.cpp) [Python](./Python/closest-prime-numbers-in-range.py) | precompute: _O(MAX_N * log(MAX_N))_<br>runtime: _O(log(MAX_N))_   | _O(MAX_N)_        | Medium         | | Number Theory, `Linear Sieve of Eratosthenes`, Segment Tree
 2525 | [Categorize Box According to Criteria](https://leetcode.com/problems/categorize-box-according-to-criteria/) | [C++](./C++/categorize-box-according-to-criteria.cpp) [Python](./Python/categorize-box-according-to-criteria.py) | _O(1)_   | _O(1)_        | Easy         | | Math
+2539 | [Count the Number of Good Subsequences](https://leetcode.com/problems/count-the-number-of-good-subsequences/) | [C++](./C++/count-the-number-of-good-subsequences.cpp) [Python](./Python/count-the-number-of-good-subsequences.py) | _O(26 * n)_   | _O(n)_        | Medium         | 🔒 | Combinatorics
+2543 | [Check if Point Is Reachable](https://leetcode.com/problems/check-if-point-is-reachable/) | [C++](./C++/check-if-point-is-reachable.cpp) [Python](./Python/check-if-point-is-reachable.py) | _O(log(min(a, b)))_   | _O(1)_        | Hard         | | Number Theory
 
 <br/>
 <div align="right">
@@ -961,6 +963,7 @@
 2516 | [Take K of Each Character From Left and Right](https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/) | [C++](./C++/take-k-of-each-character-from-left-and-right.cpp) [Python](./Python/take-k-of-each-character-from-left-and-right.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window, Two Pointers |
 2524 | [Maximum Frequency Score of a Subarray](https://leetcode.com/problems/maximum-frequency-score-of-a-subarray/) | [C++](./C++/maximum-frequency-score-of-a-subarray.cpp) [Python](./Python/maximum-frequency-score-of-a-subarray.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Sliding Window, Two Pointers, Freq Table, Hash Table |
 2537 | [Count the Number of Good Subarrays](https://leetcode.com/problems/count-the-number-of-good-subarrays/) | [C++](./C++/count-the-number-of-good-subarrays.cpp) [Python](./Python/count-the-number-of-good-subarrays.py) | _O(n)_ | _O(n)_ | Medium | | Sliding Window, Two Pointers |
+2540 | [Minimum Common Value](https://leetcode.com/problems/minimum-common-value/) | [C++](./C++/minimum-common-value.cpp) [Python](./Python/minimum-common-value.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers |
 
 <br/>
 <div align="right">
@@ -1525,6 +1528,8 @@
 2498 | [Frog Jump II](https://leetcode.com/problems/frog-jump-ii/) | [C++](./C++/frog-jump-ii.cpp) [Python](./Python/frog-jump-ii.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 2499 | [Minimum Total Cost to Make Arrays Unequal](https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal/) | [C++](./C++/minimum-total-cost-to-make-arrays-unequal.cpp) [Python](./Python/minimum-total-cost-to-make-arrays-unequal.py) | _O(n)_   | _O(n)_        | Hard         | | Greedy
 2522 | [Partition String Into Substrings With Values at Most K](https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal/) | [C++](./C++/partition-string-into-substrings-with-values-at-most-k.cpp) [Python](./Python/partition-string-into-substrings-with-values-at-most-k.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+2541 | [Minimum Operations to Make Array Equal II](https://leetcode.com/problems/minimum-operations-to-make-array-equal-ii/) | [C++](./C++/minimum-operations-to-make-array-equal-ii.cpp) [Python](./Python/minimum-operations-to-make-array-equal-ii.py) | _O(n)_ | _O(1)_ |  Medium | | Greedy
+2542 | [Maximum Subsequence Score](https://leetcode.com/problems/maximum-subsequence-score/) | [C++](./C++/maximum-subsequence-score.cpp) [Python](./Python/maximum-subsequence-score.py) | _O(nlogn)_ | _O(n)_ | Medium | variant of [[Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | Greedy |
 
 <br/>
 <div align="right">
