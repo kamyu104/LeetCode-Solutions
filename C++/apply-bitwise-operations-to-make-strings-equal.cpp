@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// constructive algorithm
+// constructive algorithms
 class Solution {
 public:
     bool makeStringsEqual(string s, string target) {
