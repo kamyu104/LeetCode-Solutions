@@ -421,6 +421,7 @@
 2416 | [Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/) | [C++](./C++/sum-of-prefix-scores-of-strings.cpp) [Python](./Python/sum-of-prefix-scores-of-strings.py) | _O(n * l)_   | _O(t)_        | Hard         | | Trie
 2490 | [Circular Sentence](https://leetcode.com/problems/circular-sentence/) | [C++](./C++/circular-sentence.cpp) [Python](./Python/circular-sentence.py) | _O(n)_   | _O(1)_        | Easy         | | String
 2496 | [Maximum Value of a String in an Array](https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/) | [C++](./C++/maximum-value-of-a-string-in-an-array.cpp) [Python](./Python/maximum-value-of-a-string-in-an-array.py) | _O(n * l)_   | _O(1)_        | Easy         | | String
+2546 | [Apply Bitwise Operations to Make Strings Equal](https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/) | [C++](./C++/apply-bitwise-operations-to-make-strings-equal.cpp) [Python](./Python/apply-bitwise-operations-to-make-strings-equal.py) | _O(n)_   | _O(1)_        | Medium         | | Constructive Algorithms
 
 <br/>
 <div align="right">
@@ -828,6 +829,7 @@
 2525 | [Categorize Box According to Criteria](https://leetcode.com/problems/categorize-box-according-to-criteria/) | [C++](./C++/categorize-box-according-to-criteria.cpp) [Python](./Python/categorize-box-according-to-criteria.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 2539 | [Count the Number of Good Subsequences](https://leetcode.com/problems/count-the-number-of-good-subsequences/) | [C++](./C++/count-the-number-of-good-subsequences.cpp) [Python](./Python/count-the-number-of-good-subsequences.py) | _O(26 * n)_   | _O(n)_        | Medium         | 🔒 | Combinatorics
 2543 | [Check if Point Is Reachable](https://leetcode.com/problems/check-if-point-is-reachable/) | [C++](./C++/check-if-point-is-reachable.cpp) [Python](./Python/check-if-point-is-reachable.py) | _O(log(min(a, b)))_   | _O(1)_        | Hard         | | Number Theory
+2544 | [Alternating Digit Sum](https://leetcode.com/problems/alternating-digit-sum/) | [C++](./C++/alternating-digit-sum.cpp) [Python](./Python/alternating-digit-sum.py) | _O(logn)_   | _O(1)_        | Easy         | | Math
 
 <br/>
 <div align="right">
@@ -887,6 +889,7 @@
 2418 | [Sort the People](https://leetcode.com/problems/sort-the-people/) | [C++](./C++/sort-the-people.cpp) [Python](./Python/sort-the-people.py) | _O(nlogn)_   | _O(n)_        | Easy         | | Sort
 2497 | [Maximum Star Sum of a Graph](https://leetcode.com/problems/maximum-star-sum-of-a-graph/) | [C++](./C++/maximum-star-sum-of-a-graph.cpp) [Python](./Python/maximum-star-sum-of-a-graph.py) | _O(n)_   | _O(n)_        | Medium         | | Sort, Quick Select
 2512 | [Reward Top K Students](https://leetcode.com/problems/reward-top-k-students/) | [C++](./C++/reward-top-k-students.cpp) [Python](./Python/reward-top-k-students.py) | _O(pf * l + nf * l + n * l + klogk)_   | _O(pf * l + nf * l + n)_        | Medium         | | Partial Sort, Quick Select
+2545 | [Sort the Students by Their Kth Score](https://leetcode.com/problems/sort-the-students-by-their-kth-score/) | [C++](./C++/sort-the-students-by-their-kth-score.cpp) [Python](./Python/sort-the-students-by-their-kth-score.py) | _O(mlogm)_   | _O(1)_        | Medium         | | Sort
 
 <br/>
 <div align="right">
@@ -1352,6 +1355,7 @@
 2518 | [Number of Great Partitions](https://leetcode.com/problems/number-of-great-partitions/)| [C++](./C++/number-of-great-partitions.cpp) [Python](./Python/number-of-great-partitions.py) | _O(n * k)_    | _O(k)_          | Hard           | | Knapsack DP
 2533 | [Number of Good Binary Strings](https://leetcode.com/problems/number-of-good-binary-strings/)| [C++](./C++/number-of-good-binary-strings.cpp) [Python](./Python/number-of-good-binary-strings.py) | _O(n)_    | _O(w)_          | Medium           | 🔒 | DP
 2538 | [Difference Between Maximum and Minimum Price Sum](https://leetcode.com/problems/difference-between-maximum-and-minimum-price-sum/)| [C++](./C++/difference-between-maximum-and-minimum-price-sum.cpp) [Python](./Python/difference-between-maximum-and-minimum-price-sum.py) | _O(n)_    | _O(n)_          | Hard           | | DFS, Tree DP
+2547 | [Minimum Cost to Split an Array](https://leetcode.com/problems/minimum-cost-to-split-an-array/)| [C++](./C++/minimum-cost-to-split-an-array.cpp) [Python](./Python/minimum-cost-to-split-an-array.py) | _O(n^2)_    | _O(n)_          | Hard           | | DP
 
 <br/>
 <div align="right">
@@ -1529,7 +1533,7 @@
 2499 | [Minimum Total Cost to Make Arrays Unequal](https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal/) | [C++](./C++/minimum-total-cost-to-make-arrays-unequal.cpp) [Python](./Python/minimum-total-cost-to-make-arrays-unequal.py) | _O(n)_   | _O(n)_        | Hard         | | Greedy
 2522 | [Partition String Into Substrings With Values at Most K](https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal/) | [C++](./C++/partition-string-into-substrings-with-values-at-most-k.cpp) [Python](./Python/partition-string-into-substrings-with-values-at-most-k.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 2541 | [Minimum Operations to Make Array Equal II](https://leetcode.com/problems/minimum-operations-to-make-array-equal-ii/) | [C++](./C++/minimum-operations-to-make-array-equal-ii.cpp) [Python](./Python/minimum-operations-to-make-array-equal-ii.py) | _O(n)_ | _O(1)_ |  Medium | | Greedy
-2542 | [Maximum Subsequence Score](https://leetcode.com/problems/maximum-subsequence-score/) | [C++](./C++/maximum-subsequence-score.cpp) [Python](./Python/maximum-subsequence-score.py) | _O(nlogn)_ | _O(n)_ | Medium | variant of [[Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | Greedy |
+2542 | [Maximum Subsequence Score](https://leetcode.com/problems/maximum-subsequence-score/) | [C++](./C++/maximum-subsequence-score.cpp) [Python](./Python/maximum-subsequence-score.py) | _O(nlogn)_ | _O(n)_ | Medium | variant of [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | Greedy |
 
 <br/>
 <div align="right">
