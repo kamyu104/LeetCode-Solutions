@@ -22,5 +22,5 @@ class Solution(object):
             if len(min_heap) > k:
                 curr -= heapq.heappop(min_heap)
             if len(min_heap) == k:
-                result = max(result,curr*b)
+                result = max(result, curr*b)
         return result
