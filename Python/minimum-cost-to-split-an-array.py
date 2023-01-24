@@ -15,7 +15,7 @@ class Solution(object):
         dp = [float("inf")]*(len(nums)+1)
         dp[0] = 0
         for i in xrange(len(dp)-1):
-            cnt = collections.Counter()
+            cnt = [0]*len(nums)
             d = 0
             for j in xrange(i+1, len(dp)):
                 cnt[nums[j-1]] += 1
