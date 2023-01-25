@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2538%20%2F%202538-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2547%20%2F%202547-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -421,6 +421,7 @@
 2416 | [Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/) | [C++](./C++/sum-of-prefix-scores-of-strings.cpp) [Python](./Python/sum-of-prefix-scores-of-strings.py) | _O(n * l)_   | _O(t)_        | Hard         | | Trie
 2490 | [Circular Sentence](https://leetcode.com/problems/circular-sentence/) | [C++](./C++/circular-sentence.cpp) [Python](./Python/circular-sentence.py) | _O(n)_   | _O(1)_        | Easy         | | String
 2496 | [Maximum Value of a String in an Array](https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/) | [C++](./C++/maximum-value-of-a-string-in-an-array.cpp) [Python](./Python/maximum-value-of-a-string-in-an-array.py) | _O(n * l)_   | _O(1)_        | Easy         | | String
+2546 | [Apply Bitwise Operations to Make Strings Equal](https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/) | [C++](./C++/apply-bitwise-operations-to-make-strings-equal.cpp) [Python](./Python/apply-bitwise-operations-to-make-strings-equal.py) | _O(n)_   | _O(1)_        | Medium         | | Constructive Algorithms
 
 <br/>
 <div align="right">
@@ -506,7 +507,6 @@
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 1046 | [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [C++](./C++/last-stone-weight.cpp) [Python](./Python/last-stone-weight.py) | _O(nlogn)_ | _O(n)_ | Easy |||
 1057 | [Campus Bikes](https://leetcode.com/problems/campus-bikes/) | [C++](./C++/campus-bikes.cpp) [Python](./Python/campus-bikes.py) |  _O((w * b) * log(w * b))_ | _O(w * b)_   | Medium |🔒||
-1383 | [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | [C++](./C++/maximum-performance-of-a-team.cpp) [Python](./Python/maximum-performance-of-a-team.py) | _O(nlogn)_ | _O(n)_ | Hard | variant of [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | Sort |
 1439 | [Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/) | [C++](./C++/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows.cpp) [Python](./Python/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows.py) | _O(m * klogk)_ | _O(k)_ | Hard || Binary Search |
 1606 | [Find Servers That Handled Most Number of Requests](https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/) | [C++](./C++/find-servers-that-handled-most-number-of-requests.cpp) [Python](./Python/find-servers-that-handled-most-number-of-requests.py) | _O(nlogk)_ | _O(k)_ | Hard | | Sorted List |
 1642 | [Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/) | [C++](./C++/furthest-building-you-can-reach.cpp) [Python](./Python/furthest-building-you-can-reach.py) | _O(nlogk)_ | _O(k)_ | Medium | | |
@@ -826,6 +826,9 @@
 2521 | [Distinct Prime Factors of Product of Array](https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/) | [C++](./C++/distinct-prime-factors-of-product-of-array.cpp) [Python](./Python/distinct-prime-factors-of-product-of-array.py) | precompute: _O(sqrt(MAX_N))_<br>runtime: _O(m + nlog(logn))_   | _O(sqrt(MAX_N))_        | Medium         | | Number Theory, `Linear Sieve of Eratosthenes`
 2523 | [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/) | [C++](./C++/closest-prime-numbers-in-range.cpp) [Python](./Python/closest-prime-numbers-in-range.py) | precompute: _O(MAX_N * log(MAX_N))_<br>runtime: _O(log(MAX_N))_   | _O(MAX_N)_        | Medium         | | Number Theory, `Linear Sieve of Eratosthenes`, Segment Tree
 2525 | [Categorize Box According to Criteria](https://leetcode.com/problems/categorize-box-according-to-criteria/) | [C++](./C++/categorize-box-according-to-criteria.cpp) [Python](./Python/categorize-box-according-to-criteria.py) | _O(1)_   | _O(1)_        | Easy         | | Math
+2539 | [Count the Number of Good Subsequences](https://leetcode.com/problems/count-the-number-of-good-subsequences/) | [C++](./C++/count-the-number-of-good-subsequences.cpp) [Python](./Python/count-the-number-of-good-subsequences.py) | _O(26 * n)_   | _O(n)_        | Medium         | 🔒 | Combinatorics
+2543 | [Check if Point Is Reachable](https://leetcode.com/problems/check-if-point-is-reachable/) | [C++](./C++/check-if-point-is-reachable.cpp) [Python](./Python/check-if-point-is-reachable.py) | _O(log(min(a, b)))_   | _O(1)_        | Hard         | | Number Theory
+2544 | [Alternating Digit Sum](https://leetcode.com/problems/alternating-digit-sum/) | [C++](./C++/alternating-digit-sum.cpp) [Python](./Python/alternating-digit-sum.py) | _O(logn)_   | _O(1)_        | Easy         | | Math
 
 <br/>
 <div align="right">
@@ -885,6 +888,7 @@
 2418 | [Sort the People](https://leetcode.com/problems/sort-the-people/) | [C++](./C++/sort-the-people.cpp) [Python](./Python/sort-the-people.py) | _O(nlogn)_   | _O(n)_        | Easy         | | Sort
 2497 | [Maximum Star Sum of a Graph](https://leetcode.com/problems/maximum-star-sum-of-a-graph/) | [C++](./C++/maximum-star-sum-of-a-graph.cpp) [Python](./Python/maximum-star-sum-of-a-graph.py) | _O(n)_   | _O(n)_        | Medium         | | Sort, Quick Select
 2512 | [Reward Top K Students](https://leetcode.com/problems/reward-top-k-students/) | [C++](./C++/reward-top-k-students.cpp) [Python](./Python/reward-top-k-students.py) | _O(pf * l + nf * l + n * l + klogk)_   | _O(pf * l + nf * l + n)_        | Medium         | | Partial Sort, Quick Select
+2545 | [Sort the Students by Their Kth Score](https://leetcode.com/problems/sort-the-students-by-their-kth-score/) | [C++](./C++/sort-the-students-by-their-kth-score.cpp) [Python](./Python/sort-the-students-by-their-kth-score.py) | _O(mlogm)_   | _O(1)_        | Medium         | | Sort
 
 <br/>
 <div align="right">
@@ -961,6 +965,7 @@
 2516 | [Take K of Each Character From Left and Right](https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/) | [C++](./C++/take-k-of-each-character-from-left-and-right.cpp) [Python](./Python/take-k-of-each-character-from-left-and-right.py) | _O(n)_ | _O(1)_ | Medium | | Sliding Window, Two Pointers |
 2524 | [Maximum Frequency Score of a Subarray](https://leetcode.com/problems/maximum-frequency-score-of-a-subarray/) | [C++](./C++/maximum-frequency-score-of-a-subarray.cpp) [Python](./Python/maximum-frequency-score-of-a-subarray.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Sliding Window, Two Pointers, Freq Table, Hash Table |
 2537 | [Count the Number of Good Subarrays](https://leetcode.com/problems/count-the-number-of-good-subarrays/) | [C++](./C++/count-the-number-of-good-subarrays.cpp) [Python](./Python/count-the-number-of-good-subarrays.py) | _O(n)_ | _O(n)_ | Medium | | Sliding Window, Two Pointers |
+2540 | [Minimum Common Value](https://leetcode.com/problems/minimum-common-value/) | [C++](./C++/minimum-common-value.cpp) [Python](./Python/minimum-common-value.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers |
 
 <br/>
 <div align="right">
@@ -1349,6 +1354,7 @@
 2518 | [Number of Great Partitions](https://leetcode.com/problems/number-of-great-partitions/)| [C++](./C++/number-of-great-partitions.cpp) [Python](./Python/number-of-great-partitions.py) | _O(n * k)_    | _O(k)_          | Hard           | | Knapsack DP
 2533 | [Number of Good Binary Strings](https://leetcode.com/problems/number-of-good-binary-strings/)| [C++](./C++/number-of-good-binary-strings.cpp) [Python](./Python/number-of-good-binary-strings.py) | _O(n)_    | _O(w)_          | Medium           | 🔒 | DP
 2538 | [Difference Between Maximum and Minimum Price Sum](https://leetcode.com/problems/difference-between-maximum-and-minimum-price-sum/)| [C++](./C++/difference-between-maximum-and-minimum-price-sum.cpp) [Python](./Python/difference-between-maximum-and-minimum-price-sum.py) | _O(n)_    | _O(n)_          | Hard           | | DFS, Tree DP
+2547 | [Minimum Cost to Split an Array](https://leetcode.com/problems/minimum-cost-to-split-an-array/)| [C++](./C++/minimum-cost-to-split-an-array.cpp) [Python](./Python/minimum-cost-to-split-an-array.py) | _O(n^2)_    | _O(n)_          | Hard           | | DP
 
 <br/>
 <div align="right">
@@ -1385,6 +1391,7 @@
 1338 | [Reduce Array Size to The Half](https://leetcode.com/problems/reduce-array-size-to-the-half/) | [C++](./C++/reduce-array-size-to-the-half.cpp) [Python](./Python/reduce-array-size-to-the-half.py) | _O(n)_ | _O(n)_ | Medium || Counting Sort
 1353 | [Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/)  | [C++](./C++/maximum-number-of-events-that-can-be-attended.cpp) [Python](./Python/maximum-number-of-events-that-can-be-attended.py) | _O(r + nlogn)_        | _O(n)_          | Medium           | | Heap, Sort |
 1354 | [Construct Target Array With Multiple Sums](https://leetcode.com/problems/construct-target-array-with-multiple-sums/)  | [C++](./C++/construct-target-array-with-multiple-sums.cpp) [Python](./Python/construct-target-array-with-multiple-sums.py) | _O(log(max(t)) * logn)_        | _O(n)_          | Hard           | | Heap |
+1383 | [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | [C++](./C++/maximum-performance-of-a-team.cpp) [Python](./Python/maximum-performance-of-a-team.py) | _O(nlogn)_ | _O(n)_ | Hard | variant of [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | Greedy, Heap |
 1386 | [Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/)  | [C++](./C++/cinema-seat-allocation.cpp) [Python](./Python/cinema-seat-allocation.py) | _O(n)_        | _O(n)_          | Medium           | | |
 1400 | [Construct K Palindrome Strings](https://leetcode.com/problems/construct-k-palindrome-strings/)  | [C++](./C++/construct-k-palindrome-strings.cpp) [Python](./Python/construct-k-palindrome-strings.py) | _O(n)_        | _O(1)_          | Medium           | | |
 1402 | [Reducing Dishes](https://leetcode.com/problems/reducing-dishes/)  | [C++](./C++/reducing-dishes.cpp) [Python](./Python/reducing-dishes.py) | _O(nlogn)_        | _O(1)_          | Hard           | | |
@@ -1525,6 +1532,8 @@
 2498 | [Frog Jump II](https://leetcode.com/problems/frog-jump-ii/) | [C++](./C++/frog-jump-ii.cpp) [Python](./Python/frog-jump-ii.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 2499 | [Minimum Total Cost to Make Arrays Unequal](https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal/) | [C++](./C++/minimum-total-cost-to-make-arrays-unequal.cpp) [Python](./Python/minimum-total-cost-to-make-arrays-unequal.py) | _O(n)_   | _O(n)_        | Hard         | | Greedy
 2522 | [Partition String Into Substrings With Values at Most K](https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal/) | [C++](./C++/partition-string-into-substrings-with-values-at-most-k.cpp) [Python](./Python/partition-string-into-substrings-with-values-at-most-k.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+2541 | [Minimum Operations to Make Array Equal II](https://leetcode.com/problems/minimum-operations-to-make-array-equal-ii/) | [C++](./C++/minimum-operations-to-make-array-equal-ii.cpp) [Python](./Python/minimum-operations-to-make-array-equal-ii.py) | _O(n)_ | _O(1)_ |  Medium | | Greedy
+2542 | [Maximum Subsequence Score](https://leetcode.com/problems/maximum-subsequence-score/) | [C++](./C++/maximum-subsequence-score.cpp) [Python](./Python/maximum-subsequence-score.py) | _O(nlogn)_ | _O(n)_ | Medium | variant of [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | Greedy, Heap |
 
 <br/>
 <div align="right">
