@@ -5,7 +5,7 @@
 class Solution {
 public:
     long long countQuadruplets(vector<int>& nums) {
-        vector<int64_t> dp(size(nums));  // dp[j]: # of nums[i] < nums[k] < nums[j] in the first l+1 nums
+        vector<int64_t> dp(size(nums));  // dp[j] at l: # of tuple (i, j, k, l) s.t. i < j < k < l and nums[i] < nums[k] < nums[j]
         int64_t result = 0;
         for (int l = 0; l < size(nums); ++l) {
             int cnt = 0;
