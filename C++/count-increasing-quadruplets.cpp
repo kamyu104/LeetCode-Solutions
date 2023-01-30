@@ -5,15 +5,15 @@
 class Solution {
 public:
     long long countQuadruplets(vector<int>& nums) {
-        vector<int64_t> dp(size(nums));  // dp[j]: # of nums[i] < nums[k] < nums[j] in the first k nums
+        vector<int64_t> dp(size(nums));  // dp[j]: # of nums[i] < nums[k] < nums[j] in the first l+1 nums
         int64_t result = 0;
-        for (int k = 0; k < size(nums); ++k) {
+        for (int l = 0; l < size(nums); ++l) {
             int cnt = 0;
-            for (int j = 0; j < k; ++j) {
-                if (nums[j] < nums[k]) {
+            for (int j = 0; j < l; ++j) {
+                if (nums[j] < nums[l]) {
                     ++cnt;
                     result += dp[j];
-                } else if (nums[j] > nums[k]) {
+                } else if (nums[j] > nums[l]) {
                     dp[j] += cnt;
                 }
             }
@@ -25,7 +25,7 @@ public:
 // Time:  O(n^2)
 // Space: O(n^2)
 // prefix sum
-class Solution3 {
+class Solution2 {
 public:
     long long countQuadruplets(vector<int>& nums) {
         vector<vector<int64_t>> right(size(nums), vector<int64_t>(size(nums) + 1));
