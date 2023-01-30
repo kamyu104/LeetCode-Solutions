@@ -8,7 +8,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        dp = [0]*len(nums)  # dp[j] at l: # of tuple (i, j, k, l) s.t. i < j < k < l and nums[i] < nums[k] < nums[j]
+        dp = [0]*len(nums)  # dp[j] at l: # of tuple (i, j, k) s.t. i < j < k < l and nums[i] < nums[k] < nums[j]
         result = 0
         for l in xrange(len(nums)):
             cnt = 0
