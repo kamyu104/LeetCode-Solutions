@@ -8,15 +8,15 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        dp = [0]*len(nums)  # dp[j]: # of nums[i] < nums[k] < nums[j] in the first k nums
+        dp = [0]*len(nums)  # dp[j]: # of nums[i] < nums[k] < nums[j] in the first l+1 nums
         result = 0
-        for k in xrange(len(nums)):
+        for l in xrange(len(nums)):
             cnt = 0
-            for j in xrange(k):
-                if nums[j] < nums[k]:
+            for j in xrange(l):
+                if nums[j] < nums[l]:
                     cnt += 1
                     result += dp[j]
-                elif nums[j] > nums[k]:
+                elif nums[j] > nums[l]:
                     dp[j] += cnt
         return result
 
