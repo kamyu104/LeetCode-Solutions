@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2547%20%2F%202547-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2552%20%2F%202552-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -829,6 +829,8 @@
 2539 | [Count the Number of Good Subsequences](https://leetcode.com/problems/count-the-number-of-good-subsequences/) | [C++](./C++/count-the-number-of-good-subsequences.cpp) [Python](./Python/count-the-number-of-good-subsequences.py) | _O(26 * n)_   | _O(n)_        | Medium         | 🔒 | Combinatorics
 2543 | [Check if Point Is Reachable](https://leetcode.com/problems/check-if-point-is-reachable/) | [C++](./C++/check-if-point-is-reachable.cpp) [Python](./Python/check-if-point-is-reachable.py) | _O(log(min(a, b)))_   | _O(1)_        | Hard         | | Number Theory
 2544 | [Alternating Digit Sum](https://leetcode.com/problems/alternating-digit-sum/) | [C++](./C++/alternating-digit-sum.cpp) [Python](./Python/alternating-digit-sum.py) | _O(logn)_   | _O(1)_        | Easy         | | Math
+2549 | [Count Distinct Numbers on Board](https://leetcode.com/problems/count-distinct-numbers-on-board/) | [C++](./C++/count-distinct-numbers-on-board.cpp) [Python](./Python/count-distinct-numbers-on-board.py) | _O(1)_   | _O(1)_        | Easy         | | Math
+2550 | [Count Collisions of Monkeys on a Polygon](https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/) | [C++](./C++/count-collisions-of-monkeys-on-a-polygon.cpp) [Python](./Python/count-collisions-of-monkeys-on-a-polygon.py) | _O(logn)_   | _O(1)_        | Medium         | | Combinatorics, Fast Exponentiation
 
 <br/>
 <div align="right">
@@ -1355,6 +1357,7 @@
 2533 | [Number of Good Binary Strings](https://leetcode.com/problems/number-of-good-binary-strings/)| [C++](./C++/number-of-good-binary-strings.cpp) [Python](./Python/number-of-good-binary-strings.py) | _O(n)_    | _O(w)_          | Medium           | 🔒 | DP
 2538 | [Difference Between Maximum and Minimum Price Sum](https://leetcode.com/problems/difference-between-maximum-and-minimum-price-sum/)| [C++](./C++/difference-between-maximum-and-minimum-price-sum.cpp) [Python](./Python/difference-between-maximum-and-minimum-price-sum.py) | _O(n)_    | _O(n)_          | Hard           | | DFS, Tree DP
 2547 | [Minimum Cost to Split an Array](https://leetcode.com/problems/minimum-cost-to-split-an-array/)| [C++](./C++/minimum-cost-to-split-an-array.cpp) [Python](./Python/minimum-cost-to-split-an-array.py) | _O(n^2)_    | _O(n)_          | Hard           | | DP
+2552 | [Count Increasing Quadruplets](https://leetcode.com/problems/count-increasing-quadruplets/)| [C++](./C++/count-increasing-quadruplets.cpp) [Python](./Python/count-increasing-quadruplets.py) | _O(n^2)_    | _O(n)_          | Hard           | | DP, Prefix Sum
 
 <br/>
 <div align="right">
@@ -1534,6 +1537,8 @@
 2522 | [Partition String Into Substrings With Values at Most K](https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal/) | [C++](./C++/partition-string-into-substrings-with-values-at-most-k.cpp) [Python](./Python/partition-string-into-substrings-with-values-at-most-k.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 2541 | [Minimum Operations to Make Array Equal II](https://leetcode.com/problems/minimum-operations-to-make-array-equal-ii/) | [C++](./C++/minimum-operations-to-make-array-equal-ii.cpp) [Python](./Python/minimum-operations-to-make-array-equal-ii.py) | _O(n)_ | _O(1)_ |  Medium | | Greedy
 2542 | [Maximum Subsequence Score](https://leetcode.com/problems/maximum-subsequence-score/) | [C++](./C++/maximum-subsequence-score.cpp) [Python](./Python/maximum-subsequence-score.py) | _O(nlogn)_ | _O(n)_ | Medium | variant of [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | Greedy, Heap |
+2548 | [Maximum Price to Fill a Bag](https://leetcode.com/problems/maximum-price-to-fill-a-bag/) | [C++](./C++/maximum-price-to-fill-a-bag.cpp) [Python](./Python/maximum-price-to-fill-a-bag.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Greedy, Sort |
+2551 | [Put Marbles in Bags](https://leetcode.com/problems/put-marbles-in-bags/) | [C++](./C++/put-marbles-in-bags.cpp) [Python](./Python/put-marbles-in-bags.py) | _O(n)_ on average | _O(1)_ | Hard | | Greedy, Quick Select |
 
 <br/>
 <div align="right">
