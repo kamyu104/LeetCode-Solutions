@@ -40,8 +40,7 @@ class Solution2(object):
             for j in xrange(k):
                 if nums[k] < nums[j]:
                     result += left*right[j][k+1]
-                elif nums[k] > nums[j]:
-                    left += 1
+                left += int(nums[k] > nums[j])
         return result
 
 
