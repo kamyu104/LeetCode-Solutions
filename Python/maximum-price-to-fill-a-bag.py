@@ -10,7 +10,8 @@ class Solution(object):
         :rtype: float
         """
         result = 0
-        for p, c in sorted(items, key=lambda x: float(x[0])/x[1], reverse=True):
+        items.sort(key=lambda x: float(x[0])/x[1], reverse=True)
+        for p, c in items:
             cnt = min(c, capacity)
             capacity -= cnt
             result += (float(p)/c)*cnt
