@@ -26,7 +26,6 @@ class Solution_TLE(object):
         :type nums: List[int]
         :rtype: bool
         """
-        result = 0
         for k in xrange(len(nums)):
             valid = False
             for j in xrange(k):
