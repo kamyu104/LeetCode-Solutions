@@ -17,7 +17,7 @@ public:
 };
 
 // Time:  O(n)
-// Space: O(1)
+// Space: O(logr), r = max(nums)
 // array
 class Solution2 {
 public:
