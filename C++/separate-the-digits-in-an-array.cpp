@@ -1,4 +1,4 @@
-// Time:  O(n)
+// Time:  O(n * logr)
 // Space: O(1)
 
 // array
@@ -16,7 +16,7 @@ public:
     }
 };
 
-// Time:  O(n)
+// Time:  O(n * logr)
 // Space: O(logr), r = max(nums)
 // array
 class Solution2 {
