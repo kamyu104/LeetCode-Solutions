@@ -25,3 +25,24 @@ class Solution(object):
             for j in xrange(len(grid[0])):
                 cnt[i+j] += grid[i][j]
         return any(cnt[i] <= 1 for i in xrange(1, len(grid)+len(grid[0])-2))
+
+
+# Time:  O(m * n)
+# Space: O(m + n)
+# dfs
+class Solution2(object):
+    def isPossibleToCutPath(self, grid):
+        """
+        :type grid: List[List[int]]
+        :rtype: bool
+        """
+        def dfs(i, j):
+            if not (0 <= i < len(grid) and 0 <= j < len(grid[0]) and grid[i][j]):
+                return False
+            if (i, j) == (len(grid)-1, len(grid[0])-1):
+                return True
+            if (i, j) != (0, 0):
+                grid[i][j] = 0
+            return dfs(i+1, j) or dfs(i, j+1)
+
+        return not dfs(0, 0) or not dfs(0, 0)
