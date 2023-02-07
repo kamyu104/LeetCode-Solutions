@@ -45,10 +45,10 @@ class Solution(object):
         for x in basket2:
             cnt[x] -= 1
         mn = min(cnt.iterkeys())
-        arr = []
+        swaps = []
         for k, v in cnt.iteritems():
             if v%2:
                 return -1
-            arr.extend(k for _ in xrange(abs(v)//2))
-        nth_element(arr, len(arr)//2)
-        return sum(min(arr[i], mn*2) for i in xrange(len(arr)//2))
+            swaps.extend(k for _ in xrange(abs(v)//2))
+        nth_element(swaps, len(swaps)//2)
+        return sum(min(swaps[i], mn*2) for i in xrange(len(swaps)//2))
