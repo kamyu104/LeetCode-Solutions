@@ -1,5 +1,5 @@
 # Time:  O(n + klogn)
-# Space: O(n)
+# Space: O(1)
 
 import heapq
 
@@ -16,22 +16,23 @@ class Solution(object):
             return (a+b-1)//b
     
         result = 0
-        max_heap = [-x for x in nums]
-        heapq.heapify(max_heap)
+        for i, x in enumerate(nums):
+            nums[i] = -x
+        heapq.heapify(nums)
         for _ in xrange(k):
-            if not max_heap:
+            if not nums:
                 break
-            x = -heapq.heappop(max_heap)
+            x = -heapq.heappop(nums)
             result += x
             nx = ceil_divide(x, 3)
             if not nx:
                 continue
-            heapq.heappush(max_heap, -nx)
+            heapq.heappush(nums, -nx)
         return result
   
 
 # Time:  O(n + klogn)
-# Space: O(n)
+# Space: O(1)
 import heapq
 
 
@@ -47,11 +48,12 @@ class Solution2(object):
             return (a+b-1)//b
     
         result = 0
-        max_heap = [-x for x in nums]
-        heapq.heapify(max_heap)
+        for i, x in enumerate(nums):
+            nums[i] = -x
+        heapq.heapify(nums)
         for _ in xrange(k):
-            x = -heapq.heappop(max_heap)
+            x = -heapq.heappop(nums)
             result += x
-            heapq.heappush(max_heap, -ceil_divide(x, 3))
+            heapq.heappush(nums, -ceil_divide(x, 3))
         return result
   
