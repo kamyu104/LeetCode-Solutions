@@ -290,7 +290,7 @@
 2535 | [Difference Between Element Sum and Digit Sum of an Array](https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/) | [C++](./C++/difference-between-element-sum-and-digit-sum-of-an-array.cpp) [Python](./Python/difference-between-element-sum-and-digit-sum-of-an-array.py) | _O(nlogr)_   | _O(1)_        | Easy         | | Array
 2536 | [Increment Submatrices by One](https://leetcode.com/problems/increment-submatrices-by-one/) | [C++](./C++/increment-submatrices-by-one.cpp) [Python](./Python/increment-submatrices-by-one.py) | _O(q + n^2)_   | _O(1)_        | Medium         | | Line Sweep, Difference Matrix, Difference Array
 2553 | [Separate the Digits in an Array](https://leetcode.com/problems/separate-the-digits-in-an-array/) | [C++](./C++/separate-the-digits-in-an-array.cpp) [Python](./Python/separate-the-digits-in-an-array.py) | _O(n * logr)_   | _O(1)_        | Easy         | | Array
-2559 | [Count Vowel Strings in Ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges/) | [C++](./C++/count-vowel-strings-in-ranges.cpp) [Python](./Python/count-vowel-strings-in-ranges.py) | _O(n + q)_   | _O(n)_        | Easy         | | Prefix Sum
+2559 | [Count Vowel Strings in Ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges/) | [C++](./C++/count-vowel-strings-in-ranges.cpp) [Python](./Python/count-vowel-strings-in-ranges.py) | _O(n + q)_   | _O(n)_        | Medium         | | Prefix Sum
 
 <br/>
 <div align="right">
