@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-# binary search
+# binary search, greedy
 class Solution(object):
     def minCapability(self, nums, k):
         """
