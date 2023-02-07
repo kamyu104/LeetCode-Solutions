@@ -39,8 +39,39 @@ public:
 
 // Time:  O(m * n)
 // Space: O(m + n)
-// dfs
+// iterative dfs
 class Solution2 {
+public:
+    bool isPossibleToCutPath(vector<vector<int>>& grid) {
+        const auto& iter_dfs = [&]() {
+            vector<pair<int, int>> stk = {{0, 0}};
+            while (!empty(stk)) {
+                const auto [i, j] = stk.back(); stk.pop_back();
+                if (!(0 <= i && i < size(grid) &&
+                      0 <= j && j < size(grid[0]) &&
+                      grid[i][j])) {
+                    continue;
+                }
+                if (i == size(grid) - 1 && j == size(grid[0]) - 1) {
+                    return true;
+                }
+                if (!(i == 0 && j == 0)) {
+                    grid[i][j] = 0;
+                }
+                stk.emplace_back(i, j + 1);
+                stk.emplace_back(i + 1, j);
+            }
+            return false;
+        };
+
+        return !iter_dfs() || !iter_dfs();
+    }
+};
+
+// Time:  O(m * n)
+// Space: O(m + n)
+// dfs
+class Solution3 {
 public:
     bool isPossibleToCutPath(vector<vector<int>>& grid) {
         const function<bool(int, int)> dfs = [&](int i, int j) {
