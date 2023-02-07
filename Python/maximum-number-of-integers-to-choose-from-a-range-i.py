@@ -1,11 +1,40 @@
-# Time:  O(blogb + logn * logb)
+# Time:  O(b)
 # Space: O(b)
 
+# math
+class Solution(object):
+    def maxCount(self, banned, n, maxSum):
+        """
+        :type banned: List[int]
+        :type n: int
+        :type maxSum: int
+        :rtype: int
+        """
+        k = min(int((-1+(1+8*maxSum))**0.5/2), n)  # k = argmax((k+1)*k//2 <= maxSum)
+        total = (k+1)*k//2
+        result = k
+        lookup = set(banned)
+        for x in lookup:
+            if x <= k:
+                total -= x
+                result -= 1
+        for i in xrange(k+1, n+1):
+            if i in lookup:
+                continue
+            if total+i > maxSum:
+                break
+            total += i
+            result += 1
+        return result
+
+
+# Time:  O(blogb + logn * logb)
+# Space: O(b)
 import bisect
 
 
 # binary search, prefix sum
-class Solution(object):
+class Solution2(object):
     def maxCount(self, banned, n, maxSum):
         """
         :type banned: List[int]
@@ -33,7 +62,7 @@ class Solution(object):
 # Time:  O(n)
 # Space: O(b)
 # greedy
-class Solution2(object):
+class Solution3(object):
     def maxCount(self, banned, n, maxSum):
         """
         :type banned: List[int]
