@@ -1,7 +1,7 @@
 // Time:  O(n) on average
 // Space: O(n)
 
-// freq table, quick select
+// freq table, greedy, quick select
 class Solution {
 public:
     long long minCost(vector<int>& basket1, vector<int>& basket2) {
