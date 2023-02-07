@@ -1365,7 +1365,7 @@
 2538 | [Difference Between Maximum and Minimum Price Sum](https://leetcode.com/problems/difference-between-maximum-and-minimum-price-sum/)| [C++](./C++/difference-between-maximum-and-minimum-price-sum.cpp) [Python](./Python/difference-between-maximum-and-minimum-price-sum.py) | _O(n)_    | _O(n)_          | Hard           | | DFS, Tree DP
 2547 | [Minimum Cost to Split an Array](https://leetcode.com/problems/minimum-cost-to-split-an-array/)| [C++](./C++/minimum-cost-to-split-an-array.cpp) [Python](./Python/minimum-cost-to-split-an-array.py) | _O(n^2)_    | _O(n)_          | Hard           | | DP
 2552 | [Count Increasing Quadruplets](https://leetcode.com/problems/count-increasing-quadruplets/)| [C++](./C++/count-increasing-quadruplets.cpp) [Python](./Python/count-increasing-quadruplets.py) | _O(n^2)_    | _O(n)_          | Hard           | variant of [132 Pattern](https://leetcode.com/problems/132-pattern/) | DP, Prefix Sum
-2556 | [Disconnect Path in a Binary Matrix by at Most One Flip](https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/)| [C++](./C++/disconnect-path-in-a-binary-matrix-by-at-most-one-flip.cpp) [Python](./Python/disconnect-path-in-a-binary-matrix-by-at-most-one-flip.py) | _O(m * n)_    | _O(m + n)_          | Medium           | | DP
+2556 | [Disconnect Path in a Binary Matrix by at Most One Flip](https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/)| [C++](./C++/disconnect-path-in-a-binary-matrix-by-at-most-one-flip.cpp) [Python](./Python/disconnect-path-in-a-binary-matrix-by-at-most-one-flip.py) | _O(m * n)_    | _O(m + n)_          | Medium           | | DP, DFS
 
 <br/>
 <div align="right">
