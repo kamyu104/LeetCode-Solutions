@@ -32,7 +32,7 @@ class Solution(object):
 
 # Time:  O(nlogr)
 # Space: O(1)
-# binary search
+# binary search, greedy
 class Solution2(object):
     def minCapability(self, nums, k):
         """
