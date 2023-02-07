@@ -13,19 +13,19 @@ public:
             --cnt[x];
         }
         const int mn = min_element(cbegin(cnt), cend(cnt))->first;
-        vector<int> arr;
+        vector<int> swaps;
         for (const auto& [k, v] : cnt) {
             if (v % 2) {
                 return -1;
             }
             for (int _ = 0; _ < abs(v) / 2; ++_) {
-                arr.emplace_back(k);
+                swaps.emplace_back(k);
             }   
         }
-        nth_element(begin(arr), begin(arr) + size(arr) / 2, end(arr));
+        nth_element(begin(swaps), begin(swaps) + size(swaps) / 2, end(swaps));
         int64_t result = 0;
-        for (int i = 0; i < size(arr) / 2; ++i) {
-            result += min(arr[i], mn * 2);
+        for (int i = 0; i < size(swaps) / 2; ++i) {
+            result += min(swaps[i], mn * 2);
         }
         return result;
     }
