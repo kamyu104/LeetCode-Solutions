@@ -5,7 +5,7 @@ import random
 import collections
 
 
-# freq table, quick select
+# freq table, greedy, quick select
 class Solution(object):
     def minCost(self, basket1, basket2):
         """
