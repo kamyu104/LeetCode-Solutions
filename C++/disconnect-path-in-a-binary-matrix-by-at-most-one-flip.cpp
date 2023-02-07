@@ -47,9 +47,7 @@ public:
             vector<pair<int, int>> stk = {{0, 0}};
             while (!empty(stk)) {
                 const auto [i, j] = stk.back(); stk.pop_back();
-                if (!(0 <= i && i < size(grid) &&
-                      0 <= j && j < size(grid[0]) &&
-                      grid[i][j])) {
+                if (!(i < size(grid) && j < size(grid[0]) && grid[i][j])) {
                     continue;
                 }
                 if (i == size(grid) - 1 && j == size(grid[0]) - 1) {
@@ -75,9 +73,7 @@ class Solution3 {
 public:
     bool isPossibleToCutPath(vector<vector<int>>& grid) {
         const function<bool(int, int)> dfs = [&](int i, int j) {
-            if (!(0 <= i && i < size(grid) &&
-                  0 <= j && j < size(grid[0]) &&
-                  grid[i][j])) {
+            if (!(i < size(grid) && j < size(grid[0]) && grid[i][j])) {
                 return false;
             }
             if (i == size(grid) - 1 && j == size(grid[0]) - 1) {
