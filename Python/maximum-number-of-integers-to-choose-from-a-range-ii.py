@@ -14,12 +14,12 @@ class Solution(object):
         :rtype: int
         """
         def check(x):
-            return (x+1)*x//2-prefix[bisect.bisect_right(banned, x)] <= maxSum
+            return (x+1)*x//2-prefix[bisect.bisect_right(sorted_banned, x)] <= maxSum
     
-        banned.sort()
-        prefix = [0]*(len(banned)+1)
-        for i in xrange(len(banned)):
-            prefix[i+1] = prefix[i]+banned[i]
+        sorted_banned = sorted(set(banned))
+        prefix = [0]*(len(sorted_banned)+1)
+        for i in xrange(len(sorted_banned)):
+            prefix[i+1] = prefix[i]+sorted_banned[i]
         left, right = 1, n
         while left <= right:
             mid = left + (right-left)//2
@@ -27,4 +27,4 @@ class Solution(object):
                 right = mid-1
             else:
                 left = mid+1
-        return right-bisect.bisect_right(banned, right)
+        return right-bisect.bisect_right(sorted_banned, right)
