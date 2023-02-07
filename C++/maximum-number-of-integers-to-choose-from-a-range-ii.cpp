@@ -8,8 +8,8 @@ public:
         unordered_set<int> banned_set(cbegin(banned), cend(banned));
         vector<int> sorted_banned(cbegin(banned_set), cend(banned_set));
         sort(begin(sorted_banned), end(sorted_banned));
-        vector<int64_t> prefix(size(banned) + 1);
-        for (int i = 0; i < size(banned); ++i) {
+        vector<int64_t> prefix(size(sorted_banned) + 1);
+        for (int i = 0; i < size(sorted_banned); ++i) {
             prefix[i + 1] = prefix[i] + sorted_banned[i];
         }
         const auto& check = [&](const int64_t x) {
