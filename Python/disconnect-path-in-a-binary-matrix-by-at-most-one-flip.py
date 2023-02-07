@@ -40,7 +40,7 @@ class Solution2(object):
             stk = [(0, 0)]
             while stk:
                 i, j = stk.pop()
-                if not (0 <= i < len(grid) and 0 <= j < len(grid[0]) and grid[i][j]):
+                if not (i < len(grid) and j < len(grid[0]) and grid[i][j]):
                     continue
                 if (i, j) == (len(grid)-1, len(grid[0])-1):
                     return True
@@ -63,7 +63,7 @@ class Solution3(object):
         :rtype: bool
         """
         def dfs(i, j):
-            if not (0 <= i < len(grid) and 0 <= j < len(grid[0]) and grid[i][j]):
+            if not (i < len(grid) and j < len(grid[0]) and grid[i][j]):
                 return False
             if (i, j) == (len(grid)-1, len(grid[0])-1):
                 return True
