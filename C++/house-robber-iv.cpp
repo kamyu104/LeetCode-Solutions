@@ -33,7 +33,7 @@ public:
 
 // Time:  O(nlogr)
 // Space: O(1)
-// binary search
+// binary search, greedy
 class Solution2 {
 public:
     int minCapability(vector<int>& nums, int k) {
