@@ -1,5 +1,5 @@
 # Time:  O(n + klogn)
-# Space: O(n)
+# Space: O(1)
 
 import heapq
 
@@ -12,9 +12,10 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        max_heap = [-x for x in gifts]
-        heapq.heapify(max_heap)
+        for i, x in enumerate(gifts):
+            gifts[i] = -x
+        heapq.heapify(gifts)
         for _ in xrange(k):
-            x = heapq.heappop(max_heap)
-            heapq.heappush(max_heap, -int((-x)**0.5))
-        return -sum(max_heap)
+            x = heapq.heappop(gifts)
+            heapq.heappush(gifts, -int((-x)**0.5))
+        return -sum(gifts)
