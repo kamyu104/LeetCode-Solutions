@@ -36,3 +36,29 @@ public:
         });
     }
 };
+
+// Time:  O(m * n)
+// Space: O(m + n)
+// dfs
+class Solution2 {
+public:
+    bool isPossibleToCutPath(vector<vector<int>>& grid) {
+        const function<bool(int, int)> dfs = [&](int i, int j) {
+            if (!(0 <= i && i < size(grid) &&
+                  0 <= j && j < size(grid[0]) &&
+                  grid[i][j])) {
+                return false;
+            }
+            if (i == size(grid) - 1 && j == size(grid[0]) - 1) {
+                return true;
+            }
+            if (!(i == 0 && j == 0)) {
+                grid[i][j] = 0;
+            }
+            return dfs(i + 1, j) || dfs(i, j + 1);
+        };
+
+        return !dfs(0, 0) || !dfs(0, 0);
+    }
+};
+
