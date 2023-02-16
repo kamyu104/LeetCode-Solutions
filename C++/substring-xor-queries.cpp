@@ -27,7 +27,7 @@ public:
         }
         vector<vector<int>> result;
         for (const auto& q : queries) {
-            result.push_back(lookup.count(q[0] ^ q[1]) ? lookup[q[0] ^ q[1]] : vector<int>(2, -1));
+            result.emplace_back(lookup.count(q[0] ^ q[1]) ? lookup[q[0] ^ q[1]] : vector<int>(2, -1));
         }
         return result;
     }
