@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2561%20%2F%202561-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2565%20%2F%202565-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -673,6 +673,7 @@
 2501 | [Longest Square Streak in an Array](https://leetcode.com/problems/longest-square-streak-in-an-array/) | [C++](./C++/longest-square-streak-in-an-array.cpp) [Python](./Python/longest-square-streak-in-an-array.py) | _O(nlogn)_ | _O(n)_ | Medium | | Hash Table, DP
 2506 | [Count Pairs Of Similar Strings](https://leetcode.com/problems/count-pairs-of-similar-strings/) | [C++](./C++/count-pairs-of-similar-strings.cpp) [Python](./Python/count-pairs-of-similar-strings.py) | _O(n * l)_ | _O(n)_ | Easy | | Freq Table, Bitmask
 2531 | [Make Number of Distinct Characters Equal](https://leetcode.com/problems/make-number-of-distinct-characters-equal/) | [C++](./C++/make-number-of-distinct-characters-equal.cpp) [Python](./Python/make-number-of-distinct-characters-equal.py) | _O(m + n)_ | _O(1)_ | Medium | | Freq Table
+2564 | [Substring XOR Queries](https://leetcode.com/problems/substring-xor-queries/) | [C++](./C++/substring-xor-queries.cpp) [Python](./Python/substring-xor-queries.py) | _O(n * logr + q)_ | _O(min(n * logr, r))_ | Medium | | Hash Table
 
 <br/>
 <div align="right">
@@ -834,6 +835,7 @@
 2544 | [Alternating Digit Sum](https://leetcode.com/problems/alternating-digit-sum/) | [C++](./C++/alternating-digit-sum.cpp) [Python](./Python/alternating-digit-sum.py) | _O(logn)_   | _O(1)_        | Easy         | | Math
 2549 | [Count Distinct Numbers on Board](https://leetcode.com/problems/count-distinct-numbers-on-board/) | [C++](./C++/count-distinct-numbers-on-board.cpp) [Python](./Python/count-distinct-numbers-on-board.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 2550 | [Count Collisions of Monkeys on a Polygon](https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/) | [C++](./C++/count-collisions-of-monkeys-on-a-polygon.cpp) [Python](./Python/count-collisions-of-monkeys-on-a-polygon.py) | _O(logn)_   | _O(1)_        | Medium         | | Combinatorics, Fast Exponentiation
+2562 | [Find the Array Concatenation Value](https://leetcode.com/problems/find-the-array-concatenation-value/) | [C++](./C++/find-the-array-concatenation-value.cpp) [Python](./Python/find-the-array-concatenation-value.py) | _O(nlogr)_   | _O(1)_        | Easy         | | Math
 
 <br/>
 <div align="right">
@@ -972,6 +974,7 @@
 2537 | [Count the Number of Good Subarrays](https://leetcode.com/problems/count-the-number-of-good-subarrays/) | [C++](./C++/count-the-number-of-good-subarrays.cpp) [Python](./Python/count-the-number-of-good-subarrays.py) | _O(n)_ | _O(n)_ | Medium | | Sliding Window, Two Pointers |
 2540 | [Minimum Common Value](https://leetcode.com/problems/minimum-common-value/) | [C++](./C++/minimum-common-value.cpp) [Python](./Python/minimum-common-value.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers |
 2555 | [Maximize Win From Two Segments](https://leetcode.com/problems/maximize-win-from-two-segments/) | [C++](./C++/maximize-win-from-two-segments.cpp) [Python](./Python/maximize-win-from-two-segments.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers, Sliding Window, DP |
+2563 | [Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) | [C++](./C++/count-the-number-of-fair-pairs.cpp) [Python](./Python/count-the-number-of-fair-pairs.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers
 
 <br/>
 <div align="right">
@@ -1366,6 +1369,7 @@
 2547 | [Minimum Cost to Split an Array](https://leetcode.com/problems/minimum-cost-to-split-an-array/)| [C++](./C++/minimum-cost-to-split-an-array.cpp) [Python](./Python/minimum-cost-to-split-an-array.py) | _O(n^2)_    | _O(n)_          | Hard           | | DP
 2552 | [Count Increasing Quadruplets](https://leetcode.com/problems/count-increasing-quadruplets/)| [C++](./C++/count-increasing-quadruplets.cpp) [Python](./Python/count-increasing-quadruplets.py) | _O(n^2)_    | _O(n)_          | Hard           | variant of [132 Pattern](https://leetcode.com/problems/132-pattern/) | DP, Prefix Sum
 2556 | [Disconnect Path in a Binary Matrix by at Most One Flip](https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/)| [C++](./C++/disconnect-path-in-a-binary-matrix-by-at-most-one-flip.cpp) [Python](./Python/disconnect-path-in-a-binary-matrix-by-at-most-one-flip.py) | _O(m * n)_    | _O(m + n)_          | Medium           | | DP, DFS
+2565 | [Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/)| [C++](./C++/subsequence-with-the-minimum-score.cpp) [Python](./Python/subsequence-with-the-minimum-score.py) | _O(n)_    | _O(n)_          | Hard           | | Two Pointers, DP
 
 <br/>
 <div align="right">
