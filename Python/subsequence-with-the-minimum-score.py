@@ -16,7 +16,7 @@ class Solution(object):
                 j -= 1
             right[i] = j
         result = j+1
-        left = 0  # left at i : max removed leftmost index in s[:i]
+        left = 0  # left at i: max removed leftmost index in s[:i]
         for i in xrange(len(s)):
             result = max(min(result, right[i]-left+1), 0)
             if left < len(t) and t[left] == s[i]:
