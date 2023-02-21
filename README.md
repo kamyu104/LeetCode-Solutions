@@ -977,7 +977,7 @@
 2540 | [Minimum Common Value](https://leetcode.com/problems/minimum-common-value/) | [C++](./C++/minimum-common-value.cpp) [Python](./Python/minimum-common-value.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers |
 2555 | [Maximize Win From Two Segments](https://leetcode.com/problems/maximize-win-from-two-segments/) | [C++](./C++/maximize-win-from-two-segments.cpp) [Python](./Python/maximize-win-from-two-segments.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers, Sliding Window, DP |
 2563 | [Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) | [C++](./C++/count-the-number-of-fair-pairs.cpp) [Python](./Python/count-the-number-of-fair-pairs.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers
-2570 | [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | [C++](./C++/merge-two-2d-arrays-by-summing-values.cpp) [Python](./Python/merge-two-2d-arrays-by-summing-values.py) | _O(n)_ | _O(1)_ | Hard | | Two Pointers
+2570 | [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | [C++](./C++/merge-two-2d-arrays-by-summing-values.cpp) [Python](./Python/merge-two-2d-arrays-by-summing-values.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers
 
 <br/>
 <div align="right">
