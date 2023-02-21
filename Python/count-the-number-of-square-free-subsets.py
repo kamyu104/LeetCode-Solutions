@@ -99,8 +99,8 @@ class Solution2(object):
                 return 1
             if dp[i][mask] == -1:
                 dp[i][mask] = memoization(i+1, mask)
-                if MASKS[arr[i]] and MASKS[arr[i]]&mask == 0:
-                    dp[i][mask] = (dp[i][mask]+cnt[arr[i]]*memoization(i+1, mask|MASKS[arr[i]]))%MOD
+                if MASKS[arr[i]] and (MASKS[arr[i]]&mask) == MASKS[arr[i]]:
+                    dp[i][mask] = (dp[i][mask]+cnt[arr[i]]*memoization(i+1, mask^MASKS[arr[i]]))%MOD
             return dp[i][mask]
     
-        return (memoization(0, 0)*pow(2, cnt[1], MOD)-1)%MOD if 1 in cnt else (memoization(0, 0)-1)%MOD
+        return (memoization(0, (1<<len(PRIMES))-1)*pow(2, cnt[1], MOD)-1)%MOD if 1 in cnt else (memoization(0, (1<<len(PRIMES))-1)-1)%MOD
