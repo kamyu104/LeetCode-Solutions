@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2565%20%2F%202565-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2573%20%2F%202573-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -291,6 +291,7 @@
 2536 | [Increment Submatrices by One](https://leetcode.com/problems/increment-submatrices-by-one/) | [C++](./C++/increment-submatrices-by-one.cpp) [Python](./Python/increment-submatrices-by-one.py) | _O(q + n^2)_   | _O(1)_        | Medium         | | Line Sweep, Difference Matrix, Difference Array
 2553 | [Separate the Digits in an Array](https://leetcode.com/problems/separate-the-digits-in-an-array/) | [C++](./C++/separate-the-digits-in-an-array.cpp) [Python](./Python/separate-the-digits-in-an-array.py) | _O(n * logr)_   | _O(1)_        | Easy         | | Array
 2559 | [Count Vowel Strings in Ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges/) | [C++](./C++/count-vowel-strings-in-ranges.cpp) [Python](./Python/count-vowel-strings-in-ranges.py) | _O(n + q)_   | _O(n)_        | Medium         | | Prefix Sum
+2569 | [Handling Sum Queries After Update](https://leetcode.com/problems/handling-sum-queries-after-update/)| [C++](./C++/handling-sum-queries-after-update.cpp) [Python](./Python/handling-sum-queries-after-update.py)| _O(nlogn + m + qlogn)_ | _O(n)_ | Hard | | Segment Tree |
 
 <br/>
 <div align="right">
@@ -836,6 +837,7 @@
 2549 | [Count Distinct Numbers on Board](https://leetcode.com/problems/count-distinct-numbers-on-board/) | [C++](./C++/count-distinct-numbers-on-board.cpp) [Python](./Python/count-distinct-numbers-on-board.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 2550 | [Count Collisions of Monkeys on a Polygon](https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/) | [C++](./C++/count-collisions-of-monkeys-on-a-polygon.cpp) [Python](./Python/count-collisions-of-monkeys-on-a-polygon.py) | _O(logn)_   | _O(1)_        | Medium         | | Combinatorics, Fast Exponentiation
 2562 | [Find the Array Concatenation Value](https://leetcode.com/problems/find-the-array-concatenation-value/) | [C++](./C++/find-the-array-concatenation-value.cpp) [Python](./Python/find-the-array-concatenation-value.py) | _O(nlogr)_   | _O(1)_        | Easy         | | Math
+2568 | [Minimum Impossible OR](https://leetcode.com/problems/minimum-impossible-or/) | [C++](./C++/minimum-impossible-or.cpp) [Python](./Python/minimum-impossible-or.py) | _O(logr)_   | _O(1)_        | Medium         | | Math, Hash Table, Bit Manipulations
 
 <br/>
 <div align="right">
@@ -975,6 +977,7 @@
 2540 | [Minimum Common Value](https://leetcode.com/problems/minimum-common-value/) | [C++](./C++/minimum-common-value.cpp) [Python](./Python/minimum-common-value.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers |
 2555 | [Maximize Win From Two Segments](https://leetcode.com/problems/maximize-win-from-two-segments/) | [C++](./C++/maximize-win-from-two-segments.cpp) [Python](./Python/maximize-win-from-two-segments.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers, Sliding Window, DP |
 2563 | [Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) | [C++](./C++/count-the-number-of-fair-pairs.cpp) [Python](./Python/count-the-number-of-fair-pairs.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers
+2570 | [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | [C++](./C++/merge-two-2d-arrays-by-summing-values.cpp) [Python](./Python/merge-two-2d-arrays-by-summing-values.py) | _O(n)_ | _O(1)_ | Hard | | Two Pointers
 
 <br/>
 <div align="right">
@@ -1193,7 +1196,7 @@
 2056 | [Number of Valid Move Combinations On Chessboard](https://leetcode.com/problems/number-of-valid-move-combinations-on-chessboard/) | [C++](./C++/number-of-valid-move-combinations-on-chessboard.cpp) [Python](./Python/number-of-valid-move-combinations-on-chessboard.py) | _O(1)_ | _O(1)_      | Hard         | | |
 2094 | [Finding 3-Digit Even Numbers](https://leetcode.com/problems/finding-3-digit-even-numbers/) | [C++](./C++/finding-3-digit-even-numbers.cpp) [Python](./Python/finding-3-digit-even-numbers.py) | _O(n)_ | _O(1)_      | Easy         | | |
 2443 | [Sum of Number and Its Reverse](https://leetcode.com/problems/sum-of-number-and-its-reverse/) | [C++](./C++/sum-of-number-and-its-reverse.cpp) [Python](./Python/sum-of-number-and-its-reverse.py) | _O(n^(1/(2*log2(10))))_   | _O(log10(n)/2)_        | Medium         | | Brute Force, Backtracking
-
+2572 | [Count the Number of Square-Free Subsets](https://leetcode.com/problems/count-the-number-of-square-free-subsets/) | [C++](./C++/count-the-number-of-square-free-subsets.cpp) [Python](./Python/count-the-number-of-square-free-subsets.py) | _O(n * 2^p)_   | _O( * 2^p)_        | Medium         | | Number Theory, Bitmasks, Backtracking, Memoization
 
 <br/>
 <div align="right">
@@ -1552,6 +1555,10 @@
 2548 | [Maximum Price to Fill a Bag](https://leetcode.com/problems/maximum-price-to-fill-a-bag/) | [C++](./C++/maximum-price-to-fill-a-bag.cpp) [Python](./Python/maximum-price-to-fill-a-bag.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Greedy, Sort |
 2551 | [Put Marbles in Bags](https://leetcode.com/problems/put-marbles-in-bags/) | [C++](./C++/put-marbles-in-bags.cpp) [Python](./Python/put-marbles-in-bags.py) | _O(n)_ on average | _O(1)_ | Hard | | Greedy, Quick Select |
 2561 | [Rearranging Fruits](https://leetcode.com/problems/rearranging-fruits/) | [C++](./C++/rearranging-fruits.cpp) [Python](./Python/rearranging-fruits.py) | _O(n)_ on average | _O(n)_ | Hard | | Freq Table, Greedy, Quick Select |
+2566 | [Maximum Difference by Remapping a Digit](https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/) | [C++](./C++/maximum-difference-by-remapping-a-digit.cpp) [Python](./Python/maximum-difference-by-remapping-a-digit.py) | _O(logn)_ | _O(1)_ | Easy | | Greedy |
+2567 | [Minimum Score by Changing Two Elements](https://leetcode.com/problems/minimum-score-by-changing-two-elements/) | [C++](./C++/minimum-score-by-changing-two-elements.cpp) [Python](./Python/minimum-score-by-changing-two-elements.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Greedy |
+2571 | [Minimum Operations to Reduce an Integer to 0](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/) | [C++](./C++/minimum-operations-to-reduce-an-integer-to-0.cpp) [Python](./Python/minimum-operations-to-reduce-an-integer-to-0.py) | _O(logn)_ | _O(1)_ | Medium | | Greedy, Trick |
+2573 | [Find the String with LCP](https://leetcode.com/problems/find-the-string-with-lcp/) | [C++](./C++/find-the-string-with-lcp.cpp) [Python](./Python/find-the-string-with-lcp.py) | _O(n^2)_ | _O(1)_ | Hard | | Constructive Algorithms, Greedy, DP |
 
 <br/>
 <div align="right">
