@@ -1,5 +1,5 @@
-// Time:  O(n * 2^p)
-// Space: O(n * 2^p)
+// Time:  O(n + m * 2^p)
+// Space: O(m * 2^p)
 
 static const int MAX_NUM = 30;
 vector<int> linear_sieve_of_eratosthenes(int n) {  // Time: O(n), Space: O(n)
