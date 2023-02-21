@@ -71,11 +71,11 @@ public:
             }
             for (int mask = 0; mask < size(dp); ++mask) {
                 if ((MASKS[x] & mask) == 0) {
-                    dp[mask] = (dp[mask] + static_cast<int64_t>(cnt[x]) * dp[mask | MASKS[x]]) % MOD;
+                    dp[mask | MASKS[x]] = (dp[mask | MASKS[x]] + static_cast<int64_t>(cnt[x]) * dp[mask]) % MOD;
                 }
             }
         }
-        return cnt.count(1) ? ((dp[0] * powmod(2, cnt[1]) - 1) + MOD) % MOD: ((dp[0] - 1) + MOD) % MOD;
+        return cnt.count(1) ? ((dp.back() * powmod(2, cnt[1]) - 1) + MOD) % MOD: ((dp.back() - 1) + MOD) % MOD;
     }
 };
 
