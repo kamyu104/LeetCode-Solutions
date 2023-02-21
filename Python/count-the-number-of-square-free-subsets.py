@@ -4,35 +4,6 @@
 import collections
 
 
-def linear_sieve_of_eratosthenes(n):  # Time: O(n), Space: O(n)
-    primes = []
-    spf = [-1]*(n+1)  # the smallest prime factor
-    for i in xrange(2, n+1):
-        if spf[i] == -1:
-            spf[i] = i
-            primes.append(i)
-        for p in primes:
-            if i*p > n or p > spf[i]:
-                break
-            spf[i*p] = p
-    return primes
-
-
-MAX_NUM = 30
-PRIMES = linear_sieve_of_eratosthenes(MAX_NUM)
-MASKS = [0]*(MAX_NUM+1)
-for x in xrange(MAX_NUM+1):
-    y = x
-    for i, p in enumerate(PRIMES):
-        if y%p:
-            continue
-        if y%p**2 == 0:
-            MASKS[x] = 0
-            break
-        MASKS[x] |= (1<<i)
-        y //= p
-
-
 # number theory, combinatorics, bitmasks, dp
 class Solution(object):
     def squareFreeSubsets(self, nums):
@@ -40,7 +11,35 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        def linear_sieve_of_eratosthenes(n):  # Time: O(n), Space: O(n)
+            primes = []
+            spf = [-1]*(n+1)  # the smallest prime factor
+            for i in xrange(2, n+1):
+                if spf[i] == -1:
+                    spf[i] = i
+                    primes.append(i)
+                for p in primes:
+                    if i*p > n or p > spf[i]:
+                        break
+                    spf[i*p] = p
+            return primes
+
+
+        MAX_NUM = max(nums)
+        PRIMES = linear_sieve_of_eratosthenes(MAX_NUM)
+        MASKS = [0]*(MAX_NUM+1)
+        for x in xrange(MAX_NUM+1):
+            y = x
+            for i, p in enumerate(PRIMES):
+                if y%p:
+                    continue
+                if y%p**2 == 0:
+                    MASKS[x] = 0
+                    break
+                MASKS[x] |= (1<<i)
+                y //= p
         MOD = 10**9+7
+
         cnt = collections.Counter(nums)
         arr = [x for x in cnt.iterkeys() if x != 1]
         dp = [1]*(1<<len(PRIMES))
@@ -58,35 +57,6 @@ class Solution(object):
 import collections
 
 
-def linear_sieve_of_eratosthenes(n):  # Time: O(n), Space: O(n)
-    primes = []
-    spf = [-1]*(n+1)  # the smallest prime factor
-    for i in xrange(2, n+1):
-        if spf[i] == -1:
-            spf[i] = i
-            primes.append(i)
-        for p in primes:
-            if i*p > n or p > spf[i]:
-                break
-            spf[i*p] = p
-    return primes
-
-
-MAX_NUM = 30
-PRIMES = linear_sieve_of_eratosthenes(MAX_NUM)
-MASKS = [0]*(MAX_NUM+1)
-for x in xrange(MAX_NUM+1):
-    y = x
-    for i, p in enumerate(PRIMES):
-        if y%p:
-            continue
-        if y%p**2 == 0:
-            MASKS[x] = 0
-            break
-        MASKS[x] |= (1<<i)
-        y //= p
-
-
 # number theory, combinatorics, backtracking, memoization, bitmasks
 class Solution2(object):
     def squareFreeSubsets(self, nums):
@@ -94,7 +64,34 @@ class Solution2(object):
         :type nums: List[int]
         :rtype: int
         """
+        def linear_sieve_of_eratosthenes(n):  # Time: O(n), Space: O(n)
+            primes = []
+            spf = [-1]*(n+1)  # the smallest prime factor
+            for i in xrange(2, n+1):
+                if spf[i] == -1:
+                    spf[i] = i
+                    primes.append(i)
+                for p in primes:
+                    if i*p > n or p > spf[i]:
+                        break
+                    spf[i*p] = p
+            return primes
+
+        MAX_NUM = max(nums)
+        PRIMES = linear_sieve_of_eratosthenes(MAX_NUM)
+        MASKS = [0]*(MAX_NUM+1)
+        for x in xrange(MAX_NUM+1):
+            y = x
+            for i, p in enumerate(PRIMES):
+                if y%p:
+                    continue
+                if y%p**2 == 0:
+                    MASKS[x] = 0
+                    break
+                MASKS[x] |= (1<<i)
+                y //= p
         MOD = 10**9+7
+
         cnt = collections.Counter(nums)
         arr = [x for x in cnt.iterkeys() if x != 1]
         dp = [[-1]*(1<<len(PRIMES)) for i in xrange(len(arr))]
