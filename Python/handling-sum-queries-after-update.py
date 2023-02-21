@@ -1,4 +1,4 @@
-# Time:  O(nlogn + m + q)
+# Time:  O(nlogn + m + qlogn)
 # Space: O(n)
 
 # segment tree
