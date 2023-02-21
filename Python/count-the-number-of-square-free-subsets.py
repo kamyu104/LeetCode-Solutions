@@ -24,7 +24,6 @@ class Solution(object):
                     spf[i*p] = p
             return primes
 
-
         MAX_NUM = max(nums)
         PRIMES = linear_sieve_of_eratosthenes(MAX_NUM)
         MASKS = [0]*(MAX_NUM+1)
