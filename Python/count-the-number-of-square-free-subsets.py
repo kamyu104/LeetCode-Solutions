@@ -1,5 +1,5 @@
-# Time:  O(n * 2^p)
-# Space: O(n * 2^p)
+# Time:  O(n + m * 2^p)
+# Space: O(m * 2^p)
 
 import collections
 
