@@ -56,7 +56,7 @@ class Solution(object):
 import collections
 
 
-# number theory, combinatorics, backtracking, memoization, bitmasks
+# number theory, combinatorics, bitmasks, memoization
 class Solution2(object):
     def squareFreeSubsets(self, nums):
         """
@@ -94,13 +94,13 @@ class Solution2(object):
         cnt = collections.Counter(nums)
         arr = [x for x in cnt.iterkeys() if x != 1]
         dp = [[-1]*(1<<len(PRIMES)) for i in xrange(len(arr))]
-        def backtracking(i, mask):
+        def memoization(i, mask):
             if i == len(arr):
                 return 1
             if dp[i][mask] == -1:
-                dp[i][mask] = backtracking(i+1, mask)
+                dp[i][mask] = memoization(i+1, mask)
                 if MASKS[arr[i]] and MASKS[arr[i]]&mask == 0:
-                    dp[i][mask] = (dp[i][mask]+cnt[arr[i]]*backtracking(i+1, mask|MASKS[arr[i]]))%MOD
+                    dp[i][mask] = (dp[i][mask]+cnt[arr[i]]*memoization(i+1, mask|MASKS[arr[i]]))%MOD
             return dp[i][mask]
     
-        return (backtracking(0, 0)*pow(2, cnt[1], MOD)-1)%MOD if 1 in cnt else (backtracking(0, 0)-1)%MOD
+        return (memoization(0, 0)*pow(2, cnt[1], MOD)-1)%MOD if 1 in cnt else (memoization(0, 0)-1)%MOD
