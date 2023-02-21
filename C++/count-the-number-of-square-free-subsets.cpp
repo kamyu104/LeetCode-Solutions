@@ -151,12 +151,12 @@ public:
             }
             if (dp[i][mask] == -1) {
                 dp[i][mask] = memoization(i + 1, mask);
-                if (MASKS[arr[i]] && (MASKS[arr[i]] & mask) == 0) {
-                    dp[i][mask] = (dp[i][mask] + static_cast<int64_t>(cnt[arr[i]]) * memoization(i + 1, mask | MASKS[arr[i]])) % MOD;
+                if (MASKS[arr[i]] && (MASKS[arr[i]] & mask) == MASKS[arr[i]]) {
+                    dp[i][mask] = (dp[i][mask] + static_cast<int64_t>(cnt[arr[i]]) * memoization(i + 1, mask ^ MASKS[arr[i]])) % MOD;
                 }
             }
             return dp[i][mask];
         };
-        return cnt.count(1) ? ((memoization(0, 0) * powmod(2, cnt[1]) - 1) + MOD) % MOD: ((memoization(0, 0) - 1) + MOD) % MOD;
+        return cnt.count(1) ? ((memoization(0, (1 << size(PRIMES)) - 1) * powmod(2, cnt[1]) - 1) + MOD) % MOD: ((memoization(0, (1 << size(PRIMES)) - 1) - 1) + MOD) % MOD;
     }
 };
