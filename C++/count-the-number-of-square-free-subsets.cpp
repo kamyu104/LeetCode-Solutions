@@ -2,7 +2,6 @@
 // Space: O(n * 2^p)
 
 static const int MAX_NUM = 30;
-// number theory, simulation
 vector<int> linear_sieve_of_eratosthenes(int n) {  // Time: O(n), Space: O(n)
     vector<int> spf(n + 1, -1);
     vector<int> primes;
@@ -41,6 +40,7 @@ vector<int> init_masks() {
 }
 const auto& MASKS = init_masks();
 
+// number theory, combinatorics, backtracking, memoization, bitmasks
 class Solution {
 public:
     int squareFreeSubsets(vector<int>& nums) {
