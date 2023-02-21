@@ -1372,7 +1372,7 @@
 2552 | [Count Increasing Quadruplets](https://leetcode.com/problems/count-increasing-quadruplets/)| [C++](./C++/count-increasing-quadruplets.cpp) [Python](./Python/count-increasing-quadruplets.py) | _O(n^2)_    | _O(n)_          | Hard           | variant of [132 Pattern](https://leetcode.com/problems/132-pattern/) | DP, Prefix Sum
 2556 | [Disconnect Path in a Binary Matrix by at Most One Flip](https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/)| [C++](./C++/disconnect-path-in-a-binary-matrix-by-at-most-one-flip.cpp) [Python](./Python/disconnect-path-in-a-binary-matrix-by-at-most-one-flip.py) | _O(m * n)_    | _O(m + n)_          | Medium           | | DP, DFS
 2565 | [Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/)| [C++](./C++/subsequence-with-the-minimum-score.cpp) [Python](./Python/subsequence-with-the-minimum-score.py) | _O(n)_    | _O(n)_          | Hard           | | Two Pointers, DP
-2572 | [Count the Number of Square-Free Subsets](https://leetcode.com/problems/count-the-number-of-square-free-subsets/) | [C++](./C++/count-the-number-of-square-free-subsets.cpp) [Python](./Python/count-the-number-of-square-free-subsets.py) | _O(n + m * 2^p)_   | _O(m * 2^p)_        | Medium         | | Number Theory, Combinatorics, Backtracking, Memoization, Bitmasks, DP
+2572 | [Count the Number of Square-Free Subsets](https://leetcode.com/problems/count-the-number-of-square-free-subsets/) | [C++](./C++/count-the-number-of-square-free-subsets.cpp) [Python](./Python/count-the-number-of-square-free-subsets.py) | _O(n + m * 2^p)_   | _O(m * 2^p)_        | Medium         | | Number Theory, Combinatorics, Bitmasks, DP, Memoization
 
 <br/>
 <div align="right">
