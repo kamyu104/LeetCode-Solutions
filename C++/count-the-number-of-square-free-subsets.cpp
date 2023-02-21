@@ -81,7 +81,7 @@ public:
 
 // Time:  O(n + m * 2^p)
 // Space: O(m * 2^p)
-// number theory, combinatorics, backtracking, memoization, bitmasks
+// number theory, combinatorics, bitmasks, memoization
 class Solution2 {
 public:
     int squareFreeSubsets(vector<int>& nums) {
@@ -145,18 +145,18 @@ public:
             }
         }
         vector<vector<int>> dp(size(arr), vector<int>(1 << size(PRIMES), -1));
-        const function<int(int, int)> backtracking = [&](int i, int mask) {
+        const function<int(int, int)> memoization = [&](int i, int mask) {
             if (i == size(arr)) {
                 return 1;
             }
             if (dp[i][mask] == -1) {
-                dp[i][mask] = backtracking(i + 1, mask);
+                dp[i][mask] = memoization(i + 1, mask);
                 if (MASKS[arr[i]] && (MASKS[arr[i]] & mask) == 0) {
-                    dp[i][mask] = (dp[i][mask] + static_cast<int64_t>(cnt[arr[i]]) * backtracking(i + 1, mask | MASKS[arr[i]])) % MOD;
+                    dp[i][mask] = (dp[i][mask] + static_cast<int64_t>(cnt[arr[i]]) * memoization(i + 1, mask | MASKS[arr[i]])) % MOD;
                 }
             }
             return dp[i][mask];
         };
-        return cnt.count(1) ? ((backtracking(0, 0) * powmod(2, cnt[1]) - 1) + MOD) % MOD: ((backtracking(0, 0) - 1) + MOD) % MOD;
+        return cnt.count(1) ? ((memoization(0, 0) * powmod(2, cnt[1]) - 1) + MOD) % MOD: ((memoization(0, 0) - 1) + MOD) % MOD;
     }
 };
