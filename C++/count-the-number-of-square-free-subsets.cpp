@@ -69,7 +69,7 @@ public:
             if (!MASKS[x]) {
                 continue;
             }
-            for (int mask = 0; mask < size(dp); ++mask) {
+            for (int mask = size(dp) - 1; mask >= 0; --mask) {
                 if ((MASKS[x] & mask) == 0) {
                     dp[mask | MASKS[x]] = (dp[mask | MASKS[x]] + static_cast<int64_t>(cnt[x]) * dp[mask]) % MOD;
                 }
