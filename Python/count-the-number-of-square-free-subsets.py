@@ -45,7 +45,7 @@ class Solution(object):
         for x in arr:
             if not MASKS[x]:
                 continue
-            for mask in xrange(len(dp)):
+            for mask in reversed(xrange(len(dp))):
                  if MASKS[x]&mask == 0:
                     dp[mask|MASKS[x]] = (dp[mask|MASKS[x]]+cnt[x]*dp[mask])%MOD
         return (dp[-1]*pow(2, cnt[1], MOD)-1)%MOD if 1 in cnt else (dp[-1]-1)%MOD
