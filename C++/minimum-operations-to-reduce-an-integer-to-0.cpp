@@ -17,14 +17,13 @@ class Solution2 {
 public:
     int minOperations(int n) {
         int result = 0;
-        while (n) {
+        for (; n; n >>= 1) {
             if (!(n & 1)) {
-                n >>= 1;
                 continue;
             }
+            n >>= 1;
+            n += n & 1;
             ++result;
-            n += static_cast<int>(n & 0b10 == 0b10);
-            n >>= 2;
         }
         return result;
     }
