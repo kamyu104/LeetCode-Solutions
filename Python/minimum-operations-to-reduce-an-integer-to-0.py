@@ -26,10 +26,9 @@ class Solution2(object):
         """
         result = 0
         while n:
-            if not n&1:
+            if n&1:
                 n >>= 1
-                continue
-            result += 1
-            n += int(n&0b10 == 0b10)
-            n >>= 2
+                n += n&1
+                result += 1
+            n >>= 1
         return result
