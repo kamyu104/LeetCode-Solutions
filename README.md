@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2573%20%2F%202573-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2577%20%2F%202577-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -292,6 +292,8 @@
 2553 | [Separate the Digits in an Array](https://leetcode.com/problems/separate-the-digits-in-an-array/) | [C++](./C++/separate-the-digits-in-an-array.cpp) [Python](./Python/separate-the-digits-in-an-array.py) | _O(n * logr)_   | _O(1)_        | Easy         | | Array
 2559 | [Count Vowel Strings in Ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges/) | [C++](./C++/count-vowel-strings-in-ranges.cpp) [Python](./Python/count-vowel-strings-in-ranges.py) | _O(n + q)_   | _O(n)_        | Medium         | | Prefix Sum
 2569 | [Handling Sum Queries After Update](https://leetcode.com/problems/handling-sum-queries-after-update/)| [C++](./C++/handling-sum-queries-after-update.cpp) [Python](./Python/handling-sum-queries-after-update.py)| _O(nlogn + m + qlogn)_ | _O(n)_ | Hard | | Segment Tree |
+2574 | [Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences/)| [C++](./C++/left-and-right-sum-differences.cpp) [Python](./Python/left-and-right-sum-differences.py)| _O(n)_ | _O(1)_ | Easy | | Prefix Sum |
+2575 | [Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences/)| [C++](./C++/left-and-right-sum-differences.cpp) [Python](./Python/left-and-right-sum-differences.py)| _O(n)_ | _O(1)_ | Easy | | Prefix Sum |
 
 <br/>
 <div align="right">
@@ -425,6 +427,7 @@
 2490 | [Circular Sentence](https://leetcode.com/problems/circular-sentence/) | [C++](./C++/circular-sentence.cpp) [Python](./Python/circular-sentence.py) | _O(n)_   | _O(1)_        | Easy         | | String
 2496 | [Maximum Value of a String in an Array](https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/) | [C++](./C++/maximum-value-of-a-string-in-an-array.cpp) [Python](./Python/maximum-value-of-a-string-in-an-array.py) | _O(n * l)_   | _O(1)_        | Easy         | | String
 2546 | [Apply Bitwise Operations to Make Strings Equal](https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/) | [C++](./C++/apply-bitwise-operations-to-make-strings-equal.cpp) [Python](./Python/apply-bitwise-operations-to-make-strings-equal.py) | _O(n)_   | _O(1)_        | Medium         | | Constructive Algorithms
+2576 | [Find the Divisibility Array of a String](https://leetcode.com/problems/find-the-divisibility-array-of-a-string/)| [C++](./C++/find-the-divisibility-array-of-a-string.cpp) [Python](./Python/find-the-divisibility-array-of-a-string.py)| _O(n)_ | _O(1)_ | Medium | | Prefix Sum |
 
 <br/>
 <div align="right">
@@ -1124,6 +1127,7 @@
 2492 | [Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/)| [C++](./C++/minimum-score-of-a-path-between-two-cities.cpp) [Python](./Python/minimum-score-of-a-path-between-two-cities.py)| _O(n + m)_ | _O(n + m)_ | Medium | | BFS |
 2493 | [Divide Nodes Into the Maximum Number of Groups](https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/)| [C++](./C++/divide-nodes-into-the-maximum-number-of-groups.cpp) [Python](./Python/divide-nodes-into-the-maximum-number-of-groups.py)| _O(n^2)_ | _O(n)_ | Medium | variant of [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/) | BFS, DFS |
 2503 | [Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/)| [C++](./C++/maximum-number-of-points-from-grid-queries.cpp) [Python](./Python/maximum-number-of-points-from-grid-queries.py)| _O((m * n + q) * log(m * n))_ | _O(m * n)_ | Hard || BFS, Heap, Prefix Sum, Binary Search |
+2577 | [Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/)| [C++](./C++/minimum-time-to-visit-a-cell-in-a-grid.cpp) [Python](./Python/minimum-time-to-visit-a-cell-in-a-grid.py)| _O(m * n * log\(m * n\))_ | _O(m * n)_ | Hard | | `Dijkstra's Algorithm` |
 
 <br/>
 <div align="right">
@@ -1559,6 +1563,7 @@
 2567 | [Minimum Score by Changing Two Elements](https://leetcode.com/problems/minimum-score-by-changing-two-elements/) | [C++](./C++/minimum-score-by-changing-two-elements.cpp) [Python](./Python/minimum-score-by-changing-two-elements.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Greedy |
 2571 | [Minimum Operations to Reduce an Integer to 0](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/) | [C++](./C++/minimum-operations-to-reduce-an-integer-to-0.cpp) [Python](./Python/minimum-operations-to-reduce-an-integer-to-0.py) | _O(logn)_ | _O(1)_ | Medium | | Greedy, Trick |
 2573 | [Find the String with LCP](https://leetcode.com/problems/find-the-string-with-lcp/) | [C++](./C++/find-the-string-with-lcp.cpp) [Python](./Python/find-the-string-with-lcp.py) | _O(n^2)_ | _O(1)_ | Hard | | Constructive Algorithms, Greedy, DP |
+2576 | [Find the Maximum Number of Marked Indices](https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/) | [C++](./C++/find-the-maximum-number-of-marked-indices.cpp) [Python](./Python/find-the-maximum-number-of-marked-indices.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Greedy, Two Pointers |
 
 <br/>
 <div align="right">
