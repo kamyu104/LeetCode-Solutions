@@ -4,7 +4,7 @@
 import heapq
 
 
-# dijkstra
+# dijkstra's algorithm
 class Solution(object):
     def minimumTime(self, grid):
         """
