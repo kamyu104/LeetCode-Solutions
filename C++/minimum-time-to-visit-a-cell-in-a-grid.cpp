@@ -1,7 +1,7 @@
 // Time:  O(m * n * log(m * n))
 // Space: O(m * n)
 
-// dijkstra
+// dijkstra's algorithm
 class Solution {
 public:
     int minimumTime(vector<vector<int>>& grid) {
