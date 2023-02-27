@@ -293,7 +293,6 @@
 2559 | [Count Vowel Strings in Ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges/) | [C++](./C++/count-vowel-strings-in-ranges.cpp) [Python](./Python/count-vowel-strings-in-ranges.py) | _O(n + q)_   | _O(n)_        | Medium         | | Prefix Sum
 2569 | [Handling Sum Queries After Update](https://leetcode.com/problems/handling-sum-queries-after-update/)| [C++](./C++/handling-sum-queries-after-update.cpp) [Python](./Python/handling-sum-queries-after-update.py)| _O(nlogn + m + qlogn)_ | _O(n)_ | Hard | | Segment Tree |
 2574 | [Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences/)| [C++](./C++/left-and-right-sum-differences.cpp) [Python](./Python/left-and-right-sum-differences.py)| _O(n)_ | _O(1)_ | Easy | | Prefix Sum |
-2575 | [Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences/)| [C++](./C++/left-and-right-sum-differences.cpp) [Python](./Python/left-and-right-sum-differences.py)| _O(n)_ | _O(1)_ | Easy | | Prefix Sum |
 
 <br/>
 <div align="right">
@@ -427,7 +426,7 @@
 2490 | [Circular Sentence](https://leetcode.com/problems/circular-sentence/) | [C++](./C++/circular-sentence.cpp) [Python](./Python/circular-sentence.py) | _O(n)_   | _O(1)_        | Easy         | | String
 2496 | [Maximum Value of a String in an Array](https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/) | [C++](./C++/maximum-value-of-a-string-in-an-array.cpp) [Python](./Python/maximum-value-of-a-string-in-an-array.py) | _O(n * l)_   | _O(1)_        | Easy         | | String
 2546 | [Apply Bitwise Operations to Make Strings Equal](https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/) | [C++](./C++/apply-bitwise-operations-to-make-strings-equal.cpp) [Python](./Python/apply-bitwise-operations-to-make-strings-equal.py) | _O(n)_   | _O(1)_        | Medium         | | Constructive Algorithms
-2576 | [Find the Divisibility Array of a String](https://leetcode.com/problems/find-the-divisibility-array-of-a-string/)| [C++](./C++/find-the-divisibility-array-of-a-string.cpp) [Python](./Python/find-the-divisibility-array-of-a-string.py)| _O(n)_ | _O(1)_ | Medium | | Prefix Sum |
+2575 | [Find the Divisibility Array of a String](https://leetcode.com/problems/find-the-divisibility-array-of-a-string/)| [C++](./C++/find-the-divisibility-array-of-a-string.cpp) [Python](./Python/find-the-divisibility-array-of-a-string.py)| _O(n)_ | _O(1)_ | Medium | | Prefix Sum |
 
 <br/>
 <div align="right">
