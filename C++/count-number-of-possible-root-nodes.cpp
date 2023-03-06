@@ -1,5 +1,5 @@
 // Time:  O(n) 
-// Space: O(n)
+// Space: O(h)
 
 // iterative dfs
 class Solution {
@@ -69,7 +69,7 @@ private:
 };
 
 // Time:  O(n) 
-// Space: O(n)
+// Space: O(h)
 // dfs
 class Solution2 {
 public:
