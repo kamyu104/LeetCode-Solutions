@@ -843,7 +843,7 @@
 2568 | [Minimum Impossible OR](https://leetcode.com/problems/minimum-impossible-or/) | [C++](./C++/minimum-impossible-or.cpp) [Python](./Python/minimum-impossible-or.py) | _O(logr)_   | _O(1)_        | Medium         | | Math, Hash Table, Bit Manipulations
 2579 | [Count Total Number of Colored Cells](https://leetcode.com/problems/count-total-number-of-colored-cells/) | [C++](./C++/count-total-number-of-colored-cells.cpp) [Python](./Python/count-total-number-of-colored-cells.py) | _O(1)_   | _O(1)_        | Medium         | | Math
 2582 | [Pass the Pillow](https://leetcode.com/problems/pass-the-pillow/) | [C++](./C++/pass-the-pillow.cpp) [Python](./Python/pass-the-pillow.py) | _O(1)_   | _O(1)_        | Medium         | | Math
-2582 | [Split the Array to Make Coprime Products](https://leetcode.com/problems/split-the-array-to-make-coprime-products/) | [C++](./C++/split-the-array-to-make-coprime-products.cpp) [Python](./Python/split-the-array-to-make-coprime-products.py) | _O(n * sqrt(r))_   | _O(sqrt(r))_        | Hard         | | Math, Number Theory
+2584 | [Split the Array to Make Coprime Products](https://leetcode.com/problems/split-the-array-to-make-coprime-products/) | [C++](./C++/split-the-array-to-make-coprime-products.cpp) [Python](./Python/split-the-array-to-make-coprime-products.py) | _O(n * sqrt(r))_   | _O(sqrt(r))_        | Hard         | | Math, Number Theory
 
 <br/>
 <div align="right">
