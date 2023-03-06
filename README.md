@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2577%20%2F%202577-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2585%20%2F%202585-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -293,6 +293,7 @@
 2559 | [Count Vowel Strings in Ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges/) | [C++](./C++/count-vowel-strings-in-ranges.cpp) [Python](./Python/count-vowel-strings-in-ranges.py) | _O(n + q)_   | _O(n)_        | Medium         | | Prefix Sum
 2569 | [Handling Sum Queries After Update](https://leetcode.com/problems/handling-sum-queries-after-update/)| [C++](./C++/handling-sum-queries-after-update.cpp) [Python](./Python/handling-sum-queries-after-update.py)| _O(nlogn + m + qlogn)_ | _O(n)_ | Hard | | Segment Tree |
 2574 | [Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences/)| [C++](./C++/left-and-right-sum-differences.cpp) [Python](./Python/left-and-right-sum-differences.py)| _O(n)_ | _O(1)_ | Easy | | Prefix Sum |
+2580 | [Count Ways to Group Overlapping Ranges](https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/)| [C++](./C++/count-ways-to-group-overlapping-ranges.cpp) [Python](./Python/count-ways-to-group-overlapping-ranges.py)| _O(nlogn)_ | _O(1)_ | Medium | | Sort, Array |
 
 <br/>
 <div align="right">
@@ -840,6 +841,9 @@
 2550 | [Count Collisions of Monkeys on a Polygon](https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/) | [C++](./C++/count-collisions-of-monkeys-on-a-polygon.cpp) [Python](./Python/count-collisions-of-monkeys-on-a-polygon.py) | _O(logn)_   | _O(1)_        | Medium         | | Combinatorics, Fast Exponentiation
 2562 | [Find the Array Concatenation Value](https://leetcode.com/problems/find-the-array-concatenation-value/) | [C++](./C++/find-the-array-concatenation-value.cpp) [Python](./Python/find-the-array-concatenation-value.py) | _O(nlogr)_   | _O(1)_        | Easy         | | Math
 2568 | [Minimum Impossible OR](https://leetcode.com/problems/minimum-impossible-or/) | [C++](./C++/minimum-impossible-or.cpp) [Python](./Python/minimum-impossible-or.py) | _O(logr)_   | _O(1)_        | Medium         | | Math, Hash Table, Bit Manipulations
+2579 | [Count Total Number of Colored Cells](https://leetcode.com/problems/count-total-number-of-colored-cells/) | [C++](./C++/count-total-number-of-colored-cells.cpp) [Python](./Python/count-total-number-of-colored-cells.py) | _O(1)_   | _O(1)_        | Medium         | | Math
+2582 | [Pass the Pillow](https://leetcode.com/problems/pass-the-pillow/) | [C++](./C++/pass-the-pillow.cpp) [Python](./Python/pass-the-pillow.py) | _O(1)_   | _O(1)_        | Medium         | | Math
+2582 | [Split the Array to Make Coprime Products](https://leetcode.com/problems/split-the-array-to-make-coprime-products/) | [C++](./C++/split-the-array-to-make-coprime-products.cpp) [Python](./Python/split-the-array-to-make-coprime-products.py) | _O(n * sqrt(r))_   | _O(sqrt(r))_        | Hard         | | Math, Number Theory
 
 <br/>
 <div align="right">
@@ -1127,6 +1131,7 @@
 2493 | [Divide Nodes Into the Maximum Number of Groups](https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/)| [C++](./C++/divide-nodes-into-the-maximum-number-of-groups.cpp) [Python](./Python/divide-nodes-into-the-maximum-number-of-groups.py)| _O(n^2)_ | _O(n)_ | Medium | variant of [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/) | BFS, DFS |
 2503 | [Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/)| [C++](./C++/maximum-number-of-points-from-grid-queries.cpp) [Python](./Python/maximum-number-of-points-from-grid-queries.py)| _O((m * n + q) * log(m * n))_ | _O(m * n)_ | Hard || BFS, Heap, Prefix Sum, Binary Search |
 2577 | [Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/)| [C++](./C++/minimum-time-to-visit-a-cell-in-a-grid.cpp) [Python](./Python/minimum-time-to-visit-a-cell-in-a-grid.py)| _O(m * n * log\(m * n\))_ | _O(m * n)_ | Hard | | `Dijkstra's Algorithm` |
+2583 | [Kth Largest Sum in a Binary Tree](https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/)| [C++](./C++/kth-largest-sum-in-a-binary-tree.cpp) [Python](./Python/kth-largest-sum-in-a-binary-tree.py)| _O(n)_ | _O(n)_ | Medium | | BFS, Quick Select |
 
 <br/>
 <div align="right">
@@ -1171,6 +1176,7 @@
 2458 | [Height of Binary Tree After Subtree Removal Queries](https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/)| [C++](./C++/height-of-binary-tree-after-subtree-removal-queries.cpp) [Python](./Python/height-of-binary-tree-after-subtree-removal-queries.py)| _O(n)_ | _O(n)_ | Hard | | Tree, DFS |
 2467 | [Most Profitable Path in a Tree](https://leetcode.com/problems/most-profitable-path-in-a-tree/)| [C++](./C++/most-profitable-path-in-a-tree.cpp) [Python](./Python/most-profitable-path-in-a-tree.py)| _O(n)_ | _O(n)_ | Medium | | Tree, DFS |
 2477 | [Minimum Fuel Cost to Report to the Capital](https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital/)| [C++](./C++/minimum-fuel-cost-to-report-to-the-capital.cpp) [Python](./Python/minimum-fuel-cost-to-report-to-the-capital.py)| _O(n)_ | _O(h)_ | Medium | | Tree, DFS |
+2581 | [Count Number of Possible Root Nodes](https://leetcode.com/problems/count-number-of-possible-root-nodes/)| [C++](./C++/count-number-of-possible-root-nodes.cpp) [Python](./Python/count-number-of-possible-root-nodes.py)| _O(n)_ | _O(h)_ | Hard | | Tree, DFS |
 
 <br/>
 <div align="right">
@@ -1376,6 +1382,7 @@
 2556 | [Disconnect Path in a Binary Matrix by at Most One Flip](https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/)| [C++](./C++/disconnect-path-in-a-binary-matrix-by-at-most-one-flip.cpp) [Python](./Python/disconnect-path-in-a-binary-matrix-by-at-most-one-flip.py) | _O(m * n)_    | _O(m + n)_          | Medium           | | DP, DFS
 2565 | [Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/)| [C++](./C++/subsequence-with-the-minimum-score.cpp) [Python](./Python/subsequence-with-the-minimum-score.py) | _O(n)_    | _O(n)_          | Hard           | | Two Pointers, DP
 2572 | [Count the Number of Square-Free Subsets](https://leetcode.com/problems/count-the-number-of-square-free-subsets/) | [C++](./C++/count-the-number-of-square-free-subsets.cpp) [Python](./Python/count-the-number-of-square-free-subsets.py) | _O(n + m * 2^p)_   | _O(m * 2^p)_        | Medium         | | Number Theory, Combinatorics, Bitmasks, Memoization, DP
+2585 | [Number of Ways to Earn Points](https://leetcode.com/problems/number-of-ways-to-earn-points/) | [C++](./C++/number-of-ways-to-earn-points.cpp) [Python](./Python/number-of-ways-to-earn-points.py) | _O(n * t * c)_   | _O(t)_        | Hard         | | Knapsack DP
 
 <br/>
 <div align="right">
@@ -1563,6 +1570,7 @@
 2571 | [Minimum Operations to Reduce an Integer to 0](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/) | [C++](./C++/minimum-operations-to-reduce-an-integer-to-0.cpp) [Python](./Python/minimum-operations-to-reduce-an-integer-to-0.py) | _O(logn)_ | _O(1)_ | Medium | | Greedy, Trick |
 2573 | [Find the String with LCP](https://leetcode.com/problems/find-the-string-with-lcp/) | [C++](./C++/find-the-string-with-lcp.cpp) [Python](./Python/find-the-string-with-lcp.py) | _O(n^2)_ | _O(1)_ | Hard | | Constructive Algorithms, Greedy, DP |
 2576 | [Find the Maximum Number of Marked Indices](https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/) | [C++](./C++/find-the-maximum-number-of-marked-indices.cpp) [Python](./Python/find-the-maximum-number-of-marked-indices.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Greedy, Two Pointers |
+2578 | [Split With Minimum Sum](https://leetcode.com/problems/split-with-minimum-sum/) | [C++](./C++/split-with-minimum-sum.cpp) [Python](./Python/split-with-minimum-sum.py) | _O(mlogm)_ | _O(m)_ | Easy | | Sort, Greedy |
 
 <br/>
 <div align="right">
