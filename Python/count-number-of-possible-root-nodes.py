@@ -38,7 +38,6 @@ class Solution(object):
             adj[u].append(v)
             adj[v].append(u)
         lookup = {(u, v) for u, v in guesses}
-        parents = {}
         curr = dfs(0, -1)
         return dfs2(0, -1, curr)
 
