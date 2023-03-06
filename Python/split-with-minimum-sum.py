@@ -1,4 +1,4 @@
-# Time:  O(mlogm), m = logn
+# Time:  O(mlogm), m = O(logn)
 # Space: O(m)
 
 # sort, greedy
