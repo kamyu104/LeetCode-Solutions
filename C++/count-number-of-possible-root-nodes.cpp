@@ -30,7 +30,6 @@ public:
             return result;
         };
         const auto& iter_dfs2 = [&](int curr) {
-            
             int result = 0;
             vector<tuple<int, int, int>> stk = {{0, -1, curr}};
             while (!empty(stk)) {
