@@ -19,7 +19,6 @@ vector<int> linear_sieve_of_eratosthenes(int n) {  // Time: O(n), Space: O(n)
         }
     }
     return primes;  // len(primes) = O(n/(logn-1)), reference: https://math.stackexchange.com/questions/264544/how-to-find-number-of-prime-numbers-up-to-to-n
-
 }
 
 const int MAX_N = 1000;
