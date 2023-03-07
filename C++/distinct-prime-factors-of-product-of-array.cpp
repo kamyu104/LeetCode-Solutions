@@ -30,7 +30,7 @@ public:
         unordered_set<int> result;
         for (auto x : unordered_set<int>(cbegin(nums), cend(nums))) {  // Time: O(n/p1 + n/p2 + ... + n/pk) = O(n * (1/p1 + 1/p2 + ... + 1/pk)) = O(nlog(logn))
             for (const auto& p : PRIMES) {
-                if (p * p > x) {
+                if (p > x) {
                     break;
                 }
                 if (x % p) {
