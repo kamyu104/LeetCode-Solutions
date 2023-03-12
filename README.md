@@ -1574,7 +1574,7 @@
 2576 | [Find the Maximum Number of Marked Indices](https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/) | [C++](./C++/find-the-maximum-number-of-marked-indices.cpp) [Python](./Python/find-the-maximum-number-of-marked-indices.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Greedy, Two Pointers |
 2578 | [Split With Minimum Sum](https://leetcode.com/problems/split-with-minimum-sum/) | [C++](./C++/split-with-minimum-sum.cpp) [Python](./Python/split-with-minimum-sum.py) | _O(mlogm)_ | _O(m)_ | Easy | | Sort, Greedy |
 2587 | [Rearrange Array to Maximize Prefix Score](https://leetcode.com/problems/rearrange-array-to-maximize-prefix-score/) | [C++](./C++/rearrange-array-to-maximize-prefix-score.cpp) [Python](./Python/rearrange-array-to-maximize-prefix-score.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Greedy |
-2589 | [Minimum Time to Complete All Tasks](https://leetcode.com/problems/minimum-time-to-complete-all-tasks/) | [C++](./C++/minimum-time-to-complete-all-tasks.cpp) [Python](./Python/minimum-time-to-complete-all-tasks.py) | _O(nlogn + n * r)_ | _O(r)_ | Hard | | Sort, Greedy, BIT, Fenwick Tree |
+2589 | [Minimum Time to Complete All Tasks](https://leetcode.com/problems/minimum-time-to-complete-all-tasks/) | [C++](./C++/minimum-time-to-complete-all-tasks.cpp) [Python](./Python/minimum-time-to-complete-all-tasks.py) | _O(nlogn + n * r)_ | _O(r)_ | Hard | | Sort, Greedy |
 
 <br/>
 <div align="right">
