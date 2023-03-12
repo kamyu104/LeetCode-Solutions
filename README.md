@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2585%20%2F%202585-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2589%20%2F%202589-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -428,6 +428,7 @@
 2496 | [Maximum Value of a String in an Array](https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/) | [C++](./C++/maximum-value-of-a-string-in-an-array.cpp) [Python](./Python/maximum-value-of-a-string-in-an-array.py) | _O(n * l)_   | _O(1)_        | Easy         | | String
 2546 | [Apply Bitwise Operations to Make Strings Equal](https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/) | [C++](./C++/apply-bitwise-operations-to-make-strings-equal.cpp) [Python](./Python/apply-bitwise-operations-to-make-strings-equal.py) | _O(n)_   | _O(1)_        | Medium         | | Constructive Algorithms
 2575 | [Find the Divisibility Array of a String](https://leetcode.com/problems/find-the-divisibility-array-of-a-string/)| [C++](./C++/find-the-divisibility-array-of-a-string.cpp) [Python](./Python/find-the-divisibility-array-of-a-string.py)| _O(n)_ | _O(1)_ | Medium | | Prefix Sum |
+2586 | [Count the Number of Vowel Strings in Range](https://leetcode.com/problems/count-the-number-of-vowel-strings-in-rang/)| [C++](./C++/count-the-number-of-vowel-strings-in-rang.cpp) [Python](./Python/count-the-number-of-vowel-strings-in-rang.py)| _O(n)_ | _O(1)_ | Medium | | String |
 
 <br/>
 <div align="right">
@@ -678,6 +679,7 @@
 2506 | [Count Pairs Of Similar Strings](https://leetcode.com/problems/count-pairs-of-similar-strings/) | [C++](./C++/count-pairs-of-similar-strings.cpp) [Python](./Python/count-pairs-of-similar-strings.py) | _O(n * l)_ | _O(n)_ | Easy | | Freq Table, Bitmask
 2531 | [Make Number of Distinct Characters Equal](https://leetcode.com/problems/make-number-of-distinct-characters-equal/) | [C++](./C++/make-number-of-distinct-characters-equal.cpp) [Python](./Python/make-number-of-distinct-characters-equal.py) | _O(m + n)_ | _O(1)_ | Medium | | Freq Table
 2564 | [Substring XOR Queries](https://leetcode.com/problems/substring-xor-queries/) | [C++](./C++/substring-xor-queries.cpp) [Python](./Python/substring-xor-queries.py) | _O(n * logr + q)_ | _O(min(n * logr, r))_ | Medium | | Hash Table
+2588 | [Count the Number of Beautiful Subarrays](https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/) | [C++](./C++/count-the-number-of-beautiful-subarrays.cpp) [Python](./Python/count-the-number-of-beautiful-subarrays.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Combinatorics
 
 <br/>
 <div align="right">
@@ -1571,6 +1573,8 @@
 2573 | [Find the String with LCP](https://leetcode.com/problems/find-the-string-with-lcp/) | [C++](./C++/find-the-string-with-lcp.cpp) [Python](./Python/find-the-string-with-lcp.py) | _O(n^2)_ | _O(1)_ | Hard | | Constructive Algorithms, Greedy, DP |
 2576 | [Find the Maximum Number of Marked Indices](https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/) | [C++](./C++/find-the-maximum-number-of-marked-indices.cpp) [Python](./Python/find-the-maximum-number-of-marked-indices.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Greedy, Two Pointers |
 2578 | [Split With Minimum Sum](https://leetcode.com/problems/split-with-minimum-sum/) | [C++](./C++/split-with-minimum-sum.cpp) [Python](./Python/split-with-minimum-sum.py) | _O(mlogm)_ | _O(m)_ | Easy | | Sort, Greedy |
+2587 | [Rearrange Array to Maximize Prefix Score](https://leetcode.com/problems/rearrange-array-to-maximize-prefix-score/) | [C++](./C++/rearrange-array-to-maximize-prefix-score.cpp) [Python](./Python/rearrange-array-to-maximize-prefix-score.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Greedy |
+2589 | [Minimum Time to Complete All Tasks](https://leetcode.com/problems/minimum-time-to-complete-all-tasks/) | [C++](./C++/minimum-time-to-complete-all-tasks.cpp) [Python](./Python/minimum-time-to-complete-all-tasks.py) | _O(nlogn + nlogr)_ | _O(r)_ | Hard | | Sort, Greedy, BIT, Fenwick Tree |
 
 <br/>
 <div align="right">
