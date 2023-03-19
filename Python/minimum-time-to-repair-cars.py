@@ -1,4 +1,4 @@
-# Time:  O(mx * log(mn * c^2)) = O(mx * max(logc, logmn)) = O(mx * logc), r = len(ranks), c = cars, mx = max(ranks), mn = min(ranks)
+# Time:  O(mx * log(mn * c^2)) = O(mx * (logc + log(mn))), c = cars, mx = max(ranks), mn = min(ranks)
 # Space: O(1)
 
 import collections
