@@ -33,7 +33,7 @@ import heapq
 
 
 # freq table, heap, simulation
-class Solution(object):
+class Solution2(object):
     def repairCars(self, ranks, cars):
         """
         :type ranks: List[int]
