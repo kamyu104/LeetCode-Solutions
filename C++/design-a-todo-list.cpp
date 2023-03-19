@@ -46,7 +46,6 @@ public:
             return;
         }
         user_taskids_[to_string(userId)].erase(std::get<0>(tasks_[taskId - 1]));
-
     }
 
 private:
