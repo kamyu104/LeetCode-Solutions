@@ -4,7 +4,7 @@
 import collections
 
 
-# binary search
+# freq table, binary search
 class Solution(object):
     def repairCars(self, ranks, cars):
         """
@@ -31,7 +31,8 @@ class Solution(object):
 import collections
 import heapq
 
-# heap, simulation
+
+# freq table, heap, simulation
 class Solution(object):
     def repairCars(self, ranks, cars):
         """
