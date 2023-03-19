@@ -26,7 +26,7 @@ class Solution(object):
         return left
 
 
-# Time:  O(c * logmx), c = cars, mx = max(ranks)
+# Time:  O(c * log(mx)), c = cars, mx = max(ranks)
 # Space: O(mx)
 import collections
 import heapq
