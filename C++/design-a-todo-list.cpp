@@ -3,6 +3,7 @@
 //        getAllTasks:    O(r), r is the length of result
 //        getTasksForTag: O(r * c), r is the length of result, c is the length of the tag
 //        completeTask:   O(l + logn)
+// Space: O(n)
 
 // bst
 class TodoList {
@@ -58,6 +59,7 @@ private:
 //        getAllTasks:    O(r), r is the length of result
 //        getTasksForTag: O(r), r is the length of result
 //        completeTask:   O(l + t * logn)
+// Space: O(n)
 // bst
 class TodoList2 {
 public:
