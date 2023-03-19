@@ -1,6 +1,9 @@
 # Time:  O(n)
 # Space: O(k), k = value
 
+import collections
+
+
 # freq table
 class Solution(object):
     def findSmallestInteger(self, nums, value):
@@ -16,6 +19,9 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(k), k = value
+import collections
+
+
 # freq table
 class Solution2(object):
     def findSmallestInteger(self, nums, value):
