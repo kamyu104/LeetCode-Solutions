@@ -3,6 +3,7 @@
 #        getAllTasks:    O(r), r is the length of result
 #        getTasksForTag: O(r * c), r is the length of result, c is the length of the tag
 #        completeTask:   O(l + logn)
+# Space: O(n)
 
 from sortedcontainers import SortedList
 
@@ -62,6 +63,7 @@ class TodoList(object):
 #        getAllTasks:    O(r), r is the length of result
 #        getTasksForTag: O(r), r is the length of result
 #        completeTask:   O(l + t * logn)
+# Space: O(n)
 from sortedcontainers import SortedList
 
 
