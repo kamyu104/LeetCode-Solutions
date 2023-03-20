@@ -8,7 +8,7 @@ public:
         sort(begin(nums), end(nums));
         int left = 0;
         for (int right = (size(nums) + 1) / 2; right < size(nums); ++right) {
-            if (2 * nums[left] <= nums[right]) {
+            if (nums[right] >= 2 * nums[left]) {
                 ++left;
             }
         }
@@ -25,7 +25,7 @@ public:
         sort(begin(nums), end(nums));
         int left = 0;
         for (int right = 0; right < size(nums); ++right) {
-            if (2 * nums[left] <= nums[right]) {
+            if (nums[right] >= 2 * nums[left]) {
                 ++left;
             }
         }
