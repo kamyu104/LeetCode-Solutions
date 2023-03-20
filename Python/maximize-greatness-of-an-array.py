@@ -14,7 +14,7 @@ class Solution(object):
 # Time:  O(nlogn)
 # Space: O(1)
 # sort, greedy, two pointers
-class Solution(object):
+class Solution2(object):
     def maximizeGreatness(self, nums):
         """
         :type nums: List[int]
@@ -23,6 +23,6 @@ class Solution(object):
         nums.sort()
         left = 0
         for right in xrange(len(nums)):
-          if nums[right] > nums[left]:
-            left += 1
+            if nums[right] > nums[left]:
+                left += 1
         return left
