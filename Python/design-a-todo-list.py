@@ -26,7 +26,6 @@ class TodoList(object):
         self.__tasks.append([dueDate, taskDescription, set(tags)])
         self.__user_task_ids[userId].add((dueDate, len(self.__tasks)))
         return len(self.__tasks)
-        
 
     def getAllTasks(self, userId):
         """
@@ -87,7 +86,6 @@ class TodoList2(object):
         for tag in self.__tasks[-1][-1]:
             self.__user_task_ids[userId, tag].add((dueDate, len(self.__tasks)))
         return len(self.__tasks)
-        
 
     def getAllTasks(self, userId):
         """
