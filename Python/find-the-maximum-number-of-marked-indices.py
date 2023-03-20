@@ -11,7 +11,7 @@ class Solution(object):
         nums.sort()
         left = 0
         for right in xrange((len(nums)+1)//2, len(nums)):
-            if 2*nums[left] <= nums[right]:
+            if nums[right] >= 2*nums[left]:
                 left += 1
         return left*2
 
@@ -28,6 +28,6 @@ class Solution2(object):
         nums.sort()
         left = 0
         for right in xrange(len(nums)):
-            if 2*nums[left] <= nums[right]:
+            if nums[right] >= 2*nums[left]:
                 left += 1
         return min(left, len(nums)//2)*2
