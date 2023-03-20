@@ -6,13 +6,13 @@ class Solution {
 public:
     int maxNumOfMarkedIndices(vector<int>& nums) {
         sort(begin(nums), end(nums));
-        int right = size(nums) - 1;
-        for (int left = size(nums) / 2 - 1; left >= 0; --left) {
+        int left = 0;
+        for (int right = (size(nums) + 1) / 2; right < size(nums); ++right) {
             if (2 * nums[left] <= nums[right]) {
-                --right;
+                ++left;
             }
         }
-        return ((size(nums) - 1) - right) * 2;
+        return left * 2;
     }
 };
 
