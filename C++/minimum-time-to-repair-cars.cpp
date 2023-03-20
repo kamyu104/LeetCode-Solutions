@@ -1,5 +1,5 @@
 // Time:  O(mx * log(mn * c^2)) = O(mx * (logc + log(mn))), c = cars, mx = max(ranks), mn = min(ranks)
-// Space: O(1)
+// Space: O(mx)
 
 // freq table, binary search
 class Solution {
