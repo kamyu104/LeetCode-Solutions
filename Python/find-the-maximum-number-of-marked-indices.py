@@ -26,8 +26,8 @@ class Solution2(object):
         :rtype: int
         """
         nums.sort()
-        right = len(nums)-1
-        for left in reversed(xrange(len(nums))):
+        left = 0
+        for right in xrange(len(nums)):
             if 2*nums[left] <= nums[right]:
-                right -= 1
-        return min(((len(nums)-1)-right), len(nums)//2)*2
+                left += 1
+        return min(left, len(nums)//2)*2
