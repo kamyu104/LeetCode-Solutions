@@ -9,11 +9,11 @@ class Solution(object):
         :rtype: int
         """
         nums.sort()
-        right = len(nums)-1
-        for left in reversed(xrange(len(nums)//2)):
+        left = 0
+        for right in xrange((len(nums)+1)//2, len(nums)):
             if 2*nums[left] <= nums[right]:
-                right -= 1
-        return ((len(nums)-1)-right)*2
+                left += 1
+        return left*2
 
 
 # Time:  O(nlogn)
