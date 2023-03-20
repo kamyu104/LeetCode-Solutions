@@ -1,5 +1,5 @@
 // Time:  ctor:           O(1)
-//        addTask:        O(l + logn), n is the number of user's tasks, l is the max length of a task, t is number of tags
+//        addTask:        O(l + logn), n is the number of user's tasks, l is the max length of a task
 //        getAllTasks:    O(r), r is the length of result
 //        getTasksForTag: O(r * c), r is the length of result, c is the length of the tag
 //        completeTask:   O(l + logn)
@@ -55,7 +55,7 @@ private:
 };
 
 // Time:  ctor:           O(1)
-//        addTask:        O(l + t * logn), n is the number of user's tasks, l is the max length of a task, t is number of tags
+//        addTask:        O(l + t * logn), n is the number of user's tasks, l is the max length of a task, t is the number of tags
 //        getAllTasks:    O(r), r is the length of result
 //        getTasksForTag: O(r), r is the length of result
 //        completeTask:   O(l + t * logn)
