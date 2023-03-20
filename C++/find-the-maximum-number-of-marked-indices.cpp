@@ -23,12 +23,12 @@ class Solution2 {
 public:
     int maxNumOfMarkedIndices(vector<int>& nums) {
         sort(begin(nums), end(nums));
-        int right = size(nums) - 1;
-        for (int left = size(nums) - 1; left >= 0; --left) {
+        int left = 0;
+        for (int right = 0; right < size(nums); ++right) {
             if (2 * nums[left] <= nums[right]) {
-                --right;
+                ++left;
             }
         }
-        return min(((size(nums) - 1) - right), size(nums) / 2) * 2;
+        return min(left, static_cast<int>(size(nums) / 2)) * 2;
     }
 };
