@@ -34,7 +34,7 @@ class Solution2(object):
         nums.sort()
         result = -1
         for x in nums:
-            sqrt_x = int(x**0.5+0.5)
+            sqrt_x = int(x**0.5)
             if sqrt_x**2 == x:
                 dp[x] = dp[sqrt_x]+1
             else:
