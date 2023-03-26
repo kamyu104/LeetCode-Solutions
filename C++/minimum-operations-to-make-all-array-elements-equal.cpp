@@ -1,7 +1,7 @@
 // Time:  O(nlogn + qlogn)
 // Space: O(n)
 
-// binary search, prefix sum
+// sort, binary search, prefix sum
 class Solution {
 public:
     vector<long long> minOperations(vector<int>& nums, vector<int>& queries) {
