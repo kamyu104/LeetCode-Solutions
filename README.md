@@ -1063,7 +1063,7 @@
 2557 | [Maximum Number of Integers to Choose From a Range II](https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-ii/) | [C++](./C++/maximum-number-of-integers-to-choose-from-a-range-ii.cpp) [Python](./Python/maximum-number-of-integers-to-choose-from-a-range-ii.py) | _O(b)_ | _O(b)_ | Medium | 🔒 | Math, Binary Search, Prefix Sum |
 2560 | [House Robber IV](https://leetcode.com/problems/house-robber-iv/) | [C++](./C++/house-robber-iv.cpp) [Python](./Python/house-robber-iv.py) | _O(nlogn)_ | _O(n)_ | Medium | | Binary Search, Greedy |
 2594 | [Minimum Time to Repair Cars](https://leetcode.com/problems/minimum-time-to-repair-cars/) | [C++](./C++/minimum-time-to-repair-cars.cpp) [Python](./Python/minimum-time-to-repair-cars.py) | _O(mx * (logc + log(mn)))_ | _O(mx)_ | Medium | | Freq Table, Binary Search, Heap, Simulation |
-2602 | [Minimum Operations to Make All Array Elements Equal](https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/) | [C++](./C++/minimum-operations-to-make-all-array-elements-equal.cpp) [Python](./Python/minimum-operations-to-make-all-array-elements-equal.py) | _O(nlogn + qlogn)_ | _O(n)_ | Medium | | Binary Search, Prefix Sum |
+2602 | [Minimum Operations to Make All Array Elements Equal](https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/) | [C++](./C++/minimum-operations-to-make-all-array-elements-equal.cpp) [Python](./Python/minimum-operations-to-make-all-array-elements-equal.py) | _O(nlogn + qlogn)_ | _O(n)_ | Medium | | Sort, Binary Search, Prefix Sum |
 
 <br/>
 <div align="right">
