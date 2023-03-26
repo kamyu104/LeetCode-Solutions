@@ -22,7 +22,7 @@ vector<int> linear_sieve_of_eratosthenes(int n) {  // Time: O(n), Space: O(n)
 }
 
 const int MAX_N = 1000;
-const auto& PRIMES = linear_sieve_of_eratosthenes(sqrt(MAX_N) + 0.5);
+const auto& PRIMES = linear_sieve_of_eratosthenes(sqrt(MAX_N));
 class Solution {
 public:
     int distinctPrimeFactors(vector<int>& nums) {
