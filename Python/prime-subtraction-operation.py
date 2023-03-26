@@ -4,7 +4,7 @@
 import bisect
 
 
-# number theory, greedy
+# number theory, greedy, binary search
 def linear_sieve_of_eratosthenes(n):
     primes = []
     spf = [-1]*(n+1)  # the smallest prime factor
