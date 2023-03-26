@@ -1,7 +1,7 @@
 # Time:  O(1)
 # Space: O(1)
 
-# math
+# greedy, math
 class Solution(object):
     def kItemsWithMaximumSum(self, numOnes, numZeros, numNegOnes, k):
         """
