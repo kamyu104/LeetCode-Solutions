@@ -21,7 +21,7 @@ vector<int> linear_sieve_of_eratosthenes(int n) {  // Time: O(n), Space: O(n)
 }
 
 const int MAX_N = 1e5;
-const auto& PRIMES = linear_sieve_of_eratosthenes(static_cast<int>(sqrt(MAX_N) + 0.5));
+const auto& PRIMES = linear_sieve_of_eratosthenes(static_cast<int>(sqrt(MAX_N)));
 class Solution {
 public:
     int smallestValue(int n) {
