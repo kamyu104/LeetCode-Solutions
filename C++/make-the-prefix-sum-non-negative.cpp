@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// greedy, heap
+// prefix sum, greedy, heap
 class Solution {
 public:
     int makePrefSumNonNegative(vector<int>& nums) {
