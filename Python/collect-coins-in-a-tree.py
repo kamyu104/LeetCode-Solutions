@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# graph
+# tree, bfs
 class Solution(object):
     def collectTheCoins(self, coins, edges):
         """
@@ -16,14 +16,16 @@ class Solution(object):
             adj[u].add(v)
             adj[v].add(u)
         n = len(coins)
+        q = []
         for u in xrange(len(coins)):
             while len(adj[u]) == 1 and not coins[u]:
                 v = adj[u].pop()
                 adj[v].remove(u)
                 n -= 1
                 u = v
+        q = [u for u in xrange(len(coins)) if len(adj[u]) == 1]
         for _ in xrange(DISTANCE):
-            q = [u for u in xrange(len(coins)) if len(adj[u]) == 1]
+            new_q = []
             for u in q:
                 if not adj[u]:
                     assert(n == 1)
@@ -31,4 +33,7 @@ class Solution(object):
                 v = adj[u].pop()
                 adj[v].remove(u)
                 n -= 1
+                if len(adj[v]) == 1:
+                    new_q.append(v)
+            q = new_q
         return (n-1)*2
