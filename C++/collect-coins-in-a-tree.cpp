@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// graph
+// tree, bfs
 class Solution {
 public:
     int collectTheCoins(vector<int>& coins, vector<vector<int>>& edges) {
@@ -23,13 +23,14 @@ public:
                 u = v;
             }
         }
-        for (int _ = 0; _ < DISTANCE; ++_) {
-            vector<int> q;
-            for (int u = 0; u < size(coins); ++u) {
-                if (size(adj[u]) == 1) {
-                    q.emplace_back(u);
-                }
+        vector<int> q;
+        for (int u = 0; u < size(coins); ++u) {
+            if (size(adj[u]) == 1) {
+                q.emplace_back(u);
             }
+        }
+        for (int _ = 0; _ < DISTANCE; ++_) {
+            vector<int> new_q;
             for (const auto& u : q) {
                 if (empty(adj[u])) {
                     assert(n == 1);
@@ -39,7 +40,11 @@ public:
                 adj[u].erase(v);
                 adj[v].erase(u);
                 --n;
+                if (size(adj[v]) == 1) {
+                    new_q.emplace_back(v);
+                }
             }
+            q = move(new_q);
         }
         return (n - 1) * 2;
     }
