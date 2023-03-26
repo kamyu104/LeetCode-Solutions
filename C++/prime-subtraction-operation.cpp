@@ -1,7 +1,7 @@
 // Time:  O(p + nlogp)
 // Space: O(p)
 
-// number theory, greedy
+// number theory, greedy, binary search
 vector<int> linear_sieve_of_eratosthenes(int n) {  // Time: O(n), Space: O(n)
     vector<int> spf(n + 1, -1);
     vector<int> primes;
