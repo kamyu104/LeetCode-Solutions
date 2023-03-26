@@ -4,7 +4,7 @@
 import heapq
 
 
-# greedy, heap
+# prefix sum, greedy, heap
 class Solution(object):
     def makePrefSumNonNegative(self, nums):
         """
