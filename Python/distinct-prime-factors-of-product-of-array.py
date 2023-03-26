@@ -18,7 +18,7 @@ def linear_sieve_of_eratosthenes(n):
 
 
 MAX_N = 10**3
-PRIMES = linear_sieve_of_eratosthenes(int(MAX_N**0.5+0.5))  
+PRIMES = linear_sieve_of_eratosthenes(int(MAX_N**0.5))  
 class Solution(object):
     def distinctPrimeFactors(self, nums):
         """
