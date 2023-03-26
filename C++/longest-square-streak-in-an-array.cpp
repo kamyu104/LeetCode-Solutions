@@ -34,7 +34,7 @@ public:
         unordered_map<int, int> dp;
         int result = 0;
         for (const auto& x : nums) {
-            const int sqrt_x = static_cast<int>(sqrt(x) + 0.5);
+            const int sqrt_x = static_cast<int>(sqrt(x));
             if (sqrt_x * sqrt_x == x) {
                 dp[x] = dp[sqrt_x] + 1;
             } else {
