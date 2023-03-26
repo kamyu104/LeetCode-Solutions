@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2598%20%2F%202598-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2603%20%2F%202603-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1063,6 +1063,7 @@
 2557 | [Maximum Number of Integers to Choose From a Range II](https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-ii/) | [C++](./C++/maximum-number-of-integers-to-choose-from-a-range-ii.cpp) [Python](./Python/maximum-number-of-integers-to-choose-from-a-range-ii.py) | _O(b)_ | _O(b)_ | Medium | 🔒 | Math, Binary Search, Prefix Sum |
 2560 | [House Robber IV](https://leetcode.com/problems/house-robber-iv/) | [C++](./C++/house-robber-iv.cpp) [Python](./Python/house-robber-iv.py) | _O(nlogn)_ | _O(n)_ | Medium | | Binary Search, Greedy |
 2594 | [Minimum Time to Repair Cars](https://leetcode.com/problems/minimum-time-to-repair-cars/) | [C++](./C++/minimum-time-to-repair-cars.cpp) [Python](./Python/minimum-time-to-repair-cars.py) | _O(mx * (logc + log(mn)))_ | _O(mx)_ | Medium | | Freq Table, Binary Search, Heap, Simulation |
+2602 | [Minimum Operations to Make All Array Elements Equal](https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/) | [C++](./C++/minimum-operations-to-make-all-array-elements-equal.cpp) [Python](./Python/minimum-operations-to-make-all-array-elements-equal.py) | _O(nlogn + qlogn)_ | _O(n)_ | Medium | | Binary Search, Prefix Sum |
 
 <br/>
 <div align="right">
@@ -1138,6 +1139,7 @@
 2503 | [Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/)| [C++](./C++/maximum-number-of-points-from-grid-queries.cpp) [Python](./Python/maximum-number-of-points-from-grid-queries.py)| _O((m * n + q) * log(m * n))_ | _O(m * n)_ | Hard || BFS, Heap, Prefix Sum, Binary Search |
 2577 | [Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/)| [C++](./C++/minimum-time-to-visit-a-cell-in-a-grid.cpp) [Python](./Python/minimum-time-to-visit-a-cell-in-a-grid.py)| _O(m * n * log\(m * n\))_ | _O(m * n)_ | Hard | | `Dijkstra's Algorithm` |
 2583 | [Kth Largest Sum in a Binary Tree](https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/)| [C++](./C++/kth-largest-sum-in-a-binary-tree.cpp) [Python](./Python/kth-largest-sum-in-a-binary-tree.py)| _O(n)_ | _O(n)_ | Medium | | BFS, Quick Select |
+2603 | [Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/)  | [C++](./C++/collect-coins-in-a-tree.cpp) [Python](./Python/collect-coins-in-a-tree.py) | _O(n)_ | _O(n)_| Hard           || Tree, BFS | 
 
 <br/>
 <div align="right">
@@ -1581,6 +1583,9 @@
 2587 | [Rearrange Array to Maximize Prefix Score](https://leetcode.com/problems/rearrange-array-to-maximize-prefix-score/) | [C++](./C++/rearrange-array-to-maximize-prefix-score.cpp) [Python](./Python/rearrange-array-to-maximize-prefix-score.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Greedy |
 2589 | [Minimum Time to Complete All Tasks](https://leetcode.com/problems/minimum-time-to-complete-all-tasks/) | [C++](./C++/minimum-time-to-complete-all-tasks.cpp) [Python](./Python/minimum-time-to-complete-all-tasks.py) | _O(nlogn + n * r)_ | _O(r)_ | Hard | | Sort, Greedy |
 2591 | [Distribute Money to Maximum Children](https://leetcode.com/problems/distribute-money-to-maximum-children/) | [C++](./C++/distribute-money-to-maximum-children.cpp) [Python](./Python/distribute-money-to-maximum-children.py) | _O(1)_ | _O(1)_ | Easy | | Greedy, Math |
+2599 | [Make the Prefix Sum Non-negative](https://leetcode.com/problems/make-the-prefix-sum-non-negative/) | [C++](./C++/make-the-prefix-sum-non-negative.cpp) [Python](./Python/make-the-prefix-sum-non-negative.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, Greedy, Heap |
+2600 | [K Items With the Maximum Sum](https://leetcode.com/problems/k-items-with-the-maximum-sum/) | [C++](./C++/k-items-with-the-maximum-sum.cpp) [Python](./Python/k-items-with-the-maximum-sum.py) | _O(1)_ | _O(1)_ | Easy | | Greedy, Math |
+2601 | [Prime Subtraction Operation](https://leetcode.com/problems/prime-subtraction-operation/) | [C++](./C++/prime-subtraction-operation.cpp) [Python](./Python/prime-subtraction-operation.py) | _O(p + nlogp)_ | _O(p)_ | Medium | | Number Theory, Greedy, Binary Search |
 
 <br/>
 <div align="right">
