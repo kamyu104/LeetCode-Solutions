@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2603%20%2F%202603-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2604%20%2F%202604-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1586,6 +1586,7 @@
 2599 | [Make the Prefix Sum Non-negative](https://leetcode.com/problems/make-the-prefix-sum-non-negative/) | [C++](./C++/make-the-prefix-sum-non-negative.cpp) [Python](./Python/make-the-prefix-sum-non-negative.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, Greedy, Heap |
 2600 | [K Items With the Maximum Sum](https://leetcode.com/problems/k-items-with-the-maximum-sum/) | [C++](./C++/k-items-with-the-maximum-sum.cpp) [Python](./Python/k-items-with-the-maximum-sum.py) | _O(1)_ | _O(1)_ | Easy | | Greedy, Math |
 2601 | [Prime Subtraction Operation](https://leetcode.com/problems/prime-subtraction-operation/) | [C++](./C++/prime-subtraction-operation.cpp) [Python](./Python/prime-subtraction-operation.py) | _O(p + nlogp)_ | _O(p)_ | Medium | | Number Theory, Greedy, Binary Search |
+2604 | [Minimum Time to Eat All Grains](https://leetcode.com/problems/minimum-time-to-eat-all-grains/) | [C++](./C++/minimum-time-to-eat-all-grains.cpp) [Python](./Python/minimum-time-to-eat-all-grains.py) | _O(mlogm + nlogn + (m + n) * logr)_ | _O(1)_ | Hard | 🔒 | Binary Search, Greedy |
 
 <br/>
 <div align="right">
