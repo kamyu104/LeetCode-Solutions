@@ -13,6 +13,7 @@ public:
             adj[e[1]].emplace_back(e[0]);
         }
         const auto& bfs = [&](int u) {
+            int result = INF;
             vector<int> dist(n, INF);
             dist[u] = 0;
             vector<int> q = {u};
@@ -24,15 +25,19 @@ public:
                             continue;
                         }
                         if (dist[v] != INF) {
-                            return 1 + dist[u] + dist[v];
+                            result = min(result, 1 + dist[u] + dist[v]);
+                            continue;
                         }
                         dist[v] = dist[u] + 1;
                         new_q.emplace_back(v);
                     }
                 }
+                if (result != INF) {
+                    break;
+                }
                 q = move(new_q);
             }
-            return INF;
+            return result;
         };
 
         int result = INF;
