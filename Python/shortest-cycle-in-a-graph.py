@@ -20,7 +20,8 @@ class Solution(object):
                 for u in q:
                     for v in adj[u]:
                         if dist[v] != INF:
-                            if dist[v] in (dist[u], dist[u]+1):
+                            assert(abs(dist[v]-dist[u]) <= 1)
+                            if dist[v] != dist[u]-1:
                                 result = min(result, 1+dist[u]+dist[v])
                             continue
                         dist[v] = dist[u]+1
