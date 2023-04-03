@@ -20,7 +20,7 @@ public:
                 vector<int> new_q;
                 for (const auto& u : q) {
                     for (const auto& v : adj[u]) {
-                        if (dist[v] == dist[u] - 1) {
+                        if (dist[v] == dist[u] - 1) {  // v == p
                             continue;
                         }
                         if (dist[v] != INF) {
