@@ -48,10 +48,10 @@ class Solution(object):
         d = 0
         result = [-1]*n
         result[p] = d
-        q = [p]
-        d += 1
         uf = UnionFind(n+2)
         uf.union_set(p, p+2)
+        q = [p]
+        d += 1
         while q:
             new_q = []
             for p in q:
