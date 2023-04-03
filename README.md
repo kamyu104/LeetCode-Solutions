@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2604%20%2F%202604-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2612%20%2F%202612-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -683,6 +683,8 @@
 2588 | [Count the Number of Beautiful Subarrays](https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/) | [C++](./C++/count-the-number-of-beautiful-subarrays.cpp) [Python](./Python/count-the-number-of-beautiful-subarrays.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Combinatorics
 2592 | [Maximize Greatness of an Array](https://leetcode.com/problems/maximize-greatness-of-an-array/) | [C++](./C++/maximize-greatness-of-an-array.cpp) [Python](./Python/maximize-greatness-of-an-array.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Contructive Algorithms, Sort, Greedy, Two Pointers
 2598 | [Smallest Missing Non-negative Integer After Operations](https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/) | [C++](./C++/smallest-missing-non-negative-integer-after-operations.cpp) [Python](./Python/smallest-missing-non-negative-integer-after-operations.py) | _O(n)_ | _O(k)_ | Medium | | Freq Table
+2605 | [Form Smallest Number From Two Digit Arrays](https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/) | [C++](./C++/form-smallest-number-from-two-digit-arrays.cpp) [Python](./Python/form-smallest-number-from-two-digit-arrays.py) | _O(m + n)_ | _O(m + n)_ | Easy | | Hash Table
+2610 | [Convert an Array Into a 2D Array With Conditions](https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/) | [C++](./C++/convert-an-array-into-a-2d-array-with-conditions.cpp) [Python](./Python/convert-an-array-into-a-2d-array-with-conditions.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Constructive Algorithms
 
 <br/>
 <div align="right">
@@ -989,6 +991,7 @@
 2555 | [Maximize Win From Two Segments](https://leetcode.com/problems/maximize-win-from-two-segments/) | [C++](./C++/maximize-win-from-two-segments.cpp) [Python](./Python/maximize-win-from-two-segments.py) | _O(n)_ | _O(n)_ | Medium | | Two Pointers, Sliding Window, DP |
 2563 | [Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) | [C++](./C++/count-the-number-of-fair-pairs.cpp) [Python](./Python/count-the-number-of-fair-pairs.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers
 2570 | [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | [C++](./C++/merge-two-2d-arrays-by-summing-values.cpp) [Python](./Python/merge-two-2d-arrays-by-summing-values.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers
+2609 | [Find the Longest Balanced Substring of a Binary String](https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/) | [C++](./C++/find-the-longest-balanced-substring-of-a-binary-string.cpp) [Python](./Python/find-the-longest-balanced-substring-of-a-binary-string.py) | _O(n)_ | _O(1)_ | Easy | | String, Two Pointers
 
 <br/>
 <div align="right">
@@ -1140,6 +1143,7 @@
 2577 | [Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/)| [C++](./C++/minimum-time-to-visit-a-cell-in-a-grid.cpp) [Python](./Python/minimum-time-to-visit-a-cell-in-a-grid.py)| _O(m * n * log\(m * n\))_ | _O(m * n)_ | Hard | | `Dijkstra's Algorithm` |
 2583 | [Kth Largest Sum in a Binary Tree](https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/)| [C++](./C++/kth-largest-sum-in-a-binary-tree.cpp) [Python](./Python/kth-largest-sum-in-a-binary-tree.py)| _O(n)_ | _O(n)_ | Medium | | BFS, Quick Select |
 2603 | [Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/)  | [C++](./C++/collect-coins-in-a-tree.cpp) [Python](./Python/collect-coins-in-a-tree.py) | _O(n)_ | _O(n)_| Hard           || Tree, BFS | 
+2612 | [Minimum Reverse Operations](https://leetcode.com/problems/minimum-reverse-operations/)  | [C++](./C++/minimum-reverse-operations.cpp) [Python](./Python/minimum-reverse-operations.py) | _O(n)_ | _O(n)_| Hard           || BFS, Union Find | 
 
 <br/>
 <div align="right">
@@ -1587,6 +1591,9 @@
 2600 | [K Items With the Maximum Sum](https://leetcode.com/problems/k-items-with-the-maximum-sum/) | [C++](./C++/k-items-with-the-maximum-sum.cpp) [Python](./Python/k-items-with-the-maximum-sum.py) | _O(1)_ | _O(1)_ | Easy | | Greedy, Math |
 2601 | [Prime Subtraction Operation](https://leetcode.com/problems/prime-subtraction-operation/) | [C++](./C++/prime-subtraction-operation.cpp) [Python](./Python/prime-subtraction-operation.py) | _O(p + nlogp)_ | _O(p)_ | Medium | | Number Theory, Greedy, Binary Search |
 2604 | [Minimum Time to Eat All Grains](https://leetcode.com/problems/minimum-time-to-eat-all-grains/) | [C++](./C++/minimum-time-to-eat-all-grains.cpp) [Python](./Python/minimum-time-to-eat-all-grains.py) | _O(mlogm + nlogn + (m + n) * logr)_ | _O(1)_ | Hard | 🔒 | Binary Search, Greedy |
+2606 | [Find the Substring With Maximum Cost](https://leetcode.com/problems/find-the-substring-with-maximum-cost/) | [C++](./C++/find-the-substring-with-maximum-cost.cpp) [Python](./Python/find-the-substring-with-maximum-cost.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, `Kadane's Algorithm`
+2607 | [Make K-Subarray Sums Equal](https://leetcode.com/problems/make-k-subarray-sums-equal/) | [C++](./C++/make-k-subarray-sums-equal.cpp) [Python](./Python/make-k-subarray-sums-equal.py) | _O(n)_ | _O(n)_ | Medium | | Math, Greedy, Quick Select
+2611 | [Mice and Cheese](https://leetcode.com/problems/mice-and-cheese/) | [C++](./C++/mice-and-cheese.cpp) [Python](./Python/mice-and-cheese.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Quick Select
 
 <br/>
 <div align="right">
@@ -1645,6 +1652,7 @@
 2392 | [Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/) | [C++](./C++/build-a-matrix-with-conditions.cpp)  [Python](./Python/build-a-matrix-with-conditions.py)  | _O(k^2 + r + c)_ | _O(k + r + c)_ | Hard         | | Graph, Topological Sort |
 2473 | [Minimum Cost to Buy Apples](https://leetcode.com/problems/minimum-cost-to-buy-apples/)  | [C++](./C++/minimum-cost-to-buy-apples.cpp) [Python](./Python/minimum-cost-to-buy-apples.py) | _O(n * rlogn)_ | _O(n)_| Medium           |🔒| `Dijkstra's Algorithm`| 
 2508 | [Add Edges to Make Degrees of All Nodes Even](https://leetcode.com/problems/add-edges-to-make-degrees-of-all-nodes-even/)  | [C++](./C++/add-edges-to-make-degrees-of-all-nodes-even.cpp) [Python](./Python/add-edges-to-make-degrees-of-all-nodes-even.py) | _O(n)_ | _O(n)_| Hard           || Graph | 
+2608 | [Shortest Cycle in a Graph](https://leetcode.com/problems/shortest-cycle-in-a-graph/)  | [C++](./C++/shortest-cycle-in-a-graph.cpp) [Python](./Python/shortest-cycle-in-a-graph.py) | _O(n^2)_ | _O(n + e)_| Hard           || Graph, BFS |
 
 <br/>
 <div align="right">
