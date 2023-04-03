@@ -12,8 +12,8 @@ class Solution(object):
         INF = float("inf")
         def bfs(u):
             dist = [float("inf")]*len(adj)
-            q = [u]
             dist[u] = 0
+            q = [u]
             while q:
                 new_q = []
                 for u in q:
