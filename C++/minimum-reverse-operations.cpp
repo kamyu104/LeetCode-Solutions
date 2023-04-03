@@ -25,7 +25,7 @@ public:
                         result[p] = d;
                         new_q.emplace_back(p);
                     }
-                    uf.union_set(p, p+2);
+                    uf.union_set(p, p + 2);
                 }
             }
             q = move(new_q);
