@@ -21,11 +21,10 @@ public:
                 vector<int> new_q;
                 for (const auto& u : q) {
                     for (const auto& v : adj[u]) {
-                        if (dist[v] == dist[u] - 1) {  // v == p
-                            continue;
-                        }
                         if (dist[v] != INF) {
-                            result = min(result, 1 + dist[u] + dist[v]);
+                            if (dist[v] == dist[u] || dist[v] == dist[u] + 1) {
+                                result = min(result, 1 + dist[u] + dist[v]);
+                            }
                             continue;
                         }
                         dist[v] = dist[u] + 1;
