@@ -20,7 +20,7 @@ public:
             for (const auto& p : q) {
                 const int left = 2 * max(p - (k - 1), 0) + (k - 1) - p;
                 const int right = 2 * min(p + (k - 1), n - 1) - (k - 1) - p;
-                for (int p = uf.max_set(left); p <= right; p = uf.max_set(p)) {
+                for (int p = uf.right_set(left); p <= right; p = uf.right_set(p)) {
                     if (!lookup[p]) {
                         result[p] = d;
                         new_q.emplace_back(p);
@@ -40,9 +40,9 @@ class UnionFind {
         UnionFind(int n)
          : set_(n)
          , rank_(n)
-         , max_(n) {  // added
+         , right_(n) {  // added
             iota(begin(set_), end(set_), 0);
-            iota(begin(max_), end(max_), 0);  // added
+            iota(begin(right_), end(right_), 0);  // added
         }
 
         int find_set(int x) {
@@ -64,17 +64,17 @@ class UnionFind {
             if (rank_[x] == rank_[y]) {
                 ++rank_[y];
             }
-            max_[y] = max(max_[x], max_[y]);  // added
+            right_[y] = max(right_[x], right_[y]);  // added
             return true;
         }
 
-        int max_set(int x) {  // added
-            return max_[find_set(x)];
+        int right_set(int x) {  // added
+            return right_[find_set(x)];
         }
 
     private:
         vector<int> set_;
         vector<int> rank_;
-        vector<long long> max_;  // added
+        vector<int> right_;  // added
     };
 };
