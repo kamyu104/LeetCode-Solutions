@@ -11,6 +11,7 @@ class Solution(object):
         """
         INF = float("inf")
         def bfs(u):
+            result = INF
             dist = [float("inf")]*len(adj)
             dist[u] = 0
             q = [u]
@@ -21,11 +22,14 @@ class Solution(object):
                         if dist[v] == dist[u]-1:  # v == p
                             continue
                         if dist[v] != INF:
-                            return 1+dist[u]+dist[v]
+                            result = min(result, 1+dist[u]+dist[v])
+                            continue
                         dist[v] = dist[u]+1
-                        new_q.append(v)                        
-                    q = new_q
-            return INF
+                        new_q.append(v)
+                if result != INF:
+                    break
+                q = new_q
+            return result
 
         adj = [[] for _ in xrange(n)]
         for u, v in edges:
