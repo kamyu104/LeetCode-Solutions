@@ -22,7 +22,8 @@ public:
                 for (const auto& u : q) {
                     for (const auto& v : adj[u]) {
                         if (dist[v] != INF) {
-                            if (dist[v] == dist[u] || dist[v] == dist[u] + 1) {
+                            assert(abs(dist[v] - dist[u]) <= 1);
+                            if (dist[v] != dist[u] - 1) {
                                 result = min(result, 1 + dist[u] + dist[v]);
                             }
                             continue;
