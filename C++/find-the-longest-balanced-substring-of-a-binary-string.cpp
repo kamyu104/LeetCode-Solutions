@@ -23,20 +23,15 @@ public:
 class Solution2 {
 public:
     int findTheLongestBalancedSubstring(string s) {
-        int result = 0, prev = 0;
-        vector<int> cnt(2);
-        for (int i = 0; i < size(s); ++i) {
-            if (s[i] == '0') {
-                ++cnt[0];
-                cnt[1] = 0;
-            } else {
-                ++cnt[1];
-                if (cnt[0]) {
-                    prev = cnt[0];
-                }
-                cnt[0] = 0;
+        int result = 0;
+        vector<int> prev(2), cnt(2);
+        for (const auto& c : s) {
+            ++cnt[c - '0'];
+            if (cnt[(c - '0') ^ 1]) {
+                prev[(c - '0') ^ 1] = cnt[(c - '0') ^ 1];
+                cnt[(c - '0') ^ 1] = 0;
             }
-            result = max(result, 2 * min(prev, cnt[1]));
+            result = max(result, 2 * min(prev[0], cnt[1]));
         }
         return result;
     }
