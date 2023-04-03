@@ -14,8 +14,8 @@ public:
         }
         const auto& bfs = [&](int u) {
             vector<int> dist(n, INF);
-            vector<int> q = {u};
             dist[u] = 0;
+            vector<int> q = {u};
             while (!empty(q)) {
                 vector<int> new_q;
                 for (const auto& u : q) {
