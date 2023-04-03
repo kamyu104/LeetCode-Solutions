@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// math, greedy
+// math, greedy, quick select
 class Solution {
 public:
     long long makeSubKSumEqual(vector<int>& arr, int k) {
