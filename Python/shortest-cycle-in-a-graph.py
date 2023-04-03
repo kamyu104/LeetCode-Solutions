@@ -19,10 +19,9 @@ class Solution(object):
                 new_q = []
                 for u in q:
                     for v in adj[u]:
-                        if dist[v] == dist[u]-1:  # v == p
-                            continue
                         if dist[v] != INF:
-                            result = min(result, 1+dist[u]+dist[v])
+                            if dist[v] in (dist[u], dist[u]+1):
+                                result = min(result, 1+dist[u]+dist[v])
                             continue
                         dist[v] = dist[u]+1
                         new_q.append(v)
