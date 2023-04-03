@@ -1,4 +1,4 @@
-# Time:  O(n * alpha(n)) = O(n)
+# Time:  O(n * alpha(n)) ~= O(n)
 # Space: O(n)
 
 class UnionFind(object):  # Time: O(n * alpha(n)), Space: O(n)
