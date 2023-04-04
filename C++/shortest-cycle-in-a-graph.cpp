@@ -24,7 +24,7 @@ public:
                         if (dist[v] != INF) {
                             assert(abs(dist[v] - dist[u]) <= 1);
                             if (dist[v] != dist[u] - 1) {
-                                result = min(result, 1 + dist[u] + dist[v]);
+                                result = min(result, 1 + dist[u] + dist[v]);  // d = dist[u]+1 >= 2, check if any cycle of length 2*d-1 or 2*d exists
                             }
                             continue;
                         }
@@ -32,7 +32,7 @@ public:
                         new_q.emplace_back(v);
                     }
                 }
-                if (result != INF) {
+                if (result != INF) {  // a cycle of length 2*d-1 or 2*d was found, early return
                     break;
                 }
                 q = move(new_q);
