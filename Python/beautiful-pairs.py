@@ -19,7 +19,7 @@ class Solution(object):
             return abs(a[0]-b[0])+abs(a[1]-b[1])
     
         def merge_sort(left, right):
-            def update(arr, i):
+            def update(arr, i):  # added
                 for j in reversed(xrange(len(arr))):
                     if points[i][1]-points[arr[j]][1] > result[0]:
                         break
@@ -40,15 +40,15 @@ class Solution(object):
             tmp, tmp_l, tmp_r = [], [], []
             l, r = left, mid+1
             while l <= mid or r <= right:
-                if r == right+1 or (l <= mid and points[order[l]][1] <= points[order[r]][1]):
+                if r == right+1 or (l <= mid and points[order[l]][1] <= points[order[r]][1]):  # modified
                     update(tmp_r, order[l])
-                    if x-points[order[l]][0] <= result[0]:
+                    if x-points[order[l]][0] <= result[0]:  # added
                         tmp_l.append(order[l])
                     tmp.append(order[l])
                     l += 1
                 else:
                     update(tmp_l, order[r])
-                    if points[order[r]][0]-x <= result[0]:
+                    if points[order[r]][0]-x <= result[0]:  # added
                         tmp_r.append(order[r])
                     tmp.append(order[r])
                     r += 1
