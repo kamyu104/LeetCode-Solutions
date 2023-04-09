@@ -4,7 +4,7 @@
 import itertools
 
 
-# divide and conquer, merge sort
+# divide and conquer, merge sort, variant of closest pair
 # reference: https://www.baeldung.com/cs/minimal-manhattan-distance
 class Solution(object):
     def beautifulPair(self, nums1, nums2):
