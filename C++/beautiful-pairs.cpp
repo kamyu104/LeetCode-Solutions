@@ -19,7 +19,7 @@ private:
 public:
     vector<int> beautifulPair(vector<int>& nums1, vector<int>& nums2) {
         static const int INF = numeric_limits<int>::max();
-        static const int MAX_NEIGHBOR_COUNT = 8 - 1;
+        static const int MAX_NEIGHBOR_COUNT = (8 + 2) / 2;
 
         vector<vector<int>> points;
         for (int i = 0; i < size(nums1); ++i) {
@@ -112,7 +112,7 @@ private:
 public:
     vector<int> beautifulPair(vector<int>& nums1, vector<int>& nums2) {
         static const int INF = numeric_limits<int>::max();
-        static const int MAX_NEIGHBOR_COUNT = 8 - 1;
+        static const int MAX_NEIGHBOR_COUNT = 8;
 
         vector<vector<int>> points;
         for (int i = 0; i < size(nums1); ++i) {
