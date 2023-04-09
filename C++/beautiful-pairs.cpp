@@ -41,8 +41,11 @@ public:
         sort(begin(order), end(order), [&](const auto& a, const auto& b) {
             return points[a] < points[b];
         });
-        const auto& manhattan_distance = [](const auto& a, const auto& b) {
-            return abs(a[0] - b[0]) + abs(a[1] - b[1]);
+        const auto& dist = [&](auto a, auto b) {
+            if (a > b) {
+                swap(a, b);
+            }
+            return vector<int>{abs(points[a][0] - points[b][0]) + abs(points[a][1] - points[b][1]), a, b};
         };
 
         const function<void (int, int)> merge_sort = [&](int left, int right) {
@@ -52,11 +55,7 @@ public:
                         break;
                     }
                     assert((size(arr) - 1) - j + 1 <= MAX_NEIGHBOR_COUNT);
-                    int x = i, y = arr[j];
-                    if (x > y) {
-                        swap(x, y);
-                    }
-                    result = min(result, vector<int>{manhattan_distance(points[x], points[y]), x, y});
+                    result = min(result, dist(i, arr[j]));
                 }
             };
             
@@ -134,8 +133,11 @@ public:
         sort(begin(order), end(order), [&](const auto& a, const auto& b) {
             return points[a] < points[b];
         });
-        const auto& manhattan_distance = [](const auto& a, const auto& b) {
-            return abs(a[0] - b[0]) + abs(a[1] - b[1]);
+        const auto& dist = [&](auto a, auto b) {
+            if (a > b) {
+                swap(a, b);
+            }
+            return vector<int>{abs(points[a][0] - points[b][0]) + abs(points[a][1] - points[b][1]), a, b};
         };
 
         const function<void (int, int)> merge_sort = [&](int left, int right) {
@@ -169,10 +171,7 @@ public:
                         break;
                     }
                     assert(j - (i + 1) + 1 <= MAX_NEIGHBOR_COUNT);
-                    if (x > y) {
-                        swap(x, y);
-                    }
-                    result = min(result, vector<int>{manhattan_distance(points[x], points[y]), x, y});
+                    result = min(result, dist(x, y));
                 }
             }      
         };
