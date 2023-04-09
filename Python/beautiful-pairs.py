@@ -1,12 +1,73 @@
-# Time:  O(nlogn)
+# Time:  O(n) on average
 # Space: O(n)
 
+import math
+import itertools
+import random
+
+random.seed(0)
+# random algorithms, variant of closest pair
+# reference: https://github.com/jilljenn/tryalgo/blob/master/tryalgo/closest_points.py
+class Solution(object):
+    def beautifulPair(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: List[int]
+        """
+        INF = float("inf")
+        def dist(a, b):
+            x, y = min(a[-1], b[-1]), max(a[-1], b[-1])
+            return abs(a[0]-b[0])+abs(a[1]-b[1]), x, y
+
+        def cell(point, size):
+            x, y, _ = point
+            return (math.floor(x/size)), math.floor(y/size)
+
+        def improve(d):
+            lookup = {}
+            for p in points:
+                a, b = map(int, cell(p, d[0]/2.0))
+                for na in xrange(a-2, a+3):
+                    for nb in xrange(b-2, b+3):
+                        if (na, nb) not in lookup:
+                            continue
+                        q = lookup[na, nb]
+                        nd = dist(p, q)
+                        if nd < d:
+                            return nd
+                lookup[a, b] = p
+            return d
+
+        points = [(i, j, idx) for idx, (i, j) in enumerate(itertools.izip(nums1, nums2))]
+        result = [INF]*3
+        lookup = {}
+        for i in reversed(xrange(len(points))):
+            if points[i][:2] in lookup:
+                result = [0, (i, lookup[points[i][:2]])]
+            lookup[points[i][:2]] = i
+        if result[0] == 0:
+            return result[1]
+        random.shuffle(points)
+        p, q = points[0], points[1]
+        d = dist(p, q)
+        while True:
+            nd = improve(d)
+            if nd != d:
+                d = nd
+            else:
+                break
+        return d[1:]
+
+
+# Time:  O(nlogn)
+# Space: O(n)
 import itertools
 
 
 # divide and conquer, merge sort, variant of closest pair
 # reference: https://www.baeldung.com/cs/minimal-manhattan-distance
-class Solution(object):
+class Solution2(object):
     def beautifulPair(self, nums1, nums2):
         """
         :type nums1: List[int]
@@ -19,7 +80,7 @@ class Solution(object):
             if a > b:
                 a, b = b, a
             return [abs(points[a][0]-points[b][0])+abs(points[a][1]-points[b][1]), a, b]
-    
+
         def merge_sort(left, right):
             def update(arr, i):  # added
                 for j in reversed(xrange(len(arr))):
@@ -59,7 +120,7 @@ class Solution(object):
         for i in reversed(xrange(len(points))):
             if points[i] in lookup:
                 result = [0, (i, lookup[points[i]])]
-            lookup[points[i]] = i            
+            lookup[points[i]] = i
         if result[0] == 0:
             return result[1]
         order = range(len(points))
@@ -75,7 +136,7 @@ import itertools
 
 # divide and conquer, merge sort, variant of closest pair
 # reference: https://www.baeldung.com/cs/minimal-manhattan-distance
-class Solution2(object):
+class Solution3(object):
     def beautifulPair(self, nums1, nums2):
         """
         :type nums1: List[int]
@@ -88,7 +149,7 @@ class Solution2(object):
             if a > b:
                 a, b = b, a
             return [abs(points[a][0]-points[b][0])+abs(points[a][1]-points[b][1]), a, b]
-    
+
         def merge_sort(left, right):
             if left == right:
                 return
@@ -123,7 +184,7 @@ class Solution2(object):
         for i in reversed(xrange(len(points))):
             if points[i] in lookup:
                 result = [0, (i, lookup[points[i]])]
-            lookup[points[i]] = i            
+            lookup[points[i]] = i
         if result[0] == 0:
             return result[1]
         order = range(len(points))
