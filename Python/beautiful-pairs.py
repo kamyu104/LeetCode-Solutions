@@ -15,18 +15,17 @@ class Solution(object):
         """
         INF = float("inf")
         MAX_NEIGHBOR_COUNT = (8+2)//2
-        def manhattan_distance(a, b):
-            return abs(a[0]-b[0])+abs(a[1]-b[1])
+        def dist(a, b):
+            if a > b:
+                a, b = b, a
+            return [abs(points[a][0]-points[b][0])+abs(points[a][1]-points[b][1]), a, b]
     
         def merge_sort(left, right):
             def update(arr, i):  # added
                 for j in reversed(xrange(len(arr))):
                     if points[i][1]-points[arr[j]][1] > result[0]:
                         break
-                    x, y = i, arr[j]
-                    if x > y:
-                        x, y = y, x
-                    result[:] = min(result, [manhattan_distance(points[x], points[y]), (x, y)])
+                    result[:] = min(result, dist(i, arr[j]))
                 else:
                     j = -1
                 assert((len(arr)-1)-j <= MAX_NEIGHBOR_COUNT)
@@ -55,7 +54,7 @@ class Solution(object):
             order[left:right+1] = tmp
 
         points = [(i, j) for i, j in itertools.izip(nums1, nums2)]
-        result = [INF, (INF, INF)]
+        result = [INF]*3
         lookup = {}
         for i in reversed(xrange(len(points))):
             if points[i] in lookup:
@@ -66,7 +65,7 @@ class Solution(object):
         order = range(len(points))
         order.sort(key=lambda x: points[x])
         merge_sort(0, len(points)-1)
-        return result[1]
+        return result[1:]
 
 
 # Time:  O(nlogn)
@@ -85,8 +84,10 @@ class Solution2(object):
         """
         INF = float("inf")
         MAX_NEIGHBOR_COUNT = 8
-        def manhattan_distance(a, b):
-            return abs(a[0]-b[0])+abs(a[1]-b[1])
+        def dist(a, b):
+            if a > b:
+                a, b = b, a
+            return [abs(points[a][0]-points[b][0])+abs(points[a][1]-points[b][1]), a, b]
     
         def merge_sort(left, right):
             if left == right:
@@ -111,15 +112,13 @@ class Solution2(object):
                     x, y = stripe[i], stripe[j]
                     if points[y][1]-points[x][1] > result[0]:
                         break
-                    if x > y:
-                        x, y = y, x
-                    result[:] = min(result, [manhattan_distance(points[x], points[y]), (x, y)])
+                    result[:] = min(result, dist(x, y))
                 else:
                     j = len(stripe)
                 assert(j-(i+1) <= MAX_NEIGHBOR_COUNT)
 
         points = [(i, j) for i, j in itertools.izip(nums1, nums2)]
-        result = [INF, (INF, INF)]
+        result = [INF]*3
         lookup = {}
         for i in reversed(xrange(len(points))):
             if points[i] in lookup:
@@ -130,4 +129,4 @@ class Solution2(object):
         order = range(len(points))
         order.sort(key=lambda x: points[x])
         merge_sort(0, len(points)-1)
-        return result[1]
+        return result[1:]
