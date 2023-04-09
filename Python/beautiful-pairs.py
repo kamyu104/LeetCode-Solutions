@@ -41,10 +41,12 @@ class Solution(object):
                     x, y = stripe[i], stripe[j]
                     if points[y][1]-points[x][1] > result[0]:
                         break
-                    assert(j-(i+1) <= MAX_NEIGHBOR_COUNT)
                     if x > y:
                         x, y = y, x
                     result[:] = min(result, [manhattan_distance(points[x], points[y]), (x, y)])
+                else:
+                    j = len(stripe)
+                assert(j-(i+1) <= MAX_NEIGHBOR_COUNT)
 
         points = [(i, j, idx) for idx, (i, j) in enumerate(itertools.izip(nums1, nums2))]
         order = range(len(points))
