@@ -4,6 +4,18 @@
 // divide and conquer, merge sort, variant of closest pair
 // reference: https://www.baeldung.com/cs/minimal-manhattan-distance
 class Solution {
+private:
+    template<typename T>
+    struct VectorHash {
+        size_t operator()(const std::vector<T>& v) const {
+            size_t seed = 0;
+            for (const auto& i : v) {
+                seed ^= std::hash<T>{}(i)  + 0x9e3779b9 + (seed<<6) + (seed>>2);
+            }
+            return seed;
+        }
+    };
+
 public:
     vector<int> beautifulPair(vector<int>& nums1, vector<int>& nums2) {
         static const int INF = numeric_limits<int>::max();
@@ -11,23 +23,24 @@ public:
 
         vector<vector<int>> points;
         for (int i = 0; i < size(nums1); ++i) {
-            points.push_back({nums1[i], nums2[i], i});
+            points.push_back({nums1[i], nums2[i]});
         }
-
+        vector<int> result(3, INF);
+        unordered_map<vector<int>, int, VectorHash<int>> lookup;
+        for (int i = size(points) - 1; i >= 0; --i) {
+            if (lookup.count(points[i])) {
+                result = min(result, vector<int>{0, i, lookup[points[i]]});
+            }
+            lookup[points[i]] = i;
+        }
+        if (result[0] == 0) {
+            return {result[1], result[2]};
+        }
         vector<int> order(size(points));
         iota(begin(order), end(order), 0);
         sort(begin(order), end(order), [&](const auto& a, const auto& b) {
             return points[a] < points[b];
         });
-
-        vector<int> result(3, INF);
-        for (int i = 0; i + 1 < size(points); ++i) {
-            if (points[order[i]][0] == points[order[i + 1]][0] &&
-                points[order[i]][1] == points[order[i + 1]][1]) {
-                result = min(result, vector<int>{0, points[order[i]][2], points[order[i + 1]][2]});
-            }
-        }   
-             
         const auto& manhattan_distance = [](const auto& a, const auto& b) {
             return abs(a[0] - b[0]) + abs(a[1] - b[1]);
         };
@@ -70,10 +83,8 @@ public:
                 }
             }      
         };
-
-        if (result[0]) {
-            merge_sort(0, size(points) - 1);
-        }
+        
+        merge_sort(0, size(points) - 1);
         return {result[1], result[2]};
     }
 };
