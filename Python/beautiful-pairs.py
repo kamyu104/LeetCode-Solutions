@@ -50,7 +50,6 @@ class Solution(object):
         points = [(i, j, idx) for idx, (i, j) in enumerate(itertools.izip(nums1, nums2))]
         order = range(len(points))
         order.sort(key=lambda x: (points[x], x))
-        print [points[x] for x in order]
         result = [INF, (INF, INF)]
         for i in xrange(len(order)-1):
             if points[order[i]][:2] == points[order[i+1]][:2]:
