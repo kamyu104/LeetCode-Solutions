@@ -14,7 +14,7 @@ class Solution(object):
         :rtype: List[int]
         """
         INF = float("inf")
-        MAX_NEIGHBOR_COUNT = 8
+        MAX_NEIGHBOR_COUNT = 8-1
         def manhattan_distance(a, b):
             return abs(a[0]-b[0])+abs(a[1]-b[1])
     
