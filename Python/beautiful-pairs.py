@@ -52,7 +52,7 @@ class Solution(object):
         result = [INF, (INF, INF)]
         for i in xrange(len(order)-1):
             if points[order[i]][:2] == points[order[i+1]][:2]:
-                result = min(result, [0, (order[i], order[i+1])]) 
+                result = min(result, [0, (points[order[i]][2], points[order[i+1]][2])]) 
         if result[0]:
             merge_sort(0, len(points)-1)
         return result[1]
