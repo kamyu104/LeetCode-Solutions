@@ -18,47 +18,45 @@ class Solution(object):
         """
         INF = float("inf")
         def dist(a, b):
-            x, y = min(a[-1], b[-1]), max(a[-1], b[-1])
-            return abs(a[0]-b[0])+abs(a[1]-b[1]), x, y
+            x, y = a[-1], b[-1]
+            if x > y:
+                x, y = y, x
+            return [abs(a[0]-b[0])+abs(a[1]-b[1]), x, y]
 
         def cell(point, size):
             x, y, _ = point
             return (math.floor(x/size)), math.floor(y/size)
 
-        def improve(d):
+        def improve():
             lookup = {}
             for p in points:
-                a, b = map(int, cell(p, d[0]/2.0))
+                a, b = map(int, cell(p, result[0]/2.0))
                 for na in xrange(a-2, a+3):
                     for nb in xrange(b-2, b+3):
                         if (na, nb) not in lookup:
                             continue
-                        q = lookup[na, nb]
-                        nd = dist(p, q)
-                        if nd < d:
-                            return nd
+                        d = dist(p, lookup[na, nb])
+                        if d < result:
+                            result[:] = d
+                            return True
                 lookup[a, b] = p
-            return d
+            return False
 
         points = [(i, j, idx) for idx, (i, j) in enumerate(itertools.izip(nums1, nums2))]
         result = [INF]*3
         lookup = {}
         for i in reversed(xrange(len(points))):
             if points[i][:2] in lookup:
-                result = [0, (i, lookup[points[i][:2]])]
+                result = [0, i, lookup[points[i][:2]]]
             lookup[points[i][:2]] = i
         if result[0] == 0:
-            return result[1]
+            return result[1:]
         random.shuffle(points)
         p, q = points[0], points[1]
-        d = dist(p, q)
-        while True:
-            nd = improve(d)
-            if nd != d:
-                d = nd
-            else:
-                break
-        return d[1:]
+        result = dist(p, q)
+        while improve():
+            pass
+        return result[1:]
 
 
 # Time:  O(nlogn)
