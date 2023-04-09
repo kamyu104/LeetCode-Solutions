@@ -51,12 +51,10 @@ class Solution(object):
         points = [(i, j) for i, j in itertools.izip(nums1, nums2)]
         result = [INF, (INF, INF)]
         lookup = {}
-        for i, p in enumerate(points):
-            if p not in lookup:
-                lookup[p] = i
-                continue
-            result = min(result, [0, (lookup[p], i)])
-            lookup[p] = i
+        for i in reversed(xrange(len(points))):
+            if points[i] in lookup:
+                result = [0, (i, lookup[points[i]])]
+            lookup[points[i]] = i            
         if result[0]:
             order = range(len(points))
             order.sort(key=lambda x: points[x])
