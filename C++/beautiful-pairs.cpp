@@ -59,6 +59,7 @@ public:
                     result = min(result, vector<int>{manhattan_distance(points[x], points[y]), x, y});
                 }
             };
+            
             if (left == right) {
                 return;
             }
