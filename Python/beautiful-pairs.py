@@ -25,7 +25,7 @@ class Solution(object):
 
         def cell(point, size):
             x, y, _ = point
-            return (math.floor(x/size)), math.floor(y/size)
+            return math.floor(x/size), math.floor(y/size)
 
         def improve():
             lookup = {}
