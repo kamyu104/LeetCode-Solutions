@@ -23,7 +23,10 @@ class Solution(object):
                 for j in reversed(xrange(len(arr))):
                     if points[i][1]-points[arr[j]][1] > result[0]:
                         break
-                    result[:] = min(result, [manhattan_distance(points[arr[j]], points[i]), (arr[j], i)])
+                    x, y = i, arr[j]
+                    if x > y:
+                        x, y = y, x
+                    result[:] = min(result, [manhattan_distance(points[x], points[y]), (x, y)])
 
             if left == right:
                 return
