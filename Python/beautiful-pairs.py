@@ -65,7 +65,6 @@ class Solution(object):
             return result[1]
         order = range(len(points))
         order.sort(key=lambda x: points[x])
-        result = [INF, (INF, INF)]
         merge_sort(0, len(points)-1)
         return result[1]
 
@@ -130,6 +129,5 @@ class Solution2(object):
             return result[1]
         order = range(len(points))
         order.sort(key=lambda x: points[x])
-        result = [INF, (INF, INF)]
         merge_sort(0, len(points)-1)
         return result[1]
