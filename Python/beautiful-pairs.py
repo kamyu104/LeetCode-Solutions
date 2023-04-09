@@ -55,9 +55,10 @@ class Solution(object):
             if points[i] in lookup:
                 result = [0, (i, lookup[points[i]])]
             lookup[points[i]] = i            
-        if result[0]:
-            order = range(len(points))
-            order.sort(key=lambda x: points[x])
-            result = [INF, (INF, INF)]
-            merge_sort(0, len(points)-1)
+        if result[0] == 0:
+            return result[1]
+        order = range(len(points))
+        order.sort(key=lambda x: points[x])
+        result = [INF, (INF, INF)]
+        merge_sort(0, len(points)-1)
         return result[1]
