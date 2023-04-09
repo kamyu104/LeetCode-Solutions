@@ -1,13 +1,14 @@
 # Time:  O(n) on average
 # Space: O(n)
 
-import math
-import itertools
 import random
+import itertools
+import math
 
-random.seed(0)
+
 # random algorithms, variant of closest pair
 # reference: https://github.com/jilljenn/tryalgo/blob/master/tryalgo/closest_points.py
+random.seed(0)
 class Solution(object):
     def beautifulPair(self, nums1, nums2):
         """
