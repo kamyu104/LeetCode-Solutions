@@ -36,17 +36,24 @@ class Solution(object):
 
             # added below
             stripe = [order[i] for i in xrange(left, right+1) if abs(points[order[i]][0]-x) <= result[0]]
-            for i in xrange(len(stripe)):
+            for i in xrange(len(stripe)-1):
                 x = stripe[i]
-                for j in xrange(i+1, min((i+1)+MAX_NEIGHBOR_COUNT, len(stripe))):
-                    x, y = (stripe[i], stripe[j])
+                for j in xrange(i+1, len(stripe)):
+                    x, y = stripe[i], stripe[j]
+                    if points[y][1]-points[x][1] > result[0]:
+                        break
                     if x > y:
                         x, y = y, x
                     result[:] = min(result, [manhattan_distance(points[x], points[y]), (x, y)])
 
-        points = [(i, j) for i, j in itertools.izip(nums1, nums2)]
+        points = [(i, j, idx) for idx, (i, j) in enumerate(itertools.izip(nums1, nums2))]
         order = range(len(points))
-        order.sort(key=lambda x: points[x][0])
+        order.sort(key=lambda x: (points[x], x))
+        print [points[x] for x in order]
         result = [INF, (INF, INF)]
-        merge_sort(0, len(points)-1)
+        for i in xrange(len(order)-1):
+            if points[order[i]][:2] == points[order[i+1]][:2]:
+                result = min(result, [0, (order[i], order[i+1])]) 
+        if result[0]:
+            merge_sort(0, len(points)-1)
         return result[1]
