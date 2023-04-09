@@ -30,16 +30,16 @@ class Solution(object):
         def improve():
             lookup = {}
             for p in points:
-                a, b = map(int, cell(p, result[0]/2.0))
-                for na in xrange(a-2, a+3):
-                    for nb in xrange(b-2, b+3):
-                        if (na, nb) not in lookup:
+                i, j = map(int, cell(p, result[0]/2.0))
+                for ni in xrange(i-2, (i+2)+1):
+                    for nj in xrange(j-2, (j+2)+1):
+                        if (ni, nj) not in lookup:
                             continue
-                        d = dist(p, lookup[na, nb])
+                        d = dist(p, lookup[ni, nj])
                         if d < result:
                             result[:] = d
                             return True
-                lookup[a, b] = p
+                lookup[i, j] = p
             return False
 
         points = [(i, j, idx) for idx, (i, j) in enumerate(itertools.izip(nums1, nums2))]
