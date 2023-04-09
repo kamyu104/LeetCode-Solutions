@@ -37,7 +37,6 @@ class Solution(object):
             # added below
             stripe = [order[i] for i in xrange(left, right+1) if abs(points[order[i]][0]-x) <= result[0]]
             for i in xrange(len(stripe)-1):
-                x = stripe[i]
                 for j in xrange(i+1, len(stripe)):
                     x, y = stripe[i], stripe[j]
                     if points[y][1]-points[x][1] > result[0]:
