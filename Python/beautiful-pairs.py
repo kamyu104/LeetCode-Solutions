@@ -48,13 +48,18 @@ class Solution(object):
                     j = len(stripe)
                 assert(j-(i+1) <= MAX_NEIGHBOR_COUNT)
 
-        points = [(i, j, idx) for idx, (i, j) in enumerate(itertools.izip(nums1, nums2))]
-        order = range(len(points))
-        order.sort(key=lambda x: points[x])
+        points = [(i, j) for i, j in itertools.izip(nums1, nums2)]
         result = [INF, (INF, INF)]
-        for i in xrange(len(order)-1):
-            if points[order[i]][:2] == points[order[i+1]][:2]:
-                result = min(result, [0, (points[order[i]][2], points[order[i+1]][2])]) 
+        lookup = {}
+        for i, p in enumerate(points):
+            if p not in lookup:
+                lookup[p] = i
+                continue
+            result = min(result, [0, (lookup[p], i)])
+            lookup[p] = i
         if result[0]:
+            order = range(len(points))
+            order.sort(key=lambda x: points[x])
+            result = [INF, (INF, INF)]
             merge_sort(0, len(points)-1)
         return result[1]
