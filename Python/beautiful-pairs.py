@@ -27,6 +27,9 @@ class Solution(object):
                     if x > y:
                         x, y = y, x
                     result[:] = min(result, [manhattan_distance(points[x], points[y]), (x, y)])
+                else:
+                    j = -1
+                assert((len(arr)-1)-j <= MAX_NEIGHBOR_COUNT)
 
             if left == right:
                 return
@@ -46,24 +49,10 @@ class Solution(object):
                 else:
                     update(tmp_l, order[r])
                     if points[order[r]][0]-x <= result[0]:
-                        tmp_l.append(order[r])
+                        tmp_r.append(order[r])
                     tmp.append(order[r])
                     r += 1
             order[left:right+1] = tmp
-
-            # added below
-            stripe = [order[i] for i in xrange(left, right+1) if abs(points[order[i]][0]-x) <= result[0]]
-            for i in xrange(len(stripe)-1):
-                for j in xrange(i+1, len(stripe)):
-                    x, y = stripe[i], stripe[j]
-                    if points[y][1]-points[x][1] > result[0]:
-                        break
-                    if x > y:
-                        x, y = y, x
-                    result[:] = min(result, [manhattan_distance(points[x], points[y]), (x, y)])
-                else:
-                    j = len(stripe)
-                assert(j-(i+1) <= MAX_NEIGHBOR_COUNT)
 
         points = [(i, j) for i, j in itertools.izip(nums1, nums2)]
         result = [INF, (INF, INF)]
