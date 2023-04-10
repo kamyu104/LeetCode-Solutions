@@ -74,7 +74,7 @@ public:
 
         random_shuffle(begin(points), end(points));
         result = dist(points[0], points[1]);
-        for (; improve(););
+        while (improve());
         return {result[1], result[2]};
     }
 };
