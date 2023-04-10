@@ -49,8 +49,15 @@
     * [C++ Concurrency in Action](https://www.amazon.com/dp/1933988770)
 * Python
     * [Effective Python](https://www.amazon.com/dp/0134853989)
-* SQL
+    * [Python in Practice](https://www.amazon.com/dp/B00EO3TRL2)
+* Golang
+    * [Go Programming Language](https://www.amazon.com/dp/0134190440)
+    * [Concurrency in Go](https://www.amazon.com/dp/1491941197)
+    * [Distributed Services with Go](https://www.amazon.com/dp/1680507605)
+* Database
     * [Effective SQL](https://www.amazon.com/dp/B01MZ75IW5)
+    * [High Performance MySQL](https://www.amazon.com/dp/B09M7W126W/)
+    * [Database Internals](https://www.amazon.com/dp/1492040347)
 * Algorithms
     * [Introduction to Algorithms](https://www.amazon.com/dp/026204630X)
     * [Cracking the Coding Interview](https://www.amazon.com/dp/0984782850)
@@ -67,7 +74,6 @@
     * [Designing Data-Intensive Applications](https://www.amazon.com/dp/1449373321)
     * [Code Karle](https://www.youtube.com/@codeKarle)
     * [System Design Interview Volume 1](https://www.amazon.com/dp/B08CMF2CQF) / [System Design Interview Volume 2](https://www.amazon.com/dp/1736049119)
-    * [Database Internals](https://www.amazon.com/dp/1492040347)
     * [Microservices Patterns](https://www.amazon.com/dp/1617294543)
     * [Systems Performance](https://www.amazon.com/dp/0136820158)
 * Computer Systems
