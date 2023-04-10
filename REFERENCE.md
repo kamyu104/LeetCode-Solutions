@@ -1,12 +1,15 @@
 # Reference
 
-* C++
-    * [STL Time Complexity (Detailed)](http://www.cplusplus.com/reference/stl/)
-    * [STL Time Complexity (Summary)](http://john-ahlgren.blogspot.com/2013/10/stl-container-performance.html)
-    * [Data Structure and Algorithms Cheat Sheet](https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md)
-* Python
-    * [Time Complexity](https://wiki.python.org/moin/TimeComplexity)
-* Code
+## Tools
+
+* Complexity
+    * C++
+        * [STL Time Complexity (Detailed)](http://www.cplusplus.com/reference/stl/)
+        * [STL Time Complexity (Summary)](http://john-ahlgren.blogspot.com/2013/10/stl-container-performance.html)
+        * [Data Structure and Algorithms Cheat Sheet](https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md) 
+    * Python
+        * [Time Complexity](https://wiki.python.org/moin/TimeComplexity)
+* Code Template
     * [Rosetta Code](https://rosettacode.org)
     * [CP-Algorithms](https://cp-algorithms.com)
     * [KACTL](https://github.com/kth-competitive-programming/kactl)
@@ -17,6 +20,16 @@
     * [VisuAlgo](https://visualgo.net/en)
     * [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
     * [Algorithm Visualizer](https://algorithm-visualizer.org/)
+
+## Books
+* C++
+    * [C++ Coding Standards](https://www.amazon.com/dp/0321113586)
+    * [Effective Modern C++](https://www.amazon.com/dp/1491903996)
+    * [API Design for C++](https://www.amazon.com/dp/0123850037)
+* Python
+    * [Effective Python](https://www.amazon.com/dp/0134853989)
+* SQL
+    * [Effective SQL](https://www.amazon.co/dp/B01MZ75IW5)
 * Algorithms
     * [Introduction to Algorithms](https://www.amazon.com/dp/026204630X)
     * [Cracking the Coding Interview](https://www.amazon.com/dp/0984782850)
@@ -41,8 +54,11 @@
     * [Understanding Linux Kernel](https://www.amazon.com/dp/0596005652)
     * [Professional Linux Kernel Architecture](https://www.amazon.com/dp/0470343435)
     * [Windows Internals Part1](https://www.amazon.com/dp/0735684189) / [Windows Internals Part2](https://www.amazon.com/dp/0135462401)
-* Handy Table
-    * [Thinking Techniques](https://sites.google.com/site/mostafasibrahim/programming-competitions/thinking-techniques) as follows:
+
+
+## Handy Table
+
+* [Thinking Techniques](https://sites.google.com/site/mostafasibrahim/programming-competitions/thinking-techniques) as follows:
 
 | n | Complexity | Possible Algorithms & Techniques |
 | - | - | - |
