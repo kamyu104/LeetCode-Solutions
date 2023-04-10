@@ -50,6 +50,7 @@
     * [Operating System Concepts](https://www.amazon.com/dp/B07CVKH7BD)
     * [Operating Systems: Three Easy Pieces](https://www.amazon.com/dp/198508659X)
     * [The Linux Programming Interface](https://www.amazon.com/dp/1593272200)
+    * [程序员的自我修养](https://item.jd.com/10067200.html)
     * [Linux Kernel Development](https://www.amazon.com/dp/0672329468)
     * [Understanding Linux Kernel](https://www.amazon.com/dp/0596005652)
     * [Professional Linux Kernel Architecture](https://www.amazon.com/dp/0470343435)
