@@ -19,6 +19,7 @@ private:
 public:
     vector<int> beautifulPair(vector<int>& nums1, vector<int>& nums2) {
         static const int INF = numeric_limits<int>::max();
+        srand(time(0));
 
         vector<vector<int>> points;
         for (int i = 0; i < size(nums1); ++i) {
