@@ -121,7 +121,7 @@ class Solution2(object):
         if result[0] == 0:
             return result[1]
         order = range(len(points))
-        order.sort(key=lambda x: points[x])
+        order.sort(key=lambda x: points[x][0])
         merge_sort(0, len(points)-1)
         return result[1:]
 
@@ -185,6 +185,6 @@ class Solution3(object):
         if result[0] == 0:
             return result[1]
         order = range(len(points))
-        order.sort(key=lambda x: points[x])
+        order.sort(key=lambda x: points[x][0])
         merge_sort(0, len(points)-1)
         return result[1:]
