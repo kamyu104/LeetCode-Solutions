@@ -263,12 +263,12 @@ class Solution4(object):
         y_to_idx = {y:i for i, y in enumerate(sorted(y_set))}
         st1, st2 = SegmentTree(len(y_to_idx)), SegmentTree(len(y_to_idx))
         for i in order:
-            j = -st1.query(0, y_to_idx[points[i][1]])[1]  # min((xi-xj)+(yi-yj) for j in range(i+1)) = (xi+yi)-max((xj+yj) for j in range(i+1))
+            j = -st1.query(0, y_to_idx[points[i][1]])[1]  # min((xi-xj)+(yi-yj) for j in range(y_to_idx[points[i][1]+1)) = (xi+yi)-max((xj+yj) for j in range(y_to_idx[points[i][1]+1))
             if j != INF:
                 assert(points[j][1] <= points[i][1])
                 result = min(result, dist(i, j))
             st1.update(y_to_idx[points[i][1]], [points[i][0]+points[i][1], -i])
-            j = -st2.query(y_to_idx[points[i][1]], len(y_to_idx)-1)[1]  # min((xi-xj)+(yj-yi) for j in range(i, len(y_to_idx))) = (xi-yi)-max((xj-yj) for j in range(i, len(y_to_idx))
+            j = -st2.query(y_to_idx[points[i][1]], len(y_to_idx)-1)[1]  # min((xi-xj)+(yj-yi) for j in range(y_to_idx[points[i][1], len(y_to_idx))) = (xi-yi)-max((xj-yj) for j in range(y_to_idx[points[i][1], len(y_to_idx))
             if j != INF:
                 assert(points[j][1] >= points[i][1])
                 result = min(result, dist(i, j))
