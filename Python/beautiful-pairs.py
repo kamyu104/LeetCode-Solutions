@@ -18,10 +18,9 @@ class Solution(object):
         """
         INF = float("inf")
         def dist(a, b):
-            x, y = a[-1], b[-1]
-            if x > y:
-                x, y = y, x
-            return [abs(a[0]-b[0])+abs(a[1]-b[1]), x, y]
+            if a[2] > b[2]:
+                a, b = b, a
+            return [abs(a[0]-b[0])+abs(a[1]-b[1]), a[2], b[2]]
 
         def cell(point, size):
             x, y, _ = point
