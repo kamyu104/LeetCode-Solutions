@@ -209,7 +209,7 @@ class Solution4(object):
             def __init__(self, N,
                          build_fn=lambda _: [-INF, -INF],  # modified
                          query_fn=lambda x, y: y if x is None else x if y is None else max(x, y),
-                         update_fn=lambda x, y: y if x is None else x if y is None else max(x, y)):  # modified
+                         update_fn=lambda x: x):
                 self.tree = [None]*(2*2**((N-1).bit_length()))
                 self.base = len(self.tree)//2
                 self.query_fn = query_fn
@@ -221,7 +221,7 @@ class Solution4(object):
 
             def update(self, i, h):
                 x = self.base+i
-                self.tree[x] = self.update_fn(self.tree[x], h)  # modified
+                self.tree[x] = self.update_fn(h)
                 while x > 1:
                     x //= 2
                     self.tree[x] = self.query_fn(self.tree[x*2], self.tree[x*2+1])
