@@ -58,8 +58,8 @@
 
 ## Blogs
 
-- https://github.com/xiaolincoder/CS-Base
-- https://github.com/yanfeizhang/coder-kung-fu
+- [小林 x 图解计算机基础](https://github.com/xiaolincoder/CS-Base)
+- [开发内功修炼](https://github.com/yanfeizhang/coder-kung-fu)
 
 ## Handy Table
 
