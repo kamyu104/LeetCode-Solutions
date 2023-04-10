@@ -56,6 +56,10 @@
     * [Professional Linux Kernel Architecture](https://www.amazon.com/dp/0470343435)
     * [Windows Internals Part1](https://www.amazon.com/dp/0735684189) / [Windows Internals Part2](https://www.amazon.com/dp/0135462401)
 
+## Blogs
+
+- https://github.com/xiaolincoder/CS-Base
+- https://github.com/yanfeizhang/coder-kung-fu
 
 ## Handy Table
 
