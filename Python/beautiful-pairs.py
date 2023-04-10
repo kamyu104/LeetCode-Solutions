@@ -268,9 +268,9 @@ class Solution4(object):
                 assert(points[j][1] <= points[i][1])
                 result = min(result, dist(i, j))
             st1.update(y_to_idx[points[i][1]], [points[i][0]+points[i][1], -i])
-            j = -st2.query(y_to_idx[points[i][1]], len(y_to_idx)-1)[1]  # min((xi-xj)+(yj-yi) for j in range(y_to_idx[points[i][1], len(y_to_idx))) = (xi-yi)-max((xj-yj) for j in range(y_to_idx[points[i][1], len(y_to_idx))
+            j = -st2.query(y_to_idx[points[i][1]]+1, len(y_to_idx)-1)[1]  # min((xi-xj)+(yj-yi) for j in range(y_to_idx[points[i][1]+1, len(y_to_idx))) = (xi-yi)-max((xj-yj) for j in range(y_to_idx[points[i][1]+1, len(y_to_idx))
             if j != INF:
-                assert(points[j][1] >= points[i][1])
+                assert(points[j][1] > points[i][1])
                 result = min(result, dist(i, j))
             st2.update(y_to_idx[points[i][1]], [points[i][0]-points[i][1], -i])
         return result[1:]
