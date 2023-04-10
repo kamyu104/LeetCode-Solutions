@@ -52,7 +52,7 @@ public:
             unordered_map<vector<int>, vector<int>, VectorHash<int>> lookup;
             for (const auto& p : points) {
                 const double size = result[0] / 2.0;
-                const int i = p[0] / size, j = p[1] / size;
+                const int i = floor(p[0] / size), j = floor(p[1] / size);
                 for (int ni = i - 2; ni <= i + 2; ++ni) {
                     for (int nj = j - 2; nj <= j + 2; ++nj) {
                         const auto& key = vector<int>{ni, nj};
