@@ -42,6 +42,7 @@
 
 ## Books
 * C++
+    * [C++ Primer](https://www.amazon.com/dp/0321714113)
     * [C++ Coding Standards](https://www.amazon.com/dp/0321113586)
     * [Effective Modern C++](https://www.amazon.com/dp/1491903996)
     * [API Design for C++](https://www.amazon.com/dp/0123850037)
