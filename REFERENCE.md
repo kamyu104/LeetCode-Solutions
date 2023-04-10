@@ -45,6 +45,7 @@
     * [C++ Coding Standards](https://www.amazon.com/dp/0321113586)
     * [Effective Modern C++](https://www.amazon.com/dp/1491903996)
     * [API Design for C++](https://www.amazon.com/dp/0123850037)
+    * [C++ Concurrency in Action](https://www.amazon.com/dp/1933988770)
 * Python
     * [Effective Python](https://www.amazon.com/dp/0134853989)
 * SQL
@@ -57,6 +58,10 @@
     * [プログラミングコンテストチャレンジブック](https://www.amazon.co.jp/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E3%83%81%E3%83%A3%E3%83%AC%E3%83%B3%E3%82%B8%E3%83%96%E3%83%83%E3%82%AF-%E7%AC%AC2%E7%89%88-%EF%BD%9E%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E3%81%AE%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E6%B4%BB%E7%94%A8%E5%8A%9B%E3%81%A8%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF%E3%82%92%E9%8D%9B%E3%81%88%E3%82%8B%EF%BD%9E-%E7%A7%8B%E8%91%89%E6%8B%93%E5%93%89/dp/4839941068)
     * [Competitive Programming in Python](https://www.amazon.com/Christoph-D%C3%BCrr-ebook/dp/B08K3MS9ML)
     * [Guide to Competitive Programming](https://www.amazon.com/Antti-Laaksonen/dp/3030393569)
+ * Design Patterns
+    * [Design Patterns](https://www.amazon.com/dp/0201633612)
+    * [Patterns of Enterprise Application Architecture](https://www.amazon.com/dp/0321127420)
+    * [Pattern-Oriented Software Architecture Volume 2](https://www.amazon.com/dp/0471606952)
  * System Design
     * [Designing Data-Intensive Applications](https://www.amazon.com/dp/1449373321)
     * [Code Karle](https://www.youtube.com/@codeKarle)
@@ -65,6 +70,8 @@
     * [Microservices Patterns](https://www.amazon.com/dp/1617294543)
     * [Linux多线程服务端编程](https://e.jd.com/30149978.html)
     * [Systems Performance](https://www.amazon.com/dp/0136820158)
+* Computer Systems
+    * [Computer Systems](https://www.amazon.com/dp/013409266X) 
 * Operating Systems
     * [Operating System Concepts](https://www.amazon.com/dp/B07CVKH7BD)
     * [Operating Systems: Three Easy Pieces](https://www.amazon.com/dp/198508659X)
