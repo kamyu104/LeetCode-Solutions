@@ -93,5 +93,10 @@
 
 ## Blogs
 
-- [小林 x 图解计算机基础](https://github.com/xiaolincoder/CS-Base)
-- [开发内功修炼](https://github.com/yanfeizhang/coder-kung-fu)
+- Computer Science
+   - [小林 x 图解计算机基础](https://github.com/xiaolincoder/CS-Base)
+   - [开发内功修炼](https://github.com/yanfeizhang/coder-kung-fu)
+- Golang Design
+   - [Go 程序设计](https://www.yuque.com/qyuhen/go)
+   - [Go 语言设计与实现](https://draveness.me/golang)
+   - [Golang Design](https://golang.design)
