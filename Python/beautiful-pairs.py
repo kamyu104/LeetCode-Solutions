@@ -51,8 +51,7 @@ class Solution(object):
         if result[0] == 0:
             return result[1:]
         random.shuffle(points)
-        p, q = points[0], points[1]
-        result = dist(p, q)
+        result = dist(points[0], points[1])
         while improve():
             pass
         return result[1:]
