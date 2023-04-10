@@ -83,6 +83,7 @@
        * [Understanding Linux Kernel](https://www.amazon.com/dp/0596005652)
        * [Professional Linux Kernel Architecture](https://www.amazon.com/dp/0470343435)
     * Windows
+        * [Windows System Programming](https://www.amazon.com/dp/0321657748)
         * [Windows Internals Part 1](https://www.amazon.com/dp/0735684189) / [Windows Internals Part 2](https://www.amazon.com/dp/0135462401)
 * Computer Network Programming
     * [Linux多线程服务端编程](https://e.jd.com/30149978.html)
