@@ -118,7 +118,7 @@ public:
         vector<int> order(size(points));
         iota(begin(order), end(order), 0);
         sort(begin(order), end(order), [&](const auto& a, const auto& b) {
-            return points[a] < points[b];
+            return points[a][0] < points[b][0];
         });
         const auto& dist = [&](auto a, auto b) {
             if (a > b) {
@@ -209,7 +209,7 @@ public:
         vector<int> order(size(points));
         iota(begin(order), end(order), 0);
         sort(begin(order), end(order), [&](const auto& a, const auto& b) {
-            return points[a] < points[b];
+            return points[a][0] < points[b][0];
         });
         const auto& dist = [&](auto a, auto b) {
             if (a > b) {
