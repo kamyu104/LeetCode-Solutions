@@ -29,7 +29,7 @@
 * Python
     * [Effective Python](https://www.amazon.com/dp/0134853989)
 * SQL
-    * [Effective SQL](https://www.amazon.co/dp/B01MZ75IW5)
+    * [Effective SQL](https://www.amazon.com/dp/B01MZ75IW5)
 * Algorithms
     * [Introduction to Algorithms](https://www.amazon.com/dp/026204630X)
     * [Cracking the Coding Interview](https://www.amazon.com/dp/0984782850)
