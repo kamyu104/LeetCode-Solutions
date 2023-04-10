@@ -32,6 +32,7 @@
     * [Database Internals](https://www.amazon.com/dp/1492040347)
     * [Microservices Patterns](https://www.amazon.com/dp/1617294543)
     * [Linux多线程服务端编程](https://e.jd.com/30149978.html)
+    * [Systems Performance](https://www.amazon.com/dp/0136820158)
 * Operating Systems
     * [Operating System Concepts](https://www.amazon.com/dp/B07CVKH7BD)
     * [Operating Systems: Three Easy Pieces](https://www.amazon.com/dp/198508659X)
