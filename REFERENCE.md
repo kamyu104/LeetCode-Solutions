@@ -68,19 +68,25 @@
     * [System Design Interview Volume 1](https://www.amazon.com/dp/B08CMF2CQF) / [System Design Interview Volume 2](https://www.amazon.com/dp/1736049119)
     * [Database Internals](https://www.amazon.com/dp/1492040347)
     * [Microservices Patterns](https://www.amazon.com/dp/1617294543)
-    * [Linux多线程服务端编程](https://e.jd.com/30149978.html)
     * [Systems Performance](https://www.amazon.com/dp/0136820158)
 * Computer Systems
-    * [Computer Systems](https://www.amazon.com/dp/013409266X) 
-* Operating Systems
-    * [Operating System Concepts](https://www.amazon.com/dp/B07CVKH7BD)
-    * [Operating Systems: Three Easy Pieces](https://www.amazon.com/dp/198508659X)
-    * [The Linux Programming Interface](https://www.amazon.com/dp/1593272200)
+    * [Computer Systems](https://www.amazon.com/dp/013409266X)
     * [程序员的自我修养](https://item.jd.com/10067200.html)
-    * [Linux Kernel Development](https://www.amazon.com/dp/0672329468)
-    * [Understanding Linux Kernel](https://www.amazon.com/dp/0596005652)
-    * [Professional Linux Kernel Architecture](https://www.amazon.com/dp/0470343435)
-    * [Windows Internals Part 1](https://www.amazon.com/dp/0735684189) / [Windows Internals Part 2](https://www.amazon.com/dp/0135462401)
+* Operating Systems
+    * Introduction 
+       * [Operating System Concepts](https://www.amazon.com/dp/B07CVKH7BD)
+       * [Operating Systems: Three Easy Pieces](https://www.amazon.com/dp/198508659X)
+    * Linux
+       * [The Linux Programming Interface](https://www.amazon.com/dp/1593272200)
+       * [Linux Kernel Development](https://www.amazon.com/dp/0672329468)
+       * [Understanding Linux Kernel](https://www.amazon.com/dp/0596005652)
+       * [Professional Linux Kernel Architecture](https://www.amazon.com/dp/0470343435)
+    * Windows
+        * [Windows Internals Part 1](https://www.amazon.com/dp/0735684189) / [Windows Internals Part 2](https://www.amazon.com/dp/0135462401)
+* Computer Network Programming
+    * [Linux多线程服务端编程](https://e.jd.com/30149978.html)
+    * [TCP/IP Illustrated](https://www.amazon.com/dp/0321336313)
+    * [Effective TCP/IP Programming](https://www.amazon.com/dp/0201615894)
 
 ## Blogs
 
