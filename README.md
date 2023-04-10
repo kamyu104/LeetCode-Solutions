@@ -63,7 +63,7 @@
     * [Data Structure and Algorithms Cheat Sheet](https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md)
 * Python
     * [Time Complexity](https://wiki.python.org/moin/TimeComplexity)
-* Algorithms
+* Code
     * [Rosetta Code](https://rosettacode.org)
     * [CP-Algorithms](https://cp-algorithms.com)
     * [KACTL](https://github.com/kth-competitive-programming/kactl)
