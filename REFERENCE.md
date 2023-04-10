@@ -27,7 +27,7 @@
     * [Guide to Competitive Programming](https://www.amazon.com/-/en/Antti-Laaksonen/dp/3030393569)
  * System Design
     * [Designing Data-Intensive Applications](https://www.amazon.com/-/en/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
-    * [codeKarle](https://www.youtube.com/@codeKarle)
+    * [Code Karle](https://www.youtube.com/@codeKarle)
     * [System Design Interview](https://www.amazon.com/-/en/System-Design-Interview-insiders-guide/dp/B08CMF2CQF)
     * [System Design Interview Volume 2](https://www.amazon.com/-/en/System-Design-Interview-Insiders-Guide/dp/1736049119)
     * [Database Internals](https://www.amazon.com/-/en/Database-Internals-Deep-Distributed-Systems/dp/1492040347)
