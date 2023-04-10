@@ -55,7 +55,9 @@
 
 * [Shell Script](https://github.com/kamyu104/LeetCode-Solutions#shell-script)
 
-## [Reference](./REFERENCE.md)
+## Reference
+
+* [Links](./REFERENCE.md)
 
 ## Bit Manipulation
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
