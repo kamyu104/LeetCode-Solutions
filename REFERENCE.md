@@ -95,6 +95,8 @@
 * Computer Science
     * Computer Systems 
         * [Computer Systems](https://www.amazon.com/dp/013409266X)
+    * Computer Mathematics
+        * [Concrete Mathematics](https://www.amazon.com/dp/0201558025)
     * Computer Organization and Architecture
         * [Computer Organization and Design](https://www.amazon.com/dp/0128203315)
         * [Computer Architecture](https://www.amazon.com/dp/0128119055)
