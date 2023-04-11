@@ -8,10 +8,10 @@ public:
         const int m = size(grid), n = size(grid[0]);
         vector<UnionFind> uf1(m, UnionFind(n + 1));
         vector<UnionFind> uf2(n, UnionFind(m + 1));
-        int d = 1;
-        vector<pair<int, int>> q = {{0, 0}};
-        uf1[0].union_set(0, 1);
-        uf2[0].union_set(0, 1);
+        int d = 1, i = 0, j = 0;
+        vector<pair<int, int>> q = {{i, j}};
+        uf1[i].union_set(j, j + 1);
+        uf2[j].union_set(i, i + 1);
         while (!empty(q)) {
             vector<pair<int, int>> new_q;
             for (const auto& [i, j] : q) {
