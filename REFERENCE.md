@@ -41,6 +41,8 @@
     * [Algorithm Visualizer](https://algorithm-visualizer.org/)
 
 ## Books
+* Computer Science
+    * [Computer Systems](https://www.amazon.com/dp/013409266X)
 * C++
     * [C++ Primer](https://www.amazon.com/dp/0321714113)
     * [C++ Coding Standards](https://www.amazon.com/dp/0321113586)
@@ -73,8 +75,6 @@
     * [System Design Interview Volume 1](https://www.amazon.com/dp/B08CMF2CQF) / [System Design Interview Volume 2](https://www.amazon.com/dp/1736049119)
     * [Microservices Patterns](https://www.amazon.com/dp/1617294543)
     * [Systems Performance](https://www.amazon.com/dp/0136820158)
-* Computer Science
-    * [Computer Systems](https://www.amazon.com/dp/013409266X)
 * Software Development
     * [Code Complete](https://www.amazon.com/dp/B00JDMPOSY)
     * [Clean Code](https://www.amazon.com/dp/0132350882)
