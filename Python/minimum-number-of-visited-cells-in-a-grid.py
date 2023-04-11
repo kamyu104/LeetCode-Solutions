@@ -40,7 +40,6 @@ class Solution(object):
         :rtype: int
         """
         m, n = len(grid), len(grid[0])
-        target = (m-1, n-1)
         uf1 = [UnionFind(n+1) for _ in xrange(m)]
         uf2 = [UnionFind(m+1) for _ in xrange(n)]
         d, i, j = 1, 0, 0
@@ -50,7 +49,7 @@ class Solution(object):
         while q:
             new_q = []
             for i, j in q:
-                if (i, j) == target:
+                if (i, j) == (m-1, n-1):
                     return d
                 while uf1[i].right_set(j) <= min(j+grid[i][j], n-1):
                     k = uf1[i].right_set(j)
@@ -81,7 +80,6 @@ class Solution2_TLE(object):
         :rtype: int
         """
         m, n = len(grid), len(grid[0])
-        target = (m-1, n-1)
         sl1 = [SortedList(xrange(n)) for _ in xrange(m)]
         sl2 = [SortedList(xrange(m)) for _ in xrange(n)]
         d = 1
@@ -89,7 +87,7 @@ class Solution2_TLE(object):
         while q:
             new_q = []
             for i, j in q:
-                if (i, j) == target:
+                if (i, j) == (m-1, n-1):
                     return d
                 for k in list(sl1[i].irange(j+1, min(j+grid[i][j], n-1))):
                     new_q.append((i, k))
