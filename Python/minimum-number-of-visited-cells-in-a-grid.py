@@ -43,10 +43,10 @@ class Solution(object):
         target = (m-1, n-1)
         uf1 = [UnionFind(n+1) for _ in xrange(m)]
         uf2 = [UnionFind(m+1) for _ in xrange(n)]
-        d = 1
-        q = [(0, 0)]
-        uf1[0].union_set(0, 1)
-        uf2[0].union_set(0, 1)
+        d, i, j = 1, 0, 0
+        q = [(i, j)]
+        uf1[i].union_set(j, j+1)
+        uf2[j].union_set(i, i+1)
         while q:
             new_q = []
             for i, j in q:
