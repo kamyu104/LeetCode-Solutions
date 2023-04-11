@@ -73,9 +73,8 @@
     * [System Design Interview Volume 1](https://www.amazon.com/dp/B08CMF2CQF) / [System Design Interview Volume 2](https://www.amazon.com/dp/1736049119)
     * [Microservices Patterns](https://www.amazon.com/dp/1617294543)
     * [Systems Performance](https://www.amazon.com/dp/0136820158)
-* Computer Systems
+* Computer Science
     * [Computer Systems](https://www.amazon.com/dp/013409266X)
-    * [程序员的自我修养](https://item.jd.com/10067200.html)
 * Software Development
     * [Code Complete](https://www.amazon.com/dp/B00JDMPOSY)
     * [Clean Code](https://www.amazon.com/dp/0132350882)
@@ -89,6 +88,7 @@
     * Introduction 
        * [Operating System Concepts](https://www.amazon.com/dp/B07CVKH7BD)
        * [Operating Systems: Three Easy Pieces](https://www.amazon.com/dp/198508659X)
+       * [程序员的自我修养](https://item.jd.com/10067200.html)
     * Linux
        * [The Linux Programming Interface](https://www.amazon.com/dp/1593272200)
        * [Linux Kernel Development](https://www.amazon.com/dp/0672329468)
