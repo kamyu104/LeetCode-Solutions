@@ -97,8 +97,8 @@ public:
                 sl2[j].emplace(i);
             }
         }
-        int d = 1;
-        vector<pair<int, int>> q = {{0, 0}};
+        int d = 1, i = 0, j = 0;
+        vector<pair<int, int>> q = {{i, j}};
         while (!empty(q)) {
             vector<pair<int, int>> new_q;
             for (const auto& [i, j] : q) {
