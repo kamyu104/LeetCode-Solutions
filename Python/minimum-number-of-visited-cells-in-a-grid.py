@@ -1,4 +1,4 @@
-# Time:  O(m * n)
+# Time:  O(m * n * alpha(m + n)) = O(m + n)
 # Space: O(m * n)
 
 # bfs, union find
@@ -93,12 +93,10 @@ class Solution2_TLE(object):
                     return d
                 for k in list(sl1[i].irange(j+1, min(j+grid[i][j], n-1))):
                     new_q.append((i, k))
-                    print i, k
                     sl1[i].remove(k)
                     sl2[k].remove(i)
                 for k in list(sl2[j].irange(i+1, min(i+grid[i][j], m-1))):
                     new_q.append((k, j))
-                    print k, j
                     sl2[j].remove(k)
                     sl1[k].remove(j)
             q = new_q
