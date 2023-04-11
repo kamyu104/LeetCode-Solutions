@@ -81,8 +81,8 @@ class Solution2_TLE(object):
         m, n = len(grid), len(grid[0])
         sl1 = [SortedList(xrange(n)) for _ in xrange(m)]
         sl2 = [SortedList(xrange(m)) for _ in xrange(n)]
-        d = 1
-        q = [(0, 0)]
+        d, i, j = 1, 0, 0
+        q = [(i, j)]
         while q:
             new_q = []
             for i, j in q:
@@ -90,12 +90,12 @@ class Solution2_TLE(object):
                     return d
                 for k in list(sl1[i].irange(j+1, min(j+grid[i][j], n-1))):
                     new_q.append((i, k))
-                    sl1[i].remove(k)
                     sl2[k].remove(i)
+                    sl1[i].remove(k)
                 for k in list(sl2[j].irange(i+1, min(i+grid[i][j], m-1))):
                     new_q.append((k, j))
-                    sl2[j].remove(k)
                     sl1[k].remove(j)
+                    sl2[j].remove(k)
             q = new_q
             d += 1
         return -1
