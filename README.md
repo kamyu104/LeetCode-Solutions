@@ -972,6 +972,7 @@
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 1106 | [Parsing A Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression/) | [C++](./C++/parsing-a-boolean-expression.cpp) [Python](./Python/parsing-a-boolean-expression.py) | _O(n)_          | _O(n)_          | Hard           ||
+2613 | [Beautiful Pairs](https://leetcode.com/problems/beautiful-pairs/) | [C++](./C++/beautiful-pairs.cpp) [Python](./Python/beautiful-pairs.py) | _O(n)_ on average | _O(n)_ | Hard | 🔒, variant of [SPOJ - Closest Point Pair](https://www.spoj.com/problems/CLOPPAIR/) | Random Algorithms, Divide and Conquer, Merge Sort, Segment Tree |
 
 <br/>
 <div align="right">
@@ -1036,7 +1037,6 @@
 2560 | [House Robber IV](https://leetcode.com/problems/house-robber-iv/) | [C++](./C++/house-robber-iv.cpp) [Python](./Python/house-robber-iv.py) | _O(nlogn)_ | _O(n)_ | Medium | | Binary Search, Greedy |
 2594 | [Minimum Time to Repair Cars](https://leetcode.com/problems/minimum-time-to-repair-cars/) | [C++](./C++/minimum-time-to-repair-cars.cpp) [Python](./Python/minimum-time-to-repair-cars.py) | _O(mx * (logc + log(mn)))_ | _O(mx)_ | Medium | | Freq Table, Binary Search, Heap, Simulation |
 2602 | [Minimum Operations to Make All Array Elements Equal](https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/) | [C++](./C++/minimum-operations-to-make-all-array-elements-equal.cpp) [Python](./Python/minimum-operations-to-make-all-array-elements-equal.py) | _O(nlogn + qlogn)_ | _O(n)_ | Medium | | Sort, Binary Search, Prefix Sum |
-2613 | [Beautiful Pairs](https://leetcode.com/problems/beautiful-pairs/) | [C++](./C++/beautiful-pairs.cpp) [Python](./Python/beautiful-pairs.py) | _O(n)_ on average | _O(n)_ | Hard | 🔒, variant of [SPOJ - Closest Point Pair](https://www.spoj.com/problems/CLOPPAIR/) | Random Algorithms, Divide and Conquer, Merge Sort, Segment Tree |
 2616 | [Minimize the Maximum Difference of Pairs](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/) | [C++](./C++/minimize-the-maximum-difference-of-pairs.cpp) [Python](./Python/minimize-the-maximum-difference-of-pairs.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | | Binary Search, Greedy |
 
 <br/>
