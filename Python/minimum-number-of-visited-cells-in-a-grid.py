@@ -69,7 +69,6 @@ class Solution(object):
 # Time:  O(m * n * log(m + n))
 # Space: O(m * n)
 from sortedcontainers import SortedList
-import heapq
 
 
 # bfs, sorted list
