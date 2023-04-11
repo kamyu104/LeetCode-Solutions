@@ -262,7 +262,6 @@
 2569 | [Handling Sum Queries After Update](https://leetcode.com/problems/handling-sum-queries-after-update/)| [C++](./C++/handling-sum-queries-after-update.cpp) [Python](./Python/handling-sum-queries-after-update.py)| _O(nlogn + m + qlogn)_ | _O(n)_ | Hard | | Segment Tree |
 2574 | [Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences/)| [C++](./C++/left-and-right-sum-differences.cpp) [Python](./Python/left-and-right-sum-differences.py)| _O(n)_ | _O(1)_ | Easy | | Prefix Sum |
 2580 | [Count Ways to Group Overlapping Ranges](https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/)| [C++](./C++/count-ways-to-group-overlapping-ranges.cpp) [Python](./Python/count-ways-to-group-overlapping-ranges.py)| _O(nlogn)_ | _O(1)_ | Medium | | Sort, Array |
-2614 | [Prime In Diagonal](https://leetcode.com/problems/prime-in-diagonal/)| [C++](./C++/prime-in-diagonal.cpp) [Python](./Python/prime-in-diagonal.py)| precompute: _O(MAX_N)_<br>runtime: _O(n)_ | _O(MAX_N)_ | Easy | | Number Theory |
 
 <br/>
 <div align="right">
@@ -820,6 +819,7 @@
 2579 | [Count Total Number of Colored Cells](https://leetcode.com/problems/count-total-number-of-colored-cells/) | [C++](./C++/count-total-number-of-colored-cells.cpp) [Python](./Python/count-total-number-of-colored-cells.py) | _O(1)_   | _O(1)_        | Medium         | | Math
 2582 | [Pass the Pillow](https://leetcode.com/problems/pass-the-pillow/) | [C++](./C++/pass-the-pillow.cpp) [Python](./Python/pass-the-pillow.py) | _O(1)_   | _O(1)_        | Medium         | | Math
 2584 | [Split the Array to Make Coprime Products](https://leetcode.com/problems/split-the-array-to-make-coprime-products/) | [C++](./C++/split-the-array-to-make-coprime-products.cpp) [Python](./Python/split-the-array-to-make-coprime-products.py) | _O(n * sqrt(r))_   | _O(sqrt(r))_        | Hard         | | Math, Number Theory
+2614 | [Prime In Diagonal](https://leetcode.com/problems/prime-in-diagonal/)| [C++](./C++/prime-in-diagonal.cpp) [Python](./Python/prime-in-diagonal.py)| precompute: _O(MAX_N)_<br>runtime: _O(n)_ | _O(MAX_N)_ | Easy | | Number Theory, `Linear Sieve of Eratosthenes` |
 
 <br/>
 <div align="right">
