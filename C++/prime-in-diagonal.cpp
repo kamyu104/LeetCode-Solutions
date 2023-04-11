@@ -1,4 +1,4 @@
-// Time:  precompute: O(p)
+// Time:  precompute: O(MAX_NUM)
 //        runtime: O(n)
 // Space: O(p)
 
@@ -21,8 +21,8 @@ vector<int> linear_sieve_of_eratosthenes(int n) {  // Time: O(n), Space: O(n)
     return primes;  // len(primes) = O(n/(logn-1)), reference: https://math.stackexchange.com/questions/264544/how-to-find-number-of-prime-numbers-up-to-to-n
 }
 
-const int MAX_N = 4 * 1e6;
-const auto& PRIMES = linear_sieve_of_eratosthenes(MAX_N);
+const int MAX_NUM = 4 * 1e6;
+const auto& PRIMES = linear_sieve_of_eratosthenes(MAX_NUM);
 const unordered_set<int> PRIMES_SET(cbegin(PRIMES), cend(PRIMES));
 class Solution {
 public:
