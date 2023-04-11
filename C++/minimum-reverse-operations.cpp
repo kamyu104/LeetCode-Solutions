@@ -78,3 +78,43 @@ class UnionFind {
         vector<int> right_;  // added
     };
 };
+
+// Time:  O(nlogn)
+// Space: O(n)
+// bfs, bst
+class Solution2 {
+public:
+    vector<int> minReverseOperations(int n, int p, vector<int>& banned, int k) {
+        vector<bool> lookup(n);
+        for (const auto& i : banned) {
+            lookup[i] = true;
+        }
+        int d = 0;
+        vector<int> result(n, -1);
+        result[p] = d++;
+        vector<set<int>> bst(2);
+        for (int i = 0; i < n; ++i) {
+            bst[i % 2].emplace(i);
+        }
+        bst[p % 2].erase(p);
+        vector<int> q = {p};
+        while (!empty(q)) {
+            vector<int> new_q;
+            for (const auto& p : q) {
+                const int left = 2 * max(p - (k - 1), 0) + (k - 1) - p;
+                const int right = 2 * min(p + (k - 1), n - 1) - (k - 1) - p;
+                for (auto it = bst[left % 2].lower_bound(left);
+                     it != end(bst[left % 2]) && *it <= right;
+                     it = bst[left % 2].erase(it)) {
+                    if (!lookup[*it]) {
+                        result[*it] = d;
+                        new_q.emplace_back(*it);
+                    }
+                }
+            }
+            q = move(new_q);
+            ++d;
+        }
+        return result;
+    }
+};
