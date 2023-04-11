@@ -140,4 +140,4 @@
 - Golang Design
    - [雨痕 - Go 程序设计](https://www.yuque.com/qyuhen/go)
    - [Draven - Go 语言设计与实现](https://draveness.me/golang)
-   - [欧长坤 - Golang Design](https://golang.design)
+   - [Golang Design](https://golang.design)
