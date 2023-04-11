@@ -1,4 +1,4 @@
-# Time:  precompute: O(MAX_NUM)
+# Time:  precompute: O(MAX_N)
 #        runtime: O(n)
 # Space: O(p)
 
@@ -17,8 +17,8 @@ def linear_sieve_of_eratosthenes(n):
     return primes  # len(primes) = O(n/(logn-1)), reference: https://math.stackexchange.com/questions/264544/how-to-find-number-of-prime-numbers-up-to-to-n
 
 
-MAX_NUM = 4*10**6
-PRIMES = linear_sieve_of_eratosthenes(MAX_NUM)
+MAX_N = 4*10**6
+PRIMES = linear_sieve_of_eratosthenes(MAX_N)
 PRIMES_SET = set(PRIMES)
 class Solution(object):
     def diagonalPrime(self, nums):
