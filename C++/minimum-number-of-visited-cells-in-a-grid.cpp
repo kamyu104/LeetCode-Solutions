@@ -81,3 +81,47 @@ class UnionFind {
         vector<int> right_;  // added
     };
 };
+
+// Time:  O(m * n * alpha(m + n)) = O(m + n)
+// Space: O(m * n)
+
+// bfs, union find
+class Solution2 {
+public:
+    int minimumVisitedCells(vector<vector<int>>& grid) {
+        const int m = size(grid), n = size(grid[0]);
+        vector<set<int>> sl1(m);
+        vector<set<int>> sl2(n);
+        for (int i = 0; i < m; ++i) {
+            for (int j = 0; j < n; ++j) {
+                sl1[i].emplace(j);
+                sl2[j].emplace(i);
+            }
+        }
+        int d = 1;
+        vector<pair<int, int>> q = {{0, 0}};
+        while (!empty(q)) {
+            vector<pair<int, int>> new_q;
+            for (const auto& [i, j] : q) {
+                if (i == m - 1 && j == n - 1) {
+                    return d;
+                }
+                for (auto it = sl1[i].lower_bound(j + 1);
+                     it != end(sl1[i]) && *it <= j + grid[i][j];
+                     it = sl1[i].erase(it)) {
+                    new_q.emplace_back(i, *it);
+                    sl2[*it].erase(i);
+                }
+                for (auto it = sl2[j].lower_bound(i + 1);
+                     it != end(sl2[j]) && *it <= i + grid[i][j];
+                     it = sl2[j].erase(it)) {
+                    new_q.emplace_back(*it, j);
+                    sl1[*it].erase(j);
+                }
+            }
+            q = move(new_q);
+            ++d;
+        }
+        return -1;
+    }
+};
