@@ -1,6 +1,6 @@
-// Time:  precompute: O(MAX_NUM)
+// Time:  precompute: O(MAX_N)
 //        runtime: O(n)
-// Space: O(p)
+// Space: O(MAX_N)
 
 // number theory
 vector<int> linear_sieve_of_eratosthenes(int n) {  // Time: O(n), Space: O(n)
