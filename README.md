@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2612%20%2F%202612-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2617%20%2F%202617-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -262,6 +262,7 @@
 2569 | [Handling Sum Queries After Update](https://leetcode.com/problems/handling-sum-queries-after-update/)| [C++](./C++/handling-sum-queries-after-update.cpp) [Python](./Python/handling-sum-queries-after-update.py)| _O(nlogn + m + qlogn)_ | _O(n)_ | Hard | | Segment Tree |
 2574 | [Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences/)| [C++](./C++/left-and-right-sum-differences.cpp) [Python](./Python/left-and-right-sum-differences.py)| _O(n)_ | _O(1)_ | Easy | | Prefix Sum |
 2580 | [Count Ways to Group Overlapping Ranges](https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/)| [C++](./C++/count-ways-to-group-overlapping-ranges.cpp) [Python](./Python/count-ways-to-group-overlapping-ranges.py)| _O(nlogn)_ | _O(1)_ | Medium | | Sort, Array |
+2614 | [Prime In Diagonal](https://leetcode.com/problems/prime-in-diagonal/)| [C++](./C++/prime-in-diagonal.cpp) [Python](./Python/prime-in-diagonal.py)| precompute: _O(MAX_N)_<br>runtime: _O(n)_ | _O(MAX_N)_ | Easy | | Number Theory |
 
 <br/>
 <div align="right">
@@ -652,6 +653,7 @@
 2598 | [Smallest Missing Non-negative Integer After Operations](https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/) | [C++](./C++/smallest-missing-non-negative-integer-after-operations.cpp) [Python](./Python/smallest-missing-non-negative-integer-after-operations.py) | _O(n)_ | _O(k)_ | Medium | | Freq Table
 2605 | [Form Smallest Number From Two Digit Arrays](https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/) | [C++](./C++/form-smallest-number-from-two-digit-arrays.cpp) [Python](./Python/form-smallest-number-from-two-digit-arrays.py) | _O(m + n)_ | _O(m + n)_ | Easy | | Hash Table
 2610 | [Convert an Array Into a 2D Array With Conditions](https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/) | [C++](./C++/convert-an-array-into-a-2d-array-with-conditions.cpp) [Python](./Python/convert-an-array-into-a-2d-array-with-conditions.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Constructive Algorithms
+2615 | [Sum of Distances](https://leetcode.com/problems/sum-of-distances/) | [C++](./C++/sum-of-distances.cpp) [Python](./Python/sum-of-distances.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Prefix Sum
 
 <br/>
 <div align="right">
@@ -1034,6 +1036,8 @@
 2560 | [House Robber IV](https://leetcode.com/problems/house-robber-iv/) | [C++](./C++/house-robber-iv.cpp) [Python](./Python/house-robber-iv.py) | _O(nlogn)_ | _O(n)_ | Medium | | Binary Search, Greedy |
 2594 | [Minimum Time to Repair Cars](https://leetcode.com/problems/minimum-time-to-repair-cars/) | [C++](./C++/minimum-time-to-repair-cars.cpp) [Python](./Python/minimum-time-to-repair-cars.py) | _O(mx * (logc + log(mn)))_ | _O(mx)_ | Medium | | Freq Table, Binary Search, Heap, Simulation |
 2602 | [Minimum Operations to Make All Array Elements Equal](https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/) | [C++](./C++/minimum-operations-to-make-all-array-elements-equal.cpp) [Python](./Python/minimum-operations-to-make-all-array-elements-equal.py) | _O(nlogn + qlogn)_ | _O(n)_ | Medium | | Sort, Binary Search, Prefix Sum |
+2613 | [Beautiful Pairs](https://leetcode.com/problems/beautiful-pairs/) | [C++](./C++/beautiful-pairs.cpp) [Python](./Python/beautiful-pairs.py) | _O(n)_ on average | _O(n)_ | Hard | 🔒, variant of [SPOJ - Closest Point Pair](https://www.spoj.com/problems/CLOPPAIR/) | Random Algorithms, Divide and Conquer, Merge Sort, Segment Tree |
+2616 | [Minimize the Maximum Difference of Pairs](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/) | [C++](./C++/minimize-the-maximum-difference-of-pairs.cpp) [Python](./Python/minimize-the-maximum-difference-of-pairs.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | | Binary Search, Greedy |
 
 <br/>
 <div align="right">
@@ -1111,6 +1115,7 @@
 2583 | [Kth Largest Sum in a Binary Tree](https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/)| [C++](./C++/kth-largest-sum-in-a-binary-tree.cpp) [Python](./Python/kth-largest-sum-in-a-binary-tree.py)| _O(n)_ | _O(n)_ | Medium | | BFS, Quick Select |
 2603 | [Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/)  | [C++](./C++/collect-coins-in-a-tree.cpp) [Python](./Python/collect-coins-in-a-tree.py) | _O(n)_ | _O(n)_| Hard           || Tree, BFS | 
 2612 | [Minimum Reverse Operations](https://leetcode.com/problems/minimum-reverse-operations/)  | [C++](./C++/minimum-reverse-operations.cpp) [Python](./Python/minimum-reverse-operations.py) | _O(n)_ | _O(n)_| Hard           || BFS, Union Find | 
+2617 | [Minimum Number of Visited Cells in a Grid](https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/)  | [C++](./C++/minimum-number-of-visited-cells-in-a-grid.cpp) [Python](./Python/minimum-number-of-visited-cells-in-a-grid.py) | _O(m * n)_ | _O(m * n)_| Hard           | variant of [Minimum Reverse Operations](https://leetcode.com/problems/minimum-reverse-operations/) | BFS, Union Find, Sorted List | 
 
 <br/>
 <div align="right">
