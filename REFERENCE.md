@@ -43,24 +43,21 @@
 ## Books
 * Computer Science
     * [Computer Systems](https://www.amazon.com/dp/013409266X)
-* C++
-    * [C++ Primer](https://www.amazon.com/dp/0321714113)
-    * [C++ Coding Standards](https://www.amazon.com/dp/0321113586)
-    * [Effective Modern C++](https://www.amazon.com/dp/1491903996)
-    * [API Design for C++](https://www.amazon.com/dp/0123850037)
-    * [Modern C++ Programming with Test-Driven Development](https://www.amazon.com/dp/1937785483)
-    * [C++ Concurrency in Action](https://www.amazon.com/dp/1933988770)
-* Python
-    * [Effective Python](https://www.amazon.com/dp/0134853989)
-    * [Python in Practice](https://www.amazon.com/dp/B00EO3TRL2)
-* Golang
-    * [Go Programming Language](https://www.amazon.com/dp/0134190440)
-    * [Concurrency in Go](https://www.amazon.com/dp/1491941197)
-    * [Distributed Services with Go](https://www.amazon.com/dp/1680507605)
-* Database
-    * [Effective SQL](https://www.amazon.com/dp/B01MZ75IW5)
-    * [High Performance MySQL](https://www.amazon.com/dp/B09M7W126W/)
-    * [Database Internals](https://www.amazon.com/dp/1492040347)
+* Programming Languages
+   * C++
+       * [C++ Primer](https://www.amazon.com/dp/0321714113)
+       * [C++ Coding Standards](https://www.amazon.com/dp/0321113586)
+       * [Effective Modern C++](https://www.amazon.com/dp/1491903996)
+       * [API Design for C++](https://www.amazon.com/dp/0123850037)
+       * [Modern C++ Programming with Test-Driven Development](https://www.amazon.com/dp/1937785483)
+       * [C++ Concurrency in Action](https://www.amazon.com/dp/1933988770)
+   * Python
+       * [Effective Python](https://www.amazon.com/dp/0134853989)
+       * [Python in Practice](https://www.amazon.com/dp/B00EO3TRL2)
+   * Golang
+       * [Go Programming Language](https://www.amazon.com/dp/0134190440)
+       * [Concurrency in Go](https://www.amazon.com/dp/1491941197)
+       * [Distributed Services with Go](https://www.amazon.com/dp/1680507605)
 * Algorithms
     * [Introduction to Algorithms](https://www.amazon.com/dp/026204630X)
     * [Cracking the Coding Interview](https://www.amazon.com/dp/0984782850)
@@ -69,7 +66,11 @@
     * [プログラミングコンテストチャレンジブック](https://www.amazon.co.jp/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E3%83%81%E3%83%A3%E3%83%AC%E3%83%B3%E3%82%B8%E3%83%96%E3%83%83%E3%82%AF-%E7%AC%AC2%E7%89%88-%EF%BD%9E%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E3%81%AE%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E6%B4%BB%E7%94%A8%E5%8A%9B%E3%81%A8%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF%E3%82%92%E9%8D%9B%E3%81%88%E3%82%8B%EF%BD%9E-%E7%A7%8B%E8%91%89%E6%8B%93%E5%93%89/dp/4839941068)
     * [Competitive Programming in Python](https://www.amazon.com/Christoph-D%C3%BCrr-ebook/dp/B08K3MS9ML)
     * [Guide to Competitive Programming](https://www.amazon.com/Antti-Laaksonen/dp/3030393569)
- * System Design
+* Database
+    * [Effective SQL](https://www.amazon.com/dp/B01MZ75IW5)
+    * [High Performance MySQL](https://www.amazon.com/dp/B09M7W126W/)
+    * [Database Internals](https://www.amazon.com/dp/1492040347)
+* System Design
     * [Designing Data-Intensive Applications](https://www.amazon.com/dp/1449373321)
     * [Code Karle](https://www.youtube.com/@codeKarle)
     * [System Design Interview Volume 1](https://www.amazon.com/dp/B08CMF2CQF) / [System Design Interview Volume 2](https://www.amazon.com/dp/1736049119)
