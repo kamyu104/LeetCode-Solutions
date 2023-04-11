@@ -21,14 +21,14 @@ public:
                 while (uf1[i].right_set(j) <= min(j + grid[i][j], n - 1)) {
                     const int k = uf1[i].right_set(j);
                     new_q.emplace_back(i, k);
-                    uf1[i].union_set(k, k + 1);
                     uf2[k].union_set(i, i + 1);
+                    uf1[i].union_set(k, k + 1);
                 }
                 while (uf2[j].right_set(i) <= min(i+grid[i][j], m - 1)) {
                     const int k = uf2[j].right_set(i);
                     new_q.emplace_back(k, j);
-                    uf2[j].union_set(k, k + 1);
                     uf1[k].union_set(j, j + 1);
+                    uf2[j].union_set(k, k + 1);
                 }
             }
             q = move(new_q);
