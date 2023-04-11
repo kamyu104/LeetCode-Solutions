@@ -66,7 +66,7 @@
     * [Guide to Competitive Programming](https://www.amazon.com/Antti-Laaksonen/dp/3030393569)
 * System Design
    * Introduction
-       * [Designing Data-Intensive Applications](https://www.amazon.com/dp/1449373321
+       * [Designing Data-Intensive Applications](https://www.amazon.com/dp/1449373321)
        * [Code Karle](https://www.youtube.com/@codeKarle)
        * [System Design Interview Volume 1](https://www.amazon.com/dp/B08CMF2CQF) / [System Design Interview Volume 2](https://www.amazon.com/dp/1736049119)
    * Database
