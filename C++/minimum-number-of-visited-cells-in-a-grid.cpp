@@ -89,12 +89,12 @@ class Solution2 {
 public:
     int minimumVisitedCells(vector<vector<int>>& grid) {
         const int m = size(grid), n = size(grid[0]);
-        vector<set<int>> sl1(m);
-        vector<set<int>> sl2(n);
+        vector<set<int>> bst1(m);
+        vector<set<int>> bst2(n);
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
-                sl1[i].emplace(j);
-                sl2[j].emplace(i);
+                bst1[i].emplace(j);
+                bst2[j].emplace(i);
             }
         }
         int d = 1, i = 0, j = 0;
@@ -105,17 +105,17 @@ public:
                 if (i == m - 1 && j == n - 1) {
                     return d;
                 }
-                for (auto it = sl1[i].lower_bound(j + 1);
-                     it != end(sl1[i]) && *it <= j + grid[i][j];
-                     it = sl1[i].erase(it)) {
+                for (auto it = bst1[i].lower_bound(j + 1);
+                     it != end(bst1[i]) && *it <= j + grid[i][j];
+                     it = bst1[i].erase(it)) {
                     new_q.emplace_back(i, *it);
-                    sl2[*it].erase(i);
+                    bst2[*it].erase(i);
                 }
-                for (auto it = sl2[j].lower_bound(i + 1);
-                     it != end(sl2[j]) && *it <= i + grid[i][j];
-                     it = sl2[j].erase(it)) {
+                for (auto it = bst2[j].lower_bound(i + 1);
+                     it != end(bst2[j]) && *it <= i + grid[i][j];
+                     it = bst2[j].erase(it)) {
                     new_q.emplace_back(*it, j);
-                    sl1[*it].erase(j);
+                    bst1[*it].erase(j);
                 }
             }
             q = move(new_q);
