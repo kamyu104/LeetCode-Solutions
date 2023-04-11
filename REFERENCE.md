@@ -49,10 +49,10 @@
             * [Effective Modern C++](https://www.amazon.com/dp/1491903996)
             * [API Design for C++](https://www.amazon.com/dp/0123850037)
             * [Modern C++ Programming with Test-Driven Development](https://www.amazon.com/dp/1937785483)
-        * Advanced
             * [C++ Concurrency in Action](https://www.amazon.com/dp/1933988770)
-            * [Modern C++ Design](https://www.amazon.com/dp/0201704315)
+        * Advanced
             * [Inside the C++ Object Model](https://www.amazon.com/dp/0201834545)
+            * [Modern C++ Design](https://www.amazon.com/dp/0201704315)
     * Python
         * [Effective Python](https://www.amazon.com/dp/0134853989)
         * [Python in Practice](https://www.amazon.com/dp/B00EO3TRL2)
