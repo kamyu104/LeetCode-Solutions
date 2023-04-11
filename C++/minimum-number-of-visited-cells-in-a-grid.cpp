@@ -84,8 +84,7 @@ class UnionFind {
 
 // Time:  O(m * n * alpha(m + n)) = O(m + n)
 // Space: O(m * n)
-
-// bfs, union find
+// bfs, bst
 class Solution2 {
 public:
     int minimumVisitedCells(vector<vector<int>>& grid) {
