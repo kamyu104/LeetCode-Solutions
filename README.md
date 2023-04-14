@@ -1779,8 +1779,8 @@
 2633 | [Convert Object to JSON String](https://leetcode.com/problems/convert-object-to-json-string/) | [TypeScript](./TypeScript/convert-object-to-json-string.ts) | _O(n)_ | _O(n)_       | Medium           | | DFS |
 2634 | [Filter Elements from Array](https://leetcode.com/problems/filter-elements-from-array/) | [TypeScript](./TypeScript/filter-elements-from-array.ts) | _O(n)_ | _O(1)_       | Easy           | | |
 2635 | [Apply Transform Over Each Element in Array](https://leetcode.com/problems/apply-transform-over-each-element-in-array/) | [TypeScript](./TypeScript/apply-transform-over-each-element-in-array.ts) | _O(n)_ | _O(1)_       | Easy           | | |
-2636 | [Promise Pool](https://leetcode.com/problems/apply-transform-over-each-element-in-array/) | [TypeScript](./TypeScript/apply-transform-over-each-element-in-array.ts) | _O(n / c)_ | _O(c)_       | Easy           | | |
-2637 | [Promise Time Limit](https://leetcode.com/problems/promise-time-limit/) | [TypeScript](./TypeScript/promise-time-limit.ts) | _O(n)_ | _O(1)_       | Medium           | | |
+2636 | [Promise Pool](https://leetcode.com/problems/apply-transform-over-each-element-in-array/) | [TypeScript](./TypeScript/apply-transform-over-each-element-in-array.ts) | _O(n / c)_ | _O(c)_       | Medium           | | |
+2637 | [Promise Time Limit](https://leetcode.com/problems/promise-time-limit/) | [TypeScript](./TypeScript/promise-time-limit.ts) | _O(n)_ | _O(1)_       | Easy           | | |
 
 <br/>
 <div align="right">
