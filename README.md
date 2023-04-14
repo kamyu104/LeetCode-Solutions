@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2617%20%2F%202617-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2638%20%2F%202638-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -45,6 +45,10 @@
 * [Simulation](https://github.com/kamyu104/LeetCode-Solutions#simulation)
 * [Design](https://github.com/kamyu104/LeetCode-Solutions#design)
 * [Concurrency](https://github.com/kamyu104/LeetCode-Solutions#concurrency)
+
+## JavaScript
+
+* [JavaScript](https://github.com/kamyu104/LeetCode-Solutions#javascript)
 
 ## Database
 
@@ -1747,6 +1751,36 @@
 1226 | [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers/)| [C++](./C++/the-dining-philosophers.cpp) [Python](./Python/the-dining-philosophers.py) | _O(n)_ | _O(1)_ | Medium ||
 1242 | [Web Crawler Multithreaded](https://leetcode.com/problems/web-crawler-multithreaded/)| [C++](./C++/web-crawler-multithreaded.cpp) [Python](./Python/web-crawler-multithreaded.py) |  _O(\|V\| + \|E\|)_ | _O(\|V\|)_ | Medium |🔒| | BFS, DFS |
 1279 | [Traffic Light Controlled Intersection](https://leetcode.com/problems/traffic-light-controlled-intersection/)| [C++](./C++/traffic-light-controlled-intersection.cpp) [Python](./Python/traffic-light-controlled-intersection.py) |  _O(n)_ | _O(1)_ | Easy |🔒| | |
+
+<br/>
+<div align="right">
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
+</div>
+<br/>
+
+## JavaScript
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
+2618 | [Check if Object Instance of Class](https://leetcode.com/problems/check-if-object-instance-of-class/) | [TypeScript](./TypeScript/check-if-object-instance-of-class.ts) | _O(n)_ | _O(1)_       | Medium           | | |
+2619 | [Array Prototype Last](https://leetcode.com/problems/array-prototype-last/) | [TypeScript](./TypeScript/array-prototype-last.ts) | _O(1)_ | _O(1)_       | Easy           | | |
+2620 | [Counter](https://leetcode.com/problems/counter/) | [TypeScript](./TypeScript/counter.ts) | _O(1)_ | _O(1)_       | Easy           | | |
+2621 | [Sleep](https://leetcode.com/problems/sleep/) | [TypeScript](./TypeScript/sleep.ts) | _O(1)_ | _O(1)_       | Easy           | | |
+2622 | [Cache With Time Limit](https://leetcode.com/problems/cache-with-time-limit/) | [TypeScript](./TypeScript/cache-with-time-limit.ts) | _O(1)_ | _O(1)_       | Easy           | | |
+2623 | [Memoize](https://leetcode.com/problems/memoize/) | [TypeScript](./TypeScript/memoize.ts) | _O(1)_ | _O(1)_       | Easy           | | Hash Tablle  |
+2624 | [Snail traversal](https://leetcode.com/problems/snail-traversal/) | [TypeScript](./TypeScript/snail-traversal.ts) | _O(m * n)_ | _O(1)_       | Medium           | | |
+2625 | [Flatten Deeply Nested Array](https://leetcode.com/problems/flatten-deeply-nested-array/) | [TypeScript](./TypeScript/flatten-deeply-nested-array.ts) | _O(n)_ | _O(h)_       | Medium           | | |
+2626 | [Array Reduce Transformation](https://leetcode.com/problems/array-reduce-transformation/) | [TypeScript](./TypeScript/array-reduce-transformation.ts) | _O(n)_ | _O(1)_       | Easy           | | |
+2627 | [Debounce](https://leetcode.com/problems/debounce/) | [TypeScript](./TypeScript/debounce.ts) | _O(1)_ | _O(1)_       | Medium           | | |
+2628 | [JSON Deep Equal](https://leetcode.com/problems/json-deep-equal/) | [TypeScript](./TypeScript/json-deep-equal.ts) | _O(n)_ | _O(h)_       | Medium           | | DFS |
+2629 | [Function Composition](https://leetcode.com/problems/function-composition/) | [TypeScript](./TypeScript/function-composition.ts) | _O(n)_ | _O(1)_       | Easy           | | |
+2630 | [Memoize II](https://leetcode.com/problems/memoize-ii/) | [TypeScript](./TypeScript/memoize-ii.ts) | _O(n)_ | _O(t)_       | Hard           | | Trie |
+2631 | [Group By](https://leetcode.com/problems/group-by/) | [TypeScript](./TypeScript/group-by.ts) | _O(n)_ | _O(n)_       | Medium           | | |
+2632 | [Curry](https://leetcode.com/problems/curry/) | [TypeScript](./TypeScript/curry.ts) | _O(n)_ | _O(n)_       | Medium           | | |
+2633 | [Convert Object to JSON String](https://leetcode.com/problems/convert-object-to-json-string/) | [TypeScript](./TypeScript/convert-object-to-json-string.ts) | _O(n)_ | _O(n)_       | Medium           | | DFS |
+2634 | [Filter Elements from Array](https://leetcode.com/problems/filter-elements-from-array/) | [TypeScript](./TypeScript/filter-elements-from-array.ts) | _O(n)_ | _O(1)_       | Easy           | | |
+2635 | [Apply Transform Over Each Element in Array](https://leetcode.com/problems/apply-transform-over-each-element-in-array/) | [TypeScript](./TypeScript/apply-transform-over-each-element-in-array.ts) | _O(n)_ | _O(1)_       | Easy           | | |
+2636 | [Promise Pool](https://leetcode.com/problems/apply-transform-over-each-element-in-array/) | [TypeScript](./TypeScript/apply-transform-over-each-element-in-array.ts) | _O(n / c)_ | _O(c)_       | Easy           | | |
+2637 | [Promise Time Limit](https://leetcode.com/problems/promise-time-limit/) | [TypeScript](./TypeScript/promise-time-limit.ts) | _O(n)_ | _O(1)_       | Medium           | | |
 
 <br/>
 <div align="right">
