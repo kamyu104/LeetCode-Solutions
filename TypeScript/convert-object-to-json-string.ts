@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Space: O(n)
+// Space: O(h)
 
 // dfs
 function jsonStringify(object: any): string {
