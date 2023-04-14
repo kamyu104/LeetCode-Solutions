@@ -1,6 +1,7 @@
 // Time:  O(1)
 // Space: O(1)
 
+// hash table
 interface Value {
     value: number;
     tid: ReturnType<typeof setTimeout>;
