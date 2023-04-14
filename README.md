@@ -1765,8 +1765,8 @@
 2619 | [Array Prototype Last](https://leetcode.com/problems/array-prototype-last/) | [TypeScript](./TypeScript/array-prototype-last.ts) | _O(1)_ | _O(1)_       | Easy           | | |
 2620 | [Counter](https://leetcode.com/problems/counter/) | [TypeScript](./TypeScript/counter.ts) | _O(1)_ | _O(1)_       | Easy           | | |
 2621 | [Sleep](https://leetcode.com/problems/sleep/) | [TypeScript](./TypeScript/sleep.ts) | _O(1)_ | _O(1)_       | Easy           | | |
-2622 | [Cache With Time Limit](https://leetcode.com/problems/cache-with-time-limit/) | [TypeScript](./TypeScript/cache-with-time-limit.ts) | _O(1)_ | _O(1)_       | Medium           | | |
-2623 | [Memoize](https://leetcode.com/problems/memoize/) | [TypeScript](./TypeScript/memoize.ts) | _O(1)_ | _O(1)_       | Medium           | | Hash Tablle  |
+2622 | [Cache With Time Limit](https://leetcode.com/problems/cache-with-time-limit/) | [TypeScript](./TypeScript/cache-with-time-limit.ts) | _O(1)_ | _O(1)_       | Medium           | | Hash Table |
+2623 | [Memoize](https://leetcode.com/problems/memoize/) | [TypeScript](./TypeScript/memoize.ts) | _O(1)_ | _O(1)_       | Medium           | | Hash Table  |
 2624 | [Snail traversal](https://leetcode.com/problems/snail-traversal/) | [TypeScript](./TypeScript/snail-traversal.ts) | _O(m * n)_ | _O(1)_       | Medium           | | |
 2625 | [Flatten Deeply Nested Array](https://leetcode.com/problems/flatten-deeply-nested-array/) | [TypeScript](./TypeScript/flatten-deeply-nested-array.ts) | _O(n)_ | _O(h)_       | Medium           | | |
 2626 | [Array Reduce Transformation](https://leetcode.com/problems/array-reduce-transformation/) | [TypeScript](./TypeScript/array-reduce-transformation.ts) | _O(n)_ | _O(1)_       | Easy           | | |
