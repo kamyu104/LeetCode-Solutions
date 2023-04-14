@@ -48,7 +48,7 @@
 
 ## JavaScript
 
-* [JavaScript](https://github.com/kamyu104/LeetCode-Solutions#javascript)
+* [JS](https://github.com/kamyu104/LeetCode-Solutions#js)
 
 ## Database
 
@@ -1758,7 +1758,7 @@
 </div>
 <br/>
 
-## JavaScript
+## JS
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 2618 | [Check if Object Instance of Class](https://leetcode.com/problems/check-if-object-instance-of-class/) | [TypeScript](./TypeScript/check-if-object-instance-of-class.ts) | _O(n)_ | _O(1)_       | Medium           | | |
