@@ -30,7 +30,7 @@ class TimeLimitedCache {
         return this.lookup.has(key) ? this.lookup.get(key).value : -1;
     }
 
-	count(): number {
+    count(): number {
         return this.lookup.size;
     }
 }
