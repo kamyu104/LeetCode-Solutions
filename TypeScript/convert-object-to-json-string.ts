@@ -4,7 +4,7 @@
 // dfs
 function jsonStringify(object: any): string {
     let result = [];
-    let dfs = (object: any) => {
+    let dfs = (object) => {
         if (object === null) {
             result.push('null');
             return;
@@ -19,7 +19,7 @@ function jsonStringify(object: any): string {
         }
         if (Array.isArray(object)) {
             result.push('[');
-            for (let x of object) {
+            for (const x of object) {
                 dfs(x);
                 result.push(',');
             }
@@ -30,7 +30,7 @@ function jsonStringify(object: any): string {
             return;
         }
         result.push('{');
-        for (let key in object) {
+        for (const key in object) {
             result.push(`"${key}":`)
             dfs(object[key]);
             result.push(',');
