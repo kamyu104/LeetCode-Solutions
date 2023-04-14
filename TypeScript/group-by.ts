@@ -9,7 +9,7 @@ declare global {
 
 // hash table
 Array.prototype.groupBy = function(fn) {
-    const lookup = {};
+    let lookup = {};
     for (const val of this) {
         const key = fn(val);
         lookup[key] ||= []
