@@ -1768,7 +1768,7 @@
 2622 | [Cache With Time Limit](https://leetcode.com/problems/cache-with-time-limit/) | [TypeScript](./TypeScript/cache-with-time-limit.ts) | _O(1)_ | _O(1)_       | Medium           | | Hash Table |
 2623 | [Memoize](https://leetcode.com/problems/memoize/) | [TypeScript](./TypeScript/memoize.ts) | _O(1)_ | _O(1)_       | Medium           | | Hash Table  |
 2624 | [Snail traversal](https://leetcode.com/problems/snail-traversal/) | [TypeScript](./TypeScript/snail-traversal.ts) | _O(m * n)_ | _O(1)_       | Medium           | | |
-2625 | [Flatten Deeply Nested Array](https://leetcode.com/problems/flatten-deeply-nested-array/) | [TypeScript](./TypeScript/flatten-deeply-nested-array.ts) | _O(n)_ | _O(h)_       | Medium           | | |
+2625 | [Flatten Deeply Nested Array](https://leetcode.com/problems/flatten-deeply-nested-array/) | [TypeScript](./TypeScript/flatten-deeply-nested-array.ts) | _O(n)_ | _O(h)_       | Medium           | | DFS |
 2626 | [Array Reduce Transformation](https://leetcode.com/problems/array-reduce-transformation/) | [TypeScript](./TypeScript/array-reduce-transformation.ts) | _O(n)_ | _O(1)_       | Easy           | | |
 2627 | [Debounce](https://leetcode.com/problems/debounce/) | [TypeScript](./TypeScript/debounce.ts) | _O(1)_ | _O(1)_       | Medium           | | |
 2628 | [JSON Deep Equal](https://leetcode.com/problems/json-deep-equal/) | [TypeScript](./TypeScript/json-deep-equal.ts) | _O(n)_ | _O(h)_       | Medium           | | DFS |
