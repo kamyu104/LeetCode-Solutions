@@ -1776,7 +1776,7 @@
 2630 | [Memoize II](https://leetcode.com/problems/memoize-ii/) | [TypeScript](./TypeScript/memoize-ii.ts) | _O(n)_ | _O(t)_       | Hard           | | Trie |
 2631 | [Group By](https://leetcode.com/problems/group-by/) | [TypeScript](./TypeScript/group-by.ts) | _O(n)_ | _O(n)_       | Medium           | | |
 2632 | [Curry](https://leetcode.com/problems/curry/) | [TypeScript](./TypeScript/curry.ts) | _O(n)_ | _O(n)_       | Medium           | | |
-2633 | [Convert Object to JSON String](https://leetcode.com/problems/convert-object-to-json-string/) | [TypeScript](./TypeScript/convert-object-to-json-string.ts) | _O(n)_ | _O(n)_       | Medium           | | DFS |
+2633 | [Convert Object to JSON String](https://leetcode.com/problems/convert-object-to-json-string/) | [TypeScript](./TypeScript/convert-object-to-json-string.ts) | _O(n)_ | _O(h)_       | Medium           | | DFS |
 2634 | [Filter Elements from Array](https://leetcode.com/problems/filter-elements-from-array/) | [TypeScript](./TypeScript/filter-elements-from-array.ts) | _O(n)_ | _O(1)_       | Easy           | | |
 2635 | [Apply Transform Over Each Element in Array](https://leetcode.com/problems/apply-transform-over-each-element-in-array/) | [TypeScript](./TypeScript/apply-transform-over-each-element-in-array.ts) | _O(n)_ | _O(1)_       | Easy           | | |
 2636 | [Promise Pool](https://leetcode.com/problems/apply-transform-over-each-element-in-array/) | [TypeScript](./TypeScript/apply-transform-over-each-element-in-array.ts) | _O(n / c)_ | _O(c)_       | Medium           | | |
