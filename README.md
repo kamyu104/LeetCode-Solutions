@@ -1368,6 +1368,7 @@
 2572 | [Count the Number of Square-Free Subsets](https://leetcode.com/problems/count-the-number-of-square-free-subsets/) | [C++](./C++/count-the-number-of-square-free-subsets.cpp) [Python](./Python/count-the-number-of-square-free-subsets.py) | _O(n + m * 2^p)_   | _O(m * 2^p)_        | Medium         | | Number Theory, Combinatorics, Bitmasks, Memoization, DP
 2585 | [Number of Ways to Earn Points](https://leetcode.com/problems/number-of-ways-to-earn-points/) | [C++](./C++/number-of-ways-to-earn-points.cpp) [Python](./Python/number-of-ways-to-earn-points.py) | _O(n * t * c)_   | _O(t)_        | Hard         | | Knapsack DP
 2597 | [The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/) | [C++](./C++/the-number-of-beautiful-subsets.cpp) [Python](./Python/the-number-of-beautiful-subsets.py) | _O(n)_   | _O(n)_        | Medium         | | Combinatorics, DP
+2638 | [Count the Number of K-Free Subsets](https://leetcode.com/problems/count-the-number-of-k-free-subsets/) | [C++](./C++/count-the-number-of-k-free-subsets.cpp) [Python](./Python/count-the-number-of-k-free-subsets.py) | _O(n)_   | _O(n)_        | Medium         | 🔒, variant of [The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/) | Combinatorics, DP
 
 <br/>
 <div align="right">
