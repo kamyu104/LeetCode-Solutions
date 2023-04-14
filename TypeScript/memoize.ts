@@ -4,12 +4,12 @@
 type Fn = (...params: any) => any
 
 function memoize(fn: Fn): Fn {
-    const lookup = {};
+    let lookup = new Map();
     return (...args) => {
-        if (lookup[args] !== undefined) {
-            return lookup[args];
+        const key = args.join();
+        if (!lookup.has(key)) {
+            lookup.set(key, fn(...args))
         }
-        lookup[args] = fn(...args);
-        return lookup[args];
+        return lookup.get(key);
     }
 }
