@@ -12,7 +12,7 @@ Array.prototype.groupBy = function(fn) {
     let lookup = {};
     for (const val of this) {
         const key = fn(val);
-        lookup[key] ||= []
+        lookup[key] ||= [];
         lookup[key].push(val);
     }
     return lookup;
