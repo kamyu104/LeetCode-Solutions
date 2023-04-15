@@ -5,7 +5,7 @@ type Fn = (...params: any) => any
 
 // trie
 function memoize(fn: Fn): Fn {
-    const trie = new Map();
+    let trie = new Map();
     return function (...args) {
         let curr = trie;
         for (const arg of args) {
