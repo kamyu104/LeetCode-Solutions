@@ -1,4 +1,4 @@
-// Time:  O(n / c)
+// Time:  O(c + n / c)
 // Space: O(c)
 
 type F = () => Promise<any>;
