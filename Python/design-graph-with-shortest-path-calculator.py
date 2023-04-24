@@ -32,7 +32,7 @@ class Graph(object):
         :type node2: int
         :rtype: int
         """
-        def dijkstra(start, target):
+        def dijkstra(adj, start, target):
             best = [float("inf")]*len(adj)
             best[start] = 0
             min_heap = [(best[start], start)]
@@ -47,5 +47,4 @@ class Graph(object):
                     heapq.heappush(min_heap, (best[v], v))
             return best[target] if best[target] != float("inf") else -1
 
-        adj = self.__adj
-        return dijkstra(node1, node2)
+        return dijkstra(self.__adj, node1, node2)
