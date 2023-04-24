@@ -22,12 +22,24 @@ class Solution(object):
 
 
 # Time:  O(m * n)
+# Space: O(logr)
+# array
+class Solution2(object):
+    def findColumnWidth(self, grid):
+        """
+        :type grid: List[List[int]]
+        :rtype: List[int]
+        """
+        return [max(len(str(grid[i][j])) for i in xrange(len(grid))) for j in xrange(len(grid[0]))]
+
+
+# Time:  O(m * n)
 # Space: O(m + logr)
 import itertools
 
 
 # array
-class Solution2(object):
+class Solution3(object):
     def findColumnWidth(self, grid):
         """
         :type grid: List[List[int]]
