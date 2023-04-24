@@ -1,5 +1,5 @@
-# Time:  ctor:    O(|V| + |E|)
-#        addEdge: O(1)
+# Time:  ctor:         O(|V| + |E|)
+#        addEdge:      O(1)
 #        shortestPath: O((|E| + |V|) * log|V|) = O(|E| * log|V|)
 # Space: O(|E| + |V|) = O(|E|)
 
@@ -38,7 +38,7 @@ class Graph(object):
             min_heap = [(best[start], start)]
             while min_heap:
                 curr, u = heapq.heappop(min_heap)
-                if best[u] < curr:
+                if curr > best[u]:
                     continue
                 for v, w in adj[u]:                
                     if not (curr+w < best[v]):
