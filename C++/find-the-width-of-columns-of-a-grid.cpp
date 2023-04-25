@@ -31,7 +31,6 @@ public:
 class Solution2 {
 public:
     vector<int> findColumnWidth(vector<vector<int>>& grid) {
-
         vector<int> result(size(grid[0]), numeric_limits<int>::min());
         for (int j = 0; j < size(grid[0]); ++j) {
             for (int i = 0; i < size(grid); ++i) {
