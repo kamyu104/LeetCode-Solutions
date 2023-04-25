@@ -1,7 +1,7 @@
 // Time:  O(t * n)
 // Space: O(n)
 
-// dfs, tree dp
+// iterative dfs, tree dp
 class Solution {
 public:
     int minimumTotalPrice(int n, vector<vector<int>>& edges, vector<int>& price, vector<vector<int>>& trips) {
