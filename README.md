@@ -823,6 +823,8 @@
 2582 | [Pass the Pillow](https://leetcode.com/problems/pass-the-pillow/) | [C++](./C++/pass-the-pillow.cpp) [Python](./Python/pass-the-pillow.py) | _O(1)_   | _O(1)_        | Medium         | | Math
 2584 | [Split the Array to Make Coprime Products](https://leetcode.com/problems/split-the-array-to-make-coprime-products/) | [C++](./C++/split-the-array-to-make-coprime-products.cpp) [Python](./Python/split-the-array-to-make-coprime-products.py) | _O(n * sqrt(r))_   | _O(sqrt(r))_        | Hard         | | Math, Number Theory
 2614 | [Prime In Diagonal](https://leetcode.com/problems/prime-in-diagonal/)| [C++](./C++/prime-in-diagonal.cpp) [Python](./Python/prime-in-diagonal.py)| precompute: _O(MAX_N)_<br>runtime: _O(n)_ | _O(MAX_N)_ | Easy | | Number Theory, `Linear Sieve of Eratosthenes` |
+2651 | [Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/) | [C++](./C++/calculate-delayed-arrival-time.cpp) [Python](./Python/calculate-delayed-arrival-time.py) | _O(1)_   | _O(1)_        | Easy         | | Math
+2652 | [Sum Multiples](https://leetcode.com/problems/sum-multiples/) | [C++](./C++/sum-multiples.cpp) [Python](./Python/sum-multiples.py) | _O(1)_   | _O(1)_        | Easy         | | Math, Principle of Inclusion and Exclusion
 
 <br/>
 <div align="right">
@@ -964,6 +966,7 @@
 2563 | [Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) | [C++](./C++/count-the-number-of-fair-pairs.cpp) [Python](./Python/count-the-number-of-fair-pairs.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers
 2570 | [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | [C++](./C++/merge-two-2d-arrays-by-summing-values.cpp) [Python](./Python/merge-two-2d-arrays-by-summing-values.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers
 2609 | [Find the Longest Balanced Substring of a Binary String](https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/) | [C++](./C++/find-the-longest-balanced-substring-of-a-binary-string.cpp) [Python](./Python/find-the-longest-balanced-substring-of-a-binary-string.py) | _O(n)_ | _O(1)_ | Easy | | String, Two Pointers
+2653 | [Sliding Subarray Beauty](https://leetcode.com/problems/sliding-subarray-beauty/) | [C++](./C++/sliding-subarray-beauty.cpp) [Python](./Python/sliding-subarray-beauty.py) | _O(nlogk)_ | _O(k)_ | Medium | | Sorted List, Ordered Set, Two Pointers
 
 <br/>
 <div align="right">
@@ -1686,6 +1689,8 @@
 2546 | [Apply Bitwise Operations to Make Strings Equal](https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/) | [C++](./C++/apply-bitwise-operations-to-make-strings-equal.cpp) [Python](./Python/apply-bitwise-operations-to-make-strings-equal.py) | _O(n)_   | _O(1)_        | Medium         | | Constructive Algorithms
 2358 | [Maximum Number of Groups Entering a Competition](https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/)|[C++](./C++/maximum-number-of-groups-entering-a-competition.cpp) [Python](./Python/maximum-number-of-groups-entering-a-competition.py)| _O(1)_     | _O(1)_         | Medium         | | Constructive Algorithms, Math
 2610 | [Convert an Array Into a 2D Array With Conditions](https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/) | [C++](./C++/convert-an-array-into-a-2d-array-with-conditions.cpp) [Python](./Python/convert-an-array-into-a-2d-array-with-conditions.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Constructive Algorithms
+2647 | [Color the Triangle Red](https://leetcode.com/problems/color-the-triangle-red/) | [C++](./C++/color-the-triangle-red.cpp) [Python](./Python/color-the-triangle-red.py) | _O(n^2)_ | _O(1)_ | Hard | 🔒 | Constructive Algorithms
+2654 | [Minimum Number of Operations to Make All Array Elements Equal to 1](https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/) | [C++](./C++/minimum-number-of-operations-to-make-all-array-elements-equal-to-1.cpp) [Python](./Python/minimum-number-of-operations-to-make-all-array-elements-equal-to-1.py) | _O(n^2)_ | _O(1)_ | Hard | | Math, Number Theory, Constructive Algorithms
 
 <br/>
 <div align="right">
@@ -1784,7 +1789,7 @@
 2618 | [Check if Object Instance of Class](https://leetcode.com/problems/check-if-object-instance-of-class/) | [TypeScript](./TypeScript/check-if-object-instance-of-class.ts) | _O(n)_ | _O(1)_       | Medium           | | |
 2619 | [Array Prototype Last](https://leetcode.com/problems/array-prototype-last/) | [TypeScript](./TypeScript/array-prototype-last.ts) | _O(1)_ | _O(1)_       | Easy           | | |
 2620 | [Counter](https://leetcode.com/problems/counter/) | [TypeScript](./TypeScript/counter.ts) | _O(1)_ | _O(1)_       | Easy           | | |
-2621 | [Sleep](https://leetcode.com/problems/sleep/) | [TypeScript](./TypeScript/sleep.ts) | _O(1)_ | _O(1)_       | Easy           | | |
+2621 | [Sleep](https://leetcode.com/problems/sleep/) | [TypeScript](./TypeScript/sleep.ts) | _O(1)_ | _O(1)_       | Easy           | | Promise |
 2622 | [Cache With Time Limit](https://leetcode.com/problems/cache-with-time-limit/) | [TypeScript](./TypeScript/cache-with-time-limit.ts) | _O(1)_ | _O(1)_       | Medium           | | Hash Table |
 2623 | [Memoize](https://leetcode.com/problems/memoize/) | [TypeScript](./TypeScript/memoize.ts) | _O(1)_ | _O(1)_       | Medium           | | Hash Table  |
 2624 | [Snail traversal](https://leetcode.com/problems/snail-traversal/) | [TypeScript](./TypeScript/snail-traversal.ts) | _O(m * n)_ | _O(1)_       | Medium           | | |
@@ -1799,8 +1804,11 @@
 2633 | [Convert Object to JSON String](https://leetcode.com/problems/convert-object-to-json-string/) | [TypeScript](./TypeScript/convert-object-to-json-string.ts) | _O(n)_ | _O(h)_       | Medium           | | DFS |
 2634 | [Filter Elements from Array](https://leetcode.com/problems/filter-elements-from-array/) | [TypeScript](./TypeScript/filter-elements-from-array.ts) | _O(n)_ | _O(1)_       | Easy           | | |
 2635 | [Apply Transform Over Each Element in Array](https://leetcode.com/problems/apply-transform-over-each-element-in-array/) | [TypeScript](./TypeScript/apply-transform-over-each-element-in-array.ts) | _O(n)_ | _O(1)_       | Easy           | | |
-2636 | [Promise Pool](https://leetcode.com/problems/promise-pool/) | [TypeScript](./TypeScript/promise-pool.ts) | _O(c + n / c)_ | _O(c)_       | Medium           | | |
-2637 | [Promise Time Limit](https://leetcode.com/problems/promise-time-limit/) | [TypeScript](./TypeScript/promise-time-limit.ts) | _O(n)_ | _O(1)_       | Easy           | | |
+2636 | [Promise Pool](https://leetcode.com/problems/promise-pool/) | [TypeScript](./TypeScript/promise-pool.ts) | _O(c + n / c)_ | _O(c)_       | Medium           | | Promise |
+2637 | [Promise Time Limit](https://leetcode.com/problems/promise-time-limit/) | [TypeScript](./TypeScript/promise-time-limit.ts) | _O(n)_ | _O(1)_       | Easy           | | Promise |
+2648 | [Generate Fibonacci Sequence](https://leetcode.com/problems/generate-fibonacci-sequence/) | [TypeScript](./TypeScript/generate-fibonacci-sequence.ts) | _O(1)_ | _O(1)_       | Easy           | | DP |
+2649 | [Nested Array Generator](https://leetcode.com/problems/nested-array-generator/) | [TypeScript](./TypeScript/nested-array-generator.ts) | _O(1)_ | _O(d)_       | Medium           | | DFS |
+2650 | [Design Cancellable Function](https://leetcode.com/problems/design-cancellable-function/) | [TypeScript](./TypeScript/design-cancellable-function.ts) | _O(f)_ | _O(1)_       | Hard           | | Promise |
 
 <br/>
 <div align="right">
