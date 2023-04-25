@@ -94,14 +94,14 @@ class Solution2(object):
             return False
     
         def dfs2(u, p):
-            full = full_or_half = 0
+            full, half = price[u]*lookup[u], price[u]//2*lookup[u]
             for v in adj[u]:
                 if v == p:
                     continue
                 f, h = dfs2(v, u)
-                full += f
-                full_or_half += min(f, h)
-            return price[u]*lookup[u]+full_or_half, price[u]//2*lookup[u]+full
+                full += min(f, h)
+                half += f
+            return full, half
 
         adj = [[] for _ in xrange(n)]
         for u, v in edges:
