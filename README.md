@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2638%20%2F%202638-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2654%20%2F%202654-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -43,6 +43,7 @@
 * [Graph](https://github.com/kamyu104/LeetCode-Solutions#graph)
 * [Geometry](https://github.com/kamyu104/LeetCode-Solutions#geometry)
 * [Simulation](https://github.com/kamyu104/LeetCode-Solutions#simulation)
+* [Constructive Algorithms](https://github.com/kamyu104/LeetCode-Solutions#constructive-algorithms)
 * [Design](https://github.com/kamyu104/LeetCode-Solutions#design)
 * [Concurrency](https://github.com/kamyu104/LeetCode-Solutions#concurrency)
 
@@ -232,7 +233,6 @@
 2132 | [Stamping the Grid](https://leetcode.com/problems/stamping-the-grid/) | [C++](./C++/stamping-the-grid.cpp) [Python](./Python/stamping-the-grid.py) | _O(m * n)_ | _O(m * n)_ | Hard | | Prefix Sum
 2155 | [All Divisions With the Highest Score of a Binary Array](https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/) | [C++](./C++/all-divisions-with-the-highest-score-of-a-binary-array.cpp) [Python](./Python/all-divisions-with-the-highest-score-of-a-binary-array.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
 2194 | [Cells in a Range on an Excel Sheet](https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/) | [C++](./C++/cells-in-a-range-on-an-excel-sheet.cpp) [Python](./Python/cells-in-a-range-on-an-excel-sheet.py) | _O(26^2)_ | _O(1)_ | Easy | |
-2202 | [Maximize the Topmost Element After K Moves](https://leetcode.com/problems/maximize-the-topmost-element-after-k-moves/) | [C++](./C++/maximize-the-topmost-element-after-k-moves.cpp) [Python](./Python/maximize-the-topmost-element-after-k-moves.py) | _O(min(n, k))_ | _O(1)_ | Medium | | Constructive Algorithms
 2210 | [Count Hills and Valleys in an Array](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/) | [C++](./C++/count-hills-and-valleys-in-an-array.cpp) [Python](./Python/count-hills-and-valleys-in-an-array.py) | _O(n)_ | _O(1)_ | Easy | | Simulation
 2219 | [Maximum Sum Score of Array](https://leetcode.com/problems/maximum-sum-score-of-array/) | [C++](./C++/maximum-sum-score-of-array.cpp) [Python](./Python/maximum-sum-score-of-array.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Prefix Sum
 2237 | [Count Positions on Street With Required Brightness](https://leetcode.com/problems/count-positions-on-street-with-required-brightness/) | [C++](./C++/count-positions-on-street-with-required-brightness.cpp) [Python](./Python/count-positions-on-street-with-required-brightness.py) | _O(n + l)_ | _O(min(n, l))_ | Medium | 🔒 | Line Sweep
@@ -398,7 +398,6 @@
 2416 | [Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/) | [C++](./C++/sum-of-prefix-scores-of-strings.cpp) [Python](./Python/sum-of-prefix-scores-of-strings.py) | _O(n * l)_   | _O(t)_        | Hard         | | Trie
 2490 | [Circular Sentence](https://leetcode.com/problems/circular-sentence/) | [C++](./C++/circular-sentence.cpp) [Python](./Python/circular-sentence.py) | _O(n)_   | _O(1)_        | Easy         | | String
 2496 | [Maximum Value of a String in an Array](https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/) | [C++](./C++/maximum-value-of-a-string-in-an-array.cpp) [Python](./Python/maximum-value-of-a-string-in-an-array.py) | _O(n * l)_   | _O(1)_        | Easy         | | String
-2546 | [Apply Bitwise Operations to Make Strings Equal](https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/) | [C++](./C++/apply-bitwise-operations-to-make-strings-equal.cpp) [Python](./Python/apply-bitwise-operations-to-make-strings-equal.py) | _O(n)_   | _O(1)_        | Medium         | | Constructive Algorithms
 2575 | [Find the Divisibility Array of a String](https://leetcode.com/problems/find-the-divisibility-array-of-a-string/)| [C++](./C++/find-the-divisibility-array-of-a-string.cpp) [Python](./Python/find-the-divisibility-array-of-a-string.py)| _O(n)_ | _O(1)_ | Medium | | Prefix Sum |
 2586 | [Count the Number of Vowel Strings in Range](https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/)| [C++](./C++/count-the-number-of-vowel-strings-in-range.cpp) [Python](./Python/count-the-number-of-vowel-strings-in-range.py)| _O(n)_ | _O(1)_ | Medium | | String |
 
@@ -655,7 +654,6 @@
 2592 | [Maximize Greatness of an Array](https://leetcode.com/problems/maximize-greatness-of-an-array/) | [C++](./C++/maximize-greatness-of-an-array.cpp) [Python](./Python/maximize-greatness-of-an-array.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Contructive Algorithms, Sort, Greedy, Two Pointers
 2598 | [Smallest Missing Non-negative Integer After Operations](https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/) | [C++](./C++/smallest-missing-non-negative-integer-after-operations.cpp) [Python](./Python/smallest-missing-non-negative-integer-after-operations.py) | _O(n)_ | _O(k)_ | Medium | | Freq Table
 2605 | [Form Smallest Number From Two Digit Arrays](https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/) | [C++](./C++/form-smallest-number-from-two-digit-arrays.cpp) [Python](./Python/form-smallest-number-from-two-digit-arrays.py) | _O(m + n)_ | _O(m + n)_ | Easy | | Hash Table
-2610 | [Convert an Array Into a 2D Array With Conditions](https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/) | [C++](./C++/convert-an-array-into-a-2d-array-with-conditions.cpp) [Python](./Python/convert-an-array-into-a-2d-array-with-conditions.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Constructive Algorithms
 2615 | [Sum of Distances](https://leetcode.com/problems/sum-of-distances/) | [C++](./C++/sum-of-distances.cpp) [Python](./Python/sum-of-distances.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Prefix Sum
 
 <br/>
@@ -789,12 +787,9 @@
 2262 | [Total Appeal of A String](https://leetcode.com/problems/total-appeal-of-a-string/)|[C++](./C++/total-appeal-of-a-string.cpp) [Python](./Python/total-appeal-of-a-string.py)| _O(n)_     | _O(26)_         | Hard         | variant of [Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) | Combinatorics
 2280 | [Minimum Lines to Represent a Line Chart](https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/)|[C++](./C++/minimum-lines-to-represent-a-line-chart.cpp) [Python](./Python/minimum-lines-to-represent-a-line-chart.py)| _O(nlogn)_     | _O(1)_         | Medium         | | Sort, Math, GCD
 2310 | [Sum of Numbers With Units Digit K](https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/)|[C++](./C++/sum-of-numbers-with-units-digit-k.cpp) [Python](./Python/sum-of-numbers-with-units-digit-k.py)| _O(1)_     | _O(1)_         | Medium         | | Math
-2335 | [Minimum Amount of Time to Fill Cups](https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups/)|[C++](./C++/minimum-amount-of-time-to-fill-cups.cpp) [Python](./Python/minimum-amount-of-time-to-fill-cups.py)| _O(1)_     | _O(1)_         | Easy         | | Math, Constructive Algorithms
 2338 | [Count the Number of Ideal Arrays](https://leetcode.com/problems/count-the-number-of-ideal-arrays/)| [C++](./C++/count-the-number-of-ideal-arrays.cpp) [Python](./Python/count-the-number-of-ideal-arrays.py) | _O(sqrt(m) + n + m * (logm + sqrt(m)/log(sqrt(m))))_    | _O(sqrt(m) + n + logm)_          | Hard           | variant of [Count Ways to Make Array With Product](https://leetcode.com/problems/count-ways-to-make-array-with-product/) | DP, `Linear Sieve of Eratosthenes`, Factorization, Combinatorics
 2344 | [Minimum Deletions to Make Array Divisible](https://leetcode.com/problems/minimum-deletions-to-make-array-divisible/)|[C++](./C++/minimum-deletions-to-make-array-divisible.cpp) [Python](./Python/minimum-deletions-to-make-array-divisible.py)| _O(n + m + logr)_     | _O(1)_         | Hard         | | Math, GCD
 2345 | [Finding the Number of Visible Mountains](https://leetcode.com/problems/finding-the-number-of-visible-mountains/)|[C++](./C++/finding-the-number-of-visible-mountains.cpp) [Python](./Python/finding-the-number-of-visible-mountains.py)| _O(nlogn)_     | _O(1)_         | Medium         | 🔒 | Math, Sort, Mono Stack
-2350 | [Shortest Impossible Sequence of Rolls](https://leetcode.com/problems/shortest-impossible-sequence-of-rolls/)|[C++](./C++/shortest-impossible-sequence-of-rolls.cpp) [Python](./Python/shortest-impossible-sequence-of-rolls.py)| _O(n)_     | _O(k)_         | Hard         | | Constructive Algorithms
-2358 | [Maximum Number of Groups Entering a Competition](https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/)|[C++](./C++/maximum-number-of-groups-entering-a-competition.cpp) [Python](./Python/maximum-number-of-groups-entering-a-competition.py)| _O(1)_     | _O(1)_         | Medium         | | Constructive Algorithms, Math
 2376 | [Count Special Integers](https://leetcode.com/problems/count-special-integers/)|[C++](./C++/count-special-integers.cpp) [Python](./Python/count-special-integers.py)| _O(logn)_     | _O(logn)_         | Hard         | variant of [Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits/) | Combinatorics
 2396 | [Strictly Palindromic Number](https://leetcode.com/problems/strictly-palindromic-number/)|[C++](./C++/strictly-palindromic-number.cpp) [Python](./Python/strictly-palindromic-number.py)| _O(1)_     | _O(1)_         | Medium         || Math
 2400 | [Number of Ways to Reach a Position After Exactly k Steps](https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/)|[C++](./C++/number-of-ways-to-reach-a-position-after-exactly-k-steps.cpp) [Python](./Python/number-of-ways-to-reach-a-position-after-exactly-k-steps.py)| _O(k)_     | _O(k)_         | Medium         || Combinatorics
@@ -1667,6 +1662,23 @@
 2534 | [Time Taken to Cross the Door](https://leetcode.com/problems/time-taken-to-cross-the-door/) | [C++](./C++/time-taken-to-cross-the-door.cpp) [Python](./Python/time-taken-to-cross-the-door.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Queue, Simulation |
 2593 | [Find Score of an Array After Marking All Elements](https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/) | [C++](./C++/find-score-of-an-array-after-marking-all-elements.cpp) [Python](./Python/find-score-of-an-array-after-marking-all-elements.py) | _O(nlogn)_ | _O(n)_ | Medium | | Simulation, Sort, Hash Table |
 2596 | [Check Knight Tour Configuration](https://leetcode.com/problems/check-knight-tour-configuration/) | [C++](./C++/check-knight-tour-configuration.cpp) [Python](./Python/check-knight-tour-configuration.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Simulation, Hash Table |
+
+<br/>
+<div align="right">
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
+</div>
+<br/>
+
+
+## Constructive Algorithms
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
+2202 | [Maximize the Topmost Element After K Moves](https://leetcode.com/problems/maximize-the-topmost-element-after-k-moves/) | [C++](./C++/maximize-the-topmost-element-after-k-moves.cpp) [Python](./Python/maximize-the-topmost-element-after-k-moves.py) | _O(min(n, k))_ | _O(1)_ | Medium | | Constructive Algorithms
+2335 | [Minimum Amount of Time to Fill Cups](https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups/)|[C++](./C++/minimum-amount-of-time-to-fill-cups.cpp) [Python](./Python/minimum-amount-of-time-to-fill-cups.py)| _O(1)_     | _O(1)_         | Easy         | | Math, Constructive Algorithms
+2350 | [Shortest Impossible Sequence of Rolls](https://leetcode.com/problems/shortest-impossible-sequence-of-rolls/)|[C++](./C++/shortest-impossible-sequence-of-rolls.cpp) [Python](./Python/shortest-impossible-sequence-of-rolls.py)| _O(n)_     | _O(k)_         | Hard         | | Constructive Algorithms
+2546 | [Apply Bitwise Operations to Make Strings Equal](https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/) | [C++](./C++/apply-bitwise-operations-to-make-strings-equal.cpp) [Python](./Python/apply-bitwise-operations-to-make-strings-equal.py) | _O(n)_   | _O(1)_        | Medium         | | Constructive Algorithms
+2358 | [Maximum Number of Groups Entering a Competition](https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/)|[C++](./C++/maximum-number-of-groups-entering-a-competition.cpp) [Python](./Python/maximum-number-of-groups-entering-a-competition.py)| _O(1)_     | _O(1)_         | Medium         | | Constructive Algorithms, Math
+2610 | [Convert an Array Into a 2D Array With Conditions](https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/) | [C++](./C++/convert-an-array-into-a-2d-array-with-conditions.cpp) [Python](./Python/convert-an-array-into-a-2d-array-with-conditions.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Constructive Algorithms
 
 <br/>
 <div align="right">
