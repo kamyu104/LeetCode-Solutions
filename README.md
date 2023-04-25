@@ -1808,7 +1808,7 @@
 2637 | [Promise Time Limit](https://leetcode.com/problems/promise-time-limit/) | [TypeScript](./TypeScript/promise-time-limit.ts) | _O(n)_ | _O(1)_       | Easy           | | Promise |
 2648 | [Generate Fibonacci Sequence](https://leetcode.com/problems/generate-fibonacci-sequence/) | [TypeScript](./TypeScript/generate-fibonacci-sequence.ts) | _O(1)_ | _O(1)_       | Easy           | | DP |
 2649 | [Nested Array Generator](https://leetcode.com/problems/nested-array-generator/) | [TypeScript](./TypeScript/nested-array-generator.ts) | _O(1)_ | _O(d)_       | Medium           | | DFS |
-2650 | [Design Cancellable Function](https://leetcode.com/problems/design-cancellable-function/) | [TypeScript](./TypeScript/design-cancellable-function.ts) | _O(f)_ | _O(1)_       | Hard           | | Promise |
+2650 | [Design Cancellable Function](https://leetcode.com/problems/design-cancellable-function/) | [TypeScript](./TypeScript/design-cancellable-function.ts) | _O()_ | _O(1)_       | Hard           | | Promise |
 
 <br/>
 <div align="right">
