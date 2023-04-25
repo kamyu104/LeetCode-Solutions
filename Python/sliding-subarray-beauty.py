@@ -4,7 +4,7 @@
 from sortedcontainers import SortedList
 
 
-# sorted list
+# sorted list, two pointers
 class Solution(object):
     def getSubarrayBeauty(self, nums, k, x):
         """
