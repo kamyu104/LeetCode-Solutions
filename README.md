@@ -266,6 +266,10 @@
 2569 | [Handling Sum Queries After Update](https://leetcode.com/problems/handling-sum-queries-after-update/)| [C++](./C++/handling-sum-queries-after-update.cpp) [Python](./Python/handling-sum-queries-after-update.py)| _O(nlogn + m + qlogn)_ | _O(n)_ | Hard | | Segment Tree |
 2574 | [Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences/)| [C++](./C++/left-and-right-sum-differences.cpp) [Python](./Python/left-and-right-sum-differences.py)| _O(n)_ | _O(1)_ | Easy | | Prefix Sum |
 2580 | [Count Ways to Group Overlapping Ranges](https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/)| [C++](./C++/count-ways-to-group-overlapping-ranges.cpp) [Python](./Python/count-ways-to-group-overlapping-ranges.py)| _O(nlogn)_ | _O(1)_ | Medium | | Sort, Array |
+2639 | [Find the Width of Columns of a Grid](https://leetcode.com/problems/find-the-width-of-columns-of-a-grid/)| [C++](./C++/find-the-width-of-columns-of-a-grid.cpp) [Python](./Python/find-the-width-of-columns-of-a-grid.py)| _O(m * n)_ | _O(1)_ | Easy | | Array |
+2640 | [Find the Score of All Prefixes of an Array](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/)| [C++](./C++/find-the-score-of-all-prefixes-of-an-array.cpp) [Python](./Python/find-the-score-of-all-prefixes-of-an-array.py)| _O(n)_ | _O(1)_ | Medium | | Prefix Sum |
+2643 | [Row With Maximum Ones](https://leetcode.com/problems/row-with-maximum-ones/)| [C++](./C++/row-with-maximum-ones.cpp) [Python](./Python/row-with-maximum-ones.py)| _O(m * n)_ | _O(1)_ | Easy | | Array |
+2644 | [Find the Maximum Divisibility Score](https://leetcode.com/problems/find-the-maximum-divisibility-score/)| [C++](./C++/find-the-maximum-divisibility-score.cpp) [Python](./Python/find-the-maximum-divisibility-score.py)| _O(n * d)_ | _O(1)_ | Easy | | brute force |
 
 <br/>
 <div align="right">
@@ -1115,6 +1119,7 @@
 2603 | [Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/)  | [C++](./C++/collect-coins-in-a-tree.cpp) [Python](./Python/collect-coins-in-a-tree.py) | _O(n)_ | _O(n)_| Hard           || Tree, BFS | 
 2612 | [Minimum Reverse Operations](https://leetcode.com/problems/minimum-reverse-operations/)  | [C++](./C++/minimum-reverse-operations.cpp) [Python](./Python/minimum-reverse-operations.py) | _O(n)_ | _O(n)_| Hard           || BFS, Union Find, BST, Sorted List | 
 2617 | [Minimum Number of Visited Cells in a Grid](https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/)  | [C++](./C++/minimum-number-of-visited-cells-in-a-grid.cpp) [Python](./Python/minimum-number-of-visited-cells-in-a-grid.py) | _O(m * n)_ | _O(m * n)_| Hard           | variant of [Minimum Reverse Operations](https://leetcode.com/problems/minimum-reverse-operations/) | BFS, Union Find, BST, Sorted List | 
+2641 | [Cousins in Binary Tree II](https://leetcode.com/problems/cousins-in-binary-tree-ii/)  | [C++](./C++/cousins-in-binary-tree-ii.cpp) [Python](./Python/cousins-in-binary-tree-ii.py) | _O(n)_ | _O(w)_| Medium           || BFS | 
 
 <br/>
 <div align="right">
@@ -1368,6 +1373,7 @@
 2585 | [Number of Ways to Earn Points](https://leetcode.com/problems/number-of-ways-to-earn-points/) | [C++](./C++/number-of-ways-to-earn-points.cpp) [Python](./Python/number-of-ways-to-earn-points.py) | _O(n * t * c)_   | _O(t)_        | Hard         | | Knapsack DP
 2597 | [The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/) | [C++](./C++/the-number-of-beautiful-subsets.cpp) [Python](./Python/the-number-of-beautiful-subsets.py) | _O(n)_   | _O(n)_        | Medium         | | Combinatorics, DP
 2638 | [Count the Number of K-Free Subsets](https://leetcode.com/problems/count-the-number-of-k-free-subsets/) | [C++](./C++/count-the-number-of-k-free-subsets.cpp) [Python](./Python/count-the-number-of-k-free-subsets.py) | _O(n)_   | _O(n)_        | Medium         | 🔒, variant of [The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/) | Combinatorics, DP
+2646 | [Minimize the Total Price of the Trips](https://leetcode.com/problems/minimize-the-total-price-of-the-trips/) | [C++](./C++/minimize-the-total-price-of-the-trips.cpp) [Python](./Python/minimize-the-total-price-of-the-trips.py) | _O(t * n)_   | _O(n)_        | Hard         | | DFS, Tree DP
 
 <br/>
 <div align="right">
@@ -1566,6 +1572,7 @@
 2606 | [Find the Substring With Maximum Cost](https://leetcode.com/problems/find-the-substring-with-maximum-cost/) | [C++](./C++/find-the-substring-with-maximum-cost.cpp) [Python](./Python/find-the-substring-with-maximum-cost.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, `Kadane's Algorithm`
 2607 | [Make K-Subarray Sums Equal](https://leetcode.com/problems/make-k-subarray-sums-equal/) | [C++](./C++/make-k-subarray-sums-equal.cpp) [Python](./Python/make-k-subarray-sums-equal.py) | _O(n)_ | _O(n)_ | Medium | | Math, Greedy, Quick Select
 2611 | [Mice and Cheese](https://leetcode.com/problems/mice-and-cheese/) | [C++](./C++/mice-and-cheese.cpp) [Python](./Python/mice-and-cheese.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Quick Select
+2645 | [Minimum Additions to Make Valid String](https://leetcode.com/problems/minimum-additions-to-make-valid-string/) | [C++](./C++/minimum-additions-to-make-valid-string.cpp) [Python](./Python/minimum-additions-to-make-valid-string.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 
 <br/>
 <div align="right">
@@ -1744,6 +1751,7 @@
 2502 | [Design Memory Allocator](https://leetcode.com/problems/design-memory-allocator/) | [C++](./C++/design-memory-allocator.cpp) [Python](./Python/design-memory-allocator.py) | ctor: _O(1)_<br>allocate: _O(logn)_<br>free: _O(logn)_ | _O(n)_ | Medium | | Sorted List
 2526 | [Find Consecutive Integers from a Data Stream](https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream/) | [C++](./C++/find-consecutive-integers-from-a-data-stream.cpp) [Python](./Python/find-consecutive-integers-from-a-data-stream.py) | _O(1)_ | _O(1)_ | Medium | | Array
 2590 | [Design a Todo List](https://leetcode.com/problems/design-a-todo-list/) | [C++](./C++/design-a-todo-list.cpp) [Python](./Python/design-a-todo-list.py) | ctor: _O(1)_<br>addTask: _O(l + logn)_<br>getAllTasks: _O(r)_<br>getTasksForTag: _O(r * c)_<br>completeTask: _O(l + logn)_ | _O(n * l)_ | Medium | 🔒 | BST, Sorted List
+2642 | [Design Graph With Shortest Path Calculator](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/) | [C++](./C++/design-graph-with-shortest-path-calculator.cpp) [Python](./Python/design-graph-with-shortest-path-calculator.py) | ctor: _O(\|V\| + \|E\|)_<br>addEdge: _O(1)_<br>shortestPath: _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | | `Dijkstra's Algorithm`
 
 <br/>
 <div align="right">
