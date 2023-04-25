@@ -269,7 +269,7 @@
 2639 | [Find the Width of Columns of a Grid](https://leetcode.com/problems/find-the-width-of-columns-of-a-grid/)| [C++](./C++/find-the-width-of-columns-of-a-grid.cpp) [Python](./Python/find-the-width-of-columns-of-a-grid.py)| _O(m * n)_ | _O(1)_ | Easy | | Array |
 2640 | [Find the Score of All Prefixes of an Array](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/)| [C++](./C++/find-the-score-of-all-prefixes-of-an-array.cpp) [Python](./Python/find-the-score-of-all-prefixes-of-an-array.py)| _O(n)_ | _O(1)_ | Medium | | Prefix Sum |
 2643 | [Row With Maximum Ones](https://leetcode.com/problems/row-with-maximum-ones/)| [C++](./C++/row-with-maximum-ones.cpp) [Python](./Python/row-with-maximum-ones.py)| _O(m * n)_ | _O(1)_ | Easy | | Array |
-2644 | [Find the Maximum Divisibility Score](https://leetcode.com/problems/find-the-maximum-divisibility-score/)| [C++](./C++/find-the-maximum-divisibility-score.cpp) [Python](./Python/find-the-maximum-divisibility-score.py)| _O(n * d)_ | _O(1)_ | Easy | | brute force |
+2644 | [Find the Maximum Divisibility Score](https://leetcode.com/problems/find-the-maximum-divisibility-score/)| [C++](./C++/find-the-maximum-divisibility-score.cpp) [Python](./Python/find-the-maximum-divisibility-score.py)| _O(n * d)_ | _O(1)_ | Easy | | Brute force |
 
 <br/>
 <div align="right">
