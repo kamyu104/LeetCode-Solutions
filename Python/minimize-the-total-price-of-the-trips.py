@@ -11,11 +11,6 @@ class Solution(object):
         :type trips: List[List[int]]
         :rtype: int
         """
-        adj = [[] for _ in xrange(n)]
-        for u, v in edges:
-            adj[u].append(v)
-            adj[v].append(u)
-    
         def iter_dfs(u, target):
             stk = [(1, (u, -1))]
             while stk:
@@ -64,6 +59,10 @@ class Solution(object):
                     ret[1] += new_ret[0]
             return min(result)
 
+        adj = [[] for _ in xrange(n)]
+        for u, v in edges:
+            adj[u].append(v)
+            adj[v].append(u)
         lookup = [0]*n
         for u, v in trips:
             iter_dfs(u, v)
@@ -82,11 +81,6 @@ class Solution2(object):
         :type trips: List[List[int]]
         :rtype: int
         """
-        adj = [[] for _ in xrange(n)]
-        for u, v in edges:
-            adj[u].append(v)
-            adj[v].append(u)
-    
         def dfs(u, p, target):
             lookup[u] += 1
             if u == target:
@@ -109,6 +103,10 @@ class Solution2(object):
                 full_or_half += min(f, h)
             return price[u]*lookup[u]+full_or_half, price[u]//2*lookup[u]+full
 
+        adj = [[] for _ in xrange(n)]
+        for u, v in edges:
+            adj[u].append(v)
+            adj[v].append(u)
         lookup = [0]*n
         for u, v in trips:
             dfs(u, -1, v)
