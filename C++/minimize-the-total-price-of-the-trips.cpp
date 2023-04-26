@@ -75,7 +75,7 @@ public:
             adj[e[1]].emplace_back(e[0]);
         }
         vector<int> lookup(n);
-        const function<bool (int, int, int)> dfs = [&](int u, int p, int target) {
+        const function<bool(int, int, int)> dfs = [&](int u, int p, int target) {
             ++lookup[u];
             if (u == target) {
                 return true;
@@ -92,7 +92,7 @@ public:
             return false;
         };
 
-        const function<pair<int, int> (int, int)> dfs2 = [&](int u, int p) {
+        const function<pair<int, int>(int, int)> dfs2 = [&](int u, int p) {
             int full = price[u] * lookup[u], half = price[u] / 2 * lookup[u];
             for (const auto& v : adj[u]) {
                 if (v == p) {
