@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2654%20%2F%202654-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2655%20%2F%202655-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -270,6 +270,7 @@
 2640 | [Find the Score of All Prefixes of an Array](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/)| [C++](./C++/find-the-score-of-all-prefixes-of-an-array.cpp) [Python](./Python/find-the-score-of-all-prefixes-of-an-array.py)| _O(n)_ | _O(1)_ | Medium | | Prefix Sum |
 2643 | [Row With Maximum Ones](https://leetcode.com/problems/row-with-maximum-ones/)| [C++](./C++/row-with-maximum-ones.cpp) [Python](./Python/row-with-maximum-ones.py)| _O(m * n)_ | _O(1)_ | Easy | | Array |
 2644 | [Find the Maximum Divisibility Score](https://leetcode.com/problems/find-the-maximum-divisibility-score/)| [C++](./C++/find-the-maximum-divisibility-score.cpp) [Python](./Python/find-the-maximum-divisibility-score.py)| _O(n * d)_ | _O(1)_ | Easy | | Brute force |
+2655 | [Find Maximal Uncovered Ranges](https://leetcode.com/problems/find-maximal-uncovered-ranges/) | [C++](./C++/find-maximal-uncovered-ranges.cpp) [Python](./Python/find-maximal-uncovered-ranges.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Sort, Line Sweep
 
 <br/>
 <div align="right">
