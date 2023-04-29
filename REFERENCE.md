@@ -100,6 +100,7 @@
         * [Clean Code](https://www.amazon.com/dp/0132350882)
         * [Clean Architecture](https://www.amazon.com/dp/0134494164)
         * [Fundamentals of Software Architecture](https://www.amazon.com/dp/B0849MPK73)
+        * [Software Architecture: The Hard Parts](https://www.amazon.com/dp/1492086894)
     * Design Patterns
         * [Design Patterns](https://www.amazon.com/dp/0201633612)
         * [Patterns of Enterprise Application Architecture](https://www.amazon.com/dp/0321127420)
