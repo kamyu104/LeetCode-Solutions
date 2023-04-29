@@ -61,6 +61,8 @@
     * Python
         * [Effective Python](https://www.amazon.com/dp/0134853989)
         * [Python in Practice](https://www.amazon.com/dp/B00EO3TRL2)
+    * Javascript
+        * [Eloquent JavaScript](https://eloquentjavascript.net/)
     * Golang
         * [Go Programming Language](https://www.amazon.com/dp/0134190440)
         * [Concurrency in Go](https://www.amazon.com/dp/1491941197)
@@ -103,7 +105,7 @@
         * [Patterns of Enterprise Application Architecture](https://www.amazon.com/dp/0321127420)
         * [Pattern-Oriented Software Architecture Volume 2](https://www.amazon.com/dp/0471606952)
         * [Small Memory Software](https://www.amazon.com/dp/0201596075)
-        * [Game Programming Patterns](https://www.amazon.com/dp/0990582906)
+        * [Game Programming Patterns](https://gameprogrammingpatterns.com/)
 * Computer Science
     * Computer Systems 
         * [Computer Systems](https://www.amazon.com/dp/013409266X)
@@ -114,7 +116,7 @@
         * [Computer Architecture](https://www.amazon.com/dp/0128119055)
     * Compiler
         * [Compilers](https://www.amazon.com/dp/0321486811)
-        * [Crafting Interpreters](https://www.amazon.com/dp/0990582930)
+        * [Crafting Interpreters](https://craftinginterpreters.com/)
     * Operating Systems
         * Introduction 
             * [Operating System Concepts](https://www.amazon.com/dp/B07CVKH7BD)
