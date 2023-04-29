@@ -61,7 +61,7 @@
     * Python
         * [Effective Python](https://www.amazon.com/dp/0134853989)
         * [Python in Practice](https://www.amazon.com/dp/B00EO3TRL2)
-    * Javascript
+    * JavaScript
         * [Eloquent JavaScript](https://eloquentjavascript.net/)
     * Golang
         * [Go Programming Language](https://www.amazon.com/dp/0134190440)
