@@ -90,6 +90,8 @@
         * [Microservices Patterns](https://www.amazon.com/dp/1617294543)
     * Performance
         * [Systems Performance](https://www.amazon.com/dp/0136820158)
+    * Open Source Applications
+        * [The Architecture of Open Source Applications](https://aosabook.org/en/index.html)
 * Software Development
     * Introduction 
         * [Code Complete](https://www.amazon.com/dp/B00JDMPOSY)
