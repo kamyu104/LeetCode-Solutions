@@ -112,7 +112,7 @@
     * Computer Systems 
         * [Computer Systems](https://www.amazon.com/dp/013409266X)
     * Computer Mathematics
-        * [Introduction to Linear Algebra](https://www.amazon.com/dp/0980232775)
+        * [Introduction to Linear Algebra](https://www.amazon.com/dp/1733146679)
         * [Concrete Mathematics](https://www.amazon.com/dp/0201558025)
     * Computer Organization and Architecture
         * [Computer Organization and Design](https://www.amazon.com/dp/0128203315)
