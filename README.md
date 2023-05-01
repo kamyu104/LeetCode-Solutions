@@ -1583,7 +1583,7 @@
 2607 | [Make K-Subarray Sums Equal](https://leetcode.com/problems/make-k-subarray-sums-equal/) | [C++](./C++/make-k-subarray-sums-equal.cpp) [Python](./Python/make-k-subarray-sums-equal.py) | _O(n)_ | _O(n)_ | Medium | | Math, Greedy, Quick Select
 2611 | [Mice and Cheese](https://leetcode.com/problems/mice-and-cheese/) | [C++](./C++/mice-and-cheese.cpp) [Python](./Python/mice-and-cheese.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Quick Select
 2645 | [Minimum Additions to Make Valid String](https://leetcode.com/problems/minimum-additions-to-make-valid-string/) | [C++](./C++/minimum-additions-to-make-valid-string.cpp) [Python](./Python/minimum-additions-to-make-valid-string.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
-2663 | [Lexicographically Smallest Beautiful String](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/) | [C++](./C++/lexicographically-smallest-beautiful-string.cpp) [Python](./Python/lexicographically-smallest-beautiful-string.py) | _O(n)_ | _O(n)_ | Hard | | Greedy
+2663 | [Lexicographically Smallest Beautiful String](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/) | [C++](./C++/lexicographically-smallest-beautiful-string.cpp) [Python](./Python/lexicographically-smallest-beautiful-string.py) | _O(n)_ | _O(1)_ | Hard | | Greedy
 
 <br/>
 <div align="right">
