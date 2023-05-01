@@ -35,7 +35,7 @@ class Solution(object):
 
 
 # Time:  O(n^2 * logn)
-# Space: O(n + e)
+# Space: O(n^2)
 import collections
 import heapq
 # dijkstra's algorithm
