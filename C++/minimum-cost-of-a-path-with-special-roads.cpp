@@ -14,7 +14,7 @@ public:
             return pair(static_cast<int>(id / target[1] + 1), static_cast<int>(id % target[1] + 1));
         };
 
-        const int64_t b = id(pair(start[0], start[1])), t = id(pair(target[0], target[1]));
+        const int64_t s = id(pair(start[0], start[1])), t = id(pair(target[0], target[1]));
         unordered_map<int64_t, vector<pair<int64_t, int>>> adj;
         adj[t];
         for (const auto& s : specialRoads) {
@@ -22,7 +22,7 @@ public:
             const int64_t u = id(pair(x1, y1)), v = id(pair(x2, y2));
             adj[u].emplace_back(v, c);
         }
-        unordered_map<int64_t, int> dist = {{b, 0}};
+        unordered_map<int64_t, int> dist = {{s, 0}};
         unordered_set<int64_t> lookup;
         while (size(lookup) != size(dist)) {
             pair<int, int64_t> mn = {INF, -1};
@@ -68,18 +68,18 @@ public:
             return pair(static_cast<int>(id / target[1] + 1), static_cast<int>(id % target[1] + 1));
         };
 
-        const int64_t b = id(pair(start[0], start[1])), t = id(pair(target[0], target[1]));
+        const int64_t s = id(pair(start[0], start[1])), t = id(pair(target[0], target[1]));
         unordered_map<int64_t, vector<pair<int64_t, int>>> adj;
         adj[t];
-        unordered_set<int64_t> nodes = {b, t};
+        unordered_set<int64_t> nodes = {s, t};
         for (const auto& s : specialRoads) {
             const int x1 = s[0], y1 = s[1], x2 = s[2], y2 = s[3], c = s[4];
             const int64_t u = id(pair(x1, y1)), v = id(pair(x2, y2));
             adj[u].emplace_back(v, c);
         }
         priority_queue<pair<int, int64_t>, vector<pair<int, int64_t>>, greater<pair<int, int64_t>>> min_heap;
-        min_heap.emplace(0, b);
-        unordered_map<int64_t, int> dist = {{b, 0}};
+        min_heap.emplace(0, s);
+        unordered_map<int64_t, int> dist = {{s, 0}};
         while (!empty(min_heap)) {
             const auto [d, u] = min_heap.top(); min_heap.pop();
             if (d > dist[u]) {
