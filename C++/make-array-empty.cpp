@@ -10,10 +10,10 @@ public:
         sort(begin(idxs), end(idxs), [&](const auto& a, const auto& b) {
             return nums[a] < nums[b];
         });
-        int64_t result = size(nums);
-        for (int i = 0; i + 1 < size(nums); ++i) {
+        int64_t result = size(idxs);
+        for (int i = 0; i + 1 < size(idxs); ++i) {
             if (idxs[i] > idxs[i + 1]) {
-                result += size(nums) - (i + 1);
+                result += size(idxs) - (i + 1);
             }
         }
         return result;
