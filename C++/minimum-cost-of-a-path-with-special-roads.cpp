@@ -54,7 +54,7 @@ public:
 };
 
 // Time:  O(n^2 * logn)
-// Space: O(n + e)
+// Space: O(n^2)
 // dijkstra's algorithm
 class Solution2 {
 public:
