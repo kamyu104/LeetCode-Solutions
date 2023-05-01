@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2655%20%2F%202655-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2663%20%2F%202663-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -271,6 +271,7 @@
 2643 | [Row With Maximum Ones](https://leetcode.com/problems/row-with-maximum-ones/)| [C++](./C++/row-with-maximum-ones.cpp) [Python](./Python/row-with-maximum-ones.py)| _O(m * n)_ | _O(1)_ | Easy | | Array |
 2644 | [Find the Maximum Divisibility Score](https://leetcode.com/problems/find-the-maximum-divisibility-score/)| [C++](./C++/find-the-maximum-divisibility-score.cpp) [Python](./Python/find-the-maximum-divisibility-score.py)| _O(n * d)_ | _O(1)_ | Easy | | Brute force |
 2655 | [Find Maximal Uncovered Ranges](https://leetcode.com/problems/find-maximal-uncovered-ranges/) | [C++](./C++/find-maximal-uncovered-ranges.cpp) [Python](./Python/find-maximal-uncovered-ranges.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒, variant of [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Sort, Line Sweep
+2660 | [Determine the Winner of a Bowling Game](https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/) | [C++](./C++/determine-the-winner-of-a-bowling-game.cpp) [Python](./Python/determine-the-winner-of-a-bowling-game.py) | _O(n)_ | _O(1)_ | Medium | | Array
 
 <br/>
 <div align="right">
@@ -660,6 +661,8 @@
 2598 | [Smallest Missing Non-negative Integer After Operations](https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/) | [C++](./C++/smallest-missing-non-negative-integer-after-operations.cpp) [Python](./Python/smallest-missing-non-negative-integer-after-operations.py) | _O(n)_ | _O(k)_ | Medium | | Freq Table
 2605 | [Form Smallest Number From Two Digit Arrays](https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/) | [C++](./C++/form-smallest-number-from-two-digit-arrays.cpp) [Python](./Python/form-smallest-number-from-two-digit-arrays.py) | _O(m + n)_ | _O(m + n)_ | Easy | | Hash Table
 2615 | [Sum of Distances](https://leetcode.com/problems/sum-of-distances/) | [C++](./C++/sum-of-distances.cpp) [Python](./Python/sum-of-distances.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Prefix Sum
+2657 | [Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/) | [C++](./C++/find-the-prefix-common-array-of-two-arrays.cpp) [Python](./Python/find-the-prefix-common-array-of-two-arrays.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
+2661 | [First Completely Painted Row or Column](https://leetcode.com/problems/first-completely-painted-row-or-column/) | [C++](./C++/first-completely-painted-row-or-column.cpp) [Python](./Python/first-completely-painted-row-or-column.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Hash Table
 
 <br/>
 <div align="right">
@@ -826,6 +829,7 @@
 2614 | [Prime In Diagonal](https://leetcode.com/problems/prime-in-diagonal/)| [C++](./C++/prime-in-diagonal.cpp) [Python](./Python/prime-in-diagonal.py)| precompute: _O(MAX_N)_<br>runtime: _O(n)_ | _O(MAX_N)_ | Easy | | Number Theory, `Linear Sieve of Eratosthenes` |
 2651 | [Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/) | [C++](./C++/calculate-delayed-arrival-time.cpp) [Python](./Python/calculate-delayed-arrival-time.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 2652 | [Sum Multiples](https://leetcode.com/problems/sum-multiples/) | [C++](./C++/sum-multiples.cpp) [Python](./Python/sum-multiples.py) | _O(1)_   | _O(1)_        | Easy         | | Math, Principle of Inclusion and Exclusion
+2656 | [Maximum Sum With Exactly K Elements ](https://leetcode.com/problems/maximum-sum-with-exactly-k-elements/) | [C++](./C++/maximum-sum-with-exactly-k-elements.cpp) [Python](./Python/maximum-sum-with-exactly-k-elements.py) | _O(n)_   | _O(1)_        | Easy         | | Math
 
 <br/>
 <div align="right">
@@ -886,6 +890,7 @@
 2497 | [Maximum Star Sum of a Graph](https://leetcode.com/problems/maximum-star-sum-of-a-graph/) | [C++](./C++/maximum-star-sum-of-a-graph.cpp) [Python](./Python/maximum-star-sum-of-a-graph.py) | _O(n)_   | _O(n)_        | Medium         | | Sort, Quick Select
 2512 | [Reward Top K Students](https://leetcode.com/problems/reward-top-k-students/) | [C++](./C++/reward-top-k-students.cpp) [Python](./Python/reward-top-k-students.py) | _O(pf * l + nf * l + n * l + klogk)_   | _O(pf * l + nf * l + n)_        | Medium         | | Partial Sort, Quick Select
 2545 | [Sort the Students by Their Kth Score](https://leetcode.com/problems/sort-the-students-by-their-kth-score/) | [C++](./C++/sort-the-students-by-their-kth-score.cpp) [Python](./Python/sort-the-students-by-their-kth-score.py) | _O(mlogm)_   | _O(1)_        | Medium         | | Sort
+2659 | [Make Array Empty](https://leetcode.com/problems/make-array-empty/) | [C++](./C++/make-array-empty.cpp) [Python](./Python/make-array-empty.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Sort, BIT, Fenwick Tree
 
 <br/>
 <div align="right">
@@ -1124,6 +1129,7 @@
 2612 | [Minimum Reverse Operations](https://leetcode.com/problems/minimum-reverse-operations/)  | [C++](./C++/minimum-reverse-operations.cpp) [Python](./Python/minimum-reverse-operations.py) | _O(n)_ | _O(n)_| Hard           || BFS, Union Find, BST, Sorted List | 
 2617 | [Minimum Number of Visited Cells in a Grid](https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/)  | [C++](./C++/minimum-number-of-visited-cells-in-a-grid.cpp) [Python](./Python/minimum-number-of-visited-cells-in-a-grid.py) | _O(m * n)_ | _O(m * n)_| Hard           | variant of [Minimum Reverse Operations](https://leetcode.com/problems/minimum-reverse-operations/) | BFS, Union Find, BST, Sorted List | 
 2641 | [Cousins in Binary Tree II](https://leetcode.com/problems/cousins-in-binary-tree-ii/)  | [C++](./C++/cousins-in-binary-tree-ii.cpp) [Python](./Python/cousins-in-binary-tree-ii.py) | _O(n)_ | _O(w)_| Medium           || BFS | 
+2658 | [Maximum Number of Fish in a Grid](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/)  | [C++](./C++/maximum-number-of-fish-in-a-grid.cpp) [Python](./Python/maximum-number-of-fish-in-a-grid.py) | _O(m * n)_ | _O(1)_| Medium           || BFS, DFS | 
 
 <br/>
 <div align="right">
@@ -1577,6 +1583,7 @@
 2607 | [Make K-Subarray Sums Equal](https://leetcode.com/problems/make-k-subarray-sums-equal/) | [C++](./C++/make-k-subarray-sums-equal.cpp) [Python](./Python/make-k-subarray-sums-equal.py) | _O(n)_ | _O(n)_ | Medium | | Math, Greedy, Quick Select
 2611 | [Mice and Cheese](https://leetcode.com/problems/mice-and-cheese/) | [C++](./C++/mice-and-cheese.cpp) [Python](./Python/mice-and-cheese.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Quick Select
 2645 | [Minimum Additions to Make Valid String](https://leetcode.com/problems/minimum-additions-to-make-valid-string/) | [C++](./C++/minimum-additions-to-make-valid-string.cpp) [Python](./Python/minimum-additions-to-make-valid-string.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+2663 | [Lexicographically Smallest Beautiful String](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/) | [C++](./C++/lexicographically-smallest-beautiful-string.cpp) [Python](./Python/lexicographically-smallest-beautiful-string.py) | _O(n)_ | _O(n)_ | Hard | | Greedy
 
 <br/>
 <div align="right">
@@ -1636,6 +1643,7 @@
 2473 | [Minimum Cost to Buy Apples](https://leetcode.com/problems/minimum-cost-to-buy-apples/)  | [C++](./C++/minimum-cost-to-buy-apples.cpp) [Python](./Python/minimum-cost-to-buy-apples.py) | _O(n * rlogn)_ | _O(n)_| Medium           |🔒| `Dijkstra's Algorithm`| 
 2508 | [Add Edges to Make Degrees of All Nodes Even](https://leetcode.com/problems/add-edges-to-make-degrees-of-all-nodes-even/)  | [C++](./C++/add-edges-to-make-degrees-of-all-nodes-even.cpp) [Python](./Python/add-edges-to-make-degrees-of-all-nodes-even.py) | _O(n)_ | _O(n)_| Hard           || Graph | 
 2608 | [Shortest Cycle in a Graph](https://leetcode.com/problems/shortest-cycle-in-a-graph/)  | [C++](./C++/shortest-cycle-in-a-graph.cpp) [Python](./Python/shortest-cycle-in-a-graph.py) | _O(n^2)_ | _O(n + e)_| Hard           || Graph, BFS |
+2662 | [Minimum Cost of a Path With Special Roads](https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/)  | [C++](./C++/minimum-cost-of-a-path-with-special-roads.cpp) [Python](./Python/minimum-cost-of-a-path-with-special-roads.py) | _O(n^2)_ | _O(n^2)_| Medium           || Graph, `Dijkstra's Algorithm` |
 
 <br/>
 <div align="right">
