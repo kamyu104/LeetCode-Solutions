@@ -46,8 +46,10 @@ class Solution2(object):
         result = 0
         prev = -1
         for i in idxs:
-            if prev < i:
-                result += 1+((i-prev)-(bit.query(i)-bit.query(prev-1))) if prev != -1 else i+1
+            if prev == -1:
+                result += i+1
+            elif prev < i:
+                result += 1+((i-prev)-(bit.query(i)-bit.query(prev-1)))
             else:
                 result += (len(nums)-bit.query(len(nums)-1))-((prev-i)-(bit.query(prev)-bit.query(i-1)))
             bit.add(i, 1)
