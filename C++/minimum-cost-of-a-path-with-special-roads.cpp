@@ -28,11 +28,11 @@ public:
             nodes.emplace(v);
         }
         for (const auto& u : nodes) {
+            const auto& [x1, y1] = x_y(u); 
             for (const auto& v : nodes) {
                 if (!adj[u].count(v)) {
                     adj[u][v] = INF;
                 }
-                const auto& [x1, y1] = x_y(u); 
                 const auto& [x2, y2] = x_y(v);
                 adj[u][v] = min(adj[u][v], abs(x2 - x1) + abs(y2 - y1));
             }
