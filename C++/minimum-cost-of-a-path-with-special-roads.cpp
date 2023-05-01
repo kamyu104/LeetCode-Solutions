@@ -17,37 +17,35 @@ public:
         const int64_t b = id(pair(start[0], start[1])), t = id(pair(target[0], target[1]));
         unordered_map<int64_t, vector<pair<int64_t, int>>> adj;
         adj[t];
-        unordered_set<int64_t> nodes = {b, t};
         for (const auto& s : specialRoads) {
             const int x1 = s[0], y1 = s[1], x2 = s[2], y2 = s[3], c = s[4];
             const int64_t u = id(pair(x1, y1)), v = id(pair(x2, y2));
             adj[u].emplace_back(v, c);
-            nodes.emplace(u);
-            nodes.emplace(v);
         }
-        unordered_map<int64_t, int> lookup = {{b, 0}};
-        while (!empty(nodes)) {
+        unordered_map<int64_t, int> dist = {{b, 0}};
+        unordered_set<int64_t> lookup;
+        while (size(lookup) != size(dist)) {
             pair<int, int64_t> mn = {INF, -1};
-            for (const auto& u : nodes) {
-                if (lookup.count(u)) {
-                    mn = min(mn, pair(lookup[u], u));
+            for (const auto& [u, d] : dist) {
+                if (!lookup.count(u)) {
+                    mn = min(mn, pair(d, u));
                 }
             }
             const auto& [d, u] = mn;
-            nodes.erase(u);
+            lookup.emplace(u);
             if (u == t) {
                 return d;
             }
             for (const auto& [v, c] : adj[u]) {
-                if (!lookup.count(v) || lookup[v] > d + c) {
-                    lookup[v] = d + c;
+                if (!dist.count(v) || dist[v] > d + c) {
+                    dist[v] = d + c;
                 }
             }
             const auto& [x1, y1] = x_y(u);
             for (const auto& [v, _] : adj) {
                 const auto& [x2, y2] = x_y(v);
-                if (!lookup.count(v) || lookup[v] > d + abs(x2 - x1) + abs(y2 - y1)) {
-                    lookup[v] = d + abs(x2 - x1) + abs(y2 - y1);
+                if (!dist.count(v) || dist[v] > d + abs(x2 - x1) + abs(y2 - y1)) {
+                    dist[v] = d + abs(x2 - x1) + abs(y2 - y1);
                 }
             }
         }
@@ -81,27 +79,27 @@ public:
         }
         priority_queue<pair<int, int64_t>, vector<pair<int, int64_t>>, greater<pair<int, int64_t>>> min_heap;
         min_heap.emplace(0, b);
-        unordered_map<int64_t, int> lookup = {{b, 0}};
+        unordered_map<int64_t, int> dist = {{b, 0}};
         while (!empty(min_heap)) {
             const auto [d, u] = min_heap.top(); min_heap.pop();
-            if (d > lookup[u]) {
+            if (d > dist[u]) {
                 continue;
             }
             if (u == t) {
                 return d;
             }
             for (const auto& [v, c] : adj[u]) {
-                if (!lookup.count(v) || lookup[v] > d + c) {
-                    lookup[v] = d + c;
-                    min_heap.emplace(lookup[v], v);
+                if (!dist.count(v) || dist[v] > d + c) {
+                    dist[v] = d + c;
+                    min_heap.emplace(dist[v], v);
                 }
             }
             const auto& [x1, y1] = x_y(u);
             for (const auto& [v, _] : adj) {
                 const auto& [x2, y2] = x_y(v);
-                if (!lookup.count(v) || lookup[v] > d + abs(x2 - x1) + abs(y2 - y1)) {
-                    lookup[v] = d + abs(x2 - x1) + abs(y2 - y1);
-                    min_heap.emplace(lookup[v], v);
+                if (!dist.count(v) || dist[v] > d + abs(x2 - x1) + abs(y2 - y1)) {
+                    dist[v] = d + abs(x2 - x1) + abs(y2 - y1);
+                    min_heap.emplace(dist[v], v);
                 }
             }
         }
