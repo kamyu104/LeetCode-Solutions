@@ -35,8 +35,10 @@ public:
         int64_t result = 0;
         int prev = -1;
         for (const auto& i : idxs) {
-            if (prev < i) {
-                result += prev != -1 ? 1 + ((i - prev) - (bit.query(i) - bit.query(prev - 1))) : i + 1;
+            if (prev == -1) {
+                result += i + 1;
+            } else if (prev < i) {
+                result += 1 + ((i - prev) - (bit.query(i) - bit.query(prev - 1)));
             } else {
                 result += (size(nums) - bit.query(size(nums) - 1)) - ((prev - i) - (bit.query(prev) - bit.query(i - 1)));
             }
