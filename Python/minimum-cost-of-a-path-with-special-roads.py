@@ -4,7 +4,7 @@
 import collections
 
 
-# dijkstra's algorithms in a complete graph
+# dijkstra's algorithm in a complete graph
 class Solution(object):
     def minimumCost(self, start, target, specialRoads):
         """
