@@ -43,15 +43,15 @@ class Solution2(object):
         bit = BIT(len(nums))
         idxs = range(len(nums))
         idxs.sort(key=lambda x: nums[x])
-        result = 0
+        result = len(nums)
         prev = -1
         for i in idxs:
             if prev == -1:
-                result += i+1
+                result += i
             elif prev < i:
-                result += 1+((i-prev)-(bit.query(i)-bit.query(prev-1)))
+                result += (i-prev)-(bit.query(i)-bit.query(prev-1))
             else:
-                result += (len(nums)-bit.query(len(nums)-1))-((prev-i)-(bit.query(prev)-bit.query(i-1)))
+                result += ((len(nums)-1)-bit.query(len(nums)-1))-((prev-i)-(bit.query(prev)-bit.query(i-1)))
             bit.add(i, 1)
             prev = i
         return result
