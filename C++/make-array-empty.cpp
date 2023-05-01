@@ -5,14 +5,14 @@
 class Solution {
 public:
     long long countOperationsToEmptyArray(vector<int>& nums) {
-        unordered_map<int, int> lookup;
-        for (int i = 0; i < size(nums); ++i) {
-            lookup[nums[i]] = i;
-        }
-        sort(begin(nums), end(nums));
+        vector<int> idxs(size(nums));
+        iota(begin(idxs), end(idxs), 0);
+        sort(begin(idxs), end(idxs), [&](const auto& a, const auto& b) {
+            return nums[a] < nums[b];
+        });
         int64_t result = size(nums);
         for (int i = 0; i + 1 < size(nums); ++i) {
-            if (lookup[nums[i]] > lookup[nums[i + 1]]) {
+            if (idxs[i] > idxs[i + 1]) {
                 result += size(nums) - (i + 1);
             }
         }
