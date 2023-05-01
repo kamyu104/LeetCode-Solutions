@@ -1129,7 +1129,7 @@
 2612 | [Minimum Reverse Operations](https://leetcode.com/problems/minimum-reverse-operations/)  | [C++](./C++/minimum-reverse-operations.cpp) [Python](./Python/minimum-reverse-operations.py) | _O(n)_ | _O(n)_| Hard           || BFS, Union Find, BST, Sorted List | 
 2617 | [Minimum Number of Visited Cells in a Grid](https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/)  | [C++](./C++/minimum-number-of-visited-cells-in-a-grid.cpp) [Python](./Python/minimum-number-of-visited-cells-in-a-grid.py) | _O(m * n)_ | _O(m * n)_| Hard           | variant of [Minimum Reverse Operations](https://leetcode.com/problems/minimum-reverse-operations/) | BFS, Union Find, BST, Sorted List | 
 2641 | [Cousins in Binary Tree II](https://leetcode.com/problems/cousins-in-binary-tree-ii/)  | [C++](./C++/cousins-in-binary-tree-ii.cpp) [Python](./Python/cousins-in-binary-tree-ii.py) | _O(n)_ | _O(w)_| Medium           || BFS | 
-2658 | [Maximum Number of Fish in a Grid](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/)  | [C++](./C++/maximum-number-of-fish-in-a-grid.cpp) [Python](./Python/maximum-number-of-fish-in-a-grid.py) | _O(m * n)_ | _O(1)_| Medium           || BFS, DFS | 
+2658 | [Maximum Number of Fish in a Grid](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/)  | [C++](./C++/maximum-number-of-fish-in-a-grid.cpp) [Python](./Python/maximum-number-of-fish-in-a-grid.py) | _O(m * n)_ | _O(m + n)_| Medium           || BFS, DFS | 
 
 <br/>
 <div align="right">
