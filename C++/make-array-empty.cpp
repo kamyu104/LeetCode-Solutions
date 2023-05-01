@@ -32,15 +32,15 @@ public:
             return nums[a] < nums[b];
         });
         BIT bit(size(nums));
-        int64_t result = 0;
+        int64_t result = size(nums);
         int prev = -1;
         for (const auto& i : idxs) {
             if (prev == -1) {
-                result += i + 1;
+                result += i;
             } else if (prev < i) {
-                result += 1 + ((i - prev) - (bit.query(i) - bit.query(prev - 1)));
+                result += (i - prev) - (bit.query(i) - bit.query(prev - 1));
             } else {
-                result += (size(nums) - bit.query(size(nums) - 1)) - ((prev - i) - (bit.query(prev) - bit.query(i - 1)));
+                result += ((size(nums) - 1) - bit.query(size(nums) - 1)) - ((prev - i) - (bit.query(prev) - bit.query(i - 1)));
             }
             bit.add(i, 1);
             prev = i;
