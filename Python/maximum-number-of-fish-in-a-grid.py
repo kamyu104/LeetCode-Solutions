@@ -11,8 +11,8 @@ class Solution(object):
         DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1))
         def bfs(i, j):
             result = grid[i][j]
-            q = [(i, j)]
             grid[i][j] = 0
+            q = [(i, j)]
             while q:
                 new_q = []
                 for i, j in q:
@@ -48,8 +48,8 @@ class Solution2(object):
         DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1))
         def dfs(i, j):
             result = grid[i][j]
-            stk = [(i, j)]
             grid[i][j] = 0
+            stk = [(i, j)]
             while stk:
                 i, j = stk.pop()
                 for di, dj in reversed(DIRECTIONS):
