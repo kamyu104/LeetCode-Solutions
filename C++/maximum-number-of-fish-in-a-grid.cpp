@@ -8,8 +8,8 @@ public:
         static const vector<pair<int, int>> DIRECTIONS = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
         const auto& bfs = [&](int i, int j) {
             int result = grid[i][j];
-            vector<pair<int ,int>> q = {{i, j}};
             grid[i][j] = 0;
+            vector<pair<int ,int>> q = {{i, j}};
             while (!empty(q)) {
                 vector<pair<int, int>> new_q;
                 for (const auto& [i, j] : q) {
@@ -51,8 +51,8 @@ public:
         static const vector<pair<int, int>> DIRECTIONS = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
         const auto& dfs = [&](int i, int j) {
             int result = grid[i][j];
-            vector<pair<int ,int>> stk = {{i, j}};
             grid[i][j] = 0;
+            vector<pair<int ,int>> stk = {{i, j}};
             while (!empty(stk)) {
                 const auto [i, j] = stk.back(); stk.pop_back();
                 for (const auto& [di, dj] : DIRECTIONS) {
