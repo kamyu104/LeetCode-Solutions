@@ -8,9 +8,9 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        lookup = {x:i for i, x in enumerate(nums)}
-        nums.sort()
-        return len(nums)+sum(len(nums)-(i+1) for i in xrange(len(nums)-1) if lookup[nums[i]] > lookup[nums[i+1]])
+        idxs = range(len(nums))
+        idxs.sort(key=lambda x: nums[x])
+        return len(idxs)+sum(len(idxs)-(i+1) for i in xrange(len(idxs)-1) if idxs[i] > idxs[i+1])
 
 
 # Time:  O(nlogn)
