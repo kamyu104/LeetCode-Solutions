@@ -28,7 +28,7 @@ class Solution(object):
             d, x1, y1 = min((lookup[x1, y1], x1, y1) for x1, y1 in nodes if (x1, y1) in lookup)
             nodes.remove((x1, y1))
             if (x1, y1) == target:
-                return lookup[x1, y1]
+                return d
             for (x2, y2), c in adj[x1, y1].iteritems():
                 if  (x2, y2) not in lookup or lookup[x2, y2] > d+c:
                     lookup[x2, y2] = d+c
