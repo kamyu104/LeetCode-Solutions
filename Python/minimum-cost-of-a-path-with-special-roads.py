@@ -24,7 +24,6 @@ class Solution(object):
             for x2, y2 in nodes:
                 adj[x1, y1][x2, y2] = min(adj[x1, y1][x2, y2], abs(x2-x1)+abs(y2-y1))
         lookup = {start:0}
-        min_heap = [(0, start)]
         while True:
             d, x1, y1 = min((lookup[x1, y1], x1, y1) for x1, y1 in nodes if (x1, y1) in lookup)
             nodes.remove((x1, y1))
