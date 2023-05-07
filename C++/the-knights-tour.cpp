@@ -37,7 +37,6 @@ public:
                 return degree(a) < degree(b);
             });
             for (const auto& [nr, nc] : candidates) {  // warnsdorff's rule
-                
                 result[nr][nc] = i;
                 if (backtracking(nr, nc, i + 1)) {
                     return true;
