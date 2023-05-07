@@ -1,7 +1,7 @@
 // Time:  O(m * n)
 // Space: O(1)
 
-// backtracking, warnsdorff's rule
+// backtracking, greedy, warnsdorff's rule
 class Solution {
 public:
     vector<vector<int>> tourOfKnight(int m, int n, int r, int c) {
