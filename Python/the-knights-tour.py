@@ -1,5 +1,5 @@
 # Time:  O(8^(m * n - 1))
-# Space: O(m * n)
+# Space: O(1)
 
 # backtracking
 class Solution(object):
