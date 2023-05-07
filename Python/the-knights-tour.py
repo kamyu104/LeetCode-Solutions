@@ -1,4 +1,4 @@
-# Time:  O((m * n) * log(m * n))
+# Time:  O(m * n)
 # Space: O(1)
 
 # backtracking, warnsdorff's rule
