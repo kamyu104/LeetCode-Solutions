@@ -1,4 +1,4 @@
-# Time:  O(8^(m*n - 1))
+# Time:  O(8^(m * n - 1))
 # Space: O(m * n)
 
 # backtracking
