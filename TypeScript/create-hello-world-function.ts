@@ -2,7 +2,7 @@
 // Space: O(1)
 
 function createHelloWorld() {
-	return function(...args): string {
+    return function(...args): string {
         return "Hello World";
     };
 };
