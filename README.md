@@ -1770,7 +1770,7 @@
 2526 | [Find Consecutive Integers from a Data Stream](https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream/) | [C++](./C++/find-consecutive-integers-from-a-data-stream.cpp) [Python](./Python/find-consecutive-integers-from-a-data-stream.py) | _O(1)_ | _O(1)_ | Medium | | Array
 2590 | [Design a Todo List](https://leetcode.com/problems/design-a-todo-list/) | [C++](./C++/design-a-todo-list.cpp) [Python](./Python/design-a-todo-list.py) | ctor: _O(1)_<br>addTask: _O(l + logn)_<br>getAllTasks: _O(r)_<br>getTasksForTag: _O(r * c)_<br>completeTask: _O(l + logn)_ | _O(n * l)_ | Medium | 🔒 | BST, Sorted List
 2642 | [Design Graph With Shortest Path Calculator](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/) | [C++](./C++/design-graph-with-shortest-path-calculator.cpp) [Python](./Python/design-graph-with-shortest-path-calculator.py) | ctor: _O(\|V\| + \|E\|)_<br>addEdge: _O(1)_<br>shortestPath: _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | | `Dijkstra's Algorithm`
-2671 | [Frequency Tracker](https://leetcode.com/problems/frequency-tracker//) | [C++](./C++/frequency-tracker/.cpp) [Python](./Python/frequency-tracker/.py) | ctor: _O(1)_<br>add: _O(1)_<br>deleteOne: _O(1)_<br>hasFrequency: _O(1)_ | _O(min(n, r))_ | Medium | | Freq Table
+2671 | [Frequency Tracker](https://leetcode.com/problems/frequency-tracker/) | [C++](./C++/frequency-tracker.cpp) [Python](./Python/frequency-tracker.py) | ctor: _O(1)_<br>add: _O(1)_<br>deleteOne: _O(1)_<br>hasFrequency: _O(1)_ | _O(min(n, r))_ | Medium | | Freq Table
 
 <br/>
 <div align="right">
