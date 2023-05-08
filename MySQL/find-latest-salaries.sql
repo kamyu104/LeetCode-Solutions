@@ -9,4 +9,4 @@ SELECT DISTINCT
     department_id   
 FROM Salary
 GROUP BY emp_id
-ORDER BY emp_id;
+ORDER BY emp_id ASC;
