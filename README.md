@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2663%20%2F%202663-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2673%20%2F%202673-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -272,6 +272,7 @@
 2644 | [Find the Maximum Divisibility Score](https://leetcode.com/problems/find-the-maximum-divisibility-score/)| [C++](./C++/find-the-maximum-divisibility-score.cpp) [Python](./Python/find-the-maximum-divisibility-score.py)| _O(n * d)_ | _O(1)_ | Easy | | Brute force |
 2655 | [Find Maximal Uncovered Ranges](https://leetcode.com/problems/find-maximal-uncovered-ranges/) | [C++](./C++/find-maximal-uncovered-ranges.cpp) [Python](./Python/find-maximal-uncovered-ranges.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒, variant of [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Sort, Line Sweep
 2660 | [Determine the Winner of a Bowling Game](https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/) | [C++](./C++/determine-the-winner-of-a-bowling-game.cpp) [Python](./Python/determine-the-winner-of-a-bowling-game.py) | _O(n)_ | _O(1)_ | Medium | | Array
+2672 | [Number of Adjacent Elements With the Same Color](https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/) | [C++](./C++/number-of-adjacent-elements-with-the-same-color.cpp) [Python](./Python/number-of-adjacent-elements-with-the-same-color.py) | _O(n + q)_ | _O(n)_ | Medium | | Array
 
 <br/>
 <div align="right">
@@ -663,6 +664,7 @@
 2615 | [Sum of Distances](https://leetcode.com/problems/sum-of-distances/) | [C++](./C++/sum-of-distances.cpp) [Python](./Python/sum-of-distances.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Prefix Sum
 2657 | [Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/) | [C++](./C++/find-the-prefix-common-array-of-two-arrays.cpp) [Python](./Python/find-the-prefix-common-array-of-two-arrays.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
 2661 | [First Completely Painted Row or Column](https://leetcode.com/problems/first-completely-painted-row-or-column/) | [C++](./C++/first-completely-painted-row-or-column.cpp) [Python](./Python/first-completely-painted-row-or-column.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Hash Table
+2670 | [Find the Distinct Difference Array](https://leetcode.com/problems/find-the-distinct-difference-array/) | [C++](./C++/find-the-distinct-difference-array.cpp) [Python](./Python/find-the-distinct-difference-array.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Prefix Sum
 
 <br/>
 <div align="right">
@@ -1203,6 +1205,7 @@
 2056 | [Number of Valid Move Combinations On Chessboard](https://leetcode.com/problems/number-of-valid-move-combinations-on-chessboard/) | [C++](./C++/number-of-valid-move-combinations-on-chessboard.cpp) [Python](./Python/number-of-valid-move-combinations-on-chessboard.py) | _O(1)_ | _O(1)_      | Hard         | | |
 2094 | [Finding 3-Digit Even Numbers](https://leetcode.com/problems/finding-3-digit-even-numbers/) | [C++](./C++/finding-3-digit-even-numbers.cpp) [Python](./Python/finding-3-digit-even-numbers.py) | _O(n)_ | _O(1)_      | Easy         | | |
 2443 | [Sum of Number and Its Reverse](https://leetcode.com/problems/sum-of-number-and-its-reverse/) | [C++](./C++/sum-of-number-and-its-reverse.cpp) [Python](./Python/sum-of-number-and-its-reverse.py) | _O(n^(1/(2*log2(10))))_   | _O(log10(n)/2)_        | Medium         | | Brute Force, Backtracking
+2662 | [The Knight’s Tour](https://leetcode.com/problems/the-knights-tour/) | [C++](./C++/the-knights-tour.cpp) [Python](./Python/the-knights-tour.py) | _O(m * n)_   | _O(1)_        | Medium         | 🔒 | Backtracking, Greedy, `Warnsdorff's Rule`
 
 <br/>
 <div align="right">
@@ -1584,6 +1587,7 @@
 2611 | [Mice and Cheese](https://leetcode.com/problems/mice-and-cheese/) | [C++](./C++/mice-and-cheese.cpp) [Python](./Python/mice-and-cheese.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Quick Select
 2645 | [Minimum Additions to Make Valid String](https://leetcode.com/problems/minimum-additions-to-make-valid-string/) | [C++](./C++/minimum-additions-to-make-valid-string.cpp) [Python](./Python/minimum-additions-to-make-valid-string.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 2663 | [Lexicographically Smallest Beautiful String](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/) | [C++](./C++/lexicographically-smallest-beautiful-string.cpp) [Python](./Python/lexicographically-smallest-beautiful-string.py) | _O(n)_ | _O(1)_ | Hard | | Greedy
+2673 | [Make Costs of Paths Equal in a Binary Tree](https://leetcode.com/problems/make-costs-of-paths-equal-in-a-binary-tree/) | [C++](./C++/make-costs-of-paths-equal-in-a-binary-tree.cpp) [Python](./Python/make-costs-of-paths-equal-in-a-binary-tree.py) | _O(n)_ | _O(1)_ | Medium | | Tree, Greedy
 
 <br/>
 <div align="right">
@@ -1766,6 +1770,7 @@
 2526 | [Find Consecutive Integers from a Data Stream](https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream/) | [C++](./C++/find-consecutive-integers-from-a-data-stream.cpp) [Python](./Python/find-consecutive-integers-from-a-data-stream.py) | _O(1)_ | _O(1)_ | Medium | | Array
 2590 | [Design a Todo List](https://leetcode.com/problems/design-a-todo-list/) | [C++](./C++/design-a-todo-list.cpp) [Python](./Python/design-a-todo-list.py) | ctor: _O(1)_<br>addTask: _O(l + logn)_<br>getAllTasks: _O(r)_<br>getTasksForTag: _O(r * c)_<br>completeTask: _O(l + logn)_ | _O(n * l)_ | Medium | 🔒 | BST, Sorted List
 2642 | [Design Graph With Shortest Path Calculator](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/) | [C++](./C++/design-graph-with-shortest-path-calculator.cpp) [Python](./Python/design-graph-with-shortest-path-calculator.py) | ctor: _O(\|V\| + \|E\|)_<br>addEdge: _O(1)_<br>shortestPath: _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | | `Dijkstra's Algorithm`
+2671 | [Frequency Tracker](https://leetcode.com/problems/frequency-tracker//) | [C++](./C++/frequency-tracker/.cpp) [Python](./Python/frequency-tracker/.py) | ctor: _O(1)_<br>add: _O(1)_<br>deleteOne: _O(1)_<br>hasFrequency: _O(1)_ | _O(min(n, r))_ | Medium | | Freq Table
 
 <br/>
 <div align="right">
@@ -1817,7 +1822,10 @@
 2637 | [Promise Time Limit](https://leetcode.com/problems/promise-time-limit/) | [TypeScript](./TypeScript/promise-time-limit.ts) | _O(n)_ | _O(1)_       | Easy           | | Promise |
 2648 | [Generate Fibonacci Sequence](https://leetcode.com/problems/generate-fibonacci-sequence/) | [TypeScript](./TypeScript/generate-fibonacci-sequence.ts) | _O(1)_ | _O(1)_       | Easy           | | DP |
 2649 | [Nested Array Generator](https://leetcode.com/problems/nested-array-generator/) | [TypeScript](./TypeScript/nested-array-generator.ts) | _O(1)_ | _O(d)_       | Medium           | | DFS |
-2650 | [Design Cancellable Function](https://leetcode.com/problems/design-cancellable-function/) | [TypeScript](./TypeScript/design-cancellable-function.ts) | _O()_ | _O(1)_       | Hard           | | Promise |
+2650 | [Design Cancellable Function](https://leetcode.com/problems/design-cancellable-function/) | [TypeScript](./TypeScript/design-cancellable-function.ts) | _O(1)_ | _O(1)_       | Hard           | | Promise |
+2665 | [Counter II](https://leetcode.com/problems/counter-ii/) | [TypeScript](./TypeScript/counter-ii.ts) | ctor: _O(1)_<br>increment: _O(1)_<br>decrement: _O(1)_<br>reset: _O(1)_ | _O(1)_       | Easy           | | |
+2666 | [Allow One Function Call](https://leetcode.com/problems/allow-one-function-call/) | [TypeScript](./TypeScript/allow-one-function-call.ts) | _O(1)_ | _O(1)_       | Easy           | | |
+2667 | [Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/) | [TypeScript](./TypeScript/create-hello-world-function.ts) | _O(1)_ | _O(1)_       | Easy           | | |
 
 <br/>
 <div align="right">
@@ -2002,6 +2010,8 @@
 2480 | [Form a Chemical Bond](https://leetcode.com/problems/form-a-chemical-bond/) | [MySQL](./MySQL/form-a-chemical-bond.sql) | _O(n^2)_ | _O(n)_       | Easy           |🔒||
 2494 | [Merge Overlapping Events in the Same Hall](https://leetcode.com/problems/merge-overlapping-events-in-the-same-hall/) | [MySQL](./MySQL/merge-overlapping-events-in-the-same-hall.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 2504 | [Concatenate the Name and the Profession](https://leetcode.com/problems/concatenate-the-name-and-the-profession/) | [MySQL](./MySQL/concatenate-the-name-and-the-profession.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+2668 | [Find Latest Salaries](https://leetcode.com/problems/find-latest-salaries/) | [MySQL](./MySQL/find-latest-salaries.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+2669 | [Count Artist Occurrences On Spotify Ranking List](https://leetcode.com/problems/count-artist-occurrences-on-spotify-ranking-list/) | [MySQL](./MySQL/count-artist-occurrences-on-spotify-ranking-list.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
