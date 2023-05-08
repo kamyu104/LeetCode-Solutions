@@ -10,8 +10,7 @@ class Solution(object):
         :rtype: int
         """
         result = 0
-        while n != 1:
-            result += abs(cost[n-2]-cost[n-1])
-            cost[(n-2)//2] += max(cost[n-2], cost[n-1])
-            n -= 2
+        for i in reversed(xrange((n-1)//2)):
+            result += abs(cost[2*i+1]-cost[2*i+2])
+            cost[i] += max(cost[2*i+1], cost[2*i+2])
         return result
