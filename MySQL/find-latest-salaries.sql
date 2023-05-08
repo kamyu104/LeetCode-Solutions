@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-SELECT DISTINCT 
+SELECT 
     emp_id,
     firstname,
     lastname,
