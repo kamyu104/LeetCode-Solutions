@@ -1,29 +1,36 @@
 # Time:  O(1), amortized
 # Space: O(n)
 
-class Queue(object):
-    # initialize your data structure here.
+class MyQueue(object):
+
     def __init__(self):
         self.A, self.B = [], []
 
-    # @param x, an integer
-    # @return nothing
     def push(self, x):
+        """
+        :type x: int
+        :rtype: None
+        """
         self.A.append(x)
 
-    # @return an integer
     def pop(self):
+        """
+        :rtype: int
+        """
         self.peek()
         return self.B.pop()
 
-    # @return an integer
     def peek(self):
+        """
+        :rtype: int
+        """
         if not self.B:
             while self.A:
                 self.B.append(self.A.pop())
         return self.B[-1]
 
-    # @return an boolean
     def empty(self):
+        """
+        :rtype: bool
+        """
         return not self.A and not self.B
-
