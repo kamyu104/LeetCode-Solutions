@@ -1,5 +1,5 @@
-// Time:  O(m * n)
-// Space: O(m * n)
+// Time:  O(l * mlogm + m * n)
+// Space: O(l * m + m * n)
 
 // iterative dfs
 function jsonToMatrix(arr: any[]): (string | number | boolean | null)[][] {
@@ -43,8 +43,8 @@ function jsonToMatrix(arr: any[]): (string | number | boolean | null)[][] {
     return result;
 };
 
-// Time:  O(m * n)
-// Space: O(m * n)
+// Time:  O(l * mlogm + m * n)
+// Space: O(l * m + m * n)
 // dfs
 function jsonToMatrix2(arr: any[]): (string | number | boolean | null)[][] {
     let row = new Array(arr.length).fill(null).map(() => new Map());
