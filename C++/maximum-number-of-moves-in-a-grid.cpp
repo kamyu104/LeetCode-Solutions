@@ -67,7 +67,8 @@ public:
         for (int r = 0; r < size(grid); ++r) {
             q.emplace(r);
         }
-        for (int c = 0; c < size(grid[0]) - 1; ++c) {
+        int c = 0;
+        for (; c < size(grid[0]) - 1; ++c) {
             unordered_set<int> new_q;
             for (const auto& r : q) {
                 if (grid[r][c] < grid[r][c + 1]) {
@@ -82,9 +83,9 @@ public:
             }
             q = move(new_q);
             if (empty(q)) {
-                return c;
+                break;
             }
         }
-        return size(grid[0]) - 1;
+        return c;
     }
 };
