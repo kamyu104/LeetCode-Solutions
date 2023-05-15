@@ -6,7 +6,7 @@ function jsonToMatrix(arr: any[]): (string | number | boolean | null)[][] {
     const row = new Array(arr.length).fill(null).map(() => new Map());
     let keys_set = new Set<string>();
     arr.forEach((x, i) => {
-        function iter_dfs(u: any, lookup: Map<string, (string | number | boolean | null)>) {
+        const iter_dfs = (u: any, lookup: Map<string, (string | number | boolean | null)>) => {
             let stk = [[1, u, null]];
             let curr = []
             while (stk.length) {
