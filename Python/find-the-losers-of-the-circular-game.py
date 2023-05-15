@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# hash table
+# hash table, simulation
 class Solution(object):
     def circularGameLosers(self, n, k):
         """
