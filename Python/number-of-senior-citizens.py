@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-# array
+# string
 class Solution(object):
     def countSeniors(self, details):
         """
