@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2688%20%2F%202688-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2673%20%2F%202673-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -407,6 +407,7 @@
 2496 | [Maximum Value of a String in an Array](https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/) | [C++](./C++/maximum-value-of-a-string-in-an-array.cpp) [Python](./Python/maximum-value-of-a-string-in-an-array.py) | _O(n * l)_   | _O(1)_        | Easy         | | String
 2575 | [Find the Divisibility Array of a String](https://leetcode.com/problems/find-the-divisibility-array-of-a-string/)| [C++](./C++/find-the-divisibility-array-of-a-string.cpp) [Python](./Python/find-the-divisibility-array-of-a-string.py)| _O(n)_ | _O(1)_ | Medium | | Prefix Sum |
 2586 | [Count the Number of Vowel Strings in Range](https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/)| [C++](./C++/count-the-number-of-vowel-strings-in-range.cpp) [Python](./Python/count-the-number-of-vowel-strings-in-range.py)| _O(n)_ | _O(1)_ | Medium | | String |
+2678 | [Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens/)| [C++](./C++/number-of-senior-citizens.cpp) [Python](./Python/number-of-senior-citizens.py)| _O(n)_ | _O(1)_ | Easy | | String |
 
 <br/>
 <div align="right">
@@ -434,7 +435,6 @@
 2130 | [Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | [C++](./C++/maximum-twin-sum-of-a-linked-list.cpp) [Python](./Python/maximum-twin-sum-of-a-linked-list.py) | _O(n)_  | _O(1)_         | Medium           | | Two Pointers
 2181 | [Merge Nodes in Between Zeros](https://leetcode.com/problems/merge-nodes-in-between-zeros/) | [C++](./C++/merge-nodes-in-between-zeros.cpp) [Python](./Python/merge-nodes-in-between-zeros.py) | _O(n)_  | _O(1)_         | Medium           | | Two Pointers
 2487 | [Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/) | [C++](./C++/remove-nodes-from-linked-list.cpp) [Python](./Python/remove-nodes-from-linked-list.py) | _O(n)_  | _O(n)_         | Medium           | | Mono Stack
-2674 | [Split a Circular Linked List](https://leetcode.com/problems/split-a-circular-linked-list/) | [C++](./C++/split-a-circular-linked-list.cpp) [Python](./Python/split-a-circular-linked-list.py) | _O(n)_  | _O(1)_         | Medium           |🔒| Two Pointers, Slow and Fast Pointers
 
 <br/>
 <div align="right">
@@ -894,6 +894,7 @@
 2512 | [Reward Top K Students](https://leetcode.com/problems/reward-top-k-students/) | [C++](./C++/reward-top-k-students.cpp) [Python](./Python/reward-top-k-students.py) | _O(pf * l + nf * l + n * l + klogk)_   | _O(pf * l + nf * l + n)_        | Medium         | | Partial Sort, Quick Select
 2545 | [Sort the Students by Their Kth Score](https://leetcode.com/problems/sort-the-students-by-their-kth-score/) | [C++](./C++/sort-the-students-by-their-kth-score.cpp) [Python](./Python/sort-the-students-by-their-kth-score.py) | _O(mlogm)_   | _O(1)_        | Medium         | | Sort
 2659 | [Make Array Empty](https://leetcode.com/problems/make-array-empty/) | [C++](./C++/make-array-empty.cpp) [Python](./Python/make-array-empty.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Sort, BIT, Fenwick Tree
+2679 | [Sum in a Matrix](https://leetcode.com/problems/sum-in-a-matrix/) | [C++](./C++/sum-in-a-matrix.cpp) [Python](./Python/sum-in-a-matrix.py) | _O(m * nlogn)_   | _O(1)_        | Medium         | | Sort
 
 <br/>
 <div align="right">
@@ -1388,6 +1389,7 @@
 2597 | [The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/) | [C++](./C++/the-number-of-beautiful-subsets.cpp) [Python](./Python/the-number-of-beautiful-subsets.py) | _O(n)_   | _O(n)_        | Medium         | | Combinatorics, DP
 2638 | [Count the Number of K-Free Subsets](https://leetcode.com/problems/count-the-number-of-k-free-subsets/) | [C++](./C++/count-the-number-of-k-free-subsets.cpp) [Python](./Python/count-the-number-of-k-free-subsets.py) | _O(n)_   | _O(n)_        | Medium         | 🔒, variant of [The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/) | Combinatorics, DP
 2646 | [Minimize the Total Price of the Trips](https://leetcode.com/problems/minimize-the-total-price-of-the-trips/) | [C++](./C++/minimize-the-total-price-of-the-trips.cpp) [Python](./Python/minimize-the-total-price-of-the-trips.py) | _O(t * n)_   | _O(n)_        | Hard         | | DFS, Tree DP
+2681 | [Power of Heroes](https://leetcode.com/problems/power-of-heroes/) | [C++](./C++/power-of-heroes.cpp) [Python](./Python/power-of-heroes.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Sort, Combinatorics, DP
 
 <br/>
 <div align="right">
@@ -1589,6 +1591,7 @@
 2645 | [Minimum Additions to Make Valid String](https://leetcode.com/problems/minimum-additions-to-make-valid-string/) | [C++](./C++/minimum-additions-to-make-valid-string.cpp) [Python](./Python/minimum-additions-to-make-valid-string.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 2663 | [Lexicographically Smallest Beautiful String](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/) | [C++](./C++/lexicographically-smallest-beautiful-string.cpp) [Python](./Python/lexicographically-smallest-beautiful-string.py) | _O(n)_ | _O(1)_ | Hard | | Greedy
 2673 | [Make Costs of Paths Equal in a Binary Tree](https://leetcode.com/problems/make-costs-of-paths-equal-in-a-binary-tree/) | [C++](./C++/make-costs-of-paths-equal-in-a-binary-tree.cpp) [Python](./Python/make-costs-of-paths-equal-in-a-binary-tree.py) | _O(n)_ | _O(1)_ | Medium | | Tree, Greedy
+2680 | [Maximum OR](https://leetcode.com/problems/maximum-or/) | [C++](./C++/maximum-or.cpp) [Python](./Python/maximum-or.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum, Greedy
 
 <br/>
 <div align="right">
@@ -1827,9 +1830,6 @@
 2665 | [Counter II](https://leetcode.com/problems/counter-ii/) | [TypeScript](./TypeScript/counter-ii.ts) | ctor: _O(1)_<br>increment: _O(1)_<br>decrement: _O(1)_<br>reset: _O(1)_ | _O(1)_       | Easy           | | |
 2666 | [Allow One Function Call](https://leetcode.com/problems/allow-one-function-call/) | [TypeScript](./TypeScript/allow-one-function-call.ts) | _O(1)_ | _O(1)_       | Easy           | | |
 2667 | [Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/) | [TypeScript](./TypeScript/create-hello-world-function.ts) | _O(1)_ | _O(1)_       | Easy           | | |
-2675 | [Array of Objects to Matrix](https://leetcode.com/problems/array-of-objects-to-matrix/) | [TypeScript](./TypeScript/array-of-objects-to-matrix.ts) | _O(l * mlogm + m * n)_ | _O(l * m + m * n)_       | Medium           | | DFS |
-2676 | [Throttle](https://leetcode.com/problems/throttle/) | [TypeScript](./TypeScript/throttle.ts) | _O(1)_ | _O(1)_       | Medium           | | |
-2677 | [Chunk Array](https://leetcode.com/problems/chunk-array/) | [TypeScript](./TypeScript/chunk-array.ts) | _O(n)_ | _O(1)_       | Easy           | | |
 
 <br/>
 <div align="right">
