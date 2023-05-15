@@ -71,5 +71,7 @@ class Solution3(object):
                     new_q.add(r+1)
             q = new_q
             if not q:
-                return c
-        return len(grid[0])-1
+                break
+        else:
+            c = len(grid[0])-1
+        return c
