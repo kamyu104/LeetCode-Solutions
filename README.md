@@ -711,7 +711,7 @@
 2638 | [Count the Number of K-Free Subsets](https://leetcode.com/problems/count-the-number-of-k-free-subsets/) | [C++](./C++/count-the-number-of-k-free-subsets.cpp) [Python](./Python/count-the-number-of-k-free-subsets.py) | _O(n)_   | _O(n)_        | Medium         | 🔒, variant of [The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/) | Combinatorics, DP
 2646 | [Minimize the Total Price of the Trips](https://leetcode.com/problems/minimize-the-total-price-of-the-trips/) | [C++](./C++/minimize-the-total-price-of-the-trips.cpp) [Python](./Python/minimize-the-total-price-of-the-trips.py) | _O(t * n)_   | _O(n)_        | Hard         | | DFS, Tree DP
 2681 | [Power of Heroes](https://leetcode.com/problems/power-of-heroes/) | [C++](./C++/power-of-heroes.cpp) [Python](./Python/power-of-heroes.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Sort, Combinatorics, DP
-2684 | [Maximum Number of Moves in a Grid](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/) | [C++](./C++/maximum-number-of-moves-in-a-grid.cpp) [Python](./Python/maximum-number-of-moves-in-a-grid.py) | _O(m * n)_   | _O(m)_        | Medium         | | DP
+2684 | [Maximum Number of Moves in a Grid](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/) | [C++](./C++/maximum-number-of-moves-in-a-grid.cpp) [Python](./Python/maximum-number-of-moves-in-a-grid.py) | _O(m * n)_   | _O(m)_        | Medium         | | DP, BFS
 
 <br/>
 <div align="right">
