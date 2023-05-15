@@ -273,6 +273,7 @@
 2655 | [Find Maximal Uncovered Ranges](https://leetcode.com/problems/find-maximal-uncovered-ranges/) | [C++](./C++/find-maximal-uncovered-ranges.cpp) [Python](./Python/find-maximal-uncovered-ranges.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒, variant of [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Sort, Line Sweep
 2660 | [Determine the Winner of a Bowling Game](https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/) | [C++](./C++/determine-the-winner-of-a-bowling-game.cpp) [Python](./Python/determine-the-winner-of-a-bowling-game.py) | _O(n)_ | _O(1)_ | Medium | | Array
 2672 | [Number of Adjacent Elements With the Same Color](https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/) | [C++](./C++/number-of-adjacent-elements-with-the-same-color.cpp) [Python](./Python/number-of-adjacent-elements-with-the-same-color.py) | _O(n + q)_ | _O(n)_ | Medium | | Array
+2683 | [Neighboring Bitwise XOR](https://leetcode.com/problems/neighboring-bitwise-xor/) | [C++](./C++/neighboring-bitwise-xor.cpp) [Python](./Python/neighboring-bitwise-xor.py) | _O(n)_ | _O(1)_ | Medium | | Array
 
 <br/>
 <div align="right">
@@ -667,6 +668,7 @@
 2657 | [Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/) | [C++](./C++/find-the-prefix-common-array-of-two-arrays.cpp) [Python](./Python/find-the-prefix-common-array-of-two-arrays.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
 2661 | [First Completely Painted Row or Column](https://leetcode.com/problems/first-completely-painted-row-or-column/) | [C++](./C++/first-completely-painted-row-or-column.cpp) [Python](./Python/first-completely-painted-row-or-column.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Hash Table
 2670 | [Find the Distinct Difference Array](https://leetcode.com/problems/find-the-distinct-difference-array/) | [C++](./C++/find-the-distinct-difference-array.cpp) [Python](./Python/find-the-distinct-difference-array.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Prefix Sum
+2682 | [Find the Losers of the Circular Game](https://leetcode.com/problems/find-the-losers-of-the-circular-game/) | [C++](./C++/find-the-losers-of-the-circular-game.cpp) [Python](./Python/find-the-losers-of-the-circular-game.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table
 
 <br/>
 <div align="right">
@@ -1135,6 +1137,7 @@
 2617 | [Minimum Number of Visited Cells in a Grid](https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/)  | [C++](./C++/minimum-number-of-visited-cells-in-a-grid.cpp) [Python](./Python/minimum-number-of-visited-cells-in-a-grid.py) | _O(m * n)_ | _O(m * n)_| Hard           | variant of [Minimum Reverse Operations](https://leetcode.com/problems/minimum-reverse-operations/) | BFS, Union Find, BST, Sorted List | 
 2641 | [Cousins in Binary Tree II](https://leetcode.com/problems/cousins-in-binary-tree-ii/)  | [C++](./C++/cousins-in-binary-tree-ii.cpp) [Python](./Python/cousins-in-binary-tree-ii.py) | _O(n)_ | _O(w)_| Medium           || BFS | 
 2658 | [Maximum Number of Fish in a Grid](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/)  | [C++](./C++/maximum-number-of-fish-in-a-grid.cpp) [Python](./Python/maximum-number-of-fish-in-a-grid.py) | _O(m * n)_ | _O(m + n)_| Medium           || BFS, DFS | 
+2685 | [Count the Number of Complete Components](https://leetcode.com/problems/count-the-number-of-complete-components/)  | [C++](./C++/count-the-number-of-complete-components.cpp) [Python](./Python/count-the-number-of-complete-components.py) | _O(n)_ | _O(n)_| Medium           || BFS | 
 
 <br/>
 <div align="right">
@@ -1391,6 +1394,7 @@
 2638 | [Count the Number of K-Free Subsets](https://leetcode.com/problems/count-the-number-of-k-free-subsets/) | [C++](./C++/count-the-number-of-k-free-subsets.cpp) [Python](./Python/count-the-number-of-k-free-subsets.py) | _O(n)_   | _O(n)_        | Medium         | 🔒, variant of [The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/) | Combinatorics, DP
 2646 | [Minimize the Total Price of the Trips](https://leetcode.com/problems/minimize-the-total-price-of-the-trips/) | [C++](./C++/minimize-the-total-price-of-the-trips.cpp) [Python](./Python/minimize-the-total-price-of-the-trips.py) | _O(t * n)_   | _O(n)_        | Hard         | | DFS, Tree DP
 2681 | [Power of Heroes](https://leetcode.com/problems/power-of-heroes/) | [C++](./C++/power-of-heroes.cpp) [Python](./Python/power-of-heroes.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Sort, Combinatorics, DP
+2684 | [Maximum Number of Moves in a Grid](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/) | [C++](./C++/maximum-number-of-moves-in-a-grid.cpp) [Python](./Python/maximum-number-of-moves-in-a-grid.py) | _O(m * n)_   | _O(m)_        | Medium         | | DP
 
 <br/>
 <div align="right">
