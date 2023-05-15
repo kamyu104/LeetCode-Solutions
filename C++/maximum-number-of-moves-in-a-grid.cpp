@@ -56,3 +56,35 @@ public:
         return *max_element(cbegin(dp), cend(dp));
     }
 };
+
+// Time:  O(m * n)
+// Space: O(m)
+// bfs
+class Solution3 {
+public:
+    int maxMoves(vector<vector<int>>& grid) {
+        unordered_set<int> q;
+        for (int r = 0; r < size(grid); ++r) {
+            q.emplace(r);
+        }
+        for (int c = 0; c < size(grid[0]) - 1; ++c) {
+            unordered_set<int> new_q;
+            for (const auto& r : q) {
+                if (grid[r][c] < grid[r][c + 1]) {
+                    new_q.emplace(r);
+                }
+                if (r - 1 >= 0 && grid[r][c] < grid[r - 1][c + 1]) {
+                    new_q.emplace(r - 1);
+                }
+                if (r + 1 < size(grid) && grid[r][c] < grid[r + 1][c + 1]) {
+                    new_q.emplace(r + 1);
+                }
+            }
+            q = move(new_q);
+            if (empty(q)) {
+                return c;
+            }
+        }
+        return size(grid[0]) - 1;
+    }
+};
