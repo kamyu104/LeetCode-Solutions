@@ -1,28 +1,26 @@
 # Time:  O(m * n)
 # Space: O(m)
 
-# dp
+# bfs
 class Solution(object):
     def maxMoves(self, grid):
         """
         :type grid: List[List[int]]
         :rtype: int
         """
-        dp = [True]*len(grid)
-        result = 0
+        c = -1
+        q = set(range(len(grid)))
         for c in xrange(len(grid[0])-1):
-            new_dp = [False]*len(grid)
-            for r in xrange(len(grid)):
-                if not dp[r]:
-                    continue
+            new_q = set()
+            for r in q:
                 if grid[r][c] < grid[r][c+1]:
-                    new_dp[r] = True
+                    new_q.add(r)
                 if r-1 >= 0 and grid[r][c] < grid[r-1][c+1]:
-                    new_dp[r-1] = True
+                    new_q.add(r-1)
                 if r+1 < len(grid) and grid[r][c] < grid[r+1][c+1]:
-                    new_dp[r+1] = True
-            dp = new_dp
-            if not sum(dp):
+                    new_q.add(r+1)
+            q = new_q
+            if not q:
                 return c
         return len(grid[0])-1
 
