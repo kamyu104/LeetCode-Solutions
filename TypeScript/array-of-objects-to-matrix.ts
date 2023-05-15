@@ -33,12 +33,11 @@ function jsonToMatrix(arr: any[]): (string | number | boolean | null)[][] {
         Object.keys(row[i]).forEach(x => keys_set.add(x));
     });
     
-    let keys = Array.from(keys_set).sort();
-    const result = [keys];
+    const result = [Array.from(keys_set).sort()];
     for (let i = 0; i < row.length; ++i) {
         result.push([])
-        for (let j = 0; j < keys.length; ++j) {
-            result[i+1].push(row[i][keys[j]] !== undefined ? row[i][keys[j]] : '');
+        for (let j = 0; j < result[0].length; ++j) {
+            result[i+1].push(row[i][result[0][j]] !== undefined ? row[i][result[0][j]] : '');
         }
     }
     return result;
@@ -67,12 +66,11 @@ function jsonToMatrix2(arr: any[]): (string | number | boolean | null)[][] {
         Object.keys(row[i]).forEach(x => keys_set.add(x));
     });
     
-    let keys = Array.from(keys_set).sort();
-    const result = [keys];
+    const result = [Array.from(keys_set).sort()];
     for (let i = 0; i < row.length; ++i) {
         result.push([])
-        for (let j = 0; j < keys.length; ++j) {
-            result[i+1].push(row[i][keys[j]] !== undefined ? row[i][keys[j]] : '');
+        for (let j = 0; j < result[0].length; ++j) {
+            result[i+1].push(row[i][result[0][j]] !== undefined ? row[i][result[0][j]] : '');
         }
     }
     return result;
