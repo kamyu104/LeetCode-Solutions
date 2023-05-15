@@ -2024,6 +2024,9 @@
 2504 | [Concatenate the Name and the Profession](https://leetcode.com/problems/concatenate-the-name-and-the-profession/) | [MySQL](./MySQL/concatenate-the-name-and-the-profession.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 2668 | [Find Latest Salaries](https://leetcode.com/problems/find-latest-salaries/) | [MySQL](./MySQL/find-latest-salaries.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 2669 | [Count Artist Occurrences On Spotify Ranking List](https://leetcode.com/problems/count-artist-occurrences-on-spotify-ranking-list/) | [MySQL](./MySQL/count-artist-occurrences-on-spotify-ranking-list.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+2686 | [Immediate Food Delivery III](https://leetcode.com/problems/immediate-food-delivery-iii/) | [MySQL](./MySQL/immediate-food-delivery-iii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2687 | [Bikes Last Time Used](https://leetcode.com/problems/bikes-last-time-used/) | [MySQL](./MySQL/bikes-last-time-used.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+2688 | [Find Active Users](https://leetcode.com/problems/find-active-users/) | [MySQL](./MySQL/find-active-users.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
