@@ -6,7 +6,8 @@ class Solution {
 public:
     int maxMoves(vector<vector<int>>& grid) {
         vector<bool> dp(size(grid), true);
-        for (int c = 0; c < size(grid[0]) - 1; ++c) {
+        int c = 0;
+        for (; c < size(grid[0]) - 1; ++c) {
             vector<bool> new_dp(size(grid));
             for (int r = 0; r < size(grid); ++r) {
                 if (!dp[r]) {
@@ -24,10 +25,10 @@ public:
             }
             dp = move(new_dp);
             if (!accumulate(cbegin(dp), cend(dp), 0)) {
-                return c;
+                break;
             }
         }
-        return size(grid[0]) - 1;
+        return c;
     }
 };
 
