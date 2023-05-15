@@ -15,7 +15,7 @@ public:
             if (lookup[u]) {
                 return false;
             }
-            int e_cnt = 0, v_cnt = 0;
+            int v_cnt = 0, e_cnt = 0;
             lookup[u] = true;
             vector<int> q = {u};
             while (!empty(q)) {
