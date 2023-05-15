@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2673%20%2F%202673-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2688%20%2F%202688-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -435,6 +435,7 @@
 2130 | [Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | [C++](./C++/maximum-twin-sum-of-a-linked-list.cpp) [Python](./Python/maximum-twin-sum-of-a-linked-list.py) | _O(n)_  | _O(1)_         | Medium           | | Two Pointers
 2181 | [Merge Nodes in Between Zeros](https://leetcode.com/problems/merge-nodes-in-between-zeros/) | [C++](./C++/merge-nodes-in-between-zeros.cpp) [Python](./Python/merge-nodes-in-between-zeros.py) | _O(n)_  | _O(1)_         | Medium           | | Two Pointers
 2487 | [Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/) | [C++](./C++/remove-nodes-from-linked-list.cpp) [Python](./Python/remove-nodes-from-linked-list.py) | _O(n)_  | _O(n)_         | Medium           | | Mono Stack
+2674 | [Split a Circular Linked List](https://leetcode.com/problems/split-a-circular-linked-list/) | [C++](./C++/split-a-circular-linked-list.cpp) [Python](./Python/split-a-circular-linked-list.py) | _O(n)_  | _O(1)_         | Medium           |🔒| Two Pointers, Slow and Fast Pointers
 
 <br/>
 <div align="right">
@@ -1830,6 +1831,9 @@
 2665 | [Counter II](https://leetcode.com/problems/counter-ii/) | [TypeScript](./TypeScript/counter-ii.ts) | ctor: _O(1)_<br>increment: _O(1)_<br>decrement: _O(1)_<br>reset: _O(1)_ | _O(1)_       | Easy           | | |
 2666 | [Allow One Function Call](https://leetcode.com/problems/allow-one-function-call/) | [TypeScript](./TypeScript/allow-one-function-call.ts) | _O(1)_ | _O(1)_       | Easy           | | |
 2667 | [Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/) | [TypeScript](./TypeScript/create-hello-world-function.ts) | _O(1)_ | _O(1)_       | Easy           | | |
+2675 | [Array of Objects to Matrix](https://leetcode.com/problems/array-of-objects-to-matrix/) | [TypeScript](./TypeScript/array-of-objects-to-matrix.ts) | _O(l * mlogm + m * n)_ | _O(l * m + m * n)_       | Medium           | | DFS |
+2676 | [Throttle](https://leetcode.com/problems/throttle/) | [TypeScript](./TypeScript/throttle.ts) | _O(1)_ | _O(1)_       | Medium           | | |
+2677 | [Chunk Array](https://leetcode.com/problems/chunk-array/) | [TypeScript](./TypeScript/chunk-array.ts) | _O(n)_ | _O(1)_       | Easy           | | |
 
 <br/>
 <div align="right">
