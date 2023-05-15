@@ -23,8 +23,10 @@ class Solution(object):
                     new_dp[r+1] = True
             dp = new_dp
             if not sum(dp):
-                return c
-        return len(grid[0])-1
+                break
+        else:
+            c = len(grid[0])-1
+        return c
 
 
 # Time:  O(m * n)
