@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// hash table
+// hash table, simulation
 class Solution {
 public:
     vector<int> circularGameLosers(int n, int k) {
