@@ -51,20 +51,19 @@ function jsonToMatrix2(arr: any[]): (string | number | boolean | null)[][] {
     const row = new Array(arr.length).fill(null).map(() => new Map());
     let keys_set = new Set<string>();
     arr.forEach((x, i) => {
-        const lookup = row[i];
-        const dfs = (u: any, curr: string[]) => {
+        const dfs = (u: any, curr: string[], lookup: Map<string, (string | number | boolean | null)>) => {
             for (const v in u) {
                 curr.push(v);
                 if (!(u[v] !== null && (typeof u[v] === 'object' || Array.isArray(u[v])))) {
                     lookup[curr.join('.')] = u[v];
                 } else {
-                    dfs(u[v], curr);
+                    dfs(u[v], curr, lookup);
                 }
                 curr.pop();
             }
         };
 
-        dfs(x, []);
+        dfs(x, [], row[i]);
         Object.keys(row[i]).forEach(x => keys_set.add(x));
     });
     
