@@ -361,7 +361,6 @@
 2657 | [Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/) | [C++](./C++/find-the-prefix-common-array-of-two-arrays.cpp) [Python](./Python/find-the-prefix-common-array-of-two-arrays.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
 2661 | [First Completely Painted Row or Column](https://leetcode.com/problems/first-completely-painted-row-or-column/) | [C++](./C++/first-completely-painted-row-or-column.cpp) [Python](./Python/first-completely-painted-row-or-column.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Hash Table
 2670 | [Find the Distinct Difference Array](https://leetcode.com/problems/find-the-distinct-difference-array/) | [C++](./C++/find-the-distinct-difference-array.cpp) [Python](./Python/find-the-distinct-difference-array.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Prefix Sum
-2682 | [Find the Losers of the Circular Game](https://leetcode.com/problems/find-the-losers-of-the-circular-game/) | [C++](./C++/find-the-losers-of-the-circular-game.cpp) [Python](./Python/find-the-losers-of-the-circular-game.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table
 
 <br/>
 <div align="right">
@@ -864,6 +863,7 @@
 2534 | [Time Taken to Cross the Door](https://leetcode.com/problems/time-taken-to-cross-the-door/) | [C++](./C++/time-taken-to-cross-the-door.cpp) [Python](./Python/time-taken-to-cross-the-door.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Queue, Simulation |
 2593 | [Find Score of an Array After Marking All Elements](https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/) | [C++](./C++/find-score-of-an-array-after-marking-all-elements.cpp) [Python](./Python/find-score-of-an-array-after-marking-all-elements.py) | _O(nlogn)_ | _O(n)_ | Medium | | Simulation, Sort, Hash Table |
 2596 | [Check Knight Tour Configuration](https://leetcode.com/problems/check-knight-tour-configuration/) | [C++](./C++/check-knight-tour-configuration.cpp) [Python](./Python/check-knight-tour-configuration.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Simulation, Hash Table |
+2682 | [Find the Losers of the Circular Game](https://leetcode.com/problems/find-the-losers-of-the-circular-game/) | [C++](./C++/find-the-losers-of-the-circular-game.cpp) [Python](./Python/find-the-losers-of-the-circular-game.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Simulation
 
 <br/>
 <div align="right">
