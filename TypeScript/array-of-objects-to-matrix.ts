@@ -19,7 +19,7 @@ function jsonToMatrix(arr: any[]): (string | number | boolean | null)[][] {
                 } else if (step === 2) {
                     curr.push(v);
                     if (!(u[v] !== null && (typeof u[v] === 'object' || Array.isArray(u[v])))) {
-                        lookup[curr.join('.')] = u[v];
+                        lookup.set(curr.join('.'), u[v]);
                     } else {
                         stk.push([1, u[v], null])
                     }
@@ -30,14 +30,16 @@ function jsonToMatrix(arr: any[]): (string | number | boolean | null)[][] {
         }
 
         iter_dfs(x, row[i]);
-        Object.keys(row[i]).forEach(x => keys_set.add(x));
+        for (const [k, _] of row[i].entries()) {
+            keys_set.add(k);
+        }
     });
     
     let result = [Array.from(keys_set).sort()];
     for (let i = 0; i < row.length; ++i) {
         result.push([])
         for (let j = 0; j < result[0].length; ++j) {
-            result[i+1].push(row[i][result[0][j]] !== undefined ? row[i][result[0][j]] : '');
+            result[i+1].push(row[i].has(result[0][j]) ? row[i].get(result[0][j]) : '');
         }
     }
     return result;
@@ -54,7 +56,7 @@ function jsonToMatrix2(arr: any[]): (string | number | boolean | null)[][] {
             for (const v in u) {
                 curr.push(v);
                 if (!(u[v] !== null && (typeof u[v] === 'object' || Array.isArray(u[v])))) {
-                    lookup[curr.join('.')] = u[v];
+                    lookup.set(curr.join('.'), u[v]);
                 } else {
                     dfs(u[v], curr, lookup);
                 }
@@ -63,14 +65,16 @@ function jsonToMatrix2(arr: any[]): (string | number | boolean | null)[][] {
         };
 
         dfs(x, [], row[i]);
-        Object.keys(row[i]).forEach(x => keys_set.add(x));
+                for (const [k, _] of row[i].entries()) {
+            keys_set.add(k);
+        }
     });
     
     let result = [Array.from(keys_set).sort()];
     for (let i = 0; i < row.length; ++i) {
         result.push([])
         for (let j = 0; j < result[0].length; ++j) {
-            result[i+1].push(row[i][result[0][j]] !== undefined ? row[i][result[0][j]] : '');
+            result[i+1].push(row[i].has(result[0][j]) ? row[i].get(result[0][j]) : '');
         }
     }
     return result;
