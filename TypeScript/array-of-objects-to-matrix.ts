@@ -3,7 +3,7 @@
 
 // iterative dfs
 function jsonToMatrix(arr: any[]): (string | number | boolean | null)[][] {
-    const row = new Array(arr.length).fill(null).map(() => new Map());
+    let row = new Array(arr.length).fill(null).map(() => new Map());
     let keys_set = new Set<string>();
     arr.forEach((x, i) => {
         const iter_dfs = (u: any, lookup: Map<string, (string | number | boolean | null)>) => {
@@ -33,7 +33,7 @@ function jsonToMatrix(arr: any[]): (string | number | boolean | null)[][] {
         Object.keys(row[i]).forEach(x => keys_set.add(x));
     });
     
-    const result = [Array.from(keys_set).sort()];
+    let result = [Array.from(keys_set).sort()];
     for (let i = 0; i < row.length; ++i) {
         result.push([])
         for (let j = 0; j < result[0].length; ++j) {
@@ -47,7 +47,7 @@ function jsonToMatrix(arr: any[]): (string | number | boolean | null)[][] {
 // Space: O(m * n)
 // dfs
 function jsonToMatrix2(arr: any[]): (string | number | boolean | null)[][] {
-    const row = new Array(arr.length).fill(null).map(() => new Map());
+    let row = new Array(arr.length).fill(null).map(() => new Map());
     let keys_set = new Set<string>();
     arr.forEach((x, i) => {
         const dfs = (u: any, curr: string[], lookup: Map<string, (string | number | boolean | null)>) => {
@@ -66,7 +66,7 @@ function jsonToMatrix2(arr: any[]): (string | number | boolean | null)[][] {
         Object.keys(row[i]).forEach(x => keys_set.add(x));
     });
     
-    const result = [Array.from(keys_set).sort()];
+    let result = [Array.from(keys_set).sort()];
     for (let i = 0; i < row.length; ++i) {
         result.push([])
         for (let j = 0; j < result[0].length; ++j) {
