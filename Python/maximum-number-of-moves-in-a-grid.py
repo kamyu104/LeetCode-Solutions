@@ -22,7 +22,7 @@ class Solution(object):
                 if r+1 < len(grid) and grid[r][c] < grid[r+1][c+1]:
                     new_dp[r+1] = True
             dp = new_dp
-            if not any(dp):
+            if not sum(dp):
                 return c
         return len(grid[0])-1
 
