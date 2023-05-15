@@ -65,7 +65,7 @@ function jsonToMatrix2(arr: any[]): (string | number | boolean | null)[][] {
         };
 
         dfs(x, [], row[i]);
-                for (const [k, _] of row[i].entries()) {
+        for (const [k, _] of row[i].entries()) {
             keys_set.add(k);
         }
     });
