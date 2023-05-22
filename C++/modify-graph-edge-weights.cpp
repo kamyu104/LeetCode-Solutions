@@ -20,7 +20,7 @@ public:
             min_heap.emplace(0, start);
             while (!empty(min_heap)) {
                 const auto [curr, u] = min_heap.top(); min_heap.pop();
-                if (best[u] < curr) {
+                if (curr > best[u]) {
                     continue;
                 }
                 for (auto [v, w] : adj[u]) {
