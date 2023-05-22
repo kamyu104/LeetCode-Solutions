@@ -23,14 +23,14 @@ var makeMutations = (obj, lookup) => {
 };
 
 class ImmutableHelper {
-    obj: InputObj;
+    #obj: InputObj;
     constructor(obj: InputObj) {
-        this.obj = obj;
+        this.#obj = obj;
     }
     
     produce(mutator: (obj: InputObj) => void) {
         var lookup = {};
-        mutator(makeMutations(this.obj, lookup));
+        mutator(makeMutations(this.#obj, lookup));
         return lookup;
     }
 }
