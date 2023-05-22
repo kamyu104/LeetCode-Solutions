@@ -8,6 +8,7 @@ type Subscription = {
     unsubscribe: () => void
 }
 
+// ordered set
 class EventEmitter {
     #lookup: Map<string, Set<Callback>>;
     constructor() {
