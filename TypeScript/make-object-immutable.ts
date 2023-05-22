@@ -9,7 +9,7 @@ const forbiddenMethods = new Set(["pop", "push", "shift", "unshift", "splice", "
 function makeImmutable(obj: Obj): Obj {
     return new Proxy(obj, {
         set(target, prop) {
-            if (Array.isArray(target) && typeof prop === 'string') {
+            if (Array.isArray(target) && typeof prop === "string") {
                 if (Number(prop) !== undefined) {
                     throw `Error Modifying Index: ${prop}`;
                 }
