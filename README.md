@@ -964,7 +964,7 @@
 2691 | [Immutability Helper](https://leetcode.com/problems/immutability-helper/) | [TypeScript](./TypeScript/immutability-helper.ts) | _O(1)_ | _O(1)_       | Hard           | 🔒 | Proxy |
 2692 | [Make Object Immutable](https://leetcode.com/problems/make-object-immutable/) | [TypeScript](./TypeScript/make-object-immutable.ts) | _O(1)_ | _O(1)_       | Medium           | 🔒 | Proxy |
 2693 | [Call Function with Custom Context](https://leetcode.com/problems/call-function-with-custom-context/) | [TypeScript](./TypeScript/call-function-with-custom-context.ts) | _O(1)_ | _O(1)_       | Medium           | | Symbol |
-2694 | [Event Emitter](https://leetcode.com/problems/event-emitter/) | [TypeScript](./TypeScript/event-emitter.ts) | subscribe: _O(1)_<br>unsubscribe: _O(1)_<br>emit: _O(n)_ | _O(n)_       | Medium           | | |
+2694 | [Event Emitter](https://leetcode.com/problems/event-emitter/) | [TypeScript](./TypeScript/event-emitter.ts) | subscribe: _O(1)_<br>unsubscribe: _O(1)_<br>emit: _O(n)_ | _O(n)_       | Medium           | | Ordered Set |
 2695 | [Array Wrapper](https://leetcode.com/problems/array-wrapper/) | [TypeScript](./TypeScript/array-wrapper.ts) | valueOf: _O(n)_<br>toString: _O(n)_ | _O(1)_       | Easy           | | |
 
 <br/>
