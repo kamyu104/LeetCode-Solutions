@@ -4,7 +4,7 @@
 // proxy
 type InputObj = Record<any, any> | Array<any>;
 
-var collectMutations = (obj, lookup) => {
+var makeMutations = (obj, lookup) => {
     return new Proxy(obj, {
         set(_, prop, value) {
             lookup[prop] = value;
@@ -15,7 +15,7 @@ var collectMutations = (obj, lookup) => {
                 if (lookup[prop] === undefined) {
                     lookup[prop] = {};
                 }
-                return collectMutations(obj[prop], lookup[prop]);
+                return makeMutations(obj[prop], lookup[prop]);
             }
             return lookup[prop] !== undefined ? lookup[prop] : Reflect.get(target, prop);
         }
@@ -30,7 +30,7 @@ class ImmutableHelper {
     
     produce(mutator: (obj: InputObj) => void) {
         var lookup = {};
-        mutator(collectMutations(this.obj, lookup));
+        mutator(makeMutations(this.obj, lookup));
         return lookup;
     }
 }
