@@ -9,22 +9,20 @@ type Subscription = {
 }
 
 class EventEmitter {
-    #lookup: Map<string, Callback[]>;
+    #lookup: Map<string, Set<Callback>>;
     constructor() {
-        this.#lookup = new Map<string, Callback[]>();
+        this.#lookup = new Map<string, Set<Callback>>();
     }
 
     subscribe(eventName: string, callback: Callback): Subscription {
         if (!this.#lookup.has(eventName)) {
-            this.#lookup.set(eventName, []);
+            this.#lookup.set(eventName, new Set());
         }
-        this.#lookup.get(eventName).push(callback);
+        this.#lookup.get(eventName).add(callback);
         return {
             unsubscribe: () => {
-                const i = this.#lookup.get(eventName).indexOf(callback);
-                if (i !== -1) {
-                    this.#lookup.get(eventName).splice(i, 1);
-                }
+                this.#lookup.get(eventName).delete(callback);
+
             }
         };
     }
@@ -34,8 +32,8 @@ class EventEmitter {
             return [];
         }
         let result = [];
-        for (const listener of this.#lookup.get(eventName)) {
-            result.push(listener(...args));
+        for (const callback of this.#lookup.get(eventName)) {
+            result.push(callback(...args));
         }
         return result;
     }
