@@ -1,5 +1,5 @@
-# Time:  O(n)
-# Space: O(h)
+# Time:  O(h)
+# Space: O(1)
 
 # Definition for a rope tree node.
 class RopeTreeNode(object):
@@ -7,7 +7,7 @@ class RopeTreeNode(object):
         pass
 
 
-# binary tree
+# binary search tree
 class Solution(object):
     def getKthCharacter(self, root, k):
         """
