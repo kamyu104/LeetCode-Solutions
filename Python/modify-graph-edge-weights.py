@@ -44,4 +44,7 @@ class Solution(object):
         right= dijkstra(destination, INF)
         if not (right[source] >= target):
             return []
-        return [[u, v, (w if w != -1 else max(target-left[u]-right[v], target-left[v]-right[u], 1))] for u, v, w in edges]
+        for e in edges:
+            if e[2] == -1:
+                e[2] = max(target-left[e[0]]-right[e[1]], target-left[e[1]]-right[e[0]], 1)
+        return edges
