@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2688%20%2F%202688-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2699%20%2F%202699-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -239,6 +239,7 @@
 2334 | [Subarray With Elements Greater Than Varying Threshold](https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/) | [C++](./C++/subarray-with-elements-greater-than-varying-threshold.cpp) [Python](./Python/subarray-with-elements-greater-than-varying-threshold.py) | _O(n)_ | _O(n)_ | Hard | variant of [Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/) | Mono Stack
 2355 | [Maximum Number of Books You Can Take](https://leetcode.com/problems/maximum-number-of-books-you-can-take/) | [C++](./C++/maximum-number-of-books-you-can-take.cpp) [Python](./Python/maximum-number-of-books-you-can-take.py) | _O(n)_  | _O(n)_         | Hard           | 🔒 | Mono Stack, Math
 2454 | [Next Greater Element IV](https://leetcode.com/problems/next-greater-element-iv/) | [C++](./C++/next-greater-element-iv.cpp) [Python](./Python/next-greater-element-iv.py) | _O(n)_ | _O(n)_ | Hard | | Mono Stack
+2696 | [Minimum String Length After Removing Substrings](https://leetcode.com/problems/minimum-string-length-after-removing-substrings/) | [C++](./C++/minimum-string-length-after-removing-substrings.cpp) [Python](./Python/minimum-string-length-after-removing-substrings.py) | _O(n)_ | _O(n)_ | Easy | | Stack
 
 <br/>
 <div align="right">
@@ -565,6 +566,7 @@
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 2426 | [Number of Pairs Satisfying Inequality](https://leetcode.com/problems/number-of-pairs-satisfying-inequality/)|[C++](./C++/number-of-pairs-satisfying-inequality.cpp) [Python](./Python/number-of-pairs-satisfying-inequality.py) | _O(nlogn)_      | _O(n)_          | Hard         | | Merge Sort, Two Pointers, BIT, Fenwick Tree, Coordinate Compression, Sorted List, Ordered Set, Binary Search
+2689 | [Extract Kth Character From The Rope Tree](https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/)|[C++](./C++/extract-kth-character-from-the-rope-tree.cpp) [Python](./Python/extract-kth-character-from-the-rope-tree.py) | _O(h)_      | _O(1)_          | Medium         | 🔒 | BST
 
 <br/>
 <div align="right">
@@ -636,6 +638,7 @@
 2094 | [Finding 3-Digit Even Numbers](https://leetcode.com/problems/finding-3-digit-even-numbers/) | [C++](./C++/finding-3-digit-even-numbers.cpp) [Python](./Python/finding-3-digit-even-numbers.py) | _O(n)_ | _O(1)_      | Easy         | | |
 2443 | [Sum of Number and Its Reverse](https://leetcode.com/problems/sum-of-number-and-its-reverse/) | [C++](./C++/sum-of-number-and-its-reverse.cpp) [Python](./Python/sum-of-number-and-its-reverse.py) | _O(n^(1/(2*log2(10))))_   | _O(log10(n)/2)_        | Medium         | | Brute Force, Backtracking
 2664 | [The Knight’s Tour](https://leetcode.com/problems/the-knights-tour/) | [C++](./C++/the-knights-tour.cpp) [Python](./Python/the-knights-tour.py) | _O(m * n)_   | _O(1)_        | Medium         | 🔒 | Backtracking, Greedy, `Warnsdorff's Rule`
+2698 | [Find the Punishment Number of an Integer](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/) | [C++](./C++/find-the-punishment-number-of-an-integer.cpp) [Python](./Python/find-the-punishment-number-of-an-integer.py) | _O(n * (logn)^(2*logn))_   | _O(logn)_        | Medium         | | Backtracking
 
 <br/>
 <div align="right">
@@ -804,6 +807,7 @@
 2663 | [Lexicographically Smallest Beautiful String](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/) | [C++](./C++/lexicographically-smallest-beautiful-string.cpp) [Python](./Python/lexicographically-smallest-beautiful-string.py) | _O(n)_ | _O(1)_ | Hard | | Greedy
 2673 | [Make Costs of Paths Equal in a Binary Tree](https://leetcode.com/problems/make-costs-of-paths-equal-in-a-binary-tree/) | [C++](./C++/make-costs-of-paths-equal-in-a-binary-tree.cpp) [Python](./Python/make-costs-of-paths-equal-in-a-binary-tree.py) | _O(n)_ | _O(1)_ | Medium | | Tree, Greedy
 2680 | [Maximum OR](https://leetcode.com/problems/maximum-or/) | [C++](./C++/maximum-or.cpp) [Python](./Python/maximum-or.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum, Greedy
+2697 | [Lexicographically Smallest Palindrome](https://leetcode.com/problems/lexicographically-smallest-palindrome/) | [C++](./C++/lexicographically-smallest-palindrome.cpp) [Python](./Python/lexicographically-smallest-palindrome.py) | _O(n)_ | _O(1)_ | Easy | | Greedy
 
 <br/>
 <div align="right">
@@ -833,6 +837,7 @@
 2508 | [Add Edges to Make Degrees of All Nodes Even](https://leetcode.com/problems/add-edges-to-make-degrees-of-all-nodes-even/)  | [C++](./C++/add-edges-to-make-degrees-of-all-nodes-even.cpp) [Python](./Python/add-edges-to-make-degrees-of-all-nodes-even.py) | _O(n)_ | _O(n)_| Hard           || Graph | 
 2608 | [Shortest Cycle in a Graph](https://leetcode.com/problems/shortest-cycle-in-a-graph/)  | [C++](./C++/shortest-cycle-in-a-graph.cpp) [Python](./Python/shortest-cycle-in-a-graph.py) | _O(n^2)_ | _O(n + e)_| Hard           || Graph, BFS |
 2662 | [Minimum Cost of a Path With Special Roads](https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/)  | [C++](./C++/minimum-cost-of-a-path-with-special-roads.cpp) [Python](./Python/minimum-cost-of-a-path-with-special-roads.py) | _O(n^2)_ | _O(n^2)_| Medium           || Graph, `Dijkstra's Algorithm` |
+2699 | [Modify Graph Edge Weights](https://leetcode.com/problems/modify-graph-edge-weights/)  | [C++](./C++/modify-graph-edge-weights.cpp) [Python](./Python/modify-graph-edge-weights.py) |  _O(\|V\| + \|E\| * log\|V\|)_ | _O(\|V\| + \|E\|)_| Hard           || Graph, `Dijkstra's Algorithm` |
 
 <br/>
 <div align="right">
@@ -955,6 +960,12 @@
 2675 | [Array of Objects to Matrix](https://leetcode.com/problems/array-of-objects-to-matrix/) | [TypeScript](./TypeScript/array-of-objects-to-matrix.ts) | _O(l * mlogm + m * n)_ | _O(l * m + m * n)_       | Medium           | | DFS |
 2676 | [Throttle](https://leetcode.com/problems/throttle/) | [TypeScript](./TypeScript/throttle.ts) | _O(1)_ | _O(1)_       | Medium           | | |
 2677 | [Chunk Array](https://leetcode.com/problems/chunk-array/) | [TypeScript](./TypeScript/chunk-array.ts) | _O(n)_ | _O(1)_       | Easy           | | |
+2690 | [Infinite Method Object](https://leetcode.com/problems/infinite-method-object/) | [TypeScript](./TypeScript/infinite-method-object.ts) | _O(1)_ | _O(1)_       | Medium           | 🔒 | Proxy |
+2691 | [Immutability Helper](https://leetcode.com/problems/immutability-helper/) | [TypeScript](./TypeScript/immutability-helper.ts) | _O(1)_ | _O(1)_       | Hard           | 🔒 | Proxy |
+2692 | [Make Object Immutable](https://leetcode.com/problems/make-object-immutable/) | [TypeScript](./TypeScript/make-object-immutable.ts) | _O(1)_ | _O(1)_       | Medium           | 🔒 | Proxy |
+2693 | [Call Function with Custom Context](https://leetcode.com/problems/call-function-with-custom-context/) | [TypeScript](./TypeScript/call-function-with-custom-context.ts) | _O(1)_ | _O(1)_       | Medium           | | Symbol |
+2694 | [Event Emitter](https://leetcode.com/problems/event-emitter/) | [TypeScript](./TypeScript/event-emitter.ts) | subscribe: _O(1)_<br>unsubscribe: _O(1)_<br>emit: _O(n)_ | _O(n)_       | Medium           | | |
+2695 | [Array Wrapper](https://leetcode.com/problems/array-wrapper/) | [TypeScript](./TypeScript/array-wrapper.ts) | valueOf: _O(n)_<br>toString: _O(n)_ | _O(1)_       | Easy           | | |
 
 <br/>
 <div align="right">
