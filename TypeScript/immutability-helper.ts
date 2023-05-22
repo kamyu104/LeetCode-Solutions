@@ -1,6 +1,7 @@
 // Time:  O(1)
 // Space: O(1)
 
+// proxy
 type InputObj = Record<any, any> | Array<any>;
 
 var collectMutations = (obj, lookup) => {
