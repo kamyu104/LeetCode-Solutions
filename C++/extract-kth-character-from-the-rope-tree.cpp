@@ -1,7 +1,7 @@
-// Time:  O(n)
-// Space: O(h)
+// Time:  O(h)
+// Space: O(1)
 
-// binary tree
+// binary search tree
 class Solution {
 public:
     char getKthCharacter(RopeTreeNode* root, int k) {
