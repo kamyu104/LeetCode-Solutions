@@ -22,7 +22,6 @@ class EventEmitter {
         return {
             unsubscribe: () => {
                 this.#lookup.get(eventName).delete(callback);
-
             }
         };
     }
