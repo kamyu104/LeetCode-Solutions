@@ -16,9 +16,8 @@ class Solution(object):
         :type target: int
         :rtype: List[List[int]]
         """
-        INF = 10**9
         def dijkstra(start, x):
-            best = [INF]*len(adj)
+            best = [target+1]*len(adj)
             best[start] = 0
             min_heap = [(0, start)]
             while min_heap:
@@ -41,7 +40,7 @@ class Solution(object):
         left = dijkstra(source, 1)
         if not (left[destination] <= target):
             return []
-        right= dijkstra(destination, INF)
+        right= dijkstra(destination, target+1)
         if not (right[source] >= target):
             return []
         for e in edges:
