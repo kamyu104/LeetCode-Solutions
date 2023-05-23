@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2699%20%2F%202699-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2700%20%2F%202700-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -966,6 +966,7 @@
 2693 | [Call Function with Custom Context](https://leetcode.com/problems/call-function-with-custom-context/) | [TypeScript](./TypeScript/call-function-with-custom-context.ts) | _O(1)_ | _O(1)_       | Medium           | | Symbol |
 2694 | [Event Emitter](https://leetcode.com/problems/event-emitter/) | [TypeScript](./TypeScript/event-emitter.ts) | subscribe: _O(1)_<br>unsubscribe: _O(1)_<br>emit: _O(n)_ | _O(n)_       | Medium           | | Ordered Set |
 2695 | [Array Wrapper](https://leetcode.com/problems/array-wrapper/) | [TypeScript](./TypeScript/array-wrapper.ts) | valueOf: _O(n)_<br>toString: _O(n)_ | _O(1)_       | Easy           | | |
+2700 | [Differences Between Two Objects](https://leetcode.com/problems/differences-between-two-objects/) | [TypeScript](./TypeScript/differences-between-two-objects.ts) | _O(n)_ | _O(h)_       | Medium           | | DFS |
 
 <br/>
 <div align="right">
