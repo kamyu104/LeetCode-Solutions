@@ -6,15 +6,13 @@
 class Solution {
 public:
     vector<vector<int>> modifiedGraphEdges(int n, vector<vector<int>>& edges, int source, int destination, int target) {
-        static const int INF = 1e9;
-
         vector<vector<pair<int, int>>> adj(n);
         for (const auto& e : edges) {
             adj[e[0]].emplace_back(e[1], e[2]);
             adj[e[1]].emplace_back(e[0], e[2]);
         }
         const auto& dijkstra = [&](int start, int x) {
-            vector<int> best(size(adj), INF);
+            vector<int> best(size(adj), target + 1);
             best[start] = 0;
             priority_queue<pair<int64_t, int>, vector<pair<int64_t, int>>, greater<pair<int64_t, int>>> min_heap;
             min_heap.emplace(0, start);
@@ -41,7 +39,7 @@ public:
         if (!(left[destination] <= target)) {
             return {};
         }
-        const auto& right = dijkstra(destination, INF);
+        const auto& right = dijkstra(destination, target + 1);
         if (!(right[source] >= target)) {
             return {};
         }
