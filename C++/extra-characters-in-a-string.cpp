@@ -1,7 +1,7 @@
 // Time:  O(n * l), l is max(len(w) for w in dictionary)
 // Space: O(n + t)
 
-// dp
+// trie, dp
 class Solution {
 public:
     int minExtraChar(string s, vector<string>& dictionary) {
