@@ -2,10 +2,10 @@
 # Space: O(n)
 
 WITH date_group_cte AS (
-    SELECT  *, 
-            TO_DAYS(transaction_date) - ROW_NUMBER() OVER(PARTITION BY customer_id 
+    SELECT *, 
+           TO_DAYS(transaction_date) - ROW_NUMBER() OVER (PARTITION BY customer_id 
                                                           ORDER BY transaction_date
-            ) AS date_group
+           ) AS date_group
     FROM Transactions
 ), 
 increasing_date_group_cte AS (
