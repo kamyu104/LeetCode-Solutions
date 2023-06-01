@@ -14,9 +14,9 @@ function compactObject(obj: Obj): Obj {
     if (typeof obj !== "object") {
         return obj;
     }
-    return Object.keys(obj).reduce(
-        (accu, key) => {
-            accu[key] = compactObject(obj[key]);
+    return Object.entries(obj).reduce(
+        (accu, [key, value]) => {
+            accu[key] = compactObject(value);
             if (!Boolean(accu[key])) {
                 delete accu[key];
             }
