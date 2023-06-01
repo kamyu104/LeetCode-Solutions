@@ -4,7 +4,7 @@
 import collections
 
 
-# dp
+# trie, dp
 class Solution(object):
     def minExtraChar(self, s, dictionary):
         """
