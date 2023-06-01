@@ -1,4 +1,4 @@
-// Time:  O(n * l), l is max(len(w) for w in dictionary)
+// Time:  O((n + m) * l), l is max(len(w) for w in dictionary)
 // Space: O(n + t)
 
 // trie, dp
