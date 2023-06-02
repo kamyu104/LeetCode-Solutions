@@ -847,7 +847,7 @@
 2608 | [Shortest Cycle in a Graph](https://leetcode.com/problems/shortest-cycle-in-a-graph/)  | [C++](./C++/shortest-cycle-in-a-graph.cpp) [Python](./Python/shortest-cycle-in-a-graph.py) | _O(n^2)_ | _O(n + e)_| Hard           || Graph, BFS |
 2662 | [Minimum Cost of a Path With Special Roads](https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/)  | [C++](./C++/minimum-cost-of-a-path-with-special-roads.cpp) [Python](./Python/minimum-cost-of-a-path-with-special-roads.py) | _O(n^2)_ | _O(n^2)_| Medium           || Graph, `Dijkstra's Algorithm` |
 2699 | [Modify Graph Edge Weights](https://leetcode.com/problems/modify-graph-edge-weights/)  | [C++](./C++/modify-graph-edge-weights.cpp) [Python](./Python/modify-graph-edge-weights.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_| Hard           || Graph, `Dijkstra's Algorithm` |
-2614 | [ Find Shortest Path with K Hops](https://leetcode.com/problems/find-shortest-path-with-k-hops/)  | [C++](./C++/find-shortest-path-with-k-hops.cpp) [Python](./Python/find-shortest-path-with-k-hops.py) |  _O(n * k + (k * e) * log(n * k))_ | _O(n * k + e)_ | Hard           |🔒| Graph, `Dijkstra's Algorithm` |
+2714 | [Find Shortest Path with K Hops](https://leetcode.com/problems/find-shortest-path-with-k-hops/)  | [C++](./C++/find-shortest-path-with-k-hops.cpp) [Python](./Python/find-shortest-path-with-k-hops.py) |  _O(n * k + (k * e) * log(n * k))_ | _O(n * k + e)_ | Hard           |🔒| Graph, `Dijkstra's Algorithm` |
 
 <br/>
 <div align="right">
