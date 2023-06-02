@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2700%20%2F%202700-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2715%20%2F%202715-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -555,6 +555,7 @@
 2594 | [Minimum Time to Repair Cars](https://leetcode.com/problems/minimum-time-to-repair-cars/) | [C++](./C++/minimum-time-to-repair-cars.cpp) [Python](./Python/minimum-time-to-repair-cars.py) | _O(mx * (logc + log(mn)))_ | _O(mx)_ | Medium | | Freq Table, Binary Search, Heap, Simulation |
 2602 | [Minimum Operations to Make All Array Elements Equal](https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/) | [C++](./C++/minimum-operations-to-make-all-array-elements-equal.cpp) [Python](./Python/minimum-operations-to-make-all-array-elements-equal.py) | _O(nlogn + qlogn)_ | _O(n)_ | Medium | | Sort, Binary Search, Prefix Sum |
 2616 | [Minimize the Maximum Difference of Pairs](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/) | [C++](./C++/minimize-the-maximum-difference-of-pairs.cpp) [Python](./Python/minimize-the-maximum-difference-of-pairs.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | | Sort, Binary Search, Greedy |
+2702 | [Minimum Operations to Make Numbers Non-positiveminimum-operations-to-make-numbers-non-positive/) | [C++](./C++/minimize-the-maximum-difference-of-pairs.cpp) [Python](./Python/minimum-operations-to-make-numbers-non-positive.py) | _O(nlogr)_ | _O(1)_ | Hard | | Binary Search, Greedy |
 
 <br/>
 <div align="right">
@@ -967,6 +968,10 @@
 2694 | [Event Emitter](https://leetcode.com/problems/event-emitter/) | [TypeScript](./TypeScript/event-emitter.ts) | subscribe: _O(1)_<br>unsubscribe: _O(1)_<br>emit: _O(n)_ | _O(n)_       | Medium           | | Ordered Set |
 2695 | [Array Wrapper](https://leetcode.com/problems/array-wrapper/) | [TypeScript](./TypeScript/array-wrapper.ts) | valueOf: _O(n)_<br>toString: _O(n)_ | _O(1)_       | Easy           | | |
 2700 | [Differences Between Two Objects](https://leetcode.com/problems/differences-between-two-objects/) | [TypeScript](./TypeScript/differences-between-two-objects.ts) | _O(n)_ | _O(h)_       | Medium           | | DFS |
+2703 | [Return Length of Arguments Passed](https://leetcode.com/problems/return-length-of-arguments-passed/) | [TypeScript](./TypeScript/return-length-of-arguments-passed.ts) | _O(1)_ | _O(1)_       | Easy           | | |
+2704 | [To Be Or Not To Be](https://leetcode.com/problems/to-be-or-not-to-be/) | [TypeScript](./TypeScript/to-be-or-not-to-be.ts) | _O(1)_ | _O(1)_       | Easy           | | |
+2705 | [Compact Object](https://leetcode.com/problems/compact-object/) | [TypeScript](./TypeScript/compact-object.ts) | _O(n)_ | _O(h)_       | Medium           | | DFS |
+2715 | [Execute Cancellable Function With Delay](https://leetcode.com/problems/execute-cancellable-function-with-delay/) | [TypeScript](./TypeScript/execute-cancellable-function-with-delay.ts) | _O(1)_ | _O(1)_       | Easy           | | |
 
 <br/>
 <div align="right">
@@ -1024,6 +1029,7 @@
 2686 | [Immediate Food Delivery III](https://leetcode.com/problems/immediate-food-delivery-iii/) | [MySQL](./MySQL/immediate-food-delivery-iii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2687 | [Bikes Last Time Used](https://leetcode.com/problems/bikes-last-time-used/) | [MySQL](./MySQL/bikes-last-time-used.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 2688 | [Find Active Users](https://leetcode.com/problems/find-active-users/) | [MySQL](./MySQL/find-active-users.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2701 | [Consecutive Transactions with Increasing Amounts](https://leetcode.com/problems/consecutive-transactions-with-increasing-amounts/) | [MySQL](./MySQL/consecutive-transactions-with-increasing-amounts.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
