@@ -152,6 +152,7 @@
 2660 | [Determine the Winner of a Bowling Game](https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/) | [C++](./C++/determine-the-winner-of-a-bowling-game.cpp) [Python](./Python/determine-the-winner-of-a-bowling-game.py) | _O(n)_ | _O(1)_ | Medium | | Array
 2672 | [Number of Adjacent Elements With the Same Color](https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/) | [C++](./C++/number-of-adjacent-elements-with-the-same-color.cpp) [Python](./Python/number-of-adjacent-elements-with-the-same-color.py) | _O(n + q)_ | _O(n)_ | Medium | | Array
 2683 | [Neighboring Bitwise XOR](https://leetcode.com/problems/neighboring-bitwise-xor/) | [C++](./C++/neighboring-bitwise-xor.cpp) [Python](./Python/neighboring-bitwise-xor.py) | _O(n)_ | _O(1)_ | Medium | | Array
+2711 | [Difference of Number of Distinct Values on Diagonals](https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/) | [C++](./C++/difference-of-number-of-distinct-values-on-diagonals.cpp) [Python](./Python/difference-of-number-of-distinct-values-on-diagonals.py) | _O(m * n)_ | _O(min(m, n))_ | Medium | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -205,6 +206,7 @@
 2575 | [Find the Divisibility Array of a String](https://leetcode.com/problems/find-the-divisibility-array-of-a-string/)| [C++](./C++/find-the-divisibility-array-of-a-string.cpp) [Python](./Python/find-the-divisibility-array-of-a-string.py)| _O(n)_ | _O(1)_ | Medium | | Prefix Sum |
 2586 | [Count the Number of Vowel Strings in Range](https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/)| [C++](./C++/count-the-number-of-vowel-strings-in-range.cpp) [Python](./Python/count-the-number-of-vowel-strings-in-range.py)| _O(n)_ | _O(1)_ | Medium | | String |
 2678 | [Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens/)| [C++](./C++/number-of-senior-citizens.cpp) [Python](./Python/number-of-senior-citizens.py)| _O(n)_ | _O(1)_ | Easy | | String |
+2710 | [Remove Trailing Zeros From a String](https://leetcode.com/problems/remove-trailing-zeros-from-a-string/)| [C++](./C++/remove-trailing-zeros-from-a-string.cpp) [Python](./Python/remove-trailing-zeros-from-a-string.py)| _O(n)_ | _O(1)_ | Easy | | String |
 
 <br/>
 <div align="right">
@@ -718,6 +720,7 @@
 2681 | [Power of Heroes](https://leetcode.com/problems/power-of-heroes/) | [C++](./C++/power-of-heroes.cpp) [Python](./Python/power-of-heroes.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Sort, Combinatorics, DP
 2684 | [Maximum Number of Moves in a Grid](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/) | [C++](./C++/maximum-number-of-moves-in-a-grid.cpp) [Python](./Python/maximum-number-of-moves-in-a-grid.py) | _O(m * n)_   | _O(m)_        | Medium         | | DP, BFS
 2707 | [Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/) | [C++](./C++/extra-characters-in-a-string.cpp) [Python](./Python/extra-characters-in-a-string.py) | _O(n * l)_   | _O(n + t)_        | Medium         | | DP, Trie
+2713 | [Maximum Strictly Increasing Cells in a Matrix](https://leetcode.com/problems/maximum-strictly-increasing-cells-in-a-matrix/) | [C++](./C++/maximum-strictly-increasing-cells-in-a-matrix.cpp) [Python](./Python/maximum-strictly-increasing-cells-in-a-matrix.py) | _O(m * n * log(m * n))_   | _O(m * n)_        | Hard         | | Sort, DP
 
 <br/>
 <div align="right">
@@ -813,6 +816,7 @@
 2697 | [Lexicographically Smallest Palindrome](https://leetcode.com/problems/lexicographically-smallest-palindrome/) | [C++](./C++/lexicographically-smallest-palindrome.cpp) [Python](./Python/lexicographically-smallest-palindrome.py) | _O(n)_ | _O(1)_ | Easy | | Greedy
 2706 | [Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/) | [C++](./C++/buy-two-chocolates.cpp) [Python](./Python/buy-two-chocolates.py) | _O(n)_ | _O(1)_ | Easy | | Greedy
 2708 | [Maximum Strength of a Group](https://leetcode.com/problems/maximum-strength-of-a-group/) | [C++](./C++/maximum-strength-of-a-group.cpp) [Python](./Python/maximum-strength-of-a-group.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+2712 | [Minimum Cost to Make All Characters Equal](https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/) | [C++](./C++/minimum-cost-to-make-all-characters-equal.cpp) [Python](./Python/minimum-cost-to-make-all-characters-equal.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 
 <br/>
 <div align="right">
@@ -843,6 +847,7 @@
 2608 | [Shortest Cycle in a Graph](https://leetcode.com/problems/shortest-cycle-in-a-graph/)  | [C++](./C++/shortest-cycle-in-a-graph.cpp) [Python](./Python/shortest-cycle-in-a-graph.py) | _O(n^2)_ | _O(n + e)_| Hard           || Graph, BFS |
 2662 | [Minimum Cost of a Path With Special Roads](https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/)  | [C++](./C++/minimum-cost-of-a-path-with-special-roads.cpp) [Python](./Python/minimum-cost-of-a-path-with-special-roads.py) | _O(n^2)_ | _O(n^2)_| Medium           || Graph, `Dijkstra's Algorithm` |
 2699 | [Modify Graph Edge Weights](https://leetcode.com/problems/modify-graph-edge-weights/)  | [C++](./C++/modify-graph-edge-weights.cpp) [Python](./Python/modify-graph-edge-weights.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_| Hard           || Graph, `Dijkstra's Algorithm` |
+2614 | [ Find Shortest Path with K Hops](https://leetcode.com/problems/find-shortest-path-with-k-hops/)  | [C++](./C++/find-shortest-path-with-k-hops.cpp) [Python](./Python/find-shortest-path-with-k-hops.py) |  _O(n * k + (k * e) * log(n * k))_ | _O(n * k + e)_ | Hard           |🔒| Graph, `Dijkstra's Algorithm` |
 
 <br/>
 <div align="right">
