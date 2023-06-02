@@ -4,7 +4,7 @@
 import collections
 
 
-# dp
+# sort, dp
 class Solution(object):
     def maxIncreasingCells(self, mat):
         """
