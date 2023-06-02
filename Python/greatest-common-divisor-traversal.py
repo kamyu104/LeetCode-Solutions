@@ -39,8 +39,8 @@ class Solution(object):
 
         def bfs():
             lookup = [False]*len(nums)
-            q = [0]
             lookup[0] = True
+            q = [0]
             while q:
                 new_q = []
                 for u in q:
