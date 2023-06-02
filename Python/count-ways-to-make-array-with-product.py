@@ -1,4 +1,4 @@
-# Time:  O(sqrt(m) + n + q * (logm + sqrt(m)/log(sqrt(m)))), m is max(k for _, k in queries)
+# Time:  O(sqrt(m) + n + q * (logm + pi(sqrt(m)))) = O(sqrt(m) + n + q * (logm + sqrt(m)/log(sqrt(m)))), m is max(k for _, k in queries), pi(n) = number of primes in a range [1, n] = O(n/logn) by prime number theorem, see https://en.wikipedia.org/wiki/Prime_number_theorem
 # Space: O(sqrt(m) + n + logm)
 
 import collections
