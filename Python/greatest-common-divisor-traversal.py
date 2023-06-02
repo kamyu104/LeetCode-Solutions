@@ -16,6 +16,7 @@ def linear_sieve_of_eratosthenes(n):  # Time: O(n), Space: O(n)
             spf[i*p] = p
     return primes
 
+
 MAX_NUM = 10**5
 PRIMES = linear_sieve_of_eratosthenes(int(MAX_NUM**0.5))
 class Solution(object):
