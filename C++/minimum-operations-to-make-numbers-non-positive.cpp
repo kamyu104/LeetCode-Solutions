@@ -1,7 +1,7 @@
 // Time:  O(nlogr)
 // Space: O(1)
 
-// binary search
+// binary search, greedy
 class Solution {
 public:
     int minOperations(vector<int>& nums, int x, int y) {
