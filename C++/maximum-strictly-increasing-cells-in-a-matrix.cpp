@@ -1,7 +1,7 @@
 // Time:  O(m * n * log(m * n))
 // Space: O(m * n)
 
-// dp
+// sort, dp
 class Solution {
 public:
     int maxIncreasingCells(vector<vector<int>>& mat) {
