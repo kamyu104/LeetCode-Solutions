@@ -601,6 +601,7 @@
 2641 | [Cousins in Binary Tree II](https://leetcode.com/problems/cousins-in-binary-tree-ii/)  | [C++](./C++/cousins-in-binary-tree-ii.cpp) [Python](./Python/cousins-in-binary-tree-ii.py) | _O(n)_ | _O(w)_| Medium           || BFS | 
 2658 | [Maximum Number of Fish in a Grid](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/)  | [C++](./C++/maximum-number-of-fish-in-a-grid.cpp) [Python](./Python/maximum-number-of-fish-in-a-grid.py) | _O(m * n)_ | _O(m + n)_| Medium           || BFS, DFS | 
 2685 | [Count the Number of Complete Components](https://leetcode.com/problems/count-the-number-of-complete-components/)  | [C++](./C++/count-the-number-of-complete-components.cpp) [Python](./Python/count-the-number-of-complete-components.py) | _O(n)_ | _O(n)_| Medium           || BFS | 
+2709 | [Greatest Common Divisor Traversal](https://leetcode.com/problems/greatest-common-divisor-traversal/)  | [C++](./C++/greatest-common-divisor-traversal.cpp) [Python](./Python/greatest-common-divisor-traversal.py) | precompute: _O(sqrt(r))_<br>runtime: _O(nlogr)_ | _O(sqrt(r) + nlogr)_| Hard           || `Linear Sieve of Eratosthenes`, Factorization, BFS | 
 
 <br/>
 <div align="right">
@@ -716,6 +717,7 @@
 2646 | [Minimize the Total Price of the Trips](https://leetcode.com/problems/minimize-the-total-price-of-the-trips/) | [C++](./C++/minimize-the-total-price-of-the-trips.cpp) [Python](./Python/minimize-the-total-price-of-the-trips.py) | _O(t * n)_   | _O(n)_        | Hard         | | DFS, Tree DP
 2681 | [Power of Heroes](https://leetcode.com/problems/power-of-heroes/) | [C++](./C++/power-of-heroes.cpp) [Python](./Python/power-of-heroes.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Sort, Combinatorics, DP
 2684 | [Maximum Number of Moves in a Grid](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/) | [C++](./C++/maximum-number-of-moves-in-a-grid.cpp) [Python](./Python/maximum-number-of-moves-in-a-grid.py) | _O(m * n)_   | _O(m)_        | Medium         | | DP, BFS
+2707 | [Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/) | [C++](./C++/extra-characters-in-a-string.cpp) [Python](./Python/extra-characters-in-a-string.py) | _O(n * l)_   | _O(n + t)_        | Medium         | | DP, Trie
 
 <br/>
 <div align="right">
@@ -809,6 +811,8 @@
 2673 | [Make Costs of Paths Equal in a Binary Tree](https://leetcode.com/problems/make-costs-of-paths-equal-in-a-binary-tree/) | [C++](./C++/make-costs-of-paths-equal-in-a-binary-tree.cpp) [Python](./Python/make-costs-of-paths-equal-in-a-binary-tree.py) | _O(n)_ | _O(1)_ | Medium | | Tree, Greedy
 2680 | [Maximum OR](https://leetcode.com/problems/maximum-or/) | [C++](./C++/maximum-or.cpp) [Python](./Python/maximum-or.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum, Greedy
 2697 | [Lexicographically Smallest Palindrome](https://leetcode.com/problems/lexicographically-smallest-palindrome/) | [C++](./C++/lexicographically-smallest-palindrome.cpp) [Python](./Python/lexicographically-smallest-palindrome.py) | _O(n)_ | _O(1)_ | Easy | | Greedy
+2706 | [Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/) | [C++](./C++/buy-two-chocolates.cpp) [Python](./Python/buy-two-chocolates.py) | _O(n)_ | _O(1)_ | Easy | | Greedy
+2708 | [Maximum Strength of a Group](https://leetcode.com/problems/maximum-strength-of-a-group/) | [C++](./C++/maximum-strength-of-a-group.cpp) [Python](./Python/maximum-strength-of-a-group.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 
 <br/>
 <div align="right">
