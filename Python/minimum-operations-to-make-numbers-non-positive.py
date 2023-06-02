@@ -1,7 +1,7 @@
 # Time:  O(nlogr)
 # Space: O(1)
 
-# binary search
+# binary search, greedy
 class Solution(object):
     def minOperations(self, nums, x, y):
         """
