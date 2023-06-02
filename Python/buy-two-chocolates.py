@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-# array
+# greedy
 class Solution(object):
     def buyChoco(self, prices, money):
         """
