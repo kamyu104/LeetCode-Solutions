@@ -45,8 +45,8 @@ public:
         vector<vector<int>> adj(size(nums));
         const auto& bfs = [&]() {
             vector<bool> lookup(size(nums));
-            vector<int> q = {0};
             lookup[0] = true;
+            vector<int> q = {0};
             while (!empty(q)) {
                 vector<int> new_q;
                 for (const auto& u : q) {
