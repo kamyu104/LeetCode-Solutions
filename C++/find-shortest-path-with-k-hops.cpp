@@ -1,4 +1,4 @@
-// Time:  O(n * k + (k * e) * log(n * k))
+// Time:  O(n * k + (e * k) * log(n * k))
 // Space: O(n * k + e)
 
 // dijkstra's algorithm
