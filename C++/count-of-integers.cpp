@@ -1,7 +1,7 @@
 // Time:  O(n * m), m = max_sum
 // Space: O(m)
 
-// dp
+// combinatorics, dp
 class Solution {
 public:
     int count(string num1, string num2, int min_sum, int max_sum) {
