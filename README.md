@@ -724,7 +724,7 @@
 2684 | [Maximum Number of Moves in a Grid](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/) | [C++](./C++/maximum-number-of-moves-in-a-grid.cpp) [Python](./Python/maximum-number-of-moves-in-a-grid.py) | _O(m * n)_   | _O(m)_        | Medium         | | DP, BFS
 2707 | [Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/) | [C++](./C++/extra-characters-in-a-string.cpp) [Python](./Python/extra-characters-in-a-string.py) | _O(n * l)_   | _O(n + t)_        | Medium         | | DP, Trie
 2713 | [Maximum Strictly Increasing Cells in a Matrix](https://leetcode.com/problems/maximum-strictly-increasing-cells-in-a-matrix/) | [C++](./C++/maximum-strictly-increasing-cells-in-a-matrix.cpp) [Python](./Python/maximum-strictly-increasing-cells-in-a-matrix.py) | _O(m * n * log(m * n))_   | _O(m * n)_        | Hard         | | Sort, DP
-2719 | [Count of Integers](https://leetcode.com/problems/count-of-integers/) | [C++](./C++/count-of-integers.cpp) [Python](./Python/count-of-integers.py) | _O(m * n)_   | _O(m + n)_        | Hard         | | DP
+2719 | [Count of Integers](https://leetcode.com/problems/count-of-integers/) | [C++](./C++/count-of-integers.cpp) [Python](./Python/count-of-integers.py) | _O(m * n)_   | _O(m + n)_        | Hard         | | Combinatorics, DP
 
 <br/>
 <div align="right">
