@@ -1,5 +1,5 @@
 # Time:  O(n * m), m = max_sum
-# Space: O(m)
+# Space: O(n + m)
 
 # dp
 class Solution(object):
