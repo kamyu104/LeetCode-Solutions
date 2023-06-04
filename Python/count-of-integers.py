@@ -1,7 +1,7 @@
 # Time:  O(n * m), m = max_sum
 # Space: O(n + m)
 
-# dp
+# combinatorics, dp
 class Solution(object):
     def count(self, num1, num2, min_sum, max_sum):
         """
