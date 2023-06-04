@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2715%20%2F%202715-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2719%20%2F%202719-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -153,6 +153,7 @@
 2672 | [Number of Adjacent Elements With the Same Color](https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/) | [C++](./C++/number-of-adjacent-elements-with-the-same-color.cpp) [Python](./Python/number-of-adjacent-elements-with-the-same-color.py) | _O(n + q)_ | _O(n)_ | Medium | | Array
 2683 | [Neighboring Bitwise XOR](https://leetcode.com/problems/neighboring-bitwise-xor/) | [C++](./C++/neighboring-bitwise-xor.cpp) [Python](./Python/neighboring-bitwise-xor.py) | _O(n)_ | _O(1)_ | Medium | | Array
 2711 | [Difference of Number of Distinct Values on Diagonals](https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/) | [C++](./C++/difference-of-number-of-distinct-values-on-diagonals.cpp) [Python](./Python/difference-of-number-of-distinct-values-on-diagonals.py) | _O(m * n)_ | _O(min(m, n))_ | Medium | | Prefix Sum
+2716 | [Semi-Ordered Permutation](https://leetcode.com/problems/semi-ordered-permutation/) | [C++](./C++/semi-ordered-permutation.cpp) [Python](./Python/semi-ordered-permutation.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -364,6 +365,8 @@
 2657 | [Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/) | [C++](./C++/find-the-prefix-common-array-of-two-arrays.cpp) [Python](./Python/find-the-prefix-common-array-of-two-arrays.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
 2661 | [First Completely Painted Row or Column](https://leetcode.com/problems/first-completely-painted-row-or-column/) | [C++](./C++/first-completely-painted-row-or-column.cpp) [Python](./Python/first-completely-painted-row-or-column.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Hash Table
 2670 | [Find the Distinct Difference Array](https://leetcode.com/problems/find-the-distinct-difference-array/) | [C++](./C++/find-the-distinct-difference-array.cpp) [Python](./Python/find-the-distinct-difference-array.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Prefix Sum
+2716 | [Minimize String Length](https://leetcode.com/problems/minimize-string-length/) | [C++](./C++/minimize-string-length.cpp) [Python](./Python/minimize-string-length.py) | _O(n)_ | _O(1)_ | Easy | | Hash Table
+2717 | [Sum of Matrix After Queries](https://leetcode.com/problems/sum-of-matrix-after-queries/) | [C++](./C++/sum-of-matrix-after-queries.cpp) [Python](./Python/sum-of-matrix-after-queries.py) | _O(n + q)_ | _O(n)_ | Medium | | Hash Table
 
 <br/>
 <div align="right">
@@ -721,6 +724,7 @@
 2684 | [Maximum Number of Moves in a Grid](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/) | [C++](./C++/maximum-number-of-moves-in-a-grid.cpp) [Python](./Python/maximum-number-of-moves-in-a-grid.py) | _O(m * n)_   | _O(m)_        | Medium         | | DP, BFS
 2707 | [Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/) | [C++](./C++/extra-characters-in-a-string.cpp) [Python](./Python/extra-characters-in-a-string.py) | _O(n * l)_   | _O(n + t)_        | Medium         | | DP, Trie
 2713 | [Maximum Strictly Increasing Cells in a Matrix](https://leetcode.com/problems/maximum-strictly-increasing-cells-in-a-matrix/) | [C++](./C++/maximum-strictly-increasing-cells-in-a-matrix.cpp) [Python](./Python/maximum-strictly-increasing-cells-in-a-matrix.py) | _O(m * n * log(m * n))_   | _O(m * n)_        | Hard         | | Sort, DP
+2719 | [Count of Integers](https://leetcode.com/problems/count-of-integers/) | [C++](./C++/count-of-integers.cpp) [Python](./Python/count-of-integers.py) | _O(m * n)_   | _O(m + n)_        | Hard         | | DP
 
 <br/>
 <div align="right">
