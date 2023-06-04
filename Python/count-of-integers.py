@@ -19,8 +19,8 @@ class Solution(object):
                 new_dp = [[0]*(max_sum+1) for _ in xrange(2)]
                 for t in xrange(2):
                     for total in xrange(max_sum+1):
-                        for d in xrange(min((int(x[i]) if t else 9), max_sum-total)+1):
-                            new_dp[t][total+d] = (new_dp[t][total+d]+dp[int(t and d == int(x[i]))][total])%MOD
+                        for d in xrange(min((int(x[i]) if t else 9), total)+1):
+                            new_dp[t][total] = (new_dp[t][total]+dp[int(t and d == int(x[i]))][total-d])%MOD
                 dp = new_dp
             return reduce(lambda x, y: (x+y)%MOD, (dp[1][total] for total in xrange(min_sum, max_sum+1)))
 
