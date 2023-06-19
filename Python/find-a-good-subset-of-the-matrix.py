@@ -14,7 +14,7 @@ class Solution(object):
             if not mask:
                 return [i]
             for mask2, j in lookup.iteritems():
-                if mask&mask2 == 0:
+                if mask2&mask == 0:
                     return [j, i]
             lookup[mask] = i
         return []
