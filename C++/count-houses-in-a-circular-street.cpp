@@ -6,9 +6,7 @@ class Solution {
 public:
     int houseCount(Street* street, int k) {
         for (int _ = 0; _ < k; ++_) {
-            if (street->isDoorOpen()) {
-                street->closeDoor();
-            }
+            street->closeDoor();
             street->moveRight();
         }
         int result = 0;
