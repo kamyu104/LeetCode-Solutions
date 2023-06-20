@@ -13,8 +13,8 @@ class Solution(object):
         if i == len(s):
             result[-1] = 'z'
         else:
-            for j in xrange(i, len(s)):
-                if result[j] == 'a':
+            for i in xrange(i, len(s)):
+                if result[i] == 'a':
                     break
-                result[j] = chr(ord('a')+(ord(s[j])-ord('a'))-1)
+                result[i] = chr(ord(result[i])-1)
         return "".join(result)
