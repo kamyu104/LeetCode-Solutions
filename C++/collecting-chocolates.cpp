@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// mono stack, prefix sum, difference array
+// mono stack, difference array, prefix sum
 class Solution {
 public:
     long long minCost(vector<int>& nums, int x) {
