@@ -30,9 +30,9 @@ public:
             diff2[l + r] += (+1) * nums[i];      // diff1[k] has 0*nums[i] to for k >= l+r
         }
         vector<int64_t> diff1(size(diff2));
-        partial_sum(begin(diff2), end(diff2), begin(diff1));
+        partial_sum(cbegin(diff2), cend(diff2), begin(diff1));
         vector<int64_t> result(size(diff1));
-        partial_sum(begin(diff1), end(diff1), begin(result));
+        partial_sum(cbegin(diff1), cend(diff1), begin(result));
         return *min_element(cbegin(result), cend(result));
     }
 };
