@@ -1,7 +1,7 @@
 // Time:  O(m * 2^n)
 // Space: O(2^n)
 
-// bitmasks, constructive algorithms, greedy, submask enumeration
+// bitmasks, constructive algorithms, greedy
 class Solution {
 public:
     vector<int> goodSubsetofBinaryMatrix(vector<vector<int>>& grid) {
