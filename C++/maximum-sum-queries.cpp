@@ -14,7 +14,7 @@ public:
         for (int i = 0; i < size(queries); ++i) {
             sorted_queries.emplace_back(queries[i][0], queries[i][1], i);
         }
-        sort(begin(sorted_queries), end(sorted_queries), greater<tuple<int, int, int>>());
+        sort(rbegin(sorted_queries), rend(sorted_queries));
         vector<int> result(size(queries));
         vector<pair<int, int>> stk;
         for (const auto& [x, y, i] : sorted_queries) {
