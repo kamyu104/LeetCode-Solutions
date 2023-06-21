@@ -449,6 +449,7 @@
 2652 | [Sum Multiples](https://leetcode.com/problems/sum-multiples/) | [C++](./C++/sum-multiples.cpp) [Python](./Python/sum-multiples.py) | _O(1)_   | _O(1)_        | Easy         | | Math, Principle of Inclusion and Exclusion
 2656 | [Maximum Sum With Exactly K Elements](https://leetcode.com/problems/maximum-sum-with-exactly-k-elements/) | [C++](./C++/maximum-sum-with-exactly-k-elements.cpp) [Python](./Python/maximum-sum-with-exactly-k-elements.py) | _O(n)_   | _O(1)_        | Easy         | | Math
 2731 | [Movement of Robots](https://leetcode.com/problems/movement-of-robots/) | [C++](./C++/movement-of-robots.cpp) [Python](./Python/movement-of-robots.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Math
+2739 | [Total Distance Traveled](https://leetcode.com/problems/total-distance-traveled/) | [C++](./C++/total-distance-traveled.cpp) [Python](./Python/total-distance-traveled.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 
 <br/>
 <div align="right">
@@ -477,6 +478,7 @@
 2545 | [Sort the Students by Their Kth Score](https://leetcode.com/problems/sort-the-students-by-their-kth-score/) | [C++](./C++/sort-the-students-by-their-kth-score.cpp) [Python](./Python/sort-the-students-by-their-kth-score.py) | _O(mlogm)_   | _O(1)_        | Medium         | | Sort
 2659 | [Make Array Empty](https://leetcode.com/problems/make-array-empty/) | [C++](./C++/make-array-empty.cpp) [Python](./Python/make-array-empty.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Sort, BIT, Fenwick Tree
 2679 | [Sum in a Matrix](https://leetcode.com/problems/sum-in-a-matrix/) | [C++](./C++/sum-in-a-matrix.cpp) [Python](./Python/sum-in-a-matrix.py) | _O(m * nlogn)_   | _O(1)_        | Medium         | | Sort
+2740 | [Find the Value of the Partition](https://leetcode.com/problems/find-the-value-of-the-partition/) | [C++](./C++/find-the-value-of-the-partition.cpp) [Python](./Pythonfind-the-value-of-the-partition.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort
 
 <br/>
 <div align="right">
@@ -652,6 +654,7 @@
 2443 | [Sum of Number and Its Reverse](https://leetcode.com/problems/sum-of-number-and-its-reverse/) | [C++](./C++/sum-of-number-and-its-reverse.cpp) [Python](./Python/sum-of-number-and-its-reverse.py) | _O(n^(1/(2*log2(10))))_   | _O(log10(n)/2)_        | Medium         | | Brute Force, Backtracking
 2664 | [The Knight’s Tour](https://leetcode.com/problems/the-knights-tour/) | [C++](./C++/the-knights-tour.cpp) [Python](./Python/the-knights-tour.py) | _O(m * n)_   | _O(1)_        | Medium         | 🔒 | Backtracking, Greedy, `Warnsdorff's Rule`
 2698 | [Find the Punishment Number of an Integer](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/) | [C++](./C++/find-the-punishment-number-of-an-integer.cpp) [Python](./Python/find-the-punishment-number-of-an-integer.py) | _O(n * (logn)^(2*logn))_   | _O(logn)_        | Medium         | | Backtracking
+2741 | [Special Permutations](https://leetcode.com/problems/special-permutations/) | [C++](./C++/special-permutations.cpp) [Python](./Python/special-permutations.py) | _O(n^2 * 2^n)_   | _O(n * 2^n)_        | Medium         | | Backtracking, Memoization
 
 <br/>
 <div align="right">
@@ -731,6 +734,7 @@
 2707 | [Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/) | [C++](./C++/extra-characters-in-a-string.cpp) [Python](./Python/extra-characters-in-a-string.py) | _O(n * l)_   | _O(n + t)_        | Medium         | | DP, Trie
 2713 | [Maximum Strictly Increasing Cells in a Matrix](https://leetcode.com/problems/maximum-strictly-increasing-cells-in-a-matrix/) | [C++](./C++/maximum-strictly-increasing-cells-in-a-matrix.cpp) [Python](./Python/maximum-strictly-increasing-cells-in-a-matrix.py) | _O(m * n * log(m * n))_   | _O(m * n)_        | Hard         | | Sort, DP
 2719 | [Count of Integers](https://leetcode.com/problems/count-of-integers/) | [C++](./C++/count-of-integers.cpp) [Python](./Python/count-of-integers.py) | _O(m * n)_   | _O(m + n)_        | Hard         | | Combinatorics, DP
+2742 | [Painting the Walls](https://leetcode.com/problems/painting-the-walls/) | [C++](./C++/painting-the-walls.cpp) [Python](./Python/painting-the-walls.py) | _O(n^2)_   | _O(n)_        | Hard         | | Knapsack DP
 
 <br/>
 <div align="right">
@@ -857,8 +861,9 @@
 2508 | [Add Edges to Make Degrees of All Nodes Even](https://leetcode.com/problems/add-edges-to-make-degrees-of-all-nodes-even/)  | [C++](./C++/add-edges-to-make-degrees-of-all-nodes-even.cpp) [Python](./Python/add-edges-to-make-degrees-of-all-nodes-even.py) | _O(n)_ | _O(n)_| Hard           || Graph | 
 2608 | [Shortest Cycle in a Graph](https://leetcode.com/problems/shortest-cycle-in-a-graph/)  | [C++](./C++/shortest-cycle-in-a-graph.cpp) [Python](./Python/shortest-cycle-in-a-graph.py) | _O(n^2)_ | _O(n + e)_| Hard           || Graph, BFS |
 2662 | [Minimum Cost of a Path With Special Roads](https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/)  | [C++](./C++/minimum-cost-of-a-path-with-special-roads.cpp) [Python](./Python/minimum-cost-of-a-path-with-special-roads.py) | _O(n^2)_ | _O(n^2)_| Medium           || Graph, `Dijkstra's Algorithm` |
-2699 | [Modify Graph Edge Weights](https://leetcode.com/problems/modify-graph-edge-weights/)  | [C++](./C++/modify-graph-edge-weights.cpp) [Python](./Python/modify-graph-edge-weights.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_| Hard           || Graph, `Dijkstra's Algorithm` |
+2699 | [Modify Graph Edge Weights](https://leetcode.com/problems/modify-graph-edge-weights/)  | [C++](./C++/modify-graph-edge-weights.cpp) [Python](./Python/modify-graph-edge-weights.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard           || Graph, `Dijkstra's Algorithm` |
 2714 | [Find Shortest Path with K Hops](https://leetcode.com/problems/find-shortest-path-with-k-hops/)  | [C++](./C++/find-shortest-path-with-k-hops.cpp) [Python](./Python/find-shortest-path-with-k-hops.py) |  _O(n * k + (k * e) * log(n * k))_ | _O(n * k + e)_ | Hard           |🔒| Graph, `Dijkstra's Algorithm` |
+2737 | [Find the Closest Marked Node](https://leetcode.com/problems/find-the-closest-marked-node/)  | [C++](./C++/find-the-closest-marked-node.cpp) [Python](./Python/find-the-closest-marked-node.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium           |🔒| Graph, `Dijkstra's Algorithm` |
 
 <br/>
 <div align="right">
@@ -1060,6 +1065,7 @@
 2688 | [Find Active Users](https://leetcode.com/problems/find-active-users/) | [MySQL](./MySQL/find-active-users.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2701 | [Consecutive Transactions with Increasing Amounts](https://leetcode.com/problems/consecutive-transactions-with-increasing-amounts/) | [MySQL](./MySQL/consecutive-transactions-with-increasing-amounts.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 2720 | [Popularity Percentage](https://leetcode.com/problems/popularity-percentage/) | [MySQL](./MySQL/popularity-percentage.sql) | _O(n^2)_ | _O(n^2)_       | Hard           |🔒||
+2738 | [Count Occurrences in Text](https://leetcode.com/problems/count-occurrences-in-text/) | [MySQL](./MySQL/count-occurrences-in-text.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
