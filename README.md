@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2719%20%2F%202719-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2742%20%2F%202742-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -902,6 +902,7 @@
 2610 | [Convert an Array Into a 2D Array With Conditions](https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/) | [C++](./C++/convert-an-array-into-a-2d-array-with-conditions.cpp) [Python](./Python/convert-an-array-into-a-2d-array-with-conditions.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Constructive Algorithms
 2647 | [Color the Triangle Red](https://leetcode.com/problems/color-the-triangle-red/) | [C++](./C++/color-the-triangle-red.cpp) [Python](./Python/color-the-triangle-red.py) | _O(n^2)_ | _O(1)_ | Hard | 🔒 | Constructive Algorithms
 2654 | [Minimum Number of Operations to Make All Array Elements Equal to 1](https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/) | [C++](./C++/minimum-number-of-operations-to-make-all-array-elements-equal-to-1.cpp) [Python](./Python/minimum-number-of-operations-to-make-all-array-elements-equal-to-1.py) | _O(n^2)_ | _O(1)_ | Medium | | Math, Number Theory, Constructive Algorithms
+2728 | [Count Houses in a Circular Street](https://leetcode.com/problems/count-houses-in-a-circular-street/) | [C++](./C++/count-houses-in-a-circular-street.cpp) [Python](./Python/count-houses-in-a-circular-street.py) | _O(k)_ | _O(1)_ | Easy | 🔒 | Constructive Algorithms
 
 <br/>
 <div align="right">
@@ -985,6 +986,13 @@
 2704 | [To Be Or Not To Be](https://leetcode.com/problems/to-be-or-not-to-be/) | [TypeScript](./TypeScript/to-be-or-not-to-be.ts) | _O(1)_ | _O(1)_       | Easy           | | |
 2705 | [Compact Object](https://leetcode.com/problems/compact-object/) | [TypeScript](./TypeScript/compact-object.ts) | _O(n)_ | _O(h)_       | Medium           | | DFS |
 2715 | [Execute Cancellable Function With Delay](https://leetcode.com/problems/execute-cancellable-function-with-delay/) | [TypeScript](./TypeScript/execute-cancellable-function-with-delay.ts) | _O(1)_ | _O(1)_       | Easy           | | |
+2721 | [Execute Asynchronous Functions in Parallel](https://leetcode.com/problems/execute-asynchronous-functions-in-parallel/) | [TypeScript](./TypeScript/execute-asynchronous-functions-in-parallel.ts) | _O(n)_ | _O(n)_       | Medium           | | Promise |
+2722 | [Join Two Arrays by ID](https://leetcode.com/problems/join-two-arrays-by-id/) | [TypeScript](./TypeScript/join-two-arrays-by-id.ts) | _O(mlogm + nlogn)_ | _O(1)_       | Medium           | | Sort, Two Pointers |
+2723 | [Add Two Promises](https://leetcode.com/problems/add-two-promises/) | [TypeScript](./TypeScript/add-two-promises.ts) | _O(1)_ | _O(1)_       | Easy           | | Promise |
+2724 | [Sort By](https://leetcode.com/problems/sort-by/) | [TypeScript](./TypeScript/sort-by.ts) | _O(nlogn)_ | _O(1)_       | Easy           | | Sort |
+2725 | [Interval Cancellation](https://leetcode.com/problems/interval-cancellation/) | [TypeScript](./TypeScript/interval-cancellation.ts) | _O(1)_ | _O(1)_       | Easy           | | |
+2726 | [Calculator with Method Chaining](https://leetcode.com/problems/calculator-with-method-chaining/) | [TypeScript](./TypeScript/calculator-with-method-chaining.ts) | _O(1)_ | _O(1)_       | Easy           | | |
+2727 | [Calculator with Method Chaining](https://leetcode.com/problems/is-object-empty/) | [TypeScript](./TypeScript/is-object-empty.ts) | _O(1)_ | _O(1)_       | Easy           | | |
 
 <br/>
 <div align="right">
@@ -1043,6 +1051,7 @@
 2687 | [Bikes Last Time Used](https://leetcode.com/problems/bikes-last-time-used/) | [MySQL](./MySQL/bikes-last-time-used.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 2688 | [Find Active Users](https://leetcode.com/problems/find-active-users/) | [MySQL](./MySQL/find-active-users.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2701 | [Consecutive Transactions with Increasing Amounts](https://leetcode.com/problems/consecutive-transactions-with-increasing-amounts/) | [MySQL](./MySQL/consecutive-transactions-with-increasing-amounts.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+2720 | [Popularity Percentage](https://leetcode.com/problems/popularity-percentage/) | [MySQL](./MySQL/popularity-percentage.sql) | _O(n^2)_ | _O(n^2)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
