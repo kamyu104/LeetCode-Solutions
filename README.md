@@ -478,7 +478,7 @@
 2545 | [Sort the Students by Their Kth Score](https://leetcode.com/problems/sort-the-students-by-their-kth-score/) | [C++](./C++/sort-the-students-by-their-kth-score.cpp) [Python](./Python/sort-the-students-by-their-kth-score.py) | _O(mlogm)_   | _O(1)_        | Medium         | | Sort
 2659 | [Make Array Empty](https://leetcode.com/problems/make-array-empty/) | [C++](./C++/make-array-empty.cpp) [Python](./Python/make-array-empty.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Sort, BIT, Fenwick Tree
 2679 | [Sum in a Matrix](https://leetcode.com/problems/sum-in-a-matrix/) | [C++](./C++/sum-in-a-matrix.cpp) [Python](./Python/sum-in-a-matrix.py) | _O(m * nlogn)_   | _O(1)_        | Medium         | | Sort
-2740 | [Find the Value of the Partition](https://leetcode.com/problems/find-the-value-of-the-partition/) | [C++](./C++/find-the-value-of-the-partition.cpp) [Python](./Pythonfind-the-value-of-the-partition.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort
+2740 | [Find the Value of the Partition](https://leetcode.com/problems/find-the-value-of-the-partition/) | [C++](./C++/find-the-value-of-the-partition.cpp) [Python](./Python/find-the-value-of-the-partition.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort
 
 <br/>
 <div align="right">
