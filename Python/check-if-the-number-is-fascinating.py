@@ -1,7 +1,7 @@
 # Time:  O(logn)
 # Space: O(1)
 
-# string, bitmask
+# string, bitmasks
 class Solution(object):
     def isFascinating(self, n):
         """
