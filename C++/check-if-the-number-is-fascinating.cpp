@@ -1,7 +1,7 @@
 // Time:  O(logn)
 // Space: O(1)
 
-// string, bitmask
+// string, bitmasks
 class Solution {
 public:
     bool isFascinating(int n) {
