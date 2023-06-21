@@ -154,6 +154,7 @@
 2683 | [Neighboring Bitwise XOR](https://leetcode.com/problems/neighboring-bitwise-xor/) | [C++](./C++/neighboring-bitwise-xor.cpp) [Python](./Python/neighboring-bitwise-xor.py) | _O(n)_ | _O(1)_ | Medium | | Array
 2711 | [Difference of Number of Distinct Values on Diagonals](https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/) | [C++](./C++/difference-of-number-of-distinct-values-on-diagonals.cpp) [Python](./Python/difference-of-number-of-distinct-values-on-diagonals.py) | _O(m * n)_ | _O(min(m, n))_ | Medium | | Prefix Sum
 2717 | [Semi-Ordered Permutation](https://leetcode.com/problems/semi-ordered-permutation/) | [C++](./C++/semi-ordered-permutation.cpp) [Python](./Python/semi-ordered-permutation.py) | _O(n)_ | _O(1)_ | Easy | | Array
+2733 | [Neither Minimum nor Maximum](https://leetcode.com/problems/neither-minimum-nor-maximum/) | [C++](./C++/neither-minimum-nor-maximum.cpp) [Python](./Python/neither-minimum-nor-maximum.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -208,6 +209,7 @@
 2586 | [Count the Number of Vowel Strings in Range](https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/)| [C++](./C++/count-the-number-of-vowel-strings-in-range.cpp) [Python](./Python/count-the-number-of-vowel-strings-in-range.py)| _O(n)_ | _O(1)_ | Medium | | String |
 2678 | [Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens/)| [C++](./C++/number-of-senior-citizens.cpp) [Python](./Python/number-of-senior-citizens.py)| _O(n)_ | _O(1)_ | Easy | | String |
 2710 | [Remove Trailing Zeros From a String](https://leetcode.com/problems/remove-trailing-zeros-from-a-string/)| [C++](./C++/remove-trailing-zeros-from-a-string.cpp) [Python](./Python/remove-trailing-zeros-from-a-string.py)| _O(n)_ | _O(1)_ | Easy | | String |
+2729 | [Check if The Number is Fascinating](https://leetcode.com/problems/check-if-the-number-is-fascinating/)| [C++](./C++/check-if-the-number-is-fascinating.cpp) [Python](./Python/check-if-the-number-is-fascinating.py)| _O(logn)_ | _O(1)_ | Easy | | String, Bitmasks |
 
 <br/>
 <div align="right">
@@ -243,6 +245,8 @@
 2355 | [Maximum Number of Books You Can Take](https://leetcode.com/problems/maximum-number-of-books-you-can-take/) | [C++](./C++/maximum-number-of-books-you-can-take.cpp) [Python](./Python/maximum-number-of-books-you-can-take.py) | _O(n)_  | _O(n)_         | Hard           | 🔒 | Mono Stack, Math
 2454 | [Next Greater Element IV](https://leetcode.com/problems/next-greater-element-iv/) | [C++](./C++/next-greater-element-iv.cpp) [Python](./Python/next-greater-element-iv.py) | _O(n)_ | _O(n)_ | Hard | | Mono Stack
 2696 | [Minimum String Length After Removing Substrings](https://leetcode.com/problems/minimum-string-length-after-removing-substrings/) | [C++](./C++/minimum-string-length-after-removing-substrings.cpp) [Python](./Python/minimum-string-length-after-removing-substrings.py) | _O(n)_ | _O(n)_ | Easy | | Stack
+2735 | [Collecting Chocolates](https://leetcode.com/problems/collecting-chocolates/) | [C++](./C++/collecting-chocolates.cpp) [Python](./Python/collecting-chocolates.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack, Difference Array, Prefix Sum, Binary Search, Mono Deque, Brute Force
+2736 | [Maximum Sum Queries](https://leetcode.com/problems/maximum-sum-queries/) | [C++](./C++/maximum-sum-queries.cpp) [Python](./Python/maximum-sum-queries.py) | _O(nlogn + mlogm + mlogn)_ | _O(n + m)_ | Hard | | Sort, Mono Stack, Binary Search
 
 <br/>
 <div align="right">
@@ -443,7 +447,8 @@
 2614 | [Prime In Diagonal](https://leetcode.com/problems/prime-in-diagonal/)| [C++](./C++/prime-in-diagonal.cpp) [Python](./Python/prime-in-diagonal.py)| precompute: _O(MAX_N)_<br>runtime: _O(n)_ | _O(MAX_N)_ | Easy | | Number Theory, `Linear Sieve of Eratosthenes` |
 2651 | [Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/) | [C++](./C++/calculate-delayed-arrival-time.cpp) [Python](./Python/calculate-delayed-arrival-time.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 2652 | [Sum Multiples](https://leetcode.com/problems/sum-multiples/) | [C++](./C++/sum-multiples.cpp) [Python](./Python/sum-multiples.py) | _O(1)_   | _O(1)_        | Easy         | | Math, Principle of Inclusion and Exclusion
-2656 | [Maximum Sum With Exactly K Elements ](https://leetcode.com/problems/maximum-sum-with-exactly-k-elements/) | [C++](./C++/maximum-sum-with-exactly-k-elements.cpp) [Python](./Python/maximum-sum-with-exactly-k-elements.py) | _O(n)_   | _O(1)_        | Easy         | | Math
+2656 | [Maximum Sum With Exactly K Elements](https://leetcode.com/problems/maximum-sum-with-exactly-k-elements/) | [C++](./C++/maximum-sum-with-exactly-k-elements.cpp) [Python](./Python/maximum-sum-with-exactly-k-elements.py) | _O(n)_   | _O(1)_        | Easy         | | Math
+2731 | [Movement of Robots](https://leetcode.com/problems/movement-of-robots/) | [C++](./C++/movement-of-robots.cpp) [Python](./Python/movement-of-robots.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Math
 
 <br/>
 <div align="right">
@@ -517,6 +522,7 @@
 2570 | [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | [C++](./C++/merge-two-2d-arrays-by-summing-values.cpp) [Python](./Python/merge-two-2d-arrays-by-summing-values.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers
 2609 | [Find the Longest Balanced Substring of a Binary String](https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/) | [C++](./C++/find-the-longest-balanced-substring-of-a-binary-string.cpp) [Python](./Python/find-the-longest-balanced-substring-of-a-binary-string.py) | _O(n)_ | _O(1)_ | Easy | | String, Two Pointers
 2653 | [Sliding Subarray Beauty](https://leetcode.com/problems/sliding-subarray-beauty/) | [C++](./C++/sliding-subarray-beauty.cpp) [Python](./Python/sliding-subarray-beauty.py) | _O(nlogk)_ | _O(k)_ | Medium | | Sorted List, Ordered Set, Two Pointers
+2730 | [Find the Longest Semi-Repetitive Substring](https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/) | [C++](./C++/find-the-longest-semi-repetitive-substring.cpp) [Python](./Python/find-the-longest-semi-repetitive-substring.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
 
 <br/>
 <div align="right">
@@ -821,6 +827,7 @@
 2706 | [Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/) | [C++](./C++/buy-two-chocolates.cpp) [Python](./Python/buy-two-chocolates.py) | _O(n)_ | _O(1)_ | Easy | | Greedy
 2708 | [Maximum Strength of a Group](https://leetcode.com/problems/maximum-strength-of-a-group/) | [C++](./C++/maximum-strength-of-a-group.cpp) [Python](./Python/maximum-strength-of-a-group.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 2712 | [Minimum Cost to Make All Characters Equal](https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/) | [C++](./C++/minimum-cost-to-make-all-characters-equal.cpp) [Python](./Python/minimum-cost-to-make-all-characters-equal.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+2734 | [Lexicographically Smallest String After Substring Operation](https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/) | [C++](./C++/lexicographically-smallest-string-after-substring-operation.cpp) [Python](./Python/lexicographically-smallest-string-after-substring-operation.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 
 <br/>
 <div align="right">
@@ -903,6 +910,7 @@
 2647 | [Color the Triangle Red](https://leetcode.com/problems/color-the-triangle-red/) | [C++](./C++/color-the-triangle-red.cpp) [Python](./Python/color-the-triangle-red.py) | _O(n^2)_ | _O(1)_ | Hard | 🔒 | Constructive Algorithms
 2654 | [Minimum Number of Operations to Make All Array Elements Equal to 1](https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/) | [C++](./C++/minimum-number-of-operations-to-make-all-array-elements-equal-to-1.cpp) [Python](./Python/minimum-number-of-operations-to-make-all-array-elements-equal-to-1.py) | _O(n^2)_ | _O(1)_ | Medium | | Math, Number Theory, Constructive Algorithms
 2728 | [Count Houses in a Circular Street](https://leetcode.com/problems/count-houses-in-a-circular-street/) | [C++](./C++/count-houses-in-a-circular-street.cpp) [Python](./Python/count-houses-in-a-circular-street.py) | _O(k)_ | _O(1)_ | Easy | 🔒 | Constructive Algorithms
+2732 | [Find a Good Subset of the Matrix](https://leetcode.com/problems/find-a-good-subset-of-the-matrix/) | [C++](./C++/find-a-good-subset-of-the-matrix.cpp) [Python](./Python/find-a-good-subset-of-the-matrix.py) | _O(m * 2^n)_ | _O(2^n)_ | Hard | | Bitmasks, Constructive Algorithms, Greedy
 
 <br/>
 <div align="right">
@@ -992,7 +1000,7 @@
 2724 | [Sort By](https://leetcode.com/problems/sort-by/) | [TypeScript](./TypeScript/sort-by.ts) | _O(nlogn)_ | _O(1)_       | Easy           | | Sort |
 2725 | [Interval Cancellation](https://leetcode.com/problems/interval-cancellation/) | [TypeScript](./TypeScript/interval-cancellation.ts) | _O(1)_ | _O(1)_       | Easy           | | |
 2726 | [Calculator with Method Chaining](https://leetcode.com/problems/calculator-with-method-chaining/) | [TypeScript](./TypeScript/calculator-with-method-chaining.ts) | _O(1)_ | _O(1)_       | Easy           | | |
-2727 | [Calculator with Method Chaining](https://leetcode.com/problems/is-object-empty/) | [TypeScript](./TypeScript/is-object-empty.ts) | _O(1)_ | _O(1)_       | Easy           | | |
+2727 | [Is Object Empty](https://leetcode.com/problems/is-object-empty/) | [TypeScript](./TypeScript/is-object-empty.ts) | _O(1)_ | _O(1)_       | Easy           | | |
 
 <br/>
 <div align="right">
