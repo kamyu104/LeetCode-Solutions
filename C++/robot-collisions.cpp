@@ -34,6 +34,7 @@ public:
                 stk.pop_back();
             }
         }
+        
         vector<int> result;
         result.reserve(size(healths));
         for (const auto& x : healths) {
