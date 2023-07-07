@@ -8,10 +8,9 @@ public:
         while (!street->isDoorOpen()) {
             street->moveRight();
         }
-        street->moveRight();
         int result = 0;
-        for (int i = 1; i <= k; ++i) {
-            if (street->isDoorOpen()) {
+        for (int i = 0; i <= k; ++i) {
+            if (i && street->isDoorOpen()) {
                 street->closeDoor();
                 result = i;
             }
