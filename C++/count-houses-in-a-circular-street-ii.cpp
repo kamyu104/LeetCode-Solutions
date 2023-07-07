@@ -1,4 +1,4 @@
-// Time:  O(n)
+// Time:  O(k)
 // Space: O(1)
 
 // constructive algorithms
