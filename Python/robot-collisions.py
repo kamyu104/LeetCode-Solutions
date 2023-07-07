@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-# simulation, stack
+# sort, simulation, stack
 class Solution(object):
     def survivedRobotsHealths(self, positions, healths, directions):
         """
