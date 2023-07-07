@@ -1,7 +1,7 @@
 # Time:  O(1)
 # Space: O(1)
 
-# linear search
+# math, linear search, bit manipulations
 class Solution(object):
     def makeTheIntegerZero(self, num1, num2):
         """
