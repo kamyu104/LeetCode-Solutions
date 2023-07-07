@@ -21,10 +21,9 @@ class Solution(object):
         """
         while not street.isDoorOpen():
             street.moveRight()
-        street.moveRight()
         result = 0
-        for i in xrange(1, k+1):
-            if street.isDoorOpen():
+        for i in xrange(k+1):
+            if i and street.isDoorOpen():
                 street.closeDoor()
                 result = i
             street.moveRight()
