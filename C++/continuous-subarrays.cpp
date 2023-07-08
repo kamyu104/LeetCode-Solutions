@@ -16,13 +16,13 @@ public:
                 mx.pop_back();
             }
             mx.emplace_back(right);
-            while (!(nums[mx.front()] - nums[mn.front()] <= 2)) {
-                if (mn.front() < mx.front()) {
-                    mn.pop_front();
-                } else {
-                    mx.pop_front();
-                }
-                left = max(left, min(mn.front(), mx.front()));
+            while (!(nums[right] - nums[mn.front()] <= 2)) {
+                left = max(left, mn.front() + 1);
+                mn.pop_front();
+            }
+             while (!(nums[mx.front()] - nums[right] <= 2)) {
+                left = max(left, mx.front() + 1);
+                mx.pop_front();
             }
             result += right - left + 1;
         }
