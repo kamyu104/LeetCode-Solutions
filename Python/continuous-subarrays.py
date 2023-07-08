@@ -20,12 +20,10 @@ class Solution(object):
             while mx and nums[mx[-1]] < nums[right]:
                 mx.pop()
             mx.append(right)
-            while not nums[mx[0]]-nums[mn[0]] <= 2:
-                if mn[0] < mx[0]:
-                    mn.popleft()
-                else:
-                    mx.popleft()
-                left = max(left, min(mn[0], mx[0]))
+            while not nums[right]-nums[mn[0]] <= 2:
+                left = max(left, mn.popleft()+1)
+            while not nums[mx[0]]-nums[right] <= 2:
+                left = max(left, mx.popleft()+1)
             result += right-left+1
         return result
 
