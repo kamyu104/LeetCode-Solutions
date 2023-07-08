@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2742%20%2F%202742-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2764%20%2F%202764-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -371,6 +371,8 @@
 2670 | [Find the Distinct Difference Array](https://leetcode.com/problems/find-the-distinct-difference-array/) | [C++](./C++/find-the-distinct-difference-array.cpp) [Python](./Python/find-the-distinct-difference-array.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Prefix Sum
 2716 | [Minimize String Length](https://leetcode.com/problems/minimize-string-length/) | [C++](./C++/minimize-string-length.cpp) [Python](./Python/minimize-string-length.py) | _O(n)_ | _O(1)_ | Easy | | Hash Table
 2718 | [Sum of Matrix After Queries](https://leetcode.com/problems/sum-of-matrix-after-queries/) | [C++](./C++/sum-of-matrix-after-queries.cpp) [Python](./Python/sum-of-matrix-after-queries.py) | _O(n + q)_ | _O(n)_ | Medium | | Hash Table
+2744 | [Find Maximum Number of String Pairs](https://leetcode.com/problems/find-maximum-number-of-string-pairs/) | [C++](./C++/find-maximum-number-of-string-pairs.cpp) [Python](./Python/find-maximum-number-of-string-pairs.py) | _O(n)_ | _O(1)_ | Easy | | Hash Table
+2748 | [Number of Beautiful Pairs](https://leetcode.com/problems/number-of-beautiful-pairs/) | [C++](./C++/number-of-beautiful-pairs.cpp) [Python](./Python/number-of-beautiful-pairs.py) | _O(nlogr)_ | _O(1)_ | Easy | | Hash Table
 
 <br/>
 <div align="right">
@@ -450,6 +452,8 @@
 2656 | [Maximum Sum With Exactly K Elements](https://leetcode.com/problems/maximum-sum-with-exactly-k-elements/) | [C++](./C++/maximum-sum-with-exactly-k-elements.cpp) [Python](./Python/maximum-sum-with-exactly-k-elements.py) | _O(n)_   | _O(1)_        | Easy         | | Math
 2731 | [Movement of Robots](https://leetcode.com/problems/movement-of-robots/) | [C++](./C++/movement-of-robots.cpp) [Python](./Python/movement-of-robots.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Math
 2739 | [Total Distance Traveled](https://leetcode.com/problems/total-distance-traveled/) | [C++](./C++/total-distance-traveled.cpp) [Python](./Python/total-distance-traveled.py) | _O(1)_   | _O(1)_        | Easy         | | Math
+2749 | [Minimum Operations to Make the Integer Zero](https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/) | [C++](./C++/minimum-operations-to-make-the-integer-zero.cpp) [Python](./Python/minimum-operations-to-make-the-integer-zero.py) | _O(1)_   | _O(1)_        | Medium         | | Linear Search, Bit Manipulations, Math
+2750 | [Ways to Split Array Into Good Subarrays](https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/) | [C++](./C++/ways-to-split-array-into-good-subarrays.cpp) [Python](./Python/ways-to-split-array-into-good-subarrays.py) | _O(n)_   | _O(1)_        | Medium         | | Combinatorics
 
 <br/>
 <div align="right">
@@ -525,6 +529,8 @@
 2609 | [Find the Longest Balanced Substring of a Binary String](https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/) | [C++](./C++/find-the-longest-balanced-substring-of-a-binary-string.cpp) [Python](./Python/find-the-longest-balanced-substring-of-a-binary-string.py) | _O(n)_ | _O(1)_ | Easy | | String, Two Pointers
 2653 | [Sliding Subarray Beauty](https://leetcode.com/problems/sliding-subarray-beauty/) | [C++](./C++/sliding-subarray-beauty.cpp) [Python](./Python/sliding-subarray-beauty.py) | _O(nlogk)_ | _O(k)_ | Medium | | Sorted List, Ordered Set, Two Pointers
 2730 | [Find the Longest Semi-Repetitive Substring](https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/) | [C++](./C++/find-the-longest-semi-repetitive-substring.cpp) [Python](./Python/find-the-longest-semi-repetitive-substring.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
+2743 | [Count Substrings Without Repeating Character](https://leetcode.com/problems/count-substrings-without-repeating-character/) | [C++](./C++/count-substrings-without-repeating-character.cpp) [Python](./Python/count-substrings-without-repeating-character.py) | _O(n)_ | _O(1)_ | Medium | 🔒, variant of [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Two Pointers, Sliding Window
+2747 | [Count Zero Request Servers](https://leetcode.com/problems/count-zero-request-servers/) | [C++](./C++/count-zero-request-servers.cpp) [Python](./Python/count-zero-request-servers.py) | _O(nlogn + mlogm)_ | _O(n + m)_ | Hard | | Sort, Two Pointers, Line Sweep
 
 <br/>
 <div align="right">
@@ -735,6 +741,7 @@
 2713 | [Maximum Strictly Increasing Cells in a Matrix](https://leetcode.com/problems/maximum-strictly-increasing-cells-in-a-matrix/) | [C++](./C++/maximum-strictly-increasing-cells-in-a-matrix.cpp) [Python](./Python/maximum-strictly-increasing-cells-in-a-matrix.py) | _O(m * n * log(m * n))_   | _O(m * n)_        | Hard         | | Sort, DP
 2719 | [Count of Integers](https://leetcode.com/problems/count-of-integers/) | [C++](./C++/count-of-integers.cpp) [Python](./Python/count-of-integers.py) | _O(m * n)_   | _O(m + n)_        | Hard         | | Combinatorics, DP
 2742 | [Painting the Walls](https://leetcode.com/problems/painting-the-walls/) | [C++](./C++/painting-the-walls.cpp) [Python](./Python/painting-the-walls.py) | _O(n^2)_   | _O(n)_        | Hard         | | Knapsack DP
+2746 | [Decremental String Concatenation](https://leetcode.com/problems/decremental-string-concatenation/) | [C++](./C++/decremental-string-concatenation.cpp) [Python](./Python/decremental-string-concatenation.py) | _O(n)_   | _O(1)_        | Medium         | | DP
 
 <br/>
 <div align="right">
@@ -895,6 +902,7 @@
 2593 | [Find Score of an Array After Marking All Elements](https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/) | [C++](./C++/find-score-of-an-array-after-marking-all-elements.cpp) [Python](./Python/find-score-of-an-array-after-marking-all-elements.py) | _O(nlogn)_ | _O(n)_ | Medium | | Simulation, Sort, Hash Table |
 2596 | [Check Knight Tour Configuration](https://leetcode.com/problems/check-knight-tour-configuration/) | [C++](./C++/check-knight-tour-configuration.cpp) [Python](./Python/check-knight-tour-configuration.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Simulation, Hash Table |
 2682 | [Find the Losers of the Circular Game](https://leetcode.com/problems/find-the-losers-of-the-circular-game/) | [C++](./C++/find-the-losers-of-the-circular-game.cpp) [Python](./Python/find-the-losers-of-the-circular-game.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Simulation
+2751 | [Robot Collisions](https://leetcode.com/problems/robot-collisions/) | [C++](./C++/robot-collisions.cpp) [Python](./Python/robot-collisions.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Simulation, Stack
 
 <br/>
 <div align="right">
@@ -916,6 +924,8 @@
 2654 | [Minimum Number of Operations to Make All Array Elements Equal to 1](https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/) | [C++](./C++/minimum-number-of-operations-to-make-all-array-elements-equal-to-1.cpp) [Python](./Python/minimum-number-of-operations-to-make-all-array-elements-equal-to-1.py) | _O(n^2)_ | _O(1)_ | Medium | | Math, Number Theory, Constructive Algorithms
 2728 | [Count Houses in a Circular Street](https://leetcode.com/problems/count-houses-in-a-circular-street/) | [C++](./C++/count-houses-in-a-circular-street.cpp) [Python](./Python/count-houses-in-a-circular-street.py) | _O(k)_ | _O(1)_ | Easy | 🔒 | Constructive Algorithms
 2732 | [Find a Good Subset of the Matrix](https://leetcode.com/problems/find-a-good-subset-of-the-matrix/) | [C++](./C++/find-a-good-subset-of-the-matrix.cpp) [Python](./Python/find-a-good-subset-of-the-matrix.py) | _O(m * 2^n)_ | _O(2^n)_ | Hard | | Bitmasks, Constructive Algorithms, Greedy
+2745 | [Construct the Longest New String](https://leetcode.com/problems/construct-the-longest-new-string/) | [C++](./C++/construct-the-longest-new-string.cpp) [Python](./Python/construct-the-longest-new-string.py) | _O(1)_ | _O(1)_ | Medium | | Constructive Algorithms, Math
+2753 | [Count Houses in a Circular Street II](https://leetcode.com/problems/count-houses-in-a-circular-street-ii/) | [C++](./C++/count-houses-in-a-circular-street-ii.cpp) [Python](./Python/count-houses-in-a-circular-street-ii.py) | _O(k)_ | _O(1)_ | Hard | 🔒 | Constructive Algorithms
 
 <br/>
 <div align="right">
@@ -1066,6 +1076,7 @@
 2701 | [Consecutive Transactions with Increasing Amounts](https://leetcode.com/problems/consecutive-transactions-with-increasing-amounts/) | [MySQL](./MySQL/consecutive-transactions-with-increasing-amounts.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 2720 | [Popularity Percentage](https://leetcode.com/problems/popularity-percentage/) | [MySQL](./MySQL/popularity-percentage.sql) | _O(n^2)_ | _O(n^2)_       | Hard           |🔒||
 2738 | [Count Occurrences in Text](https://leetcode.com/problems/count-occurrences-in-text/) | [MySQL](./MySQL/count-occurrences-in-text.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
+2752 | [Customers with Maximum Number of Transactions on Consecutive Days](https://leetcode.com/problems/customers-with-maximum-number-of-transactions-on-consecutive-days/) | [MySQL](./MySQL/customers-with-maximum-number-of-transactions-on-consecutive-days.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 
 <br/>
 <div align="right">
