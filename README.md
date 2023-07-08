@@ -374,7 +374,7 @@
 2716 | [Minimize String Length](https://leetcode.com/problems/minimize-string-length/) | [C++](./C++/minimize-string-length.cpp) [Python](./Python/minimize-string-length.py) | _O(n)_ | _O(1)_ | Easy | | Hash Table
 2718 | [Sum of Matrix After Queries](https://leetcode.com/problems/sum-of-matrix-after-queries/) | [C++](./C++/sum-of-matrix-after-queries.cpp) [Python](./Python/sum-of-matrix-after-queries.py) | _O(n + q)_ | _O(n)_ | Medium | | Hash Table
 2744 | [Find Maximum Number of String Pairs](https://leetcode.com/problems/find-maximum-number-of-string-pairs/) | [C++](./C++/find-maximum-number-of-string-pairs.cpp) [Python](./Python/find-maximum-number-of-string-pairs.py) | _O(n)_ | _O(1)_ | Easy | | Hash Table
-2748 | [Number of Beautiful Pairs](https://leetcode.com/problems/number-of-beautiful-pairs/) | [C++](./C++/number-of-beautiful-pairs.cpp) [Python](./Python/number-of-beautiful-pairs.py) | _O(nlogr)_ | _O(1)_ | Easy | | Hash Table
+2748 | [Number of Beautiful Pairs](https://leetcode.com/problems/number-of-beautiful-pairs/) | [C++](./C++/number-of-beautiful-pairs.cpp) [Python](./Python/number-of-beautiful-pairs.py) | _O(nlogr)_ | _O(1)_ | Easy | | Number Theory, Freq Table
 
 <br/>
 <div align="right">
