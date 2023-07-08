@@ -14,8 +14,8 @@ Function.prototype.bindPolyfill = function(obj : any) {
     const symbol = Symbol();
     obj[symbol] = this;
     return (...args) => {
-      const result = obj[symbol](...args);
-      delete obj[symbol];
-      return result;
+        const result = obj[symbol](...args);
+        delete obj[symbol];
+        return result;
     }
 }
