@@ -21,12 +21,12 @@ class QueryBatcher {
             this.#last = curr + remain;
             this.#pending.push({key, resolve});
             if (this.#pending.length === 1) {
-                setTimeout(() => this.processPending(), remain);
+                setTimeout(() => this.#processPending(), remain);
             }
         });
     }
 
-    async processPending() {
+    async #processPending() {
         this.#last = Date.now();
         const pending = this.#pending;
         this.#pending = [];
