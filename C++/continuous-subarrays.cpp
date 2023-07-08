@@ -29,3 +29,28 @@ public:
         return result;
     }
 };
+
+// Time:  O(nlogn)
+// Space: O(n)
+// bst, two pointers
+class Solution2 {
+public:
+    long long continuousSubarrays(vector<int>& nums) {
+        int64_t result = 0;
+        map<int, int> lookup;
+        for (int right = 0, left = 0; right < nums.size(); ++right) {
+            lookup[nums[right]] = right;
+            for (auto it = begin(lookup); nums[right] - it->first > 2;) {
+                left = max(left, it->second + 1);
+                lookup.erase(it++);
+            }
+            for (auto it = prev(end(lookup)); it->first - nums[right] > 2;) {
+                left = max(left, it->second + 1);
+                lookup.erase(it--);
+            }
+            result += right - left + 1;
+        }
+        return result;
+    }
+};
+
