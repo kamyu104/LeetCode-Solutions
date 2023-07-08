@@ -20,9 +20,11 @@ class Solution(object):
                 mn, mx = nums[right]-2, nums[right]+2
                 for left in reversed(xrange(right)):
                     if not mn <= nums[left] <= mx:
-                        left += 1
                         break
                     mn, mx = max(mn, nums[left]-2), min(mx, nums[left]+2)
+                else:
+                    left = -1
+                left += 1
             result += right-left+1
         return result
     
