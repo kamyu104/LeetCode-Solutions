@@ -11,7 +11,7 @@ function deepMerge(obj1: any, obj2: any): any {
         return obj2;
     }
 
-    var result = Array.isArray(obj1) ? [] : {};
+    let result = Array.isArray(obj1) ? [] : {};
     Object.keys(obj1).forEach(key => {
         if (obj2[key] === undefined) {
             result[key] = obj1[key]; 
