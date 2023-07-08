@@ -1,5 +1,5 @@
 // Time:  O(1)
-// Space: O(!)
+// Space: O(1)
 
 declare global {
     interface Date {
