@@ -19,6 +19,6 @@ function deepMerge(obj1: any, obj2: any): any {
             result[key] = deepMerge(obj1[key], obj2[key]);
         }
     });
-    Object.keys(obj2).forEach(key => !obj1[key] ? result[key] = obj2[key] : null);
+    Object.keys(obj2).forEach(key => obj1[key] === undefined ? result[key] = obj2[key] : null);
     return result;
 };
