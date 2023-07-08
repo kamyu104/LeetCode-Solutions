@@ -1,5 +1,5 @@
-// Time:  O(1)
-// Space: O(1)
+// Time:  O(n)
+// Space: O(n)
 
 class QueryBatcher {
     #queryMultiple : (keys: string[]) => Promise<string[]>
