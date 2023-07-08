@@ -1,11 +1,40 @@
 # Time:  O(n)
-# Space: O(n)
+# Space: O(1)
 
 import collections
 
 
-# mono deque, two pointers
+# two pointers
 class Solution(object):
+    def continuousSubarrays(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        result = 1
+        left = 0
+        mn, mx = nums[0]-2, nums[0]+2
+        for right in xrange(1, len(nums)):
+            if mn <= nums[right] <= mx:
+                mn, mx = max(mn, nums[right]-2), min(mx, nums[right]+2)
+            else:
+                mn, mx = nums[right]-2, nums[right]+2
+                for left in reversed(xrange(right)):
+                    if not mn <= nums[left] <= mx:
+                        break
+                    mn, mx = max(mn, nums[left]-2), min(mx, nums[left]+2)
+                left += 1
+            result += right-left+1
+        return result
+    
+
+# Time:  O(n)
+# Space: O(n)
+import collections
+
+
+# mono deque, two pointers
+class Solution2(object):
     def continuousSubarrays(self, nums):
         """
         :type nums: List[int]
@@ -34,7 +63,7 @@ from sortedcontainers import SortedDict
 
 
 # ordered dict, two pointers
-class Solution2(object):
+class Solution3(object):
     def continuousSubarrays(self, nums):
         """
         :type nums: List[int]
