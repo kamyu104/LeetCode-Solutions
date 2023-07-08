@@ -20,7 +20,7 @@ public:
                 left = max(left, mn.front() + 1);
                 mn.pop_front();
             }
-             while (!(nums[mx.front()] - nums[right] <= 2)) {
+            while (!(nums[mx.front()] - nums[right] <= 2)) {
                 left = max(left, mx.front() + 1);
                 mx.pop_front();
             }
