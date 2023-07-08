@@ -155,6 +155,7 @@
 2711 | [Difference of Number of Distinct Values on Diagonals](https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/) | [C++](./C++/difference-of-number-of-distinct-values-on-diagonals.cpp) [Python](./Python/difference-of-number-of-distinct-values-on-diagonals.py) | _O(m * n)_ | _O(min(m, n))_ | Medium | | Prefix Sum
 2717 | [Semi-Ordered Permutation](https://leetcode.com/problems/semi-ordered-permutation/) | [C++](./C++/semi-ordered-permutation.cpp) [Python](./Python/semi-ordered-permutation.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2733 | [Neither Minimum nor Maximum](https://leetcode.com/problems/neither-minimum-nor-maximum/) | [C++](./C++/neither-minimum-nor-maximum.cpp) [Python](./Python/neither-minimum-nor-maximum.py) | _O(n)_ | _O(1)_ | Easy | | Array
+2760 | [Longest Even Odd Subarray With Threshold](https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/) | [C++](./C++/longest-even-odd-subarray-with-threshold.cpp) [Python](./Python/longest-even-odd-subarray-with-threshold.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -247,6 +248,7 @@
 2696 | [Minimum String Length After Removing Substrings](https://leetcode.com/problems/minimum-string-length-after-removing-substrings/) | [C++](./C++/minimum-string-length-after-removing-substrings.cpp) [Python](./Python/minimum-string-length-after-removing-substrings.py) | _O(n)_ | _O(n)_ | Easy | | Stack
 2735 | [Collecting Chocolates](https://leetcode.com/problems/collecting-chocolates/) | [C++](./C++/collecting-chocolates.cpp) [Python](./Python/collecting-chocolates.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack, Difference Array, Prefix Sum, Binary Search, Mono Deque, Brute Force
 2736 | [Maximum Sum Queries](https://leetcode.com/problems/maximum-sum-queries/) | [C++](./C++/maximum-sum-queries.cpp) [Python](./Python/maximum-sum-queries.py) | _O(nlogn + mlogm + mlogn)_ | _O(n + m)_ | Hard | | Sort, Mono Stack, Binary Search
+2764 | [is Array a Preorder of Some ‌Binary Tree](https://leetcode.com/problems/is-array-a-preorder-of-some-binary-tree/) | [C++](./C++/is-array-a-preorder-of-some-binary-tree.cpp) [Python](./Python/is-array-a-preorder-of-some-binary-tree.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Stack
 
 <br/>
 <div align="right">
@@ -454,6 +456,7 @@
 2739 | [Total Distance Traveled](https://leetcode.com/problems/total-distance-traveled/) | [C++](./C++/total-distance-traveled.cpp) [Python](./Python/total-distance-traveled.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 2749 | [Minimum Operations to Make the Integer Zero](https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/) | [C++](./C++/minimum-operations-to-make-the-integer-zero.cpp) [Python](./Python/minimum-operations-to-make-the-integer-zero.py) | _O(1)_   | _O(1)_        | Medium         | | Linear Search, Bit Manipulations, Math
 2750 | [Ways to Split Array Into Good Subarrays](https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/) | [C++](./C++/ways-to-split-array-into-good-subarrays.cpp) [Python](./Python/ways-to-split-array-into-good-subarrays.py) | _O(n)_   | _O(1)_        | Medium         | | Combinatorics
+2661 | [Prime Pairs With Target Sum](https://leetcode.com/problems/prime-pairs-with-target-sum/)| [C++](./C++/prime-pairs-with-target-sum.cpp) [Python](./Python/prime-pairs-with-target-sum.py)| _O(n)_ | _O(n)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes` |
 
 <br/>
 <div align="right">
@@ -531,6 +534,8 @@
 2730 | [Find the Longest Semi-Repetitive Substring](https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/) | [C++](./C++/find-the-longest-semi-repetitive-substring.cpp) [Python](./Python/find-the-longest-semi-repetitive-substring.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
 2743 | [Count Substrings Without Repeating Character](https://leetcode.com/problems/count-substrings-without-repeating-character/) | [C++](./C++/count-substrings-without-repeating-character.cpp) [Python](./Python/count-substrings-without-repeating-character.py) | _O(n)_ | _O(1)_ | Medium | 🔒, variant of [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Two Pointers, Sliding Window
 2747 | [Count Zero Request Servers](https://leetcode.com/problems/count-zero-request-servers/) | [C++](./C++/count-zero-request-servers.cpp) [Python](./Python/count-zero-request-servers.py) | _O(nlogn + mlogm)_ | _O(n + m)_ | Hard | | Sort, Two Pointers, Line Sweep
+2762 | [Continuous Subarrays](https://leetcode.com/problems/continuous-subarrays/) | [C++](./C++/continuous-subarrays.cpp) [Python](./Python/continuous-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | Mono Deque, BST, Ordered Dict, Two Pointers, Sliding Window
+2763 | [Sum of Imbalance Numbers of All Subarrays](https://leetcode.com/problems//sum-of-imbalance-numbers-of-all-subarrays/) | [C++](./C++//sum-of-imbalance-numbers-of-all-subarrays.cpp) [Python](./Python//sum-of-imbalance-numbers-of-all-subarrays.py) | _O(n)_ | _O(n)_ | Hard | | Two Pointers, Sliding Window, Hash Table, Combinatorics
 
 <br/>
 <div align="right">
@@ -1016,6 +1021,12 @@
 2725 | [Interval Cancellation](https://leetcode.com/problems/interval-cancellation/) | [TypeScript](./TypeScript/interval-cancellation.ts) | _O(1)_ | _O(1)_       | Easy           | | |
 2726 | [Calculator with Method Chaining](https://leetcode.com/problems/calculator-with-method-chaining/) | [TypeScript](./TypeScript/calculator-with-method-chaining.ts) | _O(1)_ | _O(1)_       | Easy           | | |
 2727 | [Is Object Empty](https://leetcode.com/problems/is-object-empty/) | [TypeScript](./TypeScript/is-object-empty.ts) | _O(1)_ | _O(1)_       | Easy           | | |
+2754 | [Bind Function to Context](https://leetcode.com/problems/bind-function-to-context/) | [TypeScript](./TypeScript/bind-function-to-context.ts) | _O(1)_ | _O(1)_       | Medium           | 🔒 | Symbol |
+2755 | [Deep Merge of Two Objects](https://leetcode.com/problems/deep-merge-of-two-objects/) | [TypeScript](./TypeScript/deep-merge-of-two-objects.ts) | _O(n + m)_ | _O(h)_       | Medium           | 🔒 | DFS |
+2756 | [Query Batching](https://leetcode.com/problems/query-batching/) | [TypeScript](./TypeScript/query-batching.ts) | _O(n)_ | _O(n)_       | Hard           | 🔒 | |
+2757 | [Generate Circular Array Values](https://leetcode.com/problems/generate-circular-array-values/) | [TypeScript](./TypeScript/generate-circular-array-values.ts) | _O(1)_ | _O(1)_       | Medium           | 🔒 | Generator |
+2758 | [Next Day](https://leetcode.com/problems/next-day/) | [TypeScript](./TypeScript/next-day.ts) | _O(1)_ | _O(1)_       | Easy           | 🔒 | |
+2759 | [Convert JSON String to Object](https://leetcode.com/problems/convert-json-string-to-object/) | [TypeScript](./TypeScript/convert-json-string-to-object.ts) | _O(n)_ | _O(h)_       | Hard           | 🔒 | Stack |
 
 <br/>
 <div align="right">
