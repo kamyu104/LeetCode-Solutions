@@ -456,7 +456,7 @@
 2739 | [Total Distance Traveled](https://leetcode.com/problems/total-distance-traveled/) | [C++](./C++/total-distance-traveled.cpp) [Python](./Python/total-distance-traveled.py) | _O(1)_   | _O(1)_        | Easy         | | Math
 2749 | [Minimum Operations to Make the Integer Zero](https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/) | [C++](./C++/minimum-operations-to-make-the-integer-zero.cpp) [Python](./Python/minimum-operations-to-make-the-integer-zero.py) | _O(1)_   | _O(1)_        | Medium         | | Linear Search, Bit Manipulations, Math
 2750 | [Ways to Split Array Into Good Subarrays](https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/) | [C++](./C++/ways-to-split-array-into-good-subarrays.cpp) [Python](./Python/ways-to-split-array-into-good-subarrays.py) | _O(n)_   | _O(1)_        | Medium         | | Combinatorics
-2661 | [Prime Pairs With Target Sum](https://leetcode.com/problems/prime-pairs-with-target-sum/)| [C++](./C++/prime-pairs-with-target-sum.cpp) [Python](./Python/prime-pairs-with-target-sum.py)| _O(n)_ | _O(n)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes` |
+2761 | [Prime Pairs With Target Sum](https://leetcode.com/problems/prime-pairs-with-target-sum/)| [C++](./C++/prime-pairs-with-target-sum.cpp) [Python](./Python/prime-pairs-with-target-sum.py)| _O(n)_ | _O(n)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes` |
 
 <br/>
 <div align="right">
