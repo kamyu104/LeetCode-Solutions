@@ -1,6 +1,9 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
+import itertools
+
+
 # hash table, sort
 class Solution(object):
     def relocateMarbles(self, nums, moveFrom, moveTo):
