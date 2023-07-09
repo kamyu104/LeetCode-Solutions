@@ -8,7 +8,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        result, l = -1, -1
+        result = l = -1
         for i in xrange(len(nums)-1):
             if l != -1 and nums[i-1] == nums[i+1]:
                 l += 1
