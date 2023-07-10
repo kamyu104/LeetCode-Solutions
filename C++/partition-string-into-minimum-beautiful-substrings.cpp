@@ -14,9 +14,6 @@ public:
         vector<int> dp(size(s) + 1, INF);
         dp[0] = 0;
         for (int i = 0; i < size(s); ++i) {
-            if (s[i] == '0') {
-                continue;
-            }
             int curr = 0;
             for (int j = i; j >= 0; --j) {
                 curr += (s[j] - '0') << (i - j);
