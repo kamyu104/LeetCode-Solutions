@@ -156,7 +156,7 @@
 2717 | [Semi-Ordered Permutation](https://leetcode.com/problems/semi-ordered-permutation/) | [C++](./C++/semi-ordered-permutation.cpp) [Python](./Python/semi-ordered-permutation.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2733 | [Neither Minimum nor Maximum](https://leetcode.com/problems/neither-minimum-nor-maximum/) | [C++](./C++/neither-minimum-nor-maximum.cpp) [Python](./Python/neither-minimum-nor-maximum.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2760 | [Longest Even Odd Subarray With Threshold](https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/) | [C++](./C++/longest-even-odd-subarray-with-threshold.cpp) [Python](./Python/longest-even-odd-subarray-with-threshold.py) | _O(n)_ | _O(1)_ | Easy | | Array
-2765 | [Longest Alternating Subarray](https://leetcode.com/problems/longest-alternating-subarray/) | [C++](./C++/longest-alternating-subarray.cpp) [Python](./Pythonlongest-alternating-subarray.py) | _O(n)_ | _O(1)_ | Easy | | Array
+2765 | [Longest Alternating Subarray](https://leetcode.com/problems/longest-alternating-subarray/) | [C++](./C++/longest-alternating-subarray.cpp) [Python](./Python/longest-alternating-subarray.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
