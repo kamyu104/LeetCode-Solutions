@@ -1,5 +1,5 @@
-# Time:  O(n)
-# Space: O(n)
+# Time:  O(c), c = len(coordinates)
+# Space: O(c)
 
 import collections
 
