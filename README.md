@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2764%20%2F%202764-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2772%20%2F%202772-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -156,6 +156,7 @@
 2717 | [Semi-Ordered Permutation](https://leetcode.com/problems/semi-ordered-permutation/) | [C++](./C++/semi-ordered-permutation.cpp) [Python](./Python/semi-ordered-permutation.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2733 | [Neither Minimum nor Maximum](https://leetcode.com/problems/neither-minimum-nor-maximum/) | [C++](./C++/neither-minimum-nor-maximum.cpp) [Python](./Python/neither-minimum-nor-maximum.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2760 | [Longest Even Odd Subarray With Threshold](https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/) | [C++](./C++/longest-even-odd-subarray-with-threshold.cpp) [Python](./Python/longest-even-odd-subarray-with-threshold.py) | _O(n)_ | _O(1)_ | Easy | | Array
+2765 | [Longest Alternating Subarray](https://leetcode.com/problems/longest-alternating-subarray/) | [C++](./C++/longest-alternating-subarray.cpp) [Python](./Pythonlongest-alternating-subarray.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -375,6 +376,8 @@
 2718 | [Sum of Matrix After Queries](https://leetcode.com/problems/sum-of-matrix-after-queries/) | [C++](./C++/sum-of-matrix-after-queries.cpp) [Python](./Python/sum-of-matrix-after-queries.py) | _O(n + q)_ | _O(n)_ | Medium | | Hash Table
 2744 | [Find Maximum Number of String Pairs](https://leetcode.com/problems/find-maximum-number-of-string-pairs/) | [C++](./C++/find-maximum-number-of-string-pairs.cpp) [Python](./Python/find-maximum-number-of-string-pairs.py) | _O(n)_ | _O(1)_ | Easy | | Hash Table
 2748 | [Number of Beautiful Pairs](https://leetcode.com/problems/number-of-beautiful-pairs/) | [C++](./C++/number-of-beautiful-pairs.cpp) [Python](./Python/number-of-beautiful-pairs.py) | _O(nlogr)_ | _O(1)_ | Easy | | Number Theory, Freq Table
+2766 | [Relocate Marbles](https://leetcode.com/problems/relocate-marbles/) | [C++](./C++/relocate-marbles.cpp) [Python](./Python/relocate-marbles.py) | _O(nlogn)_ | _O(n)_ | Medium | | Hash Table, Sort
+2768 | [Number of Black Blocks](https://leetcode.com/problems/number-of-black-blocks/) | [C++](./C++/number-of-black-blocks.cpp) [Python](./Python/number-of-black-blocks.py) | _O(c)_ | _O(c)_ | Medium | | Freq Table
 
 <br/>
 <div align="right">
@@ -747,6 +750,9 @@
 2719 | [Count of Integers](https://leetcode.com/problems/count-of-integers/) | [C++](./C++/count-of-integers.cpp) [Python](./Python/count-of-integers.py) | _O(m * n)_   | _O(m + n)_        | Hard         | | Combinatorics, DP
 2742 | [Painting the Walls](https://leetcode.com/problems/painting-the-walls/) | [C++](./C++/painting-the-walls.cpp) [Python](./Python/painting-the-walls.py) | _O(n^2)_   | _O(n)_        | Hard         | | Knapsack DP
 2746 | [Decremental String Concatenation](https://leetcode.com/problems/decremental-string-concatenation/) | [C++](./C++/decremental-string-concatenation.cpp) [Python](./Python/decremental-string-concatenation.py) | _O(n)_   | _O(1)_        | Medium         | | DP
+2767 | [Partition String Into Minimum Beautiful Substrings](https://leetcode.com/problems/partition-string-into-minimum-beautiful-substrings/) | [C++](./C++/partition-string-into-minimum-beautiful-substrings.cpp) [Python](./Python/partition-string-into-minimum-beautiful-substrings.py) | _O(n^2)_   | _O(n)_        | Medium         | | DP
+2770 | [Maximum Number of Jumps to Reach the Last Index](https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/) | [C++](./C++/maximum-number-of-jumps-to-reach-the-last-index.cpp) [Python](./Python/maximum-number-of-jumps-to-reach-the-last-index.py) | _O(n^2)_   | _O(n)_        | Medium         | | DP
+2771 | [Longest Non-decreasing Subarray From Two Arrays](https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/) | [C++](./C++/longest-non-decreasing-subarray-from-two-arrays.cpp) [Python](./Python/longest-non-decreasing-subarray-from-two-arrays.py) | _O(n)_   | _O(1)_        | Medium         | | DP
 
 <br/>
 <div align="right">
@@ -844,6 +850,8 @@
 2708 | [Maximum Strength of a Group](https://leetcode.com/problems/maximum-strength-of-a-group/) | [C++](./C++/maximum-strength-of-a-group.cpp) [Python](./Python/maximum-strength-of-a-group.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 2712 | [Minimum Cost to Make All Characters Equal](https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/) | [C++](./C++/minimum-cost-to-make-all-characters-equal.cpp) [Python](./Python/minimum-cost-to-make-all-characters-equal.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 2734 | [Lexicographically Smallest String After Substring Operation](https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/) | [C++](./C++/lexicographically-smallest-string-after-substring-operation.cpp) [Python](./Python/lexicographically-smallest-string-after-substring-operation.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+2769 | [Find the Maximum Achievable Number](https://leetcode.com/problems/find-the-maximum-achievable-number/) | [C++](./C++/find-the-maximum-achievable-number.cpp) [Python](./Python/find-the-maximum-achievable-number.py) | _O(1)_ | _O(1)_ | Easy | | Greedy, Math
+2772 | [Apply Operations to Make All Array Elements Equal to Zero](https://leetcode.com/problems/apply-operations-to-make-all-array-elements-equal-to-zero/) | [C++](./C++/apply-operations-to-make-all-array-elements-equal-to-zero.cpp) [Python](./Python/apply-operations-to-make-all-array-elements-equal-to-zero.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Sliding Window
 
 <br/>
 <div align="right">
