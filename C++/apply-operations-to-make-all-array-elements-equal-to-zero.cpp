@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// sliding window
+// greedy, sliding window
 class Solution {
 public:
     bool checkArray(vector<int>& nums, int k) {
