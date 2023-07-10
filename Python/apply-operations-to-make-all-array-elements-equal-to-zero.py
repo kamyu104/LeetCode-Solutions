@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-# sliding window
+# greedy, sliding window
 class Solution(object):
     def checkArray(self, nums, k):
         """
