@@ -16,13 +16,12 @@ class Solution(object):
         trie = _trie()
         for w in forbidden:
             reduce(dict.__getitem__, w, trie)["_end"]
-        l = max(len(w) for w in forbidden)
         result = 0
         right = len(word)-1
         for left in reversed(xrange(len(word))):
             node = trie
-            for i in xrange(left, min(right+1, left+l)):
-                if word[i] not in node:
+            for i in xrange(left, right+1):
+                if word[i] not in node:  # O(l) times
                     break
                 node = node[word[i]]
                 if "_end" in node:
