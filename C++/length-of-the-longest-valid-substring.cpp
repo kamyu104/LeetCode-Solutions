@@ -1,7 +1,7 @@
 // Time:  O((m + n) * l), n = len(word), m = len(forbidden), l = max(len(w) for w in forbidden)
 // Space: O(t), t is the size of trie
 
-// two poitners, sliding window, trie
+// two pointers, sliding window, trie
 class Solution {
 public:
     int longestValidSubstring(string word, vector<string>& forbidden) {
