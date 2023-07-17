@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// boyer-moore algorithm, linear search
+// Boyer–Moore majority vote algorithm, linear search
 class Solution {
 public:
     int minimumIndex(vector<int>& nums) {
