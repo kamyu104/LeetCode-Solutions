@@ -461,7 +461,7 @@
 2750 | [Ways to Split Array Into Good Subarrays](https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/) | [C++](./C++/ways-to-split-array-into-good-subarrays.cpp) [Python](./Python/ways-to-split-array-into-good-subarrays.py) | _O(n)_   | _O(1)_        | Medium         | | Combinatorics
 2761 | [Prime Pairs With Target Sum](https://leetcode.com/problems/prime-pairs-with-target-sum/)| [C++](./C++/prime-pairs-with-target-sum.cpp) [Python](./Python/prime-pairs-with-target-sum.py)| _O(n)_ | _O(n)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes` |
 2778 | [Sum of Squares of Special Elements](https://leetcode.com/problems/sum-of-squares-of-special-elements/)| [C++](./C++/sum-of-squares-of-special-elements.cpp) [Python](./Python/sum-of-squares-of-special-elements.py)| _O(sqrt(n))_ | _O(1)_ | Easy | | Number Theory |
-2780 | [Minimum Index of a Valid Split](https://leetcode.com/problems/minimum-index-of-a-valid-split/)| [C++](./C++/minimum-index-of-a-valid-split.cpp) [Python](./Python/minimum-index-of-a-valid-split.py)| _O(n)_ | _O(1)_ | Medium | | `Boyer-Moore Algorithm`, Linear Search |
+2780 | [Minimum Index of a Valid Split](https://leetcode.com/problems/minimum-index-of-a-valid-split/)| [C++](./C++/minimum-index-of-a-valid-split.cpp) [Python](./Python/minimum-index-of-a-valid-split.py)| _O(n)_ | _O(1)_ | Medium | | `Boyer–Moore Majority Vote Algorithm`, Linear Search |
 
 <br/>
 <div align="right">
