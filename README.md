@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2772%20%2F%202772-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2781%20%2F%202781-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -460,6 +460,8 @@
 2749 | [Minimum Operations to Make the Integer Zero](https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/) | [C++](./C++/minimum-operations-to-make-the-integer-zero.cpp) [Python](./Python/minimum-operations-to-make-the-integer-zero.py) | _O(1)_   | _O(1)_        | Medium         | | Linear Search, Bit Manipulations, Math
 2750 | [Ways to Split Array Into Good Subarrays](https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/) | [C++](./C++/ways-to-split-array-into-good-subarrays.cpp) [Python](./Python/ways-to-split-array-into-good-subarrays.py) | _O(n)_   | _O(1)_        | Medium         | | Combinatorics
 2761 | [Prime Pairs With Target Sum](https://leetcode.com/problems/prime-pairs-with-target-sum/)| [C++](./C++/prime-pairs-with-target-sum.cpp) [Python](./Python/prime-pairs-with-target-sum.py)| _O(n)_ | _O(n)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes` |
+2778 | [Sum of Squares of Special Elements](https://leetcode.com/problems/sum-of-squares-of-special-elements/)| [C++](./C++/sum-of-squares-of-special-elements.cpp) [Python](./Python/sum-of-squares-of-special-elements.py)| _O(sqrt(n))_ | _O(1)_ | Easy | | Number Theory |
+2780 | [Minimum Index of a Valid Split](https://leetcode.com/problems/minimum-index-of-a-valid-split/)| [C++](./C++/minimum-index-of-a-valid-split.cpp) [Python](./Python/minimum-index-of-a-valid-split.py)| _O(n)_ | _O(1)_ | Medium | | `Boyer-Moore Algorithm`, Linear Search |
 
 <br/>
 <div align="right">
@@ -538,7 +540,9 @@
 2743 | [Count Substrings Without Repeating Character](https://leetcode.com/problems/count-substrings-without-repeating-character/) | [C++](./C++/count-substrings-without-repeating-character.cpp) [Python](./Python/count-substrings-without-repeating-character.py) | _O(n)_ | _O(1)_ | Medium | 🔒, variant of [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Two Pointers, Sliding Window
 2747 | [Count Zero Request Servers](https://leetcode.com/problems/count-zero-request-servers/) | [C++](./C++/count-zero-request-servers.cpp) [Python](./Python/count-zero-request-servers.py) | _O(nlogn + mlogm)_ | _O(n + m)_ | Hard | | Sort, Two Pointers, Line Sweep
 2762 | [Continuous Subarrays](https://leetcode.com/problems/continuous-subarrays/) | [C++](./C++/continuous-subarrays.cpp) [Python](./Python/continuous-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | Mono Deque, BST, Ordered Dict, Two Pointers, Sliding Window
-2763 | [Sum of Imbalance Numbers of All Subarrays](https://leetcode.com/problems//sum-of-imbalance-numbers-of-all-subarrays/) | [C++](./C++//sum-of-imbalance-numbers-of-all-subarrays.cpp) [Python](./Python//sum-of-imbalance-numbers-of-all-subarrays.py) | _O(n)_ | _O(n)_ | Hard | | Two Pointers, Sliding Window, Hash Table, Combinatorics
+2763 | [Sum of Imbalance Numbers of All Subarrays](https://leetcode.com/problems/sum-of-imbalance-numbers-of-all-subarrays/) | [C++](./C++/sum-of-imbalance-numbers-of-all-subarrays.cpp) [Python](./Python/sum-of-imbalance-numbers-of-all-subarrays.py) | _O(n)_ | _O(n)_ | Hard | | Two Pointers, Sliding Window, Hash Table, Combinatorics
+2779 | [Maximum Beauty of an Array After Applying Operation](https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/) | [C++](./C++/maximum-beauty-of-an-array-after-applying-operation.cpp) [Python](./Python/maximum-beauty-of-an-array-after-applying-operation.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers, Sliding Window
+2781 | [Length of the Longest Valid Substring](https://leetcode.com/problems/length-of-the-longest-valid-substring/) | [C++](./C++/length-of-the-longest-valid-substring.cpp) [Python](./Python/length-of-the-longest-valid-substring.py) | _O((m + n) * l)_ | _O(t)_ | Hard | | Two Pointers, Sliding Window, Trie
 
 <br/>
 <div align="right">
@@ -652,6 +656,7 @@
 2467 | [Most Profitable Path in a Tree](https://leetcode.com/problems/most-profitable-path-in-a-tree/)| [C++](./C++/most-profitable-path-in-a-tree.cpp) [Python](./Python/most-profitable-path-in-a-tree.py)| _O(n)_ | _O(n)_ | Medium | | Tree, DFS |
 2477 | [Minimum Fuel Cost to Report to the Capital](https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital/)| [C++](./C++/minimum-fuel-cost-to-report-to-the-capital.cpp) [Python](./Python/minimum-fuel-cost-to-report-to-the-capital.py)| _O(n)_ | _O(h)_ | Medium | | Tree, DFS |
 2581 | [Count Number of Possible Root Nodes](https://leetcode.com/problems/count-number-of-possible-root-nodes/)| [C++](./C++/count-number-of-possible-root-nodes.cpp) [Python](./Python/count-number-of-possible-root-nodes.py)| _O(n)_ | _O(h)_ | Hard | | Tree, DFS |
+2773 | [Height of Special Binary Tree](https://leetcode.com/problems/height-of-special-binary-tree/)| [C++](./C++/height-of-special-binary-tree.cpp) [Python](./Python/height-of-special-binary-tree.py)| _O(n)_ | _O(h)_ | Medium | 🔒 | Tree, DFS, BFS |
 
 <br/>
 <div align="right">
@@ -1035,6 +1040,10 @@
 2757 | [Generate Circular Array Values](https://leetcode.com/problems/generate-circular-array-values/) | [TypeScript](./TypeScript/generate-circular-array-values.ts) | _O(1)_ | _O(1)_       | Medium           | 🔒 | Generator |
 2758 | [Next Day](https://leetcode.com/problems/next-day/) | [TypeScript](./TypeScript/next-day.ts) | _O(1)_ | _O(1)_       | Easy           | 🔒 | |
 2759 | [Convert JSON String to Object](https://leetcode.com/problems/convert-json-string-to-object/) | [TypeScript](./TypeScript/convert-json-string-to-object.ts) | _O(n)_ | _O(h)_       | Hard           | 🔒 | Stack |
+2774 | [Array Upper Bound](https://leetcode.com/problems/array-upper-bound/) | [TypeScript](./TypeScript/array-upper-bound.ts) | _O(logn)_ | _O(1)_       | Easy           | 🔒 | Binary Search |
+2775 | [Undefined to Null](https://leetcode.com/problems/undefined-to-null/) | [TypeScript](./TypeScript/undefined-to-null.ts) | _O(n)_ | _O(h)_       | Medium           | 🔒 | DFS |
+2776 | [Convert Callback Based Function to Promise Based Function](https://leetcode.com/problems/convert-callback-based-function-to-promise-based-function/) | [TypeScript](./TypeScript/convert-callback-based-function-to-promise-based-function.ts) | _O(1)_ | _O(1)_       | Medium           | 🔒 | Promise |
+2777 | [Date Range Generator](https://leetcode.com/problems/date-range-generator/) | [TypeScript](./TypeScript/date-range-generator.ts) | _O(1)_ | _O(1)_       | Medium           | 🔒 | Generator |
 
 <br/>
 <div align="right">
