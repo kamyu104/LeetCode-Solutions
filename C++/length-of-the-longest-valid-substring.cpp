@@ -9,14 +9,11 @@ public:
         for (const auto& w : forbidden) {
             trie.insert(w);
         }
-        const int l = size(*max_element(cbegin(forbidden), cend(forbidden), [](const auto& a, const auto& b) {
-            return size(a) < size(b);
-        }));
         int result = 0;
         for (int left = size(word) - 1, right = size(word) - 1; left >= 0; --left) {
-            for (int i = left, curr = 0; i < min(right + 1, left + l); ++i) {
+            for (int i = left, curr = 0; i <= right; ++i) {
                 curr = trie.child(curr, word[i]);
-                if (!curr) {
+                if (!curr) {  // O(l) times
                     break;
                 }
                 if (trie.is_string(curr)) {
