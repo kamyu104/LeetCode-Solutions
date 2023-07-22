@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2781%20%2F%202781-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2783%20%2F%202783-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -157,6 +157,7 @@
 2733 | [Neither Minimum nor Maximum](https://leetcode.com/problems/neither-minimum-nor-maximum/) | [C++](./C++/neither-minimum-nor-maximum.cpp) [Python](./Python/neither-minimum-nor-maximum.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2760 | [Longest Even Odd Subarray With Threshold](https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/) | [C++](./C++/longest-even-odd-subarray-with-threshold.cpp) [Python](./Python/longest-even-odd-subarray-with-threshold.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2765 | [Longest Alternating Subarray](https://leetcode.com/problems/longest-alternating-subarray/) | [C++](./C++/longest-alternating-subarray.cpp) [Python](./Python/longest-alternating-subarray.py) | _O(n)_ | _O(1)_ | Easy | | Array
+2782 | [Number of Unique Categories](https://leetcode.com/problems/number-of-unique-categories/) | [C++](./C++/number-of-unique-categories.cpp) [Python](./Python/number-of-unique-categories.py) | _O(n^2)_ | _O(1)_ | Medium | 🔒 | Brute Force
 
 <br/>
 <div align="right">
@@ -1105,6 +1106,7 @@
 2720 | [Popularity Percentage](https://leetcode.com/problems/popularity-percentage/) | [MySQL](./MySQL/popularity-percentage.sql) | _O(n^2)_ | _O(n^2)_       | Hard           |🔒||
 2738 | [Count Occurrences in Text](https://leetcode.com/problems/count-occurrences-in-text/) | [MySQL](./MySQL/count-occurrences-in-text.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 2752 | [Customers with Maximum Number of Transactions on Consecutive Days](https://leetcode.com/problems/customers-with-maximum-number-of-transactions-on-consecutive-days/) | [MySQL](./MySQL/customers-with-maximum-number-of-transactions-on-consecutive-days.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+2783 | [Flight Occupancy and Waitlist Analysis](https://leetcode.com/problems/flight-occupancy-and-waitlist-analysis/) | [MySQL](./MySQL/flight-occupancy-and-waitlist-analysis.sql) | _O(n * m + nlogn)_ | _O(n * m)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
