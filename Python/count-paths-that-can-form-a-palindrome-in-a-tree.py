@@ -46,13 +46,13 @@ class Solution2(object):
         :type s: str
         :rtype: int
         """
-        def dfs(u, mask, cnt):
+        def dfs(u, mask):
             result = 0
             if u:
                 mask ^= 1<<(ord(s[u])-ord('a'))
                 result += cnt[mask]+sum(cnt[mask^(1<<i)] for i in xrange(26))
                 cnt[mask] += 1
-            return result+sum(dfs(v, mask, cnt) for v in adj[u])
+            return result+sum(dfs(v, mask) for v in adj[u])
 
         adj = [[] for _ in xrange(len(parent))]
         for u, p in enumerate(parent):
@@ -60,4 +60,4 @@ class Solution2(object):
                 adj[p].append(u)
         cnt = collections.defaultdict(int)
         cnt[0] = 1
-        return dfs(0, 0, cnt)
+        return dfs(0, 0)
