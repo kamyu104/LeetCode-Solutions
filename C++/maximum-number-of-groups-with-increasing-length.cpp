@@ -100,3 +100,37 @@ public:
         return right;
     }
 };
+
+
+// Time:  O(nlogn)
+// Space: O(n)
+// constructive algorithms, sort, binary search, greedy, prefix sum
+class Solution4 {
+public:
+    int maxIncreasingGroups(vector<int>& usageLimits) {
+        sort(begin(usageLimits), end(usageLimits));
+        vector<int64_t> prefix(size(usageLimits) + 1);
+        for (int i = 0; i < size(usageLimits); ++i) {
+            prefix[i + 1] = prefix[i] + usageLimits[i];
+        }
+        const auto& check = [&](int l) {
+            for (int i = 1; i <= l; ++i) {
+                if (static_cast<int64_t>(i + 1) * i / 2 > prefix[size(usageLimits) - (l - i)]) {
+                    return false;
+                }
+            }
+            return true;
+        };
+
+        int left = 1, right = size(usageLimits);
+        while (left <= right) {
+            const int mid = left + (right - left) / 2;
+            if (!check(mid)) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return right;
+    }
+};
