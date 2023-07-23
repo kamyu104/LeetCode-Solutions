@@ -1,5 +1,5 @@
-// Time:  O(nlogn)
-// Space: O(1)
+// Time:  O(n)
+// Space: O(n)
 
 // constructive algorithms, counting sort, greedy
 class Solution {
