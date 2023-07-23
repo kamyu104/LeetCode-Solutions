@@ -88,7 +88,7 @@ public:
         };
 
         sort(begin(usageLimits), end(usageLimits));
-        int left = 1, right=  size(usageLimits);
+        int left = 1, right = size(usageLimits);
         while (left <= right) {
             const int mid = left + (right - left) / 2;
             if (!check(mid)) {
