@@ -4,7 +4,7 @@
 import collections
 
 
-# iterative dfs
+# iterative dfs, freq table
 class Solution(object):
     def countPalindromePaths(self, parent, s):
         """
@@ -39,7 +39,7 @@ class Solution(object):
 import collections
 
 
-# dfs
+# dfs, freq table
 class Solution2(object):
     def countPalindromePaths(self, parent, s):
         """
