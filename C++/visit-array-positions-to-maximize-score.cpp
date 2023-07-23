@@ -9,9 +9,7 @@ public:
         vector<int64_t> dp(2, MIN);
         dp[nums[0] % 2] = nums[0];
         for (int i = 1; i < size(nums); ++i) {
-            dp[nums[i] % 2] = dp[(nums[i] + 1) % 2] != MIN
-                              ? max(dp[nums[i] % 2], dp[(nums[i] + 1) % 2] - x) + nums[i]
-                              : dp[nums[i] % 2] + nums[i];
+            dp[nums[i] % 2] = max(dp[nums[i] % 2], dp[(nums[i] + 1) % 2] != MIN ? dp[(nums[i] + 1) % 2] - x : MIN) + nums[i];
         }
         return max(dp[0], dp[1]);
     }
