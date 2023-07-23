@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(1)
 
-# sort, greedy
+# constructive algorithms, sort, greedy
 class Solution(object):
     def maxIncreasingGroups(self, usageLimits):
         """
