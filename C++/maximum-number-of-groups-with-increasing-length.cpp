@@ -68,3 +68,35 @@ public:
         return result;
     }
 };
+
+// Time:  O(nlogn)
+// Space: O(1)
+// constructive algorithms, sort, binary search, greedy
+class Solution3 {
+public:
+    int maxIncreasingGroups(vector<int>& usageLimits) {
+        const auto& check = [&](int l) {
+            int64_t curr = 0;
+            for (int i = 0; i < l; ++i) {
+                curr += usageLimits[(size(usageLimits) - 1) - i] - (l - i);
+                curr = min(curr, static_cast<int64_t>(0));
+            }
+            for (int i = 0; i < size(usageLimits) - l; ++i) {
+                curr += usageLimits[i];
+            }
+            return curr >= 0;
+        };
+
+        sort(begin(usageLimits), end(usageLimits));
+        int left = 1, right=  size(usageLimits);
+        while (left <= right) {
+            const int mid = left + (right - left) / 2;
+            if (!check(mid)) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return right;
+    }
+};
