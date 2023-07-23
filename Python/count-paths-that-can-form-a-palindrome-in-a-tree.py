@@ -21,7 +21,7 @@ class Solution(object):
                 u, mask = stk.pop()
                 if u:
                     mask ^= 1<<(ord(s[u])-ord('a'))
-                    result += cnt[mask]+sum(cnt[mask^(1<<i)] for i in xrange(26))
+                    result += cnt[mask]+sum(cnt[mask^(1<<i)] if mask^(1<<i) in cnt else 0 for i in xrange(26))
                     cnt[mask] += 1
                 for v in reversed(adj[u]):
                     stk.append((v, mask))
@@ -50,7 +50,7 @@ class Solution2(object):
             result = 0
             if u:
                 mask ^= 1<<(ord(s[u])-ord('a'))
-                result += cnt[mask]+sum(cnt[mask^(1<<i)] for i in xrange(26))
+                result += cnt[mask]+sum(cnt[mask^(1<<i)] if mask^(1<<i) in cnt else 0 for i in xrange(26))
                 cnt[mask] += 1
             return result+sum(dfs(v, mask) for v in adj[u])
 
