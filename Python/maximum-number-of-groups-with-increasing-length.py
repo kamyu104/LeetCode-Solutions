@@ -57,7 +57,7 @@ class Solution2(object):
 
     
 # Time:  O(nlogn)
-# Space: O(n)
+# Space: O(1)
 # constructive algorithms, sort, binary search, greedy
 class Solution3(object):
     def maxIncreasingGroups(self, usageLimits):
