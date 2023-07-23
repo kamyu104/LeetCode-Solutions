@@ -865,7 +865,7 @@
 2769 | [Find the Maximum Achievable Number](https://leetcode.com/problems/find-the-maximum-achievable-number/) | [C++](./C++/find-the-maximum-achievable-number.cpp) [Python](./Python/find-the-maximum-achievable-number.py) | _O(1)_ | _O(1)_ | Easy | | Greedy, Math
 2772 | [Apply Operations to Make All Array Elements Equal to Zero](https://leetcode.com/problems/apply-operations-to-make-all-array-elements-equal-to-zero/) | [C++](./C++/apply-operations-to-make-all-array-elements-equal-to-zero.cpp) [Python](./Python/apply-operations-to-make-all-array-elements-equal-to-zero.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Sliding Window
 2789 | [Largest Element in an Array after Merge Operations](https://leetcode.com/problems/largest-element-in-an-array-after-merge-operations/) | [C++](./C++/largest-element-in-an-array-after-merge-operations.cpp) [Python](./Python/largest-element-in-an-array-after-merge-operations.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
-2790 | [Maximum Number of Groups With Increasing Length](https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length/) | [C++](./C++/maximum-number-of-groups-with-increasing-length.cpp) [Python](./Python/maximum-number-of-groups-with-increasing-length.py) | _O(n)_ | _O(n)_ | Hard | | Constructive Algorithms, Counting Sort, Greedy
+2790 | [Maximum Number of Groups With Increasing Length](https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length/) | [C++](./C++/maximum-number-of-groups-with-increasing-length.cpp) [Python](./Python/maximum-number-of-groups-with-increasing-length.py) | _O(n)_ | _O(n)_ | Hard | | Constructive Algorithms, Counting Sort, Greedy, Binary Search
 
 <br/>
 <div align="right">
