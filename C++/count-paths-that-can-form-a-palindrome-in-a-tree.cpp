@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// iterative dfs
+// iterative dfs, freq table
 class Solution {
 public:
     long long countPalindromePaths(vector<int>& parent, string s) {
@@ -39,7 +39,7 @@ public:
 
 // Time:  O(n)
 // Space: O(n)
-// dfs
+// dfs, freq table
 class Solution2 {
 public:
     long long countPalindromePaths(vector<int>& parent, string s) {
