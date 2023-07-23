@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2783%20%2F%202783-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2791%20%2F%202791-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -213,6 +213,7 @@
 2678 | [Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens/)| [C++](./C++/number-of-senior-citizens.cpp) [Python](./Python/number-of-senior-citizens.py)| _O(n)_ | _O(1)_ | Easy | | String |
 2710 | [Remove Trailing Zeros From a String](https://leetcode.com/problems/remove-trailing-zeros-from-a-string/)| [C++](./C++/remove-trailing-zeros-from-a-string.cpp) [Python](./Python/remove-trailing-zeros-from-a-string.py)| _O(n)_ | _O(1)_ | Easy | | String |
 2729 | [Check if The Number is Fascinating](https://leetcode.com/problems/check-if-the-number-is-fascinating/)| [C++](./C++/check-if-the-number-is-fascinating.cpp) [Python](./Python/check-if-the-number-is-fascinating.py)| _O(logn)_ | _O(1)_ | Easy | | String, Bitmasks |
+2788 | [Split Strings by Separator](https://leetcode.com/problems/split-strings-by-separator/)| [C++](./C++/split-strings-by-separator.cpp) [Python](./Python/split-strings-by-separator.py)| _O(n * l)_ | _O(l)_ | Easy | | String |
 
 <br/>
 <div align="right">
@@ -379,6 +380,7 @@
 2748 | [Number of Beautiful Pairs](https://leetcode.com/problems/number-of-beautiful-pairs/) | [C++](./C++/number-of-beautiful-pairs.cpp) [Python](./Python/number-of-beautiful-pairs.py) | _O(nlogr)_ | _O(1)_ | Easy | | Number Theory, Freq Table
 2766 | [Relocate Marbles](https://leetcode.com/problems/relocate-marbles/) | [C++](./C++/relocate-marbles.cpp) [Python](./Python/relocate-marbles.py) | _O(nlogn)_ | _O(n)_ | Medium | | Hash Table, Sort
 2768 | [Number of Black Blocks](https://leetcode.com/problems/number-of-black-blocks/) | [C++](./C++/number-of-black-blocks.cpp) [Python](./Python/number-of-black-blocks.py) | _O(c)_ | _O(c)_ | Medium | | Freq Table
+2784 | [Check if Array is Good](https://leetcode.com/problems/check-if-array-is-good/) | [C++](./C++/check-if-array-is-good.cpp) [Python](./Python/check-if-array-is-good.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
 
 <br/>
 <div align="right">
@@ -492,6 +494,7 @@
 2659 | [Make Array Empty](https://leetcode.com/problems/make-array-empty/) | [C++](./C++/make-array-empty.cpp) [Python](./Python/make-array-empty.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Sort, BIT, Fenwick Tree
 2679 | [Sum in a Matrix](https://leetcode.com/problems/sum-in-a-matrix/) | [C++](./C++/sum-in-a-matrix.cpp) [Python](./Python/sum-in-a-matrix.py) | _O(m * nlogn)_   | _O(1)_        | Medium         | | Sort
 2740 | [Find the Value of the Partition](https://leetcode.com/problems/find-the-value-of-the-partition/) | [C++](./C++/find-the-value-of-the-partition.cpp) [Python](./Python/find-the-value-of-the-partition.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort
+2785 | [Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/) | [C++](./C++/sort-vowels-in-a-string.cpp) [Python](./Python/sort-vowels-in-a-string.py) | _O(n)_   | _O(1)_        | Medium         | | Counting Sort
 
 <br/>
 <div align="right">
@@ -658,6 +661,7 @@
 2477 | [Minimum Fuel Cost to Report to the Capital](https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital/)| [C++](./C++/minimum-fuel-cost-to-report-to-the-capital.cpp) [Python](./Python/minimum-fuel-cost-to-report-to-the-capital.py)| _O(n)_ | _O(h)_ | Medium | | Tree, DFS |
 2581 | [Count Number of Possible Root Nodes](https://leetcode.com/problems/count-number-of-possible-root-nodes/)| [C++](./C++/count-number-of-possible-root-nodes.cpp) [Python](./Python/count-number-of-possible-root-nodes.py)| _O(n)_ | _O(h)_ | Hard | | Tree, DFS |
 2773 | [Height of Special Binary Tree](https://leetcode.com/problems/height-of-special-binary-tree/)| [C++](./C++/height-of-special-binary-tree.cpp) [Python](./Python/height-of-special-binary-tree.py)| _O(n)_ | _O(h)_ | Medium | 🔒 | Tree, DFS, BFS |
+2791 | [Count Paths That Can Form a Palindrome in a Tree](https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree/)| [C++](./C++/count-paths-that-can-form-a-palindrome-in-a-tree.cpp) [Python](./Python/count-paths-that-can-form-a-palindrome-in-a-tree.py)| _O(n)_ | _O(n)_ | Hard | | Tree, DFS, Freq Table |
 
 <br/>
 <div align="right">
@@ -759,6 +763,8 @@
 2767 | [Partition String Into Minimum Beautiful Substrings](https://leetcode.com/problems/partition-string-into-minimum-beautiful-substrings/) | [C++](./C++/partition-string-into-minimum-beautiful-substrings.cpp) [Python](./Python/partition-string-into-minimum-beautiful-substrings.py) | _O(n^2)_   | _O(n)_        | Medium         | | DP
 2770 | [Maximum Number of Jumps to Reach the Last Index](https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/) | [C++](./C++/maximum-number-of-jumps-to-reach-the-last-index.cpp) [Python](./Python/maximum-number-of-jumps-to-reach-the-last-index.py) | _O(n^2)_   | _O(n)_        | Medium         | | DP
 2771 | [Longest Non-decreasing Subarray From Two Arrays](https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/) | [C++](./C++/longest-non-decreasing-subarray-from-two-arrays.cpp) [Python](./Python/longest-non-decreasing-subarray-from-two-arrays.py) | _O(n)_   | _O(1)_        | Medium         | | DP
+2786 | [Visit Array Positions to Maximize Score](https://leetcode.com/problems/visit-array-positions-to-maximize-score/) | [C++](./C++/visit-array-positions-to-maximize-score.cpp) [Python](./Python/visit-array-positions-to-maximize-score.py) | _O(n)_   | _O(1)_        | Medium         | | DP
+2787 | [Ways to Express an Integer as Sum of Powers](https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/) | [C++](./C++/ways-to-express-an-integer-as-sum-of-powers.cpp) [Python](./Python/ways-to-express-an-integer-as-sum-of-powers.py) | _O(nlogn)_   | _O(n)_        | Medium         | | DP
 
 <br/>
 <div align="right">
@@ -858,6 +864,8 @@
 2734 | [Lexicographically Smallest String After Substring Operation](https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/) | [C++](./C++/lexicographically-smallest-string-after-substring-operation.cpp) [Python](./Python/lexicographically-smallest-string-after-substring-operation.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 2769 | [Find the Maximum Achievable Number](https://leetcode.com/problems/find-the-maximum-achievable-number/) | [C++](./C++/find-the-maximum-achievable-number.cpp) [Python](./Python/find-the-maximum-achievable-number.py) | _O(1)_ | _O(1)_ | Easy | | Greedy, Math
 2772 | [Apply Operations to Make All Array Elements Equal to Zero](https://leetcode.com/problems/apply-operations-to-make-all-array-elements-equal-to-zero/) | [C++](./C++/apply-operations-to-make-all-array-elements-equal-to-zero.cpp) [Python](./Python/apply-operations-to-make-all-array-elements-equal-to-zero.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Sliding Window
+2789 | [Largest Element in an Array after Merge Operations](https://leetcode.com/problems/largest-element-in-an-array-after-merge-operations/) | [C++](./C++/largest-element-in-an-array-after-merge-operations.cpp) [Python](./Python/largest-element-in-an-array-after-merge-operations.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+2790 | [Maximum Number of Groups With Increasing Length](https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length/) | [C++](./C++/maximum-number-of-groups-with-increasing-length.cpp) [Python](./Python/maximum-number-of-groups-with-increasing-length.py) | _O(n)_ | _O(n)_ | Hard | | Constructive Algorithms, Counting Sort, Greedy
 
 <br/>
 <div align="right">
