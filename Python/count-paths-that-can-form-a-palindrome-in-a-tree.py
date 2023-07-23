@@ -38,6 +38,7 @@ class Solution(object):
 # Space: O(n)
 import collections
 
+
 # dfs
 class Solution2(object):
     def countPalindromePaths(self, parent, s):
