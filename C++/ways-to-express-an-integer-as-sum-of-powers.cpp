@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// dp
+// knapsack dp
 class Solution {
 public:
     int numberOfWays(int n, int x) {
