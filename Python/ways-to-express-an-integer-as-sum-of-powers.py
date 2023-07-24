@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-# dp
+# knapsack dp
 class Solution(object):
     def numberOfWays(self, n, x):
         """
