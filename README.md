@@ -764,7 +764,7 @@
 2770 | [Maximum Number of Jumps to Reach the Last Index](https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/) | [C++](./C++/maximum-number-of-jumps-to-reach-the-last-index.cpp) [Python](./Python/maximum-number-of-jumps-to-reach-the-last-index.py) | _O(n^2)_   | _O(n)_        | Medium         | | DP
 2771 | [Longest Non-decreasing Subarray From Two Arrays](https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/) | [C++](./C++/longest-non-decreasing-subarray-from-two-arrays.cpp) [Python](./Python/longest-non-decreasing-subarray-from-two-arrays.py) | _O(n)_   | _O(1)_        | Medium         | | DP
 2786 | [Visit Array Positions to Maximize Score](https://leetcode.com/problems/visit-array-positions-to-maximize-score/) | [C++](./C++/visit-array-positions-to-maximize-score.cpp) [Python](./Python/visit-array-positions-to-maximize-score.py) | _O(n)_   | _O(1)_        | Medium         | | DP
-2787 | [Ways to Express an Integer as Sum of Powers](https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/) | [C++](./C++/ways-to-express-an-integer-as-sum-of-powers.cpp) [Python](./Python/ways-to-express-an-integer-as-sum-of-powers.py) | _O(nlogn)_   | _O(n)_        | Medium         | | DP
+2787 | [Ways to Express an Integer as Sum of Powers](https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/) | [C++](./C++/ways-to-express-an-integer-as-sum-of-powers.cpp) [Python](./Python/ways-to-express-an-integer-as-sum-of-powers.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Knapsack DP
 
 <br/>
 <div align="right">
