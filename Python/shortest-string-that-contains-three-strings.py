@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: str
         """
         def getPrefix(pattern):
-            prefix = [-1]*(len(pattern))
+            prefix = [-1]*len(pattern)
             j = -1
             for i in xrange(1, len(pattern)):
                 while j != -1 and pattern[j+1] != pattern[i]:
