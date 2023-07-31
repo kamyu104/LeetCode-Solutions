@@ -42,7 +42,7 @@ public:
                 return b;
             }
             const auto& prefix = getPrefix(b + "#" + a);
-            const auto& l = prefix.back() + 1;
+            const auto& l = prefix.back() + 1;  // longest prefix suffix length
             return a + b.substr(l);
         };
     
