@@ -26,7 +26,4 @@ class Solution(object):
                     prefix = False
             return reduce(lambda x, y: (x+y)%MOD, dp[(len(s)-1)%2])
 
-        def check(a):
-            return all(abs(ord(a[i+1])-ord(a[i])) == 1 for i in xrange(len(a)-1))
-
-        return (f(high)-f(low)+check(low))%MOD
+        return (f(high)-f(str(int(low)-1)))%MOD
