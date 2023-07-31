@@ -215,7 +215,7 @@
 2710 | [Remove Trailing Zeros From a String](https://leetcode.com/problems/remove-trailing-zeros-from-a-string/)| [C++](./C++/remove-trailing-zeros-from-a-string.cpp) [Python](./Python/remove-trailing-zeros-from-a-string.py)| _O(n)_ | _O(1)_ | Easy | | String |
 2729 | [Check if The Number is Fascinating](https://leetcode.com/problems/check-if-the-number-is-fascinating/)| [C++](./C++/check-if-the-number-is-fascinating.cpp) [Python](./Python/check-if-the-number-is-fascinating.py)| _O(logn)_ | _O(1)_ | Easy | | String, Bitmasks |
 2788 | [Split Strings by Separator](https://leetcode.com/problems/split-strings-by-separator/)| [C++](./C++/split-strings-by-separator.cpp) [Python](./Python/split-strings-by-separator.py)| _O(n * l)_ | _O(l)_ | Easy | | String |
-2800 | [Shortest String That Contains Three Strings](https://leetcode.com/problems/shortest-string-that-contains-three-strings/)| [C++](./C++/shortest-string-that-contains-three-strings.cpp) [Python](./Python/shortest-string-that-contains-three-strings.py)| _O(l^2)_ | _O(l)_ | Medium | | String, Brute Force |
+2800 | [Shortest String That Contains Three Strings](https://leetcode.com/problems/shortest-string-that-contains-three-strings/)| [C++](./C++/shortest-string-that-contains-three-strings.cpp) [Python](./Python/shortest-string-that-contains-three-strings.py)| _O(l)_ | _O(l)_ | Medium | | String, Brute Force, Longest Prefix Suffix, `KMP Algorithm` |
 
 <br/>
 <div align="right">
