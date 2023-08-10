@@ -33,7 +33,7 @@ public:
                 bst.erase({lookup2[c - 1], c});
             }
             lookup2[c - 1] = p;
-            bst.emplace(p, c);
+            bst.emplace(lookup2[c - 1], c);
             if (size(bst) > size(stk)) {
                 auto it = begin(bst);
                 lookup2[it->second - 1] = 0;
