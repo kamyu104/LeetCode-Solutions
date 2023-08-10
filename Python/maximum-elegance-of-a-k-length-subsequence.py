@@ -57,15 +57,18 @@ class Solution2(object):
         result = curr = 0
         lookup = set()
         stk = []
-        for i, (p, c) in enumerate(items):
-            if i < k:
-                if c in lookup:
-                    stk.append(p)
-                curr += p
-            elif c not in lookup:
-                if not stk:
-                    break
-                curr += p-stk.pop()
-            lookup.add(c)
+        for i in xrange(k):
+            if items[i][1] in lookup:
+                stk.append(items[i][0])
+            curr += items[i][0]
+            lookup.add(items[i][1])
+        result = curr+len(lookup)**2
+        for i in xrange(k, len(items)):
+            if items[i][1] in lookup:
+                continue
+            if not stk:
+                break
+            curr += items[i][0]-stk.pop()
+            lookup.add(items[i][1])
             result = max(result, curr+len(lookup)**2)
         return result
