@@ -19,7 +19,7 @@ public:
                 ++l;
             }
         }
-        multiset<pair<int, int>> bst;
+        set<pair<int, int>> bst;
         vector<int> lookup2(size(items));
         for (int i = k; i < size(items); ++i) {
             const auto& p = items[i][0], &c = items[i][1];
