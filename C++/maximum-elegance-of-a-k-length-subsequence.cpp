@@ -28,7 +28,7 @@ public:
             }
             if (lookup2[c - 1]) {
                 if (lookup2[c - 1] >= p) {
-                     continue;
+                    continue;
                 }
                 bst.erase({lookup2[c - 1], c});
             }
