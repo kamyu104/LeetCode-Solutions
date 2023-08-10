@@ -1,7 +1,7 @@
 // Time:  O(n^2)
 // Space: O(n)
 
-// greedy, sort, dp
+// greedy, sort, dp, linear search
 class Solution {
 public:
     int minimumTime(vector<int>& nums1, vector<int>& nums2, int x) {
