@@ -11,12 +11,13 @@ class Solution(object):
         DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1))
         lookup = [[-1 if land[i][j] == "*" else 0 for j in xrange(len(land[0]))] for i in xrange(len(land))]
         q = [(i, j, -1) for i in xrange(len(land)) for j in xrange(len(land[0])) if land[i][j] == "*"]
-        q.append(next((i, j, 0) for i in xrange(len(land)) for j in xrange(len(land[0])) if land[i][j] == "S"))
+        q.append(next((i, j, 1) for i in xrange(len(land)) for j in xrange(len(land[0])) if land[i][j] == "S"))
+        lookup[q[-1][0]][q[-1][1]] = 1
         while q:
             new_q = []
             for i, j, d in q:
                 if land[i][j] == "D":
-                    return d
+                    return d-1
                 for di, dj in DIRECTIONS:
                     ni, nj = i+di, j+dj
                     if not (0 <= ni < len(land) and 0 <= nj < len(land[0]) and land[ni][nj] != "X" and lookup[ni][nj] != -1):
