@@ -78,16 +78,18 @@ public:
                 ++l;
             }
         }
-        unordered_map<int, int> lookup2;
+        vector<int> lookup2(size(items));
         for (const auto& x : items) {
             if (lookup[x[1] - 1]) {
                 continue;
             }
-            lookup2[x[1]] = max(lookup2[x[1]], x[0]);
+            lookup2[x[1] - 1] = max(lookup2[x[1] - 1], x[0]);
         }
         vector<vector<int>> candidates;
-        for (const auto& [c, p] : lookup2) {
-            candidates.push_back({p, c});
+        for (int c = 0; c < size(lookup2); ++c) {
+            if (lookup2[c]) {
+                candidates.push_back({lookup2[c], c});
+            }
         }
         int64_t result = curr + l * l;
         for (const auto& x : nlargest(min(size(stk), size(candidates)), candidates)) {
