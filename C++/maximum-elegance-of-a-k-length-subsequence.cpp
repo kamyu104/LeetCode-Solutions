@@ -6,8 +6,8 @@ class Solution {
 public:
     long long findMaximumElegance(vector<vector<int>>& items, int k) {
         partial_sort(begin(items), begin(items) + k, end(items), greater<vector<int>>());
-        vector<int> stk;
         vector<bool> lookup(size(items));
+        vector<int> stk;
         int64_t curr = 0, l = 0;
         for (int i = 0; i < k; ++i) {
             if (lookup[items[i][1] - 1]) {
@@ -57,8 +57,8 @@ class Solution2 {
 public:
     long long findMaximumElegance(vector<vector<int>>& items, int k) {
         sort(rbegin(items), rend(items));
-        vector<int> stk;
         vector<bool> lookup(size(items));
+        vector<int> stk;
         int64_t result = 0, curr = 0, l = 0;
         for (int i = 0; i < size(items); ++i) {
             if (i < k) {
