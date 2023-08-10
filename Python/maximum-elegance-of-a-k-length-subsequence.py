@@ -101,7 +101,7 @@ class Solution2(object):
             lookup2[c] = max(lookup2[c], p)
         l = len(lookup)
         result = curr+l**2
-        for p in nlargest(len(stk), lookup2.values()):
+        for p in nlargest(min(len(stk), len(lookup2)), lookup2.values()):
             curr += p-stk.pop()
             l += 1
             result = max(result, curr+l**2) 
