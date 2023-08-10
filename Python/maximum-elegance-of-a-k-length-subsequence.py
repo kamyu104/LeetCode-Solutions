@@ -25,10 +25,10 @@ class Solution(object):
         lookup2 = {}
         for p, c in items:
             if c in lookup:
-                continue;
+                continue
             if c in lookup2:
                 if lookup2[c] >= p:
-                    continue;
+                    continue
                 sl.remove((lookup2[c], c))
             sl.add((p, c))
             lookup2[c] = p
