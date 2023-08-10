@@ -19,12 +19,13 @@ public:
                 }
             }
         }
-        q.emplace_back(i0, j0, 0);
+        q.emplace_back(i0, j0, 1);
+        lookup[i0][j0] = 1;
         while (!empty(q)) {
             vector<tuple<int, int, int>> new_q;
             for (const auto& [i, j, d] : q) {
                 if (land[i][j] == "D") {
-                    return d;
+                    return d - 1;
                 }
                 for (const auto& [di, dj] : DIRECTIONS) {
                     const int ni = i + di, nj = j + dj;
