@@ -22,7 +22,7 @@ public:
         multiset<pair<int, int>> bst;
         vector<int> lookup2(size(items));
         for (int i = k; i < size(items); ++i) {
-            int p = items[i][0], c = items[i][1];
+            const auto& p = items[i][0], &c = items[i][1];
             if (lookup[c - 1]) {
                 continue;
             }
