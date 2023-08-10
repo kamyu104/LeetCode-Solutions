@@ -130,10 +130,8 @@ public:
                 break;
             }
             curr += items[i][0] - stk.back(); stk.pop_back();
-            if (!lookup[items[i][1] - 1]) {
-                lookup[items[i][1] - 1] = true;
-                ++l;
-            }
+            lookup[items[i][1] - 1] = true;
+            ++l;
             result = max(result, curr + l * l);
         }
         return result;
