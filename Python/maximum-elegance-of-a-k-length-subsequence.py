@@ -2,10 +2,10 @@
 # Space: O(n)
 
 import collections
-import heapq
+from sortedcontainers import SortedList
 
 
-# heap, greedy
+# heap, sorted list, greedy
 class Solution(object):
     def findMaximumElegance(self, items, k):
         """
@@ -21,17 +21,25 @@ class Solution(object):
                 stk.append(p)
             curr += p
             lookup.add(c)
-        lookup2 = collections.defaultdict(int)
+        sl = SortedList()
+        lookup2 = {}
         for p, c in items:
             if c in lookup:
-                continue
-            lookup2[c] = max(lookup2[c], p)
-        l = len(lookup)
-        result = curr+l**2
-        for p in heapq.nlargest(len(stk), lookup2.itervalues()):
+                continue;
+            if c in lookup2:
+                if lookup2[c] >= p:
+                    continue;
+                sl.remove((lookup2[c], c))
+            lookup2[c] = p;
+            sl.add((lookup2[c], c))
+            if len(sl) > len(stk):
+                del lookup2[sl[0][1]]
+                del sl[0]
+        result = curr+len(lookup)**2
+        for p, c in reversed(sl):
             curr += p-stk.pop()
-            l += 1
-            result = max(result, curr+l**2) 
+            lookup.add(c)
+            result = max(result, curr+len(lookup)**2) 
         return result
 
 
