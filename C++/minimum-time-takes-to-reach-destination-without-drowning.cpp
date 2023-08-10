@@ -31,12 +31,10 @@ public:
                     if (!(0 <= ni && ni < size(land) && 0 <= nj && nj < size(land[0]) && land[ni][nj] != "X" && lookup[ni][nj] != -1)) {
                         continue;
                     }
-                    if (d != -1) {
-                        if (lookup[ni][nj] == 0) {
-                            lookup[ni][nj] = d + 1;
-                            new_q.emplace_back(ni, nj, d + 1);
-                        }
-                    } else if (land[ni][nj] != "D") {
+                    if (d != -1 && lookup[ni][nj] == 0) {
+                        lookup[ni][nj] = d + 1;
+                        new_q.emplace_back(ni, nj, d + 1);
+                    } else if (d == -1 && land[ni][nj] != "D") {
                         lookup[ni][nj] = -1;
                         new_q.emplace_back(ni, nj, -1);
                     }
