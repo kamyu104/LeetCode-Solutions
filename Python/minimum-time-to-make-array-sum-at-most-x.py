@@ -1,7 +1,7 @@
 # Time:  O(n^2)
 # Space: O(n)
 
-# greedy, sort, dp
+# greedy, sort, dp, linear search
 class Solution(object):
     def minimumTime(self, nums1, nums2, x):
         """
