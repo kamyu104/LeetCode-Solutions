@@ -34,7 +34,7 @@ class Solution(object):
         :type grid: List[List[int]]
         :rtype: int
         """
-        DIRECTIONS = [(1, 0), (0, 1), (-1, 0), (0, -1)]
+        DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1))
         def bfs():
             dist = [[0 if grid[r][c] == 1 else -1 for c in xrange(len(grid[0]))] for r in xrange(len(grid))]
             q = [(r, c) for r in xrange(len(grid)) for c in xrange(len(grid[0])) if grid[r][c]]
@@ -84,7 +84,7 @@ class Solution2(object):
         :type grid: List[List[int]]
         :rtype: int
         """
-        DIRECTIONS = [(1, 0), (0, 1), (-1, 0), (0, -1)]
+        DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1))
         def bfs():
             dist = [[0 if grid[r][c] == 1 else -1 for c in xrange(len(grid[0]))] for r in xrange(len(grid))]
             q = [(r, c) for r in xrange(len(grid)) for c in xrange(len(grid[0])) if grid[r][c]]
@@ -134,7 +134,7 @@ class Solution3(object):
         :type grid: List[List[int]]
         :rtype: int
         """
-        DIRECTIONS = [(1, 0), (0, 1), (-1, 0), (0, -1)]
+        DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1))
         def bfs():
             dist = [[0 if grid[r][c] == 1 else -1 for c in xrange(len(grid[0]))] for r in xrange(len(grid))]
             q = [(r, c) for r in xrange(len(grid)) for c in xrange(len(grid[0])) if grid[r][c]]
