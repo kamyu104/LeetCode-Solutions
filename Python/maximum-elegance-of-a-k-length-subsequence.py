@@ -30,8 +30,8 @@ class Solution(object):
                 if lookup2[c] >= p:
                     continue;
                 sl.remove((lookup2[c], c))
-            lookup2[c] = p;
-            sl.add((lookup2[c], c))
+            sl.add((p, c))
+            lookup2[c] = p
             if len(sl) > len(stk):
                 del lookup2[sl[0][1]]
                 del sl[0]
