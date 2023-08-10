@@ -50,10 +50,59 @@ public:
     }
 };
 
+// Time:  O(n + klogk)
+// Space: O(n)
+// quick select, sort, greedy
+class Solution2 {
+public:
+    long long findMaximumElegance(vector<vector<int>>& items, int k) {
+        const auto& nlargest = [](const auto& k, auto nums) {
+            if (empty(nums)) {
+                return vector<vector<int>>();
+            }
+            nth_element(begin(nums), begin(nums) + (k - 1), end(nums), greater<vector<int>>());
+            sort(begin(nums), begin(nums) + k, greater<vector<int>>());
+            return vector<vector<int>>(begin(nums), begin(nums) + k);
+        };
+
+        vector<bool> lookup(size(items));
+        vector<int> stk;
+        int64_t curr = 0, l = 0;
+        for (const auto& x : nlargest(k, items)) {
+            if (lookup[x[1] - 1]) {
+                stk.emplace_back(x[0]);
+            }
+            curr += x[0];
+            if (!lookup[x[1] - 1]) {
+                lookup[x[1] - 1] = true;
+                ++l;
+            }
+        }
+        unordered_map<int, int> lookup2;
+        for (const auto& x : items) {
+            if (lookup[x[1] - 1]) {
+                continue;
+            }
+            lookup2[x[1]] = max(lookup2[x[1]], x[0]);
+        }
+        vector<vector<int>> candidates;
+        for (const auto& [c, p] : lookup2) {
+            candidates.push_back({p, c});
+        }
+        int64_t result = curr + l * l;
+        for (const auto& x : nlargest(min(size(stk), size(candidates)), candidates)) {
+            curr += x[0] - stk.back(); stk.pop_back();
+            ++l;
+            result = max(result, curr + l * l);
+        }
+        return result;
+    }
+};
+
 // Time:  O(nlogn)
 // Space: O(n)
 // sort, greedy
-class Solution2 {
+class Solution3 {
 public:
     long long findMaximumElegance(vector<vector<int>>& items, int k) {
         sort(rbegin(items), rend(items));
