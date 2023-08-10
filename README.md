@@ -777,7 +777,7 @@
 2786 | [Visit Array Positions to Maximize Score](https://leetcode.com/problems/visit-array-positions-to-maximize-score/) | [C++](./C++/visit-array-positions-to-maximize-score.cpp) [Python](./Python/visit-array-positions-to-maximize-score.py) | _O(n)_   | _O(1)_        | Medium         | | DP
 2787 | [Ways to Express an Integer as Sum of Powers](https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/) | [C++](./C++/ways-to-express-an-integer-as-sum-of-powers.cpp) [Python](./Python/ways-to-express-an-integer-as-sum-of-powers.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Knapsack DP
 2801 | [Count Stepping Numbers in Range](https://leetcode.com/problems/count-stepping-numbers-in-range/) | [C++](./C++/count-stepping-numbers-in-range.cpp) [Python](./Python/count-stepping-numbers-in-range.py) | _O(n)_   | _O(1)_        | Hard         | | DP
-2809 | [Minimum Time to Make Array Sum At Most x](https://leetcode.com/problems/minimum-time-to-make-array-sum-at-most-x/) | [C++](./C++/minimum-time-to-make-array-sum-at-most-x.cpp) [Python](./Python/minimum-time-to-make-array-sum-at-most-x.py) | _O(n^2)_   | _O(n)_        | Hard         | | Sort, Greedy, DP
+2809 | [Minimum Time to Make Array Sum At Most x](https://leetcode.com/problems/minimum-time-to-make-array-sum-at-most-x/) | [C++](./C++/minimum-time-to-make-array-sum-at-most-x.cpp) [Python](./Python/minimum-time-to-make-array-sum-at-most-x.py) | _O(n^2)_   | _O(n)_        | Hard         | | Sort, Greedy, DP, Linear Search
 
 <br/>
 <div align="right">
