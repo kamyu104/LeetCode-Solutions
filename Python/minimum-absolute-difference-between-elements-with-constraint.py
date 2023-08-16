@@ -16,8 +16,8 @@ class Solution(object):
         sl = SortedList()
         for i in xrange(x, len(nums)):
             sl.add(nums[i-x])
-            j = sl.bisect_right(nums[i])
-            if j >= 1:
+            j = sl.bisect_left(nums[i])
+            if j-1 >= 0:
                 result = min(result, nums[i]-sl[j-1])
             if j < len(sl):
                 result = min(result, sl[j]-nums[i])
