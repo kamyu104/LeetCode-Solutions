@@ -287,7 +287,7 @@
 2519 | [Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/) | [C++](./C++/count-the-number-of-k-big-indices.cpp) [Python](./Python/count-the-number-of-k-big-indices.py) | _O(nlogk)_ | _O(n)_ | Hard | 🔒 | Heap, Ordered Set, Sorted List |
 2530 | [Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) | [C++](./C++/maximal-score-after-applying-k-operations.cpp) [Python](./Python/maximal-score-after-applying-k-operations.py) | _O(n + klogn)_ | _O(1)_ | Medium | | Heap, Simulation |
 2558 | [Take Gifts From the Richest Pile](https://leetcode.com/problems/take-gifts-from-the-richest-pile/) | [C++](./C++/take-gifts-from-the-richest-pile.cpp) [Python](./Python/take-gifts-from-the-richest-pile.py) | _O(n + klogn)_ | _O(1)_ | Easy | | Heap, Simulation |
-2818 | [Apply Operations to Maximize Score](https://leetcode.com/problems/apply-operations-to-maximize-score/) | [C++](./C++/apply-operations-to-maximize-score.cpp) [Python](./Python/apply-operations-to-maximize-score.py) | _O(sqrt(r) + nlogr + klogn)_ | _O(sqrt(r) + n)_ | Hard | | Number Theory, Mono Stack, Greedy, Sort, Heap |
+2818 | [Apply Operations to Maximize Score](https://leetcode.com/problems/apply-operations-to-maximize-score/) | [C++](./C++/apply-operations-to-maximize-score.cpp) [Python](./Python/apply-operations-to-maximize-score.py) | _O(sqrt(r) + nlogr + klogn)_ | _O(sqrt(r) + n)_ | Hard | | Number Theory, `Linear Sieve of Eratosthenes`, Mono Stack, Greedy, Sort, Heap |
 
 <br/>
 <div align="right">
