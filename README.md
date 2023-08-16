@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2814%20%2F%202814-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2818%20%2F%202818-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -235,6 +235,7 @@
 2487 | [Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/) | [C++](./C++/remove-nodes-from-linked-list.cpp) [Python](./Python/remove-nodes-from-linked-list.py) | _O(n)_  | _O(n)_         | Medium           | | Mono Stack
 2674 | [Split a Circular Linked List](https://leetcode.com/problems/split-a-circular-linked-list/) | [C++](./C++/split-a-circular-linked-list.cpp) [Python](./Python/split-a-circular-linked-list.py) | _O(n)_  | _O(1)_         | Medium           |🔒| Two Pointers, Slow and Fast Pointers
 2807 | [Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/) | [C++](./C++/insert-greatest-common-divisors-in-linked-list.cpp) [Python](./Python/insert-greatest-common-divisors-in-linked-list.py) | _O(n)_ | _O(1)_ | Medium | | Linked List
+2816 | [Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) | [C++](./C++/double-a-number-represented-as-a-linked-list.cpp) [Python](./Python/double-a-number-represented-as-a-linked-list.py) | _O(n)_ | _O(1)_ | Medium | | Linked List
 
 <br/>
 <div align="right">
@@ -286,6 +287,7 @@
 2519 | [Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/) | [C++](./C++/count-the-number-of-k-big-indices.cpp) [Python](./Python/count-the-number-of-k-big-indices.py) | _O(nlogk)_ | _O(n)_ | Hard | 🔒 | Heap, Ordered Set, Sorted List |
 2530 | [Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) | [C++](./C++/maximal-score-after-applying-k-operations.cpp) [Python](./Python/maximal-score-after-applying-k-operations.py) | _O(n + klogn)_ | _O(1)_ | Medium | | Heap, Simulation |
 2558 | [Take Gifts From the Richest Pile](https://leetcode.com/problems/take-gifts-from-the-richest-pile/) | [C++](./C++/take-gifts-from-the-richest-pile.cpp) [Python](./Python/take-gifts-from-the-richest-pile.py) | _O(n + klogn)_ | _O(1)_ | Easy | | Heap, Simulation |
+2818 | [Apply Operations to Maximize Score](https://leetcode.com/problems/apply-operations-to-maximize-score/) | [C++](./C++/apply-operations-to-maximize-score.cpp) [Python](./Python/apply-operations-to-maximize-score.py) | _O(sqrt(r) + nlogr + klogn)_ | _O(sqrt(r) + n)_ | Hard | | Number Theory, Mono Stack, Greedy, Sort, Heap |
 
 <br/>
 <div align="right">
@@ -386,6 +388,7 @@
 2768 | [Number of Black Blocks](https://leetcode.com/problems/number-of-black-blocks/) | [C++](./C++/number-of-black-blocks.cpp) [Python](./Python/number-of-black-blocks.py) | _O(c)_ | _O(c)_ | Medium | | Freq Table
 2784 | [Check if Array is Good](https://leetcode.com/problems/check-if-array-is-good/) | [C++](./C++/check-if-array-is-good.cpp) [Python](./Python/check-if-array-is-good.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
 2808 | [Minimum Seconds to Equalize a Circular Array](https://leetcode.com/problems/minimum-seconds-to-equalize-a-circular-array/) | [C++](./C++/minimum-seconds-to-equalize-a-circular-array.cpp) [Python](./Python/minimum-seconds-to-equalize-a-circular-array.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
+2815 | [Max Pair Sum in an Array](https://leetcode.com/problems/max-pair-sum-in-an-array/) | [C++](./C++/max-pair-sum-in-an-array.cpp) [Python](./Python/max-pair-sum-in-an-array.py) | _O(nlogr)_ | _O(1)_ | Easy | | Hash Table
 
 <br/>
 <div align="right">
@@ -612,6 +615,7 @@
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 2426 | [Number of Pairs Satisfying Inequality](https://leetcode.com/problems/number-of-pairs-satisfying-inequality/)|[C++](./C++/number-of-pairs-satisfying-inequality.cpp) [Python](./Python/number-of-pairs-satisfying-inequality.py) | _O(nlogn)_      | _O(n)_          | Hard         | | Merge Sort, Two Pointers, BIT, Fenwick Tree, Coordinate Compression, Sorted List, Ordered Set, Binary Search
 2689 | [Extract Kth Character From The Rope Tree](https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/)|[C++](./C++/extract-kth-character-from-the-rope-tree.cpp) [Python](./Python/extract-kth-character-from-the-rope-tree.py) | _O(h)_      | _O(1)_          | Medium         | 🔒 | BST
+2817 | [Minimum Absolute Difference Between Elements With Constraint](https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/) | [C++](./C++/minimum-absolute-difference-between-elements-with-constraint.cpp) [Python](./Python/minimum-absolute-difference-between-elements-with-constraint.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sorted List, BST, Binary Search |
 
 <br/>
 <div align="right">
