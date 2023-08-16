@@ -9,7 +9,7 @@ public:
         set<int> bst;
         for (int i = x; i < size(nums); ++i) {
             bst.emplace(nums[i - x]);
-            const auto it = bst.upper_bound(nums[i]);
+            const auto it = bst.lower_bound(nums[i]);
             if (it != begin(bst)) {
                 result = min(result, nums[i] - *prev(it));
             } 
