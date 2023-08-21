@@ -9,11 +9,7 @@ class Solution(object):
         :type queries: List[List[int]]
         :rtype: List[int]
         """
-        def binary_search(k, m):
-            def check(x):
-                return k-(prices[-(m-x)]-k) <= prices[(x+1)-1]-0
-
-            left, right = 0, m-1
+        def binary_search(left, right, check):
             while left <= right:
                 mid = left + (right-left)//2
                 if check(mid):
@@ -28,7 +24,7 @@ class Solution(object):
             prefix[i+1] = prefix[i]+prices[i]
         result = []
         for k, m in queries:
-            cnt = binary_search(k, m)
+            cnt = binary_search(0, m-1, lambda x: k-(prices[-(m-x)]-k) <= prices[(x+1)-1]-0)
             a = prefix[-1]-prefix[-1-(m-cnt)]-(m-cnt)*k
             b = prefix[cnt]+(m-cnt)*k
             result.append(b-a)
