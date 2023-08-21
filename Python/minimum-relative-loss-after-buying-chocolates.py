@@ -11,16 +11,16 @@ class Solution(object):
         """
         def binary_search(k, m):
             def check(x):
-                return k-(prices[-x]-k) <= prices[((m-x)+1)-1]-0
+                return k-(prices[-(m-x)]-k) <= prices[(x+1)-1]-0
 
-            left, right = 1, m
+            left, right = 0, m-1
             while left <= right:
                 mid = left + (right-left)//2
-                if not check(mid):
+                if check(mid):
                     right = mid-1
                 else:
                     left = mid+1
-            return right
+            return left
 
         prices.sort()
         prefix = [0]*(len(prices)+1)
@@ -29,7 +29,7 @@ class Solution(object):
         result = []
         for k, m in queries:
             cnt = binary_search(k, m)
-            a = prefix[-1]-prefix[-1-cnt]-cnt*k
-            b = prefix[m-cnt]+cnt*k
+            a = prefix[-1]-prefix[-1-(m-cnt)]-(m-cnt)*k
+            b = prefix[cnt]+(m-cnt)*k
             result.append(b-a)
         return result
