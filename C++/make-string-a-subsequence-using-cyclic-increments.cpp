@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// two pointers
+// greedy, two pointers
 class Solution {
 public:
     bool canMakeSubsequence(string str1, string str2) {
