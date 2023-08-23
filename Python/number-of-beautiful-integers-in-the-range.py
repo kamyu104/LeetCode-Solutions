@@ -1,4 +1,4 @@
-# Time:  O(n^2 * k)
+# Time:  O(n^2 * k), n = len(str(high))
 # Space: O(n^2 * k)
 
 # memoization (faster but more space)
@@ -32,7 +32,7 @@ class Solution(object):
         return f(high)-f(low-1)
 
 
-# Time:  O(n^2 * k)
+# Time:  O(n^2 * k), n = len(str(high))
 # Space: O(n * k)
 # dp (slower but less space)
 class Solution2(object):
