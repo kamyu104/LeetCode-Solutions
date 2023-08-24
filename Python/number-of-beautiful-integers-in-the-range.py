@@ -18,7 +18,7 @@ class Solution(object):
                 if i == len(digits):
                     return int(state != UNBOUND and diff == total == 0)
                 if lookup[i][state][diff][total] == -1:
-                    result = int(i and diff == total == 0)  # count if the beautiful integer x s.t. len(str(x)) < len(digits)
+                    result = int(i != 0 and diff == total == 0)  # count if the beautiful integer x s.t. len(str(x)) < len(digits)
                     for d in xrange(1 if i == 0 else 0, 10):
                         new_state = state
                         if state == TIGHT and d != digits[i]:
