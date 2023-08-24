@@ -55,8 +55,7 @@ class Solution2(object):
             for i in reversed(xrange(len(digits))):
                 new_dp = [[[0]*k for _ in xrange(2*len(digits)+1)] for _ in xrange(3)]
                 for state in (TIGHT, UNTIGHT, UNBOUND):
-                    if i:
-                        new_dp[state][0][0] = 1  # count if the beautiful integer x s.t. len(str(x)) < len(digits)
+                    new_dp[state][0][0] = int(i != 0)  # count if the beautiful integer x s.t. len(str(x)) < len(digits)
                     for d in xrange(1 if i == 0 else 0, 10):
                         new_state = state
                         if state == TIGHT and d != digits[i]:
