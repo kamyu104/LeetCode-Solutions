@@ -8,15 +8,12 @@ public:
         enum {TIGHT, UNTIGHT, UNBOUND};
 
         const auto& to_digits = [](int x) {
-            if (x == 0) {
-                return vector<int>{0};
-            }
             vector<int> result;
             for (; x; x /= 10) {
                 result.emplace_back(x % 10);
             }
             reverse(begin(result), end(result));
-            return result;
+            return !empty(result) ? result : vector<int>{0};
         };
 
         const auto& f = [&](int x) {
@@ -58,15 +55,12 @@ public:
         enum {TIGHT, UNTIGHT, UNBOUND};
 
         const auto& to_digits = [](int x) {
-            if (x == 0) {
-                return vector<int>{0};
-            }
             vector<int> result;
             for (; x; x /= 10) {
                 result.emplace_back(x % 10);
             }
             reverse(begin(result), end(result));
-            return result;
+            return !empty(result) ? result : vector<int>{0};
         };
 
         const auto& f = [&](int x) {
@@ -114,15 +108,12 @@ class Solution3 {
 public:
     int numberOfBeautifulIntegers(int low, int high, int k) {
         const auto& to_digits = [](int x) {
-            if (x == 0) {
-                return vector<int>{0};
-            }
             vector<int> result;
             for (; x; x /= 10) {
                 result.emplace_back(x % 10);
             }
             reverse(begin(result), end(result));
-            return result;
+            return !empty(result) ? result : vector<int>{0};
         };
 
         const auto& f = [&](int x) {
@@ -160,15 +151,12 @@ class Solution4 {
 public:
     int numberOfBeautifulIntegers(int low, int high, int k) {
         const auto& to_digits = [](int x) {
-            if (x == 0) {
-                return vector<int>{0};
-            }
             vector<int> result;
             for (; x; x /= 10) {
                 result.emplace_back(x % 10);
             }
             reverse(begin(result), end(result));
-            return result;
+            return !empty(result) ? result : vector<int>{0};
         };
 
         const auto& f = [&](int x) {
