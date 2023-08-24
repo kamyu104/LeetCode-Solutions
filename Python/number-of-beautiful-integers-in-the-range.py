@@ -16,14 +16,14 @@ class Solution(object):
             lookup = [[[[-1]*k for _ in xrange(2*len(digits)+1)] for _ in xrange(3)] for _ in xrange(len(digits))]
             def memoization(i, state, diff, total):
                 if i == len(digits):
-                    return state != UNBOUND and diff == total == 0
+                    return int(state != UNBOUND and diff == total == 0)
                 if lookup[i][state][diff][total] == -1:
                     result = int(i and diff == total == 0)  # count if the beautiful integer x s.t. len(str(x)) < len(digits)
                     for d in xrange(1 if i == 0 else 0, 10):
                         new_state = state
                         if state == TIGHT and d != digits[i]:
                             new_state = UNTIGHT if d < digits[i] else UNBOUND
-                        new_diff = diff+int(1 if d%2 == 0 else -1)
+                        new_diff = diff+(1 if d%2 == 0 else -1)
                         new_total = (total*10+d)%k
                         result += memoization(i+1, new_state, new_diff, new_total)
                     lookup[i][state][diff][total] = result
@@ -61,7 +61,7 @@ class Solution2(object):
                         if state == TIGHT and d != digits[i]:
                             new_state = UNTIGHT if d < digits[i] else UNBOUND
                         for diff in xrange(-len(digits), len(digits)+1):
-                            new_diff = diff+int(1 if d%2 == 0 else -1)
+                            new_diff = diff+(1 if d%2 == 0 else -1)
                             for total in xrange(k):
                                 new_total = (total*10+d)%k
                                 new_dp[state][diff][total] += dp[new_state][new_diff][new_total]
