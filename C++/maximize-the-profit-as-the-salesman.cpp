@@ -11,7 +11,7 @@ public:
         }
         vector<int> dp(n + 1);
         for (int e = 0; e < n; ++e) {
-            dp[e + 1] = dp[e];
+            dp[e + 1] = dp[(e - 1) + 1];
             for (const auto& [s, g] : lookup[e]) {
                 dp[e + 1] = max(dp[e + 1], dp[(s - 1) + 1] + g);
             }
