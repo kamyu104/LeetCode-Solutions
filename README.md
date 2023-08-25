@@ -981,7 +981,7 @@
 2745 | [Construct the Longest New String](https://leetcode.com/problems/construct-the-longest-new-string/) | [C++](./C++/construct-the-longest-new-string.cpp) [Python](./Python/construct-the-longest-new-string.py) | _O(1)_ | _O(1)_ | Medium | | Constructive Algorithms, Math
 2753 | [Count Houses in a Circular Street II](https://leetcode.com/problems/count-houses-in-a-circular-street-ii/) | [C++](./C++/count-houses-in-a-circular-street-ii.cpp) [Python](./Python/count-houses-in-a-circular-street-ii.py) | _O(k)_ | _O(1)_ | Hard | 🔒 | Constructive Algorithms
 2811 | [Check if it is Possible to Split Array](https://leetcode.com/problems/check-if-it-is-possible-to-split-array/) | [C++](./C++/check-if-it-is-possible-to-split-array.cpp) [Python](./Python/check-if-it-is-possible-to-split-array.py) | _O(n)_ | _O(1)_ | Medium | | Constructive Algorithms
-2829 | [Determine the Minimum Sum of a k-avoiding Array](https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) | [C++](./C++/determine-the-minimum-sum-of-a-k-avoiding-array.cpp) [Python](./Python/determine-the-minimum-sum-of-a-k-avoiding-array.py) | _O(1)_ | _O(1)_ | Medium | | Constructive Algorithms, Math
+2829 | [Determine the Minimum Sum of a k-avoiding Array](https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) | [C++](./C++/determine-the-minimum-sum-of-a-k-avoiding-array.cpp) [Python](./Python/determine-the-minimum-sum-of-a-k-avoiding-array.py) | _O(1)_ | _O(1)_ | Medium | | Greedy, Constructive Algorithms, Math
 
 <br/>
 <div align="right">
