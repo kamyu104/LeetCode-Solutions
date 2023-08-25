@@ -1,5 +1,5 @@
 // Time:  O(nlogn)
-// Space: O(n)
+// Space: O(1)
 
 // sort, two pointers
 class Solution {
