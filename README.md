@@ -787,7 +787,7 @@
 2801 | [Count Stepping Numbers in Range](https://leetcode.com/problems/count-stepping-numbers-in-range/) | [C++](./C++/count-stepping-numbers-in-range.cpp) [Python](./Python/count-stepping-numbers-in-range.py) | _O(n)_   | _O(1)_        | Hard         | | DP
 2809 | [Minimum Time to Make Array Sum At Most x](https://leetcode.com/problems/minimum-time-to-make-array-sum-at-most-x/) | [C++](./C++/minimum-time-to-make-array-sum-at-most-x.cpp) [Python](./Python/minimum-time-to-make-array-sum-at-most-x.py) | _O(n^2)_   | _O(n)_        | Hard         | | Sort, Greedy, DP, Linear Search
 2826 | [Sorting Three Groups](https://leetcode.com/problems/sorting-three-groups/) | [C++](./C++/sorting-three-groups.cpp) [Python](./Python/sorting-three-groups.py) | _O(n)_   | _O(1)_        | Medium         | | DP
-2827 | [Number of Beautiful Integers in the Range](https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/) | [C++](./C++/number-of-beautiful-integers-in-the-range.cpp) [Python](./Python/number-of-beautiful-integers-in-the-range.py) | _O(n^2 * k)_   | _O(n * k)_        | Hard         | | DP
+2827 | [Number of Beautiful Integers in the Range](https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/) | [C++](./C++/number-of-beautiful-integers-in-the-range.cpp) [Python](./Python/number-of-beautiful-integers-in-the-range.py) | _O(n^2 * k)_   | _O(n * k)_        | Hard         | | DP, Memoization
 2830 | [Maximize the Profit as the Salesman](https://leetcode.com/problems/maximize-the-profit-as-the-salesman/) | [C++](./C++/maximize-the-profit-as-the-salesman.cpp) [Python](./Python/maximize-the-profit-as-the-salesman.py) | _O(n + m)_   | _O(n + m)_        | Medium         | | DP
 
 <br/>
@@ -1090,7 +1090,7 @@
 2804 | [Array Prototype ForEach](https://leetcode.com/problems/array-prototype-foreach/) | [TypeScript](./TypeScript/array-prototype-foreach.ts) | _O(n)_ | _O(1)_       | Easy           |🔒| Symbol |
 2805 | [Custom Interval](https://leetcode.com/problems/custom-interval/) | [TypeScript](./TypeScript/custom-interval.ts) | _O(1)_ | _O(1)_       | Medium           |🔒| |
 2821 | [Delay the Resolution of Each Promise](https://leetcode.com/problems/delay-the-resolution-of-each-promise/) | [TypeScript](./TypeScript/delay-the-resolution-of-each-promise.ts) | _O(1)_ | _O(1)_       | Easy           |🔒|  Promise |
-2822 | [Inversion of Object](https://leetcode.com/problems/inversion-of-object/) | [TypeScript](./TypeScript/inversion-of-object.ts) | _O(n)_ | _O(1)_       | Easy           |🔒|  Promise |
+2822 | [Inversion of Object](https://leetcode.com/problems/inversion-of-object/) | [TypeScript](./TypeScript/inversion-of-object.ts) | _O(n)_ | _O(1)_       | Easy           |🔒| |
 2823 | [Deep Object Filter](https://leetcode.com/problems/deep-object-filter/) | [TypeScript](./TypeScript/deep-object-filter.ts) | _O(n)_ | _O(h)_       | Medium           |🔒|  DFS |
 
 
