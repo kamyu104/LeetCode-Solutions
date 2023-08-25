@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2818%20%2F%202818-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2832%20%2F%202832-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -217,6 +217,7 @@
 2788 | [Split Strings by Separator](https://leetcode.com/problems/split-strings-by-separator/)| [C++](./C++/split-strings-by-separator.cpp) [Python](./Python/split-strings-by-separator.py)| _O(n * l)_ | _O(l)_ | Easy | | String |
 2800 | [Shortest String That Contains Three Strings](https://leetcode.com/problems/shortest-string-that-contains-three-strings/)| [C++](./C++/shortest-string-that-contains-three-strings.cpp) [Python](./Python/shortest-string-that-contains-three-strings.py)| _O(l)_ | _O(l)_ | Medium | | String, Brute Force, Longest Prefix Suffix, `KMP Algorithm` |
 2810 | [Faulty Keyboard](https://leetcode.com/problems/faulty-keyboard/)| [C++](./C++/faulty-keyboard.cpp) [Python](./Python/faulty-keyboard.py)| _O(n)_ | _O(n)_ | Easy | | String, Deque |
+2828 | [Check if a String Is an Acronym of Words](https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/)| [C++](./C++/check-if-a-string-is-an-acronym-of-words.cpp) [Python](./Python/check-if-a-string-is-an-acronym-of-words.py)| _O(n)_ | _O(1)_ | Easy | | String |
 
 <br/>
 <div align="right">
@@ -257,6 +258,7 @@
 2735 | [Collecting Chocolates](https://leetcode.com/problems/collecting-chocolates/) | [C++](./C++/collecting-chocolates.cpp) [Python](./Python/collecting-chocolates.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack, Difference Array, Prefix Sum, Binary Search, Mono Deque, Brute Force
 2736 | [Maximum Sum Queries](https://leetcode.com/problems/maximum-sum-queries/) | [C++](./C++/maximum-sum-queries.cpp) [Python](./Python/maximum-sum-queries.py) | _O(nlogn + mlogm + mlogn)_ | _O(n + m)_ | Hard | | Sort, Mono Stack, Binary Search
 2764 | [is Array a Preorder of Some ‌Binary Tree](https://leetcode.com/problems/is-array-a-preorder-of-some-binary-tree/) | [C++](./C++/is-array-a-preorder-of-some-binary-tree.cpp) [Python](./Python/is-array-a-preorder-of-some-binary-tree.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Stack
+2832 | [Maximal Range That Each Element Is Maximum in It](https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/) | [C++](./C++/maximal-range-that-each-element-is-maximum-in-it.cpp) [Python](./Python/maximal-range-that-each-element-is-maximum-in-it.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Mono Stack
 
 <br/>
 <div align="right">
@@ -559,6 +561,8 @@
 2779 | [Maximum Beauty of an Array After Applying Operation](https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/) | [C++](./C++/maximum-beauty-of-an-array-after-applying-operation.cpp) [Python](./Python/maximum-beauty-of-an-array-after-applying-operation.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers, Sliding Window
 2781 | [Length of the Longest Valid Substring](https://leetcode.com/problems/length-of-the-longest-valid-substring/) | [C++](./C++/length-of-the-longest-valid-substring.cpp) [Python](./Python/length-of-the-longest-valid-substring.py) | _O((m + n) * l)_ | _O(t)_ | Hard | | Two Pointers, Sliding Window, Trie
 2799 | [Count Complete Subarrays in an Array](https://leetcode.com/problems/count-complete-subarrays-in-an-array/) | [C++](./C++/count-complete-subarrays-in-an-array.cpp) [Python](./Python/count-complete-subarrays-in-an-array.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Two Pointers, Sliding Window
+2824 | [Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) | [C++](./C++/count-pairs-whose-sum-is-less-than-target.cpp) [Python](./Python/count-pairs-whose-sum-is-less-than-target.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort, Two Pointers
+2831 | [Find the Longest Equal Subarray](https://leetcode.com/problems/find-the-longest-equal-subarray/) | [C++](./C++/find-the-longest-equal-subarray.cpp) [Python](./Python/find-the-longest-equal-subarray.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -782,6 +786,9 @@
 2787 | [Ways to Express an Integer as Sum of Powers](https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/) | [C++](./C++/ways-to-express-an-integer-as-sum-of-powers.cpp) [Python](./Python/ways-to-express-an-integer-as-sum-of-powers.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Knapsack DP
 2801 | [Count Stepping Numbers in Range](https://leetcode.com/problems/count-stepping-numbers-in-range/) | [C++](./C++/count-stepping-numbers-in-range.cpp) [Python](./Python/count-stepping-numbers-in-range.py) | _O(n)_   | _O(1)_        | Hard         | | DP
 2809 | [Minimum Time to Make Array Sum At Most x](https://leetcode.com/problems/minimum-time-to-make-array-sum-at-most-x/) | [C++](./C++/minimum-time-to-make-array-sum-at-most-x.cpp) [Python](./Python/minimum-time-to-make-array-sum-at-most-x.py) | _O(n^2)_   | _O(n)_        | Hard         | | Sort, Greedy, DP, Linear Search
+2826 | [Sorting Three Groups](https://leetcode.com/problems/sorting-three-groups/) | [C++](./C++/sorting-three-groups.cpp) [Python](./Python/sorting-three-groups.py) | _O(n)_   | _O(1)_        | Medium         | | DP
+2827 | [Number of Beautiful Integers in the Range](https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/) | [C++](./C++/number-of-beautiful-integers-in-the-range.cpp) [Python](./Python/number-of-beautiful-integers-in-the-range.py) | _O(n^2 * k)_   | _O(n * k)_        | Hard         | | DP
+2830 | [Maximize the Profit as the Salesman](https://leetcode.com/problems/maximize-the-profit-as-the-salesman/) | [C++](./C++/maximize-the-profit-as-the-salesman.cpp) [Python](./Python/maximize-the-profit-as-the-salesman.py) | _O(n + m)_   | _O(n + m)_        | Medium         | | DP
 
 <br/>
 <div align="right">
@@ -884,6 +891,8 @@
 2789 | [Largest Element in an Array after Merge Operations](https://leetcode.com/problems/largest-element-in-an-array-after-merge-operations/) | [C++](./C++/largest-element-in-an-array-after-merge-operations.cpp) [Python](./Python/largest-element-in-an-array-after-merge-operations.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 2790 | [Maximum Number of Groups With Increasing Length](https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length/) | [C++](./C++/maximum-number-of-groups-with-increasing-length.cpp) [Python](./Python/maximum-number-of-groups-with-increasing-length.py) | _O(n)_ | _O(n)_ | Hard | | Constructive Algorithms, Counting Sort, Greedy, Binary Search, Prefix Sum
 2813 | [Maximum Elegance of a K-Length Subsequence](https://leetcode.com/problems/maximum-elegance-of-a-k-length-subsequence/) | [C++](./C++/maximum-elegance-of-a-k-length-subsequence.cpp) [Python](./Python/maximum-elegance-of-a-k-length-subsequence.py) | _O(nlogk)_ | _O(k)_ | Hard | | Partial Sort, Heap, Quick Select, BST, Sorted List, Greedy
+2819 | [Minimum Relative Loss After Buying Chocolates](https://leetcode.com/problems/minimum-relative-loss-after-buying-chocolates/) | [C++](./C++/minimum-relative-loss-after-buying-chocolates.cpp) [Python](./Python/minimum-relative-loss-after-buying-chocolates.py) | _O((n + q) * logn)_ | _O(n)_ | Hard | 🔒 | Sort, Binary Search, Greedy, Prefix Sum
+2825 | [Make String a Subsequence Using Cyclic Increments](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/) | [C++](./C++/make-string-a-subsequence-using-cyclic-increments.cpp) [Python](./Python/make-string-a-subsequence-using-cyclic-increments.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Two Pointers
 
 <br/>
 <div align="right">
@@ -972,6 +981,7 @@
 2745 | [Construct the Longest New String](https://leetcode.com/problems/construct-the-longest-new-string/) | [C++](./C++/construct-the-longest-new-string.cpp) [Python](./Python/construct-the-longest-new-string.py) | _O(1)_ | _O(1)_ | Medium | | Constructive Algorithms, Math
 2753 | [Count Houses in a Circular Street II](https://leetcode.com/problems/count-houses-in-a-circular-street-ii/) | [C++](./C++/count-houses-in-a-circular-street-ii.cpp) [Python](./Python/count-houses-in-a-circular-street-ii.py) | _O(k)_ | _O(1)_ | Hard | 🔒 | Constructive Algorithms
 2811 | [Check if it is Possible to Split Array](https://leetcode.com/problems/check-if-it-is-possible-to-split-array/) | [C++](./C++/check-if-it-is-possible-to-split-array.cpp) [Python](./Python/check-if-it-is-possible-to-split-array.py) | _O(n)_ | _O(1)_ | Medium | | Constructive Algorithms
+2829 | [Determine the Minimum Sum of a k-avoiding Array](https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) | [C++](./C++/determine-the-minimum-sum-of-a-k-avoiding-array.cpp) [Python](./Python/determine-the-minimum-sum-of-a-k-avoiding-array.py) | _O(1)_ | _O(1)_ | Medium | | Constructive Algorithms, Math
 
 <br/>
 <div align="right">
@@ -1079,6 +1089,10 @@
 2803 | [Factorial Generator](https://leetcode.com/problems/factorial-generator/) | [TypeScript](./TypeScript/factorial-generator.ts) | _O(n)_ | _O(1)_       | Easy           |🔒| Generator |
 2804 | [Array Prototype ForEach](https://leetcode.com/problems/array-prototype-foreach/) | [TypeScript](./TypeScript/array-prototype-foreach.ts) | _O(n)_ | _O(1)_       | Easy           |🔒| Symbol |
 2805 | [Custom Interval](https://leetcode.com/problems/custom-interval/) | [TypeScript](./TypeScript/custom-interval.ts) | _O(1)_ | _O(1)_       | Medium           |🔒| |
+2821 | [Delay the Resolution of Each Promise](https://leetcode.com/problems/delay-the-resolution-of-each-promise/) | [TypeScript](./TypeScript/delay-the-resolution-of-each-promise.ts) | _O(1)_ | _O(1)_       | Easy           |🔒|  Promise |
+2822 | [Inversion of Object](https://leetcode.com/problems/inversion-of-object/) | [TypeScript](./TypeScript/inversion-of-object.ts) | _O(n)_ | _O(1)_       | Easy           |🔒|  Promise |
+2823 | [Deep Object Filter](https://leetcode.com/problems/deep-object-filter/) | [TypeScript](./TypeScript/deep-object-filter.ts) | _O(n)_ | _O(h)_       | Medium           |🔒|  DFS |
+
 
 <br/>
 <div align="right">
@@ -1142,6 +1156,7 @@
 2752 | [Customers with Maximum Number of Transactions on Consecutive Days](https://leetcode.com/problems/customers-with-maximum-number-of-transactions-on-consecutive-days/) | [MySQL](./MySQL/customers-with-maximum-number-of-transactions-on-consecutive-days.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 2783 | [Flight Occupancy and Waitlist Analysis](https://leetcode.com/problems/flight-occupancy-and-waitlist-analysis/) | [MySQL](./MySQL/flight-occupancy-and-waitlist-analysis.sql) | _O(n * m + nlogn)_ | _O(n * m)_       | Medium           |🔒||
 2793 | [Status of Flight Tickets](https://leetcode.com/problems/status-of-flight-tickets/) | [MySQL](./MySQL/status-of-flight-tickets.sql) | _O(nlogn + m)_ | _O(n + m)_       | Hard           |🔒||
+2820 | [Election Results](https://leetcode.com/problems/election-results/) | [MySQL](./MySQL/election-results.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
