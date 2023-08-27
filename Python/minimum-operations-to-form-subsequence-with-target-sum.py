@@ -30,8 +30,7 @@ class Solution(object):
                 elif total-x >= target:
                     total -= x
                 else:
-                    cnt[i-1] += 1
-                    cnt[i-1] += 1
+                    cnt[i-1] += 2
                     result += 1
         return result
 
