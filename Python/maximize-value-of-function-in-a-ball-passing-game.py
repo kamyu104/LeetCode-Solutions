@@ -1,19 +1,27 @@
-# Time:  O(n)
-# Space: O(1)
+# Time:  O(nlogk)
+# Space: O(nlogk)
 
-# math
+# binary lifting
 class Solution(object):
-    def furthestDistanceFromOrigin(self, moves):
+    def getMaxFunctionValue(self, receiver, k):
         """
-        :type moves: str
+        :type receiver: List[int]
+        :type k: int
         :rtype: int
         """
-        curr = cnt = 0
-        for x in moves:
-            if x == 'L':
-                curr -= 1
-            elif x == 'R':
-                curr += 1
-            else:
-                cnt += 1
-        return abs(curr)+cnt
+        l = (k+1).bit_length()
+        P = [receiver[:] for _ in xrange(l)]
+        S = [range(len(receiver)) for _ in xrange(l)]
+        for i in xrange(1, len(P)):
+            for u in xrange(len(receiver)):
+                P[i][u] = P[i-1][P[i-1][u]]
+                S[i][u] = S[i-1][u]+S[i-1][P[i-1][u]]
+        result = 0
+        for u in xrange(len(receiver)):
+            curr = 0
+            for i in xrange(l):
+                if (k+1)&(1<<i):
+                    curr += S[i][u]
+                    u = P[i][u]
+            result = max(result, curr)
+        return result
