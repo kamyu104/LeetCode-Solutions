@@ -2,7 +2,7 @@
 // Space: O(logn)
 
 // codeforces, https://codeforces.com/problemset/problem/1303/D
-// sort, greedy
+// counting sort, greedy
 class Solution {
 public:
     int minOperations(vector<int>& nums, int target) {
