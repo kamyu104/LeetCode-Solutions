@@ -111,7 +111,6 @@ public:
         if (accumulate(begin(nums), end(nums), 0ll) < target) {
             return -1;
         }
-
         vector<int> cnt(floor_log2_x(*max_element(cbegin(nums), cend(nums))) + 1);
         for (const auto& x : nums) {
             ++cnt[floor_log2_x(x)];
