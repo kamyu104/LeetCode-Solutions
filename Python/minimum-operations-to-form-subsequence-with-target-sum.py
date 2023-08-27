@@ -1,12 +1,43 @@
 # Time:  O(nlogn)
-# Space: O(n)
+# Space: O(1)
 
+# codeforces, https://codeforces.com/problemset/problem/1303/D
+# sort, greedy
+class Solution(object):
+    def minOperations(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        total = sum(nums)
+        if total < target:
+            return -1
+
+        nums.sort()
+        result = 0
+        while target:
+            x = nums.pop()
+            if x <= target:
+                target -= x
+                total -= x
+            elif total-x >= target:
+                total -= x
+            else:
+                nums.append(x//2)
+                nums.append(x//2)
+                result += 1
+        return result
+
+
+# Time:  O(nlogn)
+# Space: O(n)
 import heapq
 
 
 # codeforces, https://codeforces.com/problemset/problem/1303/D
 # heap, greedy
-class Solution(object):
+class Solution2(object):
     def minOperations(self, nums, target):
         """
         :type nums: List[int]
@@ -20,9 +51,7 @@ class Solution(object):
         result = 0
         max_heap = [-x for x in nums]
         heapq.heapify(max_heap)
-        while heapq:
-            if not target:
-                break
+        while target:
             x = -heapq.heappop(max_heap)
             if x <= target:
                 target -= x
@@ -40,7 +69,7 @@ class Solution(object):
 # Space: O(logr)
 # codeforces, https://codeforces.com/problemset/problem/1303/D
 # bitmasks, greedy
-class Solution2(object):
+class Solution3(object):
     def minOperations(self, nums, target):
         """
         :type nums: List[int]
