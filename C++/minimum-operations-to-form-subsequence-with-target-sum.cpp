@@ -2,8 +2,38 @@
 // Space: O(logr)
 
 // codeforces, https://codeforces.com/problemset/problem/1303/D
-// bitmasks, greedy
+// heap, greedy
 class Solution {
+public:
+    int minOperations(vector<int>& nums, int target) {
+        int64_t total = accumulate(begin(nums), end(nums), 0ll);
+        if (total < target) {
+            return -1;
+        }
+        int result = 0;
+        priority_queue<int> max_heap(cbegin(nums), cend(nums));
+        while (!empty(max_heap)) {
+            const int x = max_heap.top(); max_heap.pop();
+            if (x <= target) {
+                target -= x;
+                total -= x;
+            } else if (total - x >= target) {
+                total -= x;
+            } else {
+                max_heap.emplace(x / 2);
+                max_heap.emplace(x / 2);
+                ++result;
+            }
+        }
+        return result;
+    }
+};
+
+// Time:  O(nlogr)
+// Space: O(logr)
+// codeforces, https://codeforces.com/problemset/problem/1303/D
+// bitmasks, greedy
+class Solution2 {
 public:
     int minOperations(vector<int>& nums, int target) {
         const auto& floor_log2_x = [](int x) {
