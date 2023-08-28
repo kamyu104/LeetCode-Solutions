@@ -7,17 +7,15 @@ public:
     long long getMaxFunctionValue(vector<int>& receiver, long long k) {
         const auto& find_cycles = [](const auto& adj) {
             vector<pair<int, int>> result;
-            vector<bool> lookup(size(adj));
-            for (int i = 0; i < size(adj); ++i) {
-                unordered_map<int, int> cnt;
-                int u = i;
+            vector<int> lookup(size(adj));
+            for (int i = 0, idx = 0; i < size(adj); ++i) {
+                int u = i, prev = idx;
                 while (!lookup[u]) {
-                    lookup[u] = true;
-                    cnt[u] = size(cnt);
+                    lookup[u] = ++idx;
                     u = adj[u];
                 }
-                if (cnt.count(u)) {
-                    result.emplace_back(u, size(cnt) - cnt[u]);
+                if (lookup[u] > prev) {
+                    result.emplace_back(u, idx - lookup[u] + 1);
                 }
             }
             return result;
