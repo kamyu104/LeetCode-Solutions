@@ -36,10 +36,11 @@ class Solution(object):
             return lookup, prefixes
         
         def get_sum(prefix, i, cnt):
-            q, r = divmod(cnt, len(prefix)-1)
+            l = len(prefix)-1
+            q, r = divmod(cnt, l)
             return (q*prefix[-1]+
-                    (prefix[min(i+r, len(prefix)-1)]-prefix[i])+
-                    (prefix[(max(((i+r)-(len(prefix)-1), 0)))]-prefix[0]))
+                    (prefix[min(i+r, l)]-prefix[i])+
+                    (prefix[max(((i+r)-l, 0))]-prefix[0]))
         
         def start_inside_cycle():
             result = 0
