@@ -14,15 +14,16 @@ class Solution(object):
         """
         def find_cycles(adj):
             result = []
-            lookup = [False]*len(adj)
+            lookup = [0]*len(adj)
+            idx = 0
             for u in xrange(len(adj)):
-                cnt = {}
+                prev = idx
                 while not lookup[u]:
-                    lookup[u] = True
-                    cnt[u] = len(cnt)
+                    idx += 1
+                    lookup[u] = idx
                     u = adj[u]
-                if u in cnt:
-                    result.append((u, len(cnt)-cnt[u]))
+                if lookup[u] > prev:
+                    result.append((u, idx-lookup[u]+1))
             return result
 
         def find_prefixes():
