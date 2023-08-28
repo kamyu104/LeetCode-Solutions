@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2832%20%2F%202832-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2836%20%2F%202836-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -477,6 +477,7 @@
 2780 | [Minimum Index of a Valid Split](https://leetcode.com/problems/minimum-index-of-a-valid-split/)| [C++](./C++/minimum-index-of-a-valid-split.cpp) [Python](./Python/minimum-index-of-a-valid-split.py)| _O(n)_ | _O(1)_ | Medium | | `Boyer–Moore Majority Vote Algorithm`, Linear Search |
 2802 | [Find The K-th Lucky Number](https://leetcode.com/problems/find-the-k-th-lucky-number/)| [C++](./C++/find-the-k-th-lucky-number.cpp) [Python](./Python/find-the-k-th-lucky-number.py)| _O(logn)_ | _O(1)_ | Medium | 🔒 | Math, Bitmasks |
 2806 | [Account Balance After Rounded Purchase](https://leetcode.com/problems/account-balance-after-rounded-purchase/)| [C++](./C++/account-balance-after-rounded-purchase.cpp) [Python](./Python/account-balance-after-rounded-purchase.py)| _O(1)_ | _O(1)_ | Easy | | Math |
+2833 | [Furthest Point From Origin](https://leetcode.com/problems/furthest-point-from-origin/)| [C++](./C++/furthest-point-from-origin.cpp) [Python](./Python/furthest-point-from-origin.py)| _O(1)_ | _O(1)_ | Easy | | Math |
 
 <br/>
 <div align="right">
@@ -893,6 +894,7 @@
 2813 | [Maximum Elegance of a K-Length Subsequence](https://leetcode.com/problems/maximum-elegance-of-a-k-length-subsequence/) | [C++](./C++/maximum-elegance-of-a-k-length-subsequence.cpp) [Python](./Python/maximum-elegance-of-a-k-length-subsequence.py) | _O(nlogk)_ | _O(k)_ | Hard | | Partial Sort, Heap, Quick Select, BST, Sorted List, Greedy
 2819 | [Minimum Relative Loss After Buying Chocolates](https://leetcode.com/problems/minimum-relative-loss-after-buying-chocolates/) | [C++](./C++/minimum-relative-loss-after-buying-chocolates.cpp) [Python](./Python/minimum-relative-loss-after-buying-chocolates.py) | _O((n + q) * logn)_ | _O(n)_ | Hard | 🔒 | Sort, Binary Search, Greedy, Prefix Sum
 2825 | [Make String a Subsequence Using Cyclic Increments](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/) | [C++](./C++/make-string-a-subsequence-using-cyclic-increments.cpp) [Python](./Python/make-string-a-subsequence-using-cyclic-increments.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Two Pointers
+2835 | [Minimum Operations to Form Subsequence With Target Sum](https://leetcode.com/problems/minimum-operations-to-form-subsequence-with-target-sum/) | [C++](./C++/minimum-operations-to-form-subsequence-with-target-sum.cpp) [Python](./Python/minimum-operations-to-form-subsequence-with-target-sum.py) | _O(n)_ | _O(logn)_ | Hard | [Educational Codeforces Round 82 (Rated for Div. 2)](https://codeforces.com/problemset/problem/1303/D) | Counting Sort, Sort, Heap, Greedy, Bitmasks
 
 <br/>
 <div align="right">
@@ -925,6 +927,7 @@
 2699 | [Modify Graph Edge Weights](https://leetcode.com/problems/modify-graph-edge-weights/)  | [C++](./C++/modify-graph-edge-weights.cpp) [Python](./Python/modify-graph-edge-weights.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard           || Graph, `Dijkstra's Algorithm` |
 2714 | [Find Shortest Path with K Hops](https://leetcode.com/problems/find-shortest-path-with-k-hops/)  | [C++](./C++/find-shortest-path-with-k-hops.cpp) [Python](./Python/find-shortest-path-with-k-hops.py) |  _O(n * k + (k * e) * log(n * k))_ | _O(n * k + e)_ | Hard           |🔒| Graph, `Dijkstra's Algorithm` |
 2737 | [Find the Closest Marked Node](https://leetcode.com/problems/find-the-closest-marked-node/)  | [C++](./C++/find-the-closest-marked-node.cpp) [Python](./Python/find-the-closest-marked-node.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium           |🔒| Graph, `Dijkstra's Algorithm` |
+2836 | [Maximize Value of Function in a Ball Passing Game](https://leetcode.com/problems/maximize-value-of-function-in-a-ball-passing-game/)  | [C++](./C++/maximize-value-of-function-in-a-ball-passing-game.cpp) [Python](./Python/maximize-value-of-function-in-a-ball-passing-game.py) | _O(n)_ | _O(n)_| Hard           || Graph, Prefix Sum, Two Pointers, Sliding Window, Binary Lifting |
 
 <br/>
 <div align="right">
@@ -982,6 +985,7 @@
 2753 | [Count Houses in a Circular Street II](https://leetcode.com/problems/count-houses-in-a-circular-street-ii/) | [C++](./C++/count-houses-in-a-circular-street-ii.cpp) [Python](./Python/count-houses-in-a-circular-street-ii.py) | _O(k)_ | _O(1)_ | Hard | 🔒 | Constructive Algorithms
 2811 | [Check if it is Possible to Split Array](https://leetcode.com/problems/check-if-it-is-possible-to-split-array/) | [C++](./C++/check-if-it-is-possible-to-split-array.cpp) [Python](./Python/check-if-it-is-possible-to-split-array.py) | _O(n)_ | _O(1)_ | Medium | | Constructive Algorithms
 2829 | [Determine the Minimum Sum of a k-avoiding Array](https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) | [C++](./C++/determine-the-minimum-sum-of-a-k-avoiding-array.cpp) [Python](./Python/determine-the-minimum-sum-of-a-k-avoiding-array.py) | _O(1)_ | _O(1)_ | Medium | | Greedy, Constructive Algorithms, Math
+2834 | [Find the Minimum Possible Sum of a Beautiful Array](https://leetcode.com/problems/find-the-minimum-possible-sum-of-a-beautiful-array/) | [C++](./C++/find-the-minimum-possible-sum-of-a-beautiful-array.cpp) [Python](./Python/find-the-minimum-possible-sum-of-a-beautiful-array.py) | _O(1)_ | _O(1)_ | Medium | [Determine the Minimum Sum of a k-avoiding Array](https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) | Greedy, Constructive Algorithms, Math
 
 <br/>
 <div align="right">
