@@ -25,7 +25,7 @@ class Solution(object):
                     result.append((u, len(cnt)-cnt[u]))
             return result
 
-        def find_prefixes(cycles):
+        def find_prefixes():
             lookup = [(-1, -1)]*len(receiver)
             prefixes = [[0] for _ in xrange(len(cycles))]
             for idx, (u, l) in enumerate(cycles):
@@ -75,7 +75,7 @@ class Solution(object):
             return result
             
         cycles = find_cycles(receiver)
-        lookup, prefixes = find_prefixes(cycles)
+        lookup, prefixes = find_prefixes()
         return max(start_inside_cycle(), start_outside_cycle())
 
 
