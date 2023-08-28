@@ -41,7 +41,7 @@ class Solution(object):
                     (prefix[min(i+r, len(prefix)-1)]-prefix[i])+
                     (prefix[(max(((i+r)-(len(prefix)-1), 0)))]-prefix[0]))
         
-        def start_in_cycle():
+        def start_inside_cycle():
             result = 0
             for u, l in cycles:
                 for _ in xrange(l):
@@ -50,7 +50,7 @@ class Solution(object):
                     u = receiver[u]
             return result
     
-        def start_out_of_cycle():
+        def start_outside_cycle():
             result = 0
             degree = [0]*len(receiver)
             for x in receiver:
@@ -75,7 +75,7 @@ class Solution(object):
             
         cycles = find_cycles(receiver)
         lookup, prefixes = find_prefixes(cycles)
-        return max(start_in_cycle(), start_out_of_cycle())
+        return max(start_inside_cycle(), start_outside_cycle())
 
 
 # Time:  O(nlogk)
