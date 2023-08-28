@@ -4,7 +4,7 @@
 import collections
 
 
-# graph, prefix, two pointers, sliding window
+# graph, prefix sum, two pointers, sliding window
 class Solution(object):
     def getMaxFunctionValue(self, receiver, k):
         """
