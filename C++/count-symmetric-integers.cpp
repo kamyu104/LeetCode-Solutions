@@ -13,15 +13,15 @@ public:
                 if (size(digits) % 2) {
                     LOOKUP[x - 1] = 0;
                 } else {
-                    int curr1 = 0;
+                    int total1 = 0;
                     for (int i = 0; i < size(digits) / 2; ++i) {
-                        curr1 += digits[i] - '0';
+                        total1 += digits[i] - '0';
                     }
-                    int curr2 = 0;
+                    int total2 = 0;
                     for (int i = size(digits) / 2; i < size(digits); ++i) {
-                        curr2 += digits[i] - '0';
+                        total2 += digits[i] - '0';
                     }
-                    LOOKUP[x - 1] = curr1 == curr2 ? 1 : 0;
+                    LOOKUP[x - 1] = total1 == total2 ? 1 : 0;
                 }
             }
             return LOOKUP[x - 1];
