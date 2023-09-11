@@ -1,6 +1,9 @@
 # Time:  O(1)
 # Space: O(1)
 
+import collections
+
+
 # freq table
 class Solution(object):
     def canBeEqual(self, s1, s2):
