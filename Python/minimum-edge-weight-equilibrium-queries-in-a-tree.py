@@ -195,9 +195,6 @@ class Solution2(object):
             w -= 1
             adj[u].append((v, w))
             adj[v].append((u, w))
-        pairs = collections.defaultdict(set)
-        for a, b in queries:
-            pairs[a].add(b), pairs[b].add(a)
         tree_infos = TreeInfos2(adj)
         result = [0]*len(queries)
         for i, (a, b) in enumerate(queries):
