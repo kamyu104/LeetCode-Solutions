@@ -1,5 +1,5 @@
-# Time:  O(r * n), r = max(w for _, _, w in edges)
-# Space: O(r * n)
+# Time:  O(r * n + q), r = max(w for _, _, w in edges)
+# Space: O(r * n + q)
 
 import collections
 from functools import partial
