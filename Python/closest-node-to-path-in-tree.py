@@ -1,5 +1,5 @@
 # Time:  O(n + q)
-# Space: O(n)
+# Space: O(n + q)
 
 import collections
 from functools import partial
