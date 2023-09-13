@@ -1,5 +1,5 @@
 // Time:  O(n + q)
-// Space: O(n)
+// Space: O(n + q)
 
 // Tarjan's Offline LCA Algorithm
 class Solution {
