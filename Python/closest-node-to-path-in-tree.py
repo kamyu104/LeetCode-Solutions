@@ -205,7 +205,7 @@ class TreeInfos3(object):  # Time: O(N), Space: O(N), N is the number of nodes
             stk.pop()()
         self.D, self.P = D, P
 
-    def lca(self, a, b):  # Time: O(logh)
+    def lca(self, a, b):  # Time: O(h)
         while self.D[a] > self.D[b]:
             a = self.P[a]
         while self.D[a] < self.D[b]:
