@@ -14,7 +14,7 @@ class Solution(object):
         def getPrefix(pattern):
             prefix = [-1]*len(pattern)
             j = -1
-            for i in range(1, len(pattern)):
+            for i in xrange(1, len(pattern)):
                 while j+1 > 0 and pattern[j+1] != pattern[i]:
                     j = prefix[j]
                 if pattern[j+1] == pattern[i]:
@@ -69,7 +69,7 @@ class Solution2(object):
         def getPrefix(pattern):
             prefix = [-1]*len(pattern)
             j = -1
-            for i in range(1, len(pattern)):
+            for i in xrange(1, len(pattern)):
                 while j+1 > 0 and pattern[j+1] != pattern[i]:
                     j = prefix[j]
                 if pattern[j+1] == pattern[i]:
