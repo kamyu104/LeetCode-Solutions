@@ -940,7 +940,7 @@
 2714 | [Find Shortest Path with K Hops](https://leetcode.com/problems/find-shortest-path-with-k-hops/)  | [C++](./C++/find-shortest-path-with-k-hops.cpp) [Python](./Python/find-shortest-path-with-k-hops.py) |  _O(n * k + (k * e) * log(n * k))_ | _O(n * k + e)_ | Hard           |🔒| Graph, `Dijkstra's Algorithm` |
 2737 | [Find the Closest Marked Node](https://leetcode.com/problems/find-the-closest-marked-node/)  | [C++](./C++/find-the-closest-marked-node.cpp) [Python](./Python/find-the-closest-marked-node.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium           |🔒| Graph, `Dijkstra's Algorithm` |
 2836 | [Maximize Value of Function in a Ball Passing Game](https://leetcode.com/problems/maximize-value-of-function-in-a-ball-passing-game/)  | [C++](./C++/maximize-value-of-function-in-a-ball-passing-game.cpp) [Python](./Python/maximize-value-of-function-in-a-ball-passing-game.py) | _O(n)_ | _O(n)_| Hard           || Graph, Prefix Sum, Two Pointers, Sliding Window, Binary Lifting |
-2850 | [Minimum Moves to Spread Stones Over Grid](https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid/) | [C++](./C++/minimum-moves-to-spread-stones-over-grid.cpp) [Python](./Python/minimum-moves-to-spread-stones-over-grid.py) | _O(n^2)_ | _O(n^2)_ | Medium | | Backtracking, `Hungarian Weighted Bipartite Matching` |
+2850 | [Minimum Moves to Spread Stones Over Grid](https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid/) | [C++](./C++/minimum-moves-to-spread-stones-over-grid.cpp) [Python](./Python/minimum-moves-to-spread-stones-over-grid.py) | _O(n^3)_ | _O(n^2)_ | Medium | | Backtracking, `Hungarian Weighted Bipartite Matching` |
 
 <br/>
 <div align="right">
