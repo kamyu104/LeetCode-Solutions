@@ -1,4 +1,4 @@
-// Time:  O(r * n + q), r = max(w for _, _, w in edges)
+// Time:  O(r * (n + q)), r = max(w for _, _, w in edges)
 // Space: O(r * n + q)
 
 // Tarjan's Offline LCA Algorithm
@@ -142,7 +142,7 @@ private:
     };
 };
 
-// Time:  O(r * n + nlogn + qlogn), r = max(w for _, _, w in edges)
+// Time:  O(r * (n + q) + nlogn + qlogn), r = max(w for _, _, w in edges)
 // Space: O(r * n + nlogn)
 // binary lifting (online lca algorithm)
 class Solution2 {
