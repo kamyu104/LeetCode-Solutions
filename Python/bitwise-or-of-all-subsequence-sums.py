@@ -25,7 +25,7 @@ class Solution2(object):
         :rtype: int
         """
         result = cnt = 0
-        for i in xrange(max(nums).bit_length()):
+        for i in xrange(64):
             cnt >>= 1
             for x in nums:
                 cnt += (x>>i)&1
