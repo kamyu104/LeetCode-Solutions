@@ -1,4 +1,4 @@
-// Time:  O(max(x^2 * y) where x+y = n) = O(n^2), n = len(grid)*len(grid[0])
+// Time:  O(max(x^2 * y)) = O(n^2), n = len(grid)*len(grid[0]), y = len(zero), x = n-y
 // Space: O(max(x^2)) = O(n^2)
 
 // weighted bipartite matching solution
@@ -68,7 +68,7 @@ private:
     }
 };
 
-// Time:  O(max(x^y where x+y = n) = O((n/2)^(n/2))) = O(5^5), n = len(grid)*len(grid[0]), y = len(zero), x = n-y
+// Time:  O(max(x^y)) = O((n/2)^(n/2))) = O(5^5), n = len(grid)*len(grid[0]), y = len(zero), x = n-y
 // Space: O(y) = O(n) = O(9) = O(1)
 // backtracking
 class Solution2 {
