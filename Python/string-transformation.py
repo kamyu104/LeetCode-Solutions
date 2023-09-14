@@ -140,5 +140,5 @@ class Solution3(object):
              [n-1, (n-1)-1]]
         dp = [1,  0]
         dp = matrix_mult([dp], matrix_expo(T, k))[0]  # [dp[0], dp[1]] * T^k
-        z = z_function(t+s+s)
+        z = z_function(t+s+s[:-1])
         return reduce(lambda a, b: (a+b)%MOD, (dp[int(i-len(t) != 0)] for i in xrange(len(t), len(t)+n) if z[i] >= len(t)), 0)
