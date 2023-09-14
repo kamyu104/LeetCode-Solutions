@@ -162,7 +162,7 @@ public:
         vector<vector<int>> T = {{    0,           1},
                                  {n - 1, (n - 1) - 1}};
         const auto dp = matrixMult({{1, 0}}, matrixExpo(T, k))[0];  // [dp[0], dp[1]] * T^k
-        const auto& z = z_function(t + s + s);
+        const auto& z = z_function(t + s + s.substr(0, size(s) - 1));
         int result = 0;
         for (int i = size(t); i < size(t) + n; ++i) {
             if (z[i] >= size(t)) {
