@@ -162,11 +162,11 @@ public:
         vector<vector<int>> T = {{    0,           1},
                                  {n - 1, (n - 1) - 1}};
         const auto dp = matrixMult({{1, 0}}, matrixExpo(T, k))[0];  // [dp[0], dp[1]] * T^k
-        const auto& z = z_function(s + t + t);
+        const auto& z = z_function(t + s + s);
         int result = 0;
-        for (int i = n; i < 2 * n; ++i) {
-            if (z[i] >= n) {
-                result = (result + dp[static_cast<int>(i - n != 0)]) % MOD;
+        for (int i = size(t); i - size(t) < n; ++i) {
+            if (z[i] >= size(t)) {
+                result = (result + dp[static_cast<int>(i - size(t) != 0)]) % MOD;
             }
         }
         return result;
