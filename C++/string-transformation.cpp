@@ -6,8 +6,6 @@ class Solution {
 public:
     int numberOfWays(string s, string t, long long k) {
         const int n = size(s);
-        vector<vector<int>> T = {{    0,           1},
-                                 {n - 1, (n - 1) - 1}};
         vector<int> dp(2);
         dp[1] = (((pow(n - 1, k, MOD) - pow(-1, k, MOD)) * pow(n, MOD - 2, MOD)) % MOD + MOD) % MOD;
         dp[0] = (dp[1] + pow(-1, k, MOD)) % MOD;
