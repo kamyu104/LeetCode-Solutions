@@ -159,7 +159,7 @@
 2765 | [Longest Alternating Subarray](https://leetcode.com/problems/longest-alternating-subarray/) | [C++](./C++/longest-alternating-subarray.cpp) [Python](./Python/longest-alternating-subarray.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2782 | [Number of Unique Categories](https://leetcode.com/problems/number-of-unique-categories/) | [C++](./C++/number-of-unique-categories.cpp) [Python](./Python/number-of-unique-categories.py) | _O(n^2)_ | _O(1)_ | Medium | 🔒 | Brute Force
 2798 | [Number of Employees Who Met the Target](https://leetcode.com/problems/number-of-employees-who-met-the-target/) | [C++](./C++/number-of-employees-who-met-the-target.cpp) [Python](./Python/number-of-employees-who-met-the-target.py) | _O(n)_ | _O(1)_ | Easy | | Array
-
+2848 | [Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/) | [C++](./C++/points-that-intersect-with-cars.cpp) [Python](./Python/points-that-intersect-with-cars.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort, Line Sweep
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -218,6 +218,8 @@
 2800 | [Shortest String That Contains Three Strings](https://leetcode.com/problems/shortest-string-that-contains-three-strings/)| [C++](./C++/shortest-string-that-contains-three-strings.cpp) [Python](./Python/shortest-string-that-contains-three-strings.py)| _O(l)_ | _O(l)_ | Medium | | String, Brute Force, Longest Prefix Suffix, `KMP Algorithm` |
 2810 | [Faulty Keyboard](https://leetcode.com/problems/faulty-keyboard/)| [C++](./C++/faulty-keyboard.cpp) [Python](./Python/faulty-keyboard.py)| _O(n)_ | _O(n)_ | Easy | | String, Deque |
 2828 | [Check if a String Is an Acronym of Words](https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/)| [C++](./C++/check-if-a-string-is-an-acronym-of-words.cpp) [Python](./Python/check-if-a-string-is-an-acronym-of-words.py)| _O(n)_ | _O(1)_ | Easy | | String |
+2843 | [Count Symmetric Integers](https://leetcode.com/problems/count-symmetric-integers/)| [C++](./C++/count-symmetric-integers.cpp) [Python](./Python/count-symmetric-integers.py)| _O(rlogr)_ | _O(r)_ | Easy | | String, Brute Force, Memoization |
+2851 | [String Transformation](https://leetcode.com/problems/string-transformation/) | [C++](./C++/string-transformation.cpp) [Python](./Python/string-transformation.py) | _O(n + logk)_   | _O(n)_        | Hard         | | DP, Matrix Exponentiation, Math, `Z-Function`, `KMP Algorithm`
 
 <br/>
 <div align="right">
@@ -308,6 +310,7 @@
 2277 | [Closest Node to Path in Tree](https://leetcode.com/problems/closest-node-to-path-in-tree/)| [C++](./C++/closest-node-to-path-in-tree.cpp) [Python](./Python/closest-node-to-path-in-tree.py)| _O(n + q)_ | _O(n + q)_ | Hard | 🔒 | Tree, BFS, Binary Lifting, `Tarjan's Offline LCA Algorithm` |
 2421 | [Number of Good Paths](https://leetcode.com/problems/number-of-good-paths/)| [C++](./C++/number-of-good-paths.cpp) [Python](./Python/number-of-good-paths.py)| _O(nlogn)_ | _O(n)_ | Hard | | Sort, Union Find |
 2509 | [Cycle Length Queries in a Tree](https://leetcode.com/problems/cycle-length-queries-in-a-tree/)| [C++](./C++/cycle-length-queries-in-a-tree.cpp) [Python](./Python/cycle-length-queries-in-a-tree.py)| _O(q * n)_ | _O(1)_ | Hard | | Tree, LCA |
+2846 | [Minimum Edge Weight Equilibrium Queries in a Tree](https://leetcode.com/problems/minimum-edge-weight-equilibrium-queries-in-a-tree/)| [C++](./C++/minimum-edge-weight-equilibrium-queries-in-a-tree.cpp) [Python](./Python/minimum-edge-weight-equilibrium-queries-in-a-tree.py)| _O(r * n + q)_ | _O(r * n + q)_ | Hard | | Tree, Binary Lifting, `Tarjan's Offline LCA Algorithm` |
 
 <br/>
 <div align="right">
@@ -392,7 +395,8 @@
 2808 | [Minimum Seconds to Equalize a Circular Array](https://leetcode.com/problems/minimum-seconds-to-equalize-a-circular-array/) | [C++](./C++/minimum-seconds-to-equalize-a-circular-array.cpp) [Python](./Python/minimum-seconds-to-equalize-a-circular-array.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
 2815 | [Max Pair Sum in an Array](https://leetcode.com/problems/max-pair-sum-in-an-array/) | [C++](./C++/max-pair-sum-in-an-array.cpp) [Python](./Python/max-pair-sum-in-an-array.py) | _O(nlogr)_ | _O(1)_ | Easy | | Hash Table
 2839 | [Check if Strings Can be Made Equal With Operations I](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/) | [C++](./C++/check-if-strings-can-be-made-equal-with-operations-i.cpp) [Python](./Python/check-if-strings-can-be-made-equal-with-operations-i.py) | _O(1)_ | _O(1)_ | Easy | | Brute Force, Freq Table
-2840 | [Check if Strings Can be Made Equal With Operations II](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/) | [C++](./C++/check-if-strings-can-be-made-equal-with-operations-ii.cpp) [Python](./Python/check-if-strings-can-be-made-equal-with-operations-ii.py) | _O(1)_ | _O(1)_ | Medium | | Brute Force, Freq Table
+2840 | [Check if Strings Can be Made Equal With Operations II](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/) | [C++](./C++/check-if-strings-can-be-made-equal-with-operations-ii.cpp) [Python](./Python/check-if-strings-can-be-made-equal-with-operations-ii.py) | _O(1)_ | _O(1)_ | Medium | | Freq Table
+2845 | [Count of Interesting Subarrays](https://leetcode.com/problems/count-of-interesting-subarrays/) | [C++](./C++/count-of-interesting-subarrays.cpp) [Python](./Python/count-of-interesting-subarrays.py) | _O(n)_ | _O(m)_ | Medium | | Freq Table, Prefix Sum
 
 <br/>
 <div align="right">
@@ -661,6 +665,7 @@
 2709 | [Greatest Common Divisor Traversal](https://leetcode.com/problems/greatest-common-divisor-traversal/)  | [C++](./C++/greatest-common-divisor-traversal.cpp) [Python](./Python/greatest-common-divisor-traversal.py) | precompute: _O(sqrt(r))_<br>runtime: _O(nlogr)_ | _O(sqrt(r) + nlogr)_| Hard           || `Linear Sieve of Eratosthenes`, Factorization, BFS | 
 2812 | [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/)  | [C++](./C++/find-the-safest-path-in-a-grid.cpp) [Python](./Python/find-the-safest-path-in-a-grid.py) | _O(n^2)_ | _O(n^2)_| Medium           || BFS, Bucket Sort, Union Find, `Dijkstra's Algorithm`, Binary Search | 
 2814 | [Minimum Time Takes to Reach Destination Without Drowning](https://leetcode.com/problems/minimum-time-takes-to-reach-destination-without-drowning/)  | [C++](./C++/minimum-time-takes-to-reach-destination-without-drowning.cpp) [Python](./Python/minimum-time-takes-to-reach-destination-without-drowning.py) | _O(m * n)_ | _O(m * n)_| Hard           | 🔒 | Simulation, BFS | 
+2852 | [Sum of Remoteness of All Cells](https://leetcode.com/problems/sum-of-remoteness-of-all-cells/)| [C++](./C++/sum-of-remoteness-of-all-cells.cpp) [Python](./Python/sum-of-remoteness-of-all-cells.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | Flood Fill, BFS, Math |
 
 <br/>
 <div align="right">
@@ -900,6 +905,8 @@
 2825 | [Make String a Subsequence Using Cyclic Increments](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/) | [C++](./C++/make-string-a-subsequence-using-cyclic-increments.cpp) [Python](./Python/make-string-a-subsequence-using-cyclic-increments.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Two Pointers
 2835 | [Minimum Operations to Form Subsequence With Target Sum](https://leetcode.com/problems/minimum-operations-to-form-subsequence-with-target-sum/) | [C++](./C++/minimum-operations-to-form-subsequence-with-target-sum.cpp) [Python](./Python/minimum-operations-to-form-subsequence-with-target-sum.py) | _O(n)_ | _O(logn)_ | Hard | [Educational Codeforces Round #82 D](https://codeforces.com/problemset/problem/1303/D) | Counting Sort, Sort, Heap, Greedy, Bitmasks
 2842 | [Count K-Subsequences of a String With Maximum Beauty](https://leetcode.com/problems/count-k-subsequences-of-a-string-with-maximum-beauty/) | [C++](./C++/count-k-subsequences-of-a-string-with-maximum-beauty.cpp) [Python](./Python/count-k-subsequences-of-a-string-with-maximum-beauty.py) | _O(n)_ | _O(1)_ | Hard |  | Greedy, Quick Select, Combinatorics
+2844 | [Minimum Operations to Make a Special Number](https://leetcode.com/problems/minimum-operations-to-make-a-special-number/) | [C++](./C++/minimum-operations-to-make-a-special-number.cpp) [Python](./Python/minimum-operations-to-make-a-special-number.py) | _O(n)_ | _O(1)_ | Medium |  | Math, Greedy
+2847 | [Smallest Number With Given Digit Product](https://leetcode.com/problems/smallest-number-with-given-digit-product/) | [C++](./C++/smallest-number-with-given-digit-product.cpp) [Python](./Python/smallest-number-with-given-digit-product.py) | _O(logn)_ | _O(logn)_ | Medium | 🔒 | Greedy
 
 <br/>
 <div align="right">
@@ -933,6 +940,7 @@
 2714 | [Find Shortest Path with K Hops](https://leetcode.com/problems/find-shortest-path-with-k-hops/)  | [C++](./C++/find-shortest-path-with-k-hops.cpp) [Python](./Python/find-shortest-path-with-k-hops.py) |  _O(n * k + (k * e) * log(n * k))_ | _O(n * k + e)_ | Hard           |🔒| Graph, `Dijkstra's Algorithm` |
 2737 | [Find the Closest Marked Node](https://leetcode.com/problems/find-the-closest-marked-node/)  | [C++](./C++/find-the-closest-marked-node.cpp) [Python](./Python/find-the-closest-marked-node.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium           |🔒| Graph, `Dijkstra's Algorithm` |
 2836 | [Maximize Value of Function in a Ball Passing Game](https://leetcode.com/problems/maximize-value-of-function-in-a-ball-passing-game/)  | [C++](./C++/maximize-value-of-function-in-a-ball-passing-game.cpp) [Python](./Python/maximize-value-of-function-in-a-ball-passing-game.py) | _O(n)_ | _O(n)_| Hard           || Graph, Prefix Sum, Two Pointers, Sliding Window, Binary Lifting |
+2850 | [Minimum Moves to Spread Stones Over Grid](https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid/) | [C++](./C++/minimum-moves-to-spread-stones-over-grid.cpp) [Python](./Python/minimum-moves-to-spread-stones-over-grid.py) | _O(n^2)_ | _O(n^2)_ | Medium | | Backtracking, `Hungarian Weighted Bipartite Matching` |
 
 <br/>
 <div align="right">
@@ -991,6 +999,7 @@
 2811 | [Check if it is Possible to Split Array](https://leetcode.com/problems/check-if-it-is-possible-to-split-array/) | [C++](./C++/check-if-it-is-possible-to-split-array.cpp) [Python](./Python/check-if-it-is-possible-to-split-array.py) | _O(n)_ | _O(1)_ | Medium | | Constructive Algorithms
 2829 | [Determine the Minimum Sum of a k-avoiding Array](https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) | [C++](./C++/determine-the-minimum-sum-of-a-k-avoiding-array.cpp) [Python](./Python/determine-the-minimum-sum-of-a-k-avoiding-array.py) | _O(1)_ | _O(1)_ | Medium | | Greedy, Constructive Algorithms, Math
 2834 | [Find the Minimum Possible Sum of a Beautiful Array](https://leetcode.com/problems/find-the-minimum-possible-sum-of-a-beautiful-array/) | [C++](./C++/find-the-minimum-possible-sum-of-a-beautiful-array.cpp) [Python](./Python/find-the-minimum-possible-sum-of-a-beautiful-array.py) | _O(1)_ | _O(1)_ | Medium | [Determine the Minimum Sum of a k-avoiding Array](https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) | Greedy, Constructive Algorithms, Math
+2849 | [Determine if a Cell Is Reachable at a Given Time](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/) | [C++](./C++/determine-if-a-cell-is-reachable-at-a-given-time.cpp) [Python](./Python/determine-if-a-cell-is-reachable-at-a-given-time.py) | _O(1)_ | _O(1)_ | Medium | | Constructive Algorithms, Math
 
 <br/>
 <div align="right">
