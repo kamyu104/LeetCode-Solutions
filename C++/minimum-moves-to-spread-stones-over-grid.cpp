@@ -1,4 +1,4 @@
-// Time:  O(max(x^2 * y)) = O(n^2), n = len(grid)*len(grid[0]), y = len(zero), x = n-y
+// Time:  O(max(x^2 * y)) = O(n^3), n = len(grid)*len(grid[0]), y = len(zero), x = n-y
 // Space: O(max(x^2)) = O(n^2)
 
 // weighted bipartite matching solution
