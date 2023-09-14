@@ -111,7 +111,7 @@ class Solution3(object):
                     if not (grid[ni][nj] >= 2):
                         continue
                     grid[ni][nj] -= 1
-                    result = min(result, dist((i, j), (ni, nj))+ backtracking(curr+1))
+                    result = min(result, dist((i, j), (ni, nj))+backtracking(curr+1))
                     grid[ni][nj] += 1
             return result
 
