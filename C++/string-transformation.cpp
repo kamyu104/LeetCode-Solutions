@@ -164,9 +164,9 @@ public:
         const auto dp = matrixMult({{1, 0}}, matrixExpo(T, k))[0];  // [dp[0], dp[1]] * T^k
         const auto& z = z_function(t + s + s.substr(0, size(s) - 1));
         int result = 0;
-        for (int i = size(t); i < size(t) + n; ++i) {
-            if (z[i] >= size(t)) {
-                result = (result + dp[static_cast<int>(i - size(t) != 0)]) % MOD;
+        for (int i = 0; i < n; ++i) {
+            if (z[i + size(t)] >= size(t)) {
+                result = (result + dp[static_cast<int>(i != 0)]) % MOD;
             }
         }
         return result;
