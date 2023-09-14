@@ -89,7 +89,7 @@ class Solution2(object):
         return sum(adj[i][j] for i, j in itertools.izip(*hungarian(adj)))    
 
 
-# Time:  O(max(x^y where x+y = n) = O((n/2)^(n/2))) = O(5^5), n = len(grid)*len(grid[0])
+# Time:  O(max(x^y where x+y = n) = O((n/2)^(n/2))) = O(5^5), n = len(grid)*len(grid[0]), y = len(zero), x = n-y
 # Space: O(y) = O(n) = O(9) = O(1)
 # backtracking
 class Solution3(object):
