@@ -1,4 +1,4 @@
-# Time:  O(r * n + q), r = max(w for _, _, w in edges)
+# Time:  O(r * (n + q)), r = max(w for _, _, w in edges)
 # Space: O(r * n + q)
 
 import collections
@@ -111,7 +111,7 @@ class Solution(object):
         return result
 
 
-# Time:  O(r * n + nlogn + qlogn), r = max(w for _, _, w in edges)
+# Time:  O(r * (n + q) + nlogn + qlogn), r = max(w for _, _, w in edges)
 # Space: O(r * n + nlogn)
 import collections
 from functools import partial
