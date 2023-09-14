@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2836%20%2F%202836-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2851%20%2F%202851-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -391,6 +391,8 @@
 2784 | [Check if Array is Good](https://leetcode.com/problems/check-if-array-is-good/) | [C++](./C++/check-if-array-is-good.cpp) [Python](./Python/check-if-array-is-good.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
 2808 | [Minimum Seconds to Equalize a Circular Array](https://leetcode.com/problems/minimum-seconds-to-equalize-a-circular-array/) | [C++](./C++/minimum-seconds-to-equalize-a-circular-array.cpp) [Python](./Python/minimum-seconds-to-equalize-a-circular-array.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
 2815 | [Max Pair Sum in an Array](https://leetcode.com/problems/max-pair-sum-in-an-array/) | [C++](./C++/max-pair-sum-in-an-array.cpp) [Python](./Python/max-pair-sum-in-an-array.py) | _O(nlogr)_ | _O(1)_ | Easy | | Hash Table
+2839 | [Check if Strings Can be Made Equal With Operations I](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/) | [C++](./C++/check-if-strings-can-be-made-equal-with-operations-i.cpp) [Python](./Python/check-if-strings-can-be-made-equal-with-operations-i.py) | _O(1)_ | _O(1)_ | Easy | | Brute Force, Freq Table
+2840 | [Check if Strings Can be Made Equal With Operations II](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/) | [C++](./C++/check-if-strings-can-be-made-equal-with-operations-ii.cpp) [Python](./Python/check-if-strings-can-be-made-equal-with-operations-ii.py) | _O(1)_ | _O(1)_ | Medium | | Brute Force, Freq Table
 
 <br/>
 <div align="right">
@@ -564,6 +566,8 @@
 2799 | [Count Complete Subarrays in an Array](https://leetcode.com/problems/count-complete-subarrays-in-an-array/) | [C++](./C++/count-complete-subarrays-in-an-array.cpp) [Python](./Python/count-complete-subarrays-in-an-array.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 2824 | [Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) | [C++](./C++/count-pairs-whose-sum-is-less-than-target.cpp) [Python](./Python/count-pairs-whose-sum-is-less-than-target.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort, Two Pointers
 2831 | [Find the Longest Equal Subarray](https://leetcode.com/problems/find-the-longest-equal-subarray/) | [C++](./C++/find-the-longest-equal-subarray.cpp) [Python](./Python/find-the-longest-equal-subarray.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Two Pointers, Sliding Window
+2838 | [Maximum Coins Heroes Can Collect](https://leetcode.com/problems/maximum-coins-heroes-can-collect/) | [C++](./C++/maximum-coins-heroes-can-collect.cpp) [Python](./Python/maximum-coins-heroes-can-collect.py) | _O(nlogn + mlogm)_ | _O(n + m)_ | Medium | 🔒 | Sort, Two Pointers
+2841 | [Maximum Sum of Almost Unique Subarray](https://leetcode.com/problems/maximum-sum-of-almost-unique-subarray/) | [C++](./C++/maximum-sum-of-almost-unique-subarray.cpp) [Python](./Python/maximum-sum-of-almost-unique-subarray.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -895,6 +899,7 @@
 2819 | [Minimum Relative Loss After Buying Chocolates](https://leetcode.com/problems/minimum-relative-loss-after-buying-chocolates/) | [C++](./C++/minimum-relative-loss-after-buying-chocolates.cpp) [Python](./Python/minimum-relative-loss-after-buying-chocolates.py) | _O((n + q) * logn)_ | _O(n)_ | Hard | 🔒 | Sort, Binary Search, Greedy, Prefix Sum
 2825 | [Make String a Subsequence Using Cyclic Increments](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/) | [C++](./C++/make-string-a-subsequence-using-cyclic-increments.cpp) [Python](./Python/make-string-a-subsequence-using-cyclic-increments.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Two Pointers
 2835 | [Minimum Operations to Form Subsequence With Target Sum](https://leetcode.com/problems/minimum-operations-to-form-subsequence-with-target-sum/) | [C++](./C++/minimum-operations-to-form-subsequence-with-target-sum.cpp) [Python](./Python/minimum-operations-to-form-subsequence-with-target-sum.py) | _O(n)_ | _O(logn)_ | Hard | [Educational Codeforces Round #82 D](https://codeforces.com/problemset/problem/1303/D) | Counting Sort, Sort, Heap, Greedy, Bitmasks
+2842 | [Count K-Subsequences of a String With Maximum Beauty](https://leetcode.com/problems/count-k-subsequences-of-a-string-with-maximum-beauty/) | [C++](./C++/count-k-subsequences-of-a-string-with-maximum-beauty.cpp) [Python](./Python/count-k-subsequences-of-a-string-with-maximum-beauty.py) | _O(n)_ | _O(1)_ | Hard |  | Greedy, Quick Select, Combinatorics
 
 <br/>
 <div align="right">
@@ -1161,6 +1166,7 @@
 2783 | [Flight Occupancy and Waitlist Analysis](https://leetcode.com/problems/flight-occupancy-and-waitlist-analysis/) | [MySQL](./MySQL/flight-occupancy-and-waitlist-analysis.sql) | _O(n * m + nlogn)_ | _O(n * m)_       | Medium           |🔒||
 2793 | [Status of Flight Tickets](https://leetcode.com/problems/status-of-flight-tickets/) | [MySQL](./MySQL/status-of-flight-tickets.sql) | _O(nlogn + m)_ | _O(n + m)_       | Hard           |🔒||
 2820 | [Election Results](https://leetcode.com/problems/election-results/) | [MySQL](./MySQL/election-results.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2837 | [Total Traveled Distance](https://leetcode.com/problems/election-results/) | [MySQL](./MySQL/total-traveled-distance.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 
 <br/>
 <div align="right">
