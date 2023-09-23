@@ -1,4 +1,4 @@
-# Time:  O(n)
+# Time:  O(P(logn, k))
 # Space: O(1)
 
 # bit manipulation, hakmem-175
