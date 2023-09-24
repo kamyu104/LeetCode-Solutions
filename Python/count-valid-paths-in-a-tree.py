@@ -31,29 +31,29 @@ class Solution(object):
             while stk:
                 step, args = stk.pop()
                 if step == 1:
-                    u, p, cnt = args
-                    cnt[:] = [1-is_prime(u+1), is_prime(u+1)]
-                    stk.append((2, (u, p, cnt, 0)))
+                    u, p, ret = args
+                    ret[:] = [1-is_prime(u+1), is_prime(u+1)]
+                    stk.append((2, (u, p, ret, 0)))
                 elif step == 2:
-                    u, p, cnt, i = args
+                    u, p, ret, i = args
                     if i == len(adj[u]):
                         continue
                     v = adj[u][i]
                     if v == p:
-                        stk.append((2, (u, p, cnt, i+1)))
+                        stk.append((2, (u, p, ret, i+1)))
                         continue
-                    new_cnt = [0]*2
-                    stk.append((3, (u, p, cnt, new_cnt, i)))
-                    stk.append((1, (v, u, new_cnt)))
+                    new_ret = [0]*2
+                    stk.append((3, (u, p, new_ret, ret, i)))
+                    stk.append((1, (v, u, new_ret)))
                 elif step == 3:
-                    u, p, cnt, new_cnt, i = args
-                    result += cnt[0]*new_cnt[1]+cnt[1]*new_cnt[0]
+                    u, p, new_ret, ret, i = args
+                    result += ret[0]*new_ret[1]+ret[1]*new_ret[0]
                     if is_prime(u+1):
-                        cnt[1] += new_cnt[0]
+                        ret[1] += new_ret[0]
                     else:
-                        cnt[0] += new_cnt[0]
-                        cnt[1] += new_cnt[1]
-                    stk.append((2, (u, p, cnt, i+1)))
+                        ret[0] += new_ret[0]
+                        ret[1] += new_ret[1]
+                    stk.append((2, (u, p, ret, i+1)))
             return result
 
         spf = linear_sieve_of_eratosthenes(n)
