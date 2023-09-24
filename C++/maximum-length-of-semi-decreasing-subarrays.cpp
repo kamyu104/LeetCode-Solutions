@@ -21,7 +21,7 @@ public:
     }
 };
 
-// Time:  O(n)
+// Time:  O(nlogn)
 // Space: O(n)
 // sort
 class Solution2 {
