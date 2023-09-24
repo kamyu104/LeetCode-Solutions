@@ -13,7 +13,26 @@ class Solution(object):
             if not stk or nums[stk[-1]] > nums[i]:
                 stk.append(i)
         result = 0
-        for i in xrange(len(nums)):
-            while stk and nums[stk[-1]] < nums[i]:
-                result = max(result, stk.pop()-i+1)
+        for left in xrange(len(nums)):
+            while stk and nums[stk[-1]] < nums[left]:
+                result = max(result, stk.pop()-left+1)
+        return result
+
+
+# Time:  O(nlogn)
+# Space: O(n)
+# sort
+class Solution2(object):
+    def maxSubarrayLength(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        idx = range(len(nums))
+        idx.sort(key=lambda x: nums[x])
+        result = i = 0
+        for left in xrange(len(nums)):
+            while i < len(idx) and nums[idx[i]] < nums[left]:
+                result = max(result, idx[i]-left+1)
+                i += 1
         return result
