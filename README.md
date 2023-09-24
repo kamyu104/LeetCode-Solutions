@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2852%20%2F%202852-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2867%20%2F%202867-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -160,6 +160,8 @@
 2782 | [Number of Unique Categories](https://leetcode.com/problems/number-of-unique-categories/) | [C++](./C++/number-of-unique-categories.cpp) [Python](./Python/number-of-unique-categories.py) | _O(n^2)_ | _O(1)_ | Medium | 🔒 | Brute Force
 2798 | [Number of Employees Who Met the Target](https://leetcode.com/problems/number-of-employees-who-met-the-target/) | [C++](./C++/number-of-employees-who-met-the-target.cpp) [Python](./Python/number-of-employees-who-met-the-target.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2848 | [Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/) | [C++](./C++/points-that-intersect-with-cars.cpp) [Python](./Python/points-that-intersect-with-cars.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort, Line Sweep
+2855 | [Minimum Right Shifts to Sort the Array](https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/) | [C++](./C++/minimum-right-shifts-to-sort-the-array.cpp) [Python](./Python/minimum-right-shifts-to-sort-the-array.py) | _O(n)_ | _O(1)_ | Easy | | Array
+
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -397,6 +399,7 @@
 2839 | [Check if Strings Can be Made Equal With Operations I](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/) | [C++](./C++/check-if-strings-can-be-made-equal-with-operations-i.cpp) [Python](./Python/check-if-strings-can-be-made-equal-with-operations-i.py) | _O(1)_ | _O(1)_ | Easy | | Brute Force, Freq Table
 2840 | [Check if Strings Can be Made Equal With Operations II](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/) | [C++](./C++/check-if-strings-can-be-made-equal-with-operations-ii.cpp) [Python](./Python/check-if-strings-can-be-made-equal-with-operations-ii.py) | _O(1)_ | _O(1)_ | Medium | | Freq Table
 2845 | [Count of Interesting Subarrays](https://leetcode.com/problems/count-of-interesting-subarrays/) | [C++](./C++/count-of-interesting-subarrays.cpp) [Python](./Python/count-of-interesting-subarrays.py) | _O(n)_ | _O(m)_ | Medium | | Freq Table, Prefix Sum
+2857 | [Count Pairs of Points With Distance k](https://leetcode.com/problems/count-pairs-of-points-with-distance-k/) | [C++](./C++/count-pairs-of-points-with-distance-k.cpp) [Python](./Python/count-pairs-of-points-with-distance-k.py) | _O(n * k)_ | _O(n)_ | Medium | | Freq Table
 
 <br/>
 <div align="right">
@@ -799,6 +802,7 @@
 2826 | [Sorting Three Groups](https://leetcode.com/problems/sorting-three-groups/) | [C++](./C++/sorting-three-groups.cpp) [Python](./Python/sorting-three-groups.py) | _O(n)_   | _O(1)_        | Medium         | | DP
 2827 | [Number of Beautiful Integers in the Range](https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/) | [C++](./C++/number-of-beautiful-integers-in-the-range.cpp) [Python](./Python/number-of-beautiful-integers-in-the-range.py) | _O(n^2 * k)_   | _O(n * k)_        | Hard         | | DP, Memoization
 2830 | [Maximize the Profit as the Salesman](https://leetcode.com/problems/maximize-the-profit-as-the-salesman/) | [C++](./C++/maximize-the-profit-as-the-salesman.cpp) [Python](./Python/maximize-the-profit-as-the-salesman.py) | _O(n + m)_   | _O(n + m)_        | Medium         | | DP
+2858 | [Minimum Edge Reversals So Every Node Is Reachable](https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/) | [C++](./C++/minimum-edge-reversals-so-every-node-is-reachable.cpp) [Python](./Python/minimum-edge-reversals-so-every-node-is-reachable.py) | _O(n)_   | _O(n)_        | Hard         | | DFS, Tree DP
 
 <br/>
 <div align="right">
@@ -1000,6 +1004,7 @@
 2829 | [Determine the Minimum Sum of a k-avoiding Array](https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) | [C++](./C++/determine-the-minimum-sum-of-a-k-avoiding-array.cpp) [Python](./Python/determine-the-minimum-sum-of-a-k-avoiding-array.py) | _O(1)_ | _O(1)_ | Medium | | Greedy, Constructive Algorithms, Math
 2834 | [Find the Minimum Possible Sum of a Beautiful Array](https://leetcode.com/problems/find-the-minimum-possible-sum-of-a-beautiful-array/) | [C++](./C++/find-the-minimum-possible-sum-of-a-beautiful-array.cpp) [Python](./Python/find-the-minimum-possible-sum-of-a-beautiful-array.py) | _O(1)_ | _O(1)_ | Medium | [Determine the Minimum Sum of a k-avoiding Array](https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) | Greedy, Constructive Algorithms, Math
 2849 | [Determine if a Cell Is Reachable at a Given Time](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/) | [C++](./C++/determine-if-a-cell-is-reachable-at-a-given-time.cpp) [Python](./Python/determine-if-a-cell-is-reachable-at-a-given-time.py) | _O(1)_ | _O(1)_ | Medium | | Constructive Algorithms, Math
+2856 | [Minimum Array Length After Pair Removals](https://leetcode.com/problems/minimum-array-length-after-pair-removals/) | [C++](./C++/minimum-array-length-after-pair-removals.cpp) [Python](./Python/minimum-array-length-after-pair-removals.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Constructive Algorithms
 
 <br/>
 <div align="right">
@@ -1176,6 +1181,8 @@
 2793 | [Status of Flight Tickets](https://leetcode.com/problems/status-of-flight-tickets/) | [MySQL](./MySQL/status-of-flight-tickets.sql) | _O(nlogn + m)_ | _O(n + m)_       | Hard           |🔒||
 2820 | [Election Results](https://leetcode.com/problems/election-results/) | [MySQL](./MySQL/election-results.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2837 | [Total Traveled Distance](https://leetcode.com/problems/election-results/) | [MySQL](./MySQL/total-traveled-distance.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+2853 | [Highest Salaries Difference](https://leetcode.com/problems/highest-salaries-difference/) | [MySQL](./MySQL/highest-salaries-difference.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+2854 | [Rolling Average Steps](https://leetcode.com/problems/rolling-average-steps/) | [MySQL](./MySQL/rolling-average-steps.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 <br/>
 <div align="right">
