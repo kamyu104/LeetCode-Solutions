@@ -29,10 +29,9 @@ class Solution2(object):
         :rtype: int
         """
         idxs = range(len(nums))
-        idxs.sort(key=lambda x: nums[x])
-        result = i = 0
+        idxs.sort(key=lambda x: nums[x], reverse=True)
+        result = 0
         for left in xrange(len(nums)):
-            while i < len(idxs) and nums[idxs[i]] < nums[left]:
-                result = max(result, idxs[i]-left+1)
-                i += 1
+            while idxs and nums[idxs[-1]] < nums[left]:
+                result = max(result, idxs.pop()-left+1)
         return result
