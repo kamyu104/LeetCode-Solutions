@@ -28,11 +28,11 @@ class Solution2(object):
         :type nums: List[int]
         :rtype: int
         """
-        idx = range(len(nums))
-        idx.sort(key=lambda x: nums[x])
+        idxs = range(len(nums))
+        idxs.sort(key=lambda x: nums[x])
         result = i = 0
         for left in xrange(len(nums)):
-            while i < len(idx) and nums[idx[i]] < nums[left]:
-                result = max(result, idx[i]-left+1)
+            while i < len(idxs) and nums[idxs[i]] < nums[left]:
+                result = max(result, idxs[i]-left+1)
                 i += 1
         return result
