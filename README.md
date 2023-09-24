@@ -75,6 +75,7 @@
 2505 | [Bitwise OR of All Subsequence Sums](https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/) | [C++](./C++/bitwise-or-of-all-subsequence-sums.cpp) [Python](./Python/bitwise-or-of-all-subsequence-sums.py) | _O(n)_ | _O(1)_ | Medium |🔒| Bit Manipulation
 2527 | [Find Xor-Beauty of Array](https://leetcode.com/problems/find-xor-beauty-of-array/) | [C++](./C++/find-xor-beauty-of-array.cpp) [Python](./Python/find-xor-beauty-of-array.py) | _O(n)_ | _O(1)_ | Medium | | Bit Manipulation, Math
 2595 | [Number of Even and Odd Bits](https://leetcode.com/problems/number-of-even-and-odd-bits/) | [C++](./C++/number-of-even-and-odd-bits.cpp) [Python](./Python/number-of-even-and-odd-bits.py) | _O(1)_ | _O(1)_ | Easy | | Bit Manipulation
+2859 | [Sum of Values at Indices With K Set Bits](https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/) | [C++](./C++/sum-of-values-at-indices-with-k-set-bits.cpp) [Python](./Python/sum-of-values-at-indices-with-k-set-bits.py) | _O(n)_ | _O(1)_ | Easy | | Bitmasks, `Hakmem Item 175`
 
 <br/>
 <div align="right">
@@ -487,6 +488,7 @@
 2802 | [Find The K-th Lucky Number](https://leetcode.com/problems/find-the-k-th-lucky-number/)| [C++](./C++/find-the-k-th-lucky-number.cpp) [Python](./Python/find-the-k-th-lucky-number.py)| _O(logn)_ | _O(1)_ | Medium | 🔒 | Math, Bitmasks |
 2806 | [Account Balance After Rounded Purchase](https://leetcode.com/problems/account-balance-after-rounded-purchase/)| [C++](./C++/account-balance-after-rounded-purchase.cpp) [Python](./Python/account-balance-after-rounded-purchase.py)| _O(1)_ | _O(1)_ | Easy | | Math |
 2833 | [Furthest Point From Origin](https://leetcode.com/problems/furthest-point-from-origin/)| [C++](./C++/furthest-point-from-origin.cpp) [Python](./Python/furthest-point-from-origin.py)| _O(1)_ | _O(1)_ | Easy | | Math |
+2862 | [Maximum Element-Sum of a Complete Subset of Indices](https://leetcode.com/problems/maximum-element-sum-of-a-complete-subset-of-indices/)| [C++](./C++/maximum-element-sum-of-a-complete-subset-of-indices.cpp) [Python](./Python/maximum-element-sum-of-a-complete-subset-of-indices.py)| _O(n)_ | _O(n)_ | Hard | | Number Theory, `Basel Problem` |
 
 <br/>
 <div align="right">
@@ -619,6 +621,7 @@
 2602 | [Minimum Operations to Make All Array Elements Equal](https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/) | [C++](./C++/minimum-operations-to-make-all-array-elements-equal.cpp) [Python](./Python/minimum-operations-to-make-all-array-elements-equal.py) | _O(nlogn + qlogn)_ | _O(n)_ | Medium | | Sort, Binary Search, Prefix Sum |
 2616 | [Minimize the Maximum Difference of Pairs](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/) | [C++](./C++/minimize-the-maximum-difference-of-pairs.cpp) [Python](./Python/minimize-the-maximum-difference-of-pairs.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | | Sort, Binary Search, Greedy |
 2702 | [Minimum Operations to Make Numbers Non-positive](https://leetcode.com/problems/minimum-operations-to-make-numbers-non-positive/) | [C++](./C++/minimum-operations-to-make-numbers-non-positive.cpp) [Python](./Python/minimum-operations-to-make-numbers-non-positive.py) | _O(nlogr)_ | _O(1)_ | Hard | 🔒 | Binary Search, Greedy |
+2861 | [Maximum Number of Alloys](https://leetcode.com/problems/maximum-number-of-alloys/) | [C++](./C++/maximum-number-of-alloys.cpp) [Python](./Python/maximum-number-of-alloys.py) | _O(k * n * logr)_ | _O(1)_ | Medium | | Binary Search |
 
 <br/>
 <div align="right">
@@ -911,6 +914,7 @@
 2842 | [Count K-Subsequences of a String With Maximum Beauty](https://leetcode.com/problems/count-k-subsequences-of-a-string-with-maximum-beauty/) | [C++](./C++/count-k-subsequences-of-a-string-with-maximum-beauty.cpp) [Python](./Python/count-k-subsequences-of-a-string-with-maximum-beauty.py) | _O(n)_ | _O(1)_ | Hard |  | Greedy, Quick Select, Combinatorics
 2844 | [Minimum Operations to Make a Special Number](https://leetcode.com/problems/minimum-operations-to-make-a-special-number/) | [C++](./C++/minimum-operations-to-make-a-special-number.cpp) [Python](./Python/minimum-operations-to-make-a-special-number.py) | _O(n)_ | _O(1)_ | Medium |  | Math, Greedy
 2847 | [Smallest Number With Given Digit Product](https://leetcode.com/problems/smallest-number-with-given-digit-product/) | [C++](./C++/smallest-number-with-given-digit-product.cpp) [Python](./Python/smallest-number-with-given-digit-product.py) | _O(logn)_ | _O(logn)_ | Medium | 🔒 | Greedy
+2860 | [Happy Students](https://leetcode.com/problems/happy-students/) | [C++](./C++/happy-students.cpp) [Python](./Python/happy-students.py) | _O(n)_ | _O(n)_ | Medium |  [Codeforces Round #844 B](https://codeforces.com/contest/1782/problem/B)  | Sort, Greedy, Freq Table
 
 <br/>
 <div align="right">
