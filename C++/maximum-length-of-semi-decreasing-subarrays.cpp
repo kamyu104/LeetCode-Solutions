@@ -12,9 +12,28 @@ public:
             }
         }
         int result = 0;
-        for (int i = 0; i < size(nums); ++i) {
-            while (!empty(stk) && nums[stk.back()] < nums[i]) {
-                result = max(result, stk.back() - i + 1); stk.pop_back();
+        for (int left = 0; left < size(nums); ++left) {
+            while (!empty(stk) && nums[stk.back()] < nums[left]) {
+                result = max(result, stk.back() - left + 1); stk.pop_back();
+            }
+        }
+        return result;
+    }
+};
+
+// Time:  O(n)
+// Space: O(n)
+// sort
+class Solution2 {
+public:
+    int maxSubarrayLength(vector<int>& nums) {
+        vector<int> idxs(size(nums));
+        iota(begin(idxs), end(idxs), 0);
+        sort(rbegin(idxs), rend(idxs), [&](const auto& a, const auto& b) { return nums[a] < nums[b]; });
+        int result = 0;
+        for (int left = 0; left < size(nums); ++left) {
+            while (!empty(idxs) && nums[idxs.back()] < nums[left]) {
+                result = max(result, idxs.back() - left + 1); idxs.pop_back();
             }
         }
         return result;
