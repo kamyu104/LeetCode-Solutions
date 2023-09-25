@@ -1,4 +1,4 @@
-# Time:  O(nCr(ceil(log2(n)), k))
+# Time:  O(C(ceil(log2(n)), k))
 # Space: O(1)
 
 # bit manipulation, hakmem-175
