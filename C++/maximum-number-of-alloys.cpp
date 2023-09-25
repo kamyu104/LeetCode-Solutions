@@ -24,13 +24,13 @@ public:
                 if (i + 1 != n && cnt(idxs[i + 1]) - cnt(idxs[i]) == 0) {
                     continue;
                 }
-                if (prefix + c > budget + discount) {
-                    break;
-                }
                 prefix += c;
                 budget += discount;
                 c = discount = 0;
                 const auto mn = min(i + 1 < n ? (cnt(idxs[i + 1]) - cnt(idxs[i])) : INF, budget / prefix);
+                if (mn == 0) {
+                    break;
+                }
                 budget -= prefix * mn;
                 result += mn;
             }
