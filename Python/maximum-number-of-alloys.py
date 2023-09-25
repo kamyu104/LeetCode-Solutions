@@ -26,8 +26,6 @@ class Solution(object):
                 discount += cost[idxs[i]]*(stock[idxs[i]]%machine[idxs[i]])
                 if i+1 != n and cnt(idxs[i+1])-cnt(idxs[i]) == 0:
                     continue
-                if prefix+c > budget+discount:
-                    break
                 prefix += c
                 budget += discount
                 c = discount = 0
