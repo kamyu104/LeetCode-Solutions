@@ -35,7 +35,7 @@ class Solution(object):
                     break
                 budget -= curr*(cnt(idxs[i+1])-cnt(idxs[i]))
                 result += cnt(idxs[i+1])-cnt(idxs[i])
-                remain = delta = 0
+                delta = remain = 0
             return result
 
         return max(count(machine, budget) for machine in composition)
