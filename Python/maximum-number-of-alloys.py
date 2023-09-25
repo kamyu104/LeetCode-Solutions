@@ -20,28 +20,28 @@ class Solution(object):
             idxs = range(n)
             idxs.sort(key=cnt)
             result = cnt(idxs[0])
-            curr = delta = remain = 0
+            prefix = c = r = 0
             for i in xrange(n):
-                delta += cost[idxs[i]]*machine[idxs[i]]
-                remain += cost[idxs[i]]*(stock[idxs[i]]%machine[idxs[i]])
+                c += cost[idxs[i]]*machine[idxs[i]]
+                r += cost[idxs[i]]*(stock[idxs[i]]%machine[idxs[i]])
                 if i+1 != n and cnt(idxs[i+1])-cnt(idxs[i]) == 0:
                     continue
-                if curr+delta > budget+remain:
+                if prefix+c > budget+r:
                     break
-                curr += delta
-                budget += remain
-                if i+1 == n or budget-curr*(cnt(idxs[i+1])-cnt(idxs[i])) <= 0:
-                    result += budget//curr
+                prefix += c
+                budget += r
+                if i+1 == n or budget-prefix*(cnt(idxs[i+1])-cnt(idxs[i])) <= 0:
+                    result += budget//prefix
                     break
-                budget -= curr*(cnt(idxs[i+1])-cnt(idxs[i]))
+                budget -= prefix*(cnt(idxs[i+1])-cnt(idxs[i]))
                 result += cnt(idxs[i+1])-cnt(idxs[i])
-                delta = remain = 0
+                c = r = 0
             return result
 
         return max(count(machine, budget) for machine in composition)
 
 
-# Time:  O(k * n * logr), remain = min(stock)+budget
+# Time:  O(k * n * logr), r = min(stock)+budget
 # Space: O(1)
 # binary search
 class Solution2(object):
