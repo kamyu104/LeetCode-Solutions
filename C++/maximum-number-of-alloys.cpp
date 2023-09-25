@@ -17,24 +17,24 @@ public:
             });
             
             int result = cnt(idxs[0]);
-            for (int i = 0, prefix = 0, c = 0, r = 0; i < n; ++i) {
+            for (int i = 0, prefix = 0, c = 0, discount = 0; i < n; ++i) {
                 c += cost[idxs[i]] * machine[idxs[i]];
-                r += cost[idxs[i]] * (stock[idxs[i]] % machine[idxs[i]]);
+                discount += cost[idxs[i]] * (stock[idxs[i]] % machine[idxs[i]]);
                 if (i + 1 != n && cnt(idxs[i + 1]) - cnt(idxs[i]) == 0) {
                     continue;
                 }
-                if (prefix + c > budget + r) {
+                if (prefix + c > budget + discount) {
                     break;
                 }
                 prefix += c;
-                budget += r;
+                budget += discount;
                 if (i + 1 == n || budget - prefix * (cnt(idxs[i + 1]) - cnt(idxs[i])) <= 0) {
                     result += budget / prefix;
                     break;
                 }
                 budget -= prefix * (cnt(idxs[i + 1]) - cnt(idxs[i]));
                 result += cnt(idxs[i + 1]) - cnt(idxs[i]);
-                c = r = 0;
+                c = discount = 0;
             }
             return result;
         };
@@ -47,7 +47,7 @@ public:
     }
 };
 
-// Time:  O(k * n * logr), r = min(stock)+budget
+// Time:  O(k * n * logr), discount = min(stock)+budget
 // Space: O(1)
 // binary search
 class Solution2 {
