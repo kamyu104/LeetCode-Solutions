@@ -75,7 +75,7 @@
 2505 | [Bitwise OR of All Subsequence Sums](https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/) | [C++](./C++/bitwise-or-of-all-subsequence-sums.cpp) [Python](./Python/bitwise-or-of-all-subsequence-sums.py) | _O(n)_ | _O(1)_ | Medium |🔒| Bit Manipulation
 2527 | [Find Xor-Beauty of Array](https://leetcode.com/problems/find-xor-beauty-of-array/) | [C++](./C++/find-xor-beauty-of-array.cpp) [Python](./Python/find-xor-beauty-of-array.py) | _O(n)_ | _O(1)_ | Medium | | Bit Manipulation, Math
 2595 | [Number of Even and Odd Bits](https://leetcode.com/problems/number-of-even-and-odd-bits/) | [C++](./C++/number-of-even-and-odd-bits.cpp) [Python](./Python/number-of-even-and-odd-bits.py) | _O(1)_ | _O(1)_ | Easy | | Bit Manipulation
-2859 | [Sum of Values at Indices With K Set Bits](https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/) | [C++](./C++/sum-of-values-at-indices-with-k-set-bits.cpp) [Python](./Python/sum-of-values-at-indices-with-k-set-bits.py) | _O(nCr(ceil(log2(n)), k))_ | _O(1)_ | Easy | | Bitmasks, `Hakmem Item 175`
+2859 | [Sum of Values at Indices With K Set Bits](https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/) | [C++](./C++/sum-of-values-at-indices-with-k-set-bits.cpp) [Python](./Python/sum-of-values-at-indices-with-k-set-bits.py) | _O(C(ceil(log2(n)), k))_ | _O(1)_ | Easy | | Bitmasks, `Hakmem Item 175`
 
 <br/>
 <div align="right">
