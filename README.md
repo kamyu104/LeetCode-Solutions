@@ -493,6 +493,7 @@
 2806 | [Account Balance After Rounded Purchase](https://leetcode.com/problems/account-balance-after-rounded-purchase/)| [C++](./C++/account-balance-after-rounded-purchase.cpp) [Python](./Python/account-balance-after-rounded-purchase.py)| _O(1)_ | _O(1)_ | Easy | | Math |
 2833 | [Furthest Point From Origin](https://leetcode.com/problems/furthest-point-from-origin/)| [C++](./C++/furthest-point-from-origin.cpp) [Python](./Python/furthest-point-from-origin.py)| _O(1)_ | _O(1)_ | Easy | | Math |
 2862 | [Maximum Element-Sum of a Complete Subset of Indices](https://leetcode.com/problems/maximum-element-sum-of-a-complete-subset-of-indices/)| [C++](./C++/maximum-element-sum-of-a-complete-subset-of-indices.cpp) [Python](./Python/maximum-element-sum-of-a-complete-subset-of-indices.py)| _O(n)_ | _O(n)_ | Hard | | Number Theory, `Basel Problem` |
+2861 | [Maximum Number of Alloys](https://leetcode.com/problems/maximum-number-of-alloys/) | [C++](./C++/maximum-number-of-alloys.cpp) [Python](./Python/maximum-number-of-alloys.py) | _O(k * nlogn)_ | _O(n)_ | Medium | | Binary Search, Sort, Math |
 
 <br/>
 <div align="right">
@@ -625,7 +626,6 @@
 2602 | [Minimum Operations to Make All Array Elements Equal](https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/) | [C++](./C++/minimum-operations-to-make-all-array-elements-equal.cpp) [Python](./Python/minimum-operations-to-make-all-array-elements-equal.py) | _O(nlogn + qlogn)_ | _O(n)_ | Medium | | Sort, Binary Search, Prefix Sum |
 2616 | [Minimize the Maximum Difference of Pairs](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/) | [C++](./C++/minimize-the-maximum-difference-of-pairs.cpp) [Python](./Python/minimize-the-maximum-difference-of-pairs.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | | Sort, Binary Search, Greedy |
 2702 | [Minimum Operations to Make Numbers Non-positive](https://leetcode.com/problems/minimum-operations-to-make-numbers-non-positive/) | [C++](./C++/minimum-operations-to-make-numbers-non-positive.cpp) [Python](./Python/minimum-operations-to-make-numbers-non-positive.py) | _O(nlogr)_ | _O(1)_ | Hard | 🔒 | Binary Search, Greedy |
-2861 | [Maximum Number of Alloys](https://leetcode.com/problems/maximum-number-of-alloys/) | [C++](./C++/maximum-number-of-alloys.cpp) [Python](./Python/maximum-number-of-alloys.py) | _O(k * nlogn)_ | _O(n)_ | Medium | | Binary Search, Sort, Math |
 
 <br/>
 <div align="right">
