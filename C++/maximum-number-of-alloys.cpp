@@ -5,6 +5,7 @@
 class Solution {
 public:
     int maxNumberOfAlloys(int n, int k, int budget, vector<vector<int>>& composition, vector<int>& stock, vector<int>& cost) {
+        static const int INF = numeric_limits<int>::max();
         const auto& count = [&](const vector<int>& machine, int budget) {
             const auto& cnt = [&](int x) {
                 return stock[x] / machine[x];
@@ -28,13 +29,10 @@ public:
                 }
                 prefix += c;
                 budget += discount;
-                if (i + 1 == n || budget - prefix * (cnt(idxs[i + 1]) - cnt(idxs[i])) <= 0) {
-                    result += budget / prefix;
-                    break;
-                }
-                budget -= prefix * (cnt(idxs[i + 1]) - cnt(idxs[i]));
-                result += cnt(idxs[i + 1]) - cnt(idxs[i]);
                 c = discount = 0;
+                const auto mn = min(i + 1 < n ? (cnt(idxs[i + 1]) - cnt(idxs[i])) : INF, budget / prefix);
+                budget -= prefix * mn;
+                result += mn;
             }
             return result;
         };
