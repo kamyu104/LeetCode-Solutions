@@ -20,15 +20,15 @@ class Solution(object):
             idxs = range(n)
             idxs.sort(key=cnt)
             result = cnt(idxs[0])
-            prefix = c = discount = 0
+            prefix = curr = discount = 0
             for i in xrange(n):
-                c += cost[idxs[i]]*machine[idxs[i]]
+                curr += cost[idxs[i]]*machine[idxs[i]]
                 discount += cost[idxs[i]]*(stock[idxs[i]]%machine[idxs[i]])
                 if i+1 != n and cnt(idxs[i+1])-cnt(idxs[i]) == 0:
                     continue
-                prefix += c
+                prefix += curr
                 budget += discount
-                c = discount = 0
+                curr = discount = 0
                 mn = min((cnt(idxs[i+1])-cnt(idxs[i]) if i+1 < n else float("inf")), budget//prefix)
                 if mn == 0:
                     break
