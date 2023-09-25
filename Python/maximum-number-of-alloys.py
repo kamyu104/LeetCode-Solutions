@@ -30,12 +30,10 @@ class Solution(object):
                     break
                 prefix += c
                 budget += discount
-                if i+1 == n or budget-prefix*(cnt(idxs[i+1])-cnt(idxs[i])) <= 0:
-                    result += budget//prefix
-                    break
-                budget -= prefix*(cnt(idxs[i+1])-cnt(idxs[i]))
-                result += cnt(idxs[i+1])-cnt(idxs[i])
                 c = discount = 0
+                mn = min((cnt(idxs[i+1])-cnt(idxs[i]) if i+1 < n else float("inf")), budget//prefix)
+                budget -= prefix*mn
+                result += mn
             return result
 
         return max(count(machine, budget) for machine in composition)
