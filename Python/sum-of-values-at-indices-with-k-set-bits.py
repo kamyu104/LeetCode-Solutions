@@ -25,6 +25,7 @@ class Solution(object):
             i = next_popcount(i)
         return result
 
+
 # Time:  O(n)
 # Space: O(1)
 # bit manipulation
