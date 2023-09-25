@@ -20,22 +20,22 @@ class Solution(object):
             idxs = range(n)
             idxs.sort(key=cnt)
             result = cnt(idxs[0])
-            prefix = c = r = 0
+            prefix = c = discount = 0
             for i in xrange(n):
                 c += cost[idxs[i]]*machine[idxs[i]]
-                r += cost[idxs[i]]*(stock[idxs[i]]%machine[idxs[i]])
+                discount += cost[idxs[i]]*(stock[idxs[i]]%machine[idxs[i]])
                 if i+1 != n and cnt(idxs[i+1])-cnt(idxs[i]) == 0:
                     continue
-                if prefix+c > budget+r:
+                if prefix+c > budget+discount:
                     break
                 prefix += c
-                budget += r
+                budget += discount
                 if i+1 == n or budget-prefix*(cnt(idxs[i+1])-cnt(idxs[i])) <= 0:
                     result += budget//prefix
                     break
                 budget -= prefix*(cnt(idxs[i+1])-cnt(idxs[i]))
                 result += cnt(idxs[i+1])-cnt(idxs[i])
-                c = r = 0
+                c = discount = 0
             return result
 
         return max(count(machine, budget) for machine in composition)
