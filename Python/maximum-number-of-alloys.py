@@ -32,6 +32,8 @@ class Solution(object):
                 budget += discount
                 c = discount = 0
                 mn = min((cnt(idxs[i+1])-cnt(idxs[i]) if i+1 < n else float("inf")), budget//prefix)
+                if mn == 0:
+                    break
                 budget -= prefix*mn
                 result += mn
             return result
