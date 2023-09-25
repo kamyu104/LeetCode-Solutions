@@ -47,7 +47,6 @@ public:
     }
 };
 
-
 // Time:  O(k * n * logr), r = min(stock)+budget
 // Space: O(1)
 // binary search
