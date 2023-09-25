@@ -1,7 +1,7 @@
 # Time:  O(k * nlogn)
 # Space: O(n)
 
-# math
+# sort, math
 class Solution(object):
     def maxNumberOfAlloys(self, n, k, budget, composition, stock, cost):
         """
