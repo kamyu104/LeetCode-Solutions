@@ -625,7 +625,7 @@
 2602 | [Minimum Operations to Make All Array Elements Equal](https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/) | [C++](./C++/minimum-operations-to-make-all-array-elements-equal.cpp) [Python](./Python/minimum-operations-to-make-all-array-elements-equal.py) | _O(nlogn + qlogn)_ | _O(n)_ | Medium | | Sort, Binary Search, Prefix Sum |
 2616 | [Minimize the Maximum Difference of Pairs](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/) | [C++](./C++/minimize-the-maximum-difference-of-pairs.cpp) [Python](./Python/minimize-the-maximum-difference-of-pairs.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | | Sort, Binary Search, Greedy |
 2702 | [Minimum Operations to Make Numbers Non-positive](https://leetcode.com/problems/minimum-operations-to-make-numbers-non-positive/) | [C++](./C++/minimum-operations-to-make-numbers-non-positive.cpp) [Python](./Python/minimum-operations-to-make-numbers-non-positive.py) | _O(nlogr)_ | _O(1)_ | Hard | 🔒 | Binary Search, Greedy |
-2861 | [Maximum Number of Alloys](https://leetcode.com/problems/maximum-number-of-alloys/) | [C++](./C++/maximum-number-of-alloys.cpp) [Python](./Python/maximum-number-of-alloys.py) | _O(k * nlogn)_ | _O(n)_ | Medium | | Binary Search, Math |
+2861 | [Maximum Number of Alloys](https://leetcode.com/problems/maximum-number-of-alloys/) | [C++](./C++/maximum-number-of-alloys.cpp) [Python](./Python/maximum-number-of-alloys.py) | _O(k * nlogn)_ | _O(n)_ | Medium | | Binary Search, Sort, Math |
 
 <br/>
 <div align="right">
