@@ -18,15 +18,15 @@ public:
             });
             
             int result = cnt(idxs[0]);
-            for (int i = 0, prefix = 0, c = 0, discount = 0; i < n; ++i) {
-                c += cost[idxs[i]] * machine[idxs[i]];
+            for (int i = 0, prefix = 0, curr = 0, discount = 0; i < n; ++i) {
+                curr += cost[idxs[i]] * machine[idxs[i]];
                 discount += cost[idxs[i]] * (stock[idxs[i]] % machine[idxs[i]]);
                 if (i + 1 != n && cnt(idxs[i + 1]) - cnt(idxs[i]) == 0) {
                     continue;
                 }
-                prefix += c;
+                prefix += curr;
                 budget += discount;
-                c = discount = 0;
+                curr = discount = 0;
                 const auto mn = min(i + 1 < n ? (cnt(idxs[i + 1]) - cnt(idxs[i])) : INF, budget / prefix);
                 if (mn == 0) {
                     break;
