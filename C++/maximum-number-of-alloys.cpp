@@ -17,24 +17,24 @@ public:
             });
             
             int result = cnt(idxs[0]);
-            for (int i = 0, curr = 0, delta = 0, remain = 0; i < n; ++i) {
-                delta += cost[idxs[i]] * machine[idxs[i]];
-                remain += cost[idxs[i]] * (stock[idxs[i]] % machine[idxs[i]]);
+            for (int i = 0, prefix = 0, c = 0, r = 0; i < n; ++i) {
+                c += cost[idxs[i]] * machine[idxs[i]];
+                r += cost[idxs[i]] * (stock[idxs[i]] % machine[idxs[i]]);
                 if (i + 1 != n && cnt(idxs[i + 1]) - cnt(idxs[i]) == 0) {
                     continue;
                 }
-                if (curr + delta > budget + remain) {
+                if (prefix + c > budget + r) {
                     break;
                 }
-                curr += delta;
-                budget += remain;
-                if (i + 1 == n || budget - curr * (cnt(idxs[i + 1]) - cnt(idxs[i])) <= 0) {
-                    result += budget / curr;
+                prefix += c;
+                budget += r;
+                if (i + 1 == n || budget - prefix * (cnt(idxs[i + 1]) - cnt(idxs[i])) <= 0) {
+                    result += budget / prefix;
                     break;
                 }
-                budget -= curr * (cnt(idxs[i + 1]) - cnt(idxs[i]));
+                budget -= prefix * (cnt(idxs[i + 1]) - cnt(idxs[i]));
                 result += cnt(idxs[i + 1]) - cnt(idxs[i]);
-                delta = remain = 0;
+                c = r = 0;
             }
             return result;
         };
