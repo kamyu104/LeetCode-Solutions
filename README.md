@@ -264,6 +264,10 @@
 2736 | [Maximum Sum Queries](https://leetcode.com/problems/maximum-sum-queries/) | [C++](./C++/maximum-sum-queries.cpp) [Python](./Python/maximum-sum-queries.py) | _O(nlogn + mlogm + mlogn)_ | _O(n + m)_ | Hard | | Sort, Mono Stack, Binary Search
 2764 | [is Array a Preorder of Some ‌Binary Tree](https://leetcode.com/problems/is-array-a-preorder-of-some-binary-tree/) | [C++](./C++/is-array-a-preorder-of-some-binary-tree.cpp) [Python](./Python/is-array-a-preorder-of-some-binary-tree.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Stack
 2832 | [Maximal Range That Each Element Is Maximum in It](https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/) | [C++](./C++/maximal-range-that-each-element-is-maximum-in-it.cpp) [Python](./Python/maximal-range-that-each-element-is-maximum-in-it.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Mono Stack
+2863 | [Maximum Length of Semi-Decreasing Subarrays](https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/) | [C++](./C++/maximum-length-of-semi-decreasing-subarrays.cpp) [Python](./Python/maximum-length-of-semi-decreasing-subarrays.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Sort, Mono Stack
+2865 | [Beautiful Towers I](https://leetcode.com/problems/beautiful-towers-i/) | [C++](./C++/beautiful-towers-i.cpp) [Python](./Python/beautiful-towers-i.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack
+2866 | [Beautiful Towers II](https://leetcode.com/problems/beautiful-towers-ii/) | [C++](./C++/beautiful-towers-ii.cpp) [Python](./Python/beautiful-towers-ii.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack
+
 
 <br/>
 <div align="right">
@@ -806,6 +810,7 @@
 2827 | [Number of Beautiful Integers in the Range](https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/) | [C++](./C++/number-of-beautiful-integers-in-the-range.cpp) [Python](./Python/number-of-beautiful-integers-in-the-range.py) | _O(n^2 * k)_   | _O(n * k)_        | Hard         | | DP, Memoization
 2830 | [Maximize the Profit as the Salesman](https://leetcode.com/problems/maximize-the-profit-as-the-salesman/) | [C++](./C++/maximize-the-profit-as-the-salesman.cpp) [Python](./Python/maximize-the-profit-as-the-salesman.py) | _O(n + m)_   | _O(n + m)_        | Medium         | | DP
 2858 | [Minimum Edge Reversals So Every Node Is Reachable](https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/) | [C++](./C++/minimum-edge-reversals-so-every-node-is-reachable.cpp) [Python](./Python/minimum-edge-reversals-so-every-node-is-reachable.py) | _O(n)_   | _O(n)_        | Hard         | | DFS, Tree DP
+2867 | [Count Valid Paths in a Tree](https://leetcode.com/problems/count-valid-paths-in-a-tree/) | [C++](./C++/count-valid-paths-in-a-tree.cpp) [Python](./Python/count-valid-paths-in-a-tree.py) | _O(n)_   | _O(n)_        | Hard         | | Number Theory, `Linear Sieve of Eratosthenes`, DFS, Tree DP
 
 <br/>
 <div align="right">
@@ -915,6 +920,7 @@
 2844 | [Minimum Operations to Make a Special Number](https://leetcode.com/problems/minimum-operations-to-make-a-special-number/) | [C++](./C++/minimum-operations-to-make-a-special-number.cpp) [Python](./Python/minimum-operations-to-make-a-special-number.py) | _O(n)_ | _O(1)_ | Medium |  | Math, Greedy
 2847 | [Smallest Number With Given Digit Product](https://leetcode.com/problems/smallest-number-with-given-digit-product/) | [C++](./C++/smallest-number-with-given-digit-product.cpp) [Python](./Python/smallest-number-with-given-digit-product.py) | _O(logn)_ | _O(logn)_ | Medium | 🔒 | Greedy
 2860 | [Happy Students](https://leetcode.com/problems/happy-students/) | [C++](./C++/happy-students.cpp) [Python](./Python/happy-students.py) | _O(n)_ | _O(n)_ | Medium |  [Codeforces Round #844 B](https://codeforces.com/contest/1782/problem/B)  | Sort, Greedy, Freq Table
+2864 | [Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/) | [C++](./C++/maximum-odd-binary-number.cpp) [Python](./Python/maximum-odd-binary-number.py) | _O(n)_ | _O(1)_ | Easy | | Greedy, Partition
 
 <br/>
 <div align="right">
