@@ -47,7 +47,7 @@ public:
     }
 };
 
-// Time:  O(k * n * logr), discount = min(stock)+budget
+// Time:  O(k * n * logr), r = min(stock)+budget
 // Space: O(1)
 // binary search
 class Solution2 {
