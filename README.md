@@ -810,7 +810,7 @@
 2827 | [Number of Beautiful Integers in the Range](https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/) | [C++](./C++/number-of-beautiful-integers-in-the-range.cpp) [Python](./Python/number-of-beautiful-integers-in-the-range.py) | _O(n^2 * k)_   | _O(n * k)_        | Hard         | | DP, Memoization
 2830 | [Maximize the Profit as the Salesman](https://leetcode.com/problems/maximize-the-profit-as-the-salesman/) | [C++](./C++/maximize-the-profit-as-the-salesman.cpp) [Python](./Python/maximize-the-profit-as-the-salesman.py) | _O(n + m)_   | _O(n + m)_        | Medium         | | DP
 2858 | [Minimum Edge Reversals So Every Node Is Reachable](https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/) | [C++](./C++/minimum-edge-reversals-so-every-node-is-reachable.cpp) [Python](./Python/minimum-edge-reversals-so-every-node-is-reachable.py) | _O(n)_   | _O(n)_        | Hard         | | DFS, Tree DP
-2867 | [Count Valid Paths in a Tree](https://leetcode.com/problems/count-valid-paths-in-a-tree/) | [C++](./C++/count-valid-paths-in-a-tree.cpp) [Python](./Python/count-valid-paths-in-a-tree.py) | _O(n)_   | _O(n)_        | Hard         | | Number Theory, `Linear Sieve of Eratosthenes`, DFS, Tree DP
+2867 | [Count Valid Paths in a Tree](https://leetcode.com/problems/count-valid-paths-in-a-tree/) | [C++](./C++/count-valid-paths-in-a-tree.cpp) [Python](./Python/count-valid-paths-in-a-tree.py) | _O(n)_   | _O(n)_        | Hard         | | Number Theory, `Linear Sieve of Eratosthenes`, DFS, Tree DP, Union Find
 
 <br/>
 <div align="right">
