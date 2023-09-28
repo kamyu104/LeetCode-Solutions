@@ -1,4 +1,4 @@
-# Time:  O(n + m)
+# Time:  O((m + n) * l), l is the max length of word in a and b
 # Space: O(1)
 
 # greedy
