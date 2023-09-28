@@ -16,7 +16,7 @@ class Solution(object):
         i, j = 0, -1
         while True:
             j = next((j for j in xrange(j+1, len(b)) if is_closely_greater(b[j], a[i])), len(b))
-            while j+1 < len(b) and b[j+1][0] == b[j][0] and is_closely_greater(b[j+1], a[i]):
+            while j+1 < len(b) and b[j+1][0] == b[j][0]:
                 j += 1
             if j == len(b):
                 break
