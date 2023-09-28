@@ -1,7 +1,7 @@
 # Time:  O(m + n), m = sum(len(w) for w in a), n = sum(len(w) for w in b)
 # Space: O(1)
 
-# greedy
+# game, greedy
 class Solution(object):
     def canAliceWin(self, a, b):
         """
