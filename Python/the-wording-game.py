@@ -14,7 +14,7 @@ class Solution(object):
 
         result = True
         i, j = 0, -1
-        for _ in xrange(len({x[0] for x in a})+len({x[0] for x in b})):  # each player takes turns using a word with a different first letter than the last word he played
+        for _ in xrange(len({w[0] for w in a})+len({w[0] for w in b})):  # each player takes turns using a word with a different first letter than the last word he played
             j = next((j for j in xrange(j+1, len(b)) if is_closely_greater(b[j], a[i])), len(b))
             if j == len(b):
                 break
