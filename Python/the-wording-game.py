@@ -14,11 +14,11 @@ class Solution(object):
 
         result = True
         i, j = 0, -1
-        for _ in xrange(26*2):  # at most 1(begin)+26*2+1(end) turns by best strategy
+        for _ in xrange(len({x[0] for x in a})+len({x[0] for x in b})):  # each player takes turns using a word with a different first letter than the last word he played
             j = next((j for j in xrange(j+1, len(b)) if is_closely_greater(b[j], a[i])), len(b))
             if j == len(b):
                 break
-            while j+1 < len(b) and b[j+1][0] == b[j][0]:  # play the lexicographically greatest word with the same beginning letter
+            while j+1 < len(b) and b[j+1][0] == b[j][0]:  # play the lexicographically greatest word with the same first letter
                 j += 1
             a, b, i, j, result = b, a, j, i, not result
         return result
