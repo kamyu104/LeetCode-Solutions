@@ -20,7 +20,7 @@ public:
             if (j == size(b)) {
                 break;
             }
-            while (j + 1 < size(b) && b[j + 1][0] == b[j][0]) {
+            while (j + 1 < size(b) && b[j + 1][0] == b[j][0]) {  // play the lexicographically largest word with the same begin letter
                 ++j;
             }
             swap(a, b);
