@@ -1,4 +1,4 @@
-// Time:  O((m + n) * l), l is the max length of word in a and b
+// Time:  O(m + n), m = sum(len(w) for w in a), n = sum(len(w) for w in b)
 // Space: O(1)
 
 // greedy
