@@ -18,7 +18,7 @@ class Solution(object):
             j = next((j for j in xrange(j+1, len(b)) if is_closely_greater(b[j], a[i])), len(b))
             if j == len(b):
                 break
-            while j+1 < len(b) and b[j+1][0] == b[j][0]:
+            while j+1 < len(b) and b[j+1][0] == b[j][0]:  # play the lexicographically largest word with the same begin letter
                 j += 1
             a, b, i, j, result = b, a, j, i, not result
         return result
