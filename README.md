@@ -921,7 +921,7 @@
 2847 | [Smallest Number With Given Digit Product](https://leetcode.com/problems/smallest-number-with-given-digit-product/) | [C++](./C++/smallest-number-with-given-digit-product.cpp) [Python](./Python/smallest-number-with-given-digit-product.py) | _O(logn)_ | _O(logn)_ | Medium | 🔒 | Greedy
 2860 | [Happy Students](https://leetcode.com/problems/happy-students/) | [C++](./C++/happy-students.cpp) [Python](./Python/happy-students.py) | _O(n)_ | _O(n)_ | Medium |  [Codeforces Round #844 B](https://codeforces.com/contest/1782/problem/B)  | Sort, Greedy, Freq Table
 2864 | [Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/) | [C++](./C++/maximum-odd-binary-number.cpp) [Python](./Python/maximum-odd-binary-number.py) | _O(n)_ | _O(1)_ | Easy | | Greedy, Partition
-2868 | [The Wording Game](https://leetcode.com/problems/the-wording-game/) | [C++](./C++/the-wording-game.cpp) [Python](./Python/the-wording-game.py) | _O((m + n) * l)_ | _O(1)_ | Hard | 🔒 | Game, Greedy
+2868 | [The Wording Game](https://leetcode.com/problems/the-wording-game/) | [C++](./C++/the-wording-game.cpp) [Python](./Python/the-wording-game.py) | _O(m + n)_ | _O(1)_ | Hard | 🔒 | Game, Greedy
 
 <br/>
 <div align="right">
