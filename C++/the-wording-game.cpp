@@ -11,7 +11,16 @@ public:
 
         bool result = true;
         int i = 0, j = -1;
-        for (int _ = 0; _ < 26 * 2; ++_) {  // at most 1(begin)+26*2+1(end) turns by best strategy
+        unordered_set<char> alphabet1;
+        for (const auto& w : a) {
+            alphabet1.emplace(w[0]);
+        }
+        unordered_set<char> alphabet2;
+        for (const auto& w : b) {
+            alphabet2.emplace(w[0]);
+        }
+        const int turn = size(alphabet1) + size(alphabet2);
+        for (int _ = 0; _ < turn; ++_) {  // each player takes turns using a word with a different first letter than the last word he played
             for (++j; j < size(b); ++j) {
                 if (is_closely_greater(b[j], a[i])) {
                     break;
@@ -20,7 +29,7 @@ public:
             if (j == size(b)) {
                 break;
             }
-            while (j + 1 < size(b) && b[j + 1][0] == b[j][0]) {  // play the lexicographically greatest word with the same beginning letter
+            while (j + 1 < size(b) && b[j + 1][0] == b[j][0]) {  // play the lexicographically greatest word with the same first letter
                 ++j;
             }
             swap(a, b);
