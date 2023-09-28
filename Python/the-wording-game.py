@@ -14,7 +14,7 @@ class Solution(object):
 
         result = True
         i, j = 0, -1
-        for _ in xrange(1, 26*2):
+        for _ in xrange(26*2):
             j = next((j for j in xrange(j+1, len(b)) if is_closely_greater(b[j], a[i])), len(b))
             if j == len(b):
                 break
