@@ -20,5 +20,5 @@ class Solution(object):
                 j += 1
             if j == len(b):
                 break
-            i, j, a, b, result = j, i, b, a, not result
+            a, b, i, j, result = b, a, j, i, not result
         return result
