@@ -11,7 +11,7 @@ public:
 
         bool result = true;
         int i = 0, j = -1;
-        while (true) {
+        for (int _ = 1; _ < 26 * 2; ++_) {
             for (++j; j < size(b); ++j) {
                 if (is_closely_greater(b[j], a[i])) {
                     break;
