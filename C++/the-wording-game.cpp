@@ -16,7 +16,7 @@ public:
                 if (!is_closely_greater(b[j], a[i])) {
                     continue;
                 }
-                while (j + 1 < size(b) && b[j][0] == b[j + 1][0] && is_closely_greater(b[j + 1], a[i])) {
+                while (j + 1 < size(b) && b[j][0] == b[j + 1][0]) {
                     ++j;
                 }
                 break;
