@@ -13,16 +13,15 @@ public:
         int i = 0, j = -1;
         while (true) {
             for (++j; j < size(b); ++j) {
-                if (!is_closely_greater(b[j], a[i])) {
-                    continue;
+                if (is_closely_greater(b[j], a[i])) {
+                    break;
                 }
-                while (j + 1 < size(b) && b[j][0] == b[j + 1][0]) {
-                    ++j;
-                }
-                break;
             }
             if (j == size(b)) {
                 break;
+            }
+            while (j + 1 < size(b) && b[j][0] == b[j + 1][0]) {
+                ++j;
             }
             swap(a, b);
             swap(i, j);
