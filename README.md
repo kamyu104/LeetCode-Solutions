@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2867%20%2F%202867-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2868%20%2F%202868-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -921,6 +921,7 @@
 2847 | [Smallest Number With Given Digit Product](https://leetcode.com/problems/smallest-number-with-given-digit-product/) | [C++](./C++/smallest-number-with-given-digit-product.cpp) [Python](./Python/smallest-number-with-given-digit-product.py) | _O(logn)_ | _O(logn)_ | Medium | 🔒 | Greedy
 2860 | [Happy Students](https://leetcode.com/problems/happy-students/) | [C++](./C++/happy-students.cpp) [Python](./Python/happy-students.py) | _O(n)_ | _O(n)_ | Medium |  [Codeforces Round #844 B](https://codeforces.com/contest/1782/problem/B)  | Sort, Greedy, Freq Table
 2864 | [Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/) | [C++](./C++/maximum-odd-binary-number.cpp) [Python](./Python/maximum-odd-binary-number.py) | _O(n)_ | _O(1)_ | Easy | | Greedy, Partition
+2868 | [The Wording Game](https://leetcode.com/problems/the-wording-game/) | [C++](./C++/the-wording-game.cpp) [Python](./Python/the-wording-game.py) | _O((m + n) * l)_ | _O(1)_ | Hard | 🔒 | Game, Greedy
 
 <br/>
 <div align="right">
