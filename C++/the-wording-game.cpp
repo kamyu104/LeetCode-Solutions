@@ -11,7 +11,7 @@ public:
 
         bool result = true;
         int i = 0, j = -1;
-        for (int _ = 0; _ < 26 * 2; ++_) {
+        for (int _ = 0; _ < 26 * 2; ++_) {  // at most 1(begin)+26*2+1(end) turns by best strategy
             for (++j; j < size(b); ++j) {
                 if (is_closely_greater(b[j], a[i])) {
                     break;
