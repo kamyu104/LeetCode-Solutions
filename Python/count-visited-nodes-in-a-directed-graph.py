@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# graph, stack
+# graph, hash table, stack
 class Solution(object):
     def countVisitedNodes(self, edges):
         """
