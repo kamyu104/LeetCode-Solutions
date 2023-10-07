@@ -9,6 +9,7 @@ public:
             vector<int> result(size(adj));
             vector<int> lookup(size(adj));
             vector<int> stk;  // added
+            stk.reserve(size(adj));
             for (int i = 0, idx = 0; i < size(adj); ++i) {
                 int u = i, prev = idx;
                 while (!lookup[u]) {
