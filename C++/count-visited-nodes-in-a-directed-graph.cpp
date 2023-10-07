@@ -22,7 +22,7 @@ public:
                         result[u] = l;
                     }
                 }
-                for (int j = lookup[u] > prev ? (lookup[u] - 1) - 1 : idx - 1; j >= prev; --j)  { // added
+                for (int j = lookup[u] > prev ? (lookup[u] - 1) - 1 : idx - 1; j >= prev; --j)  {  // added
                     result[lookup2[j]] = result[adj[lookup2[j]]] + 1;
                 }
             }
