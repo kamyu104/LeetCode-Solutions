@@ -925,7 +925,7 @@
 2868 | [The Wording Game](https://leetcode.com/problems/the-wording-game/) | [C++](./C++/the-wording-game.cpp) [Python](./Python/the-wording-game.py) | _O(m + n)_ | _O(1)_ | Hard | 🔒 | Game, Greedy
 2870 | [Minimum Number of Operations to Make Array Empty](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/) | [C++](./C++/minimum-number-of-operations-to-make-array-empty.cpp) [Python](./Python/minimum-number-of-operations-to-make-array-empty.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Greedy
 2871 | [Split Array Into Maximum Number of Subarrays](https://leetcode.com/problems/split-array-into-maximum-number-of-subarrays/) | [C++](./C++/split-array-into-maximum-number-of-subarrays.cpp) [Python](./Python/split-array-into-maximum-number-of-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
-2872 | [Maximum Number of K-Divisible Components](https://leetcode.com/problems/maximum-number-of-k-divisible-components/) | [C++](./C++/maximum-number-of-k-divisible-components.py) | _O(n)_   | _O(n)_        | Hard         | variant of [Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/) | BFS, Greedy
+2872 | [Maximum Number of K-Divisible Components](https://leetcode.com/problems/maximum-number-of-k-divisible-components/) | [C++](./C++/maximum-number-of-k-divisible-components.cpp) [Python](./Python/maximum-number-of-k-divisible-components.py) | _O(n)_   | _O(n)_        | Hard         | variant of [Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/) | BFS, Greedy
 
 <br/>
 <div align="right">
