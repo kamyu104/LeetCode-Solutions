@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2868%20%2F%202868-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2893%20%2F%202893-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -405,6 +405,7 @@
 2840 | [Check if Strings Can be Made Equal With Operations II](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/) | [C++](./C++/check-if-strings-can-be-made-equal-with-operations-ii.cpp) [Python](./Python/check-if-strings-can-be-made-equal-with-operations-ii.py) | _O(1)_ | _O(1)_ | Medium | | Freq Table
 2845 | [Count of Interesting Subarrays](https://leetcode.com/problems/count-of-interesting-subarrays/) | [C++](./C++/count-of-interesting-subarrays.cpp) [Python](./Python/count-of-interesting-subarrays.py) | _O(n)_ | _O(m)_ | Medium | | Freq Table, Prefix Sum
 2857 | [Count Pairs of Points With Distance k](https://leetcode.com/problems/count-pairs-of-points-with-distance-k/) | [C++](./C++/count-pairs-of-points-with-distance-k.cpp) [Python](./Python/count-pairs-of-points-with-distance-k.py) | _O(n * k)_ | _O(n)_ | Medium | | Freq Table
+2869 | [Minimum Operations to Collect Elements](https://leetcode.com/problems/minimum-operations-to-collect-elements/) | [C++](./C++/minimum-operations-to-collect-elements.cpp) [Python](./Python/minimum-operations-to-collect-elements.py) | _O(n)_ | _O(k)_ | Easy | | Hash Table
 
 <br/>
 <div align="right">
@@ -922,6 +923,9 @@
 2860 | [Happy Students](https://leetcode.com/problems/happy-students/) | [C++](./C++/happy-students.cpp) [Python](./Python/happy-students.py) | _O(n)_ | _O(n)_ | Medium |  [Codeforces Round #844 B](https://codeforces.com/contest/1782/problem/B)  | Sort, Greedy, Freq Table
 2864 | [Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/) | [C++](./C++/maximum-odd-binary-number.cpp) [Python](./Python/maximum-odd-binary-number.py) | _O(n)_ | _O(1)_ | Easy | | Greedy, Partition
 2868 | [The Wording Game](https://leetcode.com/problems/the-wording-game/) | [C++](./C++/the-wording-game.cpp) [Python](./Python/the-wording-game.py) | _O(m + n)_ | _O(1)_ | Hard | 🔒 | Game, Greedy
+2870 | [Minimum Number of Operations to Make Array Empty](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/) | [C++](./C++/minimum-number-of-operations-to-make-array-empty.cpp) [Python](./Python/minimum-number-of-operations-to-make-array-empty.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Greedy
+2871 | [Split Array Into Maximum Number of Subarrays](https://leetcode.com/problems/split-array-into-maximum-number-of-subarrays/) | [C++](./C++/split-array-into-maximum-number-of-subarrays.cpp) [Python](./Python/split-array-into-maximum-number-of-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+2872 | [Maximum Number of K-Divisible Components](https://leetcode.com/problems/maximum-number-of-k-divisible-components/) | [C++](./C++/maximum-number-of-k-divisible-components.py) | _O(n)_   | _O(n)_        | Hard         | variant of [Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/) | BFS, Greedy
 
 <br/>
 <div align="right">
