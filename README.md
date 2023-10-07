@@ -934,6 +934,7 @@
 2870 | [Minimum Number of Operations to Make Array Empty](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/) | [C++](./C++/minimum-number-of-operations-to-make-array-empty.cpp) [Python](./Python/minimum-number-of-operations-to-make-array-empty.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Greedy
 2871 | [Split Array Into Maximum Number of Subarrays](https://leetcode.com/problems/split-array-into-maximum-number-of-subarrays/) | [C++](./C++/split-array-into-maximum-number-of-subarrays.cpp) [Python](./Python/split-array-into-maximum-number-of-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 2872 | [Maximum Number of K-Divisible Components](https://leetcode.com/problems/maximum-number-of-k-divisible-components/) | [C++](./C++/maximum-number-of-k-divisible-components.cpp) [Python](./Python/maximum-number-of-k-divisible-components.py) | _O(n)_   | _O(n)_        | Hard         | variant of [Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/) | BFS, Greedy
+2892 | [Minimizing Array After Replacing Pairs With Their Product](https://leetcode.com/problems/minimizing-array-after-replacing-pairs-with-their-product/) | [C++](./C++/minimizing-array-after-replacing-pairs-with-their-product.cpp) [Python](./Python/minimizing-array-after-replacing-pairs-with-their-product.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Greedy
 
 <br/>
 <div align="right">
@@ -1207,6 +1208,7 @@
 2837 | [Total Traveled Distance](https://leetcode.com/problems/election-results/) | [MySQL](./MySQL/total-traveled-distance.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 2853 | [Highest Salaries Difference](https://leetcode.com/problems/highest-salaries-difference/) | [MySQL](./MySQL/highest-salaries-difference.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 2854 | [Rolling Average Steps](https://leetcode.com/problems/rolling-average-steps/) | [MySQL](./MySQL/rolling-average-steps.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2893 | [Calculate Orders Within Each Interval](https://leetcode.com/problems/calculate-orders-within-each-interval/) | [MySQL](./MySQL/calculate-orders-within-each-interval.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
@@ -1216,6 +1218,16 @@
 2879 | [Display the First Three Rows](https://leetcode.com/problems/display-the-first-three-rows/) | [Python3](./Python3/display-the-first-three-rows.py3) | _O(1)_ | _O(1)_       | Easy           |||
 2880 | [Select Data](https://leetcode.com/problems/select-data/) | [Python3](./Python3/select-data.py3) | _O(n)_ | _O(n)_       | Easy           |||
 2881 | [Create a New Column](https://leetcode.com/problems/create-a-new-column/) | [Python3](./Python3/create-a-new-column.py3) | _O(n)_ | _O(1)_       | Easy           |||
+2882 | [Drop Duplicate Rows](https://leetcode.com/problems/drop-duplicate-rows/) | [Python3](./Python3/drop-duplicate-rows.py3) | _O(n)_ | _O(n)_       | Easy           |||
+2883 | [Drop Missing Data](https://leetcode.com/problems/drop-missing-data/) | [Python3](./Python3/drop-missing-data.py3) | _O(n)_ | _O(1)_       | Easy           |||
+2884 | [Modify Columns](https://leetcode.com/problems/modify-columns/) | [Python3](./Python3/modify-columns.py3) | _O(n)_ | _O(1)_       | Easy           |||
+2885 | [Rename Columns](https://leetcode.com/problems/rename-columns/) | [Python3](./Python3/rename-columns.py3) | _O(n)_ | _O(1)_       | Easy           |||
+2886 | [Change Data Type](https://leetcode.com/problems/change-data-type/) | [Python3](./Python3/change-data-type.py3) | _O(n)_ | _O(1)_       | Easy           |||
+2887 | [Fill Missing Data](https://leetcode.com/problems/fill-missing-data/) | [Python3](./Python3/fill-missing-data.py3) | _O(n)_ | _O(1)_       | Easy           |||
+2888 | [Reshape Data: Concatenate](https://leetcode.com/problems/reshape-data-concatenate/) | [Python3](./Python3/reshape-data-concatenate.py3) | _O(n + m)_ | _O(1)_       | Easy           |||
+2889 | [Reshape Data: Pivot](https://leetcode.com/problems/reshape-data-pivot/) | [Python3](./Python3/reshape-data-pivot.py3) | _O(n)_ | _O(1)_       | Easy           |||
+2890 | [Reshape Data: Melt](https://leetcode.com/problems/reshape-data-melt/) | [Python3](./Python3/reshape-data-melt.py3) | _O(n)_ | _O(1)_       | Easy           |||
+2891 | [Method Chaining](https://leetcode.com/problems/method-chaining/) | [Python3](./Python3/method-chaining.py3) | _O(nlogn)_ | _O(n)_       | Easy           |||
 
 <br/>
 <div align="right">
