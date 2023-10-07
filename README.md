@@ -162,6 +162,8 @@
 2798 | [Number of Employees Who Met the Target](https://leetcode.com/problems/number-of-employees-who-met-the-target/) | [C++](./C++/number-of-employees-who-met-the-target.cpp) [Python](./Python/number-of-employees-who-met-the-target.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2848 | [Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/) | [C++](./C++/points-that-intersect-with-cars.cpp) [Python](./Python/points-that-intersect-with-cars.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort, Line Sweep
 2855 | [Minimum Right Shifts to Sort the Array](https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/) | [C++](./C++/minimum-right-shifts-to-sort-the-array.cpp) [Python](./Python/minimum-right-shifts-to-sort-the-array.py) | _O(n)_ | _O(1)_ | Easy | | Array
+2873 | [Maximum Value of an Ordered Triplet I](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i/) | [C++](./C++/maximum-value-of-an-ordered-triplet-i.cpp) [Python](./Python/maximum-value-of-an-ordered-triplet-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
+2874 | [Maximum Value of an Ordered Triplet II](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/) | [C++](./C++/maximum-value-of-an-ordered-triplet-ii.cpp) [Python](./Python/maximum-value-of-an-ordered-triplet-ii.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -406,6 +408,7 @@
 2845 | [Count of Interesting Subarrays](https://leetcode.com/problems/count-of-interesting-subarrays/) | [C++](./C++/count-of-interesting-subarrays.cpp) [Python](./Python/count-of-interesting-subarrays.py) | _O(n)_ | _O(m)_ | Medium | | Freq Table, Prefix Sum
 2857 | [Count Pairs of Points With Distance k](https://leetcode.com/problems/count-pairs-of-points-with-distance-k/) | [C++](./C++/count-pairs-of-points-with-distance-k.cpp) [Python](./Python/count-pairs-of-points-with-distance-k.py) | _O(n * k)_ | _O(n)_ | Medium | | Freq Table
 2869 | [Minimum Operations to Collect Elements](https://leetcode.com/problems/minimum-operations-to-collect-elements/) | [C++](./C++/minimum-operations-to-collect-elements.cpp) [Python](./Python/minimum-operations-to-collect-elements.py) | _O(n)_ | _O(k)_ | Easy | | Hash Table
+2875 | [Minimum Size Subarray in Infinite Array](https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/) | [C++](./C++/minimum-size-subarray-in-infinite-array.cpp) [Python](./Python/minimum-size-subarray-in-infinite-array.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum, Hash Table
 
 <br/>
 <div align="right">
@@ -960,6 +963,7 @@
 2737 | [Find the Closest Marked Node](https://leetcode.com/problems/find-the-closest-marked-node/)  | [C++](./C++/find-the-closest-marked-node.cpp) [Python](./Python/find-the-closest-marked-node.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium           |🔒| Graph, `Dijkstra's Algorithm` |
 2836 | [Maximize Value of Function in a Ball Passing Game](https://leetcode.com/problems/maximize-value-of-function-in-a-ball-passing-game/)  | [C++](./C++/maximize-value-of-function-in-a-ball-passing-game.cpp) [Python](./Python/maximize-value-of-function-in-a-ball-passing-game.py) | _O(n)_ | _O(n)_| Hard           || Graph, Prefix Sum, Two Pointers, Sliding Window, Binary Lifting |
 2850 | [Minimum Moves to Spread Stones Over Grid](https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid/) | [C++](./C++/minimum-moves-to-spread-stones-over-grid.cpp) [Python](./Python/minimum-moves-to-spread-stones-over-grid.py) | _O(n^3)_ | _O(n^2)_ | Medium | | Backtracking, `Hungarian Weighted Bipartite Matching` |
+2876 | [Count Visited Nodes in a Directed Graph](https://leetcode.com/problems/count-visited-nodes-in-a-directed-graph/) | [C++](./C++/count-visited-nodes-in-a-directed-graph.cpp) [Python](./Python/count-visited-nodes-in-a-directed-graph.py) | _O(n)_ | _O(n)_ | Hard | | Graph, Hash Table |
 
 <br/>
 <div align="right">
