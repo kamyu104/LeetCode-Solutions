@@ -55,6 +55,11 @@
 
 * [SQL](https://github.com/kamyu104/LeetCode-Solutions#sql)
 
+
+## Pandas
+
+* [PD](https://github.com/kamyu104/LeetCode-Solutions#pd)
+
 ## Reference
 
 * [Links](./REFERENCE.md)
@@ -963,7 +968,7 @@
 2737 | [Find the Closest Marked Node](https://leetcode.com/problems/find-the-closest-marked-node/)  | [C++](./C++/find-the-closest-marked-node.cpp) [Python](./Python/find-the-closest-marked-node.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium           |🔒| Graph, `Dijkstra's Algorithm` |
 2836 | [Maximize Value of Function in a Ball Passing Game](https://leetcode.com/problems/maximize-value-of-function-in-a-ball-passing-game/)  | [C++](./C++/maximize-value-of-function-in-a-ball-passing-game.cpp) [Python](./Python/maximize-value-of-function-in-a-ball-passing-game.py) | _O(n)_ | _O(n)_| Hard           || Graph, Prefix Sum, Two Pointers, Sliding Window, Binary Lifting |
 2850 | [Minimum Moves to Spread Stones Over Grid](https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid/) | [C++](./C++/minimum-moves-to-spread-stones-over-grid.cpp) [Python](./Python/minimum-moves-to-spread-stones-over-grid.py) | _O(n^3)_ | _O(n^2)_ | Medium | | Backtracking, `Hungarian Weighted Bipartite Matching` |
-2876 | [Count Visited Nodes in a Directed Graph](https://leetcode.com/problems/count-visited-nodes-in-a-directed-graph/) | [C++](./C++/count-visited-nodes-in-a-directed-graph.cpp) [Python](./Python/count-visited-nodes-in-a-directed-graph.py) | _O(n)_ | _O(n)_ | Hard | | Graph, Hash Table |
+2876 | [Count Visited Nodes in a Directed Graph](https://leetcode.com/problems/count-visited-nodes-in-a-directed-graph/) | [C++](./C++/count-visited-nodes-in-a-directed-graph.cpp) [Python](./Python/count-visited-nodes-in-a-directed-graph.py) | _O(n)_ | _O(n)_ | Hard | | Graph, Hash Table, Stack |
 
 <br/>
 <div align="right">
@@ -1202,6 +1207,15 @@
 2837 | [Total Traveled Distance](https://leetcode.com/problems/election-results/) | [MySQL](./MySQL/total-traveled-distance.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 2853 | [Highest Salaries Difference](https://leetcode.com/problems/highest-salaries-difference/) | [MySQL](./MySQL/highest-salaries-difference.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 2854 | [Rolling Average Steps](https://leetcode.com/problems/rolling-average-steps/) | [MySQL](./MySQL/rolling-average-steps.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+
+## PD
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
+2877 | [Create a DataFrame from List](https://leetcode.com/problems/create-a-dataframe-from-list/) | [Python3](./Python3/create-a-dataframe-from-list.py3) | _O(n)_ | _O(1)_       | Easy           |||
+2878 | [Get the Size of a DataFrame](https://leetcode.com/problems/get-the-size-of-a-dataframe/) | [Python3](./Python3/get-the-size-of-a-dataframe.py3) | _O(1)_ | _O(1)_       | Easy           |||
+2879 | [Display the First Three Rows](https://leetcode.com/problems/display-the-first-three-rows/) | [Python3](./Python3/display-the-first-three-rows.py3) | _O(1)_ | _O(1)_       | Easy           |||
+2880 | [Select Data](https://leetcode.com/problems/select-data/) | [Python3](./Python3/select-data.py3) | _O(n)_ | _O(n)_       | Easy           |||
+2881 | [Create a New Column](https://leetcode.com/problems/create-a-new-column/) | [Python3](./Python3/create-a-new-column.py3) | _O(n)_ | _O(1)_       | Easy           |||
 
 <br/>
 <div align="right">
