@@ -1,4 +1,4 @@
-// Time:  O(sqrt(r) + nlogr + klogn)
+// Time:  O(sqrt(r) + n * (logr + pi(sqrt(r))) + klogn) = O(sqrt(r) + n * (logr + sqrt(r)/log(sqrt(r))) + klogn), m is max(k for _, k in queries), pi(n) = number of primes in a range [1, n] = O(n/logn) by prime number theorem, see https://en.wikipedia.org/wiki/Prime_number_theorem
 // Space: O(sqrt(r) + n)
 
 // number theory, mono stack, greedy, sort, heap
