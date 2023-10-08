@@ -33,7 +33,7 @@ class Solution(object):
             if y not in lookup:
                 cnt = 0
                 for p in primes:
-                    if x < p:
+                    if p*p > x:
                         break
                     if x%p != 0:
                         continue
