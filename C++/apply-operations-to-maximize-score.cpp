@@ -68,7 +68,7 @@ public:
             if (!lookup.count(y)) {
                 int cnt = 0;
                 for (const auto& p : primes) {
-                    if (x < p) {
+                    if (p * p > x) {
                         break;
                     }
                     if (x % p != 0) {
