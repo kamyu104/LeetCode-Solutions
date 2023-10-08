@@ -37,7 +37,7 @@ class Solution(object):
         def prime_factors(x):
             factors = collections.Counter()
             for p in primes:
-                if x < p:
+                if p*p > x:
                     break
                 while x%p == 0:
                     factors[p] += 1
