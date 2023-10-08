@@ -9,7 +9,7 @@ public:
         const auto& prime_factors = [&](int x) {
             unordered_map<int, int> factors;
             for (const auto& p : primes) {
-                if (x < p) {
+                if (p * p > x) {
                     break;
                 }
                 for (; x % p == 0; x /= p) {
