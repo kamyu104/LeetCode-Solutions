@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2893%20%2F%202893-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2897%20%2F%202897-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -503,6 +503,7 @@
 2833 | [Furthest Point From Origin](https://leetcode.com/problems/furthest-point-from-origin/)| [C++](./C++/furthest-point-from-origin.cpp) [Python](./Python/furthest-point-from-origin.py)| _O(1)_ | _O(1)_ | Easy | | Math |
 2862 | [Maximum Element-Sum of a Complete Subset of Indices](https://leetcode.com/problems/maximum-element-sum-of-a-complete-subset-of-indices/)| [C++](./C++/maximum-element-sum-of-a-complete-subset-of-indices.cpp) [Python](./Python/maximum-element-sum-of-a-complete-subset-of-indices.py)| _O(n)_ | _O(n)_ | Hard | | Number Theory, `Basel Problem` |
 2861 | [Maximum Number of Alloys](https://leetcode.com/problems/maximum-number-of-alloys/) | [C++](./C++/maximum-number-of-alloys.cpp) [Python](./Python/maximum-number-of-alloys.py) | _O(k * nlogn)_ | _O(n)_ | Medium | | Binary Search, Sort, Math |
+2894 | [Divisible and Non-divisible Sums Difference](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/) | [C++](./C++/divisible-and-non-divisible-sums-difference.cpp) [Python](./Python/divisible-and-non-divisible-sums-difference.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 
 <br/>
 <div align="right">
@@ -820,6 +821,7 @@
 2830 | [Maximize the Profit as the Salesman](https://leetcode.com/problems/maximize-the-profit-as-the-salesman/) | [C++](./C++/maximize-the-profit-as-the-salesman.cpp) [Python](./Python/maximize-the-profit-as-the-salesman.py) | _O(n + m)_   | _O(n + m)_        | Medium         | | DP
 2858 | [Minimum Edge Reversals So Every Node Is Reachable](https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/) | [C++](./C++/minimum-edge-reversals-so-every-node-is-reachable.cpp) [Python](./Python/minimum-edge-reversals-so-every-node-is-reachable.py) | _O(n)_   | _O(n)_        | Hard         | | DFS, Tree DP
 2867 | [Count Valid Paths in a Tree](https://leetcode.com/problems/count-valid-paths-in-a-tree/) | [C++](./C++/count-valid-paths-in-a-tree.cpp) [Python](./Python/count-valid-paths-in-a-tree.py) | _O(n)_   | _O(n)_        | Hard         | | Number Theory, `Linear Sieve of Eratosthenes`, DFS, Tree DP, Union Find
+2896 | [Apply Operations to Make Two Strings Equal](https://leetcode.com/problems/apply-operations-to-make-two-strings-equal/) | [C++](./C++/apply-operations-to-make-two-strings-equal.cpp) [Python](./Python/apply-operations-to-make-two-strings-equal.py) | _O(n)_   | _O(1)_        | Medium         | | DP
 
 <br/>
 <div align="right">
@@ -935,6 +937,8 @@
 2871 | [Split Array Into Maximum Number of Subarrays](https://leetcode.com/problems/split-array-into-maximum-number-of-subarrays/) | [C++](./C++/split-array-into-maximum-number-of-subarrays.cpp) [Python](./Python/split-array-into-maximum-number-of-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 2872 | [Maximum Number of K-Divisible Components](https://leetcode.com/problems/maximum-number-of-k-divisible-components/) | [C++](./C++/maximum-number-of-k-divisible-components.cpp) [Python](./Python/maximum-number-of-k-divisible-components.py) | _O(n)_   | _O(n)_        | Hard         | variant of [Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/) | BFS, Greedy
 2892 | [Minimizing Array After Replacing Pairs With Their Product](https://leetcode.com/problems/minimizing-array-after-replacing-pairs-with-their-product/) | [C++](./C++/minimizing-array-after-replacing-pairs-with-their-product.cpp) [Python](./Python/minimizing-array-after-replacing-pairs-with-their-product.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Greedy
+2895 | [Minimum Processing Time](https://leetcode.com/problems/minimum-processing-time/) | [C++](./C++/minimum-processing-time.cpp) [Python](./Python/minimum-processing-time.py) | _O(nlogn)_ | _O(1)_ | Medium |  | Sort, Greedy
+2897 | [Apply Operations on Array to Maximize Sum of Squares](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/) | [C++](./C++/apply-operations-on-array-to-maximize-sum-of-squares.cpp) [Python](./Python/apply-operations-on-array-to-maximize-sum-of-squares.py) | _O(nlogr)_ | _O(logr)_ | Hard |  | Bit Manipulation, Greedy, Freq Table
 
 <br/>
 <div align="right">
