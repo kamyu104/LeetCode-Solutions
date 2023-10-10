@@ -18,7 +18,7 @@ class Solution(object):
 # Time:  O(1)
 # Space: O(1)
 # math
-class Solution(object):
+class Solution2(object):
     def differenceOfSums(self, n, m):
         """
         :type n: int
