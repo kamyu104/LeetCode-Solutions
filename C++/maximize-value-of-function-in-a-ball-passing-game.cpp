@@ -98,7 +98,7 @@ public:
 class Solution2 {
 public:
     long long getMaxFunctionValue(vector<int>& receiver, long long k) {
-        const auto& bit_length = [](const auto& x) {
+        const auto& bit_length = [](int64_t x) {
             return x != 0 ? 8 * sizeof(x) - __builtin_clzll(x) : 1;
         };
 
