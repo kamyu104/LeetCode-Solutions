@@ -109,7 +109,7 @@ public:
 
 private:
     int bit_length(int64_t x) {
-        return x != 0 ? 64 - __builtin_clz(x) : 1;
+        return x != 0 ? 64 - __builtin_clzll(x) : 1;
     }
 };
 
@@ -194,6 +194,6 @@ public:
 
 private:
     int bit_length(int64_t x) {
-        return x != 0 ? 64 - __builtin_clz(x) : 1;
+        return x != 0 ? 64 - __builtin_clzll(x) : 1;
     }
 };
