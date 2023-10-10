@@ -1,7 +1,7 @@
 # Time:  O(nlogr), r = max(nums)
 # Space: O(logr)
 
-# greedy, freq table
+# bit manipulation, greedy, freq table
 class Solution(object):
     def maxSum(self, nums, k):
         """
