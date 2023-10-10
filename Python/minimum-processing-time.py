@@ -14,6 +14,6 @@ class Solution(object):
         tasks.sort(reverse=True)
         result = 0
         for i in xrange(len(processorTime)):
-            for c in xrange(K):
-                result = max(result, processorTime[i]+tasks[i*K+c])
+            for j in xrange(K):
+                result = max(result, processorTime[i]+tasks[i*K+j])
         return result
