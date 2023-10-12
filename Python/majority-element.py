@@ -10,29 +10,40 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        idx, cnt = 0, 1
-
-        for i in xrange(1, len(nums)):
-            if nums[idx] == nums[i]:
+        result, cnt = None, 0
+        for x in nums:
+            if not cnt:
+                result = x
+            if x == result:
                 cnt += 1
             else:
                 cnt -= 1
-                if cnt == 0:
-                    idx = i
-                    cnt = 1
+        return result
 
-        return nums[idx]
 
-    def majorityElement2(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        return sorted(collections.Counter(nums).items(), key=lambda a: a[1], reverse=True)[0][0]
+# Time:  O(n)
+# Space: O(n)
+import collections
 
-    def majorityElement3(self, nums):
+
+class Solution2(object):
+    def majorityElement(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
         return collections.Counter(nums).most_common(1)[0][0]
+
+
+# Time:  O(nlogn)
+# Space: O(n)
+import collections
+
+
+class Solution3(object):
+    def majorityElement(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        return sorted(collections.Counter(nums).items(), key=lambda a: a[1], reverse=True)[0][0]
