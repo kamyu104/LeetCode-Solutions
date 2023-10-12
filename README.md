@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2897%20%2F%202897-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2898%20%2F%202898-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -503,6 +503,7 @@
 2862 | [Maximum Element-Sum of a Complete Subset of Indices](https://leetcode.com/problems/maximum-element-sum-of-a-complete-subset-of-indices/)| [C++](./C++/maximum-element-sum-of-a-complete-subset-of-indices.cpp) [Python](./Python/maximum-element-sum-of-a-complete-subset-of-indices.py)| _O(n)_ | _O(n)_ | Hard | | Number Theory, `Basel Problem` |
 2861 | [Maximum Number of Alloys](https://leetcode.com/problems/maximum-number-of-alloys/) | [C++](./C++/maximum-number-of-alloys.cpp) [Python](./Python/maximum-number-of-alloys.py) | _O(k * nlogn)_ | _O(n)_ | Medium | | Binary Search, Sort, Math |
 2894 | [Divisible and Non-divisible Sums Difference](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/) | [C++](./C++/divisible-and-non-divisible-sums-difference.cpp) [Python](./Python/divisible-and-non-divisible-sums-difference.py) | _O(1)_ | _O(1)_ | Easy | | Math |
+2898 | [Maximum Linear Stock Score](https://leetcode.com/problems/maximum-linear-stock-score/) | [C++](./C++/maximum-linear-stock-score.cpp) [Python](./Python/maximum-linear-stock-score.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Math, Freq Table |
 
 <br/>
 <div align="right">
