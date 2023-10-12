@@ -9,16 +9,15 @@ class Solution(object):
         :rtype: int
         """
         def boyer_moore_majority_vote():
-            m, cnt = nums[0], 1
-            for i in xrange(1, len(nums)):
-                if m == nums[i]:
+            result, cnt = None, 0
+            for x in nums:
+                if not cnt:
+                    result = x
+                if x == result:
                     cnt += 1
                 else:
                     cnt -= 1
-                    if cnt == 0:
-                        m = nums[i]
-                        cnt = 1
-            return m
+            return result
         
         m = boyer_moore_majority_vote()
         total, cnt = nums.count(m), 0
