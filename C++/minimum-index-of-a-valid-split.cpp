@@ -6,19 +6,18 @@ class Solution {
 public:
     int minimumIndex(vector<int>& nums) {
         const auto& boyer_moore_majority_vote = [&]() {
-            int m = nums[0], cnt = 1;
-            for (int i = 1; i < size(nums); ++i) {
-                if (m == nums[i]) {
+            int result = 0, cnt = 0;
+            for (const auto& x : nums) {
+                if (cnt == 0) {
+                    result = x;
+                }
+                if (x == result) {
                     ++cnt;
                 } else {
                     --cnt;
-                    if (cnt == 0) {
-                        m = nums[i];
-                        cnt = 1;
-                    }
                 }
             }
-            return m;
+            return result; 
         };
 
         const auto& m = boyer_moore_majority_vote();
