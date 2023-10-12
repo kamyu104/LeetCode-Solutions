@@ -4,18 +4,17 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        int ans = nums[0], cnt = 1;
-        for (const auto& i : nums) {
-            if (i == ans) {
+        int result = 0, cnt = 0;
+        for (const auto& x : nums) {
+            if (cnt == 0) {
+                result = x;
+            }
+            if (x == result) {
                 ++cnt;
             } else {
                 --cnt;
-                if (cnt == 0) {
-                    ans = i;
-                    cnt = 1;
-                }
             }
         }
-        return ans; 
+        return result; 
     }
 };
