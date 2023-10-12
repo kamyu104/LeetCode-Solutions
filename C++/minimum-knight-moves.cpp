@@ -38,7 +38,7 @@ public:
             swap(x, y);
         }
         static const unordered_map<pair<int, int>, int, PairHash<int>> lookup =
-            {{{0, 0}, 0}, {{1, 0}, 3}, {{2, 2}, 4}};  // special cases
+            {{{1, 0}, 3}, {{2, 2}, 4}};  // special cases
         if (lookup.count({x, y})) {
             return lookup.at({x, y});
         }
