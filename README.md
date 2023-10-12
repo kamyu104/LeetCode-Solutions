@@ -413,7 +413,6 @@
 2845 | [Count of Interesting Subarrays](https://leetcode.com/problems/count-of-interesting-subarrays/) | [C++](./C++/count-of-interesting-subarrays.cpp) [Python](./Python/count-of-interesting-subarrays.py) | _O(n)_ | _O(m)_ | Medium | | Freq Table, Prefix Sum
 2857 | [Count Pairs of Points With Distance k](https://leetcode.com/problems/count-pairs-of-points-with-distance-k/) | [C++](./C++/count-pairs-of-points-with-distance-k.cpp) [Python](./Python/count-pairs-of-points-with-distance-k.py) | _O(n * k)_ | _O(n)_ | Medium | | Freq Table
 2869 | [Minimum Operations to Collect Elements](https://leetcode.com/problems/minimum-operations-to-collect-elements/) | [C++](./C++/minimum-operations-to-collect-elements.cpp) [Python](./Python/minimum-operations-to-collect-elements.py) | _O(n)_ | _O(k)_ | Easy | | Hash Table
-2875 | [Minimum Size Subarray in Infinite Array](https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/) | [C++](./C++/minimum-size-subarray-in-infinite-array.cpp) [Python](./Python/minimum-size-subarray-in-infinite-array.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum, Hash Table
 
 <br/>
 <div align="right">
@@ -592,6 +591,7 @@
 2831 | [Find the Longest Equal Subarray](https://leetcode.com/problems/find-the-longest-equal-subarray/) | [C++](./C++/find-the-longest-equal-subarray.cpp) [Python](./Python/find-the-longest-equal-subarray.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 2838 | [Maximum Coins Heroes Can Collect](https://leetcode.com/problems/maximum-coins-heroes-can-collect/) | [C++](./C++/maximum-coins-heroes-can-collect.cpp) [Python](./Python/maximum-coins-heroes-can-collect.py) | _O(nlogn + mlogm)_ | _O(n + m)_ | Medium | 🔒 | Sort, Two Pointers
 2841 | [Maximum Sum of Almost Unique Subarray](https://leetcode.com/problems/maximum-sum-of-almost-unique-subarray/) | [C++](./C++/maximum-sum-of-almost-unique-subarray.cpp) [Python](./Python/maximum-sum-of-almost-unique-subarray.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Two Pointers, Sliding Window
+2875 | [Minimum Size Subarray in Infinite Array](https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/) | [C++](./C++/minimum-size-subarray-in-infinite-array.cpp) [Python](./Python/minimum-size-subarray-in-infinite-array.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum, Hash Table, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
