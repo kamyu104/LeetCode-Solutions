@@ -1,7 +1,7 @@
 // Time:  O(n)
-// Space: O(n)
+// Space: O(1)
 
-// prefix sum, hash table
+// two pointers, sliding window
 class Solution {
 public:
     int minSizeSubarray(vector<int>& nums, int target) {
@@ -14,14 +14,44 @@ public:
             return q * size(nums);
         }
         int result = INF;
-        unordered_map<int64_t, int> lookup = {{0, -1}};
-        int64_t curr = 0;
-        for (int right = 0; right < (size(nums) - 1) + (size(nums) - 1); ++right) {
+        int curr = 0;
+        for (int right = 0, left = 0; right < (size(nums) - 1) + (size(nums) - 1); ++right) {
             curr += nums[right % size(nums)];
-            if (lookup.count(curr - target)) {
-                result = min(result, right - lookup[curr - target]);
+            while (curr > target) {
+                curr -= nums[left++ % size(nums)];
             }
-            lookup[curr] = right;
+            if (curr == target) {
+                result = min(result, right - left + 1);
+            }
+        }
+        return result != INF ? result + q * size(nums) : -1;
+    }
+};
+
+
+// Time:  O(n)
+// Space: O(n)
+// prefix sum, hash table
+class Solution2 {
+public:
+    int minSizeSubarray(vector<int>& nums, int target) {
+        static const int INF = numeric_limits<int>::max();
+
+        const int64_t total = accumulate(cbegin(nums), cend(nums), 0ll);
+        const int64_t q = target / total;
+        target %= total;
+        if (!target) {
+            return q * size(nums);
+        }
+        int result = INF;
+        unordered_map<int64_t, int> lookup = {{0, -1}};
+        int64_t prefix = 0;
+        for (int right = 0; right < (size(nums) - 1) + (size(nums) - 1); ++right) {
+            prefix += nums[right % size(nums)];
+            if (lookup.count(prefix - target)) {
+                result = min(result, right - lookup[prefix - target]);
+            }
+            lookup[prefix] = right;
         }
         return result != INF ? result + q * size(nums) : -1;
     }
