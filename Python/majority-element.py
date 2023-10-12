@@ -10,15 +10,18 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        result, cnt = None, 0
-        for x in nums:
-            if not cnt:
-                result = x
-            if x == result:
-                cnt += 1
-            else:
-                cnt -= 1
-        return result
+        def boyer_moore_majority_vote():
+            result, cnt = None, 0
+            for x in nums:
+                if not cnt:
+                    result = x
+                if x == result:
+                    cnt += 1
+                else:
+                    cnt -= 1
+            return result
+
+        return boyer_moore_majority_vote()
 
 
 # Time:  O(n)
