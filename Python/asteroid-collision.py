@@ -1,7 +1,6 @@
 # Time:  O(n)
 # Space: O(n)
 
-
 class Solution(object):
     def asteroidCollision(self, asteroids):
         """
@@ -9,15 +8,37 @@ class Solution(object):
         :rtype: List[int]
         """
         result = []
-        for asteroid in asteroids:
-            while result and asteroid < 0 < result[-1]:
-                if result[-1] < -asteroid:
+        for x in asteroids:
+            while result and x < 0 < result[-1]:
+                if result[-1] < -x:
                     result.pop()
                     continue
-                elif result[-1] == -asteroid:
+                elif result[-1] == -x:
                     result.pop()
                 break
             else:
-                result.append(asteroid)
+                result.append(x)
         return result
 
+
+# Time:  O(n)
+# Space: O(n)
+class Solution(object):
+    def asteroidCollision(self, asteroids):
+        """
+        :type asteroids: List[int]
+        :rtype: List[int]
+        """
+        result = []
+        for x in asteroids:
+            if x > 0:
+                result.append(x)
+                continue
+            while result and 0 < result[-1] < -x:
+                result.pop()
+            if result and 0 < result[-1]:
+                if result[-1] == -x:
+                    result.pop()
+                continue
+            result.append(x)
+        return result
