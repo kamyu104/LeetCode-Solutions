@@ -23,7 +23,7 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(n)
-class Solution(object):
+class Solution2(object):
     def asteroidCollision(self, asteroids):
         """
         :type asteroids: List[int]
