@@ -9,15 +9,16 @@ class Solution(object):
         """
         result = []
         for x in asteroids:
-            while result and x < 0 < result[-1]:
-                if result[-1] < -x:
-                    result.pop()
-                    continue
-                elif result[-1] == -x:
-                    result.pop()
-                break
-            else:
+            if x > 0:
                 result.append(x)
+                continue
+            while result and 0 < result[-1] < -x:
+                result.pop()
+            if result and 0 < result[-1]:
+                if result[-1] == -x:
+                    result.pop()
+                continue
+            result.append(x)
         return result
 
 
@@ -31,14 +32,13 @@ class Solution2(object):
         """
         result = []
         for x in asteroids:
-            if x > 0:
-                result.append(x)
-                continue
-            while result and 0 < result[-1] < -x:
-                result.pop()
-            if result and 0 < result[-1]:
-                if result[-1] == -x:
+            while result and x < 0 < result[-1]:
+                if result[-1] < -x:
                     result.pop()
-                continue
-            result.append(x)
+                    continue
+                elif result[-1] == -x:
+                    result.pop()
+                break
+            else:
+                result.append(x)
         return result
