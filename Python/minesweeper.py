@@ -16,27 +16,25 @@ class Solution(object):
                 board[r][c] = 'X'
                 continue
             cnt = 0
+            adj = []
             for dr in xrange(-1, 2):
                 for dc in xrange(-1, 2):
                     if dr == dc == 0:
                         continue
                     nr, nc = r+dr, c+dc
-                    if not (0 <= nr < len(board) and 0 <= nc < len(board[r]) and board[nr][nc] == 'M'):
+                    if not (0 <= nr < len(board) and 0 <= nc < len(board[r])):
                         continue
-                    cnt += 1
+                    if board[nr][nc] == 'M':
+                        cnt += 1
+                    elif board[nr][nc] == 'E':
+                        adj.append((nr, nc))
             if cnt:
                 board[r][c] = chr(cnt + ord('0'))
                 continue
             board[r][c] = 'B'
-            for dr in xrange(-1, 2):
-                for dc in xrange(-1, 2):
-                    if dr == dc == 0:
-                        continue
-                    nr, nc = r+dr, c+dc
-                    if not (0 <= nr < len(board) and 0 <= nc < len(board[r]) and board[nr][nc] == 'E'):
-                        continue
-                    board[nr][nc] = ' '
-                    stk.append((nr, nc))
+            for nr, nc in adj:
+                board[nr][nc] = ' '
+                stk.append((nr, nc))
         return board
 
 
@@ -58,27 +56,25 @@ class Solution2(object):
                     board[r][c] = 'X'
                     continue
                 cnt = 0
+                adj = []
                 for dr in xrange(-1, 2):
                     for dc in xrange(-1, 2):
                         if dr == dc == 0:
                             continue
                         nr, nc = r+dr, c+dc
-                        if not (0 <= nr < len(board) and 0 <= nc < len(board[r]) and board[nr][nc] == 'M'):
+                        if not (0 <= nr < len(board) and 0 <= nc < len(board[r])):
                             continue
-                        cnt += 1
+                        if board[nr][nc] == 'M':
+                            cnt += 1
+                        elif board[nr][nc] == 'E':
+                            adj.append((nr, nc))
                 if cnt:
                     board[r][c] = chr(cnt + ord('0'))
                     continue
                 board[r][c] = 'B'
-                for dr in xrange(-1, 2):
-                    for dc in xrange(-1, 2):
-                        if dr == dc == 0:
-                            continue
-                        nr, nc = r+dr, c+dc
-                        if not (0 <= nr < len(board) and 0 <= nc < len(board[r]) and board[nr][nc] == 'E'):
-                            continue
-                        board[nr][nc] = ' '
-                        new_q.append((nr, nc))
+                for nr, nc in adj:
+                    board[nr][nc] = ' '
+                    new_q.append((nr, nc))
             q = new_q
         return board
 
