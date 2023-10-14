@@ -26,8 +26,7 @@ public:
                     }
                     if (board[nr][nc] == 'M') {
                         ++cnt;
-                    }
-                    if (board[nr][nc] == 'E') {
+                    } else if (board[nr][nc] == 'E') {
                         adj.emplace_back(nr, nc);
                     }
                 }
@@ -75,8 +74,7 @@ public:
                         }
                         if (board[nr][nc] == 'M') {
                             ++cnt;
-                        }
-                        if (board[nr][nc] == 'E') {
+                        } else if (board[nr][nc] == 'E') {
                             adj.emplace_back(nr, nc);
                         }
                     }
