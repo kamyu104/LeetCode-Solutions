@@ -9,12 +9,12 @@ class Solution(object):
         :type click: List[int]
         :rtype: List[List[str]]
         """
+        if board[click[0]][click[1]] == 'M':
+            board[click[0]][click[1]] = 'X'
+            return board
         stk = [click]
         while stk:
             r, c = stk.pop()
-            if board[r][c] == 'M':
-                board[r][c] = 'X'
-                continue
             cnt = 0
             adj = []
             for dr in xrange(-1, 2):
@@ -48,13 +48,13 @@ class Solution2(object):
         :type click: List[int]
         :rtype: List[List[str]]
         """
+        if board[click[0]][click[1]] == 'M':
+            board[click[0]][click[1]] = 'X'
+            return board
         q = [click]
         while q:
             new_q = []
             for r, c in q:
-                if board[r][c] == 'M':
-                    board[r][c] = 'X'
-                    continue
                 cnt = 0
                 adj = []
                 for dr in xrange(-1, 2):
