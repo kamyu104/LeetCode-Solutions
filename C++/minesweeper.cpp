@@ -5,14 +5,14 @@
 class Solution {
 public:
     vector<vector<char>> updateBoard(vector<vector<char>>& board, vector<int>& click)  {
+        if (board[click[0]][click[1]] == 'M') {
+            board[click[0]][click[1]] = 'X';
+            return board;
+        }
         vector<pair<int, int>> stk;
         stk.emplace_back(click[0], click[1]);
         while (!empty(stk)) {
             const auto [r, c] = stk.back(); stk.pop_back();
-            if (board[r][c] == 'M') {
-                board[r][c] = 'X';
-                continue;
-            }
             int cnt = 0;
             vector<pair<int, int>> adj;
             for (int dr = -1; dr < 2; ++dr) {
@@ -51,15 +51,15 @@ public:
 class Solution2 {
 public:
     vector<vector<char>> updateBoard(vector<vector<char>>& board, vector<int>& click)  {
+        if (board[click[0]][click[1]] == 'M') {
+            board[click[0]][click[1]] = 'X';
+            return board;
+        }
         vector<pair<int, int>> q;
         q.emplace_back(click[0], click[1]);
         while (!empty(q)) {
             vector<pair<int, int>> new_q;
             for (const auto& [r, c] : q) {
-                if (board[r][c] == 'M') {
-                    board[r][c] = 'X';
-                    continue;
-                }
                 int cnt = 0;
                 vector<pair<int, int>> adj;
                 for (int dr = -1; dr < 2; ++dr) {
