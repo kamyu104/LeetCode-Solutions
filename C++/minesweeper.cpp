@@ -20,7 +20,7 @@ public:
                     if (dr == 0 && dc == 0) {
                         continue;
                     }
-                    int nr = r + dr, nc = c + dc;
+                    const int nr = r + dr, nc = c + dc;
                     if (!(0 <= nr && nr < size(board) && 0 <= nc && nc < size(board[0]))) {
                         continue;
                     }
@@ -68,7 +68,7 @@ public:
                         if (dr == 0 && dc == 0) {
                             continue;
                         }
-                        int nr = r + dr, nc = c + dc;
+                        const int nr = r + dr, nc = c + dc;
                         if (!(0 <= nr && nr < size(board) && 0 <= nc && nc < size(board[0]))) {
                             continue;
                         }
