@@ -1,7 +1,49 @@
 # Time:  O(m * n)
 # Space: O(m + n)
 
+# dfs
 class Solution(object):
+    def updateBoard(self, board, click):
+        """
+        :type board: List[List[str]]
+        :type click: List[int]
+        :rtype: List[List[str]]
+        """
+        stk = [click]
+        while stk:
+            r, c = stk.pop()
+            if board[r][c] == 'M':
+                board[r][c] = 'X'
+                continue
+            cnt = 0
+            for dr in xrange(-1, 2):
+                for dc in xrange(-1, 2):
+                    if dr == dc == 0:
+                        continue
+                    nr, nc = r+dr, c+dc
+                    if not (0 <= nr < len(board) and 0 <= nc < len(board[r]) and board[nr][nc] == 'M'):
+                        continue
+                    cnt += 1
+            if cnt:
+                board[r][c] = chr(cnt + ord('0'))
+                continue
+            board[r][c] = 'B'
+            for dr in xrange(-1, 2):
+                for dc in xrange(-1, 2):
+                    if dr == dc == 0:
+                        continue
+                    nr, nc = r+dr, c+dc
+                    if not (0 <= nr < len(board) and 0 <= nc < len(board[r]) and board[nr][nc] == 'E'):
+                        continue
+                    board[nr][nc] = ' '
+                    stk.append((nr, nc))
+        return board
+
+
+# Time:  O(m * n)
+# Space: O(m + n)
+# dfs
+class Solution2(object):
     def updateBoard(self, board, click):
         """
         :type board: List[List[str]]
@@ -16,8 +58,8 @@ class Solution(object):
                     board[r][c] = 'X'
                     continue
                 cnt = 0
-                for dr in range(-1, 2):
-                    for dc in range(-1, 2):
+                for dr in xrange(-1, 2):
+                    for dc in xrange(-1, 2):
                         if dr == dc == 0:
                             continue
                         nr, nc = r+dr, c+dc
@@ -28,8 +70,8 @@ class Solution(object):
                     board[r][c] = chr(cnt + ord('0'))
                     continue
                 board[r][c] = 'B'
-                for dr in range(-1, 2):
-                    for dc in range(-1, 2):
+                for dr in xrange(-1, 2):
+                    for dc in xrange(-1, 2):
                         if dr == dc == 0:
                             continue
                         nr, nc = r+dr, c+dc
@@ -43,7 +85,7 @@ class Solution(object):
 
 # Time:  O(m * n)
 # Space: O(m * n)
-class Solution2(object):
+class Solution3(object):
     def updateBoard(self, board, click):
         """
         :type board: List[List[str]]
@@ -80,4 +122,3 @@ class Solution2(object):
                             self.updateBoard(board, (r, c))
 
         return board
-
