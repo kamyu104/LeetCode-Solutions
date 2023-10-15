@@ -96,7 +96,7 @@ class Solution3(object):
         """
         def check(tasks, workers, pills, strength, x):
             t = tasks[:x]
-            for worker in workers[-x:]:   # enumerate from the weakest worker to the strongest worker, greedily assign him to the hardest task which he can do
+            for worker in workers[-x:]:  # enumerate from the weakest worker to the strongest worker, greedily assign him to the hardest task which he can do
                 i = bisect.bisect_right(t, worker)-1
                 if i != -1:
                     t.pop(i)
