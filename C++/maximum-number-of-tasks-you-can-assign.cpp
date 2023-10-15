@@ -32,7 +32,7 @@ private:
             }
             if (pills) {
                 it = t.upper_bound(workers[i] + strength);
-                if (it != begin((t))) {
+                if (it != begin(t)) {
                     t.erase(prev(it));
                     --pills;
                     continue;
