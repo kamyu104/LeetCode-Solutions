@@ -85,6 +85,9 @@ class Solution2(object):
 
 # Time:  O(n^2 * logn)
 # Space: O(n)
+import bisect
+
+
 class Solution3(object):
     def maxTaskAssign(self, tasks, workers, pills, strength):
         """
@@ -124,6 +127,9 @@ class Solution3(object):
 
 # Time:  O(n^2 * logn)
 # Space: O(n)
+import bisect
+
+
 class Solution4(object):
     def maxTaskAssign(self, tasks, workers, pills, strength):
         """
