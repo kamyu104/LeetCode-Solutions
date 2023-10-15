@@ -8,7 +8,7 @@ class Solution(object):
         :type words: List[str]
         :rtype: List[int]
         """
-        KEY = "prev"
+        PREV = "prev"
         result, stk = [], []
         i = -1
         for x in words:
