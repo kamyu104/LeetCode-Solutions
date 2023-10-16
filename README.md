@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2898%20%2F%202898-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2906%20%2F%202906-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -169,6 +169,9 @@
 2855 | [Minimum Right Shifts to Sort the Array](https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/) | [C++](./C++/minimum-right-shifts-to-sort-the-array.cpp) [Python](./Python/minimum-right-shifts-to-sort-the-array.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2873 | [Maximum Value of an Ordered Triplet I](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i/) | [C++](./C++/maximum-value-of-an-ordered-triplet-i.cpp) [Python](./Python/maximum-value-of-an-ordered-triplet-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2874 | [Maximum Value of an Ordered Triplet II](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/) | [C++](./C++/maximum-value-of-an-ordered-triplet-ii.cpp) [Python](./Python/maximum-value-of-an-ordered-triplet-ii.py) | _O(n)_ | _O(1)_ | Easy | | Array
+2903 | [Find Indices With Index and Value Difference I](https://leetcode.com/problems/find-indices-with-index-and-value-difference-i/) | [C++](./C++/find-indices-with-index-and-value-difference-i.cpp) [Python](./Python/find-indices-with-index-and-value-difference-i.py) | _O(n)_ | _O(1)_ | Easy | | Prefix Sum
+2905 | [Find Indices With Index and Value Difference II](https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/) | [C++](./C++/find-indices-with-index-and-value-difference-ii.cpp) [Python](./Python/find-indices-with-index-and-value-difference-ii.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
+2906 | [Construct Product Matrix](https://leetcode.com/problems/construct-product-matrix/) | [C++](./C++/construct-product-matrix.cpp) [Python](./Python/construct-product-matrix.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -274,6 +277,7 @@
 2863 | [Maximum Length of Semi-Decreasing Subarrays](https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/) | [C++](./C++/maximum-length-of-semi-decreasing-subarrays.cpp) [Python](./Python/maximum-length-of-semi-decreasing-subarrays.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Sort, Mono Stack
 2865 | [Beautiful Towers I](https://leetcode.com/problems/beautiful-towers-i/) | [C++](./C++/beautiful-towers-i.cpp) [Python](./Python/beautiful-towers-i.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack
 2866 | [Beautiful Towers II](https://leetcode.com/problems/beautiful-towers-ii/) | [C++](./C++/beautiful-towers-ii.cpp) [Python](./Python/beautiful-towers-ii.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack
+2899 | [Last Visited Integers](https://leetcode.com/problems/last-visited-integers/) | [C++](./C++/last-visited-integers.cpp) [Python](./Python/last-visited-integers.py) | _O(n)_ | _O(n)_ | Easy | | Stack
 
 
 <br/>
@@ -593,6 +597,7 @@
 2838 | [Maximum Coins Heroes Can Collect](https://leetcode.com/problems/maximum-coins-heroes-can-collect/) | [C++](./C++/maximum-coins-heroes-can-collect.cpp) [Python](./Python/maximum-coins-heroes-can-collect.py) | _O(nlogn + mlogm)_ | _O(n + m)_ | Medium | 🔒 | Sort, Two Pointers
 2841 | [Maximum Sum of Almost Unique Subarray](https://leetcode.com/problems/maximum-sum-of-almost-unique-subarray/) | [C++](./C++/maximum-sum-of-almost-unique-subarray.cpp) [Python](./Python/maximum-sum-of-almost-unique-subarray.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 2875 | [Minimum Size Subarray in Infinite Array](https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/) | [C++](./C++/minimum-size-subarray-in-infinite-array.cpp) [Python](./Python/minimum-size-subarray-in-infinite-array.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum, Hash Table, Two Pointers, Sliding Window
+2904 | [Shortest and Lexicographically Smallest Beautiful String](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/) | [C++](./C++/shortest-and-lexicographically-smallest-beautiful-string.cpp) [Python](./Python/shortest-and-lexicographically-smallest-beautiful-string.py) | _O(n^2)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -823,6 +828,8 @@
 2858 | [Minimum Edge Reversals So Every Node Is Reachable](https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/) | [C++](./C++/minimum-edge-reversals-so-every-node-is-reachable.cpp) [Python](./Python/minimum-edge-reversals-so-every-node-is-reachable.py) | _O(n)_   | _O(n)_        | Hard         | | DFS, Tree DP
 2867 | [Count Valid Paths in a Tree](https://leetcode.com/problems/count-valid-paths-in-a-tree/) | [C++](./C++/count-valid-paths-in-a-tree.cpp) [Python](./Python/count-valid-paths-in-a-tree.py) | _O(n)_   | _O(n)_        | Hard         | | Number Theory, `Linear Sieve of Eratosthenes`, DFS, Tree DP, Union Find
 2896 | [Apply Operations to Make Two Strings Equal](https://leetcode.com/problems/apply-operations-to-make-two-strings-equal/) | [C++](./C++/apply-operations-to-make-two-strings-equal.cpp) [Python](./Python/apply-operations-to-make-two-strings-equal.py) | _O(n)_   | _O(1)_        | Medium         | | DP
+2901 | [Longest Unequal Adjacent Groups Subsequence II](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/) | [C++](./C++/longest-unequal-adjacent-groups-subsequence-ii.cpp) [Python](./Python/longest-unequal-adjacent-groups-subsequence-ii.py) | _O(n^2)_ | _O(n)_ | Medium |  | DP, Backtracing, LIS DP
+2902 | [Count of Sub-Multisets With Bounded Sum](https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/) | [C++](./C++/count-of-sub-multisets-with-bounded-sum.cpp) [Python](./Python/count-of-sub-multisets-with-bounded-sum.py) | _O(d * r)_ | _O(r)_ | Hard |  | Freq Table, DP, Sliding Window
 
 <br/>
 <div align="right">
@@ -940,6 +947,8 @@
 2892 | [Minimizing Array After Replacing Pairs With Their Product](https://leetcode.com/problems/minimizing-array-after-replacing-pairs-with-their-product/) | [C++](./C++/minimizing-array-after-replacing-pairs-with-their-product.cpp) [Python](./Python/minimizing-array-after-replacing-pairs-with-their-product.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Greedy
 2895 | [Minimum Processing Time](https://leetcode.com/problems/minimum-processing-time/) | [C++](./C++/minimum-processing-time.cpp) [Python](./Python/minimum-processing-time.py) | _O(nlogn)_ | _O(1)_ | Medium |  | Sort, Greedy
 2897 | [Apply Operations on Array to Maximize Sum of Squares](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/) | [C++](./C++/apply-operations-on-array-to-maximize-sum-of-squares.cpp) [Python](./Python/apply-operations-on-array-to-maximize-sum-of-squares.py) | _O(nlogr)_ | _O(logr)_ | Hard |  | Bit Manipulation, Greedy, Freq Table
+2900 | [Longest Unequal Adjacent Groups Subsequence I](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-i/) | [C++](./C++/longest-unequal-adjacent-groups-subsequence-i.cpp) [Python](./Python/longest-unequal-adjacent-groups-subsequence-i.py) | _O(n)_ | _O(1)_ | Medium |  | Greedy
+
 
 <br/>
 <div align="right">
