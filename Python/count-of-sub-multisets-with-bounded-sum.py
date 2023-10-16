@@ -4,7 +4,7 @@
 import collections
 
 
-# freq table, dp, sliding window, combinatorics
+# freq table, knapsack dp, sliding window, combinatorics
 class Solution(object):
     def countSubMultisets(self, nums, l, r):
         """
