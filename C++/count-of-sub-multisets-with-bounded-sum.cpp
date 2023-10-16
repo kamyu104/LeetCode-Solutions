@@ -1,7 +1,7 @@
 // Time:  O(d * r), d = len(set(nums))
 // Space: O(r)
 
-// freq table, dp, sliding window
+// freq table, dp, sliding window, combinatorics
 class Solution {
 public:
     int countSubMultisets(vector<int>& nums, int l, int r) {
