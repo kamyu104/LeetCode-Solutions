@@ -5,9 +5,8 @@
 class Solution {
 public:
     vector<string> getWordsInLongestSubsequence(int n, vector<string>& words, vector<int>& groups) {
-        const auto& check = [&](int i, int j) {
-            const auto& s1 = words[i], &s2 = words[j];
-            if (!(groups[i] != groups[j] && size(s1) == size(s2))) {
+        const auto& check = [&](const auto& s1, const auto& s2) {
+            if (size(s1) != size(s2)) {
                 return false;
             }
             int cnt = 0;
@@ -23,8 +22,9 @@ public:
         vector<pair<int, int>> dp(n, pair(1, -1));
         int i = -1;
         for (int i = n - 1; i >= 0; --i) {
+            const auto& si = words[i];
             for (int j = i + 1; j < n; ++j) {
-                if (check(j, i)) {
+                if (groups[i] != groups[j] && check(words[j], si)) {
                     dp[i] = max(dp[i], pair(dp[j].first + 1, j));
                 }
             }
@@ -43,9 +43,8 @@ public:
 class Solution2 {
 public:
     vector<string> getWordsInLongestSubsequence(int n, vector<string>& words, vector<int>& groups) {
-        const auto& check = [&](int i, int j) {
-            const auto& s1 = words[i], &s2 = words[j];
-            if (!(groups[i] != groups[j] && size(s1) == size(s2))) {
+        const auto& check = [&](const auto& s1, const auto& s2) {
+            if (size(s1) != size(s2)) {
                 return false;
             }
             int cnt = 0;
@@ -60,8 +59,9 @@ public:
 
         vector<pair<int, int>> dp(n, pair(1, -1));
         for (int i = 0; i < n; ++i) {
+            const auto& si = words[i];
             for (int j = 0; j < i; ++j) {
-                if (check(j, i)) {
+                if (groups[i] != groups[j] && check(words[j], si)) {
                     dp[i] = max(dp[i], pair(dp[j].first + 1, j));
                 }
             }
@@ -81,9 +81,8 @@ public:
 class Solution3 {
 public:
     vector<string> getWordsInLongestSubsequence(int n, vector<string>& words, vector<int>& groups) {
-        const auto& check = [&](int i, int j) {
-            const auto& s1 = words[i], &s2 = words[j];
-            if (!(groups[i] != groups[j] && size(s1) == size(s2))) {
+        const auto& check = [&](const auto& s1, const auto& s2) {
+            if (size(s1) != size(s2)) {
                 return false;
             }
             int cnt = 0;
@@ -98,9 +97,10 @@ public:
 
         vector<vector<int>> dp(n);
         for (int i = 0; i < n; ++i) {
+            const auto& si = words[i];
             int mx_j = -1;
             for (int j = 0; j < i; ++j) {
-                if (check(j, i) && (mx_j == -1 || size(dp[mx_j]) < size(dp[j]))) {
+                if (groups[i] != groups[j] && check(words[j], si) && (mx_j == -1 || size(dp[mx_j]) < size(dp[j]))) {
                     mx_j = j;
                 }
             }
