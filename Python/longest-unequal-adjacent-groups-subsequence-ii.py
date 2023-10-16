@@ -4,36 +4,8 @@
 import itertools
 
 
-# lis dp
-class Solution(object):
-    def getWordsInLongestSubsequence(self, n, words, groups):
-        """
-        :type n: int
-        :type words: List[str]
-        :type groups: List[int]
-        :rtype: List[str]
-        """
-        def check(i, j):
-            return (groups[i] != groups[j] and
-                    len(words[i]) == len(words[j]) and
-                    sum(a != b for a, b in itertools.izip(words[i], words[j])) == 1)
-
-        dp = [[] for _ in xrange(n)]
-        for i in xrange(n):
-            for j in xrange(i):
-                if check(j, i) and len(dp[j]) > len(dp[i]):
-                    dp[i] = dp[j]
-            dp[i] = dp[i]+[i]
-        return map(lambda x: words[x], max(dp, key=lambda x: len(x)))
-
-
-# Time:  O(n^2)
-# Space: O(n)
-import itertools
-
-
 # dp, backtracing
-class Solution2(object):
+class Solution(object):
     def getWordsInLongestSubsequence(self, n, words, groups):
         """
         :type n: int
@@ -65,7 +37,7 @@ import itertools
 
 
 # dp, backtracing
-class Solution3(object):
+class Solution2(object):
     def getWordsInLongestSubsequence(self, n, words, groups):
         """
         :type n: int
@@ -90,3 +62,31 @@ class Solution3(object):
             i = dp[i][1]
         result.reverse()
         return result
+
+
+# Time:  O(n^2)
+# Space: O(n^2)
+import itertools
+
+
+# lis dp
+class Solution3(object):
+    def getWordsInLongestSubsequence(self, n, words, groups):
+        """
+        :type n: int
+        :type words: List[str]
+        :type groups: List[int]
+        :rtype: List[str]
+        """
+        def check(i, j):
+            return (groups[i] != groups[j] and
+                    len(words[i]) == len(words[j]) and
+                    sum(a != b for a, b in itertools.izip(words[i], words[j])) == 1)
+
+        dp = [[] for _ in xrange(n)]
+        for i in xrange(n):
+            for j in xrange(i):
+                if check(j, i) and len(dp[j]) > len(dp[i]):
+                    dp[i] = dp[j]
+            dp[i] = dp[i]+[i]
+        return map(lambda x: words[x], max(dp, key=lambda x: len(x)))
