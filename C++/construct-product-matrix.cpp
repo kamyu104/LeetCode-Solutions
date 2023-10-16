@@ -16,7 +16,9 @@ public:
         int64_t left = 1;
         for (int i = 0; i < size(grid); ++i) {
             for (int j = 0; j < size(grid[0]); ++j) {
-                tie(grid[i][j], left) = pair((left * right[(i * size(grid[0]) + j) + 1]) % MOD, (left * grid[i][j]) % MOD);
+                const int x = grid[i][j];
+                grid[i][j] = (left * right[(i * size(grid[0]) + j) + 1]) % MOD;
+                left = (left * x) % MOD;
             }
         }
         return grid;
