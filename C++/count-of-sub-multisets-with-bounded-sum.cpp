@@ -1,4 +1,4 @@
-// Time:  O(d * r)
+// Time:  O(d * r), d = len(set(nums))
 // Space: O(r)
 
 // freq table, dp, sliding window
@@ -14,7 +14,6 @@ public:
         vector<int> dp(r + 1);
         dp[0] = 1;
         for (const auto& [x, c] : cnt) {
-            
             for (int i = r; i >= max(r - x + 1, 1); --i) {
                 int curr = 0;
                 for (int j = 0; j < c; ++j) {
