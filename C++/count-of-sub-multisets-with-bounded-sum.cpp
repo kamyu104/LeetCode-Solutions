@@ -1,5 +1,5 @@
 // Time:  O(d * r), d = len(set(nums))
-// Space: O(r)
+// Space: O(d + r)
 
 // freq table, knapsack dp, sliding window, combinatorics
 class Solution {
