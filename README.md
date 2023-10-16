@@ -829,7 +829,7 @@
 2867 | [Count Valid Paths in a Tree](https://leetcode.com/problems/count-valid-paths-in-a-tree/) | [C++](./C++/count-valid-paths-in-a-tree.cpp) [Python](./Python/count-valid-paths-in-a-tree.py) | _O(n)_   | _O(n)_        | Hard         | | Number Theory, `Linear Sieve of Eratosthenes`, DFS, Tree DP, Union Find
 2896 | [Apply Operations to Make Two Strings Equal](https://leetcode.com/problems/apply-operations-to-make-two-strings-equal/) | [C++](./C++/apply-operations-to-make-two-strings-equal.cpp) [Python](./Python/apply-operations-to-make-two-strings-equal.py) | _O(n)_   | _O(1)_        | Medium         | | DP
 2901 | [Longest Unequal Adjacent Groups Subsequence II](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/) | [C++](./C++/longest-unequal-adjacent-groups-subsequence-ii.cpp) [Python](./Python/longest-unequal-adjacent-groups-subsequence-ii.py) | _O(n^2)_ | _O(n)_ | Medium |  | DP, Backtracing, LIS DP
-2902 | [Count of Sub-Multisets With Bounded Sum](https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/) | [C++](./C++/count-of-sub-multisets-with-bounded-sum.cpp) [Python](./Python/count-of-sub-multisets-with-bounded-sum.py) | _O(d * r)_ | _O(r)_ | Hard |  | Freq Table, DP, Sliding Window
+2902 | [Count of Sub-Multisets With Bounded Sum](https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/) | [C++](./C++/count-of-sub-multisets-with-bounded-sum.cpp) [Python](./Python/count-of-sub-multisets-with-bounded-sum.py) | _O(n + d * r)_ | _O(d + r)_ | Hard |  | Freq Table, DP, Sliding Window
 
 <br/>
 <div align="right">
