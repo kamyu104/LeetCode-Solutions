@@ -1,4 +1,4 @@
-# Time:  O(d * r), d = len(set(nums))
+# Time:  O(n + d * r), d = len(set(nums))
 # Space: O(d + r)
 
 import collections
