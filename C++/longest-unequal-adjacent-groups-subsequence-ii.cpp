@@ -6,12 +6,13 @@ class Solution {
 public:
     vector<string> getWordsInLongestSubsequence(int n, vector<string>& words, vector<int>& groups) {
         const auto& check = [&](int i, int j) {
-            if (!(groups[i] != groups[j] && size(words[i]) == size(words[j]))) {
+            const auto& s1 = words[i], &s2 = words[j];
+            if (!(groups[i] != groups[j] && size(s1) == size(s2))) {
                 return false;
             }
             int cnt = 0;
-            for (int k = 0; k < size(words[i]); ++k) {
-                cnt += words[i][k] != words[j][k] ? 1 : 0;
+            for (int k = 0; k < size(s1); ++k) {
+                cnt += s1[k] != s2[k] ? 1 : 0;
                 if (cnt == 2) {
                     return false;
                 }
@@ -43,12 +44,13 @@ class Solution2 {
 public:
     vector<string> getWordsInLongestSubsequence(int n, vector<string>& words, vector<int>& groups) {
         const auto& check = [&](int i, int j) {
-            if (!(groups[i] != groups[j] && size(words[i]) == size(words[j]))) {
+            const auto& s1 = words[i], &s2 = words[j];
+            if (!(groups[i] != groups[j] && size(s1) == size(s2))) {
                 return false;
             }
             int cnt = 0;
-            for (int k = 0; k < size(words[i]); ++k) {
-                cnt += words[i][k] != words[j][k] ? 1 : 0;
+            for (int k = 0; k < size(s1); ++k) {
+                cnt += s1[k] != s2[k] ? 1 : 0;
                 if (cnt == 2) {
                     return false;
                 }
@@ -69,6 +71,52 @@ public:
             result.emplace_back(words[i]);
         }
         reverse(begin(result), end(result));
+        return result;
+    }
+};
+
+// Time:  O(n^2)
+// Space: O(n^2)
+// list dp
+class Solution3 {
+public:
+    vector<string> getWordsInLongestSubsequence(int n, vector<string>& words, vector<int>& groups) {
+        const auto& check = [&](int i, int j) {
+            const auto& s1 = words[i], &s2 = words[j];
+            if (!(groups[i] != groups[j] && size(s1) == size(s2))) {
+                return false;
+            }
+            int cnt = 0;
+            for (int k = 0; k < size(s1); ++k) {
+                cnt += s1[k] != s2[k] ? 1 : 0;
+                if (cnt == 2) {
+                    return false;
+                }
+            }
+            return cnt == 1;
+        };
+
+        vector<vector<int>> dp(n);
+        for (int i = 0; i < n; ++i) {
+            int mx_j = -1;
+            for (int j = 0; j < i; ++j) {
+                if (check(j, i) && (mx_j == -1 || size(dp[mx_j]) < size(dp[j]))) {
+                    mx_j = j;
+                }
+            }
+            if (mx_j != -1) {
+                dp[i] = dp[mx_j];
+            }
+            dp[i].emplace_back(i);
+        }
+        
+        const auto& ans = *max_element(cbegin(dp), cend(dp), [](const auto& a, const auto& b) {
+            return size(a) < size(b);
+        });
+        vector<string> result;
+        for (const auto& i : ans) {
+            result.emplace_back(words[i]);
+        }
         return result;
     }
 };
