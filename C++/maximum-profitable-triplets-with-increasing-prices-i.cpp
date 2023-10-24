@@ -6,6 +6,7 @@ class Solution {
 public:
     int maxProfit(vector<int>& prices, vector<int>& profits) {
         static const int NEG_INF = numeric_limits<int>::min();
+
         vector<int> right(size(prices), NEG_INF);
         set<pair<int, int>> bst;
         for (int i = size(prices) - 1; i >= 0; --i) {
@@ -49,6 +50,7 @@ class Solution2 {
 public:
     int maxProfit(vector<int>& prices, vector<int>& profits) {
         static const int NEG_INF = numeric_limits<int>::min();
+
         vector<int> left(size(prices), NEG_INF);
         set<pair<int, int>> bst;
         for (int i = 0; i < size(prices); ++i) {
