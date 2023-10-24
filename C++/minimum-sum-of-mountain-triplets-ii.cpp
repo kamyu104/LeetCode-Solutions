@@ -1,100 +1,52 @@
-// Time:  O(nlogn)
+// Time:  O(n)
 // Space: O(n)
 
-// prefix sum, sorted list, binary search, mono stack
+// prefix sum
 class Solution {
 public:
-    int maxProfit(vector<int>& prices, vector<int>& profits) {
-        static const int NEG_INF = numeric_limits<int>::min();
-        vector<int> right(size(prices), NEG_INF);
-        set<pair<int, int>> bst;
-        for (int i = size(prices) - 1; i >= 0; --i) {
-            const auto it = bst.lower_bound(pair(-prices[i], 0));
-            if (it != begin(bst)) {
-                right[i] = prev(it)->second;
-            }
-            if (!(it == begin(bst) || prev(it)->second < profits[i])) {
-                continue;
-            }
-            const auto [jt, _] = bst.emplace(-prices[i], profits[i]);
-            while (next(jt) != end(bst) && next(jt)->second <= jt->second) {
-                bst.erase(next(jt));
-            }
+    int minimumSum(vector<int>& nums) {
+        static const int INF = numeric_limits<int>::max();
+
+        vector<int> right(size(nums), INF);
+        for (int i = size(nums) - 1, curr = INF; i >= 0; --i) {
+            right[i] = curr;
+            curr = min(curr, nums[i]);
         }
-        int result = NEG_INF;
-        bst.clear();
-        for (int i = 0; i < size(prices); ++i) {
-            const auto it = bst.lower_bound(pair(prices[i], 0));
-            if (it != begin(bst)) {
-                if (prev(it)->second != NEG_INF && right[i] != NEG_INF) {
-                    result = max(result, prev(it)->second + profits[i] + right[i]);
-                }
+        int result = INF;
+        for (int i = 0, curr = INF; i < size(nums); ++i) {
+            if (curr < nums[i] && nums[i] > right[i]) {
+                result = min(result, curr + nums[i] + right[i]);
             }
-            if (!(it == begin(bst) || prev(it)->second < profits[i])) {
-                continue;
-            }
-            const auto [jt, _] = bst.emplace(prices[i], profits[i]);
-            while (next(jt) != end(bst) && next(jt)->second <= jt->second) {
-                bst.erase(next(jt));
-            }
+            curr = min(curr, nums[i]);
         }
-        return result != NEG_INF ? result : -1;
+        return result != INF ? result : -1;
     }
 };
 
-// Time:  O(nlogn)
+// Time:  O(n)
 // Space: O(n)
-// prefix sum, sorted list, binary search, mono stack
+// prefix sum
 class Solution2 {
 public:
-    int maxProfit(vector<int>& prices, vector<int>& profits) {
-        static const int NEG_INF = numeric_limits<int>::min();
-        vector<int> left(size(prices), NEG_INF);
-        set<pair<int, int>> bst;
-        for (int i = 0; i < size(prices); ++i) {
-            const auto it = bst.lower_bound(pair(prices[i], 0));
-            if (it != begin(bst)) {
-                left[i] = prev(it)->second;
-            }
-            if (it != end(bst) && it->first == prices[i]) {
-                if (!(it->second < profits[i])) {
-                    continue;
-                }
-                bst.erase(it);
-            } else if (!(it == begin(bst) || prev(it)->second < profits[i])) {
-                continue;
-            }
-            const auto [jt, _] = bst.emplace(prices[i], profits[i]);
-            while (next(jt) != end(bst) && next(jt)->second <= jt->second) {
-                bst.erase(next(jt));
+    int minimumSum(vector<int>& nums) {
+        static const int INF = numeric_limits<int>::max();
+
+        vector<int> left(size(nums), INF);
+        for (int i = 0, curr = INF; i < size(nums); ++i) {
+            left[i] = curr;
+            curr = min(curr, nums[i]);
+        }
+        vector<int> right(size(nums), INF);
+        for (int i = size(nums) - 1, curr = INF; i >= 0; --i) {
+            right[i] = curr;
+            curr = min(curr, nums[i]);
+        }
+        int result = INF;
+        for (int i = 0; i < size(nums); ++i) {
+            if (left[i] < nums[i] && nums[i] > right[i]) {
+                result = min(result, left[i] + nums[i] + right[i]);
             }
         }
-        vector<int> right(size(prices), NEG_INF);
-        bst.clear();
-        for (int i = size(prices) - 1; i >= 0; --i) {
-            const auto it = bst.lower_bound(pair(-prices[i], 0));
-            if (it != begin(bst)) {
-                right[i] = prev(it)->second;
-            }
-            if (it != end(bst) && -it->first == prices[i]) {
-                if (!(it->second < profits[i])) {
-                    continue;
-                }
-                bst.erase(it);
-            } else if (!(it == begin(bst) || prev(it)->second < profits[i])) {
-                continue;
-            }
-            const auto [jt, _] = bst.emplace(-prices[i], profits[i]);
-            while (next(jt) != end(bst) && next(jt)->second <= jt->second) {
-                bst.erase(next(jt));
-            }
-        }
-        int result = NEG_INF;
-        for (int i = 0; i < size(profits); ++i) {
-            if (left[i] != NEG_INF && right[i] != NEG_INF) {
-                result = max(result, left[i] + profits[i] + right[i]);
-            }
-        }
-        return result != NEG_INF ? result : -1;
+        return result != INF ? result : -1;
     }
 };
