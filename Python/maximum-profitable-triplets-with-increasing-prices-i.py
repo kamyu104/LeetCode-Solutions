@@ -12,7 +12,8 @@ class Solution(object):
         :type profits: List[int]
         :rtype: int
         """
-        left = [float("-inf")]*len(prices)
+        NEG_INF = float("-inf")
+        left = [NEG_INF]*len(prices)
         sl = SortedList()
         for i in xrange(len(prices)):
             j = sl.bisect_left((prices[i], -1))
@@ -27,7 +28,7 @@ class Solution(object):
             sl.add((prices[i], profits[i]))
             while j+1 < len(sl) and sl[j+1][1] <= sl[j][1]:
                 del sl[j+1]
-        result = float("-inf")
+        result = NEG_INF
         sl = SortedList()
         for i in reversed(xrange(len(prices))):
             j = sl.bisect_left((-prices[i], -1))
@@ -42,7 +43,7 @@ class Solution(object):
             sl.add((-prices[i], profits[i]))
             while j+1 < len(sl) and sl[j+1][1] <= sl[j][1]:
                 del sl[j+1]
-        return result if result != float("-inf") else -1
+        return result if result != NEG_INF else -1
 
 
 # Time:  O(nlogn)
@@ -58,7 +59,8 @@ class Solution2(object):
         :type profits: List[int]
         :rtype: int
         """
-        left = [float("-inf")]*len(prices)
+        NEG_INF = float("-inf")
+        left = [NEG_INF]*len(prices)
         sl = SortedList()
         for i in xrange(len(prices)):
             j = sl.bisect_left((prices[i], -1))
@@ -73,7 +75,7 @@ class Solution2(object):
             sl.add((prices[i], profits[i]))
             while j+1 < len(sl) and sl[j+1][1] <= sl[j][1]:
                 del sl[j+1]
-        right = [float("-inf")]*len(prices)
+        right = [NEG_INF]*len(prices)
         sl = SortedList()
         for i in reversed(xrange(len(prices))):
             j = sl.bisect_left((-prices[i], -1))
@@ -89,4 +91,4 @@ class Solution2(object):
             while j+1 < len(sl) and sl[j+1][1] <= sl[j][1]:
                 del sl[j+1]
         result = max(left[i]+profits[i]+right[i] for i in xrange(len(profits)))
-        return result if result != float("-inf") else -1
+        return result if result != NEG_INF else -1
