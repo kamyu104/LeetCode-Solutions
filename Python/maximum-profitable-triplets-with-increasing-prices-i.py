@@ -19,13 +19,10 @@ class Solution(object):
             j = sl.bisect_left((prices[i],))
             if j-1 >= 0:
                 left[i] = sl[j-1][1]
-            if j < len(sl) and sl[j][0] == prices[i]:
-                if not (sl[j][1] < profits[i]):
-                    continue
-                del sl[j]
-            elif not (j-1 < 0 or sl[j-1][1] < profits[i]):
+            if not (j-1 < 0 or sl[j-1][1] < profits[i]):
                 continue
             sl.add((prices[i], profits[i]))
+            j = sl.bisect_left((prices[i], profits[i]))
             while j+1 < len(sl) and sl[j+1][1] <= sl[j][1]:
                 del sl[j+1]
         result = NEG_INF
@@ -34,13 +31,10 @@ class Solution(object):
             j = sl.bisect_left((-prices[i],))
             if j-1 >= 0:
                 result = max(result, left[i]+profits[i]+sl[j-1][1])
-            if j < len(sl) and -sl[j][0] == prices[i]:
-                if not (sl[j][1] < profits[i]):
-                    continue
-                del sl[j]
-            elif not (j-1 < 0 or sl[j-1][1] < profits[i]):
+            if not (j-1 < 0 or sl[j-1][1] < profits[i]):
                 continue
             sl.add((-prices[i], profits[i]))
+            j = sl.bisect_left((-prices[i], profits[i]))
             while j+1 < len(sl) and sl[j+1][1] <= sl[j][1]:
                 del sl[j+1]
         return result if result != NEG_INF else -1
