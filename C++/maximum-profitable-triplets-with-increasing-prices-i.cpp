@@ -13,12 +13,7 @@ public:
             if (it != begin(bst)) {
                 left[i] = prev(it)->second;
             }
-            if (it != end(bst) && it->first == prices[i]) {
-                if (!(it->second < profits[i])) {
-                    continue;
-                }
-                bst.erase(it);
-            } else if (!(it == begin(bst) || prev(it)->second < profits[i])) {
+            if (!(it == begin(bst) || prev(it)->second < profits[i])) {
                 continue;
             }
             const auto [jt, _] = bst.emplace(prices[i], profits[i]);
@@ -35,12 +30,7 @@ public:
                     result = max(result, left[i] + profits[i] + prev(it)->second);
                 }
             }
-            if (it != end(bst) && -it->first == prices[i]) {
-                if (!(it->second < profits[i])) {
-                    continue;
-                }
-                bst.erase(it);
-            } else if (!(it == begin(bst) || prev(it)->second < profits[i])) {
+            if (!(it == begin(bst) || prev(it)->second < profits[i])) {
                 continue;
             }
             const auto [jt, _] = bst.emplace(-prices[i], profits[i]);
