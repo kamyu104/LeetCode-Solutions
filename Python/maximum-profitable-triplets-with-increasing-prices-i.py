@@ -16,7 +16,7 @@ class Solution(object):
         left = [NEG_INF]*len(prices)
         sl = SortedList()
         for i in xrange(len(prices)):
-            j = sl.bisect_left((prices[i], -1))
+            j = sl.bisect_left((prices[i],))
             if j-1 >= 0:
                 left[i] = sl[j-1][1]
             if j < len(sl) and sl[j][0] == prices[i]:
@@ -31,7 +31,7 @@ class Solution(object):
         result = NEG_INF
         sl = SortedList()
         for i in reversed(xrange(len(prices))):
-            j = sl.bisect_left((-prices[i], -1))
+            j = sl.bisect_left((-prices[i],))
             if j-1 >= 0:
                 result = max(result, left[i]+profits[i]+sl[j-1][1])
             if j < len(sl) and -sl[j][0] == prices[i]:
@@ -63,7 +63,7 @@ class Solution2(object):
         left = [NEG_INF]*len(prices)
         sl = SortedList()
         for i in xrange(len(prices)):
-            j = sl.bisect_left((prices[i], -1))
+            j = sl.bisect_left((prices[i],))
             if j-1 >= 0:
                 left[i] = sl[j-1][1]
             if j < len(sl) and sl[j][0] == prices[i]:
@@ -78,7 +78,7 @@ class Solution2(object):
         right = [NEG_INF]*len(prices)
         sl = SortedList()
         for i in reversed(xrange(len(prices))):
-            j = sl.bisect_left((-prices[i], -1))
+            j = sl.bisect_left((-prices[i],))
             if j-1 >= 0:
                 right[i] = sl[j-1][1]
             if j < len(sl) and -sl[j][0] == prices[i]:
