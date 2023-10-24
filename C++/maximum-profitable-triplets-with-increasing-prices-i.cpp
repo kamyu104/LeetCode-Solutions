@@ -9,7 +9,7 @@ public:
         vector<int> left(size(prices), NEG_INF);
         set<pair<int, int>> bst;
         for (int i = 0; i < size(prices); ++i) {
-            const auto it = bst.lower_bound(pair(prices[i], -1));
+            const auto it = bst.lower_bound(pair(prices[i], 0));
             if (it != begin(bst)) {
                 left[i] = prev(it)->second;
             }
@@ -29,7 +29,7 @@ public:
         int result = NEG_INF;
         bst.clear();
         for (int i = size(prices) - 1; i >= 0; --i) {
-            const auto it = bst.lower_bound(pair(-prices[i], -1));
+            const auto it = bst.lower_bound(pair(-prices[i], 0));
             if (it != begin(bst)) {
                 if (left[i] != NEG_INF && prev(it)->second != NEG_INF) {
                     result = max(result, left[i] + profits[i] + prev(it)->second);
@@ -62,7 +62,7 @@ public:
         vector<int> left(size(prices), NEG_INF);
         set<pair<int, int>> bst;
         for (int i = 0; i < size(prices); ++i) {
-            const auto it = bst.lower_bound(pair(prices[i], -1));
+            const auto it = bst.lower_bound(pair(prices[i], 0));
             if (it != begin(bst)) {
                 left[i] = prev(it)->second;
             }
@@ -82,7 +82,7 @@ public:
         vector<int> right(size(prices), NEG_INF);
         bst.clear();
         for (int i = size(prices) - 1; i >= 0; --i) {
-            const auto it = bst.lower_bound(pair(-prices[i], -1));
+            const auto it = bst.lower_bound(pair(-prices[i], 0));
             if (it != begin(bst)) {
                 right[i] = prev(it)->second;
             }
