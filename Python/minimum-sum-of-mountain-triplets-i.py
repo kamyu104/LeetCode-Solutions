@@ -8,7 +8,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        INF = float("inf")        
+        INF = float("inf")
+
         right = [INF]*len(nums)
         curr = INF
         for i in reversed(xrange(len(nums))):
@@ -32,6 +33,7 @@ class Solution2(object):
         :rtype: int
         """
         INF = float("inf")
+
         left = [INF]*len(nums)
         curr = INF
         for i in xrange(len(nums)):
