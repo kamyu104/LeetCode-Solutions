@@ -13,6 +13,7 @@ class Solution(object):
         :rtype: int
         """
         NEG_INF = float("-inf")
+
         right = [NEG_INF]*len(prices)
         sl = SortedList()
         for i in reversed(xrange(len(prices))):
@@ -54,6 +55,7 @@ class Solution2(object):
         :rtype: int
         """
         NEG_INF = float("-inf")
+
         left = [NEG_INF]*len(prices)
         sl = SortedList()
         for i in xrange(len(prices)):
