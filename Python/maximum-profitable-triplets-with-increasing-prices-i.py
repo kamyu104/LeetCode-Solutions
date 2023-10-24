@@ -13,28 +13,28 @@ class Solution(object):
         :rtype: int
         """
         NEG_INF = float("-inf")
-        left = [NEG_INF]*len(prices)
-        sl = SortedList()
-        for i in xrange(len(prices)):
-            j = sl.bisect_left((prices[i],))
-            if j-1 >= 0:
-                left[i] = sl[j-1][1]
-            if not (j-1 < 0 or sl[j-1][1] < profits[i]):
-                continue
-            sl.add((prices[i], profits[i]))
-            j = sl.bisect_left((prices[i], profits[i]))
-            while j+1 < len(sl) and sl[j+1][1] <= sl[j][1]:
-                del sl[j+1]
-        result = NEG_INF
+        right = [NEG_INF]*len(prices)
         sl = SortedList()
         for i in reversed(xrange(len(prices))):
             j = sl.bisect_left((-prices[i],))
             if j-1 >= 0:
-                result = max(result, left[i]+profits[i]+sl[j-1][1])
+                right[i] = sl[j-1][1]
             if not (j-1 < 0 or sl[j-1][1] < profits[i]):
                 continue
             sl.add((-prices[i], profits[i]))
             j = sl.bisect_left((-prices[i], profits[i]))
+            while j+1 < len(sl) and sl[j+1][1] <= sl[j][1]:
+                del sl[j+1]
+        result = NEG_INF
+        sl = SortedList()
+        for i in xrange(len(prices)):
+            j = sl.bisect_left((prices[i],))
+            if j-1 >= 0:
+                result = max(result, sl[j-1][1]+profits[i]+right[i])
+            if not (j-1 < 0 or sl[j-1][1] < profits[i]):
+                continue
+            sl.add((prices[i], profits[i]))
+            j = sl.bisect_left((prices[i], profits[i]))
             while j+1 < len(sl) and sl[j+1][1] <= sl[j][1]:
                 del sl[j+1]
         return result if result != NEG_INF else -1
