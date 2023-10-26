@@ -1,5 +1,5 @@
 // Time:  O((m * n) * log(m * n))
-// Space: O(m * n)
+// Space: O((m * n) * log(m * n))
 
 // flood fill, persistent union find
 class Solution {
