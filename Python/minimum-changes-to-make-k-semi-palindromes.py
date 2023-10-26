@@ -34,7 +34,7 @@ class Solution(object):
         return dp3[len(s)]
 
 
-# Time:  O(n * nlogn  * n + n^2 * k) = O(n^3 * logn + n^2 * k)
+# Time:  O(n * nlogn  * n + n^2 * k) = O(n^3 * logn)
 # Space: O(nlogn + n * k)
 # number theory, dp
 class Solution2(object):
