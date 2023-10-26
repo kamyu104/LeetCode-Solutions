@@ -1,7 +1,7 @@
 # Time:  O(logn)
 # Space: O(1)
 
-# dp, matrix expo
+# dp, matrix exponentiation
 class Solution(object):
     def numberOfWays(self, n, m, k, source, dest):
         """
