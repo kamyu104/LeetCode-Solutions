@@ -121,7 +121,6 @@ public:
         for (int i = size(prices) - 1; i >= 0; --i) {
             right[i] = st2.query(price_to_idx[prices[i]] + 1, size(price_to_idx) - 1);
             st2.update(price_to_idx[prices[i]], profits[i]);
-            cout << right[i] << endl;
         }
         int result = NEG_INF;
         vector<int> left(size(prices), NEG_INF);
@@ -208,7 +207,6 @@ public:
         for (int i = size(prices) - 1; i >= 0; --i) {
             right[i] = st2.query(price_to_idx[prices[i]] + 1, size(price_to_idx) - 1);
             st2.update(price_to_idx[prices[i]], profits[i]);
-            cout << right[i] << endl;
         }
         int result = NEG_INF;
         for (int i = 0; i < size(profits); ++i) {
