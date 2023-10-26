@@ -94,9 +94,8 @@ class Solution(object):
             lookup = set()
             for dr, dc in DIRECTIONS:
                 nr, nc = r+dr, c+dc
-                if not (0 <= nr < R and 0 <= nc < C and grid[nr][nc] == grid[r][c]):
-                    continue
-                lookup.add(uf.find_set(nr*C+nc))
+                if  0 <= nr < R and 0 <= nc < C and grid[nr][nc] == grid[r][c]:
+                    lookup.add(uf.find_set(nr*C+nc))
             return len(lookup) != 1
 
         def dfs(left, right):
