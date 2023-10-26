@@ -1,7 +1,7 @@
 // Time:  O(logn)
 // Space: O(1)
 
-// dp, matrix expo
+// dp, matrix exponentiation
 class Solution {
 public:
     int numberOfWays(int n, int m, int k, vector<int>& source, vector<int>& dest) {
