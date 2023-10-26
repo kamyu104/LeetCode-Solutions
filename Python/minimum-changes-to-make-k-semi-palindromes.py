@@ -1,4 +1,4 @@
-# Time: O(n * nlogn + n^3 + n^2 * k) = O(n^3)
+# Time:  O(n * nlogn + n^3 + n^2 * k) = O(n^3)
 # Space: O(n * nlogn) = O(n^2 * logn)
 
 import collections
@@ -42,9 +42,9 @@ class Solution2(object):
         :type k: int
         :rtype: int
         """
-        def min_dist(left, right):
+        def min_dist(left, right):  # Time: O(nlogn)
             return min(sum(s[left+i] != s[right-((i//d+1)*d-1)+(i%d)] for i in xrange((right-left+1)//2))
- for d in divisors[right-left+1])  # Time: O(nlogn)
+ for d in divisors[right-left+1])
 
         divisors = [[] for _ in xrange(len(s)+1)]
         for i in xrange(1, len(divisors)):  # Time: O(nlogn), Space: O(nlogn)
