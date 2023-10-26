@@ -1,11 +1,39 @@
+# Time:  O(n * nlogn  * n + n^2 * k) = O(n^3 * logn + n^2 * k)
+# Space: O(nlogn + n * k)
+
+# number theory, dp
+class Solution(object):
+    def minimumChanges(self, s, k):
+        """
+        :type s: str
+        :type k: int
+        :rtype: int
+        """
+        def min_dist(left, right):
+            return min(sum(s[left+i] != s[right-((i//d+1)*d-1)+(i%d)] for i in xrange((right-left+1)//2))
+ for d in divisors[right-left+1])
+
+        divisors = [[] for _ in xrange(len(s)+1)]
+        for i in xrange(1, len(divisors)):
+            for j in xrange(i+i, len(divisors), i):
+                divisors[j].append(i)
+        dp = [[len(s)]*(k+1) for _ in xrange(len(s)+1)]
+        dp[0][0] = 0
+        for i in xrange(len(s)):
+            for j in xrange(i):
+                c = min_dist(j, i)
+                for l in xrange(k):
+                    dp[i+1][l+1] = min(dp[i+1][l+1], dp[j][l]+c)
+        return dp[len(s)][k]
+
+
 # Time:  O(n * nlogn * n + n^2 * k) = O(n^3 * logn + n^2 * k)
 # Space: O(n * nlogn + n * k) = O(n^2 * logn + n * k)
-
 import collections
 
 
 # number theory, dp
-class Solution(object):
+class Solution2(object):
     def minimumChanges(self, s, k):
         """
         :type s: str
