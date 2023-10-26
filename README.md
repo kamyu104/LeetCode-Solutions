@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2906%20%2F%202906-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2912%20%2F%202912-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -172,6 +172,8 @@
 2903 | [Find Indices With Index and Value Difference I](https://leetcode.com/problems/find-indices-with-index-and-value-difference-i/) | [C++](./C++/find-indices-with-index-and-value-difference-i.cpp) [Python](./Python/find-indices-with-index-and-value-difference-i.py) | _O(n)_ | _O(1)_ | Easy | | Prefix Sum
 2905 | [Find Indices With Index and Value Difference II](https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/) | [C++](./C++/find-indices-with-index-and-value-difference-ii.cpp) [Python](./Python/find-indices-with-index-and-value-difference-ii.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
 2906 | [Construct Product Matrix](https://leetcode.com/problems/construct-product-matrix/) | [C++](./C++/construct-product-matrix.cpp) [Python](./Python/construct-product-matrix.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Prefix Sum
+2908 | [Minimum Sum of Mountain Triplets I](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-i/) | [C++](./C++/minimum-sum-of-mountain-triplets-i.cpp) [Python](./Python/minimum-sum-of-mountain-triplets-i.py) | _O(n)_ | _O(n)_ | Easy | | Prefix Sum
+2909 | [Minimum Sum of Mountain Triplets II](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/) | [C++](./C++/minimum-sum-of-mountain-triplets-ii.cpp) [Python](./Python/minimum-sum-of-mountain-triplets-ii.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -655,6 +657,7 @@
 2426 | [Number of Pairs Satisfying Inequality](https://leetcode.com/problems/number-of-pairs-satisfying-inequality/)|[C++](./C++/number-of-pairs-satisfying-inequality.cpp) [Python](./Python/number-of-pairs-satisfying-inequality.py) | _O(nlogn)_      | _O(n)_          | Hard         | | Merge Sort, Two Pointers, BIT, Fenwick Tree, Coordinate Compression, Sorted List, Ordered Set, Binary Search
 2689 | [Extract Kth Character From The Rope Tree](https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/)|[C++](./C++/extract-kth-character-from-the-rope-tree.cpp) [Python](./Python/extract-kth-character-from-the-rope-tree.py) | _O(h)_      | _O(1)_          | Medium         | 🔒 | BST
 2817 | [Minimum Absolute Difference Between Elements With Constraint](https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/) | [C++](./C++/minimum-absolute-difference-between-elements-with-constraint.cpp) [Python](./Python/minimum-absolute-difference-between-elements-with-constraint.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sorted List, BST, Binary Search |
+2907 | [Maximum Profitable Triplets With Increasing Prices I](https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-i/) | [C++](./C++/maximum-profitable-triplets-with-increasing-prices-i.cpp) [Python](./Python/maximum-profitable-triplets-with-increasing-prices-i.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, Sorted List, BST, Binary Search, Mono Stack |
 
 <br/>
 <div align="right">
@@ -830,6 +833,8 @@
 2896 | [Apply Operations to Make Two Strings Equal](https://leetcode.com/problems/apply-operations-to-make-two-strings-equal/) | [C++](./C++/apply-operations-to-make-two-strings-equal.cpp) [Python](./Python/apply-operations-to-make-two-strings-equal.py) | _O(n)_   | _O(1)_        | Medium         | | DP
 2901 | [Longest Unequal Adjacent Groups Subsequence II](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/) | [C++](./C++/longest-unequal-adjacent-groups-subsequence-ii.cpp) [Python](./Python/longest-unequal-adjacent-groups-subsequence-ii.py) | _O(n^2)_ | _O(n)_ | Medium |  | DP, Backtracing, LIS DP
 2902 | [Count of Sub-Multisets With Bounded Sum](https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/) | [C++](./C++/count-of-sub-multisets-with-bounded-sum.cpp) [Python](./Python/count-of-sub-multisets-with-bounded-sum.py) | _O(n + d * r)_ | _O(d + r)_ | Hard |  | Freq Table, DP, Sliding Window, Combinatorics
+2911 | [Minimum Changes to Make K Semi-palindromes](https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/) | [C++](./C++/minimum-changes-to-make-k-semi-palindromes.cpp) [Python](./Python/minimum-changes-to-make-k-semi-palindromes.py) | _O(n^3)_ | _O(n^2 * logn)_ | Hard |  | Number Theory, DP
+2912 | [Number of Ways to Reach Destination in the Grid](https://leetcode.com/problems/number-of-ways-to-reach-destination-in-the-grid/) | [C++](./C++/number-of-ways-to-reach-destination-in-the-grid.cpp) [Python](./Python/number-of-ways-to-reach-destination-in-the-grid.py) | _O(logn)_ | _O(1)_ | Hard | 🔒 | DP, Matrix Exponentiation
 
 <br/>
 <div align="right">
@@ -948,7 +953,7 @@
 2895 | [Minimum Processing Time](https://leetcode.com/problems/minimum-processing-time/) | [C++](./C++/minimum-processing-time.cpp) [Python](./Python/minimum-processing-time.py) | _O(nlogn)_ | _O(1)_ | Medium |  | Sort, Greedy
 2897 | [Apply Operations on Array to Maximize Sum of Squares](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/) | [C++](./C++/apply-operations-on-array-to-maximize-sum-of-squares.cpp) [Python](./Python/apply-operations-on-array-to-maximize-sum-of-squares.py) | _O(nlogr)_ | _O(logr)_ | Hard |  | Bit Manipulation, Greedy, Freq Table
 2900 | [Longest Unequal Adjacent Groups Subsequence I](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-i/) | [C++](./C++/longest-unequal-adjacent-groups-subsequence-i.cpp) [Python](./Python/longest-unequal-adjacent-groups-subsequence-i.py) | _O(n)_ | _O(1)_ | Medium |  | Greedy
-
+2910 | [Minimum Number of Groups to Create a Valid Assignment](https://leetcode.com/problems/minimum-number-of-groups-to-create-a-valid-assignment/) | [C++](./C++/minimum-number-of-groups-to-create-a-valid-assignment.cpp) [Python](./Python/minimum-number-of-groups-to-create-a-valid-assignment.py) | _O(n)_ | _O(n)_ | Medium |  | Linear Search, Greedy, Math
 
 <br/>
 <div align="right">
