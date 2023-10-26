@@ -4,7 +4,7 @@
 # Template: https://github.com/kamyu104/MetaHackerCup-2022/blob/main/Final%20Round/tile_transposing.py3
 class PersistentUnionFind(object):  # Time: O(n * alpha(n)), Space: O(n)
     def __init__(self, n):
-        self.set = list(xrange(n))
+        self.set = range(n)
         self.size = [1]*n
         self.snapshots = []  # added
         self.undos = []  # added
