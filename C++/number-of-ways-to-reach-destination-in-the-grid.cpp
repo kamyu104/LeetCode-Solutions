@@ -56,7 +56,7 @@ private:
         return result;
     }
 
-    const int MOD = 1e9 + 7;
+    static const int MOD = 1e9 + 7;
 };
 
 // Time:  O(n)
