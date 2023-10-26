@@ -160,8 +160,8 @@ private:
     private:
         vector<int> set_;
         vector<int> size_;
-        vector<pair<int, int>> undos_;
-        vector<int> snapshots_;
+        vector<pair<int, int>> undos_;  // added
+        vector<int> snapshots_;  // added
     };
 };
 
