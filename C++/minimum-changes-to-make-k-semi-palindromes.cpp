@@ -1,4 +1,4 @@
-// Time:  O(n * nlogn + n^2 * k) = O(n^2 * logn + n^2 * k)
+// Time:  O(n * nlogn * n + n^2 * k) = O(n^3 * logn + n^2 * k)
 // Space: O(n * nlogn + n * k) = O(n^2 * logn + n * k)
 
 // number theory, dp
