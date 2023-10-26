@@ -1,4 +1,4 @@
-# Time: O(n * nlogn + n^3 + n^2 * k) = O(n^3 + n^2 * k)
+# Time: O(n * nlogn + n^3 + n^2 * k) = O(n^3)
 # Space: O(n * nlogn) = O(n^2 * logn)
 
 import collections
