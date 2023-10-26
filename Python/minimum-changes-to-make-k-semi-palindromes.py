@@ -28,7 +28,7 @@ class Solution(object):
         for l in xrange(k):  # Time: O(k * n^2), Space: O(n)
             new_dp3 = [len(s)]*(len(s)+1)
             for i in xrange(len(s)):
-                for j in xrange((l-1)*2, i):  # optimized for the fact that the length of semi-palindrome is at least 2
+                for j in xrange(l*2, i):  # optimized for the fact that the length of semi-palindrome is at least 2
                     new_dp3[i+1]= min(new_dp3[i+1], dp3[j]+dp2[j][i])
             dp3 = new_dp3
         return dp3[len(s)]
