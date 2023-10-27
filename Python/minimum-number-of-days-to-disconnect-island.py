@@ -73,7 +73,6 @@ class Solution(object):
                     island_cnt += 1
                     floodfill(grid, i, j, lookup)
             return island_cnt
-    
 
         R, C = len(grid), len(grid[0])
         if count_islands(grid) != 1:
