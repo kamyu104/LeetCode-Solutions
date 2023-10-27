@@ -1,8 +1,6 @@
 # Time:  O(m * n)
 # Space: O(m * n)
 
-from functools import partial
-
 # template: https://github.com/kamyu104/GoogleCodeJam-Farewell-Rounds/blob/main/Round%20B/railroad_maintenance.py3
 # Reference: https://en.wikipedia.org/wiki/Biconnected_component#Algorithms
 def iter_get_articulation_points(graph, v):  # modified
