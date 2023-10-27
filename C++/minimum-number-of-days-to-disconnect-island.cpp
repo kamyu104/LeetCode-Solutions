@@ -53,7 +53,6 @@ vector<int> iter_get_articulation_points(const auto& graph, int v) {  // modifie
     return cutpoints;
 }
 
-
 // flood fill, tarjan's algorithm, articulation points
 class Solution {
 public:
