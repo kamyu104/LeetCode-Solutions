@@ -78,8 +78,7 @@ class Solution(object):
         if count_islands(grid) != 1:
             return 0
         adj = [[] for _ in xrange(R*C)]
-        idx = -1
-        cnt = 0
+        cnt, idx = 0, -1
         for i in xrange(R):
             for j in xrange(C):
                 if grid[i][j] == 0:
