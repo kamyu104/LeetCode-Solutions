@@ -42,6 +42,7 @@ def iter_get_articulation_points(graph, v):  # modified
     iter_dfs(v, -1)  # modified
     return cutpoints
 
+
 # flood fill, tarjan's algorithm, articulation points
 class Solution(object):
     def minDays(self, grid):
