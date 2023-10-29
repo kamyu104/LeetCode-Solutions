@@ -32,20 +32,19 @@ class Solution(object):
                 return ret
 
         def update(accu, d):
-            accu = (accu+d*(len(nums)*(2*len(lookup)-1))) % MOD
             i = lookup.bisect_left(idxs[x][-1])
-            accu = (accu + d*(-(2*i+1)*lookup[i] - 2*(bit.query(len(nums)-1)-bit.query(idxs[x][-1])))) % MOD
+            accu = (accu + d*(len(nums)*(2*len(lookup)-1) - (2*i+1)*lookup[i] - 2*(bit.query(len(nums)-1)-bit.query(idxs[x][-1])))) % MOD
             bit.add(idxs[x][-1], d*idxs[x][-1])
             return accu, i
 
         idxs = collections.defaultdict(list)
         for i in reversed(xrange(len(nums))):
             idxs[nums[i]].append(i)
-        result = accu = 0
+        result = 0
         lookup = SortedList(idxs[x][-1] for x in idxs)
+        accu = (len(nums)*len(lookup)**2) % MOD
         for i, x in enumerate(lookup):
-            accu = (accu+(-(2*i+1)*x)) % MOD
-        accu = (accu+(len(nums)*len(lookup)**2)) % MOD
+            accu = (accu-(2*i+1)*x) % MOD
         bit = BIT(len(nums))
         for x in lookup:
             bit.add(x, x)
