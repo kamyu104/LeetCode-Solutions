@@ -32,8 +32,8 @@ class Solution(object):
                 return ret
 
         def update(accu, d):
-            i = lookup.bisect_left(idxs[x][-1])
-            accu = (accu + d*(len(nums)*(2*len(lookup)-1) - (2*i+1)*lookup[i] - 2*(bit.query(len(nums)-1)-bit.query(idxs[x][-1])))) % MOD
+            i = sl.bisect_left(idxs[x][-1])
+            accu = (accu + d*(len(nums)*(2*len(sl)-1) - (2*i+1)*sl[i] - 2*(bit.query(len(nums)-1)-bit.query(idxs[x][-1])))) % MOD
             bit.add(idxs[x][-1], d*idxs[x][-1])
             return accu
 
@@ -41,21 +41,21 @@ class Solution(object):
         for i in reversed(xrange(len(nums))):
             idxs[nums[i]].append(i)
         result = 0
-        lookup = SortedList(idxs[x][-1] for x in idxs)
-        accu = (len(nums)*len(lookup)**2) % MOD
-        for i, x in enumerate(lookup):
+        sl = SortedList(idxs[x][-1] for x in idxs)
+        accu = (len(nums)*len(sl)**2) % MOD
+        for i, x in enumerate(sl):
             accu = (accu-(2*i+1)*x) % MOD
         bit = BIT(len(nums))
-        for x in lookup:
+        for x in sl:
             bit.add(x, x)
         for x in nums:
             result = (result+accu) % MOD  # accu = sum(count(i, k) for k in range(i, len(nums)))
             accu = update(accu, -1)
-            lookup.pop(0)
+            del sl[0]
             idxs[x].pop()
             if not idxs[x]:
                 continue
-            lookup.add(idxs[x][-1])
+            sl.add(idxs[x][-1])
             accu = update(accu, +1)
         assert(accu == 0)
         return result
@@ -150,15 +150,15 @@ class Solution2(object):
                 return self.query_fn(left, right)
 
         result = accu = 0
-        lookup = {}
+        sl = {}
         st = SegmentTree(len(nums))
         for i in xrange(len(nums)):
-            j = lookup[nums[i]] if nums[i] in lookup else -1
+            j = sl[nums[i]] if nums[i] in sl else -1
             # sum(count(k, i)^2 for k in range(i+1)) - sum(count(k, i-1)^2 for k in range(i))
             # = sum(2*count(k, i-1)+1 for k in range(j+1, i+1))
             # = (i-j) + sum(2*count(k, i-1) for k in range(j+1, i+1))
             accu = (accu+((i-j)+2*max(st.query(j+1, i), 0)))%MOD
             result = (result+accu)%MOD
             st.update(j+1, i, 1)  # count(k, i) = count(k, i-1)+(1 if k >= j+1 else 0) for k in range(i+1)
-            lookup[nums[i]] = i
+            sl[nums[i]] = i
         return result
