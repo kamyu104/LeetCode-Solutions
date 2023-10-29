@@ -52,10 +52,11 @@ class Solution(object):
             result = (result+accu) % MOD  # accu = sum(count(i, k) for k in range(i, len(nums)))
             accu, i = update(accu, -1)
             lookup.pop(i)
+            accu = (accu-(len(nums)*(2*len(lookup)+1))) % MOD
             idxs[x].pop()
             if not idxs[x]:
-                accu = (accu-(len(nums)*(2*len(lookup)+1))) % MOD
                 continue
+            accu = (accu+(len(nums)*(2*len(lookup)+1))) % MOD
             lookup.add(idxs[x][-1])
             accu, _ = update(accu, +1)
         assert(accu == 0)
