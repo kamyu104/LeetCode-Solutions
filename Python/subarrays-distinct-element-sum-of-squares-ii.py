@@ -1,8 +1,71 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-# dp, segment tree, math
+import collections
+from sortedcontainers import SortedList
+
+
+# bit, fenwick tree, math
 class Solution(object):
+    def sumCounts(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        MOD = 10**9+7
+        class BIT(object):  # 0-indexed.
+            def __init__(self, n):
+                self.__bit = [0]*(n+1)  # Extra one for dummy node.
+
+            def add(self, i, val):
+                i += 1  # Extra one for dummy node.
+                while i < len(self.__bit):
+                    self.__bit[i] = (self.__bit[i]+val) % MOD
+                    i += (i & -i)
+
+            def query(self, i):
+                i += 1  # Extra one for dummy node.
+                ret = 0
+                while i > 0:
+                    ret = (ret+self.__bit[i]) % MOD
+                    i -= (i & -i)
+                return ret
+
+        def update(accu, d):
+            i = lookup.bisect_left(idxs[x][-1])
+            accu = (accu + d*((2*i+1)*lookup[i] + 2*(bit.query(len(nums)-1)-bit.query(idxs[x][-1])))) % MOD
+            bit.add(idxs[x][-1], -d*idxs[x][-1])
+            return accu, i
+
+        idxs = collections.defaultdict(list)
+        for i in reversed(xrange(len(nums))):
+            idxs[nums[i]].append(i)
+        result = accu = 0
+        lookup = SortedList(idxs[x][-1] for x in idxs)
+        for i, x in enumerate(lookup):
+            accu = (accu-((2*i+1)*x)) % MOD
+        accu = (accu+(len(nums)*len(lookup)**2)) % MOD
+        bit = BIT(len(nums))
+        for x in lookup:
+            bit.add(x, x)
+        for x in nums:
+            result = (result+accu) % MOD  # accu = sum(count(i, k) for k in range(i, len(nums)))
+            accu, i = update(accu, +1)
+            lookup.pop(i)
+            idxs[x].pop()
+            if not idxs[x]:
+                accu = (accu-(len(nums)*(2*len(lookup)+1))) % MOD
+                continue
+            lookup.add(idxs[x][-1])
+            accu, _ = update(accu, -1)
+        assert(accu == 0)
+        return result
+
+
+# Time:  O(nlogn)
+# Space: O(n)
+# dp, segment tree, math
+class Solution2(object):
     def sumCounts(self, nums):
         """
         :type nums: List[int]
@@ -29,7 +92,7 @@ class Solution(object):
                 self.count = [1]*len(self.tree)  # added
                 for i in reversed(xrange(1, self.base)):  # added
                     self.count[i] = self.count[i<<1] + self.count[(i<<1)+1]
-        
+
             def __apply(self, x, val):
                 self.tree[x] = self.update_fn(self.tree[x], val*self.count[x])  # modified
                 if x < self.base:
@@ -50,7 +113,7 @@ class Solution(object):
                         self.tree[x] = self.query_fn(self.tree[x<<1], self.tree[(x<<1)+1])
                         if self.lazy[x] is not None:
                             self.tree[x] = self.update_fn(self.tree[x], self.lazy[x]*self.count[x])  # modified
-        
+
                 L += self.base
                 R += self.base
                 # self.__push(L)  # enable if range assignment
@@ -67,7 +130,7 @@ class Solution(object):
                     R >>= 1
                 pull(L0)
                 pull(R0)
-            
+
             def query(self, L, R):
                 if L > R:
                     return None
@@ -95,7 +158,7 @@ class Solution(object):
             # sum(count(k, i)^2 for k in range(i+1)) - sum(count(k, i-1)^2 for k in range(i))
             # = sum(2*count(k, i-1)+1 for k in range(j+1, i+1))
             # = (i-j) + sum(2*count(k, i-1) for k in range(j+1, i+1))
-            accu = (accu+((i-j)+2*max(st.query(j+1, i), 0)))%MOD 
+            accu = (accu+((i-j)+2*max(st.query(j+1, i), 0)))%MOD
             result = (result+accu)%MOD
             st.update(j+1, i, 1)  # count(k, i) = count(k, i-1)+(1 if k >= j+1 else 0) for k in range(i+1)
             lookup[nums[i]] = i
