@@ -5,7 +5,7 @@ import collections
 from sortedcontainers import SortedList
 
 
-# bit, fenwick tree, math
+# bit, fenwick tree, sorted list, math
 class Solution(object):
     def sumCounts(self, nums):
         """
