@@ -35,7 +35,7 @@ class Solution(object):
             i = lookup.bisect_left(idxs[x][-1])
             accu = (accu + d*(len(nums)*(2*len(lookup)-1) - (2*i+1)*lookup[i] - 2*(bit.query(len(nums)-1)-bit.query(idxs[x][-1])))) % MOD
             bit.add(idxs[x][-1], d*idxs[x][-1])
-            return accu, i
+            return accu
 
         idxs = collections.defaultdict(list)
         for i in reversed(xrange(len(nums))):
@@ -50,13 +50,13 @@ class Solution(object):
             bit.add(x, x)
         for x in nums:
             result = (result+accu) % MOD  # accu = sum(count(i, k) for k in range(i, len(nums)))
-            accu, i = update(accu, -1)
-            lookup.pop(i)
+            accu = update(accu, -1)
+            lookup.pop(0)
             idxs[x].pop()
             if not idxs[x]:
                 continue
             lookup.add(idxs[x][-1])
-            accu, _ = update(accu, +1)
+            accu = update(accu, +1)
         assert(accu == 0)
         return result
 
