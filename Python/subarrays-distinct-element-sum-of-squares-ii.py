@@ -33,7 +33,7 @@ class Solution(object):
 
         def update(accu, d):
             i = sl.bisect_left(idxs[x][-1])
-            accu = (accu + d*(len(nums)*(2*len(sl)-1) - (2*i+1)*sl[i] - 2*(bit.query(len(nums)-1)-bit.query(idxs[x][-1])))) % MOD
+            accu = (accu + d*(len(nums)*(2*len(sl)-1) - (2*i+1)*idxs[x][-1] - 2*(bit.query(len(nums)-1)-bit.query(idxs[x][-1])))) % MOD
             bit.add(idxs[x][-1], d*idxs[x][-1])
             return accu
 
