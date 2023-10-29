@@ -77,7 +77,7 @@ class SegmentTree(object):
         return self.query_fn(left, right)
 
 
-# segment tree, math
+# dp, segment tree, math
 class Solution(object):
     def sumCounts(self, nums):
         """
