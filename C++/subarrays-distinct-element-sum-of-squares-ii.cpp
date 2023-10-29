@@ -8,8 +8,8 @@ public:
         static const int MOD = 1e9 + 7;
 
         int result = 0, accu = 0;
-        SegmentTree st(size(nums));
         unordered_map<int, int> lookup;
+        SegmentTree st(size(nums));
         for (int i = 0; i < size(nums); ++i) {
             const int j = lookup.count(nums[i]) ? lookup[nums[i]] : -1;
             // sum(count(k, i)^2 for k in range(i+1)) - sum(count(k, i-1)^2 for k in range(i))
@@ -128,8 +128,8 @@ public:
         };
 
         int result = 0, accu = 0;
-        SegmentTree<int> st(size(nums), sum, sum);
         unordered_map<int, int> lookup;
+        SegmentTree<int> st(size(nums), sum, sum);
         for (int i = 0; i < size(nums); ++i) {
             const int j = lookup.count(nums[i]) ? lookup[nums[i]] : -1;
             // sum(count(k, i)^2 for k in range(i+1)) - sum(count(k, i-1)^2 for k in range(i))
