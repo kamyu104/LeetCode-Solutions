@@ -81,7 +81,7 @@ private:
 
     private:
         void apply(int x, const int val) {
-            tree_[x] = (tree_[x] + val * count_[x]) % MOD;  // modified
+            tree_[x] = (tree_[x] + static_cast<int64_t>(val) * count_[x]) % MOD;  // modified
             if (x < base_) {
                 lazy_[x] = (lazy_[x] + val) % MOD;
             }
@@ -92,7 +92,7 @@ private:
                 x >>= 1;
                 tree_[x] = (tree_[x << 1] + tree_[(x << 1) + 1]) % MOD;
                 if (lazy_[x]) {
-                    tree_[x] = (tree_[x] + lazy_[x] * count_[x]) % MOD;  // modified
+                    tree_[x] = (tree_[x] + static_cast<int64_t>(lazy_[x]) * count_[x]) % MOD;  // modified
                 }
             }
         }
@@ -203,7 +203,7 @@ private:
 
     private:
         void apply(int x, const T val) {
-            tree_[x] = update_fn_(tree_[x], val * count_[x]);  // modified
+            tree_[x] = update_fn_(tree_[x], (static_cast<int64_t>(val) * count_[x]) % MOD);  // modified
             if (x < base_) {
                 lazy_[x] = update_fn_(lazy_[x], val);
             }
@@ -214,7 +214,7 @@ private:
                 x >>= 1;
                 tree_[x] = query_fn_(tree_[x << 1], tree_[(x << 1) + 1]);
                 if (lazy_[x]) {
-                    tree_[x] = update_fn_(tree_[x], lazy_[x] * count_[x]);  // modified
+                    tree_[x] = update_fn_(tree_[x], (static_cast<int64_t>(lazy_[x]) * count_[x]) % MOD);  // modified
                 }
             }
         }
