@@ -36,7 +36,7 @@ class Solution(object):
                     self.lazy[x] = self.update_fn(self.lazy[x], val)
 
             def __push(self, x):
-                for n in reversed(xrange(1, self.base.bit_length())):
+                for n in reversed(xrange(1, x.bit_length())):
                     y = x>>n
                     if self.lazy[y] is not None:
                         self.__apply(y<<1, self.lazy[y])
