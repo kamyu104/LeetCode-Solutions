@@ -33,8 +33,8 @@ class Solution(object):
 
         def update(accu, d):
             i = lookup.bisect_left(idxs[x][-1])
-            accu = (accu + d*((2*i+1)*lookup[i] + 2*(bit.query(len(nums)-1)-bit.query(idxs[x][-1])))) % MOD
-            bit.add(idxs[x][-1], -d*idxs[x][-1])
+            accu = (accu + d*(-(2*i+1)*lookup[i] - 2*(bit.query(len(nums)-1)-bit.query(idxs[x][-1])))) % MOD
+            bit.add(idxs[x][-1], d*idxs[x][-1])
             return accu, i
 
         idxs = collections.defaultdict(list)
@@ -43,21 +43,21 @@ class Solution(object):
         result = accu = 0
         lookup = SortedList(idxs[x][-1] for x in idxs)
         for i, x in enumerate(lookup):
-            accu = (accu-((2*i+1)*x)) % MOD
+            accu = (accu+(-(2*i+1)*x)) % MOD
         accu = (accu+(len(nums)*len(lookup)**2)) % MOD
         bit = BIT(len(nums))
         for x in lookup:
             bit.add(x, x)
         for x in nums:
             result = (result+accu) % MOD  # accu = sum(count(i, k) for k in range(i, len(nums)))
-            accu, i = update(accu, +1)
+            accu, i = update(accu, -1)
             lookup.pop(i)
             idxs[x].pop()
             if not idxs[x]:
                 accu = (accu-(len(nums)*(2*len(lookup)+1))) % MOD
                 continue
             lookup.add(idxs[x][-1])
-            accu, _ = update(accu, -1)
+            accu, _ = update(accu, +1)
         assert(accu == 0)
         return result
 
