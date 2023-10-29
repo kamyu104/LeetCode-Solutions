@@ -2,7 +2,7 @@
 # Space: O(n)
 
 # Template:
-# https://github.com/kamyu104/LeetCode-Solutions/blob/master/Python/longest-substring-of-one-repeating-character.py
+# https://github.com/kamyu104/LeetCode-Solutions/blob/master/Python/beautiful-pairs.py
 class SegmentTree(object):
     def __init__(self, N,
                  build_fn=lambda _: None,
