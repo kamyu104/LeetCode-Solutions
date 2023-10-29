@@ -33,7 +33,15 @@ class Solution(object):
                 self.tree[x] = self.update_fn(self.tree[x], val*self.count[x])  # modified
                 if x < self.base:
                     self.lazy[x] = self.update_fn(self.lazy[x], val)
-        
+
+            def __push(self, x):
+                for n in reversed(xrange(1, self.base.bit_length())):
+                    y = x>>n
+                    if self.lazy[y] is not None:
+                        self.__apply(y<<1, self.lazy[y])
+                        self.__apply((y<<1)+1, self.lazy[y])
+                        self.lazy[y] = None
+
             def update(self, L, R, h):  # Time: O(logN), Space: O(N)
                 def pull(x):
                     while x > 1:
@@ -44,6 +52,8 @@ class Solution(object):
         
                 L += self.base
                 R += self.base
+                # self.__push(L)  # enable if range assignment
+                # self.__push(R)  # enable if range assignment
                 L0, R0 = L, R
                 while L <= R:
                     if L & 1:  # is right child
@@ -58,20 +68,12 @@ class Solution(object):
                 pull(R0)
             
             def query(self, L, R):
-                def push(x):
-                    for n in reversed(xrange(1, self.base.bit_length())):
-                        y = x>>n
-                        if self.lazy[y] is not None:
-                            self.__apply(y<<1, self.lazy[y])
-                            self.__apply((y<<1)+1, self.lazy[y])
-                            self.lazy[y] = None
-            
                 if L > R:
                     return None
                 L += self.base
                 R += self.base
-                push(L)
-                push(R)
+                self.__push(L)
+                self.__push(R)
                 left = right = None
                 while L <= R:
                     if L & 1:
