@@ -98,7 +98,7 @@ private:
         }
 
         void push(int x) {
-            for (int h = __lg(base_) - 1; h > 0; --h) {
+            for (int h = __lg(x) - 1; h > 0; --h) {
                 int y = x >> h;
                 if (lazy_[y]) {
                     apply(y << 1, lazy_[y]);
@@ -223,7 +223,7 @@ private:
         }
 
         void push(int x) {
-            for (int h = __lg(base_) - 1; h > 0; --h) {
+            for (int h = __lg(x) - 1; h > 0; --h) {
                 int y = x >> h;
                 if (lazy_[y]) {
                     apply(y << 1, lazy_[y]);
