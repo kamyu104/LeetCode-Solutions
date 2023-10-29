@@ -70,10 +70,10 @@ private:
             int left = 0, right = 0;
             for (; L <= R; L >>= 1, R >>= 1) {
                 if ((L & 1) == 1) {
-                    left = (tree_[L++] + left) % MOD;
+                    left = (left + tree_[L++]) % MOD;
                 }
                 if ((R & 1) == 0) {
-                    right = (right + tree_[R--]) % MOD;
+                    right = (tree_[R--] + right) % MOD;
                 }
             }
             return (left + right) % MOD;
@@ -195,10 +195,10 @@ private:
             T left{}, right{};
             for (; L <= R; L >>= 1, R >>= 1) {
                 if ((L & 1) == 1) {
-                    left = query_fn_(tree_[L++], left);
+                    left = query_fn_(left, tree_[L++]);
                 }
                 if ((R & 1) == 0) {
-                    right = query_fn_(right, tree_[R--]);
+                    right = query_fn_(tree_[R--], right);
                 }
             }
             return query_fn_(left, right);
