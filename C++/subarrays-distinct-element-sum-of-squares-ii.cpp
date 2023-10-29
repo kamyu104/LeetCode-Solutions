@@ -146,6 +146,9 @@ public:
 private:
     template <typename T>
     class SegmentTree {
+    private:
+        static const int MOD = 1e9 + 7;
+
     public:
         explicit SegmentTree(
             int N,
