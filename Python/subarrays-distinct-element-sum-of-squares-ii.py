@@ -12,7 +12,7 @@ class Solution(object):
         # https://github.com/kamyu104/LeetCode-Solutions/blob/master/Python/longest-substring-of-one-repeating-character.py
         class SegmentTree(object):
             def __init__(self, N,
-                         build_fn=lambda _: None,
+                         build_fn=None,
                          query_fn=lambda x, y: y if x is None else x if y is None else x+y,
                          update_fn=lambda x, y: y if x is None else x+y):
                 self.tree = [None]*(1<<((N-1).bit_length()+1))
@@ -20,10 +20,11 @@ class Solution(object):
                 self.lazy = [None]*self.base
                 self.query_fn = query_fn
                 self.update_fn = update_fn
-                for i in xrange(self.base, self.base+N):
-                    self.tree[i] = build_fn(i-self.base)
-                for i in reversed(xrange(1, self.base)):
-                    self.tree[i] = query_fn(self.tree[i<<1], self.tree[(i<<1)+1])
+                if build_fn is not None:
+                    for i in xrange(self.base, self.base+N):
+                        self.tree[i] = build_fn(i-self.base)
+                    for i in reversed(xrange(1, self.base)):
+                        self.tree[i] = query_fn(self.tree[i<<1], self.tree[(i<<1)+1])
                 self.count = [1]*len(self.tree)  # added
                 for i in reversed(xrange(1, self.base)):  # added
                     self.count[i] = self.count[i<<1] + self.count[(i<<1)+1]
