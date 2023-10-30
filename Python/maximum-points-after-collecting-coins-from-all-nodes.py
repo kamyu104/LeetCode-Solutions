@@ -14,7 +14,7 @@ class Solution(object):
         def dfs(u, p, base):
             if base >= max_base:
                 return 0
-            if (lookup[u]&base):  # we prefer the first way to the second way, so the visited state cannot improve the current chosen ways
+            if lookup[u]&base:  # we prefer the first way to the second way, so the visited state cannot improve the current chosen ways
                 return NEG_INF
             lookup[u] |= base
             return max(((coins[u]//base)-k)+sum(dfs(v, u, base) for v in adj[u] if v != p),
