@@ -59,7 +59,7 @@ public:
 
 // Time:  O(nlogr), r = max(coins)
 // Space: O(nlogr)
-// memoization
+// tree dp, memoization
 class Solution2 {
 public:
     int maximumPoints(vector<vector<int>>& edges, vector<int>& coins, int k) {
