@@ -31,7 +31,7 @@ class Solution(object):
 
 # Time:  O(nlogr), r = max(coins)
 # Space: O(nlogr)
-# memoization
+# tree dp, memoization
 class Solution2(object):
     def maximumPoints(self, edges, coins, k):
         """
