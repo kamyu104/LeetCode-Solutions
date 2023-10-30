@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2912%20%2F%202912-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2920%20%2F%202920-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -81,6 +81,7 @@
 2527 | [Find Xor-Beauty of Array](https://leetcode.com/problems/find-xor-beauty-of-array/) | [C++](./C++/find-xor-beauty-of-array.cpp) [Python](./Python/find-xor-beauty-of-array.py) | _O(n)_ | _O(1)_ | Medium | | Bit Manipulation, Math
 2595 | [Number of Even and Odd Bits](https://leetcode.com/problems/number-of-even-and-odd-bits/) | [C++](./C++/number-of-even-and-odd-bits.cpp) [Python](./Python/number-of-even-and-odd-bits.py) | _O(1)_ | _O(1)_ | Easy | | Bit Manipulation
 2859 | [Sum of Values at Indices With K Set Bits](https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/) | [C++](./C++/sum-of-values-at-indices-with-k-set-bits.cpp) [Python](./Python/sum-of-values-at-indices-with-k-set-bits.py) | _O(C(ceil(log2(n)), k))_ | _O(1)_ | Easy | | Bitmasks, `Hakmem Item 175`
+2917 | [Find the K-or of an Array](https://leetcode.com/problems/find-the-k-or-of-an-array/) | [C++](./C++/find-the-k-or-of-an-array.cpp) [Python](./Python/find-the-k-or-of-an-array.py) | _O(nlogr)_ | _O(1)_ | Easy | | Bit Manipulation
 
 <br/>
 <div align="right">
@@ -835,6 +836,11 @@
 2902 | [Count of Sub-Multisets With Bounded Sum](https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/) | [C++](./C++/count-of-sub-multisets-with-bounded-sum.cpp) [Python](./Python/count-of-sub-multisets-with-bounded-sum.py) | _O(n + d * r)_ | _O(d + r)_ | Hard |  | Freq Table, DP, Sliding Window, Combinatorics
 2911 | [Minimum Changes to Make K Semi-palindromes](https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/) | [C++](./C++/minimum-changes-to-make-k-semi-palindromes.cpp) [Python](./Python/minimum-changes-to-make-k-semi-palindromes.py) | _O(n^3)_ | _O(n^2 * logn)_ | Hard |  | Number Theory, DP
 2912 | [Number of Ways to Reach Destination in the Grid](https://leetcode.com/problems/number-of-ways-to-reach-destination-in-the-grid/) | [C++](./C++/number-of-ways-to-reach-destination-in-the-grid.cpp) [Python](./Python/number-of-ways-to-reach-destination-in-the-grid.py) | _O(logn)_ | _O(1)_ | Hard | 🔒 | DP, Matrix Exponentiation
+2913 | [Subarrays Distinct Element Sum of Squares I](https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/) | [C++](./C++/subarrays-distinct-element-sum-of-squares-i.cpp) [Python](./Python/subarrays-distinct-element-sum-of-squares-i.py) | _O(nlogn)_ | _O(n)_ | Easy | | DP, Segment Tree, BIT, Fenwick Tree, Ordered Set, Sorted List, Math, Hash Table
+2915 | [Length of the Longest Subsequence That Sums to Target](https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/) | [C++](./C++/length-of-the-longest-subsequence-that-sums-to-target.cpp) [Python](./Python/length-of-the-longest-subsequence-that-sums-to-target.py) | _O(n * t)_ | _O(t)_ | Medium | | Knapsack DP
+2916 | [Subarrays Distinct Element Sum of Squares II](https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/) | [C++](./C++/subarrays-distinct-element-sum-of-squares-ii.cpp) [Python](./Python/subarrays-distinct-element-sum-of-squares-ii.py) | _O(nlogn)_ | _O(n)_ | Easy | | DP, Segment Tree, BIT, Fenwick Tree, Ordered Set, Sorted List, Math
+2919 | [Minimum Increment Operations to Make Array Beautiful](https://leetcode.com/problems/minimum-increment-operations-to-make-array-beautiful/) | [C++](./C++/minimum-increment-operations-to-make-array-beautiful.cpp) [Python](./Python/minimum-increment-operations-to-make-array-beautiful.py) | _O(n)_ | _O(1)_ | Medium | | DP
+2920 | [Maximum Points After Collecting Coins From All Nodes](https://leetcode.com/problems/maximum-points-after-collecting-coins-from-all-nodes/) | [C++](./C++/maximum-points-after-collecting-coins-from-all-nodes.cpp) [Python](./Python/maximum-points-after-collecting-coins-from-all-nodes.py) | _O(nlogr)_ | _O(n)_ | Hard | | Tree DP, Memoization, DFS, Pruning
 
 <br/>
 <div align="right">
@@ -954,6 +960,8 @@
 2897 | [Apply Operations on Array to Maximize Sum of Squares](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/) | [C++](./C++/apply-operations-on-array-to-maximize-sum-of-squares.cpp) [Python](./Python/apply-operations-on-array-to-maximize-sum-of-squares.py) | _O(nlogr)_ | _O(logr)_ | Hard |  | Bit Manipulation, Greedy, Freq Table
 2900 | [Longest Unequal Adjacent Groups Subsequence I](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-i/) | [C++](./C++/longest-unequal-adjacent-groups-subsequence-i.cpp) [Python](./Python/longest-unequal-adjacent-groups-subsequence-i.py) | _O(n)_ | _O(1)_ | Medium |  | Greedy
 2910 | [Minimum Number of Groups to Create a Valid Assignment](https://leetcode.com/problems/minimum-number-of-groups-to-create-a-valid-assignment/) | [C++](./C++/minimum-number-of-groups-to-create-a-valid-assignment.cpp) [Python](./Python/minimum-number-of-groups-to-create-a-valid-assignment.py) | _O(n)_ | _O(n)_ | Medium |  | Linear Search, Greedy, Math
+2914 | [Minimum Number of Changes to Make Binary String Beautiful](https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/) | [C++](./C++/minimum-number-of-changes-to-make-binary-string-beautiful.cpp) [Python](./Python/minimum-number-of-changes-to-make-binary-string-beautiful.py) | _O(n)_ | _O(1)_ | Medium |  | Greedy
+2918 | [Minimum Equal Sum of Two Arrays After Replacing Zeros](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/) | [C++](./C++/minimum-equal-sum-of-two-arrays-after-replacing-zeros.cpp) [Python](./Python/minimum-equal-sum-of-two-arrays-after-replacing-zeros.py) | _O(n + m)_ | _O(1)_ | Medium |  | Greedy
 
 <br/>
 <div align="right">
