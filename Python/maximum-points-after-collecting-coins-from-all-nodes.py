@@ -1,7 +1,7 @@
 # Time:  O(nlogr), r = max(coins)
 # Space: O(n)
 
-# dfs, pruning
+# dfs, bitmasks, pruning
 class Solution(object):
     def maximumPoints(self, edges, coins, k):
         """
