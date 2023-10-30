@@ -35,7 +35,7 @@ public:
                 }
                 total1 += r;
             }
-            if ((coins[u] / base) - k >= coins[u] / (base << 1)) {
+            if ((coins[u] / base) - k >= coins[u] / (base << 1)) {  //  if (coins[u]//base)-k >= coins[u]//(base*2), the first way is always better
                 return total1;
             }
             int total2 = coins[u] / (base << 1);
@@ -50,7 +50,7 @@ public:
                 }
                 total2 += r;
             }
-            return max(total1, total2);  //  if (coins[u]//base)-k >= coins[u]//(base*2), the first way is always better
+            return max(total1, total2);
         };
 
         return dfs(0, -1, 1);
