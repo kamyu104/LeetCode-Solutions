@@ -35,7 +35,7 @@ public:
                 }
                 total1 += r;
             }
-            if ((coins[u] / base) - k >= coins[u] / (base << 1)) {  //  if (coins[u]//base)-k >= coins[u]//(base*2), the first way is always better
+            if ((coins[u] / base) - k >= coins[u] / (base << 1)) {  // if (coins[u]//base)-k >= coins[u]//(base*2), the first way is always better
                 return total1;
             }
             int total2 = coins[u] / (base << 1);
