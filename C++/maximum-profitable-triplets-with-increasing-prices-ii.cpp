@@ -7,6 +7,52 @@ public:
     int maxProfit(vector<int>& prices, vector<int>& profits) {
         static const int NEG_INF = numeric_limits<int>::min();
 
+        int result = NEG_INF;
+        set<pair<int, int>> bst1, bst2;
+        const auto& query = [&](const auto& bst, int price) {
+            const auto it = bst.lower_bound(pair(price, 0));
+            return it != begin(bst) ? prev(it)->second : NEG_INF;
+        };
+
+        const auto& update = [&](auto& bst, int price, int profit) {
+            const auto it = bst.lower_bound(pair(price, 0));
+            if (it != end(bst) && it->first == profit) {
+                if (!(it->second < profit)) {
+                    return;
+                }
+                bst.erase(it);
+            } else if (!(it == begin(bst) || prev(it)->second < profit)) {
+                return;
+            }
+            const auto [jt, _] = bst.emplace(price, profit);
+            while (next(jt) != end(bst) && next(jt)->second <= jt->second) {
+                bst.erase(next(jt));
+            }
+        };
+
+        for (int i = 0; i < size(prices); ++i) {
+            const int mx2 = query(bst2, prices[i]);
+            if (mx2 != NEG_INF) {
+                result = max(result, mx2 + profits[i]);
+            }
+            update(bst1, prices[i], profits[i]);
+            const int mx1 = query(bst1, prices[i]);
+            if (mx1 != NEG_INF) {
+                update(bst2, prices[i], mx1 + profits[i]);
+            }
+        }
+        return result != NEG_INF ? result : -1;
+    }
+};
+
+// Time:  O(nlogn)
+// Space: O(n)
+// prefix sum, sorted list, binary search, mono stack
+class Solution2 {
+public:
+    int maxProfit(vector<int>& prices, vector<int>& profits) {
+        static const int NEG_INF = numeric_limits<int>::min();
+
         vector<int> right(size(prices), NEG_INF);
         set<pair<int, int>> bst;
         for (int i = size(prices) - 1; i >= 0; --i) {
@@ -37,64 +83,6 @@ public:
             const auto [jt, _] = bst.emplace(prices[i], profits[i]);
             while (next(jt) != end(bst) && next(jt)->second <= jt->second) {
                 bst.erase(next(jt));
-            }
-        }
-        return result != NEG_INF ? result : -1;
-    }
-};
-
-// Time:  O(nlogn)
-// Space: O(n)
-// prefix sum, sorted list, binary search, mono stack
-class Solution2 {
-public:
-    int maxProfit(vector<int>& prices, vector<int>& profits) {
-        static const int NEG_INF = numeric_limits<int>::min();
-
-        vector<int> left(size(prices), NEG_INF);
-        set<pair<int, int>> bst;
-        for (int i = 0; i < size(prices); ++i) {
-            const auto it = bst.lower_bound(pair(prices[i], 0));
-            if (it != begin(bst)) {
-                left[i] = prev(it)->second;
-            }
-            if (it != end(bst) && it->first == prices[i]) {
-                if (!(it->second < profits[i])) {
-                    continue;
-                }
-                bst.erase(it);
-            } else if (!(it == begin(bst) || prev(it)->second < profits[i])) {
-                continue;
-            }
-            const auto [jt, _] = bst.emplace(prices[i], profits[i]);
-            while (next(jt) != end(bst) && next(jt)->second <= jt->second) {
-                bst.erase(next(jt));
-            }
-        }
-        vector<int> right(size(prices), NEG_INF);
-        bst.clear();
-        for (int i = size(prices) - 1; i >= 0; --i) {
-            const auto it = bst.lower_bound(pair(-prices[i], 0));
-            if (it != begin(bst)) {
-                right[i] = prev(it)->second;
-            }
-            if (it != end(bst) && -it->first == prices[i]) {
-                if (!(it->second < profits[i])) {
-                    continue;
-                }
-                bst.erase(it);
-            } else if (!(it == begin(bst) || prev(it)->second < profits[i])) {
-                continue;
-            }
-            const auto [jt, _] = bst.emplace(-prices[i], profits[i]);
-            while (next(jt) != end(bst) && next(jt)->second <= jt->second) {
-                bst.erase(next(jt));
-            }
-        }
-        int result = NEG_INF;
-        for (int i = 0; i < size(profits); ++i) {
-            if (left[i] != NEG_INF && right[i] != NEG_INF) {
-                result = max(result, left[i] + profits[i] + right[i]);
             }
         }
         return result != NEG_INF ? result : -1;
@@ -184,21 +172,18 @@ public:
         for (int i = 0; i < size(sorted_prices); ++i) {
             price_to_idx[sorted_prices[i]] = i;
         }
-        vector<int> right(size(prices), NEG_INF);
-        SegmentTree st2(size(price_to_idx));
-        for (int i = size(prices) - 1; i >= 0; --i) {
-            right[i] = st2.query(price_to_idx[prices[i]] + 1, size(price_to_idx) - 1);
-            st2.update(price_to_idx[prices[i]], profits[i]);
-        }
         int result = NEG_INF;
-        vector<int> left(size(prices), NEG_INF);
-        SegmentTree st1(size(price_to_idx));
+        SegmentTree st1(size(price_to_idx)), st2(size(price_to_idx));
         for (int i = 0; i < size(prices); ++i) {
-            const int left = st1.query(0, price_to_idx[prices[i]] - 1);
-            if (left != NEG_INF && right[i] != NEG_INF) {
-                result = max(result, left + profits[i] + right[i]);
+            const int mx2 = st2.query(0, price_to_idx[prices[i]] - 1);
+            if (mx2 != NEG_INF) {
+                result = max(result, mx2 + profits[i]);
             }
             st1.update(price_to_idx[prices[i]], profits[i]);
+            const int mx1 = st1.query(0, price_to_idx[prices[i]] - 1);
+            if (mx1 != NEG_INF) {
+                st2.update(price_to_idx[prices[i]], mx1 + profits[i]);
+            }
         }
         return result != NEG_INF ? result : -1;
     }
@@ -264,12 +249,6 @@ public:
         for (int i = 0; i < size(sorted_prices); ++i) {
             price_to_idx[sorted_prices[i]] = i;
         }
-        vector<int> left(size(prices), NEG_INF);
-        SegmentTree st1(size(price_to_idx));
-        for (int i = 0; i < size(prices); ++i) {
-            left[i] = st1.query(0, price_to_idx[prices[i]] - 1);
-            st1.update(price_to_idx[prices[i]], profits[i]);
-        }
         vector<int> right(size(prices), NEG_INF);
         SegmentTree st2(size(price_to_idx));
         for (int i = size(prices) - 1; i >= 0; --i) {
@@ -277,10 +256,14 @@ public:
             st2.update(price_to_idx[prices[i]], profits[i]);
         }
         int result = NEG_INF;
-        for (int i = 0; i < size(profits); ++i) {
-            if (left[i] != NEG_INF && right[i] != NEG_INF) {
-                result = max(result, left[i] + profits[i] + right[i]);
+        vector<int> left(size(prices), NEG_INF);
+        SegmentTree st1(size(price_to_idx));
+        for (int i = 0; i < size(prices); ++i) {
+            const int left = st1.query(0, price_to_idx[prices[i]] - 1);
+            if (left != NEG_INF && right[i] != NEG_INF) {
+                result = max(result, left + profits[i] + right[i]);
             }
+            st1.update(price_to_idx[prices[i]], profits[i]);
         }
         return result != NEG_INF ? result : -1;
     }
