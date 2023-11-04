@@ -14,7 +14,6 @@ public:
         for (int i = 0; i < size(sorted_prices); ++i) {
             price_to_idx[sorted_prices[i]] = i;
         }
-
         int result = NEG_INF;
         const auto& fn = [](int a, int b) {
             return max(a, b);
