@@ -14,9 +14,8 @@ class Solution(object):
         """
         NEG_INF = float("-inf")
         class BIT(object):  # 0-indexed.
-            def __init__(self, n, default=0, fn=lambda x, y: x+y):
-                self.__bit = [NEG_INF]*(n+1)  # Extra one for dummy node.
-                self.__default = default
+            def __init__(self, n, val=0, fn=lambda x, y: x+y):
+                self.__bit = [val]*(n+1)  # Extra one for dummy node.
                 self.__fn = fn
 
             def update(self, i, val):
@@ -27,14 +26,14 @@ class Solution(object):
 
             def query(self, i):
                 i += 1  # Extra one for dummy node.
-                ret = self.__default
+                ret = self.__bit[0]
                 while i > 0:
                     ret = self.__fn(ret, self.__bit[i])
                     i -= (i & -i)
                 return ret
 
         price_to_idx = {x:i for i, x in enumerate(sorted(set(prices)))}
-        bit1, bit2 = BIT(len(price_to_idx), default=NEG_INF, fn=max), BIT(len(price_to_idx), default=NEG_INF, fn=max)
+        bit1, bit2 = BIT(len(price_to_idx), val=NEG_INF, fn=max), BIT(len(price_to_idx), val=NEG_INF, fn=max)
         result = NEG_INF
         for price, profit in itertools.izip(prices, profits):
             result = max(result, bit2.query(price_to_idx[price]-1)+profit)
