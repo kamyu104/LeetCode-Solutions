@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2920%20%2F%202920-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2922%20%2F%202922-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -658,8 +658,8 @@
 2426 | [Number of Pairs Satisfying Inequality](https://leetcode.com/problems/number-of-pairs-satisfying-inequality/)|[C++](./C++/number-of-pairs-satisfying-inequality.cpp) [Python](./Python/number-of-pairs-satisfying-inequality.py) | _O(nlogn)_      | _O(n)_          | Hard         | | Merge Sort, Two Pointers, BIT, Fenwick Tree, Coordinate Compression, Sorted List, Ordered Set, Binary Search
 2689 | [Extract Kth Character From The Rope Tree](https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/)|[C++](./C++/extract-kth-character-from-the-rope-tree.cpp) [Python](./Python/extract-kth-character-from-the-rope-tree.py) | _O(h)_      | _O(1)_          | Medium         | 🔒 | BST
 2817 | [Minimum Absolute Difference Between Elements With Constraint](https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/) | [C++](./C++/minimum-absolute-difference-between-elements-with-constraint.cpp) [Python](./Python/minimum-absolute-difference-between-elements-with-constraint.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sorted List, BST, Binary Search |
-2907 | [Maximum Profitable Triplets With Increasing Prices I](https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-i/) | [C++](./C++/maximum-profitable-triplets-with-increasing-prices-i.cpp) [Python](./Python/maximum-profitable-triplets-with-increasing-prices-i.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, Sorted List, BST, Binary Search, Mono Stack, Segment Tree |
-
+2907 | [Maximum Profitable Triplets With Increasing Prices I](https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-i/) | [C++](./C++/maximum-profitable-triplets-with-increasing-prices-i.cpp) [Python](./Python/maximum-profitable-triplets-with-increasing-prices-i.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, Sorted List, BST, Binary Search, Mono Stack, BIT, Fenwick Tree, Segment Tree |
+2921 | [Maximum Profitable Triplets With Increasing Prices II](https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-ii/) | [C++](./C++/maximum-profitable-triplets-with-increasing-prices-ii.cpp) [Python](./Python/maximum-profitable-triplets-with-increasing-prices-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | Prefix Sum, Sorted List, BST, Binary Search, Mono Stack, BIT, Fenwick Tree, Segment Tree |
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -1236,6 +1236,7 @@
 2853 | [Highest Salaries Difference](https://leetcode.com/problems/highest-salaries-difference/) | [MySQL](./MySQL/highest-salaries-difference.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
 2854 | [Rolling Average Steps](https://leetcode.com/problems/rolling-average-steps/) | [MySQL](./MySQL/rolling-average-steps.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2893 | [Calculate Orders Within Each Interval](https://leetcode.com/problems/calculate-orders-within-each-interval/) | [MySQL](./MySQL/calculate-orders-within-each-interval.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2922 | [Market Analysis III](https://leetcode.com/problems/market-analysis-iii/) | [MySQL](./MySQL/market-analysis-iii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
