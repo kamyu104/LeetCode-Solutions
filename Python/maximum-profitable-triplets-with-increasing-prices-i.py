@@ -5,7 +5,7 @@ from sortedcontainers import SortedList
 
 
 # prefix sum, sorted list, binary search, mono stack
-class Solution2(object):
+class Solution(object):
     def maxProfit(self, prices, profits):
         """
         :type prices: List[int]
@@ -47,7 +47,7 @@ from sortedcontainers import SortedList
 
 
 # prefix sum, sorted list, binary search, mono stack
-class Solution3(object):
+class Solution2(object):
     def maxProfit(self, prices, profits):
         """
         :type prices: List[int]
