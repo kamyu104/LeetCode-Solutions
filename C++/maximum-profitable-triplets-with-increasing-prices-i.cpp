@@ -1,8 +1,77 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// prefix sum, sorted list, binary search, mono stack
+// prefix sum, bit, fenwick tree
 class Solution {
+public:
+    int maxProfit(vector<int>& prices, vector<int>& profits) {
+        static const int NEG_INF = numeric_limits<int>::min();
+
+        unordered_set<int> prices_set(cbegin(prices), cend(prices));
+        vector<int> sorted_prices(cbegin(prices_set), cend(prices_set));;
+        sort(begin(sorted_prices), end(sorted_prices));
+        unordered_map<int, int> price_to_idx;
+        for (int i = 0; i < size(sorted_prices); ++i) {
+            price_to_idx[sorted_prices[i]] = i;
+        }
+
+        int result = NEG_INF;
+        const auto& fn = [](int a, int b) {
+            return max(a, b);
+        };
+        BIT bit1(size(price_to_idx), NEG_INF, fn), bit2(size(price_to_idx), NEG_INF, fn);
+        for (int i = 0; i < size(prices); ++i) {
+            const int mx2 = bit2.query(price_to_idx[prices[i]] - 1);
+            if (mx2 != NEG_INF) {
+                result = max(result, mx2 + profits[i]);
+            }
+            bit1.update(price_to_idx[prices[i]], profits[i]);
+            const int mx1 = bit1.query(price_to_idx[prices[i]] - 1);
+            if (mx1 != NEG_INF) {
+                bit2.update(price_to_idx[prices[i]], mx1 + profits[i]);
+            }
+        }
+        return result != NEG_INF ? result : -1;
+    }
+
+private:
+    class BIT {
+    public:
+        BIT(int n, int val, const function<int (int, int)> fn)
+          : bit_(n + 1, val),
+            fn_(fn) {  // 0-indexed
+        }
+        
+        void update(int i, int val) {
+            ++i;
+            for (; i < size(bit_); i += lower_bit(i)) {
+                bit_[i] = fn_(bit_[i], val);
+            }
+        }
+
+        int query(int i) const {
+            ++i;
+            int total = bit_[0];
+            for (; i > 0; i -= lower_bit(i)) {
+                total = fn_(total, bit_[i]);
+            }
+            return total;
+        }
+    
+    private:
+        int lower_bit(int i) const {
+            return i & -i;
+        }
+        
+        vector<int> bit_;
+        const function<int (int, int)> fn_;
+    };
+};
+
+// Time:  O(nlogn)
+// Space: O(n)
+// prefix sum, sorted list, binary search, mono stack
+class Solution2 {
 public:
     int maxProfit(vector<int>& prices, vector<int>& profits) {
         static const int NEG_INF = numeric_limits<int>::min();
@@ -46,7 +115,7 @@ public:
 // Time:  O(nlogn)
 // Space: O(n)
 // prefix sum, sorted list, binary search, mono stack
-class Solution2 {
+class Solution3 {
 public:
     int maxProfit(vector<int>& prices, vector<int>& profits) {
         static const int NEG_INF = numeric_limits<int>::min();
@@ -104,7 +173,7 @@ public:
 // Time:  O(nlogn)
 // Space: O(n)
 // prefix sum, segment tree
-class Solution3 {
+class Solution4 {
 public:
     int maxProfit(vector<int>& prices, vector<int>& profits) {
         static const int NEG_INF = numeric_limits<int>::min();
@@ -184,7 +253,7 @@ private:
 // Time:  O(nlogn)
 // Space: O(n)
 // prefix sum, segment tree
-class Solution4 {
+class Solution5 {
 public:
     int maxProfit(vector<int>& prices, vector<int>& profits) {
         static const int NEG_INF = numeric_limits<int>::min();
