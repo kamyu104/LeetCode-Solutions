@@ -16,7 +16,7 @@ public:
 
         const auto& update = [&](auto& bst, int price, int profit) {
             const auto it = bst.lower_bound(pair(price, 0));
-            if (it != end(bst) && it->first == profit) {
+            if (it != end(bst) && it->first == price) {
                 if (!(it->second < profit)) {
                     return;
                 }
