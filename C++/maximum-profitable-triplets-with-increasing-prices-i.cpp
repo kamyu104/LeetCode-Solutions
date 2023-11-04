@@ -7,8 +7,6 @@ public:
     int maxProfit(vector<int>& prices, vector<int>& profits) {
         static const int NEG_INF = numeric_limits<int>::min();
 
-        int result = NEG_INF;
-        set<pair<int, int>> bst1, bst2;
         const auto& query = [&](const auto& bst, int price) {
             const auto it = bst.lower_bound(pair(price, 0));
             return it != begin(bst) ? prev(it)->second : NEG_INF;
@@ -30,6 +28,8 @@ public:
             }
         };
 
+        int result = NEG_INF;
+        set<pair<int, int>> bst1, bst2;
         for (int i = 0; i < size(prices); ++i) {
             const int mx2 = query(bst2, prices[i]);
             if (mx2 != NEG_INF) {
