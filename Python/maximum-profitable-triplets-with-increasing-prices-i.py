@@ -25,11 +25,10 @@ class Solution(object):
                     return
                 del sl[j]
             elif not (j-1 < 0 or sl[j-1][1] < profit):
-                return result
+                return
             sl.add((price, profit))
             while j+1 < len(sl) and sl[j+1][1] <= sl[j][1]:
                 del sl[j+1]
-            return
 
         result = NEG_INF
         sl1, sl2 = SortedList(), SortedList()
