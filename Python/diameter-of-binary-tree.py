@@ -16,8 +16,7 @@ class Solution(object):
         """
         def iter_dfs(node):
             result = 0
-            max_depth = [0]
-            stk = [(1, [node, max_depth])]
+            stk = [(1, [node, [0]])]
             while stk:
                 step, params = stk.pop()
                 if step == 1:
