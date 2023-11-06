@@ -63,7 +63,6 @@ public:
         };
         BIT bit(size(val_to_idx), NEG_INF, fn);
         for (int i = 0; i < size(nums); ++i) {
-            const auto x = bit.query(val_to_idx[nums[i] - i]);
             const int64_t val = max(bit.query(val_to_idx[nums[i] - i]), static_cast<int64_t>(0)) + nums[i];
             result = max(result, val);
             bit.update(val_to_idx[nums[i] - i], val);
@@ -102,5 +101,82 @@ private:
         
         vector<int64_t> bit_;
         const function<int64_t (int64_t, int64_t)> fn_;
+    };
+};
+
+// Time:  O(nlogn)
+// Space: O(n)
+// segment tree
+class Solution3 {
+public:
+    long long maxBalancedSubsequenceSum(vector<int>& nums) {
+        static const int64_t NEG_INF = numeric_limits<int64_t>::min();
+
+        unordered_set<int> vals_set;
+        for (int i = 0; i < size(nums); ++i) {
+            vals_set.emplace(nums[i] - i);
+        }
+        vector<int> sorted_vals(cbegin(vals_set), cend(vals_set));
+        sort(begin(sorted_vals), end(sorted_vals));
+        unordered_map<int, int> val_to_idx;
+        for (int i = 0; i < size(sorted_vals); ++i) {
+            val_to_idx[sorted_vals[i]] = i;
+        }
+        int64_t result = NEG_INF;
+        const auto& fn = [](int64_t a, int64_t b) {
+            return max(a, b);
+        };
+        SegmentTree st(size(val_to_idx));
+        for (int i = 0; i < size(nums); ++i) {
+            const int64_t val = max(st.query(0, val_to_idx[nums[i] - i]), static_cast<int64_t>(0)) + nums[i];
+            result = max(result, val);
+            st.update(val_to_idx[nums[i] - i], val);
+        }
+        return result;
+    }
+
+private:
+    class SegmentTree {
+    private:
+        const int64_t NEG_INF = numeric_limits<int64_t>::min();
+      
+    public:
+        explicit SegmentTree(int N)
+          : tree(N > 1 ? 1 << (__lg(N - 1) + 2) : 2, NEG_INF),
+            base(N > 1 ? 1 << (__lg(N - 1) + 1) : 1) {
+
+        }
+
+        void update(int i, int64_t h) {
+            int x = base + i;
+            tree[x] = max(tree[x], h);
+            while (x > 1) {
+                x /= 2;
+                tree[x] = max(tree[x * 2], tree[x * 2 + 1]);
+            }
+        }
+
+        int64_t query(int L, int R) {
+            int64_t result = NEG_INF;
+            if (L > R) {
+                return result;
+            }
+            L += base;
+            R += base;
+            for (; L <= R; L /= 2, R /= 2) {
+                if (L & 1) {
+                    result = max(result, tree[L]);
+                    ++L;
+                }
+                if ((R & 1) == 0) {
+                    result = max(tree[R], result);
+                    --R;
+                }
+            }
+            return result;
+        }
+
+        vector<int64_t> tree;
+        int base;
     };
 };
