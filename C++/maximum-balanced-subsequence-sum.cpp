@@ -5,7 +5,7 @@
 class Solution {
 public:
     long long maxBalancedSubsequenceSum(vector<int>& nums) {
-        static const int64_t NEG_INF = numeric_limits<int64_t>::min();
+        static const auto NEG_INF = numeric_limits<int64_t>::min();
 
         const auto& query = [](const auto& bst, const auto& k) {
             const auto it = bst.lower_bound(pair(k, 0));
@@ -28,10 +28,10 @@ public:
             }
         };
 
-        int64_t result = NEG_INF;
+        auto result = NEG_INF;
         set<pair<int, int64_t>> bst;
         for (int i = 0; i < size(nums); ++i) {
-            const int64_t val = max(query(bst, (nums[i] - i) + 1), static_cast<int64_t>(0)) + nums[i];
+            const auto val = max(query(bst, (nums[i] - i) + 1), static_cast<int64_t>(0)) + nums[i];
             result = max(result, val);
             update(bst, nums[i] - i, val);
         }
@@ -45,7 +45,7 @@ public:
 class Solution2 {
 public:
     long long maxBalancedSubsequenceSum(vector<int>& nums) {
-        static const int64_t NEG_INF = numeric_limits<int64_t>::min();
+        static const auto NEG_INF = numeric_limits<int64_t>::min();
 
         unordered_set<int> vals_set;
         for (int i = 0; i < size(nums); ++i) {
@@ -57,13 +57,13 @@ public:
         for (int i = 0; i < size(sorted_vals); ++i) {
             val_to_idx[sorted_vals[i]] = i;
         }
-        int64_t result = NEG_INF;
+        auto result = NEG_INF;
         const auto& fn = [](int64_t a, int64_t b) {
             return max(a, b);
         };
-        BIT bit(size(val_to_idx), NEG_INF, fn);
+        BIT<int64_t> bit(size(val_to_idx), NEG_INF, fn);
         for (int i = 0; i < size(nums); ++i) {
-            const int64_t val = max(bit.query(val_to_idx[nums[i] - i]), static_cast<int64_t>(0)) + nums[i];
+            const auto val = max(bit.query(val_to_idx[nums[i] - i]), static_cast<int64_t>(0)) + nums[i];
             result = max(result, val);
             bit.update(val_to_idx[nums[i] - i], val);
         }
@@ -71,23 +71,24 @@ public:
     }
 
 private:
+    template<typename T>
     class BIT {
     public:
-        BIT(int n, int64_t val, const function<int64_t (int64_t, int64_t)> fn)
+        BIT(int n, T val, const function<T (T, T)> fn)
           : bit_(n + 1, val),
             fn_(fn) {  // 0-indexed
         }
         
-        void update(int i, int64_t val) {
+        void update(int i, T val) {
             ++i;
             for (; i < size(bit_); i += lower_bit(i)) {
                 bit_[i] = fn_(bit_[i], val);
             }
         }
 
-        int64_t query(int i) const {
+        T query(int i) const {
             ++i;
-            int64_t total = bit_[0];
+            auto total = bit_[0];
             for (; i > 0; i -= lower_bit(i)) {
                 total = fn_(total, bit_[i]);
             }
@@ -99,8 +100,8 @@ private:
             return i & -i;
         }
         
-        vector<int64_t> bit_;
-        const function<int64_t (int64_t, int64_t)> fn_;
+        vector<T> bit_;
+        const function<T (T, T)> fn_;
     };
 };
 
@@ -110,7 +111,7 @@ private:
 class Solution3 {
 public:
     long long maxBalancedSubsequenceSum(vector<int>& nums) {
-        static const int64_t NEG_INF = numeric_limits<int64_t>::min();
+        static const auto NEG_INF = numeric_limits<int64_t>::min();
 
         unordered_set<int> vals_set;
         for (int i = 0; i < size(nums); ++i) {
@@ -122,13 +123,10 @@ public:
         for (int i = 0; i < size(sorted_vals); ++i) {
             val_to_idx[sorted_vals[i]] = i;
         }
-        int64_t result = NEG_INF;
-        const auto& fn = [](int64_t a, int64_t b) {
-            return max(a, b);
-        };
-        SegmentTree st(size(val_to_idx));
+        auto result = NEG_INF;
+        SegmentTree<int64_t> st(size(val_to_idx));
         for (int i = 0; i < size(nums); ++i) {
-            const int64_t val = max(st.query(0, val_to_idx[nums[i] - i]), static_cast<int64_t>(0)) + nums[i];
+            const auto val = max(st.query(0, val_to_idx[nums[i] - i]), static_cast<int64_t>(0)) + nums[i];
             result = max(result, val);
             st.update(val_to_idx[nums[i] - i], val);
         }
@@ -136,9 +134,10 @@ public:
     }
 
 private:
+    template<typename T>
     class SegmentTree {
     private:
-        const int64_t NEG_INF = numeric_limits<int64_t>::min();
+        const T NEG_INF = numeric_limits<T>::min();
       
     public:
         explicit SegmentTree(int N)
@@ -147,7 +146,7 @@ private:
 
         }
 
-        void update(int i, int64_t h) {
+        void update(int i, T h) {
             int x = base + i;
             tree[x] = max(tree[x], h);
             while (x > 1) {
@@ -156,8 +155,8 @@ private:
             }
         }
 
-        int64_t query(int L, int R) {
-            int64_t result = NEG_INF;
+        T query(int L, int R) {
+            T result = NEG_INF;
             if (L > R) {
                 return result;
             }
@@ -176,7 +175,7 @@ private:
             return result;
         }
 
-        vector<int64_t> tree;
+        vector<T> tree;
         int base;
     };
 };
