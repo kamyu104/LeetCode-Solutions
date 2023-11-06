@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// prefix sum, sorted list, binary search, mono stack
+// prefix sum, bst, binary search, mono stack
 class Solution {
 public:
     int maxProfit(vector<int>& prices, vector<int>& profits) {
@@ -47,7 +47,7 @@ public:
 
 // Time:  O(nlogn)
 // Space: O(n)
-// prefix sum, sorted list, binary search, mono stack
+// prefix sum, bst, binary search, mono stack
 class Solution2 {
 public:
     int maxProfit(vector<int>& prices, vector<int>& profits) {
