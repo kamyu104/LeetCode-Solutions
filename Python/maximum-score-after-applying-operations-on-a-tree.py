@@ -15,7 +15,7 @@ class Solution(object):
             while stk:
                 step, u, p = stk.pop() 
                 if step == 1:
-                    if u and len(adj[u]) == 1:
+                    if len(adj[u]) == (1 if u else 0):
                         dp[u] = values[u]
                         continue
                     stk.append((2, u, p))
@@ -44,7 +44,7 @@ class Solution2(object):
         :rtype: int
         """
         def dfs(u, p):
-            if u and len(adj[u]) == 1:
+            if len(adj[u]) == (1 if u else 0):
                 return values[u]
             return min(sum(dfs(v, u) for v in adj[u] if v != p), values[u])  # min(pick u, not pick u)
 
