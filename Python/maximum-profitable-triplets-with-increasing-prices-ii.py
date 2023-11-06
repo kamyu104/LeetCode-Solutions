@@ -14,19 +14,19 @@ class Solution(object):
         :rtype: int
         """
         NEG_INF = float("-inf")
-        def query(sl, price):
-            j = sl.bisect_left((price,))
+        def query(sl, k):
+            j = sl.bisect_left((k,))
             return sl[j-1][1] if j-1 >= 0 else NEG_INF
     
-        def update(sl, price, profit):
-            j = sl.bisect_left((price,))
-            if j < len(sl) and sl[j][0] == price:
-                if not (sl[j][1] < profit):
+        def update(sl, k, v):
+            j = sl.bisect_left((k,))
+            if j < len(sl) and sl[j][0] == k:
+                if not (sl[j][1] < v):
                     return
                 del sl[j]
-            elif not (j-1 < 0 or sl[j-1][1] < profit):
+            elif not (j-1 < 0 or sl[j-1][1] < v):
                 return
-            sl.add((price, profit))
+            sl.add((k, v))
             while j+1 < len(sl) and sl[j+1][1] <= sl[j][1]:
                 del sl[j+1]
 
