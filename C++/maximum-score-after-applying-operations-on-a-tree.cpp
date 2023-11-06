@@ -16,7 +16,7 @@ public:
             while (!empty(stk)) {
                 const auto [step, u, p] = stk.back(); stk.pop_back(); 
                 if (step == 1) {
-                    if (u && size(adj[u]) == 1) {
+                    if (size(adj[u]) == (u ? 1 : 0)) {
                         dp[u] = static_cast<int64_t>(values[u]);
                         continue;
                     }
@@ -55,7 +55,7 @@ public:
             adj[e[1]].emplace_back(e[0]);
         }
         const function<int64_t (int, int)> dfs = [&](int u, int p) {
-            if (u && size(adj[u]) == 1) {
+            if (size(adj[u]) == (u ? 1 : 0)) {
                 return static_cast<int64_t>(values[u]);
             }
             int64_t total = 0;
