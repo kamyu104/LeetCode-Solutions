@@ -66,6 +66,7 @@ public:
             } 
             return min(total, static_cast<int64_t>(values[u]));  // min(pick u, not pick u)
         };
+
         return accumulate(cbegin(values), cend(values), 0ll) - dfs(0, -1);
     }
 };
