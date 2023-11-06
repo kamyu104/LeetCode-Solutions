@@ -28,13 +28,11 @@ class Solution(object):
             while j+1 < len(sl) and sl[j+1][1] <= sl[j][1]:
                 del sl[j+1]
 
-        result = NEG_INF
         sl = SortedList()
         for i, x in enumerate(nums):
             v = max(query(sl, (x-i)+1), 0)+x
-            result = max(result, v)
             update(sl, x-i, v)
-        return result
+        return sl[-1][1]
 
 
 # Time:  O(nlogn)
@@ -68,13 +66,11 @@ class Solution2(object):
                 return ret
 
         val_to_idx = {x:i for i, x in enumerate(sorted({x-i for i, x in enumerate(nums)}))}
-        result = NEG_INF
         bit = BIT(len(val_to_idx), default=NEG_INF, fn=max)
         for i, x in enumerate(nums):
             v = max(bit.query(val_to_idx[x-i]), 0)+x
-            result = max(result, v)
             bit.update(val_to_idx[x-i], v)
-        return result
+        return bit.query(len(val_to_idx)-1)
 
 
 # Time:  O(nlogn)
@@ -127,10 +123,8 @@ class Solution3(object):
                 return self.query_fn(left, right)
 
         val_to_idx = {x:i for i, x in enumerate(sorted({x-i for i, x in enumerate(nums)}))}
-        result = NEG_INF
         st = SegmentTree(len(val_to_idx))
         for i, x in enumerate(nums):
             v = max(st.query(0, val_to_idx[x-i]), 0)+x
-            result = max(result, v)
             st.update(val_to_idx[x-i], v)
-        return result
+        return st.query(0, len(val_to_idx)-1)
