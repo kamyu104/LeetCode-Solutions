@@ -98,7 +98,7 @@ public:
         static const int NEG_INF = numeric_limits<int>::min();
 
         unordered_set<int> prices_set(cbegin(prices), cend(prices));
-        vector<int> sorted_prices(cbegin(prices_set), cend(prices_set));;
+        vector<int> sorted_prices(cbegin(prices_set), cend(prices_set));
         sort(begin(sorted_prices), end(sorted_prices));
         unordered_map<int, int> price_to_idx;
         for (int i = 0; i < size(sorted_prices); ++i) {
@@ -166,7 +166,7 @@ public:
         static const int NEG_INF = numeric_limits<int>::min();
 
         unordered_set<int> prices_set(cbegin(prices), cend(prices));
-        vector<int> sorted_prices(cbegin(prices_set), cend(prices_set));;
+        vector<int> sorted_prices(cbegin(prices_set), cend(prices_set));
         sort(begin(sorted_prices), end(sorted_prices));
         unordered_map<int, int> price_to_idx;
         for (int i = 0; i < size(sorted_prices); ++i) {
@@ -243,7 +243,7 @@ public:
         static const int NEG_INF = numeric_limits<int>::min();
 
         unordered_set<int> prices_set(cbegin(prices), cend(prices));
-        vector<int> sorted_prices(cbegin(prices_set), cend(prices_set));;
+        vector<int> sorted_prices(cbegin(prices_set), cend(prices_set));
         sort(begin(sorted_prices), end(sorted_prices));
         unordered_map<int, int> price_to_idx;
         for (int i = 0; i < size(sorted_prices); ++i) {
