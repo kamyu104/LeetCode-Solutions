@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2922%20%2F%202922-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2926%20%2F%202926-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -175,6 +175,7 @@
 2906 | [Construct Product Matrix](https://leetcode.com/problems/construct-product-matrix/) | [C++](./C++/construct-product-matrix.cpp) [Python](./Python/construct-product-matrix.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Prefix Sum
 2908 | [Minimum Sum of Mountain Triplets I](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-i/) | [C++](./C++/minimum-sum-of-mountain-triplets-i.cpp) [Python](./Python/minimum-sum-of-mountain-triplets-i.py) | _O(n)_ | _O(n)_ | Easy | | Prefix Sum
 2909 | [Minimum Sum of Mountain Triplets II](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/) | [C++](./C++/minimum-sum-of-mountain-triplets-ii.cpp) [Python](./Python/minimum-sum-of-mountain-triplets-ii.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
+2923 | [Find Champion I](https://leetcode.com/problems/find-champion-i/) | [C++](./C++/find-champion-i.cpp) [Python](./Python/find-champion-i.py) | _O(n^2)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -660,6 +661,8 @@
 2817 | [Minimum Absolute Difference Between Elements With Constraint](https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/) | [C++](./C++/minimum-absolute-difference-between-elements-with-constraint.cpp) [Python](./Python/minimum-absolute-difference-between-elements-with-constraint.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sorted List, BST, Binary Search |
 2907 | [Maximum Profitable Triplets With Increasing Prices I](https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-i/) | [C++](./C++/maximum-profitable-triplets-with-increasing-prices-i.cpp) [Python](./Python/maximum-profitable-triplets-with-increasing-prices-i.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, Sorted List, BST, Binary Search, Mono Stack, BIT, Fenwick Tree, Segment Tree |
 2921 | [Maximum Profitable Triplets With Increasing Prices II](https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-ii/) | [C++](./C++/maximum-profitable-triplets-with-increasing-prices-ii.cpp) [Python](./Python/maximum-profitable-triplets-with-increasing-prices-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | Prefix Sum, Sorted List, BST, Binary Search, Mono Stack, BIT, Fenwick Tree, Segment Tree |
+2926 | [Maximum Balanced Subsequence Sum](https://leetcode.com/problems/maximum-balanced-subsequence-sum/) | [C++](./C++/maximum-balanced-subsequence-sum.cpp) [Python](./Python/maximum-balanced-subsequence-sum.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sorted List, BST, Binary Search, Mono Stack, BIT, Fenwick Tree |
+
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -841,6 +844,7 @@
 2916 | [Subarrays Distinct Element Sum of Squares II](https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/) | [C++](./C++/subarrays-distinct-element-sum-of-squares-ii.cpp) [Python](./Python/subarrays-distinct-element-sum-of-squares-ii.py) | _O(nlogn)_ | _O(n)_ | Easy | | DP, Segment Tree, BIT, Fenwick Tree, Ordered Set, Sorted List, Math
 2919 | [Minimum Increment Operations to Make Array Beautiful](https://leetcode.com/problems/minimum-increment-operations-to-make-array-beautiful/) | [C++](./C++/minimum-increment-operations-to-make-array-beautiful.cpp) [Python](./Python/minimum-increment-operations-to-make-array-beautiful.py) | _O(n)_ | _O(1)_ | Medium | | DP
 2920 | [Maximum Points After Collecting Coins From All Nodes](https://leetcode.com/problems/maximum-points-after-collecting-coins-from-all-nodes/) | [C++](./C++/maximum-points-after-collecting-coins-from-all-nodes.cpp) [Python](./Python/maximum-points-after-collecting-coins-from-all-nodes.py) | _O(nlogr)_ | _O(n)_ | Hard | | Tree DP, Memoization, DFS, Pruning
+2925 | [Maximum Score After Applying Operations on a Tree](https://leetcode.com/problems/maximum-score-after-applying-operations-on-a-tree/) | [C++](./C++/maximum-score-after-applying-operations-on-a-tree.cpp) [Python](./Python/maximum-score-after-applying-operations-on-a-tree.py) | _O(n)_ | _O(n)_ | Medium | | DFS, Tree DP
 
 <br/>
 <div align="right">
@@ -997,6 +1001,7 @@
 2836 | [Maximize Value of Function in a Ball Passing Game](https://leetcode.com/problems/maximize-value-of-function-in-a-ball-passing-game/)  | [C++](./C++/maximize-value-of-function-in-a-ball-passing-game.cpp) [Python](./Python/maximize-value-of-function-in-a-ball-passing-game.py) | _O(n)_ | _O(n)_| Hard           || Graph, Prefix Sum, Two Pointers, Sliding Window, Binary Lifting |
 2850 | [Minimum Moves to Spread Stones Over Grid](https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid/) | [C++](./C++/minimum-moves-to-spread-stones-over-grid.cpp) [Python](./Python/minimum-moves-to-spread-stones-over-grid.py) | _O(n^3)_ | _O(n^2)_ | Medium | | Backtracking, `Hungarian Weighted Bipartite Matching` |
 2876 | [Count Visited Nodes in a Directed Graph](https://leetcode.com/problems/count-visited-nodes-in-a-directed-graph/) | [C++](./C++/count-visited-nodes-in-a-directed-graph.cpp) [Python](./Python/count-visited-nodes-in-a-directed-graph.py) | _O(n)_ | _O(n)_ | Hard | | Graph, Hash Table, Stack |
+2924 | [Find Champion II](https://leetcode.com/problems/find-champion-ii/) | [C++](./C++/find-champion-ii.cpp) [Python](./Python/find-champion-ii.py) | _O(n)_ | _O(n)_ | Medium | | Graph, Hash Table
 
 <br/>
 <div align="right">
