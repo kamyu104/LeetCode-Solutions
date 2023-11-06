@@ -28,14 +28,12 @@ public:
             }
         };
 
-        auto result = NEG_INF;
         set<pair<int, int64_t>> bst;
         for (int i = 0; i < size(nums); ++i) {
             const auto val = max(query(bst, (nums[i] - i) + 1), static_cast<int64_t>(0)) + nums[i];
-            result = max(result, val);
             update(bst, nums[i] - i, val);
         }
-        return result;
+        return rbegin(bst)->second;
     }
 };
 
@@ -57,17 +55,15 @@ public:
         for (int i = 0; i < size(sorted_vals); ++i) {
             val_to_idx[sorted_vals[i]] = i;
         }
-        auto result = NEG_INF;
         const auto& fn = [](const auto& a, const auto& b) {
             return max(a, b);
         };
         BIT<int64_t> bit(size(val_to_idx), NEG_INF, fn);
         for (int i = 0; i < size(nums); ++i) {
             const auto val = max(bit.query(val_to_idx[nums[i] - i]), static_cast<int64_t>(0)) + nums[i];
-            result = max(result, val);
             bit.update(val_to_idx[nums[i] - i], val);
         }
-        return result;
+        return bit.query(size(val_to_idx) - 1);
     }
 
 private:
@@ -123,14 +119,12 @@ public:
         for (int i = 0; i < size(sorted_vals); ++i) {
             val_to_idx[sorted_vals[i]] = i;
         }
-        auto result = NEG_INF;
         SegmentTree<int64_t> st(size(val_to_idx));
         for (int i = 0; i < size(nums); ++i) {
             const auto val = max(st.query(0, val_to_idx[nums[i] - i]), static_cast<int64_t>(0)) + nums[i];
-            result = max(result, val);
             st.update(val_to_idx[nums[i] - i], val);
         }
-        return result;
+        return st.query(0, size(val_to_idx) - 1);
     }
 
 private:
