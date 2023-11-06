@@ -58,7 +58,7 @@ public:
             val_to_idx[sorted_vals[i]] = i;
         }
         auto result = NEG_INF;
-        const auto& fn = [](int64_t a, int64_t b) {
+        const auto& fn = [](const auto& a, const auto& b) {
             return max(a, b);
         };
         BIT<int64_t> bit(size(val_to_idx), NEG_INF, fn);
