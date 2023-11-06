@@ -7,22 +7,22 @@ public:
     int maxProfit(vector<int>& prices, vector<int>& profits) {
         static const int NEG_INF = numeric_limits<int>::min();
 
-        const auto& query = [](const auto& bst, int price) {
-            const auto it = bst.lower_bound(pair(price, 0));
+        const auto& query = [](const auto& bst, int k) {
+            const auto it = bst.lower_bound(pair(k, 0));
             return it != begin(bst) ? prev(it)->second : NEG_INF;
         };
 
-        const auto& update = [](auto& bst, int price, int profit) {
-            const auto it = bst.lower_bound(pair(price, 0));
-            if (it != end(bst) && it->first == price) {
-                if (!(it->second < profit)) {
+        const auto& update = [](auto& bst, int k, int v) {
+            const auto it = bst.lower_bound(pair(k, 0));
+            if (it != end(bst) && it->first == k) {
+                if (!(it->second < v)) {
                     return;
                 }
                 bst.erase(it);
-            } else if (!(it == begin(bst) || prev(it)->second < profit)) {
+            } else if (!(it == begin(bst) || prev(it)->second < v)) {
                 return;
             }
-            const auto [jt, _] = bst.emplace(price, profit);
+            const auto [jt, _] = bst.emplace(k, v);
             while (next(jt) != end(bst) && next(jt)->second <= jt->second) {
                 bst.erase(next(jt));
             }
