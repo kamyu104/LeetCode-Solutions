@@ -1,4 +1,4 @@
-# Time:  O(nlogr)
+# Time:  O(nlogr), r = max(nums)
 # Space: O(n)
 
 # prefix sum
