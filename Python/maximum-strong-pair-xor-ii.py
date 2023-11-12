@@ -20,6 +20,7 @@ class Solution(object):
             result <<= 1
             for x in prefix_min.iterkeys():
                 y = (result|1)^x
+                assert(x != y)
                 if y in prefix_max and prefix_min[max(x, y)] <= 2*prefix_max[min(x, y)]:
                     result |= 1
                     break
