@@ -21,7 +21,7 @@ class Solution(object):
             for x in prefix_min.iterkeys():
                 y = (result|1)^x
                 assert(x != y)
-                if y in prefix_max and x > y and prefix_min[x]-prefix_max[y] <= prefix_max[y]:
+                if y in prefix_max and prefix_min[max(x, y)] <= 2*prefix_max[min(x, y)]:
                     result |= 1
                     break
         return result
