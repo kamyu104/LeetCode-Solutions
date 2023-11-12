@@ -1,7 +1,7 @@
 // Time:  O(1)
 // Space: O(1)
 
-// stars and bars, combinatorics, inclusion-exclusion principle 
+// stars and bars, combinatorics, principle of inclusion and exclusion
 class Solution {
 public:
     long long distributeCandies(int n, int limit) {
