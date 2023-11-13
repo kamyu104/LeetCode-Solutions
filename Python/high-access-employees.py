@@ -4,7 +4,7 @@
 import collections
 
 
-# sort, sliding window
+# sort, two pointers, sliding window
 class Solution(object):
     def findHighAccessEmployees(self, access_times):
         """
