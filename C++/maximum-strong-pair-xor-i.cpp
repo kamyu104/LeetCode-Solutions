@@ -107,7 +107,7 @@ private:
         }
 
         int query(int num) {
-            int result = 0, curr = 0, curr2 = 0;
+            int result = 0, curr = 0;
             for (int i = bit_length_ - 1; i >= 0; --i) {
                 result <<= 1;
                 const int x = num >> i;
