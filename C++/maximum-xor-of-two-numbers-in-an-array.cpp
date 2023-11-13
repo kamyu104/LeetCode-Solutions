@@ -58,10 +58,11 @@ private:
             }
             int result = 0, idx = 0;
             for (int i = bit_length_ - 1; i >= 0; --i) {
+                result <<= 1;
                 int curr = (num >> i) & 1;
                 if (nodes_[idx][1 ^ curr]) {
                     idx = nodes_[idx][1 ^ curr];
-                    result |= 1 << i;
+                    result |= 1;
                 } else {
                     idx = nodes_[idx][curr];
                 }
