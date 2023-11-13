@@ -1,7 +1,7 @@
 # Time:  O(nlogr), r = max(nums)
 # Space: O(t)
 
-# greedy, trie, dp
+# bit manipulation, greedy, trie, dp
 class Solution(object):
     def maximumStrongPairXor(self, nums):
         """
@@ -62,7 +62,7 @@ class Solution(object):
 
 # Time:  O(nlogr), r = max(nums)
 # Space: O(n)
-# greedy, dp
+# bit manipulation, greedy, dp
 class Solution2(object):
     def maximumStrongPairXor(self, nums):
         """
@@ -90,7 +90,7 @@ class Solution2(object):
 
 # Time:  O(n^2)
 # Space: O(1)
-# brute force
+# bit manipulation, brute force
 class Solution3(object):
     def maximumStrongPairXor(self, nums):
         """
