@@ -1,7 +1,7 @@
 # Time:  O(nlogr), r = max(nums)
 # Space: O(n)
 
-# prefix sum
+# greedy, dp
 class Solution(object):
     def maximumStrongPairXor(self, nums):
         """
@@ -29,7 +29,7 @@ class Solution(object):
 
 # Time:  O(nlogr), r = max(nums)
 # Space: O(t)
-# trie
+# greedy, trie, dp
 class Solution2(object):
     def maximumStrongPairXor(self, nums):
         """
