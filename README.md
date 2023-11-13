@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2927%20%2F%202927-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2935%20%2F%202935-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -82,6 +82,8 @@
 2595 | [Number of Even and Odd Bits](https://leetcode.com/problems/number-of-even-and-odd-bits/) | [C++](./C++/number-of-even-and-odd-bits.cpp) [Python](./Python/number-of-even-and-odd-bits.py) | _O(1)_ | _O(1)_ | Easy | | Bit Manipulation
 2859 | [Sum of Values at Indices With K Set Bits](https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/) | [C++](./C++/sum-of-values-at-indices-with-k-set-bits.cpp) [Python](./Python/sum-of-values-at-indices-with-k-set-bits.py) | _O(C(ceil(log2(n)), k))_ | _O(1)_ | Easy | | Bitmasks, `Hakmem Item 175`
 2917 | [Find the K-or of an Array](https://leetcode.com/problems/find-the-k-or-of-an-array/) | [C++](./C++/find-the-k-or-of-an-array.cpp) [Python](./Python/find-the-k-or-of-an-array.py) | _O(nlogr)_ | _O(1)_ | Easy | | Bit Manipulation
+2932 | [Maximum Strong Pair XOR I](https://leetcode.com/problems/maximum-strong-pair-xor-i/) | [C++](./C++/maximum-strong-pair-xor-i.cpp) [Python](./Python/maximum-strong-pair-xor-i.py) | _O(nlogr)_ | _O(t)_ | Easy | variant of [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | Bit Manipulation, Greedy, Trie, DP, Brute Force
+2935 | [Maximum Strong Pair XOR II](https://leetcode.com/problems/maximum-strong-pair-xor-ii/) | [C++](./C++/maximum-strong-pair-xor-ii.cpp) [Python](./Python/maximum-strong-pair-xor-ii.py) | _O(nlogr)_ | _O(t)_ | Hard | variant of [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | Bit Manipulation, Greedy, Trie, DP
 
 <br/>
 <div align="right">
@@ -513,6 +515,9 @@
 2894 | [Divisible and Non-divisible Sums Difference](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/) | [C++](./C++/divisible-and-non-divisible-sums-difference.cpp) [Python](./Python/divisible-and-non-divisible-sums-difference.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 2898 | [Maximum Linear Stock Score](https://leetcode.com/problems/maximum-linear-stock-score/) | [C++](./C++/maximum-linear-stock-score.cpp) [Python](./Python/maximum-linear-stock-score.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Math, Freq Table |
 2927 | [Distribute Candies Among Children III](https://leetcode.com/problems/distribute-candies-among-children-iii/) | [C++](./C++/distribute-candies-among-children-iii.cpp) [Python](./Python/distribute-candies-among-children-iii.py) | _O(1)_ | _O(1)_ | Hard | 🔒 | Stars and Bars, Combinatorics, Principle of Inclusion and Exclusion |
+2928 | [Distribute Candies Among Children I](https://leetcode.com/problems/distribute-candies-among-children-i/) | [C++](./C++/distribute-candies-among-children-i.cpp) [Python](./Python/distribute-candies-among-children-i.py) | _O(1)_ | _O(1)_ | Easy | | Stars and Bars, Combinatorics, Principle of Inclusion and Exclusion, Brute Force |
+2929 | [Distribute Candies Among Children II](https://leetcode.com/problems/distribute-candies-among-children-ii/) | [C++](./C++/distribute-candies-among-children-ii.cpp) [Python](./Python/distribute-candies-among-children-ii.py) | _O(1)_ | _O(1)_ | Medium | | Stars and Bars, Combinatorics, Principle of Inclusion and Exclusion, Brute Force |
+2930 | [Number of Strings Which Can Be Rearranged to Contain Substring](https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/) | [C++](./C++/number-of-strings-which-can-be-rearranged-to-contain-substring.cpp) [Python](./Python/number-of-strings-which-can-be-rearranged-to-contain-substring.py) | _O(1)_ | _O(1)_ | Medium | | Combinatorics, Principle of Inclusion and Exclusion, Bitmasks, DP |
 
 <br/>
 <div align="right">
@@ -603,6 +608,7 @@
 2841 | [Maximum Sum of Almost Unique Subarray](https://leetcode.com/problems/maximum-sum-of-almost-unique-subarray/) | [C++](./C++/maximum-sum-of-almost-unique-subarray.cpp) [Python](./Python/maximum-sum-of-almost-unique-subarray.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 2875 | [Minimum Size Subarray in Infinite Array](https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/) | [C++](./C++/minimum-size-subarray-in-infinite-array.cpp) [Python](./Python/minimum-size-subarray-in-infinite-array.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum, Hash Table, Two Pointers, Sliding Window
 2904 | [Shortest and Lexicographically Smallest Beautiful String](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/) | [C++](./C++/shortest-and-lexicographically-smallest-beautiful-string.cpp) [Python](./Python/shortest-and-lexicographically-smallest-beautiful-string.py) | _O(n^2)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
+2933 | [High-Access Employees](https://leetcode.com/problems/high-access-employees/) | [C++](./C++/high-access-employees.cpp) [Python](./Python/high-access-employees.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -967,6 +973,7 @@
 2910 | [Minimum Number of Groups to Create a Valid Assignment](https://leetcode.com/problems/minimum-number-of-groups-to-create-a-valid-assignment/) | [C++](./C++/minimum-number-of-groups-to-create-a-valid-assignment.cpp) [Python](./Python/minimum-number-of-groups-to-create-a-valid-assignment.py) | _O(n)_ | _O(n)_ | Medium |  | Linear Search, Greedy, Math
 2914 | [Minimum Number of Changes to Make Binary String Beautiful](https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/) | [C++](./C++/minimum-number-of-changes-to-make-binary-string-beautiful.cpp) [Python](./Python/minimum-number-of-changes-to-make-binary-string-beautiful.py) | _O(n)_ | _O(1)_ | Medium |  | Greedy
 2918 | [Minimum Equal Sum of Two Arrays After Replacing Zeros](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/) | [C++](./C++/minimum-equal-sum-of-two-arrays-after-replacing-zeros.cpp) [Python](./Python/minimum-equal-sum-of-two-arrays-after-replacing-zeros.py) | _O(n + m)_ | _O(1)_ | Medium |  | Greedy
+2931 | [Minimum Equal Sum of Two Arrays After Replacing Zeros](https://leetcode.com/problems/maximum-spending-after-buying-items/) | [C++](./C++/maximum-spending-after-buying-items.cpp) [Python](./Python/maximum-spending-after-buying-items.py) | _O(m * n * logm)_ | _O(m)_ | Hard |  | Greedy, Heap
 
 <br/>
 <div align="right">
@@ -1035,6 +1042,7 @@
 2596 | [Check Knight Tour Configuration](https://leetcode.com/problems/check-knight-tour-configuration/) | [C++](./C++/check-knight-tour-configuration.cpp) [Python](./Python/check-knight-tour-configuration.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Simulation, Hash Table |
 2682 | [Find the Losers of the Circular Game](https://leetcode.com/problems/find-the-losers-of-the-circular-game/) | [C++](./C++/find-the-losers-of-the-circular-game.cpp) [Python](./Python/find-the-losers-of-the-circular-game.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Simulation
 2751 | [Robot Collisions](https://leetcode.com/problems/robot-collisions/) | [C++](./C++/robot-collisions.cpp) [Python](./Python/robot-collisions.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Simulation, Stack
+2934 | [Minimum Operations to Maximize Last Elements in Arrays](https://leetcode.com/problems/minimum-operations-to-maximize-last-elements-in-arrays/) | [C++](./C++/minimum-operations-to-maximize-last-elements-in-arrays.cpp) [Python](./Python/minimum-operations-to-maximize-last-elements-in-arrays.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 
 <br/>
 <div align="right">
