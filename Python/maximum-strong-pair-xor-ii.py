@@ -107,7 +107,7 @@ class Solution2(object):
         result = j = 0
         for i, num in enumerate(nums):
             trie.update(num, +1)
-            while not (nums[i] <= nums[j]*2) :
+            while not (nums[i] <= 2*nums[j]) :
                 trie.update(nums[j], -1)
                 j += 1
             result = max(result, trie.query(num))
