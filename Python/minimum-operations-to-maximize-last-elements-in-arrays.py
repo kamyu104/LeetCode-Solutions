@@ -11,7 +11,7 @@ class Solution(object):
         """
         INF = float("inf")
         def count(mx1, mx2):
-            return sum(1 if nums2[i] <= mx1 and nums1[i] <= mx2 else INF for i in xrange(len(nums1)-1) if not (nums1[i] <= mx1 and nums2[i] <= mx2))
+            return sum(1 if y <= mx1 and x <= mx2 else INF for x, y in itertools.izip(nums1, nums2) if not (x <= mx1 and y <= mx2))
 
-        result = min(count(nums1[-1], nums2[-1]), count(nums2[-1], nums1[-1])+1)
+        result = min(count(nums1[-1], nums2[-1]), count(nums2[-1], nums1[-1]))
         return result if result != INF else -1
