@@ -81,7 +81,7 @@ private:
     }
 };
 
-// Time:  O(nlogn + nlogr), r = max(nums)
+// Time:  O(nlogn + nlogr) = O(nlogr), r = max(nums)
 // Space: O(t)
 // bit manipulation, greedy, trie, sort, two pointers
 class Solution2 {
