@@ -22,6 +22,6 @@ class Solution(object):
         result = []
         for x, ts in lookup.iteritems():
             ts.sort()
-            if any(ts[i]-ts[i-LIMIT_COUNT] < LIMIT_MINUTE for i in xrange(LIMIT_COUNT, len(ts))):
+            if not all(ts[i]+LIMIT_MINUTE <= ts[i+LIMIT_COUNT] for i in xrange(len(ts)-LIMIT_COUNT)):
                 result.append(x)
         return result
