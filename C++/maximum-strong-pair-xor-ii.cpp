@@ -99,26 +99,20 @@ private:
         }
 
         int query(int num) {
-            int result = 0, curr1 = 0, curr2 = 0;
+            int result = 0, curr = 0;
             for (int i = bit_length_ - 1; i >= 0; --i) {
                 result <<= 1;
                 const int x = num >> i;
                 const int y = (result | 1) ^ x;
                 assert(x != y);
-                int a = nodes_[curr1][x & 1];
-                int b = nodes_[curr2][y & 1];
-                if (x < y) {
-                    swap(a, b);
-                }
-                if (nodes_[curr2][y & 1] != -1 && mins_[a] <= 2 * maxs_[b]) {
+                if (nodes_[curr][y & 1] != -1 && ((x > y && num <= 2 * maxs_[nodes_[curr][y & 1]]) || (x < y && mins_[nodes_[curr][y & 1]] <= 2 * num))) {
                     result |= 1;
-                    curr2 = nodes_[curr2][y & 1];
-                } else if (nodes_[curr2][(y & 1)^1] != -1) {
-                    curr2 = nodes_[curr2][(y & 1)^1];
+                    curr = nodes_[curr][y & 1];
+                } else if (nodes_[curr][(y & 1) ^ 1] != -1) {
+                    curr = nodes_[curr][(y & 1) ^ 1];
                 } else {
                     break;
                 }
-                curr1 = nodes_[curr1][x & 1];
             }
             return result;
         }
