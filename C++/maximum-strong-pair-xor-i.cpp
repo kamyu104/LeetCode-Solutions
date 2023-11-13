@@ -1,5 +1,5 @@
 // Time:  O(nlogr), r = max(nums)
-// Space: O(n)
+// Space: O(t)
 
 // trie, dp
 class Solution {
