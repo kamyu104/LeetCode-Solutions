@@ -93,10 +93,11 @@ class Solution2(object):
             def query(self, num):
                 result = curr = 0
                 for i in reversed(xrange(self.__bit_length)):
+                    result <<= 1
                     x = num>>i
                     if self.__nodes[curr][1^(x&1)] != -1 and self.__cnts[self.__nodes[curr][1^(x&1)]]:
                         curr = self.__nodes[curr][1^(x&1)]
-                        result |= 1<<i
+                        result |= 1
                     else:
                         curr = self.__nodes[curr][x&1]
                 return result
