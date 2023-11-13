@@ -19,8 +19,8 @@ public:
         vector<string> result;
         for (auto& [x, ts] : lookup) {
             sort(begin(ts), end(ts));
-            for (int i = LIMIT_COUNT; i < size(ts); ++i) {
-                if (ts[i] - ts[i-LIMIT_COUNT] < LIMIT_MINUTE) {
+            for (int i = 0; i + LIMIT_COUNT < size(ts); ++i) {
+                if (!(ts[i] + LIMIT_MINUTE <= ts[i + LIMIT_COUNT])) {
                     result.emplace_back(x);
                     break;
                 }
