@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// sort, sliding window
+// sort, two pointers, sliding window
 class Solution {
 public:
     vector<string> findHighAccessEmployees(vector<vector<string>>& access_times) {
