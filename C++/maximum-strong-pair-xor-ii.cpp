@@ -105,7 +105,9 @@ private:
                 const int x = num >> i;
                 const int y = (result | 1) ^ x;
                 assert(x != y);
-                if (nodes_[curr][y & 1] != -1 && ((x > y && num <= 2 * maxs_[nodes_[curr][y & 1]]) || (x < y && mins_[nodes_[curr][y & 1]] <= 2 * num))) {
+                if (nodes_[curr][y & 1] != -1 && 
+                    ((x > y && num <= 2 * maxs_[nodes_[curr][y & 1]]) ||
+                     (x < y && mins_[nodes_[curr][y & 1]] <= 2 * num))) {
                     result |= 1;
                     curr = nodes_[curr][y & 1];
                 } else {
