@@ -87,23 +87,19 @@ class Solution2(object):
                     self.__maxs[curr] = max(self.__maxs[curr], num)
                         
             def query(self, num):
-                result = curr1 = curr2 = 0
+                result = curr = 0
                 for i in reversed(xrange(self.__bit_length)):
                     result <<= 1
                     x = num>>i
                     y = (result|1)^x
-                    assert(x != y)
-                    a, b = self.__nodes[curr1][x&1], self.__nodes[curr2][y&1]
-                    if x < y:
-                        a, b = b, a
-                    if self.__nodes[curr2][y&1] != -1 and self.__mins[a] <= 2*self.__maxs[b]:
+                    assert(x != y) 
+                    if (self.__nodes[curr][y&1] != -1 and
+                        ((x > y and num <= 2*self.__maxs[self.__nodes[curr][y&1]]) or
+                         (x < y and self.__mins[self.__nodes[curr][y&1]] <= 2*num))):
                         result |= 1
-                        curr2 = self.__nodes[curr2][y&1]
-                    elif self.__nodes[curr2][(y&1)^1] != -1:
-                        curr2 = self.__nodes[curr2][(y&1)^1]
+                        curr = self.__nodes[curr][y&1]
                     else:
-                        break
-                    curr1 = self.__nodes[curr1][x&1]
+                        curr = self.__nodes[curr][1^(y&1)]
                 return result
     
         trie = Trie(max(nums).bit_length())
