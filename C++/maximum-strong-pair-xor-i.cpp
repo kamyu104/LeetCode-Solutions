@@ -1,7 +1,7 @@
 // Time:  O(nlogr), r = max(nums)
 // Space: O(t)
 
-// greedy, trie, dp
+// bit manipulation, greedy, trie, dp
 class Solution {
 private:
     class Trie {
@@ -83,7 +83,7 @@ private:
 
 // Time:  O(nlogr), r = max(nums)
 // Space: O(n)
-// greedy, dp
+// bit manipulation, greedy, dp
 class Solution2 {
 public:
     int maximumStrongPairXor(vector<int>& nums) {
@@ -119,7 +119,7 @@ private:
 
 // Time:  O(nlogr), r = max(nums)
 // Space: O(n)
-// brute force
+// bit manipulation, brute force
 class Solution3 {
 public:
     int maximumStrongPairXor(vector<int>& nums) {
