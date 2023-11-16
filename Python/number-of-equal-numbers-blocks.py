@@ -26,10 +26,9 @@ class Solution(object):
             return right
 
         n = nums.size()
-        result = 0
-        left, right = 0, n-1
+        result = left = 0
         while left != n:
             target = nums.at(left)
-            left = binary_search_right(left, right, lambda x: nums.at(x) == target)+1
+            left = binary_search_right(left, n-1, lambda x: nums.at(x) == target)+1
             result += 1
         return result
