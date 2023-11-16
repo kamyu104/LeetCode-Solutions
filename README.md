@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2935%20%2F%202935-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2936%20%2F%202936-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -653,6 +653,7 @@
 2602 | [Minimum Operations to Make All Array Elements Equal](https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/) | [C++](./C++/minimum-operations-to-make-all-array-elements-equal.cpp) [Python](./Python/minimum-operations-to-make-all-array-elements-equal.py) | _O(nlogn + qlogn)_ | _O(n)_ | Medium | | Sort, Binary Search, Prefix Sum |
 2616 | [Minimize the Maximum Difference of Pairs](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/) | [C++](./C++/minimize-the-maximum-difference-of-pairs.cpp) [Python](./Python/minimize-the-maximum-difference-of-pairs.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | | Sort, Binary Search, Greedy |
 2702 | [Minimum Operations to Make Numbers Non-positive](https://leetcode.com/problems/minimum-operations-to-make-numbers-non-positive/) | [C++](./C++/minimum-operations-to-make-numbers-non-positive.cpp) [Python](./Python/minimum-operations-to-make-numbers-non-positive.py) | _O(nlogr)_ | _O(1)_ | Hard | 🔒 | Binary Search, Greedy |
+2936 | [Number of Equal Numbers Blocks](https://leetcode.com/problems/number-of-equal-numbers-blocks/) | [C++](./C++/number-of-equal-numbers-blocks.cpp) [Python](./Python/number-of-equal-numbers-blocks.py) | _O(klogn)_ | _O(1)_ | Medium | 🔒 | Binary Search |
 
 <br/>
 <div align="right">
