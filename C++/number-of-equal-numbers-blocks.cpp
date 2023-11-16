@@ -19,12 +19,12 @@ public:
 
         const int64_t n = nums->size();
         int64_t result = 0;
-        for (int64_t left = 0, right = n - 1; left != n; ++result) {
+        for (int64_t left = 0; left != n; ++result) {
             const int target = nums->at(left);
             const auto& check = [&](auto x) {
                 return nums->at(x) == target;
             };
-            left = binary_search_right(left, right, check) + 1;
+            left = binary_search_right(left, n - 1, check) + 1;
         }
         return result;
     }
