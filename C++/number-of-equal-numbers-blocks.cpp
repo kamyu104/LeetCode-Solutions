@@ -17,8 +17,9 @@ public:
             return right;
         };
 
+        const int64_t n = nums->size();
         int64_t result = 0;
-        for (int64_t left = 0, right = nums->size() - 1; left != nums->size(); ++result) {
+        for (int64_t left = 0, right = n - 1; left != n; ++result) {
             const int target = nums->at(left);
             const auto& check = [&](auto x) {
                 return nums->at(x) == target;
