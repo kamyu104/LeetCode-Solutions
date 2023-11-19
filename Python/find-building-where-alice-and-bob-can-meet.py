@@ -31,7 +31,7 @@ class Solution(object):
         return result
 
 
-# Time:  O(q + qlogn)
+# Time:  O(n + qlogn)
 # Space: O(n + q)
 # mono stack, binary search
 class Solution2(object):
