@@ -17,7 +17,6 @@ public:
                 continue;
             }
             result[i] = st.binary_search(b + 1, size(heights) - 1, 0, size(heights) - 1, 1, heights[a]);
-
         }
         return result;
     }
