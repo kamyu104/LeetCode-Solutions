@@ -17,8 +17,7 @@ public:
                 result.emplace_back(b);
                 continue;
             }
-            const int j = st.binary_search(b + 1, size(heights) - 1, 0, size(heights) - 1, 1, heights[a]);
-            result.emplace_back(j != -1 ? j : -1);
+            result.emplace_back(st.binary_search(b + 1, size(heights) - 1, 0, size(heights) - 1, 1, heights[a]));
 
         }
         return result;
