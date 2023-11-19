@@ -9,16 +9,10 @@ public:
 
         for (int64_t i = n - 1; i >= 0; --i) {
             const int64_t base = 1ll << i;
-            if ((a & base) == (b & base)) {
-                a |= base;
-                b |= base;
-                continue;
+            if ((min(a, b) & base) == 0) {
+                a ^= base;
+                b ^= base;
             }
-            if (a > b) {
-                swap(a, b);
-            }
-            a |= base;
-            b &= ~base;
         }
         return (a % MOD) * (b % MOD) % MOD;
     }
