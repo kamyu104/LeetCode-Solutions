@@ -63,6 +63,7 @@ public:
             }
             return right;
         };
+
         for (int b = size(heights) - 1; b >= 0; --b) {
             while (!empty(stk) && stk.back().first <= heights[b]) {
                 stk.pop_back();
