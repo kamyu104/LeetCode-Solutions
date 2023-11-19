@@ -43,15 +43,15 @@ class Solution(object):
         def build(i):
             return heights[i]
 
-        result = []
+        result = [-1]*len(queries)
         st = SegmentTree(len(heights), build_fn=build)
-        for a, b in queries:
+        for i, (a, b) in enumerate(queries):
             if a > b:
                 a, b = b, a
             if a == b or heights[a] < heights[b]:
-                result.append(b)
+                result[i] = b
                 continue
-            result.append(st.binary_search(b+1, len(heights)-1, 0, len(heights)-1, 1, heights[a]))
+            result[i] = st.binary_search(b+1, len(heights)-1, 0, len(heights)-1, 1, heights[a])
         return result
 
 
