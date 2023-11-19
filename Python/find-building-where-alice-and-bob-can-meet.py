@@ -73,7 +73,7 @@ class Solution2(object):
 
 # Time:  O(n + qlogn)
 # Space: O(n + q)
-# online solution, segment tree
+# online solution, segment tree, binary search
 class Solution3(object):
     def leftmostBuildingQueries(self, heights, queries):
         """
