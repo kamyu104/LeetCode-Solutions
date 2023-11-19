@@ -1,7 +1,7 @@
 // Time:  O(n + qlogq)
 // Space: O(n + q)
 
-// heap
+// offline solution, heap
 class Solution {
 public:
     vector<int> leftmostBuildingQueries(vector<int>& heights, vector<vector<int>>& queries) {
@@ -34,7 +34,7 @@ public:
 
 // Time:  O(n + qlogn)
 // Space: O(n + q)
-// mono stack, binary search
+// offline solution, mono stack, binary search
 class Solution2 {
 public:
     vector<int> leftmostBuildingQueries(vector<int>& heights, vector<vector<int>>& queries) {
@@ -80,4 +80,78 @@ public:
         }
         return result;
     }
+};
+
+// Time:  O(n + qlogn)
+// Space: O(n + q)
+// online solution, segment tree
+class Solution3 {
+public:
+    vector<int> leftmostBuildingQueries(vector<int>& heights, vector<vector<int>>& queries) {
+        static const int INF = numeric_limits<int>::max();
+
+        vector<int> result;
+        result.reserve(size(queries));
+        SegmentTree st(heights);
+        for (int i = 0; i < size(queries); ++i) {
+            int a = queries[i][0], b = queries[i][1];
+            if (a > b) {
+                swap(a, b);
+            }
+            if (a == b || heights[a] < heights[b]) {
+                result.emplace_back(b);
+                continue;
+            }
+            const int j = st.binary_search(b + 1, size(heights) - 1, 0, size(heights) - 1, 1, heights[a]);
+            result.emplace_back(j != INF ? j : -1);
+
+        }
+        return result;
+    }
+
+private:
+    class SegmentTree {
+    private:
+        const int NEG_INF = numeric_limits<int>::min();
+        const int INF = numeric_limits<int>::max();
+      
+    public:
+        explicit SegmentTree(const vector<int>& heights)
+          : tree(size(heights) > 1 ? 1 << (__lg(size(heights) - 1) + 2) : 2, NEG_INF),
+            heights(heights) {
+            
+            build(0, size(heights) - 1, 1);
+        }
+
+        void build(int left, int right, int idx) {
+            if (left == right) {
+                tree[idx] = heights[left];
+                return;
+            }
+            const int mid = left + (right - left) / 2;
+            build(left, mid, idx * 2);
+            build(mid + 1, right, idx * 2 + 1);
+            tree[idx] = max(tree[idx * 2], tree[idx * 2 + 1]);
+        }
+
+        int binary_search(int L, int R, int left, int right, int idx, int h) {
+            if (right < L || left > R) {
+                return INF;
+            }
+            if (L <= left && right <= R) {
+                if (!(tree[idx] > h)) {
+                    return INF;
+                }
+                if (left == right) {
+                    return left;
+                }
+            }
+            const int mid = left + (right - left) / 2;
+            const int i = binary_search(L, R, left, mid, idx * 2, h);
+            return i != INF ? i : binary_search(L, R, mid + 1, right, idx * 2 + 1, h);
+        }
+
+        vector<int> tree;
+        const vector<int>& heights;
+    };
 };
