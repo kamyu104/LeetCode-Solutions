@@ -30,15 +30,15 @@ class Solution(object):
 
             def binary_search(self, L, R, left, right, idx, h):
                 if right < L or left > R:
-                    return None
+                    return -1
                 if L <= left and right <= R:
                     if not self.tree[idx] > h:
-                        return None
+                        return -1
                     if left == right:
                         return left
                 mid = left + (right-left)//2
                 i = self.binary_search(L, R, left, mid, idx*2, h)
-                return i if i is not None else self.binary_search(L, R, mid+1, right, idx*2+1, h)
+                return i if i != -1 else self.binary_search(L, R, mid+1, right, idx*2+1, h)
 
         def build(i):
             return heights[i]
@@ -51,8 +51,7 @@ class Solution(object):
             if a == b or heights[a] < heights[b]:
                 result.append(b)
                 continue
-            i = st.binary_search(b+1, len(heights)-1, 0, len(heights)-1, 1, heights[a])
-            result.append(i if i is not None else -1)
+            result.append(st.binary_search(b+1, len(heights)-1, 0, len(heights)-1, 1, heights[a]))
         return result
 
 
