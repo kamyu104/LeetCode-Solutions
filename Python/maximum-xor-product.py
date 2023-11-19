@@ -13,10 +13,6 @@ class Solution(object):
         MOD = 10**9+7
         for i in reversed(xrange(n)):
             base = 1<<i
-            if a&base == b&base:
-                a, b = a|base, b|base
-                continue
-            if a > b:
-                a, b = b, a
-            a, b = a|base, b&~base
+            if min(a, b)&base == 0:
+                a, b= a^base, b^base
         return (a%MOD)*(b%MOD)%MOD
