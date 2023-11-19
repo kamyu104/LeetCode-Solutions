@@ -317,7 +317,6 @@
 2530 | [Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) | [C++](./C++/maximal-score-after-applying-k-operations.cpp) [Python](./Python/maximal-score-after-applying-k-operations.py) | _O(n + klogn)_ | _O(1)_ | Medium | | Heap, Simulation |
 2558 | [Take Gifts From the Richest Pile](https://leetcode.com/problems/take-gifts-from-the-richest-pile/) | [C++](./C++/take-gifts-from-the-richest-pile.cpp) [Python](./Python/take-gifts-from-the-richest-pile.py) | _O(n + klogn)_ | _O(1)_ | Easy | | Heap, Simulation |
 2818 | [Apply Operations to Maximize Score](https://leetcode.com/problems/apply-operations-to-maximize-score/) | [C++](./C++/apply-operations-to-maximize-score.cpp) [Python](./Python/apply-operations-to-maximize-score.py) | _O(sqrt(r) + n * (logr + sqrt(r)/log(sqrt(r))) + klogn)_ | _O(sqrt(r) + n)_ | Hard | | Number Theory, `Linear Sieve of Eratosthenes`, Mono Stack, Greedy, Sort, Heap |
-2940 | [Find Building Where Alice and Bob Can Meet](https://leetcode.com/problems/find-building-where-alice-and-bob-can-meet/) | [C++](./C++/find-building-where-alice-and-bob-can-meet.cpp) [Python](./Python/find-building-where-alice-and-bob-can-meet.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | Heap,  Mono Stack, Binary Search, Online Solution, Segment Tree |
 
 <br/>
 <div align="right">
@@ -657,6 +656,7 @@
 2616 | [Minimize the Maximum Difference of Pairs](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/) | [C++](./C++/minimize-the-maximum-difference-of-pairs.cpp) [Python](./Python/minimize-the-maximum-difference-of-pairs.py) | _O(nlogn + nlogr)_ | _O(1)_ | Medium | | Sort, Binary Search, Greedy |
 2702 | [Minimum Operations to Make Numbers Non-positive](https://leetcode.com/problems/minimum-operations-to-make-numbers-non-positive/) | [C++](./C++/minimum-operations-to-make-numbers-non-positive.cpp) [Python](./Python/minimum-operations-to-make-numbers-non-positive.py) | _O(nlogr)_ | _O(1)_ | Hard | 🔒 | Binary Search, Greedy |
 2936 | [Number of Equal Numbers Blocks](https://leetcode.com/problems/number-of-equal-numbers-blocks/) | [C++](./C++/number-of-equal-numbers-blocks.cpp) [Python](./Python/number-of-equal-numbers-blocks.py) | _O(klogn)_ | _O(1)_ | Medium | 🔒 | Binary Search |
+2940 | [Find Building Where Alice and Bob Can Meet](https://leetcode.com/problems/find-building-where-alice-and-bob-can-meet/) | [C++](./C++/find-building-where-alice-and-bob-can-meet.cpp) [Python](./Python/find-building-where-alice-and-bob-can-meet.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | Heap,  Mono Stack, Binary Search, Online Solution, Segment Tree |
 
 <br/>
 <div align="right">
