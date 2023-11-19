@@ -84,7 +84,7 @@ public:
 
 // Time:  O(n + qlogn)
 // Space: O(n + q)
-// online solution, segment tree
+// online solution, segment tree, binary search
 class Solution3 {
 public:
     vector<int> leftmostBuildingQueries(vector<int>& heights, vector<vector<int>>& queries) {
