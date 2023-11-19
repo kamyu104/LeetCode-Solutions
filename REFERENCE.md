@@ -71,6 +71,7 @@
 * Algorithms
     * Introduction 
         * [Introduction to Algorithms](https://www.amazon.com/dp/026204630X)
+        * [Programming Pearls](https://www.amazon.com/dp/0201657880) / [More Programming Pearls](https://www.amazon.com/dp/0201118890)
         * [Cracking the Coding Interview](https://www.amazon.com/dp/0984782850)
         * [Elements of Programming Interviews](https://www.amazon.com/dp/1479274836)
         * [STL源码剖析](https://item.jd.com/11821611.html)
