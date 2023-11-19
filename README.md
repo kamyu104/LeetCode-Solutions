@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2936%20%2F%202936-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2940%20%2F%202940-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -239,6 +239,7 @@
 2828 | [Check if a String Is an Acronym of Words](https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/)| [C++](./C++/check-if-a-string-is-an-acronym-of-words.cpp) [Python](./Python/check-if-a-string-is-an-acronym-of-words.py)| _O(n)_ | _O(1)_ | Easy | | String |
 2843 | [Count Symmetric Integers](https://leetcode.com/problems/count-symmetric-integers/)| [C++](./C++/count-symmetric-integers.cpp) [Python](./Python/count-symmetric-integers.py)| _O(rlogr)_ | _O(r)_ | Easy | | String, Brute Force, Memoization |
 2851 | [String Transformation](https://leetcode.com/problems/string-transformation/) | [C++](./C++/string-transformation.cpp) [Python](./Python/string-transformation.py) | _O(n + logk)_   | _O(n)_        | Hard         | | DP, Matrix Exponentiation, Math, `Z-Function`, `KMP Algorithm`
+2937 | [Make Three Strings Equal](https://leetcode.com/problems/make-three-strings-equal/)| [C++](./C++/make-three-strings-equal.cpp) [Python](./Python/make-three-strings-equal.py)| _O(n)_ | _O(1)_ | Easy | | String |
 
 <br/>
 <div align="right">
@@ -316,6 +317,7 @@
 2530 | [Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) | [C++](./C++/maximal-score-after-applying-k-operations.cpp) [Python](./Python/maximal-score-after-applying-k-operations.py) | _O(n + klogn)_ | _O(1)_ | Medium | | Heap, Simulation |
 2558 | [Take Gifts From the Richest Pile](https://leetcode.com/problems/take-gifts-from-the-richest-pile/) | [C++](./C++/take-gifts-from-the-richest-pile.cpp) [Python](./Python/take-gifts-from-the-richest-pile.py) | _O(n + klogn)_ | _O(1)_ | Easy | | Heap, Simulation |
 2818 | [Apply Operations to Maximize Score](https://leetcode.com/problems/apply-operations-to-maximize-score/) | [C++](./C++/apply-operations-to-maximize-score.cpp) [Python](./Python/apply-operations-to-maximize-score.py) | _O(sqrt(r) + n * (logr + sqrt(r)/log(sqrt(r))) + klogn)_ | _O(sqrt(r) + n)_ | Hard | | Number Theory, `Linear Sieve of Eratosthenes`, Mono Stack, Greedy, Sort, Heap |
+2940 | [Find Building Where Alice and Bob Can Meet](https://leetcode.com/problems/find-building-where-alice-and-bob-can-meet/) | [C++](./C++/find-building-where-alice-and-bob-can-meet.cpp) [Python](./Python/find-building-where-alice-and-bob-can-meet.py) | _O(n + qlogq)_ | _O(n + q)_ | Hard | | Heap,  Mono Stack, Binary Search |
 
 <br/>
 <div align="right">
@@ -609,6 +611,7 @@
 2875 | [Minimum Size Subarray in Infinite Array](https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/) | [C++](./C++/minimum-size-subarray-in-infinite-array.cpp) [Python](./Python/minimum-size-subarray-in-infinite-array.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum, Hash Table, Two Pointers, Sliding Window
 2904 | [Shortest and Lexicographically Smallest Beautiful String](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/) | [C++](./C++/shortest-and-lexicographically-smallest-beautiful-string.cpp) [Python](./Python/shortest-and-lexicographically-smallest-beautiful-string.py) | _O(n^2)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 2933 | [High-Access Employees](https://leetcode.com/problems/high-access-employees/) | [C++](./C++/high-access-employees.cpp) [Python](./Python/high-access-employees.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Two Pointers, Sliding Window
+2938 | [Separate Black and White Balls](https://leetcode.com/problems/separate-black-and-white-balls/) | [C++](./C++/separate-black-and-white-balls.cpp) [Python](./Python/separate-black-and-white-balls.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
 
 <br/>
 <div align="right">
@@ -975,6 +978,7 @@
 2914 | [Minimum Number of Changes to Make Binary String Beautiful](https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/) | [C++](./C++/minimum-number-of-changes-to-make-binary-string-beautiful.cpp) [Python](./Python/minimum-number-of-changes-to-make-binary-string-beautiful.py) | _O(n)_ | _O(1)_ | Medium |  | Greedy
 2918 | [Minimum Equal Sum of Two Arrays After Replacing Zeros](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/) | [C++](./C++/minimum-equal-sum-of-two-arrays-after-replacing-zeros.cpp) [Python](./Python/minimum-equal-sum-of-two-arrays-after-replacing-zeros.py) | _O(n + m)_ | _O(1)_ | Medium |  | Greedy
 2931 | [Minimum Equal Sum of Two Arrays After Replacing Zeros](https://leetcode.com/problems/maximum-spending-after-buying-items/) | [C++](./C++/maximum-spending-after-buying-items.cpp) [Python](./Python/maximum-spending-after-buying-items.py) | _O(m * n * logm)_ | _O(m)_ | Hard |  | Greedy, Heap
+2939 | [Maximum Xor Product](https://leetcode.com/problems/maximum-xor-product/) | [C++](./C++/maximum-xor-product.cpp) [Python](./Python/maximum-xor-product.py) | _O(n)_ | _O(1)_ | Medium |  | Greedy
 
 <br/>
 <div align="right">
