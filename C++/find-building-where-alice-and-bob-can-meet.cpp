@@ -5,8 +5,7 @@
 class Solution {
 public:
     vector<int> leftmostBuildingQueries(vector<int>& heights, vector<vector<int>>& queries) {
-        vector<int> result;
-        result.reserve(size(queries));
+        vector<int> result(size(queries), -1);
         SegmentTree st(heights);
         for (int i = 0; i < size(queries); ++i) {
             int a = queries[i][0], b = queries[i][1];
@@ -14,10 +13,10 @@ public:
                 swap(a, b);
             }
             if (a == b || heights[a] < heights[b]) {
-                result.emplace_back(b);
+                result[i] = b;
                 continue;
             }
-            result.emplace_back(st.binary_search(b + 1, size(heights) - 1, 0, size(heights) - 1, 1, heights[a]));
+            result[i] = st.binary_search(b + 1, size(heights) - 1, 0, size(heights) - 1, 1, heights[a]);
 
         }
         return result;
