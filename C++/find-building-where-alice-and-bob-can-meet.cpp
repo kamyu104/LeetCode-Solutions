@@ -83,7 +83,7 @@ public:
 };
 
 // Time:  O(n + qlogn)
-// Space: O(n + q)
+// Space: O(n)
 // online solution, segment tree, binary search
 class Solution3 {
 public:
