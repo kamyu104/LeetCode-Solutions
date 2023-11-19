@@ -69,7 +69,7 @@ public:
             }
             stk.emplace_back(heights[b], b);
             for (const auto& [ha, i] : qs[b]) {
-                const int j = binary_search_right(0, size(stk) - 1, [&, &ha=ha](int x) {
+                const int j = binary_search_right(0, size(stk) - 1, [&, &ha = ha](int x) {
                     return stk[x].first > ha;
                 });
                 if (j >= 0) {
