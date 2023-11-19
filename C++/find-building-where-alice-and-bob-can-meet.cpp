@@ -5,8 +5,6 @@
 class Solution {
 public:
     vector<int> leftmostBuildingQueries(vector<int>& heights, vector<vector<int>>& queries) {
-        static const int INF = numeric_limits<int>::max();
-
         vector<int> result;
         result.reserve(size(queries));
         SegmentTree st(heights);
@@ -20,7 +18,7 @@ public:
                 continue;
             }
             const int j = st.binary_search(b + 1, size(heights) - 1, 0, size(heights) - 1, 1, heights[a]);
-            result.emplace_back(j != INF ? j : -1);
+            result.emplace_back(j != -1 ? j : -1);
 
         }
         return result;
@@ -28,13 +26,9 @@ public:
 
 private:
     class SegmentTree {
-    private:
-        const int NEG_INF = numeric_limits<int>::min();
-        const int INF = numeric_limits<int>::max();
-      
     public:
         explicit SegmentTree(const vector<int>& heights)
-          : tree(size(heights) > 1 ? 1 << (__lg(size(heights) - 1) + 2) : 2, NEG_INF),
+          : tree(size(heights) > 1 ? 1 << (__lg(size(heights) - 1) + 2) : 2),
             heights(heights) {
             
             build(0, size(heights) - 1, 1);
@@ -53,11 +47,11 @@ private:
 
         int binary_search(int L, int R, int left, int right, int idx, int h) {
             if (right < L || left > R) {
-                return INF;
+                return -1;
             }
             if (L <= left && right <= R) {
                 if (!(tree[idx] > h)) {
-                    return INF;
+                    return -1;
                 }
                 if (left == right) {
                     return left;
@@ -65,7 +59,7 @@ private:
             }
             const int mid = left + (right - left) / 2;
             const int i = binary_search(L, R, left, mid, idx * 2, h);
-            return i != INF ? i : binary_search(L, R, mid + 1, right, idx * 2 + 1, h);
+            return i != -1 ? i : binary_search(L, R, mid + 1, right, idx * 2 + 1, h);
         }
 
         vector<int> tree;
