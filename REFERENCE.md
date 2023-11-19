@@ -64,6 +64,7 @@
     * JavaScript
         * [JavaScript: The Good Parts](https://www.amazon.com/dp/0596517742) 
         * [Eloquent JavaScript](https://eloquentjavascript.net/)
+        * [Learning Patterns](https://www.patterns.dev/#patterns)
     * Golang
         * [Go Programming Language](https://www.amazon.com/dp/0134190440)
         * [Concurrency in Go](https://www.amazon.com/dp/1491941197)
