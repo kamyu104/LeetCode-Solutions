@@ -4,7 +4,7 @@
 import heapq
 
 
-# heap
+# offline solution, heap
 class Solution(object):
     def leftmostBuildingQueries(self, heights, queries):
         """
@@ -33,7 +33,7 @@ class Solution(object):
 
 # Time:  O(n + qlogn)
 # Space: O(n + q)
-# mono stack, binary search
+# offline solution, mono stack, binary search
 class Solution2(object):
     def leftmostBuildingQueries(self, heights, queries):
         """
@@ -68,4 +68,62 @@ class Solution2(object):
                 j = binary_search_right(0, len(stk)-1, lambda x: stk[x][0] > ha)
                 if j >= 0:
                     result[i] = stk[j][1]
+        return result
+
+
+# Time:  O(n + qlogn)
+# Space: O(n + q)
+# online solution, segment tree
+class Solution3(object):
+    def leftmostBuildingQueries(self, heights, queries):
+        """
+        :type heights: List[int]
+        :type queries: List[List[int]]
+        :rtype: List[int]
+        """
+        INF = float("inf")
+        # Range Maximum Query
+        class SegmentTree(object):
+            def __init__(self, N,
+                         build_fn=lambda _: None,
+                         query_fn=lambda x, y: max(x, y)):
+                self.tree = [None]*(2*2**((N-1).bit_length()))
+                self.build_fn = build_fn
+                self.query_fn = query_fn
+                self.build(0, N-1, 1)
+            
+            def build(self, left, right, idx):
+                if left == right:
+                    self.tree[idx] = self.build_fn(left)
+                    return 
+                mid = left + (right-left)//2
+                self.build(left, mid, idx*2)
+                self.build(mid+1, right, idx*2+1)
+                self.tree[idx] = self.query_fn(self.tree[idx*2], self.tree[idx*2+1])
+
+            def query(self, L, R, left, right, idx, h):
+                if right < L or left > R:
+                    return INF
+                if L <= left and right <= R:
+                    if not self.tree[idx] > h:
+                        return INF
+                    if left == right:
+                        return left
+                mid = left + (right-left)//2
+                i = self.query(L, R, left, mid, idx*2, h)
+                return i if i != INF else self.query(L, R, mid+1, right, idx*2+1, h)
+
+        def build(i):
+            return heights[i]
+
+        result = []
+        st = SegmentTree(len(heights), build_fn=build)
+        for a, b in queries:
+            if a > b:
+                a, b = b, a
+            if a == b or heights[a] < heights[b]:
+                result.append(b)
+                continue
+            i = st.query(b+1, len(heights)-1, 0, len(heights)-1, 1, heights[a])
+            result.append(i if i != INF else -1)
         return result
