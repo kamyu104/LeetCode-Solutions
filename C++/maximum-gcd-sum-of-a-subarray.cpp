@@ -106,7 +106,7 @@ private:
     // Reference: https://cp-algorithms.com/data_structures/sparse-table.html
     class SparseTable {
     public:
-        SparseTable(const vector<int>& arr, const function<int (int, int)> fn)
+        SparseTable(const vector<int>& arr, function<int (int, int)> fn)
          :  fn(fn) {  // Time: O(n * logn * logr), Space: O(nlogn)
             const int n = size(arr);
             const int k = __lg(n);
