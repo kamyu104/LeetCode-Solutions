@@ -20,7 +20,7 @@ class Solution(object):
             dp.append((right, x, prefix))
             prefix += x
             new_dp = []
-            for left, g, p in dp:  # Time:  O(logr)
+            for left, g, p in dp:  # Time: O(logr)
                 ng = gcd(g, x)  # Total Time: O(nlogr)
                 if not new_dp or new_dp[-1][1] != ng:
                     new_dp.append((left, ng, p))  # left and ng are both strictly increasing
@@ -55,7 +55,7 @@ class Solution2(object):
         for right, x in enumerate(nums):
             dp.append((right, x))
             new_dp = []
-            for left, g in dp:  # Time:  O(logr)
+            for left, g in dp:  # Time: O(logr)
                 ng = gcd(g, x)  # Total Time: O(nlogr)
                 if not new_dp or new_dp[-1][1] != ng:
                     new_dp.append((left, ng))  # left and ng are both strictly increasing
