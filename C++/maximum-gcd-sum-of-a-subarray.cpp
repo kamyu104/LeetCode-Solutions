@@ -12,7 +12,7 @@ public:
             prefix += nums[right];
             vector<tuple<int, int, int64_t>> new_dp;
             new_dp.reserve(size(dp));
-            for (const auto& [left, g, p] : dp) {  // Time:  O(logr)
+            for (const auto& [left, g, p] : dp) {  // Time: O(logr)
                 const int ng = gcd(g, nums[right]);  // Total Time: O(nlogr)
                 if (empty(new_dp) || get<1>(new_dp.back()) != ng) {
                     new_dp.emplace_back(left, ng, p);  // left and ng are both strictly increasing
@@ -46,7 +46,7 @@ public:
             dp.emplace_back(right, nums[right]);
             vector<pair<int, int>> new_dp;
             new_dp.reserve(size(dp));
-            for (const auto& [left, g] : dp) {  // Time:  O(logr)
+            for (const auto& [left, g] : dp) {  // Time: O(logr)
                 const int ng = gcd(g, nums[right]);  // Total Time: O(nlogr)
                 if (empty(new_dp) || new_dp.back().second != ng) {
                     new_dp.emplace_back(left, ng);  // left and ng are both strictly increasing
