@@ -31,7 +31,7 @@ public:
 };
 
 // Time:  O(nlogr), r = max(nums)
-// Space: O(logr)
+// Space: O(n)
 // number theory, dp, prefix sum
 class Solution2 {
 public:
