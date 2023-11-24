@@ -110,6 +110,7 @@ public:
     }
 
 private:
+    // Reference: https://cp-algorithms.com/data_structures/sparse-table.html
     class SparseTable {
     public:
         SparseTable(const vector<int>& arr) {  // Time: O(n * logn * logr), Space: O(nlogn)
