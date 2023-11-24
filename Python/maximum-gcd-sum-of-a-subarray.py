@@ -120,7 +120,7 @@ class Solution3_TLE(object):
         rmq = SparseTable(nums)
         for left, x in enumerate(nums):
             right = left
-            while right != len(nums):  # O(logr) times
+            while right < len(nums):  # O(logr) times
                 g = rmq.query(left, right)
                 right = binary_search_right(right, len(nums)-1, lambda x: rmq.query(left, x) >= g)  # Time: O(logn)
                 if right-left+1 >= k:
