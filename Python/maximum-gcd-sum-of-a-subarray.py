@@ -103,7 +103,7 @@ class Solution3_TLE(object):
                 n = len(arr)
                 k = n.bit_length()-1  # log2_floor(n)
                 for i in xrange(k+1):
-                    self.bit_length.extend([i+1]*min(1<<i, (n+1)-len(self.bit_length)))
+                    self.bit_length.extend(i+1 for _ in xrange(min(1<<i, (n+1)-len(self.bit_length))))
                 self.st = [[0]*n for _ in xrange(k+1)]
                 self.st[0] = arr[:]
                 for i in xrange(1, k+1):  # Time: O(NlogN) * O(fn)
