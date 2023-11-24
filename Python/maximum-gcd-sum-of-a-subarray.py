@@ -26,7 +26,7 @@ class Solution(object):
                     new_dp.append((left, ng))  # left and ng are both non-decreasing
             dp = new_dp
             prefix = {right:prefix[right] for right, _ in dp}
-            prefix[right+1] = prev + x
+            prefix[right+1] = prev+x
             prev = prefix[right+1]
             for left, g in dp:
                 if right-left+1 < k:
