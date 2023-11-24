@@ -87,7 +87,7 @@ public:
             prefix[i + 1] = prefix[i] + nums[i];
         }
         int64_t result = 0;
-        SparseTable rmq(nums);
+        SparseTable rmq(nums, gcd<int, int>);
         for (int left = 0; left < size(nums); ++left) {
             for (int right = left; right < size(nums); ++right) {  // O(logr) times
                 const int g = rmq.query(left, right);
@@ -106,24 +106,26 @@ private:
     // Reference: https://cp-algorithms.com/data_structures/sparse-table.html
     class SparseTable {
     public:
-        SparseTable(const vector<int>& arr) {  // Time: O(n * logn * logr), Space: O(nlogn)
+        SparseTable(const vector<int>& arr, const function<int (int, int)>& fn)
+         :  fn(fn) {  // Time: O(n * logn * logr), Space: O(nlogn)
             const int n = size(arr);
             const int k = __lg(n);
             st.assign(k + 1, vector<int64_t>(n));
             st[0].assign(cbegin(arr), cend(arr));
             for (int i = 1; i <= k; ++i) {
                 for (int j = 0; j + (1 << i) <= n; ++j) {
-                    st[i][j] = gcd(st[i - 1][j], st[i - 1][j + (1 << (i - 1))]);
+                    st[i][j] = fn(st[i - 1][j], st[i - 1][j + (1 << (i - 1))]);
                 }
             }
          }
 
         int64_t query(int L, int R) {
             const int i = __lg(R - L + 1);
-            return gcd(st[i][L], st[i][R - (1 << i) + 1]);  // Time: O(logr)
+            return fn(st[i][L], st[i][R - (1 << i) + 1]);  // Time: O(logr)
         }
     
     private:
         vector<vector<int64_t>> st;
+        const function<int (int, int)> fn;
     };
 };
