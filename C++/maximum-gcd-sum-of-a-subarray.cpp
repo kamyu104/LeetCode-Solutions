@@ -119,7 +119,7 @@ private:
             }
          }
 
-        int64_t query(int L, int R) {
+        int64_t query(int L, int R) const {
             const int i = __lg(R - L + 1);
             return fn(st[i][L], st[i][R - (1 << i) + 1]);  // Time: O(logr)
         }
