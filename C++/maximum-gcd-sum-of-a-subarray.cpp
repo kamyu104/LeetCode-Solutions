@@ -15,7 +15,7 @@ public:
             for (const auto& [left, g, p] : dp) {  // Time:  O(logr)
                 const int ng = gcd(g, nums[right]);  // Total Time: O(nlogr)
                 if (empty(new_dp) || get<1>(new_dp.back()) != ng) {
-                    new_dp.emplace_back(left, ng, p);  // left and ng are both non-decreasing
+                    new_dp.emplace_back(left, ng, p);  // left and ng are both strictly increasing
                 }
             }
             dp = move(new_dp);
@@ -49,7 +49,7 @@ public:
             for (const auto& [left, g] : dp) {  // Time:  O(logr)
                 const int ng = gcd(g, nums[right]);  // Total Time: O(nlogr)
                 if (empty(new_dp) || new_dp.back().second != ng) {
-                    new_dp.emplace_back(left, ng);  // left and ng are both non-decreasing
+                    new_dp.emplace_back(left, ng);  // left and ng are both strictly increasing
                 }
             }
             dp = move(new_dp);
