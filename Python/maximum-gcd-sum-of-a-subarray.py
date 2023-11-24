@@ -70,7 +70,7 @@ class Solution2(object):
         return result
 
 
-# Time:  O(nlogr * logn), r = max(nums)
+# Time:  O(n * logr * (logn * logr)) = O(n * (logr)^2 * logn), r = max(nums)
 # Space: O(nlogn)
 # number theory, binary search, rmq, sparse table, prefix sum
 class Solution3_TLE(object):
@@ -100,7 +100,7 @@ class Solution3_TLE(object):
         # RMQ - Sparse Table
         # Template: https://github.com/kamyu104/GoogleCodeJam-Farewell-Rounds/blob/main/Round%20D/genetic_sequences2.py3
         class SparseTable(object):
-            def __init__(self, arr):  # Time: O(nlogn), Space: O(nlogn)
+            def __init__(self, arr):  # Time: O(n * logn * logr), Space: O(nlogn)
                 n = len(arr)
                 k = log2_floor(n)
                 self.st = [[0]*n for _ in xrange(k+1)]
