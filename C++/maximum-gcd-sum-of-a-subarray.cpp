@@ -5,32 +5,25 @@
 class Solution {
 public:
     long long maxGcdSum(vector<int>& nums, int k) {
-        int64_t result = 0, prev = 0;
-        unordered_map<int, int64_t> prefix = {{0, 0}};
-        vector<pair<int, int>> dp;
-        for (int right = 0; right < size(nums); ++right) {
-            dp.emplace_back(right, nums[right]);
-            vector<pair<int, int>> new_dp;
+        int64_t result = 0;
+        vector<tuple<int, int, int64_t>> dp;
+        for (int64_t right = 0, prefix = 0; right < size(nums); ++right) {
+            dp.emplace_back(right, nums[right], prefix);
+            prefix += nums[right];
+            vector<tuple<int, int, int64_t>> new_dp;
             new_dp.reserve(size(dp));
-            for (const auto& [left, g] : dp) {  // Time:  O(logr)
+            for (const auto& [left, g, p] : dp) {  // Time:  O(logr)
                 const int ng = gcd(g, nums[right]);  // Total Time: O(nlogr)
-                if (empty(new_dp) || new_dp.back().second != ng) {
-                    new_dp.emplace_back(left, ng);  // left and ng are both non-decreasing
+                if (empty(new_dp) || get<1>(new_dp.back()) != ng) {
+                    new_dp.emplace_back(left, ng, p);  // left and ng are both non-decreasing
                 }
             }
             dp = move(new_dp);
-            unordered_map<int, int64_t> new_prefix;
-            for (const auto& [left, g] : dp) {
-                new_prefix[left] = prefix[left];
-            }
-            prefix = move(new_prefix);
-            prefix[right + 1] = prev + nums[right];
-            prev = prefix[right + 1];
-            for (const auto& [left, g] : dp) {
+            for (const auto& [left, g, p] : dp) {
                 if (right - left + 1 < k) {
                     break;
                 }
-                result = max(result, (prefix[right + 1] - prefix[left]) * g);
+                result = max(result, (prefix - p) * g);
             }
         }
         return result;
