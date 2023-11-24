@@ -93,7 +93,7 @@ public:
                 const int g = rmq.query(left, right);
                 right = binary_search_right(right, size(nums) - 1, [&](const auto& x) {
                     return rmq.query(left, x) >= g;
-                });  // Time: O(logn)
+                });  // Time: O(logn) * O(logr)
                 if (right - left + 1 >= k) {
                     result = max(result, (prefix[right + 1] - prefix[left]) * g);
                 }
