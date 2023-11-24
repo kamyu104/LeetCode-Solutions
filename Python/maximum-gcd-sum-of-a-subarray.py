@@ -119,7 +119,7 @@ class Solution3_TLE(object):
             right = left
             while right < len(nums):  # O(logr) times
                 g = rmq.query(left, right)
-                right = binary_search_right(right, len(nums)-1, lambda x: rmq.query(left, x) >= g)  # Time: O(logn)
+                right = binary_search_right(right, len(nums)-1, lambda x: rmq.query(left, x) >= g)  # Time: O(logn) * O(logr)
                 if right-left+1 >= k:
                     result = max(result, (prefix[right+1]-prefix[left])*g)
                 right += 1
