@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2940%20%2F%202940-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2941%20%2F%202941-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -856,6 +856,7 @@
 2919 | [Minimum Increment Operations to Make Array Beautiful](https://leetcode.com/problems/minimum-increment-operations-to-make-array-beautiful/) | [C++](./C++/minimum-increment-operations-to-make-array-beautiful.cpp) [Python](./Python/minimum-increment-operations-to-make-array-beautiful.py) | _O(n)_ | _O(1)_ | Medium | | DP
 2920 | [Maximum Points After Collecting Coins From All Nodes](https://leetcode.com/problems/maximum-points-after-collecting-coins-from-all-nodes/) | [C++](./C++/maximum-points-after-collecting-coins-from-all-nodes.cpp) [Python](./Python/maximum-points-after-collecting-coins-from-all-nodes.py) | _O(nlogr)_ | _O(n)_ | Hard | | Tree DP, Memoization, DFS, Pruning
 2925 | [Maximum Score After Applying Operations on a Tree](https://leetcode.com/problems/maximum-score-after-applying-operations-on-a-tree/) | [C++](./C++/maximum-score-after-applying-operations-on-a-tree.cpp) [Python](./Python/maximum-score-after-applying-operations-on-a-tree.py) | _O(n)_ | _O(n)_ | Medium | | DFS, Tree DP
+2941 | [Maximum GCD-Sum of a Subarray](https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/) | [C++](./C++/maximum-gcd-sum-of-a-subarray.cpp) [Python](./Python/maximum-gcd-sum-of-a-subarray.py) | _O(nlogr)_ | _O(logr)_ | Hard | 🔒 | Number Theory, DP, Prefix Sum, Binary Search, RMQ, Sparse Table
 
 <br/>
 <div align="right">
