@@ -25,7 +25,7 @@ class Solution(object):
                 if not new_dp or new_dp[-1][1] != ng:
                     new_dp.append((left, ng))  # left and ng are both non-decreasing
             dp = new_dp
-            prefix = {right:prefix[right] for right, _ in dp}
+            prefix = {left:prefix[left] for left, _ in dp}
             prefix[right+1] = prev+x
             prev = prefix[right+1]
             for left, g in dp:
@@ -127,4 +127,3 @@ class Solution3_TLE(object):
                     result = max(result, (prefix[right+1]-prefix[left])*g)
                 right += 1
         return result
-        
