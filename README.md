@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2941%20%2F%202941-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2949%20%2F%202949-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -178,6 +178,7 @@
 2908 | [Minimum Sum of Mountain Triplets I](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-i/) | [C++](./C++/minimum-sum-of-mountain-triplets-i.cpp) [Python](./Python/minimum-sum-of-mountain-triplets-i.py) | _O(n)_ | _O(n)_ | Easy | | Prefix Sum
 2909 | [Minimum Sum of Mountain Triplets II](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/) | [C++](./C++/minimum-sum-of-mountain-triplets-ii.cpp) [Python](./Python/minimum-sum-of-mountain-triplets-ii.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
 2923 | [Find Champion I](https://leetcode.com/problems/find-champion-i/) | [C++](./C++/find-champion-i.cpp) [Python](./Python/find-champion-i.py) | _O(n^2)_ | _O(1)_ | Easy | | Array
+2946 | [Matrix Similarity After Cyclic Shifts](https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/) | [C++](./C++/matrix-similarity-after-cyclic-shifts.cpp) [Python](./Python/matrix-similarity-after-cyclic-shifts.py) | _O(m * n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -240,6 +241,7 @@
 2843 | [Count Symmetric Integers](https://leetcode.com/problems/count-symmetric-integers/)| [C++](./C++/count-symmetric-integers.cpp) [Python](./Python/count-symmetric-integers.py)| _O(rlogr)_ | _O(r)_ | Easy | | String, Brute Force, Memoization |
 2851 | [String Transformation](https://leetcode.com/problems/string-transformation/) | [C++](./C++/string-transformation.cpp) [Python](./Python/string-transformation.py) | _O(n + logk)_   | _O(n)_        | Hard         | | DP, Matrix Exponentiation, Math, `Z-Function`, `KMP Algorithm`
 2937 | [Make Three Strings Equal](https://leetcode.com/problems/make-three-strings-equal/)| [C++](./C++/make-three-strings-equal.cpp) [Python](./Python/make-three-strings-equal.py)| _O(n)_ | _O(1)_ | Easy | | String |
+2942 | [Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/)| [C++](./C++/find-words-containing-character.cpp) [Python](./Python/find-words-containing-character.py)| _O(n * l)_ | _O(1)_ | Easy | | String |
 
 <br/>
 <div align="right">
@@ -424,7 +426,9 @@
 2845 | [Count of Interesting Subarrays](https://leetcode.com/problems/count-of-interesting-subarrays/) | [C++](./C++/count-of-interesting-subarrays.cpp) [Python](./Python/count-of-interesting-subarrays.py) | _O(n)_ | _O(m)_ | Medium | | Freq Table, Prefix Sum
 2857 | [Count Pairs of Points With Distance k](https://leetcode.com/problems/count-pairs-of-points-with-distance-k/) | [C++](./C++/count-pairs-of-points-with-distance-k.cpp) [Python](./Python/count-pairs-of-points-with-distance-k.py) | _O(n * k)_ | _O(n)_ | Medium | | Freq Table
 2869 | [Minimum Operations to Collect Elements](https://leetcode.com/problems/minimum-operations-to-collect-elements/) | [C++](./C++/minimum-operations-to-collect-elements.cpp) [Python](./Python/minimum-operations-to-collect-elements.py) | _O(n)_ | _O(k)_ | Easy | | Hash Table
-
+2943 | [Maximize Area of Square Hole in Grid](https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/) | [C++](./C++/maximize-area-of-square-hole-in-grid.cpp) [Python](./Python/maximize-area-of-square-hole-in-grid.py) | _O(h + v)_ | _O(h + v)_ | Medium | | Array, Sort, Hash Table
+2947 | [Count Beautiful Substrings I](https://leetcode.com/problems/count-beautiful-substrings-i/) | [C++](./C++/count-beautiful-substrings-i.cpp) [Python](./Python/count-beautiful-substrings-i.py) | _O(n + sqrt(k))_ | _O(n)_ | Medium | | Brute Force, Number Theory, Prefix Sum, Freq Table
+2949 | [Count Beautiful Substrings II](https://leetcode.com/problems/count-beautiful-substrings-ii/) | [C++](./C++/count-beautiful-substrings-ii.cpp) [Python](./Python/count-beautiful-substrings-ii.py) | _O(n + sqrt(k))_ | _O(n)_ | Hard | | Brute Force, Number Theory, Prefix Sum, Freq Table
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -550,6 +554,7 @@
 2740 | [Find the Value of the Partition](https://leetcode.com/problems/find-the-value-of-the-partition/) | [C++](./C++/find-the-value-of-the-partition.cpp) [Python](./Python/find-the-value-of-the-partition.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort
 2785 | [Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/) | [C++](./C++/sort-vowels-in-a-string.cpp) [Python](./Python/sort-vowels-in-a-string.py) | _O(n)_   | _O(1)_        | Medium         | | Counting Sort
 2792 | [Count Nodes That Are Great Enough](https://leetcode.com/problems/count-nodes-that-are-great-enough/) | [C++](./C++/count-nodes-that-are-great-enough.cpp) [Python](./Python/count-nodes-that-are-great-enough.py) | _O(k * h)_   | _O(k + h)_        | Hard         | 🔒 | Merge Sort
+2948 | [Make Lexicographically Smallest Array by Swapping Elements](https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/) | [C++](./C++/make-lexicographically-smallest-array-by-swapping-elements.cpp) [Python](./Python/make-lexicographically-smallest-array-by-swapping-elements.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort
 
 <br/>
 <div align="right">
@@ -857,6 +862,8 @@
 2920 | [Maximum Points After Collecting Coins From All Nodes](https://leetcode.com/problems/maximum-points-after-collecting-coins-from-all-nodes/) | [C++](./C++/maximum-points-after-collecting-coins-from-all-nodes.cpp) [Python](./Python/maximum-points-after-collecting-coins-from-all-nodes.py) | _O(nlogr)_ | _O(n)_ | Hard | | Tree DP, Memoization, DFS, Pruning
 2925 | [Maximum Score After Applying Operations on a Tree](https://leetcode.com/problems/maximum-score-after-applying-operations-on-a-tree/) | [C++](./C++/maximum-score-after-applying-operations-on-a-tree.cpp) [Python](./Python/maximum-score-after-applying-operations-on-a-tree.py) | _O(n)_ | _O(n)_ | Medium | | DFS, Tree DP
 2941 | [Maximum GCD-Sum of a Subarray](https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/) | [C++](./C++/maximum-gcd-sum-of-a-subarray.cpp) [Python](./Python/maximum-gcd-sum-of-a-subarray.py) | _O(nlogr)_ | _O(logr)_ | Hard | 🔒 | Number Theory, DP, Prefix Sum, Binary Search, RMQ, Sparse Table
+2944 | [Minimum Number of Coins for Fruits](https://leetcode.com/problems/minimum-number-of-coins-for-fruits/) | [C++](./C++/minimum-number-of-coins-for-fruits.cpp) [Python](./Python/minimum-number-of-coins-for-fruits.py) | _O(n)_ | _O(n)_ | Medium | | DP, Sorted List, BST, Mono Deque
+2945 | [Find Maximum Non-decreasing Array Length](https://leetcode.com/problems/find-maximum-non-decreasing-array-length/) | [C++](./C++/find-maximum-non-decreasing-array-length.cpp) [Python](./Python/find-maximum-non-decreasing-array-length.py) | _O(n)_ | _O(n)_ | Hard | | DP, Greedy, Prefix Sum, Binary Search, Mono Stack, Mono Deque, Two Pointers
 
 <br/>
 <div align="right">
