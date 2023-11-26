@@ -7,25 +7,21 @@ public:
     int minimumCoins(vector<int>& prices) {
         static const int INF = numeric_limits<int>::max();
 
-        vector<int> dp(size(prices), INF);
-        dp[0] = prices[0];
+        vector<int> dp(size(prices) + 1, INF);
+        dp[0] = 0;
         deque<int> dq;
-        for (int i = 1, j = 1; i < size(prices); ++i) {
-            while (!empty(dq) && dp[dq.back() - 1] + prices[dq.back()] >= dp[i - 1] + prices[i]) {
+        for (int i = 0, j = 0; i < size(prices); ++i) {
+            while (!empty(dq) && dp[dq.back()] + prices[dq.back()] >= dp[i] + prices[i]) {
                 dq.pop_back();
             }
             dq.emplace_back(i);
-            if (i == 1) {
-                dp[1] = prices[0];
-                continue;
-            }
             for (; j + (j + 1) < i; ++j) {
                 assert(!empty(dq));
                 if (dq.front() <= j) {
                     dq.pop_front();
                 }
             }
-            dp[i] = dp[dq.front() - 1] + prices[dq.front()];
+            dp[i + 1] = dp[dq.front()] + prices[dq.front()];
         }
         return dp.back();
     }
@@ -39,19 +35,15 @@ public:
     int minimumCoins(vector<int>& prices) {
         static const int INF = numeric_limits<int>::max();
 
-        vector<int> dp(size(prices), INF);
-        dp[0] = prices[0];
+        vector<int> dp(size(prices) + 1, INF);
+        dp[0] = 0;
         set<pair<int, int>> bst;
-        for (int i = 1, j = 1; i < size(prices); ++i) {
-            bst.emplace(dp[i - 1] + prices[i], i);
-            if (i == 1) {
-                dp[1] = prices[0];
-                continue;
-            }
+        for (int i = 0, j = 0; i < size(prices); ++i) {
+            bst.emplace(dp[i] + prices[i], i);
             for (; j + (j + 1) < i; ++j) {
-                bst.erase(pair(dp[j - 1] + prices[j], j));
+                bst.erase(pair(dp[j] + prices[j], j));
             }
-            dp[i] = dp[cbegin(bst)->second - 1] + prices[cbegin(bst)->second];
+            dp[i + 1] = dp[cbegin(bst)->second] + prices[cbegin(bst)->second];
         }
         return dp.back();
     }
@@ -65,15 +57,11 @@ public:
     int minimumCoins(vector<int>& prices) {
         static const int INF = numeric_limits<int>::max();
 
-        vector<int> dp(size(prices), INF);
-        dp[0] = prices[0];
-        for (int i = 1; i < size(prices); ++i) {
-            if (i == 1) {
-                dp[1] = prices[0];
-                continue;
-            }
-            for (int j = max(i / 2, 1); j <= i; ++j) {
-                dp[i] = min(dp[i], dp[j - 1] + prices[j]);
+        vector<int> dp(size(prices) + 1, INF);
+        dp[0] = 0;
+        for (int i = 0; i < size(prices); ++i) {
+            for (int j = i / 2; j <= i; ++j) {
+                dp[i + 1] = min(dp[i + 1], dp[j] + prices[j]);
             }
         }
         return dp.back();
