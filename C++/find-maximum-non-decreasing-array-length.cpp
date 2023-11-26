@@ -71,3 +71,27 @@ public:
         return dp;
     }
 };
+
+// Time:  O(nlogn)
+// Space: O(n)
+// dp, greedy, prefix sum, binary search
+class Solution4 {
+public:
+    int findMaximumLength(vector<int>& nums) {
+        vector<int64_t> prefix(size(nums) + 1);
+        for (int i = 0; i < size(nums); ++i) {
+            prefix[i + 1] = prefix[i] + nums[i];
+        }
+        vector<int64_t> dp(size(nums) + 1, numeric_limits<int>::max());
+        dp[0] = 0;
+        vector<int> prev(size(nums) + 1, -1);
+        for (int right = 0, left = -1; right < size(nums); ++right) {
+            left = max(left, prev[right]);
+            dp[right + 1] = dp[left + 1] + 1;
+            const int next_right = distance(cbegin(prefix), lower_bound(cbegin(prefix), cend(prefix), prefix[right + 1] + (prefix[right + 1] - prefix[left + 1]))) - 1;
+            prev[next_right] = right;
+        }
+        return dp.back();
+    }
+};
+
