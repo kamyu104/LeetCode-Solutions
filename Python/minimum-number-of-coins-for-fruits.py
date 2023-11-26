@@ -11,23 +11,20 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        dp = [float("inf")]*len(prices)
-        dp[0] = prices[0]
+        dp = [float("inf")]*(len(prices)+1)
+        dp[0] = 0
         dq = collections.deque()
-        j = 1
-        for i in xrange(1, len(prices)):
-            while dq and dp[dq[-1]-1]+prices[dq[-1]] >= dp[i-1]+prices[i]:
+        j = 0
+        for i in xrange(len(prices)):
+            while dq and dp[dq[-1]]+prices[dq[-1]] >= dp[i]+prices[i]:
                 dq.pop()
             dq.append(i)
-            if i == 1:
-                dp[1] = prices[0]
-                continue
             while j+(j+1) < i:
                 assert(len(dq) != 0)
                 if dq[0] <= j:
                     dq.popleft()
                 j += 1
-            dp[i] = dp[dq[0]-1]+prices[dq[0]]
+            dp[i+1] = dp[dq[0]]+prices[dq[0]]
         return dp[-1]
 
 
@@ -43,19 +40,16 @@ class Solution2(object):
         :type prices: List[int]
         :rtype: int
         """
-        dp = [float("inf")]*len(prices)
-        dp[0] = prices[0]
+        dp = [float("inf")]*(len(prices)+1)
+        dp[0] = 0
         sl = SortedList()
-        j = 1
-        for i in xrange(1, len(prices)):
-            sl.add((dp[i-1]+prices[i], i))
-            if i == 1:
-                dp[1] = prices[0]
-                continue
+        j = 0
+        for i in xrange(len(prices)):
+            sl.add((dp[i]+prices[i], i))
             while j+(j+1) < i:
-                sl.remove(((dp[j-1]+prices[j], j)))
+                sl.remove(((dp[j]+prices[j], j)))
                 j += 1
-            dp[i] = sl[0][0]
+            dp[i+1] = sl[0][0]
         return dp[-1]
 
 
@@ -68,12 +62,9 @@ class Solution3(object):
         :type prices: List[int]
         :rtype: int
         """
-        dp = [float("inf")]*len(prices)
-        dp[0] = prices[0]
-        for i in xrange(1, len(prices)):
-            if i == 1:
-                dp[1] = prices[0]
-                continue
-            for j in xrange(max(i//2, 1), i+1):
-                dp[i] = min(dp[i], dp[j-1]+prices[j])
+        dp = [float("inf")]*(len(prices)+1)
+        dp[0] = 0
+        for i in xrange(len(prices)):
+            for j in xrange(i//2, i+1):
+                dp[i+1] = min(dp[i+1], dp[j]+prices[j])
         return dp[-1]
