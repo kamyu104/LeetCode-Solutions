@@ -5,9 +5,7 @@
 class Solution {
 public:
     int minimumCoins(vector<int>& prices) {
-        static const int INF = numeric_limits<int>::max();
-
-        vector<int> dp(size(prices) + 1, INF);
+        vector<int> dp(size(prices) + 1, numeric_limits<int>::max());
         dp[0] = 0;
         deque<int> dq;
         for (int i = 0, j = 0; i < size(prices); ++i) {
@@ -33,9 +31,7 @@ public:
 class Solution2 {
 public:
     int minimumCoins(vector<int>& prices) {
-        static const int INF = numeric_limits<int>::max();
-
-        vector<int> dp(size(prices) + 1, INF);
+        vector<int> dp(size(prices) + 1, numeric_limits<int>::max());
         dp[0] = 0;
         set<pair<int, int>> bst;
         for (int i = 0, j = 0; i < size(prices); ++i) {
@@ -55,9 +51,7 @@ public:
 class Solution3 {
 public:
     int minimumCoins(vector<int>& prices) {
-        static const int INF = numeric_limits<int>::max();
-
-        vector<int> dp(size(prices) + 1, INF);
+        vector<int> dp(size(prices) + 1, numeric_limits<int>::max());
         dp[0] = 0;
         for (int i = 0; i < size(prices); ++i) {
             for (int j = i / 2; j <= i; ++j) {
