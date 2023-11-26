@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# greedy, prefix sum, mono stack, two pointers
+# dp, greedy, prefix sum, mono stack, two pointers
 class Solution(object):
     def findMaximumLength(self, nums):
         """
@@ -27,7 +27,7 @@ class Solution(object):
 import bisect
 
 
-# greedy, prefix sum, mono stack, binary search
+# dp, greedy, prefix sum, mono stack, binary search
 class Solution2(object):
     def findMaximumLength(self, nums):
         """
