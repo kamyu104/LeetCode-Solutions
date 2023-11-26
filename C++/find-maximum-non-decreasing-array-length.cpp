@@ -23,10 +23,36 @@ public:
     }
 };
 
+// Time:  O(n)
+// Space: O(n)
+// dp, greedy, prefix sum, mono deque
+class Solution2 {
+public:
+    int findMaximumLength(vector<int>& nums) {
+        int dp = 0;
+        int64_t prefix = 0, prev_prefix = 0, prev_dp = 0;;
+        deque<vector<int64_t>> dq;
+        for (int right = 0; right < size(nums); ++right) {
+            prefix += nums[right];
+            for (; !empty(dq) && dq.front()[0] <= prefix; dq.pop_front()) {
+                prev_prefix = dq.front()[1];
+                prev_dp = dq.front()[2];
+            }
+            const int last = prefix - prev_prefix;
+            dp = prev_dp + 1;
+            while (!empty(dq) && dq.back()[0] >= last + prefix) {
+                dq.pop_back();
+            }
+            dq.push_back({last + prefix, prefix, dp});
+        }
+        return dp;
+    }
+};
+
 // Time:  O(nlogn)
 // Space: O(n)
 // dp, greedy, prefix sum, mono stack, binary search
-class Solution2 {
+class Solution3 {
 public:
     int findMaximumLength(vector<int>& nums) {
         int dp = 0;
