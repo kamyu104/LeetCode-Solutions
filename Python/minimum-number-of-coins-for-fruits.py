@@ -1,10 +1,10 @@
 # Time:  O(n)
 # Space: O(n)
 
-# dp, mono deque
 import collections
 
 
+# dp, mono deque
 class Solution(object):
     def minimumCoins(self, prices):
         """
