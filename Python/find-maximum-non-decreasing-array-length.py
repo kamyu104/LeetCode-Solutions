@@ -69,3 +69,30 @@ class Solution3(object):
                 stk.pop()
             stk.append((last+prefix, prefix, dp))
         return dp
+
+
+# Time:  O(nlogn)
+# Space: O(n)
+import bisect
+
+
+# dp, greedy, prefix sum, binary search
+class Solution4(object):
+    def findMaximumLength(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        prefix = [0]*(len(nums)+1)
+        for i in xrange(len(nums)):
+            prefix[i+1] = prefix[i]+nums[i]
+        prev = [-1]*(len(nums)+1)
+        dp = [float("inf")]*(len(nums)+1)
+        dp[0] = 0
+        left = -1
+        for right in xrange(len(nums)):
+            left = max(left, prev[right])
+            dp[right+1] = dp[left+1]+1
+            next_right = bisect.bisect_left(prefix, prefix[right+1]+(prefix[right+1]-prefix[left+1]))-1
+            prev[next_right] = right
+        return dp[-1]
