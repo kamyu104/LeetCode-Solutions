@@ -24,8 +24,8 @@ class Solution(object):
                 continue
             while j+(j+1) < i:
                 j += 1
+                assert(len(dq) != 0)
                 if dq[0] < j:
-                    assert(len(dq) != 0)
                     dq.popleft()
             dp[i] = dp[dq[0]-1]+prices[dq[0]]
         return dp[-1]
