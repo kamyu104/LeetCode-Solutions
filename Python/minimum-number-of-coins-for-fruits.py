@@ -13,8 +13,8 @@ class Solution(object):
         """
         dp = [float("inf")]*len(prices)
         dp[0] = prices[0]
-        j = 1
         dq = collections.deque()
+        j = 1
         for i in xrange(1, len(prices)):
             while dq and dp[dq[-1]-1]+prices[dq[-1]] >= dp[i-1]+prices[i]:
                 dq.pop()
@@ -45,8 +45,8 @@ class Solution2(object):
         """
         dp = [float("inf")]*len(prices)
         dp[0] = prices[0]
-        j = 1
         sl = SortedList()
+        j = 1
         for i in xrange(1, len(prices)):
             sl.add((dp[i-1]+prices[i], i))
             if i == 1:
