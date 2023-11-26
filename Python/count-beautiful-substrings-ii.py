@@ -4,7 +4,7 @@
 import collections
 
 
-# prefix sum, freq table
+# number theory, prefix sum, freq table
 class Solution(object):
     def beautifulSubstrings(self, s, k):
         """
