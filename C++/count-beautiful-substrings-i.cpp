@@ -1,7 +1,7 @@
 // Time:  O(n + sqrt(k))
 // Space: O(n)
 
-// prefix sum, freq table
+// number theory, prefix sum, freq table
 class Solution {
 public:
     int beautifulSubstrings(string s, int k) {
