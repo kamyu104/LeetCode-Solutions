@@ -5,7 +5,8 @@
 class Solution {
 public:
     int findMaximumLength(vector<int>& nums) {
-        int64_t dp = 0, prefix = 0;
+        int dp = 0;
+        int64_t prefix = 0;
         vector<vector<int64_t>> stk = {{0, 0, 0}};
         for (int right = 0, left = 0; right < size(nums); ++right) {
             prefix += nums[right];
@@ -28,7 +29,8 @@ public:
 class Solution2 {
 public:
     int findMaximumLength(vector<int>& nums) {
-        int64_t dp = 0, prefix = 0;
+        int dp = 0;
+        int64_t prefix = 0;
         vector<vector<int64_t>> stk = {{0, 0, 0}};
         for (int right = 0; right < size(nums); ++right) {
             prefix += nums[right];
