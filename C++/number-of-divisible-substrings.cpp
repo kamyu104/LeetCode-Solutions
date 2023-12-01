@@ -1,7 +1,7 @@
 // Time:  O(d * n)
 // Space: O(n)
 
-// freq table
+// prefix sum, freq table
 class Solution {
 public:
     int countDivisibleSubstrings(string word) {
