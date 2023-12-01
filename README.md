@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2949%20%2F%202949-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2950%20%2F%202950-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -429,6 +429,8 @@
 2943 | [Maximize Area of Square Hole in Grid](https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/) | [C++](./C++/maximize-area-of-square-hole-in-grid.cpp) [Python](./Python/maximize-area-of-square-hole-in-grid.py) | _O(h + v)_ | _O(h + v)_ | Medium | | Array, Sort, Hash Table
 2947 | [Count Beautiful Substrings I](https://leetcode.com/problems/count-beautiful-substrings-i/) | [C++](./C++/count-beautiful-substrings-i.cpp) [Python](./Python/count-beautiful-substrings-i.py) | _O(n + sqrt(k))_ | _O(n)_ | Medium | | Brute Force, Number Theory, Prefix Sum, Freq Table
 2949 | [Count Beautiful Substrings II](https://leetcode.com/problems/count-beautiful-substrings-ii/) | [C++](./C++/count-beautiful-substrings-ii.cpp) [Python](./Python/count-beautiful-substrings-ii.py) | _O(n + sqrt(k))_ | _O(n)_ | Hard | | Brute Force, Number Theory, Prefix Sum, Freq Table
+2950 | [Number of Divisible Substrings](https://leetcode.com/problems/number-of-divisible-substrings/) | [C++](./C++/number-of-divisible-substrings.cpp) [Python](./Python/number-of-divisible-substrings.py) | _O(d * n)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, Freq Table
+
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
