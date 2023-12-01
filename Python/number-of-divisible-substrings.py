@@ -4,7 +4,7 @@
 import collections
 
 
-# freq table
+# prefix sum, freq table
 class Solution(object):
     def countDivisibleSubstrings(self, word):
         """
