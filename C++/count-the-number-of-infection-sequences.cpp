@@ -46,11 +46,11 @@ private:
             swap(a, b);
         }
         while (b > 0)  { 
-            if (b % 2 == 1) {
+            if (b & 1) {
                 result = addmod(result, a);
             }
             a = addmod(a, a);
-            b /= 2; 
+            b >>= 1;
         } 
         return result; 
     }
