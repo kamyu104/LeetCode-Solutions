@@ -526,7 +526,7 @@
 2928 | [Distribute Candies Among Children I](https://leetcode.com/problems/distribute-candies-among-children-i/) | [C++](./C++/distribute-candies-among-children-i.cpp) [Python](./Python/distribute-candies-among-children-i.py) | _O(1)_ | _O(1)_ | Easy | | Stars and Bars, Combinatorics, Principle of Inclusion and Exclusion, Brute Force |
 2929 | [Distribute Candies Among Children II](https://leetcode.com/problems/distribute-candies-among-children-ii/) | [C++](./C++/distribute-candies-among-children-ii.cpp) [Python](./Python/distribute-candies-among-children-ii.py) | _O(1)_ | _O(1)_ | Medium | | Stars and Bars, Combinatorics, Principle of Inclusion and Exclusion, Brute Force |
 2930 | [Number of Strings Which Can Be Rearranged to Contain Substring](https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/) | [C++](./C++/number-of-strings-which-can-be-rearranged-to-contain-substring.cpp) [Python](./Python/number-of-strings-which-can-be-rearranged-to-contain-substring.py) | _O(1)_ | _O(1)_ | Medium | | Combinatorics, Principle of Inclusion and Exclusion, Bitmasks, DP |
-2954 | [Count the Number of Infection Sequences](https://leetcode.com/problems/count-the-number-of-infection-sequences/) | [C++](./C++/count-the-number-of-infection-sequences.cpp) [Python](./Python/count-the-number-of-infection-sequences.py) | _O(n)_ | _O(n)_ | Hard | | Combinatorics |
+2954 | [Count the Number of Infection Sequences](https://leetcode.com/problems/count-the-number-of-infection-sequences/) | [C++](./C++/count-the-number-of-infection-sequences.cpp) [Python](./Python/count-the-number-of-infection-sequences.py) | precompute: _O(max_n)_<br>runtime: _O(s + logn)_ | _O(max_n)_ | Hard | | Combinatorics |
 
 <br/>
 <div align="right">
