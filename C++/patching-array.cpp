@@ -6,6 +6,33 @@ public:
     int minPatches(vector<int>& nums, int n) {
         int result = 0, reachable = 0;
         for (const auto& x : nums) {
+            if (x > n) {
+                break;
+            }
+            while (!(reachable >= x - 1)) {
+                ++result;
+                reachable += reachable + 1;
+            }
+            reachable += x;
+        }
+        if (reachable >= n) {
+            return result;
+        }
+        ++result;
+        for (; !(reachable >= n - (reachable + 1)); reachable += reachable + 1) {
+            ++result;
+        }
+        return result;
+    }
+};
+
+// Time:  O(s + logn), s is the number of elements in the array
+// Space: O(1)
+class Solution2 {
+public:
+    int minPatches(vector<int>& nums, int n) {
+        int result = 0, reachable = 0;
+        for (const auto& x : nums) {
             while (!(reachable >= x - 1)) {
                 ++result;
                 if (reachable >= n - (reachable + 1)) {
@@ -28,7 +55,7 @@ public:
 
 // Time:  O(s + logn), s is the number of elements in the array
 // Space: O(1)
-class Solution2 {
+class Solution3 {
 public:
     int minPatches(vector<int>& nums, int n) {
         int patch = 0;
