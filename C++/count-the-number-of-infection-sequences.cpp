@@ -2,9 +2,9 @@
 // Space: O(n)
 
 // combinatorics
-vector<int> fact = {1, 1};
-vector<int> inv = {1, 1};
-vector<int> inv_fact = {1, 1};
+vector<int> FACT = {1, 1};
+vector<int> INV = {1, 1};
+vector<int> INV_FACT = {1, 1};
 class Solution {
 public:
     int numberOfSequence(int n, vector<int>& sick) {
@@ -22,12 +22,12 @@ public:
 
 private:
     int nCr(int n, int k) {
-        while (size(inv) <= n) {  // lazy initialization
-            fact.emplace_back(mulmod(fact.back(), size(inv)));
-            inv.emplace_back(mulmod(inv[MOD % size(inv)], MOD - MOD / size(inv)));  // https://cp-algorithms.com/algebra/module-inverse.html
-            inv_fact.emplace_back(mulmod(inv_fact.back(), inv.back()));
+        while (size(INV) <= n) {  // lazy initialization
+            FACT.emplace_back(mulmod(FACT.back(), size(INV)));
+            INV.emplace_back(mulmod(INV[MOD % size(INV)], MOD - MOD / size(INV)));  // https://cp-algorithms.com/algebra/module-inverse.html
+            INV_FACT.emplace_back(mulmod(INV_FACT.back(), INV.back()));
         }
-        return mulmod(mulmod(fact[n], inv_fact[n - k]), inv_fact[k]);
+        return mulmod(mulmod(FACT[n], INV_FACT[n - k]), INV_FACT[k]);
     }
 
     uint32_t addmod(uint32_t a, uint32_t b) {  // avoid overflow
