@@ -8,15 +8,16 @@ vector<int> INV_FACT = {1, 1};
 class Solution {
 public:
     int numberOfSequence(int n, vector<int>& sick) {
-        int result = 1, total = 0;
+        int result = 1, total = 0, cnt = 0;
         for (int i = 0; i <= size(sick); ++i) {
             const int l = (i < size(sick) ? sick[i] : n) - (i - 1 >= 0 ? sick[i - 1] : -1) - 1;
             if (i != 0 && i != size(sick)) {
-                result = mulmod(result, powmod(2, max(l - 1, 0)));
+                cnt += max(l - 1, 0);
             }
             total += l;
             result = mulmod(result, nCr(total, l));
         }
+        result = mulmod(result, powmod(2, cnt));
         return result;
     }
 
