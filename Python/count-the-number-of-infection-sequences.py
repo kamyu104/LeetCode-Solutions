@@ -19,11 +19,12 @@ class Solution(object):
             return (FACT[n]*INV_FACT[n-k] % MOD) * INV_FACT[k] % MOD
         
         result = 1
-        total = 0
+        total = cnt = 00
         for i in xrange(len(sick)+1):
             l = (sick[i] if i < len(sick) else n)-(sick[i-1] if i-1 >= 0 else -1)-1
             if i not in (0, len(sick)):
-                result = (result*pow(2, max(l-1, 0), MOD))%MOD
+                cnt += max(l-1, 0)
             total += l
             result = (result*nCr(total, l))%MOD
+        result = (result*pow(2, cnt, MOD))%MOD
         return result
