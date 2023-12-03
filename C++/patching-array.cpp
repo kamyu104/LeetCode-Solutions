@@ -18,11 +18,9 @@ public:
             }
             reachable += x;
         }
-        for (; !(reachable >= n); reachable += reachable + 1) {
+        ++result;
+        for (; !(reachable >= n - (reachable + 1)); reachable += reachable + 1) {
             ++result;
-            if (reachable >= n - (reachable + 1)) {
-                return result;
-            }
         }
         return result;
     }
