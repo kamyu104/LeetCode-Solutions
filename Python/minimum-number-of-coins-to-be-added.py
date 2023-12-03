@@ -1,4 +1,4 @@
-# Time:  O(nlogn)
+# Time:  O(nlogn + logt)
 # Space: O(1)
 
 # lc0330
@@ -25,7 +25,7 @@ class Solution(object):
         return result
 
 
-# Time:  O(nlogn)
+# Time:  O(nlogn + logt)
 # Space: O(1)
 # lc0330
 # sort, greedy
