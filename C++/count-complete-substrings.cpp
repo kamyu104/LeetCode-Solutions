@@ -13,22 +13,19 @@ public:
             for (int right = 0; right < size(word); ++right) {
                 const int curr = ++cnt[word[right] - 'a'];
                 valid += curr == k ? 1 : curr == k + 1 ? -1 : 0;
-                if (right - 1 >= 0 && abs(word[right] - word[right - 1]) > 2) {
-                    while (left < right) {
-                        const int curr = cnt[word[left++] - 'a']--;
-                        valid -= curr == k ? 1 : curr == k + 1 ? -1 : 0;
-                    }
-                } else if (right - left + 1 == c * k + 1) {
+                if (right - left + 1 == c * k + 1) {
                     const int curr = cnt[word[left++] - 'a']--;
                     valid -= curr == k ? 1 : curr == k + 1 ? -1 : 0;
                 }
                 if (valid == c) {
                     ++result;
                 }
-            }
-            while (left < size(word)) {
-                const int curr = cnt[word[left++] - 'a']--;
-                valid -= curr == k ? 1 : curr == k + 1 ? -1 : 0;
+                if (right + 1 == size(word) || abs(word[right + 1] - word[right]) > 2) {
+                    while (left < right + 1) {
+                        const int curr = cnt[word[left++] - 'a']--;
+                        valid -= curr == k ? 1 : curr == k + 1 ? -1 : 0;
+                    }
+                }
             }
         }
         return result;
