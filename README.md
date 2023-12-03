@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2950%20%2F%202950-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2954%20%2F%202954-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -179,6 +179,7 @@
 2909 | [Minimum Sum of Mountain Triplets II](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/) | [C++](./C++/minimum-sum-of-mountain-triplets-ii.cpp) [Python](./Python/minimum-sum-of-mountain-triplets-ii.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
 2923 | [Find Champion I](https://leetcode.com/problems/find-champion-i/) | [C++](./C++/find-champion-i.cpp) [Python](./Python/find-champion-i.py) | _O(n^2)_ | _O(1)_ | Easy | | Array
 2946 | [Matrix Similarity After Cyclic Shifts](https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/) | [C++](./C++/matrix-similarity-after-cyclic-shifts.cpp) [Python](./Python/matrix-similarity-after-cyclic-shifts.py) | _O(m * n)_ | _O(1)_ | Easy | | Array
+2951 | [Find the Peaks](https://leetcode.com/problems/find-the-peaks/) | [C++](./C++/find-the-peaks.cpp) [Python](./Python/find-the-peaks.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -525,6 +526,7 @@
 2928 | [Distribute Candies Among Children I](https://leetcode.com/problems/distribute-candies-among-children-i/) | [C++](./C++/distribute-candies-among-children-i.cpp) [Python](./Python/distribute-candies-among-children-i.py) | _O(1)_ | _O(1)_ | Easy | | Stars and Bars, Combinatorics, Principle of Inclusion and Exclusion, Brute Force |
 2929 | [Distribute Candies Among Children II](https://leetcode.com/problems/distribute-candies-among-children-ii/) | [C++](./C++/distribute-candies-among-children-ii.cpp) [Python](./Python/distribute-candies-among-children-ii.py) | _O(1)_ | _O(1)_ | Medium | | Stars and Bars, Combinatorics, Principle of Inclusion and Exclusion, Brute Force |
 2930 | [Number of Strings Which Can Be Rearranged to Contain Substring](https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/) | [C++](./C++/number-of-strings-which-can-be-rearranged-to-contain-substring.cpp) [Python](./Python/number-of-strings-which-can-be-rearranged-to-contain-substring.py) | _O(1)_ | _O(1)_ | Medium | | Combinatorics, Principle of Inclusion and Exclusion, Bitmasks, DP |
+2954 | [Count the Number of Infection Sequences](https://leetcode.com/problems/count-the-number-of-infection-sequences/) | [C++](./C++/count-the-number-of-infection-sequences.cpp) [Python](./Python/count-the-number-of-infection-sequences.py) | _O(n)_ | _O(n)_ | Hard | | Combinatorics |
 
 <br/>
 <div align="right">
@@ -618,6 +620,7 @@
 2904 | [Shortest and Lexicographically Smallest Beautiful String](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/) | [C++](./C++/shortest-and-lexicographically-smallest-beautiful-string.cpp) [Python](./Python/shortest-and-lexicographically-smallest-beautiful-string.py) | _O(n^2)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 2933 | [High-Access Employees](https://leetcode.com/problems/high-access-employees/) | [C++](./C++/high-access-employees.cpp) [Python](./Python/high-access-employees.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Two Pointers, Sliding Window
 2938 | [Separate Black and White Balls](https://leetcode.com/problems/separate-black-and-white-balls/) | [C++](./C++/separate-black-and-white-balls.cpp) [Python](./Python/separate-black-and-white-balls.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
+2953 | [Count Complete Substrings](https://leetcode.com/problems/count-complete-substrings/) | [C++](./C++/count-complete-substrings.cpp) [Python](./Python/count-complete-substrings.py) | _O(26 + d * n)_ | _O(26)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -989,6 +992,7 @@
 2918 | [Minimum Equal Sum of Two Arrays After Replacing Zeros](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/) | [C++](./C++/minimum-equal-sum-of-two-arrays-after-replacing-zeros.cpp) [Python](./Python/minimum-equal-sum-of-two-arrays-after-replacing-zeros.py) | _O(n + m)_ | _O(1)_ | Medium |  | Greedy
 2931 | [Minimum Equal Sum of Two Arrays After Replacing Zeros](https://leetcode.com/problems/maximum-spending-after-buying-items/) | [C++](./C++/maximum-spending-after-buying-items.cpp) [Python](./Python/maximum-spending-after-buying-items.py) | _O(m * n * logm)_ | _O(m)_ | Hard |  | Greedy, Heap
 2939 | [Maximum Xor Product](https://leetcode.com/problems/maximum-xor-product/) | [C++](./C++/maximum-xor-product.cpp) [Python](./Python/maximum-xor-product.py) | _O(n)_ | _O(1)_ | Medium |  | Greedy
+2952 | [Minimum Number of Coins to be Added](https://leetcode.com/problems/minimum-number-of-coins-to-be-added/) | [C++](./C++/minimum-number-of-coins-to-be-added.cpp) [Python](./Python/minimum-number-of-coins-to-be-added.py) | _O(nlogn + logt)_ | _O(1)_ | Medium |  variant of [Patching Array](https://leetcode.com/problems/patching-array/) | Sort, Greedy
 
 <br/>
 <div align="right">
