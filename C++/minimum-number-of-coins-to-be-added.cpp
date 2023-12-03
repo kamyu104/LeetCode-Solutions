@@ -29,7 +29,7 @@ public:
     }
 };
 
-// Time:  O(nlogn)
+// Time:  O(nlogn + logt)
 // Space: O(1)
 // lc0330
 // sort, greedy
