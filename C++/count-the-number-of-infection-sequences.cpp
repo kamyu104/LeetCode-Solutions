@@ -1,11 +1,10 @@
 // Time:  O(n)
 // Space: O(n)
 
+// combinatorics
 vector<int> fact = {1, 1};
 vector<int> inv = {1, 1};
 vector<int> inv_fact = {1, 1};
-
-// combinatorics
 class Solution {
 public:
     int numberOfSequence(int n, vector<int>& sick) {
