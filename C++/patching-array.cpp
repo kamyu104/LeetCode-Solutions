@@ -13,10 +13,10 @@ public:
                 ++result;
                 reachable += reachable + 1;
             }
+            if (reachable >= n - x) {
+                return result;
+            }
             reachable += x;
-        }
-        if (reachable >= n) {
-            return result;
         }
         ++result;
         for (; !(reachable >= n - (reachable + 1)); reachable += reachable + 1) {
