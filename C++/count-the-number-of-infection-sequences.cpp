@@ -1,5 +1,6 @@
-// Time:  O(n)
-// Space: O(n)
+// Time:  precompute: O(max_n)
+//        runtime:    O(s + logn)
+// Space: O(max_n)
 
 // combinatorics
 vector<int> FACT = {1, 1};
