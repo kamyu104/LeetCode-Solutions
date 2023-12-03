@@ -45,7 +45,7 @@ private:
         if (a < b) {
             swap(a, b);
         }
-        while (b > 0)  { 
+        while (b)  { 
             if (b & 1) {
                 result = addmod(result, a);
             }
