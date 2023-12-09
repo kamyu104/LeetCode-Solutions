@@ -15,7 +15,7 @@ public:
             const int l = queries[i][0], r = queries[i][1];
             for (int j = 0; j < 26; ++j) {
                 const int cnt = prefix[r + 1][j] - prefix[l][j];
-                result[i] += cnt * (cnt + 1) / 2;
+                result[i] += (1 + cnt) * cnt / 2;
             }
         }
         return result;
