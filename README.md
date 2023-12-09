@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2954%20%2F%202954-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2955%20%2F%202955-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -431,6 +431,7 @@
 2947 | [Count Beautiful Substrings I](https://leetcode.com/problems/count-beautiful-substrings-i/) | [C++](./C++/count-beautiful-substrings-i.cpp) [Python](./Python/count-beautiful-substrings-i.py) | _O(n + sqrt(k))_ | _O(n)_ | Medium | | Brute Force, Number Theory, Prefix Sum, Freq Table
 2949 | [Count Beautiful Substrings II](https://leetcode.com/problems/count-beautiful-substrings-ii/) | [C++](./C++/count-beautiful-substrings-ii.cpp) [Python](./Python/count-beautiful-substrings-ii.py) | _O(n + sqrt(k))_ | _O(n)_ | Hard | | Brute Force, Number Theory, Prefix Sum, Freq Table
 2950 | [Number of Divisible Substrings](https://leetcode.com/problems/number-of-divisible-substrings/) | [C++](./C++/number-of-divisible-substrings.cpp) [Python](./Python/number-of-divisible-substrings.py) | _O(d * n)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, Freq Table
+2955 | [Number of Same-End Substrings](https://leetcode.com/problems/number-of-same-end-substrings/) | [C++](./C++/number-of-same-end-substrings.cpp) [Python](./Python/number-of-same-end-substrings.py) | _O(26 * (n + q))_ | _O(26 * n)_ | Medium | 🔒 | Freq Table, Prefix Sum
 
 <br/>
 <div align="right">
