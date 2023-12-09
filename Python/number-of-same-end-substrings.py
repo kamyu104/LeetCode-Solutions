@@ -17,5 +17,5 @@ class Solution(object):
         for i, (l, r) in enumerate(queries):
             for j in xrange(26):
                 cnt = prefix[r+1][j]-prefix[l][j]
-                result[i] += cnt+cnt*(cnt-1)//2
+                result[i] += (cnt+1)*cnt//2
         return result
