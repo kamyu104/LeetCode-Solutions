@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2955%20%2F%202955-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2963%20%2F%202963-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -432,6 +432,7 @@
 2949 | [Count Beautiful Substrings II](https://leetcode.com/problems/count-beautiful-substrings-ii/) | [C++](./C++/count-beautiful-substrings-ii.cpp) [Python](./Python/count-beautiful-substrings-ii.py) | _O(n + sqrt(k))_ | _O(n)_ | Hard | | Brute Force, Number Theory, Prefix Sum, Freq Table
 2950 | [Number of Divisible Substrings](https://leetcode.com/problems/number-of-divisible-substrings/) | [C++](./C++/number-of-divisible-substrings.cpp) [Python](./Python/number-of-divisible-substrings.py) | _O(d * n)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, Freq Table
 2955 | [Number of Same-End Substrings](https://leetcode.com/problems/number-of-same-end-substrings/) | [C++](./C++/number-of-same-end-substrings.cpp) [Python](./Python/number-of-same-end-substrings.py) | _O(26 * (n + q))_ | _O(26 * n)_ | Medium | 🔒 | Freq Table, Prefix Sum
+2956 | [Find Common Elements Between Two Arrays](https://leetcode.com/problems/find-common-elements-between-two-arrays/) | [C++](./C++/find-common-elements-between-two-arrays.cpp) [Python](./Python/find-common-elements-between-two-arrays.py) | _O(n + m)_ | _O(n + m)_ | Easy || Hash Table
 
 <br/>
 <div align="right">
@@ -528,6 +529,8 @@
 2929 | [Distribute Candies Among Children II](https://leetcode.com/problems/distribute-candies-among-children-ii/) | [C++](./C++/distribute-candies-among-children-ii.cpp) [Python](./Python/distribute-candies-among-children-ii.py) | _O(1)_ | _O(1)_ | Medium | | Stars and Bars, Combinatorics, Principle of Inclusion and Exclusion, Brute Force |
 2930 | [Number of Strings Which Can Be Rearranged to Contain Substring](https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/) | [C++](./C++/number-of-strings-which-can-be-rearranged-to-contain-substring.cpp) [Python](./Python/number-of-strings-which-can-be-rearranged-to-contain-substring.py) | _O(1)_ | _O(1)_ | Medium | | Combinatorics, Principle of Inclusion and Exclusion, Bitmasks, DP |
 2954 | [Count the Number of Infection Sequences](https://leetcode.com/problems/count-the-number-of-infection-sequences/) | [C++](./C++/count-the-number-of-infection-sequences.cpp) [Python](./Python/count-the-number-of-infection-sequences.py) | precompute: _O(max_n)_<br>runtime: _O(s + logn)_ | _O(max_n)_ | Hard | | Combinatorics |
+2961 | [Double Modular Exponentiation](https://leetcode.com/problems/double-modular-exponentiation/) | [C++](./C++/double-modular-exponentiation.cpp) [Python](./Python/double-modular-exponentiation.py) | _O(n * (logb + logc))_ | _O(1)_ | Medium | | Fast Exponentiation |
+2963 | [Count the Number of Good Partitions](https://leetcode.com/problems/count-the-number-of-good-partitions/) | [C++](./C++/count-the-number-of-good-partitions.cpp) [Python](./Python/count-the-number-of-good-partitions.py) | _O(n)_ | _O(n)_ | Hard | | Hash Table, Combinatorics |
 
 <br/>
 <div align="right">
@@ -622,6 +625,8 @@
 2933 | [High-Access Employees](https://leetcode.com/problems/high-access-employees/) | [C++](./C++/high-access-employees.cpp) [Python](./Python/high-access-employees.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Two Pointers, Sliding Window
 2938 | [Separate Black and White Balls](https://leetcode.com/problems/separate-black-and-white-balls/) | [C++](./C++/separate-black-and-white-balls.cpp) [Python](./Python/separate-black-and-white-balls.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
 2953 | [Count Complete Substrings](https://leetcode.com/problems/count-complete-substrings/) | [C++](./C++/count-complete-substrings.cpp) [Python](./Python/count-complete-substrings.py) | _O(26 + d * n)_ | _O(26)_ | Medium | | Freq Table, Two Pointers, Sliding Window
+2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | [C++](./C++/length-of-longest-subarray-with-at-most-k-frequency.cpp) [Python](./Python/length-of-longest-subarray-with-at-most-k-frequency.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Two Pointers, Sliding Window
+2962 | [Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/) | [C++](./C++/count-subarrays-where-max-element-appears-at-least-k-times.cpp) [Python](./Python/count-subarrays-where-max-element-appears-at-least-k-times.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -994,6 +999,7 @@
 2931 | [Minimum Equal Sum of Two Arrays After Replacing Zeros](https://leetcode.com/problems/maximum-spending-after-buying-items/) | [C++](./C++/maximum-spending-after-buying-items.cpp) [Python](./Python/maximum-spending-after-buying-items.py) | _O(m * n * logm)_ | _O(m)_ | Hard |  | Greedy, Heap
 2939 | [Maximum Xor Product](https://leetcode.com/problems/maximum-xor-product/) | [C++](./C++/maximum-xor-product.cpp) [Python](./Python/maximum-xor-product.py) | _O(n)_ | _O(1)_ | Medium |  | Greedy
 2952 | [Minimum Number of Coins to be Added](https://leetcode.com/problems/minimum-number-of-coins-to-be-added/) | [C++](./C++/minimum-number-of-coins-to-be-added.cpp) [Python](./Python/minimum-number-of-coins-to-be-added.py) | _O(nlogn + logt)_ | _O(1)_ | Medium |  variant of [Patching Array](https://leetcode.com/problems/patching-array/) | Sort, Greedy
+2957 | [Remove Adjacent Almost-Equal Characters](https://leetcode.com/problems/remove-adjacent-almost-equal-characters/) | [C++](./C++/remove-adjacent-almost-equal-characters.cpp) [Python](./Python/remove-adjacent-almost-equal-characters.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 
 <br/>
 <div align="right">
@@ -1030,6 +1036,7 @@
 2850 | [Minimum Moves to Spread Stones Over Grid](https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid/) | [C++](./C++/minimum-moves-to-spread-stones-over-grid.cpp) [Python](./Python/minimum-moves-to-spread-stones-over-grid.py) | _O(n^3)_ | _O(n^2)_ | Medium | | Backtracking, `Hungarian Weighted Bipartite Matching` |
 2876 | [Count Visited Nodes in a Directed Graph](https://leetcode.com/problems/count-visited-nodes-in-a-directed-graph/) | [C++](./C++/count-visited-nodes-in-a-directed-graph.cpp) [Python](./Python/count-visited-nodes-in-a-directed-graph.py) | _O(n)_ | _O(n)_ | Hard | | Graph, Hash Table, Stack |
 2924 | [Find Champion II](https://leetcode.com/problems/find-champion-ii/) | [C++](./C++/find-champion-ii.cpp) [Python](./Python/find-champion-ii.py) | _O(n)_ | _O(n)_ | Medium | | Graph, Hash Table
+2959 | [Number of Possible Sets of Closing Branches](https://leetcode.com/problems/number-of-possible-sets-of-closing-branches/) | [C++](./C++/number-of-possible-sets-of-closing-branches.cpp) [Python](./Python/number-of-possible-sets-of-closing-branches.py) | _O(r + 2^n * n^2)_ | _O(n^3)_ | Medium | | Graph, Bitmasks, `Floyd-Warshall Algorithm`, Backtracking
 
 <br/>
 <div align="right">
@@ -1063,6 +1070,7 @@
 2682 | [Find the Losers of the Circular Game](https://leetcode.com/problems/find-the-losers-of-the-circular-game/) | [C++](./C++/find-the-losers-of-the-circular-game.cpp) [Python](./Python/find-the-losers-of-the-circular-game.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Simulation
 2751 | [Robot Collisions](https://leetcode.com/problems/robot-collisions/) | [C++](./C++/robot-collisions.cpp) [Python](./Python/robot-collisions.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Simulation, Stack
 2934 | [Minimum Operations to Maximize Last Elements in Arrays](https://leetcode.com/problems/minimum-operations-to-maximize-last-elements-in-arrays/) | [C++](./C++/minimum-operations-to-maximize-last-elements-in-arrays.cpp) [Python](./Python/minimum-operations-to-maximize-last-elements-in-arrays.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
+2960 | [Count Tested Devices After Test Operations](https://leetcode.com/problems/count-tested-devices-after-test-operations/) | [C++](./C++/count-tested-devices-after-test-operations.cpp) [Python](./Python/count-tested-devices-after-test-operations.py) | _O(n)_ | _O(1)_ | Easy | | Simulation
 
 <br/>
 <div align="right">
