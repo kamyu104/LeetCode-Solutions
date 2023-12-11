@@ -15,8 +15,8 @@ class Solution(object):
 
         def floydWarshall(dist, k):
             for i in xrange(len(dist)):
-                for j in xrange(len(dist[i])):
-                    dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j])
+                for j in xrange(i+1, len(dist[i])):
+                    dist[j][i] = dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j])
 
         def backtracking(i, mask, dist):
             if i == n:
@@ -58,10 +58,10 @@ class Solution2(object):
                 for i in xrange(len(dist)):
                     if mask&(1<<i) == 0:  # optional, to speed up performance
                         continue
-                    for j in xrange(len(dist[i])):
+                    for j in xrange(i+1, len(dist[i])):
                         if mask&(1<<j) == 0:  # optional, to speed up performance
                              continue
-                        dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j])
+                        dist[j][i] = dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j])
             return check(mask, dist)
 
         dist = [[0 if u == v else float("inf") for v in xrange(n)] for u in xrange(n)]
