@@ -27,7 +27,7 @@ public:
             for (int i = 0; i < n; ++i) {
                 for (int j = i + 1; j < n; ++j) {
                     if (dist[i][k] != INF && dist[k][j] != INF) {
-                         dist[i][j] = dist[j][i] = min(dist[i][j], dist[i][k] + dist[k][j]);
+                         dist[j][i] = dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
                     }
                 }
             }
@@ -99,7 +99,7 @@ public:
                             continue;
                         }
                         if (dist[i][k] != INF && dist[k][j] != INF) {
-                            dist[i][j] = dist[j][i] = min(dist[i][j], dist[i][k] + dist[k][j]);
+                            dist[j][i] = dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
                         }
                     }
                 }
