@@ -20,7 +20,7 @@ public:
 };
 
 // Time:  O(n^2)
-// Space: O(n)
+// Space: O(n^2)
 // freq table
 class Solution2 {
 public:
@@ -32,6 +32,26 @@ public:
                 result += cnt[nums[i] % d];
             }
             for (int j = 0; j < i; ++j) {
+                ++cnt[(d + -(nums[i] + nums[j]) % d) % d];
+            }
+        }
+        return result;
+    }
+};
+
+// Time:  O(n^2)
+// Space: O(n)
+// freq table
+class Solution3 {
+public:
+    int divisibleTripletCount(vector<int>& nums, int d) {
+        int result = 0;
+        for (int i = 0; i < size(nums); ++i) {
+            unordered_map<int, int> cnt;
+            for (int j = i + 1; j < size(nums); ++j) {
+                if (cnt.count(nums[j] % d)) {
+                    result += cnt[nums[j] % d];
+                }
                 ++cnt[(d + -(nums[i] + nums[j]) % d) % d];
             }
         }
