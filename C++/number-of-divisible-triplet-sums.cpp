@@ -13,7 +13,7 @@ public:
                     result += cnt[(nums[i] + nums[j]) % d];
                 }
             }
-            ++cnt[(d + (-nums[i]) % d) % d];
+            ++cnt[((-nums[i]) % d + d) % d];
         }
         return result;
     }
@@ -32,7 +32,7 @@ public:
                 result += cnt[nums[i] % d];
             }
             for (int j = 0; j < i; ++j) {
-                ++cnt[(d + -(nums[i] + nums[j]) % d) % d];
+                ++cnt[(-(nums[i] + nums[j]) % d + d) % d];
             }
         }
         return result;
@@ -52,7 +52,7 @@ public:
                 if (cnt.count(nums[j] % d)) {
                     result += cnt[nums[j] % d];
                 }
-                ++cnt[(d + -(nums[i] + nums[j]) % d) % d];
+                ++cnt[(-(nums[i] + nums[j]) % d + d) % d];
             }
         }
         return result;
