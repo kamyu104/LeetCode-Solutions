@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2963%20%2F%202963-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2964%20%2F%202964-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -433,6 +433,7 @@
 2950 | [Number of Divisible Substrings](https://leetcode.com/problems/number-of-divisible-substrings/) | [C++](./C++/number-of-divisible-substrings.cpp) [Python](./Python/number-of-divisible-substrings.py) | _O(d * n)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, Freq Table
 2955 | [Number of Same-End Substrings](https://leetcode.com/problems/number-of-same-end-substrings/) | [C++](./C++/number-of-same-end-substrings.cpp) [Python](./Python/number-of-same-end-substrings.py) | _O(26 * (n + q))_ | _O(26 * n)_ | Medium | 🔒 | Freq Table, Prefix Sum
 2956 | [Find Common Elements Between Two Arrays](https://leetcode.com/problems/find-common-elements-between-two-arrays/) | [C++](./C++/find-common-elements-between-two-arrays.cpp) [Python](./Python/find-common-elements-between-two-arrays.py) | _O(n + m)_ | _O(n + m)_ | Easy || Hash Table
+2964 | [Number of Divisible Triplet Sums](https://leetcode.com/problems/number-of-divisible-triplet-sums/) | [C++](./C++/number-of-divisible-triplet-sums.cpp) [Python](./Python/number-of-divisible-triplet-sums.py) | _O(n^2)_ | _O(n)_ | Medium | 🔒 | Freq Table
 
 <br/>
 <div align="right">
