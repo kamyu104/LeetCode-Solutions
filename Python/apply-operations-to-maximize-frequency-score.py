@@ -59,6 +59,7 @@ class Solution3(object):
         :rtype: int
         """
         def check(l):
+            # -+ or -0+
             return any((prefix[i+l]-prefix[i+(l+1)//2])-(prefix[i+l//2]-prefix[i]) <= k for i in xrange(len(nums)-l+1))
 
         nums.sort()
