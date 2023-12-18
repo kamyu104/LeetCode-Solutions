@@ -60,7 +60,7 @@ class Solution3(object):
         left, right = 1, len(nums)
         while left <= right:
             mid = left+(right-left)//2
-            if  not check(mid):
+            if not check(mid):
                 right = mid-1
             else:
                 left = mid+1
