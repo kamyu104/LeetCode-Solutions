@@ -12,8 +12,8 @@ class Solution(object):
         nums.sort()
         result = left = curr = 0
         for right in xrange(len(nums)):
-            # "-+  "  => "-0+ "
-            # "-0+ " =>  "--++"
+            # "-+  " => "-0+ "
+            # "-0+ " => "--++"
             curr += nums[right]-nums[(left+right)//2]
             if not curr <= k:
                 # "--++" => " -0+"
@@ -36,8 +36,8 @@ class Solution2(object):
         nums.sort()
         result = left = curr = 0
         for right in xrange(len(nums)):
-            # "-+  "  => "-0+ "
-            # "-0+ " =>  "--++"
+            # "-+  " => "-0+ "
+            # "-0+ " => "--++"
             curr += nums[right]-nums[(left+right)//2]
             while not curr <= k:
                 # "--++" => " -0+"
