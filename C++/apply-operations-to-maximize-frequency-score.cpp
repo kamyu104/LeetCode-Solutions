@@ -37,3 +37,36 @@ public:
         return result;
     }
 };
+
+// Time:  O(nlogn)
+// Space: O(n)
+// sort, prefix sum, binary search
+class Solution3 {
+public:
+    int maxFrequencyScore(vector<int>& nums, long long k) {
+        sort(begin(nums), end(nums));
+        vector<int64_t> prefix(size(nums) + 1);
+        for (int i = 0; i < size(nums); ++i) {
+            prefix[i + 1] = prefix[i] + nums[i];
+        }
+        const auto& check = [&](int l) {
+            for (int i = 0; i < size(nums) - l + 1; ++i) {
+                if ((prefix[i + l] - prefix[i + (l + 1) / 2]) - (prefix[i + l / 2] - prefix[i]) <= k) {
+                    return true;
+                }
+            }
+            return false;
+        };
+
+        int left = 1, right = size(nums);
+        while (left <= right) {
+            const int mid = left + (right - left) / 2;
+            if (!check(mid)) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return right;
+    }
+};
