@@ -12,12 +12,12 @@ class Solution(object):
         nums.sort()
         result = left = curr = 0
         for right in xrange(len(nums)):
-            # -+  => -0+
-            # -0+ => --++
+            # "-+  "  => "-0+ "
+            # "-0+ " =>  "--++"
             curr += nums[right]-nums[(left+right)//2]
             if not curr <= k:
-                # --++ => -0+
-                # -0+  => -+
+                # "--++" => " -0+"
+                # " -0+" => "  -+"
                 curr -= nums[((left+1)+right)//2]-nums[left]
                 left += 1
         return right-left+1
@@ -36,12 +36,12 @@ class Solution2(object):
         nums.sort()
         result = left = curr = 0
         for right in xrange(len(nums)):
-            # -+  => -0+
-            # -0+ => --++
+            # "-+  "  => "-0+ "
+            # "-0+ " =>  "--++"
             curr += nums[right]-nums[(left+right)//2]
             while not curr <= k:
-                # --++ => -0+
-                # -0+  => -+
+                # "--++" => " -0+"
+                # " -0+" => "  -+"
                 curr -= nums[((left+1)+right)//2]-nums[left]
                 left += 1
             result = max(result, right-left+1)
@@ -59,7 +59,7 @@ class Solution3(object):
         :rtype: int
         """
         def check(l):
-            # -+ or -0+
+            # "-+ " or "-0+"
             return any((prefix[i+l]-prefix[i+(l+1)//2])-(prefix[i+l//2]-prefix[i]) <= k for i in xrange(len(nums)-l+1))
 
         nums.sort()
