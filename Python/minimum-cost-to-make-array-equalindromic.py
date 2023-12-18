@@ -1,4 +1,4 @@
-# Time:  O(nlogn + logr)
+# Time:  O(n + logr)
 # Space: O(logr)
 
 import random
