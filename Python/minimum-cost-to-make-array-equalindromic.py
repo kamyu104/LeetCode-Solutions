@@ -5,7 +5,7 @@ import random
 
 
 # lc0564
-# sort, math, string
+# quick select, math, string
 class Solution(object):
     def minimumCost(self, nums):
         """
