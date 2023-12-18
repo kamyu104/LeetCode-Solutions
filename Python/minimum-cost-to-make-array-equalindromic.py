@@ -42,9 +42,9 @@ class Solution(object):
             n = str(x)
             l = len(n)
             result = {10**l+1, 10**(l-1)-1}
-            prefix = int(n[:(l + 1)/2])
+            prefix = int(n[:(l+1)/2])
             for i in map(str, (prefix-1, prefix, prefix+1)):
-                result.add(int(i + [i, i[:-1]][l%2][::-1]))
+                result.add(int(i+[i, i[:-1]][l%2][::-1]))
             return result
 
         nth_element(nums, len(nums)//2)
@@ -72,9 +72,9 @@ class Solution2(object):
             n = str(x)
             l = len(n)
             result = {10**l+1, 10**(l-1)-1}
-            prefix = int(n[:(l + 1)/2])
+            prefix = int(n[:(l+1)/2])
             for i in map(str, (prefix-1, prefix, prefix+1)):
-                result.add(int(i + [i, i[:-1]][l%2][::-1]))
+                result.add(int(i+[i, i[:-1]][l%2][::-1]))
             return result
     
         nums.sort()
