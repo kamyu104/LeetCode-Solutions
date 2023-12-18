@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2964%20%2F%202964-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2968%20%2F%202968-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -180,6 +180,8 @@
 2923 | [Find Champion I](https://leetcode.com/problems/find-champion-i/) | [C++](./C++/find-champion-i.cpp) [Python](./Python/find-champion-i.py) | _O(n^2)_ | _O(1)_ | Easy | | Array
 2946 | [Matrix Similarity After Cyclic Shifts](https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/) | [C++](./C++/matrix-similarity-after-cyclic-shifts.cpp) [Python](./Python/matrix-similarity-after-cyclic-shifts.py) | _O(m * n)_ | _O(1)_ | Easy | | Array
 2951 | [Find the Peaks](https://leetcode.com/problems/find-the-peaks/) | [C++](./C++/find-the-peaks.cpp) [Python](./Python/find-the-peaks.py) | _O(n)_ | _O(1)_ | Easy | | Array
+2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/) | [C++](./C++/find-missing-and-repeated-values.cpp) [Python](./Python/find-missing-and-repeated-values.py) | _O(n^2)_ | _O(1)_ | Easy | | Array, Freq Table, Bit Manipulation
+2966 | [Divide Array Into Arrays With Max Difference](https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/) | [C++](./C++/divide-array-into-arrays-with-max-difference.cpp) [Python](./Python/divide-array-into-arrays-with-max-difference.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Array
 
 <br/>
 <div align="right">
@@ -243,6 +245,7 @@
 2851 | [String Transformation](https://leetcode.com/problems/string-transformation/) | [C++](./C++/string-transformation.cpp) [Python](./Python/string-transformation.py) | _O(n + logk)_   | _O(n)_        | Hard         | | DP, Matrix Exponentiation, Math, `Z-Function`, `KMP Algorithm`
 2937 | [Make Three Strings Equal](https://leetcode.com/problems/make-three-strings-equal/)| [C++](./C++/make-three-strings-equal.cpp) [Python](./Python/make-three-strings-equal.py)| _O(n)_ | _O(1)_ | Easy | | String |
 2942 | [Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/)| [C++](./C++/find-words-containing-character.cpp) [Python](./Python/find-words-containing-character.py)| _O(n * l)_ | _O(1)_ | Easy | | String |
+2967 | [Minimum Cost to Make Array Equalindromic](https://leetcode.com/problems/minimum-cost-to-make-array-equalindromic/)| [C++](./C++/minimum-cost-to-make-array-equalindromic.cpp) [Python](./Python/minimum-cost-to-make-array-equalindromic.py)| _O(n + logr)_ | _O(logr)_ | Medium | variant of [Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome/) | Sort, Quick Select, Math, String |
 
 <br/>
 <div align="right">
@@ -628,6 +631,7 @@
 2953 | [Count Complete Substrings](https://leetcode.com/problems/count-complete-substrings/) | [C++](./C++/count-complete-substrings.cpp) [Python](./Python/count-complete-substrings.py) | _O(26 + d * n)_ | _O(26)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | [C++](./C++/length-of-longest-subarray-with-at-most-k-frequency.cpp) [Python](./Python/length-of-longest-subarray-with-at-most-k-frequency.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 2962 | [Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/) | [C++](./C++/count-subarrays-where-max-element-appears-at-least-k-times.cpp) [Python](./Python/count-subarrays-where-max-element-appears-at-least-k-times.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
+2968 | [Apply Operations to Maximize Frequency Score](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | [C++](./C++/apply-operations-to-maximize-frequency-score.cpp) [Python](./Python/apply-operations-to-maximize-frequency-score.py) | _O(nlogn)_ | _O(1)_ | Hard | | Sort, Two Pointers, Sliding Window, Prefix Sum, Binary Search
 
 <br/>
 <div align="right">
