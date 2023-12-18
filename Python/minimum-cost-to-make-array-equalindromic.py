@@ -52,9 +52,6 @@ class Solution(object):
         if len(nums)%2 == 0:
             nth_element(nums, len(nums)//2-1)
             median = (median+nums[len(nums)//2-1])//2
-    
-        nums.sort()
-        median = nums[len(nums)//2] if len(nums)%2 else (nums[len(nums)//2-1]+nums[len(nums)//2])//2
         return min(sum(abs(x-p) for x in nums) for p in nearest_palindromic(median))
 
 
