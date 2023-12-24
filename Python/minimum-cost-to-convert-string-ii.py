@@ -62,7 +62,7 @@ import itertools
 
 
 # trie, Floyd-Warshall algorithm, dp
-class Solution_TLE(object):
+class Solution2(object):
     def minimumCost(self, source, target, original, changed, cost):
         """
         :type source: str
@@ -109,21 +109,26 @@ class Solution_TLE(object):
                 return self.__idxs[curr]
 
         def floydWarshall(dist):
-            for k in xrange(len(dist)):
-                for i in xrange(len(dist)):
-                    for j in xrange(len(dist[i])):
+            for k in dist:
+                for i in dist:
+                    for j in dist:
                         dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j])
         
         trie = Trie()
         for x in itertools.chain(original, changed):
             trie.add(x)
-        dist = [[0 if u == v else INF for v in xrange(trie.k)] for u in xrange(trie.k)]
+        buckets = collections.defaultdict(set)
+        for x in itertools.chain(original, changed):
+            buckets[len(x)].add(trie.query(x))
+        dists = {l:{u:{v:0 if u == v else INF for v in lookup} for u in lookup} for l, lookup in buckets.iteritems()}
         for i in xrange(len(original)):
+            l = len(original[i])
+            dist = dists[l]
             u, v = trie.query(original[i]), trie.query(changed[i])
             dist[u][v] = min(dist[u][v], cost[i])
-        floydWarshall(dist)
-        l = max(len(x) for x in original)
-        dp = [INF]*(l+1)
+        for dist in dists.itervalues():
+            floydWarshall(dist)
+        dp = [INF]*(max(len(x) for x in original)+1)
         dp[0] = 0
         for i in xrange(len(source)):
             if dp[i%len(dp)] == INF:
@@ -137,6 +142,6 @@ class Solution_TLE(object):
                 if u == -1 or v == -1:
                     break
                 if trie.id(u) != -1 and trie.id(v) != -1:
-                    dp[(j+1)%len(dp)] = min(dp[(j+1)%len(dp)], dp[i%len(dp)]+dist[trie.id(u)][trie.id(v)])
+                    dp[(j+1)%len(dp)] = min(dp[(j+1)%len(dp)], dp[i%len(dp)]+dists[j-i+1][trie.id(u)][trie.id(v)])
             dp[i%len(dp)] = INF
         return dp[len(source)%len(dp)] if dp[len(source)%len(dp)] != INF else -1
