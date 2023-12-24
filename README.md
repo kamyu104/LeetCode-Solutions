@@ -437,7 +437,7 @@
 2955 | [Number of Same-End Substrings](https://leetcode.com/problems/number-of-same-end-substrings/) | [C++](./C++/number-of-same-end-substrings.cpp) [Python](./Python/number-of-same-end-substrings.py) | _O(26 * (n + q))_ | _O(26 * n)_ | Medium | 🔒 | Freq Table, Prefix Sum
 2956 | [Find Common Elements Between Two Arrays](https://leetcode.com/problems/find-common-elements-between-two-arrays/) | [C++](./C++/find-common-elements-between-two-arrays.cpp) [Python](./Python/find-common-elements-between-two-arrays.py) | _O(n + m)_ | _O(n + m)_ | Easy || Hash Table
 2964 | [Number of Divisible Triplet Sums](https://leetcode.com/problems/number-of-divisible-triplet-sums/) | [C++](./C++/number-of-divisible-triplet-sums.cpp) [Python](./Python/number-of-divisible-triplet-sums.py) | _O(n^2)_ | _O(n)_ | Medium | 🔒 | Freq Table
-2975 | [Maximum Square Area by Removing Fences From a Field](https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/) | [C++](./C++/maximum-square-area-by-removing-fences-from-a-field.cpp) [Python](./Python/maximum-square-area-by-removing-fences-from-a-field.py) | _O(h^2 + v^2)_ | _O(min(h, v))_ | Medium || Hash Table
+2975 | [Maximum Square Area by Removing Fences From a Field](https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/) | [C++](./C++/maximum-square-area-by-removing-fences-from-a-field.cpp) [Python](./Python/maximum-square-area-by-removing-fences-from-a-field.py) | _O(h^2 + v^2)_ | _O(min(h, v)^2)_ | Medium || Hash Table
 
 <br/>
 <div align="right">
