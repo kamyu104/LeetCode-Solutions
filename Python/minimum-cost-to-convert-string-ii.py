@@ -110,9 +110,9 @@ class Solution2(object):
                 return self.__idxs[curr]
 
         def floydWarshall(dist):
-            for k in dist:
-                for i in dist:
-                    for j in dist:
+            for k in dist.iterkeys():
+                for i in dist.iterkeys():
+                    for j in dist.iterkeys():
                         dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j])
         
         trie = Trie()
