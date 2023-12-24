@@ -95,6 +95,7 @@ class Solution2(object):
                 if self.__idxs[curr] == -1:
                     self.__idxs[curr] = self.k
                     self.k += 1
+                return self.__idxs[curr]
             
             def query(self, s):
                 curr = 0
@@ -115,11 +116,9 @@ class Solution2(object):
                         dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j])
         
         trie = Trie()
-        for x in itertools.chain(original, changed):
-            trie.add(x)
         buckets = collections.defaultdict(set)
         for x in itertools.chain(original, changed):
-            buckets[len(x)].add(trie.query(x))
+            buckets[len(x)].add(trie.add(x))
         dists = {l:{u:{v:0 if u == v else INF for v in lookup} for u in lookup} for l, lookup in buckets.iteritems()}
         for i in xrange(len(original)):
             l = len(original[i])
