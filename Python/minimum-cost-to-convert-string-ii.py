@@ -1,6 +1,7 @@
-# Time:  O(o * l + k^3 + n * c * l), o = len(original), l = max(len(x) for x in original), k = len(lookup), c = len({len(x) for x in original})
+# Time:  O(o * l + k^3 + n * c * l), o = len(original), l = max(len(x) for x in original), k = len(lookups), c = len({len(x) for x in original})
 # Space: O(o * l + k^2 + c + l)
 
+import collections
 import itertools
 
 
@@ -22,18 +23,20 @@ class Solution(object):
                     for j in xrange(len(dist[i])):
                         dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j])
         
-        lookup = {}
+        lookups = collections.defaultdict(dict)
         for x in itertools.chain(original, changed):
-            if x not in lookup:
-                lookup[x] = len(lookup)
-        dist = [[0 if u == v else INF for v in xrange(len(lookup))] for u in xrange(len(lookup))]
+            if x not in lookups[len(x)]:
+                lookups[len(x)][x] = len(lookups[len(x)])
+        dists = {l:[[0 if u == v else INF for v in xrange(len(lookup))] for u in xrange(len(lookup))] for l, lookup in lookups.iteritems()}
         for i in xrange(len(original)):
+            l = len(original[i])
+            lookup, dist = lookups[l], dists[l]
             u, v = lookup[original[i]], lookup[changed[i]]
             dist[u][v] = min(dist[u][v], cost[i])
-        floydWarshall(dist)
+        for dist in dists.itervalues():
+            floydWarshall(dist)
         candidates = {len(x) for x in original}
-        l = max(len(x) for x in original)
-        dp = [INF]*(l+1)
+        dp = [INF]*(max(len(x) for x in original)+1)
         dp[0] = 0
         for i in xrange(len(source)):
             if dp[i%len(dp)] == INF:
@@ -43,6 +46,7 @@ class Solution(object):
             for l in candidates:
                 if i+l > len(source):
                     continue
+                lookup, dist = lookups[l], dists[l]
                 u = source[i:i+l]
                 v = target[i:i+l]
                 if u in lookup and v in lookup:
