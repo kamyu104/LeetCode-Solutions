@@ -47,8 +47,7 @@ class Solution(object):
                 if i+l > len(source):
                     continue
                 lookup, dist = lookups[l], dists[l]
-                u = source[i:i+l]
-                v = target[i:i+l]
+                u, v = source[i:i+l], target[i:i+l]
                 if u in lookup and v in lookup:
                     dp[(i+l)%len(dp)] = min(dp[(i+l)%len(dp)], dp[i%len(dp)]+dist[lookup[u]][lookup[v]])
             dp[i%len(dp)] = INF
