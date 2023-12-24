@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(1)
 
-# sort, prefix sum
+# sort, prefix sum, greedy
 class Solution(object):
     def largestPerimeter(self, nums):
         """
