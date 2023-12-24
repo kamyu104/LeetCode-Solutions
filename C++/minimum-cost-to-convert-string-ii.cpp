@@ -301,7 +301,6 @@ public:
                 if (trie.id(u) != -1 && trie.id(v) != -1 && dist[trie.id(u)][trie.id(v)] != INF) {
                     dp[(j + 1) % size(dp)] = min(dp[(j + 1) % size(dp)], dp[i % size(dp)] + dist[trie.id(u)][trie.id(v)]);
                 }
-                
             }
             dp[i % size(dp)] = INF;
         }
