@@ -182,7 +182,7 @@ private:
              new_node();
          }
 
-        int add(const string& s) {
+        pair<bool, int> add(const string& s) {
             int curr = 0;
             for (const auto& c : s) {
                 const int x = c - 'a';
@@ -193,8 +193,9 @@ private:
             }
             if (idxs_[curr] == -1) {
                 idxs_[curr] = k++;
+                return {true, idxs_[curr]};
             }
-            return idxs_[curr];
+            return {false, idxs_[curr]};
         }
 
         int query(const string& s) {
@@ -243,12 +244,18 @@ public:
         };
 
         Trie trie;
-        unordered_map<int, unordered_set<int>> buckets;
+        unordered_map<int, vector<int>> buckets;
         for (const auto& x : original) {
-            buckets[size(x)].emplace(trie.add(x));
+            const auto& [not_duplicated, i] = trie.add(x);
+            if (not_duplicated) {
+                buckets[size(x)].emplace_back(i);
+            }
         }
         for (const auto& x : changed) {
-            buckets[size(x)].emplace(trie.add(x));
+            const auto& [not_duplicated, i] = trie.add(x);
+            if (not_duplicated) {
+                buckets[size(x)].emplace_back(i);
+            }
         }
         unordered_map<int, unordered_map<int, unordered_map<int, int64_t>>> dists;
         for (const auto& [l, lookup] : buckets) {
