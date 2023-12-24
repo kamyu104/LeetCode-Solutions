@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2968%20%2F%202968-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2976%20%2F%202976-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -632,7 +632,8 @@
 2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | [C++](./C++/length-of-longest-subarray-with-at-most-k-frequency.cpp) [Python](./Python/length-of-longest-subarray-with-at-most-k-frequency.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 2962 | [Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/) | [C++](./C++/count-subarrays-where-max-element-appears-at-least-k-times.cpp) [Python](./Python/count-subarrays-where-max-element-appears-at-least-k-times.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 2968 | [Apply Operations to Maximize Frequency Score](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | [C++](./C++/apply-operations-to-maximize-frequency-score.cpp) [Python](./Python/apply-operations-to-maximize-frequency-score.py) | _O(nlogn)_ | _O(1)_ | Hard | | Sort, Two Pointers, Sliding Window, Prefix Sum, Binary Search
-
+2970 | [Count the Number of Incremovable Subarrays I](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/) | [C++](./C++/count-the-number-of-incremovable-subarrays-i.cpp) [Python](./Python/count-the-number-of-incremovable-subarrays-i.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers, Brute Force
+2972 | [Count the Number of Incremovable Subarrays II](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/) | [C++](./C++/count-the-number-of-incremovable-subarrays-ii.cpp) [Python](./Python/count-the-number-of-incremovable-subarrays-ii.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -756,6 +757,7 @@
 2581 | [Count Number of Possible Root Nodes](https://leetcode.com/problems/count-number-of-possible-root-nodes/)| [C++](./C++/count-number-of-possible-root-nodes.cpp) [Python](./Python/count-number-of-possible-root-nodes.py)| _O(n)_ | _O(h)_ | Hard | | Tree, DFS |
 2773 | [Height of Special Binary Tree](https://leetcode.com/problems/height-of-special-binary-tree/)| [C++](./C++/height-of-special-binary-tree.cpp) [Python](./Python/height-of-special-binary-tree.py)| _O(n)_ | _O(h)_ | Medium | 🔒 | Tree, DFS, BFS |
 2791 | [Count Paths That Can Form a Palindrome in a Tree](https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree/)| [C++](./C++/count-paths-that-can-form-a-palindrome-in-a-tree.cpp) [Python](./Python/count-paths-that-can-form-a-palindrome-in-a-tree.py)| _O(n)_ | _O(n)_ | Hard | | Tree, DFS, Freq Table |
+2973 | [Find Number of Coins to Place in Tree Nodes](https://leetcode.com/problems/find-number-of-coins-to-place-in-tree-nodes/)| [C++](./C++/find-number-of-coins-to-place-in-tree-nodes.cpp) [Python](./Python/find-number-of-coins-to-place-in-tree-nodes.py)| _O(n)_ | _O(n)_ | Hard | | DFS |
 
 <br/>
 <div align="right">
@@ -880,6 +882,7 @@
 2941 | [Maximum GCD-Sum of a Subarray](https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/) | [C++](./C++/maximum-gcd-sum-of-a-subarray.cpp) [Python](./Python/maximum-gcd-sum-of-a-subarray.py) | _O(nlogr)_ | _O(logr)_ | Hard | 🔒 | Number Theory, DP, Prefix Sum, Binary Search, RMQ, Sparse Table
 2944 | [Minimum Number of Coins for Fruits](https://leetcode.com/problems/minimum-number-of-coins-for-fruits/) | [C++](./C++/minimum-number-of-coins-for-fruits.cpp) [Python](./Python/minimum-number-of-coins-for-fruits.py) | _O(n)_ | _O(n)_ | Medium | | DP, Sorted List, BST, Mono Deque
 2945 | [Find Maximum Non-decreasing Array Length](https://leetcode.com/problems/find-maximum-non-decreasing-array-length/) | [C++](./C++/find-maximum-non-decreasing-array-length.cpp) [Python](./Python/find-maximum-non-decreasing-array-length.py) | _O(n)_ | _O(n)_ | Hard | | DP, Greedy, Prefix Sum, Binary Search, Mono Stack, Mono Deque, Two Pointers
+2969 | Minimum Number of Coins for Fruits II](https://leetcode.com/problems/minimum-number-of-coins-for-fruits-ii/) | [C++](./C++/minimum-number-of-coins-for-fruits-ii.cpp) [Python](./Python/minimum-number-of-coins-for-fruits-ii.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | DP, Sorted List, BST, Mono Deque
 
 <br/>
 <div align="right">
@@ -1005,6 +1008,7 @@
 2939 | [Maximum Xor Product](https://leetcode.com/problems/maximum-xor-product/) | [C++](./C++/maximum-xor-product.cpp) [Python](./Python/maximum-xor-product.py) | _O(n)_ | _O(1)_ | Medium |  | Greedy
 2952 | [Minimum Number of Coins to be Added](https://leetcode.com/problems/minimum-number-of-coins-to-be-added/) | [C++](./C++/minimum-number-of-coins-to-be-added.cpp) [Python](./Python/minimum-number-of-coins-to-be-added.py) | _O(nlogn + logt)_ | _O(1)_ | Medium |  variant of [Patching Array](https://leetcode.com/problems/patching-array/) | Sort, Greedy
 2957 | [Remove Adjacent Almost-Equal Characters](https://leetcode.com/problems/remove-adjacent-almost-equal-characters/) | [C++](./C++/remove-adjacent-almost-equal-characters.cpp) [Python](./Python/remove-adjacent-almost-equal-characters.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+2971 | [Find Polygon With the Largest Perimeter](https://leetcode.com/problems/find-polygon-with-the-largest-perimeter/) | [C++](./C++/find-polygon-with-the-largest-perimeter.cpp) [Python](./Python/find-polygon-with-the-largest-perimeter.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Prefix Sum, Greedy
 
 <br/>
 <div align="right">
