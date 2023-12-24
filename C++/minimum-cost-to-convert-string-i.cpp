@@ -1,4 +1,4 @@
-// Time:  O(26^3 + n)
+// Time:  O(o + 26^3 + n)
 // Space: O(26^2)
 
 // Floyd-Warshall algorithm 
