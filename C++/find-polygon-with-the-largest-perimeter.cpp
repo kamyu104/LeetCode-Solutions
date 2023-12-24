@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(1)
 
-// sort, prefix sum
+// sort, prefix sum, greedy
 class Solution {
 public:
     long long largestPerimeter(vector<int>& nums) {
