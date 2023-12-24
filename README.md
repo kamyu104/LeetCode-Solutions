@@ -437,6 +437,7 @@
 2955 | [Number of Same-End Substrings](https://leetcode.com/problems/number-of-same-end-substrings/) | [C++](./C++/number-of-same-end-substrings.cpp) [Python](./Python/number-of-same-end-substrings.py) | _O(26 * (n + q))_ | _O(26 * n)_ | Medium | 🔒 | Freq Table, Prefix Sum
 2956 | [Find Common Elements Between Two Arrays](https://leetcode.com/problems/find-common-elements-between-two-arrays/) | [C++](./C++/find-common-elements-between-two-arrays.cpp) [Python](./Python/find-common-elements-between-two-arrays.py) | _O(n + m)_ | _O(n + m)_ | Easy || Hash Table
 2964 | [Number of Divisible Triplet Sums](https://leetcode.com/problems/number-of-divisible-triplet-sums/) | [C++](./C++/number-of-divisible-triplet-sums.cpp) [Python](./Python/number-of-divisible-triplet-sums.py) | _O(n^2)_ | _O(n)_ | Medium | 🔒 | Freq Table
+2975 | [Maximum Square Area by Removing Fences From a Field](https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/) | [C++](./C++/maximum-square-area-by-removing-fences-from-a-field.cpp) [Python](./Python/maximum-square-area-by-removing-fences-from-a-field.py) | _O(h^2 + v^2)_ | _O(min(h, v))_ | Medium || Hash Table
 
 <br/>
 <div align="right">
@@ -567,6 +568,7 @@
 2785 | [Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/) | [C++](./C++/sort-vowels-in-a-string.cpp) [Python](./Python/sort-vowels-in-a-string.py) | _O(n)_   | _O(1)_        | Medium         | | Counting Sort
 2792 | [Count Nodes That Are Great Enough](https://leetcode.com/problems/count-nodes-that-are-great-enough/) | [C++](./C++/count-nodes-that-are-great-enough.cpp) [Python](./Python/count-nodes-that-are-great-enough.py) | _O(k * h)_   | _O(k + h)_        | Hard         | 🔒 | Merge Sort
 2948 | [Make Lexicographically Smallest Array by Swapping Elements](https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/) | [C++](./C++/make-lexicographically-smallest-array-by-swapping-elements.cpp) [Python](./Python/make-lexicographically-smallest-array-by-swapping-elements.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort
+2974 | [Minimum Number Game](https://leetcode.com/problems/minimum-number-game/) | [C++](./C++/minimum-number-game.cpp) [Python](./Python/minimum-number-game.py) | _O(nlogn)_   | _O(1)_        | Easy         | | Sort
 
 <br/>
 <div align="right">
@@ -633,7 +635,7 @@
 2962 | [Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/) | [C++](./C++/count-subarrays-where-max-element-appears-at-least-k-times.cpp) [Python](./Python/count-subarrays-where-max-element-appears-at-least-k-times.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 2968 | [Apply Operations to Maximize Frequency Score](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | [C++](./C++/apply-operations-to-maximize-frequency-score.cpp) [Python](./Python/apply-operations-to-maximize-frequency-score.py) | _O(nlogn)_ | _O(1)_ | Hard | | Sort, Two Pointers, Sliding Window, Prefix Sum, Binary Search
 2970 | [Count the Number of Incremovable Subarrays I](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/) | [C++](./C++/count-the-number-of-incremovable-subarrays-i.cpp) [Python](./Python/count-the-number-of-incremovable-subarrays-i.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers, Brute Force
-2972 | [Count the Number of Incremovable Subarrays II](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/) | [C++](./C++/count-the-number-of-incremovable-subarrays-ii.cpp) [Python](./Python/count-the-number-of-incremovable-subarrays-ii.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers
+2972 | [Count the Number of Incremovable Subarrays II](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/) | [C++](./C++/count-the-number-of-incremovable-subarrays-ii.cpp) [Python](./Python/count-the-number-of-incremovable-subarrays-ii.py) | _O(n)_ | _O(1)_ | Hard | | Two Pointers
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -882,7 +884,9 @@
 2941 | [Maximum GCD-Sum of a Subarray](https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/) | [C++](./C++/maximum-gcd-sum-of-a-subarray.cpp) [Python](./Python/maximum-gcd-sum-of-a-subarray.py) | _O(nlogr)_ | _O(logr)_ | Hard | 🔒 | Number Theory, DP, Prefix Sum, Binary Search, RMQ, Sparse Table
 2944 | [Minimum Number of Coins for Fruits](https://leetcode.com/problems/minimum-number-of-coins-for-fruits/) | [C++](./C++/minimum-number-of-coins-for-fruits.cpp) [Python](./Python/minimum-number-of-coins-for-fruits.py) | _O(n)_ | _O(n)_ | Medium | | DP, Sorted List, BST, Mono Deque
 2945 | [Find Maximum Non-decreasing Array Length](https://leetcode.com/problems/find-maximum-non-decreasing-array-length/) | [C++](./C++/find-maximum-non-decreasing-array-length.cpp) [Python](./Python/find-maximum-non-decreasing-array-length.py) | _O(n)_ | _O(n)_ | Hard | | DP, Greedy, Prefix Sum, Binary Search, Mono Stack, Mono Deque, Two Pointers
-2969 | Minimum Number of Coins for Fruits II](https://leetcode.com/problems/minimum-number-of-coins-for-fruits-ii/) | [C++](./C++/minimum-number-of-coins-for-fruits-ii.cpp) [Python](./Python/minimum-number-of-coins-for-fruits-ii.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | DP, Sorted List, BST, Mono Deque
+2969 | [Minimum Number of Coins for Fruits II](https://leetcode.com/problems/minimum-number-of-coins-for-fruits-ii/) | [C++](./C++/minimum-number-of-coins-for-fruits-ii.cpp) [Python](./Python/minimum-number-of-coins-for-fruits-ii.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | DP, Sorted List, BST, Mono Deque
+2976 | [Minimum Cost to Convert String I](https://leetcode.com/problems/minimum-cost-to-convert-string-i/) | [C++](./C++/minimum-cost-to-convert-string-i.cpp) [Python](./Python/minimum-cost-to-convert-string-i.py) | _O(26^3 + n)_ | _O(26^2)_ | Hard | | `Floyd-Warshall Algorithm`, DP
+2977 | [Minimum Cost to Convert String II](https://leetcode.com/problems/minimum-cost-to-convert-string-ii/) | [C++](./C++/minimum-cost-to-convert-string-ii.cpp) [Python](./Python/minimum-cost-to-convert-string-ii.py) | _O(o * l + k^3 + n * l)_ | _O(t + k^2 + l)_ | Hard | | `Floyd-Warshall Algorithm`, DP, Trie
 
 <br/>
 <div align="right">
