@@ -15,7 +15,7 @@ public:
             dq.emplace_back(i);
             for (; j + (j + 1) < i; ++j) {
                 assert(!empty(dq));
-                if (dq.front() <= j) {
+                if (dq.front() == j) {
                     dq.pop_front();
                 }
             }
