@@ -25,8 +25,10 @@ class Solution(object):
         
         lookups = collections.defaultdict(dict)
         for x in itertools.chain(original, changed):
-            if x not in lookups[len(x)]:
-                lookups[len(x)][x] = len(lookups[len(x)])
+            l = len(x)
+            lookup = lookups[l]
+            if x not in lookup:
+                lookup[x] = len(lookup)
         dists = {l:[[0 if u == v else INF for v in xrange(len(lookup))] for u in xrange(len(lookup))] for l, lookup in lookups.iteritems()}
         for i in xrange(len(original)):
             l = len(original[i])
