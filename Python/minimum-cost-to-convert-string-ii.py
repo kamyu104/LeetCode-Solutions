@@ -81,13 +81,13 @@ class Solution2(object):
                         dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j])
         
         lookup = {}
-        buckets = collections.defaultdict(set)
+        buckets = collections.defaultdict(list)
         for x in itertools.chain(original, changed):
             l = len(x)
             if x in lookup:
                 continue
             lookup[x] = len(lookup)
-            buckets[len(x)].add(lookup[x])            
+            buckets[len(x)].append(lookup[x])            
         dists = {l:{u:{v:0 if u == v else INF for v in lookup} for u in lookup} for l, lookup in buckets.iteritems()}
         for i in xrange(len(original)):
             l = len(original[i])
@@ -154,7 +154,8 @@ class Solution3(object):
                 if self.__idxs[curr] == -1:
                     self.__idxs[curr] = self.k
                     self.k += 1
-                return self.__idxs[curr]
+                    return True, self.__idxs[curr]
+                return False, self.__idxs[curr]
             
             def query(self, s):
                 curr = 0
@@ -175,9 +176,11 @@ class Solution3(object):
                         dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j])
         
         trie = Trie()
-        buckets = collections.defaultdict(set)
+        buckets = collections.defaultdict(list)
         for x in itertools.chain(original, changed):
-            buckets[len(x)].add(trie.add(x))
+            not_duplicated, i = trie.add(x)
+            if not_duplicated:
+                buckets[len(x)].append(i)
         dists = {l:{u:{v:0 if u == v else INF for v in lookup} for u in lookup} for l, lookup in buckets.iteritems()}
         for i in xrange(len(original)):
             l = len(original[i])
