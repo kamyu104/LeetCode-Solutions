@@ -44,7 +44,6 @@ class Solution(object):
         for u, v in edges:
             adj[u].append(v)
             adj[v].append(u)
-        
         return iter_dfs()
 
 
