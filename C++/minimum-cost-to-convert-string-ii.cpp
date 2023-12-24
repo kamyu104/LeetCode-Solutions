@@ -96,7 +96,7 @@ private:
              new_node();
          }
 
-        void add(const string& s) {
+        int add(const string& s) {
             int curr = 0;
             for (const auto& c : s) {
                 const int x = c - 'a';
@@ -108,6 +108,7 @@ private:
             if (idxs_[curr] == -1) {
                 idxs_[curr] = k++;
             }
+            return idxs_[curr];
         }
 
         int query(const string& s) {
@@ -144,9 +145,9 @@ public:
     long long minimumCost(string source, string target, vector<string>& original, vector<string>& changed, vector<int>& cost) {
         static const auto INF = numeric_limits<int64_t>::max();
         const auto& floydWarshall = [](auto& dist) {
-            for (int k = 0; k < size(dist); ++k) {
-                for (int i = 0; i < size(dist); ++i) {
-                    for (int j = 0; j < size(dist[0]); ++j) {
+            for (const auto& [k, _] : dist) {
+                for (const auto& [i, _] : dist) {
+                    for (const auto& [j, _] : dist) {
                         if (dist[i][k] != INF && dist[k][j] != INF) {
                             dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
                         }
@@ -156,22 +157,32 @@ public:
         };
 
         Trie trie;
+        unordered_map<int, unordered_set<int>> buckets;
         for (const auto& x : original) {
-            trie.add(x);
+            buckets[size(x)].emplace(trie.add(x));
         }
         for (const auto& x : changed) {
-            trie.add(x);
+            buckets[size(x)].emplace(trie.add(x));
         }
-        vector<vector<int64_t>> dist(trie.k, vector<int64_t>(trie.k, INF));
-        for (int u = 0; u < size(dist); ++u) {
-            dist[u][u] = 0;
+        unordered_map<int, unordered_map<int, unordered_map<int, int64_t>>> dists;
+        for (const auto& [l, lookup] : buckets) {
+            auto& dist = dists[l];
+            for (const auto& u : lookup) {
+                for (const auto& v : lookup) {
+                    dist[u][v] = u == v ? 0 : INF;
+                }
+            }
         }
         for (int i = 0; i < size(original); ++i) {
+            const int l = size(original[i]);
+            auto& dist = dists[l];
             const int u = trie.query(original[i]);
             const int v = trie.query(changed[i]);
             dist[u][v] = min(dist[u][v], static_cast<int64_t>(cost[i]));
         }
-        floydWarshall(dist);
+        for (auto& [_, dist] : dists) {
+            floydWarshall(dist);
+        }
         int l = 0;
         for (const auto& x : original) {
             l = max(l, static_cast<int>(size(x)));
@@ -193,6 +204,7 @@ public:
                 if (u == -1 || v == -1) {
                     break;
                 }
+                auto& dist = dists[j - i + 1];
                 if (trie.id(u) != -1 && trie.id(v) != -1 && dist[trie.id(u)][trie.id(v)] != INF) {
                     dp[(j + 1) % size(dp)] = min(dp[(j + 1) % size(dp)], dp[i % size(dp)] + dist[trie.id(u)][trie.id(v)]);
                 }
