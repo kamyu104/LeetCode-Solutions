@@ -21,7 +21,7 @@ class Solution(object):
             dq.append(i)
             while j+(j+1) < i:
                 assert(len(dq) != 0)
-                if dq[0] <= j:
+                if dq[0] == j:
                     dq.popleft()
                 j += 1
             dp[i+1] = dp[dq[0]]+prices[dq[0]]
