@@ -886,7 +886,7 @@
 2945 | [Find Maximum Non-decreasing Array Length](https://leetcode.com/problems/find-maximum-non-decreasing-array-length/) | [C++](./C++/find-maximum-non-decreasing-array-length.cpp) [Python](./Python/find-maximum-non-decreasing-array-length.py) | _O(n)_ | _O(n)_ | Hard | | DP, Greedy, Prefix Sum, Binary Search, Mono Stack, Mono Deque, Two Pointers
 2969 | [Minimum Number of Coins for Fruits II](https://leetcode.com/problems/minimum-number-of-coins-for-fruits-ii/) | [C++](./C++/minimum-number-of-coins-for-fruits-ii.cpp) [Python](./Python/minimum-number-of-coins-for-fruits-ii.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | DP, Sorted List, BST, Mono Deque
 2976 | [Minimum Cost to Convert String I](https://leetcode.com/problems/minimum-cost-to-convert-string-i/) | [C++](./C++/minimum-cost-to-convert-string-i.cpp) [Python](./Python/minimum-cost-to-convert-string-i.py) | _O(o + k * eloge + n)_ | _O(o + k * v)_ | Medium | | `Dijkstra's Algorithm`, `Floyd-Warshall Algorithm`, DP, Memoization
-2977 | [Minimum Cost to Convert String II](https://leetcode.com/problems/minimum-cost-to-convert-string-ii/) | [C++](./C++/minimum-cost-to-convert-string-ii.cpp) [Python](./Python/minimum-cost-to-convert-string-ii.py) | _O(o * l + k^3 + n * l)_ | _O(t + k^2 + l)_ | Hard | | `Dijkstra's Algorithm`, `Floyd-Warshall Algorithm`, DP, Memoization, Trie
+2977 | [Minimum Cost to Convert String II](https://leetcode.com/problems/minimum-cost-to-convert-string-ii/) | [C++](./C++/minimum-cost-to-convert-string-ii.cpp) [Python](./Python/minimum-cost-to-convert-string-ii.py) | _O(o * l + k * eloge + n * l)_ | _O(t + k * v + l)_ | Hard | | `Dijkstra's Algorithm`, `Floyd-Warshall Algorithm`, DP, Memoization, Trie
 
 <br/>
 <div align="right">
