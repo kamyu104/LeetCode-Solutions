@@ -35,6 +35,7 @@ public:
             }
             return best;
         };
+        
         unordered_map<int, unordered_map<int, int>> memo;
         const auto& memoization = [&](int u, int v) {            
             if (!memo.count(u)) {
@@ -64,6 +65,7 @@ class Solution2 {
 public:
     long long minimumCost(string source, string target, vector<char>& original, vector<char>& changed, vector<int>& cost) {
         static const int INF = numeric_limits<int>::max();
+        
         const auto& floydWarshall = [](auto& dist) {
             for (int k = 0; k < size(dist); ++k) {
                 for (int i = 0; i < size(dist); ++i) {
