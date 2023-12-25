@@ -31,7 +31,8 @@ class Solution(object):
                     best[v] = curr+w
                     heapq.heappush(min_heap, (best[v], v))
             return best
-        
+
+        lookup = {}
         def memoization(u, v):
             if u not in lookup:
                 lookup[u] = dijkstra(u)
@@ -45,7 +46,6 @@ class Solution(object):
             if v not in dist[u]:
                 dist[u][v] = INF
             dist[u][v] = min(dist[u][v], cost[i])
-        lookup = {}
         result = sum(memoization(ord(source[i])-ord('a'), ord(target[i])-ord('a')) for i in xrange(len(source)))
         return result if result != INF else -1
 
