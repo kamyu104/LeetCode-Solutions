@@ -59,6 +59,7 @@ public:
             }
             return best;
         };
+        
         unordered_map<int, unordered_map<int, vector<int64_t>>> memo;
         const auto& memoization = [&](int l, const auto& dist, int u, int v) {   
             if (!memo[l].count(u)) {
@@ -107,6 +108,7 @@ class Solution2 {
 public:
     long long minimumCost(string source, string target, vector<string>& original, vector<string>& changed, vector<int>& cost) {
         static const auto INF = numeric_limits<int64_t>::max();
+        
         const auto& floydWarshall = [](auto& dist) {
             for (int k = 0; k < size(dist); ++k) {
                 for (int i = 0; i < size(dist); ++i) {
@@ -235,6 +237,7 @@ public:
             }
             return best;
         };
+        
         unordered_map<int, unordered_map<int, int64_t>> memo;
         const auto& memoization = [&](int u, int v) {            
             if (!memo.count(u)) {
@@ -242,6 +245,7 @@ public:
             }
             return memo[u].count(v) ? memo[u][v] : INF;
         };
+        
         unordered_set<int> candidates;
         int l = 0;
         for (const auto& x : original) {
@@ -280,6 +284,7 @@ class Solution4 {
 public:
     long long minimumCost(string source, string target, vector<string>& original, vector<string>& changed, vector<int>& cost) {
         static const auto INF = numeric_limits<int64_t>::max();
+        
         const auto& floydWarshall = [](auto& dist) {
             for (const auto& [k, _] : dist) {
                 for (const auto& [i, _] : dist) {
@@ -455,6 +460,7 @@ public:
             }
             return best;
         };
+        
         unordered_map<int, unordered_map<int, int64_t>> memo;
         const auto& memoization = [&](int u, int v) {            
             if (!memo.count(u)) {
@@ -462,6 +468,7 @@ public:
             }
             return memo[u].count(v) ? memo[u][v] : INF;
         };
+        
         int l = 0;
         for (const auto& x : original) {
             l = max(l, static_cast<int>(size(x)));
@@ -553,6 +560,7 @@ private:
 public:
     long long minimumCost(string source, string target, vector<string>& original, vector<string>& changed, vector<int>& cost) {
         static const auto INF = numeric_limits<int64_t>::max();
+        
         const auto& floydWarshall = [](auto& dist) {
             for (const auto& [k, _] : dist) {
                 for (const auto& [i, _] : dist) {
