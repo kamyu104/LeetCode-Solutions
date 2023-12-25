@@ -4,6 +4,7 @@
 import collections
 import heapq
 
+
 # dijkstra's algorithm, memoization
 class Solution2(object):
     def minimumCost(self, source, target, original, changed, cost):
