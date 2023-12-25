@@ -1,7 +1,6 @@
 # Time:  O(o + k * eloge + n), k = len(set(original)), e is the number of edges reachable from a given node u
 # Space: O(o + k * v), v is the number of nodes reachable from a given node u
 
-import collections
 import heapq
 
 
@@ -18,15 +17,16 @@ class Solution(object):
         """
         INF = float("inf")
         def dijkstra(start):
-            best = collections.defaultdict(lambda: INF)
-            best[start] = 0
+            best = {start:0}
             min_heap = [(0, start)]
             while min_heap:
                 curr, u = heapq.heappop(min_heap)
                 if curr > best[u]:
                     continue
+                if u not in dist:
+                    continue
                 for v, w in dist[u].iteritems():     
-                    if curr+w >= best[v]:
+                    if v in best and best[v] <= curr+w:
                         continue
                     best[v] = curr+w
                     heapq.heappush(min_heap, (best[v], v))
@@ -35,11 +35,15 @@ class Solution(object):
         def memoization(u, v):
             if u not in lookup:
                 lookup[u] = dijkstra(u)
-            return lookup[u][v]
+            return lookup[u][v] if v in lookup[u] else INF
 
-        dist = collections.defaultdict(lambda: collections.defaultdict(lambda: INF))
+        dist = {}
         for i in xrange(len(original)):
             u, v = ord(original[i])-ord('a'), ord(changed[i])-ord('a')
+            if u not in dist:
+                dist[u] = {v:INF}
+            if v not in dist[u]:
+                dist[u][v] = INF
             dist[u][v] = min(dist[u][v], cost[i])
         lookup = {}
         result = sum(memoization(ord(source[i])-ord('a'), ord(target[i])-ord('a')) for i in xrange(len(source)))
