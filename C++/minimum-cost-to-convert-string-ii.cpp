@@ -41,7 +41,7 @@ public:
         const auto& dijkstra = [&](const auto& dist, int start) {
             vector<int64_t> best(size(dist), INF);
             best[start] = 0;
-            priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap;
+            priority_queue<pair<int64_t, int>, vector<pair<int64_t, int>>, greater<pair<int64_t, int>>> min_heap;
             min_heap.emplace(0, start);
             while (!empty(min_heap)) {
                 const auto [curr, u] = min_heap.top(); min_heap.pop();
@@ -218,7 +218,7 @@ public:
         }
         const auto& dijkstra = [&](int start) {
             unordered_map<int, int64_t> best = {{start, 0}};
-            priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap;
+            priority_queue<pair<int64_t, int>, vector<pair<int64_t, int>>, greater<pair<int64_t, int>>> min_heap;
             min_heap.emplace(0, start);
             while (!empty(min_heap)) {
                 const auto [curr, u] = min_heap.top(); min_heap.pop();
@@ -438,7 +438,7 @@ public:
         }
         const auto& dijkstra = [&](int start) {
             unordered_map<int, int64_t> best = {{start, 0}};
-            priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap;
+            priority_queue<pair<int64_t, int>, vector<pair<int64_t, int>>, greater<pair<int64_t, int>>> min_heap;
             min_heap.emplace(0, start);
             while (!empty(min_heap)) {
                 const auto [curr, u] = min_heap.top(); min_heap.pop();
