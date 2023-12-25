@@ -32,11 +32,11 @@ class Solution(object):
                     heapq.heappush(min_heap, (best[v], v))
             return best
 
-        lookup = {}
+        memo = {}
         def memoization(u, v):
-            if u not in lookup:
-                lookup[u] = dijkstra(u)
-            return lookup[u][v] if v in lookup[u] else INF
+            if u not in memo:
+                memo[u] = dijkstra(u)
+            return memo[u][v] if v in memo[u] else INF
 
         dist = {}
         for i in xrange(len(original)):
