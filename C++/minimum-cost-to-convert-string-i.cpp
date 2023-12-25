@@ -35,12 +35,12 @@ public:
             }
             return best;
         };
-        unordered_map<int, unordered_map<int, int>> lookup;
+        unordered_map<int, unordered_map<int, int>> memo;
         const auto& memoization = [&](int u, int v) {            
-            if (!lookup.count(u)) {
-                lookup[u] = dijkstra(u);
+            if (!memo.count(u)) {
+                memo[u] = dijkstra(u);
             }
-            return lookup[u].count(v) ? lookup[u][v] : INF;
+            return memo[u].count(v) ? memo[u][v] : INF;
         };
 
         int64_t result = 0;
