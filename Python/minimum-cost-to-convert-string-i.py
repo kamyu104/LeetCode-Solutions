@@ -67,7 +67,11 @@ class Solution2(object):
         def floydWarshall(dist):
             for k in xrange(len(dist)):
                 for i in xrange(len(dist)):
+                    if dist[i][k] == INF:
+                        continue
                     for j in xrange(len(dist[i])):
+                        if dist[k][j] == INF:
+                            continue
                         dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j])
 
         dist = [[0 if u == v else INF for v in xrange(26)] for u in xrange(26)]
