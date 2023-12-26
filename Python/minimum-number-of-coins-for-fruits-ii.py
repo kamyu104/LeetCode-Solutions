@@ -51,20 +51,3 @@ class Solution2(object):
                 j += 1
             dp[i+1] = sl[0][0]
         return dp[-1]
-
-
-# Time:  O(n^2)
-# Space: O(n)
-# dp
-class Solution3(object):
-    def minimumCoins(self, prices):
-        """
-        :type prices: List[int]
-        :rtype: int
-        """
-        dp = [float("inf")]*(len(prices)+1)
-        dp[0] = 0
-        for i in xrange(len(prices)):
-            for j in xrange(i//2, i+1):
-                dp[i+1] = min(dp[i+1], dp[j]+prices[j])
-        return dp[-1]
