@@ -2,11 +2,9 @@
 # Space: O(n)
 
 WITH distinct_cte AS (
-    SELECT x, y
+    SELECT DISTINCT x, y
     FROM Coordinates
     WHERE x != y
-    GROUP BY x, y
-    ORDER BY NULL
 ), normalized_cte AS (
     (
         SELECT (CASE WHEN x < y THEN x ELSE y END) AS x, (CASE WHEN x < y THEN y ELSE x END) AS y
