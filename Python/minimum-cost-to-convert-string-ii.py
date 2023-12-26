@@ -92,7 +92,11 @@ class Solution2(object):
         def floydWarshall(dist):
             for k in xrange(len(dist)):
                 for i in xrange(len(dist)):
+                    if dist[i][k] == INF:
+                        continue
                     for j in xrange(len(dist[i])):
+                        if dist[k][j] == INF:
+                            continue
                         dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j])
         
         lookups = collections.defaultdict(dict)
@@ -221,7 +225,11 @@ class Solution4(object):
         def floydWarshall(dist):
             for k in dist.iterkeys():
                 for i in dist.iterkeys():
+                    if dist[i][k] == INF:
+                        continue
                     for j in dist.iterkeys():
+                        if dist[k][j] == INF:
+                            continue
                         dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j])
         
         lookup = {}
@@ -423,7 +431,11 @@ class Solution6(object):
         def floydWarshall(dist):
             for k in dist.iterkeys():
                 for i in dist.iterkeys():
+                    if dist[i][k] == INF:
+                        continue
                     for j in dist.iterkeys():
+                        if dist[k][j] == INF:
+                            continue
                         dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j])
         
         trie = Trie()
