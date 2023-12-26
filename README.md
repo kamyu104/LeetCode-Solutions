@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2977%20%2F%202977-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2978%20%2F%202978-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1292,6 +1292,7 @@
 2854 | [Rolling Average Steps](https://leetcode.com/problems/rolling-average-steps/) | [MySQL](./MySQL/rolling-average-steps.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2893 | [Calculate Orders Within Each Interval](https://leetcode.com/problems/calculate-orders-within-each-interval/) | [MySQL](./MySQL/calculate-orders-within-each-interval.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2922 | [Market Analysis III](https://leetcode.com/problems/market-analysis-iii/) | [MySQL](./MySQL/market-analysis-iii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2978 | [Symmetric Coordinates](https://leetcode.com/problems/symmetric-coordinates/) | [MySQL](./MySQL/symmetric-coordinates.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
