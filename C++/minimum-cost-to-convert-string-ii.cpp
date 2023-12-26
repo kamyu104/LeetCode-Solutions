@@ -112,10 +112,14 @@ public:
         const auto& floydWarshall = [](auto& dist) {
             for (int k = 0; k < size(dist); ++k) {
                 for (int i = 0; i < size(dist); ++i) {
+                    if (dist[i][k] == INF) {
+                        continue;
+                    }
                     for (int j = 0; j < size(dist[0]); ++j) {
-                        if (dist[i][k] != INF && dist[k][j] != INF) {
-                            dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
+                        if (dist[k][j] == INF) {
+                            continue;
                         }
+                        dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
                     }
                 }
             }
@@ -288,10 +292,14 @@ public:
         const auto& floydWarshall = [](auto& dist) {
             for (const auto& [k, _] : dist) {
                 for (const auto& [i, _] : dist) {
+                    if (dist[i][k] == INF) {
+                        continue;
+                    }
                     for (const auto& [j, _] : dist) {
-                        if (dist[i][k] != INF && dist[k][j] != INF) {
-                            dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
+                        if (dist[k][j] == INF) {
+                            continue;
                         }
+                        dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
                     }
                 }
             }
@@ -564,10 +572,14 @@ public:
         const auto& floydWarshall = [](auto& dist) {
             for (const auto& [k, _] : dist) {
                 for (const auto& [i, _] : dist) {
+                    if (dist[i][k] == INF) {
+                        continue;
+                    }
                     for (const auto& [j, _] : dist) {
-                        if (dist[i][k] != INF && dist[k][j] != INF) {
-                            dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
+                        if (dist[k][j] == INF) {
+                            continue;
                         }
+                        dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
                     }
                 }
             }
