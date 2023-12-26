@@ -27,8 +27,8 @@ HAVING COUNT(*) > 1
 ORDER BY x, y;
 
 
-# # Time:  O(n^2)
-# # Space: O(n^2)
+# Time:  O(n^2)
+# Space: O(n^2)
 WITH rnk_cte AS (
     SELECT x, y, ROW_NUMBER() OVER () AS rnk
     FROM Coordinates
