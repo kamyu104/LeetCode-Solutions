@@ -466,7 +466,6 @@ class Solution6(object):
                 if u == -1 or v == -1:
                     break
                 if trie.id(u) != -1 and trie.id(v) != -1:
-                    print(dists[j-i+1][trie.id(u)][trie.id(v)])
                     dp[(j+1)%len(dp)] = min(dp[(j+1)%len(dp)], dp[i%len(dp)]+dists[j-i+1][trie.id(u)][trie.id(v)])
             dp[i%len(dp)] = INF
         return dp[len(source)%len(dp)] if dp[len(source)%len(dp)] != INF else -1
