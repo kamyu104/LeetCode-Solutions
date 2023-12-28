@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2978%20%2F%202978-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2979%20%2F%202979-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -536,6 +536,7 @@
 2954 | [Count the Number of Infection Sequences](https://leetcode.com/problems/count-the-number-of-infection-sequences/) | [C++](./C++/count-the-number-of-infection-sequences.cpp) [Python](./Python/count-the-number-of-infection-sequences.py) | precompute: _O(max_n)_<br>runtime: _O(s + logn)_ | _O(max_n)_ | Hard | | Combinatorics |
 2961 | [Double Modular Exponentiation](https://leetcode.com/problems/double-modular-exponentiation/) | [C++](./C++/double-modular-exponentiation.cpp) [Python](./Python/double-modular-exponentiation.py) | _O(n * (logb + logc))_ | _O(1)_ | Medium | | Fast Exponentiation |
 2963 | [Count the Number of Good Partitions](https://leetcode.com/problems/count-the-number-of-good-partitions/) | [C++](./C++/count-the-number-of-good-partitions.cpp) [Python](./Python/count-the-number-of-good-partitions.py) | _O(n)_ | _O(n)_ | Hard | | Hash Table, Combinatorics |
+2979 | [Most Expensive Item That Can Not Be Bought](https://leetcode.com/problems/most-expensive-item-that-can-not-be-bought/) | [C++](./C++/most-expensive-item-that-can-not-be-bought.cpp) [Python](./Python/most-expensive-item-that-can-not-be-bought.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | `Frobenius Coin Problem`, `Chicken McNugget Theorem` |
 
 <br/>
 <div align="right">
