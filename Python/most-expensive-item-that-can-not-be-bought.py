@@ -28,7 +28,7 @@ class Solution2(object):
         dp = [False]*max(primeOne, primeTwo)
         dp[0] = True
         result = 1
-        for i in xrange(1, primeOne*primeTwo):
+        for i in xrange(2, primeOne*primeTwo):
             dp[i%len(dp)] = dp[(i-primeOne)%len(dp)] or dp[(i-primeTwo)%len(dp)]
             if not dp[i%len(dp)]:
                 result = i
