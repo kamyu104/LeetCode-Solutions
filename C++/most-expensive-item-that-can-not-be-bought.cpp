@@ -11,3 +11,23 @@ public:
         return primeOne * primeTwo - primeOne - primeTwo;
     }
 };
+
+// Time:  O(p1 * p2)
+// Space: O(p1 + p2)
+// dp
+class Solution2 {
+public:
+    int mostExpensiveItem(int primeOne, int primeTwo) {
+        vector<int> dp(max(primeOne, primeTwo));
+        dp[0] = true;
+        const int w = max(primeOne, primeTwo);
+        int result = 1;
+        for (int i = 1; i <= primeOne * primeTwo; ++i) {
+            dp[i % size(dp)] = dp[((i - primeOne) % w + w) % w] || dp[((i - primeTwo) % w + w) % w];
+            if (!dp[i % size(dp)]) {
+                result = i;
+            }
+        }
+        return result;
+    }
+};
