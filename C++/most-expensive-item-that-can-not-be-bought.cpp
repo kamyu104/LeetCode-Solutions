@@ -23,8 +23,8 @@ public:
         const int w = max(primeOne, primeTwo);
         int result = 1;
         for (int i = 1; i <= primeOne * primeTwo; ++i) {
-            dp[i % size(dp)] = dp[((i - primeOne) % w + w) % w] || dp[((i - primeTwo) % w + w) % w];
-            if (!dp[i % size(dp)]) {
+            dp[i % w] = dp[((i - primeOne) % w + w) % w] || dp[((i - primeTwo) % w + w) % w];
+            if (!dp[i % w]) {
                 result = i;
             }
         }
