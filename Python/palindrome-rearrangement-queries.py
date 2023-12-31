@@ -5,7 +5,7 @@
 class Solution(object):
     def canMakePalindromeQueries(self, s, queries):
         """
-        :type new_s: str
+        :type s: str
         :type queries: List[List[int]]
         :rtype: List[bool]
         """
