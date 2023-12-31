@@ -7,18 +7,17 @@ public:
     vector<bool> canMakePalindromeQueries(string s, vector<vector<int>>& queries) {
         vector<int> lookup(26, -1);
         int d = 0;
-        for (auto& c : s) {
-            if (lookup[c - 'a'] == -1) {
-                lookup[c - 'a'] = d++;
+        for (const auto& c : s) {
+            if (lookup[c - 'a'] != -1) {
+                continue;
             }
-            c = lookup[c - 'a'];
+            lookup[c - 'a'] = d++;
         }
-
         vector<int> prefix(size(s) / 2 + 1);
         vector<vector<int>> prefixs1(size(s) / 2 + 1, vector<int>(d));
         vector<vector<int>> prefixs2(size(s) / 2 + 1, vector<int>(d));
         for (int i = 0; i < size(s) / 2; ++i) {
-            const int x = s[i], y = s[(size(s) - 1) - i];
+            const int x = lookup[s[i] - 'a'], y = lookup[s[(size(s) - 1) - i] - 'a'];
             prefix[i + 1] = prefix[i] + (x != y ? 1 : 0);
             for (int j = 0; j < d; ++j) {
                 prefixs1[i + 1][j] = prefixs1[i][j] + (j == x ? 1 : 0);
