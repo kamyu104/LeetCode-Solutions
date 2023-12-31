@@ -24,7 +24,7 @@ class Solution(object):
 
 
 # Time:  O(n^2)
-# Space: O(n^2)
+# Space: O(n^2 + 26)
 # string, brute force, freq table
 class Solution2(object):
     def maximumLength(self, s):
