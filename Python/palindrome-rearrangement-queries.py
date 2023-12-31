@@ -21,13 +21,13 @@ class Solution(object):
             # overlapped
             if (left1 == min_left) == (right1 == max_right):  # inside another
                 return all(prefixs1[max_right+1][i] == prefixs2[max_right+1][i] for i in xrange(26))
-            else:  # not inside another
-                p1, p2 = (prefixs1, prefixs2) if min_left == left1 else (prefixs2, prefixs1)
-                diff1 = [(p2[max_right+1][i]-p2[max_left][i])-(p1[max_right+1][i]-p1[min_right+1][i]) for i in xrange(26)]
-                if not all(x >= 0 for x in diff1):
-                    return False
-                diff2 = [(p1[min_right+1][i]-p1[min_left][i])-(p2[max_left][i]-p2[min_left][i]) for i in xrange(26)]
-                return diff1 == diff2
+            # not inside another
+            p1, p2 = (prefixs1, prefixs2) if min_left == left1 else (prefixs2, prefixs1)
+            diff1 = [(p2[max_right+1][i]-p2[max_left][i])-(p1[max_right+1][i]-p1[min_right+1][i]) for i in xrange(26)]
+            if not all(x >= 0 for x in diff1):
+                return False
+            diff2 = [(p1[min_right+1][i]-p1[min_left][i])-(p2[max_left][i]-p2[min_left][i]) for i in xrange(26)]
+            return diff1 == diff2
 
         prefix = [0]*(len(s)//2+1)
         prefixs1 = [[0]*26 for _ in xrange(len(s)//2+1)]
