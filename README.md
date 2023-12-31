@@ -441,7 +441,7 @@
 2975 | [Maximum Square Area by Removing Fences From a Field](https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/) | [C++](./C++/maximum-square-area-by-removing-fences-from-a-field.cpp) [Python](./Python/maximum-square-area-by-removing-fences-from-a-field.py) | _O(h^2 + v^2)_ | _O(min(h, v)^2)_ | Medium || Hash Table
 2981 | [Find Longest Special Substring That Occurs Thrice I](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/) | [C++](./C++/find-longest-special-substring-that-occurs-thrice-i.cpp) [Python](./Python/find-longest-special-substring-that-occurs-thrice-i.py) | _O(26 * 3 + n * 3)_ | _O(26 * 3)_ | Medium || String, Brute Force, Freq Table, Hash Table
 2982 | [Find Longest Special Substring That Occurs Thrice II](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/) | [C++](./C++/find-longest-special-substring-that-occurs-thrice-ii.cpp) [Python](./Python/find-longest-special-substring-that-occurs-thrice-ii.py) | _O(26 * 3 + n * 3)_ | _O(26 * 3)_ | Medium || String, Hash Table
-2983 | [Palindrome Rearrangement Queries](https://leetcode.com/problems/palindrome-rearrangement-queries/) | [C++](./C++/palindrome-rearrangement-queries.cpp) [Python](./Python/palindrome-rearrangement-queries.py) | _O(26 * n + 26 * q)_ | _O(26 * n)_ | Hard || Prefix Sum, Freq Table
+2983 | [Palindrome Rearrangement Queries](https://leetcode.com/problems/palindrome-rearrangement-queries/) | [C++](./C++/palindrome-rearrangement-queries.cpp) [Python](./Python/palindrome-rearrangement-queries.py) | _O(26 + d * n + d * q)_ | _O(26 + d * n)_ | Hard || Prefix Sum, Freq Table
 
 <br/>
 <div align="right">
