@@ -33,7 +33,7 @@ public:
                 return false;
             }
             if (min_right < max_left) {  // non-overlapped
-                return prefix[max_left] - prefix[min_right+1] == 0 && same(min_left, min_right) && same(max_left, max_right);
+                return prefix[max_left] - prefix[min_right + 1] == 0 && same(min_left, min_right) && same(max_left, max_right);
             }
             // overlapped
             if ((left1 == min_left) == (right1 == max_right)) {  // inside another
