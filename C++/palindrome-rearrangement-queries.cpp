@@ -46,11 +46,8 @@ public:
             }
             for (int i = 0; i < 26; ++i) {
                 const int d1 = ((*p2)[max_right + 1][i] - (*p2)[max_left][i]) - ((*p1)[max_right + 1][i] - (*p1)[min_right + 1][i]);
-                if (d1 < 0) {
-                    return false;
-                }
                 const int d2 = ((*p1)[min_right + 1][i] - (*p1)[min_left][i]) - ((*p2)[max_left][i] - (*p2)[min_left][i]);
-                if (d1 != d2) {
+                if (!(d1 == d2 && d1 >= 0)) {
                     return false;
                 }
             }
