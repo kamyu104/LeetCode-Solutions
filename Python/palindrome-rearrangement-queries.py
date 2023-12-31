@@ -35,17 +35,16 @@ class Solution(object):
                 continue
             lookup[ord(x)-ord('a')] = d
             d += 1
-        new_s = [lookup[ord(x)-ord('a')] for x in s]
-        prefix = [0]*(len(new_s)//2+1)
-        prefixs1 = [[0]*d for _ in xrange(len(new_s)//2+1)]
-        prefixs2 = [[0]*d for _ in xrange(len(new_s)//2+1)]
-        for i in xrange(len(new_s)//2):
-            x, y = new_s[i], new_s[~i]
+        prefix = [0]*(len(s)//2+1)
+        prefixs1 = [[0]*d for _ in xrange(len(s)//2+1)]
+        prefixs2 = [[0]*d for _ in xrange(len(s)//2+1)]
+        for i in xrange(len(s)//2):
+            x, y = lookup[ord(s[i])-ord('a')], lookup[ord(s[~i])-ord('a')]
             prefix[i+1] = prefix[i]+int(x != y)
             for j in xrange(d):
                 prefixs1[i+1][j] = prefixs1[i][j]+int(j == x)
                 prefixs2[i+1][j] = prefixs2[i][j]+int(j == y)
-        return [check(q[0], q[1], (len(new_s)-1)-q[3], (len(new_s)-1)-q[2]) for q in queries]
+        return [check(q[0], q[1], (len(s)-1)-q[3], (len(s)-1)-q[2]) for q in queries]
 
 
 # Time:  O(26 * n + 26 * q)
