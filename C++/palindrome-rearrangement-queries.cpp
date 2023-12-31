@@ -40,17 +40,16 @@ public:
                 return same(min_left, max_right);
             }
             // not inside another
-            auto ptr1 = &prefixs1, ptr2 = &prefixs2;
+            auto p1 = &prefixs1, p2 = &prefixs2;
             if (min_left != left1) {
-                swap(ptr1, ptr2);
+                swap(p1, p2);
             }
-            const auto& p1 = *ptr1, &p2 = *ptr2;
             for (int i = 0; i < 26; ++i) {
-                const int d1 = (p2[max_right + 1][i] - p2[max_left][i]) - (p1[max_right + 1][i] - p1[min_right + 1][i]);
+                const int d1 = ((*p2)[max_right + 1][i] - (*p2)[max_left][i]) - ((*p1)[max_right + 1][i] - (*p1)[min_right + 1][i]);
                 if (d1 < 0) {
                     return false;
                 }
-                const int d2 = (p1[min_right + 1][i] - p1[min_left][i]) - (p2[max_left][i] - p2[min_left][i]);
+                const int d2 = ((*p1)[min_right + 1][i] - (*p1)[min_left][i]) - ((*p2)[max_left][i] - (*p2)[min_left][i]);
                 if (d1 != d2) {
                     return false;
                 }
