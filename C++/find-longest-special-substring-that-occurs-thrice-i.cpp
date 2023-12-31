@@ -34,16 +34,16 @@ public:
         vector<vector<int>> lookup(26, vector<int>(1));
         int result = 0;
         for (int i = 0; i < size(s); ++i) {
-            const int x = s[i] - 'a';
+            auto& curr = lookup[s[i] - 'a'];
             for (int j = i; j < size(s); ++j) {
                 if (s[j] != s[i]) {
                     break;
                 }
                 const int l = j - i + 1;
-                if (l == size(lookup[x])) {
-                    lookup[x].emplace_back();
+                if (l == size(curr)) {
+                    curr.emplace_back();
                 }
-                if (++lookup[x][l] == 3) {
+                if (++curr[l] == 3) {
                     result = max(result, l);
                 }
             }
