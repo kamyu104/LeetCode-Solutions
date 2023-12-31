@@ -18,7 +18,8 @@ class Solution(object):
                 return (prefix[min_right+1] == prefix[max_left] and
                         all(prefixs1[right1+1][i] == prefixs2[right1+1][i] for i in xrange(26)) and
                         all(prefixs1[right2+1][i] == prefixs2[right2+1][i] for i in xrange(26)))
-            elif (left1 == min_left) == (right1 == max_right):  # inside another
+            # overlapped
+            if (left1 == min_left) == (right1 == max_right):  # inside another
                 return all(prefixs1[max_right+1][i] == prefixs2[max_right+1][i] for i in xrange(26))
             else:  # not inside another
                 p1, p2 = (prefixs1, prefixs2) if min_left == left1 else (prefixs2, prefixs1)
