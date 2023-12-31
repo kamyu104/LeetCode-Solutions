@@ -35,13 +35,13 @@ class Solution2(object):
         lookup = [[0] for _ in xrange(26)]
         result = 0
         for i, c in enumerate(s):
-            x = ord(c)-ord('a')
+            curr = lookup[ord(c)-ord('a')]
             for j in xrange(i, len(s)):
                 if s[j] != s[i]:
                     break
-                if j-i+1 == len(lookup[x]):
-                    lookup[x].append(0)
-                lookup[x][j-i+1] += 1
-                if lookup[x][j-i+1] == 3:
+                if j-i+1 == len(curr):
+                    curr.append(0)
+                curr[j-i+1] += 1
+                if curr[j-i+1] == 3:
                     result = max(result, j-i+1)
         return result if result else -1
