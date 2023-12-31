@@ -14,9 +14,8 @@ class Solution(object):
             cnt += 1
             if i+1 != len(s) and s[i+1] == s[i]:
                 continue
-            x = ord(c)-ord('a')
-            curr = lookup[x]
-            for j in xrange(len(lookup[x])):
+            curr = lookup[ord(c)-ord('a')]
+            for j in xrange(len(curr)):
                 if curr[j] < cnt:
                     cnt, curr[j] = curr[j], cnt
             cnt = 0
