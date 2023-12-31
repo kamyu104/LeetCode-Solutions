@@ -12,10 +12,10 @@ class Solution(object):
         def check(left1, right1, left2, right2):
             min_left, max_left = min(left1, left2), max(left1, left2)
             min_right, max_right = min(right1, right2), max(right1, right2)
-            if not (prefix[min_left] == 0 and prefix[max_right+1] == prefix[-1]):
+            if not (prefix[min_left]-prefix[0] == prefix[-1]-prefix[max_right+1] == 0):
                 return False
             if min_right < max_left:  # non-overlapped
-                return (prefix[min_right+1] == prefix[max_left] and
+                return (prefix[min_right+1]-prefix[max_left] == 0 and
                         all(prefixs1[right1+1][i] == prefixs2[right1+1][i] for i in xrange(26)) and
                         all(prefixs1[right2+1][i] == prefixs2[right2+1][i] for i in xrange(26)))
             # overlapped
