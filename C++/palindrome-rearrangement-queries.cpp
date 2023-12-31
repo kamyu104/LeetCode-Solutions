@@ -40,8 +40,7 @@ public:
                 return same(min_left, max_right);
             }
             // not inside another
-            auto ptr1 = &prefixs1;
-            auto ptr2 = &prefixs2;
+            auto ptr1 = &prefixs1, ptr2 = &prefixs2;
             if (min_left != left1) {
                 swap(ptr1, ptr2);
             }
