@@ -23,7 +23,7 @@ class Solution(object):
         return result if result else -1
 
 
-# Time:  O(n^2)
+# Time:  O(n^2 + 26)
 # Space: O(n^2 + 26)
 # string, brute force, freq table
 class Solution2(object):
