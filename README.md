@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2979%20%2F%202979-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2983%20%2F%202983-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -84,6 +84,7 @@
 2917 | [Find the K-or of an Array](https://leetcode.com/problems/find-the-k-or-of-an-array/) | [C++](./C++/find-the-k-or-of-an-array.cpp) [Python](./Python/find-the-k-or-of-an-array.py) | _O(nlogr)_ | _O(1)_ | Easy | | Bit Manipulation
 2932 | [Maximum Strong Pair XOR I](https://leetcode.com/problems/maximum-strong-pair-xor-i/) | [C++](./C++/maximum-strong-pair-xor-i.cpp) [Python](./Python/maximum-strong-pair-xor-i.py) | _O(nlogr)_ | _O(t)_ | Easy | variant of [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | Bit Manipulation, Greedy, Trie, DP, Sort, Two Pointers, Brute Force
 2935 | [Maximum Strong Pair XOR II](https://leetcode.com/problems/maximum-strong-pair-xor-ii/) | [C++](./C++/maximum-strong-pair-xor-ii.cpp) [Python](./Python/maximum-strong-pair-xor-ii.py) | _O(nlogr)_ | _O(t)_ | Hard | variant of [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | Bit Manipulation, Greedy, Trie, DP, Sort, Two Pointers
+2980 | [Check if Bitwise OR Has Trailing Zeros](https://leetcode.com/problems/check-if-bitwise-or-has-trailing-zeros/) | [C++](./C++/check-if-bitwise-or-has-trailing-zeros.cpp) [Python](./Python/check-if-bitwise-or-has-trailing-zeros.py) | _O(n)_ | _O(1)_ | Easy | | Bit Manipulation
 
 <br/>
 <div align="right">
@@ -438,6 +439,9 @@
 2956 | [Find Common Elements Between Two Arrays](https://leetcode.com/problems/find-common-elements-between-two-arrays/) | [C++](./C++/find-common-elements-between-two-arrays.cpp) [Python](./Python/find-common-elements-between-two-arrays.py) | _O(n + m)_ | _O(n + m)_ | Easy || Hash Table
 2964 | [Number of Divisible Triplet Sums](https://leetcode.com/problems/number-of-divisible-triplet-sums/) | [C++](./C++/number-of-divisible-triplet-sums.cpp) [Python](./Python/number-of-divisible-triplet-sums.py) | _O(n^2)_ | _O(n)_ | Medium | 🔒 | Freq Table
 2975 | [Maximum Square Area by Removing Fences From a Field](https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/) | [C++](./C++/maximum-square-area-by-removing-fences-from-a-field.cpp) [Python](./Python/maximum-square-area-by-removing-fences-from-a-field.py) | _O(h^2 + v^2)_ | _O(min(h, v)^2)_ | Medium || Hash Table
+2981 | [Find Longest Special Substring That Occurs Thrice I](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/) | [C++](./C++/find-longest-special-substring-that-occurs-thrice-i.cpp) [Python](./Python/find-longest-special-substring-that-occurs-thrice-i.py) | _O(n)_ | _O(26)_ | Medium || String, Brute Force, Freq Table, Hash Table
+2982 | [Find Longest Special Substring That Occurs Thrice II](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/) | [C++](./C++/find-longest-special-substring-that-occurs-thrice-ii.cpp) [Python](./Python/find-longest-special-substring-that-occurs-thrice-ii.py) | _O(n)_ | _O(26)_ | Medium || String, Hash Table
+2983 | [Palindrome Rearrangement Queries](https://leetcode.com/problems/palindrome-rearrangement-queries/) | [C++](./C++/palindrome-rearrangement-queries.cpp) [Python](./Python/palindrome-rearrangement-queries.py) | _O(26 * n + 26 * q)_ | _O(26 * n)_ | Hard || Prefix Sum, Freq Table
 
 <br/>
 <div align="right">
