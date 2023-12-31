@@ -1,4 +1,4 @@
-# Time:  O(n * 3)
+# Time:  O(26 * 3 + n * 3)
 # Space: O(26 * 3)
 
 # string, hash table
@@ -23,8 +23,8 @@ class Solution(object):
         return result if result else -1
 
 
-# Time:  O(n^2 + 26)
-# Space: O(n^2 + 26)
+# Time:  O(26 + n^2)
+# Space: O(26 + n^2)
 # string, brute force, freq table
 class Solution2(object):
     def maximumLength(self, s):
