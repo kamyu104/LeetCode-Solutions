@@ -15,12 +15,12 @@ class Solution(object):
             if not (prefix[min_left]-prefix[0] == prefix[-1]-prefix[max_right+1] == 0):
                 return False
             if min_right < max_left:  # non-overlapped
-                return (prefix[min_right+1]-prefix[max_left] == 0 and
-                        all(prefixs1[right1+1][i] == prefixs2[right1+1][i] for i in xrange(26)) and
-                        all(prefixs1[right2+1][i] == prefixs2[right2+1][i] for i in xrange(26)))
+                return (prefix[max_left]-prefix[min_right+1] == 0 and
+                        all(prefixs1[min_right+1][i]-prefixs1[min_left][i] == prefixs2[min_right+1][i]-prefixs2[min_left][i] for i in xrange(26)) and
+                        all(prefixs1[max_right+1][i]-prefixs1[max_left][i] == prefixs2[max_right+1][i]-prefixs2[max_left][i] for i in xrange(26)))
             # overlapped
             if (left1 == min_left) == (right1 == max_right):  # inside another
-                return all(prefixs1[max_right+1][i] == prefixs2[max_right+1][i] for i in xrange(26))
+                return all(prefixs1[max_right+1][i]-prefixs1[min_left][i] == prefixs2[max_right+1][i]-prefixs2[min_left][i] for i in xrange(26))
             # not inside another
             p1, p2 = (prefixs1, prefixs2) if min_left == left1 else (prefixs2, prefixs1)
             diff1 = [(p2[max_right+1][i]-p2[max_left][i])-(p1[max_right+1][i]-p1[min_right+1][i]) for i in xrange(26)]
