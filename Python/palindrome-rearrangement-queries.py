@@ -1,7 +1,7 @@
 # Time:  O(26 * n + 26 * q)
 # Space: O(26 * n)
 
-# prefix sum
+# prefix sum, freq table
 class Solution(object):
     def canMakePalindromeQueries(self, s, queries):
         """
