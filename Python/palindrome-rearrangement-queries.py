@@ -37,4 +37,4 @@ class Solution(object):
             for j in xrange(26):
                 prefixs1[i+1][j] = prefixs1[i][j]+int(j == x)
                 prefixs2[i+1][j] = prefixs2[i][j]+int(j == y)
-        return [check(a, b, (len(s)-1)-d, (len(s)-1)-c) for i, (a, b, c, d) in enumerate(queries)]
+        return [check(a, b, (len(s)-1)-d, (len(s)-1)-c) for a, b, c, d in queries]
