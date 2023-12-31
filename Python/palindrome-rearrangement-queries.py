@@ -85,4 +85,4 @@ class Solution2(object):
             for j in xrange(26):
                 prefixs1[i+1][j] = prefixs1[i][j]+int(j == x)
                 prefixs2[i+1][j] = prefixs2[i][j]+int(j == y)
-        return [check(a, b, (len(s)-1)-d, (len(s)-1)-c) for a, b, c, d in queries]
+        return [check(q[0], q[1], (len(s)-1)-q[3], (len(s)-1)-q[2]) for q in queries]
