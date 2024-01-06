@@ -1,4 +1,4 @@
-# Time:  O(n)
+# Time:  O(nlogn)
 # Space: O(n)
 
 WITH date_cte AS (
@@ -28,4 +28,4 @@ SELECT a.week_of_month,
        COALESCE(SUM(b.amount_spend), 0) AS total_amount
 FROM date_cte a LEFT JOIN Purchases b ON a.purchase_date = b.purchase_date
 GROUP BY 1, 2
-ORDER BY NULL;
+ORDER BY 1;
