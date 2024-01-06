@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2995%20%2F%202995-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2999%20%2F%202999-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -85,6 +85,7 @@
 2932 | [Maximum Strong Pair XOR I](https://leetcode.com/problems/maximum-strong-pair-xor-i/) | [C++](./C++/maximum-strong-pair-xor-i.cpp) [Python](./Python/maximum-strong-pair-xor-i.py) | _O(nlogr)_ | _O(t)_ | Easy | variant of [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | Bit Manipulation, Greedy, Trie, DP, Sort, Two Pointers, Brute Force
 2935 | [Maximum Strong Pair XOR II](https://leetcode.com/problems/maximum-strong-pair-xor-ii/) | [C++](./C++/maximum-strong-pair-xor-ii.cpp) [Python](./Python/maximum-strong-pair-xor-ii.py) | _O(nlogr)_ | _O(t)_ | Hard | variant of [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | Bit Manipulation, Greedy, Trie, DP, Sort, Two Pointers
 2980 | [Check if Bitwise OR Has Trailing Zeros](https://leetcode.com/problems/check-if-bitwise-or-has-trailing-zeros/) | [C++](./C++/check-if-bitwise-or-has-trailing-zeros.cpp) [Python](./Python/check-if-bitwise-or-has-trailing-zeros.py) | _O(n)_ | _O(1)_ | Easy | | Bit Manipulation
+2997 | [Minimum Number of Operations to Make Array XOR Equal to K](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/) | [C++](./C++/minimum-number-of-operations-to-make-array-xor-equal-to-k.cpp) [Python](./Python/minimum-number-of-operations-to-make-array-xor-equal-to-k.py) | _O(n)_ | _O(1)_ | Medium | | Bit Manipulation
 
 <br/>
 <div align="right">
@@ -442,6 +443,7 @@
 2981 | [Find Longest Special Substring That Occurs Thrice I](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/) | [C++](./C++/find-longest-special-substring-that-occurs-thrice-i.cpp) [Python](./Python/find-longest-special-substring-that-occurs-thrice-i.py) | _O(26 * 3 + n * 3)_ | _O(26 * 3)_ | Medium || String, Brute Force, Freq Table, Hash Table
 2982 | [Find Longest Special Substring That Occurs Thrice II](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/) | [C++](./C++/find-longest-special-substring-that-occurs-thrice-ii.cpp) [Python](./Python/find-longest-special-substring-that-occurs-thrice-ii.py) | _O(26 * 3 + n * 3)_ | _O(26 * 3)_ | Medium || String, Hash Table
 2983 | [Palindrome Rearrangement Queries](https://leetcode.com/problems/palindrome-rearrangement-queries/) | [C++](./C++/palindrome-rearrangement-queries.cpp) [Python](./Python/palindrome-rearrangement-queries.py) | _O(26 + d * n + d * q)_ | _O(26 + d * n)_ | Hard || Prefix Sum, Freq Table
+2996 | [Smallest Missing Integer Greater Than Sequential Prefix Sum](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/) | [C++](./C++/smallest-missing-integer-greater-than-sequential-prefix-sum.cpp) [Python](./Python/smallest-missing-integer-greater-than-sequential-prefix-sum.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
 
 <br/>
 <div align="right">
@@ -541,6 +543,7 @@
 2961 | [Double Modular Exponentiation](https://leetcode.com/problems/double-modular-exponentiation/) | [C++](./C++/double-modular-exponentiation.cpp) [Python](./Python/double-modular-exponentiation.py) | _O(n * (logb + logc))_ | _O(1)_ | Medium | | Fast Exponentiation |
 2963 | [Count the Number of Good Partitions](https://leetcode.com/problems/count-the-number-of-good-partitions/) | [C++](./C++/count-the-number-of-good-partitions.cpp) [Python](./Python/count-the-number-of-good-partitions.py) | _O(n)_ | _O(n)_ | Hard | | Hash Table, Combinatorics |
 2979 | [Most Expensive Item That Can Not Be Bought](https://leetcode.com/problems/most-expensive-item-that-can-not-be-bought/) | [C++](./C++/most-expensive-item-that-can-not-be-bought.cpp) [Python](./Python/most-expensive-item-that-can-not-be-bought.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | `Frobenius Coin Problem`, `Chicken McNugget Theorem`, DP |
+2999 | [Count the Number of Powerful Integers](https://leetcode.com/problems/count-the-number-of-powerful-integers/) | [C++](./C++/count-the-number-of-powerful-integers.cpp) [Python](./Python/count-the-number-of-powerful-integers.py) | _O(logf)_ | _O(logf)_ | Hard || Math, Combinatorics |
 
 <br/>
 <div align="right">
@@ -893,6 +896,7 @@
 2976 | [Minimum Cost to Convert String I](https://leetcode.com/problems/minimum-cost-to-convert-string-i/) | [C++](./C++/minimum-cost-to-convert-string-i.cpp) [Python](./Python/minimum-cost-to-convert-string-i.py) | _O(o + k * eloge + n)_ | _O(o + k * v)_ | Medium | | `Dijkstra's Algorithm`, `Floyd-Warshall Algorithm`, DP, Memoization
 2977 | [Minimum Cost to Convert String II](https://leetcode.com/problems/minimum-cost-to-convert-string-ii/) | [C++](./C++/minimum-cost-to-convert-string-ii.cpp) [Python](./Python/minimum-cost-to-convert-string-ii.py) | _O(o * l + k * eloge + n * l)_ | _O(t + k * v + l)_ | Hard | | `Dijkstra's Algorithm`, `Floyd-Warshall Algorithm`, DP, Memoization, Trie
 2992 | [Number of Self-Divisible Permutations](https://leetcode.com/problems/number-of-self-divisible-permutations/) | [C++](./C++/number-of-self-divisible-permutations.cpp) [Python](./Python/number-of-self-divisible-permutations.py) | _O(n * 2^n)_ | _O(2^n)_ | Medium | 🔒 | Bitmasks, DP
+2998 | [Minimum Number of Operations to Make X and Y Equal](https://leetcode.com/problems/minimum-number-of-operations-to-make-x-and-y-equal/) | [C++](./C++/minimum-number-of-operations-to-make-x-and-y-equal.cpp) [Python](./Python/minimum-number-of-operations-to-make-x-and-y-equal.py) | _O(x)_ | _O(x)_ | Medium | | Memoization, BFS
 
 <br/>
 <div align="right">
