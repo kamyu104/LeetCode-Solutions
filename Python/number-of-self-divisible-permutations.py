@@ -1,7 +1,7 @@
 # Time:  O(n^2 * logn + n * 2^n) = O(n * 2^n)
 # Space: O(n^2 + 2^n) = O(2^n)
 
-# bitmasks, dp, memoization
+# bitmasks, dp
 class Solution(object):
     def selfDivisiblePermutationCount(self, n):
         """
@@ -17,18 +17,14 @@ class Solution(object):
             return a
 
         lookup = [[0]*n for _ in xrange(n)]
-        def memoization(a, b):
-            if a > b:
-                a, b = b, a
-            if not lookup[a-1][b-1]:
-                lookup[a-1][b-1] = gcd(a, b)
-            return lookup[a-1][b-1]
-
+        for i in xrange(n):
+            for j in xrange(i, n):
+                lookup[i][j] = lookup[j][i] = gcd(i+1, j+1) == 1
         dp = [0]*(1<<n)
         dp[0] = 1
         for mask in xrange(1<<n):
             i = popcount(mask)
             for j in xrange(n):
-                if mask&(1<<j) == 0 and memoization(j+1, i+1) == 1:
+                if mask&(1<<j) == 0 and lookup[i][j]:
                     dp[mask|(1<<j)] += dp[mask]
         return dp[-1]
