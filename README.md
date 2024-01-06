@@ -543,7 +543,7 @@
 2961 | [Double Modular Exponentiation](https://leetcode.com/problems/double-modular-exponentiation/) | [C++](./C++/double-modular-exponentiation.cpp) [Python](./Python/double-modular-exponentiation.py) | _O(n * (logb + logc))_ | _O(1)_ | Medium | | Fast Exponentiation |
 2963 | [Count the Number of Good Partitions](https://leetcode.com/problems/count-the-number-of-good-partitions/) | [C++](./C++/count-the-number-of-good-partitions.cpp) [Python](./Python/count-the-number-of-good-partitions.py) | _O(n)_ | _O(n)_ | Hard | | Hash Table, Combinatorics |
 2979 | [Most Expensive Item That Can Not Be Bought](https://leetcode.com/problems/most-expensive-item-that-can-not-be-bought/) | [C++](./C++/most-expensive-item-that-can-not-be-bought.cpp) [Python](./Python/most-expensive-item-that-can-not-be-bought.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | `Frobenius Coin Problem`, `Chicken McNugget Theorem`, DP |
-2999 | [Count the Number of Powerful Integers](https://leetcode.com/problems/count-the-number-of-powerful-integers/) | [C++](./C++/count-the-number-of-powerful-integers.cpp) [Python](./Python/count-the-number-of-powerful-integers.py) | _O(logf)_ | _O(logf)_ | Hard || Math, Combinatorics |
+2999 | [Count the Number of Powerful Integers](https://leetcode.com/problems/count-the-number-of-powerful-integers/) | [C++](./C++/count-the-number-of-powerful-integers.cpp) [Python](./Python/count-the-number-of-powerful-integers.py) | _O(logf)_ | _O(1)_ | Hard || Math, Combinatorics |
 
 <br/>
 <div align="right">
