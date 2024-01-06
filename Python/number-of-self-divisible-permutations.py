@@ -16,10 +16,7 @@ class Solution(object):
                 a, b = b, a%b
             return a
 
-        lookup = [[False]*n for _ in xrange(n)]
-        for i in xrange(n):
-            for j in xrange(i, n):
-                lookup[i][j] = lookup[j][i] = gcd(i+1, j+1) == 1
+        lookup = [[gcd(i+1, j+1) == 1 for j in xrange(n)] for i in xrange(n)]
         dp = [0]*(1<<n)
         dp[0] = 1
         for mask in xrange(1<<n):
