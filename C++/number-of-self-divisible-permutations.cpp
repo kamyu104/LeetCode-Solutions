@@ -1,7 +1,7 @@
 // Time:  O(n * 2^n * logn)
 // Space: O(2^n)
 
-// dp
+// bitmasks, dp
 class Solution {
 public:
     int selfDivisiblePermutationCount(int n) {
