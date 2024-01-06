@@ -7,6 +7,9 @@ public:
     int selfDivisiblePermutationCount(int n) {
         vector<vector<int>> lookup(n, vector<int>(n));
         const auto& memoization = [&](int a, int b) {
+            if (a > b) {
+                swap(a, b);
+            }
             if (!lookup[a - 1][b - 1]) {
                 lookup[a - 1][b - 1] = gcd(a, b);
             }
