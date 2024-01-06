@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2983%20%2F%202983-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-2995%20%2F%202995-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -892,6 +892,7 @@
 2969 | [Minimum Number of Coins for Fruits II](https://leetcode.com/problems/minimum-number-of-coins-for-fruits-ii/) | [C++](./C++/minimum-number-of-coins-for-fruits-ii.cpp) [Python](./Python/minimum-number-of-coins-for-fruits-ii.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | DP, Sorted List, BST, Mono Deque
 2976 | [Minimum Cost to Convert String I](https://leetcode.com/problems/minimum-cost-to-convert-string-i/) | [C++](./C++/minimum-cost-to-convert-string-i.cpp) [Python](./Python/minimum-cost-to-convert-string-i.py) | _O(o + k * eloge + n)_ | _O(o + k * v)_ | Medium | | `Dijkstra's Algorithm`, `Floyd-Warshall Algorithm`, DP, Memoization
 2977 | [Minimum Cost to Convert String II](https://leetcode.com/problems/minimum-cost-to-convert-string-ii/) | [C++](./C++/minimum-cost-to-convert-string-ii.cpp) [Python](./Python/minimum-cost-to-convert-string-ii.py) | _O(o * l + k * eloge + n * l)_ | _O(t + k * v + l)_ | Hard | | `Dijkstra's Algorithm`, `Floyd-Warshall Algorithm`, DP, Memoization, Trie
+2992 | [Number of Self-Divisible Permutations](https://leetcode.com/problems/number-of-self-divisible-permutations/) | [C++](./C++/number-of-self-divisible-permutations.cpp) [Python](./Python/number-of-self-divisible-permutations.py) | _O(n * 2^n * logn)_ | _O(2^n)_ | Mediun | 🔒 | Bitmasks, DP
 
 <br/>
 <div align="right">
@@ -1298,6 +1299,17 @@
 2893 | [Calculate Orders Within Each Interval](https://leetcode.com/problems/calculate-orders-within-each-interval/) | [MySQL](./MySQL/calculate-orders-within-each-interval.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2922 | [Market Analysis III](https://leetcode.com/problems/market-analysis-iii/) | [MySQL](./MySQL/market-analysis-iii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2978 | [Symmetric Coordinates](https://leetcode.com/problems/symmetric-coordinates/) | [MySQL](./MySQL/symmetric-coordinates.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2984 | [Find Peak Calling Hours for Each City](https://leetcode.com/problems/find-peak-calling-hours-for-each-city/) | [MySQL](./MySQL/find-peak-calling-hours-for-each-city.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2985 | [Calculate Compressed Mean](https://leetcode.com/problems/calculate-compressed-mean/) | [MySQL](./MySQL/calculate-compressed-mean.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+2986 | [Find Third Transaction](https://leetcode.com/problems/find-third-transaction/) | [MySQL](./MySQL/find-third-transaction.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2987 | [Find Expensive Cities](https://leetcode.com/problems/find-expensive-cities/) | [MySQL](./MySQL/find-expensive-cities.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+2988 | [Manager of the Largest Department](https://leetcode.com/problems/manager-of-the-largest-department/) | [MySQL](./MySQL/manager-of-the-largest-department.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2989 | [Class Performance](https://leetcode.com/problems/class-performance/) | [MySQL](./MySQL/class-performance.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
+2990 | [Loan Types](https://leetcode.com/problems/loan-types/) | [MySQL](./MySQL/loan-types.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+2991 | [Top Three Wineries](https://leetcode.com/problems/top-three-wineries/) | [MySQL](./MySQL/top-three-wineries.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+2993 | [Friday Purchases I](https://leetcode.com/problems/friday-purchases-i/) | [MySQL](./MySQL/friday-purchases-i.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+2994 | [Friday Purchases II](https://leetcode.com/problems/friday-purchases-ii/) | [MySQL](./MySQL/friday-purchases-ii.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+2995 | [Viewers Turned Streamers](https://leetcode.com/problems/viewers-turned-streamers/) | [MySQL](./MySQL/viewers-turned-streamers.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
