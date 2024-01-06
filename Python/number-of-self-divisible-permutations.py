@@ -1,4 +1,4 @@
-# Time:  O(n * 2^n * logn)
+# Time:  O(n^2 * 2^n * logn)
 # Space: O(2^n)
 
 # dp
