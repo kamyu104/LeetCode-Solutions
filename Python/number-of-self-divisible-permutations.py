@@ -16,7 +16,7 @@ class Solution(object):
                 a, b = b, a%b
             return a
 
-        lookup = [[0]*n for _ in xrange(n)]
+        lookup = [[False]*n for _ in xrange(n)]
         for i in xrange(n):
             for j in xrange(i, n):
                 lookup[i][j] = lookup[j][i] = gcd(i+1, j+1) == 1
