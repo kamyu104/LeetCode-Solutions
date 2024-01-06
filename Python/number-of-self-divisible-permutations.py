@@ -18,6 +18,8 @@ class Solution(object):
 
         lookup = [[0]*n for _ in xrange(n)]
         def memoization(a, b):
+            if a > b:
+                a, b = b, a
             if not lookup[a-1][b-1]:
                 lookup[a-1][b-1] = gcd(a, b)
             return lookup[a-1][b-1]
