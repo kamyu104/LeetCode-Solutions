@@ -16,8 +16,8 @@ public:
                     break;
                 }
             }
-            if (i == size(str_x) - size(s)) {
-                if (stoll(str_x.substr(size(str_x) - size(s))) >= stoll(s)) {
+            if (i == l) {
+                if (stoll(str_x.substr(l)) >= stoll(s)) {
                     ++result;
                 }
             }
