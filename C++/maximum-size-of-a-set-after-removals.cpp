@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// math, hash table
+// math, hash table, greedy
 class Solution {
 public:
     int maximumSetSize(vector<int>& nums1, vector<int>& nums2) {
@@ -23,7 +23,7 @@ public:
 
 // Time:  O(n)
 // Space: O(n)
-// math, hash table
+// math, hash table, greedy
 class Solution2 {
 public:
     int maximumSetSize(vector<int>& nums1, vector<int>& nums2) {
