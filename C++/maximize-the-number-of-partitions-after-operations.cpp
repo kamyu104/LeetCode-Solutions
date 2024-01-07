@@ -1,4 +1,4 @@
-// Time:  O(26 * n)
+// Time:  O(n)
 // Space: O(n)
 
 // prefix sum, greedy
