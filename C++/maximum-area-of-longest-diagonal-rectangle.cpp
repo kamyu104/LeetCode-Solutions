@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// math
+// array
 class Solution {
 public:
     int areaOfMaxDiagonal(vector<vector<int>>& dimensions) {
