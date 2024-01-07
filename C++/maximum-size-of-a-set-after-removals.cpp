@@ -17,7 +17,9 @@ public:
         const int n1 = size(lookup1);
         const int n2 = size(lookup2);
         const int c = size(common);
-        return min(min(n1 - c, n / 2) + min(n2 - c, n / 2) + c, n);
+        const int d1 = min(n1 - c, n / 2);
+        const int d2 = min(n2 - c, n / 2);
+        return min(n, d1 + d2 + c);
     }
 };
 
@@ -39,8 +41,10 @@ public:
         const int n1 = size(lookup1);
         const int n2 = size(lookup2);
         const int c = size(common);
-        const int r1 = max(n / 2 - (n1 - c), 0);
-        const int r2 = max(n / 2 - (n2 - c), 0);
-        return min(n1 - c, n / 2) + min(n2 - c, n / 2) + min(r1 + r2, c);
+        const int d1 = min(n1 - c, n / 2);
+        const int d2 = min(n2 - c, n / 2);
+        const int r1 = n / 2 - d1;
+        const int r2 = n / 2 - d2;
+        return d1 + d2 + min(r1 + r2, c);  // = min(d1+d2+r1+r2, d1+d2+c) = min(d1+d2+(n//2-d1)+(n//2-d2), d1+d2+c) = min(n, d1+d2+c)
     }
 };
