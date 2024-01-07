@@ -14,7 +14,7 @@ class Solution(object):
 
         left = [0]*(len(s)+1)
         left_mask = [0]*(len(s)+1)
-        cnt = mask = c = 0
+        cnt = mask = 0
         for i in xrange(len(s)):
             mask |= 1<<(ord(s[i])-ord('a'))
             if popcount(mask) > k:
@@ -24,7 +24,7 @@ class Solution(object):
             left_mask[i+1] = mask
         right = [0]*(len(s)+1)
         right_mask = [0]*(len(s)+1)
-        cnt = mask = c = 0
+        cnt = mask = 0
         for i in reversed(xrange(len(s))):
             mask |= 1<<(ord(s[i])-ord('a'))
             if popcount(mask) > k:
