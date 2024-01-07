@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-# math
+# array
 class Solution(object):
     def areaOfMaxDiagonal(self, dimensions):
         """
