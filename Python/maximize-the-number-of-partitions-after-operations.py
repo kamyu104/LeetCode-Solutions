@@ -1,4 +1,4 @@
-# Time:  O(26 * n)
+# Time:  O(n)
 # Space: O(n)
 
 # prefix sum, greedy
@@ -9,8 +9,13 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        def popcount(x):
-            return bin(x).count('1')
+        def popcount(n):
+            n = (n & 0x55555555) + ((n >> 1) & 0x55555555)
+            n = (n & 0x33333333) + ((n >> 2) & 0x33333333)
+            n = (n & 0x0F0F0F0F) + ((n >> 4) & 0x0F0F0F0F)
+            n = (n & 0x00FF00FF) + ((n >> 8) & 0x00FF00FF)
+            n = (n & 0x0000FFFF) + ((n >> 16) & 0x0000FFFF)
+            return n
 
         left = [0]*(len(s)+1)
         left_mask = [0]*(len(s)+1)
