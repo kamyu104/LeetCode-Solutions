@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-2999%20%2F%202999-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3003%20%2F%203003-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -184,6 +184,7 @@
 2951 | [Find the Peaks](https://leetcode.com/problems/find-the-peaks/) | [C++](./C++/find-the-peaks.cpp) [Python](./Python/find-the-peaks.py) | _O(n)_ | _O(1)_ | Easy | | Array
 2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/) | [C++](./C++/find-missing-and-repeated-values.cpp) [Python](./Python/find-missing-and-repeated-values.py) | _O(n^2)_ | _O(1)_ | Easy | | Array, Freq Table, Bit Manipulation
 2966 | [Divide Array Into Arrays With Max Difference](https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/) | [C++](./C++/divide-array-into-arrays-with-max-difference.cpp) [Python](./Python/divide-array-into-arrays-with-max-difference.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Array
+3000 | [Maximum Area of Longest Diagonal Rectangle](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/) | [C++](./C++/maximum-area-of-longest-diagonal-rectangle.cpp) [Python](./Python/maximum-area-of-longest-diagonal-rectangle.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -544,6 +545,7 @@
 2963 | [Count the Number of Good Partitions](https://leetcode.com/problems/count-the-number-of-good-partitions/) | [C++](./C++/count-the-number-of-good-partitions.cpp) [Python](./Python/count-the-number-of-good-partitions.py) | _O(n)_ | _O(n)_ | Hard | | Hash Table, Combinatorics |
 2979 | [Most Expensive Item That Can Not Be Bought](https://leetcode.com/problems/most-expensive-item-that-can-not-be-bought/) | [C++](./C++/most-expensive-item-that-can-not-be-bought.cpp) [Python](./Python/most-expensive-item-that-can-not-be-bought.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | `Frobenius Coin Problem`, `Chicken McNugget Theorem`, DP |
 2999 | [Count the Number of Powerful Integers](https://leetcode.com/problems/count-the-number-of-powerful-integers/) | [C++](./C++/count-the-number-of-powerful-integers.cpp) [Python](./Python/count-the-number-of-powerful-integers.py) | _O(logf)_ | _O(1)_ | Hard || Math, Combinatorics |
+3001 | [Minimum Moves to Capture The Queen](https://leetcode.com/problems/minimum-moves-to-capture-the-queen/) | [C++](./C++/minimum-moves-to-capture-the-queen.cpp) [Python](./Python/minimum-moves-to-capture-the-queen.py) | _O(1)_ | _O(1)_ | Medium || Math |
 
 <br/>
 <div align="right">
@@ -1023,6 +1025,8 @@
 2952 | [Minimum Number of Coins to be Added](https://leetcode.com/problems/minimum-number-of-coins-to-be-added/) | [C++](./C++/minimum-number-of-coins-to-be-added.cpp) [Python](./Python/minimum-number-of-coins-to-be-added.py) | _O(nlogn + logt)_ | _O(1)_ | Medium |  variant of [Patching Array](https://leetcode.com/problems/patching-array/) | Sort, Greedy
 2957 | [Remove Adjacent Almost-Equal Characters](https://leetcode.com/problems/remove-adjacent-almost-equal-characters/) | [C++](./C++/remove-adjacent-almost-equal-characters.cpp) [Python](./Python/remove-adjacent-almost-equal-characters.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 2971 | [Find Polygon With the Largest Perimeter](https://leetcode.com/problems/find-polygon-with-the-largest-perimeter/) | [C++](./C++/find-polygon-with-the-largest-perimeter.cpp) [Python](./Python/find-polygon-with-the-largest-perimeter.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Prefix Sum, Greedy
+3002 | [Maximum Size of a Set After Removals](https://leetcode.com/problems/maximum-size-of-a-set-after-removals/) | [C++](./C++/maximum-size-of-a-set-after-removals.cpp) [Python](./Python/maximum-size-of-a-set-after-removals.py) | _O(n)_ | _O(n)_ | Hard | | Math, Hash Table, Greedy
+3003 | [Maximize the Number of Partitions After Operations](https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/) | [C++](./C++/maximize-the-number-of-partitions-after-operations.cpp) [Python](./Python/maximize-the-number-of-partitions-after-operations.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Greedy
 
 <br/>
 <div align="right">
