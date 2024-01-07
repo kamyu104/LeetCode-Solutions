@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# math, hash table
+# math, hash table, greedy
 class Solution(object):
     def maximumSetSize(self, nums1, nums2):
         """
@@ -16,7 +16,7 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(n)
-# math, hash table
+# math, hash table, greedy
 class Solution2(object):
     def maximumSetSize(self, nums1, nums2):
         """
