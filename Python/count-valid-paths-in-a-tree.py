@@ -39,8 +39,8 @@ class Solution(object):
                     if i == len(adj[u]):
                         continue
                     v = adj[u][i]
+                    stk.append((2, (u, p, ret, i+1)))
                     if v == p:
-                        stk.append((2, (u, p, ret, i+1)))
                         continue
                     new_ret = [0]*2
                     stk.append((3, (u, p, new_ret, ret, i)))
@@ -53,7 +53,6 @@ class Solution(object):
                     else:
                         ret[0] += new_ret[0]
                         ret[1] += new_ret[1]
-                    stk.append((2, (u, p, ret, i+1)))
             return result
 
         spf = linear_sieve_of_eratosthenes(n)
