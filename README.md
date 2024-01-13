@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3003%20%2F%203003-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3004%20%2F%203004-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -770,6 +770,7 @@
 2773 | [Height of Special Binary Tree](https://leetcode.com/problems/height-of-special-binary-tree/)| [C++](./C++/height-of-special-binary-tree.cpp) [Python](./Python/height-of-special-binary-tree.py)| _O(n)_ | _O(h)_ | Medium | 🔒 | Tree, DFS, BFS |
 2791 | [Count Paths That Can Form a Palindrome in a Tree](https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree/)| [C++](./C++/count-paths-that-can-form-a-palindrome-in-a-tree.cpp) [Python](./Python/count-paths-that-can-form-a-palindrome-in-a-tree.py)| _O(n)_ | _O(n)_ | Hard | | Tree, DFS, Freq Table |
 2973 | [Find Number of Coins to Place in Tree Nodes](https://leetcode.com/problems/find-number-of-coins-to-place-in-tree-nodes/)| [C++](./C++/find-number-of-coins-to-place-in-tree-nodes.cpp) [Python](./Python/find-number-of-coins-to-place-in-tree-nodes.py)| _O(n)_ | _O(n)_ | Hard | | DFS |
+3004 | [Maximum Subtree of the Same Color](https://leetcode.com/problems/maximum-subtree-of-the-same-color/)| [C++](./C++/maximum-subtree-of-the-same-color.cpp) [Python](./Python/maximum-subtree-of-the-same-color.py)| _O(n)_ | _O(h)_ | Medium | 🔒 | DFS |
 
 <br/>
 <div align="right">
