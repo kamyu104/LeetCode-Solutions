@@ -50,8 +50,8 @@ public:
                         continue;
                     }
                     const auto& v = adj[u][i];
+                    stk.emplace_back(2, u, p, i + 1, nullptr, ret);
                     if (v == p) {
-                        stk.emplace_back(2, u, p, i + 1, nullptr, ret);
                         continue;
                     }
                     const auto& new_ret = make_shared<RET>(2);
@@ -65,7 +65,6 @@ public:
                         (*ret)[0] += (*new_ret)[0];
                         (*ret)[1] += (*new_ret)[1];
                     }
-                    stk.emplace_back(2, u, p, i + 1, nullptr, ret);
                 }
             }
             return result;
