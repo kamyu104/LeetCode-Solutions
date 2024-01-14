@@ -29,7 +29,7 @@ class Solution(object):
         return result-1
 
 
-# Time:  O((logr)^2 / x)
+# Time:  O((logk)^2 / x)
 # Space: O(1)
 # bit manipulation, binary search, combinatorics
 class Solution2(object):
