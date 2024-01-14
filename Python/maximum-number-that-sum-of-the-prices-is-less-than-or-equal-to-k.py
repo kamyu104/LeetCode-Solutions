@@ -50,7 +50,8 @@ class Solution2(object):
 
             return count(v) <= k
 
-        left, right = 1, k*(1<<(x-1))+1  # right bound is verified by checking all possible (k, v) values, or just set right = sol.findMaximumNumber(10**15, 8) <= 10**15
+        # left, right = 1, 10**15
+        left, right = 1, k*(1<<(x-1))+1  # right bound is verified by checking all possible (k, v) values, or just set right = solution.findMaximumNumber(10**15, 8) <= 10**15
         while left <= right:
             mid = left+(right-left)//2
             if not check(mid):
