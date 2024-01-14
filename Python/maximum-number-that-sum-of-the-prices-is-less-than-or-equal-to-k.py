@@ -47,7 +47,7 @@ class Solution2(object):
                 cnt = i = 0
                 while 1<<(i+x-1) <= v:
                     q, r = divmod(v+1, 1<<((i+x-1)+1))
-                    cnt += q*1*(1<<(i+x-1))+max(r-(1<<(i+x-1)), 0)
+                    cnt += q*1*(1<<(i+x-1))+max(r-1*(1<<(i+x-1)), 0)
                     i += x
                 return cnt
 
