@@ -29,7 +29,7 @@ class Solution(object):
         return result-1
 
 
-# Time:  O((logk)^2 / x)
+# Time:  O(k * (logk) / x)
 # Space: O(1)
 # bit manipulation, binary search, combinatorics
 class Solution2(object):
@@ -54,7 +54,7 @@ class Solution2(object):
             return count(v) <= k
 
         # left, right = 1, 10**15
-        left, right = 1, 1<<max(floor_log2(k)+2, x)  # right bound is verified by checking all possible (k, v) values, or just set right = solution.findMaximumNumber(10**15, 8) <= 10**15
+        left, right = 1, (1<<(max(floor_log2(k)+1, x-1)+1))-1  # right bound is verified by checking all possible (k, v) values, or just set right = solution.findMaximumNumber(10**15, 8) <= 10**15
         while left <= right:
             mid = left+(right-left)//2
             if not check(mid):
