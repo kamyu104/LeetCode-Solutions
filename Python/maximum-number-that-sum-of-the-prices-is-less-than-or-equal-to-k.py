@@ -1,0 +1,60 @@
+# Time:  O((logk)^2 / x)
+# Space: O(1)
+
+# bit manipulation, greedy
+class Solution(object):
+    def findMaximumNumber(self, k, x):
+        """
+        :type k: int
+        :type x: int
+        :rtype: int
+        """
+        def floor_log2(x):
+            return x.bit_length()-1
+
+        result = prefix_cnt = 0
+        while k >= prefix_cnt:
+            # l = result.bit_length()
+            # assert(prefix_cnt == sum(c == '1' and (l-i)%x == 0 for i, c in enumerate(bin(result)[2:])))
+            cnt, i = prefix_cnt, 0
+            while (cnt<<x)+(1<<(i+x-1)) <= k:
+                cnt = (cnt<<x)+(1<<(i+x-1))
+                i += x
+            c = min(floor_log2(k//cnt) if cnt else float("inf"), x-1)
+            cnt <<= c
+            i += c
+            k -= cnt
+            result += 1<<i
+            prefix_cnt += int((i+1)%x == 0)
+        return result-1
+
+
+# Time:  O((logr)^2 / x)
+# Space: O(1)
+# bit manipulation, binary search
+class Solution2(object):
+    def findMaximumNumber(self, k, x):
+        """
+        :type k: int
+        :type x: int
+        :rtype: int
+        """
+        def check(v):
+            def count(v):
+                cnt, i = 0, x-1
+                while 1<<i <= v:
+                    q, r = divmod(v+1, 1<<(i+1))
+                    cnt += q*1*(1<<i)+max(r-(1<<i), 0)
+                    i += x
+                return cnt
+
+            return count(v) <= k
+
+        left, right = 1, k*(1<<(x-1))+1  # right bound is verified by checking all possible (k, v) values, or just set right = sol.findMaximumNumber(10**15, 8) <= 10**15
+        while left <= right:
+            mid = left+(right-left)//2
+            if not check(mid):
+                right = mid-1
+            else:
+                left = mid+1
+        return right
