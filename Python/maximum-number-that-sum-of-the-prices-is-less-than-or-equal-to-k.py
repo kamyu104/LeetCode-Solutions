@@ -44,10 +44,10 @@ class Solution2(object):
 
         def check(v):
             def count(v):
-                cnt, i = 0, x-1
-                while 1<<i <= v:
-                    q, r = divmod(v+1, 1<<(i+1))
-                    cnt += q*1*(1<<i)+max(r-(1<<i), 0)
+                cnt = i = 0
+                while 1<<(i+x-1) <= v:
+                    q, r = divmod(v+1, 1<<((i+x-1)+1))
+                    cnt += q*1*(1<<(i+x-1))+max(r-(1<<(i+x-1)), 0)
                     i += x
                 return cnt
 
