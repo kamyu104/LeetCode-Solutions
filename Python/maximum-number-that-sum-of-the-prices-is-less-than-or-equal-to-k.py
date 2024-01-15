@@ -87,23 +87,21 @@ class Solution3(object):
         def floor_log2(x):
             return x.bit_length()-1
 
-        def check(v):
-            def count(v):
-                cnt = i = 0
-                while 1<<(i+x-1) <= v:
-                    q, r = divmod(v+1, 1<<((i+x-1)+1))
-                    cnt += q*1*(1<<(i+x-1))+max(r-1*(1<<(i+x-1)), 0)
-                    i += x
-                return cnt
+        def binary_search_right(left, right, check):
+            while left <= right:
+                mid = left+(right-left)//2
+                if not check(mid):
+                    right = mid-1
+                else:
+                    left = mid+1
+            return right
 
-            return count(v) <= k
+        def count(v):
+            cnt = i = 0
+            while 1<<(i+x-1) <= v:
+                q, r = divmod(v+1, 1<<((i+x-1)+1))
+                cnt += q*1*(1<<(i+x-1))+max(r-1*(1<<(i+x-1)), 0)
+                i += x
+            return cnt
 
-        # left, right = 1, 10**15
-        left, right = 1, (1<<(max(floor_log2(k)+1, x-1)+1))-1  # right bound is verified by checking all possible (k, v) values, or just set right = solution.findMaximumNumber(10**15, 8) <= 10**15
-        while left <= right:
-            mid = left+(right-left)//2
-            if not check(mid):
-                right = mid-1
-            else:
-                left = mid+1
-        return right
+        return binary_search_right(1, (1<<(max(floor_log2(k)+1, x-1)+1))-1, lambda v: count(v) <= k)  # right bound is verified by checking all possible (k, v) values, or just set right = solution.findMaximumNumber(10**15, 8) <= 10**15
