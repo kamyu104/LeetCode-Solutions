@@ -12,7 +12,7 @@ class Solution(object):
         def floor_log2(x):
             return x.bit_length()-1
 
-        def binary_search(left, right, check):
+        def binary_search_right(left, right, check):
             while left <= right:
                 mid = left+(right-left)//2
                 if not check(mid):
@@ -33,7 +33,7 @@ class Solution(object):
         while k >= prefix_cnt:
             # l = result.bit_length()
             # assert(prefix_cnt == sum(c == '1' and (l-i)%x == 0 for i, c in enumerate(bin(result)[2:])))
-            l = binary_search(1, len(lookup)-1, lambda l: count(l) <= k)
+            l = binary_search_right(1, len(lookup)-1, lambda l: count(l) <= k)
             cnt, i = count(l), x*l
             c = min(floor_log2(k//cnt) if cnt else float("inf"), x-1)
             cnt <<= c
