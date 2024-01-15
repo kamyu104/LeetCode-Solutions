@@ -5,10 +5,6 @@
 class Solution {
 public:
     long long findMaximumNumber(long long k, int x) {
-        const auto& floor_log2 = [](long long x) {
-            return 8 * sizeof(long long) - __builtin_clzll(x) - 1;
-        };
-
         long long result = 0, prefix_cnt = 0;
         while (k >= prefix_cnt) {
             long long cnt = prefix_cnt;
@@ -17,7 +13,7 @@ public:
                 cnt = (cnt << x) + (1ll << (i + x - 1));
                 i += x;
             }
-            const int c = min(cnt ? static_cast<int>(floor_log2(k / cnt)) : x - 1, x - 1);
+            const int c = min(cnt ? static_cast<int>(__lg(k / cnt)) : x - 1, x - 1);
             cnt <<= c;
             i += c;
             k -= cnt;
@@ -36,10 +32,6 @@ public:
 class Solution2 {
 public:
     long long findMaximumNumber(long long k, int x) {
-        const auto& floor_log2 = [](long long x) {
-            return 8 * sizeof(long long) - __builtin_clzll(x) - 1;
-        };
-    
         const auto& check = [&](long long v) {
             const auto& count = [&](long long v) {
                 long long cnt = 0;
@@ -55,7 +47,7 @@ public:
         };
 
         // long long left = 1, right = 1e15;
-        long long left = 1, right = (1ll << (max(static_cast<int>(floor_log2(k)) + 1, x - 1) + 1)) - 1;  // right bound is verified by checking all possible (k, v) values, or just set right = solution.findMaximumNumber(10**15, 8) <= 10**15
+        long long left = 1, right = (1ll << (max(static_cast<int>(__lg(k)) + 1, x - 1) + 1)) - 1;  // right bound is verified by checking all possible (k, v) values, or just set right = solution.findMaximumNumber(10**15, 8) <= 10**15
         while (left <= right) {
             const auto mid = left + (right - left) / 2;
             if (!check(mid)) {
