@@ -101,7 +101,7 @@ class Solution3(object):
         return result-1
 
 
-# Time:  O((logk + x) * ((logk) / x))
+# Time:  O((logk + x) * ((logk + x) / x))
 # Space: O(1)
 # bit manipulation, binary search, combinatorics
 class Solution4(object):
