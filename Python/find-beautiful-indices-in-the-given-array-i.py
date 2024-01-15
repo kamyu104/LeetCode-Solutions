@@ -34,8 +34,8 @@ class Solution(object):
                     yield i-j
                     j = prefix[j]
 
-        lookup = list(KMP(s, b))
         result = []
+        lookup = list(KMP(s, b))
         j = 0
         for i in KMP(s, a):
             while j < len(lookup) and lookup[j] < i-k:
@@ -83,8 +83,8 @@ class Solution2(object):
                     yield i-j
                     j = prefix[j]
 
-        lookup = list(KMP(s, b))
         result = []
+        lookup = list(KMP(s, b))
         j = 0
         for i in KMP(s, a):
             j = bisect.bisect_left(lookup, i-k)
