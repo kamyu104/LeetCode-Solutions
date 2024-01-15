@@ -1,4 +1,4 @@
-// Time:  O(logk * log((logk) / x))
+// Time:  O((logk) * log((logk) / x))
 // Space: O((logk) / x)
 
 // bit manipulation, binary search, combinatorics
