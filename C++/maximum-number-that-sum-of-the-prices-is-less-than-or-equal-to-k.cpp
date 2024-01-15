@@ -71,10 +71,33 @@ public:
     }
 };
 
+// Time:  O((logk)^2)
+// Space: O(1)
+// bit manipulation, combinatorics
+class Solution3 {
+public:
+    long long findMaximumNumber(long long k, int x) {
+        long long result = 0, prefix_cnt = 0;
+        while (k >= prefix_cnt) {
+            long long cnt = prefix_cnt;
+            int i = 0;
+            for (; (cnt << 1) + ((i + 1) % x == 0 ? 1ll << i : 0) <= k; ++i) {
+                cnt = (cnt << 1) + ((i + 1) % x == 0 ? 1ll << i : 0);
+            }
+            k -= cnt;
+            result += 1ll << i;
+            if ((i + 1) % x == 0) {
+                ++prefix_cnt;
+            }
+       }
+        return result - 1;
+    }
+};
+
 // Time:  O(k * ((logk) / x))
 // Space: O(1)
 // bit manipulation, binary search, combinatorics
-class Solution3 {
+class Solution4 {
 public:
     long long findMaximumNumber(long long k, int x) {
         const auto& binary_search_right = [](long long left, long long right, const auto& check) {
