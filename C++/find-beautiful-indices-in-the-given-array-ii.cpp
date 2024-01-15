@@ -56,7 +56,7 @@ public:
 };
 
 // Time:  O(n + xlogy), x = len(KMP(s, a)), y = len(KMP(s, b))
-// Space: O(a + b + x + y)
+// Space: O(n)
 // kmp, binary search
 class Solution2 {
 public:
