@@ -66,7 +66,7 @@ public:
             if ((i + 1) % x == 0) {
                 ++prefix_cnt;
             }
-       }
+        }
         return result - 1;
     }
 };
@@ -89,7 +89,7 @@ public:
             if ((i + 1) % x == 0) {
                 ++prefix_cnt;
             }
-       }
+        }
         return result - 1;
     }
 };
