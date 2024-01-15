@@ -40,6 +40,9 @@ public:
         };
 
         vector<int> result;
+        if (!(size(a) <= size(s) && size(b) <= size(s))) {
+            return result;
+        }
         const auto& lookup = KMP(s, b);
         int j = 0;
         for (const auto& i : KMP(s, a)) {
@@ -75,24 +78,19 @@ public:
             };
 
             vector<int> result;
-            const vector<int> prefix = getPrefix(pattern);
-            int j = -1;
-            for (int i = 0; i < text.length(); ++i) {
-                while (j > -1 && pattern[j + 1] != text[i]) {
-                    j = prefix[j];
-                }
-                if (pattern[j + 1] == text[i]) {
-                    ++j;
-                }
-                if (j == pattern.length() - 1) {
-                    result.emplace_back(i - j);
-                    j = prefix[j];
+            const vector<int> prefix = getPrefix(pattern + '#' + text);
+            for (int i = size(pattern) + 1; i < size(prefix); ++i) {
+                if (prefix[i] + 1 == size(pattern)) {
+                    result.emplace_back((i - (size(pattern) + 1)) - (size(pattern) - 1));
                 }
             }
             return result;
         };
 
         vector<int> result;
+        if (!(size(a) <= size(s) && size(b) <= size(s))) {
+            return result;
+        }
         const auto& lookup = KMP(s, b);
         int j = 0;
         for (const auto& i : KMP(s, a)) {
