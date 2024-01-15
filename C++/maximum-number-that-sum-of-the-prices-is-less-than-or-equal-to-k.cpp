@@ -122,7 +122,7 @@ public:
             return cnt;
         };
     
-        return binary_search_right(1, (1ll << (max(static_cast<int>(__lg(k)) + 1, x - 1) + 1)) - 1, [&](long long v) {
+        return binary_search_right(1, max(k << 2, 1ll << x), [&](long long v) {
             return count(v) <= k;
         });  // right bound is verified by checking all possible (k, v) values, or just set right = solution.findMaximumNumber(10**15, 8) <= 10**15
     }
