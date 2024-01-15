@@ -1,5 +1,5 @@
 # Time:  O((logk + x) * log((logk + x) / x))
-# Space: O((logk + x) / x)
+# Space: O((logk) / x)
 
 # bit manipulation, binary search, combinatorics
 class Solution(object):
