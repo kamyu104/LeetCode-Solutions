@@ -35,6 +35,8 @@ class Solution(object):
                     j = prefix[j]
 
         result = []
+        if not (len(a) <= len(s) and len(b) <= len(s)):
+            return result
         lookup = list(KMP(s, b))
         j = 0
         for i in KMP(s, a):
@@ -46,7 +48,7 @@ class Solution(object):
 
 
 # Time:  O(n + xlogy), x = len(KMP(s, a)), y = len(KMP(s, b))
-# Space: O(a + b + x + y)
+# Space: O(n)
 import bisect
 
 
@@ -72,18 +74,12 @@ class Solution2(object):
             return prefix
 
         def KMP(text, pattern):
-            prefix = getPrefix(pattern)
-            j = -1
-            for i in xrange(len(text)):
-                while j+1 > 0 and pattern[j+1] != text[i]:
-                    j = prefix[j]
-                if pattern[j+1] == text[i]:
-                    j += 1
-                if j+1 == len(pattern):
-                    yield i-j
-                    j = prefix[j]
-
+            prefix = getPrefix(pattern+'#'+text)
+            return ((i-(len(pattern)+1))-(len(pattern)-1) for i, x in enumerate(prefix) if x+1 == len(pattern))
+    
         result = []
+        if not (len(a) <= len(s) and len(b) <= len(s)):
+            return result
         lookup = list(KMP(s, b))
         j = 0
         for i in KMP(s, a):
