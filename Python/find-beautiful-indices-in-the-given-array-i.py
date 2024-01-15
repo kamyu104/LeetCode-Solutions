@@ -1,5 +1,5 @@
 # Time:  O(n), x = len(KMP(s, a)), y = len(KMP(s, b))
-# Space: O(a + b + x + y)
+# Space: O(min(a + b + x + y, n))
 
 # kmp, two pointers
 class Solution(object):
