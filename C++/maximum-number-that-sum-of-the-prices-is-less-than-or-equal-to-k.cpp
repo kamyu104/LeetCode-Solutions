@@ -94,7 +94,7 @@ public:
     }
 };
 
-// Time:  O(k * ((logk) / x))
+// Time:  O((logk + x) * ((logk) / x))
 // Space: O(1)
 // bit manipulation, binary search, combinatorics
 class Solution4 {
