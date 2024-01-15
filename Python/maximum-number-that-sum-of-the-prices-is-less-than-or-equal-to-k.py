@@ -12,7 +12,6 @@ class Solution(object):
         def floor_log2(x):
             return x.bit_length()-1
 
-
         def binary_search(left, right, check):
             while left <= right:
                 mid = left+(right-left)//2
