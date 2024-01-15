@@ -1,5 +1,5 @@
-# Time:  O((logk) * log((logk) / x))
-# Space: O((logk) / x)
+# Time:  O((logk + x) * log((logk + x) / x))
+# Space: O((logk + x) / x)
 
 # bit manipulation, binary search, combinatorics
 class Solution(object):
@@ -44,7 +44,7 @@ class Solution(object):
         return result-1
 
 
-# Time:  O((logk) * ((logk) / x))
+# Time:  O((logk + x) * ((logk + x) / x))
 # Space: O(1)
 # bit manipulation, combinatorics
 class Solution2(object):
@@ -74,7 +74,7 @@ class Solution2(object):
         return result-1
 
 
-# Time:  O((logk)^2)
+# Time:  O((logk + x)^2)
 # Space: O(1)
 # bit manipulation, combinatorics
 class Solution3(object):
