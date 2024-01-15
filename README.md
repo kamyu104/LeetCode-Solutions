@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3004%20%2F%203004-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3008%20%2F%203008-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -445,6 +445,7 @@
 2982 | [Find Longest Special Substring That Occurs Thrice II](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/) | [C++](./C++/find-longest-special-substring-that-occurs-thrice-ii.cpp) [Python](./Python/find-longest-special-substring-that-occurs-thrice-ii.py) | _O(26 * 3 + n * 3)_ | _O(26 * 3)_ | Medium || String, Hash Table
 2983 | [Palindrome Rearrangement Queries](https://leetcode.com/problems/palindrome-rearrangement-queries/) | [C++](./C++/palindrome-rearrangement-queries.cpp) [Python](./Python/palindrome-rearrangement-queries.py) | _O(26 + d * n + d * q)_ | _O(26 + d * n)_ | Hard || Prefix Sum, Freq Table
 2996 | [Smallest Missing Integer Greater Than Sequential Prefix Sum](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/) | [C++](./C++/smallest-missing-integer-greater-than-sequential-prefix-sum.cpp) [Python](./Python/smallest-missing-integer-greater-than-sequential-prefix-sum.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
+3005 | [Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/) | [C++](./C++/count-elements-with-maximum-frequency.cpp) [Python](./Python/count-elements-with-maximum-frequency.py) | _O(n)_ | _O(n)_ | Easy || Freq Table
 
 <br/>
 <div align="right">
@@ -546,6 +547,7 @@
 2979 | [Most Expensive Item That Can Not Be Bought](https://leetcode.com/problems/most-expensive-item-that-can-not-be-bought/) | [C++](./C++/most-expensive-item-that-can-not-be-bought.cpp) [Python](./Python/most-expensive-item-that-can-not-be-bought.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | `Frobenius Coin Problem`, `Chicken McNugget Theorem`, DP |
 2999 | [Count the Number of Powerful Integers](https://leetcode.com/problems/count-the-number-of-powerful-integers/) | [C++](./C++/count-the-number-of-powerful-integers.cpp) [Python](./Python/count-the-number-of-powerful-integers.py) | _O(logf)_ | _O(1)_ | Hard || Math, Combinatorics |
 3001 | [Minimum Moves to Capture The Queen](https://leetcode.com/problems/minimum-moves-to-capture-the-queen/) | [C++](./C++/minimum-moves-to-capture-the-queen.cpp) [Python](./Python/minimum-moves-to-capture-the-queen.py) | _O(1)_ | _O(1)_ | Medium || Math |
+3007 | [Maximum Number That Sum of the Prices Is Less Than or Equal to K](https://leetcode.com/problems/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k/) | [C++](./C++/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k.cpp) [Python](./Python/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k.py) | _O((logk)^2 / x)_ | _O(1)_ | Medium || Bit Manipulation, Binary Search, Combinatorics |
 
 <br/>
 <div align="right">
@@ -646,6 +648,9 @@
 2968 | [Apply Operations to Maximize Frequency Score](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | [C++](./C++/apply-operations-to-maximize-frequency-score.cpp) [Python](./Python/apply-operations-to-maximize-frequency-score.py) | _O(nlogn)_ | _O(1)_ | Hard | | Sort, Two Pointers, Sliding Window, Prefix Sum, Binary Search
 2970 | [Count the Number of Incremovable Subarrays I](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/) | [C++](./C++/count-the-number-of-incremovable-subarrays-i.cpp) [Python](./Python/count-the-number-of-incremovable-subarrays-i.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers, Brute Force
 2972 | [Count the Number of Incremovable Subarrays II](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/) | [C++](./C++/count-the-number-of-incremovable-subarrays-ii.cpp) [Python](./Python/count-the-number-of-incremovable-subarrays-ii.py) | _O(n)_ | _O(1)_ | Hard | | Two Pointers
+3006 | [Find Beautiful Indices in the Given Array I](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/) | [C++](./C++/find-beautiful-indices-in-the-given-array-i.cpp) [Python](./Python/find-beautiful-indices-in-the-given-array-i.py) | _O(n)_ | _O(n)_ | Medium | | `KMP Algorithm`, Binary Search, Two Pointers
+3008 | [Find Beautiful Indices in the Given Array II](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-ii/) | [C++](./C++/find-beautiful-indices-in-the-given-array-ii.cpp) [Python](./Python/find-beautiful-indices-in-the-given-array-ii.py) | _O(n)_ | _O(n)_ | Hard | | `KMP Algorithm`, Binary Search, Two Pointers
+
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
