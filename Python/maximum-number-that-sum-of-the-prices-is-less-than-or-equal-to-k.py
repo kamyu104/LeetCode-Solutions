@@ -44,7 +44,7 @@ class Solution(object):
         return result-1
 
 
-# Time:  O((logk)^2 / x)
+# Time:  O((logk) * ((logk) / x))
 # Space: O(1)
 # bit manipulation, combinatorics
 class Solution2(object):
@@ -74,7 +74,7 @@ class Solution2(object):
         return result-1
 
 
-# Time:  O(k * (logk) / x)
+# Time:  O(k * ((logk) / x))
 # Space: O(1)
 # bit manipulation, binary search, combinatorics
 class Solution3(object):
