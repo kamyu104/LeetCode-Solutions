@@ -79,7 +79,7 @@ public:
 
             vector<int> result;
             const vector<int> prefix = getPrefix(pattern + '#' + text);
-            for (int i = size(pattern) + 1; i < size(prefix); ++i) {
+            for (int i = (size(pattern) + 1) + (size(pattern) - 1); i < size(prefix); ++i) {
                 if (prefix[i] + 1 == size(pattern)) {
                     result.emplace_back((i - (size(pattern) + 1)) - (size(pattern) - 1));
                 }
