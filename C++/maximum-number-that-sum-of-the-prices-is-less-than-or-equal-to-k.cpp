@@ -1,4 +1,4 @@
-// Time:  O((logk + x) * log((logk) / x))
+// Time:  O(max(logk, x) * log((logk) / x))
 // Space: O((logk) / x)
 
 // bit manipulation, binary search, combinatorics
@@ -45,7 +45,7 @@ public:
     }
 };
 
-// Time:  O((logk + x) * ((logk + x) / x))
+// Time:  O(max(logk, x) * (max(logk, x) / x))
 // Space: O(1)
 // bit manipulation, combinatorics
 class Solution2 {
@@ -71,7 +71,7 @@ public:
     }
 };
 
-// Time:  O((logk + x)^2)
+// Time:  O(max(logk, x)^2)
 // Space: O(1)
 // bit manipulation, combinatorics
 class Solution3 {
@@ -94,7 +94,7 @@ public:
     }
 };
 
-// Time:  O((logk + x) * ((logk + x) / x))
+// Time:  O(max(logk, x) * (max(logk, x) / x))
 // Space: O(1)
 // bit manipulation, binary search, combinatorics
 class Solution4 {
