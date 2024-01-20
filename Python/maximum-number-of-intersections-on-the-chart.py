@@ -11,9 +11,7 @@ class Solution(object):
         val_to_idx = {x:i for i, x in enumerate(sorted(set(y)))}
         cnts = [0]*(2*len(val_to_idx)+1)
         for i in xrange(len(y)-1):
-            # [y[i], y[i+1]) or (y[i+1], y[i]]
-            # <=> [y[i], y[i+1]-0.5] or [y[i+1]+0.5, y[i]]
-            # <=> [2*y[i], 2*y[i+1]-1] or [2*y[i+1]+1, 2*y[i]]
+            # [y[i], y[i+1]) <=> [y[i], y[i+1]-0.5] <=> [2*y[i], 2*y[i+1]-1]
             left, right = 2*val_to_idx[y[i]], 2*val_to_idx[y[i+1]]+(-1 if y[i] < y[i+1] else +1)
             cnts[min(left, right)] += 1
             cnts[max(left, right)+1] -= 1
@@ -38,9 +36,7 @@ class Solution2(object):
         """
         events = []
         for i in xrange(len(y)-1):
-            # [y[i], y[i+1]) or (y[i+1], y[i]]
-            # <=> [y[i], y[i+1]-0.5] or [y[i+1]+0.5, y[i]]
-            # <=> [2*y[i], 2*y[i+1]-1] or [2*y[i+1]+1, 2*y[i]]
+            # [y[i], y[i+1]) <=> [y[i], y[i+1]-0.5] <=> [2*y[i], 2*y[i+1]-1]
             left, right = 2*y[i], 2*y[i+1]+(-1 if y[i] < y[i+1] else +1)
             events.append((min(left, right), +1))
             events.append((max(left, right)+1, -1))
