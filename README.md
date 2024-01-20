@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3008%20%2F%203008-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3009%20%2F%203009-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -185,6 +185,7 @@
 2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/) | [C++](./C++/find-missing-and-repeated-values.cpp) [Python](./Python/find-missing-and-repeated-values.py) | _O(n^2)_ | _O(1)_ | Easy | | Array, Freq Table, Bit Manipulation
 2966 | [Divide Array Into Arrays With Max Difference](https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/) | [C++](./C++/divide-array-into-arrays-with-max-difference.cpp) [Python](./Python/divide-array-into-arrays-with-max-difference.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Array
 3000 | [Maximum Area of Longest Diagonal Rectangle](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/) | [C++](./C++/maximum-area-of-longest-diagonal-rectangle.cpp) [Python](./Python/maximum-area-of-longest-diagonal-rectangle.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3009 | [Maximum Number of Intersections on the Chart](https://leetcode.com/problems/maximum-number-of-intersections-on-the-chart/) | [C++](./C++/maximum-number-of-intersections-on-the-chart.cpp) [Python](./Python/maximum-number-of-intersections-on-the-chart.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | Sort, Line Sweep, Coordinate Compression
 
 <br/>
 <div align="right">
