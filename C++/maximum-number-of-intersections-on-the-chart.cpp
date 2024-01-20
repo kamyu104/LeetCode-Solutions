@@ -14,8 +14,8 @@ public:
         }
         vector<int> cnts(2 * size(val_to_idx) + 1);
         for (int i = 0; i + 1 < size(y); ++i) {
-            // [y[i], y[i+1]) or (y[i+1], y[i]] = [y[i]
-            // <=> y[i+1]-0.5] or [y[i+1]+0.5, y[i]]
+            // [y[i], y[i+1]) or (y[i+1], y[i]]
+            // <=> [y[i], y[i+1]-0.5] or [y[i+1]+0.5, y[i]]
             // <=> [2*y[i], 2*y[i+1]-1] or [2*y[i+1]+1, 2*y[i]]
             const int left = 2 * val_to_idx[y[i]], right = 2 * val_to_idx[y[i + 1]] + (y[i] < y[i + 1] ? -1 : +1);
             ++cnts[min(left, right)];
@@ -41,8 +41,8 @@ public:
     int maxIntersectionCount(vector<int>& y) {
         vector<pair<int, int>> events;
         for (int i = 0; i + 1 < size(y); ++i) {
-            // [y[i], y[i+1]) or (y[i+1], y[i]] = [y[i]
-            // <=> y[i+1]-0.5] or [y[i+1]+0.5, y[i]]
+            // [y[i], y[i+1]) or (y[i+1], y[i]]
+            // <=> [y[i], y[i+1]-0.5] or [y[i+1]+0.5, y[i]]
             // <=> [2*y[i], 2*y[i+1]-1] or [2*y[i+1]+1, 2*y[i]]
             const int left = 2 * y[i], right = 2 * y[i + 1] + (y[i] < y[i + 1] ? -1 : +1);
             events.emplace_back(min(left, right), +1);
