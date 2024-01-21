@@ -1,8 +1,20 @@
 // Time:  O(n)
 // Space: O(1)
 
-// array
+// array, quick select
 class Solution {
+public:
+    int minimumCost(vector<int>& nums) {
+        nth_element(begin(nums) + 1, begin(nums) + 3, end(nums));
+        return nums[0] + nums[1] + nums[2];
+    }
+};
+
+
+// Time:  O(n)
+// Space: O(1)
+// array
+class Solution2 {
 public:
     int minimumCost(vector<int>& nums) {
         vector<int> top2(2, numeric_limits<int>::max());
