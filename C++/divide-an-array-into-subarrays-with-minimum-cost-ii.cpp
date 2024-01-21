@@ -10,34 +10,28 @@ public:
 
         priority_queue<pair<int, int>> max_heap;
         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap;
-        int total1 = 0, total2 = 0;
         int64_t mn = INF, curr = 0;
         for (int i = 1; i < size(nums); ++i) {
             max_heap.emplace(nums[i], -i);
             curr += nums[i];
-            if (size(max_heap) - total1 > k - 1) {
+            if (i > k - 1) {
                 while (-max_heap.top().second < i - (1 + dist)) {
                     max_heap.pop();
-                    --total1;
                 }
                 const auto [x, idx] = max_heap.top(); max_heap.pop();
                 curr -= x;
                 min_heap.emplace(x, idx);
             }
-            if ((size(max_heap) - total1) + (size(min_heap) - total2) > 1 + dist) {
+            if (i > 1 + dist) {
                 while (-min_heap.top().second < i - (1 + dist)) {
                     min_heap.pop();
-                    --total2;
                 }
-                if (min_heap.top() <= pair(nums[i - (1 + dist)], -(i - (1 + dist)))) {
-                    ++total2;
-                } else {
-                    ++total1;
+                if (min_heap.top() > pair(nums[i - (1 + dist)], -(i - (1 + dist)))) {
                     curr -= nums[i - (1 + dist)] - min_heap.top().first;
                     max_heap.emplace(min_heap.top()); min_heap.pop();
                 }
             }
-            if (size(max_heap) - total1 == k - 1) {
+            if (i >= k - 1) {
                 mn = min(mn, curr);
             }
         }
