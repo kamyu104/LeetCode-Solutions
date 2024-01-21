@@ -11,7 +11,7 @@ class Solution(object):
         def ceil_divide(a, b):
             return (a+b-1)//b
 
-        return sum(i*min(len(word)-(i-1)*(9-2+1), (9-2+1)) for i in xrange(1, ceil_divide(len(word), (9-2+1))+1))
+        return sum((i+1)*min(len(word)-i*(9-2+1), (9-2+1)) for i in xrange(ceil_divide(len(word), (9-2+1))))
 
 
 # Time:  O(26)
