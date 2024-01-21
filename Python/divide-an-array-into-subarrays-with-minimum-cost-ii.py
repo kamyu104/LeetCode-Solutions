@@ -56,3 +56,54 @@ class Solution2(object):
             if len(sl1) == k-1:
                 mn = min(mn, curr)
         return nums[0]+mn
+
+
+# Time:  O(nlogd)
+# Space: O(d)
+import heapq
+import collections
+
+
+# sliding window, heap
+class Solution3(object):
+    def minimumCost(self, nums, k, dist):
+        """
+        :type nums: List[int]
+        :type k: int
+        :type dist: int
+        :rtype: int
+        """
+        max_heap, min_heap = [], []
+        cnt1, cnt2 = collections.Counter(), collections.Counter()
+        total1 = total2 = 0
+        curr, mn = 0, float("inf")
+        for i in xrange(1, len(nums)):
+            heapq.heappush(max_heap, -nums[i])
+            curr += nums[i]
+            if (len(max_heap)-total1) > k-1:
+                while -max_heap[0] in cnt1:
+                    x = -heapq.heappop(max_heap)
+                    cnt1[x] -= 1
+                    if cnt1[x] == 0:
+                        del cnt1[x]
+                    total1 -= 1
+                curr -= -max_heap[0]
+                heapq.heappush(min_heap, -heapq.heappop(max_heap))
+            if (len(max_heap)-total1)+(len(min_heap)-total2) > 1+dist:
+                while min_heap[0] in cnt2:
+                    x = heapq.heappop(min_heap)
+                    cnt2[x] -= 1
+                    if cnt2[x] == 0:
+                        del cnt2[x]
+                    total2 -= 1
+                if min_heap[0] <= nums[i-(1+dist)]:
+                    cnt2[nums[i-(1+dist)]] += 1
+                    total2 += 1
+                else:
+                    cnt1[nums[i-(1+dist)]] += 1
+                    total1 += 1
+                    curr -= nums[i-(1+dist)]-min_heap[0]
+                    heapq.heappush(max_heap, -heapq.heappop(min_heap))
+            if len(max_heap)-total1 == k-1:
+                mn = min(mn, curr)
+        return nums[0]+mn
