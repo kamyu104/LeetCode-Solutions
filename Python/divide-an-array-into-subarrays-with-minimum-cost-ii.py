@@ -14,30 +14,24 @@ class Solution(object):
         :rtype: int
         """
         max_heap, min_heap = [], []
-        total1 = total2 = 0
         mn, curr = float("inf"), 0
         for i in xrange(1, len(nums)):
             heapq.heappush(max_heap, (-nums[i], i))
             curr += nums[i]
-            if (len(max_heap)-total1) > k-1:
+            if i > k-1:
                 while max_heap[0][1] < i-(1+dist):
                     heapq.heappop(max_heap)
-                    total1 -= 1
                 x, idx = heapq.heappop(max_heap)
                 curr -= -x
                 heapq.heappush(min_heap, (-x, -idx))
-            if (len(max_heap)-total1)+(len(min_heap)-total2) > 1+dist:
+            if i > 1+dist:
                 while -min_heap[0][1] < i-(1+dist):
                     heapq.heappop(min_heap)
-                    total2 -= 1
-                if min_heap[0] <= (nums[i-(1+dist)], -(i-(1+dist))):
-                    total2 += 1
-                else:
-                    total1 += 1
+                if min_heap[0] > (nums[i-(1+dist)], -(i-(1+dist))):
                     x, idx = heapq.heappop(min_heap)
                     curr -= nums[i-(1+dist)]-x
                     heapq.heappush(max_heap, (-x, -idx))
-            if len(max_heap)-total1 == k-1:
+            if i >= k-1:
                 mn = min(mn, curr)
         return nums[0]+mn
 
