@@ -16,9 +16,9 @@ class Solution(object):
         sl = SortedList(nums[1:1+dist])
         curr, mn = sum(sl[:k-2]), float("inf")
         for i in xrange(1+dist, len(nums)):
-            curr += min(nums[i], sl[k-2] if k-2 < len(sl) else float("inf"))
-            mn = min(mn, curr)
             sl.add(nums[i])
+            curr += min(nums[i], sl[k-2])
+            mn = min(mn, curr)
             curr -= min(nums[i-dist], sl[k-2])
             sl.remove(nums[i-dist])
         return nums[0]+mn
