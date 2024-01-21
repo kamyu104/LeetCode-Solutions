@@ -1,6 +1,9 @@
 # Time:  O(n)
 # Space: O(26)
 
+import collections
+
+
 # freq table, greedy
 class Solution(object):
     def minimumPushes(self, word):
@@ -8,5 +11,4 @@ class Solution(object):
         :type word: str
         :rtype: int
         """
-        cnt = collections.Counter(word)
-        return sum(x*(i//(9-2+1)+1) for i, x in enumerate(sorted(cnt.itervalues(), reverse=True)))
+        return sum(x*(i//(9-2+1)+1) for i, x in enumerate(sorted(collections.Counter(word).itervalues(), reverse=True)))
