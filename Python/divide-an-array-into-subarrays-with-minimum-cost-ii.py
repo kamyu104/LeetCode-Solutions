@@ -82,7 +82,6 @@ class Solution3(object):
                 while max_heap[0][1] < i-(1+dist):
                     heapq.heappop(max_heap)
                     total1 -= 1
-                assert(total1 >= 0)
                 x, idx = heapq.heappop(max_heap)
                 curr -= -x
                 heapq.heappush(min_heap, (-x, -idx))
