@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3009%20%2F%203009-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3017%20%2F%203017-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -186,6 +186,9 @@
 2966 | [Divide Array Into Arrays With Max Difference](https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/) | [C++](./C++/divide-array-into-arrays-with-max-difference.cpp) [Python](./Python/divide-array-into-arrays-with-max-difference.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Array
 3000 | [Maximum Area of Longest Diagonal Rectangle](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/) | [C++](./C++/maximum-area-of-longest-diagonal-rectangle.cpp) [Python](./Python/maximum-area-of-longest-diagonal-rectangle.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3009 | [Maximum Number of Intersections on the Chart](https://leetcode.com/problems/maximum-number-of-intersections-on-the-chart/) | [C++](./C++/maximum-number-of-intersections-on-the-chart.cpp) [Python](./Python/maximum-number-of-intersections-on-the-chart.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | Sort, Line Sweep, Coordinate Compression
+3010 | [Divide an Array Into Subarrays With Minimum Cost I](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/) | [C++](./C++/divide-an-array-into-subarrays-with-minimum-cost-i.cpp) [Python](./Python/divide-an-array-into-subarrays-with-minimum-cost-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3015 | [Count the Number of Houses at a Certain Distance I](https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-i/) | [C++](./C++/count-the-number-of-houses-at-a-certain-distance-i.cpp) [Python](./Python/count-the-number-of-houses-at-a-certain-distance-i.py) | _O(n)_   | _O(n)_        | Medium         | | Math, Difference Array
+3017 | [Count the Number of Houses at a Certain Distance II](https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-ii/) | [C++](./C++/count-the-number-of-houses-at-a-certain-distance-ii.cpp) [Python](./Python/count-the-number-of-houses-at-a-certain-distance-ii.py) | _O(n)_   | _O(n)_        | Hard         | | Math, Difference Array
 
 <br/>
 <div align="right">
@@ -582,6 +585,7 @@
 2792 | [Count Nodes That Are Great Enough](https://leetcode.com/problems/count-nodes-that-are-great-enough/) | [C++](./C++/count-nodes-that-are-great-enough.cpp) [Python](./Python/count-nodes-that-are-great-enough.py) | _O(k * h)_   | _O(k + h)_        | Hard         | 🔒 | Merge Sort
 2948 | [Make Lexicographically Smallest Array by Swapping Elements](https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/) | [C++](./C++/make-lexicographically-smallest-array-by-swapping-elements.cpp) [Python](./Python/make-lexicographically-smallest-array-by-swapping-elements.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort
 2974 | [Minimum Number Game](https://leetcode.com/problems/minimum-number-game/) | [C++](./C++/minimum-number-game.cpp) [Python](./Python/minimum-number-game.py) | _O(nlogn)_   | _O(1)_        | Easy         | | Sort
+3011 | [Find if Array Can Be Sorted](https://leetcode.com/problems/find-if-array-can-be-sorted/) | [C++](./C++/find-if-array-can-be-sorted.cpp) [Python](./Python/find-if-array-can-be-sorted.py) | _O(n)_   | _O(1)_        | Medium         | | Sort
 
 <br/>
 <div align="right">
@@ -651,6 +655,7 @@
 2972 | [Count the Number of Incremovable Subarrays II](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/) | [C++](./C++/count-the-number-of-incremovable-subarrays-ii.cpp) [Python](./Python/count-the-number-of-incremovable-subarrays-ii.py) | _O(n)_ | _O(1)_ | Hard | | Two Pointers
 3006 | [Find Beautiful Indices in the Given Array I](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/) | [C++](./C++/find-beautiful-indices-in-the-given-array-i.cpp) [Python](./Python/find-beautiful-indices-in-the-given-array-i.py) | _O(n)_ | _O(min(a + b + x + y, n))_ | Medium | | `KMP Algorithm`, Binary Search, Two Pointers
 3008 | [Find Beautiful Indices in the Given Array II](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-ii/) | [C++](./C++/find-beautiful-indices-in-the-given-array-ii.cpp) [Python](./Python/find-beautiful-indices-in-the-given-array-ii.py) | _O(n)_ | _O(min(a + b + x + y, n))_ | Hard | | `KMP Algorithm`, Binary Search, Two Pointers
+3013 | [Divide an Array Into Subarrays With Minimum Cost II](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/) | [C++](./C++/divide-an-array-into-subarrays-with-minimum-cost-ii.cpp) [Python](./Python/divide-an-array-into-subarrays-with-minimum-cost-ii.py) | _O(nlogd)_ | _O(d)_ | Hard | | Ordered Set, Sorted List, Sliding Window
 
 <br/>
 <div align="right">
@@ -1034,6 +1039,9 @@
 2971 | [Find Polygon With the Largest Perimeter](https://leetcode.com/problems/find-polygon-with-the-largest-perimeter/) | [C++](./C++/find-polygon-with-the-largest-perimeter.cpp) [Python](./Python/find-polygon-with-the-largest-perimeter.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Prefix Sum, Greedy
 3002 | [Maximum Size of a Set After Removals](https://leetcode.com/problems/maximum-size-of-a-set-after-removals/) | [C++](./C++/maximum-size-of-a-set-after-removals.cpp) [Python](./Python/maximum-size-of-a-set-after-removals.py) | _O(n)_ | _O(n)_ | Medium | | Math, Hash Table, Greedy
 3003 | [Maximize the Number of Partitions After Operations](https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/) | [C++](./C++/maximize-the-number-of-partitions-after-operations.cpp) [Python](./Python/maximize-the-number-of-partitions-after-operations.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Greedy
+3012 | [Minimize Length of Array Using Operations](https://leetcode.com/problems/minimize-length-of-array-using-operations/) | [C++](./C++/minimize-length-of-array-using-operations.cpp) [Python](./Python/minimize-length-of-array-using-operations.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+3014 | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/) | [C++](./C++/minimum-number-of-pushes-to-type-word-i.cpp) [Python](./Python/minimum-number-of-pushes-to-type-word-i.py) | _O(26)_ | _O(26)_ | Easy | | Freq Table, Greedy
+3016 | [Minimum Number of Pushes to Type Word II](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/) | [C++](./C++/minimum-number-of-pushes-to-type-word-ii.cpp) [Python](./Python/minimum-number-of-pushes-to-type-word-ii.py) | _O(n)_ | _O(26)_ | Medium | | Freq Table, Greedy
 
 <br/>
 <div align="right">
