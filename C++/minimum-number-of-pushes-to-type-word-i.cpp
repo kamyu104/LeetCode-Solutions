@@ -11,8 +11,8 @@ public:
 
         int result = 0;
         const int l = ceil_divide(size(word), (9 - 2 + 1));
-        for (int i = 1; i <= l; ++i) {
-            result += i * min(static_cast<int>(size(word)) - (i - 1) * (9 - 2 + 1), (9 - 2 + 1));
+        for (int i = 0; i < l; ++i) {
+            result += (i + 1) * min(static_cast<int>(size(word)) - i * (9 - 2 + 1), (9 - 2 + 1));
         }
         return result;
     }
