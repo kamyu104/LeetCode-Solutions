@@ -9,8 +9,7 @@ using namespace __gnu_pbds;
 class Solution {
 public:
     long long minimumCost(vector<int>& nums, int k, int dist) {
-        static const int32_t INF32 = numeric_limits<int32_t>::max();
-        static const int64_t INF64 = numeric_limits<int64_t>::max();
+        static const int64_t INF = numeric_limits<int64_t>::max();
         using ordered_set = tree<pair<int, int>, null_type, less<pair<int, int>>, rb_tree_tag, tree_order_statistics_node_update>;
         ordered_set os;
         for (int i = 1; i < 1 + dist; ++i) {
@@ -21,12 +20,12 @@ public:
         for (int i = 0; i < k - 2; ++i, ++it) {
             curr += it->first;
         }
-        int64_t mn = INF64;
+        int64_t mn = INF;
         for (int i = 1 + dist; i < size(nums); ++i) {
-            curr += min(nums[i], k - 2 < size(os) ? os.find_by_order(k - 2)->first : INF32);
-            mn = min(mn, curr);
             os.insert({nums[i], i});
-            curr -= min(nums[i - dist], k - 2 < size(os) ? os.find_by_order(k - 2)->first : INF32);
+            curr += min(nums[i], os.find_by_order(k - 2)->first);
+            mn = min(mn, curr);
+            curr -= min(nums[i - dist], os.find_by_order(k - 2)->first);
             os.erase({nums[i - dist], i - dist});
         }
         return nums[0] + mn;
