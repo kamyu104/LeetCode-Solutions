@@ -1,11 +1,11 @@
-// Time:  O(nlogn)
-// Space: O(n)
+// Time:  O(nlogd)
+// Space: O(d)
 
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
 using namespace __gnu_pbds;
 
-// ordered set, sliding window
+// sliding window, ordered set
 class Solution {
 public:
     long long minimumCost(vector<int>& nums, int k, int dist) {
