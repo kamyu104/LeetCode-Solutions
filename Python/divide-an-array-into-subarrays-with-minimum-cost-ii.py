@@ -47,7 +47,7 @@ class Solution2(object):
                 curr -= sl1[-1]
                 sl2.add(sl1.pop())
             if len(sl1)+len(sl2) > 1+dist:
-                if sl2 and sl2[0] <= nums[i-(1+dist)]:
+                if sl2[0] <= nums[i-(1+dist)]:
                     sl2.remove(nums[i-(1+dist)])
                 else:
                     sl1.remove(nums[i-(1+dist)])
