@@ -4,7 +4,7 @@
 import heapq
 
 
-# sliding window, heap, freq table
+# sliding window, heap
 class Solution(object):
     def minimumCost(self, nums, k, dist):
         """
@@ -42,7 +42,7 @@ import heapq
 import collections
 
 
-# sliding window, heap
+# sliding window, heap, freq table
 class Solution2(object):
     def minimumCost(self, nums, k, dist):
         """
