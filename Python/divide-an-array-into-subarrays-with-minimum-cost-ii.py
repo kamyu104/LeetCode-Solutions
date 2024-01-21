@@ -14,7 +14,7 @@ class Solution(object):
         :rtype: int
         """
         sl = SortedList(nums[1:1+(1+dist)])
-        curr = mn = sum(sl[:k-1])
+        mn = curr = sum(sl[:k-1])
         for i in xrange(1+(1+dist), len(nums)):
             sl.add(nums[i])
             curr += min(nums[i]-sl[k-1], 0)
@@ -39,7 +39,7 @@ class Solution2(object):
         :rtype: int
         """
         sl1, sl2 = SortedList(), SortedList()
-        curr, mn = 0, float("inf")
+        mn, curr = float("inf"), 0
         for i in xrange(1, len(nums)):
             sl1.add(nums[i])
             curr += nums[i]
@@ -74,7 +74,7 @@ class Solution3(object):
         """
         max_heap, min_heap = [], []
         total1 = total2 = 0
-        curr, mn = 0, float("inf")
+        mn, curr = float("inf"), 0
         for i in xrange(1, len(nums)):
             heapq.heappush(max_heap, (-nums[i], i))
             curr += nums[i]
@@ -119,7 +119,7 @@ class Solution4(object):
         max_heap, min_heap = [], []
         cnt1, cnt2 = collections.Counter(), collections.Counter()
         total1 = total2 = 0
-        curr, mn = 0, float("inf")
+        mn, curr = float("inf"), 0
         for i in xrange(1, len(nums)):
             heapq.heappush(max_heap, -nums[i])
             curr += nums[i]
