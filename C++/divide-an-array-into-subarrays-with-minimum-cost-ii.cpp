@@ -106,7 +106,6 @@ public:
                     }
                     --total2;
                 }
-                assert(total2 >= 0);
                 if (min_heap.top() <= nums[i - (1 + dist)]) {
                     ++cnt2[nums[i - (1 + dist)]];
                     ++total2;
