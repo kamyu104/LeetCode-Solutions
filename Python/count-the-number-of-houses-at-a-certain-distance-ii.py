@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# math, difference array
+# math, prefix sum, difference array
 class Solution(object):
     def countOfPairs(self, n, x, y):
         """
