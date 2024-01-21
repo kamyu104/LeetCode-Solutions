@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// math, difference array
+// math, prefix sum, difference array
 class Solution {
 public:
     vector<int> countOfPairs(int n, int x, int y) {
