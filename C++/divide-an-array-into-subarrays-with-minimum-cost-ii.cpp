@@ -1,7 +1,7 @@
 // Time:  O(nlogd)
 // Space: O(d)
 
-// fastest but most verbose
+// fastest and less verbose
 // sliding window, heap
 class Solution {
 public:
