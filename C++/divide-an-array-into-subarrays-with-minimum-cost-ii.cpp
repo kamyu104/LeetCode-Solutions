@@ -42,7 +42,7 @@ public:
 // Time:  O(nlogd)
 // Space: O(d)
 // faster but more verbose
-// sliding window, heap
+// sliding window, heap, freq table
 class Solution2 {
 public:
     long long minimumCost(vector<int>& nums, int k, int dist) {
