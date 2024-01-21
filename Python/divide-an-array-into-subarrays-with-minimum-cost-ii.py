@@ -19,6 +19,6 @@ class Solution(object):
             curr += min(nums[i], sl[k-2] if k-2 < len(sl) else float("inf"))
             mn = min(mn, curr)
             sl.add(nums[i])
-            curr -= min(nums[i-dist], sl[k-2] if k-2 < len(sl) else float("inf"))
+            curr -= min(nums[i-dist], sl[k-2])
             sl.remove(nums[i-dist])
         return nums[0]+mn
