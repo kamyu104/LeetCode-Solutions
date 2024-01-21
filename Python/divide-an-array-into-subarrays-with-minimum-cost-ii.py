@@ -4,7 +4,7 @@
 from sortedcontainers import SortedList
 
 
-# sorted list
+# sliding window, sorted list
 class Solution(object):
     def minimumCost(self, nums, k, dist):
         """
