@@ -51,7 +51,7 @@ public:
                 bst1.erase(prev(end(bst1)));
             }
             if (size(bst1) + size(bst2) > 1 + dist) {
-                if (!empty(bst2) && *cbegin(bst2) <= nums[i - (1 + dist)]) {
+                if (*cbegin(bst2) <= nums[i - (1 + dist)]) {
                     bst2.erase(bst2.find(nums[i - (1 + dist)]));
                 } else {
                     bst1.erase(bst1.find(nums[i - (1 + dist)]));
