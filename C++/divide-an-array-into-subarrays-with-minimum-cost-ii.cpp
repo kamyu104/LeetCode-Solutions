@@ -41,7 +41,7 @@ public:
         static const int64_t INF = numeric_limits<int64_t>::max();
 
         multiset<int> bst1, bst2;
-        int64_t curr = 0, mn = INF;
+        int64_t mn = INF, curr = 0;
         for (int i = 1; i < size(nums); ++i) {
             bst1.emplace(nums[i]);
             curr += nums[i];
@@ -80,7 +80,7 @@ public:
         priority_queue<pair<int, int>> max_heap;
         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap;
         int total1 = 0, total2 = 0;
-        int64_t curr = 0, mn = INF;
+        int64_t mn = INF, curr = 0;
         for (int i = 1; i < size(nums); ++i) {
             max_heap.emplace(nums[i], -i);
             curr += nums[i];
@@ -127,7 +127,7 @@ public:
         priority_queue<int, vector<int>, greater<int>> min_heap;
         unordered_map<int, int> cnt1, cnt2;
         int total1 = 0, total2 = 0;
-        int64_t curr = 0, mn = INF;
+        int64_t mn = INF, curr = 0;
         for (int i = 1; i < size(nums); ++i) {
             max_heap.emplace(nums[i]);
             curr += nums[i];
