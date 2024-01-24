@@ -32,20 +32,7 @@ public:
                 if (min_heap.top() <= pair(nums[i - (1 + dist)], -(i - (1 + dist)))) {
                     lazy_to_delete(min_heap, ++total2, i - (1 + dist));
                 } else {
-                    lazy_to_delete(max_heap, ++total1, i - (1 + dist));
-                    if (total1 > size(max_heap) - total1) {
-                        priority_queue<pair<int, int>> new_max_heap;
-                        while (!empty(max_heap)) {
-                            const auto x = max_heap.top(); max_heap.pop();
-                            if (-x.second <= i - (1 + dist)) {
-                                --total1;
-                                continue;
-                            }
-                            new_max_heap.emplace(x);
-                        }
-                        max_heap = move(new_max_heap);
-                    }
-                    
+                    lazy_to_delete(max_heap, ++total1, i - (1 + dist));                    
                     curr -= nums[i - (1 + dist)] - min_heap.top().first;
                     max_heap.emplace(min_heap.top()); min_heap.pop();
                 }
