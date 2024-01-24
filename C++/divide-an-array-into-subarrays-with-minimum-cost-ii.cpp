@@ -8,6 +8,14 @@ public:
     long long minimumCost(vector<int>& nums, int k, int dist) {
         static const int64_t INF = numeric_limits<int64_t>::max();
 
+        const auto& get_top = [](auto& heap, auto& total, const int d) {
+            while (-heap.top().second < d) {
+                heap.pop();
+                --total;
+            }
+            return heap.top();
+        };
+
         priority_queue<pair<int, int>> max_heap;
         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap;
         int total1 = 0, total2 = 0;
@@ -16,20 +24,12 @@ public:
             max_heap.emplace(nums[i], -i);
             curr += nums[i];
             if (i > k - 1) {
-                while (-max_heap.top().second < i - (1 + dist)) {
-                    max_heap.pop();
-                    --total1;
-                }
-                const auto [x, idx] = max_heap.top(); max_heap.pop();
+                const auto [x, idx] = get_top(max_heap, total1, i - (1 + dist)); max_heap.pop();
                 curr -= x;
                 min_heap.emplace(x, idx);
             }
             if (i > 1 + dist) {
-                while (-min_heap.top().second < i - (1 + dist)) {
-                    min_heap.pop();
-                    --total2;
-                }
-                if (min_heap.top() <= pair(nums[i - (1 + dist)], -(i - (1 + dist)))) {
+                if (get_top(min_heap, total2, i - (1 + dist)) <= pair(nums[i - (1 + dist)], -(i - (1 + dist)))) {
                     lazy_to_delete(min_heap, ++total2, i - (1 + dist));
                 } else {
                     lazy_to_delete(max_heap, ++total1, i - (1 + dist));                    
@@ -71,6 +71,17 @@ public:
     long long minimumCost(vector<int>& nums, int k, int dist) {
         static const int64_t INF = numeric_limits<int64_t>::max();
 
+        const auto& get_top = [](auto& heap, auto& cnt, auto& total) {
+            while (cnt.count(heap.top())) {
+                const int x = heap.top(); heap.pop();
+                if (--cnt[x] == 0) {
+                    cnt.erase(x);
+                }
+                --total;
+            }
+            return heap.top();
+        };
+
         priority_queue<int> max_heap;
         priority_queue<int, vector<int>, greater<int>> min_heap;
         unordered_map<int, int> cnt1, cnt2;
@@ -80,32 +91,16 @@ public:
             max_heap.emplace(nums[i]);
             curr += nums[i];
             if (size(max_heap) - total1 > k - 1) {
-                while (cnt1.count(max_heap.top())) {
-                    const int x = max_heap.top(); max_heap.pop();
-                    if (--cnt1[x] == 0) {
-                        cnt1.erase(x);
-                    }
-                    --total1;
-                }
-                const int x = max_heap.top(); max_heap.pop();
+                const int x = get_top(max_heap, cnt1, total1); max_heap.pop();
                 curr -= x;
                 min_heap.emplace(x);
                 
             }
             if ((size(max_heap) - total1) + (size(min_heap) - total2) > 1 + dist) {
-                while (cnt2.count(min_heap.top())) {
-                    const int x = min_heap.top(); min_heap.pop();
-                    if (--cnt2[x] == 0) {
-                        cnt2.erase(x);
-                    }
-                    --total2;
-                }
-                if (min_heap.top() <= nums[i - (1 + dist)]) {
-                    ++cnt2[nums[i - (1 + dist)]];
-                    lazy_to_delete(min_heap, cnt2, ++total2);
+                if (get_top(min_heap, cnt2, total2) <= nums[i - (1 + dist)]) {
+                    lazy_to_delete(min_heap, cnt2, total2, nums[i - (1 + dist)]);
                 } else {
-                    ++cnt1[nums[i - (1 + dist)]];
-                    lazy_to_delete(max_heap, cnt1, ++total1);
+                    lazy_to_delete(max_heap, cnt1, total1, nums[i - (1 + dist)]);
                     curr -= nums[i - (1 + dist)] - min_heap.top();
                     max_heap.emplace(min_heap.top()); min_heap.pop();
                 }
@@ -119,7 +114,9 @@ public:
 
 private:
     template<typename T>
-    void lazy_to_delete(T& heap, auto& cnt, int& total) {
+    void lazy_to_delete(T& heap, auto& cnt, int& total, int x) {
+        ++cnt[x];
+        ++total;
         if (total > size(heap) - total) {
             T new_heap;
             while (!empty(heap)) {
