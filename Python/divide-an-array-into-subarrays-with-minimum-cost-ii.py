@@ -13,7 +13,16 @@ class Solution(object):
         :type dist: int
         :rtype: int
         """
+        def lazy_to_delete(heap, total):
+            l = len(heap)-total
+            if total > len(heap)-total:
+                heap = [x for x in heap if abs(x[1]) > i-(1+dist)]
+                heapq.heapify(heap)
+                total = 0
+            return heap, total
+
         max_heap, min_heap = [], []
+        total1 = total2 = 0
         mn, curr = float("inf"), 0
         for i in xrange(1, len(nums)):
             heapq.heappush(max_heap, (-nums[i], i))
@@ -21,13 +30,18 @@ class Solution(object):
             if i > k-1:
                 while max_heap[0][1] < i-(1+dist):
                     heapq.heappop(max_heap)
+                    total1 -= 1
                 x, idx = heapq.heappop(max_heap)
                 curr -= -x
                 heapq.heappush(min_heap, (-x, -idx))
             if i > 1+dist:
                 while -min_heap[0][1] < i-(1+dist):
                     heapq.heappop(min_heap)
-                if min_heap[0] > (nums[i-(1+dist)], -(i-(1+dist))):
+                    total2 -= 1
+                if min_heap[0] <= (nums[i-(1+dist)], -(i-(1+dist))):
+                    min_heap, total2 = lazy_to_delete(min_heap, total2+1)
+                else:
+                    max_heap, total1 = lazy_to_delete(max_heap, total1+1)
                     x, idx = heapq.heappop(min_heap)
                     curr -= nums[i-(1+dist)]-x
                     heapq.heappush(max_heap, (-x, -idx))
@@ -51,6 +65,21 @@ class Solution2(object):
         :type dist: int
         :rtype: int
         """
+        def lazy_to_delete(heap, cnt, total):
+            if total > len(heap)-total:
+                new_heap = []
+                for x in heap:
+                    if x not in cnt:
+                        new_heap.append(x)
+                        continue
+                    cnt[x] -= 1
+                    if cnt[x] == 0:
+                        del cnt[x]
+                    total -= 1
+                heapq.heapify(new_heap)
+                heap = new_heap
+            return heap, total
+
         max_heap, min_heap = [], []
         cnt1, cnt2 = collections.Counter(), collections.Counter()
         total1 = total2 = 0
@@ -59,8 +88,8 @@ class Solution2(object):
             heapq.heappush(max_heap, -nums[i])
             curr += nums[i]
             if (len(max_heap)-total1) > k-1:
-                while -max_heap[0] in cnt1:
-                    x = -heapq.heappop(max_heap)
+                while max_heap[0] in cnt1:
+                    x = heapq.heappop(max_heap)
                     cnt1[x] -= 1
                     if cnt1[x] == 0:
                         del cnt1[x]
@@ -76,10 +105,10 @@ class Solution2(object):
                     total2 -= 1
                 if min_heap[0] <= nums[i-(1+dist)]:
                     cnt2[nums[i-(1+dist)]] += 1
-                    total2 += 1
+                    min_heap, total2 = lazy_to_delete(min_heap, cnt2, total2+1)
                 else:
-                    cnt1[nums[i-(1+dist)]] += 1
-                    total1 += 1
+                    cnt1[-nums[i-(1+dist)]] += 1
+                    max_heap, total1 = lazy_to_delete(max_heap, cnt1, total1+1)
                     curr -= nums[i-(1+dist)]-min_heap[0]
                     heapq.heappush(max_heap, -heapq.heappop(min_heap))
             if len(max_heap)-total1 == k-1:
