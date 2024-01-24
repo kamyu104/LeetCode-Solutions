@@ -10,6 +10,7 @@ public:
 
         priority_queue<pair<int, int>> max_heap;
         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap;
+        int total1 = 0, total2 = 0;
         int64_t mn = INF, curr = 0;
         for (int i = 1; i < size(nums); ++i) {
             max_heap.emplace(nums[i], -i);
@@ -17,6 +18,7 @@ public:
             if (i > k - 1) {
                 while (-max_heap.top().second < i - (1 + dist)) {
                     max_heap.pop();
+                    --total1;
                 }
                 const auto [x, idx] = max_heap.top(); max_heap.pop();
                 curr -= x;
@@ -25,8 +27,25 @@ public:
             if (i > 1 + dist) {
                 while (-min_heap.top().second < i - (1 + dist)) {
                     min_heap.pop();
+                    --total2;
                 }
-                if (min_heap.top() > pair(nums[i - (1 + dist)], -(i - (1 + dist)))) {
+                if (min_heap.top() <= pair(nums[i - (1 + dist)], -(i - (1 + dist)))) {
+                    lazy_to_delete(min_heap, ++total2, i - (1 + dist));
+                } else {
+                    lazy_to_delete(max_heap, ++total1, i - (1 + dist));
+                    if (total1 > size(max_heap) - total1) {
+                        priority_queue<pair<int, int>> new_max_heap;
+                        while (!empty(max_heap)) {
+                            const auto x = max_heap.top(); max_heap.pop();
+                            if (-x.second <= i - (1 + dist)) {
+                                --total1;
+                                continue;
+                            }
+                            new_max_heap.emplace(x);
+                        }
+                        max_heap = move(new_max_heap);
+                    }
+                    
                     curr -= nums[i - (1 + dist)] - min_heap.top().first;
                     max_heap.emplace(min_heap.top()); min_heap.pop();
                 }
@@ -36,6 +55,23 @@ public:
             }
         }
         return nums[0] + mn;
+    }
+
+private:
+    template<typename T>
+    void lazy_to_delete(T& heap, int& total, const int d) {
+        if (total > size(heap) - total) {
+            T new_heap;
+            while (!empty(heap)) {
+                const auto x = heap.top(); heap.pop();
+                if (-x.second <= d) {
+                    --total;
+                    continue;
+                }
+                new_heap.emplace(x);
+            }
+            heap = move(new_heap);
+        }
     }
 };
 
@@ -79,10 +115,10 @@ public:
                 }
                 if (min_heap.top() <= nums[i - (1 + dist)]) {
                     ++cnt2[nums[i - (1 + dist)]];
-                    ++total2;
+                    lazy_to_delete(min_heap, cnt2, ++total2);
                 } else {
                     ++cnt1[nums[i - (1 + dist)]];
-                    ++total1;
+                    lazy_to_delete(max_heap, cnt1, ++total1);
                     curr -= nums[i - (1 + dist)] - min_heap.top();
                     max_heap.emplace(min_heap.top()); min_heap.pop();
                 }
@@ -92,6 +128,26 @@ public:
             }
         }
         return nums[0] + mn;
+    }
+
+private:
+    template<typename T>
+    void lazy_to_delete(T& heap, auto& cnt, int& total) {
+        if (total > size(heap) - total) {
+            T new_heap;
+            while (!empty(heap)) {
+                const auto x = heap.top(); heap.pop();
+                if (cnt.count(x)) {
+                    if (--cnt[x] == 0) {
+                        cnt.erase(x);
+                    }
+                    --total;
+                    continue;
+                }
+                new_heap.emplace(x);
+            }
+            heap = move(new_heap);
+        }
     }
 };
 
