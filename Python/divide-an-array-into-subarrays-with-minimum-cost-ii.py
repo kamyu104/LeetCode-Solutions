@@ -20,6 +20,7 @@ class Solution(object):
             return heap[0], total
             
         def lazy_to_delete(heap, total):
+            total += 1
             if total > len(heap)-total:
                 heap = [x for x in heap if abs(x[1]) > i-(1+dist)]
                 heapq.heapify(heap)
@@ -40,9 +41,9 @@ class Solution(object):
             if i > 1+dist:
                 (x, idx), total2 = get_top(min_heap, total2)
                 if (x, idx) <= (nums[i-(1+dist)], -(i-(1+dist))):
-                    min_heap, total2 = lazy_to_delete(min_heap, total2+1)
+                    min_heap, total2 = lazy_to_delete(min_heap, total2)
                 else:
-                    max_heap, total1 = lazy_to_delete(max_heap, total1+1)
+                    max_heap, total1 = lazy_to_delete(max_heap, total1)
                     heapq.heappop(min_heap)
                     curr -= nums[i-(1+dist)]-x
                     heapq.heappush(max_heap, (-x, -idx))
