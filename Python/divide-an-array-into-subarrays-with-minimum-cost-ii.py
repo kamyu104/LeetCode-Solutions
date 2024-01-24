@@ -14,7 +14,6 @@ class Solution(object):
         :rtype: int
         """
         def lazy_to_delete(heap, total):
-            l = len(heap)-total
             if total > len(heap)-total:
                 heap = [x for x in heap if abs(x[1]) > i-(1+dist)]
                 heapq.heapify(heap)
