@@ -38,9 +38,6 @@ class Solution(object):
                 curr -= -x
                 heapq.heappush(min_heap, (-x, -idx))
             if i > 1+dist:
-                while -min_heap[0][1] < i-(1+dist):
-                    heapq.heappop(min_heap)
-                    total2 -= 1
                 (x, idx), total2 = get_top(min_heap, total2)
                 if (x, idx) <= (nums[i-(1+dist)], -(i-(1+dist))):
                     min_heap, total2 = lazy_to_delete(min_heap, total2+1)
