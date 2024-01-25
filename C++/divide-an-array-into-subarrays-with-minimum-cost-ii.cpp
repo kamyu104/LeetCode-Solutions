@@ -126,11 +126,11 @@ private:
                     if (--cnt[x] == 0) {
                         cnt.erase(x);
                     }
-                    --total;
                     continue;
                 }
                 new_heap.emplace(x);
             }
+            total = 0;
             heap = move(new_heap);
         }
     }
