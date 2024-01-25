@@ -16,34 +16,33 @@ class Solution(object):
         def get_top(heap, total):
             while abs(heap[0][1]) < i-(1+dist):
                 heapq.heappop(heap)
-                total -= 1
-            return heap[0], total
+                total[0] -= 1
+            return heap[0]
             
-        def lazy_to_delete(heap, total):
-            total += 1
-            if total > len(heap)-total:
-                heap = [x for x in heap if abs(x[1]) > i-(1+dist)]
+        def lazy_delete(heap, total):
+            total[0] += 1
+            if total[0] > len(heap)-total[0]:
+                heap[:] = [x for x in heap if abs(x[1]) > i-(1+dist)]
                 heapq.heapify(heap)
-                total = 0
-            return heap, total
+                total[0] = 0
 
         max_heap, min_heap = [], []
-        total1 = total2 = 0
+        total1, total2 = [0], [0]
         mn, curr = float("inf"), 0
         for i in xrange(1, len(nums)):
             heapq.heappush(max_heap, (-nums[i], i))
             curr += nums[i]
             if i > k-1:
-                (x, idx), total1 = get_top(max_heap, total1)
+                x, idx = get_top(max_heap, total1)
                 heapq.heappop(max_heap)
                 curr -= -x
                 heapq.heappush(min_heap, (-x, -idx))
             if i > 1+dist:
-                (x, idx), total2 = get_top(min_heap, total2)
+                x, idx = get_top(min_heap, total2)
                 if (x, idx) <= (nums[i-(1+dist)], -(i-(1+dist))):
-                    min_heap, total2 = lazy_to_delete(min_heap, total2)
+                    lazy_delete(min_heap, total2)
                 else:
-                    max_heap, total1 = lazy_to_delete(max_heap, total1)
+                    lazy_delete(max_heap, total1)
                     heapq.heappop(min_heap)
                     curr -= nums[i-(1+dist)]-x
                     heapq.heappush(max_heap, (-x, -idx))
@@ -73,13 +72,13 @@ class Solution2(object):
                 cnt[x] -= 1
                 if cnt[x] == 0:
                     del cnt[x]
-                total -= 1
-            return heap[0], total
+                total[0] -= 1
+            return heap[0]
 
-        def lazy_to_delete(heap, cnt, total, x):
+        def lazy_delete(heap, cnt, total, x):
             cnt[x] += 1
-            total += 1
-            if total > len(heap)-total:
+            total[0] += 1
+            if total[0] > len(heap)-total[0]:
                 new_heap = []
                 for x in heap:
                     if x not in cnt:
@@ -88,32 +87,32 @@ class Solution2(object):
                     cnt[x] -= 1
                     if cnt[x] == 0:
                         del cnt[x]
-                    total -= 1
+                total[0] = 0
                 heapq.heapify(new_heap)
-                heap = new_heap
-            return heap, total
+                heap[:] = new_heap
+            return total
 
         max_heap, min_heap = [], []
         cnt1, cnt2 = collections.Counter(), collections.Counter()
-        total1 = total2 = 0
+        total1, total2 = [0], [0]
         mn, curr = float("inf"), 0
         for i in xrange(1, len(nums)):
             heapq.heappush(max_heap, -nums[i])
             curr += nums[i]
-            if (len(max_heap)-total1) > k-1:
-                x, total1 = get_top(max_heap, cnt1, total1)
+            if (len(max_heap)-total1[0]) > k-1:
+                x = get_top(max_heap, cnt1, total1)
                 curr -= -x
                 heapq.heappush(min_heap, -heapq.heappop(max_heap))
-            if (len(max_heap)-total1)+(len(min_heap)-total2) > 1+dist:
-                x, total2 = get_top(min_heap, cnt2, total2)
+            if (len(max_heap)-total1[0])+(len(min_heap)-total2[0]) > 1+dist:
+                x = get_top(min_heap, cnt2, total2)
                 if x <= nums[i-(1+dist)]:
-                    min_heap, total2 = lazy_to_delete(min_heap, cnt2, total2, nums[i-(1+dist)])
+                    lazy_delete(min_heap, cnt2, total2, nums[i-(1+dist)])
                 else:
-                    max_heap, total1 = lazy_to_delete(max_heap, cnt1, total1, -nums[i-(1+dist)])
+                    lazy_delete(max_heap, cnt1, total1, -nums[i-(1+dist)])
                     heapq.heappop(min_heap)
                     curr -= nums[i-(1+dist)]-x
                     heapq.heappush(max_heap, -x)
-            if len(max_heap)-total1 == k-1:
+            if len(max_heap)-total1[0] == k-1:
                 mn = min(mn, curr)
         return nums[0]+mn
 
