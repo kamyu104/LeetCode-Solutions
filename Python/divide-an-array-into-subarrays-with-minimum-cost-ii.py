@@ -21,10 +21,11 @@ class Solution(object):
             
         def lazy_delete(heap, total):
             total[0] += 1
-            if total[0] > len(heap)-total[0]:
-                heap[:] = [x for x in heap if abs(x[1]) > i-(1+dist)]
-                heapq.heapify(heap)
-                total[0] = 0
+            if total[0] <= len(heap)-total[0]:
+                return
+            heap[:] = [x for x in heap if abs(x[1]) > i-(1+dist)]
+            heapq.heapify(heap)
+            total[0] = 0
 
         max_heap, min_heap = [], []
         total1, total2 = [0], [0]
@@ -78,19 +79,19 @@ class Solution2(object):
         def lazy_delete(heap, cnt, total, x):
             cnt[x] += 1
             total[0] += 1
-            if total[0] > len(heap)-total[0]:
-                new_heap = []
-                for x in heap:
-                    if x not in cnt:
-                        new_heap.append(x)
-                        continue
-                    cnt[x] -= 1
-                    if cnt[x] == 0:
-                        del cnt[x]
-                total[0] = 0
-                heapq.heapify(new_heap)
-                heap[:] = new_heap
-            return total
+            if total[0] <= len(heap)-total[0]:
+                return
+            new_heap = []
+            for x in heap:
+                if x not in cnt:
+                    new_heap.append(x)
+                    continue
+                cnt[x] -= 1
+                if cnt[x] == 0:
+                    del cnt[x]
+            total[0] = 0
+            heapq.heapify(new_heap)
+            heap[:] = new_heap
 
         max_heap, min_heap = [], []
         cnt1, cnt2 = collections.Counter(), collections.Counter()
