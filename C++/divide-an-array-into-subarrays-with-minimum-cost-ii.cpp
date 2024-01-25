@@ -48,18 +48,19 @@ private:
     template<typename T>
     void lazy_delete(T& heap, int& total, const int d) {
         ++total;
-        if (total > size(heap) - total) {
-            T new_heap;
-            while (!empty(heap)) {
-                const auto x = heap.top(); heap.pop();
-                if (-x.second <= d) {
-                    --total;
-                    continue;
-                }
-                new_heap.emplace(x);
-            }
-            heap = move(new_heap);
+        if (total <= size(heap) - total) {
+            return;
         }
+        T new_heap;
+        while (!empty(heap)) {
+            const auto x = heap.top(); heap.pop();
+            if (-x.second <= d) {
+                --total;
+                continue;
+            }
+            new_heap.emplace(x);
+        }
+        heap = move(new_heap);
     }
 };
 
@@ -118,21 +119,22 @@ private:
     void lazy_delete(T& heap, auto& cnt, int& total, int x) {
         ++cnt[x];
         ++total;
-        if (total > size(heap) - total) {
-            T new_heap;
-            while (!empty(heap)) {
-                const auto x = heap.top(); heap.pop();
-                if (cnt.count(x)) {
-                    if (--cnt[x] == 0) {
-                        cnt.erase(x);
-                    }
-                    continue;
-                }
-                new_heap.emplace(x);
-            }
-            total = 0;
-            heap = move(new_heap);
+        if (total <= size(heap) - total) {
+            return;
         }
+        T new_heap;
+        while (!empty(heap)) {
+            const auto x = heap.top(); heap.pop();
+            if (cnt.count(x)) {
+                if (--cnt[x] == 0) {
+                    cnt.erase(x);
+                }
+                continue;
+            }
+            new_heap.emplace(x);
+        }
+        total = 0;
+        heap = move(new_heap);
     }
 };
 
