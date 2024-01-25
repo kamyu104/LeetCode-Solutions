@@ -30,9 +30,9 @@ public:
             }
             if (i > 1 + dist) {
                 if (get_top(min_heap, total2, i - (1 + dist)) <= pair(nums[i - (1 + dist)], -(i - (1 + dist)))) {
-                    lazy_to_delete(min_heap, total2, i - (1 + dist));
+                    lazy_delete(min_heap, total2, i - (1 + dist));
                 } else {
-                    lazy_to_delete(max_heap, total1, i - (1 + dist));                    
+                    lazy_delete(max_heap, total1, i - (1 + dist));                    
                     curr -= nums[i - (1 + dist)] - min_heap.top().first;
                     max_heap.emplace(min_heap.top()); min_heap.pop();
                 }
@@ -46,7 +46,7 @@ public:
 
 private:
     template<typename T>
-    void lazy_to_delete(T& heap, int& total, const int d) {
+    void lazy_delete(T& heap, int& total, const int d) {
         ++total;
         if (total > size(heap) - total) {
             T new_heap;
@@ -99,9 +99,9 @@ public:
             }
             if ((size(max_heap) - total1) + (size(min_heap) - total2) > 1 + dist) {
                 if (get_top(min_heap, cnt2, total2) <= nums[i - (1 + dist)]) {
-                    lazy_to_delete(min_heap, cnt2, total2, nums[i - (1 + dist)]);
+                    lazy_delete(min_heap, cnt2, total2, nums[i - (1 + dist)]);
                 } else {
-                    lazy_to_delete(max_heap, cnt1, total1, nums[i - (1 + dist)]);
+                    lazy_delete(max_heap, cnt1, total1, nums[i - (1 + dist)]);
                     curr -= nums[i - (1 + dist)] - min_heap.top();
                     max_heap.emplace(min_heap.top()); min_heap.pop();
                 }
@@ -115,7 +115,7 @@ public:
 
 private:
     template<typename T>
-    void lazy_to_delete(T& heap, auto& cnt, int& total, int x) {
+    void lazy_delete(T& heap, auto& cnt, int& total, int x) {
         ++cnt[x];
         ++total;
         if (total > size(heap) - total) {
