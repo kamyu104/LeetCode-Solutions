@@ -5,9 +5,7 @@
 class Solution {
 public:
     int maximumProcessableQueries(vector<int>& nums, vector<int>& queries) {
-        static const int NEG_INF = numeric_limits<int>::min();
-
-        vector<vector<int>> dp(size(nums), vector<int>(size(nums), NEG_INF));
+        vector<vector<int>> dp(size(nums), vector<int>(size(nums), numeric_limits<int>::min()));
         dp[0].back() = 0;
         for (int l = size(nums) - 1; l >= 1; --l) {
             for (int i = 0; i + (l - 1) < size(nums); ++i) {
