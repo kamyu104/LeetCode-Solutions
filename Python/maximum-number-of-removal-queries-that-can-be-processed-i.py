@@ -22,4 +22,4 @@ class Solution(object):
                     dp[i][j] = max(dp[i][j], right+1)
                 if dp[i][j] == len(queries):
                     return len(queries)
-        return max(dp[i][i]+int(nums[i] >= queries[dp[i][i]])for i in xrange(len(nums)))
+        return max(dp[i][i]+int(nums[i] >= queries[dp[i][i]]) for i in xrange(len(nums)))
