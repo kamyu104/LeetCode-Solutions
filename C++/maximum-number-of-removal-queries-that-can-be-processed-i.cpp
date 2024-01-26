@@ -12,14 +12,11 @@ public:
         for (int l = size(nums) - 1; l >= 1; --l) {
             for (int i = 0; i + (l - 1) < size(nums); ++i) {
                 const int j = i + (l - 1);
-                const int left = i - 1 >= 0 ? dp[i - 1][j] : NEG_INF;
-                const int right = j + 1 < size(nums) ? dp[i][j + 1] : NEG_INF;
-                dp[i][j] = max(left, right);
-                if (i - 1 >= 0 && nums[i - 1] >= queries[left]) {
-                    dp[i][j] = max(dp[i][j], left + 1);
+                if (i - 1 >= 0) {
+                    dp[i][j] = max(dp[i][j], dp[i - 1][j] + (nums[i - 1] >= queries[dp[i - 1][j]] ? 1 : 0));
                 }
-                if (j + 1 < size(nums) && nums[j + 1] >= queries[right]) {
-                    dp[i][j] = max(dp[i][j], right + 1);
+                if (j + 1 < size(nums)) {
+                    dp[i][j] = max(dp[i][j], dp[i][j + 1] + (nums[j + 1] >= queries[dp[i][j + 1]] ? 1 : 0));
                 }
                 if (dp[i][j] == size(queries)) {
                     return size(queries);
