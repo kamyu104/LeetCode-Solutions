@@ -9,8 +9,7 @@ class Solution(object):
         :type queries: List[int]
         :rtype: int
         """
-        NEG_INF = float("-inf")
-        dp = [[NEG_INF]*len(nums) for _ in xrange(len(nums))]
+        dp = [[float("-inf")]*len(nums) for _ in xrange(len(nums))]
         dp[0][-1] = 0
         for l in reversed(xrange(1, len(nums))):
             for i in xrange(len(nums)-(l-1)):
