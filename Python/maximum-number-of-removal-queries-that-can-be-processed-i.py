@@ -9,7 +9,8 @@ class Solution(object):
         :type queries: List[int]
         :rtype: int
         """
-        dp = [[0]*len(nums) for _ in xrange(len(nums))]
+        dp = [[float("-inf")]*len(nums) for _ in xrange(len(nums))]
+        dp[0][-1] = 0
         for l in reversed(xrange(1, len(nums))):
             for i in xrange(len(nums)-(l-1)):
                 j = i+(l-1)
@@ -22,4 +23,4 @@ class Solution(object):
                     dp[i][j] = max(dp[i][j], right+1)
                 if dp[i][j] == len(queries):
                     return len(queries)
-        return max(dp[i][i]+int(nums[i] >= queries[dp[i][i]]) for i in xrange(len(nums)))
+        return max(dp[i][i]+int(nums[i] >= queries[dp[i][i]])for i in xrange(len(nums)))
