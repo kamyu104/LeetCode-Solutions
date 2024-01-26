@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3017%20%2F%203017-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3018%20%2F%203018-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -911,6 +911,7 @@
 2977 | [Minimum Cost to Convert String II](https://leetcode.com/problems/minimum-cost-to-convert-string-ii/) | [C++](./C++/minimum-cost-to-convert-string-ii.cpp) [Python](./Python/minimum-cost-to-convert-string-ii.py) | _O(o * l + k * eloge + n * l)_ | _O(t + k * v + l)_ | Hard | | `Dijkstra's Algorithm`, `Floyd-Warshall Algorithm`, DP, Memoization, Trie
 2992 | [Number of Self-Divisible Permutations](https://leetcode.com/problems/number-of-self-divisible-permutations/) | [C++](./C++/number-of-self-divisible-permutations.cpp) [Python](./Python/number-of-self-divisible-permutations.py) | _O(n * 2^n)_ | _O(2^n)_ | Medium | 🔒 | Bitmasks, DP
 2998 | [Minimum Number of Operations to Make X and Y Equal](https://leetcode.com/problems/minimum-number-of-operations-to-make-x-and-y-equal/) | [C++](./C++/minimum-number-of-operations-to-make-x-and-y-equal.cpp) [Python](./Python/minimum-number-of-operations-to-make-x-and-y-equal.py) | _O(x)_ | _O(x)_ | Medium | | Memoization, BFS
+3018 | [Maximum Number of Removal Queries That Can Be Processed I](https://leetcode.com/problems/maximum-number-of-removal-queries-that-can-be-processed-i/) | [C++](./C++/maximum-number-of-removal-queries-that-can-be-processed-i.cpp) [Python](./Python/maximum-number-of-removal-queries-that-can-be-processed-i.py) | _O(n^2)_ | _O(n^2)_ | Hard | 🔒 | DP
 
 <br/>
 <div align="right">
