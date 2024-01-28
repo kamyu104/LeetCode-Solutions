@@ -11,23 +11,23 @@ public:
         }
         unordered_map<int64_t, int> dp;
         int result = 0;
-        for (const auto& [x, _] : cnt) {
+        for (const auto& k_v : cnt) {
+            int64_t x = k_v.first;
             if (x == 1) {
                 result = max(result, cnt[x] - (cnt[x] % 2 == 0 ? 1 : 0));
                 continue;
             }
             vector<int> stk;
-            int64_t nx = x;
-            for (; !dp.count(nx) && cnt.count(nx) && cnt[nx] >= 2; nx *= nx) {
-                stk.emplace_back(nx);
+            for (; !dp.count(x) && cnt.count(x) && cnt[x] >= 2; x *= x) {
+                stk.emplace_back(x);
             }
-            if (!dp.count(nx)) {
-                if (!cnt.count(nx)) {
-                    nx = stk.back(); stk.pop_back();
+            if (!dp.count(x)) {
+                if (!cnt.count(x)) {
+                    x = stk.back(); stk.pop_back();
                 }
-                dp[nx] = 1;
+                dp[x] = 1;
             }
-            int l = dp[nx];
+            int l = dp[x];
             while (!empty(stk)) {
                 l += 2;
                 dp[stk.back()] = l; stk.pop_back();
@@ -49,17 +49,17 @@ public:
             ++cnt[x];
         }
         int result = 0;
-        for (const auto& [x, _] : cnt) {
+        for (const auto& k_v : cnt) {
+            int64_t x = k_v.first;
             if (x == 1) {
                 result = max(result, cnt[x] - (cnt[x] % 2 == 0 ? 1 : 0));
                 continue;
             }
             int l = 0;
-            int64_t nx = x;
-            for (; cnt.count(nx) && cnt[nx] >= 2; nx *= nx) {
+            for (; cnt.count(x) && cnt[x] >= 2; x *= x) {
                 l += 2;
             }
-            l += cnt.count(nx) ? 1 : -1;
+            l += cnt.count(x) ? 1 : -1;
             result = max(result, l);
         }
         return result;
