@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3018%20%2F%203018-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3022%20%2F%203022-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -253,6 +253,7 @@
 2937 | [Make Three Strings Equal](https://leetcode.com/problems/make-three-strings-equal/)| [C++](./C++/make-three-strings-equal.cpp) [Python](./Python/make-three-strings-equal.py)| _O(n)_ | _O(1)_ | Easy | | String |
 2942 | [Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/)| [C++](./C++/find-words-containing-character.cpp) [Python](./Python/find-words-containing-character.py)| _O(n * l)_ | _O(1)_ | Easy | | String |
 2967 | [Minimum Cost to Make Array Equalindromic](https://leetcode.com/problems/minimum-cost-to-make-array-equalindromic/)| [C++](./C++/minimum-cost-to-make-array-equalindromic.cpp) [Python](./Python/minimum-cost-to-make-array-equalindromic.py)| _O(n + logr)_ | _O(logr)_ | Medium | variant of [Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome/) | Sort, Quick Select, Math, String |
+3019 | [Number of Changing Keys](https://leetcode.com/problems/number-of-changing-keys/)| [C++](./C++/number-of-changing-keys.cpp) [Python](./Python/number-of-changing-keys.py)| _O(n)_ | _O(1)_ | Easy | | String |
 
 <br/>
 <div align="right">
@@ -450,6 +451,7 @@
 2983 | [Palindrome Rearrangement Queries](https://leetcode.com/problems/palindrome-rearrangement-queries/) | [C++](./C++/palindrome-rearrangement-queries.cpp) [Python](./Python/palindrome-rearrangement-queries.py) | _O(26 + d * n + d * q)_ | _O(26 + d * n)_ | Hard || Prefix Sum, Freq Table
 2996 | [Smallest Missing Integer Greater Than Sequential Prefix Sum](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/) | [C++](./C++/smallest-missing-integer-greater-than-sequential-prefix-sum.cpp) [Python](./Python/smallest-missing-integer-greater-than-sequential-prefix-sum.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
 3005 | [Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/) | [C++](./C++/count-elements-with-maximum-frequency.cpp) [Python](./Python/count-elements-with-maximum-frequency.py) | _O(n)_ | _O(n)_ | Easy || Freq Table
+3020 | [Find the Maximum Number of Elements in Subset](https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/) | [C++](./C++/find-the-maximum-number-of-elements-in-subset.cpp) [Python](./Python/find-the-maximum-number-of-elements-in-subset.py) | _O(9 * n)_ | _O(n)_ | Medium || Freq Table
 
 <br/>
 <div align="right">
@@ -552,6 +554,7 @@
 2999 | [Count the Number of Powerful Integers](https://leetcode.com/problems/count-the-number-of-powerful-integers/) | [C++](./C++/count-the-number-of-powerful-integers.cpp) [Python](./Python/count-the-number-of-powerful-integers.py) | _O(logf)_ | _O(1)_ | Hard || Math, Combinatorics |
 3001 | [Minimum Moves to Capture The Queen](https://leetcode.com/problems/minimum-moves-to-capture-the-queen/) | [C++](./C++/minimum-moves-to-capture-the-queen.cpp) [Python](./Python/minimum-moves-to-capture-the-queen.py) | _O(1)_ | _O(1)_ | Medium || Math |
 3007 | [Maximum Number That Sum of the Prices Is Less Than or Equal to K](https://leetcode.com/problems/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k/) | [C++](./C++/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k.cpp) [Python](./Python/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k.py) | _O(max(logk, x) * log((logk) / x))_ | _O((logk) / x)_ | Medium || Bit Manipulation, Binary Search, Combinatorics |
+3021 | [Alice and Bob Playing Flower Game](https://leetcode.com/problems/alice-and-bob-playing-flower-game/) | [C++](./C++/alice-and-bob-playing-flower-game.cpp) [Python](./Python/alice-and-bob-playing-flower-game.py) | _O(1)_ | _O(1)_ | Medium || Combinatorics |
 
 <br/>
 <div align="right">
@@ -1043,6 +1046,7 @@
 3012 | [Minimize Length of Array Using Operations](https://leetcode.com/problems/minimize-length-of-array-using-operations/) | [C++](./C++/minimize-length-of-array-using-operations.cpp) [Python](./Python/minimize-length-of-array-using-operations.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 3014 | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/) | [C++](./C++/minimum-number-of-pushes-to-type-word-i.cpp) [Python](./Python/minimum-number-of-pushes-to-type-word-i.py) | _O(4)_ | _O(1)_ | Easy | | Freq Table, Greedy
 3016 | [Minimum Number of Pushes to Type Word II](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/) | [C++](./C++/minimum-number-of-pushes-to-type-word-ii.cpp) [Python](./Python/minimum-number-of-pushes-to-type-word-ii.py) | _O(n)_ | _O(26)_ | Medium | | Freq Table, Greedy
+3022 | [Minimize OR of Remaining Elements Using Operations](https://leetcode.com/problems/minimize-or-of-remaining-elements-using-operations/) | [C++](./C++/minimize-or-of-remaining-elements-using-operations.cpp) [Python](./Python/minimize-or-of-remaining-elements-using-operations.py) | _O(nlogr)_ | _O(1)_ | Hard | | Bitmasks, Greedy
 
 <br/>
 <div align="right">
