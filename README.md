@@ -451,7 +451,6 @@
 2983 | [Palindrome Rearrangement Queries](https://leetcode.com/problems/palindrome-rearrangement-queries/) | [C++](./C++/palindrome-rearrangement-queries.cpp) [Python](./Python/palindrome-rearrangement-queries.py) | _O(26 + d * n + d * q)_ | _O(26 + d * n)_ | Hard || Prefix Sum, Freq Table
 2996 | [Smallest Missing Integer Greater Than Sequential Prefix Sum](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/) | [C++](./C++/smallest-missing-integer-greater-than-sequential-prefix-sum.cpp) [Python](./Python/smallest-missing-integer-greater-than-sequential-prefix-sum.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
 3005 | [Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/) | [C++](./C++/count-elements-with-maximum-frequency.cpp) [Python](./Python/count-elements-with-maximum-frequency.py) | _O(n)_ | _O(n)_ | Easy || Freq Table
-3020 | [Find the Maximum Number of Elements in Subset](https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/) | [C++](./C++/find-the-maximum-number-of-elements-in-subset.cpp) [Python](./Python/find-the-maximum-number-of-elements-in-subset.py) | _O(n)_ | _O(n)_ | Medium || Freq Table
 
 <br/>
 <div align="right">
@@ -915,6 +914,7 @@
 2992 | [Number of Self-Divisible Permutations](https://leetcode.com/problems/number-of-self-divisible-permutations/) | [C++](./C++/number-of-self-divisible-permutations.cpp) [Python](./Python/number-of-self-divisible-permutations.py) | _O(n * 2^n)_ | _O(2^n)_ | Medium | 🔒 | Bitmasks, DP
 2998 | [Minimum Number of Operations to Make X and Y Equal](https://leetcode.com/problems/minimum-number-of-operations-to-make-x-and-y-equal/) | [C++](./C++/minimum-number-of-operations-to-make-x-and-y-equal.cpp) [Python](./Python/minimum-number-of-operations-to-make-x-and-y-equal.py) | _O(x)_ | _O(x)_ | Medium | | Memoization, BFS
 3018 | [Maximum Number of Removal Queries That Can Be Processed I](https://leetcode.com/problems/maximum-number-of-removal-queries-that-can-be-processed-i/) | [C++](./C++/maximum-number-of-removal-queries-that-can-be-processed-i.cpp) [Python](./Python/maximum-number-of-removal-queries-that-can-be-processed-i.py) | _O(n^2)_ | _O(n^2)_ | Hard | 🔒 | DP
+3020 | [Find the Maximum Number of Elements in Subset](https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/) | [C++](./C++/find-the-maximum-number-of-elements-in-subset.cpp) [Python](./Python/find-the-maximum-number-of-elements-in-subset.py) | _O(n)_ | _O(n)_ | Medium || Freq Table, DP
 
 <br/>
 <div align="right">
