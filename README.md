@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3022%20%2F%203022-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3031%20%2F%203031-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -189,6 +189,9 @@
 3010 | [Divide an Array Into Subarrays With Minimum Cost I](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/) | [C++](./C++/divide-an-array-into-subarrays-with-minimum-cost-i.cpp) [Python](./Python/divide-an-array-into-subarrays-with-minimum-cost-i.py) | _O(n)_ | _O(1)_ | Easy | | Array, Quick Select
 3015 | [Count the Number of Houses at a Certain Distance I](https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-i/) | [C++](./C++/count-the-number-of-houses-at-a-certain-distance-i.cpp) [Python](./Python/count-the-number-of-houses-at-a-certain-distance-i.py) | _O(n)_   | _O(n)_        | Medium         | | Math, Prefix Sum, Difference Array
 3017 | [Count the Number of Houses at a Certain Distance II](https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-ii/) | [C++](./C++/count-the-number-of-houses-at-a-certain-distance-ii.cpp) [Python](./Python/count-the-number-of-houses-at-a-certain-distance-ii.py) | _O(n)_   | _O(1)_        | Hard         | | Math, Prefix Sum, Difference Array
+3026 | [Maximum Good Subarray Sum](https://leetcode.com/problems/maximum-good-subarray-sum/) | [C++](./C++/maximum-good-subarray-sum.cpp) [Python](./Python/maximum-good-subarray-sum.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
+3028 | [Ant on the Boundary](https://leetcode.com/problems/ant-on-the-boundary/) | [C++](./C++/ant-on-the-boundary.cpp) [Python](./Python/ant-on-the-boundary.py) | _O(n)_ | _O(1)_ | Easy | | Prefix Sum
+3030 | [Find the Grid of Region Average](https://leetcode.com/problems/find-the-grid-of-region-average/) | [C++](./C++/find-the-grid-of-region-average.cpp) [Python](./Python/find-the-grid-of-region-average.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Array
 
 <br/>
 <div align="right">
@@ -254,7 +257,9 @@
 2942 | [Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/)| [C++](./C++/find-words-containing-character.cpp) [Python](./Python/find-words-containing-character.py)| _O(n * l)_ | _O(1)_ | Easy | | String |
 2967 | [Minimum Cost to Make Array Equalindromic](https://leetcode.com/problems/minimum-cost-to-make-array-equalindromic/)| [C++](./C++/minimum-cost-to-make-array-equalindromic.cpp) [Python](./Python/minimum-cost-to-make-array-equalindromic.py)| _O(n + logr)_ | _O(logr)_ | Medium | variant of [Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome/) | Sort, Quick Select, Math, String |
 3019 | [Number of Changing Keys](https://leetcode.com/problems/number-of-changing-keys/)| [C++](./C++/number-of-changing-keys.cpp) [Python](./Python/number-of-changing-keys.py)| _O(n)_ | _O(1)_ | Easy | | String |
-
+3023 | [Find Pattern in Infinite Stream I](https://leetcode.com/problems/find-pattern-in-infinite-stream-i/)| [C++](./C++/find-pattern-in-infinite-stream-i.cpp) [Python](./Python/find-pattern-in-infinite-stream-i.py)| _O(p + n)_ | _O(p)_ | Medium | 🔒 | String, `KMP Algorithm` |
+3029 | [Minimum Time to Revert Word to Initial State I](https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-i/)| [C++](./C++/minimum-time-to-revert-word-to-initial-state-i.cpp) [Python](./Python/minimum-time-to-revert-word-to-initial-state-i.py)| _O(n)_ | _O(n)_ | Medium | | String, `Z-Function`, Brute Force |
+3031 | [Minimum Time to Revert Word to Initial State II](https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-ii/)| [C++](./C++/minimum-time-to-revert-word-to-initial-state-ii.cpp) [Python](./Python/minimum-time-to-revert-word-to-initial-state-ii.py)| _O(n)_ | _O(n)_ | Hard | | String, `Z-Function` |
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -554,6 +559,7 @@
 3001 | [Minimum Moves to Capture The Queen](https://leetcode.com/problems/minimum-moves-to-capture-the-queen/) | [C++](./C++/minimum-moves-to-capture-the-queen.cpp) [Python](./Python/minimum-moves-to-capture-the-queen.py) | _O(1)_ | _O(1)_ | Medium || Math |
 3007 | [Maximum Number That Sum of the Prices Is Less Than or Equal to K](https://leetcode.com/problems/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k/) | [C++](./C++/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k.cpp) [Python](./Python/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k.py) | _O(max(logk, x) * log((logk) / x))_ | _O((logk) / x)_ | Medium || Bit Manipulation, Binary Search, Combinatorics |
 3021 | [Alice and Bob Playing Flower Game](https://leetcode.com/problems/alice-and-bob-playing-flower-game/) | [C++](./C++/alice-and-bob-playing-flower-game.cpp) [Python](./Python/alice-and-bob-playing-flower-game.py) | _O(1)_ | _O(1)_ | Medium || Combinatorics |
+3024 | [Type of Triangle II](https://leetcode.com/problems/type-of-triangle-ii/) | [C++](./C++/type-of-triangle-ii.cpp) [Python](./Python/type-of-triangle-ii.py) | _O(1)_ | _O(1)_ | Easy || Math |
 
 <br/>
 <div align="right">
@@ -588,7 +594,8 @@
 2948 | [Make Lexicographically Smallest Array by Swapping Elements](https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/) | [C++](./C++/make-lexicographically-smallest-array-by-swapping-elements.cpp) [Python](./Python/make-lexicographically-smallest-array-by-swapping-elements.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort
 2974 | [Minimum Number Game](https://leetcode.com/problems/minimum-number-game/) | [C++](./C++/minimum-number-game.cpp) [Python](./Python/minimum-number-game.py) | _O(nlogn)_   | _O(1)_        | Easy         | | Sort
 3011 | [Find if Array Can Be Sorted](https://leetcode.com/problems/find-if-array-can-be-sorted/) | [C++](./C++/find-if-array-can-be-sorted.cpp) [Python](./Python/find-if-array-can-be-sorted.py) | _O(n)_   | _O(1)_        | Medium         | | Sort
-
+3025 | [Find the Number of Ways to Place People I](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/) | [C++](./C++/find-the-number-of-ways-to-place-people-i.cpp) [Python](./Python/find-the-number-of-ways-to-place-people-i.py) | _O(n^2)_   | _O(1)_        | Medium         | | Sort, Array
+3027 | [Find the Number of Ways to Place People II](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-ii/) | [C++](./C++/find-the-number-of-ways-to-place-people-ii.cpp) [Python](./Python/find-the-number-of-ways-to-place-people-ii.py) | _O(n^2)_   | _O(1)_        | Hard         | | Sort, Array
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
