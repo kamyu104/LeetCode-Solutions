@@ -32,7 +32,7 @@ public:
                 ++j;
             }
             if (j == size(pattern) - 1) {
-                return (i - j);
+                return i - j;
             }
         }
         return -1;
