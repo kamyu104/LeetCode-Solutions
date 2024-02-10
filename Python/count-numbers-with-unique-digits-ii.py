@@ -22,11 +22,16 @@ class Solution(object):
             return 9*result
 
         def count(x):
-            digits = map(int, str(x))
-            result = count2(len(digits)-1)
+            n = base = 1
+            while x//(base*10):
+                base *= 10
+                n += 1
+            result = count2(n-1)
             lookup = 0
-            cnt = reduce(lambda accu, i: accu*(9-i), xrange(len(digits)-1), 1)
-            for i, d in enumerate(digits):
+            cnt = reduce(lambda accu, i: accu*(9-i), xrange(n-1), 1)
+            for i in xrange(n):
+                d = (x//base)%10
+                base //= 10
                 mask = lookup&(((1<<d)-1)-int(i == 0))
                 result += ((d-int(i == 0))-popcount(mask))*cnt
                 cnt //= 9-i
