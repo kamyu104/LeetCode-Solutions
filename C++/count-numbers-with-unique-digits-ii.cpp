@@ -1,5 +1,5 @@
 // Time:  O(logb)
-// Space: O(logb)
+// Space: O(1)
 
 // hash table, bitmask, combinatorics
 class Solution {
