@@ -1,8 +1,47 @@
 # Time:  O(logb)
-# Space: O(logb)
+# Space: O(1)
 
 # hash table, bitmasks, combinatorics
 class Solution(object):
+    def numberCount(self, a, b):
+        """
+        :type a: int
+        :type b: int
+        :rtype: int
+        """
+        def popcount(x):
+            return bin(x).count('1')
+
+        def count2(n):
+            if n == 0:
+                return 0
+            result = cnt = 1
+            for i in xrange(n-1):
+                cnt *= 9-i
+                result += cnt
+            return 9*result
+
+        def count(x):
+            digits = map(int, str(x))
+            result = count2(len(digits)-1)
+            lookup = 0
+            cnt = reduce(lambda accu, i: accu*(9-i), xrange(len(digits)-1), 1)
+            for i, d in enumerate(digits):
+                mask = lookup&(((1<<d)-1)-int(i == 0))
+                result += ((d-int(i == 0))-popcount(mask))*cnt
+                cnt //= 9-i
+                if lookup&(1<<d):
+                    break
+                lookup |= 1<<d
+            return result
+
+        return count(b+1)-count(a)
+
+
+# Time:  O(logb)
+# Space: O(logb)
+# hash table, bitmasks, combinatorics
+class Solution2(object):
     def numberCount(self, a, b):
         """
         :type a: int
@@ -36,7 +75,7 @@ class Solution(object):
 # Time:  O(blogb)
 # Space: O(1)
 # hash table, bitmasks
-class Solution2(object):
+class Solution3(object):
     def numberCount(self, a, b):
         """
         :type a: int
@@ -58,7 +97,7 @@ class Solution2(object):
 # Time:  O(blogb)
 # Space: O(logb)
 # hash table
-class Solution3(object):
+class Solution4(object):
     def numberCount(self, a, b):
         """
         :type a: int
