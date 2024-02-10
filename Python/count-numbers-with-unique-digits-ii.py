@@ -79,7 +79,7 @@ class Solution2(object):
 
 # Time:  O(blogb)
 # Space: O(1)
-# hash table, bitmasks
+# brute force, hash table, bitmasks
 class Solution3(object):
     def numberCount(self, a, b):
         """
@@ -101,7 +101,7 @@ class Solution3(object):
 
 # Time:  O(blogb)
 # Space: O(logb)
-# hash table
+# brute force, hash table
 class Solution4(object):
     def numberCount(self, a, b):
         """
