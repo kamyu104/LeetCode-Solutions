@@ -21,7 +21,6 @@ public:
             int n = 1, base = 1;
             for (; x / (base * 10); base *= 10, ++n);
             int result = count2(n - 1);
-            
             int lookup = 0;
             int cnt = 1;
             for (int i = 0; i < n - 1; ++i) {
