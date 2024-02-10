@@ -86,7 +86,7 @@ public:
 
 // Time:  O(blogb)
 // Space: O(1)
-// hash table, bitmask
+// brute force, hash table, bitmask
 class Solution3 {
 public:
     int numberCount(int a, int b) {
