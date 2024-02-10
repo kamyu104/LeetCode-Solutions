@@ -10,8 +10,8 @@ class Solution(object):
         if n == 0:
             return 1
         result = cnt = 1
-        for k in xrange(n-1):
-            cnt *= 9-k
+        for i in xrange(n-1):
+            cnt *= 9-i
             result += cnt
         return 1+9*result
 
