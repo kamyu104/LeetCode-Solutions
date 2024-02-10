@@ -560,7 +560,7 @@
 3007 | [Maximum Number That Sum of the Prices Is Less Than or Equal to K](https://leetcode.com/problems/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k/) | [C++](./C++/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k.cpp) [Python](./Python/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k.py) | _O(max(logk, x) * log((logk) / x))_ | _O((logk) / x)_ | Medium || Bit Manipulation, Binary Search, Combinatorics |
 3021 | [Alice and Bob Playing Flower Game](https://leetcode.com/problems/alice-and-bob-playing-flower-game/) | [C++](./C++/alice-and-bob-playing-flower-game.cpp) [Python](./Python/alice-and-bob-playing-flower-game.py) | _O(1)_ | _O(1)_ | Medium || Combinatorics |
 3024 | [Type of Triangle II](https://leetcode.com/problems/type-of-triangle-ii/) | [C++](./C++/type-of-triangle-ii.cpp) [Python](./Python/type-of-triangle-ii.py) | _O(1)_ | _O(1)_ | Easy || Math |
-3032 | [Count Numbers With Unique Digits II](https://leetcode.com/problems/count-numbers-with-unique-digits-ii/) | [C++](./C++/count-numbers-with-unique-digits-ii.cpp) [Python](./Python/count-numbers-with-unique-digits-ii.py) | _O(logb)_ | _O(logb)_ | Easy |🔒| Hash Table, Combinatorics
+3032 | [Count Numbers With Unique Digits II](https://leetcode.com/problems/count-numbers-with-unique-digits-ii/) | [C++](./C++/count-numbers-with-unique-digits-ii.cpp) [Python](./Python/count-numbers-with-unique-digits-ii.py) | _O(logb)_ | _O(logb)_ | Easy |🔒| Hash Table, Bitmasks, Combinatorics
 
 <br/>
 <div align="right">
