@@ -1,7 +1,7 @@
 # Time:  O(logb)
 # Space: O(logb)
 
-# combinatorics
+# hash table, bitmasks, combinatorics
 class Solution(object):
     def numberCount(self, a, b):
         """
@@ -14,13 +14,17 @@ class Solution(object):
             while len(fact) <= n:  # lazy initialization
                 fact.append(fact[-1]*len(fact))
             return fact[n]//fact[n-k]
+        
+        def popcount(x):
+            return bin(x).count('1')
 
         def count(x):
             digits = map(int, str(x))
             result = 9*sum(nPr(9, i) for i in xrange(len(digits)-1))
             lookup = 0
             for i, d in enumerate(digits):
-                result += sum(lookup&(1<<j) == 0 for j in xrange(int(i == 0), d))*nPr(10-(i+1), len(digits)-(i+1))
+                mask = lookup&(((1<<d)-1)-int(i == 0))
+                result += ((d-int(i == 0))-popcount(mask))*nPr(10-(i+1), len(digits)-(i+1))
                 if lookup&(1<<d):
                     break
                 lookup |= 1<<d
@@ -31,7 +35,7 @@ class Solution(object):
 
 # Time:  O(blogb)
 # Space: O(1)
-# hash table
+# hash table, bitmasks
 class Solution2(object):
     def numberCount(self, a, b):
         """
