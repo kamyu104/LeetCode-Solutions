@@ -18,25 +18,24 @@ public:
         };
 
         const auto& count = [&](int x) {
-            vector<int> digits;
-            for (; x; x /= 10) {
-                digits.emplace_back(x % 10);
-            }
-            reverse(begin(digits), end(digits));
-            int result = count2(size(digits) - 1);
+            int n = 1, base = 1;
+            for (; x / (base * 10); base *= 10, ++n);
+            int result = count2(n - 1);
+            
             int lookup = 0;
             int cnt = 1;
-            for (int i = 0; i < size(digits) - 1; ++i) {
+            for (int i = 0; i < n - 1; ++i) {
                 cnt *= 9 - i;
             }
-            for (int i = 0; i < size(digits); ++i) {
-                const int mask = lookup & (((1 << digits[i]) - 1) - (i == 0 ? 1 : 0));
-                result += ((digits[i] - (i == 0 ? 1 : 0)) - __builtin_popcount(mask)) * cnt;
+            for (int i = 0; i < n; ++i, base /= 10) {
+                const int d = (x / base) % 10;
+                const int mask = lookup & (((1 << d) - 1) - (i == 0 ? 1 : 0));
+                result += ((d - (i == 0 ? 1 : 0)) - __builtin_popcount(mask)) * cnt;
                 cnt /= 9 - i;
-                if (lookup & (1 << digits[i])) {
+                if (lookup & (1 << d)) {
                     break;
                 }
-                lookup |= 1 << digits[i];
+                lookup |= 1 << d;
             }
             return result;
         };
