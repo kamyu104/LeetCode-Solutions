@@ -36,7 +36,7 @@ private:
                 result.emplace_back(d);
             }
         }
-        if (i > 2) {
+        if (i != 1) {
             result.emplace_back(i);
         }
         return result;
