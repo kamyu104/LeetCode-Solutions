@@ -262,7 +262,7 @@
 3029 | [Minimum Time to Revert Word to Initial State I](https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-i/)| [C++](./C++/minimum-time-to-revert-word-to-initial-state-i.cpp) [Python](./Python/minimum-time-to-revert-word-to-initial-state-i.py)| _O(n)_ | _O(n)_ | Medium | | String, `Z-Function`, Brute Force |
 3031 | [Minimum Time to Revert Word to Initial State II](https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-ii/)| [C++](./C++/minimum-time-to-revert-word-to-initial-state-ii.cpp) [Python](./Python/minimum-time-to-revert-word-to-initial-state-ii.py)| _O(n)_ | _O(n)_ | Hard | | String, `Z-Function` |
 3034 | [Number of Subarrays That Match a Pattern I](https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-i/)| [C++](./C++/number-of-subarrays-that-match-a-pattern-i.cpp) [Python](./Python/number-of-subarrays-that-match-a-pattern-i.py)| _O(n)_ | _O(m)_ | Medium | | Brute Force, String, `KMP Algorithm` |
-3036 | [Number of Subarrays That Match a Pattern I](https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-ii/)| [C++](./C++/number-of-subarrays-that-match-a-pattern-ii.cpp) [Python](./Python/number-of-subarrays-that-match-a-pattern-ii.py)| _O(n)_ | _O(m)_ | Hard | | String, `KMP Algorithm` |
+3036 | [Number of Subarrays That Match a Pattern II](https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-ii/)| [C++](./C++/number-of-subarrays-that-match-a-pattern-ii.cpp) [Python](./Python/number-of-subarrays-that-match-a-pattern-ii.py)| _O(n)_ | _O(m)_ | Hard | | String, `KMP Algorithm` |
 
 <br/>
 <div align="right">
