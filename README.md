@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3032%20%2F%203032-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3036%20%2F%203036-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -192,6 +192,7 @@
 3026 | [Maximum Good Subarray Sum](https://leetcode.com/problems/maximum-good-subarray-sum/) | [C++](./C++/maximum-good-subarray-sum.cpp) [Python](./Python/maximum-good-subarray-sum.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
 3028 | [Ant on the Boundary](https://leetcode.com/problems/ant-on-the-boundary/) | [C++](./C++/ant-on-the-boundary.cpp) [Python](./Python/ant-on-the-boundary.py) | _O(n)_ | _O(1)_ | Easy | | Prefix Sum
 3030 | [Find the Grid of Region Average](https://leetcode.com/problems/find-the-grid-of-region-average/) | [C++](./C++/find-the-grid-of-region-average.cpp) [Python](./Python/find-the-grid-of-region-average.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Array
+3033 | [Modify the Matrix](https://leetcode.com/problems/modify-the-matrix/) | [C++](./C++/modify-the-matrix.cpp) [Python](./Python/modify-the-matrix.py) | _O(m * n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -260,6 +261,9 @@
 3023 | [Find Pattern in Infinite Stream I](https://leetcode.com/problems/find-pattern-in-infinite-stream-i/)| [C++](./C++/find-pattern-in-infinite-stream-i.cpp) [Python](./Python/find-pattern-in-infinite-stream-i.py)| _O(p + n)_ | _O(p)_ | Medium | 🔒 | String, `KMP Algorithm` |
 3029 | [Minimum Time to Revert Word to Initial State I](https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-i/)| [C++](./C++/minimum-time-to-revert-word-to-initial-state-i.cpp) [Python](./Python/minimum-time-to-revert-word-to-initial-state-i.py)| _O(n)_ | _O(n)_ | Medium | | String, `Z-Function`, Brute Force |
 3031 | [Minimum Time to Revert Word to Initial State II](https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-ii/)| [C++](./C++/minimum-time-to-revert-word-to-initial-state-ii.cpp) [Python](./Python/minimum-time-to-revert-word-to-initial-state-ii.py)| _O(n)_ | _O(n)_ | Hard | | String, `Z-Function` |
+3034 | [Number of Subarrays That Match a Pattern I](https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-i/)| [C++](./C++/number-of-subarrays-that-match-a-pattern-i.cpp) [Python](./Python/number-of-subarrays-that-match-a-pattern-i.py)| _O(n)_ | _O(m)_ | Medium | | Brute Force, String, `KMP Algorithm` |
+3036 | [Number of Subarrays That Match a Pattern I](https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-ii/)| [C++](./C++/number-of-subarrays-that-match-a-pattern-ii.cpp) [Python](./Python/number-of-subarrays-that-match-a-pattern-ii.py)| _O(n)_ | _O(m)_ | Hard | | String, `KMP Algorithm` |
+
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -1055,6 +1059,7 @@
 3014 | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/) | [C++](./C++/minimum-number-of-pushes-to-type-word-i.cpp) [Python](./Python/minimum-number-of-pushes-to-type-word-i.py) | _O(4)_ | _O(1)_ | Easy | | Freq Table, Greedy
 3016 | [Minimum Number of Pushes to Type Word II](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/) | [C++](./C++/minimum-number-of-pushes-to-type-word-ii.cpp) [Python](./Python/minimum-number-of-pushes-to-type-word-ii.py) | _O(n)_ | _O(26)_ | Medium | | Freq Table, Greedy
 3022 | [Minimize OR of Remaining Elements Using Operations](https://leetcode.com/problems/minimize-or-of-remaining-elements-using-operations/) | [C++](./C++/minimize-or-of-remaining-elements-using-operations.cpp) [Python](./Python/minimize-or-of-remaining-elements-using-operations.py) | _O(nlogr)_ | _O(1)_ | Hard | | Bitmasks, Greedy
+3035 | [Maximum Palindromes After Operations](https://leetcode.com/problems/maximum-palindromes-after-operations/) | [C++](./C++/maximum-palindromes-after-operations.cpp) [Python](./Python/maximum-palindromes-after-operations.py) | _O(n * l + nlogn)_ | _O(n)_ | Medium | | Freq Table, Greedy, Sort
 
 <br/>
 <div align="right">
