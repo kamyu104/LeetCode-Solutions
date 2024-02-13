@@ -34,6 +34,7 @@ class Solution(object):
 
         return sum(1 for _ in KMP((cmp(nums[i+1], nums[i]) for i in xrange(len(nums)-1)), pattern))
 
+
 # Time:  O(n * m)
 # Space: O(1)
 # brute force
