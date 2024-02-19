@@ -9,8 +9,8 @@ class Solution(object):
         :rtype: int
         """
         nums.sort()
-        dp = [1]*2
         result = 1
+        dp = [1]*2
         for i in xrange(1, len(nums)):
             if nums[i] == nums[i-1]:
                 dp[1] = dp[0]+1
