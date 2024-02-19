@@ -10,7 +10,7 @@ class Solution(object):
         """
         nums.sort()
         result = 1
-        dp = [1]*2  # dp[i]: the maximum length of a sequence ending with x+i, where x is the last visited value
+        dp = [1]*2  # dp[i]: the maximum length of a consecutive sequence ending with x+i, where x is the last visited value
         for i in xrange(1, len(nums)):
             if nums[i] == nums[i-1]:
                 dp[1] = dp[0]+1
