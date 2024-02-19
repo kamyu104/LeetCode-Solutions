@@ -5,7 +5,7 @@
 class Solution {
 public:
     int maxOperations(vector<int>& nums) {
-        function<int (int, int, int, vector<vector<int>>&)> memoization = [&](int left, int right, int target, vector<vector<int>>& lookup) {
+        const function<int (int, int, int, vector<vector<int>>&)> memoization = [&](int left, int right, int target, vector<vector<int>>& lookup) {
             if (!(right - left + 1 >= 2)) {
                 return 0;
             }
