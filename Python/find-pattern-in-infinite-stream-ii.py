@@ -1,5 +1,5 @@
-# Time:  O(n)
-# Space: O(1)
+# Time:  O(p + n)
+# Space: O(p)
 
 # Definition for an infinite stream.
 class InfiniteStream:
