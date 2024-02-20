@@ -466,7 +466,7 @@
 2996 | [Smallest Missing Integer Greater Than Sequential Prefix Sum](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/) | [C++](./C++/smallest-missing-integer-greater-than-sequential-prefix-sum.cpp) [Python](./Python/smallest-missing-integer-greater-than-sequential-prefix-sum.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
 3005 | [Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/) | [C++](./C++/count-elements-with-maximum-frequency.cpp) [Python](./Python/count-elements-with-maximum-frequency.py) | _O(n)_ | _O(n)_ | Easy || Freq Table
 3039 | [Apply Operations to Make String Empty](https://leetcode.com/problems/apply-operations-to-make-string-empty/) | [C++](./C++/apply-operations-to-make-string-empty.cpp) [Python](./Python/apply-operations-to-make-string-empty.py) | _O(n)_ | _O(1)_ | Medium || Freq Table
-3044 | [Most Frequent Prime](https://leetcode.com/problems/apply-operations-to-make-string-empty/) | [C++](./C++/apply-operations-to-make-string-empty.cpp) [Python](./Python/apply-operations-to-make-string-empty.py) | precompute: _O(10^MAX_N_M)_<br>runtime: _O(n * m * (n + m))_  | _O(10^MAX_N_M + n * m * (n + m))_ | Medium || Number Theory, `Linear Sieve of Eratosthenes`
+3044 | [Most Frequent Prime](https://leetcode.com/problems/apply-operations-to-make-string-empty/) | [C++](./C++/apply-operations-to-make-string-empty.cpp) [Python](./Python/apply-operations-to-make-string-empty.py) | precompute: _O(10^MAX_N_M)_<br>runtime: _O(n * m * (n + m))_  | _O(10^MAX_N_M + n * m * (n + m))_ | Medium || Number Theory, `Linear Sieve of Eratosthenes`, Freq Table
 
 <br/>
 <div align="right">
