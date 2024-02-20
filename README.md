@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3036%20%2F%203036-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3045%20%2F%203045-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -193,6 +193,7 @@
 3028 | [Ant on the Boundary](https://leetcode.com/problems/ant-on-the-boundary/) | [C++](./C++/ant-on-the-boundary.cpp) [Python](./Python/ant-on-the-boundary.py) | _O(n)_ | _O(1)_ | Easy | | Prefix Sum
 3030 | [Find the Grid of Region Average](https://leetcode.com/problems/find-the-grid-of-region-average/) | [C++](./C++/find-the-grid-of-region-average.cpp) [Python](./Python/find-the-grid-of-region-average.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Array
 3033 | [Modify the Matrix](https://leetcode.com/problems/modify-the-matrix/) | [C++](./C++/modify-the-matrix.cpp) [Python](./Python/modify-the-matrix.py) | _O(m * n)_ | _O(1)_ | Easy | | Array
+3038 | [Maximum Number of Operations With the Same Score I](https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/) | [C++](./C++/maximum-number-of-operations-with-the-same-score-i.cpp) [Python](./Python/maximum-number-of-operations-with-the-same-score-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -263,6 +264,10 @@
 3031 | [Minimum Time to Revert Word to Initial State II](https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-ii/)| [C++](./C++/minimum-time-to-revert-word-to-initial-state-ii.cpp) [Python](./Python/minimum-time-to-revert-word-to-initial-state-ii.py)| _O(n)_ | _O(n)_ | Hard | | String, `Z-Function` |
 3034 | [Number of Subarrays That Match a Pattern I](https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-i/)| [C++](./C++/number-of-subarrays-that-match-a-pattern-i.cpp) [Python](./Python/number-of-subarrays-that-match-a-pattern-i.py)| _O(n)_ | _O(m)_ | Medium | | Brute Force, String, `KMP Algorithm` |
 3036 | [Number of Subarrays That Match a Pattern II](https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-ii/)| [C++](./C++/number-of-subarrays-that-match-a-pattern-ii.cpp) [Python](./Python/number-of-subarrays-that-match-a-pattern-ii.py)| _O(n)_ | _O(m)_ | Hard | | String, `KMP Algorithm` |
+3037 | [Find Pattern in Infinite Stream II](https://leetcode.com/problems/find-pattern-in-infinite-stream-ii/)| [C++](./C++/find-pattern-in-infinite-stream-ii.cpp) [Python](./Python/find-pattern-in-infinite-stream-ii.py)| _O(p + n)_ | _O(p)_ | Hard | 🔒 | String, `KMP Algorithm` |
+3042 | [Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/)| [C++](./C++/count-prefix-and-suffix-pairs-i.cpp) [Python](./Python/count-prefix-and-suffix-pairs-i.py)| _O(n * l)_ | _O(t)_ | Easy | | Trie, Brute Force |
+3043 | [Find the Length of the Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/)| [C++](./C++/find-the-length-of-the-longest-common-prefix.cpp) [Python](./Python/find-the-length-of-the-longest-common-prefix.py)| _O((n + m) * l)_ | _O(t)_ | Medium | | Trie, Hash Table |
+3045 | [Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/)| [C++](./C++/count-prefix-and-suffix-pairs-ii.cpp) [Python](./Python/count-prefix-and-suffix-pairs-ii.py)| _O(n * l)_ | _O(t)_ | Hard | | Trie |
 
 <br/>
 <div align="right">
@@ -460,6 +465,8 @@
 2983 | [Palindrome Rearrangement Queries](https://leetcode.com/problems/palindrome-rearrangement-queries/) | [C++](./C++/palindrome-rearrangement-queries.cpp) [Python](./Python/palindrome-rearrangement-queries.py) | _O(26 + d * n + d * q)_ | _O(26 + d * n)_ | Hard || Prefix Sum, Freq Table
 2996 | [Smallest Missing Integer Greater Than Sequential Prefix Sum](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/) | [C++](./C++/smallest-missing-integer-greater-than-sequential-prefix-sum.cpp) [Python](./Python/smallest-missing-integer-greater-than-sequential-prefix-sum.py) | _O(n)_ | _O(n)_ | Easy || Hash Table
 3005 | [Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/) | [C++](./C++/count-elements-with-maximum-frequency.cpp) [Python](./Python/count-elements-with-maximum-frequency.py) | _O(n)_ | _O(n)_ | Easy || Freq Table
+3039 | [Apply Operations to Make String Empty](https://leetcode.com/problems/apply-operations-to-make-string-empty/) | [C++](./C++/apply-operations-to-make-string-empty.cpp) [Python](./Python/apply-operations-to-make-string-empty.py) | _O(n)_ | _O(1)_ | Medium || Freq Table
+3044 | [Most Frequent Prime](https://leetcode.com/problems/apply-operations-to-make-string-empty/) | [C++](./C++/apply-operations-to-make-string-empty.cpp) [Python](./Python/apply-operations-to-make-string-empty.py) | precompute: _O(10^MAX_N_M)_<br>runtime: _O(n * m * (n + m))_  | _O(10^MAX_N_M + n * m * (n + m))_ | Medium || Number Theory, `Linear Sieve of Eratosthenes`
 
 <br/>
 <div align="right">
@@ -927,6 +934,8 @@
 2998 | [Minimum Number of Operations to Make X and Y Equal](https://leetcode.com/problems/minimum-number-of-operations-to-make-x-and-y-equal/) | [C++](./C++/minimum-number-of-operations-to-make-x-and-y-equal.cpp) [Python](./Python/minimum-number-of-operations-to-make-x-and-y-equal.py) | _O(x)_ | _O(x)_ | Medium | | Memoization, BFS
 3018 | [Maximum Number of Removal Queries That Can Be Processed I](https://leetcode.com/problems/maximum-number-of-removal-queries-that-can-be-processed-i/) | [C++](./C++/maximum-number-of-removal-queries-that-can-be-processed-i.cpp) [Python](./Python/maximum-number-of-removal-queries-that-can-be-processed-i.py) | _O(n^2)_ | _O(n^2)_ | Hard | 🔒 | DP
 3020 | [Find the Maximum Number of Elements in Subset](https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/) | [C++](./C++/find-the-maximum-number-of-elements-in-subset.cpp) [Python](./Python/find-the-maximum-number-of-elements-in-subset.py) | _O(n)_ | _O(n)_ | Medium || Freq Table, DP
+3040 | [Maximum Number of Operations With the Same Score II](https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/) | [C++](./C++/maximum-number-of-operations-with-the-same-score-ii.cpp) [Python](./Python/maximum-number-of-operations-with-the-same-score-ii.py) | _O(n^2)_ | _O(n^2)_ | Medium | | Memoization
+3041 | [Maximize Consecutive Elements in an Array After Modification](https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/) | [C++](./C++/maximize-consecutive-elements-in-an-array-after-modification.cpp) [Python](./Python/maximize-consecutive-elements-in-an-array-after-modification.py) | _O(nlogn)_ | _O(1)_ | Hard | | Sort, DP
 
 <br/>
 <div align="right">
