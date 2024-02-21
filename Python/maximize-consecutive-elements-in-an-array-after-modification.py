@@ -51,7 +51,7 @@ class Solution2(object):
                 dp[nums[i]] = dp[nums[i]-1]+1
                 dp[nums[i]+1] = 1
             else:
-                dp[nums[i]+1] = dp[nums[i]] = 1
+                dp[nums[i]] = dp[nums[i]+1] = 1
         return max(dp.itervalues())
 
 
