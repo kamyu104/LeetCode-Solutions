@@ -33,7 +33,6 @@ class Solution2 {
 public:
     int maxSelectedElements(vector<int>& nums) {
         sort(begin(nums), end(nums));
-        int result = 1;
         unordered_map<int, int> dp;
         dp[nums[0]] = dp[nums[0] + 1] = 1;
         for (int i = 1; i < size(nums); ++i) {
@@ -48,9 +47,8 @@ public:
             } else {
                 dp[nums[i]] = dp[nums[i] + 1] = 1;
             }
-            result = max({result, dp[nums[i]], dp[nums[i] + 1]});
         }
-        return result;
+        return max_element(cbegin(dp), cend(dp), [](const auto& a, const auto& b) { return a.second < b.second; })->second;
     }
 };
 
@@ -61,13 +59,11 @@ class Solution3 {
 public:
     int maxSelectedElements(vector<int>& nums) {
         sort(begin(nums), end(nums));
-        int result = 1;
         unordered_map<int, int> dp;
         for (const auto& x : nums) {
             dp[x + 1] = dp[x] + 1;
             dp[x] = dp[x - 1] + 1;
-            result = max({result, dp[x + 1], dp[x]});
         }
-        return result;
+        return max_element(cbegin(dp), cend(dp), [](const auto& a, const auto& b) { return a.second < b.second; })->second;
     }
 };
