@@ -26,11 +26,38 @@ public:
     }
 };
 
+// Time:  O(nlogn)
+// Space: O(1)
+// sort, dp
+class Solution2 {
+public:
+    int maxSelectedElements(vector<int>& nums) {
+        sort(begin(nums), end(nums));
+        int result = 1;
+        unordered_map<int, int> dp;
+        dp[nums[0]] = dp[nums[0] + 1] = 1;
+        for (int i = 1; i < size(nums); ++i) {
+            if (nums[i] == nums[i - 1]) {
+                dp[nums[i] + 1] = dp[nums[i]] + 1;
+            } else if (nums[i] == nums[i - 1] + 1) {
+                dp[nums[i] + 1] = dp[nums[i]] + 1;
+                dp[nums[i]] = dp[nums[i] - 1] + 1;
+            } else if (nums[i] == nums[i - 1] + 2) {
+                dp[nums[i]] = dp[nums[i] - 1] + 1;
+                dp[nums[i] + 1] = 1;
+            } else {
+                dp[nums[i]] = dp[nums[i] + 1] = 1;
+            }
+            result = max({result, dp[nums[i]], dp[nums[i] + 1]});
+        }
+        return result;
+    }
+};
 
 // Time:  O(nlogn)
 // Space: O(n)
 // sort, dp
-class Solution2 {
+class Solution3 {
 public:
     int maxSelectedElements(vector<int>& nums) {
         sort(begin(nums), end(nums));
