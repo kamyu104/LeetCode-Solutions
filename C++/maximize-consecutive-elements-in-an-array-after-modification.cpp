@@ -27,7 +27,7 @@ public:
 };
 
 // Time:  O(nlogn)
-// Space: O(1)
+// Space: O(n)
 // sort, dp
 class Solution2 {
 public:
