@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3045%20%2F%203045-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3049%20%2F%203049-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -467,6 +467,7 @@
 3005 | [Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/) | [C++](./C++/count-elements-with-maximum-frequency.cpp) [Python](./Python/count-elements-with-maximum-frequency.py) | _O(n)_ | _O(n)_ | Easy || Freq Table
 3039 | [Apply Operations to Make String Empty](https://leetcode.com/problems/apply-operations-to-make-string-empty/) | [C++](./C++/apply-operations-to-make-string-empty.cpp) [Python](./Python/apply-operations-to-make-string-empty.py) | _O(n)_ | _O(1)_ | Medium || Freq Table
 3044 | [Most Frequent Prime](https://leetcode.com/problems/apply-operations-to-make-string-empty/) | [C++](./C++/apply-operations-to-make-string-empty.cpp) [Python](./Python/apply-operations-to-make-string-empty.py) | precompute: _O(10^MAX_N_M)_<br>runtime: _O(n * m * (n + m))_  | _O(10^MAX_N_M + n * m * (n + m))_ | Medium || Number Theory, `Linear Sieve of Eratosthenes`, Freq Table
+3046 | [Split the Array](https://leetcode.com/problems/split-the-array/) | [C++](./C++/split-the-array.cpp) [Python](./Python/split-the-array.py) | _O(n)_  | _O(n)_ | Easy || Freq Table
 
 <br/>
 <div align="right">
@@ -572,6 +573,7 @@
 3021 | [Alice and Bob Playing Flower Game](https://leetcode.com/problems/alice-and-bob-playing-flower-game/) | [C++](./C++/alice-and-bob-playing-flower-game.cpp) [Python](./Python/alice-and-bob-playing-flower-game.py) | _O(1)_ | _O(1)_ | Medium || Combinatorics |
 3024 | [Type of Triangle II](https://leetcode.com/problems/type-of-triangle-ii/) | [C++](./C++/type-of-triangle-ii.cpp) [Python](./Python/type-of-triangle-ii.py) | _O(1)_ | _O(1)_ | Easy || Math |
 3032 | [Count Numbers With Unique Digits II](https://leetcode.com/problems/count-numbers-with-unique-digits-ii/) | [C++](./C++/count-numbers-with-unique-digits-ii.cpp) [Python](./Python/count-numbers-with-unique-digits-ii.py) | _O(logb)_ | _O(1)_ | Easy |🔒, variant of [Count Numbers With Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/) | Brute Force, Hash Table, Bitmasks, Combinatorics
+3047 | [Find the Largest Area of Square Inside Two Rectangles](https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/) | [C++](./C++/find-the-largest-area-of-square-inside-two-rectangles.cpp) [Python](./Python/find-the-largest-area-of-square-inside-two-rectangles.py) | _O(n^2)_ | _O(1)_ | Meidum || Brute Force, Math |
 
 <br/>
 <div align="right">
@@ -723,8 +725,10 @@
 2702 | [Minimum Operations to Make Numbers Non-positive](https://leetcode.com/problems/minimum-operations-to-make-numbers-non-positive/) | [C++](./C++/minimum-operations-to-make-numbers-non-positive.cpp) [Python](./Python/minimum-operations-to-make-numbers-non-positive.py) | _O(nlogr)_ | _O(1)_ | Hard | 🔒 | Binary Search, Greedy |
 2936 | [Number of Equal Numbers Blocks](https://leetcode.com/problems/number-of-equal-numbers-blocks/) | [C++](./C++/number-of-equal-numbers-blocks.cpp) [Python](./Python/number-of-equal-numbers-blocks.py) | _O(klogn)_ | _O(1)_ | Medium | 🔒 | Binary Search |
 2940 | [Find Building Where Alice and Bob Can Meet](https://leetcode.com/problems/find-building-where-alice-and-bob-can-meet/) | [C++](./C++/find-building-where-alice-and-bob-can-meet.cpp) [Python](./Python/find-building-where-alice-and-bob-can-meet.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | Heap,  Mono Stack, Binary Search, Online Solution, Segment Tree |
-
+3048 | [Earliest Second to Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | [C++](./C++/earliest-second-to-mark-indices-i.cpp) [Python](./Python/earliest-second-to-mark-indices-i.py) | _O(mlogm)_ | _O(n)_ | Medium | | Binary Search, Greedy |
+3049 | [Earliest Second to Mark Indices II](https://leetcode.com/problems/earliest-second-to-mark-indices-ii/) | [C++](./C++/earliest-second-to-mark-indices-ii.cpp) [Python](./Python/earliest-second-to-mark-indices-ii.py) | _O((m + nlogn) *logm)_ | _O(n)_ | Hard | | Binary Search, Greedy, Heap |
 <br/>
+
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
