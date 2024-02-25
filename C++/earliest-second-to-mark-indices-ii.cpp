@@ -33,11 +33,11 @@ public:
             return total - (total2 + (size(min_heap))) <= cnt;
         };
     
-        int64_t cnt = 0;
+        int64_t total2 = 0;
         for (int i = 0; i < size(nums); ++i) {
-            cnt += lookup[i] != -1 ? 1 : nums[i];
+            total2 += lookup[i] != -1 ? 1 : nums[i];
         }
-        int64_t left = cnt + size(nums), right = size(changeIndices);
+        int64_t left = total2 + size(nums), right = size(changeIndices);
         while (left <= right) {
             const int mid = left + (right - left) / 2;
             if (check(mid)) {
