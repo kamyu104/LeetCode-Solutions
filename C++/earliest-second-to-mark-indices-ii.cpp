@@ -26,8 +26,7 @@ public:
                     --cnt;
                 } else {
                     ++cnt;
-                    total2 -= min_heap.top();
-                    min_heap.pop();
+                    total2 -= min_heap.top(); min_heap.pop();
                 }
             }
             return total - (total2 + (size(min_heap))) <= cnt;
