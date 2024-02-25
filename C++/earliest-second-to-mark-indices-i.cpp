@@ -28,7 +28,7 @@ public:
 
         int64_t left = accumulate(cbegin(nums), cend(nums), 0ll) + size(nums), right = size(changeIndices);
         while (left <= right) {
-            const int mid = left + (right - left) / 2;
+            const auto mid = left + (right - left) / 2;
             if (check(mid)) {
                 right = mid - 1;
             } else {
