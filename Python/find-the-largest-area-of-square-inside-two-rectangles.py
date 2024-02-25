@@ -16,7 +16,7 @@ class Solution(object):
                 min_x = min(topRight[i][0], topRight[j][0])
                 max_y = max(bottomLeft[i][1], bottomLeft[j][1])
                 min_y = min(topRight[i][1], topRight[j][1])
-                result = max(result, min(min_x-max_x, min_y-max_y)**2)
+                result = max(result, min(min_x-max_x, min_y-max_y))
         return result**2
 
 
