@@ -18,7 +18,7 @@ WITH prime_cte AS (
     SELECT item_type, item_count
     FROM prime_cte
 )
-UNION ALL
+UNION
 (
     SELECT item_type,  item_count
     FROM not_prime_cte
