@@ -23,4 +23,4 @@ UNION
     SELECT item_type,  item_count
     FROM not_prime_cte
 )
-ORDER BY item_count DESC;
+ORDER BY 2 DESC;
