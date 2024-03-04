@@ -6,7 +6,7 @@ WITH workload_cte AS (
            p.project_id,
            e.name AS employee_name,
            p.workload AS project_workload,
-           AVG(p.workload) OVER(PARTITION BY e.team) AS average_team_workload
+           AVG(p.workload) OVER(PARTITION BY e.team ORDER BY NULL) AS average_team_workload
     FROM Employees e
     LEFT JOIN Project p
     ON e.employee_id = p.employee_id
