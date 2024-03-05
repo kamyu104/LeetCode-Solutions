@@ -199,7 +199,6 @@
 3069 | [Distribute Elements Into Two Arrays I](https://leetcode.com/problems/distribute-elements-into-two-arrays-i/) | [C++](./C++/distribute-elements-into-two-arrays-i.cpp) [Python](./Python/distribute-elements-into-two-arrays-i.py) | _O(n)_ | _O(n)_ | Easy | | Array
 3070 | [Count Submatrices with Top-Left Element and Sum Less Than k](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/) | [C++](./C++/count-submatrices-with-top-left-element-and-sum-less-than-k.cpp) [Python](./Python/count-submatrices-with-top-left-element-and-sum-less-than-k.py) | _O(n * m)_ | _O(1)_ | Medium | | Array, Prefix Sum
 3071 | [Minimum Operations to Write the Letter Y on a Grid](https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid/) | [C++](./C++/minimum-operations-to-write-the-letter-y-on-a-grid.cpp) [Python](./Python/minimum-operations-to-write-the-letter-y-on-a-grid.py) | _O(n^2)_ | _O(1)_ | Medium | | Array
-3072 | [Distribute Elements Into Two Arrays II](https://leetcode.com/problems/distribute-elements-into-two-arrays-ii/) | [C++](./C++/distribute-elements-into-two-arrays-ii.cpp) [Python](./Python/distribute-elements-into-two-arrays-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sorted List, Ordered Set
 
 <br/>
 <div align="right">
@@ -752,6 +751,7 @@
 2907 | [Maximum Profitable Triplets With Increasing Prices I](https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-i/) | [C++](./C++/maximum-profitable-triplets-with-increasing-prices-i.cpp) [Python](./Python/maximum-profitable-triplets-with-increasing-prices-i.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, Sorted List, BST, Binary Search, Mono Stack, BIT, Fenwick Tree, Segment Tree |
 2921 | [Maximum Profitable Triplets With Increasing Prices II](https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-ii/) | [C++](./C++/maximum-profitable-triplets-with-increasing-prices-ii.cpp) [Python](./Python/maximum-profitable-triplets-with-increasing-prices-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | Prefix Sum, Sorted List, BST, Binary Search, Mono Stack, BIT, Fenwick Tree, Segment Tree |
 2926 | [Maximum Balanced Subsequence Sum](https://leetcode.com/problems/maximum-balanced-subsequence-sum/) | [C++](./C++/maximum-balanced-subsequence-sum.cpp) [Python](./Python/maximum-balanced-subsequence-sum.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sorted List, BST, Binary Search, Mono Stack, BIT, Fenwick Tree, Segment Tree |
+3072 | [Distribute Elements Into Two Arrays II](https://leetcode.com/problems/distribute-elements-into-two-arrays-ii/) | [C++](./C++/distribute-elements-into-two-arrays-ii.cpp) [Python](./Python/distribute-elements-into-two-arrays-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sorted List, Ordered Set
 
 <br/>
 <div align="right">
