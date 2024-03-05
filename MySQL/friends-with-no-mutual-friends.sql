@@ -1,4 +1,4 @@
-# Time:  O(n^2)
+# Time:  O(n^2 * logn)
 # Space: O(n^2)
 
 WITH pairs_cte AS (
