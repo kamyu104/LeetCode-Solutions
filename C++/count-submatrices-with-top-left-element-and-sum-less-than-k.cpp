@@ -1,4 +1,4 @@
-// Time:  O(n^2)
+// Time:  O(n * m)
 // Space: O(1)
 
 // prefix sum
