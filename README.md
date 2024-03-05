@@ -86,6 +86,7 @@
 2935 | [Maximum Strong Pair XOR II](https://leetcode.com/problems/maximum-strong-pair-xor-ii/) | [C++](./C++/maximum-strong-pair-xor-ii.cpp) [Python](./Python/maximum-strong-pair-xor-ii.py) | _O(nlogr)_ | _O(t)_ | Hard | variant of [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | Bit Manipulation, Greedy, Trie, DP, Sort, Two Pointers
 2980 | [Check if Bitwise OR Has Trailing Zeros](https://leetcode.com/problems/check-if-bitwise-or-has-trailing-zeros/) | [C++](./C++/check-if-bitwise-or-has-trailing-zeros.cpp) [Python](./Python/check-if-bitwise-or-has-trailing-zeros.py) | _O(n)_ | _O(1)_ | Easy | | Bit Manipulation
 2997 | [Minimum Number of Operations to Make Array XOR Equal to K](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/) | [C++](./C++/minimum-number-of-operations-to-make-array-xor-equal-to-k.cpp) [Python](./Python/minimum-number-of-operations-to-make-array-xor-equal-to-k.py) | _O(n)_ | _O(1)_ | Medium | | Bit Manipulation
+3064 | [Guess the Number Using Bitwise Questions I](https://leetcode.com/problems/guess-the-number-using-bitwise-questions-i/) | [C++](./C++/guess-the-number-using-bitwise-questions-i.cpp) [Python](./Python/guess-the-number-using-bitwise-questions-i.py) | _O(logn)_ | _O(1)_ | Medium |🔒| Bit Manipulation
 
 <br/>
 <div align="right">
@@ -194,6 +195,12 @@
 3030 | [Find the Grid of Region Average](https://leetcode.com/problems/find-the-grid-of-region-average/) | [C++](./C++/find-the-grid-of-region-average.cpp) [Python](./Python/find-the-grid-of-region-average.py) | _O(m * n)_ | _O(m * n)_ | Medium | | Array
 3033 | [Modify the Matrix](https://leetcode.com/problems/modify-the-matrix/) | [C++](./C++/modify-the-matrix.cpp) [Python](./Python/modify-the-matrix.py) | _O(m * n)_ | _O(1)_ | Easy | | Array
 3038 | [Maximum Number of Operations With the Same Score I](https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/) | [C++](./C++/maximum-number-of-operations-with-the-same-score-i.cpp) [Python](./Python/maximum-number-of-operations-with-the-same-score-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3065 | [Minimum Operations to Exceed Threshold Value I](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/) | [C++](./C++/minimum-operations-to-exceed-threshold-value-i.cpp) [Python](./Python/minimum-operations-to-exceed-threshold-value-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3069 | [Distribute Elements Into Two Arrays I](https://leetcode.com/problems/distribute-elements-into-two-arrays-i/) | [C++](./C++/distribute-elements-into-two-arrays-i.cpp) [Python](./Python/distribute-elements-into-two-arrays-i.py) | _O(n)_ | _O(n)_ | Easy | | Array
+3070 | [Count Submatrices with Top-Left Element and Sum Less Than k](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/) | [C++](./C++/count-submatrices-with-top-left-element-and-sum-less-than-k.cpp) [Python](./Python/count-submatrices-with-top-left-element-and-sum-less-than-k.py) | _O(n * m)_ | _O(1)_ | Medium | | Array, Prefix Sum
+3070 | [Count Submatrices with Top-Left Element and Sum Less Than k](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/) | [C++](./C++/count-submatrices-with-top-left-element-and-sum-less-than-k.cpp) [Python](./Python/count-submatrices-with-top-left-element-and-sum-less-than-k.py) | _O(n * m)_ | _O(1)_ | Medium | | Array, Prefix Sum
+3071 | [Minimum Operations to Write the Letter Y on a Grid](https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid/) | [C++](./C++/minimum-operations-to-write-the-letter-y-on-a-grid.cpp) [Python](./Python/minimum-operations-to-write-the-letter-y-on-a-grid.py) | _O(n^2)_ | _O(1)_ | Medium | | Array
+3072 | [Distribute Elements Into Two Arrays II](https://leetcode.com/problems/distribute-elements-into-two-arrays-ii/) | [C++](./C++/distribute-elements-into-two-arrays-ii.cpp) [Python](./Python/distribute-elements-into-two-arrays-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sorted List, Ordered Set
 
 <br/>
 <div align="right">
@@ -287,6 +294,8 @@
 2674 | [Split a Circular Linked List](https://leetcode.com/problems/split-a-circular-linked-list/) | [C++](./C++/split-a-circular-linked-list.cpp) [Python](./Python/split-a-circular-linked-list.py) | _O(n)_  | _O(1)_         | Medium           |🔒| Two Pointers, Slow and Fast Pointers
 2807 | [Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/) | [C++](./C++/insert-greatest-common-divisors-in-linked-list.cpp) [Python](./Python/insert-greatest-common-divisors-in-linked-list.py) | _O(n)_ | _O(1)_ | Medium | | Linked List
 2816 | [Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) | [C++](./C++/double-a-number-represented-as-a-linked-list.cpp) [Python](./Python/double-a-number-represented-as-a-linked-list.py) | _O(n)_ | _O(1)_ | Medium | | Linked List
+3062 | [Winner of the Linked List Game](https://leetcode.com/problems/winner-of-the-linked-list-game/) | [C++](./C++/winner-of-the-linked-list-game.cpp) [Python](./Python/winner-of-the-linked-list-game.py) | _O(n)_ | _O(1)_ | Easy | 🔒 | Linked List
+3063 | [Linked List Frequency](https://leetcode.com/problems/linked-list-frequency/) | [C++](./C++/linked-list-frequency.cpp) [Python](./Python/linked-list-frequency.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Linked List
 
 <br/>
 <div align="right">
@@ -345,6 +354,7 @@
 2530 | [Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) | [C++](./C++/maximal-score-after-applying-k-operations.cpp) [Python](./Python/maximal-score-after-applying-k-operations.py) | _O(n + klogn)_ | _O(1)_ | Medium | | Heap, Simulation |
 2558 | [Take Gifts From the Richest Pile](https://leetcode.com/problems/take-gifts-from-the-richest-pile/) | [C++](./C++/take-gifts-from-the-richest-pile.cpp) [Python](./Python/take-gifts-from-the-richest-pile.py) | _O(n + klogn)_ | _O(1)_ | Easy | | Heap, Simulation |
 2818 | [Apply Operations to Maximize Score](https://leetcode.com/problems/apply-operations-to-maximize-score/) | [C++](./C++/apply-operations-to-maximize-score.cpp) [Python](./Python/apply-operations-to-maximize-score.py) | _O(sqrt(r) + n * (logr + sqrt(r)/log(sqrt(r))) + klogn)_ | _O(sqrt(r) + n)_ | Hard | | Number Theory, `Linear Sieve of Eratosthenes`, Mono Stack, Greedy, Sort, Heap |
+3066 | [Minimum Operations to Exceed Threshold Value II](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/) | [C++](./C++/minimum-operations-to-exceed-threshold-value-ii.cpp) [Python](./Python/minimum-operations-to-exceed-threshold-value-ii.py) | _O(nlogn)_ | _O(n)_ | Medium | | Simulation, Binary Heap
 
 <br/>
 <div align="right">
@@ -807,6 +817,7 @@
 2791 | [Count Paths That Can Form a Palindrome in a Tree](https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree/)| [C++](./C++/count-paths-that-can-form-a-palindrome-in-a-tree.cpp) [Python](./Python/count-paths-that-can-form-a-palindrome-in-a-tree.py)| _O(n)_ | _O(n)_ | Hard | | Tree, DFS, Freq Table |
 2973 | [Find Number of Coins to Place in Tree Nodes](https://leetcode.com/problems/find-number-of-coins-to-place-in-tree-nodes/)| [C++](./C++/find-number-of-coins-to-place-in-tree-nodes.cpp) [Python](./Python/find-number-of-coins-to-place-in-tree-nodes.py)| _O(n)_ | _O(n)_ | Hard | | DFS |
 3004 | [Maximum Subtree of the Same Color](https://leetcode.com/problems/maximum-subtree-of-the-same-color/)| [C++](./C++/maximum-subtree-of-the-same-color.cpp) [Python](./Python/maximum-subtree-of-the-same-color.py)| _O(n)_ | _O(h)_ | Medium | 🔒 | DFS |
+3067 | [Count Pairs of Connectable Servers in a Weighted Tree Network](https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/)| [C++](./C++/count-pairs-of-connectable-servers-in-a-weighted-tree-network.cpp) [Python](./Python/count-pairs-of-connectable-servers-in-a-weighted-tree-network.py)| _O(n^2)_ | _O(n)_ | Medium | | DFS, BFS |
 
 <br/>
 <div align="right">
@@ -1073,6 +1084,7 @@
 3016 | [Minimum Number of Pushes to Type Word II](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/) | [C++](./C++/minimum-number-of-pushes-to-type-word-ii.cpp) [Python](./Python/minimum-number-of-pushes-to-type-word-ii.py) | _O(n)_ | _O(26)_ | Medium | | Freq Table, Greedy
 3022 | [Minimize OR of Remaining Elements Using Operations](https://leetcode.com/problems/minimize-or-of-remaining-elements-using-operations/) | [C++](./C++/minimize-or-of-remaining-elements-using-operations.cpp) [Python](./Python/minimize-or-of-remaining-elements-using-operations.py) | _O(nlogr)_ | _O(1)_ | Hard | | Bitmasks, Greedy
 3035 | [Maximum Palindromes After Operations](https://leetcode.com/problems/maximum-palindromes-after-operations/) | [C++](./C++/maximum-palindromes-after-operations.cpp) [Python](./Python/maximum-palindromes-after-operations.py) | _O(n * l + nlogn)_ | _O(n)_ | Medium | | Freq Table, Greedy, Sort
+3068 | [Find the Maximum Sum of Node Values](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/) | [C++](./C++/find-the-maximum-sum-of-node-values.cpp) [Python](./Python/find-the-maximum-sum-of-node-values.py) | _O(n)_ | _O(1)_ | Hard | | Greedy
 
 <br/>
 <div align="right">
