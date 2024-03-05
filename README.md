@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3049%20%2F%203049-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3072%20%2F%203072-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1364,6 +1364,18 @@
 2993 | [Friday Purchases I](https://leetcode.com/problems/friday-purchases-i/) | [MySQL](./MySQL/friday-purchases-i.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 2994 | [Friday Purchases II](https://leetcode.com/problems/friday-purchases-ii/) | [MySQL](./MySQL/friday-purchases-ii.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 2995 | [Viewers Turned Streamers](https://leetcode.com/problems/viewers-turned-streamers/) | [MySQL](./MySQL/viewers-turned-streamers.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+3050 | [Pizza Toppings Cost Analysis](https://leetcode.com/problems/pizza-toppings-cost-analysis/) | [MySQL](./MySQL/pizza-toppings-cost-analysis.sql) | _O(n^3 * logn)_ | _O(n^3)_       | Medium           |🔒||
+3051 | [Find Candidates for Data Scientist Position](https://leetcode.com/problems/find-candidates-for-data-scientist-position/) | [MySQL](./MySQL/find-candidates-for-data-scientist-position.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+3052 | [Maximize Items](https://leetcode.com/problems/maximize-items/) | [MySQL](./MySQL/maximize-items.sql) | _O(n)_ | _O(n)_       | Hard           |🔒||
+3053 | [Classifying Triangles by Lengths](https://leetcode.com/classifying-triangles-by-lengths/) | [MySQL](./MySQL/classifying-triangles-by-lengths.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+3054 | [Binary Tree Nodes](https://leetcode.com/binary-tree-nodes/) | [MySQL](./MySQL/binary-tree-nodes.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+3055 | [Top Percentile Fraud](https://leetcode.com/top-percentile-fraud/) | [MySQL](./MySQL/top-percentile-fraud.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+3056 | [Snaps Analysis](https://leetcode.com/snaps-analysis/) | [MySQL](./MySQL/snaps-analysis.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
+3057 | [Employees Project Allocation](https://leetcode.com/employees-project-allocation/) | [MySQL](./MySQL/employees-project-allocation.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+3058 | [Friends With No Mutual Friends](https://leetcode.com/friends-with-no-mutual-friends/) | [MySQL](./MySQL/friends-with-no-mutual-friends.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Medium           |🔒||
+3059 | [Find All Unique Email Domains](https://leetcode.com/find-all-unique-email-domains/) | [MySQL](./MySQL/find-all-unique-email-domains.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+3060 | [User Activities within Time Bounds](https://leetcode.com/user-activities-within-time-bounds/) | [MySQL](./MySQL/user-activities-within-time-bounds.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+3061 | [Calculate Trapping Rain Water](https://leetcode.com/calculate-trapping-rain-water/) | [MySQL](./MySQL/calculate-trapping-rain-water.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
