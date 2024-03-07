@@ -4,7 +4,7 @@
 from sortedcontainers import SortedList
 
 
-# sorted list
+# sorted list, prefix sum
 class Solution(object):
     def maximumTripletValue(self, nums):
         """
