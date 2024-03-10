@@ -1,4 +1,4 @@
-// Time:  O(n * k)
+// Time:  O(k * n)
 // Space: O(n)
 
 // dp
@@ -22,8 +22,8 @@ public:
     }
 };
 
-// Time:  O(n * k)
-// Space: O(n * k)
+// Time:  O(k * n)
+// Space: O(k * n)
 // dp
 class Solution2 {
 public:
