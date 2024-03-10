@@ -13,7 +13,7 @@ class Solution(object):
         for i in xrange(k):
             new_dp = [float("-inf")]*(len(nums)+1)
             for j in xrange(len(nums)):
-                new_dp[j+1] = max(dp[j], new_dp[j])+nums[j]*(k-i)*(1 if i%2 == 0 else -1)
+                new_dp[j+1] = max(new_dp[j], dp[j])+nums[j]*(k-i)*(1 if i%2 == 0 else -1)
             dp = new_dp
         return max(dp)
 
@@ -32,5 +32,5 @@ class Solution2(object):
         dp[0] = [0]*(len(nums)+1)
         for i in xrange(k):
             for j in xrange(len(nums)):
-                dp[i+1][j+1] = max(dp[i][j], dp[i+1][j])+nums[j]*(k-i)*(1 if i%2 == 0 else -1)
+                dp[i+1][j+1] = max(dp[i+1][j], dp[i][j])+nums[j]*(k-i)*(1 if i%2 == 0 else -1)
         return max(dp[-1])
