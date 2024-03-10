@@ -1,4 +1,4 @@
-# Time:  O(n^2)
+# Time:  O(n * k)
 # Space: O(n)
 
 # dp
@@ -18,8 +18,8 @@ class Solution(object):
         return max(dp)
 
 
-# Time:  O(n^2)
-# Space: O(n^2)
+# Time:  O(n * k)
+# Space: O(n * k)
 # dp
 class Solution2(object):
     def maximumStrength(self, nums, k):
