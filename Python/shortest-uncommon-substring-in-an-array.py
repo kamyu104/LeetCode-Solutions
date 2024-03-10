@@ -12,7 +12,6 @@ class Solution(object):
             def __init__(self):
                 self.__nodes = []
                 self.__cnts = []
-                self.k = 0
                 self.__new_node()
             
             def __new_node(self):
