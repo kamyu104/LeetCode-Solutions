@@ -19,7 +19,7 @@ class Solution(object):
                 self.__cnts.append(0)
                 return len(self.__nodes)-1
 
-            def add(self, s):
+            def add(self, s, d):
                 for i in xrange(len(s)):
                     curr = 0
                     for j in xrange(i, len(s)):
@@ -27,14 +27,7 @@ class Solution(object):
                         if self.__nodes[curr][x] == -1:
                             self.__nodes[curr][x] = self.__new_node()
                         curr = self.__nodes[curr][x]
-                        self.__cnts[curr] += 1
-
-            def remove(self, s):
-                for i in xrange(len(s)):
-                    curr = 0
-                    for j in xrange(i, len(s)):
-                        curr = self.__nodes[curr][ord(s[j])-ord('a')]
-                        self.__cnts[curr] -= 1
+                        self.__cnts[curr] += d
     
             def query(self, s):
                 result = (float("inf"), "")
@@ -49,10 +42,10 @@ class Solution(object):
     
         trie = Trie()
         for x in arr:
-            trie.add(x)
+            trie.add(x, +1)
         result = []
         for x in arr:
-            trie.remove(x)
+            trie.add(x, -1)
             result.append(trie.query(x))
-            trie.add(x)
+            trie.add(x, +1)
         return result
