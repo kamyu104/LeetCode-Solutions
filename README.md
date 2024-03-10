@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3073%20%2F%203073-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3077%20%2F%203077-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -273,6 +273,7 @@
 3042 | [Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/)| [C++](./C++/count-prefix-and-suffix-pairs-i.cpp) [Python](./Python/count-prefix-and-suffix-pairs-i.py)| _O(n * l)_ | _O(t)_ | Easy | | Trie, Brute Force |
 3043 | [Find the Length of the Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/)| [C++](./C++/find-the-length-of-the-longest-common-prefix.cpp) [Python](./Python/find-the-length-of-the-longest-common-prefix.py)| _O((n + m) * l)_ | _O(t)_ | Medium | | Trie, Hash Table |
 3045 | [Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/)| [C++](./C++/count-prefix-and-suffix-pairs-ii.cpp) [Python](./Python/count-prefix-and-suffix-pairs-ii.py)| _O(n * l)_ | _O(t)_ | Hard | | Trie |
+3076 | [Shortest Uncommon Substring in an Array](https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/)| [C++](./C++/shortest-uncommon-substring-in-an-array.cpp) [Python](./Python/shortest-uncommon-substring-in-an-array.py)| _O(n * l^2)_ | _O(t)_ | Medium | | Trie |
 
 <br/>
 <div align="right">
@@ -951,6 +952,7 @@
 3020 | [Find the Maximum Number of Elements in Subset](https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/) | [C++](./C++/find-the-maximum-number-of-elements-in-subset.cpp) [Python](./Python/find-the-maximum-number-of-elements-in-subset.py) | _O(n)_ | _O(n)_ | Medium || Freq Table, DP
 3040 | [Maximum Number of Operations With the Same Score II](https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/) | [C++](./C++/maximum-number-of-operations-with-the-same-score-ii.cpp) [Python](./Python/maximum-number-of-operations-with-the-same-score-ii.py) | _O(n^2)_ | _O(n^2)_ | Medium | | Memoization
 3041 | [Maximize Consecutive Elements in an Array After Modification](https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/) | [C++](./C++/maximize-consecutive-elements-in-an-array-after-modification.cpp) [Python](./Python/maximize-consecutive-elements-in-an-array-after-modification.py) | _O(nlogn)_ | _O(1)_ | Hard | | Sort, DP
+3077 | [Maximum Strength of K Disjoint Subarrays](https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/) | [C++](./C++/maximum-strength-of-k-disjoint-subarrays.cpp) [Python](./Python/maximum-strength-of-k-disjoint-subarrays.py) | _O(k * n)_ | _O(n)_ | Hard | | DP
 
 <br/>
 <div align="right">
@@ -1085,6 +1087,8 @@
 3022 | [Minimize OR of Remaining Elements Using Operations](https://leetcode.com/problems/minimize-or-of-remaining-elements-using-operations/) | [C++](./C++/minimize-or-of-remaining-elements-using-operations.cpp) [Python](./Python/minimize-or-of-remaining-elements-using-operations.py) | _O(nlogr)_ | _O(1)_ | Hard | | Bitmasks, Greedy
 3035 | [Maximum Palindromes After Operations](https://leetcode.com/problems/maximum-palindromes-after-operations/) | [C++](./C++/maximum-palindromes-after-operations.cpp) [Python](./Python/maximum-palindromes-after-operations.py) | _O(n * l + nlogn)_ | _O(n)_ | Medium | | Freq Table, Greedy, Sort
 3068 | [Find the Maximum Sum of Node Values](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/) | [C++](./C++/find-the-maximum-sum-of-node-values.cpp) [Python](./Python/find-the-maximum-sum-of-node-values.py) | _O(n)_ | _O(1)_ | Hard | | Greedy
+3074 | [Apple Redistribution into Boxes](https://leetcode.com/problems/apple-redistribution-into-boxes/) | [C++](./C++/apple-redistribution-into-boxes.cpp) [Python](./Python/apple-redistribution-into-boxes.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort, Greedy
+3075 | [Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/) | [C++](./C++/maximize-happiness-of-selected-children.cpp) [Python](./Python/maximize-happiness-of-selected-children.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort, Greedy
 
 <br/>
 <div align="right">
