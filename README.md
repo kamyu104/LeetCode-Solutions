@@ -1088,7 +1088,7 @@
 3035 | [Maximum Palindromes After Operations](https://leetcode.com/problems/maximum-palindromes-after-operations/) | [C++](./C++/maximum-palindromes-after-operations.cpp) [Python](./Python/maximum-palindromes-after-operations.py) | _O(n * l + nlogn)_ | _O(n)_ | Medium | | Freq Table, Greedy, Sort
 3068 | [Find the Maximum Sum of Node Values](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/) | [C++](./C++/find-the-maximum-sum-of-node-values.cpp) [Python](./Python/find-the-maximum-sum-of-node-values.py) | _O(n)_ | _O(1)_ | Hard | | Greedy
 3074 | [Apple Redistribution into Boxes](https://leetcode.com/problems/apple-redistribution-into-boxes/) | [C++](./C++/apple-redistribution-into-boxes.cpp) [Python](./Python/apple-redistribution-into-boxes.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort, Greedy
-3075 | [Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/) | [C++](./C++/maximize-happiness-of-selected-children.cpp) [Python](./Python/maximize-happiness-of-selected-children.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort, Greedy
+3075 | [Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/) | [C++](./C++/maximize-happiness-of-selected-children.cpp) [Python](./Python/maximize-happiness-of-selected-children.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Greedy
 
 <br/>
 <div align="right">
