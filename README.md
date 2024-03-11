@@ -952,7 +952,7 @@
 3020 | [Find the Maximum Number of Elements in Subset](https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/) | [C++](./C++/find-the-maximum-number-of-elements-in-subset.cpp) [Python](./Python/find-the-maximum-number-of-elements-in-subset.py) | _O(n)_ | _O(n)_ | Medium || Freq Table, DP
 3040 | [Maximum Number of Operations With the Same Score II](https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/) | [C++](./C++/maximum-number-of-operations-with-the-same-score-ii.cpp) [Python](./Python/maximum-number-of-operations-with-the-same-score-ii.py) | _O(n^2)_ | _O(n^2)_ | Medium | | Memoization
 3041 | [Maximize Consecutive Elements in an Array After Modification](https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/) | [C++](./C++/maximize-consecutive-elements-in-an-array-after-modification.cpp) [Python](./Python/maximize-consecutive-elements-in-an-array-after-modification.py) | _O(nlogn)_ | _O(1)_ | Hard | | Sort, DP
-3077 | [Maximum Strength of K Disjoint Subarrays](https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/) | [C++](./C++/maximum-strength-of-k-disjoint-subarrays.cpp) [Python](./Python/maximum-strength-of-k-disjoint-subarrays.py) | _O(k * n)_ | _O(n)_ | Hard | | DP
+3077 | [Maximum Strength of K Disjoint Subarrays](https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/) | [C++](./C++/maximum-strength-of-k-disjoint-subarrays.cpp) [Python](./Python/maximum-strength-of-k-disjoint-subarrays.py) | _O(k * n)_ | _O(n)_ | Hard | | DP, Greedy, `Kadane's Algorithm`
 
 <br/>
 <div align="right">
