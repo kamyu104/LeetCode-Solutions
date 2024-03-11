@@ -1,7 +1,7 @@
 // Time:  O(k * n)
 // Space: O(n)
 
-// dp
+// dp, greedy, kadane's algorithm
 class Solution {
 public:
     long long maximumStrength(vector<int>& nums, int k) {
@@ -24,7 +24,7 @@ public:
 
 // Time:  O(k * n)
 // Space: O(k * n)
-// dp
+// dp, greedy, kadane's algorithm
 class Solution2 {
 public:
     long long maximumStrength(vector<int>& nums, int k) {
