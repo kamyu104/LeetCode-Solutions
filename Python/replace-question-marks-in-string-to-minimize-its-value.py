@@ -76,8 +76,8 @@ class Solution2(object):
         heapq.heapify(min_heap)
         cnt2 = [0]*26
         for _ in xrange(s.count('?')):
-            cnt, i = heapq.heappop(min_heap)
-            heapq.heappush(min_heap, (cnt+1, i))
+            c, i = heapq.heappop(min_heap)
+            heapq.heappush(min_heap, (c+1, i))
             cnt2[i] += 1
         it = counting_sort(cnt2)
         result = list(s)
