@@ -4,7 +4,7 @@
 import bisect
 
 
-# counting sort, prefix sum
+# greedy, counting sort, prefix sum
 class Solution(object):
     def minimizeStringValue(self, s):
         """
@@ -58,7 +58,7 @@ class Solution(object):
 import heapq
 
 
-# counting sort, heap
+# greedy, counting sort, heap
 class Solution2(object):
     def minimizeStringValue(self, s):
         """
@@ -93,7 +93,7 @@ class Solution2(object):
 
 # Time:  O(n + n * 26)
 # Space: O(26)
-# counting sort
+# greedy, counting sort
 class Solution3(object):
     def minimizeStringValue(self, s):
         """
