@@ -1,6 +1,9 @@
 # Time:  O(n + 26 * log(26))
 # Space: O(26)
 
+import bisect
+
+
 # counting sort, prefix sum, binary search
 class Solution(object):
     def minimizeStringValue(self, s):
@@ -59,9 +62,9 @@ class Solution2(object):
         :type s: str
         :rtype: str
         """
-        def counting_sort():
-            for i in xrange(len(cnt2)):
-                for _ in xrange(cnt2[i]):
+        def counting_sort(cnt):
+            for i in xrange(len(cnt)):
+                for _ in xrange(cnt[i]):
                     yield i
 
         cnt = [0]*26
@@ -76,7 +79,7 @@ class Solution2(object):
             cnt, i = heapq.heappop(min_heap)
             heapq.heappush(min_heap, (cnt+1, i))
             cnt2[i] += 1
-        it = counting_sort()
+        it = counting_sort(cnt2)
         result = list(s)
         for i in xrange(len(result)):
             if result[i] != '?':
@@ -94,9 +97,9 @@ class Solution3(object):
         :type s: str
         :rtype: str
         """
-        def counting_sort():
-            for i in xrange(len(cnt2)):
-                for _ in xrange(cnt2[i]):
+        def counting_sort(cnt):
+            for i in xrange(len(cnt)):
+                for _ in xrange(cnt[i]):
                     yield i
     
         cnt = [0]*26
@@ -108,7 +111,7 @@ class Solution3(object):
         for _ in xrange(s.count('?')):
             i = min(xrange(len(cnt)), key=lambda x: cnt[x]+cnt2[x])
             cnt2[i] += 1
-        it = counting_sort()
+        it = counting_sort(cnt2)
         result = list(s)
         for i in xrange(len(result)):
             if result[i] != '?':
