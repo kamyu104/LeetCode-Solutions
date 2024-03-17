@@ -1,7 +1,7 @@
 // Time:  O(n + 26 * log(26))
 // Space: O(26)
 
-// counting sort, prefix sum
+// greedy, counting sort, prefix sum
 class Solution {
 public:
     string minimizeStringValue(string s) {
@@ -67,7 +67,7 @@ public:
 
 // Time:  O(n + n * log(26))
 // Space: O(26)
-// counting sort, heap
+// greedy, counting sort, heap
 class Solution2 {
 public:
     string minimizeStringValue(string s) {
@@ -114,7 +114,7 @@ public:
 
 // Time:  O(n + n * 26)
 // Space: O(26)
-// counting sort
+// greedy, counting sort
 class Solution3 {
 public:
     string minimizeStringValue(string s) {
