@@ -4,7 +4,7 @@
 import bisect
 
 
-# counting sort, prefix sum, binary search
+# counting sort, prefix sum
 class Solution(object):
     def minimizeStringValue(self, s):
         """
@@ -20,12 +20,15 @@ class Solution(object):
             result = [0]*26
             a = [(x, i) for i, x in enumerate(cnt)]
             a.sort()
-            prefix = [0]*len(a)
-            for i in xrange(len(a)-1):
-                prefix[i+1] = prefix[i]+(a[i+1][0]-a[i][0])*(i+1)
             total = s.count('?')
-            i = bisect.bisect_right(prefix, total)-1
-            q, r = divmod(total-prefix[i], i+1)
+            curr = 0
+            for i in xrange(len(a)-1):
+                if curr+(a[i+1][0]-a[i][0])*(i+1) > total:
+                    break
+                curr += (a[i+1][0]-a[i][0])*(i+1)
+            else:
+                i = len(a)-1
+            q, r = divmod(total-curr, i+1)
             for j in xrange(i+1):
                 result[a[j][1]] = (a[i][0]-a[j][0])+q
             cnt2 = [0]*26
