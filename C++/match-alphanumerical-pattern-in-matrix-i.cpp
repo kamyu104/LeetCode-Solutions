@@ -10,14 +10,14 @@ public:
             vector<bool> lookup2(10);
             for (int r = 0; r < size(pattern); ++r) {
                 for (int c = 0; c < size(pattern[0]); ++c) {
-                    int y = board[i + r][j + c];
+                    const int y = board[i + r][j + c];
                     if (isdigit(pattern[r][c])) {
                         if (pattern[r][c] - '0' != y) {
                             return false;
                         }
                         continue;
                     }
-                    int x = pattern[r][c] - 'a';
+                    const int x = pattern[r][c] - 'a';
                     if (lookup[x] == -1) {
                         if (lookup2[y]) {
                             return false;
