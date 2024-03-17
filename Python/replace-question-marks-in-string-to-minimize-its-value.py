@@ -20,7 +20,7 @@ class Solution(object):
             result = [0]*26
             a = [(x, i) for i, x in enumerate(cnt)]
             a.sort()
-            prefix = [0]*26
+            prefix = [0]*len(a)
             for i in xrange(len(a)-1):
                 prefix[i+1] = prefix[i]+(a[i+1][0]-a[i][0])*(i+1)
             total = s.count('?')
