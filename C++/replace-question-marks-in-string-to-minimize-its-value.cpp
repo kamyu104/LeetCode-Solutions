@@ -1,7 +1,7 @@
 // Time:  O(n + 26 * log(26))
 // Space: O(26)
 
-// counting sort, prefix sum, binary search
+// counting sort, prefix sum
 class Solution {
 public:
     string minimizeStringValue(string s) {
@@ -22,14 +22,16 @@ public:
                 pairs[i] = {cnt[i], i};
             }
             sort(begin(pairs), end(pairs));
-            vector<int> prefix(size(pairs));
-            for (int i = 0; i + 1 < size(pairs); ++i) {
-                prefix[i + 1] = prefix[i] + (pairs[i + 1].first - pairs[i].first) * (i + 1);
-            }            
             const int total = count(cbegin(s), cend(s), '?');
-            const int i = distance(cbegin(prefix), upper_bound(cbegin(prefix), cend(prefix), total)) - 1;
-            const int q = (total - prefix[i]) / (i + 1);
-            const int r = (total - prefix[i]) % (i + 1);
+            int curr = 0, i = 0;
+            for (; i + 1 < size(pairs); ++i) {
+                if (curr + (pairs[i + 1].first - pairs[i].first) * (i + 1) > total) {
+                    break;
+                }
+                curr += (pairs[i + 1].first - pairs[i].first) * (i + 1);
+            }            
+            const int q = (total - curr) / (i + 1);
+            const int r = (total - curr) % (i + 1);
             for (int j = 0; j <= i; ++j) {
                 result[pairs[j].second] = (pairs[i].first - pairs[j].first) + q;
             }
