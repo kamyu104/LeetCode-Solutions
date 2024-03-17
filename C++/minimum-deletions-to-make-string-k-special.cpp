@@ -58,10 +58,44 @@ private:
     }
 };
 
+// Time:  O(n + 26 * log(26))
+// Space: O(26)
+// freq table, sort, two pointers
+class Solution2 {
+public:
+    int minimumDeletions(string word, int k) {
+        vector<int> cnt(26);
+        for (const auto& x : word) {
+            ++cnt[x - 'a'];
+        }
+        vector<int> arr;
+        for (const auto& x : cnt) {
+            if (!x) {
+                continue;
+            }
+            arr.emplace_back(x);
+        }
+        sort(begin(arr), end(arr));
+        int result = size(word);
+        for (int left = 0, right = 0, prev = -1, prefix = 0, suffix = size(word); left < size(arr); ++left) {
+            if (left + 1 < size(arr) && arr[left + 1] == arr[left]) {
+                continue;
+            }
+            while (right < size(arr) && arr[right] <= arr[left] + k) {
+                suffix -= arr[right++];
+            }
+            result = min(result, prefix + (suffix - (arr[left] + k) * (static_cast<int>(size(arr)) - right)));
+            prefix += arr[left] * (left - prev);
+            prev = left;
+        }
+        return result;
+    }
+};
+
 // Time:  O(n + 26^2)
 // Space: O(26)
 // freq table
-class Solution2 {
+class Solution3 {
 public:
     int minimumDeletions(string word, int k) {
         vector<int> cnt(26);
