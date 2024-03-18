@@ -1392,16 +1392,16 @@
 3050 | [Pizza Toppings Cost Analysis](https://leetcode.com/problems/pizza-toppings-cost-analysis/) | [MySQL](./MySQL/pizza-toppings-cost-analysis.sql) | _O(n^3 * logn)_ | _O(n^3)_       | Medium           |🔒||
 3051 | [Find Candidates for Data Scientist Position](https://leetcode.com/problems/find-candidates-for-data-scientist-position/) | [MySQL](./MySQL/find-candidates-for-data-scientist-position.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
 3052 | [Maximize Items](https://leetcode.com/problems/maximize-items/) | [MySQL](./MySQL/maximize-items.sql) | _O(n)_ | _O(n)_       | Hard           |🔒||
-3053 | [Classifying Triangles by Lengths](https://leetcode.com/classifying-triangles-by-lengths/) | [MySQL](./MySQL/classifying-triangles-by-lengths.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
-3054 | [Binary Tree Nodes](https://leetcode.com/binary-tree-nodes/) | [MySQL](./MySQL/binary-tree-nodes.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
-3055 | [Top Percentile Fraud](https://leetcode.com/top-percentile-fraud/) | [MySQL](./MySQL/top-percentile-fraud.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+3053 | [Classifying Triangles by Lengths](https://leetcode.com/problems/classifying-triangles-by-lengths/) | [MySQL](./MySQL/classifying-triangles-by-lengths.sql) | _O(n)_ | _O(n)_       | Easy           |🔒||
+3054 | [Binary Tree Nodes](https://leetcode.com/problems/binary-tree-nodes/) | [MySQL](./MySQL/binary-tree-nodes.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+3055 | [Top Percentile Fraud](https://leetcode.com/problems/top-percentile-fraud/) | [MySQL](./MySQL/top-percentile-fraud.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 3056 | [Snaps Analysis](https://leetcode.com/snaps-analysis/) | [MySQL](./MySQL/snaps-analysis.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
-3057 | [Employees Project Allocation](https://leetcode.com/employees-project-allocation/) | [MySQL](./MySQL/employees-project-allocation.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
-3058 | [Friends With No Mutual Friends](https://leetcode.com/friends-with-no-mutual-friends/) | [MySQL](./MySQL/friends-with-no-mutual-friends.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Medium           |🔒||
-3059 | [Find All Unique Email Domains](https://leetcode.com/find-all-unique-email-domains/) | [MySQL](./MySQL/find-all-unique-email-domains.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
-3060 | [User Activities within Time Bounds](https://leetcode.com/user-activities-within-time-bounds/) | [MySQL](./MySQL/user-activities-within-time-bounds.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
-3061 | [Calculate Trapping Rain Water](https://leetcode.com/calculate-trapping-rain-water/) | [MySQL](./MySQL/calculate-trapping-rain-water.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
-3087 | [Find Trending Hashtags](https://leetcode.com/find-trending-hashtags/) | [MySQL](./MySQL/find-trending-hashtags.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+3057 | [Employees Project Allocation](https://leetcode.com/problems/employees-project-allocation/) | [MySQL](./MySQL/employees-project-allocation.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+3058 | [Friends With No Mutual Friends](https://leetcode.com/problems/friends-with-no-mutual-friends/) | [MySQL](./MySQL/friends-with-no-mutual-friends.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Medium           |🔒||
+3059 | [Find All Unique Email Domains](https://leetcode.com/problems/find-all-unique-email-domains/) | [MySQL](./MySQL/find-all-unique-email-domains.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒||
+3060 | [User Activities within Time Bounds](https://leetcode.com/problems/user-activities-within-time-bounds/) | [MySQL](./MySQL/user-activities-within-time-bounds.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+3061 | [Calculate Trapping Rain Water](https://leetcode.com/problems/calculate-trapping-rain-water/) | [MySQL](./MySQL/calculate-trapping-rain-water.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
+3087 | [Find Trending Hashtags](https://leetcode.com/problems/find-trending-hashtags/) | [MySQL](./MySQL/find-trending-hashtags.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
