@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Space: O(n)
+// Space: O(min(n, 26^2))
 
 // hash table
 class Solution {
@@ -19,7 +19,7 @@ public:
 };
 
 // Time:  O(n)
-// Space: O(n)
+// Space: O(min(n, 26^2))
 // hash table
 class Solution2 {
 public:
