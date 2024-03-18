@@ -1,9 +1,6 @@
 # Time:  O(n + 26 * log(26))
 # Space: O(26)
 
-import bisect
-
-
 # greedy, counting sort, prefix sum
 class Solution(object):
     def minimizeStringValue(self, s):
