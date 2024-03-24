@@ -29,8 +29,8 @@ WITH filtered_posts_cte AS (
     ORDER BY NULL
 )
 
-SELECT *
+SELECT user_id, max_7day_posts, avg_weekly_posts
 FROM max_posts_in_7_days_aggr_cte
 INNER JOIN avg_weekly_posts_cte USING (user_id)
 WHERE max_7day_posts >= 2 * avg_weekly_posts
-ORDER BY user_id;
+ORDER BY 1;
