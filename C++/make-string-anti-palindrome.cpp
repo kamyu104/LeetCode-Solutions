@@ -19,11 +19,10 @@ public:
             }
         }
         int l = 0;
-        for (int i = size(s) / 2; i < size(s); ++i) {
-            if (result[i] != result[size(s) / 2 - 1]) {
+        for (; l <= (size(s) / 2) / 2; ++l) {
+            if (result[size(s) / 2 + l] != result[size(s) / 2 - 1]) {
                 break;
             }
-            ++l;
         }
         if (l) {
             for (int i = 0; i < cnt[result[size(s) / 2 - 1] - 'a'] - l; ++i) {
