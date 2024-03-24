@@ -18,11 +18,11 @@ class Solution(object):
             for _ in xrange(x):
                 result.append(i)
         l = 0
-        for i in xrange(len(result)//2, len(result)):
-            if result[i] != result[len(result)//2-1]:
+        for i in xrange(len(s)//2, len(s)):
+            if result[i] != result[len(s)//2-1]:
                 break
             l += 1
-        for i in xrange(cnt[result[len(result)//2-1]]-l):
+        for i in xrange(cnt[result[len(s)//2-1]]-l):
             result[len(s)//2+i], result[len(s)//2+i+l] = result[len(s)//2+i+l], result[len(s)//2+i]
         return "".join(map(lambda x: chr(ord('a')+x), result))
 
