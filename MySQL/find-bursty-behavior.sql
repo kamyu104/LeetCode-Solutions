@@ -1,13 +1,10 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-WITH filtered_posts_cte AS (
-    SELECT *
+WITH avg_weekly_posts_cte AS (
+    SELECT user_id, COUNT(*) / 4.0 AS avg_weekly_posts
     FROM Posts
     WHERE post_date BETWEEN '2024-02-01' AND '2024-02-28'
-), avg_weekly_posts_cte AS (
-    SELECT user_id, COUNT(*) / 4.0 AS avg_weekly_posts
-    FROM filtered_posts_cte
     GROUP BY 1
     ORDER BY NULL
 ), posts_in_7_days_cte AS (
