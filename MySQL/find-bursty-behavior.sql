@@ -11,14 +11,14 @@ WITH filtered_posts_cte AS (
     GROUP BY 1
     ORDER BY NULL
 ), posts_in_7_days_cte AS (
-    SELECT user_id, COUNT(*) OVER w AS sevenday_posts, post_date
+    SELECT user_id, post_date, COUNT(*) OVER w AS sevenday_posts
     FROM Posts
     WINDOW w AS (PARTITION BY user_id 
                  ORDER BY post_date
                  RANGE BETWEEN CURRENT ROW AND INTERVAL 6 DAY FOLLOWING)
     ORDER BY NULL
 ), posts_in_7_days_aggr_cte AS (
-    SELECT user_id, SUM(sevenday_posts) AS sevenday_posts, post_date
+    SELECT user_id, SUM(sevenday_posts) AS sevenday_posts
     FROM posts_in_7_days_cte
     GROUP BY user_id, post_date
     ORDER BY NULL
