@@ -22,8 +22,9 @@ class Solution(object):
             if result[i] != result[len(s)//2-1]:
                 break
             l += 1
-        for i in xrange(cnt[result[len(s)//2-1]]-l):
-            result[len(s)//2+i], result[len(s)//2+i+l] = result[len(s)//2+i+l], result[len(s)//2+i]
+        if l:
+            for i in xrange(cnt[result[len(s)//2-1]]-l):
+                result[len(s)//2+i], result[len(s)//2+i+l] = result[len(s)//2+i+l], result[len(s)//2+i]
         return "".join(map(lambda x: chr(ord('a')+x), result))
 
 
