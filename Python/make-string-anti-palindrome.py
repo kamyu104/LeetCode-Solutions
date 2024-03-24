@@ -1,8 +1,36 @@
 # Time:  O(n)
 # Space: O(26)
 
-# counting sort, greedy, two pointers
+# counting sort, greedy
 class Solution(object):
+    def makeAntiPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        cnt = [0]*26
+        for x in s:
+            cnt[ord(x)-ord('a')] += 1
+        if max(cnt) > len(s)//2:
+            return "-1"
+        result = []
+        for i, x in enumerate(cnt):
+            for _ in xrange(x):
+                result.append(i)
+        l = 0
+        for i in xrange(len(result)//2, len(result)):
+            if result[i] != result[len(result)//2-1]:
+                break
+            l += 1
+        for i in xrange(cnt[result[len(result)//2-1]]-l):
+            result[len(s)//2+i], result[len(s)//2+i+l] = result[len(s)//2+i+l], result[len(s)//2+i]
+        return "".join(map(lambda x: chr(ord('a')+x), result))
+
+
+# Time:  O(n)
+# Space: O(26)
+# counting sort, greedy, two pointers
+class Solution2(object):
     def makeAntiPalindrome(self, s):
         """
         :type s: str
@@ -31,7 +59,7 @@ class Solution(object):
 # Time:  O(26 * n)
 # Space: O(26)
 # freq table, greedy
-class Solution2(object):
+class Solution3(object):
     def makeAntiPalindrome(self, s):
         """
         :type s: str
