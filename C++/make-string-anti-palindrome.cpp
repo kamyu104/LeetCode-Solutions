@@ -25,8 +25,10 @@ public:
             }
             ++l;
         }
-        for (int i = 0; i < cnt[result[size(s) / 2 - 1] - 'a'] - l; ++i) {
-            swap(result[size(s) / 2 + i], result[size(s) / 2 + i + l]);
+        if (l) {
+            for (int i = 0; i < cnt[result[size(s) / 2 - 1] - 'a'] - l; ++i) {
+                swap(result[size(s) / 2 + i], result[size(s) / 2 + i + l]);
+            }
         }
         return result;
     }
