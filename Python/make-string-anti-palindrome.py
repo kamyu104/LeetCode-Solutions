@@ -13,10 +13,7 @@ class Solution(object):
             cnt[ord(x)-ord('a')] += 1
         if max(cnt) > len(s)//2:
             return "-1"
-        result = []
-        for i, x in enumerate(cnt):
-            for _ in xrange(x):
-                result.append(i)
+        result = [i for i, x in enumerate(cnt) for _ in xrange(x)]
         l = 0
         for i in xrange(len(s)//2, len(s)):
             if result[i] != result[len(s)//2-1]:
@@ -42,10 +39,7 @@ class Solution2(object):
             cnt[ord(x)-ord('a')] += 1
         if max(cnt) > len(s)//2:
             return "-1"
-        result = []
-        for i, x in enumerate(cnt):
-            for _ in xrange(x):
-                result.append(i)
+        result = [i for i, x in enumerate(cnt) for _ in xrange(x)]
         left = len(s)//2
         right = left+1
         while right < len(s) and result[right] == result[left]:
