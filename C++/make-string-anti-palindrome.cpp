@@ -1,8 +1,41 @@
 // Time:  O(n)
 // Space: O(26)
 
-// counting sort, greedy, two pointers
+// counting sort, greedy
 class Solution {
+public:
+    string makeAntiPalindrome(string s) {
+        vector<int> cnt(26);
+        for (const auto& x : s) {
+            ++cnt[x - 'a'];
+        }
+        if (ranges::max(cnt) > size(s) / 2) {
+            return "-1";
+        }
+        string result;
+        for (int i = 0; i < size(cnt); ++i) {
+            for (int _ = 0; _ < cnt[i]; ++_) {
+                result.push_back('a' + i);
+            }
+        }
+        int l = 0;
+        for (int i = size(s) / 2; i < size(s); ++i) {
+            if (result[i] != result[size(s) / 2 - 1]) {
+                break;
+            }
+            ++l;
+        }
+        for (int i = 0; i < cnt[result[size(s) / 2 - 1] - 'a'] - l; ++i) {
+            swap(result[size(s) / 2 + i], result[size(s) / 2 + i + l]);
+        }
+        return result;
+    }
+};
+
+// Time:  O(n)
+// Space: O(26)
+// counting sort, greedy, two pointers
+class Solution2 {
 public:
     string makeAntiPalindrome(string s) {
         vector<int> cnt(26);
@@ -31,7 +64,7 @@ public:
 // Time:  O(26 * n)
 // Space: O(26)
 // freq table, greedy
-class Solution2 {
+class Solution3 {
 public:
     string makeAntiPalindrome(string s) {
         vector<int> cnt(26);
