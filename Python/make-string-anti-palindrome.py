@@ -14,11 +14,7 @@ class Solution(object):
         if max(cnt) > len(s)//2:
             return "-1"
         result = [i for i, x in enumerate(cnt) for _ in xrange(x)]
-        l = 0
-        for i in xrange(len(s)//2, len(s)):
-            if result[i] != result[len(s)//2-1]:
-                break
-            l += 1
+        l = next((l for l in xrange(len(s)//2) if result[len(s)//2+l] != result[len(s)//2-1]), len(s)//2)
         if l:
             for i in xrange(cnt[result[len(s)//2-1]]-l):
                 result[len(s)//2+i], result[len(s)//2+i+l] = result[len(s)//2+i+l], result[len(s)//2+i]
