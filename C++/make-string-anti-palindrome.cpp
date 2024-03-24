@@ -12,10 +12,10 @@ public:
         if (ranges::max(cnt) > size(s) / 2) {
             return "-1";
         }
-        string result;
-        for (int i = 0; i < size(cnt); ++i) {
+        string result(size(s), 0);
+        for (int i = 0, j = 0; i < size(cnt); ++i) {
             for (int _ = 0; _ < cnt[i]; ++_) {
-                result.push_back('a' + i);
+                result[j++] = 'a' + i;
             }
         }
         int l = 0;
@@ -46,10 +46,10 @@ public:
         if (ranges::max(cnt) > size(s) / 2) {
             return "-1";
         }
-        string result;
-        for (int i = 0; i < size(cnt); ++i) {
+        string result(size(s), 0);
+        for (int i = 0, j = 0; i < size(cnt); ++i) {
             for (int _ = 0; _ < cnt[i]; ++_) {
-                result.push_back('a' + i);
+                result[j++] = 'a' + i;
             }
         }
         int left = size(s) / 2;
