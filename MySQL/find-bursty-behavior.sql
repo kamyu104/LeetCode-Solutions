@@ -17,7 +17,7 @@ WITH avg_weekly_posts_cte AS (
                  RANGE BETWEEN CURRENT ROW AND INTERVAL 6 DAY FOLLOWING)
     ORDER BY NULL
 ), posts_in_7_days_aggr_cte AS (
-    SELECT user_id, SUM(sevenday_posts) AS sevenday_posts  -- `SELECT user_id, MAX(sevenday_posts) AS sevenday_posts` is rather reasonable
+    SELECT user_id, SUM(sevenday_posts) AS sevenday_posts  -- `SELECT user_id, MAX(sevenday_posts) AS sevenday_posts` is more reasonable
     FROM posts_in_7_days_cte
     GROUP BY user_id, post_date
     ORDER BY NULL
