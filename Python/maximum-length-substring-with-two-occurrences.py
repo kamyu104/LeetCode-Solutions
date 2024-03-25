@@ -1,4 +1,4 @@
-# Time:  O(n)
+# Time:  O(n + 26)
 # Space: O(26)
 
 # freq table, sliding window, two pointers
@@ -24,7 +24,7 @@ class Solution(object):
         return right-left+1
 
 
-# Time:  O(n)
+# Time:  O(n + 26)
 # Space: O(26)
 # freq table, sliding window, two pointers
 class Solution2(object):
