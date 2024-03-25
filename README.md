@@ -1103,7 +1103,7 @@
 3074 | [Apple Redistribution into Boxes](https://leetcode.com/problems/apple-redistribution-into-boxes/) | [C++](./C++/apple-redistribution-into-boxes.cpp) [Python](./Python/apple-redistribution-into-boxes.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort, Greedy
 3075 | [Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/) | [C++](./C++/maximize-happiness-of-selected-children.cpp) [Python](./Python/maximize-happiness-of-selected-children.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Greedy
 3086 | [Minimum Moves to Pick K Ones](https://leetcode.com/problems/minimum-moves-to-pick-k-ones/) | [C++](./C++/minimum-moves-to-pick-k-ones.cpp) [Python](./Python/minimum-moves-to-pick-k-ones.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Greedy
-3088 | [Make String Anti-palindrome](https://leetcode.com/problems/make-string-anti-palindrome/) | [C++](./C++/make-string-anti-palindrome.cpp) [Python](./Python/make-string-anti-palindrome.py) | _O(n)_ | _O(26)_ | Hard | 🔒 | Freq Table, Counting Sort, Greedy, Two Pointers
+3088 | [Make String Anti-palindrome](https://leetcode.com/problems/make-string-anti-palindrome/) | [C++](./C++/make-string-anti-palindrome.cpp) [Python](./Python/make-string-anti-palindrome.py) | _O(n + 26)_ | _O(26)_ | Hard | 🔒 | Freq Table, Counting Sort, Greedy, Two Pointers
 
 <br/>
 <div align="right">
