@@ -1,6 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
+# window function
 WITH avg_weekly_posts_cte AS (
     SELECT user_id, COUNT(*) / 4.0 AS avg_weekly_posts
     FROM Posts
