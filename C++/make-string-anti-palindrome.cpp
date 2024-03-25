@@ -1,4 +1,4 @@
-// Time:  O(n)
+// Time:  O(n + 26)
 // Space: O(26)
 
 // counting sort, greedy
@@ -33,7 +33,7 @@ public:
     }
 };
 
-// Time:  O(n)
+// Time:  O(n + 26)
 // Space: O(26)
 // counting sort, greedy, two pointers
 class Solution2 {
