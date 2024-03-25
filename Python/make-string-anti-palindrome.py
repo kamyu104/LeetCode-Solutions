@@ -47,7 +47,7 @@ class Solution2(object):
         return "".join(map(lambda x: chr(ord('a')+x), result))
     
 
-# Time:  O(26 * n)
+# Time:  O(n * 26)
 # Space: O(26)
 # freq table, greedy
 class Solution3(object):
