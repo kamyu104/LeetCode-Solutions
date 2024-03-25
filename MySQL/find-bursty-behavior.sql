@@ -2,6 +2,7 @@
 # Space: O(n)
 
 # window function
+# current expected answer is a little bit confusing, it may be wrong in the future
 WITH avg_weekly_posts_cte AS (
     SELECT user_id, COUNT(*) / 4.0 AS avg_weekly_posts
     FROM Posts
