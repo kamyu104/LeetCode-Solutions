@@ -2,7 +2,6 @@
 # Space: O(n)
 
 # window function
-# current expected answers are confusing (which sum up duplicated post counts in 7-day window), the solution may be wrong in the future
 WITH avg_weekly_posts_cte AS (
     SELECT user_id, COUNT(*) / 4.0 AS avg_weekly_posts
     FROM Posts
@@ -17,7 +16,7 @@ WITH avg_weekly_posts_cte AS (
                  RANGE BETWEEN CURRENT ROW AND INTERVAL 6 DAY FOLLOWING)
     ORDER BY NULL
 ), posts_in_7_days_aggr_cte AS (
-    SELECT user_id, SUM(sevenday_posts) AS sevenday_posts  -- `SELECT user_id, MAX(sevenday_posts) AS sevenday_posts` is more reasonable
+    SELECT user_id, MAX(sevenday_posts) AS sevenday_posts
     FROM posts_in_7_days_cte
     GROUP BY user_id, post_date
     ORDER BY NULL
