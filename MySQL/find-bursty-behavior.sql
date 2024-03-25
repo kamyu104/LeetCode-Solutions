@@ -2,7 +2,7 @@
 # Space: O(n)
 
 # window function
-# current expected answers are confusing (which sums up duplicated post counts in 7-day window), it may be wrong in the future
+# current expected answers are confusing (which sum up duplicated post counts in 7-day window), the solution may be wrong in the future
 WITH avg_weekly_posts_cte AS (
     SELECT user_id, COUNT(*) / 4.0 AS avg_weekly_posts
     FROM Posts
