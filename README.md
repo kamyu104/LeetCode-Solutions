@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3087%20%2F%203087-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3093%20%2F%203093-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -275,6 +275,7 @@
 3043 | [Find the Length of the Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/)| [C++](./C++/find-the-length-of-the-longest-common-prefix.cpp) [Python](./Python/find-the-length-of-the-longest-common-prefix.py)| _O((n + m) * l)_ | _O(t)_ | Medium | | Trie, Hash Table |
 3045 | [Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/)| [C++](./C++/count-prefix-and-suffix-pairs-ii.cpp) [Python](./Python/count-prefix-and-suffix-pairs-ii.py)| _O(n * l)_ | _O(t)_ | Hard | | Trie |
 3076 | [Shortest Uncommon Substring in an Array](https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/)| [C++](./C++/shortest-uncommon-substring-in-an-array.cpp) [Python](./Python/shortest-uncommon-substring-in-an-array.py)| _O(n * l^2)_ | _O(t)_ | Medium | | Trie |
+3093 | [Longest Common Suffix Queries](https://leetcode.com/problems/longest-common-suffix-queries/)| [C++](./C++/longest-common-suffix-queries.cpp) [Python](./Python/longest-common-suffix-queries.py)| _O((n + q) * l)_ | _O(t)_ | Hard | | Trie |
 
 <br/>
 <div align="right">
@@ -356,6 +357,7 @@
 2818 | [Apply Operations to Maximize Score](https://leetcode.com/problems/apply-operations-to-maximize-score/) | [C++](./C++/apply-operations-to-maximize-score.cpp) [Python](./Python/apply-operations-to-maximize-score.py) | _O(sqrt(r) + n * (logr + sqrt(r)/log(sqrt(r))) + klogn)_ | _O(sqrt(r) + n)_ | Hard | | Number Theory, `Linear Sieve of Eratosthenes`, Mono Stack, Greedy, Sort, Heap |
 3066 | [Minimum Operations to Exceed Threshold Value II](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/) | [C++](./C++/minimum-operations-to-exceed-threshold-value-ii.cpp) [Python](./Python/minimum-operations-to-exceed-threshold-value-ii.py) | _O(nlogn)_ | _O(n)_ | Medium | | Simulation, Heap
 3080 | [Mark Elements on Array by Performing Queries](https://leetcode.com/problems/mark-elements-on-array-by-performing-queries/) | [C++](./C++/mark-elements-on-array-by-performing-queries.cpp) [Python](./Python/mark-elements-on-array-by-performing-queries.py) | _O(q + nlogn)_ | _O(n)_ | Medium | | Hash Table, Heap
+3092 | [Most Frequent IDs](https://leetcode.com/problems/most-frequent-ids/) | [C++](./C++/most-frequent-ids.cpp) [Python](./Python/most-frequent-ids.py) | _O(nlogn)_ | _O(n)_ | Medium | | Heap, BST, Sorted List
 
 <br/>
 <div align="right">
@@ -588,6 +590,7 @@
 3032 | [Count Numbers With Unique Digits II](https://leetcode.com/problems/count-numbers-with-unique-digits-ii/) | [C++](./C++/count-numbers-with-unique-digits-ii.cpp) [Python](./Python/count-numbers-with-unique-digits-ii.py) | _O(logb)_ | _O(1)_ | Easy |🔒, variant of [Count Numbers With Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/) | Brute Force, Hash Table, Bitmasks, Combinatorics
 3047 | [Find the Largest Area of Square Inside Two Rectangles](https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/) | [C++](./C++/find-the-largest-area-of-square-inside-two-rectangles.cpp) [Python](./Python/find-the-largest-area-of-square-inside-two-rectangles.py) | _O(n^2)_ | _O(1)_ | Meidum || Brute Force, Math |
 3084 | [Count Substrings Starting and Ending with Given Character](https://leetcode.com/problems/count-substrings-starting-and-ending-with-given-character/) | [C++](./C++/count-substrings-starting-and-ending-with-given-character.cpp) [Python](./Python/count-substrings-starting-and-ending-with-given-character.py) | _O(n)_ | _O(1)_ | Meidum || Combinatorics |
+3091 | [Apply Operations to Make Sum of Array Greater Than or Equal to k](https://leetcode.com/problems/apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k/) | [C++](./C++/apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k.cpp) [Python](./Python/apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k.py) | _O(logn)_ | _O(1)_ | Meidum || Math |
 
 <br/>
 <div align="right">
@@ -696,6 +699,8 @@
 3008 | [Find Beautiful Indices in the Given Array II](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-ii/) | [C++](./C++/find-beautiful-indices-in-the-given-array-ii.cpp) [Python](./Python/find-beautiful-indices-in-the-given-array-ii.py) | _O(n)_ | _O(min(a + b + x + y, n))_ | Hard | | `KMP Algorithm`, Binary Search, Two Pointers
 3013 | [Divide an Array Into Subarrays With Minimum Cost II](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/) | [C++](./C++/divide-an-array-into-subarrays-with-minimum-cost-ii.cpp) [Python](./Python/divide-an-array-into-subarrays-with-minimum-cost-ii.py) | _O(nlogd)_ | _O(d)_ | Hard | | Sliding Window, Heap, Freq Table, Ordered Set, BST, Sorted List
 3085 | [Minimum Deletions to Make String K-Special](https://leetcode.com/problems/minimum-deletions-to-make-string-k-special/) | [C++](./C++/minimum-deletions-to-make-string-k-special.cpp) [Python](./Python/minimum-deletions-to-make-string-k-special.py) | _O(n + 26)_ | _O(n + 26)_ | Medium | | Freq Table, Counting Sort, Two Pointers
+3090 | [Maximum Length Substring With Two Occurrences](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/) | [C++](./C++/maximum-length-substring-with-two-occurrences.cpp) [Python](./Python/maximum-length-substring-with-two-occurrences.py) | _O(n + 26)_ | _O(26)_ | Easy | | Freq Table, Sliding Window, Two Pointers
+
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -1098,6 +1103,7 @@
 3074 | [Apple Redistribution into Boxes](https://leetcode.com/problems/apple-redistribution-into-boxes/) | [C++](./C++/apple-redistribution-into-boxes.cpp) [Python](./Python/apple-redistribution-into-boxes.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort, Greedy
 3075 | [Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/) | [C++](./C++/maximize-happiness-of-selected-children.cpp) [Python](./Python/maximize-happiness-of-selected-children.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Greedy
 3086 | [Minimum Moves to Pick K Ones](https://leetcode.com/problems/minimum-moves-to-pick-k-ones/) | [C++](./C++/minimum-moves-to-pick-k-ones.cpp) [Python](./Python/minimum-moves-to-pick-k-ones.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Greedy
+3088 | [Make String Anti-palindrome](https://leetcode.com/problems/make-string-anti-palindrome/) | [C++](./C++/make-string-anti-palindrome.cpp) [Python](./Python/make-string-anti-palindrome.py) | _O(n)_ | _O(26)_ | Hard | 🔒 | Freq Table, Counting Sort, Greedy, Two Pointers
 
 <br/>
 <div align="right">
@@ -1402,6 +1408,7 @@
 3060 | [User Activities within Time Bounds](https://leetcode.com/problems/user-activities-within-time-bounds/) | [MySQL](./MySQL/user-activities-within-time-bounds.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 3061 | [Calculate Trapping Rain Water](https://leetcode.com/problems/calculate-trapping-rain-water/) | [MySQL](./MySQL/calculate-trapping-rain-water.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 3087 | [Find Trending Hashtags](https://leetcode.com/problems/find-trending-hashtags/) | [MySQL](./MySQL/find-trending-hashtags.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
+3089 | [Find Bursty Behavior](https://leetcode.com/problems/find-bursty-behavior/) | [MySQL](./MySQL/find-bursty-behavior.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
