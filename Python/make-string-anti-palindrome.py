@@ -1,4 +1,4 @@
-# Time:  O(n)
+# Time:  O(n + 26)
 # Space: O(26)
 
 # counting sort, greedy
@@ -21,7 +21,7 @@ class Solution(object):
         return "".join(map(lambda x: chr(ord('a')+x), result))
 
 
-# Time:  O(n)
+# Time:  O(n + 26)
 # Space: O(26)
 # counting sort, greedy, two pointers
 class Solution2(object):
