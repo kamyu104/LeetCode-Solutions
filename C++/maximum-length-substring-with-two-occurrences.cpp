@@ -1,4 +1,4 @@
-// Time:  O(n)
+// Time:  O(n + 26)
 // Space: O(26)
 
 // freq table, sliding window, two pointers
@@ -26,7 +26,7 @@ public:
     }
 };
 
-// Time:  O(n)
+// Time:  O(n + 26)
 // Space: O(26)
 // freq table, sliding window, two pointers
 class Solution2 {
