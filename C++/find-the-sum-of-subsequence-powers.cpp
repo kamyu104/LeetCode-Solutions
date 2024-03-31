@@ -1,7 +1,7 @@
 // Time:  O(len(diffs) * n * k) = O(n^3 * k) at most
 // Space: O(len(diffs) + n * k) = O(n^2) at most
 
-// dp, prefix sum, two pointers
+// sort, dp, prefix sum, two pointers
 class Solution {
 public:
     int sumOfPowers(vector<int>& nums, int k) {
@@ -40,7 +40,7 @@ public:
 
 // Time:  O(n^3 * len(diffs)) = O(n^5) at most
 // Space: O(n^2 * len(diffs)) = O(n^4) at most
-// dp
+// sort, dp
 class Solution2 {
 public:
     int sumOfPowers(vector<int>& nums, int k) {
