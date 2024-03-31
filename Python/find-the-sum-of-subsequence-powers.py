@@ -1,7 +1,7 @@
 # Time:  O(len(diffs) * n * k) = O(n^3 * k) at most
 # Space: O(len(diffs) + n * k) = O(n^2) at most
 
-# dp, prefix sum, two pointers
+# sort, dp, prefix sum, two pointers
 class Solution(object):
     def sumOfPowers(self, nums, k):
         MOD = 10**9+7
@@ -28,7 +28,7 @@ class Solution(object):
 import collections
 
 
-# dp
+# sort, dp
 class Solution2(object):
     def sumOfPowers(self, nums, k):
         """
