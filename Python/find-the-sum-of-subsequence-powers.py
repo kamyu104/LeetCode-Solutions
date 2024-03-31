@@ -14,7 +14,7 @@ class Solution(object):
             for i in xrange(len(nums)):
                 j = next((j for j in xrange(j, len(nums)) if nums[i]-nums[j] < mn), len(nums))
                 for l in xrange(1, k+1):
-                    dp[i+1][l] = (dp[i+1][l]+dp[(j-1)+1][l-1])%MOD  # dp[i+1][l]: accumulated count of subsequences of length l ending at i having min diff >= mn
+                    dp[i+1][l] = (dp[i+1][l]+dp[(j-1)+1][l-1])%MOD  # dp[i+1][l]: count of subsequences of length l ending at i having min diff >= mn
                 for l in xrange(k+1):
                     dp[i+1][l] = (dp[i+1][l]+dp[i][l])%MOD  # dp[i+1][l]: accumulated count of subsequences of length l ending at [0, i] having min diff >= mn
             cnt = (dp[-1][k]-prev)%MOD
