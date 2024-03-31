@@ -24,7 +24,7 @@ public:
             for (int i = 0, j = 0; i < size(nums); ++i) {
                 for (; j < size(nums) && nums[i] - nums[j] >= mn; ++j);
                 for (int l = 1; l <= k; ++l) {
-                    dp[i + 1][l] = (dp[i + 1][l] + dp[(j - 1) + 1][l - 1]) % MOD;  // dp[i+1][l]: accumulated count of subsequences of length l ending at i having min diff >= mn
+                    dp[i + 1][l] = (dp[i + 1][l] + dp[(j - 1) + 1][l - 1]) % MOD;  // dp[i+1][l]: count of subsequences of length l ending at i having min diff >= mn
                 }
                 for (int l = 0; l <= k; ++l) {
                     dp[i + 1][l] = (dp[i + 1][l] + dp[i][l]) % MOD;  // dp[i+1][l]: accumulated count of subsequences of length l ending at [0, i] having min diff >= mn
