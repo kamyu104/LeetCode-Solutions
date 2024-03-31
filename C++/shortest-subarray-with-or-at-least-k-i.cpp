@@ -56,10 +56,11 @@ public:
         for (int left = 0; left < size(nums); ++left) {
             for (int right = left, curr = 0; right < size(nums); ++right) {
                 curr |= nums[right];
-                if (curr >= k) {
-                    result = min(result, right - left + 1);
-                    break;
+                if (curr < k) {
+                    continue;
                 }
+                result = min(result, right - left + 1);
+                break;
             }
         }
         return result != INF ? result : -1;
