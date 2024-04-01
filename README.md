@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3093%20%2F%203093-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3102%20%2F%203102-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -87,6 +87,7 @@
 2980 | [Check if Bitwise OR Has Trailing Zeros](https://leetcode.com/problems/check-if-bitwise-or-has-trailing-zeros/) | [C++](./C++/check-if-bitwise-or-has-trailing-zeros.cpp) [Python](./Python/check-if-bitwise-or-has-trailing-zeros.py) | _O(n)_ | _O(1)_ | Easy | | Bit Manipulation
 2997 | [Minimum Number of Operations to Make Array XOR Equal to K](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/) | [C++](./C++/minimum-number-of-operations-to-make-array-xor-equal-to-k.cpp) [Python](./Python/minimum-number-of-operations-to-make-array-xor-equal-to-k.py) | _O(n)_ | _O(1)_ | Medium | | Bit Manipulation
 3064 | [Guess the Number Using Bitwise Questions I](https://leetcode.com/problems/guess-the-number-using-bitwise-questions-i/) | [C++](./C++/guess-the-number-using-bitwise-questions-i.cpp) [Python](./Python/guess-the-number-using-bitwise-questions-i.py) | _O(logn)_ | _O(1)_ | Medium |🔒| Bit Manipulation
+3094 | [Guess the Number Using Bitwise Questions II](https://leetcode.com/problems/guess-the-number-using-bitwise-questions-ii/) | [C++](./C++/guess-the-number-using-bitwise-questions-ii.cpp) [Python](./Python/guess-the-number-using-bitwise-questions-ii.py) | _O(logr)_ | _O(1)_ | Medium |🔒| Bit Manipulation
 
 <br/>
 <div align="right">
@@ -200,6 +201,7 @@
 3070 | [Count Submatrices with Top-Left Element and Sum Less Than k](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/) | [C++](./C++/count-submatrices-with-top-left-element-and-sum-less-than-k.cpp) [Python](./Python/count-submatrices-with-top-left-element-and-sum-less-than-k.py) | _O(n * m)_ | _O(1)_ | Medium | | Array, Prefix Sum
 3071 | [Minimum Operations to Write the Letter Y on a Grid](https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid/) | [C++](./C++/minimum-operations-to-write-the-letter-y-on-a-grid.cpp) [Python](./Python/minimum-operations-to-write-the-letter-y-on-a-grid.py) | _O(n^2)_ | _O(1)_ | Medium | | Array
 3079 | [Find the Sum of Encrypted Integers](https://leetcode.com/problems/find-the-sum-of-encrypted-integers/) | [C++](./C++/find-the-sum-of-encrypted-integers.cpp) [Python](./Python/find-the-sum-of-encrypted-integers.py) | _O(nlogr)_ | _O(1)_ | Easy | | Array
+3096 | [Minimum Levels to Gain More Points](https://leetcode.com/problems/minimum-levels-to-gain-more-points/) | [C++](./C++/minimum-levels-to-gain-more-points.cpp) [Python](./Python/minimum-levels-to-gain-more-points.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -591,6 +593,8 @@
 3047 | [Find the Largest Area of Square Inside Two Rectangles](https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/) | [C++](./C++/find-the-largest-area-of-square-inside-two-rectangles.cpp) [Python](./Python/find-the-largest-area-of-square-inside-two-rectangles.py) | _O(n^2)_ | _O(1)_ | Meidum || Brute Force, Math |
 3084 | [Count Substrings Starting and Ending with Given Character](https://leetcode.com/problems/count-substrings-starting-and-ending-with-given-character/) | [C++](./C++/count-substrings-starting-and-ending-with-given-character.cpp) [Python](./Python/count-substrings-starting-and-ending-with-given-character.py) | _O(n)_ | _O(1)_ | Meidum || Combinatorics |
 3091 | [Apply Operations to Make Sum of Array Greater Than or Equal to k](https://leetcode.com/problems/apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k/) | [C++](./C++/apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k.cpp) [Python](./Python/apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k.py) | _O(logn)_ | _O(1)_ | Meidum | [Codeforces Round #674 C](https://codeforces.com/contest/1426/problem/C) | Math |
+3099 | [Harshad Number](https://leetcode.com/problems/harshad-number/) | [C++](./C++/harshad-number.cpp) [Python](./Python/harshad-number.py) | _O(logx)_ | _O(1)_ | Easy | | Math |
+3102 | [Minimize Manhattan Distances](https://leetcode.com/problems/minimize-manhattan-distances/) | [C++](./C++/minimize-manhattan-distances.cpp) [Python](./Python/minimize-manhattan-distances.py) | _O(n)_ | _O(1)_ | Hard | | Math |
 
 <br/>
 <div align="right">
@@ -700,6 +704,8 @@
 3013 | [Divide an Array Into Subarrays With Minimum Cost II](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/) | [C++](./C++/divide-an-array-into-subarrays-with-minimum-cost-ii.cpp) [Python](./Python/divide-an-array-into-subarrays-with-minimum-cost-ii.py) | _O(nlogd)_ | _O(d)_ | Hard | | Sliding Window, Heap, Freq Table, Ordered Set, BST, Sorted List
 3085 | [Minimum Deletions to Make String K-Special](https://leetcode.com/problems/minimum-deletions-to-make-string-k-special/) | [C++](./C++/minimum-deletions-to-make-string-k-special.cpp) [Python](./Python/minimum-deletions-to-make-string-k-special.py) | _O(n + 26)_ | _O(n + 26)_ | Medium | | Freq Table, Counting Sort, Two Pointers
 3090 | [Maximum Length Substring With Two Occurrences](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/) | [C++](./C++/maximum-length-substring-with-two-occurrences.cpp) [Python](./Python/maximum-length-substring-with-two-occurrences.py) | _O(n + 26)_ | _O(26)_ | Easy | | Freq Table, Sliding Window, Two Pointers
+3095 | [Shortest Subarray With OR at Least K I](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/) | [C++](./C++/shortest-subarray-with-or-at-least-k-i.cpp) [Python](./Python/shortest-subarray-with-or-at-least-k-i.py) | _O(n * 30)_ | _O(30)_ | Easy | | Brute Force, Freq Table, Two Pointers
+3097 | [Shortest Subarray With OR at Least K II](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/) | [C++](./C++/shortest-subarray-with-or-at-least-k-ii.cpp) [Python](./Python/shortest-subarray-with-or-at-least-k-ii.py) | _O(n * 30)_ | _O(30)_ | Medium | | Freq Table, Two Pointers
 
 <br/>
 <div align="right">
@@ -966,6 +972,8 @@
 3041 | [Maximize Consecutive Elements in an Array After Modification](https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/) | [C++](./C++/maximize-consecutive-elements-in-an-array-after-modification.cpp) [Python](./Python/maximize-consecutive-elements-in-an-array-after-modification.py) | _O(nlogn)_ | _O(1)_ | Hard | | Sort, DP
 3077 | [Maximum Strength of K Disjoint Subarrays](https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/) | [C++](./C++/maximum-strength-of-k-disjoint-subarrays.cpp) [Python](./Python/maximum-strength-of-k-disjoint-subarrays.py) | _O(k * n)_ | _O(n)_ | Hard | | DP, Greedy, `Kadane's Algorithm`
 3082 | [Find the Sum of the Power of All Subsequences](https://leetcode.com/problems/find-the-sum-of-the-power-of-all-subsequences/) | [C++](./C++/find-the-sum-of-the-power-of-all-subsequences.cpp) [Python](./Python/find-the-sum-of-the-power-of-all-subsequences.py) | _O(n * k)_ | _O(k)_ | Hard | | DP, Combinatorics
+3098 | [Find the Sum of Subsequence Powers](https://leetcode.com/problems/find-the-sum-of-subsequence-powers/) | [C++](./C++/find-the-sum-of-subsequence-powers.cpp) [Python](./Python/find-the-sum-of-subsequence-powers.py) | _O(n^3 * k)_ | _O(n^2)_ | Hard | | DP, Prefix Sum, Two Pointers
+3101 | [Count Alternating Subarrays](https://leetcode.com/problems/count-alternating-subarrays/) | [C++](./C++/count-alternating-subarrays.cpp) [Python](./Python/count-alternating-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | DP
 
 <br/>
 <div align="right">
@@ -1175,6 +1183,7 @@
 2751 | [Robot Collisions](https://leetcode.com/problems/robot-collisions/) | [C++](./C++/robot-collisions.cpp) [Python](./Python/robot-collisions.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Simulation, Stack
 2934 | [Minimum Operations to Maximize Last Elements in Arrays](https://leetcode.com/problems/minimum-operations-to-maximize-last-elements-in-arrays/) | [C++](./C++/minimum-operations-to-maximize-last-elements-in-arrays.cpp) [Python](./Python/minimum-operations-to-maximize-last-elements-in-arrays.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 2960 | [Count Tested Devices After Test Operations](https://leetcode.com/problems/count-tested-devices-after-test-operations/) | [C++](./C++/count-tested-devices-after-test-operations.cpp) [Python](./Python/count-tested-devices-after-test-operations.py) | _O(n)_ | _O(1)_ | Easy | | Simulation
+3100 | [Water Bottles II](https://leetcode.com/problems/water-bottles-ii/) | [C++](./C++/water-bottles-ii.cpp) [Python](./Python/water-bottles-ii.py) | _O(sqrt(n))_ | _O(1)_ | Medium | | Simulation
 
 <br/>
 <div align="right">
