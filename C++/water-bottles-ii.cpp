@@ -1,4 +1,4 @@
-// Time:  O(sqrt(n))
+// Time:  O(n)
 // Space: O(1)
 
 // simulation
