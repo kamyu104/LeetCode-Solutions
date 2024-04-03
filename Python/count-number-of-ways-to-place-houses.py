@@ -27,7 +27,7 @@ class Solution(object):
 
         T = [[1, 1],
              [1, 0]]
-        return pow(matrix_mult([[1,  0]], matrix_expo(T, n+1))[0][0], 2, MOD)  # [a1, a0] * T^N
+        return pow(matrix_mult([[1, 0]], matrix_expo(T, n+1))[0][0], 2, MOD)  # [a1, a0] * T^N
 
     
 # Time:  O(n)
