@@ -132,3 +132,45 @@ public:
         return result;
     }
 };
+
+// Time:  O(26^2 * n)
+// Space: O(26)
+// hash table, brute force
+class Solution5 {
+public:
+    int maxSubstringLength(string s) {
+        vector<int> left(26, -1), right(26, -1);
+        for (int i = 0; i < size(s); ++i) {
+            const int x = s[i] - 'a';
+            if (left[x] == -1) {
+                left[x] = i;
+            }
+            right[x] = i;
+        }
+        const auto& check = [&](int l, int r) {
+            for (int i = l; i <= r; ++i) {
+                const int x = s[i] - 'a';
+                if (!(l <= left[x] && right[x] <= r))  {
+                    return false;
+                }
+            }
+            return true;
+        };
+
+        int result = -1;
+        for (const auto& l : left) {
+            if (l == -1) {
+                continue;
+            }
+            for (const auto& r : right) {
+                if (r == -1) {
+                    continue;
+                }
+                if (l <= r && result < r - l + 1 && r - l + 1 != size(s) && check(l, r)) {
+                    result = r - l + 1;
+                }
+            }
+        }
+        return result;
+    }
+};
