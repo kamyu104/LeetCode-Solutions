@@ -53,7 +53,7 @@ private:
             return true;
         }
 
-        int cost(int x) {
+        int cost(int x) {  // added
             return w_[find_set(x)];
         }
 
