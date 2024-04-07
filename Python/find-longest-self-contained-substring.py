@@ -127,8 +127,7 @@ class Solution5(object):
         def check(l, r):
             return all(l <= left[ord(s[i])-ord('a')] and right[ord(s[i])-ord('a')] <= r for i in xrange(l, r+1))
 
-        left = [-1]*26
-        right = [-1]*26
+        left, right = [-1]*26, [-1]*26
         for i, x in enumerate(s):
             x = ord(x)-ord('a')
             if left[x] == -1:
