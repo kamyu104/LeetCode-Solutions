@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3102%20%2F%203102-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3108%20%2F%203108-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -202,6 +202,7 @@
 3071 | [Minimum Operations to Write the Letter Y on a Grid](https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid/) | [C++](./C++/minimum-operations-to-write-the-letter-y-on-a-grid.cpp) [Python](./Python/minimum-operations-to-write-the-letter-y-on-a-grid.py) | _O(n^2)_ | _O(1)_ | Medium | | Array
 3079 | [Find the Sum of Encrypted Integers](https://leetcode.com/problems/find-the-sum-of-encrypted-integers/) | [C++](./C++/find-the-sum-of-encrypted-integers.cpp) [Python](./Python/find-the-sum-of-encrypted-integers.py) | _O(nlogr)_ | _O(1)_ | Easy | | Array
 3096 | [Minimum Levels to Gain More Points](https://leetcode.com/problems/minimum-levels-to-gain-more-points/) | [C++](./C++/minimum-levels-to-gain-more-points.cpp) [Python](./Python/minimum-levels-to-gain-more-points.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
+3105 | [Longest Strictly Increasing or Strictly Decreasing Subarray](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/) | [C++](./C++/longest-strictly-increasing-or-strictly-decreasing-subarray.cpp) [Python](./Python/longest-strictly-increasing-or-strictly-decreasing-subarray.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -754,6 +755,8 @@
 2940 | [Find Building Where Alice and Bob Can Meet](https://leetcode.com/problems/find-building-where-alice-and-bob-can-meet/) | [C++](./C++/find-building-where-alice-and-bob-can-meet.cpp) [Python](./Python/find-building-where-alice-and-bob-can-meet.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | Heap,  Mono Stack, Binary Search, Online Solution, Segment Tree |
 3048 | [Earliest Second to Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | [C++](./C++/earliest-second-to-mark-indices-i.cpp) [Python](./Python/earliest-second-to-mark-indices-i.py) | _O(mlogm)_ | _O(n)_ | Medium | | Binary Search, Greedy |
 3049 | [Earliest Second to Mark Indices II](https://leetcode.com/problems/earliest-second-to-mark-indices-ii/) | [C++](./C++/earliest-second-to-mark-indices-ii.cpp) [Python](./Python/earliest-second-to-mark-indices-ii.py) | _O((m + nlogn) *logm)_ | _O(n)_ | Hard | | Binary Search, Greedy, Heap |
+3104 | [Find Longest Self-Contained Substring](https://leetcode.com/problems/find-longest-self-contained-substring/) | [C++](./C++/find-longest-self-contained-substring.cpp) [Python](./Python/find-longest-self-contained-substring.py) | _O(n + 26^3 * logn)_ | _O(n)_ | Hard | 🔒 | Freq Table, Two Pointers, Hash Table, Binary Search |
+
 <br/>
 
 <div align="right">
@@ -1112,7 +1115,8 @@
 3075 | [Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/) | [C++](./C++/maximize-happiness-of-selected-children.cpp) [Python](./Python/maximize-happiness-of-selected-children.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Greedy
 3086 | [Minimum Moves to Pick K Ones](https://leetcode.com/problems/minimum-moves-to-pick-k-ones/) | [C++](./C++/minimum-moves-to-pick-k-ones.cpp) [Python](./Python/minimum-moves-to-pick-k-ones.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Greedy
 3088 | [Make String Anti-palindrome](https://leetcode.com/problems/make-string-anti-palindrome/) | [C++](./C++/make-string-anti-palindrome.cpp) [Python](./Python/make-string-anti-palindrome.py) | _O(n + 26)_ | _O(26)_ | Hard | 🔒 | Freq Table, Counting Sort, Greedy, Two Pointers
-
+3106 | [Lexicographically Smallest String After Operations With Constraint](https://leetcode.com/problems/lexicographically-smallest-string-after-operations-with-constraint/) | [C++](./C++/lexicographically-smallest-string-after-operations-with-constraint.cpp) [Python](./Python/lexicographically-smallest-string-after-operations-with-constraint.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+3107 | [Minimum Operations to Make Median of Array Equal to K](https://leetcode.com/problems/minimum-operations-to-make-median-of-array-equal-to-k/) | [C++](./C++/minimum-operations-to-make-median-of-array-equal-to-k.cpp) [Python](./Python/minimum-operations-to-make-median-of-array-equal-to-k.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Quick Select, Greedy
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -1149,6 +1153,7 @@
 2876 | [Count Visited Nodes in a Directed Graph](https://leetcode.com/problems/count-visited-nodes-in-a-directed-graph/) | [C++](./C++/count-visited-nodes-in-a-directed-graph.cpp) [Python](./Python/count-visited-nodes-in-a-directed-graph.py) | _O(n)_ | _O(n)_ | Hard | | Graph, Hash Table, Stack |
 2924 | [Find Champion II](https://leetcode.com/problems/find-champion-ii/) | [C++](./C++/find-champion-ii.cpp) [Python](./Python/find-champion-ii.py) | _O(n)_ | _O(n)_ | Medium | | Graph, Hash Table
 2959 | [Number of Possible Sets of Closing Branches](https://leetcode.com/problems/number-of-possible-sets-of-closing-branches/) | [C++](./C++/number-of-possible-sets-of-closing-branches.cpp) [Python](./Python/number-of-possible-sets-of-closing-branches.py) | _O(r + 2^n * n^2)_ | _O(n^3)_ | Medium | | Graph, Bitmasks, `Floyd-Warshall Algorithm`, Backtracking
+3108 | [Minimum Cost Walk in Weighted Graph](https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/) | [C++](./C++/minimum-cost-walk-in-weighted-graph.cpp) [Python](./Python/minimum-cost-walk-in-weighted-graph.py) | _O(n + e + q)_ | _O(n)_ | Hard | | Union Find
 
 <br/>
 <div align="right">
@@ -1418,6 +1423,7 @@
 3061 | [Calculate Trapping Rain Water](https://leetcode.com/problems/calculate-trapping-rain-water/) | [MySQL](./MySQL/calculate-trapping-rain-water.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒||
 3087 | [Find Trending Hashtags](https://leetcode.com/problems/find-trending-hashtags/) | [MySQL](./MySQL/find-trending-hashtags.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 3089 | [Find Bursty Behavior](https://leetcode.com/problems/find-bursty-behavior/) | [MySQL](./MySQL/find-bursty-behavior.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
+3103 | [Find Trending Hashtags II](https://leetcode.com/problems/find-trending-hashtags-ii/) | [MySQL](./MySQL/find-trending-hashtags-ii.sql) | _O(n * l^2 + (n * l) * log(n * l))_ | _O(n * l^2)_       | Hard           |🔒| Recursive CTE |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
