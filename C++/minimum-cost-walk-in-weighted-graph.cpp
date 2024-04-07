@@ -1,4 +1,4 @@
-// Time:  O(n + q)
+// Time:  O(n + e + q)
 // Space: O(n)
 
 // union find
