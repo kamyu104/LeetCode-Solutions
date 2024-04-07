@@ -755,7 +755,7 @@
 2940 | [Find Building Where Alice and Bob Can Meet](https://leetcode.com/problems/find-building-where-alice-and-bob-can-meet/) | [C++](./C++/find-building-where-alice-and-bob-can-meet.cpp) [Python](./Python/find-building-where-alice-and-bob-can-meet.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | Heap,  Mono Stack, Binary Search, Online Solution, Segment Tree |
 3048 | [Earliest Second to Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | [C++](./C++/earliest-second-to-mark-indices-i.cpp) [Python](./Python/earliest-second-to-mark-indices-i.py) | _O(mlogm)_ | _O(n)_ | Medium | | Binary Search, Greedy |
 3049 | [Earliest Second to Mark Indices II](https://leetcode.com/problems/earliest-second-to-mark-indices-ii/) | [C++](./C++/earliest-second-to-mark-indices-ii.cpp) [Python](./Python/earliest-second-to-mark-indices-ii.py) | _O((m + nlogn) *logm)_ | _O(n)_ | Hard | | Binary Search, Greedy, Heap |
-3104 | [Find Longest Self-Contained Substring](https://leetcode.com/problems/find-longest-self-contained-substring/) | [C++](./C++/find-longest-self-contained-substring.cpp) [Python](./Python/find-longest-self-contained-substring.py) | _O(n + 26^3 * logn)_ | _O(n)_ | Hard | 🔒 | Freq Table, Two Pointers, Hash Table, Binary Search |
+3104 | [Find Longest Self-Contained Substring](https://leetcode.com/problems/find-longest-self-contained-substring/) | [C++](./C++/find-longest-self-contained-substring.cpp) [Python](./Python/find-longest-self-contained-substring.py) | _O(n + 26^3 * logn)_ | _O(n)_ | Hard | 🔒 | Brute Force, Freq Table, Two Pointers, Hash Table, Binary Search |
 
 <br/>
 
