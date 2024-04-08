@@ -1,4 +1,4 @@
-# Time:  O(logn) = O(1)
+# Time:  O(logn)
 # Space: O(1)
 
 class Solution(object):
