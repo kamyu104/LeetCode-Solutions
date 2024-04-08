@@ -8,7 +8,6 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        result = l1 = l2 = 0
         def f(compare):
             result = l = 0
             for i in xrange(len(nums)):
