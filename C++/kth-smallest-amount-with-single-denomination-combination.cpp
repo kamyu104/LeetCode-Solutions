@@ -5,27 +5,6 @@
 class Solution {
 public:
     long long findKthSmallest(vector<int>& coins, int k) {
-        vector<vector<int64_t>> lookup(size(coins) + 1);
-        for (int mask = 1; mask < 1 << size(coins); ++mask) {
-            int64_t l = 1;
-            for (int i = 0; i < size(coins); ++i) {
-                if (!(mask & (1 << i))) {
-                    continue;
-                }
-                l = lcm(l, coins[i]);
-            }
-            lookup[__builtin_popcount(mask)].emplace_back(l);
-        }
-        const auto& check = [&](auto target) {
-            int64_t count = 0;
-            for (int i = 1; i <= size(coins); ++i) {
-                for (const auto& l : lookup[i]) {
-                    count += ((i + 1) & 1 ? -1 : +1) * target / l;
-                }
-            }
-            return count >= k;
-        };
-    
         const auto& binary_search = [](auto left, auto right, const auto& check) {
             while (left <= right) {
                 const auto mid = left + (right - left) / 2;
@@ -37,8 +16,27 @@ public:
             }
             return left;
         };
-    
+
+        vector<vector<int64_t>> lookup(size(coins) + 1);
+        for (int mask = 1; mask < 1 << size(coins); ++mask) {
+            int64_t l = 1;
+            for (int i = 0; i < size(coins); ++i) {
+                if (!(mask & (1 << i))) {
+                    continue;
+                }
+                l = lcm(l, coins[i]);
+            }
+            lookup[__builtin_popcount(mask)].emplace_back(l);
+        }
         const int64_t mn = ranges::min(coins);
-        return binary_search(mn, k * mn, check);
+        return binary_search(mn, k * mn, [&](auto target) {
+            int64_t count = 0;
+            for (int i = 1; i <= size(coins); ++i) {
+                for (const auto& l : lookup[i]) {
+                    count += ((i + 1) & 1 ? -1 : +1) * target / l;
+                }
+            }
+            return count >= k;
+        });
     }
 };
