@@ -92,8 +92,8 @@ public:
                 }), end(masks));
                 for (int k = 0; k < size(masks); ++k) {
                     const auto [mask, left] = masks[k];
-                    const int right = k + 1 != size(masks) ? masks[k + 1].second - 1 : i;
                     if (mask == andValues[j]) {
+                        const int right = k + 1 != size(masks) ? masks[k + 1].second - 1 : i;
                         if (st.query(left, right) != INF) {
                             // any j in range(left, right+1) has same and(nums[j:i+1]) = mask
                             new_dp[i + 1] = min(new_dp[i + 1], st.query(left, right) + nums[i]);
