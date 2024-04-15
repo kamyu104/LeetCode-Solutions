@@ -82,7 +82,7 @@ public:
             vector<int> new_dp(size(nums) + 1, INF);
             vector<pair<int, int>> masks;
             SparseTable st(dp, [&](int i, int j) { return min(i, j); });
-            for (int i = 0; i < size(nums); ++i) {
+            for (int i = j; i < size(nums); ++i) {
                 masks.emplace_back(nums[i], i);
                 for (auto& [mask, _] : masks) {
                     mask &= nums[i];
