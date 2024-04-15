@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// mono stack
+// mono stack, combinatorics
 class Solution {
 public:
     long long numberOfSubarrays(vector<int>& nums) {
