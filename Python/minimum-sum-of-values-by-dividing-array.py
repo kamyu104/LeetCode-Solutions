@@ -14,10 +14,12 @@ class Solution(object):
         """
         INF = float("inf")
         L = max(nums).bit_length()
-        def update(cnt, x, l, d):
+        def update(cnt, x, d):
             for i in xrange(L):
                 if x&(1<<i):
                     cnt[i] += d
+        
+        def mask(cnt, l):
             return reduce(lambda accu, i: accu|(1<<i), (i for i  in xrange(L) if cnt[i] == l), 0)
 
         dp = [INF]*(len(nums)+1)
@@ -29,18 +31,18 @@ class Solution(object):
             dq = collections.deque()
             left = idx = j
             for right in xrange(j, len(nums)):
-                mask = update(cnt, nums[right], right-left+1, +1)
-                if mask <= andValues[j]:
+                update(cnt, nums[right], +1)
+                if mask(cnt, right-left+1) <= andValues[j]:
                     while left <= right:
-                        if mask > andValues[j]:
+                        if mask(cnt, right-left+1) > andValues[j]:
                             break
-                        mask = update(cnt, nums[left], right-left, -1)
+                        update(cnt, nums[left], -1)
                         left += 1
                     left -= 1
-                    mask = update(cnt, nums[left], right-left+1, +1)  # try to move to the last left s.t. mask == andValues[j]
+                    update(cnt, nums[left], +1)  # try to move to the last left s.t. mask == andValues[j]
                 if (andValues[j]&nums[right]) == andValues[j]:
                     l[right + 1] = l[right]+1
-                if mask != andValues[j]:
+                if mask(cnt, right-left+1) != andValues[j]:
                     continue
                 # new_dp[right+1] = min(dp[left-l], dp[left-l+1], ..., dp[left])+nums[right]
                 while idx <= left:
