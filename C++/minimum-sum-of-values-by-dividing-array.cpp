@@ -51,7 +51,7 @@ public:
                 if (mask(cnt, right - left + 1) != andValues[j]) {
                     continue;
                 }
-                // new_dp[right+1] = min(dp[left-l], dp[left-l+1], ..., dp[left])+nums[right]
+                // new_dp[right+1] = min(dp[left-l[left]], dp[left-l[left]+1], ..., dp[left])+nums[right]
                 for (; idx <= left; ++idx) {
                     for (; !empty(dq) && dp[dq.back()] >= dp[idx]; dq.pop_back());
                     dq.emplace_back(idx);
