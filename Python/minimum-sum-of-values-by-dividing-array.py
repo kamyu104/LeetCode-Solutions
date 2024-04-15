@@ -39,12 +39,12 @@ class Solution(object):
                         update(cnt, nums[left], -1)
                         left += 1
                     left -= 1
-                    update(cnt, nums[left], +1)  # try to move to the last left s.t. mask == andValues[j]
+                    update(cnt, nums[left], +1)  # try to move to the last left s.t. mask(cnt, right-left+1) == andValues[j]
                 if (andValues[j]&nums[right]) == andValues[j]:
                     l[right + 1] = l[right]+1
                 if mask(cnt, right-left+1) != andValues[j]:
                     continue
-                # new_dp[right+1] = min(dp[left-l], dp[left-l+1], ..., dp[left])+nums[right]
+                # new_dp[right+1] = min(dp[left-l[left]], dp[left-l[left]+1], ..., dp[left])+nums[right]
                 while idx <= left:
                     while dq and dp[dq[-1]] >= dp[idx]:
                         dq.pop()
