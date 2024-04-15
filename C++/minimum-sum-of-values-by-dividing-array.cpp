@@ -12,12 +12,18 @@ public:
         };
 
         const int L = bit_length(ranges::max(nums));
-        const auto& update = [&](auto& cnt, int x, int l, int d) {
+        const auto& update = [&](auto& cnt, int x, int d) {
             int mask = 0;
             for (int i = 0; i < L; ++i) {
                 if (x & (1 << i)) {
                     cnt[i] += d;
                 }
+            }
+        };
+
+        const auto& get_mask = [&](const auto& cnt, int l) {
+            int mask = 0;
+            for (int i = 0; i < L; ++i) {
                 if (cnt[i] == l) {
                     mask |= 1 << i;
                 }
@@ -31,18 +37,18 @@ public:
             vector<int> new_dp(size(dp), INF), cnt(L), l(size(dp));
             deque<int> dq;
             for (int right = j, left = right, idx = right; right < size(nums); ++right) {
-                int mask = update(cnt, nums[right], right - left + 1, +1);
-                if (mask <= andValues[j]) {
-                    for (; left <= right && mask <= andValues[j]; ++left) {
-                        mask = update(cnt, nums[left], right - left, -1);
+                update(cnt, nums[right], +1);
+                if (get_mask(cnt, right - left + 1) <= andValues[j]) {
+                    for (; left <= right && get_mask(cnt, right - left + 1) <= andValues[j]; ++left) {
+                        update(cnt, nums[left], -1);
                     }
                     --left;
-                    mask = update(cnt, nums[left], right - left + 1, +1);  // try to move to the last left s.t. mask == andValues[j]
+                    update(cnt, nums[left], +1);  // try to move to the last left s.t. get_mask(cnt, right - left + 1) == andValues[j]
                 }
                 if ((andValues[j] & nums[right]) == andValues[j]) {
                     l[right + 1] = l[right] + 1;
                 }
-                if (mask != andValues[j]) {
+                if (get_mask(cnt, right - left + 1) != andValues[j]) {
                     continue;
                 }
                 // new_dp[right+1] = min(dp[left-l], dp[left-l+1], ..., dp[left])+nums[right]
