@@ -21,14 +21,14 @@ public:
             }
         };
 
-        const auto& get_mask = [&](const auto& cnt, int l) {
-            int mask = 0;
+        const auto& mask = [&](const auto& cnt, int l) {
+            int result = 0;
             for (int i = 0; i < L; ++i) {
                 if (cnt[i] == l) {
-                    mask |= 1 << i;
+                    result |= 1 << i;
                 }
             }
-            return mask;
+            return result;
         };
 
         vector<int> dp(size(nums) + 1, INF);
@@ -38,17 +38,17 @@ public:
             deque<int> dq;
             for (int right = j, left = right, idx = right; right < size(nums); ++right) {
                 update(cnt, nums[right], +1);
-                if (get_mask(cnt, right - left + 1) <= andValues[j]) {
-                    for (; left <= right && get_mask(cnt, right - left + 1) <= andValues[j]; ++left) {
+                if (mask(cnt, right - left + 1) <= andValues[j]) {
+                    for (; left <= right && mask(cnt, right - left + 1) <= andValues[j]; ++left) {
                         update(cnt, nums[left], -1);
                     }
                     --left;
-                    update(cnt, nums[left], +1);  // try to move to the last left s.t. get_mask(cnt, right - left + 1) == andValues[j]
+                    update(cnt, nums[left], +1);  // try to move to the last left s.t. mask(cnt, right - left + 1) == andValues[j]
                 }
                 if ((andValues[j] & nums[right]) == andValues[j]) {
                     l[right + 1] = l[right] + 1;
                 }
-                if (get_mask(cnt, right - left + 1) != andValues[j]) {
+                if (mask(cnt, right - left + 1) != andValues[j]) {
                     continue;
                 }
                 // new_dp[right+1] = min(dp[left-l], dp[left-l+1], ..., dp[left])+nums[right]
