@@ -1435,7 +1435,7 @@
 3087 | [Find Trending Hashtags](https://leetcode.com/problems/find-trending-hashtags/) | [MySQL](./MySQL/find-trending-hashtags.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒||
 3089 | [Find Bursty Behavior](https://leetcode.com/problems/find-bursty-behavior/) | [MySQL](./MySQL/find-bursty-behavior.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3103 | [Find Trending Hashtags II](https://leetcode.com/problems/find-trending-hashtags-ii/) | [MySQL](./MySQL/find-trending-hashtags-ii.sql) | _O(n * l^2 + (n * l) * log(n * l))_ | _O(n * l^2)_       | Hard           |🔒| Recursive CTE |
-3118 | [Friday Purchases III](https://leetcode.com/problems/friday-purchases-iii/) | [MySQL](./MySQL/friday-purchases-iii.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
+3118 | [Friday Purchases III](https://leetcode.com/problems/friday-purchase-iii/) | [MySQL](./MySQL/friday-purchase-iii.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
