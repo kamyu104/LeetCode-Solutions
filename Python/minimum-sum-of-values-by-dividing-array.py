@@ -1,5 +1,5 @@
 # Time:  O(n * m * logr), r = max(nums)
-# Space: O(n * m * logr)
+# Space: O(n + logr)
 
 import collections
 
