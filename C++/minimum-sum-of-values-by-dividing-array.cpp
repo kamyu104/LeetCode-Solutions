@@ -13,7 +13,6 @@ public:
 
         const int L = bit_length(ranges::max(nums));
         const auto& update = [&](auto& cnt, int x, int d) {
-            int mask = 0;
             for (int i = 0; i < L; ++i) {
                 if (x & (1 << i)) {
                     cnt[i] += d;
