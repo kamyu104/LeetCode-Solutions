@@ -24,7 +24,7 @@ memberships_cte AS (
     ORDER BY NULL
 )
 
-SELECT week_of_month, membership, IFNULL(total_amount, 0) AS total_amount
+SELECT week_of_month, membership, COALESCE(total_amount, 0) AS total_amount
 FROM weeks_cte CROSS JOIN memberships_cte
 LEFT JOIN friday_purchases_cte USING(week_of_month, membership)
 ORDER BY 1, 2;
