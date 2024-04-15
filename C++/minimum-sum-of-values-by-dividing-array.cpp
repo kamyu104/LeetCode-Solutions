@@ -95,7 +95,7 @@ public:
                     const int right = k + 1 != size(masks) ? masks[k + 1].second - 1 : i;
                     if (mask == andValues[j]) {
                         if (st.query(left, right) != INF) {
-                            new_dp[i + 1] = min(new_dp[i + 1], nums[i] + st.query(left, right));
+                            new_dp[i + 1] = min(new_dp[i + 1], st.query(left, right) + nums[i]);
                         }
                     }
                 }
