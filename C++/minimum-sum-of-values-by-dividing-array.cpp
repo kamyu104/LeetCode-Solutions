@@ -156,7 +156,7 @@ public:
             if (i == size(nums) || j == size(andValues) || mask < andValues[j]) {
                 return INF;
             }
-            if (lookup[i][j][mask] == 0) {
+            if (!lookup[i][j].count(mask)) {
                 int curr = memoization(i + 1, j, mask & nums[i]);
                 if ((mask & nums[i]) == andValues[j]) {
                     const int total = memoization(i + 1, j + 1, FULL_MASK);
