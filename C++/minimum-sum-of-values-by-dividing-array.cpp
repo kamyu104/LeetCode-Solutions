@@ -68,10 +68,75 @@ public:
     }
 };
 
+// Time:  O(m * n * (logn + logr)), r = max(nums)
+// Space: O(n + logr)
+// dp, sparse table
+class Solution2 {
+public:
+    int minimumValueSum(vector<int>& nums, vector<int>& andValues) {
+        static const int INF = numeric_limits<int>::max();
+
+        vector<int> dp(size(nums) + 1, INF);
+        dp[0] = 0;
+        for (int j = 0; j < size(andValues); ++j) {
+            SparseTable st(dp, [&](int i, int j) { return min(i, j); });
+            vector<int> new_dp(size(nums) + 1, INF);
+            vector<pair<int, int>> masks;
+            for (int i = 0; i < size(nums); ++i) {
+                masks.emplace_back(nums[i], i);
+                for (auto& [mask, _] : masks) {
+                    mask &= nums[i];
+                }
+                masks.erase(unique(begin(masks), end(masks), [](const auto& a, const auto& b) {
+                    return a.first == b.first;
+                }), end(masks));
+                for (int k = 0; k < size(masks); ++k) {
+                    const auto [mask, left] = masks[k];
+                    const int right = k + 1 != size(masks) ? masks[k + 1].second - 1 : i;
+                    if (mask == andValues[j]) {
+                        if (st.query(left, right) != INF) {
+                            new_dp[i + 1] = min(new_dp[i + 1], nums[i] + st.query(left, right));
+                        }
+                    }
+                }
+            }
+            dp = move(new_dp);
+      }
+      return dp.back() == INF ? -1 : dp.back();
+    }
+
+private:
+    // Reference: https://cp-algorithms.com/data_structures/sparse-table.html
+    class SparseTable {
+    public:
+        SparseTable(const vector<int>& arr, function<int (int, int)> fn)
+         :  fn(fn) {  // Time: O(n * logn), Space: O(nlogn)
+            const int n = size(arr);
+            const int k = __lg(n);
+            st.assign(k + 1, vector<int>(n));
+            st[0].assign(cbegin(arr), cend(arr));
+            for (int i = 1; i <= k; ++i) {
+                for (int j = 0; j + (1 << i) <= n; ++j) {
+                    st[i][j] = fn(st[i - 1][j], st[i - 1][j + (1 << (i - 1))]);
+                }
+            }
+         }
+
+        int query(int L, int R) const {
+            const int i = __lg(R - L + 1);
+            return fn(st[i][L], st[i][R - (1 << i) + 1]);  // Time: O(1)
+        }
+    
+    private:
+        vector<vector<int>> st;
+        const function<int (int, int)>& fn;
+    };
+};
+
 // Time:  O(n * m * logr), r = max(nums)
 // Space: O(n * m * logr)
 // memoization
-class Solution2 {
+class Solution3 {
 public:
     int minimumValueSum(vector<int>& nums, vector<int>& andValues) {
         static const int INF = numeric_limits<int>::max();
