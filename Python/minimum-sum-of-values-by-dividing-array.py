@@ -104,9 +104,9 @@ class Solution2(object):
                     x[0] &= nums[i]
                 masks = [x for k, x in enumerate(masks) if k == 0 or masks[k-1][0] != masks[k][0]]
                 for k, [mask, left] in enumerate(masks):
-                    right = masks[k+1][1]-1 if k+1 != len(masks) else i
                     if mask == andValues[j]:
                         # any j in range(left, right+1) has same and(nums[j:i+1]) = mask
+                        right = masks[k+1][1]-1 if k+1 != len(masks) else i
                         new_dp[i+1] = min(new_dp[i+1], st.query(left, right)+nums[i])
                         break
             dp = new_dp
