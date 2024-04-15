@@ -112,7 +112,7 @@ private:
     class SparseTable {
     public:
         SparseTable(const vector<int>& arr, function<int (int, int)> fn)
-         :  fn(fn) {  // Time: O(n * logn), Space: O(nlogn)
+         :  fn(fn) {  // Time: O(nlogn) * O(fn) = O(nlogn), Space: O(nlogn)
             const int n = size(arr);
             const int k = __lg(n);
             st.assign(k + 1, vector<int>(n));
@@ -126,7 +126,7 @@ private:
 
         int query(int L, int R) const {
             const int i = __lg(R - L + 1);
-            return fn(st[i][L], st[i][R - (1 << i) + 1]);  // Time: O(1)
+            return fn(st[i][L], st[i][R - (1 << i) + 1]);  // Time: O(fn) = O(1)
         }
     
     private:
