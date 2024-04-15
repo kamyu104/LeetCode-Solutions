@@ -89,7 +89,7 @@ class Solution2(object):
                         self.st[i][j] = fn(self.st[i-1][j], self.st[i-1][j+(1<<(i-1))])
         
             def query(self, L, R):  # Time: O(fn)
-                i = self.bit_length[R-L+1]-1 
+                i = self.bit_length[R-L+1]-1  # log2_floor(R-L+1)
                 return self.fn(self.st[i][L], self.st[i][R-(1<<i)+1])
         
         dp = [INF]*(len(nums)+1)
