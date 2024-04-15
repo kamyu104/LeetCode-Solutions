@@ -60,9 +60,6 @@ class Solution(object):
 
 # Time:  O(n * m * (logn + logr)), r = max(nums)
 # Space: O(n + logr)
-import collections
-
-
 # dp, sparse table
 class Solution2(object):
     def minimumValueSum(self, nums, andValues):
