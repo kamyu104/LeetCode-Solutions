@@ -982,7 +982,7 @@
 3082 | [Find the Sum of the Power of All Subsequences](https://leetcode.com/problems/find-the-sum-of-the-power-of-all-subsequences/) | [C++](./C++/find-the-sum-of-the-power-of-all-subsequences.cpp) [Python](./Python/find-the-sum-of-the-power-of-all-subsequences.py) | _O(n * k)_ | _O(k)_ | Hard | | DP, Combinatorics
 3098 | [Find the Sum of Subsequence Powers](https://leetcode.com/problems/find-the-sum-of-subsequence-powers/) | [C++](./C++/find-the-sum-of-subsequence-powers.cpp) [Python](./Python/find-the-sum-of-subsequence-powers.py) | _O(n^3 * k)_ | _O(n^2)_ | Hard | | DP, Prefix Sum, Two Pointers
 3101 | [Count Alternating Subarrays](https://leetcode.com/problems/count-alternating-subarrays/) | [C++](./C++/count-alternating-subarrays.cpp) [Python](./Python/count-alternating-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | DP
-3117 | [Minimum Sum of Values by Dividing Array](https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/) | [C++](./C++/minimum-sum-of-values-by-dividing-array.cpp) [Python](./Python/minimum-sum-of-values-by-dividing-array.py) | _O(n * m * logr)_ | _O(n + logr)_ | Hard | | DP, Mono Deque, Two Pointers, Memoization
+3117 | [Minimum Sum of Values by Dividing Array](https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/) | [C++](./C++/minimum-sum-of-values-by-dividing-array.cpp) [Python](./Python/minimum-sum-of-values-by-dividing-array.py) | _O(n * m * logr)_ | _O(n + logr)_ | Hard | | Memoization, DP, Sparse Table, Mono Deque, Two Pointers
 
 <br/>
 <div align="right">
