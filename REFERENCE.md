@@ -148,7 +148,7 @@
             * [Effective TCP/IP Programming](https://www.amazon.com/dp/0201615894)
             * [Understanding Linux Network Internals](https://www.amazon.com/dp/0596002556)
 
-## Coding Competition Practice Sites
+## Coding Challenge Sites
 
 * [Google Coding Competitions Archive](https://github.com/google/coding-competitions-archive)
 * [Meta Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup)
@@ -161,10 +161,6 @@
 * [Sphere Online Judge](https://www.spoj.com/problems/classical/)
 * [CSES Problem Set](https://cses.fi/problemset/list/)
 * [Competitive Programming Hall Of Fame](https://cphof.org/contests)
-
-
-## Coding Challenges Sites
-
 * [Advent of Code](https://adventofcode.com/)
 * [Project Euler](https://projecteuler.net/archives)
 
