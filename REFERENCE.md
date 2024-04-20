@@ -156,6 +156,9 @@
 * [CodeForces](https://codeforces.com/problemset)
 * [Topcoder](https://arena.topcoder.com/)
 * [CS Academy](https://csacademy.com/contest/archive)
+* [UVa Online Judge](https://onlinejudge.org/)
+* [Sphere Online Judge](https://www.spoj.com/problems/classical/)
+* [Project Eular](https://projecteuler.net/archives)
 
 ## Blogs
 
