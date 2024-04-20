@@ -160,7 +160,7 @@
 * [Sphere Online Judge](https://www.spoj.com/problems/classical/)
 * [Project Euler](https://projecteuler.net/archives)
 * [CSES Problem Set](https://cses.fi/problemset/list/)
-* [Competitive Programming Hall Of Fame](https://cphof.org/)
+* [Competitive Programming Hall Of Fame](https://cphof.org/contests)
 
 ## Blogs
 
