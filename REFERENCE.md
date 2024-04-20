@@ -148,6 +148,18 @@
             * [Effective TCP/IP Programming](https://www.amazon.com/dp/0201615894)
             * [Understanding Linux Network Internals](https://www.amazon.com/dp/0596002556)
 
+## Programming Contest Sites
+
+* [Google Coding Competitions Archive](https://github.com/google/coding-competitions-archive)
+* [Meta Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup)
+* [AtCoder](https://atcoder.jp/)
+* [CodeForces](https://codeforces.com/)
+* [Topcoder](https://www.topcoder.com/)
+* [CS Academy](https://csacademy.com/)
+* [CodeChef](https://www.codechef.com/)
+* [HackerRank](https://www.hackerrank.com/)
+* [HackerEarth](https://www.hackerearth.com/)
+
 ## Blogs
 
 - Computer Science
