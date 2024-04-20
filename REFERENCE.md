@@ -148,7 +148,7 @@
             * [Effective TCP/IP Programming](https://www.amazon.com/dp/0201615894)
             * [Understanding Linux Network Internals](https://www.amazon.com/dp/0596002556)
 
-## Programming Contest Sites
+## Coding Competition Practice Sites
 
 * [Google Coding Competitions Archive](https://github.com/google/coding-competitions-archive)
 * [Meta Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup)
