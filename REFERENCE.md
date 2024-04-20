@@ -152,10 +152,10 @@
 
 * [Google Coding Competitions Archive](https://github.com/google/coding-competitions-archive)
 * [Meta Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup)
-* [AtCoder](https://atcoder.jp/)
-* [CodeForces](https://codeforces.com/)
-* [Topcoder](https://www.topcoder.com/)
-* [CS Academy](https://csacademy.com/)
+* [AtCoder](https://kenkoooo.com/atcoder/#/table/)
+* [CodeForces](https://codeforces.com/problemset)
+* [Topcoder](https://arena.topcoder.com/)
+* [CS Academy](https://csacademy.com/contest/archive)
 
 ## Blogs
 
