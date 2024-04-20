@@ -156,9 +156,6 @@
 * [CodeForces](https://codeforces.com/)
 * [Topcoder](https://www.topcoder.com/)
 * [CS Academy](https://csacademy.com/)
-* [CodeChef](https://www.codechef.com/)
-* [HackerRank](https://www.hackerrank.com/)
-* [HackerEarth](https://www.hackerearth.com/)
 
 ## Blogs
 
