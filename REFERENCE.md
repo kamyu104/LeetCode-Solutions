@@ -159,9 +159,14 @@
 * [CodeChef](https://www.codechef.com/contests/)
 * [UVa Online Judge](https://onlinejudge.org/)
 * [Sphere Online Judge](https://www.spoj.com/problems/classical/)
-* [Project Euler](https://projecteuler.net/archives)
 * [CSES Problem Set](https://cses.fi/problemset/list/)
 * [Competitive Programming Hall Of Fame](https://cphof.org/contests)
+
+
+## Coding Challenges Sites
+
+* [Advent of Code](https://adventofcode.com/)
+* [Project Euler](https://projecteuler.net/archives)
 
 ## Blogs
 
