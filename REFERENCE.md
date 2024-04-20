@@ -159,6 +159,7 @@
 * [UVa Online Judge](https://onlinejudge.org/)
 * [Sphere Online Judge](https://www.spoj.com/problems/classical/)
 * [Project Euler](https://projecteuler.net/archives)
+* [CSES Problem Sets](https://cses.fi/problemset/list/)
 
 ## Blogs
 
