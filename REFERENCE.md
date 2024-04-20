@@ -150,6 +150,7 @@
 
 ## Coding Challenge Sites
 
+* [Competitive Programming Hall Of Fame](https://cphof.org/contests)
 * [Google Coding Competitions Archive](https://github.com/google/coding-competitions-archive)
 * [Meta Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup)
 * [AtCoder](https://kenkoooo.com/atcoder/#/table/)
@@ -160,7 +161,6 @@
 * [UVa Online Judge](https://onlinejudge.org/)
 * [Sphere Online Judge](https://www.spoj.com/problems/classical/)
 * [CSES Problem Set](https://cses.fi/problemset/list/)
-* [Competitive Programming Hall Of Fame](https://cphof.org/contests)
 * [Advent of Code](https://adventofcode.com/)
 * [Project Euler](https://projecteuler.net/archives)
 
