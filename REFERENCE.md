@@ -158,7 +158,7 @@
 * [CS Academy](https://csacademy.com/contest/archive)
 * [UVa Online Judge](https://onlinejudge.org/)
 * [Sphere Online Judge](https://www.spoj.com/problems/classical/)
-* [Project Eular](https://projecteuler.net/archives)
+* [Project Euler](https://projecteuler.net/archives)
 
 ## Blogs
 
