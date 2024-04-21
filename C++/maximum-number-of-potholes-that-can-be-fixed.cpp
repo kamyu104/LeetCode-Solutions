@@ -46,7 +46,7 @@ public:
         int result = 0;
         for (int i = size(ls) - 1; i >= 0; --i) {
             const int c = min(ls[i] + 1, budget);
-            if (c <= 1) {
+            if (c - 1 <= 0) {
                 break;
             }
             result += c - 1;
@@ -76,7 +76,7 @@ public:
         int result = 0;
         for (int i = size(ls) - 1; i >= 0; --i) {
             const int c = min(ls[i] + 1, budget);
-            if (c <= 1) {
+            if (c - 1) {
                 break;
             }
             result += c - 1;
