@@ -16,10 +16,10 @@ class Solution(object):
             cnt = [0]*(MAX_VALUE+1)
             for i in xrange(len(grid)):
                 cnt[grid[i][j]] += 1
-            top1 = min(xrange(MAX_VALUE+1), key=lambda x: dp[x])
-            top2 = min((i for i in xrange(MAX_VALUE+1) if i != top1), key=lambda x: dp[x])
+            k1 = min(xrange(MAX_VALUE+1), key=lambda x: dp[x])
+            k2 = min((i for i in xrange(MAX_VALUE+1) if i != k1), key=lambda x: dp[x])
             for i in xrange(MAX_VALUE+1):
-                new_dp[i] = min(new_dp[i], (dp[top1] if i != top1 else dp[top2])+(len(grid)-cnt[i]))
+                new_dp[i] = min(new_dp[i], (dp[k1] if i != k1 else dp[k2])+(len(grid)-cnt[i]))
             dp = new_dp
         return min(dp)
 
