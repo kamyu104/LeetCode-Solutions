@@ -10,10 +10,8 @@ public:
         for (int i = 0; i < size(word); ++i) {
             if (islower(word[i])) {
                 lookup1[word[i] - 'a'] = i;
-            } else {
-                if (lookup2[word[i] - 'A'] == -1) {
-                    lookup2[word[i] - 'A'] = i;
-                }
+            } else if (lookup2[word[i] - 'A'] == -1) {
+                lookup2[word[i] - 'A'] = i;
             }
         }
         int result = 0;
