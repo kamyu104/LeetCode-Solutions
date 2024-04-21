@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3118%20%2F%203118-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3123%20%2F%203123-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -489,7 +489,8 @@
 3046 | [Split the Array](https://leetcode.com/problems/split-the-array/) | [C++](./C++/split-the-array.cpp) [Python](./Python/split-the-array.py) | _O(n)_  | _O(n)_ | Easy || Freq Table
 3078 | [Match Alphanumerical Pattern in Matrix I](https://leetcode.com/problems/match-alphanumerical-pattern-in-matrix-i/) | [C++](./C++/match-alphanumerical-pattern-in-matrix-i.cpp) [Python](./Python/match-alphanumerical-pattern-in-matrix-i.py) | _O(n * m * r * c)_  | _O(1)_ | Medium |🔒| Brute Force, Hash Table
 3083 | [Existence of a Substring in a String and Its Reverse](https://leetcode.com/problems/existence-of-a-substring-in-a-string-and-its-reverse/) | [C++](./C++/existence-of-a-substring-in-a-string-and-its-reverse.cpp) [Python](./Python/existence-of-a-substring-in-a-string-and-its-reverse.py) | _O(n)_  | _O(min(n, 26^2))_ | Easy || Hash Table
-
+3120 | [Count the Number of Special Characters I](https://leetcode.com/problems/count-the-number-of-special-characters-i/) | [C++](./C++/count-the-number-of-special-characters-i.cpp) [Python](./Python/count-the-number-of-special-characters-i.py) | _O(n + 26)_  | _O(26)_ | Easy || Hash Table
+3121 | [Count the Number of Special Characters II](https://leetcode.com/problems/count-the-number-of-special-characters-ii/) | [C++](./C++/count-the-number-of-special-characters-ii.cpp) [Python](./Python/count-the-number-of-special-characters-oi.py) | _O(n + 26)_  | _O(26)_ | Medium || Hash Table
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -983,6 +984,7 @@
 3098 | [Find the Sum of Subsequence Powers](https://leetcode.com/problems/find-the-sum-of-subsequence-powers/) | [C++](./C++/find-the-sum-of-subsequence-powers.cpp) [Python](./Python/find-the-sum-of-subsequence-powers.py) | _O(n^3 * k)_ | _O(n^2)_ | Hard | | DP, Prefix Sum, Two Pointers
 3101 | [Count Alternating Subarrays](https://leetcode.com/problems/count-alternating-subarrays/) | [C++](./C++/count-alternating-subarrays.cpp) [Python](./Python/count-alternating-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | DP
 3117 | [Minimum Sum of Values by Dividing Array](https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/) | [C++](./C++/minimum-sum-of-values-by-dividing-array.cpp) [Python](./Python/minimum-sum-of-values-by-dividing-array.py) | _O(n * m * logr)_ | _O(n + logr)_ | Hard | | Memoization, DP, RMQ, Sparse Table, Mono Deque, Two Pointers
+3122 | [Minimum Number of Operations to Satisfy Conditions](https://leetcode.com/problems/minimum-number-of-operations-to-satisfy-conditions/) | [C++](./C++/minimum-number-of-operations-to-satisfy-conditions.cpp) [Python](./Python/minimum-number-of-operations-to-satisfy-conditions.py) | _O(n * (m + 100))_ | _O(10)_ | Medium | | DP
 
 <br/>
 <div align="right">
@@ -1125,6 +1127,7 @@
 3107 | [Minimum Operations to Make Median of Array Equal to K](https://leetcode.com/problems/minimum-operations-to-make-median-of-array-equal-to-k/) | [C++](./C++/minimum-operations-to-make-median-of-array-equal-to-k.cpp) [Python](./Python/minimum-operations-to-make-median-of-array-equal-to-k.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Quick Select, Greedy
 3111 | [Minimum Rectangles to Cover Points](https://leetcode.com/problems/minimum-rectangles-to-cover-points/) | [C++](./C++/minimum-rectangles-to-cover-points.cpp) [Python](./Python/minimum-rectangles-to-cover-points.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Greedy
 3114 | [Latest Time You Can Obtain After Replacing Characters](https://leetcode.com/problems/latest-time-you-can-obtain-after-replacing-characters/)| [C++](./C++/latest-time-you-can-obtain-after-replacing-characters.cpp) [Python](./Python/latest-time-you-can-obtain-after-replacing-characters.py)| _O(1)_ | _O(1)_ | Easy | | String, Greedy |
+3119 | [Maximum Number of Potholes That Can Be Fixed](https://leetcode.com/problems/maximum-number-of-potholes-that-can-be-fixed/)| [C++](./C++/maximum-number-of-potholes-that-can-be-fixed.cpp) [Python](./Python/maximum-number-of-potholes-that-can-be-fixed.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | Sort, Counting Sort, Greedy |
 
 <br/>
 <div align="right">
@@ -1164,6 +1167,7 @@
 2959 | [Number of Possible Sets of Closing Branches](https://leetcode.com/problems/number-of-possible-sets-of-closing-branches/) | [C++](./C++/number-of-possible-sets-of-closing-branches.cpp) [Python](./Python/number-of-possible-sets-of-closing-branches.py) | _O(r + 2^n * n^2)_ | _O(n^3)_ | Medium | | Graph, Bitmasks, `Floyd-Warshall Algorithm`, Backtracking
 3108 | [Minimum Cost Walk in Weighted Graph](https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/) | [C++](./C++/minimum-cost-walk-in-weighted-graph.cpp) [Python](./Python/minimum-cost-walk-in-weighted-graph.py) | _O(n + e + q)_ | _O(n)_ | Hard | | Union Find
 3112 | [Minimum Time to Visit Disappearing Nodes](https://leetcode.com/problems/find-the-closest-marked-node/)  | [C++](./C++/minimum-time-to-visit-disappearing-nodes.cpp) [Python](./Python/minimum-time-to-visit-disappearing-nodes.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium           | | Graph, `Dijkstra's Algorithm` |
+3123 | [Find Edges in Shortest Paths](https://leetcode.com/problems/find-edges-in-shortest-paths/)  | [C++](./C++/find-edges-in-shortest-paths.cpp) [Python](./Python/find-edges-in-shortest-paths.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard           | | Graph, `Dijkstra's Algorithm` |
 
 <br/>
 <div align="right">
