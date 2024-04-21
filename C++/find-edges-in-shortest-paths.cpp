@@ -33,6 +33,7 @@ public:
             }
             return best;
         };
+
         const auto& dist1 = dijkstra(0);
         const auto& dist2 = dijkstra(n - 1);
         vector<bool> result(size(edges));
