@@ -150,6 +150,7 @@
 
 ## Coding Challenge Sites
 
+* [CLIST](https://clist.by/)
 * [Competitive Programming Hall Of Fame](https://cphof.org/contests)
 * [Google Coding Competitions Archive](https://github.com/google/coding-competitions-archive)
 * [Meta Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup)
