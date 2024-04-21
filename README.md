@@ -490,7 +490,7 @@
 3078 | [Match Alphanumerical Pattern in Matrix I](https://leetcode.com/problems/match-alphanumerical-pattern-in-matrix-i/) | [C++](./C++/match-alphanumerical-pattern-in-matrix-i.cpp) [Python](./Python/match-alphanumerical-pattern-in-matrix-i.py) | _O(n * m * r * c)_  | _O(1)_ | Medium |🔒| Brute Force, Hash Table
 3083 | [Existence of a Substring in a String and Its Reverse](https://leetcode.com/problems/existence-of-a-substring-in-a-string-and-its-reverse/) | [C++](./C++/existence-of-a-substring-in-a-string-and-its-reverse.cpp) [Python](./Python/existence-of-a-substring-in-a-string-and-its-reverse.py) | _O(n)_  | _O(min(n, 26^2))_ | Easy || Hash Table
 3120 | [Count the Number of Special Characters I](https://leetcode.com/problems/count-the-number-of-special-characters-i/) | [C++](./C++/count-the-number-of-special-characters-i.cpp) [Python](./Python/count-the-number-of-special-characters-i.py) | _O(n + 26)_  | _O(26)_ | Easy || Hash Table
-3121 | [Count the Number of Special Characters II](https://leetcode.com/problems/count-the-number-of-special-characters-ii/) | [C++](./C++/count-the-number-of-special-characters-ii.cpp) [Python](./Python/count-the-number-of-special-characters-oi.py) | _O(n + 26)_  | _O(26)_ | Medium || Hash Table
+3121 | [Count the Number of Special Characters II](https://leetcode.com/problems/count-the-number-of-special-characters-ii/) | [C++](./C++/count-the-number-of-special-characters-ii.cpp) [Python](./Python/count-the-number-of-special-characters-ii.py) | _O(n + 26)_  | _O(26)_ | Medium || Hash Table
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
