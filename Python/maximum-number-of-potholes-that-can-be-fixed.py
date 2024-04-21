@@ -39,7 +39,7 @@ class Solution(object):
         result = 0
         for l in reversed(ls):
             c = min(l+1, budget)
-            if c <= 1:
+            if c-1 <= 0:
                 break
             result += c-1
             budget -= c
@@ -68,7 +68,7 @@ class Solution2(object):
         result = 0
         for l in reversed(ls):
             c = min(l+1, budget)
-            if c <= 1:
+            if c-1 <= 0:
                 break
             result += c-1
             budget -= c
