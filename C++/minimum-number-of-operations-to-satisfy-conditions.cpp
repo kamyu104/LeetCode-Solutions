@@ -26,6 +26,6 @@ public:
             }
             dp = move(new_dp);
         }
-        return *min_element(begin(dp), end(dp));
+        return ranges::min(dp);
     }
 };
