@@ -984,7 +984,7 @@
 3098 | [Find the Sum of Subsequence Powers](https://leetcode.com/problems/find-the-sum-of-subsequence-powers/) | [C++](./C++/find-the-sum-of-subsequence-powers.cpp) [Python](./Python/find-the-sum-of-subsequence-powers.py) | _O(n^3 * k)_ | _O(n^2)_ | Hard | | DP, Prefix Sum, Two Pointers
 3101 | [Count Alternating Subarrays](https://leetcode.com/problems/count-alternating-subarrays/) | [C++](./C++/count-alternating-subarrays.cpp) [Python](./Python/count-alternating-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | DP
 3117 | [Minimum Sum of Values by Dividing Array](https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/) | [C++](./C++/minimum-sum-of-values-by-dividing-array.cpp) [Python](./Python/minimum-sum-of-values-by-dividing-array.py) | _O(n * m * logr)_ | _O(n + logr)_ | Hard | | Memoization, DP, RMQ, Sparse Table, Mono Deque, Two Pointers
-3122 | [Minimum Number of Operations to Satisfy Conditions](https://leetcode.com/problems/minimum-number-of-operations-to-satisfy-conditions/) | [C++](./C++/minimum-number-of-operations-to-satisfy-conditions.cpp) [Python](./Python/minimum-number-of-operations-to-satisfy-conditions.py) | _O(n * (m + 100))_ | _O(10)_ | Medium | | DP
+3122 | [Minimum Number of Operations to Satisfy Conditions](https://leetcode.com/problems/minimum-number-of-operations-to-satisfy-conditions/) | [C++](./C++/minimum-number-of-operations-to-satisfy-conditions.cpp) [Python](./Python/minimum-number-of-operations-to-satisfy-conditions.py) | _O(n * (m + 10))_ | _O(10)_ | Medium | | DP
 
 <br/>
 <div align="right">
