@@ -29,9 +29,9 @@ public:
             }
             vector<int> new_dp(MAX_VALUE + 1, INF);
             for (int i = 0; i <= MAX_VALUE; ++i) {
-                const int top1 = top(dp, -1);
-                const int top2 = top(dp, top1);
-                new_dp[i] = min(new_dp[i], (i != top1 ? dp[top1] : dp[top2]) + (static_cast<int>(size(grid)) - cnt[i]));
+                const int k1 = top(dp, -1);
+                const int k2 = top(dp, k1);
+                new_dp[i] = min(new_dp[i], (i != k1 ? dp[k1] : dp[k2]) + (static_cast<int>(size(grid)) - cnt[i]));
             }
             dp = move(new_dp);
         }
