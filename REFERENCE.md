@@ -167,7 +167,7 @@
       * [CodeChef](https://www.codechef.com/contests/)
    * For Interview
       * [LeetCode](https://leetcode.com/contest/)
-      * [GeekForGeek](https://www.geeksforgeeks.org/events/rec/gfg-weekly-coding-contest)
+      * [GeeksforGeeks](https://www.geeksforgeeks.org/events/rec/gfg-weekly-coding-contest)
 * Practice Sites
    * For Competitive Programming 
       * [CS Academy](https://csacademy.com/contest/archive) 
