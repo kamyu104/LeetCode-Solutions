@@ -160,15 +160,23 @@
       * [Code Jam Language Stats](https://www.go-hero.net/jam/17)
    * [Meta Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup)
 * Weekly / Monthly Programming Competition
-   * [AtCoder](https://kenkoooo.com/atcoder/#/table/)
-   * [CodeForces](https://codeforces.com/problemset)
-   * [Topcoder](https://arena.topcoder.com/)
-   * [CodeChef](https://www.codechef.com/contests/)
+   * For Competitive Programming 
+      * [AtCoder](https://kenkoooo.com/atcoder/#/table/)
+      * [CodeForces](https://codeforces.com/problemset)
+      * [Topcoder](https://arena.topcoder.com/)
+      * [CodeChef](https://www.codechef.com/contests/)
+   * For Interview
+      * [LeetCode](https://leetcode.com/contest/)
+      * [GeekForGeek](https://www.geeksforgeeks.org/events/rec/gfg-weekly-coding-contest)
 * Practice Sites
-   * [CS Academy](https://csacademy.com/contest/archive) 
-   * [UVa Online Judge](https://onlinejudge.org/)
-   * [Sphere Online Judge](https://www.spoj.com/problems/classical/)
-   * [CSES Problem Set](https://cses.fi/problemset/list/)
+   * For Competitive Programming 
+      * [CS Academy](https://csacademy.com/contest/archive) 
+      * [UVa Online Judge](https://onlinejudge.org/)
+      * [Sphere Online Judge](https://www.spoj.com/problems/classical/)
+      * [CSES Problem Set](https://cses.fi/problemset/list/)
+   * For Interview
+      * [HackerRank](https://www.hackerrank.com/dashboard)
+      * [HackerEarth](https://www.hackerearth.com/practice/)
 * Mathematical Programming Challenges
    * [Project Euler](https://projecteuler.net/archives)
 * Annual Programming Challenges
