@@ -150,20 +150,29 @@
 
 ## Coding Challenge Sites
 
-* [CLIST](https://clist.by/)
-* [Competitive Programming Hall Of Fame](https://cphof.org/contests)
-* [Google Coding Competitions Archive](https://github.com/google/coding-competitions-archive)
-* [Meta Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup)
-* [AtCoder](https://kenkoooo.com/atcoder/#/table/)
-* [CodeForces](https://codeforces.com/problemset)
-* [Topcoder](https://arena.topcoder.com/)
-* [CS Academy](https://csacademy.com/contest/archive)
-* [CodeChef](https://www.codechef.com/contests/)
-* [UVa Online Judge](https://onlinejudge.org/)
-* [Sphere Online Judge](https://www.spoj.com/problems/classical/)
-* [CSES Problem Set](https://cses.fi/problemset/list/)
-* [Advent of Code](https://adventofcode.com/)
-* [Project Euler](https://projecteuler.net/archives)
+* Competition Infoformation
+   * [CLIST](https://clist.by/)
+   * [Competitive Programming Hall Of Fame](https://cphof.org/contests)
+* Annual International Programming Competition
+   * Google Coding Competitions
+      * [Official Archive](https://github.com/google/coding-competitions-archive)
+      * [Unofficial Archive](https://zibada.guru/gcj/)
+      * [Code Jam Language Stats](https://www.go-hero.net/jam/17)
+   * [Meta Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup)
+* Weekly / Monthly Programming Competition
+   * [AtCoder](https://kenkoooo.com/atcoder/#/table/)
+   * [CodeForces](https://codeforces.com/problemset)
+   * [Topcoder](https://arena.topcoder.com/)
+   * [CodeChef](https://www.codechef.com/contests/)
+* Practice Sites
+   * [CS Academy](https://csacademy.com/contest/archive) 
+   * [UVa Online Judge](https://onlinejudge.org/)
+   * [Sphere Online Judge](https://www.spoj.com/problems/classical/)
+   * [CSES Problem Set](https://cses.fi/problemset/list/)
+* Mathematical Programming Challenges
+   * [Project Euler](https://projecteuler.net/archives)
+* Annual Programming Challenges
+   * [Advent of Code](https://adventofcode.com/)
 
 ## Blogs
 
