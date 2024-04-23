@@ -174,7 +174,7 @@
       * [UVa Online Judge](https://onlinejudge.org/)
       * [Sphere Online Judge](https://www.spoj.com/problems/classical/)
       * [CSES Problem Set](https://cses.fi/problemset/list/)
-      * [USACO](https://usaco.guide/problems/)
+      * [USACO Guide](https://usaco.guide/problems/)
    * For Interview
       * [HackerRank](https://www.hackerrank.com/dashboard)
       * [HackerEarth](https://www.hackerearth.com/practice/)
