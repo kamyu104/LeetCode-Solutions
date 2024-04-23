@@ -153,13 +153,13 @@
 * Competition Infoformation
    * [CLIST](https://clist.by/)
    * [Competitive Programming Hall Of Fame](https://cphof.org/contests)
-* Annual International Programming Competition
+* Annual Programming Competition
    * Google Coding Competitions (Discontinued)
       * [Official Archive](https://github.com/google/coding-competitions-archive)
       * [Unofficial Archive](https://zibada.guru/gcj/)
       * [Code Jam Language Stats](https://www.go-hero.net/jam/17)
    * [Meta Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup)
-* Weekly / Monthly Programming Competition
+* Weekly / Biweekly/ Monthly Programming Competition
    * For Competitive Programming 
       * [AtCoder](https://kenkoooo.com/atcoder/#/table/)
       * [CodeForces](https://codeforces.com/problemset)
