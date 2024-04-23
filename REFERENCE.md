@@ -154,7 +154,7 @@
    * [CLIST](https://clist.by/)
    * [Competitive Programming Hall Of Fame](https://cphof.org/contests)
 * Annual International Programming Competition
-   * Google Coding Competitions
+   * Google Coding Competitions (Discontinued)
       * [Official Archive](https://github.com/google/coding-competitions-archive)
       * [Unofficial Archive](https://zibada.guru/gcj/)
       * [Code Jam Language Stats](https://www.go-hero.net/jam/17)
