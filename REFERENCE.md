@@ -154,16 +154,16 @@
    * [CLIST](https://clist.by/)
    * [Competitive Programming Hall Of Fame](https://cphof.org/contests)
 * Annual Programming Competition
-   * Google Coding Competitions (Discontinued)
+   * Google Coding Competitions (discontinued)
       * [Official Archive](https://github.com/google/coding-competitions-archive)
       * [Unofficial Archive](https://zibada.guru/gcj/)
       * [Code Jam Language Stats](https://www.go-hero.net/jam/17)
    * [Meta Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup)
 * Weekly/Biweekly/Monthly Programming Competition
    * For Competitive Programming 
-      * [AtCoder](https://kenkoooo.com/atcoder/#/table/)
+      * [AtCoder](https://kenkoooo.com/atcoder/#/table/) (more mathy)
       * [CodeForces](https://codeforces.com/problemset)
-      * [Topcoder](https://arena.topcoder.com/)
+      * [Topcoder](https://arena.topcoder.com/) (more mathy)
       * [CodeChef](https://www.codechef.com/contests/)
    * For Interview
       * [LeetCode](https://leetcode.com/contest/)
