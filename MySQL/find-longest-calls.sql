@@ -14,5 +14,5 @@ WITH rank_cte AS (
 )
 
 SELECT first_name, type, duration_formatted
-FROM top3_cte INNER JOIN contacts ct USING (id)
+FROM top3_cte INNER JOIN contacts USING (id)
 ORDER BY 2, 3 DESC, 1 DESC;
