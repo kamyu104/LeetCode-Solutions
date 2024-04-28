@@ -151,7 +151,7 @@
 ## Coding Challenge Sites
 
 * Competition Infoformation
-   * [CLIST](https://clist.by/)
+   * [Contests List](https://clist.by/)
    * [Competitive Programming Hall Of Fame](https://cphof.org/contests)
 * Annual Programming Competition
    * Google Coding Competitions (discontinued)
