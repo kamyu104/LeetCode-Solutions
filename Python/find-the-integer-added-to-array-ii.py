@@ -39,7 +39,7 @@ class Solution2(object):
             # return cnt2 <= cnt1  # for python3
             return all(cnt1.get(k, 0)-v >= 0 for k, v in cnt2.iteritems())  # for python2
         
-        def topk(a, k):  # Time:  O(k * n)
+        def topk(a, k):  # Time: O(k * n)
             result = [float("-inf")]*k
             for x in a:
                 for i in xrange(len(result)):
