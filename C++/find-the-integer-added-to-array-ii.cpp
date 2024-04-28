@@ -97,14 +97,11 @@ public:
         sort(begin(nums2), end(nums2));
         for (int i = 0; i < 3; ++i) {
             const int d = nums2.back() - nums1[size(nums1) - 1 - i];
-            int j = 0;
-            for (int cnt = 0; j < size(nums2); ++j) {
-                for (; cnt < 2 && nums1[j + cnt] + d != nums2[j]; ++cnt);
-                if (nums1[j + cnt] + d != nums2[j]) {
-                    break;
-                }
+            int cnt = 0;
+            for (int j = 0; j < size(nums2); ++j) {
+                for (; j + cnt < size(nums1) && nums1[j + cnt] + d != nums2[j]; ++cnt);
             }
-            if (j == size(nums2)) {
+            if (cnt <= 2) {
                 return d;
             }
         }
