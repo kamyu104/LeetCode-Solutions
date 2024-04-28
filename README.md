@@ -992,8 +992,8 @@
 3101 | [Count Alternating Subarrays](https://leetcode.com/problems/count-alternating-subarrays/) | [C++](./C++/count-alternating-subarrays.cpp) [Python](./Python/count-alternating-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | DP
 3117 | [Minimum Sum of Values by Dividing Array](https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/) | [C++](./C++/minimum-sum-of-values-by-dividing-array.cpp) [Python](./Python/minimum-sum-of-values-by-dividing-array.py) | _O(n * m * logr)_ | _O(n + logr)_ | Hard | | Memoization, DP, RMQ, Sparse Table, Mono Deque, Two Pointers
 3122 | [Minimum Number of Operations to Satisfy Conditions](https://leetcode.com/problems/minimum-number-of-operations-to-satisfy-conditions/) | [C++](./C++/minimum-number-of-operations-to-satisfy-conditions.cpp) [Python](./Python/minimum-number-of-operations-to-satisfy-conditions.py) | _O(n * (m + 10))_ | _O(10)_ | Medium | | DP
-3129 | [Find All Possible Stable Binary Arrays I](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/) | [C++](./C++/find-all-possible-stable-binary-arrays-i.cpp) [Python](./Python/find-all-possible-stable-binary-arrays-i.py) | _O(n * m))_ | _O(n * m)_ | Medium | | DP
-3130 | [Find All Possible Stable Binary Arrays II](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/) | [C++](./C++/find-all-possible-stable-binary-arrays-ii.cpp) [Python](./Python/find-all-possible-stable-binary-arrays-ii.py) | _O(n * m))_ | _O(n * m)_ | Hard | | DP
+3129 | [Find All Possible Stable Binary Arrays I](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/) | [C++](./C++/find-all-possible-stable-binary-arrays-i.cpp) [Python](./Python/find-all-possible-stable-binary-arrays-i.py) | _O(n * m)_ | _O(n * m)_ | Medium | | DP
+3130 | [Find All Possible Stable Binary Arrays II](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/) | [C++](./C++/find-all-possible-stable-binary-arrays-ii.cpp) [Python](./Python/find-all-possible-stable-binary-arrays-ii.py) | _O(n * m)_ | _O(n * m)_ | Hard | | DP
 
 <br/>
 <div align="right">
