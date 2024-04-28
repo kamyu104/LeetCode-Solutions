@@ -65,8 +65,8 @@ public:
 };
 
 // Time:  O(n * m)
-// Space: O(n + m)
-// combinatorics
+// Space: O(min(n, m))
+// freq table
 class Solution3 {
 public:
     long long numberOfRightTriangles(vector<vector<int>>& grid) {
