@@ -206,7 +206,7 @@
 3096 | [Minimum Levels to Gain More Points](https://leetcode.com/problems/minimum-levels-to-gain-more-points/) | [C++](./C++/minimum-levels-to-gain-more-points.cpp) [Python](./Python/minimum-levels-to-gain-more-points.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
 3105 | [Longest Strictly Increasing or Strictly Decreasing Subarray](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/) | [C++](./C++/longest-strictly-increasing-or-strictly-decreasing-subarray.cpp) [Python](./Python/longest-strictly-increasing-or-strictly-decreasing-subarray.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3127 | [Make a Square with the Same Color](https://leetcode.com/problems/make-a-square-with-the-same-color/) | [C++](./C++/make-a-square-with-the-same-color.cpp) [Python](./Python/make-a-square-with-the-same-color.py) | _O((n - w + 1)^2 * w^2)_ | _O(1)_ | Easy | | Array
-3131 | [Find the Integer Added to Array I](https://leetcode.com/problems/find-the-integer-added-to-array-i/) | [C++](./C++/find-the-integer-added-to-array-i.cpp) [Python](./Python/find-the-integer-added-to-array-i.py) | _O((n)_ | _O(1)_ | Easy | | Array
+3131 | [Find the Integer Added to Array I](https://leetcode.com/problems/find-the-integer-added-to-array-i/) | [C++](./C++/find-the-integer-added-to-array-i.cpp) [Python](./Python/find-the-integer-added-to-array-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -643,7 +643,7 @@
 3025 | [Find the Number of Ways to Place People I](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/) | [C++](./C++/find-the-number-of-ways-to-place-people-i.cpp) [Python](./Python/find-the-number-of-ways-to-place-people-i.py) | _O(n^2)_   | _O(1)_        | Medium         | | Sort, Array
 3027 | [Find the Number of Ways to Place People II](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-ii/) | [C++](./C++/find-the-number-of-ways-to-place-people-ii.cpp) [Python](./Python/find-the-number-of-ways-to-place-people-ii.py) | _O(n^2)_   | _O(1)_        | Hard         | | Sort, Array
 3081 | [Replace Question Marks in String to Minimize Its Value](https://leetcode.com/problems/replace-question-marks-in-string-to-minimize-its-value/) | [C++](./C++/replace-question-marks-in-string-to-minimize-its-value.cpp) [Python](./Python/replace-question-marks-in-string-to-minimize-its-value.py) | _O(n + 26 * log(26))_   | _O(n + 26)_        | Medium         | | Greedy, Counting Sort, Heap, Prefix Sum
-3132 | [Find the Integer Added to Array II](https://leetcode.com/problems/find-the-integer-added-to-array-ii/) | [C++](./C++/find-the-integer-added-to-array-ii.cpp) [Python](./Python/find-the-integer-added-to-array-ii.py) | _O((n)_ | _O(n)_ | Medium | | Sort, Paritial Sort, Freq Table
+3132 | [Find the Integer Added to Array II](https://leetcode.com/problems/find-the-integer-added-to-array-ii/) | [C++](./C++/find-the-integer-added-to-array-ii.cpp) [Python](./Python/find-the-integer-added-to-array-ii.py) | _O(n)_ | _O(n)_ | Medium | | Sort, Paritial Sort, Freq Table
 
 <br/>
 <div align="right">
