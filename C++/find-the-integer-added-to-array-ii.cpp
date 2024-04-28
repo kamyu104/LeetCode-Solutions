@@ -56,7 +56,7 @@ public:
             return true;
         };
 
-        const auto& topk = [](const auto& nums, int k) {
+        const auto& topk = [](const auto& nums, int k) {  // Time: O(k * n)
             vector<int> topk(k, numeric_limits<int>::min());
             for (auto x : nums) {
                 for (auto& y : topk) {
