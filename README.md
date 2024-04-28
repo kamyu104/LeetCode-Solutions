@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3123%20%2F%203123-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3134%20%2F%203134-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -88,6 +88,8 @@
 2997 | [Minimum Number of Operations to Make Array XOR Equal to K](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/) | [C++](./C++/minimum-number-of-operations-to-make-array-xor-equal-to-k.cpp) [Python](./Python/minimum-number-of-operations-to-make-array-xor-equal-to-k.py) | _O(n)_ | _O(1)_ | Medium | | Bit Manipulation
 3064 | [Guess the Number Using Bitwise Questions I](https://leetcode.com/problems/guess-the-number-using-bitwise-questions-i/) | [C++](./C++/guess-the-number-using-bitwise-questions-i.cpp) [Python](./Python/guess-the-number-using-bitwise-questions-i.py) | _O(logn)_ | _O(1)_ | Medium |🔒| Bit Manipulation
 3094 | [Guess the Number Using Bitwise Questions II](https://leetcode.com/problems/guess-the-number-using-bitwise-questions-ii/) | [C++](./C++/guess-the-number-using-bitwise-questions-ii.cpp) [Python](./Python/guess-the-number-using-bitwise-questions-ii.py) | _O(logr)_ | _O(1)_ | Medium |🔒| Bit Manipulation
+3125 | [Maximum Number That Makes Result of Bitwise AND Zero](https://leetcode.com/problems/maximum-number-that-makes-result-of-bitwise-and-zero/) | [C++](./C++/maximum-number-that-makes-result-of-bitwise-and-zero.cpp) [Python](./Python/maximum-number-that-makes-result-of-bitwise-and-zero.py) | _O(1)_ | _O(1)_ | Medium |🔒| Bit Manipulation
+3133 | [Minimum Array End](https://leetcode.com/problems/minimum-array-end/) | [C++](./C++/minimum-array-end.cpp) [Python](./Python/minimum-array-end.py) | _O(logn)_ | _O(1)_ | Medium | | Bit Manipulation
 
 <br/>
 <div align="right">
@@ -203,6 +205,8 @@
 3079 | [Find the Sum of Encrypted Integers](https://leetcode.com/problems/find-the-sum-of-encrypted-integers/) | [C++](./C++/find-the-sum-of-encrypted-integers.cpp) [Python](./Python/find-the-sum-of-encrypted-integers.py) | _O(nlogr)_ | _O(1)_ | Easy | | Array
 3096 | [Minimum Levels to Gain More Points](https://leetcode.com/problems/minimum-levels-to-gain-more-points/) | [C++](./C++/minimum-levels-to-gain-more-points.cpp) [Python](./Python/minimum-levels-to-gain-more-points.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
 3105 | [Longest Strictly Increasing or Strictly Decreasing Subarray](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/) | [C++](./C++/longest-strictly-increasing-or-strictly-decreasing-subarray.cpp) [Python](./Python/longest-strictly-increasing-or-strictly-decreasing-subarray.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3127 | [Make a Square with the Same Color](https://leetcode.com/problems/make-a-square-with-the-same-color/) | [C++](./C++/make-a-square-with-the-same-color.cpp) [Python](./Python/make-a-square-with-the-same-color.py) | _O((n - w + 1)^2 * w^2)_ | _O(1)_ | Easy | | Array
+3131 | [Find the Integer Added to Array I](https://leetcode.com/problems/find-the-integer-added-to-array-i/) | [C++](./C++/find-the-integer-added-to-array-i.cpp) [Python](./Python/find-the-integer-added-to-array-i.py) | _O((n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -601,6 +605,7 @@
 3099 | [Harshad Number](https://leetcode.com/problems/harshad-number/) | [C++](./C++/harshad-number.cpp) [Python](./Python/harshad-number.py) | _O(logx)_ | _O(1)_ | Easy | | Math |
 3102 | [Minimize Manhattan Distances](https://leetcode.com/problems/minimize-manhattan-distances/) | [C++](./C++/minimize-manhattan-distances.cpp) [Python](./Python/minimize-manhattan-distances.py) | _O(n)_ | _O(1)_ | Hard | | Math |
 3115 | [Maximum Prime Difference](https://leetcode.com/problems/maximum-prime-difference/) | [C++](./C++/maximum-prime-difference.cpp) [Python](./Python/maximum-prime-difference.py) | _O(r + n)_ | _O(r)_ | Medium | | Array, Number Theory, `Linear Sieve of Eratosthenes` |
+3128 | [Right Triangles](https://leetcode.com/problems/right-triangles/) | [C++](./C++/right-triangles.cpp) [Python](./Python/right-triangles.py) | _O(n * m)_ | _O(min(n, m))_ | Medium | | Array, Combinatorics, Freq Table |
 
 <br/>
 <div align="right">
@@ -638,6 +643,7 @@
 3025 | [Find the Number of Ways to Place People I](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/) | [C++](./C++/find-the-number-of-ways-to-place-people-i.cpp) [Python](./Python/find-the-number-of-ways-to-place-people-i.py) | _O(n^2)_   | _O(1)_        | Medium         | | Sort, Array
 3027 | [Find the Number of Ways to Place People II](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-ii/) | [C++](./C++/find-the-number-of-ways-to-place-people-ii.cpp) [Python](./Python/find-the-number-of-ways-to-place-people-ii.py) | _O(n^2)_   | _O(1)_        | Hard         | | Sort, Array
 3081 | [Replace Question Marks in String to Minimize Its Value](https://leetcode.com/problems/replace-question-marks-in-string-to-minimize-its-value/) | [C++](./C++/replace-question-marks-in-string-to-minimize-its-value.cpp) [Python](./Python/replace-question-marks-in-string-to-minimize-its-value.py) | _O(n + 26 * log(26))_   | _O(n + 26)_        | Medium         | | Greedy, Counting Sort, Heap, Prefix Sum
+3132 | [Find the Integer Added to Array II](https://leetcode.com/problems/find-the-integer-added-to-array-ii/) | [C++](./C++/find-the-integer-added-to-array-ii.cpp) [Python](./Python/find-the-integer-added-to-array-ii.py) | _O((n)_ | _O(n)_ | Medium | | Sort, Paritial Sort, Freq Table
 
 <br/>
 <div align="right">
@@ -761,7 +767,8 @@
 3048 | [Earliest Second to Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | [C++](./C++/earliest-second-to-mark-indices-i.cpp) [Python](./Python/earliest-second-to-mark-indices-i.py) | _O(mlogm)_ | _O(n)_ | Medium | | Binary Search, Greedy |
 3049 | [Earliest Second to Mark Indices II](https://leetcode.com/problems/earliest-second-to-mark-indices-ii/) | [C++](./C++/earliest-second-to-mark-indices-ii.cpp) [Python](./Python/earliest-second-to-mark-indices-ii.py) | _O((m + nlogn) *logm)_ | _O(n)_ | Hard | | Binary Search, Greedy, Heap |
 3104 | [Find Longest Self-Contained Substring](https://leetcode.com/problems/find-longest-self-contained-substring/) | [C++](./C++/find-longest-self-contained-substring.cpp) [Python](./Python/find-longest-self-contained-substring.py) | _O(n + 26^3 * logn)_ | _O(n)_ | Hard | 🔒 | Brute Force, Freq Table, Two Pointers, Hash Table, Binary Search |
-3116 | [Kth Smallest Amount With Single Denomination Combination](https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/) | [C++](./C++/kth-smallest-amount-with-single-denomination-combination.cpp) [Python](./Python/kth-smallest-amount-with-single-denomination-combination.py) | _O(n * 2^n *  logk)_ | _O(2^n)_ | Hard | | Binary Search,  Principle of Inclusion and Exclusion, Number Theory |
+3116 | [Kth Smallest Amount With Single Denomination Combination](https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/) | [C++](./C++/kth-smallest-amount-with-single-denomination-combination.cpp) [Python](./Python/kth-smallest-amount-with-single-denomination-combination.py) | _O(n * 2^n *  logk)_ | _O(2^n)_ | Hard | | Binary Search, Principle of Inclusion and Exclusion, Number Theory |
+3134 | [Find the Median of the Uniqueness Array](https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/) | [C++](./C++/find-the-median-of-the-uniqueness-array.cpp) [Python](./Python/find-the-median-of-the-uniqueness-array.py) | _O(nlogn)_ | _O(n)_ | Hard | | Binary Search, Two Pointers, Sliding Window |
 
 <br/>
 
@@ -985,6 +992,8 @@
 3101 | [Count Alternating Subarrays](https://leetcode.com/problems/count-alternating-subarrays/) | [C++](./C++/count-alternating-subarrays.cpp) [Python](./Python/count-alternating-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | DP
 3117 | [Minimum Sum of Values by Dividing Array](https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/) | [C++](./C++/minimum-sum-of-values-by-dividing-array.cpp) [Python](./Python/minimum-sum-of-values-by-dividing-array.py) | _O(n * m * logr)_ | _O(n + logr)_ | Hard | | Memoization, DP, RMQ, Sparse Table, Mono Deque, Two Pointers
 3122 | [Minimum Number of Operations to Satisfy Conditions](https://leetcode.com/problems/minimum-number-of-operations-to-satisfy-conditions/) | [C++](./C++/minimum-number-of-operations-to-satisfy-conditions.cpp) [Python](./Python/minimum-number-of-operations-to-satisfy-conditions.py) | _O(n * (m + 10))_ | _O(10)_ | Medium | | DP
+3129 | [Find All Possible Stable Binary Arrays I](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/) | [C++](./C++/find-all-possible-stable-binary-arrays-i.cpp) [Python](./Python/find-all-possible-stable-binary-arrays-i.py) | _O(n * m))_ | _O(n * m)_ | Medium | | DP
+3130 | [Find All Possible Stable Binary Arrays II](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/) | [C++](./C++/find-all-possible-stable-binary-arrays-ii.cpp) [Python](./Python/find-all-possible-stable-binary-arrays-ii.py) | _O(n * m))_ | _O(n * m)_ | Hard | | DP
 
 <br/>
 <div align="right">
@@ -1439,6 +1448,8 @@
 3089 | [Find Bursty Behavior](https://leetcode.com/problems/find-bursty-behavior/) | [MySQL](./MySQL/find-bursty-behavior.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3103 | [Find Trending Hashtags II](https://leetcode.com/problems/find-trending-hashtags-ii/) | [MySQL](./MySQL/find-trending-hashtags-ii.sql) | _O(n * l^2 + (n * l) * log(n * l))_ | _O(n * l^2)_       | Hard           |🔒| Recursive CTE |
 3118 | [Friday Purchase III](https://leetcode.com/problems/friday-purchase-iii/) | [MySQL](./MySQL/friday-purchase-iii.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
+3124 | [Find Longest Calls](https://leetcode.com/problems/find-longest-calls/) | [MySQL](./MySQL/find-longest-calls.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
+3126 | [Server Utilization Time](https://leetcode.com/problems/server-utilization-time/) | [MySQL](./MySQL/server-utilization-time.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
