@@ -5,8 +5,8 @@
 WITH window_cte AS (
     SELECT seat_id,
            free,
-           LAG(free, 1) OVER (ORDER BY seat_id) as free_lag,
-           LEAD(free, 1) OVER (ORDER BY seat_id) as free_lead
+           LAG(free, 1) OVER (ORDER BY seat_id) AS free_lag,
+           LEAD(free, 1) OVER (ORDER BY seat_id) AS free_lead
     FROM Cinema
 )
 
