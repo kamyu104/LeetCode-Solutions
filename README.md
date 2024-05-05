@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3134%20%2F%203134-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3140%20%2F%203140-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -284,6 +284,8 @@
 3076 | [Shortest Uncommon Substring in an Array](https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/)| [C++](./C++/shortest-uncommon-substring-in-an-array.cpp) [Python](./Python/shortest-uncommon-substring-in-an-array.py)| _O(n * l^2)_ | _O(t)_ | Medium | | Trie |
 3093 | [Longest Common Suffix Queries](https://leetcode.com/problems/longest-common-suffix-queries/)| [C++](./C++/longest-common-suffix-queries.cpp) [Python](./Python/longest-common-suffix-queries.py)| _O((n + q) * l)_ | _O(t)_ | Hard | | Trie |
 3110 | [Score of a String](https://leetcode.com/problems/score-of-a-string/)| [C++](./C++/score-of-a-string.cpp) [Python](./Python/score-of-a-string.py)| _O(n)_ | _O(1)_ | Easy | | String |
+3135 | [Equalize Strings by Adding or Removing Characters at Ends](https://leetcode.com/problems/equalize-strings-by-adding-or-removing-characters-at-ends/) | [C++](./C++/equalize-strings-by-adding-or-removing-characters-at-ends.cpp) [Python](./Python/equalize-strings-by-adding-or-removing-characters-at-ends.py) | _O((n + m) * log(min(n, m)))_ | _O(min(n, m))_ | Medium | 🔒 | `Rabin-Karp Algorithm`, Rolling Hash, DP
+3136 | [Valid Word](https://leetcode.com/problems/valid-word/) | [C++](./C++/equalize-strings-by-adding-or-removing-characters-at-ends.cpp) [Python](./Python/equalize-strings-by-adding-or-removing-characters-at-ends.py) | _O(n)_ | _O(1)_ | Easy | | String
 
 <br/>
 <div align="right">
@@ -495,6 +497,9 @@
 3083 | [Existence of a Substring in a String and Its Reverse](https://leetcode.com/problems/existence-of-a-substring-in-a-string-and-its-reverse/) | [C++](./C++/existence-of-a-substring-in-a-string-and-its-reverse.cpp) [Python](./Python/existence-of-a-substring-in-a-string-and-its-reverse.py) | _O(n)_  | _O(min(n, 26^2))_ | Easy || Hash Table
 3120 | [Count the Number of Special Characters I](https://leetcode.com/problems/count-the-number-of-special-characters-i/) | [C++](./C++/count-the-number-of-special-characters-i.cpp) [Python](./Python/count-the-number-of-special-characters-i.py) | _O(n + 26)_  | _O(26)_ | Easy || Hash Table
 3121 | [Count the Number of Special Characters II](https://leetcode.com/problems/count-the-number-of-special-characters-ii/) | [C++](./C++/count-the-number-of-special-characters-ii.cpp) [Python](./Python/count-the-number-of-special-characters-ii.py) | _O(n + 26)_  | _O(26)_ | Medium || Hash Table
+3137 | [Minimum Number of Operations to Make Word K-Periodic](https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/) | [C++](./C++/minimum-number-of-operations-to-make-word-k-periodic.cpp) [Python](./Python/minimum-number-of-operations-to-make-word-k-periodic.py) | _O(n)_  | _O(n)_ | Medium || Freq Table
+3138 | [Minimum Length of Anagram Concatenation](https://leetcode.com/problems/minimum-length-of-anagram-concatenation/) | [C++](./C++/minimum-length-of-anagram-concatenation.cpp) [Python](./Python/minimum-length-of-anagram-concatenation.py) | _O(sqrt(n) * n + 26 * nlogn)_  | _O(26)_ | Medium || Number Theory, Freq Table
+
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -1240,6 +1245,7 @@
 2834 | [Find the Minimum Possible Sum of a Beautiful Array](https://leetcode.com/problems/find-the-minimum-possible-sum-of-a-beautiful-array/) | [C++](./C++/find-the-minimum-possible-sum-of-a-beautiful-array.cpp) [Python](./Python/find-the-minimum-possible-sum-of-a-beautiful-array.py) | _O(1)_ | _O(1)_ | Medium | [Determine the Minimum Sum of a k-avoiding Array](https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) | Greedy, Constructive Algorithms, Math
 2849 | [Determine if a Cell Is Reachable at a Given Time](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/) | [C++](./C++/determine-if-a-cell-is-reachable-at-a-given-time.cpp) [Python](./Python/determine-if-a-cell-is-reachable-at-a-given-time.py) | _O(1)_ | _O(1)_ | Medium | | Constructive Algorithms, Math
 2856 | [Minimum Array Length After Pair Removals](https://leetcode.com/problems/minimum-array-length-after-pair-removals/) | [C++](./C++/minimum-array-length-after-pair-removals.cpp) [Python](./Python/minimum-array-length-after-pair-removals.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Constructive Algorithms
+3139 | [Minimum Cost to Equalize Array](https://leetcode.com/problems/minimum-cost-to-equalize-array/) | [C++](./C++/minimum-cost-to-equalize-array.cpp) [Python](./Python/minimum-cost-to-equalize-array.py) | _O(n)_ | _O(1)_ | Hard | | Constructive Algorithms, Math
 
 <br/>
 <div align="right">
@@ -1450,6 +1456,7 @@
 3118 | [Friday Purchase III](https://leetcode.com/problems/friday-purchase-iii/) | [MySQL](./MySQL/friday-purchase-iii.sql) | _O(n)_ | _O(n)_       | Medium           |🔒||
 3124 | [Find Longest Calls](https://leetcode.com/problems/find-longest-calls/) | [MySQL](./MySQL/find-longest-calls.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3126 | [Server Utilization Time](https://leetcode.com/problems/server-utilization-time/) | [MySQL](./MySQL/server-utilization-time.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function |
+3140 | [Consecutive Available Seats II](https://leetcode.com/problems/consecutive-available-seats-ii/) | [MySQL](./MySQL/consecutive-available-seats-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
