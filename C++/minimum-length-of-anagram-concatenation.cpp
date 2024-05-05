@@ -1,4 +1,4 @@
-// Time:  O(sqrt(n) + 26 * sum(n/i for i in range(1, n+1) if n%i == 0)) < O(26 * sum(n/i for i in range(1, n+1)) = O(26 * nlogn)
+// Time:  O(sqrt(n) * n + (26 * sum(n/i for i in range(1, n+1) if n%i == 0))) < O(sqrt(n) * n + 26 * sum(n/i for i in range(1, n+1)) = O(sqrt(n) * n + 26 * nlogn)
 // Space: O(26)
 
 // number theory, freq table
