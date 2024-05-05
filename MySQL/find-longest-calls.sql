@@ -4,8 +4,8 @@
 # window function
 WITH rank_cte AS (
     SELECT contact_id AS id, type,
-    ROW_NUMBER() OVER (PARTITION BY type ORDER BY duration DESC) AS row_num,
-    TIME_FORMAT(SEC_TO_TIME(duration), '%H:%i:%s') AS duration_formatted
+           ROW_NUMBER() OVER (PARTITION BY type ORDER BY duration DESC) AS row_num,
+           TIME_FORMAT(SEC_TO_TIME(duration), '%H:%i:%s') AS duration_formatted
     FROM Calls
 ), top3_cte AS (
     SELECT *
