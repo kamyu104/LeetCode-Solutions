@@ -284,8 +284,7 @@
 3076 | [Shortest Uncommon Substring in an Array](https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/)| [C++](./C++/shortest-uncommon-substring-in-an-array.cpp) [Python](./Python/shortest-uncommon-substring-in-an-array.py)| _O(n * l^2)_ | _O(t)_ | Medium | | Trie |
 3093 | [Longest Common Suffix Queries](https://leetcode.com/problems/longest-common-suffix-queries/)| [C++](./C++/longest-common-suffix-queries.cpp) [Python](./Python/longest-common-suffix-queries.py)| _O((n + q) * l)_ | _O(t)_ | Hard | | Trie |
 3110 | [Score of a String](https://leetcode.com/problems/score-of-a-string/)| [C++](./C++/score-of-a-string.cpp) [Python](./Python/score-of-a-string.py)| _O(n)_ | _O(1)_ | Easy | | String |
-3135 | [Equalize Strings by Adding or Removing Characters at Ends](https://leetcode.com/problems/equalize-strings-by-adding-or-removing-characters-at-ends/) | [C++](./C++/equalize-strings-by-adding-or-removing-characters-at-ends.cpp) [Python](./Python/equalize-strings-by-adding-or-removing-characters-at-ends.py) | _O((n + m) * log(min(n, m)))_ | _O(min(n, m))_ | Medium | 🔒 | `Rabin-Karp Algorithm`, Rolling Hash, DP
-3136 | [Valid Word](https://leetcode.com/problems/valid-word/) | [C++](./C++/equalize-strings-by-adding-or-removing-characters-at-ends.cpp) [Python](./Python/equalize-strings-by-adding-or-removing-characters-at-ends.py) | _O(n)_ | _O(1)_ | Easy | | String
+3136 | [Valid Word](https://leetcode.com/problems/valid-word/) | [C++](./C++/valid-word.cpp) [Python](./Python/valid-word.py) | _O(n)_ | _O(1)_ | Easy | | String
 
 <br/>
 <div align="right">
@@ -774,7 +773,7 @@
 3104 | [Find Longest Self-Contained Substring](https://leetcode.com/problems/find-longest-self-contained-substring/) | [C++](./C++/find-longest-self-contained-substring.cpp) [Python](./Python/find-longest-self-contained-substring.py) | _O(n + 26^3 * logn)_ | _O(n)_ | Hard | 🔒 | Brute Force, Freq Table, Two Pointers, Hash Table, Binary Search |
 3116 | [Kth Smallest Amount With Single Denomination Combination](https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/) | [C++](./C++/kth-smallest-amount-with-single-denomination-combination.cpp) [Python](./Python/kth-smallest-amount-with-single-denomination-combination.py) | _O(n * 2^n *  logk)_ | _O(2^n)_ | Hard | | Binary Search, Principle of Inclusion and Exclusion, Number Theory |
 3134 | [Find the Median of the Uniqueness Array](https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/) | [C++](./C++/find-the-median-of-the-uniqueness-array.cpp) [Python](./Python/find-the-median-of-the-uniqueness-array.py) | _O(nlogn)_ | _O(n)_ | Hard | | Binary Search, Two Pointers, Sliding Window |
-
+3135 | [Equalize Strings by Adding or Removing Characters at Ends](https://leetcode.com/problems/equalize-strings-by-adding-or-removing-characters-at-ends/) | [C++](./C++/equalize-strings-by-adding-or-removing-characters-at-ends.cpp) [Python](./Python/equalize-strings-by-adding-or-removing-characters-at-ends.py) | _O((n + m) * log(min(n, m)))_ | _O(min(n, m))_ | Medium | 🔒 | Binary Search, `Rabin-Karp Algorithm`, Rolling Hash, DP
 <br/>
 
 <div align="right">
