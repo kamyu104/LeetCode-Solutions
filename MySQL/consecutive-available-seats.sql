@@ -1,10 +1,16 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-SELECT DISTINCT c1.seat_id
-FROM cinema c1 JOIN cinema c2
-  ON ((c1.seat_id = c2.seat_id - 1) OR (c1.seat_id = c2.seat_id + 1))
-  AND c1.free = true AND c2.free = true
-ORDER BY c1.seat_id
-;
+# window function
+WITH window_cte AS (
+    SELECT seat_id,
+           free,
+           LAG(free, 1) OVER (ORDER BY seat_id) as free_lag,
+           LEAD(free, 1) OVER (ORDER BY seat_id) as free_lead
+    FROM Cinema
+)
 
+SELECT seat_id
+FROM window_cte
+WHERE (free = 1 AND free_lag = 1) OR (free = 1 AND free_lead = 1)
+ORDER BY 1;
