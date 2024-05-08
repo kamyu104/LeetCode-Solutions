@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3140%20%2F%203140-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3141%20%2F%203141-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -829,6 +829,7 @@
 2812 | [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/)  | [C++](./C++/find-the-safest-path-in-a-grid.cpp) [Python](./Python/find-the-safest-path-in-a-grid.py) | _O(n^2)_ | _O(n^2)_| Medium           || BFS, Bucket Sort, Union Find, `Dijkstra's Algorithm`, Binary Search | 
 2814 | [Minimum Time Takes to Reach Destination Without Drowning](https://leetcode.com/problems/minimum-time-takes-to-reach-destination-without-drowning/)  | [C++](./C++/minimum-time-takes-to-reach-destination-without-drowning.cpp) [Python](./Python/minimum-time-takes-to-reach-destination-without-drowning.py) | _O(m * n)_ | _O(m * n)_| Hard           | 🔒 | Simulation, BFS | 
 2852 | [Sum of Remoteness of All Cells](https://leetcode.com/problems/sum-of-remoteness-of-all-cells/)| [C++](./C++/sum-of-remoteness-of-all-cells.cpp) [Python](./Python/sum-of-remoteness-of-all-cells.py)| _O(n^2)_ | _O(n^2)_ | Medium | 🔒 | Flood Fill, BFS, Math |
+3141 | [Maximum Hamming Distances](https://leetcode.com/problems/maximum-hamming-distances/)| [C++](./C++/maximum-hamming-distances.cpp) [Python](./Python/maximum-hamming-distances.py)| _O(m * 2^m)_ | _O(2^m)_ | Hard | 🔒 | Bitmasks, BFS |
 
 <br/>
 <div align="right">
