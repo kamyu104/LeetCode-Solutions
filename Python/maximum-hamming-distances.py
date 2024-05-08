@@ -21,8 +21,8 @@ class Solution(object):
         while q:
             new_q = []
             for u in q:
-                for v in group[u]:
-                    result[v] = m-d
+                for i in group[u]:
+                    result[i] = m-d
                 for i in xrange(m):
                     if lookup[u^(1<<i)]:
                         continue
