@@ -10,11 +10,15 @@ public:
             group[((1 << m) - 1) ^ nums[i]].emplace_back(i);
         }
         vector<int> result(size(nums));
+        vector<int> q;
         vector<int> lookup(1 << m);
         for (const auto& x : nums) {
+            if (lookup[x]) {
+                continue;
+            }
             lookup[x] = true;
+            q.emplace_back(x);
         }
-        vector<int> q = move(nums);
         for (int d = 0; !empty(q); ++d) {
             vector<int> new_q;
             for (const auto& u : q) {
