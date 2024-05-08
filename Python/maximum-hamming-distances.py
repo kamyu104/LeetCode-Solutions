@@ -13,11 +13,14 @@ class Solution(object):
         for i, x in enumerate(nums):
             group[((1<<m)-1)^x].append(i)
         result = [0]*len(nums)
+        q = []
         lookup = [False]*(1<<m)
         for x in nums:
+            if lookup[x]:
+                continue
             lookup[x] = True
+            q.append(x)
         d = 0
-        q = nums
         while q:
             new_q = []
             for u in q:
