@@ -22,7 +22,7 @@ public:
                     result[i] = d;
                 }
                 for (int i = 0; i < m; ++i) {
-                    if (lookup[u ^ (1 <<i)]) {
+                    if (lookup[u ^ (1 << i)]) {
                         continue;
                     }
                     lookup[u ^ (1 << i)] = true;
