@@ -15,11 +15,11 @@ public:
             lookup[x] = true;
         }
         vector<int> q = move(nums);
-        for (int d = m; !empty(q); --d) {
+        for (int d = 0; !empty(q); ++d) {
             vector<int> new_q;
             for (const auto& u : q) {
                 for (const auto& i : group[u]) {
-                    result[i] = d;
+                    result[i] = m - d;
                 }
                 for (int i = 0; i < m; ++i) {
                     if (lookup[u ^ (1 << i)]) {
