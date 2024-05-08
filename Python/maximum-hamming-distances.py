@@ -16,19 +16,18 @@ class Solution(object):
         lookup = [False]*(1<<m)
         for x in nums:
             lookup[x] = True
-        d = m
+        d = 0
         q = nums
         while q:
             new_q = []
             for u in q:
                 for v in group[u]:
-                    result[v] = d
+                    result[v] = m-d
                 for i in xrange(m):
                     if lookup[u^(1<<i)]:
                         continue
                     lookup[u^(1<<i)] = True
                     new_q.append(u^(1<<i))
             q = new_q
-            d -= 1
+            d += 1
         return result
-    
