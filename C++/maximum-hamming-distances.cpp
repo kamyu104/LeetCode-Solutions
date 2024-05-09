@@ -1,7 +1,7 @@
 // Time:  O(m * 2^m)
 // Space: O(2^m)
 
-// bitmasks, dp
+// bitmasks, knapsack dp
 class Solution {
 public:
     vector<int> maxHammingDistances(vector<int>& nums, int m) {
