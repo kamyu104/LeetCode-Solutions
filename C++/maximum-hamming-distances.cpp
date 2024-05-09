@@ -6,6 +6,7 @@ class Solution {
 public:
     vector<int> maxHammingDistances(vector<int>& nums, int m) {
         static const int NEG_INF = numeric_limits<int>::min();
+
         vector<int> dp(1 << m, NEG_INF);
         for (const auto& x: nums) {
             dp[x] = 0;
