@@ -87,7 +87,9 @@
     * Introduction
         * [Designing Data-Intensive Applications](https://www.amazon.com/dp/1449373321)
         * [Code Karle](https://www.youtube.com/@codeKarle)
-        * [System Design Interview Volume 1](https://www.amazon.com/dp/B08CMF2CQF) / [System Design Interview Volume 2](https://www.amazon.com/dp/1736049119)
+        * [System Design Interview Volume 1](https://www.amazon.com/dp/B08CMF2CQF)
+        * [System Design Interview Volume 2](https://www.amazon.com/dp/1736049119)
+        * [Machine Learning System Design Interview](https://www.amazon.com/dp/1736049127)
     * Database
         * [Effective SQL](https://www.amazon.com/dp/B01MZ75IW5)
         * [High Performance MySQL](https://www.amazon.com/dp/B09M7W126W/)
@@ -111,6 +113,16 @@
         * [Pattern-Oriented Software Architecture Volume 2](https://www.amazon.com/dp/0471606952)
         * [Small Memory Software](https://www.amazon.com/dp/0201596075)
         * [Game Programming Patterns](https://gameprogrammingpatterns.com/)
+     * Software Engineering
+        * [Software Engineering at Google](https://abseil.io/resources/swe-book/html/toc.html)
+     * Software Testing
+        * [How Google Tests Software](https://www.amazon.com/dp/B007MQLMF2)
+     * Site Reliability Engineering
+        * [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
+        * [The Site Reliability Workbook](https://sre.google/workbook/table-of-contents/)
+        * [Building Secure and Reliable Systems](https://google.github.io/building-secure-and-reliable-systems/raw/toc.html)
+     * Technical Leadership
+        * [The Staff Engineer's Path](https://www.amazon.com/dp/B0BG16Y553)
 * Computer Science
     * Computer Systems 
         * [Computer Systems](https://www.amazon.com/dp/013409266X)
