@@ -1,6 +1,6 @@
-# Time:  O(n)
-# Space: O(n)
+# Time:  O(n * l)
+# Space: O(n * l)
 
 SELECT tweet_id
 FROM Tweets
-WHERE CHAR_LENGTH(content) > 15;
+WHERE LENGTH(content) > 15;
