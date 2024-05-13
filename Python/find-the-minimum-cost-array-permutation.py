@@ -8,8 +8,9 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
+        INF = float("inf")
         n = len(nums)
-        dp = [[(float("inf"), -1) for _ in xrange(n-1)] for _ in xrange(1<<(n-1))]
+        dp = [[(INF, -1) for _ in xrange(n-1)] for _ in xrange(1<<(n-1))]
         for i in xrange(n-1):
             dp[1<<i][i] = (abs((i+1)-nums[0]), -1)
         for mask in xrange(1<<(n-1)):
