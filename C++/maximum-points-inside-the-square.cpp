@@ -1,4 +1,4 @@
-// Time:  O(26 + n)
+// Time:  O(n + 26)
 // Space: O(26)
 
 // hash table
