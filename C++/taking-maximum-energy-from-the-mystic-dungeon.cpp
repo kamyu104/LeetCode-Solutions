@@ -1,16 +1,18 @@
 // Time:  O(n)
-// Space: O(k)
+// Space: O(1)
 
-// greedy, kadane's algorithm
+// array
 class Solution {
 public:
     int maximumEnergy(vector<int>& energy, int k) {
-        static const int NEG_INF = numeric_limits<int>::min();
-
-        vector<int> result(k, NEG_INF);
-        for (int i = 0; i < size(energy); ++i) {
-            result[i % k] = max(result[i % k], 0) + energy[i];
+        int result = numeric_limits<int>::min();
+        for (int i = 0; i < k; ++i) {
+            int curr = 0;
+            for (int j = size(energy) - 1 - i; j >= 0; j -= k) {
+                curr += energy[j];
+                result = max(result, curr);
+            }
         }
-        return ranges::max(result);
+        return result;
     }
 };
