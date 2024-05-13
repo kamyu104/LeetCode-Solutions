@@ -1,7 +1,7 @@
 # Time:  O(n)
-# Space: O(k)
+# Space: O(1)
 
-# dp
+# array
 class Solution(object):
     def maximumEnergy(self, energy, k):
         """
@@ -10,24 +10,9 @@ class Solution(object):
         :rtype: int
         """
         result = float("-inf")
-        dp = [0]*k
-        for i in reversed(xrange(len(energy))):
-            dp[i%k] += energy[i]
-            result = max(result, dp[i%k])
+        for i in xrange(k):
+            curr = 0
+            for j in xrange(len(energy)-1-i, -1, -k):
+                curr += energy[j]
+                result = max(result, curr)
         return result
-
-
-# Time:  O(n)
-# Space: O(k)
-# greedy, kadane's algorithm
-class Solution2(object):
-    def maximumEnergy(self, energy, k):
-        """
-        :type energy: List[int]
-        :type k: int
-        :rtype: int
-        """
-        result = [float("-inf")]*k
-        for i, x in enumerate(energy):
-            result[i%k] = max(result[i%k], 0)+x
-        return max(result)
