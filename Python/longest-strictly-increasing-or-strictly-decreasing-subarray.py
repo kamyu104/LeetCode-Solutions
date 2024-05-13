@@ -8,6 +8,29 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        result = cnt = 1
+        curr = prev = 0
+        for i in xrange(1, len(nums)):
+            curr = cmp(nums[i-1], nums[i])
+            if curr == 0:
+                cnt = 1
+                continue
+            else:
+                cnt = (cnt if curr == prev else 1)+1
+                result = max(result, cnt)
+            prev = curr
+        return result
+
+
+# Time:  O(n)
+# Space: O(1)
+# array
+class Solution2(object):
+    def longestMonotonicSubarray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
         result = cnt1 = cnt2 = 1
         for i in xrange(1, len(nums)):
             if nums[i-1] < nums[i]:
@@ -25,7 +48,7 @@ class Solution(object):
 # Time:  O(n)
 # Space: O(1)
 # array
-class Solution2(object):
+class Solution3(object):
     def longestMonotonicSubarray(self, nums):
         """
         :type nums: List[int]
