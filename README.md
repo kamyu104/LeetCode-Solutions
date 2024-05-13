@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3141%20%2F%203141-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3150%20%2F%203150-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -207,6 +207,8 @@
 3105 | [Longest Strictly Increasing or Strictly Decreasing Subarray](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/) | [C++](./C++/longest-strictly-increasing-or-strictly-decreasing-subarray.cpp) [Python](./Python/longest-strictly-increasing-or-strictly-decreasing-subarray.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3127 | [Make a Square with the Same Color](https://leetcode.com/problems/make-a-square-with-the-same-color/) | [C++](./C++/make-a-square-with-the-same-color.cpp) [Python](./Python/make-a-square-with-the-same-color.py) | _O((n - w + 1)^2 * w^2)_ | _O(1)_ | Easy | | Array
 3131 | [Find the Integer Added to Array I](https://leetcode.com/problems/find-the-integer-added-to-array-i/) | [C++](./C++/find-the-integer-added-to-array-i.cpp) [Python](./Python/find-the-integer-added-to-array-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3142 | [Check if Grid Satisfies Conditions](https://leetcode.com/problems/check-if-grid-satisfies-conditions/) | [C++](./C++/check-if-grid-satisfies-conditions.cpp) [Python](./Python/check-if-grid-satisfies-conditions.py) | _O(m * n)_ | _O(1)_ | Easy | | Array
+3147 | [Taking Maximum Energy From the Mystic Dungeon](https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/) | [C++](./C++/taking-maximum-energy-from-the-mystic-dungeon.cpp) [Python](./Python/taking-maximum-energy-from-the-mystic-dungeon.py) | _O(n)_ | _O(1)_ | Medium | | Array
 
 <br/>
 <div align="right">
@@ -498,6 +500,8 @@
 3121 | [Count the Number of Special Characters II](https://leetcode.com/problems/count-the-number-of-special-characters-ii/) | [C++](./C++/count-the-number-of-special-characters-ii.cpp) [Python](./Python/count-the-number-of-special-characters-ii.py) | _O(n + 26)_  | _O(26)_ | Medium || Hash Table
 3137 | [Minimum Number of Operations to Make Word K-Periodic](https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/) | [C++](./C++/minimum-number-of-operations-to-make-word-k-periodic.cpp) [Python](./Python/minimum-number-of-operations-to-make-word-k-periodic.py) | _O(n)_  | _O(n)_ | Medium || Freq Table
 3138 | [Minimum Length of Anagram Concatenation](https://leetcode.com/problems/minimum-length-of-anagram-concatenation/) | [C++](./C++/minimum-length-of-anagram-concatenation.cpp) [Python](./Python/minimum-length-of-anagram-concatenation.py) | _O(sqrt(n) * n + 26 * nlogn)_  | _O(26)_ | Medium || Number Theory, Freq Table
+3143 | [Maximum Points Inside the Square](https://leetcode.com/problems/maximum-points-inside-the-square/) | [C++](./C++/maximum-points-inside-the-square.cpp) [Python](./Python/maximum-points-inside-the-square.py) | _O(n + 26)_  | _O(26)_ | Medium || Hash Table
+3146 | [Permutation Difference between Two Strings](https://leetcode.com/problems/permutation-difference-between-two-strings/) | [C++](./C++/permutation-difference-between-two-strings.cpp) [Python](./Python/permutation-difference-between-two-strings.py) | _O(n + 26)_  | _O(26)_ | Easy || Hash Table
 
 <br/>
 <div align="right">
@@ -774,6 +778,8 @@
 3116 | [Kth Smallest Amount With Single Denomination Combination](https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/) | [C++](./C++/kth-smallest-amount-with-single-denomination-combination.cpp) [Python](./Python/kth-smallest-amount-with-single-denomination-combination.py) | _O(n * 2^n *  logk)_ | _O(2^n)_ | Hard | | Binary Search, Principle of Inclusion and Exclusion, Number Theory |
 3134 | [Find the Median of the Uniqueness Array](https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/) | [C++](./C++/find-the-median-of-the-uniqueness-array.cpp) [Python](./Python/find-the-median-of-the-uniqueness-array.py) | _O(nlogn)_ | _O(n)_ | Hard | | Binary Search, Two Pointers, Sliding Window |
 3135 | [Equalize Strings by Adding or Removing Characters at Ends](https://leetcode.com/problems/equalize-strings-by-adding-or-removing-characters-at-ends/) | [C++](./C++/equalize-strings-by-adding-or-removing-characters-at-ends.cpp) [Python](./Python/equalize-strings-by-adding-or-removing-characters-at-ends.py) | _O((n + m) * log(min(n, m)))_ | _O(min(n, m))_ | Medium | 🔒 | Binary Search, `Rabin-Karp Algorithm`, Rolling Hash, DP
+3145 | [Find Products of Elements of Big Array](https://leetcode.com/problems/find-products-of-elements-of-big-array/) | [C++](./C++/find-products-of-elements-of-big-array.cpp) [Python](./Python/find-products-of-elements-of-big-array.py) | _O(q * (logr)^2)_ | _O(1)_ | Hard | | Binary Search, Combinatorics, Bitmasks, Fast Exponentiation
+
 <br/>
 
 <div align="right">
@@ -999,6 +1005,9 @@
 3122 | [Minimum Number of Operations to Satisfy Conditions](https://leetcode.com/problems/minimum-number-of-operations-to-satisfy-conditions/) | [C++](./C++/minimum-number-of-operations-to-satisfy-conditions.cpp) [Python](./Python/minimum-number-of-operations-to-satisfy-conditions.py) | _O(n * (m + 10))_ | _O(10)_ | Medium | | DP
 3129 | [Find All Possible Stable Binary Arrays I](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/) | [C++](./C++/find-all-possible-stable-binary-arrays-i.cpp) [Python](./Python/find-all-possible-stable-binary-arrays-i.py) | _O(n * m)_ | _O(n * m)_ | Medium | | DP
 3130 | [Find All Possible Stable Binary Arrays II](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/) | [C++](./C++/find-all-possible-stable-binary-arrays-ii.cpp) [Python](./Python/find-all-possible-stable-binary-arrays-ii.py) | _O(n * m)_ | _O(n * m)_ | Hard | | DP
+3144 | [Minimum Substring Partition of Equal Character Frequency](https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/) | [C++](./C++/minimum-substring-partition-of-equal-character-frequency.cpp) [Python](./Python/minimum-substring-partition-of-equal-character-frequency.py) | _O(n * (26 + n))_ | _O(n + 26)_ | Medium | | DP, Freq Table
+3148 | [Maximum Difference Score in a Grid](https://leetcode.com/problems/maximum-difference-score-in-a-grid/) | [C++](./C++/maximum-difference-score-in-a-grid.cpp) [Python](./Python/maximum-difference-score-in-a-grid.py) | _O(m * n)_ | _O(1)_ | Medium | | DP
+3149 | [Find the Minimum Cost Array Permutation](https://leetcode.com/problems/find-the-minimum-cost-array-permutation/) | [C++](./C++/find-the-minimum-cost-array-permutation.cpp) [Python](./Python/find-the-minimum-cost-array-permutation.py) | _O((n-1)^2 * 2^(n-1))_ | _O((n-1) * 2^(n-1))_ | Hard | | DP, Backtracing
 
 <br/>
 <div align="right">
@@ -1457,6 +1466,7 @@
 3124 | [Find Longest Calls](https://leetcode.com/problems/find-longest-calls/) | [MySQL](./MySQL/find-longest-calls.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3126 | [Server Utilization Time](https://leetcode.com/problems/server-utilization-time/) | [MySQL](./MySQL/server-utilization-time.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function |
 3140 | [Consecutive Available Seats II](https://leetcode.com/problems/consecutive-available-seats-ii/) | [MySQL](./MySQL/consecutive-available-seats-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
+3150 | [Invalid Tweets II](https://leetcode.com/problems/invalid-tweets-ii/) | [MySQL](./MySQL/invalid-tweets-ii.sql) | _O(n * l + nlogn)_ | _O(n * l)_       | Easy           |🔒| String |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
