@@ -30,7 +30,6 @@ class Solution2(object):
         :type m: int
         :rtype: List[int]
         """
-        result = [0]*len(nums)
         q = []
         dist = [-1]*(1<<m)
         for x in nums:
