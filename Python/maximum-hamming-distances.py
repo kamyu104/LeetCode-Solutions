@@ -30,28 +30,23 @@ class Solution2(object):
         :type m: int
         :rtype: List[int]
         """
-        group = [[] for _ in xrange(1<<m)]
-        for i, x in enumerate(nums):
-            group[((1<<m)-1)^x].append(i)
         result = [0]*len(nums)
         q = []
-        lookup = [False]*(1<<m)
+        dist = [-1]*(1<<m)
         for x in nums:
-            if lookup[x]:
+            if dist[x] != -1:
                 continue
-            lookup[x] = True
+            dist[x] = 0
             q.append(x)
         d = 0
         while q:
+            d += 1
             new_q = []
             for u in q:
-                for i in group[u]:
-                    result[i] = m-d
                 for i in xrange(m):
-                    if lookup[u^(1<<i)]:
+                    if dist[u^(1<<i)] != -1:
                         continue
-                    lookup[u^(1<<i)] = True
+                    dist[u^(1<<i)] = d
                     new_q.append(u^(1<<i))
             q = new_q
-            d += 1
-        return result
+        return [m-dist[((1<<m)-1)^x] for x in nums]
