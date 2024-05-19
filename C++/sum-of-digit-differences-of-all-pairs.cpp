@@ -1,5 +1,5 @@
 // Time:  O(nlogr)
-// Space: O(10 * n)
+// Space: O(10 * logr)
 
 // prefix sum
 class Solution {
