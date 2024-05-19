@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3150%20%2F%203150-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3155%20%2F%203155-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -209,6 +209,9 @@
 3131 | [Find the Integer Added to Array I](https://leetcode.com/problems/find-the-integer-added-to-array-i/) | [C++](./C++/find-the-integer-added-to-array-i.cpp) [Python](./Python/find-the-integer-added-to-array-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3142 | [Check if Grid Satisfies Conditions](https://leetcode.com/problems/check-if-grid-satisfies-conditions/) | [C++](./C++/check-if-grid-satisfies-conditions.cpp) [Python](./Python/check-if-grid-satisfies-conditions.py) | _O(m * n)_ | _O(1)_ | Easy | | Array
 3147 | [Taking Maximum Energy From the Mystic Dungeon](https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/) | [C++](./C++/taking-maximum-energy-from-the-mystic-dungeon.cpp) [Python](./Python/taking-maximum-energy-from-the-mystic-dungeon.py) | _O(n)_ | _O(1)_ | Medium | | Array
+3151 | [Special Array I](https://leetcode.com/problems/special-array-i/) | [C++](./C++/special-array-i.cpp) [Python](./Python/special-array-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3152 | [Special Array II](https://leetcode.com/problems/special-array-ii/) | [C++](./C++/special-array-ii.cpp) [Python](./Python/special-array-ii.py) | _O(n + q)_ | _O(n)_ | Medium | | Prefix Sum
+3153 | [Sum of Digit Differences of All Pairs](https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/) | [C++](./C++/sum-of-digit-differences-of-all-pairs.cpp) [Python](./Python/sum-of-digit-differences-of-all-pairs.py) | _O(nlogr)_ | _O(10 * logr)_ | Medium | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -614,6 +617,8 @@
 3102 | [Minimize Manhattan Distances](https://leetcode.com/problems/minimize-manhattan-distances/) | [C++](./C++/minimize-manhattan-distances.cpp) [Python](./Python/minimize-manhattan-distances.py) | _O(n)_ | _O(1)_ | Hard | | Math |
 3115 | [Maximum Prime Difference](https://leetcode.com/problems/maximum-prime-difference/) | [C++](./C++/maximum-prime-difference.cpp) [Python](./Python/maximum-prime-difference.py) | _O(r + n)_ | _O(r)_ | Medium | | Array, Number Theory, `Linear Sieve of Eratosthenes` |
 3128 | [Right Triangles](https://leetcode.com/problems/right-triangles/) | [C++](./C++/right-triangles.cpp) [Python](./Python/right-triangles.py) | _O(n * m)_ | _O(min(n, m))_ | Medium | | Array, Combinatorics, Freq Table |
+3154 | [Find Number of Ways to Reach the K-th Stair](https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/) | [C++](./C++/find-number-of-ways-to-reach-the-k-th-stair.cpp) [Python](./Python/find-number-of-ways-to-reach-the-k-th-stair.py) | _O(logk)_ | _O(logk)_ | Hard | | Combinatorics |
+3155 | [Maximum Number of Upgradable Servers](https://leetcode.com/problems/maximum-number-of-upgradable-servers/) | [C++](./C++/maximum-number-of-upgradable-servers.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Math |
 
 <br/>
 <div align="right">
