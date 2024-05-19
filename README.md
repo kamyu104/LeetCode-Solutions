@@ -618,7 +618,7 @@
 3115 | [Maximum Prime Difference](https://leetcode.com/problems/maximum-prime-difference/) | [C++](./C++/maximum-prime-difference.cpp) [Python](./Python/maximum-prime-difference.py) | _O(r + n)_ | _O(r)_ | Medium | | Array, Number Theory, `Linear Sieve of Eratosthenes` |
 3128 | [Right Triangles](https://leetcode.com/problems/right-triangles/) | [C++](./C++/right-triangles.cpp) [Python](./Python/right-triangles.py) | _O(n * m)_ | _O(min(n, m))_ | Medium | | Array, Combinatorics, Freq Table |
 3154 | [Find Number of Ways to Reach the K-th Stair](https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/) | [C++](./C++/find-number-of-ways-to-reach-the-k-th-stair.cpp) [Python](./Python/find-number-of-ways-to-reach-the-k-th-stair.py) | _O(logk)_ | _O(logk)_ | Hard | | Combinatorics |
-3155 | [Maximum Number of Upgradable Servers](https://leetcode.com/problems/maximum-number-of-upgradable-servers/) | [C++](./C++/maximum-number-of-upgradable-servers.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Math |
+3155 | [Maximum Number of Upgradable Servers](https://leetcode.com/problems/maximum-number-of-upgradable-servers/) | [C++](./C++/maximum-number-of-upgradable-servers.py) [Python](./Python/maximum-number-of-upgradable-servers.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Math |
 
 <br/>
 <div align="right">
