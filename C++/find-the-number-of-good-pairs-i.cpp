@@ -22,3 +22,21 @@ public:
         return result;
     }
 };
+
+// Time:  O(n^2)
+// Space: O(1)
+// brute force
+class Solution2 {
+public:
+    int numberOfPairs(vector<int>& nums1, vector<int>& nums2, int k) {
+        int result = 0;
+        for (const auto& x : nums1) {
+            for (const auto& y : nums2) {
+                if (x % (k * y) == 0) {
+                    ++result;
+                }
+            }
+        }
+        return result;
+    }
+};
