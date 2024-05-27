@@ -66,5 +66,5 @@ class Solution(object):
         result = 0
         for i, x in queries:
             st.update(i, [max(x, 0), 0, 0, 0])
-            result = (result+max(st.query(0, len(nums)-1)))%MOD
+            result = (result+max(st.tree[1]))%MOD
         return result
