@@ -1482,7 +1482,7 @@
 3140 | [Consecutive Available Seats II](https://leetcode.com/problems/consecutive-available-seats-ii/) | [MySQL](./MySQL/consecutive-available-seats-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3150 | [Invalid Tweets II](https://leetcode.com/problems/invalid-tweets-ii/) | [MySQL](./MySQL/invalid-tweets-ii.sql) | _O(n * l + nlogn)_ | _O(n * l)_       | Easy           |🔒| String |
 3156 | [Employee Task Duration and Concurrent Tasks](https://leetcode.com/problems/employee-task-duration-and-concurrent-tasks/) | [MySQL](./MySQL/employee-task-duration-and-concurrent-tasks.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| Line Sweep |
-3166 | [Calculate Parking Fees and Duration](https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/) | [MySQL](./MySQL/find-the-level-of-tree-with-minimum-sum.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
+3166 | [Calculate Parking Fees and Duration](https://leetcode.com/problems/calculate-parking-fees-and-duration/description/) | [MySQL](./MySQL/calculate-parking-fees-and-duration/description.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
