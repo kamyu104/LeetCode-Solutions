@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3155%20%2F%203155-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3166%20%2F%203166-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -212,6 +212,7 @@
 3151 | [Special Array I](https://leetcode.com/problems/special-array-i/) | [C++](./C++/special-array-i.cpp) [Python](./Python/special-array-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3152 | [Special Array II](https://leetcode.com/problems/special-array-ii/) | [C++](./C++/special-array-ii.cpp) [Python](./Python/special-array-ii.py) | _O(n + q)_ | _O(n)_ | Medium | | Prefix Sum
 3153 | [Sum of Digit Differences of All Pairs](https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/) | [C++](./C++/sum-of-digit-differences-of-all-pairs.cpp) [Python](./Python/sum-of-digit-differences-of-all-pairs.py) | _O(nlogr)_ | _O(10 * logr)_ | Medium | | Prefix Sum
+3159 | [Find Occurrences of an Element in an Array](https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/) | [C++](./C++/find-occurrences-of-an-element-in-an-array.cpp) [Python](./Python/find-occurrences-of-an-element-in-an-array.py) | _O(n)_ | _O(n)_ | Medium | | Array
 
 <br/>
 <div align="right">
@@ -290,6 +291,7 @@
 3093 | [Longest Common Suffix Queries](https://leetcode.com/problems/longest-common-suffix-queries/)| [C++](./C++/longest-common-suffix-queries.cpp) [Python](./Python/longest-common-suffix-queries.py)| _O((n + q) * l)_ | _O(t)_ | Hard | | Trie |
 3110 | [Score of a String](https://leetcode.com/problems/score-of-a-string/)| [C++](./C++/score-of-a-string.cpp) [Python](./Python/score-of-a-string.py)| _O(n)_ | _O(1)_ | Easy | | String |
 3136 | [Valid Word](https://leetcode.com/problems/valid-word/) | [C++](./C++/valid-word.cpp) [Python](./Python/valid-word.py) | _O(n)_ | _O(1)_ | Easy | | String
+3163 | [String Compression III](https://leetcode.com/problems/string-compression-iii/) | [C++](./C++/string-compression-iii.cpp) [Python](./Python/string-compression-iii.py) | _O(n)_ | _O(1)_ | Medium | | String
 
 <br/>
 <div align="right">
@@ -505,6 +507,8 @@
 3138 | [Minimum Length of Anagram Concatenation](https://leetcode.com/problems/minimum-length-of-anagram-concatenation/) | [C++](./C++/minimum-length-of-anagram-concatenation.cpp) [Python](./Python/minimum-length-of-anagram-concatenation.py) | _O(sqrt(n) * n + 26 * nlogn)_  | _O(26)_ | Medium || Number Theory, Freq Table
 3143 | [Maximum Points Inside the Square](https://leetcode.com/problems/maximum-points-inside-the-square/) | [C++](./C++/maximum-points-inside-the-square.cpp) [Python](./Python/maximum-points-inside-the-square.py) | _O(n + 26)_  | _O(26)_ | Medium || Hash Table
 3146 | [Permutation Difference between Two Strings](https://leetcode.com/problems/permutation-difference-between-two-strings/) | [C++](./C++/permutation-difference-between-two-strings.cpp) [Python](./Python/permutation-difference-between-two-strings.py) | _O(n + 26)_  | _O(26)_ | Easy || Hash Table
+3158 | [Find the XOR of Numbers Which Appear Twice](https://leetcode.com/problems/find-the-xor-of-numbers-which-appear-twice/) | [C++](./C++/find-the-xor-of-numbers-which-appear-twice.cpp) [Python](./Python/find-the-xor-of-numbers-which-appear-twice.py) | _O(n)_  | _O(n)_ | Easy || Hash Table
+3160 | [Find the Number of Distinct Colors Among the Balls](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/) | [C++](./C++/find-the-number-of-distinct-colors-among-the-balls.cpp) [Python](./Python/find-the-number-of-distinct-colors-among-the-balls.py) | _O(n)_  | _O(n)_ | Medium || Freq Table
 
 <br/>
 <div align="right">
@@ -619,6 +623,8 @@
 3128 | [Right Triangles](https://leetcode.com/problems/right-triangles/) | [C++](./C++/right-triangles.cpp) [Python](./Python/right-triangles.py) | _O(n * m)_ | _O(min(n, m))_ | Medium | | Array, Combinatorics, Freq Table |
 3154 | [Find Number of Ways to Reach the K-th Stair](https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/) | [C++](./C++/find-number-of-ways-to-reach-the-k-th-stair.cpp) [Python](./Python/find-number-of-ways-to-reach-the-k-th-stair.py) | _O(logk)_ | _O(logk)_ | Hard | | Combinatorics |
 3155 | [Maximum Number of Upgradable Servers](https://leetcode.com/problems/maximum-number-of-upgradable-servers/) | [C++](./C++/maximum-number-of-upgradable-servers.cpp) [Python](./Python/maximum-number-of-upgradable-servers.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Math |
+3162 | [Find the Number of Good Pairs I](https://leetcode.com/problems/find-the-number-of-good-pairs-i/) | [C++](./C++/find-the-number-of-good-pairs-i.cpp) [Python](./Python/find-the-number-of-good-pairs-i.py) | _O(rlogr + n + m)_ | _O(r)_ | Easy | | Number Theory, Freq Table |
+3164 | [Find the Number of Good Pairs II](https://leetcode.com/problems/find-the-number-of-good-pairs-ii/) | [C++](./C++/find-the-number-of-good-pairs-ii.cpp) [Python](./Python/find-the-number-of-good-pairs-ii.py) | _O(rlogr + n + m)_ | _O(r)_ | Medium | | Number Theory, Freq Table |
 
 <br/>
 <div align="right">
@@ -803,6 +809,8 @@
 2926 | [Maximum Balanced Subsequence Sum](https://leetcode.com/problems/maximum-balanced-subsequence-sum/) | [C++](./C++/maximum-balanced-subsequence-sum.cpp) [Python](./Python/maximum-balanced-subsequence-sum.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sorted List, BST, Binary Search, Mono Stack, BIT, Fenwick Tree, Segment Tree |
 3072 | [Distribute Elements Into Two Arrays II](https://leetcode.com/problems/distribute-elements-into-two-arrays-ii/) | [C++](./C++/distribute-elements-into-two-arrays-ii.cpp) [Python](./Python/distribute-elements-into-two-arrays-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sorted List, Ordered Set
 3073 | [Maximum Increasing Triplet Value](https://leetcode.com/problems/maximum-increasing-triplet-value/) | [C++](./C++/maximum-increasing-triplet-value.cpp) [Python](./Python/maximum-increasing-triplet-value.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Sorted List, BST, Prefix Sum
+3161 | [Block Placement Queries](https://leetcode.com/problems/block-placement-queries/) | [C++](./C++/block-placement-queries.cpp) [Python](./Python/block-placement-queries.py) | _O(qlogq)_ | _O(q)_ | Hard | | Sorted List, BST, BIT, Fenwick Tree, Segment Tree
+3165 | [Maximum Sum of Subsequence With Non-adjacent Elements](https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/) | [C++](./C++/maximum-sum-of-subsequence-with-non-adjacent-elements.cpp) [Python](./Python/maximum-sum-of-subsequence-with-non-adjacent-elementss.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | Segment Tree
 
 <br/>
 <div align="right">
@@ -840,6 +848,7 @@
 2812 | [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/)  | [C++](./C++/find-the-safest-path-in-a-grid.cpp) [Python](./Python/find-the-safest-path-in-a-grid.py) | _O(n^2)_ | _O(n^2)_| Medium           || BFS, Bucket Sort, Union Find, `Dijkstra's Algorithm`, Binary Search | 
 2814 | [Minimum Time Takes to Reach Destination Without Drowning](https://leetcode.com/problems/minimum-time-takes-to-reach-destination-without-drowning/)  | [C++](./C++/minimum-time-takes-to-reach-destination-without-drowning.cpp) [Python](./Python/minimum-time-takes-to-reach-destination-without-drowning.py) | _O(m * n)_ | _O(m * n)_| Hard           | 🔒 | Simulation, BFS | 
 2852 | [Sum of Remoteness of All Cells](https://leetcode.com/problems/sum-of-remoteness-of-all-cells/)| [C++](./C++/sum-of-remoteness-of-all-cells.cpp) [Python](./Python/sum-of-remoteness-of-all-cells.py)| _O(n^2)_ | _O(n^2)_ | Medium | 🔒 | Flood Fill, BFS, Math |
+3157 | [Find the Level of Tree with Minimum Sum](https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/)| [C++](./C++/find-the-level-of-tree-with-minimum-sum.cpp) [Python](./Python/find-the-level-of-tree-with-minimum-sum.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | BFS |
 
 <br/>
 <div align="right">
@@ -1472,6 +1481,8 @@
 3126 | [Server Utilization Time](https://leetcode.com/problems/server-utilization-time/) | [MySQL](./MySQL/server-utilization-time.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function |
 3140 | [Consecutive Available Seats II](https://leetcode.com/problems/consecutive-available-seats-ii/) | [MySQL](./MySQL/consecutive-available-seats-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3150 | [Invalid Tweets II](https://leetcode.com/problems/invalid-tweets-ii/) | [MySQL](./MySQL/invalid-tweets-ii.sql) | _O(n * l + nlogn)_ | _O(n * l)_       | Easy           |🔒| String |
+3156 | [Employee Task Duration and Concurrent Tasks](https://leetcode.com/problems/employee-task-duration-and-concurrent-tasks/) | [MySQL](./MySQL/employee-task-duration-and-concurrent-tasks.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| Line Sweep |
+3166 | [Calculate Parking Fees and Duration](https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/) | [MySQL](./MySQL/find-the-level-of-tree-with-minimum-sum.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
