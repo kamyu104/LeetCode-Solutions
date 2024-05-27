@@ -57,10 +57,10 @@ class Solution(object):
                 return y
             if y is None:
                 return x
-            return [max(x[L0R1]+y[L1R0], x[L0R0]+y[L1R0],x[L0R1]+y[L0R0]),
-                    max(x[L1R1]+y[L1R0], x[L1R0]+y[L1R0],x[L1R1]+y[L0R0]),
-                    max(x[L0R1]+y[L1R1], x[L0R0]+y[L1R1],x[L0R1]+y[L0R1]),
-                    max(x[L1R1]+y[L1R1], x[L1R0]+y[L1R1],x[L1R1]+y[L0R1])]
+            return [max(x[L0R1]+y[L1R0], x[L0R0]+y[L1R0], x[L0R1]+y[L0R0]),
+                    max(x[L1R1]+y[L1R0], x[L1R0]+y[L1R0], x[L1R1]+y[L0R0]),
+                    max(x[L0R1]+y[L1R1], x[L0R0]+y[L1R1], x[L0R1]+y[L0R1]),
+                    max(x[L1R1]+y[L1R1], x[L1R0]+y[L1R1], x[L1R1]+y[L0R1])]
 
         st = SegmentTree(len(nums), build_fn=build, query_fn=query)
         result = 0
