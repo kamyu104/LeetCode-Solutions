@@ -810,7 +810,7 @@
 3072 | [Distribute Elements Into Two Arrays II](https://leetcode.com/problems/distribute-elements-into-two-arrays-ii/) | [C++](./C++/distribute-elements-into-two-arrays-ii.cpp) [Python](./Python/distribute-elements-into-two-arrays-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sorted List, Ordered Set
 3073 | [Maximum Increasing Triplet Value](https://leetcode.com/problems/maximum-increasing-triplet-value/) | [C++](./C++/maximum-increasing-triplet-value.cpp) [Python](./Python/maximum-increasing-triplet-value.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Sorted List, BST, Prefix Sum
 3161 | [Block Placement Queries](https://leetcode.com/problems/block-placement-queries/) | [C++](./C++/block-placement-queries.cpp) [Python](./Python/block-placement-queries.py) | _O(qlogq)_ | _O(q)_ | Hard | | Sorted List, BST, BIT, Fenwick Tree, Segment Tree
-3165 | [Maximum Sum of Subsequence With Non-adjacent Elements](https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/) | [C++](./C++/maximum-sum-of-subsequence-with-non-adjacent-elements.cpp) [Python](./Python/maximum-sum-of-subsequence-with-non-adjacent-elementss.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | Segment Tree
+3165 | [Maximum Sum of Subsequence With Non-adjacent Elements](https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/) | [C++](./C++/maximum-sum-of-subsequence-with-non-adjacent-elements.cpp) [Python](./Python/maximum-sum-of-subsequence-with-non-adjacent-elements.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | Segment Tree
 
 <br/>
 <div align="right">
