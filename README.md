@@ -212,7 +212,7 @@
 3151 | [Special Array I](https://leetcode.com/problems/special-array-i/) | [C++](./C++/special-array-i.cpp) [Python](./Python/special-array-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3152 | [Special Array II](https://leetcode.com/problems/special-array-ii/) | [C++](./C++/special-array-ii.cpp) [Python](./Python/special-array-ii.py) | _O(n + q)_ | _O(n)_ | Medium | | Prefix Sum
 3153 | [Sum of Digit Differences of All Pairs](https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/) | [C++](./C++/sum-of-digit-differences-of-all-pairs.cpp) [Python](./Python/sum-of-digit-differences-of-all-pairs.py) | _O(nlogr)_ | _O(10 * logr)_ | Medium | | Prefix Sum
-3159 | [Find Occurrences of an Element in an Array](https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/) | [C++](./C++/find-occurrences-of-an-element-in-an-array.cpp) [Python](./Python/find-occurrences-of-an-element-in-an-array.py) | _O(n)_ | _O(n)_ | Medium | | Array
+3159 | [Find Occurrences of an Element in an Array](https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/) | [C++](./C++/find-occurrences-of-an-element-in-an-array.cpp) [Python](./Python/find-occurrences-of-an-element-in-an-array.py) | _O(n + q)_ | _O(n)_ | Medium | | Array
 
 <br/>
 <div align="right">
@@ -508,7 +508,7 @@
 3143 | [Maximum Points Inside the Square](https://leetcode.com/problems/maximum-points-inside-the-square/) | [C++](./C++/maximum-points-inside-the-square.cpp) [Python](./Python/maximum-points-inside-the-square.py) | _O(n + 26)_  | _O(26)_ | Medium || Hash Table
 3146 | [Permutation Difference between Two Strings](https://leetcode.com/problems/permutation-difference-between-two-strings/) | [C++](./C++/permutation-difference-between-two-strings.cpp) [Python](./Python/permutation-difference-between-two-strings.py) | _O(n + 26)_  | _O(26)_ | Easy || Hash Table
 3158 | [Find the XOR of Numbers Which Appear Twice](https://leetcode.com/problems/find-the-xor-of-numbers-which-appear-twice/) | [C++](./C++/find-the-xor-of-numbers-which-appear-twice.cpp) [Python](./Python/find-the-xor-of-numbers-which-appear-twice.py) | _O(n)_  | _O(n)_ | Easy || Hash Table
-3160 | [Find the Number of Distinct Colors Among the Balls](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/) | [C++](./C++/find-the-number-of-distinct-colors-among-the-balls.cpp) [Python](./Python/find-the-number-of-distinct-colors-among-the-balls.py) | _O(n)_  | _O(n)_ | Medium || Freq Table
+3160 | [Find the Number of Distinct Colors Among the Balls](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/) | [C++](./C++/find-the-number-of-distinct-colors-among-the-balls.cpp) [Python](./Python/find-the-number-of-distinct-colors-among-the-balls.py) | _O(q)_  | _O(q)_ | Medium || Freq Table
 
 <br/>
 <div align="right">
