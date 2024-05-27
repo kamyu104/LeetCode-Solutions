@@ -1,5 +1,5 @@
-// Time:  O(n)
-// Space: O(n)
+// Time:  O(q)
+// Space: O(q)
 
 // freq table
 class Solution {
