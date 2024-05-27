@@ -18,3 +18,17 @@ class Solution(object):
             for i in xrange(1, (len(cnt)-1)//x+1):
                 cnt[i*x] += c
         return sum(cnt[x] for x in nums1)
+
+
+# Time:  O(n * m)
+# Space: O(1)
+# brute force
+class Solution2(object):
+    def numberOfPairs(self, nums1, nums2, k):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :type k: int
+        :rtype: int
+        """
+        return sum(x%(k*y) == 0 for x in nums1 for y in nums2)
