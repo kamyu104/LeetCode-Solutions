@@ -35,7 +35,7 @@ public:
         int result = 0;
         for (const auto& q : queries) {
             st.update(q[0], vector<int64_t>{max(q[1], 0), 0, 0, 0});
-            result = (result + ranges::max(st.query(0, size(nums) - 1))) % MOD;
+            result = (result + ranges::max(st.tree[1])) % MOD;
         }
         return result;
     }
