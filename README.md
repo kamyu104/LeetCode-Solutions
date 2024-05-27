@@ -623,7 +623,7 @@
 3128 | [Right Triangles](https://leetcode.com/problems/right-triangles/) | [C++](./C++/right-triangles.cpp) [Python](./Python/right-triangles.py) | _O(n * m)_ | _O(min(n, m))_ | Medium | | Array, Combinatorics, Freq Table |
 3154 | [Find Number of Ways to Reach the K-th Stair](https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/) | [C++](./C++/find-number-of-ways-to-reach-the-k-th-stair.cpp) [Python](./Python/find-number-of-ways-to-reach-the-k-th-stair.py) | _O(logk)_ | _O(logk)_ | Hard | | Combinatorics |
 3155 | [Maximum Number of Upgradable Servers](https://leetcode.com/problems/maximum-number-of-upgradable-servers/) | [C++](./C++/maximum-number-of-upgradable-servers.cpp) [Python](./Python/maximum-number-of-upgradable-servers.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Math |
-3162 | [Find the Number of Good Pairs I](https://leetcode.com/problems/find-the-number-of-good-pairs-i/) | [C++](./C++/find-the-number-of-good-pairs-i.cpp) [Python](./Python/find-the-number-of-good-pairs-i.py) | _O(rlogr + n + m)_ | _O(r)_ | Easy | | Number Theory, Freq Table |
+3162 | [Find the Number of Good Pairs I](https://leetcode.com/problems/find-the-number-of-good-pairs-i/) | [C++](./C++/find-the-number-of-good-pairs-i.cpp) [Python](./Python/find-the-number-of-good-pairs-i.py) | _O(rlogr + n + m)_ | _O(r)_ | Easy | | Brute Force, Number Theory, Freq Table |
 3164 | [Find the Number of Good Pairs II](https://leetcode.com/problems/find-the-number-of-good-pairs-ii/) | [C++](./C++/find-the-number-of-good-pairs-ii.cpp) [Python](./Python/find-the-number-of-good-pairs-ii.py) | _O(rlogr + n + m)_ | _O(r)_ | Medium | | Number Theory, Freq Table |
 
 <br/>
