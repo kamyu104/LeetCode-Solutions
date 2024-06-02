@@ -1,7 +1,7 @@
 // Time:  O(nlogr), r = max(nums)
 // Space: O(logr)
 
-// freq table, two pointers, lc1521
+// freq table, two pointers, sliding window, lc1521
 class Solution {
 public:
     int minimumDifference(vector<int>& nums, int k) {
