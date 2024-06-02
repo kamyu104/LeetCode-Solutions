@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3166%20%2F%203166-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3171%20%2F%203171-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -509,6 +509,7 @@
 3146 | [Permutation Difference between Two Strings](https://leetcode.com/problems/permutation-difference-between-two-strings/) | [C++](./C++/permutation-difference-between-two-strings.cpp) [Python](./Python/permutation-difference-between-two-strings.py) | _O(n + 26)_  | _O(26)_ | Easy || Hash Table
 3158 | [Find the XOR of Numbers Which Appear Twice](https://leetcode.com/problems/find-the-xor-of-numbers-which-appear-twice/) | [C++](./C++/find-the-xor-of-numbers-which-appear-twice.cpp) [Python](./Python/find-the-xor-of-numbers-which-appear-twice.py) | _O(n)_  | _O(n)_ | Easy || Hash Table
 3160 | [Find the Number of Distinct Colors Among the Balls](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/) | [C++](./C++/find-the-number-of-distinct-colors-among-the-balls.cpp) [Python](./Python/find-the-number-of-distinct-colors-among-the-balls.py) | _O(q)_  | _O(q)_ | Medium || Freq Table
+3167 | [Better Compression of String](https://leetcode.com/problems/better-compression-of-string/) | [C++](./C++/better-compression-of-string.cpp) [Python](./Python/better-compression-of-string.py) | _O(n + 26)_  | _O(26)_ | Medium | 🔒 | Freq Table, Counting Sort
 
 <br/>
 <div align="right">
@@ -663,6 +664,7 @@
 3027 | [Find the Number of Ways to Place People II](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-ii/) | [C++](./C++/find-the-number-of-ways-to-place-people-ii.cpp) [Python](./Python/find-the-number-of-ways-to-place-people-ii.py) | _O(n^2)_   | _O(1)_        | Hard         | | Sort, Array
 3081 | [Replace Question Marks in String to Minimize Its Value](https://leetcode.com/problems/replace-question-marks-in-string-to-minimize-its-value/) | [C++](./C++/replace-question-marks-in-string-to-minimize-its-value.cpp) [Python](./Python/replace-question-marks-in-string-to-minimize-its-value.py) | _O(n + 26 * log(26))_   | _O(n + 26)_        | Medium         | | Greedy, Counting Sort, Heap, Prefix Sum
 3132 | [Find the Integer Added to Array II](https://leetcode.com/problems/find-the-integer-added-to-array-ii/) | [C++](./C++/find-the-integer-added-to-array-ii.cpp) [Python](./Python/find-the-integer-added-to-array-ii.py) | _O(n)_ | _O(n)_ | Medium | | Sort, Paritial Sort, Freq Table
+3169 | [Count Days Without Meetings](https://leetcode.com/problems/count-days-without-meetings/) | [C++](./C++/count-days-without-meetings.cpp) [Python](./Python/count-days-without-meetings.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort
 
 <br/>
 <div align="right">
@@ -737,6 +739,7 @@
 3090 | [Maximum Length Substring With Two Occurrences](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/) | [C++](./C++/maximum-length-substring-with-two-occurrences.cpp) [Python](./Python/maximum-length-substring-with-two-occurrences.py) | _O(n + 26)_ | _O(26)_ | Easy | | Freq Table, Sliding Window, Two Pointers
 3095 | [Shortest Subarray With OR at Least K I](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/) | [C++](./C++/shortest-subarray-with-or-at-least-k-i.cpp) [Python](./Python/shortest-subarray-with-or-at-least-k-i.py) | _O(n * 30)_ | _O(30)_ | Easy | | Brute Force, Freq Table, Two Pointers
 3097 | [Shortest Subarray With OR at Least K II](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/) | [C++](./C++/shortest-subarray-with-or-at-least-k-ii.cpp) [Python](./Python/shortest-subarray-with-or-at-least-k-ii.py) | _O(n * 30)_ | _O(30)_ | Medium | | Freq Table, Two Pointers
+3171 | [Find Subarray With Bitwise AND Closest to K](https://leetcode.com/problems/find-subarray-with-bitwise-and-closest-to-k/)| [C++](./C++/find-subarray-with-bitwise-and-closest-to-k.cpp) [Python](./Python/find-subarray-with-bitwise-and-closest-to-k.py) | _O(nlogr)_    | _O(logr)_          | Hard           | variant of [Find a Value of a Mysterious Function Closest to Target](https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target/) | DP, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -1165,6 +1168,7 @@
 3111 | [Minimum Rectangles to Cover Points](https://leetcode.com/problems/minimum-rectangles-to-cover-points/) | [C++](./C++/minimum-rectangles-to-cover-points.cpp) [Python](./Python/minimum-rectangles-to-cover-points.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Greedy
 3114 | [Latest Time You Can Obtain After Replacing Characters](https://leetcode.com/problems/latest-time-you-can-obtain-after-replacing-characters/)| [C++](./C++/latest-time-you-can-obtain-after-replacing-characters.cpp) [Python](./Python/latest-time-you-can-obtain-after-replacing-characters.py)| _O(1)_ | _O(1)_ | Easy | | String, Greedy |
 3119 | [Maximum Number of Potholes That Can Be Fixed](https://leetcode.com/problems/maximum-number-of-potholes-that-can-be-fixed/)| [C++](./C++/maximum-number-of-potholes-that-can-be-fixed.cpp) [Python](./Python/maximum-number-of-potholes-that-can-be-fixed.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | Sort, Counting Sort, Greedy |
+3170 | [Lexicographically Minimum String After Removing Stars](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/)| [C++](./C++/lexicographically-minimum-string-after-removing-stars.cpp) [Python](./Python/lexicographically-minimum-string-after-removing-stars.py)| _O(n + 26)_ | _O(n + 26)_ | Medium | | Greedy, Hash Table, Stack |
 
 <br/>
 <div align="right">
@@ -1240,6 +1244,7 @@
 2934 | [Minimum Operations to Maximize Last Elements in Arrays](https://leetcode.com/problems/minimum-operations-to-maximize-last-elements-in-arrays/) | [C++](./C++/minimum-operations-to-maximize-last-elements-in-arrays.cpp) [Python](./Python/minimum-operations-to-maximize-last-elements-in-arrays.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 2960 | [Count Tested Devices After Test Operations](https://leetcode.com/problems/count-tested-devices-after-test-operations/) | [C++](./C++/count-tested-devices-after-test-operations.cpp) [Python](./Python/count-tested-devices-after-test-operations.py) | _O(n)_ | _O(1)_ | Easy | | Simulation
 3100 | [Water Bottles II](https://leetcode.com/problems/water-bottles-ii/) | [C++](./C++/water-bottles-ii.cpp) [Python](./Python/water-bottles-ii.py) | _O(sqrt(n))_ | _O(1)_ | Medium | | Simulation
+3168 | [Minimum Number of Chairs in a Waiting Room](https://leetcode.com/problems/minimum-number-of-chairs-in-a-waiting-room/) | [C++](./C++/minimum-number-of-chairs-in-a-waiting-room.cpp) [Python](./Python/minimum-number-of-chairs-in-a-waiting-room.py) | _O(n)_ | _O(1)_ | Easy | | Simulation
 
 <br/>
 <div align="right">
