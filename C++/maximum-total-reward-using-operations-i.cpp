@@ -1,4 +1,4 @@
-// Time: O(nlogn + r^2), r = max(rewardValues)
+// Time:  O(nlogn + r^2), r = max(rewardValues)
 // Space: O(r)
 
 // sort, dp, bitset
@@ -25,7 +25,7 @@ public:
     }
 };
 
-// Time: O(nlogn + r^2), r = max(rewardValues)
+// Time:  O(nlogn + r^2), r = max(rewardValues)
 // Space: O(r)
 // sort, dp, bitset
 class Solution2 {
@@ -51,7 +51,7 @@ public:
     }
 };
 
-// Time: O(nlogn + r^2), r = max(rewardValues)
+// Time:  O(nlogn + r^2), r = max(rewardValues)
 // Space: O(r)
 // sort, dp
 class Solution3 {
@@ -76,7 +76,7 @@ public:
     }
 };
 
-// Time: O(nlogn + r^2), r = max(rewardValues)
+// Time:  O(nlogn + r^2), r = max(rewardValues)
 // Space: O(r)
 // sort, dp
 class Solution4 {
