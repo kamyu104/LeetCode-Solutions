@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3171%20%2F%203171-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3181%20%2F%203181-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -213,6 +213,7 @@
 3152 | [Special Array II](https://leetcode.com/problems/special-array-ii/) | [C++](./C++/special-array-ii.cpp) [Python](./Python/special-array-ii.py) | _O(n + q)_ | _O(n)_ | Medium | | Prefix Sum
 3153 | [Sum of Digit Differences of All Pairs](https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/) | [C++](./C++/sum-of-digit-differences-of-all-pairs.cpp) [Python](./Python/sum-of-digit-differences-of-all-pairs.py) | _O(nlogr)_ | _O(10 * logr)_ | Medium | | Prefix Sum
 3159 | [Find Occurrences of an Element in an Array](https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/) | [C++](./C++/find-occurrences-of-an-element-in-an-array.cpp) [Python](./Python/find-occurrences-of-an-element-in-an-array.py) | _O(n + q)_ | _O(n)_ | Medium | | Array
+3173 | [Bitwise OR of Adjacent Elements](https://leetcode.com/problems/bitwise-or-of-adjacent-elements/) | [C++](./C++/bitwise-or-of-adjacent-elements.cpp) [Python](./Python/bitwise-or-of-adjacent-elements.py) | _O(n)_ | _O(1)_ | Easy | 🔒 | Array
 
 <br/>
 <div align="right">
@@ -340,7 +341,7 @@
 2866 | [Beautiful Towers II](https://leetcode.com/problems/beautiful-towers-ii/) | [C++](./C++/beautiful-towers-ii.cpp) [Python](./Python/beautiful-towers-ii.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack
 2899 | [Last Visited Integers](https://leetcode.com/problems/last-visited-integers/) | [C++](./C++/last-visited-integers.cpp) [Python](./Python/last-visited-integers.py) | _O(n)_ | _O(n)_ | Easy | | Stack
 3113 | [Find the Number of Subarrays Where Boundary Elements Are Maximum](https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/) | [C++](./C++/find-the-number-of-subarrays-where-boundary-elements-are-maximum.cpp) [Python](./Python/find-the-number-of-subarrays-where-boundary-elements-are-maximum.py) | _O(n)_ | _O(n)_ | Hard | | Mono Stack, Combinatorics
-
+3174 | [Clear Digits](https://leetcode.com/problems/clear-digits/) | [C++](./C++/clear-digits.cpp) [Python](./Python/clear-digits.py) | _O(n)_ | _O(1)_ | Easy | | Stack, Two Pointers
 
 <br/>
 <div align="right">
@@ -626,7 +627,8 @@
 3155 | [Maximum Number of Upgradable Servers](https://leetcode.com/problems/maximum-number-of-upgradable-servers/) | [C++](./C++/maximum-number-of-upgradable-servers.cpp) [Python](./Python/maximum-number-of-upgradable-servers.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Math |
 3162 | [Find the Number of Good Pairs I](https://leetcode.com/problems/find-the-number-of-good-pairs-i/) | [C++](./C++/find-the-number-of-good-pairs-i.cpp) [Python](./Python/find-the-number-of-good-pairs-i.py) | _O(rlogr + n + m)_ | _O(r)_ | Easy | | Brute Force, Number Theory, Freq Table |
 3164 | [Find the Number of Good Pairs II](https://leetcode.com/problems/find-the-number-of-good-pairs-ii/) | [C++](./C++/find-the-number-of-good-pairs-ii.cpp) [Python](./Python/find-the-number-of-good-pairs-ii.py) | _O(rlogr + n + m)_ | _O(r)_ | Medium | | Number Theory, Freq Table |
-
+3178 | [Find the Child Who Has the Ball After K Seconds](https://leetcode.com/problems/find-the-child-who-has-the-ball-after-k-seconds/) | [C++](./C++/find-the-child-who-has-the-ball-after-k-seconds.cpp) [Python](./Python/find-the-child-who-has-the-ball-after-k-seconds.py) | _O(1)_ | _O(1)_ | Easy | | Math |
+3179 | [Find the N-th Value After K Seconds](https://leetcode.com/problems/find-the-n-th-value-after-k-seconds/) | [C++](./C++/find-the-n-th-value-after-k-seconds.cpp) [Python](./Python/find-the-n-th-value-after-k-seconds.py) | _O(n + k)_ | _O(n + k)_ | Medium | | Combinatorics |
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -1025,7 +1027,10 @@
 3144 | [Minimum Substring Partition of Equal Character Frequency](https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/) | [C++](./C++/minimum-substring-partition-of-equal-character-frequency.cpp) [Python](./Python/minimum-substring-partition-of-equal-character-frequency.py) | _O(n * (n + 26))_ | _O(n + 26)_ | Medium | | DP, Freq Table
 3148 | [Maximum Difference Score in a Grid](https://leetcode.com/problems/maximum-difference-score-in-a-grid/) | [C++](./C++/maximum-difference-score-in-a-grid.cpp) [Python](./Python/maximum-difference-score-in-a-grid.py) | _O(m * n)_ | _O(1)_ | Medium | | DP
 3149 | [Find the Minimum Cost Array Permutation](https://leetcode.com/problems/find-the-minimum-cost-array-permutation/) | [C++](./C++/find-the-minimum-cost-array-permutation.cpp) [Python](./Python/find-the-minimum-cost-array-permutation.py) | _O((n-1)^2 * 2^(n-1))_ | _O((n-1) * 2^(n-1))_ | Hard | | DP, Backtracing
-
+3176 | [Find the Maximum Length of a Good Subsequence I](https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-i/) | [C++](./C++/find-the-maximum-length-of-a-good-subsequence-i.cpp) [Python](./Python/find-the-maximum-length-of-a-good-subsequence-i.py) | _O(n * k)_ | _O(n * k)_ | Medium | | DP
+3177 | [Find the Maximum Length of a Good Subsequence II](https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/) | [C++](./C++/find-the-maximum-length-of-a-good-subsequence-ii.cpp) [Python](./Python/find-the-maximum-length-of-a-good-subsequence-ii.py) | _O(n * k)_ | _O(n * k)_ | Hard | | DP
+3180 | [Maximum Total Reward Using Operations I](https://leetcode.com/problems/maximum-total-reward-using-operations-i/) | [C++](./C++/maximum-total-reward-using-operations-i.cpp) [Python](./Python/maximum-total-reward-using-operations-i.py) | _O(n * k)_ | _O(n * k)_ | Medium | | Sort, DP, Bitset
+3181 | [Maximum Total Reward Using Operations II](https://leetcode.com/problems/maximum-total-reward-using-operations-ii/) | [C++](./C++/maximum-total-reward-using-operations-ii.cpp) [Python](./Python/maximum-total-reward-using-operations-ii.py) | _O(n * k)_ | _O(n * k)_ | Hard | | Sort, DP, Bitset
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -1245,6 +1250,7 @@
 2960 | [Count Tested Devices After Test Operations](https://leetcode.com/problems/count-tested-devices-after-test-operations/) | [C++](./C++/count-tested-devices-after-test-operations.cpp) [Python](./Python/count-tested-devices-after-test-operations.py) | _O(n)_ | _O(1)_ | Easy | | Simulation
 3100 | [Water Bottles II](https://leetcode.com/problems/water-bottles-ii/) | [C++](./C++/water-bottles-ii.cpp) [Python](./Python/water-bottles-ii.py) | _O(sqrt(n))_ | _O(1)_ | Medium | | Simulation
 3168 | [Minimum Number of Chairs in a Waiting Room](https://leetcode.com/problems/minimum-number-of-chairs-in-a-waiting-room/) | [C++](./C++/minimum-number-of-chairs-in-a-waiting-room.cpp) [Python](./Python/minimum-number-of-chairs-in-a-waiting-room.py) | _O(n)_ | _O(1)_ | Easy | | Simulation
+3175 | [Find The First Player to win K Games in a Row](https://leetcode.com/problems/find-the-first-player-to-win-k-games-in-a-row/) | [C++](./C++/find-the-first-player-to-win-k-games-in-a-row.cpp) [Python](./Python/find-the-first-player-to-win-k-games-in-a-row.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 
 <br/>
 <div align="right">
@@ -1488,6 +1494,7 @@
 3150 | [Invalid Tweets II](https://leetcode.com/problems/invalid-tweets-ii/) | [MySQL](./MySQL/invalid-tweets-ii.sql) | _O(n * l + nlogn)_ | _O(n * l)_       | Easy           |🔒| String |
 3156 | [Employee Task Duration and Concurrent Tasks](https://leetcode.com/problems/employee-task-duration-and-concurrent-tasks/) | [MySQL](./MySQL/employee-task-duration-and-concurrent-tasks.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| Line Sweep |
 3166 | [Calculate Parking Fees and Duration](https://leetcode.com/problems/calculate-parking-fees-and-duration/) | [MySQL](./MySQL/calculate-parking-fees-and-duration.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
+3172 | [Second Day Verification](https://leetcode.com/problems/second-day-verification/) | [MySQL](./MySQL/second-day-verification.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒|  |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
