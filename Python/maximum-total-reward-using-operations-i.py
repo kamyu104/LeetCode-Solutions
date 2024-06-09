@@ -1,4 +1,4 @@
-# Time: O(nlogn + r^2), r = max(rewardValues)
+# Time:  O(nlogn + r^2), r = max(rewardValues)
 # Space: O(r)
 
 # sort, dp, bitset
@@ -17,7 +17,7 @@ class Solution(object):
         return mx+(dp.bit_length()-1)
 
 
-# Time: O(nlogn + r^2), r = max(rewardValues)
+# Time:  O(nlogn + r^2), r = max(rewardValues)
 # Space: O(r)
 # sort, dp, bitset
 class Solution2(object):
@@ -33,7 +33,7 @@ class Solution2(object):
         return dp.bit_length()-1
 
 
-# Time: O(nlogn + r^2), r = max(rewardValues)
+# Time:  O(nlogn + r^2), r = max(rewardValues)
 # Space: O(r)
 # sort, dp
 class Solution3(object):
@@ -51,7 +51,7 @@ class Solution3(object):
         return mx+next(x for x in reversed(xrange(len(dp))) if dp[x])
 
 
-# Time: O(nlogn + r^2), r = max(rewardValues)
+# Time:  O(nlogn + r^2), r = max(rewardValues)
 # Space: O(r)
 # sort, dp
 class Solution4(object):
