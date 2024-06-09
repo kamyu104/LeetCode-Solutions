@@ -628,7 +628,7 @@
 3162 | [Find the Number of Good Pairs I](https://leetcode.com/problems/find-the-number-of-good-pairs-i/) | [C++](./C++/find-the-number-of-good-pairs-i.cpp) [Python](./Python/find-the-number-of-good-pairs-i.py) | _O(rlogr + n + m)_ | _O(r)_ | Easy | | Brute Force, Number Theory, Freq Table |
 3164 | [Find the Number of Good Pairs II](https://leetcode.com/problems/find-the-number-of-good-pairs-ii/) | [C++](./C++/find-the-number-of-good-pairs-ii.cpp) [Python](./Python/find-the-number-of-good-pairs-ii.py) | _O(rlogr + n + m)_ | _O(r)_ | Medium | | Number Theory, Freq Table |
 3178 | [Find the Child Who Has the Ball After K Seconds](https://leetcode.com/problems/find-the-child-who-has-the-ball-after-k-seconds/) | [C++](./C++/find-the-child-who-has-the-ball-after-k-seconds.cpp) [Python](./Python/find-the-child-who-has-the-ball-after-k-seconds.py) | _O(1)_ | _O(1)_ | Easy | | Math |
-3179 | [Find the N-th Value After K Seconds](https://leetcode.com/problems/find-the-n-th-value-after-k-seconds/) | [C++](./C++/find-the-n-th-value-after-k-seconds.cpp) [Python](./Python/find-the-n-th-value-after-k-seconds.py) | _O(n + k)_ | _O(n + k)_ | Medium | | Combinatorics |
+3179 | [Find the N-th Value After K Seconds](https://leetcode.com/problems/find-the-n-th-value-after-k-seconds/) | [C++](./C++/find-the-n-th-value-after-k-seconds.cpp) [Python](./Python/find-the-n-th-value-after-k-seconds.py) | _O(n + k)_ | _O(n + k)_ | Medium | | Prefix Sum, Combinatorics |
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
