@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3181%20%2F%203181-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3182%20%2F%203182-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1496,6 +1496,7 @@
 3156 | [Employee Task Duration and Concurrent Tasks](https://leetcode.com/problems/employee-task-duration-and-concurrent-tasks/) | [MySQL](./MySQL/employee-task-duration-and-concurrent-tasks.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| Line Sweep |
 3166 | [Calculate Parking Fees and Duration](https://leetcode.com/problems/calculate-parking-fees-and-duration/) | [MySQL](./MySQL/calculate-parking-fees-and-duration.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
 3172 | [Second Day Verification](https://leetcode.com/problems/second-day-verification/) | [MySQL](./MySQL/second-day-verification.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒|  |
+3182 | [Find Top Scoring Students](https://leetcode.com/problems/find-top-scoring-students/) | [MySQL](./MySQL/find-top-scoring-students.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
