@@ -43,7 +43,7 @@ class Solution3(object):
         :rtype: int
         """
         mx = max(rewardValues)
-        dp = [False]*((max(rewardValues)*2-1)+1)
+        dp = [False]*(max(rewardValues)+1)
         dp[0] = True
         for v in sorted(set(rewardValues)):
             for x in xrange(min(v, mx-v)):
