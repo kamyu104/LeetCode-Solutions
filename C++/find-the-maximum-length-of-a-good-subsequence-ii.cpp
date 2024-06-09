@@ -39,3 +39,24 @@ public:
         return result[k];
     }
 };
+
+// Time:  O(n^2 * k)
+// Space: O(n * k)
+// dp
+class Solution3 {
+public:
+    int maximumLength(vector<int>& nums, int k) {
+        vector<vector<int>> dp(size(nums), vector<int>(k + 1));
+        int result = 0;
+        for (int i = 0; i < size(nums); ++i) {
+            dp[i][0] = 1;
+            for (int l = 0; l <= k; ++l) {
+                for (int j = 0; j < i; ++j) {
+                    dp[i][l] = max({dp[i][l], nums[j] == nums[i] ? dp[j][l]+ 1 : 1, l - 1 >= 0 ? dp[j][l - 1] + 1 : 1});
+                }
+                result = max(result, dp[i][l]);
+            }
+        }
+        return result;
+    }
+};
