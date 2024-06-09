@@ -21,3 +21,22 @@ class Solution(object):
             return (fact[n]*inv_fact[n-k] % MOD) * inv_fact[k] % MOD
 
         return nCr(n+k-1, k)
+
+
+# Time:  O(n * k)
+# Space: O(n)
+# prefix sum
+class Solution2(object):
+    def valueAfterKSeconds(self, n, k):
+        """
+        :type n: int
+        :type k: int
+        :rtype: int
+        """
+        MOD = 10**9+7
+        prefix = [1]*n
+        for _ in range(k):
+            for i in xrange(1, n):
+                prefix[i] = (prefix[i]+prefix[i-1])%MOD
+        return prefix[-1]
+
