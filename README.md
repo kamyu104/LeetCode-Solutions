@@ -1031,6 +1031,7 @@
 3177 | [Find the Maximum Length of a Good Subsequence II](https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/) | [C++](./C++/find-the-maximum-length-of-a-good-subsequence-ii.cpp) [Python](./Python/find-the-maximum-length-of-a-good-subsequence-ii.py) | _O(n * k)_ | _O(n * k)_ | Hard | | DP
 3180 | [Maximum Total Reward Using Operations I](https://leetcode.com/problems/maximum-total-reward-using-operations-i/) | [C++](./C++/maximum-total-reward-using-operations-i.cpp) [Python](./Python/maximum-total-reward-using-operations-i.py) | _O(n * k)_ | _O(n * k)_ | Medium | | Sort, DP, Bitset
 3181 | [Maximum Total Reward Using Operations II](https://leetcode.com/problems/maximum-total-reward-using-operations-ii/) | [C++](./C++/maximum-total-reward-using-operations-ii.cpp) [Python](./Python/maximum-total-reward-using-operations-ii.py) | _O(n * k)_ | _O(n * k)_ | Hard | | Sort, DP, Bitset
+
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
