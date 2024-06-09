@@ -27,7 +27,7 @@ public:
 
 // Time:  O(nlogn + r^2), r = max(rewardValues)
 // Space: O(r)
-// sort, dp
+// sort, dp, bitset
 class Solution2 {
 public:
     int maxTotalReward(vector<int>& rewardValues) {
