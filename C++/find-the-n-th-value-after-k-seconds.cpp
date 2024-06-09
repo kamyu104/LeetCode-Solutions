@@ -5,7 +5,7 @@
 class Solution {
 public:
     int valueAfterKSeconds(int n, int k) {
-        return nCr(n + k - 1, k);
+        return nCr((n - 1) + k, n - 1);
     }
 
 private:
@@ -55,4 +55,22 @@ private:
     vector<int> fact_ = {1, 1};
     vector<int> inv_ = {1, 1};
     vector<int> inv_fact_ = {1, 1};
+};
+
+// Time:  O(n * k)
+// Space: O(n)
+// prefix sum
+class Solution2 {
+public:
+    int valueAfterKSeconds(int n, int k) {
+        static const uint32_t MOD = 1e9 + 7;
+
+        vector<int> prefix(n, 1);
+        for (int _ = 0; _ < k; ++_) {
+            for (int i = 1; i < n; ++i) {
+                prefix[i] = (prefix[i] + prefix[i - 1]) % MOD;
+            }
+        }
+        return prefix.back();
+    }
 };
