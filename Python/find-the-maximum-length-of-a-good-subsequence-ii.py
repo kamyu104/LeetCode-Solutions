@@ -43,3 +43,24 @@ class Solution2(object):
                 dp[i][x] = max(dp[i][x], result[i-1] if i-1 >= 0 else 0)+1
                 result[i] = max(result[i], dp[i][x])
         return result[k]
+
+
+# Time:  O(n^2 * k)
+# Space: O(n * k)
+# dp
+class Solution3(object):
+    def maximumLength(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        dp = [[0]*(k+1) for _ in xrange(len(nums))]
+        result = 0
+        for i in xrange(len(nums)):
+            dp[i][0] = 1
+            for l in xrange(k+1):
+                for j in xrange(i):
+                    dp[i][l] = max(dp[i][l], dp[j][l]+1 if nums[j] == nums[i] else 1, dp[j][l-1]+1 if l-1 >= 0 else 1)
+                result = max(result, dp[i][l])
+        return result
