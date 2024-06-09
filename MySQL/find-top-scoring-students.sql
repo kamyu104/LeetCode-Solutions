@@ -1,9 +1,14 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-WITH major_grade_a_count_cte AS (
+WITH enrollments_cte AS (
+    SELECT student_id, course_id, MIN(grade) AS grade
+    FROM enrollments
+    GROUP BY 1, 2
+    ORDER BY NULL
+), major_grade_a_count_cte AS (
     SELECT s.student_id, s.major,  COUNT(*) AS cnt
-    FROM enrollments e INNER JOIN students s ON e.student_id = s.student_id INNER JOIN courses c ON e.course_id = c.course_id
+    FROM enrollments_cte e INNER JOIN students s ON e.student_id = s.student_id INNER JOIN courses c ON e.course_id = c.course_id
     WHERE s.major = c.major AND e.grade = 'A'
     GROUP BY 1
     ORDER BY NULL
