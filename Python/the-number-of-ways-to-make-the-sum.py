@@ -23,6 +23,22 @@ class Solution2(object):
         :rtype: int
         """
         MOD = 10**9+7
+        def count_1_2_6(n):
+            return ((n//2+1)*((n//6)+1)-3*((n//6)+0)*((n//6)-0+1)//2)%MOD
+
+        return reduce(lambda x, y: (x+count_1_2_6(n-4*y))%MOD, (i for i in xrange(min(n//4, 2)+1)), 0)
+
+
+# Time:  O(n)
+# Space: O(1)
+# math
+class Solution3(object):
+    def numberOfWays(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        MOD = 10**9+7
         def count_1_2(n):
             return n//2+1
     
@@ -35,7 +51,7 @@ class Solution2(object):
 # Time:  O(n)
 # Space: O(n)
 # dp
-class Solution3(object):
+class Solution4(object):
     def numberOfWays(self, n):
         """
         :type n: int
