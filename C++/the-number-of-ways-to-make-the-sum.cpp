@@ -21,8 +21,8 @@ public:
         static const int MOD = 1e9 + 7;
 
         const auto& count_1_2_6 = [&](int n) {
-            // sum((n-6*i)//2+1 for i in xrange((n//6)+1)
-            // = sum(((n//2)+1)-3*i for i in xrange((n//6)+1)
+            // sum((n-6*i)//2+1 for i in xrange((n//6)+1))
+            // = sum(((n//2)+1)-3*i for i in xrange((n//6)+1))
             return ((n / 2 + 1) * ((n / 6) - 0 + 1) - 3 * ((n / 6) + 0) * ((n / 6) - 0 + 1) / 2) % MOD;
         };
 
