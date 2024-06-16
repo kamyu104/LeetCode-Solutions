@@ -13,7 +13,7 @@ class Solution(object):
         return (1+((n//2)+1)*(n//2)//2)%MOD
 
 
-# Time:  O(n)
+# Time:  O(1)
 # Space: O(1)
 # math
 class Solution2(object):
