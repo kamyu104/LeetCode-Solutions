@@ -13,9 +13,37 @@ public:
 };
 
 // Time:  O(n)
+// Space: O(1)
+// math
+class Solution2 {
+public:
+    int numberOfWays(int n) {
+        static const int MOD = 1e9 + 7;
+
+        const auto& count_1_2 = [](int n) {
+            return n / 2 + 1;
+        };
+
+        const auto& count_1_2_6 = [&](int n) {
+            int result = 0;
+            for (int i = 0; i <= n / 6; ++i) {
+                result = (result + count_1_2(n - 6 * i)) % MOD;
+            }
+            return result;
+        };
+
+        int result = 0;
+        for (int i = 0; i <= min(n / 4, 2); ++i) {
+            result = (result + count_1_2_6(n - 4 * i)) % MOD;
+        }
+        return result;
+    }
+};
+
+// Time:  O(n)
 // Space: O(n)
 // dp
-class Solution2 {
+class Solution3 {
 public:
     int numberOfWays(int n) {
         static const int MOD = 1e9 + 7;
