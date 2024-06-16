@@ -178,8 +178,7 @@ class Solution(object):
         # 1 6 6 (0x2, 0x4)
         # 1 2 6 4 (1x2, 1x4)
         # 1 2 2 4 4 (2x2, 2x4)
-
-        # sequences: [1, 2, 2, 4, 4, 7, 7, 11, 11, 16, 16, 22, 22, ...]
+        # => f(n) = 1+sum(i//2 if i%2 == 0 else 0 for i in xrange(1, n+1))
         return (1+((n//2)+1)*(n//2)//2)%MOD
 
 
