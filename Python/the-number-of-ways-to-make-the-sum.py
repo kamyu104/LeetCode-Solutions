@@ -71,9 +71,9 @@ class Solution(object):
         # 1 1 2 4
         # new:
         # 2 2 2 2
-        # 2 6 (one 2)
-        # 2 2 4 (two 2s)
-        # 4 4 (extra, zero 2)
+        # 2 6 (1x2, 0x4)
+        # 2 2 4 (2x2, 1x4)
+        # 4 4 (extra, 0x2, 2x4)
 
         # n = 9
         # extend:
@@ -85,9 +85,9 @@ class Solution(object):
         # 1 1 1 6
         # 1 1 1 2 4
         # 1 2 2 2 2
-        # 1 2 6 (one 2)
-        # 1 2 2 4 (two 2s)
-        # 1 4 4 (zero 2)
+        # 1 2 6 (1x2, 0x4)
+        # 1 2 2 4 (2x2, 1x4)
+        # 1 4 4 (0x2, 2x4)
 
         # n = 10
         # extend:
@@ -105,9 +105,9 @@ class Solution(object):
         # new:
         # 2 2 2 2 2
         # 2 2 2 4 
-        # 2 2 6 (two 2s)
-        # 6 4 (extra, zero 2)
-        # 2 4 4 (one 2)
+        # 2 2 6 (2x2, 0x4)
+        # 6 4 (extra, 0x2, 1x4)
+        # 2 4 4 (1x2, 2x4)
        
         # n = 11
         # extend:
@@ -124,9 +124,9 @@ class Solution(object):
         # 1 1 1 4 4
         # 1 2 2 2 2 2
         # 1 2 2 2 4 
-        # 1 2 2 6 (two 2s)
-        # 1 6 4 (zero 2)
-        # 1 2 4 4 (one 2)
+        # 1 2 2 6 (2x2, 0x4)
+        # 1 6 4 (0x2, 1x4)
+        # 1 2 4 4 (1x2, 2x4)
 
         # n = 12
         # extend:
@@ -150,9 +150,9 @@ class Solution(object):
         # 2 2 2 2 2 2
         # 2 2 2 2 4 
         # 2 2 2 6
-        # 6 6 (extra, zero 2)
-        # 2 6 4 (one 2)
-        # 2 2 4 4 (two 2s)
+        # 6 6 (extra, 0x2, 0x4)
+        # 2 6 4 (1x2, 1x4)
+        # 2 2 4 4 (2x2, 2x4)
 
         # n = 13
         # extend:
@@ -175,9 +175,9 @@ class Solution(object):
         # 1 2 2 2 2 2 2
         # 1 2 2 2 2 4 
         # 1 2 2 2 6
-        # 1 6 6 (zero 2)
-        # 1 2 6 4 (one 2)
-        # 1 2 2 4 4 (two 2s)
+        # 1 6 6 (0x2, 0x4)
+        # 1 2 6 4 (1x2, 1x4)
+        # 1 2 2 4 4 (2x2, 2x4)
 
         # sequences: [1, 2, 2, 4, 4, 7, 7, 11, 11, 16, 16, 22, 22, ...]
         return (1+((n//2)+1)*(n//2)//2)%MOD
