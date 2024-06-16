@@ -23,7 +23,7 @@ public:
         const auto& count_1_2_6 = [&](int n) {
             // sum((n-6*i)//2+1 for i in xrange((n//6)+1))
             // = sum(((n//2)+1)-3*i for i in xrange((n//6)+1))
-            return ((n / 2 + 1) * ((n / 6) - 0 + 1) - 3 * ((n / 6) + 0) * ((n / 6) - 0 + 1) / 2) % MOD;
+            return ((n / 2 + 1) * ((n / 6) - 0 + 1) - 3 * ((n / 6) + 0) * ((n / 6) - 0 + 1) / 2);
         };
 
         int result = 0;
@@ -49,7 +49,7 @@ public:
         const auto& count_1_2_6 = [&](int n) {
             int result = 0;
             for (int i = 0; i <= n / 6; ++i) {
-                result = (result + count_1_2(n - 6 * i)) % MOD;
+                result = (result + count_1_2(n - 6 * i));
             }
             return result;
         };
@@ -74,7 +74,7 @@ public:
         dp[0] = 1;
         for (const auto& i : {1, 2, 6}) {
             for (int j = i; j <= n; ++j) {
-                dp[j] = (dp[j] + dp[j - i]) % MOD;
+                dp[j] += dp[j - i];
             }
         }
         int result = 0;
