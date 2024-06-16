@@ -12,10 +12,32 @@ public:
     }
 };
 
-// Time:  O(n)
+// Time:  O(1)
 // Space: O(1)
 // math
 class Solution2 {
+public:
+    int numberOfWays(int n) {
+        static const int MOD = 1e9 + 7;
+
+        const auto& count_1_2_6 = [&](int n) {
+            // sum((n-6*i)//2+1 for i in xrange((n//6)+1)
+            // = sum(((n//2)+1)-3*i for i in xrange((n//6)+1)
+            return ((n / 2 + 1) * ((n / 6) - 0 + 1) - 3 * ((n / 6) + 0) * ((n / 6) - 0 + 1) / 2) % MOD;
+        };
+
+        int result = 0;
+        for (int i = 0; i <= min(n / 4, 2); ++i) {
+            result = (result + count_1_2_6(n - 4 * i)) % MOD;
+        }
+        return result;
+    }
+};
+
+// Time:  O(n)
+// Space: O(1)
+// math
+class Solution3 {
 public:
     int numberOfWays(int n) {
         static const int MOD = 1e9 + 7;
@@ -43,7 +65,7 @@ public:
 // Time:  O(n)
 // Space: O(n)
 // dp
-class Solution3 {
+class Solution4 {
 public:
     int numberOfWays(int n) {
         static const int MOD = 1e9 + 7;
