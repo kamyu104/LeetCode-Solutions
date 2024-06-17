@@ -214,7 +214,7 @@
 3153 | [Sum of Digit Differences of All Pairs](https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/) | [C++](./C++/sum-of-digit-differences-of-all-pairs.cpp) [Python](./Python/sum-of-digit-differences-of-all-pairs.py) | _O(nlogr)_ | _O(10 * logr)_ | Medium | | Prefix Sum
 3159 | [Find Occurrences of an Element in an Array](https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/) | [C++](./C++/find-occurrences-of-an-element-in-an-array.cpp) [Python](./Python/find-occurrences-of-an-element-in-an-array.py) | _O(n + q)_ | _O(n)_ | Medium | | Array
 3173 | [Bitwise OR of Adjacent Elements](https://leetcode.com/problems/bitwise-or-of-adjacent-elements/) | [C++](./C++/bitwise-or-of-adjacent-elements.cpp) [Python](./Python/bitwise-or-of-adjacent-elements.py) | _O(n)_ | _O(1)_ | Easy | 🔒 | Array
-3187 | [Peaks in Array](https://leetcode.com/problems/peaks-in-array/) | [C++](./C++/peaks-in-array.cpp) [Python](./Python/peaks-in-array.py) | _O(nlogn + qlogn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
+3187 | [Peaks in Array](https://leetcode.com/problems/peaks-in-array/) | [C++](./C++/peaks-in-array.cpp) [Python](./Python/peaks-in-array.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
 
 <br/>
 <div align="right">
