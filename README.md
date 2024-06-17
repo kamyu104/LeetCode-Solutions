@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3182%20%2F%203182-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3187%20%2F%203187-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -214,6 +214,7 @@
 3153 | [Sum of Digit Differences of All Pairs](https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/) | [C++](./C++/sum-of-digit-differences-of-all-pairs.cpp) [Python](./Python/sum-of-digit-differences-of-all-pairs.py) | _O(nlogr)_ | _O(10 * logr)_ | Medium | | Prefix Sum
 3159 | [Find Occurrences of an Element in an Array](https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/) | [C++](./C++/find-occurrences-of-an-element-in-an-array.cpp) [Python](./Python/find-occurrences-of-an-element-in-an-array.py) | _O(n + q)_ | _O(n)_ | Medium | | Array
 3173 | [Bitwise OR of Adjacent Elements](https://leetcode.com/problems/bitwise-or-of-adjacent-elements/) | [C++](./C++/bitwise-or-of-adjacent-elements.cpp) [Python](./Python/bitwise-or-of-adjacent-elements.py) | _O(n)_ | _O(1)_ | Easy | 🔒 | Array
+3187 | [Peaks in Array](https://leetcode.com/problems/peaks-in-array/) | [C++](./C++/peaks-in-array.cpp) [Python](./Python/peaks-in-array.py) | _O(nlogn + qlogn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
 
 <br/>
 <div align="right">
@@ -511,6 +512,8 @@
 3158 | [Find the XOR of Numbers Which Appear Twice](https://leetcode.com/problems/find-the-xor-of-numbers-which-appear-twice/) | [C++](./C++/find-the-xor-of-numbers-which-appear-twice.cpp) [Python](./Python/find-the-xor-of-numbers-which-appear-twice.py) | _O(n)_  | _O(n)_ | Easy || Hash Table
 3160 | [Find the Number of Distinct Colors Among the Balls](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/) | [C++](./C++/find-the-number-of-distinct-colors-among-the-balls.cpp) [Python](./Python/find-the-number-of-distinct-colors-among-the-balls.py) | _O(q)_  | _O(q)_ | Medium || Freq Table
 3167 | [Better Compression of String](https://leetcode.com/problems/better-compression-of-string/) | [C++](./C++/better-compression-of-string.cpp) [Python](./Python/better-compression-of-string.py) | _O(n + 26)_  | _O(26)_ | Medium | 🔒 | Freq Table, Counting Sort
+3184 | [Count Pairs That Form a Complete Day I](https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/) | [C++](./C++/count-pairs-that-form-a-complete-day-i.cpp) [Python](./Python/count-pairs-that-form-a-complete-day-i.py) | _O(n + 24)_  | _O(24)_ | Easy | | Freq Table
+3185 | [Count Pairs That Form a Complete Day II](https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/) | [C++](./C++/count-pairs-that-form-a-complete-day-ii.cpp) [Python](./Python/count-pairs-that-form-a-complete-day-ii.py) | _O(n + 24)_  | _O(24)_ | Medium | | Freq Table
 
 <br/>
 <div align="right">
@@ -629,6 +632,8 @@
 3164 | [Find the Number of Good Pairs II](https://leetcode.com/problems/find-the-number-of-good-pairs-ii/) | [C++](./C++/find-the-number-of-good-pairs-ii.cpp) [Python](./Python/find-the-number-of-good-pairs-ii.py) | _O(rlogr + n + m)_ | _O(r)_ | Medium | | Number Theory, Freq Table |
 3178 | [Find the Child Who Has the Ball After K Seconds](https://leetcode.com/problems/find-the-child-who-has-the-ball-after-k-seconds/) | [C++](./C++/find-the-child-who-has-the-ball-after-k-seconds.cpp) [Python](./Python/find-the-child-who-has-the-ball-after-k-seconds.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 3179 | [Find the N-th Value After K Seconds](https://leetcode.com/problems/find-the-n-th-value-after-k-seconds/) | [C++](./C++/find-the-n-th-value-after-k-seconds.cpp) [Python](./Python/find-the-n-th-value-after-k-seconds.py) | _O(n + k)_ | _O(n + k)_ | Medium | | Prefix Sum, Combinatorics |
+3183 | [The Number of Ways to Make the Sum](https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/) | [C++](./C++/the-number-of-ways-to-make-the-sum.cpp) [Python](./Python/the-number-of-ways-to-make-the-sum.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | Math, DP |
+
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -1031,6 +1036,7 @@
 3177 | [Find the Maximum Length of a Good Subsequence II](https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/) | [C++](./C++/find-the-maximum-length-of-a-good-subsequence-ii.cpp) [Python](./Python/find-the-maximum-length-of-a-good-subsequence-ii.py) | _O(n * k)_ | _O(n * k)_ | Hard | | DP
 3180 | [Maximum Total Reward Using Operations I](https://leetcode.com/problems/maximum-total-reward-using-operations-i/) | [C++](./C++/maximum-total-reward-using-operations-i.cpp) [Python](./Python/maximum-total-reward-using-operations-i.py) | _O(n * k)_ | _O(n * k)_ | Medium | | Sort, DP, Bitset
 3181 | [Maximum Total Reward Using Operations II](https://leetcode.com/problems/maximum-total-reward-using-operations-ii/) | [C++](./C++/maximum-total-reward-using-operations-ii.cpp) [Python](./Python/maximum-total-reward-using-operations-ii.py) | _O(n * k)_ | _O(n * k)_ | Hard | | Sort, DP, Bitset
+3186 | [Maximum Total Damage With Spell Casting](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/) | [C++](./C++/maximum-total-damage-with-spell-casting.cpp) [Python](./Python/maximum-total-damage-with-spell-casting.py) | _O(nlogn)_ | _O(n)_ | Mediium | | Sort, DP, Two Pointers, Sliding window, Deque
 
 <br/>
 <div align="right">
