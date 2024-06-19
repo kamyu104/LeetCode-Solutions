@@ -9,7 +9,7 @@ WITH best_enrollments_cte AS (
 ), major_mandatory_grade_a_count_cte AS (
     SELECT s.student_id, s.major, COUNT(*) AS cnt
     FROM best_enrollments_cte e INNER JOIN students s ON e.student_id = s.student_id INNER JOIN courses c ON e.course_id = c.course_id
-    WHERE mandatory = 'yes' AND s.major = c.major AND e.grade = 'A'
+    WHERE s.major = c.major AND mandatory = 'yes' and e.grade = 'A'
     GROUP BY 1
     ORDER BY NULL
 ), major_mandatory_count_cte AS (
