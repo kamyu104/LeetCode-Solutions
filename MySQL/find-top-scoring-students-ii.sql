@@ -33,8 +33,8 @@ WITH best_enrollments_cte AS (
 
 SELECT c1.student_id
 FROM major_mandatory_grade_a_count_cte c1
-INNER JOIN major_mandatory_count_cte c2 ON c1.major = c2.major
-INNER JOIN major_elective_grade_a_or_b_count_cte c3 ON c1.student_id = c3.student_id
-INNER JOIN gpa_cte c4 ON c1.student_id = c4.student_id
+     INNER JOIN major_mandatory_count_cte c2 ON c1.major = c2.major
+     INNER JOIN major_elective_grade_a_or_b_count_cte c3 ON c1.student_id = c3.student_id
+     INNER JOIN gpa_cte c4 ON c1.student_id = c4.student_id
 WHERE c1.cnt = c2.cnt AND c3.cnt >= 2 AND c4.gpa >= 2.5
 ORDER BY 1;
