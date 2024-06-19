@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3187%20%2F%203187-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3188%20%2F%203188-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1503,6 +1503,7 @@
 3166 | [Calculate Parking Fees and Duration](https://leetcode.com/problems/calculate-parking-fees-and-duration/) | [MySQL](./MySQL/calculate-parking-fees-and-duration.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
 3172 | [Second Day Verification](https://leetcode.com/problems/second-day-verification/) | [MySQL](./MySQL/second-day-verification.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒|  |
 3182 | [Find Top Scoring Students](https://leetcode.com/problems/find-top-scoring-students/) | [MySQL](./MySQL/find-top-scoring-students.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
+3188 | [Find Top Scoring Students II](https://leetcode.com/problems/find-top-scoring-students-ii/) | [MySQL](./MySQL/find-top-scoring-students-ii.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒|  |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
