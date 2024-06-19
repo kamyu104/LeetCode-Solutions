@@ -27,7 +27,7 @@ WITH best_enrollments_cte AS (
 ), gpa_cte AS (
     SELECT e.student_id, AVG(e.gpa) AS gpa
     FROM enrollments e
-    GROUP BY e.student_id
+    GROUP BY 1
     ORDER BY NULL
 )
 
