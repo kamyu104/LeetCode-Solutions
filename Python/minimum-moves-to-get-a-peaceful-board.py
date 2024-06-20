@@ -14,7 +14,7 @@ class Solution(object):
                 cnt[x] += 1
             return sum(abs(i-x) for i, x in enumerate(x for x, cnt in enumerate(cnt) for _ in xrange(cnt)))
 
-        return sum(count(a) for a in zip(*rooks))
+        return sum(count(arr) for arr in zip(*rooks))
 
 
 # Time:  O(n)
@@ -36,5 +36,5 @@ class Solution2(object):
                 result += abs(bal)
             return result
 
-        return sum(count(a) for a in zip(*rooks))
+        return sum(count(arr) for arr in zip(*rooks))
     
