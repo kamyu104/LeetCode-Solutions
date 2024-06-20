@@ -6,10 +6,10 @@ class Solution {
 public:
     int minMoves(vector<vector<int>>& rooks) {
         const auto& count = [&](const auto& cnt) {
-            int result = 0, prefix = 0;
-            for (int i = 0; i < size(rooks); ++i) {
-                prefix += cnt[i];
-                result += abs(prefix - (i + 1));
+            int result = 0;
+            for (int i = 0, bal = 0; i < size(rooks); ++i) {
+                bal += cnt[i] - 1;
+                result += abs(bal);
             }
             return result;
         };
