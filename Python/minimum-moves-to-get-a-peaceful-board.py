@@ -11,8 +11,8 @@ class Solution(object):
         def count(cnt):
             result = prefix = 0
             for i in xrange(len(rooks)):
-                prefix += cnt[i]
-                result += abs(prefix-(i+1))
+                bal += cnt[i]-1
+                result += abs(bal)
             return result
 
         cnt1 = [0]*len(rooks)
