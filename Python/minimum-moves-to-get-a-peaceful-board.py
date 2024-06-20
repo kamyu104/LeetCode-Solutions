@@ -9,7 +9,7 @@ class Solution(object):
         :rtype: int
         """
         def count(cnt):
-            result = prefix = 0
+            result = bal = 0
             for i in xrange(len(rooks)):
                 bal += cnt[i]-1
                 result += abs(bal)
