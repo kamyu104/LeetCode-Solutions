@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3188%20%2F%203188-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3189%20%2F%203189-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1181,6 +1181,7 @@
 3114 | [Latest Time You Can Obtain After Replacing Characters](https://leetcode.com/problems/latest-time-you-can-obtain-after-replacing-characters/)| [C++](./C++/latest-time-you-can-obtain-after-replacing-characters.cpp) [Python](./Python/latest-time-you-can-obtain-after-replacing-characters.py)| _O(1)_ | _O(1)_ | Easy | | String, Greedy |
 3119 | [Maximum Number of Potholes That Can Be Fixed](https://leetcode.com/problems/maximum-number-of-potholes-that-can-be-fixed/)| [C++](./C++/maximum-number-of-potholes-that-can-be-fixed.cpp) [Python](./Python/maximum-number-of-potholes-that-can-be-fixed.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | Sort, Counting Sort, Greedy |
 3170 | [Lexicographically Minimum String After Removing Stars](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/)| [C++](./C++/lexicographically-minimum-string-after-removing-stars.cpp) [Python](./Python/lexicographically-minimum-string-after-removing-stars.py)| _O(n + 26)_ | _O(n + 26)_ | Medium | | Greedy, Hash Table, Stack |
+3189 | [Minimum Rectangles to Cover Points](https://leetcode.com/problems/minimum-moves-to-get-a-peaceful-board/) | [C++](./C++/minimum-moves-to-get-a-peaceful-board.cpp) [Python](./Python/minimum-moves-to-get-a-peaceful-board.py) | _O(n)_ | _O(n)_ | Medium | 🔒, variant of [Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree/) | Greedy, Prefix Sum
 
 <br/>
 <div align="right">
