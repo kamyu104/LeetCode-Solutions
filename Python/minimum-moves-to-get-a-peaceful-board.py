@@ -1,24 +1,40 @@
 # Time:  O(n)
 # Space: O(n)
-# greedy, prefix sum
 
+# counting sort, greedy
 class Solution(object):
     def minMoves(self, rooks):
         """
         :type rooks: List[List[int]]
         :rtype: int
         """
-        def count(cnt):
+        def count(arr):
+            cnt = [0]*len(arr)
+            for x in arr:
+                cnt[x] += 1
+            return sum(abs(i-x) for i, x in enumerate(x for x, cnt in enumerate(cnt) for _ in xrange(cnt)))
+
+        return sum(count(a) for a in zip(*rooks))
+
+
+# Time:  O(n)
+# Space: O(n)
+# prefix sum, greedy
+class Solution2(object):
+    def minMoves(self, rooks):
+        """
+        :type rooks: List[List[int]]
+        :rtype: int
+        """
+        def count(arr):
+            cnt = [0]*len(arr)
+            for x in arr:
+                cnt[x] += 1
             result = bal = 0
             for i in xrange(len(rooks)):
                 bal += cnt[i]-1
                 result += abs(bal)
             return result
 
-        cnt1 = [0]*len(rooks)
-        cnt2 = [0]*len(rooks)
-        for r, c in rooks:
-            cnt1[r] += 1
-            cnt2[c] += 1
-        return count(cnt1)+count(cnt2)
+        return sum(count(a) for a in zip(*rooks))
     
