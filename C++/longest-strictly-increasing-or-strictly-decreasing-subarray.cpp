@@ -16,7 +16,7 @@ public:
                 cnt = 1;
                 continue;
             }
-            cnt = (curr == prev ? cnt : 1) + 1;
+            cnt = curr == prev ? cnt + 1 : 2;
             result = max(result, cnt);
         }
         return result;
