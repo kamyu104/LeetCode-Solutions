@@ -33,14 +33,8 @@ class Solution2(object):
         """
         result = cnt1 = cnt2 = 1
         for i in xrange(1, len(nums)):
-            if nums[i-1] < nums[i]:
-                cnt1 += 1
-                cnt2 = 1
-            elif nums[i-1] > nums[i]:
-                cnt2 += 1
-                cnt1 = 1
-            else:
-                cnt1 = cnt2 = 1
+            cnt1 = cnt1+1 if nums[i-1] < nums[i] else 1
+            cnt2 = cnt2+1 if nums[i-1] > nums[i] else 1
             result = max(result, cnt1, cnt2)
         return result
 
