@@ -31,8 +31,8 @@ public:
     int longestMonotonicSubarray(vector<int>& nums) {
         int result = 1;
         for (int i = 1, cnt1 = 1, cnt2 = 1; i < size(nums); ++i) {
-            cnt1 = nums[i - 1] < nums[i] ?  cnt1 + 1 : 1;
-            cnt2 = nums[i - 1] > nums[i] ?  cnt2 + 1 : 1;
+            cnt1 = nums[i - 1] < nums[i] ? cnt1 + 1 : 1;
+            cnt2 = nums[i - 1] > nums[i] ? cnt2 + 1 : 1;
             result = max({result, cnt1, cnt2});
         }
         return result;
