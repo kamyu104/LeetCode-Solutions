@@ -14,9 +14,8 @@ class Solution(object):
             curr = cmp(nums[i-1], nums[i])
             if curr == 0:
                 cnt = 1
-                continue
             else:
-                cnt = (cnt if curr == prev else 1)+1
+                cnt = cnt+1 if curr == prev else 2
                 result = max(result, cnt)
             prev = curr
         return result
