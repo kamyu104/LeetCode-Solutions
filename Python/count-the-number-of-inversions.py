@@ -19,7 +19,7 @@ class Solution(object):
             new_dp = [0]*len(dp)
             if lookup[i] != -1:  # optimized
                 new_dp[lookup[i]] = reduce(lambda total, i: (total+dp[i])%MOD, xrange(max(lookup[i]-i, 0), lookup[i]+1), 0)
-            else:            
+            else:
                 for j in xrange(len(dp)):
                     new_dp[j] = dp[j]
                     if j-1 >= 0:
