@@ -12,7 +12,6 @@ class Solution(object):
         for i in xrange(len(nums)-2):
             if nums[i]:
                 continue
-            nums[i] ^= 1
             nums[i+1] ^= 1
             nums[i+2] ^= 1
             result += 1
