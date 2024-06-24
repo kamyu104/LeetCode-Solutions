@@ -45,7 +45,7 @@ class Solution2(object):
                 if j-(i+1) >= 0:
                     new_dp[j] = (new_dp[j]-dp[j-(i+1)])%MOD
             dp = new_dp
-        return dp[k]
+        return dp[-1]
 
 
 # Time:  O(n * k)
