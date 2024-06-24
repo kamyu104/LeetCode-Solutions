@@ -216,7 +216,6 @@
 3173 | [Bitwise OR of Adjacent Elements](https://leetcode.com/problems/bitwise-or-of-adjacent-elements/) | [C++](./C++/bitwise-or-of-adjacent-elements.cpp) [Python](./Python/bitwise-or-of-adjacent-elements.py) | _O(n)_ | _O(1)_ | Easy | 🔒 | Array
 3187 | [Peaks in Array](https://leetcode.com/problems/peaks-in-array/) | [C++](./C++/peaks-in-array.cpp) [Python](./Python/peaks-in-array.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
 3195 | [Find the Minimum Area to Cover All Ones I](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/) | [C++](./C++/find-the-minimum-area-to-cover-all-ones-i.cpp) [Python](./Python/find-the-minimum-area-to-cover-all-ones-i.py) | _O(n * m)_ | _O(1)_ | Medium | | Array
-3197 | [Find the Minimum Area to Cover All Ones II](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/) | [C++](./C++/find-the-minimum-area-to-cover-all-ones-ii.cpp) [Python](./Python/find-the-minimum-area-to-cover-all-ones-ii.py) | _O(max(n, m)^2 * log(max(n, m)))_ | _O(1)_ | Hard | | Array, Brute Force, Prefix Sum, Binary Search
 
 <br/>
 <div align="right">
@@ -804,6 +803,7 @@
 3134 | [Find the Median of the Uniqueness Array](https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/) | [C++](./C++/find-the-median-of-the-uniqueness-array.cpp) [Python](./Python/find-the-median-of-the-uniqueness-array.py) | _O(nlogn)_ | _O(n)_ | Hard | | Binary Search, Two Pointers, Sliding Window |
 3135 | [Equalize Strings by Adding or Removing Characters at Ends](https://leetcode.com/problems/equalize-strings-by-adding-or-removing-characters-at-ends/) | [C++](./C++/equalize-strings-by-adding-or-removing-characters-at-ends.cpp) [Python](./Python/equalize-strings-by-adding-or-removing-characters-at-ends.py) | _O((n + m) * log(min(n, m)))_ | _O(min(n, m))_ | Medium | 🔒 | Binary Search, `Rabin-Karp Algorithm`, Rolling Hash, DP
 3145 | [Find Products of Elements of Big Array](https://leetcode.com/problems/find-products-of-elements-of-big-array/) | [C++](./C++/find-products-of-elements-of-big-array.cpp) [Python](./Python/find-products-of-elements-of-big-array.py) | _O(q * (logr)^2)_ | _O(1)_ | Hard | | Binary Search, Combinatorics, Bitmasks, Fast Exponentiation
+3197 | [Find the Minimum Area to Cover All Ones II](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/) | [C++](./C++/find-the-minimum-area-to-cover-all-ones-ii.cpp) [Python](./Python/find-the-minimum-area-to-cover-all-ones-ii.py) | _O(max(n, m)^2 * log(max(n, m)))_ | _O(1)_ | Hard | | Array, Brute Force, Prefix Sum, Binary Search
 
 <br/>
 
