@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3189%20%2F%203189-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3197%20%2F%203197-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -215,6 +215,8 @@
 3159 | [Find Occurrences of an Element in an Array](https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/) | [C++](./C++/find-occurrences-of-an-element-in-an-array.cpp) [Python](./Python/find-occurrences-of-an-element-in-an-array.py) | _O(n + q)_ | _O(n)_ | Medium | | Array
 3173 | [Bitwise OR of Adjacent Elements](https://leetcode.com/problems/bitwise-or-of-adjacent-elements/) | [C++](./C++/bitwise-or-of-adjacent-elements.cpp) [Python](./Python/bitwise-or-of-adjacent-elements.py) | _O(n)_ | _O(1)_ | Easy | 🔒 | Array
 3187 | [Peaks in Array](https://leetcode.com/problems/peaks-in-array/) | [C++](./C++/peaks-in-array.cpp) [Python](./Python/peaks-in-array.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
+3195 | [Find the Minimum Area to Cover All Ones I](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/) | [C++](./C++/find-the-minimum-area-to-cover-all-ones-i.cpp) [Python](./Python/find-the-minimum-area-to-cover-all-ones-i.py) | _O(n * m)_ | _O(1)_ | Medium | | Array
+3197 | [Find the Minimum Area to Cover All Ones II](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/) | [C++](./C++/find-the-minimum-area-to-cover-all-ones-ii.cpp) [Python](./Python/find-the-minimum-area-to-cover-all-ones-ii.py) | _O(max(n, m)^3 * min(n, m))_ | _O(1)_ | Hard | | Array, Brute Force
 
 <br/>
 <div align="right">
@@ -633,6 +635,7 @@
 3178 | [Find the Child Who Has the Ball After K Seconds](https://leetcode.com/problems/find-the-child-who-has-the-ball-after-k-seconds/) | [C++](./C++/find-the-child-who-has-the-ball-after-k-seconds.cpp) [Python](./Python/find-the-child-who-has-the-ball-after-k-seconds.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 3179 | [Find the N-th Value After K Seconds](https://leetcode.com/problems/find-the-n-th-value-after-k-seconds/) | [C++](./C++/find-the-n-th-value-after-k-seconds.cpp) [Python](./Python/find-the-n-th-value-after-k-seconds.py) | _O(n + k)_ | _O(n + k)_ | Medium | | Prefix Sum, Combinatorics |
 3183 | [The Number of Ways to Make the Sum](https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/) | [C++](./C++/the-number-of-ways-to-make-the-sum.cpp) [Python](./Python/the-number-of-ways-to-make-the-sum.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | Math, DP |
+3190 | [Find Minimum Operations to Make All Elements Divisible by Three](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/) | [C++](./C++/find-minimum-operations-to-make-all-elements-divisible-by-three.cpp) [Python](./Python/find-minimum-operations-to-make-all-elements-divisible-by-three.py) | _O(n)_ | _O(1)_ | Easy | | Math |
 
 <br/>
 <div align="right">
@@ -672,6 +675,7 @@
 3081 | [Replace Question Marks in String to Minimize Its Value](https://leetcode.com/problems/replace-question-marks-in-string-to-minimize-its-value/) | [C++](./C++/replace-question-marks-in-string-to-minimize-its-value.cpp) [Python](./Python/replace-question-marks-in-string-to-minimize-its-value.py) | _O(n + 26 * log(26))_   | _O(n + 26)_        | Medium         | | Greedy, Counting Sort, Heap, Prefix Sum
 3132 | [Find the Integer Added to Array II](https://leetcode.com/problems/find-the-integer-added-to-array-ii/) | [C++](./C++/find-the-integer-added-to-array-ii.cpp) [Python](./Python/find-the-integer-added-to-array-ii.py) | _O(n)_ | _O(n)_ | Medium | | Sort, Paritial Sort, Freq Table
 3169 | [Count Days Without Meetings](https://leetcode.com/problems/count-days-without-meetings/) | [C++](./C++/count-days-without-meetings.cpp) [Python](./Python/count-days-without-meetings.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort
+3194 | [Minimum Average of Smallest and Largest Elements](https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/) | [C++](./C++/minimum-average-of-smallest-and-largest-elements.cpp) [Python](./Python/minimum-average-of-smallest-and-largest-elements.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort
 
 <br/>
 <div align="right">
@@ -1036,7 +1040,9 @@
 3177 | [Find the Maximum Length of a Good Subsequence II](https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/) | [C++](./C++/find-the-maximum-length-of-a-good-subsequence-ii.cpp) [Python](./Python/find-the-maximum-length-of-a-good-subsequence-ii.py) | _O(n * k)_ | _O(n * k)_ | Hard | | DP
 3180 | [Maximum Total Reward Using Operations I](https://leetcode.com/problems/maximum-total-reward-using-operations-i/) | [C++](./C++/maximum-total-reward-using-operations-i.cpp) [Python](./Python/maximum-total-reward-using-operations-i.py) | _O(n * k)_ | _O(n * k)_ | Medium | | Sort, DP, Bitset
 3181 | [Maximum Total Reward Using Operations II](https://leetcode.com/problems/maximum-total-reward-using-operations-ii/) | [C++](./C++/maximum-total-reward-using-operations-ii.cpp) [Python](./Python/maximum-total-reward-using-operations-ii.py) | _O(n * k)_ | _O(n * k)_ | Hard | | Sort, DP, Bitset
-3186 | [Maximum Total Damage With Spell Casting](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/) | [C++](./C++/maximum-total-damage-with-spell-casting.cpp) [Python](./Python/maximum-total-damage-with-spell-casting.py) | _O(nlogn)_ | _O(n)_ | Mediium | | Sort, DP, Two Pointers, Sliding window, Deque
+3186 | [Maximum Total Damage With Spell Casting](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/) | [C++](./C++/maximum-total-damage-with-spell-casting.cpp) [Python](./Python/maximum-total-damage-with-spell-casting.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, DP, Two Pointers, Sliding window, Deque
+3193 | [Count the Number of Inversions](https://leetcode.com/problems/count-the-number-of-inversions/) | [C++](./C++/count-the-number-of-inversions.cpp) [Python](./Python/count-the-number-of-inversions.py) | _O(n + max(end) * max(cnt))_ | _O(n + max(cnt))_ | Hard | | DP, Combinatorics, Sliding Window, Two Pointers
+3196 | [Maximize Total Cost of Alternating Subarrays](https://leetcode.com/problems/maximize-total-cost-of-alternating-subarrays/) | [C++](./C++/maximize-total-cost-of-alternating-subarrays.cpp) [Python](./Python/maximize-total-cost-of-alternating-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | DP
 
 <br/>
 <div align="right">
@@ -1182,6 +1188,8 @@
 3119 | [Maximum Number of Potholes That Can Be Fixed](https://leetcode.com/problems/maximum-number-of-potholes-that-can-be-fixed/)| [C++](./C++/maximum-number-of-potholes-that-can-be-fixed.cpp) [Python](./Python/maximum-number-of-potholes-that-can-be-fixed.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | Sort, Counting Sort, Greedy |
 3170 | [Lexicographically Minimum String After Removing Stars](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/)| [C++](./C++/lexicographically-minimum-string-after-removing-stars.cpp) [Python](./Python/lexicographically-minimum-string-after-removing-stars.py)| _O(n + 26)_ | _O(n + 26)_ | Medium | | Greedy, Hash Table, Stack |
 3189 | [Minimum Moves to Get a Peaceful Board](https://leetcode.com/problems/minimum-moves-to-get-a-peaceful-board/) | [C++](./C++/minimum-moves-to-get-a-peaceful-board.cpp) [Python](./Python/minimum-moves-to-get-a-peaceful-board.py) | _O(n)_ | _O(n)_ | Medium | 🔒, variant of [Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree/) | Counting Sort, Prefix Sum, Greedy
+3191 | [Minimum Operations to Make Binary Array Elements Equal to One I](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | [C++](./C++/minimum-operations-to-make-binary-array-elements-equal-to-one-i.cpp) [Python](./Python/minimum-operations-to-make-binary-array-elements-equal-to-one-i.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+3192 | [Minimum Operations to Make Binary Array Elements Equal to One II](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-ii/) | [C++](./C++/minimum-operations-to-make-binary-array-elements-equal-to-one-ii.cpp) [Python](./Python/minimum-operations-to-make-binary-array-elements-equal-to-one-ii.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 
 <br/>
 <div align="right">
