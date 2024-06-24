@@ -22,9 +22,9 @@ class Solution(object):
             else:            
                 curr = 0
                 for j in xrange(len(dp)):
-                    curr += dp[j]
+                    curr = (curr+dp[j])%MOD
                     if j-(i+1) >= 0:
-                        curr -= dp[j-(i+1)]
+                        curr = (curr-dp[j-(i+1)])%MOD
                     new_dp[j] = curr
             dp = new_dp
         return reduce(lambda total, i: total*(i+1)%MOD, xrange(i+1, n), reduce(lambda total, x: (total+x)%MOD, dp, 0))  # optimized
@@ -50,9 +50,9 @@ class Solution2(object):
             new_dp = [0]*len(dp)
             curr = 0
             for j in xrange(len(dp)):
-                curr += dp[j]
+                curr = (curr+dp[j])%MOD
                 if j-(i+1) >= 0:
-                    curr -= dp[j-(i+1)]
+                    curr = (curr-dp[j-(i+1)])%MOD
                 new_dp[j] = curr if lookup[i] == -1 or lookup[i] == j else 0
             dp = new_dp
         return reduce(lambda total, x: (total+x)%MOD, dp, 0)
