@@ -10,7 +10,6 @@ public:
             if (nums[i]) {
                 continue;
             }
-            nums[i] ^= 1;
             nums[i + 1] ^= 1;
             nums[i + 2] ^= 1;
             ++result;
