@@ -13,15 +13,14 @@ class Solution(object):
         lookup = [-1]*n
         for i, c in requirements:
             lookup[i] = c
-        max_c = max(lookup)
         dp = [1]
         prev = 0
         for i in xrange(n):
-            if lookup[i] != -1:
+            if lookup[i] != -1:  # optimized
                 dp = [reduce(lambda total, i: (total+dp[i])%MOD, xrange(max((lookup[i]-i)-prev, 0), min((lookup[i]+1)-prev, len(dp))), 0)]
                 prev = lookup[i]
                 continue
-            new_dp = [0]*min(len(dp)+((i+1)-1), (max_c+1)-prev)
+            new_dp = [0]*min(len(dp)+((i+1)-1), (lookup[-1]+1)-prev)
             for j in xrange(len(new_dp)):
                 new_dp[j] = dp[j] if j < len(dp) else 0
                 if j-1 >= 0:
@@ -46,7 +45,7 @@ class Solution2(object):
         lookup = [-1]*n
         for i, c in requirements:
             lookup[i] = c
-        dp = [0]*(max(lookup)+1)
+        dp = [0]*(lookup[-1]+1)
         dp[0] = 1
         for i in xrange(n):
             new_dp = [0]*len(dp)
@@ -77,7 +76,7 @@ class Solution3(object):
         lookup = [-1]*n
         for i, c in requirements:
             lookup[i] = c
-        dp = [0]*(max(lookup)+1)
+        dp = [0]*(lookup[-1]+1)
         dp[0] = 1
         for i in xrange(n):
             new_dp = [0]*len(dp)
