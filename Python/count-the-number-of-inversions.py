@@ -15,7 +15,7 @@ class Solution(object):
             lookup[i] = c
         dp = [0]*(max(c for _, c in requirements)+1)
         dp[0] = 1
-        for i in xrange(max(i for i, _ in requirements)+1):
+        for i in xrange(n):
             new_dp = [0]*len(dp)
             if lookup[i] != -1:  # optimized
                 new_dp[lookup[i]] = reduce(lambda total, i: (total+dp[i])%MOD, xrange(max(lookup[i]-i, 0), lookup[i]+1), 0)
@@ -27,7 +27,7 @@ class Solution(object):
                         curr = (curr-dp[j-(i+1)])%MOD
                     new_dp[j] = curr
             dp = new_dp
-        return reduce(lambda total, i: total*(i+1)%MOD, xrange(i+1, n), reduce(lambda total, x: (total+x)%MOD, dp, 0))  # optimized
+        return dp[-1]
 
 
 # Time:  O(n + max(end) * max(cnt)) <= O(n^3)
@@ -55,4 +55,4 @@ class Solution2(object):
                     curr = (curr-dp[j-(i+1)])%MOD
                 new_dp[j] = curr if lookup[i] == -1 or lookup[i] == j else 0
             dp = new_dp
-        return reduce(lambda total, x: (total+x)%MOD, dp, 0)
+        return dp[-1]
