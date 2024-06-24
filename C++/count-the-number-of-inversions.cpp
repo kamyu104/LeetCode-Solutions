@@ -28,12 +28,14 @@ public:
             if (lookup[i] != -1) {  // optimized
                 new_dp[lookup[i]] = accumulate(cbegin(dp) + max(lookup[i] - i, 0), cbegin(dp) + (lookup[i] + 1), 0, addmod);
             } else {
-                for (int j = 0, curr = 0; j < size(dp); ++j) {
-                    curr = addmod(curr, dp[j]);
-                    if (j - (i + 1) >= 0) {
-                        curr = submod(curr, dp[j - (i + 1)]);
+                for (int j = 0; j < size(dp); ++j) {
+                    new_dp[j] = dp[j];
+                    if (j - 1 >= 0) {
+                        new_dp[j] = addmod(new_dp[j], new_dp[j - 1]);
                     }
-                    new_dp[j] = curr;
+                    if (j - (i + 1) >= 0) {
+                        new_dp[j] = submod(new_dp[j], dp[j - (i + 1)]);
+                    }
                 }
             }
             dp = move(new_dp);
