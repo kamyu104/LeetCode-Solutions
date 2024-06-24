@@ -1,7 +1,7 @@
 // Time:  O(n * k), k = max(cnt for _, cnt in requirements)
 // Space: O(n + k)
 
-// dp, combinatorics, sliding window, two pointers
+// knapsack dp, combinatorics, sliding window, two pointers
 class Solution {
 public:
     int numberOfPermutations(int n, vector<vector<int>>& requirements) {
@@ -43,7 +43,7 @@ public:
 
 // Time:  O(n * k), k = max(cnt for _, cnt in requirements)
 // Space: O(n + k)
-// dp, combinatorics, sliding window, two pointers
+// knapsack dp, combinatorics, sliding window, two pointers
 class Solution2 {
 public:
     int numberOfPermutations(int n, vector<vector<int>>& requirements) {
@@ -85,7 +85,7 @@ public:
 
 // Time:  O(n * k), k = max(cnt for _, cnt in requirements)
 // Space: O(n + k)
-// dp, combinatorics, sliding window, two pointers
+// knapsack dp, combinatorics, sliding window, two pointers
 class Solution3 {
 public:
     int numberOfPermutations(int n, vector<vector<int>>& requirements) {
