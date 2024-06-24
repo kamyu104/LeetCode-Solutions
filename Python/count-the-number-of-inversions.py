@@ -17,14 +17,15 @@ class Solution(object):
         dp = [1]
         prev = 0
         for i in xrange(n):
-            q = [0]*((i+1)+1)
-            dp.extend(0 for _ in xrange(min(i, ((max_c+1)-prev)-len(dp))))
+            q = [0]*(i+1)
+            dp.extend(0 for _ in xrange(min((i+1)-1, ((max_c+1)-prev)-len(dp))))
             for j in xrange(len(dp)):
-                q[j%len(q)] = dp[j]
+                dp_j = dp[j]
                 if j-1 >= 0:
                     dp[j] = (dp[j]+dp[j-1])%MOD
                 if j-(i+1) >= 0:
                     dp[j] = (dp[j]-q[(j-(i+1))%len(q)])%MOD
+                q[j%len(q)] = dp_j
             if lookup[i] != -1:
                 dp = [dp[lookup[i]-prev] if lookup[i]-prev < len(dp) else 0]
                 prev = lookup[i]
