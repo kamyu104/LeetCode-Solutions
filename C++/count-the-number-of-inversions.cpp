@@ -37,7 +37,7 @@ public:
             }
             dp = move(new_dp);
         }
-        return ranges::max(dp);
+        return dp.back();
     }
 };
 
@@ -79,7 +79,7 @@ public:
             }
             dp = move(new_dp);
         }
-        return ranges::max(dp);
+        return dp.back();
     }
 };
 
@@ -115,6 +115,6 @@ public:
             }
             dp = move(new_dp);
         }
-        return ranges::max(dp);
+        return dp.back();
     }
 };
