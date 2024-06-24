@@ -21,6 +21,11 @@ public:
         const int max_c = ranges::max(lookup);
         vector<int> dp = {1};
         for (int i = 0, prev = 0; i < n; ++i) {
+            if (lookup[i] != -1) {
+                dp = { accumulate(cbegin(dp) + max((lookup[i] - i) - prev, 0), cbegin(dp) + min(((lookup[i] + 1) - prev), static_cast<int>(size(dp))), 0, addmod) };
+                prev = lookup[i];
+                continue;
+            }
             vector<int> new_dp(min(static_cast<int>(size(dp)) + ((i + 1) - 1), (max_c + 1) - prev));
             for (int j = 0; j < size(new_dp); ++j) {
                 new_dp[j] = j < size(dp) ? dp[j] : 0;
@@ -30,10 +35,6 @@ public:
                 if (j - (i + 1) >= 0) {
                     new_dp[j] = submod(new_dp[j], dp[j - (i + 1)]);
                 }
-            }
-            if (lookup[i] != -1) {
-                new_dp = { lookup[i] - prev < size(new_dp) ? new_dp[lookup[i] - prev] : 0 };
-                prev = lookup[i];
             }
             dp = move(new_dp);
         }
