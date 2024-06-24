@@ -1,5 +1,5 @@
-// Time:  O(n * max(cnt)) <= O(n^3)
-// Space: O(n + max(cnt)) <= O(n^2)
+// Time:  O(n * k), k = max(cnt for _, cnt in requirements)
+// Space: O(n + k)
 
 // dp, combinatorics, sliding window, two pointers
 class Solution {
@@ -41,8 +41,8 @@ public:
     }
 };
 
-// Time:  O(n * max(cnt)) <= O(n^3)
-// Space: O(n + max(cnt)) <= O(n^2)
+// Time:  O(n * k), k = max(cnt for _, cnt in requirements)
+// Space: O(n + k)
 // dp, combinatorics, sliding window, two pointers
 class Solution2 {
 public:
@@ -83,8 +83,8 @@ public:
     }
 };
 
-// Time:  O(n * max(cnt)) <= O(n^3)
-// Space: O(n + max(cnt)) <= O(n^2)
+// Time:  O(n * k), k = max(cnt for _, cnt in requirements)
+// Space: O(n + k)
 // dp, combinatorics, sliding window, two pointers
 class Solution3 {
 public:
