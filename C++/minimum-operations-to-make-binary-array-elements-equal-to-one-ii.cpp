@@ -7,7 +7,7 @@ public:
     int minOperations(vector<int>& nums) {
         int result = 0;
         for (const auto& x : nums) {
-            if ((x ^ (result & 1)) == 1) {
+            if (x ^ (result & 1)) {
                 continue;
             }
             ++result;
