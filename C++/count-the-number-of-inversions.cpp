@@ -1,4 +1,4 @@
-// Time:  O(n + max(end) * max(cnt)) <= O(n^3)
+// Time:  O(n * max(cnt)) <= O(n^3)
 // Space: O(n + max(cnt)) <= O(n^2)
 
 // dp, combinatorics, sliding window, two pointers
@@ -44,7 +44,7 @@ public:
     }
 };
 
-// Time:  O(n + max(end) * max(cnt)) <= O(n^3)
+// Time:  O(n * max(cnt)) <= O(n^3)
 // Space: O(n + max(cnt)) <= O(n^2)
 // dp, combinatorics, sliding window, two pointers
 class Solution2 {
