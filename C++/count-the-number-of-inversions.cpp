@@ -18,15 +18,12 @@ public:
         for (const auto& r : requirements) {
             lookup[r[0]] = r[1];
         }
-        const int max_e = (*max_element(cbegin(requirements), cend(requirements), [](const auto& a, const auto&b) {
-            return a[0] < b[0];
-        }))[0];
         const int max_c = (*max_element(cbegin(requirements), cend(requirements), [](const auto& a, const auto&b) {
             return a[1] < b[1];
         }))[1];
         vector<int> dp(max_c + 1);
         dp[0] = 1;
-        for (int i = 0; i <= max_e; ++i) {
+        for (int i = 0; i < n; ++i) {
             vector<int> new_dp(size(dp));
             if (lookup[i] != -1) {  // optimized
                 new_dp[lookup[i]] = accumulate(cbegin(dp) + max(lookup[i] - i, 0), cbegin(dp) + (lookup[i] + 1), 0, addmod);
@@ -41,11 +38,7 @@ public:
             }
             dp = move(new_dp);
         }
-        int result = accumulate(cbegin(dp), cend(dp), 0, addmod);
-        for (int i = max_e + 1; i < n; ++i) {
-            result = (result * (i + 1ll)) % MOD;
-        }
-        return result;
+        return ranges::max(dp);
     }
 };
 
@@ -84,6 +77,6 @@ public:
             }
             dp = move(new_dp);
         }
-        return accumulate(cbegin(dp), cend(dp), 0, addmod);
+        return ranges::max(dp);
     }
 };
