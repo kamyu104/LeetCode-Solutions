@@ -1,7 +1,7 @@
 # Time:  O(n * k), k = max(cnt for _, cnt in requirements)
 # Space: O(n + k)
 
-# dp, combinatorics, sliding window, two pointers
+# knapsack dp, combinatorics, sliding window, two pointers
 class Solution(object):
     def numberOfPermutations(self, n, requirements):
         """
@@ -33,7 +33,7 @@ class Solution(object):
 
 # Time:  O(n * k), k = max(cnt for _, cnt in requirements)
 # Space: O(n + k)
-# dp, combinatorics, sliding window, two pointers
+# knapsack dp, combinatorics, sliding window, two pointers
 class Solution2(object):
     def numberOfPermutations(self, n, requirements):
         """
@@ -64,7 +64,7 @@ class Solution2(object):
 
 # Time:  O(n * k), k = max(cnt for _, cnt in requirements)
 # Space: O(n + k)
-# dp, combinatorics, sliding window, two pointers
+# knapsack dp, combinatorics, sliding window, two pointers
 class Solution3(object):
     def numberOfPermutations(self, n, requirements):
         """
