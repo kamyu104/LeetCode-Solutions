@@ -1,7 +1,7 @@
 # Time:  O(n * k)
 # Space: O(k)
 
-# dp, combinatorics, sliding window, two pointers
+# knapsack dp, combinatorics, sliding window, two pointers
 class Solution(object):
     def kInversePairs(self, n, k):
         """
@@ -25,7 +25,7 @@ class Solution(object):
 
 # Time:  O(n * k)
 # Space: O(k)
-# dp, combinatorics, sliding window, two pointers
+# knapsack dp, combinatorics, sliding window, two pointers
 class Solution2(object):
     def kInversePairs(self, n, k):
         """
@@ -50,7 +50,7 @@ class Solution2(object):
 
 # Time:  O(n * k)
 # Space: O(k)
-# dp, combinatorics, sliding window, two pointers
+# knapsack dp, combinatorics, sliding window, two pointers
 class Solution3(object):
     def kInversePairs(self, n, k):
         """
