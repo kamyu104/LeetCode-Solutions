@@ -1,7 +1,7 @@
 // Time:  O(n * k)
 // Space: O(k)
 
-// dp, combinatorics, sliding window, two pointers
+// knapsack dp, combinatorics, sliding window, two pointers
 class Solution {
 public:
     int kInversePairs(int n, int k) {
@@ -34,7 +34,7 @@ public:
 
 // Time:  O(n * k)
 // Space: O(k)
-// dp, combinatorics, sliding window, two pointers
+// knapsack dp, combinatorics, sliding window, two pointers
 class Solution2 {
 public:
     int kInversePairs(int n, int k) {
@@ -68,7 +68,7 @@ public:
 
 // Time:  O(n * k)
 // Space: O(k)
-// dp, combinatorics, sliding window, two pointers
+// knapsack dp, combinatorics, sliding window, two pointers
 class Solution3 {
 public:
     int kInversePairs(int n, int k) {
