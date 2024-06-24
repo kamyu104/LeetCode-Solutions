@@ -18,7 +18,6 @@ public:
         for (const auto& r : requirements) {
             lookup[r[0]] = r[1];
         }
-        const int max_c = ranges::max(lookup);
         vector<int> dp = {1};
         for (int i = 0, prev = 0; i < n; ++i) {
             if (lookup[i] != -1) {
@@ -26,7 +25,7 @@ public:
                 prev = lookup[i];
                 continue;
             }
-            vector<int> new_dp(min(static_cast<int>(size(dp)) + ((i + 1) - 1), (max_c + 1) - prev));
+            vector<int> new_dp(min(static_cast<int>(size(dp)) + ((i + 1) - 1), (lookup.back() + 1) - prev));
             for (int j = 0; j < size(new_dp); ++j) {
                 new_dp[j] = j < size(dp) ? dp[j] : 0;
                 if (j - 1 >= 0) {
@@ -61,8 +60,7 @@ public:
         for (const auto& r : requirements) {
             lookup[r[0]] = r[1];
         }
-        const int max_c = ranges::max(lookup);
-        vector<int> dp(max_c + 1);
+        vector<int> dp(lookup.back() + 1);
         dp[0] = 1;
         for (int i = 0; i < n; ++i) {
             vector<int> new_dp(size(dp));
@@ -104,8 +102,7 @@ public:
         for (const auto& r : requirements) {
             lookup[r[0]] = r[1];
         }
-        const int max_c = ranges::max(lookup);
-        vector<int> dp(max_c + 1);
+        vector<int> dp(lookup.back() + 1);
         dp[0] = 1;
         for (int i = 0; i < n; ++i) {
             vector<int> new_dp(size(dp));
