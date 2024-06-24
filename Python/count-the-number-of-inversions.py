@@ -17,18 +17,17 @@ class Solution(object):
         dp = [1]
         prev = 0
         for i in xrange(n):
-            q = [0]*(i+1)
-            dp.extend(0 for _ in xrange(min((i+1)-1, ((max_c+1)-prev)-len(dp))))
-            for j in xrange(len(dp)):
-                dp_j = dp[j]
+            new_dp = [0]*min(len(dp)+((i+1)-1), (max_c+1)-prev)
+            for j in xrange(len(new_dp)):
+                new_dp[j] = dp[j] if j < len(dp) else 0
                 if j-1 >= 0:
-                    dp[j] = (dp[j]+dp[j-1])%MOD
+                    new_dp[j] = (new_dp[j]+new_dp[j-1])%MOD
                 if j-(i+1) >= 0:
-                    dp[j] = (dp[j]-q[(j-(i+1))%len(q)])%MOD
-                q[j%len(q)] = dp_j
+                    new_dp[j] = (new_dp[j]-dp[j-(i+1)])%MOD
             if lookup[i] != -1:
-                dp = [dp[lookup[i]-prev] if lookup[i]-prev < len(dp) else 0]
+                new_dp = [new_dp[lookup[i]-prev] if lookup[i]-prev < len(new_dp) else 0]
                 prev = lookup[i]
+            dp = new_dp
         return dp[-1]
 
 
