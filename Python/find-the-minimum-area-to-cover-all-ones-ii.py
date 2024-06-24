@@ -1,4 +1,4 @@
-# Time   O((n^2 + m^2 + 4 * n * m) * n * m) = O(max(n, m)^3 * min(n, m))
+# Time:  O((n^2 + m^2 + 4 * n * m) * n * m) = O(max(n, m)^3 * min(n, m))
 # Space: O(1)
 
 # brute force
