@@ -62,7 +62,7 @@ public:
             }
             dp = move(new_dp);
         }
-        return dp[k];
+        return dp.back();
     }
 };
 
@@ -94,6 +94,6 @@ public:
             }
             dp = move(new_dp);
         }
-        return dp[k];
+        return dp.back();
     }
 };
