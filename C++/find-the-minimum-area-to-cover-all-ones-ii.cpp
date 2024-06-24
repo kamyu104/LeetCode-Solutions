@@ -150,21 +150,21 @@ public:
             return right;
         };
 
-        vector<vector<int>> dp;
+        vector<vector<int>> prefix;
         const auto& minimumArea = [&](int min_i, int max_i, int min_j, int max_j) {
             const auto& count = [&](int x1, int y1, int x2, int y2) {
                 if (!(x1 <= x2 && y1 <= y2)) {
                     return 0;
                 }
-                int cnt = dp[x2][y2];
+                int cnt = prefix[x2][y2];
                 if (x1 - 1 >= 0) {
-                    cnt -= dp[x1 - 1][y2];
+                    cnt -= prefix[x1 - 1][y2];
                 }
                 if (y1 - 1 >= 0) {
-                    cnt -= dp[x2][y1 - 1];
+                    cnt -= prefix[x2][y1 - 1];
                 }
                 if (x1 - 1 >= 0 && y1 - 1 >= 0) {
-                    cnt += dp[x1 - 1][y1 - 1];
+                    cnt += prefix[x1 - 1][y1 - 1];
                 }
                 return cnt;
             };
@@ -178,18 +178,18 @@ public:
 
         int result = numeric_limits<int>::max();
         for (int _ = 0; _ < 4; ++_) {
-            dp.assign(size(grid), vector<int>(size(grid[0])));
+            prefix.assign(size(grid), vector<int>(size(grid[0])));
             for (int i = 0; i < size(grid); ++i) {
                 for (int j = 0; j < size(grid[0]); ++j) {
-                    dp[i][j] = grid[i][j];
+                    prefix[i][j] = grid[i][j];
                     if (i - 1 >= 0) {
-                        dp[i][j] += dp[i - 1][j];
+                        prefix[i][j] += prefix[i - 1][j];
                     }
                     if (j - 1 >= 0) {
-                        dp[i][j] += dp[i][j - 1];
+                        prefix[i][j] += prefix[i][j - 1];
                     }
                     if (i - 1 >= 0 && j - 1 >= 0) {
-                        dp[i][j] -= dp[i - 1][j - 1];
+                        prefix[i][j] -= prefix[i - 1][j - 1];
                     }
                 }
             }
