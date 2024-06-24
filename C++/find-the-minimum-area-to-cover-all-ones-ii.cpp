@@ -6,10 +6,10 @@ class Solution {
 public:
     int minimumSum(vector<vector<int>>& grid) {
         const auto& minimumArea = [&](int min_i, int max_i, int min_j, int max_j) {
-            int min_r = size(grid);
-            int max_r = -1;
-            int min_c = size(grid[0]);
-            int max_c = -1;
+            int min_r = max_i + 1;
+            int max_r = min_i - 1;
+            int min_c = max_j + 1;
+            int max_c = min_j - 1;
             for (int i = min_i; i <= max_i; ++i) {
                 for (int j = min_j; j <= max_j; ++j) {
                     if (grid[i][j] == 0) {
@@ -84,10 +84,10 @@ public:
         };
     
         const auto& minimumArea = [&](int min_i, int max_i, int min_j, int max_j) {
-            int min_r = size(grid);
-            int max_r = -1;
-            int min_c = size(grid[0]);
-            int max_c = -1;
+            int min_r = max_i + 1;
+            int max_r = min_i - 1;
+            int min_c = max_j + 1;
+            int max_c = min_j - 1;
             for (int i = min_i; i <= max_i; ++i) {
                 for (int j = min_j; j <= max_j; ++j) {
                     if (grid[i][j] == 0) {
