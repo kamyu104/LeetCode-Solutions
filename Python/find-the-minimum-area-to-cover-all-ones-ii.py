@@ -32,10 +32,12 @@ class Solution(object):
                 return self.fn(self.st[i][L], self.st[i][R-(1<<i)+1])
 
         def minimumArea(min_i, max_i, min_j, max_j):
-            min_r = min(st_min_i[min_i].query(min_j, max_j), max_i+1) if min_i < len(st_min_i) and min_j <= max_j else max_i+1
-            max_r = max(st_max_i[max_i].query(min_j, max_j), min_i-1) if min_j <= max_j else min_i-1
-            min_c = min(st_min_j[min_j].query(min_i, max_i), max_j+1) if min_j < len(grid[0]) and min_i <= max_i else max_j+1
-            max_c = max(st_max_j[max_j].query(min_i, max_i), min_j-1) if min_i <= max_i else min_j-1
+            if not (min_i <= max_i and min_j <= max_j):
+                return 0
+            min_r = min(st_min_i[min_i].query(min_j, max_j), max_i+1)
+            max_r = max(st_max_i[max_i].query(min_j, max_j), min_i-1)
+            min_c = min(st_min_j[min_j].query(min_i, max_i), max_j+1)
+            max_c = max(st_max_j[max_j].query(min_i, max_i), min_j-1)
             return (max_r-min_r+1)*(max_c-min_c+1)
 
         st_min_i = [None]*len(grid)
@@ -134,10 +136,12 @@ class Solution2(object):
                 return self.fn(self.st[i][L], self.st[i][R-(1<<i)+1])
 
         def minimumArea(min_i, max_i, min_j, max_j):
-            min_r = min(st_min_i[min_i].query(min_j, max_j), max_i+1) if min_i < len(st_min_i) and min_j <= max_j else max_i+1
-            max_r = max(st_max_i[max_i].query(min_j, max_j), min_i-1) if min_j <= max_j else min_i-1
-            min_c = min(st_min_j[min_j].query(min_i, max_i), max_j+1) if min_j < len(grid[0]) and min_i <= max_i else max_j+1
-            max_c = max(st_max_j[max_j].query(min_i, max_i), min_j-1) if min_i <= max_i else min_j-1
+            if not (min_i <= max_i and min_j <= max_j):
+                return 0
+            min_r = min(st_min_i[min_i].query(min_j, max_j), max_i+1)
+            max_r = max(st_max_i[max_i].query(min_j, max_j), min_i-1)
+            min_c = min(st_min_j[min_j].query(min_i, max_i), max_j+1)
+            max_c = max(st_max_j[max_j].query(min_i, max_i), min_j-1)
             return (max_r-min_r+1)*(max_c-min_c+1)
 
         result = float("inf")
@@ -213,8 +217,6 @@ class Solution3(object):
 
         def minimumArea(min_i, max_i, min_j, max_j):
             def count(x1, y1, x2, y2):
-                if not (x1 <= x2 and y1 <= y2):
-                    return 0
                 cnt = grid[x2][y2]
                 if x1-1 >= 0:
                     cnt -= grid[x1-1][y2]
@@ -223,7 +225,9 @@ class Solution3(object):
                 if x1-1 >= 0 and y1-1 >= 0:
                     cnt += grid[x1-1][y1-1]
                 return cnt
-    
+
+            if not (min_i <= max_i and min_j <= max_j):
+                return 0
             min_r = binary_search(min_i, max_i, lambda i: count(min_i, min_j, i, max_j))
             max_r = binary_search_right(min_i, max_i, lambda i: count(i, min_j, max_i, max_j))
             min_c = binary_search(min_j, max_j, lambda j: count(min_i, min_j, max_i, j))
@@ -301,8 +305,6 @@ class Solution4(object):
 
         def minimumArea(min_i, max_i, min_j, max_j):
             def count(x1, y1, x2, y2):
-                if not (x1 <= x2 and y1 <= y2):
-                    return 0
                 cnt = prefix[x2][y2]
                 if x1-1 >= 0:
                     cnt -= prefix[x1-1][y2]
@@ -311,7 +313,9 @@ class Solution4(object):
                 if x1-1 >= 0 and y1-1 >= 0:
                     cnt += prefix[x1-1][y1-1]
                 return cnt
-    
+
+            if not (min_i <= max_i and min_j <= max_j):
+                return 0
             min_r = binary_search(min_i, max_i, lambda i: count(min_i, min_j, i, max_j))
             max_r = binary_search_right(min_i, max_i, lambda i: count(i, min_j, max_i, max_j))
             min_c = binary_search(min_j, max_j, lambda j: count(min_i, min_j, max_i, j))
@@ -354,6 +358,8 @@ class Solution5(object):
         :rtype: int
         """
         def minimumArea(min_i, max_i, min_j, max_j):
+            if not (min_i <= max_i and min_j <= max_j):
+                return 0
             min_r, max_r, min_c, max_c = max_i+1, min_i-1, max_j+1, min_j-1
             for i in xrange(min_i, max_i+1):
                 for j in xrange(min_j, max_j+1):
@@ -406,6 +412,8 @@ class Solution6(object):
         :rtype: int
         """
         def minimumArea(min_i, max_i, min_j, max_j):
+            if not (min_i <= max_i and min_j <= max_j):
+                return 0
             min_r, max_r, min_c, max_c = max_i+1, min_i-1, max_j+1, min_j-1
             for i in xrange(min_i, max_i+1):
                 for j in xrange(min_j, max_j+1):
