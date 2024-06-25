@@ -131,14 +131,7 @@ class Solution_ConstructPermutation(object):
         dp = [[] for _ in xrange(lookup[-1]+1)]
         dp[0].append([])
         for i in xrange(n):
-            new_dp = [[] for _ in xrange(len(dp))]
-            for j in xrange(len(dp)):
-                for k in xrange(min(i+1, j+1)):
-                    for p in dp[j-k]:
-                        new_dp[j].append([x+int(x >= i-k) for x in p]+[i-k])
-                if lookup[i] != -1 and lookup[i] != j:
-                    new_dp[j][:] = []
-            dp = new_dp
+            dp = [[[x+int(x >= i-k) for x in p]+[i-k] for k in xrange(min(i+1, j+1)) for p in dp[j-k]] if lookup[i] == -1 or lookup[i] == j else [] for j in xrange(len(dp))]
         for p in dp[-1]:
             curr = 0
             for i in xrange(n):
