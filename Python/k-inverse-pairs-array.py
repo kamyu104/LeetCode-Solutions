@@ -106,11 +106,22 @@ class Solution_ConstructPermutation(object):
         dp = [[] for _ in xrange(k+1)]
         dp[0].append([])
         for i in xrange(n):
-            new_dp = [[] for _ in xrange(len(dp))]
-            for j in xrange(len(dp)):
-                for k in xrange(min(i+1, j+1)):
-                    for p in dp[j-k]:
-                        new_dp[j].append([x+int(x >= i-k) for x in p]+[i-k])
-            dp = new_dp
+            dp = [[[x+int(x >= i-k) for k in xrange(min(i+1, j+1)) for x in p]+[i-k] for k in xrange(min(i+1, j+1)) for p in dp[j-k]] for j in xrange(len(dp))]
+        assert(all(sum(int(p[j] > p[i]) for i in xrange(n) for j in xrange(i)) == len(dp)-1) for p in dp[-1])
+        return len(dp[-1])%MOD
+
+
+class Solution_ConstructPermutation2(object):
+    def kInversePairs(self, n, k):
+        """
+        :type n: int
+        :type k: int
+        :rtype: int
+        """
+        MOD = 10**9+7
+        dp = [[] for _ in xrange(k+1)]
+        dp[0].append([])
+        for i in xrange(n):
+            dp = [[p[:len(p)-k]+[i]+p[len(p)-k:] for k in xrange(min(i+1, j+1)) for p in dp[j-k]] for j in xrange(len(dp))]
         assert(all(sum(int(p[j] > p[i]) for i in xrange(n) for j in xrange(i)) == len(dp)-1) for p in dp[-1])
         return len(dp[-1])%MOD
