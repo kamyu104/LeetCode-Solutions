@@ -104,7 +104,6 @@ class Solution(object):
 
 # Time:  O(n * m * log(max(n, m)) + max(n, m)^2)
 # Space: O(n * m * log(max(n, m)))
-
 # sparse table
 class Solution2(object):
     def minimumSum(self, grid):
