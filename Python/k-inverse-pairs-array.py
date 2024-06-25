@@ -106,7 +106,7 @@ class Solution_ConstructPermutation(object):
         dp = [[] for _ in xrange(k+1)]
         dp[0].append([])
         for i in xrange(n):
-            dp = [[[x+int(x >= i-k) for k in xrange(min(i+1, j+1)) for x in p]+[i-k] for k in xrange(min(i+1, j+1)) for p in dp[j-k]] for j in xrange(len(dp))]
+            dp = [[[x+int(x >= i-k) for x in p]+[i-k] for k in xrange(min(i+1, j+1)) for p in dp[j-k]] for j in xrange(len(dp))]
         assert(all(sum(int(p[j] > p[i]) for i in xrange(n) for j in xrange(i)) == len(dp)-1) for p in dp[-1])
         return len(dp[-1])%MOD
 
