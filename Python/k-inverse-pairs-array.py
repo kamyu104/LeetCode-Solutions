@@ -73,8 +73,8 @@ class Solution3(object):
         return dp[-1]
 
 
-# Time:  O(n^2 * k), k = max(cnt for _, cnt in requirements)
-# Space: O(n + k)
+# Time:  O(n^2 * k)
+# Space: O(k)
 # knapsack dp, combinatorics
 class Solution_TLE(object):
     def kInversePairs(self, n, k):
