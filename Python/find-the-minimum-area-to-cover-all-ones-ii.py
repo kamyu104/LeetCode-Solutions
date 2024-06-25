@@ -126,7 +126,7 @@ class Solution2(object):
             max_r = max(st_max_i[max_i].query(min_j, max_j), min_i-1)
             min_c = min(st_min_j[min_j].query(min_i, max_i), max_j+1)
             max_c = max(st_max_j[max_j].query(min_i, max_i), min_j-1)
-            return (max_r-min_r+1)*(max_c-min_c+1)
+            return (max_r-min_r+1)*(max_c-min_c+1) if min_r <= max_i else 0
 
         st_min_i = [None]*len(grid)
         curr = [len(grid)]*len(grid[0])
@@ -233,7 +233,7 @@ class Solution3(object):
             max_r = max(st_max_i[max_i].query(min_j, max_j), min_i-1)
             min_c = min(st_min_j[min_j].query(min_i, max_i), max_j+1)
             max_c = max(st_max_j[max_j].query(min_i, max_i), min_j-1)
-            return (max_r-min_r+1)*(max_c-min_c+1)
+            return (max_r-min_r+1)*(max_c-min_c+1) if min_r <= max_i else 0
 
         result = float("inf")
         for _ in xrange(4):
@@ -323,7 +323,7 @@ class Solution4(object):
             max_r = binary_search_right(min_i, max_i, lambda i: count(i, min_j, max_i, max_j))
             min_c = binary_search(min_j, max_j, lambda j: count(min_i, min_j, max_i, j))
             max_c = binary_search_right(min_j, max_j, lambda j: count(min_i, j, max_i, max_j))
-            return (max_r-min_r+1)*(max_c-min_c+1)
+            return (max_r-min_r+1)*(max_c-min_c+1) if min_r <= max_i else 0
     
         for i in xrange(len(grid)):
             for j in xrange(len(grid[0])):
@@ -416,7 +416,7 @@ class Solution5(object):
             max_r = binary_search_right(min_i, max_i, lambda i: count(i, min_j, max_i, max_j))
             min_c = binary_search(min_j, max_j, lambda j: count(min_i, min_j, max_i, j))
             max_c = binary_search_right(min_j, max_j, lambda j: count(min_i, j, max_i, max_j))
-            return (max_r-min_r+1)*(max_c-min_c+1)
+            return (max_r-min_r+1)*(max_c-min_c+1) if min_r <= max_i else 0
     
         result = float("inf")
         for _ in xrange(4):
@@ -462,7 +462,7 @@ class Solution6(object):
                     if grid[i][j] == 0:
                         continue
                     min_r, max_r, min_c, max_c = min(min_r, i), max(max_r, i), min(min_c, j), max(max_c, j)
-            return (max_r-min_r+1)*(max_c-min_c+1)
+            return (max_r-min_r+1)*(max_c-min_c+1) if min_r <= max_i else 0
     
         result = float("inf")
         for i in xrange(len(grid)-1):
@@ -520,7 +520,7 @@ class Solution7(object):
                     if grid[i][j] == 0:
                         continue
                     min_r, max_r, min_c, max_c = min(min_r, i), max(max_r, i), min(min_c, j), max(max_c, j)
-            return (max_r-min_r+1)*(max_c-min_c+1)
+            return (max_r-min_r+1)*(max_c-min_c+1) if min_r <= max_i else 0
     
         result = float("inf")
         for _ in xrange(4):
