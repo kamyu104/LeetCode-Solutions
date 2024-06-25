@@ -120,5 +120,3 @@ class Solution_ConstructPermutation(object):
         for p in dp[-1]:
             assert(sum(int(p[j] > p[i]) for i in xrange(n) for j in xrange(i)) == len(dp)-1)
         return len(dp[-1])%MOD
-
-        return len(dp[-1])%MOD
