@@ -122,8 +122,6 @@ class Solution2(object):
                 return self.fn(self.st[i][L], self.st[i][R-(1<<i)+1])
 
         def minimumArea(min_i, max_i, min_j, max_j):
-            if not (min_i <= max_i and min_j <= max_j):
-                return 0
             min_r = min(st_min_i[min_i].query(min_j, max_j), max_i+1)
             max_r = max(st_max_i[max_i].query(min_j, max_j), min_i-1)
             min_c = min(st_min_j[min_j].query(min_i, max_i), max_j+1)
@@ -159,35 +157,41 @@ class Solution2(object):
                     curr[i] = j
             st_max_j[j] = SparseTable(curr, max)
         result = float("inf")
-        for i in xrange(len(grid)):
-            a = minimumArea(0, i, 0, len(grid[0])-1)
-            for j in xrange(len(grid[0])):
-                b = minimumArea(i+1, len(grid)-1, 0, j)
-                c = minimumArea(i+1, len(grid)-1, j+1, len(grid[0])-1)
-                result = min(result, a+b+c)
-            for j in xrange(i+1, len(grid)):
-                b = minimumArea(i+1, j, 0, len(grid[0])-1)
-                c = minimumArea(j+1, len(grid)-1, 0, len(grid[0])-1)
-                result = min(result, a+b+c)
+        for i in xrange(len(grid)-1):
             a = minimumArea(i+1, len(grid)-1, 0, len(grid[0])-1)
-            for j in xrange(len(grid[0])):
+            for j in xrange(len(grid[0])-1):
                 b = minimumArea(0, i, 0, j)
                 c = minimumArea(0, i, j+1, len(grid[0])-1)
                 result = min(result, a+b+c)
-        for j in xrange(len(grid[0])):
+        for i in xrange(len(grid)-1):
+            a = minimumArea(0, i, 0, len(grid[0])-1)
+            for j in xrange(len(grid[0])-1):
+                b = minimumArea(i+1, len(grid)-1, 0, j)
+                c = minimumArea(i+1, len(grid)-1, j+1, len(grid[0])-1)
+                result = min(result, a+b+c)
+        for j in xrange(len(grid[0])-1):
+            a = minimumArea(0, len(grid)-1, j+1, len(grid[0])-1)
+            for i in xrange(len(grid)-1):
+                b = minimumArea(0, i, 0, j)
+                c = minimumArea(i+1, len(grid)-1, 0, j)
+                result = min(result, a+b+c)
+        for j in xrange(len(grid[0])-1):
             a = minimumArea(0, len(grid)-1, 0, j)
-            for i in xrange(len(grid)):
+            for i in xrange(len(grid)-1):
                 b = minimumArea(0, i, j+1, len(grid[0])-1)
                 c = minimumArea(i+1, len(grid)-1, j+1, len(grid[0])-1)
                 result = min(result, a+b+c)
-            for i in xrange(j+1, len(grid[0])):
-                b = minimumArea(0, len(grid)-1, j+1, i)
-                c = minimumArea(0, len(grid)-1, i+1, len(grid[0])-1)
+        for i in xrange(len(grid)-2):
+            a = minimumArea(0, i, 0, len(grid[0])-1)
+            for j in xrange(i+1, len(grid)-1):
+                b = minimumArea(i+1, j, 0, len(grid[0])-1)
+                c = minimumArea(j+1, len(grid)-1, 0, len(grid[0])-1)
                 result = min(result, a+b+c)
-            a = minimumArea(0, len(grid)-1, j+1, len(grid[0])-1)
-            for i in xrange(len(grid)):
-                b = minimumArea(0, i, 0, j)
-                c = minimumArea(i+1, len(grid)-1, 0, j)
+        for i in xrange(len(grid[0])-2):
+            a = minimumArea(0, len(grid)-1, 0, i)
+            for j in xrange(i+1, len(grid[0])-1):
+                b = minimumArea(0, len(grid)-1, i+1, j)
+                c = minimumArea(0, len(grid)-1, j+1, len(grid[0])-1)
                 result = min(result, a+b+c)
         return result
 
@@ -225,8 +229,6 @@ class Solution3(object):
                 return self.fn(self.st[i][L], self.st[i][R-(1<<i)+1])
 
         def minimumArea(min_i, max_i, min_j, max_j):
-            if not (min_i <= max_i and min_j <= max_j):
-                return 0
             min_r = min(st_min_i[min_i].query(min_j, max_j), max_i+1)
             max_r = max(st_max_i[max_i].query(min_j, max_j), min_i-1)
             min_c = min(st_min_j[min_j].query(min_i, max_i), max_j+1)
@@ -263,13 +265,15 @@ class Solution3(object):
                     if grid[i][j]:
                         curr[i] = j
                 st_max_j[j] = SparseTable(curr, max)        
-            for i in xrange(len(grid)):
+            for i in xrange(len(grid)-1):
                 a = minimumArea(0, i, 0, len(grid[0])-1)
-                for j in xrange(len(grid[0])):
+                for j in xrange(len(grid[0])-1):
                     b = minimumArea(i+1, len(grid)-1, 0, j)
                     c = minimumArea(i+1, len(grid)-1, j+1, len(grid[0])-1)
                     result = min(result, a+b+c)
-                for j in xrange(i+1, len(grid)):
+            for i in xrange(len(grid)-2):
+                a = minimumArea(0, i, 0, len(grid[0])-1)
+                for j in xrange(i+1, len(grid)-1):
                     b = minimumArea(i+1, j, 0, len(grid[0])-1)
                     c = minimumArea(j+1, len(grid)-1, 0, len(grid[0])-1)
                     result = min(result, a+b+c)
@@ -315,8 +319,6 @@ class Solution4(object):
                     cnt += grid[x1-1][y1-1]
                 return cnt
 
-            if not (min_i <= max_i and min_j <= max_j):
-                return 0
             min_r = binary_search(min_i, max_i, lambda i: count(min_i, min_j, i, max_j))
             max_r = binary_search_right(min_i, max_i, lambda i: count(i, min_j, max_i, max_j))
             min_c = binary_search(min_j, max_j, lambda j: count(min_i, min_j, max_i, j))
@@ -332,35 +334,42 @@ class Solution4(object):
                 if i-1 >= 0 and j-1 >= 0:
                     grid[i][j] -= grid[i-1][j-1]
         result = float("inf")
-        for i in xrange(len(grid)):
-            a = minimumArea(0, i, 0, len(grid[0])-1)
-            for j in xrange(len(grid[0])):
-                b = minimumArea(i+1, len(grid)-1, 0, j)
-                c = minimumArea(i+1, len(grid)-1, j+1, len(grid[0])-1)
-                result = min(result, a+b+c)
-            for j in xrange(i+1, len(grid)):
-                b = minimumArea(i+1, j, 0, len(grid[0])-1)
-                c = minimumArea(j+1, len(grid)-1, 0, len(grid[0])-1)
-                result = min(result, a+b+c)
+        result = float("inf")
+        for i in xrange(len(grid)-1):
             a = minimumArea(i+1, len(grid)-1, 0, len(grid[0])-1)
-            for j in xrange(len(grid[0])):
+            for j in xrange(len(grid[0])-1):
                 b = minimumArea(0, i, 0, j)
                 c = minimumArea(0, i, j+1, len(grid[0])-1)
                 result = min(result, a+b+c)
-        for j in xrange(len(grid[0])):
+        for i in xrange(len(grid)-1):
+            a = minimumArea(0, i, 0, len(grid[0])-1)
+            for j in xrange(len(grid[0])-1):
+                b = minimumArea(i+1, len(grid)-1, 0, j)
+                c = minimumArea(i+1, len(grid)-1, j+1, len(grid[0])-1)
+                result = min(result, a+b+c)
+        for j in xrange(len(grid[0])-1):
+            a = minimumArea(0, len(grid)-1, j+1, len(grid[0])-1)
+            for i in xrange(len(grid)-1):
+                b = minimumArea(0, i, 0, j)
+                c = minimumArea(i+1, len(grid)-1, 0, j)
+                result = min(result, a+b+c)
+        for j in xrange(len(grid[0])-1):
             a = minimumArea(0, len(grid)-1, 0, j)
-            for i in xrange(len(grid)):
+            for i in xrange(len(grid)-1):
                 b = minimumArea(0, i, j+1, len(grid[0])-1)
                 c = minimumArea(i+1, len(grid)-1, j+1, len(grid[0])-1)
                 result = min(result, a+b+c)
-            for i in xrange(j+1, len(grid[0])):
-                b = minimumArea(0, len(grid)-1, j+1, i)
-                c = minimumArea(0, len(grid)-1, i+1, len(grid[0])-1)
+        for i in xrange(len(grid)-2):
+            a = minimumArea(0, i, 0, len(grid[0])-1)
+            for j in xrange(i+1, len(grid)-1):
+                b = minimumArea(i+1, j, 0, len(grid[0])-1)
+                c = minimumArea(j+1, len(grid)-1, 0, len(grid[0])-1)
                 result = min(result, a+b+c)
-            a = minimumArea(0, len(grid)-1, j+1, len(grid[0])-1)
-            for i in xrange(len(grid)):
-                b = minimumArea(0, i, 0, j)
-                c = minimumArea(i+1, len(grid)-1, 0, j)
+        for i in xrange(len(grid[0])-2):
+            a = minimumArea(0, len(grid)-1, 0, i)
+            for j in xrange(i+1, len(grid[0])-1):
+                b = minimumArea(0, len(grid)-1, i+1, j)
+                c = minimumArea(0, len(grid)-1, j+1, len(grid[0])-1)
                 result = min(result, a+b+c)
         return result
 
@@ -403,8 +412,6 @@ class Solution5(object):
                     cnt += prefix[x1-1][y1-1]
                 return cnt
 
-            if not (min_i <= max_i and min_j <= max_j):
-                return 0
             min_r = binary_search(min_i, max_i, lambda i: count(min_i, min_j, i, max_j))
             max_r = binary_search_right(min_i, max_i, lambda i: count(i, min_j, max_i, max_j))
             min_c = binary_search(min_j, max_j, lambda j: count(min_i, min_j, max_i, j))
@@ -423,13 +430,15 @@ class Solution5(object):
                         prefix[i][j] += prefix[i][j-1]
                     if i-1 >= 0 and j-1 >= 0:
                         prefix[i][j] -= prefix[i-1][j-1]
-            for i in xrange(len(grid)):
+            for i in xrange(len(grid)-1):
                 a = minimumArea(0, i, 0, len(grid[0])-1)
-                for j in xrange(len(grid[0])):
+                for j in xrange(len(grid[0])-1):
                     b = minimumArea(i+1, len(grid)-1, 0, j)
                     c = minimumArea(i+1, len(grid)-1, j+1, len(grid[0])-1)
                     result = min(result, a+b+c)
-                for j in xrange(i+1, len(grid)):
+            for i in xrange(len(grid)-2):
+                a = minimumArea(0, i, 0, len(grid[0])-1)
+                for j in xrange(i+1, len(grid)-1):
                     b = minimumArea(i+1, j, 0, len(grid[0])-1)
                     c = minimumArea(j+1, len(grid)-1, 0, len(grid[0])-1)
                     result = min(result, a+b+c)
@@ -447,8 +456,6 @@ class Solution6(object):
         :rtype: int
         """
         def minimumArea(min_i, max_i, min_j, max_j):
-            if not (min_i <= max_i and min_j <= max_j):
-                return 0
             min_r, max_r, min_c, max_c = max_i+1, min_i-1, max_j+1, min_j-1
             for i in xrange(min_i, max_i+1):
                 for j in xrange(min_j, max_j+1):
@@ -458,35 +465,41 @@ class Solution6(object):
             return (max_r-min_r+1)*(max_c-min_c+1)
     
         result = float("inf")
-        for i in xrange(len(grid)):
-            a = minimumArea(0, i, 0, len(grid[0])-1)
-            for j in xrange(len(grid[0])):
-                b = minimumArea(i+1, len(grid)-1, 0, j)
-                c = minimumArea(i+1, len(grid)-1, j+1, len(grid[0])-1)
-                result = min(result, a+b+c)
-            for j in xrange(i+1, len(grid)):
-                b = minimumArea(i+1, j, 0, len(grid[0])-1)
-                c = minimumArea(j+1, len(grid)-1, 0, len(grid[0])-1)
-                result = min(result, a+b+c)
+        for i in xrange(len(grid)-1):
             a = minimumArea(i+1, len(grid)-1, 0, len(grid[0])-1)
-            for j in xrange(len(grid[0])):
+            for j in xrange(len(grid[0])-1):
                 b = minimumArea(0, i, 0, j)
                 c = minimumArea(0, i, j+1, len(grid[0])-1)
                 result = min(result, a+b+c)
-        for j in xrange(len(grid[0])):
+        for i in xrange(len(grid)-1):
+            a = minimumArea(0, i, 0, len(grid[0])-1)
+            for j in xrange(len(grid[0])-1):
+                b = minimumArea(i+1, len(grid)-1, 0, j)
+                c = minimumArea(i+1, len(grid)-1, j+1, len(grid[0])-1)
+                result = min(result, a+b+c)
+        for j in xrange(len(grid[0])-1):
+            a = minimumArea(0, len(grid)-1, j+1, len(grid[0])-1)
+            for i in xrange(len(grid)-1):
+                b = minimumArea(0, i, 0, j)
+                c = minimumArea(i+1, len(grid)-1, 0, j)
+                result = min(result, a+b+c)
+        for j in xrange(len(grid[0])-1):
             a = minimumArea(0, len(grid)-1, 0, j)
-            for i in xrange(len(grid)):
+            for i in xrange(len(grid)-1):
                 b = minimumArea(0, i, j+1, len(grid[0])-1)
                 c = minimumArea(i+1, len(grid)-1, j+1, len(grid[0])-1)
                 result = min(result, a+b+c)
-            for i in xrange(j+1, len(grid[0])):
-                b = minimumArea(0, len(grid)-1, j+1, i)
-                c = minimumArea(0, len(grid)-1, i+1, len(grid[0])-1)
+        for i in xrange(len(grid)-2):
+            a = minimumArea(0, i, 0, len(grid[0])-1)
+            for j in xrange(i+1, len(grid)-1):
+                b = minimumArea(i+1, j, 0, len(grid[0])-1)
+                c = minimumArea(j+1, len(grid)-1, 0, len(grid[0])-1)
                 result = min(result, a+b+c)
-            a = minimumArea(0, len(grid)-1, j+1, len(grid[0])-1)
-            for i in xrange(len(grid)):
-                b = minimumArea(0, i, 0, j)
-                c = minimumArea(i+1, len(grid)-1, 0, j)
+        for i in xrange(len(grid[0])-2):
+            a = minimumArea(0, len(grid)-1, 0, i)
+            for j in xrange(i+1, len(grid[0])-1):
+                b = minimumArea(0, len(grid)-1, i+1, j)
+                c = minimumArea(0, len(grid)-1, j+1, len(grid[0])-1)
                 result = min(result, a+b+c)
         return result
 
@@ -501,8 +514,6 @@ class Solution7(object):
         :rtype: int
         """
         def minimumArea(min_i, max_i, min_j, max_j):
-            if not (min_i <= max_i and min_j <= max_j):
-                return 0
             min_r, max_r, min_c, max_c = max_i+1, min_i-1, max_j+1, min_j-1
             for i in xrange(min_i, max_i+1):
                 for j in xrange(min_j, max_j+1):
@@ -513,13 +524,15 @@ class Solution7(object):
     
         result = float("inf")
         for _ in xrange(4):
-            for i in xrange(len(grid)):
+            for i in xrange(len(grid)-1):
                 a = minimumArea(0, i, 0, len(grid[0])-1)
-                for j in xrange(len(grid[0])):
+                for j in xrange(len(grid[0])-1):
                     b = minimumArea(i+1, len(grid)-1, 0, j)
                     c = minimumArea(i+1, len(grid)-1, j+1, len(grid[0])-1)
                     result = min(result, a+b+c)
-                for j in xrange(i+1, len(grid)):
+            for i in xrange(len(grid)-2):
+                a = minimumArea(0, i, 0, len(grid[0])-1)
+                for j in xrange(i+1, len(grid)-1):
                     b = minimumArea(i+1, j, 0, len(grid[0])-1)
                     c = minimumArea(j+1, len(grid)-1, 0, len(grid[0])-1)
                     result = min(result, a+b+c)
