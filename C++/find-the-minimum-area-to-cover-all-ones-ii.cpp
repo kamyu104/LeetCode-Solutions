@@ -110,12 +110,12 @@ public:
                 });
             }
         }
-        for (int i = 0; i < size(grid); ++i) {
+        for (int i = 0; i + 2 < size(grid); ++i) {
             for (int j = i + 1; j + 1 < size(grid); ++j) {
                 result = min(result, horizon[0][i] + horizon[i + 1][j] + horizon[j + 1][size(grid) - 1]);
             }
         }
-        for (int i = 0; i < size(grid[0]); ++i) {
+        for (int i = 0; i + 2 < size(grid[0]); ++i) {
             for (int j = i + 1; j + 1 < size(grid[0]); ++j) {
                 result = min(result, vertical[0][i] + vertical[i + 1][j] + vertical[j + 1][size(grid[0]) - 1]);
             }
