@@ -100,6 +100,16 @@ public:
         const auto& down_right = count(size(grid) - 1, -1, size(grid[0]) - 1, -1);
         const auto& [horizon, vertical] = count2();
         int result = numeric_limits<int>::max();
+        for (int i = 0; i + 1 < size(grid); ++i) {
+            for (int j = 0; j + 1 < size(grid[0]); ++j) {
+                result = min({result,
+                    up_left[i][j] + up_right[i][j + 1] + horizon[i + 1][size(grid) - 1],
+                    horizon[0][i] + down_left[i + 1][j] + down_right[i + 1][j + 1],
+                    up_left[i][j] + down_left[i + 1][j] + vertical[j + 1][size(grid[0]) - 1],
+                    vertical[0][j] + up_right[i][j + 1] + down_right[i + 1][j + 1]
+                });
+            }
+        }
         for (int i = 0; i < size(grid); ++i) {
             for (int j = i + 1; j + 1 < size(grid); ++j) {
                 result = min(result, horizon[0][i] + horizon[i + 1][j] + horizon[j + 1][size(grid) - 1]);
@@ -110,16 +120,6 @@ public:
                 result = min(result, vertical[0][i] + vertical[i + 1][j] + vertical[j + 1][size(grid[0]) - 1]);
             }
         }
-        for (int i = 0; i + 1 < size(grid); ++i) {
-            for (int j = 0; j + 1 < size(grid[0]); ++j) {
-                result = min({result,
-                    up_left[i][j] + up_right[i][j + 1] + horizon[i + 1][size(grid) - 1],
-                    horizon[0][i] + down_left[i + 1][j] + down_right[i + 1][j + 1],
-                    up_left[i][j] + down_left[i + 1][j] + vertical[j + 1][size(grid[0]) - 1],
-                    vertical[0][j] + up_right[i][j + 1] + down_right[i + 1][j + 1]
-                });
-            }
-        }                  
         return result;
     }
 };
