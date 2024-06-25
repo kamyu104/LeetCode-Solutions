@@ -35,70 +35,55 @@ public:
             return dp;
         };
         
-        const auto& count2 = [&]() {
-            vector<int> left(size(grid), size(grid[0]));
-            vector<int> right(size(grid), -1);
-            const auto& horizon = [&]() {
-                vector<vector<int>> dp(size(grid), vector<int>(size(grid)));
-                for (int i = 0; i < size(grid); ++i) {
-                    int l = size(grid[0]);
-                    int r = -1;
-                    int u = size(grid);
-                    int d = -1;
-                    for (int j = i; j < size(grid); ++j) {
-                        if (right[j] != -1) {
-                            l = min(l, left[j]);
-                            r = max(r, right[j]);
-                            u = min(u, j);
-                            d = max(d, j);
-                        }
-                        dp[i][j] = r >= 0 ? (r - l + 1) * (d - u + 1) : 0;
-                    }
-                }
-                return dp;
-            };
- 
-            vector<int> up(size(grid[0]), size(grid));
-            vector<int> down(size(grid[0]), -1);
-            const auto& vertical = [&]() {
-                vector<vector<int>> dp(size(grid[0]), vector<int>(size(grid[0])));
-                for (int i = 0; i < size(grid[0]); ++i) {
-                    int l = size(grid[0]);
-                    int r = -1;
-                    int u = size(grid);
-                    int d = -1;
-                    for (int j = i; j < size(grid[0]); ++j) {
-                        if (down[j] != -1) {
-                            l = min(l, j);
-                            r = max(r, j);
-                            u = min(u, up[j]);
-                            d = max(d, down[j]);
-                        }
-                        dp[i][j] = r >= 0 ? (r - l + 1) * (d - u + 1) : 0;
-                    }
-                }
-                return dp;
+        const auto& count2 = [&](bool is_vertical) {
+            const auto& get_n = [&]() {
+                return !is_vertical ? size(grid) : size(grid[0]);
             };
 
-            for (int i = 0; i < size(grid); ++i) {
-                for (int j = 0; j < size(grid[0]); ++j) {
-                    if (grid[i][j] == 0) {
+            const auto& get_m = [&]() {
+                return !is_vertical ? size(grid[0]) : size(grid);
+            };
+
+            const auto& get = [&](int i, int j) {
+                return !is_vertical ? grid[i][j] : grid[j][i];
+            };
+
+            vector<int> left(get_n(), get_m());
+            vector<int> right(get_n(), -1);
+            for (int i = 0; i < get_n(); ++i) {
+                for (int j = 0; j < get_m(); ++j) {
+                    if (get(i, j) == 0) {
                         continue;
                     }
                     left[i] = min(left[i], j);
                     right[i] = max(right[i], j);
-                    up[j] = min(up[j], i);
-                    down[j] = max(down[j], i);
                 }
             }
-            return pair(horizon(), vertical());
+            vector<vector<int>> dp(get_n(), vector<int>(get_n()));
+            for (int i = 0; i < size(dp); ++i) {
+                int l = get_m();
+                int r = -1;
+                int u = get_n();
+                int d = -1;
+                for (int j = i; j < size(dp[0]); ++j) {
+                    if (right[j] != -1) {
+                        l = min(l, left[j]);
+                        r = max(r, right[j]);
+                        u = min(u, j);
+                        d = max(d, j);
+                    }
+                    dp[i][j] = r >= 0 ? (r - l + 1) * (d - u + 1) : 0;
+                }
+            }
+            return dp;
         };
 
         const auto& up_left = count(0, size(grid), 0, size(grid[0]));
         const auto& up_right = count(0, size(grid), size(grid[0]) - 1, -1);
         const auto& down_left = count(size(grid) - 1, -1, 0, size(grid[0]));
         const auto& down_right = count(size(grid) - 1, -1, size(grid[0]) - 1, -1);
-        const auto& [horizon, vertical] = count2();
+        const auto& horizon = count2(false);
+        const auto& vertical = count2(true);
         int result = numeric_limits<int>::max();
         for (int i = 0; i + 1 < size(grid); ++i) {
             for (int j = 0; j + 1 < size(grid[0]); ++j) {
