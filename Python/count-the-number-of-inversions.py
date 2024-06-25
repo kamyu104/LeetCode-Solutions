@@ -88,3 +88,40 @@ class Solution3(object):
                 new_dp[j] = curr if lookup[i] == -1 or lookup[i] == j else 0
             dp = new_dp
         return dp[-1]
+
+
+class Solution_Debug(object):
+    def numberOfPermutations(self, n, requirements):
+        """
+        :type n: int
+        :type requirements: List[List[int]]
+        :rtype: int
+        """
+        MOD = 10**9+7
+        lookup = [-1]*n
+        for i, c in requirements:
+            lookup[i] = c
+        dp = [[] for _ in xrange(lookup[-1]+1)]
+        dp[0] = [[]]
+        for i in xrange(n):
+            new_dp = [[] for _ in xrange(len(dp))]
+            for j in xrange(len(dp)):
+                for k in xrange(min(i+1, j+1)):
+                    for p in dp[j-k]:
+                        # p = [0, 2, 1], i = 3
+                        # k = 0, [0, 2, 1]+[3]
+                        # k = 1, [0, 3, 1]+[2]
+                        # k = 2, [0, 3, 2]+[1]
+                        # k = 3, [1, 3, 2]+[0]
+                        new_dp[j].append([x+int(x >= i-k) for x in p]+[i-k])
+                if lookup[i] != -1 and lookup[i] != j:
+                    new_dp[j][:] = []
+            dp = new_dp
+        for p in dp[-1]:
+            curr = 0
+            for i in xrange(n):
+                for j in xrange(i):
+                    curr += int(p[j] > p[i])
+                if lookup[i] != -1:
+                    assert(lookup[i] == curr)
+        return len(dp[-1])%MOD
