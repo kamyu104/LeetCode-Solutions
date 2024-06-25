@@ -90,7 +90,7 @@ class Solution3(object):
         return dp[-1]
 
 
-class Solution_Debug(object):
+class Solution_ConstructPermutation(object):
     def numberOfPermutations(self, n, requirements):
         """
         :type n: int
