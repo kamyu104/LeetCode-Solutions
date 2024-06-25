@@ -110,11 +110,6 @@ class Solution_ConstructPermutation(object):
             for j in xrange(len(dp)):
                 for k in xrange(min(i+1, j+1)):
                     for p in dp[j-k]:
-                        # p = [0, 2, 1], i = 3
-                        # k = 0, [0, 2, 1]+[3]
-                        # k = 1, [0, 3, 1]+[2]
-                        # k = 2, [0, 3, 2]+[1]
-                        # k = 3, [1, 3, 2]+[0]
                         new_dp[j].append([x+int(x >= i-k) for x in p]+[i-k])
             dp = new_dp
         for p in dp[-1]:
