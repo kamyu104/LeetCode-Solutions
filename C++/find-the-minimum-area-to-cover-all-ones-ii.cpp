@@ -132,9 +132,6 @@ public:
     int minimumSum(vector<vector<int>>& grid) {
         vector<SparseTable> st_min_i, st_max_i, st_min_j, st_max_j;
         const auto& minimumArea = [&](int min_i, int max_i, int min_j, int max_j) {
-            if (!(min_i <= max_i && min_j <= max_j)) {
-                return 0;
-            }
             const int min_r = min(st_min_i[(size(grid) - 1) - min_i].query(min_j, max_j), max_i + 1);
             const int max_r = max(st_max_i[max_i].query(min_j, max_j), min_i - 1);
             const int min_c = min(st_min_j[(size(grid[0]) - 1) - min_j].query(min_i, max_i), max_j + 1);
@@ -180,41 +177,51 @@ public:
             st_max_j.emplace_back(SparseTable(curr, [&](int i, int j) { return max(i, j); }));
         }
         int result = numeric_limits<int>::max();
-        for (int i = 0; i < size(grid); ++i) {
-            int a = minimumArea(0, i, 0, size(grid[0]) - 1);
-            for (int j = 0; j < size(grid[0]); ++j) {
-                const int b = minimumArea(i + 1, size(grid) - 1, 0, j);
-                const int c = minimumArea(i + 1, size(grid) - 1, j + 1, size(grid[0]) - 1);
-                result = min(result, a + b + c);
-            }
-            for (int j = i + 1; j < size(grid); ++j) {
-                const int b = minimumArea(i + 1, j, 0, size(grid[0]) - 1);
-                const int c = minimumArea(j + 1, size(grid) - 1, 0, size(grid[0]) - 1);
-                result = min(result, a + b + c);
-            }
-            a = minimumArea(i + 1, size(grid) - 1, 0, size(grid[0]) - 1);
-            for (int j = 0; j < size(grid[0]); ++j) {
+        for (int i = 0; i + 1 < size(grid); ++i) {
+            int a = minimumArea(i + 1, size(grid) - 1, 0, size(grid[0]) - 1);
+            for (int j = 0; j + 1 < size(grid[0]); ++j) {
                 const int b = minimumArea(0, i, 0, j);
                 const int c = minimumArea(0, i, j + 1, size(grid[0]) - 1);
                 result = min(result, a + b + c);
             }
         }
-        for (int j = 0; j < size(grid[0]); ++j) {
+        for (int i = 0; i + 1 < size(grid); ++i) {
+            int a = minimumArea(0, i, 0, size(grid[0]) - 1);
+            for (int j = 0; j + 1 < size(grid[0]); ++j) {
+                const int b = minimumArea(i + 1, size(grid) - 1, 0, j);
+                const int c = minimumArea(i + 1, size(grid) - 1, j + 1, size(grid[0]) - 1);
+                result = min(result, a + b + c);
+            }
+        }
+        for (int j = 0; j + 1 < size(grid[0]); ++j) {
+            int a = minimumArea(0, size(grid) - 1, j + 1, size(grid[0]) - 1);
+            for (int i = 0; i + 1 < size(grid); ++i) {
+                const int b = minimumArea(0, i, 0, j);
+                const int c = minimumArea(i + 1, size(grid) - 1, 0, j);
+                result = min(result, a + b + c);
+            }
+        }
+        for (int j = 0; j + 1 < size(grid[0]); ++j) {
             int a = minimumArea(0, size(grid) - 1, 0, j);
-            for (int i = 0; i < size(grid); ++i) {
+            for (int i = 0; i + 1 < size(grid); ++i) {
                 const int b = minimumArea(0, i, j + 1, size(grid[0]) - 1);
                 const int c = minimumArea(i + 1, size(grid) - 1, j + 1, size(grid[0]) - 1);
                 result = min(result, a + b + c);
             }
-            for (int i = j + 1; i < size(grid[0]); ++i) {
-                const int b = minimumArea(0, size(grid) - 1, j + 1, i);
-                const int c = minimumArea(0, size(grid) - 1, i + 1, size(grid[0]) - 1);
+        }
+        for (int i = 0; i + 2 < size(grid); ++i) {
+            int a = minimumArea(0, i, 0, size(grid[0]) - 1);
+            for (int j = i + 1; j + 1 < size(grid); ++j) {
+                const int b = minimumArea(i + 1, j, 0, size(grid[0]) - 1);
+                const int c = minimumArea(j + 1, size(grid) - 1, 0, size(grid[0]) - 1);
                 result = min(result, a + b + c);
             }
-            a = minimumArea(0, size(grid) - 1, j + 1, size(grid[0]) - 1);
-            for (int i = 0; i < size(grid); ++i) {
-                const int b = minimumArea(0, i, 0, j);
-                const int c = minimumArea(i + 1, size(grid) - 1, 0, j);
+        }
+        for (int i = 0; i + 2 < size(grid[0]); ++i) {
+            int a = minimumArea(0, size(grid) - 1, 0, i);
+            for (int j = i + 1; j + 1 < size(grid[0]); ++j) {
+                const int b = minimumArea(0, size(grid) - 1, i + 1, j);
+                const int c = minimumArea(0, size(grid) - 1, j + 1, size(grid[0]) - 1);
                 result = min(result, a + b + c);
             }
         }
@@ -267,9 +274,6 @@ public:
 
         vector<SparseTable> st_min_i, st_max_i, st_min_j, st_max_j;
         const auto& minimumArea = [&](int min_i, int max_i, int min_j, int max_j) {
-            if (!(min_i <= max_i && min_j <= max_j)) {
-                return 0;
-            }
             const int min_r = min(st_min_i[(size(grid) - 1) - min_i].query(min_j, max_j), max_i + 1);
             const int max_r = max(st_max_i[max_i].query(min_j, max_j), min_i - 1);
             const int min_c = min(st_min_j[(size(grid[0]) - 1) - min_j].query(min_i, max_i), max_j + 1);
@@ -320,14 +324,17 @@ public:
                 }
                 st_max_j.emplace_back(SparseTable(curr, [&](int i, int j) { return max(i, j); }));
             }
-            for (int i = 0; i < size(grid); ++i) {
+            for (int i = 0; i + 1 < size(grid); ++i) {
                 const int a = minimumArea(0, i, 0, size(grid[0]) - 1);
-                for (int j = 0; j < size(grid[0]); ++j) {
+                for (int j = 0; j + 1 < size(grid[0]); ++j) {
                     const int b = minimumArea(i + 1, size(grid) - 1, 0, j);
                     const int c = minimumArea(i + 1, size(grid) - 1, j + 1, size(grid[0]) - 1);
                     result = min(result, a + b + c);
                 }
-                for (int j = i + 1; j < size(grid); ++j) {
+            }
+            for (int i = 0; i + 2 < size(grid); ++i) {
+                const int a = minimumArea(0, i, 0, size(grid[0]) - 1);
+                for (int j = i + 1; j + 1 < size(grid); ++j) {
                     const int b = minimumArea(i + 1, j, 0, size(grid[0]) - 1);
                     const int c = minimumArea(j + 1, size(grid) - 1, 0, size(grid[0]) - 1);
                     result = min(result, a + b + c);
@@ -411,9 +418,6 @@ public:
                 return cnt;
             };
 
-            if (!(min_i <= max_i && min_j <= max_j)) {
-                return 0;
-            }
             const int min_r = binary_search(min_i, max_i, [&](int i) { return count(min_i, min_j, i, max_j); });
             const int max_r = binary_search_right(min_i, max_i, [&](int i) { return count(i, min_j, max_i, max_j); });
             const int min_c = binary_search(min_j, max_j, [&](int j) { return count(min_i, min_j, max_i, j); });
@@ -435,41 +439,51 @@ public:
             }
         }
         int result = numeric_limits<int>::max();
-        for (int i = 0; i < size(grid); ++i) {
-            int a = minimumArea(0, i, 0, size(grid[0]) - 1);
-            for (int j = 0; j < size(grid[0]); ++j) {
-                const int b = minimumArea(i + 1, size(grid) - 1, 0, j);
-                const int c = minimumArea(i + 1, size(grid) - 1, j + 1, size(grid[0]) - 1);
-                result = min(result, a + b + c);
-            }
-            for (int j = i + 1; j < size(grid); ++j) {
-                const int b = minimumArea(i + 1, j, 0, size(grid[0]) - 1);
-                const int c = minimumArea(j + 1, size(grid) - 1, 0, size(grid[0]) - 1);
-                result = min(result, a + b + c);
-            }
-            a = minimumArea(i + 1, size(grid) - 1, 0, size(grid[0]) - 1);
-            for (int j = 0; j < size(grid[0]); ++j) {
+        for (int i = 0; i + 1 < size(grid); ++i) {
+            int a = minimumArea(i + 1, size(grid) - 1, 0, size(grid[0]) - 1);
+            for (int j = 0; j + 1 < size(grid[0]); ++j) {
                 const int b = minimumArea(0, i, 0, j);
                 const int c = minimumArea(0, i, j + 1, size(grid[0]) - 1);
                 result = min(result, a + b + c);
             }
         }
-        for (int j = 0; j < size(grid[0]); ++j) {
+        for (int i = 0; i + 1 < size(grid); ++i) {
+            int a = minimumArea(0, i, 0, size(grid[0]) - 1);
+            for (int j = 0; j + 1 < size(grid[0]); ++j) {
+                const int b = minimumArea(i + 1, size(grid) - 1, 0, j);
+                const int c = minimumArea(i + 1, size(grid) - 1, j + 1, size(grid[0]) - 1);
+                result = min(result, a + b + c);
+            }
+        }
+        for (int j = 0; j + 1 < size(grid[0]); ++j) {
+            int a = minimumArea(0, size(grid) - 1, j + 1, size(grid[0]) - 1);
+            for (int i = 0; i + 1 < size(grid); ++i) {
+                const int b = minimumArea(0, i, 0, j);
+                const int c = minimumArea(i + 1, size(grid) - 1, 0, j);
+                result = min(result, a + b + c);
+            }
+        }
+        for (int j = 0; j + 1 < size(grid[0]); ++j) {
             int a = minimumArea(0, size(grid) - 1, 0, j);
-            for (int i = 0; i < size(grid); ++i) {
+            for (int i = 0; i + 1 < size(grid); ++i) {
                 const int b = minimumArea(0, i, j + 1, size(grid[0]) - 1);
                 const int c = minimumArea(i + 1, size(grid) - 1, j + 1, size(grid[0]) - 1);
                 result = min(result, a + b + c);
             }
-            for (int i = j + 1; i < size(grid[0]); ++i) {
-                const int b = minimumArea(0, size(grid) - 1, j + 1, i);
-                const int c = minimumArea(0, size(grid) - 1, i + 1, size(grid[0]) - 1);
+        }
+        for (int i = 0; i + 2 < size(grid); ++i) {
+            int a = minimumArea(0, i, 0, size(grid[0]) - 1);
+            for (int j = i + 1; j + 1 < size(grid); ++j) {
+                const int b = minimumArea(i + 1, j, 0, size(grid[0]) - 1);
+                const int c = minimumArea(j + 1, size(grid) - 1, 0, size(grid[0]) - 1);
                 result = min(result, a + b + c);
             }
-            a = minimumArea(0, size(grid) - 1, j + 1, size(grid[0]) - 1);
-            for (int i = 0; i < size(grid); ++i) {
-                const int b = minimumArea(0, i, 0, j);
-                const int c = minimumArea(i + 1, size(grid) - 1, 0, j);
+        }
+        for (int i = 0; i + 2 < size(grid[0]); ++i) {
+            int a = minimumArea(0, size(grid) - 1, 0, i);
+            for (int j = i + 1; j + 1 < size(grid[0]); ++j) {
+                const int b = minimumArea(0, size(grid) - 1, i + 1, j);
+                const int c = minimumArea(0, size(grid) - 1, j + 1, size(grid[0]) - 1);
                 result = min(result, a + b + c);
             }
         }
@@ -533,9 +547,6 @@ public:
                 return cnt;
             };
 
-            if (!(min_i <= max_i && min_j <= max_j)) {
-                return 0;
-            }
             const int min_r = binary_search(min_i, max_i, [&](int i) { return count(min_i, min_j, i, max_j); });
             const int max_r = binary_search_right(min_i, max_i, [&](int i) { return count(i, min_j, max_i, max_j); });
             const int min_c = binary_search(min_j, max_j, [&](int j) { return count(min_i, min_j, max_i, j); });
@@ -560,14 +571,17 @@ public:
                     }
                 }
             }
-            for (int i = 0; i < size(grid); ++i) {
+             for (int i = 0; i + 1 < size(grid); ++i) {
                 const int a = minimumArea(0, i, 0, size(grid[0]) - 1);
-                for (int j = 0; j < size(grid[0]); ++j) {
+                for (int j = 0; j + 1 < size(grid[0]); ++j) {
                     const int b = minimumArea(i + 1, size(grid) - 1, 0, j);
                     const int c = minimumArea(i + 1, size(grid) - 1, j + 1, size(grid[0]) - 1);
                     result = min(result, a + b + c);
                 }
-                for (int j = i + 1; j < size(grid); ++j) {
+            }
+            for (int i = 0; i + 2 < size(grid); ++i) {
+                const int a = minimumArea(0, i, 0, size(grid[0]) - 1);
+                for (int j = i + 1; j + 1 < size(grid); ++j) {
                     const int b = minimumArea(i + 1, j, 0, size(grid[0]) - 1);
                     const int c = minimumArea(j + 1, size(grid) - 1, 0, size(grid[0]) - 1);
                     result = min(result, a + b + c);
@@ -586,9 +600,6 @@ class Solution6 {
 public:
     int minimumSum(vector<vector<int>>& grid) {
         const auto& minimumArea = [&](int min_i, int max_i, int min_j, int max_j) {
-            if (!(min_i <= max_i && min_j <= max_j)) {
-                return 0;
-            }
             int min_r = max_i + 1;
             int max_r = min_i - 1;
             int min_c = max_j + 1;
@@ -608,41 +619,51 @@ public:
         };
 
         int result = numeric_limits<int>::max();
-        for (int i = 0; i < size(grid); ++i) {
-            int a = minimumArea(0, i, 0, size(grid[0]) - 1);
-            for (int j = 0; j < size(grid[0]); ++j) {
-                const int b = minimumArea(i + 1, size(grid) - 1, 0, j);
-                const int c = minimumArea(i + 1, size(grid) - 1, j + 1, size(grid[0]) - 1);
-                result = min(result, a + b + c);
-            }
-            for (int j = i + 1; j < size(grid); ++j) {
-                const int b = minimumArea(i + 1, j, 0, size(grid[0]) - 1);
-                const int c = minimumArea(j + 1, size(grid) - 1, 0, size(grid[0]) - 1);
-                result = min(result, a + b + c);
-            }
-            a = minimumArea(i + 1, size(grid) - 1, 0, size(grid[0]) - 1);
-            for (int j = 0; j < size(grid[0]); ++j) {
+        for (int i = 0; i + 1 < size(grid); ++i) {
+            int a = minimumArea(i + 1, size(grid) - 1, 0, size(grid[0]) - 1);
+            for (int j = 0; j + 1 < size(grid[0]); ++j) {
                 const int b = minimumArea(0, i, 0, j);
                 const int c = minimumArea(0, i, j + 1, size(grid[0]) - 1);
                 result = min(result, a + b + c);
             }
         }
-        for (int j = 0; j < size(grid[0]); ++j) {
+        for (int i = 0; i + 1 < size(grid); ++i) {
+            int a = minimumArea(0, i, 0, size(grid[0]) - 1);
+            for (int j = 0; j + 1 < size(grid[0]); ++j) {
+                const int b = minimumArea(i + 1, size(grid) - 1, 0, j);
+                const int c = minimumArea(i + 1, size(grid) - 1, j + 1, size(grid[0]) - 1);
+                result = min(result, a + b + c);
+            }
+        }
+        for (int j = 0; j + 1 < size(grid[0]); ++j) {
+            int a = minimumArea(0, size(grid) - 1, j + 1, size(grid[0]) - 1);
+            for (int i = 0; i + 1 < size(grid); ++i) {
+                const int b = minimumArea(0, i, 0, j);
+                const int c = minimumArea(i + 1, size(grid) - 1, 0, j);
+                result = min(result, a + b + c);
+            }
+        }
+        for (int j = 0; j + 1 < size(grid[0]); ++j) {
             int a = minimumArea(0, size(grid) - 1, 0, j);
-            for (int i = 0; i < size(grid); ++i) {
+            for (int i = 0; i + 1 < size(grid); ++i) {
                 const int b = minimumArea(0, i, j + 1, size(grid[0]) - 1);
                 const int c = minimumArea(i + 1, size(grid) - 1, j + 1, size(grid[0]) - 1);
                 result = min(result, a + b + c);
             }
-            for (int i = j + 1; i < size(grid[0]); ++i) {
-                const int b = minimumArea(0, size(grid) - 1, j + 1, i);
-                const int c = minimumArea(0, size(grid) - 1, i + 1, size(grid[0]) - 1);
+        }
+        for (int i = 0; i + 2 < size(grid); ++i) {
+            int a = minimumArea(0, i, 0, size(grid[0]) - 1);
+            for (int j = i + 1; j + 1 < size(grid); ++j) {
+                const int b = minimumArea(i + 1, j, 0, size(grid[0]) - 1);
+                const int c = minimumArea(j + 1, size(grid) - 1, 0, size(grid[0]) - 1);
                 result = min(result, a + b + c);
             }
-            a = minimumArea(0, size(grid) - 1, j + 1, size(grid[0]) - 1);
-            for (int i = 0; i < size(grid); ++i) {
-                const int b = minimumArea(0, i, 0, j);
-                const int c = minimumArea(i + 1, size(grid) - 1, 0, j);
+        }
+        for (int i = 0; i + 2 < size(grid[0]); ++i) {
+            int a = minimumArea(0, size(grid) - 1, 0, i);
+            for (int j = i + 1; j + 1 < size(grid[0]); ++j) {
+                const int b = minimumArea(0, size(grid) - 1, i + 1, j);
+                const int c = minimumArea(0, size(grid) - 1, j + 1, size(grid[0]) - 1);
                 result = min(result, a + b + c);
             }
         }
@@ -667,9 +688,6 @@ public:
         };
     
         const auto& minimumArea = [&](int min_i, int max_i, int min_j, int max_j) {
-            if (!(min_i <= max_i && min_j <= max_j)) {
-                return 0;
-            }
             int min_r = max_i + 1;
             int max_r = min_i - 1;
             int min_c = max_j + 1;
@@ -690,14 +708,17 @@ public:
 
         int result = numeric_limits<int>::max();
         for (int _ = 0; _ < 4; ++_) {
-            for (int i = 0; i < size(grid); ++i) {
+             for (int i = 0; i + 1 < size(grid); ++i) {
                 const int a = minimumArea(0, i, 0, size(grid[0]) - 1);
-                for (int j = 0; j < size(grid[0]); ++j) {
+                for (int j = 0; j + 1 < size(grid[0]); ++j) {
                     const int b = minimumArea(i + 1, size(grid) - 1, 0, j);
                     const int c = minimumArea(i + 1, size(grid) - 1, j + 1, size(grid[0]) - 1);
                     result = min(result, a + b + c);
                 }
-                for (int j = i + 1; j < size(grid); ++j) {
+            }
+            for (int i = 0; i + 2 < size(grid); ++i) {
+                const int a = minimumArea(0, i, 0, size(grid[0]) - 1);
+                for (int j = i + 1; j + 1 < size(grid); ++j) {
                     const int b = minimumArea(i + 1, j, 0, size(grid[0]) - 1);
                     const int c = minimumArea(j + 1, size(grid) - 1, 0, size(grid[0]) - 1);
                     result = min(result, a + b + c);
