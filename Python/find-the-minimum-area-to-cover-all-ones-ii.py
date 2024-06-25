@@ -80,10 +80,10 @@ class Solution(object):
                              horizon[0][i]+down_left[i+1][j]+down_right[i+1][j+1],
                              up_left[i][j]+down_left[i+1][j]+vertical[j+1][len(grid[0])-1],
                              vertical[0][j]+up_right[i][j+1]+down_right[i+1][j+1])
-        for i in xrange(len(grid)):
+        for i in xrange(len(grid)-2):
             for j in xrange(i+1, len(grid)-1):
                 result = min(result, horizon[0][i]+horizon[i+1][j]+horizon[j+1][len(grid)-1])
-        for i in xrange(len(grid[0])):
+        for i in xrange(len(grid[0])-2):
             for j in xrange(i+1, len(grid[0])-1):
                 result = min(result, vertical[0][i]+vertical[i+1][j]+vertical[j+1][len(grid[0])-1])
         return result
