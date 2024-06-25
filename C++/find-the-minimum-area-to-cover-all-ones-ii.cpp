@@ -136,7 +136,7 @@ public:
             const int max_r = max(st_max_i[max_i].query(min_j, max_j), min_i - 1);
             const int min_c = min(st_min_j[(size(grid[0]) - 1) - min_j].query(min_i, max_i), max_j + 1);
             const int max_c = max(st_max_j[max_j].query(min_i, max_i), min_j - 1);
-            return (max_r - min_r + 1) * (max_c-min_c + 1);
+            return min_r <= max_i ? (max_r - min_r + 1) * (max_c - min_c + 1) : 0;
         };
 
         vector<int> curr;
@@ -278,7 +278,7 @@ public:
             const int max_r = max(st_max_i[max_i].query(min_j, max_j), min_i - 1);
             const int min_c = min(st_min_j[(size(grid[0]) - 1) - min_j].query(min_i, max_i), max_j + 1);
             const int max_c = max(st_max_j[max_j].query(min_i, max_i), min_j - 1);
-            return (max_r - min_r + 1) * (max_c-min_c + 1);
+            return min_r <= max_i ? (max_r - min_r + 1) * (max_c - min_c + 1) : 0;
         };
     
         vector<int> curr;
@@ -422,7 +422,7 @@ public:
             const int max_r = binary_search_right(min_i, max_i, [&](int i) { return count(i, min_j, max_i, max_j); });
             const int min_c = binary_search(min_j, max_j, [&](int j) { return count(min_i, min_j, max_i, j); });
             const int max_c = binary_search_right(min_j, max_j, [&](int j) { return count(min_i, j, max_i, max_j); });
-            return (max_r - min_r + 1) * (max_c-min_c + 1);
+            return min_r <= max_i ? (max_r - min_r + 1) * (max_c - min_c + 1) : 0;
         };
 
         for (int i = 0; i < size(grid); ++i) {
@@ -551,7 +551,7 @@ public:
             const int max_r = binary_search_right(min_i, max_i, [&](int i) { return count(i, min_j, max_i, max_j); });
             const int min_c = binary_search(min_j, max_j, [&](int j) { return count(min_i, min_j, max_i, j); });
             const int max_c = binary_search_right(min_j, max_j, [&](int j) { return count(min_i, j, max_i, max_j); });
-            return (max_r - min_r + 1) * (max_c-min_c + 1);
+            return min_r <= max_i ? (max_r - min_r + 1) * (max_c - min_c + 1) : 0;
         };
 
         int result = numeric_limits<int>::max();
@@ -615,7 +615,7 @@ public:
                     max_c = max(max_c, j);
                 }
             }
-            return (max_r - min_r + 1) * (max_c - min_c + 1);
+            return min_r <= max_i ? (max_r - min_r + 1) * (max_c - min_c + 1) : 0;
         };
 
         int result = numeric_limits<int>::max();
@@ -703,7 +703,7 @@ public:
                     max_c = max(max_c, j);
                 }
             }
-            return (max_r - min_r + 1) * (max_c - min_c + 1);
+            return min_r <= max_i ? (max_r - min_r + 1) * (max_c - min_c + 1) : 0;
         };
 
         int result = numeric_limits<int>::max();
