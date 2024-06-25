@@ -93,7 +93,7 @@ class Solution3(object):
 # Time:  O(n^2 * k), k = max(cnt for _, cnt in requirements)
 # Space: O(n + k)
 # knapsack dp, combinatorics
-class Solution(object):
+class Solution4(object):
     def numberOfPermutations(self, n, requirements):
         """
         :type n: int
