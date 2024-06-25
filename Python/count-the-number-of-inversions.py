@@ -107,7 +107,7 @@ class Solution4(object):
         dp = [0]*(lookup[-1]+1)
         dp[0] = 1
         for i in xrange(n):
-            new_dp = [0 ]*len(dp)
+            new_dp = [0]*len(dp)
             for j in xrange(len(dp)):
                 for k in xrange(min(i+1, j+1)):
                     new_dp[j] = (new_dp[j]+dp[j-k])%MOD
