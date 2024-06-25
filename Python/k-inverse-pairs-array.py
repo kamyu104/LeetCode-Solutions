@@ -87,11 +87,7 @@ class Solution_TLE(object):
         dp = [0]*(k+1)
         dp[0] = 1
         for i in xrange(n):
-            new_dp = [0]*len(dp)
-            for j in xrange(len(dp)):
-                for k in xrange(min(i+1, j+1)):
-                    new_dp[j] = (new_dp[j]+dp[j-k])%MOD
-            dp = new_dp
+            dp = [reduce(lambda total, k: (total+dp[j-k])%MOD, xrange(min(i+1, j+1)), 0) for j in xrange(len(dp))]
         return dp[-1]%MOD
 
 
