@@ -112,6 +112,5 @@ class Solution_ConstructPermutation(object):
                     for p in dp[j-k]:
                         new_dp[j].append([x+int(x >= i-k) for x in p]+[i-k])
             dp = new_dp
-        for p in dp[-1]:
-            assert(sum(int(p[j] > p[i]) for i in xrange(n) for j in xrange(i)) == len(dp)-1)
+        assert(all(sum(int(p[j] > p[i]) for i in xrange(n) for j in xrange(i)) == len(dp)-1) for p in dp[-1])
         return len(dp[-1])%MOD
