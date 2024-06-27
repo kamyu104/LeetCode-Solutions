@@ -1,4 +1,4 @@
-# Time: O(nlogr), r = max(max(a), max(b), max(c))
+# Time:  O(nlogr), r = max(max(a), max(b), max(c))
 # Space: O(1)
 
 # bit manipulation, parity
@@ -21,7 +21,7 @@ class Solution(object):
         return sum(cnt[0][1^int(i == 0 or i == 1)]*cnt[1][1^int(i == 0 or i == 2)]*cnt[2][1^int(i == 0 or i == 3)] for i in xrange(4))
     
 
-# Time: O(nlogr), r = max(max(a), max(b), max(c))
+# Time:  O(nlogr), r = max(max(a), max(b), max(c))
 # Space: O(1)
 # bit manipulation, parity
 class Solution2(object):
@@ -45,7 +45,7 @@ class Solution2(object):
         return even1*even2*even3 + even1*odd2*odd3 + odd1*even2*odd3 + odd1*odd2*even3
 
 
-# Time: O(n^3 * logr), r = max(max(a), max(b), max(c))
+# Time:  O(n^3 * logr), r = max(max(a), max(b), max(c))
 # Space: O(1)
 # brute force, bit manipulation
 class Solution3(object):
