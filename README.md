@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3197%20%2F%203197-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3199%20%2F%203199-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -90,6 +90,7 @@
 3094 | [Guess the Number Using Bitwise Questions II](https://leetcode.com/problems/guess-the-number-using-bitwise-questions-ii/) | [C++](./C++/guess-the-number-using-bitwise-questions-ii.cpp) [Python](./Python/guess-the-number-using-bitwise-questions-ii.py) | _O(logr)_ | _O(1)_ | Medium |🔒| Bit Manipulation
 3125 | [Maximum Number That Makes Result of Bitwise AND Zero](https://leetcode.com/problems/maximum-number-that-makes-result-of-bitwise-and-zero/) | [C++](./C++/maximum-number-that-makes-result-of-bitwise-and-zero.cpp) [Python](./Python/maximum-number-that-makes-result-of-bitwise-and-zero.py) | _O(1)_ | _O(1)_ | Medium |🔒| Bit Manipulation
 3133 | [Minimum Array End](https://leetcode.com/problems/minimum-array-end/) | [C++](./C++/minimum-array-end.cpp) [Python](./Python/minimum-array-end.py) | _O(logn)_ | _O(1)_ | Medium | | Bit Manipulation
+3199 | [Count Triplets with Even XOR Set Bits I](https://leetcode.com/problems/count-triplets-with-even-xor-set-bits-i/) | [C++](./C++/count-triplets-with-even-xor-set-bits-i.cpp) [Python](./Python/count-triplets-with-even-xor-set-bits-i.py) | _O(nlogr)_ | _O(1)_ | Easy | 🔒 | Brute Force, Bit Manipulation, Parity
 
 <br/>
 <div align="right">
@@ -1513,6 +1514,7 @@
 3172 | [Second Day Verification](https://leetcode.com/problems/second-day-verification/) | [MySQL](./MySQL/second-day-verification.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒|  |
 3182 | [Find Top Scoring Students](https://leetcode.com/problems/find-top-scoring-students/) | [MySQL](./MySQL/find-top-scoring-students.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
 3188 | [Find Top Scoring Students II](https://leetcode.com/problems/find-top-scoring-students-ii/) | [MySQL](./MySQL/find-top-scoring-students-ii.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒|  |
+3198 | [Find Cities in Each State](https://leetcode.com/problems/find-cities-in-each-state/) | [MySQL](./MySQL/find-cities-in-each-state.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒|  |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
