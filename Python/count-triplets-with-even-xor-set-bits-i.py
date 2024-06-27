@@ -18,7 +18,7 @@ class Solution(object):
             return [len(a)-odd, odd]
         
         cnt = map(count, (a, b, c))
-        return sum(cnt[0][1^int(i == 0 or i == 1)]*cnt[1][1^int(i == 0 or i == 2)]*cnt[2][1^int(i == 0 or i == 3)] for i in xrange(4))
+        return sum(cnt[0][0 if i == 0 or i == 1 else 1]*cnt[1][0 if i == 0 or i == 2 else 1]*cnt[2][0 if i == 0 or i == 3 else 1] for i in xrange(4))
     
 
 # Time:  O(nlogr), r = max(max(a), max(b), max(c))
