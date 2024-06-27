@@ -1,4 +1,4 @@
-// Time: O(nlogr), r = max(max(a), max(b), max(c))
+// Time:  O(nlogr), r = max(max(a), max(b), max(c))
 // Space: O(1)
 
 // bit manipulation, parity
@@ -23,7 +23,7 @@ public:
     }
 };
 
-// Time: O(nlogr), r = max(max(a), max(b), max(c))
+// Time:  O(nlogr), r = max(max(a), max(b), max(c))
 // Space: O(1)
 // bit manipulation, parity
 class Solution2 {
@@ -43,7 +43,7 @@ public:
     }
 };
 
-// Time: O(n^3 * logr), r = max(max(a), max(b), max(c))
+// Time:  O(n^3 * logr), r = max(max(a), max(b), max(c))
 // Space: O(1)
 // brute force, bit manipulation
 class Solution3 {
