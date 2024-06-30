@@ -636,6 +636,7 @@
 3179 | [Find the N-th Value After K Seconds](https://leetcode.com/problems/find-the-n-th-value-after-k-seconds/) | [C++](./C++/find-the-n-th-value-after-k-seconds.cpp) [Python](./Python/find-the-n-th-value-after-k-seconds.py) | _O(n + k)_ | _O(n + k)_ | Medium | | Prefix Sum, Combinatorics |
 3183 | [The Number of Ways to Make the Sum](https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/) | [C++](./C++/the-number-of-ways-to-make-the-sum.cpp) [Python](./Python/the-number-of-ways-to-make-the-sum.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | Math, DP |
 3190 | [Find Minimum Operations to Make All Elements Divisible by Three](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/) | [C++](./C++/find-minimum-operations-to-make-all-elements-divisible-by-three.cpp) [Python](./Python/find-minimum-operations-to-make-all-elements-divisible-by-three.py) | _O(n)_ | _O(1)_ | Easy | | Math |
+3200 | [Maximum Height of a Triangle](https://leetcode.com/problems/maximum-height-of-a-triangle/) | [C++](./C++/maximum-height-of-a-triangle.cpp) [Python](./Python/maximum-height-of-a-triangle.py) | _O(logn)_ | _O(1)_ | Easy | | Simulation, Math |
 
 <br/>
 <div align="right">
@@ -891,6 +892,7 @@
 2973 | [Find Number of Coins to Place in Tree Nodes](https://leetcode.com/problems/find-number-of-coins-to-place-in-tree-nodes/)| [C++](./C++/find-number-of-coins-to-place-in-tree-nodes.cpp) [Python](./Python/find-number-of-coins-to-place-in-tree-nodes.py)| _O(n)_ | _O(n)_ | Hard | | DFS |
 3004 | [Maximum Subtree of the Same Color](https://leetcode.com/problems/maximum-subtree-of-the-same-color/)| [C++](./C++/maximum-subtree-of-the-same-color.cpp) [Python](./Python/maximum-subtree-of-the-same-color.py)| _O(n)_ | _O(h)_ | Medium | 🔒 | DFS |
 3067 | [Count Pairs of Connectable Servers in a Weighted Tree Network](https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/)| [C++](./C++/count-pairs-of-connectable-servers-in-a-weighted-tree-network.cpp) [Python](./Python/count-pairs-of-connectable-servers-in-a-weighted-tree-network.py)| _O(n^2)_ | _O(n)_ | Medium | | DFS, BFS |
+3203 | [Find Minimum Diameter After Merging Two Trees](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/)| [C++](./C++/find-minimum-diameter-after-merging-two-treescpp) [Python](./Python/find-minimum-diameter-after-merging-two-trees.py)| _O(n + m)_ | _O(n + m)_ | Hard | variant of [Tree Diameter](https://leetcode.com/problems/tree-diameter/) | DFS, BFS, Tree Diameter |
 
 <br/>
 <div align="right">
@@ -1044,6 +1046,8 @@
 3193 | [Count the Number of Inversions](https://leetcode.com/problems/count-the-number-of-inversions/) | [C++](./C++/count-the-number-of-inversions.cpp) [Python](./Python/count-the-number-of-inversions.py) | _O(n * k)_ | _O(n + k)_ | Hard | variant of [K Inverse Pairs Array](https://leetcode.com/problems/k-inverse-pairs-array/) | Knapsack DP, Combinatorics, Sliding Window, Two Pointers
 3196 | [Maximize Total Cost of Alternating Subarrays](https://leetcode.com/problems/maximize-total-cost-of-alternating-subarrays/) | [C++](./C++/maximize-total-cost-of-alternating-subarrays.cpp) [Python](./Python/maximize-total-cost-of-alternating-subarrays.py) | _O(n)_ | _O(1)_ | Medium | | DP
 3197 | [Find the Minimum Area to Cover All Ones II](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/) | [C++](./C++/find-the-minimum-area-to-cover-all-ones-ii.cpp) [Python](./Python/find-the-minimum-area-to-cover-all-ones-ii.py) | _O(max(n, m)^2)_ | _O(max(n, m)^2)_ | Hard | | Array, Brute Force, Prefix Sum, Binary Search, RMQ, Sparse Table, DP
+3201 | [Find the Maximum Length of Valid Subsequence I](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/) | [C++](./C++/find-the-maximum-length-of-valid-subsequence-i.cpp) [Python](./Python/find-the-maximum-length-of-valid-subsequence-i.py) | _O(n)_ | _O(1)_ | Medium | | Brute Force, DP
+3202 | [Find the Maximum Length of Valid Subsequence II](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/) | [C++](./C++/find-the-maximum-length-of-valid-subsequence-ii.cpp) [Python](./Python/find-the-maximum-length-of-valid-subsequence-ii.py) | _O(n * k)_ | _O(k)_ | Medium | | DP
 
 <br/>
 <div align="right">
