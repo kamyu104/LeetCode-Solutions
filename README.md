@@ -892,7 +892,7 @@
 2973 | [Find Number of Coins to Place in Tree Nodes](https://leetcode.com/problems/find-number-of-coins-to-place-in-tree-nodes/)| [C++](./C++/find-number-of-coins-to-place-in-tree-nodes.cpp) [Python](./Python/find-number-of-coins-to-place-in-tree-nodes.py)| _O(n)_ | _O(n)_ | Hard | | DFS |
 3004 | [Maximum Subtree of the Same Color](https://leetcode.com/problems/maximum-subtree-of-the-same-color/)| [C++](./C++/maximum-subtree-of-the-same-color.cpp) [Python](./Python/maximum-subtree-of-the-same-color.py)| _O(n)_ | _O(h)_ | Medium | 🔒 | DFS |
 3067 | [Count Pairs of Connectable Servers in a Weighted Tree Network](https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/)| [C++](./C++/count-pairs-of-connectable-servers-in-a-weighted-tree-network.cpp) [Python](./Python/count-pairs-of-connectable-servers-in-a-weighted-tree-network.py)| _O(n^2)_ | _O(n)_ | Medium | | DFS, BFS |
-3203 | [Find Minimum Diameter After Merging Two Trees](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/)| [C++](./C++/find-minimum-diameter-after-merging-two-treescpp) [Python](./Python/find-minimum-diameter-after-merging-two-trees.py)| _O(n + m)_ | _O(n + m)_ | Hard | variant of [Tree Diameter](https://leetcode.com/problems/tree-diameter/) | DFS, BFS, Tree Diameter |
+3203 | [Find Minimum Diameter After Merging Two Trees](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/)| [C++](./C++/find-minimum-diameter-after-merging-two-trees.cpp) [Python](./Python/find-minimum-diameter-after-merging-two-trees.py)| _O(n + m)_ | _O(n + m)_ | Hard | variant of [Tree Diameter](https://leetcode.com/problems/tree-diameter/) | DFS, BFS, Tree Diameter |
 
 <br/>
 <div align="right">
