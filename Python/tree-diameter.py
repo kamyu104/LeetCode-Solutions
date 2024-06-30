@@ -1,22 +1,97 @@
 # Time:  O(|V| + |E|)
 # Space: O(|E|)
 
-import collections
-
-
+# iterative dfs
 class Solution(object):
     def treeDiameter(self, edges):
         """
         :type edges: List[List[int]]
         :rtype: int
         """
-        graph, length = collections.defaultdict(set), 0
+        def iter_dfs():
+            result = 0
+            stk = [(1, (0, -1, [0]))]
+            while stk:
+                step, args = stk.pop()
+                if step == 1:
+                    u, p, ret = args
+                    for v in reversed(adj[u]):
+                        if v == p:
+                            continue
+                        ret2 = [0]
+                        stk.append((2, (ret2, ret)))
+                        stk.append((1, (v, u, ret2)))
+                elif step == 2:
+                    ret2, ret = args
+                    result = max(result, ret[0]+(ret2[0]+1))
+                    ret[0] = max(ret[0], ret2[0]+1)
+            return result
+        
+        adj = [[] for _ in range(len(edges)+1)]
         for u, v in edges:
-            graph[u].add(v)
-            graph[v].add(u)
-        curr_level = {(None, u) for u, neighbors in graph.iteritems() if len(neighbors) == 1}
-        while curr_level:
-            curr_level = {(u, v) for prev, u in curr_level
-                          for v in graph[u] if v != prev}
-            length += 1
-        return max(length-1, 0)
+            adj[u].append(v)
+            adj[v].append(u)
+        return iter_dfs()
+
+
+# Time:  O(|V| + |E|)
+# Space: O(|E|)
+# dfs
+class Solution2(object):
+    def treeDiameter(self, edges):
+        """
+        :type edges: List[List[int]]
+        :rtype: int
+        """
+        def dfs(u, p):
+            mx = 0
+            for v in adj[u]:
+                if v == p:
+                    continue
+                curr = dfs(v, u)
+                result[0] = max(result[0], mx+(curr+1))
+                mx = max(mx, curr+1)
+            return mx
+            
+        adj = [[] for _ in range(len(edges)+1)]
+        for u, v in edges:
+            adj[u].append(v)
+            adj[v].append(u)
+        result = [0]
+        dfs(0, -1)
+        return result[0]
+
+
+# Time:  O(|V| + |E|)
+# Space: O(|E|)
+# bfs
+class Solution3(object):
+    def treeDiameter(self, edges):
+        """
+        :type edges: List[List[int]]
+        :rtype: int
+        """
+        def bfs(root):
+            d = new_root = -1
+            lookup = [False]*len(adj)
+            lookup[root] = True
+            q = [root]
+            while q:
+                d, new_root = d+1, q[0]
+                new_q = []
+                for u in q:
+                    for v in adj[u]:
+                        if lookup[v]:
+                            continue
+                        lookup[v] = True
+                        new_q.append(v)
+                q = new_q
+            return d, new_root
+        
+        adj = [[] for _ in range(len(edges)+1)]
+        for u, v in edges:
+            adj[u].append(v)
+            adj[v].append(u)
+        _, root = bfs(0)
+        d, _ = bfs(root)
+        return d
