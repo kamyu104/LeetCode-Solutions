@@ -71,8 +71,58 @@ public:
 
 // Time:  O(|V| + |E|)
 // Space: O(|E|)
-// bfs
+// bfs, tree dp
 class Solution3 {
+public:
+    int treeDiameter(vector<vector<int>>& edges) {
+        vector<vector<int>> adj(size(edges) + 1);
+        for (const auto& e : edges) {
+            adj[e[0]].emplace_back(e[1]);
+            adj[e[1]].emplace_back(e[0]);
+        }
+        int result = 0;
+        const auto& bfs = [&]() {
+            int result = 0;
+            vector<int> dp(size(adj));
+            vector<int> degree(size(adj));
+            vector<int> q;
+            for (int u = 0; u < size(adj); ++u) {
+                degree[u] = size(adj[u]);
+                if (degree[u] == 1) {
+                    q.emplace_back(u);
+                }
+            }
+            while (!empty(q)) {
+                vector<int> new_q;
+                for (const auto& u : q) {
+                    if (degree[u] == 0) {
+                        continue;
+                    }
+                    --degree[u];
+                    for (const auto& v : adj[u]) {
+                        if (degree[v] == 0) {
+                            continue;
+                        }
+                        result = max(result, dp[v] + (dp[u] + 1));
+                        dp[v] = max(dp[v], dp[u] + 1);
+                        if (--degree[v] == 1) {
+                            new_q.emplace_back(v);
+                        }
+                    }
+                }
+                q = move(new_q);
+            }
+            return result;
+        };
+
+        return bfs();
+    }
+};
+
+// Time:  O(|V| + |E|)
+// Space: O(|E|)
+// bfs
+class Solution4 {
 public:
     int treeDiameter(vector<vector<int>>& edges) {
         vector<vector<int>> adj(size(edges) + 1);
