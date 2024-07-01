@@ -82,7 +82,7 @@ class Solution2(object):
 
 # Time:  O(n + m)
 # Space: O(n + m)
-# bfs, tree diameter
+# bfs, tree dp, tree diameter
 class Solution3(object):
     def minimumDiameterAfterMerge(self, edges1, edges2):
         """
