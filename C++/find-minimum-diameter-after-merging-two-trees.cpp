@@ -107,6 +107,63 @@ public:
                 adj[e[1]].emplace_back(e[0]);
             }
             int result = 0;
+            const auto& bfs = [&]() {
+                int result = 0;
+                vector<int> dp(size(adj));
+                vector<int> degree(size(adj));
+                vector<int> q;
+                for (int u = 0; u < size(adj); ++u) {
+                    degree[u] = size(adj[u]);
+                    if (degree[u] == 1) {
+                        q.emplace_back(u);
+                    }
+                }
+                while (!empty(q)) {
+                    vector<int> new_q;
+                    for (const auto& u : q) {
+                        if (degree[u] == 0) {
+                            continue;
+                        }
+                        --degree[u];
+                        for (const auto& v : adj[u]) {
+                            result = max(result, dp[v] + (dp[u] + 1));
+                            dp[v] = max(dp[v], dp[u] + 1);
+                            if (--degree[v] == 1) {
+                                new_q.emplace_back(v);
+                            }
+                        }
+                    }
+                    q = move(new_q);
+                }
+                return result;
+            };
+
+            return bfs();
+        };
+
+        const int d1 = tree_diameter(edges1);
+        const int d2 = tree_diameter(edges2);
+        return max({ceil_divide(d1, 2) + 1 + ceil_divide(d2, 2), d1, d2});
+    }
+};
+
+// Time:  O(n + m)
+// Space: O(n + m)
+// bfs, tree diameter
+class Solution4 {
+public:
+    int minimumDiameterAfterMerge(vector<vector<int>>& edges1, vector<vector<int>>& edges2) {
+        const auto& ceil_divide = [](const auto& a, const auto& b) {
+            return (a + b - 1) / 2;
+        };
+
+        const auto& tree_diameter = [](const auto& edges) {
+            vector<vector<int>> adj(size(edges) + 1);
+            for (const auto& e : edges) {
+                adj[e[0]].emplace_back(e[1]);
+                adj[e[1]].emplace_back(e[0]);
+            }
+            int result = 0;
             const auto& bfs = [&](int root) {
                 int d = -1, new_root = -1;
                 vector<bool> lookup(size(adj));
