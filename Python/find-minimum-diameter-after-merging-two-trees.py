@@ -127,7 +127,6 @@ class Solution3(object):
         return max(ceil_divide(d1, 2)+1+ceil_divide(d2, 2), d1, d2)
 
 
-
 # Time:  O(n + m)
 # Space: O(n + m)
 # bfs, tree diameter
