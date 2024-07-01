@@ -92,7 +92,7 @@ public:
 
 // Time:  O(n + m)
 // Space: O(n + m)
-// bfs, tree diameter
+// bfs, tree dp, tree diameter
 class Solution3 {
 public:
     int minimumDiameterAfterMerge(vector<vector<int>>& edges1, vector<vector<int>>& edges2) {
