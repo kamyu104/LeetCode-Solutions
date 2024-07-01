@@ -126,6 +126,9 @@ public:
                         }
                         --degree[u];
                         for (const auto& v : adj[u]) {
+                            if (degree[v] == 0) {
+                                continue;
+                            }
                             result = max(result, dp[v] + (dp[u] + 1));
                             dp[v] = max(dp[v], dp[u] + 1);
                             if (--degree[v] == 1) {
