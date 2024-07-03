@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3203%20%2F%203203-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3204%20%2F%203204-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1519,6 +1519,7 @@
 3182 | [Find Top Scoring Students](https://leetcode.com/problems/find-top-scoring-students/) | [MySQL](./MySQL/find-top-scoring-students.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
 3188 | [Find Top Scoring Students II](https://leetcode.com/problems/find-top-scoring-students-ii/) | [MySQL](./MySQL/find-top-scoring-students-ii.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒|  |
 3198 | [Find Cities in Each State](https://leetcode.com/problems/find-cities-in-each-state/) | [MySQL](./MySQL/find-cities-in-each-state.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒|  |
+3204 | [Bitwise User Permissions Analysis](https://leetcode.com/problems/bitwise-user-permissions-analysis/) | [MySQL](./MySQL/bitwise-user-permissions-analysis.sql) | _O(n)_ | _O(n)_       | Medium           |🔒|  |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
