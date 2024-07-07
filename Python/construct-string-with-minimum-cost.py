@@ -67,8 +67,8 @@ class Solution_TLE(object):
 
             def add(self, w, c):
                 curr = 0
-                for j in xrange(len(w)):
-                    x = ord(w[j])-ord('a')
+                for x in w:
+                    x = ord(x)-ord('a')
                     if self.__nodes[curr][x] == -1:
                         self.__nodes[curr][x] = self.__new_node()
                     curr = self.__nodes[curr][x]
