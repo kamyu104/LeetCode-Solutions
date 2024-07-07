@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3204%20%2F%203204-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3213%20%2F%203213-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -296,6 +296,7 @@
 3110 | [Score of a String](https://leetcode.com/problems/score-of-a-string/)| [C++](./C++/score-of-a-string.cpp) [Python](./Python/score-of-a-string.py)| _O(n)_ | _O(1)_ | Easy | | String |
 3136 | [Valid Word](https://leetcode.com/problems/valid-word/) | [C++](./C++/valid-word.cpp) [Python](./Python/valid-word.py) | _O(n)_ | _O(1)_ | Easy | | String
 3163 | [String Compression III](https://leetcode.com/problems/string-compression-iii/) | [C++](./C++/string-compression-iii.cpp) [Python](./Python/string-compression-iii.py) | _O(n)_ | _O(1)_ | Medium | | String
+3210 | [Find the Encrypted String](https://leetcode.com/problems/find-the-encrypted-string/) | [C++](./C++/find-the-encrypted-string.cpp) [Python](./Python/find-the-encrypted-string.py) | _O(n)_ | _O(1)_ | Medium | | String
 
 <br/>
 <div align="right">
@@ -752,6 +753,9 @@
 3095 | [Shortest Subarray With OR at Least K I](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/) | [C++](./C++/shortest-subarray-with-or-at-least-k-i.cpp) [Python](./Python/shortest-subarray-with-or-at-least-k-i.py) | _O(n * 30)_ | _O(30)_ | Easy | | Brute Force, Freq Table, Two Pointers
 3097 | [Shortest Subarray With OR at Least K II](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/) | [C++](./C++/shortest-subarray-with-or-at-least-k-ii.cpp) [Python](./Python/shortest-subarray-with-or-at-least-k-ii.py) | _O(n * 30)_ | _O(30)_ | Medium | | Freq Table, Two Pointers
 3171 | [Find Subarray With Bitwise OR Closest to K](https://leetcode.com/problems/find-subarray-with-bitwise-or-closest-to-k/)| [C++](./C++/find-subarray-with-bitwise-or-closest-to-k.cpp) [Python](./Python/find-subarray-with-bitwise-or-closest-to-k.py) | _O(nlogr)_    | _O(logr)_          | Hard           | variant of [Find a Value of a Mysterious Function Closest to Target](https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target/) | DP, Freq Table, Two Pointers, Sliding Window
+3206 | [Alternating Groups I](https://leetcode.com/problems/alternating-groups-i/)| [C++](./C++/alternating-groups-i.cpp) [Python](./Python/alternating-groups-i.py) | _O(n)_    | _O(1)_          | Easy           |  | Two Pointers, Sliding Window
+3208 | [Alternating Groups II](https://leetcode.com/problems/alternating-groups-ii/)| [C++](./C++/alternating-groups-ii.cpp) [Python](./Python/alternating-groups-ii.py) | _O(n)_    | _O(1)_          | Medium           |  | Two Pointers, Sliding Window
+3209 | [Number of Subarrays With AND Value of K](https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/)| [C++](./C++/number-of-subarrays-with-and-value-of-k.cpp) [Python](./Python/number-of-subarrays-with-and-value-of-k.py) | _O(nlogr)_    | _O(logr)_          | Hard           | variant of [Find Subarray With Bitwise OR Closest to K](https://leetcode.com/problems/find-subarray-with-bitwise-or-closest-to-k/) | DP
 
 <br/>
 <div align="right">
@@ -910,6 +914,7 @@
 2664 | [The Knight’s Tour](https://leetcode.com/problems/the-knights-tour/) | [C++](./C++/the-knights-tour.cpp) [Python](./Python/the-knights-tour.py) | _O(m * n)_   | _O(1)_        | Medium         | 🔒 | Backtracking, Greedy, `Warnsdorff's Rule`
 2698 | [Find the Punishment Number of an Integer](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/) | [C++](./C++/find-the-punishment-number-of-an-integer.cpp) [Python](./Python/find-the-punishment-number-of-an-integer.py) | _O(n * (logn)^(2*logn))_   | _O(logn)_        | Medium         | | Backtracking
 2741 | [Special Permutations](https://leetcode.com/problems/special-permutations/) | [C++](./C++/special-permutations.cpp) [Python](./Python/special-permutations.py) | _O(n^2 * 2^n)_   | _O(n * 2^n)_        | Medium         | | Backtracking, Memoization
+3211 | [Generate Binary Strings Without Adjacent Zeros](https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/) | [C++](./C++/generate-binary-strings-without-adjacent-zeros.cpp) [Python](./Python/generate-binary-strings-without-adjacent-zeros.py) | _O(n * 2^n)_   | _O(n)_        | Medium         | | Backtracking, BFS
 
 <br/>
 <div align="right">
@@ -1048,6 +1053,8 @@
 3197 | [Find the Minimum Area to Cover All Ones II](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/) | [C++](./C++/find-the-minimum-area-to-cover-all-ones-ii.cpp) [Python](./Python/find-the-minimum-area-to-cover-all-ones-ii.py) | _O(max(n, m)^2)_ | _O(max(n, m)^2)_ | Hard | | Array, Brute Force, Prefix Sum, Binary Search, RMQ, Sparse Table, DP
 3201 | [Find the Maximum Length of Valid Subsequence I](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/) | [C++](./C++/find-the-maximum-length-of-valid-subsequence-i.cpp) [Python](./Python/find-the-maximum-length-of-valid-subsequence-i.py) | _O(n)_ | _O(1)_ | Medium | | Brute Force, DP
 3202 | [Find the Maximum Length of Valid Subsequence II](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/) | [C++](./C++/find-the-maximum-length-of-valid-subsequence-ii.cpp) [Python](./Python/find-the-maximum-length-of-valid-subsequence-ii.py) | _O(n * k)_ | _O(k)_ | Medium | | DP
+3212 | [Count Submatrices With Equal Frequency of X and Y](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/) | [C++](./C++/count-submatrices-with-equal-frequency-of-x-and-y.cpp) [Python](./Python/count-submatrices-with-equal-frequency-of-x-and-y.py) | _O(n * m)_ | _O(n * m)_ | Medium | | DP
+3213 | [Construct String with Minimum Cost](https://leetcode.com/problems/construct-string-with-minimum-cost/) | [C++](./C++/construct-string-with-minimum-cost.cpp) [Python](./Python/construct-string-with-minimum-cost.py) | _O(n^2 + w * l)_ | _O(t)_ | Hard | | DP, Trie
 
 <br/>
 <div align="right">
@@ -1195,6 +1202,8 @@
 3189 | [Minimum Moves to Get a Peaceful Board](https://leetcode.com/problems/minimum-moves-to-get-a-peaceful-board/) | [C++](./C++/minimum-moves-to-get-a-peaceful-board.cpp) [Python](./Python/minimum-moves-to-get-a-peaceful-board.py) | _O(n)_ | _O(n)_ | Medium | 🔒, variant of [Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree/) | Counting Sort, Prefix Sum, Greedy
 3191 | [Minimum Operations to Make Binary Array Elements Equal to One I](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | [C++](./C++/minimum-operations-to-make-binary-array-elements-equal-to-one-i.cpp) [Python](./Python/minimum-operations-to-make-binary-array-elements-equal-to-one-i.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 3192 | [Minimum Operations to Make Binary Array Elements Equal to One II](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-ii/) | [C++](./C++/minimum-operations-to-make-binary-array-elements-equal-to-one-ii.cpp) [Python](./Python/minimum-operations-to-make-binary-array-elements-equal-to-one-ii.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+3205 | [Maximum Array Hopping Score I](https://leetcode.com/problems/maximum-array-hopping-score-i/)| [C++](./C++/maximum-array-hopping-score-i.cpp) [Python](./Python/maximum-array-hopping-score-i.py)| _O(n)_ | _O(1)_ | Medium | 🔒 | DP, Prefix Sum, Greedy |
+3207 | [Maximum Points After Enemy Battles](https://leetcode.com/problems/maximum-points-after-enemy-battles/)| [C++](./C++/maximum-points-after-enemy-battles.cpp) [Python](./Python/maximum-points-after-enemy-battles.py)| _O(n)_ | _O(1)_ | Medium | | Greedy |
 
 <br/>
 <div align="right">
