@@ -65,7 +65,7 @@ class Solution_TLE(object):
                 self.__mns.append(INF)
                 return len(self.__nodes)-1
 
-            def add(self, i, w, c):
+            def add(self, w, c):
                 curr = 0
                 for j in xrange(len(w)):
                     x = ord(w[j])-ord('a')
@@ -88,8 +88,8 @@ class Solution_TLE(object):
         dp = [INF]*(len(target)+1)
         dp[0] = 0
         trie = Trie()
-        for i, (w, c) in enumerate(itertools.izip(words, costs)):
-            trie.add(i, w, c)
+        for w, c in itertools.izip(words, costs):
+            trie.add(w, c)
         for i, x in enumerate(target):
             for idx, c in trie.query(i, target):
                 dp[idx] = min(dp[idx], dp[i]+c)
