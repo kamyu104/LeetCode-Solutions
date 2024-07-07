@@ -4,6 +4,7 @@
 import itertools
 
 
+# trie, dp
 class Solution(object):
     def minimumCost(self, target, words, costs):
         """
@@ -43,6 +44,7 @@ class Solution(object):
 import itertools
 
 
+# trie, dp
 class Solution_TLE(object):
     def minimumCost(self, target, words, costs):
         """
