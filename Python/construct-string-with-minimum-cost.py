@@ -34,6 +34,8 @@ class Solution(object):
         dp = [INF]*(len(target)+1)
         dp[0] = 0
         for i in xrange(len(target)):
+            if dp[i] == INF:
+                continue
             for idx, c in query(i):
                 dp[idx] = min(dp[idx], dp[i]+c)
         return dp[-1] if dp[-1] != INF else -1
@@ -90,6 +92,8 @@ class Solution_TLE(object):
         dp = [INF]*(len(target)+1)
         dp[0] = 0
         for i in xrange(len(target)):
+            if dp[i] == INF:
+                continue
             for idx, c in trie.query(i, target):
                 dp[idx] = min(dp[idx], dp[i]+c)
         return dp[-1] if dp[-1] != INF else -1
