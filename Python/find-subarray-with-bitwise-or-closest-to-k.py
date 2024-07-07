@@ -1,3 +1,7 @@
+# Time:  O(nlogr), r = max(nums)
+# Space: O(logr)
+
+# freq table, two pointers, sliding window, lc1521
 class BitCount(object):
     def __init__(self, n):
         self.__l = 0
