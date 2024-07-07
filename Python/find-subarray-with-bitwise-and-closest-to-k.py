@@ -34,27 +34,6 @@ class BitCount(object):
             base <<= 1
         return num
 
-
-class Solution(object):
-    def closestToTarget(self, arr, target):
-        """
-        :type arr: List[int]
-        :type target: int
-        :rtype: int
-        """
-        count = BitCount(max(arr).bit_length())
-        result, left = float("inf"), 0
-        for right in xrange(len(arr)):
-            count += arr[right]
-            while left <= right:
-                f = count.bit_and()
-                result = min(result, abs(f-target))
-                if f >= target:
-                    break
-                count -= arr[left]
-                left += 1
-        return result
-
                     
 class Solution(object):
     def minimumDifference(self, nums, k):
