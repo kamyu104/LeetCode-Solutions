@@ -85,11 +85,10 @@ class Solution_TLE(object):
                         yield (j+1, self.__mns[curr])
     
         trie = Trie()
-        dp = [INF]*(len(target)+1)
-        dp[0] = 0
-        trie = Trie()
         for w, c in itertools.izip(words, costs):
             trie.add(w, c)
+        dp = [INF]*(len(target)+1)
+        dp[0] = 0
         for i in xrange(len(target)):
             for idx, c in trie.query(i, target):
                 dp[idx] = min(dp[idx], dp[i]+c)
