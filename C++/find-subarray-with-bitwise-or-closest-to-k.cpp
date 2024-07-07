@@ -10,9 +10,9 @@ public:
         for (int left = 0, right = 0; right < size(nums); ++right) {
             count += nums[right];
             while (left <= right) {
-                const auto& f = count.bitAnd();
+                const auto& f = count.bitOr();
                 result = min(result, abs(f - k));
-                if (f >= k) {
+                if (f <= k) {
                     break;
                 }
                 count -= nums[left++];
@@ -35,10 +35,10 @@ private:
             
         }
 
-        int bitAnd() const {
+        int bitOr() const {
             int num = 0;
             for (int i = 0; i < n_; ++i) {
-                if (count_[i] == l_) {
+                if (count_[i]) {
                     num |= 1 << i;
                 }
             }
@@ -81,7 +81,7 @@ public:
         for (const auto& x : nums) {
             unordered_set<int> new_dp = {x};
             for (const auto& f: dp) {
-                new_dp.emplace(f & x);
+                new_dp.emplace(f | x);
             }
             for (const auto& f : new_dp) {
                 result = min(result, abs(f - k));
