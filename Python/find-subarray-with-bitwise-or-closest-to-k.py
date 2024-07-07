@@ -1,7 +1,3 @@
-# Time:  O(nlogr), r = max(nums)
-# Space: O(logr)
-
-# freq table, two pointers, sliding window, lc1521
 class BitCount(object):
     def __init__(self, n):
         self.__l = 0
@@ -25,11 +21,11 @@ class BitCount(object):
                 self.__count[i] -= 1
             base <<= 1
         return self
-            
-    def bit_and(self):
+
+    def bit_or(self):
         num, base = 0, 1
         for i in xrange(self.__n):
-            if self.__count[i] == self.__l:
+            if self.__count[i]:
                 num |= base
             base <<= 1
         return num
@@ -47,9 +43,9 @@ class Solution(object):
         for right in xrange(len(nums)):
             count += nums[right]
             while left <= right:
-                f = count.bit_and()
+                f = count.bit_or()
                 result = min(result, abs(f-k))
-                if f >= k:
+                if f <= k:
                     break
                 count -= nums[left]
                 left += 1
@@ -68,7 +64,8 @@ class Solution2(object):
         """
         result, dp = float("inf"), set()  # at most O(logr) dp states
         for x in nums:
-            dp = {x}|{f&x for f in dp}
+            dp = {x}|{f|x for f in dp}
             for f in dp:
                 result = min(result, abs(f-k))
         return result
+    
