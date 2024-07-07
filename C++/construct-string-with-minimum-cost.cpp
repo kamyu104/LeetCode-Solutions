@@ -16,22 +16,39 @@ private:
             int curr = 0;
             for (auto x : w) {
                 x -= 'a';
-                if (nodes[curr][x] == -1) {
-                    nodes[curr][x] = new_node();
+                if (nodes_[curr][x] == -1) {
+                    nodes_[curr][x] = new_node();
                 }
-                curr = nodes[curr][x];
+                curr = nodes_[curr][x];
             }
-            mns[curr] = min(mns[curr], c);
+            mns_[curr] = min(mns_[curr], c);
         }
 
-        vector<vector<int>> nodes;
-        vector<int> mns;
+        vector<pair<int, int>> query(int i, const string& t, vector<int>& dp) {
+            vector<pair<int, int>> result;
+            int curr = 0;
+            for (int j = i; j < size(t); ++j) {
+                const int x = t[j] - 'a';
+                if (nodes_[curr][x] == -1) {
+                    break;
+                }
+                curr = nodes_[curr][x];
+                if (mns_[curr] != INF) {
+                    dp[j + 1] = min(dp[j + 1], dp[i] + mns_[curr]);
+                }
+            }
+            return result;
+        }
+
     private:
         int new_node() {
-            nodes.emplace_back(26, -1);
-            mns.emplace_back(INF);
-            return size(nodes) - 1;
+            nodes_.emplace_back(26, -1);
+            mns_.emplace_back(INF);
+            return size(nodes_) - 1;
         }
+
+        vector<vector<int>> nodes_;
+        vector<int> mns_;
     };
 
 public:
@@ -46,21 +63,12 @@ public:
             if (dp[i] == INF) {
                 continue;
             }
-            int curr = 0;
-            for (int j = i; j < size(target); ++j) {
-                const int x = target[j] - 'a';
-                if (trie.nodes[curr][x] == -1) {
-                    break;
-                }
-                curr = trie.nodes[curr][x];
-                if (trie.mns[curr] != INF) {
-                    dp[j + 1] = min(dp[j + 1], dp[i] + trie.mns[curr]);
-                }
-            }
+            trie.query(i, target, dp);
         }
         return dp.back() != INF ? dp.back() : -1;
     }
 };
+
 
 // Time:  O(n^2 + w * l)
 // Space: O(t)
@@ -82,6 +90,20 @@ private:
                 curr = curr->children[x];
             }
             curr->cost = min(curr->cost, c);
+        }
+
+        void query(int i, const string& t, vector<int>& dp) {
+            auto* curr = this;
+            for (int j = i; j < size(t); ++j) {
+                const int x = t[j];
+                if (!curr->children.count(x)) {
+                    break;
+                }
+                curr = curr->children[x];
+                if (curr->cost != INF) {
+                    dp[j + 1] = min(dp[j + 1], dp[i] + curr->cost);
+                }
+            }
         }
         
         ~TrieNode() {
@@ -105,17 +127,7 @@ public:
             if (dp[i] == INF) {
                 continue;
             }
-            auto curr = &trie;
-            for (int j = i; j < size(target); ++j) {
-                const int x = target[j];
-                if (!curr->children.count(x)) {
-                    break;
-                }
-                curr = curr->children[x];
-                if (curr->cost != INF) {
-                    dp[j + 1] = min(dp[j + 1], dp[i] + curr->cost);
-                }
-            }
+            trie.query(i, target, dp);
         }
         return dp.back() != INF ? dp.back() : -1;
     }
