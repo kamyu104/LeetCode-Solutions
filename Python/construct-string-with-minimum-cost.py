@@ -33,7 +33,7 @@ class Solution(object):
             node["_end"] = min(node["_end"], c)
         dp = [INF]*(len(target)+1)
         dp[0] = 0
-        for i, x in enumerate(target):
+        for i in xrange(len(target)):
             for idx, c in query(i):
                 dp[idx] = min(dp[idx], dp[i]+c)
         return dp[-1] if dp[-1] != INF else -1
@@ -90,7 +90,7 @@ class Solution_TLE(object):
         trie = Trie()
         for w, c in itertools.izip(words, costs):
             trie.add(w, c)
-        for i, x in enumerate(target):
+        for i in xrange(len(target)):
             for idx, c in trie.query(i, target):
                 dp[idx] = min(dp[idx], dp[i]+c)
         return dp[-1] if dp[-1] != INF else -1
