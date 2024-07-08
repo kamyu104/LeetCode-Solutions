@@ -37,7 +37,6 @@ class Solution(object):
             if dp[i] == INF:
                 continue
             query(i)
-                
         return dp[-1] if dp[-1] != INF else -1
 
 
