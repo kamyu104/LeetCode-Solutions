@@ -22,6 +22,6 @@ SELECT year,
        product_id,
        curr_year_spend,
        IF(year = prev_year + 1, prev_year_spend, NULL) AS prev_year_spend,
-       ROUND(100.0 * IF(year = prev_year + 1, (curr_year_spend - prev_year_spend) / prev_year_spend, NULL), 2) AS yoy_rate
+       IF(year = prev_year + 1, ROUND(100.0 * (curr_year_spend - prev_year_spend) / prev_year_spend, 2), NULL) AS yoy_rate
 FROM prev_year_cte
 ORDER BY 2, 1;
