@@ -91,7 +91,7 @@
 3125 | [Maximum Number That Makes Result of Bitwise AND Zero](https://leetcode.com/problems/maximum-number-that-makes-result-of-bitwise-and-zero/) | [C++](./C++/maximum-number-that-makes-result-of-bitwise-and-zero.cpp) [Python](./Python/maximum-number-that-makes-result-of-bitwise-and-zero.py) | _O(1)_ | _O(1)_ | Medium |🔒| Bit Manipulation
 3133 | [Minimum Array End](https://leetcode.com/problems/minimum-array-end/) | [C++](./C++/minimum-array-end.cpp) [Python](./Python/minimum-array-end.py) | _O(logn)_ | _O(1)_ | Medium | | Bit Manipulation
 3199 | [Count Triplets with Even XOR Set Bits I](https://leetcode.com/problems/count-triplets-with-even-xor-set-bits-i/) | [C++](./C++/count-triplets-with-even-xor-set-bits-i.cpp) [Python](./Python/count-triplets-with-even-xor-set-bits-i.py) | _O(nlogr)_ | _O(1)_ | Easy | 🔒 | Brute Force, Bit Manipulation, Parity
-3215 | [Count Triplets with Even XOR Set Bits II](https://leetcode.com/problems/count-triplets-with-even-xor-set-bits-i/) | [C++](./C++/count-triplets-with-even-xor-set-bits-i.cpp) [Python](./Python/count-triplets-with-even-xor-set-bits-i.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 | Bit Manipulation, Parity
+3215 | [Count Triplets with Even XOR Set Bits II](https://leetcode.com/problems/count-triplets-with-even-xor-set-bits-ii/) | [C++](./C++/count-triplets-with-even-xor-set-bits-ii.cpp) [Python](./Python/count-triplets-with-even-xor-set-bits-ii.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 | Bit Manipulation, Parity
 
 <br/>
 <div align="right">
