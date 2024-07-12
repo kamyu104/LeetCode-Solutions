@@ -9,7 +9,7 @@ public:
             const auto& odd = accumulate(cbegin(a), cend(a), 0, [](const auto& total, const auto& x) {
                 return total + (__builtin_popcount(x) & 1);
             });
-            return vector{static_cast<int>(size(a)) - odd, odd};
+            return vector<int>{static_cast<int>(size(a)) - odd, odd};
         };
 
         vector<vector<int>> cnt = {count(a), count(b), count(c)};
