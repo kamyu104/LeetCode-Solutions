@@ -7,7 +7,7 @@ public:
     int countHousePlacements(int n) {
         vector<vector<int>> T = {{1, 1},
                                  {1, 0}};
-        int64_t result = matrixMult({{2, 1}}, matrixExpo(T, n - 1))[0][0]; // [a1, a0] * T^(n-1) = [an, a(n-1)]
+        int64_t result = matrixMult({{2, 1}}, matrixExpo(T, n - 1))[0][0];  // [a1, a0] * T^(n-1) = [an, a(n-1)]
         return result * result % MOD;
     }
 
