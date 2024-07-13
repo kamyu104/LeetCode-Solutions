@@ -27,8 +27,6 @@ class Solution2(object):
         :rtype: bool
         """
         def memoization(n, dp):
-            if n == 1:
-                return False
             if n not in dp:
                 result = False
                 for i in xrange(1, n):
@@ -36,13 +34,13 @@ class Solution2(object):
                         break
                     if n % i:
                         continue
-                    if not memoization(n-i, dp):
+                    if i != n and not memoization(n-i, dp):
                         result = True
                         break
                     j = n // i
-                    if j == i or j == n:
+                    if j == i:
                         continue
-                    if not memoization(n-j, dp):
+                    if j != n and not memoization(n-j, dp):
                         result = True
                         break
                 dp[n] = result
