@@ -39,14 +39,7 @@ class Solution2(object):
     
         def memoization(n):
             if lookup[n] is None:
-                result = False
-                for i in factors(n):
-                    if i == n:
-                        continue
-                    if not memoization(n-i):
-                        result = True
-                        break
-                lookup[n] = result
+                lookup[n] = any(not memoization(n-i) for i in factors(n) if i != n)
             return lookup[n]
 
         lookup = [None]*(n+1)
