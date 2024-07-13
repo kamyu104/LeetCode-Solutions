@@ -52,8 +52,8 @@ class Solution2 {
 public:
     int countHousePlacements(int n) {
         static const int MOD = 1e9 + 7;
-        int64_t prev = 0, curr = 1;
-        for (int _ = 0; _ < n + 1; ++_) {
+        int64_t prev = 1, curr = 2;
+        for (int _ = 0; _ < n - 1; ++_) {
             tie(prev, curr) = pair(curr, (prev + curr) % MOD);
         }
         return curr * curr % MOD;
