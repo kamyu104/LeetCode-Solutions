@@ -40,7 +40,7 @@ class Solution2(object):
         :rtype: int
         """
         MOD = 10**9+7
-        prev, curr = 0, 1
-        for _ in xrange(n+1):
+        prev, curr = 1, 2
+        for _ in xrange(n-1):
             prev, curr = curr, (prev+curr)%MOD
         return pow(curr, 2, MOD)
