@@ -3,7 +3,7 @@
 
 class Solution {
 public:
-    bool divisorGame(int N) {
+    bool divisorGame(int n) {
         // 1. if we get an even, we can choose x = 1
         //    to make the opponent always get an odd
         // 2. if the opponent gets an odd, he can only choose x = 1 or other odds
@@ -11,7 +11,7 @@ public:
         // 3. at the end, the opponent can only choose x = 1 and we win
         // 4. in summary, we win if only if we get an even and 
         //    keeps even until the opponent loses
-        return N % 2 == 0;
+        return n % 2 == 0;
     }
 };
 
@@ -20,28 +20,37 @@ public:
 // dp solution
 class Solution2 {
 public:
-    bool divisorGame(int N) {
+    bool divisorGame(int n) {
         unordered_map<int, int> dp;
-        return memoization(N, &dp);
+        return memoization(n, &dp);
     }
 
 private:
-    bool memoization(int N, unordered_map<int, int> *dp) {
-        if (N == 1) {
+    bool memoization(int n, unordered_map<int, int> *dp) {
+        if (n == 1) {
             return false;
         }
-        if (!dp->count(N)) {
+        if (!dp->count(n)) {
             bool result = false;
-            for (auto i = 1; i * i <= N; ++i) {
-                if (N % i == 0) {
-                    if (!memoization(N - i, dp)) {
-                        result = true;
-                        break;
-                    }
+            for (auto i = 1; i * i <= n; ++i) {
+                if (n % i) {
+                    continue;
+                }
+                if (!memoization(n - i, dp)) {
+                    result = true;
+                    break;
+                }
+                const int j = n / i;
+                if (j == i || j == n) {
+                    continue;
+                }
+                if (!memoization(n - j, dp)) {
+                    result = true;
+                    break;
                 }
             }
-            (*dp)[N] = result;
+            (*dp)[n] = result;
         }
-        return (*dp)[N];
+        return (*dp)[n];
     }
 };
