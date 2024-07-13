@@ -1,6 +1,7 @@
 # Time:  O(1)
 # Space: O(1)
 
+# math
 class Solution(object):
     def divisorGame(self, n):
         """
@@ -19,7 +20,7 @@ class Solution(object):
 
 # Time:  O(n^3/2)
 # Space: O(n)
-# dp solution
+# memoization
 class Solution2(object):
     def divisorGame(self, n):
         """
@@ -36,16 +37,17 @@ class Solution2(object):
                 if n//i != i:
                     yield n//i
     
-        def memoization(n, dp):
-            if n not in dp:
+        def memoization(n):
+            if lookup[n] is None:
                 result = False
                 for i in factors(n):
                     if i == n:
                         continue
-                    if not memoization(n-i, dp):
+                    if not memoization(n-i):
                         result = True
                         break
-                dp[n] = result
-            return dp[n]
-        
-        return memoization(n, {})
+                lookup[n] = result
+            return lookup[n]
+
+        lookup = [None]*(n+1)
+        return memoization(n)
