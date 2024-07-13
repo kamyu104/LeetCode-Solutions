@@ -27,24 +27,21 @@ public:
 
 private:
     bool memoization(int n, unordered_map<int, int> *dp) {
-        if (n == 1) {
-            return false;
-        }
         if (!dp->count(n)) {
             bool result = false;
             for (auto i = 1; i * i <= n; ++i) {
                 if (n % i) {
                     continue;
                 }
-                if (!memoization(n - i, dp)) {
+                if (i != n && !memoization(n - i, dp)) {
                     result = true;
                     break;
                 }
                 const int j = n / i;
-                if (j == i || j == n) {
+                if (j == i) {
                     continue;
                 }
-                if (!memoization(n - j, dp)) {
+                if (j != n && !memoization(n - j, dp)) {
                     result = true;
                     break;
                 }
