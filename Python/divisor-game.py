@@ -2,9 +2,9 @@
 # Space: O(1)
 
 class Solution(object):
-    def divisorGame(self, N):
+    def divisorGame(self, n):
         """
-        :type N: int
+        :type n: int
         :rtype: bool
         """
         # 1. if we get an even, we can choose x = 1
@@ -14,31 +14,38 @@ class Solution(object):
         # 3. at the end, the opponent can only choose x = 1 and we win
         # 4. in summary, we win if only if we get an even and 
         #    keeps even until the opponent loses
-        return N % 2 == 0
+        return n % 2 == 0
 
 
 # Time:  O(n^3/2)
 # Space: O(n)
 # dp solution
 class Solution2(object):
-    def divisorGame(self, N):
+    def divisorGame(self, n):
         """
-        :type N: int
+        :type n: int
         :rtype: bool
         """
-        def memoization(N, dp):
-            if N == 1:
+        def memoization(n, dp):
+            if n == 1:
                 return False
-            if N not in dp:
+            if n not in dp:
                 result = False
-                for i in xrange(1, N+1):
-                    if i*i > N:
+                for i in xrange(1, n):
+                    if i*i > n:
                         break
-                    if N % i == 0:
-                        if not memoization(N-i, dp):
-                            result = True
-                            break
-                dp[N] = result
-            return dp[N]
+                    if n % i:
+                        continue
+                    if not memoization(n-i, dp):
+                        result = True
+                        break
+                    j = n // i
+                    if j == i or j == n:
+                        continue
+                    if not memoization(n-j, dp):
+                        result = True
+                        break
+                dp[n] = result
+            return dp[n]
         
-        return memoization(N, {})
+        return memoization(n, {})
