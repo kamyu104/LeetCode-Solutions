@@ -1,6 +1,7 @@
 // Time:  O(1)
 // Space: O(1)
 
+// math
 class Solution {
 public:
     bool divisorGame(int n) {
@@ -17,37 +18,36 @@ public:
 
 // Time:  O(n^3/2)
 // Space: O(n)
-// dp solution
+// memoization
 class Solution2 {
 public:
     bool divisorGame(int n) {
-        unordered_map<int, int> dp;
-        return memoization(n, &dp);
-    }
-
-private:
-    bool memoization(int n, unordered_map<int, int> *dp) {
-        if (!dp->count(n)) {
-            bool result = false;
-            for (auto i = 1; i * i <= n; ++i) {
-                if (n % i) {
-                    continue;
+        vector<int> lookup(n + 1, -1);
+        const function<int (int)> memoization = [&](int n) {
+            if (lookup[n] == -1) {
+                int result = 0;
+                for (auto i = 1; i * i <= n; ++i) {
+                    if (n % i) {
+                        continue;
+                    }
+                    if (i != n && !memoization(n - i)) {
+                        result = 1;
+                        break;
+                    }
+                    const int j = n / i;
+                    if (j == i) {
+                        continue;
+                    }
+                    if (j != n && !memoization(n - j)) {
+                        result = 1;
+                        break;
+                    }
                 }
-                if (i != n && !memoization(n - i, dp)) {
-                    result = true;
-                    break;
-                }
-                const int j = n / i;
-                if (j == i) {
-                    continue;
-                }
-                if (j != n && !memoization(n - j, dp)) {
-                    result = true;
-                    break;
-                }
+                lookup[n] = result;
             }
-            (*dp)[n] = result;
-        }
-        return (*dp)[n];
+            return lookup[n];
+        };
+
+        return memoization(n);
     }
 };
