@@ -26,21 +26,23 @@ class Solution2(object):
         :type n: int
         :rtype: bool
         """
+        def factors(n):
+            for i in xrange(1, n+1):
+                if i*i > n:
+                    break
+                if n%i:
+                    continue
+                yield i
+                if n//i != i:
+                    yield n//i
+    
         def memoization(n, dp):
             if n not in dp:
                 result = False
-                for i in xrange(1, n):
-                    if i*i > n:
-                        break
-                    if n % i:
+                for i in factors(n):
+                    if i == n:
                         continue
-                    if i != n and not memoization(n-i, dp):
-                        result = True
-                        break
-                    j = n // i
-                    if j == i:
-                        continue
-                    if j != n and not memoization(n-j, dp):
+                    if not memoization(n-i, dp):
                         result = True
                         break
                 dp[n] = result
