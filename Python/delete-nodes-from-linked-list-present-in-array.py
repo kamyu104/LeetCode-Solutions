@@ -1,7 +1,7 @@
 # Time:  O(n)
-# Space: O(1)
+# Space: O(m)
 
-# linked list
+# hash table, linked list
 class Solution(object):
     def modifiedList(self, nums, head):
         """
