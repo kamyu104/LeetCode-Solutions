@@ -74,6 +74,6 @@ class Solution3(object):
                 lookup[x1][y1][x2][y2] = mn
             return lookup[x1][y1][x2][y2]
 
-        lookup = [[[[-1]*n for _ in range(m)]for _ in range(n)]for _ in range(m)]
+        lookup = [[[[-1]*n for _ in range(m)]for _ in range(n)] for _ in range(m)]
         return memoization(0, 0, m-1, n-1)
 
