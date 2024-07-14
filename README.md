@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3215%20%2F%203215-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3219%20%2F%203219-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -319,6 +319,7 @@
 2816 | [Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) | [C++](./C++/double-a-number-represented-as-a-linked-list.cpp) [Python](./Python/double-a-number-represented-as-a-linked-list.py) | _O(n)_ | _O(1)_ | Medium | | Linked List
 3062 | [Winner of the Linked List Game](https://leetcode.com/problems/winner-of-the-linked-list-game/) | [C++](./C++/winner-of-the-linked-list-game.cpp) [Python](./Python/winner-of-the-linked-list-game.py) | _O(n)_ | _O(1)_ | Easy | 🔒 | Linked List
 3063 | [Linked List Frequency](https://leetcode.com/problems/linked-list-frequency/) | [C++](./C++/linked-list-frequency.cpp) [Python](./Python/linked-list-frequency.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Linked List
+3217 | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | [C++](./C++/delete-nodes-from-linked-list-present-in-array.cpp) [Python](./Python/delete-nodes-from-linked-list-present-in-array.py) | _O(n)_ | _O(m)_ | Medium | | Hash Table, Linked List
 
 <br/>
 <div align="right">
@@ -1205,6 +1206,9 @@
 3192 | [Minimum Operations to Make Binary Array Elements Equal to One II](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-ii/) | [C++](./C++/minimum-operations-to-make-binary-array-elements-equal-to-one-ii.cpp) [Python](./Python/minimum-operations-to-make-binary-array-elements-equal-to-one-ii.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 3205 | [Maximum Array Hopping Score I](https://leetcode.com/problems/maximum-array-hopping-score-i/)| [C++](./C++/maximum-array-hopping-score-i.cpp) [Python](./Python/maximum-array-hopping-score-i.py)| _O(n)_ | _O(1)_ | Medium | 🔒 | DP, Prefix Sum, Greedy |
 3207 | [Maximum Points After Enemy Battles](https://leetcode.com/problems/maximum-points-after-enemy-battles/)| [C++](./C++/maximum-points-after-enemy-battles.cpp) [Python](./Python/maximum-points-after-enemy-battles.py)| _O(n)_ | _O(1)_ | Medium | | Greedy |
+3216 | [Lexicographically Smallest String After a Swap](https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/)| [C++](./C++/lexicographically-smallest-string-after-a-swap.cpp) [Python](./Python/lexicographically-smallest-string-after-a-swap.py)| _O(n)_ | _O(1)_ | Easy | | Greedy |
+3218 | [Minimum Cost for Cutting Cake I](https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/)| [C++](./C++/minimum-cost-for-cutting-cake-i.cpp) [Python](./Python/minimum-cost-for-cutting-cake-i.py)| _O(mlogm + nlogn)_ | _O(1)_ | Medium | | Memoization, Greedy |
+3219 | [Minimum Cost for Cutting Cake II](https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/)| [C++](./C++/minimum-cost-for-cutting-cake-ii.cpp) [Python](./Python/minimum-cost-for-cutting-cake-ii.py)| _O(mlogm + nlogn)_ | _O(1)_ | Hard | | Greedy |
 
 <br/>
 <div align="right">
