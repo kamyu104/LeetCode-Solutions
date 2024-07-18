@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3219%20%2F%203219-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3221%20%2F%203221-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1209,6 +1209,7 @@
 3216 | [Lexicographically Smallest String After a Swap](https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/)| [C++](./C++/lexicographically-smallest-string-after-a-swap.cpp) [Python](./Python/lexicographically-smallest-string-after-a-swap.py)| _O(n)_ | _O(1)_ | Easy | | Greedy |
 3218 | [Minimum Cost for Cutting Cake I](https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/)| [C++](./C++/minimum-cost-for-cutting-cake-i.cpp) [Python](./Python/minimum-cost-for-cutting-cake-i.py)| _O(mlogm + nlogn)_ | _O(1)_ | Medium | | Memoization, Greedy |
 3219 | [Minimum Cost for Cutting Cake II](https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/)| [C++](./C++/minimum-cost-for-cutting-cake-ii.cpp) [Python](./Python/minimum-cost-for-cutting-cake-ii.py)| _O(mlogm + nlogn)_ | _O(1)_ | Hard | | Greedy |
+3221 | [Maximum Array Hopping Score II](https://leetcode.com/problems/maximum-array-hopping-score-ii/)| [C++](./C++/maximum-array-hopping-score-ii.cpp) [Python](./Python/maximum-array-hopping-score-ii.py)| _O(n)_ | _O(1)_ | Medium | 🔒 | Prefix Sum, Greedy |
 
 <br/>
 <div align="right">
@@ -1535,6 +1536,7 @@
 3198 | [Find Cities in Each State](https://leetcode.com/problems/find-cities-in-each-state/) | [MySQL](./MySQL/find-cities-in-each-state.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒|  |
 3204 | [Bitwise User Permissions Analysis](https://leetcode.com/problems/bitwise-user-permissions-analysis/) | [MySQL](./MySQL/bitwise-user-permissions-analysis.sql) | _O(n)_ | _O(n)_       | Medium           |🔒|  |
 3214 | [Year on Year Growth Rate](https://leetcode.com/problems/year-on-year-growth-rate/) | [MySQL](./MySQL/year-on-year-growth-rate.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒|  Window Function |
+3220 | [Odd and Even Transactions](https://leetcode.com/problems/odd-and-even-transactions/) | [MySQL](./MySQL/odd-and-even-transactions.sql) | _O(nlogn)_ | _O(n)_       | Medium           ||  |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
