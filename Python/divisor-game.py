@@ -18,10 +18,36 @@ class Solution(object):
         return n % 2 == 0
 
 
-# Time:  O(n^3/2)
+# Time:  O(nlogn)
+# Space: O(nlogn)
+# memoization, number theory
+class Solution2(object):
+    def divisorGame(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        def factors(n):
+            result = [[] for _ in xrange(n+1)]
+            for i in xrange(1, n+1):
+                for j in range(i, n+1, i):
+                    result[j].append(i)
+            return result
+    
+        def memoization(n):
+            if lookup[n] is None:
+                lookup[n] = any(not memoization(n-i) for i in FACTORS[n] if i != n)
+            return lookup[n]
+
+        FACTORS = factors(n)
+        lookup = [None]*(n+1)
+        return memoization(n)
+
+
+# Time:  O(n^(3/2))
 # Space: O(n)
 # memoization
-class Solution2(object):
+class Solution3(object):
     def divisorGame(self, n):
         """
         :type n: int
@@ -36,6 +62,30 @@ class Solution2(object):
                 yield i
                 if n//i != i:
                     yield n//i
+    
+        def memoization(n):
+            if lookup[n] is None:
+                lookup[n] = any(not memoization(n-i) for i in factors(n) if i != n)
+            return lookup[n]
+
+        lookup = [None]*(n+1)
+        return memoization(n)
+
+
+# Time:  O(n^2)
+# Space: O(n)
+# memoization
+class Solution4(object):
+    def divisorGame(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        def factors(n):
+            for i in xrange(1, n+1):
+                if n%i:
+                    continue
+                yield i
     
         def memoization(n):
             if lookup[n] is None:
