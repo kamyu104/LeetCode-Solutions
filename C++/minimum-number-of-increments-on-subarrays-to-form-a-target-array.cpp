@@ -4,9 +4,9 @@
 class Solution {
 public:
     int minNumberOperations(vector<int>& target) {
-        int result = target[0];
-        for (int i = 1; i < target.size(); ++i) {
-            result += max(target[i] - target[i - 1], 0);
+        int result = 0;
+        for (int i = 0; i <= size(target); ++i) {
+            result += max((i < size(target) ? target[i] : 0) - (i - 1 >= 0 ? target[i - 1] : 0), 0);
         }
         return result;
     }
