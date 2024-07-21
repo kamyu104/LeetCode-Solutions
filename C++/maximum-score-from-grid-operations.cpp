@@ -9,6 +9,8 @@ public:
         for (int i = 0; i < size(grid); ++i) {
             prefix[i + 1] = prefix[i] + grid[i][0];
         }
+        // dp[0][i]: the maximum score from 0 to the current column, and the current column has i black cells, without scoring the white cells of the current column
+        // dp[1][i]: the maximum score from 0 to the current column, and the current column has i black cells, with scoring the white cells of the current column
         vector<vector<int64_t>> dp(2, vector<int64_t>(size(grid) + 1));
         for (int j = 1; j < size(grid[0]); ++j) {
             vector<int64_t> new_prefix(size(grid)+ 1);
@@ -43,6 +45,8 @@ public:
         for (int i = 0; i < size(grid); ++i) {
             prefix[i + 1] = prefix[i] + grid[i][0];
         }
+        // dp[0][i]: the maximum score from 0 to the current column, and the current column has i black cells, without scoring the white cells of the current column
+        // dp[1][i]: the maximum score from 0 to the current column, and the current column has i black cells, with scoring the white cells of the current column
         vector<vector<int64_t>> dp(2, vector<int64_t>(size(grid) + 1));
         for (int j = 1; j < size(grid[0]); ++j) {
             vector<int64_t> new_prefix(size(grid)+ 1);
