@@ -17,7 +17,7 @@ public:
             }
             vector<vector<int64_t>> new_dp(2, vector<int64_t>(size(grid) + 1));
             for (int i = 0; i <= size(grid); ++i) {
-                for (int k = 0; k <= i; ++k) {
+                for (int k = 0; k < i + 1; ++k) {
                     new_dp[0][i] = max({new_dp[0][i], (prefix[i] - prefix[k]) + dp[0][k], dp[1][k]});
                 }
                 for (int k = i + 1; k <= size(grid); ++k) {
