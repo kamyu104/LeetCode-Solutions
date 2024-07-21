@@ -2,7 +2,7 @@
 // Space: O(n)
 
 // prefix sum, dp
-class Solution1 {
+class Solution {
 public:
     long long maximumScore(vector<vector<int>>& grid) {
         vector<int64_t> prefix(size(grid)+ 1);
@@ -18,7 +18,7 @@ public:
             vector<vector<int64_t>> new_dp(2, vector<int64_t>(size(grid) + 1));
             for (int i = 0; i <= size(grid); ++i) {
                 for (int k = 0; k < i + 1; ++k) {
-                    new_dp[0][i] = max({new_dp[0][i], (prefix[i] - prefix[k]) + dp[0][k], dp[1][k]});
+                    new_dp[0][i] = max(new_dp[0][i], (prefix[i] - prefix[k]) + dp[0][k]);
                 }
                 new_dp[0][i] = max(new_dp[0][i], ranges::max(dp[1]));
                 for (int k = i + 1; k <= size(grid); ++k) {
@@ -36,7 +36,7 @@ public:
 // Time:  O(n^3)
 // Space: O(n)
 // prefix sum, dp
-class Solution {
+class Solution2 {
 public:
     long long maximumScore(vector<vector<int>>& grid) {
         vector<int64_t> prefix(size(grid)+ 1);
