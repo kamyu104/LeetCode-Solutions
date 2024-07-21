@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-# greedy
+# greedy, lc1526
 class Solution(object):
     def minimumOperations(self, nums, target):
         """
