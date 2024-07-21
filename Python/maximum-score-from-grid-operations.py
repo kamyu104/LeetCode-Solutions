@@ -20,7 +20,6 @@ class Solution(object):
             for i in xrange(len(grid)+1):
                 for k in xrange(i+1):
                     new_dp[0][i] = max(new_dp[0][i], (prefix[i]-prefix[k])+dp[0][k], dp[1][k])
-            for i in xrange(len(grid)+1):
                 for k in xrange(i+1, len(grid)+1):
                     new_dp[1][i] = max(new_dp[1][i], dp[1][k]+(new_prefix[k]-new_prefix[i]))
                 new_dp[1][i] = max(new_dp[1][i], new_dp[0][i])
