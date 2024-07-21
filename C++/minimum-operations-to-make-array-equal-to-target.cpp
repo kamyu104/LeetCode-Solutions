@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// greedy
+// greedy, lc1526
 class Solution {
 public:
     long long minimumOperations(vector<int>& nums, vector<int>& target) {
