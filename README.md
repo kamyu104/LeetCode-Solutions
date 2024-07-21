@@ -92,7 +92,7 @@
 3133 | [Minimum Array End](https://leetcode.com/problems/minimum-array-end/) | [C++](./C++/minimum-array-end.cpp) [Python](./Python/minimum-array-end.py) | _O(logn)_ | _O(1)_ | Medium | | Bit Manipulation
 3199 | [Count Triplets with Even XOR Set Bits I](https://leetcode.com/problems/count-triplets-with-even-xor-set-bits-i/) | [C++](./C++/count-triplets-with-even-xor-set-bits-i.cpp) [Python](./Python/count-triplets-with-even-xor-set-bits-i.py) | _O(nlogr)_ | _O(1)_ | Easy | 🔒 | Brute Force, Bit Manipulation, Parity
 3215 | [Count Triplets with Even XOR Set Bits II](https://leetcode.com/problems/count-triplets-with-even-xor-set-bits-ii/) | [C++](./C++/count-triplets-with-even-xor-set-bits-ii.cpp) [Python](./Python/count-triplets-with-even-xor-set-bits-ii.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 | Bit Manipulation, Parity
-3226 | [Number of Bit Changes to Make Two Integers Equal](https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/) | [C++](./C++/number-of-bit-changes-to-make-two-integers-equal.cpp) [Python](./Python/number-of-bit-changes-to-make-two-integers-equal.py) | _O(logn)_ | _O(1)_ | Medium | | Bit Manipulation
+3226 | [Number of Bit Changes to Make Two Integers Equal](https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/) | [C++](./C++/number-of-bit-changes-to-make-two-integers-equal.cpp) [Python](./Python/number-of-bit-changes-to-make-two-integers-equal.py) | _O(logn)_ | _O(1)_ | Easy | | Bit Manipulation
 
 <br/>
 <div align="right">
@@ -644,7 +644,7 @@
 3190 | [Find Minimum Operations to Make All Elements Divisible by Three](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/) | [C++](./C++/find-minimum-operations-to-make-all-elements-divisible-by-three.cpp) [Python](./Python/find-minimum-operations-to-make-all-elements-divisible-by-three.py) | _O(n)_ | _O(1)_ | Easy | | Math |
 3200 | [Maximum Height of a Triangle](https://leetcode.com/problems/maximum-height-of-a-triangle/) | [C++](./C++/maximum-height-of-a-triangle.cpp) [Python](./Python/maximum-height-of-a-triangle.py) | _O(logn)_ | _O(1)_ | Easy | | Simulation, Math |
 3222 | [Find the Winning Player in Coin Game](https://leetcode.com/problems/find-the-winning-player-in-coin-game/) | [C++](./C++/find-the-winning-player-in-coin-game.cpp) [Python](./Python/find-the-winning-player-in-coin-game.py) | _O(1)_ | _O(1)_ | Easy | | Math |
-3227 | [Vowels Game in a String](https://leetcode.com/problems/vowels-game-in-a-string/) | [C++](./C++/vowels-game-in-a-string.cpp) [Python](./Python/vowels-game-in-a-string.py) | _O(n)_ | _O(1)_ | Easy | | Math |
+3227 | [Vowels Game in a String](https://leetcode.com/problems/vowels-game-in-a-string/) | [C++](./C++/vowels-game-in-a-string.cpp) [Python](./Python/vowels-game-in-a-string.py) | _O(n)_ | _O(1)_ | Medium | | Math |
 
 <br/>
 <div align="right">
