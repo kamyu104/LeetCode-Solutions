@@ -18,10 +18,10 @@ public:
             vector<vector<int64_t>> new_dp(2, vector<int64_t>(size(grid) + 1));
             for (int i = 0; i <= size(grid); ++i) {
                 for (int k = 0; k <= i; ++k) {
-                    new_dp[0][i] = max({new_dp[0][i], max(prefix[i] - prefix[k], static_cast<int64_t>(0)) + dp[0][k], dp[1][k]});
+                    new_dp[0][i] = max({new_dp[0][i], (prefix[i] - prefix[k]) + dp[0][k], dp[1][k]});
                 }
                 for (int k = i + 1; k <= size(grid); ++k) {
-                    new_dp[1][i] = max(new_dp[1][i], dp[1][k] + max(new_prefix[k] - new_prefix[i], static_cast<int64_t>(0)));
+                    new_dp[1][i] = max(new_dp[1][i], dp[1][k] + (new_prefix[k] - new_prefix[i]));
                 }
                 new_dp[1][i] = max(new_dp[1][i], new_dp[0][i]);
             }
