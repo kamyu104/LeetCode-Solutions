@@ -1,5 +1,5 @@
 // Time:  O(n^3)
-// Space: O(n^2)
+// Space: O(n)
 
 // prefix sum, dp
 class Solution {
