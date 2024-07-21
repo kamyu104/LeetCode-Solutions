@@ -19,8 +19,9 @@ public:
             for (int i = 0; i <= size(grid); ++i) {
                 for (int k = 0; k <= size(grid); ++k) {
                     new_dp[0][i] = max({new_dp[0][i], max(prefix[i] - prefix[k], static_cast<int64_t>(0)) + dp[0][k], dp[1][k]});
-                    new_dp[1][i] = max({new_dp[1][i], new_dp[0][i], dp[1][k] + max(new_prefix[k] - new_prefix[i], static_cast<int64_t>(0))});
+                    new_dp[1][i] = max(new_dp[1][i], dp[1][k] + max(new_prefix[k] - new_prefix[i], static_cast<int64_t>(0)));
                 }
+                new_dp[1][i] = max(new_dp[1][i], new_dp[0][i]);
             }
             dp = move(new_dp);
             prefix = move(new_prefix);
