@@ -1,4 +1,50 @@
-# Time:  O(n)
+#import numpy as np
+import pandas as pd
+
+# Generate sample data
+def generate_data(normal=True, positive_outlier=False, negative_outlier=False):
+    np.random.seed(42)
+    data = np.random.normal(loc=100, scale=10, size=120) if normal else np.random.uniform(1, 200, size=120)
+    
+    if positive_outlier:
+        data[0] = 1000  # Add a positive outlier
+    if negative_outlier:
+        data[1] = 1     # Add a negative outlier
+        
+    postex_data = data * (1 + np.random.normal(loc=0, scale=0.05, size=120))  # Adding small noise to simulate postex values
+    return pd.DataFrame({'Historical': data, 'Postex': postex_data})
+
+# Calculate errors using both methods
+def calculate_errors(df):
+    # Method 1: Mean of Relative Errors
+    relative_errors = (df['Historical'] - df['Postex']) / df['Historical']
+    mean_relative_error = relative_errors.mean()
+    
+    # Method 2: Relative Error of Means
+    mean_historical = df['Historical'].mean()
+    mean_postex = df['Postex'].mean()
+    relative_error_of_means = (mean_historical - mean_postex) / mean_historical
+    
+    return mean_relative_error, relative_error_of_means
+
+# Test cases
+test_cases = [
+    ("No Outliers", generate_data(normal=True)),
+    ("Positive Outlier", generate_data(normal=True, positive_outlier=True)),
+    ("Negative Outlier", generate_data(normal=True, negative_outlier=True)),
+    ("Mixed Data", generate_data(normal=False)),
+]
+
+# Run tests
+results = []
+for case_name, df in test_cases:
+    mean_relative_error, relative_error_of_means = calculate_errors(df)
+    results.append((case_name, mean_relative_error, relative_error_of_means))
+
+# Display results
+results_df = pd.DataFrame(results, columns=["Case", "Mean Relative Error", "Relative Error of Means"])
+import ace_tools as tools; tools.display_dataframe_to_user(name="Error Calculation Comparison", dataframe=results_df)
+print(results_df) Time:  O(n)
 # Space: O(n)
 
 import operator
