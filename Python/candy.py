@@ -1,4 +1,85 @@
-#import numpy as np
+import numpy as np
+import pandas as pd
+
+# Generate sample data
+np.random.seed(42)
+days = 120
+names_per_day = 500
+rics = [f'ric_{i}' for i in range(names_per_day)]
+dates = pd.date_range(start='2024-01-01', periods=days, freq='D')
+
+data = {
+    'date': np.repeat(dates, names_per_day),
+    'ric': rics * days,
+    'historical': np.random.normal(loc=100, scale=10, size=days * names_per_day),
+    'postx': np.random.normal(loc=100, scale=10, size=days * names_per_day)
+}
+
+df = pd.DataFrame(data)
+
+# Calculate impr and sign_impr
+df['impr'] = (df['historical'] - df['postx']) / df['historical'] * 100
+df['sign_impr'] = np.where(df['impr'] > 0, 1, 0)
+
+# Split into left and right parts
+split_date = pd.to_datetime('2024-04-01')
+left_part = df[df['date'] < split_date]
+right_part = df[df['date'] >= split_date]
+
+# Calculate mean and median impr, mean and median sign_impr for each ric in left and right parts
+left_stats = left_part.groupby('ric').agg(
+    mean_impr=('impr', 'mean'),
+    median_impr=('impr', 'median'),
+    mean_sign_impr=('sign_impr', 'mean'),
+    median_sign_impr=('sign_impr', 'median')
+).reset_index()
+
+right_stats = right_part.groupby('ric').agg(
+    mean_impr=('impr', 'mean'),
+    median_impr=('impr', 'median'),
+    mean_sign_impr=('sign_impr', 'mean'),
+    median_sign_impr=('sign_impr', 'median')
+).reset_index()
+
+# Merge the statistics
+merged_stats = pd.merge(left_stats, right_stats, on='ric', suffixes=('_left', '_right'))
+
+# Create a function to categorize errors
+def categorize_error(error):
+    if error < 0:
+        return 'Negative'
+    else:
+        return 'Positive'
+
+def categorize_sign(sign_impr):
+    if sign_impr < 0.5:
+        return 'Low'
+    else:
+        return 'High'
+
+# Categorize errors and sign_impr for left and right parts
+merged_stats['impr_category_left'] = merged_stats['mean_impr_left'].apply(categorize_error)
+merged_stats['impr_category_right'] = merged_stats['mean_impr_right'].apply(categorize_error)
+merged_stats['sign_impr_category_left'] = merged_stats['mean_sign_impr_left'].apply(categorize_sign)
+merged_stats['sign_impr_category_right'] = merged_stats['mean_sign_impr_right'].apply(categorize_sign)
+
+# Create confusion matrices
+impr_confusion_matrix = pd.crosstab(merged_stats['impr_category_left'], merged_stats['impr_category_right'])
+sign_impr_confusion_matrix = pd.crosstab(merged_stats['sign_impr_category_left'], merged_stats['sign_impr_category_right'])
+
+# Display results
+print("Improvement Confusion Matrix:")
+print(impr_confusion_matrix)
+
+print("\nSign Improvement Confusion Matrix:")
+print(sign_impr_confusion_matrix)
+
+# Correlation analysis
+correlation = merged_stats[['mean_impr_left', 'mean_impr_right', 'mean_sign_impr_left', 'mean_sign_impr_right']].corr()
+print("\nCorrelation Matrix:")
+print(correlation)
+
+import numpy as np
 import pandas as pd
 
 # Generate sample data
