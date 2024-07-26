@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3229%20%2F%203229-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3231%20%2F%203231-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -816,6 +816,7 @@
 3134 | [Find the Median of the Uniqueness Array](https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/) | [C++](./C++/find-the-median-of-the-uniqueness-array.cpp) [Python](./Python/find-the-median-of-the-uniqueness-array.py) | _O(nlogn)_ | _O(n)_ | Hard | | Binary Search, Two Pointers, Sliding Window |
 3135 | [Equalize Strings by Adding or Removing Characters at Ends](https://leetcode.com/problems/equalize-strings-by-adding-or-removing-characters-at-ends/) | [C++](./C++/equalize-strings-by-adding-or-removing-characters-at-ends.cpp) [Python](./Python/equalize-strings-by-adding-or-removing-characters-at-ends.py) | _O((n + m) * log(min(n, m)))_ | _O(min(n, m))_ | Medium | 🔒 | Binary Search, `Rabin-Karp Algorithm`, Rolling Hash, DP
 3145 | [Find Products of Elements of Big Array](https://leetcode.com/problems/find-products-of-elements-of-big-array/) | [C++](./C++/find-products-of-elements-of-big-array.cpp) [Python](./Python/find-products-of-elements-of-big-array.py) | _O(q * (logr)^2)_ | _O(1)_ | Hard | | Binary Search, Combinatorics, Bitmasks, Fast Exponentiation
+3231 | [Minimum Number of Increasing Subsequence to Be Removed](https://leetcode.com/problems/minimum-number-of-increasing-subsequence-to-be-removed/) | [C++](./C++/minimum-number-of-increasing-subsequence-to-be-removed.cpp) [Python](./Python/minimum-number-of-increasing-subsequence-to-be-removed.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒, variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Binary Search
 
 <br/>
 
@@ -1545,6 +1546,7 @@
 3204 | [Bitwise User Permissions Analysis](https://leetcode.com/problems/bitwise-user-permissions-analysis/) | [MySQL](./MySQL/bitwise-user-permissions-analysis.sql) | _O(n)_ | _O(n)_       | Medium           |🔒|  |
 3214 | [Year on Year Growth Rate](https://leetcode.com/problems/year-on-year-growth-rate/) | [MySQL](./MySQL/year-on-year-growth-rate.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒|  Window Function |
 3220 | [Odd and Even Transactions](https://leetcode.com/problems/odd-and-even-transactions/) | [MySQL](./MySQL/odd-and-even-transactions.sql) | _O(nlogn)_ | _O(n)_       | Medium           ||  |
+3230 | [Customer Purchasing Behavior Analysis](https://leetcode.com/problems/customer-purchasing-behavior-analysis/) | [MySQL](./MySQL/customer-purchasing-behavior-analysis.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
