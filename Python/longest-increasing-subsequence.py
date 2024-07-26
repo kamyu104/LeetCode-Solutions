@@ -54,6 +54,42 @@ class Solution2(object):
         return len(LIS)
 
 
+# Time:  O(nlogn)
+# Space: O(n)
+# bit, fenwick tree
+class Solution3(object):
+    def lengthOfLIS(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        class BIT(object):  # 0-indexed.
+            def __init__(self, n, default=0, fn=lambda x, y: x+y):
+                self.__bit = [default]*(n+1)  # Extra one for dummy node.
+                self.__default = default
+                self.__fn = fn
+
+            def update(self, i, val):
+                i += 1  # Extra one for dummy node.
+                while i < len(self.__bit):
+                    self.__bit[i] = self.__fn(self.__bit[i], val)
+                    i += (i & -i)
+
+            def query(self, i):
+                i += 1  # Extra one for dummy node.
+                ret = self.__default
+                while i > 0:
+                    ret = self.__fn(ret, self.__bit[i])
+                    i -= (i & -i)
+                return ret
+    
+        lookup = {x:i for i, x in enumerate(sorted(set(nums)))}
+        bit = BIT(len(lookup), fn=max)
+        for x in nums:
+            bit.update(lookup[x], bit.query(lookup[x]-1)+1)
+        return bit.query(len(lookup)-1)
+
+
 # Range Maximum Query
 class SegmentTree(object):  # 0-based index
     def __init__(self, N,
@@ -136,26 +172,24 @@ class SegmentTree(object):  # 0-based index
 
 # Time:  O(nlogn)
 # Space: O(n)
-# optimized from Solution4
-class Solution3(object):
+# optimized from Solution5
+class Solution4(object):
     def lengthOfLIS(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        sorted_nums = sorted(set(nums))
-        lookup = {num:i for i, num in enumerate(sorted_nums)}
-        segment_tree = SegmentTree(len(lookup))
-        for num in nums:
-            segment_tree.update(lookup[num], lookup[num],
-                                segment_tree.query(0, lookup[num]-1)+1 if lookup[num] >= 1 else 1)
-        return segment_tree.query(0, len(lookup)-1) if len(lookup) >= 1 else 0
+        val_to_idx = {num:i for i, num in enumerate(sorted(set(nums)))}
+        st = SegmentTree(len(val_to_idx))
+        for x in nums:
+            st.update(val_to_idx[x], val_to_idx[x], st.query(0, val_to_idx[x]-1)+1 if val_to_idx[x] >= 1 else 1)
+        return st.query(0, len(val_to_idx)-1) if len(val_to_idx) >= 1 else 0
 
 
 # Time:  O(n^2)
 # Space: O(n)
 # Traditional DP solution.
-class Solution4(object):
+class Solution5(object):
     def lengthOfLIS(self, nums):
         """
         :type nums: List[int]
