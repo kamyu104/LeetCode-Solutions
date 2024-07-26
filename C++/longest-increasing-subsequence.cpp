@@ -67,21 +67,78 @@ private:
 
 // Time:  O(nlogn)
 // Space: O(n)
-// optimized from Solution4
+// bit, fenwick tree
 class Solution3 {
 public:
     int lengthOfLIS(vector<int>& nums) {
         set<int> sorted_nums(cbegin(nums), cend(nums));
-        unordered_map<int, int> lookup;
+        unordered_map<int, int> val_to_idx;
         for (const auto& num : sorted_nums) {
-            lookup[num] = size(lookup);
+            val_to_idx[num] = size(val_to_idx);
         }
-        SegmentTree segment_tree(size(lookup));
-        for (const auto& num : nums) {
-            segment_tree.update(lookup[num], lookup[num],
-                                (lookup[num] >= 1) ? segment_tree.query(0, lookup[num] - 1) + 1 : 1);
+        const auto& fn = [](const auto& a, const auto& b) {
+            return max(a, b);
+        };
+
+        BIT<int> bit(size(val_to_idx), 0, fn);
+        for (const auto& x : nums) {
+            bit.update(val_to_idx[x], bit.query(val_to_idx[x] - 1) + 1);
         }
-        return (size(lookup) >= 1) ? segment_tree.query(0, size(lookup) - 1) : 0;
+        return bit.query(size(val_to_idx) - 1);
+    }
+
+private:
+    template<typename T>
+    class BIT {
+    public:
+        BIT(int n, T val, const function<T (T, T)> fn)
+          : bit_(n + 1, val),
+            fn_(fn) {  // 0-indexed
+        }
+        
+        void update(int i, T val) {
+            ++i;
+            for (; i < size(bit_); i += lower_bit(i)) {
+                bit_[i] = fn_(bit_[i], val);
+            }
+        }
+
+        T query(int i) const {
+            ++i;
+            auto total = bit_[0];
+            for (; i > 0; i -= lower_bit(i)) {
+                total = fn_(total, bit_[i]);
+            }
+            return total;
+        }
+    
+    private:
+        int lower_bit(int i) const {
+            return i & -i;
+        }
+        
+        vector<T> bit_;
+        const function<T (T, T)> fn_;
+    };
+};
+
+// Time:  O(nlogn)
+// Space: O(n)
+// optimized from Solution5
+class Solution4 {
+public:
+    int lengthOfLIS(vector<int>& nums) {
+        set<int> sorted_nums(cbegin(nums), cend(nums));
+        unordered_map<int, int> val_to_idx;
+        for (const auto& x : sorted_nums) {
+            val_to_idx[x] = size(val_to_idx);
+        }
+        SegmentTree st(size(val_to_idx));
+        for (const auto& x : nums) {
+            st.update(val_to_idx[x], val_to_idx[x],
+                      (val_to_idx[x] >= 1) ? st.query(0, val_to_idx[x] - 1) + 1 : 1);
+        }
+        return (size(val_to_idx) >= 1) ? st.query(0, size(val_to_idx) - 1) : 0;
     }
 
 private:
@@ -164,7 +221,7 @@ private:
 // Time:  O(n^2)
 // Space: O(n)
 // Traditional DP solution.
-class Solution4 {
+class Solution5 {
 public:
     int lengthOfLIS(vector<int>& nums) {
         const int n = nums.size();
