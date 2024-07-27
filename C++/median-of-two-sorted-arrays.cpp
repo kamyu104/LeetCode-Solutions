@@ -67,7 +67,7 @@ public:
         const auto& findKthInSortedArrays = [&](const auto& arrays, int k) {
             const auto& check = [&](int num) {
                 int res = 0;
-                for (const auto arr : arrays) {
+                for (const auto& arr : arrays) {
                     if (!empty(*arr)) {  // count the number of values which are less or equal to num
                         res += distance(cbegin(*arr), upper_bound(cbegin(*arr), cend(*arr), num));
                     }
