@@ -27,7 +27,7 @@ public:
             }
 
             // Find a partition of A and B
-            // where min left s.t. A[left] >= B[k - 1 - left]. Thus A[left] is the (k+1)-th or above element.
+            // where min i s.t. A[i] >= B[k - 1 - i]. Thus A[i] is the (k+1)-th or above element.
             const int i = binary_search(0, min(m, k) - 1, [&](int i) {
                 return 0 <= k - 1 - i && k - 1 - i < n && A[i] >= B[k - 1 - i];
             });
