@@ -22,7 +22,7 @@ class Solution(object):
             if m > n:
                 m, n = n, m
                 A, B = B, A
-            i = binary_search(0, min(m, k)-1, lambda i: 0 <= k-1-i < n and A[i] >= B[k-1-i])
+            i = binary_search(max(k-n, 0), min(m, k)-1, lambda i: A[i] >= B[k-1-i])
             return max(A[i-1] if i-1 >= 0 else float("-inf"), B[k-1-i] if k-1-i >= 0 else float("-inf"))
 
         len1, len2 = len(nums1), len(nums2)
