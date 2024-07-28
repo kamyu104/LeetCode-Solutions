@@ -24,6 +24,28 @@ class Solution(object):
 
 
 # Time:  O(n * sqrt(n)) = O(n^(3/2))
+# Space: O(n)
+# two pointers, sliding window
+class Solution2(object):
+    def numberOfSubstrings(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        result = 0
+        idxs = [-1]+[i for i, x in enumerate(s) if x == '0']+[len(s)]
+        curr = 1
+        for i in xrange(len(s)):
+            if idxs[curr] == i:
+                curr += 1
+            cnt = 0
+            for c in xrange(min(int(len(s)**0.5)+1, curr)):
+                cnt += (idxs[curr-c]-1 if c else i)-idxs[curr-c-1]
+                result += max(min((idxs[curr-c] if c else i)-idxs[curr-c-1], cnt-c**2+1), 0)
+        return result
+
+
+# Time:  O(n * sqrt(n)) = O(n^(3/2))
 # Space: O(1)
 # two pointers, sliding window
 class Solution_TLE(object):
