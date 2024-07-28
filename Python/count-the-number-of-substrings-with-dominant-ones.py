@@ -40,7 +40,7 @@ class Solution2(object):
                     left += 1
                 if not (right-left == c and ((i-idxs[left-1])-c) >= c**2):
                     continue
-                result += min((idxs[left] if c else i)-idxs[left-1], ((i-idxs[left-1])-c)-c**2+1)
+                result += min(min(idxs[left], i)-idxs[left-1], ((i-idxs[left-1])-c)-c**2+1)
         return result
 
 
