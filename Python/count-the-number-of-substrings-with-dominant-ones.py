@@ -10,11 +10,12 @@ class Solution(object):
         """
         result = 0
         idxs = [-1]+[i for i, x in enumerate(s) if x == '0']+[len(s)]
+        l = int(len(s)**0.5)
         curr = 1
         for i in xrange(len(s)):
             if idxs[curr] == i:
                 curr += 1
-            for c in xrange(min(int(len(s)**0.5)+1, curr)):
+            for c in xrange(min(l+1, curr)):
                 if (i-idxs[(curr-c)-1]-c)-c**2+1 >= 1:
                     result += min((idxs[curr-c] if c else i)-idxs[(curr-c)-1], (i-idxs[(curr-c)-1]-c)-c**2+1)
         return result
