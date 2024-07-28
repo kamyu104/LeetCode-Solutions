@@ -15,7 +15,7 @@ class Solution(object):
         for i in xrange(len(s)):
             if idxs[curr] == i:
                 curr += 1
-            for c in xrange(min(int((-1+(1+4*(i+1))**0.5)/2)+1, curr)):  # since c^2 <= i+1-c, thus c <= (-1+(1+4*(i+1))**0.5)/2
+            for c in xrange(min(int((-1+(1+4*(i+1))**0.5)/2)+1, curr)):  # since c^2 <= (i+1)-c, thus c <= (-1+(1+4*(i+1))**0.5)/2
                 if (i-idxs[(curr-c)-1]-c)-c**2+1 >= 1:
                     result += min((idxs[curr-c] if c else i)-idxs[(curr-c)-1], (i-idxs[(curr-c)-1]-c)-c**2+1)
         return result
