@@ -40,8 +40,7 @@ class Solution2(object):
                 curr += 1
             cnt = 0
             for c in xrange(min(int(len(s)**0.5)+1, curr)):
-                cnt += (idxs[curr-c]-1 if c else i)-idxs[curr-c-1]
-                result += max(min((idxs[curr-c] if c else i)-idxs[curr-c-1], cnt-c**2+1), 0)
+                result += max(min((idxs[curr-c] if c else i)-idxs[curr-c-1], (i-idxs[curr-c-1]-c)-c**2+1), 0)
         return result
 
 
