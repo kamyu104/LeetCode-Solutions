@@ -14,7 +14,6 @@ class Solution(object):
         for i in xrange(len(s)):
             if idxs[curr] == i:
                 curr += 1
-            cnt = 0
             for c in xrange(min(int(len(s)**0.5)+1, curr)):
                 if (i-idxs[(curr-c)-1]-c)-c**2+1 >= 1:
                     result += min((idxs[curr-c] if c else i)-idxs[(curr-c)-1], (i-idxs[(curr-c)-1]-c)-c**2+1)
