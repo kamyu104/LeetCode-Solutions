@@ -18,7 +18,7 @@ class Solution(object):
                 if right-left == c+1:
                     left += 1
                 if not (right-left == c and ((i-idxs[left-1])-c) >= c**2):
-                    continue     
+                    continue
                 result += min((idxs[left] if c else i)-idxs[left-1], ((i-idxs[left-1])-c)-c**2+1)
         return result
 
