@@ -16,7 +16,8 @@ class Solution(object):
                 curr += 1
             cnt = 0
             for c in xrange(min(int(len(s)**0.5)+1, curr)):
-                result += min((idxs[curr-c] if c else i)-idxs[(curr-c)-1], max((i-idxs[(curr-c)-1]-c)-c**2+1, 0))
+                if (i-idxs[(curr-c)-1]-c)-c**2+1 >= 1:
+                    result += min((idxs[curr-c] if c else i)-idxs[(curr-c)-1], (i-idxs[(curr-c)-1]-c)-c**2+1)
         return result
 
 
