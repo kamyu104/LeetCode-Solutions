@@ -1262,7 +1262,7 @@
 3108 | [Minimum Cost Walk in Weighted Graph](https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/) | [C++](./C++/minimum-cost-walk-in-weighted-graph.cpp) [Python](./Python/minimum-cost-walk-in-weighted-graph.py) | _O(n + e + q)_ | _O(n)_ | Hard | | Union Find
 3112 | [Minimum Time to Visit Disappearing Nodes](https://leetcode.com/problems/find-the-closest-marked-node/)  | [C++](./C++/minimum-time-to-visit-disappearing-nodes.cpp) [Python](./Python/minimum-time-to-visit-disappearing-nodes.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium           | | Graph, `Dijkstra's Algorithm` |
 3123 | [Find Edges in Shortest Paths](https://leetcode.com/problems/find-edges-in-shortest-paths/)  | [C++](./C++/find-edges-in-shortest-paths.cpp) [Python](./Python/find-edges-in-shortest-paths.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard           | | Graph, `Dijkstra's Algorithm` |
-3235 | [Check if the Rectangle Corner Is Reachable](https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/)  | [C++](./C++/check-if-the-rectangle-corner-is-reachable.cpp) [Python](./Python/check-if-the-rectangle-corner-is-reachable.py) |  _O(n^2)_ | _O(n)_ | Hard           | | Graph, BFS, DFS |
+3235 | [Check if the Rectangle Corner Is Reachable](https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/)  | [C++](./C++/check-if-the-rectangle-corner-is-reachable.cpp) [Python](./Python/check-if-the-rectangle-corner-is-reachable.py) |  _O(n^2)_ | _O(n)_ | Hard           | | Graph, BFS, DFS, Union Find |
 
 <br/>
 <div align="right">
