@@ -17,7 +17,7 @@ public:
             if (idxs[curr] == i) {
                 ++curr;
             }
-            const int l = (-1 + sqrt(1 + 4 * (i + 1))) / 2;  // since c^2 <= i+1-c, thus c <= (-1+(1+4*(i+1))**0.5)/2
+            const int l = (-1 + sqrt(1 + 4 * (i + 1))) / 2;  // since c^2 <= (i+1)-c, thus c <= (-1+(1+4*(i+1))**0.5)/2
             for (int c = 0; c <= min(l, curr - 1); ++c) {
                 if (((i - idxs[(curr - c) - 1]) - c) - c * c + 1 >= 1) {
                     result += min((c ? idxs[curr - c] : i) - idxs[(curr - c) - 1], ((i - idxs[(curr - c) - 1]) - c) - c * c + 1);
