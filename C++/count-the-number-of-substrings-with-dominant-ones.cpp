@@ -17,17 +17,14 @@ public:
             for (int i = 0, left = 1, right = 1, cnt = 0; i < size(s); ++i) {
                 if (idxs[right] == i) {
                     ++right;
-                } else {
-                    ++cnt;
                 }
                 if (right - left == c + 1) {
-                    cnt -= (idxs[left] - 1) - idxs[left - 1];
                     ++left;
                 }
-                if (!(right - left == c && cnt >= c * c)) {
+                if (!(right - left == c && ((i - idxs[left - 1]) - c) >= c * c)) {
                     continue;
                 }
-                result += min((c ? idxs[left] : i) - idxs[left - 1], cnt - c * c + 1);
+                result += min((c ? idxs[left] : i) - idxs[left - 1], ((i - idxs[left - 1]) - c) - c * c + 1);
             }
         }
         return result;
