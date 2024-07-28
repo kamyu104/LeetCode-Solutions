@@ -10,12 +10,12 @@ class Solution(object):
         """
         result = 0
         idxs = [-1]+[i for i, x in enumerate(s) if x == '0']+[len(s)]
-        l = int(len(s)**0.5)
+        
         curr = 1
         for i in xrange(len(s)):
             if idxs[curr] == i:
                 curr += 1
-            for c in xrange(min(l+1, curr)):
+            for c in xrange(min(int((-1+(1+4*(i+1))**0.5)/2)+1, curr)):  # since c^2 <= i+1-c, thus c <= (-1+(1+4*(i+1))**0.5)/2
                 if (i-idxs[(curr-c)-1]-c)-c**2+1 >= 1:
                     result += min((idxs[curr-c] if c else i)-idxs[(curr-c)-1], (i-idxs[(curr-c)-1]-c)-c**2+1)
         return result
@@ -32,7 +32,7 @@ class Solution2(object):
         """
         result = 0
         idxs = [-1]+[i for i, x in enumerate(s) if x == '0']+[len(s)]
-        for c in xrange(int(len(s)**0.5)+1):
+        for c in xrange(int((-1+(1+4*len(s))**0.5)/2)+1):  # since c^2 <= n-c, thus c <= (-1+(1+4*n)**0.5)/2
             left = right = 1
             for i in xrange(len(s)):
                 if idxs[right] == i:
@@ -55,7 +55,7 @@ class Solution_TLE(object):
         :rtype: int
         """
         result = 0
-        for c in xrange(int(len(s)**0.5)+1):
+        for c in xrange(int((-1+(1+4*len(s))**0.5)/2)+1):  # since c^2 <= n-c, thus c <= (-1+(1+4*n)**0.5)/2
             cnt = [0]*2
             left = curr = 0
             for right in xrange(len(s)):
