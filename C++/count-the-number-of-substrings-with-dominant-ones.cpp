@@ -54,7 +54,7 @@ public:
                 if (!(right - left == c && ((i - idxs[left - 1]) - c) >= c * c)) {
                     continue;
                 }
-                result += min((c ? idxs[left] : i) - idxs[left - 1], ((i - idxs[left - 1]) - c) - c * c + 1);
+                result += min(min(idxs[left], i) - idxs[left - 1], ((i - idxs[left - 1]) - c) - c * c + 1);
             }
         }
         return result;
