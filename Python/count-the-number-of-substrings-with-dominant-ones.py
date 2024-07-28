@@ -11,19 +11,15 @@ class Solution(object):
         result = 0
         idxs = [-1]+[i for i, x in enumerate(s) if x == '0']+[len(s)]
         for c in xrange(int(len(s)**0.5)+1):
-            cnt = 0
             left = right = 1
             for i in xrange(len(s)):
                 if idxs[right] == i:
                     right += 1
-                else:
-                    cnt += 1
                 if right-left == c+1:
-                    cnt -= (idxs[left]-1)-idxs[left-1]
                     left += 1
-                if not (right-left == c and cnt >= c**2):
+                if not (right-left == c and ((i-idxs[left-1])-c) >= c**2):
                     continue     
-                result += min((idxs[left] if c else i)-idxs[left-1], cnt-c**2+1)
+                result += min((idxs[left] if c else i)-idxs[left-1], ((i-idxs[left-1])-c)-c**2+1)
         return result
 
 
