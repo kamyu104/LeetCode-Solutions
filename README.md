@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3231%20%2F%203231-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3235%20%2F%203235-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -645,6 +645,7 @@
 3200 | [Maximum Height of a Triangle](https://leetcode.com/problems/maximum-height-of-a-triangle/) | [C++](./C++/maximum-height-of-a-triangle.cpp) [Python](./Python/maximum-height-of-a-triangle.py) | _O(logn)_ | _O(1)_ | Easy | | Simulation, Math |
 3222 | [Find the Winning Player in Coin Game](https://leetcode.com/problems/find-the-winning-player-in-coin-game/) | [C++](./C++/find-the-winning-player-in-coin-game.cpp) [Python](./Python/find-the-winning-player-in-coin-game.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 3227 | [Vowels Game in a String](https://leetcode.com/problems/vowels-game-in-a-string/) | [C++](./C++/vowels-game-in-a-string.cpp) [Python](./Python/vowels-game-in-a-string.py) | _O(n)_ | _O(1)_ | Medium | | Math |
+3232 | [Find if Digit Game Can Be Won](https://leetcode.com/problems/find-if-digit-game-can-be-won/) | [C++](./C++/find-if-digit-game-can-be-won.cpp) [Python](./Python/find-if-digit-game-can-be-won.py) | _O(n)_ | _O(1)_ | Easy | | Brute Force, Game Theory |
 
 <br/>
 <div align="right">
@@ -762,7 +763,7 @@
 3171 | [Find Subarray With Bitwise OR Closest to K](https://leetcode.com/problems/find-subarray-with-bitwise-or-closest-to-k/)| [C++](./C++/find-subarray-with-bitwise-or-closest-to-k.cpp) [Python](./Python/find-subarray-with-bitwise-or-closest-to-k.py) | _O(nlogr)_    | _O(logr)_          | Hard           | variant of [Find a Value of a Mysterious Function Closest to Target](https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target/) | DP, Freq Table, Two Pointers, Sliding Window
 3206 | [Alternating Groups I](https://leetcode.com/problems/alternating-groups-i/)| [C++](./C++/alternating-groups-i.cpp) [Python](./Python/alternating-groups-i.py) | _O(n)_    | _O(1)_          | Easy           |  | Two Pointers, Sliding Window
 3208 | [Alternating Groups II](https://leetcode.com/problems/alternating-groups-ii/)| [C++](./C++/alternating-groups-ii.cpp) [Python](./Python/alternating-groups-ii.py) | _O(n)_    | _O(1)_          | Medium           |  | Two Pointers, Sliding Window
-3209 | [Number of Subarrays With AND Value of K](https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/)| [C++](./C++/number-of-subarrays-with-and-value-of-k.cpp) [Python](./Python/number-of-subarrays-with-and-value-of-k.py) | _O(nlogr)_    | _O(logr)_          | Hard           | variant of [Find Subarray With Bitwise OR Closest to K](https://leetcode.com/problems/find-subarray-with-bitwise-or-closest-to-k/) | DP
+3234 | [Count the Number of Substrings With Dominant Ones](https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/)| [C++](./C++/count-the-number-of-substrings-with-dominant-ones.cpp) [Python](./Python/count-the-number-of-substrings-with-dominant-ones.py) | _O(n^(3/2))_    | _O(1)_          | Medium           |  | Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -817,6 +818,7 @@
 3135 | [Equalize Strings by Adding or Removing Characters at Ends](https://leetcode.com/problems/equalize-strings-by-adding-or-removing-characters-at-ends/) | [C++](./C++/equalize-strings-by-adding-or-removing-characters-at-ends.cpp) [Python](./Python/equalize-strings-by-adding-or-removing-characters-at-ends.py) | _O((n + m) * log(min(n, m)))_ | _O(min(n, m))_ | Medium | 🔒 | Binary Search, `Rabin-Karp Algorithm`, Rolling Hash, DP
 3145 | [Find Products of Elements of Big Array](https://leetcode.com/problems/find-products-of-elements-of-big-array/) | [C++](./C++/find-products-of-elements-of-big-array.cpp) [Python](./Python/find-products-of-elements-of-big-array.py) | _O(q * (logr)^2)_ | _O(1)_ | Hard | | Binary Search, Combinatorics, Bitmasks, Fast Exponentiation
 3231 | [Minimum Number of Increasing Subsequence to Be Removed](https://leetcode.com/problems/minimum-number-of-increasing-subsequence-to-be-removed/) | [C++](./C++/minimum-number-of-increasing-subsequence-to-be-removed.cpp) [Python](./Python/minimum-number-of-increasing-subsequence-to-be-removed.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒, variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Binary Search
+3233 | [Find the Count of Numbers Which Are Not Special](https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/) | [C++](./C++/find-the-count-of-numbers-which-are-not-special.cpp) [Python](./Python/find-the-count-of-numbers-which-are-not-special.py) | precompute: _O(sqrt(r))_<br>runtime: _O(logr)_ | _O(sqrt(r))_ | Medium | | Number Theory, Binary Search |
 
 <br/>
 
@@ -1061,6 +1063,7 @@
 3197 | [Find the Minimum Area to Cover All Ones II](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/) | [C++](./C++/find-the-minimum-area-to-cover-all-ones-ii.cpp) [Python](./Python/find-the-minimum-area-to-cover-all-ones-ii.py) | _O(max(n, m)^2)_ | _O(max(n, m)^2)_ | Hard | | Array, Brute Force, Prefix Sum, Binary Search, RMQ, Sparse Table, DP
 3201 | [Find the Maximum Length of Valid Subsequence I](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/) | [C++](./C++/find-the-maximum-length-of-valid-subsequence-i.cpp) [Python](./Python/find-the-maximum-length-of-valid-subsequence-i.py) | _O(n)_ | _O(1)_ | Medium | | Brute Force, DP
 3202 | [Find the Maximum Length of Valid Subsequence II](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/) | [C++](./C++/find-the-maximum-length-of-valid-subsequence-ii.cpp) [Python](./Python/find-the-maximum-length-of-valid-subsequence-ii.py) | _O(n * k)_ | _O(k)_ | Medium | | DP
+3209 | [Number of Subarrays With AND Value of K](https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/)| [C++](./C++/number-of-subarrays-with-and-value-of-k.cpp) [Python](./Python/number-of-subarrays-with-and-value-of-k.py) | _O(nlogr)_    | _O(logr)_          | Hard           | variant of [Find Subarray With Bitwise OR Closest to K](https://leetcode.com/problems/find-subarray-with-bitwise-or-closest-to-k/) | DP
 3212 | [Count Submatrices With Equal Frequency of X and Y](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/) | [C++](./C++/count-submatrices-with-equal-frequency-of-x-and-y.cpp) [Python](./Python/count-submatrices-with-equal-frequency-of-x-and-y.py) | _O(n * m)_ | _O(n * m)_ | Medium | | DP
 3213 | [Construct String with Minimum Cost](https://leetcode.com/problems/construct-string-with-minimum-cost/) | [C++](./C++/construct-string-with-minimum-cost.cpp) [Python](./Python/construct-string-with-minimum-cost.py) | _O(n^2 + w * l)_ | _O(t)_ | Hard | | DP, Trie
 3225 | [Maximum Score From Grid Operations](https://leetcode.com/problems/maximum-score-from-grid-operations/) | [C++](./C++/maximum-score-from-grid-operations.cpp) [Python](./Python/maximum-score-from-grid-operations.py) | _O(n^3)_ | _O(n)_ | Hard | | Prefix Sum, DP
@@ -1259,6 +1262,7 @@
 3108 | [Minimum Cost Walk in Weighted Graph](https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/) | [C++](./C++/minimum-cost-walk-in-weighted-graph.cpp) [Python](./Python/minimum-cost-walk-in-weighted-graph.py) | _O(n + e + q)_ | _O(n)_ | Hard | | Union Find
 3112 | [Minimum Time to Visit Disappearing Nodes](https://leetcode.com/problems/find-the-closest-marked-node/)  | [C++](./C++/minimum-time-to-visit-disappearing-nodes.cpp) [Python](./Python/minimum-time-to-visit-disappearing-nodes.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium           | | Graph, `Dijkstra's Algorithm` |
 3123 | [Find Edges in Shortest Paths](https://leetcode.com/problems/find-edges-in-shortest-paths/)  | [C++](./C++/find-edges-in-shortest-paths.cpp) [Python](./Python/find-edges-in-shortest-paths.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard           | | Graph, `Dijkstra's Algorithm` |
+3235 | [Check if the Rectangle Corner Is Reachable](https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/)  | [C++](./C++/check-if-the-rectangle-corner-is-reachable.cpp) [Python](./Python/check-if-the-rectangle-corner-is-reachable.py) |  _O(n^2)_ | _O(n)_ | Hard           | | Graph, BFS, DFS |
 
 <br/>
 <div align="right">
