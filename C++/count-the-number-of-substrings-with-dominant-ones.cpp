@@ -13,11 +13,12 @@ public:
             }
         }
         idxs.emplace_back(size(s));
+        const int l = sqrt(size(s));
         for (int i = 0, curr = 1; i < size(s); ++i) {
             if (idxs[curr] == i) {
                 ++curr;
             }
-            for (int c = 0; c * c <= min(static_cast<int>(size(s)), (curr - 1) * (curr - 1)); ++c) {
+            for (int c = 0; c <= min(l, curr - 1); ++c) {
                 if (((i - idxs[(curr - c) - 1]) - c) - c * c + 1 >= 1) {
                     result += min((c ? idxs[curr - c] : i) - idxs[(curr - c) - 1], ((i - idxs[(curr - c) - 1]) - c) - c * c + 1);
                 }
@@ -41,7 +42,8 @@ public:
             }
         }
         idxs.emplace_back(size(s));
-        for (int c = 0; c * c <= size(s); ++c) {
+        const int l = sqrt(size(s));
+        for (int c = 0; c <= l; ++c) {
             for (int i = 0, left = 1, right = 1; i < size(s); ++i) {
                 if (idxs[right] == i) {
                     ++right;
