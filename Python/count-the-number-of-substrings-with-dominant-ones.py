@@ -10,16 +10,13 @@ class Solution(object):
         """
         result = 0
         idxs = [-1]+[i for i, x in enumerate(s) if x == '0']+[len(s)]
-        for c in xrange(int(len(s)**0.5)+1):
-            left = right = 1
-            for i in xrange(len(s)):
-                if idxs[right] == i:
-                    right += 1
-                if right-left == c+1:
-                    left += 1
-                if not (right-left == c and ((i-idxs[left-1])-c) >= c**2):
-                    continue
-                result += min((idxs[left] if c else i)-idxs[left-1], ((i-idxs[left-1])-c)-c**2+1)
+        curr = 1
+        for i in xrange(len(s)):
+            if idxs[curr] == i:
+                curr += 1
+            cnt = 0
+            for c in xrange(min(int(len(s)**0.5)+1, curr)):
+                result += max(min((idxs[curr-c] if c else i)-idxs[(curr-c)-1], (i-idxs[(curr-c)-1]-c)-c**2+1), 0)
         return result
 
 
@@ -34,13 +31,16 @@ class Solution2(object):
         """
         result = 0
         idxs = [-1]+[i for i, x in enumerate(s) if x == '0']+[len(s)]
-        curr = 1
-        for i in xrange(len(s)):
-            if idxs[curr] == i:
-                curr += 1
-            cnt = 0
-            for c in xrange(min(int(len(s)**0.5)+1, curr)):
-                result += max(min((idxs[curr-c] if c else i)-idxs[curr-c-1], (i-idxs[curr-c-1]-c)-c**2+1), 0)
+        for c in xrange(int(len(s)**0.5)+1):
+            left = right = 1
+            for i in xrange(len(s)):
+                if idxs[right] == i:
+                    right += 1
+                if right-left == c+1:
+                    left += 1
+                if not (right-left == c and ((i-idxs[left-1])-c) >= c**2):
+                    continue
+                result += min((idxs[left] if c else i)-idxs[left-1], ((i-idxs[left-1])-c)-c**2+1)
         return result
 
 
