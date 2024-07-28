@@ -202,9 +202,8 @@ public:
     }
 };
 
-
 // Time:  O(n^2)
-// Space: O(n^2)
+// Space: O(n)
 // union find
 class Solution_TLE {
 public:
