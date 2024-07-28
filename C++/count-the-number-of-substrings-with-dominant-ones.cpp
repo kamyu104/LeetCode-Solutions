@@ -14,7 +14,7 @@ public:
         }
         idxs.emplace_back(size(s));
         for (int c = 0; c * c <= size(s); ++c) {
-            for (int i = 0, left = 1, right = 1, cnt = 0; i < size(s); ++i) {
+            for (int i = 0, left = 1, right = 1; i < size(s); ++i) {
                 if (idxs[right] == i) {
                     ++right;
                 }
