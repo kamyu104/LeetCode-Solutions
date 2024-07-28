@@ -39,7 +39,7 @@ class Solution_TLE(object):
         result = 0
         for c in xrange(int(len(s)**0.5)+1):
             cnt = [0]*2
-            left = prev = 0
+            left = curr = 0
             for right in xrange(len(s)):
                 cnt[s[right] == '1'] += 1
                 while cnt[0] == c+1:
@@ -47,10 +47,10 @@ class Solution_TLE(object):
                     left += 1
                 if not (cnt[0] == c and cnt[1] >= c**2):
                     continue
-                for prev in xrange(max(prev, left), right):
-                    if s[prev] == '0':
+                for curr in xrange(max(curr, left), right):
+                    if s[curr] == '0':
                         break
                 else:
-                    prev = right
-                result += min(prev-left+1, cnt[1]-c**2+1)
+                    curr = right
+                result += min(curr-left+1, cnt[1]-c**2+1)
         return result
