@@ -10,7 +10,6 @@ class Solution(object):
         """
         result = 0
         idxs = [-1]+[i for i, x in enumerate(s) if x == '0']+[len(s)]
-        
         curr = 1
         for i in xrange(len(s)):
             if idxs[curr] == i:
