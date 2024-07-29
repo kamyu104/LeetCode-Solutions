@@ -1,4 +1,33 @@
+import pandas as pd
 
+# Sample DataFrame
+data = {
+    'ric': ['ric1', 'ric1', 'ric1', 'ric2', 'ric2', 'ric3'],
+    'date': ['2024-07-01', '2024-07-02', '2024-07-03', '2024-07-01', '2024-07-02', '2024-07-01'],
+    'impr': [0.1, 0.2, -0.1, 0.3, -0.2, 0.4]
+}
+
+df = pd.DataFrame(data)
+
+# Approach 1: Group by RIC
+grouped_by_ric = df.groupby('ric')['impr'].agg(
+    mean_impr='mean',
+    median_impr='median',
+    positive_fraction=lambda x: (x > 0).mean()
+).reset_index()
+
+# Approach 2: Group by DATE
+grouped_by_date = df.groupby('date')['impr'].agg(
+    mean_impr='mean',
+    median_impr='median',
+    positive_fraction=lambda x: (x > 0).mean()
+).reset_index()
+
+import ace_tools as tools
+
+# Display the results
+tools.display_dataframe_to_user("Grouped by RIC", grouped_by_ric)
+tools.display_dataframe_to_user("Grouped by DATE", grouped_by_date)
 i am interested in statistics advice for algorithmic trading. if you want to estimate variance from small sample of returns, which functional form can you use?
 ChatGPT
 Estimating variance from a small sample of returns in algorithmic trading can be challenging due to the limited data, which can lead to less reliable estimates. Here are a few functional forms and methods you can consider:
