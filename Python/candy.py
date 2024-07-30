@@ -1,3 +1,139 @@
+here
+import numpy as np
+import pandas as pd
+from arch import arch_model
+
+# Example returns (minRet) and window parameter
+minRet = pd.Series([r1, r2, 0, r4, 0, r6, ..., r100])  # Replace with actual returns
+window = 30  # Example window size
+
+# 1. Bipower Variation (BV)
+bv_products = np.zeros(len(minRet) - 1)
+for i in range(1, len(minRet)):
+    bv_products[i-1] = abs(minRet[i-1]) * abs(minRet[i])
+bv_volatility = pd.Series(bv_products).rolling(window=window, min_periods=5).mean().apply(np.sqrt)
+print("Bipower Variation (BV) Volatility:", bv_volatility)
+
+# 2. Threshold Bipower Variation (TBPV)
+threshold = 0.01
+tbpv_products = np.zeros(len(minRet) - 1)
+for i in range(1, len(minRet)):
+    if abs(minRet[i-1]) > threshold:
+        tbpv_products[i-1] = abs(minRet[i-1]) * abs(minRet[i])
+tbpv_volatility = pd.Series(tbpv_products).rolling(window=window, min_periods=5).mean().apply(np.sqrt)
+print("Threshold Bipower Variation (TBPV) Volatility:", tbpv_volatility)
+
+# 3. Modulated Bipower Variation (MBPV)
+weights = np.ones(len(minRet))  # Example weights, can be customized
+mbpv_products = np.zeros(len(minRet) - 1)
+for i in range(1, len(minRet)):
+    mbpv_products[i-1] = weights[i-1] * abs(minRet[i-1]) * abs(minRet[i])
+mbpv_volatility = pd.Series(mbpv_products).rolling(window=window, min_periods=5).mean().apply(np.sqrt)
+print("Modulated Bipower Variation (MBPV) Volatility:", mbpv_volatility)
+
+# 4. Realized Range Variance (Parkinson Estimator)
+high_prices = [H1, H2, H3, H4, H5, ..., H100]  # Replace with actual high prices
+low_prices = [L1, L2, L3, L4, L5, ..., L100]   # Replace with actual low prices
+parkinson_products = np.zeros(len(high_prices))
+for i in range(len(high_prices)):
+    parkinson_products[i] = (np.log(high_prices[i]) - np.log(low_prices[i])) ** 2
+parkinson_volatility = pd.Series(parkinson_products).rolling(window=window, min_periods=5).mean().apply(lambda x: np.sqrt(x / (4 * np.log(2))))
+print("Realized Range Variance (Parkinson Estimator) Volatility:", parkinson_volatility)
+
+# 5. TriPower Variation (TPV)
+tpv_products = np.zeros(len(minRet) - 2)
+for i in range(2, len(minRet)):
+    tpv_products[i-2] = abs(minRet[i-2]) ** (1/3) * abs(minRet[i-1]) ** (1/3) * abs(minRet[i]) ** (1/3)
+tpv_volatility = pd.Series(tpv_products).rolling(window=window, min_periods=5).mean().apply(np.sqrt)
+print("TriPower Variation (TPV) Volatility:", tpv_volatility)
+
+# 6. Median Realized Variance (MRV)
+squared_returns = minRet ** 2
+pi_factor_mrv = np.pi / (6 - 4 * np.sqrt(3) + np.pi)
+mrv_volatility = squared_returns.rolling(window=window, min_periods=5).apply(lambda x: np.sqrt(pi_factor_mrv * np.median(x)))
+print("Median Realized Variance (MRV) Volatility:", mrv_volatility)
+
+# 7. Exponential Weighted Moving Average (EWMA)
+lambda_ = 0.94
+ewma_var = np.zeros(len(minRet))
+ewma_var[0] = minRet[0] ** 2
+for t in range(1, len(minRet)):
+    ewma_var[t] = lambda_ * ewma_var[t-1] + (1 - lambda_) * (minRet[t] ** 2)
+ewma_volatility = np.sqrt(pd.Series(ewma_var))
+print("EWMA Volatility:", ewma_volatility)
+
+# 8. GARCH Model
+garch_volatility = []
+for i in range(4, len(minRet)):
+    current_window = minRet[max(0, i-window+1):i+1]
+    model = arch_model(current_window, vol='Garch', p=1, q=1)
+    res = model.fit(disp="off")
+    garch_vol = res.conditional_volatility[-1]
+    garch_volatility.append(garch_vol)
+garch_volatility = pd.Series([np.nan]*4 + garch_volatility)
+print("GARCH Volatility:", garch_volatility)
+
+# 9. Hybrid Rolling Windows
+short_window = 5
+hybrid_volatility = []
+for i in range(len(minRet)):
+    if i < short_window:
+        hybrid_volatility.append(np.nan)
+        continue
+    current_window_short = minRet[max(0, i-short_window+1):i+1]
+    current_window_long = minRet[max(0, i-window+1):i+1]
+    short_vol = current_window_short.std()
+    long_vol = current_window_long.std()
+    hybrid_vol = 0.5 * short_vol + 0.5 * long_vol
+    hybrid_volatility.append(hybrid_vol)
+hybrid_volatility = pd.Series(hybrid_volatility)
+print("Hybrid Volatility:", hybrid_volatility)
+
+# 10. Multipower Variation (MPV)
+power = 2
+mpv_products = np.zeros(len(minRet) - 1)
+for i in range(1, len(minRet)):
+    mpv_products[i-1] = abs(minRet[i-1]) ** power * abs(minRet[i]) ** power
+mpv_volatility = pd.Series(mpv_products).rolling(window=window, min_periods=5).mean().apply(np.sqrt)
+print("Multipower Variation (MPV) Volatility:", mpv_volatility)
+
+
+
+
+
+
+
+power = 2
+
+# Step 1: Calculate the product of adjacent returns raised to a power
+mpv_products = np.zeros(len(minRet) - 1)
+for i in range(1, len(minRet)):
+    mpv_products[i-1] = abs(minRet[i-1]) ** power * abs(minRet[i]) ** power
+
+# Step 2: Calculate rolling variance and take sqrt to get rolling volatility
+mpv_volatility = pd.Series(mpv_products).rolling(window=window, min_periods=5).mean().apply(np.sqrt)
+
+print("Multipower Variation (MPV) Volatility:", mpv_volatility)
+
+
+
+
+
+power = 2
+
+# Step 1: Calculate the product of adjacent returns raised to a power
+mpv_products = np.zeros(len(minRet) - 1)
+for i in range(1, len(minRet)):
+    mpv_products[i-1] = abs(minRet[i-1]) ** power * abs(minRet[i]) ** power
+
+# Step 2: Calculate rolling variance and take sqrt to get rolling volatility
+mpv_volatility = pd.Series(mpv_products).rolling(window=window, min_periods=5).mean().apply(np.sqrt)
+
+print("Multipower Variation (MPV) Volatility:", mpv_volatility)
+
+
+
+
 import numpy as np
 import pandas as pd
 from arch import arch_model
