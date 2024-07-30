@@ -54,6 +54,173 @@ hybrid_volatility_60 = hybrid_volatility(df, 5, window_60)
 
 # 4. Threshold Bipower Variation (TBPV)
 def tbpv(df, window, threshold=0.01):
+    tbpv_vol = []
+    for t in range(len(df)):
+        if t < window:
+            tbpv_val = np.nan
+        else:
+            x = df['minRet'][t-window+1:t+1]
+            tbpv_val = np.sum(np.abs(x[:-1]) * np.abs(x[1:]) * (np.abs(x[:-1]) > threshold)) / (window - 1)
+        tbpv_vol.append(tbpv_val)
+    return pd.Series(tbpv_vol).rolling(window=window, min_periods=5).mean()
+
+tbpv_volatility_30 = tbpv(df, window_30, 0.01)
+tbpv_volatility_60 = tbpv(df, window_60, 0.01)
+
+# 5. Modulated Bipower Variation (MBPV)
+def mbpv(df, window, weights=None):
+    if weights is None:
+        weights = np.ones(window)
+    mbpv_vol = []
+    for t in range(len(df)):
+        if t < window:
+            mbpv_val = np.nan
+        else:
+            x = df['minRet'][t-window+1:t+1]
+            mbpv_val = np.sum(weights[:-1] * np.abs(x[:-1]) * np.abs(x[1:])) / (window - 1)
+        mbpv_vol.append(mbpv_val)
+    return pd.Series(mbpv_vol).rolling(window=window, min_periods=5).mean()
+
+weights_30 = np.ones(window_30)
+weights_60 = np.ones(window_60)
+mbpv_volatility_30 = mbpv(df, window_30, weights_30)
+mbpv_volatility_60 = mbpv(df, window_60, weights_60)
+
+# 6. Realized Range Variance (Parkinson Estimator)
+def parkinson_variance(df, window):
+    parkinson_vol = []
+    for t in range(len(df)):
+        if t < window:
+            parkinson_val = np.nan
+        else:
+            h = df['high'][t-window+1:t+1]
+            l = df['low'][t-window+1:t+1]
+            parkinson_val = np.sum((np.log(h) - np.log(l)) ** 2) / (4 * np.log(2) * window)
+        parkinson_vol.append(parkinson_val)
+    return pd.Series(parkinson_vol).rolling(window=window, min_periods=5).mean()
+
+parkinson_volatility_30 = parkinson_variance(df, window_30)
+parkinson_volatility_60 = parkinson_variance(df, window_60)
+
+# 7. Median Realized Variance (MRV)
+def mrv(df, window):
+    mrv_vol = []
+    pi_factor_mrv = np.pi / (6 - 4 * np.sqrt(3) + np.pi)
+    for t in range(len(df)):
+        if t < window:
+            mrv_val = np.nan
+        else:
+            x = df['minRet'][t-window+1:t+1]
+            mrv_val = pi_factor_mrv * np.median(x ** 2)
+        mrv_vol.append(mrv_val)
+    return pd.Series(mrv_vol).rolling(window=window, min_periods=5).mean()
+
+mrv_volatility_30 = mrv(df, window_30)
+mrv_volatility_60 = mrv(df, window_60)
+
+# 8. Bipower Variation (BV)
+def bipower_variation(df, window):
+    bv_vol = []
+    for t in range(len(df)):
+        if t < window:
+            bv_val = np.nan
+        else:
+            x = df['minRet'][t-window+1:t+1]
+            bv_val = np.sum(np.abs(x[:-1]) * np.abs(x[1:])) / (window - 1)
+        bv_vol.append(bv_val)
+    return pd.Series(bv_vol).rolling(window=window, min_periods=5).mean()
+
+bv_volatility_30 = bipower_variation(df, window_30)
+bv_volatility_60 = bipower_variation(df, window_60)
+
+# 9. TriPower Variation (TPV)
+def tpv(df, window):
+    tpv_vol = []
+    for t in range(len(df)):
+        if t < window:
+            tpv_val = np.nan
+        else:
+            x = df['minRet'][t-window+1:t+1]
+            tpv_val = np.sum(np.abs(x[:-2]) ** (1/3) * np.abs(x[1:-1]) ** (1/3) * np.abs(x[2:]) ** (1/3)) / (window - 2)
+        tpv_vol.append(tpv_val)
+    return pd.Series(tpv_vol).rolling(window=window, min_periods=5).mean()
+
+tpv_volatility_30 = tpv(df, window_30)
+tpv_volatility_60 = tpv(df, window_60)
+
+# Print results
+print("EWMA Volatility (30-min):", ewma_volatility_30)
+print("EWMA Volatility (60-min):", ewma_volatility_60)
+print("GARCH Volatility (30-min):", garch_volatility_30)
+print("GARCH Volatility (60-min):", garch_volatility_60)
+print("Hybrid Volatility (30-min):", hybrid_volatility_30)
+print("Hybrid Volatility (60-min):", hybrid_volatility_60)
+print("Threshold Bipower Variation (30-min):", tbpv_volatility_30)
+print("Threshold Bipower Variation (60-min):", tbpv_volatility_60)
+print("Modulated Bipower Variation (30-min):", mbpv_volatility_30)
+print("Modulated Bipower Variation (60-min):", mbpv_volatility_60)
+print("Realized Range Variance (Parkinson Estimator, 30-min):", parkinson_volatility_30)
+print("Realized Range Variance (Parkinson Estimator, 60-min):", parkinson_volatility_60)
+print("Median Realized Variance (30-min):", mrv_volatility_30)
+print("Median Realized Variance (60-min):", m
+
+
+import numpy as np
+import pandas as pd
+from arch import arch_model
+
+# Example DataFrame with minRet column (replace with actual data)
+data = {
+    'minRet': [r1, r2, 0, r4, 0, r6, ..., r100],  # Replace with actual returns
+    'high': [H1, H2, H3, H4, H5, ..., H100],      # Replace with actual high prices
+    'low': [L1, L2, L3, L4, L5, ..., L100]        # Replace with actual low prices
+}
+df = pd.DataFrame(data)
+window_30 = 30
+window_60 = 60
+
+# 1. Exponential Weighted Moving Average (EWMA)
+def ewma_volatility(df, window, lambda_=0.94):
+    ewma_var = np.zeros(len(df))
+    ewma_var[0] = df['minRet'].iloc[0] ** 2
+    for t in range(1, len(df)):
+        ewma_var[t] = lambda_ * ewma_var[t-1] + (1 - lambda_) * (df['minRet'].iloc[t] ** 2)
+    ewma_vol = pd.Series(np.sqrt(ewma_var))
+    return ewma_vol.rolling(window=window, min_periods=5).mean()
+
+ewma_volatility_30 = ewma_volatility(df, window_30)
+ewma_volatility_60 = ewma_volatility(df, window_60)
+
+# 2. GARCH Model
+def garch_volatility(df, window):
+    model = arch_model(df['minRet'], vol='Garch', p=1, q=1)
+    res = model.fit(disp="off")
+    vol = res.conditional_volatility
+    return vol.rolling(window=window, min_periods=5).mean()
+
+garch_volatility_30 = garch_volatility(df, window_30)
+garch_volatility_60 = garch_volatility(df, window_60)
+
+# 3. Hybrid Rolling Windows (Short + Long Window Combination)
+def hybrid_volatility(df, short_window, long_window):
+    hybrid_vol = []
+    for t in range(len(df)):
+        if t < short_window:
+            short_vol = df['minRet'][:t+1].std()
+        else:
+            short_vol = df['minRet'][t-short_window+1:t+1].std()
+        if t < long_window:
+            long_vol = df['minRet'][:t+1].std()
+        else:
+            long_vol = df['minRet'][t-long_window+1:t+1].std()
+        hybrid_vol.append(0.5 * short_vol + 0.5 * long_vol)
+    return pd.Series(hybrid_vol).rolling(window=long_window, min_periods=5).mean()
+
+hybrid_volatility_30 = hybrid_volatility(df, 5, window_30)
+hybrid_volatility_60 = hybrid_volatility(df, 5, window_60)
+
+# 4. Threshold Bipower Variation (TBPV)
+def tbpv(df, window, threshold=0.01):
     tbpv_var = []
     for t in range(len(df)):
         if t < window:
