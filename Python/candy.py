@@ -1,3 +1,166 @@
+import numpy as np
+import pandas as pd
+from arch import arch_model
+
+# Example returns (minRet) and window parameter
+minRet = pd.Series([r1, r2, 0, r4, 0, r6, ..., r100])  # Replace with actual returns
+window_30 = 30
+window_60 = 60
+
+# 1. Exponential Weighted Moving Average (EWMA)
+def ewma_volatility(minRet, window, lambda_=0.94):
+    ewma_var = np.zeros(len(minRet))
+    ewma_var[0] = minRet[0] ** 2
+    for t in range(1, len(minRet)):
+        ewma_var[t] = lambda_ * ewma_var[t-1] + (1 - lambda_) * (minRet[t] ** 2)
+    return pd.Series(np.sqrt(ewma_var)).rolling(window=window).mean()
+
+ewma_volatility_30 = ewma_volatility(minRet, window_30)
+ewma_volatility_60 = ewma_volatility(minRet, window_60)
+
+# 2. GARCH Model
+def garch_volatility(minRet, window):
+    model = arch_model(minRet, vol='Garch', p=1, q=1)
+    res = model.fit(disp="off")
+    vol = res.conditional_volatility
+    return vol.rolling(window=window).mean()
+
+garch_volatility_30 = garch_volatility(minRet, window_30)
+garch_volatility_60 = garch_volatility(minRet, window_60)
+
+# 3. Hybrid Rolling Windows (Short + Long Window Combination)
+def hybrid_volatility(minRet, short_window, long_window):
+    hybrid_vol = []
+    for t in range(len(minRet)):
+        if t < short_window:
+            short_vol = minRet[:t+1].std()
+        else:
+            short_vol = minRet[t-short_window+1:t+1].std()
+        if t < long_window:
+            long_vol = minRet[:t+1].std()
+        else:
+            long_vol = minRet[t-long_window+1:t+1].std()
+        hybrid_vol.append(0.5 * short_vol + 0.5 * long_vol)
+    return pd.Series(hybrid_vol)
+
+hybrid_volatility_30 = hybrid_volatility(minRet, 5, window_30)
+hybrid_volatility_60 = hybrid_volatility(minRet, 5, window_60)
+
+# 4. Threshold Bipower Variation (TBPV)
+def tbpv(minRet, window, threshold=0.01):
+    tbpv_vol = []
+    for t in range(len(minRet)):
+        if t < window:
+            tbpv_val = np.nan
+        else:
+            x = minRet[t-window+1:t+1]
+            tbpv_val = np.sum(np.abs(x[:-1]) * np.abs(x[1:]) * (np.abs(x[:-1]) > threshold)) / (window - 1)
+        tbpv_vol.append(tbpv_val)
+    return pd.Series(tbpv_vol)
+
+tbpv_volatility_30 = tbpv(minRet, window_30, 0.01)
+tbpv_volatility_60 = tbpv(minRet, window_60, 0.01)
+
+# 5. Modulated Bipower Variation (MBPV)
+def mbpv(minRet, window, weights=None):
+    if weights is None:
+        weights = np.ones(window)
+    mbpv_vol = []
+    for t in range(len(minRet)):
+        if t < window:
+            mbpv_val = np.nan
+        else:
+            x = minRet[t-window+1:t+1]
+            mbpv_val = np.sum(weights[:-1] * np.abs(x[:-1]) * np.abs(x[1:])) / (window - 1)
+        mbpv_vol.append(mbpv_val)
+    return pd.Series(mbpv_vol)
+
+weights_30 = np.ones(window_30)
+weights_60 = np.ones(window_60)
+mbpv_volatility_30 = mbpv(minRet, window_30, weights_30)
+mbpv_volatility_60 = mbpv(minRet, window_60, weights_60)
+
+# 6. Realized Range Variance (Parkinson Estimator)
+def parkinson_variance(minRet, window, high_prices, low_prices):
+    parkinson_vol = []
+    for t in range(len(minRet)):
+        if t < window:
+            parkinson_val = np.nan
+        else:
+            h = high_prices[t-window+1:t+1]
+            l = low_prices[t-window+1:t+1]
+            parkinson_val = np.sum((np.log(h) - np.log(l)) ** 2) / (4 * np.log(2) * window)
+        parkinson_vol.append(parkinson_val)
+    return pd.Series(parkinson_vol)
+
+high_prices = pd.Series([H1, H2, H3, H4, H5, ..., H100])  # Replace with actual high prices
+low_prices = pd.Series([L1, L2, L3, L4, L5, ..., L100])   # Replace with actual low prices
+parkinson_volatility_30 = parkinson_variance(minRet, window_30, high_prices, low_prices)
+parkinson_volatility_60 = parkinson_variance(minRet, window_60, high_prices, low_prices)
+
+# 7. Median Realized Variance (MRV)
+def mrv(minRet, window):
+    mrv_vol = []
+    pi_factor_mrv = np.pi / (6 - 4 * np.sqrt(3) + np.pi)
+    for t in range(len(minRet)):
+        if t < window:
+            mrv_val = np.nan
+        else:
+            x = minRet[t-window+1:t+1]
+            mrv_val = pi_factor_mrv * np.median(x ** 2)
+        mrv_vol.append(mrv_val)
+    return pd.Series(mrv_vol)
+
+mrv_volatility_30 = mrv(minRet, window_30)
+mrv_volatility_60 = mrv(minRet, window_60)
+
+# 8. Bipower Variation (BV)
+def bipower_variation(minRet, window):
+    bv_vol = []
+    for t in range(len(minRet)):
+        if t < window:
+            bv_val = np.nan
+        else:
+            x = minRet[t-window+1:t+1]
+            bv_val = np.sum(np.abs(x[:-1]) * np.abs(x[1:])) / (window - 1)
+        bv_vol.append(bv_val)
+    return pd.Series(bv_vol)
+
+bv_volatility_30 = bipower_variation(minRet, window_30)
+bv_volatility_60 = bipower_variation(minRet, window_60)
+
+# 9. TriPower Variation (TPV)
+def tpv(minRet, window):
+    tpv_vol = []
+    for t in range(len(minRet)):
+        if t < window:
+            tpv_val = np.nan
+        else:
+            x = minRet[t-window+1:t+1]
+            tpv_val = np.sum(np.abs(x[:-2]) ** (1/3) * np.abs(x[1:-1]) ** (1/3) * np.abs(x[2:]) ** (1/3)) / (window - 2)
+        tpv_vol.append(tpv_val)
+    return pd.Series(tpv_vol)
+
+tpv_volatility_30 = tpv(minRet, window_30)
+tpv_volatility_60 = tpv(minRet, window_60)
+
+# 10. Exponential Weighted Moving Average (EWMA)
+def ewma_volatility(minRet, window, lambda_=0.94):
+    ewma_vol = []
+    ewma_var = minRet[0] ** 2
+    for t in range(len(minRet)):
+        if t > 0:
+            ewma_var = lambda_ * ewma_var + (1 - lambda_) * (minRet[t] ** 2)
+        ewma_vol.append(np.sqrt(ewma_var))
+    return pd.Series(ewma_vol).rolling(window=window).mean()
+
+ewma_volatility_30 = ewma_volatility(minRet, window_30)
+ewma_volatility_60 = ewma_volatility(minRet, window_60)
+
+
+
+
+
 Certainly! Below is the implementation of the additional metrics, including Median Realized Variance (MRV), Threshold Bipower Variation (TBPV), Modulated Bipower Variation (MBPV), Realized Range Variance (Parkinson Estimator), and TriPower Variation (TPV). Each function accepts `minRet` as the returns series and `window` as the smoothing length.
 
 ### Comprehensive Script
