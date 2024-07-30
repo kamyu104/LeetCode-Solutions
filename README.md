@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3235%20%2F%203235-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3236%20%2F%203236-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1551,6 +1551,7 @@
 3214 | [Year on Year Growth Rate](https://leetcode.com/problems/year-on-year-growth-rate/) | [MySQL](./MySQL/year-on-year-growth-rate.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒|  Window Function |
 3220 | [Odd and Even Transactions](https://leetcode.com/problems/odd-and-even-transactions/) | [MySQL](./MySQL/odd-and-even-transactions.sql) | _O(nlogn)_ | _O(n)_       | Medium           ||  |
 3230 | [Customer Purchasing Behavior Analysis](https://leetcode.com/problems/customer-purchasing-behavior-analysis/) | [MySQL](./MySQL/customer-purchasing-behavior-analysis.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
+3236 | [CEO Subordinate Hierarchy](https://leetcode.com/problems/ceo-subordinate-hierarchy/) | [MySQL](./MySQL/ceo-subordinate-hierarchy.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| Recursive CTE, BFS |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
