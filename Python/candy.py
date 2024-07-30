@@ -1,3 +1,135 @@
+Certainly! Below is the implementation of the additional metrics, including Median Realized Variance (MRV), Threshold Bipower Variation (TBPV), Modulated Bipower Variation (MBPV), Realized Range Variance (Parkinson Estimator), and TriPower Variation (TPV). Each function accepts `minRet` as the returns series and `window` as the smoothing length.
+
+### Comprehensive Script
+
+```python
+import numpy as np
+import pandas as pd
+
+# Example returns (minRet) and window parameter
+minRet = pd.Series([r1, r2, 0, r4, 0, r6, ..., r100])  # Replace with actual returns
+window_30 = 30
+window_60 = 60
+
+# 1. Median Realized Variance (MRV)
+def mrv(minRet, window):
+    def mrv_calculation(x):
+        pi_factor_mrv = np.pi / (6 - 4 * np.sqrt(3) + np.pi)
+        median_realized_variance = pi_factor_mrv * np.median(x ** 2)
+        return median_realized_variance
+    return minRet.rolling(window=window).apply(mrv_calculation, raw=True)
+
+mrv_volatility_30 = mrv(minRet, window_30)
+print("Median Realized Variance (Rolling 30-min):", mrv_volatility_30)
+
+mrv_volatility_60 = mrv(minRet, window_60)
+print("Median Realized Variance (Rolling 60-min):", mrv_volatility_60)
+
+# 2. Threshold Bipower Variation (TBPV)
+def tbpv(minRet, window, threshold=0.01):
+    def tbpv_calculation(x, threshold):
+        n = len(x)
+        return np.sum(np.abs(x[:-1]) * np.abs(x[1:]) * (np.abs(x[:-1]) > threshold)) / n
+    return minRet.rolling(window=window).apply(lambda x: tbpv_calculation(x, threshold), raw=True)
+
+tbpv_volatility_30 = tbpv(minRet, window_30, 0.01)
+print("Threshold Bipower Variation (Rolling 30-min):", tbpv_volatility_30)
+
+tbpv_volatility_60 = tbpv(minRet, window_60, 0.01)
+print("Threshold Bipower Variation (Rolling 60-min):", tbpv_volatility_60)
+
+# 3. Modulated Bipower Variation (MBPV)
+def mbpv(minRet, window, weights=None):
+    def mbpv_calculation(x, weights):
+        n = len(x)
+        return np.sum(weights[:-1] * np.abs(x[:-1]) * np.abs(x[1:])) / n
+    if weights is None:
+        weights = np.ones(window)
+    return minRet.rolling(window=window).apply(lambda x: mbpv_calculation(x, weights[:len(x)]), raw=True)
+
+weights = np.ones(window_30)  # Example weights, can be customized
+mbpv_volatility_30 = mbpv(minRet, window_30, weights)
+print("Modulated Bipower Variation (Rolling 30-min):", mbpv_volatility_30)
+
+weights = np.ones(window_60)  # Example weights, can be customized
+mbpv_volatility_60 = mbpv(minRet, window_60, weights)
+print("Modulated Bipower Variation (Rolling 60-min):", mbpv_volatility_60)
+
+# 4. Realized Range Variance (Parkinson Estimator)
+def parkinson_variance(minRet, window, high_prices, low_prices):
+    def parkinson_calculation(h, l):
+        return np.sum((np.log(h) - np.log(l)) ** 2) / (4 * np.log(2) * len(h))
+    high_prices_series = pd.Series(high_prices)
+    low_prices_series = pd.Series(low_prices)
+    return pd.concat([high_prices_series, low_prices_series], axis=1).rolling(window=window).apply(lambda x: parkinson_calculation(x.iloc[:, 0], x.iloc[:, 1]), raw=True)
+
+# Replace with actual high and low prices corresponding to the returns
+high_prices = [H1, H2, H3, H4, H5, ..., H100]
+low_prices = [L1, L2, L3, L4, L5, ..., L100]
+
+parkinson_volatility_30 = parkinson_variance(minRet, window_30, high_prices, low_prices)
+print("Realized Range Variance (Parkinson Estimator, Rolling 30-min):", parkinson_volatility_30)
+
+parkinson_volatility_60 = parkinson_variance(minRet, window_60, high_prices, low_prices)
+print("Realized Range Variance (Parkinson Estimator, Rolling 60-min):", parkinson_volatility_60)
+
+# 5. TriPower Variation (TPV)
+def tpv(minRet, window):
+    def tpv_calculation(x):
+        n = len(x)
+        return np.sum(np.abs(x[:-2]) ** (1/3) * np.abs(x[1:-1]) ** (1/3) * np.abs(x[2:]) ** (1/3)) / n
+    return minRet.rolling(window=window).apply(tpv_calculation, raw=True)
+
+tpv_volatility_30 = tpv(minRet, window_30)
+print("TriPower Variation (Rolling 30-min):", tpv_volatility_30)
+
+tpv_volatility_60 = tpv(minRet, window_60)
+print("TriPower Variation (Rolling 60-min):", tpv_volatility_60)
+```
+
+### Explanation of Each Metric:
+
+#### 1. Median Realized Variance (MRV)
+- **Prolonged Zero Returns**: Strong. The median reduces the impact of zero returns.
+- **Price Jumps**: Strong. Robust to outliers and large jumps.
+- **Infrequent Trading**: Handles infrequent trading periods well due to the median's robustness.
+
+**Mechanism**: Uses the median of squared returns, reducing the influence of outliers and zero returns.
+
+#### 2. Threshold Bipower Variation (TBPV)
+- **Prolonged Zero Returns**: Limited. Focuses on filtering jumps rather than handling zero returns.
+- **Price Jumps**: Strong. Explicitly removes large jumps using a threshold.
+- **Infrequent Trading**: Needs sufficient data points to be effective.
+
+**Mechanism**: Uses a threshold to filter out large returns, focusing on the continuous price process.
+
+#### 3. Modulated Bipower Variation (MBPV)
+- **Prolonged Zero Returns**: Customizable. Can be adjusted with weights to reduce sensitivity to zero returns.
+- **Price Jumps**: Customizable. Weights can be adjusted to reduce the impact of jumps.
+- **Infrequent Trading**: Customizable. Weight adjustments can help manage periods of inactivity and bursts of activity.
+
+**Mechanism**: Uses weights to modulate bipower variation, allowing customization based on market conditions.
+
+#### 4. Realized Range Variance (Parkinson Estimator)
+- **Prolonged Zero Returns**: Strong. Uses high and low prices, not affected by zero returns.
+- **Price Jumps**: Strong. Captures the range of price movements, including jumps.
+- **Infrequent Trading**: Partial. Effective if high and low prices capture the true range of activity.
+
+**Mechanism**: Uses the range (high-low) of prices within a period, capturing overall price variability.
+
+#### 5. TriPower Variation (TPV)
+- **Prolonged Zero Returns**: Limited. Products involving zero returns will reduce overall variance.
+- **Price Jumps**: Strong. Reduces sensitivity to jumps by using products of three adjacent returns.
+- **Infrequent Trading**: Limited. Sensitive to the number of trades, may not fully capture infrequent trading patterns.
+
+**Mechanism**: Uses products of three adjacent absolute returns to provide a refined volatility measure, reducing the impact of jumps and noise.
+
+### Conclusion
+
+This script provides a comprehensive implementation of the requested metrics, tailored to handle the specific challenges associated with illiquid stocks, including prolonged zero returns, price jumps, and infrequent trading. By using these metrics, you can achieve a more robust and accurate estimation of volatility in such conditions.
+
+
+
 import pandas as pd
 
 # Sample DataFrame
