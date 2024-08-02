@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3236%20%2F%203236-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3237%20%2F%203237-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -522,6 +522,7 @@
 3184 | [Count Pairs That Form a Complete Day I](https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/) | [C++](./C++/count-pairs-that-form-a-complete-day-i.cpp) [Python](./Python/count-pairs-that-form-a-complete-day-i.py) | _O(n + 24)_  | _O(24)_ | Easy | | Freq Table
 3185 | [Count Pairs That Form a Complete Day II](https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/) | [C++](./C++/count-pairs-that-form-a-complete-day-ii.cpp) [Python](./Python/count-pairs-that-form-a-complete-day-ii.py) | _O(n + 24)_  | _O(24)_ | Medium | | Freq Table
 3223 | [Minimum Length of String After Operations](https://leetcode.com/problems/minimum-length-of-string-after-operations/) | [C++](./C++/minimum-length-of-string-after-operations.cpp) [Python](./Python/minimum-length-of-string-after-operations.py) | _O(n + 26)_  | _O(26)_ | Medium | | Freq Table
+3237 | [Alt and Tab Simulation](https://leetcode.com/problems/alt-and-tab-simulation/) | [C++](./C++/alt-and-tab-simulation.cpp) [Python](./Python/alt-and-tab-simulation.py) | _O(n)_  | _O(n)_ | Medium | 🔒 | Hash Table
 
 <br/>
 <div align="right">
