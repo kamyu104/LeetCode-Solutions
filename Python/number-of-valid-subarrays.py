@@ -12,6 +12,6 @@ class Solution(object):
         for num in nums:
             while s and s[-1] > num:
                 s.pop()
-            s.append(num);
+            s.append(num)
             result += len(s)
         return result

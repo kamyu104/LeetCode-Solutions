@@ -45,7 +45,7 @@ class Solution(object):
             base = 1
             for i in xrange(len(quantity)):  # Time: O(m)
                 if mask&base:
-                    requirement[mask] += quantity[i];
+                    requirement[mask] += quantity[i]
                 base <<= 1
         dp = [[0]*(total+1) for _ in xrange(2)]
         dp[0][0] = 1

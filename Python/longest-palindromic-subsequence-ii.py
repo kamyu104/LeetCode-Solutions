@@ -16,6 +16,6 @@ class Solution(object):
                 else:
                     for k in xrange(26):
                         if s[j] == s[i] and ord(s[j])-ord('a') != k:
-                            dp[i%2][j][ord(s[j])-ord('a')] = max(dp[i%2][j][ord(s[j])-ord('a')], dp[(i+1)%2][j-1][k]+2);
+                            dp[i%2][j][ord(s[j])-ord('a')] = max(dp[i%2][j][ord(s[j])-ord('a')], dp[(i+1)%2][j-1][k]+2)
                         dp[i%2][j][k] = max(dp[i%2][j][k], dp[i%2][j-1][k], dp[(i+1)%2][j][k], dp[(i+1)%2][j-1][k])
         return max(dp[0][-1])

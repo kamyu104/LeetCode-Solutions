@@ -70,7 +70,7 @@ class Solution3(object):
         :type nums: List[int]
         :rtype: int
         """
-        result = left = 0;
+        result = left = 0
         lookup = SortedDict()
         for right in xrange(len(nums)):
             lookup[nums[right]] = right
@@ -87,5 +87,5 @@ class Solution3(object):
                 to_del.append(x) 
             for x in to_del:
                 del lookup[x]
-            result += right-left+1;
-        return result;
+            result += right-left+1
+        return result

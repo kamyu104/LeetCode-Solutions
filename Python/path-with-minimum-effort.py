@@ -14,7 +14,7 @@ class Solution(object):
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
         dst = (len(heights)-1, len(heights[0])-1)
         dist = [[float("inf")]*len(heights[0]) for _ in xrange(len(heights))]
-        dist[0][0] = 0;
+        dist[0][0] = 0
         min_heap = [(0, 0, 0)]
         lookup = [[False]*len(heights[0]) for _ in xrange(len(heights))]
         while min_heap:

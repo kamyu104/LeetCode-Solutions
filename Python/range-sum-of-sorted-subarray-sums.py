@@ -68,7 +68,7 @@ class Solution2(object):
         :rtype: int
         """
         MOD = 10**9+7
-        min_heap = [];
+        min_heap = []
         for i, num in enumerate(nums, 1):
             heapq.heappush(min_heap, (num, i))
         result = 0

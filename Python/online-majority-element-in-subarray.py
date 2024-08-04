@@ -214,7 +214,7 @@ class MajorityChecker4(object):
             return bisect.bisect_right(inv_idx[m], right) - \
                    bisect.bisect_left(inv_idx[m], left)
 
-        l, r = left//self.__bucket_size, right//self.__bucket_size;
+        l, r = left//self.__bucket_size, right//self.__bucket_size
         if l == r:
             m = self.__boyer_moore_majority_vote(self.__arr, left, right)
             if count(self.__inv_idx, m, left, right) >= threshold:
@@ -226,7 +226,7 @@ class MajorityChecker4(object):
                 return m
             m = self.__boyer_moore_majority_vote(self.__arr, r*self.__bucket_size, right)
             if count(self.__inv_idx, m, left, right) >= threshold:
-                return m;
+                return m
             for i in xrange(l+1, r):
                 if count(self.__inv_idx, self.__bucket_majorities[i], left, right) >= threshold:
                     return self.__bucket_majorities[i]

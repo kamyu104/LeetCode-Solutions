@@ -13,7 +13,7 @@ class Solution(object):
         def search(node, puzzle, start, first, met_first):
             result = 0
             if "_end" in node and met_first:
-                result += node["_end"];
+                result += node["_end"]
             for i in xrange(start, len(puzzle)):
                 if puzzle[i] not in node:
                     continue

@@ -9,7 +9,7 @@ class Solution(object):
         :rtype: int
         """
         if len(jobDifficulty) < d:
-            return -1;
+            return -1
         
         dp = [[float("inf")]*len(jobDifficulty) for _ in xrange(d)]
         dp[0][0] = jobDifficulty[0]

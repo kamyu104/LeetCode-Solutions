@@ -15,7 +15,7 @@ class Solution(object):
         """
         MOD = 10**9+7
 
-        s, f = locations[start], locations[finish];
+        s, f = locations[start], locations[finish]
         locations.sort()
         start, finish = bisect.bisect_left(locations, s), bisect.bisect_left(locations, f)
 
@@ -29,7 +29,7 @@ class Solution(object):
                     # => left[j+1][f] = (ight[j+2][f-d(j+1, j+2)] + 2*right[j+3][f-d(j+1, j+3)] + ... + 2^(k-2)*right[j+1+k-1][f-d(j+1, j+1+k-1)]
                     # => left[j+1][f-d(j, j+1)] = right[j+2][f-d(j, j+2)] + 2*right[j+3][f-d(j, j+3)] + ... + 2^(k-2)*right[j+k][f-d(j, j+k)]
                     # => left[j][f] = right[j+1][f-d(j, j+1)] + 2*left[j+1][f-d(j, j+1)]
-                    left[j][f] = (right[j+1][f-d] + 2*left[j+1][f-d] % MOD) % MOD;
+                    left[j][f] = (right[j+1][f-d] + 2*left[j+1][f-d] % MOD) % MOD
                 elif f == d:
                     left[j][f] = int(j+1 == start)
             for j in xrange(1, len(locations)):

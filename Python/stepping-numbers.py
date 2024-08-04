@@ -25,8 +25,8 @@ class Solution(object):
         :type high: int
         :rtype: List[int]
         """
-        lit = bisect.bisect_left(result, low);
-        rit = bisect.bisect_right(result, high);
+        lit = bisect.bisect_left(result, low)
+        rit = bisect.bisect_right(result, high)
         return result[lit:rit]
 
 
@@ -50,6 +50,6 @@ class Solution2(object):
             if d2 <= 9:
                 result.append(result[i]*10 + d2)
         result.append(float("inf"))
-        lit = bisect.bisect_left(result, low);
-        rit = bisect.bisect_right(result, high);
+        lit = bisect.bisect_left(result, low)
+        rit = bisect.bisect_right(result, high)
         return result[lit:rit]

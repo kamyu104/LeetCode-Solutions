@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: int
         """
         fact = [0.0]*(len(tiles)+1)
-        fact[0] = 1.0;
+        fact[0] = 1.0
         for i in xrange(1, len(tiles)+1):
             fact[i] = fact[i-1]*i
         count = collections.Counter(tiles)

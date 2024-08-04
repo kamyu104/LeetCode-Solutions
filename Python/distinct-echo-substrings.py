@@ -26,7 +26,7 @@ class Solution(object):
         result = set()
         i, l = 0, len(text)-1
         while i < l:  # aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcdefabcdefabcdef
-            l = min(l, i + KMP(text, i, result));
+            l = min(l, i + KMP(text, i, result))
             i += 1
         return len(result)
 

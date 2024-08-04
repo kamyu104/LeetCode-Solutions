@@ -11,9 +11,9 @@ class Solution(object):
         x, y, i = 0, 0, 0
         for instruction in instructions:
             if instruction == 'R':
-                i = (i+1) % 4;
+                i = (i+1) % 4
             elif instruction == 'L':
-                i = (i-1) % 4;
+                i = (i-1) % 4
             else:
                 x += directions[i][0]
                 y += directions[i][1]

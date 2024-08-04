@@ -64,7 +64,7 @@ class Solution2(object):
                     add_a[i] = str((int(c)+a) % 10)
             add_a = "".join(add_a)        
             if add_a not in lookup:
-                lookup.add(add_a);
+                lookup.add(add_a)
                 q.append(add_a)
             rotate_b = curr[b:] + curr[:b]
             if rotate_b not in lookup:

@@ -29,6 +29,6 @@ class Solution2(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        cnt = collections.Counter(nums);
+        cnt = collections.Counter(nums)
         pair_cnt = sum(x//2 for x in cnt.itervalues())
         return [pair_cnt, len(nums)-2*pair_cnt]

@@ -61,13 +61,13 @@ class Solution(object):
                 if group[i] == group[j]:
                     local_groups[group[i]].add_edge(j, i)
                 else:
-                    global_group.add_edge(group[j], group[i]);
+                    global_group.add_edge(group[j], group[i])
         result = []
         global_order = global_group.sort()
         if global_order is None:
             return []
         for i in global_order:
-            local_order = local_groups[i].sort();
+            local_order = local_groups[i].sort()
             if local_order is None:
                 return []
             for x in local_order:
