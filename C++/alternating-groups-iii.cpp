@@ -1,7 +1,7 @@
 // Time:  O(nlogn + qlogn)
 // Space: O(n)
 
-// sorted list, bit, fenwick tree
+// sorted list, freq table, bit, fenwick tree
 class Solution {
 private:
     class BIT {
