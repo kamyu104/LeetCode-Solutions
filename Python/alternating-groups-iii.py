@@ -1,4 +1,4 @@
-# Time:  O(nlogn+qlogn)
+# Time:  O(nlogn + qlogn)
 # Space: O(n)
 
 from sortedcontainers import SortedList
@@ -33,6 +33,9 @@ class Solution(object):
         def update(i, d):
             if d == +1:
                 sl.add(i)
+                if len(sl) == 1:
+                    bit1.add(n, +1)
+                    bit2.add(n, +n)
             curr = sl.index(i)
             prv, nxt = (curr-1)%len(sl), (curr+1)%len(sl)
             if len(sl) != 1:
@@ -46,14 +49,15 @@ class Solution(object):
                 bit1.add(l, d*(+1))
                 bit2.add(l, d*(+l))
             if d == -1:
+                if len(sl) == 1:
+                    bit1.add(n, -1)
+                    bit2.add(n, -n)
                 sl.pop(curr)
 
         n = len(colors)
         sl = SortedList()
         bit1 = BIT(n+1)
         bit2 = BIT(n+1)
-        bit1.add(n, +1)
-        bit2.add(n, +n)
         for i in xrange(n):
             if colors[i] == colors[(i+1)%n]:
                 update(i, +1)
