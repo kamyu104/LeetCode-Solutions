@@ -1270,7 +1270,7 @@
 3123 | [Find Edges in Shortest Paths](https://leetcode.com/problems/find-edges-in-shortest-paths/)  | [C++](./C++/find-edges-in-shortest-paths.cpp) [Python](./Python/find-edges-in-shortest-paths.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard           | | Graph, `Dijkstra's Algorithm` |
 3235 | [Check if the Rectangle Corner Is Reachable](https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/)  | [C++](./C++/check-if-the-rectangle-corner-is-reachable.cpp) [Python](./Python/check-if-the-rectangle-corner-is-reachable.py) |  _O(n^2)_ | _O(n)_ | Hard           | | Graph, BFS, DFS, Union Find |
 3243 | [Shortest Distance After Road Addition Queries I](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/)  | [C++](./C++/shortest-distance-after-road-addition-queries-i.cpp) [Python](./Python/shortest-distance-after-road-addition-queries-i.py) |  _O(n^2)_ | _O(n^2)_ | Medium           | | Graph, `Dijkstra's Algorithm`, BFS |
-3244 | [Shortest Distance After Road Addition Queries II](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/)  | [C++](./C++/shortest-distance-after-road-addition-queries-ii.cpp) [Python](./Python/shortest-distance-after-road-addition-queries-ii.py) |  _O(nlogn)_ | _O(n)_ | Hard           | | Graph, Sorted List |
+3244 | [Shortest Distance After Road Addition Queries II](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/)  | [C++](./C++/shortest-distance-after-road-addition-queries-ii.cpp) [Python](./Python/shortest-distance-after-road-addition-queries-ii.py) |  _O(nlogn)_ | _O(n)_ | Hard           | | Graph, BST, Sorted List |
 
 <br/>
 <div align="right">
