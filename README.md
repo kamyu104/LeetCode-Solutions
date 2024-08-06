@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3237%20%2F%203237-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3246%20%2F%203246-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -220,6 +220,7 @@
 3187 | [Peaks in Array](https://leetcode.com/problems/peaks-in-array/) | [C++](./C++/peaks-in-array.cpp) [Python](./Python/peaks-in-array.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
 3195 | [Find the Minimum Area to Cover All Ones I](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/) | [C++](./C++/find-the-minimum-area-to-cover-all-ones-i.cpp) [Python](./Python/find-the-minimum-area-to-cover-all-ones-i.py) | _O(n * m)_ | _O(1)_ | Medium | | Array
 3224 | [Minimum Array Changes to Make Differences Equal](https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/) | [C++](./C++/minimum-array-changes-to-make-differences-equal.cpp) [Python](./Python/minimum-array-changes-to-make-differences-equal.py) | _O(n + k)_   | _O(k)_        | Medium         | | Prefix Sum, Difference Array
+3245 | [Alternating Groups III](https://leetcode.com/problems/alternating-groups-iii/) | [C++](./C++/alternating-groups-iii.cpp) [Python](./Python/alternating-groups-iii.py) | _O(nlogn + qlogn)_ | _O(n)_ | Hard | | BST, Sorted List, BIT, Fenwick Tree
 
 <br/>
 <div align="right">
@@ -523,6 +524,7 @@
 3185 | [Count Pairs That Form a Complete Day II](https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/) | [C++](./C++/count-pairs-that-form-a-complete-day-ii.cpp) [Python](./Python/count-pairs-that-form-a-complete-day-ii.py) | _O(n + 24)_  | _O(24)_ | Medium | | Freq Table
 3223 | [Minimum Length of String After Operations](https://leetcode.com/problems/minimum-length-of-string-after-operations/) | [C++](./C++/minimum-length-of-string-after-operations.cpp) [Python](./Python/minimum-length-of-string-after-operations.py) | _O(n + 26)_  | _O(26)_ | Medium | | Freq Table
 3237 | [Alt and Tab Simulation](https://leetcode.com/problems/alt-and-tab-simulation/) | [C++](./C++/alt-and-tab-simulation.cpp) [Python](./Python/alt-and-tab-simulation.py) | _O(n)_  | _O(n)_ | Medium | 🔒 | Hash Table
+3238 | [Find the Number of Winning Players](https://leetcode.com/problems/find-the-number-of-winning-players/) | [C++](./C++/find-the-number-of-winning-players.cpp) [Python](./Python/find-the-number-of-winning-players.py) | _O(p)_  | _O(min(n * c, p)_ | Easy | | Freq Table
 
 <br/>
 <div align="right">
@@ -1068,6 +1070,7 @@
 3212 | [Count Submatrices With Equal Frequency of X and Y](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/) | [C++](./C++/count-submatrices-with-equal-frequency-of-x-and-y.cpp) [Python](./Python/count-submatrices-with-equal-frequency-of-x-and-y.py) | _O(n * m)_ | _O(n * m)_ | Medium | | DP
 3213 | [Construct String with Minimum Cost](https://leetcode.com/problems/construct-string-with-minimum-cost/) | [C++](./C++/construct-string-with-minimum-cost.cpp) [Python](./Python/construct-string-with-minimum-cost.py) | _O(n^2 + w * l)_ | _O(t)_ | Hard | | DP, Trie
 3225 | [Maximum Score From Grid Operations](https://leetcode.com/problems/maximum-score-from-grid-operations/) | [C++](./C++/maximum-score-from-grid-operations.cpp) [Python](./Python/maximum-score-from-grid-operations.py) | _O(n^3)_ | _O(n)_ | Hard | | Prefix Sum, DP
+3241 | [Time Taken to Mark All Nodes](https://leetcode.com/problems/time-taken-to-mark-all-nodes/) | [C++](./C++/time-taken-to-mark-all-nodes.cpp) [Python](./Python/time-taken-to-mark-all-nodes.py) | _O(n)_ | _O(n)_ | Hard | | Tree DP, BFS, DFS
 
 <br/>
 <div align="right">
@@ -1223,6 +1226,8 @@
 3221 | [Maximum Array Hopping Score II](https://leetcode.com/problems/maximum-array-hopping-score-ii/)| [C++](./C++/maximum-array-hopping-score-ii.cpp) [Python](./Python/maximum-array-hopping-score-ii.py)| _O(n)_ | _O(1)_ | Medium | 🔒 | Prefix Sum, Greedy |
 3228 | [Maximum Number of Operations to Move Ones to the End](https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/)| [C++](./C++/maximum-number-of-operations-to-move-ones-to-the-end.cpp) [Python](./Python/maximum-number-of-operations-to-move-ones-to-the-end.py)| _O(n)_ | _O(1)_ | Medium | | Greedy |
 3229 | [Minimum Operations to Make Array Equal to Target](https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/)| [C++](./C++/minimum-operations-to-make-array-equal-to-target.cpp) [Python](./Python/minimum-operations-to-make-array-equal-to-target.py)| _O(n)_ | _O(1)_ | Hard | variant of [Minimum Number of Increments on Subarrays to Form a Target Array](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Greedy |
+3239 | [Minimum Number of Flips to Make Binary Grid Palindromic I](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/) | [C++](./C++/minimum-number-of-flips-to-make-binary-grid-palindromic-i.cpp) [Python](./Python/minimum-number-of-flips-to-make-binary-grid-palindromic-i.py) | _O(m * n)_   | _O(1)_        | Medium         | | Array, Greedy
+3240 | [Minimum Number of Flips to Make Binary Grid Palindromic II](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-ii/) | [C++](./C++/minimum-number-of-flips-to-make-binary-grid-palindromic-ii.cpp) [Python](./Python/minimum-number-of-flips-to-make-binary-grid-palindromic-ii.py) | _O(m * n)_   | _O(1)_        | Medium         | | Array, Greedy
 
 <br/>
 <div align="right">
@@ -1264,6 +1269,8 @@
 3112 | [Minimum Time to Visit Disappearing Nodes](https://leetcode.com/problems/find-the-closest-marked-node/)  | [C++](./C++/minimum-time-to-visit-disappearing-nodes.cpp) [Python](./Python/minimum-time-to-visit-disappearing-nodes.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Medium           | | Graph, `Dijkstra's Algorithm` |
 3123 | [Find Edges in Shortest Paths](https://leetcode.com/problems/find-edges-in-shortest-paths/)  | [C++](./C++/find-edges-in-shortest-paths.cpp) [Python](./Python/find-edges-in-shortest-paths.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard           | | Graph, `Dijkstra's Algorithm` |
 3235 | [Check if the Rectangle Corner Is Reachable](https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/)  | [C++](./C++/check-if-the-rectangle-corner-is-reachable.cpp) [Python](./Python/check-if-the-rectangle-corner-is-reachable.py) |  _O(n^2)_ | _O(n)_ | Hard           | | Graph, BFS, DFS, Union Find |
+3243 | [Shortest Distance After Road Addition Queries I](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/)  | [C++](./C++/shortest-distance-after-road-addition-queries-i.cpp) [Python](./Python/shortest-distance-after-road-addition-queries-i.py) |  _O(n^2)_ | _O(n^2)_ | Medium           | | Graph, `Dijkstra's Algorithm`, BFS |
+3244 | [Shortest Distance After Road Addition Queries II](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/)  | [C++](./C++/shortest-distance-after-road-addition-queries-ii.cpp) [Python](./Python/shortest-distance-after-road-addition-queries-ii.py) |  _O(nlogn)_ | _O(n)_ | Medium           | | Graph, Sorted List |
 
 <br/>
 <div align="right">
@@ -1363,6 +1370,7 @@
 2590 | [Design a Todo List](https://leetcode.com/problems/design-a-todo-list/) | [C++](./C++/design-a-todo-list.cpp) [Python](./Python/design-a-todo-list.py) | ctor: _O(1)_<br>addTask: _O(l + logn)_<br>getAllTasks: _O(r)_<br>getTasksForTag: _O(r * c)_<br>completeTask: _O(l + logn)_ | _O(n * l)_ | Medium | 🔒 | BST, Sorted List
 2642 | [Design Graph With Shortest Path Calculator](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/) | [C++](./C++/design-graph-with-shortest-path-calculator.cpp) [Python](./Python/design-graph-with-shortest-path-calculator.py) | ctor: _O(\|V\| + \|E\|)_<br>addEdge: _O(1)_<br>shortestPath: _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | | `Dijkstra's Algorithm`
 2671 | [Frequency Tracker](https://leetcode.com/problems/frequency-tracker/) | [C++](./C++/frequency-tracker.cpp) [Python](./Python/frequency-tracker.py) | ctor: _O(1)_<br>add: _O(1)_<br>deleteOne: _O(1)_<br>hasFrequency: _O(1)_ | _O(min(n, r))_ | Medium | | Freq Table
+3242 | [Design Neighbor Sum Service](https://leetcode.com/problems/design-neighbor-sum-service/) | [C++](./C++/design-neighbor-sum-service.cpp) [Python](./Python/design-neighbor-sum-service.py) | ctor: _O(n^2)_<br>adjacentSum: _O(1)_<br>diagonalSum: _O(1)_ | _O(n^2)_ | Easy | | Hash Table
 
 <br/>
 <div align="right">
@@ -1553,6 +1561,7 @@
 3220 | [Odd and Even Transactions](https://leetcode.com/problems/odd-and-even-transactions/) | [MySQL](./MySQL/odd-and-even-transactions.sql) | _O(nlogn)_ | _O(n)_       | Medium           ||  |
 3230 | [Customer Purchasing Behavior Analysis](https://leetcode.com/problems/customer-purchasing-behavior-analysis/) | [MySQL](./MySQL/customer-purchasing-behavior-analysis.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3236 | [CEO Subordinate Hierarchy](https://leetcode.com/problems/ceo-subordinate-hierarchy/) | [MySQL](./MySQL/ceo-subordinate-hierarchy.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| Recursive CTE, BFS |
+3246 | [Premier League Table Ranking](https://leetcode.com/problems/premier-league-table-ranking/) | [MySQL](./MySQL/premier-league-table-ranking.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
