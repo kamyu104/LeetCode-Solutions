@@ -36,7 +36,7 @@ class Solution(object):
             curr = sl.index(i)
             prv, nxt = (curr-1)%len(sl), (curr+1)%len(sl)
             if len(sl) != 1:
-                l = (sl[nxt]-sl[prv])%n if len(sl) != 2 else n
+                l = (sl[nxt]-sl[prv]-1)%n+1
                 bit1.add(l, d*(-1))
                 bit2.add(l, d*(-l))
                 l = (sl[curr]-sl[prv])%n
