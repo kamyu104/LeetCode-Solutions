@@ -41,6 +41,10 @@ public:
         const auto& update = [&](int i, int d) {
             if (d == +1) {
                 bst.emplace(i);
+                if (size(bst) == 1) {
+                    bit1.add(n, +1);
+                    bit2.add(n, +n);
+                }
             }
             auto curr = bst.find(i);
             auto prv = prev(curr != begin(bst) ? curr : end(bst));
@@ -49,7 +53,7 @@ public:
                 nxt = begin(bst);
             }
             if (size(bst) != 1) {
-                int l = (size(bst) != 2) ? ((*nxt) - (*prv) + n) % n : n;
+                int l = ((*nxt) - (*prv) + (n - 1)) % n + 1;
                 bit1.add(l, d * -1);
                 bit2.add(l, d * -l);
                 l = ((*curr) - (*prv) + n) % n;
@@ -60,13 +64,15 @@ public:
                 bit2.add(l, d * +l);
             }
             if (d == -1) {
+                if (size(bst) == 1) {
+                    bit1.add(n, -1);
+                    bit2.add(n, -n);
+                }
                 bst.erase(curr);
             }
         };
 
         vector<int> result;
-        bit1.add(n, +1);
-        bit2.add(n, +n);
         for (int i = 0; i < n; ++i) {
             if (colors[i] == colors[(i + 1) % n]) {
                 update(i, +1);
