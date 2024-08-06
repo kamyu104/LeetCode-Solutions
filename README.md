@@ -220,7 +220,6 @@
 3187 | [Peaks in Array](https://leetcode.com/problems/peaks-in-array/) | [C++](./C++/peaks-in-array.cpp) [Python](./Python/peaks-in-array.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
 3195 | [Find the Minimum Area to Cover All Ones I](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/) | [C++](./C++/find-the-minimum-area-to-cover-all-ones-i.cpp) [Python](./Python/find-the-minimum-area-to-cover-all-ones-i.py) | _O(n * m)_ | _O(1)_ | Medium | | Array
 3224 | [Minimum Array Changes to Make Differences Equal](https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/) | [C++](./C++/minimum-array-changes-to-make-differences-equal.cpp) [Python](./Python/minimum-array-changes-to-make-differences-equal.py) | _O(n + k)_   | _O(k)_        | Medium         | | Prefix Sum, Difference Array
-3245 | [Alternating Groups III](https://leetcode.com/problems/alternating-groups-iii/) | [C++](./C++/alternating-groups-iii.cpp) [Python](./Python/alternating-groups-iii.py) | _O(nlogn + qlogn)_ | _O(n)_ | Hard | | BST, Sorted List, BIT, Fenwick Tree
 
 <br/>
 <div align="right">
@@ -525,6 +524,7 @@
 3223 | [Minimum Length of String After Operations](https://leetcode.com/problems/minimum-length-of-string-after-operations/) | [C++](./C++/minimum-length-of-string-after-operations.cpp) [Python](./Python/minimum-length-of-string-after-operations.py) | _O(n + 26)_  | _O(26)_ | Medium | | Freq Table
 3237 | [Alt and Tab Simulation](https://leetcode.com/problems/alt-and-tab-simulation/) | [C++](./C++/alt-and-tab-simulation.cpp) [Python](./Python/alt-and-tab-simulation.py) | _O(n)_  | _O(n)_ | Medium | 🔒 | Hash Table
 3238 | [Find the Number of Winning Players](https://leetcode.com/problems/find-the-number-of-winning-players/) | [C++](./C++/find-the-number-of-winning-players.cpp) [Python](./Python/find-the-number-of-winning-players.py) | _O(p)_  | _O(min(n * c, p)_ | Easy | | Freq Table
+3245 | [Alternating Groups III](https://leetcode.com/problems/alternating-groups-iii/) | [C++](./C++/alternating-groups-iii.cpp) [Python](./Python/alternating-groups-iii.py) | _O(nlogn + qlogn)_ | _O(n)_ | Hard | | BST, Sorted List, Freq Table, BIT, Fenwick Tree
 
 <br/>
 <div align="right">
@@ -1270,7 +1270,7 @@
 3123 | [Find Edges in Shortest Paths](https://leetcode.com/problems/find-edges-in-shortest-paths/)  | [C++](./C++/find-edges-in-shortest-paths.cpp) [Python](./Python/find-edges-in-shortest-paths.py) |  _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard           | | Graph, `Dijkstra's Algorithm` |
 3235 | [Check if the Rectangle Corner Is Reachable](https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/)  | [C++](./C++/check-if-the-rectangle-corner-is-reachable.cpp) [Python](./Python/check-if-the-rectangle-corner-is-reachable.py) |  _O(n^2)_ | _O(n)_ | Hard           | | Graph, BFS, DFS, Union Find |
 3243 | [Shortest Distance After Road Addition Queries I](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/)  | [C++](./C++/shortest-distance-after-road-addition-queries-i.cpp) [Python](./Python/shortest-distance-after-road-addition-queries-i.py) |  _O(n^2)_ | _O(n^2)_ | Medium           | | Graph, `Dijkstra's Algorithm`, BFS |
-3244 | [Shortest Distance After Road Addition Queries II](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/)  | [C++](./C++/shortest-distance-after-road-addition-queries-ii.cpp) [Python](./Python/shortest-distance-after-road-addition-queries-ii.py) |  _O(nlogn)_ | _O(n)_ | Medium           | | Graph, Sorted List |
+3244 | [Shortest Distance After Road Addition Queries II](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/)  | [C++](./C++/shortest-distance-after-road-addition-queries-ii.cpp) [Python](./Python/shortest-distance-after-road-addition-queries-ii.py) |  _O(nlogn)_ | _O(n)_ | Hard           | | Graph, Sorted List |
 
 <br/>
 <div align="right">
