@@ -56,8 +56,7 @@ class Solution(object):
 
         n = len(colors)
         sl = SortedList()
-        bit1 = BIT(n+1)
-        bit2 = BIT(n+1)
+        bit1, bit2 = BIT(n+1), BIT(n+1)
         for i in xrange(n):
             if colors[i] == colors[(i+1)%n]:
                 update(i, +1)
