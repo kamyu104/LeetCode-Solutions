@@ -1,7 +1,7 @@
 # Time:  O(m * n)
 # Space: O(1)
 
-# array
+# array, greedy
 class Solution(object):
     def minFlips(self, grid):
         """
