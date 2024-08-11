@@ -1,7 +1,7 @@
 // Time:  O(n + r), r = max(nums)
 // Space: O(n + r)
 
-// combinatorics, bars and stars
+// combinatorics, stars and bars
 class Solution {
 public:
     int countOfPairs(vector<int>& nums) {
