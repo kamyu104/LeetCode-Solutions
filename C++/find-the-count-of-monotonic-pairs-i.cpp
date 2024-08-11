@@ -68,7 +68,10 @@ class Solution2 {
 public:
     int countOfPairs(vector<int>& nums) {
         static const int MOD = 1e9 + 7;
-        vector<int> dp(ranges::max(nums) + 1, 1);  // dp[j]: numbers of arr1, which is of length i+1 and arr1[i] is j
+        vector<int> dp(ranges::max(nums) + 1);  // dp[j]: numbers of arr1, which is of length i+1 and arr1[i] is j
+        for (int i = 0; i <= nums[0]; ++i) {
+            dp[i] = 1;
+        }
         for (int i = 1; i < size(nums); ++i) {
             // arr1[i-1] <= arr1[i]
             // => arr1[i]-arr1[i-1] >= 0 (1)
@@ -98,7 +101,10 @@ class Solution3 {
 public:
     int countOfPairs(vector<int>& nums) {
         static const int MOD = 1e9 + 7;
-        vector<int> dp(ranges::max(nums) + 1, 1);  // dp[j]: numbers of arr1, which is of length i+1 and arr1[i] is j
+        vector<int> dp(ranges::max(nums) + 1);  // dp[j]: numbers of arr1, which is of length i+1 and arr1[i] is j
+        for (int i = 0; i <= nums[0]; ++i) {
+            dp[i] = 1;
+        }
         for (int i = 1; i < size(nums); ++i) {
             // arr1[i-1] <= arr1[i]
             // => arr1[i]-arr1[i-1] >= 0 (1)
