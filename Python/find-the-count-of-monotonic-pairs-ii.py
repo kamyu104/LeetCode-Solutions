@@ -38,7 +38,7 @@ class Solution2(object):
         :rtype: int
         """
         MOD = 10**9+7
-        dp = [1]*(max(nums)+1)  # dp[j]: arr1 is of length i+1 and a[i] is j
+        dp = [1]*(max(nums)+1)  # dp[j]: numbers of arr1, which is of length i+1 and arr1[i] is j
         for i in xrange(1, len(nums)):
             # arr1[i-1] <= arr1[i]
             # => arr1[i]-arr1[i-1] >= 0 (1)
