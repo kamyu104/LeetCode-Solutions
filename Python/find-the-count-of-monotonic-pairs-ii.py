@@ -22,8 +22,8 @@ class Solution(object):
         MOD = 10**9+7
         # arr1 = [0+x1, arr1[0]+max(nums[1]-nums[0], 0)+x2, ..., arr[n-2]+max(nums[n-1]-nums[n-2], 0)+xn]
         # => sum(max(nums[i]-nums[i-1], 0) for i in xrange(1, len(nums)))+(x1+x2+...+xn) <= nums[-1]
-        # x1+x2+...+xn <= nums[-1]-sum(max(nums[i]-nums[i-1], 0) for i in xrange(1, len(nums))) = cnt
-        # the answer is the number of solutions s.t. x1+x2+...+xn <= cnt, where cnt >= 0
+        # => x1+x2+...+xn <= nums[-1]-sum(max(nums[i]-nums[i-1], 0) for i in xrange(1, len(nums))) = cnt
+        # => the answer is the number of solutions s.t. x1+x2+...+xn <= cnt, where cnt >= 0
         cnt = nums[-1]-sum(max(nums[i]-nums[i-1], 0) for i in xrange(1, len(nums)))
         return nHr(len(nums)+1, cnt) if cnt >= 0 else 0
     
