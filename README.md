@@ -650,8 +650,8 @@
 3227 | [Vowels Game in a String](https://leetcode.com/problems/vowels-game-in-a-string/) | [C++](./C++/vowels-game-in-a-string.cpp) [Python](./Python/vowels-game-in-a-string.py) | _O(n)_ | _O(1)_ | Medium | | Math |
 3232 | [Find if Digit Game Can Be Won](https://leetcode.com/problems/find-if-digit-game-can-be-won/) | [C++](./C++/find-if-digit-game-can-be-won.cpp) [Python](./Python/find-if-digit-game-can-be-won.py) | _O(n)_ | _O(1)_ | Easy | | Brute Force, Game Theory |
 3247 | [Number of Subsequences with Odd Sum](https://leetcode.com/problems/number-of-subsequences-with-odd-sum/) | [C++](./C++/number-of-subsequences-with-odd-sum.cpp) [Python](./Python/number-of-subsequences-with-odd-sum.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Combinatorics, Fast Exponentiation, DP |
-3250 | [Find the Count of Monotonic Pairs I](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/) | [C++](./C++/find-the-count-of-monotonic-pairs-i.cpp) [Python](./Python/find-the-count-of-monotonic-pairs-i.py) | _O(n + r)_ | _O(n + r)_ | Hard | | Combinatorics, Bars and Stars, DP, Prefix Sum |
-3251 | [Find the Count of Monotonic Pairs II](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-ii/) | [C++](./C++/find-the-count-of-monotonic-pairs-ii.cpp) [Python](./Python/find-the-count-of-monotonic-pairs-ii.py) | _O(n + r)_ | _O(n + r)_ | Hard | | Combinatorics, Bars and Stars, DP, Prefix Sum |
+3250 | [Find the Count of Monotonic Pairs I](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/) | [C++](./C++/find-the-count-of-monotonic-pairs-i.cpp) [Python](./Python/find-the-count-of-monotonic-pairs-i.py) | _O(n + r)_ | _O(n + r)_ | Hard | | Combinatorics, Stars and Bars, DP, Prefix Sum |
+3251 | [Find the Count of Monotonic Pairs II](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-ii/) | [C++](./C++/find-the-count-of-monotonic-pairs-ii.cpp) [Python](./Python/find-the-count-of-monotonic-pairs-ii.py) | _O(n + r)_ | _O(n + r)_ | Hard | | Combinatorics, Stars and Bars, DP, Prefix Sum |
 
 <br/>
 <div align="right">
