@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3246%20%2F%203246-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3252%20%2F%203252-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -649,6 +649,9 @@
 3222 | [Find the Winning Player in Coin Game](https://leetcode.com/problems/find-the-winning-player-in-coin-game/) | [C++](./C++/find-the-winning-player-in-coin-game.cpp) [Python](./Python/find-the-winning-player-in-coin-game.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 3227 | [Vowels Game in a String](https://leetcode.com/problems/vowels-game-in-a-string/) | [C++](./C++/vowels-game-in-a-string.cpp) [Python](./Python/vowels-game-in-a-string.py) | _O(n)_ | _O(1)_ | Medium | | Math |
 3232 | [Find if Digit Game Can Be Won](https://leetcode.com/problems/find-if-digit-game-can-be-won/) | [C++](./C++/find-if-digit-game-can-be-won.cpp) [Python](./Python/find-if-digit-game-can-be-won.py) | _O(n)_ | _O(1)_ | Easy | | Brute Force, Game Theory |
+3247 | [Number of Subsequences with Odd Sum](https://leetcode.com/problems/number-of-subsequences-with-odd-sum/) | [C++](./C++/number-of-subsequences-with-odd-sum.cpp) [Python](./Python/number-of-subsequences-with-odd-sum.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Combinatorics, Fast Exponentiation, DP |
+3250 | [Find the Count of Monotonic Pairs I](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/) | [C++](./C++/find-the-count-of-monotonic-pairs-i.cpp) [Python](./Python/find-the-count-of-monotonic-pairs-i.py) | _O(n + r)_ | _O(n + r)_ | Hard | | Combinatorics, Bars and Stars, DP, Prefix Sum |
+3251 | [Find the Count of Monotonic Pairs II](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-ii/) | [C++](./C++/find-the-count-of-monotonic-pairs-ii.cpp) [Python](./Python/find-the-count-of-monotonic-pairs-ii.py) | _O(n + r)_ | _O(n + r)_ | Hard | | Combinatorics, Bars and Stars, DP, Prefix Sum |
 
 <br/>
 <div align="right">
@@ -910,6 +913,7 @@
 3004 | [Maximum Subtree of the Same Color](https://leetcode.com/problems/maximum-subtree-of-the-same-color/)| [C++](./C++/maximum-subtree-of-the-same-color.cpp) [Python](./Python/maximum-subtree-of-the-same-color.py)| _O(n)_ | _O(h)_ | Medium | 🔒 | DFS |
 3067 | [Count Pairs of Connectable Servers in a Weighted Tree Network](https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/)| [C++](./C++/count-pairs-of-connectable-servers-in-a-weighted-tree-network.cpp) [Python](./Python/count-pairs-of-connectable-servers-in-a-weighted-tree-network.py)| _O(n^2)_ | _O(n)_ | Medium | | DFS, BFS |
 3203 | [Find Minimum Diameter After Merging Two Trees](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/)| [C++](./C++/find-minimum-diameter-after-merging-two-trees.cpp) [Python](./Python/find-minimum-diameter-after-merging-two-trees.py)| _O(n + m)_ | _O(n + m)_ | Hard | variant of [Tree Diameter](https://leetcode.com/problems/tree-diameter/) | DFS, BFS, Tree DP, Tree Diameter |
+3249 | [Count the Number of Good Nodes](https://leetcode.com/problems/count-the-number-of-good-nodes/)| [C++](./C++/count-the-number-of-good-nodes.cpp) [Python](./Python/count-the-number-of-good-nodes.py)| _O(n)_ | _O(h)_ | Medium |  | DFS |
 
 <br/>
 <div align="right">
@@ -1308,6 +1312,7 @@
 3100 | [Water Bottles II](https://leetcode.com/problems/water-bottles-ii/) | [C++](./C++/water-bottles-ii.cpp) [Python](./Python/water-bottles-ii.py) | _O(sqrt(n))_ | _O(1)_ | Medium | | Simulation
 3168 | [Minimum Number of Chairs in a Waiting Room](https://leetcode.com/problems/minimum-number-of-chairs-in-a-waiting-room/) | [C++](./C++/minimum-number-of-chairs-in-a-waiting-room.cpp) [Python](./Python/minimum-number-of-chairs-in-a-waiting-room.py) | _O(n)_ | _O(1)_ | Easy | | Simulation
 3175 | [Find The First Player to win K Games in a Row](https://leetcode.com/problems/find-the-first-player-to-win-k-games-in-a-row/) | [C++](./C++/find-the-first-player-to-win-k-games-in-a-row.cpp) [Python](./Python/find-the-first-player-to-win-k-games-in-a-row.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
+3248 | [Snake in Matrix](https://leetcode.com/problems/snake-in-matrix/) | [C++](./C++/snake-in-matrix.cpp) [Python](./Python/snake-in-matrix.py) | _O(c)_ | _O(1)_ | Medium | | Simulation
 
 <br/>
 <div align="right">
@@ -1561,7 +1566,8 @@
 3220 | [Odd and Even Transactions](https://leetcode.com/problems/odd-and-even-transactions/) | [MySQL](./MySQL/odd-and-even-transactions.sql) | _O(nlogn)_ | _O(n)_       | Medium           ||  |
 3230 | [Customer Purchasing Behavior Analysis](https://leetcode.com/problems/customer-purchasing-behavior-analysis/) | [MySQL](./MySQL/customer-purchasing-behavior-analysis.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3236 | [CEO Subordinate Hierarchy](https://leetcode.com/problems/ceo-subordinate-hierarchy/) | [MySQL](./MySQL/ceo-subordinate-hierarchy.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| Recursive CTE, BFS |
-3246 | [Premier League Table Ranking](https://leetcode.com/problems/premier-league-table-ranking/) | [MySQL](./MySQL/premier-league-table-ranking.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| Window Function |
+3246 | [Premier League Table Ranking](https://leetcode.com/problems/premier-league-table-ranking/) | [MySQL](./MySQL/premier-league-table-ranking.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| Window Function |
+3252 | [Premier League Table Ranking II](https://leetcode.com/problems/premier-league-table-ranking-ii/) | [MySQL](./MySQL/premier-league-table-ranking-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
