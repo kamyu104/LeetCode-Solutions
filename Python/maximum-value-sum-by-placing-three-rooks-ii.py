@@ -49,5 +49,5 @@ class Solution2(object):
         k = 3
         rows = [heapq.nlargest(k, [(board[i][j], i, j) for j in xrange(len(board[0]))]) for i in xrange(len(board))]
         cols = [heapq.nlargest(k, [(board[i][j], i, j) for i in xrange(len(board))]) for j in xrange(len(board[0]))]
-        min_heap = heapq.nlargest((k-1)*(2*k-1)+1, set(itertools.chain(*rows)) & set(itertools.chain(*cols)))
+        min_heap = heapq.nlargest((k-1)*(2*k-1)+1, set(itertools.chain(*rows)) & set(itertools.chain(*cols)))  # each choice excludes at most 2k-1 candidates, we should have at least (k-1)*(2k-1)+1 candidates
         return max(sum(x[0] for x in c) for c in itertools.combinations(min_heap, k) if len({x[1] for x in c}) == k == len({x[2] for x in c}))
