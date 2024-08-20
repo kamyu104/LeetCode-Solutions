@@ -18,3 +18,16 @@ class Solution(object):
                 result[left] = nums[right]
                 left += 1
         return result
+
+
+# Time:  O(n^2)
+# Space: O(1)
+# brute force
+class Solution2(object):
+    def resultsArray(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+        return [nums[i+k-1] if all(nums[j]+1 == nums[j+1] for j in xrange(i, i+k-1)) else -1 for i in xrange(len(nums)-k+1)]
