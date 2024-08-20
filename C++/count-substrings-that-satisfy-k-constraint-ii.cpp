@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// two pointers, sliding window, prefix sum
+// two pointers, sliding window, prefix sum, hash table
 class Solution {
 public:
     vector<long long> countKConstraintSubstrings(string s, int k, vector<vector<int>>& queries) {
