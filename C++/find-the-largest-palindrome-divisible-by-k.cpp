@@ -32,7 +32,7 @@ public:
             for (const auto& x : result) {
                 curr = (curr * 10 + (x - '0')) % p;
             }
-            // l%2 == 0: (curr+(i-9)*11*pow(10, l//2-1, p))%p == 0
+            // l%2 == 0: (curr+(i-9)*11*pow(10, l//2-1, p))%p = 0
             // l%2 == 1: (curr+(i-9)*pow(10, l//2, p))%p = 0
             int i = 9 - (curr * inv(l % 2 == 0 ? 11 : 1, p) * inv(powmod(10, l / 2 - (l % 2 == 0 ? 1 : 0), p), p)) % p;
             if (i <= 2) {
