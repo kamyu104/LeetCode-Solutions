@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// math
+// constructive algorithms, math
 class Solution {
 public:
     string largestPalindrome(int n, int k) {
