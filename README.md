@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3252%20%2F%203252-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3261%20%2F%203261-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -384,6 +384,8 @@
 3066 | [Minimum Operations to Exceed Threshold Value II](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/) | [C++](./C++/minimum-operations-to-exceed-threshold-value-ii.cpp) [Python](./Python/minimum-operations-to-exceed-threshold-value-ii.py) | _O(nlogn)_ | _O(n)_ | Medium | | Simulation, Heap
 3080 | [Mark Elements on Array by Performing Queries](https://leetcode.com/problems/mark-elements-on-array-by-performing-queries/) | [C++](./C++/mark-elements-on-array-by-performing-queries.cpp) [Python](./Python/mark-elements-on-array-by-performing-queries.py) | _O(q + nlogn)_ | _O(n)_ | Medium | | Hash Table, Heap
 3092 | [Most Frequent IDs](https://leetcode.com/problems/most-frequent-ids/) | [C++](./C++/most-frequent-ids.cpp) [Python](./Python/most-frequent-ids.py) | _O(nlogn)_ | _O(n)_ | Medium | | Heap, BST, Sorted List
+3256 | [Maximum Value Sum by Placing Three Rooks I](https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-i/) | [C++](./C++/maximum-value-sum-by-placing-three-rooks-i.cpp) [Python](./Python/maximum-value-sum-by-placing-three-rooks-i.py) | _O(m * n)_ | _O(m + n)_ | Hard | | Heap, Brute Force
+3257 | [Maximum Value Sum by Placing Three Rooks II](https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-ii/) | [C++](./C++/maximum-value-sum-by-placing-three-rooks-ii.cpp) [Python](./Python/maximum-value-sum-by-placing-three-rooks-ii.py) | _O(m * n)_ | _O(m + n)_ | Hard | | Heap, Brute Force
 
 <br/>
 <div align="right">
@@ -770,6 +772,10 @@
 3206 | [Alternating Groups I](https://leetcode.com/problems/alternating-groups-i/)| [C++](./C++/alternating-groups-i.cpp) [Python](./Python/alternating-groups-i.py) | _O(n)_    | _O(1)_          | Easy           |  | Two Pointers, Sliding Window
 3208 | [Alternating Groups II](https://leetcode.com/problems/alternating-groups-ii/)| [C++](./C++/alternating-groups-ii.cpp) [Python](./Python/alternating-groups-ii.py) | _O(n)_    | _O(1)_          | Medium           |  | Two Pointers, Sliding Window
 3234 | [Count the Number of Substrings With Dominant Ones](https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/)| [C++](./C++/count-the-number-of-substrings-with-dominant-ones.cpp) [Python](./Python/count-the-number-of-substrings-with-dominant-ones.py) | _O(n^(3/2))_    | _O(1)_          | Medium           |  | Two Pointers, Sliding Window
+3254 | [Find the Power of K-Size Subarrays I](https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i/)| [C++](./C++/find-the-power-of-k-size-subarrays-i.cpp) [Python](./Python/find-the-power-of-k-size-subarrays-i.py) | _O(n)_    | _O(1)_          | Medium           |  | Two Pointers, Sliding Window
+3255 | [Find the Power of K-Size Subarrays II](https://leetcode.com/problems/find-the-power-of-k-size-subarrays-ii/)| [C++](./C++/find-the-power-of-k-size-subarrays-ii.cpp) [Python](./Python/find-the-power-of-k-size-subarrays-ii.py) | _O(n)_    | _O(n)_          | Hard           |  | Two Pointers, Sliding Window
+3258 | [Count Substrings That Satisfy K-Constraint I](https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/)| [C++](./C++/count-substrings-that-satisfy-k-constraint-i.cpp) [Python](./Python/count-substrings-that-satisfy-k-constraint-i.py) | _O(n)_    | _O(1)_          | Easy           |  | Two Pointers, Sliding Window
+3261 | [Count Substrings That Satisfy K-Constraint II](https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/)| [C++](./C++/count-substrings-that-satisfy-k-constraint-ii.cpp) [Python](./Python/count-substrings-that-satisfy-k-constraint-ii.py) | _O(n)_    | _O(n)_          | Hard           |  | Two Pointers, Sliding Window, Prefix Sum
 
 <br/>
 <div align="right">
@@ -1075,6 +1081,8 @@
 3213 | [Construct String with Minimum Cost](https://leetcode.com/problems/construct-string-with-minimum-cost/) | [C++](./C++/construct-string-with-minimum-cost.cpp) [Python](./Python/construct-string-with-minimum-cost.py) | _O(n^2 + w * l)_ | _O(t)_ | Hard | | DP, Trie
 3225 | [Maximum Score From Grid Operations](https://leetcode.com/problems/maximum-score-from-grid-operations/) | [C++](./C++/maximum-score-from-grid-operations.cpp) [Python](./Python/maximum-score-from-grid-operations.py) | _O(n^3)_ | _O(n)_ | Hard | | Prefix Sum, DP
 3241 | [Time Taken to Mark All Nodes](https://leetcode.com/problems/time-taken-to-mark-all-nodes/) | [C++](./C++/time-taken-to-mark-all-nodes.cpp) [Python](./Python/time-taken-to-mark-all-nodes.py) | _O(n)_ | _O(n)_ | Hard | | Tree DP, BFS, DFS
+3253 | [Construct String with Minimum Cost (Easy)](https://leetcode.com/problems/construct-string-with-minimum-cost-easy/) | [C++](./C++/construct-string-with-minimum-cost-easy.cpp) [Python](./Python/construct-string-with-minimum-cost-easy.py) | _O(n * w * l)_ | _O(l)_ | Medium | 🔒 | DP, Trie
+3259 | [Maximum Energy Boost From Two Drinks](https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/) | [C++](./C++/maximum-energy-boost-from-two-drinks.cpp) [Python](./Python/maximum-energy-boost-from-two-drinks.py) | _O(n)_ | _O(1)_ | Medium | | DP
 
 <br/>
 <div align="right">
@@ -1342,6 +1350,7 @@
 2849 | [Determine if a Cell Is Reachable at a Given Time](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/) | [C++](./C++/determine-if-a-cell-is-reachable-at-a-given-time.cpp) [Python](./Python/determine-if-a-cell-is-reachable-at-a-given-time.py) | _O(1)_ | _O(1)_ | Medium | | Constructive Algorithms, Math
 2856 | [Minimum Array Length After Pair Removals](https://leetcode.com/problems/minimum-array-length-after-pair-removals/) | [C++](./C++/minimum-array-length-after-pair-removals.cpp) [Python](./Python/minimum-array-length-after-pair-removals.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Constructive Algorithms
 3139 | [Minimum Cost to Equalize Array](https://leetcode.com/problems/minimum-cost-to-equalize-array/) | [C++](./C++/minimum-cost-to-equalize-array.cpp) [Python](./Python/minimum-cost-to-equalize-array.py) | _O(n)_ | _O(1)_ | Hard | | Constructive Algorithms, Math
+3260 | [Find the Largest Palindrome Divisible by K](https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/) | [C++](./C++/find-the-largest-palindrome-divisible-by-k.cpp) [Python](./Python/find-the-largest-palindrome-divisible-by-k.py) | _O(n)_ | _O(1)_ | Hard | | String, Constructive Algorithms, Math |
 
 <br/>
 <div align="right">
