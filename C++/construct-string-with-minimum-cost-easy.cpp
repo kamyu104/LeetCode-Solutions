@@ -1,10 +1,37 @@
-// Time:  O(n^2 + w * l)
-// Space: O(t)
+// Time:  O(n * w * l)
+// Space: O(l)
 
 static const int INF = numeric_limits<int>::max();
 
-// trie, dp
+// dp
 class Solution {
+public:
+    int minimumCost(string target, vector<string>& words, vector<int>& costs) {
+        int l = 0;
+        for (const auto& w : words) {
+            l = max(l, static_cast<int>(size(w)));
+        }
+        vector<int> dp(l + 1, INF);
+        dp[0] = 0;
+        for (int i = 0; i < size(target); ++i) {
+            if (dp[i % size(dp)] == INF) {
+                continue;
+            }
+            for (int j = 0; j < size(words); ++j) {
+                if (target.substr(i, size(words[j])) == words[j]) {
+                    dp[(i + size(words[j])) % size(dp)] = min(dp[(i + size(words[j])) % size(dp)], dp[i % size(dp)] + costs[j]);
+                }
+            }
+            dp[i % size(dp)] = INF;
+        }
+        return dp[size(target) % size(dp)] != INF ? dp[size(target) % size(dp)] : -1;
+    }
+};
+
+// Time:  O(n^2 + w * l)
+// Space: O(t)
+// trie, dp
+class Solution2 {
 private:
     class Trie {
     public:
@@ -73,7 +100,7 @@ public:
 // Time:  O(n^2 + w * l)
 // Space: O(t)
 // trie, dp
-class Solution2 {
+class Solution3 {
 private:
     struct TrieNode {
         int cost = INF;
@@ -130,32 +157,5 @@ public:
             trie.query(i, target, dp);
         }
         return dp.back() != INF ? dp.back() : -1;
-    }
-};
-
-// Time:  O(n * w * l)
-// Space: O(l)
-// dp
-class Solution3 {
-public:
-    int minimumCost(string target, vector<string>& words, vector<int>& costs) {
-        int l = 0;
-        for (const auto& w : words) {
-            l = max(l, static_cast<int>(size(w)));
-        }
-        vector<int> dp(l + 1, INF);
-        dp[0] = 0;
-        for (int i = 0; i < size(target); ++i) {
-            if (dp[i % size(dp)] == INF) {
-                continue;
-            }
-            for (int j = 0; j < size(words); ++j) {
-                if (target.substr(i, size(words[j])) == words[j]) {
-                    dp[(i + size(words[j])) % size(dp)] = min(dp[(i + size(words[j])) % size(dp)], dp[i % size(dp)] + costs[j]);
-                }
-            }
-            dp[i % size(dp)] = INF;
-        }
-        return dp[size(target) % size(dp)] != INF ? dp[size(target) % size(dp)] : -1;
     }
 };
