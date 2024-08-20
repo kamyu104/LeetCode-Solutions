@@ -1,11 +1,39 @@
-# Time:  O(n^2 + w * l)
-# Space: O(t)
+# Time:  O(n * w * l)
+# Space: O(l)
 
 import itertools
 
 
-# trie, dp
+# dp
 class Solution(object):
+    def minimumCost(self, target, words, costs):
+        """
+        :type target: str
+        :type words: List[str]
+        :type costs: List[int]
+        :rtype: int
+        """
+        INF = float("inf")
+        l = max(len(w) for w in words)
+        dp = [INF]*(l+1)
+        dp[0] = 0
+        for i in xrange(len(target)):
+            if dp[i%len(dp)] == INF:
+                continue
+            for w, c in itertools.izip(words, costs):
+                if target[i:i+len(w)] == w:
+                    dp[(i+len(w))%len(dp)] = min(dp[(i+len(w))%len(dp)], dp[i%len(dp)]+c)
+            dp[i%len(dp)] = INF
+        return dp[len(target)%len(dp)] if dp[len(target)%len(dp)] != INF else -1
+
+
+# Time:  O(n^2 + w * l)
+# Space: O(t)
+import itertools
+
+
+# trie, dp
+class Solution2(object):
     def minimumCost(self, target, words, costs):
         """
         :type target: str
@@ -46,7 +74,7 @@ import itertools
 
 
 # trie, dp
-class Solution2(object):
+class Solution3(object):
     def minimumCost(self, target, words, costs):
         """
         :type target: str
@@ -95,31 +123,3 @@ class Solution2(object):
                 continue
             trie.query(i)
         return dp[-1] if dp[-1] != INF else -1
-
-
-# Time:  O(n * w * l)
-# Space: O(l)
-import itertools
-
-
-# dp
-class Solution3(object):
-    def minimumCost(self, target, words, costs):
-        """
-        :type target: str
-        :type words: List[str]
-        :type costs: List[int]
-        :rtype: int
-        """
-        INF = float("inf")
-        l = max(len(w) for w in words)
-        dp = [INF]*(l+1)
-        dp[0] = 0
-        for i in xrange(len(target)):
-            if dp[i%len(dp)] == INF:
-                continue
-            for w, c in itertools.izip(words, costs):
-                if target[i:i+len(w)] == w:
-                    dp[(i+len(w))%len(dp)] = min(dp[(i+len(w))%len(dp)], dp[i%len(dp)]+c)
-            dp[i%len(dp)] = INF
-        return dp[len(target)%len(dp)] if dp[len(target)%len(dp)] != INF else -1
