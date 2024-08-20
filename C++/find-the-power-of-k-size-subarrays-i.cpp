@@ -17,3 +17,23 @@ public:
         return result;
     }
 };
+
+// Time:  O(n^2)
+// Space: O(1)
+// brute force
+class Solution2 {
+public:
+    vector<int> resultsArray(vector<int>& nums, int k) {
+        vector<int> result;
+        for (int i = 0; i + k - 1 < size(nums); ++i) {
+            int j = i;
+            for (; j < i + k - 1; ++j) {
+                if (nums[j] + 1 != nums[j + 1]) {
+                    break;
+                }
+            }
+            result.emplace_back(j == i + k - 1 ? nums[i + k - 1] : -1);
+        }
+        return result;
+    }
+};
