@@ -17,7 +17,7 @@ class Solution(object):
             result = ['9']*l
             if l:                
                 curr = reduce(lambda accu, x: (accu*10+(ord(x)-ord('0')))%p, result, 0)
-                # l%2 == 0: (curr+(i-9)*11*pow(10, l//2-1, p))%p == 0
+                # l%2 == 0: (curr+(i-9)*11*pow(10, l//2-1, p))%p = 0
                 # l%2 == 1: (curr+(i-9)*pow(10, l//2, p))%p = 0
                 i = 9-(curr*inv(11 if l%2 == 0 else 1, p)*inv(pow(10, l//2-int(l%2 == 0), p), p))%p
                 if i <= 2:
