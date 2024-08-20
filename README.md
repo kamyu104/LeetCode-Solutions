@@ -775,7 +775,7 @@
 3254 | [Find the Power of K-Size Subarrays I](https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i/)| [C++](./C++/find-the-power-of-k-size-subarrays-i.cpp) [Python](./Python/find-the-power-of-k-size-subarrays-i.py) | _O(n)_    | _O(1)_          | Medium           |  | Two Pointers, Sliding Window
 3255 | [Find the Power of K-Size Subarrays II](https://leetcode.com/problems/find-the-power-of-k-size-subarrays-ii/)| [C++](./C++/find-the-power-of-k-size-subarrays-ii.cpp) [Python](./Python/find-the-power-of-k-size-subarrays-ii.py) | _O(n)_    | _O(n)_          | Hard           |  | Two Pointers, Sliding Window
 3258 | [Count Substrings That Satisfy K-Constraint I](https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/)| [C++](./C++/count-substrings-that-satisfy-k-constraint-i.cpp) [Python](./Python/count-substrings-that-satisfy-k-constraint-i.py) | _O(n)_    | _O(1)_          | Easy           |  | Two Pointers, Sliding Window
-3261 | [Count Substrings That Satisfy K-Constraint II](https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/)| [C++](./C++/count-substrings-that-satisfy-k-constraint-ii.cpp) [Python](./Python/count-substrings-that-satisfy-k-constraint-ii.py) | _O(n)_    | _O(n)_          | Hard           |  | Two Pointers, Sliding Window, Prefix Sum
+3261 | [Count Substrings That Satisfy K-Constraint II](https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/)| [C++](./C++/count-substrings-that-satisfy-k-constraint-ii.cpp) [Python](./Python/count-substrings-that-satisfy-k-constraint-ii.py) | _O(n)_    | _O(n)_          | Hard           |  | Two Pointers, Sliding Window, Prefix Sum, Hash Table
 
 <br/>
 <div align="right">
