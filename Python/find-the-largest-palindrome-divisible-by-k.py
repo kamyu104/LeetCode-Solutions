@@ -46,4 +46,4 @@ class Solution(object):
             l = n//2-2
             return '8'+'9'*l+"77"+'9'*l+'8'
         l, r = divmod(n, 12)
-        return "999999"*l+f(r)+"999999"*l  # 999999%7 == 0
+        return "999999"*l+f(r)+"999999"*l  # 999999%7 = 0
