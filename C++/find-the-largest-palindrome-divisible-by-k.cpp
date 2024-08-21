@@ -71,6 +71,6 @@ public:
             return string(1, '8') + string(l, '9') + string(2, '7') + string(l, '9') + string(1, '8');
         }
         const int l = n / 12, r = n % 12;
-        return string(l * 6, '9') + f(r) + string(l * 6, '9');  // 999999%7 == 0
+        return string(l * 6, '9') + f(r) + string(l * 6, '9');  // 999999%7 = 0
     }
 };
