@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3261%20%2F%203261-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3263%20%2F%203263-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -322,6 +322,7 @@
 3062 | [Winner of the Linked List Game](https://leetcode.com/problems/winner-of-the-linked-list-game/) | [C++](./C++/winner-of-the-linked-list-game.cpp) [Python](./Python/winner-of-the-linked-list-game.py) | _O(n)_ | _O(1)_ | Easy | 🔒 | Linked List
 3063 | [Linked List Frequency](https://leetcode.com/problems/linked-list-frequency/) | [C++](./C++/linked-list-frequency.cpp) [Python](./Python/linked-list-frequency.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Linked List
 3217 | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | [C++](./C++/delete-nodes-from-linked-list-present-in-array.cpp) [Python](./Python/delete-nodes-from-linked-list-present-in-array.py) | _O(n)_ | _O(m)_ | Medium | | Hash Table, Linked List
+3263 | [Convert Doubly Linked List to Array I](https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/) | [C++](./C++/convert-doubly-linked-list-to-array-i.cpp) [Python](./Python/convert-doubly-linked-list-to-array-i.py) | _O(n)_ | _O(1)_ | Easy | 🔒 | Linked List
 
 <br/>
 <div align="right">
@@ -1577,6 +1578,7 @@
 3236 | [CEO Subordinate Hierarchy](https://leetcode.com/problems/ceo-subordinate-hierarchy/) | [MySQL](./MySQL/ceo-subordinate-hierarchy.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| Recursive CTE, BFS |
 3246 | [Premier League Table Ranking](https://leetcode.com/problems/premier-league-table-ranking/) | [MySQL](./MySQL/premier-league-table-ranking.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| Window Function |
 3252 | [Premier League Table Ranking II](https://leetcode.com/problems/premier-league-table-ranking-ii/) | [MySQL](./MySQL/premier-league-table-ranking-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
+3262 | [Find Overlapping Shifts](https://leetcode.com/problems/find-overlapping-shifts/) | [MySQL](./MySQL/find-overlapping-shifts.sql) | _O(n^2)_ | _O(n^2)_       | Medium           |🔒| |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
