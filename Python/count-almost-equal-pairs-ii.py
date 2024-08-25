@@ -32,12 +32,13 @@ class Solution(object):
         lookup = set()
         for x, neighbors in adj.iteritems():
             for i in xrange(len(neighbors)):
-                x1, v1 = cnt[neighbors[i]]
+                v1 = cnt[neighbors[i]][1]
                 for j in xrange(i+1, len(neighbors)):
-                    x2, v2 = cnt[neighbors[j]]
-                    if (neighbors[i], neighbors[j]) not in lookup:
-                        lookup.add((neighbors[i], neighbors[j]))
-                        result += v1*v2
+                    v2 = cnt[neighbors[j]][1]
+                    if (neighbors[i], neighbors[j]) in lookup:
+                        continue
+                    lookup.add((neighbors[i], neighbors[j]))
+                    result += v1*v2
         return result
 
 
