@@ -4,7 +4,7 @@
 import collections
 
 
-# freq table
+# freq table, combinatorics
 class Solution(object):
     def countPairs(self, nums):
         """
@@ -46,7 +46,7 @@ class Solution(object):
 import collections
 
 
-# freq table
+# freq table, combinatorics
 class Solution2(object):
     def countPairs(self, nums):
         """
