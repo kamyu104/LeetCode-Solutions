@@ -97,7 +97,7 @@ class Solution2(object):
 import heapq
 
 
-# heap, sort
+# heap, simulation
 class Solution3(object):
     def getFinalState(self, nums, k, multiplier):
         """
