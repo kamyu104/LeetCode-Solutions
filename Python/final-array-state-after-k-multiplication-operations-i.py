@@ -18,12 +18,13 @@ class Solution(object):
         min_heap = [(x, i) for i, x in enumerate(nums)]
         heapq.heapify(min_heap)
         mx = max(nums)
-        while k:
+        for k in reversed(xrange(1, k+1)):
             if min_heap[0][0]*multiplier > mx:
                 break
             x, i = heapq.heappop(min_heap)
             heapq.heappush(min_heap, (x*multiplier, i))
-            k -= 1
+        else:
+            k = 0
         vals = sorted(min_heap)
         q, r = divmod(k, len(nums))
         m = pow(multiplier, q)
@@ -97,7 +98,7 @@ class Solution2(object):
 import heapq
 
 
-# heap, simulation
+# simulation, heap
 class Solution3(object):
     def getFinalState(self, nums, k, multiplier):
         """
@@ -111,11 +112,29 @@ class Solution3(object):
         min_heap = [(x, i) for i, x in enumerate(nums)]
         heapq.heapify(min_heap)
         mx = max(nums)
-        while k:
+        for _ in xrange(k):
             x, i = heapq.heappop(min_heap)
             heapq.heappush(min_heap, (x*multiplier, i))
-            k -= 1
         result = [0]*len(nums)
         for x, i in min_heap:
             result[i] = x
         return result
+
+
+# Time:  O(k * n)
+# Space: O(n)
+# simulation
+class Solution4(object):
+    def getFinalState(self, nums, k, multiplier):
+        """
+        :type nums: List[int]
+        :type k: int
+        :type multiplier: int
+        :rtype: List[int]
+        """
+        if multiplier == 1:
+            return nums
+        for _ in xrange(k):
+            i = min(xrange(len(nums)), key=lambda i: nums[i])
+            nums[i] *= multiplier
+        return nums
