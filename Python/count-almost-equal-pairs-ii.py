@@ -55,7 +55,7 @@ class Solution2(object):
         :rtype: int
         """
         L = 7
-        POW10 = [0]*7
+        POW10 = [0]*L
         POW10[0] = 1
         for i in xrange(L-1):
             POW10[i+1] = POW10[i]*10
