@@ -19,12 +19,13 @@ class Solution(object):
         min_heap = [(x, i) for i, x in enumerate(nums)]
         heapq.heapify(min_heap)
         mx = max(nums)
-        while k:
+        for k in reversed(xrange(1, k+1)):
             if min_heap[0][0]*multiplier > mx:
                 break
             x, i = heapq.heappop(min_heap)
             heapq.heappush(min_heap, (x*multiplier, i))
-            k -= 1
+        else:
+            k = 0
         vals = sorted(min_heap)
         q, r = divmod(k, len(nums))
         m = pow(multiplier, q, MOD)
