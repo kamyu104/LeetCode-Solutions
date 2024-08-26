@@ -1,4 +1,4 @@
-# Time:  O(nlogr + min(n, k) * log(logr) + nlogn)
+# Time:  O(nlogr + min(n, k) * log(logr) + nlogn) = O(nlogr)
 # Space: O(n)
 
 import math
@@ -50,17 +50,15 @@ class Solution(object):
                 break
             k -= c
             nums[i] *= pow(multiplier, c)
-        vals = sorted((x, i) for i, x in enumerate(nums))
         q, r = divmod(k, len(nums))
         m = pow(multiplier, q, MOD)
         result = [0]*len(nums)
-        for idx, (x, i) in enumerate(vals):
+        for idx, (x, i) in enumerate(sorted((x, i) for i, x in enumerate(nums))):
             result[i] = x*m*(multiplier if idx < r else 1)%MOD
         return result
 
 
-
-# Time:  O(min(nlogr, k) * logn + nlogn)
+# Time:  O(min(nlogr, k) * logn + nlogn) = O(nlogn * logr)
 # Space: O(n)
 import heapq
 
