@@ -109,18 +109,25 @@ class Solution3(object):
         POW10[0] = 1
         for i in xrange(L-1):
             POW10[i+1] = POW10[i]*10
-        def at_most(k, x, result):
-            result.add(x)
-            if k == 0:
-                return
-            k -= 1
-            for i in xrange(L):
-                a = x//POW10[i]%10
-                for j in xrange(i+1, L):
-                    b = x//POW10[j]%10
-                    if a == b:
-                        continue
-                    at_most(k, x-a*(POW10[i]-POW10[j])+b*(POW10[i]-POW10[j]), result)
+        def at_most(k, x):
+            result = {x}
+            q = [x]
+            while q:
+                if k == 0:
+                    break 
+                new_q = []
+                for x in q:
+                    for i in xrange(L):
+                        a = x//POW10[i]%10
+                        for j in xrange(i+1, L):
+                            b = x//POW10[j]%10
+                            y = x-a*(POW10[i]-POW10[j])+b*(POW10[i]-POW10[j])
+                            if y in result:
+                                continue
+                            result.add(y)
+                            new_q.append(y)
+                q = new_q
+                k -= 1
             return result
 
         result = 0
@@ -128,9 +135,7 @@ class Solution3(object):
         cnt2 = collections.Counter()
         for x, v in cnt1.iteritems():
             result += cnt2[x]*v+v*(v-1)//2
-            lookup = set()
-            at_most(K, x, lookup)
-            for x in lookup:
+            for x in at_most(K, x):
                 if x not in cnt1:
                     continue
                 cnt2[x] += v
