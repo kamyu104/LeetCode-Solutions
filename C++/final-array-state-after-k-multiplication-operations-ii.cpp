@@ -60,7 +60,7 @@ public:
             vals2.emplace_back(nums2[i], i);
         }
         sort(begin(vals2), end(vals2));
-        const int q =  k / size(nums), r = k % size(nums);
+        const int q = k / size(nums), r = k % size(nums);
         const int m = powmod(multiplier, q);
         vector<int> result(size(nums));
         for (int idx = 0; idx < size(vals2); ++idx) {
@@ -146,7 +146,7 @@ public:
             vals2.emplace_back(nums2[i], i);
         }
         sort(begin(vals2), end(vals2));
-        const int q =  k / size(nums), r = k % size(nums);
+        const int q = k / size(nums), r = k % size(nums);
         const int m = powmod(multiplier, q);
         vector<int> result(size(nums));
         for (int idx = 0; idx < size(vals2); ++idx) {
@@ -201,7 +201,7 @@ public:
             vals2.emplace_back(nums2[i], i);
         }
         sort(begin(vals2), end(vals2));
-        const int q =  k / size(nums), r = k % size(nums);
+        const int q = k / size(nums), r = k % size(nums);
         const int m = powmod(multiplier, q);
         vector<int> result(size(nums));
         for (int idx = 0; idx < size(vals2); ++idx) {
