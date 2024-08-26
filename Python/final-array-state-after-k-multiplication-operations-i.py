@@ -130,7 +130,7 @@ class Solution3(object):
         return result
 
 
-# Time:  O(klogn)
+# Time:  O(n + klogn)
 # Space: O(n)
 import heapq
 
@@ -148,14 +148,11 @@ class Solution4(object):
             return nums
         min_heap = [(x, i) for i, x in enumerate(nums)]
         heapq.heapify(min_heap)
-        mx = max(nums)
         for _ in xrange(k):
-            x, i = heapq.heappop(min_heap)
-            heapq.heappush(min_heap, (x*multiplier, i))
-        result = [0]*len(nums)
-        for x, i in min_heap:
-            result[i] = x
-        return result
+            i = heapq.heappop(min_heap)[1]
+            nums[i] *= multiplier
+            heapq.heappush(min_heap, (nums[i], i))
+        return nums
 
 
 # Time:  O(k * n)
