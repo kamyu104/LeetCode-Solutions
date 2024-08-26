@@ -98,9 +98,7 @@ class Solution3(object):
                     b = x//POW10[j]%10
                     if a == b:
                         continue
-                    x += -a*(POW10[i]-POW10[j])+b*(POW10[i]-POW10[j])
-                    at_most(k, x, result)
-                    x -= -a*(POW10[i]-POW10[j])+b*(POW10[i]-POW10[j])
+                    at_most(k, x-a*(POW10[i]-POW10[j])+b*(POW10[i]-POW10[j]), result)
             return result
 
         result = 0
