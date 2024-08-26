@@ -91,8 +91,8 @@ class Solution2(object):
         return result
 
 
-# Time:  O(n * l^4)
-# Space: O(n + l^4) = O(n)
+# Time:  O(n * l^(2 * k))
+# Space: O(n + l^(2 * k)) = O(n)
 import collections
 
 
