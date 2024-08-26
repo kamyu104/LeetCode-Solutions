@@ -655,8 +655,6 @@
 3247 | [Number of Subsequences with Odd Sum](https://leetcode.com/problems/number-of-subsequences-with-odd-sum/) | [C++](./C++/number-of-subsequences-with-odd-sum.cpp) [Python](./Python/number-of-subsequences-with-odd-sum.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Combinatorics, Fast Exponentiation, DP |
 3250 | [Find the Count of Monotonic Pairs I](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/) | [C++](./C++/find-the-count-of-monotonic-pairs-i.cpp) [Python](./Python/find-the-count-of-monotonic-pairs-i.py) | _O(n + r)_ | _O(n + r)_ | Hard | | Combinatorics, Stars and Bars, DP, Prefix Sum |
 3251 | [Find the Count of Monotonic Pairs II](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-ii/) | [C++](./C++/find-the-count-of-monotonic-pairs-ii.cpp) [Python](./Python/find-the-count-of-monotonic-pairs-ii.py) | _O(n + r)_ | _O(n + r)_ | Hard | | Combinatorics, Stars and Bars, DP, Prefix Sum |
-3265 | [Count Almost Equal Pairs I](https://leetcode.com/problems/count-almost-equal-pairs-i/) | [C++](./C++/count-almost-equal-pairs-i.cpp) [Python](./Python/count-almost-equal-pairs-i.py) | _O(n * l^2)_ | _O(n)_ | Medium | | Freq Table, Combinatorics |
-3267 | [Count Almost Equal Pairs II](https://leetcode.com/problems/count-almost-equal-pairs-ii/) | [C++](./C++/count-almost-equal-pairs-ii.cpp) [Python](./Python/count-almost-equal-pairs-ii.py) | _O(n * l^4)_ | _O(n)_ | Hard | | Freq Table, Combinatorics |
 
 <br/>
 <div align="right">
@@ -1288,6 +1286,8 @@
 3235 | [Check if the Rectangle Corner Is Reachable](https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/)  | [C++](./C++/check-if-the-rectangle-corner-is-reachable.cpp) [Python](./Python/check-if-the-rectangle-corner-is-reachable.py) |  _O(n^2)_ | _O(n)_ | Hard           | | Graph, BFS, DFS, Union Find |
 3243 | [Shortest Distance After Road Addition Queries I](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/)  | [C++](./C++/shortest-distance-after-road-addition-queries-i.cpp) [Python](./Python/shortest-distance-after-road-addition-queries-i.py) |  _O(n^2)_ | _O(n^2)_ | Medium           | | Graph, `Dijkstra's Algorithm`, BFS |
 3244 | [Shortest Distance After Road Addition Queries II](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/)  | [C++](./C++/shortest-distance-after-road-addition-queries-ii.cpp) [Python](./Python/shortest-distance-after-road-addition-queries-ii.py) |  _O(nlogn)_ | _O(n)_ | Hard           | | Graph, BST, Sorted List |
+3265 | [Count Almost Equal Pairs I](https://leetcode.com/problems/count-almost-equal-pairs-i/) | [C++](./C++/count-almost-equal-pairs-i.cpp) [Python](./Python/count-almost-equal-pairs-i.py) | _O(n * l^2)_ | _O(n)_ | Medium | | Freq Table, Combinatorics, Graph, BFS |
+3267 | [Count Almost Equal Pairs II](https://leetcode.com/problems/count-almost-equal-pairs-ii/) | [C++](./C++/count-almost-equal-pairs-ii.cpp) [Python](./Python/count-almost-equal-pairs-ii.py) | _O(n * l^4)_ | _O(n)_ | Hard | | Freq Table, Combinatorics, Graph, BFS |
 
 <br/>
 <div align="right">
