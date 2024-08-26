@@ -121,6 +121,8 @@ class Solution3(object):
                         a = x//POW10[i]%10
                         for j in xrange(i+1, L):
                             b = x//POW10[j]%10
+                            if a == b:
+                                continue
                             y = x-a*(POW10[i]-POW10[j])+b*(POW10[i]-POW10[j])
                             if y in result:
                                 continue
