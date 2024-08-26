@@ -43,7 +43,7 @@ public:
                 const int v1 = cnt[adj[u][i]].second;
                 for (int j = i + 1; j < size(adj[u]); ++j) {
                     const int v2 = cnt[adj[u][j]].second;
-                    if (lookup.count(adj[u][i]) && lookup[adj[u][i]].count(adj[u][j])) {
+                    if (lookup[adj[u][i]].count(adj[u][j])) {
                         continue;
                     }
                     lookup[adj[u][i]].emplace(adj[u][j]);
