@@ -196,16 +196,16 @@ public:
             nums2[i] *= multiplier;
             min_heap.emplace(nums2[i], i);
         }
-        vals.clear();
+        vector<P> vals2;
         for (int i = 0; i < size(nums2); ++i) {
-            vals.emplace_back(nums2[i], i);
+            vals2.emplace_back(nums2[i], i);
         }
-        sort(begin(vals), end(vals));
+        sort(begin(vals2), end(vals2));
         const int q =  k / size(nums), r = k % size(nums);
         const int m = powmod(multiplier, q);
         vector<int> result(size(nums));
-        for (int idx = 0; idx < size(vals); ++idx) {
-            const auto& [x, i] = vals[idx];
+        for (int idx = 0; idx < size(vals2); ++idx) {
+            const auto& [x, i] = vals2[idx];
             result[i] = ((x % MOD * m) % MOD * (idx < r ? multiplier : 1)) % MOD;
         }
         return result;
