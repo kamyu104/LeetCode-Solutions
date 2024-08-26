@@ -69,14 +69,11 @@ public:
             POW10[i+1] = POW10[i] * 10;
         }
         const auto& at_most = [&](int k, int x) {
-            unordered_set<int> result = {x};
-            vector<int> q = {x};
-            while (!empty(q)) {
-                if (k == 0) {
-                    break;
-                }
-                vector<int> new_q;
-                for (const auto& x : q) {
+            unordered_set<int> lookup = {x};
+            vector<int> result = {x};
+            for (int u = 0; k; --k) {
+                for (int v = size(result); u < v; ++u) {
+                    const int x = result[u];
                     for (int i = 0; i < L; ++i) {
                         const int a = x / POW10[i] % 10;
                         for (int j = i + 1; j < L; ++j) {
@@ -84,17 +81,15 @@ public:
                             if (a == b) {
                                 continue;
                             }
-                            const int y = x - a * (POW10[i] - POW10[j]) + b * (POW10[i] - POW10[j]);
-                            if (result.count(y)) {
+                            const int y = x -a * (POW10[i] - POW10[j]) + b * (POW10[i] - POW10[j]);
+                            if (lookup.count(y)) {
                                 continue;
                             }
-                            result.emplace(y);
-                            new_q.emplace_back(y);
+                            lookup.emplace(y);
+                            result.emplace_back(y);
                         }
                     }
                 }
-                q = move(new_q);
-                --k;
             }
             return result;
         };
