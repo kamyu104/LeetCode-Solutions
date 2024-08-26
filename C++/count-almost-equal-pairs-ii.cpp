@@ -55,68 +55,10 @@ public:
     }
 };
 
-// Time:  O(n * l^4)
-// Space: O(n + l^4) = O(n)
+// Time:  O(n * l^(2 * k)) = O(n * l^4)
+// Space: O(n + l^(2 * k)) = O(n + l^4) = O(n)
 // freq table, combinatorics
 class Solution2 {
-public:
-    int countPairs(vector<int>& nums) {
-        static const int L = 7;
-        vector<int> POW10(L);
-        POW10[0] = 1;
-        for (int i = 0; i + 1 < L; ++i) {
-            POW10[i+1] = POW10[i] * 10;
-        }
-        const auto& at_most_2 = [&](int x) {
-            unordered_set<int> result = {x};
-            for (int i = 0; i < L; ++i) {
-                const int a = x / POW10[i] % 10;
-                for (int j = i + 1; j < L; ++j) {
-                    const int b = x / POW10[j] % 10;
-                    if (a == b) {
-                        continue;
-                    }
-                    x += -a * (POW10[i] - POW10[j]) + b * (POW10[i] - POW10[j]);
-                    result.emplace(x);
-                    for (int k = 0; k < L; ++k) {
-                        const int c = x / POW10[k] % 10;
-                        for (int l = k + 1; l < L; ++l) {
-                            const int d = x / POW10[l] % 10;
-                            if (c == d) {
-                                continue;
-                            }
-                            result.emplace(x - c * (POW10[k] - POW10[l]) + d * (POW10[k] - POW10[l]));
-                        }
-                    }
-                    x -= -a * (POW10[i] - POW10[j]) + b * (POW10[i] - POW10[j]);
-                }
-            }
-            return result;
-        };
-
-        int result = 0;
-        unordered_map<int, int> cnt1;
-        for (const auto& x : nums) {
-            ++cnt1[x];
-        }
-        unordered_map<int, int> cnt2;
-        for (const auto& [x, v] : cnt1) {
-            result += cnt2[x] * v + v * (v - 1) / 2;
-            for (const auto& x : at_most_2(x)) {
-                if (!cnt1.count(x)) {
-                    continue;
-                }
-                cnt2[x] += v;
-            }
-        }
-        return result;
-    }
-};
-
-// Time:  O(n * l^(2 * k))
-// Space: O(n + l^(2 * k)) = O(n)
-// freq table, combinatorics
-class Solution3 {
 public:
     int countPairs(vector<int>& nums) {
         static const int L = 7;
