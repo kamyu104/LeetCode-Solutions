@@ -1,11 +1,69 @@
-# Time:  O(min(nlogr, k) * logn + nlogn)
+# Time:  O(nlogr + min(n, k) * log(logr) + nlogn)
 # Space: O(n)
 
+import math
+
+
+# binary search, sort, fast exponentiation
+class Solution(object):
+    def getFinalState(self, nums, k, multiplier):
+        """
+        :type nums: List[int]
+        :type k: int
+        :type multiplier: int
+        :rtype: List[int]
+        """
+        EPS = 1e-15
+        def binary_search_right(left, right, check):
+            while left <= right:
+                mid = left+(right-left)//2
+                if not check(mid):
+                    right = mid-1
+                else:
+                    left = mid+1
+            return right
+
+        def count(x, target):
+            return int(target-x+EPS)
+
+        def check(target):
+            result = 0
+            for x, i in vals:
+                if x >= target:
+                    break
+                c = count(x, target)
+                if c == 0:
+                    break
+                result += c
+            return result <= k
+
+        if multiplier == 1:
+            return nums
+        vals = sorted([log(x)/log(multiplier), i] for i, x in enumerate(nums))
+        target = binary_search_right(1, int(vals[-1][0])+1, check)
+        for idx, (x, i) in enumerate(vals):
+            if x >= target:
+                break
+            c = count(x, target)
+            if c == 0:
+                break
+            k -= c
+            nums[i] *= pow(multiplier, c)
+        q, r = divmod(k, len(nums))
+        m = pow(multiplier, q)
+        result = [0]*len(nums)
+        for idx, (x, i) in enumerate(sorted((x, i) for i, x in enumerate(nums))):
+            result[i] = x*m*(multiplier if idx < r else 1)
+        return result
+
+
+# Time:  O(min(nlogr, k) * logn + nlogn) = O(nlogn * logr)
+# Space: O(n)
 import heapq
 
 
 # heap, sort, fast exponentiation
-class Solution(object):
+class Solution2(object):
     def getFinalState(self, nums, k, multiplier):
         """
         :type nums: List[int]
@@ -26,65 +84,6 @@ class Solution(object):
         else:
             k = 0
         vals = sorted(min_heap)
-        q, r = divmod(k, len(nums))
-        m = pow(multiplier, q)
-        result = [0]*len(nums)
-        for idx, (x, i) in enumerate(vals):
-            result[i] = x*m*(multiplier if idx < r else 1)
-        return result
-
-
-# Time:  O(min(nlogr, k) * logr + nlogn)
-# Space: O(n)
-import math
-
-
-# binary search, sort, fast exponentiation
-class Solution2(object):
-    def getFinalState(self, nums, k, multiplier):
-        """
-        :type nums: List[int]
-        :type k: int
-        :type multiplier: int
-        :rtype: List[int]
-        """
-        def binary_search_right(left, right, check):
-            while left <= right:
-                mid = left+(right-left)//2
-                if not check(mid):
-                    right = mid-1
-                else:
-                    left = mid+1
-            return right
-
-        def count(x, target):
-            cnt = int(math.floor((math.log(target)-math.log(x))/math.log(multiplier)))
-            if x*pow(multiplier, cnt+1) <= target:
-                cnt += 1
-            return cnt
-
-        def check(target):
-            result = 0
-            for x, _ in vals:
-                if x >= target:
-                    break
-                c = count(x, target)
-                if c == 0:
-                    break
-                result += c
-            return result <= k
-
-        if multiplier == 1:
-            return nums
-        vals = sorted([x, i] for i, x in enumerate(nums))
-        target = binary_search_right(1, vals[-1][0], check)
-        for idx, (x, i) in enumerate(vals):
-            if x >= target:
-                break
-            cnt = count(x, target)
-            k -= cnt
-            vals[idx][0] *= pow(multiplier, count(x, target))
-        vals.sort()
         q, r = divmod(k, len(nums))
         m = pow(multiplier, q)
         result = [0]*len(nums)
