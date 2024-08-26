@@ -1,4 +1,4 @@
-# Time:  O(nlogr + n + logr + nlogn) = O(nlogr)
+# Time:  O(n + (n + logr) + nlogn) = O(nlogn), assumed log(x) takes O(1) time
 # Space: O(n)
 
 import math
@@ -41,7 +41,7 @@ class Solution(object):
         return result
 
 
-# Time:  O(nlogr + min(n, k) * log(logr) + nlogn) = O(nlogr)
+# Time:  O(n + min(n, k) * log(logr) + nlogn) = O(nlogr), assumed log(x) takes O(1) time
 # Space: O(n)
 import math
 
