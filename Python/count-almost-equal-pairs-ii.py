@@ -43,7 +43,7 @@ class Solution(object):
 
 
 # Time:  O(n * l^4)
-# Space: O(n + l^4)
+# Space: O(n + l^4) = O(n)
 import collections
 
 
