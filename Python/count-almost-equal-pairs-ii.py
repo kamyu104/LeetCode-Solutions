@@ -59,7 +59,7 @@ class Solution2(object):
         POW10[0] = 1
         for i in xrange(L-1):
             POW10[i+1] = POW10[i]*10
-        def at_most_1(x):
+        def at_most_2(x):
             result = {x}
             for i in xrange(L):
                 a = x//POW10[i]%10
@@ -67,7 +67,16 @@ class Solution2(object):
                     b = x//POW10[j]%10
                     if a == b:
                         continue
-                    result.add(x-a*(POW10[i]-POW10[j])+b*(POW10[i]-POW10[j]))
+                    x += -a*(POW10[i]-POW10[j])+b*(POW10[i]-POW10[j])
+                    result.add(x)
+                    for k in xrange(L):
+                        c = x//POW10[k]%10
+                        for l in xrange(k+1, L):
+                            d = x//POW10[l]%10
+                            if c == d:
+                                continue
+                            result.add(x-c*(POW10[k]-POW10[l])+d*(POW10[k]-POW10[l]))
+                    x -= -a*(POW10[i]-POW10[j])+b*(POW10[i]-POW10[j])
             return result
 
         result = 0
@@ -75,7 +84,7 @@ class Solution2(object):
         cnt2 = collections.Counter()
         for x, v in cnt1.iteritems():
             result += cnt2[x]*v+v*(v-1)//2
-            for x in {x2 for x1 in at_most_1(x) for x2 in at_most_1(x1)}:
+            for x in at_most_2(x):
                 if x not in cnt1:
                     continue
                 cnt2[x] += v
