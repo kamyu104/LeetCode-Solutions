@@ -30,7 +30,7 @@ class Solution(object):
 
 
 # Time:  O(n * l^2)
-# Space: O(n + l^2)
+# Space: O(n + l^2) = O(n)
 import collections
 
 
