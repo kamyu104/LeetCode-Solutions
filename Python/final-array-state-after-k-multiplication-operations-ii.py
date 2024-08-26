@@ -1,11 +1,56 @@
-# Time:  O(nlogr + min(n, k) * log(logr) + nlogn) = O(nlogr)
+# Time:  O(nlogr + nlogn) = O(nlogr)
 # Space: O(n)
 
 import math
 
 
-# binary search, sort, fast exponentiation
+# sort, two pointers, sliding window, fast exponentiation
 class Solution(object):
+    def getFinalState(self, nums, k, multiplier):
+        """
+        :type nums: List[int]
+        :type k: int
+        :type multiplier: int
+        :rtype: List[int]
+        """
+        MOD = 10**9+7
+        EPS = 1e-15
+        def count(x, target):
+            return int(target-x+EPS)
+
+        if multiplier == 1:
+            return nums
+        vals = sorted([log(x)/log(multiplier), i] for i, x in enumerate(nums))
+        cnt = k
+        left = 0
+        for right in xrange(1, int(vals[-1][0])+2):
+            while left < len(vals) and count(vals[left][0], right) >= 1:
+                left += 1
+            cnt -= left
+            if cnt < 0:
+                right -= 1
+                break
+        for idx, (x, i) in enumerate(vals):
+            c = count(x, right)
+            if c <= 0:
+                break
+            k -= c
+            nums[i] *= pow(multiplier, c)
+        q, r = divmod(k, len(nums))
+        m = pow(multiplier, q, MOD)
+        result = [0]*len(nums)
+        for idx, (x, i) in enumerate(sorted((x, i) for i, x in enumerate(nums))):
+            result[i] = x*m*(multiplier if idx < r else 1)%MOD
+        return result
+
+
+# Time:  O(nlogr + min(n, k) * log(logr) + nlogn) = O(nlogr)
+# Space: O(n)
+import math
+
+
+# binary search, sort, fast exponentiation
+class Solution2(object):
     def getFinalState(self, nums, k, multiplier):
         """
         :type nums: List[int]
@@ -60,7 +105,7 @@ import heapq
 
 
 # heap, sort, fast exponentiation
-class Solution2(object):
+class Solution3(object):
     def getFinalState(self, nums, k, multiplier):
         """
         :type nums: List[int]
