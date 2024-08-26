@@ -34,7 +34,7 @@ class Solution(object):
 import collections
 
 
-# freq table, combinatorics
+# freq table, combinatorics, bfs
 class Solution2(object):
     def countPairs(self, nums):
         """
