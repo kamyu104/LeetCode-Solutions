@@ -1,4 +1,4 @@
-# Time:  O(nlogr + nlogn) = O(nlogr)
+# Time:  O(nlogr + n + logr + nlogn) = O(nlogr)
 # Space: O(n)
 
 import math
