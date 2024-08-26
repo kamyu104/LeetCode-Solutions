@@ -656,7 +656,7 @@
 3250 | [Find the Count of Monotonic Pairs I](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/) | [C++](./C++/find-the-count-of-monotonic-pairs-i.cpp) [Python](./Python/find-the-count-of-monotonic-pairs-i.py) | _O(n + r)_ | _O(n + r)_ | Hard | | Combinatorics, Stars and Bars, DP, Prefix Sum |
 3251 | [Find the Count of Monotonic Pairs II](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-ii/) | [C++](./C++/find-the-count-of-monotonic-pairs-ii.cpp) [Python](./Python/find-the-count-of-monotonic-pairs-ii.py) | _O(n + r)_ | _O(n + r)_ | Hard | | Combinatorics, Stars and Bars, DP, Prefix Sum |
 3265 | [Count Almost Equal Pairs I](https://leetcode.com/problems/count-almost-equal-pairs-i/) | [C++](./C++/count-almost-equal-pairs-i.cpp) [Python](./Python/count-almost-equal-pairs-i.py) | _O(n * l^2)_ | _O(n)_ | Medium | | Freq Table, Combinatorics |
-3267 | [Count Almost Equal Pairs II](https://leetcode.com/problems/count-almost-equal-pairs-ii/) | [C++](./C++/count-almost-equal-pairs-ii.cpp) [Python](./Python/count-almost-equal-pairs-ii.py) | _O(n * l^4)_ | _O(n + l^4)_ | Hard | | Freq Table, Combinatorics |
+3267 | [Count Almost Equal Pairs II](https://leetcode.com/problems/count-almost-equal-pairs-ii/) | [C++](./C++/count-almost-equal-pairs-ii.cpp) [Python](./Python/count-almost-equal-pairs-ii.py) | _O(n * l^4)_ | _O(n)_ | Hard | | Freq Table, Combinatorics |
 
 <br/>
 <div align="right">
