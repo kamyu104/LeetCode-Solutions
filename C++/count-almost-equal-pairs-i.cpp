@@ -42,7 +42,7 @@ public:
 
 // Time:  O(n * l^(2 * k)) = O(n * l^2)
 // Space: O(n + l^(2 * k)) = O(n + l^2) = O(n)
-// freq table, combinatorics
+// freq table, combinatorics, bfs
 class Solution2 {
 public:
     int countPairs(vector<int>& nums) {
