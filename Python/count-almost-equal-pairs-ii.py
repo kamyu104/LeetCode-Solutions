@@ -42,62 +42,13 @@ class Solution(object):
         return result
 
 
-# Time:  O(n * l^4)
-# Space: O(n + l^4) = O(n)
+# Time:  O(n * l^(2 * k)) = O(n * l^4)
+# Space: O(n + l^(2 * k)) = O(n + l^4) = O(n)
 import collections
 
 
 # freq table, combinatorics
 class Solution2(object):
-    def countPairs(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        L = 7
-        POW10 = [0]*L
-        POW10[0] = 1
-        for i in xrange(L-1):
-            POW10[i+1] = POW10[i]*10
-        def at_most_2(x):
-            result = {x}
-            for i in xrange(L):
-                a = x//POW10[i]%10
-                for j in xrange(i+1, L):
-                    b = x//POW10[j]%10
-                    if a == b:
-                        continue
-                    x += -a*(POW10[i]-POW10[j])+b*(POW10[i]-POW10[j])
-                    result.add(x)
-                    for k in xrange(L):
-                        c = x//POW10[k]%10
-                        for l in xrange(k+1, L):
-                            d = x//POW10[l]%10
-                            if c == d:
-                                continue
-                            result.add(x-c*(POW10[k]-POW10[l])+d*(POW10[k]-POW10[l]))
-                    x -= -a*(POW10[i]-POW10[j])+b*(POW10[i]-POW10[j])
-            return result
-
-        result = 0
-        cnt1 = collections.Counter(nums)
-        cnt2 = collections.Counter()
-        for x, v in cnt1.iteritems():
-            result += cnt2[x]*v+v*(v-1)//2
-            for x in at_most_2(x):
-                if x not in cnt1:
-                    continue
-                cnt2[x] += v
-        return result
-
-
-# Time:  O(n * l^(2 * k))
-# Space: O(n + l^(2 * k)) = O(n)
-import collections
-
-
-# freq table, combinatorics
-class Solution3(object):
     def countPairs(self, nums):
         """
         :type nums: List[int]
