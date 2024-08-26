@@ -69,7 +69,7 @@ public:
                             if (a == b) {
                                 continue;
                             }
-                            const int y = x -a * (POW10[i] - POW10[j]) + b * (POW10[i] - POW10[j]);
+                            const int y = x - a * (POW10[i] - POW10[j]) + b * (POW10[i] - POW10[j]);
                             if (result.count(y)) {
                                 continue;
                             }
