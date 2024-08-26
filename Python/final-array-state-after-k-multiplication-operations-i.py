@@ -1,4 +1,4 @@
-# Time:  O(nlogr + min(n, k) * log(logr) + nlogn)
+# Time:  O(nlogr + min(n, k) * log(logr) + nlogn) = O(nlogr)
 # Space: O(n)
 
 import math
@@ -29,10 +29,8 @@ class Solution(object):
         def check(target):
             result = 0
             for x, i in vals:
-                if x >= target:
-                    break
                 c = count(x, target)
-                if c == 0:
+                if c <= 0:
                     break
                 result += c
             return result <= k
@@ -42,10 +40,8 @@ class Solution(object):
         vals = sorted([log(x)/log(multiplier), i] for i, x in enumerate(nums))
         target = binary_search_right(1, int(vals[-1][0])+1, check)
         for idx, (x, i) in enumerate(vals):
-            if x >= target:
-                break
             c = count(x, target)
-            if c == 0:
+            if c <= 0:
                 break
             k -= c
             nums[i] *= pow(multiplier, c)
