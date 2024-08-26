@@ -56,7 +56,7 @@ public:
 };
 
 // Time:  O(n * l^4)
-// Space: O(n + l^4)
+// Space: O(n + l^4) = O(n)
 // freq table, combinatorics
 class Solution2 {
 public:
