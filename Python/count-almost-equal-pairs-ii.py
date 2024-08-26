@@ -30,14 +30,14 @@ class Solution(object):
                     adj[cnt[idx][0]-a*(POW10[i]-POW10[j])+b*(POW10[i]-POW10[j])].append(idx)
         result = sum(v*(v-1)//2 for v in cnt1.itervalues())
         lookup = set()
-        for x, neighbors in adj.iteritems():
-            for i in xrange(len(neighbors)):
-                v1 = cnt[neighbors[i]][1]
-                for j in xrange(i+1, len(neighbors)):
-                    v2 = cnt[neighbors[j]][1]
-                    if (neighbors[i], neighbors[j]) in lookup:
+        for u in adj.iterkeys():
+            for i in xrange(len(adj[u])):
+                v1 = cnt[adj[u][i]][1]
+                for j in xrange(i+1, len(adj[u])):
+                    v2 = cnt[adj[u][j]][1]
+                    if (adj[u][i], adj[u][j]) in lookup:
                         continue
-                    lookup.add((neighbors[i], neighbors[j]))
+                    lookup.add((adj[u][i], adj[u][j]))
                     result += v1*v2
         return result
 
