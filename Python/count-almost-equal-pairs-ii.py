@@ -61,13 +61,12 @@ class Solution2(object):
         for i in xrange(L-1):
             POW10[i+1] = POW10[i]*10
         def at_most(k, x):
-            result = {x}
-            q = [x]
-            while q:
-                if k == 0:
-                    break 
-                new_q = []
-                for x in q:
+            lookup = {x}
+            result = [x]
+            u = 0
+            for _ in xrange(k):
+                for u in xrange(u, len(result)):
+                    x = result[u]
                     for i in xrange(L):
                         a = x//POW10[i]%10
                         for j in xrange(i+1, L):
@@ -75,12 +74,10 @@ class Solution2(object):
                             if a == b:
                                 continue
                             y = x-a*(POW10[i]-POW10[j])+b*(POW10[i]-POW10[j])
-                            if y in result:
+                            if y in lookup:
                                 continue
-                            result.add(y)
-                            new_q.append(y)
-                q = new_q
-                k -= 1
+                            lookup.add(y)
+                            result.append(y)
             return result
 
         result = 0
