@@ -20,20 +20,18 @@ class Solution(object):
         if multiplier == 1:
             return nums
         vals = sorted((log(x)/log(multiplier), i) for i, x in enumerate(nums))
-        cnt = k
         left = 0
         for right in xrange(1, int(vals[-1][0])+2):
             while left < len(vals) and count(vals[left][0], right) >= 1:
                 left += 1
-            cnt -= left
-            if cnt < 0:
+            if k-left < 0:
                 right -= 1
                 break
+            k -= left
         for idx, (x, i) in enumerate(vals):
             c = count(x, right)
             if c <= 0:
                 break
-            k -= c
             nums[i] *= pow(multiplier, c)
         q, r = divmod(k, len(nums))
         m = pow(multiplier, q)
