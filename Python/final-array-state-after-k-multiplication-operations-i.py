@@ -159,7 +159,7 @@ class Solution4(object):
 
 
 # Time:  O(k * n)
-# Space: O(n)
+# Space: O(1)
 # simulation
 class Solution5(object):
     def getFinalState(self, nums, k, multiplier):
