@@ -62,7 +62,7 @@ class Solution2(object):
         cnt2 = collections.Counter()
         for x, v in cnt1.iteritems():
             result += cnt2[x]*v+v*(v-1)//2
-            for x in {x1 for x1 in at_most_1(x)}:
+            for x in at_most_1(x):
                 if x not in cnt1:
                     continue
                 cnt2[x] += v
