@@ -99,22 +99,35 @@ public:
         for (int i = 0; i + 1 < L; ++i) {
             POW10[i+1] = POW10[i] * 10;
         }
-        const function<void (int, int, unordered_set<int>&)> at_most = [&](int k, int x, unordered_set<int>& result) {
-            result.emplace(x);
-            if (k == 0) {
-                return;
-            }
-            --k;
-            for (int i = 0; i < L; ++i) {
-                const int a = x / POW10[i] % 10;
-                for (int j = i + 1; j < L; ++j) {
-                    const int b = x / POW10[j] % 10;
-                    if (a == b) {
-                        continue;
-                    }
-                    at_most(k, x -a * (POW10[i] - POW10[j]) + b * (POW10[i] - POW10[j]), result);
+        const auto& at_most = [&](int k, int x) {
+            unordered_set<int> result = {x};
+            vector<int> q = {x};
+            while (!empty(q)) {
+                if (k == 0) {
+                    break;
                 }
+                vector<int> new_q;
+                for (const auto& x : q) {
+                    for (int i = 0; i < L; ++i) {
+                        const int a = x / POW10[i] % 10;
+                        for (int j = i + 1; j < L; ++j) {
+                            const int b = x / POW10[j] % 10;
+                            if (a == b) {
+                                continue;
+                            }
+                            const int y = x -a * (POW10[i] - POW10[j]) + b * (POW10[i] - POW10[j]);
+                            if (result.count(y)) {
+                                continue;
+                            }
+                            result.emplace(y);
+                            new_q.emplace_back(y);
+                        }
+                    }
+                }
+                q = move(new_q);
+                --k;
             }
+            return result;
         };
 
         int result = 0;
@@ -125,9 +138,7 @@ public:
         unordered_map<int, int> cnt2;
         for (const auto& [x, v] : cnt1) {
             result += cnt2[x] * v + v * (v - 1) / 2;
-            unordered_set<int> lookup;
-            at_most(K, x, lookup);
-            for (const auto& x : lookup) {
+            for (const auto& x : at_most(K, x)) {
                 if (!cnt1.count(x)) {
                     continue;
                 }
