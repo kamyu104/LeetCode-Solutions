@@ -20,7 +20,7 @@ class Solution(object):
 
         if multiplier == 1:
             return nums
-        vals = sorted([log(x)/log(multiplier), i] for i, x in enumerate(nums))
+        vals = sorted((log(x)/log(multiplier), i) for i, x in enumerate(nums))
         cnt = k
         left = 0
         for right in xrange(1, int(vals[-1][0])+2):
@@ -83,7 +83,7 @@ class Solution2(object):
 
         if multiplier == 1:
             return nums
-        vals = sorted([log(x)/log(multiplier), i] for i, x in enumerate(nums))
+        vals = sorted((log(x)/log(multiplier), i) for i, x in enumerate(nums))
         target = binary_search_right(1, int(vals[-1][0])+1, check)
         for idx, (x, i) in enumerate(vals):
             c = count(x, target)
