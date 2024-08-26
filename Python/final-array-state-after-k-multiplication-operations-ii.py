@@ -41,7 +41,7 @@ class Solution(object):
         if multiplier == 1:
             return nums
         vals = sorted([log(x)/log(multiplier), i] for i, x in enumerate(nums))
-        target = binary_search_right(1, int(vals[-1][0]), check)
+        target = binary_search_right(1, int(vals[-1][0])+1, check)
         for idx, (x, i) in enumerate(vals):
             if x >= target:
                 break
