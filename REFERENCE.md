@@ -108,14 +108,14 @@
         * [Refactoring Guru](https://refactoring.guru/)
     * Design Patterns
         * [Design Patterns](https://www.amazon.com/dp/0201633612)
+        * [Small Memory Software](https://www.amazon.com/dp/0201596075)
+        * [Game Programming Patterns](https://gameprogrammingpatterns.com/)
+     * Architecture Patterns
         * [Patterns of Enterprise Application Architecture](https://www.amazon.com/dp/0321127420)
         * [Clean Architecture](https://www.amazon.com/dp/0134494164)
         * [Domain-Driven Design](https://www.amazon.com/dp//0321125215)
         * [Implementing Domain-Driven Design](https://www.amazon.com/dp//0321834577)
         * [Pattern-Oriented Software Architecture Volume 2](https://www.amazon.com/dp/0471606952)
-        * [Small Memory Software](https://www.amazon.com/dp/0201596075)
-        * [Game Programming Patterns](https://gameprogrammingpatterns.com/)
-     * Architecture Patterns
         * [Fundamentals of Software Architecture](https://www.amazon.com/dp/B0849MPK73)
         * [Software Architecture: The Hard Parts](https://www.amazon.com/dp/1492086894)
         * [Patterns of Distributed Systems](https://www.amazon.com/dp/0138221987)
