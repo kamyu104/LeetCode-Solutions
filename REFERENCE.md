@@ -101,18 +101,24 @@
     * Open Source Applications
         * [The Architecture of Open Source Applications](https://aosabook.org/en/index.html)
 * Software Development
-    * Introduction 
+    * Development 
         * [Code Complete](https://www.amazon.com/dp/B00JDMPOSY)
         * [Clean Code](https://www.amazon.com/dp/0132350882)
-        * [Clean Architecture](https://www.amazon.com/dp/0134494164)
-        * [Fundamentals of Software Architecture](https://www.amazon.com/dp/B0849MPK73)
-        * [Software Architecture: The Hard Parts](https://www.amazon.com/dp/1492086894)
+        * [Refactoring](https://www.amazon.com/dp/0134757599)
+        * [Refactoring Guru](https://refactoring.guru/)
     * Design Patterns
         * [Design Patterns](https://www.amazon.com/dp/0201633612)
         * [Patterns of Enterprise Application Architecture](https://www.amazon.com/dp/0321127420)
+        * [Clean Architecture](https://www.amazon.com/dp/0134494164)
+        * [Domain-Driven Design](https://www.amazon.com/dp//0321125215)
+        * [Implementing Domain-Driven Design](https://www.amazon.com/dp//0321834577)
         * [Pattern-Oriented Software Architecture Volume 2](https://www.amazon.com/dp/0471606952)
         * [Small Memory Software](https://www.amazon.com/dp/0201596075)
         * [Game Programming Patterns](https://gameprogrammingpatterns.com/)
+     * Architecture Patterns
+        * [Fundamentals of Software Architecture](https://www.amazon.com/dp/B0849MPK73)
+        * [Software Architecture: The Hard Parts](https://www.amazon.com/dp/1492086894)
+        * [Patterns of Distributed Systems](https://www.amazon.com/dp/0138221987)
      * Software Engineering
         * [Software Engineering at Google](https://abseil.io/resources/swe-book/html/toc.html)
      * Software Testing
