@@ -108,6 +108,7 @@
         * [Refactoring Guru](https://refactoring.guru/)
     * Design Patterns
         * [Design Patterns](https://www.amazon.com/dp/0201633612)
+        * [Refactoring to Patterns](https://www.amazon.com/dp/0321213351)
         * [Small Memory Software](https://www.amazon.com/dp/0201596075)
         * [Game Programming Patterns](https://gameprogrammingpatterns.com/)
      * Architecture Patterns
