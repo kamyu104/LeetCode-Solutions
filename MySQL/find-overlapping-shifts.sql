@@ -16,12 +16,8 @@ WITH events_cte AS (
 ), line_sweep_cte AS (
     SELECT employee_id,
            event_type,
-           CASE WHEN @event_count = 0 THEN @start_time := event_time
-                ELSE @start_time END AS start_time,
-           @event_count := @event_count + event_type AS event_count,
-           CASE WHEN @event_count = 0 THEN event_time
-                ELSE @start_time END AS end_time
-    FROM events_cte, (SELECT @event_count := 0, @start_time := 0) init
+           @event_count := @event_count + event_type AS event_count
+    FROM events_cte, (SELECT @event_count := 0) init
 )
 
 SELECT employee_id,
