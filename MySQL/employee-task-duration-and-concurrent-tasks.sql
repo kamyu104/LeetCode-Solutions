@@ -27,5 +27,5 @@ SELECT employee_id,
        FLOOR(SUM(TIMESTAMPDIFF(SECOND, start_time, end_time)) / 3600) AS total_task_hours,
        MAX(event_count) AS max_concurrent_tasks
 FROM line_sweep_cte
-GROUP BY employee_id
+GROUP BY 1
 ORDER BY 1;
