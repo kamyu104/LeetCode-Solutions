@@ -1,4 +1,4 @@
-// Time:  O(m + n)
+// Time:  O(m * n)
 // Space: O(min(m, n))
 
 // dp
