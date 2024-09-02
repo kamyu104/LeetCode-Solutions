@@ -1582,7 +1582,7 @@
 3236 | [CEO Subordinate Hierarchy](https://leetcode.com/problems/ceo-subordinate-hierarchy/) | [MySQL](./MySQL/ceo-subordinate-hierarchy.sql) | _O(nlogn)_ | _O(n)_       | Hard           |🔒| Recursive CTE, BFS |
 3246 | [Premier League Table Ranking](https://leetcode.com/problems/premier-league-table-ranking/) | [MySQL](./MySQL/premier-league-table-ranking.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| Window Function |
 3252 | [Premier League Table Ranking II](https://leetcode.com/problems/premier-league-table-ranking-ii/) | [MySQL](./MySQL/premier-league-table-ranking-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
-3262 | [Find Overlapping Shifts](https://leetcode.com/problems/find-overlapping-shifts/) | [MySQL](./MySQL/find-overlapping-shifts.sql) | _O(n^2)_ | _O(n^2)_       | Medium           |🔒| |
+3262 | [Find Overlapping Shifts](https://leetcode.com/problems/find-overlapping-shifts/) | [MySQL](./MySQL/find-overlapping-shifts.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Line Sweep |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
