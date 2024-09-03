@@ -55,3 +55,40 @@ private:
         return {-v[0], ans}; // min cost
     }
 };
+
+// Time:  O((m * n) * 2^m)
+// Space: O(m * n + 2^m)
+// dp, bitmasks
+class Solution2 {
+public:
+    int maxScore(vector<vector<int>>& grid) {
+        int mx = 0;
+        for (const auto& row : grid) {
+            mx = max(mx, ranges::max(row));
+        }
+        vector<unordered_set<int>> lookup(mx);
+        for (int i = 0; i < size(grid); ++i) {
+            for (int j = 0; j < size(grid[0]); ++j) {
+                lookup[grid[i][j] - 1].emplace(i);
+            }
+        }
+        vector<int> dp(1 << size(grid), numeric_limits<int>::min());
+        dp[0] = 0;
+        for (int x = mx - 1; x >= 0; --x) {
+            if (empty(lookup[x])) {
+                continue;
+            }
+            vector<int> new_dp(dp);
+            for (const auto& i : lookup[x]) {
+                for (int mask = 0; mask < size(dp); ++mask) {
+                    if (mask & (1 << i)) {
+                        continue;
+                    }
+                    new_dp[mask | (1 << i)] = max(new_dp[mask | (1 << i)], dp[mask] + (x + 1));
+                }
+            }
+            dp = move(new_dp);
+        }
+        return ranges::max(dp);
+    }
+};
