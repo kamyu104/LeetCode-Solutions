@@ -1,5 +1,5 @@
 // Time:  O(10^(n/2))
-// Space: O(nHr(10, n/2))
+// Space: O(n + nHr(10, n/2))
 
 // combinatorics
 class Solution {
