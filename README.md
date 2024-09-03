@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3267%20%2F%203267-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3277%20%2F%203277-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -300,6 +300,7 @@
 3136 | [Valid Word](https://leetcode.com/problems/valid-word/) | [C++](./C++/valid-word.cpp) [Python](./Python/valid-word.py) | _O(n)_ | _O(1)_ | Easy | | String
 3163 | [String Compression III](https://leetcode.com/problems/string-compression-iii/) | [C++](./C++/string-compression-iii.cpp) [Python](./Python/string-compression-iii.py) | _O(n)_ | _O(1)_ | Medium | | String
 3210 | [Find the Encrypted String](https://leetcode.com/problems/find-the-encrypted-string/) | [C++](./C++/find-the-encrypted-string.cpp) [Python](./Python/find-the-encrypted-string.py) | _O(n)_ | _O(1)_ | Medium | | String
+3271 | [Hash Divided String](https://leetcode.com/problems/hash-divided-string/) | [C++](./C++/hash-divided-string.cpp) [Python](./Python/hash-divided-string.py) | _O(n)_ | _O(1)_ | Medium | | String
 
 <br/>
 <div align="right">
@@ -387,6 +388,7 @@
 3092 | [Most Frequent IDs](https://leetcode.com/problems/most-frequent-ids/) | [C++](./C++/most-frequent-ids.cpp) [Python](./Python/most-frequent-ids.py) | _O(nlogn)_ | _O(n)_ | Medium | | Heap, BST, Sorted List
 3256 | [Maximum Value Sum by Placing Three Rooks I](https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-i/) | [C++](./C++/maximum-value-sum-by-placing-three-rooks-i.cpp) [Python](./Python/maximum-value-sum-by-placing-three-rooks-i.py) | _O(m * n)_ | _O(m + n)_ | Hard | | Heap, Brute Force
 3257 | [Maximum Value Sum by Placing Three Rooks II](https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-ii/) | [C++](./C++/maximum-value-sum-by-placing-three-rooks-ii.cpp) [Python](./Python/maximum-value-sum-by-placing-three-rooks-ii.py) | _O(m * n)_ | _O(m + n)_ | Hard | | Heap, Brute Force
+3275 | [K-th Nearest Obstacle Queries](https://leetcode.com/problems/k-th-nearest-obstacle-queries/) | [C++](./C++/k-th-nearest-obstacle-queries.cpp) [Python](./Python/k-th-nearest-obstacle-queries.py) | _O(qlogk)_ | _O(k)_ | Medium | | Heap
 
 <br/>
 <div align="right">
@@ -655,6 +657,9 @@
 3247 | [Number of Subsequences with Odd Sum](https://leetcode.com/problems/number-of-subsequences-with-odd-sum/) | [C++](./C++/number-of-subsequences-with-odd-sum.cpp) [Python](./Python/number-of-subsequences-with-odd-sum.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Combinatorics, Fast Exponentiation, DP |
 3250 | [Find the Count of Monotonic Pairs I](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/) | [C++](./C++/find-the-count-of-monotonic-pairs-i.cpp) [Python](./Python/find-the-count-of-monotonic-pairs-i.py) | _O(n + r)_ | _O(n + r)_ | Hard | | Combinatorics, Stars and Bars, DP, Prefix Sum |
 3251 | [Find the Count of Monotonic Pairs II](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-ii/) | [C++](./C++/find-the-count-of-monotonic-pairs-ii.cpp) [Python](./Python/find-the-count-of-monotonic-pairs-ii.py) | _O(n + r)_ | _O(n + r)_ | Hard | | Combinatorics, Stars and Bars, DP, Prefix Sum |
+3270 | [Find the Key of the Numbers](https://leetcode.com/problems/find-the-key-of-the-numbers/) | [C++](./C++/find-the-key-of-the-numbers.cpp) [Python](./Python/find-the-key-of-the-numbers.py) | _O(d)_ | _O(1)_ | Easy | | Math |
+3272 | [Find the Count of Good Integers](https://leetcode.com/problems/find-the-count-of-good-integers/) | [C++](./C++/find-the-count-of-good-integers.cpp) [Python](./Python/find-the-count-of-good-integers.py) | _O(10 * 10^((n + 1)/2))_ | _O(n + 10 * (10 * nHr(10, n/2)))_ | Hard | | Combinatorics |
+3274 | [Check if Two Chessboard Squares Have the Same Color](https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/) | [C++](./C++/check-if-two-chessboard-squares-have-the-same-color.cpp) [Python](./Python/check-if-two-chessboard-squares-have-the-same-color.py) | _O(1)_ | _O(1)_ | Easy | | Math, Parity |
 
 <br/>
 <div align="right">
@@ -1086,6 +1091,8 @@
 3241 | [Time Taken to Mark All Nodes](https://leetcode.com/problems/time-taken-to-mark-all-nodes/) | [C++](./C++/time-taken-to-mark-all-nodes.cpp) [Python](./Python/time-taken-to-mark-all-nodes.py) | _O(n)_ | _O(n)_ | Hard | | Tree DP, BFS, DFS
 3253 | [Construct String with Minimum Cost (Easy)](https://leetcode.com/problems/construct-string-with-minimum-cost-easy/) | [C++](./C++/construct-string-with-minimum-cost-easy.cpp) [Python](./Python/construct-string-with-minimum-cost-easy.py) | _O(n * w * l)_ | _O(l)_ | Medium | 🔒 | DP, Trie
 3259 | [Maximum Energy Boost From Two Drinks](https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/) | [C++](./C++/maximum-energy-boost-from-two-drinks.cpp) [Python](./Python/maximum-energy-boost-from-two-drinks.py) | _O(n)_ | _O(1)_ | Medium | | DP
+3269 | [Constructing Two Increasing Arrays](https://leetcode.com/problems/constructing-two-increasing-arrays/) | [C++](./C++/constructing-two-increasing-arrays.cpp) [Python](./Python/constructing-two-increasing-arrays.py) | _O(m * n)_ | _O(min(m, n))_ | Hard | 🔒 | DP
+3277 | [Maximum XOR Score Subarray Queries](https://leetcode.com/problems/maximum-xor-score-subarray-queries/) | [C++](./C++/maximum-xor-score-subarray-queries.cpp) [Python](./Python/maximum-xor-score-subarray-queries.py) | _O(n^2 + q)_ | _O(n^2)_ | Hard | | DP
 
 <br/>
 <div align="right">
@@ -1243,6 +1250,7 @@
 3229 | [Minimum Operations to Make Array Equal to Target](https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/)| [C++](./C++/minimum-operations-to-make-array-equal-to-target.cpp) [Python](./Python/minimum-operations-to-make-array-equal-to-target.py)| _O(n)_ | _O(1)_ | Hard | variant of [Minimum Number of Increments on Subarrays to Form a Target Array](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Greedy |
 3239 | [Minimum Number of Flips to Make Binary Grid Palindromic I](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/) | [C++](./C++/minimum-number-of-flips-to-make-binary-grid-palindromic-i.cpp) [Python](./Python/minimum-number-of-flips-to-make-binary-grid-palindromic-i.py) | _O(m * n)_   | _O(1)_        | Medium         | | Array, Greedy
 3240 | [Minimum Number of Flips to Make Binary Grid Palindromic II](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-ii/) | [C++](./C++/minimum-number-of-flips-to-make-binary-grid-palindromic-ii.cpp) [Python](./Python/minimum-number-of-flips-to-make-binary-grid-palindromic-ii.py) | _O(m * n)_   | _O(1)_        | Medium         | | Array, Greedy
+3273 | [Minimum Amount of Damage Dealt to Bob](https://leetcode.com/problems/minimum-amount-of-damage-dealt-to-bob/) | [C++](./C++/minimum-amount-of-damage-dealt-to-bob.cpp) [Python](./Python/minimum-amount-of-damage-dealt-to-bob.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Sort, Greedy
 
 <br/>
 <div align="right">
@@ -1288,6 +1296,7 @@
 3244 | [Shortest Distance After Road Addition Queries II](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/)  | [C++](./C++/shortest-distance-after-road-addition-queries-ii.cpp) [Python](./Python/shortest-distance-after-road-addition-queries-ii.py) |  _O(nlogn)_ | _O(n)_ | Hard           | | Graph, BST, Sorted List |
 3265 | [Count Almost Equal Pairs I](https://leetcode.com/problems/count-almost-equal-pairs-i/) | [C++](./C++/count-almost-equal-pairs-i.cpp) [Python](./Python/count-almost-equal-pairs-i.py) | _O(n * l^2)_ | _O(n)_ | Medium | | Freq Table, Combinatorics, Graph, BFS |
 3267 | [Count Almost Equal Pairs II](https://leetcode.com/problems/count-almost-equal-pairs-ii/) | [C++](./C++/count-almost-equal-pairs-ii.cpp) [Python](./Python/count-almost-equal-pairs-ii.py) | _O(n * l^4)_ | _O(n)_ | Hard | | Freq Table, Combinatorics, Graph, BFS |
+3276 | [Select Cells in Grid With Maximum Score](https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/) | [C++](./C++/select-cells-in-grid-with-maximum-score.cpp) [Python](./Python/select-cells-in-grid-with-maximum-score.py) | _O(n^2 * max(n, r))_ | _O(n * max(n, r))_ | Hard | variant of [Maximum Compatibility Score Sum](https://leetcode.com/problems/maximum-compatibility-score-sum/) | `Hungarian Weighted Bipartite Matching` |
 
 <br/>
 <div align="right">
@@ -1583,6 +1592,8 @@
 3246 | [Premier League Table Ranking](https://leetcode.com/problems/premier-league-table-ranking/) | [MySQL](./MySQL/premier-league-table-ranking.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| Window Function |
 3252 | [Premier League Table Ranking II](https://leetcode.com/problems/premier-league-table-ranking-ii/) | [MySQL](./MySQL/premier-league-table-ranking-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3262 | [Find Overlapping Shifts](https://leetcode.com/problems/find-overlapping-shifts/) | [MySQL](./MySQL/find-overlapping-shifts.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Line Sweep |
+3268 | [Find Overlapping Shifts II](https://leetcode.com/problems/find-overlapping-shifts-ii/) | [MySQL](./MySQL/find-overlapping-shifts-ii.sql) | _O(n^2)_ | _O(n^2)_       | Hard           |🔒| Line Sweep, Window Function, Combinatorics |
+3278 | [Find Candidates for Data Scientist Position II](https://leetcode.com/problems/find-candidates-for-data-scientist-position-ii/) | [MySQL](./MySQL/find-candidates-for-data-scientist-position-ii.sql) | _O(p * s * n + p * nlogn + plogp)_ | _O(p * s * n)_       | Medium           |🔒| Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
