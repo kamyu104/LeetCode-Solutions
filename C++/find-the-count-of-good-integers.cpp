@@ -1,4 +1,4 @@
-// Time:  O(10 * 10^((n + 1)/2))
+// Time:  O(n + 10 * 10^((n + 1)/2))
 // Space: O(n + 10 * (10 * nHr(10, n/2)))
 
 // combinatorics, freq table
