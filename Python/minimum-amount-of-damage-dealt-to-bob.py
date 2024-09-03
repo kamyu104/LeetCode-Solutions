@@ -14,7 +14,7 @@ class Solution(object):
             return (a+b-1)//b
         
         idxs = range(len(health))
-        idxs.sort(key=lambda i: 1.0*ceil_divide(health[i], power)/damage[i])
+        idxs.sort(key=lambda i: float(ceil_divide(health[i], power))/damage[i])
         result = t = 0
         for i in idxs:
             t += ceil_divide(health[i], power)
