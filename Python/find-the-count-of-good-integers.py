@@ -26,7 +26,7 @@ class Solution(object):
             while x:
                 cnt[x%10] += 1
                 x //= 10
-            return cnt
+            return tuple(cnt)
 
         fact = [1]*(n+1)
         for i in xrange(len(fact)-1):
@@ -37,10 +37,9 @@ class Solution(object):
         for d in xrange(10**(l-1), 10**l):
             x = palindrome(d, n)
             cnt = count(x)
-            key = tuple(enumerate(cnt))
-            if x%k or key in lookup:
+            if x%k or cnt in lookup:
                 continue
-            lookup.add(key)
+            lookup.add(cnt)
             total = (n-cnt[0])*fact[n-1]
             for c in cnt:
                 total //= fact[c]
