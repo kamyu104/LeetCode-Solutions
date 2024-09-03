@@ -79,15 +79,14 @@ public:
                 continue;
             }
             vector<int> new_dp(dp);
-            for (const auto& i : lookup[x]) {
-                for (int mask = 0; mask < size(dp); ++mask) {
+            for (int mask = size(dp) - 1; mask >= 0; --mask) {
+                for (const auto& i : lookup[x]) {
                     if (mask & (1 << i)) {
                         continue;
                     }
-                    new_dp[mask | (1 << i)] = max(new_dp[mask | (1 << i)], dp[mask] + (x + 1));
+                    dp[mask | (1 << i)] = max(dp[mask | (1 << i)], dp[mask] + (x + 1));
                 }
             }
-            dp = move(new_dp);
         }
         return ranges::max(dp);
     }
