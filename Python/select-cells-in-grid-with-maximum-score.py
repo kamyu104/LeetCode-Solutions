@@ -58,9 +58,6 @@ class Solution(object):
 
 # Time:  O((m * n) * 2^m)
 # Space: O(m * n + 2^m)
-import collections
-
-
 # dp, bitmasks
 class Solution2(object):
     def maxScore(self, grid):
