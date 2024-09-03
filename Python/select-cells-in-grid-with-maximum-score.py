@@ -54,3 +54,35 @@ class Solution(object):
             for x in row:
                 adj[i][x-1] = -x
         return -hungarian(adj)[0]
+
+
+# Time:  O((m * n) * 2^m)
+# Space: O(m * n + 2^m)
+import collections
+
+
+# dp, bitmasks
+class Solution2(object):
+    def maxScore(self, grid):
+        """
+        :type grid: List[List[int]]
+        :rtype: int
+        """
+        mx = max(x for row in grid for x in row)
+        lookup = [set() for _ in xrange(mx)]
+        for i, row in enumerate(grid):
+            for x in row:
+                lookup[x-1].add(i)
+        dp = [float("-inf")]*(1<<len(grid))
+        dp[0] = 0
+        for x in reversed(xrange(len(lookup))):
+            if not lookup[x]:
+                continue
+            new_dp = dp[:]
+            for i in lookup[x]:
+                for mask in xrange(len(dp)):
+                    if mask&(1<<i):
+                        continue
+                    new_dp[mask|(1<<i)] = max(new_dp[mask|(1<<i)], dp[mask]+(x+1))
+            dp = new_dp
+        return max(dp)
