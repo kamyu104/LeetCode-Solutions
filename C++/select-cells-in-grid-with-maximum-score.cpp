@@ -74,7 +74,7 @@ public:
         }
         vector<int> dp(1 << size(grid), numeric_limits<int>::min());
         dp[0] = 0;
-        for (int x = mx - 1; x >= 0; --x) {
+        for (int x = 0; x < mx; ++x) {
             if (empty(lookup[x])) {
                 continue;
             }
