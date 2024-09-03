@@ -72,7 +72,7 @@ class Solution2(object):
                 lookup[x-1].add(i)
         dp = [float("-inf")]*(1<<len(grid))
         dp[0] = 0
-        for x in reversed(xrange(len(lookup))):
+        for x in xrange(len(lookup)):
             if not lookup[x]:
                 continue
             new_dp = dp[:]
