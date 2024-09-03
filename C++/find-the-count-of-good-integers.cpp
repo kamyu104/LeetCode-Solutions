@@ -1,5 +1,5 @@
-// Time:  O(10^(n/2))
-// Space: O(n + nHr(10, n/2))
+// Time:  O(10 * 10^((n + 1)/2))
+// Space: O(n + 10 * nHr(10, n/2)))
 
 // combinatorics
 class Solution {
@@ -50,8 +50,11 @@ public:
         const int upper_bound = pow(10, l);
         for (int d = pow(10, l - 1); d < upper_bound; ++d) {
             const int64_t x = palindrome(d, n);
+            if (x % k) {
+                continue;
+            }
             const auto& cnt = count(x);
-            if (x % k || lookup.count(cnt)) {
+            if (lookup.count(cnt)) {
                 continue;
             }
             lookup.emplace(cnt);
