@@ -1,5 +1,5 @@
-# Time:  O(10^(n/2))
-# Space: O(n + nHr(10, n/2))
+# Time:  O(10 * 10^((n + 1)/2))
+# Space: O(n + 10 * nHr(10, n/2))
 
 # combinatorics
 class Solution(object):
@@ -36,8 +36,10 @@ class Solution(object):
         lookup = set()
         for d in xrange(10**(l-1), 10**l):
             x = palindrome(d, n)
+            if x%k:
+                continue
             cnt = count(x)
-            if x%k or cnt in lookup:
+            if cnt in lookup:
                 continue
             lookup.add(cnt)
             total = (n-cnt[0])*fact[n-1]
