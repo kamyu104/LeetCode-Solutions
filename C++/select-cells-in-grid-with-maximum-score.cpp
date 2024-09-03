@@ -78,7 +78,6 @@ public:
             if (empty(lookup[x])) {
                 continue;
             }
-            vector<int> new_dp(dp);
             for (int mask = size(dp) - 1; mask >= 0; --mask) {
                 for (const auto& i : lookup[x]) {
                     if (mask & (1 << i)) {
