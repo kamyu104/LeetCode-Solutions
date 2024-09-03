@@ -56,8 +56,8 @@ class Solution(object):
         return -hungarian(adj)[0]
 
 
-# Time:  O((m * n) * 2^m)
-# Space: O(m * n + 2^m)
+# Time:  O(r + (n * m) * 2^n), r = max(x for row in grid for x in row)
+# Space: O(r + n * m + 2^n)
 # dp, bitmasks
 class Solution2(object):
     def maxScore(self, grid):
