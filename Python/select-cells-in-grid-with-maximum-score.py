@@ -75,11 +75,9 @@ class Solution2(object):
         for x in xrange(len(lookup)):
             if not lookup[x]:
                 continue
-            new_dp = dp[:]
-            for i in lookup[x]:
-                for mask in xrange(len(dp)):
+            for mask in reversed(xrange(len(dp))):
+                for i in lookup[x]:
                     if mask&(1<<i):
                         continue
-                    new_dp[mask|(1<<i)] = max(new_dp[mask|(1<<i)], dp[mask]+(x+1))
-            dp = new_dp
+                    dp[mask|(1<<i)] = max(dp[mask|(1<<i)], dp[mask]+(x+1))
         return max(dp)
