@@ -16,7 +16,7 @@ class Solution(object):
                     right = mid-1
                 else:
                     left = mid+1
-            return left
+            return left  # or return right+1
 
         def binarySearch2(n, check):  # frequently use
             left, right = 0, n  # search in [0, n), return n if not found
@@ -26,7 +26,7 @@ class Solution(object):
                     right = mid
                 else:
                     left = mid+1
-            return left
+            return left  # or return right
 
         def binarySearch3(n, check):  # never use
             left, right = -1, n-1  # search in (-1, n-1], return n if not found
@@ -36,7 +36,7 @@ class Solution(object):
                     right = mid-1
                 else:
                     left = mid
-            return left+1
+            return left+1  # or return right+1
 
         def binarySearch4(n, check):  # sometimes use
             left, right = -1, n  # search in (-1, n), return n if not found
@@ -46,7 +46,7 @@ class Solution(object):
                     right = mid
                 else:
                     left = mid
-            return right  # right = left+1
+            return left+1  # or return right
 
         # Find the first idx where nums[idx] >= target
         left = binarySearch(len(nums), lambda i: nums[i] >= target)
