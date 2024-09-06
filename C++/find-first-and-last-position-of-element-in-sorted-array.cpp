@@ -37,7 +37,7 @@ private:
                 left = mid + 1;
             }
         }
-        return left;
+        return left;  // or return right + 1
     }
 
     int upper_bound(const vector<int> &nums, int target) {
@@ -50,7 +50,7 @@ private:
                 left = mid + 1;
             }
         }
-        return left;
+        return left;  // or return right + 1
     }
 };
 
@@ -77,7 +77,7 @@ private:
                 left = mid + 1;
             }
         }
-        return left;
+        return left;  // or return right
     }
 
     int upper_bound(const vector<int> &nums, int target) {
@@ -91,7 +91,7 @@ private:
                 left = mid + 1;
             }
         }
-        return left;
+        return left;  // or return right
     }
 };
 
@@ -118,7 +118,7 @@ private:
                 left = mid;
             }
         }
-        return right;
+        return left + 1;  // or return right
     }
 
     int upper_bound(const vector<int> &nums, int target) {
@@ -132,6 +132,6 @@ private:
                 left = mid;
             }
         }
-        return right;
+        return left + 1;  // or return right
     }
 };
