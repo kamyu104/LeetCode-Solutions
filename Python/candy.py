@@ -1,3 +1,63 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Example data
+x = np.linspace(0, 400, 400)
+y1 = np.sin(x * 0.05) * 20 + 20
+y2 = np.cos(x * 0.05) * 20 + 20
+y3 = np.sin(x * 0.05 + 0.5) * 20 + 20
+y4 = np.cos(x * 0.05 + 0.5) * 20 + 20
+
+plt.figure(figsize=(10, 5))
+plt.plot(x, y1, label='HIST vol', linestyle='-', color='#1f77b4', linewidth=2)
+plt.plot(x, y2, label='roll 3-mins BV vol', linestyle='--', color='#ff7f0e', linewidth=2)
+plt.plot(x, y3, label='roll 30-mins BV vol', linestyle='-.', color='#2ca02c', linewidth=2)
+plt.plot(x, y4, label='roll approx. vol prod. adj. rets 30 mins', linestyle=':', color='#d62728', linewidth=2)
+
+font = {'family': 'serif', 'color':  'black', 'weight': 'normal', 'size': 16}
+plt.title('Volatility Over Time', fontdict=font)
+plt.xlabel('Time (minutes)', fontdict=font)
+plt.ylabel('Volatility', fontdict=font)
+plt.xticks(fontsize=12, fontname='serif')
+plt.yticks(fontsize=12, fontname='serif')
+plt.grid(True, linestyle='--', linewidth=0.5, alpha=0.7)
+plt.legend(loc='upper left', bbox_to_anchor=(1.05, 1), fontsize=12, frameon=True, shadow=True)
+plt.savefig('/mnt/data/color_plot.png', format='png', dpi=300)
+plt.show()
+
+
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Example data
+x = np.linspace(0, 400, 400)
+y1 = np.sin(x * 0.05) * 20 + 20
+y2 = np.cos(x * 0.05) * 20 + 20
+y3 = np.sin(x * 0.05 + 0.5) * 20 + 20
+y4 = np.cos(x * 0.05 + 0.5) * 20 + 20
+
+plt.figure(figsize=(10, 5))
+plt.plot(x, y1, label='HIST vol', linestyle='-', marker='o', markersize=5, linewidth=2)
+plt.plot(x, y2, label='roll 3-mins BV vol', linestyle='--', marker='s', markersize=5, linewidth=2)
+plt.plot(x, y3, label='roll 30-mins BV vol', linestyle='-.', marker='^', markersize=5, linewidth=2)
+plt.plot(x, y4, label='roll approx. vol prod. adj. rets 30 mins', linestyle=':', marker='*', markersize=5, linewidth=2)
+
+font = {'family': 'serif', 'color':  'black', 'weight': 'normal', 'size': 16}
+plt.title('Volatility Over Time', fontdict=font)
+plt.xlabel('Time (minutes)', fontdict=font)
+plt.ylabel('Volatility', fontdict=font)
+plt.xticks(fontsize=12, fontname='serif')
+plt.yticks(fontsize=12, fontname='serif')
+plt.grid(True, linestyle='--', linewidth=0.5, alpha=0.7)
+plt.legend(loc='upper left', bbox_to_anchor=(1.05, 1), fontsize=12, frameon=True, shadow=True)
+plt.savefig('/mnt/data/high_contrast_plot.png', format='png', dpi=300)
+plt.show()
+
+
+
+
 #!/bin/bash
 
 # Check if the correct number of arguments is provided
