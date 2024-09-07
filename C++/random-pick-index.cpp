@@ -25,7 +25,7 @@ private:
 // Space: O(1)
 class Solution_TLE {
 public:
-    Solution_TLE(vector<int> nums) : nums_(nums) {
+    Solution_TLE(vector<int> nums) : nums_(nums), gen_(random_device()()) {
         
     }
     
@@ -36,7 +36,8 @@ public:
             if (nums_[i] != target) {
                 continue;
             }
-            if (rand() % ++n == 0) {
+            uniform_int_distribution<int> dist(0, n++);
+            if (dist(gen_) == 0) {
                 reservoir = i;
             }
         }
@@ -45,4 +46,5 @@ public:
 
 private:
     const vector<int> nums_;
+     default_random_engine gen_;
 };
