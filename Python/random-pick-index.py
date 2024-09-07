@@ -24,7 +24,8 @@ class Solution(object):
         return self.__lookup[target][randint(0, len(self.__lookup[target])-1)]
 
 
-# Time:  O(n)
+# Time:  ctor: O(1)
+#        pick: O(n)
 # Space: O(1)
 from random import randint
 
