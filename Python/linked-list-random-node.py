@@ -1,6 +1,6 @@
-# Time:  ctor:      O(n)
-#        getRandom: O(1)
-# Space: O(n)
+# Time:  ctor:      O(1)
+#        getRandom: O(n)
+# Space: O(1)
 
 from random import randint
 
@@ -29,9 +29,9 @@ class Solution(object):
         return reservoir
 
 
-# Time:  ctor:      O(1)
-#        getRandom: O(n)
-# Space: O(1)
+# Time:  ctor:      O(n)
+#        getRandom: O(1)
+# Space: O(n)
 from random import randint
 
 
