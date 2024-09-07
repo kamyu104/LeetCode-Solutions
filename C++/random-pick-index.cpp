@@ -46,5 +46,5 @@ public:
 
 private:
     const vector<int> nums_;
-     default_random_engine gen_;
+    default_random_engine gen_;
 };
