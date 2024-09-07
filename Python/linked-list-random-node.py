@@ -6,12 +6,11 @@ from random import randint
 
 
 # if the length is unknown without using extra space
-class Solution2(object):
+class Solution(object):
 
     def __init__(self, head):
         """
-        @param head The linked list's head. Note that the head is guanranteed to be not null, so it contains at least one node.
-        :type head: ListNode
+        :type head: Optional[ListNode]
         """
         self.__head = head
 
@@ -20,7 +19,6 @@ class Solution2(object):
     # https://discuss.leetcode.com/topic/53753/brief-explanation-for-reservoir-sampling
     def getRandom(self):
         """
-        Returns a random node's value.
         :rtype: int
         """
         reservoir = -1
