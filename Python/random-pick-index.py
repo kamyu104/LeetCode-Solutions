@@ -10,9 +10,7 @@ class Solution(object):
 
     def __init__(self, nums):
         """
-
         :type nums: List[int]
-        :type numsSize: int
         """
         self.__lookup = collections.defaultdict(list)
         for i, x in enumerate(nums):
@@ -35,9 +33,7 @@ class Solution_TLE(object):
 
     def __init__(self, nums):
         """
-
         :type nums: List[int]
-        :type numsSize: int
         """
         self.__nums = nums
 
