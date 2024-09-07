@@ -1,19 +1,20 @@
-// Time:  O(n)
+// Time:  ctor:      O(1)
+//        getRandom: O(n)
 // Space: O(1)
 
+// if the length is unknown without using extra space
 class Solution {
 public:
-    /** @param head The linked list's head. Note that the head is guanranteed to be not null, so it contains at least one node. */
-    Solution(ListNode* head) : head_(head) {
+    Solution(ListNode* head) : head_(head), gen_(random_device()()) {
         
     }
     
-    /** Returns a random node's value. */
     int getRandom() {
         auto reservoir = -1;
         auto n = 0;
         for (auto curr = head_; curr; curr = curr->next) {
-            if (rand() % ++n == 0) {
+            uniform_int_distribution<int> dist(0, n++);
+            if (dist(gen_) == 0) {
                 reservoir = curr->val;
             }
         }
@@ -22,11 +23,27 @@ public:
 
 private:
     ListNode *head_;
+    default_random_engine gen_;
 };
 
-/**
- * Your Solution object will be instantiated and called as such:
- * Solution obj = new Solution(head);
- * int param_1 = obj.getRandom();
- */
- 
+// Time:  ctor:      O(n)
+//        getRandom: O(1)
+// Space: O(n)
+// if the length is known with using extra space
+class Solution2 {
+public:
+    Solution2(ListNode* head) : gen_(random_device()()) {
+        for (; head; head = head->next) {
+            nums_.emplace_back(head->val);
+        }
+    }
+    
+    int getRandom() {
+        uniform_int_distribution<int> dist(0, size(nums_) - 1);
+        return nums_[dist(gen_)];
+    }
+
+private:
+    vector<int> nums_;
+    default_random_engine gen_;
+};
