@@ -1,4 +1,5 @@
-# Time:  O(n)
+# Time:  ctor: O(n)
+#        pick: O(1)
 # Space: O(n)
 
 from random import randint
