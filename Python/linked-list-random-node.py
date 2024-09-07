@@ -1,9 +1,12 @@
-# Time:  O(n)
-# Space: O(1)
+# Time:  ctor:      O(n)
+#        getRandom: O(1)
+# Space: O(n)
 
 from random import randint
 
-class Solution(object):
+
+# if the length is unknown without using extra space
+class Solution2(object):
 
     def __init__(self, head):
         """
@@ -28,4 +31,27 @@ class Solution(object):
         return reservoir
 
 
+# Time:  ctor:      O(1)
+#        getRandom: O(n)
+# Space: O(1)
+from random import randint
 
+
+# if the length is known with using extra space
+class Solution2(object):
+
+    def __init__(self, head):
+        """
+        :type head: Optional[ListNode]
+        """
+        self.__lookup = []
+        while head:
+            self.__lookup.append(head.val)
+            head = head.next
+        
+
+    def getRandom(self):
+        """
+        :rtype: int
+        """
+        return self.__lookup[randint(0, len(self.__lookup)-1)]
