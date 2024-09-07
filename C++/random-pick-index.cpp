@@ -20,7 +20,8 @@ private:
     default_random_engine gen_;
 };
 
-// Time:  O(n)
+// Time:  ctor: O(1)
+//        pick: O(n)
 // Space: O(1)
 class Solution_TLE {
 public:
