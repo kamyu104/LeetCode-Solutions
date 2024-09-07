@@ -29,6 +29,7 @@ class Solution(object):
 # Space: O(1)
 from random import randint
 
+
 class Solution_TLE(object):
 
     def __init__(self, nums):
