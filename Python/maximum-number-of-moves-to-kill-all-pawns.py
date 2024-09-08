@@ -41,13 +41,13 @@ class Solution(object):
         dp = [[POS_INF if popcount(mask)&1 else NEG_INF]*len(positions) for mask in xrange(1<<len(positions))]
         dp[-1] = [0]*len(positions)
         for mask in reversed(xrange(1, 1<<len(positions))):
-            fn = (max, min)[popcount(mask)&1]
+            fn = (max, min)[(popcount(mask)&1)^1]
             for i in xrange(len(positions)):
-                if mask&(1<<i):
+                if (mask&(1<<i)) == 0:
                     continue
                 for j in xrange(len(positions)):
                     if j == i or (mask&(1<<j)) == 0:
                         continue
-                    dp[mask][j] = fn(dp[mask][j], dp[mask^(1<<i)][i]+dist[i][j])
+                    dp[mask^(1<<i)][j] = fn(dp[mask^(1<<i)][j], dp[mask][i]+dist[i][j])
         d = bfs(kx, ky)
         return max(d[positions[i][0]][positions[i][1]]+dp[1<<i][i] for i in xrange(len(positions)))
