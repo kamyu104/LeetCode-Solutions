@@ -44,17 +44,17 @@ public:
         }
         dp.back().assign(size(positions), 0);
         for (int mask = (1 << size(positions)) - 1; mask >= 1; --mask) {
-            const auto& turn = __builtin_popcount(mask) & 1;
+            const auto& turn = (__builtin_popcount(mask) & 1) ^ 1;
             for (int i = 0; i < size(positions); ++i) {
-                if (mask & (1 << i)) {
+                if ((mask & (1 << i)) == 0) {
                     continue;
                 }
                 for (int j = 0; j < size(positions); ++j) {
                     if (j == i || (mask & (1 << j)) == 0) {
                         continue;
                     }
-                    dp[mask][j] = turn ? min(dp[mask][j], dp[mask ^ (1 << i)][i] + dist[i][j])
-                                       : max(dp[mask][j], dp[mask ^ (1 << i)][i] + dist[i][j]);
+                    dp[mask ^ (1 << i)][j] = turn ? min(dp[mask ^ (1 << i)][j], dp[mask][i] + dist[i][j])
+                                                  : max(dp[mask ^ (1 << i)][j], dp[mask][i] + dist[i][j]);
                 }
             }
         }
