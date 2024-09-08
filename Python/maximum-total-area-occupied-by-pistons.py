@@ -4,7 +4,7 @@
 import itertools
 
 
-# line sweep
+# line sweep, difference array
 class Solution(object):
     def maxArea(self, height, positions, directions):
         """
@@ -36,7 +36,7 @@ import collections
 import itertools
 
 
-# sort, line sweep
+# sort, line sweep, difference array
 class Solution2(object):
     def maxArea(self, height, positions, directions):
         """
