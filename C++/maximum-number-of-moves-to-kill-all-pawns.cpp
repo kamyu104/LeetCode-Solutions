@@ -61,7 +61,7 @@ public:
         int result = 0;
         const auto& d = bfs(kx, ky);
         for (int i = 0; i < size(positions); ++i) {
-            result = max(result, d[positions[i][0]][positions[i][1]] + dp[1 << i][i]);
+            result = max(result, dp[1 << i][i] + d[positions[i][0]][positions[i][1]]);
         }
         return result;
     }
