@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3279%20%2F%203279-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3283%20%2F%203283-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -302,6 +302,7 @@
 3163 | [String Compression III](https://leetcode.com/problems/string-compression-iii/) | [C++](./C++/string-compression-iii.cpp) [Python](./Python/string-compression-iii.py) | _O(n)_ | _O(1)_ | Medium | | String
 3210 | [Find the Encrypted String](https://leetcode.com/problems/find-the-encrypted-string/) | [C++](./C++/find-the-encrypted-string.cpp) [Python](./Python/find-the-encrypted-string.py) | _O(n)_ | _O(1)_ | Medium | | String
 3271 | [Hash Divided String](https://leetcode.com/problems/hash-divided-string/) | [C++](./C++/hash-divided-string.cpp) [Python](./Python/hash-divided-string.py) | _O(n)_ | _O(1)_ | Medium | | String
+3280 | [Convert Date to Binary](https://leetcode.com/problems/convert-date-to-binary/) | [C++](./C++/convert-date-to-binary.cpp) [Python](./Python/convert-date-to-binary.py) | _O(1)_ | _O(1)_ | Easy | | String
 
 <br/>
 <div align="right">
@@ -840,6 +841,7 @@
 3145 | [Find Products of Elements of Big Array](https://leetcode.com/problems/find-products-of-elements-of-big-array/) | [C++](./C++/find-products-of-elements-of-big-array.cpp) [Python](./Python/find-products-of-elements-of-big-array.py) | _O(q * (logr)^2)_ | _O(1)_ | Hard | | Binary Search, Combinatorics, Bitmasks, Fast Exponentiation
 3231 | [Minimum Number of Increasing Subsequence to Be Removed](https://leetcode.com/problems/minimum-number-of-increasing-subsequence-to-be-removed/) | [C++](./C++/minimum-number-of-increasing-subsequence-to-be-removed.cpp) [Python](./Python/minimum-number-of-increasing-subsequence-to-be-removed.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒, variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Binary Search
 3233 | [Find the Count of Numbers Which Are Not Special](https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/) | [C++](./C++/find-the-count-of-numbers-which-are-not-special.cpp) [Python](./Python/find-the-count-of-numbers-which-are-not-special.py) | precompute: _O(sqrt(r))_<br>runtime: _O(logr)_ | _O(sqrt(r))_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Binary Search |
+3281 | [Maximize Score of Numbers in Ranges](https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/) | [C++](./C++/maximize-score-of-numbers-in-ranges.cpp) [Python](./Python/maximize-score-of-numbers-in-ranges.py) | _O(nlogr)_ | _O(1)_ | Medium | | Binary Search, Greedy
 
 <br/>
 
@@ -1094,6 +1096,7 @@
 3259 | [Maximum Energy Boost From Two Drinks](https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/) | [C++](./C++/maximum-energy-boost-from-two-drinks.cpp) [Python](./Python/maximum-energy-boost-from-two-drinks.py) | _O(n)_ | _O(1)_ | Medium | | DP
 3269 | [Constructing Two Increasing Arrays](https://leetcode.com/problems/constructing-two-increasing-arrays/) | [C++](./C++/constructing-two-increasing-arrays.cpp) [Python](./Python/constructing-two-increasing-arrays.py) | _O(m * n)_ | _O(min(m, n))_ | Hard | 🔒 | DP
 3277 | [Maximum XOR Score Subarray Queries](https://leetcode.com/problems/maximum-xor-score-subarray-queries/) | [C++](./C++/maximum-xor-score-subarray-queries.cpp) [Python](./Python/maximum-xor-score-subarray-queries.py) | _O(n^2 + q)_ | _O(n^2)_ | Hard | | DP
+3283 | [Maximum Number of Moves to Kill All Pawns](https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/) | [C++](./C++/maximum-number-of-moves-to-kill-all-pawns.cpp) [Python](./Python/maximum-number-of-moves-to-kill-all-pawns.py) | _O(p^2 * 2^p)_ | _O(p * 2^p)_ | Hard | | BFS, Bitmasks, DP
 
 <br/>
 <div align="right">
@@ -1252,6 +1255,7 @@
 3239 | [Minimum Number of Flips to Make Binary Grid Palindromic I](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/) | [C++](./C++/minimum-number-of-flips-to-make-binary-grid-palindromic-i.cpp) [Python](./Python/minimum-number-of-flips-to-make-binary-grid-palindromic-i.py) | _O(m * n)_   | _O(1)_        | Medium         | | Array, Greedy
 3240 | [Minimum Number of Flips to Make Binary Grid Palindromic II](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-ii/) | [C++](./C++/minimum-number-of-flips-to-make-binary-grid-palindromic-ii.cpp) [Python](./Python/minimum-number-of-flips-to-make-binary-grid-palindromic-ii.py) | _O(m * n)_   | _O(1)_        | Medium         | | Array, Greedy
 3273 | [Minimum Amount of Damage Dealt to Bob](https://leetcode.com/problems/minimum-amount-of-damage-dealt-to-bob/) | [C++](./C++/minimum-amount-of-damage-dealt-to-bob.cpp) [Python](./Python/minimum-amount-of-damage-dealt-to-bob.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Sort, Greedy
+3282 | [Reach End of Array With Max Score](https://leetcode.com/problems/reach-end-of-array-with-max-score/) | [C++](./C++/reach-end-of-array-with-max-score.cpp) [Python](./Python/reach-end-of-array-with-max-score.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 
 <br/>
 <div align="right">
