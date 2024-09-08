@@ -1,7 +1,7 @@
 // Time:  O(h)
 // Space: O(h)
 
-// line sweep, derence array
+// line sweep, difference array
 class Solution {
 public:
     long long maxArea(int height, vector<int>& positions, string directions) {
@@ -29,7 +29,7 @@ public:
 
 // Time:  O(nlogn)
 // Space: O(n)
-// sort, line sweep, derence array
+// sort, line sweep, difference array
 class Solution2 {
 public:
     long long maxArea(int height, vector<int>& positions, string directions) {
