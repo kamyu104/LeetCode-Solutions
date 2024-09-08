@@ -19,7 +19,7 @@ public:
         int64_t result = total;
         int cnt = count(cbegin(directions), cend(directions), 'U');
         for (int t = 1; t < size(events); ++t) {
-            total += (-(static_cast<int32_t>(size(directions)) - cnt) + cnt);
+            total += -(static_cast<int32_t>(size(directions)) - cnt) + cnt;
             result = max(result, total);
             cnt += events[t];
         }
