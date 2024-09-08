@@ -31,7 +31,6 @@ public:
             return dist;
         };
     
-        positions.emplace_back(vector<int>{kx, ky});
         vector<vector<int>> dist(size(positions), vector<int>(size(positions)));
         for (int i = 0; i < size(positions); ++i) {
             const auto& d = bfs(positions[i][0], positions[i][1]);
@@ -39,18 +38,18 @@ public:
                 dist[j][i] = dist[i][j] = d[positions[j][0]][positions[j][1]];
             }
         }
-        vector<vector<int>> dp(1 << (size(positions) - 1));
-        for (int mask = 1; mask < 1 << (size(positions) - 1); ++mask) {
-            dp[mask].assign(size(positions) - 1, __builtin_popcount(mask) & 1 ? POS_INF : NEG_INF);
+        vector<vector<int>> dp(1 << size(positions));
+        for (int mask = 1; mask < 1 << size(positions); ++mask) {
+            dp[mask].assign(size(positions), __builtin_popcount(mask) & 1 ? POS_INF : NEG_INF);
         }
-        dp.back().assign(size(positions) - 1, 0);
-        for (int mask = (1 << (size(positions) - 1)) - 1; mask >= 1; --mask) {
+        dp.back().assign(size(positions), 0);
+        for (int mask = (1 << size(positions)) - 1; mask >= 1; --mask) {
             const auto& turn = __builtin_popcount(mask) & 1;
-            for (int i = 0; i < size(positions) - 1; ++i) {
+            for (int i = 0; i < size(positions); ++i) {
                 if (mask & (1 << i)) {
                     continue;
                 }
-                for (int j = 0; j < size(positions) - 1; ++j) {
+                for (int j = 0; j < size(positions); ++j) {
                     if (j == i || (mask & (1 << j)) == 0) {
                         continue;
                     }
@@ -60,8 +59,9 @@ public:
             }
         }
         int result = 0;
-        for (int i = 0; i < size(positions) - 1; ++i) {
-            result = max(result, dist.back()[i] + dp[1 << i][i]);
+        const auto& d = bfs(kx, ky);
+        for (int i = 0; i < size(positions); ++i) {
+            result = max(result, d[positions[i][0]][positions[i][1]] + dp[1 << i][i]);
         }
         return result;
     }
