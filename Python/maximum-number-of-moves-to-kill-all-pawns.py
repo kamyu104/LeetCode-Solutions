@@ -33,21 +33,21 @@ class Solution(object):
                 q = new_q
             return dist
     
-        positions.append([kx, ky])
         dist = [[0]*len(positions) for _ in xrange(len(positions))]
         for i, (r, c) in enumerate(positions):
             d = bfs(r, c)
             for j in xrange(i+1, len(positions)):
                 dist[j][i] = dist[i][j] = d[positions[j][0]][positions[j][1]]
-        dp = [[POS_INF if popcount(mask)&1 else NEG_INF]*(len(positions)-1) for mask in xrange(1<<(len(positions)-1))]
-        dp[-1] = [0]*(len(positions)-1)
-        for mask in reversed(xrange(1, 1<<(len(positions)-1))):
+        dp = [[POS_INF if popcount(mask)&1 else NEG_INF]*len(positions) for mask in xrange(1<<len(positions))]
+        dp[-1] = [0]*len(positions)
+        for mask in reversed(xrange(1, 1<<len(positions))):
             fn = (max, min)[popcount(mask)&1]
-            for i in xrange(len(positions)-1):
+            for i in xrange(len(positions)):
                 if mask&(1<<i):
                     continue
-                for j in xrange(len(positions)-1):
+                for j in xrange(len(positions)):
                     if j == i or (mask&(1<<j)) == 0:
                         continue
                     dp[mask][j] = fn(dp[mask][j], dp[mask^(1<<i)][i]+dist[i][j])
-        return max(dist[-1][i]+dp[1<<i][i] for i in xrange(len(positions)-1))
+        d = bfs(kx, ky)
+        return max(d[positions[i][0]][positions[i][1]]+dp[1<<i][i] for i in xrange(len(positions)))
