@@ -13,20 +13,20 @@ class Solution(object):
         :type directions: str
         :rtype: int
         """
-        events = [0]*(2*height+1)
+        diff = [0]*(2*height+1)
         for d, i in itertools.izip(directions, positions):
             if d == 'U':
-                events[height-i] -= 1
-                events[(height-i)+height] += 1
+                diff[height-i] -= 1
+                diff[(height-i)+height] += 1
             else:
-                events[i] += 1
-                events[i+height] -= 1
+                diff[i] += 1
+                diff[i+height] -= 1
         result = total = sum(positions)
         cnt = directions.count('U')
-        for t in xrange(1, len(events)):
+        for t in xrange(1, len(diff)):
             total += -(len(directions)-cnt)+cnt
             result = max(result, total)
-            cnt += events[t]
+            cnt += diff[t]
         return result
 
 
@@ -45,20 +45,20 @@ class Solution2(object):
         :type directions: str
         :rtype: int
         """
-        events = collections.defaultdict(int)
+        diff = collections.defaultdict(int)
         for d, i in itertools.izip(directions, positions):
             if d == 'U':
-                events[height-i] -= 1
-                events[(height-i)+height] += 1
+                diff[height-i] -= 1
+                diff[(height-i)+height] += 1
             else:
-                events[i] += 1
-                events[i+height] -= 1
+                diff[i] += 1
+                diff[i+height] -= 1
         result = total = sum(positions)
         cnt = directions.count('U')
         prev = 0
-        for t, diff in sorted(events.iteritems()):
+        for t, d in sorted(diff.iteritems()):
             total += (t-prev)*(-(len(directions)-cnt)+cnt)
             result = max(result, total)
-            cnt += diff
+            cnt += d
             prev = t
         return result
