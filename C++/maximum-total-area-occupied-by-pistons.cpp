@@ -33,7 +33,7 @@ public:
 class Solution2 {
 public:
     long long maxArea(int height, vector<int>& positions, string directions) {
-        map<int, int> events;
+        unordered_map<int, int> events;
         for (int i = 0; i < size(positions); ++i) {
             if (directions[i] == 'U') {
                 --events[height - positions[i]];
@@ -47,7 +47,9 @@ public:
         int64_t result = total;
         int cnt = count(cbegin(directions), cend(directions), 'U');
         int prev = 0;
-        for (const auto& [t, diff] : events) {
+        vector<pair<int, int>> sorted_events(cbegin(events), cend(events));
+        sort(begin(sorted_events), end(sorted_events));
+        for (const auto& [t, diff] : sorted_events) {
             total += static_cast<int64_t>(t - prev) * (-(static_cast<int32_t>(size(directions)) - cnt) + cnt);
             result = max(result, total);
             cnt += diff;
