@@ -50,4 +50,4 @@ class Solution(object):
                         continue
                     dp[mask^(1<<i)][j] = fn(dp[mask^(1<<i)][j], dp[mask][i]+dist[i][j])
         d = bfs(kx, ky)
-        return max(d[positions[i][0]][positions[i][1]]+dp[1<<i][i] for i in xrange(len(positions)))
+        return max(dp[1<<i][i]+d[positions[i][0]][positions[i][1]] for i in xrange(len(positions)))
