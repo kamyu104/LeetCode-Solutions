@@ -220,7 +220,7 @@
 3187 | [Peaks in Array](https://leetcode.com/problems/peaks-in-array/) | [C++](./C++/peaks-in-array.cpp) [Python](./Python/peaks-in-array.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
 3195 | [Find the Minimum Area to Cover All Ones I](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/) | [C++](./C++/find-the-minimum-area-to-cover-all-ones-i.cpp) [Python](./Python/find-the-minimum-area-to-cover-all-ones-i.py) | _O(n * m)_ | _O(1)_ | Medium | | Array
 3224 | [Minimum Array Changes to Make Differences Equal](https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/) | [C++](./C++/minimum-array-changes-to-make-differences-equal.cpp) [Python](./Python/minimum-array-changes-to-make-differences-equal.py) | _O(n + k)_   | _O(k)_        | Medium         | | Prefix Sum, Difference Array
-3279 | [Maximum Total Area Occupied by Pistons](https://leetcode.com/problems/maximum-total-area-occupied-by-pistons/) | [C++](./C++/maximum-total-area-occupied-by-pistons.cpp) [Python](./Python/maximum-total-area-occupied-by-pistons.py) | _O(h)_ | _O(h)_ | Hard | 🔒 | Line Sweep
+3279 | [Maximum Total Area Occupied by Pistons](https://leetcode.com/problems/maximum-total-area-occupied-by-pistons/) | [C++](./C++/maximum-total-area-occupied-by-pistons.cpp) [Python](./Python/maximum-total-area-occupied-by-pistons.py) | _O(h)_ | _O(h)_ | Hard | 🔒 | Line Sweep, Difference Array
 
 <br/>
 <div align="right">
