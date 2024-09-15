@@ -9,4 +9,4 @@ class Solution(object):
         :type threshold: int
         :rtype: List[int]
         """
-        return[i for i in xrange(1, len(height)) if height[i-1] > threshold]
+        return [i for i in xrange(1, len(height)) if height[i-1] > threshold]
