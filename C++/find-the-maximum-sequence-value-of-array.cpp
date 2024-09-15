@@ -12,42 +12,32 @@ public:
             return (a | b) == b;
         };
     
-        vector<int> left(MAX_MASK + 1, size(nums));
-        vector<int> dp(MAX_MASK + 1, INF), cnt(MAX_MASK + 1, 0);
-        for (int i = 0; i < size(nums); ++i) {
-            dp[nums[i]] = 1;
-            for (int mask = 0; mask <= MAX_MASK; ++mask) {
-                if (is_submask(nums[i], mask)) {
-                    ++cnt[mask];
+        const auto& dp = [&](int d, int npos) {
+            vector<int> result(MAX_MASK + 1, npos);
+            vector<int> dp(MAX_MASK + 1, INF), cnt(MAX_MASK + 1, 0);
+            const int begin = d == 1 ? 0 : size(nums) - 1;
+            const int end = d == 1 ? size(nums) : -1;
+            for (int i = begin ; i != end; i += d) {
+                dp[nums[i]] = 1;
+                for (int mask = 0; mask <= MAX_MASK; ++mask) {
+                    if (is_submask(nums[i], mask)) {
+                        ++cnt[mask];
+                    }
+                    if (dp[mask] != INF) {
+                        dp[mask | nums[i]] = min(dp[mask | nums[i]], dp[mask] + 1);
+                    }
                 }
-                if (dp[mask] != INF) {
-                    dp[mask | nums[i]] = min(dp[mask | nums[i]], dp[mask] + 1);
-                }
-            }
-            for (int mask = 0; mask < MAX_MASK + 1; ++mask) {
-                if (cnt[mask] >= k && dp[mask] <= k && left[mask] == size(nums)) {
-                    left[mask] = i;
-                }
-            }
-        }
-        vector<int> right(MAX_MASK + 1, -1);
-        dp.assign(MAX_MASK + 1, INF); cnt.assign(MAX_MASK + 1, 0);
-        for (int i = size(nums) - 1; i >= 0; --i) {
-            dp[nums[i]] = 1;
-            for (int mask = 0; mask <= MAX_MASK; ++mask) {
-                if (is_submask(nums[i], mask)) {
-                    ++cnt[mask];
-                }
-                if (dp[mask] != INF) {
-                    dp[mask | nums[i]] = min(dp[mask | nums[i]], dp[mask] + 1);
+                for (int mask = 0; mask < MAX_MASK + 1; ++mask) {
+                    if (cnt[mask] >= k && dp[mask] <= k && result[mask] == npos) {
+                        result[mask] = i;
+                    }
                 }
             }
-            for (int mask = 0; mask <= MAX_MASK; ++mask) {
-                if (cnt[mask] >= k && dp[mask] <= k && right[mask] == -1) {
-                    right[mask] = i;
-                }
-            }
-        }
+            return result;
+        };
+
+        const auto& left = dp(1, size(nums));
+        const auto& right = dp(-1, -1);
         for (int result = MAX_MASK; result >= 0; --result) {
             for (int l = 1; l <= MAX_MASK; ++l) {
                 if (left[l] < right[result ^ l]) {
