@@ -9,6 +9,11 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+        INF = float("inf")
+        MAX_MASK = 127
+        def is_submask(a, b):
+            return (a|b) == b
+
         def dp(direction, npos):
             result = [npos]*(MAX_MASK+1)
             dp = [INF]*(MAX_MASK+1)
@@ -24,12 +29,6 @@ class Solution(object):
                         result[mask] = i
             return result
 
-        INF = float("inf")
-        MAX_MASK = 127
-        
-        def is_submask(a, b):
-            return (a|b) == b
-    
         left = dp(lambda x: x, len(nums))
         right = dp(reversed, -1)
         return next(result for result in reversed(xrange(MAX_MASK+1)) for l in xrange(1, MAX_MASK+1) if left[l] < right[result^l])
