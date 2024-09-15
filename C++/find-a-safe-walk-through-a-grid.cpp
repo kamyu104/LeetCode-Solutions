@@ -8,7 +8,7 @@ public:
         static const vector<pair<int, int>> directions = {{0, 1}, {0, -1},
                                                           {1, 0}, {-1, 0}};
         const pair<int, int> b = {0, 0}, t = {size(grid) - 1, size(grid[0]) - 1};
-        if (0 + grid[0][0] == health) {
+        if (!(0 + grid[0][0] < health)) {
             return false;
         }
         deque<pair<pair<int, int>, int>> dq = {{b, grid[0][0]}};
