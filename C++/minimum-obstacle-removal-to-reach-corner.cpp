@@ -39,7 +39,7 @@ private:
                       !lookup.count(nb.first * size(grid[0]) + nb.second))) {
                     continue;
                 }
-                if (!grid[b.first][b.second]) {
+                if (!grid[nb.first][nb.second]) {
                     closer.emplace_back(nb);
                 } else {
                     detour.emplace_back(nb);
