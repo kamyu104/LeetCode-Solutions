@@ -14,7 +14,7 @@ class Solution(object):
         """
         directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
         b, t = (0, 0), (len(grid)-1, len(grid[0])-1)
-        if 0+grid[0][0] == health:
+        if not 0+grid[0][0] < health:
             return False
         dq = collections.deque([(b, grid[0][0])])
         lookup = set()
