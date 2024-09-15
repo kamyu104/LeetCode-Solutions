@@ -9,43 +9,36 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+        def dp(direction, npos):
+            result = [npos]*(MAX_MASK+1)
+            dp = [INF]*(MAX_MASK+1)
+            cnt = [0]*(MAX_MASK+1)
+            for i in direction(xrange(len(nums))):
+                dp[nums[i]] = 1
+                for mask in xrange(MAX_MASK+1):
+                    if is_submask(nums[i], mask):
+                        cnt[mask] += 1
+                    dp[mask|nums[i]] = min(dp[mask|nums[i]], dp[mask]+1)
+                for mask in xrange(MAX_MASK+1):
+                    if cnt[mask] >= k and dp[mask] <= k and result[mask] == npos:
+                        result[mask] = i
+            return result
+
         INF = float("inf")
         MAX_MASK = 127
         
         def is_submask(a, b):
             return (a|b) == b
     
-        left = [len(nums)]*(MAX_MASK+1)
-        dp = [INF]*(MAX_MASK+1)
-        cnt = [0]*(MAX_MASK+1)
-        for i in xrange(len(nums)):
-            dp[nums[i]] = 1
-            for mask in xrange(MAX_MASK+1):
-                if is_submask(nums[i], mask):
-                    cnt[mask] += 1
-                dp[mask|nums[i]] = min(dp[mask|nums[i]], dp[mask]+1)
-            for mask in xrange(MAX_MASK+1):
-                if cnt[mask] >= k and dp[mask] <= k and left[mask] == len(nums):
-                    left[mask] = i
-        right = [-1]*(MAX_MASK+1)
-        dp = [INF]*(MAX_MASK+1)
-        cnt = [0]*(MAX_MASK+1)
-        for i in reversed(xrange(len(nums))):
-            dp[nums[i]] = 1
-            for mask in xrange(MAX_MASK+1):
-                if is_submask(nums[i], mask):
-                    cnt[mask] += 1
-                dp[mask|nums[i]] = min(dp[mask|nums[i]], dp[mask]+1)
-            for mask in xrange(MAX_MASK+1):
-                if cnt[mask] >= k and dp[mask] <= k and right[mask] == -1:
-                    right[mask] = i
+        left = dp(lambda x: x, len(nums))
+        right = dp(reversed, -1)
         return next(result for result in reversed(xrange(MAX_MASK+1)) for l in xrange(1, MAX_MASK+1) if left[l] < right[result^l])
 
 
 # Time:  O(n * k * r + n * r^2)
 # Space: O(n * k * r)
 # prefix sum, dp
-class Solution2(object):
+class Solution(object):
     def maxValue(self, nums, k):
         """
         :type nums: List[int]
