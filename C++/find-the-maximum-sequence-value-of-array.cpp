@@ -49,7 +49,7 @@ public:
             }
         }
         for (int result = MAX_MASK; result >= 0; --result) {
-            for (int l = MAX_MASK; l >= 1; --l) {
+            for (int l = 1; l <= MAX_MASK; ++l) {
                 if (left[l] < right[result ^ l]) {
                     return result;
                 }
