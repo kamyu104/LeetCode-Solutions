@@ -1,7 +1,7 @@
 # Time:  O(n + w * l)
 # Space: O(n + w * l)
 
-# rolling hash, two pointers, sliding window, dp
+# rolling hash, hash table, two pointers, sliding window, dp
 class Solution(object):
     def minValidStrings(self, words, target):
         """
