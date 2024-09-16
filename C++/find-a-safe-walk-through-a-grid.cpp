@@ -1,7 +1,7 @@
 // Time:  O(m * n)
 // Space: O(m * n)
 
-// 0-1 bfs solution
+// 0-1 bfs, deque
 class Solution {
 public:
     bool findSafeWalk(vector<vector<int>>& grid, int health) {
