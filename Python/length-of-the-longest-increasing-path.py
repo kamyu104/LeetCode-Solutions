@@ -4,7 +4,7 @@
 import bisect
 
 
-# binary search, longest increasing subsequence, lis
+# sort, binary search, longest increasing subsequence, lis
 class Solution(object):
     def maxPathLength(self, coordinates, k):
         """
