@@ -1,7 +1,7 @@
 # Time:  O(n * r + r^2)
 # Space: O(r)
 
-# prefix sum, dp
+# bitmasks, prefix sum, dp
 class Solution(object):
     def maxValue(self, nums, k):
         """
