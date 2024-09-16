@@ -133,3 +133,59 @@ public:
         return dp.back();
     }
 };
+
+// Time:  O(w * (l + n))
+// Space: O(l + n)
+// kmp, dp
+class Solution3 {
+public:
+    int minValidStrings(vector<string>& words, string target) {
+        const auto& getPrefix = [](const string& pattern) {
+            vector<int> prefix(size(pattern), -1);
+            int j = -1;
+            for (int i = 1; i < size(pattern); ++i) {
+                while (j != -1 && pattern[j + 1] != pattern[i]) {
+                    j = prefix[j];
+                }
+                if (pattern[j + 1] == pattern[i]) {
+                    ++j;
+                }
+                prefix[i] = j;
+            }
+            return prefix;
+        };
+
+        const auto& KMP = [&](const string& text, const string& pattern, const auto& update) {
+            const vector<int> prefix = getPrefix(pattern);
+            int j = -1;
+            for (int i = 0; i < size(text); ++i) {
+                while (j > -1 && pattern[j + 1] != text[i]) {
+                    j = prefix[j];
+                }
+                if (pattern[j + 1] == text[i]) {
+                    ++j;
+                }
+                update(i, j);
+                if (j == size(pattern) - 1) {
+                    j = prefix[j];
+                }
+            }
+        };
+    
+        vector<int> lookup(size(target));
+        const auto& update = [&](int i, int j) {
+            lookup[i] = max(lookup[i], j + 1);
+        };
+        for (const auto& w : words) {
+            KMP(target, w, update);
+        }
+        vector<int> dp(size(target) + 1);
+        for (int i = 0; i < size(target); ++i) {
+            if (!lookup[i]) {
+                return -1;
+            }
+            dp[i + 1] = dp[(i - lookup[i]) + 1] + 1;
+        }
+        return dp.back();
+    }
+};
