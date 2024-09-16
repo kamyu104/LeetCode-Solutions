@@ -99,7 +99,7 @@ class AhoTrie(object):
         # return result
 
 
-# ac autometa trie
+# ac automata trie
 class Solution2(object):
     def minValidStrings(self, words, target):
         """
