@@ -133,3 +133,128 @@ public:
         return dp.back();
     }
 };
+
+// Time:  O(w * (l + n))
+// Space: O(l + n)
+// kmp, dp
+class Solution3 {
+public:
+    int minValidStrings(vector<string>& words, string target) {
+        const auto& getPrefix = [](const string& pattern) {
+            vector<int> prefix(size(pattern), -1);
+            int j = -1;
+            for (int i = 1; i < size(pattern); ++i) {
+                while (j != -1 && pattern[j + 1] != pattern[i]) {
+                    j = prefix[j];
+                }
+                if (pattern[j + 1] == pattern[i]) {
+                    ++j;
+                }
+                prefix[i] = j;
+            }
+            return prefix;
+        };
+
+        const auto& KMP = [&](const string& text, const string& pattern, const auto& update) {
+            const vector<int> prefix = getPrefix(pattern);
+            int j = -1;
+            for (int i = 0; i < size(text); ++i) {
+                while (j > -1 && pattern[j + 1] != text[i]) {
+                    j = prefix[j];
+                }
+                if (pattern[j + 1] == text[i]) {
+                    ++j;
+                }
+                update(i, j);
+                if (j == size(pattern) - 1) {
+                    j = prefix[j];
+                }
+            }
+        };
+    
+        vector<int> lookup(size(target));
+        const auto& update = [&](int i, int j) {
+            lookup[i] = max(lookup[i], j + 1);
+        };
+
+        for (const auto& w : words) {
+            KMP(target, w, update);
+        }
+        vector<int> dp(size(target) + 1);
+        for (int i = 0; i < size(target); ++i) {
+            if (!lookup[i]) {
+                return -1;
+            }
+            dp[i + 1] = dp[(i - lookup[i]) + 1] + 1;
+        }
+        return dp.back();
+    }
+};
+
+// Time:  O(w * l + n * l)
+// Space: O(n + t), t is the total size of trie
+// trie, dp
+class Solution4 {
+private:
+    class Trie {
+    public:
+        Trie() {
+             new_node();
+         }
+
+        void add(const string& w) {
+            int curr = 0;
+            for (const auto& c : w) {
+                const int x = c - 'a';
+                if (nodes_[curr][x] == -1) {
+                    nodes_[curr][x] = new_node();
+                }
+                curr = nodes_[curr][x];
+            }
+        }
+
+        int query(const string& target, int i) {
+            int curr = 0;
+            int l = 0;
+            for (; l < size(target) - i; ++l) {
+                const int x = target[i + l] - 'a';
+                if (nodes_[curr][x] == -1) {
+                    break;
+                }
+                curr = nodes_[curr][x];
+            }
+            return l;
+        }
+
+    private:
+        int new_node() {
+            nodes_.emplace_back(26, -1);
+            return size(nodes_) - 1;
+        }
+
+        vector<vector<int>> nodes_;
+    };
+
+public:
+    int minValidStrings(vector<string>& words, string target) {
+        Trie trie;
+        for (const auto& w : words) {
+            trie.add(w);
+        }
+        vector<int> lookup(size(target));
+        for (int i = 0; i < size(target); ++i) {
+            const int l = trie.query(target, i);
+            for (int nl = 1; nl <= l; ++nl) {
+                lookup[i + nl - 1] = max(lookup[i + nl - 1], nl);
+            }
+        }
+        vector<int> dp(size(target) + 1);
+        for (int i = 0; i < size(target); ++i) {
+            if (!lookup[i]) {
+                return -1;
+            }
+            dp[i + 1] = dp[(i - lookup[i]) + 1] + 1;
+        }
+        return dp.back();
+    }
+};
