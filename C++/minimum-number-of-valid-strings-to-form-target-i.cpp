@@ -34,7 +34,7 @@ public:
 };
 
 // Time:  O(n + w * l)
-// Space: O(t), t is the total size of ac automata trie
+// Space: O(n + t), t is the total size of ac automata trie
 struct AhoNode {
     vector<AhoNode *> children;
     AhoNode *suffix;
