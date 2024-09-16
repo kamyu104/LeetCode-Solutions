@@ -32,7 +32,6 @@ class Solution(object):
         return dp[-1]
 
 
-
 # Time:  O(n + w * l)
 # Space: O(n + t), t is the total size of ac automata trie
 import collections
