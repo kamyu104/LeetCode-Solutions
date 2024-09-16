@@ -1,5 +1,5 @@
 // Time:  O(n + w * l)
-// Space: O(w * l)
+// Space: O(n + w * l)
 
 // rolling hash, prefix sum, hash table, greedy
 class Solution {
