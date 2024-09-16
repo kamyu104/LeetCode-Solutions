@@ -1,7 +1,7 @@
 // Time:  O(n + w * l)
 // Space: O(n + w * l)
 
-// rolling hash, two pointers, sliding window, dp
+// rolling hash, hash table, two pointers, sliding window, dp
 class Solution {
 public:
     int minValidStrings(vector<string>& words, string target) {
@@ -117,7 +117,7 @@ private:
     AhoNode *node_;
 };
 
-// ac autometa trie
+// ac automata trie
 class Solution2 {
 public:
     int minValidStrings(vector<string>& words, string target) {
