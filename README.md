@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3283%20%2F%203283-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3292%20%2F%203292-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -93,6 +93,7 @@
 3199 | [Count Triplets with Even XOR Set Bits I](https://leetcode.com/problems/count-triplets-with-even-xor-set-bits-i/) | [C++](./C++/count-triplets-with-even-xor-set-bits-i.cpp) [Python](./Python/count-triplets-with-even-xor-set-bits-i.py) | _O(nlogr)_ | _O(1)_ | Easy | 🔒 | Brute Force, Bit Manipulation, Parity
 3215 | [Count Triplets with Even XOR Set Bits II](https://leetcode.com/problems/count-triplets-with-even-xor-set-bits-ii/) | [C++](./C++/count-triplets-with-even-xor-set-bits-ii.cpp) [Python](./Python/count-triplets-with-even-xor-set-bits-ii.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 | Bit Manipulation, Parity
 3226 | [Number of Bit Changes to Make Two Integers Equal](https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/) | [C++](./C++/number-of-bit-changes-to-make-two-integers-equal.cpp) [Python](./Python/number-of-bit-changes-to-make-two-integers-equal.py) | _O(logn)_ | _O(1)_ | Easy | | Bit Manipulation
+3289 | [The Two Sneaky Numbers of Digitville](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/) | [C++](./C++/the-two-sneaky-numbers-of-digitville.cpp) [Python](./Python/the-two-sneaky-numbers-of-digitville.py) | _O(n)_ | _O(1)_ | Easy | | Bit Manipulation
 
 <br/>
 <div align="right">
@@ -221,6 +222,7 @@
 3195 | [Find the Minimum Area to Cover All Ones I](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/) | [C++](./C++/find-the-minimum-area-to-cover-all-ones-i.cpp) [Python](./Python/find-the-minimum-area-to-cover-all-ones-i.py) | _O(n * m)_ | _O(1)_ | Medium | | Array
 3224 | [Minimum Array Changes to Make Differences Equal](https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/) | [C++](./C++/minimum-array-changes-to-make-differences-equal.cpp) [Python](./Python/minimum-array-changes-to-make-differences-equal.py) | _O(n + k)_   | _O(k)_        | Medium         | | Prefix Sum, Difference Array
 3279 | [Maximum Total Area Occupied by Pistons](https://leetcode.com/problems/maximum-total-area-occupied-by-pistons/) | [C++](./C++/maximum-total-area-occupied-by-pistons.cpp) [Python](./Python/maximum-total-area-occupied-by-pistons.py) | _O(h)_ | _O(h)_ | Hard | 🔒 | Line Sweep, Difference Array
+3285 | [Find Indices of Stable Mountains](https://leetcode.com/problems/find-indices-of-stable-mountains/) | [C++](./C++/find-indices-of-stable-mountains.cpp) [Python](./Python/find-indices-of-stable-mountains.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -662,6 +664,7 @@
 3270 | [Find the Key of the Numbers](https://leetcode.com/problems/find-the-key-of-the-numbers/) | [C++](./C++/find-the-key-of-the-numbers.cpp) [Python](./Python/find-the-key-of-the-numbers.py) | _O(d)_ | _O(1)_ | Easy | | Math |
 3272 | [Find the Count of Good Integers](https://leetcode.com/problems/find-the-count-of-good-integers/) | [C++](./C++/find-the-count-of-good-integers.cpp) [Python](./Python/find-the-count-of-good-integers.py) | _O(n + 10 * 10^((n + 1)/2))_ | _O(n + 10 * (10 * nHr(10, n/2)))_ | Hard | | Combinatorics, Freq Table |
 3274 | [Check if Two Chessboard Squares Have the Same Color](https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/) | [C++](./C++/check-if-two-chessboard-squares-have-the-same-color.cpp) [Python](./Python/check-if-two-chessboard-squares-have-the-same-color.py) | _O(1)_ | _O(1)_ | Easy | | Math, Parity |
+3284 | [Sum of Consecutive Subarrays](https://leetcode.com/problems/sum-of-consecutive-subarrays/) | [C++](./C++/sum-of-consecutive-subarrays.cpp) [Python](./Python/sum-of-consecutive-subarrays.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Combinatorics |
 
 <br/>
 <div align="right">
@@ -842,6 +845,7 @@
 3231 | [Minimum Number of Increasing Subsequence to Be Removed](https://leetcode.com/problems/minimum-number-of-increasing-subsequence-to-be-removed/) | [C++](./C++/minimum-number-of-increasing-subsequence-to-be-removed.cpp) [Python](./Python/minimum-number-of-increasing-subsequence-to-be-removed.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒, variant of [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Binary Search
 3233 | [Find the Count of Numbers Which Are Not Special](https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/) | [C++](./C++/find-the-count-of-numbers-which-are-not-special.cpp) [Python](./Python/find-the-count-of-numbers-which-are-not-special.py) | precompute: _O(sqrt(r))_<br>runtime: _O(logr)_ | _O(sqrt(r))_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Binary Search |
 3281 | [Maximize Score of Numbers in Ranges](https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/) | [C++](./C++/maximize-score-of-numbers-in-ranges.cpp) [Python](./Python/maximize-score-of-numbers-in-ranges.py) | _O(nlogr)_ | _O(1)_ | Medium | | Binary Search, Greedy
+3288 | [Length of the Longest Increasing Path](https://leetcode.com/problems/length-of-the-longest-increasing-path/) | [C++](./C++/length-of-the-longest-increasing-path.cpp) [Python](./Python/length-of-the-longest-increasing-path.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Binary Search, Longest Increasing Subsequence
 
 <br/>
 
@@ -901,6 +905,7 @@
 2814 | [Minimum Time Takes to Reach Destination Without Drowning](https://leetcode.com/problems/minimum-time-takes-to-reach-destination-without-drowning/)  | [C++](./C++/minimum-time-takes-to-reach-destination-without-drowning.cpp) [Python](./Python/minimum-time-takes-to-reach-destination-without-drowning.py) | _O(m * n)_ | _O(m * n)_| Hard           | 🔒 | Simulation, BFS | 
 2852 | [Sum of Remoteness of All Cells](https://leetcode.com/problems/sum-of-remoteness-of-all-cells/)| [C++](./C++/sum-of-remoteness-of-all-cells.cpp) [Python](./Python/sum-of-remoteness-of-all-cells.py)| _O(n^2)_ | _O(n^2)_ | Medium | 🔒 | Flood Fill, BFS, Math |
 3157 | [Find the Level of Tree with Minimum Sum](https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/)| [C++](./C++/find-the-level-of-tree-with-minimum-sum.cpp) [Python](./Python/find-the-level-of-tree-with-minimum-sum.py)| _O(n)_ | _O(w)_ | Medium | 🔒 | BFS |
+3286 | [Find a Safe Walk Through a Grid](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/)| [C++](./C++/find-a-safe-walk-through-a-grid.cpp) [Python](./Python/find-a-safe-walk-through-a-grid.py)| _O(m * n)_ | _O(m * n)_ | Medium | variant of [Minimum Obstacle Removal to Reach Corner](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/) | 0-1 BFS, Deque |
 
 <br/>
 <div align="right">
@@ -1097,6 +1102,8 @@
 3269 | [Constructing Two Increasing Arrays](https://leetcode.com/problems/constructing-two-increasing-arrays/) | [C++](./C++/constructing-two-increasing-arrays.cpp) [Python](./Python/constructing-two-increasing-arrays.py) | _O(m * n)_ | _O(min(m, n))_ | Hard | 🔒 | DP
 3277 | [Maximum XOR Score Subarray Queries](https://leetcode.com/problems/maximum-xor-score-subarray-queries/) | [C++](./C++/maximum-xor-score-subarray-queries.cpp) [Python](./Python/maximum-xor-score-subarray-queries.py) | _O(n^2 + q)_ | _O(n^2)_ | Hard | | DP
 3283 | [Maximum Number of Moves to Kill All Pawns](https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/) | [C++](./C++/maximum-number-of-moves-to-kill-all-pawns.cpp) [Python](./Python/maximum-number-of-moves-to-kill-all-pawns.py) | _O(p^2 * 2^p)_ | _O(p * 2^p)_ | Hard | | BFS, Bitmasks, DP
+3287 | [Find the Maximum Sequence Value of Array](https://leetcode.com/problems/find-the-maximum-sequence-value-of-array/) | [C++](./C++/find-the-maximum-sequence-value-of-array.cpp) [Python](./Python/find-the-maximum-sequence-value-of-array.py) | _O(n * r + r^2)_ | _O(r)_ | Hard | | Bitmasks, Prefix Sum, DP
+3290 | [Maximum Multiplication Score](https://leetcode.com/problems/maximum-multiplication-score/) | [C++](./C++/maximum-multiplication-score.cpp) [Python](./Python/maximum-multiplication-score.py) | _O(n)_ | _O(1)_ | Medium | | DP
 
 <br/>
 <div align="right">
@@ -1256,6 +1263,8 @@
 3240 | [Minimum Number of Flips to Make Binary Grid Palindromic II](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-ii/) | [C++](./C++/minimum-number-of-flips-to-make-binary-grid-palindromic-ii.cpp) [Python](./Python/minimum-number-of-flips-to-make-binary-grid-palindromic-ii.py) | _O(m * n)_   | _O(1)_        | Medium         | | Array, Greedy
 3273 | [Minimum Amount of Damage Dealt to Bob](https://leetcode.com/problems/minimum-amount-of-damage-dealt-to-bob/) | [C++](./C++/minimum-amount-of-damage-dealt-to-bob.cpp) [Python](./Python/minimum-amount-of-damage-dealt-to-bob.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Sort, Greedy
 3282 | [Reach End of Array With Max Score](https://leetcode.com/problems/reach-end-of-array-with-max-score/) | [C++](./C++/reach-end-of-array-with-max-score.cpp) [Python](./Python/reach-end-of-array-with-max-score.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3291 | [Minimum Number of Valid Strings to Form Target I](https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/)| [C++](./C++/minimum-number-of-valid-strings-to-form-target-i.cpp) [Python](./Python/minimum-number-of-valid-strings-to-form-target-i.py) | _O(n + w * l)_    | _O(n + w * l)_          | Hard           | | `Rabin-Karp Algorithm`, Rolling Hash, Prefix Sum, Hash Table, Greedy
+3292 | [Minimum Number of Valid Strings to Form Target II](https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/)| [C++](./C++/minimum-number-of-valid-strings-to-form-target-ii.cpp) [Python](./Python/minimum-number-of-valid-strings-to-form-target-ii.py) | _O(n + w * l)_    | _O(n + w * l)_          | Hard           | | `Rabin-Karp Algorithm`, Rolling Hash, Prefix Sum, Hash Table, Greedy
 
 <br/>
 <div align="right">
