@@ -4,7 +4,7 @@
 import collections
 
 
-# 0-1 bfs solution
+# 0-1 bfs, deque
 class Solution(object):
     def findSafeWalk(self, grid, health):
         """
