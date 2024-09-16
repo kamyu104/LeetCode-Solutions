@@ -1104,6 +1104,8 @@
 3283 | [Maximum Number of Moves to Kill All Pawns](https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/) | [C++](./C++/maximum-number-of-moves-to-kill-all-pawns.cpp) [Python](./Python/maximum-number-of-moves-to-kill-all-pawns.py) | _O(p^2 * 2^p)_ | _O(p * 2^p)_ | Hard | | BFS, Bitmasks, DP
 3287 | [Find the Maximum Sequence Value of Array](https://leetcode.com/problems/find-the-maximum-sequence-value-of-array/) | [C++](./C++/find-the-maximum-sequence-value-of-array.cpp) [Python](./Python/find-the-maximum-sequence-value-of-array.py) | _O(n * r + r^2)_ | _O(r)_ | Hard | | Bitmasks, Prefix Sum, DP
 3290 | [Maximum Multiplication Score](https://leetcode.com/problems/maximum-multiplication-score/) | [C++](./C++/maximum-multiplication-score.cpp) [Python](./Python/maximum-multiplication-score.py) | _O(n)_ | _O(1)_ | Medium | | DP
+3291 | [Minimum Number of Valid Strings to Form Target I](https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/)| [C++](./C++/minimum-number-of-valid-strings-to-form-target-i.cpp) [Python](./Python/minimum-number-of-valid-strings-to-form-target-i.py) | _O(n + w * l)_    | _O(n + t)_          | Medium           | | `Rabin-Karp Algorithm`, Rolling Hash, DP, `Aho-Corasick Automata`, Trie
+3292 | [Minimum Number of Valid Strings to Form Target II](https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/)| [C++](./C++/minimum-number-of-valid-strings-to-form-target-ii.cpp) [Python](./Python/minimum-number-of-valid-strings-to-form-target-ii.py) | _O(n + w * l)_    | _O(n + t)_          | Hard           | | `Rabin-Karp Algorithm`, Rolling Hash, DP, `Aho-Corasick Automata`, Trie
 
 <br/>
 <div align="right">
@@ -1263,8 +1265,6 @@
 3240 | [Minimum Number of Flips to Make Binary Grid Palindromic II](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-ii/) | [C++](./C++/minimum-number-of-flips-to-make-binary-grid-palindromic-ii.cpp) [Python](./Python/minimum-number-of-flips-to-make-binary-grid-palindromic-ii.py) | _O(m * n)_   | _O(1)_        | Medium         | | Array, Greedy
 3273 | [Minimum Amount of Damage Dealt to Bob](https://leetcode.com/problems/minimum-amount-of-damage-dealt-to-bob/) | [C++](./C++/minimum-amount-of-damage-dealt-to-bob.cpp) [Python](./Python/minimum-amount-of-damage-dealt-to-bob.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Sort, Greedy
 3282 | [Reach End of Array With Max Score](https://leetcode.com/problems/reach-end-of-array-with-max-score/) | [C++](./C++/reach-end-of-array-with-max-score.cpp) [Python](./Python/reach-end-of-array-with-max-score.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
-3291 | [Minimum Number of Valid Strings to Form Target I](https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/)| [C++](./C++/minimum-number-of-valid-strings-to-form-target-i.cpp) [Python](./Python/minimum-number-of-valid-strings-to-form-target-i.py) | _O(n + w * l)_    | _O(n + w * l)_          | Medium           | | `Rabin-Karp Algorithm`, Rolling Hash, Prefix Sum, Hash Table, Greedy
-3292 | [Minimum Number of Valid Strings to Form Target II](https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/)| [C++](./C++/minimum-number-of-valid-strings-to-form-target-ii.cpp) [Python](./Python/minimum-number-of-valid-strings-to-form-target-ii.py) | _O(n + w * l)_    | _O(n + w * l)_          | Hard           | | `Rabin-Karp Algorithm`, Rolling Hash, Prefix Sum, Hash Table, Greedy
 
 <br/>
 <div align="right">
