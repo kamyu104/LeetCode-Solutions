@@ -22,7 +22,7 @@ class Solution(object):
             MOD, P = 10**9+7, 113
             h = 0
             pw = pow(P, l-1, MOD)
-            for i in range(len(s)):
+            for i in xrange(len(s)):
                 h = (h*P+(ord(s[i])-ord('a')))%MOD
                 if i < l-1:
                     continue
@@ -54,7 +54,7 @@ class Solution2(object):
         :rtype: int
         """
         result = 0
-        for k in range(2):
+        for k in xrange(2):
             for i in xrange(k, len(initial)):
                 curr = 0
                 for j in xrange(min(len(initial)-i, len(target))):
