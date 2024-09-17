@@ -1,3 +1,21 @@
+computePriceDifference:{[t]
+    // Calculate the midprice
+    t[`midprice]:(t[`bid] + t[`ask]) % 2;
+
+    // Calculate the price difference based on side
+    t[`priceDifference]: (t[`side]="Buy") * (t[`price] - t[`midprice]) +
+                         (t[`side]="Sell") * (t[`midprice] - t[`price]);
+
+    // Add the marketable flag
+    t[`marketable]: ((t[`side]="Buy") & (t[`price] >= t[`ask])) |
+                    ((t[`side]="Sell") & (t[`price] <= t[`bid]));
+
+    t
+}
+
+
+
+
 To address your problem, we'll need to analyze the relationship between the predicted top city, its associated value in `mycol1`, whether `mycol2` is non-NaN, and the hit ratio. Below are three statistical methods to quantify this relationship, along with Python implementations. We'll proceed step by step.
 
 ### **Step 1: Data Preparation**
