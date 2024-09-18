@@ -1,3 +1,101 @@
+**Calculating Marketability with Simple Q Code in KDB+**
+
+Given a table with the following four columns:
+
+- `time`: Timestamp of the order
+- `side`: `'Buy'` or `'Sell'` indicating the order side
+- `orderPrice`: The price of the order
+- `bestBid`: Best bid price at time `T`
+- `bestAsk`: Best ask price at time `T`
+
+You can calculate the marketability of each order using simple Q code.
+
+---
+
+**1. Sample Data Table**
+
+Assuming your table is named `orders`, here's sample data:
+
+```q
+orders:([] 
+  time:      (2023.10.01D12:00:00.000; 2023.10.01D12:00:01.000; 2023.10.01D12:00:02.000);
+  side:      `Buy`Sell`Buy;
+  orderPrice:200.00 199.98 200.03;
+  bestBid:   199.98 199.98 199.98;
+  bestAsk:   200.02 200.02 200.02
+)
+```
+
+---
+
+**2. Simple Q Code to Calculate Marketability**
+
+**Method 1: Using a Function**
+
+```q
+// Define a function to check marketability
+checkMarketability:{[side; orderPrice; bestBid; bestAsk]
+  $[side=`Buy; 
+      orderPrice >= bestAsk;       // Buy order is marketable if price ≥ best ask
+    side=`Sell; 
+      orderPrice <= bestBid;       // Sell order is marketable if price ≤ best bid
+    0b                             // Otherwise, not marketable
+  ]
+}
+
+// Apply the function to each row
+orders: update marketable: checkMarketability[side; orderPrice; bestBid; bestAsk] from orders
+```
+
+**Method 2: Using Vectorized Operations**
+
+```q
+// Calculate marketability directly
+orders: update marketable: ((side=`Buy) & (orderPrice >= bestAsk)) 
+                         | ((side=`Sell) & (orderPrice <= bestBid)) 
+                         from orders
+```
+
+---
+
+**3. Explanation**
+
+- **For Buy Orders:**
+  - An order is **marketable** if `orderPrice ≥ bestAsk`.
+- **For Sell Orders:**
+  - An order is **marketable** if `orderPrice ≤ bestBid`.
+- The `marketable` column is a boolean (`1b` for true, `0b` for false).
+
+---
+
+**4. Resulting Table**
+
+After applying the code, the `orders` table will have an additional `marketable` column:
+
+```
+time                          side  orderPrice  bestBid  bestAsk  marketable
+----------------------------------------------------------------------------
+2023.10.01D12:00:00.000000000 Buy   200         199.98   200.02   0b
+2023.10.01D12:00:01.000000000 Sell  199.98      199.98   200.02   1b
+2023.10.01D12:00:02.000000000 Buy   200.03      199.98   200.02   1b
+```
+
+---
+
+**5. Notes**
+
+- **Efficiency:** Method 2 is more efficient as it uses vectorized operations.
+- **Flexibility:** You can extend the logic to include additional conditions or parameters if needed.
+- **Assumptions:** This code assumes that all necessary columns are present and that `side` contains only `'Buy'` or `'Sell'`.
+
+---
+
+**6. Conclusion**
+
+Using the simple Q code provided, you can calculate the marketability of orders in your KDB+ table based on the order side and prices. This method is efficient and easily integrates into high-frequency trading systems where quick computations are essential.
+
+
+
 computePriceDifference:{[t]
     // Calculate the midprice
     t[`midprice]:(t[`bid] + t[`ask]) % 2;
