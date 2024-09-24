@@ -1,7 +1,7 @@
 // Time:  O(n + 26)
 // Space: O(26)
 
-// two pointers, sliding window
+// two pointers, sliding window, freq table
 class Solution {
 public:
     long long validSubstringCount(string word1, string word2) {
