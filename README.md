@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3292%20%2F%203292-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3298%20%2F%203298-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -328,6 +328,7 @@
 3063 | [Linked List Frequency](https://leetcode.com/problems/linked-list-frequency/) | [C++](./C++/linked-list-frequency.cpp) [Python](./Python/linked-list-frequency.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Linked List
 3217 | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | [C++](./C++/delete-nodes-from-linked-list-present-in-array.cpp) [Python](./Python/delete-nodes-from-linked-list-present-in-array.py) | _O(n)_ | _O(m)_ | Medium | | Hash Table, Linked List
 3263 | [Convert Doubly Linked List to Array I](https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/) | [C++](./C++/convert-doubly-linked-list-to-array-i.cpp) [Python](./Python/convert-doubly-linked-list-to-array-i.py) | _O(n)_ | _O(1)_ | Easy | 🔒 | Linked List
+3294 | [Convert Doubly Linked List to Array II](https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/) | [C++](./C++/convert-doubly-linked-list-to-array-ii.cpp) [Python](./Python/convert-doubly-linked-list-to-array-ii.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Linked List
 
 <br/>
 <div align="right">
@@ -534,6 +535,7 @@
 3237 | [Alt and Tab Simulation](https://leetcode.com/problems/alt-and-tab-simulation/) | [C++](./C++/alt-and-tab-simulation.cpp) [Python](./Python/alt-and-tab-simulation.py) | _O(n)_  | _O(n)_ | Medium | 🔒 | Hash Table
 3238 | [Find the Number of Winning Players](https://leetcode.com/problems/find-the-number-of-winning-players/) | [C++](./C++/find-the-number-of-winning-players.cpp) [Python](./Python/find-the-number-of-winning-players.py) | _O(p)_  | _O(min(n * c, p)_ | Easy | | Freq Table
 3245 | [Alternating Groups III](https://leetcode.com/problems/alternating-groups-iii/) | [C++](./C++/alternating-groups-iii.cpp) [Python](./Python/alternating-groups-iii.py) | _O(nlogn + qlogn)_ | _O(n)_ | Hard | | BST, Sorted List, Freq Table, BIT, Fenwick Tree
+3295 | [Report Spam Message](https://leetcode.com/problems/report-spam-message/) | [C++](./C++/report-spam-message.cpp) [Python](./Python/report-spam-message.py) | _O(n + m)_ | _O(m)_ | Medium | | Hash Table
 
 <br/>
 <div align="right">
@@ -789,6 +791,8 @@
 3261 | [Count Substrings That Satisfy K-Constraint II](https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/)| [C++](./C++/count-substrings-that-satisfy-k-constraint-ii.cpp) [Python](./Python/count-substrings-that-satisfy-k-constraint-ii.py) | _O(n)_    | _O(n)_          | Hard           |  | Two Pointers, Sliding Window, Prefix Sum, Hash Table
 3264 | [Final Array State After K Multiplication Operations I](https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-i/)| [C++](./C++/final-array-state-after-k-multiplication-operations-i.cpp) [Python](./Python/final-array-state-after-k-multiplication-operations-i.py) | _O(nlogn)_    | _O(n)_          | Easy           |  | Sort, Two Pointers, Sliding Window, Fast Exponentiation, Heap, Binary Search, Simulation
 3266 | [Final Array State After K Multiplication Operations II](https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-ii/)| [C++](./C++/final-array-state-after-k-multiplication-operations-ii.cpp) [Python](./Python/final-array-state-after-k-multiplication-operations-ii.py) | _O(nlogn)_    | _O(n)_          | Hard           |  | Sort, Two Pointers, Sliding Window, Fast Exponentiation, Heap, Binary Search
+3297 | [Count Substrings That Can Be Rearranged to Contain a String I](https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/)| [C++](./C++/count-substrings-that-can-be-rearranged-to-contain-a-string-i.cpp) [Python](./Python/count-substrings-that-can-be-rearranged-to-contain-a-string-i.py) | _O(n + 26)_    | _O(26)_          | Medium           |  | Two Pointers, Sliding Window
+3298 | [Count Substrings That Can Be Rearranged to Contain a String II](https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/)| [C++](./C++/count-substrings-that-can-be-rearranged-to-contain-a-string-ii.cpp) [Python](./Python/count-substrings-that-can-be-rearranged-to-contain-a-string-ii.py) | _O(n + 26)_    | _O(26)_          | Hard           |  | Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -846,6 +850,7 @@
 3233 | [Find the Count of Numbers Which Are Not Special](https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/) | [C++](./C++/find-the-count-of-numbers-which-are-not-special.cpp) [Python](./Python/find-the-count-of-numbers-which-are-not-special.py) | precompute: _O(sqrt(r))_<br>runtime: _O(logr)_ | _O(sqrt(r))_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Binary Search |
 3281 | [Maximize Score of Numbers in Ranges](https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/) | [C++](./C++/maximize-score-of-numbers-in-ranges.cpp) [Python](./Python/maximize-score-of-numbers-in-ranges.py) | _O(nlogr)_ | _O(1)_ | Medium | | Binary Search, Greedy
 3288 | [Length of the Longest Increasing Path](https://leetcode.com/problems/length-of-the-longest-increasing-path/) | [C++](./C++/length-of-the-longest-increasing-path.cpp) [Python](./Python/length-of-the-longest-increasing-path.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Binary Search, Longest Increasing Subsequence
+3296 | [Minimum Number of Seconds to Make Mountain Height Zero](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) | [C++](./C++/minimum-number-of-seconds-to-make-mountain-height-zero.cpp) [Python](./Python/minimum-number-of-seconds-to-make-mountain-height-zero.py) | _O(nlogr)_ | _O(1)_ | Medium | | Binary Search, Quadratic Equation, Heap
 
 <br/>
 
@@ -1608,6 +1613,7 @@
 3262 | [Find Overlapping Shifts](https://leetcode.com/problems/find-overlapping-shifts/) | [MySQL](./MySQL/find-overlapping-shifts.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Line Sweep |
 3268 | [Find Overlapping Shifts II](https://leetcode.com/problems/find-overlapping-shifts-ii/) | [MySQL](./MySQL/find-overlapping-shifts-ii.sql) | _O(n^2)_ | _O(n^2)_       | Hard           |🔒| Line Sweep, Window Function, Combinatorics |
 3278 | [Find Candidates for Data Scientist Position II](https://leetcode.com/problems/find-candidates-for-data-scientist-position-ii/) | [MySQL](./MySQL/find-candidates-for-data-scientist-position-ii.sql) | _O(p * s * n + p * nlogn + plogp)_ | _O(p * s * n)_       | Medium           |🔒| Window Function |
+3293 | [Calculate Product Final Price](https://leetcode.com/problems/calculate-product-final-price/) | [MySQL](./MySQL/calculate-product-final-price.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
