@@ -16,9 +16,9 @@ class Solution(object):
             cnt = collections.defaultdict(int)
             prefix = collections.defaultdict(int)
             for x in nums:
-                l = (cnt[x-d]+1)%MOD
-                cnt[x] = (cnt[x]+l)%MOD
-                total = (prefix[x-d]+(l*x))%MOD
+                c = (cnt[x-d]+1)%MOD
+                cnt[x] = (cnt[x]+c)%MOD
+                total = (prefix[x-d]+(c*x))%MOD
                 prefix[x] = (prefix[x]+total)%MOD
                 result = (result+total)%MOD
             return result
