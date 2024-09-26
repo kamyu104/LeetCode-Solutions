@@ -13,7 +13,7 @@ public:
             for (const auto& x : nums) {
                 const int64_t c = (cnt[x - d] + 1) % MOD;
                 cnt[x] = (cnt[x] + c) % MOD;
-                const int total = (prefix[x - d] + (c * x) % MOD) % MOD;
+                const int total = (prefix[x - d] + (x * c) % MOD) % MOD;
                 prefix[x] = (prefix[x] + total) % MOD;
                 result = (result + total) % MOD;
             }
