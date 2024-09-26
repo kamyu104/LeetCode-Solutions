@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3298%20%2F%203298-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3299%20%2F%203299-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -667,6 +667,7 @@
 3272 | [Find the Count of Good Integers](https://leetcode.com/problems/find-the-count-of-good-integers/) | [C++](./C++/find-the-count-of-good-integers.cpp) [Python](./Python/find-the-count-of-good-integers.py) | _O(n + 10 * 10^((n + 1)/2))_ | _O(n + 10 * (10 * nHr(10, n/2)))_ | Hard | | Combinatorics, Freq Table |
 3274 | [Check if Two Chessboard Squares Have the Same Color](https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/) | [C++](./C++/check-if-two-chessboard-squares-have-the-same-color.cpp) [Python](./Python/check-if-two-chessboard-squares-have-the-same-color.py) | _O(1)_ | _O(1)_ | Easy | | Math, Parity |
 3284 | [Sum of Consecutive Subarrays](https://leetcode.com/problems/sum-of-consecutive-subarrays/) | [C++](./C++/sum-of-consecutive-subarrays.cpp) [Python](./Python/sum-of-consecutive-subarrays.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Combinatorics |
+3299 | [Sum of Consecutive Subsequences](https://leetcode.com/problems/sum-of-consecutive-subsequences/) | [C++](./C++/sum-of-consecutive-subsequences.cpp) [Python](./Python/sum-of-consecutive-subsequences.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Combinatorics, Prefix Sum, DP |
 
 <br/>
 <div align="right">
