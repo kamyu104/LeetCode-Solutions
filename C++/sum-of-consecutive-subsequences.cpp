@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// combinatorics, prefix sum, dp
+// combinatorics, prefix sum, freq table, dp
 class Solution {
 public:
     int getSum(vector<int>& nums) {
@@ -9,11 +9,11 @@ public:
 
         const auto& count = [&](int d) {
             int result = 0;
-            unordered_map<int, int> lookup, prefix;
+            unordered_map<int, int> cnt, prefix;
             for (const auto& x : nums) {
-                const int64_t l = (lookup[x - d] + 1) % MOD;
-                lookup[x] = (lookup[x] + l) % MOD;
-                const int total = (prefix[x - d] + (l * x) % MOD) % MOD;
+                const int64_t c = (cnt[x - d] + 1) % MOD;
+                cnt[x] = (cnt[x] + c) % MOD;
+                const int total = (prefix[x - d] + (c * x) % MOD) % MOD;
                 prefix[x] = (prefix[x] + total) % MOD;
                 result = (result + total) % MOD;
             }
