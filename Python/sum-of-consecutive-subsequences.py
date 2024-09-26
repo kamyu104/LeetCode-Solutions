@@ -18,7 +18,7 @@ class Solution(object):
             for x in nums:
                 c = (cnt[x-d]+1)%MOD
                 cnt[x] = (cnt[x]+c)%MOD
-                total = (prefix[x-d]+(c*x))%MOD
+                total = (prefix[x-d]+(x*c))%MOD
                 prefix[x] = (prefix[x]+total)%MOD
                 result = (result+total)%MOD
             return result
