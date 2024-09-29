@@ -1,7 +1,7 @@
 # Time:  O(1)
 # Space: O(1)
 
-# math
+# bitmasks
 class Solution(object):
     def kthCharacter(self, k):
         """
