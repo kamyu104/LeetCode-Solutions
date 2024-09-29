@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// two pointers, sliding window
+// two pointers, sliding window, freq table
 class Solution {
 public:
     long long countOfSubstrings(string word, int k) {
@@ -48,7 +48,7 @@ public:
 
 // Time:  O(n)
 // Space: O(1)
-// two pointers, sliding window
+// two pointers, sliding window, freq table
 class Solution2 {
 public:
     long long countOfSubstrings(string word, int k) {
