@@ -1,7 +1,7 @@
 // Time:  O(n + m)
 // Space: O(n + m)
 
-// z function
+// z-function
 class Solution {
 public:
     int minStartingIndex(string s, string pattern) {
