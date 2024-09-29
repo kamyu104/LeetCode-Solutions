@@ -1,4 +1,4 @@
-// Time:  O(n)
+// Time:  O(logr) = O(1)
 // Space: O(1)
 
 // bitmasks
