@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3299%20%2F%203299-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3308%20%2F%203308-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -94,6 +94,8 @@
 3215 | [Count Triplets with Even XOR Set Bits II](https://leetcode.com/problems/count-triplets-with-even-xor-set-bits-ii/) | [C++](./C++/count-triplets-with-even-xor-set-bits-ii.cpp) [Python](./Python/count-triplets-with-even-xor-set-bits-ii.py) | _O(nlogr)_ | _O(1)_ | Medium | 🔒 | Bit Manipulation, Parity
 3226 | [Number of Bit Changes to Make Two Integers Equal](https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/) | [C++](./C++/number-of-bit-changes-to-make-two-integers-equal.cpp) [Python](./Python/number-of-bit-changes-to-make-two-integers-equal.py) | _O(logn)_ | _O(1)_ | Easy | | Bit Manipulation
 3289 | [The Two Sneaky Numbers of Digitville](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/) | [C++](./C++/the-two-sneaky-numbers-of-digitville.cpp) [Python](./Python/the-two-sneaky-numbers-of-digitville.py) | _O(n)_ | _O(1)_ | Easy | | Bit Manipulation
+3304 | [Find the K-th Character in String Game I](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/) | [C++](./C++/find-the-k-th-character-in-string-game-i.cpp) [Python](./Python/find-the-k-th-character-in-string-game-i.py) | _O(n)_ | _O(1)_ | Easy | | Bitmasks
+3307| [Find the K-th Character in String Game II](https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/) | [C++](./C++/find-the-k-th-character-in-string-game-ii.cpp) [Python](./Python/find-the-k-th-character-in-string-game-ii.py) | _O(1)_ | _O(1)_ | Hard | | Bitmasks
 
 <br/>
 <div align="right">
@@ -223,6 +225,7 @@
 3224 | [Minimum Array Changes to Make Differences Equal](https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/) | [C++](./C++/minimum-array-changes-to-make-differences-equal.cpp) [Python](./Python/minimum-array-changes-to-make-differences-equal.py) | _O(n + k)_   | _O(k)_        | Medium         | | Prefix Sum, Difference Array
 3279 | [Maximum Total Area Occupied by Pistons](https://leetcode.com/problems/maximum-total-area-occupied-by-pistons/) | [C++](./C++/maximum-total-area-occupied-by-pistons.cpp) [Python](./Python/maximum-total-area-occupied-by-pistons.py) | _O(h)_ | _O(h)_ | Hard | 🔒 | Line Sweep, Difference Array
 3285 | [Find Indices of Stable Mountains](https://leetcode.com/problems/find-indices-of-stable-mountains/) | [C++](./C++/find-indices-of-stable-mountains.cpp) [Python](./Python/find-indices-of-stable-mountains.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3300 | [Minimum Element After Replacement With Digit Sum](https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/) | [C++](./C++/minimum-element-after-replacement-with-digit-sum.cpp) [Python](./Python/minimum-element-after-replacement-with-digit-sum.py) | _O(nlogr)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -305,6 +308,7 @@
 3210 | [Find the Encrypted String](https://leetcode.com/problems/find-the-encrypted-string/) | [C++](./C++/find-the-encrypted-string.cpp) [Python](./Python/find-the-encrypted-string.py) | _O(n)_ | _O(1)_ | Medium | | String
 3271 | [Hash Divided String](https://leetcode.com/problems/hash-divided-string/) | [C++](./C++/hash-divided-string.cpp) [Python](./Python/hash-divided-string.py) | _O(n)_ | _O(1)_ | Medium | | String
 3280 | [Convert Date to Binary](https://leetcode.com/problems/convert-date-to-binary/) | [C++](./C++/convert-date-to-binary.cpp) [Python](./Python/convert-date-to-binary.py) | _O(1)_ | _O(1)_ | Easy | | String
+3303 | [Find the Occurrence of First Almost Equal Substring](https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/) | [C++](./C++/find-the-occurrence-of-first-almost-equal-substring.cpp) [Python](./Python/find-the-occurrence-of-first-almost-equal-substring.py) | _O(n + m)_   | _O(n + m)_        | Hard         | | `Z-Function`
 
 <br/>
 <div align="right">
@@ -794,6 +798,8 @@
 3266 | [Final Array State After K Multiplication Operations II](https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-ii/)| [C++](./C++/final-array-state-after-k-multiplication-operations-ii.cpp) [Python](./Python/final-array-state-after-k-multiplication-operations-ii.py) | _O(nlogn)_    | _O(n)_          | Hard           |  | Sort, Two Pointers, Sliding Window, Fast Exponentiation, Heap, Binary Search
 3297 | [Count Substrings That Can Be Rearranged to Contain a String I](https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/)| [C++](./C++/count-substrings-that-can-be-rearranged-to-contain-a-string-i.cpp) [Python](./Python/count-substrings-that-can-be-rearranged-to-contain-a-string-i.py) | _O(n + 26)_    | _O(26)_          | Medium           |  | Two Pointers, Sliding Window, Freq Table
 3298 | [Count Substrings That Can Be Rearranged to Contain a String II](https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/)| [C++](./C++/count-substrings-that-can-be-rearranged-to-contain-a-string-ii.cpp) [Python](./Python/count-substrings-that-can-be-rearranged-to-contain-a-string-ii.py) | _O(n + 26)_    | _O(26)_          | Hard           |  | Two Pointers, Sliding Window, Freq Table
+3305 | [Count of Substrings Containing Every Vowel and K Consonants I](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/)| [C++](./C++/count-of-substrings-containing-every-vowel-and-k-consonants-i.cpp) [Python](./Python/count-of-substrings-containing-every-vowel-and-k-consonants-i.py) | _O(n)_    | _O(1)_          | Medium           |  | Two Pointers, Sliding Window, Freq Table
+3306 | [Count of Substrings Containing Every Vowel and K Consonants II](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/)| [C++](./C++/count-of-substrings-containing-every-vowel-and-k-consonants-ii.cpp) [Python](./Python/count-of-substrings-containing-every-vowel-and-k-consonants-ii.py) | _O(n)_    | _O(1)_          | Medium           |  | Two Pointers, Sliding Window, Freq Table
 
 <br/>
 <div align="right">
@@ -1271,6 +1277,8 @@
 3240 | [Minimum Number of Flips to Make Binary Grid Palindromic II](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-ii/) | [C++](./C++/minimum-number-of-flips-to-make-binary-grid-palindromic-ii.cpp) [Python](./Python/minimum-number-of-flips-to-make-binary-grid-palindromic-ii.py) | _O(m * n)_   | _O(1)_        | Medium         | | Array, Greedy
 3273 | [Minimum Amount of Damage Dealt to Bob](https://leetcode.com/problems/minimum-amount-of-damage-dealt-to-bob/) | [C++](./C++/minimum-amount-of-damage-dealt-to-bob.cpp) [Python](./Python/minimum-amount-of-damage-dealt-to-bob.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Sort, Greedy
 3282 | [Reach End of Array With Max Score](https://leetcode.com/problems/reach-end-of-array-with-max-score/) | [C++](./C++/reach-end-of-array-with-max-score.cpp) [Python](./Python/reach-end-of-array-with-max-score.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3301 | [Maximize the Total Height of Unique Towers](https://leetcode.com/problems/maximize-the-total-height-of-unique-towers/) | [C++](./C++/maximize-the-total-height-of-unique-towers.cpp) [Python](./Python/maximize-the-total-height-of-unique-towers.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Greedy
+3302 | [Find the Lexicographically Smallest Valid Sequence](https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/) | [C++](./C++/find-the-lexicographically-smallest-valid-sequence.cpp) [Python](./Python/find-the-lexicographically-smallest-valid-sequence.py) | _O(n + m)_   | _O(m)_        | Medium         | | Hash Table, Greedy
 
 <br/>
 <div align="right">
@@ -1615,6 +1623,7 @@
 3268 | [Find Overlapping Shifts II](https://leetcode.com/problems/find-overlapping-shifts-ii/) | [MySQL](./MySQL/find-overlapping-shifts-ii.sql) | _O(n^2)_ | _O(n^2)_       | Hard           |🔒| Line Sweep, Window Function, Combinatorics |
 3278 | [Find Candidates for Data Scientist Position II](https://leetcode.com/problems/find-candidates-for-data-scientist-position-ii/) | [MySQL](./MySQL/find-candidates-for-data-scientist-position-ii.sql) | _O(p * s * n + p * nlogn + plogp)_ | _O(p * s * n)_       | Medium           |🔒| Window Function |
 3293 | [Calculate Product Final Price](https://leetcode.com/problems/calculate-product-final-price/) | [MySQL](./MySQL/calculate-product-final-price.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
+3308 | [Find Top Performing Driver](https://leetcode.com/problems//find-top-performing-driver/) | [MySQL](./MySQL//find-top-performing-driver.sql) | _O(tlogt)_ | _O(t)_       | Medium           |🔒| Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
