@@ -11,4 +11,4 @@ class Solution(object):
         def popcount(x):
             return bin(x)[2:].count('1')
 
-        return chr(ord('a')+popcount(k-1))
+        return chr(ord('a')+popcount(k-1)%26)
