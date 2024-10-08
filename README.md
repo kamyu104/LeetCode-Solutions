@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3308%20%2F%203308-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3313%20%2F%203313-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -672,6 +672,7 @@
 3274 | [Check if Two Chessboard Squares Have the Same Color](https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/) | [C++](./C++/check-if-two-chessboard-squares-have-the-same-color.cpp) [Python](./Python/check-if-two-chessboard-squares-have-the-same-color.py) | _O(1)_ | _O(1)_ | Easy | | Math, Parity |
 3284 | [Sum of Consecutive Subarrays](https://leetcode.com/problems/sum-of-consecutive-subarrays/) | [C++](./C++/sum-of-consecutive-subarrays.cpp) [Python](./Python/sum-of-consecutive-subarrays.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Combinatorics |
 3299 | [Sum of Consecutive Subsequences](https://leetcode.com/problems/sum-of-consecutive-subsequences/) | [C++](./C++/sum-of-consecutive-subsequences.cpp) [Python](./Python/sum-of-consecutive-subsequences.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Combinatorics, Prefix Sum, DP |
+3312 | [Sorted GCD Pair Queries](https://leetcode.com/problems/sorted-gcd-pair-queries/) | [C++](./C++/sorted-gcd-pair-queries.cpp) [Python](./Python/sorted-gcd-pair-queries.py) | _O(rlogr + qlogr)_ | _O(r)_ | Hard | | Number Theory, Freq Table, Prefix Sum, Binary Search |
 
 <br/>
 <div align="right">
@@ -712,6 +713,7 @@
 3132 | [Find the Integer Added to Array II](https://leetcode.com/problems/find-the-integer-added-to-array-ii/) | [C++](./C++/find-the-integer-added-to-array-ii.cpp) [Python](./Python/find-the-integer-added-to-array-ii.py) | _O(n)_ | _O(n)_ | Medium | | Sort, Paritial Sort, Freq Table
 3169 | [Count Days Without Meetings](https://leetcode.com/problems/count-days-without-meetings/) | [C++](./C++/count-days-without-meetings.cpp) [Python](./Python/count-days-without-meetings.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort
 3194 | [Minimum Average of Smallest and Largest Elements](https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/) | [C++](./C++/minimum-average-of-smallest-and-largest-elements.cpp) [Python](./Python/minimum-average-of-smallest-and-largest-elements.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort
+3309 | [Maximum Possible Number by Binary Concatenation](https://leetcode.com/problems/maximum-possible-number-by-binary-concatenation/) | [C++](./C++/maximum-possible-number-by-binary-concatenation.cpp) [Python](./Python/maximum-possible-number-by-binary-concatenation.py) | _O(n * logr * logn)_ | _O(nlogr)_ | Medium | | Sort, Brute Force
 
 <br/>
 <div align="right">
@@ -1118,6 +1120,7 @@
 3290 | [Maximum Multiplication Score](https://leetcode.com/problems/maximum-multiplication-score/) | [C++](./C++/maximum-multiplication-score.cpp) [Python](./Python/maximum-multiplication-score.py) | _O(n)_ | _O(1)_ | Medium | | DP
 3291 | [Minimum Number of Valid Strings to Form Target I](https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/)| [C++](./C++/minimum-number-of-valid-strings-to-form-target-i.cpp) [Python](./Python/minimum-number-of-valid-strings-to-form-target-i.py) | _O(n + w * l)_    | _O(n + t)_          | Medium           | | KMP, `Rabin-Karp Algorithm`, Rolling Hash, Hash Table, Two Pointers, Sliding Window, DP, `Aho-Corasick Automata`, Trie
 3292 | [Minimum Number of Valid Strings to Form Target II](https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/)| [C++](./C++/minimum-number-of-valid-strings-to-form-target-ii.cpp) [Python](./Python/minimum-number-of-valid-strings-to-form-target-ii.py) | _O(n + w * l)_    | _O(n + t)_          | Hard           | | KMP, `Rabin-Karp Algorithm`, Rolling Hash, Hash Table, Two Pointers, Sliding Window, DP, `Aho-Corasick Automata`, Trie
+3313 | [Find the Last Marked Nodes in Tree](https://leetcode.com/problems/find-the-last-marked-nodes-in-tree/) | [C++](./C++/find-the-last-marked-nodes-in-tree.cpp) [Python](./Python/find-the-last-marked-nodes-in-tree.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | DFS, Tree DP
 
 <br/>
 <div align="right">
@@ -1325,6 +1328,7 @@
 3265 | [Count Almost Equal Pairs I](https://leetcode.com/problems/count-almost-equal-pairs-i/) | [C++](./C++/count-almost-equal-pairs-i.cpp) [Python](./Python/count-almost-equal-pairs-i.py) | _O(n * l^2)_ | _O(n)_ | Medium | | Freq Table, Combinatorics, Graph, BFS |
 3267 | [Count Almost Equal Pairs II](https://leetcode.com/problems/count-almost-equal-pairs-ii/) | [C++](./C++/count-almost-equal-pairs-ii.cpp) [Python](./Python/count-almost-equal-pairs-ii.py) | _O(n * l^4)_ | _O(n)_ | Hard | | Freq Table, Combinatorics, Graph, BFS |
 3276 | [Select Cells in Grid With Maximum Score](https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/) | [C++](./C++/select-cells-in-grid-with-maximum-score.cpp) [Python](./Python/select-cells-in-grid-with-maximum-score.py) | _O(n^2 * max(n, r))_ | _O(n * max(n, r))_ | Hard | variant of [Maximum Compatibility Score Sum](https://leetcode.com/problems/maximum-compatibility-score-sum/) | `Hungarian Weighted Bipartite Matching`, DP, Bitmasks |
+3310 | [Remove Methods From Project](https://leetcode.com/problems/remove-methods-from-project/)| [C++](./C++/remove-methods-from-project.cpp) [Python](./Python/remove-methods-from-project.py)| _O(n + e)_ | _O(n + e)_ | Medium | | Graph, BFS |
 
 <br/>
 <div align="right">
@@ -1393,6 +1397,7 @@
 2856 | [Minimum Array Length After Pair Removals](https://leetcode.com/problems/minimum-array-length-after-pair-removals/) | [C++](./C++/minimum-array-length-after-pair-removals.cpp) [Python](./Python/minimum-array-length-after-pair-removals.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Constructive Algorithms
 3139 | [Minimum Cost to Equalize Array](https://leetcode.com/problems/minimum-cost-to-equalize-array/) | [C++](./C++/minimum-cost-to-equalize-array.cpp) [Python](./Python/minimum-cost-to-equalize-array.py) | _O(n)_ | _O(1)_ | Hard | | Constructive Algorithms, Math
 3260 | [Find the Largest Palindrome Divisible by K](https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/) | [C++](./C++/find-the-largest-palindrome-divisible-by-k.cpp) [Python](./Python/find-the-largest-palindrome-divisible-by-k.py) | _O(n)_ | _O(1)_ | Hard | | String, Constructive Algorithms, Math |
+3311 | [Construct 2D Grid Matching Graph Layout](https://leetcode.com/problems/construct-2d-grid-matching-graph-layout/) | [C++](./C++/construct-2d-grid-matching-graph-layout.cpp) [Python](./Python/construct-2d-grid-matching-graph-layout.py) | _O(n)_ | _O(n)_ | Hard | | Graph, Constructive Algorithms, BFS |
 
 <br/>
 <div align="right">
