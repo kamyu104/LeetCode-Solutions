@@ -8,6 +8,9 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """
+        def increase(x):
+            return (x[0]+1, x[1])
+
         def iter_dfs1():
             dp = [[(0, u)]*2 for u in xrange(len(adj))]
             stk = [(1, (0, -1))]
@@ -28,16 +31,13 @@ class Solution(object):
                     stk.append((1, (v, u)))
                 elif step == 3:
                     v, u = args
-                    tmp = (dp[v][0][0]+1, dp[v][0][1])
+                    tmp = increase(dp[v][0])
                     for i in xrange(len(dp[u])):
                         if tmp > dp[u][i]:
                             tmp, dp[u][i] = dp[u][i], tmp
             return dp
 
         def iter_dfs2():
-            def increase(x):
-                return (x[0]+1, x[1])
-
             result = [-1]*len(adj)
             stk = [(0, -1, (0, -1))]
             while stk:
@@ -66,20 +66,20 @@ class Solution2(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """
+        def increase(x):
+            return (x[0]+1, x[1])
+
         def dfs1(u, p):
             for v in adj[u]:
                 if v == p:
                     continue
                 dfs1(v, u)
-                tmp = (dp[v][0][0]+1, dp[v][0][1])
+                tmp = increase(dp[v][0])
                 for i in xrange(len(dp[u])):
                     if tmp > dp[u][i]:
                         tmp, dp[u][i] = dp[u][i], tmp
 
         def dfs2(u, p, curr):
-            def increase(x):
-                return (x[0]+1, x[1])
-    
             for v in adj[u]:
                 if v == p:
                     continue
