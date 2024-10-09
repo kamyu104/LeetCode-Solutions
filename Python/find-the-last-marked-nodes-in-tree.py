@@ -122,10 +122,10 @@ class Solution3(object):
                     stk.append((1, (v, u)))
                 elif step == 3:
                     v, u = args
-                    tmp = increase(dp[v][0])
+                    curr = increase(dp[v][0])
                     for i in xrange(len(dp[u])):
-                        if tmp > dp[u][i]:
-                            tmp, dp[u][i] = dp[u][i], tmp
+                        if curr > dp[u][i]:
+                            curr, dp[u][i] = dp[u][i], curr
             return dp
 
         def iter_dfs2():
@@ -165,10 +165,10 @@ class Solution4(object):
                 if v == p:
                     continue
                 dfs1(v, u)
-                tmp = increase(dp[v][0])
+                curr = increase(dp[v][0])
                 for i in xrange(len(dp[u])):
-                    if tmp > dp[u][i]:
-                        tmp, dp[u][i] = dp[u][i], tmp
+                    if curr > dp[u][i]:
+                        curr, dp[u][i] = dp[u][i], curr
 
         def dfs2(u, p, curr):
             for v in adj[u]:
