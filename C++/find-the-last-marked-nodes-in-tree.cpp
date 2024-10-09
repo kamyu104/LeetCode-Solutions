@@ -45,8 +45,86 @@ public:
 
 // Time:  O(n)
 // Space: O(n)
-// iterative dfs, tree dp
+// bfs
 class Solution2 {
+public:
+    vector<int> lastMarkedNodes(vector<vector<int>>& edges) {
+        const auto& increase = [](const auto& x) {
+            return pair(x.first + 1, x.second);
+        };
+
+        vector<vector<int>> adj(size(edges) + 1);
+        for (const auto& e : edges) {
+            adj[e[0]].emplace_back(e[1]);
+            adj[e[1]].emplace_back(e[0]);
+        }
+        const auto& topological_traversal = [&]() {
+            vector<int> p(size(adj), -2);
+            p[0] = -1;
+            vector<int> topological_order;
+            topological_order.reserve(size(adj));
+            topological_order.emplace_back(0);
+            for (int idx = 0; idx < size(topological_order); ++idx) {
+                const auto& u = topological_order[idx];
+                for (const auto& v : adj[u]) {
+                    if (p[v] != -2) {
+                        continue;
+                    }
+                    p[v] = u;
+                    topological_order.emplace_back(v);
+                }
+            }
+            reverse(begin(topological_order), end(topological_order));
+            vector<vector<pair<int, int>>> dp(size(adj), vector<pair<int, int>>(2));
+            for (int u = 0; u < size(dp); ++u) {
+                for (auto& x : dp[u]) {
+                    x.second = u;
+                }
+            }
+            for (const auto& u : topological_order) {
+                for (const auto& v : adj[u]) {
+                    if (v == p[u]) {
+                        continue;
+                    }
+                    auto curr = increase(dp[v][0]);
+                    for (auto& x : dp[u]) {
+                        if (curr > x) {
+                            swap(curr, x);
+                        }
+                    }
+                }
+            }
+            return dp;
+        };
+
+        const auto& dp = topological_traversal();
+        const auto& bfs = [&]() {
+            vector<int> result(size(adj), -1);
+            vector<tuple<int, int, pair<int, int>>> q = {{0, -1, pair(0, -1)}};
+            while (!empty(q)) {
+                vector<tuple<int, int, pair<int, int>>> new_q;
+                for (const auto& [u, p, curr] : q) {
+                    result[u] = max(dp[u][0], curr).second;
+                    for (const auto& v : adj[u]) {
+                        if (v == p) {
+                            continue;
+                        }
+                        new_q.emplace_back(v, u, increase(max(dp[u][dp[u][0].second == dp[v][0].second], curr)));
+                    }
+                }
+                q = move(new_q);
+            }
+            return result;
+        };
+
+        return bfs();
+    }
+};
+
+// Time:  O(n)
+// Space: O(n)
+// iterative dfs, tree dp
+class Solution3 {
 public:
     vector<int> lastMarkedNodes(vector<vector<int>>& edges) {
         const auto& increase = [](const auto& x) {
@@ -82,10 +160,10 @@ public:
                     stk.emplace_back(3, v, u, -1);
                     stk.emplace_back(1, v, u, -1);
                 } else if (step == 3) {
-                    auto tmp = pair(dp[u][0].first + 1, dp[u][0].second);
+                    auto curr = increase(dp[u][0]);
                     for (auto& x : dp[p]) {
-                        if (tmp > x) {
-                            swap(tmp, x);
+                        if (curr > x) {
+                            swap(curr, x);
                         }
                     }
                 }
@@ -117,7 +195,7 @@ public:
 // Time:  O(n)
 // Space: O(n)
 // dfs, tree dp
-class Solution3 {
+class Solution4 {
 public:
     vector<int> lastMarkedNodes(vector<vector<int>>& edges) {
         const auto& increase = [](const auto& x) {
@@ -141,10 +219,10 @@ public:
                     continue;
                 }
                 dfs1(v, u);
-                auto tmp = pair(dp[v][0].first + 1, dp[v][0].second);
+                auto curr = increase(dp[v][0]);
                 for (auto& x : dp[u]) {
-                    if (tmp > x) {
-                        swap(tmp, x);
+                    if (curr > x) {
+                        swap(curr, x);
                     }
                 }
             }
