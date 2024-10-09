@@ -18,7 +18,6 @@ class Solution(object):
                         continue
                     p[v] = u
                     topological_order.append(v)
-            print topological_order
             for u in reversed(topological_order):
                 for v in adj[u]:
                     if v == p[u]:
