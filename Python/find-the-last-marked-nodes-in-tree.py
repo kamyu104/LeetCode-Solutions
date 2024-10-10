@@ -47,6 +47,65 @@ class Solution2(object):
         def increase(x):
             return (x[0]+1, x[1])
 
+        def bfs():
+            dp = [[(0, u)]*2 for u in xrange(len(adj))]
+            degree = map(len, adj)
+            q = [u for u in xrange(len(degree)) if degree[u] == 1]
+            new_root = -1
+            while q:
+                new_q = []
+                for u in q:
+                    if degree[u] == 0:
+                        new_root = u
+                        continue
+                    degree[u] -= 1
+                    for v in adj[u]:
+                        if degree[v] == 0:
+                            continue
+                        curr = increase(dp[u][0])
+                        for i in xrange(len(dp[v])):
+                            if curr > dp[v][i]:
+                                curr, dp[v][i] = dp[v][i], curr
+                        degree[v] -= 1
+                        if degree[v] == 1:
+                            new_q.append(v)
+                q = new_q
+            return dp, new_root
+
+        def bfs2(root):
+            result = [-1]*len(adj)
+            q = [(root, -1, (0, -1))]
+            while q:
+                new_q = []
+                for u, p, curr in q:
+                    result[u] = max(dp[u][0], curr)[1]
+                    for v in adj[u]:
+                        if v == p:
+                            continue
+                        new_q.append((v, u, increase(max(dp[u][dp[u][0][1] == dp[v][0][1]], curr))))
+                q = new_q
+            return result
+
+        adj = [[] for _ in xrange(len(edges)+1)]
+        for u, v in edges:
+            adj[u].append(v)
+            adj[v].append(u)
+        dp, u = bfs()
+        return bfs2(u)
+
+
+# Time:  O(n)
+# Space: O(n)
+# bfs
+class Solution3(object):
+    def lastMarkedNodes(self, edges):
+        """
+        :type edges: List[List[int]]
+        :rtype: List[int]
+        """
+        def increase(x):
+            return (x[0]+1, x[1])
+
         def topological_traversal():
             p = [-2]*len(adj)
             p[0] = -1
@@ -93,7 +152,7 @@ class Solution2(object):
 # Time:  O(n)
 # Space: O(n)
 # iterative dfs, tree dp
-class Solution3(object):
+class Solution4(object):
     def lastMarkedNodes(self, edges):
         """
         :type edges: List[List[int]]
@@ -151,7 +210,7 @@ class Solution3(object):
 # Time:  O(n)
 # Space: O(n)
 # dfs, tree dp
-class Solution4(object):
+class Solution5(object):
     def lastMarkedNodes(self, edges):
         """
         :type edges: List[List[int]]
