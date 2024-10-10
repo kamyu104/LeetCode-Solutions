@@ -49,9 +49,9 @@ class Solution2(object):
 
         def bfs():
             dp = [[(0, u)]*2 for u in xrange(len(adj))]
+            new_root = -1
             degree = map(len, adj)
             q = [u for u in xrange(len(degree)) if degree[u] == 1]
-            new_root = -1
             while q:
                 new_q = []
                 for u in q:
