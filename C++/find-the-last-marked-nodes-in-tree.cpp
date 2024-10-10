@@ -58,6 +58,89 @@ public:
             adj[e[0]].emplace_back(e[1]);
             adj[e[1]].emplace_back(e[0]);
         }
+        const auto& bfs = [&]() {
+                vector<vector<pair<int, int>>> dp(size(adj), vector<pair<int, int>>(2));
+                int new_root = -1;
+                for (int u = 0; u < size(dp); ++u) {
+                    for (auto& x : dp[u]) {
+                        x.second = u;
+                    }
+                }
+                vector<int> degree(size(adj));
+                vector<int> q;
+                for (int u = 0; u < size(adj); ++u) {
+                    degree[u] = size(adj[u]);
+                    if (degree[u] == 1) {
+                        q.emplace_back(u);
+                    }
+                }
+                while (!empty(q)) {
+                    vector<int> new_q;
+                    for (const auto& u : q) {
+                        if (degree[u] == 0) {
+                            new_root = u;
+                            continue;
+                        }
+                        --degree[u];
+                        for (const auto& v : adj[u]) {
+                            if (degree[v] == 0) {
+                                continue;
+                            }
+                            auto curr = increase(dp[u][0]);
+                            for (auto& x : dp[v]) {
+                                if (curr > x) {
+                                    swap(curr, x);
+                                }
+                            }
+                            if (--degree[v] == 1) {
+                                new_q.emplace_back(v);
+                            }
+                        }
+                    }
+                    q = move(new_q);
+                }
+                return pair(dp, new_root);
+            };
+
+        const auto& [dp, u] = bfs();
+        const auto& bfs2 = [&](int root) {
+            vector<int> result(size(adj), -1);
+            vector<tuple<int, int, pair<int, int>>> q = {{root, -1, pair(0, -1)}};
+            while (!empty(q)) {
+                vector<tuple<int, int, pair<int, int>>> new_q;
+                for (const auto& [u, p, curr] : q) {
+                    result[u] = max(dp[u][0], curr).second;
+                    for (const auto& v : adj[u]) {
+                        if (v == p) {
+                            continue;
+                        }
+                        new_q.emplace_back(v, u, increase(max(dp[u][dp[u][0].second == dp[v][0].second], curr)));
+                    }
+                }
+                q = move(new_q);
+            }
+            return result;
+        };
+
+        return bfs2(u);
+    }
+};
+
+// Time:  O(n)
+// Space: O(n)
+// bfs
+class Solution3 {
+public:
+    vector<int> lastMarkedNodes(vector<vector<int>>& edges) {
+        const auto& increase = [](const auto& x) {
+            return pair(x.first + 1, x.second);
+        };
+
+        vector<vector<int>> adj(size(edges) + 1);
+        for (const auto& e : edges) {
+            adj[e[0]].emplace_back(e[1]);
+            adj[e[1]].emplace_back(e[0]);
+        }
         const auto& topological_traversal = [&]() {
             vector<int> p(size(adj), -2);
             p[0] = -1;
@@ -124,7 +207,7 @@ public:
 // Time:  O(n)
 // Space: O(n)
 // iterative dfs, tree dp
-class Solution3 {
+class Solution4 {
 public:
     vector<int> lastMarkedNodes(vector<vector<int>>& edges) {
         const auto& increase = [](const auto& x) {
@@ -195,7 +278,7 @@ public:
 // Time:  O(n)
 // Space: O(n)
 // dfs, tree dp
-class Solution4 {
+class Solution5 {
 public:
     vector<int> lastMarkedNodes(vector<vector<int>>& edges) {
         const auto& increase = [](const auto& x) {
