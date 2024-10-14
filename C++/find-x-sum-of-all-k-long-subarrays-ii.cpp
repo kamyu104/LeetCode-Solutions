@@ -5,7 +5,7 @@
 #include <ext/pb_ds/tree_policy.hpp>
 using namespace __gnu_pbds;
 
-// ordered set, two pointers, sliding window
+// freq table, ordered set, two pointers, sliding window
 class Solution {
 public:
     vector<long long> findXSum(vector<int>& nums, int k, int x) {
