@@ -5,7 +5,7 @@ from sortedcontainers import SortedList
 import collections
 
 
-# sorted list, two pointers, sliding window
+# freq table, sorted list, two pointers, sliding window
 class Solution(object):
     def findXSum(self, nums, k, x):
         """
