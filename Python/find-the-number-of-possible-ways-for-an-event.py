@@ -13,7 +13,6 @@ for i in xrange(1, MAX_N+1):
     for j in xrange(1, i+1):
         NCR[i][j] = (NCR[i-1][j]+NCR[i-1][j-1])%MOD
         DP[i][j] = (DP[i-1][j]*j+DP[i-1][j-1]*j)%MOD
-
 POW = [[1]*(R+1) for _ in xrange(MAX_Y+1)]
 for i in xrange(1, MAX_Y+1):
     for j in xrange(1, R+1):
