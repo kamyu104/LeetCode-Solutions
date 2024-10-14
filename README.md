@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3313%20%2F%203313-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3322%20%2F%203322-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -96,6 +96,8 @@
 3289 | [The Two Sneaky Numbers of Digitville](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/) | [C++](./C++/the-two-sneaky-numbers-of-digitville.cpp) [Python](./Python/the-two-sneaky-numbers-of-digitville.py) | _O(n)_ | _O(1)_ | Easy | | Bit Manipulation
 3304 | [Find the K-th Character in String Game I](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/) | [C++](./C++/find-the-k-th-character-in-string-game-i.cpp) [Python](./Python/find-the-k-th-character-in-string-game-i.py) | _O(n)_ | _O(1)_ | Easy | | Bitmasks
 3307| [Find the K-th Character in String Game II](https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/) | [C++](./C++/find-the-k-th-character-in-string-game-ii.cpp) [Python](./Python/find-the-k-th-character-in-string-game-ii.py) | _O(1)_ | _O(1)_ | Hard | | Bitmasks
+3314 | [Construct the Minimum Bitwise Array I](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [C++](./C++/construct-the-minimum-bitwise-array-i.cpp) [Python](./Python/construct-the-minimum-bitwise-array-i.py) | _O(n)_ | _O(1)_ | Easy | | Bit Manipulation
+3315 | [Construct the Minimum Bitwise Array II](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [C++](./C++/construct-the-minimum-bitwise-array-ii.cpp) [Python](./Python/construct-the-minimum-bitwise-array-ii.py) | _O(n)_ | _O(1)_ | Medium | | Bit Manipulation
 
 <br/>
 <div align="right">
@@ -673,6 +675,7 @@
 3284 | [Sum of Consecutive Subarrays](https://leetcode.com/problems/sum-of-consecutive-subarrays/) | [C++](./C++/sum-of-consecutive-subarrays.cpp) [Python](./Python/sum-of-consecutive-subarrays.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Combinatorics |
 3299 | [Sum of Consecutive Subsequences](https://leetcode.com/problems/sum-of-consecutive-subsequences/) | [C++](./C++/sum-of-consecutive-subsequences.cpp) [Python](./Python/sum-of-consecutive-subsequences.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Combinatorics, Prefix Sum, DP |
 3312 | [Sorted GCD Pair Queries](https://leetcode.com/problems/sorted-gcd-pair-queries/) | [C++](./C++/sorted-gcd-pair-queries.cpp) [Python](./Python/sorted-gcd-pair-queries.py) | _O(rlogr + qlogr)_ | _O(r)_ | Hard | | Number Theory, Freq Table, Prefix Sum, Binary Search |
+3317 | [Find the Number of Possible Ways for an Event](https://leetcode.com/problems/find-the-number-of-possible-ways-for-an-event/) | [C++](./C++/find-the-number-of-possible-ways-for-an-event.cpp) [Python](./Python/find-the-number-of-possible-ways-for-an-event.py) | precompute: _O(max_n^2 + max_y * min(max_n, max_x))_<br>runtime: _O(min(n, x))_ | _O(max_n^2 + max_y * min(max_n, max_x))_ | Hard | | DP, Combinatorics |
 
 <br/>
 <div align="right">
@@ -802,6 +805,8 @@
 3298 | [Count Substrings That Can Be Rearranged to Contain a String II](https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/)| [C++](./C++/count-substrings-that-can-be-rearranged-to-contain-a-string-ii.cpp) [Python](./Python/count-substrings-that-can-be-rearranged-to-contain-a-string-ii.py) | _O(n + 26)_    | _O(26)_          | Hard           |  | Two Pointers, Sliding Window, Freq Table
 3305 | [Count of Substrings Containing Every Vowel and K Consonants I](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/)| [C++](./C++/count-of-substrings-containing-every-vowel-and-k-consonants-i.cpp) [Python](./Python/count-of-substrings-containing-every-vowel-and-k-consonants-i.py) | _O(n)_    | _O(1)_          | Medium           |  | Two Pointers, Sliding Window, Freq Table
 3306 | [Count of Substrings Containing Every Vowel and K Consonants II](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/)| [C++](./C++/count-of-substrings-containing-every-vowel-and-k-consonants-ii.cpp) [Python](./Python/count-of-substrings-containing-every-vowel-and-k-consonants-ii.py) | _O(n)_    | _O(1)_          | Medium           |  | Two Pointers, Sliding Window, Freq Table
+3318 | [Find X-Sum of All K-Long Subarrays I](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/)| [C++](./C++/find-x-sum-of-all-k-long-subarrays-i.cpp) [Python](./Python/find-x-sum-of-all-k-long-subarrays-i.py) | _O(nlogn)_    | _O(n)_          | Easy           |  | Two Pointers, Sliding Window, Freq Table, Ordered Set, Sorted List
+3321 | [Find X-Sum of All K-Long Subarrays II](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/)| [C++](./C++/find-x-sum-of-all-k-long-subarrays-ii.cpp) [Python](./Python/find-x-sum-of-all-k-long-subarrays-ii.py) | _O(nlogn)_    | _O(n)_          | Hard           |  | Two Pointers, Sliding Window, Freq Table, Ordered Set, Sorted List
 
 <br/>
 <div align="right">
@@ -950,6 +955,7 @@
 3067 | [Count Pairs of Connectable Servers in a Weighted Tree Network](https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/)| [C++](./C++/count-pairs-of-connectable-servers-in-a-weighted-tree-network.cpp) [Python](./Python/count-pairs-of-connectable-servers-in-a-weighted-tree-network.py)| _O(n^2)_ | _O(n)_ | Medium | | DFS, BFS |
 3203 | [Find Minimum Diameter After Merging Two Trees](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/)| [C++](./C++/find-minimum-diameter-after-merging-two-trees.cpp) [Python](./Python/find-minimum-diameter-after-merging-two-trees.py)| _O(n + m)_ | _O(n + m)_ | Hard | variant of [Tree Diameter](https://leetcode.com/problems/tree-diameter/) | DFS, BFS, Tree DP, Tree Diameter |
 3249 | [Count the Number of Good Nodes](https://leetcode.com/problems/count-the-number-of-good-nodes/)| [C++](./C++/count-the-number-of-good-nodes.cpp) [Python](./Python/count-the-number-of-good-nodes.py)| _O(n)_ | _O(h)_ | Medium |  | DFS |
+3319 | [K-th Largest Perfect Subtree Size in Binary Tree](https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/)| [C++](./C++/k-th-largest-perfect-subtree-size-in-binary-tree.cpp) [Python](./Python/k-th-largest-perfect-subtree-size-in-binary-tree.py)| _O(n)_ | _O(n)_ | Medium |  | DFS, Quick Select |
 
 <br/>
 <div align="right">
@@ -1121,6 +1127,8 @@
 3291 | [Minimum Number of Valid Strings to Form Target I](https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/)| [C++](./C++/minimum-number-of-valid-strings-to-form-target-i.cpp) [Python](./Python/minimum-number-of-valid-strings-to-form-target-i.py) | _O(n + w * l)_    | _O(n + t)_          | Medium           | | KMP, `Rabin-Karp Algorithm`, Rolling Hash, Hash Table, Two Pointers, Sliding Window, DP, `Aho-Corasick Automata`, Trie
 3292 | [Minimum Number of Valid Strings to Form Target II](https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/)| [C++](./C++/minimum-number-of-valid-strings-to-form-target-ii.cpp) [Python](./Python/minimum-number-of-valid-strings-to-form-target-ii.py) | _O(n + w * l)_    | _O(n + t)_          | Hard           | | KMP, `Rabin-Karp Algorithm`, Rolling Hash, Hash Table, Two Pointers, Sliding Window, DP, `Aho-Corasick Automata`, Trie
 3313 | [Find the Last Marked Nodes in Tree](https://leetcode.com/problems/find-the-last-marked-nodes-in-tree/) | [C++](./C++/find-the-last-marked-nodes-in-tree.cpp) [Python](./Python/find-the-last-marked-nodes-in-tree.py) | _O(n)_ | _O(n)_ | Hard | 🔒, variant of [Time Taken to Mark All Nodes](https://leetcode.com/problems/time-taken-to-mark-all-nodes/) | BFS, DFS, Tree DP, Tree Diameter
+3316 | [Find Maximum Removals From Source String](https://leetcode.com/problems/find-maximum-removals-from-source-string/) | [C++](./C++/find-maximum-removals-from-source-string.cpp) [Python](./Python/find-maximum-removals-from-source-string.py) | _O(n * m)_ | _O(n + m)_ | Hard | | DP
+3320 | [Count The Number of Winning Sequences](https://leetcode.com/problems/count-the-number-of-winning-sequences/) | [C++](./C++/count-the-number-of-winning-sequences.cpp) [Python](./Python/count-the-number-of-winning-sequences.py) | _O(n^2)_ | _O(n)_ | Hard | | DP
 
 <br/>
 <div align="right">
@@ -1628,7 +1636,8 @@
 3268 | [Find Overlapping Shifts II](https://leetcode.com/problems/find-overlapping-shifts-ii/) | [MySQL](./MySQL/find-overlapping-shifts-ii.sql) | _O(n^2)_ | _O(n^2)_       | Hard           |🔒| Line Sweep, Window Function, Combinatorics |
 3278 | [Find Candidates for Data Scientist Position II](https://leetcode.com/problems/find-candidates-for-data-scientist-position-ii/) | [MySQL](./MySQL/find-candidates-for-data-scientist-position-ii.sql) | _O(p * s * n + p * nlogn + plogp)_ | _O(p * s * n)_       | Medium           |🔒| Window Function |
 3293 | [Calculate Product Final Price](https://leetcode.com/problems/calculate-product-final-price/) | [MySQL](./MySQL/calculate-product-final-price.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
-3308 | [Find Top Performing Driver](https://leetcode.com/problems//find-top-performing-driver/) | [MySQL](./MySQL//find-top-performing-driver.sql) | _O(tlogt)_ | _O(t)_       | Medium           |🔒| Window Function |
+3308 | [Find Top Performing Driver](https://leetcode.com/problems/find-top-performing-driver/) | [MySQL](./MySQL/find-top-performing-driver.sql) | _O(tlogt)_ | _O(t)_       | Medium           |🔒| Window Function |
+3322 | [Premier League Table Ranking III](https://leetcode.com/problems/premier-league-table-ranking-iii/) | [MySQL](./MySQL/premier-league-table-ranking-iii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
