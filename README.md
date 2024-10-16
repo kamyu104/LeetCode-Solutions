@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3322%20%2F%203322-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3323%20%2F%203323-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -807,6 +807,7 @@
 3306 | [Count of Substrings Containing Every Vowel and K Consonants II](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/)| [C++](./C++/count-of-substrings-containing-every-vowel-and-k-consonants-ii.cpp) [Python](./Python/count-of-substrings-containing-every-vowel-and-k-consonants-ii.py) | _O(n)_    | _O(1)_          | Medium           |  | Two Pointers, Sliding Window, Freq Table
 3318 | [Find X-Sum of All K-Long Subarrays I](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/)| [C++](./C++/find-x-sum-of-all-k-long-subarrays-i.cpp) [Python](./Python/find-x-sum-of-all-k-long-subarrays-i.py) | _O(nlogn)_    | _O(n)_          | Easy           |  | Two Pointers, Sliding Window, Freq Table, Ordered Set, Sorted List
 3321 | [Find X-Sum of All K-Long Subarrays II](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/)| [C++](./C++/find-x-sum-of-all-k-long-subarrays-ii.cpp) [Python](./Python/find-x-sum-of-all-k-long-subarrays-ii.py) | _O(nlogn)_    | _O(n)_          | Hard           |  | Two Pointers, Sliding Window, Freq Table, Ordered Set, Sorted List
+3323 | [Minimize Connected Groups by Inserting Interval](https://leetcode.com/problems/minimize-connected-groups-by-inserting-interval/) | [C++](./C++/minimize-connected-groups-by-inserting-interval.cpp) [Python](./Python/minimize-connected-groups-by-inserting-interval.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Sort, Prefix Sum, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
