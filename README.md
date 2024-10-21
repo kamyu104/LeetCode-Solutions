@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3323%20%2F%203323-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3328%20%2F%203328-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -311,6 +311,7 @@
 3271 | [Hash Divided String](https://leetcode.com/problems/hash-divided-string/) | [C++](./C++/hash-divided-string.cpp) [Python](./Python/hash-divided-string.py) | _O(n)_ | _O(1)_ | Medium | | String
 3280 | [Convert Date to Binary](https://leetcode.com/problems/convert-date-to-binary/) | [C++](./C++/convert-date-to-binary.cpp) [Python](./Python/convert-date-to-binary.py) | _O(1)_ | _O(1)_ | Easy | | String
 3303 | [Find the Occurrence of First Almost Equal Substring](https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/) | [C++](./C++/find-the-occurrence-of-first-almost-equal-substring.cpp) [Python](./Python/find-the-occurrence-of-first-almost-equal-substring.py) | _O(n + m)_   | _O(n + m)_        | Hard         | | `Z-Function`
+3324 | [Find the Sequence of Strings Appeared on the Screen](https://leetcode.com/problems/find-the-sequence-of-strings-appeared-on-the-screen/) | [C++](./C++/find-the-sequence-of-strings-appeared-on-the-screen.cpp) [Python](./Python/find-the-sequence-of-strings-appeared-on-the-screen.py) | _O(n^2)_   | _O(1)_        | Medium         | | String
 
 <br/>
 <div align="right">
@@ -676,6 +677,7 @@
 3299 | [Sum of Consecutive Subsequences](https://leetcode.com/problems/sum-of-consecutive-subsequences/) | [C++](./C++/sum-of-consecutive-subsequences.cpp) [Python](./Python/sum-of-consecutive-subsequences.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Combinatorics, Prefix Sum, DP |
 3312 | [Sorted GCD Pair Queries](https://leetcode.com/problems/sorted-gcd-pair-queries/) | [C++](./C++/sorted-gcd-pair-queries.cpp) [Python](./Python/sorted-gcd-pair-queries.py) | _O(rlogr + qlogr)_ | _O(r)_ | Hard | | Number Theory, Freq Table, Prefix Sum, Binary Search |
 3317 | [Find the Number of Possible Ways for an Event](https://leetcode.com/problems/find-the-number-of-possible-ways-for-an-event/) | [C++](./C++/find-the-number-of-possible-ways-for-an-event.cpp) [Python](./Python/find-the-number-of-possible-ways-for-an-event.py) | precompute: _O(max_n^2 + max_y * min(max_n, max_x))_<br>runtime: _O(min(n, x))_ | _O(max_n^2 + max_y * min(max_n, max_x))_ | Hard | | DP, Combinatorics |
+3326 | [Minimum Division Operations to Make Array Non Decreasing](https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/) | [C++](./C++/minimum-division-operations-to-make-array-non-decreasing.cpp) [Python](./Python/minimum-division-operations-to-make-array-non-decreasing.py) | precompute: _O(r)_<br>runtime: _O(n)_ | _O(r)_ | Medium | | Greedy, Number Theory, `Linear Sieve of Eratosthenes` |
 
 <br/>
 <div align="right">
@@ -808,6 +810,7 @@
 3318 | [Find X-Sum of All K-Long Subarrays I](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/)| [C++](./C++/find-x-sum-of-all-k-long-subarrays-i.cpp) [Python](./Python/find-x-sum-of-all-k-long-subarrays-i.py) | _O(nlogn)_    | _O(n)_          | Easy           |  | Two Pointers, Sliding Window, Freq Table, Ordered Set, Sorted List
 3321 | [Find X-Sum of All K-Long Subarrays II](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/)| [C++](./C++/find-x-sum-of-all-k-long-subarrays-ii.cpp) [Python](./Python/find-x-sum-of-all-k-long-subarrays-ii.py) | _O(nlogn)_    | _O(n)_          | Hard           |  | Two Pointers, Sliding Window, Freq Table, Ordered Set, Sorted List
 3323 | [Minimize Connected Groups by Inserting Interval](https://leetcode.com/problems/minimize-connected-groups-by-inserting-interval/) | [C++](./C++/minimize-connected-groups-by-inserting-interval.cpp) [Python](./Python/minimize-connected-groups-by-inserting-interval.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Sort, Prefix Sum, Two Pointers, Sliding Window
+3325 | [Count Substrings With K-Frequency Characters I](https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/) | [C++](./C++/count-substrings-with-k-frequency-characters-i.cpp) [Python](./Python/count-substrings-with-k-frequency-characters-i.py) | _O(n + 26)_ | _O(26)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -957,6 +960,7 @@
 3203 | [Find Minimum Diameter After Merging Two Trees](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/)| [C++](./C++/find-minimum-diameter-after-merging-two-trees.cpp) [Python](./Python/find-minimum-diameter-after-merging-two-trees.py)| _O(n + m)_ | _O(n + m)_ | Hard | variant of [Tree Diameter](https://leetcode.com/problems/tree-diameter/) | DFS, BFS, Tree DP, Tree Diameter |
 3249 | [Count the Number of Good Nodes](https://leetcode.com/problems/count-the-number-of-good-nodes/)| [C++](./C++/count-the-number-of-good-nodes.cpp) [Python](./Python/count-the-number-of-good-nodes.py)| _O(n)_ | _O(h)_ | Medium |  | DFS |
 3319 | [K-th Largest Perfect Subtree Size in Binary Tree](https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/)| [C++](./C++/k-th-largest-perfect-subtree-size-in-binary-tree.cpp) [Python](./Python/k-th-largest-perfect-subtree-size-in-binary-tree.py)| _O(n)_ | _O(n)_ | Medium |  | DFS, Quick Select |
+3327 | [Check if DFS Strings Are Palindromes](https://leetcode.com/problems/check-if-dfs-strings-are-palindromes/)| [C++](./C++/check-if-dfs-strings-are-palindromes.cpp) [Python](./Python/check-if-dfs-strings-are-palindromes.py)| _O(n)_ | _O(n)_ | Hard |  | DFS, `Manacher's Algorithm` |
 
 <br/>
 <div align="right">
@@ -1639,6 +1643,7 @@
 3293 | [Calculate Product Final Price](https://leetcode.com/problems/calculate-product-final-price/) | [MySQL](./MySQL/calculate-product-final-price.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
 3308 | [Find Top Performing Driver](https://leetcode.com/problems/find-top-performing-driver/) | [MySQL](./MySQL/find-top-performing-driver.sql) | _O(tlogt)_ | _O(t)_       | Medium           |🔒| Window Function |
 3322 | [Premier League Table Ranking III](https://leetcode.com/problems/premier-league-table-ranking-iii/) | [MySQL](./MySQL/premier-league-table-ranking-iii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
+3328 | [Find Cities in Each State II](https://leetcode.com/problems/find-cities-in-each-state-ii/) | [MySQL](./MySQL/find-cities-in-each-state-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
