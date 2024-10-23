@@ -10,7 +10,7 @@ public:
             vector<int> cnt(26);
             for (int right = 0, left = 0; right < size(s); ++right) {
                 ++cnt[s[right] - 'a'];
-                for (; cnt[s[right] - 'a'] >= k; ++left) {
+                for (; cnt[s[right] - 'a'] == k; ++left) {
                     --cnt[s[left] - 'a'];
                 }
                 result += right - left + 1;
