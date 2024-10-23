@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3328%20%2F%203328-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3329%20%2F%203329-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -811,6 +811,7 @@
 3321 | [Find X-Sum of All K-Long Subarrays II](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/)| [C++](./C++/find-x-sum-of-all-k-long-subarrays-ii.cpp) [Python](./Python/find-x-sum-of-all-k-long-subarrays-ii.py) | _O(nlogn)_    | _O(n)_          | Hard           |  | Two Pointers, Sliding Window, Freq Table, Ordered Set, Sorted List
 3323 | [Minimize Connected Groups by Inserting Interval](https://leetcode.com/problems/minimize-connected-groups-by-inserting-interval/) | [C++](./C++/minimize-connected-groups-by-inserting-interval.cpp) [Python](./Python/minimize-connected-groups-by-inserting-interval.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Sort, Prefix Sum, Two Pointers, Sliding Window
 3325 | [Count Substrings With K-Frequency Characters I](https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/) | [C++](./C++/count-substrings-with-k-frequency-characters-i.cpp) [Python](./Python/count-substrings-with-k-frequency-characters-i.py) | _O(n + 26)_ | _O(26)_ | Medium | | Freq Table, Two Pointers, Sliding Window
+3329 | [Count Substrings With K-Frequency Characters II](https://leetcode.com/problems/count-substrings-with-k-frequency-characters-ii/) | [C++](./C++/count-substrings-with-k-frequency-characters-ii.cpp) [Python](./Python/count-substrings-with-k-frequency-characters-ii.py) | _O(n + 26)_ | _O(26)_ | Hard | 🔒 | Freq Table, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
