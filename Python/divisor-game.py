@@ -20,7 +20,7 @@ class Solution(object):
 
 # Time:  O(nlogn)
 # Space: O(nlogn)
-# memoization, number theory
+# dp, number theory
 class Solution2(object):
     def divisorGame(self, n):
         """
