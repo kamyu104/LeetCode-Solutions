@@ -33,6 +33,29 @@ class Solution2(object):
                 for j in range(i, n+1, i):
                     result[j].append(i)
             return result
+
+        FACTORS = factors(n)
+        dp = [False]*(n+1)
+        for i in xrange(2, n+1):
+            dp[i] = any(not dp[i-j] for j in FACTORS[i] if j != i)
+        return dp[-1]
+
+
+# Time:  O(nlogn)
+# Space: O(nlogn)
+# memoization, number theory
+class Solution3(object):
+    def divisorGame(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        def factors(n):
+            result = [[] for _ in xrange(n+1)]
+            for i in xrange(1, n+1):
+                for j in range(i, n+1, i):
+                    result[j].append(i)
+            return result
     
         def memoization(n):
             if lookup[n] is None:
@@ -47,7 +70,7 @@ class Solution2(object):
 # Time:  O(n^(3/2))
 # Space: O(n)
 # memoization
-class Solution3(object):
+class Solution4(object):
     def divisorGame(self, n):
         """
         :type n: int
@@ -75,7 +98,7 @@ class Solution3(object):
 # Time:  O(n^2)
 # Space: O(n)
 # memoization
-class Solution4(object):
+class Solution5(object):
     def divisorGame(self, n):
         """
         :type n: int
