@@ -35,12 +35,12 @@ public:
         const auto& FACTORS = factors(n);
         vector<bool> dp(n + 1);
         for (int i = 2; i <= n; ++i) {
-                for (const auto& j : FACTORS[i]) {
-                    if (j != i && !dp[i - j]) {
-                        dp[i] = true;
-                        break;
-                    }
+            for (const auto& j : FACTORS[i]) {
+                if (j != i && !dp[i - j]) {
+                    dp[i] = true;
+                    break;
                 }
+            }
         }
         return dp[n];
     }
