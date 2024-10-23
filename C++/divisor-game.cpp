@@ -18,8 +18,38 @@ public:
 
 // Time:  O(nlogn)
 // Space: O(nlogn)
-// memoization, number theory
+// dp, number theory
 class Solution2 {
+public:
+    bool divisorGame(int n) {
+        const auto& factors = [](int n) {
+            vector<vector<int>> result(n + 1);
+            for (int i = 1; i <= n; ++i) {
+                for (int j = i; j <= n; j += i) {
+                    result[j].emplace_back(i);
+                }
+            }
+            return result;
+        };
+
+        const auto& FACTORS = factors(n);
+        vector<bool> dp(n + 1);
+        for (int i = 2; i <= n; ++i) {
+                for (const auto& j : FACTORS[i]) {
+                    if (j != i && !dp[i - j]) {
+                        dp[i] = true;
+                        break;
+                    }
+                }
+        }
+        return dp[n];
+    }
+};
+
+// Time:  O(nlogn)
+// Space: O(nlogn)
+// memoization, number theory
+class Solution3 {
 public:
     bool divisorGame(int n) {
         const auto& factors = [](int n) {
@@ -55,7 +85,7 @@ public:
 // Time:  O(n^(3/2))
 // Space: O(n)
 // memoization
-class Solution3 {
+class Solution4 {
 public:
     bool divisorGame(int n) {
         vector<int> lookup(n + 1, -1);
@@ -91,7 +121,7 @@ public:
 // Time:  O(n^2)
 // Space: O(n)
 // memoization
-class Solution4 {
+class Solution5 {
 public:
     bool divisorGame(int n) {
         vector<int> lookup(n + 1, -1);
