@@ -14,7 +14,7 @@ class Solution(object):
             result= left = 0
             for right in xrange(len(s)):
                 cnt[ord(s[right])-ord('a')] += 1
-                while cnt[ord(s[right])-ord('a')] >= k:
+                while cnt[ord(s[right])-ord('a')] == k:
                     cnt[ord(s[left])-ord('a')] -= 1
                     left += 1
                 result += right-left+1
