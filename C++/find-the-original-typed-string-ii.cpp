@@ -1,7 +1,7 @@
 // Time:  O(n + k^2)
 // Space: O(n + k)
 
-// dp
+// dp, prefix sum
 class Solution {
 public:
     int possibleStringCount(string word, int k) {
