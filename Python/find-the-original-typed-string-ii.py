@@ -1,7 +1,7 @@
 # Time:  O(n + k^2)
 # Space: O(n + k)
 
-# dp
+# dp, prefix sum
 class Solution(object):
     def possibleStringCount(self, word, k):
         MOD = 10**9+7
