@@ -5,7 +5,7 @@
 class Solution {
 public:
     int countOfArrays(int n, int m, int k) {
-        const int odd = (m + 1) / 2, even = m / 2;
+        const int even = m / 2, odd = (m + 1) / 2;
         int result = 0;
         if (k == 0) {
             result = (result + pow(odd, n)) % MOD;
@@ -79,7 +79,7 @@ public:
     int countOfArrays(int n, int m, int k) {
         static const int MOD = 1e9 + 7;
 
-        const int odd = (m + 1) / 2, even = m / 2;
+        const int even = m / 2, odd = (m + 1) / 2;
         vector<vector<int>> dp(2, vector<int>(k + 1));
         dp[0][0] = even;
         dp[1][0] = odd;
