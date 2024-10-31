@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3329%20%2F%203329-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3339%20%2F%203339-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -228,6 +228,8 @@
 3279 | [Maximum Total Area Occupied by Pistons](https://leetcode.com/problems/maximum-total-area-occupied-by-pistons/) | [C++](./C++/maximum-total-area-occupied-by-pistons.cpp) [Python](./Python/maximum-total-area-occupied-by-pistons.py) | _O(h)_ | _O(h)_ | Hard | 🔒 | Line Sweep, Difference Array
 3285 | [Find Indices of Stable Mountains](https://leetcode.com/problems/find-indices-of-stable-mountains/) | [C++](./C++/find-indices-of-stable-mountains.cpp) [Python](./Python/find-indices-of-stable-mountains.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3300 | [Minimum Element After Replacement With Digit Sum](https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/) | [C++](./C++/minimum-element-after-replacement-with-digit-sum.cpp) [Python](./Python/minimum-element-after-replacement-with-digit-sum.py) | _O(nlogr)_ | _O(1)_ | Easy | | Array
+3330 | [Find the Original Typed String I](https://leetcode.com/problems/find-the-original-typed-string-i/) | [C++](./C++/find-the-original-typed-string-i.cpp) [Python](./Python/find-the-original-typed-string-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3334 | [Find the Maximum Factor Score of Array](https://leetcode.com/problems/find-the-maximum-factor-score-of-array/) | [C++](./C++/find-the-maximum-factor-score-of-array.cpp) [Python](./Python/find-the-maximum-factor-score-of-array.py) | _O(nlogr)_ | _O(n)_ | Medium | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -678,6 +680,7 @@
 3312 | [Sorted GCD Pair Queries](https://leetcode.com/problems/sorted-gcd-pair-queries/) | [C++](./C++/sorted-gcd-pair-queries.cpp) [Python](./Python/sorted-gcd-pair-queries.py) | _O(rlogr + qlogr)_ | _O(r)_ | Hard | | Number Theory, Freq Table, Prefix Sum, Binary Search |
 3317 | [Find the Number of Possible Ways for an Event](https://leetcode.com/problems/find-the-number-of-possible-ways-for-an-event/) | [C++](./C++/find-the-number-of-possible-ways-for-an-event.cpp) [Python](./Python/find-the-number-of-possible-ways-for-an-event.py) | precompute: _O(max_n^2 + max_y * min(max_n, max_x))_<br>runtime: _O(min(n, x))_ | _O(max_n^2 + max_y * min(max_n, max_x))_ | Hard | | DP, Combinatorics |
 3326 | [Minimum Division Operations to Make Array Non Decreasing](https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/) | [C++](./C++/minimum-division-operations-to-make-array-non-decreasing.cpp) [Python](./Python/minimum-division-operations-to-make-array-non-decreasing.py) | precompute: _O(r)_<br>runtime: _O(n)_ | _O(r)_ | Medium | | Greedy, Number Theory, `Linear Sieve of Eratosthenes` |
+3339 | [Find the Number of K-Even Arrays](https://leetcode.com/problems/find-the-number-of-k-even-arrays/) | [C++](./C++/find-the-number-of-k-even-arrays.cpp) [Python](./Python/find-the-number-of-k-even-arrays.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Stars and Bars, Combinatorics |
 
 <br/>
 <div align="right">
@@ -962,6 +965,7 @@
 3249 | [Count the Number of Good Nodes](https://leetcode.com/problems/count-the-number-of-good-nodes/)| [C++](./C++/count-the-number-of-good-nodes.cpp) [Python](./Python/count-the-number-of-good-nodes.py)| _O(n)_ | _O(h)_ | Medium |  | DFS |
 3319 | [K-th Largest Perfect Subtree Size in Binary Tree](https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/)| [C++](./C++/k-th-largest-perfect-subtree-size-in-binary-tree.cpp) [Python](./Python/k-th-largest-perfect-subtree-size-in-binary-tree.py)| _O(n)_ | _O(n)_ | Medium |  | DFS, Quick Select |
 3327 | [Check if DFS Strings Are Palindromes](https://leetcode.com/problems/check-if-dfs-strings-are-palindromes/)| [C++](./C++/check-if-dfs-strings-are-palindromes.cpp) [Python](./Python/check-if-dfs-strings-are-palindromes.py)| _O(n)_ | _O(n)_ | Hard |  | DFS, `Manacher's Algorithm` |
+3331 | [Find Subtree Sizes After Changes](https://leetcode.com/problems/find-subtree-sizes-after-changes/)| [C++](./C++/find-subtree-sizes-after-changes.cpp) [Python](./Python/find-subtree-sizes-after-changes.py)| _O(n)_ | _O(n)_ | Medium |  | DFS, Hash Table |
 
 <br/>
 <div align="right">
@@ -1135,6 +1139,11 @@
 3313 | [Find the Last Marked Nodes in Tree](https://leetcode.com/problems/find-the-last-marked-nodes-in-tree/) | [C++](./C++/find-the-last-marked-nodes-in-tree.cpp) [Python](./Python/find-the-last-marked-nodes-in-tree.py) | _O(n)_ | _O(n)_ | Hard | 🔒, variant of [Time Taken to Mark All Nodes](https://leetcode.com/problems/time-taken-to-mark-all-nodes/) | BFS, DFS, Tree DP, Tree Diameter
 3316 | [Find Maximum Removals From Source String](https://leetcode.com/problems/find-maximum-removals-from-source-string/) | [C++](./C++/find-maximum-removals-from-source-string.cpp) [Python](./Python/find-maximum-removals-from-source-string.py) | _O(n * m)_ | _O(n + m)_ | Medium | | DP
 3320 | [Count The Number of Winning Sequences](https://leetcode.com/problems/count-the-number-of-winning-sequences/) | [C++](./C++/count-the-number-of-winning-sequences.cpp) [Python](./Python/count-the-number-of-winning-sequences.py) | _O(n^2)_ | _O(n)_ | Hard | | DP
+3332 | [Maximum Points Tourist Can Earn](https://leetcode.com/problems/maximum-points-tourist-can-earn/) | [C++](./C++/maximum-points-tourist-can-earn.cpp) [Python](./Python/maximum-points-tourist-can-earn.py) | _O(k * n^2)_ | _O(n)_ | Hard | | DP
+3333 | [Find the Original Typed String II](https://leetcode.com/problems/find-the-original-typed-string-ii/) | [C++](./C++/find-the-original-typed-string-ii.cpp) [Python](./Python/find-the-original-typed-string-ii.py) | _O(n + k^2)_ | _O(n + k)_ | Hard | | DP
+3335 | [Total Characters in String After Transformations I](https://leetcode.com/problems/total-characters-in-string-after-transformations-i/) | [C++](./C++/total-characters-in-string-after-transformations-i.cpp) [Python](./Python/total-characters-in-string-after-transformations-i.py) | precompute: _O(t + 26)_ <br>runtime: _O(n)_ | _O(t + 26)_ | Medium | | DP, Precompute
+3336 | [Find the Number of Subsequences With Equal GCD](https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/) | [C++](./C++/find-the-number-of-subsequences-with-equal-gcd.cpp) [Python](./Python/find-the-number-of-subsequences-with-equal-gcd.py) | _O(n * r^2 * logr)_ | _O(r^2)_ | Hard | | DP, Number Theory
+3337 | [Total Characters in String After Transformations II](https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/) | [C++](./C++/total-characters-in-string-after-transformations-ii.cpp) [Python](./Python/total-characters-in-string-after-transformations-ii.py) | _O(n + 26^3 * logt)_ | _O(26^2)_ | Hard | | DP, Matrix Exponentiation
 
 <br/>
 <div align="right">
@@ -1645,6 +1654,7 @@
 3308 | [Find Top Performing Driver](https://leetcode.com/problems/find-top-performing-driver/) | [MySQL](./MySQL/find-top-performing-driver.sql) | _O(tlogt)_ | _O(t)_       | Medium           |🔒| Window Function |
 3322 | [Premier League Table Ranking III](https://leetcode.com/problems/premier-league-table-ranking-iii/) | [MySQL](./MySQL/premier-league-table-ranking-iii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3328 | [Find Cities in Each State II](https://leetcode.com/problems/find-cities-in-each-state-ii/) | [MySQL](./MySQL/find-cities-in-each-state-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
+3338 | [Second Highest Salary II](https://leetcode.com/problems/second-highest-salary-ii/) | [MySQL](./MySQL/second-highest-salary-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
