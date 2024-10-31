@@ -32,7 +32,7 @@ class Solution(object):
             return lookup[a][b]
 
         MOD = 10**9+7
-        odd, even = (m+1)//2, m//2
+        even, odd = m//2, (m+1)//2
         result = 0
         if k == 0:
             result = (result+pow(odd, n))%MOD
@@ -53,7 +53,7 @@ class Solution2(object):
         :rtype: int
         """
         MOD = 10**9+7
-        odd, even = (m+1)//2, m//2
+        even, odd = m//2, (m+1)//2
         dp = [[0]*(k+1) for _ in xrange(2)]
         dp[0][0], dp[1][0] = even, odd
         for _ in xrange(n-1):
