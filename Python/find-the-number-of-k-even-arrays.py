@@ -34,6 +34,8 @@ class Solution(object):
         MOD = 10**9+7
         odd, even = (m+1)//2, m//2
         result = 0
-        for x in xrange(min(k, 1), (n+1-k)//2+1):  # since (n-(k+x))-((x+1)-2) >= 0, so x <= (n+1-k)/2
+        if k == 0:
+            result = (result+pow(odd, n))%MOD
+        for x in xrange(1, (n+1-k)//2+1):  # since (n-(k+x))-((x+1)-2) >= 0, so x <= (n+1-k)/2
             result = (result+(nHr(x, (k+x)-x)*nHr(x+1, (n-(k+x))-((x+1)-2))*pow(even, k+x)*pow(odd, n-(k+x))%MOD))%MOD
         return result
