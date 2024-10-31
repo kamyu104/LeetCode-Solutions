@@ -28,7 +28,7 @@ public:
                 dp[i + 1] = (dp[i + 1] + dp[i]) % MOD;
             }
             for (int i = size(dp) - 1; i >= l; --i) {
-                dp[i] = (dp[i] - dp[i - l]) % MOD;
+                dp[i] = ((dp[i] - dp[i - l]) % MOD + MOD) % MOD;
             }
         }
         return ((result - accumulate(cbegin(dp), cend(dp), 0, [](const auto& accu, const auto& x) {
