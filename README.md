@@ -680,7 +680,7 @@
 3312 | [Sorted GCD Pair Queries](https://leetcode.com/problems/sorted-gcd-pair-queries/) | [C++](./C++/sorted-gcd-pair-queries.cpp) [Python](./Python/sorted-gcd-pair-queries.py) | _O(rlogr + qlogr)_ | _O(r)_ | Hard | | Number Theory, Freq Table, Prefix Sum, Binary Search |
 3317 | [Find the Number of Possible Ways for an Event](https://leetcode.com/problems/find-the-number-of-possible-ways-for-an-event/) | [C++](./C++/find-the-number-of-possible-ways-for-an-event.cpp) [Python](./Python/find-the-number-of-possible-ways-for-an-event.py) | precompute: _O(max_n^2 + max_y * min(max_n, max_x))_<br>runtime: _O(min(n, x))_ | _O(max_n^2 + max_y * min(max_n, max_x))_ | Hard | | DP, Combinatorics |
 3326 | [Minimum Division Operations to Make Array Non Decreasing](https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/) | [C++](./C++/minimum-division-operations-to-make-array-non-decreasing.cpp) [Python](./Python/minimum-division-operations-to-make-array-non-decreasing.py) | precompute: _O(r)_<br>runtime: _O(n)_ | _O(r)_ | Medium | | Greedy, Number Theory, `Linear Sieve of Eratosthenes` |
-3339 | [Find the Number of K-Even Arrays](https://leetcode.com/problems/find-the-number-of-k-even-arrays/) | [C++](./C++/find-the-number-of-k-even-arrays.cpp) [Python](./Python/find-the-number-of-k-even-arrays.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Stars and Bars, Combinatorics |
+3339 | [Find the Number of K-Even Arrays](https://leetcode.com/problems/find-the-number-of-k-even-arrays/) | [C++](./C++/find-the-number-of-k-even-arrays.cpp) [Python](./Python/find-the-number-of-k-even-arrays.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | DP, Stars and Bars, Combinatorics |
 
 <br/>
 <div align="right">
