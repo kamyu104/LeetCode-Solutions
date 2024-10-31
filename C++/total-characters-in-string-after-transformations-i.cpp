@@ -1,4 +1,4 @@
-// Time:  O(t + 26)
+// Time:  O(n + t + 26)
 // Space: O(26)
 
 // dp
