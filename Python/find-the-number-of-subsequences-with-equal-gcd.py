@@ -1,6 +1,6 @@
 # Time:  precompute: O(max_r^2 * log(max_r))
-#.       runtime:    O(r^2)
-# Space: O(r^2)
+#        runtime:    O(r^2)
+# Space: O(max_r^2)
 
 # number theory, mobius function, principle of inclusion-exclusion
 MOD = 10**9+7
