@@ -1,4 +1,4 @@
-# Time:  O(n * (1 + 1/4 + 1/9 + ... + 1/x^2)) = O(pi^2 * 6 * n) = O(n), see https://en.wikipedia.org/wiki/Basel_problem
+# Time:  O(n * (1 + 1/4 + 1/9 + ... + 1/x^2)) = O(pi^2 / 6 * n) = O(n), see https://en.wikipedia.org/wiki/Basel_problem
 # Space: O(1)
 
 # number theory, basel problem
