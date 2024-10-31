@@ -70,3 +70,25 @@ private:
     vector<int> inv_fact_ = {1, 1};
     unordered_map<int, vector<int>> pow_;
 };
+
+// Time:  O(n * k)
+// Space: O(k)
+// dp
+class Solution2 {
+public:
+    int countOfArrays(int n, int m, int k) {
+        static const int MOD = 1e9 + 7;
+
+        const int odd = (m + 1) / 2, even = m / 2;
+        vector<vector<int>> dp(2, vector<int>(k + 1));
+        dp[0][0] = even;
+        dp[1][0] = odd;
+        for (int _ = 0; _ < n - 1; ++_) {
+            for (int i = k; i >= 0; --i) {
+                tie(dp[0][i], dp[1][i]) = pair((static_cast<int64_t>((i - 1 >= 0 ? dp[0][i - 1] : 0) + dp[1][i]) * even) % MOD,
+                                               (static_cast<int64_t>(dp[0][i] + dp[1][i]) * odd) % MOD);
+            }
+        }
+        return (dp[0][k] + dp[1][k]) % MOD;
+    }
+};
