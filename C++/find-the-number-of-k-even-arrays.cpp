@@ -8,7 +8,7 @@ public:
         const int odd = (m + 1) / 2, even = m / 2;
         int result = 0;
         if (k == 0) {
-            result += pow(odd, n);
+            result = (result + pow(odd, n)) % MOD;
         }
         for (int x = 1; x <= (n + 1 - k) / 2; ++x) {  // since (n-(k+x))-((x+1)-2) >= 0, so x <= (n+1-k)/2
             const auto a = static_cast<int64_t>(nHr(x, (k + x) - x)) * nHr(x + 1, (n - (k + x)) - ((x + 1) - 2)) % MOD;
