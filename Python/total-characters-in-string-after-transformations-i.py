@@ -20,6 +20,23 @@ class Solution(object):
         return reduce(lambda accu, x: (accu+x)%MOD, (DP[((ord(x)-ord('a'))+t)] for x in s), 0)
 
 
+# Time:  O(n + t + 26)
+# Space: O(26)
+# dp
+class Solution2(object):
+    def lengthAfterTransformations(self, s, t):
+        """
+        :type s: str
+        :type t: int
+        :rtype: int
+        """
+        MOD = 10**9+7
+        dp = [1]*26
+        for i in xrange(26, (ord(max(s))-ord('a')+t)+1):
+            dp[i%26] = (dp[(i-26)%26]+dp[((i-26)+1)%26])%MOD
+        return reduce(lambda accu, x: (accu+x)%MOD, (dp[((ord(x)-ord('a'))+t)%26] for x in s), 0)
+
+
 # Time:  O(n + 26^3 * logt)
 # Space: O(26^2)
 import itertools
@@ -59,23 +76,6 @@ class Solution2(object):
                 matrix[i][(i+j)%26] = 1
         matrix_pow_t = matrix_expo(matrix, t)
         return reduce(lambda accu, x: (accu+x)%MOD, matrix_mult([cnt], matrix_pow_t)[0], 0)
-
-
-# Time:  O(n + t + 26)
-# Space: O(26)
-# dp
-class Solution3(object):
-    def lengthAfterTransformations(self, s, t):
-        """
-        :type s: str
-        :type t: int
-        :rtype: int
-        """
-        MOD = 10**9+7
-        dp = [1]*26
-        for i in xrange(26, (ord(max(s))-ord('a')+t)+1):
-            dp[i%26] = (dp[(i-26)%26]+dp[((i-26)+1)%26])%MOD
-        return reduce(lambda accu, x: (accu+x)%MOD, (dp[((ord(x)-ord('a'))+t)%26] for x in s), 0)
 
 
 # Time:  O(n + t * 26)
