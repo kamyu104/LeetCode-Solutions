@@ -43,7 +43,7 @@ import itertools
 
 
 # matrix fast exponentiation
-class Solution2(object):
+class Solution3(object):
     def lengthAfterTransformations(self, s, t):
         """
         :type s: str
