@@ -34,6 +34,10 @@ public:
 class Solution2 {
 public:
     int lengthAfterTransformations(string s, int t) {
+        vector<int> cnt(26);
+        for (const auto& x : s) {
+            ++cnt[x - 'a'];
+        }
         vector<int> nums(26, 1);
         nums.back() = 2;
         vector<vector<int>> matrix(26, vector<int>(26));
@@ -43,10 +47,6 @@ public:
             }
         }
         const auto& matrix_pow_t = matrixExpo(matrix, t);
-        vector<int> cnt(26);
-        for (const auto& x : s) {
-            ++cnt[x - 'a'];
-        }
         const auto& result = matrixMult(vector<vector<int>>{{cnt}}, matrix_pow_t);
         return accumulate(cbegin(result[0]), cend(result[0]), 0, [](const auto& accu, const auto& x) {
             return (accu + x) % MOD;
@@ -87,7 +87,7 @@ private:
     static const int MOD = 1e9 + 7;
 };
 
-// Time:  O(t + 26)
+// Time:  O(n + t + 26)
 // Space: O(26)
 // dp
 class Solution3 {
@@ -105,5 +105,31 @@ public:
             result = (result + dp[((x - 'a') + t) % 26]) % MOD;
         }
         return result;
+    }
+};
+
+// Time:  O(n + t * 26)
+// Space: O(26)
+// dp
+class Solution4 {
+public:
+    int lengthAfterTransformations(string s, int t) {
+        vector<int> cnt(26);
+        for (const auto& x : s) {
+            ++cnt[x - 'a'];
+        }
+        for (int _ = 0; _ < t; ++_) {
+            vector<int> new_cnt(26);
+            for (int i = 0; i < 26; ++i) {
+                new_cnt[(i + 1) % 26] = (new_cnt[(i + 1) % 26] + cnt[i]) % MOD;
+                if (i == 25) {
+                    new_cnt[(i + 2) % 26] = (new_cnt[(i + 2) % 26] + cnt[i]) % MOD;
+                }
+            }
+            cnt = move(new_cnt);
+        }
+        return accumulate(cbegin(cnt), cend(cnt), 0, [](const auto& accu, const auto& x) {
+            return (accu + x) % MOD;
+        });
     }
 };
