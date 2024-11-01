@@ -61,7 +61,7 @@ class Solution2(object):
         return reduce(lambda accu, x: (accu+x)%MOD, matrix_mult([cnt], matrix_pow_t)[0], 0)
 
 
-# Time:  O(t + 26)
+# Time:  O(n + t + 26)
 # Space: O(26)
 # dp
 class Solution3(object):
@@ -78,7 +78,7 @@ class Solution3(object):
         return reduce(lambda accu, x: (accu+x)%MOD, (dp[((ord(x)-ord('a'))+t)%26] for x in s), 0)
 
 
-# Time:  O(t * 26)
+# Time:  O(n + t * 26)
 # Space: O(26)
 # dp
 class Solution4(object):
