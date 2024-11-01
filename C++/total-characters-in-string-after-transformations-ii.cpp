@@ -5,6 +5,10 @@
 class Solution {
 public:
     int lengthAfterTransformations(string s, int t, vector<int>& nums) {
+        vector<int> cnt(26);
+        for (const auto& x : s) {
+            ++cnt[x - 'a'];
+        }
         vector<vector<int>> matrix(26, vector<int>(26));
         for (int i = 0; i < size(nums); ++i) {
             for (int j = 1; j <= nums[i]; ++j) {
@@ -12,10 +16,6 @@ public:
             }
         }
         const auto& matrix_pow_t = matrixExpo(matrix, t);
-        vector<int> cnt(26);
-        for (const auto& x : s) {
-            ++cnt[x - 'a'];
-        }
         const auto& result = matrixMult(vector<vector<int>>{{cnt}}, matrix_pow_t);
         return accumulate(cbegin(result[0]), cend(result[0]), 0, [](const auto& accu, const auto& x) {
             return (accu + x) % MOD;
