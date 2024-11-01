@@ -48,6 +48,9 @@ class Solution2(object):
                 K /= 2
             return result
 
+        cnt = [0]*26
+        for x in s:
+            cnt[ord(x)-ord('a')] += 1
         nums = [1]*26
         nums[-1] = 2
         matrix = [[0]*26 for _ in xrange(26)]
@@ -55,9 +58,6 @@ class Solution2(object):
             for j in xrange(1, nums[i]+1):
                 matrix[i][(i+j)%26] = 1
         matrix_pow_t = matrix_expo(matrix, t)
-        cnt = [0]*26
-        for x in s:
-            cnt[ord(x)-ord('a')] += 1
         return reduce(lambda accu, x: (accu+x)%MOD, matrix_mult([cnt], matrix_pow_t)[0], 0)
 
 
@@ -76,3 +76,27 @@ class Solution3(object):
         for i in xrange(26, (ord(max(s))-ord('a')+t)+1):
             dp[i%26] = (dp[(i-26)%26]+dp[((i-26)+1)%26])%MOD
         return reduce(lambda accu, x: (accu+x)%MOD, (dp[((ord(x)-ord('a'))+t)%26] for x in s), 0)
+
+
+# Time:  O(t * 26)
+# Space: O(26)
+# dp
+class Solution4(object):
+    def lengthAfterTransformations(self, s, t):
+        """
+        :type s: str
+        :type t: int
+        :rtype: int
+        """
+        MOD = 10**9+7
+        cnt = [0]*26
+        for x in s:
+            cnt[ord(x)-ord('a')] += 1
+        for _ in xrange(t):
+            new_cnt = [0]*26
+            for i in xrange(26):
+                new_cnt[(i+1)%26] = (new_cnt[(i+1)%26]+cnt[i])%MOD
+                if i == 25:
+                    new_cnt[(i+2)%26] = (new_cnt[(i+2)%26]+cnt[i])%MOD
+            cnt = new_cnt
+        return reduce(lambda accu, x: (accu+x)%MOD, cnt, 0)
