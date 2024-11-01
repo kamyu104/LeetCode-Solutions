@@ -27,12 +27,12 @@ class Solution(object):
                 K /= 2
             return result
 
+        cnt = [0]*26
+        for x in s:
+            cnt[ord(x)-ord('a')] += 1
         matrix = [[0]*26 for _ in xrange(26)]
         for i in xrange(len(nums)):
             for j in xrange(1, nums[i]+1):
                 matrix[i][(i+j)%26] = 1
         matrix_pow_t = matrix_expo(matrix, t)
-        cnt = [0]*26
-        for x in s:
-            cnt[ord(x)-ord('a')] += 1
         return reduce(lambda accu, x: (accu+x)%MOD, matrix_mult([cnt], matrix_pow_t)[0], 0)
