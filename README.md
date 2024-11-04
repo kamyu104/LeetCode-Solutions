@@ -314,6 +314,7 @@
 3280 | [Convert Date to Binary](https://leetcode.com/problems/convert-date-to-binary/) | [C++](./C++/convert-date-to-binary.cpp) [Python](./Python/convert-date-to-binary.py) | _O(1)_ | _O(1)_ | Easy | | String
 3303 | [Find the Occurrence of First Almost Equal Substring](https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/) | [C++](./C++/find-the-occurrence-of-first-almost-equal-substring.cpp) [Python](./Python/find-the-occurrence-of-first-almost-equal-substring.py) | _O(n + m)_   | _O(n + m)_        | Hard         | | `Z-Function`
 3324 | [Find the Sequence of Strings Appeared on the Screen](https://leetcode.com/problems/find-the-sequence-of-strings-appeared-on-the-screen/) | [C++](./C++/find-the-sequence-of-strings-appeared-on-the-screen.cpp) [Python](./Python/find-the-sequence-of-strings-appeared-on-the-screen.py) | _O(n^2)_   | _O(1)_        | Medium         | | String
+3340 | [Check Balanced String](https://leetcode.com/problems/check-balanced-string/) | [C++](./C++/check-balanced-string.cpp) [Python](./Python/check-balanced-string.py) | _O(n)_   | _O(1)_        | Easy         | | String
 
 <br/>
 <div align="right">
@@ -1144,6 +1145,7 @@
 3335 | [Total Characters in String After Transformations I](https://leetcode.com/problems/total-characters-in-string-after-transformations-i/) | [C++](./C++/total-characters-in-string-after-transformations-i.cpp) [Python](./Python/total-characters-in-string-after-transformations-i.py) | precompute: _O(t + 26)_ <br>runtime: _O(n)_ | _O(t + 26)_ | Medium | | DP, Matrix Exponentiation, Precompute
 3336 | [Find the Number of Subsequences With Equal GCD](https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/) | [C++](./C++/find-the-number-of-subsequences-with-equal-gcd.cpp) [Python](./Python/find-the-number-of-subsequences-with-equal-gcd.py) | precompute: _O(max_r^2 * log(max_r))_ <br> runtime: O(n + r^2) | _O(max_r^2)_ | Hard | | DP, Number Theory, Mobius Function, Principle of Inclusion-Exclusion, `Basel Problem`
 3337 | [Total Characters in String After Transformations II](https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/) | [C++](./C++/total-characters-in-string-after-transformations-ii.cpp) [Python](./Python/total-characters-in-string-after-transformations-ii.py) | _O(n + 26^3 * logt)_ | _O(26^2)_ | Hard | | DP, Matrix Exponentiation
+3343 | [Count Number of Balanced Permutations](https://leetcode.com/problems/count-number-of-balanced-permutations/) | [C++](./C++/count-number-of-balanced-permutations.cpp) [Python](./Python/count-number-of-balanced-permutations.py) | _O(n^2)_ | _O(n^2)_ | Hard | | DP, Combinatorics
 
 <br/>
 <div align="right">
@@ -1352,6 +1354,8 @@
 3267 | [Count Almost Equal Pairs II](https://leetcode.com/problems/count-almost-equal-pairs-ii/) | [C++](./C++/count-almost-equal-pairs-ii.cpp) [Python](./Python/count-almost-equal-pairs-ii.py) | _O(n * l^4)_ | _O(n)_ | Hard | | Freq Table, Combinatorics, Graph, BFS |
 3276 | [Select Cells in Grid With Maximum Score](https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/) | [C++](./C++/select-cells-in-grid-with-maximum-score.cpp) [Python](./Python/select-cells-in-grid-with-maximum-score.py) | _O(n^2 * max(n, r))_ | _O(n * max(n, r))_ | Hard | variant of [Maximum Compatibility Score Sum](https://leetcode.com/problems/maximum-compatibility-score-sum/) | `Hungarian Weighted Bipartite Matching`, DP, Bitmasks |
 3310 | [Remove Methods From Project](https://leetcode.com/problems/remove-methods-from-project/)| [C++](./C++/remove-methods-from-project.cpp) [Python](./Python/remove-methods-from-project.py)| _O(n + e)_ | _O(n + e)_ | Medium | | Graph, BFS |
+3341 | [Find Minimum Time to Reach Last Room I](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/)  | [C++](./C++/find-minimum-time-to-reach-last-room-i.cpp) [Python](./Python/find-minimum-time-to-reach-last-room-i.py) |  _O(n * m * log(n * m))_ | _O(n * m)_ | Medium           | | Graph, `Dijkstra's Algorithm` |
+3342 | [Find Minimum Time to Reach Last Room II](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/)  | [C++](./C++/find-minimum-time-to-reach-last-room-ii.cpp) [Python](./Python/find-minimum-time-to-reach-last-room-ii.py) |  _O(n * m * log(n * m))_ | _O(n * m)_ | Medium           | | Graph, `Dijkstra's Algorithm` |
 
 <br/>
 <div align="right">
