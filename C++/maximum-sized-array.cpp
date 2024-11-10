@@ -15,9 +15,11 @@ public:
 
         for (; vol.back() <= s; ++i) {
             const int l = bit_length(i - 1);
-            int line = 0;
+            int line = (i - 1) * ((i - 1) - 0 + 1);
             for (int bit = 0; bit < l; ++bit) {
-                line += ((i - 1) & (1 << bit) ? i : ((i - 1) >> (bit + 1)) * (1 << bit)) * (1 << bit);
+                if (!((i - 1) & (1 << bit))) {
+                    line += (((i - 1) >> (bit + 1)) * (1 << bit)) * (1 << bit);
+                }
             }
             area += 2 * line - ((i - 1) | (i - 1));
             vol.emplace_back(((0 + (i - 1)) * i / 2) * area);
