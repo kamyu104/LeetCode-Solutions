@@ -1,4 +1,4 @@
-# Time:  precompute: O(max_s^(1/5))
+# Time:  precompute: O(max_s^(2/5))
 #        runtime:    O(log(max_s))
 # Space: O(max_s^(1/5))
 
