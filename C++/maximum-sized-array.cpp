@@ -2,7 +2,7 @@
 //        runtime:    O(log(max_s))
 // Space: O(max_s^(1/5))
 
-// precompute, binary search
+// precompute, bitmasks, binary search
 int i = 1;
 int64_t area = 0;
 vector<int64_t> vol = {0};
