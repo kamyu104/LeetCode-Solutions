@@ -5,7 +5,7 @@
 import bisect 
 
 
-# precompute, binary search
+# precompute, bitmasks, combinatorics, binary search
 i, area = 1, 0
 vol = [0]
 class Solution(object):
