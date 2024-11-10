@@ -6,8 +6,7 @@ import bisect
 
 
 # precompute, binary search
-i = 1
-area = 0
+i, area = 1, 0
 vol = [0]
 class Solution(object):
     def maxSizedArray(self, s):
