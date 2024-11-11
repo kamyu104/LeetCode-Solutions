@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// sort, two pointers, sliding window
+// sort, freq table, two pointers, sliding window
 class Solution {
 public:
     int maxFrequency(vector<int>& nums, int k, int numOperations) {
@@ -22,6 +22,31 @@ public:
                 ++left;
             }
             result = max(result, min(right - left + 1, numOperations));
+        }
+        return result;
+    }
+};
+
+// Time:  O(nlogn)
+// Space: O(n)
+// sort, freq table, difference array, line sweep
+class Solution2 {
+public:
+    int maxFrequency(vector<int>& nums, int k, int numOperations) {
+        unordered_map<int, int> cnt;
+        for (const auto& x : nums) {
+            ++cnt[x];
+        }
+        map<int, int> diff;
+        for (const auto& x : nums) {
+            diff[x] += 0;
+            ++diff[x - k];
+            --diff[x + k + 1];
+        }
+        int result = 0, curr = 0;
+        for (const auto& [x, c] : diff) {
+            curr += c;
+            result = max(result, cnt[x] + min(curr - cnt[x], numOperations));
         }
         return result;
     }
