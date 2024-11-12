@@ -16,7 +16,7 @@ class Solution(object):
         MOD = 10**9+7
         while len(s) >= len(cnt):  # cached
             cnt.append(cnt[popcount(len(cnt))]+1)
-        dp = [0]*(len(s)+1)
+        dp = [0]*len(s)
         curr = 0
         for i in xrange(len(s)):
             for j in reversed(range(i)):
@@ -25,5 +25,5 @@ class Solution(object):
                 continue
             dp[curr] = (dp[curr]+1)%MOD
             curr += 1
-        return reduce(lambda accu, x: (accu+x)%MOD, (dp[i] for i in xrange(1, len(s)+1) if cnt[i] < k))
+        return reduce(lambda accu, x: (accu+x)%MOD, (dp[i] for i in xrange(1, len(s)) if cnt[i] < k), 0)
 
