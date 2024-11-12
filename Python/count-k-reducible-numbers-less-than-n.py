@@ -14,7 +14,7 @@ class Solution(object):
             return bin(x).count('1')
 
         MOD = 10**9+7
-        while len(s) >= len(cnt):  # cached
+        while len(s)-1 >= len(cnt):  # cached
             cnt.append(cnt[popcount(len(cnt))]+1)
         dp = [0]*len(s)
         curr = 0
