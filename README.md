@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3343%20%2F%203343-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3352%20%2F%203352-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -98,6 +98,7 @@
 3307| [Find the K-th Character in String Game II](https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/) | [C++](./C++/find-the-k-th-character-in-string-game-ii.cpp) [Python](./Python/find-the-k-th-character-in-string-game-ii.py) | _O(1)_ | _O(1)_ | Hard | | Bitmasks
 3314 | [Construct the Minimum Bitwise Array I](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [C++](./C++/construct-the-minimum-bitwise-array-i.cpp) [Python](./Python/construct-the-minimum-bitwise-array-i.py) | _O(n)_ | _O(1)_ | Easy | | Bit Manipulation
 3315 | [Construct the Minimum Bitwise Array II](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [C++](./C++/construct-the-minimum-bitwise-array-ii.cpp) [Python](./Python/construct-the-minimum-bitwise-array-ii.py) | _O(n)_ | _O(1)_ | Medium | | Bit Manipulation
+3344 | [Maximum Sized Array](https://leetcode.com/problems/maximum-sized-array/) | [C++](./C++/maximum-sized-array.cpp) [Python](./Python/maximum-sized-array.py) | precompute: O(max_s^(1/5) * log(max_s))<br>runtime: O(log(max_s)) | _O(max_s^(1/5))_ | Medium | 🔒 | Precompute, Bitmasks, Combinatorics, Binary Search
 
 <br/>
 <div align="right">
@@ -230,6 +231,8 @@
 3300 | [Minimum Element After Replacement With Digit Sum](https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/) | [C++](./C++/minimum-element-after-replacement-with-digit-sum.cpp) [Python](./Python/minimum-element-after-replacement-with-digit-sum.py) | _O(nlogr)_ | _O(1)_ | Easy | | Array
 3330 | [Find the Original Typed String I](https://leetcode.com/problems/find-the-original-typed-string-i/) | [C++](./C++/find-the-original-typed-string-i.cpp) [Python](./Python/find-the-original-typed-string-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3334 | [Find the Maximum Factor Score of Array](https://leetcode.com/problems/find-the-maximum-factor-score-of-array/) | [C++](./C++/find-the-maximum-factor-score-of-array.cpp) [Python](./Python/find-the-maximum-factor-score-of-array.py) | _O(nlogr)_ | _O(n)_ | Medium | | Prefix Sum
+3349 | [Adjacent Increasing Subarrays Detection I](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/) | [C++](./C++/adjacent-increasing-subarrays-detection-i.cpp) [Python](./Python/adjacent-increasing-subarrays-detection-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3350 | [Adjacent Increasing Subarrays Detection II](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/) | [C++](./C++/adjacent-increasing-subarrays-detection-ii.cpp) [Python](./Python/adjacent-increasing-subarrays-detection-ii.py) | _O(n)_ | _O(1)_ | Medium | | Array
 
 <br/>
 <div align="right">
@@ -682,6 +685,8 @@
 3317 | [Find the Number of Possible Ways for an Event](https://leetcode.com/problems/find-the-number-of-possible-ways-for-an-event/) | [C++](./C++/find-the-number-of-possible-ways-for-an-event.cpp) [Python](./Python/find-the-number-of-possible-ways-for-an-event.py) | precompute: _O(max_n^2 + max_y * min(max_n, max_x))_<br>runtime: _O(min(n, x))_ | _O(max_n^2 + max_y * min(max_n, max_x))_ | Hard | | DP, Combinatorics |
 3326 | [Minimum Division Operations to Make Array Non Decreasing](https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/) | [C++](./C++/minimum-division-operations-to-make-array-non-decreasing.cpp) [Python](./Python/minimum-division-operations-to-make-array-non-decreasing.py) | precompute: _O(r)_<br>runtime: _O(n)_ | _O(r)_ | Medium | | Greedy, Number Theory, `Linear Sieve of Eratosthenes` |
 3339 | [Find the Number of K-Even Arrays](https://leetcode.com/problems/find-the-number-of-k-even-arrays/) | [C++](./C++/find-the-number-of-k-even-arrays.cpp) [Python](./Python/find-the-number-of-k-even-arrays.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | DP, Stars and Bars, Combinatorics |
+3345 | [Smallest Divisible Digit Product I](https://leetcode.com/problems/smallest-divisible-digit-product-i/) | [C++](./C++/smallest-divisible-digit-product-i.cpp) [Python](./Python/smallest-divisible-digit-product-i.py) | _O(logn)_ | _O(1)_ | Easy | | Brute Force |
+3348 | [Smallest Divisible Digit Product II](https://leetcode.com/problems/smallest-divisible-digit-product-ii/) | [C++](./C++/smallest-divisible-digit-product-ii.cpp) [Python](./Python/smallest-divisible-digit-product-ii.py) | _O(n + logt)_ | _O(1)_ | Hard | | Freq Table, Greedy, Prefix Sum, Number Theory |
 
 <br/>
 <div align="right">
@@ -816,6 +821,8 @@
 3323 | [Minimize Connected Groups by Inserting Interval](https://leetcode.com/problems/minimize-connected-groups-by-inserting-interval/) | [C++](./C++/minimize-connected-groups-by-inserting-interval.cpp) [Python](./Python/minimize-connected-groups-by-inserting-interval.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Sort, Prefix Sum, Two Pointers, Sliding Window
 3325 | [Count Substrings With K-Frequency Characters I](https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/) | [C++](./C++/count-substrings-with-k-frequency-characters-i.cpp) [Python](./Python/count-substrings-with-k-frequency-characters-i.py) | _O(n + 26)_ | _O(26)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 3329 | [Count Substrings With K-Frequency Characters II](https://leetcode.com/problems/count-substrings-with-k-frequency-characters-ii/) | [C++](./C++/count-substrings-with-k-frequency-characters-ii.cpp) [Python](./Python/count-substrings-with-k-frequency-characters-ii.py) | _O(n + 26)_ | _O(26)_ | Hard | 🔒 | Freq Table, Two Pointers, Sliding Window
+3346 | [Maximum Frequency of an Element After Performing Operations I](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/) | [C++](./C++/maximum-frequency-of-an-element-after-performing-operations-i.cpp) [Python](./Python/maximum-frequency-of-an-element-after-performing-operations-i.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Freq Table, Two Pointers, Sliding Window, Difference Array, Line Sweep
+3347 | [Maximum Frequency of an Element After Performing Operations II](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/) | [C++](./C++/maximum-frequency-of-an-element-after-performing-operations-ii.cpp) [Python](./Python/maximum-frequency-of-an-element-after-performing-operations-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Freq Table, Two Pointers, Sliding Window, Difference Array, Line Sweep
 
 <br/>
 <div align="right">
@@ -1146,6 +1153,8 @@
 3336 | [Find the Number of Subsequences With Equal GCD](https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/) | [C++](./C++/find-the-number-of-subsequences-with-equal-gcd.cpp) [Python](./Python/find-the-number-of-subsequences-with-equal-gcd.py) | precompute: _O(max_r^2 * log(max_r))_ <br> runtime: O(n + r^2) | _O(max_r^2)_ | Hard | | DP, Number Theory, Mobius Function, Principle of Inclusion-Exclusion, `Basel Problem`
 3337 | [Total Characters in String After Transformations II](https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/) | [C++](./C++/total-characters-in-string-after-transformations-ii.cpp) [Python](./Python/total-characters-in-string-after-transformations-ii.py) | _O(n + 26^3 * logt)_ | _O(26^2)_ | Hard | | DP, Matrix Exponentiation
 3343 | [Count Number of Balanced Permutations](https://leetcode.com/problems/count-number-of-balanced-permutations/) | [C++](./C++/count-number-of-balanced-permutations.cpp) [Python](./Python/count-number-of-balanced-permutations.py) | _O(n^2)_ | _O(n^2)_ | Hard | | DP, Combinatorics
+3351 | [Sum of Good Subsequences](https://leetcode.com/problems/sum-of-good-subsequences/) | [C++](./C++/sum-of-good-subsequences.cpp) [Python](./Python/sum-of-good-subsequences.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, DP
+3352 | [Count K-Reducible Numbers Less Than N](https://leetcode.com/problems/count-k-reducible-numbers-less-than-n/) | [C++](./C++/count-k-reducible-numbers-less-than-n.cpp) [Python](./Python/count-k-reducible-numbers-less-than-n.py) | _O(n^2)_ | _O(n)_ | Hard | | DP
 
 <br/>
 <div align="right">
