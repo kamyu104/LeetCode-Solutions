@@ -61,6 +61,7 @@ class Solution(object):
                 return "".join(map(str, nums[:i]))+str(x)+format(tmp, len(nums)-1-i)
         return format(min_factors(diff(expect, total)), len(nums)+1)
 
+
 # Time:  O(nlogt)
 # Space: O(logt)
 # freq table, greedy, prefix sum, number theory
