@@ -8,7 +8,7 @@ public:
     int countKReducibleNumbers(string s, int k) {
         static const int MOD = 1e9 + 7;
 
-        while (size(s) >= size(cnt)) {  // cached
+        while (size(s) - 1 >= size(cnt)) {  // cached
             cnt.emplace_back(cnt[__builtin_popcount(size(cnt))] + 1);
         }
         vector<int> dp(size(s));
