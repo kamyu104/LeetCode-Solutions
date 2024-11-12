@@ -11,7 +11,7 @@ public:
         while (size(s) >= size(cnt)) {  // cached
             cnt.emplace_back(cnt[__builtin_popcount(size(cnt))] + 1);
         }
-        vector<int> dp(size(s) + 1);
+        vector<int> dp(size(s));
         for (int i = 0, curr = 0; i < size(s); ++i) {
             for (int j = i - 1; j >= 0; --j) {
                 dp[j + 1] = (dp[j + 1] + dp[j]) % MOD;
@@ -23,7 +23,7 @@ public:
             ++curr;
         }
         int result = 0;
-        for (int i = 1; i <= size(s); ++i) {
+        for (int i = 1; i < size(s); ++i) {
             if (cnt[i] < k) {
                 result = (result + dp[i]) % MOD;
             }
