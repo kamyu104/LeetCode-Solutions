@@ -51,6 +51,7 @@ public:
             }
             return (((static_cast<int64_t>(fact[n]) * inv_fact[n - k]) % MOD) * inv_fact[k]) % MOD;
         };
+
         while (size(s) - 1 >= size(cnt)) {  // cached
             cnt.emplace_back(cnt[__builtin_popcount(size(cnt))] + 1);
         }
