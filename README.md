@@ -1154,7 +1154,7 @@
 3337 | [Total Characters in String After Transformations II](https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/) | [C++](./C++/total-characters-in-string-after-transformations-ii.cpp) [Python](./Python/total-characters-in-string-after-transformations-ii.py) | _O(n + 26^3 * logt)_ | _O(26^2)_ | Hard | | DP, Matrix Exponentiation
 3343 | [Count Number of Balanced Permutations](https://leetcode.com/problems/count-number-of-balanced-permutations/) | [C++](./C++/count-number-of-balanced-permutations.cpp) [Python](./Python/count-number-of-balanced-permutations.py) | _O(n^2)_ | _O(n^2)_ | Hard | | DP, Combinatorics
 3351 | [Sum of Good Subsequences](https://leetcode.com/problems/sum-of-good-subsequences/) | [C++](./C++/sum-of-good-subsequences.cpp) [Python](./Python/sum-of-good-subsequences.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, DP
-3352 | [Count K-Reducible Numbers Less Than N](https://leetcode.com/problems/count-k-reducible-numbers-less-than-n/) | [C++](./C++/count-k-reducible-numbers-less-than-n.cpp) [Python](./Python/count-k-reducible-numbers-less-than-n.py) | _O(n^2)_ | _O(n)_ | Hard | | DP
+3352 | [Count K-Reducible Numbers Less Than N](https://leetcode.com/problems/count-k-reducible-numbers-less-than-n/) | [C++](./C++/count-k-reducible-numbers-less-than-n.cpp) [Python](./Python/count-k-reducible-numbers-less-than-n.py) | _O(n^2)_ | _O(n)_ | Hard | | DP, Combinatorics
 
 <br/>
 <div align="right">
