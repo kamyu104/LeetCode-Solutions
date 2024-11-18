@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3352%20%2F%203352-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3358%20%2F%203358-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -233,6 +233,9 @@
 3334 | [Find the Maximum Factor Score of Array](https://leetcode.com/problems/find-the-maximum-factor-score-of-array/) | [C++](./C++/find-the-maximum-factor-score-of-array.cpp) [Python](./Python/find-the-maximum-factor-score-of-array.py) | _O(nlogr)_ | _O(n)_ | Medium | | Prefix Sum
 3349 | [Adjacent Increasing Subarrays Detection I](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/) | [C++](./C++/adjacent-increasing-subarrays-detection-i.cpp) [Python](./Python/adjacent-increasing-subarrays-detection-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3350 | [Adjacent Increasing Subarrays Detection II](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/) | [C++](./C++/adjacent-increasing-subarrays-detection-ii.cpp) [Python](./Python/adjacent-increasing-subarrays-detection-ii.py) | _O(n)_ | _O(1)_ | Medium | | Array
+3353 | [Minimum Total Operations](https://leetcode.com/problems/minimum-total-operations/) | [C++](./C++/minimum-total-operations.cpp) [Python](./Python/minimum-total-operations.py) | _O(n)_   | _O(1)_        | Easy         | 🔒 | Array
+3354 | [Make Array Elements Equal to Zero](https://leetcode.com/problems/make-array-elements-equal-to-zero/) | [C++](./C++/make-array-elements-equal-to-zero.cpp) [Python](./Python/make-array-elements-equal-to-zero.py) | _O(n)_   | _O(n)_        | Easy         | [CodeChef Starters 146 - Bouncing Ball](https://www.codechef.com/problems/BOUNCE_BALL) | Prefix Sum
+3355 | [Zero Array Transformation I](https://leetcode.com/problems/zero-array-transformation-i/) | [C++](./C++/zero-array-transformation-i.cpp) [Python](./Python/zero-array-transformation-i.py) | _O(n + q)_   | _O(n)_        | Medium         | | Line Sweep
 
 <br/>
 <div align="right">
@@ -881,6 +884,8 @@
 3281 | [Maximize Score of Numbers in Ranges](https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/) | [C++](./C++/maximize-score-of-numbers-in-ranges.cpp) [Python](./Python/maximize-score-of-numbers-in-ranges.py) | _O(nlogr)_ | _O(1)_ | Medium | | Binary Search, Greedy
 3288 | [Length of the Longest Increasing Path](https://leetcode.com/problems/length-of-the-longest-increasing-path/) | [C++](./C++/length-of-the-longest-increasing-path.cpp) [Python](./Python/length-of-the-longest-increasing-path.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Binary Search, Longest Increasing Subsequence
 3296 | [Minimum Number of Seconds to Make Mountain Height Zero](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) | [C++](./C++/minimum-number-of-seconds-to-make-mountain-height-zero.cpp) [Python](./Python/minimum-number-of-seconds-to-make-mountain-height-zero.py) | _O(nlogr)_ | _O(1)_ | Medium | | Binary Search, Quadratic Equation, Heap
+3356 | [Zero Array Transformation II](https://leetcode.com/problems/zero-array-transformation-ii/) | [C++](./C++/zero-array-transformation-ii.cpp) [Python](./Python/zero-array-transformation-ii.py) | _O((n + q) * logn)_   | _O(n)_        | Medium         | | Binary Search, Line Sweep
+3357 | [Minimize the Maximum Adjacent Element Difference](https://leetcode.com/problems/minimize-the-maximum-adjacent-element-difference/) | [C++](./C++/minimize-the-maximum-adjacent-element-difference.cpp) [Python](./Python/minimize-the-maximum-adjacent-element-difference.py) | _O(nlogr)_   | _O(1)_        | Hard         | | Binary Search
 
 <br/>
 
@@ -1668,6 +1673,7 @@
 3322 | [Premier League Table Ranking III](https://leetcode.com/problems/premier-league-table-ranking-iii/) | [MySQL](./MySQL/premier-league-table-ranking-iii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3328 | [Find Cities in Each State II](https://leetcode.com/problems/find-cities-in-each-state-ii/) | [MySQL](./MySQL/find-cities-in-each-state-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
 3338 | [Second Highest Salary II](https://leetcode.com/problems/second-highest-salary-ii/) | [MySQL](./MySQL/second-highest-salary-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
+3358 | [Books with NULL Ratings](https://leetcode.com/problems/books-with-null-ratings/) | [MySQL](./MySQL/books-with-null-ratings.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
