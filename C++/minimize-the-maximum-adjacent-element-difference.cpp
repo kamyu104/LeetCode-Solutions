@@ -29,7 +29,7 @@ public:
                 left = min(left, nums[i - 1]);
                 right = max(right, nums[i - 1]);
             }
-            if (i + 1 < size(nums) &&  nums[i + 1] != -1) {
+            if (i + 1 < size(nums) && nums[i + 1] != -1) {
                 left = min(left, nums[i + 1]);
                 right = max(right, nums[i + 1]);
             }
