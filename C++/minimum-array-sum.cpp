@@ -19,7 +19,7 @@ public:
                     }
                     if (i - 1 >= 0 && j - 1 >= 0) {
                         if (x - k >= 0) {
-                            dp[i][j] = min(dp[i][j], dp[i - 1][j - 1] - x + (((x - k) + 1) / 2));
+                            dp[i][j] = min(dp[i][j], dp[i - 1][j - 1] - x + ((x - k) + 1) / 2);
                         }
                         if ((x + 1) / 2 - k >= 0) {
                             dp[i][j] = min(dp[i][j], dp[i - 1][j - 1] - x + ((x + 1) / 2 - k));
