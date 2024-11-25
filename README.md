@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3358%20%2F%203358-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3368%20%2F%203368-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -236,6 +236,7 @@
 3353 | [Minimum Total Operations](https://leetcode.com/problems/minimum-total-operations/) | [C++](./C++/minimum-total-operations.cpp) [Python](./Python/minimum-total-operations.py) | _O(n)_   | _O(1)_        | Easy         | 🔒 | Array
 3354 | [Make Array Elements Equal to Zero](https://leetcode.com/problems/make-array-elements-equal-to-zero/) | [C++](./C++/make-array-elements-equal-to-zero.cpp) [Python](./Python/make-array-elements-equal-to-zero.py) | _O(n)_   | _O(n)_        | Easy         | [CodeChef Starters 146 - Bouncing Ball](https://www.codechef.com/problems/BOUNCE_BALL) | Prefix Sum
 3355 | [Zero Array Transformation I](https://leetcode.com/problems/zero-array-transformation-i/) | [C++](./C++/zero-array-transformation-i.cpp) [Python](./Python/zero-array-transformation-i.py) | _O(n + q)_   | _O(n)_        | Medium         | | Line Sweep
+3361 | [Shift Distance Between Two Strings](https://leetcode.com/problems/shift-distance-between-two-strings/) | [C++](./C++/shift-distance-between-two-strings.cpp) [Python](./Python/shift-distance-between-two-strings.py) | _O(n + 26)_   | _O(26)_        | Medium         | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -552,6 +553,7 @@
 3238 | [Find the Number of Winning Players](https://leetcode.com/problems/find-the-number-of-winning-players/) | [C++](./C++/find-the-number-of-winning-players.cpp) [Python](./Python/find-the-number-of-winning-players.py) | _O(p)_  | _O(min(n * c, p)_ | Easy | | Freq Table
 3245 | [Alternating Groups III](https://leetcode.com/problems/alternating-groups-iii/) | [C++](./C++/alternating-groups-iii.cpp) [Python](./Python/alternating-groups-iii.py) | _O(nlogn + qlogn)_ | _O(n)_ | Hard | | BST, Sorted List, Freq Table, BIT, Fenwick Tree
 3295 | [Report Spam Message](https://leetcode.com/problems/report-spam-message/) | [C++](./C++/report-spam-message.cpp) [Python](./Python/report-spam-message.py) | _O(n + m)_ | _O(m)_ | Medium | | Hash Table
+3365 | [Rearrange K Substrings to Form Target String](https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/) | [C++](./C++/rearrange-k-substrings-to-form-target-string.cpp) [Python](./Python/rearrange-k-substrings-to-form-target-string.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
 
 <br/>
 <div align="right">
@@ -690,6 +692,7 @@
 3339 | [Find the Number of K-Even Arrays](https://leetcode.com/problems/find-the-number-of-k-even-arrays/) | [C++](./C++/find-the-number-of-k-even-arrays.cpp) [Python](./Python/find-the-number-of-k-even-arrays.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | DP, Stars and Bars, Combinatorics |
 3345 | [Smallest Divisible Digit Product I](https://leetcode.com/problems/smallest-divisible-digit-product-i/) | [C++](./C++/smallest-divisible-digit-product-i.cpp) [Python](./Python/smallest-divisible-digit-product-i.py) | _O(logn)_ | _O(1)_ | Easy | | Brute Force |
 3348 | [Smallest Divisible Digit Product II](https://leetcode.com/problems/smallest-divisible-digit-product-ii/) | [C++](./C++/smallest-divisible-digit-product-ii.cpp) [Python](./Python/smallest-divisible-digit-product-ii.py) | _O(n + logt)_ | _O(1)_ | Hard | | Freq Table, Greedy, Prefix Sum, Number Theory |
+3360 | [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/) | [C++](./C++/stone-removal-game.cpp) [Python](./Python/stone-removal-game.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 
 <br/>
 <div align="right">
@@ -826,6 +829,7 @@
 3329 | [Count Substrings With K-Frequency Characters II](https://leetcode.com/problems/count-substrings-with-k-frequency-characters-ii/) | [C++](./C++/count-substrings-with-k-frequency-characters-ii.cpp) [Python](./Python/count-substrings-with-k-frequency-characters-ii.py) | _O(n + 26)_ | _O(26)_ | Hard | 🔒 | Freq Table, Two Pointers, Sliding Window
 3346 | [Maximum Frequency of an Element After Performing Operations I](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/) | [C++](./C++/maximum-frequency-of-an-element-after-performing-operations-i.cpp) [Python](./Python/maximum-frequency-of-an-element-after-performing-operations-i.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Freq Table, Two Pointers, Sliding Window, Difference Array, Line Sweep
 3347 | [Maximum Frequency of an Element After Performing Operations II](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/) | [C++](./C++/maximum-frequency-of-an-element-after-performing-operations-ii.cpp) [Python](./Python/maximum-frequency-of-an-element-after-performing-operations-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Freq Table, Two Pointers, Sliding Window, Difference Array, Line Sweep
+3364 | [Minimum Positive Sum Subarray](https://leetcode.com/problems/minimum-positive-sum-subarray/) | [C++](./C++/minimum-positive-sum-subarray.cpp) [Python](./Python/minimum-positive-sum-subarray.py) | _O(nlogn)_ | _O(n)_ | Easy | | Prefix Sum, Two Pointers, Sliding Window, Sorted List, BST, Binary Search
 
 <br/>
 <div align="right">
@@ -979,6 +983,7 @@
 3319 | [K-th Largest Perfect Subtree Size in Binary Tree](https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/)| [C++](./C++/k-th-largest-perfect-subtree-size-in-binary-tree.cpp) [Python](./Python/k-th-largest-perfect-subtree-size-in-binary-tree.py)| _O(n)_ | _O(n)_ | Medium |  | DFS, Quick Select |
 3327 | [Check if DFS Strings Are Palindromes](https://leetcode.com/problems/check-if-dfs-strings-are-palindromes/)| [C++](./C++/check-if-dfs-strings-are-palindromes.cpp) [Python](./Python/check-if-dfs-strings-are-palindromes.py)| _O(n)_ | _O(n)_ | Hard |  | DFS, `Manacher's Algorithm` |
 3331 | [Find Subtree Sizes After Changes](https://leetcode.com/problems/find-subtree-sizes-after-changes/)| [C++](./C++/find-subtree-sizes-after-changes.cpp) [Python](./Python/find-subtree-sizes-after-changes.py)| _O(n)_ | _O(n)_ | Medium |  | DFS, Hash Table |
+3367 | [Maximize Sum of Weights after Edge Removals](https://leetcode.com/problems/maximize-sum-of-weights-after-edge-removals/)| [C++](./C++/maximize-sum-of-weights-after-edge-removals.cpp) [Python](./Python/maximize-sum-of-weights-after-edge-removals.py)| _O(n)_ | _O(n)_ | Hard |  | DFS, Quick Select |
 
 <br/>
 <div align="right">
@@ -1160,6 +1165,9 @@
 3343 | [Count Number of Balanced Permutations](https://leetcode.com/problems/count-number-of-balanced-permutations/) | [C++](./C++/count-number-of-balanced-permutations.cpp) [Python](./Python/count-number-of-balanced-permutations.py) | _O(n^2)_ | _O(n^2)_ | Hard | | DP, Combinatorics
 3351 | [Sum of Good Subsequences](https://leetcode.com/problems/sum-of-good-subsequences/) | [C++](./C++/sum-of-good-subsequences.cpp) [Python](./Python/sum-of-good-subsequences.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, DP
 3352 | [Count K-Reducible Numbers Less Than N](https://leetcode.com/problems/count-k-reducible-numbers-less-than-n/) | [C++](./C++/count-k-reducible-numbers-less-than-n.cpp) [Python](./Python/count-k-reducible-numbers-less-than-n.py) | _O(n^2)_ | _O(n)_ | Hard | | DP, Combinatorics
+3359 | [Find Sorted Submatrices With Maximum Element at Most K](https://leetcode.com/problems/find-sorted-submatrices-with-maximum-element-at-most-k/) | [C++](./C++/find-sorted-submatrices-with-maximum-element-at-most-k.cpp) [Python](./Python/find-sorted-submatrices-with-maximum-element-at-most-k.py) | _O(m * n)_ | _O(m)_ | Hard |  🔒, variant of [Count Submatrices With All Ones](https://leetcode.com/problems/count-submatrices-with-all-ones/)  | Mono Stack, DP
+3363 | [Find the Maximum Number of Fruits Collected](https://leetcode.com/problems/find-the-maximum-number-of-fruits-collected/) | [C++](./C++/find-the-maximum-number-of-fruits-collected.cpp) [Python](./Python/find-the-maximum-number-of-fruits-collected.py) | _O(n^2)_ | _O(1)_ | Hard | | DP
+3366 | [Minimum Array Sum](https://leetcode.com/problems/minimum-array-sum/) | [C++](./C++/minimum-array-sum.cpp) [Python](./Python/minimum-array-sum.py) | _O(n * op1 * op2)_ | _O(op1 * op2)_ | Medium | | DP
 
 <br/>
 <div align="right">
@@ -1321,6 +1329,7 @@
 3282 | [Reach End of Array With Max Score](https://leetcode.com/problems/reach-end-of-array-with-max-score/) | [C++](./C++/reach-end-of-array-with-max-score.cpp) [Python](./Python/reach-end-of-array-with-max-score.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3301 | [Maximize the Total Height of Unique Towers](https://leetcode.com/problems/maximize-the-total-height-of-unique-towers/) | [C++](./C++/maximize-the-total-height-of-unique-towers.cpp) [Python](./Python/maximize-the-total-height-of-unique-towers.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Greedy
 3302 | [Find the Lexicographically Smallest Valid Sequence](https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/) | [C++](./C++/find-the-lexicographically-smallest-valid-sequence.cpp) [Python](./Python/find-the-lexicographically-smallest-valid-sequence.py) | _O(n + m)_   | _O(m)_        | Medium         | | Hash Table, Greedy
+3362 | [Zero Array Transformation III](https://leetcode.com/problems/zero-array-transformation-iii/) | [C++](./C++/zero-array-transformation-iii.cpp) [Python](./Python/zero-array-transformation-iii.py) | _O(n + qlogq)_   | _O(q)_        | Medium         | | Sort, Heap, Greedy
 
 <br/>
 <div align="right">
@@ -1674,6 +1683,7 @@
 3328 | [Find Cities in Each State II](https://leetcode.com/problems/find-cities-in-each-state-ii/) | [MySQL](./MySQL/find-cities-in-each-state-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒|  |
 3338 | [Second Highest Salary II](https://leetcode.com/problems/second-highest-salary-ii/) | [MySQL](./MySQL/second-highest-salary-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3358 | [Books with NULL Ratings](https://leetcode.com/problems/books-with-null-ratings/) | [MySQL](./MySQL/books-with-null-ratings.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
+3368 | [First Letter Capitalization](https://leetcode.com/problems/first-letter-capitalization/) | [MySQL](./MySQL/first-letter-capitalization.sql) | _O(n * l^2 + (n * l) * log(n * l))_ | _O(n * l^2)_       | Hard           |🔒| Recursive CTE |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
