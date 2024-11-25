@@ -4,7 +4,7 @@
 from sortedcontainers import SortedList
 
 
-# prefix sum, two pointers, sliding window, bst, binary search
+# prefix sum, two pointers, sliding window, sorted list, binary search
 class Solution(object):
     def minimumSumSubarray(self, nums, l, r):
         """
