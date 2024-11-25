@@ -30,21 +30,6 @@ public:
         }
         return result;
     }
-
-private:
-    int count(const vector<int>& heights) {
-        vector<int> dp(heights.size());
-        vector<int> stk;
-        for (int i = 0; i < heights.size(); ++i) {
-            while (!stk.empty() && heights[stk.back()] >= heights[i]) {
-                stk.pop_back();
-            }
-            dp[i] = !stk.empty() ? dp[stk.back()] + heights[i] * (i - stk.back())
-                                 : heights[i] * (i - (-1));
-            stk.emplace_back(i);
-        }
-        return accumulate(cbegin(dp), cend(dp), 0);
-    }
 };
 
 // Time:  O(m * n)
