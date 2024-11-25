@@ -11,7 +11,7 @@ public:
         }
         vector<int64_t> prefix2(size(previousCost) + 1);
         for (int i = 0; i < size(previousCost); ++i) {
-            prefix2[i+1] = prefix2[i] + previousCost[i];
+            prefix2[i + 1] = prefix2[i] + previousCost[i];
         }
         int64_t result = 0;
         for (int i = 0; i < size(s); ++i) {
