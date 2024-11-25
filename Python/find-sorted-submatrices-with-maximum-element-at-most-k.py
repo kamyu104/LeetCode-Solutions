@@ -13,7 +13,7 @@ class Solution(object):
             result = curr = 0
             stk = []
             for i in xrange(len(heights)):
-                while stk and heights[stk[-1]] > heights[i]:
+                while stk and heights[stk[-1]] >= heights[i]:
                     j = stk.pop()
                     curr -= (heights[j]-heights[i])*(j-(stk[-1] if stk else -1))
                 stk.append(i)
