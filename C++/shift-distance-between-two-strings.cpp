@@ -23,7 +23,7 @@ public:
             if (left <= right) {
                 result += min(prefix1[right] - prefix1[left], prefix2.back() - (prefix2[right + 1] - prefix2[left + 1]));
             } else {
-                result += min(prefix2[left+1] - prefix2[right + 1], prefix1.back() - (prefix1[left] - prefix1[right]));
+                result += min(prefix2[left + 1] - prefix2[right + 1], prefix1.back() - (prefix1[left] - prefix1[right]));
             }
         }
         return result;
