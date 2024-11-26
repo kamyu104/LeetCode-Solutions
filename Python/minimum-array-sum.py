@@ -1,4 +1,4 @@
-# Time:  O(nlogn + op1 + op2)
+# Time:  O(nlogn)
 # Space: O(n)
 
 # greedy
