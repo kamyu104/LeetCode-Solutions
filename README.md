@@ -1167,7 +1167,7 @@
 3352 | [Count K-Reducible Numbers Less Than N](https://leetcode.com/problems/count-k-reducible-numbers-less-than-n/) | [C++](./C++/count-k-reducible-numbers-less-than-n.cpp) [Python](./Python/count-k-reducible-numbers-less-than-n.py) | _O(n^2)_ | _O(n)_ | Hard | | DP, Combinatorics
 3359 | [Find Sorted Submatrices With Maximum Element at Most K](https://leetcode.com/problems/find-sorted-submatrices-with-maximum-element-at-most-k/) | [C++](./C++/find-sorted-submatrices-with-maximum-element-at-most-k.cpp) [Python](./Python/find-sorted-submatrices-with-maximum-element-at-most-k.py) | _O(m * n)_ | _O(m)_ | Hard |  🔒, variant of [Count Submatrices With All Ones](https://leetcode.com/problems/count-submatrices-with-all-ones/)  | Mono Stack, DP
 3363 | [Find the Maximum Number of Fruits Collected](https://leetcode.com/problems/find-the-maximum-number-of-fruits-collected/) | [C++](./C++/find-the-maximum-number-of-fruits-collected.cpp) [Python](./Python/find-the-maximum-number-of-fruits-collected.py) | _O(n^2)_ | _O(1)_ | Hard | | DP
-3366 | [Minimum Array Sum](https://leetcode.com/problems/minimum-array-sum/) | [C++](./C++/minimum-array-sum.cpp) [Python](./Python/minimum-array-sum.py) | _O(n * op1 * op2)_ | _O(op1 * op2)_ | Medium | | DP
+3366 | [Minimum Array Sum](https://leetcode.com/problems/minimum-array-sum/) | [C++](./C++/minimum-array-sum.cpp) [Python](./Python/minimum-array-sum.py) | _O(nlogn + op1 + op2)_ | _O(n)_ | Medium | | DP, Greedy
 
 <br/>
 <div align="right">
