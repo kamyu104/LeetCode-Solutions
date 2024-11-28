@@ -7,7 +7,7 @@ class Solution(object):
     # @return a string
     def addBinary(self, a, b):
         result, carry, val = "", 0, 0
-        for i in xrange(max(len(a), len(b))):
+        for i in range(max(len(a), len(b))):
             val = carry
             if i < len(a):
                 val += int(a[-(i + 1)])
