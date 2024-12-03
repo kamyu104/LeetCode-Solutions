@@ -29,15 +29,10 @@ class Solution(object):
                     new_curr = [0]*len(curr)
                     for d in xrange(len(curr)-1):
                         new_curr[d+1] = curr[d]
-                    for w in adj[u]:
-                        if w == p:
-                            continue
-                        if w == v: 
-                            if 1 < len(new_curr):
-                                new_curr[1] += 1
-                            continue
-                        for d in xrange(len(new_curr)-2):
-                            new_curr[d+2] += dp[w][d]
+                    if 1 < len(new_curr):
+                        new_curr[1] += 1
+                    for d in xrange(len(new_curr)-2):
+                        new_curr[d+2] += dp[u][d+1]-dp[v][d]
                     return new_curr
 
                 for v in adj[u]:
