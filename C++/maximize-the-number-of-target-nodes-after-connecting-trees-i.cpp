@@ -9,7 +9,7 @@ public:
             vector<int> result(size(adj));
             vector<int> sizes(size(adj));
             vector<bool> lookup(size(adj));
-            vector<vector<int>> prefixes(size(adj));
+            vector<vector<int>> prefix(size(adj));
             vector<int> cnt;
             vector<int> total, curr;
 
@@ -78,9 +78,9 @@ public:
                     }
                     cnt.clear();
                     count(v, u, 0 + 1);
-                    prefixes[v].emplace_back(0);
+                    prefix[v].emplace_back(0);
                     for (int d = 0; d < size(cnt); ++d) {
-                        prefixes[v].emplace_back(prefixes[v].back() + cnt[d]);
+                        prefix[v].emplace_back(prefix[v].back() + cnt[d]);
                     }
                     max_d = max(max_d, static_cast<int>(size(cnt)));
                 }
@@ -90,7 +90,7 @@ public:
                         continue;
                     }
                     for (int d = 0; d < size(total); ++d) {
-                        total[d] += prefixes[v][min(d, static_cast<int>(size(prefixes[v])) - 1)];
+                        total[d] += prefix[v][min(d, static_cast<int>(size(prefix[v])) - 1)];
                     }
                 }
                 result[u] += total[min(k, static_cast<int>(size(total)) - 1)];
@@ -98,7 +98,7 @@ public:
                     if (lookup[v]) {
                         continue;
                     }
-                    curr = move(prefixes[v]);
+                    curr = move(prefix[v]);
                     update(v, u, 0 + 1);
                 }
                 for (const auto& v : adj[u]) {
