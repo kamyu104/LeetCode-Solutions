@@ -1,8 +1,111 @@
+# Time:  O(nlogn + mlogm)
+# Space: O(n + m)
+
+# dfs, centroid decomposition, prefix sum
+class Solution(object):
+    def maxTargetNodes(self, edges1, edges2, k):
+        """
+        :type edges1: List[List[int]]
+        :type edges2: List[List[int]]
+        :type k: int
+        :rtype: List[int]
+        """
+        def centroid_decomposition(adj, k):
+            def dfs(u):
+                # https://usaco.guide/plat/centroid
+                def find_subtree_size(u, p):
+                    sizes[u] = 1
+                    for v in adj[u]:
+                        if v == p or lookup[v]:
+                            continue
+                        sizes[u] += find_subtree_size(v, u)
+                    return sizes[u]
+
+                def find_centroid(u, p):
+                    for v in adj[u]:
+                        if v == p or lookup[v]:
+                            continue
+                        if sizes[v]*2 > n:
+                            return find_centroid(v, u)
+                    return u
+
+                def count(u, p, d):
+                    if d > k:
+                        return
+                    if d-1 == len(cnt):
+                        cnt.append(0)
+                    cnt[d-1] += 1
+                    for v in adj[u]:
+                        if v == p or lookup[v]:
+                            continue
+                        count(v, u, d+1)
+
+                def update(u, p, d):
+                    if d > k:
+                        return
+                    result[u] += total[min(k-d, len(total)-1)]-curr[min(k-d, len(curr)-1)]
+                    for v in adj[u]:
+                        if v == p or lookup[v]:
+                            continue
+                        update(v, u, d+1)
+
+                find_subtree_size(u, -1)
+                n = sizes[u]
+                u = find_centroid(u, -1)
+                lookup[u] = True
+                max_d = 0
+                for v in adj[u]:
+                    if lookup[v]:
+                        continue
+                    cnt = []
+                    count(v, u, 0+1)
+                    prefixes[v].append(0)
+                    for d in xrange(len(cnt)):
+                        prefixes[v].append(prefixes[v][-1]+cnt[d])
+                    max_d = max(max_d, len(cnt))
+                total = [1]*(max_d+1)
+                for v in adj[u]:
+                    if lookup[v]:
+                        continue
+                    for d in xrange(len(total)):
+                        total[d] += prefixes[v][min(d, len(prefixes[v])-1)]
+                result[u] += total[min(k, len(total)-1)]
+                for v in adj[u]:
+                    if lookup[v]:
+                        continue
+                    curr = prefixes[v]
+                    update(v, u, 0+1)
+                    curr[:] = []
+                for v in adj[u]:
+                    if lookup[v]:
+                        continue
+                    dfs(v)
+
+            result = [0]*len(adj)
+            sizes = [0]*len(adj)
+            lookup = [False]*len(adj)
+            prefixes = [[] for _ in xrange(len(adj))]
+            if k >= 0:
+                dfs(0)
+            return result
+
+        def find_adj(edges):
+            adj = [[] for _ in xrange(len(edges)+1)]
+            for u, v in edges:
+                adj[u].append(v)
+                adj[v].append(u)
+            return adj
+
+        adj2 = find_adj(edges2)
+        mx = max(centroid_decomposition(adj2, k-1))
+        adj1 = find_adj(edges1)
+        return [mx+x for x in centroid_decomposition(adj1, k)]
+
+
 # Time:  O((n + m) * k)
 # Space: O((n + m) * k)
-
 # dfs, tree dp
-class Solution(object):
+class Solution2(object):
     def maxTargetNodes(self, edges1, edges2, k):
         """
         :type edges1: List[List[int]]
@@ -16,8 +119,7 @@ class Solution(object):
                     if v == p:
                         continue
                     dfs1(v, u)
-                if 0 < len(dp[u]):
-                    dp[u][0] += 1
+                dp[u][0] += 1
                 for v in adj[u]:
                     if v == p:
                         continue
@@ -37,10 +139,12 @@ class Solution(object):
                     dfs2(v, u, update(v, u, curr))
                 result[u] = sum(dp[u][i]+curr[i] for i in xrange(len(curr)))
 
+            result = [0]*len(adj)
             k = min(k, len(adj)-1)
+            if k == -1:
+                return result
             dp = [[0]*(k+1) for _ in xrange(len(adj))]
             dfs1(0, -1)
-            result = [0]*len(adj)
             dfs2(0, -1, [0]*(k+1))
             return result
 
@@ -60,7 +164,7 @@ class Solution(object):
 # Time:  O(n^2 + m^2)
 # Space: O(n + m)
 # brute force, bfs
-class Solution2(object):
+class Solution3(object):
     def maxTargetNodes(self, edges1, edges2, k):
         """
         :type edges1: List[List[int]]
