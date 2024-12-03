@@ -30,24 +30,10 @@ public:
 
             vector<int> result(size(adj));
             const function<void(int, int, const vector<int>&)> dfs2 = [&](int u, int p, const auto& curr) {
-                const auto& update = [&](int v, int u, int p, const auto& curr) {
+                const auto& update = [&](int v, int u, const auto& curr) {
                     vector<int> new_curr(size(curr));
-                    for (int d = 0; d + 1 < size(curr); ++d) {
-                        new_curr[d + 1] = curr[d];
-                    }
-                    for (const auto& w : adj[u]) {
-                        if (w == p) {
-                            continue;
-                        }
-                        if (w == v) {
-                            if (1 < size(new_curr)) {
-                                new_curr[1] += 1;
-                            }
-                            continue;
-                        }
-                        for (int d = 0; d + 2 < size(new_curr); ++d) {
-                            new_curr[d + 2] += dp[w][d];
-                        }
+                    for (int d = 0; d + 1 < size(new_curr); ++d) {
+                        new_curr[d + 1] = curr[d] + (dp[u][d] - (d - 1 >= 0 ? dp[v][d - 1] : 0));
                     }
                     return new_curr;
                 };
@@ -56,7 +42,7 @@ public:
                     if (v == p) {
                         continue;
                     }
-                    dfs2(v, u, update(v, u, p, curr));
+                    dfs2(v, u, update(v, u, curr));
                 }
                 for (int d = 0; d < size(curr); ++d) {
                     result[u] += dp[u][d] + curr[d];
