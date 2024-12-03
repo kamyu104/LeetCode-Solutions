@@ -73,9 +73,8 @@ class Solution(object):
                 for v in adj[u]:
                     if lookup[v]:
                         continue
-                    curr = prefixes[v]
+                    curr, prefixes[v] = prefixes[v], []
                     update(v, u, 0+1)
-                    curr[:] = []
                 for v in adj[u]:
                     if lookup[v]:
                         continue
