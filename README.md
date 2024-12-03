@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3368%20%2F%203368-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3374%20%2F%203374-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -99,6 +99,7 @@
 3314 | [Construct the Minimum Bitwise Array I](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [C++](./C++/construct-the-minimum-bitwise-array-i.cpp) [Python](./Python/construct-the-minimum-bitwise-array-i.py) | _O(n)_ | _O(1)_ | Easy | | Bit Manipulation
 3315 | [Construct the Minimum Bitwise Array II](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [C++](./C++/construct-the-minimum-bitwise-array-ii.cpp) [Python](./Python/construct-the-minimum-bitwise-array-ii.py) | _O(n)_ | _O(1)_ | Medium | | Bit Manipulation
 3344 | [Maximum Sized Array](https://leetcode.com/problems/maximum-sized-array/) | [C++](./C++/maximum-sized-array.cpp) [Python](./Python/maximum-sized-array.py) | precompute: O(max_s^(1/5) * log(max_s))<br>runtime: O(log(max_s)) | _O(max_s^(1/5))_ | Medium | 🔒 | Precompute, Bitmasks, Combinatorics, Binary Search
+3370 | [Smallest Number With All Set Bits](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | [C++](./C++/smallest-number-with-all-set-bits.cpp) [Python](./Python/smallest-number-with-all-set-bits.py) | _O(1)_ | _O(1)_ | Easy | | Bit Manipulation
 
 <br/>
 <div align="right">
@@ -554,6 +555,7 @@
 3245 | [Alternating Groups III](https://leetcode.com/problems/alternating-groups-iii/) | [C++](./C++/alternating-groups-iii.cpp) [Python](./Python/alternating-groups-iii.py) | _O(nlogn + qlogn)_ | _O(n)_ | Hard | | BST, Sorted List, Freq Table, BIT, Fenwick Tree
 3295 | [Report Spam Message](https://leetcode.com/problems/report-spam-message/) | [C++](./C++/report-spam-message.cpp) [Python](./Python/report-spam-message.py) | _O(n + m)_ | _O(m)_ | Medium | | Hash Table
 3365 | [Rearrange K Substrings to Form Target String](https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/) | [C++](./C++/rearrange-k-substrings-to-form-target-string.cpp) [Python](./Python/rearrange-k-substrings-to-form-target-string.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
+3371 | [Identify the Largest Outlier in an Array](https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/) | [C++](./C++/identify-the-largest-outlier-in-an-array.cpp) [Python](./Python/identify-the-largest-outlier-in-an-array.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
 
 <br/>
 <div align="right">
@@ -950,6 +952,7 @@
 2852 | [Sum of Remoteness of All Cells](https://leetcode.com/problems/sum-of-remoteness-of-all-cells/)| [C++](./C++/sum-of-remoteness-of-all-cells.cpp) [Python](./Python/sum-of-remoteness-of-all-cells.py)| _O(n^2)_ | _O(n^2)_ | Medium | 🔒 | Flood Fill, BFS, Math |
 3157 | [Find the Level of Tree with Minimum Sum](https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/)| [C++](./C++/find-the-level-of-tree-with-minimum-sum.cpp) [Python](./Python/find-the-level-of-tree-with-minimum-sum.py)| _O(n)_ | _O(w)_ | Medium | 🔒 | BFS |
 3286 | [Find a Safe Walk Through a Grid](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/)| [C++](./C++/find-a-safe-walk-through-a-grid.cpp) [Python](./Python/find-a-safe-walk-through-a-grid.py)| _O(m * n)_ | _O(m * n)_ | Medium | variant of [Minimum Obstacle Removal to Reach Corner](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/) | 0-1 BFS, Deque |
+3373 | [Maximize the Number of Target Nodes After Connecting Trees II](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii/) | [C++](./C++/maximize-the-number-of-target-nodes-after-connecting-trees-ii.cpp) [Python](./Python/maximize-the-number-of-target-nodes-after-connecting-trees-ii.py) | _O(n + m)_ | _O(n + m)_ | Hard | | BFS
 
 <br/>
 <div align="right">
@@ -1168,6 +1171,7 @@
 3359 | [Find Sorted Submatrices With Maximum Element at Most K](https://leetcode.com/problems/find-sorted-submatrices-with-maximum-element-at-most-k/) | [C++](./C++/find-sorted-submatrices-with-maximum-element-at-most-k.cpp) [Python](./Python/find-sorted-submatrices-with-maximum-element-at-most-k.py) | _O(m * n)_ | _O(m)_ | Hard |  🔒, variant of [Count Submatrices With All Ones](https://leetcode.com/problems/count-submatrices-with-all-ones/)  | Mono Stack, DP
 3363 | [Find the Maximum Number of Fruits Collected](https://leetcode.com/problems/find-the-maximum-number-of-fruits-collected/) | [C++](./C++/find-the-maximum-number-of-fruits-collected.cpp) [Python](./Python/find-the-maximum-number-of-fruits-collected.py) | _O(n^2)_ | _O(1)_ | Hard | | DP
 3366 | [Minimum Array Sum](https://leetcode.com/problems/minimum-array-sum/) | [C++](./C++/minimum-array-sum.cpp) [Python](./Python/minimum-array-sum.py) | _O(nlogn)_ | _O(n)_ | Medium | | DP, Greedy, Case Works
+3372 | [Maximize the Number of Target Nodes After Connecting Trees I](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/) | [C++](./C++/maximize-the-number-of-target-nodes-after-connecting-trees-i.cpp) [Python](./Python/maximize-the-number-of-target-nodes-after-connecting-trees-i.py) | _O((n + m) * k)_ | _O((n + m) * k)_ | Medium | | Brute Force, BFS, DFS, Tree DP
 
 <br/>
 <div align="right">
@@ -1482,6 +1486,7 @@
 2642 | [Design Graph With Shortest Path Calculator](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/) | [C++](./C++/design-graph-with-shortest-path-calculator.cpp) [Python](./Python/design-graph-with-shortest-path-calculator.py) | ctor: _O(\|V\| + \|E\|)_<br>addEdge: _O(1)_<br>shortestPath: _O(\|E\| * log\|V\|)_ | _O(\|E\|)_ | Hard | | `Dijkstra's Algorithm`
 2671 | [Frequency Tracker](https://leetcode.com/problems/frequency-tracker/) | [C++](./C++/frequency-tracker.cpp) [Python](./Python/frequency-tracker.py) | ctor: _O(1)_<br>add: _O(1)_<br>deleteOne: _O(1)_<br>hasFrequency: _O(1)_ | _O(min(n, r))_ | Medium | | Freq Table
 3242 | [Design Neighbor Sum Service](https://leetcode.com/problems/design-neighbor-sum-service/) | [C++](./C++/design-neighbor-sum-service.cpp) [Python](./Python/design-neighbor-sum-service.py) | ctor: _O(n^2)_<br>adjacentSum: _O(1)_<br>diagonalSum: _O(1)_ | _O(n^2)_ | Easy | | Hash Table
+3369 | [Design an Array Statistics Tracker](https://leetcode.com/problems/design-an-array-statistics-tracker/) | [C++](./C++/design-an-array-statistics-tracker.cpp) [Python](./Python/design-an-array-statistics-tracker.py) | ctor: _O(1)_<br>addNumber: _O(logn)_<br>removeFirstAddedNumber: _O(logn)_<br>getMean: _O(1)_<br>getMedian: _O(1)_<br>getMode: _O(1)_ | _O(n)_ | Hard | 🔒 | Deque, Freq Table, Sorted List, BST
 
 <br/>
 <div align="right">
@@ -1684,6 +1689,7 @@
 3338 | [Second Highest Salary II](https://leetcode.com/problems/second-highest-salary-ii/) | [MySQL](./MySQL/second-highest-salary-ii.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3358 | [Books with NULL Ratings](https://leetcode.com/problems/books-with-null-ratings/) | [MySQL](./MySQL/books-with-null-ratings.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
 3368 | [First Letter Capitalization](https://leetcode.com/problems/first-letter-capitalization/) | [MySQL](./MySQL/first-letter-capitalization.sql) | _O(n * l^2 + (n * l) * log(n * l))_ | _O(n * l^2)_       | Hard           |🔒| Recursive CTE |
+3374 | [First Letter Capitalization II](https://leetcode.com/problems/first-letter-capitalization-ii/) | [MySQL](./MySQL/first-letter-capitalization-ii.sql) | _O(n * l^2 + (n * l) * log(n * l))_ | _O(n * l^2)_       | Hard           |🔒| Recursive CTE |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
