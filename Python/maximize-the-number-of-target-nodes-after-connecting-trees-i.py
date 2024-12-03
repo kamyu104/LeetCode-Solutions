@@ -25,20 +25,16 @@ class Solution(object):
                         dp[u][d+1] += dp[v][d]
             
             def dfs2(u, p, curr):
-                def update(v, u, p, curr):
+                def update(v, u, curr):
                     new_curr = [0]*len(curr)
                     for d in xrange(len(curr)-1):
-                        new_curr[d+1] = curr[d]
-                    if 1 < len(new_curr):
-                        new_curr[1] += 1
-                    for d in xrange(len(new_curr)-2):
-                        new_curr[d+2] += dp[u][d+1]-dp[v][d]
+                        new_curr[d+1] = curr[d]+(dp[u][d]-(dp[v][d-1] if d-1 >= 0 else 0))
                     return new_curr
 
                 for v in adj[u]:
                     if v == p:
                         continue
-                    dfs2(v, u, update(v, u, p, curr))
+                    dfs2(v, u, update(v, u, curr))
                 result[u] = sum(dp[u][i]+curr[i] for i in xrange(len(curr)))
 
             k = min(k, len(adj)-1)
