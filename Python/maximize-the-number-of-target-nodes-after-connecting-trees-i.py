@@ -59,21 +59,21 @@ class Solution(object):
                         continue
                     cnt = []
                     count(v, u, 0+1)
-                    prefixes[v].append(0)
+                    prefix[v].append(0)
                     for d in xrange(len(cnt)):
-                        prefixes[v].append(prefixes[v][-1]+cnt[d])
+                        prefix[v].append(prefix[v][-1]+cnt[d])
                     max_d = max(max_d, len(cnt))
                 total = [1]*(max_d+1)
                 for v in adj[u]:
                     if lookup[v]:
                         continue
                     for d in xrange(len(total)):
-                        total[d] += prefixes[v][min(d, len(prefixes[v])-1)]
+                        total[d] += prefix[v][min(d, len(prefix[v])-1)]
                 result[u] += total[min(k, len(total)-1)]
                 for v in adj[u]:
                     if lookup[v]:
                         continue
-                    curr, prefixes[v] = prefixes[v], []
+                    curr, prefix[v] = prefix[v], []
                     update(v, u, 0+1)
                 for v in adj[u]:
                     if lookup[v]:
@@ -83,7 +83,7 @@ class Solution(object):
             result = [0]*len(adj)
             sizes = [0]*len(adj)
             lookup = [False]*len(adj)
-            prefixes = [[] for _ in xrange(len(adj))]
+            prefix = [[] for _ in xrange(len(adj))]
             if k >= 0:
                 dfs(0)
             return result
