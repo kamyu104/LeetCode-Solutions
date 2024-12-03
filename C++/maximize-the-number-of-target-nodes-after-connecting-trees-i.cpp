@@ -143,7 +143,11 @@ class Solution2 {
 public:
     vector<int> maxTargetNodes(vector<vector<int>>& edges1, vector<vector<int>>& edges2, int k) {
         const auto& tree_dp = [](const auto& adj, int k) {
+            vector<int> result(size(adj));
             k = min(k, static_cast<int>(size(adj)) - 1);
+            if (k == -1) {
+                return result;
+            }
             vector<vector<int>> dp(size(adj), vector<int>(k + 1));
             const function<void (int, int)> dfs1 = [&](int u, int p) {
                 for (const auto& v : adj[u]) {
@@ -152,9 +156,7 @@ public:
                     }
                     dfs1(v, u);
                 }
-                if (0 < size(dp[u])) {
-                    ++dp[u][0];
-                }
+                ++dp[u][0];
                 for (const auto& v : adj[u]) {
                     if (v == p) {
                         continue;
@@ -165,7 +167,6 @@ public:
                 }
             };
 
-            vector<int> result(size(adj));
             const function<void(int, int, const vector<int>&)> dfs2 = [&](int u, int p, const auto& curr) {
                 const auto& update = [&](int v, int u, const auto& curr) {
                     vector<int> new_curr(size(curr));
