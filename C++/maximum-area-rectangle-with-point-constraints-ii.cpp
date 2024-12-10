@@ -44,9 +44,8 @@ public:
             sorted_ys.emplace(y);
         }
         unordered_map<int, int> y_to_idx;
-        int i = 0;
         for (const auto& y : sorted_ys) {
-            y_to_idx[y] = i++;
+            y_to_idx[y] = size(y_to_idx);
         }
         BIT bit(size(y_to_idx));
         unordered_map<int, unordered_map<int, pair<int, int>>> lookup;
