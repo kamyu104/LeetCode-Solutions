@@ -42,6 +42,7 @@ public:
     int countComponents(vector<int>& nums, int threshold) {
         UnionFind uf(threshold);
         vector<int> lookup(threshold, -1);
+        int result = size(nums);
         for (const auto& x : nums) {
             if (x - 1 >= threshold) {
                 continue;
@@ -51,16 +52,12 @@ public:
                     lookup[i - 1] = x - 1;
                     continue;
                 }
-                uf.union_set(lookup[i - 1], x - 1);
+                if (uf.union_set(lookup[i - 1], x - 1)) {
+                    --result;
+                }
                 if (i == x) {
                     break;
                 }
-            }
-        }
-        int result = 0;
-        for (const auto& x : nums) {
-            if (x - 1 >= threshold || uf.find_set(x - 1) == x - 1) {
-                ++result;
             }
         }
         return result;
