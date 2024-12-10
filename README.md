@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3374%20%2F%203374-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3384%20%2F%203384-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -238,6 +238,9 @@
 3354 | [Make Array Elements Equal to Zero](https://leetcode.com/problems/make-array-elements-equal-to-zero/) | [C++](./C++/make-array-elements-equal-to-zero.cpp) [Python](./Python/make-array-elements-equal-to-zero.py) | _O(n)_   | _O(n)_        | Easy         | [CodeChef Starters 146 - Bouncing Ball](https://www.codechef.com/problems/BOUNCE_BALL) | Prefix Sum
 3355 | [Zero Array Transformation I](https://leetcode.com/problems/zero-array-transformation-i/) | [C++](./C++/zero-array-transformation-i.cpp) [Python](./Python/zero-array-transformation-i.py) | _O(n + q)_   | _O(n)_        | Medium         | | Line Sweep
 3361 | [Shift Distance Between Two Strings](https://leetcode.com/problems/shift-distance-between-two-strings/) | [C++](./C++/shift-distance-between-two-strings.cpp) [Python](./Python/shift-distance-between-two-strings.py) | _O(n + 26)_   | _O(26)_        | Medium         | | Prefix Sum
+3379 | [Transformed Array](https://leetcode.com/problems/transformed-array/) | [C++](./C++/transformed-array.cpp) [Python](./Python/transformed-array.py) | _O(n)_   | _O(1)_        | Easy         | | Array
+3380 | [Maximum Area Rectangle With Point Constraints I](https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/) | [C++](./C++/maximum-area-rectangle-with-point-constraints-i.cpp) [Python](./Python/maximum-area-rectangle-with-point-constraints-i.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort, Brute Force, BIT, Fenwick Tree
+3382 | [Maximum Area Rectangle With Point Constraints II](https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-ii/) | [C++](./C++/maximum-area-rectangle-with-point-constraints-ii.cpp) [Python](./Python/maximum-area-rectangle-with-point-constraints-ii.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Sort, BIT, Fenwick Tree
 
 <br/>
 <div align="right">
@@ -1172,6 +1175,8 @@
 3363 | [Find the Maximum Number of Fruits Collected](https://leetcode.com/problems/find-the-maximum-number-of-fruits-collected/) | [C++](./C++/find-the-maximum-number-of-fruits-collected.cpp) [Python](./Python/find-the-maximum-number-of-fruits-collected.py) | _O(n^2)_ | _O(1)_ | Hard | | DP
 3366 | [Minimum Array Sum](https://leetcode.com/problems/minimum-array-sum/) | [C++](./C++/minimum-array-sum.cpp) [Python](./Python/minimum-array-sum.py) | _O(nlogn)_ | _O(n)_ | Medium | | DP, Greedy, Case Works
 3372 | [Maximize the Number of Target Nodes After Connecting Trees I](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/) | [C++](./C++/maximize-the-number-of-target-nodes-after-connecting-trees-i.cpp) [Python](./Python/maximize-the-number-of-target-nodes-after-connecting-trees-i.py) | _O(nlogn + mlogm)_ | _O(n + m)_ | Medium | | Brute Force, BFS, DFS, Tree DP, Centroid Decomposition, Prefix Sum
+3376 | [Minimum Time to Break Locks I](https://leetcode.com/problems/minimum-time-to-break-locks-i/) | [C++](./C++/minimum-time-to-break-locks-i.cpp) [Python](./Python/minimum-time-to-break-locks-i.py) | _O(n * 2^n)_ | _O(2^n)_ | Medium | | Bitmasks, DP
+3381 | [Maximum Subarray Sum With Length Divisible by K](https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/) | [C++](./C++/maximum-subarray-sum-with-length-divisible-by-k.cpp) [Python](./Python/maximum-subarray-sum-with-length-divisible-by-k.py) | _O(n)_ | _O(k)_ | Medium | | Prefix Sum, DP
 
 <br/>
 <div align="right">
@@ -1383,6 +1388,9 @@
 3310 | [Remove Methods From Project](https://leetcode.com/problems/remove-methods-from-project/)| [C++](./C++/remove-methods-from-project.cpp) [Python](./Python/remove-methods-from-project.py)| _O(n + e)_ | _O(n + e)_ | Medium | | Graph, BFS |
 3341 | [Find Minimum Time to Reach Last Room I](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/)  | [C++](./C++/find-minimum-time-to-reach-last-room-i.cpp) [Python](./Python/find-minimum-time-to-reach-last-room-i.py) |  _O(n * m * log(n * m))_ | _O(n * m)_ | Medium           | | Graph, `Dijkstra's Algorithm` |
 3342 | [Find Minimum Time to Reach Last Room II](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/)  | [C++](./C++/find-minimum-time-to-reach-last-room-ii.cpp) [Python](./Python/find-minimum-time-to-reach-last-room-ii.py) |  _O(n * m * log(n * m))_ | _O(n * m)_ | Medium           | | Graph, `Dijkstra's Algorithm` |
+3377 | [Digit Operations to Make Two Integers Equal](https://leetcode.com/problems/digit-operations-to-make-two-integers-equal/)  | [C++](./C++/digit-operations-to-make-two-integers-equal.cpp) [Python](./Python/digit-operations-to-make-two-integers-equal.py) |  _O(nlogn)_ | _O(n)_ | Medium           | | Graph, Number Theory, `Linear Sieve of Eratosthenes`, `Dijkstra's Algorithm` |
+3378 | [Count Connected Components in LCM Graph](https://leetcode.com/problems/count-connected-components-in-lcm-graph/) | [C++](./C++/count-connected-components-in-lcm-graph.cpp) [Python](./Python/count-connected-components-in-lcm-graph.py) | _O(n + tlogt)_ | _O(t)_ | Hard | | Number Theory, Graph, Union Find |
+3383 | [Minimum Runes to Add to Cast Spell](https://leetcode.com/problems/minimum-runes-to-add-to-cast-spell/) | [C++](./C++/minimum-runes-to-add-to-cast-spell.cpp) [Python](./Python/minimum-runes-to-add-to-cast-spell.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Graph, `Tarjan's Strongly Connected Components Algorithm`, SCC |
 
 <br/>
 <div align="right">
@@ -1452,6 +1460,7 @@
 3139 | [Minimum Cost to Equalize Array](https://leetcode.com/problems/minimum-cost-to-equalize-array/) | [C++](./C++/minimum-cost-to-equalize-array.cpp) [Python](./Python/minimum-cost-to-equalize-array.py) | _O(n)_ | _O(1)_ | Hard | | Constructive Algorithms, Math
 3260 | [Find the Largest Palindrome Divisible by K](https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/) | [C++](./C++/find-the-largest-palindrome-divisible-by-k.cpp) [Python](./Python/find-the-largest-palindrome-divisible-by-k.py) | _O(n)_ | _O(1)_ | Hard | | String, Constructive Algorithms, Math |
 3311 | [Construct 2D Grid Matching Graph Layout](https://leetcode.com/problems/construct-2d-grid-matching-graph-layout/) | [C++](./C++/construct-2d-grid-matching-graph-layout.cpp) [Python](./Python/construct-2d-grid-matching-graph-layout.py) | _O(n)_ | _O(n)_ | Hard | | Graph, Constructive Algorithms, BFS |
+3375 | [Minimum Operations to Make Array Values Equal to K](https://leetcode.com/problems/minimum-operations-to-make-array-values-equal-to-k/) | [C++](./C++/minimum-operations-to-make-array-values-equal-to-k.cpp) [Python](./Python/minimum-operations-to-make-array-values-equal-to-k.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Constructive Algorithms |
 
 <br/>
 <div align="right">
@@ -1690,6 +1699,7 @@
 3358 | [Books with NULL Ratings](https://leetcode.com/problems/books-with-null-ratings/) | [MySQL](./MySQL/books-with-null-ratings.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| |
 3368 | [First Letter Capitalization](https://leetcode.com/problems/first-letter-capitalization/) | [MySQL](./MySQL/first-letter-capitalization.sql) | _O(n * l^2 + (n * l) * log(n * l))_ | _O(n * l^2)_       | Hard           |🔒| Recursive CTE |
 3374 | [First Letter Capitalization II](https://leetcode.com/problems/first-letter-capitalization-ii/) | [MySQL](./MySQL/first-letter-capitalization-ii.sql) | _O(n * l^2 + (n * l) * log(n * l))_ | _O(n * l^2)_       | Hard           |🔒| Recursive CTE |
+3384 | [Team Dominance by Pass Success](https://leetcode.com/problems/team-dominance-by-pass-success/) | [MySQL](./MySQL/team-dominance-by-pass-success.sql) | _O(p + t)_ | _O(p + t)_       | Hard           |🔒| |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
