@@ -37,6 +37,7 @@ class Solution(object):
         """
         uf = UnionFind(threshold)
         lookup = [-1]*threshold
+        result = len(nums)
         for x in nums:
             if x-1 >= threshold:
                 continue
@@ -44,10 +45,11 @@ class Solution(object):
                 if lookup[i-1] == -1:
                     lookup[i-1] = x-1
                     continue
-                uf.union_set(lookup[i-1], x-1)
+                if uf.union_set(lookup[i-1], x-1):
+                    result -= 1
                 if i == x:
                     break
-        return sum(x-1 >= threshold or uf.find_set(x-1) == x-1 for x in nums)
+        return result
 
 
 # Time:  O(n + tlogt), t = threshold
