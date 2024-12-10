@@ -54,7 +54,7 @@ class Solution(object):
         result = [False]*len(sccs)
         for u in xrange(n):
             for v in adj[u]:
-                if lookup[u] != lookup[v]:
+                if lookup[v] != lookup[u]:
                     result[lookup[v]] = True
         for x in crystals:
             result[lookup[x]] = True
