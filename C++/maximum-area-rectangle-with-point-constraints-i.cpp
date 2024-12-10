@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// sort, fenwick tree
+// sort, fenwick tree, hash table
 class BIT {
 public:
     BIT(int n) : bit_(n + 1) {  // 0-indexed
