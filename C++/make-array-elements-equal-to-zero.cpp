@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Space: O(n)
+// Space: O(1)
 
 // prefix sum, CodeChef Starters 146 - Bouncing Ball (https://www.codechef.com/problems/BOUNCE_BALL)
 class Solution {
