@@ -10,7 +10,7 @@ class Solution(object):
         """
         total = sum(nums)
         result = curr = 0
-        for i, x in enumerate(nums):
+        for x in nums:
             if not x:
                 result += max(2-abs(curr-(total-curr)), 0)
             else:
