@@ -1,5 +1,5 @@
-# Time:  O(p + t)
-# Space: O(p + t)
+# Time:  O(plogp + t)
+# Space: O(plogp + t)
 
 SELECT t1.team_name,
        IF(p.time_stamp <= '45:00', 1, 2) AS half_number,
