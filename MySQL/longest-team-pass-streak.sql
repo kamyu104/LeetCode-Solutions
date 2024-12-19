@@ -1,5 +1,5 @@
-# Time:  O(nlogn)
-# Space: O(n)
+# Time:  O(plogp + t)
+# Space: O(p + t)
 
 # recursive cte, window function
 WITH RECURSIVE edges_cte AS (
