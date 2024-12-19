@@ -11,7 +11,7 @@ class Solution(object):
         cnt = [0]*26
         for x in s:
             cnt[ord(x)-ord('a')] += 1
-        result = len(nums)
+        result = len(s)
         for f in xrange(min(x for x in cnt if x), max(cnt)+1):
             # dp1: min number of the last one of the operations is insert
             # dp2: min number of the last one of the operations is delete
@@ -20,7 +20,7 @@ class Solution(object):
                 if not cnt[i]:
                     continue
                 if cnt[i] >= f:
-                    new_dp1 = len(nums)
+                    new_dp1 = len(s)
                     new_dp2 = min(dp1, dp2)+(cnt[i]-f)
                 else:
                     free = (cnt[i-1]-f if cnt[i-1] >= f else cnt[i-1]) if i-1 >= 0 else 0
