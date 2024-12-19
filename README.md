@@ -1705,7 +1705,7 @@
 3368 | [First Letter Capitalization](https://leetcode.com/problems/first-letter-capitalization/) | [MySQL](./MySQL/first-letter-capitalization.sql) | _O(n * l^2 + (n * l) * log(n * l))_ | _O(n * l^2)_       | Hard           |🔒| Recursive CTE |
 3374 | [First Letter Capitalization II](https://leetcode.com/problems/first-letter-capitalization-ii/) | [MySQL](./MySQL/first-letter-capitalization-ii.sql) | _O(n * l^2 + (n * l) * log(n * l))_ | _O(n * l^2)_       | Hard           |🔒| Recursive CTE |
 3384 | [Team Dominance by Pass Success](https://leetcode.com/problems/team-dominance-by-pass-success/) | [MySQL](./MySQL/team-dominance-by-pass-success.sql) | _O(p + t)_ | _O(p + t)_       | Hard           |🔒| |
-3390 | [Longest Team Pass Streak](https://leetcode.com/problems/longest-team-pass-streak/) | [MySQL](./MySQL/longest-team-pass-streak.sql) | _O(plogp)_ | _O(p)_       | Hard           |🔒| Recursive CTE, Window Function |
+3390 | [Longest Team Pass Streak](https://leetcode.com/problems/longest-team-pass-streak/) | [MySQL](./MySQL/longest-team-pass-streak.sql) | _O(plogp + t)_ | _O(p + t)_       | Hard           |🔒| Recursive CTE, Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
