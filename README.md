@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3384%20%2F%203384-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3390%20%2F%203390-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -241,6 +241,7 @@
 3379 | [Transformed Array](https://leetcode.com/problems/transformed-array/) | [C++](./C++/transformed-array.cpp) [Python](./Python/transformed-array.py) | _O(n)_   | _O(1)_        | Easy         | | Array
 3380 | [Maximum Area Rectangle With Point Constraints I](https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/) | [C++](./C++/maximum-area-rectangle-with-point-constraints-i.cpp) [Python](./Python/maximum-area-rectangle-with-point-constraints-i.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort, Brute Force, BIT, Fenwick Tree, Hash Table
 3382 | [Maximum Area Rectangle With Point Constraints II](https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-ii/) | [C++](./C++/maximum-area-rectangle-with-point-constraints-ii.cpp) [Python](./Python/maximum-area-rectangle-with-point-constraints-ii.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Sort, BIT, Fenwick Tree, Hash Table
+3386 | [Button with Longest Push Time](https://leetcode.com/problems/button-with-longest-push-time/) | [C++](./C++/button-with-longest-push-time.cpp) [Python](./Python/button-with-longest-push-time.py) | _O(n)_   | _O(1)_        | Easy         | | Array
 
 <br/>
 <div align="right">
@@ -1175,8 +1176,9 @@
 3363 | [Find the Maximum Number of Fruits Collected](https://leetcode.com/problems/find-the-maximum-number-of-fruits-collected/) | [C++](./C++/find-the-maximum-number-of-fruits-collected.cpp) [Python](./Python/find-the-maximum-number-of-fruits-collected.py) | _O(n^2)_ | _O(1)_ | Hard | | DP
 3366 | [Minimum Array Sum](https://leetcode.com/problems/minimum-array-sum/) | [C++](./C++/minimum-array-sum.cpp) [Python](./Python/minimum-array-sum.py) | _O(nlogn)_ | _O(n)_ | Medium | | DP, Greedy, Case Works
 3372 | [Maximize the Number of Target Nodes After Connecting Trees I](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/) | [C++](./C++/maximize-the-number-of-target-nodes-after-connecting-trees-i.cpp) [Python](./Python/maximize-the-number-of-target-nodes-after-connecting-trees-i.py) | _O(nlogn + mlogm)_ | _O(n + m)_ | Medium | | Brute Force, BFS, DFS, Tree DP, Centroid Decomposition, Prefix Sum
-3376 | [Minimum Time to Break Locks I](https://leetcode.com/problems/minimum-time-to-break-locks-i/) | [C++](./C++/minimum-time-to-break-locks-i.cpp) [Python](./Python/minimum-time-to-break-locks-i.py) | _O(n^3)_ | _O(n^2)_ | Medium | | Bitmasks, DP, `Hungarian Weighted Bipartite Matching`
 3381 | [Maximum Subarray Sum With Length Divisible by K](https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/) | [C++](./C++/maximum-subarray-sum-with-length-divisible-by-k.cpp) [Python](./Python/maximum-subarray-sum-with-length-divisible-by-k.py) | _O(n)_ | _O(k)_ | Medium | | Prefix Sum, DP
+3388 | [Count Beautiful Splits in an Array](https://leetcode.com/problems/count-beautiful-splits-in-an-array/) | [C++](./C++/count-beautiful-splits-in-an-array.cpp) [Python](./Python/count-beautiful-splits-in-an-array.py) | _O(n^2)_ | _O(n)_ | Medium | | DP, `Z-Function`
+3389 | [Minimum Operations to Make Character Frequencies Equal](https://leetcode.com/problems/minimum-operations-to-make-character-frequencies-equal/) | [C++](./C++/minimum-operations-to-make-character-frequencies-equal.cpp) [Python](./Python/minimum-operations-to-make-character-frequencies-equal.py) | _O(26 * n)_ | _O(26)_ | Hard | | Freq Table, DP
 
 <br/>
 <div align="right">
@@ -1391,6 +1393,9 @@
 3377 | [Digit Operations to Make Two Integers Equal](https://leetcode.com/problems/digit-operations-to-make-two-integers-equal/)  | [C++](./C++/digit-operations-to-make-two-integers-equal.cpp) [Python](./Python/digit-operations-to-make-two-integers-equal.py) |  _O(nlogn)_ | _O(n)_ | Medium           | | Graph, Number Theory, `Linear Sieve of Eratosthenes`, `Dijkstra's Algorithm` |
 3378 | [Count Connected Components in LCM Graph](https://leetcode.com/problems/count-connected-components-in-lcm-graph/) | [C++](./C++/count-connected-components-in-lcm-graph.cpp) [Python](./Python/count-connected-components-in-lcm-graph.py) | _O(n + tlogt)_ | _O(t)_ | Hard | | Number Theory, Graph, Union Find |
 3383 | [Minimum Runes to Add to Cast Spell](https://leetcode.com/problems/minimum-runes-to-add-to-cast-spell/) | [C++](./C++/minimum-runes-to-add-to-cast-spell.cpp) [Python](./Python/minimum-runes-to-add-to-cast-spell.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Graph, `Tarjan's Strongly Connected Components Algorithm`, SCC |
+3376 | [Minimum Time to Break Locks I](https://leetcode.com/problems/minimum-time-to-break-locks-i/) | [C++](./C++/minimum-time-to-break-locks-i.cpp) [Python](./Python/minimum-time-to-break-locks-i.py) | _O(n^3)_ | _O(n^2)_ | Medium | | Bitmasks, DP, Graph, `Hungarian Weighted Bipartite Matching`
+3385 | [Minimum Time to Break Locks II](https://leetcode.com/problems/minimum-time-to-break-locks-ii/) | [C++](./C++/minimum-time-to-break-locks-ii.cpp) [Python](./Python/minimum-time-to-break-locks-ii.py) | _O(n^3)_ | _O(n^2)_ | Hard | 🔒 | Graph, `Hungarian Weighted Bipartite Matching`
+3387 | [Maximize Amount After Two Days of Conversions](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) | [C++](./C++/maximize-amount-after-two-days-of-conversions.cpp) [Python](./Python/maximize-amount-after-two-days-of-conversions.py) | _O(n^2)_ | _O(n)_ | Medium | | `Bellman-Ford Algorithm`, BFS |
 
 <br/>
 <div align="right">
@@ -1700,6 +1705,7 @@
 3368 | [First Letter Capitalization](https://leetcode.com/problems/first-letter-capitalization/) | [MySQL](./MySQL/first-letter-capitalization.sql) | _O(n * l^2 + (n * l) * log(n * l))_ | _O(n * l^2)_       | Hard           |🔒| Recursive CTE |
 3374 | [First Letter Capitalization II](https://leetcode.com/problems/first-letter-capitalization-ii/) | [MySQL](./MySQL/first-letter-capitalization-ii.sql) | _O(n * l^2 + (n * l) * log(n * l))_ | _O(n * l^2)_       | Hard           |🔒| Recursive CTE |
 3384 | [Team Dominance by Pass Success](https://leetcode.com/problems/team-dominance-by-pass-success/) | [MySQL](./MySQL/team-dominance-by-pass-success.sql) | _O(p + t)_ | _O(p + t)_       | Hard           |🔒| |
+3390 | [Longest Team Pass Streak](https://leetcode.com/problems/longest-team-pass-streak/) | [MySQL](./MySQL/longest-team-pass-streak.sql) | _O(plogp)_ | _O(p)_       | Hard           |🔒| Recursive CTE, Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
