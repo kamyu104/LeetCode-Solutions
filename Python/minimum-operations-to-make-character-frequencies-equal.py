@@ -13,7 +13,8 @@ class Solution(object):
             cnt[ord(x)-ord('a')] += 1
         result = float("inf")
         for f in xrange(min(x for x in cnt if x), max(cnt)+1):
-            # dp1: min number if last op is insert, dp2: min number if last op is delete
+            # dp1: min number of the last one of the operations is insert
+            # dp2: min number of the last one of the operations is delete
             dp1 = dp2 = 0
             for i in xrange(26):
                 if not cnt[i]:
