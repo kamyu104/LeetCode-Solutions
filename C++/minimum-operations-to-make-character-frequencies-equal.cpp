@@ -16,7 +16,8 @@ public:
         }
         int result = size(s);
         for (int f = mn; f <= mx; ++f) {
-            // dp1 : min number if last op is insert, dp2: min number if last op is delete
+            // dp1: min number of the last one of the operations is insert
+            // dp2: min number of the last one of the operations is delete
             int dp1 = 0, dp2 = 0;
             for (int i = 0; i < 26; ++i) {
                 if (!cnt[i]) {
