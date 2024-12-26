@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3390%20%2F%203390-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3399%20%2F%203399-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -242,6 +242,7 @@
 3380 | [Maximum Area Rectangle With Point Constraints I](https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/) | [C++](./C++/maximum-area-rectangle-with-point-constraints-i.cpp) [Python](./Python/maximum-area-rectangle-with-point-constraints-i.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort, Brute Force, BIT, Fenwick Tree, Hash Table
 3382 | [Maximum Area Rectangle With Point Constraints II](https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-ii/) | [C++](./C++/maximum-area-rectangle-with-point-constraints-ii.cpp) [Python](./Python/maximum-area-rectangle-with-point-constraints-ii.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Sort, BIT, Fenwick Tree, Hash Table
 3386 | [Button with Longest Push Time](https://leetcode.com/problems/button-with-longest-push-time/) | [C++](./C++/button-with-longest-push-time.cpp) [Python](./Python/button-with-longest-push-time.py) | _O(n)_   | _O(1)_        | Easy         | | Array
+3392 | [Count Subarrays of Length Three With a Condition](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/) | [C++](./C++/count-subarrays-of-length-three-with-a-condition.cpp) [Python](./Python/count-subarrays-of-length-three-with-a-condition.py) | _O(n)_   | _O(1)_        | Easy         | | Array
 
 <br/>
 <div align="right">
@@ -560,6 +561,7 @@
 3295 | [Report Spam Message](https://leetcode.com/problems/report-spam-message/) | [C++](./C++/report-spam-message.cpp) [Python](./Python/report-spam-message.py) | _O(n + m)_ | _O(m)_ | Medium | | Hash Table
 3365 | [Rearrange K Substrings to Form Target String](https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/) | [C++](./C++/rearrange-k-substrings-to-form-target-string.cpp) [Python](./Python/rearrange-k-substrings-to-form-target-string.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
 3371 | [Identify the Largest Outlier in an Array](https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/) | [C++](./C++/identify-the-largest-outlier-in-an-array.cpp) [Python](./Python/identify-the-largest-outlier-in-an-array.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
+3396 | [Minimum Number of Operations to Make Elements in Array Distinct](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/) | [C++](./C++/minimum-number-of-operations-to-make-elements-in-array-distinct.cpp) [Python](./Python/minimum-number-of-operations-to-make-elements-in-array-distinct.py) | _O(n + r)_ | _O(r)_ | Easy | | Freq Table
 
 <br/>
 <div align="right">
@@ -699,6 +701,7 @@
 3345 | [Smallest Divisible Digit Product I](https://leetcode.com/problems/smallest-divisible-digit-product-i/) | [C++](./C++/smallest-divisible-digit-product-i.cpp) [Python](./Python/smallest-divisible-digit-product-i.py) | _O(logn)_ | _O(1)_ | Easy | | Brute Force |
 3348 | [Smallest Divisible Digit Product II](https://leetcode.com/problems/smallest-divisible-digit-product-ii/) | [C++](./C++/smallest-divisible-digit-product-ii.cpp) [Python](./Python/smallest-divisible-digit-product-ii.py) | _O(n + logt)_ | _O(1)_ | Hard | | Freq Table, Greedy, Prefix Sum, Number Theory |
 3360 | [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/) | [C++](./C++/stone-removal-game.cpp) [Python](./Python/stone-removal-game.py) | _O(1)_ | _O(1)_ | Easy | | Math |
+3395 | [Subsequences with a Unique Middle Mode I](https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-i/) | [C++](./C++/subsequences-with-a-unique-middle-mode-i.cpp) [Python](./Python/subsequences-with-a-unique-middle-mode-i.py) | _O(n)_ | _O(1)_ | Easy | | Freq Table, Prefix Sum, Combinatorics |
 
 <br/>
 <div align="right">
@@ -740,6 +743,7 @@
 3169 | [Count Days Without Meetings](https://leetcode.com/problems/count-days-without-meetings/) | [C++](./C++/count-days-without-meetings.cpp) [Python](./Python/count-days-without-meetings.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort
 3194 | [Minimum Average of Smallest and Largest Elements](https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/) | [C++](./C++/minimum-average-of-smallest-and-largest-elements.cpp) [Python](./Python/minimum-average-of-smallest-and-largest-elements.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort
 3309 | [Maximum Possible Number by Binary Concatenation](https://leetcode.com/problems/maximum-possible-number-by-binary-concatenation/) | [C++](./C++/maximum-possible-number-by-binary-concatenation.cpp) [Python](./Python/maximum-possible-number-by-binary-concatenation.py) | _O(n * logr * logn)_ | _O(nlogr)_ | Medium | | Sort, Brute Force
+3394 | [Check if Grid can be Cut into Sections](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections/) | [C++](./C++/check-if-grid-can-be-cut-into-sections.cpp) [Python](./Python/check-if-grid-can-be-cut-into-sections.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Merge Intervals
 
 <br/>
 <div align="right">
@@ -896,6 +900,8 @@
 3296 | [Minimum Number of Seconds to Make Mountain Height Zero](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) | [C++](./C++/minimum-number-of-seconds-to-make-mountain-height-zero.cpp) [Python](./Python/minimum-number-of-seconds-to-make-mountain-height-zero.py) | _O(nlogr)_ | _O(1)_ | Medium | | Binary Search, Quadratic Equation, Heap
 3356 | [Zero Array Transformation II](https://leetcode.com/problems/zero-array-transformation-ii/) | [C++](./C++/zero-array-transformation-ii.cpp) [Python](./Python/zero-array-transformation-ii.py) | _O((n + q) * logn)_   | _O(n)_        | Medium         | | Binary Search, Line Sweep
 3357 | [Minimize the Maximum Adjacent Element Difference](https://leetcode.com/problems/minimize-the-maximum-adjacent-element-difference/) | [C++](./C++/minimize-the-maximum-adjacent-element-difference.cpp) [Python](./Python/minimize-the-maximum-adjacent-element-difference.py) | _O(nlogr)_   | _O(1)_        | Hard         | | Binary Search
+3398 | [Smallest Substring With Identical Characters I](https://leetcode.com/problems/smallest-substring-with-identical-characters-i/) | [C++](./C++/smallest-substring-with-identical-characters-i.cpp) [Python](./Python/smallest-substring-with-identical-characters-i.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Binary Search, Greedy
+3399 | [Smallest Substring With Identical Characters II](https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/) | [C++](./C++/smallest-substring-with-identical-characters-ii.cpp) [Python](./Python/smallest-substring-with-identical-characters-ii.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Binary Search, Greedy
 
 <br/>
 
@@ -1179,6 +1185,7 @@
 3381 | [Maximum Subarray Sum With Length Divisible by K](https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/) | [C++](./C++/maximum-subarray-sum-with-length-divisible-by-k.cpp) [Python](./Python/maximum-subarray-sum-with-length-divisible-by-k.py) | _O(n)_ | _O(k)_ | Medium | | Prefix Sum, DP
 3388 | [Count Beautiful Splits in an Array](https://leetcode.com/problems/count-beautiful-splits-in-an-array/) | [C++](./C++/count-beautiful-splits-in-an-array.cpp) [Python](./Python/count-beautiful-splits-in-an-array.py) | _O(n^2)_ | _O(n)_ | Medium | | DP, `Z-Function`
 3389 | [Minimum Operations to Make Character Frequencies Equal](https://leetcode.com/problems/minimum-operations-to-make-character-frequencies-equal/) | [C++](./C++/minimum-operations-to-make-character-frequencies-equal.cpp) [Python](./Python/minimum-operations-to-make-character-frequencies-equal.py) | _O(26 * n)_ | _O(26)_ | Hard | | Freq Table, DP
+3393 | [Count Paths With the Given XOR Value](https://leetcode.com/problems/count-paths-with-the-given-xor-value/) | [C++](./C++/count-paths-with-the-given-xor-value.cpp) [Python](./Python/count-paths-with-the-given-xor-value.py) | _O(m * n * r)_ | _O(n * r)_ | Medium | | DP
 
 <br/>
 <div align="right">
@@ -1341,6 +1348,7 @@
 3301 | [Maximize the Total Height of Unique Towers](https://leetcode.com/problems/maximize-the-total-height-of-unique-towers/) | [C++](./C++/maximize-the-total-height-of-unique-towers.cpp) [Python](./Python/maximize-the-total-height-of-unique-towers.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Greedy
 3302 | [Find the Lexicographically Smallest Valid Sequence](https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/) | [C++](./C++/find-the-lexicographically-smallest-valid-sequence.cpp) [Python](./Python/find-the-lexicographically-smallest-valid-sequence.py) | _O(n + m)_   | _O(m)_        | Medium         | | Hash Table, Greedy
 3362 | [Zero Array Transformation III](https://leetcode.com/problems/zero-array-transformation-iii/) | [C++](./C++/zero-array-transformation-iii.cpp) [Python](./Python/zero-array-transformation-iii.py) | _O(n + qlogq)_   | _O(q)_        | Medium         | | Sort, Heap, Greedy
+3397 | [Maximum Number of Distinct Elements After Operations](https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/) | [C++](./C++/maximum-number-of-distinct-elements-after-operations.cpp) [Python](./Python/maximum-number-of-distinct-elements-after-operations.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Greedy
 
 <br/>
 <div align="right">
@@ -1501,6 +1509,7 @@
 2671 | [Frequency Tracker](https://leetcode.com/problems/frequency-tracker/) | [C++](./C++/frequency-tracker.cpp) [Python](./Python/frequency-tracker.py) | ctor: _O(1)_<br>add: _O(1)_<br>deleteOne: _O(1)_<br>hasFrequency: _O(1)_ | _O(min(n, r))_ | Medium | | Freq Table
 3242 | [Design Neighbor Sum Service](https://leetcode.com/problems/design-neighbor-sum-service/) | [C++](./C++/design-neighbor-sum-service.cpp) [Python](./Python/design-neighbor-sum-service.py) | ctor: _O(n^2)_<br>adjacentSum: _O(1)_<br>diagonalSum: _O(1)_ | _O(n^2)_ | Easy | | Hash Table
 3369 | [Design an Array Statistics Tracker](https://leetcode.com/problems/design-an-array-statistics-tracker/) | [C++](./C++/design-an-array-statistics-tracker.cpp) [Python](./Python/design-an-array-statistics-tracker.py) | ctor: _O(1)_<br>addNumber: _O(logn)_<br>removeFirstAddedNumber: _O(logn)_<br>getMean: _O(1)_<br>getMedian: _O(1)_<br>getMode: _O(1)_ | _O(n)_ | Hard | 🔒 | Deque, Freq Table, Sorted List, BST
+3391 | [Design a 3D Binary Matrix with Efficient Layer Tracking](https://leetcode.com/problems/design-a-3d-binary-matrix-with-efficient-layer-tracking/) | [C++](./C++/design-a-3d-binary-matrix-with-efficient-layer-tracking.cpp) [Python](./Python/design-a-3d-binary-matrix-with-efficient-layer-tracking.py) | ctor: _O(1)_<br>setCell: _O(logn)_<br>unsetCell: _O(logn)_<br>largestMatrix: _O(logn)_ | _O(n^3)_ | Medium | 🔒 | Heap, Sorted List
 
 <br/>
 <div align="right">
