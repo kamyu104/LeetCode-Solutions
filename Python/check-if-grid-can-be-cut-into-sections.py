@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(1)
 
-# sort
+# sort, merge intervals
 class Solution(object):
     def checkValidCuts(self, n, rectangles):
         """
