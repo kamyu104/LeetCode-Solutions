@@ -701,7 +701,7 @@
 3345 | [Smallest Divisible Digit Product I](https://leetcode.com/problems/smallest-divisible-digit-product-i/) | [C++](./C++/smallest-divisible-digit-product-i.cpp) [Python](./Python/smallest-divisible-digit-product-i.py) | _O(logn)_ | _O(1)_ | Easy | | Brute Force |
 3348 | [Smallest Divisible Digit Product II](https://leetcode.com/problems/smallest-divisible-digit-product-ii/) | [C++](./C++/smallest-divisible-digit-product-ii.cpp) [Python](./Python/smallest-divisible-digit-product-ii.py) | _O(n + logt)_ | _O(1)_ | Hard | | Freq Table, Greedy, Prefix Sum, Number Theory |
 3360 | [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/) | [C++](./C++/stone-removal-game.cpp) [Python](./Python/stone-removal-game.py) | _O(1)_ | _O(1)_ | Easy | | Math |
-3395 | [Subsequences with a Unique Middle Mode I](https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-i/) | [C++](./C++/subsequences-with-a-unique-middle-mode-i.cpp) [Python](./Python/subsequences-with-a-unique-middle-mode-i.py) | _O(n)_ | _O(1)_ | Easy | | Freq Table, Prefix Sum, Combinatorics |
+3395 | [Subsequences with a Unique Middle Mode I](https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-i/) | [C++](./C++/subsequences-with-a-unique-middle-mode-i.cpp) [Python](./Python/subsequences-with-a-unique-middle-mode-i.py) | _O(n)_ | _O(1)_ | Hard | | Freq Table, Prefix Sum, Combinatorics |
 
 <br/>
 <div align="right">
