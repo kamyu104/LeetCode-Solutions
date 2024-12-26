@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(1)
 
-// sort
+// sort, merge intervals
 class Solution {
 public:
     bool checkValidCuts(int n, vector<vector<int>>& rectangles) {
