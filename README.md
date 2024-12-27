@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3399%20%2F%203399-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3400%20%2F%203400-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -243,6 +243,7 @@
 3382 | [Maximum Area Rectangle With Point Constraints II](https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-ii/) | [C++](./C++/maximum-area-rectangle-with-point-constraints-ii.cpp) [Python](./Python/maximum-area-rectangle-with-point-constraints-ii.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Sort, BIT, Fenwick Tree, Hash Table
 3386 | [Button with Longest Push Time](https://leetcode.com/problems/button-with-longest-push-time/) | [C++](./C++/button-with-longest-push-time.cpp) [Python](./Python/button-with-longest-push-time.py) | _O(n)_   | _O(1)_        | Easy         | | Array
 3392 | [Count Subarrays of Length Three With a Condition](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/) | [C++](./C++/count-subarrays-of-length-three-with-a-condition.cpp) [Python](./Python/count-subarrays-of-length-three-with-a-condition.py) | _O(n)_   | _O(1)_        | Easy         | | Array
+3400 | [Maximum Number of Matching Indices After Right Shifts](https://leetcode.com/problems/maximum-number-of-matching-indices-after-right-shifts/) | [C++](./C++/maximum-number-of-matching-indices-after-right-shifts.cpp) [Python](./Python/maximum-number-of-matching-indices-after-right-shifts.py) | _O(n^2)_ | _O(1)_ | Medium | 🔒 | Brute Force
 
 <br/>
 <div align="right">
