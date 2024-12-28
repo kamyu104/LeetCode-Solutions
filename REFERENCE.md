@@ -97,6 +97,7 @@
         * [System Design Interview Volume 1](https://www.amazon.com/dp/B08CMF2CQF)
         * [System Design Interview Volume 2](https://www.amazon.com/dp/1736049119)
         * [Machine Learning System Design Interview](https://www.amazon.com/dp/1736049127)
+        * [Generative AI System Design Interview](https://www.amazon.com/dp/1736049143)
     * Database
         * [Effective SQL](https://www.amazon.com/dp/B01MZ75IW5)
         * [High Performance MySQL](https://www.amazon.com/dp/B09M7W126W/)
