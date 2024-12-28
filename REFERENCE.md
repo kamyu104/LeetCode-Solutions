@@ -87,9 +87,9 @@
         * [The Art of Computer Programming](https://www.amazon.com/dp/0137935102)
 * Software Design
     * JavaScript 
-        * [Software Design by Example: A Tool-Based Introduction with JavaScript](https://www.amazon.com/dp/B0D4CKXNPN)
+        * [Software Design by Example: A Tool-Based Introduction with JavaScript](https://third-bit.com/sdxjs/)
     * Python
-        * [Software Design by Example: A Tool-Based Introduction with Python](https://www.amazon.com/dp/B0D14P2FR1)
+        * [Software Design by Example: A Tool-Based Introduction with Python](https://third-bit.com/sdxpy/)
 * System Design
     * Introduction
         * [Designing Data-Intensive Applications](https://www.amazon.com/dp/1449373321)
