@@ -85,6 +85,11 @@
         * [算法竞赛入门经典 (第2版)](https://item.jd.com/11469701.html) / [算法竞赛入门经典 - 训练指南 升级版](https://item.jd.com/13171506.html)
     * Advanced Reference
         * [The Art of Computer Programming](https://www.amazon.com/dp/0137935102)
+* Software Design
+    * JavaScript 
+        * [Software Design by Example: A Tool-Based Introduction with JavaScript](https://www.amazon.com/dp/B0D4CKXNPN)
+    * Python
+        * [Software Design by Example: A Tool-Based Introduction with Python](https://www.amazon.com/dp/B0D14P2FR1)
 * System Design
     * Introduction
         * [Designing Data-Intensive Applications](https://www.amazon.com/dp/1449373321)
