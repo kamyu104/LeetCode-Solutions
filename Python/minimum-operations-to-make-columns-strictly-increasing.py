@@ -9,8 +9,8 @@ class Solution(object):
         :rtype: int
         """
         result = 0
-        for j in xrange(len(grid[0])):
-            for i in xrange(len(grid)-1):
+        for i in xrange(len(grid)-1):
+            for j in xrange(len(grid[0])):
                 if grid[i][j]+1 <= grid[i+1][j]:
                     continue
                 result += (grid[i][j]+1)-grid[i+1][j]
