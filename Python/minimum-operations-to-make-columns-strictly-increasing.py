@@ -9,9 +9,10 @@ class Solution(object):
         :rtype: int
         """
         result = 0
-        for i in xrange(len(grid)-1):
-            for j in xrange(len(grid[0])):
-                diff = max((grid[i][j]+1)-grid[i+1][j], 0)
-                grid[i+1][j] += diff
-                result += diff
+        for j in xrange(len(grid[0])):
+            for i in xrange(len(grid)-1):
+                if grid[i][j]+1 <= grid[i+1][j]:
+                    continue
+                result += (grid[i][j]+1)-grid[i+1][j]
+                grid[i+1][j] = grid[i][j]+1
         return result
