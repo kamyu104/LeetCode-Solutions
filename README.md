@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3400%20%2F%203400-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3405%20%2F%203405-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -563,6 +563,7 @@
 3365 | [Rearrange K Substrings to Form Target String](https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/) | [C++](./C++/rearrange-k-substrings-to-form-target-string.cpp) [Python](./Python/rearrange-k-substrings-to-form-target-string.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
 3371 | [Identify the Largest Outlier in an Array](https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/) | [C++](./C++/identify-the-largest-outlier-in-an-array.cpp) [Python](./Python/identify-the-largest-outlier-in-an-array.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
 3396 | [Minimum Number of Operations to Make Elements in Array Distinct](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/) | [C++](./C++/minimum-number-of-operations-to-make-elements-in-array-distinct.cpp) [Python](./Python/minimum-number-of-operations-to-make-elements-in-array-distinct.py) | _O(n + r)_ | _O(r)_ | Easy | | Freq Table
+3404 | [Count Special Subsequences](https://leetcode.com/problems/count-special-subsequences/) | [C++](./C++/count-special-subsequences.cpp) [Python](./Python/count-special-subsequences.py) | _O(n^2)_ | _O(n^2)_ | Medium | | Freq Table, Number Theory
 
 <br/>
 <div align="right">
@@ -703,6 +704,7 @@
 3348 | [Smallest Divisible Digit Product II](https://leetcode.com/problems/smallest-divisible-digit-product-ii/) | [C++](./C++/smallest-divisible-digit-product-ii.cpp) [Python](./Python/smallest-divisible-digit-product-ii.py) | _O(n + logt)_ | _O(1)_ | Hard | | Freq Table, Greedy, Prefix Sum, Number Theory |
 3360 | [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/) | [C++](./C++/stone-removal-game.cpp) [Python](./Python/stone-removal-game.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 3395 | [Subsequences with a Unique Middle Mode I](https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-i/) | [C++](./C++/subsequences-with-a-unique-middle-mode-i.cpp) [Python](./Python/subsequences-with-a-unique-middle-mode-i.py) | _O(n)_ | _O(1)_ | Hard | | Freq Table, Prefix Sum, Combinatorics |
+3405 | [Count the Number of Arrays with K Matching Adjacent Elements](https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/) | [C++](./C++/count-the-number-of-arrays-with-k-matching-adjacent-elements.cpp) [Python](./Python/count-the-number-of-arrays-with-k-matching-adjacent-elements.py) | _O(n + logm)_ | _O(n)_ | Hard | | Combinatorics, Fast Exponentiation |
 
 <br/>
 <div align="right">
@@ -1350,6 +1352,8 @@
 3302 | [Find the Lexicographically Smallest Valid Sequence](https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/) | [C++](./C++/find-the-lexicographically-smallest-valid-sequence.cpp) [Python](./Python/find-the-lexicographically-smallest-valid-sequence.py) | _O(n + m)_   | _O(m)_        | Medium         | | Hash Table, Greedy
 3362 | [Zero Array Transformation III](https://leetcode.com/problems/zero-array-transformation-iii/) | [C++](./C++/zero-array-transformation-iii.cpp) [Python](./Python/zero-array-transformation-iii.py) | _O(n + qlogq)_   | _O(q)_        | Medium         | | Sort, Heap, Greedy
 3397 | [Maximum Number of Distinct Elements After Operations](https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/) | [C++](./C++/maximum-number-of-distinct-elements-after-operations.cpp) [Python](./Python/maximum-number-of-distinct-elements-after-operations.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Greedy
+3402 | [Minimum Operations to Make Columns Strictly Increasing](https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/) | [C++](./C++/minimum-operations-to-make-columns-strictly-increasing.cpp) [Python](./Python/minimum-operations-to-make-columns-strictly-increasing.py) | _O(m * n)_   | _O(1)_        | Easy         | | Greedy
+3403 | [Find the Lexicographically Largest String From the Box I](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/) | [C++](./C++/find-the-lexicographically-largest-string-from-the-box-i.cpp) [Python](./Python/find-the-lexicographically-largest-string-from-the-box-i.py) | _O(n * m)_   | _O(m)_        | Medium         | | Greedy
 
 <br/>
 <div align="right">
@@ -1716,6 +1720,7 @@
 3374 | [First Letter Capitalization II](https://leetcode.com/problems/first-letter-capitalization-ii/) | [MySQL](./MySQL/first-letter-capitalization-ii.sql) | _O(n * l^2 + (n * l) * log(n * l))_ | _O(n * l^2)_       | Hard           |🔒| Recursive CTE |
 3384 | [Team Dominance by Pass Success](https://leetcode.com/problems/team-dominance-by-pass-success/) | [MySQL](./MySQL/team-dominance-by-pass-success.sql) | _O(plogp + t)_ | _O(p + t)_       | Hard           |🔒| |
 3390 | [Longest Team Pass Streak](https://leetcode.com/problems/longest-team-pass-streak/) | [MySQL](./MySQL/longest-team-pass-streak.sql) | _O(plogp + t)_ | _O(p + t)_       | Hard           |🔒| Recursive CTE, Window Function |
+3401 | [Find Circular Gift Exchange Chains](https://leetcode.com/problems/find-circular-gift-exchange-chains/) | [MySQL](./MySQL/find-circular-gift-exchange-chains.sql) | _O(n^2)_ | _O(n^2)_       | Hard           |🔒| Recursive CTE, Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
