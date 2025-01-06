@@ -1353,7 +1353,7 @@
 3362 | [Zero Array Transformation III](https://leetcode.com/problems/zero-array-transformation-iii/) | [C++](./C++/zero-array-transformation-iii.cpp) [Python](./Python/zero-array-transformation-iii.py) | _O(n + qlogq)_   | _O(q)_        | Medium         | | Sort, Heap, Greedy
 3397 | [Maximum Number of Distinct Elements After Operations](https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/) | [C++](./C++/maximum-number-of-distinct-elements-after-operations.cpp) [Python](./Python/maximum-number-of-distinct-elements-after-operations.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Greedy
 3402 | [Minimum Operations to Make Columns Strictly Increasing](https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/) | [C++](./C++/minimum-operations-to-make-columns-strictly-increasing.cpp) [Python](./Python/minimum-operations-to-make-columns-strictly-increasing.py) | _O(m * n)_   | _O(1)_        | Easy         | | Greedy
-3403 | [Find the Lexicographically Largest String From the Box I](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/) | [C++](./C++/find-the-lexicographically-largest-string-from-the-box-i.cpp) [Python](./Python/find-the-lexicographically-largest-string-from-the-box-i.py) | _O(n * m)_   | _O(m)_        | Medium         | | Greedy
+3403 | [Find the Lexicographically Largest String From the Box I](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/) | [C++](./C++/find-the-lexicographically-largest-string-from-the-box-i.cpp) [Python](./Python/find-the-lexicographically-largest-string-from-the-box-i.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 
 <br/>
 <div align="right">
