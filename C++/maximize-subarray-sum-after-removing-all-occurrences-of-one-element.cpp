@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// greedy, kadane's algorithm
+// hash table, greedy, kadane's algorithm
 class Solution {
 public:
     long long maxSubarraySum(vector<int>& nums) {
