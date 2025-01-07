@@ -706,7 +706,7 @@
 3360 | [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/) | [C++](./C++/stone-removal-game.cpp) [Python](./Python/stone-removal-game.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 3395 | [Subsequences with a Unique Middle Mode I](https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-i/) | [C++](./C++/subsequences-with-a-unique-middle-mode-i.cpp) [Python](./Python/subsequences-with-a-unique-middle-mode-i.py) | _O(n)_ | _O(1)_ | Hard | | Freq Table, Prefix Sum, Combinatorics |
 3405 | [Count the Number of Arrays with K Matching Adjacent Elements](https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/) | [C++](./C++/count-the-number-of-arrays-with-k-matching-adjacent-elements.cpp) [Python](./Python/count-the-number-of-arrays-with-k-matching-adjacent-elements.py) | _O(n + logm)_ | _O(n)_ | Hard | | Combinatorics, Fast Exponentiation |
-3411 | [Maximum Subarray With Equal Products](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | [C++](./C++/maximum-subarray-with-equal-products.cpp) [Python](./Python/maximum-subarray-with-equal-products.py) | precompute: _O(r * log(logr))_<br>runtime: _O(n * log(logr))_ | _O(r * log(logr))_ | Hard | | Number Theory, `Linear Sieve of Eratosthenes`, Hash Table |
+3411 | [Maximum Subarray With Equal Products](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | [C++](./C++/maximum-subarray-with-equal-products.cpp) [Python](./Python/maximum-subarray-with-equal-products.py) | precompute: _O(r * log(logr))_<br>runtime: _O(n * log(logr))_ | _O(r * log(logr))_ | Easy | | Number Theory, `Linear Sieve of Eratosthenes`, Hash Table |
 
 <br/>
 <div align="right">
