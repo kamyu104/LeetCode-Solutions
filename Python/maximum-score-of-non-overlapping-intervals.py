@@ -25,7 +25,7 @@ class Solution(object):
                 new_dp = [dp[j+1][k-1][0]-sorted_intervals[i][2], dp[j+1][k-1][1][:]]
                 insort(new_dp[1], idx)
                 dp[i+1][k] = min(dp[i][k], new_dp)
-        return dp[-1][K][1]
+        return dp[len(sorted_intervals)][K][1]
 
 
 # Time:  O(nlogn + n * k^2)
