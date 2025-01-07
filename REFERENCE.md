@@ -139,6 +139,7 @@
         * [Building Secure and Reliable Systems](https://google.github.io/building-secure-and-reliable-systems/raw/toc.html)
      * Technical Leadership
         * [The Staff Engineer's Path](https://www.amazon.com/dp/B0BG16Y553)
+        * [The Manager's Path](https://www.amazon.com/dp/B06XP3GJ7F)
 * Computer Science
     * Computer Systems 
         * [Computer Systems](https://www.amazon.com/dp/013409266X)
