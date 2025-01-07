@@ -8,7 +8,7 @@ public:
         int result = 2;
         const int mx = ranges::max(nums);
         vector<vector<int>> dp(mx, vector<int>(mx));
-        for (int i = nums.size() - 1; i >= 0; --i){
+        for (int i = size(nums) - 1; i >= 0; --i){
             const int x = nums[i] - 1;
             for (int nx = 0; nx < size(dp[x]); ++nx){
                 const int d = abs(nx - x);
