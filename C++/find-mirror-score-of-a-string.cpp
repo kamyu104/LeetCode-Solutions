@@ -1,7 +1,7 @@
 // Time:  O(n + 26)
 // Space: O(n + 26)
 
-// hash table, stack
+// simulation, hash table, stack
 class Solution {
 public:
     long long calculateScore(string s) {
