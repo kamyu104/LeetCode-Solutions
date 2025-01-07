@@ -9,18 +9,18 @@ public:
             return word;
         }
         int idx = 0;
-        for (int i = 1, l = 1; i < size(word); ++i) {
-            if (word[i] == word[idx + (l - 1)]) {
+        for (int i = 1, l = 0; i < size(word); ++i) {
+            if (word[i] == word[idx + l]) {
                 ++l;
-            } else if (word[i] < word[idx + (l - 1)]) {
-                l = 1;
-            } else if (word[i] > word[idx + (l - 1)]) {
-                if (word[i - (l - 1)] >= word[i]) {
-                    idx = i - (l - 1);
+            } else if (word[i] < word[idx + l]) {
+                l = 0;
+            } else if (word[i] > word[idx + l]) {
+                if (word[i - l] >= word[i]) {
+                    idx = i - l;
                 } else {
                     idx = i;
                 }
-                l = 1;
+                l = 0;
             }
         }
         return word.substr(idx, (size(word) - max((numFriends - 1) - idx, 0)) - idx);
