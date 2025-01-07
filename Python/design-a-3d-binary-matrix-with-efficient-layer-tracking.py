@@ -78,7 +78,7 @@ import collections
 import heapq
 
 
-# sorted list
+# heap
 class Matrix3D_2(object):
 
     def __init__(self, n):
