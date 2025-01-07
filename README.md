@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3405%20%2F%203405-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3415%20%2F%203415-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -329,6 +329,7 @@
 3303 | [Find the Occurrence of First Almost Equal Substring](https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/) | [C++](./C++/find-the-occurrence-of-first-almost-equal-substring.cpp) [Python](./Python/find-the-occurrence-of-first-almost-equal-substring.py) | _O(n + m)_   | _O(n + m)_        | Hard         | | `Z-Function`
 3324 | [Find the Sequence of Strings Appeared on the Screen](https://leetcode.com/problems/find-the-sequence-of-strings-appeared-on-the-screen/) | [C++](./C++/find-the-sequence-of-strings-appeared-on-the-screen.cpp) [Python](./Python/find-the-sequence-of-strings-appeared-on-the-screen.py) | _O(n^2)_   | _O(1)_        | Medium         | | String
 3340 | [Check Balanced String](https://leetcode.com/problems/check-balanced-string/) | [C++](./C++/check-balanced-string.cpp) [Python](./Python/check-balanced-string.py) | _O(n)_   | _O(1)_        | Easy         | | String
+3407 | [Substring Matching Pattern](https://leetcode.com/problems/substring-matching-pattern/) | [C++](./C++/substring-matching-pattern.cpp) [Python](./Python/substring-matching-pattern.py) | _O(n + m)_   | _O(m)_        | Easy         | | String, `KMP Algorithm`
 
 <br/>
 <div align="right">
@@ -705,6 +706,7 @@
 3360 | [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/) | [C++](./C++/stone-removal-game.cpp) [Python](./Python/stone-removal-game.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 3395 | [Subsequences with a Unique Middle Mode I](https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-i/) | [C++](./C++/subsequences-with-a-unique-middle-mode-i.cpp) [Python](./Python/subsequences-with-a-unique-middle-mode-i.py) | _O(n)_ | _O(1)_ | Hard | | Freq Table, Prefix Sum, Combinatorics |
 3405 | [Count the Number of Arrays with K Matching Adjacent Elements](https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/) | [C++](./C++/count-the-number-of-arrays-with-k-matching-adjacent-elements.cpp) [Python](./Python/count-the-number-of-arrays-with-k-matching-adjacent-elements.py) | _O(n + logm)_ | _O(n)_ | Hard | | Combinatorics, Fast Exponentiation |
+3411 | [Maximum Subarray With Equal Products](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | [C++](./C++/maximum-subarray-with-equal-products.cpp) [Python](./Python/maximum-subarray-with-equal-products.py) | precompute: _O(r * log(logr))_<br>runtime: _O(n * log(logr))_ | _O(r * log(logr))_ | Hard | | Number Theory, `Linear Sieve of Eratosthenes`, Hash Table |
 
 <br/>
 <div align="right">
@@ -843,6 +845,7 @@
 3346 | [Maximum Frequency of an Element After Performing Operations I](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/) | [C++](./C++/maximum-frequency-of-an-element-after-performing-operations-i.cpp) [Python](./Python/maximum-frequency-of-an-element-after-performing-operations-i.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Freq Table, Two Pointers, Sliding Window, Difference Array, Line Sweep
 3347 | [Maximum Frequency of an Element After Performing Operations II](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/) | [C++](./C++/maximum-frequency-of-an-element-after-performing-operations-ii.cpp) [Python](./Python/maximum-frequency-of-an-element-after-performing-operations-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Freq Table, Two Pointers, Sliding Window, Difference Array, Line Sweep
 3364 | [Minimum Positive Sum Subarray](https://leetcode.com/problems/minimum-positive-sum-subarray/) | [C++](./C++/minimum-positive-sum-subarray.cpp) [Python](./Python/minimum-positive-sum-subarray.py) | _O(nlogn)_ | _O(n)_ | Easy | | Prefix Sum, Two Pointers, Sliding Window, Sorted List, BST, Binary Search
+3413 | [Maximum Coins From K Consecutive Bags](https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/) | [C++](./C++/maximum-coins-from-k-consecutive-bags.cpp) [Python](./Python/maximum-coins-from-k-consecutive-bags.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -1189,6 +1192,8 @@
 3388 | [Count Beautiful Splits in an Array](https://leetcode.com/problems/count-beautiful-splits-in-an-array/) | [C++](./C++/count-beautiful-splits-in-an-array.cpp) [Python](./Python/count-beautiful-splits-in-an-array.py) | _O(n^2)_ | _O(n)_ | Medium | | DP, `Z-Function`
 3389 | [Minimum Operations to Make Character Frequencies Equal](https://leetcode.com/problems/minimum-operations-to-make-character-frequencies-equal/) | [C++](./C++/minimum-operations-to-make-character-frequencies-equal.cpp) [Python](./Python/minimum-operations-to-make-character-frequencies-equal.py) | _O(26 * n)_ | _O(26)_ | Hard | | Freq Table, DP
 3393 | [Count Paths With the Given XOR Value](https://leetcode.com/problems/count-paths-with-the-given-xor-value/) | [C++](./C++/count-paths-with-the-given-xor-value.cpp) [Python](./Python/count-paths-with-the-given-xor-value.py) | _O(m * n * r)_ | _O(n * r)_ | Medium | | DP
+3409 | [Longest Subsequence With Decreasing Adjacent Difference](https://leetcode.com/problems/longest-subsequence-with-decreasing-adjacent-difference/) | [C++](./C++/longest-subsequence-with-decreasing-adjacent-difference.cpp) [Python](./Python/longest-subsequence-with-decreasing-adjacent-difference.py) | _O(r^2 + n * r)_ | _O(r^2)_ | Medium | | DP
+3414 | [Maximum Score of Non-overlapping Intervals](https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/) | [C++](./C++/maximum-score-of-non-overlapping-intervals.cpp) [Python](./Python/maximum-score-of-non-overlapping-intervals.py) | _O(nlogn + n * k^2)_ | _O(n * k^2)_ | Hard | | DP, Binary Search
 
 <br/>
 <div align="right">
@@ -1354,6 +1359,8 @@
 3397 | [Maximum Number of Distinct Elements After Operations](https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/) | [C++](./C++/maximum-number-of-distinct-elements-after-operations.cpp) [Python](./Python/maximum-number-of-distinct-elements-after-operations.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Greedy
 3402 | [Minimum Operations to Make Columns Strictly Increasing](https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/) | [C++](./C++/minimum-operations-to-make-columns-strictly-increasing.cpp) [Python](./Python/minimum-operations-to-make-columns-strictly-increasing.py) | _O(m * n)_   | _O(1)_        | Easy         | | Greedy
 3403 | [Find the Lexicographically Largest String From the Box I](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/) | [C++](./C++/find-the-lexicographically-largest-string-from-the-box-i.cpp) [Python](./Python/find-the-lexicographically-largest-string-from-the-box-i.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3406 | [Find the Lexicographically Largest String From the Box II](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-ii/) | [C++](./C++/find-the-lexicographically-largest-string-from-the-box-ii.cpp) [Python](./Python/find-the-lexicographically-largest-string-from-the-box-ii.py) | _O(n)_   | _O(1)_        | Hard         | 🔒 | Greedy
+3410 | [Maximize Subarray Sum After Removing All Occurrences of One Element](https://leetcode.com/problems/maximize-subarray-sum-after-removing-all-occurrences-of-one-element/) | [C++](./C++/maximize-subarray-sum-after-removing-all-occurrences-of-one-element.cpp) [Python](./Python/maximize-subarray-sum-after-removing-all-occurrences-of-one-element.py) | _O(n)_   | _O(n)_        | Hard         | | Prefix Sum, Greedy, `Kadane's Algorithm`
 
 <br/>
 <div align="right">
@@ -1447,6 +1454,7 @@
 3168 | [Minimum Number of Chairs in a Waiting Room](https://leetcode.com/problems/minimum-number-of-chairs-in-a-waiting-room/) | [C++](./C++/minimum-number-of-chairs-in-a-waiting-room.cpp) [Python](./Python/minimum-number-of-chairs-in-a-waiting-room.py) | _O(n)_ | _O(1)_ | Easy | | Simulation
 3175 | [Find The First Player to win K Games in a Row](https://leetcode.com/problems/find-the-first-player-to-win-k-games-in-a-row/) | [C++](./C++/find-the-first-player-to-win-k-games-in-a-row.cpp) [Python](./Python/find-the-first-player-to-win-k-games-in-a-row.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 3248 | [Snake in Matrix](https://leetcode.com/problems/snake-in-matrix/) | [C++](./C++/snake-in-matrix.cpp) [Python](./Python/snake-in-matrix.py) | _O(c)_ | _O(1)_ | Medium | | Simulation
+3412 | [Find Mirror Score of a String](https://leetcode.com/problems/find-mirror-score-of-a-string/) | [C++](./C++/find-mirror-score-of-a-string.cpp) [Python](./Python/find-mirror-score-of-a-string.py) | _O(n + 26)_ | _O(n + 26)_ | Medium | | Simulation, Hash Table, Stack
 
 <br/>
 <div align="right">
@@ -1515,6 +1523,7 @@
 3242 | [Design Neighbor Sum Service](https://leetcode.com/problems/design-neighbor-sum-service/) | [C++](./C++/design-neighbor-sum-service.cpp) [Python](./Python/design-neighbor-sum-service.py) | ctor: _O(n^2)_<br>adjacentSum: _O(1)_<br>diagonalSum: _O(1)_ | _O(n^2)_ | Easy | | Hash Table
 3369 | [Design an Array Statistics Tracker](https://leetcode.com/problems/design-an-array-statistics-tracker/) | [C++](./C++/design-an-array-statistics-tracker.cpp) [Python](./Python/design-an-array-statistics-tracker.py) | ctor: _O(1)_<br>addNumber: _O(logn)_<br>removeFirstAddedNumber: _O(logn)_<br>getMean: _O(1)_<br>getMedian: _O(1)_<br>getMode: _O(1)_ | _O(n)_ | Hard | 🔒 | Deque, Freq Table, Sorted List, BST
 3391 | [Design a 3D Binary Matrix with Efficient Layer Tracking](https://leetcode.com/problems/design-a-3d-binary-matrix-with-efficient-layer-tracking/) | [C++](./C++/design-a-3d-binary-matrix-with-efficient-layer-tracking.cpp) [Python](./Python/design-a-3d-binary-matrix-with-efficient-layer-tracking.py) | ctor: _O(1)_<br>setCell: _O(logn)_<br>unsetCell: _O(logn)_<br>largestMatrix: _O(logn)_ | _O(n^3)_ | Medium | 🔒 | Heap, Sorted List
+3408 | [Design Task Manager](https://leetcode.com/problems/design-task-manager/) | [C++](./C++/design-task-manager.cpp) [Python](./Python/design-task-manager.py) | ctor: _O(tlogt)_<br>add: _O(logt)_<br>edit: _O(logt)_<br>rmv: _O(logt)_<br>execTop: _O(logt)_ | _O(t)_ | Medium | 🔒 | Heap, Sorted List
 
 <br/>
 <div align="right">
@@ -1721,6 +1730,7 @@
 3384 | [Team Dominance by Pass Success](https://leetcode.com/problems/team-dominance-by-pass-success/) | [MySQL](./MySQL/team-dominance-by-pass-success.sql) | _O(plogp + t)_ | _O(p + t)_       | Hard           |🔒| |
 3390 | [Longest Team Pass Streak](https://leetcode.com/problems/longest-team-pass-streak/) | [MySQL](./MySQL/longest-team-pass-streak.sql) | _O(plogp + t)_ | _O(p + t)_       | Hard           |🔒| Recursive CTE, Window Function |
 3401 | [Find Circular Gift Exchange Chains](https://leetcode.com/problems/find-circular-gift-exchange-chains/) | [MySQL](./MySQL/find-circular-gift-exchange-chains.sql) | _O(n^2)_ | _O(n^2)_       | Hard           |🔒| Recursive CTE, Window Function |
+3415 | [Find Products with Three Consecutive Digits](https://leetcode.com/problems/find-products-with-three-consecutive-digits/) | [MySQL](./MySQL/find-products-with-three-consecutive-digits.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| Regular Expression |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
