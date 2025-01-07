@@ -104,6 +104,7 @@
         * [Database Internals](https://www.amazon.com/dp/1492040347)
     * Microservices
         * [Microservices Patterns](https://www.amazon.com/dp/1617294543)
+        * [Building Microservices](https://www.amazon.com/dp/1492034029)
     * Performance
         * [Systems Performance](https://www.amazon.com/dp/0136820158)
     * Open Source Applications
