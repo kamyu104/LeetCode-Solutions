@@ -1,5 +1,5 @@
 # Time:  O(m * n * k) = O(m * n)
-# Space: O(min(m, n))
+# Space: O(min(m, n) * k) = O(min(m, n))
 
 # dp
 class Solution(object):
@@ -33,7 +33,7 @@ class Solution(object):
 
 
 # Time:  O(m * n * k) = O(m * n)
-# Space: O(n)
+# Space: O(n * k) = O(n)
 # dp
 class Solution2(object):
     def maximumAmount(self, coins):
