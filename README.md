@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3415%20%2F%203415-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3420%20%2F%203420-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -244,6 +244,7 @@
 3386 | [Button with Longest Push Time](https://leetcode.com/problems/button-with-longest-push-time/) | [C++](./C++/button-with-longest-push-time.cpp) [Python](./Python/button-with-longest-push-time.py) | _O(n)_   | _O(1)_        | Easy         | | Array
 3392 | [Count Subarrays of Length Three With a Condition](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/) | [C++](./C++/count-subarrays-of-length-three-with-a-condition.cpp) [Python](./Python/count-subarrays-of-length-three-with-a-condition.py) | _O(n)_   | _O(1)_        | Easy         | | Array
 3400 | [Maximum Number of Matching Indices After Right Shifts](https://leetcode.com/problems/maximum-number-of-matching-indices-after-right-shifts/) | [C++](./C++/maximum-number-of-matching-indices-after-right-shifts.cpp) [Python](./Python/maximum-number-of-matching-indices-after-right-shifts.py) | _O(n^2)_ | _O(1)_ | Medium | 🔒 | Brute Force
+3417 | [Zigzag Grid Traversal With Skip](https://leetcode.com/problems/zigzag-grid-traversal-with-skip/) | [C++](./C++/zigzag-grid-traversal-with-skip.cpp) [Python](./Python/zigzag-grid-traversal-with-skip.py) | _O(n * m)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -707,6 +708,7 @@
 3395 | [Subsequences with a Unique Middle Mode I](https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-i/) | [C++](./C++/subsequences-with-a-unique-middle-mode-i.cpp) [Python](./Python/subsequences-with-a-unique-middle-mode-i.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, Prefix Sum, Combinatorics |
 3405 | [Count the Number of Arrays with K Matching Adjacent Elements](https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/) | [C++](./C++/count-the-number-of-arrays-with-k-matching-adjacent-elements.cpp) [Python](./Python/count-the-number-of-arrays-with-k-matching-adjacent-elements.py) | _O(n + logm)_ | _O(n)_ | Hard | | Combinatorics, Fast Exponentiation |
 3411 | [Maximum Subarray With Equal Products](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | [C++](./C++/maximum-subarray-with-equal-products.cpp) [Python](./Python/maximum-subarray-with-equal-products.py) | precompute: _O(r * log(logr))_<br>runtime: _O(n * log(logr))_ | _O(r * log(logr))_ | Easy | | Number Theory, `Linear Sieve of Eratosthenes`, Hash Table |
+3416 | [Subsequences with a Unique Middle Mode II](https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-ii/) | [C++](./C++/subsequences-with-a-unique-middle-mode-ii.cpp) [Python](./Python/subsequences-with-a-unique-middle-mode-ii.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Freq Table, Prefix Sum, Combinatorics |
 
 <br/>
 <div align="right">
@@ -846,6 +848,7 @@
 3347 | [Maximum Frequency of an Element After Performing Operations II](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/) | [C++](./C++/maximum-frequency-of-an-element-after-performing-operations-ii.cpp) [Python](./Python/maximum-frequency-of-an-element-after-performing-operations-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Freq Table, Two Pointers, Sliding Window, Difference Array, Line Sweep
 3364 | [Minimum Positive Sum Subarray](https://leetcode.com/problems/minimum-positive-sum-subarray/) | [C++](./C++/minimum-positive-sum-subarray.cpp) [Python](./Python/minimum-positive-sum-subarray.py) | _O(nlogn)_ | _O(n)_ | Easy | | Prefix Sum, Two Pointers, Sliding Window, Sorted List, BST, Binary Search
 3413 | [Maximum Coins From K Consecutive Bags](https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/) | [C++](./C++/maximum-coins-from-k-consecutive-bags.cpp) [Python](./Python/maximum-coins-from-k-consecutive-bags.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers, Sliding Window
+3420 | [Count Non-Decreasing Subarrays After K Operations](https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/) | [C++](./C++/count-non-decreasing-subarrays-after-k-operations.cpp) [Python](./Python/count-non-decreasing-subarrays-after-k-operations.py) | _O(n)_ | _O(n)_ | Hard | | Mono Deque, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -1194,6 +1197,7 @@
 3393 | [Count Paths With the Given XOR Value](https://leetcode.com/problems/count-paths-with-the-given-xor-value/) | [C++](./C++/count-paths-with-the-given-xor-value.cpp) [Python](./Python/count-paths-with-the-given-xor-value.py) | _O(m * n * r)_ | _O(n * r)_ | Medium | | DP
 3409 | [Longest Subsequence With Decreasing Adjacent Difference](https://leetcode.com/problems/longest-subsequence-with-decreasing-adjacent-difference/) | [C++](./C++/longest-subsequence-with-decreasing-adjacent-difference.cpp) [Python](./Python/longest-subsequence-with-decreasing-adjacent-difference.py) | _O(r^2 + n * r)_ | _O(r^2)_ | Medium | | DP
 3414 | [Maximum Score of Non-overlapping Intervals](https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/) | [C++](./C++/maximum-score-of-non-overlapping-intervals.cpp) [Python](./Python/maximum-score-of-non-overlapping-intervals.py) | _O(nlogn + n * k^2)_ | _O(n * k^2)_ | Hard | | DP, Binary Search
+3418 | [Maximum Amount of Money Robot Can Earn](https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/) | [C++](./C++/maximum-amount-of-money-robot-can-earn.cpp) [Python](./Python/maximum-amount-of-money-robot-can-earn.py) | _O(m * n)_ | _O(min(m, n))_ | Medium | | DP
 
 <br/>
 <div align="right">
@@ -1416,6 +1420,7 @@
 3376 | [Minimum Time to Break Locks I](https://leetcode.com/problems/minimum-time-to-break-locks-i/) | [C++](./C++/minimum-time-to-break-locks-i.cpp) [Python](./Python/minimum-time-to-break-locks-i.py) | _O(n^3)_ | _O(n^2)_ | Medium | | Bitmasks, DP, Graph, `Hungarian Weighted Bipartite Matching`
 3385 | [Minimum Time to Break Locks II](https://leetcode.com/problems/minimum-time-to-break-locks-ii/) | [C++](./C++/minimum-time-to-break-locks-ii.cpp) [Python](./Python/minimum-time-to-break-locks-ii.py) | _O(n^3)_ | _O(n^2)_ | Hard | 🔒 | Graph, `Hungarian Weighted Bipartite Matching`
 3387 | [Maximize Amount After Two Days of Conversions](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) | [C++](./C++/maximize-amount-after-two-days-of-conversions.cpp) [Python](./Python/maximize-amount-after-two-days-of-conversions.py) | _O(n^2)_ | _O(n)_ | Medium | | `Bellman-Ford Algorithm`, BFS |
+3419 | [Minimize the Maximum Edge Weight of Graph](https://leetcode.com/problems/minimize-the-maximum-edge-weight-of-graph/)  | [C++](./C++/minimize-the-maximum-edge-weight-of-graph.cpp) [Python](./Python/minimize-the-maximum-edge-weight-of-graph.py) |  _O(nlogn + e)_ | _O(n + e)_ | Medium           | | Graph, `Dijkstra's Algorithm`, Binary Search, BFS |
 
 <br/>
 <div align="right">
