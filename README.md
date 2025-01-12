@@ -1420,7 +1420,7 @@
 3376 | [Minimum Time to Break Locks I](https://leetcode.com/problems/minimum-time-to-break-locks-i/) | [C++](./C++/minimum-time-to-break-locks-i.cpp) [Python](./Python/minimum-time-to-break-locks-i.py) | _O(n^3)_ | _O(n^2)_ | Medium | | Bitmasks, DP, Graph, `Hungarian Weighted Bipartite Matching`
 3385 | [Minimum Time to Break Locks II](https://leetcode.com/problems/minimum-time-to-break-locks-ii/) | [C++](./C++/minimum-time-to-break-locks-ii.cpp) [Python](./Python/minimum-time-to-break-locks-ii.py) | _O(n^3)_ | _O(n^2)_ | Hard | 🔒 | Graph, `Hungarian Weighted Bipartite Matching`
 3387 | [Maximize Amount After Two Days of Conversions](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) | [C++](./C++/maximize-amount-after-two-days-of-conversions.cpp) [Python](./Python/maximize-amount-after-two-days-of-conversions.py) | _O(n^2)_ | _O(n)_ | Medium | | `Bellman-Ford Algorithm`, BFS |
-3419 | [Minimize the Maximum Edge Weight of Graph](https://leetcode.com/problems/minimize-the-maximum-edge-weight-of-graph/)  | [C++](./C++/minimize-the-maximum-edge-weight-of-graph.cpp) [Python](./Python/minimize-the-maximum-edge-weight-of-graph.py) |  _O(nlogn + e)_ | _O(n + e)_ | Medium           | | Graph, `Dijkstra's Algorithm`, Binary Search, BFS |
+3419 | [Minimize the Maximum Edge Weight of Graph](https://leetcode.com/problems/minimize-the-maximum-edge-weight-of-graph/)  | [C++](./C++/minimize-the-maximum-edge-weight-of-graph.cpp) [Python](./Python/minimize-the-maximum-edge-weight-of-graph.py) |  _O(nlogn + e)_ | _O(n + e)_ | Medium           | | Graph, `Dijkstra's Algorithm`, `Prim's Algorithm`, Binary Search, BFS |
 
 <br/>
 <div align="right">
