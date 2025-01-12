@@ -13,5 +13,5 @@ class Solution(object):
             if i%2 == 0:
                 result.extend(grid[i][j] for j in xrange(0, len(grid[0]), 2))
             else:
-                result.extend(grid[i][j] for j in xrange((len(grid[0])-1)-len(grid[0])%2, -1, -2))
+                result.extend(grid[i][j] for j in reversed(xrange(1, len(grid[0]), 2)))
         return result
