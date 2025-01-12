@@ -37,10 +37,47 @@ public:
     }
 };
 
+// Time:  O(nlogn + e)
+// Space: O(n + e)
+// prim's algorithm
+class Solution2 {
+public:
+    int minMaxWeight(int n, vector<vector<int>>& edges, int threshold) {
+        static const int INF = numeric_limits<int>::max();
+
+        vector<unordered_map<int, int>> adj(n);
+        const auto& prim = [&]() {
+            vector<int> best(size(adj), INF);
+            priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap;
+            min_heap.emplace(0, 0);
+            while (!empty(min_heap)) {
+                const auto [curr, u] = min_heap.top(); min_heap.pop();
+                if (best[u] != INF) {
+                    continue;
+                }
+                best[u] = curr;
+                for (const auto& [v, w] : adj[u]) {
+                    if (best[v] != INF) {
+                        continue;
+                    }
+                    min_heap.emplace(w, v);
+                }
+            }
+            const int result = ranges::max(best);
+            return result != INF ? result : -1;
+        };
+
+        for (const auto& e : edges) {
+            adj[e[1]][e[0]] = adj[e[1]].count(e[0]) ? min(adj[e[1]][e[0]], e[2]) : e[2];
+        }
+        return prim();
+    }
+};
+
 // Time:  O(nlogw + e)
 // Space: O(n + e)
 // binary search, bfs
-class Solution2 {
+class Solution3 {
 public:
     int minMaxWeight(int n, vector<vector<int>>& edges, int threshold) {
         static const int INF = numeric_limits<int>::max();
