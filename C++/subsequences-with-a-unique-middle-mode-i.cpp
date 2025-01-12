@@ -5,22 +5,24 @@
 class Solution {
 public:
     int subsequencesWithMiddleMode(vector<int>& nums) {
-        const auto& nC2 = [](int64_t x) {
+        typedef __int128 int128_t;
+
+        const auto& nC2 = [](int128_t x) {
             return x * (x - 1) / 2;
         };
 
         static const int MOD = 1e9 + 7;
-        int64_t result = 0;
-        unordered_map<int, int> left, right;
+        int128_t result = 0;
+        unordered_map<int, int128_t> left, right;
         for (const auto& x : nums) {
             ++right[x];
         }
 
-        int64_t left_x_sq = 0; // sum(left[x]^2 for x != v)
-        int64_t right_x_sq = 0; // sum(right[x]^2f or x != v)
-        int64_t left_x_right_x = 0;  // sum(left[x]*right[x] for x != v)
-        int64_t left_x_sq_right_x = 0;  // sum(left[x]^2*right[x] for x != v)
-        int64_t left_x_right_x_sq = 0;  //sum(left[x]*right[x]^2 for x != v)
+        int128_t left_x_sq = 0; // sum(left[x]^2 for x != v)
+        int128_t right_x_sq = 0; // sum(right[x]^2f or x != v)
+        int128_t left_x_right_x = 0;  // sum(left[x]*right[x] for x != v)
+        int128_t left_x_sq_right_x = 0;  // sum(left[x]^2*right[x] for x != v)
+        int128_t left_x_right_x_sq = 0;  //sum(left[x]*right[x]^2 for x != v)
         for (const auto& [_, v] : right) {
             right_x_sq += v * v;
         }
