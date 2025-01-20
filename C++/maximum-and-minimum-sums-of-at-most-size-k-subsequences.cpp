@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// sort, combinatorics
+// sort, combinatorics, two pointers, sliding window
 static const uint32_t MOD = 1e9 + 7;
 
 uint32_t addmod(uint32_t a, uint32_t b) {  // avoid overflow
