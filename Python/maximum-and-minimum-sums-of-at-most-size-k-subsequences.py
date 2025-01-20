@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-# sort, combinatorics
+# sort, combinatorics, two pointers, sliding window
 MOD = 10**9+7
 FACT, INV, INV_FACT = [[1]*2 for _ in xrange(3)]
 def nCr(n, k):
