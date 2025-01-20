@@ -1,7 +1,7 @@
 // Time:  O(nlogk)
 // Space: O(k)
 
-// sliding window, two pointers, bst
+// math, sliding window, two pointers, bst
 class Solution {
 public:
     long long minOperations(vector<int>& nums, int k) {
