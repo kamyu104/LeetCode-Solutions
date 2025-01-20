@@ -18,8 +18,7 @@ public:
                     ++dq[0].second;
                 }
                 int left = right;
-                while (!empty(dq) && !check(nums[dq.back().first], nums[right])) {
-                    int i;
+                for (int i; !empty(dq) && !check(nums[dq.back().first], nums[right]); ) {
                     tie(i, left) = dq.back(); dq.pop_back();
                     total -= static_cast<int64_t>(i - left + 1) * nums[i];
                 }
