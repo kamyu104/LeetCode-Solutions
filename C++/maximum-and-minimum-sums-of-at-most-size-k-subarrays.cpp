@@ -9,7 +9,7 @@ public:
             int64_t result = 0, total = 0;
             deque<pair<int, int>> dq;
             for (int right = 0; right < size(nums); ++right) {
-                while (!empty(dq) && dq[0].first <= right - k) {
+                if (!empty(dq) && dq[0].first == right - k) {
                     total -= nums[dq[0].first];
                     dq.pop_front();
                 }
