@@ -51,12 +51,14 @@ public:
                 dq.emplace_back(right, left);
                 total += static_cast<int64_t>(right - left + 1) * nums[right];
                 result += total;
-                if (dq[0].first == right - (k - 1)) {
+                if (right - (k - 1) >= 0) {
                     total -= nums[dq[0].first];
-                    dq.pop_front();
-                } else if (dq[0].second == right - (k - 1)) {
-                    total -= nums[dq[0].first];
-                    ++dq[0].second;
+                    if (dq[0].first == right - (k - 1)) {
+                        dq.pop_front();
+                    } else {
+                        assert(dq[0].second == right - (k - 1));
+                        ++dq[0].second;
+                    }
                 }
             }
             return result;
