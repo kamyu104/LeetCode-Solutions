@@ -16,10 +16,6 @@ class Solution(object):
             result = total = 0
             dq = collections.deque()
             for right in xrange(len(nums)):
-                if right-k >= 0:
-                    total -= nums[dq[0]]
-                    if dq[0] == right-k:
-                        dq.popleft()
                 while dq and not check(nums[dq[-1]], nums[right]):
                     i = dq.pop()
                     cnt = i-(dq[-1]+1 if dq else max(right-k+1, 0))+1
@@ -28,6 +24,10 @@ class Solution(object):
                 dq.append(right)
                 total += cnt*nums[right]
                 result += total
+                if right-(k-1) >= 0:
+                    total -= nums[dq[0]]
+                    if dq[0] == right-(k-1):
+                        dq.popleft()
             return result
     
         return count(lambda a, b: a < b)+count(lambda a, b: a > b)
@@ -50,12 +50,6 @@ class Solution2(object):
             result = total = 0
             dq = collections.deque()
             for right in xrange(len(nums)):
-                if dq:
-                    if dq[0][0] == right-k:
-                        total -= nums[dq.popleft()[0]]
-                    elif dq[0][1] == right-k:
-                        total -= nums[dq[0][0]]
-                        dq[0][1] += 1
                 left = right
                 while dq and not check(nums[dq[-1][0]], nums[right]):
                     i, left = dq.pop()
@@ -63,6 +57,11 @@ class Solution2(object):
                 dq.append([right, left])
                 total += (right-left+1)*nums[right]
                 result += total
+                if dq[0][0] == right-(k-1):
+                    total -= nums[dq.popleft()[0]]
+                elif dq[0][1] == right-(k-1):
+                    total -= nums[dq[0][0]]
+                    dq[0][1] += 1
             return result
     
         return count(lambda a, b: a < b)+count(lambda a, b: a > b)
