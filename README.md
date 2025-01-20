@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3420%20%2F%203420-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3430%20%2F%203430-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -245,6 +245,8 @@
 3392 | [Count Subarrays of Length Three With a Condition](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/) | [C++](./C++/count-subarrays-of-length-three-with-a-condition.cpp) [Python](./Python/count-subarrays-of-length-three-with-a-condition.py) | _O(n)_   | _O(1)_        | Easy         | | Array
 3400 | [Maximum Number of Matching Indices After Right Shifts](https://leetcode.com/problems/maximum-number-of-matching-indices-after-right-shifts/) | [C++](./C++/maximum-number-of-matching-indices-after-right-shifts.cpp) [Python](./Python/maximum-number-of-matching-indices-after-right-shifts.py) | _O(n^2)_ | _O(1)_ | Medium | 🔒 | Brute Force
 3417 | [Zigzag Grid Traversal With Skip](https://leetcode.com/problems/zigzag-grid-traversal-with-skip/) | [C++](./C++/zigzag-grid-traversal-with-skip.cpp) [Python](./Python/zigzag-grid-traversal-with-skip.py) | _O(n * m)_ | _O(1)_ | Easy | | Array
+3423 | [Maximum Difference Between Adjacent Elements in a Circular Array](https://leetcode.com/problems/zmaximum-difference-between-adjacent-elements-in-a-circular-array/) | [C++](./C++/maximum-difference-between-adjacent-elements-in-a-circular-array.cpp) [Python](./Python/maximum-difference-between-adjacent-elements-in-a-circular-array.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3427 | [Sum of Variable Length Subarrays](https://leetcode.com/problems/sum-of-variable-length-subarrays/) | [C++](./C++/sum-of-variable-length-subarrays.cpp) [Python](./Python/sum-of-variable-length-subarrays.py) | _O(n)_   | _O(n)_        | Easy         | | Difference Array
 
 <br/>
 <div align="right">
@@ -709,6 +711,8 @@
 3405 | [Count the Number of Arrays with K Matching Adjacent Elements](https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/) | [C++](./C++/count-the-number-of-arrays-with-k-matching-adjacent-elements.cpp) [Python](./Python/count-the-number-of-arrays-with-k-matching-adjacent-elements.py) | _O(n + logm)_ | _O(n)_ | Hard | | Combinatorics, Fast Exponentiation |
 3411 | [Maximum Subarray With Equal Products](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | [C++](./C++/maximum-subarray-with-equal-products.cpp) [Python](./Python/maximum-subarray-with-equal-products.py) | precompute: _O(r * log(logr))_<br>runtime: _O(n * log(logr))_ | _O(r * log(logr))_ | Easy | | Number Theory, `Linear Sieve of Eratosthenes`, Hash Table |
 3416 | [Subsequences with a Unique Middle Mode II](https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-ii/) | [C++](./C++/subsequences-with-a-unique-middle-mode-ii.cpp) [Python](./Python/subsequences-with-a-unique-middle-mode-ii.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Freq Table, Prefix Sum, Combinatorics |
+3426 | [Manhattan Distances of All Arrangements of Pieces](https://leetcode.com/problems/manhattan-distances-of-all-arrangements-of-pieces/) | [C++](./C++/manhattan-distances-of-all-arrangements-of-pieces.cpp) [Python](./Python/manhattan-distances-of-all-arrangements-of-pieces.py) | precompute: _O(max(m * n))_<br>runtime: _O(1)_ | _O(max(m * n))_ | Hard | | Combinatorics |
+3428 | [Maximum and Minimum Sums of at Most Size K Subsequences](https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/) | [C++](./C++/maximum-and-minimum-sums-of-at-most-size-k-subsequences.cpp) [Python](./Python/maximum-and-minimum-sums-of-at-most-size-k-subsequences.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Combinatorics |
 
 <br/>
 <div align="right">
@@ -849,6 +853,9 @@
 3364 | [Minimum Positive Sum Subarray](https://leetcode.com/problems/minimum-positive-sum-subarray/) | [C++](./C++/minimum-positive-sum-subarray.cpp) [Python](./Python/minimum-positive-sum-subarray.py) | _O(nlogn)_ | _O(n)_ | Easy | | Prefix Sum, Two Pointers, Sliding Window, Sorted List, BST, Binary Search
 3413 | [Maximum Coins From K Consecutive Bags](https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/) | [C++](./C++/maximum-coins-from-k-consecutive-bags.cpp) [Python](./Python/maximum-coins-from-k-consecutive-bags.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers, Sliding Window
 3420 | [Count Non-Decreasing Subarrays After K Operations](https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/) | [C++](./C++/count-non-decreasing-subarrays-after-k-operations.cpp) [Python](./Python/count-non-decreasing-subarrays-after-k-operations.py) | _O(n)_ | _O(n)_ | Hard | | Mono Deque, Two Pointers, Sliding Window
+3422 | [Minimum Operations to Make Subarray Elements Equal](https://leetcode.com/problems/minimum-operations-to-make-subarray-elements-equal/) | [C++](./C++/minimum-operations-to-make-subarray-elements-equal.cpp) [Python](./Python/minimum-operations-to-make-subarray-elements-equal.py) | _O(nlogk)_ | _O(k)_ | Medium | 🔒 | Two Pointers, Sliding Window, Sorted List, BST
+3425 | [Longest Special Path](https://leetcode.com/problems/longest-special-path/) | [C++](./C++/longest-special-path.cpp) [Python](./Python/longest-special-path.py) | _O(n + e)_ | _O(n + e)_ | Hard | | DFS, Two Pointers, Sliding Window, Prefix Sum
+3430 | [Maximum and Minimum Sums of at Most Size K Subarrays](https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subarrays/) | [C++](./C++/maximum-and-minimum-sums-of-at-most-size-k-subarrays.cpp) [Python](./Python/maximum-and-minimum-sums-of-at-most-size-k-subarrays.py) | _O(n)_ | _O(k)_ | Hard | | Two Pointers, Sliding Window, Mono Deque
 
 <br/>
 <div align="right">
@@ -1198,6 +1205,7 @@
 3409 | [Longest Subsequence With Decreasing Adjacent Difference](https://leetcode.com/problems/longest-subsequence-with-decreasing-adjacent-difference/) | [C++](./C++/longest-subsequence-with-decreasing-adjacent-difference.cpp) [Python](./Python/longest-subsequence-with-decreasing-adjacent-difference.py) | _O(r^2 + n * r)_ | _O(r^2)_ | Medium | | DP
 3414 | [Maximum Score of Non-overlapping Intervals](https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/) | [C++](./C++/maximum-score-of-non-overlapping-intervals.cpp) [Python](./Python/maximum-score-of-non-overlapping-intervals.py) | _O(nlogn + n * k^2)_ | _O(n * k^2)_ | Hard | | DP, Binary Search
 3418 | [Maximum Amount of Money Robot Can Earn](https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/) | [C++](./C++/maximum-amount-of-money-robot-can-earn.cpp) [Python](./Python/maximum-amount-of-money-robot-can-earn.py) | _O(m * n)_ | _O(min(m, n))_ | Medium | | DP
+3429 | [Paint House IV](https://leetcode.com/problems/paint-house-iv/) | [C++](./C++/paint-house-iv.cpp) [Python](./Python/paint-house-iv.py) | _O(n * l^4)_ | _O(l^2)_ | Medium | | DP
 
 <br/>
 <div align="right">
@@ -1365,6 +1373,7 @@
 3403 | [Find the Lexicographically Largest String From the Box I](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/) | [C++](./C++/find-the-lexicographically-largest-string-from-the-box-i.cpp) [Python](./Python/find-the-lexicographically-largest-string-from-the-box-i.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3406 | [Find the Lexicographically Largest String From the Box II](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-ii/) | [C++](./C++/find-the-lexicographically-largest-string-from-the-box-ii.cpp) [Python](./Python/find-the-lexicographically-largest-string-from-the-box-ii.py) | _O(n)_   | _O(1)_        | Hard         | 🔒 | Greedy
 3410 | [Maximize Subarray Sum After Removing All Occurrences of One Element](https://leetcode.com/problems/maximize-subarray-sum-after-removing-all-occurrences-of-one-element/) | [C++](./C++/maximize-subarray-sum-after-removing-all-occurrences-of-one-element.cpp) [Python](./Python/maximize-subarray-sum-after-removing-all-occurrences-of-one-element.py) | _O(n)_   | _O(n)_        | Hard         | | Prefix Sum, Greedy, `Kadane's Algorithm`, Segment Tree
+3424 | [Minimum Cost to Make Arrays Identical](https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/) | [C++](./C++/minimum-cost-to-make-arrays-identical.cpp) [Python](./Python/minimum-cost-to-make-arrays-identical.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Greedy
 
 <br/>
 <div align="right">
@@ -1736,6 +1745,7 @@
 3390 | [Longest Team Pass Streak](https://leetcode.com/problems/longest-team-pass-streak/) | [MySQL](./MySQL/longest-team-pass-streak.sql) | _O(plogp + t)_ | _O(p + t)_       | Hard           |🔒| Recursive CTE, Window Function |
 3401 | [Find Circular Gift Exchange Chains](https://leetcode.com/problems/find-circular-gift-exchange-chains/) | [MySQL](./MySQL/find-circular-gift-exchange-chains.sql) | _O(n^2)_ | _O(n^2)_       | Hard           |🔒| Recursive CTE, Window Function |
 3415 | [Find Products with Three Consecutive Digits](https://leetcode.com/problems/find-products-with-three-consecutive-digits/) | [MySQL](./MySQL/find-products-with-three-consecutive-digits.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| Regular Expression |
+3421 | [Find Students Who Improved](https://leetcode.com/problems/find-students-who-improved/) | [MySQL](./MySQL/find-students-who-improved.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
