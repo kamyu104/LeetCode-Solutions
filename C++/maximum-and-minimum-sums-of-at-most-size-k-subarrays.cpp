@@ -9,13 +9,14 @@ public:
             int64_t result = 0, total = 0;
             deque<pair<int, int>> dq;
             for (int right = 0; right < size(nums); ++right) {
-                if (!empty(dq) && dq[0].first == right - k) {
-                    total -= nums[dq[0].first];
-                    dq.pop_front();
-                }
-                if (!empty(dq) && dq[0].second == right - k) {
-                    total -= nums[dq[0].first];
-                    ++dq[0].second;
+                if (!empty(dq)) {
+                    if (dq[0].first == right - k) {
+                        total -= nums[dq[0].first];
+                        dq.pop_front();
+                    } else if (dq[0].second == right - k) {
+                        total -= nums[dq[0].first];
+                        ++dq[0].second;
+                    }
                 }
                 int left = right;
                 for (int i; !empty(dq) && !check(nums[dq.back().first], nums[right]); ) {
