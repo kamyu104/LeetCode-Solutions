@@ -1,5 +1,5 @@
 // Time:  O(n + e)
-// Space: O(h)
+// Space: O(n + e)
 
 // iterative dfs, two pointers, sliding window, prefix sum
 class Solution {
@@ -50,8 +50,8 @@ public:
 };
 
 // Time:  O(n + e)
-// Space: O(h)
-// iterative dfs, two pointers, sliding window, prefix sum
+// Space: O(n + e)
+// dfs, two pointers, sliding window, prefix sum
 class Solution2 {
 public:
     vector<int> longestSpecialPath(vector<vector<int>>& edges, vector<int>& nums) {
