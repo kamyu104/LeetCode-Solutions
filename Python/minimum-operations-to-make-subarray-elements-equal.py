@@ -4,7 +4,7 @@
 from sortedcontainers import SortedList
 
 
-# math, sliding window, two pointers, sorted list
+# math, two pointers, sliding window, sorted list
 class Solution(object):
     def minOperations(self, nums, k):
         """
