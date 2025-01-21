@@ -58,6 +58,10 @@
         * Advanced
             * [Inside the C++ Object Model](https://www.amazon.com/dp/0201834545)
             * [Modern C++ Design](https://www.amazon.com/dp/0201704315)
+    * Java
+        * [Effective Java](https://www.amazon.com/dp/0134685997)
+        * [Java Concurrency in Practice](https://www.amazon.com/dp/0321349601)
+        * [Java Performance](https://www.amazon.com/dp/1492056111)
     * Python
         * [Effective Python](https://www.amazon.com/dp/0134853989)
         * [Python in Practice](https://www.amazon.com/dp/B00EO3TRL2)
