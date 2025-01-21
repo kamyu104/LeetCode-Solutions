@@ -109,6 +109,7 @@
     * Microservices
         * [Microservices Patterns](https://www.amazon.com/dp/1617294543)
         * [Building Microservices](https://www.amazon.com/dp/1492034029)
+        * [Monolith to Microservices](https://www.amazon.com/dp/1492047848)
     * Performance
         * [Systems Performance](https://www.amazon.com/dp/0136820158)
     * Open Source Applications
