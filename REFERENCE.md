@@ -120,7 +120,7 @@
         * [Refactoring to Patterns](https://www.amazon.com/dp/0321213351)
         * [Small Memory Software](https://www.amazon.com/dp/0201596075)
         * [Game Programming Patterns](https://gameprogrammingpatterns.com/)
-     * Architecture
+     * Software Architecture
         * Foundations of Software Architecture 
            * [Fundamentals of Software Architecture](https://www.amazon.com/dp/B0849MPK73)
            * [Clean Architecture](https://www.amazon.com/dp/0134494164)
