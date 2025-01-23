@@ -62,6 +62,7 @@
         * [Effective Java](https://www.amazon.com/dp/0134685997)
         * [Java Concurrency in Practice](https://www.amazon.com/dp/0321349601)
         * [Java Performance](https://www.amazon.com/dp/1492056111)
+        * [深入理解Java虚拟机](https://item.jd.com/12607299.html)
     * Python
         * [Effective Python](https://www.amazon.com/dp/0134853989)
         * [Python in Practice](https://www.amazon.com/dp/B00EO3TRL2)
@@ -110,6 +111,7 @@
         * [Microservices Patterns](https://www.amazon.com/dp/1617294543)
         * [Building Microservices](https://www.amazon.com/dp/1492034029)
         * [Monolith to Microservices](https://www.amazon.com/dp/1492047848)
+        * [凤凰架构](https://icyfenix.cn/)
     * Performance
         * [Systems Performance](https://www.amazon.com/dp/0136820158)
     * Open Source Applications
