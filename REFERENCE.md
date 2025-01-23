@@ -72,6 +72,7 @@
         * [Learning Patterns](https://www.patterns.dev/#patterns)
     * Golang
         * [Go Programming Language](https://www.amazon.com/dp/0134190440)
+        * [Effective Go](https://go.dev/doc/effective_go)
         * [Concurrency in Go](https://www.amazon.com/dp/1491941197)
         * [Distributed Services with Go](https://www.amazon.com/dp/1680507605)
 * Algorithms
