@@ -135,6 +135,7 @@
         * Patterns and Implementation
            * [Patterns of Enterprise Application Architecture](https://www.amazon.com/dp/0321127420)
            * [Pattern-Oriented Software Architecture Volume 2](https://www.amazon.com/dp/0471606952)
+           * [Pattern-Oriented Software Architecture Volume 4](https://www.amazon.com/dp/0470059028)
            * [Patterns of Distributed Systems](https://www.amazon.com/dp/0138221987)
         * Business Modeling and Tactical Design
            * [Domain-Driven Design](https://www.amazon.com/dp//0321125215)
