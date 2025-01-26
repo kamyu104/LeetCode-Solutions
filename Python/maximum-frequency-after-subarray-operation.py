@@ -12,12 +12,9 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        result = cnt_k = 0
+        result = 0
         cnt = collections.defaultdict(int)
         for x in nums:
-            cnt[x] = max(cnt[x], cnt_k)+1
-            if x == k:
-                cnt_k += 1
-                result += 1
-            result = max(result, cnt[x])
+            cnt[x] = max(cnt[x], cnt[k])+1
+            result = max(result+int(x == k), cnt[x])
         return result
