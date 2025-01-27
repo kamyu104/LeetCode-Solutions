@@ -1,7 +1,7 @@
 // Time:  O(n + k^2 * 2^k), k = len(char_to_int) <= 16
 // Space: O(k^2)
 
-// topological sort, bitmasks
+// bitmasks, topological sort
 class Solution {
 public:
     vector<vector<int>> supersequences(vector<string>& words) {
