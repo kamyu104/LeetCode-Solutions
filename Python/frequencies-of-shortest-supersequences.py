@@ -4,7 +4,7 @@
 import collections
 
 
-# topological sort, bitmasks
+# bitmasks, topological sort
 class Solution(object):
     def supersequences(self, words):
         """
