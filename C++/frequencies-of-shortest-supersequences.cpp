@@ -77,12 +77,12 @@ public:
             topological_sort(cnt);
         }
         vector<vector<int>> result;
-        for (const auto& a : ans.second) {
-            vector<int> res(26);
-            for (int i = 0; i < size(a); ++i) {
-                res[int_to_char[i]] = a[i];
+        for (const auto& cnt : ans.second) {
+            vector<int> new_cnt(26);
+            for (int i = 0; i < size(cnt); ++i) {
+                new_cnt[int_to_char[i]] = cnt[i];
             }
-            result.emplace_back(res);
+            result.emplace_back(new_cnt);
         }
         return result;
     }
