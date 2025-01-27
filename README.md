@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3430%20%2F%203430-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3435%20%2F%203435-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -247,6 +247,7 @@
 3417 | [Zigzag Grid Traversal With Skip](https://leetcode.com/problems/zigzag-grid-traversal-with-skip/) | [C++](./C++/zigzag-grid-traversal-with-skip.cpp) [Python](./Python/zigzag-grid-traversal-with-skip.py) | _O(n * m)_ | _O(1)_ | Easy | | Array
 3423 | [Maximum Difference Between Adjacent Elements in a Circular Array](https://leetcode.com/problems/zmaximum-difference-between-adjacent-elements-in-a-circular-array/) | [C++](./C++/maximum-difference-between-adjacent-elements-in-a-circular-array.cpp) [Python](./Python/maximum-difference-between-adjacent-elements-in-a-circular-array.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3427 | [Sum of Variable Length Subarrays](https://leetcode.com/problems/sum-of-variable-length-subarrays/) | [C++](./C++/sum-of-variable-length-subarrays.cpp) [Python](./Python/sum-of-variable-length-subarrays.py) | _O(n)_   | _O(n)_        | Easy         | | Difference Array
+3432 | [Count Partitions with Even Sum Difference](https://leetcode.com/problems/count-partitions-with-even-sum-difference/) | [C++](./C++/count-partitions-with-even-sum-difference.cpp) [Python](./Python/count-partitions-with-even-sum-difference.py) | _O(n)_   | _O(1)_        | Easy         | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -755,6 +756,7 @@
 3194 | [Minimum Average of Smallest and Largest Elements](https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/) | [C++](./C++/minimum-average-of-smallest-and-largest-elements.cpp) [Python](./Python/minimum-average-of-smallest-and-largest-elements.py) | _O(nlogn)_ | _O(1)_ | Easy | | Sort
 3309 | [Maximum Possible Number by Binary Concatenation](https://leetcode.com/problems/maximum-possible-number-by-binary-concatenation/) | [C++](./C++/maximum-possible-number-by-binary-concatenation.cpp) [Python](./Python/maximum-possible-number-by-binary-concatenation.py) | _O(n * logr * logn)_ | _O(nlogr)_ | Medium | | Sort, Brute Force
 3394 | [Check if Grid can be Cut into Sections](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections/) | [C++](./C++/check-if-grid-can-be-cut-into-sections.cpp) [Python](./Python/check-if-grid-can-be-cut-into-sections.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Merge Intervals
+3431 | [Minimum Unlocked Indices to Sort Nums](https://leetcode.com/problems/minimum-unlocked-indices-to-sort-nums/) | [C++](./C++/minimum-unlocked-indices-to-sort-nums.cpp) [Python](./Python/minimum-unlocked-indices-to-sort-nums.py) | _O(n)_ | _O(1)_ | Medium | | Sort
 
 <br/>
 <div align="right">
@@ -1206,6 +1208,7 @@
 3414 | [Maximum Score of Non-overlapping Intervals](https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/) | [C++](./C++/maximum-score-of-non-overlapping-intervals.cpp) [Python](./Python/maximum-score-of-non-overlapping-intervals.py) | _O(nlogn + n * k^2)_ | _O(n * k^2)_ | Hard | | DP, Binary Search
 3418 | [Maximum Amount of Money Robot Can Earn](https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/) | [C++](./C++/maximum-amount-of-money-robot-can-earn.cpp) [Python](./Python/maximum-amount-of-money-robot-can-earn.py) | _O(m * n)_ | _O(min(m, n))_ | Medium | | DP
 3429 | [Paint House IV](https://leetcode.com/problems/paint-house-iv/) | [C++](./C++/paint-house-iv.cpp) [Python](./Python/paint-house-iv.py) | _O(n * l^4)_ | _O(l^2)_ | Medium | | DP
+3434 | [Maximum Frequency After Subarray Operation](https://leetcode.com/problems/maximum-frequency-after-subarray-operation/) | [C++](./C++/maximum-frequency-after-subarray-operation.cpp) [Python](./Python/maximum-frequency-after-subarray-operation.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, DP
 
 <br/>
 <div align="right">
@@ -1430,6 +1433,7 @@
 3385 | [Minimum Time to Break Locks II](https://leetcode.com/problems/minimum-time-to-break-locks-ii/) | [C++](./C++/minimum-time-to-break-locks-ii.cpp) [Python](./Python/minimum-time-to-break-locks-ii.py) | _O(n^3)_ | _O(n^2)_ | Hard | 🔒 | Graph, `Hungarian Weighted Bipartite Matching`
 3387 | [Maximize Amount After Two Days of Conversions](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) | [C++](./C++/maximize-amount-after-two-days-of-conversions.cpp) [Python](./Python/maximize-amount-after-two-days-of-conversions.py) | _O(n^2)_ | _O(n)_ | Medium | | `Bellman-Ford Algorithm`, BFS |
 3419 | [Minimize the Maximum Edge Weight of Graph](https://leetcode.com/problems/minimize-the-maximum-edge-weight-of-graph/)  | [C++](./C++/minimize-the-maximum-edge-weight-of-graph.cpp) [Python](./Python/minimize-the-maximum-edge-weight-of-graph.py) |  _O(nlogn + e)_ | _O(n + e)_ | Medium           | | Graph, `Dijkstra's Algorithm`, `Prim's Algorithm`, Binary Search, BFS |
+3435 | [Frequencies of Shortest Supersequences](https://leetcode.com/problems/frequencies-of-shortest-supersequences/) | [C++](./C++/frequencies-of-shortest-supersequences.cpp)  [Python](./Python/frequencies-of-shortest-supersequences.py)  | _O(n + k^2 * 2^k)_ | _O(k^2)_ | Hard         | | Graph, Topological Sort, Bitmasks |
 
 <br/>
 <div align="right">
@@ -1469,6 +1473,7 @@
 3175 | [Find The First Player to win K Games in a Row](https://leetcode.com/problems/find-the-first-player-to-win-k-games-in-a-row/) | [C++](./C++/find-the-first-player-to-win-k-games-in-a-row.cpp) [Python](./Python/find-the-first-player-to-win-k-games-in-a-row.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 3248 | [Snake in Matrix](https://leetcode.com/problems/snake-in-matrix/) | [C++](./C++/snake-in-matrix.cpp) [Python](./Python/snake-in-matrix.py) | _O(c)_ | _O(1)_ | Medium | | Simulation
 3412 | [Find Mirror Score of a String](https://leetcode.com/problems/find-mirror-score-of-a-string/) | [C++](./C++/find-mirror-score-of-a-string.cpp) [Python](./Python/find-mirror-score-of-a-string.py) | _O(n + 26)_ | _O(n + 26)_ | Medium | | Simulation, Hash Table, Stack
+3433 | [Count Mentions Per User](https://leetcode.com/problems/count-mentions-per-user/) | [C++](./C++/count-mentions-per-user.cpp) [Python](./Python/count-mentions-per-user.py) | _O(eloge + e * n)_ | _O(e + n)_ | Medium | | Simulation
 
 <br/>
 <div align="right">
