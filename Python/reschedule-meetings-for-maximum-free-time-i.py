@@ -11,10 +11,12 @@ class Solution(object):
         :type endTime: List[int]
         :rtype: int
         """
+        startTime.append(eventTime)
+        endTime.insert(0, 0)
         result = curr = 0
-        for i in xrange(len(startTime)+1):
-            curr += (startTime[i] if i != len(startTime) else eventTime)-(endTime[i-1] if i-1 >= 0 else 0)
+        for i in xrange(len(startTime)):
+            curr += startTime[i]-endTime[i]
             result = max(result, curr)
             if i-k >= 0:
-                curr -= startTime[i-k]-(endTime[i-k-1] if i-k-1 >= 0 else 0)
+                curr -= startTime[i-k]-endTime[i-k]
         return result
