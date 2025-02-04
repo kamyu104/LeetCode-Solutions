@@ -19,14 +19,14 @@ public:
             vector<vector<int>> mn(2, vector<int>(2, POS_INF));
             for (int right = k - 1, left = 0; right < size(s); ++right) {
                 for (; k <= right - left + 1 && prefix1[right + 1] - prefix1[left] && prefix2[right + 1] - prefix2[left]; ++left) {
-                    const int x = prefix1[left] % 2;
-                    const int y = prefix2[left] % 2;
-                    mn[x][y] = min(mn[x][y], prefix[left]);
+                    const int i = prefix1[left] % 2;
+                    const int j = prefix2[left] % 2;
+                    mn[i][j] = min(mn[i][j], prefix[left]);
                 }
-                const int x = prefix1[right + 1] % 2;
-                const int y = prefix2[right + 1] % 2;
-                if (mn[x ^ 1][y] != POS_INF) {
-                    result = max(result, prefix[right + 1] - mn[x ^ 1][y]);
+                const int i = prefix1[right + 1] % 2;
+                const int j = prefix2[right + 1] % 2;
+                if (mn[i ^ 1][j] != POS_INF) {
+                    result = max(result, prefix[right + 1] - mn[i ^ 1][j]);
                 }
             }
             return result;
