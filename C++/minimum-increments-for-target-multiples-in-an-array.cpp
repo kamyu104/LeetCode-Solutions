@@ -29,7 +29,7 @@ public:
                 // submask enumeration:
                 // => sum(nCr(n, k) * 2^k for k in xrange(n+1)) = (1 + 2)^n = 3^n
                 // => Time: O(3^n), see https://cp-algorithms.com/algebra/all-submasks.html
-                int new_mask = ((1 << m) - 1) - mask;
+                const int new_mask = ((1 << m) - 1) - mask;
                 for (int submask = new_mask; submask; submask = (submask - 1) & new_mask) {
                     dp[mask | submask] = min(dp[mask | submask], dp[mask] + (x % lcms[submask] ? lcms[submask] - x % lcms[submask] : 0));
                 }
