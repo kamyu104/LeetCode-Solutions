@@ -13,7 +13,7 @@ public:
                 return;
             }
             for (int i = 1; i <= n; ++i) {
-                if ((lookup & (1 << (i - 1)))|| (!empty(curr) && curr.back() % 2 == i % 2)) {
+                if ((lookup & (1 << (i - 1))) || (!empty(curr) && curr.back() % 2 == i % 2)) {
                     continue;
                 }
                 curr.emplace_back(i);
