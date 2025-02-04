@@ -20,11 +20,11 @@ class Solution(object):
             left = 0
             for right in xrange(k-1, len(s)):
                 while k <= right-left+1 and prefix1[right+1]-prefix1[left] and prefix2[right+1]-prefix2[left]:
-                    x, y = prefix1[left]%2, prefix2[left]%2
-                    mn[x][y] = min(mn[x][y], prefix[left])
+                    i, j = prefix1[left]%2, prefix2[left]%2
+                    mn[i][j] = min(mn[i][j], prefix[left])
                     left += 1
-                x, y = prefix1[right+1]%2, prefix2[right+1]%2
-                result = max(result, prefix[right+1]-mn[x^1][y])
+                i, j = prefix1[right+1]%2, prefix2[right+1]%2
+                result = max(result, prefix[right+1]-mn[i^1][j])
             return result
         
         lookup = set(s)
