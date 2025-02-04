@@ -6,9 +6,8 @@ class Solution {
 public:
     vector<vector<int>> permute(int n) {
         vector<vector<int>> result;
-        int lookup = 0;
         vector<int> curr; curr.reserve(n);
-        const function<void ()> backtracking = [&]() {
+        const function<void (int)> backtracking = [&](int lookup) {
             if (size(curr) == n) {
                 result.emplace_back(curr);
                 return;
@@ -17,15 +16,13 @@ public:
                 if ((lookup & (1 << (i - 1)))|| (!empty(curr) && curr.back() % 2 == i % 2)) {
                     continue;
                 }
-                lookup ^= 1 << (i - 1);
                 curr.emplace_back(i);
-                backtracking();
+                backtracking(lookup ^ (1 << (i - 1)));
                 curr.pop_back();
-                lookup ^= 1 << (i - 1);
             }
         };
 
-        backtracking();
+        backtracking(0);
         return result;
     }
 };
