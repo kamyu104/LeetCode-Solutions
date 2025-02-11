@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// hash table, set
+// hash table, unordered set
 class Solution {
 public:
     int maxStudentsOnBench(vector<vector<int>>& students) {
