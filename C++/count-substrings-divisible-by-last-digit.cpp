@@ -69,10 +69,58 @@ public:
     }
 };
 
+// Time:  O(d * n)
+// Space: O(d)
+// case works, math, freq table
+class Solution2 {
+public:
+    long long countSubstrings(string s) {
+        int64_t result = 0;
+        vector<int> cnt;
+
+        // digit 4
+        for (int i = 0; i < size(s); ++i) {
+            if (s[i] == '4') {
+                ++result;
+                if (i - 1 >= 0 && stoi(s.substr(i - 1, 2)) % 4 == 0) {
+                    result += i;
+                }
+            }
+        }
+        // digit 8
+        for (int i = 0; i < size(s); ++i) {
+            if (s[i] == '8') {
+                ++result;
+                if (i - 1 >= 0 && stoi(s.substr(i - 1, 2)) % 8 == 0) {
+                    ++result;
+                }
+                if (i - 2 >= 0 && stoi(s.substr(i - 2, 3)) % 8 == 0) {
+                    result += i - 1;
+                }
+            }
+        }
+        for (int d = 1; d <= 9; ++d) {
+            if (d == 4 || d == 8) {
+                continue;
+            }
+            cnt.assign(d, 0);
+            for (int i = 0, remain = 0, base = 1; i < size(s); ++i, base = (base * 10) % d) {
+                remain = (remain + base  * (s[(size(s) - 1) - i] - '0')) % d;
+                result += cnt[remain];
+                if (s[(size(s) - 1) - i] - '0' == d) {
+                    ++result;
+                    ++cnt[remain];
+                }
+            }
+        }
+        return result;
+    }
+};
+
 // Time:  O(d^2 * n)
 // Space: O(d^2)
 // dp
-class Solution2 {
+class Solution3 {
 public:
     long long countSubstrings(string s) {
         int64_t result = 0;
