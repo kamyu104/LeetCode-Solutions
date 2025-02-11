@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3445%20%2F%203445-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3450%20%2F%203450-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -249,6 +249,7 @@
 3427 | [Sum of Variable Length Subarrays](https://leetcode.com/problems/sum-of-variable-length-subarrays/) | [C++](./C++/sum-of-variable-length-subarrays.cpp) [Python](./Python/sum-of-variable-length-subarrays.py) | _O(n)_   | _O(n)_        | Easy         | | Difference Array
 3432 | [Count Partitions with Even Sum Difference](https://leetcode.com/problems/count-partitions-with-even-sum-difference/) | [C++](./C++/count-partitions-with-even-sum-difference.cpp) [Python](./Python/count-partitions-with-even-sum-difference.py) | _O(n)_   | _O(1)_        | Easy         | | Prefix Sum
 3440 | [Reschedule Meetings for Maximum Free Time II](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-ii/) | [C++](./C++/reschedule-meetings-for-maximum-free-time-ii.cpp) [Python](./Python/reschedule-meetings-for-maximum-free-time-ii.py) | _O(n)_ | _O(1)_ | Medium | | Array
+3446 | [Sort Matrix by Diagonals](https://leetcode.com/problems/sort-matrix-by-diagonals/) | [C++](./C++/sort-matrix-by-diagonals.cpp) [Python](./Python/sort-matrix-by-diagonals.py) | _O(n^2 * logn)_ | _O(n^2)_ | Medium | | Array, Sort
 
 <br/>
 <div align="right">
@@ -572,6 +573,7 @@
 3404 | [Count Special Subsequences](https://leetcode.com/problems/count-special-subsequences/) | [C++](./C++/count-special-subsequences.cpp) [Python](./Python/count-special-subsequences.py) | _O(n^2)_ | _O(n^2)_ | Medium | | Freq Table, Number Theory
 3438 | [Find Valid Pair of Adjacent Digits in String](https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/) | [C++](./C++/find-valid-pair-of-adjacent-digits-in-string.cpp) [Python](./Python/find-valid-pair-of-adjacent-digits-in-string.py) | _O(n)_ | _O(1)_ | Easy | | Freq Table
 3442 | [Maximum Difference Between Even and Odd Frequency I](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-i/) | [C++](./C++/maximum-difference-between-even-and-odd-frequency-i.cpp) [Python](./Python/maximum-difference-between-even-and-odd-frequency-i.py) | _O(n + 26)_ | _O(26)_ | Easy | | Freq Table
+3450 | [Maximum Students on a Single Bench](https://leetcode.com/problems/maximum-students-on-a-single-bench/) | [C++](./C++/maximum-students-on-a-single-bench.cpp) [Python](./Python/maximum-students-on-a-single-bench.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Unordered Set
 
 <br/>
 <div align="right">
@@ -717,6 +719,8 @@
 3416 | [Subsequences with a Unique Middle Mode II](https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-ii/) | [C++](./C++/subsequences-with-a-unique-middle-mode-ii.cpp) [Python](./Python/subsequences-with-a-unique-middle-mode-ii.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Freq Table, Prefix Sum, Combinatorics |
 3426 | [Manhattan Distances of All Arrangements of Pieces](https://leetcode.com/problems/manhattan-distances-of-all-arrangements-of-pieces/) | [C++](./C++/manhattan-distances-of-all-arrangements-of-pieces.cpp) [Python](./Python/manhattan-distances-of-all-arrangements-of-pieces.py) | precompute: _O(max(m * n))_<br>runtime: _O(1)_ | _O(max(m * n))_ | Hard | | Combinatorics |
 3428 | [Maximum and Minimum Sums of at Most Size K Subsequences](https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/) | [C++](./C++/maximum-and-minimum-sums-of-at-most-size-k-subsequences.cpp) [Python](./Python/maximum-and-minimum-sums-of-at-most-size-k-subsequences.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Combinatorics, Two Pointers, Sliding Window |
+3447 | [Assign Elements to Groups with Constraints](https://leetcode.com/problems/assign-elements-to-groups-with-constraints/) | [C++](./C++/assign-elements-to-groups-with-constraints.cpp) [Python](./Python/assign-elements-to-groups-with-constraints.py) | _O(m + r * logn)_ | _O(r)_ | Medium | | Hash Table, Number Theory |
+3448 | [Count Substrings Divisible By Last Digit](https://leetcode.com/problems/count-substrings-divisible-by-last-digit/) | [C++](./C++/count-substrings-divisible-by-last-digit.cpp) [Python](./Python/count-substrings-divisible-by-last-digit.py) | _O(d * n)_ | _O(d)_ | Hard | | DP, Case Works, Math, Freq Table |
 
 <br/>
 <div align="right">
@@ -925,6 +929,7 @@
 3357 | [Minimize the Maximum Adjacent Element Difference](https://leetcode.com/problems/minimize-the-maximum-adjacent-element-difference/) | [C++](./C++/minimize-the-maximum-adjacent-element-difference.cpp) [Python](./Python/minimize-the-maximum-adjacent-element-difference.py) | _O(nlogr)_   | _O(1)_        | Hard         | | Binary Search
 3398 | [Smallest Substring With Identical Characters I](https://leetcode.com/problems/smallest-substring-with-identical-characters-i/) | [C++](./C++/smallest-substring-with-identical-characters-i.cpp) [Python](./Python/smallest-substring-with-identical-characters-i.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Binary Search, Greedy
 3399 | [Smallest Substring With Identical Characters II](https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/) | [C++](./C++/smallest-substring-with-identical-characters-ii.cpp) [Python](./Python/smallest-substring-with-identical-characters-ii.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Binary Search, Greedy
+3449 | [Maximize the Minimum Game Score](https://leetcode.com/problems/maximize-the-minimum-game-score/) | [C++](./C++/maximize-the-minimum-game-score.cpp) [Python](./Python/maximize-the-minimum-game-score.py) | _O(n * log(m * r))_   | _O(1)_        | Hard         | | Binary Search, Greedy
 
 <br/>
 
