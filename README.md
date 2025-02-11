@@ -573,7 +573,7 @@
 3404 | [Count Special Subsequences](https://leetcode.com/problems/count-special-subsequences/) | [C++](./C++/count-special-subsequences.cpp) [Python](./Python/count-special-subsequences.py) | _O(n^2)_ | _O(n^2)_ | Medium | | Freq Table, Number Theory
 3438 | [Find Valid Pair of Adjacent Digits in String](https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/) | [C++](./C++/find-valid-pair-of-adjacent-digits-in-string.cpp) [Python](./Python/find-valid-pair-of-adjacent-digits-in-string.py) | _O(n)_ | _O(1)_ | Easy | | Freq Table
 3442 | [Maximum Difference Between Even and Odd Frequency I](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-i/) | [C++](./C++/maximum-difference-between-even-and-odd-frequency-i.cpp) [Python](./Python/maximum-difference-between-even-and-odd-frequency-i.py) | _O(n + 26)_ | _O(26)_ | Easy | | Freq Table
-3450 | [Maximum Students on a Single Bench](https://leetcode.com/problems/maximum-students-on-a-single-bench/) | [C++](./C++/maximum-students-on-a-single-bench.cpp) [Python](./Python/maximum-students-on-a-single-bench.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Unordered Set
+3450 | [Maximum Students on a Single Bench](https://leetcode.com/problems/maximum-students-on-a-single-bench/) | [C++](./C++/maximum-students-on-a-single-bench.cpp) [Python](./Python/maximum-students-on-a-single-bench.py) | _O(n)_ | _O(n)_ | Easy | 🔒 | Hash Table, Unordered Set
 
 <br/>
 <div align="right">
