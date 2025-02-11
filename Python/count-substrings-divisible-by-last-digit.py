@@ -69,10 +69,6 @@ class Solution2(object):
         :rtype: int
         """
         result = 0
-        # digit 1, 2, 5
-        for i in xrange(len(s)):
-            if s[i] in ('1', '2', '5'):
-                result += i+1
         # digit 4
         for i in xrange(len(s)):
             if s[i] == '4':
@@ -87,7 +83,9 @@ class Solution2(object):
                     result += 1
                 if i-2 >= 0 and int(s[i-2:i+1])%8 == 0:
                     result += i-1
-        for d in (3, 6, 7, 9):
+        for d in xrange(1, 9+1):
+            if d in (4, 8):
+                continue
             base = 1
             remain = 0
             cnt = [0]*d
