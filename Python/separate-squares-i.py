@@ -1,8 +1,41 @@
+# Time:  O(nlogn)
+# Space: O(n)
+
+# sort, line sweep
+class Solution(object):
+    def separateSquares(self, squares):
+        """
+        :type squares: List[List[int]]
+        :rtype: float
+        """
+        events = []
+        for x, y, l in squares:
+            events.append((y, 1, x, x+l))
+            events.append((y+l, -1, x, x+l))
+        events.sort(key=lambda e: e[0])
+        total = curr = 0.0
+        prev = events[0][0]
+        for y, v, x1, x2 in events:
+            if y != prev:
+                total += (y-prev)*curr
+                prev = y
+            curr += (x2-x1)*v
+        expect = total/2.0
+        total = curr = 0.0
+        prev = events[0][0]
+        for y, v, x1, x2 in events:
+            if y != prev:
+                if total+(y-prev)*curr >= expect:
+                    return prev+(expect-total)/curr
+                total += (y-prev)*curr
+                prev = y
+            curr += (x2-x1)*v
+
+
 # Time:  O(nlogr)
 # Space: O(1)
-
 # binary search
-class Solution(object):
+class Solution2(object):
     def separateSquares(self, squares):
         """
         :type squares: List[List[int]]
