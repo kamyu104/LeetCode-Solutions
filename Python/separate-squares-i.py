@@ -10,26 +10,27 @@ class Solution(object):
         """
         events = []
         for x, y, l in squares:
-            events.append((y, 1, x, x+l))
-            events.append((y+l, -1, x, x+l))
+            events.append((y, 1, l))
+            events.append((y+l, -1, l))
         events.sort(key=lambda e: e[0])
         total = curr = 0.0
         prev = events[0][0]
-        for y, v, x1, x2 in events:
+        for y, v, l in events:
             if y != prev:
                 total += (y-prev)*curr
                 prev = y
-            curr += (x2-x1)*v
+            curr += l*v
         expect = total/2.0
         total = curr = 0.0
         prev = events[0][0]
-        for y, v, x1, x2 in events:
+        for y, v, l in events:
             if y != prev:
                 if total+(y-prev)*curr >= expect:
-                    return prev+(expect-total)/curr
+                    break
                 total += (y-prev)*curr
                 prev = y
-            curr += (x2-x1)*v
+            curr += l*v
+        return prev+(expect-total)/curr
 
 
 # Time:  O(nlogr)
