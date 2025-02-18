@@ -32,15 +32,15 @@ class Solution(object):
         while i+lb+lc < n:
             while i < n and prefix1[la+1+i]+1 != la:
                 i += 1
-            if i >= n:
+            if i == n:
                 break
-            while j < i+lb or (j < n and prefix2[lb+1+j]+1 != lb):
+            while j < n and not (j >= i+lb and prefix2[lb+1+j]+1 == lb):
                 j += 1
-            if j >= n:
+            if j == n:
                 break
-            while k < j+lc or (k < n and prefix3[lc+1+k]+1 != lc):
+            while k < n and not (k >= j+lc and prefix3[lc+1+k]+1 == lc):
                 k += 1
-            if k >= n:
+            if k == n:
                 break
             result = min(result, k-(i-la))
             i += 1
