@@ -34,15 +34,15 @@ public:
         int result = INF;
         for (int i = 0, j = 0, k = 0; i + lb + lc < n; ++i) {
             for (; i < n && prefix1[la + 1 + i] + 1 != la; ++i);
-            if (i >= n) {
+            if (i == n) {
                 break;
             }
-            for (; j < i + lb || (j < n && prefix2[lb + 1 + j] + 1 != lb); ++j);
-            if (j >= n) {
+            for (; j < n && !(j >= i + lb && prefix2[lb + 1 + j] + 1 == lb); ++j);
+            if (j == n) {
                 break;
             }
-            for (; k < j + lc || (k < n && prefix3[lc + 1 + k] + 1 != lc); ++k);
-            if (k >= n) {
+            for (; k < n && !(k >= j + lc && prefix3[lc + 1 + k] + 1 == lc); ++k);
+            if (k == n) {
                 break;
             }
             result = min(result, k - (i - la));
