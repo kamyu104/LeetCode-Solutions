@@ -1,7 +1,7 @@
 // Time:  O(n + m)
 // Space: O(n + m)
 
-// kmp
+// kmp, two pointers (three pointers)
 class Solution {
 public:
     int shortestMatchingSubstring(string s, string p) {
