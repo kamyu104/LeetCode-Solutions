@@ -77,7 +77,7 @@ class Solution2(object):
                 return 0
             if lookup[k][x][d][i][j] == 0:
                 ni, nj = i+directions[d][0], j+directions[d][1]
-                nx =  0 if x == 2 else 2
+                nx = 0 if x == 2 else 2
                 result = memoization(ni, nj, nx, d, k)+1
                 if k != 1:
                     nd = (d+1)%4
