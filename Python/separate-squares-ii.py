@@ -8,7 +8,7 @@ class Solution(object):
         :type squares: List[List[int]]
         :rtype: float
         """
-        class SegmentTree(object):
+        class SegmentTreeRecu(object):
             def __init__(self, sorted_x):
                 self.sorted_x = sorted_x
                 n = len(sorted_x)-1
@@ -43,7 +43,7 @@ class Solution(object):
         events.sort(key=lambda e: e[0])
         sorted_x = sorted(x_set) 
         x_to_idx = {x:i for i, x in enumerate(sorted_x)}
-        st = SegmentTree(sorted_x)
+        st = SegmentTreeRecu(sorted_x)
         prev = events[0][0]
         intervals = []
         for y, v, x1, x2 in events:
