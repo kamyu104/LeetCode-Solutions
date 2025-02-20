@@ -250,7 +250,7 @@
 3432 | [Count Partitions with Even Sum Difference](https://leetcode.com/problems/count-partitions-with-even-sum-difference/) | [C++](./C++/count-partitions-with-even-sum-difference.cpp) [Python](./Python/count-partitions-with-even-sum-difference.py) | _O(n)_   | _O(1)_        | Easy         | | Prefix Sum
 3440 | [Reschedule Meetings for Maximum Free Time II](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-ii/) | [C++](./C++/reschedule-meetings-for-maximum-free-time-ii.cpp) [Python](./Python/reschedule-meetings-for-maximum-free-time-ii.py) | _O(n)_ | _O(1)_ | Medium | | Array
 3446 | [Sort Matrix by Diagonals](https://leetcode.com/problems/sort-matrix-by-diagonals/) | [C++](./C++/sort-matrix-by-diagonals.cpp) [Python](./Python/sort-matrix-by-diagonals.py) | _O(n^2 * logn)_ | _O(n^2)_ | Medium | | Array, Sort
-3452 | [Sum of Good Numbers](https://leetcode.com/problems/sum-of-good-numbers/) | [C++](./C++/sum-of-good-numbers.cpp) [Python](./Python/sum-of-good-numbers.py) | _O(n)_ | _O(1)_ | Medium | | Array
+3452 | [Sum of Good Numbers](https://leetcode.com/problems/sum-of-good-numbers/) | [C++](./C++/sum-of-good-numbers.cpp) [Python](./Python/sum-of-good-numbers.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -1467,7 +1467,7 @@
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 2101 | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs/) | [C++](./C++/detonate-the-maximum-bombs.cpp) [Python](./Python/detonate-the-maximum-bombs.py) | _O(\|V\|^2 + \V\| * \|E\|)_ | _O(\V\| + \|E\|)_ | Medium | | Graph, DFS, BFS
 3453 | [Separate Squares I](https://leetcode.com/problems/separate-squares-i/) | [C++](./C++/separate-squares-i.cpp) [Python](./Python/separate-squares-i.py) | _O(nlogn)_ | _O(n)_ | Medium | | Binary Search, Sort, Line Sweep
-3454 | [Separate Squares II](https://leetcode.com/problems/separate-squares-ii/) | [C++](./C++/separate-squares-ii.cpp) [Python](./Python/separate-squares-ii.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Line Sweep, Segment Tree
+3454 | [Separate Squares II](https://leetcode.com/problems/separate-squares-ii/) | [C++](./C++/separate-squares-ii.cpp) [Python](./Python/separate-squares-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Line Sweep, Segment Tree
 
 <br/>
 <div align="right">
