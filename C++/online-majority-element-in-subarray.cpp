@@ -107,9 +107,9 @@ private:
 // Space: O(n)
 class MajorityChecker3 {
 private:
-    struct SegmentTree {
+    struct SegmentTreeRecu {
     public:
-        SegmentTree(const vector<int>& nums,
+        SegmentTreeRecu(const vector<int>& nums,
                     const function<int(int, int, int)>& count)
           : original_length_(nums.size())
           , count_(count)
@@ -198,7 +198,7 @@ public:
         for (int i = 0; i < arr_.size(); ++i) {
             inv_idx_[arr_[i]].push_back(i);
         }
-        segment_tree_ = make_unique<SegmentTree>(arr,
+        segment_tree_ = make_unique<SegmentTreeRecu>(arr,
                             bind(&MajorityChecker3::count, this, cref(inv_idx_),
                                  placeholders::_1,
                                  placeholders::_2,
@@ -216,7 +216,7 @@ public:
 private:
     const vector<int>& arr_;
     unordered_map<int, vector<int>> inv_idx_;
-    unique_ptr<SegmentTree> segment_tree_;
+    unique_ptr<SegmentTreeRecu> segment_tree_;
 };
 
 // Time:  ctor:  O(n)
