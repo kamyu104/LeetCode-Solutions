@@ -22,7 +22,7 @@ public:
         for (int i = 0; i < size(sorted_x); ++i) {  // coordinate compression
             x_to_idx[sorted_x[i]] = i;
         }
-        auto st = SegmentTree(sorted_x);
+        auto st = SegmentTreeRecu(sorted_x);
         int prev = get<0>(events[0]);
         vector<tuple<int, int, double>> intervals;
         for (const auto& [y, v, x1, x2] : events) {
@@ -48,9 +48,9 @@ public:
     }
 
 private:
-    class SegmentTree {
+    class SegmentTreeRecu {
     public:
-        SegmentTree(const vector<int>& sorted_x) : sorted_x(sorted_x) {
+        SegmentTreeRecu(const vector<int>& sorted_x) : sorted_x(sorted_x) {
             const int n = size(sorted_x) - 1;
             const int l = n > 1 ? 1 << (__lg(n - 1) + 2) : 2;
             tree.assign(l, 0);
