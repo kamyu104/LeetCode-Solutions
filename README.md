@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3450%20%2F%203450-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3460%20%2F%203460-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -250,6 +250,7 @@
 3432 | [Count Partitions with Even Sum Difference](https://leetcode.com/problems/count-partitions-with-even-sum-difference/) | [C++](./C++/count-partitions-with-even-sum-difference.cpp) [Python](./Python/count-partitions-with-even-sum-difference.py) | _O(n)_   | _O(1)_        | Easy         | | Prefix Sum
 3440 | [Reschedule Meetings for Maximum Free Time II](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-ii/) | [C++](./C++/reschedule-meetings-for-maximum-free-time-ii.cpp) [Python](./Python/reschedule-meetings-for-maximum-free-time-ii.py) | _O(n)_ | _O(1)_ | Medium | | Array
 3446 | [Sort Matrix by Diagonals](https://leetcode.com/problems/sort-matrix-by-diagonals/) | [C++](./C++/sort-matrix-by-diagonals.cpp) [Python](./Python/sort-matrix-by-diagonals.py) | _O(n^2 * logn)_ | _O(n^2)_ | Medium | | Array, Sort
+3452 | [Sum of Good Numbers](https://leetcode.com/problems/sum-of-good-numbers/) | [C++](./C++/sum-of-good-numbers.cpp) [Python](./Python/sum-of-good-numbers.py) | _O(n)_ | _O(1)_ | Medium | | Array
 
 <br/>
 <div align="right">
@@ -336,6 +337,8 @@
 3324 | [Find the Sequence of Strings Appeared on the Screen](https://leetcode.com/problems/find-the-sequence-of-strings-appeared-on-the-screen/) | [C++](./C++/find-the-sequence-of-strings-appeared-on-the-screen.cpp) [Python](./Python/find-the-sequence-of-strings-appeared-on-the-screen.py) | _O(n^2)_   | _O(1)_        | Medium         | | String
 3340 | [Check Balanced String](https://leetcode.com/problems/check-balanced-string/) | [C++](./C++/check-balanced-string.cpp) [Python](./Python/check-balanced-string.py) | _O(n)_   | _O(1)_        | Easy         | | String
 3407 | [Substring Matching Pattern](https://leetcode.com/problems/substring-matching-pattern/) | [C++](./C++/substring-matching-pattern.cpp) [Python](./Python/substring-matching-pattern.py) | _O(n + m)_   | _O(m)_        | Easy         | | String, `KMP Algorithm`
+3455 | [Shortest Matching Substring](https://leetcode.com/problems/shortest-matching-substring/) | [C++](./C++/shortest-matching-substring.cpp) [Python](./Python/shortest-matching-substring.py) | _O(n + m)_   | _O(n + m)_        | Hard         | | String, `KMP Algorithm`, Two Pointers
+3456 | [Find Special Substring of Length K](https://leetcode.com/problems/find-special-substring-of-length-k/) | [C++](./C++/find-special-substring-of-length-k.cpp) [Python](./Python/find-special-substring-of-length-k.py) | _O(n)_   | _O(1)_        | Easy         | | String
 
 <br/>
 <div align="right">
@@ -867,6 +870,7 @@
 3430 | [Maximum and Minimum Sums of at Most Size K Subarrays](https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subarrays/) | [C++](./C++/maximum-and-minimum-sums-of-at-most-size-k-subarrays.cpp) [Python](./Python/maximum-and-minimum-sums-of-at-most-size-k-subarrays.py) | _O(n)_ | _O(k)_ | Hard | | Two Pointers, Sliding Window, Mono Deque
 3439 | [Reschedule Meetings for Maximum Free Time I](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/) | [C++](./C++/reschedule-meetings-for-maximum-free-time-i.cpp) [Python](./Python/reschedule-meetings-for-maximum-free-time-i.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 3445 | [Maximum Difference Between Even and Odd Frequency II](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/) | [C++](./C++/maximum-difference-between-even-and-odd-frequency-ii.cpp) [Python](./Python/maximum-difference-between-even-and-odd-frequency-ii.py) | _O(d^2 * n)_ | _O(n)_ | Hard | | Prefix Sum, Two Pointers, Sliding Window
+3460 | [Longest Common Prefix After at Most One Removal](https://leetcode.com/problems/longest-common-prefix-after-at-most-one-removal/) | [C++](./C++/longest-common-prefix-after-at-most-one-removal.cpp) [Python](./Python/longest-common-prefix-after-at-most-one-removal.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Two Pointers
 
 <br/>
 <div align="right">
@@ -1222,6 +1226,7 @@
 3434 | [Maximum Frequency After Subarray Operation](https://leetcode.com/problems/maximum-frequency-after-subarray-operation/) | [C++](./C++/maximum-frequency-after-subarray-operation.cpp) [Python](./Python/maximum-frequency-after-subarray-operation.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, DP
 3441 | [Minimum Cost Good Caption](https://leetcode.com/problems/minimum-cost-good-caption/) | [C++](./C++/minimum-cost-good-caption.cpp) [Python](./Python/minimum-cost-good-caption.py) | _O(26 * n)_ | _O(26 * n)_ | Hard | | DP, Backtracing
 3444 | [Minimum Increments for Target Multiples in an Array](https://leetcode.com/problems/minimum-increments-for-target-multiples-in-an-array/) | [C++](./C++/minimum-increments-for-target-multiples-in-an-array.cpp) [Python](./Python/minimum-increments-for-target-multiples-in-an-array.py) | _O(logr * m * 2^m + n * 3^m)_ | _O(2^m)_ | Hard | | Bitmasks, Number Theory, DP, Submask Enumeration
+3459 | [Length of Longest V-Shaped Diagonal Segment](https://leetcode.com/problems/length-of-longest-v-shaped-diagonal-segment/) | [C++](./C++/length-of-longest-v-shaped-diagonal-segment.cpp) [Python](./Python/length-of-longest-v-shaped-diagonal-segment.py) | _O(n * m)_ | _O(n * m)_ | Hard | | DP
 
 <br/>
 <div align="right">
@@ -1391,6 +1396,8 @@
 3410 | [Maximize Subarray Sum After Removing All Occurrences of One Element](https://leetcode.com/problems/maximize-subarray-sum-after-removing-all-occurrences-of-one-element/) | [C++](./C++/maximize-subarray-sum-after-removing-all-occurrences-of-one-element.cpp) [Python](./Python/maximize-subarray-sum-after-removing-all-occurrences-of-one-element.py) | _O(n)_   | _O(n)_        | Hard         | | Prefix Sum, Greedy, `Kadane's Algorithm`, Segment Tree
 3424 | [Minimum Cost to Make Arrays Identical](https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/) | [C++](./C++/minimum-cost-to-make-arrays-identical.cpp) [Python](./Python/minimum-cost-to-make-arrays-identical.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Greedy
 3443 | [Maximum Manhattan Distance After K Changes](https://leetcode.com/problems/maximum-manhattan-distance-after-k-changes/) | [C++](./C++/maximum-manhattan-distance-after-k-changes.cpp) [Python](./Python/maximum-manhattan-distance-after-k-changes.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3457 | [Eat Pizzas!](https://leetcode.com/problems/eat-pizzas/) | [C++](./C++/eat-pizzas.cpp) [Python](./Python/eat-pizzas.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Greedy
+3458 | [Select K Disjoint Special Substrings](https://leetcode.com/problems/select-k-disjoint-special-substrings/) | [C++](./C++/select-k-disjoint-special-substrings.cpp) [Python](./Python/select-k-disjoint-special-substrings.py) | _O(n + 26^3)_   | _O(26)_        | Medium         | | Hash Table, Sort, Greedy
 
 <br/>
 <div align="right">
@@ -1459,6 +1466,8 @@
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 2101 | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs/) | [C++](./C++/detonate-the-maximum-bombs.cpp) [Python](./Python/detonate-the-maximum-bombs.py) | _O(\|V\|^2 + \V\| * \|E\|)_ | _O(\V\| + \|E\|)_ | Medium | | Graph, DFS, BFS
+3453 | [Separate Squares I](https://leetcode.com/problems/separate-squares-i/) | [C++](./C++/separate-squares-i.cpp) [Python](./Python/separate-squares-i.py) | _O(nlogn)_ | _O(n)_ | Medium | | Binary Search, Sort, Line Sweep
+3454 | [Separate Squares II](https://leetcode.com/problems/separate-squares-ii/) | [C++](./C++/separate-squares-ii.cpp) [Python](./Python/separate-squares-ii.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Line Sweep, Segment Tree
 
 <br/>
 <div align="right">
@@ -1766,6 +1775,7 @@
 3415 | [Find Products with Three Consecutive Digits](https://leetcode.com/problems/find-products-with-three-consecutive-digits/) | [MySQL](./MySQL/find-products-with-three-consecutive-digits.sql) | _O(nlogn)_ | _O(n)_       | Easy           |🔒| Regular Expression |
 3421 | [Find Students Who Improved](https://leetcode.com/problems/find-students-who-improved/) | [MySQL](./MySQL/find-students-who-improved.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3436 | [Find Valid Emails](https://leetcode.com/problems/find-valid-emails/) | [MySQL](./MySQL/find-valid-emails.sql) | _O(n)_ | _O(n)_       | Easy           || Regular Expression |
+3451 | [Find Invalid IP Addresses](https://leetcode.com/problems/find-invalid-ip-addresses/) | [MySQL](./MySQL/find-invalid-ip-addresses.sql) | _O(nlogn)_ | _O(n)_       | Hard           || Regular Expression |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
