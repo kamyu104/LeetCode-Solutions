@@ -1226,7 +1226,7 @@
 3434 | [Maximum Frequency After Subarray Operation](https://leetcode.com/problems/maximum-frequency-after-subarray-operation/) | [C++](./C++/maximum-frequency-after-subarray-operation.cpp) [Python](./Python/maximum-frequency-after-subarray-operation.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, DP
 3441 | [Minimum Cost Good Caption](https://leetcode.com/problems/minimum-cost-good-caption/) | [C++](./C++/minimum-cost-good-caption.cpp) [Python](./Python/minimum-cost-good-caption.py) | _O(26 * n)_ | _O(26 * n)_ | Hard | | DP, Backtracing
 3444 | [Minimum Increments for Target Multiples in an Array](https://leetcode.com/problems/minimum-increments-for-target-multiples-in-an-array/) | [C++](./C++/minimum-increments-for-target-multiples-in-an-array.cpp) [Python](./Python/minimum-increments-for-target-multiples-in-an-array.py) | _O(logr * m * 2^m + n * 3^m)_ | _O(2^m)_ | Hard | | Bitmasks, Number Theory, DP, Submask Enumeration
-3459 | [Length of Longest V-Shaped Diagonal Segment](https://leetcode.com/problems/length-of-longest-v-shaped-diagonal-segment/) | [C++](./C++/length-of-longest-v-shaped-diagonal-segment.cpp) [Python](./Python/length-of-longest-v-shaped-diagonal-segment.py) | _O(n * m)_ | _O(n * m)_ | Hard | | DP
+3459 | [Length of Longest V-Shaped Diagonal Segment](https://leetcode.com/problems/length-of-longest-v-shaped-diagonal-segment/) | [C++](./C++/length-of-longest-v-shaped-diagonal-segment.cpp) [Python](./Python/length-of-longest-v-shaped-diagonal-segment.py) | _O(n * m)_ | _O(n * m)_ | Hard | | Memoization, DP
 
 <br/>
 <div align="right">
