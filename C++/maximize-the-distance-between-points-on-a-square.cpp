@@ -90,7 +90,7 @@ public:
         vector<int64_t> p;
         for (const auto& x : points) {
             if (x[0] == 0) {
-                p.emplace_back(x[1]);
+                p.emplace_back(0ll * side + x[1]);
             } else if(x[1] == side) {
                 p.emplace_back(1ll * side + x[0]);
             } else if(x[0] == side) {
