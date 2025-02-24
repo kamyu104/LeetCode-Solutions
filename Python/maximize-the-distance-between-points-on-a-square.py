@@ -54,8 +54,11 @@ class Solution(object):
         return binary_search_right(1, 4*side//k, check)
 
 
-# Time:  O(nlogn + n * k * logs), s = side
+# Time:  O(nlogn + n * (k * logn) * logs), s = side
 # Space: O(n)
+import bisect
+
+
 # sort, binary search, greedy
 class Solution2(object):
     def maxDistance(self, side, points, k):
