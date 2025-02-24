@@ -87,6 +87,7 @@ class Solution3(object):
         :rtype: bool
         """
         s = map(int, s)
-        for _ in xrange(len(s)-2):
-            s = [(s[i]+s[i+1])%10 for i in xrange(len(s)-1)]
+        for l in reversed(xrange(3, len(s)+1)):
+            for i in xrange(l-1):
+                s[i] = (s[i]+s[i+1])%10
         return s[0] == s[1]
