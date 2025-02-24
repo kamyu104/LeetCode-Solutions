@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3460%20%2F%203460-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3465%20%2F%203465-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -724,6 +724,8 @@
 3428 | [Maximum and Minimum Sums of at Most Size K Subsequences](https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/) | [C++](./C++/maximum-and-minimum-sums-of-at-most-size-k-subsequences.cpp) [Python](./Python/maximum-and-minimum-sums-of-at-most-size-k-subsequences.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Combinatorics, Two Pointers, Sliding Window |
 3447 | [Assign Elements to Groups with Constraints](https://leetcode.com/problems/assign-elements-to-groups-with-constraints/) | [C++](./C++/assign-elements-to-groups-with-constraints.cpp) [Python](./Python/assign-elements-to-groups-with-constraints.py) | _O(m + r * logn)_ | _O(r)_ | Medium | | Hash Table, Number Theory |
 3448 | [Count Substrings Divisible By Last Digit](https://leetcode.com/problems/count-substrings-divisible-by-last-digit/) | [C++](./C++/count-substrings-divisible-by-last-digit.cpp) [Python](./Python/count-substrings-divisible-by-last-digit.py) | _O(d * n)_ | _O(d)_ | Hard | | DP, Case Works, Math, Freq Table |
+3461 | [Check If Digits Are Equal in String After Operations I](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/) | [C++](./C++/check-if-digits-are-equal-in-string-after-operations-i.cpp) [Python](./Python/check-if-digits-are-equal-in-string-after-operations-i.py) | _O(nlogn)_ | _O(1)_ | Easy | | Fast Exponentiation, `Luca's Theorem`, Simulation
+3463 | [Check If Digits Are Equal in String After Operations II](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-ii/) | [C++](./C++/check-if-digits-are-equal-in-string-after-operations-ii.cpp) [Python](./Python/check-if-digits-are-equal-in-string-after-operations-ii.py) | _O(nlogn)_ | _O(1)_ | Hard | | Fast Exponentiation, `Lucas's Theorem`, Simulation
 
 <br/>
 <div align="right">
@@ -934,6 +936,7 @@
 3398 | [Smallest Substring With Identical Characters I](https://leetcode.com/problems/smallest-substring-with-identical-characters-i/) | [C++](./C++/smallest-substring-with-identical-characters-i.cpp) [Python](./Python/smallest-substring-with-identical-characters-i.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Binary Search, Greedy
 3399 | [Smallest Substring With Identical Characters II](https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/) | [C++](./C++/smallest-substring-with-identical-characters-ii.cpp) [Python](./Python/smallest-substring-with-identical-characters-ii.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Binary Search, Greedy
 3449 | [Maximize the Minimum Game Score](https://leetcode.com/problems/maximize-the-minimum-game-score/) | [C++](./C++/maximize-the-minimum-game-score.cpp) [Python](./Python/maximize-the-minimum-game-score.py) | _O(n * log(m * r))_   | _O(1)_        | Hard         | | Binary Search, Greedy
+3464 | [Maximize the Distance Between Points on a Square](https://leetcode.com/problems/maximize-the-distance-between-points-on-a-square/) | [C++](./C++/maximize-the-distance-between-points-on-a-square.cpp) [Python](./Python/maximize-the-distance-between-points-on-a-square.py) | _O(nlogn + nlogs)_   | _O(n)_        | Hard         | | Sort, Binary Search, Greedy, Two Pointers, Sliding Window
 
 <br/>
 
@@ -1398,6 +1401,7 @@
 3443 | [Maximum Manhattan Distance After K Changes](https://leetcode.com/problems/maximum-manhattan-distance-after-k-changes/) | [C++](./C++/maximum-manhattan-distance-after-k-changes.cpp) [Python](./Python/maximum-manhattan-distance-after-k-changes.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3457 | [Eat Pizzas!](https://leetcode.com/problems/eat-pizzas/) | [C++](./C++/eat-pizzas.cpp) [Python](./Python/eat-pizzas.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Greedy
 3458 | [Select K Disjoint Special Substrings](https://leetcode.com/problems/select-k-disjoint-special-substrings/) | [C++](./C++/select-k-disjoint-special-substrings.cpp) [Python](./Python/select-k-disjoint-special-substrings.py) | _O(n + 26^3)_   | _O(26)_        | Medium         | | Hash Table, Sort, Greedy
+3462 | [Maximum Sum With at Most K Elements](https://leetcode.com/problems/maximum-sum-with-at-most-k-elements/) | [C++](./C++/maximum-sum-with-at-most-k-elements.cpp) [Python](./Python/maximum-sum-with-at-most-k-elements.py) | _O(n * m)_   | _O(1)_        | Medium         | | Greedy, Quick Select
 
 <br/>
 <div align="right">
@@ -1776,6 +1780,7 @@
 3421 | [Find Students Who Improved](https://leetcode.com/problems/find-students-who-improved/) | [MySQL](./MySQL/find-students-who-improved.sql) | _O(nlogn)_ | _O(n)_       | Medium           |🔒| Window Function |
 3436 | [Find Valid Emails](https://leetcode.com/problems/find-valid-emails/) | [MySQL](./MySQL/find-valid-emails.sql) | _O(n)_ | _O(n)_       | Easy           || Regular Expression |
 3451 | [Find Invalid IP Addresses](https://leetcode.com/problems/find-invalid-ip-addresses/) | [MySQL](./MySQL/find-invalid-ip-addresses.sql) | _O(nlogn)_ | _O(n)_       | Hard           || Regular Expression |
+3465 | [Find Products with Valid Serial Numbers](https://leetcode.com/problems/find-products-with-valid-serial-numbers/) | [MySQL](./MySQL/find-products-with-valid-serial-numbers.sql) | _O(nlogn)_ | _O(n)_       | Easy           || Regular Expression |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
