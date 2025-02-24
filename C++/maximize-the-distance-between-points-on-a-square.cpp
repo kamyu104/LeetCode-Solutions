@@ -65,7 +65,7 @@ public:
             return mx >= k;
         };
 
-        return binary_search_right(1, side, check);
+        return binary_search_right(1, 4ll * side / k, check);
     }
 };
 
