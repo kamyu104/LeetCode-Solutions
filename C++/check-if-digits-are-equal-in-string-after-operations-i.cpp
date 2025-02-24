@@ -104,17 +104,15 @@ public:
 };
 
 // Time:  O(n^2)
-// Space: O(n)
+// Space: O(1)
 // simulation
 class Solution3 {
 public:
     bool hasSameDigits(string s) {
-        while (size(s) != 2) {
-            string new_s(size(s) - 1, 0);
-            for (int i = 0; i + 1 < size(s); ++i) {
-                new_s[i] = '0' + ((s[i] - '0') + (s[i + 1] - '0')) % 10;
+        for (int l = size(s); l >= 3; --l) {
+            for (int i = 0; i + 1 < l; ++i) {
+                s[i] = '0' + ((s[i] - '0') + (s[i + 1] - '0')) % 10;
             }
-            s = move(new_s);
         }
         return s[0] == s[1];
     }
