@@ -108,7 +108,7 @@ public:
             result = binary_search_right(result + 1, 4ll * side / k, [&](int d) { 
                 int j = i;
                 for (int _ = 0; _ < k - 1; ++_) {
-                    j = lower_bound(cbegin(p) + j + 1, cend(p), p[j] + d) - cbegin(p);
+                    j = distance(cbegin(p), lower_bound(cbegin(p) + j + 1, cend(p), p[j] + d));
                     if (j == size(p)) {
                         return false;
                     }
@@ -117,5 +117,62 @@ public:
              });
         }
         return result;
+    }
+};
+
+// Time:  O(nlogn + (n * k * logn) * logs), s = side
+// Space: O(n)
+// sort, binary search, greedy
+class Solution3 {
+public:
+    int maxDistance(int side, vector<vector<int>>& points, int k) {
+        const auto& binary_search_right = [](auto left, auto right, const auto& check) {
+            while (left <= right) {
+                const auto mid = left + (right - left) / 2;
+                if (!check(mid)) {
+                    right = mid - 1;
+                } else {
+                    left = mid + 1;
+                }
+            }
+            return right;
+        };
+
+        vector<int64_t> p;
+        for (const auto& x : points) {
+            if (x[0] == 0) {
+                p.emplace_back(0ll * side + x[1]);
+            } else if(x[1] == side) {
+                p.emplace_back(1ll * side + x[0]);
+            } else if(x[0] == side) {
+                p.emplace_back(2ll * side + (side - x[1]));
+            } else {
+                p.emplace_back(3ll * side + (side - x[0]));
+            }
+        }
+        sort(begin(p), end(p));
+        for (int i = 0; i < size(points); ++i) {
+            p.emplace_back(p[i] + 4ll * side);
+        }
+        const auto& check = [&](int d) {
+            for (int i = 0; i < size(points); ++i) {
+                int j = i;
+                int cnt = 0;
+                for (; cnt < k - 1; ++cnt) {
+                    j = distance(cbegin(p), lower_bound(cbegin(p) + j + 1, cbegin(p) + (i + size(points)), p[j] + d));
+                    if (j == i + size(points)) {
+                        break;
+                    }
+                }
+                if (cnt == k - 1) {
+                    if ((p[i] + 4ll * side) - p[j] >= d) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        };
+
+        return binary_search_right(1, 4ll * side / k, check);
     }
 };
