@@ -79,7 +79,7 @@ class Solution2(object):
 
 
 # Time:  O(n^2)
-# Space: O(n)
+# Space: O(1)
 class Solution3(object):
     def hasSameDigits(self, s):
         """
