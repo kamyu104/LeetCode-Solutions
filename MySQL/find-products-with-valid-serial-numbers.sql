@@ -1,5 +1,5 @@
 # Time:  O(nlogn)
-# Space: O(1)
+# Space: O(n)
 
 # regular expression
 SELECT product_id, product_name, description
