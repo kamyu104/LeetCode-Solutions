@@ -69,7 +69,7 @@ public:
     }
 };
 
-// Time:  O(nlogn + n * k * logs), s = side
+// Time:  O(nlogn + n * (k * logn) * logs), s = side
 // Space: O(n)
 // sort, binary search, greedy
 class Solution2 {
