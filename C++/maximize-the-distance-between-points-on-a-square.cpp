@@ -56,7 +56,7 @@ public:
             return mx >= k;
         };
 
-        return binary_search_right(1, 4ll * side / k, check);
+        return binary_search_right(1ll, 4ll * side / k, check);
     }
 };
 
@@ -126,7 +126,7 @@ public:
             return mx >= k;
         };
 
-        return binary_search_right(1, 4ll * side / k, check);
+        return binary_search_right(1ll, 4ll * side / k, check);
     }
 };
 
@@ -166,7 +166,7 @@ public:
             if (p.back() - p[i] <= result * (k - 1ll)) { // to speed up
                 break;
             }
-            result = binary_search_right(result + 1, 4ll * side / k, [&](int d) { 
+            result = binary_search_right(result + 1ll, 4ll * side / k, [&](int d) { 
                 int j = i;
                 for (int _ = 0; _ < k - 1; ++_) {
                     j = distance(cbegin(p), lower_bound(cbegin(p) + j + 1, cend(p), p[j] + d));
@@ -234,6 +234,6 @@ public:
             return false;
         };
 
-        return binary_search_right(1, 4ll * side / k, check);
+        return binary_search_right(1ll, 4ll * side / k, check);
     }
 };
