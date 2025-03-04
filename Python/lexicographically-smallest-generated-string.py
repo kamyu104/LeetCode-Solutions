@@ -49,7 +49,7 @@ class Solution(object):
         dq = collections.deque()
         i, j = m+1, 0
         while i-(m+1) < n:
-            if dq and dq[0] < i:
+            while dq and dq[0] < i:
                 dq.popleft()
             while j < len(idxs) and idxs[j] <= i+(m-1):
                 dq.append(idxs[j])
