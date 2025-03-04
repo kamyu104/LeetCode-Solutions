@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3465%20%2F%203465-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3476%20%2F%203476-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -251,6 +251,7 @@
 3440 | [Reschedule Meetings for Maximum Free Time II](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-ii/) | [C++](./C++/reschedule-meetings-for-maximum-free-time-ii.cpp) [Python](./Python/reschedule-meetings-for-maximum-free-time-ii.py) | _O(n)_ | _O(1)_ | Medium | | Array
 3446 | [Sort Matrix by Diagonals](https://leetcode.com/problems/sort-matrix-by-diagonals/) | [C++](./C++/sort-matrix-by-diagonals.cpp) [Python](./Python/sort-matrix-by-diagonals.py) | _O(n^2 * logn)_ | _O(n^2)_ | Medium | | Array, Sort
 3452 | [Sum of Good Numbers](https://leetcode.com/problems/sum-of-good-numbers/) | [C++](./C++/sum-of-good-numbers.cpp) [Python](./Python/sum-of-good-numbers.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3467 | [Transform Array by Parity](https://leetcode.com/problems/transform-array-by-parity/) | [C++](./C++/transform-array-by-parity.cpp) [Python](./Python/transform-array-by-parity.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -577,6 +578,7 @@
 3438 | [Find Valid Pair of Adjacent Digits in String](https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/) | [C++](./C++/find-valid-pair-of-adjacent-digits-in-string.cpp) [Python](./Python/find-valid-pair-of-adjacent-digits-in-string.py) | _O(n)_ | _O(1)_ | Easy | | Freq Table
 3442 | [Maximum Difference Between Even and Odd Frequency I](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-i/) | [C++](./C++/maximum-difference-between-even-and-odd-frequency-i.cpp) [Python](./Python/maximum-difference-between-even-and-odd-frequency-i.py) | _O(n + 26)_ | _O(26)_ | Easy | | Freq Table
 3450 | [Maximum Students on a Single Bench](https://leetcode.com/problems/maximum-students-on-a-single-bench/) | [C++](./C++/maximum-students-on-a-single-bench.cpp) [Python](./Python/maximum-students-on-a-single-bench.py) | _O(n)_ | _O(n)_ | Easy | 🔒 | Hash Table, Unordered Set
+3471 | [Find the Largest Almost Missing Integer](https://leetcode.com/problems/find-the-largest-almost-missing-integer/) | [C++](./C++/find-the-largest-almost-missing-integer.cpp) [Python](./Python/find-the-largest-almost-missing-integer.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
 
 <br/>
 <div align="right">
@@ -726,6 +728,7 @@
 3448 | [Count Substrings Divisible By Last Digit](https://leetcode.com/problems/count-substrings-divisible-by-last-digit/) | [C++](./C++/count-substrings-divisible-by-last-digit.cpp) [Python](./Python/count-substrings-divisible-by-last-digit.py) | _O(d * n)_ | _O(d)_ | Hard | | DP, Case Works, Math, Freq Table |
 3461 | [Check If Digits Are Equal in String After Operations I](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/) | [C++](./C++/check-if-digits-are-equal-in-string-after-operations-i.cpp) [Python](./Python/check-if-digits-are-equal-in-string-after-operations-i.py) | _O(nlogn)_ | _O(1)_ | Easy | | Fast Exponentiation, `Luca's Theorem`, Simulation
 3463 | [Check If Digits Are Equal in String After Operations II](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-ii/) | [C++](./C++/check-if-digits-are-equal-in-string-after-operations-ii.cpp) [Python](./Python/check-if-digits-are-equal-in-string-after-operations-ii.py) | _O(nlogn)_ | _O(1)_ | Hard | | Fast Exponentiation, `Lucas's Theorem`
+3470 | [Permutations IV](https://leetcode.com/problems/permutations-iv/) | [C++](./C++/permutations-iv.cpp) [Python](./Python/permutations-iv.py) | _O(n^2)_ | _O(n)_ | Hard | | Combinatorics |
 
 <br/>
 <div align="right">
@@ -1230,6 +1233,10 @@
 3441 | [Minimum Cost Good Caption](https://leetcode.com/problems/minimum-cost-good-caption/) | [C++](./C++/minimum-cost-good-caption.cpp) [Python](./Python/minimum-cost-good-caption.py) | _O(26 * n)_ | _O(26 * n)_ | Hard | | DP, Backtracing
 3444 | [Minimum Increments for Target Multiples in an Array](https://leetcode.com/problems/minimum-increments-for-target-multiples-in-an-array/) | [C++](./C++/minimum-increments-for-target-multiples-in-an-array.cpp) [Python](./Python/minimum-increments-for-target-multiples-in-an-array.py) | _O(logr * m * 2^m + n * 3^m)_ | _O(2^m)_ | Hard | | Bitmasks, Number Theory, DP, Submask Enumeration
 3459 | [Length of Longest V-Shaped Diagonal Segment](https://leetcode.com/problems/length-of-longest-v-shaped-diagonal-segment/) | [C++](./C++/length-of-longest-v-shaped-diagonal-segment.cpp) [Python](./Python/length-of-longest-v-shaped-diagonal-segment.py) | _O(n * m)_ | _O(n * m)_ | Hard | | Memoization, DP
+3466 | [Maximum Coin Collection](https://leetcode.com/problems/maximum-coin-collection/) | [C++](./C++/maximum-coin-collection.cpp) [Python](./Python/maximum-coin-collection.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | DP
+3469 | [Find Minimum Cost to Remove Array Elements](https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/) | [C++](./C++/find-minimum-cost-to-remove-array-elements.cpp) [Python](./Python/find-minimum-cost-to-remove-array-elements.py) | _O(n^2)_ | _O(n)_ | Medium | | DP, Greedy
+3472 | [Longest Palindromic Subsequence After at Most K Operations](https://leetcode.com/problems/longest-palindromic-subsequence-after-at-most-k-operations/) | [C++](./C++/longest-palindromic-subsequence-after-at-most-k-operations.cpp) [Python](./Python/longest-palindromic-subsequence-after-at-most-k-operations.py) | _O(n^2 * k)_ | _O(n^2 * k)_ | Medium | | DP
+3473 | [Sum of K Subarrays With Length at Least M](https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/) | [C++](./C++/sum-of-k-subarrays-with-length-at-least-m.cpp) [Python](./Python/sum-of-k-subarrays-with-length-at-least-m.py) | _O(k * n)_ | _O(n)_ | Medium | | Prefix Sum, DP
 
 <br/>
 <div align="right">
@@ -1402,6 +1409,9 @@
 3457 | [Eat Pizzas!](https://leetcode.com/problems/eat-pizzas/) | [C++](./C++/eat-pizzas.cpp) [Python](./Python/eat-pizzas.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Greedy
 3458 | [Select K Disjoint Special Substrings](https://leetcode.com/problems/select-k-disjoint-special-substrings/) | [C++](./C++/select-k-disjoint-special-substrings.cpp) [Python](./Python/select-k-disjoint-special-substrings.py) | _O(n + 26^3)_   | _O(26)_        | Medium         | | Hash Table, Sort, Greedy
 3462 | [Maximum Sum With at Most K Elements](https://leetcode.com/problems/maximum-sum-with-at-most-k-elements/) | [C++](./C++/maximum-sum-with-at-most-k-elements.cpp) [Python](./Python/maximum-sum-with-at-most-k-elements.py) | _O(n * m)_   | _O(1)_        | Medium         | | Greedy, Quick Select
+3468 | [Find the Number of Copy Arrays](https://leetcode.com/problems/find-the-number-of-copy-arrays/) | [C++](./C++/find-the-number-of-copy-arrays.cpp) [Python](./Python/find-the-number-of-copy-arrays.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3474 | [Lexicographically Smallest Generated String](https://leetcode.com/problems/lexicographically-smallest-generated-string/) | [C++](./C++/lexicographically-smallest-generated-string.cpp) [Python](./Python/lexicographically-smallest-generated-string.py) | _O(n + m)_   | _O(n + m)_        | Hard         | | `KMP Algorithm`, `Z-Function`, Two Pointers, Sliding Window, Deque, Greedy
+3476 | [Maximize Profit from Task Assignment](https://leetcode.com/problems/maximize-profit-from-task-assignment/) | [C++](./C++/maximize-profit-from-task-assignment.cpp) [Python](./Python/maximize-profit-from-task-assignment.py) | _O(n + tlogt)_   | _O(n)_        | Medium         | 🔒 | Freq Table, Sort, Greedy
 
 <br/>
 <div align="right">
@@ -1781,6 +1791,7 @@
 3436 | [Find Valid Emails](https://leetcode.com/problems/find-valid-emails/) | [MySQL](./MySQL/find-valid-emails.sql) | _O(n)_ | _O(n)_       | Easy           || Regular Expression |
 3451 | [Find Invalid IP Addresses](https://leetcode.com/problems/find-invalid-ip-addresses/) | [MySQL](./MySQL/find-invalid-ip-addresses.sql) | _O(nlogn)_ | _O(n)_       | Hard           || Regular Expression |
 3465 | [Find Products with Valid Serial Numbers](https://leetcode.com/problems/find-products-with-valid-serial-numbers/) | [MySQL](./MySQL/find-products-with-valid-serial-numbers.sql) | _O(nlogn)_ | _O(n)_       | Easy           || Regular Expression |
+3475 | [DNA Pattern Recognition](https://leetcode.com/problems/dna-pattern-recognition/) | [MySQL](./MySQL/dna-pattern-recognition.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Regular Expression |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
