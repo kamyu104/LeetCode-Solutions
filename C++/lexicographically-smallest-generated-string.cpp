@@ -1,7 +1,7 @@
 // Time:  O(n + m)
 // Space: O(n + m)
 
-// kmp, two pointers, sliding window, greedy
+// kmp, two pointers, sliding window, deque, greedy
 class Solution {
 public:
     string generateString(string str1, string str2) {
@@ -76,7 +76,7 @@ public:
 
 // Time:  O(n + m)
 // Space: O(n + m)
-// z-function, two pointers, sliding window, greedy
+// z-function, two pointers, sliding window, deque, greedy
 class Solution2 {
 public:
     string generateString(string str1, string str2) {
