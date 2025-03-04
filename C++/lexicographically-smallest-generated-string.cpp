@@ -54,7 +54,7 @@ public:
         prefix = getPrefix(result);
         deque<int> dq;
         for (int i = m + 1, j = 0; i - (m + 1) < n;) {
-            if (!empty(dq) && dq[0] < i) {
+            while (!empty(dq) && dq[0] < i) {
                 dq.pop_front();
             }
             for (; j < size(idxs) && idxs[j] <= i + (m - 1); ++j) {
@@ -131,7 +131,7 @@ public:
         z = z_function(result);
         deque<int> dq;
         for (int i = m + 1, j = 0; i - (m + 1) < n;) {
-            if (!empty(dq) && dq[0] < i) {
+            while (!empty(dq) && dq[0] < i) {
                 dq.pop_front();
             }
             for (; j < size(idxs) && idxs[j] <= i + (m - 1); ++j) {
