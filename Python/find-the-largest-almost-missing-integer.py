@@ -4,7 +4,7 @@
 import collections
 
 
-# array
+# freq table
 class Solution(object):
     def largestInteger(self, nums, k):
         """
