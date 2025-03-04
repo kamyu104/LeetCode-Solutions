@@ -4,7 +4,7 @@
 import collections
 
 
-# kmp, two pointers, sliding window, greedy
+# kmp, two pointers, sliding window, deque, greedy
 class Solution(object):
     def generateString(self, str1, str2):
         """
@@ -69,7 +69,7 @@ class Solution(object):
 import collections
 
 
-# z-function, two pointers, sliding window, greedy
+# z-function, two pointers, sliding window, deque, greedy
 class Solution2(object):
     def generateString(self, str1, str2):
         """
