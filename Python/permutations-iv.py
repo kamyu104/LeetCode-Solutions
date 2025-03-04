@@ -12,7 +12,7 @@ class Solution(object):
         result = []
         cnt = [1]*n
         for i in xrange(len(cnt)-1):
-            cnt[i+1] = cnt[i]*((i+2)//2)
+            cnt[i+1] = min(cnt[i]*((i+2)//2), k)
         lookup = [False]*n
         for i in xrange(n):
             for j in xrange(n):
