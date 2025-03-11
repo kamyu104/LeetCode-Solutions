@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3476%20%2F%203476-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3482%20%2F%203482-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -940,6 +940,8 @@
 3399 | [Smallest Substring With Identical Characters II](https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/) | [C++](./C++/smallest-substring-with-identical-characters-ii.cpp) [Python](./Python/smallest-substring-with-identical-characters-ii.py) | _O(nlogn)_   | _O(1)_        | Hard         | | Binary Search, Greedy
 3449 | [Maximize the Minimum Game Score](https://leetcode.com/problems/maximize-the-minimum-game-score/) | [C++](./C++/maximize-the-minimum-game-score.cpp) [Python](./Python/maximize-the-minimum-game-score.py) | _O(n * log(m * r))_   | _O(1)_        | Hard         | | Binary Search, Greedy
 3464 | [Maximize the Distance Between Points on a Square](https://leetcode.com/problems/maximize-the-distance-between-points-on-a-square/) | [C++](./C++/maximize-the-distance-between-points-on-a-square.cpp) [Python](./Python/maximize-the-distance-between-points-on-a-square.py) | _O(nlogn + nlogs)_   | _O(n)_        | Hard         | | Sort, Binary Search, Greedy, Two Pointers, Sliding Window
+3477 | [Fruits Into Baskets II](https://leetcode.com/problems/fruits-into-baskets-ii/) | [C++](./C++/fruits-into-baskets-ii.cpp) [Python](./Python/fruits-into-baskets-ii.py) | _O(nlogn)_   | _O(n)_        | Easy         | | Segment Tree, Binary Search, Brute Force
+3477 | [Fruits Into Baskets III](https://leetcode.com/problems/fruits-into-baskets-iii/) | [C++](./C++/fruits-into-baskets-iii.cpp) [Python](./Python/fruits-into-baskets-iii.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Segment Tree, Binary Search
 
 <br/>
 
@@ -1412,6 +1414,8 @@
 3468 | [Find the Number of Copy Arrays](https://leetcode.com/problems/find-the-number-of-copy-arrays/) | [C++](./C++/find-the-number-of-copy-arrays.cpp) [Python](./Python/find-the-number-of-copy-arrays.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3474 | [Lexicographically Smallest Generated String](https://leetcode.com/problems/lexicographically-smallest-generated-string/) | [C++](./C++/lexicographically-smallest-generated-string.cpp) [Python](./Python/lexicographically-smallest-generated-string.py) | _O(n + m)_   | _O(n + m)_        | Hard         | | `KMP Algorithm`, `Z-Function`, Two Pointers, Sliding Window, Deque, Greedy
 3476 | [Maximize Profit from Task Assignment](https://leetcode.com/problems/maximize-profit-from-task-assignment/) | [C++](./C++/maximize-profit-from-task-assignment.cpp) [Python](./Python/maximize-profit-from-task-assignment.py) | _O(n + tlogt)_   | _O(n)_        | Medium         | 🔒 | Freq Table, Sort, Greedy
+3478 | [Choose K Elements With Maximum Sum](https://leetcode.com/problems/choose-k-elements-with-maximum-sum/) | [C++](./C++/choose-k-elements-with-maximum-sum.cpp) [Python](./Python/choose-k-elements-with-maximum-sum.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort, Greedy, Two Pointers, Heap
+3480 | [Maximize Subarrays After Removing One Conflicting Pair](https://leetcode.com/problems/maximize-subarrays-after-removing-one-conflicting-pair/) | [C++](./C++/maximize-subarrays-after-removing-one-conflicting-pair.cpp) [Python](./Python/maximize-subarrays-after-removing-one-conflicting-pair.py) | _O(n + m)_   | _O(n + m)_        | Hard         | | Greedy
 
 <br/>
 <div align="right">
@@ -1469,6 +1473,7 @@
 3387 | [Maximize Amount After Two Days of Conversions](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) | [C++](./C++/maximize-amount-after-two-days-of-conversions.cpp) [Python](./Python/maximize-amount-after-two-days-of-conversions.py) | _O(n^2)_ | _O(n)_ | Medium | | `Bellman-Ford Algorithm`, BFS |
 3419 | [Minimize the Maximum Edge Weight of Graph](https://leetcode.com/problems/minimize-the-maximum-edge-weight-of-graph/)  | [C++](./C++/minimize-the-maximum-edge-weight-of-graph.cpp) [Python](./Python/minimize-the-maximum-edge-weight-of-graph.py) |  _O(nlogn + e)_ | _O(n + e)_ | Medium           | | Graph, `Dijkstra's Algorithm`, `Prim's Algorithm`, Binary Search, BFS |
 3435 | [Frequencies of Shortest Supersequences](https://leetcode.com/problems/frequencies-of-shortest-supersequences/) | [C++](./C++/frequencies-of-shortest-supersequences.cpp)  [Python](./Python/frequencies-of-shortest-supersequences.py)  | _O(n + k^2 * 2^k)_ | _O(k^2)_ | Hard         | | Bitmasks, Graph, Topological Sort |
+3481 | [Apply Substitutions](https://leetcode.com/problems/apply-substitutions/) | [C++](./C++/apply-substitutions.cpp)  [Python](./Python/apply-substitutions.py)  | _O(r * 2^r)_ | _O(r * 2^r)_ | Medium         | 🔒 | Graph, Topological Sort, Memoization |
 
 <br/>
 <div align="right">
@@ -1792,6 +1797,7 @@
 3451 | [Find Invalid IP Addresses](https://leetcode.com/problems/find-invalid-ip-addresses/) | [MySQL](./MySQL/find-invalid-ip-addresses.sql) | _O(nlogn)_ | _O(n)_       | Hard           || Regular Expression |
 3465 | [Find Products with Valid Serial Numbers](https://leetcode.com/problems/find-products-with-valid-serial-numbers/) | [MySQL](./MySQL/find-products-with-valid-serial-numbers.sql) | _O(nlogn)_ | _O(n)_       | Easy           || Regular Expression |
 3475 | [DNA Pattern Recognition](https://leetcode.com/problems/dna-pattern-recognition/) | [MySQL](./MySQL/dna-pattern-recognition.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Regular Expression |
+3482 | [Analyze Organization Hierarchy](https://leetcode.com/problems/analyze-organization-hierarchy/) | [MySQL](./MySQL/analyze-organization-hierarchy.sql) | _O(n^2)_ | _O(n^2)_       | Hard           || Recursive CTE, BFS |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
