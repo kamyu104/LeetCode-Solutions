@@ -941,7 +941,7 @@
 3449 | [Maximize the Minimum Game Score](https://leetcode.com/problems/maximize-the-minimum-game-score/) | [C++](./C++/maximize-the-minimum-game-score.cpp) [Python](./Python/maximize-the-minimum-game-score.py) | _O(n * log(m * r))_   | _O(1)_        | Hard         | | Binary Search, Greedy
 3464 | [Maximize the Distance Between Points on a Square](https://leetcode.com/problems/maximize-the-distance-between-points-on-a-square/) | [C++](./C++/maximize-the-distance-between-points-on-a-square.cpp) [Python](./Python/maximize-the-distance-between-points-on-a-square.py) | _O(nlogn + nlogs)_   | _O(n)_        | Hard         | | Sort, Binary Search, Greedy, Two Pointers, Sliding Window
 3477 | [Fruits Into Baskets II](https://leetcode.com/problems/fruits-into-baskets-ii/) | [C++](./C++/fruits-into-baskets-ii.cpp) [Python](./Python/fruits-into-baskets-ii.py) | _O(nlogn)_   | _O(n)_        | Easy         | | Segment Tree, Binary Search, Brute Force
-3477 | [Fruits Into Baskets III](https://leetcode.com/problems/fruits-into-baskets-iii/) | [C++](./C++/fruits-into-baskets-iii.cpp) [Python](./Python/fruits-into-baskets-iii.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Segment Tree, Binary Search
+3479 | [Fruits Into Baskets III](https://leetcode.com/problems/fruits-into-baskets-iii/) | [C++](./C++/fruits-into-baskets-iii.cpp) [Python](./Python/fruits-into-baskets-iii.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Segment Tree, Binary Search
 
 <br/>
 
