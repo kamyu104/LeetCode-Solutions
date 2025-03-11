@@ -1,7 +1,7 @@
 # Time:  O(n^2)
 # Space: O(n^2)
 
-# recursive cte
+# recursive cte, bfs
 WITH RECURSIVE level_cte AS (
     SELECT employee_id, manager_id, 1 AS level, salary 
     FROM Employees
