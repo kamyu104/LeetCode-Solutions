@@ -1,5 +1,5 @@
-// Time:  O(n)
-// Space: O(n)
+// Time:  O(n + m)
+// Space: O(n + m)
 
 // greedy
 class Solution {
