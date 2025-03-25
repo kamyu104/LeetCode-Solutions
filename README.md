@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3482%20%2F%203482-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3496%20%2F%203496-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -340,6 +340,7 @@
 3407 | [Substring Matching Pattern](https://leetcode.com/problems/substring-matching-pattern/) | [C++](./C++/substring-matching-pattern.cpp) [Python](./Python/substring-matching-pattern.py) | _O(n + m)_   | _O(m)_        | Easy         | | String, `KMP Algorithm`
 3455 | [Shortest Matching Substring](https://leetcode.com/problems/shortest-matching-substring/) | [C++](./C++/shortest-matching-substring.cpp) [Python](./Python/shortest-matching-substring.py) | _O(n + m)_   | _O(n + m)_        | Hard         | | String, `KMP Algorithm`, Two Pointers
 3456 | [Find Special Substring of Length K](https://leetcode.com/problems/find-special-substring-of-length-k/) | [C++](./C++/find-special-substring-of-length-k.cpp) [Python](./Python/find-special-substring-of-length-k.py) | _O(n)_   | _O(1)_        | Easy         | | String
+3491 | [Phone Number Prefix](https://leetcode.com/problems/phone-number-prefix/) | [C++](./C++/phone-number-prefix.cpp) [Python](./Python/phone-number-prefix.py) | _O(l * nlogn)_   | _O(1)_        | Easy         | 🔒 | Trie, Sort
 
 <br/>
 <div align="right">
@@ -579,6 +580,8 @@
 3442 | [Maximum Difference Between Even and Odd Frequency I](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-i/) | [C++](./C++/maximum-difference-between-even-and-odd-frequency-i.cpp) [Python](./Python/maximum-difference-between-even-and-odd-frequency-i.py) | _O(n + 26)_ | _O(26)_ | Easy | | Freq Table
 3450 | [Maximum Students on a Single Bench](https://leetcode.com/problems/maximum-students-on-a-single-bench/) | [C++](./C++/maximum-students-on-a-single-bench.cpp) [Python](./Python/maximum-students-on-a-single-bench.py) | _O(n)_ | _O(n)_ | Easy | 🔒 | Hash Table, Unordered Set
 3471 | [Find the Largest Almost Missing Integer](https://leetcode.com/problems/find-the-largest-almost-missing-integer/) | [C++](./C++/find-the-largest-almost-missing-integer.cpp) [Python](./Python/find-the-largest-almost-missing-integer.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
+3487 | [Maximum Unique Subarray Sum After Deletion](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/) | [C++](./C++/maximum-unique-subarray-sum-after-deletion.cpp) [Python](./Python/maximum-unique-subarray-sum-after-deletion.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table
+3488 | [Closest Equal Element Queries](https://leetcode.com/problems/closest-equal-element-queries/) | [C++](./C++/closest-equal-element-queries.cpp) [Python](./Python/closest-equal-element-queries.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
 
 <br/>
 <div align="right">
@@ -729,6 +732,8 @@
 3461 | [Check If Digits Are Equal in String After Operations I](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/) | [C++](./C++/check-if-digits-are-equal-in-string-after-operations-i.cpp) [Python](./Python/check-if-digits-are-equal-in-string-after-operations-i.py) | _O(nlogn)_ | _O(1)_ | Easy | | Fast Exponentiation, `Luca's Theorem`, Simulation
 3463 | [Check If Digits Are Equal in String After Operations II](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-ii/) | [C++](./C++/check-if-digits-are-equal-in-string-after-operations-ii.cpp) [Python](./Python/check-if-digits-are-equal-in-string-after-operations-ii.py) | _O(nlogn)_ | _O(1)_ | Hard | | Fast Exponentiation, `Lucas's Theorem`
 3470 | [Permutations IV](https://leetcode.com/problems/permutations-iv/) | [C++](./C++/permutations-iv.cpp) [Python](./Python/permutations-iv.py) | _O(n^2)_ | _O(n)_ | Hard | | Combinatorics |
+3483 | [Unique 3-Digit Even Numbers](https://leetcode.com/problems/unique-3-digit-even-numbers/) | [C++](./C++/unique-3-digit-even-numbers.cpp) [Python](./Python/unique-3-digit-even-numbers.py) | _O(n)_ | _O(1)_ | Easy | | Freq Table, Combinatorics |
+3492 | [Maximum Containers on a Ship](https://leetcode.com/problems/maximum-containers-on-a-ship/) | [C++](./C++/maximum-containers-on-a-ship.cpp) [Python](./Python/maximum-containers-on-a-ship.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 
 <br/>
 <div align="right">
@@ -876,6 +881,8 @@
 3439 | [Reschedule Meetings for Maximum Free Time I](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/) | [C++](./C++/reschedule-meetings-for-maximum-free-time-i.cpp) [Python](./Python/reschedule-meetings-for-maximum-free-time-i.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 3445 | [Maximum Difference Between Even and Odd Frequency II](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/) | [C++](./C++/maximum-difference-between-even-and-odd-frequency-ii.cpp) [Python](./Python/maximum-difference-between-even-and-odd-frequency-ii.py) | _O(d^2 * n)_ | _O(n)_ | Hard | | Prefix Sum, Two Pointers, Sliding Window
 3460 | [Longest Common Prefix After at Most One Removal](https://leetcode.com/problems/longest-common-prefix-after-at-most-one-removal/) | [C++](./C++/longest-common-prefix-after-at-most-one-removal.cpp) [Python](./Python/longest-common-prefix-after-at-most-one-removal.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Two Pointers
+3485 | [Longest Common Prefix of K Strings After Removal](https://leetcode.com/problems/longest-common-prefix-of-k-strings-after-removal/) | [C++](./C++/longest-common-prefix-of-k-strings-after-removal.cpp) [Python](./Python/longest-common-prefix-of-k-strings-after-removal.py) | _O(l * nlogn)_ | _O(n)_ | Hard | | Sort, Sliding Window, Prefix Sum, Trie
+3486 | [Longest Special Path II](https://leetcode.com/problems/longest-special-path-ii/) | [C++](./C++/longest-special-path-ii.cpp) [Python](./Python/longest-special-path-ii.py) | _O(n + e)_ | _O(n + e)_ | Hard | | DFS, Two Pointers, Sliding Window, Prefix Sum
 
 <br/>
 <div align="right">
@@ -1239,7 +1246,8 @@
 3469 | [Find Minimum Cost to Remove Array Elements](https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/) | [C++](./C++/find-minimum-cost-to-remove-array-elements.cpp) [Python](./Python/find-minimum-cost-to-remove-array-elements.py) | _O(n^2)_ | _O(n)_ | Medium | | DP, Greedy
 3472 | [Longest Palindromic Subsequence After at Most K Operations](https://leetcode.com/problems/longest-palindromic-subsequence-after-at-most-k-operations/) | [C++](./C++/longest-palindromic-subsequence-after-at-most-k-operations.cpp) [Python](./Python/longest-palindromic-subsequence-after-at-most-k-operations.py) | _O(n^2 * k)_ | _O(n^2 * k)_ | Medium | | DP
 3473 | [Sum of K Subarrays With Length at Least M](https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/) | [C++](./C++/sum-of-k-subarrays-with-length-at-least-m.cpp) [Python](./Python/sum-of-k-subarrays-with-length-at-least-m.py) | _O(k * n)_ | _O(n)_ | Medium | | Prefix Sum, DP
-
+3489 | [Zero Array Transformation IV](https://leetcode.com/problems/zero-array-transformation-iv/) | [C++](./C++/zero-array-transformation-iv.cpp) [Python](./Python/zero-array-transformation-iv.py) | _O(n^2 * r * logq)_ | _O(r)_ | Medium | | Binary Search, DP
+3490 | [Count Beautiful Numbers](https://leetcode.com/problems/count-beautiful-numbers/) | [C++](./C++/count-beautiful-numbers.cpp) [Python](./Python/count-beautiful-numbers.py) | _O(logr * 2 * 10 * s)_ | _O(logr * 2 * 10 * s)_ | Hard | | DP
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -1416,6 +1424,10 @@
 3476 | [Maximize Profit from Task Assignment](https://leetcode.com/problems/maximize-profit-from-task-assignment/) | [C++](./C++/maximize-profit-from-task-assignment.cpp) [Python](./Python/maximize-profit-from-task-assignment.py) | _O(n + tlogt)_   | _O(n)_        | Medium         | 🔒 | Freq Table, Sort, Greedy
 3478 | [Choose K Elements With Maximum Sum](https://leetcode.com/problems/choose-k-elements-with-maximum-sum/) | [C++](./C++/choose-k-elements-with-maximum-sum.cpp) [Python](./Python/choose-k-elements-with-maximum-sum.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort, Greedy, Two Pointers, Heap
 3480 | [Maximize Subarrays After Removing One Conflicting Pair](https://leetcode.com/problems/maximize-subarrays-after-removing-one-conflicting-pair/) | [C++](./C++/maximize-subarrays-after-removing-one-conflicting-pair.cpp) [Python](./Python/maximize-subarrays-after-removing-one-conflicting-pair.py) | _O(n + m)_   | _O(n + m)_        | Hard         | | Greedy
+3494 | [Find the Minimum Amount of Time to Brew Potions](https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions/) | [C++](./C++/find-the-minimum-amount-of-time-to-brew-potions.cpp) [Python](./Python/find-the-minimum-amount-of-time-to-brew-potions.py) | _O(n * m)_   | _O(1)_        | Medium         | | Prefix Sum, Greedy
+3494 | [Find the Minimum Amount of Time to Brew Potions](https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions/) | [C++](./C++/find-the-minimum-amount-of-time-to-brew-potions.cpp) [Python](./Python/find-the-minimum-amount-of-time-to-brew-potions.py) | _O(n * m)_   | _O(1)_        | Medium         | | Prefix Sum, Greedy
+3495 | [Minimum Operations to Make Array Elements Zero](https://leetcode.com/problems/minimum-operations-to-make-array-elements-zero/) | [C++](./C++/minimum-operations-to-make-array-elements-zero.cpp) [Python](./Python/minimum-operations-to-make-array-elements-zero.py) | _O(qlogr)_   | _O(1)_        | Hard         | | Greedy
+3496 | [Maximize Score After Pair Deletions](https://leetcode.com/problems/maximize-score-after-pair-deletions/) | [C++](./C++/maximize-score-after-pair-deletions.cpp) [Python](./Python/maximize-score-after-pair-deletions.py) | _O(n)_   | _O(1)_        | Medium         | 🔒 | Greedy
 
 <br/>
 <div align="right">
@@ -1474,6 +1486,7 @@
 3419 | [Minimize the Maximum Edge Weight of Graph](https://leetcode.com/problems/minimize-the-maximum-edge-weight-of-graph/)  | [C++](./C++/minimize-the-maximum-edge-weight-of-graph.cpp) [Python](./Python/minimize-the-maximum-edge-weight-of-graph.py) |  _O(nlogn + e)_ | _O(n + e)_ | Medium           | | Graph, `Dijkstra's Algorithm`, `Prim's Algorithm`, Binary Search, BFS |
 3435 | [Frequencies of Shortest Supersequences](https://leetcode.com/problems/frequencies-of-shortest-supersequences/) | [C++](./C++/frequencies-of-shortest-supersequences.cpp)  [Python](./Python/frequencies-of-shortest-supersequences.py)  | _O(n + k^2 * 2^k)_ | _O(k^2)_ | Hard         | | Bitmasks, Graph, Topological Sort |
 3481 | [Apply Substitutions](https://leetcode.com/problems/apply-substitutions/) | [C++](./C++/apply-substitutions.cpp)  [Python](./Python/apply-substitutions.py)  | _O(r * 2^r)_ | _O(r * 2^r)_ | Medium         | 🔒 | Graph, Topological Sort, Memoization |
+3493 | [Properties Graph](https://leetcode.com/problems/properties-graph/)  | [C++](./C++/properties-graph.cpp) [Python](./Python/properties-graph.py) |  _O(n^2 * m)_ | _O(n)_ | Medium           | | Graph, Flood Fill, BFS, Union Find |
 
 <br/>
 <div align="right">
@@ -1585,6 +1598,7 @@
 3369 | [Design an Array Statistics Tracker](https://leetcode.com/problems/design-an-array-statistics-tracker/) | [C++](./C++/design-an-array-statistics-tracker.cpp) [Python](./Python/design-an-array-statistics-tracker.py) | ctor: _O(1)_<br>addNumber: _O(logn)_<br>removeFirstAddedNumber: _O(logn)_<br>getMean: _O(1)_<br>getMedian: _O(1)_<br>getMode: _O(1)_ | _O(n)_ | Hard | 🔒 | Deque, Freq Table, Sorted List, BST
 3391 | [Design a 3D Binary Matrix with Efficient Layer Tracking](https://leetcode.com/problems/design-a-3d-binary-matrix-with-efficient-layer-tracking/) | [C++](./C++/design-a-3d-binary-matrix-with-efficient-layer-tracking.cpp) [Python](./Python/design-a-3d-binary-matrix-with-efficient-layer-tracking.py) | ctor: _O(1)_<br>setCell: _O(logn)_<br>unsetCell: _O(logn)_<br>largestMatrix: _O(logn)_ | _O(n^3)_ | Medium | 🔒 | Heap, Sorted List
 3408 | [Design Task Manager](https://leetcode.com/problems/design-task-manager/) | [C++](./C++/design-task-manager.cpp) [Python](./Python/design-task-manager.py) | ctor: _O(tlogt)_<br>add: _O(logt)_<br>edit: _O(logt)_<br>rmv: _O(logt)_<br>execTop: _O(logt)_ | _O(t)_ | Medium | | Sorted List
+3484 | [Design Spreadsheet](https://leetcode.com/problems/design-spreadsheet/) | [C++](./C++/design-spreadsheet.cpp) [Python](./Python/design-spreadsheet.py) | ctor: _O(1)_<br>setCell: _O(1)_<br>resetCell: _O(1)_<br>getValue: _O(1)_ | _O(n)_ | Medium | | Hash Table
 
 <br/>
 <div align="right">
