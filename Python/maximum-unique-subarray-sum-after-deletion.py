@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# hash set
+# hash table
 class Solution(object):
     def maxSum(self, nums):
         """
