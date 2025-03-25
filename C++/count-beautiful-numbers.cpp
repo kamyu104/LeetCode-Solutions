@@ -1,5 +1,5 @@
-// Time:  O(logr * 2 * 10 * states)
-// Space: O(states) ~= O(2026)
+// Time:  O(logr * 2 * 10 * s)
+// Space: O(s) ~= O(2026), s = len(states)
 
 // dp
 class Solution {
