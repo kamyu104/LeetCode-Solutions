@@ -38,5 +38,5 @@ class Solution(object):
         for i in xrange(len(s)):
             for j in xrange(len(t)):
                 dp[i+1][j+1] = dp[i][j]+2 if s[i] == t[j] else 0
-                result = max(result, dp[i+1][j+1] + max(p1[i+int(s[i] == t[j])] , p2[j+int(s[i] == t[j])]))
+                result = max(result, dp[i+1][j+1]+max(p1[i+int(s[i] == t[j])] , p2[j+int(s[i] == t[j])]))
         return result
