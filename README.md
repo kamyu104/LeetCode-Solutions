@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3496%20%2F%203496-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3506%20%2F%203506-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -252,6 +252,7 @@
 3446 | [Sort Matrix by Diagonals](https://leetcode.com/problems/sort-matrix-by-diagonals/) | [C++](./C++/sort-matrix-by-diagonals.cpp) [Python](./Python/sort-matrix-by-diagonals.py) | _O(n^2 * logn)_ | _O(n^2)_ | Medium | | Array, Sort
 3452 | [Sum of Good Numbers](https://leetcode.com/problems/sum-of-good-numbers/) | [C++](./C++/sum-of-good-numbers.cpp) [Python](./Python/sum-of-good-numbers.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3467 | [Transform Array by Parity](https://leetcode.com/problems/transform-array-by-parity/) | [C++](./C++/transform-array-by-parity.cpp) [Python](./Python/transform-array-by-parity.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3502 | [Minimum Cost to Reach Every Position](https://leetcode.com/problems/minimum-cost-to-reach-every-position/) | [C++](./C++/minimum-cost-to-reach-every-position.cpp) [Python](./Python/minimum-cost-to-reach-every-position.py) | _O(n)_ | _O(1)_ | Easy | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -341,6 +342,7 @@
 3455 | [Shortest Matching Substring](https://leetcode.com/problems/shortest-matching-substring/) | [C++](./C++/shortest-matching-substring.cpp) [Python](./Python/shortest-matching-substring.py) | _O(n + m)_   | _O(n + m)_        | Hard         | | String, `KMP Algorithm`, Two Pointers
 3456 | [Find Special Substring of Length K](https://leetcode.com/problems/find-special-substring-of-length-k/) | [C++](./C++/find-special-substring-of-length-k.cpp) [Python](./Python/find-special-substring-of-length-k.py) | _O(n)_   | _O(1)_        | Easy         | | String
 3491 | [Phone Number Prefix](https://leetcode.com/problems/phone-number-prefix/) | [C++](./C++/phone-number-prefix.cpp) [Python](./Python/phone-number-prefix.py) | _O(l * nlogn)_   | _O(1)_        | Easy         | 🔒 | Trie, Sort
+3498 | [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/) | [C++](./C++/reverse-degree-of-a-string.cpp) [Python](./Python/reverse-degree-of-a-string.py) | _O(n)_   | _O(1)_        | Easy         | | String
 
 <br/>
 <div align="right">
@@ -1248,6 +1250,12 @@
 3473 | [Sum of K Subarrays With Length at Least M](https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/) | [C++](./C++/sum-of-k-subarrays-with-length-at-least-m.cpp) [Python](./Python/sum-of-k-subarrays-with-length-at-least-m.py) | _O(k * n)_ | _O(n)_ | Medium | | Prefix Sum, DP
 3489 | [Zero Array Transformation IV](https://leetcode.com/problems/zero-array-transformation-iv/) | [C++](./C++/zero-array-transformation-iv.cpp) [Python](./Python/zero-array-transformation-iv.py) | _O(n^2 * r * logq)_ | _O(r)_ | Medium | | Binary Search, DP
 3490 | [Count Beautiful Numbers](https://leetcode.com/problems/count-beautiful-numbers/) | [C++](./C++/count-beautiful-numbers.cpp) [Python](./Python/count-beautiful-numbers.py) | _O(logr * 2 * 10 * s)_ | _O(logr * 2 * 10 * s)_ | Hard | | DP
+3500 | [Minimum Cost to Divide Array Into Subarrays](https://leetcode.com/problems/minimum-cost-to-divide-array-into-subarrays/) | [C++](./C++/minimum-cost-to-divide-array-into-subarrays.cpp) [Python](./Python/minimum-cost-to-divide-array-into-subarrays.py) | _O(nlogn)_   | _O(n)_        | Hard         | | Prefix Sum, DP, Convex Hull Trick
+3503 | [Longest Palindrome After Substring Concatenation I](https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-i/) | [C++](./C++/longest-palindrome-after-substring-concatenation-i.cpp) [Python](./Python/longest-palindrome-after-substring-concatenation-i.py) | _O(n * m)_   | _O(n + m)_        | Medium         | | `Manacher's Algorithm`, DP
+3504 | [Longest Palindrome After Substring Concatenation II](https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/) | [C++](./C++/longest-palindrome-after-substring-concatenation-ii.cpp) [Python](./Python/longest-palindrome-after-substring-concatenation-ii.py) | _O(n * m)_   | _O(n + m)_        | Hard         | | `Manacher's Algorithm`, DP
+3505 | [Minimum Operations to Make Elements Within K Subarrays Equal](https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/) | [C++](./C++/minimum-operations-to-make-elements-within-k-subarrays-equal.cpp) [Python](./Python/minimum-operations-to-make-elements-within-k-subarrays-equal.py) | _O(nlogx + k * )_   | _O(n)_        | Hard         | | Two Heaps, Two BSTs, Two Sorted Lists, DP
+
+
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -1428,6 +1436,9 @@
 3494 | [Find the Minimum Amount of Time to Brew Potions](https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions/) | [C++](./C++/find-the-minimum-amount-of-time-to-brew-potions.cpp) [Python](./Python/find-the-minimum-amount-of-time-to-brew-potions.py) | _O(n * m)_   | _O(1)_        | Medium         | | Prefix Sum, Greedy
 3495 | [Minimum Operations to Make Array Elements Zero](https://leetcode.com/problems/minimum-operations-to-make-array-elements-zero/) | [C++](./C++/minimum-operations-to-make-array-elements-zero.cpp) [Python](./Python/minimum-operations-to-make-array-elements-zero.py) | _O(qlogr)_   | _O(1)_        | Hard         | | Greedy
 3496 | [Maximize Score After Pair Deletions](https://leetcode.com/problems/maximize-score-after-pair-deletions/) | [C++](./C++/maximize-score-after-pair-deletions.cpp) [Python](./Python/maximize-score-after-pair-deletions.py) | _O(n)_   | _O(1)_        | Medium         | 🔒 | Greedy
+3499 | [Maximize Active Section with Trade I](https://leetcode.com/problems/maximize-active-section-with-trade-i/) | [C++](./C++/maximize-active-section-with-trade-i.cpp) [Python](./Python/maximize-active-section-with-trade-i.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3501 | [Maximize Active Section with Trade II](https://leetcode.com/problems/maximize-active-section-with-trade-ii/) | [C++](./C++/maximize-active-section-with-trade-ii.cpp) [Python](./Python/maximize-active-section-with-trade-ii.py) | _O(nlogn + q)_   | _O(nlogn)_        | Hard         | | Greedy, Sparse Table
+3506 | [Find Time Required to Eliminate Bacterial Strains II](https://leetcode.com/problems/find-time-required-to-eliminate-bacterial-strains-ii/) | [C++](./C++/find-time-required-to-eliminate-bacterial-strains-ii.cpp) [Python](./Python/find-time-required-to-eliminate-bacterial-strains-ii.py) | _O(nlogn)_   | _O(1)_        | Hard         | 🔒 | Heap, Greedy
 
 <br/>
 <div align="right">
@@ -1812,6 +1823,7 @@
 3465 | [Find Products with Valid Serial Numbers](https://leetcode.com/problems/find-products-with-valid-serial-numbers/) | [MySQL](./MySQL/find-products-with-valid-serial-numbers.sql) | _O(nlogn)_ | _O(n)_       | Easy           || Regular Expression |
 3475 | [DNA Pattern Recognition](https://leetcode.com/problems/dna-pattern-recognition/) | [MySQL](./MySQL/dna-pattern-recognition.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Regular Expression |
 3482 | [Analyze Organization Hierarchy](https://leetcode.com/problems/analyze-organization-hierarchy/) | [MySQL](./MySQL/analyze-organization-hierarchy.sql) | _O(n^2)_ | _O(n^2)_       | Hard           || Recursive CTE, BFS |
+3497  | [Analyze Subscription Conversion](https://leetcode.com/problems/analyze-subscription-conversion/) | [MySQL](./MySQL/analyze-subscription-conversion.sql) | _O(nlogn)_ | _O(n)_       | Medium           |||
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
