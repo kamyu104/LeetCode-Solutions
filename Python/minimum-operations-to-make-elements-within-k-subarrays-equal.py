@@ -74,6 +74,7 @@ class Solution(object):
 # Time:  O(nlogn + k * n)
 # Space: O(n)
 import heapq
+import collections
 
 
 # two heaps, dp
@@ -88,26 +89,31 @@ class Solution2(object):
         class LazyHeap(object):
             def __init__(self, sign):
                 self.heap = []
-                self.to_del = []
+                self.to_del = collections.defaultdict(int)
+                self.cnt = 0
                 self.sign = sign
 
             def push(self, val):
                 heapq.heappush(self.heap, self.sign*val)
 
             def remove(self, val):
-                heapq.heappush(self.to_del, self.sign*val)
+                self.to_del[self.sign*val] += 1
+                self.cnt += 1
 
             def pop(self):
                 self.remove(self.top())
 
             def top(self):
-                while self.heap and self.to_del and self.heap[0] == self.to_del[0]:
+                while self.heap and self.heap[0] in self.to_del:
+                    self.to_del[self.heap[0]] -= 1
+                    self.cnt -= 1
+                    if self.to_del[self.heap[0]] == 0:
+                        del self.to_del[self.heap[0]]
                     heapq.heappop(self.heap)
-                    heapq.heappop(self.to_del)
                 return self.sign*self.heap[0]
 
             def __len__(self):
-                return len(self.heap)-len(self.to_del)
+                return len(self.heap)-self.cnt
 
 
         class TwoHeaps(object):
