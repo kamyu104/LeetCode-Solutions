@@ -100,11 +100,13 @@ private:
             if (left.size() < right.size()) {
                 total2 -= right.top();
                 total1 += right.top();
-                left.push(right.top()), right.pop();
+                left.push(right.top());
+                right.pop();
             } else if (left.size() > right.size() + 1) {
                 total1 -= left.top();
                 total2 += left.top();
-                right.push(left.top()), left.pop();
+                right.push(left.top());
+                left.pop();
             }
         }
 
