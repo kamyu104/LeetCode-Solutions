@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// convex hull trick
+// prefix sum, convex hull trick
 class Solution {
 public:
     long long minimumCost(vector<int>& nums, vector<int>& cost, int k) {
@@ -16,7 +16,7 @@ public:
         LineContainer lc;
         for (int i = size(nums) - 1; i >= 0; --i) {
             lc.add(prefix1[i + 1], -(dp[i + 1] + prefix1[i + 1] * prefix2[i + 1]));
-            dp[i] = -lc.query(prefix2[i]) + k * (prefix2.back() - prefix2[i]);
+            dp[i] = (-lc.query(prefix2[i])) + (k * (prefix2.back() - prefix2[i]));
         }
         return dp[0];
     }
