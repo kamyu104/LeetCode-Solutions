@@ -11,14 +11,13 @@ public:
             prefix1[i + 1] = prefix1[i] + nums[i];
             prefix2[i + 1] = prefix2[i] + cost[i];
         }
-        vector<int64_t> dp(size(nums) + 1, numeric_limits<int64_t>::max());
-        dp.back() = 0;
+        int64_t dp = 0;
         LineContainer lc;
         for (int i = size(nums) - 1; i >= 0; --i) {
-            lc.add(prefix1[i + 1], -(dp[i + 1] + prefix1[i + 1] * prefix2[i + 1]));
-            dp[i] = (-lc.query(prefix2[i])) + (k * (prefix2.back() - prefix2[i]));
+            lc.add(prefix1[i + 1], -(dp + prefix1[i + 1] * prefix2[i + 1]));
+            dp = (-lc.query(prefix2[i])) + (k * (prefix2.back() - prefix2[i]));
         }
-        return dp[0];
+        return dp;
     }
 
 private:
