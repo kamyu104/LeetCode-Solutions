@@ -9,7 +9,7 @@ public:
 
         TwoHeaps two_heaps;
         vector<int64_t> cost(size(nums) + 1, INF);
-        for (int i = 0; i < size(nums); i++) {
+        for (int i = 0; i < size(nums); ++i) {
             if (i - x >= 0) {
                 two_heaps.remove(nums[i - x]);
             }
@@ -129,7 +129,7 @@ public:
 
         TwoBSTs two_bsts;
         vector<int64_t> cost(size(nums) + 1, INF);
-        for (int i = 0; i < size(nums); i++) {
+        for (int i = 0; i < size(nums); ++i) {
             if (i - x >= 0) {
                 two_bsts.remove(nums[i - x]);
             }
