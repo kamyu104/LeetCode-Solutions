@@ -179,13 +179,12 @@ class Solution(object):
         prefix2 = [0]*(len(cost)+1)
         for i in xrange(len(nums)):
             prefix2[i+1] = prefix2[i]+cost[i]
-        dp = [float("inf")]*(len(nums)+1)
-        dp[-1] = 0
+        dp = 0
         lc = LineContainer()
         for i in reversed(xrange(len(nums))):
-            lc.add(prefix1[i+1], -(dp[i+1]+prefix1[i+1]*prefix2[i+1]))
-            dp[i] = (-lc.query(prefix2[i]))+(k*(prefix2[-1]-prefix2[i]))
-        return dp[0]
+            lc.add(prefix1[i+1], -(dp+prefix1[i+1]*prefix2[i+1]))
+            dp = (-lc.query(prefix2[i]))+(k*(prefix2[-1]-prefix2[i]))
+        return dp
 
 
 # Time:  O(n^2)
