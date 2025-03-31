@@ -164,7 +164,7 @@ class LineContainer(object):
         return str(self.__skiplist)
 
 
-# convex hull trick
+# prefix sum, dp, convex hull trick
 class Solution(object):
     def minimumCost(self, nums, cost, k):
         """
