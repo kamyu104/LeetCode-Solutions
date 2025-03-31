@@ -1,7 +1,7 @@
 # Time:  O(n^2)
 # Space: O(n)
 
-# dp
+# prefix sum, dp
 class Solution(object):
     def minimumCost(self, nums, cost, k):
         """
