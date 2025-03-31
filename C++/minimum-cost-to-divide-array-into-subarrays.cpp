@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// prefix sum, convex hull trick
+// prefix sum, dp, convex hull trick
 class Solution {
 public:
     long long minimumCost(vector<int>& nums, vector<int>& cost, int k) {
