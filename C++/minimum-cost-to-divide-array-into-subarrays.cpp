@@ -1,7 +1,7 @@
 // Time:  O(n^2)
 // Space: O(n)
 
-// dp
+// prefix sum, dp
 class Solution {
 public:
     long long minimumCost(vector<int>& nums, vector<int>& cost, int k) {
