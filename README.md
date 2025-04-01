@@ -1438,7 +1438,7 @@
 3496 | [Maximize Score After Pair Deletions](https://leetcode.com/problems/maximize-score-after-pair-deletions/) | [C++](./C++/maximize-score-after-pair-deletions.cpp) [Python](./Python/maximize-score-after-pair-deletions.py) | _O(n)_   | _O(1)_        | Medium         | 🔒 | Greedy
 3499 | [Maximize Active Section with Trade I](https://leetcode.com/problems/maximize-active-section-with-trade-i/) | [C++](./C++/maximize-active-section-with-trade-i.cpp) [Python](./Python/maximize-active-section-with-trade-i.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3501 | [Maximize Active Section with Trade II](https://leetcode.com/problems/maximize-active-section-with-trade-ii/) | [C++](./C++/maximize-active-section-with-trade-ii.cpp) [Python](./Python/maximize-active-section-with-trade-ii.py) | _O(nlogn + q)_   | _O(nlogn)_        | Hard         | | Greedy, RMQ, Sparse Table
-3506 | [Find Time Required to Eliminate Bacterial Strains II](https://leetcode.com/problems/find-time-required-to-eliminate-bacterial-strains-ii/) | [C++](./C++/find-time-required-to-eliminate-bacterial-strains-ii.cpp) [Python](./Python/find-time-required-to-eliminate-bacterial-strains-ii.py) | _O(nlogn)_   | _O(1)_        | Hard         | 🔒 | Heap, Greedy
+3506 | [Find Time Required to Eliminate Bacterial Strains](https://leetcode.com/problems/find-time-required-to-eliminate-bacterial-strains/) | [C++](./C++/find-time-required-to-eliminate-bacterial-strains.cpp) [Python](./Python/find-time-required-to-eliminate-bacterial-strains.py) | _O(nlogn)_   | _O(1)_        | Hard         | 🔒 | Heap, Greedy
 
 <br/>
 <div align="right">
