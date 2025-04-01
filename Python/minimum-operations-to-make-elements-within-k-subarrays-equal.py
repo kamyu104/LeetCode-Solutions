@@ -71,7 +71,7 @@ class Solution(object):
         return dp[-1]
 
 
-# Time:  O(nlogn + k * n)
+# Time:  O(nlogx + k * n)
 # Space: O(n)
 import heapq
 import collections
@@ -89,26 +89,41 @@ class Solution2(object):
         class LazyHeap(object):
             def __init__(self, sign):
                 self.heap = []
-                self.to_del = collections.defaultdict(int)
+                self.to_remove = collections.defaultdict(int)
                 self.cnt = 0
                 self.sign = sign
 
             def push(self, val):
                 heapq.heappush(self.heap, self.sign*val)
 
+            def full_remove(self):
+                result = []
+                for x in self.heap:
+                    if x not in self.to_remove:
+                        result.append(x)
+                        continue
+                    self.to_remove[x] -= 1
+                    if not self.to_remove[x]:
+                        del self.to_remove[x]
+                self.heap[:] = result
+                heapq.heapify(self.heap)
+    
             def remove(self, val):
-                self.to_del[self.sign*val] += 1
+                self.to_remove[self.sign*val] += 1
                 self.cnt += 1
+                if self.cnt > len(self.heap)-self.cnt:
+                    self.full_remove()
+                    self.cnt = 0
 
             def pop(self):
                 self.remove(self.top())
 
             def top(self):
-                while self.heap and self.heap[0] in self.to_del:
-                    self.to_del[self.heap[0]] -= 1
+                while self.heap and self.heap[0] in self.to_remove:
+                    self.to_remove[self.heap[0]] -= 1
                     self.cnt -= 1
-                    if self.to_del[self.heap[0]] == 0:
-                        del self.to_del[self.heap[0]]
+                    if self.to_remove[self.heap[0]] == 0:
+                        del self.to_remove[self.heap[0]]
                     heapq.heappop(self.heap)
                 return self.sign*self.heap[0]
 
