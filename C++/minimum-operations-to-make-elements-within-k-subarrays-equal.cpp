@@ -130,13 +130,12 @@ private:
         void full_remove() {
             priority_queue<int, vector<int>, T> new_heap;
             while (!heap.empty()) {
-                const auto x = heap.top();
+                const auto x = heap.top(); heap.pop();
                 if (!to_remove.empty() && x == to_remove.top()) {
                     to_remove.pop();
                 } else {
                     new_heap.emplace(x);
                 }
-                heap.pop();
             }
             heap = move(new_heap);
         }
