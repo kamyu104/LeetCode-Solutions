@@ -7,15 +7,15 @@ public:
     long long minOperations(vector<int>& nums, int x, int k) {
         static const int64_t INF = numeric_limits<int64_t>::max();
 
-        TwoBSTs two_bsts;
+        Slidingsw sw;
         vector<int64_t> cost(size(nums) + 1, INF);
         for (int i = 0; i < size(nums); ++i) {
             if (i - x >= 0) {
-                two_bsts.remove(nums[i - x]);
+                sw.remove(nums[i - x]);
             }
-            two_bsts.add(nums[i]);
+            sw.add(nums[i]);
             if (i >= x - 1) {
-                cost[i + 1] = (two_bsts.median() * size(two_bsts.left) - two_bsts.total1) + (two_bsts.total2 - two_bsts.median() * size(two_bsts.right));
+                cost[i + 1] = (sw.median() * size(sw.left) - sw.total1) + (sw.total2 - sw.median() * size(sw.right));
             }
         }
         vector<int64_t> dp(size(nums) + 1);
@@ -32,8 +32,8 @@ public:
     }
 
 private:
-    struct TwoBSTs {
-        TwoBSTs() {
+    struct Slidingsw {
+        Slidingsw() {
 
         }
 
@@ -92,15 +92,15 @@ public:
     long long minOperations(vector<int>& nums, int x, int k) {
         static const int64_t INF = numeric_limits<int64_t>::max();
 
-        TwoHeaps two_heaps;
+        Slidingsw sw;
         vector<int64_t> cost(size(nums) + 1, INF);
         for (int i = 0; i < size(nums); ++i) {
             if (i - x >= 0) {
-                two_heaps.remove(nums[i - x]);
+                sw.remove(nums[i - x]);
             }
-            two_heaps.add(nums[i]);
+            sw.add(nums[i]);
             if (i >= x - 1) {
-                cost[i + 1] = (two_heaps.median() * two_heaps.left.size() - two_heaps.total1) + (two_heaps.total2 - two_heaps.median() * two_heaps.right.size());
+                cost[i + 1] = (sw.median() * sw.left.size() - sw.total1) + (sw.total2 - sw.median() * sw.right.size());
             }
         }
         vector<int64_t> dp(size(nums) + 1);
@@ -170,8 +170,8 @@ private:
         priority_queue<int, vector<int>, T> heap, to_remove;
     };
 
-    struct TwoHeaps {
-        TwoHeaps() {
+    struct Slidingsw {
+        Slidingsw() {
 
         }
 
