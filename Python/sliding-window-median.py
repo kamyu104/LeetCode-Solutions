@@ -50,7 +50,7 @@ class Solution2(object):
                 if not to_remove[sign*x]:
                     del to_remove[sign*x]
             heap[:] = result
-            heapify(heap)
+            heapq.heapify(heap)
 
         min_heap, max_heap = [], []
         for i in xrange(k):
