@@ -13,7 +13,7 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        class TwoSortedLists(object):
+        class SlidingWindow(object):
             def __init__(self):
                 self.left = SortedList()
                 self.right = SortedList()
@@ -54,14 +54,14 @@ class Solution(object):
 
 
         INF = float("inf")
-        two_sls = TwoSortedLists()
+        sw = SlidingWindow()
         cost = [INF]*(len(nums)+1)
         for i in xrange(len(nums)):
             if i-x >= 0:
-                two_sls.remove(nums[i-x])
-            two_sls.add(nums[i])
+                sw.remove(nums[i-x])
+            sw.add(nums[i])
             if i >= x-1:
-                cost[i+1] = (two_sls.median()*len(two_sls.left)-two_sls.total1) + (two_sls.total2-two_sls.median()*len(two_sls.right))
+                cost[i+1] = (sw.median()*len(sw.left)-sw.total1) + (sw.total2-sw.median()*len(sw.right))
         dp = [0]*(len(nums)+1)
         for i in xrange(k):
             new_dp = [INF]*(len(nums)+1)
@@ -131,7 +131,7 @@ class Solution2(object):
                 return len(self.heap)-self.cnt
 
 
-        class TwoHeaps(object):
+        class SlidingWindow(object):
             def __init__(self):
                 self.left = LazyHeap(-1)   # max heap
                 self.right = LazyHeap(+1)  # min heap
@@ -172,14 +172,14 @@ class Solution2(object):
 
 
         INF = float("inf")
-        two_heaps = TwoHeaps()
+        sw = SlidingWindow()
         cost = [INF]*(len(nums)+1)
         for i in xrange(len(nums)):
             if i-x >= 0:
-                two_heaps.remove(nums[i-x])
-            two_heaps.add(nums[i])
+                sw.remove(nums[i-x])
+            sw.add(nums[i])
             if i >= x-1:
-                cost[i+1] = (two_heaps.median()*len(two_heaps.left)-two_heaps.total1) + (two_heaps.total2-two_heaps.median()*len(two_heaps.right))
+                cost[i+1] = (sw.median()*len(sw.left)-sw.total1) + (sw.total2-sw.median()*len(sw.right))
         dp = [0]*(len(nums)+1)
         for i in xrange(k):
             new_dp = [INF]*(len(nums)+1)
