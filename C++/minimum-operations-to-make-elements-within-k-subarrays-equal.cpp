@@ -84,7 +84,7 @@ private:
     };
 };
 
-// Time:  O(nlogn + k * n)
+// Time:  O(nlogx + k * n)
 // Space: O(n)
 // two heaps, dp
 class Solution2 {
@@ -127,8 +127,25 @@ private:
             heap.emplace(val);
         }
 
+        void full_remove() {
+            priority_queue<int, vector<int>, T> new_heap;
+            while (!heap.empty()) {
+                const auto x = heap.top();
+                if (!to_remove.empty() && x == to_remove.top()) {
+                    to_remove.pop();
+                } else {
+                    new_heap.emplace(x);
+                }
+                heap.pop();
+            }
+            heap = move(new_heap);
+        }
+
         void remove(int val) {
-            to_del.emplace(val);
+            to_remove.emplace(val);
+            if (to_remove.size() > heap.size() - to_remove.size()) {
+                full_remove();
+            }
         }
 
         void pop() {
@@ -136,22 +153,22 @@ private:
         }
 
         int top() {
-            while (!heap.empty() && !to_del.empty() && heap.top() == to_del.top()) {
+            while (!heap.empty() && !to_remove.empty() && heap.top() == to_remove.top()) {
                 heap.pop();
-                to_del.pop();
+                to_remove.pop();
             }
             return heap.top();
         }
 
         int64_t size() {
-            return heap.size() - to_del.size();
+            return heap.size() - to_remove.size();
         }
 
         bool empty() {
             return size() == 0;
         }
 
-        priority_queue<int, vector<int>, T> heap, to_del;
+        priority_queue<int, vector<int>, T> heap, to_remove;
     };
 
     struct TwoHeaps {
