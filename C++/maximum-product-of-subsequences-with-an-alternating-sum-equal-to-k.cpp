@@ -30,7 +30,6 @@ public:
             }
             dp = move(new_dp);
         }
-
         int result = -1;
         for (const auto& [p, total_products] : dp) {
             for (const auto& [total, products] : total_products) {
