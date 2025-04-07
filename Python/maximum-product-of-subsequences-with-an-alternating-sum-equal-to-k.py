@@ -25,7 +25,6 @@ class Solution(object):
                 for v in products:
                     new_dp[new_state].add(min(v*x, limit+1))
             dp = new_dp
-
         result = -1
         for (p, total), products in dp.iteritems():
             if total != k:
