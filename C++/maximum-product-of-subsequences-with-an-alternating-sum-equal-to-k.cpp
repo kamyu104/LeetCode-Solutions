@@ -5,6 +5,10 @@
 class Solution {
 public:
     int maxProduct(vector<int>& nums, int k, int limit) {
+        const int total = accumulate(cbegin(nums), cend(nums), 0);
+        if (k > total || k < -total) {  // optimized to speed up
+            return -1;
+        }
         unordered_map<int, unordered_map<int, unordered_set<int>>> dp;
         for (const auto& x : nums) {
             unordered_map<int, unordered_map<int, unordered_set<int>>> new_dp;
