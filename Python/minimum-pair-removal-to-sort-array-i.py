@@ -1,6 +1,9 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
+from sortedcontainers import SortedList
+
+
 # simulation, doubly linked list, sorted list
 class Solution(object):
     def minimumPairRemoval(self, nums):
@@ -37,4 +40,3 @@ class Solution(object):
             add(i)
             result += 1
         return result
-
