@@ -13,6 +13,9 @@ class Solution(object):
         :type limit: int
         :rtype: int
         """
+        total = sum(nums)
+        if k > total or k < -total:  # optimized to speed up
+            return -1
         dp = collections.defaultdict(set)
         for x in nums:
             new_dp = collections.defaultdict(set, {k:set(v) for k, v in dp.iteritems()})
