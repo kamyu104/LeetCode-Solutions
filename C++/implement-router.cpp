@@ -8,7 +8,7 @@
 #include <ext/pb_ds/tree_policy.hpp>
 using namespace __gnu_pbds;
 
-// ordered set
+// queue, ordered set
 class Router {
 public:
     Router(int memoryLimit) : size_(memoryLimit) {
