@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3506%20%2F%203506-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3510%20%2F%203510-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1254,6 +1254,7 @@
 3503 | [Longest Palindrome After Substring Concatenation I](https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-i/) | [C++](./C++/longest-palindrome-after-substring-concatenation-i.cpp) [Python](./Python/longest-palindrome-after-substring-concatenation-i.py) | _O(n * m)_   | _O(n + m)_        | Medium         | | `Manacher's Algorithm`, DP
 3504 | [Longest Palindrome After Substring Concatenation II](https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/) | [C++](./C++/longest-palindrome-after-substring-concatenation-ii.cpp) [Python](./Python/longest-palindrome-after-substring-concatenation-ii.py) | _O(n * m)_   | _O(n + m)_        | Hard         | | `Manacher's Algorithm`, DP
 3505 | [Minimum Operations to Make Elements Within K Subarrays Equal](https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/) | [C++](./C++/minimum-operations-to-make-elements-within-k-subarrays-equal.cpp) [Python](./Python/minimum-operations-to-make-elements-within-k-subarrays-equal.py) | _O(nlogx + k * n)_   | _O(n)_        | Hard         | | Two Heaps, Two BSTs, Two Sorted Lists, DP
+3509 | [Maximum Product of Subsequences With an Alternating Sum Equal to K](https://leetcode.com/problems/maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k/) | [C++](./C++/maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k.cpp) [Python](./Python/maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k.py) | _O(n * k * l)_   | _O(n * k * l)_        | Hard         | | DP
 
 
 <br/>
@@ -1540,6 +1541,8 @@
 3248 | [Snake in Matrix](https://leetcode.com/problems/snake-in-matrix/) | [C++](./C++/snake-in-matrix.cpp) [Python](./Python/snake-in-matrix.py) | _O(c)_ | _O(1)_ | Medium | | Simulation
 3412 | [Find Mirror Score of a String](https://leetcode.com/problems/find-mirror-score-of-a-string/) | [C++](./C++/find-mirror-score-of-a-string.cpp) [Python](./Python/find-mirror-score-of-a-string.py) | _O(n + 26)_ | _O(n + 26)_ | Medium | | Simulation, Hash Table, Stack
 3433 | [Count Mentions Per User](https://leetcode.com/problems/count-mentions-per-user/) | [C++](./C++/count-mentions-per-user.cpp) [Python](./Python/count-mentions-per-user.py) | _O(eloge + e * n)_ | _O(e + n)_ | Medium | | Simulation
+3507 | [Minimum Pair Removal to Sort Array I](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/) | [C++](./C++/minimum-pair-removal-to-sort-array-i.cpp) [Python](./Python/minimum-pair-removal-to-sort-array-i.py) | _O(nlogn)_ | _O(n)_ | Easy | | Simulation, Doubly Linked List, Sorted List, BST
+3510 | [Minimum Pair Removal to Sort Array II](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/) | [C++](./C++/minimum-pair-removal-to-sort-array-ii.cpp) [Python](./Python/minimum-pair-removal-to-sort-array-ii.py) | _O(nlogn)_ | _O(n)_ | Easy | | Simulation, Doubly Linked List, Sorted List, BST
 
 <br/>
 <div align="right">
@@ -1610,6 +1613,7 @@
 3391 | [Design a 3D Binary Matrix with Efficient Layer Tracking](https://leetcode.com/problems/design-a-3d-binary-matrix-with-efficient-layer-tracking/) | [C++](./C++/design-a-3d-binary-matrix-with-efficient-layer-tracking.cpp) [Python](./Python/design-a-3d-binary-matrix-with-efficient-layer-tracking.py) | ctor: _O(1)_<br>setCell: _O(logn)_<br>unsetCell: _O(logn)_<br>largestMatrix: _O(logn)_ | _O(n^3)_ | Medium | 🔒 | Heap, Sorted List
 3408 | [Design Task Manager](https://leetcode.com/problems/design-task-manager/) | [C++](./C++/design-task-manager.cpp) [Python](./Python/design-task-manager.py) | ctor: _O(tlogt)_<br>add: _O(logt)_<br>edit: _O(logt)_<br>rmv: _O(logt)_<br>execTop: _O(logt)_ | _O(t)_ | Medium | | Sorted List
 3484 | [Design Spreadsheet](https://leetcode.com/problems/design-spreadsheet/) | [C++](./C++/design-spreadsheet.cpp) [Python](./Python/design-spreadsheet.py) | ctor: _O(1)_<br>setCell: _O(1)_<br>resetCell: _O(1)_<br>getValue: _O(1)_ | _O(n)_ | Medium | | Hash Table
+3508 | [Implement Router](https://leetcode.com/problems/implement-router/) | [C++](./C++/implement-router.cpp) [Python](./Python/implement-router.py) | ctor: _O(1)_<br>addPacket: _O(logn)_<br>forwardPacket: _O(logn)_<br>getCount: _O(logn)_ | _O(n)_ | Medium | | Queue, Sorted List, Ordered Set
 
 <br/>
 <div align="right">
