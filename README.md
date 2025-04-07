@@ -1542,7 +1542,7 @@
 3412 | [Find Mirror Score of a String](https://leetcode.com/problems/find-mirror-score-of-a-string/) | [C++](./C++/find-mirror-score-of-a-string.cpp) [Python](./Python/find-mirror-score-of-a-string.py) | _O(n + 26)_ | _O(n + 26)_ | Medium | | Simulation, Hash Table, Stack
 3433 | [Count Mentions Per User](https://leetcode.com/problems/count-mentions-per-user/) | [C++](./C++/count-mentions-per-user.cpp) [Python](./Python/count-mentions-per-user.py) | _O(eloge + e * n)_ | _O(e + n)_ | Medium | | Simulation
 3507 | [Minimum Pair Removal to Sort Array I](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/) | [C++](./C++/minimum-pair-removal-to-sort-array-i.cpp) [Python](./Python/minimum-pair-removal-to-sort-array-i.py) | _O(nlogn)_ | _O(n)_ | Easy | | Simulation, Doubly Linked List, Sorted List, BST
-3510 | [Minimum Pair Removal to Sort Array II](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/) | [C++](./C++/minimum-pair-removal-to-sort-array-ii.cpp) [Python](./Python/minimum-pair-removal-to-sort-array-ii.py) | _O(nlogn)_ | _O(n)_ | Easy | | Simulation, Doubly Linked List, Sorted List, BST
+3510 | [Minimum Pair Removal to Sort Array II](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/) | [C++](./C++/minimum-pair-removal-to-sort-array-ii.cpp) [Python](./Python/minimum-pair-removal-to-sort-array-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Simulation, Doubly Linked List, Sorted List, BST
 
 <br/>
 <div align="right">
