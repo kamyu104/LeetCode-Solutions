@@ -1,7 +1,7 @@
 // Time:  O(logn)
 // Space: O(1)
 
-// bit manipulation
+// bit manipulation, math
 class Solution {
 public:
     int uniqueXorTriplets(vector<int>& nums) {
