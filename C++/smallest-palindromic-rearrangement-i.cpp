@@ -1,7 +1,7 @@
 // Time:  O(n + 26)
 // Space: O(26)
 
-// counting sort, greedy
+// freq table, counting sort, greedy
 class Solution {
 public:
     string smallestPalindrome(string s) {
