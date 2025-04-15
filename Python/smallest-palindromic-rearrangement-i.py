@@ -1,5 +1,5 @@
-# Time:  O(n)
-# Space: O(1)
+# Time:  O(n + 26)
+# Space: O(26)
 
 # counting sort, greedy
 class Solution(object):
@@ -9,9 +9,9 @@ class Solution(object):
         :rtype: str
         """
         cnt = [0]*26
-        for x in s:
-            cnt[ord(x)-ord('a')] += 1
-        result = [chr(ord('a')+i)*(c//2) for i, c in enumerate(cnt) if c//2]
+        for i in xrange(len(s)//2):
+            cnt[ord(s[i])-ord('a')] += 1
+        result = [chr(ord('a')+i)*c for i, c in enumerate(cnt)]
         if len(s)%2:
             result.append(s[len(s)//2])
         result.extend((result[i] for i in reversed(xrange(len(result)-len(s)%2))))
