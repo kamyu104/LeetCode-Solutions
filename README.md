@@ -100,7 +100,6 @@
 3315 | [Construct the Minimum Bitwise Array II](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [C++](./C++/construct-the-minimum-bitwise-array-ii.cpp) [Python](./Python/construct-the-minimum-bitwise-array-ii.py) | _O(n)_ | _O(1)_ | Medium | | Bit Manipulation
 3344 | [Maximum Sized Array](https://leetcode.com/problems/maximum-sized-array/) | [C++](./C++/maximum-sized-array.cpp) [Python](./Python/maximum-sized-array.py) | precompute: O(max_s^(1/5) * log(max_s))<br>runtime: O(log(max_s)) | _O(max_s^(1/5))_ | Medium | 🔒 | Precompute, Bitmasks, Combinatorics, Binary Search
 3370 | [Smallest Number With All Set Bits](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | [C++](./C++/smallest-number-with-all-set-bits.cpp) [Python](./Python/smallest-number-with-all-set-bits.py) | _O(1)_ | _O(1)_ | Easy | | Bit Manipulation
-3513 | [Number of Unique XOR Triplets I](https://leetcode.com/problems/number-of-unique-xor-triplets-i/) | [C++](./C++/number-of-unique-xor-triplets-i.cpp) [Python](./Python/number-of-unique-xor-triplets-i.py) | _O(logn)_ | _O(1)_ | Medium | | Bit Manipulation
 
 <br/>
 <div align="right">
@@ -739,6 +738,7 @@
 3483 | [Unique 3-Digit Even Numbers](https://leetcode.com/problems/unique-3-digit-even-numbers/) | [C++](./C++/unique-3-digit-even-numbers.cpp) [Python](./Python/unique-3-digit-even-numbers.py) | _O(n)_ | _O(1)_ | Easy | | Freq Table, Combinatorics |
 3492 | [Maximum Containers on a Ship](https://leetcode.com/problems/maximum-containers-on-a-ship/) | [C++](./C++/maximum-containers-on-a-ship.cpp) [Python](./Python/maximum-containers-on-a-ship.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 3512 | [Minimum Operations to Make Array Sum Divisible by K](https://leetcode.com/problems/minimum-operations-to-make-array-sum-divisible-by-k/) | [C++](./C++/minimum-operations-to-make-array-sum-divisible-by-k.cpp) [Python](./Python/minimum-operations-to-make-array-sum-divisible-by-k.py) | _O(n)_ | _O(1)_ | Easy | | Math |
+3513 | [Number of Unique XOR Triplets I](https://leetcode.com/problems/number-of-unique-xor-triplets-i/) | [C++](./C++/number-of-unique-xor-triplets-i.cpp) [Python](./Python/number-of-unique-xor-triplets-i.py) | _O(logn)_ | _O(1)_ | Medium | | Bit Manipulation, Math
 3516 | [Find Closest Person](https://leetcode.com/problems/find-closest-person/) | [C++](./C++/find-closest-person.cpp) [Python](./Python/find-closest-person.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 3519 | [Count Numbers with Non-Decreasing Digits](https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/) | [C++](./C++/count-numbers-with-non-decreasing-digits.cpp) [Python](./Python/count-numbers-with-non-decreasing-digits.py) | _O(n^2)_ | _O(n)_ | Hard | | Math, Stars and Bars, Combinatorics |
 
