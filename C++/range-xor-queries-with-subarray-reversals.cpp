@@ -70,7 +70,7 @@ void reverse(pTreapNode t, int l, int r) {
     merge(t, t, t3);
 }
 
-void heapify (pTreapNode t) {
+void heapify(pTreapNode t) {
     if (!t) return;
     pTreapNode max = t;
     if (t->l != NULL && t->l->prior > max->prior)
