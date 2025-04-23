@@ -96,8 +96,8 @@ class Solution_TLE(object):
         def query(root, left, right):
             t1, t2 = split(root, left)
             t2, t3 = split(t2, right - left + 1)
-            result_xor = xor_sum(t2)
-            return merge(merge(t1, t2), t3), result_xor
+            result = xor_sum(t2)
+            return merge(merge(t1, t2), t3), result
 
         result = []
         root = build()
