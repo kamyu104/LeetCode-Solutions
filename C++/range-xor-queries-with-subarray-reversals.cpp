@@ -101,8 +101,8 @@ public:
             return result;
         };
 
-        build();
         vector<int> result;
+        build();
         for (const auto& q : queries) {
             if (q[0] == 1) {
                 update(q[1], q[2]);
