@@ -4,7 +4,7 @@
 // template from: https://cp-algorithms.com/data_structures/treap.html
 using pTreapNode = struct TreapNode *;
 
-struct TreapNode  {
+struct TreapNode {
     int prior, value, cnt;
     int xor_sum;  // added
     bool rev;
@@ -37,7 +37,7 @@ void push(pTreapNode t) {
     }
 }
 
-void merge(pTreapNode & t, pTreapNode l, pTreapNode r) {
+void merge(pTreapNode& t, pTreapNode l, pTreapNode r) {
     push(l);
     push(r);
     if (!l || !r)
@@ -49,7 +49,7 @@ void merge(pTreapNode & t, pTreapNode l, pTreapNode r) {
     upd_cnt(t);
 }
 
-void split(pTreapNode t, pTreapNode & l, pTreapNode & r, int key, int add = 0) {
+void split(pTreapNode t, pTreapNode& l, pTreapNode& r, int key, int add = 0) {
     if (!t)
         return void(l = r = 0);
     push(t);
