@@ -1,0 +1,112 @@
+# Time:  O(nlogn + qlogn)
+# Space: O(n)
+
+import random
+
+
+# template from: https://cp-algorithms.com/data_structures/treap.html
+class TreapNode(object):
+    def __init__(self, value):
+        self.value = value
+        self.prior = random.randint(1, 1 << 30)
+        self.cnt = 1
+        self.xor_sum = value
+        self.rev = False
+        self.l = None
+        self.r = None
+
+def cnt(it):
+    return it.cnt if it else 0
+
+def xor_sum(it):
+    return it.xor_sum if it else 0
+
+def upd_cnt(it):
+    if it:
+        it.cnt = 1 + cnt(it.l) + cnt(it.r)
+        it.xor_sum = it.value ^ xor_sum(it.l) ^ xor_sum(it.r)
+
+def push(it):
+    if it and it.rev:
+        it.rev = False
+        it.l, it.r = it.r, it.l
+        if it.l:
+            it.l.rev ^= True
+        if it.r:
+            it.r.rev ^= True
+
+def merge(l, r):
+    push(l)
+    push(r)
+    if not l or not r:
+        return l or r
+    if l.prior > r.prior:
+        l.r = merge(l.r, r)
+        upd_cnt(l)
+        return l
+    else:
+        r.l = merge(l, r.l)
+        upd_cnt(r)
+        return r
+
+def split(t, key, add=0):
+    if not t:
+        return (None, None)
+    push(t)
+    cur_key = add + cnt(t.l)
+    if key <= cur_key:
+        l, t.l = split(t.l, key, add)
+        upd_cnt(t)
+        return (l, t)
+    else:
+        t.r, r = split(t.r, key, add + 1 + cnt(t.l))
+        upd_cnt(t)
+        return (t, r)
+
+def treap_reverse(t, l, r):
+    t1, t2 = split(t, l)
+    t2, t3 = split(t2, r - l + 1)
+    if t2:
+        t2.rev ^= True
+    return merge(merge(t1, t2), t3)
+
+
+# treap
+class Solution_TLE(object):
+    def getResults(self, nums, queries):
+        """
+        :type nums: List[int]
+        :type queries: List[List[int]]
+        :rtype: List[int]
+        """
+        result = []
+        def build():
+            root = None
+            for x in nums:
+                root = merge(root, TreapNode(x))
+            return root
+
+        def update(root, index, value):
+            left, mid = split(root, index)
+            mid, right = split(mid, 1)
+            if mid:
+                mid.value = value
+                upd_cnt(mid)
+            return merge(merge(left, mid), right)
+
+        def range_xor(root, left, right):
+            t1, t2 = split(root, left)
+            t2, t3 = split(t2, right - left + 1)
+            result_xor = xor_sum(t2)
+            return merge(merge(t1, t2), t3), result_xor
+
+        root = build()
+        for q in queries:
+            if q[0] == 1:
+                root = update(root, q[1], q[2])
+            elif q[0] == 2:
+                root, x = range_xor(root, q[1], q[2])
+                result.append(x)
+            elif q[0] == 3:
+                root = treap_reverse(root, q[1], q[2])
+        return result
