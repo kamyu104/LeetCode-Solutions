@@ -63,7 +63,7 @@ def split(t, key, add=0):
         upd_cnt(t)
         return (t, r)
 
-def treap_reverse(t, l, r):
+def reverse(t, l, r):
     t1, t2 = split(t, l)
     t2, t3 = split(t2, r - l + 1)
     if t2:
@@ -79,7 +79,6 @@ class Solution_TLE(object):
         :type queries: List[List[int]]
         :rtype: List[int]
         """
-        result = []
         def build():
             root = None
             for x in nums:
@@ -100,6 +99,7 @@ class Solution_TLE(object):
             result_xor = xor_sum(t2)
             return merge(merge(t1, t2), t3), result_xor
 
+        result = []
         root = build()
         for q in queries:
             if q[0] == 1:
@@ -108,5 +108,5 @@ class Solution_TLE(object):
                 root, x = query(root, q[1], q[2])
                 result.append(x)
             elif q[0] == 3:
-                root = treap_reverse(root, q[1], q[2])
+                root = reverse(root, q[1], q[2])
         return result
