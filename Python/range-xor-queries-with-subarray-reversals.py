@@ -1,4 +1,4 @@
-# Time:  O(nlogn + qlogn)
+# Time:  O(n + qlogn)
 # Space: O(n)
 
 import random
@@ -70,30 +70,29 @@ def reverse(t, l, r):
         t2.rev ^= True
     return merge(merge(t1, t2), t3)
 
-def heapify(t) {
+def heapify(t):
     if not t:
         return
-    pTreapNode max = t;
-    if (t->l != NULL && t->l->prior > max->prior)
-        max = t->l;
-    if (t->r != NULL && t->r->prior > max->prior)
-        max = t->r;
-    if (max != t) {
-        swap(t->prior, max->prior);
-        heapify(max);
-    }
-}
+    mx = t
+    if t.l and t.l.prior > mx.prior:
+        mx = t.l
+    if t.r and t.r.prior > mx.prior:
+        mx = t.r
+    if mx != t:
+        t.prior, mx.prior = mx.prior, t.prior
+        heapify(mx)
 
-pTreapNode build(const vector<int>& a, int i, int n) {
-    if (n == 0) return NULL;
-    int mid = n / 2;
-    auto t = new TreapNode(a[i + mid]);
-    t->l = build (a, i, mid);
-    t->r = build (a, i + mid + 1, n - mid - 1);
-    heapify(t);
-    upd_cnt(t);
-    return t;
-}
+def build(a, i, n):
+    if not n:
+        return None
+    mid = n // 2
+    t = TreapNode(a[i + mid])
+    t.l = build(a, i, mid)
+    t.r = build(a, i + mid + 1, n - mid - 1)
+    heapify(t)
+    upd_cnt(t)
+    return t
+
 # treap
 class Solution_TLE(object):
     def getResults(self, nums, queries):
@@ -102,12 +101,6 @@ class Solution_TLE(object):
         :type queries: List[List[int]]
         :rtype: List[int]
         """
-        def build():
-            root = None
-            for x in nums:
-                root = merge(root, TreapNode(x))
-            return root
-
         def update(root, index, value):
             left, mid = split(root, index)
             mid, right = split(mid, 1)
@@ -123,7 +116,7 @@ class Solution_TLE(object):
             return merge(merge(t1, t2), t3), result
 
         result = []
-        root = build()
+        root = build(nums, 0, len(nums))
         for q in queries:
             if q[0] == 1:
                 root = update(root, q[1], q[2])
