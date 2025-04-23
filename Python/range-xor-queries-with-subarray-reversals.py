@@ -70,7 +70,30 @@ def reverse(t, l, r):
         t2.rev ^= True
     return merge(merge(t1, t2), t3)
 
+def heapify(t) {
+    if not t:
+        return
+    pTreapNode max = t;
+    if (t->l != NULL && t->l->prior > max->prior)
+        max = t->l;
+    if (t->r != NULL && t->r->prior > max->prior)
+        max = t->r;
+    if (max != t) {
+        swap(t->prior, max->prior);
+        heapify(max);
+    }
+}
 
+pTreapNode build(const vector<int>& a, int i, int n) {
+    if (n == 0) return NULL;
+    int mid = n / 2;
+    auto t = new TreapNode(a[i + mid]);
+    t->l = build (a, i, mid);
+    t->r = build (a, i + mid + 1, n - mid - 1);
+    heapify(t);
+    upd_cnt(t);
+    return t;
+}
 # treap
 class Solution_TLE(object):
     def getResults(self, nums, queries):
