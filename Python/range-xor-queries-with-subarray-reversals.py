@@ -15,25 +15,25 @@ class TreapNode(object):
         self.l = None
         self.r = None
 
-def cnt(it):
-    return it.cnt if it else 0
+def cnt(t):
+    return t.cnt if t else 0
 
-def xor_sum(it):
-    return it.xor_sum if it else 0
+def xor_sum(t):
+    return t.xor_sum if t else 0
 
-def upd_cnt(it):
-    if it:
-        it.cnt = 1 + cnt(it.l) + cnt(it.r)
-        it.xor_sum = it.value ^ xor_sum(it.l) ^ xor_sum(it.r)
+def upd_cnt(t):
+    if t:
+        t.cnt = 1 + cnt(t.l) + cnt(t.r)
+        t.xor_sum = t.value ^ xor_sum(t.l) ^ xor_sum(t.r)
 
-def push(it):
-    if it and it.rev:
-        it.rev = False
-        it.l, it.r = it.r, it.l
-        if it.l:
-            it.l.rev ^= True
-        if it.r:
-            it.r.rev ^= True
+def push(t):
+    if t and t.rev:
+        t.rev = False
+        t.l, t.r = t.r, t.l
+        if t.l:
+            t.l.rev ^= True
+        if t.r:
+            t.r.rev ^= True
 
 def merge(l, r):
     push(l)
@@ -94,7 +94,7 @@ class Solution_TLE(object):
                 upd_cnt(mid)
             return merge(merge(left, mid), right)
 
-        def range_xor(root, left, right):
+        def query(root, left, right):
             t1, t2 = split(root, left)
             t2, t3 = split(t2, right - left + 1)
             result_xor = xor_sum(t2)
@@ -105,7 +105,7 @@ class Solution_TLE(object):
             if q[0] == 1:
                 root = update(root, q[1], q[2])
             elif q[0] == 2:
-                root, x = range_xor(root, q[1], q[2])
+                root, x = query(root, q[1], q[2])
                 result.append(x)
             elif q[0] == 3:
                 root = treap_reverse(root, q[1], q[2])
