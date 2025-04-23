@@ -104,9 +104,8 @@ class Solution_TLE(object):
         def update(root, index, value):
             left, mid = split(root, index)
             mid, right = split(mid, 1)
-            if mid:
-                mid.value = value
-                upd_cnt(mid)
+            mid.value = value
+            upd_cnt(mid)
             return merge(merge(left, mid), right)
 
         def query(root, left, right):
