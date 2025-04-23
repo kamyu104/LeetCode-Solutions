@@ -29,7 +29,7 @@ public:
                 return x;
             }
             vector<int> cnt(x);
-            for (int i = 0; i + 1 < size(y); ++i) {
+            for (int i = 0; i < k; ++i) {
                 cnt[x.back() * i % k] += y[i];
             }
             cnt.back() = x.back() * y.back() % k;
