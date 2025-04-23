@@ -73,9 +73,9 @@ void reverse(pTreapNode t, int l, int r) {
 void heapify(pTreapNode t) {
     if (!t) return;
     pTreapNode max = t;
-    if (t->l != NULL && t->l->prior > max->prior)
+    if (t->l && t->l->prior > max->prior)
         max = t->l;
-    if (t->r != NULL && t->r->prior > max->prior)
+    if (t->r && t->r->prior > max->prior)
         max = t->r;
     if (max != t) {
         swap(t->prior, max->prior);
@@ -84,11 +84,11 @@ void heapify(pTreapNode t) {
 }
 
 pTreapNode build(const vector<int>& a, int i, int n) {
-    if (n == 0) return NULL;
+    if (n == 0) return nullptr;
     int mid = n / 2;
     auto t = new TreapNode(a[i + mid]);
-    t->l = build (a, i, mid);
-    t->r = build (a, i + mid + 1, n - mid - 1);
+    t->l = build(a, i, mid);
+    t->r = build(a, i + mid + 1, n - mid - 1);
     heapify(t);
     upd_cnt(t);
     return t;
