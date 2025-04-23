@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3520%20%2F%203520-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3526%20%2F%203526-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -978,6 +978,7 @@
 3073 | [Maximum Increasing Triplet Value](https://leetcode.com/problems/maximum-increasing-triplet-value/) | [C++](./C++/maximum-increasing-triplet-value.cpp) [Python](./Python/maximum-increasing-triplet-value.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Sorted List, BST, Prefix Sum
 3161 | [Block Placement Queries](https://leetcode.com/problems/block-placement-queries/) | [C++](./C++/block-placement-queries.cpp) [Python](./Python/block-placement-queries.py) | _O(qlogq)_ | _O(q)_ | Hard | | Sorted List, BST, BIT, Fenwick Tree, Segment Tree
 3165 | [Maximum Sum of Subsequence With Non-adjacent Elements](https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/) | [C++](./C++/maximum-sum-of-subsequence-with-non-adjacent-elements.cpp) [Python](./Python/maximum-sum-of-subsequence-with-non-adjacent-elements.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | Segment Tree
+3526 | [Range XOR Queries with Subarray Reversals](https://leetcode.com/problems/range-xor-queries-with-subarray-reversals/) | [C++](./C++/range-xor-queries-with-subarray-reversals.cpp) [Python](./Python/range-xor-queries-with-subarray-reversals.py) | _O(nlogn + qlogn)_ | _O(n)_ | Hard | 🔒 | Treap
 
 <br/>
 <div align="right">
@@ -1261,7 +1262,8 @@
 3504 | [Longest Palindrome After Substring Concatenation II](https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/) | [C++](./C++/longest-palindrome-after-substring-concatenation-ii.cpp) [Python](./Python/longest-palindrome-after-substring-concatenation-ii.py) | _O(n * m)_   | _O(n + m)_        | Hard         | | `Manacher's Algorithm`, DP
 3505 | [Minimum Operations to Make Elements Within K Subarrays Equal](https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/) | [C++](./C++/minimum-operations-to-make-elements-within-k-subarrays-equal.cpp) [Python](./Python/minimum-operations-to-make-elements-within-k-subarrays-equal.py) | _O(nlogx + k * n)_   | _O(n)_        | Hard         | | Two Heaps, Two BSTs, Two Sorted Lists, DP
 3509 | [Maximum Product of Subsequences With an Alternating Sum Equal to K](https://leetcode.com/problems/maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k/) | [C++](./C++/maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k.cpp) [Python](./Python/maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k.py) | _O(n * k * l)_   | _O(n * k * l)_        | Hard         | | DP
-
+3524 | [Find X Value of Array I](https://leetcode.com/problems/find-x-value-of-array-i/) | [C++](./C++/find-x-value-of-array-i.cpp) [Python](./Python/find-x-value-of-array-i.py) | _O(n * k)_   | _O(k)_        | Medium         | | DP
+3525 | [Find X Value of Array II](https://leetcode.com/problems/find-x-value-of-array-ii/) | [C++](./C++/find-x-value-of-array-ii.cpp) [Python](./Python/find-x-value-of-array-ii.py) | _O(n * k + q * k * logn)_   | _O(n * k)_        | Hard         | | DP, Segment Tree
 
 <br/>
 <div align="right">
@@ -1449,6 +1451,7 @@
 3511 | [Make a Positive Array](https://leetcode.com/problems/make-a-positive-array/) | [C++](./C++/make-a-positive-array.cpp) [Python](./Python/make-a-positive-array.py) | _O(n)_   | _O(1)_        | Medium         | 🔒 | Prefix Sum, Greedy
 3517 | [Smallest Palindromic Rearrangement I](https://leetcode.com/problems/smallest-palindromic-rearrangement-i/) | [C++](./C++/smallest-palindromic-rearrangement-i.cpp) [Python](./Python/smallest-palindromic-rearrangement-i.py) | _O(n + 26)_   | _O(26)_        | Medium         | | Freq Table, Counting Sort, Greedy
 3518 | [Smallest Palindromic Rearrangement II](https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/) | [C++](./C++/smallest-palindromic-rearrangement-ii.cpp) [Python](./Python/smallest-palindromic-rearrangement-ii.py) | _O(26 * n)_   | _O(26)_        | Hard         | | Freq Table, Counting Sort, Greedy, Combinatorics
+3523 | [Make Array Non-decreasing](https://leetcode.com/problems/make-array-non-decreasing/) | [C++](./C++/make-array-non-decreasing.cpp) [Python](./Python/make-array-non-decreasing.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 
 <br/>
 <div align="right">
@@ -1552,6 +1555,7 @@
 3433 | [Count Mentions Per User](https://leetcode.com/problems/count-mentions-per-user/) | [C++](./C++/count-mentions-per-user.cpp) [Python](./Python/count-mentions-per-user.py) | _O(eloge + e * n)_ | _O(e + n)_ | Medium | | Simulation
 3507 | [Minimum Pair Removal to Sort Array I](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/) | [C++](./C++/minimum-pair-removal-to-sort-array-i.cpp) [Python](./Python/minimum-pair-removal-to-sort-array-i.py) | _O(nlogn)_ | _O(n)_ | Easy | | Simulation, Doubly Linked List, Sorted List, BST
 3510 | [Minimum Pair Removal to Sort Array II](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/) | [C++](./C++/minimum-pair-removal-to-sort-array-ii.cpp) [Python](./Python/minimum-pair-removal-to-sort-array-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Simulation, Doubly Linked List, Sorted List, BST
+3522 | [Calculate Score After Performing Instructions](https://leetcode.com/problems/calculate-score-after-performing-instructions/) | [C++](./C++/calculate-score-after-performing-instructions.cpp) [Python](./Python/calculate-score-after-performing-instructions.py) | _O(n)_ | _O(n)_ | Medium | | Simulation
 
 <br/>
 <div align="right">
@@ -1837,6 +1841,8 @@
 3475 | [DNA Pattern Recognition](https://leetcode.com/problems/dna-pattern-recognition/) | [MySQL](./MySQL/dna-pattern-recognition.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Regular Expression |
 3482 | [Analyze Organization Hierarchy](https://leetcode.com/problems/analyze-organization-hierarchy/) | [MySQL](./MySQL/analyze-organization-hierarchy.sql) | _O(n^2)_ | _O(n^2)_       | Hard           || Recursive CTE, BFS |
 3497  | [Analyze Subscription Conversion](https://leetcode.com/problems/analyze-subscription-conversion/) | [MySQL](./MySQL/analyze-subscription-conversion.sql) | _O(nlogn)_ | _O(n)_       | Medium           |||
+3521  | [Find Product Recommendation Pairs](https://leetcode.com/problems/find-product-recommendation-pairs/) | [MySQL](./MySQL/find-product-recommendation-pairs.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Medium           |||
+
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
