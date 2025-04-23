@@ -92,7 +92,7 @@ public:
             merge(root, root, right);
         };
 
-        const auto& range_xor = [&](int left, int right) {
+        const auto& query = [&](int left, int right) {
             pitem t1, t2, t3;
             split(root, t1, t2, left);
             split(t2, t2, t3, right - left + 1);
@@ -107,7 +107,7 @@ public:
             if (q[0] == 1) {
                 update(q[1], q[2]);
             } else if (q[0] == 2) {
-                result.emplace_back(range_xor(q[1], q[2]));
+                result.emplace_back(query(q[1], q[2]));
             } else if (q[0] == 3) {
                 reverse(root, q[1], q[2]);
             }
