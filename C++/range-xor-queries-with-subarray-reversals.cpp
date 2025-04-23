@@ -1,4 +1,4 @@
-// Time:  O(nlogn + qlogn)
+// Time:  O(n + qlogn)
 // Space: O(n)
 
 // template from: https://cp-algorithms.com/data_structures/treap.html
@@ -70,17 +70,35 @@ void reverse(pTreapNode t, int l, int r) {
     merge(t, t, t3);
 }
 
+void heapify (pTreapNode t) {
+    if (!t) return;
+    pTreapNode max = t;
+    if (t->l != NULL && t->l->prior > max->prior)
+        max = t->l;
+    if (t->r != NULL && t->r->prior > max->prior)
+        max = t->r;
+    if (max != t) {
+        swap(t->prior, max->prior);
+        heapify(max);
+    }
+}
+
+pTreapNode build(const vector<int>& a, int i, int n) {
+    if (n == 0) return NULL;
+    int mid = n / 2;
+    auto t = new TreapNode(a[i + mid]);
+    t->l = build (a, i, mid);
+    t->r = build (a, i + mid + 1, n - mid - 1);
+    heapify(t);
+    upd_cnt(t);
+    return t;
+}
+
 // treap
 class Solution {
 public:
     vector<int> getResults(vector<int>& nums, vector<vector<int>>& queries) {
-        pTreapNode root = nullptr;
-        const auto& build = [&]() {
-            for (const auto& x : nums) {
-                merge(root, root, new TreapNode (x));
-            };
-        };
-
+        pTreapNode root = build(nums, 0, size(nums));
         const auto& update = [&](int index, int value) {
             pTreapNode left, mid, right;
             split(root, left, mid, index);
@@ -102,7 +120,6 @@ public:
         };
 
         vector<int> result;
-        build();
         for (const auto& q : queries) {
             if (q[0] == 1) {
                 update(q[1], q[2]);
