@@ -978,7 +978,7 @@
 3073 | [Maximum Increasing Triplet Value](https://leetcode.com/problems/maximum-increasing-triplet-value/) | [C++](./C++/maximum-increasing-triplet-value.cpp) [Python](./Python/maximum-increasing-triplet-value.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Sorted List, BST, Prefix Sum
 3161 | [Block Placement Queries](https://leetcode.com/problems/block-placement-queries/) | [C++](./C++/block-placement-queries.cpp) [Python](./Python/block-placement-queries.py) | _O(qlogq)_ | _O(q)_ | Hard | | Sorted List, BST, BIT, Fenwick Tree, Segment Tree
 3165 | [Maximum Sum of Subsequence With Non-adjacent Elements](https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/) | [C++](./C++/maximum-sum-of-subsequence-with-non-adjacent-elements.cpp) [Python](./Python/maximum-sum-of-subsequence-with-non-adjacent-elements.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | Segment Tree
-3526 | [Range XOR Queries with Subarray Reversals](https://leetcode.com/problems/range-xor-queries-with-subarray-reversals/) | [C++](./C++/range-xor-queries-with-subarray-reversals.cpp) [Python](./Python/range-xor-queries-with-subarray-reversals.py) | _O(nlogn + qlogn)_ | _O(n)_ | Hard | 🔒 | Treap
+3526 | [Range XOR Queries with Subarray Reversals](https://leetcode.com/problems/range-xor-queries-with-subarray-reversals/) | [C++](./C++/range-xor-queries-with-subarray-reversals.cpp) [Python](./Python/range-xor-queries-with-subarray-reversals.py) | _O(n + qlogn)_ | _O(n)_ | Hard | 🔒 | Treap
 
 <br/>
 <div align="right">
