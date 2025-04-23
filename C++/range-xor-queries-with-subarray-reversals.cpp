@@ -74,7 +74,6 @@ void reverse(pTreapNode t, int l, int r) {
 class Solution {
 public:
     vector<int> getResults(vector<int>& nums, vector<vector<int>>& queries) {
-        vector<int> result;
         pTreapNode root = nullptr;
         const auto& build = [&]() {
             for (const auto& x : nums) {
@@ -103,6 +102,7 @@ public:
         };
 
         build();
+        vector<int> result;
         for (const auto& q : queries) {
             if (q[0] == 1) {
                 update(q[1], q[2]);
