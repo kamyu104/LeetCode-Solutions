@@ -2,42 +2,42 @@
 // Space: O(n)
 
 // template from: https://cp-algorithms.com/data_structures/treap.html
-typedef struct item* pitem;
+using pTreapNode = struct TreapNode *;
 
-struct item {
+struct TreapNode  {
     int prior, value, cnt;
     int xor_sum;  // added
     bool rev;
-    pitem l, r;
+    pTreapNode l, r;
 
-    item(int v) : value(v), prior(rand()), cnt(1), xor_sum(v), rev(false), l(nullptr), r(nullptr) {}  // added
+    TreapNode (int v) : value(v), prior(rand()), cnt(1), xor_sum(v), rev(false), l(nullptr), r(nullptr) {}  // added
 };
 
-int cnt(pitem it) {
-    return it ? it->cnt : 0;
+int cnt(pTreapNode t) {
+    return t ? t->cnt : 0;
 }
 
-int xor_sum(pitem it) {  // added
-    return it ? it->xor_sum : 0;
+int xor_sum(pTreapNode t) {  // added
+    return t ? t->xor_sum : 0;
 }
 
-void upd_cnt(pitem it) {
-    if (it) {
-        it->cnt = cnt(it->l) + cnt(it->r) + 1;
-        it->xor_sum = it->value ^ xor_sum(it->l) ^ xor_sum(it->r);  // added
+void upd_cnt(pTreapNode t) {
+    if (t) {
+        t->cnt = cnt(t->l) + cnt(t->r) + 1;
+        t->xor_sum = t->value ^ xor_sum(t->l) ^ xor_sum(t->r);  // added
     }
 }
 
-void push(pitem it) {
-    if (it && it->rev) {
-        it->rev = false;
-        swap(it->l, it->r);
-        if (it->l) it->l->rev ^= true;
-        if (it->r) it->r->rev ^= true;
+void push(pTreapNode t) {
+    if (t && t->rev) {
+        t->rev = false;
+        swap(t->l, t->r);
+        if (t->l) t->l->rev ^= true;
+        if (t->r) t->r->rev ^= true;
     }
 }
 
-void merge(pitem & t, pitem l, pitem r) {
+void merge(pTreapNode & t, pTreapNode l, pTreapNode r) {
     push(l);
     push(r);
     if (!l || !r)
@@ -49,7 +49,7 @@ void merge(pitem & t, pitem l, pitem r) {
     upd_cnt(t);
 }
 
-void split(pitem t, pitem & l, pitem & r, int key, int add = 0) {
+void split(pTreapNode t, pTreapNode & l, pTreapNode & r, int key, int add = 0) {
     if (!t)
         return void(l = r = 0);
     push(t);
@@ -61,8 +61,8 @@ void split(pitem t, pitem & l, pitem & r, int key, int add = 0) {
     upd_cnt(t);
 }
 
-void reverse(pitem t, int l, int r) {
-    pitem t1, t2, t3;
+void reverse(pTreapNode t, int l, int r) {
+    pTreapNode t1, t2, t3;
     split(t, t1, t2, l);
     split(t2, t2, t3, r - l + 1);
     t2->rev ^= true;
@@ -75,15 +75,15 @@ class Solution {
 public:
     vector<int> getResults(vector<int>& nums, vector<vector<int>>& queries) {
         vector<int> result;
-        pitem root = nullptr;
+        pTreapNode root = nullptr;
         const auto& build = [&]() {
             for (const auto& x : nums) {
-                merge(root, root, new item(x));
+                merge(root, root, new TreapNode (x));
             };
         };
 
         const auto& update = [&](int index, int value) {
-            pitem left, mid, right;
+            pTreapNode left, mid, right;
             split(root, left, mid, index);
             split(mid, mid, right, 1);
             mid->value = value;
@@ -93,7 +93,7 @@ public:
         };
 
         const auto& query = [&](int left, int right) {
-            pitem t1, t2, t3;
+            pTreapNode t1, t2, t3;
             split(root, t1, t2, left);
             split(t2, t2, t3, right - left + 1);
             int result = xor_sum(t2);
