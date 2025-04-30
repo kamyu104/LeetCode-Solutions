@@ -1,4 +1,4 @@
-// Time:  O(n + qlogm)
+// Time:  O(n)
 // Space: O(n)
 
 // bfs
