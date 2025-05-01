@@ -32,10 +32,10 @@ class Solution(object):
                 P[i+1][j] = P[i][P[i][j]]
         result = [-1]*len(queries)
         for idx, (i, j) in enumerate(queries):
-            if prefix[i_to_idx[i]] != prefix[i_to_idx[j]]:
-                continue
-            if i_to_idx[i] == i_to_idx[j]:
+            if i == j:
                 result[idx] = 0
+                continue
+            if prefix[i_to_idx[i]] != prefix[i_to_idx[j]]:
                 continue
             if i_to_idx[i] > i_to_idx[j]:
                 i, j = j, i
