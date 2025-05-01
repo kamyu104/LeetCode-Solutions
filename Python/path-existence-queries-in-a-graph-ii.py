@@ -21,8 +21,7 @@ class Solution(object):
         prefix = [0]*n
         for i in xrange(n-1):
             prefix[i+1] = prefix[i]+int(nums[sorted_i[i+1]]-nums[sorted_i[i]] > maxDiff)
-        l = ceil_log2_x(n-1)+1
-        P = [[n-1]*n for _ in xrange(l)]
+        P = [[n-1]*n for _ in xrange(ceil_log2_x(n-1)+1)]
         left = 0
         for right in xrange(n):
             while nums[sorted_i[right]]-nums[sorted_i[left]] > maxDiff:
