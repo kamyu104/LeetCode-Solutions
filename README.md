@@ -1024,7 +1024,7 @@
 3286 | [Find a Safe Walk Through a Grid](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/)| [C++](./C++/find-a-safe-walk-through-a-grid.cpp) [Python](./Python/find-a-safe-walk-through-a-grid.py)| _O(m * n)_ | _O(m * n)_ | Medium | variant of [Minimum Obstacle Removal to Reach Corner](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/) | 0-1 BFS, Deque |
 3373 | [Maximize the Number of Target Nodes After Connecting Trees II](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii/) | [C++](./C++/maximize-the-number-of-target-nodes-after-connecting-trees-ii.cpp) [Python](./Python/maximize-the-number-of-target-nodes-after-connecting-trees-ii.py) | _O(n + m)_ | _O(n + m)_ | Hard | | BFS
 3528 | [Unit Conversion I](https://leetcode.com/problems/unit-conversion-i/) | [C++](./C++/unit-conversion-i.cpp) [Python](./Python/unit-conversion-i.py) | _O(n)_ | _O(n)_ | Medium | | BFS
-3528 | [Unit Conversion I](https://leetcode.com/problems/unit-conversion-i/) | [C++](./C++/unit-conversion-i.cpp) [Python](./Python/unit-conversion-i.py) | _O(n + qlogm)_ | _O(n)_ | Medium | 🔒 | BFS, Fast Exponentiation
+3535 | [Unit Conversion II](https://leetcode.com/problems/unit-conversion-ii/) | [C++](./C++/unit-conversion-ii.cpp) [Python](./Python/unit-conversion-ii.py) | _O(n + qlogm)_ | _O(n)_ | Medium | 🔒 | BFS, Fast Exponentiation
 
 <br/>
 <div align="right">
