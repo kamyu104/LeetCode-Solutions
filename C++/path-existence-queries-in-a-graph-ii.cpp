@@ -1,7 +1,7 @@
 // Time:  O((n + q) * logn)
 // Space: O(nlogn)
 
-#// greedy, binary lifting
+// greedy, binary lifting
 class Solution {
 public:
     vector<int> pathExistenceQueries(int n, vector<int>& nums, int maxDiff, vector<vector<int>>& queries) {
