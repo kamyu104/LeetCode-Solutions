@@ -26,8 +26,7 @@ public:
         for (int i = 0; i < n - 1; ++i) {
             prefix[i + 1] = prefix[i] + (nums[sorted_i[i + 1]] - nums[sorted_i[i]] <= maxDiff ? 0 : 1);
         }
-        const int l = ceil_log2_x(n - 1) + 1;
-        vector<vector<int>> P(l, vector<int>(n, n - 1));
+        vector<vector<int>> P(ceil_log2_x(n - 1) + 1, vector<int>(n, n - 1));
         for (int right = 0, left = 0; right < n; ++right) {
             for (; nums[sorted_i[right]] - nums[sorted_i[left]] > maxDiff; ++left) {
                 P[0][left] = right - 1;
