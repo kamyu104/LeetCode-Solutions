@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3526%20%2F%203526-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3535%20%2F%203535-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -254,6 +254,8 @@
 3467 | [Transform Array by Parity](https://leetcode.com/problems/transform-array-by-parity/) | [C++](./C++/transform-array-by-parity.cpp) [Python](./Python/transform-array-by-parity.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3502 | [Minimum Cost to Reach Every Position](https://leetcode.com/problems/minimum-cost-to-reach-every-position/) | [C++](./C++/minimum-cost-to-reach-every-position.cpp) [Python](./Python/minimum-cost-to-reach-every-position.py) | _O(n)_ | _O(1)_ | Easy | | Prefix Sum
 3514 | [Number of Unique XOR Triplets II](https://leetcode.com/problems/number-of-unique-xor-triplets-ii/) | [C++](./C++/number-of-unique-xor-triplets-ii.cpp) [Python](./Python/number-of-unique-xor-triplets-ii.py) | _O(nlogn)_ | _O(n)_ | Medium | | `Fast Walsh–Hadamard Transform`, FWHT, `Fast Subset Transform`, FST, Hash Table
+3531 | [Count Covered Buildings](https://leetcode.com/problems/count-covered-buildings/) | [C++](./C++/count-covered-buildings.cpp) [Python](./Python/count-covered-buildings.py) | _O(n)_ | _O(n)_ | Medium | | Array
+
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -343,6 +345,7 @@
 3456 | [Find Special Substring of Length K](https://leetcode.com/problems/find-special-substring-of-length-k/) | [C++](./C++/find-special-substring-of-length-k.cpp) [Python](./Python/find-special-substring-of-length-k.py) | _O(n)_   | _O(1)_        | Easy         | | String
 3491 | [Phone Number Prefix](https://leetcode.com/problems/phone-number-prefix/) | [C++](./C++/phone-number-prefix.cpp) [Python](./Python/phone-number-prefix.py) | _O(l * nlogn)_   | _O(1)_        | Easy         | 🔒 | Trie, Sort
 3498 | [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/) | [C++](./C++/reverse-degree-of-a-string.cpp) [Python](./Python/reverse-degree-of-a-string.py) | _O(n)_   | _O(1)_        | Easy         | | String
+3529 | [Count Cells in Overlapping Horizontal and Vertical Substrings](https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/) | [C++](./C++/count-cells-in-overlapping-horizontal-and-vertical-substrings.cpp) [Python](./Python/count-cells-in-overlapping-horizontal-and-vertical-substrings.py) | _O(n * m)_ | _O(n * m)_ | Medium | | `Z-Function`
 
 <br/>
 <div align="right">
@@ -585,6 +588,7 @@
 3471 | [Find the Largest Almost Missing Integer](https://leetcode.com/problems/find-the-largest-almost-missing-integer/) | [C++](./C++/find-the-largest-almost-missing-integer.cpp) [Python](./Python/find-the-largest-almost-missing-integer.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
 3487 | [Maximum Unique Subarray Sum After Deletion](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/) | [C++](./C++/maximum-unique-subarray-sum-after-deletion.cpp) [Python](./Python/maximum-unique-subarray-sum-after-deletion.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table
 3488 | [Closest Equal Element Queries](https://leetcode.com/problems/closest-equal-element-queries/) | [C++](./C++/closest-equal-element-queries.cpp) [Python](./Python/closest-equal-element-queries.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
+3527 | [Find the Most Common Response](https://leetcode.com/problems/find-the-most-common-response/) | [C++](./C++/find-the-most-common-response.cpp) [Python](./Python/find-the-most-common-response.py) | _O(n * l)_ | _O(n * l)_ | Medium | | Hash Table, Freq Table
 
 <br/>
 <div align="right">
@@ -1019,6 +1023,8 @@
 3157 | [Find the Level of Tree with Minimum Sum](https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/)| [C++](./C++/find-the-level-of-tree-with-minimum-sum.cpp) [Python](./Python/find-the-level-of-tree-with-minimum-sum.py)| _O(n)_ | _O(w)_ | Medium | 🔒 | BFS |
 3286 | [Find a Safe Walk Through a Grid](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/)| [C++](./C++/find-a-safe-walk-through-a-grid.cpp) [Python](./Python/find-a-safe-walk-through-a-grid.py)| _O(m * n)_ | _O(m * n)_ | Medium | variant of [Minimum Obstacle Removal to Reach Corner](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/) | 0-1 BFS, Deque |
 3373 | [Maximize the Number of Target Nodes After Connecting Trees II](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii/) | [C++](./C++/maximize-the-number-of-target-nodes-after-connecting-trees-ii.cpp) [Python](./Python/maximize-the-number-of-target-nodes-after-connecting-trees-ii.py) | _O(n + m)_ | _O(n + m)_ | Hard | | BFS
+3528 | [Unit Conversion I](https://leetcode.com/problems/unit-conversion-i/) | [C++](./C++/unit-conversion-i.cpp) [Python](./Python/unit-conversion-i.py) | _O(n)_ | _O(n)_ | Medium | | BFS
+3528 | [Unit Conversion I](https://leetcode.com/problems/unit-conversion-i/) | [C++](./C++/unit-conversion-i.cpp) [Python](./Python/unit-conversion-i.py) | _O(n + qlogm)_ | _O(n)_ | Medium | 🔒 | BFS, Fast Exponentiation
 
 <br/>
 <div align="right">
@@ -1264,6 +1270,8 @@
 3509 | [Maximum Product of Subsequences With an Alternating Sum Equal to K](https://leetcode.com/problems/maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k/) | [C++](./C++/maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k.cpp) [Python](./Python/maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k.py) | _O(n * k * l)_   | _O(n * k * l)_        | Hard         | | DP
 3524 | [Find X Value of Array I](https://leetcode.com/problems/find-x-value-of-array-i/) | [C++](./C++/find-x-value-of-array-i.cpp) [Python](./Python/find-x-value-of-array-i.py) | _O(n * k)_   | _O(k)_        | Medium         | | DP
 3525 | [Find X Value of Array II](https://leetcode.com/problems/find-x-value-of-array-ii/) | [C++](./C++/find-x-value-of-array-ii.cpp) [Python](./Python/find-x-value-of-array-ii.py) | _O(n * k + q * k * logn)_   | _O(n * k)_        | Hard         | | DP, Segment Tree
+3530 | [Maximum Profit from Valid Topological Order in DAG](https://leetcode.com/problems/maximum-profit-from-valid-topological-order-in-dag/) | [C++](./C++/maximum-profit-from-valid-topological-order-in-dag.cpp) [Python](./Python/maximum-profit-from-valid-topological-order-in-dag.py) | _O(n * 2^n)_   | _O(2^n)_        | Hard         | | DP, Bitmasks
+3533 | [Concatenated Divisibility](https://leetcode.com/problems/concatenated-divisibility/) | [C++](./C++/concatenated-divisibility.cpp) [Python](./Python/concatenated-divisibility.py) | _O(nlogr + k * n * 2^n)_   | _O(logr + k * 2^n)_        | Hard         | | DP, Backtracing
 
 <br/>
 <div align="right">
@@ -1511,6 +1519,8 @@
 3435 | [Frequencies of Shortest Supersequences](https://leetcode.com/problems/frequencies-of-shortest-supersequences/) | [C++](./C++/frequencies-of-shortest-supersequences.cpp)  [Python](./Python/frequencies-of-shortest-supersequences.py)  | _O(n + k^2 * 2^k)_ | _O(k^2)_ | Hard         | | Bitmasks, Graph, Topological Sort |
 3481 | [Apply Substitutions](https://leetcode.com/problems/apply-substitutions/) | [C++](./C++/apply-substitutions.cpp)  [Python](./Python/apply-substitutions.py)  | _O(r * 2^r)_ | _O(r * 2^r)_ | Medium         | 🔒 | Graph, Topological Sort, Memoization |
 3493 | [Properties Graph](https://leetcode.com/problems/properties-graph/)  | [C++](./C++/properties-graph.cpp) [Python](./Python/properties-graph.py) |  _O(n^2 * m)_ | _O(n)_ | Medium           | | Graph, Flood Fill, BFS, Union Find |
+3532 | [Path Existence Queries in a Graph I](https://leetcode.com/problems/path-existence-queries-in-a-graph-i/) | [C++](./C++/path-existence-queries-in-a-graph-i.cpp) [Python](./Python/path-existence-queries-in-a-graph-i.py) | _O(n + q)_ | _O(n)_ | Medium | | Prefix Sum
+3534 | [Path Existence Queries in a Graph II](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/) | [C++](./C++/path-existence-queries-in-a-graph-ii.cpp) [Python](./Python/path-existence-queries-in-a-graph-ii.py) | _O((n + q) * logn)_ | _O(nlogn)_ | Hard | | Prefix Sum, Greedy, Binary Lifting
 
 <br/>
 <div align="right">
