@@ -43,7 +43,7 @@ public:
             if (prefix[i_to_idx[i]] != prefix[i_to_idx[j]]) {
                 continue;
             }
-            if (i_to_idx[i] == i_to_idx[j]) {
+            if (i == j) {
                 result[idx] = 0;
                 continue;
             }
