@@ -1,7 +1,7 @@
 # Time:  O((n + q) * logn)
 # Space: O(nlogn)
 
-# greedy, binary lifting
+# prefix sum, greedy, binary lifting
 class Solution(object):
     def pathExistenceQueries(self, n, nums, maxDiff, queries):
         """
