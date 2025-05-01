@@ -40,11 +40,11 @@ public:
         vector<int> result(size(queries), -1);
         for (int idx = 0; idx < size(queries); ++idx) {
             int i = queries[idx][0], j = queries[idx][1];
-            if (prefix[i_to_idx[i]] != prefix[i_to_idx[j]]) {
-                continue;
-            }
             if (i == j) {
                 result[idx] = 0;
+                continue;
+            }
+            if (prefix[i_to_idx[i]] != prefix[i_to_idx[j]]) {
                 continue;
             }
             if (i_to_idx[i] > i_to_idx[j]) {
