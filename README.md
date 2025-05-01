@@ -1271,7 +1271,7 @@
 3524 | [Find X Value of Array I](https://leetcode.com/problems/find-x-value-of-array-i/) | [C++](./C++/find-x-value-of-array-i.cpp) [Python](./Python/find-x-value-of-array-i.py) | _O(n * k)_   | _O(k)_        | Medium         | | DP
 3525 | [Find X Value of Array II](https://leetcode.com/problems/find-x-value-of-array-ii/) | [C++](./C++/find-x-value-of-array-ii.cpp) [Python](./Python/find-x-value-of-array-ii.py) | _O(n * k + q * k * logn)_   | _O(n * k)_        | Hard         | | DP, Segment Tree
 3530 | [Maximum Profit from Valid Topological Order in DAG](https://leetcode.com/problems/maximum-profit-from-valid-topological-order-in-dag/) | [C++](./C++/maximum-profit-from-valid-topological-order-in-dag.cpp) [Python](./Python/maximum-profit-from-valid-topological-order-in-dag.py) | _O(n * 2^n)_   | _O(2^n)_        | Hard         | | DP, Bitmasks
-3533 | [Concatenated Divisibility](https://leetcode.com/problems/concatenated-divisibility/) | [C++](./C++/concatenated-divisibility.cpp) [Python](./Python/concatenated-divisibility.py) | _O(nlogr + k * n * 2^n)_   | _O(logr + k * 2^n)_        | Hard         | | DP, Backtracing
+3533 | [Concatenated Divisibility](https://leetcode.com/problems/concatenated-divisibility/) | [C++](./C++/concatenated-divisibility.cpp) [Python](./Python/concatenated-divisibility.py) | _O(nlogr + k * n * 2^n)_   | _O(logr + k * 2^n)_        | Hard         | | DP, Bitmasks, Backtracing
 
 <br/>
 <div align="right">
