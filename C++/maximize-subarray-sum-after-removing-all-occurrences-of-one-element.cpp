@@ -54,11 +54,11 @@ public:
             return vector<int64_t>(4, nums[i]);
         };
 
-        const auto& update = [] (const auto& c) {
+        const auto& update = [](const auto& c) {
             return c;
         };
 
-        const auto& query = [&] (const auto& x, const auto& y) {
+        const auto& query = [&](const auto& x, const auto& y) {
             if (empty(x)) {
                 return y;
             }
