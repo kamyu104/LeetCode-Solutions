@@ -146,7 +146,7 @@
         * [Software Engineering at Google](https://abseil.io/resources/swe-book/html/toc.html)
      * Software Testing
         * [The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
-        * [The Art Of Unit Testing](https://www.amazon.com/dp/B0CW18PBWH)
+        * [The Art of Unit Testing](https://www.amazon.com/dp/B0CW18PBWH)
         * [How Google Tests Software](https://www.amazon.com/dp/B007MQLMF2)
      * Site Reliability Engineering
         * [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
