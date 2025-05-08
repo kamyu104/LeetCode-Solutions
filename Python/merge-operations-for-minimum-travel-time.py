@@ -18,10 +18,10 @@ class Solution(object):
         prefix = [0]*(n+1)
         for i in xrange(n):
             prefix[i+1] = prefix[i]+time[i]
-        dp = collections.defaultdict(lambda: collections.defaultdict(lambda:float("inf")))
+        dp = collections.defaultdict(lambda: collections.defaultdict(lambda: float("inf")))
         dp[0][time[0]] = 0
         for w in xrange(2, (n-k)+1):
-            new_dp = collections.defaultdict(lambda: collections.defaultdict(lambda:float("inf")))
+            new_dp = collections.defaultdict(lambda: collections.defaultdict(lambda: float("inf")))
             for i in xrange(w-1, (w-1)+(k+1)):
                 for j in xrange(w-2, i):
                     for t, c in dp[j].iteritems():
