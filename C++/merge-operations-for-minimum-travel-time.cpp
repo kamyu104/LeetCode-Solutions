@@ -12,10 +12,10 @@ public:
         }
         unordered_map<int, unordered_map<int, int>> dp;
         dp[0][time[0]] = 0;
-        for (int w = 2; w <= n - k; ++w) {
+        for (int r = 2; r <= n - k; ++r) {
             unordered_map<int, unordered_map<int, int>> new_dp;
-            for (int i = w - 1; i < (w - 1) + (k + 1); ++i) {
-                for (int j = w - 2; j < i; ++j) {
+            for (int i = r - 1; i < (r - 1) + (k + 1); ++i) {
+                for (int j = r - 2; j < i; ++j) {
                     for (const auto& [t, c] : dp[j]) {
                         const int nt = prefix[i + 1] - prefix[j + 1];
                         new_dp[i][nt] = min(new_dp[i].count(nt) ? new_dp[i][nt] : INF, (position[i] - position[j]) * t + c);
