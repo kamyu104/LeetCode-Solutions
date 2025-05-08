@@ -20,10 +20,10 @@ class Solution(object):
             prefix[i+1] = prefix[i]+time[i]
         dp = collections.defaultdict(lambda: collections.defaultdict(lambda: float("inf")))
         dp[0][time[0]] = 0
-        for r in xrange(2, (n-k)+1):
+        for cnt in xrange(2, (n-k)+1):
             new_dp = collections.defaultdict(lambda: collections.defaultdict(lambda: float("inf")))
-            for i in xrange(r-1, (r-1)+(k+1)):
-                for j in xrange(r-2, i):
+            for i in xrange(cnt-1, (cnt-1)+(k+1)):
+                for j in xrange(cnt-2, i):
                     for t, c in dp[j].iteritems():
                         new_dp[i][prefix[i+1]-prefix[j+1]] = min(new_dp[i][prefix[i+1]-prefix[j+1]], (position[i]-position[j])*t+c)
             dp = new_dp
