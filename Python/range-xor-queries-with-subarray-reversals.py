@@ -7,7 +7,7 @@ import random
 
 # template from: https://cp-algorithms.com/data_structures/treap.html
 class TreapNode(object):
-    __slots__ = ('value', 'prior', 'cnt',' xor_sum', 'rev', 'l', 'r')
+    __slots__ = ('value', 'prior', 'cnt', 'xor_sum', 'rev', 'l', 'r')
 
     def __init__(self, value):
         self.value = value
