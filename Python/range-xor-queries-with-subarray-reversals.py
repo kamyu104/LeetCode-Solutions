@@ -1,11 +1,14 @@
 # Time:  O(n + qlogn)
 # Space: O(n)
+# pass in Python3 but Python2
 
 import random
 
 
 # template from: https://cp-algorithms.com/data_structures/treap.html
 class TreapNode(object):
+    __slots__ = ('value', 'prior', 'cnt',' xor_sum', 'rev', 'l', 'r')
+
     def __init__(self, value):
         self.value = value
         self.prior = random.randint(1, 1 << 30)
@@ -94,7 +97,7 @@ def build(a, i, n):
     return t
 
 # treap
-class Solution_TLE(object):
+class Solution(object):
     def getResults(self, nums, queries):
         """
         :type nums: List[int]
