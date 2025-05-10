@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3535%20%2F%203535-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3540%20%2F%203540-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -255,6 +255,8 @@
 3502 | [Minimum Cost to Reach Every Position](https://leetcode.com/problems/minimum-cost-to-reach-every-position/) | [C++](./C++/minimum-cost-to-reach-every-position.cpp) [Python](./Python/minimum-cost-to-reach-every-position.py) | _O(n)_ | _O(1)_ | Easy | | Prefix Sum
 3514 | [Number of Unique XOR Triplets II](https://leetcode.com/problems/number-of-unique-xor-triplets-ii/) | [C++](./C++/number-of-unique-xor-triplets-ii.cpp) [Python](./Python/number-of-unique-xor-triplets-ii.py) | _O(nlogn)_ | _O(n)_ | Medium | | `Fast Walsh–Hadamard Transform`, FWHT, `Fast Subset Transform`, FST, Hash Table
 3531 | [Count Covered Buildings](https://leetcode.com/problems/count-covered-buildings/) | [C++](./C++/count-covered-buildings.cpp) [Python](./Python/count-covered-buildings.py) | _O(n)_ | _O(n)_ | Medium | | Array
+3537 | [Fill a Special Grid](https://leetcode.com/problems/fill-a-special-grid/) | [C++](./C++/fill-a-special-grid.cpp) [Python](./Python/fill-a-special-grid.py) | _O(4^n)_ | _O(1)_ | Medium | | Divide and Conquer, Array
+3540 | [Minimum Time to Visit All Houses](https://leetcode.com/problems/minimum-time-to-visit-all-houses/) | [C++](./C++/minimum-time-to-visit-all-houses.cpp) [Python](./Python/minimum-time-to-visit-all-houses.py) | _O(n + q)_ | _O(n)_ | Medium | 🔒 | Prefix Sum
 
 <br/>
 <div align="right">
@@ -1272,6 +1274,8 @@
 3525 | [Find X Value of Array II](https://leetcode.com/problems/find-x-value-of-array-ii/) | [C++](./C++/find-x-value-of-array-ii.cpp) [Python](./Python/find-x-value-of-array-ii.py) | _O(n * k + q * k * logn)_   | _O(n * k)_        | Hard         | | DP, Segment Tree
 3530 | [Maximum Profit from Valid Topological Order in DAG](https://leetcode.com/problems/maximum-profit-from-valid-topological-order-in-dag/) | [C++](./C++/maximum-profit-from-valid-topological-order-in-dag.cpp) [Python](./Python/maximum-profit-from-valid-topological-order-in-dag.py) | _O(n * 2^n)_   | _O(2^n)_        | Hard         | | DP, Bitmasks
 3533 | [Concatenated Divisibility](https://leetcode.com/problems/concatenated-divisibility/) | [C++](./C++/concatenated-divisibility.cpp) [Python](./Python/concatenated-divisibility.py) | _O(nlogr + k * n * 2^n)_   | _O(logr + k * 2^n)_        | Hard         | | DP, Bitmasks, Backtracing
+3538 | [Merge Operations for Minimum Travel Time](https://leetcode.com/problems/merge-operations-for-minimum-travel-time/) | [C++](./C++/merge-operations-for-minimum-travel-time.cpp) [Python](./Python/merge-operations-for-minimum-travel-time.py) | _O((n-k) * k^3)_   | _O(k^2)_        | Hard         | | Prefix Sum, DP
+3539 | [Find Sum of Array Product of Magical Sequences](https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences/) | [C++](./C++/find-sum-of-array-product-of-magical-sequences.cpp) [Python](./Python/find-sum-of-array-product-of-magical-sequences.py) | _O(n * k * m^2)_   | _O(k * m^2)_        | Hard         | | DP, Combinatorics
 
 <br/>
 <div align="right">
@@ -1521,6 +1525,7 @@
 3493 | [Properties Graph](https://leetcode.com/problems/properties-graph/)  | [C++](./C++/properties-graph.cpp) [Python](./Python/properties-graph.py) |  _O(n^2 * m)_ | _O(n)_ | Medium           | | Graph, Flood Fill, BFS, Union Find |
 3532 | [Path Existence Queries in a Graph I](https://leetcode.com/problems/path-existence-queries-in-a-graph-i/) | [C++](./C++/path-existence-queries-in-a-graph-i.cpp) [Python](./Python/path-existence-queries-in-a-graph-i.py) | _O(n + q)_ | _O(n)_ | Medium | | Prefix Sum
 3534 | [Path Existence Queries in a Graph II](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/) | [C++](./C++/path-existence-queries-in-a-graph-ii.cpp) [Python](./Python/path-existence-queries-in-a-graph-ii.py) | _O((n + q) * logn)_ | _O(nlogn)_ | Hard | | Prefix Sum, Greedy, Binary Lifting
+3536 | [Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/) | [C++](./C++/maximum-product-of-two-digits.cpp) [Python](./Python/maximum-product-of-two-digits.py) | _O(d + 10)_ | _O(10)_ | Easy | | Freq Table, Greedy
 
 <br/>
 <div align="right">
