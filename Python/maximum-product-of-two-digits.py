@@ -1,7 +1,7 @@
 # Time:  O(d + 10)
 # Space: O(10)
 
-# freq table
+# freq table, greedy
 class Solution(object):
     def maxProduct(self, n):
         """
