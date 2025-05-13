@@ -40,8 +40,8 @@ class Solution(object):
                     ret[2] += new_ret[2]
                 elif step == 4:
                     u, p, ret = args
-                    ret[1] = max(ret[1], -2*ret[0]-dp[-1][1])
-                    ret[2] = min(ret[2], -2*ret[0]-dp[-1][0])
+                    ret[1] = max(ret[1], dp[-1][1]-2*ret[0])
+                    ret[2] = max(ret[2], dp[-1][0]+2*ret[0])
                     dp.pop()
                     if len(dp)-k >= 0:
                         dp[len(dp)-k][0] += ret[1]
@@ -76,8 +76,8 @@ class Solution2(object):
                 total += new_total
                 pos += new_pos
                 neg += new_neg
-            pos = max(pos, -2*total-dp[-1][1])
-            neg = min(neg, -2*total-dp[-1][0])
+            pos = max(pos, dp[-1][1]-2*total)
+            neg = max(neg, dp[-1][0]+2*total)
             dp.pop()
             if len(dp)-k >= 0:
                 dp[len(dp)-k][0] += pos
