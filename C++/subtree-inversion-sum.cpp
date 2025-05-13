@@ -36,12 +36,12 @@ public:
                     (*ret)[1] += (*new_ret)[1];
                     (*ret)[2] += (*new_ret)[2];
                 } else if (step == 4) {
-                    (*ret)[1] = max((*ret)[1], -2 * (*ret)[0] - get<1>(dp.back()));
-                    (*ret)[2] = min((*ret)[2], -2 * (*ret)[0] - get<0>(dp.back()));
+                    (*ret)[1] = max((*ret)[1], -2 * (*ret)[0] - dp.back().second);
+                    (*ret)[2] = min((*ret)[2], -2 * (*ret)[0] - dp.back().first);
                     dp.pop_back();
                     if (size(dp) >= k) {
-                        get<0>(dp[size(dp) - k]) += (*ret)[1];
-                        get<1>(dp[size(dp) - k]) += (*ret)[2];
+                        dp[size(dp) - k].first += (*ret)[1];
+                        dp[size(dp) - k].second += (*ret)[2];
                     }
                 }
             }
@@ -78,12 +78,12 @@ public:
                 pos += new_pos;
                 neg += new_neg;
             }
-            pos = max(pos, -2 * total - get<1>(dp.back()));
-            neg = min(neg, -2 * total - get<0>(dp.back()));
+            pos = max(pos, -2 * total - dp.back().second);
+            neg = min(neg, -2 * total - dp.back().first);
             dp.pop_back();
             if (size(dp) >= k) {
-                get<0>(dp[size(dp) - k]) += pos;
-                get<1>(dp[size(dp) - k]) += neg;
+                dp[size(dp) - k].first += pos;
+                dp[size(dp) - k].second += neg;
             }
             return tuple(total, pos, neg);
         };
