@@ -36,8 +36,8 @@ public:
                     (*ret)[1] += (*new_ret)[1];
                     (*ret)[2] += (*new_ret)[2];
                 } else if (step == 4) {
-                    (*ret)[1] = max((*ret)[1], -2 * (*ret)[0] - dp.back().second);
-                    (*ret)[2] = min((*ret)[2], -2 * (*ret)[0] - dp.back().first);
+                    (*ret)[1] = max((*ret)[1], dp.back().second - 2 * (*ret)[0]);
+                    (*ret)[2] = max((*ret)[2], dp.back().first + 2 * (*ret)[0]);
                     dp.pop_back();
                     if (size(dp) >= k) {
                         dp[size(dp) - k].first += (*ret)[1];
@@ -78,8 +78,8 @@ public:
                 pos += new_pos;
                 neg += new_neg;
             }
-            pos = max(pos, -2 * total - dp.back().second);
-            neg = min(neg, -2 * total - dp.back().first);
+            pos = max(pos, dp.back().second - 2 * total);
+            neg = max(neg, dp.back().first + 2 * total);
             dp.pop_back();
             if (size(dp) >= k) {
                 dp[size(dp) - k].first += pos;
