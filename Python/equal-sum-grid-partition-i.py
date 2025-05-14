@@ -8,20 +8,10 @@ class Solution(object):
         :type grid: List[List[int]]
         :rtype: bool
         """
-        def check1():
+        def check(range1, range2, get):
             curr = 0
-            for i in xrange(len(grid)):
-                curr += sum(grid[i])
-                if curr == total:
-                    return True
-                elif curr > total:
-                    break
-            return False
-    
-        def check2():
-            curr = 0
-            for j in xrange(len(grid[0])):
-                curr += sum(grid[i][j] for i in xrange(len(grid)))
+            for i in range1:
+                curr += sum(get(i, j) for j in range2)
                 if curr == total:
                     return True
                 elif curr > total:
@@ -32,4 +22,5 @@ class Solution(object):
         if total%2:
             return False
         total //= 2
-        return check1() or check2()
+        return check(xrange(len(grid)), xrange(len(grid[0])), lambda i, j: grid[i][j]) or \
+               check(xrange(len(grid[0])), xrange(len(grid)), lambda i, j: grid[j][i])
