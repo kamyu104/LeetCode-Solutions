@@ -16,8 +16,8 @@ public:
             int64_t curr = 0;
             const int d1 = begin1 < end1 ? 1 : -1;
             const int d2 = begin2 < end2 ? 1 : -1;
-            for (int i = begin1; i < end1; i += d1) {
-                for (int j = begin2; j < end2; j += d2) {
+            for (int i = begin1; i != end1; i += d1) {
+                for (int j = begin2; j != end2; j += d2) {
                     curr += get(i, j);
                 }
                 if (curr == total) {
