@@ -5,7 +5,7 @@
 """
 n = 11
 edges = [[0,1],[1,2],[2,3],[5,6],[6,7]]
-max is 367 but ans is 365, which is wrong
+max is 367 but ans is 366, which is wrong
 """
 class Solution_WA(object):
     def maxScore(self, n, edges):
