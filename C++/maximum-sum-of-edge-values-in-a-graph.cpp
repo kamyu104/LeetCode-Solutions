@@ -37,8 +37,7 @@ public:
             int64_t result = 0;
             for (int64_t c = r - 1; c >= l; --c) {
                 result += a * c;
-                a = b;
-                b = c;
+                tie(a, b) = pair(b, c);
             }
             if (is_cycle) {
                 result += a * b;
