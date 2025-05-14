@@ -12,11 +12,13 @@ public:
             return false;
         }
         total /= 2;
-        const auto& check1 = [&]() {
+        const auto& check = [&](int begin1, int end1, int begin2, int end2, const auto& get) {
             int64_t curr = 0;
-            for (int i = 0; i < size(grid); ++i) {
-                for (int j = 0; j < size(grid[0]); ++j) {
-                    curr += grid[i][j];
+            const int d1 = begin1 < end1 ? 1 : -1;
+            const int d2 = begin2 < end2 ? 1 : -1;
+            for (int i = begin1; i < end1; i += d1) {
+                for (int j = begin2; j < end2; j += d2) {
+                    curr += get(i, j);
                 }
                 if (curr == total) {
                     return true;
@@ -27,21 +29,7 @@ public:
             return false;
         };
 
-        const auto& check2 = [&]() {
-            int64_t curr = 0;
-            for (int j = 0; j < size(grid[0]); ++j) {
-                for (int i = 0; i < size(grid); ++i) {
-                    curr += grid[i][j];
-                }
-                if (curr == total) {
-                    return true;
-                } else if (curr > total) {
-                    break;
-                }
-            }
-            return false;
-        };
-
-        return check1() || check2();
+        return check(0, size(grid), 0, size(grid[0]), [&](int i, int j) { return grid[i][j]; }) ||
+               check(0, size(grid[0]), 0, size(grid), [&](int i, int j) { return grid[j][i]; });
     }
 };
