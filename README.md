@@ -259,7 +259,7 @@
 3540 | [Minimum Time to Visit All Houses](https://leetcode.com/problems/minimum-time-to-visit-all-houses/) | [C++](./C++/minimum-time-to-visit-all-houses.cpp) [Python](./Python/minimum-time-to-visit-all-houses.py) | _O(n + q)_ | _O(n)_ | Medium | 🔒 | Prefix Sum
 3546 | [Equal Sum Grid Partition I](https://leetcode.com/problems/equal-sum-grid-partition-i/) | [C++](./C++/equal-sum-grid-partition-i.cpp) [Python](./Python/equal-sum-grid-partition-i.py) | _O(m * n)_ | _O(1)_ | Medium | | Array
 3548 | [Equal Sum Grid Partition II](https://leetcode.com/problems/equal-sum-grid-partition-ii/) | [C++](./C++/equal-sum-grid-partition-ii.cpp) [Python](./Python/equal-sum-grid-partition-ii.py) | _O(m * n)_ | _O(m * n)_ | Hard | | Array, Hash Table
-3549 | [Multiply Two Polynomials](https://leetcode.com/problems/multiply-two-polynomials/) | [C++](./C++/multiply-two-polynomials.cpp) [Python](./Python/multiply-two-polynomials.py) | _O((n + m) * log(n + m))_ | _O(n + m)_ | Hard | 🔒 | FFT
+3549 | [Multiply Two Polynomials](https://leetcode.com/problems/multiply-two-polynomials/) | [C++](./C++/multiply-two-polynomials.cpp) [Python](./Python/multiply-two-polynomials.py) | _O((n + m) * log(n + m))_ | _O(n + m)_ | Hard | 🔒 | `Fast Fourier Transform`, FFT
 
 <br/>
 <div align="right">
