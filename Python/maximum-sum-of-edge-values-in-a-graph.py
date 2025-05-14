@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# counting sort, greedy
+# flood fill, bfs, counting sort, greedy
 """
 n = 11
 edges = [[0,1],[1,2],[2,3],[5,6],[6,7]]
