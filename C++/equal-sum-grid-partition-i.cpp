@@ -14,10 +14,9 @@ public:
         total /= 2;
         const auto& check = [&](int begin1, int end1, int begin2, int end2, const auto& get) {
             int64_t curr = 0;
-            const int d1 = begin1 < end1 ? 1 : -1;
-            const int d2 = begin2 < end2 ? 1 : -1;
-            for (int i = begin1; i != end1; i += d1) {
-                for (int j = begin2; j != end2; j += d2) {
+            const int d = begin1 < end1 ? 1 : -1;
+            for (int i = begin1; i != end1; i += d) {
+                for (int j = begin2; j != end2; ++j) {
                     curr += get(i, j);
                 }
                 if (curr == total) {
