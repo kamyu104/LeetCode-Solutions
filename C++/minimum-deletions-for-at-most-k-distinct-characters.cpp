@@ -1,7 +1,7 @@
 // Time:  O(n + 26)
 // Space: O(n + 26)
 
-// freq table, greedy
+// freq table, counting sort, greedy
 class Solution {
 public:
     int minDeletion(string s, int k) {
