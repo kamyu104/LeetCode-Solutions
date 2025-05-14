@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3540%20%2F%203540-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3549%20%2F%203549-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -257,6 +257,9 @@
 3531 | [Count Covered Buildings](https://leetcode.com/problems/count-covered-buildings/) | [C++](./C++/count-covered-buildings.cpp) [Python](./Python/count-covered-buildings.py) | _O(n)_ | _O(n)_ | Medium | | Array
 3537 | [Fill a Special Grid](https://leetcode.com/problems/fill-a-special-grid/) | [C++](./C++/fill-a-special-grid.cpp) [Python](./Python/fill-a-special-grid.py) | _O(4^n)_ | _O(1)_ | Medium | | Divide and Conquer, Array
 3540 | [Minimum Time to Visit All Houses](https://leetcode.com/problems/minimum-time-to-visit-all-houses/) | [C++](./C++/minimum-time-to-visit-all-houses.cpp) [Python](./Python/minimum-time-to-visit-all-houses.py) | _O(n + q)_ | _O(n)_ | Medium | 🔒 | Prefix Sum
+3546 | [Equal Sum Grid Partition I](https://leetcode.com/problems/equal-sum-grid-partition-i/) | [C++](./C++/equal-sum-grid-partition-i.cpp) [Python](./Python/equal-sum-grid-partition-i.py) | _O(m * n)_ | _O(1)_ | Medium | | Array
+3548 | [Equal Sum Grid Partition II](https://leetcode.com/problems/equal-sum-grid-partition-ii/) | [C++](./C++/equal-sum-grid-partition-ii.cpp) [Python](./Python/equal-sum-grid-partition-ii.py) | _O(m * n)_ | _O(m * n)_ | Hard | | Array, Hash Table
+3549 | [Multiply Two Polynomials](https://leetcode.com/problems/multiply-two-polynomials/) | [C++](./C++/multiply-two-polynomials.cpp) [Python](./Python/multiply-two-polynomials.py) | _O((n + m) * log(n + m))_ | _O(n + m)_ | Hard | 🔒 | FFT
 
 <br/>
 <div align="right">
@@ -591,6 +594,7 @@
 3487 | [Maximum Unique Subarray Sum After Deletion](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/) | [C++](./C++/maximum-unique-subarray-sum-after-deletion.cpp) [Python](./Python/maximum-unique-subarray-sum-after-deletion.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table
 3488 | [Closest Equal Element Queries](https://leetcode.com/problems/closest-equal-element-queries/) | [C++](./C++/closest-equal-element-queries.cpp) [Python](./Python/closest-equal-element-queries.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
 3527 | [Find the Most Common Response](https://leetcode.com/problems/find-the-most-common-response/) | [C++](./C++/find-the-most-common-response.cpp) [Python](./Python/find-the-most-common-response.py) | _O(n * l)_ | _O(n * l)_ | Medium | | Hash Table, Freq Table
+3541 | [Find Most Frequent Vowel and Consonant](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/) | [C++](./C++/find-most-frequent-vowel-and-consonant.cpp) [Python](./Python/find-most-frequent-vowel-and-consonant.py) | _O(n + 26)_ | _O(26)_ | Easy | | Freq Table
 
 <br/>
 <div align="right">
@@ -1276,6 +1280,8 @@
 3533 | [Concatenated Divisibility](https://leetcode.com/problems/concatenated-divisibility/) | [C++](./C++/concatenated-divisibility.cpp) [Python](./Python/concatenated-divisibility.py) | _O(nlogr + k * n * 2^n)_   | _O(logr + k * 2^n)_        | Hard         | | DP, Bitmasks, Backtracing
 3538 | [Merge Operations for Minimum Travel Time](https://leetcode.com/problems/merge-operations-for-minimum-travel-time/) | [C++](./C++/merge-operations-for-minimum-travel-time.cpp) [Python](./Python/merge-operations-for-minimum-travel-time.py) | _O((n-k) * k^3)_   | _O(k^2)_        | Hard         | | Prefix Sum, DP
 3539 | [Find Sum of Array Product of Magical Sequences](https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences/) | [C++](./C++/find-sum-of-array-product-of-magical-sequences.cpp) [Python](./Python/find-sum-of-array-product-of-magical-sequences.py) | _O(n * k * m^2)_   | _O(k * m^2)_        | Hard         | | DP, Combinatorics
+3543 | [Maximum Weighted K-Edge Path](https://leetcode.com/problems/maximum-weighted-k-edge-path/) | [C++](./C++/maximum-weighted-k-edge-path.cpp) [Python](./Python/maximum-weighted-k-edge-path.py) | _O(k * e * t)_   | _O(n * t)_        | Medium         | | DP
+3544 | [Subtree Inversion Sum](https://leetcode.com/problems/subtree-inversion-sum/) | [C++](./C++/subtree-inversion-sum.cpp) [Python](./Python/subtree-inversion-sum.py) | _O(n)_   | _O(n)_        | Hard         | | DFS, Tree DP
 
 <br/>
 <div align="right">
@@ -1464,6 +1470,8 @@
 3517 | [Smallest Palindromic Rearrangement I](https://leetcode.com/problems/smallest-palindromic-rearrangement-i/) | [C++](./C++/smallest-palindromic-rearrangement-i.cpp) [Python](./Python/smallest-palindromic-rearrangement-i.py) | _O(n + 26)_   | _O(26)_        | Medium         | | Freq Table, Counting Sort, Greedy
 3518 | [Smallest Palindromic Rearrangement II](https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/) | [C++](./C++/smallest-palindromic-rearrangement-ii.cpp) [Python](./Python/smallest-palindromic-rearrangement-ii.py) | _O(26 * n)_   | _O(26)_        | Hard         | | Freq Table, Counting Sort, Greedy, Combinatorics
 3523 | [Make Array Non-decreasing](https://leetcode.com/problems/make-array-non-decreasing/) | [C++](./C++/make-array-non-decreasing.cpp) [Python](./Python/make-array-non-decreasing.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3542 | [Minimum Operations to Convert All Elements to Zero](https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/) | [C++](./C++/minimum-operations-to-convert-all-elements-to-zero.cpp) [Python](./Python/minimum-operations-to-convert-all-elements-to-zero.py) | _O(n)_   | _O(n)_        | Medium         | | Greedy, Mono Stack
+3545 | [Minimum Deletions for At Most K Distinct Characters](https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/) | [C++](./C++/minimum-deletions-for-at-most-k-distinct-characters.cpp) [Python](./Python/minimum-deletions-for-at-most-k-distinct-characters.py) | _O(n + 26)_   | _O(n + 26)_        | Easy         | | Freq Table, Counting Sort, Greedy
 
 <br/>
 <div align="right">
@@ -1526,6 +1534,7 @@
 3532 | [Path Existence Queries in a Graph I](https://leetcode.com/problems/path-existence-queries-in-a-graph-i/) | [C++](./C++/path-existence-queries-in-a-graph-i.cpp) [Python](./Python/path-existence-queries-in-a-graph-i.py) | _O(n + q)_ | _O(n)_ | Medium | | Prefix Sum
 3534 | [Path Existence Queries in a Graph II](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/) | [C++](./C++/path-existence-queries-in-a-graph-ii.cpp) [Python](./Python/path-existence-queries-in-a-graph-ii.py) | _O((n + q) * logn)_ | _O(nlogn)_ | Hard | | Prefix Sum, Greedy, Binary Lifting
 3536 | [Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/) | [C++](./C++/maximum-product-of-two-digits.cpp) [Python](./Python/maximum-product-of-two-digits.py) | _O(d + 10)_ | _O(10)_ | Easy | | Freq Table, Greedy
+3547 | [Maximum Sum of Edge Values in a Graph](https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/) | [C++](./C++/maximum-sum-of-edge-values-in-a-graph.cpp) [Python](./Python/maximum-sum-of-edge-values-in-a-graph.py) | _O(n)_ | _O(n)_ | Hard | | Flood Fill, BFS, Counting Sort, Greedy
 
 <br/>
 <div align="right">
