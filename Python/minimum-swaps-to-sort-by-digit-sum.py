@@ -1,4 +1,4 @@
-# Time:  O(nlogr)
+# Time:  O(nlogr + nlogn)
 # Space: O(n)
 
 # sort
@@ -16,7 +16,8 @@ class Solution(object):
             return result
 
         idxs = range(len(nums))
-        idxs.sort(key=lambda i: (total(nums[i]), nums[i]))
+        totals = map(total, nums)
+        idxs.sort(key=lambda i: (totals[i], nums[i]))
         i_to_idx = [-1]*len(idxs)
         for idx, x in enumerate(idxs):
             i_to_idx[x] = idx
