@@ -1,4 +1,4 @@
-// Time:  O(nlogr)
+// Time:  O(nlogr + nlogn)
 // Space: O(n)
 
 // sort
@@ -13,10 +13,14 @@ public:
             return result;
         };
 
+        vector<int> totals(size(nums));
+        for (int i = 0; i < size(nums); ++i) {
+            totals[i] = total(nums[i]);
+        }
         vector<int> idxs(size(nums));
         iota(begin(idxs), end(idxs), 0);
         sort(begin(idxs), end(idxs), [&](const auto& i, const auto& j) {
-            return pair(total(nums[i]), nums[i]) < pair(total(nums[j]), nums[j]);
+            return pair(totals[i], nums[i]) < pair(totals[j], nums[j]);
         });
         vector<int> i_to_idx(size(idxs), -1);
         for (int i = 0; i < size(idxs); ++i) {
