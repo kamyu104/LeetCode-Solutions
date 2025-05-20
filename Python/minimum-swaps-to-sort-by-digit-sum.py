@@ -15,8 +15,8 @@ class Solution(object):
                 x //= 10
             return result
 
-        idxs = range(len(nums))
         totals = map(total, nums)
+        idxs = range(len(nums))
         idxs.sort(key=lambda i: (totals[i], nums[i]))
         i_to_idx = [-1]*len(idxs)
         for idx, x in enumerate(idxs):
