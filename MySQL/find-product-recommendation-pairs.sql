@@ -3,8 +3,7 @@
 
 WITH purchase_info_cte AS (
     SELECT p.user_id, p.product_id, i.category
-    FROM ProductPurchases p
-    INNER JOIN ProductInfo i ON p.product_id = i.product_id
+    FROM ProductPurchases p INNER JOIN ProductInfo i ON p.product_id = i.product_id
 )
 
 SELECT a.product_id AS product1_id,
