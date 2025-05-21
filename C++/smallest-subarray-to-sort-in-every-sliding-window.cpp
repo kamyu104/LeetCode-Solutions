@@ -27,7 +27,7 @@ public:
                 }
                 j = max(j, i - (k - 1));
                 while (!(nxt[j] > left)) {
-                    j = nxt[j];  // or j += 1
+                    j = nxt[j];  // or ++j
                 }
                 result.emplace_back(max(i - nxt[j] + 1, 0));
             }
