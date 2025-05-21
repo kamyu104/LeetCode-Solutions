@@ -1871,7 +1871,7 @@
 3482 | [Analyze Organization Hierarchy](https://leetcode.com/problems/analyze-organization-hierarchy/) | [MySQL](./MySQL/analyze-organization-hierarchy.sql) | _O(n^2)_ | _O(n^2)_       | Hard           || Recursive CTE, BFS |
 3497  | [Analyze Subscription Conversion](https://leetcode.com/problems/analyze-subscription-conversion/) | [MySQL](./MySQL/analyze-subscription-conversion.sql) | _O(nlogn)_ | _O(n)_       | Medium           |||
 3521  | [Find Product Recommendation Pairs](https://leetcode.com/problems/find-product-recommendation-pairs/) | [MySQL](./MySQL/find-product-recommendation-pairs.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Medium           |||
-3554  | [Find Category Recommendation Pairs](https://leetcode.com/problems/find-category-recommendation-pairs/) | [MySQL](./MySQL/find-category-recommendation-pairs.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Medium           |||
+3554  | [Find Category Recommendation Pairs](https://leetcode.com/problems/find-category-recommendation-pairs/) | [MySQL](./MySQL/find-category-recommendation-pairs.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Hard           |||
 
 
 ## PD
