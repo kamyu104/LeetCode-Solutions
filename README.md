@@ -903,7 +903,7 @@
 3460 | [Longest Common Prefix After at Most One Removal](https://leetcode.com/problems/longest-common-prefix-after-at-most-one-removal/) | [C++](./C++/longest-common-prefix-after-at-most-one-removal.cpp) [Python](./Python/longest-common-prefix-after-at-most-one-removal.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Two Pointers
 3485 | [Longest Common Prefix of K Strings After Removal](https://leetcode.com/problems/longest-common-prefix-of-k-strings-after-removal/) | [C++](./C++/longest-common-prefix-of-k-strings-after-removal.cpp) [Python](./Python/longest-common-prefix-of-k-strings-after-removal.py) | _O(l * nlogn)_ | _O(n)_ | Hard | | Sort, Sliding Window, Prefix Sum, Trie
 3486 | [Longest Special Path II](https://leetcode.com/problems/longest-special-path-ii/) | [C++](./C++/longest-special-path-ii.cpp) [Python](./Python/longest-special-path-ii.py) | _O(n + e)_ | _O(n + e)_ | Hard | | DFS, Two Pointers, Sliding Window, Prefix Sum
-3555 | [Smallest Subarray to Sort in Every Sliding Window](https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/) | [C++](./C++/minimum-swaps-to-sort-by-digit-sum.cpp) [Python](./Python/minimum-swaps-to-sort-by-digit-sum.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Mono Stack, Two Pointers
+3555 | [Smallest Subarray to Sort in Every Sliding Window](https://leetcode.com/problems/smallest-subarray-to-sort-in-every-sliding-window/) | [C++](./C++/smallest-subarray-to-sort-in-every-sliding-window.cpp) [Python](./Python/smallest-subarray-to-sort-in-every-sliding-window.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Mono Stack, Two Pointers
 
 <br/>
 <div align="right">
