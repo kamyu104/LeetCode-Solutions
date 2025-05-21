@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3549%20%2F%203549-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3555%20%2F%203555-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -260,6 +260,7 @@
 3546 | [Equal Sum Grid Partition I](https://leetcode.com/problems/equal-sum-grid-partition-i/) | [C++](./C++/equal-sum-grid-partition-i.cpp) [Python](./Python/equal-sum-grid-partition-i.py) | _O(m * n)_ | _O(1)_ | Medium | | Array
 3548 | [Equal Sum Grid Partition II](https://leetcode.com/problems/equal-sum-grid-partition-ii/) | [C++](./C++/equal-sum-grid-partition-ii.cpp) [Python](./Python/equal-sum-grid-partition-ii.py) | _O(m * n)_ | _O(m * n)_ | Hard | | Array, Hash Table
 3549 | [Multiply Two Polynomials](https://leetcode.com/problems/multiply-two-polynomials/) | [C++](./C++/multiply-two-polynomials.cpp) [Python](./Python/multiply-two-polynomials.py) | _O((n + m) * log(n + m))_ | _O(n + m)_ | Hard | 🔒 | `Fast Fourier Transform`, FFT
+3550 | [Smallest Index With Digit Sum Equal to Index](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/) | [C++](./C++/smallest-index-with-digit-sum-equal-to-index.cpp) [Python](./Python/smallest-index-with-digit-sum-equal-to-index.py) | _O(nlogr)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -461,6 +462,7 @@
 2846 | [Minimum Edge Weight Equilibrium Queries in a Tree](https://leetcode.com/problems/minimum-edge-weight-equilibrium-queries-in-a-tree/)| [C++](./C++/minimum-edge-weight-equilibrium-queries-in-a-tree.cpp) [Python](./Python/minimum-edge-weight-equilibrium-queries-in-a-tree.py)| _O(r * (n + q))_ | _O(r * n + q)_ | Hard | | Tree, Binary Lifting, `Tarjan's Offline LCA Algorithm` |
 3109 | [Find the Index of Permutation](https://leetcode.com/problems/find-the-index-of-permutation/)| [C++](./C++/find-the-index-of-permutation.cpp) [Python](./Python/find-the-index-of-permutation.py)| _O(nlogn)_ | _O(n)_ | 🔒, Medium | variant of [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | BIT, Fenwick Tree, Combinatorics |
 3515 | [Shortest Path in a Weighted Tree](https://leetcode.com/problems/shortest-path-in-a-weighted-tree/)| [C++](./C++/shortest-path-in-a-weighted-tree.cpp) [Python](./Python/shortest-path-in-a-weighted-tree.py)| _O(nlogn)_ | _O(n)_ | Hard |  | BIT, Fenwick Tree, DFS |
+3553 | [Minimum Weighted Subgraph With the Required Paths II](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/)| [C++](./C++/minimum-weighted-subgraph-with-the-required-paths-ii.cpp) [Python](./Python/minimum-weighted-subgraph-with-the-required-paths-ii.py)| _O(n + q)_ | _O(n + q)_ | Hard | | Tree, DFS, `Tarjan's Offline LCA Algorithm` |
 
 <br/>
 <div align="right">
@@ -794,6 +796,7 @@
 3309 | [Maximum Possible Number by Binary Concatenation](https://leetcode.com/problems/maximum-possible-number-by-binary-concatenation/) | [C++](./C++/maximum-possible-number-by-binary-concatenation.cpp) [Python](./Python/maximum-possible-number-by-binary-concatenation.py) | _O(n * logr * logn)_ | _O(nlogr)_ | Medium | | Sort, Brute Force
 3394 | [Check if Grid can be Cut into Sections](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections/) | [C++](./C++/check-if-grid-can-be-cut-into-sections.cpp) [Python](./Python/check-if-grid-can-be-cut-into-sections.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Merge Intervals
 3431 | [Minimum Unlocked Indices to Sort Nums](https://leetcode.com/problems/minimum-unlocked-indices-to-sort-nums/) | [C++](./C++/minimum-unlocked-indices-to-sort-nums.cpp) [Python](./Python/minimum-unlocked-indices-to-sort-nums.py) | _O(n)_ | _O(1)_ | Medium | | Sort
+3551 | [Minimum Swaps to Sort by Digit Sum](https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/) | [C++](./C++/minimum-swaps-to-sort-by-digit-sum.cpp) [Python](./Python/minimum-swaps-to-sort-by-digit-sum.py) | _O(nlogr + nlogn)_ | _O(n)_ | Medium | | Sort
 
 <br/>
 <div align="right">
@@ -900,6 +903,7 @@
 3460 | [Longest Common Prefix After at Most One Removal](https://leetcode.com/problems/longest-common-prefix-after-at-most-one-removal/) | [C++](./C++/longest-common-prefix-after-at-most-one-removal.cpp) [Python](./Python/longest-common-prefix-after-at-most-one-removal.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Two Pointers
 3485 | [Longest Common Prefix of K Strings After Removal](https://leetcode.com/problems/longest-common-prefix-of-k-strings-after-removal/) | [C++](./C++/longest-common-prefix-of-k-strings-after-removal.cpp) [Python](./Python/longest-common-prefix-of-k-strings-after-removal.py) | _O(l * nlogn)_ | _O(n)_ | Hard | | Sort, Sliding Window, Prefix Sum, Trie
 3486 | [Longest Special Path II](https://leetcode.com/problems/longest-special-path-ii/) | [C++](./C++/longest-special-path-ii.cpp) [Python](./Python/longest-special-path-ii.py) | _O(n + e)_ | _O(n + e)_ | Hard | | DFS, Two Pointers, Sliding Window, Prefix Sum
+3555 | [Smallest Subarray to Sort in Every Sliding Window](https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/) | [C++](./C++/minimum-swaps-to-sort-by-digit-sum.cpp) [Python](./Python/minimum-swaps-to-sort-by-digit-sum.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Mono Stack, Two Pointers
 
 <br/>
 <div align="right">
@@ -1031,6 +1035,7 @@
 3373 | [Maximize the Number of Target Nodes After Connecting Trees II](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii/) | [C++](./C++/maximize-the-number-of-target-nodes-after-connecting-trees-ii.cpp) [Python](./Python/maximize-the-number-of-target-nodes-after-connecting-trees-ii.py) | _O(n + m)_ | _O(n + m)_ | Hard | | BFS
 3528 | [Unit Conversion I](https://leetcode.com/problems/unit-conversion-i/) | [C++](./C++/unit-conversion-i.cpp) [Python](./Python/unit-conversion-i.py) | _O(n)_ | _O(n)_ | Medium | | BFS
 3535 | [Unit Conversion II](https://leetcode.com/problems/unit-conversion-ii/) | [C++](./C++/unit-conversion-ii.cpp) [Python](./Python/unit-conversion-ii.py) | _O(n + qlogm)_ | _O(n)_ | Medium | 🔒 | BFS, Fast Exponentiation
+3552 | [Grid Teleportation Traversal](https://leetcode.com/problems/grid-teleportation-traversal/) | [C++](./C++/grid-teleportation-traversal.cpp) [Python](./Python/grid-teleportation-traversal.py) | _O(m * n)_ | _O(m * n)_ | Medium |  | 0-1 BFS, Deque
 
 <br/>
 <div align="right">
@@ -1866,6 +1871,7 @@
 3482 | [Analyze Organization Hierarchy](https://leetcode.com/problems/analyze-organization-hierarchy/) | [MySQL](./MySQL/analyze-organization-hierarchy.sql) | _O(n^2)_ | _O(n^2)_       | Hard           || Recursive CTE, BFS |
 3497  | [Analyze Subscription Conversion](https://leetcode.com/problems/analyze-subscription-conversion/) | [MySQL](./MySQL/analyze-subscription-conversion.sql) | _O(nlogn)_ | _O(n)_       | Medium           |||
 3521  | [Find Product Recommendation Pairs](https://leetcode.com/problems/find-product-recommendation-pairs/) | [MySQL](./MySQL/find-product-recommendation-pairs.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Medium           |||
+3554  | [Find Category Recommendation Pairs](https://leetcode.com/problems/find-category-recommendation-pairs/) | [MySQL](./MySQL/find-category-recommendation-pairs.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Medium           |||
 
 
 ## PD
