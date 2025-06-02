@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(26)
 
-// greedy
+// greedy, hash table
 class Solution {
 public:
     int maxSubstrings(string word) {
