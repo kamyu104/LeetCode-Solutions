@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3555%20%2F%203555-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3559%20%2F%203570-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -463,6 +463,8 @@
 3109 | [Find the Index of Permutation](https://leetcode.com/problems/find-the-index-of-permutation/)| [C++](./C++/find-the-index-of-permutation.cpp) [Python](./Python/find-the-index-of-permutation.py)| _O(nlogn)_ | _O(n)_ | 🔒, Medium | variant of [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | BIT, Fenwick Tree, Combinatorics |
 3515 | [Shortest Path in a Weighted Tree](https://leetcode.com/problems/shortest-path-in-a-weighted-tree/)| [C++](./C++/shortest-path-in-a-weighted-tree.cpp) [Python](./Python/shortest-path-in-a-weighted-tree.py)| _O(nlogn)_ | _O(n)_ | Hard |  | BIT, Fenwick Tree, DFS |
 3553 | [Minimum Weighted Subgraph With the Required Paths II](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/)| [C++](./C++/minimum-weighted-subgraph-with-the-required-paths-ii.cpp) [Python](./Python/minimum-weighted-subgraph-with-the-required-paths-ii.py)| _O(n + q)_ | _O(n + q)_ | Hard | | Tree, DFS, `Tarjan's Offline LCA Algorithm` |
+3558 | [Number of Ways to Assign Edge Weights I](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/)| [C++](./C++/number-of-ways-to-assign-edge-weights-i.cpp) [Python](./Python/number-of-ways-to-assign-edge-weights-i.py)| _O(n)_ | _O(n)_ | Medium | | Tree, BFS, Combinatorics |
+3559 | [Number of Ways to Assign Edge Weights II](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/)| [C++](./C++/number-of-ways-to-assign-edge-weights-ii.cpp) [Python](./Python/number-of-ways-to-assign-edge-weights-ii.py)| _O(n + q)_ | _O(n + q)_ | Medium | | Tree, DFS, `Tarjan's Offline LCA Algorithm`, Combinatorics |
 
 <br/>
 <div align="right">
@@ -753,6 +755,7 @@
 3513 | [Number of Unique XOR Triplets I](https://leetcode.com/problems/number-of-unique-xor-triplets-i/) | [C++](./C++/number-of-unique-xor-triplets-i.cpp) [Python](./Python/number-of-unique-xor-triplets-i.py) | _O(logn)_ | _O(1)_ | Medium | | Bit Manipulation, Math
 3516 | [Find Closest Person](https://leetcode.com/problems/find-closest-person/) | [C++](./C++/find-closest-person.cpp) [Python](./Python/find-closest-person.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 3519 | [Count Numbers with Non-Decreasing Digits](https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/) | [C++](./C++/count-numbers-with-non-decreasing-digits.cpp) [Python](./Python/count-numbers-with-non-decreasing-digits.py) | _O(n^2)_ | _O(n)_ | Hard | | Math, Stars and Bars, Combinatorics |
+3556 | [Sum of Largest Prime Substrings](https://leetcode.com/problems/sum-of-largest-prime-substrings/) | [C++](./C++/sum-of-largest-prime-substrings.cpp) [Python](./Python/sum-of-largest-prime-substrings.py) | _O(n^2 * sqrt(r))_ | _O(n^2)_ | Medium | | Number Theory, Quick Select |
 
 <br/>
 <div align="right">
@@ -1477,6 +1480,7 @@
 3523 | [Make Array Non-decreasing](https://leetcode.com/problems/make-array-non-decreasing/) | [C++](./C++/make-array-non-decreasing.cpp) [Python](./Python/make-array-non-decreasing.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3542 | [Minimum Operations to Convert All Elements to Zero](https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/) | [C++](./C++/minimum-operations-to-convert-all-elements-to-zero.cpp) [Python](./Python/minimum-operations-to-convert-all-elements-to-zero.py) | _O(n)_   | _O(n)_        | Medium         | | Greedy, Mono Stack
 3545 | [Minimum Deletions for At Most K Distinct Characters](https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/) | [C++](./C++/minimum-deletions-for-at-most-k-distinct-characters.cpp) [Python](./Python/minimum-deletions-for-at-most-k-distinct-characters.py) | _O(n + 26)_   | _O(n + 26)_        | Easy         | | Freq Table, Counting Sort, Greedy
+3557 | [Find Maximum Number of Non Intersecting Substrings](https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/) | [C++](./C++/find-maximum-number-of-non-intersecting-substrings.cpp) [Python](./Python/find-maximum-number-of-non-intersecting-substrings.py) | _O(n)_   | _O(26)_        | Medium         | | Greedy, Hash Table
 
 <br/>
 <div align="right">
