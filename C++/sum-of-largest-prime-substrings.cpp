@@ -1,7 +1,7 @@
-// Time:  O(n^2 * sqrt(r) + n^2 * logn)
+// Time:  O(n^2 * sqrt(r))
 // Space: O(n^2)
 
-// number theory, sort
+// number theory, quick select
 class Solution {
 public:
     long long sumOfLargestPrimes(string s) {
@@ -28,21 +28,19 @@ public:
             return true;
         };
 
-        set<int64_t> primes;
+        unordered_set<int64_t> primes_set;
         for (int i = 0; i < size(s); ++i) {
             int64_t curr = 0;
             for (int j = i; j < size(s); ++j) {
                 curr = curr * 10 + (s[j] - '0');
                 if (is_prime(curr)) {
-                    primes.emplace(curr);
+                    primes_set.emplace(curr);
                 }
             }
         }
-        int64_t result = 0;
-        int cnt = 0;
-        for (auto rit = rbegin(primes); rit != rend(primes) && cnt != COUNT; ++rit, ++cnt) {
-            result += *rit;
-        }
-        return result;
+        vector<int64_t> primes(cbegin(primes_set), cend(primes_set));
+        const int d = min(static_cast<int>(size(primes)), 3);
+        nth_element(begin(primes), begin(primes) + d, end(primes), greater<int64_t>());
+        return accumulate(cbegin(primes), cbegin(primes) + d, 0ll);
     }
 };
