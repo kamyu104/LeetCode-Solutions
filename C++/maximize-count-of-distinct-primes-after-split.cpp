@@ -58,7 +58,7 @@ public:
                 nums[idx] = x;
                 add(idx, +1);
             }
-            result[i] = st.query(0, size(nums) - 2);
+            result[i] = st.tree[1];  // st.query(0, size(nums) - 2);
         }
         return result;
     }
@@ -69,7 +69,7 @@ private:
         explicit SegmentTree(int N)
          :  base_(N > 1 ? 1 << (__lg(N - 1) + 1) : 1),
             lazy_(base_),
-            tree_(N > 1 ? 1 << (__lg(N - 1) + 2) : 2) {
+            tree(N > 1 ? 1 << (__lg(N - 1) + 2) : 2) {
 
         }
 
@@ -102,18 +102,20 @@ private:
             int left = 0, right = 0;
             for (; L <= R; L >>= 1, R >>= 1) {
                 if ((L & 1) == 1) {
-                    left = max(left, tree_[L++]);
+                    left = max(left, tree[L++]);
                 }
                 if ((R & 1) == 0) {
-                    right = max(tree_[R--], right);
+                    right = max(tree[R--], right);
                 }
             }
             return max(left, right);
         }
 
+        vector<int> tree;
+
     private:
         void apply(int x, const int val) {
-            tree_[x] += val;
+            tree[x] += val;
             if (x < base_) {
                 lazy_[x] += val;
             }
@@ -122,9 +124,9 @@ private:
         void pull(int x) {
             while (x > 1) {
                 x >>= 1;
-                tree_[x] = max(tree_[x << 1], tree_[(x << 1) + 1]);
+                tree[x] = max(tree[x << 1], tree[(x << 1) + 1]);
                 if (lazy_[x]) {
-                    tree_[x] += lazy_[x];
+                    tree[x] += lazy_[x];
                 }
             }
         }
@@ -141,7 +143,6 @@ private:
         }
 
         int base_;
-        vector<int> tree_;
         vector<int> lazy_;
     };
 };
