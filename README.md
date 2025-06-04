@@ -100,6 +100,7 @@
 3315 | [Construct the Minimum Bitwise Array II](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [C++](./C++/construct-the-minimum-bitwise-array-ii.cpp) [Python](./Python/construct-the-minimum-bitwise-array-ii.py) | _O(n)_ | _O(1)_ | Medium | | Bit Manipulation
 3344 | [Maximum Sized Array](https://leetcode.com/problems/maximum-sized-array/) | [C++](./C++/maximum-sized-array.cpp) [Python](./Python/maximum-sized-array.py) | precompute: O(max_s^(1/5) * log(max_s))<br>runtime: O(log(max_s)) | _O(max_s^(1/5))_ | Medium | 🔒 | Precompute, Bitmasks, Combinatorics, Binary Search
 3370 | [Smallest Number With All Set Bits](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | [C++](./C++/smallest-number-with-all-set-bits.cpp) [Python](./Python/smallest-number-with-all-set-bits.py) | _O(1)_ | _O(1)_ | Easy | | Bit Manipulation
+3566 | [Partition Array into Two Equal Product Subsets](https://leetcode.com/problems/partition-array-into-two-equal-product-subsets/) | [C++](./C++/partition-array-into-two-equal-product-subsets.cpp) [Python](./Python/partition-array-into-two-equal-product-subsets.py) | _O(n * 2^n)_ | _O(1)_ | Medium | | Bitmasks
 
 <br/>
 <div align="right">
@@ -261,6 +262,8 @@
 3548 | [Equal Sum Grid Partition II](https://leetcode.com/problems/equal-sum-grid-partition-ii/) | [C++](./C++/equal-sum-grid-partition-ii.cpp) [Python](./Python/equal-sum-grid-partition-ii.py) | _O(m * n)_ | _O(m * n)_ | Hard | | Array, Hash Table
 3549 | [Multiply Two Polynomials](https://leetcode.com/problems/multiply-two-polynomials/) | [C++](./C++/multiply-two-polynomials.cpp) [Python](./Python/multiply-two-polynomials.py) | _O((n + m) * log(n + m))_ | _O(n + m)_ | Hard | 🔒 | `Fast Fourier Transform`, FFT
 3550 | [Smallest Index With Digit Sum Equal to Index](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/) | [C++](./C++/smallest-index-with-digit-sum-equal-to-index.cpp) [Python](./Python/smallest-index-with-digit-sum-equal-to-index.py) | _O(nlogr)_ | _O(1)_ | Easy | | Array
+3567 | [Minimum Absolute Difference in Sliding Submatrix](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/) | [C++](./C++/minimum-absolute-difference-in-sliding-submatrix.cpp) [Python](./Python/minimum-absolute-difference-in-sliding-submatrix.py) | _O(m * n * k^2)_ | _O(k^2)_ | Medium | | Brute Force, Sort, BST, Sorted List
+3569 | [Maximize Count of Distinct Primes After Split](https://leetcode.com/problems/maximize-count-of-distinct-primes-after-splitx/) | [C++](./C++/maximize-count-of-distinct-primes-after-split.cpp) [Python](./Python/maximize-count-of-distinct-primes-after-split.py) | _O(r + nlogn + qlogn)_ | _O(r + n)_ | Medium | | Number Theory, BST, Sorted List, Segment Tree
 
 <br/>
 <div align="right">
@@ -352,6 +355,7 @@
 3491 | [Phone Number Prefix](https://leetcode.com/problems/phone-number-prefix/) | [C++](./C++/phone-number-prefix.cpp) [Python](./Python/phone-number-prefix.py) | _O(l * nlogn)_   | _O(1)_        | Easy         | 🔒 | Trie, Sort
 3498 | [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/) | [C++](./C++/reverse-degree-of-a-string.cpp) [Python](./Python/reverse-degree-of-a-string.py) | _O(n)_   | _O(1)_        | Easy         | | String
 3529 | [Count Cells in Overlapping Horizontal and Vertical Substrings](https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/) | [C++](./C++/count-cells-in-overlapping-horizontal-and-vertical-substrings.cpp) [Python](./Python/count-cells-in-overlapping-horizontal-and-vertical-substrings.py) | _O(n * m)_ | _O(n * m)_ | Medium | | `Z-Function`
+3571 | [Find the Shortest Superstring II](https://leetcode.com/problems/find-the-shortest-superstring-ii/) | [C++](./C++/find-the-shortest-superstring-ii.cpp) [Python](./Python/find-the-shortest-superstring-ii.py) | _O(n + m)_ | _O(n + m)_ | Easy | 🔒 | `KMP Algorithm`
 
 <br/>
 <div align="right">
@@ -1040,6 +1044,7 @@
 3528 | [Unit Conversion I](https://leetcode.com/problems/unit-conversion-i/) | [C++](./C++/unit-conversion-i.cpp) [Python](./Python/unit-conversion-i.py) | _O(n)_ | _O(n)_ | Medium | | BFS
 3535 | [Unit Conversion II](https://leetcode.com/problems/unit-conversion-ii/) | [C++](./C++/unit-conversion-ii.cpp) [Python](./Python/unit-conversion-ii.py) | _O(n + qlogm)_ | _O(n)_ | Medium | 🔒 | BFS, Fast Exponentiation
 3552 | [Grid Teleportation Traversal](https://leetcode.com/problems/grid-teleportation-traversal/) | [C++](./C++/grid-teleportation-traversal.cpp) [Python](./Python/grid-teleportation-traversal.py) | _O(m * n)_ | _O(m * n)_ | Medium |  | 0-1 BFS, Deque
+3568 | [Minimum Moves to Clean the Classroom](https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/) | [C++](./C++/minimum-moves-to-clean-the-classroom.cpp) [Python](./Python/minimum-moves-to-clean-the-classroom.py) | _O(m * n * 2^l)_ | _O(m * n * 2^l)_ | Medium |  | BFS, Bitmasks
 
 <br/>
 <div align="right">
@@ -1882,6 +1887,7 @@
 3521  | [Find Product Recommendation Pairs](https://leetcode.com/problems/find-product-recommendation-pairs/) | [MySQL](./MySQL/find-product-recommendation-pairs.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Medium           |||
 3554  | [Find Category Recommendation Pairs](https://leetcode.com/problems/find-category-recommendation-pairs/) | [MySQL](./MySQL/find-category-recommendation-pairs.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Hard           |||
 3564  | [Seasonal Sales Analysis](https://leetcode.com/problems/seasonal-sales-analysis/) | [MySQL](./MySQL/seasonal-sales-analysis.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function|
+3570  | [Find Books with No Available Copies](https://leetcode.com/problems/find-books-with-no-available-copies/) | [MySQL](./MySQL/find-books-with-no-available-copies.sql) | _O(nlogn)_ | _O(n)_       | Easy           |||
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
