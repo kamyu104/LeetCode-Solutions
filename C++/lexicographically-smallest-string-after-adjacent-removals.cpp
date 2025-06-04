@@ -1,7 +1,7 @@
 // Time:  O(n^3)
 // Space: O(n^2)
 
-// dp2
+// dp
 class Solution {
 public:
     string lexicographicallySmallestString(string s) {
