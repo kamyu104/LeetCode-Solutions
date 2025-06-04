@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3559%20%2F%203570-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3565%20%2F%203571-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -756,6 +756,7 @@
 3516 | [Find Closest Person](https://leetcode.com/problems/find-closest-person/) | [C++](./C++/find-closest-person.cpp) [Python](./Python/find-closest-person.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 3519 | [Count Numbers with Non-Decreasing Digits](https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/) | [C++](./C++/count-numbers-with-non-decreasing-digits.cpp) [Python](./Python/count-numbers-with-non-decreasing-digits.py) | _O(n^2)_ | _O(n)_ | Hard | | Math, Stars and Bars, Combinatorics |
 3556 | [Sum of Largest Prime Substrings](https://leetcode.com/problems/sum-of-largest-prime-substrings/) | [C++](./C++/sum-of-largest-prime-substrings.cpp) [Python](./Python/sum-of-largest-prime-substrings.py) | _O(n^2 * sqrt(r))_ | _O(n^2)_ | Medium | | Number Theory, Quick Select |
+3560 | [Find Minimum Log Transportation Cost](https://leetcode.com/problems/find-minimum-log-transportation-cost/) | [C++](./C++/find-minimum-log-transportation-cost.cpp) [Python](./Python/find-minimum-log-transportation-cost.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 
 <br/>
 <div align="right">
@@ -1092,6 +1093,7 @@
 2741 | [Special Permutations](https://leetcode.com/problems/special-permutations/) | [C++](./C++/special-permutations.cpp) [Python](./Python/special-permutations.py) | _O(n^2 * 2^n)_   | _O(n * 2^n)_        | Medium         | | Backtracking, Memoization
 3211 | [Generate Binary Strings Without Adjacent Zeros](https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/) | [C++](./C++/generate-binary-strings-without-adjacent-zeros.cpp) [Python](./Python/generate-binary-strings-without-adjacent-zeros.py) | _O(n * 2^n)_   | _O(n)_        | Medium         | | Backtracking, BFS
 3437 | [Permutations III](https://leetcode.com/problems/permutations-iii/) | [C++](./C++/permutations-iii.cpp) [Python](./Python/permutations-iii.py) | _O(n * n!)_   | _O(n)_        | Medium         | 🔒 | Backtracking, Bitmasks
+3565 | [Sequential Grid Path Cover](https://leetcode.com/problems/sequential-grid-path-cover/) | [C++](./C++/sequential-grid-path-cover.cpp) [Python](./Python/sequential-grid-path-cover.py) | _O(m * n * 3^(m * n))_   | _O(m * n)_        | Medium         | 🔒 | Backtracking
 
 <br/>
 <div align="right">
@@ -1290,6 +1292,8 @@
 3539 | [Find Sum of Array Product of Magical Sequences](https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences/) | [C++](./C++/find-sum-of-array-product-of-magical-sequences.cpp) [Python](./Python/find-sum-of-array-product-of-magical-sequences.py) | _O(n * k * m^2)_   | _O(k * m^2)_        | Hard         | | DP, Combinatorics
 3543 | [Maximum Weighted K-Edge Path](https://leetcode.com/problems/maximum-weighted-k-edge-path/) | [C++](./C++/maximum-weighted-k-edge-path.cpp) [Python](./Python/maximum-weighted-k-edge-path.py) | _O(k * e * t)_   | _O(n * t)_        | Medium         | | DP
 3544 | [Subtree Inversion Sum](https://leetcode.com/problems/subtree-inversion-sum/) | [C++](./C++/subtree-inversion-sum.cpp) [Python](./Python/subtree-inversion-sum.py) | _O(n)_   | _O(n)_        | Hard         | | DFS, Tree DP
+3562 | [Maximum Profit from Trading Stocks with Discounts](https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/) | [C++](./C++/maximum-profit-from-trading-stocks-with-discounts.cpp) [Python](./Python/maximum-profit-from-trading-stocks-with-discounts.py) | _O(n * b)_   | _O(n + b)_        | Hard         | | DFS, Tree DP
+3563 | [Lexicographically Smallest String After Adjacent Removals](https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/) | [C++](./C++/lexicographically-smallest-string-after-adjacent-removals.cpp) [Python](./Python/lexicographically-smallest-string-after-adjacent-removals.py) | _O(n^3)_   | _O(n^2)_        | Hard         | | DFS, Tree DP
 
 <br/>
 <div align="right">
@@ -1589,6 +1593,7 @@
 3507 | [Minimum Pair Removal to Sort Array I](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/) | [C++](./C++/minimum-pair-removal-to-sort-array-i.cpp) [Python](./Python/minimum-pair-removal-to-sort-array-i.py) | _O(nlogn)_ | _O(n)_ | Easy | | Simulation, Doubly Linked List, Sorted List, BST
 3510 | [Minimum Pair Removal to Sort Array II](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/) | [C++](./C++/minimum-pair-removal-to-sort-array-ii.cpp) [Python](./Python/minimum-pair-removal-to-sort-array-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Simulation, Doubly Linked List, Sorted List, BST
 3522 | [Calculate Score After Performing Instructions](https://leetcode.com/problems/calculate-score-after-performing-instructions/) | [C++](./C++/calculate-score-after-performing-instructions.cpp) [Python](./Python/calculate-score-after-performing-instructions.py) | _O(n)_ | _O(n)_ | Medium | | Simulation
+3561 | [Resulting String After Adjacent Removals](https://leetcode.com/problems/resulting-string-after-adjacent-removals/) | [C++](./C++/resulting-string-after-adjacent-removals.cpp) [Python](./Python/resulting-string-after-adjacent-removals.py) | _O(n)_ | _O(1)_ | Medium | | Simulation, Stack
 
 <br/>
 <div align="right">
@@ -1876,7 +1881,7 @@
 3497  | [Analyze Subscription Conversion](https://leetcode.com/problems/analyze-subscription-conversion/) | [MySQL](./MySQL/analyze-subscription-conversion.sql) | _O(nlogn)_ | _O(n)_       | Medium           |||
 3521  | [Find Product Recommendation Pairs](https://leetcode.com/problems/find-product-recommendation-pairs/) | [MySQL](./MySQL/find-product-recommendation-pairs.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Medium           |||
 3554  | [Find Category Recommendation Pairs](https://leetcode.com/problems/find-category-recommendation-pairs/) | [MySQL](./MySQL/find-category-recommendation-pairs.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Hard           |||
-
+3564  | [Seasonal Sales Analysis](https://leetcode.com/problems/seasonal-sales-analysis/) | [MySQL](./MySQL/seasonal-sales-analysis.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function|
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
