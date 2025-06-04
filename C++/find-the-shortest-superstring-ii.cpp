@@ -1,7 +1,7 @@
 // Time:  O(n + m)
 // Space: O(n + m)
 
-// kmp
+// kmp algorithm
 class Solution {
 public:
     string shortestSuperstring(string s1, string s2) {
