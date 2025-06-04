@@ -1,7 +1,7 @@
 # Time:  O(n + m)
 # Space: O(n + m)
 
-# kmp
+# kmp algorithm
 class Solution(object):
     def shortestSuperstring(self, s1, s2):
         """
