@@ -262,7 +262,6 @@
 3548 | [Equal Sum Grid Partition II](https://leetcode.com/problems/equal-sum-grid-partition-ii/) | [C++](./C++/equal-sum-grid-partition-ii.cpp) [Python](./Python/equal-sum-grid-partition-ii.py) | _O(m * n)_ | _O(m * n)_ | Hard | | Array, Hash Table
 3549 | [Multiply Two Polynomials](https://leetcode.com/problems/multiply-two-polynomials/) | [C++](./C++/multiply-two-polynomials.cpp) [Python](./Python/multiply-two-polynomials.py) | _O((n + m) * log(n + m))_ | _O(n + m)_ | Hard | 🔒 | `Fast Fourier Transform`, FFT
 3550 | [Smallest Index With Digit Sum Equal to Index](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/) | [C++](./C++/smallest-index-with-digit-sum-equal-to-index.cpp) [Python](./Python/smallest-index-with-digit-sum-equal-to-index.py) | _O(nlogr)_ | _O(1)_ | Easy | | Array
-3567 | [Minimum Absolute Difference in Sliding Submatrix](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/) | [C++](./C++/minimum-absolute-difference-in-sliding-submatrix.cpp) [Python](./Python/minimum-absolute-difference-in-sliding-submatrix.py) | _O(m * n * k^2)_ | _O(k^2)_ | Medium | | Brute Force, Sort, BST, Sorted List
 3569 | [Maximize Count of Distinct Primes After Split](https://leetcode.com/problems/maximize-count-of-distinct-primes-after-splitx/) | [C++](./C++/maximize-count-of-distinct-primes-after-split.cpp) [Python](./Python/maximize-count-of-distinct-primes-after-split.py) | _O(r + nlogn + qlogn)_ | _O(r + n)_ | Medium | | Number Theory, BST, Sorted List, Segment Tree
 
 <br/>
@@ -912,6 +911,7 @@
 3485 | [Longest Common Prefix of K Strings After Removal](https://leetcode.com/problems/longest-common-prefix-of-k-strings-after-removal/) | [C++](./C++/longest-common-prefix-of-k-strings-after-removal.cpp) [Python](./Python/longest-common-prefix-of-k-strings-after-removal.py) | _O(l * nlogn)_ | _O(n)_ | Hard | | Sort, Sliding Window, Prefix Sum, Trie
 3486 | [Longest Special Path II](https://leetcode.com/problems/longest-special-path-ii/) | [C++](./C++/longest-special-path-ii.cpp) [Python](./Python/longest-special-path-ii.py) | _O(n + e)_ | _O(n + e)_ | Hard | | DFS, Two Pointers, Sliding Window, Prefix Sum
 3555 | [Smallest Subarray to Sort in Every Sliding Window](https://leetcode.com/problems/smallest-subarray-to-sort-in-every-sliding-window/) | [C++](./C++/smallest-subarray-to-sort-in-every-sliding-window.cpp) [Python](./Python/smallest-subarray-to-sort-in-every-sliding-window.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Mono Stack, Two Pointers
+3567 | [Minimum Absolute Difference in Sliding Submatrix](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/) | [C++](./C++/minimum-absolute-difference-in-sliding-submatrix.cpp) [Python](./Python/minimum-absolute-difference-in-sliding-submatrix.py) | _O(m * n * k^2)_ | _O(k^2)_ | Medium | | Brute Force, Sort, Two Pointers, Sliding Window, BST, Sorted List
 
 <br/>
 <div align="right">
