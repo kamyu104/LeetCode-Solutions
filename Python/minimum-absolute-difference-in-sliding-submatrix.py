@@ -4,7 +4,7 @@
 from sortedcontainers import SortedList
 
 
-# brute force, sorted List
+# two pointers, sliding window, sorted List
 class Solution(object):
     def minAbsDiff(self, grid, k):
         """
