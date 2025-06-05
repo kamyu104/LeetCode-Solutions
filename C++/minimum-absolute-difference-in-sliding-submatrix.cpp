@@ -1,7 +1,7 @@
 // Time:  O(m * n * k^2)
 // Space: O(k^2)
 
-// brute force, bst
+// two pointers, sliding window, bst
 class Solution {
 public:
     vector<vector<int>> minAbsDiff(vector<vector<int>>& grid, int k) {
