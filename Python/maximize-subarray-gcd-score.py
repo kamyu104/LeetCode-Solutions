@@ -1,7 +1,7 @@
 # Time:  O(nlogn * (logr)^2)
 # Space: O(n + (logr)^2)
 
-# suffix-gcd states, dp, binary search
+# number theory, suffix-gcd states, dp, binary search
 class Solution(object):
     def maxGCDScore(self, nums, k):
         """
@@ -44,7 +44,7 @@ class Solution(object):
 
 # Time:  O(n^2 + n * logr)
 # Space: O(1)
-# brute force
+# number theory, brute force
 class Solution2(object):
     def maxGCDScore(self, nums, k):
         """
