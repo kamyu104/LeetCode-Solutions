@@ -1,5 +1,5 @@
-# Time:  O(n * (logr)^2 * logn)
-# Space: O((logr)^2 + n)
+# Time:  O(nlogn * (logr)^2)
+# Space: O(n + (logr)^2)
 
 # suffix-gcd states, dp, binary search
 class Solution(object):
