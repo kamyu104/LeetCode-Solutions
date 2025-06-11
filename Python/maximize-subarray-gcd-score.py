@@ -1,4 +1,4 @@
-# Time:  O(nlogn * logr)
+# Time:  O(nlogn * logr), r = max(nums)
 # Space: O(n + logr)
 
 # number theory, suffix-gcd states, dp, binary search
@@ -42,7 +42,7 @@ class Solution(object):
         return result
 
 
-# Time:  O(n^2 + n * logr)
+# Time:  O(n^2 + n * logr), r = max(nums)
 # Space: O(1)
 # number theory, brute force
 class Solution2(object):
