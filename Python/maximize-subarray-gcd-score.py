@@ -1,5 +1,5 @@
-# Time:  O(nlogn * (logr)^2)
-# Space: O(n + (logr)^2)
+# Time:  O(nlogn * logr)
+# Space: O(n + logr)
 
 # number theory, suffix-gcd states, dp, binary search
 class Solution(object):
@@ -27,7 +27,7 @@ class Solution(object):
         for i, x in enumerate(nums):
             new_dp = {}
             new_dp[x, lookup[i]] = [i]*2
-            for (g, e), v in dp.iteritems():  # |g| = O(logr), |e| = O(logr)
+            for (g, e), v in dp.iteritems():  # |g * e| = O(logr)
                 ng = gcd(g, x)
                 ne = min(e, lookup[i])
                 if (ng, ne) not in new_dp:
@@ -37,7 +37,7 @@ class Solution(object):
                 right = bisect_right(lookup2[ne], i)-1  # Time: O(logn)
                 new_dp[ng, ne][1] = min(new_dp[ng, ne][1], v[0] if right-left+1 <= k else lookup2[ne][right-k]+1)
             dp = new_dp
-            for (g, e), v in dp.iteritems():  # |g| = O(logr), |e| = O(logr)
+            for (g, e), v in dp.iteritems():  # |g * e| = O(logr)
                 result = max(result, g*(i-v[0]+1)<<e, g*(i-v[1]+1)<<(e+1))
         return result
 
