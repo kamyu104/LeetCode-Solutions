@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3571%20%2F%203571-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3575%20%2F%203580-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -602,6 +602,7 @@
 3488 | [Closest Equal Element Queries](https://leetcode.com/problems/closest-equal-element-queries/) | [C++](./C++/closest-equal-element-queries.cpp) [Python](./Python/closest-equal-element-queries.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
 3527 | [Find the Most Common Response](https://leetcode.com/problems/find-the-most-common-response/) | [C++](./C++/find-the-most-common-response.cpp) [Python](./Python/find-the-most-common-response.py) | _O(n * l)_ | _O(n * l)_ | Medium | | Hash Table, Freq Table
 3541 | [Find Most Frequent Vowel and Consonant](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/) | [C++](./C++/find-most-frequent-vowel-and-consonant.cpp) [Python](./Python/find-most-frequent-vowel-and-consonant.py) | _O(n + 26)_ | _O(26)_ | Easy | | Freq Table
+3572 | [Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values](https://leetcode.com/problems/maximize-ysum-by-picking-a-triplet-of-distinct-xvalues/) | [C++](./C++/maximize-ysum-by-picking-a-triplet-of-distinct-xvalues.cpp) [Python](./Python/maximize-ysum-by-picking-a-triplet-of-distinct-xvalues.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table, Quick Select
 
 <br/>
 <div align="right">
@@ -1299,6 +1300,9 @@
 3544 | [Subtree Inversion Sum](https://leetcode.com/problems/subtree-inversion-sum/) | [C++](./C++/subtree-inversion-sum.cpp) [Python](./Python/subtree-inversion-sum.py) | _O(n)_   | _O(n)_        | Hard         | | DFS, Tree DP
 3562 | [Maximum Profit from Trading Stocks with Discounts](https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/) | [C++](./C++/maximum-profit-from-trading-stocks-with-discounts.cpp) [Python](./Python/maximum-profit-from-trading-stocks-with-discounts.py) | _O(n * b)_   | _O(n + b)_        | Hard         | | DFS, Tree DP
 3563 | [Lexicographically Smallest String After Adjacent Removals](https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/) | [C++](./C++/lexicographically-smallest-string-after-adjacent-removals.cpp) [Python](./Python/lexicographically-smallest-string-after-adjacent-removals.py) | _O(n^3)_   | _O(n^2)_        | Hard         | | DP
+3573 | [Best Time to Buy and Sell Stock V](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/) | [C++](./C++/best-time-to-buy-and-sell-stock-v.cpp) [Python](./Python/best-time-to-buy-and-sell-stock-v.py) | _O(n * k)_   | _O(k)_        | Medium         | | DP
+3574 | [Maximize Subarray GCD Score](https://leetcode.com/problems/maximize-subarray-gcd-score/) | [C++](./C++/maximize-subarray-gcd-score.cpp) [Python](./Python/maximize-subarray-gcd-score.py) | _O(nlogn * logr)_   | _O(n + logr)_        | Hard         | | Brute Force, Number Theory, Suffix-GCD States, DP, Binary Search
+3575 | [Maximum Good Subtree Score](https://leetcode.com/problems/maximum-good-subtree-score/) | [C++](./C++/maximum-good-subtree-score.cpp) [Python](./Python/maximum-good-subtree-score.py) | _O(n * (2^10)^2)_   | _O(2^10)_        | Hard         | | Bitmasks, DFS, Tree DP
 
 <br/>
 <div align="right">
