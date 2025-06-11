@@ -9,51 +9,51 @@ public:
         const auto& iter_dfs = [&]() {
             using RET = vector<unordered_map<int, int>>;
             RET ret(2);
-            vector<tuple<int, int, int, shared_ptr<RET>, shared_ptr<RET>, RET *>> stk = {{1, 0, -1, nullptr, nullptr, &ret}};
+            vector<tuple<int, int, int, shared_ptr<RET>, RET *>> stk = {{1, 0, -1, nullptr, &ret}};
             while (!empty(stk)) {
-                const auto [step, u, i, new_ret, dp, ret] = stk.back(); stk.pop_back();
+                const auto [step, u, i, new_ret, ret] = stk.back(); stk.pop_back();
                 if (step == 1) {
-                    const auto& dp = make_shared<RET>(2);
-                    (*dp)[0][0] = (*dp)[1][0] = 0;
-                    stk.emplace_back(4, u, -1, nullptr, dp, ret);
-                    stk.emplace_back(2, u, 0, nullptr, dp, nullptr);
+                    (*ret)[0][0] = (*ret)[1][0] = 0;
+                    stk.emplace_back(4, u, -1, nullptr, ret);
+                    stk.emplace_back(2, u, 0, nullptr, ret);
                 } else if (step == 2) {
                     if (i == size(adj[u])) {
                         continue;
                     }
                     const auto& v = adj[u][i];
-                    stk.emplace_back(2, u, i + 1, nullptr, dp, nullptr);
+                    stk.emplace_back(2, u, i + 1, nullptr, ret);
                     const auto& new_ret = make_shared<RET>(2);
-                    stk.emplace_back(3, -1, -1, new_ret, dp, nullptr);
-                    stk.emplace_back(1, v, -1, nullptr, nullptr, new_ret.get());
+                    stk.emplace_back(3, -1, -1, new_ret, ret);
+                    stk.emplace_back(1, v, -1, nullptr, new_ret.get());
                 } else if (step == 3) {
-                    vector<unordered_map<int, int>> new_dp(2);
                     for (int i = 0; i < 2; ++i) {
-                        for (const auto& [j1, v1] : (*dp)[i]) {
+                        unordered_map<int, int> copy_dp((*ret)[i]);
+                        for (const auto& [j1, v1] : copy_dp) {
                             for (const auto& [j2, v2] : (*new_ret)[i]) {
                                 if (j1 + j2 <= budget) {
-                                    new_dp[i][j1 + j2] = max(new_dp[i][j1 + j2], v1 + v2);
+                                    (*ret)[i][j1 + j2] = max((*ret)[i][j1 + j2], v1 + v2);
                                 }
                             }
                         }
                     }
-                    *dp = move(new_dp);
                 } else if (step == 4) {
+                    RET new_ret(2);
                     for (int i = 0; i < 2; ++i) {
-                        for (const auto& [j, v] : (*dp)[0]) {
-                            (*ret)[i][j] = max((*ret)[i][j], v);
+                        for (const auto& [j, v] : (*ret)[0]) {
+                            new_ret[i][j] = max(new_ret[i][j], v);
                         }
                         const int cost = present[u] >> i;
                         if (cost > budget) {
                             continue;
                         }
                         const int profit = future[u] - cost;
-                        for (const auto& [j, v] : (*dp)[1]) {
+                        for (const auto& [j, v] : (*ret)[1]) {
                             if (j + cost <= budget) {
-                                (*ret)[i][j + cost] = max((*ret)[i][j + cost], v + profit);
+                                new_ret[i][j + cost] = max(new_ret[i][j + cost], v + profit);
                             }
                         }
                     }
+                    *ret = move(new_ret);
                 }
             }
             int result = 0;
@@ -84,15 +84,15 @@ public:
                 const auto& res = dfs(v);
                 vector<unordered_map<int, int>> new_dp(2);
                 for (int i = 0; i < 2; ++i) {
-                    for (const auto& [j1, v1] : dp[i]) {
+                    unordered_map<int, int> copy_dp(dp[i]);
+                    for (const auto& [j1, v1] : copy_dp) {
                         for (const auto& [j2, v2] : res[i]) {
                             if (j1 + j2 <= budget) {
-                                new_dp[i][j1 + j2] = max(new_dp[i][j1 + j2], v1 + v2);
+                                dp[i][j1 + j2] = max(dp[i][j1 + j2], v1 + v2);
                             }
                         }
                     }
                 }
-                dp = move(new_dp);
             }
             vector<unordered_map<int, int>> result(2);
             for (int i = 0; i < 2; ++i) {
