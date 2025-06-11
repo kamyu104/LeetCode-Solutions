@@ -6,6 +6,7 @@ class Solution {
 public:
     long long maximumProfit(vector<int>& prices, int k) {
         static const int64_t NEG_INF = numeric_limits<int64_t>::min();
+
         vector<int64_t> bought(k, NEG_INF);
         vector<int64_t> sold(k, NEG_INF);
         vector<int64_t> result(k + 1, NEG_INF);
