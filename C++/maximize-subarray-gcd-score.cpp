@@ -1,5 +1,5 @@
-// Time:  O(nlogn * (logr)^2)
-// Space: O(n + (logr)^2)
+// Time:  O(nlogn * logr)
+// Space: O(n + logr)
 
 // number theory, suffix-gcd states, dp, binary search
 class Solution {
@@ -24,8 +24,8 @@ public:
         for (int i = 0; i < size(nums); ++i) {
             unordered_map<int, unordered_map<int, vector<int>>> new_dp;
             new_dp[nums[i]][lookup[i]] = {i, i};
-            for (const auto& [g, e_v] : dp) {  // |g| = O(logr)
-                for (const auto& [e, v] : e_v) {  // |e| = O(logr)
+            for (const auto& [g, e_v] : dp) {  // |g * e| = O(logr)
+                for (const auto& [e, v] : e_v) {
                     const int ng = gcd(g, nums[i]);
                     const int ne = min(e, lookup[i]);
                     if (!new_dp.count(ng) || !new_dp[ng].count(ne)) {
@@ -38,8 +38,8 @@ public:
                 }
             }
             dp = move(new_dp);
-            for (const auto& [g, e_v] : dp) {  // |g| = O(logr)
-                for (const auto& [e, v] : e_v) {  // |e| = O(logr)
+            for (const auto& [g, e_v] : dp) {  // |g * e| = O(logr)
+                for (const auto& [e, v] : e_v) {
                     result = max(result, (static_cast<int64_t>(g) * (i - v[0] + 1)) << e);
                     result = max(result, (static_cast<int64_t>(g) * (i - v[1] + 1)) << (e + 1));
                 }
