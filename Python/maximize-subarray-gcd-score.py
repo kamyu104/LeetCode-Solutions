@@ -63,11 +63,11 @@ class Solution2(object):
             g = cnt = 0
             for j in xrange(i, len(nums)):
                 g = gcd(g, nums[j])
-                last_bit = nums[j]&-nums[j]
-                if last_bit < mn:
-                    mn = last_bit
+                lower_bit = nums[j]&-nums[j]
+                if lower_bit < mn:
+                    mn = lower_bit
                     cnt = 0
-                if last_bit == mn:
+                if lower_bit == mn:
                     cnt += 1
                 result = max(result, g*(j-i+1)*(2 if cnt <= k else 1))
                 if g*(len(nums)-i)*2 <= result:
