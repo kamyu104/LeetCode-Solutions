@@ -61,12 +61,12 @@ public:
         for (int i = 0; i < size(nums); ++i) {
             for (int j = i, g = 0, mn = INF, cnt = 0; j < size(nums); ++j) {
                 g = gcd(g, nums[j]);
-                const auto last_bit = nums[j] & -nums[j];
-                if (last_bit < mn) {
-                    mn = last_bit;
+                const auto lower_bit = nums[j] & -nums[j];
+                if (lower_bit < mn) {
+                    mn = lower_bit;
                     cnt = 0;
                 }
-                if (last_bit == mn) {
+                if (lower_bit == mn) {
                     ++cnt;
                 }
                 result = max(result, static_cast<int64_t>(g) * (j - i + 1) * (cnt <= k ? 2 : 1));
