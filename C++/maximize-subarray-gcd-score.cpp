@@ -70,7 +70,7 @@ public:
                     ++cnt;
                 }
                 result = max(result, static_cast<int64_t>(g) * (j - i + 1) * (cnt <= k ? 2 : 1));
-                if (g * (size(nums) - i) * 2 <= result) {
+                if (static_cast<int64_t>(g) * (size(nums) - i) * 2 <= result) {
                     break;
                 }
             }
