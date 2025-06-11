@@ -57,17 +57,20 @@ class Solution2(object):
                 a, b = b, a%b
             return a
 
+        def lower_bit(x):
+            return x&-x
+
         result = 0
         for i in xrange(len(nums)):
             mn = float("inf")
             g = cnt = 0
             for j in xrange(i, len(nums)):
                 g = gcd(g, nums[j])
-                lower_bit = nums[j]&-nums[j]
-                if lower_bit < mn:
-                    mn = lower_bit
+                bit = lower_bit(nums[j])
+                if bit < mn:
+                    mn = bit
                     cnt = 0
-                if lower_bit == mn:
+                if bit == mn:
                     cnt += 1
                 result = max(result, g*(j-i+1)*(2 if cnt <= k else 1))
                 if g*(len(nums)-i)*2 <= result:
