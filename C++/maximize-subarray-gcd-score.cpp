@@ -55,9 +55,11 @@ public:
 class Solution2 {
 public:
     long long maxGCDScore(vector<int>& nums, int k) {
+        static const int INF = numeric_limits<int>::max();
+
         int64_t result = 0;
         for (int i = 0; i < size(nums); ++i) {
-            for (int j = i, g = 0, mn = numeric_limits<int>::max(), cnt = 0; j < size(nums); ++j) {
+            for (int j = i, g = 0, mn = INF, cnt = 0; j < size(nums); ++j) {
                 g = gcd(g, nums[j]);
                 const auto last_bit = nums[j] & -nums[j];
                 if (last_bit < mn) {
