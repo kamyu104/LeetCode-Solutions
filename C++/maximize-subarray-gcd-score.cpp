@@ -57,16 +57,20 @@ public:
     long long maxGCDScore(vector<int>& nums, int k) {
         static const int INF = numeric_limits<int>::max();
 
+        const auto& lower_bit = [](int x) {
+            return x & -x;
+        };
+
         int64_t result = 0;
         for (int i = 0; i < size(nums); ++i) {
             for (int j = i, g = 0, mn = INF, cnt = 0; j < size(nums); ++j) {
                 g = gcd(g, nums[j]);
-                const auto lower_bit = nums[j] & -nums[j];
-                if (lower_bit < mn) {
-                    mn = lower_bit;
+                const auto& bit = lower_bit(nums[j]);
+                if (bit < mn) {
+                    mn = bit;
                     cnt = 0;
                 }
-                if (lower_bit == mn) {
+                if (bit == mn) {
                     ++cnt;
                 }
                 result = max(result, static_cast<int64_t>(g) * (j - i + 1) * (cnt <= k ? 2 : 1));
