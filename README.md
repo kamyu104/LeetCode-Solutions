@@ -1298,7 +1298,7 @@
 3543 | [Maximum Weighted K-Edge Path](https://leetcode.com/problems/maximum-weighted-k-edge-path/) | [C++](./C++/maximum-weighted-k-edge-path.cpp) [Python](./Python/maximum-weighted-k-edge-path.py) | _O(k * e * t)_   | _O(n * t)_        | Medium         | | DP
 3544 | [Subtree Inversion Sum](https://leetcode.com/problems/subtree-inversion-sum/) | [C++](./C++/subtree-inversion-sum.cpp) [Python](./Python/subtree-inversion-sum.py) | _O(n)_   | _O(n)_        | Hard         | | DFS, Tree DP
 3562 | [Maximum Profit from Trading Stocks with Discounts](https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/) | [C++](./C++/maximum-profit-from-trading-stocks-with-discounts.cpp) [Python](./Python/maximum-profit-from-trading-stocks-with-discounts.py) | _O(n * b)_   | _O(n + b)_        | Hard         | | DFS, Tree DP
-3563 | [Lexicographically Smallest String After Adjacent Removals](https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/) | [C++](./C++/lexicographically-smallest-string-after-adjacent-removals.cpp) [Python](./Python/lexicographically-smallest-string-after-adjacent-removals.py) | _O(n^3)_   | _O(n^2)_        | Hard         | | DFS
+3563 | [Lexicographically Smallest String After Adjacent Removals](https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/) | [C++](./C++/lexicographically-smallest-string-after-adjacent-removals.cpp) [Python](./Python/lexicographically-smallest-string-after-adjacent-removals.py) | _O(n^3)_   | _O(n^2)_        | Hard         | | DP
 
 <br/>
 <div align="right">
