@@ -1,7 +1,7 @@
 // Time:  O(nlogn * (logr)^2)
 // Space: O(n + (logr)^2)
 
-// suffix-gcd states, dp, binary search
+// number theory, suffix-gcd states, dp, binary search
 class Solution {
 public:
     long long maxGCDScore(vector<int>& nums, int k) {
@@ -51,7 +51,7 @@ public:
 
 // Time:  O(n^2 + n * logr)
 // Space: O(1)
-// brute force
+// number theory, brute force
 class Solution2 {
 public:
     long long maxGCDScore(vector<int>& nums, int k) {
