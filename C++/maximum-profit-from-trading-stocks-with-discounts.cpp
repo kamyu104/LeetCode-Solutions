@@ -82,7 +82,6 @@ public:
             dp[0][0] = dp[1][0] = 0;
             for (const auto& v : adj[u]) {
                 const auto& res = dfs(v);
-                vector<unordered_map<int, int>> new_dp(2);
                 for (int i = 0; i < 2; ++i) {
                     unordered_map<int, int> copy_dp(dp[i]);
                     for (const auto& [j1, v1] : copy_dp) {
