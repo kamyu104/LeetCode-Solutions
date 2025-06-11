@@ -81,11 +81,11 @@ public:
             vector<unordered_map<int, int>> dp(2);
             dp[0][0] = dp[1][0] = 0;
             for (const auto& v : adj[u]) {
-                const auto& res = dfs(v);
+                const auto& new_dp = dfs(v);
                 for (int i = 0; i < 2; ++i) {
                     unordered_map<int, int> copy_dp(dp[i]);
                     for (const auto& [j1, v1] : copy_dp) {
-                        for (const auto& [j2, v2] : res[i]) {
+                        for (const auto& [j2, v2] : new_dp[i]) {
                             if (j1 + j2 <= budget) {
                                 dp[i][j1 + j2] = max(dp[i][j1 + j2], v1 + v2);
                             }
