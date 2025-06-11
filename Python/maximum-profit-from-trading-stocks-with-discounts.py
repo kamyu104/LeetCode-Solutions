@@ -84,11 +84,10 @@ class Solution2(object):
             dp = [collections.defaultdict(int) for _ in xrange(2)]
             dp[0][0] = dp[1][0] = 0
             for v in adj[u]:
-                res = dfs(v)
-                new_dp = [collections.defaultdict(int) for _ in xrange(2)]
+                new_dp = dfs(v)
                 for i in xrange(2):
                     for j1, v1 in dp[i].items():
-                        for j2, v2 in res[i].iteritems():
+                        for j2, v2 in new_dp[i].iteritems():
                             if j1+j2 <= budget:
                                 dp[i][j1+j2] = max(dp[i][j1+j2], v1+v2)
             result = [collections.defaultdict(int) for _ in xrange(2)]
