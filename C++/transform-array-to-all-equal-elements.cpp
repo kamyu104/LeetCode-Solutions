@@ -22,3 +22,26 @@ public:
         return check(1) || check(-1);
     }
 };
+
+// Time:  O(n)
+// Space: O(1)
+// greedy
+class Solution2 {
+public:
+    bool canMakeEqual(vector<int>& nums, int k) {
+        const auto& check = [&](int target) {
+            vector<int> cnt(2);
+            int parity = 0;
+            for (int i = 0; i < size(nums); ++i) {
+                if (nums[i] == target) {
+                    continue;
+                }
+                cnt[parity] += i;
+                parity ^= 1;
+            }
+            return parity == 0 && cnt[1] - cnt[0] <= k;
+        };
+
+        return check(1) || check(-1);
+    }
+};
