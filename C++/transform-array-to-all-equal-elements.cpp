@@ -30,16 +30,18 @@ class Solution2 {
 public:
     bool canMakeEqual(vector<int>& nums, int k) {
         const auto& check = [&](int target) {
-            vector<int> cnt(2);
             int parity = 0;
-            for (int i = 0; i < size(nums); ++i) {
+            for (int i = 0, cnt = 0; i < size(nums); ++i) {
                 if (nums[i] == target) {
                     continue;
                 }
-                cnt[parity] += i;
+                cnt += parity ? i : -i;
+                if (cnt > k) {
+                    return false;
+                }
                 parity ^= 1;
             }
-            return parity == 0 && cnt[1] - cnt[0] <= k;
+            return parity == 0;
         };
 
         return check(1) || check(-1);
