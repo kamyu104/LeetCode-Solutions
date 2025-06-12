@@ -12,5 +12,4 @@ class Solution(object):
         def factorial(n):
             return reduce(lambda accu, x: (accu*x)%MOD, xrange(1, n+1), 1)
 
-        mn = min(complexity)
         return factorial(len(complexity)-1) if all(complexity[0] < complexity[i] for i in xrange(1, len(complexity))) else 0
