@@ -23,3 +23,26 @@ class Solution(object):
             return True
 
         return check(1) or check(-1)
+
+
+# Time:  O(n)
+# Space: O(1)
+# greedy
+class Solution2(object):
+    def canMakeEqual(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: bool
+        """
+        def check(target):
+            cnt = [0]*2
+            parity = 0
+            for i in xrange(len(nums)):
+                if nums[i] == target:
+                    continue
+                cnt[parity] += i
+                parity ^= 1
+            return parity == 0 and cnt[1]-cnt[0] <= k
+
+        return check(1) or check(-1)
