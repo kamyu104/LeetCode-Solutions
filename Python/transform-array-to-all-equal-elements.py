@@ -36,13 +36,14 @@ class Solution2(object):
         :rtype: bool
         """
         def check(target):
-            cnt = [0]*2
-            parity = 0
+            parity = cnt = 0
             for i in xrange(len(nums)):
                 if nums[i] == target:
                     continue
-                cnt[parity] += i
+                cnt += i if parity else -i
+                if cnt > k:
+                    return False
                 parity ^= 1
-            return parity == 0 and cnt[1]-cnt[0] <= k
+            return parity == 0
 
         return check(1) or check(-1)
