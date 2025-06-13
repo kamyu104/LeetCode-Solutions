@@ -132,6 +132,7 @@
      * Software Architecture
         * Foundations of Software Architecture
            * [Clean Architecture](https://www.amazon.com/dp/0134494164)
+           * [Get Your Hands Dirty on Clean Architecture](https://www.amazon.com/dp/B0CB74FW3J)
            * [Head First Software Architecture](https://www.amazon.com/dp/B0CW1JMNF2)
            * [Fundamentals of Software Architecture](https://www.amazon.com/dp/B0849MPK73)
         * Patterns and Implementation
