@@ -129,9 +129,10 @@
         * [Small Memory Software](https://www.amazon.com/dp/0201596075)
         * [Game Programming Patterns](https://gameprogrammingpatterns.com/)
      * Software Architecture
-        * Foundations of Software Architecture 
-           * [Fundamentals of Software Architecture](https://www.amazon.com/dp/B0849MPK73)
+        * Foundations of Software Architecture
            * [Clean Architecture](https://www.amazon.com/dp/0134494164)
+           * [Head First Software Architecture](https://www.amazon.com/dp/B0CW1JMNF2)
+           * [Fundamentals of Software Architecture](https://www.amazon.com/dp/B0849MPK73)
         * Patterns and Implementation
            * [Patterns of Enterprise Application Architecture](https://www.amazon.com/dp/0321127420)
            * [Pattern-Oriented Software Architecture Volume 2](https://www.amazon.com/dp/0471606952)
