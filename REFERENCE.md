@@ -124,6 +124,7 @@
         * [Refactoring](https://www.amazon.com/dp/0134757599)
         * [Refactoring Guru](https://refactoring.guru/)
     * Design Patterns
+        * [Head First Design Patterns](https://www.amazon.com/dp/B08P3X99QP)
         * [Design Patterns](https://www.amazon.com/dp/0201633612)
         * [Refactoring to Patterns](https://www.amazon.com/dp/0321213351)
         * [Small Memory Software](https://www.amazon.com/dp/0201596075)
