@@ -4,7 +4,7 @@
 import collections
 
 
-# dp
+# dp, greedy
 class Solution(object):
     def minOperations(self, word1, word2):
         """
