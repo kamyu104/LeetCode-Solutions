@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3575%20%2F%203580-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3580%20%2F%203580-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -761,6 +761,7 @@
 3519 | [Count Numbers with Non-Decreasing Digits](https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/) | [C++](./C++/count-numbers-with-non-decreasing-digits.cpp) [Python](./Python/count-numbers-with-non-decreasing-digits.py) | _O(n^2)_ | _O(n)_ | Hard | | Math, Stars and Bars, Combinatorics |
 3556 | [Sum of Largest Prime Substrings](https://leetcode.com/problems/sum-of-largest-prime-substrings/) | [C++](./C++/sum-of-largest-prime-substrings.cpp) [Python](./Python/sum-of-largest-prime-substrings.py) | _O(n^2 * sqrt(r))_ | _O(n^2)_ | Medium | | Number Theory, Quick Select |
 3560 | [Find Minimum Log Transportation Cost](https://leetcode.com/problems/find-minimum-log-transportation-cost/) | [C++](./C++/find-minimum-log-transportation-cost.cpp) [Python](./Python/find-minimum-log-transportation-cost.py) | _O(1)_ | _O(1)_ | Easy | | Math |
+3577 | [Count the Number of Computer Unlocking Permutations](https://leetcode.com/problems/count-the-number-of-computer-unlocking-permutations/) | [C++](./C++/count-the-number-of-computer-unlocking-permutations.cpp) [Python](./Python/count-the-number-of-computer-unlocking-permutations.py) | _O(n)_ | _O(1)_ | Medium | | Combinatorics |
 
 <br/>
 <div align="right">
@@ -1303,6 +1304,8 @@
 3573 | [Best Time to Buy and Sell Stock V](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/) | [C++](./C++/best-time-to-buy-and-sell-stock-v.cpp) [Python](./Python/best-time-to-buy-and-sell-stock-v.py) | _O(n * k)_   | _O(k)_        | Medium         | | DP
 3574 | [Maximize Subarray GCD Score](https://leetcode.com/problems/maximize-subarray-gcd-score/) | [C++](./C++/maximize-subarray-gcd-score.cpp) [Python](./Python/maximize-subarray-gcd-score.py) | _O(nlogn * logr)_   | _O(n + logr)_        | Hard         | | Brute Force, Number Theory, Suffix-GCD States, DP, Binary Search
 3575 | [Maximum Good Subtree Score](https://leetcode.com/problems/maximum-good-subtree-score/) | [C++](./C++/maximum-good-subtree-score.cpp) [Python](./Python/maximum-good-subtree-score.py) | _O(n * (2^10)^2)_   | _O(2^10)_        | Hard         | | Bitmasks, DFS, Tree DP
+3578 | [Count Partitions With Max-Min Difference at Most K](https://leetcode.com/problems/count-partitions-with-max-min-difference-at-most-k/) | [C++](./C++/count-partitions-with-max-min-difference-at-most-k.cpp) [Python](./Python/count-partitions-with-max-min-difference-at-most-k.py) | _O(n)_   | _O(n)_        | Medium         | | Mono Deque, Two Pointers, Sliding Window, DP, Prefix Sum
+3579 | [Minimum Steps to Convert String with Operations](https://leetcode.com/problems/minimum-steps-to-convert-string-with-operations/) | [C++](./C++/minimum-steps-to-convert-string-with-operations.cpp) [Python](./Python/minimum-steps-to-convert-string-with-operations.py) | _O(n^2)_   | _O(26^2)_        | Hard         | | DP
 
 <br/>
 <div align="right">
@@ -1494,6 +1497,7 @@
 3542 | [Minimum Operations to Convert All Elements to Zero](https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/) | [C++](./C++/minimum-operations-to-convert-all-elements-to-zero.cpp) [Python](./Python/minimum-operations-to-convert-all-elements-to-zero.py) | _O(n)_   | _O(n)_        | Medium         | | Greedy, Mono Stack
 3545 | [Minimum Deletions for At Most K Distinct Characters](https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/) | [C++](./C++/minimum-deletions-for-at-most-k-distinct-characters.cpp) [Python](./Python/minimum-deletions-for-at-most-k-distinct-characters.py) | _O(n + 26)_   | _O(n + 26)_        | Easy         | | Freq Table, Counting Sort, Greedy
 3557 | [Find Maximum Number of Non Intersecting Substrings](https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/) | [C++](./C++/find-maximum-number-of-non-intersecting-substrings.cpp) [Python](./Python/find-maximum-number-of-non-intersecting-substrings.py) | _O(n)_   | _O(26)_        | Medium         | | Greedy, Hash Table
+3576 | [Transform Array to All Equal Elements](https://leetcode.com/problems/transform-array-to-all-equal-elements/) | [C++](./C++/transform-array-to-all-equal-elements.cpp) [Python](./Python/transform-array-to-all-equal-elements.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 
 <br/>
 <div align="right">
@@ -1892,6 +1896,7 @@
 3554  | [Find Category Recommendation Pairs](https://leetcode.com/problems/find-category-recommendation-pairs/) | [MySQL](./MySQL/find-category-recommendation-pairs.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Hard           |||
 3564  | [Seasonal Sales Analysis](https://leetcode.com/problems/seasonal-sales-analysis/) | [MySQL](./MySQL/seasonal-sales-analysis.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function|
 3570  | [Find Books with No Available Copies](https://leetcode.com/problems/find-books-with-no-available-copies/) | [MySQL](./MySQL/find-books-with-no-available-copies.sql) | _O(nlogn)_ | _O(n)_       | Easy           |||
+3580  | [Find Consistently Improving Employees](https://leetcode.com/problems/find-consistently-improving-employees/) | [MySQL](./MySQL/find-consistently-improving-employees.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
