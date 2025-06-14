@@ -1,7 +1,7 @@
 // Time:  O(n^2)
 // Space: O(26^2)
 
-// dp
+// dp, greedy
 class Solution {
 public:
     int minOperations(string word1, string word2) {
