@@ -31,7 +31,6 @@ class Solution(object):
                 dp[left][right] = curr
                 left -= 1
                 right += 1
-                
         dp2 = [float("inf")]*(n+1)
         dp2[0] = 0
         for i in xrange(n):
