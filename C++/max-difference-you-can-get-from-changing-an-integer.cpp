@@ -12,7 +12,7 @@ public:
                 break;
             }
         }
-        char a= '0';
+        char a = '0';
         if (digits[0] != '1') {
             a = digits[0];
         } else {
