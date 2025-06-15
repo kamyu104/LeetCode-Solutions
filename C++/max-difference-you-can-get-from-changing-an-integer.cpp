@@ -5,7 +5,7 @@ class Solution {
 public:
     int maxDiff(int num) {
         const auto& digits = to_string(num);
-        char b;
+        char b = '0';
         for (const auto& c : digits) {
             if (c < '9') {
                 b = c;
@@ -13,14 +13,10 @@ public:
             }
         }
         char a = '0';
-        if (digits[0] != '1') {
-            a = digits[0];
-        } else {
-            for (const auto& c : digits) {
-                if (c > '1') {
-                    a = c;
-                    break;
-                }
+        for (const auto& c : digits) {
+            if (c > '1') {
+                a = c;
+                break;
             }
         }
         string big(digits), small(digits);
