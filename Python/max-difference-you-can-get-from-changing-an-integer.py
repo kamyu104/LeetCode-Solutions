@@ -17,5 +17,7 @@ class Solution(object):
             for a in digits:
                 if a > '1':
                     break
+            else:
+                a = '0'
         return int(digits.replace(b, '9')) - \
                int(digits.replace(a, '1' if digits[0] != '1' else '0'))
