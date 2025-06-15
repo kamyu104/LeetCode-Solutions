@@ -34,7 +34,6 @@ class Solution(object):
                 l += 1
             return reverse(result, l)
     
-        digits = str(num)
         b = find(num, lambda x: x < 9)
         a = find(num, lambda x: x > 1)
         return replace(num, b, 9)-replace(num, a, 1 if reverse(num, 0)%10 != 1 else 0)
