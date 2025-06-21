@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3580%20%2F%203580-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3586%20%2F%203586-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -355,6 +355,7 @@
 3498 | [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/) | [C++](./C++/reverse-degree-of-a-string.cpp) [Python](./Python/reverse-degree-of-a-string.py) | _O(n)_   | _O(1)_        | Easy         | | String
 3529 | [Count Cells in Overlapping Horizontal and Vertical Substrings](https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/) | [C++](./C++/count-cells-in-overlapping-horizontal-and-vertical-substrings.cpp) [Python](./Python/count-cells-in-overlapping-horizontal-and-vertical-substrings.py) | _O(n * m)_ | _O(n * m)_ | Medium | | `Z-Function`
 3571 | [Find the Shortest Superstring II](https://leetcode.com/problems/find-the-shortest-superstring-ii/) | [C++](./C++/find-the-shortest-superstring-ii.cpp) [Python](./Python/find-the-shortest-superstring-ii.py) | _O(n + m)_ | _O(n + m)_ | Easy | 🔒 | `KMP Algorithm`
+3582 | [Generate Tag for Video Caption](https://leetcode.com/problems/generate-tag-for-video-caption/) | [C++](./C++/generate-tag-for-video-caption.cpp) [Python](./Python/generate-tag-for-video-caption.py) | _O(n)_ | _O(1)_ | Easy | | String
 
 <br/>
 <div align="right">
@@ -468,6 +469,7 @@
 3553 | [Minimum Weighted Subgraph With the Required Paths II](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/)| [C++](./C++/minimum-weighted-subgraph-with-the-required-paths-ii.cpp) [Python](./Python/minimum-weighted-subgraph-with-the-required-paths-ii.py)| _O(n + q)_ | _O(n + q)_ | Hard | | Tree, DFS, `Tarjan's Offline LCA Algorithm` |
 3558 | [Number of Ways to Assign Edge Weights I](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/)| [C++](./C++/number-of-ways-to-assign-edge-weights-i.cpp) [Python](./Python/number-of-ways-to-assign-edge-weights-i.py)| _O(n)_ | _O(n)_ | Medium | | Tree, BFS, Combinatorics |
 3559 | [Number of Ways to Assign Edge Weights II](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/)| [C++](./C++/number-of-ways-to-assign-edge-weights-ii.cpp) [Python](./Python/number-of-ways-to-assign-edge-weights-ii.py)| _O(n + q)_ | _O(n + q)_ | Medium | | Tree, DFS, `Tarjan's Offline LCA Algorithm`, Combinatorics |
+3585 | [Find Weighted Median Node in Tree](https://leetcode.com/problems/find-weighted-median-node-in-tree/)| [C++](./C++/find-weighted-median-node-in-tree.cpp) [Python](./Python/find-weighted-median-node-in-tree.py)| _O(n + qlogh)_ | _O(n + q)_ | Hard | | Tree, DFS, `Tarjan's Offline LCA Algorithm`, Binary Search |
 
 <br/>
 <div align="right">
@@ -603,6 +605,7 @@
 3527 | [Find the Most Common Response](https://leetcode.com/problems/find-the-most-common-response/) | [C++](./C++/find-the-most-common-response.cpp) [Python](./Python/find-the-most-common-response.py) | _O(n * l)_ | _O(n * l)_ | Medium | | Hash Table, Freq Table
 3541 | [Find Most Frequent Vowel and Consonant](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/) | [C++](./C++/find-most-frequent-vowel-and-consonant.cpp) [Python](./Python/find-most-frequent-vowel-and-consonant.py) | _O(n + 26)_ | _O(26)_ | Easy | | Freq Table
 3572 | [Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values](https://leetcode.com/problems/maximize-ysum-by-picking-a-triplet-of-distinct-xvalues/) | [C++](./C++/maximize-ysum-by-picking-a-triplet-of-distinct-xvalues.cpp) [Python](./Python/maximize-ysum-by-picking-a-triplet-of-distinct-xvalues.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table, Quick Select
+3581 | [Count Odd Letters from Number](https://leetcode.com/problems/count-odd-letters-from-number/) | [C++](./C++/count-odd-letters-from-number.cpp) [Python](./Python/count-odd-letters-from-number.py) | _O(logn)_ | _O(26)_ | Easy |🔒| Freq Table
 
 <br/>
 <div align="right">
@@ -914,6 +917,7 @@
 3486 | [Longest Special Path II](https://leetcode.com/problems/longest-special-path-ii/) | [C++](./C++/longest-special-path-ii.cpp) [Python](./Python/longest-special-path-ii.py) | _O(n + e)_ | _O(n + e)_ | Hard | | DFS, Two Pointers, Sliding Window, Prefix Sum
 3555 | [Smallest Subarray to Sort in Every Sliding Window](https://leetcode.com/problems/smallest-subarray-to-sort-in-every-sliding-window/) | [C++](./C++/smallest-subarray-to-sort-in-every-sliding-window.cpp) [Python](./Python/smallest-subarray-to-sort-in-every-sliding-window.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Mono Stack, Two Pointers
 3567 | [Minimum Absolute Difference in Sliding Submatrix](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/) | [C++](./C++/minimum-absolute-difference-in-sliding-submatrix.cpp) [Python](./Python/minimum-absolute-difference-in-sliding-submatrix.py) | _O(m * n * k^2)_ | _O(k^2)_ | Medium | | Brute Force, Sort, Two Pointers, Sliding Window, BST, Sorted List
+3584 | [Maximum Product of First and Last Elements of a Subsequence](https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/) | [C++](./C++/maximum-product-of-first-and-last-elements-of-a-subsequence.cpp) [Python](./Python/maximum-product-of-first-and-last-elements-of-a-subsequence.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -1306,6 +1310,7 @@
 3575 | [Maximum Good Subtree Score](https://leetcode.com/problems/maximum-good-subtree-score/) | [C++](./C++/maximum-good-subtree-score.cpp) [Python](./Python/maximum-good-subtree-score.py) | _O(n * (2^10)^2)_   | _O(2^10)_        | Hard         | | Bitmasks, DFS, Tree DP
 3578 | [Count Partitions With Max-Min Difference at Most K](https://leetcode.com/problems/count-partitions-with-max-min-difference-at-most-k/) | [C++](./C++/count-partitions-with-max-min-difference-at-most-k.cpp) [Python](./Python/count-partitions-with-max-min-difference-at-most-k.py) | _O(n)_   | _O(n)_        | Medium         | | Mono Deque, Two Pointers, Sliding Window, DP, Prefix Sum
 3579 | [Minimum Steps to Convert String with Operations](https://leetcode.com/problems/minimum-steps-to-convert-string-with-operations/) | [C++](./C++/minimum-steps-to-convert-string-with-operations.cpp) [Python](./Python/minimum-steps-to-convert-string-with-operations.py) | _O(n^2)_   | _O(26^2)_        | Hard         | | DP
+3583 | [Count Special Triplets](https://leetcode.com/problems/count-special-triplets/) | [C++](./C++/count-special-triplets.cpp) [Python](./Python/count-special-triplets.py) | _O(n)_   | _O(n)_        | Medium         | | DP, Freq Table
 
 <br/>
 <div align="right">
@@ -1897,6 +1902,7 @@
 3564  | [Seasonal Sales Analysis](https://leetcode.com/problems/seasonal-sales-analysis/) | [MySQL](./MySQL/seasonal-sales-analysis.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function|
 3570  | [Find Books with No Available Copies](https://leetcode.com/problems/find-books-with-no-available-copies/) | [MySQL](./MySQL/find-books-with-no-available-copies.sql) | _O(nlogn)_ | _O(n)_       | Easy           |||
 3580  | [Find Consistently Improving Employees](https://leetcode.com/problems/find-consistently-improving-employees/) | [MySQL](./MySQL/find-consistently-improving-employees.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function |
+3586  | [Find COVID Recovery Patients](https://leetcode.com/problems/find-covid-recovery-patients/) | [MySQL](./MySQL/find-covid-recovery-patients.sql) | _O(n^2)_ | _O(n^2)_       | Medium           || |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
