@@ -1,4 +1,4 @@
-// Time:  O(n + qlogn)
+// Time:  O(n + qlogh)
 // Space: O(n + q)
 
 class UnionFind {
@@ -170,7 +170,7 @@ public:
     }
 };
 
-// Time:  O(n + qlogn)
+// Time:  O(n + qlogh)
 // Space: O(n + q)
 // dfs, Tarjan's Offline LCA Algorithm, binary search
 class Solution2 {
