@@ -1,4 +1,4 @@
-# Time:  O(n + qlogn)
+# Time:  O(n + qlogh)
 # Space: O(n + q)
 
 class UnionFind(object):  # Time: O(n * alpha(n)), Space: O(n)
@@ -141,7 +141,7 @@ class Solution(object):
         return iter_dfs2()
 
 
-# Time:  O(n + qlogn)
+# Time:  O(n + qlogh)
 # Space: O(n + q)
 # dfs, Tarjan's Offline LCA Algorithm, binary search
 class Solution2(object):
