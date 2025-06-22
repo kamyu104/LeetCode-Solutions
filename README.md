@@ -469,7 +469,7 @@
 3553 | [Minimum Weighted Subgraph With the Required Paths II](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/)| [C++](./C++/minimum-weighted-subgraph-with-the-required-paths-ii.cpp) [Python](./Python/minimum-weighted-subgraph-with-the-required-paths-ii.py)| _O(n + q)_ | _O(n + q)_ | Hard | | Tree, DFS, `Tarjan's Offline LCA Algorithm` |
 3558 | [Number of Ways to Assign Edge Weights I](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/)| [C++](./C++/number-of-ways-to-assign-edge-weights-i.cpp) [Python](./Python/number-of-ways-to-assign-edge-weights-i.py)| _O(n)_ | _O(n)_ | Medium | | Tree, BFS, Combinatorics |
 3559 | [Number of Ways to Assign Edge Weights II](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/)| [C++](./C++/number-of-ways-to-assign-edge-weights-ii.cpp) [Python](./Python/number-of-ways-to-assign-edge-weights-ii.py)| _O(n + q)_ | _O(n + q)_ | Medium | | Tree, DFS, `Tarjan's Offline LCA Algorithm`, Combinatorics |
-3585 | [Find Weighted Median Node in Tree](https://leetcode.com/problems/find-weighted-median-node-in-tree/)| [C++](./C++/find-weighted-median-node-in-tree.cpp) [Python](./Python/find-weighted-median-node-in-tree.py)| _O(n + qlogh)_ | _O(n + q)_ | Hard | | Tree, DFS, `Tarjan's Offline LCA Algorithm`, Binary Search |
+3585 | [Find Weighted Median Node in Tree](https://leetcode.com/problems/find-weighted-median-node-in-tree/)| [C++](./C++/find-weighted-median-node-in-tree.cpp) [Python](./Python/find-weighted-median-node-in-tree.py)| _O(n + qlogh)_ | _O(n + q)_ | Hard | | Tree, DFS, `Tarjan's Offline LCA Algorithm`, Binary Search, Prefix Sum |
 
 <br/>
 <div align="right">
