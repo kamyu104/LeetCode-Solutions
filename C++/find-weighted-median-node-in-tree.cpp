@@ -141,10 +141,10 @@ public:
                             result2[i] = path[size(path) - (j + 1)];
                         } else {
                             const auto& l = dist[queries[i][0]] - dist[lca[i]];
-                            const auto& j = binary_search(0, d, [&](const auto& x) {
-                                return 2 * (l + (dist[path[size(path) - (d + 1) + x]] - dist[lca[i]])) >= result[i];
+                            const auto& j = binary_search(0, d - 1, [&](const auto& x) {
+                                return 2 * (l + (dist[path[size(path) - ((d - 1) + 1) + x]] - dist[lca[i]])) >= result[i];
                             });
-                            result2[i] = path[size(path) - (d + 1) + j];
+                            result2[i] = path[size(path) - ((d - 1) + 1) + j];
                         }
                     }
                     stk.emplace_back(3, u, -1);
@@ -245,10 +245,10 @@ public:
                     result2[i] = path[size(path) - (j + 1)];
                 } else {
                     const auto& l = dist[queries[i][0]] - dist[lca[i]];
-                    const auto& j = binary_search(0, d, [&](const auto& x) {
-                        return 2 * (l + (dist[path[size(path) - (d + 1) + x]] - dist[lca[i]])) >= result[i];
+                    const auto& j = binary_search(0, d - 1, [&](const auto& x) {
+                        return 2 * (l + (dist[path[size(path) - ((d - 1) + 1) + x]] - dist[lca[i]])) >= result[i];
                     });
-                    result2[i] = path[size(path) - (d + 1) + j];
+                    result2[i] = path[size(path) - ((d - 1) + 1) + j];
                 }
             }
             for (const auto& [v, w] : adj[u]) {
