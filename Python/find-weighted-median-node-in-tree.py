@@ -37,7 +37,7 @@ def binary_search(left, right, check):
     return left
 
 
-# iterative dfs, Tarjan's Offline LCA Algorithm, binary search
+# iterative dfs, Tarjan's Offline LCA Algorithm, binary search, prefix sum
 class Solution(object):
     def findMedian(self, n, edges, queries):
         """
@@ -143,7 +143,7 @@ class Solution(object):
 
 # Time:  O(n + qlogh)
 # Space: O(n + q)
-# dfs, Tarjan's Offline LCA Algorithm, binary search
+# dfs, Tarjan's Offline LCA Algorithm, binary search, prefix sum
 class Solution2(object):
     def findMedian(self, n, edges, queries):
         """
