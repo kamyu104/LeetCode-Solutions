@@ -114,8 +114,8 @@ class Solution(object):
                             result2[i] = path[-(j+1)]
                         else:
                             l = dist[queries[i][0]]-dist[lca[i]]
-                            j = binary_search(0, d, lambda x: 2*(l+(dist[path[-(d+1)+x]]-dist[lca[i]])) >= result[i])
-                            result2[i] = path[-(d+1)+j]
+                            j = binary_search(0, d-1, lambda x: 2*(l+(dist[path[-((d-1)+1)+x]]-dist[lca[i]])) >= result[i])
+                            result2[i] = path[-((d-1)+1)+j]
                     stk.append((3, None))
                     stk.append((2, (u, 0)))
                 elif step == 2:
@@ -181,8 +181,8 @@ class Solution2(object):
                     result2[i] = path[-(j+1)]
                 else:
                     l = dist[queries[i][0]]-dist[lca[i]]
-                    j = binary_search(0, d, lambda x: 2*(l+(dist[path[-(d+1)+x]]-dist[lca[i]])) >= result[i])
-                    result2[i] = path[-(d+1)+j]
+                    j = binary_search(0, d-1, lambda x: 2*(l+(dist[path[-((d-1)+1)+x]]-dist[lca[i]])) >= result[i])
+                    result2[i] = path[-((d-1)+1)+j]
             for v, w in adj[u]:
                 if len(path) >= 2 and path[-2] == v:
                     continue
