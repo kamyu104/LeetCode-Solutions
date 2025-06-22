@@ -50,7 +50,7 @@ int binary_search(int left, int right, const auto& check) {
     return left;
 };
 
-// iterative dfs, Tarjan's Offline LCA Algorithm, binary search
+// iterative dfs, Tarjan's Offline LCA Algorithm, binary search, prefix sum
 class Solution {
 public:
     vector<int> findMedian(int n, vector<vector<int>>& edges, vector<vector<int>>& queries) {
@@ -172,7 +172,7 @@ public:
 
 // Time:  O(n + qlogh)
 // Space: O(n + q)
-// dfs, Tarjan's Offline LCA Algorithm, binary search
+// dfs, Tarjan's Offline LCA Algorithm, binary search, prefix sum
 class Solution2 {
 public:
     vector<int> findMedian(int n, vector<vector<int>>& edges, vector<vector<int>>& queries) {
