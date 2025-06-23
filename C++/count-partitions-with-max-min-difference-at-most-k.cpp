@@ -10,7 +10,6 @@ public:
         deque<int> max_dq, min_dq;
         vector<int> dp(size(nums) + 1);
         dp[0] = 1;
-        int left = 0;
         for (int right = 0, left = 0, suffix = 0; right < size(nums); ++right) {
             suffix = (suffix + dp[right]) % MOD;
             while (!empty(max_dq) && nums[max_dq.back()] <= nums[right]) {
