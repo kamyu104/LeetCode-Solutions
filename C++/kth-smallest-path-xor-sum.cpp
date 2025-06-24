@@ -49,7 +49,7 @@ public:
                     for (const auto& v : adj[u]) {
                         small_to_large_merge(idxs[u], idxs[v]);
                     }
-                    for (const auto& i : lookup[u]) {
+                    for (const auto& i : lookup[u]) {  // Total Time: O(qlogn)
                         if (queries[i][1] - 1 < size(os[idxs[u]])) {
                             result[i] = *(os[idxs[u]].find_by_order(queries[i][1] - 1));
                         }
@@ -104,7 +104,7 @@ public:
                 dfs(v, curr);
                 small_to_large_merge(idxs[u], idxs[v]);
             }
-            for (const auto& i : lookup[u]) {
+            for (const auto& i : lookup[u]) {  // Total Time: O(qlogn)
                 if (queries[i][1] - 1 < size(os[idxs[u]])) {
                     result[i] = *(os[idxs[u]].find_by_order(queries[i][1] - 1));
                 }
