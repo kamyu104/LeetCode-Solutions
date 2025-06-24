@@ -41,8 +41,6 @@ public:
                         if (size(os[idxs[u]]) < size(os[idxs[v]])) {
                             swap(idxs[u], idxs[v]);
                         }
-                    }
-                    for (const auto& v : adj[u]) {
                         for (const auto& x : os[idxs[v]]) {  // each node is merged at most O(logn) times
                             os[idxs[u]].insert(x);  // each add costs O(logn)
                         }
@@ -91,11 +89,11 @@ public:
             os[idxs[u]].insert(curr);
             for (const auto& v : adj[u]) {
                 dfs(v, curr);
+            }
+            for (const auto& v : adj[u]) {
                 if (size(os[idxs[u]]) < size(os[idxs[v]])) {
                     swap(idxs[u], idxs[v]);
                 }
-            }
-            for (const auto& v : adj[u]) {
                 for (const auto& x : os[idxs[v]]) {  // each node is merged at most O(logn) times
                     os[idxs[u]].insert(x);  // each add costs O(logn)
                 }
