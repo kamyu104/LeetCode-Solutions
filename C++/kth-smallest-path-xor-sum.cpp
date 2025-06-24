@@ -72,7 +72,6 @@ using namespace __gnu_pbds;
 class Solution2 {
 public:
     vector<int> kthSmallest(vector<int>& par, vector<int>& vals, vector<vector<int>>& queries) {
-        using ordered_set = tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update>;
         vector<vector<int>> adj(size(par));
         for (int u = 0; u < size(par); ++u) {
             const auto& p = par[u];
@@ -84,6 +83,7 @@ public:
         for (int i = 0; i < size(queries); ++i) {
             lookup[queries[i][0]].emplace_back(i);
         }
+        using ordered_set = tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update>;
         vector<ordered_set> os(size(adj));
         vector<int> idxs(size(adj));
         iota(begin(idxs), end(idxs), 0);
