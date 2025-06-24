@@ -25,6 +25,15 @@ public:
             vector<ordered_set> os(size(adj));
             vector<int> idxs(size(adj));
             iota(begin(idxs), end(idxs), 0);
+            const auto& small_to_large_merge = [&](auto& i, auto& j) {  // Total Time: O(n * (logn)^2)
+                if (size(os[i]) < size(os[j])) {
+                    swap(i, j);  // swapping indices is much faster than swapping ordered sets
+                }
+                for (const auto& x : os[j]) {  // each node is merged at most O(logn) times
+                    os[i].insert(x);  // each add costs O(logn)
+                }
+            };
+
             vector<int> result(size(queries), -1);
             vector<tuple<int, int, int>> stk = {{1, 0, 0}};
             while (!empty(stk)) {
@@ -38,12 +47,7 @@ public:
                     }
                 } else if (step == 2) {
                     for (const auto& v : adj[u]) {
-                        if (size(os[idxs[u]]) < size(os[idxs[v]])) {
-                            swap(idxs[u], idxs[v]);
-                        }
-                        for (const auto& x : os[idxs[v]]) {  // each node is merged at most O(logn) times
-                            os[idxs[u]].insert(x);  // each add costs O(logn)
-                        }
+                        small_to_large_merge(idxs[u], idxs[v]);
                     }
                     for (const auto& i : lookup[u]) {
                         if (queries[i][1] - 1 < size(os[idxs[u]])) {
@@ -83,20 +87,22 @@ public:
         vector<ordered_set> os(size(adj));
         vector<int> idxs(size(adj));
         iota(begin(idxs), end(idxs), 0);
+        const auto& small_to_large_merge = [&](auto& i, auto& j) {  // Total Time: O(n * (logn)^2)
+            if (size(os[i]) < size(os[j])) {
+                swap(i, j);  // swapping indices is much faster than swapping ordered sets
+            }
+            for (const auto& x : os[j]) {  // each node is merged at most O(logn) times
+                os[i].insert(x);  // each add costs O(logn)
+            }
+        };
+
         vector<int> result(size(queries), -1);
         const function<void (int, int)> dfs = [&](int u, int curr) {
             curr ^= vals[u];
             os[idxs[u]].insert(curr);
             for (const auto& v : adj[u]) {
                 dfs(v, curr);
-            }
-            for (const auto& v : adj[u]) {
-                if (size(os[idxs[u]]) < size(os[idxs[v]])) {
-                    swap(idxs[u], idxs[v]);
-                }
-                for (const auto& x : os[idxs[v]]) {  // each node is merged at most O(logn) times
-                    os[idxs[u]].insert(x);  // each add costs O(logn)
-                }
+                small_to_large_merge(idxs[u], idxs[v]);
             }
             for (const auto& i : lookup[u]) {
                 if (queries[i][1] - 1 < size(os[idxs[u]])) {
