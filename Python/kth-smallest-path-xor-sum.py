@@ -22,17 +22,15 @@ class Solution(object):
                 step, (u, curr) = stk.pop()
                 if step == 1:
                     curr ^= vals[u]
+                    sl[idxs[u]].add(curr)
                     stk.append((2, (u, curr)))
                     for v in reversed(adj[u]):
                         stk.append((1, (v, curr)))
                 elif step == 2:
-                    if adj[u]:
-                        idxs[u] = max((idxs[v] for v in adj[u]), key=lambda x: len(sl[x]))
-                    if curr not in sl[idxs[u]]:
-                        sl[idxs[u]].add(curr)
                     for v in adj[u]:
-                        if idxs[v] == idxs[u]:
-                            continue
+                        if len(sl[idxs[u]]) < len(sl[idxs[v]]):
+                            idxs[u], idxs[v] = idxs[v], idxs[u]                
+                    for v in adj[u]:
                         for x in sl[idxs[v]]:  # each node is merged at most O(logn) times
                             if x not in sl[idxs[u]]:
                                 sl[idxs[u]].add(x)  # each add costs O(logn)
@@ -75,15 +73,13 @@ class Solution2(object):
 
         def dfs(u, curr):
             curr ^= vals[u]
+            sl[idxs[u]].add(curr)
             for v in adj[u]:
                 dfs(v, curr)
-            if adj[u]:
-                idxs[u] = max((idxs[v] for v in adj[u]), key=lambda x: len(sl[x]))
-            if curr not in sl[idxs[u]]:
-                sl[idxs[u]].add(curr)
             for v in adj[u]:
-                if idxs[v] == idxs[u]:
-                    continue
+                if len(sl[idxs[u]]) < len(sl[idxs[v]]):
+                    idxs[u], idxs[v] = idxs[v], idxs[u]                
+            for v in adj[u]:
                 for x in sl[idxs[v]]:  # each node is merged at most O(logn) times
                     if x not in sl[idxs[u]]:
                         sl[idxs[u]].add(x)  # each add costs O(logn)
