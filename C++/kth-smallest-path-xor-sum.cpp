@@ -31,6 +31,7 @@ public:
                 auto [step, u, curr] = stk.back(); stk.pop_back();
                 if (step == 1) {
                     curr ^= vals[u];
+                    os[idxs[u]].insert(curr);
                     stk.emplace_back(2, u, curr);
                     for (const auto& v : adj[u]) {
                         stk.emplace_back(1, v, curr);
@@ -38,14 +39,10 @@ public:
                 } else if (step == 2) {
                     for (const auto& v : adj[u]) {
                         if (size(os[idxs[u]]) < size(os[idxs[v]])) {
-                            idxs[u] = idxs[v];
+                            swap(idxs[u], idxs[v]);
                         }
                     }
-                    os[idxs[u]].insert(curr);
                     for (const auto& v : adj[u]) {
-                        if (idxs[v] == idxs[u]) {
-                            continue;
-                        }
                         for (const auto& x : os[idxs[v]]) {  // each node is merged at most O(logn) times
                             os[idxs[u]].insert(x);  // each add costs O(logn)
                         }
@@ -91,17 +88,14 @@ public:
         vector<int> result(size(queries), -1);
         const function<void (int, int)> dfs = [&](int u, int curr) {
             curr ^= vals[u];
+            os[idxs[u]].insert(curr);
             for (const auto& v : adj[u]) {
                 dfs(v, curr);
                 if (size(os[idxs[u]]) < size(os[idxs[v]])) {
-                    idxs[u] = idxs[v];
+                    swap(idxs[u], idxs[v]);
                 }
             }
-            os[idxs[u]].insert(curr);
             for (const auto& v : adj[u]) {
-                if (idxs[v] == idxs[u]) {
-                    continue;
-                }
                 for (const auto& x : os[idxs[v]]) {  // each node is merged at most O(logn) times
                     os[idxs[u]].insert(x);  // each add costs O(logn)
                 }
