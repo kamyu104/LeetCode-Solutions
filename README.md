@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3586%20%2F%203586-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3595%20%2F%203595-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -606,6 +606,7 @@
 3541 | [Find Most Frequent Vowel and Consonant](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/) | [C++](./C++/find-most-frequent-vowel-and-consonant.cpp) [Python](./Python/find-most-frequent-vowel-and-consonant.py) | _O(n + 26)_ | _O(26)_ | Easy | | Freq Table
 3572 | [Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values](https://leetcode.com/problems/maximize-ysum-by-picking-a-triplet-of-distinct-xvalues/) | [C++](./C++/maximize-ysum-by-picking-a-triplet-of-distinct-xvalues.cpp) [Python](./Python/maximize-ysum-by-picking-a-triplet-of-distinct-xvalues.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table, Quick Select
 3581 | [Count Odd Letters from Number](https://leetcode.com/problems/count-odd-letters-from-number/) | [C++](./C++/count-odd-letters-from-number.cpp) [Python](./Python/count-odd-letters-from-number.py) | _O(logn)_ | _O(26)_ | Easy |🔒| Freq Table
+3591 | [Check if Any Element Has Prime Frequency](https://leetcode.com/problems/check-if-any-element-has-prime-frequency/) | [C++](./C++/check-if-any-element-has-prime-frequency.cpp) [Python](./Python/check-if-any-element-has-prime-frequency.py) | precompute: _O(MAX_N)_<br>runtime: _O(n)_ | _O(MAX_N)_ | Easy || Freq Table, Number Theory, `Linear Sieve of Eratosthenes`
 
 <br/>
 <div align="right">
@@ -765,6 +766,7 @@
 3556 | [Sum of Largest Prime Substrings](https://leetcode.com/problems/sum-of-largest-prime-substrings/) | [C++](./C++/sum-of-largest-prime-substrings.cpp) [Python](./Python/sum-of-largest-prime-substrings.py) | _O(n^2 * sqrt(r))_ | _O(n^2)_ | Medium | | Number Theory, Quick Select |
 3560 | [Find Minimum Log Transportation Cost](https://leetcode.com/problems/find-minimum-log-transportation-cost/) | [C++](./C++/find-minimum-log-transportation-cost.cpp) [Python](./Python/find-minimum-log-transportation-cost.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 3577 | [Count the Number of Computer Unlocking Permutations](https://leetcode.com/problems/count-the-number-of-computer-unlocking-permutations/) | [C++](./C++/count-the-number-of-computer-unlocking-permutations.cpp) [Python](./Python/count-the-number-of-computer-unlocking-permutations.py) | _O(n)_ | _O(1)_ | Medium | | Combinatorics |
+3588 | [Find Maximum Area of a Triangle](https://leetcode.com/problems/find-maximum-area-of-a-triangle/) | [C++](./C++/find-maximum-area-of-a-triangle.cpp) [Python](./Python/find-maximum-area-of-a-triangle.py) | _O(n)_ | _O(n)_ | Medium | | Math, Hash Table |
 
 <br/>
 <div align="right">
@@ -918,6 +920,7 @@
 3555 | [Smallest Subarray to Sort in Every Sliding Window](https://leetcode.com/problems/smallest-subarray-to-sort-in-every-sliding-window/) | [C++](./C++/smallest-subarray-to-sort-in-every-sliding-window.cpp) [Python](./Python/smallest-subarray-to-sort-in-every-sliding-window.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Mono Stack, Two Pointers
 3567 | [Minimum Absolute Difference in Sliding Submatrix](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/) | [C++](./C++/minimum-absolute-difference-in-sliding-submatrix.cpp) [Python](./Python/minimum-absolute-difference-in-sliding-submatrix.py) | _O(m * n * k^2)_ | _O(k^2)_ | Medium | | Brute Force, Sort, Two Pointers, Sliding Window, BST, Sorted List
 3584 | [Maximum Product of First and Last Elements of a Subsequence](https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/) | [C++](./C++/maximum-product-of-first-and-last-elements-of-a-subsequence.cpp) [Python](./Python/maximum-product-of-first-and-last-elements-of-a-subsequence.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
+3589 | [Count Prime-Gap Balanced Subarrays](https://leetcode.com/problems/count-prime-gap-balanced-subarrays/) | [C++](./C++/count-prime-gap-balanced-subarrays.cpp) [Python](./Python/count-prime-gap-balanced-subarrays.py) | precompute: _O(r)_<br>runtime: _O(n)_ | _O(r)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Mono Deque, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -1085,6 +1088,8 @@
 3327 | [Check if DFS Strings Are Palindromes](https://leetcode.com/problems/check-if-dfs-strings-are-palindromes/)| [C++](./C++/check-if-dfs-strings-are-palindromes.cpp) [Python](./Python/check-if-dfs-strings-are-palindromes.py)| _O(n)_ | _O(n)_ | Hard |  | DFS, `Manacher's Algorithm` |
 3331 | [Find Subtree Sizes After Changes](https://leetcode.com/problems/find-subtree-sizes-after-changes/)| [C++](./C++/find-subtree-sizes-after-changes.cpp) [Python](./Python/find-subtree-sizes-after-changes.py)| _O(n)_ | _O(n)_ | Medium |  | DFS, Hash Table |
 3367 | [Maximize Sum of Weights after Edge Removals](https://leetcode.com/problems/maximize-sum-of-weights-after-edge-removals/)| [C++](./C++/maximize-sum-of-weights-after-edge-removals.cpp) [Python](./Python/maximize-sum-of-weights-after-edge-removals.py)| _O(n)_ | _O(n)_ | Hard |  | DFS, Quick Select |
+3590 | [Kth Smallest Path XOR Sum](https://leetcode.com/problems/kth-smallest-path-xor-sum/)| [C++](./C++/kth-smallest-path-xor-sum.cpp) [Python](./Python/kth-smallest-path-xor-sum.py)| _O(n * (logn)^2 + qlogn)_ | _O(n + q)_ | Hard |  | DFS, Small-to-Large Merging, Ordered Set, Sorted List |
+3593 | [Minimum Increments to Equalize Leaf Paths](https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/)| [C++](./C++/minimum-increments-to-equalize-leaf-paths.cpp) [Python](./Python/minimum-increments-to-equalize-leaf-paths.py)| _O(n)_ | _O(n)_ | Medium |  | DFS |
 
 <br/>
 <div align="right">
@@ -1311,6 +1316,8 @@
 3578 | [Count Partitions With Max-Min Difference at Most K](https://leetcode.com/problems/count-partitions-with-max-min-difference-at-most-k/) | [C++](./C++/count-partitions-with-max-min-difference-at-most-k.cpp) [Python](./Python/count-partitions-with-max-min-difference-at-most-k.py) | _O(n)_   | _O(n)_        | Medium         | | Mono Deque, Two Pointers, Sliding Window, DP, Prefix Sum
 3579 | [Minimum Steps to Convert String with Operations](https://leetcode.com/problems/minimum-steps-to-convert-string-with-operations/) | [C++](./C++/minimum-steps-to-convert-string-with-operations.cpp) [Python](./Python/minimum-steps-to-convert-string-with-operations.py) | _O(n^2)_   | _O(26^2)_        | Hard         | | DP
 3583 | [Count Special Triplets](https://leetcode.com/problems/count-special-triplets/) | [C++](./C++/count-special-triplets.cpp) [Python](./Python/count-special-triplets.py) | _O(n)_   | _O(n)_        | Medium         | | DP, Freq Table
+3592 | [Inverse Coin Change](https://leetcode.com/problems/inverse-coin-change/) | [C++](./C++/inverse-coin-change.cpp) [Python](./Python/inverse-coin-change.py) | _O(n^2)_   | _O(1)_        | Medium         | | DP
+3595 | [Once Twice](https://leetcode.com/problems/once-twice/) | [C++](./C++/once-twice.cpp) [Python](./Python/once-twice.py) | _O(n)_   | _O(1)_        | Medium         | 🔒 | DP, Bitmasks
 
 <br/>
 <div align="right">
@@ -1503,6 +1510,7 @@
 3545 | [Minimum Deletions for At Most K Distinct Characters](https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/) | [C++](./C++/minimum-deletions-for-at-most-k-distinct-characters.cpp) [Python](./Python/minimum-deletions-for-at-most-k-distinct-characters.py) | _O(n + 26)_   | _O(n + 26)_        | Easy         | | Freq Table, Counting Sort, Greedy
 3557 | [Find Maximum Number of Non Intersecting Substrings](https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/) | [C++](./C++/find-maximum-number-of-non-intersecting-substrings.cpp) [Python](./Python/find-maximum-number-of-non-intersecting-substrings.py) | _O(n)_   | _O(26)_        | Medium         | | Greedy, Hash Table
 3576 | [Transform Array to All Equal Elements](https://leetcode.com/problems/transform-array-to-all-equal-elements/) | [C++](./C++/transform-array-to-all-equal-elements.cpp) [Python](./Python/transform-array-to-all-equal-elements.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3587 | [Minimum Adjacent Swaps to Alternate Parity](https://leetcode.com/problems/minimum-adjacent-swaps-to-alternate-parity/) | [C++](./C++/minimum-adjacent-swaps-to-alternate-parity.cpp) [Python](./Python/minimum-adjacent-swaps-to-alternate-parity.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 
 <br/>
 <div align="right">
@@ -1566,6 +1574,7 @@
 3534 | [Path Existence Queries in a Graph II](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/) | [C++](./C++/path-existence-queries-in-a-graph-ii.cpp) [Python](./Python/path-existence-queries-in-a-graph-ii.py) | _O((n + q) * logn)_ | _O(nlogn)_ | Hard | | Prefix Sum, Greedy, Binary Lifting
 3536 | [Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/) | [C++](./C++/maximum-product-of-two-digits.cpp) [Python](./Python/maximum-product-of-two-digits.py) | _O(d + 10)_ | _O(10)_ | Easy | | Freq Table, Greedy
 3547 | [Maximum Sum of Edge Values in a Graph](https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/) | [C++](./C++/maximum-sum-of-edge-values-in-a-graph.cpp) [Python](./Python/maximum-sum-of-edge-values-in-a-graph.py) | _O(n)_ | _O(n)_ | Hard | | Flood Fill, BFS, Counting Sort, Greedy
+3594 | [Minimum Time to Transport All Individuals](https://leetcode.com/problems/minimum-time-to-transport-all-individuals/) | [C++](./C++/minimum-time-to-transport-all-individuals.cpp) [Python](./Python/minimum-time-to-transport-all-individuals.py) | _O(m * 3^n) * log(m * 3^n))_ | _O(m * 3^n)_ | Hard | | Graph, `Dijkstra's Algorithm`, Submask Enumeration
 
 <br/>
 <div align="right">
