@@ -1,5 +1,5 @@
-# Time:  O((n * m * 2^n + m * 3^n) * log(n * m * 2^n + m * 3^n))
-# Space: O(n * m * 2^n + m * 3^n)
+# Time:  O((n * m * 2^n + m * 3^n) * log(n * m * 2^n + m * 3^n)) = O(m * 3^n * log(m * 3^n))
+# Space: O(n * m * 2^n + m * 3^n) = O(m * 3^n)
 
 import heapq
 
