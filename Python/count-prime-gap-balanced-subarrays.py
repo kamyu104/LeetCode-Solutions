@@ -5,7 +5,7 @@
 import collections
 
 
-# mono deque, two pointers, sliding window, number theory
+# number theory, mono deque, two pointers, sliding window
 def linear_sieve_of_eratosthenes(n):  # Time: O(n), Space: O(n)
     primes = []
     spf = [-1]*(n+1)  # the smallest prime factor
