@@ -8,10 +8,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        dp = [~0, 0, 0]
+        dp = [0]*3
+        dp[0] = ~0
         for x in nums:
             dp = [(x&dp[i-1])|(~x&dp[i]) for i in xrange(3)]
-        dp2 = [~0, 0, 0]
+        dp2 = [0]*3
+        dp2[0] = ~0
         for x in nums:
             if ~x&dp[1] or x&dp[2]:
                 continue
