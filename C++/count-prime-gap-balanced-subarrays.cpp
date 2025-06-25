@@ -2,7 +2,7 @@
 //        runtime:    O(n)
 // Space: O(r)
 
-// number theory, binary search
+// number theory, mono deque, two pointers, sliding window
 vector<int> linear_sieve_of_eratosthenes(int n) {  // Time: O(n), Space: O(n)
     vector<int> spf(n + 1, -1);
     vector<int> primes;
