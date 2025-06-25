@@ -5,7 +5,7 @@
 import collections
 
 
-# number theory
+# number theory, freq table
 def linear_sieve_of_eratosthenes(n):
     primes = []
     spf = [-1]*(n+1)  # the smallest prime factor
