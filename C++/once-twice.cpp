@@ -10,7 +10,7 @@ public:
         for (const auto& x : nums) {
             vector<int> new_dp(dp);
             for (int i = 0; i < 3; ++i) {
-                new_dp[i] = (x & dp[((i - 1) % 3 + 3) % 3]) | (~x & dp[i]);
+                new_dp[i] = (x & dp[i - 1 >= 0 ? i - 1 : 2]) | (~x & dp[i]);
             }
             dp = move(new_dp);
         }
@@ -22,7 +22,7 @@ public:
             }
             vector<int> new_dp2(dp2);
             for (int i = 0; i < 3; ++i) {
-                new_dp2[i] = (x & dp2[((i - 1) % 3 + 3) % 3]) | (~x & dp2[i]);
+                new_dp2[i] = (x & dp2[i - 1 >= 0 ? i - 1 : 2]) | (~x & dp2[i]);
             }
             dp2 = move(new_dp2);
         }
