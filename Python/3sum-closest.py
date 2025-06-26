@@ -26,6 +26,3 @@ class Solution(object):
                     min_diff = abs(total-target)
                     result = total
         return result
-
-
-print("Hello")
