@@ -27,3 +27,5 @@ class Solution(object):
                     result = total
         return result
 
+
+print("Hello")
