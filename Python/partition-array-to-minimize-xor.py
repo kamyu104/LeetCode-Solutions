@@ -1,7 +1,7 @@
 # Time:  O(n^2 * k)
 # Space: O(n)
 
-# dp
+# dp, prefix sum
 class Solution(object):
     def minXor(self, nums, k):
         """
