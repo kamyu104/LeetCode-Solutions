@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(t)
 
-// trie
+// simulation, trie
 class Solution {
 public:
     vector<string> partitionString(string s) {
