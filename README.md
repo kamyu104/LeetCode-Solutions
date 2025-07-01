@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3595%20%2F%203595-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3600%20%2F%203600-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -356,6 +356,8 @@
 3529 | [Count Cells in Overlapping Horizontal and Vertical Substrings](https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/) | [C++](./C++/count-cells-in-overlapping-horizontal-and-vertical-substrings.cpp) [Python](./Python/count-cells-in-overlapping-horizontal-and-vertical-substrings.py) | _O(n * m)_ | _O(n * m)_ | Medium | | `Z-Function`
 3571 | [Find the Shortest Superstring II](https://leetcode.com/problems/find-the-shortest-superstring-ii/) | [C++](./C++/find-the-shortest-superstring-ii.cpp) [Python](./Python/find-the-shortest-superstring-ii.py) | _O(n + m)_ | _O(n + m)_ | Easy | 🔒 | `KMP Algorithm`
 3582 | [Generate Tag for Video Caption](https://leetcode.com/problems/generate-tag-for-video-caption/) | [C++](./C++/generate-tag-for-video-caption.cpp) [Python](./Python/generate-tag-for-video-caption.py) | _O(n)_ | _O(1)_ | Easy | | String
+3598 | [Longest Common Prefix Between Adjacent Strings After Removals](https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/) | [C++](./C++/longest-common-prefix-between-adjacent-strings-after-removals.cpp) [Python](./Python/longest-common-prefix-between-adjacent-strings-after-removals.py) | _O(n * l)_ | _O(n)_ | Medium | | LCP, Prefix Sum
+
 
 <br/>
 <div align="right">
@@ -767,6 +769,7 @@
 3560 | [Find Minimum Log Transportation Cost](https://leetcode.com/problems/find-minimum-log-transportation-cost/) | [C++](./C++/find-minimum-log-transportation-cost.cpp) [Python](./Python/find-minimum-log-transportation-cost.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 3577 | [Count the Number of Computer Unlocking Permutations](https://leetcode.com/problems/count-the-number-of-computer-unlocking-permutations/) | [C++](./C++/count-the-number-of-computer-unlocking-permutations.cpp) [Python](./Python/count-the-number-of-computer-unlocking-permutations.py) | _O(n)_ | _O(1)_ | Medium | | Combinatorics |
 3588 | [Find Maximum Area of a Triangle](https://leetcode.com/problems/find-maximum-area-of-a-triangle/) | [C++](./C++/find-maximum-area-of-a-triangle.cpp) [Python](./Python/find-maximum-area-of-a-triangle.py) | _O(n)_ | _O(n)_ | Medium | | Math, Hash Table |
+3596 | [Minimum Cost Path with Alternating Directions I](https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-i/) | [C++](./C++/minimum-cost-path-with-alternating-directions-i.cpp) [Python](./Python/minimum-cost-path-with-alternating-directions-i.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | Math |
 
 <br/>
 <div align="right">
@@ -1318,6 +1321,7 @@
 3583 | [Count Special Triplets](https://leetcode.com/problems/count-special-triplets/) | [C++](./C++/count-special-triplets.cpp) [Python](./Python/count-special-triplets.py) | _O(n)_   | _O(n)_        | Medium         | | DP, Freq Table
 3592 | [Inverse Coin Change](https://leetcode.com/problems/inverse-coin-change/) | [C++](./C++/inverse-coin-change.cpp) [Python](./Python/inverse-coin-change.py) | _O(n^2)_   | _O(1)_        | Medium         | | DP
 3595 | [Once Twice](https://leetcode.com/problems/once-twice/) | [C++](./C++/once-twice.cpp) [Python](./Python/once-twice.py) | _O(n)_   | _O(1)_        | Medium         | 🔒 | DP, Bitmasks
+3599 | [Partition Array to Minimize XOR](https://leetcode.com/problems/partition-array-to-minimize-xor/) | [C++](./C++/partition-array-to-minimize-xor.cpp) [Python](./Python/partition-array-to-minimize-xor.py) | _O(n^2 * k)_   | _O(n)_        | Medium         | | DP, Prefix Sum
 
 <br/>
 <div align="right">
@@ -1575,6 +1579,7 @@
 3536 | [Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/) | [C++](./C++/maximum-product-of-two-digits.cpp) [Python](./Python/maximum-product-of-two-digits.py) | _O(d + 10)_ | _O(10)_ | Easy | | Freq Table, Greedy
 3547 | [Maximum Sum of Edge Values in a Graph](https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/) | [C++](./C++/maximum-sum-of-edge-values-in-a-graph.cpp) [Python](./Python/maximum-sum-of-edge-values-in-a-graph.py) | _O(n)_ | _O(n)_ | Hard | | Flood Fill, BFS, Counting Sort, Greedy
 3594 | [Minimum Time to Transport All Individuals](https://leetcode.com/problems/minimum-time-to-transport-all-individuals/) | [C++](./C++/minimum-time-to-transport-all-individuals.cpp) [Python](./Python/minimum-time-to-transport-all-individuals.py) | _O(m * 3^n) * log(m * 3^n))_ | _O(m * 3^n)_ | Hard | | Graph, `Dijkstra's Algorithm`, Submask Enumeration
+3600 | [Maximize Spanning Tree Stability with Upgrades](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/) | [C++](./C++/maximize-spanning-tree-stability-with-upgrades.cpp) [Python](./Python/maximize-spanning-tree-stability-with-upgrades.py) | _O(n + eloge)_ | _O(n)_ | Hard | | MST, Maximum Spanning Tree, Union Find, `Kruskal's Algorithm`, Greedy
 
 <br/>
 <div align="right">
@@ -1621,6 +1626,7 @@
 3510 | [Minimum Pair Removal to Sort Array II](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/) | [C++](./C++/minimum-pair-removal-to-sort-array-ii.cpp) [Python](./Python/minimum-pair-removal-to-sort-array-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Simulation, Doubly Linked List, Sorted List, BST
 3522 | [Calculate Score After Performing Instructions](https://leetcode.com/problems/calculate-score-after-performing-instructions/) | [C++](./C++/calculate-score-after-performing-instructions.cpp) [Python](./Python/calculate-score-after-performing-instructions.py) | _O(n)_ | _O(n)_ | Medium | | Simulation
 3561 | [Resulting String After Adjacent Removals](https://leetcode.com/problems/resulting-string-after-adjacent-removals/) | [C++](./C++/resulting-string-after-adjacent-removals.cpp) [Python](./Python/resulting-string-after-adjacent-removals.py) | _O(n)_ | _O(1)_ | Medium | | Simulation, Stack
+3597 | [Partition String](https://leetcode.com/problems/partition-string/) | [C++](./C++/partition-string.cpp) [Python](./Python/partition-string.py) | _O(n)_ | _O(t)_ | Medium | | Simulation, Trie
 
 <br/>
 <div align="right">
