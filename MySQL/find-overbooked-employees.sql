@@ -1,5 +1,5 @@
 # Time:  O(m + nlogn)
-# Space: O(n)
+# Space: O(m + n)
 
 WITH overbooked_employees_cte AS (
     SELECT employee_id
