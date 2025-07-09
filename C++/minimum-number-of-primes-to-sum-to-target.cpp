@@ -1,7 +1,7 @@
 // Time:  O(min(mlogm, n) + nlog(log(min(mlogm, n))) + m * n) = O(nlog(log(min(m, n))) + m * n)
 // Space: O(n)
 
-// number theory, dp
+// number theory, knapsack dp
 class Solution {
 public:
     int minNumberOfPrimes(int n, int m) {
