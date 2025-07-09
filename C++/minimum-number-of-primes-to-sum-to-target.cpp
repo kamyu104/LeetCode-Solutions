@@ -8,10 +8,9 @@ public:
         static const int INF = numeric_limits<int>::max();
 
         vector<bool> is_prime(n + 1, true);
-        int cnt = 0;
         vector<int> dp(n + 1, INF);
         dp[0] = 0;
-        for (int i = 2; i <= n; ++i) {
+        for (int i = 2, cnt = 0; i <= n; ++i) {
             if (!is_prime[i]) {
                 continue;
             }
