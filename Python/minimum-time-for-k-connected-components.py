@@ -1,7 +1,7 @@
 # Time:  O(n + eloge)
 # Space: O(n)
 
-# union find, sort
+# backward simulation, union find, sort
 class UnionFind(object):  # Time: O(n * alpha(n)), Space: O(n)
     def __init__(self, n):
         self.set = range(n)
