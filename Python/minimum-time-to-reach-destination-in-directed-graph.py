@@ -1,7 +1,7 @@
 # Time:  O(n + elogn)
 # Space: O(n + e)
 
-import collections
+import heapq
 
 
 # dijkstra's algorithm
