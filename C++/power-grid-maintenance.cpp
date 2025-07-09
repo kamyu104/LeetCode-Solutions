@@ -1,7 +1,7 @@
 // Time:  O(c + n + q), n = len(connections)
 // Space: O(c + n)
 
-// dfs, sort
+// dfs, flood fill, sort
 class Solution {
 public:
     vector<int> processQueries(int c, vector<vector<int>>& connections, vector<vector<int>>& queries) {
