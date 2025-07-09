@@ -1326,7 +1326,7 @@
 3595 | [Once Twice](https://leetcode.com/problems/once-twice/) | [C++](./C++/once-twice.cpp) [Python](./Python/once-twice.py) | _O(n)_   | _O(1)_        | Medium         | 🔒 | DP, Bitmasks
 3599 | [Partition Array to Minimize XOR](https://leetcode.com/problems/partition-array-to-minimize-xor/) | [C++](./C++/partition-array-to-minimize-xor.cpp) [Python](./Python/partition-array-to-minimize-xor.py) | _O(n^2 * k)_   | _O(n)_        | Medium         | | DP, Prefix Sum
 3603 | [Minimum Cost Path with Alternating Directions II](https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-ii/) | [C++](./C++/minimum-cost-path-with-alternating-directions-ii.cpp) [Python](./Python/minimum-cost-path-with-alternating-directions-ii.py) | _O(m * n)_   | _O(1)_        | Medium         | | DP
-3610 | [Minimum Number of Primes to Sum to Target](https://leetcode.com/problems/minimum-number-of-primes-to-sum-to-target/) | [C++](./C++/minimum-number-of-primes-to-sum-to-target.cpp) [Python](./Python/minimum-number-of-primes-to-sum-to-target.py) | _O(nlog(log(min(m, n))) + m * n)_   | _O(n)_        | Medium         | 🔒 | Knapsack DP
+3610 | [Minimum Number of Primes to Sum to Target](https://leetcode.com/problems/minimum-number-of-primes-to-sum-to-target/) | [C++](./C++/minimum-number-of-primes-to-sum-to-target.cpp) [Python](./Python/minimum-number-of-primes-to-sum-to-target.py) | _O(nlog(log(min(m, n))) + m * n)_   | _O(n)_        | Medium         | 🔒 | Number Theory, Knapsack DP
 
 <br/>
 <div align="right">
