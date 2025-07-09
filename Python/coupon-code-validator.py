@@ -1,5 +1,5 @@
 # Time:  O(l * nlogn)
-# Space: O(1)
+# Space: O(n * l)
 
 import itertools
 
