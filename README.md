@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3600%20%2F%203600-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3611%20%2F%203611-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -357,7 +357,7 @@
 3571 | [Find the Shortest Superstring II](https://leetcode.com/problems/find-the-shortest-superstring-ii/) | [C++](./C++/find-the-shortest-superstring-ii.cpp) [Python](./Python/find-the-shortest-superstring-ii.py) | _O(n + m)_ | _O(n + m)_ | Easy | 🔒 | `KMP Algorithm`
 3582 | [Generate Tag for Video Caption](https://leetcode.com/problems/generate-tag-for-video-caption/) | [C++](./C++/generate-tag-for-video-caption.cpp) [Python](./Python/generate-tag-for-video-caption.py) | _O(n)_ | _O(1)_ | Easy | | String
 3598 | [Longest Common Prefix Between Adjacent Strings After Removals](https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/) | [C++](./C++/longest-common-prefix-between-adjacent-strings-after-removals.cpp) [Python](./Python/longest-common-prefix-between-adjacent-strings-after-removals.py) | _O(n * l)_ | _O(n)_ | Medium | | LCP, Prefix Sum
-
+3606 | [Coupon Code Validator](https://leetcode.com/problems/coupon-code-validator/) | [C++](./C++/coupon-code-validator.cpp) [Python](./Python/coupon-code-validator.py) | _O(l * nlogn)_ | _O(n * l)_ | Easy | | Hash Table, Sort
 
 <br/>
 <div align="right">
@@ -770,6 +770,7 @@
 3577 | [Count the Number of Computer Unlocking Permutations](https://leetcode.com/problems/count-the-number-of-computer-unlocking-permutations/) | [C++](./C++/count-the-number-of-computer-unlocking-permutations.cpp) [Python](./Python/count-the-number-of-computer-unlocking-permutations.py) | _O(n)_ | _O(1)_ | Medium | | Combinatorics |
 3588 | [Find Maximum Area of a Triangle](https://leetcode.com/problems/find-maximum-area-of-a-triangle/) | [C++](./C++/find-maximum-area-of-a-triangle.cpp) [Python](./Python/find-maximum-area-of-a-triangle.py) | _O(n)_ | _O(n)_ | Medium | | Math, Hash Table |
 3596 | [Minimum Cost Path with Alternating Directions I](https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-i/) | [C++](./C++/minimum-cost-path-with-alternating-directions-i.cpp) [Python](./Python/minimum-cost-path-with-alternating-directions-i.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | Math |
+3602 | [Hexadecimal and Hexatrigesimal Conversion](https://leetcode.com/problems/hexadecimal-and-hexatrigesimal-conversion/) | [C++](./C++/hexadecimal-and-hexatrigesimal-conversion.cpp) [Python](./Python/hexadecimal-and-hexatrigesimal-conversion.py) | _O(logn)_ | _O(1)_ | Easy | | Math |
 
 <br/>
 <div align="right">
@@ -991,6 +992,7 @@
 3477 | [Fruits Into Baskets II](https://leetcode.com/problems/fruits-into-baskets-ii/) | [C++](./C++/fruits-into-baskets-ii.cpp) [Python](./Python/fruits-into-baskets-ii.py) | _O(nlogn)_   | _O(n)_        | Easy         | | Segment Tree, Binary Search, Brute Force
 3479 | [Fruits Into Baskets III](https://leetcode.com/problems/fruits-into-baskets-iii/) | [C++](./C++/fruits-into-baskets-iii.cpp) [Python](./Python/fruits-into-baskets-iii.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Segment Tree, Binary Search
 3520 | [Minimum Threshold for Inversion Pairs Count](https://leetcode.com/problems/minimum-threshold-for-inversion-pairs-count/)|[C++](./C++/minimum-threshold-for-inversion-pairs-count.cpp) [Python](./Python/minimum-threshold-for-inversion-pairs-count.py) | _O(nlogn * logr)_      | _O(n)_          | Medium         | 🔒 | Binary Search, Sorted List, Ordered Set
+3605 | [Minimum Stability Factor of Array](https://leetcode.com/problems/minimum-stability-factor-of-array/)|[C++](./C++/minimum-stability-factor-of-array.cpp) [Python](./Python/minimum-stability-factor-of-array.py) | _O(nlogn * logr)_      | _O(nlogn)_          | Hard         | | Number Theory, Binary Search, RMQ, Sparse Table, Greedy
 
 <br/>
 
@@ -1093,6 +1095,7 @@
 3367 | [Maximize Sum of Weights after Edge Removals](https://leetcode.com/problems/maximize-sum-of-weights-after-edge-removals/)| [C++](./C++/maximize-sum-of-weights-after-edge-removals.cpp) [Python](./Python/maximize-sum-of-weights-after-edge-removals.py)| _O(n)_ | _O(n)_ | Hard |  | DFS, Quick Select |
 3590 | [Kth Smallest Path XOR Sum](https://leetcode.com/problems/kth-smallest-path-xor-sum/)| [C++](./C++/kth-smallest-path-xor-sum.cpp) [Python](./Python/kth-smallest-path-xor-sum.py)| _O(n * (logn)^2 + qlogn)_ | _O(n + q)_ | Hard |  | DFS, Small-to-Large Merging, Ordered Set, Sorted List |
 3593 | [Minimum Increments to Equalize Leaf Paths](https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/)| [C++](./C++/minimum-increments-to-equalize-leaf-paths.cpp) [Python](./Python/minimum-increments-to-equalize-leaf-paths.py)| _O(n)_ | _O(n)_ | Medium |  | DFS |
+3607 | [Power Grid Maintenance](https://leetcode.com/problems/power-grid-maintenance/)| [C++](./C++/power-grid-maintenance.cpp) [Python](./Python/power-grid-maintenance.py)| _O(c + n + q)_ | _O(c + n)_ | Medium |  | DFS, Flood Fill, Sort |
 
 <br/>
 <div align="right">
@@ -1322,6 +1325,8 @@
 3592 | [Inverse Coin Change](https://leetcode.com/problems/inverse-coin-change/) | [C++](./C++/inverse-coin-change.cpp) [Python](./Python/inverse-coin-change.py) | _O(n^2)_   | _O(1)_        | Medium         | | DP
 3595 | [Once Twice](https://leetcode.com/problems/once-twice/) | [C++](./C++/once-twice.cpp) [Python](./Python/once-twice.py) | _O(n)_   | _O(1)_        | Medium         | 🔒 | DP, Bitmasks
 3599 | [Partition Array to Minimize XOR](https://leetcode.com/problems/partition-array-to-minimize-xor/) | [C++](./C++/partition-array-to-minimize-xor.cpp) [Python](./Python/partition-array-to-minimize-xor.py) | _O(n^2 * k)_   | _O(n)_        | Medium         | | DP, Prefix Sum
+3603 | [Minimum Cost Path with Alternating Directions II](https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-ii/) | [C++](./C++/minimum-cost-path-with-alternating-directions-ii.cpp) [Python](./Python/minimum-cost-path-with-alternating-directions-ii.py) | _O(m * n)_   | _O(1)_        | Medium         | | DP
+3610 | [Minimum Number of Primes to Sum to Target](https://leetcode.com/problems/minimum-number-of-primes-to-sum-to-target/) | [C++](./C++/minimum-number-of-primes-to-sum-to-target.cpp) [Python](./Python/minimum-number-of-primes-to-sum-to-target.py) | _O(nlog(log(min(m, n))) + m * n)_   | _O(n)_        | Medium         | 🔒 | Knapsack DP
 
 <br/>
 <div align="right">
@@ -1580,6 +1585,7 @@
 3547 | [Maximum Sum of Edge Values in a Graph](https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/) | [C++](./C++/maximum-sum-of-edge-values-in-a-graph.cpp) [Python](./Python/maximum-sum-of-edge-values-in-a-graph.py) | _O(n)_ | _O(n)_ | Hard | | Flood Fill, BFS, Counting Sort, Greedy
 3594 | [Minimum Time to Transport All Individuals](https://leetcode.com/problems/minimum-time-to-transport-all-individuals/) | [C++](./C++/minimum-time-to-transport-all-individuals.cpp) [Python](./Python/minimum-time-to-transport-all-individuals.py) | _O(m * 3^n) * log(m * 3^n))_ | _O(m * 3^n)_ | Hard | | Graph, `Dijkstra's Algorithm`, Submask Enumeration
 3600 | [Maximize Spanning Tree Stability with Upgrades](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/) | [C++](./C++/maximize-spanning-tree-stability-with-upgrades.cpp) [Python](./Python/maximize-spanning-tree-stability-with-upgrades.py) | _O(n + eloge)_ | _O(n)_ | Hard | | MST, Maximum Spanning Tree, Union Find, `Kruskal's Algorithm`, Greedy
+3604 | [Minimum Time to Reach Destination in Directed Graph](https://leetcode.com/problems/minimum-time-to-reach-destination-in-directed-graph/) | [C++](./C++/minimum-time-to-reach-destination-in-directed-graph.cpp) [Python](./Python/minimum-time-to-reach-destination-in-directed-graph.py) | _O(n + eloge)_ | _O(n + e)_ | Medium | | Graph, `Dijkstra's Algorithm`
 
 <br/>
 <div align="right">
@@ -1627,6 +1633,8 @@
 3522 | [Calculate Score After Performing Instructions](https://leetcode.com/problems/calculate-score-after-performing-instructions/) | [C++](./C++/calculate-score-after-performing-instructions.cpp) [Python](./Python/calculate-score-after-performing-instructions.py) | _O(n)_ | _O(n)_ | Medium | | Simulation
 3561 | [Resulting String After Adjacent Removals](https://leetcode.com/problems/resulting-string-after-adjacent-removals/) | [C++](./C++/resulting-string-after-adjacent-removals.cpp) [Python](./Python/resulting-string-after-adjacent-removals.py) | _O(n)_ | _O(1)_ | Medium | | Simulation, Stack
 3597 | [Partition String](https://leetcode.com/problems/partition-string/) | [C++](./C++/partition-string.cpp) [Python](./Python/partition-string.py) | _O(n)_ | _O(t)_ | Medium | | Simulation, Trie
+3608 | [Minimum Time for K Connected Components](https://leetcode.com/problems/minimum-time-for-k-connected-components/) | [C++](./C++/minimum-time-for-k-connected-components.cpp) [Python](./Python/minimum-time-for-k-connected-components.py) | _O(n + eloge)_ | _O(n)_ | Medium | | Backward Simulation, Sort, Union Find
+3609 | [Minimum Moves to Reach Target in Grid](https://leetcode.com/problems/minimum-moves-to-reach-target-in-grid/) | [C++](./C++/minimum-moves-to-reach-target-in-grid.cpp) [Python](./Python/minimum-moves-to-reach-target-in-grid.py) | _O(logtx + logty)_ | _O(1)_ | Hard | | Backward Simulation
 
 <br/>
 <div align="right">
@@ -1918,6 +1926,8 @@
 3570  | [Find Books with No Available Copies](https://leetcode.com/problems/find-books-with-no-available-copies/) | [MySQL](./MySQL/find-books-with-no-available-copies.sql) | _O(nlogn)_ | _O(n)_       | Easy           |||
 3580  | [Find Consistently Improving Employees](https://leetcode.com/problems/find-consistently-improving-employees/) | [MySQL](./MySQL/find-consistently-improving-employees.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function |
 3586  | [Find COVID Recovery Patients](https://leetcode.com/problems/find-covid-recovery-patients/) | [MySQL](./MySQL/find-covid-recovery-patients.sql) | _O(n^2)_ | _O(n^2)_       | Medium           || |
+3601  | [Find Drivers with Improved Fuel Efficiency](https://leetcode.com/problems/find-drivers-with-improved-fuel-efficiency/) | [MySQL](./MySQL/find-drivers-with-improved-fuel-efficiency.sql) | _O(nlogn)_ | _O(n)_       | Medium           || |
+3611  | [Find Overbooked Employees](https://leetcode.com/problems/find-overbooked-employees/) | [MySQL](./MySQL/find-overbooked-employees.sql) | _O(m + nlogn)_ | _O(m + n)_       | Medium           || |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
