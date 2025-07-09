@@ -1,7 +1,7 @@
 # Time:  O(c + n + q), n = len(connections)
 # Space: O(c + n)
 
-# dfs, sort
+# dfs, flood fill, sort
 class Solution(object):
     def processQueries(self, c, connections, queries):
         """
