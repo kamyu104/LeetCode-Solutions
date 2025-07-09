@@ -1,7 +1,7 @@
 // Time:  O(n + eloge)
 // Space: O(n)
 
-// union find, sort
+// backward simulation, union find, sort
 class Solution {
 public:
     int minTime(int n, vector<vector<int>>& edges, int k) {
