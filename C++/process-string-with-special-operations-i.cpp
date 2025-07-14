@@ -1,7 +1,7 @@
-// Time:  O(n), n = len(result)
-// Space: O(n)
+// Time:  O(r), r = len(result)
+// Space: O(r)
 
-// deque, simulation
+// simulation, deque
 class Solution {
 public:
     string processStr(string s) {
