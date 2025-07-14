@@ -1,10 +1,10 @@
-# Time:  O(n), n = len(result)
-# Space: O(n)
+# Time:  O(r), r = len(result)
+# Space: O(r)
 
 import collections
 
 
-# deque, simulation
+# simulation, deque
 class Solution(object):
     def processStr(self, s):
         """
