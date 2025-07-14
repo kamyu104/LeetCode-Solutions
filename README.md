@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3615%20%2F%203615-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3616%20%2F%203616-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1639,6 +1639,7 @@
 3612 | [Process String with Special Operations I](https://leetcode.com/problems/process-string-with-special-operations-i/) | [C++](./C++/process-string-with-special-operations-i.cpp) [Python](./Python/process-string-with-special-operations-i.py) | _O(r)_ | _O(r)_ | Medium | | Simulation, Deque
 3613 | [Minimize Maximum Component Cost](https://leetcode.com/problems/minimize-maximum-component-cost/) | [C++](./C++/minimize-maximum-component-cost.cpp) [Python](./Python/minimize-maximum-component-cost.py) | _O(n + eloge)_ | _O(n)_ | Medium | | Backward Simulation, Sort, Union Find
 3614 | [Process String with Special Operations II](https://leetcode.com/problems/process-string-with-special-operations-ii/) | [C++](./C++/process-string-with-special-operations-ii.cpp) [Python](./Python/process-string-with-special-operations-ii.py) | _O(n)_ | _O(1)_ | Hard | | Backward Simulation
+3616 | [Number of Student Replacements](https://leetcode.com/problems/number-of-student-replacements/) | [C++](./C++/number-of-student-replacements.cpp) [Python](./Python/number-of-student-replacements.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Simulation
 
 <br/>
 <div align="right">
