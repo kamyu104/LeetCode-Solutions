@@ -19,7 +19,6 @@ public:
             }
             return result;
         }
-
         vector<vector<int>> adj(n);
         for (const auto& e : edges) {
             adj[e[0]].emplace_back(e[1]);
