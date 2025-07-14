@@ -5,7 +5,7 @@
 class Solution {
 public:
     int maxLen(int n, vector<vector<int>>& edges, string label) {
-        if (size(edges) == n * (n - 1) / 2) {  // improve performance
+        if (size(edges) == n * (n - 1) / 2) {  // to improve performance
             vector<int> cnt(26);
             for (const auto& x : label) {
                 ++cnt[x - 'a'];
