@@ -13,7 +13,7 @@ class Solution(object):
         def popcount(x):
             return bin(x).count('1')
 
-        if len(edges) == n*(n-1)//2:  # improve performance
+        if len(edges) == n*(n-1)//2:  # to improve performance
             cnt = [0]*26
             for x in label:
                 cnt[ord(x)-ord('a')] += 1
