@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3616%20%2F%203616-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3617%20%2F%203617-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -1933,6 +1933,7 @@
 3586  | [Find COVID Recovery Patients](https://leetcode.com/problems/find-covid-recovery-patients/) | [MySQL](./MySQL/find-covid-recovery-patients.sql) | _O(n^2)_ | _O(n^2)_       | Medium           || |
 3601  | [Find Drivers with Improved Fuel Efficiency](https://leetcode.com/problems/find-drivers-with-improved-fuel-efficiency/) | [MySQL](./MySQL/find-drivers-with-improved-fuel-efficiency.sql) | _O(nlogn)_ | _O(n)_       | Medium           || |
 3611  | [Find Overbooked Employees](https://leetcode.com/problems/find-overbooked-employees/) | [MySQL](./MySQL/find-overbooked-employees.sql) | _O(m + nlogn)_ | _O(m + n)_       | Medium           || |
+3617  | [Find Students with Study Spiral Pattern](https://leetcode.com/problems/find-students-with-study-spiral-pattern/) | [MySQL](./MySQL/find-students-with-study-spiral-pattern.sql) | _O(nlogn)_ | _O(n)_       | Hard           || Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
