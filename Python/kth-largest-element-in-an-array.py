@@ -72,3 +72,21 @@ class Solution2(object):
         nums[right], nums[new_pivot_idx] = nums[new_pivot_idx], nums[right]
         return new_pivot_idx
 
+"""
+This implementation maintains a min-heap of size k, ensuring that the smallest element in the heap is the k-th largest in the array. 
+The time complexity is O(Nlogk), which is efficient for large arrays. 
+"""
+
+import heapq
+class Solution3(object):
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        # Create a min-heap with the first k elements
+        min_heap = nums[:k]
+        heapq.heapify(min_heap)
+        
+        # Iterate through the remaining elements
+        for num in nums[k:]:
+            if num > min_heap[0]:  # Compare with the smallest element in the heap
+                heapq.heappushpop(min_heap, num)  # Push new element and pop the smallest
+        
+        return min_heap[0]  # The root of the heap is the k-th largest element
