@@ -1,10 +1,14 @@
-# Time:  precompute: O((logr)^2), , r = max(n)
+# Time:  precompute: O((logr) * log(logr) + log*(r) * (logr)), r = max(n)
 #        runtime:    O(nlogr + max_k * n + nlogn + qlogn)
 # Space: O(logr + max_k * n)
 
 # fenwick tree
 def popcount(x):
     return bin(x).count('1')
+
+
+def ceil_log2_x(x):
+    return (x-1).bit_length()
 
 
 class BIT(object):  # 0-indexed.
@@ -32,10 +36,8 @@ D = [0]*(MAX_BIT_LEN+1)
 for i in xrange(2, MAX_BIT_LEN+1):
     D[i] = D[popcount(i)]+1
 MAX_K = 0
-prev = -1
-while MAX_N != prev:
-    prev = MAX_N
-    MAX_N = MAX_N.bit_length()
+while MAX_N != 1:  # O(log*(MAX_N)) times
+    MAX_N = ceil_log2_x(MAX_N)
     MAX_K += 1
 class Solution(object):
     def popcountDepth(self, nums, queries):
