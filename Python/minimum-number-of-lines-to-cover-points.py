@@ -14,7 +14,7 @@ class Solution(object):
         def gcd(a, b):  # Time: O(log(a + b))
             while b:
                 a, b = b, a % b
-            return a
+            return abs(a)
 
         def popcount(x):
             result = 0
@@ -35,6 +35,11 @@ class Solution(object):
                 a, b, c = (y2-y1), -(x2-x1), x1*(y2-y1)-y1*(x2-x1) 
                 g = gcd(gcd(a, b), c)
                 a, b, c = a//g, b//g, c//g
+                for x in (a, b, c):
+                    if x != 0:
+                        if x < 0:
+                            a, b, c = -a, -b, -c
+                        break
                 lookup[(a, b, c)].add((x1, y1))
                 lookup[(a, b, c)].add((x2, y2))
         lines = [l for l, p in lookup.iteritems() if len(p) > 2]  # filter to improve complexity
