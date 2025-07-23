@@ -1,4 +1,4 @@
-// Time:  precompute: O((logr) * log(logr) + log*(r) * (logr)), r = max(n)
+// Time:  precompute: O((logr) * log(logr) + log*(r) * (logr)) = O((logr) * log(logr)), r = max(n)
 //        runtime:    O(nlogr + max_k * n + nlogn + qlogn)
 // Space: O(logr + max_k * n)
 
