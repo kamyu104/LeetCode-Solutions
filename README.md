@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3617%20%2F%203617-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3625%20%2F%203625-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -771,6 +771,12 @@
 3588 | [Find Maximum Area of a Triangle](https://leetcode.com/problems/find-maximum-area-of-a-triangle/) | [C++](./C++/find-maximum-area-of-a-triangle.cpp) [Python](./Python/find-maximum-area-of-a-triangle.py) | _O(n)_ | _O(n)_ | Medium | | Math, Hash Table |
 3596 | [Minimum Cost Path with Alternating Directions I](https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-i/) | [C++](./C++/minimum-cost-path-with-alternating-directions-i.cpp) [Python](./Python/minimum-cost-path-with-alternating-directions-i.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | Math |
 3602 | [Hexadecimal and Hexatrigesimal Conversion](https://leetcode.com/problems/hexadecimal-and-hexatrigesimal-conversion/) | [C++](./C++/hexadecimal-and-hexatrigesimal-conversion.cpp) [Python](./Python/hexadecimal-and-hexatrigesimal-conversion.py) | _O(logn)_ | _O(1)_ | Easy | | Math |
+3618 | [Split Array by Prime Indices](https://leetcode.com/problems/split-array-by-prime-indices/) | [C++](./C++/split-array-by-prime-indices.cpp) [Python](./Python/split-array-by-prime-indices.py) | precompute: _O(max_n)_<br>runtime: _O(n)_ | _O(max_n)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes` |
+3621 | [Number of Integers With Popcount-Depth Equal to K I](https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/) | [C++](./C++/number-of-integers-with-popcount-depth-equal-to-k-i.cpp) [Python](./Python/number-of-integers-with-popcount-depth-equal-to-k-i.py) | precompute: _O((logr)^2)_<br>runtime: _O((logn)^2)_ | _O((logr)^2)_ | Hard | | Combinatorics |
+3622 | [Check Divisibility by Digit Sum and Product](https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/) | [C++](./C++/check-divisibility-by-digit-sum-and-product.cpp) [Python](./Python/check-divisibility-by-digit-sum-and-product.py) | _O(logn)_ | _O(1)_ | Easy | | Math |
+3623 | [Count Number of Trapezoids I](https://leetcode.com/problems/count-number-of-trapezoids-i/) | [C++](./C++/count-number-of-trapezoids-i.cpp) [Python](./Python/count-number-of-trapezoids-i.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Combinatorics |
+3624 | [Number of Integers With Popcount-Depth Equal to K II](https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/) | [C++](./C++/number-of-integers-with-popcount-depth-equal-to-k-ii.cpp) [Python](./Python/number-of-integers-with-popcount-depth-equal-to-k-ii.py) | precompute: _O((logr) * log(logr) + log*(r) * (logr))_<br>runtime: _O(nlogr + max_k * n + nlogn + qlogn)_ | _O(logr + max_k * n)_ | Hard | | Combinatorics |
+3625 | [Count Number of Trapezoids II](https://leetcode.com/problems/count-number-of-trapezoids-ii/) | [C++](./C++/count-number-of-trapezoids-ii.cpp) [Python](./Python/count-number-of-trapezoids-ii.py) | _O(n^2 * logr)_ | _O(n^2)_ | Hard | | Freq Table, Combinatorics |
 
 <br/>
 <div align="right">
@@ -1096,6 +1102,7 @@
 3590 | [Kth Smallest Path XOR Sum](https://leetcode.com/problems/kth-smallest-path-xor-sum/)| [C++](./C++/kth-smallest-path-xor-sum.cpp) [Python](./Python/kth-smallest-path-xor-sum.py)| _O(n * (logn)^2 + qlogn)_ | _O(n + q)_ | Hard |  | DFS, Small-to-Large Merging, Ordered Set, Sorted List |
 3593 | [Minimum Increments to Equalize Leaf Paths](https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/)| [C++](./C++/minimum-increments-to-equalize-leaf-paths.cpp) [Python](./Python/minimum-increments-to-equalize-leaf-paths.py)| _O(n)_ | _O(n)_ | Medium |  | DFS |
 3607 | [Power Grid Maintenance](https://leetcode.com/problems/power-grid-maintenance/)| [C++](./C++/power-grid-maintenance.cpp) [Python](./Python/power-grid-maintenance.py)| _O(c + n + q)_ | _O(c + n)_ | Medium |  | DFS, Flood Fill, Sort |
+3619 | [Count Islands With Total Value Divisible by K](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/)| [C++](./C++/count-islands-with-total-value-divisible-by-k.cpp) [Python](./Python/count-islands-with-total-value-divisible-by-k.py)| _O(m * n)_ | _O(m + n)_ | Medium |  | BFS, Flood Fill |
 
 <br/>
 <div align="right">
@@ -1587,6 +1594,7 @@
 3594 | [Minimum Time to Transport All Individuals](https://leetcode.com/problems/minimum-time-to-transport-all-individuals/) | [C++](./C++/minimum-time-to-transport-all-individuals.cpp) [Python](./Python/minimum-time-to-transport-all-individuals.py) | _O(m * 3^n) * log(m * 3^n))_ | _O(m * 3^n)_ | Hard | | Graph, `Dijkstra's Algorithm`, Submask Enumeration
 3600 | [Maximize Spanning Tree Stability with Upgrades](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/) | [C++](./C++/maximize-spanning-tree-stability-with-upgrades.cpp) [Python](./Python/maximize-spanning-tree-stability-with-upgrades.py) | _O(n + eloge)_ | _O(n)_ | Hard | | MST, Maximum Spanning Tree, Union Find, `Kruskal's Algorithm`, Greedy
 3604 | [Minimum Time to Reach Destination in Directed Graph](https://leetcode.com/problems/minimum-time-to-reach-destination-in-directed-graph/) | [C++](./C++/minimum-time-to-reach-destination-in-directed-graph.cpp) [Python](./Python/minimum-time-to-reach-destination-in-directed-graph.py) | _O(n + eloge)_ | _O(n + e)_ | Medium | | Graph, `Dijkstra's Algorithm`
+3620 | [Network Recovery Pathways](https://leetcode.com/problems/network-recovery-pathways/)|[C++](./C++/network-recovery-pathways.cpp) [Python](./Python/network-recovery-pathways.py) | _O((n + e) * logr)_      | _O(n + e)_          | Hard         | | Binary Search, Topological Sort, DP
 
 <br/>
 <div align="right">
