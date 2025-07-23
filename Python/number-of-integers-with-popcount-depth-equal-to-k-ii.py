@@ -7,7 +7,7 @@ def popcount(x):
     return bin(x).count('1')
 
 
-def ceil_log2_x(x):
+def ceil_log2(x):
     return (x-1).bit_length()
 
 
@@ -37,7 +37,7 @@ for i in xrange(2, MAX_BIT_LEN+1):
     D[i] = D[popcount(i)]+1
 MAX_K = 0
 while MAX_N != 1:  # O(log*(MAX_N)) times
-    MAX_N = ceil_log2_x(MAX_N)
+    MAX_N = ceil_log2(MAX_N)
     MAX_K += 1
 class Solution(object):
     def popcountDepth(self, nums, queries):
