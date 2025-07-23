@@ -28,19 +28,13 @@ public:
                 const int x2 = points[j][0], y2 = points[j][1];
                 // (x-x1)/(x2-x1) = (y-y1)/(y2-y1)
                 // => (y2-y1)x - (x2-x1)y = x1(y2-y1) - y1(x2-x1)
-                int a = y2 - y1;
-                int b = -(x2 - x1);
-                int c = x1 * (y2 - y1) - y1 * (x2 - x1);
-                const int g = gcd(gcd(a, b), c);
-                a /= g, b /= g, c /= g;
-                for (const auto& x : {a, b, c}) {
-                    if (x) {
-                        if (x < 0) {
-                            a = -a, b = -b, c = -c;
-                        }
-                        break;
-                    }
+                const int dx = x2 - x1, dy = y2 - y1;
+                const auto& g = gcd(dx, dy);
+                int a = dx / g, b = dy / g;
+                if (a < 0 || (a == 0 && b < 0)) {
+                    a = -a, b = -b;
                 }
+                const int c = b * x1 - a * y1;
                 lookup[{a, b, c}].emplace(x1, y1);
                 lookup[{a, b, c}].emplace(x2, y2);
             }
