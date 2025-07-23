@@ -14,7 +14,7 @@ class Solution(object):
         def gcd(a, b):
             while b:
                 a, b = b, a%b
-            return a
+            return abs(a)
 
         lookup_slope = collections.defaultdict(int)
         lookup_line = collections.defaultdict(int)
@@ -26,7 +26,7 @@ class Solution(object):
             for j in xrange(i):
                 x2, y2 = points[j]
                 dx, dy = x2-x1, y2-y1
-                g = abs(gcd(dx, dy))
+                g = gcd(dx, dy)
                 a, b = dx//g, dy//g
                 if a < 0 or (a == 0 and b < 0):
                     a, b = -a, -b
