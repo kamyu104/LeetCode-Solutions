@@ -32,14 +32,12 @@ class Solution(object):
                 x2, y2 = points[j]
                 # (x-x1)/(x2-x1) = (y-y1)/(y2-y1)
                 # => (y2-y1)x - (x2-x1)y = x1(y2-y1) - y1(x2-x1)
-                a, b, c = (y2-y1), -(x2-x1), x1*(y2-y1)-y1*(x2-x1) 
-                g = gcd(gcd(a, b), c)
-                a, b, c = a//g, b//g, c//g
-                for x in (a, b, c):
-                    if x != 0:
-                        if x < 0:
-                            a, b, c = -a, -b, -c
-                        break
+                dx, dy = x2-x1, y2-y1
+                g = gcd(dx, dy)
+                a, b = dx//g, dy//g
+                if a < 0 or (a == 0 and b < 0):
+                    a, b = -a, -b
+                c = b*x1-a*y1
                 lookup[(a, b, c)].add((x1, y1))
                 lookup[(a, b, c)].add((x2, y2))
         lines = [l for l, p in lookup.iteritems() if len(p) > 2]  # filter to improve complexity
