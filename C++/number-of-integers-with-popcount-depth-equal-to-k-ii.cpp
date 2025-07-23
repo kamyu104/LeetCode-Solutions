@@ -1,4 +1,4 @@
-// Time:  precompute: O((logr)^2), , r = max(n)
+// Time:  precompute: O((logr) * log(logr) + log*(r) * (logr)), r = max(n)
 //        runtime:    O(nlogr + max_k * n + nlogn + qlogn)
 // Space: O(logr + max_k * n)
 
@@ -36,6 +36,10 @@ int bit_length(int64_t x) {
     return (x ? std::__lg(x) : -1) + 1;
 }
 
+int ceil_log2(int64_t x) {
+    return std::__lg(x - 1) + 1;
+};
+
 pair<vector<int>, int> init() {
     int64_t MAX_N = 1e15;
     static const int MAX_BIT_LEN = bit_length(MAX_N);
@@ -44,9 +48,8 @@ pair<vector<int>, int> init() {
         D[i] = D[__builtin_popcount(i)] + 1;
     }
     int MAX_K = 0;
-    for (int prev = -1; MAX_N != prev; ++MAX_K) {
-        prev = MAX_N;
-        MAX_N = bit_length(MAX_N);
+    for (; MAX_N != 1; ++MAX_K) {  // O(log*(MAX_N)) times
+        MAX_N = ceil_log2(MAX_N);
     }
     return {D, MAX_K};
 }
