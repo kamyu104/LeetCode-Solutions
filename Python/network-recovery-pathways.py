@@ -1,5 +1,5 @@
-# Time:  O((e + v) * logr), r = max(e[2] for e in edges)
-# Space: O(e + v)
+# Time:  O((n + e) * logr), r = max(e[2] for e in edges)
+# Space: O(n + e)
 
 # binary search, topological sort, dp
 class Solution(object):
