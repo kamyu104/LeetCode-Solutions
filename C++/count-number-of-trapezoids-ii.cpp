@@ -31,8 +31,7 @@ public:
                 const auto& g = gcd(dx, dy);
                 int a = dx / g, b = dy / g;
                 if (a < 0 || (a == 0 && b < 0)) {
-                    a = -a;
-                    b = -b;
+                    a = -a, b = -b;
                 }
                 const int c = b * x1 - a * y1;
                 result += lookup_slope[tuple(a, b)]++ - lookup_line[tuple(a, b, c)]++;
