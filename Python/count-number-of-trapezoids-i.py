@@ -1,6 +1,9 @@
 # Time:  O(n)
 # Space: O(n)
 
+import collections
+
+
 # freq table, combinatorics
 class Solution(object):
     def countTrapezoids(self, points):
