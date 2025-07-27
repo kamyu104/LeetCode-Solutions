@@ -1,0 +1,40 @@
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        
+        x={}
+        for i in range(0,len(nums)):
+            if(-1*nums[i] in x):
+                x[-1*nums[i]].add(i)
+            else:
+                x[-1*nums[i]]=set([i])
+        
+        output=set()    
+        
+        for i in range(0,len(nums)-1):
+            
+            #important, required for removing duplicates check 
+            if(i>0 and nums[i]==nums[i-1]):
+                    continue
+            for j in range(i+1,len(nums)):
+                if(nums[i]+nums[j] in x.keys()):
+                    if(i in x[nums[i]+nums[j]] and j not in x[nums[i]+nums[j]]):
+                        if(len(x[nums[i]+nums[j]])>1):
+                            q=[nums[i],nums[j],-1*(nums[i]+nums[j])]
+                            q.sort()
+                            output.add(tuple(q))
+                    elif(i not in x[nums[i]+nums[j]] and j in x[nums[i]+nums[j]]):
+                        if(len(x[nums[i]+nums[j]])>1):
+                            q=[nums[i],nums[j],-1*(nums[i]+nums[j])]
+                            q.sort()
+                            output.add(tuple(q))
+                    elif(i in x[nums[i]+nums[j]] and j in x[nums[i]+nums[j]]):
+                        if(len(x[nums[i]+nums[j]])>2):
+                            q=[nums[i],nums[j],-1*(nums[i]+nums[j])]
+                            q.sort()
+                            output.add(tuple(q))
+                    else:
+                        q=[nums[i],nums[j],-1*(nums[i]+nums[j])]
+                        q.sort()
+                        output.add(tuple(q))
+
+        return output
