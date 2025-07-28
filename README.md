@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3625%20%2F%203625-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3631%20%2F%203631-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -821,6 +821,7 @@
 3394 | [Check if Grid can be Cut into Sections](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections/) | [C++](./C++/check-if-grid-can-be-cut-into-sections.cpp) [Python](./Python/check-if-grid-can-be-cut-into-sections.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Merge Intervals
 3431 | [Minimum Unlocked Indices to Sort Nums](https://leetcode.com/problems/minimum-unlocked-indices-to-sort-nums/) | [C++](./C++/minimum-unlocked-indices-to-sort-nums.cpp) [Python](./Python/minimum-unlocked-indices-to-sort-nums.py) | _O(n)_ | _O(1)_ | Medium | | Sort
 3551 | [Minimum Swaps to Sort by Digit Sum](https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/) | [C++](./C++/minimum-swaps-to-sort-by-digit-sum.cpp) [Python](./Python/minimum-swaps-to-sort-by-digit-sum.py) | _O(nlogr + nlogn)_ | _O(n)_ | Medium | | Sort
+3631 | [Sort Threats by Severity and Exploitability](https://leetcode.com/problems/sort-threats-by-severity-and-exploitability/) | [C++](./C++/sort-threats-by-severity-and-exploitability.cpp) [Python](./Python/sort-threats-by-severity-and-exploitability.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Sort
 
 <br/>
 <div align="right">
@@ -1065,6 +1066,7 @@
 3535 | [Unit Conversion II](https://leetcode.com/problems/unit-conversion-ii/) | [C++](./C++/unit-conversion-ii.cpp) [Python](./Python/unit-conversion-ii.py) | _O(n + qlogm)_ | _O(n)_ | Medium | 🔒 | BFS, Fast Exponentiation
 3552 | [Grid Teleportation Traversal](https://leetcode.com/problems/grid-teleportation-traversal/) | [C++](./C++/grid-teleportation-traversal.cpp) [Python](./Python/grid-teleportation-traversal.py) | _O(m * n)_ | _O(m * n)_ | Medium |  | 0-1 BFS, Deque
 3568 | [Minimum Moves to Clean the Classroom](https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/) | [C++](./C++/minimum-moves-to-clean-the-classroom.cpp) [Python](./Python/minimum-moves-to-clean-the-classroom.py) | _O(m * n * 2^l)_ | _O(m * n * 2^l)_ | Medium |  | BFS, Bitmasks
+3629 | [Minimum Jumps to Reach End via Prime Teleportation](https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) | [C++](./C++/minimum-jumps-to-reach-end-via-prime-teleportation.cpp) [Python](./Python/minimum-jumps-to-reach-end-via-prime-teleportation.py) | precompute: _O(r)_<br>runtime: _O(nlogr)_ | _O(r + nlogr)_ | Medium |  | Number Theory, `Linear Sieve of Eratosthenes`, BFS
 
 <br/>
 <div align="right">
@@ -1335,6 +1337,7 @@
 3603 | [Minimum Cost Path with Alternating Directions II](https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-ii/) | [C++](./C++/minimum-cost-path-with-alternating-directions-ii.cpp) [Python](./Python/minimum-cost-path-with-alternating-directions-ii.py) | _O(m * n)_   | _O(1)_        | Medium         | | DP
 3610 | [Minimum Number of Primes to Sum to Target](https://leetcode.com/problems/minimum-number-of-primes-to-sum-to-target/) | [C++](./C++/minimum-number-of-primes-to-sum-to-target.cpp) [Python](./Python/minimum-number-of-primes-to-sum-to-target.py) | _O(nlog(log(min(m, n))) + m * n)_   | _O(n)_        | Medium         | 🔒 | Number Theory, Knapsack DP
 3615 | [Longest Palindromic Path in Graph](https://leetcode.com/problems/longest-palindromic-path-in-graph/) | [C++](./C++/longest-palindromic-path-in-graph.cpp) [Python](./Python/longest-palindromic-path-in-graph.py) | _O(n^4 * 2^n)_   | _O(n + e)_        | Hard         | | Bitmasks, DP, Freq Table
+3628 | [Maximum Number of Subsequences After One Inserting](https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/) | [C++](./C++/maximum-number-of-subsequences-after-one-inserting.cpp) [Python](./Python/maximum-number-of-subsequences-after-one-inserting.py) | _O(n)_   | _O(1)_        | Medium         | | Prefix Sum, DP
 
 <br/>
 <div align="right">
@@ -1528,6 +1531,8 @@
 3557 | [Find Maximum Number of Non Intersecting Substrings](https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/) | [C++](./C++/find-maximum-number-of-non-intersecting-substrings.cpp) [Python](./Python/find-maximum-number-of-non-intersecting-substrings.py) | _O(n)_   | _O(26)_        | Medium         | | Greedy, Hash Table
 3576 | [Transform Array to All Equal Elements](https://leetcode.com/problems/transform-array-to-all-equal-elements/) | [C++](./C++/transform-array-to-all-equal-elements.cpp) [Python](./Python/transform-array-to-all-equal-elements.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3587 | [Minimum Adjacent Swaps to Alternate Parity](https://leetcode.com/problems/minimum-adjacent-swaps-to-alternate-parity/) | [C++](./C++/minimum-adjacent-swaps-to-alternate-parity.cpp) [Python](./Python/minimum-adjacent-swaps-to-alternate-parity.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3627 | [Maximum Median Sum of Subsequences of Size 3](https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/) | [C++](./C++/maximum-median-sum-of-subsequences-of-size-3.cpp) [Python](./Python/maximum-median-sum-of-subsequences-of-size-3.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Greedy
+3630 | [Partition Array for Maximum XOR and AND](https://leetcode.com/problems/partition-array-for-maximum-xor-and-and/) | [C++](./C++/partition-array-for-maximum-xor-and-and.cpp) [Python](./Python/partition-array-for-maximum-xor-and-and.py) | _O(nlogr * 2^n)_   | _O(1)_        | Hard         | | Bitmasks, Greedy
 
 <br/>
 <div align="right">
@@ -1942,6 +1947,7 @@
 3601  | [Find Drivers with Improved Fuel Efficiency](https://leetcode.com/problems/find-drivers-with-improved-fuel-efficiency/) | [MySQL](./MySQL/find-drivers-with-improved-fuel-efficiency.sql) | _O(nlogn)_ | _O(n)_       | Medium           || |
 3611  | [Find Overbooked Employees](https://leetcode.com/problems/find-overbooked-employees/) | [MySQL](./MySQL/find-overbooked-employees.sql) | _O(m + nlogn)_ | _O(m + n)_       | Medium           || |
 3617  | [Find Students with Study Spiral Pattern](https://leetcode.com/problems/find-students-with-study-spiral-pattern/) | [MySQL](./MySQL/find-students-with-study-spiral-pattern.sql) | _O(nlogn)_ | _O(n)_       | Hard           || Window Function |
+3626  | [Find Stores with Inventory Imbalance](https://leetcode.com/problems/find-stores-with-inventory-imbalance/) | [MySQL](./MySQL/find-stores-with-inventory-imbalance.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Medium           || |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
