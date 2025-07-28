@@ -21,11 +21,11 @@ public:
             xor_arr[mask] = xor_arr[mask ^ lb] ^ nums[i];
         }
         int64_t result = 0;
-        vector<int> base(l);
+        vector<int> base(l);  // to improve performance
         for (int mask = 1; mask < (1 << n); ++mask) {
             const auto& total_and = and_arr[mask];
             const auto& total_xor = xor_arr[full_mask ^ mask];
-            base.assign(l, 0);  // to improve performance
+            base.assign(l, 0);
             for (int remain = full_mask ^ mask; remain; remain &= remain - 1) {
                 const int i = __builtin_ctz(remain);
                 int x = nums[i] & ~total_xor;
