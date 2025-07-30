@@ -63,7 +63,7 @@ public:
         };
 
         const int l = bit_length(ranges::max(nums));
-        const auto& max_xor_subset = [&](const vector<int>& nums) {  //# Time: O(nlogr)
+        const auto& max_xor_subset = [&](const vector<int>& nums) {  // Time: O(nlogr)
             vector<int> base(l);
             for (auto x : nums) {  // gaussian elimination over GF(2)
                 for (int i = l - 1; i >= 0; --i) {
@@ -123,7 +123,7 @@ public:
         };
 
         const int l = bit_length(ranges::max(nums));
-        const auto& max_xor_subset = [&](const vector<int>& nums) {  //# Time: O(nlogr)
+        const auto& max_xor_subset = [&](const vector<int>& nums) {  // Time: O(nlogr)
             vector<int> base(l);
             for (auto x : nums) {  // gaussian elimination over GF(2)
                 for (int i = l - 1; i >= 0; --i) {
