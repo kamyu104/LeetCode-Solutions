@@ -65,7 +65,7 @@ public:
         int prefix = 0;
         const auto& mx = max({ranges::max(nums), k, 1});
         Trie trie(bit_length(mx));
-        trie.add(0);
+        trie.add(prefix);
         for (const auto& x : nums) {
             prefix ^= x;
             result += trie.query(prefix, k);
