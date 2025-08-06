@@ -1,7 +1,7 @@
 # Time:  O(nlogr), r = max(max(nums), k, 1)
 # Space: O(nlogr)
 
-# prefix sum, trie
+# bitmasks, prefix sum, trie
 class Solution(object):
     def countXorSubarrays(self, nums, k):
         """
@@ -65,7 +65,7 @@ class Solution(object):
 
 # Time:  O(nlogr), r = max(max(nums), k, 1)
 # Space: O(t)
-# prefix sum, trie
+# bitmasks, prefix sum, trie
 class Solution_TLE(object):
     def countXorSubarrays(self, nums, k):
         """
