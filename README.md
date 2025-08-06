@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3631%20%2F%203631-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3641%20%2F%203641-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -101,6 +101,7 @@
 3344 | [Maximum Sized Array](https://leetcode.com/problems/maximum-sized-array/) | [C++](./C++/maximum-sized-array.cpp) [Python](./Python/maximum-sized-array.py) | precompute: O(max_s^(1/5) * log(max_s))<br>runtime: O(log(max_s)) | _O(max_s^(1/5))_ | Medium | 🔒 | Precompute, Bitmasks, Combinatorics, Binary Search
 3370 | [Smallest Number With All Set Bits](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | [C++](./C++/smallest-number-with-all-set-bits.cpp) [Python](./Python/smallest-number-with-all-set-bits.py) | _O(1)_ | _O(1)_ | Easy | | Bit Manipulation
 3566 | [Partition Array into Two Equal Product Subsets](https://leetcode.com/problems/partition-array-into-two-equal-product-subsets/) | [C++](./C++/partition-array-into-two-equal-product-subsets.cpp) [Python](./Python/partition-array-into-two-equal-product-subsets.py) | _O(n * 2^n)_ | _O(1)_ | Medium | | Bitmasks
+3632 | [Subarrays with XOR at Least K](https://leetcode.com/problems/subarrays-with-xor-at-least-k/) | [C++](./C++/subarrays-with-xor-at-least-k.cpp) [Python](./Python/subarrays-with-xor-at-least-k.py) | _O(nlogr)_ | _O(t)_ | Hard | 🔒 | Bitmasks, Prefix Sum, Trie
 
 <br/>
 <div align="right">
@@ -263,6 +264,7 @@
 3549 | [Multiply Two Polynomials](https://leetcode.com/problems/multiply-two-polynomials/) | [C++](./C++/multiply-two-polynomials.cpp) [Python](./Python/multiply-two-polynomials.py) | _O((n + m) * log(n + m))_ | _O(n + m)_ | Hard | 🔒 | `Fast Fourier Transform`, FFT
 3550 | [Smallest Index With Digit Sum Equal to Index](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/) | [C++](./C++/smallest-index-with-digit-sum-equal-to-index.cpp) [Python](./Python/smallest-index-with-digit-sum-equal-to-index.py) | _O(nlogr)_ | _O(1)_ | Easy | | Array
 3569 | [Maximize Count of Distinct Primes After Split](https://leetcode.com/problems/maximize-count-of-distinct-primes-after-splitx/) | [C++](./C++/maximize-count-of-distinct-primes-after-split.cpp) [Python](./Python/maximize-count-of-distinct-primes-after-split.py) | _O(r + nlogn + qlogn)_ | _O(r + n)_ | Medium | | Number Theory, BST, Sorted List, Segment Tree
+3637 | [Trionic Array I](https://leetcode.com/problems/trionic-array-i/) | [C++](./C++/trionic-array-i.cpp) [Python](./Python/trionic-array-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -609,6 +611,7 @@
 3572 | [Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values](https://leetcode.com/problems/maximize-ysum-by-picking-a-triplet-of-distinct-xvalues/) | [C++](./C++/maximize-ysum-by-picking-a-triplet-of-distinct-xvalues.cpp) [Python](./Python/maximize-ysum-by-picking-a-triplet-of-distinct-xvalues.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table, Quick Select
 3581 | [Count Odd Letters from Number](https://leetcode.com/problems/count-odd-letters-from-number/) | [C++](./C++/count-odd-letters-from-number.cpp) [Python](./Python/count-odd-letters-from-number.py) | _O(logn)_ | _O(26)_ | Easy |🔒| Freq Table
 3591 | [Check if Any Element Has Prime Frequency](https://leetcode.com/problems/check-if-any-element-has-prime-frequency/) | [C++](./C++/check-if-any-element-has-prime-frequency.cpp) [Python](./Python/check-if-any-element-has-prime-frequency.py) | precompute: _O(MAX_N)_<br>runtime: _O(n)_ | _O(MAX_N)_ | Easy || Freq Table, Number Theory, `Linear Sieve of Eratosthenes`
+3636 | [Threshold Majority Queries](https://leetcode.com/problems/threshold-majority-queries/) | [C++](./C++/threshold-majority-queries.cpp) [Python](./Python/threshold-majority-queries.py) | _O(nlogn + qlogq + (n + q) * sqrt(n) * logn)_ | _O(q + n)_ | Hard || Sort, Coordinate Compression, Sqrt Decomposition, `Mo's Algorithm`, Freq Table, Sorted List, BST
 
 <br/>
 <div align="right">
@@ -932,6 +935,9 @@
 3567 | [Minimum Absolute Difference in Sliding Submatrix](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/) | [C++](./C++/minimum-absolute-difference-in-sliding-submatrix.cpp) [Python](./Python/minimum-absolute-difference-in-sliding-submatrix.py) | _O(m * n * k^2)_ | _O(k^2)_ | Medium | | Brute Force, Sort, Two Pointers, Sliding Window, BST, Sorted List
 3584 | [Maximum Product of First and Last Elements of a Subsequence](https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/) | [C++](./C++/maximum-product-of-first-and-last-elements-of-a-subsequence.cpp) [Python](./Python/maximum-product-of-first-and-last-elements-of-a-subsequence.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 3589 | [Count Prime-Gap Balanced Subarrays](https://leetcode.com/problems/count-prime-gap-balanced-subarrays/) | [C++](./C++/count-prime-gap-balanced-subarrays.cpp) [Python](./Python/count-prime-gap-balanced-subarrays.py) | precompute: _O(r)_<br>runtime: _O(n)_ | _O(r)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Mono Deque, Two Pointers, Sliding Window
+3634 | [Minimum Removals to Balance Array](https://leetcode.com/problems/minimum-removals-to-balance-array/) | [C++](./C++/minimum-removals-to-balance-array.cpp) [Python](./Python/minimum-removals-to-balance-array.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers, Sliding Window
+3640 | [Trionic Array II](https://leetcode.com/problems/trionic-array-ii/) | [C++](./C++/trionic-array-ii.cpp) [Python](./Python/trionic-array-ii.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers, Sliding Window, Greedy
+3641 | [Longest Semi-Repeating Subarray](https://leetcode.com/problems/longest-semi-repeating-subarray/) | [C++](./C++/longest-semi-repeating-subarray.cpp) [Python](./Python/longest-semi-repeating-subarray.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Freq Table, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -1533,6 +1539,9 @@
 3587 | [Minimum Adjacent Swaps to Alternate Parity](https://leetcode.com/problems/minimum-adjacent-swaps-to-alternate-parity/) | [C++](./C++/minimum-adjacent-swaps-to-alternate-parity.cpp) [Python](./Python/minimum-adjacent-swaps-to-alternate-parity.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3627 | [Maximum Median Sum of Subsequences of Size 3](https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/) | [C++](./C++/maximum-median-sum-of-subsequences-of-size-3.cpp) [Python](./Python/maximum-median-sum-of-subsequences-of-size-3.py) | _O(nlogn)_   | _O(1)_        | Medium         | | Sort, Greedy
 3630 | [Partition Array for Maximum XOR and AND](https://leetcode.com/problems/partition-array-for-maximum-xor-and-and/) | [C++](./C++/partition-array-for-maximum-xor-and-and.cpp) [Python](./Python/partition-array-for-maximum-xor-and-and.py) | _O(nlogr * 2^n)_   | _O(1)_        | Hard         | | Bitmasks, Greedy
+3633 | [Earliest Finish Time for Land and Water Rides I](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) | [C++](./C++/earliest-finish-time-for-land-and-water-rides-i.cpp) [Python](./Python/earliest-finish-time-for-land-and-water-rides-i.py) | _O(n)_   | _O(1)_        | Easy         | | Greedy
+3635 | [Earliest Finish Time for Land and Water Rides II](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/) | [C++](./C++/earliest-finish-time-for-land-and-water-rides-ii.cpp) [Python](./Python/earliest-finish-time-for-land-and-water-rides-ii.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3638 | [Maximum Balanced Shipments](https://leetcode.com/problems/maximum-balanced-shipments/) | [C++](./C++/maximum-balanced-shipments.cpp) [Python](./Python/maximum-balanced-shipments.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 
 <br/>
 <div align="right">
@@ -1653,6 +1662,7 @@
 3613 | [Minimize Maximum Component Cost](https://leetcode.com/problems/minimize-maximum-component-cost/) | [C++](./C++/minimize-maximum-component-cost.cpp) [Python](./Python/minimize-maximum-component-cost.py) | _O(n + eloge)_ | _O(n)_ | Medium | | Backward Simulation, Sort, Union Find
 3614 | [Process String with Special Operations II](https://leetcode.com/problems/process-string-with-special-operations-ii/) | [C++](./C++/process-string-with-special-operations-ii.cpp) [Python](./Python/process-string-with-special-operations-ii.py) | _O(n)_ | _O(1)_ | Hard | | Backward Simulation
 3616 | [Number of Student Replacements](https://leetcode.com/problems/number-of-student-replacements/) | [C++](./C++/number-of-student-replacements.cpp) [Python](./Python/number-of-student-replacements.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Simulation
+3639 | [Minimum Time to Activate String](https://leetcode.com/problems/minimum-time-to-activate-string/) | [C++](./C++/minimum-time-to-activate-string.cpp) [Python](./Python/minimum-time-to-activate-string.py) | _O(n)_ | _O(n)_ | Medium | | Backward Simulation, Doubly Linked List
 
 <br/>
 <div align="right">
