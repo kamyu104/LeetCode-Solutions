@@ -40,7 +40,7 @@ class Solution(object):
             result = [-1]*len(queries)
             block_size = int(len(nums)**0.5)+1  # O(S) = O(sqrt(N))
             idxs = range(len(queries))
-            idxs.sort(key=lambda x: (queries[x][0]//block_size, queries[x][1]))  # Time: O(QlogQ)
+            idxs.sort(key=lambda x: (queries[x][0]//block_size, queries[x][1] if (queries[x][0]//block_size)&1 else -queries[x][1]))  # Time: O(QlogQ)
             left, right = 0, -1
             for i in idxs:  # Time: O((N / S) * N * F + S * Q * F + Q * A) = O((N + Q) * sqrt(N) + Q * N), O(S) = O(sqrt(N)), O(F) = O(logN), O(A) = O(1)
                 l, r, t = queries[i]
@@ -105,7 +105,7 @@ class Solution_TLE(object):
             result = [-1]*len(queries)
             block_size = int(len(nums)**0.5)+1  # O(S) = O(sqrt(N))
             idxs = range(len(queries))
-            idxs.sort(key=lambda x: (queries[x][0]//block_size, queries[x][1]))  # Time: O(QlogQ)
+            idxs.sort(key=lambda x: (queries[x][0]//block_size, queries[x][1] if (queries[x][0]//block_size)&1 else -queries[x][1]))  # Time: O(QlogQ)
             left, right = 0, -1
             for i in idxs:  # Time: O((N / S) * N * F + S * Q * F + Q * A) = O((N + Q) * sqrt(N) * logN), O(S) = O(sqrt(N)), O(F) = O(logN), O(A) = O(1)
                 l, r, t = queries[i]
