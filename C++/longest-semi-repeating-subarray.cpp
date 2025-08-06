@@ -37,14 +37,13 @@ public:
             if (++cnt[nums[right]] == 2) {
                 ++repeat;
             }
-            while (repeat > k) {
+            for (; repeat > k; ++left) {
                 if (cnt[nums[left]]-- == 2) {
                     --repeat;
                 }
                 if (!cnt[nums[left]]) {
                     cnt.erase(nums[left]);
                 }
-                ++left;
             }
             result = max(result, right - left + 1);
         }
