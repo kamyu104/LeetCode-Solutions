@@ -1,7 +1,7 @@
 // Time:  O(nlogr), r = max(max(nums), k, 1)
 // Space: O(t)
 
-// prefix sum, trie
+// bitmasks, prefix sum, trie
 class Solution {
 private:
     class Trie {
