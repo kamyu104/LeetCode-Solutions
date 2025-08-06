@@ -94,7 +94,7 @@ public:
 
 // Time:  O(nlogn + qlogq + (n + q) * sqrt(n) * logn)
 // Space: O(n + q)
-// sort, coordinate compression, mo's algorithm
+// sort, coordinate compression, mo's algorithm, bst
 class Solution2 {
 public:
     vector<int> subarrayMajority(vector<int>& nums, vector<vector<int>>& queries) {
