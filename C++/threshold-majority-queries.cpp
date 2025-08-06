@@ -60,7 +60,7 @@ public:
             sort(begin(idxs), end(idxs), [&](const auto& a, const auto& b) {
                 const auto& i = queries[a][0] / block_size;
                 const auto& j = queries[b][0] / block_size;
-                return i != j ? i < j : queries[a][1] < queries[b][1];
+                return i != j ? i < j : (i & 1 ? queries[a][1] < queries[b][1] : queries[a][1] > queries[b][1]);
             });
             int left = 0, right = -1;
             for (const auto& i : idxs) {
@@ -146,7 +146,7 @@ public:
             sort(begin(idxs), end(idxs), [&](const auto& a, const auto& b) {
                 const auto& i = queries[a][0] / block_size;
                 const auto& j = queries[b][0] / block_size;
-                return i != j ? i < j : queries[a][1] < queries[b][1];
+                return i != j ? i < j : (i & 1 ? queries[a][1] < queries[b][1] : queries[a][1] > queries[b][1]);
             });
             int left = 0, right = -1;
             for (const auto& i : idxs) {
