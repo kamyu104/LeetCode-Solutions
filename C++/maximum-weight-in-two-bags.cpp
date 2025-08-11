@@ -11,10 +11,10 @@ public:
         dp[0][0] = 1;
         for (const auto& w : weights) {
             new_dp = dp;
-            for (int i = w; i <= w1; ++i) {
-                new_dp[i] |= dp[i - w];
-            }
             for (int i = 0; i <= w1; ++i) {
+                if (i - w >= 0) {
+                    new_dp[i] |= dp[i - w];
+                }
                 new_dp[i] |= dp[i] << w;
             }
             swap(dp, new_dp);
