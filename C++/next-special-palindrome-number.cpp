@@ -2,7 +2,7 @@
 //        runtime:    O(logp)
 // Space: O(p)
 
-// precompute, bitmasks, binary search
+// precompute, bitmasks, sort, binary search
 const int MAX_LEN = 16;
 
 const auto& precompute = []() {
