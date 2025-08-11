@@ -1,4 +1,4 @@
-// Time:  O(m * n)
+// Time:  O(k^2)
 // Space: O(1)
 
 // array
