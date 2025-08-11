@@ -10,12 +10,8 @@ public:
         vector<bitset<MAX_W + 1>> dp(w1 + 1), new_dp(w1 + 1);
         dp[0][0] = 1;
         for (const auto& w : weights) {
-            new_dp = dp;
             for (int i = 0; i <= w1; ++i) {
-                if (i - w >= 0) {
-                    new_dp[i] |= dp[i - w];
-                }
-                new_dp[i] |= dp[i] << w;
+                new_dp[i] = dp[i] | (i - w >= 0 ? dp[i - w] : 0) | (dp[i] << w);
             }
             swap(dp, new_dp);
         }
