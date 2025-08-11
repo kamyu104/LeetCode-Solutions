@@ -5,7 +5,7 @@
 import bisect
 
 
-# binary search
+# precompute, bitmasks, binary search
 def next_permutation(nums, begin, end):
     def reverse(nums, begin, end):
         left, right = begin, end-1
