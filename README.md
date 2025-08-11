@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3641%20%2F%203641-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3647%20%2F%203647-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -102,6 +102,7 @@
 3370 | [Smallest Number With All Set Bits](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | [C++](./C++/smallest-number-with-all-set-bits.cpp) [Python](./Python/smallest-number-with-all-set-bits.py) | _O(1)_ | _O(1)_ | Easy | | Bit Manipulation
 3566 | [Partition Array into Two Equal Product Subsets](https://leetcode.com/problems/partition-array-into-two-equal-product-subsets/) | [C++](./C++/partition-array-into-two-equal-product-subsets.cpp) [Python](./Python/partition-array-into-two-equal-product-subsets.py) | _O(n * 2^n)_ | _O(1)_ | Medium | | Bitmasks
 3632 | [Subarrays with XOR at Least K](https://leetcode.com/problems/subarrays-with-xor-at-least-k/) | [C++](./C++/subarrays-with-xor-at-least-k.cpp) [Python](./Python/subarrays-with-xor-at-least-k.py) | _O(nlogr)_ | _O(t)_ | Hard | 🔒 | Bitmasks, Prefix Sum, Trie
+3646 | [Next Special Palindrome Number](https://leetcode.com/problems/next-special-palindrome-number/) | [C++](./C++/next-special-palindrome-number.cpp) [Python](./Python/next-special-palindrome-number.py) | precompute: _O(9 * 2^9 + 16 * p + plogp)_<br>runtime: _O(logp)_ | _O(p)_ | Hard | | Precompute, Bitmasks, Sort, Binary Search
 
 <br/>
 <div align="right">
@@ -265,6 +266,7 @@
 3550 | [Smallest Index With Digit Sum Equal to Index](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/) | [C++](./C++/smallest-index-with-digit-sum-equal-to-index.cpp) [Python](./Python/smallest-index-with-digit-sum-equal-to-index.py) | _O(nlogr)_ | _O(1)_ | Easy | | Array
 3569 | [Maximize Count of Distinct Primes After Split](https://leetcode.com/problems/maximize-count-of-distinct-primes-after-splitx/) | [C++](./C++/maximize-count-of-distinct-primes-after-split.cpp) [Python](./Python/maximize-count-of-distinct-primes-after-split.py) | _O(r + nlogn + qlogn)_ | _O(r + n)_ | Medium | | Number Theory, BST, Sorted List, Segment Tree
 3637 | [Trionic Array I](https://leetcode.com/problems/trionic-array-i/) | [C++](./C++/trionic-array-i.cpp) [Python](./Python/trionic-array-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3643 | [Flip Square Submatrix Vertically](https://leetcode.com/problems/flip-square-submatrix-vertically/) | [C++](./C++/flip-square-submatrix-vertically.cpp) [Python](./Python/flip-square-submatrix-vertically.py) | _O(k^2)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -825,6 +827,7 @@
 3431 | [Minimum Unlocked Indices to Sort Nums](https://leetcode.com/problems/minimum-unlocked-indices-to-sort-nums/) | [C++](./C++/minimum-unlocked-indices-to-sort-nums.cpp) [Python](./Python/minimum-unlocked-indices-to-sort-nums.py) | _O(n)_ | _O(1)_ | Medium | | Sort
 3551 | [Minimum Swaps to Sort by Digit Sum](https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/) | [C++](./C++/minimum-swaps-to-sort-by-digit-sum.cpp) [Python](./Python/minimum-swaps-to-sort-by-digit-sum.py) | _O(nlogr + nlogn)_ | _O(n)_ | Medium | | Sort
 3631 | [Sort Threats by Severity and Exploitability](https://leetcode.com/problems/sort-threats-by-severity-and-exploitability/) | [C++](./C++/sort-threats-by-severity-and-exploitability.cpp) [Python](./Python/sort-threats-by-severity-and-exploitability.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Sort
+3644 | [Maximum K to Sort a Permutation](https://leetcode.com/problems/maximum-k-to-sort-a-permutation/) | [C++](./C++/maximum-k-to-sort-a-permutation.cpp) [Python](./Python/maximum-k-to-sort-a-permutation.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Bitmasks, Constructive Algorithms
 
 <br/>
 <div align="right">
@@ -1344,6 +1347,7 @@
 3610 | [Minimum Number of Primes to Sum to Target](https://leetcode.com/problems/minimum-number-of-primes-to-sum-to-target/) | [C++](./C++/minimum-number-of-primes-to-sum-to-target.cpp) [Python](./Python/minimum-number-of-primes-to-sum-to-target.py) | _O(nlog(log(min(m, n))) + m * n)_   | _O(n)_        | Medium         | 🔒 | Number Theory, Knapsack DP
 3615 | [Longest Palindromic Path in Graph](https://leetcode.com/problems/longest-palindromic-path-in-graph/) | [C++](./C++/longest-palindromic-path-in-graph.cpp) [Python](./Python/longest-palindromic-path-in-graph.py) | _O(n^4 * 2^n)_   | _O(n + e)_        | Hard         | | Bitmasks, DP, Freq Table
 3628 | [Maximum Number of Subsequences After One Inserting](https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/) | [C++](./C++/maximum-number-of-subsequences-after-one-inserting.cpp) [Python](./Python/maximum-number-of-subsequences-after-one-inserting.py) | _O(n)_   | _O(1)_        | Medium         | | Prefix Sum, DP
+3647 | [Maximum Weight in Two Bags](https://leetcode.com/problems/maximum-weight-in-two-bags/) | [C++](./C++/maximum-weight-in-two-bags.cpp) [Python](./Python/maximum-weight-in-two-bags.py) | _O(n * w1 * w2)_   | _O(w1 * w2)_        | Medium         | 🔒 | DP, Bitset
 
 <br/>
 <div align="right">
@@ -1542,6 +1546,7 @@
 3633 | [Earliest Finish Time for Land and Water Rides I](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) | [C++](./C++/earliest-finish-time-for-land-and-water-rides-i.cpp) [Python](./Python/earliest-finish-time-for-land-and-water-rides-i.py) | _O(n)_   | _O(1)_        | Easy         | | Greedy
 3635 | [Earliest Finish Time for Land and Water Rides II](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/) | [C++](./C++/earliest-finish-time-for-land-and-water-rides-ii.cpp) [Python](./Python/earliest-finish-time-for-land-and-water-rides-ii.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3638 | [Maximum Balanced Shipments](https://leetcode.com/problems/maximum-balanced-shipments/) | [C++](./C++/maximum-balanced-shipments.cpp) [Python](./Python/maximum-balanced-shipments.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3645 | [Maximum Total from Optimal Activation Order](https://leetcode.com/problems/maximum-total-from-optimal-activation-order/) | [C++](./C++/maximum-total-from-optimal-activation-order.cpp) [Python](./Python/maximum-total-from-optimal-activation-order.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort, Greedy
 
 <br/>
 <div align="right">
@@ -1958,6 +1963,7 @@
 3611  | [Find Overbooked Employees](https://leetcode.com/problems/find-overbooked-employees/) | [MySQL](./MySQL/find-overbooked-employees.sql) | _O(m + nlogn)_ | _O(m + n)_       | Medium           || |
 3617  | [Find Students with Study Spiral Pattern](https://leetcode.com/problems/find-students-with-study-spiral-pattern/) | [MySQL](./MySQL/find-students-with-study-spiral-pattern.sql) | _O(nlogn)_ | _O(n)_       | Hard           || Window Function |
 3626  | [Find Stores with Inventory Imbalance](https://leetcode.com/problems/find-stores-with-inventory-imbalance/) | [MySQL](./MySQL/find-stores-with-inventory-imbalance.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Medium           || |
+3642  | [Find Books with Polarized Opinions](https://leetcode.com/problems/find-books-with-polarized-opinions/) | [MySQL](./MySQL/find-books-with-polarized-opinions.sql) | _O(r + nlogn)_ | _O(r + n)_       | Easy           || |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
