@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-# sort, constructive algorithms
+# sort, bitmasks, constructive algorithms
 class Solution(object):
     def sortPermutation(self, nums):
         """
