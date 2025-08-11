@@ -5,7 +5,7 @@ WITH rating_cte AS (
     SELECT book_id,
            MAX(session_rating) AS max_rating,
            MIN(session_rating) AS min_rating,
-           SUM(CASE WHEN session_rating <= 2 OR session_rating >= 4 THEN 1 ELSE 0 END) AS extreme_ratings,
+           SUM(CASE WHEN session_rating >= 4 OR session_rating <= 2 THEN 1 ELSE 0 END) AS extreme_ratings,
            COUNT(*) AS total_sessions
     FROM reading_sessions 
     GROUP BY 1
