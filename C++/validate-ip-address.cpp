@@ -35,7 +35,7 @@ private:
     	if (block.size() > 0 && block.size() <= 3) {
     	    for (int i = 0; i < block.size(); ++i) {
     	        char c = block[i];
-    	        if (!isalnum(c) || (i == 0 && c == '0' && block.size() > 1)) {
+    	        if (!isdigit(c) || (i == 0 && c == '0' && block.size() > 1)) {
     	            return false;
     	        } else {
         		    num *= 10;
