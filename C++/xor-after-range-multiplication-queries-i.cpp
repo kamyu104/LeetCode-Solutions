@@ -1,7 +1,7 @@
 // Time:  O(qlogm + (q + n) * sqrt(n))
 // Space: O(n * sqrt(n))
 
-// sqrt decomposition, difference array
+// sqrt decomposition, difference array, fast exponentiation
 class Solution {
 public:
     int xorAfterQueries(vector<int>& nums, vector<vector<int>>& queries) {
