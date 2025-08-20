@@ -1,4 +1,4 @@
-// Time:  O(k * m * n + r)
+// Time:  O(k * (m * n + r))
 // Space: O(m * n + r)
 
 // dp, prefix sum
@@ -53,7 +53,7 @@ public:
     }
 };
 
-// Time:  O(k * m * n + r)
+// Time:  O(k * (m * n + r))
 // Space: O(m * n + r)
 // dp, prefix sum
 class Solution2 {
