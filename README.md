@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3647%20%2F%203647-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3656%20%2F%203656-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -267,6 +267,8 @@
 3569 | [Maximize Count of Distinct Primes After Split](https://leetcode.com/problems/maximize-count-of-distinct-primes-after-splitx/) | [C++](./C++/maximize-count-of-distinct-primes-after-split.cpp) [Python](./Python/maximize-count-of-distinct-primes-after-split.py) | _O(r + nlogn + qlogn)_ | _O(r + n)_ | Medium | | Number Theory, BST, Sorted List, Segment Tree
 3637 | [Trionic Array I](https://leetcode.com/problems/trionic-array-i/) | [C++](./C++/trionic-array-i.cpp) [Python](./Python/trionic-array-i.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3643 | [Flip Square Submatrix Vertically](https://leetcode.com/problems/flip-square-submatrix-vertically/) | [C++](./C++/flip-square-submatrix-vertically.cpp) [Python](./Python/flip-square-submatrix-vertically.py) | _O(k^2)_ | _O(1)_ | Easy | | Array
+3653 | [XOR After Range Multiplication Queries I](https://leetcode.com/problems/xor-after-range-multiplication-queries-i/) | [C++](./C++/xor-after-range-multiplication-queries-i.cpp) [Python](./Python/xor-after-range-multiplication-queries-i.py) | _O(qlogm + (q + n) * sqrt(n))_ | _O(n * sqrt(n))_ | Medium || Sqrt Decomposition, Difference Array, Simulation
+3655 | [XOR After Range Multiplication Queries II](https://leetcode.com/problems/xor-after-range-multiplication-queries-ii/) | [C++](./C++/xor-after-range-multiplication-queries-ii.cpp) [Python](./Python/xor-after-range-multiplication-queries-ii.py) | _O(qlogm + (q + n) * sqrt(n))_ | _O(n * sqrt(n))_ | Hard || Sqrt Decomposition, Difference Array, Simulation
 
 <br/>
 <div align="right">
@@ -782,6 +784,7 @@
 3623 | [Count Number of Trapezoids I](https://leetcode.com/problems/count-number-of-trapezoids-i/) | [C++](./C++/count-number-of-trapezoids-i.cpp) [Python](./Python/count-number-of-trapezoids-i.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Combinatorics |
 3624 | [Number of Integers With Popcount-Depth Equal to K II](https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/) | [C++](./C++/number-of-integers-with-popcount-depth-equal-to-k-ii.cpp) [Python](./Python/number-of-integers-with-popcount-depth-equal-to-k-ii.py) | precompute: _O((logr) * log(logr))_<br>runtime: _O(nlogr + max_k * n + nlogn + qlogn)_ | _O(logr + max_k * n)_ | Hard | | BIT, Fenwick Tree |
 3625 | [Count Number of Trapezoids II](https://leetcode.com/problems/count-number-of-trapezoids-ii/) | [C++](./C++/count-number-of-trapezoids-ii.cpp) [Python](./Python/count-number-of-trapezoids-ii.py) | _O(n^2 * logr)_ | _O(n^2)_ | Hard | | Freq Table, Combinatorics |
+3648 | [Minimum Sensors to Cover Grid](https://leetcode.com/problems/minimum-sensors-to-cover-grid/) | [C++](./C++/minimum-sensors-to-cover-grid.cpp) [Python](./Python/minimum-sensors-to-cover-grid.py) | _O(1)_ | _O(1)_ | Medium | | Math |
 
 <br/>
 <div align="right">
@@ -941,6 +944,8 @@
 3634 | [Minimum Removals to Balance Array](https://leetcode.com/problems/minimum-removals-to-balance-array/) | [C++](./C++/minimum-removals-to-balance-array.cpp) [Python](./Python/minimum-removals-to-balance-array.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers, Sliding Window
 3640 | [Trionic Array II](https://leetcode.com/problems/trionic-array-ii/) | [C++](./C++/trionic-array-ii.cpp) [Python](./Python/trionic-array-ii.py) | _O(n)_ | _O(1)_ | Easy | | Two Pointers, Sliding Window, Greedy
 3641 | [Longest Semi-Repeating Subarray](https://leetcode.com/problems/longest-semi-repeating-subarray/) | [C++](./C++/longest-semi-repeating-subarray.cpp) [Python](./Python/longest-semi-repeating-subarray.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Freq Table, Two Pointers, Sliding Window
+3649 | [Number of Perfect Pairs](https://leetcode.com/problems/number-of-perfect-pairs/) | [C++](./C++/number-of-perfect-pairs.cpp) [Python](./Python/number-of-perfect-pairs.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers, Sliding Window, Math
+3652 | [Best Time to Buy and Sell Stock using Strategy](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-using-strategy/) | [C++](./C++/best-time-to-buy-and-sell-stock-using-strategy.cpp) [Python](./Python/best-time-to-buy-and-sell-stock-using-strategy.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -1348,6 +1353,8 @@
 3615 | [Longest Palindromic Path in Graph](https://leetcode.com/problems/longest-palindromic-path-in-graph/) | [C++](./C++/longest-palindromic-path-in-graph.cpp) [Python](./Python/longest-palindromic-path-in-graph.py) | _O(n^4 * 2^n)_   | _O(n + e)_        | Hard         | | Bitmasks, DP, Freq Table
 3628 | [Maximum Number of Subsequences After One Inserting](https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/) | [C++](./C++/maximum-number-of-subsequences-after-one-inserting.cpp) [Python](./Python/maximum-number-of-subsequences-after-one-inserting.py) | _O(n)_   | _O(1)_        | Medium         | | Prefix Sum, DP
 3647 | [Maximum Weight in Two Bags](https://leetcode.com/problems/maximum-weight-in-two-bags/) | [C++](./C++/maximum-weight-in-two-bags.cpp) [Python](./Python/maximum-weight-in-two-bags.py) | _O(n * w1 * w2)_   | _O(w1 * w2)_        | Medium         | 🔒 | DP, Bitset
+3651 | [Minimum Cost Path with Teleportations](https://leetcode.com/problems/minimum-cost-path-with-teleportations/) | [C++](./C++/minimum-cost-path-with-teleportations.cpp) [Python](./Python/minimum-cost-path-with-teleportations.py) | _O(k * (m * n + r))_   | _O(m * n + r)_        | Hard         | | DP, Prefix Sum
+3654 | [Minimum Sum After Divisible Sum Deletions](https://leetcode.com/problems/minimum-sum-after-divisible-sum-deletions/) | [C++](./C++/minimum-sum-after-divisible-sum-deletions.cpp) [Python](./Python/minimum-sum-after-divisible-sum-deletions.py) | _O(n + k)_   | _O(k)_        | Medium         | | DP, Prefix Sum
 
 <br/>
 <div align="right">
@@ -1610,10 +1617,12 @@
 3534 | [Path Existence Queries in a Graph II](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/) | [C++](./C++/path-existence-queries-in-a-graph-ii.cpp) [Python](./Python/path-existence-queries-in-a-graph-ii.py) | _O((n + q) * logn)_ | _O(nlogn)_ | Hard | | Prefix Sum, Greedy, Binary Lifting
 3536 | [Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/) | [C++](./C++/maximum-product-of-two-digits.cpp) [Python](./Python/maximum-product-of-two-digits.py) | _O(d + 10)_ | _O(10)_ | Easy | | Freq Table, Greedy
 3547 | [Maximum Sum of Edge Values in a Graph](https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/) | [C++](./C++/maximum-sum-of-edge-values-in-a-graph.cpp) [Python](./Python/maximum-sum-of-edge-values-in-a-graph.py) | _O(n)_ | _O(n)_ | Hard | | Flood Fill, BFS, Counting Sort, Greedy
-3594 | [Minimum Time to Transport All Individuals](https://leetcode.com/problems/minimum-time-to-transport-all-individuals/) | [C++](./C++/minimum-time-to-transport-all-individuals.cpp) [Python](./Python/minimum-time-to-transport-all-individuals.py) | _O(m * 3^n) * log(m * 3^n))_ | _O(m * 3^n)_ | Hard | | Graph, `Dijkstra's Algorithm`, Submask Enumeration
+3594 | [Minimum Time to Transport All Individuals](https://leetcode.com/problems/minimum-time-to-transport-all-individuals/) | [C++](./C++/minimum-time-to-transport-all-individuals.cpp) [Python](./Python/minimum-time-to-transport-all-individuals.py) | _O(m * 3^n * log(m * 3^n))_ | _O(m * 3^n)_ | Hard | | Graph, `Dijkstra's Algorithm`, Submask Enumeration
 3600 | [Maximize Spanning Tree Stability with Upgrades](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/) | [C++](./C++/maximize-spanning-tree-stability-with-upgrades.cpp) [Python](./Python/maximize-spanning-tree-stability-with-upgrades.py) | _O(n + eloge)_ | _O(n)_ | Hard | | MST, Maximum Spanning Tree, Union Find, `Kruskal's Algorithm`, Greedy
 3604 | [Minimum Time to Reach Destination in Directed Graph](https://leetcode.com/problems/minimum-time-to-reach-destination-in-directed-graph/) | [C++](./C++/minimum-time-to-reach-destination-in-directed-graph.cpp) [Python](./Python/minimum-time-to-reach-destination-in-directed-graph.py) | _O(n + eloge)_ | _O(n + e)_ | Medium | | Graph, `Dijkstra's Algorithm`
 3620 | [Network Recovery Pathways](https://leetcode.com/problems/network-recovery-pathways/)|[C++](./C++/network-recovery-pathways.cpp) [Python](./Python/network-recovery-pathways.py) | _O((n + e) * logr)_      | _O(n + e)_          | Hard         | | Binary Search, Topological Sort, DP
+3650 | [Minimum Cost Path with Edge Reversals](https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/) | [C++](./C++/minimum-cost-path-with-edge-reversals.cpp) [Python](./Python/minimum-cost-path-with-edge-reversals.py) | _O(n + elogn)_ | _O(n + e)_ | Medium | | Graph, `Dijkstra's Algorithm`
+3656 | [Determine if a Simple Graph Exists](https://leetcode.com/problems/determine-if-a-simple-graph-exists/) | [C++](./C++/determine-if-a-simple-graph-exists.cpp)  [Python](./Python/determine-if-a-simple-graph-exists.py)  | _O(nlogn)_ | _O(1)_ | Medium         | 🔒 | Graph, `Erdős–Gallai Theorem`, Sort, Prefix sum, Two Pointers
 
 <br/>
 <div align="right">
