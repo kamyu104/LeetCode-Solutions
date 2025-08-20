@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(1)
 
-# sort, two pointers
+# sort, two pointers, math
 class Solution(object):
     def perfectPairs(self, nums):
         """
