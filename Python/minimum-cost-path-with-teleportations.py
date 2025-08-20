@@ -1,4 +1,4 @@
-# Time:  O(k * m * n + r)
+# Time:  O(k * (m * n + r))
 # Space: O(m * n + r)
 
 # dp, prefix sum
@@ -36,7 +36,7 @@ class Solution(object):
         return dp[0][0]
 
 
-# Time:  O(k * m * n + r)
+# Time:  O(k * (m * n + r))
 # Space: O(m * n + r)
 # dp, prefix sum
 class Solution2(object):
