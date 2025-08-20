@@ -31,7 +31,7 @@ class Solution(object):
             for i in xrange(len(diff)):
                 if i-k >= 0:
                     diff[i] = (diff[i]*diff[i-k])%MOD
-                nums[i] = (nums[i] * diff[i])%MOD
+                nums[i] = (nums[i]*diff[i])%MOD
         return reduce(lambda accu, x: accu^x, nums, 0)
 
 
