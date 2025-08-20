@@ -1,7 +1,7 @@
 // Time:  O(k * m * n + r)
 // Space: O(m * n + r)
 
-// dp
+// dp, prefix sum
 class Solution {
 public:
     int minCost(vector<vector<int>>& grid, int k) {
@@ -55,7 +55,7 @@ public:
 
 // Time:  O(k * m * n + r)
 // Space: O(m * n + r)
-// dp
+// dp, prefix sum
 class Solution2 {
 public:
     int minCost(vector<vector<int>>& grid, int k) {
