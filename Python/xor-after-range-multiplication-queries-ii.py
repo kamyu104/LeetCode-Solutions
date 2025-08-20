@@ -4,7 +4,7 @@
 import collections
 
 
-# sqrt decomposition, difference array
+# sqrt decomposition, difference array, fast exponentiation
 class Solution(object):
     def xorAfterQueries(self, nums, queries):
         """
