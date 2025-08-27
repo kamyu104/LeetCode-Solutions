@@ -32,4 +32,4 @@ class Solution(object):
                 left1 += 1
             new_dp[0] = max(dp[0]+(curr-left0), dp[1]+(curr-left1))
             dp, new_dp = new_dp, dp
-        return max(dp)
+        return max(dp[0], dp[1])
