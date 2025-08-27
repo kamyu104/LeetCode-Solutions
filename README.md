@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3656%20%2F%203656-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3662%20%2F%203662-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -616,6 +616,7 @@
 3581 | [Count Odd Letters from Number](https://leetcode.com/problems/count-odd-letters-from-number/) | [C++](./C++/count-odd-letters-from-number.cpp) [Python](./Python/count-odd-letters-from-number.py) | _O(logn)_ | _O(26)_ | Easy |🔒| Freq Table
 3591 | [Check if Any Element Has Prime Frequency](https://leetcode.com/problems/check-if-any-element-has-prime-frequency/) | [C++](./C++/check-if-any-element-has-prime-frequency.cpp) [Python](./Python/check-if-any-element-has-prime-frequency.py) | precompute: _O(MAX_N)_<br>runtime: _O(n)_ | _O(MAX_N)_ | Easy || Freq Table, Number Theory, `Linear Sieve of Eratosthenes`
 3636 | [Threshold Majority Queries](https://leetcode.com/problems/threshold-majority-queries/) | [C++](./C++/threshold-majority-queries.cpp) [Python](./Python/threshold-majority-queries.py) | _O(nlogn + qlogq + (n + q) * sqrt(n) * logn)_ | _O(q + n)_ | Hard || Sort, Coordinate Compression, Sqrt Decomposition, `Mo's Algorithm`, Freq Table, Sorted List, BST
+3662 | [Filter Characters by Frequency](https://leetcode.com/problems/filter-characters-by-frequency/) | [C++](./C++/filter-characters-by-frequency.cpp) [Python](./Python/filter-characters-by-frequency.py) | _O(n + 26)_ | _O(26)_ | Easy |🔒| Freq Table
 
 <br/>
 <div align="right">
@@ -785,6 +786,8 @@
 3624 | [Number of Integers With Popcount-Depth Equal to K II](https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/) | [C++](./C++/number-of-integers-with-popcount-depth-equal-to-k-ii.cpp) [Python](./Python/number-of-integers-with-popcount-depth-equal-to-k-ii.py) | precompute: _O((logr) * log(logr))_<br>runtime: _O(nlogr + max_k * n + nlogn + qlogn)_ | _O(logr + max_k * n)_ | Hard | | BIT, Fenwick Tree |
 3625 | [Count Number of Trapezoids II](https://leetcode.com/problems/count-number-of-trapezoids-ii/) | [C++](./C++/count-number-of-trapezoids-ii.cpp) [Python](./Python/count-number-of-trapezoids-ii.py) | _O(n^2 * logr)_ | _O(n^2)_ | Hard | | Freq Table, Combinatorics |
 3648 | [Minimum Sensors to Cover Grid](https://leetcode.com/problems/minimum-sensors-to-cover-grid/) | [C++](./C++/minimum-sensors-to-cover-grid.cpp) [Python](./Python/minimum-sensors-to-cover-grid.py) | _O(1)_ | _O(1)_ | Medium | | Math |
+3658 | [GCD of Odd and Even Sums](https://leetcode.com/problems/gcd-of-odd-and-even-sums/) | [C++](./C++/gcd-of-odd-and-even-sums.cpp) [Python](./Python/gcd-of-odd-and-even-sums.py) | _O(1)_ | _O(1)_ | Easy | | Math |
+3659 | [Partition Array Into K-Distinct Groups](https://leetcode.com/problems/partition-array-into-k-distinct-groups/) | [C++](./C++/partition-array-into-k-distinct-groups.cpp) [Python](./Python/partition-array-into-k-distinct-groups.py) | _O(n)_ | _O(n)_ | Medium | | Math, Freq Table |
 
 <br/>
 <div align="right">
@@ -1355,6 +1358,7 @@
 3647 | [Maximum Weight in Two Bags](https://leetcode.com/problems/maximum-weight-in-two-bags/) | [C++](./C++/maximum-weight-in-two-bags.cpp) [Python](./Python/maximum-weight-in-two-bags.py) | _O(n * w1 * w2)_   | _O(w1 * w2)_        | Medium         | 🔒 | DP, Bitset
 3651 | [Minimum Cost Path with Teleportations](https://leetcode.com/problems/minimum-cost-path-with-teleportations/) | [C++](./C++/minimum-cost-path-with-teleportations.cpp) [Python](./Python/minimum-cost-path-with-teleportations.py) | _O(k * (m * n + r))_   | _O(m * n + r)_        | Hard         | | DP, Prefix Sum
 3654 | [Minimum Sum After Divisible Sum Deletions](https://leetcode.com/problems/minimum-sum-after-divisible-sum-deletions/) | [C++](./C++/minimum-sum-after-divisible-sum-deletions.cpp) [Python](./Python/minimum-sum-after-divisible-sum-deletions.py) | _O(n + k)_   | _O(k)_        | Medium         | | DP, Prefix Sum
+3661 | [Maximum Walls Destroyed by Robots](https://leetcode.com/problems/maximum-walls-destroyed-by-robots/) | [C++](./C++/maximum-walls-destroyed-by-robots.cpp) [Python](./Python/maximum-walls-destroyed-by-robots.py) | _O(nlogn + mlogm)_   | _O(n)_        | Hard         | | Sort, DP, Prefix Sum
 
 <br/>
 <div align="right">
@@ -1623,6 +1627,7 @@
 3620 | [Network Recovery Pathways](https://leetcode.com/problems/network-recovery-pathways/)|[C++](./C++/network-recovery-pathways.cpp) [Python](./Python/network-recovery-pathways.py) | _O((n + e) * logr)_      | _O(n + e)_          | Hard         | | Binary Search, Topological Sort, DP
 3650 | [Minimum Cost Path with Edge Reversals](https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/) | [C++](./C++/minimum-cost-path-with-edge-reversals.cpp) [Python](./Python/minimum-cost-path-with-edge-reversals.py) | _O(n + elogn)_ | _O(n + e)_ | Medium | | Graph, `Dijkstra's Algorithm`
 3656 | [Determine if a Simple Graph Exists](https://leetcode.com/problems/determine-if-a-simple-graph-exists/) | [C++](./C++/determine-if-a-simple-graph-exists.cpp)  [Python](./Python/determine-if-a-simple-graph-exists.py)  | _O(nlogn)_ | _O(1)_ | Medium         | 🔒 | Graph, `Erdős–Gallai Theorem`, Sort, Prefix sum, Two Pointers
+3660 | [Jump Game IX](https://leetcode.com/problems/jump-game-ix/) | [C++](./C++/jump-game-ix.cpp) [Python](./Python/jump-game-ix.py) | _O(n)_ | _O(1)_ | Medium | | Graph, Prefix Sum
 
 <br/>
 <div align="right">
@@ -1973,6 +1978,7 @@
 3617  | [Find Students with Study Spiral Pattern](https://leetcode.com/problems/find-students-with-study-spiral-pattern/) | [MySQL](./MySQL/find-students-with-study-spiral-pattern.sql) | _O(nlogn)_ | _O(n)_       | Hard           || Window Function |
 3626  | [Find Stores with Inventory Imbalance](https://leetcode.com/problems/find-stores-with-inventory-imbalance/) | [MySQL](./MySQL/find-stores-with-inventory-imbalance.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Medium           || |
 3642  | [Find Books with Polarized Opinions](https://leetcode.com/problems/find-books-with-polarized-opinions/) | [MySQL](./MySQL/find-books-with-polarized-opinions.sql) | _O(r + nlogn)_ | _O(r + n)_       | Easy           || |
+3657  | [Find Loyal Customers](https://leetcode.com/problems/find-loyal-customers/) | [MySQL](./MySQL/find-loyal-customers.sql) | _O(nlogn)_ | _O(n)_       | Medium           || |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
