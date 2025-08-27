@@ -1358,7 +1358,7 @@
 3647 | [Maximum Weight in Two Bags](https://leetcode.com/problems/maximum-weight-in-two-bags/) | [C++](./C++/maximum-weight-in-two-bags.cpp) [Python](./Python/maximum-weight-in-two-bags.py) | _O(n * w1 * w2)_   | _O(w1 * w2)_        | Medium         | 🔒 | DP, Bitset
 3651 | [Minimum Cost Path with Teleportations](https://leetcode.com/problems/minimum-cost-path-with-teleportations/) | [C++](./C++/minimum-cost-path-with-teleportations.cpp) [Python](./Python/minimum-cost-path-with-teleportations.py) | _O(k * (m * n + r))_   | _O(m * n + r)_        | Hard         | | DP, Prefix Sum
 3654 | [Minimum Sum After Divisible Sum Deletions](https://leetcode.com/problems/minimum-sum-after-divisible-sum-deletions/) | [C++](./C++/minimum-sum-after-divisible-sum-deletions.cpp) [Python](./Python/minimum-sum-after-divisible-sum-deletions.py) | _O(n + k)_   | _O(k)_        | Medium         | | DP, Prefix Sum
-3661 | [Maximum Walls Destroyed by Robots](https://leetcode.com/problems/maximum-walls-destroyed-by-robots/) | [C++](./C++/maximum-walls-destroyed-by-robots.cpp) [Python](./Python/maximum-walls-destroyed-by-robots.py) | _O(nlogn + mlogm)_   | _O(n)_        | Hard         | | Sort, DP, Prefix Sum
+3661 | [Maximum Walls Destroyed by Robots](https://leetcode.com/problems/maximum-walls-destroyed-by-robots/) | [C++](./C++/maximum-walls-destroyed-by-robots.cpp) [Python](./Python/maximum-walls-destroyed-by-robots.py) | _O(nlogn + mlogm)_   | _O(n)_        | Hard         | | Sort, DP, Two Pointers
 
 <br/>
 <div align="right">
