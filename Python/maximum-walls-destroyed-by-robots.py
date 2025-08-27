@@ -27,7 +27,7 @@ class Solution(object):
             while left0 < len(walls) and walls[left0] < l0:
                 left0 += 1
             l1 = max(min(x_d[i-1][0]+x_d[i-1][1], x_d[i][0]-1)+1,
-                          max(x_d[i][0]-x_d[i][1], x_d[i-1][0]+1))
+                     max(x_d[i][0]-x_d[i][1], x_d[i-1][0]+1))
             while left1 < len(walls) and walls[left1] < l1:
                 left1 += 1
             new_dp[0] = max(dp[0]+(curr-left0), dp[1]+(curr-left1))
