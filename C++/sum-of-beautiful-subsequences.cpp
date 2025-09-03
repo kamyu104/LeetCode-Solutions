@@ -1,5 +1,5 @@
 // Time:  precompute: O(rlogr), r = max_nums
-//        runtime:    O(nlogr * (log(nlogr) + logn))
+//        runtime:    O(mx + nlogr * (log(nlogr) + logn)), mx = max(nums)
 // Space: O(rlogr)
 
 // number theory, bit, fenwick tree
