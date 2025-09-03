@@ -1,4 +1,4 @@
-# Time:  O(sqrt(n)^(k - 1))
+# Time:  O(k * sqrt(n)^(k - 1))
 # Space: O(k)
 
 # backtracking, number theory
