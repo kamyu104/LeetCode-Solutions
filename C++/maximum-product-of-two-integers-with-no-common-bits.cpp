@@ -1,4 +1,4 @@
-// Time:  O(rlogr), r = max(nums)
+// Time:  O(n + rlogr), r = max(nums)
 // Space: O(r)
 
 // dp, bitmasks
@@ -34,7 +34,7 @@ public:
     }
 };
 
-// Time:  O(rlogr), r = max(nums)
+// Time:  O(n + rlogr), r = max(nums)
 // Space: O(r)
 // dp, bitmasks
 class Solution2 {
