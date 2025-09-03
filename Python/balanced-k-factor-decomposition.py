@@ -19,7 +19,8 @@ class Solution(object):
                 if n//i != i:
                     yield n//i
 
-        def backtracking(remain, start):
+        def backtracking(remain):
+            start = curr[-1] if curr else 1
             if len(curr) == k-1 and remain >= start:
                 curr.append(remain)
                 if not result or result[-1]-result[0] > curr[-1]-curr[0]:
@@ -30,12 +31,13 @@ class Solution(object):
                 if i < start:
                     continue
                 curr.append(i)
-                backtracking(remain//i, i)
+                backtracking(remain//i)
                 curr.pop()
                     
         result, curr = [], []
-        backtracking(n, 1)
+        backtracking(n)
         return result
+
 
 # Time:  O(k * sqrt(n)^(k - 1))
 # Space: O(k)
