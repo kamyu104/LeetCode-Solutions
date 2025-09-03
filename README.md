@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3662%20%2F%203662-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3671%20%2F%203671-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -617,6 +617,8 @@
 3591 | [Check if Any Element Has Prime Frequency](https://leetcode.com/problems/check-if-any-element-has-prime-frequency/) | [C++](./C++/check-if-any-element-has-prime-frequency.cpp) [Python](./Python/check-if-any-element-has-prime-frequency.py) | precompute: _O(MAX_N)_<br>runtime: _O(n)_ | _O(MAX_N)_ | Easy || Freq Table, Number Theory, `Linear Sieve of Eratosthenes`
 3636 | [Threshold Majority Queries](https://leetcode.com/problems/threshold-majority-queries/) | [C++](./C++/threshold-majority-queries.cpp) [Python](./Python/threshold-majority-queries.py) | _O(nlogn + qlogq + (n + q) * sqrt(n) * logn)_ | _O(q + n)_ | Hard || Sort, Coordinate Compression, Sqrt Decomposition, `Mo's Algorithm`, Freq Table, Sorted List, BST
 3662 | [Filter Characters by Frequency](https://leetcode.com/problems/filter-characters-by-frequency/) | [C++](./C++/filter-characters-by-frequency.cpp) [Python](./Python/filter-characters-by-frequency.py) | _O(n + 26)_ | _O(26)_ | Easy |🔒| Freq Table
+3663 | [Find The Least Frequent Digit](https://leetcode.com/problems/find-the-least-frequent-digit/) | [C++](./C++/find-the-least-frequent-digit.cpp) [Python](./Python/find-the-least-frequent-digit.py) | _O(logn + 10)_ | _O(10)_ | Easy | | Freq Table
+3668 | [Restore Finishing Order](https://leetcode.com/problems/restore-finishing-order/) | [C++](./C++/restore-finishing-order.cpp) [Python](./Python/restore-finishing-order.py) | _O(n + min(8, n))_ | _O(min(8, n))_ | Easy | | Hash Table
 
 <br/>
 <div align="right">
@@ -788,6 +790,9 @@
 3648 | [Minimum Sensors to Cover Grid](https://leetcode.com/problems/minimum-sensors-to-cover-grid/) | [C++](./C++/minimum-sensors-to-cover-grid.cpp) [Python](./Python/minimum-sensors-to-cover-grid.py) | _O(1)_ | _O(1)_ | Medium | | Math |
 3658 | [GCD of Odd and Even Sums](https://leetcode.com/problems/gcd-of-odd-and-even-sums/) | [C++](./C++/gcd-of-odd-and-even-sums.cpp) [Python](./Python/gcd-of-odd-and-even-sums.py) | _O(1)_ | _O(1)_ | Easy | | Math |
 3659 | [Partition Array Into K-Distinct Groups](https://leetcode.com/problems/partition-array-into-k-distinct-groups/) | [C++](./C++/partition-array-into-k-distinct-groups.cpp) [Python](./Python/partition-array-into-k-distinct-groups.py) | _O(n)_ | _O(n)_ | Medium | | Math, Freq Table |
+3664 | [Two-Letter Card Game](https://leetcode.com/problems/two-letter-card-game/) | [C++](./C++/two-letter-card-game.cpp) [Python](./Python/two-letter-card-game.py) | _O(n + 26)_ | _O(26)_ | Medium | | Math, Freq Table |
+3666 | [Minimum Operations to Equalize Binary String](https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/) | [C++](./C++/minimum-operations-to-equalize-binary-string.cpp) [Python](./Python/minimum-operations-to-equalize-binary-string.py) | _O(n)_ | _O(1)_ | Hard | | Math |
+3671 | [Sum of Beautiful Subsequences](https://leetcode.com/problems/sum-of-beautiful-subsequences/) | [C++](./C++/sum-of-beautiful-subsequences.cpp) [Python](./Python/sum-of-beautiful-subsequences.py) | precompute: _O(rlogr)_<br>runtime: _O(nlogr * (log(nlogr) + logn))_ | _O(rlogr)_ | Hard | | Number Theory, BIT, Fenwick Tree |
 
 <br/>
 <div align="right">
@@ -834,6 +839,7 @@
 3551 | [Minimum Swaps to Sort by Digit Sum](https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/) | [C++](./C++/minimum-swaps-to-sort-by-digit-sum.cpp) [Python](./Python/minimum-swaps-to-sort-by-digit-sum.py) | _O(nlogr + nlogn)_ | _O(n)_ | Medium | | Sort
 3631 | [Sort Threats by Severity and Exploitability](https://leetcode.com/problems/sort-threats-by-severity-and-exploitability/) | [C++](./C++/sort-threats-by-severity-and-exploitability.cpp) [Python](./Python/sort-threats-by-severity-and-exploitability.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Sort
 3644 | [Maximum K to Sort a Permutation](https://leetcode.com/problems/maximum-k-to-sort-a-permutation/) | [C++](./C++/maximum-k-to-sort-a-permutation.cpp) [Python](./Python/maximum-k-to-sort-a-permutation.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Bitmasks, Constructive Algorithms
+3667 | [Sort Array By Absolute Value](https://leetcode.com/problems/sort-array-by-absolute-value/) | [C++](./C++/sort-array-by-absolute-value.cpp) [Python](./Python/sort-array-by-absolute-value.py) | _O(n + r)_ | _O(n + r)_ | Easy | 🔒 | Sort
 
 <br/>
 <div align="right">
@@ -1142,6 +1148,7 @@
 3211 | [Generate Binary Strings Without Adjacent Zeros](https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/) | [C++](./C++/generate-binary-strings-without-adjacent-zeros.cpp) [Python](./Python/generate-binary-strings-without-adjacent-zeros.py) | _O(n * 2^n)_   | _O(n)_        | Medium         | | Backtracking, BFS
 3437 | [Permutations III](https://leetcode.com/problems/permutations-iii/) | [C++](./C++/permutations-iii.cpp) [Python](./Python/permutations-iii.py) | _O(n * n!)_   | _O(n)_        | Medium         | 🔒 | Backtracking, Bitmasks
 3565 | [Sequential Grid Path Cover](https://leetcode.com/problems/sequential-grid-path-cover/) | [C++](./C++/sequential-grid-path-cover.cpp) [Python](./Python/sequential-grid-path-cover.py) | _O(m * n * 3^(m * n))_   | _O(m * n)_        | Medium         | 🔒 | Backtracking
+3669 | [Balanced K-Factor Decomposition](https://leetcode.com/problems/balanced-k-factor-decomposition/) | [C++](./C++/balanced-k-factor-decomposition.cpp) [Python](./Python/balanced-k-factor-decomposition.py) | precompute: _O(rlogr)_<br>runtime: _O(k * (logn)^(k - 1))_   | _O(rlogr)_        | Medium         | | Backtracking, Number Theory
 
 <br/>
 <div align="right">
@@ -1359,6 +1366,8 @@
 3651 | [Minimum Cost Path with Teleportations](https://leetcode.com/problems/minimum-cost-path-with-teleportations/) | [C++](./C++/minimum-cost-path-with-teleportations.cpp) [Python](./Python/minimum-cost-path-with-teleportations.py) | _O(k * (m * n + r))_   | _O(m * n + r)_        | Hard         | | DP, Prefix Sum
 3654 | [Minimum Sum After Divisible Sum Deletions](https://leetcode.com/problems/minimum-sum-after-divisible-sum-deletions/) | [C++](./C++/minimum-sum-after-divisible-sum-deletions.cpp) [Python](./Python/minimum-sum-after-divisible-sum-deletions.py) | _O(n + k)_   | _O(k)_        | Medium         | | DP, Prefix Sum
 3661 | [Maximum Walls Destroyed by Robots](https://leetcode.com/problems/maximum-walls-destroyed-by-robots/) | [C++](./C++/maximum-walls-destroyed-by-robots.cpp) [Python](./Python/maximum-walls-destroyed-by-robots.py) | _O(nlogn + mlogm)_   | _O(n)_        | Hard         | | Sort, DP, Two Pointers
+3665 | [Twisted Mirror Path Count](https://leetcode.com/problems/twisted-mirror-path-count/) | [C++](./C++/twisted-mirror-path-count.cpp) [Python](./Python/twisted-mirror-path-count.py) | _O(m * n)_   | _O(min(m, n))_        | Medium         | | DP
+3670 | [Maximum Product of Two Integers With No Common Bits](https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/) | [C++](./C++/maximum-product-of-two-integers-with-no-common-bits.cpp) [Python](./Python/maximum-product-of-two-integers-with-no-common-bits.py) | _O(n + rlogr)_   | _O(r)_        | Medium         | | DP, Bitmasks
 
 <br/>
 <div align="right">
