@@ -1,4 +1,4 @@
-# Time:  O(k * sqrt(n)^(k - 1))
+# Time:  O(k * (n^(1/2) * n^(1/4) * n^(1/8) * n^(1/6) + n^(1/2) * n^(1/4) * n^(1/8) + n^(1/2) * n^(1/4) + n^(1/2))) <= O(k^2 * n)
 # Space: O(k)
 
 # backtracking, number theory
@@ -39,7 +39,7 @@ class Solution(object):
         return result
 
 
-# Time:  O(k * sqrt(n)^(k - 1))
+# Time:  O(2^(k-1) * k * n)
 # Space: O(k)
 # backtracking, number theory
 class Solution2(object):
