@@ -51,7 +51,7 @@ class Solution(object):
         :rtype: int
         """
         def count(arr):
-            for i, x in enumerate(sorted(arr)):
+            for i, x in enumerate(sorted(arr)):  # coordinate compression
                 val_to_idx[x] = i
             bit = BIT(len(arr))
             for x in arr:
@@ -78,7 +78,7 @@ class Solution2(object):
         :rtype: int
         """
         def count(arr):
-            val_to_idx = {x:i for i, x in enumerate(sorted(set(arr)))}
+            val_to_idx = {x:i for i, x in enumerate(sorted(set(arr)))}  # coordinate compression
             bit = BIT(len(val_to_idx))
             for x in arr:
                 bit.add(val_to_idx[x], bit.query(val_to_idx[x]-1)+1)
