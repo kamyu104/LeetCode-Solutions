@@ -64,22 +64,21 @@ const auto& PHI = phi_sieve(MAX_NUM);
 class Solution {
 public:
     int totalBeauty(vector<int>& nums) {
+        const auto& mx = ranges::max(nums);
+        vector<int> val_to_idx(mx + 1);
         const auto& count = [&](const auto& arr){
-            unordered_set<int> arr_set(cbegin(arr), cend(arr));
-            vector<int> sorted_arr(cbegin(arr_set), cend(arr_set));
-            sort(begin(sorted_arr), end(sorted_arr));
-            unordered_map<int, int> val_to_idx;
-            for (int i = 0; i < size(sorted_arr); ++i) {  // coordinate compression
-                val_to_idx[sorted_arr[i]] = i;
+            vector<int> a(arr);
+            sort(begin(a), end(a));
+            for (int i = 0; i < size(a); ++i) {  // coordinate compression
+                val_to_idx[a[i]] = i;
             }
-            BIT bit(size(val_to_idx));
+            BIT bit(size(arr));
             for (const auto& x : arr) {
                 bit.add(val_to_idx[x], bit.query(val_to_idx[x] - 1) + 1);
             }
-            return bit.query(size(val_to_idx) - 1);
+            return bit.query(size(arr) - 1);
         };
 
-        const auto& mx = ranges::max(nums);
         vector<vector<int>> lookup(ranges::max(nums) + 1);
         for (const auto& x : nums) {
             for (const auto& d : FACTORS[x]) {
