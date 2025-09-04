@@ -67,10 +67,10 @@ public:
         const auto& mx = ranges::max(nums);
         vector<int> val_to_idx(mx + 1);
         const auto& count = [&](const auto& arr){
-            vector<int> a(arr);
-            sort(begin(a), end(a));
-            for (int i = 0; i < size(a); ++i) {  // coordinate compression
-                val_to_idx[a[i]] = i;
+            vector<int> sorted_arr(arr);
+            sort(begin(sorted_arr), end(sorted_arr));
+            for (int i = 0; i < size(sorted_arr); ++i) {  // coordinate compression
+                val_to_idx[sorted_arr[i]] = i;
             }
             BIT bit(size(arr));
             for (const auto& x : arr) {
