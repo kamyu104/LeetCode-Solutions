@@ -51,13 +51,15 @@ class Solution(object):
         :rtype: int
         """
         def count(arr):
-            val_to_idx = {x:i for i, x in enumerate(sorted(set(arr)))}
-            bit = BIT(len(val_to_idx))
+            for i, x in enumerate(sorted(arr)):
+                val_to_idx[x] = i
+            bit = BIT(len(arr))
             for x in arr:
                 bit.add(val_to_idx[x], bit.query(val_to_idx[x]-1)+1)
-            return bit.query(len(val_to_idx)-1)
+            return bit.query(len(arr)-1)
 
         mx = max(nums)
+        val_to_idx = [0]*(mx+1)
         lookup = [[] for _ in xrange(mx+1)]
         for x in nums:
             for d in FACTORS[x]:
