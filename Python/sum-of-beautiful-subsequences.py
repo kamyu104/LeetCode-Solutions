@@ -69,7 +69,7 @@ class Solution(object):
 #        runtime:    O(mx * log(mx) + nlogr * (log(nlogr) + logn)), mx = max(nums)
 # Space: O(rlogr)
 # number theory, bit, fenwick tree
-class Solution(object):
+class Solution2(object):
     def totalBeauty(self, nums):
         """
         :type nums: List[int]
