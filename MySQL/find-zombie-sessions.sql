@@ -8,7 +8,7 @@ SELECT session_id,
 FROM app_events
 GROUP BY 1, 2
 HAVING session_duration_minutes > 30
-AND scroll_count >= 5
-AND SUM(event_type = 'click') * 5 < scroll_count
-AND SUM(event_type = 'purchase') = 0
+   AND scroll_count >= 5
+   AND SUM(event_type = 'click') * 5 < scroll_count
+   AND SUM(event_type = 'purchase') = 0
 ORDER BY 4 DESC, 1;
