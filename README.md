@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3671%20%2F%203671-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3677%20%2F%203677-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -269,6 +269,7 @@
 3643 | [Flip Square Submatrix Vertically](https://leetcode.com/problems/flip-square-submatrix-vertically/) | [C++](./C++/flip-square-submatrix-vertically.cpp) [Python](./Python/flip-square-submatrix-vertically.py) | _O(k^2)_ | _O(1)_ | Easy | | Array
 3653 | [XOR After Range Multiplication Queries I](https://leetcode.com/problems/xor-after-range-multiplication-queries-i/) | [C++](./C++/xor-after-range-multiplication-queries-i.cpp) [Python](./Python/xor-after-range-multiplication-queries-i.py) | _O(qlogm + (q + n) * sqrt(n))_ | _O(n * sqrt(n))_ | Medium || Sqrt Decomposition, Difference Array, Fast Exponentiation, Simulation
 3655 | [XOR After Range Multiplication Queries II](https://leetcode.com/problems/xor-after-range-multiplication-queries-ii/) | [C++](./C++/xor-after-range-multiplication-queries-ii.cpp) [Python](./Python/xor-after-range-multiplication-queries-ii.py) | _O(qlogm + (q + n) * sqrt(n))_ | _O(n * sqrt(n))_ | Hard || Sqrt Decomposition, Difference Array, Fast Exponentiation
+3674 | [Minimum Operations to Equalize Array](https://leetcode.com/problems/minimum-operations-to-equalize-array/) | [C++](./C++/minimum-operations-to-equalize-array.cpp) [Python](./Python/minimum-operations-to-equalize-array.py) | _O(n)_ | _O(1)_ | Easy || Array
 
 <br/>
 <div align="right">
@@ -416,6 +417,7 @@
 2899 | [Last Visited Integers](https://leetcode.com/problems/last-visited-integers/) | [C++](./C++/last-visited-integers.cpp) [Python](./Python/last-visited-integers.py) | _O(n)_ | _O(n)_ | Easy | | Stack
 3113 | [Find the Number of Subarrays Where Boundary Elements Are Maximum](https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/) | [C++](./C++/find-the-number-of-subarrays-where-boundary-elements-are-maximum.cpp) [Python](./Python/find-the-number-of-subarrays-where-boundary-elements-are-maximum.py) | _O(n)_ | _O(n)_ | Hard | | Mono Stack, Combinatorics
 3174 | [Clear Digits](https://leetcode.com/problems/clear-digits/) | [C++](./C++/clear-digits.cpp) [Python](./Python/clear-digits.py) | _O(n)_ | _O(1)_ | Easy | | Stack, Two Pointers
+3676 | [Count Bowl Subarrays](https://leetcode.com/problems/count-bowl-subarrays/) | [C++](./C++/count-bowl-subarrays.cpp) [Python](./Python/count-bowl-subarrays.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack
 
 <br/>
 <div align="right">
@@ -793,6 +795,7 @@
 3664 | [Two-Letter Card Game](https://leetcode.com/problems/two-letter-card-game/) | [C++](./C++/two-letter-card-game.cpp) [Python](./Python/two-letter-card-game.py) | _O(n + 26)_ | _O(26)_ | Medium | | Math, Freq Table |
 3666 | [Minimum Operations to Equalize Binary String](https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/) | [C++](./C++/minimum-operations-to-equalize-binary-string.cpp) [Python](./Python/minimum-operations-to-equalize-binary-string.py) | _O(n)_ | _O(1)_ | Hard | | Math |
 3671 | [Sum of Beautiful Subsequences](https://leetcode.com/problems/sum-of-beautiful-subsequences/) | [C++](./C++/sum-of-beautiful-subsequences.cpp) [Python](./Python/sum-of-beautiful-subsequences.py) | precompute: _O(rlogr)_<br>runtime: _O(nlogr * (log(nlogr) + logn))_ | _O(rlogr)_ | Hard | | Number Theory, BIT, Fenwick Tree |
+3677 | [Count Binary Palindromic Numbers](https://leetcode.com/problems/count-binary-palindromic-numbers/) | [C++](./C++/count-binary-palindromic-numbers.cpp) [Python](./Python/count-binary-palindromic-numbers.py) | _O(logn)_ | _O(1)_ | Hard | | Bitmasks, Combinatorics |
 
 <br/>
 <div align="right">
@@ -955,6 +958,7 @@
 3641 | [Longest Semi-Repeating Subarray](https://leetcode.com/problems/longest-semi-repeating-subarray/) | [C++](./C++/longest-semi-repeating-subarray.cpp) [Python](./Python/longest-semi-repeating-subarray.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Freq Table, Two Pointers, Sliding Window
 3649 | [Number of Perfect Pairs](https://leetcode.com/problems/number-of-perfect-pairs/) | [C++](./C++/number-of-perfect-pairs.cpp) [Python](./Python/number-of-perfect-pairs.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers, Sliding Window, Math
 3652 | [Best Time to Buy and Sell Stock using Strategy](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-using-strategy/) | [C++](./C++/best-time-to-buy-and-sell-stock-using-strategy.cpp) [Python](./Python/best-time-to-buy-and-sell-stock-using-strategy.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
+3672 | [Sum of Weighted Modes in Subarrays](https://leetcode.com/problems/sum-of-weighted-modes-in-subarrays/) | [C++](./C++/sum-of-weighted-modes-in-subarrays.cpp) [Python](./Python/sum-of-weighted-modes-in-subarrays.py) | _O(nlogk)_ | _O(k)_ | Medium | 🔒 | Sorted List, BST, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -1567,6 +1571,7 @@
 3635 | [Earliest Finish Time for Land and Water Rides II](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/) | [C++](./C++/earliest-finish-time-for-land-and-water-rides-ii.cpp) [Python](./Python/earliest-finish-time-for-land-and-water-rides-ii.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3638 | [Maximum Balanced Shipments](https://leetcode.com/problems/maximum-balanced-shipments/) | [C++](./C++/maximum-balanced-shipments.cpp) [Python](./Python/maximum-balanced-shipments.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3645 | [Maximum Total from Optimal Activation Order](https://leetcode.com/problems/maximum-total-from-optimal-activation-order/) | [C++](./C++/maximum-total-from-optimal-activation-order.cpp) [Python](./Python/maximum-total-from-optimal-activation-order.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort, Greedy
+3675 | [Minimum Operations to Transform String](https://leetcode.com/problems/minimum-operations-to-transform-string/) | [C++](./C++/minimum-operations-to-transform-string.cpp) [Python](./Python/minimum-operations-to-transform-string.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 
 <br/>
 <div align="right">
@@ -1988,6 +1993,7 @@
 3626  | [Find Stores with Inventory Imbalance](https://leetcode.com/problems/find-stores-with-inventory-imbalance/) | [MySQL](./MySQL/find-stores-with-inventory-imbalance.sql) | _O(n^2 * logn)_ | _O(n^2)_       | Medium           || |
 3642  | [Find Books with Polarized Opinions](https://leetcode.com/problems/find-books-with-polarized-opinions/) | [MySQL](./MySQL/find-books-with-polarized-opinions.sql) | _O(r + nlogn)_ | _O(r + n)_       | Easy           || |
 3657  | [Find Loyal Customers](https://leetcode.com/problems/find-loyal-customers/) | [MySQL](./MySQL/find-loyal-customers.sql) | _O(nlogn)_ | _O(n)_       | Medium           || |
+3673  | [Find Zombie Sessions](https://leetcode.com/problems/find-zombie-sessions/) | [MySQL](./MySQL/find-zombie-sessions.sql) | _O(nlogn)_ | _O(n)_       | Hard           || |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
