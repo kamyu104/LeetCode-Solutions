@@ -1,4 +1,4 @@
-// Time:  O(nlogn + n * k + klogn)
+// Time:  O(nlogn + n * k + klogn) = O(nlogn + n * k)
 // Space: O(k)
 
 // sort, dp, bitmasks
@@ -24,7 +24,7 @@ public:
     }
 };
 
-// Time:  O(nlogn + n * k + klogn)
+// Time:  O(nlogn + n * k + klogn) = O(nlogn + n * k)
 // Space: O(k)
 // sort, dp
 class Solution2 {
