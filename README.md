@@ -456,7 +456,7 @@
 3256 | [Maximum Value Sum by Placing Three Rooks I](https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-i/) | [C++](./C++/maximum-value-sum-by-placing-three-rooks-i.cpp) [Python](./Python/maximum-value-sum-by-placing-three-rooks-i.py) | _O(m * n)_ | _O(m + n)_ | Hard | | Heap, Brute Force
 3257 | [Maximum Value Sum by Placing Three Rooks II](https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-ii/) | [C++](./C++/maximum-value-sum-by-placing-three-rooks-ii.cpp) [Python](./Python/maximum-value-sum-by-placing-three-rooks-ii.py) | _O(m * n)_ | _O(m + n)_ | Hard | | Heap, Brute Force
 3275 | [K-th Nearest Obstacle Queries](https://leetcode.com/problems/k-th-nearest-obstacle-queries/) | [C++](./C++/k-th-nearest-obstacle-queries.cpp) [Python](./Python/k-th-nearest-obstacle-queries.py) | _O(qlogk)_ | _O(k)_ | Medium | | Heap
-3684 | [Maximize Sum of At Most K Distinct Elements](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) | [C++](./C++/maximize-sum-of-at-most-k-distinct-elements.cpp) [Python](./Python/maximize-sum-of-at-most-k-distinct-elements.py) | _O(nlogk)_ | _O(k)_ | Medium | | Heap, Sort
+3684 | [Maximize Sum of At Most K Distinct Elements](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) | [C++](./C++/maximize-sum-of-at-most-k-distinct-elements.cpp) [Python](./Python/maximize-sum-of-at-most-k-distinct-elements.py) | _O(nlogk)_ | _O(k)_ | Easy | | Heap, Sort
 
 <br/>
 <div align="right">
