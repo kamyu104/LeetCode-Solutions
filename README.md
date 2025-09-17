@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3677%20%2F%203677-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3686%20%2F%203686-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -270,6 +270,7 @@
 3653 | [XOR After Range Multiplication Queries I](https://leetcode.com/problems/xor-after-range-multiplication-queries-i/) | [C++](./C++/xor-after-range-multiplication-queries-i.cpp) [Python](./Python/xor-after-range-multiplication-queries-i.py) | _O(qlogm + (q + n) * sqrt(n))_ | _O(n * sqrt(n))_ | Medium || Sqrt Decomposition, Difference Array, Fast Exponentiation, Simulation
 3655 | [XOR After Range Multiplication Queries II](https://leetcode.com/problems/xor-after-range-multiplication-queries-ii/) | [C++](./C++/xor-after-range-multiplication-queries-ii.cpp) [Python](./Python/xor-after-range-multiplication-queries-ii.py) | _O(qlogm + (q + n) * sqrt(n))_ | _O(n * sqrt(n))_ | Hard || Sqrt Decomposition, Difference Array, Fast Exponentiation
 3674 | [Minimum Operations to Equalize Array](https://leetcode.com/problems/minimum-operations-to-equalize-array/) | [C++](./C++/minimum-operations-to-equalize-array.cpp) [Python](./Python/minimum-operations-to-equalize-array.py) | _O(n)_ | _O(1)_ | Easy || Array
+3683 | [Earliest Time to Finish One Task](https://leetcode.com/problems/earliest-time-to-finish-one-task/) | [C++](./C++/earliest-time-to-finish-one-task.cpp) [Python](./Python/earliest-time-to-finish-one-task.py) | _O(n)_ | _O(1)_ | Easy || Array
 
 <br/>
 <div align="right">
@@ -455,6 +456,7 @@
 3256 | [Maximum Value Sum by Placing Three Rooks I](https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-i/) | [C++](./C++/maximum-value-sum-by-placing-three-rooks-i.cpp) [Python](./Python/maximum-value-sum-by-placing-three-rooks-i.py) | _O(m * n)_ | _O(m + n)_ | Hard | | Heap, Brute Force
 3257 | [Maximum Value Sum by Placing Three Rooks II](https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-ii/) | [C++](./C++/maximum-value-sum-by-placing-three-rooks-ii.cpp) [Python](./Python/maximum-value-sum-by-placing-three-rooks-ii.py) | _O(m * n)_ | _O(m + n)_ | Hard | | Heap, Brute Force
 3275 | [K-th Nearest Obstacle Queries](https://leetcode.com/problems/k-th-nearest-obstacle-queries/) | [C++](./C++/k-th-nearest-obstacle-queries.cpp) [Python](./Python/k-th-nearest-obstacle-queries.py) | _O(qlogk)_ | _O(k)_ | Medium | | Heap
+3684 | [Maximize Sum of At Most K Distinct Elements](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) | [C++](./C++/maximize-sum-of-at-most-k-distinct-elements.cpp) [Python](./Python/maximize-sum-of-at-most-k-distinct-elements.py) | _O(nlogk)_ | _O(k)_ | Medium | | Heap, Sort
 
 <br/>
 <div align="right">
@@ -621,6 +623,8 @@
 3662 | [Filter Characters by Frequency](https://leetcode.com/problems/filter-characters-by-frequency/) | [C++](./C++/filter-characters-by-frequency.cpp) [Python](./Python/filter-characters-by-frequency.py) | _O(n + 26)_ | _O(26)_ | Easy |🔒| Freq Table
 3663 | [Find The Least Frequent Digit](https://leetcode.com/problems/find-the-least-frequent-digit/) | [C++](./C++/find-the-least-frequent-digit.cpp) [Python](./Python/find-the-least-frequent-digit.py) | _O(logn + 10)_ | _O(10)_ | Easy | | Freq Table
 3668 | [Restore Finishing Order](https://leetcode.com/problems/restore-finishing-order/) | [C++](./C++/restore-finishing-order.cpp) [Python](./Python/restore-finishing-order.py) | _O(n + min(8, n))_ | _O(min(8, n))_ | Easy | | Hash Table
+3678 | [Smallest Absent Positive Greater Than Average](https://leetcode.com/problems/smallest-absent-positive-greater-than-average/) | [C++](./C++/smallest-absent-positive-greater-than-average.cpp) [Python](./Python/smallest-absent-positive-greater-than-average.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table
+3682 | [Minimum Index Sum of Common Elements](https://leetcode.com/problems/minimum-index-sum-of-common-elements/) | [C++](./C++/minimum-index-sum-of-common-elements.cpp) [Python](./Python/minimum-index-sum-of-common-elements.py) | _O(n + m)_ | _O(n)_ | Medium | 🔒 | Hash Table
 
 <br/>
 <div align="right">
@@ -959,6 +963,7 @@
 3649 | [Number of Perfect Pairs](https://leetcode.com/problems/number-of-perfect-pairs/) | [C++](./C++/number-of-perfect-pairs.cpp) [Python](./Python/number-of-perfect-pairs.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Two Pointers, Sliding Window, Math
 3652 | [Best Time to Buy and Sell Stock using Strategy](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-using-strategy/) | [C++](./C++/best-time-to-buy-and-sell-stock-using-strategy.cpp) [Python](./Python/best-time-to-buy-and-sell-stock-using-strategy.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 3672 | [Sum of Weighted Modes in Subarrays](https://leetcode.com/problems/sum-of-weighted-modes-in-subarrays/) | [C++](./C++/sum-of-weighted-modes-in-subarrays.cpp) [Python](./Python/sum-of-weighted-modes-in-subarrays.py) | _O(nlogk)_ | _O(k)_ | Medium | 🔒 | Sorted List, BST, Two Pointers, Sliding Window
+3679 | [Minimum Discards to Balance Inventory](https://leetcode.com/problems/minimum-discards-to-balance-inventory/) | [C++](./C++/minimum-discards-to-balance-inventory.cpp) [Python](./Python/minimum-discards-to-balance-inventory.py) | _O(n)_ | _O(w)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -1372,6 +1377,8 @@
 3661 | [Maximum Walls Destroyed by Robots](https://leetcode.com/problems/maximum-walls-destroyed-by-robots/) | [C++](./C++/maximum-walls-destroyed-by-robots.cpp) [Python](./Python/maximum-walls-destroyed-by-robots.py) | _O(nlogn + mlogm)_   | _O(n)_        | Hard         | | Sort, DP, Two Pointers
 3665 | [Twisted Mirror Path Count](https://leetcode.com/problems/twisted-mirror-path-count/) | [C++](./C++/twisted-mirror-path-count.cpp) [Python](./Python/twisted-mirror-path-count.py) | _O(m * n)_   | _O(min(m, n))_        | Medium         | | DP
 3670 | [Maximum Product of Two Integers With No Common Bits](https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/) | [C++](./C++/maximum-product-of-two-integers-with-no-common-bits.cpp) [Python](./Python/maximum-product-of-two-integers-with-no-common-bits.py) | _O(n + rlogr)_   | _O(r)_        | Medium         | | DP, Bitmasks
+3685 | [Subsequence Sum After Capping Elements](https://leetcode.com/problems/subsequence-sum-after-capping-elements/) | [C++](./C++/subsequence-sum-after-capping-elements.cpp) [Python](./Python/subsequence-sum-after-capping-elements.py) | _O(nlogn + n * k)_   | _O(k)_        | Medium         | | Sort, DP, Bitmasks
+3686 | [Number of Stable Subsequences](https://leetcode.com/problems/number-of-stable-subsequences/) | [C++](./C++/number-of-stable-subsequences.cpp) [Python](./Python/number-of-stable-subsequences.py) | _O(n)_   | _O(1)_        | Hard         | | DP
 
 <br/>
 <div align="right">
@@ -1572,6 +1579,7 @@
 3638 | [Maximum Balanced Shipments](https://leetcode.com/problems/maximum-balanced-shipments/) | [C++](./C++/maximum-balanced-shipments.cpp) [Python](./Python/maximum-balanced-shipments.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3645 | [Maximum Total from Optimal Activation Order](https://leetcode.com/problems/maximum-total-from-optimal-activation-order/) | [C++](./C++/maximum-total-from-optimal-activation-order.cpp) [Python](./Python/maximum-total-from-optimal-activation-order.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort, Greedy
 3675 | [Minimum Operations to Transform String](https://leetcode.com/problems/minimum-operations-to-transform-string/) | [C++](./C++/minimum-operations-to-transform-string.cpp) [Python](./Python/minimum-operations-to-transform-string.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3681 | [Maximum XOR of Subsequences](https://leetcode.com/problems/maximum-xor-of-subsequences/) | [C++](./C++/maximum-xor-of-subsequences.cpp) [Python](./Python/maximum-xor-of-subsequences.py) | _O(nlogr)_   | _O(r)_        | Hard         | | Bitmasks, Greedy
 
 <br/>
 <div align="right">
@@ -1728,6 +1736,7 @@
 3260 | [Find the Largest Palindrome Divisible by K](https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/) | [C++](./C++/find-the-largest-palindrome-divisible-by-k.cpp) [Python](./Python/find-the-largest-palindrome-divisible-by-k.py) | _O(n)_ | _O(1)_ | Hard | | String, Constructive Algorithms, Math |
 3311 | [Construct 2D Grid Matching Graph Layout](https://leetcode.com/problems/construct-2d-grid-matching-graph-layout/) | [C++](./C++/construct-2d-grid-matching-graph-layout.cpp) [Python](./Python/construct-2d-grid-matching-graph-layout.py) | _O(n)_ | _O(n)_ | Hard | | Graph, Constructive Algorithms, BFS |
 3375 | [Minimum Operations to Make Array Values Equal to K](https://leetcode.com/problems/minimum-operations-to-make-array-values-equal-to-k/) | [C++](./C++/minimum-operations-to-make-array-values-equal-to-k.cpp) [Python](./Python/minimum-operations-to-make-array-values-equal-to-k.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Constructive Algorithms |
+3680 | [Generate Schedule](https://leetcode.com/problems/generate-schedule/) | [C++](./C++/generate-schedule.cpp) [Python](./Python/generate-schedule.py) | _O(n^2)_ | _O(1)_ | Medium | | Constructive Algorithms |
 
 <br/>
 <div align="right">
