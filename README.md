@@ -1584,7 +1584,7 @@
 3645 | [Maximum Total from Optimal Activation Order](https://leetcode.com/problems/maximum-total-from-optimal-activation-order/) | [C++](./C++/maximum-total-from-optimal-activation-order.cpp) [Python](./Python/maximum-total-from-optimal-activation-order.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort, Greedy
 3675 | [Minimum Operations to Transform String](https://leetcode.com/problems/minimum-operations-to-transform-string/) | [C++](./C++/minimum-operations-to-transform-string.cpp) [Python](./Python/minimum-operations-to-transform-string.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3681 | [Maximum XOR of Subsequences](https://leetcode.com/problems/maximum-xor-of-subsequences/) | [C++](./C++/maximum-xor-of-subsequences.cpp) [Python](./Python/maximum-xor-of-subsequences.py) | _O(nlogr)_   | _O(r)_        | Hard         | | Bitmasks, Greedy
-3689 | [Maximum Total Subarray Value I](https://leetcode.com/problems/maximum-total-subarray-value-i/) | [C++](./C++/maximum-total-subarray-value-i.cpp) [Python](./Python/maximum-total-subarray-value-i.py) | _O(n)_   | _O(1)_        | Medium         | | Bitmasks, Greedy
+3689 | [Maximum Total Subarray Value I](https://leetcode.com/problems/maximum-total-subarray-value-i/) | [C++](./C++/maximum-total-subarray-value-i.cpp) [Python](./Python/maximum-total-subarray-value-i.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 
 <br/>
 <div align="right">
