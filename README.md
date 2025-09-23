@@ -271,6 +271,8 @@
 3655 | [XOR After Range Multiplication Queries II](https://leetcode.com/problems/xor-after-range-multiplication-queries-ii/) | [C++](./C++/xor-after-range-multiplication-queries-ii.cpp) [Python](./Python/xor-after-range-multiplication-queries-ii.py) | _O(qlogm + (q + n) * sqrt(n))_ | _O(n * sqrt(n))_ | Hard || Sqrt Decomposition, Difference Array, Fast Exponentiation
 3674 | [Minimum Operations to Equalize Array](https://leetcode.com/problems/minimum-operations-to-equalize-array/) | [C++](./C++/minimum-operations-to-equalize-array.cpp) [Python](./Python/minimum-operations-to-equalize-array.py) | _O(n)_ | _O(1)_ | Easy || Array
 3683 | [Earliest Time to Finish One Task](https://leetcode.com/problems/earliest-time-to-finish-one-task/) | [C++](./C++/earliest-time-to-finish-one-task.cpp) [Python](./Python/earliest-time-to-finish-one-task.py) | _O(n)_ | _O(1)_ | Easy || Array
+3687 | [Library Late Fee Calculator](https://leetcode.com/problems/library-late-fee-calculator/) | [C++](./C++/library-late-fee-calculator.cpp) [Python](./Python/library-late-fee-calculator.py) | _O(n)_ | _O(1)_ | Easy |🔒| Array
+3688 | [Bitwise OR of Even Numbers in an Array](https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/) | [C++](./C++/bitwise-or-of-even-numbers-in-an-array.cpp) [Python](./Python/bitwise-or-of-even-numbers-in-an-array.py) | _O(n)_ | _O(1)_ | Easy || Array
 
 <br/>
 <div align="right">
@@ -457,6 +459,7 @@
 3257 | [Maximum Value Sum by Placing Three Rooks II](https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-ii/) | [C++](./C++/maximum-value-sum-by-placing-three-rooks-ii.cpp) [Python](./Python/maximum-value-sum-by-placing-three-rooks-ii.py) | _O(m * n)_ | _O(m + n)_ | Hard | | Heap, Brute Force
 3275 | [K-th Nearest Obstacle Queries](https://leetcode.com/problems/k-th-nearest-obstacle-queries/) | [C++](./C++/k-th-nearest-obstacle-queries.cpp) [Python](./Python/k-th-nearest-obstacle-queries.py) | _O(qlogk)_ | _O(k)_ | Medium | | Heap
 3684 | [Maximize Sum of At Most K Distinct Elements](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) | [C++](./C++/maximize-sum-of-at-most-k-distinct-elements.cpp) [Python](./Python/maximize-sum-of-at-most-k-distinct-elements.py) | _O(nlogk)_ | _O(k)_ | Easy | | Heap, Sort
+3691 | [Maximum Total Subarray Value II](https://leetcode.com/problems/maximum-total-subarray-value-ii/) | [C++](./C++/maximum-total-subarray-value-ii.cpp) [Python](./Python/maximum-total-subarray-value-ii.py) | _O((n + k) * logn)_   | _O(k)_        | Hard         | | Heap, Sort, Two Pointers, RMQ, Sparse Table
 
 <br/>
 <div align="right">
@@ -1099,6 +1102,7 @@
 3552 | [Grid Teleportation Traversal](https://leetcode.com/problems/grid-teleportation-traversal/) | [C++](./C++/grid-teleportation-traversal.cpp) [Python](./Python/grid-teleportation-traversal.py) | _O(m * n)_ | _O(m * n)_ | Medium |  | 0-1 BFS, Deque
 3568 | [Minimum Moves to Clean the Classroom](https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/) | [C++](./C++/minimum-moves-to-clean-the-classroom.cpp) [Python](./Python/minimum-moves-to-clean-the-classroom.py) | _O(m * n * 2^l)_ | _O(m * n * 2^l)_ | Medium |  | BFS, Bitmasks
 3629 | [Minimum Jumps to Reach End via Prime Teleportation](https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) | [C++](./C++/minimum-jumps-to-reach-end-via-prime-teleportation.cpp) [Python](./Python/minimum-jumps-to-reach-end-via-prime-teleportation.py) | precompute: _O(r)_<br>runtime: _O(nlogr)_ | _O(r + nlogr)_ | Medium |  | Number Theory, `Linear Sieve of Eratosthenes`, BFS
+3690 | [Split and Merge Array Transformation](https://leetcode.com/problems/split-and-merge-array-transformation/) | [C++](./C++/split-and-merge-array-transformation.cpp) [Python](./Python/split-and-merge-array-transformation.py) | _O(n^4 * n!)_ | _O(n * n!)_ | Medium |  | BFS
 
 <br/>
 <div align="right">
@@ -1580,6 +1584,7 @@
 3645 | [Maximum Total from Optimal Activation Order](https://leetcode.com/problems/maximum-total-from-optimal-activation-order/) | [C++](./C++/maximum-total-from-optimal-activation-order.cpp) [Python](./Python/maximum-total-from-optimal-activation-order.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Sort, Greedy
 3675 | [Minimum Operations to Transform String](https://leetcode.com/problems/minimum-operations-to-transform-string/) | [C++](./C++/minimum-operations-to-transform-string.cpp) [Python](./Python/minimum-operations-to-transform-string.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3681 | [Maximum XOR of Subsequences](https://leetcode.com/problems/maximum-xor-of-subsequences/) | [C++](./C++/maximum-xor-of-subsequences.cpp) [Python](./Python/maximum-xor-of-subsequences.py) | _O(nlogr)_   | _O(r)_        | Hard         | | Bitmasks, Greedy
+3689 | [Maximum Total Subarray Value I](https://leetcode.com/problems/maximum-total-subarray-value-i/) | [C++](./C++/maximum-total-subarray-value-i.cpp) [Python](./Python/maximum-total-subarray-value-i.py) | _O(n)_   | _O(1)_        | Medium         | | Bitmasks, Greedy
 
 <br/>
 <div align="right">
