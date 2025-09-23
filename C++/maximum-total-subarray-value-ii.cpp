@@ -1,5 +1,5 @@
 // Time:  O((n + k) * logn)
-// Space: O(k)
+// Space: O(n + k)
 
 // heap, sort, two pointers
 class Solution {
