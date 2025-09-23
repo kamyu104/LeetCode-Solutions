@@ -4,7 +4,7 @@
 import heapq
 
 
-# heap, two pointers
+# heap, sort, two pointers
 class Solution(object):
     def maxTotalValue(self, nums, k):
         """
