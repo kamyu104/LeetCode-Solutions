@@ -116,3 +116,103 @@ private:
         const function<int (int, int)>& fn;
     };
 };
+
+// Time:  O((n + k) * logn)
+// Space: O(n)
+// heap, segment tree
+const int NEG_INF = numeric_limits<int>::min();
+const int POS_INF = numeric_limits<int>::max();
+class Solution3 {
+public:
+    long long maxTotalValue(vector<int>& nums, int k) {
+        SegmentTreeMin st_min(nums);
+        SegmentTreeMax st_max(nums);
+        using P = pair<int, pair<int, int>>;
+        vector<P> arr(size(nums));
+        for (int i = 0; i < size(nums); ++i) {
+            arr[i] = {st_max.query(i, size(nums) - 1) - st_min.query(i, size(nums) - 1), {i, size(nums) - 1}};
+        }
+        priority_queue<P> max_heap(cbegin(arr), cend(arr));
+        int64_t result = 0;
+        for (int _ = 0; _ < k; ++_) {
+            const auto [v, i_j] = max_heap.top(); max_heap.pop();
+            const auto& [i, j] = i_j;
+            result += v;
+            if (i <= j - 1) {
+                max_heap.push({st_max.query(i, j - 1) - st_min.query(i, j - 1), {i, j - 1}});
+            }
+        }
+        return result;
+    }
+
+private:
+    class SegmentTreeMax {
+    public:
+        explicit SegmentTreeMax(const auto& nums)
+         :  base_(size(nums) > 1 ? 1 << (__lg(size(nums) - 1) + 1) : 1),
+            tree(size(nums) > 1 ? 1 << (__lg(size(nums) - 1) + 2) : 2, NEG_INF) {
+            for (int i = base_; i < base_ + size(nums); ++i) {
+                tree[i] = nums[i - base_];
+            }
+            for (int i = base_ - 1; i >= 1; --i) {
+                tree[i] = max(tree[i << 1], tree[(i << 1) + 1]);
+            }
+        }
+
+        int query(int L, int R) {
+            if (L > R) {
+                return NEG_INF;
+            }
+            L += base_;
+            R += base_;
+            int left = NEG_INF, right = NEG_INF;
+            for (; L <= R; L >>= 1, R >>= 1) {
+                if ((L & 1) == 1) {
+                    left = max(left, tree[L++]);
+                }
+                if ((R & 1) == 0) {
+                    right = max(tree[R--], right);
+                }
+            }
+            return max(left, right);
+        }
+
+        vector<int> tree;
+        int base_;
+    };
+
+    class SegmentTreeMin {
+    public:
+        explicit SegmentTreeMin(const auto& nums)
+         :  base_(size(nums) > 1 ? 1 << (__lg(size(nums) - 1) + 1) : 1),
+            tree(size(nums) > 1 ? 1 << (__lg(size(nums) - 1) + 2) : 2, POS_INF) {
+            for (int i = base_; i < base_ + size(nums); ++i) {
+                tree[i] = nums[i - base_];
+            }
+            for (int i = base_ - 1; i >= 1; --i) {
+                tree[i] = min(tree[i << 1], tree[(i << 1) + 1]);
+            }
+        }
+
+        int query(int L, int R) {
+            if (L > R) {
+                return POS_INF;
+            }
+            L += base_;
+            R += base_;
+            int left = POS_INF, right = POS_INF;
+            for (; L <= R; L >>= 1, R >>= 1) {
+                if ((L & 1) == 1) {
+                    left = min(left, tree[L++]);
+                }
+                if ((R & 1) == 0) {
+                    right = min(tree[R--], right);
+                }
+            }
+            return min(left, right);
+        }
+
+        vector<int> tree;
+        int base_;
+    };
+};
