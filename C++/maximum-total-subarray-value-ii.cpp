@@ -1,7 +1,7 @@
 // Time:  O((n + k) * logn)
 // Space: O(k)
 
-// heap, two pointers
+// heap, sort, two pointers
 class Solution {
 private:
     struct TupleHash {
@@ -23,7 +23,7 @@ public:
         sort(begin(idxs), end(idxs), [&](const auto& a, const auto& b) {
             return nums[a] != nums[b] ? nums[a] < nums[b] : a < b;
         });
-        const auto& get = [&](int left, int right, int i, int j) {
+        const auto& nxt = [&](int left, int right, int i, int j) {
             for (; !(left <= idxs[i] && idxs[i] <= right); ++i);
             for (; !(left <= idxs[j] && idxs[j] <= right); --j);
             return tuple(i, j);
@@ -43,14 +43,14 @@ public:
             const auto& nr = max(idxs[i], idxs[j]);
             const int64_t c = min((nl - l + 1) * (r - nr + 1), k);
             k -= c;
-            result += c* v;
+            result += c * v;
             if (nl + 1 <= r && !lookup.count({nl + 1, r})) {
-                const auto& [ni, nj] = get(nl + 1, r, i, j);
+                const auto& [ni, nj] = nxt(nl + 1, r, i, j);
                 lookup[{nl + 1, r}] = {ni, nj};
                 max_heap.push({nums[idxs[nj]] - nums[idxs[ni]], {nl + 1, r}});
             }
             if (l <= nr - 1 && !lookup.count({l, nr - 1})) {
-                const auto& [ni, nj] = get(l, nr - 1, i, j);
+                const auto& [ni, nj] = nxt(l, nr - 1, i, j);
                 lookup[{l, nr - 1}] = {ni, nj};
                 max_heap.push({nums[idxs[nj]] - nums[idxs[ni]], {l, nr - 1}});
             }
