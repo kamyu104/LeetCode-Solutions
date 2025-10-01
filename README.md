@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3691%20%2F%203691-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3700%20%2F%203700-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -273,6 +273,8 @@
 3683 | [Earliest Time to Finish One Task](https://leetcode.com/problems/earliest-time-to-finish-one-task/) | [C++](./C++/earliest-time-to-finish-one-task.cpp) [Python](./Python/earliest-time-to-finish-one-task.py) | _O(n)_ | _O(1)_ | Easy || Array
 3687 | [Library Late Fee Calculator](https://leetcode.com/problems/library-late-fee-calculator/) | [C++](./C++/library-late-fee-calculator.cpp) [Python](./Python/library-late-fee-calculator.py) | _O(n)_ | _O(1)_ | Easy |🔒| Array
 3688 | [Bitwise OR of Even Numbers in an Array](https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/) | [C++](./C++/bitwise-or-of-even-numbers-in-an-array.cpp) [Python](./Python/bitwise-or-of-even-numbers-in-an-array.py) | _O(n)_ | _O(1)_ | Easy || Array
+3696 | [Maximum Distance Between Unequal Words in Array I](https://leetcode.com/problems/maximum-distance-between-unequal-words-in-array-i/) | [C++](./C++/maximum-distance-between-unequal-words-in-array-i.cpp) [Python](./Python/maximum-distance-between-unequal-words-in-array-i.py) | _O(n * l)_ | _O(1)_ | Easy |🔒| Array
+3700 | [Number of ZigZag Arrays II](https://leetcode.com/problems/number-of-zigzag-arrays-ii/) | [C++](./C++/number-of-zigzag-arrays-ii.cpp) [Python](./Python/number-of-zigzag-arrays-ii.py) | _O((r - l)^3 * logn)_   | _O((r - l)^2)_        | Hard         | | Matrix Exponentiation
 
 <br/>
 <div align="right">
@@ -628,6 +630,8 @@
 3668 | [Restore Finishing Order](https://leetcode.com/problems/restore-finishing-order/) | [C++](./C++/restore-finishing-order.cpp) [Python](./Python/restore-finishing-order.py) | _O(n + min(8, n))_ | _O(min(8, n))_ | Easy | | Hash Table
 3678 | [Smallest Absent Positive Greater Than Average](https://leetcode.com/problems/smallest-absent-positive-greater-than-average/) | [C++](./C++/smallest-absent-positive-greater-than-average.cpp) [Python](./Python/smallest-absent-positive-greater-than-average.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table
 3682 | [Minimum Index Sum of Common Elements](https://leetcode.com/problems/minimum-index-sum-of-common-elements/) | [C++](./C++/minimum-index-sum-of-common-elements.cpp) [Python](./Python/minimum-index-sum-of-common-elements.py) | _O(n + m)_ | _O(n)_ | Medium | 🔒 | Hash Table
+3692 | [Majority Frequency Characters](https://leetcode.com/problems/majority-frequency-characters/) | [C++](./C++/majority-frequency-characters.cpp) [Python](./Python/majority-frequency-characters.py) | _O(n + 26)_ | _O(26)_ | Easy | | Freq Table
+3694 | [Distinct Points Reachable After Substring Removal](https://leetcode.com/problems/distinct-points-reachable-after-substring-removal/) | [C++](./C++/distinct-points-reachable-after-substring-removal.cpp) [Python](./Python/distinct-points-reachable-after-substring-removal.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
 
 <br/>
 <div align="right">
@@ -803,6 +807,7 @@
 3666 | [Minimum Operations to Equalize Binary String](https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/) | [C++](./C++/minimum-operations-to-equalize-binary-string.cpp) [Python](./Python/minimum-operations-to-equalize-binary-string.py) | _O(n)_ | _O(1)_ | Hard | | Math |
 3671 | [Sum of Beautiful Subsequences](https://leetcode.com/problems/sum-of-beautiful-subsequences/) | [C++](./C++/sum-of-beautiful-subsequences.cpp) [Python](./Python/sum-of-beautiful-subsequences.py) | precompute: _O(rlogr)_<br>runtime: _O(nlogr * (log(nlogr) + logn))_ | _O(rlogr)_ | Hard | | Number Theory, BIT, Fenwick Tree |
 3677 | [Count Binary Palindromic Numbers](https://leetcode.com/problems/count-binary-palindromic-numbers/) | [C++](./C++/count-binary-palindromic-numbers.cpp) [Python](./Python/count-binary-palindromic-numbers.py) | _O(logn)_ | _O(1)_ | Hard | | Bitmasks, Combinatorics |
+3697 | [Compute Decimal Representation](https://leetcode.com/problems/compute-decimal-representation/) | [C++](./C++/compute-decimal-representation.cpp) [Python](./Python/compute-decimal-representation.py) | _O(logn)_ | _O(1)_ | Easy | | Math |
 
 <br/>
 <div align="right">
@@ -967,6 +972,7 @@
 3652 | [Best Time to Buy and Sell Stock using Strategy](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-using-strategy/) | [C++](./C++/best-time-to-buy-and-sell-stock-using-strategy.cpp) [Python](./Python/best-time-to-buy-and-sell-stock-using-strategy.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 3672 | [Sum of Weighted Modes in Subarrays](https://leetcode.com/problems/sum-of-weighted-modes-in-subarrays/) | [C++](./C++/sum-of-weighted-modes-in-subarrays.cpp) [Python](./Python/sum-of-weighted-modes-in-subarrays.py) | _O(nlogk)_ | _O(k)_ | Medium | 🔒 | Sorted List, BST, Two Pointers, Sliding Window
 3679 | [Minimum Discards to Balance Inventory](https://leetcode.com/problems/minimum-discards-to-balance-inventory/) | [C++](./C++/minimum-discards-to-balance-inventory.cpp) [Python](./Python/minimum-discards-to-balance-inventory.py) | _O(n)_ | _O(w)_ | Medium | | Freq Table, Two Pointers, Sliding Window
+3698 | [Split Array With Minimum Difference](https://leetcode.com/problems/split-array-with-minimum-difference/) | [C++](./C++/split-array-with-minimum-difference.cpp) [Python](./Python/split-array-with-minimum-difference.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
 
 <br/>
 <div align="right">
@@ -1103,6 +1109,7 @@
 3568 | [Minimum Moves to Clean the Classroom](https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/) | [C++](./C++/minimum-moves-to-clean-the-classroom.cpp) [Python](./Python/minimum-moves-to-clean-the-classroom.py) | _O(m * n * 2^l)_ | _O(m * n * 2^l)_ | Medium |  | BFS, Bitmasks
 3629 | [Minimum Jumps to Reach End via Prime Teleportation](https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) | [C++](./C++/minimum-jumps-to-reach-end-via-prime-teleportation.cpp) [Python](./Python/minimum-jumps-to-reach-end-via-prime-teleportation.py) | precompute: _O(r)_<br>runtime: _O(nlogr)_ | _O(r + nlogr)_ | Medium |  | Number Theory, `Linear Sieve of Eratosthenes`, BFS
 3690 | [Split and Merge Array Transformation](https://leetcode.com/problems/split-and-merge-array-transformation/) | [C++](./C++/split-and-merge-array-transformation.cpp) [Python](./Python/split-and-merge-array-transformation.py) | _O(n^4 * n!)_ | _O(n * n!)_ | Medium |  | BFS
+3695 | [Maximize Alternating Sum Using Swaps](https://leetcode.com/problems/maximize-alternating-sum-using-swaps/) | [C++](./C++/maximize-alternating-sum-using-swaps.cpp) [Python](./Python/maximize-alternating-sum-using-swaps.py) | _O(n + s)_ | _O(n)_ | Hard |  | BFS, Flood Fill, Quick Select
 
 <br/>
 <div align="right">
@@ -1383,6 +1390,8 @@
 3670 | [Maximum Product of Two Integers With No Common Bits](https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/) | [C++](./C++/maximum-product-of-two-integers-with-no-common-bits.cpp) [Python](./Python/maximum-product-of-two-integers-with-no-common-bits.py) | _O(n + rlogr)_   | _O(r)_        | Medium         | | DP, Bitmasks
 3685 | [Subsequence Sum After Capping Elements](https://leetcode.com/problems/subsequence-sum-after-capping-elements/) | [C++](./C++/subsequence-sum-after-capping-elements.cpp) [Python](./Python/subsequence-sum-after-capping-elements.py) | _O(nlogn + n * k)_   | _O(k)_        | Medium         | | Sort, DP, Bitmasks
 3686 | [Number of Stable Subsequences](https://leetcode.com/problems/number-of-stable-subsequences/) | [C++](./C++/number-of-stable-subsequences.cpp) [Python](./Python/number-of-stable-subsequences.py) | _O(n)_   | _O(1)_        | Hard         | | DP
+3693 | [Climbing Stairs II](https://leetcode.com/problems/climbing-stairs-ii/) | [C++](./C++/climbing-stairs-ii.cpp) [Python](./Python/climbing-stairs-ii.py) | _O(n)_   | _O(1)_        | Medium         | | DP
+3699 | [Number of ZigZag Arrays I](https://leetcode.com/problems/number-of-zigzag-arrays-i/) | [C++](./C++/number-of-zigzag-arrays-i.cpp) [Python](./Python/number-of-zigzag-arrays-i.py) | _O(n * (r - l))_   | _O(r - l)_        | Hard         | | DP
 
 <br/>
 <div align="right">
