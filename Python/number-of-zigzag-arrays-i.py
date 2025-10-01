@@ -18,4 +18,4 @@ class Solution(object):
             for i in xrange(len(dp)):
                 dp[i], prefix = prefix, (prefix+dp[i])%MOD
             dp.reverse()
-        return (reduce(lambda total, x: (total+x)%MOD, dp, 0)*2)%MOD
+        return (reduce(lambda accu, x: (accu+x)%MOD, dp, 0)*2)%MOD
