@@ -1109,7 +1109,7 @@
 3568 | [Minimum Moves to Clean the Classroom](https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/) | [C++](./C++/minimum-moves-to-clean-the-classroom.cpp) [Python](./Python/minimum-moves-to-clean-the-classroom.py) | _O(m * n * 2^l)_ | _O(m * n * 2^l)_ | Medium |  | BFS, Bitmasks
 3629 | [Minimum Jumps to Reach End via Prime Teleportation](https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) | [C++](./C++/minimum-jumps-to-reach-end-via-prime-teleportation.cpp) [Python](./Python/minimum-jumps-to-reach-end-via-prime-teleportation.py) | precompute: _O(r)_<br>runtime: _O(nlogr)_ | _O(r + nlogr)_ | Medium |  | Number Theory, `Linear Sieve of Eratosthenes`, BFS
 3690 | [Split and Merge Array Transformation](https://leetcode.com/problems/split-and-merge-array-transformation/) | [C++](./C++/split-and-merge-array-transformation.cpp) [Python](./Python/split-and-merge-array-transformation.py) | _O(n^4 * n!)_ | _O(n * n!)_ | Medium |  | BFS
-3695 | [Maximize Alternating Sum Using Swaps](https://leetcode.com/problems/maximize-alternating-sum-using-swaps/) | [C++](./C++/maximize-alternating-sum-using-swaps.cpp) [Python](./Python/maximize-alternating-sum-using-swaps.py) | _O(n + s)_ | _O(n)_ | Hard |  | BFS, Flood Fill, Quick Select
+3695 | [Maximize Alternating Sum Using Swaps](https://leetcode.com/problems/maximize-alternating-sum-using-swaps/) | [C++](./C++/maximize-alternating-sum-using-swaps.cpp) [Python](./Python/maximize-alternating-sum-using-swaps.py) | _O(n + s)_ | _O(n + s)_ | Hard |  | BFS, Flood Fill, Quick Select
 
 <br/>
 <div align="right">
