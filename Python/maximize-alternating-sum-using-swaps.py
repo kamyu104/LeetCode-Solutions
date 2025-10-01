@@ -1,5 +1,5 @@
 # Time:  O(n + s)
-# Space: O(n)
+# Space: O(n + s)
 
 import random
 
