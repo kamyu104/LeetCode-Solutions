@@ -1,7 +1,7 @@
 // Time:  O(n * l)
 // Space: O(1)
 
-// arry
+// array
 class Solution {
 public:
     int maxDistance(vector<string>& words) {
