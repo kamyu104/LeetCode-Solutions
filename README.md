@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3700%20%2F%203700-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3706%20%2F%203706-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -103,6 +103,7 @@
 3566 | [Partition Array into Two Equal Product Subsets](https://leetcode.com/problems/partition-array-into-two-equal-product-subsets/) | [C++](./C++/partition-array-into-two-equal-product-subsets.cpp) [Python](./Python/partition-array-into-two-equal-product-subsets.py) | _O(n * 2^n)_ | _O(1)_ | Medium | | Bitmasks
 3632 | [Subarrays with XOR at Least K](https://leetcode.com/problems/subarrays-with-xor-at-least-k/) | [C++](./C++/subarrays-with-xor-at-least-k.cpp) [Python](./Python/subarrays-with-xor-at-least-k.py) | _O(nlogr)_ | _O(t)_ | Hard | 🔒 | Bitmasks, Prefix Sum, Trie
 3646 | [Next Special Palindrome Number](https://leetcode.com/problems/next-special-palindrome-number/) | [C++](./C++/next-special-palindrome-number.cpp) [Python](./Python/next-special-palindrome-number.py) | precompute: _O(9 * 2^9 + 16 * p + plogp)_<br>runtime: _O(logp)_ | _O(p)_ | Hard | | Precompute, Bitmasks, Sort, Binary Search
+3702 | [Longest Subsequence With Non-Zero Bitwise XOR](https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/) | [C++](./C++/longest-subsequence-with-non-zero-bitwise-xor.cpp) [Python](./Python/longest-subsequence-with-non-zero-bitwise-xor.py) | _O(n)_ | _O(1)_ | Medium | | Bitmasks
 
 <br/>
 <div align="right">
@@ -275,6 +276,7 @@
 3688 | [Bitwise OR of Even Numbers in an Array](https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/) | [C++](./C++/bitwise-or-of-even-numbers-in-an-array.cpp) [Python](./Python/bitwise-or-of-even-numbers-in-an-array.py) | _O(n)_ | _O(1)_ | Easy || Array
 3696 | [Maximum Distance Between Unequal Words in Array I](https://leetcode.com/problems/maximum-distance-between-unequal-words-in-array-i/) | [C++](./C++/maximum-distance-between-unequal-words-in-array-i.cpp) [Python](./Python/maximum-distance-between-unequal-words-in-array-i.py) | _O(n * l)_ | _O(1)_ | Easy |🔒| Array
 3700 | [Number of ZigZag Arrays II](https://leetcode.com/problems/number-of-zigzag-arrays-ii/) | [C++](./C++/number-of-zigzag-arrays-ii.cpp) [Python](./Python/number-of-zigzag-arrays-ii.py) | _O((r - l)^3 * logn)_   | _O((r - l)^2)_        | Hard         | | Matrix Exponentiation
+3706 | [Maximum Distance Between Unequal Words in Array II](https://leetcode.com/problems/maximum-distance-between-unequal-words-in-array-ii/) | [C++](./C++/maximum-distance-between-unequal-words-in-array-ii.cpp) [Python](./Python/maximum-distance-between-unequal-words-in-array-ii.py) | _O(n * l)_ | _O(1)_ | Medium |🔒| Array
 
 <br/>
 <div align="right">
@@ -370,6 +372,7 @@
 3582 | [Generate Tag for Video Caption](https://leetcode.com/problems/generate-tag-for-video-caption/) | [C++](./C++/generate-tag-for-video-caption.cpp) [Python](./Python/generate-tag-for-video-caption.py) | _O(n)_ | _O(1)_ | Easy | | String
 3598 | [Longest Common Prefix Between Adjacent Strings After Removals](https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/) | [C++](./C++/longest-common-prefix-between-adjacent-strings-after-removals.cpp) [Python](./Python/longest-common-prefix-between-adjacent-strings-after-removals.py) | _O(n * l)_ | _O(n)_ | Medium | | LCP, Prefix Sum
 3606 | [Coupon Code Validator](https://leetcode.com/problems/coupon-code-validator/) | [C++](./C++/coupon-code-validator.cpp) [Python](./Python/coupon-code-validator.py) | _O(l * nlogn)_ | _O(n * l)_ | Easy | | Hash Table, Sort
+3701 | [Compute Alternating Sum](https://leetcode.com/problems/compute-alternating-sum/) | [C++](./C++/compute-alternating-sum.cpp) [Python](./Python/compute-alternating-sum.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -423,6 +426,7 @@
 3113 | [Find the Number of Subarrays Where Boundary Elements Are Maximum](https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/) | [C++](./C++/find-the-number-of-subarrays-where-boundary-elements-are-maximum.cpp) [Python](./Python/find-the-number-of-subarrays-where-boundary-elements-are-maximum.py) | _O(n)_ | _O(n)_ | Hard | | Mono Stack, Combinatorics
 3174 | [Clear Digits](https://leetcode.com/problems/clear-digits/) | [C++](./C++/clear-digits.cpp) [Python](./Python/clear-digits.py) | _O(n)_ | _O(1)_ | Easy | | Stack, Two Pointers
 3676 | [Count Bowl Subarrays](https://leetcode.com/problems/count-bowl-subarrays/) | [C++](./C++/count-bowl-subarrays.cpp) [Python](./Python/count-bowl-subarrays.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack
+3703 | [Remove K-Balanced Substrings](https://leetcode.com/problems/remove-k-balanced-substrings/) | [C++](./C++/remove-k-balanced-substrings.cpp) [Python](./Python/remove-k-balanced-substrings.py) | _O(n)_ | _O(n)_ | Medium | | Stack
 
 <br/>
 <div align="right">
@@ -1392,6 +1396,7 @@
 3686 | [Number of Stable Subsequences](https://leetcode.com/problems/number-of-stable-subsequences/) | [C++](./C++/number-of-stable-subsequences.cpp) [Python](./Python/number-of-stable-subsequences.py) | _O(n)_   | _O(1)_        | Hard         | | DP
 3693 | [Climbing Stairs II](https://leetcode.com/problems/climbing-stairs-ii/) | [C++](./C++/climbing-stairs-ii.cpp) [Python](./Python/climbing-stairs-ii.py) | _O(n)_   | _O(1)_        | Medium         | | DP
 3699 | [Number of ZigZag Arrays I](https://leetcode.com/problems/number-of-zigzag-arrays-i/) | [C++](./C++/number-of-zigzag-arrays-i.cpp) [Python](./Python/number-of-zigzag-arrays-i.py) | _O(n * (r - l))_   | _O(r - l)_        | Hard         | | DP
+3704 | [Count No-Zero Pairs That Sum to N](https://leetcode.com/problems/count-no-zero-pairs-that-sum-to-n/) | [C++](./C++/count-no-zero-pairs-that-sum-to-n.cpp) [Python](./Python/count-no-zero-pairs-that-sum-to-n.py) | _O(10 * 2^4 * logn)_   | _O(2^3)_        | Hard         | | DP
 
 <br/>
 <div align="right">
@@ -2017,6 +2022,7 @@
 3642  | [Find Books with Polarized Opinions](https://leetcode.com/problems/find-books-with-polarized-opinions/) | [MySQL](./MySQL/find-books-with-polarized-opinions.sql) | _O(r + nlogn)_ | _O(r + n)_       | Easy           || |
 3657  | [Find Loyal Customers](https://leetcode.com/problems/find-loyal-customers/) | [MySQL](./MySQL/find-loyal-customers.sql) | _O(nlogn)_ | _O(n)_       | Medium           || |
 3673  | [Find Zombie Sessions](https://leetcode.com/problems/find-zombie-sessions/) | [MySQL](./MySQL/find-zombie-sessions.sql) | _O(nlogn)_ | _O(n)_       | Hard           || |
+3705  | [Find Golden Hour Customers](https://leetcode.com/problems/find-golden-hour-customers/) | [MySQL](./MySQL/find-golden-hour-customers.sql) | _O(nlogn)_ | _O(n)_       | Medium           || |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
