@@ -5,7 +5,7 @@
 class Solution {
 public:
     long long countNoZeroPairs(long long n) {
-        vector<vector<vector<int64_t>>> dp(2, vector<vector<int64_t>>(2, vector<int64_t>(2)));
+        vector<vector<vector<int64_t>>> dp(2, vector<vector<int64_t>>(2, vector<int64_t>(2)));  // dp[carry][a is finished][b is finished]
         dp[0][0][0] = 1;
         for (int start = 1; n; n /= 10) {
             const auto& d = n % 10;
@@ -47,7 +47,7 @@ public:
 class Solution2 {
 public:
     long long countNoZeroPairs(long long n) {
-        vector<vector<vector<int64_t>>> dp(2, vector<vector<int64_t>>(2, vector<int64_t>(2)));
+        vector<vector<vector<int64_t>>> dp(2, vector<vector<int64_t>>(2, vector<int64_t>(2)));  // dp[carry][a is finished][b is finished]
         dp[0][0][0] = 1;
         for (int start = 1; n; n /= 10) {
             const auto& d = n % 10;
